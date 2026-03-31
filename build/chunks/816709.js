@@ -1,29 +1,29 @@
 /** chunk id: 816709 params = (module,exports,require) **/
-i.d(e, {
-    A: () => r
+i.d(t, {
+    A: () => a
 });
-var n = i(627968);
+var s = i(627968);
 i(64700);
-var l = i(9578),
-    s = i(985018),
-    a = i(746828);
+var r = i(9578),
+    n = i(985018),
+    l = i(746828);
 
-function r(t) {
+function a(e) {
     let {
-        termsOfServiceUrl: e,
+        termsOfServiceUrl: t,
         privacyPolicyUrl: i
-    } = t;
-    return null == e && null == i ? null : (0, n.jsxs)("span", {
-        className: a.Q,
-        children: [null != e && (0, n.jsx)(l.A, {
-            href: e,
-            children: s.intl.string(s.t["8S0kcM"])
-        }), null != e && null != i && (0, n.jsx)("span", {
+    } = e;
+    return null == t && null == i ? null : (0, s.jsxs)("span", {
+        className: l.Q,
+        children: [null != t && (0, s.jsx)(r.A, {
+            href: t,
+            children: n.intl.string(n.t["8S0kcM"])
+        }), null != t && null != i && (0, s.jsx)("span", {
             "aria-disabled": "true",
             children: "•"
-        }), null != i && (0, n.jsx)(l.A, {
+        }), null != i && (0, s.jsx)(r.A, {
             href: i,
-            children: s.intl.string(s.t.ZpyeCm)
+            children: n.intl.string(n.t.ZpyeCm)
         })]
     })
 }

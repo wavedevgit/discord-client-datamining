@@ -1,12 +1,11 @@
 /** chunk id: 416528 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
-    A: () => O
+    A: () => j
 }), n(321073);
 var i = n(627968),
-    s = n(64700),
-    l = n(735438),
-    a = n.n(l),
+    l = n(64700),
+    s = n(735438),
+    a = n.n(s),
     r = n(311907),
     o = n(990078),
     c = n(397927),
@@ -14,39 +13,37 @@ var i = n(627968),
     u = n(688810),
     h = n(402216),
     A = n(689874),
-    m = n(872363),
-    _ = n(966597),
-    g = n(922281),
-    p = n(51082),
-    f = n(275731),
-    x = n(289552),
-    E = n(246356),
-    C = n(977851),
-    I = n(772475),
-    N = n(481947),
-    S = n(485296),
-    b = n(313961),
+    _ = n(872363),
+    m = n(51082),
+    g = n(275731),
+    p = n(289552),
+    f = n(246356),
+    x = n(977851),
+    E = n(772475),
+    I = n(481947),
+    C = n(485296),
+    N = n(313961),
     T = n(195007),
-    v = n(806931),
-    y = n(985018),
-    j = n(435745);
+    S = n(806931),
+    b = n(985018),
+    y = n(435745);
 
-function R(e) {
+function v(e) {
     let {
         channelId: t,
         guildId: n
-    } = e, s = (0, r.yK)([S.A, b.A], () => {
+    } = e, l = (0, r.yK)([C.A, N.A], () => {
         let e = Date.now();
-        return a()(S.A.getSpeakers()).map(e => b.A.getParticipant(t, e)).filter(e => null != e && e.type === v.lp.USER && e.speaking && !(0, p.Ay)(e)).sortBy(t => -S.A.getSpeakingDuration(t.user.id, e)).slice(0, 3).value()
+        return a()(C.A.getSpeakers()).map(e => N.A.getParticipant(t, e)).filter(e => null != e && e.type === S.lp.USER && e.speaking && !(0, m.Ay)(e)).sortBy(t => -C.A.getSpeakingDuration(t.user.id, e)).slice(0, 3).value()
     });
-    return 0 === s.length ? null : (0, i.jsx)("div", {
-        className: j.$U,
-        children: s.map(e => (0, i.jsx)(o.m, {
+    return 0 === l.length ? null : (0, i.jsx)("div", {
+        className: y.$U,
+        children: l.map(e => (0, i.jsx)(o.m, {
             position: "bottom",
-            text: y.intl.formatToPlainString(y.t.JjdizN, {
+            text: b.intl.formatToPlainString(b.t.JjdizN, {
                 username: e.user.username
             }),
-            children: (0, i.jsx)(N.Ay, {
+            children: (0, i.jsx)(I.Ay, {
                 user: e.user,
                 speaking: !0,
                 collapsed: !0,
@@ -56,48 +53,43 @@ function R(e) {
     })
 }
 
-function O(e) {
+function j(e) {
     let {
         channel: t,
         isChatOpen: n
-    } = e, l = s.useRef(null), {
+    } = e, s = l.useRef(null), {
         analyticsLocations: a
     } = (0, u.Ay)(d.A.VOICE_CHANNEL_HEADER), o = t.id, {
-        voiceParticipantsHidden: p,
-        selectedParticipant: N,
-        userParticipantCount: S
-    } = (0, r.cf)([b.A], () => ({
-        selectedParticipant: b.A.getSelectedParticipant(o),
-        voiceParticipantsHidden: b.A.getVoiceParticipantsHidden(o),
-        userParticipantCount: b.A.getUserParticipantCount(o)
-    }), [o]), y = t.isGuildVoiceOrThread() && !n, {
-        enabled: O,
-        inInbox: L
-    } = _.A.useConfig({
-        location: "ChannelCallHeaderToolbar"
-    }), M = [];
-    return p && M.push((0, i.jsx)(R, {
+        voiceParticipantsHidden: m,
+        selectedParticipant: I,
+        userParticipantCount: C
+    } = (0, r.cf)([N.A], () => ({
+        selectedParticipant: N.A.getSelectedParticipant(o),
+        voiceParticipantsHidden: N.A.getVoiceParticipantsHidden(o),
+        userParticipantCount: N.A.getUserParticipantCount(o)
+    }), [o]), b = t.isGuildVoiceOrThread() && !n, j = [];
+    return m && j.push((0, i.jsx)(v, {
         channelId: o,
         guildId: t.guild_id
-    }, "current-speaker")), M.push((0, i.jsx)(A.A, {
-        className: j.x6,
+    }, "current-speaker")), j.push((0, i.jsx)(A.A, {
+        className: y.x6,
         channelId: o
-    }, "clips-enabled-indicator")), N?.type === v.lp.STREAM && (M.push((0, i.jsx)(f.A, {
-        className: j.x6,
-        participant: N
-    }, "warning")), M.push((0, i.jsx)(m.A, {
+    }, "clips-enabled-indicator")), I?.type === S.lp.STREAM && (j.push((0, i.jsx)(g.A, {
+        className: y.x6,
+        participant: I
+    }, "warning")), j.push((0, i.jsx)(_.A, {
         size: h.Ay.Sizes.LARGE,
-        className: j.x6,
-        participant: N,
+        className: y.x6,
+        participant: I,
         showQuality: !0,
         premiumIndicator: !1
-    }, "live-indicator"))), N?.type === v.lp.USER && M.push((0, i.jsx)(x.A, {
-        className: j.x6,
-        userId: N.id
-    }, "video-warning")), p && M.push((0, i.jsx)(c.YNO, {
-        targetElementRef: l,
+    }, "live-indicator"))), I?.type === S.lp.USER && j.push((0, i.jsx)(p.A, {
+        className: y.x6,
+        userId: I.id
+    }, "video-warning")), m && j.push((0, i.jsx)(c.YNO, {
+        targetElementRef: s,
         position: "bottom",
-        renderPopout: () => (0, i.jsx)(E.A, {
+        renderPopout: () => (0, i.jsx)(f.A, {
             children: (0, i.jsx)(T.A, {
                 channel: t
             })
@@ -106,23 +98,21 @@ function O(e) {
             let {
                 isShown: n
             } = t;
-            return (0, s.createElement)(I.A, {
+            return (0, l.createElement)(E.A, {
                 ...e,
-                buttonRef: l,
+                buttonRef: s,
                 isActive: n,
-                count: S,
+                count: C,
                 key: "call-members",
-                className: j.x6
+                className: y.x6
             })
         }
-    }, "call-members-popout")), O && !L && M.push((0, i.jsx)(g.A, {
-        className: j.x6
-    }, "for-later")), y && M.push((0, i.jsx)(C.V, {
+    }, "call-members-popout")), b && j.push((0, i.jsx)(x.V, {
         channelId: t.id,
-        className: j.x6,
+        className: y.x6,
         disabled: n
     }, "chat-spacer")), (0, i.jsx)(u.f5, {
         value: a,
-        children: M
+        children: j
     })
 }

@@ -1,12 +1,11 @@
 /** chunk id: 196492 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
     A: () => A
 });
 var i = n(627968);
 n(64700);
-var s = n(158954),
-    l = n(397927),
+var l = n(158954),
+    s = n(397927),
     a = n(73153),
     r = n(272355),
     o = n(652215),
@@ -29,8 +28,8 @@ class h extends r.A {
             activity: t,
             isPrivate: a,
             context: r
-        } = e, h = r === o.BRT.POPOUT ? l.KX8 : l.SYi;
-        a ? (0, l.qfG)(e => (0, i.jsx)(s.Modal, {
+        } = e, h = r === o.BRT.POPOUT ? s.KX8 : s.SYi;
+        a ? (0, s.qfG)(e => (0, i.jsx)(l.Modal, {
             title: c.intl.formatToPlainString(c.t["2tN7ih"], {
                 name: t.name
             }),
@@ -41,14 +40,14 @@ class h extends r.A {
                 autoFocus: !0
             }],
             ...e,
-            children: (0, i.jsx)(l.Text, {
+            children: (0, i.jsx)(s.Text, {
                 variant: "text-md/normal",
                 children: c.intl.string(c.t.MAxtks)
             })
         }), {
             onCloseCallback: u,
             modalKey: d
-        }, h) : (0, l.mMO)(async () => {
+        }, h) : (0, s.mMO)(async () => {
             let {
                 default: e
             } = await n.e("27759").then(n.bind(n, 555570));
@@ -62,7 +61,7 @@ class h extends r.A {
         })
     }
     handleModalClose(e) {
-        (0, l.OoC)(d)
+        (0, s.OoC)(d)
     }
 }
 let A = new h

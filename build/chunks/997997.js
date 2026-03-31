@@ -1,16 +1,16 @@
 /** chunk id: 997997 params = (module,exports,require) **/
-i.d(e, {
-    C: () => a,
-    K: () => r
+i.d(t, {
+    C: () => l,
+    K: () => a
 });
-var n, l = i(954571),
-    s = i(652215),
-    a = ((n = {}).STORE_MODAL = "store_modal", n.DETAILS_MODAL = "details_modal", n.STORE_EMBED = "store_embed", n.SKU_EMBED = "sku_embed", n);
+var s, r = i(954571),
+    n = i(652215),
+    l = ((s = {}).STORE_MODAL = "store_modal", s.DETAILS_MODAL = "details_modal", s.STORE_EMBED = "store_embed", s.SKU_EMBED = "sku_embed", s);
 
-function r(t, e, i) {
-    l.default.track(s.HAw.STOREFRONT_COPY_LINK_CLICKED, {
-        application_id: t,
-        area: e,
+function a(e, t, i) {
+    r.default.track(n.HAw.STOREFRONT_COPY_LINK_CLICKED, {
+        application_id: e,
+        area: t,
         sku_id: i
     })
 }

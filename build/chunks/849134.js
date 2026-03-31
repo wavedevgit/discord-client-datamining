@@ -1,11 +1,10 @@
 /** chunk id: 849134 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
     A: () => d
 });
 var i = n(627968),
-    s = n(64700),
-    l = n(342494),
+    l = n(64700),
+    s = n(342494),
     a = n(486318),
     r = n(985018),
     o = n(762683),
@@ -19,8 +18,8 @@ function d(e) {
         onActionClick: u,
         onActionMouseDown: h,
         position: A = "right",
-        align: m = "top",
-        caretConfig: _ = {
+        align: _ = "top",
+        caretConfig: m = {
             align: "start"
         },
         skuImageDetails: g,
@@ -28,10 +27,10 @@ function d(e) {
         body: f,
         overlayImageUrl: x
     } = e;
-    s.useEffect(() => {
+    l.useEffect(() => {
         n?.()
     }, [n]);
-    let E = s.useMemo(() => g?.imageUrl == null ? {
+    let E = l.useMemo(() => g?.imageUrl == null ? {
         type: "image",
         src: c.A,
         aspectRatio: "6/4"
@@ -45,14 +44,14 @@ function d(e) {
             foregroundImageClassName: o._
         }
     }), [g?.imageUrl, g?.backgroundImageUrl, x]);
-    return (0, i.jsx)(l.AM, {
+    return (0, i.jsx)(s.AM, {
         size: "lg",
         shouldShow: !0,
         position: A,
-        caretConfig: _,
+        caretConfig: m,
         gradientColor: "purple",
         alignmentStrategy: "edge",
-        align: m,
+        align: _,
         badge: {
             type: "new",
             variant: "default"

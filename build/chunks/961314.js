@@ -1,12 +1,11 @@
 /** chunk id: 961314 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
     A: () => h
 });
 var i = n(627968);
 n(64700);
-var s = n(397927),
-    l = n(58736),
+var l = n(397927),
+    s = n(58736),
     a = n(722260),
     r = n(563312),
     o = n(974930),
@@ -20,20 +19,20 @@ function h(e) {
         recurrenceId: n
     } = e, h = (0, r.Ay)(t, n), A = (0, a.A)(n, t.id);
     if (null == t) return null;
-    let m = t?.scheduled_start_time != null ? (0, o.j)(A, h.startTime, new Date(t?.scheduled_start_time)) : null;
+    let _ = t?.scheduled_start_time != null ? (0, o.j)(A, h.startTime, new Date(t?.scheduled_start_time)) : null;
     return (0, i.jsxs)(i.Fragment, {
-        children: [(0, i.jsx)(l.Ay.Divider, {
+        children: [(0, i.jsx)(s.Ay.Divider, {
             className: u.yF
         }), (0, i.jsx)(c.L, {
             startTime: h.startTime.toISOString(),
-            status: m ?? t.status,
+            status: _ ?? t.status,
             liveText: d.intl.string(d.t.kM6e4G),
             className: u.aF,
             textVariant: "text-md/semibold",
             eventType: t.entity_type,
             guildEventId: t?.id,
             recurrenceId: n
-        }), (0, i.jsx)(s.Text, {
+        }), (0, i.jsx)(l.Text, {
             color: "text-default",
             variant: "text-md/normal",
             className: u.eq,

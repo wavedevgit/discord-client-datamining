@@ -1,29 +1,29 @@
 /** chunk id: 755029 params = (module,exports,require) **/
 "use strict";
-i.d(t, {
-    A: () => _
+n.d(t, {
+    A: () => p
 });
-var n = i(627968);
-i(64700);
-var s = i(311907),
-    a = i(528772),
-    l = i(944775),
-    r = i(927421),
-    o = i(734057),
-    d = i(309010),
-    c = i(427603),
-    u = i(980504),
-    h = i(931374);
+var i = n(627968);
+n(64700);
+var s = n(311907),
+    a = n(528772),
+    l = n(944775),
+    r = n(927421),
+    o = n(734057),
+    d = n(309010),
+    c = n(427603),
+    u = n(980504),
+    h = n(931374);
 
-function _() {
-    let [e, t] = (0, s.yK)([a.A], () => [a.A.enabled, a.A.keepOpen]), i = (0, s.bG)([d.A], () => d.A.getVoiceChannelId()), _ = (0, s.bG)([o.A], () => o.A.getChannel(i), [i]), p = _?.getGuildId();
-    return e && null != _ ? (0, n.jsx)("div", {
+function p() {
+    let [e, t] = (0, s.yK)([a.A], () => [a.A.enabled, a.A.keepOpen]), n = (0, s.bG)([d.A], () => d.A.getVoiceChannelId()), p = (0, s.bG)([o.A], () => o.A.getChannel(n), [n]), f = p?.getGuildId();
+    return e && null != p ? (0, i.jsx)("div", {
         className: h.H,
-        children: (0, n.jsx)(r.A, {
+        children: (0, i.jsx)(r.A, {
             width: u.ed.width,
             height: u.ed.height,
-            guildId: p,
-            channel: _,
+            guildId: f,
+            channel: p,
             keepOpen: t,
             onClose: function() {
                 let e = (0, c.A)();

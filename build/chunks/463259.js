@@ -4,9 +4,9 @@ n.d(t, {
     u: () => P
 });
 var i = n(627968),
-    l = n(64700),
-    a = n(503698),
-    s = n.n(a),
+    a = n(64700),
+    l = n(503698),
+    s = n.n(l),
     r = n(311907),
     o = n(397927),
     d = n(384904),
@@ -33,8 +33,8 @@ var i = n(627968),
     R = n(982599),
     k = n(515054),
     O = n(266713),
-    L = n(985018),
-    w = n(882612);
+    w = n(985018),
+    L = n(882612);
 
 function P(e) {
     let {
@@ -52,14 +52,14 @@ function P(e) {
 
 function D() {
     return (0, i.jsxs)("div", {
-        className: w.mJ,
+        className: L.mJ,
         children: [(0, i.jsx)(o.mir, {
             size: "xs"
         }), (0, i.jsx)(o.Text, {
-            "aria-label": L.intl.string(L.t["7blcz6"]),
+            "aria-label": w.intl.string(w.t["7blcz6"]),
             variant: "text-xs/normal",
             color: "text-muted",
-            children: L.intl.string(L.t["7blcz6"])
+            children: w.intl.string(w.t["7blcz6"])
         })]
     })
 }
@@ -77,13 +77,13 @@ function G() {
         bypassAutoDismiss: !0,
         children: e => {
             let {
-                visibleContent: l,
-                markAsDismissed: a
-            } = e, s = t.find(e => e.dismissibleContent === l);
+                visibleContent: a,
+                markAsDismissed: l
+            } = e, s = t.find(e => e.dismissibleContent === a);
             return null == s ? null : (0, i.jsx)(E.A, {
                 user: n,
                 application: s.application,
-                onDismiss: a
+                onDismiss: l
             })
         }
     })
@@ -93,37 +93,37 @@ function M(e) {
     let {
         user: t,
         guildId: n,
-        channelId: a
+        channelId: l
     } = e, s = (0, v.A)(t.id), o = (0, r.bG)([f.default], () => f.default.getId() === t.id), u = (() => {
         let [e, t] = (0, r.yK)([h.A], () => [h.A.ipCountryCode, h.A.ipCountryCodeRequest]), n = (0, x.Z)();
-        return l.useEffect(() => {
+        return a.useEffect(() => {
             null == e && null == t && n && (0, d.xe)()
         }, [e, t, n]), "GB" === e && n
     })(), m = (0, c.JY)({
         location: "UserProfileModalV2Widgets"
-    }), j = 0 === s.length && o, T = l.useMemo(() => s.filter(A.fu), [s]), E = l.useMemo(() => s.filter(e => e instanceof _.R), [s]);
+    }), j = 0 === s.length && o, T = a.useMemo(() => s.filter(A.fu), [s]), E = a.useMemo(() => s.filter(e => e instanceof _.R), [s]);
     (0, I.Y)(o, T), ((e, t) => {
-        let n = l.useMemo(() => t.map(e => e.applicationId), [t]);
+        let n = a.useMemo(() => t.map(e => e.applicationId), [t]);
         (0, g.A)(n);
         let {
             data: i,
-            refetch: a
-        } = (0, p.P)(e), s = l.useRef(null !== i);
-        l.useEffect(() => {
-            s.current && (s.current = !1, a())
-        }, [a])
+            refetch: l
+        } = (0, p.P)(e), s = a.useRef(null !== i);
+        a.useEffect(() => {
+            s.current && (s.current = !1, l())
+        }, [l])
     })(t.id, E);
     let S = () => (0, i.jsxs)(i.Fragment, {
         children: [o && (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)(b.A, {
-                className: w.cG
+                className: L.cG
             }), u && (0, i.jsx)(D, {}), m && (0, i.jsx)(G, {})]
-        }), s.map((e, l) => (0, i.jsx)(P, {
+        }), s.map((e, a) => (0, i.jsx)(P, {
             widget: e,
             user: t,
             guildId: n,
-            channelId: a,
-            index: l
+            channelId: l,
+            index: a
         }, e.getUniqueKey()))]
     });
     if (j)
@@ -138,20 +138,20 @@ function U(e) {
     let {
         user: t,
         ...n
-    } = e, a = l.useRef(null);
+    } = e, l = a.useRef(null);
     (0, j.i)({
-        containerRef: a
+        containerRef: l
     });
     let r = (0, R.k)(t.id);
     return (0, i.jsxs)(k.K, {
         "data-scroller": !0,
-        scrollerRef: a,
-        className: s()(w.XG, {
-            [w.az]: r
+        scrollerRef: l,
+        className: s()(L.XG, {
+            [L.az]: r
         }),
         fade: !0,
         children: [(0, i.jsx)(S.A, {
-            scrollerRef: a
+            scrollerRef: l
         }), (0, i.jsx)(M, {
             user: t,
             ...n

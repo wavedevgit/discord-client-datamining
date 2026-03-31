@@ -1,11 +1,10 @@
 /** chunk id: 34247 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
     A: () => g
 });
 var i = n(627968),
-    s = n(64700),
-    l = n(696292),
+    l = n(64700),
+    s = n(696292),
     a = n(397927),
     r = n(533129),
     o = n(726845),
@@ -14,15 +13,15 @@ var i = n(627968),
     u = n(606256),
     h = n(488995),
     A = n(324580),
-    m = n(654487),
-    _ = n(985018);
-let g = s.forwardRef(function(e, t) {
+    _ = n(654487),
+    m = n(985018);
+let g = l.forwardRef(function(e, t) {
     let {
         selected: n,
         onClick: g,
         questId: p,
         className: f
-    } = e, x = s.useCallback(() => {
+    } = e, x = l.useCallback(() => {
         (0, r.WL)({
             source: h.GlobalDiscoveryAnalyticsLocations.GUILDS_BAR_ICON
         });
@@ -31,8 +30,8 @@ let g = s.forwardRef(function(e, t) {
             case h.GlobalDiscoveryTab.QUESTS:
                 return (0, c.transitionToGlobalDiscovery)({
                     tab: h.GlobalDiscoveryTab.QUESTS,
-                    location: m.rE.DISCOVERY_COMPASS,
-                    questContent: l.u.DISCOVERY_COMPASS,
+                    location: _.rE.DISCOVERY_COMPASS,
+                    questContent: s.u.DISCOVERY_COMPASS,
                     questId: p
                 });
             case h.GlobalDiscoveryTab.SERVERS:
@@ -64,7 +63,7 @@ let g = s.forwardRef(function(e, t) {
             x(), void 0 !== g && g()
         },
         selected: n,
-        tooltip: _.intl.string(_.t["4nEZLk"]),
+        tooltip: m.intl.string(m.t["4nEZLk"]),
         icon: a.QGJ
     })
 })

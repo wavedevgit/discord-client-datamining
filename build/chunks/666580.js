@@ -4,8 +4,8 @@ n.d(t, {
 });
 var l = n(627968),
     a = n(64700),
-    r = n(397927),
-    i = n(105769);
+    i = n(397927),
+    r = n(105769);
 let s = e => {
     let {
         element: t,
@@ -26,15 +26,15 @@ let s = e => {
             null != e && (m(e), n(d, e))
         }, [n, d]);
     return (0, l.jsxs)("div", {
-        children: [(0, l.jsxs)(r.Text, {
+        children: [(0, l.jsxs)(i.Text, {
             variant: "text-md/medium",
             color: "text-strong",
-            className: i.P,
+            className: r.P,
             children: [o, t.should_submit_data && (0, l.jsx)("span", {
-                className: i.m,
+                className: r.m,
                 children: "*"
             })]
-        }), (0, l.jsx)(r.z6M, {
+        }), (0, l.jsx)(i.z6M, {
             value: _,
             onChange: p,
             options: x

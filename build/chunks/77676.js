@@ -1,5 +1,4 @@
 /** chunk id: 77676 params = (module,exports,require) **/
-"use strict";
 e.exports = {
     nM: "row__70e41",
     R3: "avatarWrapper__70e41",

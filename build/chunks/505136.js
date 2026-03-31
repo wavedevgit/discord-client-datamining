@@ -17,7 +17,7 @@ function u(e) {
         className: n,
         onExpand: l,
         ...u
-    } = e, [m, _] = s.useState(!1);
+    } = e, [m, g] = s.useState(!1);
     return (0, i.jsx)(r.Nt8, {
         className: c.uR,
         collapsibleContent: (0, i.jsx)("div", {
@@ -32,7 +32,7 @@ function u(e) {
                 ...u,
                 onClick: e => {
                     var n;
-                    _(n = !m), l?.(n), t?.(e)
+                    g(n = !m), l?.(n), t?.(e)
                 },
                 className: a()(c.AC, n),
                 action: (0, i.jsxs)("div", {

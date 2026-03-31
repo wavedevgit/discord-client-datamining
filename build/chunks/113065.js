@@ -1,6 +1,6 @@
 /** chunk id: 113065 params = (module,exports,require) **/
 n.d(t, {
-    A: () => _
+    A: () => g
 });
 var i = n(627968);
 n(64700);
@@ -13,7 +13,7 @@ var s = n(503698),
     c = n(985018),
     u = n(26440),
     m = n(452567);
-let _ = () => {
+let g = () => {
     let e = c.intl.string(d.default.tr8Gni),
         t = (0, r.y)(c.intl.string(d.default["3xKGSE"]), c.intl.string(d.default.XbgrG7));
     return (0, i.jsxs)(a.BJc, {

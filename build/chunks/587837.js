@@ -1,11 +1,10 @@
 /** chunk id: 587837 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
     A: () => r
 });
 var i = n(627968),
-    s = n(64700),
-    l = n(761929),
+    l = n(64700),
+    s = n(761929),
     a = n(572498);
 
 function r(e) {
@@ -15,18 +14,18 @@ function r(e) {
         onResizeEnd: r,
         minHeight: o,
         maxHeight: c
-    } = e, [d, u] = s.useState(null);
-    s.useEffect(() => {
+    } = e, [d, u] = l.useState(null);
+    l.useEffect(() => {
         u(t.current?.offsetHeight ?? null)
     }, [t]);
-    let h = (0, l.A)({
+    let h = (0, s.A)({
         initialElementDimension: d,
         minDimension: o,
         maxDimension: c,
         resizableDomNodeRef: t,
         onElementResize: n,
         onElementResizeEnd: r,
-        orientation: l.R.VERTICAL_BOTTOM
+        orientation: s.R.VERTICAL_BOTTOM
     });
     return (0, i.jsx)("div", {
         onMouseDown: h,

@@ -1,12 +1,11 @@
 /** chunk id: 374873 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
-    A: () => G
+    A: () => U
 });
 var i = n(627968),
-    s = n(64700),
-    l = n(503698),
-    a = n.n(l),
+    l = n(64700),
+    s = n(503698),
+    a = n.n(s),
     r = n(284009),
     o = n.n(r),
     c = n(311907),
@@ -14,34 +13,34 @@ var i = n(627968),
     u = n(397927),
     h = n(442433),
     A = n(730134),
-    m = n(964486),
-    _ = n(80682),
+    _ = n(964486),
+    m = n(80682),
     g = n(58736),
     p = n(967144),
     f = n(342296),
     x = n(696451),
     E = n(576705),
-    C = n(290863),
-    I = n(849736),
+    I = n(290863),
+    C = n(849736),
     N = n(113783),
-    S = n(925931),
-    b = n(105530),
-    T = n(699970),
-    v = n(345687),
-    y = n(818348),
+    T = n(925931),
+    S = n(105530),
+    b = n(699970),
+    y = n(345687),
+    v = n(818348),
     j = n(985018),
     R = n(142126);
-let O = s.memo(function(e) {
+let O = l.memo(function(e) {
         let {
             toggleRequestToSpeakSidebar: t,
             chatOpen: n
-        } = e, s = (0, i.jsx)(g.Ay.Icon, {
+        } = e, l = (0, i.jsx)(g.Ay.Icon, {
             icon: u.PGe,
             tooltip: j.intl.string(j.t.cpT0Cq),
             onClick: t
         });
         return (0, i.jsxs)(g.Ay, {
-            toolbar: s,
+            toolbar: l,
             className: a()(R.N1, {
                 [R.X_]: n
             }),
@@ -54,13 +53,13 @@ let O = s.memo(function(e) {
             })]
         })
     }),
-    L = s.memo(function(e) {
+    L = l.memo(function(e) {
         let {
             channel: t,
-            participant: l,
+            participant: s,
             tempDisableOnInit: a = !1
-        } = e, r = s.useRef(null), [g, E] = s.useState(a);
-        (0, m.Ay)(() => {
+        } = e, r = l.useRef(null), [g, E] = l.useState(a);
+        (0, _.Ay)(() => {
             if (!g) return;
             let e = setTimeout(() => E(!1), 1e3);
             return () => clearTimeout(e)
@@ -68,16 +67,16 @@ let O = s.memo(function(e) {
         let N = t.getGuildId();
         o()(null != N, "Channel cannot be guildless");
         let {
-            isMobile: T,
-            status: v
-        } = (0, c.cf)([C.A], () => ({
-            isMobile: C.A.isMobileOnline(l.user.id),
-            status: C.A.getStatus(l.user.id, N)
-        })), y = (0, c.bG)([x.Ay], () => x.Ay.getMember(N, l.user.id)), O = (0, p.gn)(t.guild_id, y?.userId, y?.colorStrings ?? null), L = s.useMemo(() => ({
-            [N]: [l.user.id]
-        }), [N, l.user.id]);
-        (0, _.Eq)(L, "RequestToSpeakSidebar");
-        let M = l.rtsState === b.zF.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK,
+            isMobile: b,
+            status: y
+        } = (0, c.cf)([I.A], () => ({
+            isMobile: I.A.isMobileOnline(s.user.id),
+            status: I.A.getStatus(s.user.id, N)
+        })), v = (0, c.bG)([x.Ay], () => x.Ay.getMember(N, s.user.id)), O = (0, p.gn)(t.guild_id, v?.userId, v?.colorStrings ?? null), L = l.useMemo(() => ({
+            [N]: [s.user.id]
+        }), [N, s.user.id]);
+        (0, m.Eq)(L, "RequestToSpeakSidebar");
+        let M = s.rtsState === S.zF.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK,
             D = e => {
                 (0, h.L3)(e, async () => {
                     let {
@@ -85,7 +84,7 @@ let O = s.memo(function(e) {
                     } = await Promise.all([n.e("97262"), n.e("42128"), n.e("84841"), n.e("50970")]).then(n.bind(n, 107632));
                     return n => (0, i.jsx)(e, {
                         ...n,
-                        user: l.user,
+                        user: s.user,
                         guildId: N,
                         channel: t,
                         showMediaItems: !0
@@ -96,7 +95,7 @@ let O = s.memo(function(e) {
             className: R.fn,
             children: [(0, i.jsx)(f.A, {
                 targetElementRef: r,
-                user: l.user,
+                user: s.user,
                 guildId: t.guild_id,
                 channelId: t.id,
                 position: "left",
@@ -110,20 +109,20 @@ let O = s.memo(function(e) {
                     children: [(0, i.jsx)(A.A, {
                         size: u._3J.SIZE_40,
                         className: R.RB,
-                        user: l.user,
-                        isMobile: T,
-                        status: v
+                        user: s.user,
+                        isMobile: b,
+                        status: y
                     }), (0, i.jsxs)("div", {
                         className: R.kH,
                         children: [(0, i.jsx)(u.gyj, {
-                            name: l.userNick,
-                            colorString: y?.colorString ?? null,
+                            name: s.userNick,
+                            colorString: v?.colorString ?? null,
                             colorStrings: O,
                             className: R.F8
                         }), (0, i.jsx)(u.Text, {
                             variant: "text-xs/normal",
                             color: "text-default",
-                            children: (0, S.g)(l)
+                            children: (0, T.g)(s)
                         })]
                     })]
                 })
@@ -134,7 +133,7 @@ let O = s.memo(function(e) {
                     asContainer: !0,
                     children: (0, i.jsx)(u.K0, {
                         onClick: function() {
-                            (0, I.lL)(t, l.user.id, !1)
+                            (0, C.lL)(t, s.user.id, !1)
                         },
                         disabled: M || g,
                         icon: u.LvC,
@@ -147,7 +146,7 @@ let O = s.memo(function(e) {
                     children: (0, i.jsx)(u.K0, {
                         "aria-label": j.intl.string(j.t.moABMy),
                         onClick: function() {
-                            (0, I.lL)(t, l.user.id, !0)
+                            (0, C.lL)(t, s.user.id, !0)
                         },
                         icon: u.PGe,
                         variant: "secondary"
@@ -156,20 +155,20 @@ let O = s.memo(function(e) {
             })]
         })
     }),
-    M = s.memo(function(e) {
+    M = l.memo(function(e) {
         let {
             channel: t
-        } = e, [n, s] = (0, T.X)(t.id);
+        } = e, [n, l] = (0, b.X)(t.id);
         return (0, i.jsx)(u.dOG, {
             label: j.intl.string(j.t.GYCh0W),
             checked: n,
-            onChange: s
+            onChange: l
         })
     }),
-    D = s.memo(function() {
+    D = l.memo(function() {
         return (0, i.jsxs)("div", {
             className: R.y7,
-            children: [(0, i.jsx)(v.A, {}), (0, i.jsx)(u.Text, {
+            children: [(0, i.jsx)(y.A, {}), (0, i.jsx)(u.Text, {
                 className: R.vo,
                 variant: "text-lg/semibold",
                 color: "text-strong",
@@ -183,19 +182,19 @@ let O = s.memo(function(e) {
         })
     });
 
-function G(e) {
+function U(e) {
     let {
         channel: t,
         toggleRequestToSpeakSidebar: n,
-        chatOpen: s
-    } = e, l = (0, N.J2)(t.id), r = [+!!(0, c.bG)([E.A], () => E.A.can(y.xB.MANAGE_CHANNELS, t) || E.A.can(y.xB.MANAGE_ROLES, t)), Math.max(1, l.length)];
+        chatOpen: l
+    } = e, s = (0, N.J2)(t.id), r = [+!!(0, c.bG)([E.A], () => E.A.can(v.xB.MANAGE_CHANNELS, t) || E.A.can(v.xB.MANAGE_ROLES, t)), Math.max(1, s.length)];
     return (0, i.jsxs)("div", {
         className: a()(R.kL, {
-            [R.X_]: s
+            [R.X_]: l
         }),
         children: [(0, i.jsx)(O, {
             toggleRequestToSpeakSidebar: n,
-            chatOpen: s
+            chatOpen: l
         }), (0, i.jsx)(u.B8B, {
             className: R.hQ,
             sections: r,
@@ -207,7 +206,7 @@ function G(e) {
                     case 0:
                         return 66;
                     case 1:
-                        if (0 === l.length) return 178;
+                        if (0 === s.length) return 178;
                         return 48
                 }
                 return 0
@@ -215,7 +214,7 @@ function G(e) {
             renderRow: function(e) {
                 let {
                     section: n,
-                    row: s
+                    row: l
                 } = e;
                 switch (n) {
                     case 0:
@@ -223,8 +222,8 @@ function G(e) {
                             channel: t
                         }, "rts-toggle");
                     case 1: {
-                        if (0 === l.length) return (0, i.jsx)(D, {}, "participants-empty");
-                        let e = l[s];
+                        if (0 === s.length) return (0, i.jsx)(D, {}, "participants-empty");
+                        let e = s[l];
                         return (0, i.jsx)(L, {
                             channel: t,
                             participant: e,
@@ -242,8 +241,8 @@ function G(e) {
                     className: R.Vu,
                     variant: "text-xs/bold",
                     color: "text-default",
-                    children: l.length > 0 ? j.intl.formatToPlainString(j.t["5z7q5a"], {
-                        numHands: l.length
+                    children: s.length > 0 ? j.intl.formatToPlainString(j.t["5z7q5a"], {
+                        numHands: s.length
                     }) : j.intl.string(j.t.TYZgzW)
                 }, "participants-section") : null
             }

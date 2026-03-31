@@ -1,11 +1,10 @@
 /** chunk id: 965601 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
     C: () => A
 });
 var i = n(627968),
-    s = n(64700),
-    l = n(562465),
+    l = n(64700),
+    s = n(562465),
     a = n(990078),
     r = n(397927),
     o = n(147087),
@@ -14,7 +13,7 @@ var i = n(627968),
     u = n(985018);
 async function h(e) {
     try {
-        let t = await l.Bo.post({
+        let t = await s.Bo.post({
             url: d.Rsh.AI_TITLE,
             body: {
                 content: e
@@ -32,12 +31,12 @@ function A(e) {
     let {
         parentChannel: t,
         parentMessageId: n,
-        updateThreadSettings: l,
+        updateThreadSettings: s,
         threadSettings: d,
         textAreaState: A
-    } = e, [m, _] = s.useState(!1), [g, p] = s.useState(!1), f = (0, o.b)(), x = s.useCallback(async () => {
+    } = e, [_, m] = l.useState(!1), [g, p] = l.useState(!1), f = (0, o.b)(), x = l.useCallback(async () => {
         if (f) {
-            _(!0);
+            m(!0);
             try {
                 let e = null;
                 if (null != n) {
@@ -46,34 +45,34 @@ function A(e) {
                 } else A.textValue.trim().length >= 10 && (e = A.textValue);
                 if (null != e) {
                     let t = await h(e);
-                    null != t && "" !== t.trim() && l({
+                    null != t && "" !== t.trim() && s({
                         name: t
                     })
                 }
             } finally {
-                _(!1)
+                m(!1)
             }
         }
-    }, [t.id, n, l, f, A.textValue]);
-    s.useEffect(() => {
-        p(!1), _(!1), t.id === d.parentChannelId && n !== d.parentMessageId && l({
+    }, [t.id, n, s, f, A.textValue]);
+    l.useEffect(() => {
+        p(!1), m(!1), t.id === d.parentChannelId && n !== d.parentMessageId && s({
             name: ""
         })
-    }, [n, l, t.id, d.parentChannelId, d.parentMessageId]), s.useEffect(() => {
+    }, [n, s, t.id, d.parentChannelId, d.parentMessageId]), l.useEffect(() => {
         null != d.name && "" !== d.name.trim() || g || f && null != n && (p(!0), x())
-    }, [t.id, n, l, d.name, g, f, x]);
-    let E = s.useCallback(function() {
+    }, [t.id, n, s, d.name, g, f, x]);
+    let E = l.useCallback(function() {
             let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0];
             if (f) return {
                 icon: r.Dud,
                 onClick: x,
                 "aria-label": u.intl.string(u.t.ZF2oBs),
-                disabled: e || m || null == n && A.textValue.trim().length < 10,
+                disabled: e || _ || null == n && A.textValue.trim().length < 10,
                 tooltip: u.intl.string(u.t.ZF2oBs),
-                loading: m
+                loading: _
             }
-        }, [f, x, m, n, A.textValue]),
-        C = s.useCallback(function() {
+        }, [f, x, _, n, A.textValue]),
+        I = l.useCallback(function() {
             let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0];
             return f ? (0, i.jsx)(a.m, {
                 text: u.intl.string(u.t.ZF2oBs),
@@ -83,17 +82,17 @@ function A(e) {
                     size: "sm",
                     "aria-label": u.intl.string(u.t.ZF2oBs),
                     onClick: x,
-                    disabled: e || m || null == n && A.textValue.trim().length < 10,
-                    loading: m,
+                    disabled: e || _ || null == n && A.textValue.trim().length < 10,
+                    loading: _,
                     type: "button"
                 })
             }) : null
-        }, [f, m, n, A.textValue, x]);
+        }, [f, _, n, A.textValue, x]);
     return {
-        isGeneratingAI: m,
+        isGeneratingAI: _,
         generateAIName: x,
         enableAIFeatures: f,
-        renderAiGenerateButton: C,
+        renderAiGenerateButton: I,
         getThreadNameInputAccessory: E
     }
 }

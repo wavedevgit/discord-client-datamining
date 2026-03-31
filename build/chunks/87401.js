@@ -1,11 +1,10 @@
 /** chunk id: 87401 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
     A: () => o
 });
 var i = n(311907),
-    s = n(73153),
-    l = n(988794);
+    l = n(73153),
+    s = n(988794);
 let a = {};
 class r extends i.Ay.PersistedStore {
     static displayName = "EventBannerStore";
@@ -22,7 +21,7 @@ class r extends i.Ay.PersistedStore {
         }
     }
 }
-let o = new r(s.h, {
+let o = new r(l.h, {
     EVENT_BANNER_DISMISS: function(e) {
         let {
             eventId: t
@@ -36,7 +35,7 @@ let o = new r(s.h, {
         let {
             guildScheduledEvent: t
         } = e;
-        if (t.status !== l.XG.CANCELED && t.status !== l.XG.COMPLETED || null == a[t.id]) return !1;
+        if (t.status !== s.XG.CANCELED && t.status !== s.XG.COMPLETED || null == a[t.id]) return !1;
         let n = {
             ...a
         };

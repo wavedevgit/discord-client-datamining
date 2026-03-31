@@ -1,11 +1,10 @@
 /** chunk id: 283354 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
     default: () => A
 });
 var i = n(627968),
-    s = n(64700),
-    l = n(314116),
+    l = n(64700),
+    s = n(314116),
     a = n(397927),
     r = n(442433),
     o = n(50268),
@@ -18,8 +17,8 @@ function A(e) {
     let {
         entry: t,
         onSelect: A,
-        closePopout: m,
-        hideEditButton: _ = !1
+        closePopout: _,
+        hideEditButton: m = !1
     } = e, {
         isEntryAdmin: g,
         canEdit: p,
@@ -27,26 +26,26 @@ function A(e) {
     } = (0, u.A)(t), x = (0, o.A)({
         id: t.guildId,
         label: h.intl.string(h.t["94lLD7"]),
-        onSuccess: m
+        onSuccess: _
     });
-    s.useEffect(() => {
+    l.useEffect(() => {
         p || f || null != x || (0, r.Z_)()
     });
     let E = () => {
         d.ZM(t.channelId, t.guildId)
     };
 
-    function C() {
-        (0, r.Z_)(), m?.()
+    function I() {
+        (0, r.Z_)(), _?.()
     }
     return (0, i.jsxs)(a.W1t, {
         "data-menu-migrated": !0,
         navId: "guild-entry-context",
-        onClose: C,
+        onClose: I,
         "aria-label": h.intl.string(h.t.HpQykc),
         onSelect: A,
         children: [(0, i.jsxs)(a.rXV, {
-            children: [p && !_ ? (0, i.jsx)(a.Drp, {
+            children: [p && !m ? (0, i.jsx)(a.Drp, {
                 id: "update-entry",
                 label: h.intl.string(h.t.XnuOvN),
                 action: function() {
@@ -58,7 +57,7 @@ function A(e) {
                             ...n,
                             entry: t
                         })
-                    }), C()
+                    }), I()
                 },
                 leadingAccessory: {
                     type: "icon",
@@ -68,14 +67,14 @@ function A(e) {
                 id: "remove-from-hub",
                 label: h.intl.string(h.t.KUxYWH),
                 action: function() {
-                    (0, l.A)({
+                    (0, s.A)({
                         title: h.intl.string(h.t.KUxYWH),
                         subtitle: h.intl.format(h.t["/5y0uV"], {
                             guildName: t.name
                         }),
                         confirmText: h.intl.string(h.t.N86XcP),
                         onConfirm: E
-                    }), C()
+                    }), I()
                 },
                 color: "danger",
                 leadingAccessory: {
@@ -86,7 +85,7 @@ function A(e) {
                 id: "report-server-listing",
                 label: h.intl.string(h.t.Aen9eh),
                 action: function() {
-                    null != t && ((0, c.sJ)(t), C())
+                    null != t && ((0, c.sJ)(t), I())
                 },
                 icon: a.iFK,
                 leadingAccessory: {

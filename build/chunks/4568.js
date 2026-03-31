@@ -1,5 +1,4 @@
 /** chunk id: 4568 params = (module,exports,require) **/
-"use strict";
 e.exports = {
     kL: "container__243fe",
     hY: "popoutHeader__243fe",

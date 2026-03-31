@@ -1,6 +1,6 @@
 /** chunk id: 767669 params = (module,exports,require) **/
 n.d(t, {
-    A: () => _
+    A: () => g
 });
 var i = n(627968),
     s = n(64700),
@@ -13,28 +13,28 @@ var i = n(627968),
     u = n(179690),
     m = n(985018);
 
-function _(e) {
+function g(e) {
     let {
         backupCodes: t,
         hasTOTPEnabled: n,
-        currentUser: _
-    } = e, g = s.useCallback(e => {
+        currentUser: g
+    } = e, _ = s.useCallback(e => {
         (0, l.qfG)(t => (0, i.jsx)(d.A, {
             ...t,
             password: e
         }), {
             stackingBehavior: "stack"
         })
-    }, []), x = s.useCallback(() => {
+    }, []), A = s.useCallback(() => {
         (0, l.qfG)(e => (0, i.jsx)(c.default, {
             ...e,
             handleSubmit: e => a.A.sendMFABackupCodesVerificationKeyEmail(e).then(() => {
-                g(e)
+                _(e)
             }),
             title: m.intl.string(m.t.PsQmzU),
             actionText: m.intl.string(m.t.ajkYcF)
         }))
-    }, [g]), A = s.useCallback(() => {
+    }, [_]), x = s.useCallback(() => {
         let e = t.map(e => {
                 let {
                     consumed: t,
@@ -43,13 +43,13 @@ function _(e) {
                 return `* ${n.substr(0,4)}-${n.substr(4)} ${t?"(used)":""}`
             }).join("\r\n"),
             n = m.intl.formatToPlainString(m.t["uYWwh/"], {
-                email: _.email
+                email: g.email
             });
         return `${n}\r
 \r
 ${e}`
-    }, [t, _.email]), h = s.useMemo(() => t.length > 0 ? (0, i.jsx)(o.A, {
-        fileContents: A,
+    }, [t, g.email]), h = s.useMemo(() => t.length > 0 ? (0, i.jsx)(o.A, {
+        fileContents: x,
         contentType: "text/plain",
         fileName: "discord_backup_codes.txt",
         children: (0, i.jsx)(l.Button, {
@@ -61,8 +61,8 @@ ${e}`
         variant: "primary",
         size: "sm",
         text: m.intl.string(m.t.xZEzbu),
-        onClick: x
-    }), [t.length, A, x]), p = s.useCallback(() => {
+        onClick: A
+    }), [t.length, x, A]), p = s.useCallback(() => {
         r.A.show({
             title: m.intl.string(m.t["D+aE7g"]),
             body: m.intl.string(m.t.EA4ZEk),

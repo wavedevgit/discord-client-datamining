@@ -1,6 +1,6 @@
 /** chunk id: 624945 params = (module,exports,require) **/
 n.d(t, {
-    A: () => m
+    A: () => A
 });
 var i = n(627968),
     l = n(311907),
@@ -13,22 +13,22 @@ var i = n(627968),
     u = n(985018),
     _ = n(351810);
 
-function m(e) {
+function A(e) {
     let {
         message: t,
         channel: n,
-        compact: m
-    } = e, A = t.getChannelId(), E = n.isDM() ? n.getRecipientId() : void 0, I = (0, l.bG)([s.default], () => null != E ? s.default.getUser(E) : void 0, [E]), T = (0, l.bG)([s.default], () => s.default.getCurrentUser(), []), f = null != T && t.author.id === T.id, N = (0, o.d8)(I, n), g = (0, c.P)({
-        user: I,
-        channelId: A,
+        compact: A
+    } = e, m = t.getChannelId(), E = n.isDM() ? n.getRecipientId() : void 0, T = (0, l.bG)([s.default], () => null != E ? s.default.getUser(E) : void 0, [E]), I = (0, l.bG)([s.default], () => s.default.getCurrentUser(), []), N = null != I && t.author.id === I.id, g = (0, o.d8)(T, n), f = (0, c.P)({
+        user: T,
+        channelId: m,
         guildId: void 0,
         messageId: t.id
-    })(N);
-    if (!n.isDM() || null == I || null == T) return null;
-    let C = f ? u.t.S6PRsh : u.t["H/9Tlj"],
+    })(g);
+    if (!n.isDM() || null == T || null == I) return null;
+    let C = N ? u.t.S6PRsh : u.t["H/9Tlj"],
         h = u.intl.format(C, {
-            username: N.nick,
-            usernameHook: g
+            username: g.nick,
+            usernameHook: f
         });
     return (0, i.jsx)(d.A, {
         iconNode: (0, i.jsx)(r.V1C, {
@@ -37,7 +37,7 @@ function m(e) {
         }),
         iconContainerClassName: _.z,
         timestamp: t.timestamp,
-        compact: m,
+        compact: A,
         children: h
     })
 }

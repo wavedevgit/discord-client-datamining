@@ -14,8 +14,8 @@ var i = n(627968),
     u = n(85109),
     g = n(226017),
     A = n(49678),
-    p = n(927813),
-    m = n(985018);
+    m = n(927813),
+    p = n(985018);
 
 function f(e) {
     let {
@@ -28,7 +28,7 @@ function f(e) {
     });
     return t ? null != n || (0, g.A)() ? (0, i.jsxs)(r.Drp, {
         id: "save-for-later",
-        label: m.intl.string(m.t.tpxJto),
+        label: p.intl.string(p.t.tpxJto),
         leadingAccessory: {
             type: "icon",
             icon: null != n ? r.cFy : r.c$8
@@ -45,7 +45,7 @@ function f(e) {
         }),
         children: [null != n ? (0, i.jsx)(r.Drp, {
             id: "remove-from-for-later",
-            label: m.intl.string(m.t.SvXS1Z),
+            label: p.intl.string(p.t.SvXS1Z),
             leadingAccessory: {
                 type: "icon",
                 icon: r.cFy
@@ -59,7 +59,7 @@ function f(e) {
             })
         }) : (0, i.jsx)(r.Drp, {
             id: "create-bookmark",
-            label: m.intl.string(m.t["9p3D9p"]),
+            label: p.intl.string(p.t["9p3D9p"]),
             leadingAccessory: {
                 type: "icon",
                 icon: r.c$8
@@ -73,7 +73,7 @@ function f(e) {
         }), (0, i.jsx)(r.bXX, {}), l]
     }) : (0, i.jsx)(r.Drp, {
         id: "save-for-later-upsell",
-        label: m.intl.string(m.t.tpxJto),
+        label: p.intl.string(p.t.tpxJto),
         leadingAccessory: {
             type: "icon",
             icon: r.tvc,
@@ -97,7 +97,7 @@ function h(e) {
         savedMessage: n
     } = e, [a, s] = l.useState(new Date);
     l.useEffect(() => {
-        let e = setInterval(() => s(new Date), p.A.Millis.MINUTE);
+        let e = setInterval(() => s(new Date), m.A.Millis.MINUTE);
         return () => {
             clearInterval(e)
         }
@@ -119,13 +119,13 @@ function h(e) {
             type: c.kh.LONG
         });
     return n?.saveData.dueAt == null ? (0, i.jsx)(r.rXV, {
-        label: m.intl.string(m.t.roMu1H),
+        label: p.intl.string(p.t.roMu1H),
         children: u
     }) : (0, i.jsxs)(r.rXV, {
         label: g,
         children: [(0, i.jsx)(r.Drp, {
             id: "mark-complete",
-            label: m.intl.string(m.t.yjGtdJ),
+            label: p.intl.string(p.t.yjGtdJ),
             leadingAccessory: {
                 type: "icon",
                 icon: r.Uzd
@@ -138,7 +138,7 @@ function h(e) {
             })
         }), (0, i.jsx)(r.Drp, {
             id: "edit-reminder",
-            label: m.intl.string(m.t.vrbqs1),
+            label: p.intl.string(p.t.vrbqs1),
             children: u
         })]
     })

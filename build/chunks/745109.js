@@ -12,24 +12,24 @@ var i = n(627968),
     c = n(159001),
     u = n(766569),
     m = n(836602),
-    _ = n(576622),
-    g = n(841329),
-    x = n(183476),
-    A = n(338318),
+    g = n(576622),
+    _ = n(841329),
+    A = n(183476),
+    x = n(338318),
     h = n(71393),
     p = n(967198),
     T = n(711014),
     f = n(287809),
-    S = n(203982),
-    E = n(115063),
+    E = n(203982),
+    S = n(115063),
     b = n(507553),
     C = n(652215),
-    v = n(355097),
-    N = n(985018),
+    N = n(355097),
+    v = n(985018),
     I = n(127790);
 let j = {
-    [v.Eq.USER_PROFILE]: "main_profile_tab",
-    [v.Eq.GUILD]: "guild_profile_tab"
+    [N.Eq.USER_PROFILE]: "main_profile_tab",
+    [N.Eq.GUILD]: "guild_profile_tab"
 };
 
 function y() {
@@ -42,12 +42,12 @@ function y() {
         l = (0, r.bG)([f.default], () => f.default.getCurrentUser()),
         y = b.A.useField("subsection");
     return s.useEffect(() => {
-        (0, g._)(j[y])
+        (0, _._)(j[y])
     }, [y]), s.useEffect(() => {
-        null != l && t?.id != null && (0, _.A)(l.id, l.getAvatarURL(t?.id, 80), {
+        null != l && t?.id != null && (0, g.A)(l.id, l.getAvatarURL(t?.id, 80), {
             guildId: t?.id
         })
-    }, [t?.id, l]), (0, i.jsxs)(x.R, {
+    }, [t?.id, l]), (0, i.jsxs)(A.R, {
         children: [(0, i.jsxs)(o.VQ0, {
             className: I.$H,
             type: "top",
@@ -56,39 +56,39 @@ function y() {
             onItemSelect: function(e) {
                 if (y !== e) {
                     if (n) {
-                        (0, E.fO)({
+                        (0, S.fO)({
                             duration: 300,
                             intensity: d.n3
-                        }), S._.dispatch(C.jej.EMPHASIZE_NOTICE);
+                        }), E._.dispatch(C.jej.EMPHASIZE_NOTICE);
                         return
                     }
-                    e === v.Eq.GUILD && null != t && (0, c.V2)(t.id), b.A.setState({
+                    e === N.Eq.GUILD && null != t && (0, c.V2)(t.id), b.A.setState({
                         subsection: e
                     })
                 }
             },
             children: [(0, i.jsx)(o.VQ0.Item, {
                 className: I.YU,
-                id: v.Eq.USER_PROFILE,
-                children: N.intl.string(N.t["2p07FR"])
-            }, v.Eq.USER_PROFILE), (0, i.jsx)(o.VQ0.Item, {
+                id: N.Eq.USER_PROFILE,
+                children: v.intl.string(v.t["2p07FR"])
+            }, N.Eq.USER_PROFILE), (0, i.jsx)(o.VQ0.Item, {
                 className: a()(I.YU, I.HY),
-                "aria-label": N.intl.string(N.t.kPHroX),
-                id: v.Eq.GUILD,
-                children: N.intl.string(N.t.kPHroX)
-            }, v.Eq.GUILD)]
-        }), y === v.Eq.GUILD ? (0, i.jsx)(u.A, {
+                "aria-label": v.intl.string(v.t.kPHroX),
+                id: N.Eq.GUILD,
+                children: v.intl.string(v.t.kPHroX)
+            }, N.Eq.GUILD)]
+        }), y === N.Eq.GUILD ? (0, i.jsx)(u.A, {
             selectedGuild: t,
             onGuildChange: function(e) {
                 if (n) {
-                    (0, E.fO)({
+                    (0, S.fO)({
                         duration: 300,
                         intensity: d.n3
-                    }), S._.dispatch(C.jej.EMPHASIZE_NOTICE);
+                    }), E._.dispatch(C.jej.EMPHASIZE_NOTICE);
                     return
                 }
                 null != e && (0, c.JJ)(e.id)
             }
-        }) : (0, i.jsx)(A.A, {})]
+        }) : (0, i.jsx)(x.A, {})]
     })
 }

@@ -1,11 +1,10 @@
 /** chunk id: 823471 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
     A: () => R
 });
 var i = n(627968),
-    s = n(64700),
-    l = n(397927),
+    l = n(64700),
+    s = n(397927),
     a = n(182061),
     r = n(886393),
     o = n(307623),
@@ -14,34 +13,34 @@ var i = n(627968),
     u = n(41402),
     h = n(271456),
     A = n(200273),
-    m = n(565846),
-    _ = n(57907),
+    _ = n(565846),
+    m = n(57907),
     g = n(375500),
     p = n(707653),
     f = n(50268),
     x = n(584682),
     E = n(58736),
-    C = n(378570),
-    I = n(203982),
+    I = n(378570),
+    C = n(203982),
     N = n(170428),
-    S = n(933057),
-    b = n(747926),
-    T = n(652215),
-    v = n(985018);
+    T = n(933057),
+    S = n(747926),
+    b = n(652215),
+    y = n(985018);
 
-function y(e) {
+function v(e) {
     let {
         channel: t
-    } = e, [n, a] = s.useState(!1), r = s.useRef(null);
+    } = e, [n, a] = l.useState(!1), r = l.useRef(null);
 
     function o() {
         a(e => !e)
     }
-    let c = v.intl.string(v.t["UKOtz+"]);
-    return (0, i.jsx)(l.YNO, {
+    let c = y.intl.string(y.t["UKOtz+"]);
+    return (0, i.jsx)(s.YNO, {
         targetElementRef: r,
         shouldShow: n,
-        animation: l.YNO.Animation.NONE,
+        animation: s.YNO.Animation.NONE,
         position: "bottom",
         align: "right",
         autoInvert: !1,
@@ -61,7 +60,7 @@ function y(e) {
                 ref: r,
                 onClick: o,
                 tooltip: n ? null : c,
-                icon: l.jNK,
+                icon: s.jNK,
                 "aria-label": c,
                 selected: n
             })
@@ -73,62 +72,62 @@ function j(e) {
     let {
         channel: t,
         closePopout: n,
-        onSelect: s
-    } = e, x = (0, c.A)(t, "Sidebar Overflow"), E = (0, u.A)(t), N = (0, _.A)(t), S = (0, g.A)(t), b = (0, a.A)(t), y = (0, d.A)(t), j = (0, m.A)(t.id), R = (0, A.A)(t), O = (0, o.A)(t), L = (0, r.A)(t), M = (0, f.A)({
+        onSelect: l
+    } = e, x = (0, c.A)(t, "Sidebar Overflow"), E = (0, u.A)(t), N = (0, m.A)(t), T = (0, g.A)(t), S = (0, a.A)(t), v = (0, d.A)(t), j = (0, _.A)(t.id), R = (0, A.A)(t), O = (0, o.A)(t), L = (0, r.A)(t), M = (0, f.A)({
         id: t.id,
-        label: v.intl.string(v.t.DQ797g)
-    }), D = (0, p.A)(t), G = (0, h.A)(t);
+        label: y.intl.string(y.t.DQ797g)
+    }), D = (0, p.A)(t), U = (0, h.A)(t);
 
-    function U() {
-        (0, C.iN)(t.id)
+    function G() {
+        (0, I.iN)(t.id)
     }
-    return (0, i.jsxs)(l.W1t, {
+    return (0, i.jsxs)(s.W1t, {
         "data-menu-migrated": !0,
         navId: "thread-context",
         onClose: n,
-        "aria-label": v.intl.string(v.t["1NBjqb"]),
-        onSelect: s,
-        children: [(0, i.jsxs)(l.rXV, {
-            children: [x, (0, i.jsx)(l.Drp, {
+        "aria-label": y.intl.string(y.t["1NBjqb"]),
+        onSelect: l,
+        children: [(0, i.jsxs)(s.rXV, {
+            children: [x, (0, i.jsx)(s.Drp, {
                 id: "open",
-                label: v.intl.string(v.t.IxVmZi),
-                action: U
+                label: y.intl.string(y.t.IxVmZi),
+                action: G
             })]
-        }), (0, i.jsxs)(l.rXV, {
-            children: [N, S]
-        }), (0, i.jsxs)(l.rXV, {
-            children: [R, E, j, G]
-        }), (0, i.jsxs)(l.rXV, {
-            children: [(0, i.jsx)(l.Drp, {
+        }), (0, i.jsxs)(s.rXV, {
+            children: [N, T]
+        }), (0, i.jsxs)(s.rXV, {
+            children: [R, E, j, U]
+        }), (0, i.jsxs)(s.rXV, {
+            children: [(0, i.jsx)(s.Drp, {
                 id: "search",
-                label: v.intl.string(v.t["5h0QOP"]),
-                icon: l.tfB,
+                label: y.intl.string(y.t["5h0QOP"]),
+                icon: s.tfB,
                 trailingIndicator: {
                     type: "icon",
-                    icon: l.tfB
+                    icon: s.tfB
                 },
                 action: function() {
-                    U(), setTimeout(() => {
-                        I._.dispatch(T.jej.FOCUS_SEARCH, {
+                    G(), setTimeout(() => {
+                        C._.dispatch(b.jej.FOCUS_SEARCH, {
                             prefillCurrentChannel: !1
                         })
                     }, 2e3)
                 }
-            }), (0, i.jsx)(l.Drp, {
+            }), (0, i.jsx)(s.Drp, {
                 id: "pins",
-                label: v.intl.string(v.t["2BSH7n"]),
-                icon: l.tfB,
+                label: y.intl.string(y.t["2BSH7n"]),
+                icon: s.tfB,
                 trailingIndicator: {
                     type: "icon",
-                    icon: l.tfB
+                    icon: s.tfB
                 },
                 action: function() {
-                    U(), I._.dispatch(T.jej.TOGGLE_CHANNEL_PINS)
+                    G(), C._.dispatch(b.jej.TOGGLE_CHANNEL_PINS)
                 }
             })]
-        }), (0, i.jsxs)(l.rXV, {
-            children: [D, b, y, O]
-        }), (0, i.jsxs)(l.rXV, {
+        }), (0, i.jsxs)(s.rXV, {
+            children: [D, S, v, O]
+        }), (0, i.jsxs)(s.rXV, {
             children: [L, M]
         })]
     })
@@ -140,16 +139,16 @@ function R(e) {
         baseChannelId: n
     } = e;
     return (0, i.jsxs)(i.Fragment, {
-        children: [t.isForumPost() ? null : (0, i.jsx)(S.A, {
+        children: [t.isForumPost() ? null : (0, i.jsx)(T.A, {
             channel: t
         }), t.isModeratorReportChannel() ? (0, i.jsx)(N.A, {
             channel: t
-        }) : null, (0, i.jsx)(y, {
+        }) : null, (0, i.jsx)(v, {
             channel: t
         }), (0, i.jsx)(E.Ay.Icon, {
-            icon: l.PGe,
-            tooltip: v.intl.string(v.t.cpT0Cq),
-            onClick: () => (0, b.xu)((0, x.j)(t), n ?? t.parent_id)
+            icon: s.PGe,
+            tooltip: y.intl.string(y.t.cpT0Cq),
+            onClick: () => (0, S.xu)((0, x.j)(t), n ?? t.parent_id)
         })]
     })
 }

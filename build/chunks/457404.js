@@ -1,11 +1,10 @@
 /** chunk id: 457404 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
     e: () => d
 });
 var i = n(627968),
-    s = n(64700),
-    l = n(990078),
+    l = n(64700),
+    s = n(990078),
     a = n(397927),
     r = n(245205),
     o = n(985018);
@@ -34,10 +33,10 @@ let c = e => {
             })
         })
     },
-    d = s.memo(function(e) {
+    d = l.memo(function(e) {
         let {
             item: t
-        } = e, n = s.useRef(null);
+        } = e, n = l.useRef(null);
         return (0, i.jsx)(a.YNO, {
             targetElementRef: n,
             renderPopout: e => (0, i.jsx)(c, {
@@ -51,7 +50,7 @@ let c = e => {
                 let {
                     onClick: t
                 } = e;
-                return (0, i.jsx)(l.m, {
+                return (0, i.jsx)(s.m, {
                     text: o.intl.string(o.t["UKOtz+"]),
                     asContainer: !0,
                     children: (0, i.jsx)(a.K0, {

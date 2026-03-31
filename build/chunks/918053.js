@@ -1,6 +1,6 @@
 /** chunk id: 918053 params = (module,exports,require) **/
 n.d(t, {
-    $: () => _
+    $: () => g
 });
 var i = n(391973),
     s = n(395011),
@@ -19,7 +19,7 @@ function m() {
     let t = r.A.getWidget(e.id);
     return null != t && (0, l.ZO)(t) ? t : null
 }
-let _ = (0, a.sN)(o.X.OVERLAY_VOICE_WIDGET_MAX_USERS, {
+let g = (0, a.sN)(o.X.OVERLAY_VOICE_WIDGET_MAX_USERS, {
     useTitle: () => u.intl.string(u.t["X/Uyzc"]),
     minValue: d.G6 - 1,
     maxValue: d.PP,

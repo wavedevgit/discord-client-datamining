@@ -1,6 +1,6 @@
 /** chunk id: 34014 params = (module,exports,require) **/
 n.d(t, {
-    r: () => x
+    r: () => A
 });
 var i = n(311907),
     s = n(964486),
@@ -12,44 +12,44 @@ var i = n(311907),
     c = n(975571),
     u = n(780964),
     m = n(652215),
-    _ = n(985018);
-let g = (0, l.D)(() => ({
+    g = n(985018);
+let _ = (0, l.D)(() => ({
         syncEnabled: null,
         updateTimeout: null
     })),
-    x = (0, d.zD)(u.X.SYNC_FORCED_COLORS, {
-        useTitle: () => _.intl.string(_.t.cguiec),
-        useSubtitle: () => _.intl.format(_.t.GwEVE2, {
+    A = (0, d.zD)(u.X.SYNC_FORCED_COLORS, {
+        useTitle: () => g.intl.string(g.t.cguiec),
+        useSubtitle: () => g.intl.format(g.t.GwEVE2, {
             learnMoreLink: c.A.getArticleURL(m.MVz.FORCED_COLORS)
         }),
         useValue: () => {
             let e = (0, i.bG)([r.A], () => r.A.syncForcedColors);
             return (0, s.Ay)(() => {
-                g.setState({
+                _.setState({
                     syncEnabled: r.A.syncForcedColors
                 })
-            }), g.useState(e => e.syncEnabled) ?? e
+            }), _.useState(e => e.syncEnabled) ?? e
         },
         setValue: e => {
             let {
                 updateTimeout: t
-            } = g.getState();
+            } = _.getState();
             if (null != t) {
-                clearTimeout(t), g.setState({
+                clearTimeout(t), _.setState({
                     syncEnabled: e,
                     updateTimeout: null
                 });
                 return
             }
-            if (e === r.A.syncForcedColors) return void g.setState({
+            if (e === r.A.syncForcedColors) return void _.setState({
                 syncEnabled: e
             });
             let n = setTimeout(() => {
-                (0, a.D3)(e), g.setState({
+                (0, a.D3)(e), _.setState({
                     updateTimeout: null
                 })
             }, 150);
-            g.setState({
+            _.setState({
                 syncEnabled: e,
                 updateTimeout: n
             })

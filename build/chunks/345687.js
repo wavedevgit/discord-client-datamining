@@ -1,23 +1,22 @@
 /** chunk id: 345687 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
     A: () => r
 });
 var i = n(627968);
 n(64700);
-var s = n(397927),
-    l = n(489673),
+var l = n(397927),
+    s = n(489673),
     a = n(733162);
 
 function r(e) {
     let {
         className: t
     } = e;
-    return (0, i.jsx)(l.A, {
+    return (0, i.jsx)(s.A, {
         className: t,
         children: (0, i.jsx)("div", {
             className: a.T,
-            children: (0, i.jsx)(s.qux, {
+            children: (0, i.jsx)(l.qux, {
                 size: "custom",
                 color: "currentColor",
                 className: a.C,

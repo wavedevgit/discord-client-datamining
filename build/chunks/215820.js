@@ -1,5 +1,4 @@
 /** chunk id: 215820 params = (module,exports,require) **/
-"use strict";
 e.exports = {
     yt: "streamPreviewWrapper__0489e",
     Rh: "streamPreview__0489e",

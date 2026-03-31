@@ -12,20 +12,20 @@ var i = n(627968),
     c = n(544420),
     u = n(684013),
     m = n(56562),
-    _ = n(964486),
-    g = n(15285),
-    x = n(286237),
-    A = n(769015),
+    g = n(964486),
+    _ = n(15285),
+    A = n(286237),
+    x = n(769015),
     h = n(496885),
     p = n(810412),
     T = n(41984),
     f = n(833551),
-    S = n(663677),
-    E = n(824189),
+    E = n(663677),
+    S = n(824189),
     b = n(760751),
     C = n(189081),
-    v = n(9302),
-    N = n(505136),
+    N = n(9302),
+    v = n(505136),
     I = n(686533),
     j = n(525923),
     y = n(985018),
@@ -35,7 +35,7 @@ function R() {
     let {
         runningGame: e,
         runningGameApplication: t
-    } = (0, x.A)(), n = e?.pid, l = (0, r.bG)([f.default], () => null == e || null == n ? null : f.default.getTrackedGameByPid(n), [e, n], a()), {
+    } = (0, A.A)(), n = e?.pid, l = (0, r.bG)([f.default], () => null == e || null == n ? null : f.default.getTrackedGameByPid(n), [e, n], a()), {
         enabledLegacy: R,
         enabledOOP: P
     } = (0, r.cf)([b.A, C.A], () => null == e && null == l ? {
@@ -44,12 +44,12 @@ function R() {
     } : null == e ? {
         enabledLegacy: l?.legacyEnabled ?? !1,
         enabledOOP: l?.oopEnabled ?? !1
-    } : (0, g.hw)(e, !1, [b.A, C.A]), [e, l]), L = (0, r.bG)([g.Ay, b.A, C.A], () => null == e ? null : (0, g.xU)(e, g.Ay, b.A, C.A), [e], a()), [D, G] = s.useState(P), [M, k] = s.useState(R), [U, w] = s.useState(!1);
+    } : (0, _.hw)(e, !1, [b.A, C.A]), [e, l]), L = (0, r.bG)([_.Ay, b.A, C.A], () => null == e ? null : (0, _.xU)(e, _.Ay, b.A, C.A), [e], a()), [D, G] = s.useState(P), [M, k] = s.useState(R), [U, w] = s.useState(!1);
     s.useEffect(() => {
         G(P), k(R)
     }, [P, R]);
-    let V = !(0, v.supportsLegacy)(),
-        B = !(0, v.supportsOutOfProcess)(),
+    let V = !(0, N.supportsLegacy)(),
+        B = !(0, N.supportsOutOfProcess)(),
         {
             legacyEnabled: F,
             oopEnabled: H
@@ -70,7 +70,7 @@ function R() {
                     break;
                 case p.OverlayToggledClientSettingType.OOP:
                     u.A.setEnabled(F, t), (0, p.Q3)(t, p.OverlayToggledClientSettingType.OOP, e.id ?? null)
-            }(i || s) && (0, S.L)(i ? p.OverlayToggledClientSettingType.LEGACY_GAME : p.OverlayToggledClientSettingType.OOP_GAME, e.id ?? null)
+            }(i || s) && (0, E.L)(i ? p.OverlayToggledClientSettingType.LEGACY_GAME : p.OverlayToggledClientSettingType.OOP_GAME, e.id ?? null)
         },
         Y = V && B,
         X = !F && !H,
@@ -163,11 +163,11 @@ function R() {
                     return [y.intl.string(y.t.ONovP5), null]
             }
         })();
-    (0, _.Ay)(() => {
+    (0, g.Ay)(() => {
         c.A.getDetectableGames()
     });
     let [el, ea] = s.useMemo(() => Q ? ["text-muted", d.LU0.colors.TEXT_MUTED.css] : q && $ ? ["text-feedback-warning", d.LU0.colors.TEXT_FEEDBACK_WARNING.css] : q && J ? ["text-feedback-positive", d.LU0.colors.TEXT_FEEDBACK_POSITIVE.css] : q && ee ? ["text-strong", d.LU0.colors.TEXT_STRONG.css] : ["interactive-text-default", d.LU0.colors.INTERACTIVE_TEXT_DEFAULT.css], [Q, q, $, J, ee]);
-    return null == e ? null : (0, i.jsxs)(N.A, {
+    return null == e ? null : (0, i.jsxs)(v.A, {
         onExpand: w,
         className: U ? O.tx : void 0,
         title: (0, i.jsxs)(i.Fragment, {
@@ -199,10 +199,10 @@ function R() {
                 children: y.intl.string(y.t.CDOx3w)
             })]
         }),
-        icon: (0, i.jsx)(A.A, {
+        icon: (0, i.jsx)(x.A, {
             game: t,
             pid: e?.pid,
-            size: A.M.MEDIUM
+            size: x.M.MEDIUM
         }),
         "aria-label": y.intl.string(y.t["87O5GC"]),
         action: (0, i.jsx)(d.DUT, {
@@ -226,7 +226,7 @@ function R() {
                                 u.A.setEnabled(t, t), c.A.toggleOverlay(e, t, t), k(t), G(t), i = !t && F || !t && M, s = !t && H || !t && D
                         }
                         let l = null;
-                        i ? l = "game" === n ? p.OverlayToggledClientSettingType.LEGACY_GAME : p.OverlayToggledClientSettingType.LEGACY : s && (l = "game" === n ? p.OverlayToggledClientSettingType.OOP_GAME : p.OverlayToggledClientSettingType.OOP), null != l && (0, S.L)(l, e.id ?? null)
+                        i ? l = "game" === n ? p.OverlayToggledClientSettingType.LEGACY_GAME : p.OverlayToggledClientSettingType.LEGACY : s && (l = "game" === n ? p.OverlayToggledClientSettingType.OOP_GAME : p.OverlayToggledClientSettingType.OOP), null != l && (0, E.L)(l, e.id ?? null)
                     })(t, ((e, t) => {
                         let n = !t && e,
                             i = !H && D,
@@ -245,7 +245,7 @@ function R() {
                 }
             })
         }),
-        warning: (0, i.jsx)(E.A, {
+        warning: (0, i.jsx)(S.A, {
             className: O.Hh,
             game: e
         }),

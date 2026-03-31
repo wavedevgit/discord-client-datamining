@@ -1,12 +1,11 @@
 /** chunk id: 328808 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
-    A: () => T
+    A: () => b
 });
 var i = n(627968),
-    s = n(64700),
-    l = n(735438),
-    a = n.n(l),
+    l = n(64700),
+    s = n(735438),
+    a = n.n(s),
     r = n(311907),
     o = n(397927),
     c = n(182061),
@@ -14,28 +13,28 @@ var i = n(627968),
     u = n(307623),
     h = n(660273),
     A = n(40389),
-    m = n(707792),
-    _ = n(41402),
+    _ = n(707792),
+    m = n(41402),
     g = n(271456),
     p = n(200273),
     f = n(565846),
     x = n(707653),
     E = n(50268),
-    C = n(58736),
-    I = n(253932),
+    I = n(58736),
+    C = n(253932),
     N = n(977997),
-    S = n(747926),
-    b = n(985018);
+    T = n(747926),
+    S = n(985018);
 
-function T(e) {
+function b(e) {
     let {
         channel: t
-    } = e, [n, l] = s.useState(!1), a = s.useRef(null);
+    } = e, [n, s] = l.useState(!1), a = l.useRef(null);
 
     function r() {
-        l(e => !e)
+        s(e => !e)
     }
-    let c = b.intl.string(b.t["UKOtz+"]);
+    let c = S.intl.string(S.t["UKOtz+"]);
     return (0, i.jsx)(o.YNO, {
         targetElementRef: a,
         shouldShow: n,
@@ -43,9 +42,9 @@ function T(e) {
         position: "bottom",
         align: "right",
         autoInvert: !1,
-        onRequestClose: () => l(!1),
+        onRequestClose: () => s(!1),
         renderPopout: function(e) {
-            return (0, i.jsx)(v, {
+            return (0, i.jsx)(y, {
                 ...e,
                 channel: t
             })
@@ -54,7 +53,7 @@ function T(e) {
             let {
                 isShown: n
             } = t;
-            return (0, i.jsx)(C.Ay.Icon, {
+            return (0, i.jsx)(I.Ay.Icon, {
                 ...e,
                 ref: a,
                 onClick: r,
@@ -67,35 +66,35 @@ function T(e) {
     })
 }
 
-function v(e) {
+function y(e) {
     let {
         channel: t,
         closePopout: n,
-        onSelect: s
-    } = e, l = (0, c.A)(t), C = (0, m.A)(t), T = (0, f.A)(t.id), v = (0, p.A)(t), y = (0, E.A)({
+        onSelect: l
+    } = e, s = (0, c.A)(t), I = (0, _.A)(t), b = (0, f.A)(t.id), y = (0, p.A)(t), v = (0, E.A)({
         id: t.id,
-        label: b.intl.string(b.t.DQ797g)
-    }), j = (0, d.A)(t), R = (0, u.A)(t), O = (0, h.A)(t, "Toolbar Overflow"), L = (0, _.A)(t), M = (0, A.A)(t), D = (0, x.A)(t), G = (0, g.A)(t), U = I.SY.useSetting(), P = (0, r.bG)([N.A], () => !a().isEmpty(N.A.getVoiceStatesForChannel(t.id)));
+        label: S.intl.string(S.t.DQ797g)
+    }), j = (0, d.A)(t), R = (0, u.A)(t), O = (0, h.A)(t, "Toolbar Overflow"), L = (0, m.A)(t), M = (0, A.A)(t), D = (0, x.A)(t), U = (0, g.A)(t), G = C.SY.useSetting(), P = (0, r.bG)([N.A], () => !a().isEmpty(N.A.getVoiceStatesForChannel(t.id)));
     return (0, i.jsxs)(o.W1t, {
         "data-menu-migrated": !0,
         navId: "thread-context",
         onClose: n,
-        "aria-label": b.intl.string(b.t["1NBjqb"]),
-        onSelect: s,
+        "aria-label": S.intl.string(S.t["1NBjqb"]),
+        onSelect: l,
         children: [(0, i.jsxs)(o.rXV, {
             children: [O, M]
         }), (0, i.jsxs)(o.rXV, {
-            children: [v, L, T, U && !P ? (0, i.jsx)(o.Drp, {
+            children: [y, L, b, G && !P ? (0, i.jsx)(o.Drp, {
                 id: "open",
-                label: b.intl.string(b.t.bX7EaG),
+                label: S.intl.string(S.t.bX7EaG),
                 action: function() {
-                    (0, S.JA)(t)
+                    (0, T.JA)(t)
                 }
-            }) : null, G]
+            }) : null, U]
         }), (0, i.jsxs)(o.rXV, {
-            children: [D, l, C, R]
+            children: [D, s, I, R]
         }), (0, i.jsxs)(o.rXV, {
-            children: [j, y]
+            children: [j, v]
         })]
     })
 }

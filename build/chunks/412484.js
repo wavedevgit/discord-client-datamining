@@ -1,14 +1,13 @@
 /** chunk id: 412484 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
-    Ay: () => T,
+    Ay: () => b,
     NH: () => j,
-    T: () => y
+    T: () => v
 });
 var i = n(627968),
-    s = n(64700),
-    l = n(503698),
-    a = n.n(l),
+    l = n(64700),
+    s = n(503698),
+    a = n.n(s),
     r = n(481613),
     o = n.n(r),
     c = n(837381),
@@ -16,44 +15,44 @@ var i = n(627968),
     u = n(397927),
     h = n(73153),
     A = n(964486),
-    m = n(775602),
-    _ = n(928039),
+    _ = n(775602),
+    m = n(928039),
     g = n(954571),
     p = n(203982),
     f = n(723702),
     x = n(157296),
     E = n(963702),
-    C = n(792967),
-    I = n(712209),
+    I = n(792967),
+    C = n(712209),
     N = n(652215),
-    S = n(985018),
-    b = n(996863);
+    T = n(985018),
+    S = n(996863);
 
-function T(e) {
-    var t, n, l, r, x, T;
+function b(e) {
+    var t, n, s, r, x, b;
     let {
-        onJump: y,
+        onJump: v,
         showTutorial: j,
         setSeenTutorial: R,
         closePopout: O
-    } = e, L = s.useRef(null), [M, D] = (0, I.Ay)(L), {
-        loadState: G,
-        channels: U
+    } = e, L = l.useRef(null), [M, D] = (0, C.Ay)(L), {
+        loadState: U,
+        channels: G
     } = M, {
         maybeLoadMore: P
-    } = D, w = (0, d.bG)([m.A], () => m.A.messageGroupSpacing);
-    t = L, n = M, l = D, s.useLayoutEffect(() => {
+    } = D, k = (0, d.bG)([_.A], () => _.A.messageGroupSpacing);
+    t = L, n = M, s = D, l.useLayoutEffect(() => {
         let {
             scrollToChannelIndex: e
         } = n;
-        l.clearScrollToChannelIndex();
+        s.clearScrollToChannelIndex();
         let {
             current: i
         } = t;
         if (null == i || null == e) return;
-        let s = i.getScrollerNode()?.children;
-        if (null == s) return;
-        let a = s[e];
+        let l = i.getScrollerNode()?.children;
+        if (null == l) return;
+        let a = l[e];
         if (null == a) return;
         let {
             scrollTop: r,
@@ -62,7 +61,7 @@ function T(e) {
         (a.offsetTop < r || a.offsetTop > r + o) && i.scrollTo({
             to: a.offsetTop
         })
-    }), r = M, x = D, s.useEffect(() => {
+    }), r = M, x = D, l.useEffect(() => {
         let e = () => {
             let e = r.channels.find(e => !e.collapsed);
             null != e && x.markChannelRead(e)
@@ -70,29 +69,29 @@ function T(e) {
         return p._.subscribe(N.jej.MARK_TOP_INBOX_CHANNEL_READ, e), () => {
             p._.unsubscribe(N.jej.MARK_TOP_INBOX_CHANNEL_READ, e)
         }
-    }, [x, r.channels]), T = D, s.useEffect(() => {
+    }, [x, r.channels]), b = D, l.useEffect(() => {
         let e = e => {
-            ((0, f.isMac)() || (0, f.isMacWeb)() ? e.metaKey : e.ctrlKey) && !e.shiftKey && !e.altKey && "z" === e.key && T.undoMarkChannelRead()
+            ((0, f.isMac)() || (0, f.isMacWeb)() ? e.metaKey : e.ctrlKey) && !e.shiftKey && !e.altKey && "z" === e.key && b.undoMarkChannelRead()
         };
         return document.addEventListener("keydown", e), () => {
             document.removeEventListener("keydown", e)
         }
-    }, [T]), s.useEffect(() => {
+    }, [b]), l.useEffect(() => {
         g.default.track(N.HAw.OPEN_POPOUT, {
             type: "Inbox"
         })
-    }, []), s.useEffect(() => (h.h.subscribe("CONNECTION_OPEN", O), () => {
+    }, []), l.useEffect(() => (h.h.subscribe("CONNECTION_OPEN", O), () => {
         h.h.unsubscribe("CONNECTION_OPEN", O)
     }), [O]), (0, A.Ay)(() => (p._.subscribe(N.jej.INBOX_MARK_ALL_UNREADS_READ, D.markAllRead), () => {
         p._.unsubscribe(N.jej.INBOX_MARK_ALL_UNREADS_READ, D.markAllRead)
     }));
-    let k = (0, _.A)("unreads", L);
-    return 0 === U.length ? (0, i.jsx)(E.A, {
+    let w = (0, m.A)("unreads", L);
+    return 0 === G.length ? (0, i.jsx)(E.A, {
         Icon: u.K$s,
-        header: S.intl.string(S.t["6XMM+D"]),
-        tip: o().os?.family === "OS X" ? S.intl.string(S.t.w9uDOW) : S.intl.string(S.t.BiUJC6)
+        header: T.intl.string(T.t["6XMM+D"]),
+        tip: o().os?.family === "OS X" ? T.intl.string(T.t.w9uDOW) : T.intl.string(T.t.BiUJC6)
     }) : (0, i.jsx)(c.hD, {
-        navigator: k,
+        navigator: w,
         children: (0, i.jsx)(c.PR, {
             children: e => {
                 let {
@@ -104,12 +103,12 @@ function T(e) {
                         L.current = e, t.current = e?.getScrollerNode() ?? null
                     },
                     ...n,
-                    onScroll: G === I.mJ.Done ? void 0 : P,
-                    className: a()(b.XG, `group-spacing-${w}`),
-                    children: [j ? (0, i.jsx)(v, {
+                    onScroll: U === C.mJ.Done ? void 0 : P,
+                    className: a()(S.XG, `group-spacing-${k}`),
+                    children: [j ? (0, i.jsx)(y, {
                         setSeenTutorial: R
-                    }) : null, (0, C.A)(U, D, y), G === I.mJ.Done ? null : (0, i.jsx)(u.y$y, {
-                        className: b.u1
+                    }) : null, (0, I.A)(G, D, v), U === C.mJ.Done ? null : (0, i.jsx)(u.y$y, {
+                        className: S.u1
                     })]
                 })
             }
@@ -117,34 +116,34 @@ function T(e) {
     })
 }
 
-function v(e) {
+function y(e) {
     let {
         setSeenTutorial: t
     } = e;
     return (0, i.jsxs)("div", {
-        className: b.d$,
+        className: S.d$,
         children: [(0, i.jsx)("div", {
-            className: b.cm,
+            className: S.cm,
             children: (0, i.jsx)(u.K$s, {
                 size: "md",
                 color: "currentColor"
             })
         }), (0, i.jsxs)("div", {
             children: [(0, i.jsx)(u.Heading, {
-                className: b.__invalid_tutorialHeader,
+                className: S.__invalid_tutorialHeader,
                 variant: "heading-md/semibold",
-                children: S.intl.string(S.t.vZPktJ)
+                children: T.intl.string(T.t.vZPktJ)
             }), (0, i.jsx)(u.Text, {
                 color: "text-default",
                 variant: "text-sm/normal",
-                children: S.intl.string(S.t.vWkIII)
+                children: T.intl.string(T.t.vWkIII)
             }), (0, i.jsx)("div", {
                 "data-button-hoisted-classname-wrapper": !0,
-                className: b.dh,
+                className: S.dh,
                 children: (0, i.jsx)(u.Button, {
                     variant: "primary",
                     size: "sm",
-                    text: S.intl.string(S.t["+IrDzN"]),
+                    text: T.intl.string(T.t["+IrDzN"]),
                     onClick: t
                 })
             })]
@@ -152,12 +151,12 @@ function v(e) {
     })
 }
 
-function y() {
+function v() {
     return (0, i.jsx)(E.A, {
         Icon: u.K$s,
         disableStars: !0,
-        header: S.intl.string(S.t["KG/ynf"]),
-        tip: S.intl.string(S.t.cvcKzX)
+        header: T.intl.string(T.t["KG/ynf"]),
+        tip: T.intl.string(T.t.cvcKzX)
     })
 }
 let j = () => (0, i.jsx)(x.A, {

@@ -1,5 +1,4 @@
 /** chunk id: 38351 params = (module,exports,require) **/
-"use strict";
 e.exports = {
     kL: "container_a419e0",
     N1: "headerContainer_a419e0",

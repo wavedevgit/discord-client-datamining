@@ -1,5 +1,4 @@
 /** chunk id: 370876 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
     A3: () => u,
     DN: () => d,
@@ -8,13 +7,13 @@ n.d(t, {
     zP: () => c
 });
 var i = n(284009),
-    s = n.n(i),
-    l = n(735438),
-    a = n.n(l),
+    l = n.n(i),
+    s = n(735438),
+    a = n.n(s),
     r = n(946116);
 
 function o(e) {
-    return s()(e.type === r.fx.GUILD, "Directory entries must be connected to a guild!"), {
+    return l()(e.type === r.fx.GUILD, "Directory entries must be connected to a guild!"), {
         channelId: e.directory_channel_id,
         guildId: e.entity_id,
         type: e.type,

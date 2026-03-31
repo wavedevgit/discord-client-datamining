@@ -1,6 +1,6 @@
 /** chunk id: 510898 params = (module,exports,require) **/
 n.d(t, {
-    A: () => g
+    A: () => _
 });
 var i = n(627968),
     s = n(64700),
@@ -12,7 +12,7 @@ var i = n(627968),
     c = n(331441),
     u = n(20770),
     m = n(985018);
-class _ extends s.PureComponent {
+class g extends s.PureComponent {
     state = {
         hasError: !1
     };
@@ -36,23 +36,23 @@ class _ extends s.PureComponent {
     }
 }
 
-function g(e) {
+function _(e) {
     let {
         subscriptions: t,
         updateHeader: n
-    } = e, [l, g] = s.useState({
+    } = e, [l, _] = s.useState({
         route: c.R.HOME
     }), {
-        route: x
-    } = l, A = () => {
-        g({
+        route: A
+    } = l, x = () => {
+        _({
             route: c.R.HOME
         })
     }, h = e => {
-        g({
+        _({
             route: c.R.SWITCH_APP_PLANS,
             ...e
-        }), n(m.intl.string(m.t.VFqtkP), A)
+        }), n(m.intl.string(m.t.VFqtkP), x)
     }, [p, T] = s.useState({});
     s.useEffect(() => {
         for (let e of t) {
@@ -75,28 +75,28 @@ function g(e) {
     }, [t]);
     let {
         loadState: f
-    } = (0, o.E)(), S = f !== o.mJ.LOADED;
-    switch (x) {
+    } = (0, o.E)(), E = f !== o.mJ.LOADED;
+    switch (A) {
         case c.R.HOME:
             return (0, i.jsx)(i.Fragment, {
-                children: t.map(e => (0, i.jsx)(_, {
+                children: t.map(e => (0, i.jsx)(g, {
                     subscription: e,
                     children: (0, i.jsx)(d.A, {
                         subscription: e,
                         navigateToSwitchPlan: h,
-                        loadingState: S ? d.G.LOADING : p[e.id] ?? d.G.LOADING
+                        loadingState: E ? d.G.LOADING : p[e.id] ?? d.G.LOADING
                     })
                 }, e.id))
             });
         case c.R.SWITCH_APP_PLANS:
             let {
-                route: E, ...b
+                route: S, ...b
             } = l;
             return (0, i.jsx)(u.A, {
                 ...b,
-                navigateToHome: A
+                navigateToHome: x
             });
         default:
-            (0, a.xb)(x)
+            (0, a.xb)(A)
     }
 }

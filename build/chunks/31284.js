@@ -1,36 +1,36 @@
 /** chunk id: 31284 params = (module,exports,require) **/
 "use strict";
-i.d(t, {
-    A: () => j
+n.d(t, {
+    A: () => D
 });
-var n = i(627968),
-    s = i(64700),
-    a = i(503698),
-    l = i.n(a),
-    r = i(936504),
-    o = i(311907),
-    d = i(397927),
-    c = i(827343),
-    u = i(951001),
-    h = i(956793),
-    _ = i(47167),
-    p = i(235986),
-    f = i(42473),
-    m = i(994314),
-    g = i(241847),
-    A = i(178442),
-    x = i(71393),
-    v = i(430452),
-    y = i(994500),
-    E = i(287809),
-    I = i(977997),
-    S = i(572487),
-    C = i(855790),
-    b = i(652215),
-    N = i(985018),
-    T = i(672829),
-    O = i(470534);
-class L extends s.PureComponent {
+var i = n(627968),
+    s = n(64700),
+    a = n(503698),
+    l = n.n(a),
+    r = n(936504),
+    o = n(311907),
+    d = n(397927),
+    c = n(827343),
+    u = n(951001),
+    h = n(956793),
+    p = n(47167),
+    f = n(235986),
+    _ = n(42473),
+    A = n(994314),
+    g = n(241847),
+    m = n(178442),
+    x = n(71393),
+    E = n(430452),
+    y = n(994500),
+    v = n(287809),
+    S = n(977997),
+    C = n(572487),
+    I = n(855790),
+    N = n(652215),
+    T = n(985018),
+    b = n(672829),
+    O = n(470534);
+class j extends s.PureComponent {
     rtcConnectionStatusRef = s.createRef();
     handleToggleSelfMute = () => {
         let {
@@ -57,7 +57,7 @@ class L extends s.PureComponent {
         let {
             lobbyId: t
         } = this.props;
-        return (0, n.jsx)(g.A, {
+        return (0, i.jsx)(g.A, {
             channelId: e,
             lobbyId: t,
             isOverlay: !0
@@ -66,13 +66,13 @@ class L extends s.PureComponent {
     renderChannelLink(e) {
         let {
             guild: t
-        } = this.props, i = (0, _.m1)(e, E.default, y.A), s = null != t ? `${i} / ${t.name}` : i, a = null != t ? t.id : b.ME;
-        return (0, n.jsx)(r.N_, {
-            to: b.BVt.CHANNEL(a),
+        } = this.props, n = (0, p.m1)(e, v.default, y.A), s = null != t ? `${n} / ${t.name}` : n, a = null != t ? t.id : N.ME;
+        return (0, i.jsx)(r.N_, {
+            to: N.BVt.CHANNEL(a),
             onClick: t => {
                 t.stopPropagation(), u.A.channelListScrollTo(a, e.id)
             },
-            children: (0, n.jsx)(m.A, {
+            children: (0, i.jsx)(A.A, {
                 className: O.Ix,
                 children: s
             })
@@ -82,7 +82,7 @@ class L extends s.PureComponent {
         let {
             className: e,
             contentClassName: t,
-            pinned: i,
+            pinned: n,
             lobbyId: s,
             channel: a,
             quality: r,
@@ -90,25 +90,25 @@ class L extends s.PureComponent {
             hasVideo: c,
             connectionState: u,
             deaf: h,
-            mute: _
+            mute: p
         } = this.props;
-        return null == a ? null : (0, n.jsx)(C.Ay.Bar, {
-            className: l()(e, T.ne, {
-                [T.CW]: !i
+        return null == a ? null : (0, i.jsx)(I.Ay.Bar, {
+            className: l()(e, b.ne, {
+                [b.CW]: !n
             }),
-            children: (0, n.jsxs)(C.Ay.Content, {
-                className: l()(t, T.Qs),
+            children: (0, i.jsxs)(I.Ay.Content, {
+                className: l()(t, b.Qs),
                 dynamicSize: !0,
-                children: [(0, n.jsx)("div", {
+                children: [(0, i.jsx)("div", {
                     className: O.vW,
-                    children: (0, n.jsx)(d.YNO, {
+                    children: (0, i.jsx)(d.YNO, {
                         targetElementRef: this.rtcConnectionStatusRef,
                         renderPopout: () => this.renderPopout(a.id),
                         position: "top",
-                        children: e => (0, n.jsx)(d.DUT, {
+                        children: e => (0, i.jsx)(d.DUT, {
                             ...e,
                             innerRef: this.rtcConnectionStatusRef,
-                            children: (0, n.jsx)(A.A, {
+                            children: (0, i.jsx)(m.A, {
                                 channelId: a.id,
                                 quality: r,
                                 lastPing: o,
@@ -118,20 +118,20 @@ class L extends s.PureComponent {
                             })
                         })
                     })
-                }), (0, n.jsxs)(p.A, {
+                }), (0, i.jsxs)(f.A, {
                     grow: 0,
-                    children: [(0, n.jsx)(f.A, {
-                        tooltipText: _ ? N.intl.string(N.t.YqAjXy) : N.intl.string(N.t.w4m945),
-                        icon: _ ? d.z0P : d.cNw,
-                        iconForeground: _ ? T.of : null,
+                    children: [(0, i.jsx)(_.A, {
+                        tooltipText: p ? T.intl.string(T.t.YqAjXy) : T.intl.string(T.t.w4m945),
+                        icon: p ? d.z0P : d.cNw,
+                        iconForeground: p ? b.of : null,
                         onClick: this.handleToggleSelfMute
-                    }), (0, n.jsx)(f.A, {
-                        tooltipText: h ? N.intl.string(N.t["2US872"]) : N.intl.string(N.t.wjcRFX),
+                    }), (0, i.jsx)(_.A, {
+                        tooltipText: h ? T.intl.string(T.t["2US872"]) : T.intl.string(T.t.wjcRFX),
                         icon: h ? d.cQT : d.LoC,
                         onClick: this.handleToggleSelfDeaf,
-                        iconForeground: h ? T.of : null
-                    }), null == s && (0, n.jsx)(f.A, {
-                        tooltipText: N.intl.string(N.t["6vrfgt"]),
+                        iconForeground: h ? b.of : null
+                    }), null == s && (0, i.jsx)(_.A, {
+                        tooltipText: T.intl.string(T.t["6vrfgt"]),
                         onClick: this.handleDisconnect,
                         icon: d.zWQ
                     })]
@@ -141,17 +141,17 @@ class L extends s.PureComponent {
     }
 }
 
-function j(e) {
+function D(e) {
     let {
         context: t,
-        lobbyId: i,
+        lobbyId: n,
         channel: s,
         ...a
-    } = e, l = (0, o.bG)([x.A], () => x.A.getGuild(s?.getGuildId())), r = (0, o.bG)([I.A], () => null != s && I.A.hasVideo(s.id)), [d, c] = (0, o.yK)([v.Ay], () => [v.Ay.isSelfMute(t) || v.Ay.isSelfMutedTemporarily(t), v.Ay.isSelfDeaf(t)]), [u, h, _] = (0, o.yK)([S.A], () => [S.A.getConnectionState(i), S.A.getLastPing(i), S.A.getQuality(i)]);
-    return (0, n.jsx)(L, {
+    } = e, l = (0, o.bG)([x.A], () => x.A.getGuild(s?.getGuildId())), r = (0, o.bG)([S.A], () => null != s && S.A.hasVideo(s.id)), [d, c] = (0, o.yK)([E.Ay], () => [E.Ay.isSelfMute(t) || E.Ay.isSelfMutedTemporarily(t), E.Ay.isSelfDeaf(t)]), [u, h, p] = (0, o.yK)([C.A], () => [C.A.getConnectionState(n), C.A.getLastPing(n), C.A.getQuality(n)]);
+    return (0, i.jsx)(j, {
         ...a,
         context: t,
-        lobbyId: i,
+        lobbyId: n,
         channel: s,
         guild: l,
         hasVideo: r,
@@ -159,6 +159,6 @@ function j(e) {
         deaf: c,
         connectionState: u,
         lastPing: h,
-        quality: _
+        quality: p
     })
 }

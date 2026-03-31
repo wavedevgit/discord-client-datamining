@@ -1,11 +1,10 @@
 /** chunk id: 310420 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
     A: () => h
 });
 var i = n(627968),
-    s = n(64700),
-    l = n(934551),
+    l = n(64700),
+    s = n(934551),
     a = n(397927),
     r = n(145331),
     o = n(670455),
@@ -16,7 +15,7 @@ function u(e) {
     let {
         rating: t,
         onClick: n
-    } = e, r = t === o.P0.BAD ? l.ThumbsDownIcon : l.ThumbsUpIcon, c = s.useCallback(() => {
+    } = e, r = t === o.P0.BAD ? s.ThumbsDownIcon : s.ThumbsUpIcon, c = l.useCallback(() => {
         n(t)
     }, [n, t]);
     return (0, i.jsx)(a.DUT, {
@@ -32,25 +31,25 @@ function u(e) {
 let h = function(e) {
     let {
         searchContext: t,
-        dismissFeedbackEntrypoint: l
+        dismissFeedbackEntrypoint: s
     } = e;
-    s.useEffect(() => {
+    l.useEffect(() => {
         (0, r.J$)({
             searchContext: t
         })
     }, [t]);
-    let h = s.useCallback(e => {
-        l(), (0, a.mMO)(async () => {
+    let h = l.useCallback(e => {
+        s(), (0, a.mMO)(async () => {
             let {
-                default: s
+                default: l
             } = await n.e("66536").then(n.bind(n, 306088));
-            return n => (0, i.jsx)(s, {
+            return n => (0, i.jsx)(l, {
                 ...n,
                 searchContext: t,
                 rating: e
             })
         })
-    }, [l, t]);
+    }, [s, t]);
     return (0, i.jsxs)("div", {
         className: d.kL,
         children: [(0, i.jsx)(a.Text, {

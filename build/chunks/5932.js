@@ -1,11 +1,10 @@
 /** chunk id: 5932 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
-    M: () => s
+    M: () => l
 });
 var i = n(985018);
 
-function s(e) {
+function l(e) {
     if (null == e) return null;
     switch (e.type) {
         case "embedded-activities":

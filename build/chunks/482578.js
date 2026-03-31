@@ -4,8 +4,8 @@ n.d(t, {
 });
 var l = n(627968),
     a = n(64700),
-    r = n(397927),
-    i = n(235986),
+    i = n(397927),
+    r = n(235986),
     s = n(985018),
     d = n(641131);
 let o = e => {
@@ -19,33 +19,33 @@ let o = e => {
             isModeratorReport: x,
             className: p
         } = e,
-        h = a.useRef(null),
-        g = null != n && "cancel" !== n.type,
+        g = a.useRef(null),
+        h = null != n && "cancel" !== n.type,
         A = _ && n?.type !== "done",
-        v = g || A;
+        b = h || A;
     if (a.useEffect(() => {
-            (n?.type === "submit" || n?.type === "done") && h.current?.focus()
-        }, [n?.type]), !v) return null;
-    let f = s.intl.string(s.t.i4jeWR);
-    return n?.type === "submit" ? (t = "critical-primary", f = x ? s.intl.string(d.default.ZUyreS) : s.intl.string(s.t["G+vU89"])) : n?.type === "next" ? f = s.intl.string(s.t.PDTjLN) : n?.type === "cancel" && (f = s.intl.string(s.t["ETE/oC"]), t = "secondary"), (0, l.jsx)(r.jlY, {
+            (n?.type === "submit" || n?.type === "done") && g.current?.focus()
+        }, [n?.type]), !b) return null;
+    let v = s.intl.string(s.t.i4jeWR);
+    return n?.type === "submit" ? (t = "critical-primary", v = x ? s.intl.string(d.default.ZUyreS) : s.intl.string(s.t["G+vU89"])) : n?.type === "next" ? v = s.intl.string(s.t.PDTjLN) : n?.type === "cancel" && (v = s.intl.string(s.t["ETE/oC"]), t = "secondary"), (0, l.jsx)(i.jlY, {
         "data-migration-pending": !0,
-        direction: i.A.Direction.HORIZONTAL,
+        direction: r.A.Direction.HORIZONTAL,
         className: p,
-        children: (0, l.jsxs)(r.ButtonGroup, {
+        children: (0, l.jsxs)(i.ButtonGroup, {
             fullWidth: !0,
-            children: [A && (0, l.jsx)(r.Button, {
+            children: [A && (0, l.jsx)(i.Button, {
                 onClick: m,
                 variant: "secondary",
                 disabled: o,
                 text: s.intl.string(s.t["13/7kX"])
-            }), g && (0, l.jsx)(r.Button, {
+            }), h && (0, l.jsx)(i.Button, {
                 onClick: () => {
                     null != n && u(n)
                 },
                 variant: t,
                 disabled: o || c,
-                buttonRef: h,
-                text: f
+                buttonRef: g,
+                text: v
             })]
         })
     })

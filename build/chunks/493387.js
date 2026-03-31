@@ -1,12 +1,11 @@
 /** chunk id: 493387 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
-    A: () => C
+    A: () => I
 }), n(321073);
 var i = n(627968),
-    s = n(64700),
-    l = n(503698),
-    a = n.n(l),
+    l = n(64700),
+    s = n(503698),
+    a = n.n(s),
     r = n(615300),
     o = n(311907),
     c = n(73939),
@@ -14,8 +13,8 @@ var i = n(627968),
     u = n(397927),
     h = n(736653),
     A = n(531685),
-    m = n(85448),
-    _ = n(806931),
+    _ = n(85448),
+    m = n(806931),
     g = n(944802),
     p = n(435115),
     f = n(593716);
@@ -27,7 +26,7 @@ let x = {
     EASING_IN: r.A.Easing.inOut(r.A.Easing.back()),
     EASING_OUT: r.A.Easing.quad
 };
-class E extends s.PureComponent {
+class E extends l.PureComponent {
     scaleAnimation = new r.A.Value(0);
     spriteAnimation = new r.A.Value(0);
     spriteOpacity = new r.A.Value(0);
@@ -61,11 +60,11 @@ class E extends s.PureComponent {
             scaleAnimation: t,
             spriteAnimation: n,
             spriteOpacity: i,
-            widthAnimation: s
+            widthAnimation: l
         } = this;
         i.setValue(1), n.setValue(0);
-        let l = [];
-        for (let e = 0; e < 23; e++) l.push(r.A.timing(n, {
+        let s = [];
+        for (let e = 0; e < 23; e++) s.push(r.A.timing(n, {
             toValue: -26 * e,
             duration: 17
         }));
@@ -73,7 +72,7 @@ class E extends s.PureComponent {
             toValue: 0,
             duration: x.DURATION_OUT,
             easing: x.EASING_OUT
-        }), r.A.sequence(l), r.A.timing(s, {
+        }), r.A.sequence(s), r.A.timing(l, {
             toValue: 0,
             duration: 125
         })]).start(e)
@@ -115,9 +114,9 @@ class E extends s.PureComponent {
             theme: e,
             children: t,
             className: n
-        } = this.props, s = (0, d.Mw)(e), l = a()(g._y, {
-            [f.cp]: s,
-            [f.QB]: !s
+        } = this.props, l = (0, d.Mw)(e), s = a()(g._y, {
+            [f.cp]: l,
+            [f.QB]: !l
         });
         return (0, i.jsxs)(r.A.div, {
             role: "listitem",
@@ -126,7 +125,7 @@ class E extends s.PureComponent {
             children: [(0, i.jsx)("div", {
                 className: a()(g.XY, p.xM, p.wq, p.Hu),
                 children: (0, i.jsx)(r.A.div, {
-                    className: l,
+                    className: s,
                     style: this.getSpriteStyle()
                 })
             }), (0, i.jsx)(r.A.div, {
@@ -137,21 +136,21 @@ class E extends s.PureComponent {
     }
 }
 
-function C(e) {
+function I(e) {
     var t;
     let {
         participants: n,
-        onContextMenu: s,
-        className: l,
+        onContextMenu: l,
+        className: s,
         onClick: r,
         width: d,
         guildId: p
-    } = e, f = (0, h.Ay)(), x = (t = n.length, ((0, u.FT9)(u._3J.SIZE_80) + 16) * t > d ? u._3J.SIZE_40 : u._3J.SIZE_80), C = (0, o.bG)([A.A], () => A.A.isFocused()), I = n.map(e => {
-        if (e.type !== _.lp.USER) return null;
+    } = e, f = (0, h.Ay)(), x = (t = n.length, ((0, u.FT9)(u._3J.SIZE_80) + 16) * t > d ? u._3J.SIZE_40 : u._3J.SIZE_80), I = (0, o.bG)([A.A], () => A.A.isFocused()), C = n.map(e => {
+        if (e.type !== m.lp.USER) return null;
         let {
             user: t,
             voiceState: n,
-            speaking: l,
+            speaking: s,
             ringing: a
         } = e;
         return (0, i.jsx)(E, {
@@ -161,14 +160,14 @@ function C(e) {
             children: (0, i.jsx)(u.sqX, {
                 "aria-label": t.username,
                 onClick: t => r?.(e, t),
-                onContextMenu: t => s?.(e, t),
-                children: (0, i.jsx)(m.A, {
+                onContextMenu: t => l?.(e, t),
+                children: (0, i.jsx)(_.A, {
                     userId: t.id,
-                    src: t.getAvatarURL(p, (0, u.FT9)(x), l && C),
+                    src: t.getAvatarURL(p, (0, u.FT9)(x), s && I),
                     size: x,
                     muted: n?.isVoiceMuted() ?? !1,
                     deafen: n?.isVoiceDeafened() ?? !1,
-                    speaking: l,
+                    speaking: s,
                     ringing: a
                 }, e.id)
             })
@@ -177,7 +176,7 @@ function C(e) {
     return (0, i.jsx)(c.F, {
         component: "div",
         role: "list",
-        className: a()(g.zr, l),
-        children: I
+        className: a()(g.zr, s),
+        children: C
     })
 }

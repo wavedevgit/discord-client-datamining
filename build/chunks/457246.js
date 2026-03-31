@@ -1,11 +1,10 @@
 /** chunk id: 457246 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
     f: () => u
 });
 var i = n(627968),
-    s = n(64700),
-    l = n(311907),
+    l = n(64700),
+    s = n(311907),
     a = n(397927),
     r = n(534963),
     o = n(470710),
@@ -13,12 +12,12 @@ var i = n(627968),
     d = n(985018);
 
 function u(e) {
-    let t = (0, l.bG)([o.A], () => o.A.getCall(e), [e]),
-        n = (0, l.bG)([c.A], () => c.A.getRegions(null));
-    s.useEffect(() => {
+    let t = (0, s.bG)([o.A], () => o.A.getCall(e), [e]),
+        n = (0, s.bG)([c.A], () => c.A.getRegions(null));
+    l.useEffect(() => {
         null == n && r.A.fetchRegions(null)
     }, [n]);
-    let u = s.useMemo(() => null != t && t.regionUpdated && null != n && null != t.region ? n.find(e => {
+    let u = l.useMemo(() => null != t && t.regionUpdated && null != n && null != t.region ? n.find(e => {
             let {
                 id: n
             } = e;
@@ -30,10 +29,10 @@ function u(e) {
             id: "automatic",
             name: d.intl.string(d.t.JEmsap)
         }, [t, n]),
-        h = s.useCallback(e => {
+        h = l.useCallback(e => {
             null != t && r.A.changeCallRegion(t.channelId, e.id)
         }, [t]),
-        A = s.useMemo(() => null == n || 0 === n.length ? null : n.map(e => {
+        A = l.useMemo(() => null == n || 0 === n.length ? null : n.map(e => {
             let {
                 id: t,
                 name: n

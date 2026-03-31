@@ -13,29 +13,29 @@ var i = n(627968),
     c = n(430452),
     u = n(975571),
     m = n(942405),
-    _ = n(652215),
-    g = n(985018),
-    x = n(933230);
+    g = n(652215),
+    _ = n(985018),
+    A = n(933230);
 
-function A(e) {
+function x(e) {
     let {
         game: t,
         application: n
     } = e;
     return null == t || null == n ? (0, i.jsx)("div", {
-        className: x.zc,
+        className: A.zc,
         children: (0, i.jsx)(r.EpV, {
             size: "sm",
             color: r.LU0.colors.TEXT_FEEDBACK_WARNING
         })
     }) : (0, i.jsxs)("div", {
-        className: x.nt,
+        className: A.nt,
         children: [(0, i.jsx)(d.A, {
             game: n,
             pid: t.pid,
             size: d.M.MEDIUM
         }), (0, i.jsx)("div", {
-            className: x.Am,
+            className: A.Am,
             children: (0, i.jsx)(r.EpV, {
                 size: "sm",
                 color: r.LU0.colors.TEXT_FEEDBACK_WARNING
@@ -52,7 +52,7 @@ function h(e) {
         } = (0, o.A)();
     null == n || n.elevated || (n = void 0, i = void 0);
     let s = (0, m.NP)(),
-        l = s && null != n && t === _.TBI.PUSH_TO_TALK;
+        l = s && null != n && t === g.TBI.PUSH_TO_TALK;
     return {
         canPrompt: "voice" === e ? l : s,
         runningGame: n,
@@ -70,27 +70,27 @@ function p(e) {
         runningGameApplication: o
     } = h(n);
     return s ? (0, i.jsxs)("div", {
-        className: l()(x.kL, t),
-        children: [(0, i.jsx)(A, {
+        className: l()(A.kL, t),
+        children: [(0, i.jsx)(x, {
             game: a,
             application: o
         }), (0, i.jsxs)("div", {
-            className: x.FS,
+            className: A.FS,
             children: [(0, i.jsx)(r.Text, {
                 variant: "text-sm/medium",
                 color: "text-strong",
-                children: "voice" === n ? g.intl.string(g.t.vxfv7v) : null != a ? g.intl.string(g.t.fAYU2G) : g.intl.string(g.t["9V4X/c"])
+                children: "voice" === n ? _.intl.string(_.t.vxfv7v) : null != a ? _.intl.string(_.t.fAYU2G) : _.intl.string(_.t["9V4X/c"])
             }), (0, i.jsx)(r.Text, {
                 variant: "text-xs/medium",
                 color: "text-muted",
-                children: g.intl.format(g.t["/y6htt"], {
-                    helpCenterLink: u.A.getArticleURL(_.MVz.SYSTEM_SERVICE)
+                children: _.intl.format(_.t["/y6htt"], {
+                    helpCenterLink: u.A.getArticleURL(g.MVz.SYSTEM_SERVICE)
                 })
             })]
         }), (0, i.jsx)(r.Button, {
             variant: "secondary",
             size: "sm",
-            text: g.intl.string(g.t["1iI46O"]),
+            text: _.intl.string(_.t["1iI46O"]),
             onClick: function() {
                 (0, m.sL)(n + (null != a ? "-with-game" : "-no-game"))
             }

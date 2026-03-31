@@ -1,12 +1,11 @@
 /** chunk id: 514179 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
     A: () => a
 });
 var i = n(627968);
 n(64700);
-var s = n(827734),
-    l = n(953727);
+var l = n(827734),
+    s = n(953727);
 
 function a(e) {
     let {
@@ -15,7 +14,7 @@ function a(e) {
         ...a
     } = e;
     return (0, i.jsxs)("svg", {
-        ...(0, l.A)(a),
+        ...(0, s.A)(a),
         width: t,
         height: n,
         viewBox: "0 0 24 24",
@@ -34,10 +33,10 @@ function a(e) {
                 y2: "1.98749",
                 gradientUnits: "userSpaceOnUse",
                 children: [(0, i.jsx)("stop", {
-                    stopColor: s.A.colors.CREATOR_REVENUE_ICON_GRADIENT_START.css
+                    stopColor: l.A.colors.CREATOR_REVENUE_ICON_GRADIENT_START.css
                 }), (0, i.jsx)("stop", {
                     offset: "1",
-                    stopColor: s.A.colors.CREATOR_REVENUE_ICON_GRADIENT_END.css
+                    stopColor: l.A.colors.CREATOR_REVENUE_ICON_GRADIENT_END.css
                 })]
             })
         })]

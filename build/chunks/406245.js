@@ -1,6 +1,6 @@
 /** chunk id: 406245 params = (module,exports,require) **/
 n.d(t, {
-    A: () => _
+    A: () => g
 });
 var i = n(627968),
     s = n(64700),
@@ -41,7 +41,7 @@ let m = [{
         getQuestion: () => c.intl.string(c.t.f5B4EW),
         getAnswer: () => c.intl.string(c.t.Aje8Pb)
     }],
-    _ = function(e) {
+    g = function(e) {
         let {
             className: t
         } = e, [n, l] = s.useState(null);

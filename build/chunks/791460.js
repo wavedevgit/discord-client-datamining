@@ -12,10 +12,10 @@ var i = n(311907),
     c = n(658522),
     u = n(466116),
     m = n(923159),
-    _ = n(881318),
-    g = n(918873),
-    x = n(985667),
-    A = n(580997),
+    g = n(881318),
+    _ = n(918873),
+    A = n(985667),
+    x = n(580997),
     h = n(985018);
 let p = (0, l.bd)(r.X.INPUT_PROFILE_VOICE_ADVANCED_ACCORDION, {
     useTitle: function(e) {
@@ -28,5 +28,5 @@ let p = (0, l.bd)(r.X.INPUT_PROFILE_VOICE_ADVANCED_ACCORDION, {
             limit: t ? 3 : 2
         })
     },
-    buildLayout: () => [o.C, _.$, u.l, A.A, c.J, m.Q, d.e, g.W, x.i]
+    buildLayout: () => [o.C, g.$, u.l, x.A, c.J, m.Q, d.e, _.W, A.i]
 })

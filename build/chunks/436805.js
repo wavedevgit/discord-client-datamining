@@ -1,6 +1,6 @@
 /** chunk id: 436805 params = (module,exports,require) **/
 n.d(t, {
-    A: () => S
+    A: () => E
 });
 var i = n(627968),
     s = n(64700),
@@ -12,20 +12,20 @@ var i = n(627968),
     c = n(253292),
     u = n(780898),
     m = n(580630),
-    _ = n(349439),
-    g = n(380258);
-let x = e => {
+    g = n(349439),
+    _ = n(380258);
+let A = e => {
         let {
             displayName: t,
             product: n
-        } = e, s = (0, _.nF)(n);
+        } = e, s = (0, g.nF)(n);
         return null == s ? null : (0, i.jsx)("img", {
             src: s,
             alt: t,
-            className: g._P
+            className: _._P
         })
     },
-    A = e => {
+    x = e => {
         let {
             displayName: t,
             nameplateData: n
@@ -35,18 +35,18 @@ let x = e => {
         return null == s ? null : (0, i.jsx)("img", {
             src: s,
             alt: t,
-            className: g.M4
+            className: _.M4
         })
     },
     h = e => {
         let {
             displayName: t,
             product: n
-        } = e, s = (0, _.GQ)(n);
+        } = e, s = (0, g.GQ)(n);
         return null == s ? null : (0, i.jsx)("img", {
             src: s,
             alt: t,
-            className: g._P
+            className: _._P
         })
     },
     p = e => {
@@ -54,12 +54,12 @@ let x = e => {
             subscriptionPlanId: t
         } = e;
         if (null == t) return (0, i.jsx)("div", {
-            className: g.T8,
+            className: _.T8,
             children: (0, i.jsx)(o.U1X, {})
         });
-        let n = (0, _.il)(t);
+        let n = (0, g.il)(t);
         return (0, i.jsx)("div", {
-            className: g.T8,
+            className: _.T8,
             children: n ? (0, i.jsx)(o._Jp, {
                 size: "custom",
                 width: 20,
@@ -77,18 +77,18 @@ let x = e => {
             product: n
         } = e;
         if (null == n) return (0, i.jsx)("div", {
-            className: g.T8,
+            className: _.T8,
             children: (0, i.jsx)(o.U1X, {})
         });
         switch (n.type) {
             case r.R.AVATAR_DECORATION:
-                return (0, i.jsx)(x, {
+                return (0, i.jsx)(A, {
                     displayName: t,
                     product: n
                 });
             case r.R.NAMEPLATE:
                 let s = (0, u.EQ)(n);
-                return null != s ? (0, i.jsx)(A, {
+                return null != s ? (0, i.jsx)(x, {
                     displayName: t,
                     nameplateData: s
                 }) : null;
@@ -99,7 +99,7 @@ let x = e => {
                 });
             default:
                 return (0, i.jsx)("div", {
-                    className: g.T8,
+                    className: _.T8,
                     children: (0, i.jsx)(o.U1X, {})
                 })
         }
@@ -115,14 +115,14 @@ let x = e => {
             product: c
         } = (0, d.A)(t), {
             displayName: u,
-            typeName: x,
-            isSubscription: A
-        } = (0, _.GZ)(c ?? null, n);
-        if (null != t && !A && null == c || null == u) return null;
+            typeName: A,
+            isSubscription: x
+        } = (0, g.GZ)(c ?? null, n);
+        if (null != t && !x && null == c || null == u) return null;
         let h = (0, m.$g)(s, l);
         return (0, i.jsxs)("div", {
-            className: a()(g.kL, r),
-            children: [A ? (0, i.jsx)(p, {
+            className: a()(_.kL, r),
+            children: [x ? (0, i.jsx)(p, {
                 subscriptionPlanId: n
             }) : (0, i.jsx)(T, {
                 displayName: u,
@@ -130,7 +130,7 @@ let x = e => {
             }), (0, i.jsxs)("div", {
                 children: [(0, i.jsx)(o.Text, {
                     variant: "text-md/semibold",
-                    children: null != x ? `${u} • ${x}` : u
+                    children: null != A ? `${u} • ${A}` : u
                 }), (0, i.jsx)(o.Text, {
                     variant: "text-sm/medium",
                     color: "text-subtle",
@@ -140,4 +140,4 @@ let x = e => {
         })
     });
 f.displayName = "FamilyCenterActivityPurchaseRow";
-let S = f
+let E = f

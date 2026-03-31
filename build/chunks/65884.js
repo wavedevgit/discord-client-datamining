@@ -91,17 +91,17 @@ function m(e) {
         disableAccountErrorMessage: a,
         onOwnedTeamsWarningModalClose: r,
         onOwnedGuildsWarningModalClose: m,
-        onDeleteAccountConfirmModalClose: _,
-        onDisableAccountErrorModalClose: g
+        onDeleteAccountConfirmModalClose: g,
+        onDisableAccountErrorModalClose: _
     } = e;
     return t ? (0, i.jsx)(o, {
         onClose: r
     }) : n ? (0, i.jsx)(d, {
         onClose: m
     }) : s ? (0, i.jsx)(c, {
-        onClose: _
+        onClose: g
     }) : l ? (0, i.jsx)(u, {
-        onClose: g,
+        onClose: _,
         errorMessage: a
     }) : null
 }

@@ -1,12 +1,11 @@
 /** chunk id: 55294 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
     A: () => p,
     N: () => x
 });
 var i = n(64700),
-    s = n(942381),
-    l = n(465532),
+    l = n(942381),
+    s = n(465532),
     a = n(843472),
     r = n(608299),
     o = n(23658),
@@ -15,15 +14,15 @@ var i = n(64700),
     u = n(451909),
     h = n(31717),
     A = n(522602),
-    m = n(393309),
-    _ = n(381941),
+    _ = n(393309),
+    m = n(381941),
     g = n(985018);
 
 function p(e) {
     let {
         parentChannel: t,
         parentMessageId: n,
-        threadSettings: s,
+        threadSettings: l,
         privateThreadMode: c,
         location: d,
         onThreadCreated: p,
@@ -31,14 +30,14 @@ function p(e) {
     } = e, x = i.useCallback((e, t, n, i) => {
         a.A.sendMessage(e.id, u.Ay.parse(e, n), void 0, {
             eagerDispatch: !1,
-            location: _.Hx.THREAD_CREATION,
+            location: m.Hx.THREAD_CREATION,
             stickerIds: i,
             attachmentsToUpload: t,
-            onAttachmentUploadError: (i, s, a, c) => {
+            onAttachmentUploadError: (i, l, a, c) => {
                 (0, o.openUploadError)({
                     title: g.intl.string(g.t.B3vFdU),
                     help: c?.message ?? g.intl.string(g.t.zMEjJg)
-                }), "" !== n && "" === h.A.getDraft(e.id, h.C.FirstThreadMessage) && l.A.saveDraft(e.id, n, h.C.FirstThreadMessage), 0 === A.A.getUploadCount(e.id, h.C.FirstThreadMessage) && r.A.setUploads({
+                }), "" !== n && "" === h.A.getDraft(e.id, h.C.FirstThreadMessage) && s.A.saveDraft(e.id, n, h.C.FirstThreadMessage), 0 === A.A.getUploadCount(e.id, h.C.FirstThreadMessage) && r.A.setUploads({
                     channelId: e.id,
                     uploads: t,
                     draftType: h.C.FirstThreadMessage
@@ -46,10 +45,10 @@ function p(e) {
             }
         })
     }, []);
-    return (0, m.r$)({
+    return (0, _.r$)({
         parentChannel: t,
         parentMessageId: n,
-        threadSettings: s,
+        threadSettings: l,
         privateThreadMode: c,
         location: d,
         onThreadCreated: p,
@@ -81,8 +80,8 @@ function x(e) {
             name: t,
             appliedTags: n
         }
-    }, s.x);
-    return (0, m.w0)({
+    }, l.x);
+    return (0, _.w0)({
         parentChannel: t,
         name: n,
         appliedTags: i,

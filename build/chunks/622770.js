@@ -1,12 +1,11 @@
 /** chunk id: 622770 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
     A: () => h
 });
-var i, s = n(627968);
+var i, l = n(627968);
 n(64700);
-var l = n(503698),
-    a = n.n(l),
+var s = n(503698),
+    a = n.n(s),
     r = n(397927),
     o = n(709562),
     c = n(50433),
@@ -17,15 +16,15 @@ function u(e) {
         direction: t,
         className: n,
         themeable: i,
-        ...l
+        ...s
     } = e;
-    return (0, s.jsx)(o.A, {
+    return (0, l.jsx)(o.A, {
         className: a()(n, c.U, {
             [c.up]: 0 === t
         }),
         iconComponent: r.abt,
         themeable: i,
-        ...l
+        ...s
     })
 }
 u.Directions = d;

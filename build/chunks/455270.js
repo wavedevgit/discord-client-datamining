@@ -1,5 +1,4 @@
 /** chunk id: 455270 params = (module,exports,require) **/
-"use strict";
 e.exports = {
     mO: "gameName__8c6c2",
     On: "clickableGameName__8c6c2",

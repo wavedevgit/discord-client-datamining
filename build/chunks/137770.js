@@ -1,6 +1,6 @@
 /** chunk id: 137770 params = (module,exports,require) **/
 n.d(t, {
-    A: () => S
+    A: () => E
 }), n(321073);
 var i = n(627968),
     s = n(64700),
@@ -12,31 +12,31 @@ var i = n(627968),
     c = n(342744),
     u = n(987144),
     m = n(166403),
-    _ = n(473145),
-    g = n(927578),
-    x = n(311092),
-    A = n(652215),
+    g = n(473145),
+    _ = n(927578),
+    A = n(311092),
+    x = n(652215),
     h = n(788868),
     p = n(985018),
     T = n(143753),
     f = n(410229);
 
-function S(e) {
+function E(e) {
     let {
         guildBoostSlots: t,
         fractionalPremiumState: l
     } = e, d = (0, r.bG)([m.A], () => m.A.getPremiumTypeSubscription()), {
         unappliedSlots: c,
-        numActiveSlots: x
+        numActiveSlots: A
     } = s.useMemo(() => {
         let e = [],
             n = 0;
-        for (let i of t) !(0, _.I5)(i) && n++, null == i.premiumGuildSubscription && e.push(i);
+        for (let i of t) !(0, g.I5)(i) && n++, null == i.premiumGuildSubscription && e.push(i);
         return {
             unappliedSlots: e,
             numActiveSlots: n
         }
-    }, [t]), S = x > (null != d ? g.Ay.getNumIncludedPremiumGuildSubscriptionSlots(d.planId) : 0), b = d?.isPausedOrPausePending === !0 && l === h.xc.NONE;
+    }, [t]), E = A > (null != d ? _.Ay.getNumIncludedPremiumGuildSubscriptionSlots(d.planId) : 0), b = d?.isPausedOrPausePending === !0 && l === h.xc.NONE;
     return 0 === c.length ? null : (0, i.jsxs)("div", {
         className: T.Nr,
         children: [(0, i.jsxs)("div", {
@@ -90,10 +90,10 @@ function S(e) {
                                 t.onClose(), (0, u.g)({
                                     analyticsLocations: [],
                                     analyticsLocation: {
-                                        page: A.liQ.GUILD_BOOSTING_USER_SETTINGS,
-                                        section: A.JJy.SETTINGS_PREMIUM,
-                                        object: A.ZSU.BUTTON_CTA,
-                                        objectType: A.AnalyticsObjectTypes.BUY
+                                        page: x.liQ.GUILD_BOOSTING_USER_SETTINGS,
+                                        section: x.JJy.SETTINGS_PREMIUM,
+                                        object: x.ZSU.BUTTON_CTA,
+                                        objectType: x.AnalyticsObjectTypes.BUY
                                     },
                                     guild: e
                                 })
@@ -102,36 +102,36 @@ function S(e) {
                     })
                 }
             })]
-        }), c.map((e, t) => (0, i.jsx)(E, {
+        }), c.map((e, t) => (0, i.jsx)(S, {
             slot: e,
             isLast: t === c.length - 1,
-            isCancelable: S && !(0, _.I5)(e),
-            isCanceled: (0, _.I5)(e),
+            isCancelable: E && !(0, g.I5)(e),
+            isCanceled: (0, g.I5)(e),
             premiumSubscription: d,
             modificationsDisabled: b
         }, e.id))]
     })
 }
 
-function E(e) {
+function S(e) {
     let t, {
             slot: n,
             isLast: l,
             isCancelable: r,
             isCanceled: u,
             premiumSubscription: m,
-            modificationsDisabled: _
+            modificationsDisabled: g
         } = e,
-        g = s.useRef(null),
-        A = s.useMemo(() => null != n.cooldownEndsAt ? new Date(n.cooldownEndsAt) : null, [n.cooldownEndsAt]);
+        _ = s.useRef(null),
+        x = s.useMemo(() => null != n.cooldownEndsAt ? new Date(n.cooldownEndsAt) : null, [n.cooldownEndsAt]);
     t = u && null != m ? (0, i.jsx)(o.Text, {
         variant: "text-sm/medium",
         color: "text-subtle",
         children: p.intl.format(p.t.Z4ULRD, {
             date: m.currentPeriodEnd
         })
-    }) : n.isOnCooldown() && null != A ? (0, i.jsx)(x.A, {
-        cooldown: A.getTime()
+    }) : n.isOnCooldown() && null != x ? (0, i.jsx)(A.A, {
+        cooldown: x.getTime()
     }) : (0, i.jsx)(o.Text, {
         variant: "text-sm/medium",
         color: "text-subtle",
@@ -150,7 +150,7 @@ function E(e) {
                 src: f.A
             }), t]
         }), h && (0, i.jsx)(o.YNO, {
-            targetElementRef: g,
+            targetElementRef: _,
             renderPopout: e => {
                 let {
                     closePopout: t
@@ -164,8 +164,8 @@ function E(e) {
                         id: "cancel-boost",
                         label: p.intl.string(p.t.twFU3R),
                         color: "danger",
-                        disabled: _,
-                        subtext: _ ? p.intl.string(p.t.mOWsF1) : void 0,
+                        disabled: g,
+                        subtext: g ? p.intl.string(p.t.mOWsF1) : void 0,
                         action: () => {
                             t(), (0, o.mMO)(async () => e => (0, i.jsx)(d.default, {
                                 ...e,
@@ -175,8 +175,8 @@ function E(e) {
                     }), u && (0, i.jsx)(o.Drp, {
                         id: "uncancel-boost",
                         label: p.intl.string(p.t["2glQNp"]),
-                        disabled: _,
-                        subtext: _ ? p.intl.string(p.t.mOWsF1) : void 0,
+                        disabled: g,
+                        subtext: g ? p.intl.string(p.t.mOWsF1) : void 0,
                         action: () => {
                             t(), (0, o.mMO)(async () => e => (0, i.jsx)(c.default, {
                                 ...e,
@@ -189,7 +189,7 @@ function E(e) {
             align: "right",
             position: "bottom",
             children: e => (0, i.jsx)(o.DUT, {
-                innerRef: g,
+                innerRef: _,
                 "aria-label": p.intl.string(p.t["UKOtz+"]),
                 className: T.Mj,
                 ...e,

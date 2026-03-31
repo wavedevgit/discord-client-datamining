@@ -3,8 +3,8 @@ n.d(t, {
     V: () => d
 });
 var a = n(64700),
-    i = n(311907),
-    l = n(429913),
+    l = n(311907),
+    i = n(429913),
     r = n(832163),
     s = n(594832),
     c = n(631784),
@@ -13,8 +13,8 @@ var a = n(64700),
 function d(e) {
     let t = o.default.getCurrentUser()?.id,
         n = a.useMemo(() => null != t ? [t] : [], [t]),
-        d = (0, i.bG)([r.A], () => null != e ? r.A.getApplicationIdFromDetectableId(e.id) : void 0),
-        u = (0, l.h)(d),
+        d = (0, l.bG)([r.A], () => null != e ? r.A.getApplicationIdFromDetectableId(e.id) : void 0),
+        u = (0, i.h)(d),
         m = a.useMemo(() => null != d ? [d] : [], [d]),
         {
             recommendations: x,

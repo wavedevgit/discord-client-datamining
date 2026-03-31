@@ -1,11 +1,10 @@
 /** chunk id: 738876 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
-    A: () => C
+    A: () => I
 });
 var i = n(627968),
-    s = n(64700),
-    l = n(311907),
+    l = n(64700),
+    s = n(311907),
     a = n(323073),
     r = n(861382),
     o = n(47167),
@@ -14,39 +13,39 @@ var i = n(627968),
     u = n(186111),
     h = n(576705),
     A = n(994500),
-    m = n(287809),
-    _ = n(203982),
+    _ = n(287809),
+    m = n(203982),
     g = n(518960),
     p = n(65593),
     f = n(698638),
     x = n(652215),
     E = n(985018);
-let C = function(e) {
+let I = function(e) {
     let {
         className: t,
         style: n,
-        channel: C,
-        draftType: I
-    } = e, [N, S] = s.useState(!0), b = (0, l.bG)([u.A], () => u.A.hasLayers()), T = (0, l.bG)([h.A], () => null != C && h.A.can(x.xBc.ATTACH_FILES, C), [C]), v = null != (0, l.bG)([r.A], () => r.A.getActiveCommand(C.id)), y = C.getGuildId(), j = I === c.C.FirstThreadMessage, R = (0, a.vL)(C), O = s.useMemo(() => !b && (C.isPrivate() && !C.isManaged() || null != y && !R && T && d.A.canChatInGuild(y)), [T, R, C, y, b]), L = j ? x.kvI.GUILD_THREADS_ONLY.has(C.type) ? E.intl.string(E.t.RBBLhL) : E.intl.string(E.t.gUx4eu) : N ? E.intl.format(E.t.dYP2Fc, {
-        destination: (0, o.m1)(C, m.default, A.A, !0)
+        channel: I,
+        draftType: C
+    } = e, [N, T] = l.useState(!0), S = (0, s.bG)([u.A], () => u.A.hasLayers()), b = (0, s.bG)([h.A], () => null != I && h.A.can(x.xBc.ATTACH_FILES, I), [I]), y = null != (0, s.bG)([r.A], () => r.A.getActiveCommand(I.id)), v = I.getGuildId(), j = C === c.C.FirstThreadMessage, R = (0, a.vL)(I), O = l.useMemo(() => !S && (I.isPrivate() && !I.isManaged() || null != v && !R && b && d.A.canChatInGuild(v)), [b, R, I, v, S]), L = j ? x.kvI.GUILD_THREADS_ONLY.has(I.type) ? E.intl.string(E.t.RBBLhL) : E.intl.string(E.t.gUx4eu) : N ? E.intl.format(E.t.dYP2Fc, {
+        destination: (0, o.m1)(I, _.default, A.A, !0)
     }) : E.intl.string(E.t.h76ulG);
-    return v || !O ? null : (0, i.jsx)(p.A, {
+    return y || !O ? null : (0, i.jsx)(p.A, {
         className: t,
         style: n,
         title: L,
         description: j ? E.intl.string(E.t.lpgkzq) : E.intl.string(E.t.usQh4J),
         icons: f.ir,
         onDrop: e => {
-            if (v) return !1;
-            O && null != C && ((0, g.R)(e, C, I, {
+            if (y) return !1;
+            O && null != I && ((0, g.R)(e, I, C, {
                 requireConfirm: N,
                 origin: "drag_drop"
-            }), _._.dispatchToLastSubscribed(x.jej.TEXTAREA_FOCUS))
+            }), m._.dispatchToLastSubscribed(x.jej.TEXTAREA_FOCUS))
         },
-        onDragClear: () => S(!0),
+        onDragClear: () => T(!0),
         onDragOver: e => {
-            if (v) return !1;
-            j || e.shiftKey !== N || S(!e.shiftKey)
+            if (y) return !1;
+            j || e.shiftKey !== N || T(!e.shiftKey)
         }
     })
 }

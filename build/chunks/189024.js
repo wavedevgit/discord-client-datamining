@@ -12,20 +12,20 @@ var i = n(627968),
     c = n(688810),
     u = n(562819),
     m = n(793943),
-    _ = n(259065),
-    g = n(95035),
-    x = n(532794),
-    A = n(591179),
+    g = n(259065),
+    _ = n(95035),
+    A = n(532794),
+    x = n(591179),
     h = n(462463),
     p = n(780964),
     T = n(358776),
     f = n(840065),
-    S = n(166403),
-    E = n(730784),
+    E = n(166403),
+    S = n(730784),
     b = n(398523),
     C = n(881373),
-    v = n(152815),
-    N = n(612669),
+    N = n(152815),
+    v = n(612669),
     I = n(852218),
     j = n(161319),
     y = n(920050),
@@ -48,16 +48,16 @@ var i = n(627968),
 function Y() {
     let {
         analyticsLocations: e
-    } = (0, c.Ay)(d.A.PREMIUM_MARKETING_PERK_CARD), t = (0, A.X)("useWhatsNewPerkCards"), Y = (0, N.O9)(), X = (0, C.YS)({
+    } = (0, c.Ay)(d.A.PREMIUM_MARKETING_PERK_CARD), t = (0, x.X)("useWhatsNewPerkCards"), Y = (0, v.O9)(), X = (0, C.YS)({
         location: "useWhatsNewPerkCards"
-    }).functionalityEnabled, K = (0, E.R)({
+    }).functionalityEnabled, K = (0, S.R)({
         location: "PremiumWhatsNewSection"
     }), W = b.A.useExperiment({
         location: "PremiumWhatsNewSection"
-    }).enabled, Z = (0, a.bG)([S.A], () => S.A.getPremiumTypeSubscription()), q = Z?.hasActiveTrial ?? !1, Q = (0, h.A)(), J = (0, s.useCallback)(() => {
+    }).enabled, Z = (0, a.bG)([E.A], () => E.A.getPremiumTypeSubscription()), q = Z?.hasActiveTrial ?? !1, Q = (0, h.A)(), J = (0, s.useCallback)(() => {
         (0, f.openUserSettings)(p.X.PROFILE_PANEL, {
             analyticsLocations: e
-        }, () => (0, _.L)({
+        }, () => (0, g.L)({
             analyticsLocations: e
         }))
     }, [e]), $ = (0, s.useCallback)(() => {
@@ -81,7 +81,7 @@ function Y() {
                     ...t
                 })
             });
-            (0, x.A)({
+            (0, A.A)({
                 subscriptionTier: R.pe.TIER_2,
                 initialPlanId: R.gD.PREMIUM_GROUP_MONTH,
                 analyticsLocations: e
@@ -115,7 +115,7 @@ function Y() {
                 subscriptionRequired: !0,
                 progress: es.getDate() / el,
                 ctaText: G.intl.string(L.default["bZLaD+"]),
-                onCtaClick: () => (0, v.P)({
+                onCtaClick: () => (0, N.P)({
                     partnerId: I.XY
                 }),
                 blurTint: "#2E213D",
@@ -134,7 +134,7 @@ function Y() {
                         premiumGroupProductName: (0, P.DP)()
                     }), (0, i.jsx)("div", {
                         className: M.LF,
-                        children: (0, i.jsx)(g.A, {
+                        children: (0, i.jsx)(_.A, {
                             onClick: et,
                             children: G.intl.string(D.default.yYyGJH)
                         })

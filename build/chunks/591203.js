@@ -1,6 +1,6 @@
 /** chunk id: 591203 params = (module,exports,require) **/
 n.d(t, {
-    L: () => v
+    L: () => N
 });
 var i = n(627968),
     s = n(64700),
@@ -12,26 +12,26 @@ var i = n(627968),
     c = n(128450),
     u = n(419954),
     m = n(796774),
-    _ = n(209932),
-    g = n(536432),
-    x = n(984813),
-    A = n(595953),
+    g = n(209932),
+    _ = n(536432),
+    A = n(984813),
+    x = n(595953),
     h = n(975571),
     p = n(780964),
     T = n(617617),
     f = n(652215);
 n(980504);
-var S = n(985018),
-    E = n(199141);
+var E = n(985018),
+    S = n(199141);
 
 function b(e) {
-    return (0, l.bG)([_.A], () => {
+    return (0, l.bG)([g.A], () => {
         if (null == e) return null;
         let {
             guildId: t,
             soundId: n
         } = e;
-        return _.A.getSound("0" === t ? "0" : t, n)
+        return g.A.getSound("0" === t ? "0" : t, n)
     })
 }
 
@@ -45,36 +45,36 @@ function C(e) {
         emojiName: d
     } = s, c = null != o || null != d;
     return (0, i.jsxs)("div", {
-        className: E.Io,
+        className: S.Io,
         children: [c ? (0, i.jsx)(r.A, {
             emojiId: o,
             emojiName: d,
-            className: E.nW
+            className: S.nW
         }) : (0, i.jsx)(a.HKD, {
             size: "md",
             color: "currentColor",
-            className: E.nW
+            className: S.nW
         }), (0, i.jsx)(a.Text, {
-            className: E.dK,
+            className: S.dK,
             variant: "text-xs/medium",
             children: s.name
         })]
     })
 }
-let v = (0, u.E2)(p.X.ENTRANCE_SOUNDS_SETTING, {
-    useSearchTerms: () => [S.intl.string(S.t.nzUc3B)],
+let N = (0, u.E2)(p.X.ENTRANCE_SOUNDS_SETTING, {
+    useSearchTerms: () => [E.intl.string(E.t.nzUc3B)],
     Component: function() {
         let {
             analyticsLocations: e
-        } = (0, o.Ay)(), [t, n] = s.useState("0"), r = (0, x.mz)(t), u = b(r), p = r?.type === x.PP.GLOBAL, T = (0, l.bG)([_.A], () => _.A.hasFetchedAllSounds()) && null != r && null == u;
+        } = (0, o.Ay)(), [t, n] = s.useState("0"), r = (0, A.mz)(t), u = b(r), p = r?.type === A.PP.GLOBAL, T = (0, l.bG)([g.A], () => g.A.hasFetchedAllSounds()) && null != r && null == u;
         s.useEffect(() => {
-            T && (0, g.ND)({
+            T && (0, _.ND)({
                 location: e
             })
         }, [T, e]), s.useEffect(() => {
             (0, m.E7)()
         }, []);
-        let v = s.useCallback((e, t) => {
+        let N = s.useCallback((e, t) => {
             let {
                 inDropdown: n
             } = t;
@@ -83,40 +83,40 @@ let v = (0, u.E2)(p.X.ENTRANCE_SOUNDS_SETTING, {
             }) : null
         }, []);
         return (0, i.jsxs)(a.nVY, {
-            label: S.intl.string(S.t.nzUc3B),
-            description: S.intl.format(S.t.u9RWmv, {
+            label: E.intl.string(E.t.nzUc3B),
+            description: E.intl.format(E.t.u9RWmv, {
                 helpdeskArticle: h.A.getArticleURL(f.MVz.SOUNDBOARD)
             }),
             children: [(0, i.jsx)(d.A, {
                 guildId: t,
-                className: E.Dt,
+                className: S.Dt,
                 globalOption: {
-                    label: S.intl.string(S.t["CpEUP/"]),
+                    label: E.intl.string(E.t["CpEUP/"]),
                     value: "0"
                 },
                 onChange: e => {
                     n(null == e ? "0" : e.id)
                 },
-                renderOptionSuffix: v,
+                renderOptionSuffix: N,
                 hideDivider: !0
             }), (0, i.jsxs)(c.A, {
-                title: S.intl.format(S.t.I2TsYN, {
+                title: E.intl.format(E.t.I2TsYN, {
                     nitroWheelHook: () => (0, i.jsx)(a.tvc, {
                         size: "md",
                         color: "currentColor",
-                        className: E.ax
+                        className: S.ax
                     })
                 }),
-                children: [(0, i.jsx)(A.A, {
+                children: [(0, i.jsx)(x.A, {
                     sound: u,
                     isGlobal: p,
                     onSelect: n => {
-                        null == n ? (0, g.Dv)(t, e) : (0, g.un)(t, n, e)
+                        null == n ? (0, _.Dv)(t, e) : (0, _.un)(t, n, e)
                     }
                 }), T && (0, i.jsx)(a.po8, {
-                    className: E.lm,
+                    className: S.lm,
                     messageType: a.YCn.WARNING,
-                    children: S.intl.string(S.t.WkPsFR)
+                    children: E.intl.string(E.t.WkPsFR)
                 })]
             })]
         })

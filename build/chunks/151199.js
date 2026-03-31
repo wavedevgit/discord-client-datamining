@@ -1,22 +1,22 @@
 /** chunk id: 151199 params = (module,exports,require) **/
 n.d(t, {
-    y: () => a
+    y: () => o
 });
 var i = n(914430),
-    l = n(924985),
-    r = n(808728),
-    s = n(967198),
-    o = n(652215);
-let a = {
+    r = n(924985),
+    s = n(808728),
+    a = n(967198),
+    l = n(652215);
+let o = {
     binds: ["mod+shift+a"],
     comboKeysBindGlobal: !0,
     action() {
-        let e = s.A.getGuildId();
-        return null != e && (r.Ay.getChannels(e)[o.rbe.GUILD_CATEGORY].some(e => {
+        let e = a.A.getGuildId();
+        return null != e && (s.Ay.getChannels(e)[l.rbe.GUILD_CATEGORY].some(e => {
             let {
                 channel: t
             } = e;
-            return "null" !== t.id && !l.A.isCollapsed(t.id)
+            return "null" !== t.id && !r.A.isCollapsed(t.id)
         }) ? (0, i.rZ)(e) : (0, i.Al)(e), !1)
     }
 }

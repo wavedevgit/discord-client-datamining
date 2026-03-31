@@ -1,13 +1,12 @@
 /** chunk id: 421773 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
-    A: () => l
+    A: () => s
 });
 var i = n(64700),
-    s = n(451988);
+    l = n(451988);
 
-function l(e, t) {
-    let [n, l] = i.useState(!1), a = i.useRef(new s.J_(t, () => l(!1))), r = i.useRef(new s.J_(e, () => l(!0))), o = i.useCallback(() => {
+function s(e, t) {
+    let [n, s] = i.useState(!1), a = i.useRef(new l.J_(t, () => s(!1))), r = i.useRef(new l.J_(e, () => s(!0))), o = i.useCallback(() => {
         a.current.cancel(), r.current.cancel()
     }, []);
     i.useEffect(() => o, [o]);
@@ -16,7 +15,7 @@ function l(e, t) {
     }, [o]);
     return {
         isHovered: n,
-        setIsHovered: l,
+        setIsHovered: s,
         onMouseEnter: i.useCallback(() => {
             o(), r.current.delay()
         }, [o]),

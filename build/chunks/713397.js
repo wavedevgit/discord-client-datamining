@@ -1,11 +1,10 @@
 /** chunk id: 713397 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
     A: () => c
 });
 var i = n(627968),
-    s = n(397927),
-    l = n(367513),
+    l = n(397927),
+    s = n(367513),
     a = n(715989),
     r = n(985018),
     o = n(616124);
@@ -19,14 +18,14 @@ function c(e) {
         className: o.kL,
         children: [(0, i.jsx)(a.A, {}), (0, i.jsxs)("div", {
             className: o.Qs,
-            children: [(0, i.jsx)(s.Heading, {
+            children: [(0, i.jsx)(l.Heading, {
                 variant: "heading-lg/normal",
                 children: n ? r.intl.string(r.t.KIConm) : r.intl.format(r.t.ilLVLr, {})
-            }), !n && (0, i.jsx)(s.Button, {
+            }), !n && (0, i.jsx)(l.Button, {
                 variant: "secondary",
                 size: "md",
                 onClick: e => {
-                    e.stopPropagation(), l.A.toggleVoiceParticipantsHidden(t, !1)
+                    e.stopPropagation(), s.A.toggleVoiceParticipantsHidden(t, !1)
                 },
                 text: r.intl.string(r.t.kLQySL)
             })]

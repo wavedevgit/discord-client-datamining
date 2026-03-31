@@ -1,12 +1,11 @@
 /** chunk id: 565265 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
     A: () => p
 });
 var i = n(627968),
-    s = n(64700),
-    l = n(503698),
-    a = n.n(l),
+    l = n(64700),
+    s = n(503698),
+    a = n.n(s),
     r = n(621466),
     o = n(397927),
     c = n(442433),
@@ -14,18 +13,18 @@ var i = n(627968),
     u = n(742589),
     h = n(985018),
     A = n(170028),
-    m = n(782691);
+    _ = n(782691);
 
-function _(e) {
+function m(e) {
     return e.matches("a") || "highlight" === e.className || e.className.includes("mention")
 }
-class g extends s.Component {
+class g extends l.Component {
     handleOpenTopic = e => {
         let t = e.target;
         if ((0, r.vq)(t)) {
-            if (_(t)) return;
+            if (m(t)) return;
             let e = t.parentNode;
-            if ((0, r.vq)(e) && _(e)) return
+            if ((0, r.vq)(e) && m(e)) return
         }(0, o.mMO)(async () => {
             let {
                 default: e
@@ -39,7 +38,7 @@ class g extends s.Component {
     handleContextMenu = e => {
         let {
             channel: t,
-            guild: s
+            guild: l
         } = this.props;
         (0, c.L3)(e, async () => {
             let {
@@ -48,7 +47,7 @@ class g extends s.Component {
             return n => (0, i.jsx)(e, {
                 ...n,
                 channel: t,
-                guild: s,
+                guild: l,
                 includeTopic: !0
             })
         })
@@ -59,9 +58,9 @@ class g extends s.Component {
         } = this.props;
         if (e.isMultiUserDM()) return null;
         let t = null != e.topic && e.topic.length > 0;
-        return null != e.linkedLobby || t ? (0, i.jsxs)(s.Fragment, {
+        return null != e.linkedLobby || t ? (0, i.jsxs)(l.Fragment, {
             children: [(0, i.jsx)(u.A.Divider, {}), (0, i.jsxs)("div", {
-                className: a()(A.At, A.lu, m.PT),
+                className: a()(A.At, A.lu, _.PT),
                 onContextMenu: this.handleContextMenu,
                 onClick: this.handleOpenTopic,
                 children: [(0, i.jsx)(o.DUT, {

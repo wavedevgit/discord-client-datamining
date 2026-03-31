@@ -12,13 +12,13 @@ var i = n(627968),
     c = n(840065),
     u = n(95701),
     m = n(128450),
-    _ = n(652215),
-    g = n(985018),
-    x = n(304119);
-let A = (0, d.Ld)(),
+    g = n(652215),
+    _ = n(985018),
+    A = n(304119);
+let x = (0, d.Ld)(),
     h = (0, u.createChannelRecord)({
         id: "1",
-        type: _.rbe.DM
+        type: g.rbe.DM
     }),
     p = (0, d.Ld)();
 
@@ -30,34 +30,34 @@ function T(e) {
         pendingBio: u,
         placeholder: T,
         currentBio: f,
-        disabled: S = !1
-    } = e, [E, b] = s.useState(u ?? f), [C, v] = s.useState((0, r.x7)(E)), N = s.useRef(f), I = s.useRef(!1);
+        disabled: E = !1
+    } = e, [S, b] = s.useState(u ?? f), [C, N] = s.useState((0, r.x7)(S)), v = s.useRef(f), I = s.useRef(!1);
     return s.useEffect(() => {
-        if (N.current !== f) {
+        if (v.current !== f) {
             let e = (0, r.x7)(f);
-            b(f), v(e)
+            b(f), N(e)
         }
-        N.current = f
+        v.current = f
     }, [f]), s.useEffect(() => {
-        void 0 !== u || E === f || I.current || (b(f), v((0, r.x7)(f)))
-    }, [u, f, E]), (0, i.jsxs)(m.A, {
+        void 0 !== u || S === f || I.current || (b(f), N((0, r.x7)(f)))
+    }, [u, f, S]), (0, i.jsxs)(m.A, {
         title: t,
-        titleId: A,
-        description: g.intl.string(g.t.Bbw6Ac),
+        titleId: x,
+        description: _.intl.string(_.t.Bbw6Ac),
         errors: n,
-        disabled: S,
+        disabled: E,
         children: [(0, i.jsx)(o.Ay, {
             "aria-describedby": p,
-            "aria-labelledby": A,
-            className: x.i,
-            innerClassName: x.Z,
-            maxCharacterCount: _.NA2,
+            "aria-labelledby": x,
+            className: A.i,
+            innerClassName: A.Z,
+            maxCharacterCount: g.NA2,
             onChange: function(e, t, n) {
-                t !== E && (b(t), v(n), d(t))
+                t !== S && (b(t), N(n), d(t))
             },
             placeholder: T,
             channel: h,
-            textValue: E,
+            textValue: S,
             richValue: C,
             emojiPickerCloseOnModalOuterClick: !0,
             parentModalKey: c.USER_SETTINGS_MODAL_KEY,
@@ -79,8 +79,8 @@ function T(e) {
             }
         }), (0, i.jsx)(l.AC4, {
             id: p,
-            children: g.intl.format(g.t["+DFxLc"], {
-                maxLength: _.NA2
+            children: _.intl.format(_.t["+DFxLc"], {
+                maxLength: g.NA2
             })
         })]
     })

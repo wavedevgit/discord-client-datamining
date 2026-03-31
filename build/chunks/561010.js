@@ -1,11 +1,10 @@
 /** chunk id: 561010 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
     q: () => A
 }), n(321073);
 var i = n(64700),
-    s = n(311907),
-    l = n(361610),
+    l = n(311907),
+    s = n(361610),
     a = n(964486),
     r = n(36124),
     o = n(317525),
@@ -16,19 +15,19 @@ let h = [];
 
 function A(e, t) {
     (0, a.Ay)(() => {
-        t?.id != null && (0, l.Ey)(t.id, e, r.LD)
+        t?.id != null && (0, s.Ey)(t.id, e, r.LD)
     });
-    let n = (0, s.bG)([o.A], () => null != t ? o.A.getSortedRoles(t.id) : []),
+    let n = (0, l.bG)([o.A], () => null != t ? o.A.getSortedRoles(t.id) : []),
         {
             version: A,
-            members: m
-        } = (0, s.cf)([c.A], () => ({
+            members: _
+        } = (0, l.cf)([c.A], () => ({
             version: c.A.getMemberListVersion(e),
             members: c.A.getMemberListSections(e)
         })),
-        _ = null == t,
+        m = null == t,
         g = i.useMemo(() => {
-            if (_) return h;
+            if (m) return h;
             let e = n.filter(e => e.hoist).map(e => ({
                 id: e.id,
                 label: e.name
@@ -46,11 +45,11 @@ function A(e, t) {
                 } = e;
                 return {
                     label: n,
-                    userIds: m?.[t]?.userIds ?? [],
+                    userIds: _?.[t]?.userIds ?? [],
                     id: t,
                     roleId: t
                 }
             })
-        }, [n, m, A, _]);
-    return null != m ? g : h
+        }, [n, _, A, m]);
+    return null != _ ? g : h
 }

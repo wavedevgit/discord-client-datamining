@@ -1,6 +1,6 @@
 /** chunk id: 758378 params = (module,exports,require) **/
 n.d(t, {
-    J: () => g
+    J: () => _
 });
 var i = n(627968),
     s = n(64700),
@@ -12,16 +12,16 @@ var i = n(627968),
     c = n(975571),
     u = n(652215),
     m = n(985018),
-    _ = n(595241);
+    g = n(595241);
 
-function g() {
-    let [e, t] = s.useState(!1), [n, g] = s.useState(() => (0, o.TC)()), x = (0, l.bG)([r.Ay], () => r.Ay.getSystemServiceStatus("input-service")), A = s.useCallback(async () => {
-        t(!0), n ? await (0, o.z8)("windows-settings") : await (0, o.sL)("windows-settings"), t(!1), g((0, o.TC)())
-    }, [n]), h = "running" === x.state;
+function _() {
+    let [e, t] = s.useState(!1), [n, _] = s.useState(() => (0, o.TC)()), A = (0, l.bG)([r.Ay], () => r.Ay.getSystemServiceStatus("input-service")), x = s.useCallback(async () => {
+        t(!0), n ? await (0, o.z8)("windows-settings") : await (0, o.sL)("windows-settings"), t(!1), _((0, o.TC)())
+    }, [n]), h = "running" === A.state;
     return (0, i.jsxs)("div", {
-        className: _.q,
+        className: g.q,
         children: [(0, i.jsxs)("div", {
-            className: _.L,
+            className: g.L,
             children: [(0, i.jsx)(a.Text, {
                 variant: "text-md/medium",
                 color: "text-strong",
@@ -59,13 +59,13 @@ function g() {
                             default:
                                 (0, d.xb)(e.state)
                         }
-                    }(x)
+                    }(A)
                 })
             }) : null]
         }), (0, i.jsx)(a.Button, {
             variant: n ? "critical-secondary" : "primary",
             loading: e,
-            onClick: A,
+            onClick: x,
             text: n ? m.intl.string(m.t.pAwbdL) : m.intl.string(m.t["1iI46O"])
         })]
     })

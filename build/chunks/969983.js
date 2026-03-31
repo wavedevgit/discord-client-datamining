@@ -1,7 +1,6 @@
 /** chunk id: 969983 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
-    J: () => s
+    J: () => l
 });
 let i = (0, n(945810).mj)({
     name: "2026-03-runescape-game-servers",
@@ -16,7 +15,7 @@ let i = (0, n(945810).mj)({
     }
 });
 
-function s(e) {
+function l(e) {
     return i.useConfig({
         location: e
     }).enabled

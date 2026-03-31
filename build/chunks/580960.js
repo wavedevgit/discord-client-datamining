@@ -1,12 +1,11 @@
 /** chunk id: 580960 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
     A: () => f
 });
 var i = n(627968);
 n(64700);
-var s = n(397927),
-    l = n(73153),
+var l = n(397927),
+    s = n(73153),
     a = n(272355),
     r = n(793574),
     o = n(532794),
@@ -15,30 +14,30 @@ var s = n(397927),
     u = n(816733),
     h = n(927578),
     A = n(882442),
-    m = n(869968),
-    _ = n(694080),
+    _ = n(869968),
+    m = n(694080),
     g = n(70730);
 class p extends a.A {
     _premiumPaymentModalCloseResolve = null;
     _premiumPaymentModalCloseReject = null;
     _initialize() {
-        __OVERLAY__ ? l.h.subscribe("PREMIUM_PAYMENT_MODAL_OPEN", this._handlePremiumPaymentModalOpen) : (l.h.subscribe("PREMIUM_PAYMENT_MODAL_CLOSE", this._handlePremiumPaymentModalClose), l.h.subscribe("MESSAGE_LENGTH_UPSELL", this.handleMessageLengthUpsell), l.h.subscribe("POST_CONNECTION_OPEN", this._maybeFetchPremiumOffer), l.h.subscribe("POST_CONNECTION_OPEN", this._maybeFetchCheckoutRecovery), l.h.subscribe("POST_CONNECTION_OPEN", this._maybeFetchUserAffinities))
+        __OVERLAY__ ? s.h.subscribe("PREMIUM_PAYMENT_MODAL_OPEN", this._handlePremiumPaymentModalOpen) : (s.h.subscribe("PREMIUM_PAYMENT_MODAL_CLOSE", this._handlePremiumPaymentModalClose), s.h.subscribe("MESSAGE_LENGTH_UPSELL", this.handleMessageLengthUpsell), s.h.subscribe("POST_CONNECTION_OPEN", this._maybeFetchPremiumOffer), s.h.subscribe("POST_CONNECTION_OPEN", this._maybeFetchCheckoutRecovery), s.h.subscribe("POST_CONNECTION_OPEN", this._maybeFetchUserAffinities))
     }
     _terminate() {
-        __OVERLAY__ ? l.h.unsubscribe("PREMIUM_PAYMENT_MODAL_OPEN", this._handlePremiumPaymentModalOpen) : (l.h.unsubscribe("PREMIUM_PAYMENT_MODAL_CLOSE", this._handlePremiumPaymentModalClose), l.h.unsubscribe("MESSAGE_LENGTH_UPSELL", this.handleMessageLengthUpsell), l.h.unsubscribe("POST_CONNECTION_OPEN", this._maybeFetchPremiumOffer), l.h.unsubscribe("POST_CONNECTION_OPEN", this._maybeFetchCheckoutRecovery), l.h.unsubscribe("POST_CONNECTION_OPEN", this._maybeFetchUserAffinities))
+        __OVERLAY__ ? s.h.unsubscribe("PREMIUM_PAYMENT_MODAL_OPEN", this._handlePremiumPaymentModalOpen) : (s.h.unsubscribe("PREMIUM_PAYMENT_MODAL_CLOSE", this._handlePremiumPaymentModalClose), s.h.unsubscribe("MESSAGE_LENGTH_UPSELL", this.handleMessageLengthUpsell), s.h.unsubscribe("POST_CONNECTION_OPEN", this._maybeFetchPremiumOffer), s.h.unsubscribe("POST_CONNECTION_OPEN", this._maybeFetchCheckoutRecovery), s.h.unsubscribe("POST_CONNECTION_OPEN", this._maybeFetchUserAffinities))
     }
     handleMessageLengthUpsell(e) {
         let {
             channel: t,
-            content: l
+            content: s
         } = e;
-        (0, s.mMO)(async () => {
+        (0, l.mMO)(async () => {
             let {
                 default: e
             } = await n.e("76725").then(n.bind(n, 798612));
             return n => (0, i.jsx)(e, {
                 channel: t,
-                content: l,
+                content: s,
                 ...n
             })
         })
@@ -47,15 +46,15 @@ class p extends a.A {
         let e = d.default.getCurrentUser();
         if (null != e && e.verified) {
             let t = (u.A.canFractionalPremiumUserUseOffer() || !(0, h.TW)(e)) && !u.A.isFetchingOffer();
-            await (0, _._D)("PremiumManager", t)
+            await (0, m._D)("PremiumManager", t)
         }
-        l.h.dispatch({
+        s.h.dispatch({
             type: "PREMIUM_MARKETING_DATA_READY"
         })
     };
     _maybeFetchCheckoutRecovery = async () => {
         let e = d.default.getCurrentUser();
-        null != e && e.verified && !(0, h.TW)(e) && m.A.shouldFetchCheckoutRecovery() && await (0, A.c)()
+        null != e && e.verified && !(0, h.TW)(e) && _.A.shouldFetchCheckoutRecovery() && await (0, A.c)()
     };
     _maybeFetchUserAffinities = () => {
         let {
@@ -70,7 +69,7 @@ class p extends a.A {
             ...e,
             analyticsLocations: [r.A.OVERLAY],
             onClose: e => {
-                l.h.dispatch({
+                s.h.dispatch({
                     type: "PREMIUM_PAYMENT_MODAL_CLOSE",
                     didSucceed: e
                 })
@@ -100,15 +99,15 @@ class p extends a.A {
             initialPlanId: t,
             subscriptionTier: n,
             followupSKUInfo: i,
-            analyticsObject: s
+            analyticsObject: l
         } = e ?? {};
         return new Promise((e, a) => {
-            this._premiumPaymentModalCloseResolve = e, this._premiumPaymentModalCloseReject = a, l.h.dispatch({
+            this._premiumPaymentModalCloseResolve = e, this._premiumPaymentModalCloseReject = a, s.h.dispatch({
                 type: "PREMIUM_PAYMENT_MODAL_OPEN",
                 initialPlanId: t,
                 subscriptionTier: n,
                 followupSKUInfo: i,
-                analyticsObject: s
+                analyticsObject: l
             })
         })
     }

@@ -17,33 +17,33 @@ function _(e) {
         guild: t,
         analyticsLocation: n,
         analyticsLocations: _,
-        closeLayer: m,
-        variant: A = "expressive"
-    } = e, [E, I] = l.useState(!1), {
-        analyticsLocations: T
-    } = (0, s.Ay)(_ ?? []), f = (0, a.bG)([o.default], () => o.default.getCurrentUser()), N = f?.isPremiumGroupMember();
-    async function g() {
-        I(!0), await (0, c.g)({
-            analyticsLocations: T,
+        closeLayer: A,
+        variant: m = "expressive"
+    } = e, [E, T] = l.useState(!1), {
+        analyticsLocations: I
+    } = (0, s.Ay)(_ ?? []), N = (0, a.bG)([o.default], () => o.default.getCurrentUser()), g = N?.isPremiumGroupMember();
+    async function f() {
+        T(!0), await (0, c.g)({
+            analyticsLocations: I,
             analyticsLocation: {
                 object: d.ZSU.BUTTON_CTA,
                 objectType: d.AnalyticsObjectTypes.BUY,
                 ...n
             },
             guild: t,
-            closeLayer: m,
+            closeLayer: A,
             onClose: () => {
-                I(!1)
+                T(!1)
             }
         })
     }
     return (0, i.jsx)(r.Button, {
-        variant: A,
+        variant: m,
         size: "md",
         icon: r._Jp,
         text: u.intl.string(u.t.gKmQ1G),
-        onClick: g,
+        onClick: f,
         loading: E,
-        disabled: N
+        disabled: g
     })
 }

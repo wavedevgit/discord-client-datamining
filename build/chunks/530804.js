@@ -13,14 +13,14 @@ var n = i(64700),
     d = i(961350),
     u = i(734057),
     c = i(696451),
-    A = i(584569),
-    m = i(383501),
+    m = i(584569),
+    A = i(383501),
     h = i(287809),
     p = i(977997),
     g = i(403362);
 
 function f(t, e) {
-    let i = (0, r.bG)([A.A, m.A], () => t === m.A.getChannelId() ? A.A.getDesyncedVoiceStates() : null),
+    let i = (0, r.bG)([m.A, A.A], () => t === A.A.getChannelId() ? m.A.getDesyncedVoiceStates() : null),
         s = (0, r.yK)([a.A], () => null == t ? [] : [...a.A.getGuildRingingUsers(t)]),
         d = (0, r.yK)([h.default], () => s.map(t => h.default.getUser(t)).filter(g.Vq)),
         p = (0, r.bG)([u.A], () => u.A.getBasicChannel(t)),
@@ -56,7 +56,7 @@ function f(t, e) {
 }
 
 function T(t, e) {
-    let i = (0, r.bG)([A.A, m.A], () => t === m.A.getChannelId() ? A.A.getDesyncedParticipants() : null);
+    let i = (0, r.bG)([m.A, A.A], () => t === A.A.getChannelId() ? m.A.getDesyncedParticipants() : null);
     return n.useMemo(() => (function(t, e) {
         if (null == t || 0 === t.length) return e;
         let i = [...e];
@@ -68,15 +68,15 @@ function T(t, e) {
 
 function S(t, e) {
     let i = (0, r.bG)([d.default], () => d.default.getId() === e),
-        l = (0, r.bG)([m.A], () => m.A.getChannelId()),
+        l = (0, r.bG)([A.A], () => A.A.getChannelId()),
         s = n.useRef(null),
         [a, o] = n.useState(!1),
         [u, c] = n.useState(!1),
-        A = (0, r.bG)([m.A, p.A], () => null != e && null != t && m.A.getChannelId() === t && null != p.A.isInChannel(t, e) && m.A.isUserConnected(e)),
-        h = (0, r.bG)([m.A, p.A], () => null != e && null != t && m.A.getChannelId() === t && null != p.A.isInChannel(t, e) && !m.A.isUserConnected(e));
+        m = (0, r.bG)([A.A, p.A], () => null != e && null != t && A.A.getChannelId() === t && null != p.A.isInChannel(t, e) && A.A.isUserConnected(e)),
+        h = (0, r.bG)([A.A, p.A], () => null != e && null != t && A.A.getChannelId() === t && null != p.A.isInChannel(t, e) && !A.A.isUserConnected(e));
     return n.useEffect(() => {
-        A && c(!0)
-    }, [A]), n.useEffect(() => {
+        m && c(!0)
+    }, [m]), n.useEffect(() => {
         l !== t && c(!1)
     }, [t, l]), n.useEffect(() => (h && null == s.current ? s.current = setTimeout(() => {
         s.current = null, o(!0)

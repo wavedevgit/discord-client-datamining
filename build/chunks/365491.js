@@ -1,6 +1,6 @@
 /** chunk id: 365491 params = (module,exports,require) **/
 s.d(t, {
-    S: () => f,
+    S: () => h,
     v: () => A
 });
 var r = s(64700),
@@ -185,7 +185,7 @@ let d = {
             })
         }
     }))),
-    h = e => {
+    f = e => {
         let {
             itemTypeFilters: t,
             colorFilters: s,
@@ -208,7 +208,7 @@ let d = {
             search: "" !== n ? n : void 0
         }
     },
-    f = () => {
+    h = () => {
         let {
             onSetResponse: e,
             setSearchError: t,
@@ -235,8 +235,8 @@ let d = {
                 };
                 0 !== r.limit && l()
             };
-            r(h(A.getState()));
-            let l = A.subscribe(h, r, {
+            r(f(A.getState()));
+            let l = A.subscribe(f, r, {
                     equalityFn: (e, t) => JSON.stringify(e) === JSON.stringify(t)
                 }),
                 a = A.subscribe(e => e.hasFilters(), (e, t) => {

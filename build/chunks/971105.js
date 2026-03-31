@@ -12,20 +12,20 @@ var i = n(627968),
     c = n(311907),
     u = n(397927),
     m = n(73153),
-    _ = n(384904),
-    g = n(661439),
-    x = n(73825),
-    A = n(928039),
+    g = n(384904),
+    _ = n(661439),
+    A = n(73825),
+    x = n(928039),
     h = n(235986),
     p = n(39190),
     T = n(933392),
     f = n(97352),
-    S = n(166403),
-    E = n(927578),
+    E = n(166403),
+    S = n(927578),
     b = n(61509),
     C = n(652215),
-    v = n(788868),
-    N = n(818348),
+    N = n(788868),
+    v = n(818348),
     I = n(985018),
     j = n(963420),
     y = n(464170);
@@ -36,7 +36,7 @@ function O(e) {
         locale: n,
         compactMode: l,
         numPages: r
-    } = e, o = s.useRef(null), [c, m] = s.useState(0), [g, x] = s.useState(null), h = t.slice(10 * c, (c + 1) * 10);
+    } = e, o = s.useRef(null), [c, m] = s.useState(0), [_, A] = s.useState(null), h = t.slice(10 * c, (c + 1) * 10);
     s.useEffect(() => {
         o.current?.scrollTo({
             to: 0
@@ -45,9 +45,9 @@ function O(e) {
     let T = s.useCallback(e => {
             m(e);
             let n = t[t.length - 1].id;
-            e >= r - 2 && g !== n && ((0, _.CK)(10, n), x(n))
-        }, [t, r, g]),
-        f = (0, A.A)("billing-history", o);
+            e >= r - 2 && _ !== n && ((0, g.CK)(10, n), A(n))
+        }, [t, r, _]),
+        f = (0, x.A)("billing-history", o);
     return (0, i.jsx)(d.hD, {
         navigator: f,
         children: (0, i.jsx)(d.PR, {
@@ -90,7 +90,7 @@ class R extends s.PureComponent {
     }
     componentDidMount() {
         m.h.wait(() => {
-            (0, g.X)(), (0, _.CK)(30)
+            (0, _.X)(), (0, g.CK)(30)
         })
     }
     renderPremiumExternalSubscription(e) {
@@ -99,13 +99,13 @@ class R extends s.PureComponent {
             children: [(0, i.jsx)("div", {
                 className: j.BF,
                 children: I.intl.format(I.t["6mIX6s"], {
-                    paymentGatewayName: N.qm[e.paymentGateway]
+                    paymentGatewayName: v.qm[e.paymentGateway]
                 })
             }), (0, i.jsx)("div", {
                 className: j.Q2,
                 children: I.intl.format(I.t.eG0uZB, {
-                    paymentGatewayName: N.qm[e.paymentGateway],
-                    billingHistoryLink: (0, E.tW)(e.paymentGateway, "BILLING_HISTORY")
+                    paymentGatewayName: v.qm[e.paymentGateway],
+                    billingHistoryLink: (0, S.tW)(e.paymentGateway, "BILLING_HISTORY")
                 })
             })]
         })
@@ -150,12 +150,12 @@ class R extends s.PureComponent {
 function P(e) {
     let t = e.skuId,
         n = e.subscription?.items[0].planId;
-    return !(null == t || null == n || Object.values(v.pe).includes(t) || (0, E.ys)(n))
+    return !(null == t || null == n || Object.values(N.pe).includes(t) || (0, S.ys)(n))
 }
 
 function L(e) {
     let t = (0, c.bG)([T.A], () => T.A.getPayments()),
-        n = (0, c.bG)([S.A], () => S.A.getPremiumTypeSubscription()),
+        n = (0, c.bG)([E.A], () => E.A.getPremiumTypeSubscription()),
         l = s.useMemo(() => new Set(t.filter(P).map(e => {
             let {
                 subscription: t
@@ -173,7 +173,7 @@ function L(e) {
         d = s.useMemo(() => t.filter(e => e.currency !== C.Yri.DISCORD_ORB), [t]);
     return s.useEffect(() => {
         o() || m.h.wait(() => {
-            a.forEach(e => (0, x.ur)(e, void 0, void 0, !0, void 0))
+            a.forEach(e => (0, A.ur)(e, void 0, void 0, !0, void 0))
         })
     }, [o, a]), (0, i.jsx)(R, {
         ...e,

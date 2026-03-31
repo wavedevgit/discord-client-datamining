@@ -1,5 +1,4 @@
 /** chunk id: 968353 params = (module,exports,require) **/
-"use strict";
 e.exports = {
     zr: "root_b18605",
     y6: "headerToggle_b18605",

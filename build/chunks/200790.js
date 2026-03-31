@@ -1,6 +1,6 @@
 /** chunk id: 200790 params = (module,exports,require) **/
 n.d(t, {
-    A: () => A
+    A: () => x
 });
 var i = n(627968);
 n(64700);
@@ -13,16 +13,16 @@ var s = n(503698),
     c = n(562819),
     u = n(84540),
     m = n(919395),
-    _ = n(128450),
-    g = n(985018),
-    x = n(950087);
+    g = n(128450),
+    _ = n(985018),
+    A = n(950087);
 
-function A(e) {
+function x(e) {
     let {
         user: t,
         guild: n,
         className: s,
-        sectionTitle: A,
+        sectionTitle: x,
         forcedDivider: h = !1,
         withTutorial: p = !1
     } = e, {
@@ -31,17 +31,17 @@ function A(e) {
         user: t,
         guildId: n?.id
     }), {
-        pendingAvatarDecoration: S,
-        errors: E
+        pendingAvatarDecoration: E,
+        errors: S
     } = (0, m.CP)(n?.id), b = p ? r.wLn : a.$n;
-    return (0, i.jsx)(_.A, {
+    return (0, i.jsx)(g.A, {
         className: s,
         forcedDivider: h,
         hasBackground: !0,
-        title: A,
-        errors: E,
+        title: x,
+        errors: S,
         children: (0, i.jsxs)("div", {
-            className: x.NC,
+            className: A.NC,
             children: [(0, i.jsx)(b, {
                 size: a.$n.Sizes.SMALL,
                 onClick: () => {
@@ -51,16 +51,16 @@ function A(e) {
                     })
                 },
                 className: l()({
-                    [x.yj]: p
+                    [A.yj]: p
                 }),
-                children: g.intl.string(g.t.BVcYCx)
-            }), (void 0 === S ? null != f : null != S) && (0, i.jsx)("div", {
+                children: _.intl.string(_.t.BVcYCx)
+            }), (void 0 === E ? null != f : null != E) && (0, i.jsx)("div", {
                 "data-button-hoisted-classname-wrapper": !0,
-                className: x.DT,
+                className: A.DT,
                 children: (0, i.jsx)(r.Button, {
                     variant: "secondary",
                     size: "sm",
-                    text: (0, d.uZ)(t, n) ? g.intl.string(g.t.CHf9iJ) : g.intl.string(g.t.OrokWm),
+                    text: (0, d.uZ)(t, n) ? _.intl.string(_.t.CHf9iJ) : _.intl.string(_.t.OrokWm),
                     onClick: () => {
                         (0, u.p)({
                             guildId: n?.id,

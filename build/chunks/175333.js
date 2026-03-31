@@ -1,17 +1,17 @@
 /** chunk id: 175333 params = (module,exports,require) **/
 "use strict";
-i.d(t, {
+n.d(t, {
     A: () => d
 });
-var n = i(471024),
-    s = i(486020),
-    a = i(684748),
-    l = i(652215),
-    r = i(672396),
-    o = i(985018);
+var i = n(471024),
+    s = n(486020),
+    a = n(684748),
+    l = n(652215),
+    r = n(672396),
+    o = n(985018);
 
 function d(e, t) {
-    let i = e.username,
+    let n = e.username,
         d = o.intl.format(o.t["Yk+uYG"], {
             username: ""
         }),
@@ -27,9 +27,9 @@ function d(e, t) {
         });
     return {
         icon: c,
-        title: i,
+        title: n,
         body: d,
-        hint: e => (0, n.de)(e, o.intl.string(o.t.WRj1Wn)),
+        hint: e => (0, i.de)(e, o.intl.string(o.t.WRj1Wn)),
         onNotificationShow: () => {
             u()
         },

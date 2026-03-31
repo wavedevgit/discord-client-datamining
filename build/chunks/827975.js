@@ -1,12 +1,11 @@
 /** chunk id: 827975 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
-    A: () => m
+    A: () => _
 });
 var i = n(627968);
 n(64700);
-var s = n(837381),
-    l = n(311907),
+var l = n(837381),
+    s = n(311907),
     a = n(397927),
     r = n(919638),
     o = n(71393),
@@ -16,9 +15,9 @@ var s = n(837381),
     h = n(985018),
     A = n(21644);
 
-function m() {
-    let e = (0, l.bG)([r.A, o.A], () => r.A.unavailableGuilds.filter(e => null == o.A.getGuild(e)).length),
-        t = (0, s.Vd)("unavailable-guilds-button");
+function _() {
+    let e = (0, s.bG)([r.A, o.A], () => r.A.unavailableGuilds.filter(e => null == o.A.getGuild(e)).length),
+        t = (0, l.Vd)("unavailable-guilds-button");
     return e <= 0 ? null : (0, i.jsx)(c.c, {
         children: (0, i.jsx)(d.A, {
             text: h.intl.format(h.t["TnH05/"], {

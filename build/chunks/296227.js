@@ -3,9 +3,9 @@ n.d(t, {
     A: () => g
 });
 var i = n(627968),
-    l = n(64700),
-    a = n(503698),
-    s = n.n(a),
+    a = n(64700),
+    l = n(503698),
+    s = n.n(l),
     r = n(397927),
     o = n(442433),
     d = n(928658),
@@ -16,9 +16,9 @@ function g(e) {
     let {
         widget: t,
         userId: n,
-        className: a,
+        className: l,
         menuItems: g
-    } = e, m = l.useRef(null), x = () => {
+    } = e, m = a.useRef(null), x = () => {
         (0, d.GJ)(n, t)
     };
     return (0, i.jsx)(r.YNO, {
@@ -57,7 +57,7 @@ function g(e) {
             ...e,
             innerRef: m,
             "aria-label": c.intl.string(c.t.xpSHSk),
-            className: s()(u.x, a),
+            className: s()(u.x, l),
             children: (0, i.jsx)(r.jNK, {
                 size: "sm",
                 color: "currentColor"

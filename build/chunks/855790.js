@@ -1,40 +1,40 @@
 /** chunk id: 855790 params = (module,exports,require) **/
 "use strict";
-i.d(t, {
+n.d(t, {
     Ay: () => y,
-    q0: () => p
+    q0: () => f
 });
-var n = i(627968),
-    s = i(64700),
-    a = i(503698),
-    l = i.n(a),
-    r = i(133977),
-    o = i.n(r),
-    d = i(990078),
-    c = i(397927),
-    u = i(652215),
-    h = i(644943);
-let _ = u.UVF.DEFAULT,
-    p = 1,
-    f = s.createContext({
-        type: _,
-        opacity: p
+var i = n(627968),
+    s = n(64700),
+    a = n(503698),
+    l = n.n(a),
+    r = n(133977),
+    o = n.n(r),
+    d = n(990078),
+    c = n(397927),
+    u = n(652215),
+    h = n(644943);
+let p = u.UVF.DEFAULT,
+    f = 1,
+    _ = s.createContext({
+        type: p,
+        opacity: f
     }),
-    m = s.createContext(void 0),
+    A = s.createContext(void 0),
     g = e => {
         let {
             children: t,
-            className: i,
+            className: n,
             ...s
         } = e;
-        return (0, n.jsx)(f.Consumer, {
+        return (0, i.jsx)(_.Consumer, {
             children: e => {
                 let {
                     type: a
                 } = e;
-                return (0, n.jsx)(m.Consumer, {
-                    children: e => (0, n.jsx)("div", {
-                        className: l()(h.bar, h[o()(a)], i),
+                return (0, i.jsx)(A.Consumer, {
+                    children: e => (0, i.jsx)("div", {
+                        className: l()(h.bar, h[o()(a)], n),
                         style: e,
                         ...s,
                         children: t
@@ -43,7 +43,7 @@ let _ = u.UVF.DEFAULT,
             }
         })
     };
-class A extends s.PureComponent {
+class m extends s.PureComponent {
     static defaultProps = {
         disableScroll: !1
     };
@@ -51,17 +51,17 @@ class A extends s.PureComponent {
         let {
             disableScroll: e,
             children: t,
-            className: i
+            className: n
         } = this.props;
-        return (0, n.jsx)(m.Consumer, {
-            children: s => (0, n.jsx)(f.Consumer, {
+        return (0, i.jsx)(A.Consumer, {
+            children: s => (0, i.jsx)(_.Consumer, {
                 children: a => {
-                    let r = l()(h.body, h[o()(a.type)], i);
-                    return e ? (0, n.jsx)("div", {
+                    let r = l()(h.body, h[o()(a.type)], n);
+                    return e ? (0, i.jsx)("div", {
                         className: r,
                         style: s,
                         children: t
-                    }) : (0, n.jsx)(c.HOs, {
+                    }) : (0, i.jsx)(c.HOs, {
                         fade: !0,
                         className: r,
                         children: t
@@ -73,23 +73,23 @@ class A extends s.PureComponent {
 }
 let x = e => {
         let {
-            type: t = _,
-            width: i,
+            type: t = p,
+            width: n,
             height: s,
             children: a,
             className: r,
-            opacity: d = p,
+            opacity: d = f,
             onClick: c
         } = e;
-        return (0, n.jsx)(f.Provider, {
+        return (0, i.jsx)(_.Provider, {
             value: {
                 type: t,
                 opacity: d
             },
-            children: (0, n.jsx)("div", {
+            children: (0, i.jsx)("div", {
                 className: l()(h.widget, h[o()(t)], r),
                 style: {
-                    width: i,
+                    width: n,
                     height: s
                 },
                 onClick: c,
@@ -97,17 +97,17 @@ let x = e => {
             })
         })
     },
-    v = e => {
+    E = e => {
         let {
             children: t,
-            className: i,
+            className: n,
             dynamicSize: s = !1
         } = e;
-        return (0, n.jsx)(m.Consumer, {
-            children: e => (0, n.jsx)("div", {
+        return (0, i.jsx)(A.Consumer, {
+            children: e => (0, i.jsx)("div", {
                 className: l()(h.content, {
                     [h.staticSize]: !s
-                }, i),
+                }, n),
                 style: e,
                 children: t
             })
@@ -116,22 +116,22 @@ let x = e => {
 x.Background = e => {
     let {
         children: t,
-        opacityOverride: i
+        opacityOverride: n
     } = e;
     if (null == t) return null;
-    let a = [g, A, v];
-    return (0, n.jsx)(f.Consumer, {
+    let a = [g, m, E];
+    return (0, i.jsx)(_.Consumer, {
         children: e => {
             let {
                 opacity: l
             } = e, r = {
-                backgroundColor: `rgba(54, 57, 63, ${""+(i??l)})`
+                backgroundColor: `rgba(54, 57, 63, ${""+(n??l)})`
             };
             if ("string" == typeof t.type) return s.cloneElement(t, {
                 style: r
             });
             {
-                if (a.includes(t.type)) return (0, n.jsx)(m.Provider, {
+                if (a.includes(t.type)) return (0, i.jsx)(A.Provider, {
                     value: r,
                     children: t
                 });
@@ -140,37 +140,37 @@ x.Background = e => {
             }
         }
     })
-}, x.Body = A, x.Content = v, x.Icon = e => {
+}, x.Body = m, x.Content = E, x.Icon = e => {
     let {
         ref: t,
-        icon: i,
+        icon: n,
         label: s,
         onClick: a,
         tooltipPosition: r = "top",
         isTutorial: o = !1,
         isActive: u,
-        size: _ = 20
+        size: p = 20
     } = e;
-    return (0, n.jsx)(d.m, {
-        __unsupportedReactNodeAsText: o ? (0, n.jsx)("div", {
+    return (0, i.jsx)(d.m, {
+        __unsupportedReactNodeAsText: o ? (0, i.jsx)("div", {
             className: h.tutorialTip,
             children: s
         }) : s,
         "aria-label": s,
         position: r,
         forceOpen: o,
-        children: (0, n.jsx)(c.DUT, {
+        children: (0, i.jsx)(c.DUT, {
             onClick: a,
             className: l()(h.icon, {
                 [h.toggledIconOn]: u
             }),
             innerRef: t,
             "aria-label": s,
-            children: (0, n.jsx)(i, {
+            children: (0, i.jsx)(n, {
                 color: "currentColor",
                 size: "custom",
-                width: _,
-                height: _,
+                width: p,
+                height: p,
                 role: "img"
             })
         })

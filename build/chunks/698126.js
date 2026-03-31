@@ -1,12 +1,11 @@
 /** chunk id: 698126 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
-    A: () => S
+    A: () => T
 });
 var i = n(627968),
-    s = n(64700),
-    l = n(503698),
-    a = n.n(l),
+    l = n(64700),
+    s = n(503698),
+    a = n.n(s),
     r = n(311907),
     o = n(308528),
     c = n(442433),
@@ -14,32 +13,32 @@ var i = n(627968),
     u = n(963027),
     h = n(976860),
     A = n(734057),
-    m = n(71393),
-    _ = n(576705),
+    _ = n(71393),
+    m = n(576705),
     g = n(557534),
     p = n(166444),
     f = n(652215),
     x = n(790782),
     E = n(928409);
 
-function C(e, t) {
+function I(e, t) {
     let n = t.getGuildId();
     if (null == n) throw Error("TextChannel, preloadChannel: Channel does not have a guildId");
     o.A.preload(n, t.id)
 }
-class I extends g.Ay {
+class C extends g.Ay {
     handleContextMenu = e => {
         let {
             channel: t
-        } = this.props, s = m.A.getGuild(t.getGuildId());
-        null != s && (0, c.L3)(e, async () => {
+        } = this.props, l = _.A.getGuild(t.getGuildId());
+        null != l && (0, c.L3)(e, async () => {
             let {
                 default: e
             } = await n.e("15669").then(n.bind(n, 313140));
             return n => (0, i.jsx)(e, {
                 ...n,
                 channel: t,
-                guild: s
+                guild: l
             })
         })
     };
@@ -61,8 +60,8 @@ class I extends g.Ay {
             channel: e,
             selected: t,
             connectChannelDropTarget: n,
-            connectChannelDragSource: s,
-            connectDragPreview: l,
+            connectChannelDragSource: l,
+            connectDragPreview: s,
             canReorderChannel: r
         } = this.props, o = (0, i.jsx)("li", {
             className: a()(this.getClassName(), {
@@ -74,9 +73,9 @@ class I extends g.Ay {
                 channel: e,
                 selected: t,
                 onClick: this.handleClick,
-                onMouseDown: C,
+                onMouseDown: I,
                 onContextMenu: this.handleContextMenu,
-                connectDragPreview: r ? l : null,
+                connectDragPreview: r ? s : null,
                 "aria-label": (0, u.Ay)({
                     channel: e
                 }),
@@ -84,24 +83,24 @@ class I extends g.Ay {
                 children: [this.renderInviteButton(), this.renderEditButton()]
             })
         });
-        return r ? n(s(o)) : o
+        return r ? n(l(o)) : o
     }
 }
-let N = (0, d.a)(I),
-    S = s.memo(function(e) {
+let N = (0, d.a)(C),
+    T = l.memo(function(e) {
         let {
             channel: t,
             guild: n,
-            disableSorting: s
-        } = e, l = (0, r.cf)([A.A, _.A], () => {
+            disableSorting: l
+        } = e, s = (0, r.cf)([A.A, m.A], () => {
             let e = A.A.getChannel(t.parent_id);
             return {
-                canManageChannel: _.A.can(f.xBc.MANAGE_CHANNELS, t),
-                canReorderChannel: !0 !== s && null != e ? _.A.can(f.xBc.MANAGE_CHANNELS, e) : _.A.can(f.xBc.MANAGE_CHANNELS, n)
+                canManageChannel: m.A.can(f.xBc.MANAGE_CHANNELS, t),
+                canReorderChannel: !0 !== l && null != e ? m.A.can(f.xBc.MANAGE_CHANNELS, e) : m.A.can(f.xBc.MANAGE_CHANNELS, n)
             }
         });
         return (0, i.jsx)(N, {
-            ...l,
+            ...s,
             ...e
         })
     })

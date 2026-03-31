@@ -1,11 +1,10 @@
 /** chunk id: 769022 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
-    A: () => S
+    A: () => T
 });
 var i = n(311907),
-    s = n(713402),
-    l = n(73153),
+    l = n(713402),
+    s = n(73153),
     a = n(725613),
     r = n(734057),
     o = n(994500),
@@ -21,7 +20,7 @@ function h(e) {
 }
 let A = "past";
 
-function m(e) {
+function _(e) {
     switch (e.eventType) {
         case d.i.USER_JOINED:
             return ["present-user", e.userId];
@@ -36,7 +35,7 @@ function m(e) {
     }
 }
 
-function _(e) {
+function m(e) {
     return -e.timestamp
 }
 let g = new Map,
@@ -50,7 +49,7 @@ function E(e) {
     null != n ? f.set(e, n.userId) : f.delete(e)
 }
 
-function C(e, t) {
+function I(e, t) {
     let n = h(t),
         i = g.get(e);
     return null != i && (i.set(n, {
@@ -61,20 +60,20 @@ function C(e, t) {
     }), !0)
 }
 
-function I(e, t, n) {
+function C(e, t, n) {
     let i = h(t),
-        s = g.get(e);
-    if (null == s) return !1;
-    let l = s.get(i);
-    if (null == l) return null != n && (s.set(i, {
+        l = g.get(e);
+    if (null == l) return !1;
+    let s = l.get(i);
+    if (null == s) return null != n && (l.set(i, {
         userId: t,
         key: i,
         eventType: d.i.USER_LEFT,
         timestamp: n
     }), !0);
-    if (null != n && (l.eventType === d.i.USER_JOINED || l.timestamp >= n)) return !1;
+    if (null != n && (s.eventType === d.i.USER_JOINED || s.timestamp >= n)) return !1;
     let a = n ?? Date.now();
-    return s.set(i, {
+    return l.set(i, {
         userId: t,
         key: i,
         eventType: d.i.USER_LEFT,
@@ -105,12 +104,12 @@ class N extends i.Ay.Store {
         return p.get(e)
     }
 }
-let S = new N(l.h, {
+let T = new N(s.h, {
     VOICE_STATE_UPDATES: function(e) {
         let t = !1,
             n = new Set,
             i = e.voiceStates.filter(e => null != e.oldChannelId && g.has(e.oldChannelId)),
-            s = e.voiceStates.filter(e => null != e.channelId && g.has(e.channelId));
+            l = e.voiceStates.filter(e => null != e.channelId && g.has(e.channelId));
         return new Set(i.map(e => e.oldChannelId).filter(e => null != e)).forEach(e => {
             var t;
             let n;
@@ -118,15 +117,15 @@ let S = new N(l.h, {
         }), i.forEach(e => {
             let {
                 userId: i,
-                oldChannelId: s
-            } = e, l = null != s ? g.get(s) : null;
-            null != s && null != l && l.values().length > 0 && I(s, i) && (t = !0, n.add(s))
-        }), s.forEach(e => {
+                oldChannelId: l
+            } = e, s = null != l ? g.get(l) : null;
+            null != l && null != s && s.values().length > 0 && C(l, i) && (t = !0, n.add(l))
+        }), l.forEach(e => {
             let {
                 userId: i,
-                channelId: s
+                channelId: l
             } = e;
-            !o.A.isBlockedOrIgnored(i) && null != s && g.has(s) && C(s, i) && (t = !0, n.add(s))
+            !o.A.isBlockedOrIgnored(i) && null != l && g.has(l) && I(l, i) && (t = !0, n.add(l))
         }), n.forEach(E), t
     },
     CHANNEL_DELETE: function(e) {
@@ -139,8 +138,8 @@ let S = new N(l.h, {
         let {
             channelId: t
         } = e;
-        if (!g.has(t)) return g.has(t) || (g.set(t, new s.J(m, _)), Object.values(c.A.getVoiceStatesForChannel(t)).forEach(e => {
-            C(t, e.userId)
+        if (!g.has(t)) return g.has(t) || (g.set(t, new l.J(_, m)), Object.values(c.A.getVoiceStatesForChannel(t)).forEach(e => {
+            I(t, e.userId)
         })), !0;
         return !1
     },
@@ -149,14 +148,14 @@ let S = new N(l.h, {
             channelId: t,
             voiceLeaves: n,
             activities: i
-        } = e, s = g.get(t);
-        if (null == s) return !1;
-        let l = !1;
+        } = e, l = g.get(t);
+        if (null == l) return !1;
+        let s = !1;
         for (let {
                 userId: e,
                 leftAt: i
             }
-            of n) l = I(t, e, i) || l;
+            of n) s = C(t, e, i) || s;
         let a = new Set(i.map(e => {
             let {
                 userId: t,
@@ -165,30 +164,30 @@ let S = new N(l.h, {
             } = e;
             return u(t, n ?? i)
         }));
-        for (let e of s.values(A)) e.eventType !== d.i.ACTIVITY_ENDED || a.has(e.key) || (l = s.delete(e.key) || l);
+        for (let e of l.values(A)) e.eventType !== d.i.ACTIVITY_ENDED || a.has(e.key) || (s = l.delete(e.key) || s);
         for (let {
                 userId: e,
                 applicationId: n,
-                applicationName: s,
+                applicationName: l,
                 endedAt: a
             }
-            of i) l = function(e, t, n, i, s) {
-            let l = n ?? i;
-            if (null == l) return !1;
+            of i) s = function(e, t, n, i, l) {
+            let s = n ?? i;
+            if (null == s) return !1;
             let a = g.get(e);
             if (null == a) return !1;
-            let r = u(t, l);
+            let r = u(t, s);
             return a.set(r, {
                 userId: t,
                 key: r,
-                timestamp: s,
+                timestamp: l,
                 applicationId: n,
                 applicationName: i,
                 activityType: "PLAYED_GAME",
                 eventType: d.i.ACTIVITY_ENDED
             }), !0
-        }(t, e, n, s, a) || l;
-        return l && E(t), l
+        }(t, e, n, l, a) || s;
+        return s && E(t), s
     },
     VOICE_CHANNEL_HISTORY_UPDATE_LAST_FETCH_TIME: function(e) {
         let {

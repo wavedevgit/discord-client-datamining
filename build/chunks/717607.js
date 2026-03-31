@@ -1,12 +1,11 @@
 /** chunk id: 717607 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
     A: () => u,
     R: () => d
 });
 var i = n(627968),
-    s = n(64700),
-    l = n(158954),
+    l = n(64700),
+    s = n(158954),
     a = n(308528),
     r = n(607272),
     o = n(985018),
@@ -15,16 +14,16 @@ var i = n(627968),
 function d(e) {
     let {
         userId: t
-    } = e, n = s.useCallback(e => {
+    } = e, n = l.useCallback(e => {
         e.stopPropagation(), a.A.openPrivateChannel({
             recipientIds: [t]
         })
     }, [t]);
     return (0, i.jsx)("div", {
         className: c.Ze,
-        children: (0, i.jsx)(l.e2v, {
+        children: (0, i.jsx)(s.e2v, {
             size: "sm",
-            children: (0, i.jsx)(l.$nd, {
+            children: (0, i.jsx)(s.$nd, {
                 variant: "secondary",
                 onClick: n,
                 text: o.intl.string(o.t["g33r/P"])
@@ -37,7 +36,7 @@ function u(e) {
     let {
         userId: t,
         applicationId: n
-    } = e, [a, d] = s.useState(!1), [u, h] = s.useState(!1), A = s.useCallback(async e => {
+    } = e, [a, d] = l.useState(!1), [u, h] = l.useState(!1), A = l.useCallback(async e => {
         e.stopPropagation(), h(!0);
         try {
             await r.A.cancelFriendRequest({
@@ -48,7 +47,7 @@ function u(e) {
         } finally {
             h(!1)
         }
-    }, [n, t]), m = s.useCallback(async e => {
+    }, [n, t]), _ = l.useCallback(async e => {
         e.stopPropagation(), d(!0);
         try {
             await r.A.maybeConfirmFriendRequestAccept({
@@ -62,15 +61,15 @@ function u(e) {
     }, [n, t]);
     return (0, i.jsx)("div", {
         className: c.Ze,
-        children: (0, i.jsxs)(l.e2v, {
+        children: (0, i.jsxs)(s.e2v, {
             size: "sm",
-            children: [(0, i.jsx)(l.$nd, {
+            children: [(0, i.jsx)(s.$nd, {
                 variant: "active",
-                onClick: m,
+                onClick: _,
                 text: o.intl.string(o.t.Zcibdf),
                 loading: a,
                 disabled: u
-            }), (0, i.jsx)(l.$nd, {
+            }), (0, i.jsx)(s.$nd, {
                 variant: "secondary",
                 onClick: A,
                 text: o.intl.string(o.t.xuio0C),

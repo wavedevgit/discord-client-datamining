@@ -1,35 +1,35 @@
 /** chunk id: 51943 params = (module,exports,require) **/
 "use strict";
-i.d(t, {
-    A: () => m
+n.d(t, {
+    A: () => A
 });
-var n = i(627968);
-i(64700);
-var s = i(827734),
-    a = i(3026),
-    l = i(582754),
-    r = i(397927),
-    o = i(442433),
-    d = i(263063),
-    c = i(562153),
-    u = i(939496),
-    h = i(518477),
-    _ = i(996988),
-    p = i(752318);
-let f = (0, r.FT9)(r._3J.SIZE_16);
+var i = n(627968);
+n(64700);
+var s = n(827734),
+    a = n(3026),
+    l = n(582754),
+    r = n(397927),
+    o = n(442433),
+    d = n(263063),
+    c = n(562153),
+    u = n(939496),
+    h = n(518477),
+    p = n(996988),
+    f = n(752318);
+let _ = (0, r.FT9)(r._3J.SIZE_16);
 
-function m(e) {
+function A(e) {
     let {
         user: t,
-        guild: m,
+        guild: A,
         nick: g,
-        onSelect: A
+        onSelect: m
     } = e, {
         theme: x,
-        themeType: v
-    } = (0, u.E)(), y = t.hasAvatarForGuild(m.id);
-    return (0, n.jsxs)(r.DUT, {
-        focusProps: v === _.d.MODAL_V2 ? {
+        themeType: E
+    } = (0, u.E)(), y = t.hasAvatarForGuild(A.id);
+    return (0, i.jsxs)(r.DUT, {
+        focusProps: E === p.d.MODAL_V2 ? {
             offset: {
                 top: 4,
                 right: 4,
@@ -40,51 +40,51 @@ function m(e) {
                 right: 8
             }
         },
-        className: p.nM,
-        onClick: A,
+        className: f.nM,
+        onClick: m,
         onContextMenu: e => {
             (0, o.L3)(e, async () => {
                 let {
                     default: e
-                } = await Promise.all([i.e("57174"), i.e("49681"), i.e("3795"), i.e("14138"), i.e("8555"), i.e("49924"), i.e("36671"), i.e("68859"), i.e("40396"), i.e("13088"), i.e("48330"), i.e("92414"), i.e("94857"), i.e("48840"), i.e("49559"), i.e("43600"), i.e("42006"), i.e("37372"), i.e("68587"), i.e("35664"), i.e("84609"), i.e("28136"), i.e("52082"), i.e("63379"), i.e("56026"), i.e("16301"), i.e("22191"), i.e("25961"), i.e("8018"), i.e("91872"), i.e("35894"), i.e("50796"), i.e("53662"), i.e("24202"), i.e("41606"), i.e("8458"), i.e("11810"), i.e("34656"), i.e("35451"), i.e("68890"), i.e("30453"), i.e("17537"), i.e("49862"), i.e("74253"), i.e("56475"), i.e("59541"), i.e("54469"), i.e("3243")]).then(i.bind(i, 544676));
-                return t => (0, n.jsx)(e, {
+                } = await Promise.all([n.e("57174"), n.e("49681"), n.e("11478"), n.e("14138"), n.e("49924"), n.e("8555"), n.e("36671"), n.e("40396"), n.e("90365"), n.e("68859"), n.e("43600"), n.e("48330"), n.e("92414"), n.e("94857"), n.e("68587"), n.e("48840"), n.e("49559"), n.e("42006"), n.e("37372"), n.e("28136"), n.e("35664"), n.e("63379"), n.e("56026"), n.e("16301"), n.e("22191"), n.e("25961"), n.e("84609"), n.e("8018"), n.e("5813"), n.e("79463"), n.e("91872"), n.e("35894"), n.e("50796"), n.e("53662"), n.e("41606"), n.e("8458"), n.e("11810"), n.e("34656"), n.e("68890"), n.e("30453"), n.e("17537"), n.e("49862"), n.e("37207"), n.e("56475"), n.e("54816"), n.e("59541"), n.e("54469"), n.e("29350")]).then(n.bind(n, 544676));
+                return t => (0, i.jsx)(e, {
                     ...t,
-                    guild: m
+                    guild: A
                 })
             })
         },
-        children: [(0, n.jsx)(d.Ay, {
+        children: [(0, i.jsx)(d.Ay, {
             tabIndex: -1,
-            guild: m,
+            guild: A,
             showBadge: !0,
-            className: null != m.icon ? p.Kk : p.lN,
+            className: null != A.icon ? f.Kk : f.lN,
             badgeStrokeColor: (0, l.Mw)(x) ? s.A.unsafe_rawColors.PRIMARY_600.css : s.A.unsafe_rawColors.WHITE.css,
             badgeTooltipColor: r.oMw.PRIMARY,
             badgeTooltipDelay: h.In,
             size: d.Ay.Sizes.MEDIUM,
             active: !0
-        }), (0, n.jsxs)("div", {
-            className: p.zH,
-            children: [(0, n.jsx)("div", {
-                className: p.UU,
-                children: m.name
-            }), y && (0, n.jsxs)("div", {
-                className: p.C9,
-                children: [(0, n.jsx)(r.euF, {
-                    src: t.getAvatarURL(m.id, f),
+        }), (0, i.jsxs)("div", {
+            className: f.zH,
+            children: [(0, i.jsx)("div", {
+                className: f.UU,
+                children: A.name
+            }), y && (0, i.jsxs)("div", {
+                className: f.C9,
+                children: [(0, i.jsx)(r.euF, {
+                    src: t.getAvatarURL(A.id, _),
                     size: r._3J.SIZE_16,
-                    className: p.my,
+                    className: f.my,
                     "aria-hidden": !0
-                }), (0, n.jsx)(r.Text, {
+                }), (0, i.jsx)(r.Text, {
                     variant: "text-xs/medium",
-                    children: (0, n.jsx)(a.A, {
+                    children: (0, i.jsx)(a.A, {
                         delay: h.In,
-                        children: g ?? c.Ay.getName(m.id, void 0, t)
+                        children: g ?? c.Ay.getName(A.id, void 0, t)
                     })
                 })]
-            }), !y && null != g && (0, n.jsx)(r.Text, {
+            }), !y && null != g && (0, i.jsx)(r.Text, {
                 variant: "text-xs/medium",
-                children: (0, n.jsx)(a.A, {
+                children: (0, i.jsx)(a.A, {
                     delay: h.In,
                     children: g
                 })

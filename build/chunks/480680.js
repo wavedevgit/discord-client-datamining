@@ -1,12 +1,11 @@
 /** chunk id: 480680 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
-    A: () => w
+    A: () => k
 });
 var i = n(627968),
-    s = n(64700),
-    l = n(503698),
-    a = n.n(l),
+    l = n(64700),
+    s = n(503698),
+    a = n.n(s),
     r = n(382222),
     o = n(311907),
     c = n(827734);
@@ -16,29 +15,29 @@ var d = n(397927),
     h = n(334738),
     A = n(964486);
 n(793574), n(688810);
-var m = n(952790),
-    _ = n(85109),
+var _ = n(952790),
+    m = n(85109),
     g = n(734057),
     p = n(71393),
     f = n(320501),
     x = n(222823),
     E = n(661191),
-    C = n(851109),
-    I = n(706341),
+    I = n(851109),
+    C = n(706341),
     N = n(932883),
-    S = n(599486),
-    b = n(320697),
-    T = n(394953),
-    v = n(628325),
-    y = n(524628),
+    T = n(599486),
+    S = n(320697),
+    b = n(394953),
+    y = n(628325),
+    v = n(524628),
     j = n(81435),
     R = n(313452),
     O = n(849077),
     L = n(652215),
     M = n(985018),
     D = n(674823);
-let G = [],
-    U = {
+let U = [],
+    G = {
         controller: new r.Controller({
             value: 1,
             immediate: !0
@@ -56,93 +55,93 @@ function P(e) {
     let {
         includePanelSpacing: t
     } = e, n = (0, N.op)(), {
-        selectedFilter: l
-    } = (0, S.A)(), r = (0, o.bG)([b.A], () => b.A.oldestDisplayedMessageId), c = (0, o.yK)([b.A], () => b.A.getInboxMessages()), v = (0, o.yK)([x.Ay, p.A, b.A], () => c.filter(e => !(0, T.EJ)({
+        selectedFilter: s
+    } = (0, T.A)(), r = (0, o.bG)([S.A], () => S.A.oldestDisplayedMessageId), c = (0, o.yK)([S.A], () => S.A.getInboxMessages()), y = (0, o.yK)([x.Ay, p.A, S.A], () => c.filter(e => !(0, b.EJ)({
         messageId: e.id,
         channelId: e.channelId,
         guildId: e.guildId,
         ReadStateStore_: x.Ay,
         GuildStore_: p.A
-    }) && !(0, T.zo)(e, b.A.selectedItemInfo))), y = (0, o.yK)([x.Ay, p.A, b.A], () => c.filter(e => (0, T.EJ)({
+    }) && !(0, b.zo)(e, S.A.selectedItemInfo))), v = (0, o.yK)([x.Ay, p.A, S.A], () => c.filter(e => (0, b.EJ)({
         messageId: e.id,
         channelId: e.channelId,
         guildId: e.guildId,
         ReadStateStore_: x.Ay,
         GuildStore_: p.A
-    }) || (0, T.zo)(e, b.A.selectedItemInfo))), j = s.useCallback(e => {
-        l !== O.Io.BOOKMARKS && I.A.loadMoreInbox({
+    }) || (0, b.zo)(e, S.A.selectedItemInfo))), j = l.useCallback(e => {
+        s !== O.Io.BOOKMARKS && C.A.loadMoreInbox({
             viewId: n,
             loadingTrigger: e
         })
-    }, [l, n]), {
+    }, [s, n]), {
         hasLoadedEver: M,
         canLoadMore: P
-    } = (0, o.cf)([b.A], () => ({
-        hasLoadedEver: b.A.hasLoadedEver,
-        canLoadMore: b.A.canLoadMore({})
+    } = (0, o.cf)([S.A], () => ({
+        hasLoadedEver: S.A.hasLoadedEver,
+        canLoadMore: S.A.canLoadMore({})
     }));
-    s.useEffect(() => {
+    l.useEffect(() => {
             P && !M && j(O.VA.ON_OPEN)
         }, [P, M, j]),
         function(e) {
             let {
                 unreadChannelIds: t
-            } = (0, T.U4)();
-            s.useEffect(() => {
+            } = (0, b.U4)();
+            l.useEffect(() => {
                 null != e && t.forEach(e => {
                     let t = f.A.getMessages(e),
                         n = t.last()?.id,
                         i = x.Ay.ackMessageId(e),
-                        s = t.hasPresent() && t.ready && !t.cached;
-                    null != n && null != i && s && E.default.compare(i, n) >= 0 && h.ack(e, {
+                        l = t.hasPresent() && t.ready && !t.cached;
+                    null != n && null != i && l && E.default.compare(i, n) >= 0 && h.ack(e, {
                         section: L.JJy.NOTIFICATIONS_INBOX,
                         object: L.ZSU.ACK_INBOX_CHANNEL_NO_MESSAGES,
                         objectType: L.AnalyticsObjectTypes.ACK_AUTOMATIC
                     }, !0)
                 })
             }, [e, t])
-        }(M ? y : null);
-    let w = (0, o.yK)([_.A], () => _.A.getSavedMessages()),
-        F = s.useMemo(() => w.flatMap(e => {
+        }(M ? v : null);
+    let k = (0, o.yK)([m.A], () => m.A.getSavedMessages()),
+        F = l.useMemo(() => k.flatMap(e => {
             let {
                 message: t
             } = e;
-            return null == t ? G : [{
+            return null == t ? U : [{
                 id: t.id,
                 channelId: t.channel_id,
                 guildId: g.A.getBasicChannel(t.channel_id)?.guild_id,
                 kind: O.yL.BOOKMARK,
                 message: t
             }]
-        }), [w]),
-        K = k(v, l, r),
-        W = k(y, l, null);
+        }), [k]),
+        K = w(y, s, r),
+        W = w(v, s, null);
     (0, A.Ay)(() => {
         u.h.dispatch({
             type: "NOTIFICATIONS_INBOX_OPEN"
         });
-        let e = (0, C.GE)({
+        let e = (0, I.GE)({
                 location: "NotificationsInboxSidebar"
             }).notificationCenterVariant,
-            t = b.A.getDevOverrides().navOnClick ?? !0;
-        if (e !== C.U5.SIDEBAR || !1 === t) return;
+            t = S.A.getDevOverrides().navOnClick ?? !0;
+        if (e !== I.U5.SIDEBAR || !1 === t) return;
         let {
             message: i,
-            isUnread: s
+            isUnread: l
         } = function(e, t) {
             let n = e[e.length - 1]?.message,
                 i = t[t.length - 1]?.message,
-                s = i ?? n;
-            if (null != s) return {
-                message: s,
+                l = i ?? n;
+            if (null != l) return {
+                message: l,
                 isUnread: null != i
             };
-            let l = b.A.getNotifyingChannelIds();
-            if (null == l || 0 === l.length) return {
+            let s = S.A.getNotifyingChannelIds();
+            if (null == s || 0 === s.length) return {
                 message: null,
                 isUnread: !1
             };
-            let a = l[0],
+            let a = s[0],
                 r = x.Ay.getTrackedAckMessageId(a);
             return null == r ? {
                 message: null,
@@ -155,12 +154,12 @@ function P(e) {
                 isUnread: x.Ay.hasUnread(a) ?? !1
             }
         }(K, W);
-        null != i && I.A.inboxItemClick({
+        null != i && C.A.inboxItemClick({
             message: i,
             channel: {
                 id: i.channel_id
             },
-            isUnread: s,
+            isUnread: l,
             isSidebar: !0,
             track: !1,
             autoTriggeredOnInboxOpen: !0,
@@ -173,39 +172,39 @@ function P(e) {
     });
     let {
         filterStyle: Y
-    } = (0, C.X8)({
+    } = (0, I.X8)({
         location: "NotificationsInboxSidebar"
-    }), z = Y === C.yF.DROPDOWN && l !== O.Io.ALL, q = (0, O.Yw)(l);
+    }), z = Y === I.yF.DROPDOWN && s !== O.Io.ALL, q = (0, O.Yw)(s);
     return (0, i.jsx)("nav", {
         className: a()(D.kL, {
             [D.Yu]: t
         }),
         children: (0, i.jsxs)(d.Fmo, {
             forceLevel: 1,
-            component: (0, i.jsx)(m.Ay, {
+            component: (0, i.jsx)(_.Ay, {
                 hasSubheader: !0,
                 guild: q,
-                ...U
+                ...G
             }),
-            children: [l === O.Io.ALL && (0, i.jsx)(H, {
-                hideBanner: !M || l !== O.Io.ALL
+            children: [s === O.Io.ALL && (0, i.jsx)(H, {
+                hideBanner: !M || s !== O.Io.ALL
             }), z && (0, i.jsx)(d.hKd, {
                 size: 8
             }), (0, i.jsx)(R.A, {
                 className: D.cl,
-                renderMessageGroup: B,
-                messages: l === O.Io.BOOKMARKS ? F : K,
-                unreadMessages: l === O.Io.BOOKMARKS ? [] : W,
+                renderMessageGroup: V,
+                messages: s === O.Io.BOOKMARKS ? F : K,
+                unreadMessages: s === O.Io.BOOKMARKS ? [] : W,
                 listName: "notifications-inbox",
-                renderLoadingState: V,
-                ignoreGrouping: l === O.Io.BOOKMARKS,
+                renderLoadingState: B,
+                ignoreGrouping: s === O.Io.BOOKMARKS,
                 loadMore: j
             })]
         })
     })
 }
 
-function w(e) {
+function k(e) {
     return (0, i.jsx)(N.GM, {
         children: (0, i.jsx)(P, {
             ...e
@@ -213,8 +212,8 @@ function w(e) {
     })
 }
 
-function k(e, t, n) {
-    return s.useMemo(() => 0 === e.length || t === O.Io.BOOKMARKS ? G : e.filter(e => {
+function w(e, t, n) {
+    return l.useMemo(() => 0 === e.length || t === O.Io.BOOKMARKS ? U : e.filter(e => {
         let {
             id: i
         } = e;
@@ -222,11 +221,11 @@ function k(e, t, n) {
     }), [e, t, n])
 }
 
-function V() {
-    return (0, i.jsx)(y.A, {})
+function B() {
+    return (0, i.jsx)(v.A, {})
 }
 
-function B(e, t) {
+function V(e, t) {
     return (0, i.jsx)(j.A, {
         message: e[0],
         groupedMessages: e.slice(1),
@@ -237,7 +236,7 @@ function B(e, t) {
 function H(e) {
     let {
         hideBanner: t
-    } = e, n = (0, v.S)(e => e.shouldHide());
+    } = e, n = (0, y.S)(e => e.shouldHide());
     return (0, i.jsx)("div", {
         className: a()(D.dl, {
             [D.jD]: n || t

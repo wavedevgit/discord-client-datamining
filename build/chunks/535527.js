@@ -1,11 +1,11 @@
 /** chunk id: 535527 params = (module,exports,require) **/
 n.d(t, {
-    K: () => s
+    K: () => a
 });
 var i = n(966597),
-    l = n(203982),
-    r = n(652215);
-let s = {
+    r = n(203982),
+    s = n(652215);
+let a = {
     binds: ["mod+l"],
     comboKeysBindGlobal: !0,
     action() {
@@ -15,6 +15,6 @@ let s = {
         } = i.A.getConfig({
             location: "keybinds"
         });
-        if (e && !t) return l._.dispatch(r.jej.TOGGLE_FOR_LATER), !1
+        if (e && !t) return r._.dispatch(s.jej.TOGGLE_FOR_LATER), !1
     }
 }

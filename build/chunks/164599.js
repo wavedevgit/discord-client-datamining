@@ -1,6 +1,6 @@
 /** chunk id: 164599 params = (module,exports,require) **/
 n.d(t, {
-    A: () => S
+    A: () => E
 });
 var i = n(627968),
     s = n(64700),
@@ -12,56 +12,56 @@ var i = n(627968),
     c = n(617061),
     u = n(84540),
     m = n(954571),
-    _ = n(927578),
-    g = n(919395),
-    x = n(128450),
-    A = n(212168),
+    g = n(927578),
+    _ = n(919395),
+    A = n(128450),
+    x = n(212168),
     h = n(652215),
     p = n(788868),
     T = n(985018),
     f = n(545286);
 
-function S(e) {
+function E(e) {
     let {
         user: t,
         guild: n,
         initialSelectedEffect: l,
-        className: S,
-        sectionTitle: E,
+        className: E,
+        sectionTitle: S,
         forcedDivider: b = !1,
         withTutorial: C = !1,
-        showBorder: v = !1
+        showBorder: N = !1
     } = e, {
-        analyticsLocations: N
-    } = (0, d.Ay)(), I = _.Ay.canUsePremiumProfileCustomization(t), j = (0, g.N2)({
+        analyticsLocations: v
+    } = (0, d.Ay)(), I = g.Ay.canUsePremiumProfileCustomization(t), j = (0, _.N2)({
         user: t,
         guildId: n?.id
     }), {
         pendingProfileEffect: y,
         errors: O
-    } = (0, g.nZ)(n?.id);
+    } = (0, _.nZ)(n?.id);
     s.useEffect(() => {
         I && m.default.track(h.HAw.PREMIUM_UPSELL_VIEWED, {
             type: p.e.PROFILE_EFFECTS_INLINE_SETTINGS,
-            location_stack: N
+            location_stack: v
         })
-    }, [I, N]);
+    }, [I, v]);
     let R = C ? o.wLn : r.$n;
-    return (0, i.jsx)(x.A, {
+    return (0, i.jsx)(A.A, {
         forcedDivider: b,
-        borderType: A.i.PREMIUM,
+        borderType: x.i.PREMIUM,
         hasBackground: !0,
-        title: E,
-        showBorder: v,
+        title: S,
+        showBorder: N,
         errors: O,
-        className: S,
+        className: E,
         children: (0, i.jsxs)("div", {
             className: f.NC,
             children: [(0, i.jsx)(R, {
                 size: r.$n.Sizes.SMALL,
                 onClick: () => {
                     (0, c.W)({
-                        analyticsLocations: N,
+                        analyticsLocations: v,
                         guild: n,
                         initialSelectedEffect: l
                     })

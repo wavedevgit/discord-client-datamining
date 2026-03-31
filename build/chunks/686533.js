@@ -23,13 +23,13 @@ function d(e) {
         hint: c,
         warning: u,
         onClick: m,
-        "aria-label": _,
-        className: g
+        "aria-label": g,
+        className: _
     } = e;
     return (0, i.jsxs)("div", {
-        className: l()(r.HS, g),
+        className: l()(r.HS, _),
         children: [(0, i.jsxs)(a.sqX, {
-            "aria-label": _,
+            "aria-label": g,
             onClick: m,
             children: [null != t && (0, i.jsx)("div", {
                 className: r.x_,

@@ -40,12 +40,12 @@ function E(e) {
                 ...a
             });
         case i.ContentInventoryEntryType.TOP_GAME:
-            return (0, l.jsx)(f, {
+            return (0, l.jsx)(_, {
                 entry: t,
                 ...a
             });
         case i.ContentInventoryEntryType.PLAYED_GAME:
-            return (0, l.jsx)(_, {
+            return (0, l.jsx)(f, {
                 entry: t,
                 ...a
             });
@@ -118,7 +118,7 @@ function I(e) {
     })
 }
 
-function f(e) {
+function _(e) {
     let {
         entry: t,
         children: n,
@@ -136,7 +136,7 @@ function f(e) {
     })
 }
 
-function _(e) {
+function f(e) {
     let {
         entry: t,
         children: n,

@@ -1,7 +1,7 @@
 /** chunk id: 127493 params = (module,exports,require) **/
 n.d(t, {
-    Ct: () => g,
-    oO: () => x
+    Ct: () => _,
+    oO: () => A
 });
 var i = n(627968),
     s = n(64700),
@@ -14,7 +14,7 @@ var i = n(627968),
     u = n(985018),
     m = n(992284);
 
-function _(e) {
+function g(e) {
     let {
         className: t,
         boxLayout: n,
@@ -22,7 +22,7 @@ function _(e) {
         shouldLoadVideo: l,
         isReducedMotion: o,
         startLeftAligned: u = !1,
-        highlightBento: _
+        highlightBento: g
     } = e;
     return (0, i.jsxs)("div", {
         className: a()(m.boxBackdrop, t),
@@ -31,9 +31,9 @@ function _(e) {
             variant: "display-md",
             color: "text-strong",
             children: s
-        }), null != _ && (0, i.jsx)("div", {
+        }), null != g && (0, i.jsx)("div", {
             className: m.highlightBento,
-            children: _
+            children: g
         }), (0, i.jsx)("div", {
             className: m.bentoBoxesGrid,
             children: n.map((e, t) => {
@@ -61,11 +61,11 @@ function _(e) {
         })]
     })
 }
-let g = s.memo(function(e) {
+let _ = s.memo(function(e) {
         let {
             whatsNewBoxes: t
         } = (0, c.Ay)();
-        return (0, o.l)("premium_marketing_bento"), (0, i.jsx)(_, {
+        return (0, o.l)("premium_marketing_bento"), (0, i.jsx)(g, {
             boxLayout: t,
             title: u.intl.string(u.t.LRmNAl),
             startLeftAligned: !0,
@@ -73,11 +73,11 @@ let g = s.memo(function(e) {
             ...e
         })
     }),
-    x = s.memo(function(e) {
+    A = s.memo(function(e) {
         let {
             bestOfBoxes: t
         } = (0, c.Ay)();
-        return (0, i.jsx)(_, {
+        return (0, i.jsx)(g, {
             boxLayout: t,
             title: u.intl.string(u.t.EnzW2H),
             startLeftAligned: !0,

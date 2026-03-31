@@ -1,12 +1,11 @@
 /** chunk id: 801320 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
     A: () => r
 });
 var i = n(627968);
 n(64700);
-var s = n(342494),
-    l = n(985018),
+var l = n(342494),
+    s = n(985018),
     a = n(374313);
 
 function r(e) {
@@ -15,13 +14,13 @@ function r(e) {
         onCTAClick: n,
         targetElementRef: r
     } = e;
-    return (0, i.jsx)(s.AM, {
+    return (0, i.jsx)(l.AM, {
         actions: [{
-            text: l.intl.string(l.t["8+TMEJ"]),
+            text: s.intl.string(s.t["8+TMEJ"]),
             variant: "primary",
             onClick: n
         }],
-        body: l.intl.string(l.t.tP7w6c),
+        body: s.intl.string(s.t.tP7w6c),
         caretConfig: {
             align: "start"
         },
@@ -33,6 +32,6 @@ function r(e) {
         position: "bottom",
         size: "lg",
         targetElementRef: r,
-        title: l.intl.string(l.t.y0cRrO)
+        title: s.intl.string(s.t.y0cRrO)
     })
 }

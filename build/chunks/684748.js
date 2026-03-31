@@ -1,32 +1,32 @@
 /** chunk id: 684748 params = (module,exports,require) **/
 "use strict";
-i.d(t, {
+n.d(t, {
     J: () => c,
     Y: () => d
 });
-var n = i(684013),
-    s = i(532624),
-    a = i(256415),
-    l = i(350535),
-    r = i(652215),
-    o = i(672396);
+var i = n(684013),
+    s = n(532624),
+    a = n(256415),
+    l = n(350535),
+    r = n(652215),
+    o = n(672396);
 
 function d(e, t) {
     return {
         trackView() {
-            let i = a.default.isInstanceLocked() ? r.ThZ.LOCKED_OVERLAY : r.ThZ.UNLOCKED_OVERLAY;
-            n.A.track(r.HAw.NOTIFICATION_VIEWED, {
+            let n = a.default.isInstanceLocked() ? r.ThZ.LOCKED_OVERLAY : r.ThZ.UNLOCKED_OVERLAY;
+            i.A.track(r.HAw.NOTIFICATION_VIEWED, {
                 ...t,
-                location: i
-            }), n.A.notificationEvent(e, o.uj.Viewed)
+                location: n
+            }), i.A.notificationEvent(e, o.uj.Viewed)
         },
-        trackClick(i) {
+        trackClick(n) {
             let s = a.default.isInstanceLocked() ? r.ThZ.LOCKED_OVERLAY : r.ThZ.UNLOCKED_OVERLAY;
-            n.A.track(r.HAw.NOTIFICATION_CLICKED, {
+            i.A.track(r.HAw.NOTIFICATION_CLICKED, {
                 ...t,
                 location: s,
-                action_type: i
-            }), n.A.notificationEvent(e, o.uj.Clicked)
+                action_type: n
+            }), i.A.notificationEvent(e, o.uj.Clicked)
         }
     }
 }

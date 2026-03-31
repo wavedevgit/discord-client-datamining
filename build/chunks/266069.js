@@ -1,12 +1,11 @@
 /** chunk id: 266069 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
-    u: () => _
+    u: () => m
 });
 var i = n(627968),
-    s = n(64700),
-    l = n(503698),
-    a = n.n(l),
+    l = n(64700),
+    s = n(503698),
+    a = n.n(s),
     r = n(311907),
     o = n(827734),
     c = n(435371),
@@ -14,27 +13,27 @@ var i = n(627968),
     u = n(242919),
     h = n(985018),
     A = n(661720),
-    m = n(945375);
+    _ = n(945375);
 
-function _(e) {
+function m(e) {
     let {
         label: t,
         icon: n,
-        setStatus: l,
-        isFavorited: _,
+        setStatus: s,
+        isFavorited: m,
         onFavoriteClick: g
-    } = e, [p, f] = s.useState(!1), x = (0, r.bG)([u.A], () => u.A.getFavoritedStatuses().length >= u.x), E = null != g, C = s.useCallback(e => {
+    } = e, [p, f] = l.useState(!1), x = (0, r.bG)([u.A], () => u.A.getFavoritedStatuses().length >= u.x), E = null != g, I = l.useCallback(e => {
         e.stopPropagation(), g?.()
-    }, [g]), I = _ ? d.Gg5 : d.yA2;
+    }, [g]), C = m ? d.Gg5 : d.yA2;
     return (0, i.jsxs)(d.DUT, {
-        onClick: l,
+        onClick: s,
         onMouseEnter: () => {
             f(!0)
         },
         onMouseLeave: () => {
             f(!1)
         },
-        className: a()(m.item, m.labelContainer, A.kL),
+        className: a()(_.item, _.labelContainer, A.kL),
         children: [(0, i.jsx)("div", {
             className: A.P0,
             children: n
@@ -43,13 +42,13 @@ function _(e) {
             className: A.rv,
             children: t
         }), p && E && (0, i.jsx)(c.m_, {
-            text: x && !_ ? h.intl.string(h.t.YSDH9n) : void 0,
+            text: x && !m ? h.intl.string(h.t.YSDH9n) : void 0,
             children: (0, i.jsx)(d.DUT, {
                 className: a()(A.ff, A.wB),
-                onClick: C,
-                children: (0, i.jsx)(I, {
+                onClick: I,
+                children: (0, i.jsx)(C, {
                     className: A.ut,
-                    color: _ ? o.A.colors.ICON_FEEDBACK_WARNING : "currentColor"
+                    color: m ? o.A.colors.ICON_FEEDBACK_WARNING : "currentColor"
                 })
             })
         })]

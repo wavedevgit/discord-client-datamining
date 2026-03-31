@@ -1,12 +1,11 @@
 /** chunk id: 844262 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
-    A: () => l
+    A: () => s
 });
 var i = n(652215),
-    s = n(985018);
+    l = n(985018);
 
-function l(e) {
+function s(e) {
     let {
         channel: t,
         embeddedApps: n
@@ -14,7 +13,7 @@ function l(e) {
     if (t.type === i.rbe.GUILD_VOICE) {
         if (null != n && n.length > 0) {
             let e = n.map(e => e.application.name);
-            return s.intl.formatToPlainString(s.t.LmYuHT, {
+            return l.intl.formatToPlainString(l.t.LmYuHT, {
                 activeActivities: e.join(", ")
             })
         }

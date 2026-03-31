@@ -1,12 +1,11 @@
 /** chunk id: 790368 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
-    A: () => m
+    A: () => _
 });
 var i = n(627968);
 n(64700);
-var s = n(827734),
-    l = n(990078),
+var l = n(827734),
+    s = n(990078),
     a = n(397927),
     r = n(711950),
     o = n(322387),
@@ -16,11 +15,11 @@ var s = n(827734),
     h = n(985018),
     A = n(857741);
 
-function m(e) {
+function _(e) {
     let {
         closePopout: t
     } = e, n = (0, c.kX)();
-    return (0, i.jsx)(l.m, {
+    return (0, i.jsx)(s.m, {
         asContainer: !0,
         text: h.intl.string(h.t["lMR96+"]),
         children: (0, i.jsxs)(a.DUT, {
@@ -38,7 +37,7 @@ function m(e) {
                 color: "currentColor"
             }), (0, i.jsx)(a.hVq, {
                 count: n,
-                color: s.A.colors.BACKGROUND_MOD_STRONG.css
+                color: l.A.colors.BACKGROUND_MOD_STRONG.css
             })]
         })
     })

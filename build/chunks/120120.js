@@ -1,6 +1,6 @@
 /** chunk id: 120120 params = (module,exports,require) **/
 n.d(t, {
-    A: () => I
+    A: () => T
 });
 var i = n(627968);
 n(64700);
@@ -13,8 +13,8 @@ var l = n(417597),
     d = n(976860),
     u = n(141593),
     _ = n(652215),
-    m = n(985018),
-    A = n(367537);
+    A = n(985018),
+    m = n(367537);
 
 function E(e) {
     let {
@@ -23,23 +23,23 @@ function E(e) {
         username: s
     } = e, o = (0, l.bG)([r.A], () => !r.A.useReducedMotion), c = n.getAvatarURL(t, 56, o), d = (0, i.jsx)("img", {
         src: c,
-        className: A.dj,
+        className: m.dj,
         alt: ""
     });
     return (0, i.jsxs)("div", {
-        className: A.uE,
+        className: m.uE,
         role: "img",
-        "aria-label": m.intl.formatToPlainString(m.t["utf8+W"], {
+        "aria-label": A.intl.formatToPlainString(A.t["utf8+W"], {
             username: s
         }),
         children: [(0, i.jsx)(u.A, {
             avatar: d
         }), (0, i.jsx)(a.Text, {
-            className: A.Bi,
+            className: m.Bi,
             tag: "p",
             color: "status-positive-text",
             variant: "heading-xl/medium",
-            children: m.intl.format(m.t["52BAtC"], {
+            children: A.intl.format(A.t["52BAtC"], {
                 username: s,
                 usernameHook: (e, t) => (0, i.jsx)(a.Text, {
                     tag: "span",
@@ -53,7 +53,7 @@ function E(e) {
     })
 }
 
-function I(e) {
+function T(e) {
     let {
         channel: t,
         message: l,
@@ -63,7 +63,7 @@ function I(e) {
         channelId: t.id,
         guildId: t.guild_id,
         messageId: l.id
-    })(r), A = m.intl.format(m.t.TQs67g, {
+    })(r), m = A.intl.format(A.t.TQs67g, {
         username: r.nick,
         usernameHook: u,
         productName: l.purchaseNotification?.guild_product_purchase?.product_name ?? "",
@@ -76,7 +76,7 @@ function I(e) {
             icon: n(617184),
             timestamp: l.timestamp,
             compact: a,
-            children: A
+            children: m
         }), (0, i.jsx)(E, {
             username: r.nick,
             guildId: t.guild_id,

@@ -1,11 +1,10 @@
 /** chunk id: 623413 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
-    A: () => C
+    A: () => I
 });
 var i = n(627968),
-    s = n(64700),
-    l = n(311907),
+    l = n(64700),
+    s = n(311907),
     a = n(397927),
     r = n(956793),
     o = n(313961),
@@ -14,29 +13,29 @@ var i = n(627968),
     u = n(202384),
     h = n(51758),
     A = n(175203),
-    m = n(426660),
-    _ = n(403362),
+    _ = n(426660),
+    m = n(403362),
     g = n(69407),
     p = n(110618),
     f = n(566388),
     x = n(985018),
     E = n(616124);
-let C = function(e) {
+let I = function(e) {
     let {
         participants: t,
         channel: n,
-        hasConnectPermission: C
-    } = e, I = (0, h.H)(n.guild_id), N = s.useCallback(() => {
-        I ? (0, u.Ze)(n.guild_id, () => r.default.selectVoiceChannel(n.id)) : r.default.selectVoiceChannel(n.id)
-    }, [n.id, n.guild_id, I]), S = t.filter(e => e.type === g.wY.VOICE), b = (0, d.Ay)(n), T = 4 === S.length ? 2 : 3, v = (0, l.yK)([o.A], () => S.map(e => o.A.getParticipant(n.id, e.id)).filter(_.Vq), [n.id, S]);
+        hasConnectPermission: I
+    } = e, C = (0, h.H)(n.guild_id), N = l.useCallback(() => {
+        C ? (0, u.Ze)(n.guild_id, () => r.default.selectVoiceChannel(n.id)) : r.default.selectVoiceChannel(n.id)
+    }, [n.id, n.guild_id, C]), T = t.filter(e => e.type === g.wY.VOICE), S = (0, d.Ay)(n), b = 4 === T.length ? 2 : 3, y = (0, s.yK)([o.A], () => T.map(e => o.A.getParticipant(n.id, e.id)).filter(m.Vq), [n.id, T]);
     return (0, i.jsxs)("div", {
         className: E.kL,
-        children: [(0, i.jsx)(m.A, {}), (0, i.jsx)("div", {
+        children: [(0, i.jsx)(_.A, {}), (0, i.jsx)("div", {
             className: E.os,
             style: {
-                maxWidth: 168 * T
+                maxWidth: 168 * b
             },
-            children: v.slice(0, 5).map(e => (0, i.jsx)(A.Ay, {
+            children: y.slice(0, 5).map(e => (0, i.jsx)(A.Ay, {
                 participant: e,
                 channel: n,
                 className: E.Vs,
@@ -48,14 +47,14 @@ let C = function(e) {
         }), (0, i.jsx)(a.Heading, {
             className: E.HA,
             variant: "heading-xxl/normal",
-            children: b
+            children: S
         }), (0, i.jsx)("div", {
             className: E.Nu,
             children: (0, i.jsx)(a.Text, {
                 tag: "div",
                 color: "text-default",
                 variant: "heading-lg/normal",
-                children: (0, p.DO)(n, S)
+                children: (0, p.DO)(n, T)
             })
         }), (0, i.jsxs)("div", {
             className: E.UD,
@@ -63,9 +62,9 @@ let C = function(e) {
                 className: E.PD,
                 children: (0, i.jsx)(a.Button, {
                     variant: "overlay-primary",
-                    text: C ? x.intl.string(x.t["7vb2cc"]) : x.intl.string(x.t.TVBCKZ),
+                    text: I ? x.intl.string(x.t["7vb2cc"]) : x.intl.string(x.t.TVBCKZ),
                     onClick: N,
-                    disabled: !C
+                    disabled: !I
                 })
             }), (0, i.jsx)(f.l, {
                 channel: n

@@ -18,20 +18,20 @@ function d(e) {
         minValue: c,
         maxValue: u,
         useDefaultValue: m,
-        useTitle: _,
-        useSubtitle: g,
-        useHintText: x,
-        useDisabled: A,
+        useTitle: g,
+        useSubtitle: _,
+        useHintText: A,
+        useDisabled: x,
         useExternalValue: h,
         onValueRender: p,
         asValueChanges: T,
         markers: f,
-        onMarkerRender: S,
-        stickToMarkers: E,
+        onMarkerRender: E,
+        stickToMarkers: S,
         fieldLayout: b,
         usePersistentBadge: C,
-        getDismissibleBadges: v
-    } = t, [N] = s.useState(() => d()), I = h?.(), j = _(), y = g?.(), O = x?.(), R = A?.(), P = m?.(), L = C?.(), D = v?.(), G = (0, a.A)({
+        getDismissibleBadges: N
+    } = t, [v] = s.useState(() => d()), I = h?.(), j = g(), y = _?.(), O = A?.(), R = x?.(), P = m?.(), L = C?.(), D = N?.(), G = (0, a.A)({
         persistentBadge: L,
         dismissibleBadges: D
     }), M = (0, r.q)(t);
@@ -40,7 +40,7 @@ function d(e) {
             label: j,
             description: y,
             disabled: R,
-            initialValue: N,
+            initialValue: v,
             value: I,
             minValue: c,
             maxValue: u,
@@ -52,8 +52,8 @@ function d(e) {
             },
             orientation: "horizontal",
             markers: f,
-            onMarkerRender: S,
-            stickToMarkers: E,
+            onMarkerRender: E,
+            stickToMarkers: S,
             layout: b,
             badge: G
         }), null != O && (0, i.jsx)(l.Text, {

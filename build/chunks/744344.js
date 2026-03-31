@@ -1,6 +1,6 @@
 /** chunk id: 744344 params = (module,exports,require) **/
 n.d(t, {
-    r: () => _
+    r: () => g
 });
 var i = n(311907),
     s = n(684013),
@@ -59,7 +59,7 @@ function m(e) {
         usePredicate: e.usePredicate
     })
 }
-let _ = (0, o.FW)(d.X.OVERLAY_NOTIFICATIONS_LIST, {
+let g = (0, o.FW)(d.X.OVERLAY_NOTIFICATIONS_LIST, {
     variant: "compact",
     useTitle: () => c.intl.string(c.t.gnKWdS),
     isTitleHiddenVisually: !0,

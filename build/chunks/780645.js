@@ -1,15 +1,14 @@
 /** chunk id: 780645 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
     $: () => a
 });
 var i = n(627968),
-    s = n(64700),
-    l = n(442433);
+    l = n(64700),
+    s = n(442433);
 
 function a(e) {
-    return s.useCallback(t => {
-        (0, l.L3)(t, async () => {
+    return l.useCallback(t => {
+        (0, s.L3)(t, async () => {
             let {
                 default: t
             } = await n.e("38167").then(n.bind(n, 342186));

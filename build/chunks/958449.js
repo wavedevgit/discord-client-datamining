@@ -1,11 +1,10 @@
 /** chunk id: 958449 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
     h: () => o
 });
 var i = n(627968),
-    s = n(64700),
-    l = n(416696),
+    l = n(64700),
+    s = n(416696),
     a = n(709562),
     r = n(985018);
 
@@ -17,8 +16,8 @@ function o(e) {
             centerButton: u,
             onMouseEnter: h,
             onMouseLeave: A,
-            renderNUXHighlight: m,
-            buttonRef: _,
+            renderNUXHighlight: _,
+            buttonRef: m,
             ...g
         } = e,
         p = u ? a.l : a.A;
@@ -27,15 +26,15 @@ function o(e) {
         Component: f,
         events: x,
         play: E
-    } = (0, l.c)(c ? "disable" : "enable");
-    return s.useEffect(() => () => E(), [c, E]), (0, i.jsx)(p, {
-        buttonRef: _,
+    } = (0, s.c)(c ? "disable" : "enable");
+    return l.useEffect(() => () => E(), [c, E]), (0, i.jsx)(p, {
+        buttonRef: m,
         isTrayButton: !0,
         label: n,
         disabled: !o,
         iconComponent: f,
         isActive: c,
-        color: (m ? t = "premiumGradient" : c && (t = "green"), t),
+        color: (_ ? t = "premiumGradient" : c && (t = "green"), t),
         onMouseEnter: e => {
             h?.(e), x.onMouseEnter()
         },

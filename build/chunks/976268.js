@@ -12,17 +12,17 @@ var i = n(627968),
     c = n(897720),
     u = n(393172),
     m = n(968898),
-    _ = n(95701),
-    g = n(427157),
-    x = n(288737),
-    A = n(555528),
+    g = n(95701),
+    _ = n(427157),
+    A = n(288737),
+    x = n(555528),
     h = n(287809),
     p = n(256415),
     T = n(403362),
     f = n(652215);
 n(392164);
-var S = n(985018),
-    E = n(502040);
+var E = n(985018),
+    S = n(502040);
 
 function b(e) {
     let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
@@ -30,7 +30,7 @@ function b(e) {
         i = arguments.length > 3 && void 0 !== arguments[3] && arguments[3],
         s = "456" + Math.floor(1e6 * Math.random());
     return {
-        voiceState: new x.A({
+        voiceState: new A.A({
             channelId: "123",
             userId: s,
             sessionId: "789",
@@ -42,7 +42,7 @@ function b(e) {
             selfStream: !1,
             discoverable: i
         }),
-        user: new g.A({
+        user: new _.A({
             id: s,
             username: e
         }),
@@ -72,32 +72,32 @@ function C() {
         {
             avatarSizeMode: n,
             displayNameMode: l,
-            displayUserMode: g
+            displayUserMode: _
         } = (0, r.cf)([p.default], () => ({
             avatarSizeMode: p.default.getAvatarSizeMode(),
             displayNameMode: p.default.getDisplayNameMode(),
             displayUserMode: p.default.getDisplayUserMode()
         })),
-        [x] = s.useState(() => [b(S.intl.string(S.t.C0ZDvo), !0, !1), b(S.intl.string(S.t.iOtj8E), !1, !1, !0), b(S.intl.string(S.t["0oqNgL"]), !1, !0)]),
-        C = (0, r.bG)([d.A, A.A], () => {
+        [A] = s.useState(() => [b(E.intl.string(E.t.C0ZDvo), !0, !1), b(E.intl.string(E.t.iOtj8E), !1, !1, !0), b(E.intl.string(E.t["0oqNgL"]), !1, !0)]),
+        C = (0, r.bG)([d.A, x.A], () => {
             let e = d.A.getWidgetByType(f.uss.VOICE_V3);
             if (null == e) return null;
-            let t = A.A.getWidget(e.id);
+            let t = x.A.getWidget(e.id);
             return null != t && (0, c.ZO)(t) ? t : null
         }),
-        v = C?.meta?.voiceStatesMaxShown ?? 8,
-        N = [null != t ? ((e = b(t.username)).user = t, e) : null, ...x].filter(T.Vq),
-        I = [new Map(N.map(e => [e.user.id, e])), N.map(e => e.user.id)],
+        N = C?.meta?.voiceStatesMaxShown ?? 8,
+        v = [null != t ? ((e = b(t.username)).user = t, e) : null, ...A].filter(T.Vq),
+        I = [new Map(v.map(e => [e.user.id, e])), v.map(e => e.user.id)],
         j = (0, i.jsx)(o.NPJ, {
             theme: f.NJ8.MIDNIGHT,
             children: e => (0, i.jsxs)("div", {
-                className: a()(E.Y5, e),
+                className: a()(S.Y5, e),
                 children: [(0, i.jsx)("div", {
-                    className: E.kJ,
+                    className: S.kJ,
                     children: (0, i.jsx)(u.DH, {
                         id: "voice-widget",
-                        title: S.intl.string(S.t.KNJ6Vq),
-                        channel: (0, _.createChannelRecord)({
+                        title: E.intl.string(E.t.KNJ6Vq),
+                        channel: (0, g.createChannelRecord)({
                             id: "123",
                             name: "Test Channel",
                             type: f.rbe.GUILD_VOICE,
@@ -105,7 +105,7 @@ function C() {
                         }),
                         overlayVoiceStates: I,
                         displayNameMode: l,
-                        displayUserMode: g,
+                        displayUserMode: _,
                         avatarSizeMode: n,
                         widget: f.uss.VOICE,
                         anchorLeft: !0,
@@ -117,12 +117,12 @@ function C() {
                         pinned: !1,
                         isSettingsPreview: !0,
                         isPreviewingInGame: !1,
-                        maxDisplayedVoiceStates: v
+                        maxDisplayedVoiceStates: N
                     })
                 }), (0, i.jsxs)("div", {
-                    className: E.R$,
+                    className: S.R$,
                     children: [(0, i.jsx)(m.Pl, {
-                        children: S.intl.string(S.t.KNJ6Vq)
+                        children: E.intl.string(E.t.KNJ6Vq)
                     }), (0, i.jsx)(m.CS, {}), (0, i.jsx)(m.O0, {
                         id: C?.id ?? "voice-widget",
                         pinned: C?.pinned ?? !1
@@ -131,7 +131,7 @@ function C() {
             })
         });
     return (0, i.jsx)("div", {
-        className: E.F9,
+        className: S.F9,
         children: j
     })
 }

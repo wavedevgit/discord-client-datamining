@@ -1,70 +1,70 @@
 /** chunk id: 49678 params = (module,exports,require) **/
-a.d(e, {
-    MessageReminderEditMenu: () => c,
-    S: () => o
-}), a(321073);
-var r = a(627968),
-    n = a(64700),
-    d = a(397927),
-    i = a(442433),
-    s = a(164684),
-    l = a(181504),
-    u = a(985018);
+n.d(t, {
+    MessageReminderEditMenu: () => u,
+    S: () => c
+}), n(321073);
+var i = n(627968),
+    l = n(64700),
+    a = n(397927),
+    r = n(442433),
+    s = n(164684),
+    o = n(181504),
+    d = n(985018);
 
-function o(t) {
+function c(e) {
     let {
-        createReminder: e
-    } = t, i = n.useCallback(() => {
-        (0, d.mMO)(async () => {
+        createReminder: t
+    } = e, r = l.useCallback(() => {
+        (0, a.mMO)(async () => {
             let {
-                default: t
-            } = await a.e("49208").then(a.bind(a, 148216));
-            return a => (0, r.jsx)(t, {
-                ...a,
-                createReminder: e
+                default: e
+            } = await n.e("49208").then(n.bind(n, 148216));
+            return n => (0, i.jsx)(e, {
+                ...n,
+                createReminder: t
             })
         })
-    }, [e]);
-    return n.useMemo(() => {
-        let t = l.b.map(t => {
+    }, [t]);
+    return l.useMemo(() => {
+        let e = o.b.map(e => {
             let {
-                getDueAt: a,
-                getLabel: n
-            } = t;
-            return (0, r.jsx)(d.Drp, {
-                id: `create-reminder-${n()}`,
-                label: n(),
-                action: () => e(a())
-            }, `create-reminder-${n()}`)
+                getDueAt: n,
+                getLabel: l
+            } = e;
+            return (0, i.jsx)(a.Drp, {
+                id: `create-reminder-${l()}`,
+                label: l(),
+                action: () => t(n())
+            }, `create-reminder-${l()}`)
         });
-        return t.push((0, r.jsx)(d.Drp, {
+        return e.push((0, i.jsx)(a.Drp, {
             id: "create-reminder-custom",
-            label: u.intl.string(u.t.OLA8Zi),
-            action: i
-        }, "custom")), t
-    }, [e, i])
+            label: d.intl.string(d.t.OLA8Zi),
+            action: r
+        }, "custom")), e
+    }, [t, r])
 }
 
-function c(t) {
+function u(e) {
     let {
-        message: e,
-        label: a
-    } = t, n = o({
-        createReminder: t => (0, s.Y)({
-            channelId: e.channel_id,
-            messageId: e.id,
-            dueAt: t
+        message: t,
+        label: n
+    } = e, l = c({
+        createReminder: e => (0, s.Y)({
+            channelId: t.channel_id,
+            messageId: t.id,
+            dueAt: e
         })
     });
-    return (0, r.jsx)(d.W1t, {
+    return (0, i.jsx)(a.W1t, {
         "data-menu-migrated-auto": !0,
         navId: "message-reminder-create",
-        onClose: i.Z_,
-        "aria-label": u.intl.string(u.t.mJ3P0N),
+        onClose: r.Z_,
+        "aria-label": d.intl.string(d.t.mJ3P0N),
         onSelect: () => null,
-        children: (0, r.jsx)(d.rXV, {
-            label: a,
-            children: n
+        children: (0, i.jsx)(a.rXV, {
+            label: n,
+            children: l
         })
     })
 }

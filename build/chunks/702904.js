@@ -1,16 +1,15 @@
 /** chunk id: 702904 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
     A: () => a
 });
 var i = n(627968);
 n(64700);
-var s = n(397927),
-    l = n(985018);
+var l = n(397927),
+    s = n(985018);
 
 function a() {
     function e() {
-        (0, s.mMO)(async () => {
+        (0, l.mMO)(async () => {
             let {
                 default: e
             } = await Promise.all([n.e("56423"), n.e("25280")]).then(n.bind(n, 987482));
@@ -19,15 +18,15 @@ function a() {
                 ...t
             })
         })
-    }(0, s.mMO)(async () => {
+    }(0, l.mMO)(async () => {
         let {
             default: t
         } = await n.e("11487").then(n.bind(n, 792866));
         return n => (0, i.jsx)(t, {
             ...n,
-            header: l.intl.string(l.t.GFr0GR),
-            body: l.intl.string(l.t.QSk6E8),
-            confirmText: l.intl.string(l.t["BK8LK+"]),
+            header: s.intl.string(s.t.GFr0GR),
+            body: s.intl.string(s.t.QSk6E8),
+            confirmText: s.intl.string(s.t["BK8LK+"]),
             onConfirm: e
         })
     })

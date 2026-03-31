@@ -1,6 +1,6 @@
 /** chunk id: 850131 params = (module,exports,require) **/
 n.d(t, {
-    A: () => x
+    A: () => S
 });
 var i = n(627968),
     l = n(64700),
@@ -12,15 +12,15 @@ var i = n(627968),
     d = n(843472),
     u = n(565645),
     _ = n(763754),
-    m = n(447215),
-    A = n(888675),
+    A = n(447215),
+    m = n(888675),
     E = n(533567),
-    I = n(306417),
-    T = n(412136),
-    f = n(985018),
-    N = n(948762);
+    T = n(306417),
+    I = n(412136),
+    N = n(985018),
+    g = n(948762);
 
-function g() {
+function f() {
     return (0, i.jsx)("svg", {
         width: "24",
         height: "24",
@@ -41,7 +41,7 @@ function C(e) {
         hasNoVotes: n,
         victorEmoji: l
     } = e;
-    if (n) t = (0, i.jsx)(g, {});
+    if (n) t = (0, i.jsx)(f, {});
     else if (null != l) {
         let e = "" !== l.name ? l.name : l.displayName;
         t = (0, i.jsx)(u.A, {
@@ -51,7 +51,7 @@ function C(e) {
         })
     }
     return null != t ? (0, i.jsx)("div", {
-        className: N.ZS,
+        className: g.ZS,
         children: t
     }) : null
 }
@@ -68,7 +68,7 @@ function h(e) {
                 variant: "text-sm/semibold",
                 color: "text-default",
                 scaleFontToUserSetting: !0,
-                children: f.intl.string(f.t["a+lSZ/"])
+                children: N.intl.string(N.t["a+lSZ/"])
             });
             break;
         case "VICTOR":
@@ -77,16 +77,16 @@ function h(e) {
             } = l;
             t = (0, i.jsxs)(i.Fragment, {
                 children: [(0, i.jsxs)("div", {
-                    className: N.sj,
+                    className: g.sj,
                     children: [(0, i.jsx)(c.Text, {
                         variant: "text-sm/semibold",
                         color: "text-default",
-                        className: N.Dq,
+                        className: g.Dq,
                         scaleFontToUserSetting: !0,
                         children: r
-                    }), (0, i.jsx)(I.Vx, {
+                    }), (0, i.jsx)(T.Vx, {
                         size: 16,
-                        className: N.To,
+                        className: g.To,
                         isVictor: !0,
                         isExpired: !0
                     })]
@@ -94,7 +94,7 @@ function h(e) {
                     variant: "text-xs/medium",
                     color: a,
                     scaleFontToUserSetting: !0,
-                    children: [f.intl.string(f.t.ufIDIx), " • ", s, "%"]
+                    children: [N.intl.string(N.t.ufIDIx), " • ", s, "%"]
                 })]
             });
             break;
@@ -107,7 +107,7 @@ function h(e) {
                     variant: "text-sm/semibold",
                     color: "text-default",
                     scaleFontToUserSetting: !0,
-                    children: f.intl.string(f.t.kPN9si)
+                    children: N.intl.string(N.t.kPN9si)
                 }), (0, i.jsxs)(c.Text, {
                     variant: "text-xs/medium",
                     color: a,
@@ -117,7 +117,7 @@ function h(e) {
             })
     }
     return (0, i.jsx)("div", {
-        className: N.h_,
+        className: g.h_,
         children: t
     })
 }
@@ -143,8 +143,8 @@ function p(e) {
         }
     })(n), [n]), o = null != n.victorEmoji || "NO_VOTES" === s.type;
     return (0, i.jsxs)("div", {
-        className: r()(N.kL, {
-            [N.FS]: o
+        className: r()(g.kL, {
+            [g.FS]: o
         }, t),
         children: [(0, i.jsx)(C, {
             hasNoVotes: "NO_VOTES" === s.type,
@@ -155,23 +155,23 @@ function p(e) {
             size: "sm",
             onClick: a,
             variant: "secondary",
-            text: f.intl.string(f.t.Jw7Vbf)
+            text: N.intl.string(N.t.Jw7Vbf)
         })]
     })
 }
 
-function x(e) {
+function S(e) {
     let {
         message: t,
         channel: n,
         compact: a,
         disableInteraction: r = !1
-    } = e, o = t.embeds[0], u = l.useMemo(() => (0, E.A)(o), [o]), I = (0, s.EJ)(u?.questionText ?? "", T.TU), g = (0, _.Ay)(t), C = (0, m.P)({
+    } = e, o = t.embeds[0], u = l.useMemo(() => (0, E.A)(o), [o]), T = (0, s.EJ)(u?.questionText ?? "", I.TU), f = (0, _.Ay)(t), C = (0, A.P)({
         user: t.author,
         channelId: n.id,
         guildId: n.guild_id,
         messageId: t.id
-    }), h = t.messageReference, x = l.useCallback(() => {
+    }), h = t.messageReference, S = l.useCallback(() => {
         null != h && d.A.jumpToMessage({
             channelId: h.channel_id,
             messageId: h.message_id,
@@ -180,22 +180,22 @@ function x(e) {
         })
     }, [t.id, h]);
     return null == u ? null : (0, i.jsxs)(i.Fragment, {
-        children: [(0, i.jsx)(A.A, {
+        children: [(0, i.jsx)(m.A, {
             iconNode: (0, i.jsx)(c.YRe, {
                 size: "xs"
             }),
             timestamp: t.timestamp,
             compact: a,
-            children: f.intl.format(f.t.VJcK41, {
-                username: g.nick,
-                usernameHook: C(g),
-                title: I,
-                titleOnClick: x
+            children: N.intl.format(N.t.VJcK41, {
+                username: f.nick,
+                usernameHook: C(f),
+                title: T,
+                titleOnClick: S
             })
         }), (0, i.jsx)(p, {
-            className: N.E6,
+            className: g.E6,
             data: u,
-            onClickPollLink: r ? void 0 : x
+            onClickPollLink: r ? void 0 : S
         })]
     })
 }

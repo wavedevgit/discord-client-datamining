@@ -1,29 +1,29 @@
 /** chunk id: 851580 params = (module,exports,require) **/
-r.d(t, {
-    v: () => h
+n.d(t, {
+    v: () => A
 });
-var n = r(627968),
-    s = r(554146),
-    l = r(342494),
-    a = r(932001),
-    i = r(966597),
-    o = r(49999),
-    c = r(985018),
-    u = r(936037);
-let d = s.M.FOR_LATER_POPOUT_COACHMARK;
+var i = n(627968),
+    l = n(554146),
+    a = n(342494),
+    r = n(932001),
+    s = n(966597),
+    o = n(49999),
+    d = n(985018),
+    c = n(936037);
+let u = l.M.FOR_LATER_POPOUT_COACHMARK;
 
-function h(e) {
+function A(e) {
     let {
         location: t,
-        targetElementRef: r
+        targetElementRef: n
     } = e, {
-        enabled: s,
-        inInbox: h
-    } = i.A.useConfig({
+        enabled: l,
+        inInbox: A
+    } = s.A.useConfig({
         location: "ForLaterCoachmarkWeb"
-    }), [_, f] = (0, a.kn)(s && t === (h ? "inbox-button" : "bookmarks-button") ? [d] : [], void 0);
-    return _ !== d ? null : (0, n.jsx)(l.AM, {
-        targetElementRef: r,
+    }), [h, _] = (0, r.kn)(l && t === (A ? "inbox-button" : "bookmarks-button") ? [u] : [], void 0);
+    return h !== u ? null : (0, i.jsx)(a.AM, {
+        targetElementRef: n,
         gradientColor: "purple",
         position: "bottom",
         align: "right",
@@ -31,16 +31,16 @@ function h(e) {
         caretConfig: {
             align: "end"
         },
-        onRequestClose: () => f(o.i.USER_DISMISS),
-        title: c.intl.string(c.t.qPbFK2),
-        body: c.intl.string(c.t.URrJq1),
+        onRequestClose: () => _(o.i.USER_DISMISS),
+        title: d.intl.string(d.t.qPbFK2),
+        body: d.intl.string(d.t.URrJq1),
         actions: [{
-            text: c.intl.string(c.t["NX+WJN"]),
-            onClick: () => f(o.i.USER_DISMISS)
+            text: d.intl.string(d.t["NX+WJN"]),
+            onClick: () => _(o.i.USER_DISMISS)
         }],
         graphic: {
             type: "image",
-            src: u
+            src: c
         }
     })
 }

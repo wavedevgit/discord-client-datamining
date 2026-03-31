@@ -102,7 +102,7 @@ function j(e) {
                 return void(0, r.mMO)(async () => {
                     let {
                         ItemDetailsModal: e
-                    } = await Promise.resolve().then(a.bind(a, 963179));
+                    } = await a.e("70104").then(a.bind(a, 963179));
                     return a => (0, n.jsx)(e, {
                         appId: t,
                         skuId: l,
@@ -119,7 +119,7 @@ function j(e) {
                 return e = (0, h.bg)(c.flags) ? "user" : "guild", void(0, r.mMO)(async () => {
                     let {
                         SubscriptionDetailsModal: i
-                    } = await Promise.resolve().then(a.bind(a, 168393));
+                    } = await a.e("64850").then(a.bind(a, 168393));
                     return a => (0, n.jsx)(i, {
                         appId: t,
                         subscriptionType: e,

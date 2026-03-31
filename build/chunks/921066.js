@@ -1,6 +1,6 @@
 /** chunk id: 921066 params = (module,exports,require) **/
 n.d(t, {
-    A: () => H
+    A: () => w
 });
 var i, l = n(627968),
     a = n(64700),
@@ -11,24 +11,24 @@ var i, l = n(627968),
     d = n(397927),
     u = n(775602),
     _ = n(793574),
-    m = n(509536),
-    A = n(497566),
+    A = n(509536),
+    m = n(497566),
     E = n(881635),
-    I = n(567771),
-    T = n(363487),
-    f = n(828162),
-    N = n(168350),
-    g = n(649963),
+    T = n(567771),
+    I = n(363487),
+    N = n(828162),
+    g = n(168350),
+    f = n(649963),
     C = n(734057),
     h = n(763754),
     p = n(467073),
-    x = n(888675),
-    R = n(652215),
-    S = n(985018),
+    S = n(888675),
+    x = n(652215),
+    R = n(985018),
     O = n(272435),
     M = n(274993),
     D = n(218924);
-let P = {
+let L = {
     id: null,
     name: "❤️",
     animated: !1
@@ -40,7 +40,7 @@ function U() {
     return !e && t
 }
 
-function v(e) {
+function P(e) {
     let {
         className: t,
         animate: n
@@ -56,7 +56,7 @@ function v(e) {
     })
 }
 
-function L(e) {
+function v(e) {
     let {
         className: t,
         title: n,
@@ -84,22 +84,22 @@ function j(e) {
     } = e, r = (0, o.bG)([C.A], () => C.A.getChannel(n.channel_id), [n.channel_id]), {
         disableReactionCreates: s
     } = (0, p.A)(r), c = a.useCallback(() => {
-        (0, g.BB)(n.channel_id, n.id, P, g.qN.MESSAGE)
+        (0, f.BB)(n.channel_id, n.id, L, f.qN.MESSAGE)
     }, [n.channel_id, n.id]);
     return (0, l.jsxs)("div", {
         className: O.qr,
         children: [(0, l.jsx)(E.A, {
             guild: t,
             analyticsLocation: {
-                page: R.liQ.GUILD_CHANNEL,
-                section: R.JJy.CHANNEL_TEXT_AREA,
-                object: R.ZSU.BOOST_ANNOUNCEMENT_UPSELL
+                page: x.liQ.GUILD_CHANNEL,
+                section: x.JJy.CHANNEL_TEXT_AREA,
+                object: x.ZSU.BOOST_ANNOUNCEMENT_UPSELL
             }
         }), i && !s && (0, l.jsx)(d.vN3, {
             children: (0, l.jsx)("button", {
                 className: O.Zf,
                 onClick: c,
-                "aria-label": S.intl.string(S.t.eaRpLR),
+                "aria-label": R.intl.string(R.t.eaRpLR),
                 children: (0, l.jsx)("span", {
                     role: "img",
                     "aria-hidden": "true",
@@ -110,7 +110,7 @@ function j(e) {
     })
 }
 
-function b(e) {
+function y(e) {
     let {
         title: t,
         body: n
@@ -129,7 +129,7 @@ function b(e) {
     })
 }
 
-function y(e) {
+function k(e) {
     let {
         guild: t
     } = e;
@@ -139,29 +139,29 @@ function y(e) {
             guild: t,
             variant: "secondary",
             analyticsLocation: {
-                page: R.liQ.GUILD_CHANNEL,
-                section: R.JJy.CHANNEL_TEXT_AREA,
-                object: R.ZSU.BOOST_ANNOUNCEMENT_UPSELL
+                page: x.liQ.GUILD_CHANNEL,
+                section: x.JJy.CHANNEL_TEXT_AREA,
+                object: x.ZSU.BOOST_ANNOUNCEMENT_UPSELL
             }
         })
     })
 }
 
-function k(e) {
+function b(e) {
     let {
         guild: t,
         children: n
-    } = e, i = (0, T.A)(t?.id);
+    } = e, i = (0, I.A)(t?.id);
     return (0, l.jsx)(d.DUT, {
         tag: "a",
         role: "link",
         className: O.oT,
         onClick: () => {
-            null != t && (i ? (0, f.A)(t.id, _.A.GUILD_BOOSTING_SYSTEM_MESSAGE) : (0, m.K4)({
+            null != t && (i ? (0, N.A)(t.id, _.A.GUILD_BOOSTING_SYSTEM_MESSAGE) : (0, A.K4)({
                 guildId: t.id,
                 location: {
-                    section: R.JJy.CHANNEL_TEXT_AREA,
-                    object: R.ZSU.BOOST_ANNOUNCEMENT_UPSELL
+                    section: x.JJy.CHANNEL_TEXT_AREA,
+                    object: x.ZSU.BOOST_ANNOUNCEMENT_UPSELL
                 }
             }))
         },
@@ -174,59 +174,59 @@ function G(e) {
         message: t,
         guild: n,
         usernameHook: i
-    } = e, a = U(), r = (0, h.Ay)(t), s = i(r), o = t.hasFlag(R.pr7.IS_FIRST_BOOSTER);
+    } = e, a = U(), r = (0, h.Ay)(t), s = i(r), o = t.hasFlag(x.pr7.IS_FIRST_BOOSTER);
     return (0, l.jsxs)("div", {
         className: O.ds,
-        children: [(0, l.jsx)(N.A, {
+        children: [(0, l.jsx)(g.A, {
             className: O.M_,
             forceReducedMotion: !a
-        }), (0, l.jsx)(v, {
+        }), (0, l.jsx)(P, {
             className: O.S8,
             animate: a
-        }), (0, l.jsx)(b, {
-            title: o ? S.intl.format(S.t["/1IQGD"], {
+        }), (0, l.jsx)(y, {
+            title: o ? R.intl.format(R.t["/1IQGD"], {
                 username: r.nick,
                 usernameHook: s
-            }) : S.intl.format(S.t.SbSWvY, {
+            }) : R.intl.format(R.t.SbSWvY, {
                 username: r.nick,
                 usernameHook: s,
-                numSubscriptions: (0, I.A)(t)
+                numSubscriptions: (0, T.A)(t)
             }),
-            body: S.intl.format(S.t.dWm8Iu, {
-                learnMoreHook: e => (0, l.jsx)(k, {
+            body: R.intl.format(R.t.dWm8Iu, {
+                learnMoreHook: e => (0, l.jsx)(b, {
                     guild: n,
                     children: e
                 })
             })
-        }), null != n && (0, l.jsx)(y, {
+        }), null != n && (0, l.jsx)(k, {
             guild: n
         })]
     })
 }
 
-function F(e) {
+function H(e) {
     let {
         message: t,
         guild: n,
         usernameHook: i
-    } = e, a = U(), r = (0, h.Ay)(t), s = i(r), o = (0, I.A)(t);
+    } = e, a = U(), r = (0, h.Ay)(t), s = i(r), o = (0, T.A)(t);
     return (0, l.jsxs)("div", {
         className: O.kL,
-        children: [(0, l.jsx)(N.A, {
+        children: [(0, l.jsx)(g.A, {
             className: O.Tp,
             forceReducedMotion: !a
-        }), (0, l.jsx)(v, {
+        }), (0, l.jsx)(P, {
             className: O.rc,
             animate: a
-        }), (0, l.jsx)(L, {
-            title: S.intl.format(S.t["7t1Ecm"], {
+        }), (0, l.jsx)(v, {
+            title: R.intl.format(R.t["7t1Ecm"], {
                 username: r.nick,
                 usernameHook: s,
                 numSubscriptions: o
             }),
-            body: S.intl.string(S.t.nybLqy)
+            body: R.intl.string(R.t.nybLqy)
         }), null != n && (0, l.jsxs)(l.Fragment, {
-            children: [(0, l.jsx)(A.A, {
+            children: [(0, l.jsx)(m.A, {
                 className: O.WM,
                 guildId: n.id
             }), (0, l.jsx)(j, {
@@ -237,7 +237,7 @@ function F(e) {
     })
 }
 
-function B(e) {
+function F(e) {
     let {
         message: t,
         guild: n,
@@ -245,19 +245,19 @@ function B(e) {
     } = e, a = U(), r = (0, h.Ay)(t), s = i(r);
     return (0, l.jsxs)("div", {
         className: O.kL,
-        children: [(0, l.jsx)(N.A, {
+        children: [(0, l.jsx)(g.A, {
             className: O.Tp,
             forceReducedMotion: !a
-        }), (0, l.jsx)(v, {
+        }), (0, l.jsx)(P, {
             className: O.VA,
             animate: a
-        }), (0, l.jsx)(L, {
+        }), (0, l.jsx)(v, {
             className: O.sf,
-            title: S.intl.format(S.t["/1IQGD"], {
+            title: R.intl.format(R.t["/1IQGD"], {
                 username: r.nick,
                 usernameHook: s
             }),
-            body: S.intl.string(S.t.nIEjuk)
+            body: R.intl.string(R.t.nIEjuk)
         }), null != n && (0, l.jsx)(j, {
             guild: n,
             message: t,
@@ -266,7 +266,7 @@ function B(e) {
     })
 }
 
-function H(e) {
+function w(e) {
     let t, {
         message: n,
         guild: i,
@@ -277,11 +277,11 @@ function H(e) {
         message: n,
         guild: i,
         usernameHook: a
-    }) : n.hasFlag(R.pr7.IS_FIRST_BOOSTER) ? (0, l.jsx)(B, {
+    }) : n.hasFlag(x.pr7.IS_FIRST_BOOSTER) ? (0, l.jsx)(F, {
         message: n,
         guild: i,
         usernameHook: a
-    }) : (0, l.jsx)(F, {
+    }) : (0, l.jsx)(H, {
         message: n,
         guild: i,
         usernameHook: a
@@ -289,7 +289,7 @@ function H(e) {
     let s = (0, l.jsx)(d._Jp, {
         className: O.Kk
     });
-    return (0, l.jsx)(x.A, {
+    return (0, l.jsx)(S.A, {
         iconNode: s,
         iconContainerClassName: O.zc,
         children: t

@@ -1,12 +1,11 @@
 /** chunk id: 641703 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
-    A: () => l
+    A: () => s
 });
 var i = n(417597),
-    s = n(734057);
+    l = n(734057);
 
-function l(e) {
-    let t = (0, i.bG)([s.A], () => s.A.getChannel(e));
+function s(e) {
+    let t = (0, i.bG)([l.A], () => l.A.getChannel(e));
     return t?.isPrivate() ?? !1
 }

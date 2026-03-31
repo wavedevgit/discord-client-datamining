@@ -1,11 +1,10 @@
 /** chunk id: 453738 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
     A: () => N
 });
 var i = n(627968),
-    s = n(64700),
-    l = n(311907),
+    l = n(64700),
+    s = n(311907),
     a = n(397927),
     r = n(835835),
     o = n(381849),
@@ -14,8 +13,8 @@ var i = n(627968),
     u = n(661191),
     h = n(256331),
     A = n(141850),
-    m = n(736339),
-    _ = n(701952),
+    _ = n(736339),
+    m = n(701952),
     g = n(652215),
     p = n(968353);
 
@@ -33,10 +32,10 @@ function x(e, t) {
     return !0
 }
 let E = ["high", "medium", "low"],
-    C = s.memo(function(e) {
+    I = l.memo(function(e) {
         let {
             moderation: t
-        } = e, n = null != t && 1 === t.status, l = null != t && !t.flagged_title && !t.flagged_summary && !t.flagged_key_points, r = s.useMemo(() => {
+        } = e, n = null != t && 1 === t.status, s = null != t && !t.flagged_title && !t.flagged_summary && !t.flagged_key_points, r = l.useMemo(() => {
             if (null == t) return {
                 passed: 0,
                 failed: 0,
@@ -45,11 +44,11 @@ let E = ["high", "medium", "low"],
             let e = t.flagged_message_count ?? t.flagged_message_ids.length,
                 n = t.total_message_count ?? 0,
                 i = 0,
-                s = 0;
-            return null == t.flagged_message_count && 0 === t.flagged_message_ids.length ? s = n : null != t.flagged_message_count ? i = Math.max(0, n - e) : s = Math.max(0, n - e), {
+                l = 0;
+            return null == t.flagged_message_count && 0 === t.flagged_message_ids.length ? l = n : null != t.flagged_message_count ? i = Math.max(0, n - e) : l = Math.max(0, n - e), {
                 passed: i,
                 failed: e,
-                unknown: s
+                unknown: l
             }
         }, [t]), o = null == t ? "unknown" : r.failed > 0 ? "failed" : r.unknown > 0 ? "unknown" : r.passed > 0 ? "passed" : "unknown", c = null != t ? t.flagged_summary_details.find(e => {
             var n;
@@ -83,19 +82,19 @@ let E = ["high", "medium", "low"],
                     className: p.a7,
                     children: [(0, i.jsx)(a.Text, {
                         variant: "text-md/semibold",
-                        color: null == t ? "text-muted" : l ? "status-positive" : "status-danger",
-                        children: null == t ? "—" : l ? "✓" : "✗"
+                        color: null == t ? "text-muted" : s ? "status-positive" : "status-danger",
+                        children: null == t ? "—" : s ? "✓" : "✗"
                     }), (0, i.jsx)(a.Text, {
                         variant: "text-xs/normal",
                         color: "text-default",
                         children: "Summary"
-                    }), null != t && !l && (0, i.jsxs)(a.Text, {
+                    }), null != t && !s && (0, i.jsxs)(a.Text, {
                         variant: "text-xs/normal",
                         color: "text-muted",
                         children: [
                             [t.flagged_title && "title", t.flagged_summary && "summary", t.flagged_key_points && "key points"].filter(Boolean).join(", "), " ", "flagged"
                         ]
-                    }), null != t && !l && (null != d || null != u) && (0, i.jsx)(a.Text, {
+                    }), null != t && !s && (null != d || null != u) && (0, i.jsx)(a.Text, {
                         variant: "text-xs/normal",
                         color: "text-muted",
                         children: [d, u].filter(Boolean).join(" \xb7 ")
@@ -119,18 +118,18 @@ let E = ["high", "medium", "low"],
             })]
         })
     }),
-    I = s.memo(function(e) {
+    C = l.memo(function(e) {
         let {
             conversation: t,
             color: n,
-            isInViewport: l,
+            isInViewport: s,
             scrollTarget: r,
             onJump: d,
             onHoverStart: h,
             onHoverEnd: A
-        } = e, m = s.useRef(null);
-        s.useEffect(() => {
-            null != r && null != m.current && m.current.scrollIntoView({
+        } = e, _ = l.useRef(null);
+        l.useEffect(() => {
+            null != r && null != _.current && _.current.scrollIntoView({
                 behavior: "smooth",
                 block: "center"
             })
@@ -141,17 +140,17 @@ let E = ["high", "medium", "low"],
                 timestamp: g
             }),
             E = Math.max(1, Math.round((f - g) / 1e3)),
-            I = (0, o.WR)({
+            C = (0, o.WR)({
                 seconds: E,
                 getFormatter: o.i
             }),
             N = t.summary_map?.entries.find(e => "TOPIC_EXTRACTION_SUMMARY" === e.summary_type),
-            S = null != N ? (0, _.i)(N.content_json) : null;
+            T = null != N ? (0, m.i)(N.content_json) : null;
         return (0, i.jsxs)(a.DUT, {
-            innerRef: m,
-            className: `${p.Nm}${l?` ${p.Sk}`:""}`,
+            innerRef: _,
+            className: `${p.Nm}${s?` ${p.Sk}`:""}`,
             style: {
-                backgroundColor: l ? n.replace(/,\s*0\.12\)$/, ", 0.24)") : n
+                backgroundColor: s ? n.replace(/,\s*0\.12\)$/, ", 0.24)") : n
             },
             onClick: () => d(t),
             onMouseEnter: () => h(t.id),
@@ -160,23 +159,23 @@ let E = ["high", "medium", "low"],
                 className: p.PY,
                 children: (0, i.jsx)(a.Text, {
                     variant: "text-md/medium",
-                    color: null != S ? "text-default" : "text-muted",
+                    color: null != T ? "text-default" : "text-muted",
                     className: p.So,
-                    children: S?.title ?? "Summary not available"
+                    children: T?.title ?? "Summary not available"
                 })
             }), (0, i.jsxs)(a.Text, {
                 variant: "text-xs/normal",
                 color: "text-muted",
                 className: p.FR,
-                children: [x, " ago \xb7 ", I, " duration \xb7 ", t.message_count, " messages \xb7 ", t.user_count, " users"]
-            }), S?.brief_summary != null && (0, i.jsx)(a.Text, {
+                children: [x, " ago \xb7 ", C, " duration \xb7 ", t.message_count, " messages \xb7 ", t.user_count, " users"]
+            }), T?.brief_summary != null && (0, i.jsx)(a.Text, {
                 variant: "text-xs/normal",
                 color: "text-default",
                 className: p.g5,
-                children: S.brief_summary
-            }), null != S && S.key_points.length > 0 && (0, i.jsx)("ul", {
+                children: T.brief_summary
+            }), null != T && T.key_points.length > 0 && (0, i.jsx)("ul", {
                 className: p.JP,
-                children: S.key_points.map((e, t) => (0, i.jsx)("li", {
+                children: T.key_points.map((e, t) => (0, i.jsx)("li", {
                     children: (0, i.jsx)(a.Text, {
                         variant: "text-xs/normal",
                         color: "text-default",
@@ -235,7 +234,7 @@ let E = ["high", "medium", "low"],
                         })]
                     })]
                 })]
-            }), (0, i.jsx)(C, {
+            }), (0, i.jsx)(I, {
                 moderation: t.moderation
             })]
         })
@@ -244,11 +243,11 @@ let E = ["high", "medium", "low"],
 function N(e) {
     let {
         channel: t
-    } = e, n = (0, l.bG)([m.A], () => m.A.getChannelConversations(t.id), [t.id], f), o = (0, l.bG)([m.A], () => m.A.getVisibleConversationIds(t.id), [t.id], x), c = (0, l.bG)([m.A], () => m.A.hasMoreConversations(t.id, "before"), [t.id]), u = (0, l.bG)([m.A], () => m.A.hasMoreConversations(t.id, "after"), [t.id]), _ = (0, l.bG)([m.A], () => m.A.isPendingFetch(t.id), [t.id]), E = (0, l.bG)([h.A], () => h.A.isHighlightingEnabled(), []), C = (0, l.bG)([m.A], () => m.A.getScrollToConversation(t.id), [t.id]), N = s.useCallback(e => {
+    } = e, n = (0, s.bG)([_.A], () => _.A.getChannelConversations(t.id), [t.id], f), o = (0, s.bG)([_.A], () => _.A.getVisibleConversationIds(t.id), [t.id], x), c = (0, s.bG)([_.A], () => _.A.hasMoreConversations(t.id, "before"), [t.id]), u = (0, s.bG)([_.A], () => _.A.hasMoreConversations(t.id, "after"), [t.id]), m = (0, s.bG)([_.A], () => _.A.isPendingFetch(t.id), [t.id]), E = (0, s.bG)([h.A], () => h.A.isHighlightingEnabled(), []), I = (0, s.bG)([_.A], () => _.A.getScrollToConversation(t.id), [t.id]), N = l.useCallback(e => {
         (0, A.UA)(t.id, e)
-    }, [t.id]), S = s.useCallback(() => {
+    }, [t.id]), T = l.useCallback(() => {
         (0, A.UA)(null, null)
-    }, []), b = s.useCallback(e => {
+    }, []), S = l.useCallback(e => {
         (0, A.xI)(e.channel_id, e.id), (0, d.pX)(g.BVt.CHANNEL(e.guild_id, e.channel_id, e.start_message_id))
     }, []);
     return (0, i.jsxs)("aside", {
@@ -274,7 +273,7 @@ function N(e) {
                 children: (0, i.jsx)(a.DUT, {
                     className: p.Qf,
                     onClick: function() {
-                        if (0 === n.length || _) return;
+                        if (0 === n.length || m) return;
                         let e = n[0].conversation;
                         (0, A.WF)({
                             channelId: t.id,
@@ -284,22 +283,22 @@ function N(e) {
                     children: (0, i.jsx)(a.Text, {
                         variant: "text-sm/medium",
                         color: "text-link",
-                        children: _ ? "Loading..." : "Load previous conversations"
+                        children: m ? "Loading..." : "Load previous conversations"
                     })
                 })
-            }), 0 !== n.length || _ ? n.map(e => {
+            }), 0 !== n.length || m ? n.map(e => {
                 let {
                     conversation: t,
                     color: n
                 } = e;
-                return (0, i.jsx)(I, {
+                return (0, i.jsx)(C, {
                     conversation: t,
                     color: n,
                     isInViewport: o.has(t.id),
-                    scrollTarget: C?.conversationId === t.id ? C.seq : null,
-                    onJump: b,
+                    scrollTarget: I?.conversationId === t.id ? I.seq : null,
+                    onJump: S,
                     onHoverStart: N,
-                    onHoverEnd: S
+                    onHoverEnd: T
                 }, t.id)
             }) : (0, i.jsx)(a.Text, {
                 variant: "text-sm/normal",
@@ -311,7 +310,7 @@ function N(e) {
                 children: (0, i.jsx)(a.DUT, {
                     className: p.Qf,
                     onClick: function() {
-                        if (0 === n.length || _) return;
+                        if (0 === n.length || m) return;
                         let e = n[n.length - 1].conversation;
                         (0, A.WF)({
                             channelId: t.id,
@@ -321,7 +320,7 @@ function N(e) {
                     children: (0, i.jsx)(a.Text, {
                         variant: "text-sm/medium",
                         color: "text-link",
-                        children: _ ? "Loading..." : "Load newer conversations"
+                        children: m ? "Loading..." : "Load newer conversations"
                     })
                 })
             })]

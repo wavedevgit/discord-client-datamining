@@ -1,12 +1,11 @@
 /** chunk id: 808124 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
-    A: () => S
+    A: () => T
 });
 var i = n(627968),
-    s = n(64700),
-    l = n(503698),
-    a = n.n(l),
+    l = n(64700),
+    s = n(503698),
+    a = n.n(s),
     r = n(311907),
     o = n(397927),
     c = n(517461),
@@ -14,69 +13,69 @@ var i = n(627968),
     u = n(418126),
     h = n(266626),
     A = n(998740),
-    m = n(732777),
-    _ = n(709382),
+    _ = n(732777),
+    m = n(709382),
     g = n(287245),
     p = n(615658),
     f = n(592044),
     x = n(100449),
     E = n(588703),
-    C = n(985018),
-    I = n(181039);
+    I = n(985018),
+    C = n(181039);
 let N = e => {
         let {
             channel: t,
             idle: n,
-            className: l,
+            className: s,
             participants: r
-        } = e, h = (0, m.A)(t.id), [A, N] = s.useState(!1), S = s.useCallback(e => {
+        } = e, h = (0, _.A)(t.id), [A, N] = l.useState(!1), T = l.useCallback(e => {
             u.Ay.update(t.id, {
                 seat: e
             })
-        }, [t.id]), [b, T] = (0, c.V)("haven-show-chat", !1);
-        s.useEffect(() => {
+        }, [t.id]), [S, b] = (0, c.V)("haven-show-chat", !1);
+        l.useEffect(() => {
             setTimeout(() => {
                 N(!0)
             }, 2500)
         }, []);
-        let [v, y] = s.useState(.65), [j, R] = s.useState(.65), [O, L] = s.useState(.65), [M, D] = s.useState({
+        let [y, v] = l.useState(.65), [j, R] = l.useState(.65), [O, L] = l.useState(.65), [M, D] = l.useState({
             x: 0,
             y: 0
-        }), [G, U] = s.useState(!1), [P, w] = s.useState(0), [k, V] = s.useState({
+        }), [U, G] = l.useState(!1), [P, k] = l.useState(0), [w, B] = l.useState({
             x: 0,
             y: 0
-        }), [B, H] = s.useState({
+        }), [V, H] = l.useState({
             x: 0,
             y: 0
-        }), [F, K] = s.useState(!1), W = s.useRef(null), [Y, z] = s.useState(null), q = (0, d.w)(e => {
+        }), [F, K] = l.useState(!1), W = l.useRef(null), [Y, z] = l.useState(null), q = (0, d.w)(e => {
             let {
                 contentRect: t,
                 target: n
-            } = e, i = n.getBoundingClientRect(), s = t.width, l = t.height, a = s / _.i.width * 1.5, r = l / _.i.height * 1.5, o = s / _.i.width * 1.1, c = l / _.i.height * 1.1;
-            V({
-                x: s / 2 + i.x,
-                y: l / 2 + i.y
+            } = e, i = n.getBoundingClientRect(), l = t.width, s = t.height, a = l / m.i.width * 1.5, r = s / m.i.height * 1.5, o = l / m.i.width * 1.1, c = s / m.i.height * 1.1;
+            B({
+                x: l / 2 + i.x,
+                y: s / 2 + i.y
             });
             let d = Math.max(a, r);
-            if (y(Math.max(o, c)), L(d), null != W.current) {
+            if (v(Math.max(o, c)), L(d), null != W.current) {
                 let e = W.current.getBoundingClientRect();
                 z({
                     x: e.left - i.left,
                     y: e.top - i.top
                 })
             }
-        }), X = s.useCallback(e => {
-            let t = Math.max(e, v),
+        }), X = l.useCallback(e => {
+            let t = Math.max(e, y),
                 n = q.current?.getBoundingClientRect();
             if (null == n) return;
             let i = {
                     x: 1156,
                     y: 1110
                 },
-                s = !0,
-                l = 0,
+                l = !0,
+                s = 0,
                 a = n.height / t;
-            for (; s && l < 10;)(s = i.y + a / 2 > 1536) && (i.y -= 32), l++;
+            for (; l && s < 10;)(l = i.y + a / 2 > 1536) && (i.y -= 32), s++;
             let r = i.x * t,
                 o = i.y * t,
                 c = n.width / 2 - r,
@@ -85,51 +84,51 @@ let N = e => {
                 x: c,
                 y: d
             })
-        }, [q, v]);
-        s.useEffect(() => {
+        }, [q, y]);
+        l.useEffect(() => {
             X(O)
         }, [O, X]);
-        let Q = s.useCallback(e => {
+        let J = l.useCallback(e => {
             let t = q.current?.getBoundingClientRect();
             if (null == t) return;
             let n = t.height / j,
                 i = t.width / j,
-                s = {
+                l = {
                     x: e.x / j,
                     y: e.y / j
                 },
-                l = e.y / j > 0,
+                s = e.y / j > 0,
                 a = e.x / j > 0,
-                r = s.y - n < -1536,
-                o = s.x - i < -2180;
-            r || l || a || o || D(e)
+                r = l.y - n < -1536,
+                o = l.x - i < -2180;
+            r || s || a || o || D(e)
         }, [q, j]);
         return (0, i.jsx)(o.vN3, {
             children: (0, i.jsxs)("div", {
                 ref: q,
-                className: a()(I.km, l),
+                className: a()(C.km, s),
                 onClick: () => {
-                    w(0)
+                    k(0)
                 },
-                onMouseDown: () => U(Date.now()),
+                onMouseDown: () => G(Date.now()),
                 onMouseUp: e => {
                     if (null != q.current) {
                         if (P < 2) {
                             let n = Date.now(),
                                 i = q.current.getBoundingClientRect(),
-                                s = {
+                                l = {
                                     x: (e.pageX - i.x - M.x) / j,
                                     y: (e.pageY - i.y - M.y) / j
                                 };
-                            !1 !== G && n - G > 250 && u.Ay.update(t.id, {
-                                position: s
+                            !1 !== U && n - U > 250 && u.Ay.update(t.id, {
+                                position: l
                             })
                         }
-                        U(!1)
+                        G(!1)
                     }
                 },
                 onMouseMove: e => {
-                    !1 !== G && (w(P + Math.abs(e.movementX) + Math.abs(e.movementY)), Q({
+                    !1 !== U && (k(P + Math.abs(e.movementX) + Math.abs(e.movementY)), J({
                         x: M.x + e.movementX,
                         y: M.y + e.movementY
                     })), H({
@@ -138,30 +137,30 @@ let N = e => {
                     })
                 },
                 children: [(0, i.jsx)("div", {
-                    className: I.VT,
+                    className: C.VT,
                     style: {
                         transform: `translate(${M.x}px, ${M.y}px) scale(${j}) `
                     },
-                    children: (0, i.jsx)(_.A, {
+                    children: (0, i.jsx)(m.A, {
                         roomSeats: h.seats,
                         roomParticipants: h.participants,
                         participants: r,
                         channel: t,
                         idle: n,
                         skipNewUserEducation: !A,
-                        onSeatClick: S
+                        onSeatClick: T
                     })
                 }), (0, i.jsxs)("div", {
-                    className: a()(I.nM, I.vf),
+                    className: a()(C.nM, C.vf),
                     children: [(0, i.jsxs)("div", {
-                        className: a()(I.nM, {
-                            [I.R]: n
+                        className: a()(C.nM, {
+                            [C.R]: n
                         }),
                         children: [(0, i.jsx)("div", {
                             ref: W,
                             children: (0, i.jsx)(o.K0, {
                                 variant: "icon-only",
-                                "aria-label": C.intl.string(E.default.W7TAH4),
+                                "aria-label": I.intl.string(E.default.W7TAH4),
                                 icon: o.T7G,
                                 disabled: n,
                                 onClick: e => {
@@ -170,20 +169,20 @@ let N = e => {
                             })
                         }), (0, i.jsx)(o.K0, {
                             variant: "icon-only",
-                            "aria-label": C.intl.string(E.default.O7EDNk),
-                            icon: b ? o._mZ : o.oyn,
+                            "aria-label": I.intl.string(E.default.O7EDNk),
+                            icon: S ? o._mZ : o.oyn,
                             disabled: n,
                             onClick: e => {
-                                e.preventDefault(), e.stopPropagation(), T(!b)
+                                e.preventDefault(), e.stopPropagation(), b(!S)
                             }
                         })]
                     }), (0, i.jsx)(g.A, {
                         channel: t,
                         idle: n,
-                        showChat: b ?? !1
+                        showChat: S ?? !1
                     }), (0, i.jsxs)("div", {
-                        className: a()(I.nM, {
-                            [I.R]: n
+                        className: a()(C.nM, {
+                            [C.R]: n
                         }),
                         children: [(0, i.jsx)(o.K0, {
                             variant: "icon-only",
@@ -215,11 +214,11 @@ let N = e => {
                         top: Y.y
                     } : void 0
                 }), (0, i.jsx)(p.A, {}), (0, i.jsx)("div", {
-                    className: a()(I.Lw, {
-                        [I.FD]: A
+                    className: a()(C.Lw, {
+                        [C.FD]: A
                     }),
                     children: (0, i.jsx)("div", {
-                        className: I.dH,
+                        className: C.dH,
                         children: (0, i.jsx)(o.Text, {
                             variant: "display-lg",
                             children: "Welcome to Haven"
@@ -229,12 +228,12 @@ let N = e => {
             })
         })
     },
-    S = e => {
+    T = e => {
         let t = h.s.useConfig({
                 location: "Haven"
             }).enabled,
             n = (0, r.bG)([A.A], () => A.A.isUserConnected(e.channel.id));
-        return (s.useEffect(() => {
+        return (l.useEffect(() => {
             !t || n || u.Ay.connect(e.channel.id)
         }, [e.channel.id, n, t]), t) ? (0, i.jsx)(N, {
             ...e

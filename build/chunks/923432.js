@@ -1,12 +1,11 @@
 /** chunk id: 923432 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
     A: () => x
 });
 var i = n(627968),
-    s = n(64700),
-    l = n(503698),
-    a = n.n(l),
+    l = n(64700),
+    s = n(503698),
+    a = n.n(s),
     r = n(382222),
     o = n(311907),
     c = n(397927),
@@ -14,8 +13,8 @@ var i = n(627968),
     u = n(636585),
     h = n(531685),
     A = n(147036),
-    m = n(288989),
-    _ = n(985018),
+    _ = n(288989),
+    m = n(985018),
     g = n(567207);
 let p = {
     friction: 30,
@@ -26,9 +25,9 @@ function f(e) {
     let {
         guildChannels: t,
         jumpToVoiceChannels: n
-    } = e, l = t.getCategoryFromSection(t.voiceChannelsSectionNumber), r = (0, d.A)(t.id), o = s.useCallback(e => {
+    } = e, s = t.getCategoryFromSection(t.voiceChannelsSectionNumber), r = (0, d.A)(t.id), o = l.useCallback(e => {
         e.preventDefault(), e.stopPropagation(), n()
-    }, [n]), h = l?.getChannelRecords() ?? [], m = (0, A.fK)({
+    }, [n]), h = s?.getChannelRecords() ?? [], _ = (0, A.fK)({
         channels: h,
         selectedChannelId: null,
         selectedVoiceChannelId: null,
@@ -46,13 +45,13 @@ function f(e) {
         }), (0, i.jsx)(c.Text, {
             variant: "text-xs/semibold",
             className: g.pM,
-            children: _.intl.format(_.t["fDlr+F"], {
-                count: m.length
+            children: m.intl.format(m.t["fDlr+F"], {
+                count: _.length
             })
         }), (0, i.jsx)(u.A, {
             guildId: t.id,
             className: g.J$,
-            users: m.slice(0, 4),
+            users: _.slice(0, 4),
             renderMoreUsers: () => null,
             max: 4,
             size: c._3J.SIZE_16
@@ -64,22 +63,22 @@ function x(e) {
     let {
         position: t,
         guildChannels: n,
-        guildChannelsVersion: l,
+        guildChannelsVersion: s,
         jumpToVoiceChannels: d,
         jumpToChannel: u
     } = e, {
         bottomBar: A,
         topBar: x
-    } = (0, o.cf)([m.A], () => m.A.getUnreadStateForGuildId(n.id)), E = (0, o.bG)([h.A], () => h.A.isFocused()), {
-        mode: C,
-        mentionCount: I,
+    } = (0, o.cf)([_.A], () => _.A.getUnreadStateForGuildId(n.id)), E = (0, o.bG)([h.A], () => h.A.isFocused()), {
+        mode: I,
+        mentionCount: C,
         targetChannelId: N
-    } = "bottom" === t ? A : x, S = C === m.k.HIDDEN, b = (0, c.zhh)({
+    } = "bottom" === t ? A : x, T = I === _.k.HIDDEN, S = (0, c.zhh)({
         to: {
-            transform: S ? "bottom" === t ? "translateY(180%)" : "translateY(-180%)" : "translateY(0%)"
+            transform: T ? "bottom" === t ? "translateY(180%)" : "translateY(-180%)" : "translateY(0%)"
         },
         config: p
-    }, E ? "respect-motion-settings" : "animate-never"), T = s.useCallback(e => {
+    }, E ? "respect-motion-settings" : "animate-never"), b = l.useCallback(e => {
         e.preventDefault(), e.stopPropagation(), null != N && u(N)
     }, [u, N]);
     return (0, i.jsx)("div", {
@@ -89,13 +88,13 @@ function x(e) {
         }),
         children: (0, i.jsx)(r.animated.div, {
             className: g.pK,
-            style: b,
-            "aria-hidden": S,
-            children: C === m.k.HIDDEN ? (0, i.jsx)("div", {
+            style: S,
+            "aria-hidden": T,
+            children: I === _.k.HIDDEN ? (0, i.jsx)("div", {
                 className: a()(g.M0, g.Te)
-            }) : C === m.k.UNREAD ? (0, i.jsxs)(c.DUT, {
+            }) : I === _.k.UNREAD ? (0, i.jsxs)(c.DUT, {
                 className: g.M0,
-                onClick: T,
+                onClick: b,
                 children: ["bottom" === t ? (0, i.jsx)(c.abt, {
                     size: "custom",
                     color: "currentColor",
@@ -112,23 +111,23 @@ function x(e) {
                     variant: "text-xs/semibold",
                     color: "interactive-text-default",
                     className: g.pM,
-                    children: _.intl.string(_.t.FCRiT3)
+                    children: m.intl.string(m.t.FCRiT3)
                 })]
-            }) : C === m.k.MENTIONS ? (0, i.jsx)(c.DUT, {
+            }) : I === _.k.MENTIONS ? (0, i.jsx)(c.DUT, {
                 className: a()(g.M0, g.vU),
-                onClick: T,
+                onClick: b,
                 children: (0, i.jsx)(c.Text, {
                     variant: "text-xs/semibold",
                     color: "badge-text-brand",
                     className: g.pM,
-                    children: _.intl.format(_.t.EQcLyp, {
-                        count: I
+                    children: m.intl.format(m.t.EQcLyp, {
+                        count: C
                     })
                 })
-            }) : C === m.k.VOICE_CHANNELS ? (0, i.jsx)(f, {
+            }) : I === _.k.VOICE_CHANNELS ? (0, i.jsx)(f, {
                 jumpToVoiceChannels: d,
                 guildChannels: n,
-                guildChannelsVersion: l
+                guildChannelsVersion: s
             }) : void 0
         })
     })

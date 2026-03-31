@@ -1,42 +1,42 @@
 /** chunk id: 941023 params = (module,exports,require) **/
 "use strict";
-i.d(t, {
-    A: () => v
+n.d(t, {
+    A: () => E
 });
-var n = i(64700),
-    s = i(735438),
-    a = i.n(s),
-    l = i(621466),
-    r = i(52133),
-    o = i(451988),
-    d = i(684013),
-    c = i(242286),
-    u = i(899699),
-    h = i(456797),
-    _ = i(723702);
-let p = {
+var i = n(64700),
+    s = n(735438),
+    a = n.n(s),
+    l = n(621466),
+    r = n(52133),
+    o = n(451988),
+    d = n(684013),
+    c = n(242286),
+    u = n(899699),
+    h = n(456797),
+    p = n(723702);
+let f = {
         x: 0,
         y: 0
     },
-    f = !1;
+    _ = !1;
 
-function m(e) {
+function A(e) {
     let {
         clientX: t,
-        clientY: i
+        clientY: n
     } = e;
-    f = !0, p.x = t, p.y = i
+    _ = !0, f.x = t, f.y = n
 }
 let g = new Map;
 
-function A(e, t) {
-    if (null == t) g.delete(e), 0 === g.size && (window.removeEventListener("mousemove", m), f = !1);
+function m(e, t) {
+    if (null == t) g.delete(e), 0 === g.size && (window.removeEventListener("mousemove", A), _ = !1);
     else {
-        let i = g.get(e);
-        if (null != i && (0, r.A)(i.zone, t.zone)) return;
-        0 === g.size && window.addEventListener("mousemove", m), g.set(e, t)
+        let n = g.get(e);
+        if (null != n && (0, r.A)(n.zone, t.zone)) return;
+        0 === g.size && window.addEventListener("mousemove", A), g.set(e, t)
     }
-    if (_.isPlatformEmbedded)
+    if (p.isPlatformEmbedded)
         if (c.default.isCurrentPidOutOfProcess()) {
             let e = Array.from(g.values()).map(e => {
                 let {
@@ -52,7 +52,7 @@ function A(e, t) {
             });
             d.A.setClickZones(e)
         } else {
-            var i;
+            var n;
             let e = (0, u.m)();
             if (null == e) return;
             e.broadcastCommand({
@@ -63,14 +63,14 @@ function A(e, t) {
                     } = e;
                     return t
                 })
-            }), i = e, x || (i.setClickZoneCallback((e, t, i) => {
-                let n = g.get(e);
-                null != n && (f || (p.x = t, p.y = i), n.instance.click())
+            }), n = e, x || (n.setClickZoneCallback((e, t, n) => {
+                let i = g.get(e);
+                null != i && (_ || (f.x = t, f.y = n), i.instance.click())
             }), x = !0)
         }
 }
 let x = !1;
-class v extends n.PureComponent {
+class E extends i.PureComponent {
     static defaultProps = {
         observe: !0,
         observeInterval: 1e3
@@ -81,7 +81,7 @@ class v extends n.PureComponent {
         this.props.observe ? this.observeZone() : this.updateZone()
     }
     componentWillUnmount() {
-        this.interval.stop(), A(this.zone, null)
+        this.interval.stop(), m(this.zone, null)
     }
     componentDidUpdate(e) {
         let {
@@ -90,7 +90,7 @@ class v extends n.PureComponent {
         t !== e.observe && (t ? this.observeZone() : this.interval.stop())
     }
     render() {
-        return n.Children.only(this.props.children)
+        return i.Children.only(this.props.children)
     }
     observeZone() {
         this.updateZone(), this.interval.start(this.props.observeInterval, this.updateZone)
@@ -100,24 +100,24 @@ class v extends n.PureComponent {
         if ((0, l.vq)(e)) {
             let {
                 left: t,
-                top: i,
-                right: n,
+                top: n,
+                right: i,
                 bottom: s
             } = e.getBoundingClientRect();
-            A(this.zone, {
+            m(this.zone, {
                 instance: this,
                 zone: {
                     name: this.zone,
                     left: Math.floor(t),
-                    top: Math.floor(i),
-                    right: Math.ceil(n),
+                    top: Math.floor(n),
+                    right: Math.ceil(i),
                     bottom: Math.ceil(s)
                 }
             })
         }
     };
     click() {
-        let e = (0, h._)("click", p.x, p.y);
-        (0, h.K)(e, p.x, p.y)
+        let e = (0, h._)("click", f.x, f.y);
+        (0, h.K)(e, f.x, f.y)
     }
 }

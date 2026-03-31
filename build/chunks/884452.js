@@ -1,13 +1,12 @@
 /** chunk id: 884452 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
     Ay: () => p,
     is: () => g,
-    sc: () => _
+    sc: () => m
 });
 var i = n(627968),
-    s = n(64700),
-    l = n(397927),
+    l = n(64700),
+    s = n(397927),
     a = n(637248),
     r = n(728321),
     o = n(244083),
@@ -16,12 +15,12 @@ var i = n(627968),
     u = n(83766),
     h = n(652215),
     A = n(985018),
-    m = n(116648);
+    _ = n(116648);
 
-function _(e, t, n, i) {
-    let s = "compact" === i ? 8 : 12;
-    if (e === c.PU) return s;
-    if (e === c.bK) return t.features.has(h.GuildFeatures.HUB) ? 0 : s;
+function m(e, t, n, i) {
+    let l = "compact" === i ? 8 : 12;
+    if (e === c.PU) return l;
+    if (e === c.bK) return t.features.has(h.GuildFeatures.HUB) ? 0 : l;
     if (e === n.voiceChannelsSectionNumber) {
         let t = n.getCategoryFromSection(e);
         if (null == t || t.isEmpty()) return 0;
@@ -51,53 +50,53 @@ function g(e, t) {
         }
     }
 }
-let p = s.memo(function(e) {
+let p = l.memo(function(e) {
     let {
         sectionIndex: t,
         guild: n,
-        guildChannels: _,
+        guildChannels: m,
         guildChannelsVersion: g,
         selectedChannelId: p,
         disableManageChannels: f
-    } = e, x = s.useCallback(() => {
-        let e = _.getCategoryFromSection(_.recentsSectionNumber);
+    } = e, x = l.useCallback(() => {
+        let e = m.getCategoryFromSection(m.recentsSectionNumber);
         if (null == e) return;
         let t = null,
             i = e.getShownChannelAndThreadIds();
-        null != p && i.includes(p) && (t = (0, a.xb)(_)), (0, a.DD)(n.id, i, t)
-    }, [n.id, p, _, g]), {
+        null != p && i.includes(p) && (t = (0, a.xb)(m)), (0, a.DD)(n.id, i, t)
+    }, [n.id, p, m, g]), {
         density: E
-    } = (0, l.wRf)(), C = "compact" === E ? 8 : 12;
+    } = (0, s.wRf)(), I = "compact" === E ? 8 : 12;
     switch (t) {
         case c.PU:
             return (0, i.jsx)("div", {
                 style: {
-                    height: C
+                    height: I
                 }
             });
         case c.bK:
             if (n.features.has(h.GuildFeatures.HUB)) return null;
             return (0, i.jsx)("div", {
                 style: {
-                    height: C
+                    height: I
                 }
             });
         case c.HP:
             return (0, i.jsx)(d.P4, {
                 name: A.intl.string(A.t.mlPMCy)
             });
-        case _.recentsSectionNumber:
+        case m.recentsSectionNumber:
             return (0, i.jsx)(d.P4, {
                 name: A.intl.string(A.t.gKcrqM),
                 onDismiss: x
             });
-        case _.voiceChannelsSectionNumber: {
-            let e = _.getCategoryFromSection(_.voiceChannelsSectionNumber);
+        case m.voiceChannelsSectionNumber: {
+            let e = m.getCategoryFromSection(m.voiceChannelsSectionNumber);
             if (null == e || e.isEmpty()) return null;
-            let n = _.getChannelFromSectionRow(t, 0)?.channel;
-            return (0, i.jsxs)(s.Fragment, {
+            let n = m.getChannelFromSectionRow(t, 0)?.channel;
+            return (0, i.jsxs)(l.Fragment, {
                 children: [(0, i.jsx)("div", {
-                    className: m.ts
+                    className: _.ts
                 }), (0, i.jsx)(d.kD, {
                     category: e,
                     channel: n
@@ -105,7 +104,7 @@ let p = s.memo(function(e) {
             })
         }
         case c.TF: {
-            let e = _.getNamedCategoryFromSection(t);
+            let e = m.getNamedCategoryFromSection(t);
             if (null == e) return null;
             return (0, i.jsx)(d.Ay, {
                 channel: e.record,
@@ -120,7 +119,7 @@ let p = s.memo(function(e) {
             })
         }
         default: {
-            let e = _.getNamedCategoryFromSection(t);
+            let e = m.getNamedCategoryFromSection(t);
             if (null == e) return null;
             return (0, i.jsx)(d.Ay, {
                 channel: e.record,

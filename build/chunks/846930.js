@@ -1,12 +1,11 @@
 /** chunk id: 846930 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
     A: () => d
 });
 var i = n(627968);
 n(64700);
-var s = n(503698),
-    l = n.n(s),
+var l = n(503698),
+    s = n.n(l),
     a = n(489027);
 let r = () => (0, i.jsx)("div", {
         className: a.jH
@@ -35,7 +34,7 @@ let r = () => (0, i.jsx)("div", {
             withBannerPadding: t
         } = e;
         return (0, i.jsxs)("div", {
-            className: l()(a.kL, {
+            className: s()(a.kL, {
                 [a.o5]: t
             }),
             children: [(0, i.jsx)(o, {}), (0, i.jsx)(c, {

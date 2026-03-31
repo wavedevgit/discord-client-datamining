@@ -13,8 +13,8 @@ var i = n(627968),
     u = n(268749),
     g = n(239705),
     A = n(264349),
-    p = n(997509),
-    m = n(652215),
+    m = n(997509),
+    p = n(652215),
     f = n(411335),
     h = n(985018),
     y = n(383799);
@@ -29,10 +29,10 @@ function _(e, t) {
         errorMessage: b
     } = (0, u.S)(), {
         createNewEditingRule: v
-    } = (0, u.U)(), [x, I] = l.useState(!1), [j, T] = (0, o.H6)(t), {
+    } = (0, u.U)(), [T, I] = l.useState(!1), [x, j] = (0, o.H6)(t), {
         rulesByTriggerType: D,
         updateRule: M
-    } = (0, o.wP)(t), C = l.useMemo(() => D[E] ?? [], [D]), N = 0 === C.length, O = n > C.length && !N;
+    } = (0, o.wP)(t), C = l.useMemo(() => D[E] ?? [], [D]), O = 0 === C.length, N = n > C.length && !O;
     if (!l.useMemo(() => (0, c.i_)(t), [t]) || null == e || 0 === e.length || null == t) return null;
     let R = e.split(" "),
         G = R.length;
@@ -42,7 +42,7 @@ function _(e, t) {
         return null
     }
     let L = () => {
-            null != t && ((0, r.Z_)(), p.A.open(t, m.BEX.GUILD_AUTOMOD), setTimeout(() => {
+            null != t && ((0, r.Z_)(), m.A.open(t, p.BEX.GUILD_AUTOMOD), setTimeout(() => {
                 v(t, E, {
                     triggerMetadata: {
                         keywordFilter: [e],
@@ -66,8 +66,8 @@ function _(e, t) {
             id: "automod-rules-loading",
             label: h.intl.string(h.t.ZTNur7)
         });
-    return j || (P = (0, i.jsxs)(i.Fragment, {
-        children: [N && (0, i.jsx)(a.Drp, {
+    return x || (P = (0, i.jsxs)(i.Fragment, {
+        children: [O && (0, i.jsx)(a.Drp, {
             id: "add-first-rule",
             label: h.intl.string(h.t.f72Zqb),
             action: L,
@@ -98,7 +98,7 @@ function _(e, t) {
                 disabled: _,
                 action: () => w(e)
             }, e.id)
-        }), O && (0, i.jsxs)(i.Fragment, {
+        }), N && (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)(a.bXX, {}), (0, i.jsx)(a.Drp, {
                 id: "add-another-rule",
                 label: h.intl.string(h.t["0K5jDE"]),
@@ -116,7 +116,7 @@ function _(e, t) {
             icon: a.lmn
         },
         onFocus: () => {
-            x || (I(!0), T())
+            T || (I(!0), j())
         },
         children: P
     })

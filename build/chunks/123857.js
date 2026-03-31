@@ -15,20 +15,20 @@ var i = n(627968),
     c = n(775602),
     u = n(793574),
     m = n(688810),
-    _ = n(47671),
-    g = n(959443),
-    x = n(692798),
-    A = n(793943),
+    g = n(47671),
+    _ = n(959443),
+    A = n(692798),
+    x = n(793943),
     h = n(826673),
     p = n(422936),
     T = n(234419),
     f = n(792656),
-    S = n(511484),
-    E = n(811611),
+    E = n(511484),
+    S = n(811611),
     b = n(97469),
     C = n(954571),
-    v = n(544028),
-    N = n(253932),
+    N = n(544028),
+    v = n(253932),
     I = n(12901),
     j = n(652215),
     y = n(49999),
@@ -39,12 +39,12 @@ let L = () => {
     (0, h.Dr)(a.M.CLIENT_THEMES_SPARKLE_PREVIEW, {
         dismissAction: y.i.PRIMARY,
         forceTrack: !0
-    }), (0, A.nf)(A.HP.CLIENT_THEMES), (0, I.default)()
+    }), (0, x.nf)(x.HP.CLIENT_THEMES), (0, I.default)()
 };
 
 function D() {
     let e = (0, p.O)(),
-        t = (0, S.U9)(e, O.pe.TIER_2) ? R.intl.formatToPlainString(R.t.bkQ4bH, {
+        t = (0, E.U9)(e, O.pe.TIER_2) ? R.intl.formatToPlainString(R.t.bkQ4bH, {
             percent: e?.discount.amount
         }) : R.intl.string(R.t.mr4K7D);
     return (0, i.jsx)(f.A, {
@@ -59,7 +59,7 @@ function D() {
 }
 
 function G() {
-    let e = (0, l.bG)([_.A], () => _.A.isPreview),
+    let e = (0, l.bG)([g.A], () => g.A.isPreview),
         t = (0, T.V)()?.subscription_trial?.sku_id === O.pe.TIER_2;
     return !e || t ? null : (0, i.jsxs)("div", {
         className: P.gY,
@@ -74,7 +74,7 @@ function G() {
 function M(e) {
     let {
         children: t
-    } = e, n = (0, l.bG)([_.A], () => _.A.isPreview), {
+    } = e, n = (0, l.bG)([g.A], () => g.A.isPreview), {
         analyticsLocations: a
     } = (0, m.Ay)(u.A.USER_SETTINGS);
     return (s.useEffect(() => {
@@ -89,7 +89,7 @@ function M(e) {
 }
 
 function k() {
-    let e = (0, l.bG)([_.A], () => _.A.isPreview),
+    let e = (0, l.bG)([g.A], () => g.A.isPreview),
         t = (0, T.V)()?.subscription_trial?.sku_id === O.pe.TIER_2;
     return e && t ? (0, i.jsxs)("div", {
         children: [(0, i.jsx)("div", {
@@ -102,19 +102,19 @@ function k() {
             })
         }), (0, i.jsx)("div", {
             className: P.BU
-        }), (0, i.jsx)(E.Ay, {
+        }), (0, i.jsx)(S.Ay, {
             type: O.e.PREMIUM_CLIENT_THEME_SETTINGS_UPSELL,
             subscriptionTier: O.pe.TIER_2
         })]
     }) : null
 }
 let U = () => (0, i.jsx)("div", {
-    children: (0, i.jsxs)(x.Ay, {
-        type: x.v0.SETTINGS,
-        children: [(0, i.jsx)(x.Ay.Basic, {
+    children: (0, i.jsxs)(A.Ay, {
+        type: A.v0.SETTINGS,
+        children: [(0, i.jsx)(A.Ay.Basic, {
             className: P.a6
-        }), (0, i.jsx)(w, {}), (0, i.jsx)(g.A, {}), (0, i.jsxs)(M, {
-            children: [(0, i.jsx)(x.Ay.Gradient, {
+        }), (0, i.jsx)(w, {}), (0, i.jsx)(_.A, {}), (0, i.jsxs)(M, {
+            children: [(0, i.jsx)(A.Ay.Gradient, {
                 disabled: !1,
                 renderCTAButtons: () => (0, i.jsx)(G, {})
             }), (0, i.jsx)(k, {})]
@@ -128,12 +128,12 @@ function w() {
             theme: t,
             useForcedColors: n,
             gradientPreset: s
-        } = (0, l.cf)([v.A, c.A, _.A], () => ({
-            theme: v.A.theme,
+        } = (0, l.cf)([N.A, c.A, g.A], () => ({
+            theme: N.A.theme,
             useForcedColors: c.A.useForcedColors,
-            gradientPreset: _.A.gradientPreset
+            gradientPreset: g.A.gradientPreset
         })),
-        a = null != N.eh.useSetting().customUserThemeSettings;
+        a = null != v.eh.useSetting().customUserThemeSettings;
     return t !== j.NJ8.LIGHT ? null : (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(o.cGx, {
             gap: 24
@@ -147,7 +147,7 @@ function w() {
         })]
     })
 }
-let V = () => (0, l.bG)([_.A], () => _.A.isPreview) ? null : (0, i.jsx)(o.Button, {
+let V = () => (0, l.bG)([g.A], () => g.A.isPreview) ? null : (0, i.jsx)(o.Button, {
     variant: "primary",
     text: R.intl.string(R.t.qYXrkX),
     onClick: L
@@ -157,10 +157,10 @@ function B(e) {
     let {
         size: t
     } = e;
-    return (0, i.jsx)(x.Ay, {
-        type: x.v0.SETTINGS,
+    return (0, i.jsx)(A.Ay, {
+        type: A.v0.SETTINGS,
         children: (0, i.jsxs)(M, {
-            children: [(0, i.jsx)(x.ew, {
+            children: [(0, i.jsx)(A.ew, {
                 isCoachmark: !1,
                 renderCTAButtons: () => (0, i.jsx)(G, {}),
                 headingClassName: P.EK,
@@ -174,7 +174,7 @@ function B(e) {
                 padding: {
                     top: 24
                 },
-                children: (0, i.jsx)(x.Zg, {
+                children: (0, i.jsx)(A.Zg, {
                     disabled: !1,
                     size: t
                 })

@@ -26,7 +26,6 @@ function u(e) {
     return (0, i.jsxs)(r.A, {
         className: c.jr,
         toolbar: m,
-        hideForLater: !0,
         hideSearch: !0,
         children: ["DEFAULT" === l && (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)(u, {

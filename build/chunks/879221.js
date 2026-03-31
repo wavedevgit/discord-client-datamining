@@ -1,11 +1,10 @@
 /** chunk id: 879221 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
     A: () => r
 });
 var i = n(627968),
-    s = n(990078),
-    l = n(851109),
+    l = n(990078),
+    s = n(851109),
     a = n(985018);
 
 function r(e) {
@@ -13,10 +12,10 @@ function r(e) {
         children: t
     } = e, {
         notificationCenterVariant: n
-    } = (0, l.X8)({
+    } = (0, s.X8)({
         location: "NotificationsInboxTooltip"
-    }), r = n === l.U5.LEGACY ? a.intl.string(a.t.GSmTKJ) : a.intl.string(a.t.HcoRu0);
-    return (0, i.jsx)(s.m, {
+    }), r = n === s.U5.LEGACY ? a.intl.string(a.t.GSmTKJ) : a.intl.string(a.t.HcoRu0);
+    return (0, i.jsx)(l.m, {
         spacing: 12,
         position: "right",
         text: r,

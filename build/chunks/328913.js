@@ -1,29 +1,29 @@
 /** chunk id: 328913 params = (module,exports,require) **/
 "use strict";
-i.d(t, {
-    A: () => v
+n.d(t, {
+    A: () => E
 });
-var n = i(627968),
-    s = i(64700),
-    a = i(503698),
-    l = i.n(a),
-    r = i(311907),
-    o = i(685603),
-    d = i(467627),
-    c = i(967198),
-    u = i(855790),
-    h = i(335022),
-    _ = i(714977),
-    p = i(266244),
-    f = i(439817),
-    m = i(985018),
-    g = i(156052);
+var i = n(627968),
+    s = n(64700),
+    a = n(503698),
+    l = n.n(a),
+    r = n(311907),
+    o = n(685603),
+    d = n(467627),
+    c = n(967198),
+    u = n(855790),
+    h = n(335022),
+    p = n(714977),
+    f = n(266244),
+    _ = n(439817),
+    A = n(985018),
+    g = n(156052);
 
-function A(e) {
+function m(e) {
     let {
         closePopout: t
     } = e;
-    return (0, n.jsx)(_.A, {
+    return (0, i.jsx)(p.A, {
         onClose: t
     })
 }
@@ -41,22 +41,22 @@ class x extends s.PureComponent {
         let {
             selectedGuildId: e,
             locked: t,
-            contained: i,
+            contained: n,
             className: s
-        } = this.props, a = null != e ? (0, n.jsx)(h.A, {
+        } = this.props, a = null != e ? (0, i.jsx)(h.A, {
             guildId: e,
             onDragStart: this.onDragStart
-        }, e) : (0, n.jsx)(f.A, {
-            title: m.intl.string(m.t.YUU0RF),
-            renderSettings: A,
+        }, e) : (0, i.jsx)(_.A, {
+            title: A.intl.string(A.t.YUU0RF),
+            renderSettings: m,
             onDragStart: this.onDragStart,
-            children: (0, n.jsx)(p.A, {})
-        }), r = i ? "div" : u.Ay;
-        return (0, n.jsxs)(r, {
+            children: (0, i.jsx)(f.A, {})
+        }), r = n ? "div" : u.Ay;
+        return (0, i.jsxs)(r, {
             className: l()(g.E, {
-                [g.H]: !i
+                [g.H]: !n
             }, s),
-            children: [(0, n.jsx)(d.A, {
+            children: [(0, i.jsx)(d.A, {
                 isOverlay: !0,
                 disableAppDownload: !0,
                 isVisible: !t
@@ -64,6 +64,6 @@ class x extends s.PureComponent {
         })
     }
 }
-let v = r.Ay.connectStores([c.A], () => ({
+let E = r.Ay.connectStores([c.A], () => ({
     selectedGuildId: c.A.getGuildId()
 }))(x)

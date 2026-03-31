@@ -5,8 +5,8 @@ n.d(t, {
     ff: () => u
 });
 var a = n(530493),
-    i = n(985018),
-    l = n(833450),
+    l = n(985018),
+    i = n(833450),
     r = n(5678),
     s = n(623915),
     c = n(616276);
@@ -14,13 +14,13 @@ var a = n(530493),
 function o(e) {
     switch (e) {
         case a.h.MIGHTY:
-            return i.intl.string(i.t.aZej2g);
+            return l.intl.string(l.t.aZej2g);
         case a.h.STRONG:
-            return i.intl.string(i.t.MLxnSg);
+            return l.intl.string(l.t.MLxnSg);
         case a.h.FAIR:
-            return i.intl.string(i.t["3f19KA"]);
+            return l.intl.string(l.t["3f19KA"]);
         case a.h.WEAK:
-            return i.intl.string(i.t.jtVgSh)
+            return l.intl.string(l.t.jtVgSh)
     }
 }
 
@@ -31,7 +31,7 @@ function d(e) {
         case a.h.STRONG:
             return s.A;
         case a.h.FAIR:
-            return l.A;
+            return i.A;
         case a.h.WEAK:
             return c.A
     }

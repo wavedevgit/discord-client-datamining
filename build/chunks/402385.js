@@ -1,11 +1,10 @@
 /** chunk id: 402385 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
     A: () => D
 }), n(321073);
 var i = n(627968),
-    s = n(64700),
-    l = n(311907),
+    l = n(64700),
+    s = n(311907),
     a = n(554146),
     r = n(342494),
     o = n(397927),
@@ -14,51 +13,51 @@ var i = n(627968),
     u = n(775602),
     h = n(641703),
     A = n(313961),
-    m = n(826673),
-    _ = n(379848),
+    _ = n(826673),
+    m = n(379848),
     g = n(753727),
     p = n(267102),
     f = n(222692),
     x = n(442353),
     E = n(470710),
-    C = n(186111),
-    I = n(430452),
+    I = n(186111),
+    C = n(430452),
     N = n(994500),
-    S = n(287809),
-    b = n(977997),
-    T = n(203982),
-    v = n(58736),
-    y = n(652215),
+    T = n(287809),
+    S = n(977997),
+    b = n(203982),
+    y = n(58736),
+    v = n(652215),
     j = n(360469),
     R = n(49999),
     O = n(731854),
     L = n(985018);
-class M extends s.PureComponent {
-    iconRef = s.createRef();
+class M extends l.PureComponent {
+    iconRef = l.createRef();
     componentDidMount() {
-        T._.subscribe(y.jej.CALL_START, this.handleVoiceClick)
+        b._.subscribe(v.jej.CALL_START, this.handleVoiceClick)
     }
     componentWillUnmount() {
-        T._.unsubscribe(y.jej.CALL_START, this.handleVoiceClick)
+        b._.unsubscribe(v.jej.CALL_START, this.handleVoiceClick)
     }
     renderVideoCallButton() {
         let e, {
             inCall: t,
             callActive: n,
-            callUnavailable: s,
-            isBlocked: l,
+            callUnavailable: l,
+            isBlocked: s,
             channel: a,
             mode: r,
             isProvisional: c
         } = this.props;
-        if (t || n && r === y._Of.VOICE) return null;
+        if (t || n && r === v._Of.VOICE) return null;
         let d = a.isManaged(),
             u = null,
             h = !1;
-        return c ? (h = !0, u = L.intl.string(L.t.izMR7o)) : I.Ay.supports(O.O5.VIDEO) ? l ? (u = L.intl.string(L.t.PHzjvX), h = !0) : n && r === y._Of.VIDEO ? (e = this.handleJoinVideoCall, u = d ? L.intl.string(L.t.S0W8Z5) : L.intl.string(L.t.W68MhH)) : (e = this.handleStartVideoCall, u = d ? L.intl.string(L.t.S0W8Z5) : L.intl.string(L.t.oCqlGG)) : (h = !0, e = this.handleBrowserNotSupported, u = L.intl.string(L.t.UVpg3U)), (0, i.jsx)(v.Ay.Icon, {
+        return c ? (h = !0, u = L.intl.string(L.t.izMR7o)) : C.Ay.supports(O.O5.VIDEO) ? s ? (u = L.intl.string(L.t.PHzjvX), h = !0) : n && r === v._Of.VIDEO ? (e = this.handleJoinVideoCall, u = d ? L.intl.string(L.t.S0W8Z5) : L.intl.string(L.t.W68MhH)) : (e = this.handleStartVideoCall, u = d ? L.intl.string(L.t.S0W8Z5) : L.intl.string(L.t.oCqlGG)) : (h = !0, e = this.handleBrowserNotSupported, u = L.intl.string(L.t.UVpg3U)), (0, i.jsx)(y.Ay.Icon, {
             icon: o.npA,
             onClick: e,
-            disabled: h || s,
+            disabled: h || l,
             tooltip: u
         })
     }
@@ -66,8 +65,8 @@ class M extends s.PureComponent {
         let e, {
             inCall: t,
             callActive: n,
-            callUnavailable: s,
-            isBlocked: l,
+            callUnavailable: l,
+            isBlocked: s,
             channel: c,
             dismissibleContentTypes: d,
             isProvisional: u
@@ -75,8 +74,8 @@ class M extends s.PureComponent {
         if (t) return null;
         let h = c.isManaged(),
             A = !1;
-        u ? (A = !0, e = L.intl.string(L.t.izMR7o)) : s ? (e = h ? L.intl.string(L.t.LW2Ghr) : L.intl.string(L.t.rF7lN5), A = !0) : l ? (e = L.intl.string(L.t.PHzjvX), A = !0) : e = n ? h ? L.intl.string(L.t.S0W8Z5) : L.intl.string(L.t.fdEeb5) : h ? L.intl.string(L.t.S0W8Z5) : L.intl.string(L.t.focH1t);
-        let m = (0, i.jsx)(v.Ay.Icon, {
+        u ? (A = !0, e = L.intl.string(L.t.izMR7o)) : l ? (e = h ? L.intl.string(L.t.LW2Ghr) : L.intl.string(L.t.rF7lN5), A = !0) : s ? (e = L.intl.string(L.t.PHzjvX), A = !0) : e = n ? h ? L.intl.string(L.t.S0W8Z5) : L.intl.string(L.t.fdEeb5) : h ? L.intl.string(L.t.S0W8Z5) : L.intl.string(L.t.focH1t);
+        let _ = (0, i.jsx)(y.Ay.Icon, {
             ref: this.iconRef,
             icon: o._jp,
             onClick: this.handleVoiceClick,
@@ -84,7 +83,7 @@ class M extends s.PureComponent {
             tooltip: e
         });
         return (0, i.jsxs)(i.Fragment, {
-            children: [m, (0, i.jsx)(_.Ay, {
+            children: [_, (0, i.jsx)(m.Ay, {
                 contentTypes: d,
                 children: e => {
                     let {
@@ -109,7 +108,7 @@ class M extends s.PureComponent {
         })
     }
     render() {
-        return (0, i.jsxs)(s.Fragment, {
+        return (0, i.jsxs)(l.Fragment, {
             children: [this.renderVoiceCallButton(), this.renderVideoCallButton()]
         })
     }
@@ -117,9 +116,9 @@ class M extends s.PureComponent {
         let {
             channel: n,
             notFriend: i,
-            appContext: s
-        } = this.props, l = i ? n.getRecipientId() : null, a = () => c.A.call(n.id, t, !i && !n.isManaged() && !e?.shiftKey, l);
-        t ? (0, x.A)(a, s) : a()
+            appContext: l
+        } = this.props, s = i ? n.getRecipientId() : null, a = () => c.A.call(n.id, t, !i && !n.isManaged() && !e?.shiftKey, s);
+        t ? (0, x.A)(a, l) : a()
     };
     handleJoinCall = e => {
         d.default.selectVoiceChannel(this.props.channel.id, e)
@@ -130,7 +129,7 @@ class M extends s.PureComponent {
             callActive: n,
             dismissibleContentTypes: i
         } = this.props;
-        if (i.includes(a.M.ACTIVITY_GDM_CALL_TOOLTIP) && (0, m.Dr)(a.M.ACTIVITY_GDM_CALL_TOOLTIP, {
+        if (i.includes(a.M.ACTIVITY_GDM_CALL_TOOLTIP) && (0, _.Dr)(a.M.ACTIVITY_GDM_CALL_TOOLTIP, {
                 dismissAction: R.i.AUTO
             }), t);
         else if (n) return this.handleJoinCall(!1);
@@ -153,30 +152,30 @@ class M extends s.PureComponent {
 function D(e) {
     let {
         channel: t
-    } = e, n = (0, g.A)(), s = (0, l.bG)([A.A], () => A.A.getMode(t.id)), r = (0, l.bG)([b.A], () => b.A.isInChannel(t.id)), o = (0, l.bG)([u.A], () => u.A.useReducedMotion), {
+    } = e, n = (0, g.A)(), l = (0, s.bG)([A.A], () => A.A.getMode(t.id)), r = (0, s.bG)([S.A], () => S.A.isInChannel(t.id)), o = (0, s.bG)([u.A], () => u.A.useReducedMotion), {
         callActive: c,
         callUnavailable: d
-    } = (0, l.cf)([E.A], () => ({
+    } = (0, s.cf)([E.A], () => ({
         callActive: E.A.isCallActive(t.id),
         callUnavailable: E.A.isCallUnavailable(t.id)
-    })), m = t.getRecipientId(), {
-        notFriend: _,
+    })), _ = t.getRecipientId(), {
+        notFriend: m,
         isBlocked: f
-    } = (0, l.cf)([N.A], () => ({
-        notFriend: t.type === y.rbe.DM && null != m && !N.A.isFriend(m),
-        isBlocked: t.type === y.rbe.DM && null != m && N.A.isBlocked(m)
-    })), x = (0, l.bG)([S.default], () => S.default.getUser(m)), I = (0, p.Us)(), T = [], v = (0, h.A)(t.id), j = (0, l.bG)([C.A], () => C.A.hasLayers());
-    return (v && !j && T.push(a.M.ACTIVITY_GDM_CALL_TOOLTIP), n || x?.bot) ? null : (0, i.jsx)(M, {
+    } = (0, s.cf)([N.A], () => ({
+        notFriend: t.type === v.rbe.DM && null != _ && !N.A.isFriend(_),
+        isBlocked: t.type === v.rbe.DM && null != _ && N.A.isBlocked(_)
+    })), x = (0, s.bG)([T.default], () => T.default.getUser(_)), C = (0, p.Us)(), b = [], y = (0, h.A)(t.id), j = (0, s.bG)([I.A], () => I.A.hasLayers());
+    return (y && !j && b.push(a.M.ACTIVITY_GDM_CALL_TOOLTIP), n || x?.bot) ? null : (0, i.jsx)(M, {
         channel: t,
-        mode: s,
+        mode: l,
         inCall: r,
         callActive: c,
         isProvisional: x?.isProvisional ?? !1,
         callUnavailable: d,
-        notFriend: _,
+        notFriend: m,
         isBlocked: f,
-        appContext: I,
-        dismissibleContentTypes: T,
+        appContext: C,
+        dismissibleContentTypes: b,
         useReducedMotion: o
     })
 }

@@ -1,13 +1,12 @@
 /** chunk id: 816288 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
-    A: () => b,
+    A: () => S,
     n: () => N
 });
 var i = n(627968),
-    s = n(64700),
-    l = n(503698),
-    a = n.n(l),
+    l = n(64700),
+    s = n(503698),
+    a = n.n(s),
     r = n(382222),
     o = n(158954),
     c = n(311907),
@@ -15,22 +14,22 @@ var i = n(627968),
     u = n(442433),
     h = n(793574),
     A = n(230135),
-    m = n(552836),
-    _ = n(147925),
+    _ = n(552836),
+    m = n(147925),
     g = n(363487),
     p = n(267771),
     f = n(828162),
     x = n(259568),
     E = n(333354),
-    C = n(985018),
-    I = n(208988);
-let N = s.forwardRef((e, t) => {
+    I = n(985018),
+    C = n(208988);
+let N = l.forwardRef((e, t) => {
     let {
         appliedBoostCount: n,
-        maxBoostCount: l,
+        maxBoostCount: s,
         premiumSubscriberCount: c,
         className: u
-    } = e, h = n >= l, A = Math.min(n / l * 100, 100), [m, g] = (0, d.zhh)(() => ({
+    } = e, h = n >= s, A = Math.min(n / s * 100, 100), [_, g] = (0, d.zhh)(() => ({
         width: n === c ? `calc(${A}% - 4px)` : "0%",
         config: {
             tension: 250,
@@ -38,67 +37,67 @@ let N = s.forwardRef((e, t) => {
             mass: 1
         }
     }), "respect-motion-settings", [n, c]);
-    return s.useEffect(() => {
+    return l.useEffect(() => {
         g({
             width: `calc(${A}% - 4px)`
         })
     }, [A, g]), (0, i.jsxs)("div", {
         ref: t,
-        className: I.hQ,
+        className: C.hQ,
         children: [(0, i.jsx)("div", {
-            className: a()(I.L$, u)
+            className: a()(C.L$, u)
         }), (0, i.jsx)(r.animated.div, {
-            className: a()(I.qB, {
-                [I.mu]: A <= 5
+            className: a()(C.qB, {
+                [C.mu]: A <= 5
             }),
-            style: m
+            style: _
         }), (0, i.jsxs)("div", {
-            className: I.FS,
+            className: C.FS,
             children: [(0, i.jsxs)("div", {
-                className: I.Ui,
+                className: C.Ui,
                 children: [(0, i.jsx)(o.EYj, {
-                    className: I.Qq,
+                    className: C.Qq,
                     variant: "text-xs/semibold",
-                    children: C.intl.string(E.default.NI6Ihe)
-                }), c >= l && (0, i.jsx)(o.EYj, {
-                    className: I.Qq,
+                    children: I.intl.string(E.default.NI6Ihe)
+                }), c >= s && (0, i.jsx)(o.EYj, {
+                    className: C.Qq,
                     variant: "text-xs/semibold",
                     children: "\uD83C\uDF89"
                 })]
             }), (0, i.jsxs)("div", {
-                className: I.Ui,
+                className: C.Ui,
                 children: [(0, i.jsx)(o.EYj, {
-                    className: a()(I.Qq, I.ue),
+                    className: a()(C.Qq, C.ue),
                     variant: "text-xs/semibold",
-                    children: h ? C.intl.formatToPlainString(E.default["Ehpq+7"], {
+                    children: h ? I.intl.formatToPlainString(E.default["Ehpq+7"], {
                         appliedBoostCount: n
-                    }) : C.intl.formatToPlainString(E.default["/rbPDs"], {
+                    }) : I.intl.formatToPlainString(E.default["/rbPDs"], {
                         appliedBoostCount: n,
-                        maxBoostCount: l
+                        maxBoostCount: s
                     })
-                }), (0, i.jsx)(_.A, {
+                }), (0, i.jsx)(m.A, {
                     width: 12,
                     height: 12,
-                    direction: _.A.Directions.RIGHT,
-                    className: a()(I.Qq, I.ue)
+                    direction: m.A.Directions.RIGHT,
+                    className: a()(C.Qq, C.ue)
                 })]
             })]
         })]
     })
 });
 
-function S(e) {
+function T(e) {
     let {
         guild: t,
-        withMargin: l
-    } = e, r = s.useRef(null), o = (0, p.A)(t), _ = (0, g.A)(t.id), E = s.useCallback(() => {
+        withMargin: s
+    } = e, r = l.useRef(null), o = (0, p.A)(t), m = (0, g.A)(t.id), E = l.useCallback(() => {
         (0, f.A)(t.id, h.A.GUILD_BOOSTING_SIDEBAR_DISPLAY)
-    }, [t.id]), C = (0, c.bG)([m.A], () => m.A.getCountForGuild(t.id) ?? 0);
-    s.useEffect(() => {
-        C !== t.premiumSubscriberCount && (0, A.u)(t.id, t.premiumSubscriberCount)
-    }, [t.id, C, t.premiumSubscriberCount]);
-    let S = s.useCallback(e => {
-        _ && (0, u.L3)(e, async () => {
+    }, [t.id]), I = (0, c.bG)([_.A], () => _.A.getCountForGuild(t.id) ?? 0);
+    l.useEffect(() => {
+        I !== t.premiumSubscriberCount && (0, A.u)(t.id, t.premiumSubscriberCount)
+    }, [t.id, I, t.premiumSubscriberCount]);
+    let T = l.useCallback(e => {
+        m && (0, u.L3)(e, async () => {
             let {
                 default: e
             } = await n.e("71728").then(n.bind(n, 709843));
@@ -107,7 +106,7 @@ function S(e) {
                 guild: t
             })
         })
-    }, [_, t]);
+    }, [m, t]);
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(d.DUT, {
             "aria-label": void 0,
@@ -119,13 +118,13 @@ function S(e) {
                 }
             },
             onClick: E,
-            className: a()(I.kL, {
-                [I.aF]: l
+            className: a()(C.kL, {
+                [C.aF]: s
             }),
-            onContextMenu: S,
+            onContextMenu: T,
             children: (0, i.jsx)(N, {
                 ref: r,
-                appliedBoostCount: C,
+                appliedBoostCount: I,
                 maxBoostCount: o,
                 premiumSubscriberCount: t.premiumSubscriberCount
             })
@@ -136,12 +135,12 @@ function S(e) {
     })
 }
 
-function b(e) {
+function S(e) {
     let {
         guild: t,
         withMargin: n
     } = e;
-    return (0, i.jsx)(S, {
+    return (0, i.jsx)(T, {
         guild: t,
         withMargin: n
     })

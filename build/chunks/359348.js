@@ -1,11 +1,10 @@
 /** chunk id: 359348 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
-    A: () => S
+    A: () => T
 });
 var i = n(627968),
-    s = n(64700),
-    l = n(417597),
+    l = n(64700),
+    s = n(417597),
     a = n(342494),
     r = n(397927),
     o = n(442433),
@@ -14,16 +13,16 @@ var i = n(627968),
     u = n(42473),
     h = n(186111),
     A = n(532624),
-    m = n(350535),
-    _ = n(274372),
+    _ = n(350535),
+    m = n(274372),
     g = n(572164),
     p = n(399925),
     f = n(652215),
     x = n(985018),
     E = n(862741),
-    C = n(145394);
+    I = n(145394);
 
-function I(e) {
+function C(e) {
     (0, o.L3)(e, async () => {
         let {
             default: e
@@ -37,9 +36,9 @@ let N = e => {
         let {
             keybindString: t,
             targetElementRef: n
-        } = e, [l, o] = s.useState(!1), c = s.useCallback(() => o(!1), []);
+        } = e, [s, o] = l.useState(!1), c = l.useCallback(() => o(!1), []);
         return (0, i.jsx)(a.AM, {
-            shouldShow: l,
+            shouldShow: s,
             targetElementRef: n,
             position: "top",
             title: x.intl.format(x.t["o+srEw"], {
@@ -58,7 +57,7 @@ let N = e => {
             }),
             graphic: {
                 type: "image",
-                src: C
+                src: I
             },
             caretConfig: {
                 align: "center"
@@ -66,31 +65,31 @@ let N = e => {
             onRequestClose: c
         })
     },
-    S = () => {
-        let e = s.useRef(null),
+    T = () => {
+        let e = l.useRef(null),
             {
                 parentAnalyticsLocation: t
             } = (0, c.Ay)(),
-            n = (0, l.bG)([h.A], () => h.A.hasLayers()),
+            n = (0, s.bG)([h.A], () => h.A.hasLayers()),
             a = (0, g.Et)(),
-            o = (0, l.bG)([_.A], () => _.A.getIsAtMaxSaveClipOperations()),
-            E = (0, l.bG)([A.Ay], () => A.Ay.getKeybindForAction(f.hCu.SAVE_CLIP));
+            o = (0, s.bG)([m.A], () => m.A.getIsAtMaxSaveClipOperations()),
+            E = (0, s.bG)([A.Ay], () => A.Ay.getKeybindForAction(f.hCu.SAVE_CLIP));
         if (!a || null == E || n) return null;
-        let C = m.dI(E.shortcut, !0);
+        let I = _.dI(E.shortcut, !0);
         return (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)(N, {
-                keybindString: C,
+                keybindString: I,
                 targetElementRef: e
             }), (0, i.jsx)(u.A, {
                 ref: e,
                 disabled: o,
                 tooltipText: null != E ? x.intl.formatToPlainString(x.t.HIMcv1, {
-                    hotkey: m.dI(E?.shortcut, !0)
+                    hotkey: _.dI(E?.shortcut, !0)
                 }) : x.intl.string(x.t.s52pju),
                 onClick: () => {
                     (0, p.l0)(), (0, d.X)(t, d.O.CLIP)
                 },
-                onContextMenu: I,
+                onContextMenu: C,
                 icon: r.xgA
             })]
         })

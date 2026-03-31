@@ -1,11 +1,10 @@
 /** chunk id: 157296 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
     A: () => u
 });
 var i = n(627968),
-    s = n(64700),
-    l = n(435371),
+    l = n(64700),
+    s = n(435371),
     a = n(421380),
     r = n(397927),
     o = n(954571),
@@ -15,7 +14,7 @@ var i = n(627968),
 function u(e) {
     let {
         onClick: t
-    } = e, [n, a] = s.useState(!1), u = () => {
+    } = e, [n, a] = l.useState(!1), u = () => {
         t(), o.default.track(c.HAw.INBOX_CHANNEL_ACKED, {
             marked_all_channels_as_read: !0,
             num_unread_channels_remaining: 0
@@ -25,7 +24,7 @@ function u(e) {
         children: [n ? (0, i.jsx)(h, {
             confirm: u,
             cancel: () => a(!1)
-        }) : null, (0, i.jsx)(l.m_, {
+        }) : null, (0, i.jsx)(s.m_, {
             text: d.intl.string(d.t["8k+6QY"]),
             children: (0, i.jsx)(r.K0, {
                 variant: "secondary",

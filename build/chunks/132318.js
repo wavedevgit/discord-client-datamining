@@ -4,8 +4,8 @@ n.d(t, {
 });
 var l = n(627968),
     a = n(64700),
-    r = n(397927),
-    i = n(46054),
+    i = n(397927),
+    r = n(46054),
     s = n(861662),
     d = n(617931);
 let o = e => {
@@ -13,13 +13,13 @@ let o = e => {
         node: {
             info: t
         }
-    } = e, n = a.useMemo(() => i.A.reactParserFor({
-        ...i.A.defaultRules,
+    } = e, n = a.useMemo(() => r.A.reactParserFor({
+        ...r.A.defaultRules,
         link: s.B
     }), []);
-    return null == t ? null : (0, l.jsx)(r.po8, {
+    return null == t ? null : (0, l.jsx)(i.po8, {
         className: d.e,
-        messageType: r.YCn.INFO,
+        messageType: i.YCn.INFO,
         children: n(t)
     })
 }

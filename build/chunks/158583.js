@@ -1,6 +1,6 @@
 /** chunk id: 158583 params = (module,exports,require) **/
 n.d(t, {
-    T: () => v
+    T: () => N
 });
 var i = n(627968),
     s = n(64700),
@@ -12,17 +12,17 @@ var i = n(627968),
     c = n(976860),
     u = n(12901),
     m = n(287809),
-    _ = n(975571),
-    g = n(474090),
-    x = n(181079),
-    A = n(422258),
+    g = n(975571),
+    _ = n(474090),
+    A = n(181079),
+    x = n(422258),
     h = n(668267),
     p = n(93055),
     T = n(652215),
     f = n(788868),
-    S = n(665606),
-    E = n(985018);
-let b = _.A.getArticleURL(T.MVz.FAVORITES_GUILD);
+    E = n(665606),
+    S = n(985018);
+let b = g.A.getArticleURL(T.MVz.FAVORITES_GUILD);
 
 function C() {
     let {
@@ -33,8 +33,8 @@ function C() {
     return (0, i.jsx)(o.f5, {
         value: e,
         children: (0, i.jsx)(a.D0$, {
-            label: E.intl.string(S.default.OT1NK5),
-            description: E.intl.format(S.default.GR2KOG, {
+            label: S.intl.string(E.default.OT1NK5),
+            description: S.intl.format(E.default.GR2KOG, {
                 helpCenterLink: b
             }),
             layout: "horizontal-responsive",
@@ -45,34 +45,34 @@ function C() {
                 fullWidth: !1,
                 children: [(0, i.jsx)(a.Button, {
                     variant: "secondary",
-                    text: E.intl.string(S.default["7WwLnr"]),
+                    text: S.intl.string(E.default["7WwLnr"]),
                     onClick: t
                 }), (0, i.jsx)(d.A, {
                     subscriptionTier: f.pe.TIER_2,
-                    defaultTextOverride: E.intl.string(S.default["20sYUU"])
+                    defaultTextOverride: S.intl.string(E.default["20sYUU"])
                 })]
             })
         })
     })
 }
 
-function v() {
-    let e = (0, l.bG)([x.A], () => x.A.favoriteGuildEnabled),
+function N() {
+    let e = (0, l.bG)([A.A], () => A.A.favoriteGuildEnabled),
         t = (0, l.bG)([m.default], () => {
             let e = m.default.getCurrentUser();
-            return null != e && g.Ay.isPremiumExactly(e, f.PremiumTypes.TIER_2)
+            return null != e && _.Ay.isPremiumExactly(e, f.PremiumTypes.TIER_2)
         }),
         n = (0, p.DZ)(),
         r = s.useCallback(e => {
-            (0, A.tV)(e, "settings_page"), !e && n && (0, c.pX)(T.BVt.ME)
+            (0, x.tV)(e, "settings_page"), !e && n && (0, c.pX)(T.BVt.ME)
         }, [n]);
     return t ? (0, i.jsx)(a.dOG, {
         checked: e,
-        description: E.intl.format(S.default.GR2KOG, {
+        description: S.intl.format(E.default.GR2KOG, {
             helpCenterLink: b
         }),
         onChange: r,
-        label: E.intl.string(S.default.OT1NK5),
+        label: S.intl.string(E.default.OT1NK5),
         badge: "beta"
     }) : (0, i.jsx)(C, {})
 }

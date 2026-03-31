@@ -1,12 +1,11 @@
 /** chunk id: 490557 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
     b: () => u,
     l: () => h
 });
 var i = n(627968),
-    s = n(503698),
-    l = n.n(s),
+    l = n(503698),
+    s = n.n(l),
     a = n(512750),
     r = n(990208),
     o = n(568065),
@@ -28,9 +27,9 @@ function h(e) {
     let {
         className: t,
         powerup: n,
-        isHovering: s,
+        isHovering: l,
         forceStaticImage: d
-    } = e, h = (0, r.A)(n, s, d);
+    } = e, h = (0, r.A)(n, l, d);
     switch (n.type) {
         case o.o9.LEVEL:
             return (0, i.jsx)(u, {});
@@ -38,7 +37,7 @@ function h(e) {
             return (0, i.jsx)("img", {
                 alt: "",
                 src: h,
-                className: l()(c.T, {
+                className: s()(c.T, {
                     [c.W]: n.skuId === a.aN
                 }, t)
             })

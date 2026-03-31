@@ -12,8 +12,8 @@ var l = i(503698),
     d = i(397927),
     u = i(707606),
     c = i(573648),
-    A = i(235986),
-    m = i(159426),
+    m = i(235986),
+    A = i(159426),
     h = i(25528),
     p = i(655724),
     g = i(82149),
@@ -23,11 +23,11 @@ var l = i(503698),
     E = i(874546),
     C = i(90644),
     v = i(61330),
-    _ = i(153331),
-    I = i(33852),
-    y = i(834425),
-    x = i(284525),
-    N = i(730430),
+    I = i(153331),
+    _ = i(33852),
+    x = i(834425),
+    N = i(284525),
+    y = i(730430),
     j = i(443493),
     D = i(462226),
     O = i(329151),
@@ -44,37 +44,37 @@ let b = (0, u.A)(t => {
         applicationStream: s,
         className: u,
         guildId: b,
-        channelId: V,
-        source: G,
+        channelId: G,
+        source: V,
         buttonVariant: H,
         type: w,
         onAction: F
     } = t, B = (0, o.bG)([T.default], () => {
         let t = T.default.getCurrentUser();
         return a()(null != t, "UserActivityActions: currentUser cannot be undefined"), t
-    }), W = w === _.O.STREAM_PREVIEW || null != s, k = (0, C.A)(e), Y = k || W ? A.A.Direction.HORIZONTAL : A.A.Direction.VERTICAL, z = e?.type === R.$pd.HANG_STATUS, $ = (0, o.bG)([S.A, f.A], () => z ? f.A.getChannel(S.A.getVoiceStateForUser(l.id)?.channelId) : null), J = (0, o.bG)([f.A], () => null != V ? f.A.getChannel(V) : null, [V]), {
+    }), W = w === I.O.STREAM_PREVIEW || null != s, k = (0, C.A)(e), Y = k || W ? m.A.Direction.HORIZONTAL : m.A.Direction.VERTICAL, z = e?.type === R.$pd.HANG_STATUS, $ = (0, o.bG)([S.A, f.A], () => z ? f.A.getChannel(S.A.getVoiceStateForUser(l.id)?.channelId) : null), J = (0, o.bG)([f.A], () => null != G ? f.A.getChannel(G) : null, [G]), {
         enableRequestToStream: K
-    } = m.m.useExperiment({
+    } = A.m.useExperiment({
         guildId: b ?? J?.guild_id,
         location: "UserActivityActions"
     }, {
         autoTrackExposure: !1
-    }), Z = null != J && K && (0, h.F9)(e), q = Y === A.A.Direction.VERTICAL;
-    return (0, n.jsx)(A.A, {
+    }), Z = null != J && K && (0, h.F9)(e), q = Y === m.A.Direction.VERTICAL;
+    return (0, n.jsx)(m.A, {
         grow: 0,
-        align: A.A.Align.STRETCH,
+        align: m.A.Align.STRETCH,
         direction: Y,
-        wrap: q ? A.A.Wrap.WRAP : A.A.Wrap.NO_WRAP,
+        wrap: q ? m.A.Wrap.WRAP : m.A.Wrap.NO_WRAP,
         className: r()(u, M.jx, q ? M.Vd : M.xM),
         children: (() => {
             if (!(0, E.A)(e)) {
-                if ((0, v.A)(e)) return (0, n.jsx)(I.A, {
+                if ((0, v.A)(e)) return (0, n.jsx)(_.A, {
                     platform: c.A.get(R.fg2.XBOX),
                     variant: H,
                     onAction: F,
                     icon: d.YWd
                 });
-                if (e?.platform === R.yTV.PS4 || e?.platform === R.yTV.PS5) return (0, n.jsx)(I.A, {
+                if (e?.platform === R.yTV.PS4 || e?.platform === R.yTV.PS5) return (0, n.jsx)(_.A, {
                     variant: H,
                     platform: c.A.get(R.fg2.PLAYSTATION),
                     onAction: F,
@@ -86,14 +86,14 @@ let b = (0, u.A)(t => {
                         activity: e,
                         user: l,
                         guildId: b,
-                        channelId: V,
-                        source: G,
+                        channelId: G,
+                        source: V,
                         onAction: F
                     }),
                     i = (0, n.jsx)(O.A, {
                         activity: e,
                         user: l,
-                        source: G,
+                        source: V,
                         onAction: F
                     });
                 return (0, n.jsxs)(d.ButtonGroup, {
@@ -115,7 +115,7 @@ let b = (0, u.A)(t => {
                 isCurrentUser: B.id === l.id,
                 applicationStream: s,
                 onAction: F
-            }) : z && null != $ ? (0, n.jsx)(N.A, {
+            }) : z && null != $ ? (0, n.jsx)(y.A, {
                 userId: l.id,
                 variant: H,
                 hangStatusChannel: $,
@@ -129,7 +129,7 @@ let b = (0, u.A)(t => {
                     activity: e,
                     variant: Z ? "secondary" : H,
                     onAction: F
-                }), (0, n.jsx)(x.A, {
+                }), (0, n.jsx)(N.A, {
                     activity: e,
                     embeddedActivity: i,
                     user: l,
@@ -140,7 +140,7 @@ let b = (0, u.A)(t => {
                     user: l,
                     variant: Z ? "secondary" : H,
                     onAction: F
-                }), (0, n.jsx)(y.A, {
+                }), (0, n.jsx)(x.A, {
                     user: l,
                     activity: e,
                     variant: Z ? "secondary" : H,

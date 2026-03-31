@@ -1,16 +1,15 @@
 /** chunk id: 717518 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
     A: () => u
 });
 var i = n(735438),
-    s = n.n(i),
-    l = n(311907),
+    l = n.n(i),
+    s = n(311907),
     a = n(73153),
     r = n(71393);
 let o = null,
     c = {};
-class d extends l.Ay.Store {
+class d extends s.Ay.Store {
     static displayName = "RegionStore";
     initialize() {
         this.waitFor(r.A)
@@ -23,7 +22,7 @@ class d extends l.Ay.Store {
                 optimal: t
             } = e;
             return t
-        }) ?? s().sample(t) : null
+        }) ?? l().sample(t) : null
     }
     getOptimalRegionId() {
         let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null,
@@ -33,7 +32,7 @@ class d extends l.Ay.Store {
     getRandomRegion() {
         let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null,
             t = this.getRegions(e);
-        return null != t ? s().sample(t) : null
+        return null != t ? l().sample(t) : null
     }
     getRandomRegionId() {
         let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null,
@@ -46,7 +45,7 @@ class d extends l.Ay.Store {
 }
 let u = new d(a.h, {
     LOAD_REGIONS: function(e) {
-        let t = s().sortBy(e.regions, e => e.name);
+        let t = l().sortBy(e.regions, e => e.name);
         null != e.guildId ? c[e.guildId] = t : o = t
     },
     GUILD_DELETE: function(e) {

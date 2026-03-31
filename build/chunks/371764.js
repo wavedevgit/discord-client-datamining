@@ -13,10 +13,10 @@ var s = n(110259),
     c = n(397927),
     u = n(212245),
     m = n(688810),
-    _ = n(139286),
-    g = n(975571),
-    x = n(498470),
-    A = n(637706),
+    g = n(139286),
+    _ = n(975571),
+    A = n(498470),
+    x = n(637706),
     h = n(985018),
     p = n(308785);
 let T = e => {
@@ -26,7 +26,7 @@ let T = e => {
     } = e, {
         analyticsLocations: T
     } = (0, m.Ay)(), f = (0, u.p)();
-    (0, _.A)({
+    (0, g.A)({
         type: s.ImpressionTypes.VIEW,
         name: s.ImpressionNames.PREMIUM_MARKETING_COMPONENT,
         properties: {
@@ -34,12 +34,12 @@ let T = e => {
             component_id: t
         }
     });
-    let S = (0, x.h)({
+    let E = (0, A.h)({
             buttonAction: n.button?.buttonAction ?? o.dz.OPEN_TIER_2_PAYMENT_MODAL,
             analyticsLocations: T,
             analyticsLocation: f.location
         }),
-        E = (0, A.a)(n.body);
+        S = (0, x.a)(n.body);
     return (0, i.jsxs)("div", {
         className: p.kL,
         children: [(0, i.jsx)("div", {
@@ -59,10 +59,10 @@ let T = e => {
                 variant: "text-md/medium",
                 color: "text-subtle",
                 className: p.tb,
-                children: [E, "" !== n.helpArticleId && (0, i.jsxs)(i.Fragment, {
+                children: [S, "" !== n.helpArticleId && (0, i.jsxs)(i.Fragment, {
                     children: ["\xa0", (0, i.jsx)(c.MzZ, {
                         className: p.$T,
-                        href: g.A.getArticleURL(n.helpArticleId),
+                        href: _.A.getArticleURL(n.helpArticleId),
                         children: h.intl.string(h.t["sBp+u0"])
                     })]
                 })]
@@ -72,7 +72,7 @@ let T = e => {
             children: (0, i.jsx)(d.$nd, {
                 variant: "expressive",
                 size: "md",
-                onClick: S,
+                onClick: E,
                 text: n.button.copy,
                 icon: a.NitroWheelIcon
             })

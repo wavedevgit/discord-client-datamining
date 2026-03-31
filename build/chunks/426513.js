@@ -1,5 +1,4 @@
 /** chunk id: 426513 params = (module,exports,require) **/
-"use strict";
 e.exports = {
     ne: "upsellOuter__50e68",
     u4: "upsellInner__50e68",

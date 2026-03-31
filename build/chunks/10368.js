@@ -1,6 +1,6 @@
 /** chunk id: 10368 params = (module,exports,require) **/
 n.d(t, {
-    A: () => g
+    A: () => _
 });
 var i = n(64700),
     s = n(311907),
@@ -12,19 +12,19 @@ var i = n(64700),
     c = n(461797),
     u = n(652215);
 let m = Object.keys(c.jB),
-    _ = e => {
+    g = e => {
         let t = null == e ? m : m.filter(t => t !== e);
         return t[Math.floor(Math.random() * t.length)]
     };
 
-function g() {
+function _() {
     let e = (0, s.bG)([l.A], () => l.A.useReducedMotion),
-        [t, n] = (0, i.useState)(_()),
+        [t, n] = (0, i.useState)(g()),
         {
             banner: m,
-            themeColors: g,
-            avatarDecorationSkuId: x,
-            displayNameStyles: A
+            themeColors: _,
+            avatarDecorationSkuId: A,
+            displayNameStyles: x
         } = (0, i.useMemo)(() => {
             let n = (0, c.Wt)(t);
             return {
@@ -35,19 +35,19 @@ function g() {
             }
         }, [t, e]),
         h = (0, s.bG)([a.A], () => {
-            let e = a.A.getProduct(x);
+            let e = a.A.getProduct(A);
             return (0, r.T)(e?.items[0]) ? e.items[0] : null
         });
     (0, i.useEffect)(() => {
         (0, o.w5)({
             banner: m,
-            themeColors: g,
+            themeColors: _,
             avatarDecoration: h,
-            displayNameStyles: A
+            displayNameStyles: x
         })
-    }, [m, g, h, A]);
+    }, [m, _, h, x]);
     let p = (0, i.useCallback)(() => {
-        let e = _(t);
+        let e = g(t);
         n(e), d.default.track(u.HAw.TRY_IT_OUT_PRESET_SHUFFLED, {
             preset: e
         })

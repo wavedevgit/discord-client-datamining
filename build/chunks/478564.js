@@ -1,11 +1,10 @@
 /** chunk id: 478564 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
     A: () => u
 });
 var i = n(64700),
-    s = n(735438),
-    l = n.n(s),
+    l = n(735438),
+    s = n.n(l),
     a = n(311907),
     r = n(568598),
     o = n(313961),
@@ -17,8 +16,8 @@ function u(e) {
         channelId: t
     } = e, [n] = (0, a.bG)([o.A], () => null != t ? [o.A.getParticipants(t), o.A.getParticipantsVersion(t)] : [
         [], 0
-    ], [t], r.hS), s = i.useMemo(() => l().uniq(n.filter(e => (0, d.Xw)(e) || (0, d.Ay)(e)).map(e => e.user.id)), [n]), u = (0, c.gT)({
-        userIds: s
+    ], [t], r.hS), l = i.useMemo(() => s().uniq(n.filter(e => (0, d.Xw)(e) || (0, d.Ay)(e)).map(e => e.user.id)), [n]), u = (0, c.gT)({
+        userIds: l
     });
     return (0, c.hJ)() || u
 }

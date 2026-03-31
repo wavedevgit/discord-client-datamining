@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var l = n(503698),
-    a = n.n(l),
+var a = n(503698),
+    l = n.n(a),
     s = n(688807),
     r = n(311907),
     o = n(435371),
@@ -25,17 +25,17 @@ function I(e) {
     let {
         widget: t,
         className: n,
-        buttonRef: l,
+        buttonRef: a,
         additionalMenuItems: s
     } = e, r = (0, p.L)(t), o = (0, g.GV)();
     return (0, i.jsx)(v, {
-        targetRef: l,
+        targetRef: a,
         widget: t,
         additionalMenuItems: s,
         children: e => (0, i.jsx)(j, {
             children: (0, i.jsxs)(d.DUT, {
-                innerRef: l,
-                className: a()(A.x6, n),
+                innerRef: a,
+                className: l()(A.x6, n),
                 "data-dnd-name": r,
                 "aria-label": _.intl.formatToPlainString(_.t.HWNJJN, {
                     widgetTitle: r
@@ -57,7 +57,7 @@ let j = e => {
         let {
             children: t
         } = e, n = (0, r.bG)([u.A], () => u.A.keyboardModeEnabled), {
-            isDragging: l
+            isDragging: a
         } = (0, s.V)(e => ({
             isDragging: e.isDragging()
         }));
@@ -83,7 +83,7 @@ let j = e => {
                 })]
             }),
             position: "top",
-            shouldShow: !0 !== l,
+            shouldShow: !0 !== a,
             ariaHidden: !0,
             children: t
         })
@@ -91,16 +91,16 @@ let j = e => {
     v = e => {
         let {
             children: t,
-            widget: l,
-            targetRef: a,
+            widget: a,
+            targetRef: l,
             additionalMenuItems: s
         } = e, {
             trackUserProfileEditAction: r
         } = (0, x.NJ)(), o = e => {
             if (e.shiftKey) {
-                (0, p.qA)(l), r({
+                (0, p.qA)(a), r({
                     action: "WIDGET_REMOVED",
-                    ...l.getProfileEditAnalyticsOptions()
+                    ...a.getProfileEditAnalyticsOptions()
                 }), (0, f.XA)(h.jM.WIDGET_REMOVED);
                 return
             }(0, d.mMO)(async () => {
@@ -110,7 +110,7 @@ let j = e => {
                 return t => (0, i.jsx)(e, {
                     ...t,
                     userId: m.default.getId(),
-                    widget: l,
+                    widget: a,
                     trackUserProfileEditAction: r
                 })
             }, {
@@ -118,7 +118,7 @@ let j = e => {
             })
         };
         return (0, i.jsx)(d.YNO, {
-            targetElementRef: a,
+            targetElementRef: l,
             align: "top",
             position: "right",
             disablePointerEvents: !1,

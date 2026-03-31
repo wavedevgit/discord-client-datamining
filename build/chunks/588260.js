@@ -3,20 +3,20 @@ n.d(t, {
     A: () => v
 });
 var a = n(627968),
-    i = n(64700),
-    l = n(793574),
+    l = n(64700),
+    i = n(793574),
     r = n(979286),
     s = n(674658),
     c = n(751304),
     o = n(561769),
-    d = n(720462),
+    d = n(951707),
     u = n(409626),
     m = n(84904),
     x = n(954506),
     h = n(758836),
     f = n(985018),
     g = n(536083);
-let _ = i.createContext({
+let _ = l.createContext({
         closeModal: () => {},
         trackAction: () => {}
     }),
@@ -26,13 +26,13 @@ let _ = i.createContext({
             aspectRatio: n
         } = e, {
             product: d
-        } = (0, s.q)(t, !0), m = i.useContext(o.v3), {
+        } = (0, s.q)(t, !0), m = l.useContext(o.v3), {
             closeModal: x,
             trackAction: f
-        } = i.useContext(_), p = i.useCallback(() => {
+        } = l.useContext(_), p = l.useCallback(() => {
             f(u.Ws.DiscordCollectiblesShopItem), x(), (0, r.Cz)({
-                analyticsLocations: [l.A.GAME_PROFILE],
-                analyticsSource: l.A.GAME_PROFILE,
+                analyticsLocations: [i.A.GAME_PROFILE],
+                analyticsSource: i.A.GAME_PROFILE,
                 initialProductSkuId: t,
                 tab: h.G2.CATALOG
             })
@@ -65,13 +65,13 @@ function v(e) {
         detectedGame: t,
         closeModal: n,
         trackAction: s
-    } = e, c = t.shopCollectionIds?.[0], o = (0, m.j)(c), g = i.useCallback(() => {
+    } = e, c = t.shopCollectionIds?.[0], o = (0, m.j)(c), g = l.useCallback(() => {
         s(u.Ws.DiscordCollectiblesShop), n(), (0, r.Cz)({
-            analyticsLocations: [l.A.GAME_PROFILE],
-            analyticsSource: l.A.GAME_PROFILE,
+            analyticsLocations: [i.A.GAME_PROFILE],
+            analyticsSource: i.A.GAME_PROFILE,
             tab: h.G2.CATALOG
         })
-    }, [s, n]), v = i.useMemo(() => ({
+    }, [s, n]), v = l.useMemo(() => ({
         closeModal: n,
         trackAction: s
     }), [n, s]);

@@ -20,8 +20,8 @@ var l = n(627968),
     x = n(101555),
     N = n(734057),
     I = n(31717),
-    f = n(255438),
-    _ = n(453771),
+    _ = n(255438),
+    f = n(453771),
     g = n(518960),
     T = n(382287),
     v = n(207963),
@@ -37,7 +37,7 @@ function y(e) {
         minValues: a,
         maxValues: r,
         guildId: i
-    } = e, o = (0, _.o2)(i), c = (0, f.Xq)(o / f.XF, {
+    } = e, o = (0, f.o2)(i), c = (0, _.Xq)(o / _.XF, {
         useKibibytes: !0,
         useSpace: !0
     });
@@ -149,8 +149,8 @@ function L(e) {
     let x = C.modal?.customId;
     o()(null != x, "FileUploadActionComponent requires modalCustomId from context");
     let {
-        uploadIds: f,
-        setUploadIds: _,
+        uploadIds: _,
+        setUploadIds: f,
         currentUploads: L,
         error: D
     } = (0, S.j)(e), U = (0, c.bG)([N.A], () => N.A.getBasicChannel(E));
@@ -158,12 +158,12 @@ function L(e) {
     let k = a.useCallback(e => {
             e.preventDefault(), e.dataTransfer?.types.includes("Files") && h(!0)
         }, []),
-        w = a.useCallback(e => {
+        M = a.useCallback(e => {
             i.current?.contains(e.relatedTarget) || h(!1)
         }, []),
-        M = a.useCallback((e, t) => {
+        w = a.useCallback((e, t) => {
             if (0 === e.length) return;
-            if (f.length + e.length > n) return (0, p.openUploadError)({
+            if (_.length + e.length > n) return (0, p.openUploadError)({
                 title: O.intl.string(O.t.wOr6hB),
                 help: O.intl.formatToPlainString(O.t.dy6viJ, {
                     maxValues: n
@@ -186,20 +186,20 @@ function L(e) {
                     allowOptimization: !1
                 }), n
             });
-            _(f.concat(l))
-        }, [f, n, U, _, x, E]),
+            f(_.concat(l))
+        }, [_, n, U, f, x, E]),
         H = a.useCallback(e => {
-            e.preventDefault(), h(!1), M(Array.from(e.dataTransfer?.files ?? []), "drag_drop")
-        }, [M]),
+            e.preventDefault(), h(!1), w(Array.from(e.dataTransfer?.files ?? []), "drag_drop")
+        }, [w]),
         K = e => {
-            u.A.remove(E, e, I.C.InteractionModal), _(f.filter(t => t !== e))
+            u.A.remove(E, e, I.C.InteractionModal), f(_.filter(t => t !== e))
         };
     return (a.useEffect(() => {
         let e = i.current;
-        return e?.addEventListener("dragover", k), e?.addEventListener("dragleave", w), e?.addEventListener("drop", H), () => {
-            e?.removeEventListener("dragover", k), e?.removeEventListener("dragleave", w), e?.removeEventListener("drop", H)
+        return e?.addEventListener("dragover", k), e?.addEventListener("dragleave", M), e?.addEventListener("drop", H), () => {
+            e?.removeEventListener("dragover", k), e?.removeEventListener("dragleave", M), e?.removeEventListener("drop", H)
         }
-    }, [k, w, H]), 1 === n && 1 === L.length) ? (0, l.jsx)(P, {
+    }, [k, M, H]), 1 === n && 1 === L.length) ? (0, l.jsx)(P, {
         upload: L[0],
         handleRemoveFile: K,
         singleFileInput: !0
@@ -209,7 +209,7 @@ function L(e) {
             [R.Ke]: d,
             [R.z3]: null != D
         }),
-        children: [f.length >= n ? (0, l.jsx)(b, {}) : (0, l.jsx)(y, {
+        children: [_.length >= n ? (0, l.jsx)(b, {}) : (0, l.jsx)(y, {
             dropping: d,
             fileInputRef: r,
             minValues: t,
@@ -224,7 +224,7 @@ function L(e) {
         }), (0, l.jsx)(m.A, {
             ref: r,
             onChange: e => {
-                M(Array.from(e.currentTarget.files ?? []), "file_picker"), e.currentTarget.value = ""
+                w(Array.from(e.currentTarget.files ?? []), "file_picker"), e.currentTarget.value = ""
             },
             multiple: n > 1,
             tabIndex: -1,

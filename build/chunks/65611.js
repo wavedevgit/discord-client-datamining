@@ -1,15 +1,14 @@
 /** chunk id: 65611 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
-    eW: () => m,
+    eW: () => _,
     em: () => h,
     oi: () => A,
     wN: () => u
 });
 var i = n(627968);
 n(64700);
-var s = n(503698),
-    l = n.n(s),
+var l = n(503698),
+    s = n.n(l),
     a = n(827734),
     r = n(397927),
     o = n(513461),
@@ -36,28 +35,28 @@ function A(e) {
     let t, {
         audio: n,
         video: i,
-        screenshare: s,
-        isCurrentUserConnected: l,
+        screenshare: l,
+        isCurrentUserConnected: s,
         liveStage: a,
         activeEvent: o,
         activity: c
     } = e;
     if (o) t = r.CTc;
     else if (a) t = r.qux;
-    else if (s) t = r.kN9;
+    else if (l) t = r.kN9;
     else if (i) t = r.npA;
     else if (n) t = r.HKD;
     else {
         if (!c) return null;
         t = r.k9F
     }
-    return _({
+    return m({
         icon: t,
-        isCurrentUserConnected: l
+        isCurrentUserConnected: s
     })
 }
 
-function m(e) {
+function _(e) {
     let {
         guildJoinRequestStatus: t
     } = e, [n, i] = function(e) {
@@ -72,22 +71,22 @@ function m(e) {
                 return [void 0, r.R2l]
         }
     }(t);
-    return _({
+    return m({
         icon: i,
         color: n
     })
 }
 
-function _(e) {
+function m(e) {
     let {
         icon: t,
         color: n,
-        isCurrentUserConnected: s
+        isCurrentUserConnected: l
     } = e;
     return (0, i.jsx)(r.fkz, {
         icon: t,
-        className: l()(d.bG, {
-            [d.gB]: s
+        className: s()(d.bG, {
+            [d.gB]: l
         }),
         ...null == n ? {
             disableColor: !0

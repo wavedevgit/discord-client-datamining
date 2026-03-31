@@ -1,11 +1,10 @@
 /** chunk id: 815213 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
     A: () => g
 });
 var i = n(627968),
-    s = n(64700),
-    l = n(311907),
+    l = n(64700),
+    s = n(311907),
     a = n(310953),
     r = n(173860),
     o = n(455234),
@@ -15,36 +14,36 @@ var i = n(627968),
     h = n(543465),
     A = n(531685);
 
-function m(e) {
+function _(e) {
     let t = d.A.getChannel(e);
     return null != t && null != t.getGuildId() && !(t.isThread() ? c.A.isMuted(t.id) : h.Ay.isChannelMuted(t.getGuildId(), t.id)) && (0, o.Y)(t)
 }
 
-function _(e) {
+function m(e) {
     let t = d.A.getChannel(e);
     if (null == t) return !1;
     let n = t.getGuildId();
     if (null == n) return !1;
     let i = h.Ay.isGuildCollapsed(n),
-        s = h.Ay.isChannelMuted(n, t.id);
-    return (!i || !s) && u.Ay.getMentionCount(e) > 0
+        l = h.Ay.isChannelMuted(n, t.id);
+    return (!i || !l) && u.Ay.getMentionCount(e) > 0
 }
-let g = s.forwardRef(function(e, t) {
+let g = l.forwardRef(function(e, t) {
     let {
         guildId: n,
-        guildChannels: s,
+        guildChannels: l,
         guildChannelsVersion: o,
         ...c
-    } = e, d = (0, a.W)(n, s, o, {
+    } = e, d = (0, a.W)(n, l, o, {
         withVoiceChannels: !1
     }, {
         ignoreRecents: !0
-    }), u = (0, l.bG)([A.A], () => A.A.isFocused());
+    }), u = (0, s.bG)([A.A], () => A.A.isFocused());
     return (0, i.jsx)(r.A, {
         ref: t,
         ...c,
-        isUnread: m,
-        isMentioned: _,
+        isUnread: _,
+        isMentioned: m,
         items: d,
         animate: u
     })

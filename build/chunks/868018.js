@@ -1,6 +1,6 @@
 /** chunk id: 868018 params = (module,exports,require) **/
 n.d(t, {
-    O: () => A
+    O: () => x
 });
 var i = n(627968),
     s = n(311907),
@@ -13,17 +13,17 @@ var i = n(627968),
     u = n(780964),
     m = n(985018);
 
-function _() {
+function g() {
     let e = c.JG.useSetting();
     return (0, s.bG)([d.Ay, o.A], () => {
         let t = new Set(e);
         return d.Ay.getFlattenedGuildIds().filter(e => null != o.A.getGuild(e) && !t.has(e))
     }, [e])
 }
-let g = {
+let _ = {
         type: r.wF.STACKED_ICONS,
         useIcons: function() {
-            let e = _(),
+            let e = g(),
                 t = (0, s.bG)([o.A], () => e.slice(0, 2).map(e => o.A.getGuild(e)).filter(e => null != e), [e]);
             return 0 === t.length ? null : t.length >= 2 ? {
                 frontIcon: {
@@ -51,9 +51,9 @@ let g = {
             }
         }
     },
-    x = (0, a.AK)(u.X.PROFILE_PRIVACY_TO_ACTIVITY_PRIVACY_NAVIGATOR, {
+    A = (0, a.AK)(u.X.PROFILE_PRIVACY_TO_ACTIVITY_PRIVACY_NAVIGATOR, {
         useSubtitle: function() {
-            let e = _();
+            let e = g();
             if (0 === e.length) return m.intl.format(m.t.QJIJ5p, {});
             let t = o.A.getGuild(e[0]),
                 n = t?.name ?? "",
@@ -66,10 +66,10 @@ let g = {
             })
         },
         useTrailingDecoration: function() {
-            return g
+            return _
         },
         destinationKey: u.X.ACTIVITY_PRIVACY_PANEL
     }),
-    A = (0, a.gN)(u.X.PROFILE_PRIVACY_RELATED_SETTINGS, {
-        buildLayout: () => [x]
+    x = (0, a.gN)(u.X.PROFILE_PRIVACY_RELATED_SETTINGS, {
+        buildLayout: () => [A]
     })

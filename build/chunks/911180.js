@@ -1,6 +1,6 @@
 /** chunk id: 911180 params = (module,exports,require) **/
 n.d(t, {
-    A: () => A
+    A: () => x
 });
 var i = n(627968),
     s = n(64700),
@@ -12,35 +12,35 @@ var i = n(627968),
     c = n(397927),
     u = n(919796),
     m = n(385612),
-    _ = n(652215),
-    g = n(985018),
-    x = n(149255);
+    g = n(652215),
+    _ = n(985018),
+    A = n(149255);
 
-function A(e) {
+function x(e) {
     let {
         onChange: t,
         onClose: n,
         color: l,
-        suggestedColors: A,
+        suggestedColors: x,
         disabled: h,
         label: p,
         colorPickerMiddle: T,
         colorPickerFooter: f,
-        showEyeDropper: S
-    } = e, E = s.useRef(null), b = (0, c.rdh)(d.A.colors.BACKGROUND_BASE_LOW).hex(), C = d.A.colors.BACKGROUND_MOD_MUTED.css, v = (0, m.sN)(l), N = (0, o.Hl)(l), I = N === b ? C : N, j = v ? d.A.unsafe_rawColors.WHITE.css : d.A.unsafe_rawColors.PRIMARY_530.css, y = (0, u.A)(T), O = (0, u.A)(f), [R, P] = s.useState((0, r.A)());
+        showEyeDropper: E
+    } = e, S = s.useRef(null), b = (0, c.rdh)(d.A.colors.BACKGROUND_BASE_LOW).hex(), C = d.A.colors.BACKGROUND_MOD_MUTED.css, N = (0, m.sN)(l), v = (0, o.Hl)(l), I = v === b ? C : v, j = N ? d.A.unsafe_rawColors.WHITE.css : d.A.unsafe_rawColors.PRIMARY_530.css, y = (0, u.A)(T), O = (0, u.A)(f), [R, P] = s.useState((0, r.A)());
     return s.useEffect(() => {
         (y !== T || O !== f) && P((0, r.A)())
     }, [f, T, O, y]), (0, i.jsx)(c.YNO, {
-        targetElementRef: E,
+        targetElementRef: S,
         positionKey: R,
         renderPopout: e => (0, i.jsx)(c.VNw, {
             ...e,
             value: l,
             onChange: t,
-            suggestedColors: A,
+            suggestedColors: x,
             middle: T,
             footer: f,
-            showEyeDropper: S
+            showEyeDropper: E
         }),
         onRequestClose: n,
         children: e => {
@@ -49,26 +49,26 @@ function A(e) {
                 ...n
             } = e;
             return (0, i.jsxs)("div", {
-                ref: E,
-                className: a()(x.oP, {
-                    [x.r9]: h
+                ref: S,
+                className: a()(A.oP, {
+                    [A.r9]: h
                 }),
                 children: [(0, i.jsx)(c.DUT, {
                     ...n,
                     tabIndex: h ? -1 : 0,
-                    onClick: h ? _.tEg : t,
+                    onClick: h ? g.tEg : t,
                     style: {
-                        backgroundColor: N,
+                        backgroundColor: v,
                         borderColor: I
                     },
-                    className: x.nf,
-                    "aria-label": g.intl.string(g.t.Qp04hK),
+                    className: A.nf,
+                    "aria-label": _.intl.string(_.t.Qp04hK),
                     focusProps: {
-                        ringTarget: E
+                        ringTarget: S
                     },
                     children: (0, i.jsx)(c.R2l, {
                         size: "custom",
-                        className: x.BW,
+                        className: A.BW,
                         width: 14,
                         height: 14,
                         color: j

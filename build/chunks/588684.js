@@ -5,8 +5,8 @@ n.d(t, {
 var l = n(627968);
 n(64700);
 var a = n(397927),
-    r = n(985018),
-    i = n(742745);
+    i = n(985018),
+    r = n(742745);
 
 function s(e) {
     let {
@@ -14,13 +14,13 @@ function s(e) {
         title: n
     } = e;
     return (0, l.jsxs)("div", {
-        className: i.kL,
+        className: r.kL,
         children: [(0, l.jsx)(a.Heading, {
-            className: i.wx,
+            className: r.wx,
             variant: "text-sm/semibold",
-            children: n ?? r.intl.string(r.t["k+QA9N"])
+            children: n ?? i.intl.string(i.t["k+QA9N"])
         }), (0, l.jsx)("div", {
-            className: i.uk,
+            className: r.uk,
             children: t
         })]
     })

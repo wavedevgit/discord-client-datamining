@@ -1,6 +1,6 @@
 /** chunk id: 957281 params = (module,exports,require) **/
 n.d(t, {
-    c: () => x
+    c: () => A
 });
 var i = n(627968),
     s = n(503698),
@@ -12,13 +12,13 @@ var i = n(627968),
     c = n(610215),
     u = n(985018),
     m = n(380531),
-    _ = n(435115);
+    g = n(435115);
 
-function g() {
+function _() {
     return (0, i.jsx)("div", {
-        className: l()(_.tR, m.eS, m.Rw),
+        className: l()(g.tR, m.eS, m.Rw),
         children: (0, i.jsxs)("div", {
-            className: l()(m.$K, _.Vd),
+            className: l()(m.$K, g.Vd),
             children: [(0, i.jsx)("div", {
                 className: m.mO,
                 children: u.intl.string(u.t.H68X9x)
@@ -29,7 +29,7 @@ function g() {
         })
     })
 }
-let x = () => {
+let A = () => {
     let {
         robloxSubgameHistory: e,
         overrideExePaths: t
@@ -39,5 +39,5 @@ let x = () => {
         isOverride: t.has(n.exePath),
         nowPlaying: !0,
         subgames: n.id === o.a7 ? e : void 0
-    }, (0, r.Es)(n)) : (0, i.jsx)(g, {})
+    }, (0, r.Es)(n)) : (0, i.jsx)(_, {})
 }

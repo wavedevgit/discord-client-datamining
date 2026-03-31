@@ -1,12 +1,11 @@
 /** chunk id: 487401 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
     B: () => ep,
     T: () => eg
 }), n(321073);
 var i = n(627968),
-    s = n(64700),
-    l = n(735438),
+    l = n(64700),
+    s = n(735438),
     a = n(837381),
     r = n(884362),
     o = n(311907),
@@ -15,34 +14,34 @@ var i = n(627968),
     u = n(820284),
     h = n(775602),
     A = n(793574),
-    m = n(688810),
-    _ = n(309698),
+    _ = n(688810),
+    m = n(309698),
     g = n(915089),
     p = n(5180),
     f = n(227004),
     x = n(581007),
     E = n(522435),
-    C = n(781862),
-    I = n(582904),
+    I = n(781862),
+    C = n(582904),
     N = n(637248),
-    S = n(395504),
-    b = n(947461),
-    T = n(770904),
-    v = n(357746),
-    y = n(816288),
+    T = n(395504),
+    S = n(947461),
+    b = n(770904),
+    y = n(357746),
+    v = n(816288),
     j = n(455234),
     R = n(649247),
     O = n(787541),
     L = n(482361),
     M = n(95701),
     D = n(734057),
-    G = n(72314),
-    U = n(808728),
+    U = n(72314),
+    G = n(808728),
     P = n(967198),
-    w = n(32603),
-    k = n(960755),
-    V = n(866842),
-    B = n(633965),
+    k = n(32603),
+    w = n(960755),
+    B = n(866842),
+    V = n(633965),
     H = n(33324),
     F = n(823142),
     K = n(884452),
@@ -51,16 +50,16 @@ var i = n(627968),
     z = n(724591),
     q = n(573956),
     X = n(141515),
-    Q = n(463938),
-    J = n(779881),
+    J = n(463938),
+    Q = n(779881),
     $ = n(998986),
     Z = n(732077),
     ee = n(689025),
     et = n(698126),
     en = n(889806),
     ei = n(923432),
-    es = n(815213),
-    el = n(530484),
+    el = n(815213),
+    es = n(530484),
     ea = n(422361),
     er = n(281405);
 n(83766);
@@ -78,11 +77,11 @@ function eA(e) {
         density: e
     }) + 2
 }
-class em extends s.PureComponent {
+class e_ extends l.PureComponent {
     static contextType = a.nC;
     _list = null;
-    unreadTopRef = s.createRef();
-    unreadBottomRef = s.createRef();
+    unreadTopRef = l.createRef();
+    unreadBottomRef = l.createRef();
     static defaultProps = {
         density: "default"
     };
@@ -97,7 +96,7 @@ class em extends s.PureComponent {
     componentDidMount() {
         this.setState({
             initialized: !0
-        }), (0, B.Ei)(this.getVisibleChannels)
+        }), (0, V.Ei)(this.getVisibleChannels)
     }
     componentWillUnmount() {
         this.updateChannelListScroll.cancel()
@@ -106,13 +105,13 @@ class em extends s.PureComponent {
         let {
             scrollToChannel: n,
             guildId: i,
-            selectedChannelId: s
+            selectedChannelId: l
         } = this.props, {
-            initialized: l
+            initialized: s
         } = this.state, {
             scrollTop: a
-        } = G.A.getGuildDimensions(i);
-        null != n ? (this.scrollToChannel(n), d.A.clearChannelListScrollTo(i)) : i !== e.guildId ? null != a && this.scrollTo(a) : s !== e.selectedChannelId ? this.scrollToChannel(s) : !t.initialized && l && (null == a && null != s ? this.scrollToChannel(s, !1, 8, this.handleListScroll) : this.scrollTo(a ?? 0, this.handleListScroll)), this.testShouldSkipTutorial()
+        } = U.A.getGuildDimensions(i);
+        null != n ? (this.scrollToChannel(n), d.A.clearChannelListScrollTo(i)) : i !== e.guildId ? null != a && this.scrollTo(a) : l !== e.selectedChannelId ? this.scrollToChannel(l) : !t.initialized && s && (null == a && null != l ? this.scrollToChannel(l, !1, 8, this.handleListScroll) : this.scrollTo(a ?? 0, this.handleListScroll)), this.testShouldSkipTutorial()
     }
     getSectionRowsFromChannel(e) {
         return this.props.guildChannels.getSectionRowsFromChannel(e)
@@ -134,23 +133,23 @@ class em extends s.PureComponent {
         let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
             n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : 8,
             i = arguments.length > 3 ? arguments[3] : void 0,
-            s = this._list,
-            l = this.getSectionRowsFromChannel(e)[0];
-        if (null != l && null != s)
-            if (null != l.threadOffset) {
-                let [e] = s.getScrollPosition(l.section, l.row), {
+            l = this._list,
+            s = this.getSectionRowsFromChannel(e)[0];
+        if (null != s && null != l)
+            if (null != s.threadOffset) {
+                let [e] = l.getScrollPosition(s.section, s.row), {
                     density: a = "default"
-                } = this.props, r = l.threadOffset * eA(a);
-                s.scrollIntoViewRect({
+                } = this.props, r = s.threadOffset * eA(a);
+                l.scrollIntoViewRect({
                     start: e + r,
                     end: e + r + eA(a),
                     padding: n,
                     animate: t,
                     callback: i
                 })
-            } else s.scrollToIndex({
-                section: l.section,
-                row: l.row,
+            } else l.scrollToIndex({
+                section: s.section,
+                row: s.row,
                 animate: t,
                 padding: n,
                 callback: i
@@ -184,11 +183,11 @@ class em extends s.PureComponent {
         if (null == i) return !1;
         for (let {
                 row: e,
-                section: s
+                section: l
             }
             of n) {
-            let [n, l] = i.getScrollPosition(s, e), a = i.getScrollerState();
-            if (t && n + l < a.scrollTop + a.offsetHeight || !t && n > a.scrollTop) return !0
+            let [n, s] = i.getScrollPosition(l, e), a = i.getScrollerState();
+            if (t && n + s < a.scrollTop + a.offsetHeight || !t && n > a.scrollTop) return !0
         }
         return !1
     };
@@ -198,12 +197,12 @@ class em extends s.PureComponent {
         let t = e.getItems(),
             n = e.getScrollerState(),
             i = [];
-        for (var s = 0; s < t.length; s++) {
-            let l = t[s];
-            if ((0, c.ogc)(l) && l.section >= this.props.guildChannels.favoritesSectionNumber) {
-                let t = this.props.guildChannels.getChannelFromSectionRow(l.section, l.row),
-                    [s, a] = e.getScrollPosition(l.section, l.row);
-                null != t && s + a < n.scrollTop + n.offsetHeight && s > n.scrollTop && i.push(t.channel.id)
+        for (var l = 0; l < t.length; l++) {
+            let s = t[l];
+            if ((0, c.ogc)(s) && s.section >= this.props.guildChannels.favoritesSectionNumber) {
+                let t = this.props.guildChannels.getChannelFromSectionRow(s.section, s.row),
+                    [l, a] = e.getScrollPosition(s.section, s.row);
+                null != t && l + a < n.scrollTop + n.offsetHeight && l > n.scrollTop && i.push(t.channel.id)
             }
         }
         return i
@@ -253,19 +252,19 @@ class em extends s.PureComponent {
             if ("row" !== n.type) return !1;
             let {
                 section: i,
-                row: s
+                row: l
             } = n;
-            if (i < w.bK || e.isPlaceholderRow(i, s)) return !1;
-            let l = e.getChannelFromSectionRow(i, s);
-            if (null == l) return !1;
+            if (i < k.bK || e.isPlaceholderRow(i, l)) return !1;
+            let s = e.getChannelFromSectionRow(i, l);
+            if (null == s) return !1;
             let {
                 channel: a,
                 category: r
-            } = l;
-            return !!(0, M.ig)(a.record.type) && (!r.isCollapsed || !r.isMuted) && !a.isMuted && !!t.isItemVisible(i, s, !0) && (0, j.Y)(a.record)
+            } = s;
+            return !!(0, M.ig)(a.record.type) && (!r.isCollapsed || !r.isMuted) && !a.isMuted && !!t.isItemVisible(i, l, !0) && (0, j.Y)(a.record)
         })
     }
-    updateChannelListScroll = (0, l.throttle)(e => {
+    updateChannelListScroll = (0, s.throttle)(e => {
         d.A.updateChannelListScroll(this.props.guildId, e, this.getVisibleChannels())
     }, 100);
     getSectionHeight = e => {
@@ -281,8 +280,8 @@ class em extends s.PureComponent {
             guildChannels: t,
             voiceStates: n,
             selectedVoiceChannelId: i,
-            selectedChannelId: s,
-            optInEnabled: l,
+            selectedChannelId: l,
+            optInEnabled: s,
             guildChannelsVersion: a
         } = this.props;
         return (0, W.fz)({
@@ -290,9 +289,9 @@ class em extends s.PureComponent {
             guildChannels: t,
             guildChannelsVersion: a,
             voiceStates: n,
-            selectedChannelId: s,
+            selectedChannelId: l,
             selectedVoiceChannelId: i,
-            optInEnabled: l,
+            optInEnabled: s,
             density: this.props.density
         })
     };
@@ -300,11 +299,11 @@ class em extends s.PureComponent {
         let {
             guildChannels: n,
             voiceStates: i,
-            stageChannelSpeakerVoiceStates: s,
-            selectedVoiceChannelId: l,
+            stageChannelSpeakerVoiceStates: l,
+            selectedVoiceChannelId: s,
             density: a = "default"
         } = this.props, r = eA(a);
-        if (e === w.PU) {
+        if (e === k.PU) {
             let e = n.getGuildActionSection();
             return e.isEmpty() ? 0 : e.getRow(t) === er.n.GUILD_PREMIUM_PROGRESS_BAR ? e.getRows().length > 1 ? 69 : 57 : r
         }
@@ -322,13 +321,13 @@ class em extends s.PureComponent {
             } = this.props;
             r += eA(t);
             let n = i[d.id];
-            null != n && n.length > 0 && (r += l === e ? 32 * n.length : 32)
+            null != n && n.length > 0 && (r += s === e ? 32 * n.length : 32)
         }
         if (d.record.isGuildVoice()) {
             let e = i[d.id];
             if (null != e && e.length > 0) {
                 let t = 32 * e.length;
-                d.isCollapsed || u.isCollapsed ? t = 32 : (0, I.Ln)(d.record) && (t += 32), r += t + c.LU0.space.SPACE_XS.resolve({
+                d.isCollapsed || u.isCollapsed ? t = 32 : (0, C.Ln)(d.record) && (t += 32), r += t + c.LU0.space.SPACE_XS.resolve({
                     density: a
                 });
                 let {
@@ -338,15 +337,15 @@ class em extends s.PureComponent {
                     location: "ChannelList"
                 });
                 if (n) {
-                    let e = _.A.getChannelStatus(d.record);
-                    (0, E.TP)(e) ? r += 134: l === d.id && (r += 44)
+                    let e = m.A.getChannelStatus(d.record);
+                    (0, E.TP)(e) ? r += 134: s === d.id && (r += 44)
                 }
             }
             d.id === this.props.rtcConnectedChannelId && (r += 32 * this.props.rtcDesyncedVoiceStatesCount)
         }
-        if ((null != d.subtitle || l === d.id) && (r += 16), d.record.isGuildStageVoice()) {
+        if ((null != d.subtitle || s === d.id) && (r += 16), d.record.isGuildStageVoice()) {
             let e = i[d.id] ?? [],
-                t = s[d.id] ?? [];
+                t = l[d.id] ?? [];
             if (null != e && e.length > 0) {
                 let e = 32 * t.length;
                 d.isCollapsed || u.isCollapsed ? e = Math.ceil(e / 5) : e += 32, r += e + 8
@@ -361,25 +360,25 @@ class em extends s.PureComponent {
             selectedChannelId: n
         } = this.props, i = t.getCategoryFromSection(t.recentsSectionNumber);
         if (null == i) return;
-        let s = null,
-            l = i.getShownChannelAndThreadIds();
-        null != n && l.includes(n) && (s = (0, N.xb)(t)), (0, N.DD)(e.id, l, s)
+        let l = null,
+            s = i.getShownChannelAndThreadIds();
+        null != n && s.includes(n) && (l = (0, N.xb)(t)), (0, N.DD)(e.id, s, l)
     };
     renderSection = e => {
         let {
             section: t
         } = e, {
             guildChannels: n,
-            guildChannelsVersion: s,
-            guild: l,
+            guildChannelsVersion: l,
+            guild: s,
             selectedChannelId: a,
             disableManageChannels: r
         } = this.props;
         return (0, i.jsx)(K.Ay, {
             sectionIndex: t,
-            guild: l,
+            guild: s,
             guildChannels: n,
-            guildChannelsVersion: s,
+            guildChannelsVersion: l,
             selectedChannelId: a,
             disableManageChannels: r
         }, (0, K.is)(t, n))
@@ -389,7 +388,7 @@ class em extends s.PureComponent {
             section: t,
             row: n
         } = e, {
-            guild: l,
+            guild: s,
             selectedChannel: a,
             selectedChannelId: r,
             selectedVoiceChannel: o,
@@ -398,83 +397,83 @@ class em extends s.PureComponent {
             voiceStates: u,
             disableManageChannels: h,
             stageChannelSpeakerVoiceStates: A,
-            optInEnabled: m,
-            withGuildIcon: _
+            optInEnabled: _,
+            withGuildIcon: m
         } = this.props;
-        if (t === w.PU) {
+        if (t === k.PU) {
             let e = d.getGuildActionSection(),
                 t = e.getRow(n);
             if (null == t) return null;
             switch (t) {
                 case er.n.GUILD_HUB_HEADER_OPTIONS:
-                    return (0, i.jsx)(C.A, {
-                        guild: l,
-                        channel: U.Ay.getDefaultChannel(l.id)
+                    return (0, i.jsx)(I.A, {
+                        guild: s,
+                        channel: G.Ay.getDefaultChannel(s.id)
                     }, er.n.GUILD_HUB_HEADER_OPTIONS);
                 case er.n.GUILD_PREMIUM_PROGRESS_BAR:
-                    let s = e.getRows();
-                    return (0, i.jsx)(y.A, {
-                        guild: l,
-                        withMargin: s.length > 1
+                    let l = e.getRows();
+                    return (0, i.jsx)(v.A, {
+                        guild: s,
+                        withMargin: l.length > 1
                     }, er.n.GUILD_PREMIUM_PROGRESS_BAR);
                 case er.n.GUILD_HOME:
                     return (0, i.jsx)(X.A, {
-                        guild: l,
+                        guild: s,
                         selected: r === ec.VV.GUILD_HOME
                     }, er.n.GUILD_HOME);
                 case er.n.GUILD_SCHEDULED_EVENTS:
-                    return (0, i.jsx)(el.A, {
-                        guild: l,
+                    return (0, i.jsx)(es.A, {
+                        guild: s,
                         selected: r === er.n.GUILD_SCHEDULED_EVENTS
                     }, er.n.GUILD_SCHEDULED_EVENTS);
                 case er.n.GUILD_ROLE_SUBSCRIPTIONS:
-                    return (0, i.jsx)(J.A, {
-                        guild: l,
+                    return (0, i.jsx)(Q.A, {
+                        guild: s,
                         selected: r === ec.VV.ROLE_SUBSCRIPTIONS
                     }, er.n.GUILD_ROLE_SUBSCRIPTIONS);
                 case er.n.GUILD_SHOP:
                     return (0, i.jsx)($.A, {
-                        guild: l,
+                        guild: s,
                         selected: r === ec.VV.GUILD_SHOP
                     }, er.n.GUILD_SHOP);
                 case er.n.GUILD_GAME_SHOP:
                     return (0, i.jsx)(z.A, {
-                        guild: l,
+                        guild: s,
                         selected: r === ec.VV.GAME_SHOP
                     }, er.n.GUILD_GAME_SHOP);
                 case er.n.GUILD_NEW_MEMBER_ACTIONS_PROGRESS_BAR:
-                    return (0, i.jsx)(Q.j, {
-                        guild: l
+                    return (0, i.jsx)(J.j, {
+                        guild: s
                     });
                 case er.n.CHANNELS_AND_ROLES:
                     return (0, i.jsx)(q.G, {
-                        guild: l,
+                        guild: s,
                         selected: r === ec.VV.CHANNEL_BROWSER || r === ec.VV.CUSTOMIZE_COMMUNITY
                     }, er.n.CHANNELS_AND_ROLES);
                 case er.n.GUILD_DIRECTORY:
                     return (0, i.jsx)(Y.A, {
-                        guild: l,
+                        guild: s,
                         selectedChannelId: r,
                         disableManageChannels: h
                     }, er.n.GUILD_DIRECTORY);
                 case er.n.GUILD_MOD_DASH_MEMBER_SAFETY:
                     return (0, i.jsx)(f.A, {
-                        guild: l,
+                        guild: s,
                         selected: r === ec.VV.MEMBER_SAFETY
                     }, er.n.GUILD_MOD_DASH_MEMBER_SAFETY);
                 case er.n.GUILD_BOOSTS:
-                    return (0, i.jsx)(v.A, {
-                        guildId: l.id,
+                    return (0, i.jsx)(y.A, {
+                        guildId: s.id,
                         selected: r === ec.VV.GUILD_BOOSTS
                     }, er.n.GUILD_BOOSTS);
                 case er.n.GAME_SERVERS:
-                    return (0, i.jsx)(T.A, {
-                        guildId: l.id,
+                    return (0, i.jsx)(b.A, {
+                        guildId: s.id,
                         selected: r === ec.VV.GAME_SERVERS
                     }, er.n.GAME_SERVERS);
                 case er.n.GAME_SERVERS_EMPTY:
-                    return (0, i.jsx)(b.A, {
-                        guildId: l.id,
+                    return (0, i.jsx)(S.A, {
+                        guildId: s.id,
                         selected: r === ec.VV.GAME_SERVERS
                     }, er.n.GAME_SERVERS_EMPTY);
                 default:
@@ -487,38 +486,38 @@ class em extends s.PureComponent {
         let {
             category: p,
             channel: x
-        } = g, E = p instanceof w.xu, I = x.record, N = `${t}${x.id}`;
-        switch (I.type) {
+        } = g, E = p instanceof k.xu, C = x.record, N = `${t}${x.id}`;
+        switch (C.type) {
             case eo.rbe.GUILD_ANNOUNCEMENT:
             case eo.rbe.GUILD_TEXT:
             case eo.rbe.GUILD_FORUM:
             case eo.rbe.GUILD_MEDIA:
             case eo.rbe.DM:
             case eo.rbe.GROUP_DM:
-                return (0, i.jsxs)(s.Fragment, {
+                return (0, i.jsxs)(l.Fragment, {
                     children: [(0, i.jsx)(en.A, {
-                        channel: I,
-                        guild: l,
+                        channel: C,
+                        guild: s,
                         position: x.position,
                         selected: r === x.id,
                         muted: x.isMuted,
                         subtitle: x.subtitle,
                         disableManageChannels: h,
-                        canBeNewChannel: m && t === d.recentsSectionNumber,
+                        canBeNewChannel: _ && t === d.recentsSectionNumber,
                         isFavoriteCategory: E,
                         isSuggestedSection: t === d.recentsSectionNumber
                     }), x.threadCount > 0 ? (0, i.jsx)(Z.A, {
-                        withGuildIcon: _,
-                        channel: I,
+                        withGuildIcon: m,
+                        channel: C,
                         sortedThreadIds: x.threadIds,
-                        selectedChannel: null != a && (a.id === x.id || a.parent_id === I.id) ? a : null,
-                        selectedVoiceChannelId: o?.parent_id === I.id ? c : null
+                        selectedChannel: null != a && (a.id === x.id || a.parent_id === C.id) ? a : null,
+                        selectedVoiceChannelId: o?.parent_id === C.id ? c : null
                     }) : null]
                 }, N);
             case eo.rbe.GUILD_STAGE_VOICE:
                 return (0, i.jsx)(ee.A, {
-                    channel: I,
-                    guild: l,
+                    channel: C,
+                    guild: s,
                     position: x.position,
                     selected: r === x.id,
                     connected: c === x.id,
@@ -531,8 +530,8 @@ class em extends s.PureComponent {
                 }, N);
             case eo.rbe.GUILD_VOICE:
                 return (0, i.jsx)(ea.A, {
-                    channel: I,
-                    guild: l,
+                    channel: C,
+                    guild: s,
                     position: x.position,
                     selected: r === x.id,
                     connected: c === x.id,
@@ -542,27 +541,27 @@ class em extends s.PureComponent {
                     disableManageChannels: h,
                     showTutorial: x.isFirstVoiceChannel,
                     isFavoriteCategory: E,
-                    withGuildIcon: _,
+                    withGuildIcon: m,
                     isSuggestedSection: t === d.recentsSectionNumber
                 }, N);
             case eo.rbe.GUILD_STORE:
                 return (0, i.jsx)(et.A, {
-                    channel: I,
-                    guild: l,
+                    channel: C,
+                    guild: s,
                     position: x.position,
                     selected: r === x.id
                 }, N);
             case eo.rbe.GUILD_CATEGORY:
                 if (t !== d.voiceChannelsSectionNumber) return null;
                 return (0, i.jsx)(F.sM, {
-                    channel: I
-                }, `readonly-${I.id}`);
+                    channel: C
+                }, `readonly-${C.id}`);
             case eo.rbe.PUBLIC_THREAD:
             case eo.rbe.PRIVATE_THREAD:
             case eo.rbe.ANNOUNCEMENT_THREAD:
                 return (0, i.jsx)(en.A, {
-                    channel: I,
-                    guild: l,
+                    channel: C,
+                    guild: s,
                     position: x.position,
                     selected: r === x.id,
                     muted: x.isMuted,
@@ -581,8 +580,8 @@ class em extends s.PureComponent {
             section: t
         } = e, {
             guildChannels: n,
-            guildChannelsVersion: s,
-            voiceStates: l,
+            guildChannelsVersion: l,
+            voiceStates: s,
             selectedChannelId: a,
             selectedVoiceChannelId: r,
             optInEnabled: o,
@@ -591,9 +590,9 @@ class em extends s.PureComponent {
         return (0, i.jsx)(W.Ay, {
             guildId: c,
             guildChannels: n,
-            guildChannelsVersion: s,
+            guildChannelsVersion: l,
             sectionIndex: t,
-            voiceStates: l,
+            voiceStates: s,
             selectedChannelId: a,
             selectedVoiceChannelId: r,
             optInEnabled: o
@@ -604,22 +603,22 @@ class em extends s.PureComponent {
             topMention: e,
             bottomUnread: t,
             bottomMention: n,
-            isUnreadVisible: s
+            isUnreadVisible: l
         } = this.state, {
-            guildId: l,
+            guildId: s,
             guildChannels: a,
             guildChannelsVersion: r
         } = this.props;
         return (0, i.jsx)("div", {
             className: eh.Eo,
-            children: (0, i.jsx)(es.A, {
+            children: (0, i.jsx)(el.A, {
                 ref: this.unreadTopRef,
                 textUnread: ed.intl.string(ed.t.FCRiT3),
                 textMention: ed.intl.string(ed.t["8zH0LJ"]),
-                hide: null == e && (s || null != t || null != n),
+                hide: null == e && (l || null != t || null != n),
                 className: eh.Vq,
                 barClassName: eh.bu,
-                guildId: l,
+                guildId: s,
                 guildChannels: a,
                 guildChannelsVersion: r,
                 isVisible: this.isChannelVisible,
@@ -634,15 +633,15 @@ class em extends s.PureComponent {
             guildChannels: t,
             guildChannelsVersion: n
         } = this.props, {
-            bottomMention: s,
-            isUnreadVisible: l
+            bottomMention: l,
+            isUnreadVisible: s
         } = this.state;
-        return (0, i.jsx)(es.A, {
+        return (0, i.jsx)(el.A, {
             reverse: !0,
             ref: this.unreadBottomRef,
             textUnread: ed.intl.string(ed.t.FCRiT3),
             textMention: ed.intl.string(ed.t["8zH0LJ"]),
-            hide: null == s && l,
+            hide: null == l && s,
             className: eh.di,
             barClassName: eh.bu,
             guildId: e,
@@ -657,8 +656,8 @@ class em extends s.PureComponent {
         let {
             guildChannels: n
         } = this.props;
-        if (e !== w.PU) {
-            if (null == t) return e === w.HP ? "favorites-header" : e === n.recentsSectionNumber ? "recents-header" : e === n.voiceChannelsSectionNumber ? "voice-channels" : e === w.bK ? "uncategorized-header" : n.getNamedCategoryFromSection(e)?.id;
+        if (e !== k.PU) {
+            if (null == t) return e === k.HP ? "favorites-header" : e === n.recentsSectionNumber ? "recents-header" : e === n.voiceChannelsSectionNumber ? "voice-channels" : e === k.bK ? "uncategorized-header" : n.getNamedCategoryFromSection(e)?.id;
             if (!n.isPlaceholderRow(e, t)) return n.getChannelFromSectionRow(e, t)?.channel?.id
         }
     };
@@ -667,15 +666,15 @@ class em extends s.PureComponent {
             guildChannels: e,
             guildBanner: t,
             selectedGuildId: n,
-            density: s
-        } = this.props, l = {};
-        (0, p.ai)(n) && (l["data-favorites"] = !0);
+            density: l
+        } = this.props, s = {};
+        (0, p.ai)(n) && (s["data-favorites"] = !0);
         let {
             ref: a,
             ...r
         } = this.context, o = 0;
         null != t && (o = 84);
-        let d = "compact" === s ? 8 : 12;
+        let d = "compact" === l ? 8 : 12;
         return (0, i.jsx)(c.skg, {
             children: t => (0, i.jsx)(c.B8B, {
                 ref: this.setListRef,
@@ -698,7 +697,7 @@ class em extends s.PureComponent {
                 getAnchorId: this.getAnchorId,
                 ...r,
                 ...t,
-                ...l
+                ...s
             }, "guild-channels")
         })
     }
@@ -723,14 +722,14 @@ class em extends s.PureComponent {
             showNewUnreadsBar: n
         } = this.props;
         return (0, i.jsx)(g.V0, {
-            children: l => (0, i.jsx)(c.Fmo, {
+            children: s => (0, i.jsx)(c.Fmo, {
                 component: (0, i.jsx)(c.AC4, {
                     children: (0, i.jsx)(c.H, {
-                        id: l,
+                        id: s,
                         children: ed.intl.string(ed.t.OGiMXJ)
                     })
                 }),
-                children: n ? (0, i.jsxs)(s.Fragment, {
+                children: n ? (0, i.jsxs)(l.Fragment, {
                     children: [(0, i.jsx)("div", {
                         className: eh.Eo,
                         children: (0, i.jsx)(ei.A, {
@@ -747,30 +746,30 @@ class em extends s.PureComponent {
                         jumpToVoiceChannels: this.jumpToVoiceChannels,
                         jumpToChannel: this.jumpToChannel
                     })]
-                }) : (0, i.jsxs)(s.Fragment, {
+                }) : (0, i.jsxs)(l.Fragment, {
                     children: [this.renderTopUnread(), this.renderList(), this.renderBottomUnread()]
                 })
             })
         })
     }
 }
-let e_ = e => {
+let em = e => {
     let {
         guildId: t,
         selectedChannelId: n,
-        selectedVoiceChannelId: l
+        selectedVoiceChannelId: s
     } = e, c = (0, o.bG)([h.A], () => h.A.keyboardModeEnabled), {
         analyticsLocations: d
-    } = (0, m.Ay)(A.A.GUILD_CHANNEL_LIST), _ = (0, o.bG)([D.A], () => D.A.getChannel(n)), g = (0, o.bG)([D.A], () => D.A.getChannel(l)), p = (0, o.bG)([P.A], () => P.A.getGuildId()), f = (0, S.jN)(t), x = s.useRef(null), E = s.useCallback((e, t) => {
+    } = (0, _.Ay)(A.A.GUILD_CHANNEL_LIST), m = (0, o.bG)([D.A], () => D.A.getChannel(n)), g = (0, o.bG)([D.A], () => D.A.getChannel(s)), p = (0, o.bG)([P.A], () => P.A.getGuildId()), f = (0, T.jN)(t), x = l.useRef(null), E = l.useCallback((e, t) => {
         let n = x.current;
         null != n && (eo.Ut1.test(t) || (0, ec.jq)(t) ? n.scrollToChannel(t, !1, 16, () => {
             requestAnimationFrame(() => document.querySelector(e)?.focus())
         }) : document.querySelector(e)?.focus())
-    }, []), C = s.useCallback(() => new Promise(e => {
+    }, []), I = l.useCallback(() => new Promise(e => {
         let t = x.current;
         if (null == t) return e();
         t.scrollTo(0, () => requestAnimationFrame(() => e()))
-    }), []), I = s.useCallback(() => new Promise(e => {
+    }), []), C = l.useCallback(() => new Promise(e => {
         let t = x.current;
         if (null == t) return e();
         t.scrollTo(Number.MAX_SAFE_INTEGER, () => requestAnimationFrame(() => e()))
@@ -779,26 +778,26 @@ let e_ = e => {
         defaultFocused: n ?? void 0,
         isEnabled: c,
         setFocus: E,
-        scrollToStart: C,
-        scrollToEnd: I
-    }), b = N.setFocus;
-    s.useEffect(() => {
-        null != n && b(n)
-    }, [n, b]);
-    let T = (0, R.A)(t);
-    return (0, i.jsx)(m.f5, {
+        scrollToStart: I,
+        scrollToEnd: C
+    }), S = N.setFocus;
+    l.useEffect(() => {
+        null != n && S(n)
+    }, [n, S]);
+    let b = (0, R.A)(t);
+    return (0, i.jsx)(_.f5, {
         value: d,
         children: (0, i.jsx)(u.A, {
             section: eo.JJy.GUILD_CHANNEL_LIST,
             children: (0, i.jsx)(a.hD, {
                 navigator: N,
-                children: (0, i.jsx)(em, {
+                children: (0, i.jsx)(e_, {
                     ...e,
                     listNavigator: N,
                     ref: x,
-                    selectedChannel: _,
+                    selectedChannel: m,
                     selectedVoiceChannel: g,
-                    stageChannelSpeakerVoiceStates: T,
+                    stageChannelSpeakerVoiceStates: b,
                     selectedGuildId: p,
                     optInEnabled: f
                 })
@@ -811,8 +810,8 @@ function eg(e) {
     let {
         guildChannels: t,
         shouldShowEmptyState: n
-    } = (0, V.D)(), {
-        density: s
+    } = (0, B.D)(), {
+        density: l
     } = (0, c.wRf)();
     return n ? (0, i.jsx)("div", {
         className: eh.XG,
@@ -867,26 +866,26 @@ function eg(e) {
                 })]
             })]
         })
-    }) : (0, i.jsx)(e_, {
+    }) : (0, i.jsx)(em, {
         ...e,
         guildChannels: t,
         guildChannelsVersion: 0,
         withGuildIcon: !1,
-        density: s
+        density: l
     })
 }
 
 function ep(e) {
     let t = (0, H.A)(e.guild),
-        n = (0, o.cf)([k.A], () => k.A.getGuild(e.guildId, {
+        n = (0, o.cf)([w.A], () => w.A.getGuild(e.guildId, {
             guildActionRows: t
         })),
         {
-            density: s
+            density: l
         } = (0, c.wRf)();
-    return (0, i.jsx)(e_, {
+    return (0, i.jsx)(em, {
         ...e,
         ...n,
-        density: s
+        density: l
     })
 }

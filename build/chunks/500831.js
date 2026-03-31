@@ -1,7 +1,7 @@
 /** chunk id: 500831 params = (module,exports,require) **/
 n.r(t), n.d(t, {
-    default: () => G,
-    useAppSidebarState: () => U
+    default: () => V,
+    useAppSidebarState: () => k
 });
 var i = n(627968),
     l = n(64700),
@@ -27,23 +27,25 @@ var i = n(627968),
     S = n(667086),
     x = n(87001),
     v = n(52144),
-    b = n(97469),
-    y = n(253932),
-    O = n(430363),
-    L = n(113800),
-    R = n(540999),
-    P = n(147964),
-    D = n(531685),
-    M = n(837921),
-    j = n(475815),
-    w = n(71855);
+    b = n(966597),
+    y = n(922281),
+    O = n(97469),
+    L = n(253932),
+    R = n(430363),
+    P = n(113800),
+    D = n(540999),
+    M = n(147964),
+    j = n(531685),
+    w = n(837921),
+    U = n(475815),
+    G = n(71855);
 n(801416);
-let U = (0, a.v)(() => ({
+let k = (0, a.v)(() => ({
         isOpen: !0
     })),
-    G = l.memo(function() {
+    V = l.memo(function() {
         l.useLayoutEffect(() => {
-            M.Ay.setMinimumSize(800, 500)
+            w.Ay.setMinimumSize(800, 500)
         }, []);
         let {
             notificationCenterVariant: e,
@@ -54,18 +56,23 @@ let U = (0, a.v)(() => ({
             hasBugReporterAccess: n
         } = A.A.useConfig({
             location: "HeaderBar"
-        }), a = (0, s.bG)([R.A], () => R.A.isDeveloper), U = (0, O.Uk)("VoiceDareTitleBarButton"), G = (0, s.bG)([P.A, c.A], () => y.Q_.getSetting() && null != P.A.testModeApplicationId && null != c.A.getApplication(P.A.testModeApplicationId) && (0, u.A)(c.A.getApplication(P.A.testModeApplicationId))), k = null !== e && t === N.RK.TITLE_BAR_LEFT, V = null === e, {
-            enabled: B
+        }), a = (0, s.bG)([D.A], () => D.A.isDeveloper), k = (0, R.Uk)("VoiceDareTitleBarButton"), V = (0, s.bG)([M.A, c.A], () => L.Q_.getSetting() && null != M.A.testModeApplicationId && null != c.A.getApplication(M.A.testModeApplicationId) && (0, u.A)(c.A.getApplication(M.A.testModeApplicationId))), B = null !== e && t === N.RK.TITLE_BAR_LEFT, H = null === e, {
+            enabled: F
         } = p.s.useConfig({
+            location: "AppTitleBar"
+        }), {
+            enabled: Y,
+            inInbox: W
+        } = b.A.useConfig({
             location: "AppTitleBar"
         });
         l.useLayoutEffect(() => {
-            M.Ay.setMinimumSize(800, 500)
+            w.Ay.setMinimumSize(800, 500)
         }, []);
-        let H = (0, b.NC)(),
-            F = (0, s.bG)([D.A, x.A], () => (0, j._U)()),
-            Y = (0, r.xl)(),
-            W = function(e) {
+        let K = (0, O.NC)(),
+            q = (0, s.bG)([j.A, x.A], () => (0, U._U)()),
+            z = (0, r.xl)(),
+            $ = function(e) {
                 let {
                     showBackForwardButtons: t,
                     showNotificationsInbox: n,
@@ -73,33 +80,33 @@ let U = (0, a.v)(() => ({
                 } = e;
                 return l.useMemo(() => t ? "BACK_FORWARD_NAVIGATION" : n ? "NOTIFICATIONS_INBOX" : i ? "RECENTS" : "HELP", [t, n, i])
             }({
-                showBackForwardButtons: Y,
-                showNotificationsInbox: k,
-                showRecentsButton: V
+                showBackForwardButtons: z,
+                showNotificationsInbox: B,
+                showRecentsButton: H
             });
-        return F ? null : (0, i.jsx)(o.skg, {
+        return q ? null : (0, i.jsx)(o.skg, {
             children: e => (0, i.jsx)(o.NPJ, {
-                theme: H,
-                children: t => (0, i.jsx)(w.cq, {
+                theme: K,
+                children: t => (0, i.jsx)(G.cq, {
                     className: t,
                     leading: (0, i.jsxs)(i.Fragment, {
-                        children: [Y && (0, i.jsx)(_.A, {
-                            firstElementFocusJumpSectionProps: "BACK_FORWARD_NAVIGATION" === W ? e : void 0
-                        }), k && (0, i.jsx)(S.A, {
-                            focusSectionProps: "NOTIFICATIONS_INBOX" === W ? e : void 0
+                        children: [z && (0, i.jsx)(_.A, {
+                            firstElementFocusJumpSectionProps: "BACK_FORWARD_NAVIGATION" === $ ? e : void 0
+                        }), B && (0, i.jsx)(S.A, {
+                            focusSectionProps: "NOTIFICATIONS_INBOX" === $ ? e : void 0
                         })]
                     }),
                     title: (0, i.jsx)(T.M, {}),
                     trailing: (0, i.jsxs)(i.Fragment, {
-                        children: [(0, i.jsx)(m.A, {}), U ? (0, i.jsx)(L.A, {}) : null, B && (0, i.jsx)(g.A, {}), (0, i.jsx)(h.A, {
+                        children: [(0, i.jsx)(m.A, {}), k ? (0, i.jsx)(P.A, {}) : null, F && (0, i.jsx)(g.A, {}), (0, i.jsx)(h.A, {
                             canShowReminder: !0
-                        }), V && (0, i.jsx)(v.A, {
-                            ..."RECENTS" === W ? e : {}
+                        }), Y && !W && (0, i.jsx)(y.A, {}), H && (0, i.jsx)(v.A, {
+                            ..."RECENTS" === $ ? e : {}
                         }), n ? (0, i.jsx)(f.w, {
-                            focusSectionProps: "HELP" === W ? e : void 0
+                            focusSectionProps: "HELP" === $ ? e : void 0
                         }) : (0, i.jsx)(I.A, {
-                            focusSectionProps: "HELP" === W ? e : void 0
-                        }), a && (0, i.jsx)(E.R, {}), G && (0, i.jsx)(d.A, {}), (0, i.jsx)(C.A, {})]
+                            focusSectionProps: "HELP" === $ ? e : void 0
+                        }), a && (0, i.jsx)(E.R, {}), V && (0, i.jsx)(d.A, {}), (0, i.jsx)(C.A, {})]
                     })
                 })
             })

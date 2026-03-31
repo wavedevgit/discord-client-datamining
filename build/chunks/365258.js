@@ -1,17 +1,16 @@
 /** chunk id: 365258 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
-    AB: () => I,
+    AB: () => C,
     AI: () => h,
     Xc: () => f,
     ae: () => E,
     g8: () => p,
     gF: () => N,
-    gS: () => C,
+    gS: () => I,
     vz: () => x
 });
-var i, s = n(873298),
-    l = n(253932),
+var i, l = n(873298),
+    s = n(253932),
     a = n(205761),
     r = n(498642),
     o = n(71393),
@@ -19,9 +18,9 @@ var i, s = n(873298),
     d = n(115063),
     u = n(985018),
     h = ((i = {}).RESTRICTING = "restricting", i.EXPANDING = "expanding", i);
-let A = s.Qd;
+let A = l.Qd;
 
-function m(e) {
+function _(e) {
     switch (e) {
         case A.ACTIVITY_STATUS_OFF:
             return 2;
@@ -33,32 +32,32 @@ function m(e) {
             return -1
     }
 }
-let _ = new Map([
-    [s.KP.FRIENDS_AND_ALL_GUILDS, A.ACTIVITY_STATUS_OFF],
-    [s.KP.FRIENDS_AND_SMALL_GUILDS, A.ACTIVITY_STATUS_ON_FOR_LARGE_GUILDS],
-    [s.KP.FRIENDS_ONLY, A.ACTIVITY_STATUS_ON]
+let m = new Map([
+    [l.KP.FRIENDS_AND_ALL_GUILDS, A.ACTIVITY_STATUS_OFF],
+    [l.KP.FRIENDS_AND_SMALL_GUILDS, A.ACTIVITY_STATUS_ON_FOR_LARGE_GUILDS],
+    [l.KP.FRIENDS_ONLY, A.ACTIVITY_STATUS_ON]
 ]);
 
 function g(e) {
-    return _.get(e) ?? A.ACTIVITY_STATUS_OFF
+    return m.get(e) ?? A.ACTIVITY_STATUS_OFF
 }
 
 function p(e, t) {
     if (e === t) return null;
-    let n = m(e),
-        i = m(t);
+    let n = _(e),
+        i = _(t);
     if (n < 0 || i < 0) return null;
-    let s = i < n ? "restricting" : "expanding",
-        l = (0, d.Kk)(),
+    let l = i < n ? "restricting" : "expanding",
+        s = (0, d.Kk)(),
         a = c.Ay.getFlattenedGuildIds(),
         u = e === A.ACTIVITY_STATUS_OFF && t === A.ACTIVITY_STATUS_ON_FOR_LARGE_GUILDS || e === A.ACTIVITY_STATUS_ON_FOR_LARGE_GUILDS && t === A.ACTIVITY_STATUS_OFF ? "large_only" : e === A.ACTIVITY_STATUS_ON && t === A.ACTIVITY_STATUS_ON_FOR_LARGE_GUILDS || e === A.ACTIVITY_STATUS_ON_FOR_LARGE_GUILDS && t === A.ACTIVITY_STATUS_ON ? "small_only" : "all",
         h = a.filter(e => {
             if (null == o.A.getGuild(e)) return !1;
-            let t = l.has(e);
-            if ("restricting" === s && t || "expanding" === s && !t) return !1;
+            let t = s.has(e);
+            if ("restricting" === l && t || "expanding" === l && !t) return !1;
             if ("all" === u) return !0;
             let n = r.A.getMemberCount(e);
-            return null == n ? "restricting" === s : "large_only" === u ? n > 200 : n <= 200
+            return null == n ? "restricting" === l : "large_only" === u ? n > 200 : n <= 200
         });
     return 0 === h.length ? null : (h.sort((e, t) => {
         let n = o.A.getGuild(e),
@@ -66,7 +65,7 @@ function p(e, t) {
         return n?.joinedAt == null && i?.joinedAt == null ? 0 : n?.joinedAt == null ? 1 : i?.joinedAt == null ? -1 : new Date(i.joinedAt).getTime() - new Date(n.joinedAt).getTime()
     }), {
         affectedGuildIds: h,
-        direction: s
+        direction: l
     })
 }
 
@@ -105,19 +104,19 @@ function E(e, t) {
     }
 }
 
-function C(e, t) {
+function I(e, t) {
     let n = g(t),
-        i = l._Z.getSetting();
-    if (i === n || m(g(e)) > m(n) != m(i) > m(n)) return null;
+        i = s._Z.getSetting();
+    if (i === n || _(g(e)) > _(n) != _(i) > _(n)) return null;
     let a = p(i, n);
     if (null == a) return null;
     let r = function(e) {
         switch (e) {
-            case s.KP.FRIENDS_AND_ALL_GUILDS:
+            case l.KP.FRIENDS_AND_ALL_GUILDS:
                 return u.intl.string(u.t.Boxc8R).toLowerCase();
-            case s.KP.FRIENDS_AND_SMALL_GUILDS:
+            case l.KP.FRIENDS_AND_SMALL_GUILDS:
                 return u.intl.string(u.t.YOIKBt).toLowerCase();
-            case s.KP.FRIENDS_ONLY:
+            case l.KP.FRIENDS_ONLY:
                 return u.intl.string(u.t.u0nlJv).toLowerCase();
             default:
                 return ""
@@ -131,7 +130,7 @@ function C(e, t) {
     }
 }
 
-function I(e) {
+function C(e) {
     return [...e].sort((e, t) => a.A.getScoreWithoutFetchingLatest(t) - a.A.getScoreWithoutFetchingLatest(e))
 }
 
@@ -140,9 +139,9 @@ function N(e, t) {
         i = new Set(t);
     if ("restricting" === e) {
         let e = new Set([...n, ...i]);
-        l.JG.updateSetting([...e])
+        s.JG.updateSetting([...e])
     } else {
         let e = [...n].filter(e => !i.has(e));
-        l.JG.updateSetting(e)
+        s.JG.updateSetting(e)
     }
 }

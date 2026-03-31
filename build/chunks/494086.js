@@ -17,16 +17,16 @@ function s(e) {
         compact: d
     } = e, {
         nick: u
-    } = (0, l.Ay)(t), _ = o(), m = c(), A = r.intl.format(r.t.MMN2Jq, {
+    } = (0, l.Ay)(t), _ = o(), A = c(), m = r.intl.format(r.t.MMN2Jq, {
         username: u,
         usernameHook: _,
         otherUsername: s,
-        otherUsernameHook: m
+        otherUsernameHook: A
     });
     return (0, i.jsx)(a.A, {
         icon: n(617184),
         timestamp: t.timestamp,
         compact: d,
-        children: A
+        children: m
     })
 }

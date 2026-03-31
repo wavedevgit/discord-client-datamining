@@ -1,12 +1,11 @@
 /** chunk id: 470743 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
     A: () => h
 });
 var i = n(627968);
 n(64700);
-var s = n(397927),
-    l = n(688810),
+var l = n(397927),
+    s = n(688810),
     a = n(523527),
     r = n(267102),
     o = n(780964),
@@ -18,8 +17,8 @@ function h() {
     let e = (0, r.Us)(),
         {
             analyticsLocations: t
-        } = (0, l.Ay)();
-    return (0, i.jsx)(s.Drp, {
+        } = (0, s.Ay)();
+    return (0, i.jsx)(l.Drp, {
         id: "voice-and-video-settings",
         label: u.intl.string(u.t.dsXapM),
         action: () => {
@@ -27,10 +26,10 @@ function h() {
                 analyticsLocations: t
             })
         },
-        icon: s.Zes,
+        icon: l.Zes,
         leadingAccessory: {
             type: "icon",
-            icon: s.Zes
+            icon: l.Zes
         }
     })
 }

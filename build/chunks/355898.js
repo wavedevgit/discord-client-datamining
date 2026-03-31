@@ -1,11 +1,10 @@
 /** chunk id: 355898 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
-    M: () => s
+    M: () => l
 });
 var i = n(73153);
 
-function s(e, t) {
+function l(e, t) {
     i.h.dispatch({
         type: "GAME_UPSELL_DISMISS",
         applicationId: e,

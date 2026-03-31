@@ -1,13 +1,13 @@
 /** chunk id: 382120 params = (module,exports,require) **/
 t.d(n, {
-    A: () => _
+    A: () => A
 });
 var i = t(627968);
 t(64700);
 var s = t(158954),
-    r = t(311907),
-    a = t(397927),
-    l = t(973925),
+    l = t(311907),
+    r = t(397927),
+    a = t(973925),
     o = t(622543),
     d = t(985018),
     c = t(763683);
@@ -30,10 +30,10 @@ function u(e) {
             })
         }), (0, i.jsxs)("div", {
             className: c.qg,
-            children: [(0, i.jsx)(a.Heading, {
+            children: [(0, i.jsx)(r.Heading, {
                 variant: "text-xs/semibold",
                 children: t
-            }), (0, i.jsx)(a.Text, {
+            }), (0, i.jsx)(r.Text, {
                 variant: "text-sm/normal",
                 children: s
             })]
@@ -41,30 +41,30 @@ function u(e) {
     })
 }
 
-function _(e) {
+function A(e) {
     let {
         user: n
-    } = e, t = (0, r.bG)([o.A], () => o.A.getUserProfile(n.id)?.application), {
-        hasMessageContent: _,
-        hasGuildPresences: A,
-        hasGuildMembers: m
-    } = (0, l.Z)(t);
+    } = e, t = (0, l.bG)([o.A], () => o.A.getUserProfile(n.id)?.application), {
+        hasMessageContent: A,
+        hasGuildPresences: _,
+        hasGuildMembers: x
+    } = (0, a.Z)(t);
     return (0, i.jsxs)(s.IpV, {
         fade: !0,
         className: c.XG,
-        children: [_ && (0, i.jsx)(u, {
-            icon: a.oyn,
+        children: [A && (0, i.jsx)(u, {
+            icon: r.oyn,
             title: d.intl.string(d.t["7Tmhfu"]),
             description: d.intl.string(d.t.eu5x7z)
-        }), A && (0, i.jsx)(u, {
-            icon: a._xR,
+        }), _ && (0, i.jsx)(u, {
+            icon: r._xR,
             title: d.intl.string(d.t.awYSsM),
             description: d.intl.string(d.t.TpsXoC)
-        }), m && (0, i.jsx)(u, {
-            icon: a.nFg,
+        }), x && (0, i.jsx)(u, {
+            icon: r.nFg,
             title: d.intl.string(d.t.WuKeSJ),
             description: d.intl.string(d.t.wOBmtV)
-        }), (0, i.jsx)(a.Text, {
+        }), (0, i.jsx)(r.Text, {
             variant: "text-xs/normal",
             children: d.intl.format(d.t.b6nqk0, {
                 helpCenterUrl: "https://support.discord.com/hc/articles/7933951485975"

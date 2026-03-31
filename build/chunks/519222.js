@@ -1,18 +1,18 @@
 /** chunk id: 519222 params = (module,exports,require) **/
 n.d(t, {
-    $b: () => O,
-    DT: () => x,
-    Io: () => N,
+    $b: () => N,
+    DT: () => T,
+    Io: () => O,
     Le: () => C,
     Nw: () => R,
-    RC: () => j,
+    RC: () => x,
     S: () => I,
     Z4: () => P,
     cl: () => D,
     mF: () => G,
     r7: () => w,
     rS: () => M,
-    u_: () => T,
+    u_: () => j,
     vc: () => v,
     wF: () => L
 }), n(627968), n(64700), n(397927);
@@ -28,8 +28,8 @@ var o = n(118517),
     u = n(961350),
     g = n(734057),
     A = n(954571),
-    p = n(147036),
-    m = n(957565),
+    m = n(147036),
+    p = n(957565),
     f = n(203982),
     h = n(661191),
     y = n(965407),
@@ -43,22 +43,22 @@ function v(e) {
     null != t && s.A.open(t, b.BEX.ENGAGEMENT)
 }
 
-function x(e, t, n) {
-    (0, m.C)(n.shiftKey ? `${t.channel_id}-${t.id}` : t.id)
+function T(e, t, n) {
+    (0, p.C)(n.shiftKey ? `${t.channel_id}-${t.id}` : t.id)
 }
 
 function I(e, t) {
     A.default.track(b.HAw.MESSAGE_LINK_COPIED, {
         message_id: t.id,
         channel: t.channel_id
-    }), (0, m.C)((0, p.n)(e.guild_id, e.id, t.id))
+    }), (0, p.C)((0, m.n)(e.guild_id, e.id, t.id))
 }
 
-function j(e, t, n) {
+function x(e, t, n) {
     t.state === b.cmJ.SEND_FAILED || n.shiftKey ? l.A.deleteMessage(e.id, t.id, t.state === b.cmJ.SEND_FAILED) : S.A.confirmDelete(e, t)
 }
 
-function T(e, t) {
+function j(e, t) {
     l.A.startEditMessageRecord(e.id, t)
 }
 
@@ -74,11 +74,11 @@ function C(e, t) {
     (0, a.A)(e.id, t.id)
 }
 
-function N(e, t) {
+function O(e, t) {
     (0, _.A)(e, t, void 0, y.A.getOptions(t.id))
 }
 
-function O(e, t, n) {
+function N(e, t, n) {
     let i = e.isPrivate(),
         l = t.author.id === u.default.getId();
     (0, o.Yf)({

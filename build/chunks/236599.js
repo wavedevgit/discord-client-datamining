@@ -3,9 +3,9 @@ n.d(t, {
     A: () => m
 });
 var i = n(627968),
-    l = n(64700),
-    a = n(503698),
-    s = n.n(a),
+    a = n(64700),
+    l = n(503698),
+    s = n.n(l),
     r = n(311907),
     o = n(397927),
     d = n(773669),
@@ -16,9 +16,9 @@ var i = n(627968),
 function m(e) {
     let {
         className: t
-    } = e, a = ["en-US", "en-GB"].includes((0, r.bG)([d.default], () => d.default.locale)) ? u.intl.string(u.t.OYlggR) : u.intl.string(u.t.Y55Tua), {
+    } = e, l = ["en-US", "en-GB"].includes((0, r.bG)([d.default], () => d.default.locale)) ? u.intl.string(u.t.OYlggR) : u.intl.string(u.t.Y55Tua), {
         trackUserProfileEditAction: m
-    } = (0, c.NJ)(), x = l.useCallback(() => {
+    } = (0, c.NJ)(), x = a.useCallback(() => {
         m({
             action: "PRESS_ADD_WIDGET"
         }), (0, o.mMO)(async () => {
@@ -38,7 +38,7 @@ function m(e) {
         children: [(0, i.jsx)(o.Text, {
             variant: "text-xs/semibold",
             color: "text-subtle",
-            children: a
+            children: l
         }), (0, i.jsx)(o.Button, {
             icon: o.j96,
             text: u.intl.string(u.t["lBG2s/"]),

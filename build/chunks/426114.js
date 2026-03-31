@@ -1,5 +1,4 @@
 /** chunk id: 426114 params = (module,exports,require) **/
-"use strict";
 e.exports = {
     lY: "animation_f2170c",
     vk: "clickable_f2170c",

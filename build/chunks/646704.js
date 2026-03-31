@@ -1,6 +1,6 @@
 /** chunk id: 646704 params = (module,exports,require) **/
 n.d(t, {
-    i: () => x
+    i: () => A
 });
 var i = n(627968),
     s = n(64700),
@@ -12,13 +12,13 @@ var i = n(627968),
     c = n(933297),
     u = n(780964),
     m = n(616415),
-    _ = n(985018);
-let g = (0, d.t_)(u.X.SUBSCRIPTIONS_PANEL, {
-        useTitle: () => _.intl.string(_.t.trSpHX),
+    g = n(985018);
+let _ = (0, d.t_)(u.X.SUBSCRIPTIONS_PANEL, {
+        useTitle: () => g.intl.string(g.t.trSpHX),
         buildLayout: () => [m.J]
     }),
-    x = (0, d.i4)(u.X.SUBSCRIPTIONS_SIDEBAR_ITEM, {
-        useTitle: () => _.intl.string(_.t.trSpHX),
+    A = (0, d.i4)(u.X.SUBSCRIPTIONS_SIDEBAR_ITEM, {
+        useTitle: () => g.intl.string(g.t.trSpHX),
         icon: l.SubscriptionIcon,
         usePersistentBadge: function() {
             return s.useMemo(() => ({
@@ -29,5 +29,5 @@ let g = (0, d.t_)(u.X.SUBSCRIPTIONS_PANEL, {
                 }) : null
             }), [])
         },
-        buildLayout: () => [g]
+        buildLayout: () => [_]
     })

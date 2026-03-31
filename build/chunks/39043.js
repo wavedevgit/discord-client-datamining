@@ -1,6 +1,6 @@
 /** chunk id: 39043 params = (module,exports,require) **/
 n.d(t, {
-    A: () => _
+    A: () => g
 });
 var i = n(627968),
     s = n(64700),
@@ -15,24 +15,24 @@ var i = n(627968),
 function m(e) {
     return r.A.getField("requestAccordionOpenKey") === e.key
 }
-let _ = s.memo(function(e) {
+let g = s.memo(function(e) {
     let {
         node: t
     } = e, {
         useTitle: n,
-        layout: _,
-        useCollapsedSubtitle: g
-    } = t, [x, A] = s.useState(!0), [h, p] = s.useState(() => m(t)), T = s.useRef(h), f = s.useRef(m(t) ? "navigation" : null);
+        layout: g,
+        useCollapsedSubtitle: _
+    } = t, [A, x] = s.useState(!0), [h, p] = s.useState(() => m(t)), T = s.useRef(h), f = s.useRef(m(t) ? "navigation" : null);
     s.useEffect(() => r.A.subscribe(e => e.requestAccordionOpenKey, e => {
-        e === t.key && (T.current ? o.A.notifyAccordionExpanded(t.key) : (f.current = "navigation", A(!1), p(!0)))
+        e === t.key && (T.current ? o.A.notifyAccordionExpanded(t.key) : (f.current = "navigation", x(!1), p(!0)))
     }, {
         equalityFn: (e, t) => e === t,
         fireImmediately: !0
     }), [t.key, h]);
-    let S = s.useCallback(e => {
+    let E = s.useCallback(e => {
             if (null != e.target && h !== T.current && (T.current = h, T.current)) switch (f.current) {
                 case "navigation":
-                    A(!0), o.A.notifyAccordionExpanded(t.key);
+                    x(!0), o.A.notifyAccordionExpanded(t.key);
                     break;
                 case "user":
                     o.A.navigate(t.key, {
@@ -41,21 +41,21 @@ let _ = s.memo(function(e) {
                     })
             }
         }, [h, t.key]),
-        E = s.useMemo(() => (0, l.debounce)(S, 50), [S]),
-        b = (0, a.w)(E),
+        S = s.useMemo(() => (0, l.debounce)(E, 50), [E]),
+        b = (0, a.w)(S),
         C = n?.(h),
-        v = g?.(),
-        N = (0, c.q)(t);
+        N = _?.(),
+        v = (0, c.q)(t);
     return (0, i.jsx)(u.f, {
         ref: b,
         title: C,
-        collapsedSubtitle: v,
+        collapsedSubtitle: N,
         isExpanded: h,
         onExpandedChange: e => {
-            f.current = "user", N(), p(e)
+            f.current = "user", v(), p(e)
         },
-        animate: x,
-        children: _.map(e => (0, i.jsx)(d.A, {
+        animate: A,
+        children: g.map(e => (0, i.jsx)(d.A, {
             node: e
         }, e.key))
     })

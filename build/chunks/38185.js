@@ -1,7 +1,6 @@
 /** chunk id: 38185 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
-    i: () => s
+    i: () => l
 });
 let i = (0, n(945810).mj)({
     name: "2026-03-slayer-gifting-mini-shelf-removal",
@@ -19,7 +18,7 @@ let i = (0, n(945810).mj)({
     }
 });
 
-function s(e) {
+function l(e) {
     let {
         location: t
     } = e;

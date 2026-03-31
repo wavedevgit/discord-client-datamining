@@ -4,9 +4,9 @@ n.d(t, {
     o: () => I
 });
 var a = n(627968),
-    i = n(64700),
-    l = n(503698),
-    r = n.n(l),
+    l = n(64700),
+    i = n(503698),
+    r = n.n(i),
     s = n(505779),
     c = n(311907),
     o = n(397927),
@@ -28,26 +28,26 @@ function C(e) {
     let {
         detectedGame: t,
         trackAction: n,
-        onInviteResolved: l,
+        onInviteResolved: i,
         closeModal: f
-    } = e, [_, E] = i.useState(), C = (0, c.bG)([x.A], () => _?.guild?.id != null && x.A.isMember(_?.guild?.id)), I = i.useMemo(() => t.websites?.find(e => {
+    } = e, [_, E] = l.useState(), C = (0, c.bG)([x.A], () => _?.guild?.id != null && x.A.isMember(_?.guild?.id)), I = l.useMemo(() => t.websites?.find(e => {
         let {
             category: t
         } = e;
         return t === s.V.DISCORD
     }), [t.websites]);
-    i.useEffect(() => {
+    l.useEffect(() => {
         let e = async e => {
             let t = e.split("/").pop();
             if (null != t) {
                 if (null != _ && _.code.toLowerCase() === t.toLowerCase()) return;
                 let e = await (0, m.A)(t);
-                !0 !== e.banned && (E(e.invite), null != e.invite && l?.(e.invite))
+                !0 !== e.banned && (E(e.invite), null != e.invite && i?.(e.invite))
             }
         };
         null != I && e(I.url)
-    }, [I, l, _]);
-    let N = i.useCallback(() => {
+    }, [I, i, _]);
+    let N = l.useCallback(() => {
         null != _ && (n(g.Ws.JoinOfficialServer), f(), d.h.dispatch({
             type: "INVITE_MODAL_OPEN",
             invite: _,
@@ -109,11 +109,11 @@ function I(e) {
         trackAction: t,
         closeModal: n
     } = e, {
-        canStartAuthorization: l,
+        canStartAuthorization: i,
         hasAlreadyLinked: r,
         officialInvite: s,
         isMember: c
-    } = (0, _.c)(), m = i.useCallback(() => {
+    } = (0, _.c)(), m = l.useCallback(() => {
         null != s && (t(g.Ws.JoinOfficialServer), n(), d.h.dispatch({
             type: "INVITE_MODAL_OPEN",
             invite: s,
@@ -131,7 +131,7 @@ function I(e) {
             id: s.guild.id,
             splash: s.guild.splash
         }),
-        j = l && !r || null == A,
+        j = i && !r || null == A,
         C = (0, a.jsx)("img", {
             className: E.$f,
             src: x,

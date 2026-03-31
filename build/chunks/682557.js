@@ -1,12 +1,11 @@
 /** chunk id: 682557 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
     A: () => a
 });
 var i = n(627968);
 n(64700);
-var s = n(397927),
-    l = n(283354);
+var l = n(397927),
+    s = n(283354);
 let a = e => {
     let {
         entry: t,
@@ -16,21 +15,21 @@ let a = e => {
         onRequestClose: o,
         targetElementRef: c
     } = e;
-    return (0, i.jsx)(s.YNO, {
+    return (0, i.jsx)(l.YNO, {
         targetElementRef: c,
         onRequestOpen: r,
         onRequestClose: o,
-        animation: s.YNO.Animation.NONE,
+        animation: l.YNO.Animation.NONE,
         position: "bottom",
         spacing: 4,
         align: "right",
         renderPopout: e => {
             let {
-                closePopout: s
+                closePopout: l
             } = e;
-            return (0, i.jsx)(l.default, {
+            return (0, i.jsx)(s.default, {
                 entry: t,
-                closePopout: s,
+                closePopout: l,
                 hideEditButton: n
             })
         },

@@ -1,104 +1,104 @@
 /** chunk id: 550732 params = (module,exports,require) **/
 l.d(e, {
-    C: () => p
+    C: () => g
 });
-var s = l(627968);
+var n = l(627968);
 l(64700);
-var r = l(991660),
-    n = l(158954),
-    i = l(311907),
-    a = l(397927),
+var s = l(991660),
+    r = l(158954),
+    a = l(311907),
+    i = l(397927),
     o = l(587895),
     c = l(212534),
     d = l(272859),
-    x = l(957565),
-    u = l(943775),
+    u = l(957565),
+    x = l(943775),
     _ = l(997997),
     h = l(816709),
     m = l(652215),
-    v = l(985018),
-    j = l(141675),
-    g = l(110992);
+    j = l(985018),
+    v = l(141675),
+    A = l(110992);
 
-function p(t) {
+function g(t) {
     let {
         appId: e,
         skuId: l,
-        transitionState: p,
-        onClose: A,
-        children: T,
-        footer: E
-    } = t, I = (0, i.bG)([o.A, c.A], () => o.A.getApplication(e) ?? c.A.getApplicationRecord(e), [e]), {
-        data: S
+        transitionState: g,
+        onClose: p,
+        children: E,
+        footer: S
+    } = t, T = (0, a.bG)([o.A, c.A], () => o.A.getApplication(e) ?? c.A.getApplicationRecord(e), [e]), {
+        data: f
     } = (0, d.d)(l);
-    if (null == I) return null;
-    let R = (0, u.A)(I, 25),
+    if (null == T) return null;
+    let I = (0, x.A)(T, 25),
         {
-            termsOfServiceUrl: f,
-            privacyPolicyUrl: N
-        } = I;
-    if (S?.applicationId !== e) return (0, s.jsx)(n.Modal, {
+            termsOfServiceUrl: R,
+            privacyPolicyUrl: C
+        } = T;
+    if (f?.applicationId !== e) return (0, n.jsx)(r.Modal, {
         actions: [{
-            onClick: A,
-            text: v.intl.string(v.t.BddRzS),
+            onClick: p,
+            text: j.intl.string(j.t.BddRzS),
             variant: "primary"
         }],
-        onClose: A,
+        onClose: p,
         size: "sm",
-        transitionState: p,
-        title: v.intl.string(v.t["0Bf80I"]),
-        children: (0, s.jsx)(a.Text, {
+        transitionState: g,
+        title: j.intl.string(j.t["0Bf80I"]),
+        children: (0, n.jsx)(i.Text, {
             variant: "text-md/normal",
             color: "text-default",
-            className: j.$r,
-            children: v.intl.string(v.t.omH3bq)
+            className: v.$r,
+            children: j.intl.string(j.t.omH3bq)
         })
     });
-    let k = null != R ? (0, s.jsx)("img", {
-        src: R.href,
+    let k = null != I ? (0, n.jsx)("img", {
+        src: I.href,
         alt: "",
-        className: j.Z2
+        className: v.Z2
     }) : void 0;
-    return (0, s.jsxs)(n.dWK, {
-        onClose: A,
+    return (0, n.jsxs)(r.dWK, {
+        onClose: p,
         size: "lg",
-        transitionState: p,
-        children: [(0, s.jsx)(n.rQ0, {
+        transitionState: g,
+        children: [(0, n.jsx)(r.rQ0, {
             leading: k,
-            title: I.name
-        }), (0, s.jsx)(r.A, {
-            children: (0, s.jsx)("main", {
-                className: g.bodyInner,
-                children: T
+            title: T.name
+        }), (0, n.jsx)(s.A, {
+            children: (0, n.jsx)("main", {
+                className: A.bodyInner,
+                children: E
             })
-        }), (0, s.jsx)(n.jlY, {
-            children: (0, s.jsxs)("div", {
-                className: j.qr,
-                children: [null != f || null != N ? (0, s.jsx)(a.Text, {
+        }), (0, n.jsx)(r.jlY, {
+            children: (0, n.jsxs)("div", {
+                className: v.qr,
+                children: [null != R || null != C ? (0, n.jsx)(i.Text, {
                     color: "text-strong",
                     variant: "text-sm/normal",
-                    children: (0, s.jsx)(h.A, {
-                        termsOfServiceUrl: f,
-                        privacyPolicyUrl: N
+                    children: (0, n.jsx)(h.A, {
+                        termsOfServiceUrl: R,
+                        privacyPolicyUrl: C
                     })
-                }) : (0, s.jsx)(a.Text, {
+                }) : (0, n.jsx)(i.Text, {
                     color: "text-strong",
                     variant: "text-xs/normal",
-                    children: v.intl.string(v.t["3ZY+0D"])
-                }), (0, s.jsxs)("div", {
-                    className: j.Hq,
-                    children: [x.p5 && (0, s.jsx)(a.K0, {
-                        "aria-label": v.intl.string(v.t.WqhZss),
-                        icon: () => (0, s.jsx)(a.qYV, {
+                    children: j.intl.string(j.t["3ZY+0D"])
+                }), (0, n.jsxs)("div", {
+                    className: v.Hq,
+                    children: [u.p5 && (0, n.jsx)(i.K0, {
+                        "aria-label": j.intl.string(j.t.WqhZss),
+                        icon: () => (0, n.jsx)(i.qYV, {
                             size: "xs",
                             color: "currentColor"
                         }),
                         onClick: () => {
                             let t = `${location.protocol}//${location.host}${m.BVt.GLOBAL_DISCOVERY_APPS_PROFILE_STORE_SKU(e,l)}`;
-                            (0, x.C)(t, () => (0, a.showToast)((0, a.createToast)(v.intl.string(v.t["L/PwZf"]), a.ToastType.SUCCESS))), (0, _.K)(e, _.C.DETAILS_MODAL, l)
+                            (0, u.C)(t, () => (0, i.showToast)((0, i.createToast)(j.intl.string(j.t["L/PwZf"]), i.ToastType.SUCCESS))), (0, _.K)(e, _.C.DETAILS_MODAL, l)
                         },
                         variant: "icon-only"
-                    }), E]
+                    }), S]
                 })]
             })
         })]

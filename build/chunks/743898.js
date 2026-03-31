@@ -1,5 +1,4 @@
 /** chunk id: 743898 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
     P: () => i
 });

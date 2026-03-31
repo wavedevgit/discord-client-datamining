@@ -12,14 +12,14 @@ var i = n(627968),
     d = n(21119),
     u = n(907459),
     _ = n(734057),
-    m = n(287809),
-    A = n(562153),
+    A = n(287809),
+    m = n(562153),
     E = n(763754),
-    I = n(447215),
-    T = n(888675),
-    f = n(502197),
-    N = n(985018),
-    g = n(139487);
+    T = n(447215),
+    I = n(888675),
+    N = n(502197),
+    g = n(985018),
+    f = n(139487);
 
 function C(e) {
     let {
@@ -28,15 +28,15 @@ function C(e) {
         channelId: l
     } = e;
     return (0, i.jsx)(s.lGe, {
-        className: g.XM,
+        className: f.XM,
         children: (0, i.jsx)(s.HOs, {
-            className: g.XG,
+            className: f.XG,
             children: (0, i.jsx)("div", {
                 children: t.map(e => (0, i.jsx)(c.A, {
                     user: e,
                     guildId: n ?? void 0,
                     channelId: l,
-                    nick: A.Ay.getNickname(n, l, e)
+                    nick: m.Ay.getNickname(n, l, e)
                 }, e.id))
             })
         })
@@ -48,29 +48,29 @@ function h(e) {
         message: t,
         channel: n,
         compact: c
-    } = e, A = (0, f.K)(t), h = (0, r.yK)([m.default], () => t.call?.participants != null ? t.call.participants.map(e => m.default.getUser(e)).filter(e => null != e).filter(e => e.id !== t.author.id) : [], [t.author.id, t.call]), p = (0, r.bG)([d.A], () => d.A.getUserAffinitiesMap(), []), x = l.useMemo(() => (0, u.L)(h, p, "VoiceSession - participants"), [h, p]), R = t.messageReference?.channel_id, S = (0, r.bG)([_.A], () => _.A.getChannel(R)), O = function(e, t, n, a, r, c) {
-        let d = (0, I.P)({
+    } = e, m = (0, N.K)(t), h = (0, r.yK)([A.default], () => t.call?.participants != null ? t.call.participants.map(e => A.default.getUser(e)).filter(e => null != e).filter(e => e.id !== t.author.id) : [], [t.author.id, t.call]), p = (0, r.bG)([d.A], () => d.A.getUserAffinitiesMap(), []), S = l.useMemo(() => (0, u.L)(h, p, "VoiceSession - participants"), [h, p]), x = t.messageReference?.channel_id, R = (0, r.bG)([_.A], () => _.A.getChannel(x)), O = function(e, t, n, a, r, c) {
+        let d = (0, T.P)({
                 user: n,
                 channelId: t.id,
                 guildId: t.guild_id,
                 messageId: e.id
             }),
-            u = (0, I.P)({
+            u = (0, T.P)({
                 user: a[0],
                 channelId: t.id,
                 guildId: t.guild_id,
                 messageId: e.id
             }),
-            _ = (0, I.P)({
+            _ = (0, T.P)({
                 user: a[1],
                 channelId: t.id,
                 guildId: t.guild_id,
                 messageId: e.id
             }),
-            m = (0, E.Ay)(e),
-            [A, T] = a,
-            f = (0, E.d8)(A, t),
-            h = (0, E.d8)(T, t),
+            A = (0, E.Ay)(e),
+            [m, I] = a,
+            N = (0, E.d8)(m, t),
+            h = (0, E.d8)(I, t),
             p = function(e, t) {
                 let n = l.useRef(null),
                     [a, r] = l.useState(!1),
@@ -99,46 +99,46 @@ function h(e) {
                     })
                 }, l), [a, o])
             }(t.guild_id, t.id),
-            x = l.useCallback((e, t) => null == c ? e : (0, i.jsx)(o.T, {
+            S = l.useCallback((e, t) => null == c ? e : (0, i.jsx)(o.T, {
                 channel: c,
-                childWrapperClassName: g.c6,
+                childWrapperClassName: f.c6,
                 children: (0, i.jsx)(s.DUT, {
                     tag: "a",
                     children: e
                 })
             }, t), [c]);
-        return null == r ? N.intl.format(N.t["eX6e/3"], {
-            username: m.nick,
-            usernameHook: d(m),
-            channelHook: x
-        }) : N.intl.format(N.t.YUbgR8, {
+        return null == r ? g.intl.format(g.t["eX6e/3"], {
+            username: A.nick,
+            usernameHook: d(A),
+            channelHook: S
+        }) : g.intl.format(g.t.YUbgR8, {
             userCount: a.length + 1,
-            username: m.nick,
-            usernameHook: d(m),
-            username2: f.nick,
-            username2Hook: u(f),
+            username: A.nick,
+            usernameHook: d(A),
+            username2: N.nick,
+            username2Hook: u(N),
             username3: h.nick,
             username3Hook: _(h),
             otherCount: a.length - 1,
             othersHook: p([n, ...a]),
             duration: r
         })
-    }(t, n, t.author, x, A, S), M = l.useMemo(() => {
+    }(t, n, t.author, S, m, R), M = l.useMemo(() => {
         let e = (0, i.jsx)(a.HKD, {
             size: "md",
             color: s.LU0.colors.STATUS_POSITIVE
         });
-        return null == S || null != A ? e : (0, i.jsx)(o.T, {
-            channel: S,
+        return null == R || null != m ? e : (0, i.jsx)(o.T, {
+            channel: R,
             children: (0, i.jsx)(a.HKD, {
                 size: "md",
                 color: s.LU0.colors.STATUS_POSITIVE
             })
         })
-    }, [S, A]);
-    return (0, i.jsx)(T.A, {
+    }, [R, m]);
+    return (0, i.jsx)(I.A, {
         iconNode: M,
-        iconContainerClassName: g.zc,
+        iconContainerClassName: f.zc,
         timestamp: t.timestamp,
         compact: c,
         children: O

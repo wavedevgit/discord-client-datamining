@@ -1,13 +1,12 @@
 /** chunk id: 355216 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
     HN: () => g,
     ux: () => p
 });
 var i = n(627968),
-    s = n(64700),
-    l = n(503698),
-    a = n.n(l),
+    l = n(64700),
+    s = n(503698),
+    a = n.n(s),
     r = n(311907),
     o = n(397927),
     c = n(187508),
@@ -15,26 +14,26 @@ var i = n(627968),
     u = n(599486),
     h = n(394953),
     A = n(628325),
-    m = n(849077);
+    _ = n(849077);
 n(445368);
-var _ = n(480293);
+var m = n(480293);
 
 function g() {
     let {
         setSelectedFilter: e
     } = (0, u.A)(), t = (0, A.S)(e => e.setInboxReadState);
     return () => {
-        e(m.Io.ALL), t(!1)
+        e(_.Io.ALL), t(!1)
     }
 }
 
 function p(e) {
-    let t, n, l, {
+    let t, n, s, {
             isSelected: u
         } = e,
         {
             unreadRecentMentionsCount: A,
-            unreadChannelIds: m
+            unreadChannelIds: _
         } = (0, h.U4)(),
         g = (t = function() {
             let {
@@ -45,41 +44,41 @@ function p(e) {
             } = (0, r.cf)([c.Ay], () => ({
                 hasMoreMentions: c.Ay.hasMore,
                 mentionsLoading: c.Ay.loading
-            })), i = Math.min(e, 25), s = e > i || t || n, l = (0, o.o6S)(i) + 6 * !!s;
+            })), i = Math.min(e, 25), l = e > i || t || n, s = (0, o.o6S)(i) + 6 * !!l;
             return {
                 clampedCount: i,
-                isEstimated: s,
-                width: l
+                isEstimated: l,
+                width: s
             }
-        }(), n = s.useCallback(e => t.isEstimated ? `${e}+` : e, [t.isEstimated]), l = s.useMemo(() => (function(e, t) {
+        }(), n = l.useCallback(e => t.isEstimated ? `${e}+` : e, [t.isEstimated]), s = l.useMemo(() => (function(e, t) {
             let {
                 clampedCount: n,
-                width: s
+                width: l
             } = e;
             return (0, i.jsx)(o.hVq, {
                 count: n,
                 renderBadgeCount: t,
                 style: {
-                    width: s
+                    width: l
                 },
-                className: _.xF
+                className: m.xF
             })
-        })(t, n), [t, n]), s.useMemo(() => ({
-            badge: l,
+        })(t, n), [t, n]), l.useMemo(() => ({
+            badge: s,
             badgeType: "mentions",
             dimensions: {
                 height: 16,
                 width: t.width
             }
-        }), [l, t.width])),
+        }), [s, t.width])),
         {
             entrypoint: p
         } = (0, d.X8)({
             location: "useInboxBadgeInfo"
         });
-    return s.useMemo(() => {
+    return l.useMemo(() => {
         if (A > 0) return g;
-        let e = m.length;
+        let e = _.length;
         if (0 === e) return {
             badge: null,
             badgeType: null
@@ -96,8 +95,8 @@ function p(e) {
                         minHeight: 13,
                         minWidth: 13
                     },
-                    className: a()(_.xF, _.pw, {
-                        [_.wH]: u
+                    className: a()(m.xF, m.pw, {
+                        [m.wH]: u
                     })
                 })),
                 badgeType: "unread",
@@ -117,5 +116,5 @@ function p(e) {
             badge: null,
             badgeType: null
         }
-    }, [A, g, m.length, p, u])
+    }, [A, g, _.length, p, u])
 }

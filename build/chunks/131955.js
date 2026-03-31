@@ -1,11 +1,10 @@
 /** chunk id: 131955 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
-    Kg: () => s,
+    Kg: () => l,
     e$: () => i
 });
 let i = "HangoutWindowPickerModal",
-    s = [{
+    l = [{
         gif: "https://cdn.discordapp.com/assets/content/4560eab7e3aecfcdaa9f9450560a00b4039915c24bee7731163e22519adf5198.gif",
         png: "https://cdn.discordapp.com/assets/content/ca10385209b572c1fc8d08335b96104d9a7ebba10b4ccbacea0e20a4ff86767a.png"
     }, {

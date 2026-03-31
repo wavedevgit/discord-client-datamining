@@ -1,5 +1,4 @@
 /** chunk id: 968847 params = (module,exports,require) **/
-"use strict";
 e.exports = {
     Fg: "premiumTrialBadge_e4ef22",
     N4: "backgroundGradient_e4ef22",

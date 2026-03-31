@@ -18,20 +18,20 @@ function o(e) {
         useSubtitle: c,
         useDisabled: u,
         useDisabledMessage: m,
-        usePersistentBadge: _,
-        hasIcon: g,
-        getDismissibleBadges: x
-    } = t, A = d(), h = c?.(), p = n(), T = u?.() ?? !1, f = m?.(), S = _?.(), E = x?.(), b = (0, l.A)({
-        persistentBadge: S,
-        dismissibleBadges: E
+        usePersistentBadge: g,
+        hasIcon: _,
+        getDismissibleBadges: A
+    } = t, x = d(), h = c?.(), p = n(), T = u?.() ?? !1, f = m?.(), E = g?.(), S = A?.(), b = (0, l.A)({
+        persistentBadge: E,
+        dismissibleBadges: S
     }), C = (0, a.q)(t);
     return (0, i.jsxs)(r.L, {
         children: [(0, i.jsx)(s.dOG, {
-            label: A,
+            label: x,
             description: h,
             badge: b,
             checked: p,
-            hasIcon: g,
+            hasIcon: _,
             onChange: e => {
                 C(), o(e)
             },

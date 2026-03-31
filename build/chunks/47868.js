@@ -1,12 +1,11 @@
 /** chunk id: 47868 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
     A: () => u
 });
 var i = n(627968),
-    s = n(64700),
-    l = n(503698),
-    a = n.n(l),
+    l = n(64700),
+    s = n(503698),
+    a = n.n(s),
     r = n(732955),
     o = n(397927),
     c = n(985018),
@@ -16,24 +15,24 @@ function u(e) {
     let {
         className: t,
         iconContainerClassName: n,
-        icon: l,
+        icon: s,
         title: u,
         description: h,
         userCount: A,
-        onClick: m,
-        highlight: _,
+        onClick: _,
+        highlight: m,
         onDismiss: g
-    } = e, p = s.useCallback(e => {
+    } = e, p = l.useCallback(e => {
         e.stopPropagation(), g?.()
     }, [g]);
     return (0, i.jsxs)(o.DUT, {
-        className: a()(d.kL, t, null != _ && {
-            [d.U6]: _
+        className: a()(d.kL, t, null != m && {
+            [d.U6]: m
         }),
-        onClick: m,
+        onClick: _,
         children: [(0, i.jsx)("div", {
             className: a()(d.Kk, n),
-            children: l
+            children: s
         }), (0, i.jsxs)("div", {
             className: d.FS,
             children: [(0, i.jsx)(o.Heading, {

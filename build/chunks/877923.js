@@ -12,17 +12,17 @@ var i = n(627968),
     d = n(67414),
     u = n(147036),
     _ = n(888675),
-    m = n(652215),
-    A = n(868208);
+    A = n(652215),
+    m = n(868208);
 
 function E(e) {
     let {
         giftIntentType: t,
         recipientUser: n,
         channel: E
-    } = e, I = (0, a.bG)([o.A], () => o.A.useReducedMotion), T = l.useRef(null), {
-        createMultipleConfettiAt: f
-    } = l.useContext(c.x), N = l.useCallback(e => ({
+    } = e, T = (0, a.bG)([o.A], () => o.A.useReducedMotion), I = l.useRef(null), {
+        createMultipleConfettiAt: N
+    } = l.useContext(c.x), g = l.useCallback(e => ({
         size: {
             type: "static-random",
             minValue: e.confettiSize - 6,
@@ -41,18 +41,18 @@ function E(e) {
         }
     }), []);
     return l.useEffect(() => {
-        if (I) return;
-        let e = T.current;
+        if (T) return;
+        let e = I.current;
         if (null == e) return;
         let t = null,
             n = new IntersectionObserver(i => {
                 let [l] = i;
                 l.intersectionRatio < .5 || (n.disconnect(), (t = new r.J_(1e3, () => {
                     let t = e.getBoundingClientRect(),
-                        n = N({
+                        n = g({
                             confettiSize: 8
                         });
-                    f(t.left + t.width / 2, t.top + t.height / 2, n, 60)
+                    N(t.left + t.width / 2, t.top + t.height / 2, n, 60)
                 })).delay())
             }, {
                 threshold: .5
@@ -60,18 +60,18 @@ function E(e) {
         return n.observe(e), () => {
             n.disconnect(), t?.cancel()
         }
-    }, [f, T, I, N]), (0, i.jsx)(_.A, {
-        contentClassName: A.o9,
-        iconContainerClassName: A.zc,
+    }, [N, I, T, g]), (0, i.jsx)(_.A, {
+        contentClassName: m.o9,
+        iconContainerClassName: m.zc,
         iconNode: (0, i.jsx)(s.XFE, {
-            colorClass: A.Kk
+            colorClass: m.Kk
         }),
         children: (0, i.jsx)(d.A, {
-            innerRef: T,
+            innerRef: I,
             giftIntentType: t,
             recipientUser: n,
             analyticsPage: (0, u.DJ)(E),
-            analyticsSection: m.JJy.CHANNEL
+            analyticsSection: A.JJy.CHANNEL
         })
     })
 }

@@ -1,11 +1,10 @@
 /** chunk id: 947461 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
     A: () => x
 });
 var i = n(627968),
-    s = n(64700),
-    l = n(554146),
+    l = n(64700),
+    s = n(554146),
     a = n(192308),
     r = n(990078),
     o = n(397927),
@@ -14,18 +13,18 @@ var i = n(627968),
     u = n(976860),
     h = n(652215),
     A = n(746080),
-    m = n(49999),
-    _ = n(294726),
+    _ = n(49999),
+    m = n(294726),
     g = n(985018),
     p = n(81152),
     f = n(928409);
-let x = s.memo(function(e) {
+let x = l.memo(function(e) {
     let {
         guildId: t,
         selected: x
-    } = e, [E, C] = (0, c.ww)([l.M.GAME_SERVER_HOSTING_NEW_BADGE], t), I = E === l.M.GAME_SERVER_HOSTING_NEW_BADGE, N = s.useCallback(() => {
-        C(m.i.USER_DISMISS), (0, u.pX)(h.BVt.CHANNEL(t, A.VV.GAME_SERVERS))
-    }, [t, C]), S = s.useCallback(e => {
+    } = e, [E, I] = (0, c.ww)([s.M.GAME_SERVER_HOSTING_NEW_BADGE], t), C = E === s.M.GAME_SERVER_HOSTING_NEW_BADGE, N = l.useCallback(() => {
+        I(_.i.USER_DISMISS), (0, u.pX)(h.BVt.CHANNEL(t, A.VV.GAME_SERVERS))
+    }, [t, I]), T = l.useCallback(e => {
         e.stopPropagation(), (0, a.openModalLazy)(async () => {
             let {
                 default: e
@@ -35,7 +34,7 @@ let x = s.memo(function(e) {
                 guildId: t
             })
         })
-    }, [t]), b = (0, i.jsxs)("div", {
+    }, [t]), S = (0, i.jsxs)("div", {
         className: p.c,
         children: [(0, i.jsx)("div", {
             className: f.Xs,
@@ -43,7 +42,7 @@ let x = s.memo(function(e) {
                 text: g.intl.string(g.t.fgq1gs),
                 position: "top",
                 children: (0, i.jsx)(o.DUT, {
-                    onClick: S,
+                    onClick: T,
                     "aria-label": g.intl.string(g.t.fgq1gs),
                     children: (0, i.jsx)(o.PGe, {
                         size: "xs",
@@ -52,7 +51,7 @@ let x = s.memo(function(e) {
                     })
                 })
             })
-        }), I && (0, i.jsx)("div", {
+        }), C && (0, i.jsx)("div", {
             className: f.yW,
             children: (0, i.jsx)(o.LpS, {
                 disableColor: !0,
@@ -69,9 +68,9 @@ let x = s.memo(function(e) {
             className: e,
             color: "currentColor"
         }),
-        text: g.intl.string(_.default.vCzwM7),
+        text: g.intl.string(m.default.vCzwM7),
         selected: x,
         onClick: N,
-        trailing: b
+        trailing: S
     })
 })

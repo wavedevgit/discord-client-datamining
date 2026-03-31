@@ -1,6 +1,6 @@
 /** chunk id: 909081 params = (module,exports,require) **/
 n.d(t, {
-    T: () => x
+    T: () => A
 });
 var i = n(627968),
     s = n(311907),
@@ -12,13 +12,13 @@ var i = n(627968),
     c = n(612714),
     u = n(548018),
     m = n(32096),
-    _ = n(545214),
-    g = n(985018);
-let x = (0, l.E2)(d.X.ACCOUNT_SMS_BACKUP_AUTHENTICATION_SETTING, {
-    useSearchTerms: () => [g.intl.string(g.t.uHAJ5v)],
+    g = n(545214),
+    _ = n(985018);
+let A = (0, l.E2)(d.X.ACCOUNT_SMS_BACKUP_AUTHENTICATION_SETTING, {
+    useSearchTerms: () => [_.intl.string(_.t.uHAJ5v)],
     usePredicate: function() {
         let e = (0, m.b)(),
-            t = (0, _.A)(),
+            t = (0, g.A)(),
             n = (0, u.f)(),
             i = (0, s.bG)([a.default], () => a.default.hasTOTPEnabled());
         return !e && !t && n && i

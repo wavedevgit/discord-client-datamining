@@ -1,5 +1,4 @@
 /** chunk id: 591454 params = (module,exports,require) **/
-"use strict";
 e.exports = {
     rs: "mainContainer__700c9",
     ZS: "imageContainer__700c9",

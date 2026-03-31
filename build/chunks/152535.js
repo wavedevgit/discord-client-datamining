@@ -1,11 +1,10 @@
 /** chunk id: 152535 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
-    A: () => m
+    A: () => _
 });
 var i = n(627968),
-    s = n(64700),
-    l = n(533781),
+    l = n(64700),
+    s = n(533781),
     a = n(265872),
     r = n(688810),
     o = n(384059),
@@ -15,43 +14,43 @@ var i = n(627968),
     h = n(376086),
     A = n(985018);
 
-function m(e) {
+function _(e) {
     let {
         channel: t,
         themeable: n,
-        whichPopoutIsOpen: m,
-        setWhichPopoutIsOpen: _
+        whichPopoutIsOpen: _,
+        setWhichPopoutIsOpen: m
     } = e, {
         parentAnalyticsLocation: g
-    } = (0, r.Ay)(), p = s.useRef(null), {
+    } = (0, r.Ay)(), p = l.useRef(null), {
         isHovered: f,
         setIsHovered: x,
         onMouseEnter: E,
-        onMouseLeave: C
+        onMouseLeave: I
     } = (0, c.A)(200, 300), {
-        Component: I,
+        Component: C,
         play: N,
         events: {
-            onMouseEnter: S,
-            onMouseLeave: b
+            onMouseEnter: T,
+            onMouseLeave: S
         }
-    } = (0, l.T)(), T = s.useCallback(e => {
-        "focus" !== e.type && (E(), S())
-    }, [E, S]), v = s.useCallback(() => {
-        null == m && (C(), b())
-    }, [C, b, m]), y = s.useCallback(() => {
-        (0, o.X)(g, o.O.GIFTING), m === h.P.GIFTING ? (_?.(void 0), C()) : (null != m ? (N(), E()) : N(), _?.(h.P.GIFTING))
-    }, [E, C, g, N, _, m]);
+    } = (0, s.T)(), b = l.useCallback(e => {
+        "focus" !== e.type && (E(), T())
+    }, [E, T]), y = l.useCallback(() => {
+        null == _ && (I(), S())
+    }, [I, S, _]), v = l.useCallback(() => {
+        (0, o.X)(g, o.O.GIFTING), _ === h.P.GIFTING ? (m?.(void 0), I()) : (null != _ ? (N(), E()) : N(), m?.(h.P.GIFTING))
+    }, [E, I, g, N, m, _]);
     return (0, i.jsx)(a.Y, {
         targetElementRef: p,
-        shouldShow: f && (m === h.P.GIFTING || null == m) || m === h.P.GIFTING,
+        shouldShow: f && (_ === h.P.GIFTING || null == _) || _ === h.P.GIFTING,
         animation: a.Y.Animation.FADE,
         animationPosition: "top",
         position: "top",
         align: "center",
         spacing: 16,
         onRequestClose: () => {
-            x(!1), _?.(void 0)
+            x(!1), m?.(void 0)
         },
         renderPopout: e => {
             let {
@@ -62,7 +61,7 @@ function m(e) {
                 closePopout: n,
                 isHovered: f,
                 onMouseEnter: E,
-                onMouseLeave: C
+                onMouseLeave: I
             })
         },
         children: () => (0, i.jsx)(u.l, {
@@ -70,12 +69,12 @@ function m(e) {
             isTrayButton: !0,
             themeable: n,
             "aria-label": A.intl.string(A.t.PEjaCx),
-            iconComponent: I,
-            onClick: y,
-            onMouseEnter: T,
-            onMouseLeave: v,
-            isActive: f || m === h.P.GIFTING,
-            color: f || m === h.P.GIFTING ? "primaryDark" : void 0
+            iconComponent: C,
+            onClick: v,
+            onMouseEnter: b,
+            onMouseLeave: y,
+            isActive: f || _ === h.P.GIFTING,
+            color: f || _ === h.P.GIFTING ? "primaryDark" : void 0
         })
     })
 }

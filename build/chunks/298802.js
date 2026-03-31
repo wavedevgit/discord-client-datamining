@@ -1,6 +1,6 @@
 /** chunk id: 298802 params = (module,exports,require) **/
 n.d(t, {
-    G: () => _
+    G: () => g
 });
 var i = n(311907),
     s = n(775121),
@@ -12,7 +12,7 @@ var i = n(311907),
     c = n(358776),
     u = n(652215),
     m = n(985018);
-let _ = (0, r.sN)(d.X.APPEARANCE_ZOOM, {
+let g = (0, r.sN)(d.X.APPEARANCE_ZOOM, {
     usePredicate: () => o.isPlatformEmbedded,
     useTitle: () => m.intl.string(m.t.i19n5L),
     useSubtitle: () => (0, c.bp)("Zoom") ? m.intl.format(m.t["x9PK/3"], {

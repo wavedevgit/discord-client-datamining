@@ -1,10 +1,9 @@
 /** chunk id: 211059 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
-    A: () => s
+    A: () => l
 });
 var i = n(73153);
-let s = {
+let l = {
     viewPrompt: function(e, t) {
         i.h.wait(() => {
             i.h.dispatch({

@@ -1,6 +1,6 @@
 /** chunk id: 46184 params = (module,exports,require) **/
 n.d(t, {
-    A: () => g
+    A: () => _
 });
 var i = n(627968),
     s = n(64700),
@@ -12,28 +12,28 @@ var i = n(627968),
     c = n(115063),
     u = n(500470),
     m = n(652215),
-    _ = n(985018);
+    g = n(985018);
 
-function g() {
+function _() {
     let e = (0, u.k)() ?? void 0,
         t = a.up.useControlledSetting(e),
         n = s.useMemo(() => (0, c.Lx)(t), [t]);
     return null == e ? null : (0, i.jsxs)(r.A, {
         children: [(0, i.jsx)(o.h, {
             children: (0, i.jsx)(d.Ay, {
-                title: _.intl.string(_.t["7x9dyE"]),
+                title: g.intl.string(g.t["7x9dyE"]),
                 value: n.all,
                 onChange: t => a.up.updateControlledSetting(e, t ? m.yKI : m.yKI & ~m.dzt.NO_RELATION)
             })
         }), (0, i.jsx)(o.h, {
             children: (0, i.jsx)(d.Ay, {
-                title: _.intl.string(_.t.NfeuZ3),
+                title: g.intl.string(g.t.NfeuZ3),
                 value: n.all || n.mutualFriends,
                 onChange: n => a.up.updateControlledSetting(e, n ? l.UI(t, m.dzt.MUTUAL_FRIENDS) : l.iE(t, m.dzt.MUTUAL_FRIENDS, m.dzt.NO_RELATION))
             })
         }), (0, i.jsx)(o.h, {
             children: (0, i.jsx)(d.Ay, {
-                title: _.intl.string(_.t.qsMfsH),
+                title: g.intl.string(g.t.qsMfsH),
                 value: n.all || n.mutualGuilds,
                 onChange: n => a.up.updateControlledSetting(e, n ? l.UI(t, m.dzt.MUTUAL_GUILDS) : l.iE(t, m.dzt.MUTUAL_GUILDS, m.dzt.NO_RELATION))
             })

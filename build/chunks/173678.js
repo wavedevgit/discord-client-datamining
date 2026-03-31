@@ -1,12 +1,11 @@
 /** chunk id: 173678 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
     M: () => g,
     z: () => p
 });
 var i = n(627968),
-    s = n(575593),
-    l = n(397927),
+    l = n(575593),
+    s = n(397927),
     a = n(576030),
     r = n(245068),
     o = n(44120),
@@ -15,9 +14,9 @@ var i = n(627968),
     u = n(788868),
     h = n(985018),
     A = n(842006),
-    m = n(522999);
+    _ = n(522999);
 
-function _(e, t, n) {
+function m(e, t, n) {
     (0, o.A)({
         skuId: e.skuId,
         isGift: !0,
@@ -30,25 +29,25 @@ function _(e, t, n) {
 function g(e, t) {
     let {
         moreCount: n,
-        profileOwner: l,
+        profileOwner: s,
         analyticsLocations: o,
         onViewWishlist: u,
-        isSingleCard: m = !1,
+        isSingleCard: _ = !1,
         wishlistId: g,
         showTypeTooltip: p = !1,
         cardSize: f
-    } = t, x = null != e.bundleItems && e.bundleItems.length > 0, E = null != n && n > 0, C = p && !E, I = E ? h.intl.string(h.t.TxBQzD) : h.intl.string(h.t.pLPjsb), N = {
-        title: C ? h.intl.string(h.t.HFhcqh) : I,
-        body: C ? h.intl.string(h.t.ilhtIa) : void 0,
-        renderIcon: C ? a.GM : void 0,
+    } = t, x = null != e.bundleItems && e.bundleItems.length > 0, E = null != n && n > 0, I = p && !E, C = E ? h.intl.string(h.t.TxBQzD) : h.intl.string(h.t.pLPjsb), N = {
+        title: I ? h.intl.string(h.t.HFhcqh) : C,
+        body: I ? h.intl.string(h.t.ilhtIa) : void 0,
+        renderIcon: I ? a.GM : void 0,
         shouldShow: !0
-    }, S = !x && e.collectiblesItem.type === s.R.PROFILE_EFFECT;
+    }, T = !x && e.collectiblesItem.type === l.R.PROFILE_EFFECT;
     return (0, i.jsx)(d.A, {
         onCardClick: () => {
-            E ? u() : _(e, l, o)
+            E ? u() : m(e, s, o)
         },
         tooltipConfig: N,
-        shouldScalePreview: x || !S,
+        shouldScalePreview: x || !T,
         renderPreview: () => {
             if (x) {
                 let t = {
@@ -59,18 +58,18 @@ function g(e, t) {
                     children: (0, i.jsx)(r.X, {
                         product: t,
                         isHighlighted: !1,
-                        user: l
+                        user: s
                     })
                 })
             }
             return (0, i.jsx)(c.A, {
                 item: e,
-                profileOwner: l,
+                profileOwner: s,
                 isHighlighted: !1
             })
         },
         moreCount: n,
-        isSingleCard: m,
+        isSingleCard: _,
         wishlistItem: e,
         wishlistId: g,
         cardSize: f
@@ -92,32 +91,32 @@ function p(e, t) {
         index: 0
     }), u = c ? h.intl.string(h.t.Zr5tjn) : function(e) {
         switch (e.collectiblesItem.type) {
-            case s.R.AVATAR_DECORATION:
+            case l.R.AVATAR_DECORATION:
                 return h.intl.string(h.t["7v0T9P"]);
-            case s.R.PROFILE_EFFECT:
+            case l.R.PROFILE_EFFECT:
                 return h.intl.string(h.t.wR5wOo);
-            case s.R.NAMEPLATE:
+            case l.R.NAMEPLATE:
                 return h.intl.string(h.t.x5CoXR);
             default:
                 return ""
         }
     }(e);
     return (0, i.jsxs)("div", {
-        className: m.D5,
+        className: _.D5,
         children: [d, (0, i.jsxs)("div", {
-            className: m.S7,
-            children: [(0, i.jsx)(l.DUT, {
+            className: _.S7,
+            children: [(0, i.jsx)(s.DUT, {
                 onClick: () => {
-                    _(e, n, a)
+                    m(e, n, a)
                 },
-                className: m.Hh,
-                children: (0, i.jsx)(l.Text, {
+                className: _.Hh,
+                children: (0, i.jsx)(s.Text, {
                     variant: "text-sm/semibold",
                     color: "text-default",
                     lineClamp: 2,
                     children: e.skuName
                 })
-            }), (0, i.jsx)(l.Text, {
+            }), (0, i.jsx)(s.Text, {
                 variant: "text-xs/medium",
                 color: "text-default",
                 children: u

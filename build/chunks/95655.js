@@ -1,11 +1,10 @@
 /** chunk id: 95655 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
     n: () => f
 });
 var i = n(627968),
-    s = n(64700),
-    l = n(990078),
+    l = n(64700),
+    s = n(990078),
     a = n(397927),
     r = n(442433),
     o = n(793574),
@@ -14,8 +13,8 @@ var i = n(627968),
     u = n(73028),
     h = n(665691),
     A = n(954571),
-    m = n(652215),
-    _ = n(985018),
+    _ = n(652215),
+    m = n(985018),
     g = n(917328);
 let p = e => {
         let {
@@ -23,28 +22,28 @@ let p = e => {
         } = e;
         return (0, h.bG)({
             channelId: t.id
-        }) ? (0, i.jsx)(l.m, {
-            text: _.intl.string(_.t.QyZ4Td),
+        }) ? (0, i.jsx)(s.m, {
+            text: m.intl.string(m.t.QyZ4Td),
             children: (0, i.jsx)(a.m5V, {
                 size: "xs",
-                "aria-label": _.intl.string(_.t.VHXh8a),
+                "aria-label": m.intl.string(m.t.VHXh8a),
                 color: a.LU0.colors.INTERACTIVE_TEXT_DEFAULT
             })
         }) : null
     },
-    f = s.memo(function(e) {
+    f = l.memo(function(e) {
         let {
             channel: t
-        } = e, s = t.id, h = (0, c.Ay)(t);
+        } = e, l = t.id, h = (0, c.Ay)(t);
         return (0, i.jsxs)(i.Fragment, {
-            children: [(0, i.jsx)(l.m, {
+            children: [(0, i.jsx)(s.m, {
                 asContainer: !0,
-                text: _.intl.string(_.t["5Q9+/L"]),
+                text: m.intl.string(m.t["5Q9+/L"]),
                 position: "bottom",
                 children: (0, i.jsxs)(a.DUT, {
                     className: g.cD,
                     onClick: () => {
-                        (0, u.U)(s, o.A.HEADER_BAR)
+                        (0, u.U)(l, o.A.HEADER_BAR)
                     },
                     onContextMenu: e => (0, r.L3)(e, () => Promise.all([n.e("97262"), n.e("70303"), n.e("60200"), n.e("29108")]).then(n.bind(n, 4027)).then(e => {
                         let {
@@ -60,13 +59,13 @@ let p = e => {
                     }),
                     onDoubleClick: e => e.stopPropagation(),
                     onMouseEnter: () => {
-                        A.default.track(m.HAw.GDM_EDIT_INTERACTED, {
+                        A.default.track(_.HAw.GDM_EDIT_INTERACTED, {
                             channel_id: t.id,
                             action: "entry_point_hovered",
                             location: o.A.HEADER_BAR
                         })
                     },
-                    "aria-label": _.intl.string(_.t["5Q9+/L"]),
+                    "aria-label": m.intl.string(m.t["5Q9+/L"]),
                     children: [(0, i.jsx)(d.A, {
                         className: g.gn,
                         "aria-hidden": !0,

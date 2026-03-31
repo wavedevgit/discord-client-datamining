@@ -1,12 +1,12 @@
 /** chunk id: 568765 params = (module,exports,require) **/
 n.d(t, {
-    w: () => s
+    w: () => a
 });
 var i = n(186111),
-    l = n(203982),
-    r = n(652215);
-let s = {
+    r = n(203982),
+    s = n(652215);
+let a = {
     binds: ["mod+s"],
     comboKeysBindGlobal: !0,
-    action: () => !(i.A.getLayers().length > 0) && (l._.dispatchToLastSubscribed(r.jej.TOGGLE_STICKER_PICKER), !1)
+    action: () => !(i.A.getLayers().length > 0) && (r._.dispatchToLastSubscribed(s.jej.TOGGLE_STICKER_PICKER), !1)
 }

@@ -129,7 +129,7 @@ let Q = e => {
         (0, _.Tc)() && (ep && eB.push(o.M.RECURRING_3P_PROMOTION_POPOVER), ec && eB.push(o.M.BOGO_2025_NITRO_TAB_BADGE));
         let [eF, eY] = (0, m.kn)(eB, void 0, !0);
         eR && eH.push(o.M.CHURN_DISCOUNT_PREMIUM_TAB_COACHMARK), eA && (eT ? eH.push(o.M.PREMIUM_GROUP_POPOVER_UPSELL_V2) : eH.push(o.M.PREMIUM_GROUP_POPOVER)), ex && eH.push(o.M.PREMIUM_ORBS_UPSELL_POPOVER), eL && eH.push(o.M.PREMIUM_ORBS_REWARDS_INTRO_POPOVER), eD && eH.push(o.M.L_3PP_NITRO_TOOLTIP), eM && eH.push(o.M.L_3PP_NON_NITRO_POPOVER);
-        let [eW, eK] = (0, m.kn)(eH, void 0, !0), eq = (0, D.c)(r.C.PREMIUM_TAB), ez = (0, D.c)(r.C.PREMIUM_TAB_TOOLTIP), e$ = (0, D.c)(r.C.PREMIUM_TAB_POPOVER), [eQ, eX] = (0, m.Cc)(null != eq && "premiumTab" === eq.properties.properties.oneofKind ? o.M.PREMIUM_TAB_MARKETING_MOMENT_OFFER_BADGE : null, eq?.promotionId ?? "", void 0, !0), [eZ, eJ] = (0, m.Cc)(null != e$ && "premiumTabPopover" === e$.properties.properties.oneofKind ? o.M.PREMIUM_MARKETING_MOMENT_REMINDER_UPSELL : null, e$?.promotionId ?? "", void 0, !0), [e0, e1] = (0, m.Cc)(eO ? o.M.PREMIUM_ORBS_REWARDS_DROP_POPOVER : null, ev ?? "", void 0, !0), e7 = null != ez && "premiumTabTooltip" === ez.properties.properties.oneofKind && eQ === o.M.PREMIUM_TAB_MARKETING_MOMENT_OFFER_BADGE, e6 = eD && eW === o.M.L_3PP_NITRO_TOOLTIP, e9 = eM && eW === o.M.L_3PP_NON_NITRO_POPOVER;
+        let [eW, eK] = (0, m.kn)(eH, void 0, !0), eq = (0, D.c)(r.C.PREMIUM_TAB), ez = (0, D.c)(r.C.PREMIUM_TAB_TOOLTIP), e$ = (0, D.c)(r.C.PREMIUM_TAB_POPOVER), [eQ, eX] = (0, m.Cc)(null != eq && "premiumTab" === eq.properties.properties.oneofKind ? o.M.PREMIUM_TAB_MARKETING_MOMENT_OFFER_BADGE : null, eq?.promotionId ?? "", void 0, !0), [eZ, eJ] = (0, m.Cc)(null != e$ && "premiumTabPopover" === e$.properties.properties.oneofKind ? o.M.PREMIUM_MARKETING_MOMENT_REMINDER_UPSELL : null, e$?.promotionId ?? "", void 0, !0), [e0, e1] = (0, m.Cc)(eO ? o.M.PREMIUM_ORBS_REWARDS_DROP_POPOVER : null, ev ?? "", void 0, !0), e7 = null != ez && "premiumTabTooltip" === ez.properties.properties.oneofKind && eQ === o.M.PREMIUM_TAB_MARKETING_MOMENT_OFFER_BADGE, e9 = eD && eW === o.M.L_3PP_NITRO_TOOLTIP, e6 = eM && eW === o.M.L_3PP_NON_NITRO_POPOVER;
         if (l.useEffect(() => {
                 !0 === T && (null != eF && eY(z.i.AUTO_DISMISS), null != eW && eK(z.i.AUTO_DISMISS), null != eQ && eX(z.i.AUTO_DISMISS), null != e0 && e1(z.i.AUTO_DISMISS), null != eZ && eJ(z.i.AUTO_DISMISS))
             }, [eY, T, eF, eK, eW, eQ, eX, e0, e1, eZ, eJ]), !Q({
@@ -194,10 +194,10 @@ let Q = e => {
         }), n = 8) : ex && eW === o.M.PREMIUM_ORBS_UPSELL_POPOVER || eL && eW === o.M.PREMIUM_ORBS_REWARDS_INTRO_POPOVER || eO && e0 === o.M.PREMIUM_ORBS_REWARDS_DROP_POPOVER ? (t = (0, i.jsx)(c.Exy, {
             type: "new",
             variant: "expressive"
-        }), n = 2) : e6 ? (t = (0, i.jsx)(c.Exy, {
+        }), n = 2) : e9 ? (t = (0, i.jsx)(c.Exy, {
             type: "new",
             variant: "expressive"
-        }), n = 11) : e9 && (t = (0, i.jsx)(c.Exy, {
+        }), n = 11) : e6 && (t = (0, i.jsx)(c.Exy, {
             type: "new",
             variant: "expressive"
         }), n = 12) : (t = (0, i.jsx)(H.Ag, {
@@ -216,7 +216,7 @@ let Q = e => {
             }), (0, k.ne)(em)
         }, n = 6);
         let e4 = Y.L.NONE;
-        eZ === o.M.PREMIUM_MARKETING_MOMENT_REMINDER_UPSELL ? e4 = Y.L.MARKETING_MOMENT_POPOVER : eR && eW === o.M.CHURN_DISCOUNT_PREMIUM_TAB_COACHMARK && 8 === n ? e4 = Y.L.CHURN_DISCOUNT : e3 && !eN ? e4 = Y.L.PREMIUM_GROUP : e3 && eN ? e4 = Y.L.PREMIUM_GROUP_TOOLTIP : ex && eW === o.M.PREMIUM_ORBS_UPSELL_POPOVER ? e4 = Y.L.ORBS_UPSELL : eL && eW === o.M.PREMIUM_ORBS_REWARDS_INTRO_POPOVER ? e4 = Y.L.ORBS_INTRO : eO && e0 === o.M.PREMIUM_ORBS_REWARDS_DROP_POPOVER ? e4 = Y.L.ORBS_DROP : e7 ? e4 = Y.L.TOOLTIP : e6 ? e4 = Y.L.L_PREMIUM_SUB_TOOLTIP : e9 ? e4 = Y.L.L_UPSELL : ed && (e4 = Y.L.REVERSE_TRIAL);
+        eZ === o.M.PREMIUM_MARKETING_MOMENT_REMINDER_UPSELL ? e4 = Y.L.MARKETING_MOMENT_POPOVER : eR && eW === o.M.CHURN_DISCOUNT_PREMIUM_TAB_COACHMARK && 8 === n ? e4 = Y.L.CHURN_DISCOUNT : e3 && !eN ? e4 = Y.L.PREMIUM_GROUP : e3 && eN ? e4 = Y.L.PREMIUM_GROUP_TOOLTIP : ex && eW === o.M.PREMIUM_ORBS_UPSELL_POPOVER ? e4 = Y.L.ORBS_UPSELL : eL && eW === o.M.PREMIUM_ORBS_REWARDS_INTRO_POPOVER ? e4 = Y.L.ORBS_INTRO : eO && e0 === o.M.PREMIUM_ORBS_REWARDS_DROP_POPOVER ? e4 = Y.L.ORBS_DROP : e7 ? e4 = Y.L.TOOLTIP : e9 ? e4 = Y.L.L_PREMIUM_SUB_TOOLTIP : e6 ? e4 = Y.L.L_UPSELL : ed && (e4 = Y.L.REVERSE_TRIAL);
         let e8 = (0, i.jsx)(u.z9, {
             listItemRef: X,
             selected: T,
@@ -227,7 +227,7 @@ let Q = e => {
             }),
             locationState: J,
             onClick: () => {
-                if (e6) {
+                if (e9) {
                     let e = new URLSearchParams({
                         [O.W]: y.LOGITECH_3PP_CARD_ID
                     }).toString();

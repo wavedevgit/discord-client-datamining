@@ -1,7 +1,6 @@
 /** chunk id: 969117 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
-    N: () => s
+    N: () => l
 });
 let i = (0, n(945810).mj)({
         name: "2026-02-game-server-tab-always-on",
@@ -15,6 +14,6 @@ let i = (0, n(945810).mj)({
             }
         }
     }),
-    s = e => i.useConfig({
+    l = e => i.useConfig({
         location: e
     }).enabled

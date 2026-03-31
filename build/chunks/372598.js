@@ -1,37 +1,37 @@
 /** chunk id: 372598 params = (module,exports,require) **/
 n.d(t, {
-    XO: () => l,
-    dL: () => i
+    XO: () => a,
+    dL: () => l
 });
-var r = n(411335);
+var i = n(411335);
 
-function i(e) {
-    let t = l();
+function l(e) {
+    let t = a();
     return Array.from(e.defaultActionTypes).map(e => t[e])
 }
 
-function l() {
+function a() {
     return {
-        [r.AH.BLOCK_MESSAGE]: {
-            type: r.AH.BLOCK_MESSAGE,
+        [i.AH.BLOCK_MESSAGE]: {
+            type: i.AH.BLOCK_MESSAGE,
             metadata: {
                 customMessage: void 0
             }
         },
-        [r.AH.FLAG_TO_CHANNEL]: {
-            type: r.AH.FLAG_TO_CHANNEL,
+        [i.AH.FLAG_TO_CHANNEL]: {
+            type: i.AH.FLAG_TO_CHANNEL,
             metadata: {
                 channelId: void 0
             }
         },
-        [r.AH.USER_COMMUNICATION_DISABLED]: {
-            type: r.AH.USER_COMMUNICATION_DISABLED,
+        [i.AH.USER_COMMUNICATION_DISABLED]: {
+            type: i.AH.USER_COMMUNICATION_DISABLED,
             metadata: {
                 durationSeconds: 60
             }
         },
-        [r.AH.QUARANTINE_USER]: {
-            type: r.AH.QUARANTINE_USER,
+        [i.AH.QUARANTINE_USER]: {
+            type: i.AH.QUARANTINE_USER,
             metadata: {}
         }
     }

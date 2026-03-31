@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var l = n(540185),
-    a = n(311907),
+var a = n(540185),
+    l = n(311907),
     s = n(961350),
     r = n(735321),
     o = n(483558),
@@ -24,22 +24,22 @@ function h(e) {
         ...n
     } = e;
     switch (t.type) {
-        case l.x.FAVORITE_GAMES:
+        case a.x.FAVORITE_GAMES:
             return (0, i.jsx)(g.A, {
                 widget: t,
                 ...n
             });
-        case l.x.CURRENT_GAMES:
+        case a.x.CURRENT_GAMES:
             return (0, i.jsx)(u.A, {
                 widget: t,
                 ...n
             });
-        case l.x.WANT_TO_PLAY_GAMES:
+        case a.x.WANT_TO_PLAY_GAMES:
             return (0, i.jsx)(x.A, {
                 widget: t,
                 ...n
             });
-        case l.x.PLAYED_GAMES:
+        case a.x.PLAYED_GAMES:
             return (0, i.jsx)(m.A, {
                 widget: t,
                 ...n
@@ -53,20 +53,20 @@ function _(e) {
     let {
         widget: t,
         user: n,
-        disableInteraction: l,
+        disableInteraction: a,
         ...u
     } = e, {
         setExpanded: g
     } = (0, c.B)(), {
         shouldShowSuggestions: m,
         handleDismissSuggestions: x
-    } = (0, o.q)(t), _ = (0, a.bG)([s.default], () => s.default.getId() === n.id), A = _ && !l && m, I = (0, r.L)(t), j = (0, r.FM)(t, {
+    } = (0, o.q)(t), _ = (0, l.bG)([s.default], () => s.default.getId() === n.id), A = _ && !a && m, I = (0, r.L)(t), j = (0, r.FM)(t, {
         isCurrentUser: _
     }), v = (0, r.uA)(t), T = 1 === (0, r.cv)(t.type);
     return (0, i.jsx)(h, {
         widget: t,
         user: n,
-        disableInteraction: l,
+        disableInteraction: a,
         headerTitle: I,
         headerSubtitle: j,
         headerActionButtons: _ && !T ? [(0, i.jsx)(d.IU, {

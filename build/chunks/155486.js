@@ -16,8 +16,8 @@ var r = s(627968),
     S = s(318346),
     E = s(151252),
     A = s(142270),
-    h = s(287809),
-    f = s(954571),
+    f = s(287809),
+    h = s(954571),
     m = s(440938),
     C = s(365491),
     g = s(628979),
@@ -34,7 +34,7 @@ function I(e) {
     let {
         selectedTab: t,
         handleTransition: s
-    } = e, I = (0, n.bG)([h.default], () => h.default.getCurrentUser()), {
+    } = e, I = (0, n.bG)([f.default], () => f.default.getCurrentUser()), {
         enabled: N
     } = (0, E.Z)({
         location: "collectibles_shop_header_bar"
@@ -79,7 +79,7 @@ function I(e) {
         }, [I?.id]),
         B = l.useCallback(e => {
             if (e === y.G2.RIVALS) {
-                f.default.track(O.HAw.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+                h.default.track(O.HAw.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
                     collectibles_shop_session_id: G?.sessionId,
                     page_type: e,
                     page_category: G?.pageCategory,
@@ -119,7 +119,6 @@ function I(e) {
                     ctaOnClick: D
                 })]
             }),
-            hideForLater: !0,
             hideSearch: !0,
             children: [(0, r.jsx)(o.DUT, {
                 className: R.sU,

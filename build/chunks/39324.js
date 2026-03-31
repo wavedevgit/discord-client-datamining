@@ -1,24 +1,23 @@
 /** chunk id: 39324 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
     A: () => r
 });
 var i = n(353640),
-    s = n(849077);
-let l = {
-        [s.Ur.UNREAD]: !0,
-        [s.Ur.TODAY]: !0,
-        [s.Ur.YESTERDAY]: !0,
-        [s.Ur.OLDER]: !0
+    l = n(849077);
+let s = {
+        [l.Ur.UNREAD]: !0,
+        [l.Ur.TODAY]: !0,
+        [l.Ur.YESTERDAY]: !0,
+        [l.Ur.OLDER]: !0
     },
     a = {
-        [s.Ur.UNREAD]: !0,
-        [s.Ur.TODAY]: !1,
-        [s.Ur.YESTERDAY]: !1,
-        [s.Ur.OLDER]: !1
+        [l.Ur.UNREAD]: !0,
+        [l.Ur.TODAY]: !1,
+        [l.Ur.YESTERDAY]: !1,
+        [l.Ur.OLDER]: !1
     },
     r = (0, i.v)((e, t) => ({
-        messageCategoryOpenStates: l,
+        messageCategoryOpenStates: s,
         getOpenState: e => t().messageCategoryOpenStates[e],
         toggleOpenState: t => {
             e(e => ({
@@ -30,7 +29,7 @@ let l = {
         },
         setOpenStateFromUnreads: t => {
             e({
-                messageCategoryOpenStates: t ? a : l
+                messageCategoryOpenStates: t ? a : s
             })
         }
     }))

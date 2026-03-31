@@ -7,8 +7,8 @@ var l = i(627968),
     a = i(503698),
     s = i.n(a),
     r = i(241524),
-    o = i(573435),
-    d = i(263063),
+    d = i(573435),
+    o = i(263063),
     c = i(260509),
     u = i(486020),
     m = i(139616);
@@ -17,7 +17,7 @@ function x(e) {
     let {
         guild: t,
         outline: i
-    } = e, a = (0, r.A)("(max-width: 600px), (max-height: 600px)") ? d.DN.LARGER : d.DN.XLARGE, x = d.iu[a], g = d.s[a], h = n.useMemo(() => u.Ay.getGuildIconURL({
+    } = e, a = (0, r.A)("(max-width: 600px), (max-height: 600px)") ? o.DN.LARGER : o.DN.XLARGE, x = o.iu[a], g = o.s[a], h = n.useMemo(() => u.Ay.getGuildIconURL({
         id: t.id,
         icon: t.icon,
         size: x
@@ -34,14 +34,14 @@ function x(e) {
     });
     return i ? (0, l.jsx)("div", {
         className: s()(m._C, m.AY),
-        children: (0, l.jsx)(o.Ay, {
-            mask: o.Ay.Masks.SQUIRCLE,
+        children: (0, l.jsx)(d.Ay, {
+            mask: d.Ay.Masks.SQUIRCLE,
             width: x + 8,
             height: x + 8,
             children: (0, l.jsx)("div", {
                 className: m.$d,
-                children: (0, l.jsx)(o.Ay, {
-                    mask: o.Ay.Masks.SQUIRCLE,
+                children: (0, l.jsx)(d.Ay, {
+                    mask: d.Ay.Masks.SQUIRCLE,
                     width: x,
                     height: x,
                     children: p
@@ -50,8 +50,8 @@ function x(e) {
         })
     }) : (0, l.jsx)("div", {
         className: m._C,
-        children: (0, l.jsx)(o.Ay, {
-            mask: o.Ay.Masks.SQUIRCLE,
+        children: (0, l.jsx)(d.Ay, {
+            mask: d.Ay.Masks.SQUIRCLE,
             width: x,
             height: x,
             children: p

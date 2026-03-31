@@ -1,12 +1,11 @@
 /** chunk id: 357064 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
-    A: () => m
+    A: () => _
 });
 var i = n(627968);
 n(64700);
-var s = n(311907),
-    l = n(442433),
+var l = n(311907),
+    s = n(442433),
     a = n(513461),
     r = n(212455),
     o = n(967198),
@@ -16,7 +15,7 @@ var s = n(311907),
     h = n(652215);
 
 function A(e, t) {
-    (0, l.L3)(e, async () => {
+    (0, s.L3)(e, async () => {
         let {
             default: e
         } = await n.e("49056").then(n.bind(n, 97187));
@@ -27,20 +26,20 @@ function A(e, t) {
     })
 }
 
-function m(e) {
+function _(e) {
     let {
         guildNode: t
-    } = e, n = t.id, l = (0, s.bG)([r.A], () => r.A.getRequest(n)), m = (0, s.bG)([r.A], () => r.A.getJoinRequestGuild(n), [n]), _ = (0, s.bG)([c.A], () => c.A.isFocused()), g = (0, s.bG)([o.A], () => o.A.getGuildId());
-    return null == m ? null : (0, i.jsx)(d.A, {
+    } = e, n = t.id, s = (0, l.bG)([r.A], () => r.A.getRequest(n)), _ = (0, l.bG)([r.A], () => r.A.getJoinRequestGuild(n), [n]), m = (0, l.bG)([c.A], () => c.A.isFocused()), g = (0, l.bG)([o.A], () => o.A.getGuildId());
+    return null == _ ? null : (0, i.jsx)(d.A, {
         guildNode: t,
-        guild: m,
-        animatable: _,
+        guild: _,
+        animatable: m,
         draggable: !1,
         selected: n === g,
         preloadOnClick: !1,
         contextMenu: A,
-        lowerBadge: l?.applicationStatus === a.B5.REJECTED ? (0, u.eW)({
-            guildJoinRequestStatus: l.applicationStatus
+        lowerBadge: s?.applicationStatus === a.B5.REJECTED ? (0, u.eW)({
+            guildJoinRequestStatus: s.applicationStatus
         }) : void 0,
         route: h.BVt.GUILD_MEMBER_VERIFICATION(n)
     })

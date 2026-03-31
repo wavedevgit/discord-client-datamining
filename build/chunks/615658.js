@@ -1,11 +1,10 @@
 /** chunk id: 615658 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
     A: () => A
 });
 var i = n(627968),
-    s = n(64700),
-    l = n(311907),
+    l = n(64700),
+    s = n(311907),
     a = n(118019),
     r = n(383501),
     o = n(728458),
@@ -14,51 +13,51 @@ var i = n(627968),
     u = n(572808),
     h = n(241080);
 let A = () => {
-    let e = (0, l.bG)([r.A], () => r.A.getChannelId()),
-        t = (0, l.bG)([d.A], () => null != e && d.A.isUserConnected(e)),
+    let e = (0, s.bG)([r.A], () => r.A.getChannelId()),
+        t = (0, s.bG)([d.A], () => null != e && d.A.isUserConnected(e)),
         n = (0, c.n)(e => e.genre),
         A = (0, c.n)(e => e.songIndex),
-        m = (0, c.n)(e => e.playRadio),
-        _ = (0, c.n)(e => e.globalMute),
+        _ = (0, c.n)(e => e.playRadio),
+        m = (0, c.n)(e => e.globalMute),
         g = (0, c.n)(e => e.playNextSong),
         p = (0, c.n)(e => e.volumes),
-        f = s.useRef(null),
-        x = s.useRef(null),
-        E = s.useRef(null),
-        C = (0, h.A)(n, A),
-        I = (0, l.bG)([d.A], () => d.A.assets);
-    return (s.useEffect(() => {
+        f = l.useRef(null),
+        x = l.useRef(null),
+        E = l.useRef(null),
+        I = (0, h.A)(n, A),
+        C = (0, s.bG)([d.A], () => d.A.assets);
+    return (l.useEffect(() => {
         let e = f.current;
-        null != e && C?.src != null && (e.pause(), e.src = C.src, !_ && m && t && e.play()?.catch(e => {
+        null != e && I?.src != null && (e.pause(), e.src = I.src, !m && _ && t && e.play()?.catch(e => {
             o.A.captureException(e)
         }))
-    }, [C?.src, _, m, t]), s.useEffect(() => {
+    }, [I?.src, m, _, t]), l.useEffect(() => {
         let e = x.current,
             n = E.current;
-        null != e && (_ || !t ? e.pause() : e.play()?.catch(e => {
+        null != e && (m || !t ? e.pause() : e.play()?.catch(e => {
             o.A.captureException(e)
-        })), null != n && (_ || !t ? n.pause() : n.play()?.catch(e => {
+        })), null != n && (m || !t ? n.pause() : n.play()?.catch(e => {
             o.A.captureException(e)
         }))
-    }, [_, t]), t) ? (0, i.jsxs)(i.Fragment, {
+    }, [m, t]), t) ? (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(a.A, {
             ref: f,
             onEnded: g,
-            volume: _ ? 0 : p.radio,
+            volume: m ? 0 : p.radio,
             children: (0, i.jsx)("source", {
-                src: C?.src
+                src: I?.src
             })
         }), (0, i.jsx)(a.A, {
             ref: x,
-            volume: _ ? 0 : p.environment,
+            volume: m ? 0 : p.environment,
             children: (0, i.jsx)("source", {
-                src: I?.sounds?.[u.qi.ENVIRONMENT]
+                src: C?.sounds?.[u.qi.ENVIRONMENT]
             })
         }), (0, i.jsx)(a.A, {
             ref: E,
-            volume: _ ? 0 : p.campfire,
+            volume: m ? 0 : p.campfire,
             children: (0, i.jsx)("source", {
-                src: I?.sounds?.[u.qi.CAMPFIRE]
+                src: C?.sounds?.[u.qi.CAMPFIRE]
             })
         })]
     }) : null

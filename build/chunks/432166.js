@@ -33,14 +33,14 @@ function c(t) {
     return String(t).padStart(2, "0")
 }
 
-function A(t) {
+function m(t) {
     let {
         time: e,
         padLargestUnit: i
     } = t, n = Math.floor(e) % 60, l = Math.floor(e / 60) % 60, r = Math.floor(e / 3600);
     return 0 === r ? i ? `${c(l)}:${c(n)}` : `${l}:${c(n)}` : i ? `${c(r)}:${c(l)}:${c(n)}` : `${r}:${c(l)}:${c(n)}`
 }
-class m extends l.PureComponent {
+class A extends l.PureComponent {
     static defaultProps = {
         themed: !1
     };
@@ -67,26 +67,26 @@ class m extends l.PureComponent {
             singleLine: r = !1
         } = this.props, {
             now: a
-        } = this.state, c = (e - t) / 1e3, m = Math.max(Math.min((a - t) / 1e3, c), 0);
+        } = this.state, c = (e - t) / 1e3, A = Math.max(Math.min((a - t) / 1e3, c), 0);
         return r ? (0, n.jsxs)("div", {
             className: s()(i, {
                 [d.Sp]: l
             }, d.Od),
             children: [(0, n.jsx)("div", {
                 className: d.Iq,
-                children: A({
-                    time: m,
+                children: m({
+                    time: A,
                     padLargestUnit: !0
                 })
             }), (0, n.jsx)("div", {
                 className: d.h7,
                 children: (0, n.jsx)(u, {
-                    percentage: m / c,
+                    percentage: A / c,
                     isSingleLine: !0
                 })
             }), (0, n.jsx)("div", {
                 className: d.EL,
-                children: A({
+                children: m({
                     time: c,
                     padLargestUnit: !0
                 })
@@ -96,20 +96,20 @@ class m extends l.PureComponent {
                 [d.Sp]: l
             }),
             children: [(0, n.jsx)(u, {
-                percentage: m / c,
+                percentage: A / c,
                 isSingleLine: !1
             }), (0, n.jsxs)(o.A, {
                 children: [(0, n.jsx)(o.A.Child, {
                     grow: 1,
                     className: d.n_,
-                    children: A({
-                        time: m,
+                    children: m({
+                        time: A,
                         padLargestUnit: !1
                     })
                 }), (0, n.jsx)(o.A.Child, {
                     grow: 0,
                     className: d.EL,
-                    children: A({
+                    children: m({
                         time: c,
                         padLargestUnit: !1
                     })
@@ -118,4 +118,4 @@ class m extends l.PureComponent {
         })
     }
 }
-let h = m
+let h = A

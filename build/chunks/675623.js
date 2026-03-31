@@ -27,9 +27,9 @@ function A(t) {
         rsvped: s.Ay.isInterestedInEventRecurrence(e, A),
         baseRsvp: s.Ay.getRsvp(e, null, _),
         recurrenceRsvp: s.Ay.getRsvp(e, A, _)
-    }), [A, e, _]), m = (0, o.A)(A, e);
-    if (g || m?.is_canceled) return null;
-    let y = function() {
+    }), [A, e, _]), y = (0, o.A)(A, e);
+    if (g || y?.is_canceled) return null;
+    let v = function() {
         let t = arguments.length > 0 && void 0 !== arguments[0] && arguments[0],
             l = T?.response === c.Qi.INTERESTED ? c.Qi.UNINTERESTED : c.Qi.INTERESTED,
             i = t ? null : A;
@@ -42,11 +42,11 @@ function A(t) {
         children: [(0, l.jsx)(r.Drp, {
             id: E.intl.string(E.t.lwZCFT),
             label: E.intl.string(E.t.lwZCFT),
-            action: () => y(!1)
+            action: () => v(!1)
         }), (0, l.jsx)(r.Drp, {
             id: E.intl.string(E.t.uoorxi),
             label: E.intl.string(E.t.uoorxi),
-            action: () => y(!0),
+            action: () => v(!0),
             disabled: null != f
         })]
     })

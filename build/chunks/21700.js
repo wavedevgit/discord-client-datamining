@@ -1,5 +1,4 @@
 /** chunk id: 21700 params = (module,exports,require) **/
-"use strict";
 e.exports = {
     zr: "root__85d05",
     Yd: "comboIcon__85d05",

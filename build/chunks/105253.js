@@ -197,7 +197,7 @@ function _(e) {
                 A(C.Ps.STAGE_INSTANCE), (0, d.mMO)(async () => {
                     let {
                         default: e
-                    } = await Promise.all([n.e("8018"), n.e("93142"), n.e("64233"), n.e("51975")]).then(n.bind(n, 409200));
+                    } = await Promise.all([n.e("11478"), n.e("8018"), n.e("93142"), n.e("64233"), n.e("51975")]).then(n.bind(n, 409200));
                     return n => (0, l.jsx)(e, {
                         ...n,
                         channelType: T.rbe.GUILD_STAGE_VOICE,

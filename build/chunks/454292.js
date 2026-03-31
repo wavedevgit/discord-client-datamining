@@ -12,25 +12,25 @@ var i = n(627968),
     c = n(775602),
     u = n(725951),
     m = n(400492),
-    _ = n(841329),
-    g = n(12901),
-    x = n(115063),
-    A = n(414736),
+    g = n(841329),
+    _ = n(12901),
+    A = n(115063),
+    x = n(414736),
     h = n(927018),
     p = n(928830),
     T = n(3137),
     f = n(301656),
-    S = n(224964),
-    E = n(31408),
+    E = n(224964),
+    S = n(31408),
     b = n(985018),
     C = n(836419);
-let v = {
+let N = {
         enabled: !0,
         combosEnabled: !0,
         screenshakeEnabled: !1,
         confettiEnabled: !1
     },
-    N = (0, l.range)(0, 11),
+    v = (0, l.range)(0, 11),
     I = (0, l.range)(0, 2.25, .25),
     j = (0, l.range)(1, 11),
     y = (0, l.range)(1, 26),
@@ -86,11 +86,11 @@ function L(e) {
         description: b.intl.string(b.t.KuYbWN),
         checked: t,
         onChange: e => {
-            e || (0, A._)(h.sn.DISABLE_POGGERMODE), e && (!n || l) ? (0, o.A)({
+            e || (0, x._)(h.sn.DISABLE_POGGERMODE), e && (!n || l) ? (0, o.A)({
                 title: l ? b.intl.string(b.t["FxT+p0"]) : b.intl.string(b.t.TAZ4F9),
                 subtitle: l ? b.intl.string(b.t.gmixrx) : b.intl.string(b.t.jN3t3K),
                 confirmText: b.intl.string(b.t.JFfins),
-                onConfirm: () => s(l ? v : {
+                onConfirm: () => s(l ? N : {
                     enabled: !0,
                     warningSeen: !0
                 })
@@ -165,19 +165,19 @@ function D(e) {
         }), (0, i.jsx)(R, {
             disabled: o,
             locations: [{
-                location: E.k.CHAT_INPUT,
+                location: S.k.CHAT_INPUT,
                 title: b.intl.string(b.t.elTtyz),
                 description: b.intl.string(b.t.HtKfMi)
             }, {
-                location: E.k.REACTION,
+                location: S.k.REACTION,
                 title: b.intl.string(b.t.Ik4VIa),
                 description: b.intl.string(b.t.y4rqK0)
             }, {
-                location: E.k.MEMBER_USER,
+                location: S.k.MEMBER_USER,
                 title: b.intl.string(b.t.ZXBlAn),
                 description: b.intl.string(b.t["m9RD+c"])
             }, {
-                location: E.k.CALL_TILE,
+                location: S.k.CALL_TILE,
                 title: b.intl.string(b.t.V66giQ),
                 description: b.intl.string(b.t.fiHV7u)
             }],
@@ -227,10 +227,10 @@ function G(e) {
                 children: b.intl.string(b.t["/OOFpL"])
             }), (0, i.jsx)(d.Apm, {
                 disabled: r,
-                markers: N,
+                markers: v,
                 stickToMarkers: !0,
-                minValue: N[0],
-                maxValue: N[N.length - 1],
+                minValue: v[0],
+                maxValue: v[v.length - 1],
                 initialValue: l,
                 onValueChange: e => a({
                     combosRequiredCount: e
@@ -281,22 +281,22 @@ function M(e) {
                     var t;
                     null != (t = {
                         shakeIntensity: e
-                    }).shakeIntensity && t.shakeIntensity > s && (0, A._)(h.sn.MORE), r(t, 1)
+                    }).shakeIntensity && t.shakeIntensity > s && (0, x._)(h.sn.MORE), r(t, 1)
                 },
                 onMarkerRender: e => e === I[I.length - 1] ? b.intl.string(b.t["4rbMWc"]) : `${100*e}%`
             })]
         }), (0, i.jsx)(R, {
             disabled: u,
             locations: [{
-                location: E.uD.CHAT_INPUT,
+                location: S.uD.CHAT_INPUT,
                 title: b.intl.string(b.t.vUcvPP),
                 description: b.intl.string(b.t.y00OrF)
             }, {
-                location: E.uD.VOICE_USER,
+                location: S.uD.VOICE_USER,
                 title: b.intl.string(b.t.TcRO54),
                 description: b.intl.string(b.t.YJCxVY)
             }, {
-                location: E.uD.MENTION,
+                location: S.uD.MENTION,
                 title: b.intl.string(b.t.oW4shO),
                 description: b.intl.string(b.t["mqfw/H"])
             }],
@@ -329,7 +329,7 @@ function k(e) {
                         t({
                             enabled: !1,
                             settingsVisible: !1
-                        }), (0, g.default)()
+                        }), (0, _.default)()
                     }
                 })
             })]
@@ -383,28 +383,28 @@ function V(e) {
     } = e, l = (0, a.cf)([T.A], () => T.A.getState()), [r, o] = s.useState({
         x: 0,
         y: 0
-    }), c = (0, S.A)(), u = (e, t) => {
-        var i, s, a, o, d, u, _, g;
-        if (e.enabled && !1 === l.enabled && (n(!0), (0, m.Ak)("poggermode_enabled"), (0, x.fO)({
+    }), c = (0, E.A)(), u = (e, t) => {
+        var i, s, a, o, d, u, g, _;
+        if (e.enabled && !1 === l.enabled && (n(!0), (0, m.Ak)("poggermode_enabled"), (0, A.fO)({
                 duration: 2e3,
                 intensity: e.shakeIntensity ?? l.shakeIntensity
             })), (0, p.O9)(e), null == t) return;
-        let A = (i = l.confettiEnabled, s = e.confettiEnabled, a = l.enabled, o = e.enabled, (s ?? i) && (o ?? a));
-        0 === t && A && c.fire(r.x, r.y, {
+        let x = (i = l.confettiEnabled, s = e.confettiEnabled, a = l.enabled, o = e.enabled, (s ?? i) && (o ?? a));
+        0 === t && x && c.fire(r.x, r.y, {
             settings: e
         });
-        let h = (d = l.screenshakeEnabled, u = e.screenshakeEnabled, _ = l.enabled, g = e.enabled, (u ?? d) && (g ?? _));
-        1 === t && h && (0, x.fO)({
+        let h = (d = l.screenshakeEnabled, u = e.screenshakeEnabled, g = l.enabled, _ = e.enabled, (u ?? d) && (_ ?? g));
+        1 === t && h && (0, A.fO)({
             duration: 1e3,
             intensity: e.shakeIntensity ?? l.shakeIntensity
         })
-    }, _ = e => {
+    }, g = e => {
         o({
             x: e.clientX,
             y: e.clientY
         })
     };
-    return s.useEffect(() => (window.addEventListener("mousemove", _), () => window.removeEventListener("mousemove", _)), []), (0, i.jsxs)(d.BJc, {
+    return s.useEffect(() => (window.addEventListener("mousemove", g), () => window.removeEventListener("mousemove", g)), []), (0, i.jsxs)(d.BJc, {
         gap: 24,
         children: [(0, i.jsx)(L, {
             settings: l,
@@ -428,16 +428,16 @@ function V(e) {
 let B = e => 0 === e ? u.f.LEFT : u.f.RIGHT;
 
 function F() {
-    let [e, t] = s.useState(0), [n, l] = s.useState(B(e)), [r, o] = s.useState(!1), m = (0, a.bG)([c.A], () => c.A.useReducedMotion), g = r && !m;
+    let [e, t] = s.useState(0), [n, l] = s.useState(B(e)), [r, o] = s.useState(!1), m = (0, a.bG)([c.A], () => c.A.useReducedMotion), _ = r && !m;
     return s.useEffect(() => {
         let t = setTimeout(() => {
             l(B(e))
         }, 500);
         return () => clearTimeout(t)
     }, [e]), s.useEffect(() => {
-        (0, _._)(O[e])
+        (0, g._)(O[e])
     }, [e]), s.useEffect(() => {
-        Math.random() > .99 && (0, A._)(h.sn.VISITOR_100)
+        Math.random() > .99 && (0, x._)(h.sn.VISITOR_100)
     }, []), (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(u.A, {
             className: C.l3,
@@ -462,11 +462,11 @@ function F() {
                 }
             })(e, t, o)
         }), (0, i.jsx)("div", {
-            className: g ? C.Sr : C.IP,
+            className: _ ? C.Sr : C.IP,
             children: (0, i.jsx)(d.akl, {
                 className: C.gT,
                 importData: w,
-                shouldAnimate: g,
+                shouldAnimate: _,
                 autoplay: !1,
                 resetOnPlay: !0,
                 loop: !1,

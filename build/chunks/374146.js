@@ -1,5 +1,4 @@
 /** chunk id: 374146 params = (module,exports,require) **/
-"use strict";
 e.exports = {
     wx: "header__7f9c0",
     vK: "banner__7f9c0",

@@ -16,15 +16,15 @@ function c(t) {
         userId: e,
         channel: i,
         onAction: c,
-        variant: A = "primary"
-    } = t, m = (0, o.u)(e, i, "useRequestToStreamButton"), h = (0, r.bG)([a.A], () => a.A.getVoiceChannelId() === i.id, [i.id]);
-    if (null == m) return null;
+        variant: m = "primary"
+    } = t, A = (0, o.u)(e, i, "useRequestToStreamButton"), h = (0, r.bG)([a.A], () => a.A.getVoiceChannelId() === i.id, [i.id]);
+    if (null == A) return null;
     let p = (0, n.jsx)(l.$nd, {
         text: u.intl.string(d.default.DKHhec),
-        variant: A,
+        variant: m,
         size: "sm",
         onClick: () => {
-            m.handleRequestToStream("request to stream button"), c?.()
+            A.handleRequestToStream("request to stream button"), c?.()
         },
         fullWidth: !0,
         disabled: !h

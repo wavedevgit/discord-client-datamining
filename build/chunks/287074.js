@@ -1,11 +1,10 @@
 /** chunk id: 287074 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
-    A: () => _
+    A: () => m
 });
 var i = n(627968),
-    s = n(64700),
-    l = n(311907),
+    l = n(64700),
+    s = n(311907),
     a = n(397927),
     r = n(945830),
     o = n(323073),
@@ -14,22 +13,22 @@ var i = n(627968),
     u = n(203982),
     h = n(58736),
     A = n(652215),
-    m = n(985018);
-let _ = function(e) {
+    _ = n(985018);
+let m = function(e) {
     let {
         channel: t
-    } = e, n = (0, o.vL)(t), [_, g] = s.useState(!1), p = (0, l.bG)([d.Ay], () => d.Ay.hasUnreadPins(t.id), [t]), f = (0, c.aL)(), x = s.useRef(null), E = s.useCallback(() => {
+    } = e, n = (0, o.vL)(t), [m, g] = l.useState(!1), p = (0, s.bG)([d.Ay], () => d.Ay.hasUnreadPins(t.id), [t]), f = (0, c.aL)(), x = l.useRef(null), E = l.useCallback(() => {
         n || g(e => !e)
     }, [n]);
 
-    function C(e) {
+    function I(e) {
         e?.shiftKey || f.dispatch(A.jej.POPOUT_CLOSE)
     }
-    return s.useEffect(() => (u._.subscribe(A.jej.TOGGLE_CHANNEL_PINS, E), () => {
+    return l.useEffect(() => (u._.subscribe(A.jej.TOGGLE_CHANNEL_PINS, E), () => {
         u._.unsubscribe(A.jej.TOGGLE_CHANNEL_PINS, E)
     }), [E]), (0, i.jsx)(a.YNO, {
         targetElementRef: x,
-        shouldShow: _,
+        shouldShow: m,
         animation: a.YNO.Animation.NONE,
         position: "bottom",
         align: "right",
@@ -39,26 +38,26 @@ let _ = function(e) {
         renderPopout: function(e) {
             return (0, i.jsx)(r.A, {
                 ...e,
-                onJump: C,
+                onJump: I,
                 channel: t
             })
         },
         clickTrap: !0,
         children: (e, t) => {
             let {
-                isShown: s
+                isShown: l
             } = t;
             return (0, i.jsx)(h.In, {
                 ...e,
                 ref: x,
                 onClick: E,
-                tooltip: s ? null : m.intl.string(m.t["mp1N/2"]),
+                tooltip: l ? null : _.intl.string(_.t["mp1N/2"]),
                 icon: a.tsw,
                 iconSize: 20,
-                "aria-label": m.intl.string(m.t["mp1N/2"]),
+                "aria-label": _.intl.string(_.t["mp1N/2"]),
                 disabled: n,
                 showBadge: p,
-                selected: s
+                selected: l
             })
         }
     })

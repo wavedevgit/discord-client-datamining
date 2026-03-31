@@ -16,9 +16,9 @@ let d = "url(#gradient)",
             animationClassName: c,
             initialPercentage: u = 0,
             progressCircleStrokeSize: m = 2,
-            progressCircleVariation: _,
-            progressCircleStroke: g
-        } = e, x = 43 + m / 2, A = 2 * Math.PI * x, [h, p] = s.useState(u);
+            progressCircleVariation: g,
+            progressCircleStroke: _
+        } = e, A = 43 + m / 2, x = 2 * Math.PI * A, [h, p] = s.useState(u);
         s.useEffect(() => {
             let e = setTimeout(() => {
                 p(t)
@@ -27,7 +27,7 @@ let d = "url(#gradient)",
         }, [t]);
         let T = (0, a.Ay)(),
             f = (0, l.qB)(T),
-            S = (e => {
+            E = (e => {
                 switch (e) {
                     case r.BN.NITRO_GEM:
                     case r.BN.AVATAR_DECO:
@@ -37,8 +37,8 @@ let d = "url(#gradient)",
                     default:
                         return
                 }
-            })(_),
-            E = ((e, t) => {
+            })(g),
+            S = ((e, t) => {
                 switch (e) {
                     case r.BN.NITRO_LOGO:
                         return t ? "0.3" : "0.2";
@@ -47,8 +47,8 @@ let d = "url(#gradient)",
                     default:
                         return
                 }
-            })(_, f),
-            b = g ?? ((e, t) => {
+            })(g, f),
+            b = _ ?? ((e, t) => {
                 switch (t) {
                     case r.BN.NITRO_GEM:
                     case r.BN.AVATAR_DECO:
@@ -58,31 +58,31 @@ let d = "url(#gradient)",
                     default:
                         return
                 }
-            })(f, _);
+            })(f, g);
         return (0, i.jsxs)("div", {
             className: o.Ap,
             children: [(0, i.jsxs)("svg", {
                 viewBox: "0 0 100 100",
                 className: o.fB,
                 children: [(0, i.jsx)("circle", {
-                    className: _ === r.BN.NITRO_GEM || _ === r.BN.AVATAR_DECO ? o.F3 : void 0,
+                    className: g === r.BN.NITRO_GEM || g === r.BN.AVATAR_DECO ? o.F3 : void 0,
                     fill: "transparent",
                     strokeWidth: m,
-                    r: `${x}`,
+                    r: `${A}`,
                     cx: "50%",
                     cy: "50%",
-                    stroke: S,
-                    strokeOpacity: E
+                    stroke: E,
+                    strokeOpacity: S
                 }), (0, i.jsx)("circle", {
                     stroke: b,
                     strokeWidth: m,
                     strokeLinecap: "round",
-                    strokeDasharray: `${A} ${A}`,
+                    strokeDasharray: `${x} ${x}`,
                     className: c,
                     style: {
-                        strokeDashoffset: (1 - h / 100) * A
+                        strokeDashoffset: (1 - h / 100) * x
                     },
-                    r: `${x}`,
+                    r: `${A}`,
                     cx: "50%",
                     cy: "50%"
                 })]

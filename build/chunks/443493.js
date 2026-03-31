@@ -16,17 +16,17 @@ let d = t => {
         variant: d = "active",
         size: u = "sm",
         onAction: c,
-        ...A
-    } = t, m = (0, l.bG)([a.A], () => a.A.isInChannel(i), [i]);
+        ...m
+    } = t, A = (0, l.bG)([a.A], () => a.A.isInChannel(i), [i]);
     return (0, n.jsx)(r.Button, {
         variant: d,
         size: u,
         text: o.intl.string(o.t.ZYO5OK),
-        disabled: m,
+        disabled: A,
         onClick: () => {
             c?.(), s.CH(e, i)
         },
         fullWidth: !0,
-        ...A
+        ...m
     })
 }

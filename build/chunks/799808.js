@@ -1,30 +1,30 @@
 /** chunk id: 799808 params = (module,exports,require) **/
 "use strict";
-i.d(t, {
+n.d(t, {
     AE: () => a,
     Mw: () => l,
     j_: () => r
 });
-var n = i(73153),
-    s = i(157257);
+var i = n(73153),
+    s = n(157257);
 
 function a(e) {
     return !e.isPreviewingInGame && !e.locked || e.pinned
 }
 
-function l(e, t, i) {
-    (e.locked !== t.locked || e.pinned !== t.pinned || i(e) !== i(t) || a(e) !== a(t)) && r(t, i(t))
+function l(e, t, n) {
+    (e.locked !== t.locked || e.pinned !== t.pinned || n(e) !== n(t) || a(e) !== a(t)) && r(t, n(t))
 }
 
 function r(e, t) {
-    let i = a(e),
+    let n = a(e),
         l = s.A.getGame();
-    n.h.dispatch({
+    i.h.dispatch({
         type: "OVERLAY_WIDGET_CHANGED",
         gameName: l?.name ?? null,
         gameId: l?.id ?? null,
         widgetType: e.widget,
-        visible: i && t,
+        visible: n && t,
         locked: e.locked,
         pinned: e.pinned
     })

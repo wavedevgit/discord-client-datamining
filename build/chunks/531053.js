@@ -1,14 +1,13 @@
 /** chunk id: 531053 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
-    Ay: () => C,
+    Ay: () => I,
     g4: () => N,
-    qv: () => I
+    qv: () => C
 });
 var i = n(627968),
-    s = n(64700),
-    l = n(503698),
-    a = n.n(l),
+    l = n(64700),
+    s = n(503698),
+    a = n.n(s),
     r = n(284009),
     o = n.n(r),
     c = n(522437),
@@ -16,14 +15,14 @@ var i = n(627968),
     u = n(954571),
     h = n(263715),
     A = n(550591),
-    m = n(652215),
-    _ = n(985018),
+    _ = n(652215),
+    m = n(985018),
     g = n(584914);
 
 function p(e) {
-    let t = s.useRef(null),
+    let t = l.useRef(null),
         n = e.map(e => e[0]);
-    return s.useLayoutEffect(() => {
+    return l.useLayoutEffect(() => {
         let n = requestAnimationFrame(() => {
             let n = t.current;
             if (null != n)
@@ -41,9 +40,9 @@ function f(e, t) {
         canDrop: e => e.nodeId !== t.id && (!i || e.type !== h.PJ.FOLDER || t.type !== h.PJ.FOLDER) && (e.type !== h.PJ.FOLDER || null == t.parentId),
         drop(e) {
             let {
-                nodeId: s
+                nodeId: l
             } = e;
-            i && t.type !== h.PJ.FOLDER && u.default.track(m.HAw.GUILD_FOLDER_CREATED), d.A.moveById(s, t.id, n, i)
+            i && t.type !== h.PJ.FOLDER && u.default.track(_.HAw.GUILD_FOLDER_CREATED), d.A.moveById(l, t.id, n, i)
         },
         collect: e => ({
             canDrop: e.canDrop(),
@@ -56,9 +55,9 @@ function x(e) {
     let {
         name: t,
         targetNode: n,
-        combine: l,
+        combine: s,
         below: a
-    } = e, r = s.useMemo(() => f([h.PJ.GUILD, h.PJ.FOLDER], n, a, l), [n, a, l]), [{
+    } = e, r = l.useMemo(() => f([h.PJ.GUILD, h.PJ.FOLDER], n, a, s), [n, a, s]), [{
         canDrop: o,
         isOver: d
     }, u] = (0, c.H)(r), A = p([
@@ -69,7 +68,7 @@ function x(e) {
         ref: e => {
             A.current = e, u(e)
         },
-        "data-dnd-name": _.intl.formatToPlainString(_.t["A5aDw+"], {
+        "data-dnd-name": m.intl.formatToPlainString(m.t["A5aDw+"], {
             itemName: t
         }),
         className: g.aC
@@ -80,14 +79,14 @@ function E(e) {
     let {
         name: t,
         targetNode: n,
-        onDragOverChanged: l
+        onDragOverChanged: s
     } = e, [{
         canDrop: r,
         isOver: o
     }, d] = (0, c.H)(() => f([h.PJ.GUILD], n, !0, !0));
-    s.useEffect(() => {
-        l?.(o)
-    }, [l, o]);
+    l.useEffect(() => {
+        s?.(o)
+    }, [s, o]);
     let u = p([
         [r, g.OP],
         [o, g.NQ]
@@ -101,28 +100,28 @@ function E(e) {
             ref: e => {
                 u.current = e, d(e)
             },
-            "data-dnd-name": _.intl.formatToPlainString(_.t.qiQ0QI, {
+            "data-dnd-name": m.intl.formatToPlainString(m.t.qiQ0QI, {
                 itemName: t
             }),
             className: a()(g.dw, {})
         })
     })
 }
-let C = s.memo(function(e) {
+let I = l.memo(function(e) {
     let {
         name: t,
         targetNode: n,
-        noCombine: s = !1,
-        below: l = !1,
+        noCombine: l = !1,
+        below: s = !1,
         onDragOverChanged: a
-    } = e, r = !s && null == n.parentId;
+    } = e, r = !l && null == n.parentId;
     return (0, i.jsxs)("div", {
         className: g.iE,
         "aria-hidden": !0,
         children: [(0, i.jsx)(x, {
             name: t,
             targetNode: n,
-            below: l
+            below: s
         }), r ? (0, i.jsx)(E, {
             name: t,
             targetNode: n,
@@ -131,18 +130,18 @@ let C = s.memo(function(e) {
     })
 });
 
-function I(e) {
+function C(e) {
     let {
         name: t,
         targetNode: n
     } = e, [{
-        canDrop: s,
-        isOver: l
+        canDrop: l,
+        isOver: s
     }, a] = (0, c.H)(() => f([h.PJ.GUILD], n, !0, !0)), r = p([
-        [l, g.a7]
+        [s, g.a7]
     ]), o = p([
-        [l, g.NQ],
-        [s, g.OP]
+        [s, g.NQ],
+        [l, g.OP]
     ]);
     return (0, i.jsx)("div", {
         ref: r,

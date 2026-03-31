@@ -1,6 +1,6 @@
 /** chunk id: 367232 params = (module,exports,require) **/
 n.d(t, {
-    A: () => _
+    A: () => f
 });
 var l = n(627968),
     a = n(64700),
@@ -20,13 +20,13 @@ var l = n(627968),
     x = n(289770),
     N = n(247818),
     I = n(652215),
-    f = n(534059);
+    _ = n(534059);
 
-function _(e) {
+function f(e) {
     let t = (0, C.jc)(),
         n = t?.channelId,
-        _ = u.A.getChannel(n),
-        g = p.A.getGuild(_?.getGuildId()),
+        f = u.A.getChannel(n),
+        g = p.A.getGuild(f?.getGuildId()),
         T = (0, c.A)(g?.id, x.S$),
         v = a.useMemo(() => (0, x.iA)(e.defaultValues, g?.id), [e.defaultValues, g]);
     return (0, l.jsx)(N.Ay, {
@@ -63,10 +63,10 @@ function _(e) {
             if (e.type === E.iw.USER) {
                 let n = h.default.getUser(e.value);
                 null != n && (t = (0, l.jsx)(s.A, {
-                    className: f.Tc,
-                    usernameClass: f.Xh,
-                    discriminatorClass: f.D2,
-                    botClass: f.Od,
+                    className: _.Tc,
+                    usernameClass: _.Xh,
+                    discriminatorClass: _.D2,
+                    botClass: _.Od,
                     user: n,
                     forceUsername: !0
                 }))
@@ -74,21 +74,21 @@ function _(e) {
                 let n = null != g ? m.A.getRole(g.id, e.value) : void 0,
                     a = null == n ? null : T?.[n.id];
                 null != a && (t = (0, l.jsxs)("div", {
-                    className: f.Ly,
+                    className: _.Ly,
                     children: [(0, l.jsx)(r.nys, {
                         size: "sm",
                         color: "currentColor",
-                        className: f.jh
+                        className: _.jh
                     }), (0, l.jsx)("span", {
-                        className: f.NT,
+                        className: _.NT,
                         children: a
                     })]
                 }))
             }
             return (0, l.jsxs)("span", {
-                className: f.Pf,
+                className: _.Pf,
                 children: [(0, l.jsx)("span", {
-                    className: f.QK,
+                    className: _.QK,
                     children: e.label
                 }), t]
             })

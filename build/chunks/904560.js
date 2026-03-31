@@ -1,11 +1,10 @@
 /** chunk id: 904560 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
     A: () => u
 });
 var i = n(311907),
-    s = n(73153),
-    l = n(71393),
+    l = n(73153),
+    s = n(71393),
     a = n(522055),
     r = n(645619),
     o = n(904629);
@@ -21,17 +20,17 @@ class d extends i.Ay.PersistedStore {
         return c
     }
     initialize(e) {
-        this.waitFor(a.A, r.A, l.A), null != e && (c = e)
+        this.waitFor(a.A, r.A, s.A), null != e && (c = e)
     }
     getNotificationStateForGuild(e) {
         return c[e]
     }
 }
-let u = new d(s.h, {
+let u = new d(l.h, {
     GUILD_POWERUPS_ACK_NOTIFICATION: function(e) {
         let {
             guildId: t
-        } = e, n = l.A.getGuild(t)?.premiumSubscriberCount ?? 0, i = r.A.getStateForGuild(t), s = a.A.getStateForGuild(t), d = (0, o.k)([...Object.values(i?.unlockedPowerups ?? {}), ...Object.values(s?.entitlements ?? {})]);
+        } = e, n = s.A.getGuild(t)?.premiumSubscriberCount ?? 0, i = r.A.getStateForGuild(t), l = a.A.getStateForGuild(t), d = (0, o.k)([...Object.values(i?.unlockedPowerups ?? {}), ...Object.values(l?.entitlements ?? {})]);
         c = {
             ...c,
             [t]: {

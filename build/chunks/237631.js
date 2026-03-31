@@ -1,10 +1,9 @@
 /** chunk id: 237631 params = (module,exports,require) **/
-"use strict";
-let i, s;
+let i, l;
 n.d(t, {
     A: () => h
 });
-var l = n(627968);
+var s = n(627968);
 n(64700);
 var a = n(397927),
     r = n(73153),
@@ -13,23 +12,23 @@ var a = n(397927),
 let d = null;
 
 function u(e) {
-    null != i && e ? i() : null != s && s(), i = null, s = null
+    null != i && e ? i() : null != l && l(), i = null, l = null
 }
 let h = {
     init() {
         r.h.subscribe("PREMIUM_REQUIRED_MODAL_OPEN", e => {
             let t;
-            u(!1), d = e.context, i = e.resolve, s = e.reject, c.QCW === e.context && (t = !1, (0, a.mMO)(async () => {
+            u(!1), d = e.context, i = e.resolve, l = e.reject, c.QCW === e.context && (t = !1, (0, a.mMO)(async () => {
                 let {
                     default: e
                 } = await Promise.all([n.e("12206"), n.e("24806"), n.e("77821")]).then(n.bind(n, 633772));
                 return n => {
                     let {
                         onClose: i,
-                        ...s
+                        ...l
                     } = n;
-                    return (0, l.jsx)(e, {
-                        ...s,
+                    return (0, s.jsx)(e, {
+                        ...l,
                         onClose: e => {
                             t = e, i()
                         }

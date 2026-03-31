@@ -1,12 +1,11 @@
 /** chunk id: 689025 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
     A: () => q
 });
 var i = n(627968),
-    s = n(64700),
-    l = n(503698),
-    a = n.n(l),
+    l = n(64700),
+    s = n(503698),
+    a = n.n(s),
     r = n(311907),
     o = n(3026),
     c = n(990078),
@@ -14,41 +13,41 @@ var i = n(627968),
     u = n(367513),
     h = n(442433),
     A = n(676002),
-    m = n(296216),
-    _ = n(963027),
+    _ = n(296216),
+    m = n(963027),
     g = n(202384),
     p = n(51758),
     f = n(721592),
     x = n(214660),
     E = n(824865),
-    C = n(378570),
-    I = n(323443),
+    I = n(378570),
+    C = n(323443),
     N = n(113783),
-    S = n(69407),
-    b = n(446600),
-    T = n(96566),
-    v = n(175452),
-    y = n(924985),
+    T = n(69407),
+    S = n(446600),
+    b = n(96566),
+    y = n(175452),
+    v = n(924985),
     j = n(734057),
     R = n(71393),
     O = n(834942),
     L = n(576705),
     M = n(222823),
     D = n(543465),
-    G = n(977997),
-    U = n(147036),
+    U = n(977997),
+    G = n(147036),
     P = n(557534),
-    w = n(68437),
-    k = n(166444),
-    V = n(588224);
+    k = n(68437),
+    w = n(166444),
+    B = n(588224);
 n(281405);
-var B = n(652215),
+var V = n(652215),
     H = n(349828),
     F = n(985018),
     K = n(928409),
     W = n(822294);
 class Y extends P.Ay {
-    channelItemRef = s.createRef();
+    channelItemRef = l.createRef();
     state = {
         shouldShowGuildVerificationPopout: !1
     };
@@ -67,7 +66,7 @@ class Y extends P.Ay {
         let {
             channel: e
         } = this.props;
-        return (0, U.Pd)(e, G.A, R.A)
+        return (0, G.Pd)(e, U.A, R.A)
     }
     getModeClass() {
         let {
@@ -87,11 +86,11 @@ class Y extends P.Ay {
             locked: t,
             connected: n,
             unverifiedAccount: i,
-            isSuggestedSection: s
-        } = this.props, l = e.getGuildId();
-        null != l && (0, p.V)(l) && (0, g.Ze)(l), i && this.setState({
+            isSuggestedSection: l
+        } = this.props, s = e.getGuildId();
+        null != s && (0, p.V)(s) && (0, g.Ze)(s), i && this.setState({
             shouldShowGuildVerificationPopout: !0
-        }), t || n || e.isRoleSubscriptionTemplatePreviewChannel() || (0, I.av)(e), __OVERLAY__ || (0, C.iN)(e.id, s ? {
+        }), t || n || e.isRoleSubscriptionTemplatePreviewChannel() || (0, C.av)(e), __OVERLAY__ || (0, I.iN)(e.id, l ? {
             source: E.A.CHANNEL_LIST_SUGGESTED_SECTION
         } : void 0)
     };
@@ -101,22 +100,22 @@ class Y extends P.Ay {
             locked: t,
             isSuggestedSection: n
         } = this.props;
-        __OVERLAY__ || t || (0, C.iN)(e.id, n ? {
+        __OVERLAY__ || t || (0, I.iN)(e.id, n ? {
             source: E.A.CHANNEL_LIST_SUGGESTED_SECTION
         } : void 0)
     };
     handleContextMenu = e => {
         let {
             channel: t
-        } = this.props, s = R.A.getGuild(t.getGuildId());
-        null != s && (0, h.L3)(e, async () => {
+        } = this.props, l = R.A.getGuild(t.getGuildId());
+        null != l && (0, h.L3)(e, async () => {
             let {
                 default: e
             } = await Promise.all([n.e("97262"), n.e("57287"), n.e("40394"), n.e("30997")]).then(n.bind(n, 698193));
             return n => (0, i.jsx)(e, {
                 ...n,
                 channel: t,
-                guild: s
+                guild: l
             })
         })
     };
@@ -125,15 +124,15 @@ class Y extends P.Ay {
             channel: e,
             collapsed: t,
             tabIndex: n,
-            speakerVoiceStates: s,
-            numAudience: l
+            speakerVoiceStates: l,
+            numAudience: s
         } = this.props;
-        return (0, i.jsx)(V.A, {
+        return (0, i.jsx)(B.A, {
             channel: e,
-            voiceStates: s,
+            voiceStates: l,
             collapsed: t,
             tabIndex: n,
-            numAudience: l
+            numAudience: s
         })
     }
     renderPopout = () => {
@@ -192,22 +191,22 @@ class Y extends P.Ay {
             channel: e,
             selected: t,
             connected: n,
-            locked: s,
-            connectChannelDropTarget: l,
+            locked: l,
+            connectChannelDropTarget: s,
             connectChannelDragSource: r,
             connectUserDropTarget: o,
             connectDragPreview: u,
             canReorderChannel: h,
             canMoveMembers: A,
-            stageInstance: m,
+            stageInstance: _,
             isSubscriptionGated: g,
             needSubscriptionToAccess: p,
             unread: f,
             resolvedUnreadSetting: x,
             mentionCount: E,
-            isFavoriteSuggestion: C
+            isFavoriteSuggestion: I
         } = this.props, {
-            shouldShowGuildVerificationPopout: I
+            shouldShowGuildVerificationPopout: C
         } = this.state, N = (0, i.jsxs)("li", {
             className: a()(this.getModeClass(), {
                 [K.r9]: this.isDisabled()
@@ -219,22 +218,22 @@ class Y extends P.Ay {
                 renderPopout: this.renderPopout,
                 spacing: 17,
                 onRequestClose: this.closeGuildVerificationPopout,
-                shouldShow: I,
+                shouldShow: C,
                 children: () => (0, i.jsx)(c.m, {
                     text: this.getTooltipText(),
-                    children: (0, i.jsxs)(k.Ay, {
+                    children: (0, i.jsxs)(w.Ay, {
                         ref: this.channelItemRef,
                         className: K.Ki,
                         iconClassName: a()({
-                            [W.G]: null != m
+                            [W.G]: null != _
                         }),
                         channel: e,
-                        selected: !C && t,
+                        selected: !I && t,
                         connected: n,
                         unread: n ? f : void 0,
                         resolvedUnreadSetting: x,
                         mentionCount: E,
-                        locked: s,
+                        locked: l,
                         onClick: () => {
                             this.handleClick()
                         },
@@ -243,30 +242,30 @@ class Y extends P.Ay {
                         },
                         connectDragPreview: u,
                         subtitle: this.renderSubtitle(),
-                        isFavoriteSuggestion: C,
-                        "aria-label": (0, _.Ay)({
+                        isFavoriteSuggestion: I,
+                        "aria-label": (0, m.Ay)({
                             channel: e,
                             unread: f,
                             mentionCount: E,
                             isSubscriptionGated: g,
                             needSubscriptionToAccess: p
                         }),
-                        children: [C && this.renderAcceptSuggestionButton(), C && this.renderRemoveSuggestionButton(), !C && this.renderOpenChatButton(), !C && this.renderInviteButton(), !C && this.renderEditButton(), !C && this.renderChannelInfo()]
+                        children: [I && this.renderAcceptSuggestionButton(), I && this.renderRemoveSuggestionButton(), !I && this.renderOpenChatButton(), !I && this.renderInviteButton(), !I && this.renderEditButton(), !I && this.renderChannelInfo()]
                     })
                 })
             }), this.renderVoiceUsers()]
         });
-        return A && (N = o(N)), h && (N = l(r(N))), N
+        return A && (N = o(N)), h && (N = s(r(N))), N
     }
 }
-let z = (0, A.a)((0, m.F)(Y));
+let z = (0, A.a)((0, _.F)(Y));
 
 function q(e) {
     let {
         guild: t,
         channel: n,
-        disableSorting: s,
-        isFavoriteCategory: l,
+        disableSorting: l,
+        isFavoriteCategory: s,
         collapsed: a,
         voiceStates: o
     } = e, c = (0, r.cf)([M.Ay], () => ({
@@ -276,38 +275,38 @@ function q(e) {
         let e = j.A.getChannel(n.parent_id),
             i = O.A.getCheck(n.guild_id);
         return {
-            canManageChannel: null != t && L.A.can(B.xBc.MANAGE_CHANNELS, n),
-            canReorderChannel: !0 !== s && (t.id === H.Vc || (null != e ? L.A.can(B.xBc.MANAGE_CHANNELS, e) : L.A.can(B.xBc.MANAGE_CHANNELS, t))),
-            canMoveMembers: L.A.can(B.xBc.MOVE_MEMBERS, n),
-            locked: !L.A.can(B.xBc.CONNECT, n),
-            bypassLimit: L.A.can(B.xBc.MOVE_MEMBERS, n),
+            canManageChannel: null != t && L.A.can(V.xBc.MANAGE_CHANNELS, n),
+            canReorderChannel: !0 !== l && (t.id === H.Vc || (null != e ? L.A.can(V.xBc.MANAGE_CHANNELS, e) : L.A.can(V.xBc.MANAGE_CHANNELS, t))),
+            canMoveMembers: L.A.can(V.xBc.MOVE_MEMBERS, n),
+            locked: !L.A.can(V.xBc.CONNECT, n),
+            bypassLimit: L.A.can(V.xBc.MOVE_MEMBERS, n),
             unverifiedAccount: !i.canChat
         }
-    }), h = (0, r.bG)([y.A], () => y.A.isCollapsed(n.parent_id)), A = (0, v.Ay)(n.id), m = (0, r.bG)([b.A], () => b.A.getStageInstanceByChannel(n.id), [n.id]), _ = (0, N.zy)(n.id, S.ip.AUDIENCE), {
+    }), h = (0, r.bG)([v.A], () => v.A.isCollapsed(n.parent_id)), A = (0, y.Ay)(n.id), _ = (0, r.bG)([S.A], () => S.A.getStageInstanceByChannel(n.id), [n.id]), m = (0, N.zy)(n.id, T.ip.AUDIENCE), {
         isSubscriptionGated: g,
         needSubscriptionToAccess: p
-    } = (0, f.A)(n.id), x = (0, r.bG)([D.Ay], () => D.Ay.isFavorite(t.id, n.id)), E = (0, T.xn)(n.id), C = (0, w.A)({
+    } = (0, f.A)(n.id), x = (0, r.bG)([D.Ay], () => D.Ay.isFavorite(t.id, n.id)), E = (0, b.xn)(n.id), I = (0, k.A)({
         channel: n,
         isChannelSelected: !1,
         isChannelCollapsed: a,
         voiceStates: o,
         isSubscriptionGated: g,
         needSubscriptionToAccess: p,
-        enableConnectedUserLimit: E || n.userLimit > 0 && n.userLimit < B.RCc
-    }), I = e.connected && null == C;
+        enableConnectedUserLimit: E || n.userLimit > 0 && n.userLimit < V.RCc
+    }), C = e.connected && null == I;
     return (0, i.jsx)(z, {
         categoryCollapsed: h,
         connectAction: A,
-        numAudience: _,
-        stageInstance: m,
+        numAudience: m,
+        stageInstance: _,
         isSubscriptionGated: g,
         needSubscriptionToAccess: p,
         ...c,
         ...u,
         ...e,
-        isFavoriteSuggestion: l && !x,
-        forceShowButtons: I,
-        channelInfo: C,
+        isFavoriteSuggestion: s && !x,
+        forceShowButtons: C,
+        channelInfo: I,
         resolvedUnreadSetting: d
     })
 }

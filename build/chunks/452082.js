@@ -14,6 +14,6 @@ function d(e, t) {
         }),
         d = (0, s.L)(),
         o = (0, a.Y)(e),
-        c = (0, i.F)(e, l._j.INAPPROPRIATE_CONVERSATION_TIER_2);
-    if (n && d && 0 !== o.length && !o.some(e => e.type === l._j.INAPPROPRIATE_CONVERSATION_TIER_1 || e.type === l._j.INAPPROPRIATE_CONVERSATION_TIER_2 && null != e.dismiss_timestamp)) return c
+        u = (0, i.F)(e, l._j.INAPPROPRIATE_CONVERSATION_TIER_2);
+    if (n && d && 0 !== o.length && !o.some(e => e.type === l._j.INAPPROPRIATE_CONVERSATION_TIER_1 || e.type === l._j.INAPPROPRIATE_CONVERSATION_TIER_2 && null != e.dismiss_timestamp)) return u
 }

@@ -12,20 +12,20 @@ var i = n(627968),
     d = n(384231),
     u = n(9842),
     _ = n(734057),
-    m = n(661191),
-    A = n(141468),
+    A = n(661191),
+    m = n(141468),
     E = n(763754),
-    I = n(491182),
-    T = n(860227),
-    f = n(538355),
-    N = n(522871),
-    g = n(699352),
+    T = n(491182),
+    I = n(860227),
+    N = n(538355),
+    g = n(522871),
+    f = n(699352),
     C = n(715628),
     h = n(752636),
     p = n(675722),
-    x = n(268719),
-    R = n(234957),
-    S = n(652215),
+    S = n(268719),
+    x = n(234957),
+    R = n(652215),
     O = n(480972);
 let M = l.memo(function(e) {
     let {
@@ -35,61 +35,61 @@ let M = l.memo(function(e) {
         onContextMenu: a,
         onClick: M,
         hideSimpleEmbedContent: D = !0,
-        channel: P,
+        channel: L,
         isGroupStart: U,
-        animateAvatar: v,
-        subscribeToComponentDispatch: L,
+        animateAvatar: P,
+        subscribeToComponentDispatch: v,
         renderThreadAccessory: j,
-        trackAnnouncementViews: b = !1,
-        ...y
-    } = e, k = t.type === S.lAJ.POLL_RESULT || (e.disableInteraction ?? !1), G = t.isFirstMessageInForumPost(P), F = (0, d.S)((t.editedTimestamp ?? t.timestamp).valueOf()), {
-        content: B,
-        hasSpoilerEmbeds: H,
-        hasBailedAst: V
-    } = (0, f.A)(t, {
+        trackAnnouncementViews: y = !1,
+        ...k
+    } = e, b = t.type === R.lAJ.POLL_RESULT || (e.disableInteraction ?? !1), G = t.isFirstMessageInForumPost(L), H = (0, d.S)((t.editedTimestamp ?? t.timestamp).valueOf()), {
+        content: F,
+        hasSpoilerEmbeds: w,
+        hasBailedAst: B
+    } = (0, N.A)(t, {
         hideSimpleEmbedContent: D,
-        allowList: G || F,
-        allowHeading: G || F,
+        allowList: G || H,
+        allowHeading: G || H,
         allowLinks: !0,
         previewLinkTarget: !0
-    }), w = t.type === S.lAJ.REPLY ? t.messageReference : void 0, X = (0, o.bG)([u.A], () => u.A.getMessageByReference(w)), q = (0, s.rm)(t.id), K = (0, E.Ay)(t), z = (0, o.bG)([_.A], () => t.hasFlag(S.pr7.HAS_THREAD) && _.A.getChannel(m.default.castMessageIdAsChannelId(t.id))), Y = (0, c.$7)({
-        guildId: P.guild_id,
+    }), V = t.type === R.lAJ.REPLY ? t.messageReference : void 0, X = (0, o.bG)([u.A], () => u.A.getMessageByReference(V)), q = (0, s.rm)(t.id), K = (0, E.Ay)(t), Y = (0, o.bG)([_.A], () => t.hasFlag(R.pr7.HAS_THREAD) && _.A.getChannel(A.default.castMessageIdAsChannelId(t.id))), W = (0, c.$7)({
+        guildId: L.guild_id,
         roleId: K.iconRoleId
-    }), J = (0, N.A)({
+    }), J = (0, g.A)({
         message: t,
-        channel: P,
-        enabled: b
-    }), W = (0, T.fF)(t), Q = (0, T.ZD)(t);
-    return (0, i.jsx)(I.A, {
+        channel: L,
+        enabled: y
+    }), z = (0, I.fF)(t), Q = (0, I.ZD)(t);
+    return (0, i.jsx)(T.A, {
         compact: n,
         className: r()(l, {
-            [O.M1]: (0, A.ec)(t),
-            [O.XN]: k
+            [O.M1]: (0, m.ec)(t),
+            [O.XN]: b
         }),
-        disableInteraction: k,
-        childrenRepliedMessage: (0, R.A)(t, P, w, X, n),
-        childrenExecutedCommand: (0, x.A)(t, P, n),
+        disableInteraction: b,
+        childrenRepliedMessage: (0, x.A)(t, L, V, X, n),
+        childrenExecutedCommand: (0, S.A)(t, L, n),
         childrenHeader: (0, h.A)({
             ...e,
-            guildId: P.guild_id,
+            guildId: L.guild_id,
             author: K,
-            roleIcon: Y
+            roleIcon: W
         }),
-        childrenAccessories: e.hideAccessories ? void 0 : (0, g.J)(e, H, V),
-        childrenMessageContent: (0, C.A)(e, B),
+        childrenAccessories: e.hideAccessories ? void 0 : (0, f.J)(e, w, B),
+        childrenMessageContent: (0, C.A)(e, F),
         childrenSystemMessage: (0, p.A)({
             ...e,
-            disableInteraction: k
+            disableInteraction: b
         }),
         onContextMenu: a,
         onClick: M,
-        hasThread: j && null != z && t.hasFlag(S.pr7.HAS_THREAD),
-        hasReply: t.type === S.lAJ.REPLY,
-        "aria-labelledby": W,
+        hasThread: j && null != Y && t.hasFlag(R.pr7.HAS_THREAD),
+        hasReply: t.type === R.lAJ.REPLY,
+        "aria-labelledby": z,
         "aria-describedby": Q,
         messageRef: J,
         author: K,
         ...q,
-        ...y
+        ...k
     })
 })

@@ -1,12 +1,11 @@
 /** chunk id: 859894 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
     A: () => u
 });
 var i = n(627968);
 n(64700);
-var s = n(827734),
-    l = n(397927),
+var l = n(827734),
+    s = n(397927),
     a = n(267102),
     r = n(993838),
     o = n(418208),
@@ -22,13 +21,13 @@ function u(e) {
     return (0, o.zU)() ? null : (0, i.jsx)(c.A, {
         highlight: u ?? !1,
         className: t,
-        icon: (0, i.jsx)(l.qux, {
+        icon: (0, i.jsx)(s.qux, {
             size: "custom",
             color: "currentColor",
             height: 20,
             width: 20
         }),
-        color: s.A.unsafe_rawColors.GREEN_360.css,
+        color: l.A.unsafe_rawColors.GREEN_360.css,
         title: d.intl.string(d.t.OYbHfv),
         description: d.intl.string(d.t.yXwLMQ),
         onClick: function() {

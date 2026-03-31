@@ -1,12 +1,11 @@
 /** chunk id: 296216 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
     F: () => h,
     J: () => A
 });
 var i = n(205369),
-    s = n(22174),
-    l = n(686956),
+    l = n(22174),
+    s = n(686956),
     a = n(71393),
     r = n(576705),
     o = n(977997),
@@ -19,14 +18,14 @@ function h(e) {
         canDrop(e) {
             let {
                 channel: t
-            } = e, n = t.getGuildId(), i = a.A.getGuild(n)?.maxVideoChannelUsers ?? -1, s = c.Ay.countVoiceStatesForChannel(t.id), l = null != n && o.A.hasVideo(t.id) && i > 0 && s >= i + 1;
-            return r.A.can(d.xBc.MOVE_MEMBERS, t) && r.A.can(d.xBc.CONNECT, t) && !l
+            } = e, n = t.getGuildId(), i = a.A.getGuild(n)?.maxVideoChannelUsers ?? -1, l = c.Ay.countVoiceStatesForChannel(t.id), s = null != n && o.A.hasVideo(t.id) && i > 0 && l >= i + 1;
+            return r.A.can(d.xBc.MOVE_MEMBERS, t) && r.A.can(d.xBc.CONNECT, t) && !s
         },
         drop(e, t) {
             let {
                 channel: n
             } = e, i = o.A.getVoiceStateForUser(t.getItem().user.id);
-            i?.channelId !== n.id && l.A.setChannel(n.getGuildId(), t.getItem().user.id, n.id)
+            i?.channelId !== n.id && s.A.setChannel(n.getGuildId(), t.getItem().user.id, n.id)
         }
     }, (e, t) => ({
         connectUserDropTarget: e.dropTarget(),
@@ -35,7 +34,7 @@ function h(e) {
 }
 
 function A(e) {
-    return (0, s.I)(u, {
+    return (0, l.I)(u, {
         canDrag(e) {
             let {
                 user: t,

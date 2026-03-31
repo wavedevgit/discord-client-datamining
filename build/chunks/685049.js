@@ -4,8 +4,8 @@ n.d(t, {
     o: () => u
 });
 var i = n(627968),
-    l = n(409626),
-    a = n(692969),
+    a = n(409626),
+    l = n(692969),
     s = n(562153),
     r = n(415043),
     o = n(617086),
@@ -16,12 +16,12 @@ function u(e) {
     let {
         applicationId: t,
         ...n
-    } = e, l = (0, o.A)(t);
-    return l.length > 0 ? (0, i.jsx)(r.A, {
+    } = e, a = (0, o.A)(t);
+    return a.length > 0 ? (0, i.jsx)(r.A, {
         label: d.intl.formatToPlainString(d.t.ujhJdG, {
-            numFriends: l.length
+            numFriends: a.length
         }),
-        users: l,
+        users: a,
         maxUsers: 4,
         ...n
     }) : null
@@ -53,10 +53,10 @@ function g(e) {
             name3: g[2],
             numPeople: t.length - 3
         })),
-        j = (0, a.A)({
+        j = (0, l.A)({
             location: "SocialProofButton",
             applicationId: x,
-            source: l.Ob.UserProfile,
+            source: a.Ob.UserProfile,
             sourceUserId: m,
             trackEntryPointImpression: !0
         });

@@ -1,12 +1,11 @@
 /** chunk id: 836753 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
-    A: () => m
+    A: () => _
 });
 var i = n(627968);
 n(64700);
-var s = n(397927),
-    l = n(73153),
+var l = n(397927),
+    s = n(73153),
     a = n(272355),
     r = n(960736),
     o = n(954571),
@@ -16,16 +15,16 @@ var s = n(397927),
 let h = "INVITE_MODAL_KEY";
 class A extends a.A {
     _initialize() {
-        l.h.subscribe("INVITE_MODAL_OPEN", this.handleOpenModal), l.h.subscribe("INVITE_MODAL_CLOSE", this.handleCloseModal)
+        s.h.subscribe("INVITE_MODAL_OPEN", this.handleOpenModal), s.h.subscribe("INVITE_MODAL_CLOSE", this.handleCloseModal)
     }
     _terminate() {
-        (0, s.OoC)(h), l.h.unsubscribe("INVITE_MODAL_OPEN", this.handleOpenModal), l.h.unsubscribe("INVITE_MODAL_CLOSE", this.handleCloseModal)
+        (0, l.OoC)(h), s.h.unsubscribe("INVITE_MODAL_OPEN", this.handleOpenModal), s.h.unsubscribe("INVITE_MODAL_CLOSE", this.handleCloseModal)
     }
     handleOpenModal(e) {
         let {
             context: t
         } = e;
-        d.A.isOpen() && !(0, s.kBI)(h) && (0, s.mMO)(async () => {
+        d.A.isOpen() && !(0, l.kBI)(h) && (0, l.mMO)(async () => {
             let {
                 default: e
             } = await Promise.all([n.e("83155"), n.e("64252")]).then(n.bind(n, 563038));
@@ -34,7 +33,7 @@ class A extends a.A {
             })
         }, {
             modalKey: h,
-            contextKey: (0, s.TId)(t),
+            contextKey: (0, l.TId)(t),
             onCloseRequest: () => {
                 let e = (0, r.p9)(),
                     t = (0, r.xD)();
@@ -46,7 +45,7 @@ class A extends a.A {
         })
     }
     handleCloseModal() {
-        (0, s.OoC)(h)
+        (0, l.OoC)(h)
     }
 }
-let m = new A
+let _ = new A

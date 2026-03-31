@@ -1,6 +1,6 @@
 /** chunk id: 815332 params = (module,exports,require) **/
 n.d(t, {
-    A: () => _
+    A: () => g
 });
 var i = n(627968),
     s = n(64700),
@@ -13,17 +13,17 @@ var i = n(627968),
     u = n(322092),
     m = n(985018);
 
-function _(e) {
+function g(e) {
     let {
         groupListingId: t,
         subscription: n,
         className: l
     } = e, {
-        analyticsLocations: _
+        analyticsLocations: g
     } = (0, d.Ay)(o.A.PENDING_PLAN_CHANGE_NOTICE), {
-        resetRenewalMutation: g,
-        submitting: x,
-        error: A
+        resetRenewalMutation: _,
+        submitting: A,
+        error: x
     } = (e => {
         let [t, n] = s.useState(!1), [i, l] = s.useState(null);
         return {
@@ -40,7 +40,7 @@ function _(e) {
             submitting: t,
             error: i
         }
-    })(_), h = (0, c.cY)(t, {
+    })(g), h = (0, c.cY)(t, {
         includeSoftDeleted: !0
     }), {
         currentListing: p,
@@ -65,9 +65,9 @@ function _(e) {
             nextListing: T.name,
             changeDate: f
         }),
-        error: A?.message,
-        onClick: () => g(n),
-        submitting: x,
+        error: x?.message,
+        onClick: () => _(n),
+        submitting: A,
         ctaMessage: m.intl.string(m.t.De4wI8),
         className: l
     })

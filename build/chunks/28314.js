@@ -22,9 +22,9 @@ function E(t) {
         isRecurrenceItem: _
     } = t, {
         canManageGuildEvent: h
-    } = (0, a.nr)(A ?? E), T = (0, i.bG)([d.Ay], () => d.Ay.getGuildScheduledEvent(e)), f = h(T), m = (0, o.A)(), y = (0, s.A)(g, T?.id), v = (0, u.nh)(e, g);
-    if (!f || null == v || null == T) return null;
-    let p = null != T.recurrence_rule && !_,
+    } = (0, a.nr)(A ?? E), T = (0, i.bG)([d.Ay], () => d.Ay.getGuildScheduledEvent(e)), f = h(T), y = (0, o.A)(), v = (0, s.A)(g, T?.id), p = (0, u.nh)(e, g);
+    if (!f || null == p || null == T) return null;
+    let m = null != T.recurrence_rule && !_,
         N = t => {
             (null == g || t) && !_ ? (0, r.mMO)(async () => {
                 let {
@@ -35,7 +35,7 @@ function E(t) {
                     guildScheduledEventId: e,
                     guildId: E.id
                 })
-            }, m) : null != g && (0, r.mMO)(async () => {
+            }, y) : null != g && (0, r.mMO)(async () => {
                 let {
                     default: t
                 } = await n.e("43940").then(n.bind(n, 271983));
@@ -44,18 +44,18 @@ function E(t) {
                     guildEvent: T,
                     recurrenceId: g
                 })
-            }, m)
+            }, y)
         };
     return (0, l.jsx)(r.Drp, {
         id: c.intl.string(c.t.Rgy2dU),
         label: c.intl.string(c.t.Rgy2dU),
-        action: p ? void 0 : () => N(!0),
-        children: p && (0, l.jsxs)(l.Fragment, {
+        action: m ? void 0 : () => N(!0),
+        children: m && (0, l.jsxs)(l.Fragment, {
             children: [(0, l.jsx)(r.Drp, {
                 id: c.intl.string(c.t.wmVmXN),
                 label: c.intl.string(c.t.wmVmXN),
                 action: () => N(!1),
-                disabled: y?.is_canceled || v.startTime.getTime() < Date.now()
+                disabled: v?.is_canceled || p.startTime.getTime() < Date.now()
             }), (0, l.jsx)(r.Drp, {
                 id: c.intl.string(c.t.BW1Qoh),
                 label: c.intl.string(c.t.BW1Qoh),

@@ -18,20 +18,20 @@ function m(e) {
         labelHook: n,
         count: l,
         dismissNotice: m,
-        className: _,
-        noticeType: g
-    } = e, x = null != m;
+        className: g,
+        noticeType: _
+    } = e, A = null != m;
     s.useEffect(() => {
-        (0, o.N)(g, d.YX.VIEWED)
-    }, [g]);
-    let A = s.useCallback(() => {
-            null != m && (m(), (0, o.N)(g, d.YX.DISMISS))
-        }, [g, m]),
+        (0, o.N)(_, d.YX.VIEWED)
+    }, [_]);
+    let x = s.useCallback(() => {
+            null != m && (m(), (0, o.N)(_, d.YX.DISMISS))
+        }, [_, m]),
         h = s.useCallback(() => {
-            n(), (0, o.N)(g, d.YX.LEARN_MORE)
-        }, [g, n]);
+            n(), (0, o.N)(_, d.YX.LEARN_MORE)
+        }, [_, n]);
     return (0, i.jsxs)("div", {
-        className: a()(u.I, _),
+        className: a()(u.I, g),
         children: [(0, i.jsx)(r.mir, {
             size: "md"
         }), (0, i.jsx)(r.Text, {
@@ -49,9 +49,9 @@ function m(e) {
                     children: e
                 }, t)
             })
-        }), x && (0, i.jsx)(r.DUT, {
+        }), A && (0, i.jsx)(r.DUT, {
             className: u.b,
-            onClick: A,
+            onClick: x,
             children: (0, i.jsx)(r.PGe, {})
         })]
     })

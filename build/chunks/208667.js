@@ -1,11 +1,10 @@
 /** chunk id: 208667 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
     A: () => A
 });
 var i = n(627968),
-    s = n(64700),
-    l = n(110259),
+    l = n(64700),
+    s = n(110259),
     a = n(837381),
     r = n(397927),
     o = n(928039),
@@ -19,11 +18,11 @@ function A(e) {
         initialized: t,
         items: n,
         loading: A,
-        loadMore: m
-    } = e, _ = s.useRef(null), g = (0, o.A)("for-you", _);
+        loadMore: _
+    } = e, m = l.useRef(null), g = (0, o.A)("for-you", m);
     (0, c.A)({
-        type: l.ImpressionTypes.VIEW,
-        name: l.ImpressionNames.NOTIFICATION_CENTER_LANDING,
+        type: s.ImpressionTypes.VIEW,
+        name: s.ImpressionNames.NOTIFICATION_CENTER_LANDING,
         properties: {
             empty: 0 === n.length
         }
@@ -31,8 +30,8 @@ function A(e) {
         disableTrack: !t
     }, [t]);
     let p = () => {
-        let e = _.current?.getScrollerState();
-        null == e || e.scrollHeight - e.scrollTop - e.offsetHeight < 1500 && m()
+        let e = m.current?.getScrollerState();
+        null == e || e.scrollHeight - e.scrollTop - e.offsetHeight < 1500 && _()
     };
     return t ? 0 === n.length ? (0, i.jsx)(d.H, {}) : (0, i.jsx)(a.hD, {
         navigator: g,
@@ -40,14 +39,14 @@ function A(e) {
             children: e => {
                 let {
                     ref: t,
-                    ...s
+                    ...l
                 } = e;
                 return (0, i.jsxs)(r.T7Y, {
                     className: h.kL,
                     ref: e => {
-                        _.current = e, t.current = e?.getScrollerNode() ?? null
+                        m.current = e, t.current = e?.getScrollerNode() ?? null
                     },
-                    ...s,
+                    ...l,
                     onScroll: p,
                     children: [(0, i.jsx)(u.$, {
                         items: n

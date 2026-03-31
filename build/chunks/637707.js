@@ -1,5 +1,4 @@
 /** chunk id: 637707 params = (module,exports,require) **/
-"use strict";
 e.exports = {
     iE: "wrapper_fce7ca",
     VU: "withGradient_fce7ca",

@@ -1,6 +1,6 @@
 /** chunk id: 986533 params = (module,exports,require) **/
 n.d(t, {
-    A: () => I
+    A: () => T
 });
 var i = n(627968);
 n(64700);
@@ -13,22 +13,22 @@ var l = n(503698),
     d = n(809115),
     u = n(888675),
     _ = n(652215),
-    m = n(705751),
-    A = n(985018),
+    A = n(705751),
+    m = n(985018),
     E = n(240775);
 
-function I(e) {
+function T(e) {
     let {
         message: t,
         compact: n,
         usernameHook: l
-    } = e, I = (0, o.Ay)(t), T = l(I), {
-        avatarSrc: f,
+    } = e, T = (0, o.Ay)(t), I = l(T), {
+        avatarSrc: N,
         eventHandlers: {
-            onMouseEnter: N,
-            onMouseLeave: g
+            onMouseEnter: g,
+            onMouseLeave: f
         }
-    } = (0, d.a)(!0), C = "" !== t.content ? new Date(t.content).toLocaleString(A.intl.currentLocale, {
+    } = (0, d.a)(!0), C = "" !== t.content ? new Date(t.content).toLocaleString(m.intl.currentLocale, {
         hour: "numeric",
         minute: "2-digit",
         month: "2-digit",
@@ -36,14 +36,14 @@ function I(e) {
         year: "numeric"
     }) : "";
     return (0, i.jsx)("div", {
-        onMouseEnter: N,
-        onMouseLeave: g,
+        onMouseEnter: g,
+        onMouseLeave: f,
         children: (0, i.jsx)(u.A, {
             className: a()(E.rs, {
                 [E.oE]: n
             }),
             iconNode: n ? null : (0, i.jsx)(d.l, {
-                src: f
+                src: N
             }),
             iconContainerClassName: E.zc,
             compact: n,
@@ -64,9 +64,9 @@ function I(e) {
                             color: "text-brand",
                             tag: "span",
                             className: E.Xh,
-                            children: A.intl.string(A.t.hG1StD)
+                            children: m.intl.string(m.t.hG1StD)
                         }), (0, i.jsx)(s.A, {
-                            type: m.nu.SYSTEM_DM,
+                            type: A.nu.SYSTEM_DM,
                             className: E.Al
                         })]
                     }),
@@ -76,13 +76,13 @@ function I(e) {
                     className: a()(E.__invalid_messageContent, {
                         [E.oE]: n
                     }),
-                    children: t.type === _.lAJ.GUILD_INCIDENT_ALERT_MODE_ENABLED ? A.intl.format(A.t["+m8eD7"], {
-                        username: I.nick,
-                        usernameHook: T,
+                    children: t.type === _.lAJ.GUILD_INCIDENT_ALERT_MODE_ENABLED ? m.intl.format(m.t["+m8eD7"], {
+                        username: T.nick,
+                        usernameHook: I,
                         time: C
-                    }) : A.intl.format(A.t["BHeke+"], {
-                        username: I.nick,
-                        usernameHook: T
+                    }) : m.intl.format(m.t["BHeke+"], {
+                        username: T.nick,
+                        usernameHook: I
                     })
                 })]
             })

@@ -3,8 +3,8 @@ n.d(t, {
     A: () => r
 });
 var i = n(64700),
-    l = n(172218),
-    a = n(521741),
+    a = n(172218),
+    l = n(521741),
     s = n(633075);
 
 function r(e) {
@@ -13,11 +13,11 @@ function r(e) {
         onAction: n
     } = e, [r, o] = (0, i.useState)(!1), d = t instanceof s.R ? t.applicationId : null, {
         fetched: c
-    } = (0, a.U)(d), u = (0, i.useCallback)(e => {
+    } = (0, l.U)(d), u = (0, i.useCallback)(e => {
         e && (n({
             action: "VIEW_WIDGET",
             ...t.getProfileAnalyticsOptions()
         }), o(!0))
     }, [n, t]);
-    return (0, l.K)(u, void 0, !r && (null == d || c))
+    return (0, a.K)(u, void 0, !r && (null == d || c))
 }

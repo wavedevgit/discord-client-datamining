@@ -97,7 +97,7 @@ function c(e) {
                 ...d
             };
         t.includes(e) || delete i[e], o(n, u(t, i))
-    }, m = (e, t) => {
+    }, A = (e, t) => {
         o(n, u(c, {
             ...d,
             [e]: t
@@ -123,7 +123,7 @@ function c(e) {
                     onSelectionChange: _,
                     inputType: "checkbox",
                     textInputValue: d[t],
-                    onTextInputChange: m
+                    onTextInputChange: A
                 }, t)
             })
         })

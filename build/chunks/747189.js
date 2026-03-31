@@ -1,19 +1,19 @@
 /** chunk id: 747189 params = (module,exports,require) **/
 "use strict";
-i.d(t, {
-    V: () => _,
+n.d(t, {
+    V: () => p,
     t: () => h
 });
-var n = i(627968);
-i(64700);
-var s = i(397927),
-    a = i(684748),
-    l = i(532624),
-    r = i(350535),
-    o = i(572164),
-    d = i(652215),
-    c = i(672396),
-    u = i(985018);
+var i = n(627968);
+n(64700);
+var s = n(397927),
+    a = n(684748),
+    l = n(532624),
+    r = n(350535),
+    o = n(572164),
+    d = n(652215),
+    c = n(672396),
+    u = n(985018);
 
 function h() {
     let {
@@ -21,22 +21,22 @@ function h() {
         trackClick: t
     } = (0, a.Y)(c.KS.ClipsReminderNotification, {
         notif_type: c.KS.ClipsReminderNotification
-    }), i = l.Ay.getKeybindForAction(d.hCu.SAVE_CLIP), h = (0, o.TD)();
-    if (null == i || !h) return null;
-    let _ = r.dI(i.shortcut, !0);
+    }), n = l.Ay.getKeybindForAction(d.hCu.SAVE_CLIP), h = (0, o.TD)();
+    if (null == n || !h) return null;
+    let p = r.dI(n.shortcut, !0);
     return {
         title: u.intl.format(u.t.S5uhCN, {
-            keybind: _,
-            keybindHook: () => (0, n.jsx)("span", {
+            keybind: p,
+            keybindHook: () => (0, i.jsx)("span", {
                 style: {
                     display: "inline-block"
                 },
-                children: (0, n.jsx)(s.e7I, {
-                    shortcut: _
+                children: (0, i.jsx)(s.e7I, {
+                    shortcut: p
                 })
             })
         }),
-        icon: (0, n.jsx)(s.xgA, {
+        icon: (0, i.jsx)(s.xgA, {
             size: "xs",
             color: "currentColor"
         }),
@@ -49,16 +49,16 @@ function h() {
     }
 }
 
-function _(e) {
+function p(e) {
     let {
         trackView: t,
-        trackClick: i
+        trackClick: n
     } = (0, a.Y)(c.KS.ClipsNotification, {
         notif_type: c.KS.ClipsNotification
     });
     return {
         title: e,
-        icon: (0, n.jsx)(s.xgA, {
+        icon: (0, i.jsx)(s.xgA, {
             size: "xs",
             color: "currentColor"
         }),
@@ -66,7 +66,7 @@ function _(e) {
             t()
         },
         onDismissClick: () => {
-            i("dismiss")
+            n("dismiss")
         }
     }
 }

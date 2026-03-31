@@ -1,32 +1,32 @@
 /** chunk id: 102037 params = (module,exports,require) **/
 "use strict";
-i.d(t, {
-    A: () => _
+n.d(t, {
+    A: () => p
 });
-var n = i(627968);
-i(64700);
-var s = i(684013),
-    a = i(471024),
-    l = i(833551),
-    r = i(256415),
-    o = i(9302),
-    d = i(684748),
-    c = i(672396),
-    u = i(985018);
+var i = n(627968);
+n(64700);
+var s = n(684013),
+    a = n(471024),
+    l = n(833551),
+    r = n(256415),
+    o = n(9302),
+    d = n(684748),
+    c = n(672396),
+    u = n(985018);
 let h = e => (0, a.sI)(e, (0, d.J)(), u.t["z8/sgJ"]);
 
-function _(e) {
+function p(e) {
     var t;
     let {
         type: a
     } = e, {
-        icon: _,
-        title: p,
-        body: f,
-        hint: m,
+        icon: p,
+        title: f,
+        body: _,
+        hint: A,
         notifType: g
     } = (t = {
-        icon: i(513653),
+        icon: n(513653),
         title: u.intl.string(u.t.pkXAeG),
         body: null,
         hint: h,
@@ -38,17 +38,17 @@ function _(e) {
         hint: e.news?.hint ?? t.hint,
         notifType: null != e.news ? c.KS.NewsNudge : t.notifType
     } : t), {
-        trackView: A,
+        trackView: m,
         trackClick: x
     } = (0, d.Y)(g, {
         notif_type: g
     });
     return {
-        icon: _,
-        title: p,
-        body: f,
-        hint: m,
-        renderFooter: () => (0, n.jsx)("div", {
+        icon: p,
+        title: f,
+        body: _,
+        hint: A,
+        renderFooter: () => (0, i.jsx)("div", {
             style: {
                 textAlign: "center",
                 padding: 2
@@ -56,7 +56,7 @@ function _(e) {
             children: u.intl.string(u.t["9MyuT0"])
         }),
         onNotificationShow: () => {
-            A()
+            m()
         },
         onNotificationClick: (e, t) => {
             x("unlock"), a === c.Jr.NEWS && s.A.updateNotificationStatus(t), l.default.isOverlayOOPEnabledForPid((0, o.getPID)()) ? s.A.setInputLocked(!1, (0, o.getPID)()) : r.default.isInstanceLocked() && s.A.setInstanceLocked(!1)

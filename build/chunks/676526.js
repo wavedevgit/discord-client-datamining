@@ -3,9 +3,9 @@ n.d(t, {
     h: () => j
 });
 var i = n(627968),
-    l = n(64700),
-    a = n(503698),
-    s = n.n(a),
+    a = n(64700),
+    l = n(503698),
+    s = n.n(l),
     r = n(688807),
     o = n(152621),
     d = n(287809),
@@ -24,16 +24,16 @@ function I(e) {
     let {
         index: t,
         widgetType: n,
-        game: a,
+        game: l,
         coverImageUrl: s,
         gameName: r,
         children: o
     } = e, {
         manageFocusOnReorder: d
-    } = (0, g.r)(), m = l.useRef(null);
+    } = (0, g.r)(), m = a.useRef(null);
     return (0, i.jsx)(u.mG, {
         index: t,
-        itemId: a.applicationId,
+        itemId: l.applicationId,
         listType: n,
         itemType: "GAME_COVER",
         itemPreviewProps: {
@@ -45,7 +45,7 @@ function I(e) {
             positionNumber: t + 1
         }),
         onReorder: (e, t) => (0, c.Un)(n, e, t),
-        onEnd: () => d(a.applicationId),
+        onEnd: () => d(l.applicationId),
         className: A.kL,
         dropBeforeClassName: A.A,
         dropAfterClassName: A.Ze,
@@ -62,8 +62,8 @@ function j(e) {
     let {
         game: t,
         userId: n,
-        widgetType: l,
-        guildId: a,
+        widgetType: a,
+        guildId: l,
         channelId: c,
         disableInteraction: h = !1,
         index: j,
@@ -79,7 +79,7 @@ function j(e) {
         isDragging: O
     } = (0, r.V)(e => ({
         isDragging: e.isDragging()
-    })), L = () => (0, i.jsxs)(i.Fragment, {
+    })), w = () => (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(m.A, {
             imageSrc: E,
             gameName: b,
@@ -95,12 +95,12 @@ function j(e) {
         }), !h && (0, i.jsx)(p.d, {
             userId: n,
             applicationId: t.applicationId,
-            guildId: a,
+            guildId: l,
             channelId: c,
             className: A.Ez
         }), k && (0, i.jsx)(x.A, {
             game: t,
-            widgetType: l,
+            widgetType: a,
             className: A.vS,
             iconSize: "xs",
             onRemove: () => v?.(t.applicationId)
@@ -109,14 +109,14 @@ function j(e) {
     return N ? (0, i.jsx)("div", {
         className: _.mD
     }) : k ? (0, i.jsx)(I, {
-        widgetType: l,
+        widgetType: a,
         index: j ?? 0,
         game: t,
         coverImageUrl: E,
         gameName: b,
-        children: L()
+        children: w()
     }) : (0, i.jsx)("div", {
         className: A.kL,
-        children: L()
+        children: w()
     })
 }

@@ -1,12 +1,11 @@
 /** chunk id: 277009 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
     A: () => o
 });
 var i = n(627968);
 n(64700);
-var s = n(503698),
-    l = n.n(s),
+var l = n(503698),
+    s = n.n(l),
     a = n(397927),
     r = n(692720);
 
@@ -14,13 +13,13 @@ function o(e) {
     let {
         className: t,
         color: n,
-        ...s
+        ...l
     } = e;
     return (0, i.jsx)(a.Text, {
-        className: l()({
+        className: s()({
             [r.Q]: null == n
         }, t),
         color: n,
-        ...s
+        ...l
     })
 }

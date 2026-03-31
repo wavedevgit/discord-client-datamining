@@ -1,14 +1,13 @@
 /** chunk id: 757780 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
-    A: () => l
+    A: () => s
 });
 var i = n(265690);
-let s = {
+let l = {
         isSorting: !1
     },
-    l = (0, i.h)()((e, t) => ({
-        ...s,
+    s = (0, i.h)()((e, t) => ({
+        ...l,
         startSorting: () => e({
             isSorting: !0
         }),

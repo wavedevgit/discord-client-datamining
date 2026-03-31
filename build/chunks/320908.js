@@ -1,6 +1,6 @@
 /** chunk id: 320908 params = (module,exports,require) **/
 n.d(t, {
-    Ay: () => N
+    Ay: () => v
 });
 var i = n(627968),
     s = n(64700),
@@ -12,16 +12,16 @@ var i = n(627968),
     c = n(793574),
     u = n(688810),
     m = n(953143),
-    _ = n(560138),
-    g = n(40185),
-    x = n(526292),
-    A = n(89366),
+    g = n(560138),
+    _ = n(40185),
+    A = n(526292),
+    x = n(89366),
     h = n(194509),
     p = n(396375),
     T = n(224850),
     f = n(552554),
-    S = n(985018),
-    E = n(580373);
+    E = n(985018),
+    S = n(580373);
 let b = e => {
         let {
             inOfferExperience: t,
@@ -33,42 +33,42 @@ let b = e => {
             isEligibleForBogoPromotion: c
         } = e, u = c ? (0, i.jsx)(p.A, {
             color: d ? o.XD.BRAND_INVERTED : void 0,
-            className: a()(E.x6, E.Ph, l, {
-                [E.Sq]: t && r,
-                [E.MF]: r && !d
+            className: a()(S.x6, S.Ph, l, {
+                [S.Sq]: t && r,
+                [S.MF]: r && !d
             }),
-            shinyButtonClassName: d ? void 0 : E.PJ,
+            shinyButtonClassName: d ? void 0 : S.PJ,
             subscriptionTier: n,
             hasActivePromotion: !0
         }) : (0, i.jsx)(p.A, {
             color: d || !r ? o.XD.BRAND_INVERTED : void 0,
-            className: a()(E.x6, E.Ph, l, {
-                [E.Sq]: t && r,
-                [E.MF]: r && !d
+            className: a()(S.x6, S.Ph, l, {
+                [S.Sq]: t && r,
+                [S.MF]: r && !d
             }),
             subscriptionTier: n
         }), m = t && r ? null : (0, i.jsx)(h.A, {
-            className: a()(E.x6, l),
+            className: a()(S.x6, l),
             color: r ? void 0 : o.XD.WHITE
         });
         return (0, i.jsxs)("div", {
-            className: a()(E.UD, s),
+            className: a()(S.UD, s),
             children: [u, " ", m]
         })
     },
     C = () => (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(m.p, {
-            className: E.zd
+            className: S.zd
         }), (0, i.jsx)(m.p, {
-            className: E.G
+            className: S.G
         }), (0, i.jsx)(m.p, {
-            className: E.zy
+            className: S.zy
         }), (0, i.jsx)(m.p, {
-            className: E.GX
+            className: S.GX
         })]
     });
 
-function v(e) {
+function N(e) {
     let {
         variant: t = "text-lg/normal",
         withBottomMargin: n = !0,
@@ -77,16 +77,16 @@ function v(e) {
     return (0, i.jsx)(d.Text, {
         variant: t,
         color: s ? "text-subtle" : "always-white",
-        className: a()(E.h_, {
-            [E.If]: n,
-            [E.jn]: s
+        className: a()(S.h_, {
+            [S.If]: n,
+            [S.jn]: s
         }),
-        children: S.intl.format(S.t.kt9wxs, {
+        children: E.intl.format(E.t.kt9wxs, {
             cheapestMonthlyPrice: l
         })
     })
 }
-let N = s.forwardRef((e, t) => {
+let v = s.forwardRef((e, t) => {
     let {
         className: n,
         buttonClassName: s,
@@ -94,44 +94,44 @@ let N = s.forwardRef((e, t) => {
         isDarkMode: m
     } = e, {
         analyticsLocations: p
-    } = (0, u.Ay)(c.A.PREMIUM_MARKETING_HERO_CTA), f = (0, A.QQ)(), N = (0, x.ar)(), I = (0, g.cg)(), j = (0, r.bG)([_.A], () => _.A.affinities).length > 0, y = S.intl.string(S.t.YCZldK);
+    } = (0, u.Ay)(c.A.PREMIUM_MARKETING_HERO_CTA), f = (0, x.QQ)(), v = (0, A.ar)(), I = (0, _.cg)(), j = (0, r.bG)([g.A], () => g.A.affinities).length > 0, y = E.intl.string(E.t.YCZldK);
     return (0, i.jsx)(u.f5, {
         value: p,
         children: (0, i.jsxs)("div", {
             ref: t,
-            className: a()(E.kL, n, {
-                [E.V1]: !N,
-                [E.Q4]: !N && j
+            className: a()(S.kL, n, {
+                [S.V1]: !v,
+                [S.Q4]: !v && j
             }),
             "data-testid": "v2-marketing-page-hero-header",
             children: [(0, i.jsxs)("div", {
-                className: N ? E.I6 : E.G1,
+                className: v ? S.I6 : S.G1,
                 children: [(0, i.jsx)(d.Heading, {
-                    variant: N ? "display-lg" : "display-md",
+                    variant: v ? "display-lg" : "display-md",
                     color: "always-white",
                     children: y
                 }), j ? (0, i.jsx)("div", {
-                    className: E.DF,
+                    className: S.DF,
                     children: (0, i.jsx)(T.A, {
                         textColor: "always-white",
-                        smallerText: !N
+                        smallerText: !v
                     })
-                }) : (0, i.jsx)(v, {}), I || f ? (0, i.jsx)("div", {
-                    className: E.UD,
+                }) : (0, i.jsx)(N, {}), I || f ? (0, i.jsx)("div", {
+                    className: S.UD,
                     children: (0, i.jsx)(h.A, {
-                        className: a()(E.x6, s),
+                        className: a()(S.x6, s),
                         color: o.XD.WHITE
                     })
                 }) : (0, i.jsx)(b, {
                     subscriptionTier: l,
-                    inOfferExperience: N,
+                    inOfferExperience: v,
                     buttonClassName: s,
                     isDarkMode: m
-                }), j && (0, i.jsx)(v, {
+                }), j && (0, i.jsx)(N, {
                     variant: "text-md/normal",
                     withBottomMargin: !1
                 })]
-            }), !N && (0, i.jsx)(C, {})]
+            }), !v && (0, i.jsx)(C, {})]
         })
     })
 })

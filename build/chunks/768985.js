@@ -12,10 +12,10 @@ var i = n(64700),
     c = n(287809),
     u = n(954571),
     m = n(695515),
-    _ = n(809697),
-    g = n(500470),
-    x = n(33666),
-    A = n(834981),
+    g = n(809697),
+    _ = n(500470),
+    A = n(33666),
+    x = n(834981),
     h = n(191627),
     p = n(652215),
     T = n(204925);
@@ -24,30 +24,30 @@ function f(e) {
     let {
         location: t,
         onMountEffect: n
-    } = e, f = (0, x.A)(), S = (0, A.W1)(), {
-        familyCenterInitialized: E,
+    } = e, f = (0, A.A)(), E = (0, x.W1)(), {
+        familyCenterInitialized: S,
         isLoading: b
     } = (0, l.cf)([m.A], () => ({
         familyCenterInitialized: m.A.getIsInitialized(),
         isLoading: m.A.isLoading()
-    })), C = (0, g.k)(), {
-        selectedTab: v,
-        handleTabChange: N
-    } = (0, _.A)(), I = c.default.getCurrentUser(), j = null != f, y = E && null != I && !j;
+    })), C = (0, _.k)(), {
+        selectedTab: N,
+        handleTabChange: v
+    } = (0, g.A)(), I = c.default.getCurrentUser(), j = null != f, y = S && null != I && !j;
     (0, a.Ay)(() => {
         (0, d.d)("family-center"), null != n && n()
     });
     let O = {
             isConsideredAdult: "adult" === f,
-            numOfAcceptedRequests: S,
-            selectedTab: v,
+            numOfAcceptedRequests: E,
+            selectedTab: N,
             selectedTeenId: C
         },
         R = i.useRef(O);
     return i.useEffect(() => {
         R.current = O
     }), i.useEffect(() => {
-        if (E && j) {
+        if (S && j) {
             let {
                 isConsideredAdult: e,
                 numOfAcceptedRequests: n,
@@ -64,12 +64,12 @@ function f(e) {
                 name: s.K.FAMILY_CENTER_VIEW
             })
         }
-    }, [E, j, t]), i.useEffect(() => {
+    }, [S, j, t]), i.useEffect(() => {
         y && (0, r.yO)(T.w_.FAMILY_CENTER)
     }, [y]), {
         isLoading: b,
-        selectedTab: v,
-        handleTabChange: N,
+        selectedTab: N,
+        handleTabChange: v,
         showAgeGateModal: y
     }
 }

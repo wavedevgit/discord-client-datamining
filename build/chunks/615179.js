@@ -1,8 +1,8 @@
 /** chunk id: 615179 params = (module,exports,require) **/
 n.d(t, {
-    QN: () => I,
+    QN: () => T,
     Z_: () => E,
-    ez: () => T
+    ez: () => I
 });
 var i = n(627968),
     l = n(64700),
@@ -14,23 +14,23 @@ var i = n(627968),
     d = n(696451),
     u = n(287809),
     _ = n(654265),
-    m = n(985018);
-let A = (e, t) => {
+    A = n(985018);
+let m = (e, t) => {
     let {
         joinRequest: n,
         joinRequestGuild: i
-    } = (0, _.A)(t.id), s = (0, a.bG)([u.default], () => u.default.getUser(n?.userId)), m = (0, r.P)({
+    } = (0, _.A)(t.id), s = (0, a.bG)([u.default], () => u.default.getUser(n?.userId)), A = (0, r.P)({
         user: s,
         channelId: t.id,
         guildId: t.guild_id,
         messageId: e.id
-    }), A = (0, a.bG)([d.Ay, c.default], () => d.Ay.isMember(i?.id, c.default.getId())), E = l.useCallback(() => {
-        A && null != i && (0, o.uh)(i.id)
-    }, [i, A]);
+    }), m = (0, a.bG)([d.Ay, c.default], () => d.Ay.isMember(i?.id, c.default.getId())), E = l.useCallback(() => {
+        m && null != i && (0, o.uh)(i.id)
+    }, [i, m]);
     return {
         guild: i,
         joinRequest: n,
-        usernameHook: m,
+        usernameHook: A,
         guildNameClick: E
     }
 };
@@ -45,41 +45,17 @@ function E(e) {
         joinRequest: o,
         usernameHook: c,
         guildNameClick: d
-    } = A(t, l), u = o?.user?.username, _ = r?.name;
+    } = m(t, l), u = o?.user?.username, _ = r?.name;
     return (0, i.jsx)(s.A, {
         icon: n(617184),
         timestamp: t.timestamp,
         compact: a,
-        children: null != u && null != _ ? m.intl.format(m.t["21R6Ch"], {
+        children: null != u && null != _ ? A.intl.format(A.t["21R6Ch"], {
             username: u,
             usernameHook: c(),
             guildName: _,
             guildNameClick: d
-        }) : m.intl.string(m.t["2VLV0d"])
-    })
-}
-
-function I(e) {
-    let {
-        message: t,
-        channel: l,
-        compact: a
-    } = e, {
-        guild: r,
-        joinRequest: o,
-        usernameHook: c,
-        guildNameClick: d
-    } = A(t, l), u = o?.user?.username, _ = r?.name;
-    return (0, i.jsx)(s.A, {
-        icon: n(884797),
-        timestamp: t.timestamp,
-        compact: a,
-        children: null != u && null != _ ? m.intl.format(m.t["Bz/QC2"], {
-            username: u,
-            usernameHook: c(),
-            guildName: _,
-            guildNameClick: d
-        }) : m.intl.string(m.t.FVF6qU)
+        }) : A.intl.string(A.t["2VLV0d"])
     })
 }
 
@@ -93,16 +69,40 @@ function T(e) {
         joinRequest: o,
         usernameHook: c,
         guildNameClick: d
-    } = A(t, l), u = o?.user?.username, _ = r?.name;
+    } = m(t, l), u = o?.user?.username, _ = r?.name;
     return (0, i.jsx)(s.A, {
         icon: n(884797),
         timestamp: t.timestamp,
         compact: a,
-        children: null != u && null != _ ? m.intl.format(m.t.Kpkesg, {
+        children: null != u && null != _ ? A.intl.format(A.t["Bz/QC2"], {
             username: u,
             usernameHook: c(),
             guildName: _,
             guildNameClick: d
-        }) : m.intl.string(m.t.BMlbE7)
+        }) : A.intl.string(A.t.FVF6qU)
+    })
+}
+
+function I(e) {
+    let {
+        message: t,
+        channel: l,
+        compact: a
+    } = e, {
+        guild: r,
+        joinRequest: o,
+        usernameHook: c,
+        guildNameClick: d
+    } = m(t, l), u = o?.user?.username, _ = r?.name;
+    return (0, i.jsx)(s.A, {
+        icon: n(884797),
+        timestamp: t.timestamp,
+        compact: a,
+        children: null != u && null != _ ? A.intl.format(A.t.Kpkesg, {
+            username: u,
+            usernameHook: c(),
+            guildName: _,
+            guildNameClick: d
+        }) : A.intl.string(A.t.BMlbE7)
     })
 }

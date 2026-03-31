@@ -1,12 +1,11 @@
 /** chunk id: 118277 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
     A: () => A
 });
 var i = n(627968),
-    s = n(64700),
-    l = n(503698),
-    a = n.n(l),
+    l = n(64700),
+    s = n(503698),
+    a = n.n(s),
     r = n(317097),
     o = n(397927),
     c = n(573435),
@@ -26,9 +25,9 @@ function A(e) {
     let {
         title: t,
         className: n,
-        icon: l
-    } = e, [r, u] = s.useState(h(t));
-    return s.useEffect(() => {
+        icon: s
+    } = e, [r, u] = l.useState(h(t));
+    return l.useEffect(() => {
         u(h(t))
     }, [t]), (0, i.jsxs)("div", {
         className: a()(d.iE, n),
@@ -36,7 +35,7 @@ function A(e) {
             mask: c.Ay.Masks.STATUS_SCREENSHARE,
             width: 32,
             height: 32,
-            children: null == l || 0 === l.length ? (0, i.jsx)("div", {
+            children: null == s || 0 === s.length ? (0, i.jsx)("div", {
                 className: d.Kk,
                 style: {
                     backgroundColor: r
@@ -44,7 +43,7 @@ function A(e) {
                 children: t[0] ?? "?"
             }) : (0, i.jsx)("img", {
                 alt: "",
-                src: l,
+                src: s,
                 className: d.Kk
             })
         }), (0, i.jsx)(o.npA, {

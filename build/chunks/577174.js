@@ -1,6 +1,6 @@
 /** chunk id: 577174 params = (module,exports,require) **/
 n.d(t, {
-    A: () => A
+    A: () => x
 });
 var i = n(627968),
     s = n(64700),
@@ -12,50 +12,50 @@ var i = n(627968),
     c = n(65470),
     u = n(400669),
     m = n(736455),
-    _ = n(876587),
-    g = n(985018),
-    x = n(320519);
-let A = e => {
+    g = n(876587),
+    _ = n(985018),
+    A = n(320519);
+let x = e => {
     let {
         navBarSections: t,
         activeSectionId: n
-    } = e, A = {
-        [m.k.HOME]: g.intl.string(g.t.uGRXjS),
-        [m.k.WHATS_NEW]: g.intl.string(g.t["mfcR/v"]),
-        [m.k.BEST_OF_NITRO]: g.intl.string(g.t.xQKkE8),
-        [m.k.PLANS]: g.intl.string(g.t.wyNMnm),
-        [m.k.COMPARE]: g.intl.string(g.t.pwD7If)
+    } = e, x = {
+        [m.k.HOME]: _.intl.string(_.t.uGRXjS),
+        [m.k.WHATS_NEW]: _.intl.string(_.t["mfcR/v"]),
+        [m.k.BEST_OF_NITRO]: _.intl.string(_.t.xQKkE8),
+        [m.k.PLANS]: _.intl.string(_.t.wyNMnm),
+        [m.k.COMPARE]: _.intl.string(_.t.pwD7If)
     }, h = (0, l.bG)([d.default], () => d.default.getCurrentUser()), p = (0, o.Gh)("premium_marketing_nav_bar") && null != h, T = s.useRef(null), f = Object.values(t).sort((e, t) => e.order - t.order);
     return (0, i.jsxs)(r.A, {
-        className: x.TQ,
+        className: A.TQ,
         transparent: !0,
         children: [(0, i.jsxs)("div", {
-            className: x.Wc,
+            className: A.Wc,
             children: [(0, i.jsxs)("div", {
-                className: x.wG,
+                className: A.wG,
                 children: [(0, i.jsx)(a.tvc, {
-                    className: x.nE,
-                    colorClass: x.oG
+                    className: A.nE,
+                    colorClass: A.oG
                 }), (0, i.jsx)("div", {
-                    className: x.zc,
+                    className: A.zc,
                     children: f.map(e => {
                         let t = n === e.id,
-                            s = A[e.id];
+                            s = x[e.id];
                         return (0, i.jsxs)(a.DUT, {
-                            className: x.S0,
+                            className: A.S0,
                             onClick: e.scrollToSection,
                             children: [(0, i.jsx)(a.Text, {
                                 variant: "text-sm/medium",
                                 color: "text-strong",
                                 children: s
                             }), t && (0, i.jsx)("div", {
-                                className: x.W0
+                                className: A.W0
                             })]
                         }, s)
                     })
                 })]
             }), (0, i.jsxs)("div", {
-                className: x.MQ,
+                className: A.MQ,
                 children: [p && (0, i.jsx)(u.l, {
                     ref: T,
                     size: "sm"
@@ -64,7 +64,7 @@ let A = e => {
                     variant: "overlay-secondary"
                 })]
             })]
-        }), p && (0, i.jsx)(_.O, {
+        }), p && (0, i.jsx)(g.O, {
             targetElementRef: T
         })]
     })

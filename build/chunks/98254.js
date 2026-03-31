@@ -23,33 +23,33 @@ function c(e) {
         useSubtitle: c,
         useValue: u,
         setValue: m,
-        useOptions: _,
-        clearable: g,
-        closeOnSelect: x,
-        wrapTags: A,
+        useOptions: g,
+        clearable: _,
+        closeOnSelect: A,
+        wrapTags: x,
         selectionMode: h,
         usePersistentBadge: p,
         getDismissibleBadges: T
-    } = t, f = n(), S = c?.(), E = u(), b = _(), C = p?.(), v = T?.(), N = (0, a.A)({
+    } = t, f = n(), E = c?.(), S = u(), b = g(), C = p?.(), N = T?.(), v = (0, a.A)({
         persistentBadge: C,
-        dismissibleBadges: v
+        dismissibleBadges: N
     }), I = (0, r.q)(t), j = s.useMemo(() => ({
         selectionMode: h,
-        value: E,
+        value: S,
         onSelectionChange: d(m, I)
-    }), [h, E, m, I]);
+    }), [h, S, m, I]);
     return (0, i.jsx)(o.L, {
         children: (0, i.jsx)(l.l6P, {
             ...j,
             label: f,
-            description: S,
+            description: E,
             options: b,
-            wrapTags: A,
-            closeOnSelect: x,
-            clearable: g,
+            wrapTags: x,
+            closeOnSelect: A,
+            clearable: _,
             layout: "horizontal-responsive",
             fullWidth: !0,
-            badge: N
+            badge: v
         })
     })
 }

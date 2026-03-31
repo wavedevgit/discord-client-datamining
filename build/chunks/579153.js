@@ -1,11 +1,10 @@
 /** chunk id: 579153 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
-    A: () => m
+    A: () => _
 });
 var i = n(627968),
-    s = n(64700),
-    l = n(397927),
+    l = n(64700),
+    s = n(397927),
     a = n(688810),
     r = n(592982),
     o = n(384059),
@@ -14,25 +13,25 @@ var i = n(627968),
     u = n(709562),
     h = n(806931),
     A = n(985018);
-let m = e => {
+let _ = e => {
     let {
         channel: t,
         remoteMode: n = !1
     } = e, {
-        parentAnalyticsLocation: m
-    } = (0, a.Ay)(), _ = s.useRef(null);
-    return (0, i.jsx)(l.YNO, {
-        targetElementRef: _,
+        parentAnalyticsLocation: _
+    } = (0, a.Ay)(), m = l.useRef(null);
+    return (0, i.jsx)(s.YNO, {
+        targetElementRef: m,
         renderPopout: e => {
             let {
-                closePopout: s
+                closePopout: l
             } = e;
             return (0, i.jsx)(d.A, {
                 children: (0, i.jsx)(r.A, {
-                    onClose: s,
+                    onClose: l,
                     channel: t,
                     remoteMode: n,
-                    onInteraction: (0, c.s)("MoreSettingsMenu", m, {
+                    onInteraction: (0, c.s)("MoreSettingsMenu", _, {
                         entrypoint: h.GK.THREE_DOT
                     })
                 })
@@ -40,24 +39,24 @@ let m = e => {
         },
         align: "right",
         position: "top",
-        animation: l.YNO.Animation.FADE,
+        animation: s.YNO.Animation.FADE,
         spacing: 16,
         children: (e, t) => {
             let {
                 onClick: n
             } = e, {
-                isShown: s
+                isShown: l
             } = t;
             return (0, i.jsx)(u.l, {
-                ref: _,
+                ref: m,
                 isTrayButton: !0,
                 onClick: e => {
-                    (0, o.X)(m, o.O.MORE), n(e)
+                    (0, o.X)(_, o.O.MORE), n(e)
                 },
                 label: A.intl.string(A.t.PdRCRg),
-                iconComponent: l.jNK,
+                iconComponent: s.jNK,
                 color: "primaryDark",
-                isActive: s
+                isActive: l
             })
         }
     })

@@ -1,6 +1,6 @@
 /** chunk id: 230084 params = (module,exports,require) **/
 n.d(t, {
-    A: () => A
+    A: () => x
 });
 var i = n(627968),
     s = n(64700),
@@ -12,59 +12,59 @@ var i = n(627968),
     c = n(385612),
     u = n(128450),
     m = n(339984),
-    _ = n(985018),
-    g = n(383309);
-let x = [{
+    g = n(985018),
+    _ = n(383309);
+let A = [{
     name: "gif",
     extensions: ["gif"]
 }];
 
-function A(e) {
+function x(e) {
     let {
         showRemoveAvatarButton: t,
         errors: n,
         onAvatarChange: l,
-        sectionTitle: A,
+        sectionTitle: x,
         changeAvatarButtonText: h,
         guildId: p,
         className: T,
         disabled: f = !1,
-        isTryItOut: S = !1,
-        forcedDivider: E,
+        isTryItOut: E = !1,
+        forcedDivider: S,
         withHighlight: b = !1
     } = e, {
         newestAnalyticsLocation: C
-    } = (0, d.Ay)(), v = b ? o.wLn : r.$n, N = s.useCallback(() => {
+    } = (0, d.Ay)(), N = b ? o.wLn : r.$n, v = s.useCallback(() => {
         (0, c.XD)({
             uploadType: m.HL.AVATAR,
             analyticsSource: C,
-            filters: S ? x : void 0,
+            filters: E ? A : void 0,
             guildId: p,
-            isTryItOut: S
+            isTryItOut: E
         })
-    }, [p, C, S]);
+    }, [p, C, E]);
     return (0, i.jsx)(u.A, {
         className: T,
-        title: A,
+        title: x,
         errors: n,
         disabled: f,
-        forcedDivider: E,
+        forcedDivider: S,
         children: (0, i.jsxs)("div", {
-            className: g.NC,
-            children: [(0, i.jsx)(v, {
+            className: _.NC,
+            children: [(0, i.jsx)(N, {
                 className: a()({
-                    [g.yj]: b
+                    [_.yj]: b
                 }),
                 size: r.$n.Sizes.SMALL,
-                onClick: N,
-                children: h ?? _.intl.string(_.t["4OynCD"])
+                onClick: v,
+                children: h ?? g.intl.string(g.t["4OynCD"])
             }), t && (0, i.jsx)("div", {
                 "data-button-hoisted-classname-wrapper": !0,
-                className: g.DT,
+                className: _.DT,
                 children: (0, i.jsx)(o.Button, {
                     variant: "secondary",
                     size: "sm",
-                    text: null != p ? _.intl.string(_.t.TDjKDm) : _.intl.string(_.t.twB3fz),
+                    text: null != p ? g.intl.string(g.t.TDjKDm) : g.intl.string(g.t.twB3fz),
                     onClick: () => l(null)
                 })
             })]

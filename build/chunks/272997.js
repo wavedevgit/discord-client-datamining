@@ -1,11 +1,10 @@
 /** chunk id: 272997 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
     k: () => A
 });
 var i = n(627968),
-    s = n(64700),
-    l = n(311907),
+    l = n(64700),
+    s = n(311907),
     a = n(627363),
     r = n(769015),
     o = n(25528),
@@ -18,14 +17,14 @@ function A(e) {
     let {
         guildId: t,
         onSetActivityStatus: n
-    } = e, A = (0, l.bG)([c.default], () => c.default.getId()), m = (0, o.Ay)(A, t)[0], _ = (0, a.YY)(m?.application_id).data ?? void 0, g = s.useCallback(() => {
-        null != _ && ((0, d.xA)(_.id, !0), n())
-    }, [_, n]);
-    return null == _ ? null : (0, i.jsxs)(i.Fragment, {
+    } = e, A = (0, s.bG)([c.default], () => c.default.getId()), _ = (0, o.Ay)(A, t)[0], m = (0, a.YY)(_?.application_id).data ?? void 0, g = l.useCallback(() => {
+        null != m && ((0, d.xA)(m.id, !0), n())
+    }, [m, n]);
+    return null == m ? null : (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(u.u, {
-            label: _.name,
+            label: m.name,
             icon: (0, i.jsx)(r.A, {
-                game: _,
+                game: m,
                 className: h.K
             }),
             setStatus: g

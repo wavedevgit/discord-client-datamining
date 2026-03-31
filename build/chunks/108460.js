@@ -1,12 +1,11 @@
 /** chunk id: 108460 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
     A: () => h
 });
 var i = n(627968),
-    s = n(64700),
-    l = n(503698),
-    a = n.n(l),
+    l = n(64700),
+    s = n(503698),
+    a = n.n(s),
     r = n(835245),
     o = n(397927),
     c = n(315502),
@@ -16,9 +15,9 @@ function u(e) {
     let {
         width: t = 24,
         height: n = 24,
-        isBadged: l = !1,
+        isBadged: s = !1,
         isTyping: a = !1
-    } = e, [c] = s.useState(() => (0, r.A)());
+    } = e, [c] = l.useState(() => (0, r.A)());
     return (0, i.jsxs)("svg", {
         width: t,
         height: n,
@@ -38,7 +37,7 @@ function u(e) {
                         spacing: 3,
                         fill: "black"
                     })
-                }), l && (0, i.jsx)("circle", {
+                }), s && (0, i.jsx)("circle", {
                     cx: "20",
                     cy: "19",
                     r: "10",
@@ -61,15 +60,15 @@ function h(e) {
     let {
         className: t,
         unreadCount: n,
-        mentionCount: s,
-        isTyping: l,
+        mentionCount: l,
+        isTyping: s,
         canBadge: r
-    } = e, o = null != s && s > 0, h = (o ? s : n) ?? 0, A = r && null != n && n > 0;
+    } = e, o = null != l && l > 0, h = (o ? l : n) ?? 0, A = r && null != n && n > 0;
     return (0, i.jsxs)("div", {
         className: a()(d.Or, t),
         children: [(0, i.jsx)(u, {
             isBadged: A,
-            isTyping: l
+            isTyping: s
         }), A && (0, i.jsx)(c.A, {
             hasMentions: o,
             truncatedCount: h > 99 ? "99+" : h,

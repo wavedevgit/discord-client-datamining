@@ -12,10 +12,10 @@ var i = n(627968),
     c = n(84540),
     u = n(954571),
     m = n(927578),
-    _ = n(919395),
-    g = n(128450),
-    x = n(652215),
-    A = n(49999),
+    g = n(919395),
+    _ = n(128450),
+    A = n(652215),
+    x = n(49999),
     h = n(985018),
     p = n(927961),
     T = n(698551);
@@ -25,37 +25,37 @@ function f(e) {
         user: t,
         guildId: n,
         className: f
-    } = e, S = m.Ay.canUsePremiumProfileCustomization(t), {
-        analyticsLocations: E
+    } = e, E = m.Ay.canUsePremiumProfileCustomization(t), {
+        analyticsLocations: S
     } = (0, r.Ay)(), {
         userDisplayNameStyles: b,
         guildDisplayNameStyles: C,
-        pendingDisplayNameStyles: v,
-        pendingErrors: N
-    } = (0, _.B0)(t, n), [I, j] = (0, o.kn)([l.M.DISPLAY_NAME_STYLES_NEW_BADGE_PROFILE_PAGE]), y = I === l.M.DISPLAY_NAME_STYLES_NEW_BADGE_PROFILE_PAGE, O = (0, s.useCallback)(() => {
-        j(A.i.TAKE_ACTION), u.default.track(x.HAw.DISPLAY_NAME_STYLES_FROM_SETTINGS), (0, d.L)({
-            analyticsLocations: E,
+        pendingDisplayNameStyles: N,
+        pendingErrors: v
+    } = (0, g.B0)(t, n), [I, j] = (0, o.kn)([l.M.DISPLAY_NAME_STYLES_NEW_BADGE_PROFILE_PAGE]), y = I === l.M.DISPLAY_NAME_STYLES_NEW_BADGE_PROFILE_PAGE, O = (0, s.useCallback)(() => {
+        j(x.i.TAKE_ACTION), u.default.track(A.HAw.DISPLAY_NAME_STYLES_FROM_SETTINGS), (0, d.L)({
+            analyticsLocations: S,
             guildId: n
         })
-    }, [E, j, n]), R = (0, s.useCallback)(() => {
+    }, [S, j, n]), R = (0, s.useCallback)(() => {
         (0, c.p)({
             displayNameStyles: null
-        }), u.default.track(x.HAw.DISPLAY_NAME_STYLES_REMOVED)
+        }), u.default.track(A.HAw.DISPLAY_NAME_STYLES_REMOVED)
     }, []), P = (0, s.useCallback)(() => {
         (0, c.p)({
             guildId: n,
             displayNameStyles: null
         })
-    }, [n]), L = void 0 !== v || (null != n ? null != C : null != b);
-    return (0, i.jsx)(g.A, {
+    }, [n]), L = void 0 !== N || (null != n ? null != C : null != b);
+    return (0, i.jsx)(_.A, {
         title: h.intl.string(p.default["86GtGH"]),
         titleIcon: y ? (0, i.jsx)(a.LpS, {
             text: h.intl.string(h.t.y2b7CA),
             className: T.A
         }) : void 0,
         className: f,
-        showPremiumIcon: S,
-        errors: N,
+        showPremiumIcon: E,
+        errors: v,
         children: (0, i.jsxs)("div", {
             className: T.N,
             children: [(0, i.jsx)(a.Button, {
@@ -68,7 +68,7 @@ function f(e) {
                 size: "sm",
                 text: h.intl.string(p.default.ymq8WQ),
                 onClick: R
-            }), null != n && null != (void 0 !== v ? v : C) && (0, i.jsx)(a.Button, {
+            }), null != n && null != (void 0 !== N ? N : C) && (0, i.jsx)(a.Button, {
                 variant: "secondary",
                 size: "sm",
                 text: h.intl.string(p.default["j/KRxc"]),

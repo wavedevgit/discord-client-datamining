@@ -1,11 +1,10 @@
 /** chunk id: 969715 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
     A: () => A
 }), n(321073);
 var i = n(311907),
-    s = n(570209),
-    l = n(457699),
+    l = n(570209),
+    s = n(457699),
     a = n(465364),
     r = n(383233),
     o = n(994500),
@@ -17,12 +16,12 @@ let h = [];
 function A(e) {
     let {
         searchContext: t
-    } = e, n = (0, i.bG)([u.A, c.A, l.A], () => {
+    } = e, n = (0, i.bG)([u.A, c.A, s.A], () => {
         let e = (0, d.bS)(t),
             n = u.A.getSearchResultsQuery(e),
             i = c.A.getMessages(e);
         if (null == n || null == i || 0 === i.length) return h;
-        let o = (0, s.wG)((0, d.dX)(n) ?? ""),
+        let o = (0, l.wG)((0, d.dX)(n) ?? ""),
             A = [];
         return i.forEach(e => {
             let t = new r.Ay(e);
@@ -32,7 +31,7 @@ function A(e) {
                     attachments: i.attachments,
                     embeds: i.embeds
                 })), e
-            }(t, [l.A])).set("customRenderedContent", (0, a.Ay)(t, {
+            }(t, [s.A])).set("customRenderedContent", (0, a.Ay)(t, {
                 postProcessor: o,
                 allowHeading: !0,
                 allowList: !0
@@ -40,14 +39,14 @@ function A(e) {
         }), A
     }, [t], i.My), {
         blockCount: A,
-        ignoreCount: m
+        ignoreCount: _
     } = (0, i.cf)([o.A], () => {
         let e = 0,
             t = 0;
         return n.forEach(n => {
             let i = o.A.isBlockedForMessage(n),
-                s = o.A.isIgnoredForMessage(n);
-            i ? e++ : s && t++
+                l = o.A.isIgnoredForMessage(n);
+            i ? e++ : l && t++
         }), {
             blockCount: e,
             ignoreCount: t
@@ -56,6 +55,6 @@ function A(e) {
     return {
         renderedMessages: n,
         blockCount: A,
-        ignoreCount: m
+        ignoreCount: _
     }
 }

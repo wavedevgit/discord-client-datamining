@@ -1,11 +1,10 @@
 /** chunk id: 850729 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
-    C: () => U
+    C: () => G
 });
 var i = n(627968),
-    s = n(64700),
-    l = n(837381),
+    l = n(64700),
+    s = n(837381),
     a = n(311907),
     r = n(506774),
     o = n(397927),
@@ -14,21 +13,21 @@ var i = n(627968),
     u = n(531260),
     h = n(793943),
     A = n(411976),
-    m = n(912309),
-    _ = n(400492),
+    _ = n(912309),
+    m = n(400492),
     g = n(728321),
     p = n(309010),
     f = n(287809),
     x = n(816733),
     E = n(619921),
-    C = n(194871),
-    I = n(966846),
+    I = n(194871),
+    C = n(966846),
     N = n(674378),
-    S = n(87941),
-    b = n(941971),
-    T = n(900848),
-    v = n(550591),
-    y = n(65611),
+    T = n(87941),
+    S = n(941971),
+    b = n(900848),
+    y = n(550591),
+    v = n(65611),
     j = n(652215),
     R = n(788868),
     O = n(235079),
@@ -47,28 +46,28 @@ let D = {
     }
 };
 
-function G(e) {
+function U(e) {
     let {
         selected: t,
         user: n,
         badge: a,
         link: u,
         showProgressBadge: A
-    } = e, [m, p] = s.useState(!1), [f, x] = s.useState(!1), [E, C] = s.useState(null), [I, N] = s.useState(0), S = (0, l.Vd)("home"), R = (0, h.fy)().activePanel === h.HP.APP_ICON, G = () => {
-        C(null), N(0), clearTimeout(E)
+    } = e, [_, p] = l.useState(!1), [f, x] = l.useState(!1), [E, I] = l.useState(null), [C, N] = l.useState(0), T = (0, s.Vd)("home"), R = (0, h.fy)().activePanel === h.HP.APP_ICON, U = () => {
+        I(null), N(0), clearTimeout(E)
     };
     if (null == n) return null;
-    let U = L.intl.string(L.t.YUU0RF);
-    f && (U = r.w.get(j.wqg) ? L.intl.string(L.t["nkq1l+"]) : L.intl.string(L.t.Be8Q5E));
+    let G = L.intl.string(L.t.YUU0RF);
+    f && (G = r.w.get(j.wqg) ? L.intl.string(L.t["nkq1l+"]) : L.intl.string(L.t.Be8Q5E));
     let P = null;
     !t && A && (P = (0, i.jsx)(c.A, {
         className: M.Cp,
         determineOwnVisibility: !1
     }));
-    let w = t || m || R,
-        k = (0, i.jsx)(o.Qk9, {
+    let k = t || _ || R,
+        w = (0, i.jsx)(o.Qk9, {
             selected: !0,
-            lowerBadge: a > 0 ? (0, y.wN)(a) : null,
+            lowerBadge: a > 0 ? (0, v.wN)(a) : null,
             upperBadge: P,
             lowerBadgeSize: {
                 width: (0, o.o6S)(a)
@@ -77,19 +76,19 @@ function G(e) {
                 onMouseEnter: () => p(!0),
                 onMouseLeave: () => p(!1),
                 onClick: () => {
-                    if (!__OVERLAY__ && (null != E && clearTimeout(E), C(setTimeout(G, 500)), N(I + 1), 15 === I)) {
-                        G();
+                    if (!__OVERLAY__ && (null != E && clearTimeout(E), I(setTimeout(U, 500)), N(C + 1), 15 === C)) {
+                        U();
                         let e = !r.w.get(j.wqg);
-                        r.w.set(j.wqg, e), e && r.w.set(O.L, !0), e ? (0, _.Ak)("discodo") : (0, _.Ak)("user_leave"), x(!0), setTimeout(() => {
+                        r.w.set(j.wqg, e), e && r.w.set(O.L, !0), e ? (0, m.Ak)("discodo") : (0, m.Ak)("user_leave"), x(!0), setTimeout(() => {
                             x(!1)
                         }, 1e3)
                     }
                 },
-                selected: w,
+                selected: k,
                 ariaLabel: L.intl.string(L.t.YUU0RF),
                 "aria-owns": "guild-list-unread-dms",
                 "aria-selected": t,
-                ...S,
+                ...T,
                 to: {
                     pathname: u,
                     state: {
@@ -109,26 +108,26 @@ function G(e) {
             inlineSpecs: D,
             tutorialId: "friends-list",
             position: "right",
-            children: (0, i.jsxs)(T.c, {
-                children: [(0, i.jsx)(b.A, {
+            children: (0, i.jsxs)(b.c, {
+                children: [(0, i.jsx)(S.A, {
                     selected: t,
-                    hovered: m,
+                    hovered: _,
                     className: M.Io
-                }), (0, i.jsx)(v.A, {
+                }), (0, i.jsx)(y.A, {
                     hideOnClick: !0,
-                    text: U,
+                    text: G,
                     selected: t,
-                    children: k
+                    children: w
                 })]
             })
         })
     })
 }
 
-function U() {
-    let e = (0, S.q)(),
-        t = (0, a.bG)([I.A, C.A], () => {
-            let e = (0, c.v)(I.A.activeItems, C.A),
+function G() {
+    let e = (0, T.q)(),
+        t = (0, a.bG)([C.A, I.A], () => {
+            let e = (0, c.v)(C.A.activeItems, I.A),
                 {
                     total: t,
                     progress: n
@@ -136,28 +135,28 @@ function U() {
                 i = N.uA(n, t);
             return i > 0 && i < 100
         }),
-        n = (0, m.kX)(),
-        s = Object.keys(R.TP),
-        l = (0, u.A)(),
+        n = (0, _.kX)(),
+        l = Object.keys(R.TP),
+        s = (0, u.A)(),
         {
             unviewedTrialCount: r,
             unviewedDiscountCount: o
         } = (0, a.cf)([x.A], () => ({
-            unviewedTrialCount: x.A.getUnacknowledgedOffers(s).length,
+            unviewedTrialCount: x.A.getUnacknowledgedOffers(l).length,
             unviewedDiscountCount: x.A.getUnacknowledgedDiscountOffers().length
         })),
-        d = l.fractionalState === R.xc.NONE ? r + o : 0,
+        d = s.fractionalState === R.xc.NONE ? r + o : 0,
         h = (0, a.bG)([f.default], () => f.default.getCurrentUser()),
-        _ = (0, A.W)(),
-        g = n + d + _,
-        b = g === d && d > 0 && n + _ === 0,
-        T = E.A.getHomeLink();
-    return b && (T = j.BVt.APPLICATION_STORE), (0, i.jsx)(G, {
+        m = (0, A.W)(),
+        g = n + d + m,
+        S = g === d && d > 0 && n + m === 0,
+        b = E.A.getHomeLink();
+    return S && (b = j.BVt.APPLICATION_STORE), (0, i.jsx)(U, {
         selected: e,
         user: h,
         selectedChannelId: p.A.getChannelId(j.ME),
         badge: g,
-        link: T,
+        link: b,
         showProgressBadge: t
     })
 }

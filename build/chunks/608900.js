@@ -1,12 +1,11 @@
 /** chunk id: 608900 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
-    A: () => m
+    A: () => _
 });
 var i = n(627968),
-    s = n(64700),
-    l = n(503698),
-    a = n.n(l),
+    l = n(64700),
+    s = n(503698),
+    a = n.n(s),
     r = n(835245),
     o = n(397927),
     c = n(709562),
@@ -17,8 +16,8 @@ function h(e) {
     let {
         width: t = 24,
         height: n = 24,
-        isBadged: l = !1
-    } = e, [a] = s.useState(() => (0, r.A)());
+        isBadged: s = !1
+    } = e, [a] = l.useState(() => (0, r.A)());
     return (0, i.jsxs)("svg", {
         width: t,
         height: n,
@@ -30,7 +29,7 @@ function h(e) {
                     fill: "white",
                     width: "100%",
                     height: "100%"
-                }), l && (0, i.jsx)("circle", {
+                }), s && (0, i.jsx)("circle", {
                     cx: "20",
                     cy: "19",
                     r: "10",
@@ -48,12 +47,12 @@ function A(e) {
     let {
         className: t,
         numRequestToSpeak: n
-    } = e, s = n > 0;
+    } = e, l = n > 0;
     return (0, i.jsxs)("div", {
         className: a()(u.v, t),
         children: [(0, i.jsx)(h, {
-            isBadged: s
-        }), s ? (0, i.jsx)(o.Text, {
+            isBadged: l
+        }), l ? (0, i.jsx)(o.Text, {
             className: u.F,
             variant: "text-xs/semibold",
             children: n > 99 ? "99+" : n
@@ -61,24 +60,24 @@ function A(e) {
     })
 }
 
-function m(e) {
+function _(e) {
     let {
         toggleRequestToSpeakSidebar: t,
         showRequestToSpeakSidebar: n,
-        className: l,
+        className: s,
         numRequestToSpeak: a,
         onClick: r,
         ...o
-    } = e, u = s.useCallback(() => {
+    } = e, u = l.useCallback(() => {
         r?.(), t()
     }, [r, t]);
     return (0, i.jsx)(c.A, {
         onClick: u,
         label: n ? d.intl.string(d.t.gKGz7A) : d.intl.string(d.t.ImQ4dW),
-        className: l,
+        className: s,
         iconComponent: () => (0, i.jsx)(A, {
             numRequestToSpeak: a,
-            className: l
+            className: s
         }),
         ...o
     })

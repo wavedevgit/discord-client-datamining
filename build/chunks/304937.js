@@ -19,7 +19,7 @@ function _(e) {
         questionId: n,
         responses: l,
         onResponseChange: _
-    } = e, m = (() => {
+    } = e, A = (() => {
         switch (t.QuestionType) {
             case c.SQ.TEXT_ENTRY:
                 return (0, i.jsx)(o.A, {
@@ -41,7 +41,7 @@ function _(e) {
                 return null
         }
     })();
-    return null == m ? null : (0, i.jsxs)("div", {
+    return null == A ? null : (0, i.jsxs)("div", {
         className: a()(u.PT, d.k),
         children: [(0, i.jsx)(r.EYj, {
             variant: "text-lg/normal",
@@ -51,6 +51,6 @@ function _(e) {
                     __html: t.QuestionText_Unsafe ?? ""
                 }
             })
-        }), m]
+        }), A]
     })
 }

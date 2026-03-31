@@ -1,5 +1,4 @@
 /** chunk id: 672669 params = (module,exports,require) **/
-"use strict";
 e.exports = {
     A2: "previewChannelRow_d59199",
     wH: "selected_d59199",

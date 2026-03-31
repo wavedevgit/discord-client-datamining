@@ -1,29 +1,29 @@
 /** chunk id: 928108 params = (module,exports,require) **/
-n.d(e, {
+n.d(t, {
     _: () => a,
-    p: () => i
+    p: () => l
 });
-var l = n(853066);
+var i = n(853066);
 
-function i(t) {
+function l(e) {
     let {
-        enabled: e
-    } = l.R.getCurrentConfig({
-        guildId: t,
+        enabled: t
+    } = i.R.getCurrentConfig({
+        guildId: e,
         location: "988d4e_3"
     });
-    return e
+    return t
 }
 
-function a(t) {
-    let e = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1],
+function a(e) {
+    let t = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1],
         {
             enabled: n
-        } = l.R.useExperiment({
-            guildId: t,
+        } = i.R.useExperiment({
+            guildId: e,
             location: "988d4e_4"
         }, {
-            autoTrackExposure: e
+            autoTrackExposure: t
         });
     return n
 }

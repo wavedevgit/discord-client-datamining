@@ -1,12 +1,11 @@
 /** chunk id: 315502 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
     A: () => o
 });
 var i = n(627968);
 n(64700);
-var s = n(503698),
-    l = n.n(s),
+var l = n(503698),
+    s = n.n(l),
     a = n(397927),
     r = n(659905);
 
@@ -14,10 +13,10 @@ function o(e) {
     let {
         hasMentions: t,
         truncatedCount: n,
-        className: s
+        className: l
     } = e;
     return (0, i.jsx)(a.Text, {
-        className: l()(r.T, s, {
+        className: s()(r.T, l, {
             [r.l]: t
         }),
         variant: "text-xs/normal",

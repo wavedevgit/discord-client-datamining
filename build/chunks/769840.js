@@ -25,15 +25,15 @@ function C(e) {
         displayParticipants: x,
         participant1: N,
         participant2: I,
-        numOtherParticipants: f,
-        orderedParticipants: _
+        numOtherParticipants: _,
+        orderedParticipants: f
     } = (0, d.A)(t), g = [N, I];
     return (0, l.jsxs)("div", {
         className: s()(h.kL, r),
         children: [x.length > 0 ? (0, l.jsxs)(l.Fragment, {
             children: [(0, l.jsx)(p.A, {
                 targetElementRef: C,
-                participants: _,
+                participants: f,
                 channel: n,
                 children: e => (0, l.jsx)(o.DUT, {
                     innerRef: C,
@@ -59,7 +59,7 @@ function C(e) {
             children: A.intl.format(A.t.rH95Gu, {
                 user0: c.Ay.getName(n.guild_id, n.id, g[0]),
                 user1: c.Ay.getName(n.guild_id, n.id, g[1]),
-                countOthers: f,
+                countOthers: _,
                 name0Hook: (e, t) => (0, l.jsx)(m.A, {
                     text: e,
                     user: g[0],
@@ -72,7 +72,7 @@ function C(e) {
                 }, t),
                 countOthersHook: (e, t) => (0, l.jsx)(p.A, {
                     targetElementRef: E,
-                    participants: _,
+                    participants: f,
                     channel: n,
                     children: t => (0, l.jsx)(u.A, {
                         ...t,

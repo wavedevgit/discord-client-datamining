@@ -1,6 +1,6 @@
 /** chunk id: 168917 params = (module,exports,require) **/
 n.d(t, {
-    A: () => x
+    A: () => A
 });
 var i = n(627968),
     s = n(311907),
@@ -12,24 +12,24 @@ var i = n(627968),
     c = n(576705),
     u = n(652215),
     m = n(788868),
-    _ = n(985018),
-    g = n(116726);
+    g = n(985018),
+    _ = n(116726);
 
-function x(e) {
+function A(e) {
     let {
         errors: t,
         pendingNick: n,
-        currentNick: x,
-        username: A,
+        currentNick: A,
+        username: x,
         user: h,
         guild: p
     } = e, T = (0, s.bG)([c.A], () => c.A.can(u.xBc.CHANGE_NICKNAME, p) || c.A.can(u.xBc.MANAGE_NICKNAMES, p)), f = (0, a.L)(m.PremiumTypes.TIER_2);
     return (0, i.jsxs)(r.A, {
-        title: _.intl.string(_.t.me1lRk),
+        title: g.intl.string(g.t.me1lRk),
         errors: t,
         children: [(0, i.jsx)(l.ksK, {
-            value: n ?? x ?? "",
-            placeholder: A,
+            value: n ?? A ?? "",
+            placeholder: x,
             maxLength: u.d0r,
             onChange: function(e) {
                 (0, d.p)({
@@ -38,11 +38,11 @@ function x(e) {
                 })
             },
             disabled: !T,
-            helperText: T ? void 0 : _.intl.string(_.t.gzjxQi)
+            helperText: T ? void 0 : g.intl.string(g.t.gzjxQi)
         }), f && (0, i.jsx)(o.A, {
             user: h,
             guildId: p.id,
-            className: g.F
+            className: _.F
         })]
     })
 }

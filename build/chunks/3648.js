@@ -1,13 +1,12 @@
 /** chunk id: 3648 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
     A: () => p,
-    Z: () => _
+    Z: () => m
 });
 var i = n(627968);
 n(64700);
-var s = n(397927),
-    l = n(793574),
+var l = n(397927),
+    s = n(793574),
     a = n(627363),
     r = n(576030),
     o = n(957785),
@@ -16,15 +15,15 @@ var s = n(397927),
     u = n(788868),
     h = n(985018),
     A = n(738895),
-    m = n(522999);
+    _ = n(522999);
 
-function _(e, t) {
+function m(e, t) {
     let {
         moreCount: n,
-        onViewWishlist: s,
+        onViewWishlist: l,
         isSingleCard: a = !1,
-        profileOwner: m,
-        wishlistId: _,
+        profileOwner: _,
+        wishlistId: m,
         cardSize: g,
         analyticsLocations: p
     } = t, f = null != n && n > 0, x = {
@@ -36,12 +35,12 @@ function _(e, t) {
     return (0, i.jsx)(o.A, {
         wishlistItem: e,
         onCardClick: () => {
-            f ? s() : (0, c.a)(e.sku, {
+            f ? l() : (0, c.a)(e.sku, {
                 isGift: !0,
-                giftRecipient: m,
+                giftRecipient: _,
                 giftingOrigin: u.vQ.USER_PROFILE_WISHLIST
             }, {
-                analyticsLocations: [...p, l.A.SLAYER_STOREFRONT_BREADCRUMB_WISHLIST_ITEM_CARD_GIFT_BUTTON]
+                analyticsLocations: [...p, s.A.SLAYER_STOREFRONT_BREADCRUMB_WISHLIST_ITEM_CARD_GIFT_BUTTON]
             })
         },
         tooltipConfig: x,
@@ -55,7 +54,7 @@ function _(e, t) {
         }),
         moreCount: n,
         isSingleCard: a,
-        wishlistId: _,
+        wishlistId: m,
         cardSize: g
     }, e.skuId)
 }
@@ -70,26 +69,26 @@ function g(e) {
         data: d
     } = (0, a.YY)(t.sku.applicationId);
     return (0, i.jsxs)("div", {
-        className: m.D5,
+        className: _.D5,
         children: [n, (0, i.jsx)("div", {
-            className: m.S7,
-            children: (0, i.jsxs)(s.DUT, {
+            className: _.S7,
+            children: (0, i.jsxs)(l.DUT, {
                 onClick: () => {
                     (0, c.a)(t.sku, {
                         isGift: !0,
                         giftRecipient: o,
                         giftingOrigin: u.vQ.USER_PROFILE_WISHLIST
                     }, {
-                        analyticsLocations: [...r, l.A.SLAYER_STOREFRONT_BREADCRUMB_WISHLIST_ITEM_CARD_GIFT_BUTTON]
+                        analyticsLocations: [...r, s.A.SLAYER_STOREFRONT_BREADCRUMB_WISHLIST_ITEM_CARD_GIFT_BUTTON]
                     })
                 },
-                className: m.Hh,
-                children: [(0, i.jsx)(s.Text, {
+                className: _.Hh,
+                children: [(0, i.jsx)(l.Text, {
                     variant: "text-sm/semibold",
                     color: "text-default",
                     lineClamp: 2,
                     children: t.skuName
-                }), (0, i.jsx)(s.Text, {
+                }), (0, i.jsx)(l.Text, {
                     variant: "text-xs/medium",
                     color: "text-default",
                     children: h.intl.format(h.t["CqpEC+"], {
@@ -104,21 +103,21 @@ function g(e) {
 function p(e, t) {
     let {
         profileOwner: n,
-        analyticsLocations: s,
-        wishlistId: l,
+        analyticsLocations: l,
+        wishlistId: s,
         onViewWishlist: a
-    } = t, r = _(e, {
+    } = t, r = m(e, {
         index: 0,
         profileOwner: n,
-        analyticsLocations: s,
+        analyticsLocations: l,
         onViewWishlist: a,
         isSingleCard: !0,
-        wishlistId: l
+        wishlistId: s
     });
     return (0, i.jsx)(g, {
         item: e,
         card: r,
         profileOwner: n,
-        analyticsLocations: s
+        analyticsLocations: l
     })
 }

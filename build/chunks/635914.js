@@ -1,12 +1,11 @@
 /** chunk id: 635914 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
     A: () => g
 }), n(321073);
 var i = n(627968),
-    s = n(64700),
-    l = n(503698),
-    a = n.n(l),
+    l = n(64700),
+    s = n(503698),
+    a = n.n(s),
     r = n(735438),
     o = n.n(r),
     c = n(775121),
@@ -22,7 +21,7 @@ let A = () => (0, i.jsxs)("div", {
         src: n(24160)
     })]
 }, "symbol");
-class m extends s.PureComponent {
+class _ extends l.PureComponent {
     _renderSecondaryTimeout = null;
     _doneTimeout = null;
     state = {
@@ -119,23 +118,23 @@ class m extends s.PureComponent {
             renderSecondary: e,
             offsetX: t,
             offsetY: n,
-            animating: s,
-            scale: l
+            animating: l,
+            scale: s
         } = this.state, r = [this.renderPrimary()];
         return e && r.push(this.renderSecondary(t, n)), (0, i.jsx)("div", {
             className: a()(h.kL, {
-                [h.i0]: s
+                [h.i0]: l
             }),
             style: {
                 top: this.props.top,
                 left: this.props.left,
-                transform: `scale(${l})`
+                transform: `scale(${s})`
             },
             children: r
         })
     }
 }
-class _ extends s.PureComponent {
+class m extends l.PureComponent {
     _timeouts = [];
     children = [];
     state = {
@@ -161,7 +160,7 @@ class _ extends s.PureComponent {
     removeExplosion = e => {
         let t = this.children,
             n = t.findIndex(t => {
-                if (t.type !== m) return !1;
+                if (t.type !== _) return !1;
                 let n = t.props;
                 return null != n.componentId && n.componentId === e
             });
@@ -172,13 +171,13 @@ class _ extends s.PureComponent {
             t = window.innerWidth / 2 | 0,
             n = window.innerHeight / 2 | 0;
         if (this.state.explosions < 8) {
-            let s = `expl-${this.state.explosions}`;
-            e.push((0, i.jsx)(m, {
-                componentId: s,
+            let l = `expl-${this.state.explosions}`;
+            e.push((0, i.jsx)(_, {
+                componentId: l,
                 top: o().random(n - 100, n + 100, !1),
                 left: o().random(t - 200, t + 200, !1),
                 onAnimationComplete: this.removeExplosion
-            }, s)), this.setTimeout(this.createExplosion, 240), this.setState({
+            }, l)), this.setTimeout(this.createExplosion, 240), this.setState({
                 explosions: this.state.explosions + 1
             })
         } else this.setTimeout(this.addSymbol, 750)
@@ -198,4 +197,4 @@ class _ extends s.PureComponent {
         })
     }
 }
-let g = _
+let g = m

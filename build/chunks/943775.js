@@ -1,13 +1,13 @@
 /** chunk id: 943775 params = (module,exports,require) **/
-i.d(e, {
+e.d(i, {
     A: () => l
 });
-var n = i(998218);
+var n = e(998218);
 
-function l(t, e) {
-    let i = t.getIconSource(e);
-    if (null != i && "number" != typeof i) {
+function l(t, i) {
+    let e = t.getIconSource(i);
+    if (null != e && "number" != typeof e) {
         let t;
-        if (Array.isArray(i) ? i.length > 0 && (t = i[0].uri) : t = i.uri, null != t) return n.A.toURLSafe(t) ?? void 0
+        if (Array.isArray(e) ? e.length > 0 && (t = e[0].uri) : t = e.uri, null != t) return n.A.toURLSafe(t) ?? void 0
     }
 }

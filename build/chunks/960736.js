@@ -1,6 +1,6 @@
 /** chunk id: 960736 params = (module,exports,require) **/
 n.d(t, {
-    N9: () => I,
+    N9: () => v,
     Z1: () => A,
     dR: () => u,
     jJ: () => g,
@@ -8,7 +8,7 @@ n.d(t, {
     p9: () => f,
     qO: () => c,
     tJ: () => m,
-    uE: () => S,
+    uE: () => I,
     xD: () => p,
     xP: () => s
 });
@@ -91,8 +91,8 @@ let _ = (0, i.v)(e => ({
     g = () => _.getState().touched,
     A = () => _.getState().dmsAllowed,
     m = () => _.getState().nickname,
-    I = () => _.getState().showActivity,
-    S = () => {
+    v = () => _.getState().showActivity,
+    I = () => {
         let {
             nickname: e
         } = _();

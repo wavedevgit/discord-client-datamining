@@ -1,12 +1,11 @@
 /** chunk id: 156579 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
     A: () => A
 });
 var i = n(627968);
 n(64700);
-var s = n(417597),
-    l = n(87001),
+var l = n(417597),
+    s = n(87001),
     a = n(811024),
     r = n(933958),
     o = n(969151),
@@ -21,9 +20,9 @@ function A(e) {
         renderExternalHeader: n
     } = e, {
         connectedChannelId: A,
-        connectedActivity: m,
-        activityPanelMode: _
-    } = (0, s.cf)([r.Ay], () => {
+        connectedActivity: _,
+        activityPanelMode: m
+    } = (0, l.cf)([r.Ay], () => {
         let e = r.Ay.getConnectedActivityLocation(),
             t = r.Ay.getSelfEmbeddedActivityForLocation(e);
         return {
@@ -31,12 +30,12 @@ function A(e) {
             connectedActivity: t,
             activityPanelMode: r.Ay.getActivityPanelMode()
         }
-    }), g = (0, s.bG)([l.A], () => l.A.getWindowOpen(h.MLl.ACTIVITY_POPOUT));
+    }), g = (0, l.bG)([s.A], () => s.A.getWindowOpen(h.MLl.ACTIVITY_POPOUT));
     if (!(0, a.Gp)(A)) return null;
-    let p = m?.applicationId;
-    return _ !== u.Gd.PANEL || null == p || g || null == A || null == m || (0, c.A)(A) ? null : (0, i.jsx)(d.A, {
+    let p = _?.applicationId;
+    return m !== u.Gd.PANEL || null == p || g || null == A || null == _ || (0, c.A)(A) ? null : (0, i.jsx)(d.A, {
         maxHeight: t,
-        connectedLocation: m.location,
+        connectedLocation: _.location,
         renderExternalHeader: n
     })
 }

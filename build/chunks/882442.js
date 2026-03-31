@@ -1,16 +1,15 @@
 /** chunk id: 882442 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
     c: () => o
 });
 var i = n(562465),
-    s = n(73153),
-    l = n(384904),
+    l = n(73153),
+    s = n(384904),
     a = n(295405),
     r = n(652215);
 async function o() {
     try {
-        s.h.dispatch({
+        l.h.dispatch({
             type: "CHECKOUT_RECOVERY_STATUS_FETCH"
         });
         let {
@@ -19,12 +18,12 @@ async function o() {
             url: r.Rsh.CHECKOUT_RECOVERY,
             rejectWithError: !0
         }), t = e?.is_eligible === !0;
-        t && !a.A.hasFetchedPaymentSources && await (0, l.$o)(), s.h.dispatch({
+        t && !a.A.hasFetchedPaymentSources && await (0, s.$o)(), l.h.dispatch({
             type: "CHECKOUT_RECOVERY_STATUS_FETCH_SUCCESS",
             isTargeted: t
         })
     } catch (e) {
-        s.h.dispatch({
+        l.h.dispatch({
             type: "CHECKOUT_RECOVERY_STATUS_FETCH_FAILURE"
         })
     }

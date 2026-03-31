@@ -1,19 +1,18 @@
 /** chunk id: 302884 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
-    C: () => l,
-    k: () => s
+    C: () => s,
+    k: () => l
 });
 var i = n(73153);
 
-function s(e) {
+function l(e) {
     i.h.dispatch({
         type: "STAGE_MUSIC_MUTE",
         muted: e
     })
 }
 
-function l(e) {
+function s(e) {
     i.h.dispatch({
         type: "STAGE_MUSIC_PLAY",
         play: e

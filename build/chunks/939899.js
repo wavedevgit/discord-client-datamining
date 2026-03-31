@@ -4,9 +4,9 @@ n.d(t, {
     R: () => _
 });
 var i = n(627968),
-    l = n(64700),
-    a = n(503698),
-    s = n.n(a),
+    a = n(64700),
+    l = n(503698),
+    s = n.n(l),
     r = n(158954),
     o = n(311907),
     d = n(793574),
@@ -22,7 +22,7 @@ function h(e) {
     let {
         applicationId: t,
         size: n = "default"
-    } = e, l = (0, o.bG)([x.A], () => x.A.getApplicationWidgetConfig(t));
+    } = e, a = (0, o.bG)([x.A], () => x.A.getApplicationWidgetConfig(t));
     return (0, i.jsxs)("div", {
         className: s()(f.kL, {
             [f.PG]: "small" === n
@@ -51,8 +51,8 @@ function h(e) {
             })]
         }), (0, i.jsx)("div", {
             className: f.ZS,
-            children: l?.miniPreviewImage != null ? (0, i.jsx)("img", {
-                src: l.miniPreviewImage,
+            children: a?.miniPreviewImage != null ? (0, i.jsx)("img", {
+                src: a.miniPreviewImage,
                 alt: "",
                 className: f.oz
             }) : (0, i.jsx)("div", {
@@ -67,7 +67,7 @@ function _(e) {
         applicationId: t,
         size: n = "default"
     } = e, {
-        trackUserProfileAction: a
+        trackUserProfileAction: l
     } = (0, m.NJ)(), s = (0, g.h)(t), {
         hasAlreadyLinked: o,
         canStartAuthorization: x,
@@ -75,14 +75,14 @@ function _(e) {
         fetched: _
     } = (0, u.RD)(s), {
         analyticsLocations: A
-    } = (0, c.Ay)(d.A.USER_PROFILE_APPLICATION_WIDGET), I = l.useCallback(() => {
-        x && (a({
+    } = (0, c.Ay)(d.A.USER_PROFILE_APPLICATION_WIDGET), I = a.useCallback(() => {
+        x && (l({
             action: "PRESS_APPLICATION_WIDGET_PLACEHOLDER_CONNECT",
             applicationId: t
         }), h({
             analyticsLocations: A
         }))
-    }, [x, a, t, h, A]);
+    }, [x, l, t, h, A]);
     return "default" !== n || null == s ? null : (0, i.jsxs)("div", {
         className: f.qr,
         children: [(0, i.jsx)(r.A5T, {

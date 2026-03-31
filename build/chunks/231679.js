@@ -1,22 +1,22 @@
 /** chunk id: 231679 params = (module,exports,require) **/
 "use strict";
-i.d(t, {
+n.d(t, {
     A: () => s
 });
-var n = i(627968);
-let s = i(64700).memo(function(e) {
+var i = n(627968);
+let s = n(64700).memo(function(e) {
     let {
         layout: t,
-        layoutSize: i,
+        layoutSize: n,
         className: s,
         renderWidget: a
     } = e;
-    return null != t ? (0, n.jsx)("div", {
+    return null != t ? (0, i.jsx)("div", {
         className: s,
         style: {
-            width: i.width,
-            height: i.height
+            width: n.width,
+            height: n.height
         },
-        children: t.widgets.map(e => a(e, i))
+        children: t.widgets.map(e => a(e, n))
     }) : null
 })

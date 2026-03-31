@@ -1,22 +1,21 @@
 /** chunk id: 397400 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
     Ai: () => g,
     ET: () => x,
-    Jh: () => _,
+    Jh: () => m,
     SX: () => h,
     ed: () => p,
     f7: () => f,
     ft: () => u,
-    gU: () => C,
-    oT: () => m,
+    gU: () => I,
+    oT: () => _,
     pK: () => E,
     tR: () => A,
     wN: () => d
 });
 var i = n(64700),
-    s = n(390544),
-    l = n(311907),
+    l = n(390544),
+    s = n(311907),
     a = n(954571),
     r = n(363487),
     o = n(522055),
@@ -54,23 +53,23 @@ function h(e, t, n) {
 
 function A(e) {
     let t = (0, r.A)(e),
-        n = (0, l.bG)([o.A], () => o.A.getStateForGuild(e)),
+        n = (0, s.bG)([o.A], () => o.A.getStateForGuild(e)),
         d = i.useRef(!1);
     i.useEffect(() => {
         if (n?.instances == null) return;
         let i = Object.values(n.instances).length,
-            l = Object.values(n.instances).filter(e => e.status === s.M.ONLINE).length;
+            s = Object.values(n.instances).filter(e => e.status === l.M.ONLINE).length;
         d.current || (d.current = !0, a.default.track(c.HAw.IMPRESSION_GAME_SERVERS_TAB_VIEWED, {
             guild_id: e,
             is_admin: t,
             num_game_servers: i,
-            num_game_servers_online: l,
-            num_game_servers_offline: i - l
+            num_game_servers_online: s,
+            num_game_servers_offline: i - s
         }))
     }, [e, t, n?.instances])
 }
 
-function m(e, t, n, i) {
+function _(e, t, n, i) {
     a.default.track(c.HAw.GAME_SERVER_GAME_CLICKED, {
         guild_id: e,
         product_id: t,
@@ -79,13 +78,13 @@ function m(e, t, n, i) {
     })
 }
 
-function _(e) {
+function m(e) {
     let {
         guildId: t,
         productId: n,
         productName: i,
-        skuId: s,
-        planName: l,
+        skuId: l,
+        planName: s,
         planCost: r,
         previousPlanCost: o,
         region: d,
@@ -95,8 +94,8 @@ function _(e) {
         guild_id: t,
         product_id: n,
         product_name: i,
-        sku_id: s,
-        plan_name: l,
+        sku_id: l,
+        plan_name: s,
         plan_cost: r,
         previous_plan_cost: o,
         region: d,
@@ -150,7 +149,7 @@ function E(e) {
     })
 }
 
-function C(e) {
+function I(e) {
     let {
         guildId: t,
         gameApplicationId: n

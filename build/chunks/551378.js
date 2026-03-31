@@ -13,10 +13,10 @@ var s = n(503698),
     c = n(834981),
     u = n(796497),
     m = n(191627),
-    _ = n(842130),
-    g = n(985018),
-    x = n(397381),
-    A = n(452567),
+    g = n(842130),
+    _ = n(985018),
+    A = n(397381),
+    x = n(452567),
     h = n(272673),
     p = n(607913);
 let T = () => {
@@ -26,28 +26,28 @@ let T = () => {
                 handleTabChange: n
             } = (0, d.A)();
         return (0, c.xr)() || t && e ? null : (0, i.jsx)("div", {
-            className: x.x6,
+            className: A.x6,
             children: t ? (0, i.jsx)(a.Button, {
                 variant: "primary",
-                text: g.intl.string(g.t.LhlgY9),
+                text: _.intl.string(_.t.LhlgY9),
                 onClick: () => n(m.u9.REQUESTS)
             }) : (0, i.jsx)(u.A, {})
         })
     },
     f = () => {
         let e = (0, o.A)(),
-            t = (0, r.y)(g.intl.string(_.default["T7GyW+"]), g.intl.string(_.default.goKE2b)),
-            n = (0, r.y)(g.intl.format(_.default.MXjDSv, {
+            t = (0, r.y)(_.intl.string(g.default["T7GyW+"]), _.intl.string(g.default.goKE2b)),
+            n = (0, r.y)(_.intl.format(g.default.MXjDSv, {
                 articleLink: "https://support.discord.com/hc/articles/14155060633623"
-            }), g.intl.format(_.default.EMCf6j, {
+            }), _.intl.format(g.default.EMCf6j, {
                 articleLink: "https://support.discord.com/hc/articles/14155043715735"
             }));
         return (0, i.jsxs)("div", {
-            className: l()(x.kL, A.a),
+            className: l()(A.kL, x.a),
             children: [(0, i.jsxs)("div", {
                 children: [(0, i.jsx)("div", {
                     children: (0, i.jsxs)("div", {
-                        className: x.TK,
+                        className: A.TK,
                         children: [(0, i.jsx)(a.Heading, {
                             variant: "heading-xl/medium",
                             children: (0, i.jsx)(a.Fmo, {
@@ -61,10 +61,10 @@ let T = () => {
                     })
                 }), (0, i.jsx)(T, {})]
             }), (0, i.jsx)("div", {
-                className: x.F0,
+                className: A.F0,
                 children: (0, i.jsx)("img", {
                     src: e ? h : p,
-                    alt: g.intl.string(_.default.ffg6xd)
+                    alt: _.intl.string(g.default.ffg6xd)
                 })
             })]
         })

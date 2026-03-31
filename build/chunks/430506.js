@@ -1,6 +1,6 @@
 /** chunk id: 430506 params = (module,exports,require) **/
 n.d(t, {
-    A: () => _
+    A: () => f
 }), n(321073);
 var l = n(627968),
     a = n(64700),
@@ -20,14 +20,14 @@ var l = n(627968),
     x = n(790665),
     N = n(756362),
     I = n(626715),
-    f = n(427401);
+    _ = n(427401);
 
-function _(e) {
+function f(e) {
     let {
         checkpointData: t
     } = e, {
         cardId: n,
-        numMessagesSent: _ = 0,
+        numMessagesSent: f = 0,
         totalVoiceMinutes: g = 0,
         numEmojisSent: T = 0,
         topEmoji: v,
@@ -39,18 +39,18 @@ function _(e) {
         notation: "compact",
         compactDisplay: "short",
         maximumFractionDigits: 2
-    }).format(_), b = new Intl.NumberFormat(C.intl.currentLocale, {
+    }).format(f), b = new Intl.NumberFormat(C.intl.currentLocale, {
         notation: "compact",
         compactDisplay: "short",
         maximumFractionDigits: 2
     }).format(T), P = (0, u.oO)(g), L = (0, u.OW)(n), D = d.f[n], U = (0, o.rdh)(D.primaryColor).hex(), k = (0, o.rdh)(D.secondaryColor).hex({
         opacity: .2
-    }), w = (0, s.bG)([A.A], () => A.A.getGuild(S?.guildId)), M = new Intl.NumberFormat(C.intl.currentLocale, {
+    }), M = (0, s.bG)([A.A], () => A.A.getGuild(S?.guildId)), w = new Intl.NumberFormat(C.intl.currentLocale, {
         notation: "compact",
         compactDisplay: "short"
     }), H = (0, u._V)(R ?? 0), K = (0, a.useMemo)(() => {
         let e = [];
-        e.push(f);
+        e.push(_);
         for (let t = 0; t < 8; t++) e.push(I);
         return e.push(N), e
     }, []);
@@ -159,8 +159,8 @@ function _(e) {
                             children: C.intl.string(E.default.eoLmk1)
                         })]
                     }) : (0, l.jsxs)(l.Fragment, {
-                        children: [null != w ? (0, l.jsx)(p.Ay, {
-                            guild: w,
+                        children: [null != M ? (0, l.jsx)(p.Ay, {
+                            guild: M,
                             size: p.Ay.Sizes.SMOL,
                             className: x.iY
                         }) : (0, l.jsx)(r.RR9, {
@@ -209,7 +209,7 @@ function _(e) {
                 }), (0, l.jsx)(r.EYj, {
                     variant: "text-xs/bold",
                     className: x.KA,
-                    children: M.format(O ?? 0)
+                    children: w.format(O ?? 0)
                 })]
             })]
         })]

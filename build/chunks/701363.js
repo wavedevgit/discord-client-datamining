@@ -268,7 +268,7 @@ function eA(e) {
         eS(!0), t.isMultiUserDM() ? (0, N.L3)(e, async () => {
             let {
                 default: e
-            } = await Promise.all([n.e("97262"), n.e("60200"), n.e("91763")]).then(n.bind(n, 4027));
+            } = await Promise.all([n.e("97262"), n.e("60200"), n.e("81846")]).then(n.bind(n, 4027));
             return n => (0, l.jsx)(e, {
                 ...n,
                 channel: t,
@@ -281,7 +281,7 @@ function eA(e) {
         }) : (0, N.L3)(e, async () => {
             let {
                 default: e
-            } = await Promise.all([n.e("97262"), n.e("42128"), n.e("39778"), n.e("63270")]).then(n.bind(n, 385913));
+            } = await Promise.all([n.e("97262"), n.e("42128"), n.e("39778"), n.e("35283")]).then(n.bind(n, 385913));
             return n => (0, l.jsx)(e, {
                 ...n,
                 user: r,
@@ -331,9 +331,9 @@ function eA(e) {
                 [ei.Y_]: eV
             })
         })]
-    }) : e3, e6 = s.useRef(null), e7 = (0, F.W)({
+    }) : e3, e6 = s.useRef(null), e8 = (0, F.W)({
         location: "PrivateChannel"
-    }) && r?.displayNameStyles != null, e8 = [(0, y.Ay)({
+    }) && r?.displayNameStyles != null, e7 = [(0, y.Ay)({
         channel: t,
         unread: eq
     }), (0, y.r2)({
@@ -409,7 +409,7 @@ function eA(e) {
                         innerRef: eh,
                         to: el.BVt.CHANNEL(el.ME, t.id),
                         className: ei.nf,
-                        "aria-label": e8,
+                        "aria-label": e7,
                         ...s,
                         children: (0, l.jsx)(b.A, {
                             ref: e6,
@@ -472,7 +472,7 @@ function eA(e) {
                             }) : null,
                             name: (0, l.jsx)(h.A, {
                                 className: a()(ei.uN, {
-                                    [ei.e8]: e7
+                                    [ei.e8]: e8
                                 }),
                                 children: e9
                             }),
@@ -481,7 +481,7 @@ function eA(e) {
                                 type: M.A.Types.SYSTEM_DM,
                                 verified: !0
                             }) : null,
-                            withDisplayNameStyles: e7
+                            withDisplayNameStyles: e8
                         })
                     }), (0, l.jsxs)("div", {
                         className: a()(ei._q, {

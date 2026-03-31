@@ -1,11 +1,10 @@
 /** chunk id: 50400 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
     A: () => O
 });
 var i = n(627968),
-    s = n(64700),
-    l = n(382222),
+    l = n(64700),
+    s = n(382222),
     a = n(837381),
     r = n(311907),
     o = n(397927),
@@ -14,21 +13,21 @@ var i = n(627968),
     u = n(571694),
     h = n(47167),
     A = n(598104),
-    m = n(616356),
-    _ = n(383501),
+    _ = n(616356),
+    m = n(383501),
     g = n(222823),
     p = n(309010),
     f = n(287809),
     x = n(607567),
     E = n(531685),
-    C = n(941971),
-    I = n(375855),
+    I = n(941971),
+    C = n(375855),
     N = n(900848),
-    S = n(65611),
-    b = n(652215),
-    T = n(985018),
-    v = n(355593);
-let y = {
+    T = n(65611),
+    S = n(652215),
+    b = n(985018),
+    y = n(355593);
+let v = {
     friction: 28,
     tension: 600
 };
@@ -38,17 +37,17 @@ function j(e) {
         case "height":
         case "opacity":
             return {
-                duration: 150, ...y
+                duration: 150, ...v
             };
         case "scale":
             return {
-                ...y
+                ...v
             };
         default:
             throw Error(`DirectMessage: getSpringConfigs() - Invalid spring ${String(e)}`)
     }
 }
-class R extends s.PureComponent {
+class R extends l.PureComponent {
     static defaultProps = {
         badge: 0,
         audio: !1,
@@ -58,7 +57,7 @@ class R extends s.PureComponent {
     state = {
         hovered: !1,
         animating: !0,
-        controller: new l.Controller({
+        controller: new s.Controller({
             scale: 0,
             height: 0,
             opacity: 0,
@@ -116,32 +115,32 @@ class R extends s.PureComponent {
         } = this.state, {
             opacity: n,
             height: i,
-            scale: s
+            scale: l
         } = t.springs;
         return {
             opacity: n,
             height: i.to([0, 1], [0, e]),
-            transform: s.to([0, 1], [.5, 1]).to(e => `scale(${e})`)
+            transform: l.to([0, 1], [.5, 1]).to(e => `scale(${e})`)
         }
     }
     getChannelIcon() {
         let {
             channel: e
-        } = this.props, t = e.type === b.rbe.DM ? f.default.getUser(e.getRecipientId()) : null;
+        } = this.props, t = e.type === S.rbe.DM ? f.default.getUser(e.getRecipientId()) : null;
         return null != t ? t.getAvatarURL(void 0, 48, !1) : (0, u.Y)(e)
     }
     handleContextMenu = e => {
         let {
             channel: t
-        } = this.props, s = t.type === b.rbe.DM ? f.default.getUser(t.getRecipientId()) : null;
-        null != s ? (0, c.L3)(e, async () => {
+        } = this.props, l = t.type === S.rbe.DM ? f.default.getUser(t.getRecipientId()) : null;
+        null != l ? (0, c.L3)(e, async () => {
             let {
                 default: e
             } = await Promise.all([n.e("97262"), n.e("42128"), n.e("39778"), n.e("34408")]).then(n.bind(n, 385913));
             return n => (0, i.jsx)(e, {
                 ...n,
                 channel: t,
-                user: s
+                user: l
             })
         }) : (0, c.L3)(e, async () => {
             let {
@@ -159,7 +158,7 @@ class R extends s.PureComponent {
             channel: e,
             channelName: t,
             selected: n,
-            badge: s,
+            badge: l,
             audio: a,
             video: r,
             stream: c,
@@ -167,19 +166,19 @@ class R extends s.PureComponent {
             unread: u,
             treeItemProps: h
         } = this.props, {
-            hovered: m,
-            animating: _
+            hovered: _,
+            animating: m
         } = this.state, g = e.isMultiUserDM() && null == e.icon, p = () => (0, i.jsx)(o.jlP, {
-            to: b.BVt.CHANNEL(b.ME, e.id),
+            to: S.BVt.CHANNEL(S.ME, e.id),
             onMouseEnter: () => this.setState({
                 hovered: !0
             }),
             onMouseLeave: () => this.setState({
                 hovered: !1
             }),
-            selected: n || m,
-            ariaLabel: null != t ? T.intl.formatToPlainString(T.t.hKarnZ, {
-                mentions: s,
+            selected: n || _,
+            ariaLabel: null != t ? b.intl.formatToPlainString(b.t.hKarnZ, {
+                mentions: l,
                 name: t
             }) : "",
             onContextMenu: this.handleContextMenu,
@@ -193,28 +192,28 @@ class R extends s.PureComponent {
             }) : void 0,
             ...h
         });
-        return (0, i.jsx)(l.animated.div, {
+        return (0, i.jsx)(s.animated.div, {
             style: this.getAnimatedStyle(),
             children: (0, i.jsxs)(N.c, {
-                children: [(0, i.jsx)(C.A, {
-                    hovered: !_ && m,
-                    selected: !_ && n,
-                    unread: !_ && u,
-                    className: v.I
-                }), (0, i.jsx)(I.A, {
+                children: [(0, i.jsx)(I.A, {
+                    hovered: !m && _,
+                    selected: !m && n,
+                    unread: !m && u,
+                    className: y.I
+                }), (0, i.jsx)(C.A, {
                     channel: e,
                     children: (0, i.jsx)(o.Qk9, {
                         rounded: !0,
                         selected: !1,
-                        lowerBadge: s > 0 ? (0, S.wN)(s, void 0, !0) : null,
-                        upperBadge: (0, S.oi)({
+                        lowerBadge: l > 0 ? (0, T.wN)(l, void 0, !0) : null,
+                        upperBadge: (0, T.oi)({
                             audio: a,
                             video: r,
                             screenshare: c,
                             isCurrentUserConnected: d
                         }),
                         lowerBadgeSize: {
-                            width: (0, o.o6S)(s)
+                            width: (0, o.o6S)(l)
                         },
                         children: p()
                     })
@@ -223,33 +222,33 @@ class R extends s.PureComponent {
         })
     }
 }
-let O = s.forwardRef(function(e, t) {
+let O = l.forwardRef(function(e, t) {
     let n = e.channel.id,
-        s = (0, h.Ay)(e.channel),
-        l = (0, a.Vd)(n, 2),
-        c = (0, r.bG)([_.A], () => _.A.getChannelId(), []),
+        l = (0, h.Ay)(e.channel),
+        s = (0, a.Vd)(n, 2),
+        c = (0, r.bG)([m.A], () => m.A.getChannelId(), []),
         u = (0, r.bG)([d.A], () => d.A.getMode(n), [n]),
-        A = (0, r.bG)([m.A], () => m.A.getAllApplicationStreamsForChannel(n).length > 0),
+        A = (0, r.bG)([_.A], () => _.A.getAllApplicationStreamsForChannel(n).length > 0),
         f = (0, r.bG)([x.Ay], () => x.Ay.getVoiceStatesForChannel(e.channel).length > 0, [e.channel]),
         E = (0, r.bG)([p.A], () => p.A.getChannelId(), []),
-        C = (0, r.bG)([g.Ay], () => g.Ay.getMentionCount(n), [n]),
-        I = c === n,
+        I = (0, r.bG)([g.Ay], () => g.Ay.getMentionCount(n), [n]),
+        C = c === n,
         N = !1,
-        S = !1;
-    (I || f) && (N = u === b._Of.VOICE, S = u === b._Of.VIDEO);
-    let T = (0, o.rdh)(o.LU0.modules.guildbar.AVATAR_SIZE);
+        T = !1;
+    (C || f) && (N = u === S._Of.VOICE, T = u === S._Of.VIDEO);
+    let b = (0, o.rdh)(o.LU0.modules.guildbar.AVATAR_SIZE);
     return (0, i.jsx)(R, {
         ...e,
         ref: t,
-        channelName: s,
-        unread: C > 0,
+        channelName: l,
+        unread: I > 0,
         selected: E === n,
-        badge: C,
+        badge: I,
         audio: N,
-        video: S,
+        video: T,
         stream: A,
-        isCurrentUserInThisDMCall: I,
-        size: T,
-        treeItemProps: l
+        isCurrentUserInThisDMCall: C,
+        size: b,
+        treeItemProps: s
     })
 })

@@ -1,5 +1,4 @@
 /** chunk id: 910338 params = (module,exports,require) **/
-"use strict";
 e.exports = {
     zr: "root_d529e9",
     Xk: "voiceUsers_d529e9",

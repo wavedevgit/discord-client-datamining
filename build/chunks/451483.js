@@ -52,9 +52,9 @@ function u(e) {
         content: r,
         timestamp: u,
         messageReference: _
-    } = l, m = (0, s.Ay)(l), A = t(m), E = (r ?? "").split(" ").slice(0, -1).join(" "), I = c.intl.format(c.t["47CZc2"], {
-        username: m.nick,
-        usernameHook: A,
+    } = l, A = (0, s.Ay)(l), m = t(A), E = (r ?? "").split(" ").slice(0, -1).join(" "), T = c.intl.format(c.t["47CZc2"], {
+        username: A.nick,
+        usernameHook: m,
         webhookName: r,
         webhookNameHook: (e, t) => (0, i.jsx)(d, {
             messageReference: _,
@@ -66,6 +66,6 @@ function u(e) {
         icon: n(617184),
         timestamp: u,
         compact: a,
-        children: I
+        children: T
     })
 }

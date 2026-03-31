@@ -1,6 +1,6 @@
 /** chunk id: 877695 params = (module,exports,require) **/
 n.d(t, {
-    A: () => T
+    A: () => y
 });
 var i = n(627968),
     a = n(64700),
@@ -18,82 +18,83 @@ var i = n(627968),
     g = n(123213),
     A = n(86376),
     x = n(42780),
-    f = n(860689),
-    C = n(897288),
-    I = n(168428),
-    E = n(652215),
-    b = n(985018),
-    v = n(105544);
+    f = n(21599),
+    C = n(860689),
+    I = n(897288),
+    E = n(168428),
+    b = n(652215),
+    v = n(985018),
+    T = n(105544);
 
-function T(e) {
+function y(e) {
     let {
         invite: t,
         isMemberOfGuild: n,
         message: r,
         onTransitionToInviteChannel: d,
         onAcceptInstantInvite: u
-    } = e, _ = a.useRef(null), [h, g] = a.useState(!0), [T, S] = a.useState(!1), N = t.state === E.elq.ACCEPTING, j = (0, s.bG)([c.A], () => c.A.useReducedMotion);
+    } = e, _ = a.useRef(null), [h, g] = a.useState(!0), [f, y] = a.useState(!1), N = t.state === b.elq.ACCEPTING, j = (0, s.bG)([c.A], () => c.A.useReducedMotion);
     a.useLayoutEffect(() => {
-        S((_.current?.clientHeight ?? 0) > 292)
-    }, [S]);
+        y((_.current?.clientHeight ?? 0) > 292)
+    }, [y]);
     let L = (0, m.oO)(t),
         R = a.useCallback(() => {
-            !T || h && g(!1)
-        }, [h, T]),
+            !f || h && g(!1)
+        }, [h, f]),
         P = a.useCallback(() => {
-            !T || h || g(!0)
-        }, [h, T]),
-        w = a.useMemo(() => T && _.current?.clientHeight != null ? {
+            !f || h || g(!0)
+        }, [h, f]),
+        w = a.useMemo(() => f && _.current?.clientHeight != null ? {
             height: h ? 292 : _.current.clientHeight + 36 + 48,
             transition: j ? void 0 : "height 0.2s ease"
-        } : {}, [h, T, j]);
-    return null == L ? (0, i.jsx)(I.A, {}) : (0, i.jsxs)(o.sqX, {
-        className: l()(v.Gg, {
-            [v.vk]: T && h
+        } : {}, [h, f, j]);
+    return null == L ? (0, i.jsx)(E.A, {}) : (0, i.jsxs)(o.sqX, {
+        className: l()(T.Gg, {
+            [T.vk]: f && h
         }),
         onClick: R,
         style: w,
-        "aria-label": b.intl.string(b.t.dcl9MQ),
+        "aria-label": v.intl.string(v.t.dcl9MQ),
         children: [(0, i.jsxs)("div", {
-            className: v.uY,
+            className: T.uY,
             ref: _,
             children: [(0, i.jsx)(x.J$, {
                 profile: L,
-                className: v.vK
+                className: T.vK
             }), (0, i.jsx)(x.CG, {
                 profile: L
             }), (0, i.jsx)(A.A, {
                 profile: L
             }), (0, i.jsx)(p.P, {
                 profile: L,
-                className: v.rb
-            }), (0, i.jsx)(C.A, {
-                guild: null != t.guild ? (0, f.DY)(t.guild) : null,
+                className: T.rb
+            }), (0, i.jsx)(I.A, {
+                guild: null != t.guild ? (0, C.DY)(t.guild) : null,
                 roles: t.roles,
-                className: v.Ei
+                className: T.Ei
             })]
-        }), T && !h ? (0, i.jsx)("div", {
-            className: v.Se,
+        }), f && !h ? (0, i.jsx)("div", {
+            className: T.Se,
             children: (0, i.jsx)(o.QWc, {
                 textVariant: "text-xs/medium",
                 variant: "secondary",
                 size: "sm",
                 onClick: P,
-                text: b.intl.string(b.t.xdCLeM)
+                text: v.intl.string(v.t.xdCLeM)
             })
         }) : null, (0, i.jsxs)("div", {
-            className: l()(v.qr, {
-                [v.iK]: T
+            className: l()(T.qr, {
+                [T.iK]: f
             }),
-            children: [T && h ? (0, i.jsx)("div", {
-                className: v.D7
+            children: [f && h ? (0, i.jsx)("div", {
+                className: T.D7
             }) : null, (0, i.jsx)("div", {
-                className: l()(v.z8, {
-                    [v.it]: T && h
+                className: l()(T.z8, {
+                    [T.it]: f && h
                 }),
                 children: (0, i.jsx)("div", {
-                    className: v.UD,
-                    children: (0, i.jsx)(y, {
+                    className: T.UD,
+                    children: (0, i.jsx)(S, {
                         invite: t,
                         profile: L,
                         isMemberOfGuild: n,
@@ -108,7 +109,7 @@ function T(e) {
     })
 }
 
-function y(e) {
+function S(e) {
     let {
         invite: t,
         profile: n,
@@ -128,7 +129,8 @@ function y(e) {
             invite: t,
             action: e,
             inviter_id: l.author.id,
-            invite_message_id: l.id
+            invite_message_id: l.id,
+            invite_instance_id: (0, f._U)(t.code, l.id)
         }, A)
     }, [t, l, A, r]);
     return null == p ? null : (0, i.jsx)(g.Y, {

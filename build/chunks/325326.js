@@ -1,11 +1,10 @@
 /** chunk id: 325326 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
     LF: () => h
 });
 var i = n(64700),
-    s = n(311907),
-    l = n(334738),
+    l = n(311907),
+    s = n(334738),
     a = n(964459),
     r = n(187508),
     o = n(245205),
@@ -25,15 +24,15 @@ let h = () => {
             navigatedAway: n,
             isDesktop: h,
             withMentions: A = !1,
-            initialPageSize: m
-        } = e, _ = (0, s.bG)([d.A], () => d.A.shouldReload()), g = i.useRef(!1), [p, f] = i.useState(!1), {
+            initialPageSize: _
+        } = e, m = (0, l.bG)([d.A], () => d.A.shouldReload()), g = i.useRef(!1), [p, f] = i.useState(!1), {
             initialized: x,
             loading: E,
-            items: C,
-            hasMore: I,
+            items: I,
+            hasMore: C,
             cursor: N,
-            errored: S
-        } = (0, s.cf)([c.A], () => ({
+            errored: T
+        } = (0, l.cf)([c.A], () => ({
             initialized: c.A.initialized,
             loading: c.A.loading,
             items: c.A.items,
@@ -41,49 +40,49 @@ let h = () => {
             cursor: c.A.cursor,
             errored: c.A.errored
         })), {
-            roleFilter: b,
-            everyoneFilter: T
-        } = (0, s.cf)([r.Ay], () => ({
+            roleFilter: S,
+            everyoneFilter: b
+        } = (0, l.cf)([r.Ay], () => ({
             everyoneFilter: r.Ay.everyoneFilter,
             roleFilter: r.Ay.roleFilter
         }));
         i.useEffect(() => ((0, o.BZ)(!0), () => (0, o.BZ)(!1)), []), i.useEffect(() => {
-            x && t && (0, l.d_)(u.P.NOTIFICATION_CENTER)
+            x && t && (0, s.d_)(u.P.NOTIFICATION_CENTER)
         }, [t, x]);
-        let v = (0, a.A)();
+        let y = (0, a.A)();
         i.useEffect(() => () => {
-            h ? !v() && (S || C.length > 100) && (0, o.S3)() : n && C.length > 100 && (0, o.S3)()
-        }, [n, C, h, v, S]), i.useEffect(() => {
-            let e = _ && t;
+            h ? !y() && (T || I.length > 100) && (0, o.S3)() : n && I.length > 100 && (0, o.S3)()
+        }, [n, I, h, y, T]), i.useEffect(() => {
+            let e = m && t;
             (!x || e) && (0, o.ni)({
-                limit: m ?? (A ? 8 : 20),
+                limit: _ ?? (A ? 8 : 20),
                 with_mentions: A,
-                roles_filter: b,
-                everyone_filter: T
+                roles_filter: S,
+                everyone_filter: b
             })
-        }, [x, _, t, A, b, T, m]);
-        let y = i.useCallback(async e => {
-            !g.current && x && I && null != N && (e || !S) && (g.current = !0, f(!0), await (0, o.ni)({
+        }, [x, m, t, A, S, b, _]);
+        let v = i.useCallback(async e => {
+            !g.current && x && C && null != N && (e || !T) && (g.current = !0, f(!0), await (0, o.ni)({
                 after: N,
                 with_mentions: A,
-                roles_filter: b,
-                everyone_filter: T,
+                roles_filter: S,
+                everyone_filter: b,
                 limit: A ? 8 : 20
             }, () => {
                 g.current = !1
             }), f(!1))
-        }, [x, I, N, S, A, b, T]);
+        }, [x, C, N, T, A, S, b]);
         return {
             initialized: x,
             loading: E,
-            items: C,
-            hasMore: I,
-            loadMore: y,
+            items: I,
+            hasMore: C,
+            loadMore: v,
             loadingMore: p,
             setReadNotifItemToAcked: e => {
                 e.acked || (e.acked = !0)
             },
-            errored: S
+            errored: T
         }
     })({
         isFocused: !0,

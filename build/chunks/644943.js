@@ -1,6 +1,6 @@
 /** chunk id: 644943 params = (module,exports,require) **/
 "use strict";
-i.r(e.exports = {
+n.r(e.exports = {
     content: "content__777cc",
     staticSize: "staticSize__777cc",
     widget: "widget__777cc",

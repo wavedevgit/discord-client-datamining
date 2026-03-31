@@ -1,5 +1,4 @@
 /** chunk id: 972708 params = (module,exports,require) **/
-"use strict";
 e.exports = {
     my: "avatar__49508",
     yF: "divider__49508",

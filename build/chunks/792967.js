@@ -1,12 +1,11 @@
 /** chunk id: 792967 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
     A: () => u
 }), n(321073);
 var i = n(627968);
 n(64700);
-var s = n(735438),
-    l = n.n(s),
+var l = n(735438),
+    s = n.n(l),
     a = n(813516),
     r = n(5658),
     o = n(712209),
@@ -15,32 +14,32 @@ var s = n(735438),
 
 function u(e, t, n) {
     let {
-        markChannelRead: s,
+        markChannelRead: l,
         markGuildRead: u,
         deleteChannel: h,
         toggle: A,
-        getNumUnreadChannels: m
-    } = t, _ = null;
-    return l().flatMap(e, e => {
-        let t = e.sortOrder !== _;
-        _ = e.sortOrder;
-        let l = [];
-        return t && (e.hasLoadedAnything && e.sortOrder === o.xB.ReallyOldChannel ? l.push((0, i.jsx)(a.A, {
+        getNumUnreadChannels: _
+    } = t, m = null;
+    return s().flatMap(e, e => {
+        let t = e.sortOrder !== m;
+        m = e.sortOrder;
+        let s = [];
+        return t && (e.hasLoadedAnything && e.sortOrder === o.xB.ReallyOldChannel ? s.push((0, i.jsx)(a.A, {
             className: d.y,
             contentClassName: d.$,
             children: c.intl.string(c.t.roBMzj)
-        }, "old-divider")) : e.hasLoadedAnything && e.sortOrder === o.xB.NoNotifications && l.push((0, i.jsx)(a.A, {
+        }, "old-divider")) : e.hasLoadedAnything && e.sortOrder === o.xB.NoNotifications && s.push((0, i.jsx)(a.A, {
             className: d.y,
             contentClassName: d.$,
             children: c.intl.string(c.t["2Ys7nu"])
-        }, "disabled-divider"))), l.push((0, i.jsx)(r.A, {
+        }, "disabled-divider"))), s.push((0, i.jsx)(r.A, {
             channel: e,
-            markChannelRead: s,
+            markChannelRead: l,
             markGuildRead: u,
             toggle: A,
             deleteChannel: h,
             onJump: n,
-            getNumUnreadChannels: m
-        }, e.channelId)), l
+            getNumUnreadChannels: _
+        }, e.channelId)), s
     })
 }

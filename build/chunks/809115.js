@@ -1,7 +1,7 @@
 /** chunk id: 809115 params = (module,exports,require) **/
 n.d(t, {
-    a: () => m,
-    l: () => A
+    a: () => A,
+    l: () => m
 });
 var i = n(627968),
     l = n(64700),
@@ -14,7 +14,7 @@ var i = n(627968),
     u = n(96476);
 let _ = c.Ay.getEnableHardwareAcceleration() ? r.JsQ : r.euF;
 
-function m() {
+function A() {
     let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0],
         [t, n] = l.useState(!1),
         i = (0, a.bG)([s.A], () => s.A.useReducedMotion),
@@ -31,7 +31,7 @@ function m() {
     }
 }
 
-function A(e) {
+function m(e) {
     let {
         src: t
     } = e;

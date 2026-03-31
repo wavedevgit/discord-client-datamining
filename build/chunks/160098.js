@@ -1,12 +1,11 @@
 /** chunk id: 160098 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
     q: () => r
 }), n(321073);
 var i = n(64700),
-    s = n(429913),
-    l = n(322387);
-let a = new Set([l.Uo.INCOMING_GAME_FRIEND_REQUESTS, l.Uo.INCOMING_GAME_FRIEND_REQUESTS_ACCEPTED, l.Uo.INCOMING_FRIEND_REQUESTS, l.Uo.INCOMING_FRIEND_REQUESTS_ACCEPTED]);
+    l = n(429913),
+    s = n(322387);
+let a = new Set([s.Uo.INCOMING_GAME_FRIEND_REQUESTS, s.Uo.INCOMING_GAME_FRIEND_REQUESTS_ACCEPTED, s.Uo.INCOMING_FRIEND_REQUESTS, s.Uo.INCOMING_FRIEND_REQUESTS_ACCEPTED]);
 
 function r(e) {
     let t = i.useMemo(() => {
@@ -15,10 +14,10 @@ function r(e) {
         return e.forEach(e => {
             let {
                 applicationId: i,
-                type: s
+                type: l
             } = e;
-            !a.has(s) || null == i || t.has(i) || (t.add(i), n.push(i))
+            !a.has(l) || null == i || t.has(i) || (t.add(i), n.push(i))
         }), n
     }, [e]);
-    return (0, s.A)(t)
+    return (0, l.A)(t)
 }

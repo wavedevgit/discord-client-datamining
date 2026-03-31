@@ -25,7 +25,7 @@ let d = {
             setItemTypeFilter: s,
             reset: a,
             setCurrentTab: b
-        } = (0, o.v)(), p = r.useMemo(() => e !== c.G2.RIVALS && (e !== c.G2.ORBS || t) ? (0, c.dF)(e) ? c.G2.CATALOG : e : c.G2.HOME, [e, t]), [S, E] = r.useState(p), [A, h] = r.useState(c.Pf.VISIBLE);
+        } = (0, o.v)(), p = r.useMemo(() => e !== c.G2.RIVALS && (e !== c.G2.ORBS || t) ? (0, c.dF)(e) ? c.G2.CATALOG : e : c.G2.HOME, [e, t]), [S, E] = r.useState(p), [A, f] = r.useState(c.Pf.VISIBLE);
         r.useEffect(() => {
             b(S)
         }, [S, b]), r.useEffect(() => {
@@ -36,10 +36,10 @@ let d = {
             }
         }, [p, e, s, a]);
         let {
-            clearError: f
+            clearError: h
         } = (0, i.S)(), m = (0, l.W6)(), C = r.useCallback(async (e, t) => {
             if (e !== c.G2.RIVALS) {
-                if (f(), e === c.G2.CATALOG) a();
+                if (h(), e === c.G2.CATALOG) a();
                 else if ((0, c.dF)(e) && e !== S) {
                     let t = d[e];
                     null != t ? s(t) : a()
@@ -47,14 +47,14 @@ let d = {
                 if (S !== e) {
                     if (t) {
                         let e;
-                        h(c.Pf.OUT), await (e = 1.1 * c.H1, new Promise(t => setTimeout(t, e)))
+                        f(c.Pf.OUT), await (e = 1.1 * c.H1, new Promise(t => setTimeout(t, e)))
                     }
-                    E(e === c.G2.HOME || e === c.G2.ORBS ? e : c.G2.CATALOG), t && h(c.Pf.IN), m.push(u.BVt.COLLECTIBLES_SHOP_WITH_TAB(e), {
+                    E(e === c.G2.HOME || e === c.G2.ORBS ? e : c.G2.CATALOG), t && f(c.Pf.IN), m.push(u.BVt.COLLECTIBLES_SHOP_WITH_TAB(e), {
                         shallow: !0
-                    }), h(c.Pf.VISIBLE)
+                    }), f(c.Pf.VISIBLE)
                 }
             }
-        }, [m, s, a, S, f]);
+        }, [m, s, a, S, h]);
         return {
             selectedTab: S,
             transitionState: A,

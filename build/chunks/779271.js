@@ -1,30 +1,29 @@
 /** chunk id: 779271 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
     A: () => u
 });
 var i = n(627968),
-    s = n(64700),
-    l = n(503698),
-    a = n.n(l),
+    l = n(64700),
+    s = n(503698),
+    a = n.n(s),
     r = n(397927),
     o = n(402216),
     c = n(667992),
     d = n(876542);
-let u = s.memo(function(e) {
+let u = l.memo(function(e) {
     let {
         label: t,
         participantCount: n,
-        onClick: s,
-        className: l,
+        onClick: l,
+        className: s,
         collapsed: u,
         speakers: h,
         channel: A,
-        isStreamLive: m
+        isStreamLive: _
     } = e;
     return (0, i.jsxs)(r.DUT, {
-        onClick: s,
-        className: a()(d.kL, l),
+        onClick: l,
+        className: a()(d.kL, s),
         children: [null == h ? (0, i.jsx)(r.nFg, {
             size: "custom",
             color: "currentColor",
@@ -46,7 +45,7 @@ let u = s.memo(function(e) {
             children: [(0, i.jsx)(c.A, {
                 channel: A,
                 speakers: h
-            }), m && (0, i.jsx)(o.Ay, {})]
+            }), _ && (0, i.jsx)(o.Ay, {})]
         }), (0, i.jsx)(r.abt, {
             size: "custom",
             color: "currentColor",

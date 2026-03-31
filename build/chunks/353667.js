@@ -1,6 +1,6 @@
 /** chunk id: 353667 params = (module,exports,require) **/
 n.d(t, {
-    j: () => N
+    j: () => v
 });
 var i = n(627968),
     s = n(64700),
@@ -12,10 +12,10 @@ var i = n(627968),
     c = n(974544),
     u = n(351906),
     m = n(823092),
-    _ = n(963935),
-    g = n(894858),
-    x = n(272053),
-    A = n(397274),
+    g = n(963935),
+    _ = n(894858),
+    A = n(272053),
+    x = n(397274),
     h = n(641324),
     p = n(46373),
     T = n(32145);
@@ -56,7 +56,7 @@ function f(e) {
     })
 }
 
-function S(e) {
+function E(e) {
     let {
         decoration: t
     } = e, n = t.component;
@@ -69,7 +69,7 @@ function S(e) {
     })
 }
 
-function E(e) {
+function S(e) {
     let {
         panelKey: t,
         notice: n,
@@ -80,7 +80,7 @@ function E(e) {
         children: (0, i.jsx)(d.GtU, {
             className: T.XG,
             ref: e => {
-                A.A.setPanelScrollerRef(e)
+                x.A.setPanelScrollerRef(e)
             },
             children: (0, i.jsx)("div", {
                 className: T.nd,
@@ -101,7 +101,7 @@ function b(e) {
     } = e;
     return (0, i.jsxs)("div", {
         className: T.LZ,
-        children: [null != n && (0, i.jsx)(S, {
+        children: [null != n && (0, i.jsx)(E, {
             decoration: n
         }), t.map((e, n) => (0, i.jsxs)(s.Fragment, {
             children: [(0, i.jsx)(h.A, {
@@ -119,29 +119,29 @@ function C(e) {
         layout: n,
         notice: l,
         decoration: a
-    } = e, r = g.A.useState(e => {
+    } = e, r = _.A.useState(e => {
         let {
             currentTabKeys: n
         } = e;
         return n.get(t)
     }) ?? n[0].key;
     s.useEffect(() => {
-        let e = g.A.getField("currentTabKeys");
+        let e = _.A.getField("currentTabKeys");
         if (n.some(n => n.key === e.get(t))) return;
         let i = new Map(e);
-        i.set(t, n[0].key), g.A.setState({
+        i.set(t, n[0].key), _.A.setState({
             currentTabKeys: i
         })
     }, [n, t]);
     let o = n.find(e => e.key === r) ?? n[0];
-    return (0, i.jsxs)(E, {
+    return (0, i.jsxs)(S, {
         panelKey: t,
         notice: l,
         children: [(0, i.jsx)(d.VQ0, {
             className: T.$H,
             selectedItem: r,
             onItemSelect: e => {
-                x.A.navigate(e, {
+                A.A.navigate(e, {
                     onTransitionStart: () => {
                         let t = n.find(t => t.key === e);
                         t?.onItemSelect?.()
@@ -171,14 +171,14 @@ function C(e) {
     })
 }
 
-function v(e) {
+function N(e) {
     let {
         panelKey: t,
         notice: n,
         decoration: s,
         layout: l
     } = e;
-    return (0, i.jsx)(E, {
+    return (0, i.jsx)(S, {
         panelKey: t,
         notice: n,
         children: (0, i.jsx)(b, {
@@ -188,20 +188,20 @@ function v(e) {
     })
 }
 
-function N(e) {
+function v(e) {
     let {
         node: t
     } = e, {
         layout: n
     } = t;
     if ((0, r.bG)([u.A], () => u.A.hidePersonalInformation) && t.hideInStreamerMode) return (0, i.jsx)(c.A, {});
-    if ((0, _.zY)(n)) return (0, i.jsx)(C, {
+    if ((0, g.zY)(n)) return (0, i.jsx)(C, {
         panelKey: t.key,
         notice: t.notice,
         decoration: t.decoration,
         layout: n
     });
-    if ((0, _.Iu)(n)) return (0, i.jsx)(v, {
+    if ((0, g.Iu)(n)) return (0, i.jsx)(N, {
         panelKey: t.key,
         notice: t.notice,
         decoration: t.decoration,

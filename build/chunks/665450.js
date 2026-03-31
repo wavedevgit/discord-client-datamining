@@ -1,12 +1,11 @@
 /** chunk id: 665450 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
     A: () => h
 });
 var i = n(627968);
 n(64700);
-var s = n(503698),
-    l = n.n(s),
+var l = n(503698),
+    s = n.n(l),
     a = n(311907),
     r = n(397927),
     o = n(775602),
@@ -17,7 +16,7 @@ var s = n(503698),
 function h(e) {
     let {
         height: t
-    } = e, s = (0, a.bG)([o.A], () => o.A.useReducedMotion);
+    } = e, l = (0, a.bG)([o.A], () => o.A.useReducedMotion);
     return (0, i.jsxs)("div", {
         className: u.zr,
         children: [(0, i.jsx)(r.akl, {
@@ -27,8 +26,8 @@ function h(e) {
                 } = e;
                 return t
             }),
-            shouldAnimate: !s,
-            className: l()(u.Qw, {
+            shouldAnimate: !l,
+            className: s()(u.Qw, {
                 [u.R]: t <= 280
             })
         }), (0, i.jsx)(r.Heading, {

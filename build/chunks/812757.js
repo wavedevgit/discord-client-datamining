@@ -12,14 +12,14 @@ var i = n(627968),
     c = n(117178),
     u = n(419954),
     m = n(532624),
-    _ = n(780964),
-    g = n(652215),
-    x = n(985018),
-    A = n(988352);
-let h = (0, u.E2)(_.X.CLIPS_KEYBIND, {
-    useSearchTerms: () => [x.intl.string(x.t.pf54EU), x.intl.string(x.t["QyB/jK"])],
+    g = n(780964),
+    _ = n(652215),
+    A = n(985018),
+    x = n(988352);
+let h = (0, u.E2)(g.X.CLIPS_KEYBIND, {
+    useSearchTerms: () => [A.intl.string(A.t.pf54EU), A.intl.string(A.t["QyB/jK"])],
     Component: () => {
-        let e = (0, r.bG)([m.Ay], () => m.Ay.getKeybindForAction(g.hCu.SAVE_CLIP, !0));
+        let e = (0, r.bG)([m.Ay], () => m.Ay.getKeybindForAction(_.hCu.SAVE_CLIP, !0));
         a()(null != e, "Save clip keybind unset");
         let t = s.useCallback(t => {
             d.A.setKeybind({
@@ -28,11 +28,11 @@ let h = (0, u.E2)(_.X.CLIPS_KEYBIND, {
             })
         }, [e]);
         return (0, i.jsx)(o.D0$, {
-            label: x.intl.string(x.t.pf54EU),
-            description: x.intl.string(x.t["QyB/jK"]),
+            label: A.intl.string(A.t.pf54EU),
+            description: A.intl.string(A.t["QyB/jK"]),
             layout: "horizontal",
             children: (0, i.jsx)("div", {
-                className: A.g,
+                className: x.g,
                 children: (0, i.jsx)(c.A, {
                     defaultValue: e.shortcut,
                     onChange: t

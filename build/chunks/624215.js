@@ -1,5 +1,4 @@
 /** chunk id: 624215 params = (module,exports,require) **/
-"use strict";
 e.exports = {
     Qq: "text_c8b06d",
     n_: "textLeft_c8b06d text_c8b06d",

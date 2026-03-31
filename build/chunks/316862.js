@@ -1,11 +1,11 @@
 /** chunk id: 316862 params = (module,exports,require) **/
 n.d(t, {
-    A: () => g
+    A: () => h
 });
 var l = n(627968),
     a = n(64700),
-    r = n(311907),
-    i = n(157559),
+    i = n(311907),
+    r = n(157559),
     s = n(58149),
     d = n(997509),
     o = n(794967),
@@ -15,54 +15,54 @@ var l = n(627968),
     m = n(576705),
     x = n(309010),
     p = n(652215),
-    h = n(985018);
-let g = e => {
+    g = n(985018);
+let h = e => {
     let {
         application: t,
         reportId: n
-    } = e, [g, A] = a.useState(!1), [v, f] = a.useState(!1), b = (0, r.bG)([x.A, u.A], () => u.A.getChannel(x.A.getChannelId())?.guild_id), [C, T] = a.useState(null);
+    } = e, [h, A] = a.useState(!1), [b, v] = a.useState(!1), f = (0, i.bG)([x.A, u.A], () => u.A.getChannel(x.A.getChannelId())?.guild_id), [T, C] = a.useState(null);
     a.useEffect(() => {
-        null != C && (A(!0), f(!0))
-    }, [C]), a.useEffect(() => {
-        if (null == b) return;
+        null != T && (A(!0), v(!0))
+    }, [T]), a.useEffect(() => {
+        if (null == f) return;
         let e = !1;
         return (async () => {
             let n = null;
             try {
-                n = await (0, o.c)(b)
+                n = await (0, o.c)(f)
             } catch {}
             if (e || null == n) return;
             let l = n.find(e => e.application?.id === t.id);
-            null != l && T(l)
+            null != l && C(l)
         })(), () => {
             e = !0
         }
-    }, [b, t.id]);
+    }, [f, t.id]);
     let j = a.useCallback(() => {
-            f(!1), s.Ay.trackWithMetadata(p.HAw.IAR_REMOVE_APP_BUTTON_CLICKED, {
-                guild_id: b,
+            v(!1), s.Ay.trackWithMetadata(p.HAw.IAR_REMOVE_APP_BUTTON_CLICKED, {
+                guild_id: f,
                 application_id: t.id,
                 report_id: n
-            }), null != b && null != C && d.A.disableIntegration(b, C.id).catch(() => {
-                i.A.show({
-                    title: h.intl.string(h.t.wYqMmI),
-                    body: h.intl.string(h.t.A4Mnst)
+            }), null != f && null != T && d.A.disableIntegration(f, T.id).catch(() => {
+                r.A.show({
+                    title: g.intl.string(g.t.wYqMmI),
+                    body: g.intl.string(g.t.A4Mnst)
                 })
             })
-        }, [t.id, b, C, n]),
-        I = (0, r.bG)([m.A, _.A], () => {
-            let e = _.A.getGuild(b);
+        }, [t.id, f, T, n]),
+        I = (0, i.bG)([m.A, _.A], () => {
+            let e = _.A.getGuild(f);
             if (null == e) return !1;
             let n = m.A.can(p.xBc.MANAGE_GUILD, e),
                 l = null == t.bot || m.A.canManageUser(p.xBc.MANAGE_GUILD, t.bot.id, e);
             return n && l
         });
-    return null != t && null != b && g && I ? (0, l.jsx)(c.PQ, {
-        title: h.intl.string(h.t["WV/CsH"]),
-        description: h.intl.string(h.t["FlcC+3"]),
-        buttonText: v ? h.intl.string(h.t.aCJlq4) : h.intl.string(h.t["6I1F3i"]),
-        buttonDisabled: !v,
+    return null != t && null != f && h && I ? (0, l.jsx)(c.PQ, {
+        title: g.intl.string(g.t["WV/CsH"]),
+        description: g.intl.string(g.t["FlcC+3"]),
+        buttonText: b ? g.intl.string(g.t.aCJlq4) : g.intl.string(g.t["6I1F3i"]),
+        buttonDisabled: !b,
         onButtonPress: j,
-        buttonVariant: v ? "critical-primary" : "secondary"
+        buttonVariant: b ? "critical-primary" : "secondary"
     }) : null
 }

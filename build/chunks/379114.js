@@ -12,25 +12,25 @@ var i = n(627968),
     d = n(888675),
     u = n(976860),
     _ = n(942075),
-    m = n(292548),
-    A = n(817533),
+    A = n(292548),
+    m = n(817533),
     E = n(652215),
-    I = n(746080),
-    T = n(985018),
-    f = n(871029);
+    T = n(746080),
+    I = n(985018),
+    N = n(871029);
 
-function N(e) {
+function g(e) {
     let {
         username: t
     } = e;
     return (0, i.jsx)("div", {
-        className: f._X,
+        className: N._X,
         children: (0, i.jsx)(a.Text, {
             tag: "p",
-            className: f._X,
+            className: N._X,
             color: "status-positive-text",
             variant: "heading-xl/medium",
-            children: T.intl.format(T.t.MLKSln, {
+            children: I.intl.format(I.t.MLKSln, {
                 username: t,
                 usernameHook: (e, t) => (0, i.jsx)(a.Text, {
                     tag: "span",
@@ -44,23 +44,23 @@ function N(e) {
     })
 }
 
-function g(e) {
+function f(e) {
     let {
         guildId: t,
         user: n,
         username: l
     } = e;
     return (0, i.jsxs)("div", {
-        className: f.pG,
+        className: N.pG,
         role: "img",
-        "aria-label": T.intl.formatToPlainString(T.t["utf8+W"], {
+        "aria-label": I.intl.formatToPlainString(I.t["utf8+W"], {
             username: l
         }),
-        children: [(0, i.jsx)(A.A, {
+        children: [(0, i.jsx)(m.A, {
             guildId: t,
             user: n,
-            className: f.sz
-        }), (0, i.jsx)(N, {
+            className: N.sz
+        }), (0, i.jsx)(g, {
             username: l
         })]
     })
@@ -70,8 +70,8 @@ function C(e) {
     let {
         channel: t,
         message: a,
-        compact: A
-    } = e, T = (0, o.Ay)(a), f = function(e) {
+        compact: m
+    } = e, I = (0, o.Ay)(a), N = function(e) {
         let {
             author: t,
             channel: n,
@@ -83,34 +83,34 @@ function C(e) {
             messageId: i.id
         })(t), {
             analyticsLocations: d
-        } = (0, s.Ay)(r.A.GUILD_ROLE_SUBSCRIPTION_PURCHASE_SYSTEM_MESSAGE), m = i.roleSubscriptionData, A = l.useCallback(() => {
-            (0, u.pX)(E.BVt.CHANNEL(a, I.VV.ROLE_SUBSCRIPTIONS), {
+        } = (0, s.Ay)(r.A.GUILD_ROLE_SUBSCRIPTION_PURCHASE_SYSTEM_MESSAGE), A = i.roleSubscriptionData, m = l.useCallback(() => {
+            (0, u.pX)(E.BVt.CHANNEL(a, T.VV.ROLE_SUBSCRIPTIONS), {
                 sourceLocationStack: d
-            }), m?.role_subscription_listing_id != null && (0, _.xH)(a, n.id, i.id, m.role_subscription_listing_id)
-        }, [a, n, i, m, d]);
-        return null == m ? null : (0, _.gw)({
+            }), A?.role_subscription_listing_id != null && (0, _.xH)(a, n.id, i.id, A.role_subscription_listing_id)
+        }, [a, n, i, A, d]);
+        return null == A ? null : (0, _.gw)({
             username: t.nick,
             usernameOnClickHandler: o,
-            roleSubscriptionOnClickHandler: A,
+            roleSubscriptionOnClickHandler: m,
             guildId: a,
             roleSubscriptionData: i.roleSubscriptionData
         })
     }({
         channel: t,
         message: a,
-        author: T
-    }), N = a.roleSubscriptionData?.total_months_subscribed != null && a.roleSubscriptionData?.total_months_subscribed <= 1;
-    return null == f ? null : (0, i.jsxs)(i.Fragment, {
+        author: I
+    }), g = a.roleSubscriptionData?.total_months_subscribed != null && a.roleSubscriptionData?.total_months_subscribed <= 1;
+    return null == N ? null : (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(d.A, {
             icon: n(617184),
             timestamp: a.timestamp,
-            compact: A,
-            children: f
-        }), N && (0, i.jsx)(g, {
+            compact: m,
+            children: N
+        }), g && (0, i.jsx)(f, {
             guildId: t.guild_id,
             user: a.author,
-            username: T.nick
-        }), (0, i.jsx)(m.A, {
+            username: I.nick
+        }), (0, i.jsx)(A.A, {
             channel: t,
             message: a
         })]

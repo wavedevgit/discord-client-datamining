@@ -1,11 +1,10 @@
 /** chunk id: 812771 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
     A: () => f,
     X: () => g
 });
-var i, s = n(627968),
-    l = n(64700),
+var i, l = n(627968),
+    s = n(64700),
     a = n(503698),
     r = n.n(a),
     o = n(735438),
@@ -14,8 +13,8 @@ var i, s = n(627968),
     u = n(817281),
     h = n(761929),
     A = n(964404),
-    m = n(743898),
-    _ = n(53454),
+    _ = n(743898),
+    m = n(53454),
     g = ((i = {})[i.PostSidebar = 0] = "PostSidebar", i[i.ThreadSidebar = 1] = "ThreadSidebar", i[i.CallChatSidebar = 2] = "CallChatSidebar", i[i.MessageRequestSidebar = 3] = "MessageRequestSidebar", i[i.HomeSidebar = 4] = "HomeSidebar", i);
 
 function p(e) {
@@ -23,20 +22,20 @@ function p(e) {
         resizableNode: t,
         onResize: n,
         onResizeEnd: i,
-        maxWidth: l,
+        maxWidth: s,
         minWidth: a
     } = e, r = (0, h.A)({
         minDimension: a,
-        maxDimension: l,
+        maxDimension: s,
         resizableDomNodeRef: t,
         onElementResize: n,
         onElementResizeEnd: i,
         orientation: h.R.HORIZONTAL_LEFT,
         throttleDuration: 16
     });
-    return (0, s.jsx)("div", {
+    return (0, l.jsx)("div", {
         onMouseDown: r,
-        className: _.Di
+        className: m.Di
     })
 }
 
@@ -47,7 +46,7 @@ function f(e) {
         onWidthChange: i,
         children: a,
         floatingLayer: h
-    } = e, g = l.useRef(null), f = function(e) {
+    } = e, g = s.useRef(null), f = function(e) {
         switch (e) {
             case 0:
                 return "postSidebarWidth";
@@ -60,49 +59,49 @@ function f(e) {
             case 4:
                 return "homeSidebarWidth"
         }
-    }(t), [x, E] = l.useState(A.Ay[f]), C = l.useCallback(e => {
+    }(t), [x, E] = s.useState(A.Ay[f]), I = s.useCallback(e => {
         u.Ay.updatedUnsyncedSettings({
             [f]: e
         })
-    }, [f]), I = (0, m.P)({
+    }, [f]), C = (0, _.P)({
         maxWidth: n,
         minWidth: 450
-    }), N = (0, d.rdh)(c.A.modules.chat.RESIZE_HANDLE_WIDTH), S = (0, o.clamp)(x, 450, n), b = I ? S : S + N;
-    l.useEffect(() => {
-        i?.(S, I)
-    }, [S, i, I]);
-    let T = h ?? l.Fragment;
-    return (0, s.jsxs)(s.Fragment, {
-        children: [!I && (0, s.jsx)("div", {
+    }), N = (0, d.rdh)(c.A.modules.chat.RESIZE_HANDLE_WIDTH), T = (0, o.clamp)(x, 450, n), S = C ? T : T + N;
+    s.useEffect(() => {
+        i?.(T, C)
+    }, [T, i, C]);
+    let b = h ?? s.Fragment;
+    return (0, l.jsxs)(l.Fragment, {
+        children: [!C && (0, l.jsx)("div", {
             style: {
-                minWidth: b
+                minWidth: S
             }
-        }), (0, s.jsx)(T, {
-            children: (0, s.jsxs)("div", {
-                className: r()(_.PA, {
-                    [_.R]: !1
+        }), (0, l.jsx)(b, {
+            children: (0, l.jsxs)("div", {
+                className: r()(m.PA, {
+                    [m.R]: !1
                 }),
-                children: [(0, s.jsx)("div", {
-                    className: r()(_.Uc, {
-                        [_.DU]: I,
-                        [_.iK]: !I
+                children: [(0, l.jsx)("div", {
+                    className: r()(m.Uc, {
+                        [m.DU]: C,
+                        [m.iK]: !C
                     }),
                     style: {
-                        width: b
+                        width: S
                     }
-                }), !I && (0, s.jsx)(p, {
+                }), !C && (0, l.jsx)(p, {
                     minWidth: 450,
                     maxWidth: n,
                     resizableNode: g,
                     onResize: E,
-                    onResizeEnd: C
-                }), (0, s.jsx)("div", {
+                    onResizeEnd: I
+                }), (0, l.jsx)("div", {
                     ref: g,
-                    className: r()(_.kL, {
-                        [_.DU]: I
+                    className: r()(m.kL, {
+                        [m.DU]: C
                     }),
                     style: {
-                        width: S
+                        width: T
                     },
                     children: a
                 })]

@@ -1,6 +1,6 @@
 /** chunk id: 229673 params = (module,exports,require) **/
 n.d(t, {
-    A: () => A
+    A: () => m
 });
 var i = n(627968);
 n(64700);
@@ -13,33 +13,33 @@ var l = n(934551),
     d = n(888675),
     u = n(652215),
     _ = n(985018),
-    m = n(226234);
+    A = n(226234);
 
-function A(e) {
+function m(e) {
     let {
         message: t,
         channel: n,
-        author: A,
+        author: m,
         compact: E
     } = e, {
-        nick: I
-    } = (0, o.d8)(A, n), T = (0, c.P)({
-        user: A,
+        nick: T
+    } = (0, o.d8)(m, n), I = (0, c.P)({
+        user: m,
         channelId: n.id,
         guildId: void 0,
         messageId: void 0
-    })(), f = (0, a.h)(t.applicationId);
-    if (null == f) return null;
-    let N = _.intl.format(_.t.m7Lwas, {
-        username: I,
-        usernameHook: T,
-        gameName: f.name,
+    })(), N = (0, a.h)(t.applicationId);
+    if (null == N) return null;
+    let g = _.intl.format(_.t.m7Lwas, {
+        username: T,
+        usernameHook: I,
+        gameName: N.name,
         gameIconHook: e => (0, i.jsxs)("span", {
-            className: m.Y_,
+            className: A.Y_,
             children: [(0, i.jsx)(r.A, {
-                game: f,
+                game: N,
                 size: r.M.XXSMALL,
-                className: m.p4
+                className: A.p4
             }), " ", e]
         }),
         helpdeskArticle: s.A.getArticleURL(u.MVz.SOCIAL_LAYER_CONNECTIONS)
@@ -49,9 +49,9 @@ function A(e) {
             size: "sm"
         }),
         compact: E,
-        contentClassName: m.Qs,
+        contentClassName: A.Qs,
         children: (0, i.jsx)("div", {
-            children: N
+            children: g
         })
     })
 }

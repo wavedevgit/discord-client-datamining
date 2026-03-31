@@ -1,5 +1,4 @@
 /** chunk id: 528622 params = (module,exports,require) **/
-"use strict";
 e.exports = {
     wx: "header_feae96",
     P9: "questInfo_feae96",

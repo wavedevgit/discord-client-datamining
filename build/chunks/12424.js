@@ -1,6 +1,6 @@
 /** chunk id: 12424 params = (module,exports,require) **/
 n.d(t, {
-    A: () => g
+    A: () => _
 });
 var i = n(627968);
 n(64700);
@@ -13,15 +13,15 @@ var s = n(397927),
     c = n(652215),
     u = n(788868),
     m = n(985018),
-    _ = n(196709);
-let g = function(e) {
+    g = n(196709);
+let _ = function(e) {
     let {
         hasAppliedGuildBoosts: t,
         hasBoostPerk: n,
-        hasGuildAffinitiesOrInGuild: g,
-        subscriptionIsPausedOrPausePending: x
+        hasGuildAffinitiesOrInGuild: _,
+        subscriptionIsPausedOrPausePending: A
     } = e, {
-        subtitle: A,
+        subtitle: x,
         flavor: h
     } = function(e) {
         let {
@@ -44,27 +44,27 @@ let g = function(e) {
                 helpdeskArticle: l.A.getArticleURL(c.MVz.GUILD_SUBSCRIPTIONS)
             })
         };
-        let _ = u.hd[u.gD.PREMIUM_MONTH_GUILD],
-            g = a.Ay.getDefaultPrice(_.id, n),
-            x = (0, r.CE)((0, r.$g)(g.amount, g.currency), _.interval, _.intervalCount);
+        let g = u.hd[u.gD.PREMIUM_MONTH_GUILD],
+            _ = a.Ay.getDefaultPrice(g.id, n),
+            A = (0, r.CE)((0, r.$g)(_.amount, _.currency), g.interval, g.intervalCount);
         return {
             subtitle: n ? m.intl.string(m.t.bhPzXR) : m.intl.string(m.t.Zs9h9Z),
             flavor: m.intl.formatToPlainString(m.t.PGgTdA, {
-                monthlyGuildBoostPrice: x
+                monthlyGuildBoostPrice: A
             })
         }
     }({
         hasAppliedGuildBoosts: t,
         hasBoostPerk: n,
-        hasGuildAffinitiesOrInGuild: g,
-        subscriptionIsPausedOrPausePending: x
+        hasGuildAffinitiesOrInGuild: _,
+        subscriptionIsPausedOrPausePending: A
     });
     return (0, i.jsxs)("div", {
-        className: _.i,
+        className: g.i,
         children: [(0, i.jsx)(s.Heading, {
             variant: "heading-lg/bold",
-            className: _.V,
-            children: A
+            className: g.V,
+            children: x
         }), null != h && (0, i.jsx)(s.Text, {
             variant: "text-sm/normal",
             children: h

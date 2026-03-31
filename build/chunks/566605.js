@@ -3,8 +3,8 @@ n.d(t, {
     A: () => g
 });
 var i = n(64700),
-    l = n(311907),
-    a = n(704824),
+    a = n(311907),
+    l = n(704824),
     s = n(429913),
     r = n(633075),
     o = n(667049),
@@ -13,7 +13,7 @@ var i = n(64700),
     u = n(395332);
 
 function g(e) {
-    let t = (0, l.bG)([d.default], () => d.default.getCurrentUser()),
+    let t = (0, a.bG)([d.default], () => d.default.getCurrentUser()),
         n = (0, u.DB)({
             location: e.location
         }),
@@ -23,7 +23,7 @@ function g(e) {
         {
             tokens: p,
             fetched: f
-        } = (0, a.j)(m),
+        } = (0, l.j)(m),
         h = (0, o.A)(t?.id),
         _ = null == t || null == g || null == p || !f;
     return i.useMemo(() => _ ? {

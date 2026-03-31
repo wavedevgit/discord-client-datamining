@@ -1,12 +1,11 @@
 /** chunk id: 779881 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
     A: () => u
 });
 var i = n(627968);
 n(64700);
-var s = n(442433),
-    l = n(514179),
+var l = n(442433),
+    s = n(514179),
     a = n(976860),
     r = n(652793),
     o = n(652215),
@@ -20,7 +19,7 @@ function u(e) {
     } = e;
     return (0, i.jsx)(r.G, {
         id: `subscriptions-${t.id}`,
-        renderIcon: e => (0, i.jsx)(l.A, {
+        renderIcon: e => (0, i.jsx)(s.A, {
             className: e
         }),
         text: d.intl.string(d.t["KzCF/6"]),
@@ -29,7 +28,7 @@ function u(e) {
             (0, a.pX)(o.BVt.CHANNEL(t.id, c.VV.ROLE_SUBSCRIPTIONS))
         },
         onContextMenu: e => {
-            null != t && (0, s.L3)(e, async () => {
+            null != t && (0, l.L3)(e, async () => {
                 let {
                     default: e
                 } = await n.e("98126").then(n.bind(n, 650730));

@@ -1,11 +1,10 @@
 /** chunk id: 366251 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
     A: () => h
 });
 var i = n(311907),
-    s = n(73153),
-    l = n(383501);
+    l = n(73153),
+    s = n(383501);
 let a = {},
     r = !1,
     o = null;
@@ -15,25 +14,25 @@ function c(e) {
 }
 
 function d() {
-    if (!r && l.A.isConnected()) {
-        let e = l.A.getChannelId();
+    if (!r && s.A.isConnected()) {
+        let e = s.A.getChannelId();
         if (null != e) return c(e), o = e, r = !0, !0
-    } else if (r && !l.A.isConnected() && null != o) return c(o), o = null, r = !1, !0;
+    } else if (r && !s.A.isConnected() && null != o) return c(o), o = null, r = !1, !0;
     return !1
 }
 class u extends i.Ay.Store {
     static displayName = "VoiceInvitesuggestionsStore ";
     initialize() {
-        this.waitFor(l.A), this.syncWith([l.A], d)
+        this.waitFor(s.A), this.syncWith([s.A], d)
     }
     getIsPopoverDismissed(e) {
         return null != e && (a[e] ?? !1)
     }
     getShouldShowPopover(e) {
-        return null != e && l.A.isConnected() && l.A.getChannelId() === e && !this.getIsPopoverDismissed(e)
+        return null != e && s.A.isConnected() && s.A.getChannelId() === e && !this.getIsPopoverDismissed(e)
     }
 }
-let h = new u(s.h, {
+let h = new u(l.h, {
     VOICE_INVITE_SUGGESTIONS_DISMISS_POPOVER: function(e) {
         let {
             channelId: t

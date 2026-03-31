@@ -1,6 +1,6 @@
 /** chunk id: 17143 params = (module,exports,require) **/
 i.d(e, {
-    A: () => I,
+    A: () => _,
     V: () => g.V
 });
 var n = i(627968),
@@ -12,8 +12,8 @@ var n = i(627968),
     d = i(311907),
     u = i(205693),
     c = i(451988),
-    A = i(990078),
-    m = i(397927),
+    m = i(990078),
+    A = i(397927),
     h = i(827343),
     p = i(765671),
     g = i(123902),
@@ -23,7 +23,7 @@ var n = i(627968),
     E = i(652215),
     C = i(985018),
     v = i(163014);
-class _ extends l.PureComponent {
+class I extends l.PureComponent {
     _initTimeout = new c.Ep;
     _silenceTimeout = new c.Ep;
     _messageTimeout = new c.Ep;
@@ -116,7 +116,7 @@ class _ extends l.PureComponent {
             isMicTesting: i,
             isDetectingInput: l
         } = this.state;
-        return null == t && null == e ? null : (0, n.jsx)(m.Text, {
+        return null == t && null == e ? null : (0, n.jsx)(A.Text, {
             variant: "text-xs/normal",
             color: "text-subtle",
             className: v.Qe,
@@ -142,13 +142,13 @@ class _ extends l.PureComponent {
         } = this.props, {
             isMicTesting: S,
             volume: E,
-            isDetectingInput: _
-        } = this.state, I = t && !S ? C.intl.string(C.t["9viE2A"]) : null;
+            isDetectingInput: I
+        } = this.state, _ = t && !S ? C.intl.string(C.t["9viE2A"]) : null;
         S && t && !u && this._micTestStop();
-        let y = a.length >= r.length ? a : r;
+        let x = a.length >= r.length ? a : r;
         return (0, n.jsxs)("div", {
             className: s()(v.kL, f),
-            children: [(0, n.jsx)(m.D0$, {
+            children: [(0, n.jsx)(A.D0$, {
                 label: e ?? void 0,
                 hideLabel: p,
                 description: p ? null : i,
@@ -161,21 +161,21 @@ class _ extends l.PureComponent {
                         children: [(0, n.jsx)("div", {
                             className: v.km,
                             "aria-hidden": !0,
-                            children: (0, n.jsx)(m.Button, {
+                            children: (0, n.jsx)(A.Button, {
                                 buttonRef: h,
                                 size: d,
                                 variant: o,
-                                text: y
+                                text: x
                             })
-                        }), (0, n.jsx)(A.m, {
-                            text: I,
+                        }), (0, n.jsx)(m.m, {
+                            text: _,
                             children: (0, n.jsx)("div", {
                                 style: null != c ? {
                                     minWidth: c
                                 } : {
                                     visibility: "hidden"
                                 },
-                                children: (0, n.jsx)(m.Button, {
+                                children: (0, n.jsx)(A.Button, {
                                     size: d,
                                     variant: o,
                                     text: S ? a : r,
@@ -191,11 +191,11 @@ class _ extends l.PureComponent {
                         size: d
                     }), this.renderCaption()]
                 })
-            }), null != T && (0, n.jsx)(m.Text, {
+            }), null != T && (0, n.jsx)(A.Text, {
                 variant: "text-sm/normal",
                 color: "text-subtle",
                 style: {
-                    visibility: S && !_ ? "hidden" : "visible"
+                    visibility: S && !I ? "hidden" : "visible"
                 },
                 children: T
             })]
@@ -203,7 +203,7 @@ class _ extends l.PureComponent {
     }
 }
 
-function I(t) {
+function _(t) {
     let {
         inputDevice: e,
         outputDevice: i,
@@ -246,12 +246,12 @@ function I(t) {
             inputMode: f.Ay.getMode(),
             isDeafened: f.Ay.isSelfDeaf()
         }
-    }), A = (0, d.bG)([T.A], () => T.A.isConnected()), {
-        ref: m,
+    }), m = (0, d.bG)([T.A], () => T.A.isConnected()), {
+        ref: A,
         width: h
     } = (0, p.Ay)();
-    return (0, n.jsx)(_, {
-        isVoiceConnected: A,
+    return (0, n.jsx)(I, {
+        isVoiceConnected: m,
         inputVolume: s,
         outputVolume: a,
         inputMode: u,
@@ -260,7 +260,7 @@ function I(t) {
         vadAutoThreshold: r,
         inputDeviceName: e?.name ?? "",
         outputDeviceName: i?.name ?? "",
-        measureButtonRef: m,
+        measureButtonRef: A,
         buttonMinWidth: h,
         ...t
     })

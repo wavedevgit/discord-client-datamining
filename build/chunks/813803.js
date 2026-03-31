@@ -5,63 +5,63 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var l = n(877624),
-    r = n(311907),
-    s = n(554146),
-    a = n(397927),
+    s = n(311907),
+    a = n(554146),
+    r = n(397927),
     o = n(688810),
     c = n(532794),
     d = n(412260),
     u = n(357186),
-    _ = n(379848),
-    E = n(49999),
-    T = n(652215),
-    A = n(985018),
-    I = n(381703);
+    h = n(379848),
+    A = n(49999),
+    _ = n(652215),
+    m = n(985018),
+    g = n(381703);
 let p = e => {
     let {
         dismissibleContent: t,
         noticeType: n
     } = e, {
         analyticsLocations: p
-    } = (0, o.Ay)(), N = (0, r.bG)([d.A], () => {
+    } = (0, o.Ay)(), f = (0, s.bG)([d.A], () => {
         let e = d.A.getMarketingComponentByType(l.C.GIFT_REMINDER_NAGBAR);
         return null == e || "giftReminderNagbar" !== e.properties.properties.oneofKind ? null : e.properties.properties.giftReminderNagbar
     });
-    return (0, i.jsx)(_.GY, {
+    return (0, i.jsx)(h.GY, {
         contentType: t,
         latestVersion: (0, u.c)(t),
-        groupName: E.m.NOTICE_BAR,
+        groupName: A.m.NOTICE_BAR,
         bypassAutoDismiss: !0,
         children: e => {
             let {
                 visibleContent: t,
                 markAsDismissed: l
             } = e;
-            if (t === s.M.GIFTING_PROMOTION_REMINDER) return null == N ? null : (0, i.jsxs)(a.$Td, {
-                color: a.Hv$.PREMIUM_TIER_2,
-                children: [(0, i.jsx)(a.PMB, {
-                    onClick: () => l(E.i.USER_DISMISS),
+            if (t === a.M.GIFTING_PROMOTION_REMINDER) return null == f ? null : (0, i.jsxs)(r.$Td, {
+                color: r.Hv$.PREMIUM_TIER_2,
+                children: [(0, i.jsx)(r.PMB, {
+                    onClick: () => l(A.i.USER_DISMISS),
                     noticeType: n
-                }), (0, i.jsx)(a.okO, {
+                }), (0, i.jsx)(r.okO, {
                     size: "custom",
                     width: 20,
                     height: 20,
                     color: "currentColor",
-                    className: I.ez
-                }), N.body, (0, i.jsx)(a.Z_L, {
+                    className: g.ez
+                }), f.body, (0, i.jsx)(r.Z_L, {
                     onClick: () => {
                         (0, c.A)({
                             isGift: !0,
                             initialPlanId: null,
                             analyticsLocations: p,
-                            analyticsLocation: T.ThZ.SEASONAL_GIFTING_REMINDER_NAGBAR,
+                            analyticsLocation: _.ThZ.SEASONAL_GIFTING_REMINDER_NAGBAR,
                             analyticsObject: {
-                                page: T.liQ.PREMUIM_UPSELL_GIFTING_PROMOTION
+                                page: _.liQ.PREMUIM_UPSELL_GIFTING_PROMOTION
                             }
                         })
                     },
                     noticeType: n,
-                    children: A.intl.string(A.t.RzWDqY)
+                    children: m.intl.string(m.t.RzWDqY)
                 })]
             })
         }

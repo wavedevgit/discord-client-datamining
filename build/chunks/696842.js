@@ -1,12 +1,11 @@
 /** chunk id: 696842 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
-    A: () => m
+    A: () => _
 });
 var i = n(627968);
 n(64700);
-var s = n(284009),
-    l = n.n(s),
+var l = n(284009),
+    s = n.n(l),
     a = n(311907),
     r = n(397927),
     o = n(698441),
@@ -16,18 +15,18 @@ var s = n(284009),
     h = n(652215),
     A = n(985018);
 
-function m(e) {
+function _(e) {
     let {
         stream: t,
         applicationId: n,
-        channel: s,
-        exitFullScreen: m,
-        appContext: _,
+        channel: l,
+        exitFullScreen: _,
+        appContext: m,
         analyticsLocation: g,
         className: p,
         size: f = "sm"
-    } = e, x = s?.getGuildId(), E = s?.id, C = (0, a.bG)([d.A], () => null != x ? d.A.getGuild(x) : null, [x]), I = (0, a.bG)([o.Ay], () => o.Ay.getActiveEventByChannel(E), [E]);
-    if (!(null != C && null != s && u.A.can(h.xBc.CREATE_INSTANT_INVITE, s))) return null;
+    } = e, x = l?.getGuildId(), E = l?.id, I = (0, a.bG)([d.A], () => null != x ? d.A.getGuild(x) : null, [x]), C = (0, a.bG)([o.Ay], () => o.Ay.getActiveEventByChannel(E), [E]);
+    if (!(null != I && null != l && u.A.can(h.xBc.CREATE_INSTANT_INVITE, l))) return null;
     let N = A.intl.string(A.t.VINpSK);
     return null != t ? N = A.intl.string(A.t["6VQaqd"]) : null != n && (N = A.intl.string(A.t["OzOM/q"])), (0, i.jsx)("div", {
         className: p,
@@ -36,15 +35,15 @@ function m(e) {
             variant: "secondary",
             text: N,
             onClick: () => {
-                l()(null != C, "guild cannot be null"), l()(null != s, "channel cannot be null"), (0, c.X)({
-                    guild: C,
-                    channel: s,
+                s()(null != I, "guild cannot be null"), s()(null != l, "channel cannot be null"), (0, c.X)({
+                    guild: I,
+                    channel: l,
                     streamUserId: t?.ownerId,
                     applicationId: n,
-                    appContext: _,
-                    exitFullScreen: m,
+                    appContext: m,
+                    exitFullScreen: _,
                     analyticsLocation: g,
-                    guildScheduledEvent: I,
+                    guildScheduledEvent: C,
                     source: h.PE1.STAGE_CHANNEL
                 })
             }

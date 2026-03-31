@@ -1,6 +1,6 @@
 /** chunk id: 560861 params = (module,exports,require) **/
 n.d(t, {
-    g: () => _
+    g: () => g
 });
 var i = n(284009),
     s = n.n(i),
@@ -12,7 +12,7 @@ var i = n(284009),
     c = n(780964),
     u = n(235079),
     m = n(985018);
-let _ = (0, r.zD)(c.X.NOTIFICATION_HOLIDAY_SOUNDPACK, {
+let g = (0, r.zD)(c.X.NOTIFICATION_HOLIDAY_SOUNDPACK, {
     useTitle: () => {
         let e = a.A.useHolidaySoundpack();
         return null == e ? "" : m.intl.format(m.t["E/OyBr"], {

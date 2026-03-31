@@ -4,8 +4,8 @@ n.d(t, {
 });
 var l = n(627968),
     a = n(64700),
-    r = n(503698),
-    i = n.n(r),
+    i = n(503698),
+    r = n.n(i),
     s = n(397927),
     d = n(46054),
     o = n(957565),
@@ -18,7 +18,7 @@ function _(e) {
             data: {
                 title: t,
                 body: n,
-                sms: r,
+                sms: i,
                 is_localized: _
             }
         }
@@ -36,14 +36,14 @@ function _(e) {
             children: p.current(n)
         }), (0, l.jsx)("div", {
             children: (0, l.jsxs)("div", {
-                className: i()(u.GH, {
+                className: r()(u.GH, {
                     [u.pG]: m
                 }),
                 children: [(0, l.jsx)(s.Text, {
                     variant: "text-md/normal",
                     selectable: !0,
                     className: u.Kk,
-                    children: r
+                    children: i
                 }), (0, l.jsx)("div", {
                     "data-button-hoisted-classname-wrapper": !0,
                     className: u.__invalid_trailingButton,
@@ -52,7 +52,7 @@ function _(e) {
                         size: "sm",
                         text: m ? c.intl.string(c.t.t5VZ88) : c.intl.string(c.t.OpuAlK),
                         onClick: () => {
-                            (0, o.C)(r, () => x(!0))
+                            (0, o.C)(i, () => x(!0))
                         }
                     })
                 })]

@@ -13,28 +13,28 @@ var i = n(627968),
     c = n(252452),
     u = n(103738),
     m = n(419954),
-    _ = n(933297),
-    g = n(836602),
-    x = n(591179),
-    A = n(854627),
+    g = n(933297),
+    _ = n(836602),
+    A = n(591179),
+    x = n(854627),
     h = n(657331),
     p = n(961350),
     T = n(287809),
     f = n(780964),
-    S = n(633817),
-    E = n(652215),
+    E = n(633817),
+    S = n(652215),
     b = n(985018),
     C = n(361964);
-let v = [{
-        badgeType: _.Xi.NEW,
+let N = [{
+        badgeType: g.Xi.NEW,
         dismissibleContent: a.M.DISPLAY_NAME_STYLES_NEW_BADGE
     }],
-    N = () => {
+    v = () => {
         let e = (0, l.bG)([T.default], () => T.default.getCurrentUser()),
             {
                 avatarSrc: t,
                 avatarDecorationSrc: n
-            } = (0, A.A)({
+            } = (0, x.A)({
                 userId: e?.id,
                 size: r._3J.SIZE_48
             });
@@ -70,28 +70,28 @@ let v = [{
     I = (0, m.t_)(f.X.PROFILE_PANEL, {
         useTitle: () => b.intl.string(b.t["vi7f+q"]),
         notice: {
-            stores: [g.A],
+            stores: [_.A],
             element: u.A
         },
         initialize: () => () => o.h.wait(() => {
-            (0, d.F7)(), c.A.clearSubsection(E.nc_.PROFILE_CUSTOMIZATION)
+            (0, d.F7)(), c.A.clearSubsection(S.nc_.PROFILE_CUSTOMIZATION)
         }),
-        buildLayout: () => [S.I]
+        buildLayout: () => [E.I]
     }),
     j = (0, m.i4)(f.X.PROFILE_SIDEBAR_ITEM, {
         useTitle: () => b.intl.string(b.t["vi7f+q"]),
         icon: O,
-        StronglyDiscouragedCustomComponent: N,
-        getDismissibleBadges: () => v,
-        usePredicate: () => !(0, x.X)("user_settings_sidebar"),
+        StronglyDiscouragedCustomComponent: v,
+        getDismissibleBadges: () => N,
+        usePredicate: () => !(0, A.X)("user_settings_sidebar"),
         buildLayout: () => [I]
     }),
     y = (0, m.i4)(f.X.PROFILE_SIDEBAR_ITEM_WYSIWYG, {
         useTitle: () => b.intl.string(b.t["vi7f+q"]),
         icon: O,
-        StronglyDiscouragedCustomComponent: N,
-        getDismissibleBadges: () => v,
-        usePredicate: () => (0, x.X)("user_settings_sidebar"),
+        StronglyDiscouragedCustomComponent: v,
+        getDismissibleBadges: () => N,
+        usePredicate: () => (0, A.X)("user_settings_sidebar"),
         onClick: () => {
             let e = p.default.getId();
             (0, h.openUserProfileModal)({
@@ -106,7 +106,7 @@ function O() {
         {
             avatarSrc: t,
             avatarDecorationSrc: n
-        } = (0, A.A)({
+        } = (0, x.A)({
             userId: e?.id,
             size: r._3J.SIZE_48
         });

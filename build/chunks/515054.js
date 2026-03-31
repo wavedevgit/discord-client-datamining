@@ -4,9 +4,9 @@ n.d(t, {
     K: () => _
 });
 var i = n(627968),
-    l = n(64700),
-    a = n(503698),
-    s = n.n(a),
+    a = n(64700),
+    l = n(503698),
+    s = n.n(l),
     r = n(397927),
     o = n(183555),
     d = n(958805),
@@ -23,14 +23,14 @@ function _(e) {
     let {
         children: t,
         className: n,
-        scrollerRef: l,
-        ...a
+        scrollerRef: a,
+        ...l
     } = e;
     return (0, i.jsx)(r.HOs, {
-        ref: l,
+        ref: a,
         className: s()(h.gN, n),
         fade: !0,
-        ...a,
+        ...l,
         children: t
     })
 }
@@ -39,32 +39,32 @@ function A(e) {
     let {
         user: t,
         currentUser: n,
-        section: l,
-        displayProfile: a,
+        section: a,
+        displayProfile: l,
         guildId: s,
         channelId: r,
         onClose: o
     } = e;
-    return l === f.RP.ACTIVITY ? (0, i.jsx)(u.A, {
+    return a === f.RP.ACTIVITY ? (0, i.jsx)(u.A, {
         user: t,
         currentUser: n,
-        displayProfile: a,
+        displayProfile: l,
         guildId: s,
         channelId: r,
         onClose: o
-    }) : l === f.RP.MUTUAL_FRIENDS ? (0, i.jsx)(g.A, {
+    }) : a === f.RP.MUTUAL_FRIENDS ? (0, i.jsx)(g.A, {
         user: t,
         guildId: s,
         channelId: r,
         onClose: o
-    }) : l === f.RP.MUTUAL_GUILDS ? (0, i.jsx)(m.A, {
+    }) : a === f.RP.MUTUAL_GUILDS ? (0, i.jsx)(m.A, {
         user: t,
         onClose: o
-    }) : l === f.RP.WIDGETS ? (0, i.jsx)(x.A, {
+    }) : a === f.RP.WIDGETS ? (0, i.jsx)(x.A, {
         user: t,
         guildId: s,
         channelId: r
-    }) : l === f.RP.WISHLIST ? (0, i.jsx)(p.A, {
+    }) : a === f.RP.WISHLIST ? (0, i.jsx)(p.A, {
         profileOwner: t
     }) : null
 }
@@ -73,7 +73,7 @@ function I(e) {
     let {
         user: t,
         currentUser: n,
-        displayProfile: a,
+        displayProfile: l,
         guildId: s,
         channelId: u,
         items: g,
@@ -84,7 +84,7 @@ function I(e) {
     } = (0, o.NJ)(), [{
         section: _,
         text: I
-    }, j] = l.useState(g.find(e => {
+    }, j] = a.useState(g.find(e => {
         let {
             section: t
         } = e;
@@ -127,7 +127,7 @@ function I(e) {
                 children: (0, i.jsx)(A, {
                     user: t,
                     currentUser: n,
-                    displayProfile: a,
+                    displayProfile: l,
                     guildId: s,
                     channelId: u,
                     section: _,

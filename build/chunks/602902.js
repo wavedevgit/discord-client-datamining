@@ -1,6 +1,6 @@
 /** chunk id: 602902 params = (module,exports,require) **/
 n.d(t, {
-    K: () => N
+    K: () => g
 }), n(321073);
 var i = n(627968);
 n(64700);
@@ -13,18 +13,18 @@ var l = n(192308),
     d = n(320501),
     u = n(954571),
     _ = n(661191),
-    m = n(518960),
-    A = n(372684),
+    A = n(518960),
+    m = n(372684),
     E = n(439818),
-    I = n(399925),
-    T = n(696016),
-    f = n(652215);
-async function N(e, t) {
+    T = n(399925),
+    I = n(696016),
+    N = n(652215);
+async function g(e, t) {
     let {
-        channelId: N,
-        analyticsLocations: g,
+        channelId: g,
+        analyticsLocations: f,
         messageReference: C
-    } = t, h = o.A.getChannel(N);
+    } = t, h = o.A.getChannel(g);
     if (null != h) {
         if (null != C) {
             let e = d.A.getMessage(C.channel_id, C.message_id);
@@ -39,36 +39,36 @@ async function N(e, t) {
             let t = [],
                 n = [];
             for (let i of e) {
-                let e = await (0, I.VO)(i),
-                    l = i.name ?? (0, T.cM)(_.default.extractTimestamp(i.id)),
+                let e = await (0, T.VO)(i),
+                    l = i.name ?? (0, I.cM)(_.default.extractTimestamp(i.id)),
                     a = (0, E.A)(l);
-                if (i.type === A.nQ.CLIP || i.type === A.nQ.VOICE_CLIP) {
+                if (i.type === m.nQ.CLIP || i.type === m.nQ.VOICE_CLIP) {
                     let l = `${""!==a?a:"clip"}.mp4`;
                     t.push(new File([e], l, {
                         type: "video/mp4"
                     })), n.push({
                         clip: i
                     })
-                } else if (i.type === A.nQ.SCREENSHOT) {
+                } else if (i.type === m.nQ.SCREENSHOT) {
                     let i = `${""!==a?a:"screenshot"}.jpeg`;
                     t.push(new File([e], i, {
                         type: "image/jpeg"
                     })), n.push({})
                 }
-                u.default.track(f.HAw.CLIP_SHARED, {
-                    location_stack: g,
+                u.default.track(N.HAw.CLIP_SHARED, {
+                    location_stack: f,
                     guild_id: h.guild_id,
                     channel_id: h.id,
                     channel_type: h.type,
                     application_id: i.applicationId,
                     clip_id: i.id
                 })
-            }(0, m.R)(t, h, c.C.ChannelMessage, {
+            }(0, A.R)(t, h, c.C.ChannelMessage, {
                 filesMetadata: n,
                 origin: "unknown:clip_share"
             }), l.closeAllModals()
         } catch (e) {
-            throw T.nx.error(e), e
+            throw I.nx.error(e), e
         }
     } else(0, a.mMO)(async () => {
         let {
@@ -77,7 +77,7 @@ async function N(e, t) {
         return n => (0, i.jsx)(t, {
             ...n,
             clips: e,
-            analyticsLocations: g
+            analyticsLocations: f
         })
     }, {
         stackingBehavior: "stack",

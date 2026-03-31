@@ -1,137 +1,137 @@
 /** chunk id: 53594 params = (module,exports,require) **/
 n.d(t, {
-    H2: () => o,
-    J6: () => d,
-    i$: () => A,
-    kT: () => R,
-    ub: () => S,
-    ws: () => h,
-    xG: () => _,
-    yT: () => c
+    H2: () => d,
+    J6: () => E,
+    i$: () => u,
+    kT: () => N,
+    ub: () => m,
+    ws: () => I,
+    xG: () => T,
+    yT: () => _
 }), n(938796);
-var r, i, l = n(64700),
-    a = n(928108),
-    u = n(979816),
-    s = n(411335),
-    E = n(985018),
-    o = ((r = {}).NEW = "new", r.RECOMMENDED = "recommended", r.BETA = "beta", r.ALPHA = "alpha", r);
-let A = {
-    [s.uh.SPAM_LINK]: {
-        getDefaultRuleName: () => E.intl.string(E.t.ffR2cM),
-        type: s.uh.SPAM_LINK,
-        eventType: s.Mc.MESSAGE_SEND,
+var i, l, a = n(64700),
+    r = n(928108),
+    s = n(979816),
+    o = n(411335),
+    c = n(985018),
+    d = ((i = {}).NEW = "new", i.RECOMMENDED = "recommended", i.BETA = "beta", i.ALPHA = "alpha", i);
+let u = {
+    [o.uh.SPAM_LINK]: {
+        getDefaultRuleName: () => c.intl.string(c.t.ffR2cM),
+        type: o.uh.SPAM_LINK,
+        eventType: o.Mc.MESSAGE_SEND,
         perGuildMaxCount: 0,
         availableActionTypes: new Set,
         flags: new Set,
         defaultActionTypes: new Set
     },
-    [s.uh.KEYWORD]: {
-        getDefaultRuleName: () => E.intl.string(E.t.ffR2cM),
-        type: s.uh.KEYWORD,
-        eventType: s.Mc.MESSAGE_SEND,
+    [o.uh.KEYWORD]: {
+        getDefaultRuleName: () => c.intl.string(c.t.ffR2cM),
+        type: o.uh.KEYWORD,
+        eventType: o.Mc.MESSAGE_SEND,
         perGuildMaxCount: 6,
-        availableActionTypes: new Set([s.AH.BLOCK_MESSAGE, s.AH.FLAG_TO_CHANNEL, s.AH.USER_COMMUNICATION_DISABLED]),
+        availableActionTypes: new Set([o.AH.BLOCK_MESSAGE, o.AH.FLAG_TO_CHANNEL, o.AH.USER_COMMUNICATION_DISABLED]),
         flags: new Set,
-        defaultActionTypes: new Set([s.AH.BLOCK_MESSAGE])
+        defaultActionTypes: new Set([o.AH.BLOCK_MESSAGE])
     },
-    [s.uh.ML_SPAM]: {
-        getDefaultRuleName: () => E.intl.string(E.t["puF/Os"]),
-        type: s.uh.ML_SPAM,
-        eventType: s.Mc.MESSAGE_SEND,
+    [o.uh.ML_SPAM]: {
+        getDefaultRuleName: () => c.intl.string(c.t["puF/Os"]),
+        type: o.uh.ML_SPAM,
+        eventType: o.Mc.MESSAGE_SEND,
         perGuildMaxCount: 1,
-        availableActionTypes: new Set([s.AH.BLOCK_MESSAGE, s.AH.FLAG_TO_CHANNEL]),
+        availableActionTypes: new Set([o.AH.BLOCK_MESSAGE, o.AH.FLAG_TO_CHANNEL]),
         flags: new Set([]),
-        defaultActionTypes: new Set([s.AH.BLOCK_MESSAGE])
+        defaultActionTypes: new Set([o.AH.BLOCK_MESSAGE])
     },
-    [s.uh.DEFAULT_KEYWORD_LIST]: {
-        getDefaultRuleName: () => E.intl.string(E.t.LnGhZv),
-        type: s.uh.DEFAULT_KEYWORD_LIST,
-        eventType: s.Mc.MESSAGE_SEND,
+    [o.uh.DEFAULT_KEYWORD_LIST]: {
+        getDefaultRuleName: () => c.intl.string(c.t.LnGhZv),
+        type: o.uh.DEFAULT_KEYWORD_LIST,
+        eventType: o.Mc.MESSAGE_SEND,
         perGuildMaxCount: 1,
-        availableActionTypes: new Set([s.AH.BLOCK_MESSAGE, s.AH.FLAG_TO_CHANNEL]),
+        availableActionTypes: new Set([o.AH.BLOCK_MESSAGE, o.AH.FLAG_TO_CHANNEL]),
         flags: new Set([]),
-        defaultActionTypes: new Set([s.AH.BLOCK_MESSAGE])
+        defaultActionTypes: new Set([o.AH.BLOCK_MESSAGE])
     },
-    [s.uh.MENTION_SPAM]: {
-        getDefaultRuleName: () => E.intl.string(E.t.pX7i6n),
-        type: s.uh.MENTION_SPAM,
-        eventType: s.Mc.MESSAGE_SEND,
+    [o.uh.MENTION_SPAM]: {
+        getDefaultRuleName: () => c.intl.string(c.t.pX7i6n),
+        type: o.uh.MENTION_SPAM,
+        eventType: o.Mc.MESSAGE_SEND,
         perGuildMaxCount: 1,
-        availableActionTypes: new Set([s.AH.BLOCK_MESSAGE, s.AH.FLAG_TO_CHANNEL, s.AH.USER_COMMUNICATION_DISABLED]),
+        availableActionTypes: new Set([o.AH.BLOCK_MESSAGE, o.AH.FLAG_TO_CHANNEL, o.AH.USER_COMMUNICATION_DISABLED]),
         flags: new Set([]),
-        defaultActionTypes: new Set([s.AH.BLOCK_MESSAGE])
+        defaultActionTypes: new Set([o.AH.BLOCK_MESSAGE])
     },
-    [s.uh.USER_PROFILE]: {
-        getDefaultRuleName: () => E.intl.string(E.t.q1L2v8),
-        type: s.uh.USER_PROFILE,
-        eventType: s.Mc.GUILD_MEMBER_JOIN_OR_UPDATE,
+    [o.uh.USER_PROFILE]: {
+        getDefaultRuleName: () => c.intl.string(c.t.q1L2v8),
+        type: o.uh.USER_PROFILE,
+        eventType: o.Mc.GUILD_MEMBER_JOIN_OR_UPDATE,
         perGuildMaxCount: 1,
-        availableActionTypes: new Set([s.AH.QUARANTINE_USER, s.AH.FLAG_TO_CHANNEL]),
+        availableActionTypes: new Set([o.AH.QUARANTINE_USER, o.AH.FLAG_TO_CHANNEL]),
         flags: new Set([]),
-        defaultActionTypes: new Set([s.AH.QUARANTINE_USER])
+        defaultActionTypes: new Set([o.AH.QUARANTINE_USER])
     },
-    [s.uh.SERVER_POLICY]: {
-        getDefaultRuleName: () => E.intl.string(E.t.ZQr92M),
-        type: s.uh.SERVER_POLICY,
-        eventType: s.Mc.MESSAGE_SEND,
+    [o.uh.SERVER_POLICY]: {
+        getDefaultRuleName: () => c.intl.string(c.t.ZQr92M),
+        type: o.uh.SERVER_POLICY,
+        eventType: o.Mc.MESSAGE_SEND,
         perGuildMaxCount: 1,
-        availableActionTypes: new Set([s.AH.FLAG_TO_CHANNEL]),
+        availableActionTypes: new Set([o.AH.FLAG_TO_CHANNEL]),
         flags: new Set(["alpha"]),
         defaultActionTypes: new Set
     }
 };
-var c = ((i = {}).MEMBERS = "members", i.CONTENT = "content", i);
-let g = {
-        members: [A[s.uh.USER_PROFILE]],
-        content: [A[s.uh.SERVER_POLICY], A[s.uh.MENTION_SPAM], A[s.uh.ML_SPAM], A[s.uh.DEFAULT_KEYWORD_LIST], A[s.uh.KEYWORD]]
+var _ = ((l = {}).MEMBERS = "members", l.CONTENT = "content", l);
+let A = {
+        members: [u[o.uh.USER_PROFILE]],
+        content: [u[o.uh.SERVER_POLICY], u[o.uh.MENTION_SPAM], u[o.uh.ML_SPAM], u[o.uh.DEFAULT_KEYWORD_LIST], u[o.uh.KEYWORD]]
     },
-    S = (e, t) => A[e].flags.has(t);
+    m = (e, t) => u[e].flags.has(t);
 
-function d(e) {
-    return Array.from(A[e].availableActionTypes)
+function E(e) {
+    return Array.from(u[e].availableActionTypes)
 }
 
-function _(e, t) {
+function T(e, t) {
     let {
         id: n,
-        eventType: r,
-        triggerType: i,
-        actions: l
-    } = e, a = A[i];
-    if (t.filter(e => n !== e.id && e.triggerType === i).length > a.perGuildMaxCount) throw Error(`You have exceeded the maximum number of rules of type ${i}`);
-    if (l.some(e => !a.availableActionTypes.has(e.type))) throw Error("You have provided an action that is not available for this trigger type");
-    if (r !== a.eventType) throw Error("You have provided an event type that is not available for this trigger type")
+        eventType: i,
+        triggerType: l,
+        actions: a
+    } = e, r = u[l];
+    if (t.filter(e => n !== e.id && e.triggerType === l).length > r.perGuildMaxCount) throw Error(`You have exceeded the maximum number of rules of type ${l}`);
+    if (a.some(e => !r.availableActionTypes.has(e.type))) throw Error("You have provided an action that is not available for this trigger type");
+    if (i !== r.eventType) throw Error("You have provided an event type that is not available for this trigger type")
 }
 
-function h(e) {
-    let t = (0, u.XO)(e);
-    return l.useMemo(() => Object.keys(g).reduce((e, n) => {
-        let r = g[n].filter(e => e.type !== s.uh.SERVER_POLICY && (e.type !== s.uh.USER_PROFILE || !!t) && e.perGuildMaxCount > 0).map(e => e.type);
-        return e[n] = r, e
+function I(e) {
+    let t = (0, s.XO)(e);
+    return a.useMemo(() => Object.keys(A).reduce((e, n) => {
+        let i = A[n].filter(e => e.type !== o.uh.SERVER_POLICY && (e.type !== o.uh.USER_PROFILE || !!t) && e.perGuildMaxCount > 0).map(e => e.type);
+        return e[n] = i, e
     }, {
         members: [],
         content: []
     }), [t])
 }
 
-function R(e, t) {
-    let n = (0, a.p)(t);
+function N(e, t) {
+    let n = (0, r.p)(t);
     switch (e) {
-        case s.uh.DEFAULT_KEYWORD_LIST:
+        case o.uh.DEFAULT_KEYWORD_LIST:
             return {
                 allowList: [], presets: []
             };
-        case s.uh.USER_PROFILE:
-        case s.uh.KEYWORD:
+        case o.uh.USER_PROFILE:
+        case o.uh.KEYWORD:
             return {
                 keywordFilter: [], regexPatterns: [], allowList: []
             };
-        case s.uh.MENTION_SPAM:
+        case o.uh.MENTION_SPAM:
             return {
-                mentionTotalLimit: s.Nu, mentionRaidProtectionEnabled: n
+                mentionTotalLimit: o.Nu, mentionRaidProtectionEnabled: n
             };
-        case s.uh.ML_SPAM:
-        case s.uh.SERVER_POLICY:
+        case o.uh.ML_SPAM:
+        case o.uh.SERVER_POLICY:
         default:
             return
     }

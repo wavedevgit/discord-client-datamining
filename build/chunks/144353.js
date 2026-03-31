@@ -1,11 +1,11 @@
 /** chunk id: 144353 params = (module,exports,require) **/
 n.d(t, {
-    O: () => r
+    O: () => s
 });
 var i = n(203982),
-    l = n(652215);
-let r = {
+    r = n(652215);
+let s = {
     binds: ["mod+p"],
     comboKeysBindGlobal: !0,
-    action: () => (i._.dispatch(l.jej.TOGGLE_CHANNEL_PINS), !1)
+    action: () => (i._.dispatch(r.jej.TOGGLE_CHANNEL_PINS), !1)
 }

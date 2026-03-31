@@ -1,12 +1,12 @@
 /** chunk id: 470654 params = (module,exports,require) **/
-r.d(t, {
-    A: () => l
+n.d(t, {
+    A: () => s
 });
-var n = r(64700),
-    s = r(216623);
+var i = n(64700),
+    l = n(216623);
 
-function l() {
-    n.useEffect(() => {
-        (0, s.AX)()
+function s() {
+    i.useEffect(() => {
+        (0, l.AX)()
     }, [])
 }

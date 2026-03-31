@@ -1,5 +1,4 @@
 /** chunk id: 807611 params = (module,exports,require) **/
-"use strict";
 e.exports = {
     $$: "pageContainer__8893c",
     DX: "joinCtaTitle__8893c",

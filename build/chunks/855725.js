@@ -1,14 +1,13 @@
 /** chunk id: 855725 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
-    w: () => l
+    w: () => s
 });
 var i = n(627968);
 n(64700);
-var s = n(397927);
+var l = n(397927);
 
-function l(e) {
-    return (0, i.jsx)(s.hVq, {
+function s(e) {
+    return (0, i.jsx)(l.hVq, {
         count: e
     })
 }

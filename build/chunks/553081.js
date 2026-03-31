@@ -13,20 +13,20 @@ var i = n(627968),
     c = n(397927),
     u = n(73153),
     m = n(793574),
-    _ = n(688810),
-    g = n(726649),
-    x = n(611924),
-    A = n(961250),
+    g = n(688810),
+    _ = n(726649),
+    A = n(611924),
+    x = n(961250),
     h = n(320118),
     p = n(622543),
     T = n(576622),
     f = n(166403),
-    S = n(954571),
-    E = n(881489),
+    E = n(954571),
+    S = n(881489),
     b = n(131168),
     C = n(482589),
-    v = n(511484),
-    N = n(935956),
+    N = n(511484),
+    v = n(935956),
     I = n(568031),
     j = n(518491),
     y = n(965591),
@@ -43,15 +43,15 @@ let w = "perk",
     V = e => {
         let {
             userId: t
-        } = e, n = (0, E.ds)(), l = (0, r.zy)();
+        } = e, n = (0, S.ds)(), l = (0, r.zy)();
         s.useEffect(() => {
             u.h.wait(async () => {
-                let e = [(0, A.Ay)()];
+                let e = [(0, x.Ay)()];
                 null != t && e.push((0, T.A)(t)), await Promise.all(e)
             })
         }, [t]), s.useEffect(() => {
             Q(!0)
-        }, []), (0, C.j)(), (0, x.P)(g.b);
+        }, []), (0, C.j)(), (0, A.P)(_.b);
         let V = s.useRef(null),
             B = s.useRef(null),
             F = (0, o.bG)([f.A], () => f.A.getPremiumTypeSubscription()),
@@ -82,9 +82,9 @@ let w = "perk",
                 } : {}
             }, [l.search]);
         (0, L.z)(X ?? "", null != X, W, Z);
-        let [q, Q] = s.useState(!1), J = (0, b.p)(), $ = s.useRef(null), [ee, et] = s.useState(!1), en = null != J && null != F && F.status === G.Dmq.CANCELED, ei = (0, v.iU)(D.gD.PREMIUM_MONTH_TIER_2, J, F), es = !ee && en, {
+        let [q, Q] = s.useState(!1), J = (0, b.p)(), $ = s.useRef(null), [ee, et] = s.useState(!1), en = null != J && null != F && F.status === G.Dmq.CANCELED, ei = (0, N.iU)(D.gD.PREMIUM_MONTH_TIER_2, J, F), es = !ee && en, {
             analyticsLocations: el
-        } = (0, _.Ay)(m.A.PREMIUM_SUBSCRIBER_NITRO_HOME), [ea, er] = s.useState(!1);
+        } = (0, g.Ay)(m.A.PREMIUM_SUBSCRIBER_NITRO_HOME), [ea, er] = s.useState(!1);
         return null != (0, o.bG)([p.A], () => null != t ? p.A.getUserProfile(t) : null) && (H || null != z) ? (0, i.jsxs)(c.GtU, {
             className: k.xW,
             ref: V,
@@ -92,7 +92,7 @@ let w = "perk",
                 color: "nitro-pink",
                 className: a()(k.kL, k.Gd),
                 offsetBottom: n ? .55 : .8,
-                children: (0, i.jsxs)(_.f5, {
+                children: (0, i.jsxs)(g.f5, {
                     value: el,
                     children: [(0, i.jsx)(d.L, {
                         innerRef: $,
@@ -108,7 +108,7 @@ let w = "perk",
                         })
                     }), (0, i.jsx)(R.A, {
                         glowingPerkId: K
-                    }), (0, i.jsx)(N.A, {}), null != z && Y && (0, i.jsx)(P.A, {
+                    }), (0, i.jsx)(v.A, {}), null != z && Y && (0, i.jsx)(P.A, {
                         location: m.A.PREMIUM_MARKETING_NITRO_HOME_ORBS_SECTION
                     }), (0, i.jsx)(O.A, {
                         glowingPerkId: K
@@ -124,7 +124,7 @@ let w = "perk",
                     }), (0, i.jsx)(d.L, {
                         innerRef: B,
                         onChange: e => {
-                            e && !ea && (S.default.track(G.HAw.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
+                            e && !ea && (E.default.track(G.HAw.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
                                 location_stack: el
                             }), er(!0))
                         },

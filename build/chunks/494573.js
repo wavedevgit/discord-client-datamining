@@ -16,8 +16,8 @@ var r = s(627968),
     S = s(397309),
     E = s(190294),
     A = s(758836),
-    h = s(985018),
-    f = s(190576);
+    f = s(985018),
+    h = s(190576);
 
 function m(e) {
     let {
@@ -36,19 +36,19 @@ function m(e) {
         handleTransition: a
     }) : (0, r.jsxs)(b.A.Title, {
         onClick: () => a(t),
-        wrapperClassName: f.Vn,
-        className: n()(f.Mf, {
-            [f.wH]: l
+        wrapperClassName: h.Vn,
+        className: n()(h.Mf, {
+            [h.wH]: l
         }),
         children: [null != u ? (0, r.jsxs)("span", {
-            className: f.nt,
+            className: h.nt,
             children: [s, (0, r.jsx)(u, {
                 size: "xs",
                 color: "currentColor"
             })]
         }) : s, c && (0, r.jsx)(i.LpS, {
-            text: h.intl.string(h.t.y2b7CA),
-            className: f.Ad
+            text: f.intl.string(f.t.y2b7CA),
+            className: h.Ad
         })]
     })
 }
@@ -61,17 +61,17 @@ function C(e) {
         handleTransition: o
     } = e, c = l.useRef(null), E = l.useRef(!1), {
         isHovered: A,
-        setIsHovered: h,
+        setIsHovered: f,
         onMouseEnter: m,
         onMouseLeave: C,
         cancelTimers: g
     } = (0, p.A)(100, 100), T = e => {
-        ("Enter" === e.key || " " === e.key) && (e.preventDefault(), g(), h(!0), E.current = d.A.keyboardModeEnabled)
+        ("Enter" === e.key || " " === e.key) && (e.preventDefault(), g(), f(!0), E.current = d.A.keyboardModeEnabled)
     }, y = l.useCallback(() => {
         E.current = d.A.keyboardModeEnabled, m()
     }, [m]);
     return (0, r.jsx)("div", {
-        className: f.iV,
+        className: h.iV,
         onMouseEnter: y,
         onMouseLeave: C,
         children: (0, r.jsx)(i.YNO, {
@@ -80,10 +80,10 @@ function C(e) {
             position: "bottom",
             align: "left",
             onRequestOpen: () => {
-                g(), h(!0), E.current = d.A.keyboardModeEnabled
+                g(), f(!0), E.current = d.A.keyboardModeEnabled
             },
             onRequestClose: () => {
-                E.current && !d.A.keyboardModeEnabled && (0, u.uS)(), h(!1), c.current?.focus()
+                E.current && !d.A.keyboardModeEnabled && (0, u.uS)(), f(!1), c.current?.focus()
             },
             renderPopout: e => {
                 let {
@@ -107,12 +107,12 @@ function C(e) {
                     ref: c,
                     onClick: () => o(t),
                     onKeyDown: T,
-                    wrapperClassName: f.Vn,
-                    className: n()(f.Mf, {
-                        [f.wH]: a
+                    wrapperClassName: h.Vn,
+                    className: n()(h.Mf, {
+                        [h.wH]: a
                     }),
                     children: (0, r.jsxs)("span", {
-                        className: f.hP,
+                        className: h.hP,
                         children: [s, (0, r.jsx)(d, {
                             size: "sm",
                             color: "currentColor"
@@ -142,7 +142,7 @@ function g(e) {
         S.current = d.A.keyboardModeEnabled, C()
     }, [C]);
     return (0, r.jsx)("div", {
-        className: f.iV,
+        className: h.iV,
         onMouseEnter: O,
         onMouseLeave: g,
         children: (0, r.jsx)(i.YNO, {
@@ -179,14 +179,14 @@ function g(e) {
                     ...e,
                     ref: c,
                     onKeyDown: y,
-                    wrapperClassName: f.Vn,
-                    className: n()(f.Mf, f.OS, {
-                        [f.wH]: o
+                    wrapperClassName: h.Vn,
+                    className: n()(h.Mf, h.OS, {
+                        [h.wH]: o
                     }),
-                    "aria-label": h.intl.string(h.t["UKOtz+"]),
+                    "aria-label": f.intl.string(f.t["UKOtz+"]),
                     children: (0, r.jsxs)("span", {
-                        className: f.hP,
-                        children: [h.intl.string(h.t["UKOtz+"]), (0, r.jsx)(l, {
+                        className: h.hP,
+                        children: [f.intl.string(f.t["UKOtz+"]), (0, r.jsx)(l, {
                             size: "xs"
                         })]
                     })
@@ -215,18 +215,18 @@ function y(e) {
         itemGapPx: 24,
         maxLines: 1,
         containerWidth: u
-    }), A = l.useMemo(() => a.slice(0, p + 1), [p, a]), h = l.useMemo(() => a.slice(p + 1), [p, a]), C = l.useRef(null), y = l.useCallback(e => {
+    }), A = l.useMemo(() => a.slice(0, p + 1), [p, a]), f = l.useMemo(() => a.slice(p + 1), [p, a]), C = l.useRef(null), y = l.useCallback(e => {
         let t = e.contentRect.width;
         null != t && b.current !== t && (d(t), b.current = t)
     }, []);
     (0, c.g)(C, y);
     let O = 0 !== u,
-        L = h.some(e => T(e.tab, e, s));
+        L = f.some(e => T(e.tab, e, s));
     return (0, r.jsxs)("div", {
-        className: n()(f.kL, t),
+        className: n()(h.kL, t),
         ref: C,
         children: [(0, r.jsxs)("div", {
-            className: f.Kk,
+            className: h.Kk,
             children: [a.map((e, t) => (0, r.jsx)(o.Ae, {
                 index: t,
                 onItemLayout: S,
@@ -241,14 +241,14 @@ function y(e) {
             }, e.tab)), (0, r.jsx)("div", {
                 ref: E,
                 children: (0, r.jsx)(g, {
-                    tabs: h,
+                    tabs: f,
                     onTabSelect: i,
                     selectedTab: s,
                     selected: L
                 })
             })]
         }), O && (0, r.jsxs)("div", {
-            className: f.vR,
+            className: h.vR,
             children: [A.map(e => (0, r.jsx)(m, {
                 tab: e.tab,
                 label: e.label,
@@ -256,8 +256,8 @@ function y(e) {
                 handleTransition: i,
                 hasSubmenu: e.hasSubmenu ?? !1,
                 icon: e.icon
-            }, e.tab)), 0 !== h.length ? (0, r.jsx)(g, {
-                tabs: h,
+            }, e.tab)), 0 !== f.length ? (0, r.jsx)(g, {
+                tabs: f,
                 onTabSelect: i,
                 selectedTab: s,
                 selected: L

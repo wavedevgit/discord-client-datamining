@@ -1,6 +1,6 @@
 /** chunk id: 328616 params = (module,exports,require) **/
 n.d(t, {
-    T: () => g
+    T: () => _
 });
 var i = n(627968);
 n(64700);
@@ -14,7 +14,7 @@ var s = n(311907),
     u = n(985018),
     m = n(885106);
 
-function _() {
+function g() {
     let e = (0, s.bG)([o.A], () => o.A.theme);
     return (0, i.jsxs)(l.ppr, {
         theme: e,
@@ -30,13 +30,13 @@ function _() {
     })
 }
 
-function g() {
+function _() {
     let {
         gameHistory: e,
         robloxSubgameHistory: t,
         overrideExePaths: n
     } = (0, c.a)();
-    return 0 === e.length ? (0, i.jsx)(_, {}) : (0, i.jsx)(l.nVY, {
+    return 0 === e.length ? (0, i.jsx)(g, {}) : (0, i.jsx)(l.nVY, {
         children: (0, i.jsx)("div", {
             children: e.map(e => (0, i.jsx)(d.A, {
                 rawGame: e,

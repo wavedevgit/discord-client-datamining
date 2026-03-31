@@ -1,12 +1,11 @@
 /** chunk id: 820512 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
     H: () => u,
     q: () => h
 });
 var i = n(562465),
-    s = n(73153),
-    l = n(725613),
+    l = n(73153),
+    s = n(725613),
     a = n(734057),
     r = n(927813),
     o = n(769022),
@@ -14,7 +13,7 @@ var i = n(562465),
 let d = 10 * r.A.Millis.MINUTE;
 
 function u(e) {
-    s.h.dispatch({
+    l.h.dispatch({
         type: "VOICE_CHANNEL_HISTORY_START_TRACKING",
         channelId: e
     })
@@ -22,7 +21,7 @@ function u(e) {
 
 function h(e) {
     let t = o.A.getLastFetchTime(e);
-    null != t && Date.now() - t < d || (s.h.dispatch({
+    null != t && Date.now() - t < d || (l.h.dispatch({
         type: "VOICE_CHANNEL_HISTORY_UPDATE_LAST_FETCH_TIME",
         channelId: e,
         timestamp: Date.now()
@@ -31,7 +30,7 @@ function h(e) {
 async function A(e) {
     try {
         let t = a.A.getChannel(e),
-            n = l.A.getStartTime(t);
+            n = s.A.getStartTime(t);
         if (null == n) return;
         let r = {
                 session_start_time: new Date(n).toISOString()
@@ -53,7 +52,7 @@ async function A(e) {
                 applicationName: e.application_name ?? "",
                 endedAt: e.timestamp
             }));
-        s.h.dispatch({
+        l.h.dispatch({
             type: "VOICE_CHANNEL_HISTORY_FETCH_COMPLETE",
             channelId: e,
             voiceLeaves: d,

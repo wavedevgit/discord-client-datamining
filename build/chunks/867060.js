@@ -1,13 +1,12 @@
 /** chunk id: 867060 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
-    A: () => l
+    A: () => s
 });
 var i = n(64700),
-    s = n(397927);
+    l = n(397927);
 
-function l(e) {
+function s(e) {
     i.useEffect(() => {
-        null != e && (0, s.showToast)((0, s.createToast)(e, s.ToastType.FAILURE))
+        null != e && (0, l.showToast)((0, l.createToast)(e, l.ToastType.FAILURE))
     }, [e])
 }

@@ -1,31 +1,31 @@
 /** chunk id: 504139 params = (module,exports,require) **/
 "use strict";
-i.d(t, {
+n.d(t, {
     A: () => c
 });
-var n = i(544420),
-    s = i(684013),
-    a = i(742984),
-    l = i(471024),
-    r = i(684748),
-    o = i(672396),
-    d = i(985018);
+var i = n(544420),
+    s = n(684013),
+    a = n(742984),
+    l = n(471024),
+    r = n(684748),
+    o = n(672396),
+    d = n(985018);
 
-function c(e, t, i, c, u) {
+function c(e, t, n, c, u) {
     if (null == t.activity) return null;
     let h = t.activity.type,
-        _ = u.session_id;
-    if (null == _) return null;
+        p = u.session_id;
+    if (null == p) return null;
     let {
-        icon: p,
-        title: f,
-        body: m
-    } = (0, a.TB)(e, t, i), {
+        icon: f,
+        title: _,
+        body: A
+    } = (0, a.TB)(e, t, n), {
         trackView: g,
-        trackClick: A
+        trackClick: m
     } = (0, r.Y)(o.KS.ActivityInvite, {
         notif_type: o.KS.ActivityInvite,
-        notif_user_id: i.id,
+        notif_user_id: n.id,
         message_id: t.id,
         message_type: t.type,
         guild_id: e.guild_id,
@@ -35,25 +35,25 @@ function c(e, t, i, c, u) {
         activity_name: u.name
     });
     return {
-        icon: p,
-        title: f,
-        body: m,
+        icon: f,
+        title: _,
+        body: A,
         hint: e => (0, l.sI)(e, (0, r.J)(), d.t.aB5xLy),
         onNotificationShow: () => {
             g()
         },
         confirmText: d.intl.string(d.t.VJlc0S),
         onConfirmClick: (a, l) => {
-            n.A.join({
-                userId: i.id,
-                sessionId: _,
+            i.A.join({
+                userId: n.id,
+                sessionId: p,
                 applicationId: c.id,
                 channelId: e.id,
                 messageId: t.id
-            }), s.A.updateNotificationStatus(l), A("join")
+            }), s.A.updateNotificationStatus(l), m("join")
         },
         onDismissClick: () => {
-            A("dismiss")
+            m("dismiss")
         }
     }
 }

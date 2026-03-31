@@ -1,8 +1,8 @@
 /** chunk id: 785048 params = (module,exports,require) **/
 n.d(t, {
-    K7: () => A,
+    K7: () => x,
     UK: () => h,
-    f7: () => x
+    f7: () => A
 });
 var i = n(419954),
     s = n(954571),
@@ -14,17 +14,17 @@ var i = n(419954),
     c = n(112469),
     u = n(542457),
     m = n(355097),
-    _ = n(652215),
-    g = n(985018);
-let x = () => (0, c.Tx)() !== d.YG;
+    g = n(652215),
+    _ = n(985018);
+let A = () => (0, c.Tx)() !== d.YG;
 
-function A() {
-    return g.intl.string(g.t["T+nevN"])
+function x() {
+    return _.intl.string(_.t["T+nevN"])
 }
 let h = (0, i.zD)(o.X.CONTENT_AND_SOCIAL_PERMISSIONS_ACTIVITY_JOIN_SETTING, {
-    useTitle: A,
-    useSubtitle: () => g.intl.format(g.t.jXKQCu, {
-        helpdeskArticle: l.A.getArticleURL(_.MVz.ACTIVITY_STATUS_SETTINGS)
+    useTitle: x,
+    useSubtitle: () => _.intl.format(_.t.jXKQCu, {
+        helpdeskArticle: l.A.getArticleURL(g.MVz.ACTIVITY_STATUS_SETTINGS)
     }),
     useValue: () => {
         let e = (0, c.Tx)();
@@ -33,11 +33,11 @@ let h = (0, i.zD)(o.X.CONTENT_AND_SOCIAL_PERMISSIONS_ACTIVITY_JOIN_SETTING, {
     setValue: e => {
         let t = d.xk.getState().selectedGuildId,
             n = (0, a.CN)();
-        e ? n.delete(t) : n.add(t), r.pE.updateSetting([...n]), s.default.track(_.HAw.USER_SERVER_PRIVACY_SETTINGS_ACTION, {
+        e ? n.delete(t) : n.add(t), r.pE.updateSetting([...n]), s.default.track(g.HAw.USER_SERVER_PRIVACY_SETTINGS_ACTION, {
             action: u.m.RESTRICT_GUILD_ACTIVITY_JOIN_TOGGLE,
             ingress: m.bf.USER_SETTINGS_PRIVACY_SAFETY,
             guild_id: t
         })
     },
-    usePredicate: x
+    usePredicate: A
 })

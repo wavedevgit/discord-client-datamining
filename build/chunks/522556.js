@@ -1,12 +1,11 @@
 /** chunk id: 522556 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
     A: () => f
 });
 var i = n(627968),
-    s = n(64700),
-    l = n(503698),
-    a = n.n(l),
+    l = n(64700),
+    s = n(503698),
+    a = n.n(s),
     r = n(397927),
     o = n(686956),
     c = n(935649),
@@ -14,8 +13,8 @@ var i = n(627968),
     u = n(36149),
     h = n(323073),
     A = n(506164),
-    m = n(204925),
-    _ = n(985018),
+    _ = n(204925),
+    m = n(985018),
     g = n(324025);
 
 function p(e) {
@@ -23,38 +22,38 @@ function p(e) {
         guild: t,
         channelId: n
     } = e, {
-        modalType: l,
+        modalType: s,
         ...a
-    } = (0, h.k$)(t), r = s.useCallback(() => {
+    } = (0, h.k$)(t), r = l.useCallback(() => {
         null != t && o.A.nsfwReturnToSafety(t.id)
-    }, [t]), g = s.useCallback(() => {
+    }, [t]), g = l.useCallback(() => {
         null != t && o.A.nsfwAgree(t.id)
-    }, [t]), p = s.useCallback(() => {
+    }, [t]), p = l.useCallback(() => {
         c.A.showAgeVerificationGetStartedModal({
             entryPoint: d.q1.NSFW_GUILD
         })
     }, []);
-    (0, u.I7)(m.w_.NSFW_SERVER);
+    (0, u.I7)(_.w_.NSFW_SERVER);
     let f = {
         ...a,
         guildId: t?.id,
         channelId: n,
-        disagreement: _.intl.string(_.t["/g10LC"])
+        disagreement: m.intl.string(m.t["/g10LC"])
     };
-    switch (l) {
+    switch (s) {
         case d.A5.NSFW_CHANNEL_AGE_VERIFY:
         case d.A5.GUILD_LARGE_SERVER:
             return (0, i.jsx)(A.A, {
                 onAgree: p,
                 onDisagree: r,
-                modalType: l,
+                modalType: s,
                 ...f
             });
         default:
             return (0, i.jsx)(A.A, {
                 onAgree: g,
                 onDisagree: r,
-                modalType: l,
+                modalType: s,
                 ...f
             })
     }
@@ -63,9 +62,9 @@ let f = function(e) {
     let {
         guild: t,
         channelId: n,
-        className: l
-    } = e, o = s.useRef(null);
-    return s.useEffect(() => {
+        className: s
+    } = e, o = l.useRef(null);
+    return l.useEffect(() => {
         let {
             current: e
         } = o;
@@ -74,7 +73,7 @@ let f = function(e) {
         ref: o,
         className: g.X,
         children: (0, i.jsx)("div", {
-            className: a()(l, g.i),
+            className: a()(s, g.i),
             children: (0, i.jsx)(p, {
                 guild: t,
                 channelId: n

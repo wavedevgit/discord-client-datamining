@@ -1,5 +1,4 @@
 /** chunk id: 510495 params = (module,exports,require) **/
-"use strict";
 e.exports = {
     kL: "container__218f7",
     L: "voiceChannelGiftingBreadcrumb__218f7",

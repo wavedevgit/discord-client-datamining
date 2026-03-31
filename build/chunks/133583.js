@@ -3,9 +3,9 @@ n.d(t, {
     A: () => B
 });
 var i = n(627968),
-    l = n(64700),
-    a = n(503698),
-    s = n.n(a),
+    a = n(64700),
+    l = n(503698),
+    s = n.n(l),
     r = n(777480),
     o = n(311907),
     d = n(192308),
@@ -32,8 +32,8 @@ var i = n(627968),
     R = n(203647),
     k = n(376932),
     O = n(383430),
-    L = n(300131),
-    w = n(518477),
+    w = n(300131),
+    L = n(518477),
     P = n(788868),
     D = n(985018),
     G = n(426158);
@@ -42,12 +42,12 @@ function M(e) {
     let {
         socialLayerStorefrontApplicationIds: t,
         handleOpenShop: n,
-        handleOpenGameShop: l
+        handleOpenGameShop: a
     } = e;
     return t.length > 0 ? (0, i.jsx)(O.A, {
         title: D.intl.string(D.t["i/yzHs"]),
         handleOpenCollectiblesShop: n,
-        handleOpenGameShop: l,
+        handleOpenGameShop: a,
         socialLayerStorefrontApplicationIds: t
     }) : (0, i.jsx)(c.Button, {
         variant: "secondary",
@@ -62,8 +62,8 @@ function U(e) {
     let {
         socialLayerStorefrontApplicationIds: t,
         isWishlistPublic: n,
-        handleOpenShop: l,
-        handleOpenGameShop: a,
+        handleOpenShop: a,
+        handleOpenGameShop: l,
         handleAddNitroToWishlist: s,
         handleToggleWishlistVisibility: r
     } = e;
@@ -71,8 +71,8 @@ function U(e) {
         className: G.$s,
         children: [t.length > 0 || null != s ? (0, i.jsx)(O.A, {
             title: D.intl.string(D.t.SDUwM0),
-            handleOpenCollectiblesShop: l,
-            handleOpenGameShop: t.length > 0 ? a : void 0,
+            handleOpenCollectiblesShop: a,
+            handleOpenGameShop: t.length > 0 ? l : void 0,
             handleAddNitroToWishlist: s,
             socialLayerStorefrontApplicationIds: t
         }) : (0, i.jsx)(c.Button, {
@@ -80,8 +80,8 @@ function U(e) {
             size: "sm",
             icon: c.j96,
             text: D.intl.string(D.t.SDUwM0),
-            onClick: l
-        }), (0, i.jsx)(L.A, {
+            onClick: a
+        }), (0, i.jsx)(w.A, {
             isOwner: !0,
             isWishlistPublic: n,
             onToggleVisibility: r
@@ -93,12 +93,12 @@ function F(e) {
     let {
         application: t,
         handleOpenGameShop: n,
-        handleOpenGameShopMouseDown: a
-    } = e, s = l.useCallback(() => {
+        handleOpenGameShopMouseDown: l
+    } = e, s = a.useCallback(() => {
         n(t.id)
-    }, [t, n]), r = l.useCallback(() => {
-        a(t.id)
-    }, [t, a]);
+    }, [t, n]), r = a.useCallback(() => {
+        l(t.id)
+    }, [t, l]);
     return (0, i.jsx)(c.Button, {
         variant: "primary",
         size: "sm",
@@ -115,10 +115,10 @@ function W(e) {
     let {
         isOwner: t,
         socialLayerStorefrontApplicationIds: n,
-        handleOpenShop: a,
+        handleOpenShop: l,
         handleOpenGameShop: s,
         handleOpenGameShopMouseDown: r
-    } = e, o = (0, m.A)(n), d = l.useMemo(() => {
+    } = e, o = (0, m.A)(n), d = a.useMemo(() => {
         if (0 === n.length) return null;
         let e = o.reduce((e, t) => (null == t || (e[t.id] = t), e), {});
         if (1 === n.length) {
@@ -156,7 +156,7 @@ function W(e) {
                 size: "sm",
                 icon: c.U1X,
                 text: D.intl.string(D.t.ZbS4QB),
-                onClick: a
+                onClick: l
             }), d]
         })]
     })
@@ -166,18 +166,18 @@ function H(e) {
     let {
         isOwner: t,
         profileOwner: n,
-        wishlist: a,
+        wishlist: l,
         socialLayerStorefrontApplicationIds: s,
         handleOpenShop: d,
         handleOpenGameShop: u,
         handleAddNitroToWishlist: g
-    } = e, m = a.id, x = (0, o.bG)([b.A], () => b.A.getWishlistSettings(n.id, m)), {
+    } = e, m = l.id, x = (0, o.bG)([b.A], () => b.A.getWishlistSettings(n.id, m)), {
         trackUserProfileWishlistAction: p
-    } = (0, E.NJ)(), f = !1 === n.nsfwAllowed, [h, _] = l.useState(!0);
-    l.useEffect(() => {
+    } = (0, E.NJ)(), f = !1 === n.nsfwAllowed, [h, _] = a.useState(!0);
+    a.useEffect(() => {
         x?.visibility != null && _(x.visibility === r.a.PUBLIC)
     }, [x?.visibility]);
-    let I = l.useCallback(e => {
+    let I = a.useCallback(e => {
             let {
                 wishlistId: t,
                 action: n,
@@ -192,17 +192,17 @@ function H(e) {
         j = (0, S.A)({
             wishlistId: m,
             onAction: I,
-            productLines: a?.getProductLines() ?? null
+            productLines: l?.getProductLines() ?? null
         }),
-        v = l.useCallback(() => {
+        v = a.useCallback(() => {
             if (null == m) return;
             let e = h ? r.a.PRIVATE : r.a.PUBLIC;
             _(!h), A.A.updateWishlistVisibility(m, e), p({
                 wishlistId: m,
-                action: h ? w.Mq.WISHLIST_TOGGLE_PRIVATE : w.Mq.WISHLIST_TOGGLE_PUBLIC,
-                productLines: a?.getProductLines()
+                action: h ? L.Mq.WISHLIST_TOGGLE_PRIVATE : L.Mq.WISHLIST_TOGGLE_PUBLIC,
+                productLines: l?.getProductLines()
             })
-        }, [m, h, p, a]);
+        }, [m, h, p, l]);
     return (0, i.jsxs)(i.Fragment, {
         children: [!h && (0, i.jsxs)("div", {
             className: G.lm,
@@ -233,7 +233,7 @@ function H(e) {
                 variant: "text-xs/semibold",
                 color: "text-subtle",
                 children: D.intl.format(D.t.r6Y1Lg, {
-                    count: a.items.length
+                    count: l.items.length
                 })
             }), t ? (0, i.jsx)(U, {
                 socialLayerStorefrontApplicationIds: s,
@@ -254,13 +254,13 @@ function H(e) {
 function B(e) {
     let {
         profileOwner: t
-    } = e, n = l.useRef(null);
+    } = e, n = a.useRef(null);
     (0, N.i)({
         containerRef: n,
         itemType: "WISHLIST_ITEM"
     });
     let {
-        wishlistId: a,
+        wishlistId: l,
         currentUser: r
     } = (0, o.cf)([b.A, T.default], () => ({
         wishlistId: b.A.getFirstWishlistId(t.id),
@@ -270,39 +270,39 @@ function B(e) {
     } = (0, g.Ay)(), E = r?.id === t.id, {
         wishlist: S,
         wasFetched: O,
-        error: L
+        error: w
     } = (0, v.fw)({
-        wishlistId: a,
+        wishlistId: l,
         userId: t.id
-    }), w = (0, h.A)({
+    }), L = (0, h.A)({
         wishlist: S,
         profileOwner: t,
         currentUser: r
     }), M = (0, f.X)({
         location: "user-profile-modal-v2-wishlist"
-    }), U = (0, I.GG)("user-profile-modal-v2-wishlist"), F = (0, j.Gh)("user-profile-modal-v2-wishlist"), B = E && (M && w.length > 0 || U), X = l.useCallback(() => {
+    }), U = (0, I.GG)("user-profile-modal-v2-wishlist"), F = (0, j.Gh)("user-profile-modal-v2-wishlist"), B = E && (M && L.length > 0 || U), X = a.useCallback(() => {
         (0, d.closeAllModals)(), (0, x.Cz)({
             analyticsLocations: m,
             analyticsSource: u.A.USER_PROFILE_WISHLIST
         })
-    }, [m]), V = l.useCallback(e => {
+    }, [m]), V = a.useCallback(e => {
         let t = p.A.getGuildIdFromApplicationId(e);
         null != t && (0, _.X)({
             guildId: t
         })
-    }, []), z = l.useCallback(e => {
+    }, []), z = a.useCallback(e => {
         let t = p.A.getGuildIdFromApplicationId(e);
         null != t && ((0, d.closeAllModals)(), (0, _.default)({
             guildId: t
         }))
-    }, []), Y = l.useCallback(async () => {
+    }, []), Y = a.useCallback(async () => {
         try {
             await A.A.addSkuToWishlist(P.pe.TIER_2, m)
         } catch {
             (0, c.showToast)((0, c.createToast)(D.intl.string(D.t.F8FvUy), c.ToastType.FAILURE)), c.ORC.announce(D.intl.string(D.t.F8FvUy))
         }
     }, [m]), K = S?.items ?? [];
-    if (null != L) return null;
+    if (null != w) return null;
     let q = null == S || 0 === K.length;
     return (0, i.jsxs)(C.K, {
         scrollerRef: n,
@@ -312,7 +312,7 @@ function B(e) {
         fade: !0,
         children: [q ? (0, i.jsx)(W, {
             isOwner: E,
-            socialLayerStorefrontApplicationIds: w,
+            socialLayerStorefrontApplicationIds: L,
             handleOpenShop: X,
             handleOpenGameShop: z,
             handleOpenGameShopMouseDown: V
@@ -323,7 +323,7 @@ function B(e) {
                 isOwner: E,
                 profileOwner: t,
                 wishlist: S,
-                socialLayerStorefrontApplicationIds: w,
+                socialLayerStorefrontApplicationIds: L,
                 handleOpenShop: X,
                 handleOpenGameShop: z,
                 handleAddNitroToWishlist: F && !S.hasSkuId(P.pe.TIER_2) ? Y : void 0
@@ -335,7 +335,7 @@ function B(e) {
         }), B && (0, i.jsx)(k.A, {
             user: t,
             wishlist: S,
-            applicationIds: w,
+            applicationIds: L,
             hasFetchedWishlist: O,
             analyticsLocations: m,
             className: q ? G._E : G.HZ

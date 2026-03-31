@@ -1,10 +1,9 @@
 /** chunk id: 166764 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
-    w: () => s
+    w: () => l
 });
 var i = n(753070);
 
-function s(e, t) {
+function l(e, t) {
     return e === i.on.RESOLUTION_720 && t !== i.kn.FPS_60
 }

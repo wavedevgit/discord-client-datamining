@@ -1,9 +1,9 @@
 /** chunk id: 897100 params = (module,exports,require) **/
-i.d(e, {
+e.d(i, {
     A: () => s
 });
-var n = i(417597),
-    l = i(961350);
+var n = e(417597),
+    l = e(961350);
 
 function s() {
     return (0, n.bG)([l.default], () => l.default.isAuthenticated())

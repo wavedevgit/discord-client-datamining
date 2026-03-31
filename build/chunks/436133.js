@@ -1,12 +1,11 @@
 /** chunk id: 436133 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
     A: () => c
 });
 var i = n(627968);
 n(64700);
-var s = n(503698),
-    l = n.n(s),
+var l = n(503698),
+    s = n.n(l),
     a = n(397927),
     r = n(769015),
     o = n(693052);
@@ -15,12 +14,12 @@ function c(e) {
     let {
         className: t,
         embeddedApps: n,
-        muted: s
+        muted: l
     } = e;
     if (n.length <= 0) return null;
     {
         if (1 === n.length) return (0, i.jsx)("div", {
-            className: l()(o.kL, t, s && o.F4),
+            className: s()(o.kL, t, l && o.F4),
             children: (0, i.jsx)(r.A, {
                 game: n[0].application,
                 className: o.wK
@@ -28,7 +27,7 @@ function c(e) {
         });
         let e = n.length - 1;
         return (0, i.jsxs)("div", {
-            className: l()(o.kL, t, s && o.F4),
+            className: s()(o.kL, t, l && o.F4),
             children: [(0, i.jsx)(r.A, {
                 game: n[0].application,
                 className: o.wK

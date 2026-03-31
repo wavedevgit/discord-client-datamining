@@ -1,5 +1,4 @@
 /** chunk id: 626302 params = (module,exports,require) **/
-"use strict";
 e.exports = {
     iE: "wrapper__260e1",
     X5: "total__260e1",

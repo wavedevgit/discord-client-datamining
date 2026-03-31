@@ -1,11 +1,10 @@
 /** chunk id: 328776 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
     A: () => g
 });
 var i = n(627968),
-    s = n(64700),
-    l = n(311907),
+    l = n(64700),
+    s = n(311907),
     a = n(397927),
     r = n(287809),
     o = n(562153),
@@ -14,14 +13,14 @@ var i = n(627968),
     u = n(454719),
     h = n(10635),
     A = n(318162),
-    m = n(762561),
-    _ = n(985018);
+    _ = n(762561),
+    m = n(985018);
 
 function g(e) {
     let {
         channel: t
-    } = e, [n] = t.recipients, g = (0, l.bG)([r.default], () => r.default.getUser(n)), p = (0, l.bG)([r.default], () => r.default.getCurrentUser()), f = (0, d.A)(), [x, E] = (0, c.A)(n);
-    if (s.useEffect(() => {
+    } = e, [n] = t.recipients, g = (0, s.bG)([r.default], () => r.default.getUser(n)), p = (0, s.bG)([r.default], () => r.default.getCurrentUser()), f = (0, d.A)(), [x, E] = (0, c.A)(n);
+    if (l.useEffect(() => {
             (0, u.A)(g ?? n, {
                 type: "sidebar",
                 withMutualFriendsCount: g?.bot !== !0,
@@ -30,16 +29,16 @@ function g(e) {
                 channelId: t.id
             })
         }, [g, n, t.id]), null == g || null == p || !f) return null;
-    let C = `user-profile-sidebar-heading-${g.id}`,
-        I = o.Ay.getName(null, t.id, g);
+    let I = `user-profile-sidebar-heading-${g.id}`,
+        C = o.Ay.getName(null, t.id, g);
     return (0, i.jsx)("aside", {
-        "aria-labelledby": C,
+        "aria-labelledby": I,
         children: (0, i.jsx)(a.Fmo, {
             component: (0, i.jsx)(a.AC4, {
                 children: (0, i.jsx)(a.H, {
-                    id: C,
-                    children: _.intl.format(_.t.KRe1Fk, {
-                        name: I
+                    id: I,
+                    children: m.intl.format(m.t.KRe1Fk, {
+                        name: C
                     })
                 })
             }),
@@ -52,7 +51,7 @@ function g(e) {
                 user: g,
                 currentUser: p,
                 ...e
-            }) : (0, i.jsx)(m.A, {
+            }) : (0, i.jsx)(_.A, {
                 user: g,
                 currentUser: p,
                 ...e

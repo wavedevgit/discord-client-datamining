@@ -1,4 +1,4 @@
 /** chunk id: 142271 params = (module,exports,require) **/
-t.exports = {
+e.exports = {
     p: "list_c47777"
 }

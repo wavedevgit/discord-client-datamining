@@ -12,10 +12,10 @@ var i = n(627968),
     c = n(956518),
     u = n(235986),
     m = n(147964),
-    _ = n(985018),
-    g = n(710702),
-    x = n(885106);
-let A = /^\d+$|^$/;
+    g = n(985018),
+    _ = n(710702),
+    A = n(885106);
+let x = /^\d+$|^$/;
 
 function h(e) {
     let {
@@ -29,7 +29,7 @@ function h(e) {
         authorizedApplicationId: m.A.testModeApplicationId,
         authorizationError: m.A.error,
         authorizing: m.A.isFetchingAuthorization
-    })), [f, S] = s.useState(h ?? ""), [E, b] = s.useState("8080"), [C, v] = s.useState("localhost"), N = A.test(f);
+    })), [f, E] = s.useState(h ?? ""), [S, b] = s.useState("8080"), [C, N] = s.useState("localhost"), v = x.test(f);
     async function I() {
         d.SH();
         let e = function(e, t, n) {
@@ -40,29 +40,29 @@ function h(e) {
                 case "proxy":
                     return (0, c.Ay)(n)
             }
-        }(C, E, f);
+        }(C, S, f);
         null != await d.q1(f, e) && t()
     }
     s.useEffect(() => () => o.h.wait(() => d.SH()), []);
     let j = null != h && h === f,
         y = j ? function() {
-            d.cL(), S(""), v(null)
+            d.cL(), E(""), N(null)
         } : I,
         O = s.useMemo(() => [{
             loading: T,
-            disabled: !N || 0 === f.length || "localhost" === C && 0 === E.length,
+            disabled: !v || 0 === f.length || "localhost" === C && 0 === S.length,
             variant: j ? "critical-primary" : "active",
-            text: j ? _.intl.string(_.t.d6TR3I) : _.intl.string(_.t.qwuK5I),
+            text: j ? g.intl.string(g.t.d6TR3I) : g.intl.string(g.t.qwuK5I),
             onClick: y
-        }], [f.length, T, j, N, E.length, y, C]);
+        }], [f.length, T, j, v, S.length, y, C]);
     return (0, i.jsxs)(l.Modal, {
-        title: _.intl.string(_.t.f8fzky),
-        subtitle: _.intl.string(_.t.a6Vill),
+        title: g.intl.string(g.t.f8fzky),
+        subtitle: g.intl.string(g.t.a6Vill),
         actions: O,
         onClose: t,
         transitionState: n,
         children: [null == p ? null : (0, i.jsx)("div", {
-            className: x.SX,
+            className: A.SX,
             children: (0, i.jsx)(r.wx6, {
                 type: "critical",
                 children: p
@@ -71,45 +71,45 @@ function h(e) {
             direction: u.A.Direction.VERTICAL,
             align: u.A.Align.START,
             children: [(0, i.jsx)("div", {
-                className: g.I,
+                className: _.I,
                 children: (0, i.jsx)(r.ksK, {
-                    label: _.intl.string(_.t.P6TzgI),
+                    label: g.intl.string(g.t.P6TzgI),
                     required: !0,
                     value: f,
                     maxLength: 19,
-                    error: N ? null : _.intl.string(_.t.gPNgKO),
+                    error: v ? null : g.intl.string(g.t.gPNgKO),
                     onChange: function(e) {
-                        S(e)
+                        E(e)
                     },
                     disabled: T
                 })
             }), (0, i.jsx)("div", {
-                className: g.I,
+                className: _.I,
                 children: (0, i.jsx)(r.l6P, {
                     selectionMode: "single",
-                    label: _.intl.string(_.t["/GTqXG"]),
-                    disabled: !N || "" === f,
+                    label: g.intl.string(g.t["/GTqXG"]),
+                    disabled: !v || "" === f,
                     value: C,
                     options: [{
                         value: "localhost",
-                        label: _.intl.string(_.t["+Y9Y6r"]),
+                        label: g.intl.string(g.t["+Y9Y6r"]),
                         id: "localhost"
                     }, {
                         value: "proxy",
-                        label: _.intl.string(_.t.uaksyW),
+                        label: g.intl.string(g.t.uaksyW),
                         id: "proxy"
                     }],
                     onSelectionChange: function(e) {
-                        v(e)
+                        N(e)
                     },
                     placeholder: "URL Origin Type"
                 })
             }), "localhost" !== C ? null : (0, i.jsx)("div", {
-                className: g.I,
+                className: _.I,
                 children: (0, i.jsx)(r.ksK, {
                     required: !0,
-                    label: _.intl.string(_.t.fF4zxq),
-                    value: E,
+                    label: g.intl.string(g.t.fF4zxq),
+                    value: S,
                     maxLength: 5,
                     onChange: e => b(e),
                     disabled: T

@@ -1,17 +1,16 @@
 /** chunk id: 722884 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
     A: () => a
 });
 var i = n(627968),
-    s = n(397927),
-    l = n(131955);
+    l = n(397927),
+    s = n(131955);
 
 function a(e) {
     let {
         channel: t
     } = e;
-    (0, s.mMO)(async () => {
+    (0, l.mMO)(async () => {
         let {
             default: e
         } = await n.e("85221").then(n.bind(n, 318532));
@@ -20,6 +19,6 @@ function a(e) {
             ...n
         })
     }, {
-        modalKey: l.e$
+        modalKey: s.e$
     })
 }

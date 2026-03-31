@@ -1,12 +1,11 @@
 /** chunk id: 521872 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
     A: () => o
 });
 var i = n(627968);
 n(64700);
-var s = n(503698),
-    l = n.n(s),
+var l = n(503698),
+    s = n.n(l),
     a = n(900848),
     r = n(786625);
 
@@ -16,7 +15,7 @@ function o(e) {
     } = e;
     return (0, i.jsx)(a.c, {
         children: (0, i.jsx)("div", {
-            className: l()(r.t, {
+            className: s()(r.t, {
                 [r.I]: t
             })
         })

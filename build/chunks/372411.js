@@ -1,6 +1,6 @@
 /** chunk id: 372411 params = (module,exports,require) **/
 n.d(t, {
-    E: () => x
+    E: () => A
 });
 var i = n(311907),
     s = n(264686),
@@ -20,7 +20,7 @@ let u = {
         useTitle: () => c.intl.string(c.t.XBrJT6),
         sound: "call_ringing"
     },
-    _ = (0, a.zD)(o.X.SELECTED_CHANNEL_NOTIFICATIONS, {
+    g = (0, a.zD)(o.X.SELECTED_CHANNEL_NOTIFICATIONS, {
         useTitle: () => c.intl.string(c.t.TzjwV9),
         useSubtitle: () => c.intl.format(c.t.OOiGCM, {
             onClick: () => (0, d.Jz)("message3")
@@ -29,17 +29,17 @@ let u = {
         setValue: e => s.default.setNotifyMessagesInSelectedChannel(e),
         useDisabled: () => (0, i.bG)([r.A], () => r.A.getDisableAllSounds())
     }),
-    g = (0, a.zD)(o.X.DISABLE_ALL_NOTIFICATION_SOUNDS, {
+    _ = (0, a.zD)(o.X.DISABLE_ALL_NOTIFICATION_SOUNDS, {
         useTitle: () => c.intl.string(c.t["2ZhCOd"]),
         useSubtitle: () => c.intl.string(c.t.EAKdPr),
         useValue: () => (0, i.bG)([r.A], () => r.A.getDisableAllSounds()),
         setValue: e => s.default.toggleDisableAllSounds(e)
     }),
-    x = (0, a.D1)(o.X.NOTIFICATION_SOUNDS_LIST, {
+    A = (0, a.D1)(o.X.NOTIFICATION_SOUNDS_LIST, {
         initialize: function() {
             return () => {
                 (0, d.vd)()
             }
         },
-        buildLayout: () => [(0, d.i)(u), _, (0, d.i)(m), g]
+        buildLayout: () => [(0, d.i)(u), g, (0, d.i)(m), _]
     })

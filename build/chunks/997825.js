@@ -1,6 +1,6 @@
 /** chunk id: 997825 params = (module,exports,require) **/
-var n = i(659671),
-    s = i(585825);
+var i = n(659671),
+    s = n(585825);
 e.exports = function(e) {
-    return s(n(e).toLowerCase())
+    return s(i(e).toLowerCase())
 }

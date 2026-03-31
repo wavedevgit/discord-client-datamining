@@ -1,12 +1,11 @@
 /** chunk id: 173860 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
     A: () => g
 }), n(321073);
 var i = n(627968),
-    s = n(64700),
-    l = n(503698),
-    a = n.n(l),
+    l = n(64700),
+    s = n(503698),
+    a = n.n(s),
     r = n(111956),
     o = n.n(r),
     c = n(615300),
@@ -17,7 +16,7 @@ let A = {
     friction: 10,
     tension: 300
 };
-class m extends s.Component {
+class _ extends l.Component {
     _timeout;
     constructor(e) {
         super(e), this.state = {
@@ -70,13 +69,13 @@ class m extends s.Component {
             className: e,
             text: t,
             hide: n,
-            onClick: s
+            onClick: l
         } = this.props;
         return (0, i.jsx)(c.A.div, {
             className: a()(h.M0, e, {
                 [h.R]: n
             }),
-            onClick: s,
+            onClick: l,
             style: this.getAnimatedStyle(),
             "aria-hidden": n,
             children: (0, i.jsx)("span", {
@@ -101,7 +100,7 @@ class m extends s.Component {
         }
     }
 }
-class _ extends s.PureComponent {
+class m extends l.PureComponent {
     static contextType = u.CZY;
     static defaultProps = {
         className: h.kL,
@@ -128,26 +127,26 @@ class _ extends s.PureComponent {
             expandedFolders: t,
             isVisible: n,
             isUnread: i,
-            isMentioned: s,
-            reverse: l,
+            isMentioned: l,
+            reverse: s,
             onCalculate: a
         } = this.props, r = null, o = null, c = [];
         e.forEach(e => {
             "string" == typeof e ? c.push(e) : "object" == typeof e && null != e.folderId ? null != t && t.has(e.folderId) ? (c.push(`folder:${e.folderId}`), e.guildIds.forEach(e => c.push(e))) : c.push(e.guildIds) : c.push(e.guildIds[0])
         });
         let d = e => {
-                null == r && s(e, l, c) && (r = e), null == o && i(e, l, c) && (o = e)
+                null == r && l(e, s, c) && (r = e), null == o && i(e, s, c) && (o = e)
             },
-            u = l ? c.length - 1 : 0,
+            u = s ? c.length - 1 : 0,
             h = c[u];
         for (; null != h;) {
             if ("string" == typeof h) {
-                if (n(h, l, c)) break;
+                if (n(h, s, c)) break;
                 d(h)
             } else {
                 let e = !1;
                 for (let t of h) {
-                    if (n(t, l, c)) {
+                    if (n(t, s, c)) {
                         e = !0;
                         break
                     }
@@ -155,9 +154,9 @@ class _ extends s.PureComponent {
                 }
                 if (e) break
             }
-            u += l ? -1 : 1, h = c[u]
+            u += s ? -1 : 1, h = c[u]
         }
-        null != a && a(r, o, l), this.setState({
+        null != a && a(r, o, s), this.setState({
             mention: r,
             unread: o
         })
@@ -169,8 +168,8 @@ class _ extends s.PureComponent {
             mention: n
         } = this.state, {
             onJumpTo: i
-        } = this.props, s = null != n ? n : t;
-        null != s && i(s, [n, t])
+        } = this.props, l = null != n ? n : t;
+        null != l && i(l, [n, t])
     };
     render() {
         let {
@@ -178,8 +177,8 @@ class _ extends s.PureComponent {
             mention: t
         } = this.state, {
             textMention: n,
-            textUnread: s,
-            reverse: l,
+            textUnread: l,
+            reverse: s,
             className: r,
             barClassName: o,
             hide: c,
@@ -189,15 +188,15 @@ class _ extends s.PureComponent {
         } = this.context;
         return (0, i.jsx)("div", {
             className: r ?? void 0,
-            children: (0, i.jsx)(m, {
+            children: (0, i.jsx)(_, {
                 hide: !0 === c || null == e && null == t,
                 className: a()(o, null != t ? h.lE : h.gy),
-                text: null != t ? n : s,
-                reverse: l,
+                text: null != t ? n : l,
+                reverse: s,
                 animate: d && !u.enabled,
                 onClick: this.handleClick
             })
         })
     }
 }
-let g = _
+let g = m

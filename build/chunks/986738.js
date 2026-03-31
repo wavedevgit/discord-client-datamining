@@ -1,12 +1,11 @@
 /** chunk id: 986738 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
     A: () => c
 });
 var i = n(627968);
 n(64700);
-var s = n(827734),
-    l = n(397927),
+var l = n(827734),
+    s = n(397927),
     a = n(823508),
     r = n(47868),
     o = n(985018);
@@ -18,17 +17,17 @@ function c(e) {
     } = e, d = (0, a.A)();
     return (0, i.jsx)(r.A, {
         className: t,
-        icon: (0, i.jsx)(l.CTc, {
+        icon: (0, i.jsx)(s.CTc, {
             size: "custom",
             color: "currentColor",
             height: 20,
             width: 20
         }),
-        color: s.A.unsafe_rawColors.BRAND_500.css,
+        color: l.A.unsafe_rawColors.BRAND_500.css,
         title: o.intl.string(o.t["60lJ0C"]),
         description: o.intl.string(o.t["EYn7/y"]),
         onClick: function() {
-            (0, l.mMO)(async () => {
+            (0, s.mMO)(async () => {
                 let {
                     default: e
                 } = await Promise.all([n.e("68587"), n.e("51354"), n.e("342"), n.e("87728")]).then(n.bind(n, 21653));

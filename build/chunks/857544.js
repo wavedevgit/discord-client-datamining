@@ -12,16 +12,16 @@ var i = n(627968),
     c = n(435371),
     u = n(397927),
     m = n(414079),
-    _ = n(416052),
-    g = n(148810),
-    x = n(380610),
-    A = n(235986),
+    g = n(416052),
+    _ = n(148810),
+    A = n(380610),
+    x = n(235986),
     h = n(544028),
     p = n(652215),
     T = n(986238),
     f = n(909453),
-    S = n(8350),
-    E = n(885106);
+    E = n(8350),
+    S = n(885106);
 let b = ["discord_web", "discord_marketing", "discord_developers", "discord_ios", "discord_android"],
     C = [{
         id: "branch",
@@ -33,10 +33,10 @@ let b = ["discord_web", "discord_marketing", "discord_developers", "discord_ios"
         label: "Commit SHA"
     }];
 
-function v(e) {
+function N(e) {
     return "discord_ios" in e || "discord_android" in e
 }
-class N extends s.Component {
+class v extends s.Component {
     handleRemoveBuildOverride = () => {
         this.props.onBuildOverrideRemoved(this.props.project)
     };
@@ -59,17 +59,17 @@ class N extends s.Component {
             disabled: s,
             error: l
         } = this.props;
-        return (0, i.jsxs)(A.A, {
-            direction: A.A.Direction.VERTICAL,
-            className: a()(f.oS, E.SX, S.N, f.nM),
+        return (0, i.jsxs)(x.A, {
+            direction: x.A.Direction.VERTICAL,
+            className: a()(f.oS, S.SX, E.N, f.nM),
             children: [(0, i.jsx)(m.A, {
                 className: a()(f.lL, {
                     [f.zi]: s
                 }),
                 onClick: s ? void 0 : this.handleRemoveBuildOverride
-            }), (0, i.jsxs)(A.A, {
-                className: E.QB,
-                children: [(0, i.jsx)(A.A.Child, {
+            }), (0, i.jsxs)(x.A, {
+                className: S.QB,
+                children: [(0, i.jsx)(x.A.Child, {
                     basis: "50%",
                     children: (0, i.jsx)(u.l6P, {
                         selectionMode: "single",
@@ -79,7 +79,7 @@ class N extends s.Component {
                         value: t,
                         disabled: s
                     })
-                }), (0, i.jsx)(A.A.Child, {
+                }), (0, i.jsx)(x.A.Child, {
                     wrap: !0,
                     basis: "50%",
                     children: (0, i.jsx)(u.ksK, {
@@ -89,7 +89,7 @@ class N extends s.Component {
                         disabled: s
                     })
                 })]
-            }), (0, i.jsxs)(A.A.Child, {
+            }), (0, i.jsxs)(x.A.Child, {
                 children: [null != l && "" !== l && (0, i.jsx)(u.Text, {
                     className: f.AS,
                     color: "text-feedback-critical",
@@ -119,7 +119,7 @@ class I extends s.Component {
         this.setState({
             loading: !0
         });
-        let e = await (0, x.bD)();
+        let e = await (0, A.bD)();
         this.setState({
             loading: !1,
             buildOverrides: e,
@@ -195,7 +195,7 @@ class I extends s.Component {
         this.setState({
             saving: !0
         });
-        let t = await (0, g.Zk)(e);
+        let t = await (0, _.Zk)(e);
         if (200 === t.status) {
             let e = t.body;
             this.setState({
@@ -229,7 +229,7 @@ class I extends s.Component {
     renderEmpty() {
         return (0, i.jsx)(u.ppr, {
             theme: h.A.theme,
-            className: a()(E.eT, E.SX),
+            className: a()(S.eT, S.SX),
             children: (0, i.jsx)(u.SGT, {
                 children: "You have no build overrides configured."
             })
@@ -241,7 +241,7 @@ class I extends s.Component {
             saving: t,
             errors: n
         } = this.state;
-        return null == e ? null : o().map(e, (e, s) => (0, i.jsx)(N, {
+        return null == e ? null : o().map(e, (e, s) => (0, i.jsx)(v, {
             project: s,
             overrideType: e.type,
             overrideId: e.id,
@@ -287,7 +287,7 @@ class I extends s.Component {
             }), (0, i.jsx)(u.Button, {
                 variant: "primary",
                 text: "Save Build Overrides",
-                disabled: v(t ?? {}),
+                disabled: N(t ?? {}),
                 onClick: this.handleSaveChanges,
                 loading: e
             })]
@@ -300,10 +300,10 @@ class I extends s.Component {
             buildOverrides: s
         } = this.state;
         e = t ? (0, i.jsx)(u.y$y, {
-            className: E.QX
+            className: S.QX
         }) : null != s && 0 === Object.keys(s).length ? this.renderEmpty() : this.renderItems();
         let l = !n && !t && this.getAvailableProjects().length > 0,
-            a = v(s ?? {}) && "stable" !== window.GLOBAL_ENV.RELEASE_CHANNEL ? (0, i.jsx)(u.Text, {
+            a = N(s ?? {}) && "stable" !== window.GLOBAL_ENV.RELEASE_CHANNEL ? (0, i.jsx)(u.Text, {
                 color: "text-feedback-critical",
                 variant: "text-md/normal",
                 children: "Mobile build overrides must be generated using the desktop/web stable client for now!"
@@ -458,13 +458,13 @@ class j extends s.Component {
         if (this.isMobile() && 0 === this.state.allowedVersions.length) return void this.setAllowedVersionError("You must add at least one allowed version for iOS");
         this.setStatusMessage(null);
         let e = this.generatePayload(),
-            t = await (0, g.SB)(e);
+            t = await (0, _.SB)(e);
         !1 !== t.error ? this.setStatusMessage(JSON.stringify(t.error), 0) : (this.setState({
             publicLink: t.url.toString()
         }), 0 === e.meta.user_ids.length && this.setStatusMessage("Warning! No users added to the whitelist! This link could be used by anyone to override their build.", 1))
     };
     isMobile() {
-        return v(this.props.buildOverrides ?? {})
+        return N(this.props.buildOverrides ?? {})
     }
     renderSettingsForm() {
         let {
@@ -478,7 +478,7 @@ class j extends s.Component {
             allowLoggedOut: o,
             experiments: d,
             experimentsError: c
-        } = this.state, m = T.fL.find(t => t.value === e), _ = l.map(e => ({
+        } = this.state, m = T.fL.find(t => t.value === e), g = l.map(e => ({
             id: e,
             label: e,
             value: e
@@ -516,7 +516,7 @@ class j extends s.Component {
                     selectionMode: "single",
                     label: "Remove allowed app version",
                     value: void 0,
-                    options: _,
+                    options: g,
                     onSelectionChange: this.handleRemoveAllowedVersion,
                     disabled: 0 === l.length
                 })]
@@ -570,7 +570,7 @@ class j extends s.Component {
         return (0, i.jsx)(d.Modal, {
             title: "Generate Public Build Override Link",
             input: this.renderHelpMessage(),
-            actionBarInput: (0, i.jsx)(_.A, {
+            actionBarInput: (0, i.jsx)(g.A, {
                 value: n
             }),
             transitionState: t,

@@ -1,22 +1,22 @@
 /** chunk id: 725951 params = (module,exports,require) **/
 a.d(t, {
-    A: () => h,
+    A: () => m,
     f: () => c
 });
-var s, l = a(627968),
-    n = a(64700),
+var n, i = a(627968),
+    s = a(64700),
     r = a(503698),
-    i = a.n(r),
+    l = a.n(r),
     d = a(615300),
-    A = a(73939),
+    _ = a(73939),
     o = a(220880),
-    c = ((s = {})[s.RIGHT = -1] = "RIGHT", s[s.LEFT = 1] = "LEFT", s);
-let u = {
+    c = ((n = {})[n.RIGHT = -1] = "RIGHT", n[n.LEFT = 1] = "LEFT", n);
+let h = {
     friction: 7,
     tension: 40,
     clamp: !0
 };
-class _ extends n.PureComponent {
+class u extends s.PureComponent {
     _animated;
     constructor(e) {
         super(e), this._animated = new d.A.Value(-1 * e.direction)
@@ -51,27 +51,27 @@ class _ extends n.PureComponent {
         })), e
     }
     render() {
-        return (0, l.jsx)(d.A.div, {
+        return (0, i.jsx)(d.A.div, {
             style: this.getStyle(),
             className: o.A,
             children: this.props.children
         })
     }
 }
-let h = e => {
+let m = e => {
     let {
         children: t,
         step: a,
-        direction: s,
-        className: n,
-        springSettings: r = u,
+        direction: n,
+        className: s,
+        springSettings: r = h,
         fadeInOut: d = !1
     } = e;
-    return (0, l.jsx)(A.F, {
+    return (0, i.jsx)(_.F, {
         component: "div",
-        className: i()(o.Q, n),
-        children: (0, l.jsx)(_, {
-            direction: s,
+        className: l()(o.Q, s),
+        children: (0, i.jsx)(u, {
+            direction: n,
             springSettings: r,
             fadeInOut: d,
             children: t

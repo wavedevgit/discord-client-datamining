@@ -1,11 +1,10 @@
 /** chunk id: 216020 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
     A: () => a
 });
 var i = n(627968),
-    s = n(158954),
-    l = n(587933);
+    l = n(158954),
+    s = n(587933);
 
 function a(e) {
     let {
@@ -14,17 +13,17 @@ function a(e) {
         onClick: a
     } = e;
     return (0, i.jsxs)("div", {
-        className: l.S,
-        children: [(0, i.jsx)(s.DUT, {
+        className: s.S,
+        children: [(0, i.jsx)(l.DUT, {
             onClick: a,
-            className: l.H,
-            children: (0, i.jsx)(s.EYj, {
+            className: s.H,
+            children: (0, i.jsx)(l.EYj, {
                 variant: "text-sm/semibold",
                 color: "text-default",
                 lineClamp: 2,
                 children: t
             })
-        }), (0, i.jsx)(s.EYj, {
+        }), (0, i.jsx)(l.EYj, {
             variant: "text-xs/medium",
             color: "text-default",
             children: n

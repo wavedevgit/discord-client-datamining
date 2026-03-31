@@ -1,11 +1,10 @@
 /** chunk id: 139032 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
     A: () => A
 }), n(321073);
 var i = n(64700),
-    s = n(512750),
-    l = n(311907),
+    l = n(512750),
+    s = n(311907),
     a = n(71393),
     r = n(645619),
     o = n(832547),
@@ -13,54 +12,54 @@ var i = n(64700),
     d = n(568065),
     u = n(652215);
 let h = [{
-    skuId: s.ec,
+    skuId: l.ec,
     threshold: 1
 }, {
-    skuId: s.RV,
+    skuId: l.RV,
     threshold: 2
 }, {
-    skuId: s.YG,
+    skuId: l.YG,
     threshold: 2
 }, {
-    skuId: s.SL,
+    skuId: l.SL,
     threshold: 1
 }, {
-    skuId: s.aN,
+    skuId: l.aN,
     threshold: 1
 }, {
-    skuId: s.jF,
+    skuId: l.jF,
     threshold: 1
 }, {
-    skuId: s.OJ,
+    skuId: l.OJ,
     threshold: 1
 }];
 
 function A(e) {
-    let t = (0, l.bG)([r.A], () => r.A.getStateForGuild(e)),
+    let t = (0, s.bG)([r.A], () => r.A.getStateForGuild(e)),
         {
             available: n
         } = (0, c.A)(e),
-        s = (0, l.bG)([a.A], () => a.A.getGuild(e)?.features.has(u.GuildFeatures.PREMIUM_TIER_3_OVERRIDE) === !0),
+        l = (0, s.bG)([a.A], () => a.A.getGuild(e)?.features.has(u.GuildFeatures.PREMIUM_TIER_3_OVERRIDE) === !0),
         A = (0, o.M)("useBoostToUnlockFeaturedPowerup"),
-        [m] = i.useState(() => Math.random());
+        [_] = i.useState(() => Math.random());
     return i.useMemo(() => {
         if (null == t || !A) return;
         let {
             allPowerups: e,
             unlockedPowerups: i
-        } = t, l = [];
+        } = t, s = [];
         for (let t of h) {
             let {
                 skuId: a,
                 threshold: r
             } = t, o = e[a];
-            if (null == o || s && d.o2.has(a) || null != i[a] || !o.dependencies.every(e => null != i[e])) continue;
+            if (null == o || l && d.o2.has(a) || null != i[a] || !o.dependencies.every(e => null != i[e])) continue;
             let c = o.cost - n;
-            c > 0 && c <= r && l.push(o)
+            c > 0 && c <= r && s.push(o)
         }
-        if (l.length > 0) {
-            let e = Math.floor(m * l.length);
-            return l[e]
+        if (s.length > 0) {
+            let e = Math.floor(_ * s.length);
+            return s[e]
         }
-    }, [t, n, s, A, m])
+    }, [t, n, l, A, _])
 }

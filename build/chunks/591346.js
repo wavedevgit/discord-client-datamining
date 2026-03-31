@@ -1,8 +1,7 @@
 /** chunk id: 591346 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
-    G8: () => s,
-    NH: () => l
+    G8: () => l,
+    NH: () => s
 });
 let i = (0, n(600975).C)({
     kind: "guild",
@@ -20,7 +19,7 @@ let i = (0, n(600975).C)({
     }]
 });
 
-function s(e) {
+function l(e) {
     let {
         guildId: t,
         location: n
@@ -31,7 +30,7 @@ function s(e) {
     })
 }
 
-function l(e) {
+function s(e) {
     let {
         guildId: t,
         location: n

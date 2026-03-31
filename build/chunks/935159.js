@@ -1,14 +1,13 @@
 /** chunk id: 935159 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
-    Lx: () => l,
+    Lx: () => s,
     Nt: () => r,
-    iF: () => s,
+    iF: () => l,
     pE: () => a
 });
 var i = n(73153);
 
-function s(e) {
+function l(e) {
     let {
         eventId: t,
         stageId: n
@@ -20,7 +19,7 @@ function s(e) {
     })
 }
 
-function l(e) {
+function s(e) {
     i.h.dispatch({
         type: "UPCOMING_GUILD_EVENT_NOTICE_HIDE",
         eventId: e

@@ -18,17 +18,17 @@ function u(e) {
         compact: n,
         usernameHook: u,
         onClickThread: _,
-        onClickViewThreads: m,
-        onContextMenuThread: A
-    } = e, E = (0, s.Ay)(t), I = u(E), T = (0, l.bG)([r.A], () => r.A.getChannel(t.messageReference?.channel_id)), f = c.intl.format(c.t.cZ9Uf2, {
+        onClickViewThreads: A,
+        onContextMenuThread: m
+    } = e, E = (0, s.Ay)(t), T = u(E), I = (0, l.bG)([r.A], () => r.A.getChannel(t.messageReference?.channel_id)), N = c.intl.format(c.t.cZ9Uf2, {
         actorName: E.nick,
-        actorHook: I,
-        threadName: T?.name ?? t.content,
+        actorHook: T,
+        threadName: I?.name ?? t.content,
         threadOnClick: {
             onClick: _,
-            onContextMenu: A
+            onContextMenu: m
         },
-        viewThreadsOnClick: m
+        viewThreadsOnClick: A
     });
     return (0, i.jsx)(o.A, {
         iconNode: (0, i.jsx)(a.ysw, {
@@ -38,6 +38,6 @@ function u(e) {
         }),
         timestamp: t.timestamp,
         compact: n,
-        children: f
+        children: N
     })
 }

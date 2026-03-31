@@ -12,20 +12,20 @@ var i = n(627968),
     c = n(73153),
     u = n(631670),
     m = n(974544),
-    _ = n(793574),
-    g = n(688810),
-    x = n(512213),
-    A = n(429619),
+    g = n(793574),
+    _ = n(688810),
+    A = n(512213),
+    x = n(429619),
     h = n(451909),
     p = n(202639),
     T = n(407217),
     f = n(919395),
-    S = n(884546),
-    E = n(287070),
+    E = n(884546),
+    S = n(287070),
     b = n(196291),
     C = n(101058),
-    v = n(836602),
-    N = n(814390),
+    N = n(836602),
+    v = n(814390),
     I = n(351906),
     j = n(287809),
     y = n(954571),
@@ -48,9 +48,9 @@ function M() {
             pendingNameplate: M,
             showNotice: k,
             ...U
-        } = (0, r.cf)([v.A], () => ({
-            ...v.A.getPendingChanges(),
-            showNotice: v.A.showNotice()
+        } = (0, r.cf)([N.A], () => ({
+            ...N.A.getPendingChanges(),
+            showNotice: N.A.showNotice()
         })),
         w = (0, C.V7)({
             userId: e.id,
@@ -60,18 +60,18 @@ function M() {
             pendingValue: M,
             userValue: e?.collectibles?.nameplate
         }),
-        B = (0, N.A)() && null != n ? h.Ay.parse(void 0, n).content : n,
+        B = (0, v.A)() && null != n ? h.Ay.parse(void 0, n).content : n,
         F = O.Ay.canUsePremiumProfileCustomization(e),
         {
             analyticsLocations: H,
             newestAnalyticsLocation: z
-        } = (0, g.Ay)(_.A.USER_SETTINGS_USER_PROFILE);
+        } = (0, _.Ay)(g.A.USER_SETTINGS_USER_PROFILE);
     s.useEffect(() => () => c.h.wait(u.IM), []);
     let [Y, X] = s.useState(!1), K = !F, W = s.useRef(null);
-    return t ? (0, i.jsx)(m.A, {}) : (0, i.jsxs)(g.f5, {
+    return t ? (0, i.jsx)(m.A, {}) : (0, i.jsxs)(_.f5, {
         value: H,
-        children: [(0, i.jsx)(A.A, {}), (0, i.jsx)(S.A, {
-            profilePreview: (0, i.jsx)(E.A, {
+        children: [(0, i.jsx)(x.A, {}), (0, i.jsx)(E.A, {
+            profilePreview: (0, i.jsx)(S.A, {
                 user: e,
                 canUsePremiumCustomization: F,
                 onUpsellClick: P.A,
@@ -79,7 +79,7 @@ function M() {
                 ...U,
                 pendingAvatar: w
             }),
-            nameplatePreview: (0, i.jsx)(x.A, {
+            nameplatePreview: (0, i.jsx)(A.A, {
                 user: e,
                 nameplate: V,
                 ...U,

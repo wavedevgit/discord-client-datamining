@@ -12,23 +12,23 @@ var i = n(627968),
     c = n(235986),
     u = n(586068),
     m = n(734057),
-    _ = n(808728),
-    g = n(71393),
-    x = n(967198),
-    A = n(926140),
+    g = n(808728),
+    _ = n(71393),
+    A = n(967198),
+    x = n(926140),
     h = n(985018),
     p = n(730040);
 
 function T() {}
-let f = [A.rD.VOICE_CHANNEL];
+let f = [x.rD.VOICE_CHANNEL];
 
-function S(e) {
+function E(e) {
     e.setOptions({
         voiceChannelGuildFilter: null
     }), e.setLimit(1 / 0)
 }
 
-function E() {
+function S() {
     return (0, i.jsx)("div", {
         className: p.i1,
         children: (0, i.jsx)(r.Text, {
@@ -68,7 +68,7 @@ function b(e) {
                 align: c.A.Align.STRETCH,
                 children: [(0, i.jsx)("div", {
                     className: p.$X,
-                    children: (0, i.jsx)(v, {
+                    children: (0, i.jsx)(N, {
                         channelId: l
                     })
                 }), (0, i.jsx)(c.A.Child, {
@@ -94,19 +94,19 @@ function C(e) {
         b = s.useId(),
         C = s.useRef(null),
         {
-            query: v,
-            updateQuery: N,
+            query: N,
+            updateQuery: v,
             queryResults: I
         } = (0, d.A)({
             visible: !0,
             autocompleterResultTypes: f,
-            autocompleterBeforeCreateSearchContext: S
+            autocompleterBeforeCreateSearchContext: E
         }),
-        j = (t = "" !== v, n = (0, a.yK)([_.Ay, m.A, x.A], () => {
-            let e = x.A.getGuildId();
+        j = (t = "" !== N, n = (0, a.yK)([g.Ay, m.A, A.A], () => {
+            let e = A.A.getGuildId();
             if (t || null == e) return [];
             let n = [];
-            for (let t of _.Ay.getVocalChannelIds(e)) {
+            for (let t of g.Ay.getVocalChannelIds(e)) {
                 let e = m.A.getChannel(t);
                 null != e && n.push(e)
             }
@@ -123,7 +123,7 @@ function C(e) {
                 focusedIndex: t,
                 setFocusedIndex: n
             }
-        }(v);
+        }(N);
     s.useEffect(() => {
         let {
             current: e
@@ -137,9 +137,9 @@ function C(e) {
         P = (() => {
             if (null != j) return j[y]?.id;
             let e = I[y];
-            if (e?.type === A.rD.VOICE_CHANNEL) return e.record.id
+            if (e?.type === x.rD.VOICE_CHANNEL) return e.record.id
         })(),
-        L = R > 0 || "" === v ? {
+        L = R > 0 || "" === N ? {
             innerId: b,
             innerRole: "listbox",
             innerAriaLabel: h.intl.string(h.t["+N3fW7"]),
@@ -151,11 +151,11 @@ function C(e) {
                 } = e, n = (() => {
                     if (null != j) return j[t];
                     let e = I[t];
-                    if (e?.type === A.rD.VOICE_CHANNEL) return e.record
+                    if (e?.type === x.rD.VOICE_CHANNEL) return e.record
                 })();
                 if (null == n) return null;
                 let s = null != n.parent_id ? m.A.getChannel(n.parent_id) : void 0,
-                    l = g.A.getGuild(n.guild_id);
+                    l = _.A.getGuild(n.guild_id);
                 return (0, i.jsx)(u.c3, {
                     id: n.id,
                     channel: n,
@@ -176,7 +176,7 @@ function C(e) {
             rowHeight: 34
         } : {
             sections: [1],
-            renderRow: () => (0, i.jsx)(E, {}),
+            renderRow: () => (0, i.jsx)(S, {}),
             sectionHeight: 0,
             rowHeight: 52
         };
@@ -187,8 +187,8 @@ function C(e) {
         subtitle: h.intl.string(h.t.q4JpM8),
         actions: void 0,
         input: (0, i.jsx)(r.ksK, {
-            value: v,
-            onChange: N,
+            value: N,
+            onChange: v,
             onKeyDown: function(e) {
                 let t = e.key.toLowerCase();
                 if ("arrowdown" === t || "arrowup" === t || "enter" === t || "escape" === t) switch (e.preventDefault(), t) {
@@ -199,7 +199,7 @@ function C(e) {
                         let e = (() => {
                             if (null != j) return j[y];
                             let e = I[y];
-                            if (e?.type === A.rD.VOICE_CHANNEL) return e.record
+                            if (e?.type === x.rD.VOICE_CHANNEL) return e.record
                         })();
                         null == e ? T(void 0) : T(e.id), c();
                         break
@@ -224,19 +224,19 @@ function C(e) {
     })
 }
 
-function v(e) {
+function N(e) {
     let {
         channelId: t
     } = e, {
         channel: n,
         category: s,
         guild: l
-    } = (0, a.cf)([m.A, g.A], () => {
+    } = (0, a.cf)([m.A, _.A], () => {
         let e = null != t ? m.A.getChannel(t) : void 0;
         return null != e ? {
             channel: e,
             category: null != e.parent_id ? m.A.getChannel(e.parent_id) : void 0,
-            guild: null != e.guild_id ? g.A.getGuild(e.guild_id) : void 0
+            guild: null != e.guild_id ? _.A.getGuild(e.guild_id) : void 0
         } : {
             channel: void 0,
             category: void 0,

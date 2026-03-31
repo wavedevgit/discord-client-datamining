@@ -1,77 +1,77 @@
 /** chunk id: 168393 params = (module,exports,require) **/
-i.r(e), i.d(e, {
+l.r(e), l.d(e, {
     SubscriptionDetailsModal: () => j
 });
-var s = i(627968),
-    l = i(64700),
-    n = i(885996),
-    r = i(423090),
-    a = i(397927),
-    o = i(272859),
-    c = i(955440),
-    d = i(3432),
-    u = i(185438),
-    x = i(371794),
-    _ = i(998218),
-    m = i(550732),
-    h = i(376374),
-    p = i(86889);
+var s = l(627968),
+    n = l(64700),
+    i = l(885996),
+    r = l(423090),
+    a = l(397927),
+    o = l(272859),
+    c = l(955440),
+    d = l(3432),
+    u = l(185438),
+    x = l(371794),
+    _ = l(998218),
+    m = l(550732),
+    h = l(376374),
+    p = l(86889);
 
 function j(t) {
     let {
         appId: e,
-        subscriptionType: i,
+        subscriptionType: l,
         onClose: j,
         skuId: v,
-        guildId: T,
-        transitionState: g,
+        guildId: S,
+        transitionState: T,
         onHeaderTitleClick: A
     } = t, {
-        data: S
-    } = (0, c.A)(v), E = S?.[0], {
-        data: I
-    } = (0, o.d)(v), f = l.useMemo(() => I?.thumbnail != null ? _.A.toURLSafe((0, x.YE)(e, I.thumbnail, 256)) ?? void 0 : void 0, [e, I?.thumbnail]), N = l.useMemo(() => {
-        let t = I?.benefits;
+        data: E
+    } = (0, c.A)(v), f = E?.[0], {
+        data: g
+    } = (0, o.d)(v), I = n.useMemo(() => g?.thumbnail != null ? _.A.toURLSafe((0, x.YE)(e, g.thumbnail, 256)) ?? void 0 : void 0, [e, g?.thumbnail]), C = n.useMemo(() => {
+        let t = g?.benefits;
         if (null != t && 0 !== t.length) return t.map(t => ({
             id: t.id,
             title: t.name,
             description: t.description,
             icon: (0, d.N)(e, t.icon)
         }))
-    }, [e, I?.benefits]), {
+    }, [e, g?.benefits]), {
         openModal: R,
         subscriptionPurchaseButtonState: b
     } = (0, u.A)({
         skuId: v,
-        initialSubscribeForGuild: T ?? void 0
+        initialSubscribeForGuild: S ?? void 0
     });
-    return null == I ? null : (0, s.jsx)(m.C, {
+    return null == g ? null : (0, s.jsx)(m.C, {
         appId: e,
         skuId: v,
-        transitionState: g,
+        transitionState: T,
         onHeaderTitleClick: A ?? j,
         onClose: j,
         footer: (0, s.jsx)(h.rc, {
             onClick: R,
             appId: e,
-            subscriptionType: i,
+            subscriptionType: l,
             skuId: v,
-            subscriptionPlan: E,
+            subscriptionPlan: f,
             state: b
         }),
         children: (0, s.jsx)(p.D, {
             appId: e,
             skuId: v,
-            benefits: null != N ? N.map(t => (0, s.jsx)(n.FY, {
+            benefits: null != C ? C.map(t => (0, s.jsx)(i.FY, {
                 header: t.title,
                 icon: t.icon,
                 description: t.description
             }, t.id)) : void 0,
-            description: I.description ?? void 0,
-            imgSrc: f,
-            title: E?.name ?? I.summary,
+            description: g.description ?? void 0,
+            imgSrc: I,
+            title: f?.name ?? g.summary,
             tag: (0, s.jsx)(r.M, {
-                type: i
+                type: l
             }),
             FallbackIcon: a.bhD
         })

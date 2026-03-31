@@ -3,8 +3,8 @@ n.d(t, {
     A: () => p
 });
 var i = n(627968),
-    l = n(64700),
-    a = n(990078),
+    a = n(64700),
+    l = n(990078),
     s = n(397927),
     r = n(183555),
     o = n(633075),
@@ -22,9 +22,9 @@ function p(e) {
         onDismiss: p
     } = e, {
         trackUserProfileEditAction: f
-    } = (0, r.NJ)(), h = l.useMemo(() => new o.R({
+    } = (0, r.NJ)(), h = a.useMemo(() => new o.R({
         applicationId: n.id
-    }), [n.id]), _ = l.useCallback(() => {
+    }), [n.id]), _ = a.useCallback(() => {
         null != h && ((0, d.Y5)(h), f({
             action: "WIDGET_ADDED",
             ...h.getProfileEditAnalyticsOptions()
@@ -43,7 +43,7 @@ function p(e) {
                 applicationName: n.name
             }),
             buttons: (0, i.jsxs)(i.Fragment, {
-                children: [(0, i.jsx)(a.m, {
+                children: [(0, i.jsx)(l.m, {
                     text: x.intl.string(x.t.WAI6xu),
                     ariaHidden: !0,
                     children: (0, i.jsx)(s.SCx, {
@@ -55,7 +55,7 @@ function p(e) {
                             p(m.i.USER_DISMISS)
                         }
                     })
-                }), (0, i.jsx)(a.m, {
+                }), (0, i.jsx)(l.m, {
                     text: x.intl.string(x.t["lBG2s/"]),
                     ariaHidden: !0,
                     children: (0, i.jsx)(s.SCx, {

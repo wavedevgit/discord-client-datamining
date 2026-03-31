@@ -1,12 +1,11 @@
 /** chunk id: 826050 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
     A: () => g
 });
 var i = n(627968),
-    s = n(64700),
-    l = n(503698),
-    a = n.n(l),
+    l = n(64700),
+    s = n(503698),
+    a = n.n(s),
     r = n(615300),
     o = n(451988),
     c = n(397927),
@@ -14,17 +13,17 @@ var i = n(627968),
     u = n(652215),
     h = n(985018),
     A = n(709081);
-let m = {
+let _ = {
     friction: 15,
     tension: 100
 };
-class _ extends s.PureComponent {
+class m extends l.PureComponent {
     state = {
         shown: !1,
         translateY: new r.A.Value(0)
     };
     static contextType = c.CZY;
-    rootRef = s.createRef();
+    rootRef = l.createRef();
     focusTimeout = new o.Ep;
     componentDidMount() {
         this.setState({
@@ -61,7 +60,7 @@ class _ extends s.PureComponent {
         } = this.context;
         !0 !== t.enabled && r.A.spring(this.state.translateY, {
             toValue: Math.min(e, 250),
-            ...m
+            ..._
         }).start()
     }
     renderArrowGroup(e) {
@@ -136,4 +135,4 @@ class _ extends s.PureComponent {
         }
     }
 }
-let g = _
+let g = m

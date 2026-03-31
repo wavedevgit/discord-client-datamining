@@ -1,11 +1,10 @@
 /** chunk id: 187360 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
-    A: () => _
+    A: () => m
 });
 var i = n(627968),
-    s = n(64700),
-    l = n(311907),
+    l = n(64700),
+    s = n(311907),
     a = n(397927),
     r = n(832712),
     o = n(543465),
@@ -14,13 +13,13 @@ var i = n(627968),
     u = n(58736),
     h = n(461678),
     A = n(652215),
-    m = n(985018);
+    _ = n(985018);
 
-function _(e) {
+function m(e) {
     let {
         channel: t
-    } = e, n = s.useRef(null), [_, g] = (0, l.yK)([o.Ay], () => [o.Ay.isChannelMuted(t.getGuildId(), t.id), o.Ay.resolvedMessageNotifications(t)], [t]), [p, f] = s.useState(!1);
-    s.useEffect(() => {
+    } = e, n = l.useRef(null), [m, g] = (0, s.yK)([o.Ay], () => [o.Ay.isChannelMuted(t.getGuildId(), t.id), o.Ay.resolvedMessageNotifications(t)], [t]), [p, f] = l.useState(!1);
+    l.useEffect(() => {
         let e = () => f(!0);
         return c._.subscribe(A.jej.OPEN_THREAD_NOTIFICATION_SETTINGS, e), () => {
             c._.unsubscribe(A.jej.OPEN_THREAD_NOTIFICATION_SETTINGS, e)
@@ -28,10 +27,10 @@ function _(e) {
     }, []);
     let x = e => {
             e.shiftKey ? r.A.updateChannelOverrideSettings(t.guild_id, t.id, {
-                muted: !_
-            }, d.G_.muted(!_)) : f(e => !e)
+                muted: !m
+            }, d.G_.muted(!m)) : f(e => !e)
         },
-        E = m.intl.string(m.t.h850Ss);
+        E = _.intl.string(_.t.h850Ss);
     return (0, i.jsx)(a.YNO, {
         targetElementRef: n,
         shouldShow: p,
@@ -44,21 +43,21 @@ function _(e) {
             ...e,
             channel: t,
             navId: "channel-context",
-            label: m.intl.string(m.t.Xm41aV)
+            label: _.intl.string(_.t.Xm41aV)
         }),
         clickTrap: !0,
         children: (e, t) => {
             let {
-                isShown: s
+                isShown: l
             } = t;
             return (0, i.jsx)(u.Ay.Icon, {
                 ...e,
                 ref: n,
                 onClick: x,
-                tooltip: s ? null : E,
-                icon: _ || g !== A.orn.ALL_MESSAGES ? a.a_I : a.XFE,
+                tooltip: l ? null : E,
+                icon: m || g !== A.orn.ALL_MESSAGES ? a.a_I : a.XFE,
                 "aria-label": E,
-                selected: s
+                selected: l
             })
         }
     })

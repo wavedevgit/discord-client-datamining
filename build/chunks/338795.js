@@ -1,6 +1,6 @@
 /** chunk id: 338795 params = (module,exports,require) **/
 n.d(t, {
-    J: () => S
+    J: () => E
 });
 var i = n(934551),
     s = n(98207),
@@ -12,28 +12,28 @@ var i = n(934551),
     c = n(780964),
     u = n(828797),
     m = n(611478),
-    _ = n(402089),
-    g = n(281225),
-    x = n(935185),
-    A = n(652215),
+    g = n(402089),
+    _ = n(281225),
+    A = n(935185),
+    x = n(652215),
     h = n(985018);
 let p = (0, a.dT)(c.X.ACCOUNT_STANDING_TAB, {
         getTitle: () => h.intl.string(h.t["Vov/9o"]),
         onItemSelect: () => {
-            d.default.track(A.HAw.MY_ACCOUNT_PAGE_TAB_NAVIGATE, {
-                target_tab_name: x.D.STANDING
+            d.default.track(x.HAw.MY_ACCOUNT_PAGE_TAB_NAVIGATE, {
+                target_tab_name: A.D.STANDING
             })
         },
-        buildLayout: () => [g.Q]
+        buildLayout: () => [_.Q]
     }),
     T = (0, a.dT)(c.X.ACCOUNT_SECURITY_TAB, {
         getTitle: () => h.intl.string(h.t.Am9YHi),
         onItemSelect: () => {
-            d.default.track(A.HAw.MY_ACCOUNT_PAGE_TAB_NAVIGATE, {
-                target_tab_name: x.D.SECURITY
+            d.default.track(x.HAw.MY_ACCOUNT_PAGE_TAB_NAVIGATE, {
+                target_tab_name: A.D.SECURITY
             })
         },
-        buildLayout: () => [m.P, u.o, _.s]
+        buildLayout: () => [m.P, u.o, g.s]
     }),
     f = (0, a.t_)(c.X.ACCOUNT_PANEL, {
         useTitle: () => h.intl.string(h.t["JAIM/m"]),
@@ -46,7 +46,7 @@ let p = (0, a.dT)(c.X.ACCOUNT_STANDING_TAB, {
         hideInStreamerMode: !0,
         buildLayout: () => [T, p]
     }),
-    S = (0, a.i4)(c.X.ACCOUNT_SIDEBAR_ITEM, {
+    E = (0, a.i4)(c.X.ACCOUNT_SIDEBAR_ITEM, {
         useTitle: () => h.intl.string(h.t["JAIM/m"]),
         icon: i.UserIcon,
         buildLayout: () => [f]

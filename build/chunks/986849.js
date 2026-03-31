@@ -1,5 +1,4 @@
 /** chunk id: 986849 params = (module,exports,require) **/
-"use strict";
 e.exports = {
     qr: "footer__272c7",
     wC: "footerButton__272c7",

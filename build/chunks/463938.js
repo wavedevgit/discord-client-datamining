@@ -1,11 +1,10 @@
 /** chunk id: 463938 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
     j: () => f
 });
 var i = n(627968),
-    s = n(64700),
-    l = n(837381),
+    l = n(64700),
+    s = n(837381),
     a = n(311907),
     r = n(827734),
     o = n(397927),
@@ -14,8 +13,8 @@ var i = n(627968),
     u = n(976860),
     h = n(147925),
     A = n(652215),
-    m = n(746080),
-    _ = n(985018),
+    _ = n(746080),
+    m = n(985018),
     g = n(139715);
 
 function p(e, t) {
@@ -25,19 +24,19 @@ function p(e, t) {
         children: e
     }, t)
 }
-let f = s.memo(function(e) {
+let f = l.memo(function(e) {
     let {
         guild: t
-    } = e, n = (0, a.bG)([c.h], () => c.h.getNewMemberActions(t.id), [t.id]), f = (0, a.bG)([d.A], () => d.A.getCompletedActions(t.id)), x = s.useMemo(() => {
+    } = e, n = (0, a.bG)([c.h], () => c.h.getNewMemberActions(t.id), [t.id]), f = (0, a.bG)([d.A], () => d.A.getCompletedActions(t.id)), x = l.useMemo(() => {
         if (null == n || null == f) return 0;
         let e = 0;
         return n.forEach(t => {
             null != f[t.channelId] && e++
         }), e
-    }, [f, n]), E = null == n ? 0 : n.length, C = (0, l.rm)(`progress-bar-${t.id}`);
+    }, [f, n]), E = null == n ? 0 : n.length, I = (0, s.rm)(`progress-bar-${t.id}`);
     return (0, i.jsxs)("li", {
         children: [(0, i.jsxs)(o.DUT, {
-            ...C,
+            ...I,
             role: "button",
             focusProps: {
                 offset: {
@@ -46,20 +45,20 @@ let f = s.memo(function(e) {
             },
             className: g.G9,
             onClick: function() {
-                (0, u.pX)(A.BVt.CHANNEL(t.id, m.VV.GUILD_HOME))
+                (0, u.pX)(A.BVt.CHANNEL(t.id, _.VV.GUILD_HOME))
             },
             children: [(0, i.jsxs)("div", {
                 className: g.A1,
                 children: [(0, i.jsx)(o.Heading, {
                     variant: "heading-sm/bold",
-                    children: _.intl.string(_.t.SnrR3x)
+                    children: m.intl.string(m.t.SnrR3x)
                 }), (0, i.jsxs)("div", {
                     className: g.Ib,
                     children: [(0, i.jsx)(o.Text, {
                         variant: "text-xs/medium",
                         color: "text-muted",
                         className: g.Cv,
-                        children: _.intl.format(_.t.eqZ1lW, {
+                        children: m.intl.format(m.t.eqZ1lW, {
                             numberHook: p,
                             total: E.toString(),
                             completed: x.toString()

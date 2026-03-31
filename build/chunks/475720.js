@@ -7,27 +7,27 @@ var l = i(627968),
     a = i(397927),
     s = i(9578),
     r = i(573648),
-    o = i(954571),
-    d = i(652215),
+    d = i(954571),
+    o = i(652215),
     c = i(139616);
 let u = {
-    [d.fg2.TWITCH]: a.aWO,
-    [d.fg2.YOUTUBE]: a.CiD,
-    [d.fg2.TWITTER]: a.p3p,
-    [d.fg2.TWITTER_LEGACY]: a.p3p,
-    [d.fg2.FACEBOOK]: a.Zc1,
-    [d.fg2.INSTAGRAM]: a.LyU,
-    [d.fg2.REDDIT]: a.T1e,
-    [d.fg2.TIKTOK]: a.Xsb,
-    [d.fg2.SPOTIFY]: a.L5T,
-    [d.fg2.BLUESKY]: a.akf
+    [o.fg2.TWITCH]: a.aWO,
+    [o.fg2.YOUTUBE]: a.CiD,
+    [o.fg2.TWITTER]: a.p3p,
+    [o.fg2.TWITTER_LEGACY]: a.p3p,
+    [o.fg2.FACEBOOK]: a.Zc1,
+    [o.fg2.INSTAGRAM]: a.LyU,
+    [o.fg2.REDDIT]: a.T1e,
+    [o.fg2.TIKTOK]: a.Xsb,
+    [o.fg2.SPOTIFY]: a.L5T,
+    [o.fg2.BLUESKY]: a.akf
 };
 
 function m(e) {
     let {
         url: t,
         invite: i
-    } = e, m = r.A.getByUrl(t), x = null != m ? u[m.type] : void 0, g = n.useCallback(() => (o.default.track(d.HAw.INVITE_ACCEPT_SOCIAL_LINK_CLICKED, {
+    } = e, m = r.A.getByUrl(t), x = null != m ? u[m.type] : void 0, g = n.useCallback(() => (d.default.track(o.HAw.INVITE_ACCEPT_SOCIAL_LINK_CLICKED, {
         guild_id: i.guild?.id,
         invite_code: i.code,
         social_platform: m?.type,

@@ -1,116 +1,117 @@
 /** chunk id: 636184 params = (module,exports,require) **/
-n.d(t, {
-    h: () => x
+"use strict";
+s.d(t, {
+    h: () => P
 });
-var i = n(627968),
-    l = n(64700),
-    a = n(503698),
-    r = n.n(a),
-    s = n(158954),
-    o = n(311907),
-    c = n(582754),
-    d = n(397927),
-    u = n(308528),
-    _ = n(854627),
-    m = n(12901),
-    A = n(954571),
-    E = n(975571),
-    I = n(427262),
-    T = n(326084),
-    f = n(851746),
-    N = n(652215),
-    g = n(985018),
-    C = n(471449),
-    h = n(299148);
-let p = e => {
+var r = s(627968),
+    i = s(64700),
+    n = s(503698),
+    a = s.n(n),
+    l = s(158954),
+    u = s(311907),
+    c = s(582754),
+    o = s(397927),
+    d = s(308528),
+    E = s(854627),
+    _ = s(12901),
+    R = s(954571),
+    p = s(975571),
+    I = s(427262),
+    S = s(326084),
+    h = s(851746),
+    f = s(652215),
+    g = s(985018),
+    M = s(471449),
+    A = s(299148);
+let m = e => {
         let {
             recipient: t,
-            status: n,
-            onClose: l
+            status: s,
+            onClose: i
         } = e, {
-            avatarSrc: a,
-            eventHandlers: s
-        } = (0, _.A)({
+            avatarSrc: n,
+            eventHandlers: l
+        } = (0, E.A)({
             userId: t?.id,
-            size: d._3J.SIZE_56
-        }), o = I.Ay.getName(t), c = n === T.o.FAIL;
-        return (0, i.jsxs)("div", {
-            className: C.w4,
-            children: [(0, i.jsx)(d.euF, {
-                imageClassName: r()({
-                    [C.jN]: c
+            size: o._3J.SIZE_56
+        }), u = I.Ay.getName(t), c = s === S.o.FAIL;
+        return (0, r.jsxs)("div", {
+            className: M.w4,
+            children: [(0, r.jsx)(o.euF, {
+                imageClassName: a()({
+                    [M.jN]: c
                 }),
-                src: a,
-                "aria-label": o,
-                size: d._3J.SIZE_32,
-                ...s
-            }), c ? (0, i.jsxs)(i.Fragment, {
-                children: [(0, i.jsx)(d.Text, {
-                    className: C.E0,
+                src: n,
+                "aria-label": u,
+                size: o._3J.SIZE_32,
+                ...l
+            }), c ? (0, r.jsxs)(r.Fragment, {
+                children: [(0, r.jsx)(o.Text, {
+                    className: M.E0,
                     variant: "text-md/medium",
                     color: "text-strong",
-                    children: o
-                }), (0, i.jsx)(d.Text, {
+                    children: u
+                }), (0, r.jsx)(o.Text, {
                     variant: "text-md/medium",
-                    className: C.nT,
+                    className: M.nT,
                     color: "text-strong",
                     children: g.intl.format(g.t.RO3T4B, {
-                        userName: o
+                        userName: u
                     })
                 })]
-            }) : (0, i.jsx)(d.Text, {
+            }) : (0, r.jsx)(o.Text, {
                 variant: "text-md/medium",
-                className: C.Pm,
+                className: M.Pm,
                 color: "text-strong",
-                children: o
-            }), (0, i.jsx)(d.Button, {
+                children: u
+            }), (0, r.jsx)(o.Button, {
                 variant: "secondary",
                 size: "sm",
                 text: g.intl.string(g.t["g33r/P"]),
-                icon: d.oyn,
+                icon: o.oyn,
                 onClick: () => {
                     var e;
-                    return e = t.id, void((0, m.default)(), u.A.openPrivateChannel({
+                    return e = t.id, void((0, _.default)(), d.A.openPrivateChannel({
                         recipientIds: e
-                    }), l())
+                    }), i())
                 }
             })]
         })
     },
-    x = e => {
+    P = e => {
         let {
             transitionState: t,
-            results: n,
-            onClose: a,
-            isReminderConfirmation: r
-        } = e, u = (0, o.bG)([f.A], () => f.A.getReferralsRemaining());
-        A.default.track(N.HAw.REFERRAL_PROGRAM_SHARE_CTA_CLICKED);
+            results: s,
+            onClose: n,
+            isReminderConfirmation: a
+        } = e, d = (0, u.bG)([h.A], () => h.A.getReferralsRemaining());
+        R.default.track(f.HAw.REFERRAL_PROGRAM_SHARE_CTA_CLICKED);
         let {
-            reducedMotion: _
-        } = l.useContext(c.CZ);
-        return null === u ? (0, i.jsx)(d.y$y, {}) : (0, i.jsx)(s.ExpressiveModal, {
-            graphic: _.enabled ? {
-                src: h.A,
+            reducedMotion: E
+        } = i.useContext(c.CZ);
+        return null === d ? (0, r.jsx)(o.y$y, {}) : (0, r.jsx)(l.ExpressiveModal, {
+            graphic: E.enabled ? {
+                src: A.A,
                 type: "image"
             } : {
-                rive: d.lBW,
+                rive: o.lBW,
                 type: "rive"
             },
             gradientColor: "nitro-pink",
-            title: 0 === n.filter(e => e.status === T.o.SUCCESS).length ? g.intl.string(g.t["7VBEue"]) : !0 === r ? g.intl.string(g.t.GP5lbq) : g.intl.string(g.t.tKCltd),
-            subtitle: !0 === r ? g.intl.format(g.t["4gJJfD"], {
-                helpdeskArticle: E.A.getArticleURL(N.MVz.REFERRAL_PROGRAM)
+            title: 0 === s.filter(e => e.status === S.o.SUCCESS).length ? g.intl.string(g.t["7VBEue"]) : !0 === a ? g.intl.string(g.t.GP5lbq) : g.intl.string(g.t.tKCltd),
+            subtitle: !0 === a ? g.intl.format(g.t["4gJJfD"], {
+                helpdeskArticle: p.A.getArticleURL(f.MVz.REFERRAL_PROGRAM)
             }) : g.intl.format(g.t.AwGSWl, {
-                helpdeskArticle: E.A.getArticleURL(N.MVz.REFERRAL_PROGRAM)
+                helpdeskArticle: p.A.getArticleURL(f.MVz.REFERRAL_PROGRAM)
             }),
-            onClose: a,
+            onClose: n,
             transitionState: t,
-            children: (0, i.jsx)("div", {
-                className: C.Hz,
-                children: n.map(e => (0, i.jsx)(p, {
+            children: (0, r.jsx)("div", {
+                className: M.Hz,
+                children: s.map(e => (0, r.jsx)(m, {
                     recipient: e.recipient,
                     status: e.status,
-                    onClose: a
+                    onClose: n
                 }, e.recipient.id))
             })
         })

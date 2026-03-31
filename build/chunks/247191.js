@@ -19,32 +19,32 @@ var i = n(242934),
     h = n(563312),
     T = n(794782),
     f = n(974930),
-    m = n(988794),
-    y = n(652215),
-    v = n(985018);
-let p = "YYYYMMDDTHHmmss",
+    y = n(988794),
+    v = n(652215),
+    p = n(985018);
+let m = "YYYYMMDDTHHmmss",
     N = "YYYY-MM-DDTHH:mm:ss",
     S = /RRULE:.*/;
 
 function G(t, e, n, i) {
     let a, G = (0, u.bG)([_.Ay], () => _.Ay.isActive(t)),
-        D = (0, h.nh)(t ?? "", i),
-        b = (0, u.bG)([_.Ay], () => _.Ay.getGuildScheduledEvent(t), [t]),
+        b = (0, h.nh)(t ?? "", i),
+        D = (0, u.bG)([_.Ay], () => _.Ay.getGuildScheduledEvent(t), [t]),
         I = (0, u.bG)([A.A], () => A.A.getGuild(e), [e]);
-    if (G || null == D || null == b) return null;
-    a = b.entity_type === m.Ps.EXTERNAL ? b.entity_metadata.location : null != n && null != I ? v.intl.formatToPlainString(v.t["2t8L04"], {
+    if (G || null == b || null == D) return null;
+    a = D.entity_type === y.Ps.EXTERNAL ? D.entity_metadata.location : null != n && null != I ? p.intl.formatToPlainString(p.t["2t8L04"], {
         channelName: n.name,
         guildName: I.name
-    }) : v.intl.string(v.t.VSgOVg);
-    let C = d()(b.scheduled_start_time),
-        x = null != b.scheduled_end_time ? d()(b.scheduled_end_time) : C,
-        w = null != b.description && "" !== b.description ? E.Ay.unparse(b.description, n?.id ?? y.dJq, !0) : "",
-        O = (0, T.Sn)(b.recurrence_rule),
+    }) : p.intl.string(p.t.VSgOVg);
+    let C = d()(D.scheduled_start_time),
+        x = null != D.scheduled_end_time ? d()(D.scheduled_end_time) : C,
+        w = null != D.description && "" !== D.description ? E.Ay.unparse(D.description, n?.id ?? v.dJq, !0) : "",
+        O = (0, T.Sn)(D.recurrence_rule),
         R = null != O ? (0, f.X7)(O) : null,
         {
             startTime: j,
             endTime: L
-        } = D,
+        } = b,
         U = d()(j) ?? C,
         P = d()(L ?? j) ?? C,
         V = () => {
@@ -52,24 +52,24 @@ function G(t, e, n, i) {
             t.createEvent({
                 start: C,
                 end: x,
-                summary: b.name,
+                summary: D.name,
                 description: w,
                 location: a,
                 repeating: R
             }), g.isPlatformEmbedded ? c.A.fileManager.saveWithDialog(t.toString(), "discord-event.ics") : window.open(t.toURL(), "_blank")
         };
     return (0, l.jsxs)(o.Drp, {
-        id: v.intl.string(v.t.k5pvjo),
-        label: v.intl.string(v.t.k5pvjo),
+        id: p.intl.string(p.t.k5pvjo),
+        label: p.intl.string(p.t.k5pvjo),
         action: V,
         children: [(0, l.jsx)(o.Drp, {
-            id: v.intl.string(v.t.JKSLRH),
-            label: v.intl.string(v.t.JKSLRH),
+            id: p.intl.string(p.t.JKSLRH),
+            label: p.intl.string(p.t.JKSLRH),
             action: () => {
                 let t = R?.toString(),
                     e = {
-                        text: b.name,
-                        dates: `${C.format(p)}/${x.format(p)}`,
+                        text: D.name,
+                        dates: `${C.format(m)}/${x.format(m)}`,
                         details: w,
                         action: "TEMPLATE",
                         location: a,
@@ -79,18 +79,18 @@ function G(t, e, n, i) {
                 window.open(n, "_blank")
             }
         }), (0, l.jsx)(o.Drp, {
-            id: v.intl.string(v.t.nrBYSe),
-            label: v.intl.string(v.t.nrBYSe),
+            id: p.intl.string(p.t.nrBYSe),
+            label: p.intl.string(p.t.nrBYSe),
             action: V
         }), (0, l.jsx)(o.Drp, {
-            id: v.intl.string(v.t.odzaCd),
-            label: v.intl.string(v.t.odzaCd),
+            id: p.intl.string(p.t.odzaCd),
+            label: p.intl.string(p.t.odzaCd),
             action: () => {
                 let t = {
                         v: 60,
-                        title: b.name,
-                        st: U.format(p),
-                        et: P.format(p),
+                        title: D.name,
+                        st: U.format(m),
+                        et: P.format(m),
                         desc: w,
                         in_loc: a
                     },
@@ -98,15 +98,15 @@ function G(t, e, n, i) {
                 window.open(e, "_blank")
             }
         }), (0, l.jsx)(o.Drp, {
-            id: v.intl.string(v.t.rQe8EE),
-            label: v.intl.string(v.t.rQe8EE),
+            id: p.intl.string(p.t.rQe8EE),
+            label: p.intl.string(p.t.rQe8EE),
             action: () => {
                 let t = {
                         path: "/calendar/action/compose",
                         rru: "addevent",
                         startdt: U.format(N),
                         enddt: P.format(N),
-                        subject: b.name,
+                        subject: D.name,
                         body: w,
                         location: a,
                         allday: !1

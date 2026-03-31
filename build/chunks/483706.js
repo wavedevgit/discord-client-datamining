@@ -1,6 +1,6 @@
 /** chunk id: 483706 params = (module,exports,require) **/
 n.d(t, {
-    p: () => N
+    p: () => v
 });
 var i = n(627968),
     s = n(64700),
@@ -12,16 +12,16 @@ var i = n(627968),
     c = n(12901),
     u = n(840065),
     m = n(899847),
-    _ = n(936926),
-    g = n(809697),
-    x = n(153739),
-    A = n(534654),
+    g = n(936926),
+    _ = n(809697),
+    A = n(153739),
+    x = n(534654),
     h = n(834981),
     p = n(191627),
     T = n(842130),
     f = n(985018),
-    S = n(288530);
-let E = e => {
+    E = n(288530);
+let S = e => {
         let {
             title: t,
             buttonText: n,
@@ -90,7 +90,7 @@ let E = e => {
     C = e => {
         let {
             teenId: t
-        } = e, s = (0, x.y3)(), r = s?.restrictedSchedule?.rules.length ?? 0;
+        } = e, s = (0, A.y3)(), r = s?.restrictedSchedule?.rules.length ?? 0;
         return (0, i.jsxs)(l.BJc, {
             padding: {
                 top: 12,
@@ -131,13 +131,13 @@ let E = e => {
             })]
         })
     },
-    v = () => {
-        let e = (0, x.y3)(),
-            t = (0, x.tl)(),
+    N = () => {
+        let e = (0, A.y3)(),
+            t = (0, A.tl)(),
             {
                 handleTabChange: n
-            } = (0, g.A)(),
-            a = (0, _.Vh)({
+            } = (0, _.A)(),
+            a = (0, g.Vh)({
                 location: "TimeControlsRow"
             });
         s.useEffect(() => {
@@ -158,29 +158,29 @@ let E = e => {
                     color: "text-muted",
                     children: f.intl.string(T.default.Sv236e)
                 })]
-            }), (0, i.jsx)(E, {
+            }), (0, i.jsx)(S, {
                 title: f.intl.string(f.t["+o1pDZ"]),
                 buttonText: f.intl.string(f.t.bt75uw),
                 onButtonPress: () => r(p.u9.CONTENT_AND_SOCIAL)
             }), (0, i.jsx)(o.A, {
-                className: S.yF
-            }), (0, i.jsx)(E, {
+                className: E.yF
+            }), (0, i.jsx)(S, {
                 title: f.intl.string(f.t.OAuOHD),
                 buttonText: f.intl.string(f.t.bt75uw),
                 onButtonPress: () => r(p.u9.DATA_AND_PRIVACY)
             }), a && e?.id != null && (0, i.jsxs)(i.Fragment, {
                 children: [(0, i.jsx)(o.A, {
-                    className: S.yF
+                    className: E.yF
                 }), (0, i.jsx)(C, {
                     teenId: e.id
                 })]
             })]
         })
     },
-    N = () => {
-        let e = (0, A.A)();
+    v = () => {
+        let e = (0, x.A)();
         return 0 === (0, h.vx)().length ? null : (0, i.jsx)("div", {
-            className: S.kL,
-            children: e ? (0, i.jsx)(b, {}) : (0, i.jsx)(v, {})
+            className: E.kL,
+            children: e ? (0, i.jsx)(b, {}) : (0, i.jsx)(N, {})
         })
     }

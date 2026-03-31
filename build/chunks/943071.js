@@ -1,17 +1,17 @@
 /** chunk id: 943071 params = (module,exports,require) **/
 n.d(t, {
-    A: () => i
+    A: () => r
 });
 var l = n(627968);
 n(64700);
 var a = n(492917),
-    r = n(870830);
-let i = e => {
+    i = n(870830);
+let r = e => {
     let {
         element: t
     } = e;
     return t?.type !== "success" ? null : (0, l.jsx)("div", {
-        className: r.t,
+        className: i.t,
         children: (0, l.jsx)(a.Mwn, {
             alt: ""
         })

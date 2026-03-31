@@ -3,9 +3,9 @@ n.d(t, {
     J: () => N
 });
 var i = n(627968),
-    l = n(64700),
-    a = n(503698),
-    s = n.n(a),
+    a = n(64700),
+    l = n(503698),
+    s = n.n(l),
     r = n(575593),
     o = n(397927),
     d = n(793574),
@@ -26,7 +26,7 @@ function v(e) {
     let {
         sku: t,
         wishlistOwner: n,
-        style: a,
+        style: l,
         skuPreviewStyle: r,
         setIsHoveringOrFocusing: o,
         onClick: d,
@@ -35,7 +35,7 @@ function v(e) {
         children: m
     } = e, {
         trackUserProfileWishlistAction: p
-    } = (0, u.NJ)(), f = l.useCallback(() => {
+    } = (0, u.NJ)(), f = a.useCallback(() => {
         p({
             wishlistId: g,
             action: _.Mq.WISHLIST_ITEM_CLICKED,
@@ -47,7 +47,7 @@ function v(e) {
         sku: t,
         user: n,
         spec: j,
-        cardStyle: s()(I.Nr, a),
+        cardStyle: s()(I.Nr, l),
         skuPreviewStyle: s()(I.ev, r),
         onHoverOrFocusChange: o,
         onClick: f,
@@ -60,12 +60,12 @@ function T(e) {
     let {
         sku: t,
         analyticsLocations: n,
-        isHoveringOrFocusing: a,
+        isHoveringOrFocusing: l,
         handleOpenUserProfileModal: r,
         skuPreviewStyle: d,
         wishlistOwner: c,
         ...u
-    } = e, [x, f] = l.useState(!1), h = l.useCallback(async () => {
+    } = e, [x, f] = a.useState(!1), h = a.useCallback(async () => {
         if (!x) {
             f(!0);
             try {
@@ -78,9 +78,9 @@ function T(e) {
                 f(!1)
             }
         }
-    }, [t, n, x, r]), j = l.useMemo(() => s()({
-        [I.zW]: a || x
-    }, d), [a, x, d]);
+    }, [t, n, x, r]), j = a.useMemo(() => s()({
+        [I.zW]: l || x
+    }, d), [l, x, d]);
     return (0, i.jsx)(v, {
         "aria-label": A.intl.formatToPlainString(A.t.xRjJBe, {
             productName: (0, g.TC)(t)
@@ -89,10 +89,10 @@ function T(e) {
         wishlistOwner: c,
         skuPreviewStyle: j,
         onClick: h,
-        isHoveringOrFocusing: a,
+        isHoveringOrFocusing: l,
         ...u,
         children: (0, i.jsx)(p.oU, {
-            isHoveringOrFocusing: a,
+            isHoveringOrFocusing: l,
             loading: x
         })
     })
@@ -102,14 +102,14 @@ function E(e) {
     let {
         sku: t,
         analyticsLocations: n,
-        ...l
+        ...a
     } = e, {
-        analyticsLocations: a
+        analyticsLocations: l
     } = (0, c.Ay)(...n ?? [], d.A.SLAYER_STOREFRONT_WISHLIST_ITEM_CARD);
     return (0, i.jsx)(T, {
         sku: t,
-        analyticsLocations: a,
-        ...l
+        analyticsLocations: l,
+        ...a
     })
 }
 
@@ -117,7 +117,7 @@ function b(e) {
     let {
         sku: t,
         ...n
-    } = e, a = l.useMemo(() => {
+    } = e, l = a.useMemo(() => {
         switch (t?.tenantMetadata?.collectibles?.type) {
             case r.R.PROFILE_EFFECT:
             case r.R.NAMEPLATE:
@@ -130,7 +130,7 @@ function b(e) {
     }, [t?.tenantMetadata?.collectibles?.type]);
     return (0, i.jsx)(T, {
         sku: t,
-        skuPreviewStyle: a,
+        skuPreviewStyle: l,
         ...n
     })
 }
@@ -139,19 +139,19 @@ function N(e) {
     let {
         sku: t,
         ...n
-    } = e, [a, s] = l.useState(!1);
+    } = e, [l, s] = a.useState(!1);
     switch (t.productLine) {
         case h.EZt.SOCIAL_LAYER_GAME_ITEM:
             return (0, i.jsx)(E, {
                 sku: t,
-                isHoveringOrFocusing: a,
+                isHoveringOrFocusing: l,
                 setIsHoveringOrFocusing: s,
                 ...n
             });
         case h.EZt.COLLECTIBLES:
             return (0, i.jsx)(b, {
                 sku: t,
-                isHoveringOrFocusing: a,
+                isHoveringOrFocusing: l,
                 setIsHoveringOrFocusing: s,
                 ...n
             });

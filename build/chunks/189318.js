@@ -1,5 +1,4 @@
 /** chunk id: 189318 params = (module,exports,require) **/
-"use strict";
 e.exports = {
     wx: "header_a7218d",
     F0: "headerImage_a7218d",

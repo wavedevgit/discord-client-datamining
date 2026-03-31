@@ -1,11 +1,10 @@
 /** chunk id: 246884 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
-    A: () => S
+    A: () => T
 });
 var i = n(627968),
-    s = n(64700),
-    l = n(311907),
+    l = n(64700),
+    s = n(311907),
     a = n(397927),
     r = n(442433),
     o = n(688810),
@@ -14,15 +13,15 @@ var i = n(627968),
     u = n(772366),
     h = n(728321),
     A = n(260509),
-    m = n(71393),
-    _ = n(287809),
+    _ = n(71393),
+    m = n(287809),
     g = n(531053),
     p = n(606256),
     f = n(652215),
     x = n(819638),
     E = n(985018),
-    C = n(186942);
-let I = {
+    I = n(186942);
+let C = {
     origin: {
         x: -16,
         y: 0
@@ -46,13 +45,13 @@ function N(e) {
     })
 }
 
-function S(e) {
+function T(e) {
     let {
         disableTooltip: t,
         lastTargetNode: n
-    } = e, r = (0, l.yK)([m.A], () => m.A.getGuildsArray()), S = (0, l.bG)([_.default], () => _.default.getCurrentUser()), b = s.useMemo(() => r.some(e => (0, A.bM)(e, S)), [r, S]), T = (0, a.red)(e => (0, a.fDT)(e, x.fc)), {
-        analyticsLocations: v
-    } = (0, o.Ay)(), y = (0, i.jsx)(p.A, {
+    } = e, r = (0, s.yK)([_.A], () => _.A.getGuildsArray()), T = (0, s.bG)([m.default], () => m.default.getCurrentUser()), S = l.useMemo(() => r.some(e => (0, A.bM)(e, T)), [r, T]), b = (0, a.red)(e => (0, a.fDT)(e, x.fc)), {
+        analyticsLocations: y
+    } = (0, o.Ay)(), v = (0, i.jsx)(p.A, {
         showPill: !1,
         id: "create-join-button",
         onClick: () => {
@@ -64,23 +63,23 @@ function S(e) {
                     page: f.ThZ.CREATE_JOIN_GUILD_MODAL,
                     section: f.JJy.GUILD_CAP_UPSELL_MODAL
                 },
-                analyticsLocations: v
+                analyticsLocations: y
             }) : c.A.openCreateGuildModal({
                 location: "Guild List"
             })
         },
-        selected: T,
+        selected: b,
         onContextMenu: N,
         tooltip: E.intl.string(E.t.l5WIbf),
         icon: a.U1e
     });
-    return t ? y : (0, i.jsx)("div", {
-        className: C.Uq,
+    return t ? v : (0, i.jsx)("div", {
+        className: I.Uq,
         children: (0, i.jsxs)(h.A, {
-            tutorialId: b ? "create-more-servers" : "create-first-server",
-            inlineSpecs: I,
+            tutorialId: S ? "create-more-servers" : "create-first-server",
+            inlineSpecs: C,
             position: "right",
-            children: [y, null != n && (0, i.jsx)(g.Ay, {
+            children: [v, null != n && (0, i.jsx)(g.Ay, {
                 name: E.intl.string(E.t["45xjM5"]),
                 targetNode: n,
                 below: !0,

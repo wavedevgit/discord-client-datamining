@@ -12,15 +12,15 @@ var i = n(311907),
     d = n(753738),
     u = n(785823),
     _ = n(652215);
-let m = {},
-    A = 0,
+let A = {},
+    m = 0,
     E = {},
-    I = {},
-    T = e => {
-        null != m[e] && delete m[e], A++
+    T = {},
+    I = e => {
+        null != A[e] && delete A[e], m++
     };
 
-function f(e) {
+function N(e) {
     let t, n, {
         messageData: i,
         errorResponseBody: l
@@ -30,56 +30,56 @@ function f(e) {
         isBlockedEdit: (0, a.Qn)(i),
         messageData: i,
         errorMessage: (0, d.PD)(i, l)
-    }, m[t] = n, A++, !0
+    }, A[t] = n, m++, !0
 }
 
-function N(e) {
+function g(e) {
     let {
         channelId: t,
         messages: n
     } = e, i = s.A.getChannel(t)?.getGuildId();
     if (null == i) return !1;
-    let l = I[i],
+    let l = T[i],
         a = n.reduce((e, t) => t.type === _.lAJ.AUTO_MODERATION_ACTION && t.embeds?.some(e => {
             let {
                 type: t
             } = e;
             return t === _.Auw.AUTO_MODERATION_NOTIFICATION
         }) ? null == e || -1 === c.default.compare(e, t.id) ? t.id : void 0 : e, l);
-    return null != a && I[i] !== a && (I[i] = a, !0)
+    return null != a && T[i] !== a && (T[i] = a, !0)
 }
-class g extends i.Ay.PersistedStore {
+class f extends i.Ay.PersistedStore {
     static displayName = "GuildAutomodMessageStore";
     static persistKey = "GuildAutomodMessages";
     initialize(e) {
-        this.waitFor(s.A, o.A), null != e && (m = e.automodFailedMessages, E = e.mentionRaidDetectionByGuild)
+        this.waitFor(s.A, o.A), null != e && (A = e.automodFailedMessages, E = e.mentionRaidDetectionByGuild)
     }
     getState() {
         return {
-            automodFailedMessages: m,
+            automodFailedMessages: A,
             mentionRaidDetectionByGuild: E,
-            lastIncidentAlertMessage: I
+            lastIncidentAlertMessage: T
         }
     }
     getMessage(e) {
-        return null == e ? null : m[e] ?? null
+        return null == e ? null : A[e] ?? null
     }
     getMessagesVersion() {
-        return A
+        return m
     }
     getMentionRaidDetected(e) {
         return E[e] ?? null
     }
     getLastIncidentAlertMessage(e) {
-        return I[e] ?? null
+        return T[e] ?? null
     }
 }
-let C = new g(l.h, {
+let C = new f(l.h, {
     CONNECTION_OPEN: function(e) {
-        return 0 !== Object.keys(m).length && (m = {}, A++, !0)
+        return 0 !== Object.keys(A).length && (A = {}, m++, !0)
     },
-    LOAD_MESSAGES_SUCCESS: N,
-    LOCAL_MESSAGES_LOADED: N,
+    LOAD_MESSAGES_SUCCESS: g,
+    LOCAL_MESSAGES_LOADED: g,
     MESSAGE_CREATE: function(e) {
         let {
             guildId: t,
@@ -87,15 +87,15 @@ let C = new g(l.h, {
         } = e;
         if (null == t || n.type !== _.lAJ.AUTO_MODERATION_ACTION) return !1;
         let i = (0, r.rh)(n);
-        return !!(0, u.ER)(i) && !!(0, u.de)(i) && (I[t] = i.id, !0)
+        return !!(0, u.ER)(i) && !!(0, u.de)(i) && (T[t] = i.id, !0)
     },
-    MESSAGE_SEND_FAILED_AUTOMOD: f,
-    MESSAGE_EDIT_FAILED_AUTOMOD: f,
+    MESSAGE_SEND_FAILED_AUTOMOD: N,
+    MESSAGE_EDIT_FAILED_AUTOMOD: N,
     REMOVE_AUTOMOD_MESSAGE_NOTICE: function(e) {
         let {
             messageId: t
         } = e;
-        return T(t), !0
+        return I(t), !0
     },
     MESSAGE_END_EDIT: function(e) {
         let {
@@ -104,7 +104,7 @@ let C = new g(l.h, {
         if (t?.body == null || t.body.code === _.t02.AUTOMOD_MESSAGE_BLOCKED) return !1;
         let n = t.body.id;
         if (null == n) return !1;
-        T(n)
+        I(n)
     },
     AUTO_MODERATION_MENTION_RAID_DETECTION: function(e) {
         let {

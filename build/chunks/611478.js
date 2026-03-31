@@ -1,6 +1,6 @@
 /** chunk id: 611478 params = (module,exports,require) **/
 n.d(t, {
-    P: () => A
+    P: () => x
 }), n(321073);
 var i = n(627968),
     s = n(311907),
@@ -12,14 +12,14 @@ var i = n(627968),
     c = n(780964),
     u = n(431832),
     m = n(443064),
-    _ = n(985018),
-    g = n(536242);
-let x = (0, o.E2)(c.X.ACCOUNT_PROFILE_SETTING, {
+    g = n(985018),
+    _ = n(536242);
+let A = (0, o.E2)(c.X.ACCOUNT_PROFILE_SETTING, {
         useSearchTerms: function() {
-            let e = [_.intl.string(_.t.LYju5J), _.intl.string(_.t["9AjdkD"]), _.intl.string(_.t["+JkHPw"]), _.intl.string(_.t.oP5zGA), _.intl.string(_.t.Ulqq6K)],
+            let e = [g.intl.string(g.t.LYju5J), g.intl.string(g.t["9AjdkD"]), g.intl.string(g.t["+JkHPw"]), g.intl.string(g.t.oP5zGA), g.intl.string(g.t.Ulqq6K)],
                 t = (0, r.fk)(),
                 n = (0, a.Y2)();
-            return t && (e.push(_.intl.string(_.t["/52UYy"])), e.push(_.intl.string(_.t.sK0dmH)), e.push(_.intl.string(_.t.XxRj7f)), e.push(_.intl.string(_.t.DVywUB)), e.push(_.intl.string(_.t["9KiIz6"])), n && (e.push(_.intl.string(g.default.FTawSP)), e.push(_.intl.string(g.default["bD//cU"])), e.push(_.intl.string(g.default.SH6Tcv)))), e
+            return t && (e.push(g.intl.string(g.t["/52UYy"])), e.push(g.intl.string(g.t.sK0dmH)), e.push(g.intl.string(g.t.XxRj7f)), e.push(g.intl.string(g.t.DVywUB)), e.push(g.intl.string(g.t["9KiIz6"])), n && (e.push(g.intl.string(_.default.FTawSP)), e.push(g.intl.string(_.default["bD//cU"])), e.push(g.intl.string(_.default.SH6Tcv)))), e
         },
         Component: function() {
             let e = (0, s.bG)([d.default], () => d.default.getCurrentUser());
@@ -33,6 +33,6 @@ let x = (0, o.E2)(c.X.ACCOUNT_PROFILE_SETTING, {
             })
         }
     }),
-    A = (0, o.zZ)(c.X.ACCOUNT_PROFILE_CATEGORY, {
-        buildLayout: () => [x]
+    x = (0, o.zZ)(c.X.ACCOUNT_PROFILE_CATEGORY, {
+        buildLayout: () => [A]
     })

@@ -1,5 +1,4 @@
 /** chunk id: 488893 params = (module,exports,require) **/
-"use strict";
 e.exports = {
     XA: "activityItemButtonInnerClass__8a940",
     LM: "activityItem__8a940",

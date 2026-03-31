@@ -1,12 +1,11 @@
 /** chunk id: 667992 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
     A: () => x
 });
 var i = n(627968),
-    s = n(64700),
-    l = n(503698),
-    a = n.n(l),
+    l = n(64700),
+    s = n(503698),
+    a = n.n(s),
     r = n(990078),
     o = n(397927),
     c = n(442433),
@@ -14,30 +13,30 @@ var i = n(627968),
     u = n(688810),
     h = n(480890),
     A = n(267102),
-    m = n(342296),
-    _ = n(636585),
+    _ = n(342296),
+    m = n(636585),
     g = n(486020),
     p = n(840585);
 
 function f(e) {
     let {
         channel: t,
-        speaker: l,
-        className: _
-    } = e, f = s.useRef(null), {
+        speaker: s,
+        className: m
+    } = e, f = l.useRef(null), {
         newestAnalyticsLocation: x
     } = (0, u.Ay)(), E = (0, A.Us)(), {
-        reducedMotion: C
-    } = s.useContext(o.CZY), I = (0, d.A)({
-        userId: l.id
-    }), N = null != l.member ? (0, g.xT)(l.member) : null, S = e => {
+        reducedMotion: I
+    } = l.useContext(o.CZY), C = (0, d.A)({
+        userId: s.id
+    }), N = null != s.member ? (0, g.xT)(s.member) : null, T = e => {
         (0, c.L3)(e, async () => {
             let {
                 default: e
             } = await Promise.all([n.e("97262"), n.e("42128"), n.e("84841"), n.e("50970")]).then(n.bind(n, 107632));
             return n => (0, i.jsx)(e, {
                 ...n,
-                user: l.user,
+                user: s.user,
                 guildId: t.guild_id,
                 channel: t,
                 showMediaItems: !0,
@@ -49,15 +48,15 @@ function f(e) {
             context: E
         })
     };
-    return (0, i.jsx)(m.A, {
+    return (0, i.jsx)(_.A, {
         targetElementRef: f,
-        user: l.user,
+        user: s.user,
         guildId: t.guild_id,
         channelId: t.id,
         clickTrap: !0,
         children: e => (0, i.jsx)(r.m, {
             targetElementRef: f,
-            __unsupportedReactNodeAsText: l.userNick,
+            __unsupportedReactNodeAsText: s.userNick,
             position: "bottom",
             children: (0, i.jsx)(o.DUT, {
                 ...e,
@@ -65,13 +64,13 @@ function f(e) {
                 onClick: t => {
                     t.stopPropagation(), e.onClick(t)
                 },
-                onContextMenu: S,
+                onContextMenu: T,
                 children: (0, i.jsx)(o.euF, {
-                    src: N ?? l.user.getAvatarURL(t.guild_id, 24),
+                    src: N ?? s.user.getAvatarURL(t.guild_id, 24),
                     size: o._3J.SIZE_24,
-                    className: a()(p.my, _),
-                    "aria-label": l.userNick,
-                    isSpeaking: I && !C.enabled
+                    className: a()(p.my, m),
+                    "aria-label": s.userNick,
+                    isSpeaking: C && !I.enabled
                 })
             })
         })
@@ -83,16 +82,16 @@ function x(e) {
         speakers: t,
         channel: n
     } = e;
-    return (0, i.jsx)(_.A, {
+    return (0, i.jsx)(m.A, {
         className: p.z,
         guildId: n.guild_id,
         users: t,
         max: 10,
-        renderUser: (e, t, s) => (0, i.jsx)(f, {
+        renderUser: (e, t, l) => (0, i.jsx)(f, {
             channel: n,
             speaker: e,
             className: t
-        }, s),
+        }, l),
         renderMoreUsers: (e, t, n) => (0, i.jsx)("div", {
             className: a()(p.$U, t),
             children: e

@@ -1,11 +1,10 @@
 /** chunk id: 411976 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
-    W: () => l
+    W: () => s
 });
 var i = n(311907),
-    s = n(380335);
+    l = n(380335);
 
-function l() {
-    return (0, i.bG)([s.A], () => s.A.getMessageRequestsCount())
+function s() {
+    return (0, i.bG)([l.A], () => l.A.getMessageRequestsCount())
 }

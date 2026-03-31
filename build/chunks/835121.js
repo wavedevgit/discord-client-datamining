@@ -17,21 +17,21 @@ function s(e) {
         for (let e of t) {
             let t = [],
                 {
-                    group: o,
-                    results: c
+                    group: u,
+                    results: o
                 } = e;
             if (e.results.length > 0) {
-                for (let e of c) {
+                for (let e of o) {
                     let s = n({
                         result: e,
                         modeType: r.type,
-                        group: o
+                        group: u
                     });
                     t.push(s)
                 }
-                l += c.length;
+                l += o.length;
                 let e = s({
-                    group: o,
+                    group: u,
                     rows: t
                 });
                 a.push(e), i.push(...t)

@@ -1,11 +1,10 @@
 /** chunk id: 533233 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
     A: () => h
 });
 var i = n(311907),
-    s = n(313961),
-    l = n(71393),
+    l = n(313961),
+    s = n(71393),
     a = n(576705),
     r = n(113783),
     o = n(69407),
@@ -14,13 +13,13 @@ var i = n(311907),
     u = n(652215);
 
 function h(e) {
-    let t = (0, i.bG)([s.A], () => s.A.getStageVideoLimitBoostUpsellDismissed(e.id), [e.id]),
+    let t = (0, i.bG)([l.A], () => l.A.getStageVideoLimitBoostUpsellDismissed(e.id), [e.id]),
         n = (0, r.uy)(e.id),
         h = (0, r.zy)(e.id, o.ip.AUDIENCE),
         A = (0, d.qT)(e.id),
-        m = (0, i.bG)([l.A], () => l.A.getGuild(e.guild_id), [e.guild_id]),
-        _ = (0, i.bG)([a.A], () => a.A.can(c.QY, e), [e]),
-        g = m?.maxStageVideoChannelUsers ?? 0,
-        p = !(null != m && m.features.has(u.GuildFeatures.COMMUNITY)) && g > u.uaN;
-    return A && !t && _ && !p && n + h >= g
+        _ = (0, i.bG)([s.A], () => s.A.getGuild(e.guild_id), [e.guild_id]),
+        m = (0, i.bG)([a.A], () => a.A.can(c.QY, e), [e]),
+        g = _?.maxStageVideoChannelUsers ?? 0,
+        p = !(null != _ && _.features.has(u.GuildFeatures.COMMUNITY)) && g > u.uaN;
+    return A && !t && m && !p && n + h >= g
 }

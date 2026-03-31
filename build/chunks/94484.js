@@ -1,11 +1,10 @@
 /** chunk id: 94484 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
     A: () => o
 });
 var i = n(627968),
-    s = n(64700),
-    l = n(342494),
+    l = n(64700),
+    s = n(342494),
     a = n(985018),
     r = n(282222);
 
@@ -21,17 +20,17 @@ function o(e) {
         caretConfig: A = {
             align: "start"
         },
-        applicationName: m
+        applicationName: _
     } = e;
-    s.useEffect(() => {
+    l.useEffect(() => {
         n?.()
     }, [n]);
-    let _ = {
+    let m = {
         type: "image",
         src: r.A,
         aspectRatio: "16/9"
     };
-    return (0, i.jsx)(l.AM, {
+    return (0, i.jsx)(s.AM, {
         size: "lg",
         shouldShow: !0,
         position: u,
@@ -48,11 +47,11 @@ function o(e) {
         }],
         targetElementRef: t,
         title: a.intl.format(a.t.TpuAkN, {
-            applicationName: m
+            applicationName: _
         }),
         body: a.intl.format(a.t.TlwPZw, {
-            applicationName: m
+            applicationName: _
         }),
-        graphic: _
+        graphic: m
     })
 }

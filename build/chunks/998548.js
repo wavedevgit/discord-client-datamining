@@ -1,6 +1,6 @@
 /** chunk id: 998548 params = (module,exports,require) **/
 n.d(t, {
-    Xj: () => S,
+    Xj: () => E,
     aK: () => p,
     m3: () => T
 });
@@ -15,24 +15,24 @@ var i = n(627968),
     u = n(207560),
     m = n(558001);
 n(866945);
-var _ = n(840387),
-    g = n(933297),
-    x = n(975571),
-    A = n(835002),
+var g = n(840387),
+    _ = n(933297),
+    A = n(975571),
+    x = n(835002),
     h = n(985018);
 
 function p() {
-    let e = (0, _.Z)(),
+    let e = (0, g.Z)(),
         t = (0, c.WX)(),
         n = s.useCallback(() => {
-            window.open(x.A.getArticleURL(t), "_blank"), (0, m.N)(A.YA.SENSITIVE_CONTENT_FILTER_TEEN_NOTICE, A.YX.LEARN_MORE)
+            window.open(A.A.getArticleURL(t), "_blank"), (0, m.N)(x.YA.SENSITIVE_CONTENT_FILTER_TEEN_NOTICE, x.YX.LEARN_MORE)
         }, [t]),
         l = s.useCallback(() => {
-            (0, m.N)(A.YA.SENSITIVE_CONTENT_FILTER_TEEN_NOTICE, A.YX.VIEWED)
+            (0, m.N)(x.YA.SENSITIVE_CONTENT_FILTER_TEEN_NOTICE, x.YX.VIEWED)
         }, []);
     return s.useMemo(() => {
         if (e) return {
-            type: g.lT.INLINE_NOTICE,
+            type: _.lT.INLINE_NOTICE,
             noticeType: "info",
             trackView: l,
             useText: () => h.intl.format(h.t.EUo0yj, {
@@ -52,14 +52,14 @@ function T() {
         l = s.useCallback(() => {
             r.A.showAgeVerificationGetStartedModal({
                 entryPoint: o.q1.CONTENT_AND_SOCIAL_NOTICE
-            }), (0, m.N)(A.YA.SENSITIVE_CONTENT_FILTER_AGE_VERIFICATION_NOTICE, A.YX.LEARN_MORE)
+            }), (0, m.N)(x.YA.SENSITIVE_CONTENT_FILTER_AGE_VERIFICATION_NOTICE, x.YX.LEARN_MORE)
         }, []),
         c = s.useCallback(() => {
-            (0, m.N)(A.YA.SENSITIVE_CONTENT_FILTER_AGE_VERIFICATION_NOTICE, A.YX.VIEWED)
+            (0, m.N)(x.YA.SENSITIVE_CONTENT_FILTER_AGE_VERIFICATION_NOTICE, x.YX.VIEWED)
         }, []);
     return s.useMemo(() => {
         if (n) return {
-            type: g.lT.INLINE_NOTICE,
+            type: _.lT.INLINE_NOTICE,
             noticeType: "info",
             trackView: c,
             useText: () => h.intl.format(h.t.OX4ybh, {
@@ -75,15 +75,15 @@ function T() {
 function f() {
     let e = (0, c.WX)();
     s.useEffect(() => {
-        (0, m.N)(A.YA.AGE_CONFIRMATION_NOTICE, A.YX.VIEWED)
+        (0, m.N)(x.YA.AGE_CONFIRMATION_NOTICE, x.YX.VIEWED)
     }, []);
     let t = s.useCallback(() => {
-            window.open(x.A.getArticleURL(e), "_blank"), (0, m.N)(A.YA.AGE_CONFIRMATION_NOTICE, A.YX.LEARN_MORE)
+            window.open(A.A.getArticleURL(e), "_blank"), (0, m.N)(x.YA.AGE_CONFIRMATION_NOTICE, x.YX.LEARN_MORE)
         }, [e]),
         n = s.useCallback(() => {
             r.A.showAgeVerificationGetStartedModal({
                 entryPoint: o.q1.CONTENT_AND_SOCIAL_NOTICE
-            }), (0, m.N)(A.YA.AGE_CONFIRMATION_NOTICE, A.YX.CONFIRM_AGE)
+            }), (0, m.N)(x.YA.AGE_CONFIRMATION_NOTICE, x.YX.CONFIRM_AGE)
         }, []);
     return (0, i.jsx)(a.po8, {
         messageType: a.YCn.INFO,
@@ -103,12 +103,12 @@ function f() {
     })
 }
 
-function S() {
+function E() {
     let e = (0, u.aX)(l.t.REACTIVE_CHECK),
         t = (0, d.b8)();
     return s.useMemo(() => {
         if (e && !t) return {
-            type: g.lT.STRONGLY_DISCOURAGED_CUSTOM,
+            type: _.lT.STRONGLY_DISCOURAGED_CUSTOM,
             notice: f
         }
     }, [e, t])

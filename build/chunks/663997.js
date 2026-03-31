@@ -1,12 +1,11 @@
 /** chunk id: 663997 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
     K: () => u,
     L: () => d
 });
 var i = n(64700),
-    s = n(989349),
-    l = n.n(s),
+    l = n(989349),
+    s = n.n(l),
     a = n(198982),
     r = n(661191),
     o = n(624458),
@@ -17,16 +16,16 @@ function u(e) {
     let {
         guildId: t,
         guildJoinRequests: n
-    } = e, s = i.useRef(!1), [u, h] = i.useState(null), A = i.useRef(null), m = i.useRef(!1);
+    } = e, l = i.useRef(!1), [u, h] = i.useState(null), A = i.useRef(null), _ = i.useRef(!1);
     return {
         fetchNextPage: i.useCallback(async (e, i) => {
-            if (s.current) return;
-            let _ = `${e}-${i}`,
+            if (l.current) return;
+            let m = `${e}-${i}`,
                 g = !1;
-            if (_ !== A.current && (A.current = _, m.current = !1, g = !0), m.current) return;
+            if (m !== A.current && (A.current = m, _.current = !1, g = !0), _.current) return;
             null != u && h(null);
             let p = function(e, t, n, i) {
-                let s = n === c.B5.SUBMITTED;
+                let l = n === c.B5.SUBMITTED;
                 if (t === c._e.TIMESTAMP_DESC)
                     if (i) return {
                         before: r.default.fromTimestamp(new Date().getTime())
@@ -34,20 +33,20 @@ function u(e) {
                     else {
                         let t = e[e.length - 1];
                         return {
-                            before: s ? t.joinRequestId : t.actionedAt
+                            before: l ? t.joinRequestId : t.actionedAt
                         }
                     } if (i) return {
-                    after: r.default.fromTimestamp(l()().subtract(180, "days").valueOf())
+                    after: r.default.fromTimestamp(s()().subtract(180, "days").valueOf())
                 };
                 {
                     let t = e[e.length - 1];
                     return {
-                        after: s ? t.joinRequestId : t.actionedAt
+                        after: l ? t.joinRequestId : t.actionedAt
                     }
                 }
             }(n, e, i, g);
             try {
-                s.current = !0;
+                l.current = !0;
                 let e = await o.A.fetchGuildJoinRequests({
                     guildId: t,
                     status: i,
@@ -59,12 +58,12 @@ function u(e) {
                     let {
                         guild_join_requests: t
                     } = e.body;
-                    t.length < d && (m.current = !0)
+                    t.length < d && (_.current = !0)
                 }
             } catch (e) {
                 h(new a.LG(e).getAnyErrorMessage())
             } finally {
-                s.current = !1
+                l.current = !1
             }
         }, [u, t, n]),
         error: u

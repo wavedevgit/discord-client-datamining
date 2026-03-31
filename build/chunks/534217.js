@@ -1,6 +1,6 @@
 /** chunk id: 534217 params = (module,exports,require) **/
 n.d(t, {
-    S: () => v
+    S: () => N
 }), n(321073);
 var i = n(627968);
 n(64700);
@@ -13,15 +13,15 @@ var s = n(503698),
     c = n(975571),
     u = n(427262),
     m = n(326084),
-    _ = n(851746),
-    g = n(617461),
-    x = n(664654),
-    A = n(303682),
+    g = n(851746),
+    _ = n(617461),
+    A = n(664654),
+    x = n(303682),
     h = n(652215),
     p = n(985018),
     T = n(989348),
     f = n(544879);
-let S = e => {
+let E = e => {
         let {
             user: t
         } = e, {
@@ -39,7 +39,7 @@ let S = e => {
             ...s
         }, t.id)
     },
-    E = e => {
+    S = e => {
         let {
             slotIndex: t
         } = e;
@@ -56,14 +56,14 @@ let S = e => {
             className: T.L$,
             children: (() => {
                 let e = [];
-                for (let n = 0; n < x.Z; n++)
+                for (let n = 0; n < A.Z; n++)
                     if (t?.[n] !== void 0) {
-                        let s = (0, i.jsx)(S, {
+                        let s = (0, i.jsx)(E, {
                             user: t[n]
                         }, t[n].id);
                         e.push(s)
                     } else {
-                        let t = (0, i.jsx)(E, {
+                        let t = (0, i.jsx)(S, {
                             slotIndex: n + 1
                         }, n);
                         e.push(t)
@@ -81,7 +81,7 @@ let S = e => {
             background: T.cq,
             strokeSize: .8,
             ringColorOverrideClassName: T.e0,
-            overlayClassName: t === x.Z ? T.ys : void 0,
+            overlayClassName: t === A.Z ? T.ys : void 0,
             children: (0, i.jsx)(r._V3, {
                 src: f.A,
                 height: 93,
@@ -90,12 +90,12 @@ let S = e => {
             })
         })
     },
-    v = e => {
+    N = e => {
         let {
             className: t
         } = e, {
             referralSentUsers: s
-        } = (0, x.J)(), o = (0, a.bG)([_.A], () => _.A.getRecipientStatus()), u = (0, a.bG)([_.A], () => _.A.getHasEligibleFriends()), f = o.size === x.Z && [...o.values()].every(e => e === m.aK.REDEEMED), S = o.size === x.Z;
+        } = (0, A.J)(), o = (0, a.bG)([g.A], () => g.A.getRecipientStatus()), u = (0, a.bG)([g.A], () => g.A.getHasEligibleFriends()), f = o.size === A.Z && [...o.values()].every(e => e === m.aK.REDEEMED), E = o.size === A.Z;
         return (0, i.jsxs)("div", {
             className: l()(T.kL, t),
             children: [(0, i.jsx)("div", {
@@ -118,7 +118,7 @@ let S = e => {
                         color: "text-subtle",
                         children: !1 === u ? p.intl.format(p.t["zWhX/Q"], {
                             helpdeskArticle: c.A.getArticleURL(h.MVz.REFERRAL_PROGRAM)
-                        }) : s.length === x.Z ? !0 === f ? p.intl.format(p.t["1aEjsH"], {
+                        }) : s.length === A.Z ? !0 === f ? p.intl.format(p.t["1aEjsH"], {
                             helpdeskArticle: c.A.getArticleURL(h.MVz.REFERRAL_PROGRAM)
                         }) : p.intl.format(p.t["+u3AOO"], {
                             helpdeskArticle: c.A.getArticleURL(h.MVz.REFERRAL_PROGRAM)
@@ -128,22 +128,22 @@ let S = e => {
                     })]
                 }), (0, i.jsx)(r.Button, {
                     variant: "primary",
-                    disabled: !1 === u || !0 === S,
+                    disabled: !1 === u || !0 === E,
                     text: (() => {
-                        switch (g.$.getConfig({
+                        switch (_.$.getConfig({
                                 location: "ReferralBanner"
                             }).variation) {
-                            case g.e.CONTROL:
+                            case _.e.CONTROL:
                                 return p.intl.string(p.t.Lm2nFc);
-                            case g.e.VARIANT_1:
+                            case _.e.VARIANT_1:
                                 return p.intl.string(p.t["8wL38m"]);
-                            case g.e.VARIANT_2:
+                            case _.e.VARIANT_2:
                                 return p.intl.string(p.t["Pr/W5F"]);
-                            case g.e.VARIANT_3:
+                            case _.e.VARIANT_3:
                                 return p.intl.string(p.t.ojpNKb);
-                            case g.e.VARIANT_4:
+                            case _.e.VARIANT_4:
                                 return p.intl.string(p.t["YL8/wJ"]);
-                            case g.e.VARIANT_5:
+                            case _.e.VARIANT_5:
                                 return p.intl.string(p.t.C7iByj)
                         }
                     })(),
@@ -164,7 +164,7 @@ let S = e => {
                             })
                         })
                     })({
-                        startingScreen: A.SelectFriendsModalScreens.SELECT_FRIENDS,
+                        startingScreen: x.SelectFriendsModalScreens.SELECT_FRIENDS,
                         analyticsLocations: []
                     })
                 })]

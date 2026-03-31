@@ -14,40 +14,40 @@ var s = n(158954),
     c = n(116011),
     u = n(881373),
     m = n(125877),
-    _ = n(653624),
-    g = n(985018),
-    x = n(276478);
-let A = {
+    g = n(653624),
+    _ = n(985018),
+    A = n(276478);
+let x = {
         Logitech30P: {
-            title: _.default.jkdhZq,
+            title: g.default.jkdhZq,
             titleParams: {
                 discountPercent: u.aW
             },
-            body: _.default.Yl5ww1
+            body: g.default.Yl5ww1
         },
         Logitech5PNI: {
-            title: _.default.zeBjoX,
+            title: g.default.zeBjoX,
             titleParams: {
                 discountPercent: u.y$
             },
-            body: _.default.fC4abC,
+            body: g.default.fC4abC,
             bodyParams: {
                 months: 6
             }
         },
         Logitech5PGS: {
-            title: _.default.ogcfac,
+            title: g.default.ogcfac,
             titleParams: {
                 discountPercent: u.K2
             },
-            body: _.default.Yl5ww1
+            body: g.default.Yl5ww1
         }
     },
     h = {
         logitech: {
-            modalTitle: _.default["2I7nK+"],
+            modalTitle: g.default["2I7nK+"],
             modalSubtitle: {
-                message: _.default.W8jOD0,
+                message: g.default.W8jOD0,
                 values: {
                     termsUrl: "https://www.logitech.com/terms"
                 }
@@ -56,12 +56,12 @@ let A = {
         }
     },
     p = (e, t) => {
-        let n = A[e.outboundTitle];
+        let n = x[e.outboundTitle];
         return {
             id: e.id,
             partnerId: e.partnerId ?? "",
-            title: null != n ? g.intl.formatToPlainString(n.title, n.titleParams ?? {}) : "",
-            body: null != n ? g.intl.formatToPlainString(n.body, n.bodyParams ?? {}) : "",
+            title: null != n ? _.intl.formatToPlainString(n.title, n.titleParams ?? {}) : "",
+            body: null != n ? _.intl.formatToPlainString(n.body, n.bodyParams ?? {}) : "",
             startDate: e.startDate,
             endDate: e.endDate,
             redemptionURL: e.outboundRedemptionPageLink,
@@ -73,7 +73,7 @@ let A = {
             partnerId: t,
             transitionState: n,
             onClose: a
-        } = e, r = h[t], [u, A] = (0, l.yK)([d.A], () => {
+        } = e, r = h[t], [u, x] = (0, l.yK)([d.A], () => {
             let {
                 recurring: e,
                 oneTime: n
@@ -84,23 +84,23 @@ let A = {
             claimedOutboundPromotionCodeMap: f
         } = (0, o.y7)();
         if (!T) return (0, i.jsx)(s.y$y, {});
-        let S = r?.modalSubtitle != null ? g.intl.format(r.modalSubtitle.message, r.modalSubtitle.values) : void 0,
-            E = null == r ? t : g.intl.string(r.modalTitle);
+        let E = r?.modalSubtitle != null ? _.intl.format(r.modalSubtitle.message, r.modalSubtitle.values) : void 0,
+            S = null == r ? t : _.intl.string(r.modalTitle);
         return (0, i.jsx)(s.Modal, {
-            title: E,
-            subtitle: S,
+            title: S,
+            subtitle: E,
             actions: [],
             transitionState: n,
             onClose: a,
             children: (0, i.jsxs)("div", {
-                className: x.kL,
+                className: A.kL,
                 children: [u.length > 0 && (0, i.jsxs)(i.Fragment, {
                     children: [(0, i.jsx)(s.EYj, {
                         variant: "text-md/medium",
                         color: "text-subtle",
-                        children: g.intl.string(_.default["9Y2p6p"])
+                        children: _.intl.string(g.default["9Y2p6p"])
                     }), (0, i.jsx)("div", {
-                        className: x.kR,
+                        className: A.kR,
                         children: u.map(e => (0, i.jsx)(c.wx, {
                             recurrence: {
                                 ...p(e, f[e.id] ?? null),
@@ -110,15 +110,15 @@ let A = {
                             displayCTAInDedicatedFooter: !0
                         }, e.id))
                     })]
-                }), A.length > 0 && (0, i.jsxs)("div", {
-                    className: x.E7,
+                }), x.length > 0 && (0, i.jsxs)("div", {
+                    className: A.E7,
                     children: [(0, i.jsx)(s.EYj, {
                         variant: "text-md/medium",
                         color: "text-subtle",
-                        children: g.intl.string(_.default.Wm58LR)
+                        children: _.intl.string(g.default.Wm58LR)
                     }), (0, i.jsx)("div", {
-                        className: x.kR,
-                        children: A.map(e => (0, i.jsx)(m.$, {
+                        className: A.kR,
+                        children: x.map(e => (0, i.jsx)(m.$, {
                             promotion: p(e, f[e.id] ?? null)
                         }, e.id))
                     })]

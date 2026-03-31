@@ -1,12 +1,11 @@
 /** chunk id: 963702 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
     A: () => o
 });
 var i = n(627968);
 n(64700);
-var s = n(397927),
-    l = n(303727),
+var l = n(397927),
+    s = n(303727),
     a = n(985018),
     r = n(384573);
 
@@ -27,17 +26,17 @@ function o(e) {
                 className: r.Kk,
                 width: 36,
                 height: 36
-            }), c ? null : (0, i.jsx)(l.A, {
+            }), c ? null : (0, i.jsx)(s.A, {
                 className: r.uf
             })]
-        }), (0, i.jsx)(s.Heading, {
+        }), (0, i.jsx)(l.Heading, {
             className: r.wx,
             variant: "heading-xl/semibold",
             children: n
-        }), (0, i.jsxs)(s.Text, {
+        }), (0, i.jsxs)(l.Text, {
             color: "text-default",
             variant: "text-xs/normal",
-            children: [c ? null : (0, i.jsxs)(s.Text, {
+            children: [c ? null : (0, i.jsxs)(l.Text, {
                 tag: "span",
                 className: r.PP,
                 variant: "text-xs/bold",

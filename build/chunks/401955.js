@@ -1,20 +1,20 @@
 /** chunk id: 401955 params = (module,exports,require) **/
 "use strict";
-i.d(t, {
+n.d(t, {
     A: () => s
 });
-var n = i(672396);
+var i = n(672396);
 
 function s(e) {
     switch (e) {
-        case n.Li.BOTTOM:
-            return n.Kv.LOW;
-        case n.Li.LOWER:
-            return n.Kv.MEDIUM;
-        case n.Li.UPPER:
-            return n.Kv.HIGH;
-        case n.Li.TOP:
-            return n.Kv.FULL;
+        case i.Li.BOTTOM:
+            return i.Kv.LOW;
+        case i.Li.LOWER:
+            return i.Kv.MEDIUM;
+        case i.Li.UPPER:
+            return i.Kv.HIGH;
+        case i.Li.TOP:
+            return i.Kv.FULL;
         default:
             return
     }

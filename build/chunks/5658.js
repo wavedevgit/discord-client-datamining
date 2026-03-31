@@ -1,11 +1,10 @@
 /** chunk id: 5658 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
-    A: () => I
+    A: () => C
 });
 var i = n(627968),
-    s = n(64700),
-    l = n(382222),
+    l = n(64700),
+    s = n(382222),
     a = n(311283),
     r = n(311907),
     o = n(435371),
@@ -14,21 +13,21 @@ var i = n(627968),
     u = n(334738),
     h = n(58149),
     A = n(976860),
-    m = n(734057),
-    _ = n(510560),
+    _ = n(734057),
+    m = n(510560),
     g = n(572448),
     p = n(955454),
     f = n(502754),
     x = n(652215),
     E = n(985018),
-    C = n(368897);
-let I = s.memo(function(e) {
+    I = n(368897);
+let C = l.memo(function(e) {
         let {
             channel: t,
             deleteChannel: n
-        } = e, a = s.useRef(null), [
+        } = e, a = l.useRef(null), [
             [r, o], d
-        ] = s.useState([0, 0]), u = t.deleted && r > 0;
+        ] = l.useState([0, 0]), u = t.deleted && r > 0;
         if (t.deleted && 0 === r && null != a.current) {
             let e = a.current.offsetHeight,
                 t = a.current.offsetTop,
@@ -50,35 +49,35 @@ let I = s.memo(function(e) {
             onRest: () => {
                 n(t.channelId)
             }
-        }, "animate-always"), m = {
+        }, "animate-always"), _ = {
             opacity: h,
             height: A.to(e => {
                 var t, n;
                 return u ? (t = r, (n = o) + (t - n) * e) : "auto"
             })
         };
-        return (0, i.jsx)(l.animated.div, {
+        return (0, i.jsx)(s.animated.div, {
             ref: a,
-            style: m,
+            style: _,
             children: (0, i.jsx)(N, {
                 ...e
             })
         })
     }),
-    N = s.memo(function(e) {
+    N = l.memo(function(e) {
         let {
             channel: t,
             onJump: n,
-            deleteChannel: l,
+            deleteChannel: s,
             toggle: a
-        } = e, o = (0, r.bG)([m.A], () => m.A.getChannel(t.channelId));
-        if (s.useEffect(() => {
+        } = e, o = (0, r.bG)([_.A], () => _.A.getChannel(t.channelId));
+        if (l.useEffect(() => {
                 null == o || !t.isFullyLoaded || t.hasError || t.collapsed || "messages" !== t.type || 0 !== t.messages.length || d.h.wait(() => {
                     (0, u.ack)(t.channelId, {
                         section: x.JJy.INBOX,
                         object: x.ZSU.ACK_INBOX_CHANNEL_NO_MESSAGES,
                         objectType: x.AnalyticsObjectTypes.ACK_AUTOMATIC
-                    }, !0), l(t.channelId)
+                    }, !0), s(t.channelId)
                 })
             }), null == o || !t.hasLoadedAnything) return null;
         let E = (e, i) => {
@@ -86,11 +85,11 @@ let I = s.memo(function(e) {
                 channel_id: t.channelId,
                 guild_id: t.guildId
             });
-            let s = i ?? t.oldestUnreadMessageId;
-            (0, A.pX)(x.BVt.CHANNEL(t.guildId, t.channelId, "forum" === t.type ? null : s)), n(e)
+            let l = i ?? t.oldestUnreadMessageId;
+            (0, A.pX)(x.BVt.CHANNEL(t.guildId, t.channelId, "forum" === t.type ? null : l)), n(e)
         };
         return (0, i.jsx)("div", {
-            className: C.Ix,
+            className: I.Ix,
             children: (0, i.jsx)(c.Fmo, {
                 component: (0, i.jsx)(g.A, {
                     channel: o,
@@ -102,10 +101,10 @@ let I = s.memo(function(e) {
                     getNumUnreadChannels: e.getNumUnreadChannels,
                     children: (0, i.jsxs)(c.ButtonGroup, {
                         size: "sm",
-                        className: C.GC,
-                        children: [(0, i.jsx)(_.A, {
+                        className: I.GC,
+                        children: [(0, i.jsx)(m.A, {
                             channel: o
-                        }), (0, i.jsx)(S, {
+                        }), (0, i.jsx)(T, {
                             ...e
                         })]
                     })
@@ -117,18 +116,18 @@ let I = s.memo(function(e) {
                 }) : "forum" === t.type ? (0, i.jsx)(p.A, {
                     channel: t,
                     channelRecord: o,
-                    deleteChannel: l
+                    deleteChannel: s
                 }) : null
             })
         })
     });
 
-function S(e) {
+function T(e) {
     let {
         channel: t,
         markChannelRead: n,
-        markGuildRead: s,
-        getNumUnreadChannels: l
+        markGuildRead: l,
+        getNumUnreadChannels: s
     } = e, r = (0, a.A)() && null != t.guildId;
     return (0, i.jsx)(o.m_, {
         text: r ? E.intl.string(E.t["5lLMhM"]) : E.intl.string(E.t.e6RscS),
@@ -138,11 +137,11 @@ function S(e) {
             size: "sm",
             icon: r ? c.iA$ : c.A9s,
             onClick: function() {
-                r && null != t.guildId ? s(t.guildId) : n(t), (0, h.zV)(x.HAw.INBOX_CHANNEL_ACKED, {
+                r && null != t.guildId ? l(t.guildId) : n(t), (0, h.zV)(x.HAw.INBOX_CHANNEL_ACKED, {
                     channel_id: t.channelId,
                     guild_id: t.guildId,
                     marked_all_channels_as_read: !1,
-                    num_unread_channels_remaining: l() - 1
+                    num_unread_channels_remaining: s() - 1
                 })
             }
         })

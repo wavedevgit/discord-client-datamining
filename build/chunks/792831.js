@@ -4,9 +4,9 @@ n.d(t, {
 });
 var i, l = n(627968);
 n(64700);
-var r = n(503698),
-    s = n.n(r),
-    a = n(953727),
+var s = n(503698),
+    a = n.n(s),
+    r = n(953727),
     o = n(149166),
     c = ((i = {}).LEFT = "LEFT", i.RIGHT = "RIGHT", i.UP = "UP", i.DOWN = "DOWN", i.UP_LEFT = "UP_LEFT", i.DOWN_RIGHT = "DOWN_RIGHT", i);
 let d = e => {
@@ -14,17 +14,17 @@ let d = e => {
         width: t = 24,
         height: n = 24,
         color: i = "currentColor",
-        direction: r,
+        direction: s,
         foreground: c,
         className: d,
         title: u,
-        ..._
+        ...h
     } = e;
     return (0, l.jsxs)("svg", {
-        ...(0, a.A)(_),
+        ...(0, r.A)(h),
         width: t,
         height: n,
-        className: s()(d, function(e) {
+        className: a()(d, function(e) {
             switch (e) {
                 case "LEFT":
                     return o.kb;
@@ -41,7 +41,7 @@ let d = e => {
                 default:
                     throw Error(`Invalid Direction ${e}`)
             }
-        }(r)),
+        }(s)),
         viewBox: "0 0 24 24",
         children: [null != u ? (0, l.jsx)("title", {
             children: u

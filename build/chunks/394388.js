@@ -12,20 +12,20 @@ var i = n(627968),
     d = n(793574),
     u = n(367727),
     _ = n(509536),
-    m = n(881635),
-    A = n(363487),
+    A = n(881635),
+    m = n(363487),
     E = n(828162),
-    I = n(71393),
-    T = n(888675),
-    f = n(652215),
-    N = n(49999),
-    g = n(985018),
+    T = n(71393),
+    I = n(888675),
+    N = n(652215),
+    g = n(49999),
+    f = n(985018),
     C = n(333354),
     h = n(884967),
     p = n(274993),
-    x = n(218924);
+    S = n(218924);
 
-function R(e) {
+function x(e) {
     let {
         title: t,
         body: n,
@@ -38,7 +38,7 @@ function R(e) {
             className: h.ZS,
             children: (0, i.jsx)("img", {
                 className: h.Sl,
-                src: o ? x.A : p.A,
+                src: o ? S.A : p.A,
                 alt: "Boost gem"
             })
         }), (0, i.jsxs)("div", {
@@ -57,32 +57,32 @@ function R(e) {
                 children: n
             })]
         }), (0, i.jsx)("div", {
-            children: (0, i.jsx)(m.A, {
+            children: (0, i.jsx)(A.A, {
                 guild: l,
                 analyticsLocations: r,
                 analyticsLocation: {
-                    page: f.liQ.GUILD_CHANNEL,
-                    section: f.JJy.CHANNEL_TEXT_AREA
+                    page: N.liQ.GUILD_CHANNEL,
+                    section: N.JJy.CHANNEL_TEXT_AREA
                 }
             })
         })]
     })
 }
 
-function S(e) {
+function R(e) {
     let {
         guild: t
     } = e;
     l.useEffect(() => {
         (0, u.uh)(r.M.FIRST_BOOSTER_UPSELL_OVERSEER, {
-            dismissAction: N.i.AUTO_DISMISS,
+            dismissAction: g.i.AUTO_DISMISS,
             guildId: t.id
         })
     }, [t.id]);
-    let n = (0, A.A)(t.id);
-    return (0, i.jsx)(R, {
-        title: g.intl.string(C.default.qGDEON),
-        body: g.intl.format(C.default["s+HTdX"], {
+    let n = (0, m.A)(t.id);
+    return (0, i.jsx)(x, {
+        title: f.intl.string(C.default.qGDEON),
+        body: f.intl.format(C.default["s+HTdX"], {
             viewAllPerks: e => (0, i.jsx)(s.DUT, {
                 tag: "a",
                 role: "link",
@@ -90,8 +90,8 @@ function S(e) {
                     n ? (0, E.A)(t.id, d.A.GUILD_BOOSTING_FIRST_TIME_BOOSTER_UPSELL) : (0, _.K4)({
                         guildId: t.id,
                         location: {
-                            section: f.JJy.CHANNEL_TEXT_AREA,
-                            object: f.ZSU.BOOST_ANNOUNCEMENT_UPSELL
+                            section: N.JJy.CHANNEL_TEXT_AREA,
+                            object: N.ZSU.BOOST_ANNOUNCEMENT_UPSELL
                         }
                     })
                 },
@@ -108,7 +108,7 @@ function O(e) {
         boostingPrompt: t,
         guild: n
     } = e;
-    return t.guildBoostUpsellType === o.Mk.FIRST_BOOSTER ? (0, i.jsx)(S, {
+    return t.guildBoostUpsellType === o.Mk.FIRST_BOOSTER ? (0, i.jsx)(R, {
         guild: n
     }) : null
 }
@@ -117,8 +117,8 @@ function M(e) {
     let {
         boostingPrompt: t,
         channel: n
-    } = e, l = n.guild_id, r = (0, a.bG)([I.A], () => I.A.getGuild(l), [l]);
-    return null == r ? null : (0, i.jsx)(T.A, {
+    } = e, l = n.guild_id, r = (0, a.bG)([T.A], () => T.A.getGuild(l), [l]);
+    return null == r ? null : (0, i.jsx)(I.A, {
         contentClassName: h.FG,
         iconContainerClassName: h.zc,
         iconNode: (0, i.jsx)(s.XFE, {

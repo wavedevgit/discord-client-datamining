@@ -1,13 +1,13 @@
 /** chunk id: 508654 params = (module,exports,require) **/
 n.d(e, {
     Ay: () => f,
-    BP: () => p,
-    Qs: () => m,
+    BP: () => m,
+    Qs: () => y,
     RO: () => G,
-    WG: () => v,
+    WG: () => p,
     ob: () => N,
     r2: () => S,
-    vj: () => y
+    vj: () => v
 });
 var l = n(64700),
     i = n(311907),
@@ -37,7 +37,7 @@ function f(t, e) {
     }, [e, t])
 }
 
-function m(t) {
+function y(t) {
     return (0, i.bG)([u.Ay, r.A, d.A], () => {
         let e = r.A.getChannel(t);
         if (!d.A.can(_.xBc.VIEW_CHANNEL, e) || null == e?.guild_id) return null;
@@ -46,7 +46,7 @@ function m(t) {
     }, [t])
 }
 
-function y(t) {
+function v(t) {
     let e = (0, i.yK)([u.Ay], () => u.Ay.getGuildScheduledEventsForGuild(t), [t]);
     return l.useMemo(() => {
         let t = new Map;
@@ -57,7 +57,7 @@ function y(t) {
     }, [e])
 }
 
-function v(t) {
+function p(t) {
     let e = (0, i.yK)([u.Ay, r.A, d.A], () => u.Ay.getGuildScheduledEventsByIndex(u.ej.GUILD_EVENT_UPCOMING(t)).filter(t => {
             if (t.entity_type === g.Ps.NONE || t.status !== g.XG.SCHEDULED) return !1;
             if (null == t.channel_id) return !0;
@@ -89,7 +89,7 @@ function v(t) {
         }
 }
 
-function p(t) {
+function m(t) {
     return (0, i.bG)([u.Ay, r.A, d.A], () => u.Ay.getGuildScheduledEventsByIndex(u.ej.GUILD_EVENT_ACTIVE(t)).find(t => {
         if (t.entity_type === g.Ps.NONE || !(0, u.Fd)(t)) return !1;
         if (null == t.channel_id) return !0;

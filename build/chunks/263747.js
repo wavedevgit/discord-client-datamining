@@ -12,27 +12,27 @@ var i = n(627968),
     c = n(397927),
     u = n(793574),
     m = n(688810),
-    _ = n(854627),
-    g = n(427157),
-    x = n(954571),
-    A = n(975571),
+    g = n(854627),
+    _ = n(427157),
+    A = n(954571),
+    x = n(975571),
     h = n(326084),
     p = n(851746),
     T = n(344904),
     f = n(664654),
-    S = n(871582),
-    E = n(652215),
+    E = n(871582),
+    S = n(652215),
     b = n(985018),
     C = n(739650),
-    v = n(615981);
-let N = e => {
+    N = n(615981);
+let v = e => {
         let {
             userRecord: t,
             placement: n
         } = e, {
             avatarSrc: s,
             eventHandlers: l
-        } = (0, _.A)({
+        } = (0, g.A)({
             userId: t?.id,
             size: c._3J.SIZE_32,
             animateOnHover: !0
@@ -78,19 +78,19 @@ let N = e => {
         } = e, n = t.length, s = n < 1 ? null : t[0], l = n < 2 ? null : t[1], a = n < 3 ? null : t[2];
         return (0, i.jsxs)("div", {
             className: C.ZM,
-            children: [(0, i.jsx)(N, {
+            children: [(0, i.jsx)(v, {
                 userRecord: s,
                 placement: 1
             }), (0, i.jsx)(I, {
                 numSentReferrals: n,
                 placement: 1
-            }), (0, i.jsx)(N, {
+            }), (0, i.jsx)(v, {
                 userRecord: l,
                 placement: 2
             }), (0, i.jsx)(I, {
                 numSentReferrals: n,
                 placement: 2
-            }), (0, i.jsx)(N, {
+            }), (0, i.jsx)(v, {
                 userRecord: a,
                 placement: 3
             })]
@@ -101,21 +101,21 @@ let N = e => {
             isInSettings: t = !1
         } = e, l = (0, r.bG)([p.A], () => p.A.getRecipientStatus()), {
             referralSentUsers: o
-        } = (0, f.J)(), _ = s.useMemo(() => o.map(e => new g.A(e)), [o]), N = {
+        } = (0, f.J)(), g = s.useMemo(() => o.map(e => new _.A(e)), [o]), v = {
             redeemed: 0,
             converted: 0,
             sent: l.size
         };
         l.forEach(e => {
-            e === h.aK.REDEEMED && N.redeemed++, e === h.aK.CONVERTED && (N.redeemed++, N.converted++)
+            e === h.aK.REDEEMED && v.redeemed++, e === h.aK.CONVERTED && (v.redeemed++, v.converted++)
         });
-        let I = N.sent === f.Z,
-            y = A.A.getArticleURL(E.MVz.REFERRAL_PROGRAM),
+        let I = v.sent === f.Z,
+            y = x.A.getArticleURL(S.MVz.REFERRAL_PROGRAM),
             {
                 analyticsLocations: O
             } = (0, m.Ay)(u.A.PREMIUM_MARKETING_REFERALL_PROGRAM_PROGRESS_BAR),
             R = s.useRef(null),
-            P = N.sent / f.Z * 100,
+            P = v.sent / f.Z * 100,
             L = (0, i.jsxs)("div", {
                 className: C.hE,
                 children: [(0, i.jsx)(T.Ay, {
@@ -130,16 +130,16 @@ let N = e => {
                     children: [(0, i.jsx)(c.Heading, {
                         variant: t ? "heading-xl/extrabold" : "heading-xxl/extrabold",
                         className: C.R0,
-                        children: (0, S.X8)({
+                        children: (0, E.X8)({
                             hasSentAll: I
                         })
                     }), (0, i.jsx)(j, {
-                        userRecords: _
+                        userRecords: g
                     }), (0, i.jsx)(c.Text, {
                         variant: t ? "text-sm/normal" : "text-lg/medium",
-                        children: (0, S.dB)({
+                        children: (0, E.dB)({
                             helpdeskArticle: y,
-                            referralsStatuses: N
+                            referralsStatuses: v
                         })
                     }), (0, i.jsx)("div", {
                         className: a()(C.Fb, {
@@ -153,7 +153,7 @@ let N = e => {
                                 let {
                                     analyticsLocations: t
                                 } = e;
-                                x.default.track(E.HAw.REFERRAL_PROGRAM_SHARE_MODAL_CTA_CLICKED, {
+                                A.default.track(S.HAw.REFERRAL_PROGRAM_SHARE_MODAL_CTA_CLICKED, {
                                     location_stack: t
                                 }), (0, c.mMO)(async () => {
                                     let {
@@ -171,7 +171,7 @@ let N = e => {
                             children: (0, i.jsxs)("div", {
                                 className: C.Zn,
                                 children: [(0, i.jsx)("img", {
-                                    src: v,
+                                    src: N,
                                     alt: "",
                                     className: C.QH
                                 }), I ? b.intl.string(b.t.SY9tyI) : b.intl.string(b.t.Lm2nFc)]
@@ -180,7 +180,7 @@ let N = e => {
                     })]
                 })]
             }),
-            D = N.redeemed === f.Z;
+            D = v.redeemed === f.Z;
         return (0, i.jsx)(m.f5, {
             value: O,
             children: (0, i.jsx)("div", {

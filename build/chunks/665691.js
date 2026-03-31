@@ -1,13 +1,12 @@
 /** chunk id: 665691 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
     DY: () => u,
     UF: () => d,
     bG: () => h
 });
 var i = n(311907),
-    s = n(652896),
-    l = n(961350),
+    l = n(652896),
+    s = n(961350),
     a = n(383501),
     r = n(707890),
     o = n(83942),
@@ -17,10 +16,10 @@ function d(e) {
     let {
         userId: t,
         channelId: n
-    } = e, s = (0, c.k)({
+    } = e, l = (0, c.k)({
         channelId: n
     });
-    return (0, i.bG)([r.A, l.default, a.A], () => null != t && s && a.A.isUserConnected(t) && l.default.getId() !== t && r.A.isUserVerified(t), [s, t])
+    return (0, i.bG)([r.A, s.default, a.A], () => null != t && l && a.A.isUserConnected(t) && s.default.getId() !== t && r.A.isUserVerified(t), [l, t])
 }
 
 function u(e) {
@@ -30,12 +29,12 @@ function u(e) {
     } = e, a = (0, c.k)({
         channelId: n
     }), d = (0, o.w)(t);
-    return (0, i.bG)([r.A, l.default], () => {
+    return (0, i.bG)([r.A, s.default], () => {
         if (!a || d || null == t) return !1;
-        let e = l.default.getId(),
+        let e = s.default.getId(),
             {
                 ownerId: n
-            } = (0, s.Iy)(t);
+            } = (0, l.Iy)(t);
         return n !== e && r.A.isStreamVerified(t)
     }, [d, a, t])
 }
@@ -45,6 +44,6 @@ function h(e) {
         channelId: t
     } = e, n = (0, c.k)({
         channelId: t
-    }), s = (0, o.c)();
-    return (0, i.bG)([r.A], () => !!n && !s && r.A.isCallVerified(), [s, n])
+    }), l = (0, o.c)();
+    return (0, i.bG)([r.A], () => !!n && !l && r.A.isCallVerified(), [l, n])
 }

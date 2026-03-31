@@ -1,11 +1,10 @@
 /** chunk id: 480720 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
     A: () => h
 });
 var i = n(64700),
-    s = n(734057),
-    l = n(309010),
+    l = n(734057),
+    s = n(309010),
     a = n(203982),
     r = n(969151),
     o = n(108959),
@@ -23,10 +22,10 @@ function h(e) {
                 location: n
             } = e, i = (0, r.H)(n);
             if (null == i || !(0, o.A)(i)) return;
-            l.A.getVoiceChannelId() !== i && await (0, c.A)({
+            s.A.getVoiceChannelId() !== i && await (0, c.A)({
                 channelId: i
             });
-            let a = s.A.getChannel(i),
+            let a = l.A.getChannel(i),
                 u = a?.guild_id;
             setTimeout(() => {
                 (0, d.A)(u, n), t?.()

@@ -16,7 +16,7 @@ function o(t) {
         onClose: o
     } = t;
 
-    function d() {
+    function c() {
         r.default.disconnect(), o()
     }
     return (0, i.jsx)(l.Modal, {
@@ -26,12 +26,12 @@ function o(t) {
         onClose: o,
         actions: [{
             text: s.intl.string(s.t.xTwqz2),
-            onClick: d,
+            onClick: c,
             variant: "secondary"
         }, {
             text: s.intl.string(s.t["sBP/1s"]),
             onClick: function() {
-                (0, a.OE)(n), d()
+                (0, a.OE)(n), c()
             },
             variant: "critical-primary"
         }]

@@ -12,10 +12,10 @@ var i = n(627968),
     c = n(438732),
     u = n(834981),
     m = n(53719),
-    _ = n(390370),
-    g = n(191627),
-    x = n(842130),
-    A = n(985018),
+    g = n(390370),
+    _ = n(191627),
+    A = n(842130),
+    x = n(985018),
     h = n(967082);
 
 function p(e) {
@@ -32,7 +32,7 @@ function p(e) {
                 otherUser: t
             })
         })
-    }, [T, t]), S = s.useCallback(() => {
+    }, [T, t]), E = s.useCallback(() => {
         a()(void 0 !== T, "User must be logged in to decline a link request"), (0, o.mMO)(async () => {
             let {
                 default: e
@@ -43,7 +43,7 @@ function p(e) {
                 otherUser: t
             })
         })
-    }, [T, t]), E = s.useCallback(() => {
+    }, [T, t]), S = s.useCallback(() => {
         a()(void 0 !== T, "User must be logged in to decline a link request"), (0, o.mMO)(async () => {
             let {
                 default: e
@@ -59,25 +59,25 @@ function p(e) {
         className: h.kL,
         children: [(0, i.jsx)("div", {
             className: h.zH,
-            children: (0, i.jsx)(_.A, {
+            children: (0, i.jsx)(g.A, {
                 otherUser: t,
-                status: g.Ef.PENDING
+                status: _.Ef.PENDING
             })
         }), (0, i.jsx)("div", {
             className: h.o1,
             children: l ? (0, i.jsx)(m.A, {
                 icon: o.PGe,
-                tooltip: A.intl.string(x.default.e5iHmZ),
-                onClick: E
+                tooltip: x.intl.string(A.default.e5iHmZ),
+                onClick: S
             }) : (0, i.jsxs)(i.Fragment, {
                 children: [p ? null : (0, i.jsx)(m.A, {
                     icon: o.A9s,
-                    tooltip: A.intl.string(x.default.krWQZK),
+                    tooltip: x.intl.string(A.default.krWQZK),
                     onClick: f
                 }), (0, i.jsx)(m.A, {
                     icon: o.PGe,
-                    tooltip: A.intl.string(x.default.bBDeNI),
-                    onClick: S
+                    tooltip: x.intl.string(A.default.bBDeNI),
+                    onClick: E
                 })]
             })
         })]

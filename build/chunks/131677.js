@@ -1,11 +1,10 @@
 /** chunk id: 131677 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
     A: () => p
 });
 var i = n(311907),
-    s = n(73153),
-    l = n(95701),
+    l = n(73153),
+    s = n(95701),
     a = n(583613),
     r = n(734057),
     o = n(222823),
@@ -19,15 +18,15 @@ function A() {
     return e.length > 20 && (e.length = 20), !(0, a.in)(e, u) && (u = e, h = new Set(e), !0)
 }
 
-function m() {
+function _() {
     return A()
 }
 
-function _(e) {
+function m(e) {
     let {
         channelId: t
     } = e, n = r.A.getChannel(t);
-    return null != n && !!(0, l.Gw)(n.type) && A()
+    return null != n && !!(0, s.Gw)(n.type) && A()
 }
 class g extends i.Ay.Store {
     static displayName = "PrivateChannelReadStateStore";
@@ -38,16 +37,16 @@ class g extends i.Ay.Store {
         return u
     }
 }
-let p = new g(s.h, {
-    CONNECTION_OPEN: m,
-    OVERLAY_INITIALIZE: m,
-    MESSAGE_CREATE: _,
-    MESSAGE_ACK: _,
+let p = new g(l.h, {
+    CONNECTION_OPEN: _,
+    OVERLAY_INITIALIZE: _,
+    MESSAGE_CREATE: m,
+    MESSAGE_ACK: m,
     CHANNEL_SELECT: function(e) {
         let {
             channelId: t
         } = e, n = r.A.getChannel(t);
-        return null != n && !!(0, l.Gw)(n.type) && A()
+        return null != n && !!(0, s.Gw)(n.type) && A()
     },
     CHANNEL_DELETE: function(e) {
         let {
@@ -59,7 +58,7 @@ let p = new g(s.h, {
     },
     WINDOW_FOCUS: function() {
         let e = r.A.getChannel(c.A.getChannelId());
-        return null != e && !!(0, l.Gw)(e.type) && A()
+        return null != e && !!(0, s.Gw)(e.type) && A()
     },
     CHANNEL_CREATE: function(e) {
         let {
@@ -67,7 +66,7 @@ let p = new g(s.h, {
                 id: t
             }
         } = e, n = r.A.getChannel(t);
-        return null != n && !!(0, l.Gw)(n.type) && A()
+        return null != n && !!(0, s.Gw)(n.type) && A()
     },
     CHANNEL_UPDATES: function(e) {
         let {
@@ -78,7 +77,7 @@ let p = new g(s.h, {
             }
             of t) {
             let t = r.A.getChannel(e);
-            null != t && (0, l.Gw)(t.type) && (n = !0)
+            null != t && (0, s.Gw)(t.type) && (n = !0)
         }
         return !!n && A()
     }

@@ -1,6 +1,6 @@
 /** chunk id: 628979 params = (module,exports,require) **/
 s.d(t, {
-    A: () => h
+    A: () => f
 });
 var r = s(627968),
     l = s(64700),
@@ -17,14 +17,14 @@ var r = s(627968),
     E = s(985018),
     A = s(614840);
 
-function h(e) {
+function f(e) {
     let {
         handleTransition: t,
         selectedTab: s,
         isNarrow: a,
-        hasText: h
+        hasText: f
     } = e, {
-        searchQuery: f,
+        searchQuery: h,
         onSetSearchQuery: m
     } = (0, b.v)(), [C, g] = l.useState(""), T = (0, d.uM)(), y = (0, o.bG)([c.default], () => c.default.locale), O = l.useRef(null), [L, _] = l.useState(!1);
     l.useEffect(() => {
@@ -33,10 +33,10 @@ function h(e) {
         }, 250);
         return () => clearTimeout(e)
     }, [C, m]), l.useEffect(() => {
-        g(f)
-    }, [f]), l.useEffect(() => {
-        _(a && h)
-    }, [a, h]);
+        g(h)
+    }, [h]), l.useEffect(() => {
+        _(a && f)
+    }, [a, f]);
     let x = l.useCallback(e => {
             "Enter" === e.key && m(C)
         }, [C, m]),

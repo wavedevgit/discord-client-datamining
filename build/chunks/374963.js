@@ -1,5 +1,4 @@
 /** chunk id: 374963 params = (module,exports,require) **/
-"use strict";
 e.exports = {
     om: "block__8dcfb",
     vk: "clickable__8dcfb",

@@ -1,18 +1,17 @@
 /** chunk id: 888697 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
-    _: () => l,
+    _: () => s,
     e: () => a
 });
 var i = n(73153),
-    s = n(435183);
-async function l(e, t) {
+    l = n(435183);
+async function s(e, t) {
     i.h.dispatch({
         type: "HANGOUT_WINDOW_IMAGE_SELECTED",
         url: t
-    }), await s.Ay.updateVoiceChannelStatus(e, t)
+    }), await l.Ay.updateVoiceChannelStatus(e, t)
 }
 
 function a(e) {
-    s.Ay.updateVoiceChannelStatus(e, "")
+    l.Ay.updateVoiceChannelStatus(e, "")
 }

@@ -1,5 +1,4 @@
 /** chunk id: 961577 params = (module,exports,require) **/
-"use strict";
 e.exports = {
     kL: "container_f37cb1",
     rt: "animatedBannerHoverLayer_f37cb1",

@@ -1,19 +1,18 @@
 /** chunk id: 249288 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
     A: () => o
 });
 var i = n(311907),
-    s = n(73153);
-let l = {
+    l = n(73153);
+let s = {
         toastsEnabledForChannel: {}
     },
-    a = l;
+    a = s;
 class r extends i.Ay.PersistedStore {
     static displayName = "CallChatToastsStore";
     static persistKey = "CallChatToasts";
     initialize(e) {
-        a = e ?? l
+        a = e ?? s
     }
     getToastsEnabled(e) {
         return a.toastsEnabledForChannel[e] ?? !0
@@ -22,7 +21,7 @@ class r extends i.Ay.PersistedStore {
         return a
     }
 }
-let o = new r(s.h, {
+let o = new r(l.h, {
     CALL_CHAT_TOASTS_SET_ENABLED: function(e) {
         let {
             channelId: t,

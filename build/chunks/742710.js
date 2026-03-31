@@ -3,9 +3,9 @@ n.d(t, {
     A: () => O
 });
 var i = n(627968),
-    l = n(64700),
-    a = n(503698),
-    s = n.n(a);
+    a = n(64700),
+    l = n(503698),
+    s = n.n(l);
 n(926675);
 var r = n(397927),
     o = n(915089),
@@ -31,19 +31,19 @@ function N(e) {
     let {
         index: t,
         widgetType: n,
-        game: l,
-        children: a,
+        game: a,
+        children: l,
         getWidth: s
     } = e, {
         manageFocusOnReorder: r
     } = (0, h.r)();
     return (0, i.jsx)(f.mG, {
         index: t,
-        itemId: l.applicationId,
+        itemId: a.applicationId,
         listType: n,
         itemType: "GAME_DETAILS_CARD",
         itemPreviewProps: {
-            game: l,
+            game: a,
             widgetType: n,
             getWidth: s
         },
@@ -51,12 +51,12 @@ function N(e) {
             positionNumber: t + 1
         }),
         onReorder: (e, t) => (0, p.Un)(n, e, t),
-        onEnd: () => r(l.applicationId),
+        onEnd: () => r(a.applicationId),
         className: b.vF,
         dropBeforeClassName: b.A,
         dropAfterClassName: b.Ze,
         draggingClassName: b.Id,
-        children: a
+        children: l
     })
 }
 
@@ -64,8 +64,8 @@ function S(e) {
     let {
         applicationId: t,
         userId: n,
-        gameName: l,
-        ...a
+        gameName: a,
+        ...l
     } = e, s = (0, u.A)({
         location: "UserProfileWidgetGameDetailsCard",
         applicationId: t,
@@ -74,14 +74,14 @@ function S(e) {
         trackEntryPointImpression: !0
     });
     return null == s ? (0, i.jsx)(r.Heading, {
-        ...a,
-        children: l
+        ...l,
+        children: a
     }) : (0, i.jsx)(r.Heading, {
-        ...a,
+        ...l,
         children: (0, i.jsx)(r.DUT, {
             onClick: s,
             className: b.sd,
-            children: l
+            children: a
         })
     })
 }
@@ -90,13 +90,13 @@ function y(e) {
     let {
         user: t,
         guildId: n,
-        channelId: l,
-        id: a
+        channelId: a,
+        id: l
     } = e;
     return (0, i.jsx)(r.AC4, {
-        id: a,
+        id: l,
         children: T.intl.format(T.t.TM0XDY, {
-            name: m.Ay.getName(n, l, t)
+            name: m.Ay.getName(n, a, t)
         })
     })
 }
@@ -118,8 +118,8 @@ function R(e) {
     let {
         text: t,
         user: n,
-        guildId: l,
-        channelId: a
+        guildId: a,
+        channelId: l
     } = e, s = (0, o.GV)();
     return null == t || "" === t.trim() ? null : (0, i.jsxs)("div", {
         role: "group",
@@ -130,8 +130,8 @@ function R(e) {
             className: b.Ls
         }), (0, i.jsx)(y, {
             user: n,
-            guildId: l,
-            channelId: a,
+            guildId: a,
+            channelId: l,
             id: s
         }), (0, i.jsx)(C, {
             text: t
@@ -143,18 +143,18 @@ function k(e) {
     let {
         text: t,
         user: n,
-        guildId: a,
+        guildId: l,
         channelId: d,
         widgetType: c,
         applicationId: u
     } = e, g = (0, o.GV)(), m = (0, o.GV)(), {
         trackUserProfileEditAction: f
-    } = (0, x.NJ)(), [h, _] = l.useState("idle"), [A, I] = l.useState(t ?? ""), j = l.useRef(null), v = l.useRef(null), E = T.intl.string(T.t.xKSfBT), N = null != t && "" !== t.trim(), S = l.useCallback(() => {
+    } = (0, x.NJ)(), [h, _] = a.useState("idle"), [A, I] = a.useState(t ?? ""), j = a.useRef(null), v = a.useRef(null), E = T.intl.string(T.t.xKSfBT), N = null != t && "" !== t.trim(), S = a.useCallback(() => {
         f({
             action: "PRESS_ADD_COMMENTARY",
             widgetEdited: c
         }), _("editing")
-    }, [c, f]), R = l.useCallback(() => {
+    }, [c, f]), R = a.useCallback(() => {
         let e = A.trim(),
             n = e !== (t ?? "").trim();
         (0, p.oc)(c, u, "" !== e ? e : void 0), _("completed"), n && f({
@@ -162,12 +162,12 @@ function k(e) {
             widgetEdited: c,
             gameId: u
         })
-    }, [c, u, A, t, f]), k = l.useCallback(e => {
+    }, [c, u, A, t, f]), k = a.useCallback(e => {
         I(e)
     }, []);
-    return l.useEffect(() => {
+    return a.useEffect(() => {
         "editing" === h && I(t ?? "")
-    }, [t, h]), l.useEffect(() => {
+    }, [t, h]), a.useEffect(() => {
         "completed" === h && j.current?.focus()
     }, [h]), "editing" === h ? (0, i.jsxs)("div", {
         className: b.kS,
@@ -200,7 +200,7 @@ function k(e) {
             className: b.Ls
         }), (0, i.jsx)(y, {
             user: n,
-            guildId: a,
+            guildId: l,
             channelId: d,
             id: m
         }), (0, i.jsx)(C, {
@@ -223,7 +223,7 @@ function O(e) {
     let {
         user: t,
         guildId: n,
-        channelId: a,
+        channelId: l,
         game: o,
         widgetType: c,
         disableInteraction: u = !1,
@@ -231,10 +231,10 @@ function O(e) {
         onRemoveGame: x,
         coverRef: T,
         className: y
-    } = e, C = l.useRef(null), {
+    } = e, C = a.useRef(null), {
         applicationId: O,
-        comment: L,
-        tags: w
+        comment: w,
+        tags: L
     } = o, {
         coverImageUrl: P,
         gameName: D,
@@ -276,19 +276,19 @@ function O(e) {
                     gameName: D,
                     ...M
                 }), B ? (0, i.jsx)(k, {
-                    text: L,
+                    text: w,
                     user: t,
                     guildId: n,
-                    channelId: a,
+                    channelId: l,
                     widgetType: c,
                     applicationId: O
                 }) : (0, i.jsx)(R, {
-                    text: L,
+                    text: w,
                     user: t,
                     guildId: n,
-                    channelId: a
+                    channelId: l
                 }), (0, i.jsx)(I.A, {
-                    tags: w,
+                    tags: L,
                     isCurrentUser: F,
                     widgetType: c,
                     applicationId: O,
@@ -298,7 +298,7 @@ function O(e) {
                     className: b.Ez,
                     applicationId: O,
                     guildId: n,
-                    channelId: a
+                    channelId: l
                 })]
             }), !u && F && (0, i.jsx)(j.A, {
                 game: o,

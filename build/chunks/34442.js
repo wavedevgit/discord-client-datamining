@@ -4,8 +4,8 @@ n.d(t, {
     dE: () => p
 });
 var i = n(627968),
-    l = n(64700),
-    a = n(896170),
+    a = n(64700),
+    l = n(896170),
     s = n(397927),
     r = n(383329),
     o = n(183555),
@@ -21,15 +21,15 @@ function m(e) {
         onAddGame: m,
         children: x,
         ...p
-    } = e, f = l.useMemo(() => new Set(n.games.map(e => e.applicationId)), [n.games]), {
+    } = e, f = a.useMemo(() => new Set(n.games.map(e => e.applicationId)), [n.games]), {
         trackUserProfileEditAction: h
-    } = (0, o.NJ)(), [_, A] = l.useState(""), I = l.useRef(""), {
+    } = (0, o.NJ)(), [_, A] = a.useState(""), I = a.useRef(""), {
         options: j,
         matchSorterOptions: v
     } = (0, r.R)(), {
         applicationIds: T,
         onAddGame: E
-    } = (0, c.S)(t), b = l.useCallback(e => {
+    } = (0, c.S)(t), b = a.useCallback(e => {
         (0, d.ew)({
             widgetType: t,
             game: {
@@ -40,7 +40,7 @@ function m(e) {
             gameId: e,
             widgetEdited: t
         }), T.includes(e) && E(e), m?.()
-    }, [t, h, m, T, E]), N = l.useMemo(() => {
+    }, [t, h, m, T, E]), N = a.useMemo(() => {
         let e = new Map(j.map(e => [String(e.value), {
                 id: String(e.value),
                 value: String(e.value),
@@ -50,11 +50,11 @@ function m(e) {
             t = T.map(t => e.get(t)).filter(e => null != e && !e.disabled),
             n = [...e.values()].filter(e => !t.includes(e));
         return [...t, ...n]
-    }, [j, f, T]), S = l.useMemo(() => ({
+    }, [j, f, T]), S = a.useMemo(() => ({
         ...v,
-        threshold: a.Ht.rankings.CONTAINS,
+        threshold: l.Ht.rankings.CONTAINS,
         keys: ["label"]
-    }), [v]), y = l.useCallback(e => "" === e.trim() ? N.length : (0, a.Ht)(N, e, S).length, [N, S]), C = l.useCallback(e => {
+    }), [v]), y = a.useCallback(e => "" === e.trim() ? N.length : (0, l.Ht)(N, e, S).length, [N, S]), C = a.useCallback(e => {
         let n = e.target.value;
         "" === _.trim() && "" !== n.trim() && h({
             action: "GAME_SEARCH_SESSION_STARTED",
@@ -114,14 +114,14 @@ function x(e) {
     let {
         disabled: t,
         ...n
-    } = e, a = l.useRef(null);
+    } = e, l = a.useRef(null);
     return (0, i.jsx)(m, {
-        targetElementRef: a,
+        targetElementRef: l,
         position: "bottom",
         align: "center",
         ...n,
         children: e => (0, i.jsx)(s.Button, {
-            buttonRef: a,
+            buttonRef: l,
             variant: "secondary",
             size: "sm",
             icon: s.j96,
@@ -133,7 +133,7 @@ function x(e) {
 }
 
 function p(e) {
-    let t = l.useRef(null);
+    let t = a.useRef(null);
     return (0, i.jsx)(m, {
         targetElementRef: t,
         position: "right",

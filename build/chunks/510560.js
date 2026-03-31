@@ -1,11 +1,10 @@
 /** chunk id: 510560 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
     A: () => u
 });
 var i = n(627968),
-    s = n(64700),
-    l = n(435371),
+    l = n(64700),
+    s = n(435371),
     a = n(397927),
     r = n(461678),
     o = n(914703),
@@ -15,7 +14,7 @@ var i = n(627968),
 function u(e) {
     let {
         channel: t
-    } = e, n = s.useRef(null);
+    } = e, n = l.useRef(null);
     return (0, i.jsx)(a.YNO, {
         targetElementRef: n,
         align: "right",
@@ -40,7 +39,7 @@ function u(e) {
             let {
                 onClick: t
             } = e;
-            return (0, i.jsx)(l.m_, {
+            return (0, i.jsx)(s.m_, {
                 text: d.intl.string(d.t.h850Ss),
                 targetElementRef: n,
                 children: (0, i.jsx)(a.K0, {

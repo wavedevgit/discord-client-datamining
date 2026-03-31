@@ -1,14 +1,14 @@
 /** chunk id: 877991 params = (module,exports,require) **/
 n.d(t, {
-    L: () => a
+    L: () => o
 });
 var i = n(189551),
-    l = n(186111),
-    r = n(203982),
-    s = n(652215),
-    o = n(307731);
-let a = {
+    r = n(186111),
+    s = n(203982),
+    a = n(652215),
+    l = n(307731);
+let o = {
     binds: ["mod+e"],
     comboKeysBindGlobal: !0,
-    action: () => !(l.A.getLayers().length > 0) && ((0, i.K)(o.Vl.SearchEmojiKeybindPressed), r._.dispatchToLastSubscribed(s.jej.TOGGLE_EMOJI_POPOUT), !1)
+    action: () => !(r.A.getLayers().length > 0) && ((0, i.K)(l.Vl.SearchEmojiKeybindPressed), s._.dispatchToLastSubscribed(a.jej.TOGGLE_EMOJI_POPOUT), !1)
 }

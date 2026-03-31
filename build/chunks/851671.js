@@ -1,6 +1,6 @@
 /** chunk id: 851671 params = (module,exports,require) **/
 r.d(t, {
-    F: () => o,
+    F: () => u,
     d: () => i
 });
 var n = r(627968);
@@ -19,4 +19,4 @@ function a(e, t) {
     })
 }
 let i = e => a(e, l.nM),
-    o = e => a(e, l.pB)
+    u = e => a(e, l.pB)

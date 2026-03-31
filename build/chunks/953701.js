@@ -1,6 +1,6 @@
 /** chunk id: 953701 params = (module,exports,require) **/
 n.d(t, {
-    I: () => g
+    I: () => _
 });
 var i = n(627968),
     s = n(64700),
@@ -12,9 +12,9 @@ var i = n(627968),
     c = n(253932),
     u = n(780964),
     m = n(985018),
-    _ = n(536482);
-let g = (0, d.Qx)(u.X.ACTIVITY_PRIVACY_PER_GUILD_DEFAULT_SETTING, {
-    useTitle: () => (0, r.i)("GuildActivitySharingDefaultSetting") ? m.intl.string(m.t.vpgck1) : m.intl.string(_.default["/LHVbt"]),
+    g = n(536482);
+let _ = (0, d.Qx)(u.X.ACTIVITY_PRIVACY_PER_GUILD_DEFAULT_SETTING, {
+    useTitle: () => (0, r.i)("GuildActivitySharingDefaultSetting") ? m.intl.string(m.t.vpgck1) : m.intl.string(g.default["/LHVbt"]),
     useOptions: function() {
         let e = (0, r.i)("GuildActivitySharingDefaultSetting");
         return s.useMemo(() => e ? [{
@@ -33,10 +33,10 @@ let g = (0, d.Qx)(u.X.ACTIVITY_PRIVACY_PER_GUILD_DEFAULT_SETTING, {
             name: m.intl.string(m.t.UzGMH9)
         }, {
             value: l.Qd.ACTIVITY_STATUS_ON_FOR_LARGE_GUILDS,
-            name: m.intl.string(_.default["/sAeRY"])
+            name: m.intl.string(g.default["/sAeRY"])
         }, {
             value: l.Qd.ACTIVITY_STATUS_OFF,
-            name: m.intl.string(_.default.m3oL7Q)
+            name: m.intl.string(g.default.m3oL7Q)
         }], [e])
     },
     useValue: c._Z.useSetting,

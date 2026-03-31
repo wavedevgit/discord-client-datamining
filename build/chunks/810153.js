@@ -1,11 +1,10 @@
 /** chunk id: 810153 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
     A: () => A
 });
 var i = n(311907),
-    s = n(73153),
-    l = n(187508),
+    l = n(73153),
+    s = n(187508),
     a = n(927813),
     r = n(661191),
     o = n(322387);
@@ -21,7 +20,7 @@ class u extends i.Ay.PersistedStore {
     static displayName = "NotificationCenterStore";
     static persistKey = "NotificationCenterStore";
     initialize(e) {
-        this.waitFor(l.Ay), null != e && ((d = e).localItemAcks = function(e) {
+        this.waitFor(s.Ay), null != e && ((d = e).localItemAcks = function(e) {
             let t = {};
             for (let [n, i] of Object.entries(e)) Date.now() - i < c && (t[n] = i);
             return t
@@ -53,7 +52,7 @@ class u extends i.Ay.PersistedStore {
 function h() {
     d.hasNewMentions = !1, d.isDataStale = !1, d.isRefreshing = !1
 }
-let A = new u(s.h, {
+let A = new u(l.h, {
     MESSAGE_CREATE: function(e) {
         let {
             message: t

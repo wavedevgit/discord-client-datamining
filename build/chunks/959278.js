@@ -317,8 +317,8 @@ let eG = (0, c.Fe)({
         } = e;
         return (0, ef.pX)(eP.BVt.ME), (0, $.A)(t.params.inviteCode), null
     },
-    e6 = () => (0, i.jsx)(E.A, {}),
-    e9 = () => (0, i.jsx)(I.A, {}),
+    e9 = () => (0, i.jsx)(E.A, {}),
+    e6 = () => (0, i.jsx)(I.A, {}),
     e5 = () => function(e) {
         let {
             tab: t
@@ -601,12 +601,12 @@ function ta() {
                                     }
                                 }), (0, i.jsx)(x.A, {
                                     path: eP.BVt.APPLICATION_LIBRARY,
-                                    render: e6,
+                                    render: e9,
                                     impressionName: d.ImpressionNames.APPLICATION_LIBRARY,
                                     disableTrack: !0
                                 }), (0, i.jsx)(x.A, {
                                     path: eP.BVt.APPLICATION_STORE,
-                                    render: e9,
+                                    render: e6,
                                     impressionName: d.ImpressionNames.APPLICATION_STORE,
                                     disableTrack: !0
                                 }), (0, i.jsx)(x.A, {

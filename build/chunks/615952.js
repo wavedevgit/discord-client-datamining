@@ -1,12 +1,11 @@
 /** chunk id: 615952 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
-    A: () => _
+    A: () => m
 });
 var i = n(627968);
 n(64700);
-var s = n(311907),
-    l = n(397927),
+var l = n(311907),
+    s = n(397927),
     a = n(688810),
     r = n(233971),
     o = n(746174),
@@ -15,14 +14,14 @@ var s = n(311907),
     u = n(993401),
     h = n(518477),
     A = n(652215),
-    m = n(985018);
+    _ = n(985018);
 
-function _(e) {
+function m(e) {
     let {
         user: t
     } = e, {
         analyticsLocations: n
-    } = (0, a.Ay)(), _ = (0, s.bG)([c.default], () => c.default.getId() === t.id), g = (0, s.bG)([d.A], () => d.A.isBlockedOrIgnored(t.id) || d.A.isSpam(t.id)), p = (0, o.j)("UserProfileGiftingBannerButton"), {
+    } = (0, a.Ay)(), m = (0, l.bG)([c.default], () => c.default.getId() === t.id), g = (0, l.bG)([d.A], () => d.A.isBlockedOrIgnored(t.id) || d.A.isSpam(t.id)), p = (0, o.j)("UserProfileGiftingBannerButton"), {
         openGiftModal: f
     } = (0, r.$)({
         giftRecipient: t,
@@ -35,9 +34,9 @@ function _(e) {
         },
         location: "user-profile-gifting-banner-button"
     });
-    return null == t || t.bot || _ || g || !p ? null : (0, i.jsx)(u.br, {
-        icon: l.okO,
-        tooltipText: m.intl.string(m.t.PEjaCx),
+    return null == t || t.bot || m || g || !p ? null : (0, i.jsx)(u.br, {
+        icon: s.okO,
+        tooltipText: _.intl.string(_.t.PEjaCx),
         action: h.pt.GIFT,
         onClick: f
     })

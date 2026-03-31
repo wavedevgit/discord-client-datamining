@@ -4,8 +4,8 @@ n.d(t, {
 });
 var l = n(627968),
     a = n(64700),
-    r = n(397927),
-    i = n(46054),
+    i = n(397927),
+    r = n(46054),
     s = n(861662),
     d = n(985018),
     o = n(991764);
@@ -19,22 +19,22 @@ let c = e => {
         isModeratorReport: u,
         isTidaReport: _ = !1,
         hideTitle: m = !1
-    } = e, x = c?.type === "submit", p = a.useMemo(() => i.A.reactParserFor({
-        ...i.A.defaultRules,
+    } = e, x = c?.type === "submit", p = a.useMemo(() => r.A.reactParserFor({
+        ...r.A.defaultRules,
         link: s.B
     }), []);
     return (0, l.jsxs)("div", {
         className: o.N,
-        children: [m || null == t || "" === t ? null : (0, l.jsx)(r.Heading, {
+        children: [m || null == t || "" === t ? null : (0, l.jsx)(i.Heading, {
             variant: "heading-lg/semibold",
             color: "text-strong",
             children: t
-        }), null != n && "" !== t ? (0, l.jsx)(r.Text, {
+        }), null != n && "" !== t ? (0, l.jsx)(i.Text, {
             variant: "text-md/normal",
             color: "text-subtle",
             className: o.m,
             children: p(n)
-        }) : null, x && !u && !_ && (0, l.jsx)(r.Text, {
+        }) : null, x && !u && !_ && (0, l.jsx)(i.Text, {
             variant: "text-sm/normal",
             children: d.intl.format(d.t.Q0tSKT, {})
         })]

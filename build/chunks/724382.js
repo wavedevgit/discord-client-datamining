@@ -17,23 +17,23 @@ function u(e) {
         message: t,
         channel: n,
         compact: u
-    } = e, _ = (0, r.Ay)(t), m = (0, s.P)({
+    } = e, _ = (0, r.Ay)(t), A = (0, s.P)({
         user: t.author,
         channelId: n.id,
         guildId: n.guild_id,
         messageId: t.id
-    })(_), A = (0, a.h)(t.applicationId);
-    if (null == A) return null;
+    })(_), m = (0, a.h)(t.applicationId);
+    if (null == m) return null;
     let E = c.intl.format(c.t.mAtJTC, {
         username: t.author.username,
-        usernameHook: m,
-        applicationName: A.name,
+        usernameHook: A,
+        applicationName: m.name,
         applicationNameHook: () => (0, i.jsx)(l.Text, {
             className: d.S,
             variant: "text-md/semibold",
             color: "text-strong",
-            children: A.name
-        }, A.name),
+            children: m.name
+        }, m.name),
         helpdeskArticle: "#"
     });
     return (0, i.jsx)(o.A, {

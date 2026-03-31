@@ -1,11 +1,10 @@
 /** chunk id: 220628 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
-    A: () => _
+    A: () => m
 });
 var i = n(64700),
-    s = n(311907),
-    l = n(397927),
+    l = n(311907),
+    s = n(397927),
     a = n(688810),
     r = n(987144),
     o = n(71393),
@@ -15,18 +14,18 @@ var i = n(64700),
     h = n(568065),
     A = n(652215);
 
-function m(e, t, n) {
-    n && (0, l.s7G)(), (0, u.h)(e, t)
+function _(e, t, n) {
+    n && (0, s.s7G)(), (0, u.h)(e, t)
 }
 
-function _(e, t) {
+function m(e, t) {
     let {
         analyticsLocations: n
     } = (0, a.Ay)(), {
-        onToggle: l,
+        onToggle: s,
         isLoading: u,
-        error: _
-    } = (0, d.A)(e, t), g = (0, s.bG)([o.A], () => o.A.getGuild(e)), p = (0, c.A)(e, t);
+        error: m
+    } = (0, d.A)(e, t), g = (0, l.bG)([o.A], () => o.A.getGuild(e)), p = (0, c.A)(e, t);
     return {
         onActivate: i.useCallback(function() {
             let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {},
@@ -42,14 +41,14 @@ function _(e, t) {
                 analyticsLocations: n,
                 guild: g,
                 intent: t.type === h.o9.LEVEL ? h.Pn.LEVEL : h.Pn.PERK,
-                onSubscribeComplete: () => l(!0)?.then(() => {
-                    m(g.id, t, i)
+                onSubscribeComplete: () => s(!0)?.then(() => {
+                    _(g.id, t, i)
                 })
-            }) : l(!0)?.then(() => {
-                m(g.id, t, i)
+            }) : s(!0)?.then(() => {
+                _(g.id, t, i)
             })
-        }, [l, t, p, n, g]),
+        }, [s, t, p, n, g]),
         isLoading: u,
-        error: _
+        error: m
     }
 }

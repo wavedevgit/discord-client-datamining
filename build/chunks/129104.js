@@ -1,11 +1,10 @@
 /** chunk id: 129104 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
     R: () => p
 });
 var i = n(627968),
-    s = n(64700),
-    l = n(311907),
+    l = n(64700),
+    s = n(311907),
     a = n(397927),
     r = n(565645),
     o = n(375499),
@@ -14,8 +13,8 @@ var i = n(627968),
     u = n(734057),
     h = n(309010),
     A = n(559405),
-    m = n(652215),
-    _ = n(307731),
+    _ = n(652215),
+    m = n(307731),
     g = n(435579);
 
 function p(e) {
@@ -25,7 +24,7 @@ function p(e) {
         selectedDefaultStatus: p,
         setIsEmojiPickerOpen: f,
         defaultStatusVariant: x
-    } = e, E = s.useRef(null), C = (0, l.bG)([h.A, u.A], () => u.A.getChannel(h.A.getVoiceChannelId())), I = s.useCallback(() => null != t ? (0, i.jsx)(r.A, {
+    } = e, E = l.useRef(null), I = (0, s.bG)([h.A, u.A], () => u.A.getChannel(h.A.getVoiceChannelId())), C = l.useCallback(() => null != t ? (0, i.jsx)(r.A, {
         emojiId: t.id,
         emojiName: t.name,
         animated: !!t.animated
@@ -34,7 +33,7 @@ function p(e) {
         userId: d.default.getId(),
         size: 20,
         hangStatusActivity: {
-            type: m.$pd.HANG_STATUS,
+            type: _.$pd.HANG_STATUS,
             state: p
         },
         fallbackVariant: x
@@ -48,13 +47,13 @@ function p(e) {
                 closePopout: t
             } = e;
             return (0, i.jsx)(c.A, {
-                channel: C,
-                guildId: C?.guild_id ?? void 0,
+                channel: I,
+                guildId: I?.guild_id ?? void 0,
                 closePopout: t,
                 onSelectEmoji: e => {
                     let {
                         emoji: i,
-                        willClose: s
+                        willClose: l
                     } = e;
                     null == i ? n(null) : n(null != i.id ? {
                         id: i.id,
@@ -64,9 +63,9 @@ function p(e) {
                         id: null,
                         name: i.optionallyDiverseSequence ?? "",
                         animated: !1
-                    }), s && t()
+                    }), l && t()
                 },
-                pickerIntention: _.b_.STATUS
+                pickerIntention: m.b_.STATUS
             })
         },
         position: "left",
@@ -74,14 +73,14 @@ function p(e) {
         align: "top",
         children: (e, n) => {
             let {
-                isShown: s
+                isShown: l
             } = n;
             return (0, i.jsx)(o.A, {
                 ...e,
                 ref: E,
-                active: s,
+                active: l,
                 tabIndex: 0,
-                renderButtonContents: null == t && null == p ? null : I
+                renderButtonContents: null == t && null == p ? null : C
             })
         }
     })

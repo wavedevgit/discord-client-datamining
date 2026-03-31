@@ -1,6 +1,6 @@
 /** chunk id: 182859 params = (module,exports,require) **/
 n.d(t, {
-    A: () => x
+    A: () => A
 });
 var i = n(627968),
     s = n(64700),
@@ -12,15 +12,15 @@ var i = n(627968),
     c = n(893598),
     u = n(333354),
     m = n(985018),
-    _ = n(664126),
-    g = n(519636);
+    g = n(664126),
+    _ = n(519636);
 
-function x(e) {
+function A(e) {
     let {
         guildId: t,
         variant: l = "admin",
-        className: x,
-        analyticsLocation: A,
+        className: A,
+        analyticsLocation: x,
         videoPlacement: h = "sidebar",
         onDismiss: p
     } = e, {
@@ -33,38 +33,38 @@ function x(e) {
             return n => (0, i.jsx)(e, {
                 ...n,
                 guildId: t,
-                analyticsLocation: A,
+                analyticsLocation: x,
                 videoPlacement: h,
                 sourceAnalyticsLocations: T
             })
         })
-    }, [A, T, t, h]);
+    }, [x, T, t, h]);
     return "member" === l ? (0, i.jsxs)(o.DUT, {
-        className: a()(_.iR, x),
+        className: a()(g.iR, A),
         onClick: f,
         "aria-label": m.intl.string(u.default["103aY+"]),
         children: [(0, i.jsx)("img", {
             alt: "",
-            className: _.xn,
-            src: g.A
+            className: g.xn,
+            src: _.A
         }), (0, i.jsx)("div", {
-            className: _.b1
+            className: g.b1
         }), (0, i.jsx)("div", {
-            className: _.i5,
+            className: g.i5,
             children: (0, i.jsx)(o.Text, {
                 variant: "text-xs/semibold",
                 color: "always-white",
                 children: m.intl.string(u.default.diMhWc)
             })
         }), (0, i.jsx)(c.A, {
-            className: _.Rr,
+            className: g.Rr,
             inactive: !0,
             renderLinkComponent: () => null
         })]
     }) : (0, i.jsxs)("div", {
-        className: _.kL,
+        className: g.kL,
         children: [(0, i.jsx)("div", {
-            className: a()(_.X8, "theme-dark"),
+            className: a()(g.X8, "theme-dark"),
             children: (0, i.jsx)(r.K0, {
                 variant: "icon-only",
                 size: "md",
@@ -73,22 +73,22 @@ function x(e) {
                 icon: o.PGe
             })
         }), (0, i.jsxs)(o.DUT, {
-            className: _.iT,
+            className: g.iT,
             onClick: f,
             "aria-label": m.intl.string(u.default["103aY+"]),
             children: [(0, i.jsx)("img", {
                 alt: "",
-                className: _.xn,
-                src: g.A
+                className: g.xn,
+                src: _.A
             }), (0, i.jsx)("div", {
-                className: _.TQ
+                className: g.TQ
             }), (0, i.jsx)(c.A, {
-                className: _.Rr,
+                className: g.Rr,
                 inactive: !0,
                 renderLinkComponent: () => null
             })]
         }), (0, i.jsxs)("div", {
-            className: _.FS,
+            className: g.FS,
             children: [(0, i.jsx)(o.Text, {
                 variant: "text-md/semibold",
                 color: "text-strong",

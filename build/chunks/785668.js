@@ -1,6 +1,6 @@
 /** chunk id: 785668 params = (module,exports,require) **/
 n.d(t, {
-    A: () => x
+    A: () => A
 });
 var i = n(627968),
     s = n(64700),
@@ -12,18 +12,18 @@ var i = n(627968),
     c = n(987144),
     u = n(473145),
     m = n(652215),
-    _ = n(985018),
-    g = n(277121);
-let x = function() {
+    g = n(985018),
+    _ = n(277121);
+let A = function() {
     let e = s.useRef(null),
         {
             analyticsLocations: t
         } = (0, o.Ay)(),
         {
-            fractionalState: x
+            fractionalState: A
         } = (0, d.A)();
 
-    function A(n) {
+    function x(n) {
         null != e.current && (0, r.OoC)(e.current), (0, c.g)({
             analyticsLocation: {
                 page: m.liQ.GUILD_BOOSTING_USER_SETTINGS,
@@ -42,7 +42,7 @@ let x = function() {
             } = await Promise.resolve().then(n.bind(n, 770101));
             return t => (0, i.jsx)(e, {
                 ...t,
-                onSelectGuild: A
+                onSelectGuild: x
             })
         }, {
             onCloseRequest: () => {
@@ -51,23 +51,23 @@ let x = function() {
         })
     }
     let p = (0, u.Nc)({
-        fractionalState: x
+        fractionalState: A
     });
     return (0, i.jsxs)("div", {
-        className: g.iE,
+        className: _.iE,
         children: [(0, i.jsx)(r._Jp, {
             color: r.LU0.unsafe_rawColors.GUILD_BOOSTING_PINK,
-            className: g.$J
+            className: _.$J
         }), (0, i.jsx)(r.Text, {
-            className: g.C,
+            className: _.C,
             color: "text-default",
             variant: "text-sm/medium",
-            children: _.intl.format(_.t.kqC5vq, {
+            children: g.intl.format(g.t.kqC5vq, {
                 boostAnyGuildHook: (e, t) => {
                     let n = null != p,
                         s = (0, r.Oer)(e),
                         o = (0, i.jsx)("div", {
-                            className: g.lO,
+                            className: _.lO,
                             children: (0, i.jsx)(a.QWc, {
                                 variant: "primary",
                                 onClick: n ? void 0 : h,
