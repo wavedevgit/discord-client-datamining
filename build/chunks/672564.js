@@ -1,6 +1,6 @@
 /** chunk id: 672564 params = (module,exports,require) **/
 n.d(t, {
-    J: () => N
+    J: () => C
 });
 var i = n(627968),
     a = n(64700),
@@ -8,42 +8,42 @@ var i = n(627968),
     s = n.n(l),
     r = n(575593),
     o = n(397927),
-    d = n(793574),
-    c = n(688810),
+    c = n(793574),
+    d = n(688810),
     u = n(183555),
     g = n(661492),
     m = n(808247),
-    x = n(146423),
-    p = n(460442),
+    p = n(146423),
+    x = n(460442),
     f = n(699976),
     h = n(652215),
     _ = n(518477),
     A = n(985018),
-    I = n(353787);
+    I = n(227104);
 let j = f.Z.SIZE_90;
 
-function v(e) {
+function E(e) {
     let {
         sku: t,
         wishlistOwner: n,
         style: l,
         skuPreviewStyle: r,
         setIsHoveringOrFocusing: o,
-        onClick: d,
-        "aria-label": c,
+        onClick: c,
+        "aria-label": d,
         wishlistId: g,
         children: m
     } = e, {
-        trackUserProfileWishlistAction: p
+        trackUserProfileWishlistAction: x
     } = (0, u.NJ)(), f = a.useCallback(() => {
-        p({
+        x({
             wishlistId: g,
             action: _.Mq.WISHLIST_ITEM_CLICKED,
             skuId: t.id,
             productLines: new Set([t.productLine])
-        }), d()
-    }, [d, t.id, t.productLine, p, g]);
-    return (0, i.jsx)(x.A, {
+        }), c()
+    }, [c, t.id, t.productLine, x, g]);
+    return (0, i.jsx)(p.A, {
         sku: t,
         user: n,
         spec: j,
@@ -51,22 +51,22 @@ function v(e) {
         skuPreviewStyle: s()(I.ev, r),
         onHoverOrFocusChange: o,
         onClick: f,
-        "aria-label": c,
+        "aria-label": d,
         children: m
     })
 }
 
-function T(e) {
+function v(e) {
     let {
         sku: t,
         analyticsLocations: n,
         isHoveringOrFocusing: l,
         handleOpenUserProfileModal: r,
-        skuPreviewStyle: d,
-        wishlistOwner: c,
+        skuPreviewStyle: c,
+        wishlistOwner: d,
         ...u
-    } = e, [x, f] = a.useState(!1), h = a.useCallback(async () => {
-        if (!x) {
+    } = e, [p, f] = a.useState(!1), h = a.useCallback(async () => {
+        if (!p) {
             f(!0);
             try {
                 await m.A.addSkuToWishlist(t.id, n), r?.({
@@ -78,35 +78,35 @@ function T(e) {
                 f(!1)
             }
         }
-    }, [t, n, x, r]), j = a.useMemo(() => s()({
-        [I.zW]: l || x
-    }, d), [l, x, d]);
-    return (0, i.jsx)(v, {
+    }, [t, n, p, r]), j = a.useMemo(() => s()({
+        [I.zW]: l || p
+    }, c), [l, p, c]);
+    return (0, i.jsx)(E, {
         "aria-label": A.intl.formatToPlainString(A.t.xRjJBe, {
             productName: (0, g.TC)(t)
         }),
         sku: t,
-        wishlistOwner: c,
+        wishlistOwner: d,
         skuPreviewStyle: j,
         onClick: h,
         isHoveringOrFocusing: l,
         ...u,
-        children: (0, i.jsx)(p.oU, {
+        children: (0, i.jsx)(x.oU, {
             isHoveringOrFocusing: l,
-            loading: x
+            loading: p
         })
     })
 }
 
-function E(e) {
+function T(e) {
     let {
         sku: t,
         analyticsLocations: n,
         ...a
     } = e, {
         analyticsLocations: l
-    } = (0, c.Ay)(...n ?? [], d.A.SLAYER_STOREFRONT_WISHLIST_ITEM_CARD);
-    return (0, i.jsx)(T, {
+    } = (0, d.Ay)(...n ?? [], c.A.SLAYER_STOREFRONT_WISHLIST_ITEM_CARD);
+    return (0, i.jsx)(v, {
         sku: t,
         analyticsLocations: l,
         ...a
@@ -128,21 +128,21 @@ function b(e) {
                 return s()(I.ML, I.ZY)
         }
     }, [t?.tenantMetadata?.collectibles?.type]);
-    return (0, i.jsx)(T, {
+    return (0, i.jsx)(v, {
         sku: t,
         skuPreviewStyle: l,
         ...n
     })
 }
 
-function N(e) {
+function C(e) {
     let {
         sku: t,
         ...n
     } = e, [l, s] = a.useState(!1);
     switch (t.productLine) {
         case h.EZt.SOCIAL_LAYER_GAME_ITEM:
-            return (0, i.jsx)(E, {
+            return (0, i.jsx)(T, {
                 sku: t,
                 isHoveringOrFocusing: l,
                 setIsHoveringOrFocusing: s,

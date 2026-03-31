@@ -1,6 +1,5 @@
 /** chunk id: 650417 params = (module,exports,require) **/
-"use strict";
-i.r(e.exports = {
+n.r(e.exports = {
     actionsStreamPreview: "actionsStreamPreview__34f7d",
     actionsProfile: "actionsProfile__34f7d",
     actionsProfileV2: "actionsProfileV2__34f7d",

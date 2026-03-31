@@ -1,5 +1,4 @@
 /** chunk id: 446247 params = (module,exports,require) **/
-"use strict";
 e.exports = {
     kL: "container__05cdc",
     ot: "sparkleIcon__05cdc",

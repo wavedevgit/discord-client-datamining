@@ -1,5 +1,4 @@
 /** chunk id: 272043 params = (module,exports,require) **/
-"use strict";
 e.exports = {
     iE: "wrapper_ef0e9b",
     O: "percentCompleteWrapper_ef0e9b",

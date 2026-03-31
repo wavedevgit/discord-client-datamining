@@ -54,8 +54,8 @@ var a = n(627968),
     X = n(652215),
     Z = n(996988),
     ee = n(985018),
-    et = n(337637),
-    en = n(886308);
+    et = n(229598),
+    en = n(74209);
 
 function ea(e) {
     let {
@@ -121,10 +121,10 @@ function ea(e) {
         ew = i.useCallback(() => {
             eA(), eR()
         }, [eA, eR]),
-        eD = (0, x.JY)({
+        eD = (0, x.QR)({
             location: "UserProfileAccountPopout"
         }),
-        eP = (0, x.on)({
+        eP = (0, x.zd)({
             location: "UserProfileAccountPopout"
         }),
         eM = i.useId();

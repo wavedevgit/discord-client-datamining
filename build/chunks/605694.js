@@ -8,36 +8,36 @@ var i = n(627968),
     s = n.n(l),
     r = n(205338),
     o = n(179771),
-    d = n(87075),
-    c = n(311907),
+    c = n(87075),
+    d = n(311907),
     u = n(397927),
     g = n(155718),
     m = n(793574),
-    x = n(688810),
-    p = n(362490),
+    p = n(688810),
+    x = n(362490),
     f = n(385771),
     h = n(789069),
     _ = n(429913),
     A = n(409626),
     I = n(692969),
     j = n(207963),
-    v = n(953756),
-    T = n(647901),
-    E = n(371068),
+    E = n(953756),
+    v = n(647901),
+    T = n(371068),
     b = n(61266),
-    N = n(731068),
+    C = n(731068),
     S = n(619517),
-    y = n(339580),
-    C = n(961350),
+    N = n(339580),
+    y = n(961350),
     R = n(760751),
-    k = n(403362),
-    O = n(183555),
-    w = n(622543),
-    L = n(466853),
+    O = n(403362),
+    k = n(183555),
+    L = n(622543),
+    w = n(466853),
     P = n(985018),
-    D = n(414675);
+    D = n(484046);
 let G = /{{(.*?)}}/g,
-    M = {
+    F = {
         [r.A.MARVEL_RIVALS]: [{
             type: "HERO",
             title: "{{username}}",
@@ -241,8 +241,8 @@ function U(e) {
             });
         case "FIELD":
             return (0, i.jsx)(X, {
-                value: F(t.value),
-                name: F(t.name)
+                value: M(t.value),
+                name: M(t.name)
             });
         case "TEXT":
             return (0, i.jsx)(V, {
@@ -259,14 +259,14 @@ function U(e) {
     }
 }
 
-function F(e, t) {
+function M(e, t) {
     return (0, i.jsx)(U, {
         component: e
     }, t)
 }
 
 function W(e) {
-    return e.map((e, t) => F(e, t))
+    return e.map((e, t) => M(e, t))
 }
 
 function H(e) {
@@ -286,7 +286,7 @@ function H(e) {
                 children: null != t ? t : (0, i.jsx)("div", {
                     className: D.jC
                 })
-            }), (0, i.jsx)(T.x, {
+            }), (0, i.jsx)(v.x, {
                 color: "muted",
                 children: n
             })]
@@ -336,7 +336,7 @@ function X(e) {
 function V(e) {
     let {
         content: t
-    } = e, n = a.useId(), l = (0, T.X)();
+    } = e, n = a.useId(), l = (0, v.X)();
     return null != t ? (0, i.jsx)(b.A, {
         type: g.I5.TEXT_DISPLAY,
         id: n,
@@ -352,7 +352,7 @@ function z(e) {
         content: t,
         image: n,
         imagePosition: a
-    } = e, l = (0, T.X)(), r = (0, h.c)(n) ? (0, i.jsx)("div", {
+    } = e, l = (0, v.X)(), r = (0, h.c)(n) ? (0, i.jsx)("div", {
         className: s()(D.Sl, l.className),
         "data-position": a,
         children: (0, i.jsx)(S.Ay, {
@@ -382,7 +382,7 @@ function Y(e) {
         size: t = "small",
         divider: n = !1
     } = e, l = a.useId();
-    return (0, i.jsx)(E.A, {
+    return (0, i.jsx)(T.A, {
         type: g.I5.SEPARATOR,
         id: l,
         divider: n,
@@ -421,11 +421,11 @@ function J(e) {
         children: t,
         widget: n
     } = e;
-    return (0, i.jsx)(v.O7.Root, {
+    return (0, i.jsx)(E.O7.Root, {
         containerInnerWidth: 396,
         children: (0, i.jsx)(j.f5, {
             applicationWidget: n,
-            children: (0, i.jsx)(T.x, {
+            children: (0, i.jsx)(v.x, {
                 size: "reduced",
                 weight: "reduced",
                 children: (0, i.jsx)("div", {
@@ -472,23 +472,23 @@ function Z(e) {
 let Q = Object.assign(function(e) {
     var t, n;
     let l, r, g, h, j, {
-            trackUserProfileAction: v
-        } = (0, O.NJ)(),
+            trackUserProfileAction: E
+        } = (0, k.NJ)(),
         {
-            user: T,
-            widget: E,
+            user: v,
+            widget: T,
             cta: b,
             subtle: S = !1
         } = e,
-        G = (0, c.bG)([C.default], () => C.default.getId()) === T.id,
-        F = (0, _.h)(E.applicationId),
-        W = F?.getIconURL(16),
-        H = (0, c.bG)([R.A], () => null != F ? R.A.getGameByApplication(F) : null),
+        G = (0, d.bG)([y.default], () => y.default.getId()) === v.id,
+        M = (0, _.h)(T.applicationId),
+        W = M?.getIconURL(16),
+        H = (0, d.bG)([R.A], () => null != M ? R.A.getGameByApplication(M) : null),
         B = (0, I.A)({
             location: "UserProfileApplicationWidget",
             applicationId: H?.id,
             source: A.Ob.UserProfile,
-            sourceUserId: T.id,
+            sourceUserId: v.id,
             trackEntryPointImpression: !0
         }),
         {
@@ -497,18 +497,18 @@ let Q = Object.assign(function(e) {
             canStartAuthorization: z,
             startAuthorization: Y,
             token: Q
-        } = (0, p.RD)(F),
+        } = (0, x.RD)(M),
         {
             analyticsLocations: $
-        } = (0, x.Ay)(m.A.USER_PROFILE_APPLICATION_WIDGET),
+        } = (0, p.Ay)(m.A.USER_PROFILE_APPLICATION_WIDGET),
         ee = a.useCallback(() => {
-            z && (v({
+            z && (E({
                 action: V ? "PRESS_APPLICATION_WIDGET_LINKED_RECONNECT" : "PRESS_APPLICATION_WIDGET_UNLINKED_CONNECT",
-                applicationId: E.applicationId
+                applicationId: T.applicationId
             }), Y({
                 analyticsLocations: $
             }))
-        }, [z, V, Y, v, E.applicationId, $]),
+        }, [z, V, Y, E, T.applicationId, $]),
         et = null == b && X && !V && z,
         en = null == b && X && V && z && null != Q && !Q.scopes.includes(o.F.APPLICATION_IDENTITIES_WRITE) && !Q.scopes.includes(o.F.SDK_SOCIAL_LAYER) && !Q.scopes.includes(o.F.SDK_SOCIAL_LAYER_PRESENCE),
         ei = (0, i.jsxs)(i.Fragment, {
@@ -522,7 +522,7 @@ let Q = Object.assign(function(e) {
                 className: D.qP
             }), (0, i.jsx)(u.Text, {
                 variant: "text-sm/medium",
-                children: F?.name != null ? F.name : (0, i.jsx)("div", {
+                children: M?.name != null ? M.name : (0, i.jsx)("div", {
                     className: D.jC
                 })
             })]
@@ -539,10 +539,10 @@ let Q = Object.assign(function(e) {
             isLoading: el,
             hasData: es,
             components: er
-        } = (t = T.id, n = E.applicationId, l = (0, f.A)(), r = (0, c.bG)([y.A], () => y.A.getUserIdentityByApplication(t, n)), g = (0, c.bG)([w.A], () => w.A.getApplicationWidgetConfig(n)), h = (0, c.bG)([y.A, w.A], () => null == y.A.getUserIdentities(t) || null == w.A.applicationWidgetConfigs), j = a.useMemo(() => {
+        } = (t = v.id, n = T.applicationId, l = (0, f.A)(), r = (0, d.bG)([N.A], () => N.A.getUserIdentityByApplication(t, n)), g = (0, d.bG)([L.A], () => L.A.getApplicationWidgetConfig(n)), h = (0, d.bG)([N.A, L.A], () => null == N.A.getUserIdentities(t) || null == L.A.applicationWidgetConfigs), j = a.useMemo(() => {
             var e, t;
             if (null == g) return null;
-            let n = M[g.widgetTemplateId];
+            let n = F[g.widgetTemplateId];
             if (null == n) return null;
             let i = (e = r ?? null, t = g ?? null, null == e ? {
                 mode: "skeleton",
@@ -550,24 +550,24 @@ let Q = Object.assign(function(e) {
                 numberFormat: l
             } : {
                 mode: "from_data",
-                variables: Object.fromEntries([...e.profile?.data?.dynamic?.map(e => e.type === d.f.STRING ? [e.name, {
+                variables: Object.fromEntries([...e.profile?.data?.dynamic?.map(e => e.type === c.f.STRING ? [e.name, {
                     type: "string",
                     value: e.value
-                }] : e.type === d.f.NUMBER ? [e.name, {
+                }] : e.type === c.f.NUMBER ? [e.name, {
                     type: "number",
                     value: e.value
-                }] : e.type === d.f.MEDIA ? [e.name, {
+                }] : e.type === c.f.MEDIA ? [e.name, {
                     type: "unfurled_media",
-                    media: (0, N.Uv)(e.value)
-                }] : (0, k.xb)(e)) ?? [], ...Object.entries({
+                    media: (0, C.Uv)(e.value)
+                }] : (0, O.xb)(e)) ?? [], ...Object.entries({
                     username: e.profile?.username,
                     ...e.profile?.data?.primary
-                }).filter(k.QE).map(e => {
+                }).filter(O.QE).map(e => {
                     let [t, n] = e;
                     if ("object" == typeof n) {
                         if ("url" in n && "proxy_url" in n && "loading_state" in n) return [t, {
                             type: "unfurled_media",
-                            media: (0, N.Uv)(n)
+                            media: (0, C.Uv)(n)
                         }]
                     } else if ("string" == typeof n) return [t, {
                         type: "string",
@@ -578,7 +578,7 @@ let Q = Object.assign(function(e) {
                         value: n
                     }];
                     return null
-                }).filter(k.Vq)]),
+                }).filter(O.Vq)]),
                 config: t,
                 numberFormat: l
             });
@@ -613,10 +613,10 @@ let Q = Object.assign(function(e) {
             hasData: null != r,
             components: j
         });
-    return null == er ? null : (0, i.jsxs)(L.A, {
+    return null == er ? null : (0, i.jsxs)(w.A, {
         ...e,
-        userId: T.id,
-        widget: E,
+        userId: v.id,
+        widget: T,
         className: s()(D.Y5, S && D.aK),
         headerTitle: ea,
         headerClassName: D.wx,
@@ -627,7 +627,7 @@ let Q = Object.assign(function(e) {
             action: B
         }) : null,
         children: [(0, i.jsx)(J, {
-            widget: E,
+            widget: T,
             children: (0, i.jsx)(U, {
                 component: er
             })

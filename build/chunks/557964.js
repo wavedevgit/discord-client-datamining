@@ -14,21 +14,21 @@ function r(e) {
         widget: n,
         guildId: r,
         channelId: o,
-        disableInteraction: d,
-        ...c
+        disableInteraction: c,
+        ...d
     } = e;
     return (0, i.jsx)(l.A, {
         userId: t.id,
         widget: n,
-        disableInteraction: d,
-        ...c,
+        disableInteraction: c,
+        ...d,
         children: n.games.length > 0 ? (0, i.jsx)(s.A, {
             userId: t.id,
             widgetType: n.type,
             games: n.games,
             guildId: r,
             channelId: o,
-            disableInteraction: d
+            disableInteraction: c
         }) : (0, i.jsx)(a.A, {
             widget: n
         })

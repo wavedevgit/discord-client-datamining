@@ -9,10 +9,10 @@ var a = n(398590),
     s = n(345942),
     r = n(183555),
     o = n(913453),
-    d = n(51943),
-    c = n(782505),
+    c = n(51943),
+    d = n(782505),
     u = n(515054),
-    g = n(499044);
+    g = n(913329);
 
 function m(e) {
     let {
@@ -21,13 +21,13 @@ function m(e) {
     } = e, {
         trackUserProfileAction: m
     } = (0, r.NJ)(), {
-        mutualGuilds: x,
-        isFetching: p
+        mutualGuilds: p,
+        isFetching: x
     } = (0, o.A)(t);
     return (0, i.jsx)(u.K, {
         className: g.XG,
         fade: !0,
-        children: null == x && p ? Array.from({
+        children: null == p && x ? Array.from({
             length: 10
         }).map((e, t) => (0, i.jsxs)("div", {
             className: g.Y7,
@@ -38,12 +38,12 @@ function m(e) {
                 width: 135,
                 opacity: .08
             })]
-        }, t)) : (null != x || p) && x?.length !== 0 ? x?.map(e => {
+        }, t)) : (null != p || x) && p?.length !== 0 ? p?.map(e => {
             let {
                 guild: l,
                 nick: r
             } = e;
-            return (0, i.jsx)(d.A, {
+            return (0, i.jsx)(c.A, {
                 user: t,
                 guild: l,
                 nick: r,
@@ -53,6 +53,6 @@ function m(e) {
                     }), (0, s.u)(l.id), n(), (0, a.jH)()
                 }
             }, l.id)
-        }) : (0, i.jsx)(c.jB, {})
+        }) : (0, i.jsx)(d.jB, {})
     })
 }

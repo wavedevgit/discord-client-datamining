@@ -1,5 +1,4 @@
 /** chunk id: 77178 params = (module,exports,require) **/
-"use strict";
 e.exports = {
     RV: "akaBadge__488b1",
     wm: "nicknames__488b1",

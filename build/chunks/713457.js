@@ -33,7 +33,7 @@ var a = n(627968),
     O = n(545986),
     R = n(654487),
     w = n(985018),
-    D = n(376936);
+    D = n(416783);
 let P = [{
     value: R.fO.DESKTOP,
     get label() {

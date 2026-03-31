@@ -1,6 +1,6 @@
 /** chunk id: 633098 params = (module,exports,require) **/
 n.d(t, {
-    A: () => v
+    A: () => E
 });
 var i = n(627968),
     a = n(64700),
@@ -8,29 +8,29 @@ var i = n(627968),
     s = n.n(l),
     r = n(382222),
     o = n(311907),
-    d = n(397927),
-    c = n(775602),
+    c = n(397927),
+    d = n(775602),
     u = n(203982),
     g = n(183555),
     m = n(289173),
-    x = n(958805),
-    p = n(61881),
+    p = n(958805),
+    x = n(61881),
     f = n(606758),
     h = n(518477),
     _ = n(652215),
     A = n(985018),
-    I = n(440693);
+    I = n(471138);
 let j = "user-profile-save-reset-toolbar-label";
 
-function v(e) {
+function E(e) {
     let {
         className: t
     } = e, {
         trackUserProfileEditSaved: n
-    } = (0, g.NJ)(), [l, v] = a.useState(!1), T = (0, o.yK)([p.A], () => p.A.getSaveablePendingWidgets() ?? []), E = (0, o.yK)([p.A], () => p.A.getChangedWidgets()), b = (0, o.yK)([p.A], () => p.A.getRemovedWidgets()), N = (0, o.bG)([p.A], () => p.A.hasUnsavedChanges()), S = (0, o.bG)([p.A], () => p.A.canSaveChanges()), y = (0, o.bG)([p.A], () => p.A.isSubmitting), C = (0, o.bG)([c.A], () => c.A.useReducedMotion), R = (0, d.pnh)(N, {
+    } = (0, g.NJ)(), [l, E] = a.useState(!1), v = (0, o.yK)([x.A], () => x.A.getSaveablePendingWidgets() ?? []), T = (0, o.yK)([x.A], () => x.A.getChangedWidgets()), b = (0, o.yK)([x.A], () => x.A.getRemovedWidgets()), C = (0, o.bG)([x.A], () => x.A.hasUnsavedChanges()), S = (0, o.bG)([x.A], () => x.A.canSaveChanges()), N = (0, o.bG)([x.A], () => x.A.isSubmitting), y = (0, o.bG)([d.A], () => d.A.useReducedMotion), R = (0, c.pnh)(C, {
         from: {
             opacity: 0,
-            y: 80 * !C
+            y: 80 * !y
         },
         enter: {
             opacity: 1,
@@ -38,30 +38,30 @@ function v(e) {
         },
         leave: {
             opacity: 0,
-            y: 80 * !C
+            y: 80 * !y
         }
     });
     a.useEffect(() => {
         let e = null;
 
         function t() {
-            v(!0), e = setTimeout(() => v(!1), 500)
+            E(!0), e = setTimeout(() => E(!1), 500)
         }
         return u._.subscribe(_.jej.EMPHASIZE_NOTICE, t), () => {
             u._.unsubscribe(_.jej.EMPHASIZE_NOTICE, t), null !== e && clearTimeout(e)
         }
     }, []), a.useEffect(() => {
-        N && d.ORC.announce(A.intl.string(A.t["0Y/qkL"]))
-    }, [N]);
-    let k = a.useCallback(async () => {
-            if (p.A.canSaveChanges()) {
+        C && c.ORC.announce(A.intl.string(A.t["0Y/qkL"]))
+    }, [C]);
+    let O = a.useCallback(async () => {
+            if (x.A.canSaveChanges()) {
                 try {
-                    await x.A.savePendingWidgets(T)
+                    await p.A.savePendingWidgets(v)
                 } catch (e) {
                     (0, f.XA)(h.jM.WIDGET_SAVE_FAILURE);
                     return
                 }
-                for (let e of E) {
+                for (let e of T) {
                     let t = {
                         widgetEdited: e.type,
                         isWidgetRemoved: !1
@@ -73,9 +73,9 @@ function v(e) {
                     isWidgetRemoved: !0
                 })
             }
-        }, [T, E, b, n]),
-        O = a.useCallback(() => {
-            x.A.clearPendingWidgets()
+        }, [v, T, b, n]),
+        k = a.useCallback(() => {
+            p.A.clearPendingWidgets()
         }, []);
     return R((e, n) => n ? (0, i.jsx)(r.animated.div, {
         className: t,
@@ -85,7 +85,7 @@ function v(e) {
                 [I.hO]: l
             }),
             "aria-labelledby": j,
-            children: [(0, i.jsx)(d.Text, {
+            children: [(0, i.jsx)(c.Text, {
                 id: j,
                 variant: "text-md/medium",
                 color: "text-strong",
@@ -93,19 +93,19 @@ function v(e) {
                 children: A.intl.string(A.t["/lQiX/"])
             }), (0, i.jsxs)("div", {
                 className: I.o1,
-                children: [(0, i.jsx)(d.Button, {
+                children: [(0, i.jsx)(c.Button, {
                     size: "sm",
                     variant: "secondary",
                     text: A.intl.string(A.t.yBZMsQ),
-                    onClick: O,
-                    disabled: !N || y
-                }), (0, i.jsx)(d.Button, {
+                    onClick: k,
+                    disabled: !C || N
+                }), (0, i.jsx)(c.Button, {
                     size: "sm",
                     variant: "primary",
                     text: A.intl.string(A.t["R3BPH+"]),
-                    onClick: k,
-                    loading: y,
-                    disabled: !S || !N || y
+                    onClick: O,
+                    loading: N,
+                    disabled: !S || !C || N
                 })]
             })]
         })

@@ -15,7 +15,7 @@ var s = n(284009),
     m = n(532624),
     g = n(9302),
     _ = n(985018),
-    A = n(502040);
+    A = n(511767);
 
 function x() {
     let e = (0, a.bG)([m.Ay], () => m.Ay.getOverlayKeybind()),

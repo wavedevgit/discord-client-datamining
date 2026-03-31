@@ -1,66 +1,66 @@
 /** chunk id: 635995 params = (module,exports,require) **/
-n.d(t, {
+n.d(e, {
     In: () => u,
-    T0: () => A,
-    fY: () => h
+    T0: () => _,
+    fY: () => E
 });
 var i = n(627968);
 n(64700);
 var l = n(503698),
-    s = n.n(l),
-    a = n(732955),
-    r = n(397927),
+    r = n.n(l),
+    s = n(732955),
+    a = n(397927),
     o = n(818348),
     c = n(985018),
-    d = n(843194);
-let u = e => {
+    d = n(553202);
+let u = t => {
         let {
-            children: t
-        } = e;
-        return (0, i.jsx)(r.Heading, {
+            children: e
+        } = t;
+        return (0, i.jsx)(a.Heading, {
             variant: "heading-sm/medium",
             color: "text-strong",
             className: d.ut,
-            children: t
+            children: e
         })
     },
-    h = e => {
+    E = t => {
         let {
-            text: t,
+            text: e,
             onClick: n
-        } = e;
-        return (0, i.jsx)(a.$nd, {
+        } = t;
+        return (0, i.jsx)(s.$nd, {
             onClick: n,
-            text: t,
+            text: e,
             size: "sm",
-            icon: r.tvc,
+            icon: a.tvc,
             variant: "secondary"
         })
     };
 
-function A(e) {
+function _(t) {
     let {
-        className: t,
+        className: e,
         ref: n,
         children: l,
-        onClick: a
-    } = e;
-    return (0, i.jsx)(r.NPJ, {
+        onClick: s
+    } = t;
+    return (0, i.jsx)(a.NPJ, {
         theme: o.NJ.DARKER,
-        children: e => (0, i.jsxs)("div", {
+        children: t => (0, i.jsxs)("div", {
             ref: n,
-            className: s()(d.lm, e, t),
+            className: r()(d.lm, t, e),
             children: [(0, i.jsx)("div", {
                 className: d.qZ,
                 children: l
-            }), (0, i.jsx)(r.DUT, {
+            }), (0, i.jsx)(a.DUT, {
                 focusProps: {
                     offset: 6
                 },
                 className: d.b,
-                onClick: a,
+                onClick: s,
                 "aria-label": c.intl.string(c.t.WAI6xu),
-                children: (0, i.jsx)(r.PGe, {
+                children: (0, i.jsx)(a.PGe, {
                     size: "sm"
                 })
             })]

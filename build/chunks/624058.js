@@ -1,5 +1,4 @@
 /** chunk id: 624058 params = (module,exports,require) **/
-"use strict";
 e.exports = {
     G9: "progressBarContainer_baf530",
     A1: "progressBarText_baf530",

@@ -19,9 +19,9 @@ var i = n(627968),
     h = n(544028),
     p = n(652215),
     T = n(986238),
-    f = n(909453),
-    E = n(8350),
-    S = n(885106);
+    f = n(136044),
+    E = n(903281),
+    S = n(153335);
 let b = ["discord_web", "discord_marketing", "discord_developers", "discord_ios", "discord_android"],
     C = [{
         id: "branch",

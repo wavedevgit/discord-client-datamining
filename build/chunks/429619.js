@@ -14,7 +14,7 @@ var i = n(627968),
     m = n(652215),
     g = n(788868),
     _ = n(985018),
-    A = n(378926);
+    A = n(362941);
 let x = () => {
     let {
         analyticsLocations: e

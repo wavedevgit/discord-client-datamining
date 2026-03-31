@@ -1,5 +1,4 @@
 /** chunk id: 453323 params = (module,exports,require) **/
-"use strict";
 e.exports = {
     nd: "panel__5dec7",
     rf: "body__5dec7",

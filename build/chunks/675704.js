@@ -1,11 +1,11 @@
 /** chunk id: 675704 params = (module,exports,require) **/
-n.d(t, {
-    R: () => s
+a.d(e, {
+    R: () => n
 });
-var i = n(793322),
-    r = n(186111);
-let s = {
+var i = a(793322),
+    s = a(186111);
+let n = {
     binds: ["mod+k", "mod+t"],
     comboKeysBindGlobal: !0,
-    action: () => (r.A.hasLayers() || (0, i.WU)(), !1)
+    action: () => (s.A.hasLayers() || (0, i.WU)(), !1)
 }

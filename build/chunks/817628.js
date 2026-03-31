@@ -1,5 +1,4 @@
 /** chunk id: 817628 params = (module,exports,require) **/
-"use strict";
 e.exports = {
     oM: "hoverRoll__0263c",
     EE: "forceHover__0263c",

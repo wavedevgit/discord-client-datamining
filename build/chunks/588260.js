@@ -14,8 +14,8 @@ var a = n(627968),
     m = n(84904),
     x = n(954506),
     h = n(758836),
-    f = n(985018),
-    g = n(536083);
+    g = n(985018),
+    f = n(829968);
 let _ = l.createContext({
         closeModal: () => {},
         trackAction: () => {}
@@ -28,15 +28,15 @@ let _ = l.createContext({
             product: d
         } = (0, s.q)(t, !0), m = l.useContext(o.v3), {
             closeModal: x,
-            trackAction: f
+            trackAction: g
         } = l.useContext(_), p = l.useCallback(() => {
-            f(u.Ws.DiscordCollectiblesShopItem), x(), (0, r.Cz)({
+            g(u.Ws.DiscordCollectiblesShopItem), x(), (0, r.Cz)({
                 analyticsLocations: [i.A.GAME_PROFILE],
                 analyticsSource: i.A.GAME_PROFILE,
                 initialProductSkuId: t,
                 tab: h.G2.CATALOG
             })
-        }, [f, x, t]);
+        }, [g, x, t]);
         if (null == d) return null;
         let {
             flattenProductVariants: v,
@@ -50,7 +50,7 @@ let _ = l.createContext({
             children: (0, a.jsx)(c.A, {
                 skuId: t,
                 aspectRatio: n,
-                cardClassName: g.N,
+                cardClassName: f.N,
                 onClickCard: p,
                 hideWishlistButton: !0,
                 hidePrice: !0,
@@ -65,7 +65,7 @@ function v(e) {
         detectedGame: t,
         closeModal: n,
         trackAction: s
-    } = e, c = t.shopCollectionIds?.[0], o = (0, m.j)(c), g = l.useCallback(() => {
+    } = e, c = t.shopCollectionIds?.[0], o = (0, m.j)(c), f = l.useCallback(() => {
         s(u.Ws.DiscordCollectiblesShop), n(), (0, r.Cz)({
             analyticsLocations: [i.A.GAME_PROFILE],
             analyticsSource: i.A.GAME_PROFILE,
@@ -78,8 +78,8 @@ function v(e) {
     return 0 === o.length ? null : (0, a.jsx)(_.Provider, {
         value: v,
         children: (0, a.jsx)(x.A, {
-            title: f.intl.string(f.t["5DYPT8"]),
-            onClickViewAll: g,
+            title: g.intl.string(g.t["5DYPT8"]),
+            onClickViewAll: f,
             children: (0, a.jsx)(d.A, {
                 gap: "md",
                 children: o.map(e => (0, a.jsx)(p, {

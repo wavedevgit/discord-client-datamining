@@ -20,7 +20,7 @@ var i = n(627968),
     p = n(93055),
     T = n(652215),
     f = n(788868),
-    E = n(665606),
+    E = n(525736),
     S = n(985018);
 let b = g.A.getArticleURL(T.MVz.FAVORITES_GUILD);
 

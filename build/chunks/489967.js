@@ -10,7 +10,7 @@ var a = n(627968),
     o = n(37962),
     d = n(881520),
     c = n(670455),
-    u = n(573624);
+    u = n(574385);
 let m = [{
     id: "seconds",
     label: "second(s)",

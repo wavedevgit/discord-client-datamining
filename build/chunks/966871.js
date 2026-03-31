@@ -3,25 +3,25 @@ n.d(t, {
     A: () => A
 });
 var i = n(627968),
-    a = n(64700),
-    l = n(503698),
-    r = n.n(l),
+    l = n(64700),
+    a = n(503698),
+    r = n.n(a),
     s = n(319354),
     o = n(435371),
     d = n(397927),
     c = n(573435),
     u = n(624848);
-let A = a.forwardRef(function(e, t) {
+let A = l.forwardRef(function(e, t) {
     let {
         icon: n,
-        onClick: a,
-        selected: l = !1,
+        onClick: l,
+        selected: a = !1,
         showBadge: A = !1,
         disabled: h = !1,
         color: _,
         colorClass: m,
-        tooltip: g,
-        "aria-label": p,
+        tooltip: p,
+        "aria-label": g,
         "aria-expanded": E,
         "aria-haspopup": I,
         "data-jump-section": f
@@ -32,18 +32,18 @@ let A = a.forwardRef(function(e, t) {
     });
     return (0, i.jsx)(o.m_, {
         position: "bottom",
-        text: g,
+        text: p,
         ariaHidden: !0,
         children: (0, i.jsx)(d.DUT, {
             innerRef: t,
             tag: "div",
-            onClick: h ? void 0 : a,
+            onClick: h ? void 0 : l,
             className: r()(u.vk, {
-                [u.wH]: l,
+                [u.wH]: a,
                 [u.r9]: h
             }),
             role: "button",
-            "aria-label": null != p ? p : g,
+            "aria-label": null != g ? g : p,
             "aria-haspopup": I,
             "aria-expanded": E,
             "data-jump-section": f,

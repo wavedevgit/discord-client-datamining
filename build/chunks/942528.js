@@ -14,10 +14,10 @@ var a = n(627968),
     m = n(562153),
     x = n(420706),
     h = n(322789),
-    f = n(506326),
-    g = n(985018),
-    _ = n(504225),
-    p = n(282063);
+    g = n(506326),
+    f = n(985018),
+    _ = n(930676),
+    p = n(325952);
 let v = e => {
     let {
         entry: t,
@@ -28,17 +28,17 @@ let v = e => {
         customCTA: j,
         popoutClassname: E,
         popoutPosition: C = "right"
-    } = e, I = l.useRef(null), N = (0, s.bG)([d.A, o.A], () => o.A.getChannel(d.A.getChannelId())), b = (0, s.bG)([u.default], () => u.default.getUser(t.author_id)), {
+    } = e, I = l.useRef(null), b = (0, s.bG)([d.A, o.A], () => o.A.getChannel(d.A.getChannelId())), N = (0, s.bG)([u.default], () => u.default.getUser(t.author_id)), {
         nick: S,
         avatar: T
     } = l.useMemo(() => {
-        let e = b?.getAvatarURL(N?.guild_id, 48, !1);
+        let e = N?.getAvatarURL(b?.guild_id, 48, !1);
         return {
-            nick: m.Ay.getName(N?.guild_id, N?.id, b),
+            nick: m.Ay.getName(b?.guild_id, b?.id, N),
             avatar: e
         }
-    }, [b, N]);
-    return null == b ? null : (0, a.jsx)(c.YNO, {
+    }, [N, b]);
+    return null == N ? null : (0, a.jsx)(c.YNO, {
         targetElementRef: I,
         position: C,
         renderPopout: e => {
@@ -80,7 +80,7 @@ let v = e => {
                     children: [(0, a.jsx)("img", {
                         className: _.my,
                         src: T,
-                        alt: g.intl.formatToPlainString(g.t.IzVXxY, {
+                        alt: f.intl.formatToPlainString(f.t.IzVXxY, {
                             userName: S
                         })
                     }), (0, a.jsx)("div", {
@@ -92,8 +92,8 @@ let v = e => {
                                 color: "text-strong",
                                 lineClamp: 1,
                                 children: S
-                            }), (0, a.jsx)(f.mG, {
-                                location: f.N5.APP_LAUNCHER,
+                            }), (0, a.jsx)(g.mG, {
+                                location: g.N5.APP_LAUNCHER,
                                 children: h.n.map((e, n) => (0, a.jsx)(e, {
                                     entry: t
                                 }, n))

@@ -14,12 +14,12 @@ var a = n(627968),
     m = n(46054),
     x = n(409626),
     h = n(21091),
-    f = n(385064),
-    g = n(305080),
+    g = n(385064),
+    f = n(305080),
     _ = n(954506),
     p = n(985018),
-    v = n(95225),
-    A = n(782691);
+    v = n(576404),
+    A = n(830684);
 
 function j(e, t) {
     return m.A.parse(e, !0, {
@@ -36,14 +36,14 @@ function E(e) {
         message: n,
         channelId: i,
         onCardClick: o
-    } = e, [u, m] = l.useState(!1), x = null != n.mediaUrl, h = "video" === n.mediaType, f = "main" === t, g = l.useCallback(() => m(!0), []), _ = l.useCallback(e => {
+    } = e, [u, m] = l.useState(!1), x = null != n.mediaUrl, h = "video" === n.mediaType, g = "main" === t, f = l.useCallback(() => m(!0), []), _ = l.useCallback(e => {
         if (!((0, s.vq)(e.target, HTMLAnchorElement) || (0, s.vq)(e.target, HTMLSpanElement) && (0, s.vq)(e.target.parentElement, HTMLAnchorElement))) return o(n.id)
     }, [o, n.id]);
     return (0, a.jsxs)(c.DUT, {
-        className: f ? v.cG : v.IU,
+        className: g ? v.cG : v.IU,
         onClick: _,
         children: [x && (0, a.jsxs)("div", {
-            className: f ? v._v : v.eZ,
+            className: g ? v._v : v.eZ,
             children: [h ? (0, a.jsx)(d.A, {
                 src: n.mediaUrl,
                 poster: function(e) {
@@ -54,16 +54,17 @@ function E(e) {
                         return
                     }
                 }(n.mediaUrl),
-                className: r()(f ? v.fk : v.v, u ? v.RT : v.YC),
+                className: r()(g ? v.fk : v.v, u ? v.RT : v.YC),
                 muted: !0,
                 preload: "metadata",
                 playsInline: !0,
-                onLoadedData: g
+                onLoadedData: f
             }) : (0, a.jsx)("img", {
                 src: n.mediaUrl,
-                className: r()(f ? v.fk : v.v, u ? v.RT : v.YC),
+                className: r()(g ? v.fk : v.v, u ? v.RT : v.YC),
                 alt: "",
-                onLoad: g
+                onLoad: f,
+                draggable: !1
             }), !u && (0, a.jsx)("div", {
                 className: v.ns,
                 children: (0, a.jsx)(c.y$y, {
@@ -72,14 +73,14 @@ function E(e) {
                 })
             })]
         }), (0, a.jsxs)("div", {
-            className: f ? v.GT : v.s4,
+            className: g ? v.GT : v.s4,
             children: [null != n.title && (0, a.jsx)(c.Heading, {
                 variant: "heading-md/bold",
                 color: "text-strong",
-                className: f ? v.KX : v._N,
+                className: g ? v.KX : v._N,
                 children: j(n.title, i)
             }), n.body.length > 0 && (0, a.jsx)("div", {
-                className: r()(v.h_, f ? v.My : v.Gd, A.PT),
+                className: r()(v.h_, g ? v.My : v.Gd, A.PT),
                 children: j(n.body, i)
             })]
         })]
@@ -95,13 +96,13 @@ function C(e) {
     } = (0, o.Ay)(), {
         officialInvite: r,
         closeModal: s
-    } = (0, g.c)(), {
+    } = (0, f.c)(), {
         messages: c,
         guildId: d,
         channelId: m
     } = (0, h.A)(t), A = l.useCallback(() => {
         let e = r?.guild?.id ?? d;
-        null != e && (n(x.Ws.Announcements), s(), (0, f.A)({
+        null != e && (n(x.Ws.Announcements), s(), (0, g.A)({
             invite: r,
             guildId: e,
             channelId: m,
@@ -109,7 +110,7 @@ function C(e) {
         }))
     }, [n, s, r, d, m, i]), j = l.useCallback(e => {
         let t = r?.guild?.id ?? d;
-        null != t && (n(x.Ws.AnnouncementsItem), s(), (0, f.A)({
+        null != t && (n(x.Ws.AnnouncementsItem), s(), (0, g.A)({
             invite: r,
             guildId: t,
             channelId: m,
@@ -120,7 +121,7 @@ function C(e) {
     if (null == m || 0 === c.length) return null;
     let C = 2 !== c.length,
         I = C ? c[0] : null,
-        N = C ? c.slice(1) : c;
+        b = C ? c.slice(1) : c;
     return (0, a.jsx)(_.A, {
         title: p.intl.string(p.t.B0BV3Y),
         onClickViewAll: A,
@@ -131,9 +132,9 @@ function C(e) {
                 message: I,
                 channelId: m,
                 onCardClick: j
-            }), N.length > 0 && (0, a.jsx)(u.A, {
+            }), b.length > 0 && (0, a.jsx)(u.A, {
                 gap: 16,
-                children: N.map(e => (0, a.jsx)(E, {
+                children: b.map(e => (0, a.jsx)(E, {
                     variant: "small",
                     message: e,
                     channelId: m,

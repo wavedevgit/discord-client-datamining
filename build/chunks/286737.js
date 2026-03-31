@@ -12,7 +12,7 @@ var a = n(627968),
     d = n(409626),
     u = n(305080),
     m = n(985018),
-    x = n(290490);
+    x = n(282639);
 
 function h(e) {
     let {
@@ -20,8 +20,8 @@ function h(e) {
         analyticsLocations: n
     } = e, {
         fetchedAuthorization: h,
-        hasAlreadyLinked: f,
-        canStartAuthorization: g,
+        hasAlreadyLinked: g,
+        canStartAuthorization: f,
         startAuthorization: _,
         connectionApp: p,
         officialInvite: v
@@ -30,7 +30,7 @@ function h(e) {
             analyticsLocations: n
         })
     }, [t, _, n]);
-    if (!h || null == p || !g || f || null == A) return null;
+    if (!h || null == p || !f || g || null == A) return null;
     let E = v?.guild != null ? o.Ay.getGuildSplashURL({
         id: v.guild.id,
         splash: v.guild.splash
@@ -47,7 +47,8 @@ function h(e) {
             children: [null != E ? (0, a.jsx)("img", {
                 className: x.ll,
                 src: E,
-                alt: ""
+                alt: "",
+                draggable: !1
             }) : (0, a.jsx)("div", {
                 className: x.sB,
                 children: (0, a.jsx)(s.default, {

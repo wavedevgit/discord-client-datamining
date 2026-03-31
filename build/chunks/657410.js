@@ -1,5 +1,4 @@
 /** chunk id: 657410 params = (module,exports,require) **/
-"use strict";
 e.exports = {
     QO: "ragingDemon_ac6454",
     RK: "visible_ac6454",

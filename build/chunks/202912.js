@@ -1,5 +1,4 @@
 /** chunk id: 202912 params = (module,exports,require) **/
-"use strict";
 e.exports = {
     cc: "messagePopoutContent_c00127",
     jC: "popoutContainer_c00127",

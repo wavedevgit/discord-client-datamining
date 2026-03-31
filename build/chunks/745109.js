@@ -26,7 +26,7 @@ var i = n(627968),
     C = n(652215),
     N = n(355097),
     v = n(985018),
-    I = n(127790);
+    I = n(807483);
 let j = {
     [N.Eq.USER_PROFILE]: "main_profile_tab",
     [N.Eq.GUILD]: "guild_profile_tab"

@@ -8,13 +8,13 @@ var i = n(627968),
     s = n(311907),
     r = n(397927),
     o = n(178213),
-    d = n(86638),
-    c = n(287809),
+    c = n(86638),
+    d = n(287809),
     u = n(788593),
     g = n(742710),
     m = n(463259),
-    x = n(18983),
-    p = n(563919);
+    p = n(18983),
+    x = n(214456);
 
 function f(e) {
     let {
@@ -27,7 +27,7 @@ function f(e) {
         isDragging: e.isDragging(),
         item: e.getItem(),
         sourceClientOffset: e.getSourceClientOffset()
-    })), A = (0, s.bG)([c.default], () => c.default.getCurrentUser()), I = (0, r.VUy)(), j = a.useMemo(() => null == A || null == h ? null : function(e, t, n) {
+    })), A = (0, s.bG)([d.default], () => d.default.getCurrentUser()), I = (0, r.VUy)(), j = a.useMemo(() => null == A || null == h ? null : function(e, t, n) {
         let {
             id: a,
             itemType: l,
@@ -39,7 +39,7 @@ function f(e) {
                 getWidth: n
             } = s, a = n?.() ?? 432;
             return (0, i.jsx)("div", {
-                className: p.dt,
+                className: x.dt,
                 style: {
                     width: a
                 },
@@ -61,7 +61,7 @@ function f(e) {
                     width: r
                 },
                 children: (0, i.jsx)(u.A, {
-                    className: p.XJ,
+                    className: x.XJ,
                     imageSrc: e,
                     gameName: n,
                     applicationId: a,
@@ -77,7 +77,7 @@ function f(e) {
                 getWidth: a
             } = s, l = a?.() ?? 400;
             return (0, i.jsx)("div", {
-                className: p.xB,
+                className: x.xB,
                 style: {
                     width: l
                 },
@@ -94,13 +94,13 @@ function f(e) {
                 item: e
             } = s;
             return (0, i.jsx)("div", {
-                className: p.Xm,
-                children: n ? (0, i.jsx)(d.A, {
+                className: x.Xm,
+                children: n ? (0, i.jsx)(c.A, {
                     item: e,
                     wishlistOwner: t,
                     wishlistId: null,
                     isDragging: !0
-                }) : (0, i.jsx)(x.A, {
+                }) : (0, i.jsx)(p.A, {
                     item: e,
                     profileOwner: t,
                     wishlistId: null,
@@ -112,33 +112,33 @@ function f(e) {
             })
         }
         return null
-    }(h, A, n), [h, A, n]), v = a.useRef(null), T = a.useCallback(() => {
+    }(h, A, n), [h, A, n]), E = a.useRef(null), v = a.useCallback(() => {
         if (null == t.current) return;
         let e = t.current.getBoundingClientRect();
-        v.current = {
+        E.current = {
             x: e.left,
             y: e.top
         }
     }, [t]);
     if (a.useEffect(() => {
             if (!f) {
-                v.current = null;
+                E.current = null;
                 return
             }
-            null == v.current && T()
-        }, [f, T]), !0 !== f || null == _ || null == j) return null;
-    null == v.current && T();
+            null == E.current && v()
+        }, [f, v]), !0 !== f || null == _ || null == j) return null;
+    null == E.current && v();
     let {
-        x: E,
+        x: T,
         y: b
-    } = v.current ?? {
+    } = E.current ?? {
         x: 0,
         y: 0
-    }, N = _.x - E - 60 * !!I, S = _.y - b;
+    }, C = _.x - T - 60 * !!I, S = _.y - b;
     return (0, i.jsx)("div", {
-        className: p.kL,
+        className: x.kL,
         style: {
-            transform: `translate3d(${N}px, ${S}px, 0)`
+            transform: `translate3d(${C}px, ${S}px, 0)`
         },
         children: j
     })

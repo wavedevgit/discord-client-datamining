@@ -9,8 +9,8 @@ var a = n(503698),
     s = n(311907),
     r = n(397927),
     o = n(961350),
-    d = n(296227),
-    c = n(848152);
+    c = n(296227),
+    d = n(180415);
 
 function u(e) {
     let {
@@ -19,23 +19,23 @@ function u(e) {
         widget: a,
         disableInteraction: s = !1,
         title: o,
-        subtitle: d,
+        subtitle: c,
         actionButtons: u = [],
         className: m
     } = e;
     return (0, i.jsxs)("div", {
-        className: l()(c.U1, m),
+        className: l()(d.U1, m),
         children: [(0, i.jsxs)("div", {
-            className: c.DD,
+            className: d.DD,
             children: [(0, i.jsx)(r.Heading, {
                 variant: "heading-sm/medium",
                 color: "text-default",
                 id: n,
                 children: o
-            }), null != d && (0, i.jsx)(r.Text, {
+            }), null != c && (0, i.jsx)(r.Text, {
                 variant: "text-xs/normal",
                 color: "text-subtle",
-                children: d
+                children: c
             })]
         }), (0, i.jsx)(g, {
             widget: a,
@@ -54,14 +54,14 @@ function g(e) {
         userId: l
     } = e, r = (0, s.bG)([o.default], () => o.default.getId());
     return a ? null : null != n && n.length > 0 ? (0, i.jsx)("div", {
-        className: c.o1,
+        className: d.o1,
         children: n
     }) : r !== l ? (0, i.jsx)("div", {
-        className: c.o1,
-        children: (0, i.jsx)(d.A, {
+        className: d.o1,
+        children: (0, i.jsx)(c.A, {
             widget: t,
             userId: l,
-            className: c.AQ
+            className: d.AQ
         })
     }) : null
 }

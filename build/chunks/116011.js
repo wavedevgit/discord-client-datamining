@@ -1,6 +1,6 @@
 /** chunk id: 116011 params = (module,exports,require) **/
 r.d(t, {
-    oL: () => E,
+    oL: () => j,
     wx: () => S
 });
 var a = r(627968),
@@ -19,13 +19,13 @@ var a = r(627968),
     h = r(699443),
     b = r(729640),
     x = r(652215),
-    g = r(653624),
+    g = r(284498),
     C = r(985018),
-    A = r(276478),
+    A = r(616825),
     R = r(870378),
     v = r(208556),
-    j = r(8496);
-let E = {
+    E = r(8496);
+let j = {
         [f.XY]: {
             title: g.default.LsJ9hj,
             titleParams: {
@@ -49,7 +49,7 @@ let E = {
                 dark: (0, a.jsx)(h.a1, {}),
                 light: (0, a.jsx)(h.Gn, {})
             },
-            asset: j.A
+            asset: E.A
         },
         [f.Cs]: {
             title: C.t["9N8obd"],
@@ -80,7 +80,7 @@ let E = {
             })]
         })
     },
-    y = e => {
+    I = e => {
         let {
             children: t
         } = e;
@@ -92,7 +92,7 @@ let E = {
             })
         })
     },
-    I = e => {
+    y = e => {
         let {
             recurrence: t
         } = e, r = (0, a.jsx)(s.rOg, {
@@ -180,8 +180,8 @@ let E = {
                 displayCTAInDedicatedFooter: b = !1
             } = e,
             [g, R] = n.useState(c.code),
-            [v, j] = n.useState(!1),
-            S = (t = c.partnerId, r = (0, i.bG)([o.A], () => (0, s.Mwr)(o.A.theme)), null == (d = E[t]) ? null : r ? d.logos.dark : d.logos.light),
+            [v, E] = n.useState(!1),
+            S = (t = c.partnerId, r = (0, i.bG)([o.A], () => (0, s.Mwr)(o.A.theme)), null == (d = j[t]) ? null : r ? d.logos.dark : d.logos.light),
             T = null == g;
         return (0, a.jsxs)("div", {
             className: A.lA,
@@ -209,7 +209,7 @@ let E = {
                         canBeClaimed: T,
                         hasClaimError: v,
                         setCode: R,
-                        setHasClaimError: j
+                        setHasClaimError: E
                     })]
                 }), p && (0, a.jsx)("div", {
                     className: A.R4,
@@ -222,18 +222,18 @@ let E = {
                         zoomable: !1
                     })
                 })]
-            }), b && (0, a.jsx)(N, {}), null != g && (0, a.jsx)(I, {
+            }), b && (0, a.jsx)(N, {}), null != g && (0, a.jsx)(y, {
                 recurrence: {
                     ...c,
                     code: g
                 }
-            }), b && null == g && (0, a.jsx)(y, {
+            }), b && null == g && (0, a.jsx)(I, {
                 children: (0, a.jsx)(P, {
                     recurrence: c,
                     canBeClaimed: T,
                     hasClaimError: v,
                     setCode: R,
-                    setHasClaimError: j,
+                    setHasClaimError: E,
                     className: A.qx
                 })
             })]

@@ -1,7 +1,7 @@
 /** chunk id: 94836 params = (module,exports,require) **/
 n.d(t, {
     A: () => E,
-    a: () => N
+    a: () => b
 });
 var a = n(627968),
     l = n(64700),
@@ -15,13 +15,13 @@ var a = n(627968),
     m = n(248643),
     x = n(256905),
     h = n(652176),
-    f = n(371794),
-    g = n(409626),
+    g = n(371794),
+    f = n(409626),
     _ = n(368546),
     p = n(985018),
-    v = n(282063),
-    A = n(426401),
-    j = n(791129);
+    v = n(325952),
+    A = n(894704),
+    j = n(240892);
 
 function E(e) {
     let {
@@ -65,7 +65,7 @@ function E(e) {
                         ringClassName: A.jR
                     },
                     onClick: () => {
-                        n(g.Ws.ClickImage), (0, x.R)({
+                        n(f.Ws.ClickImage), (0, x.R)({
                             items: r,
                             startingIndex: t,
                             shouldHideMediaOptions: !0,
@@ -124,7 +124,8 @@ let C = l.memo(function(e) {
                     className: j.xn,
                     alt: p.intl.formatToPlainString(p.t.COYYrn, {
                         game: u
-                    })
+                    }),
+                    draggable: !1
                 }), "VIDEO" === t.type && (0, a.jsx)("div", {
                     className: j.UZ,
                     children: (0, a.jsx)(c.DMX, {
@@ -181,19 +182,19 @@ let C = l.memo(function(e) {
         })
     });
 
-function N(e) {
+function b(e) {
     let {
         detectedGame: t,
         trackAction: n
-    } = e, [i, r] = l.useState(0), [c, m] = l.useState(null), [h, _] = l.useState(t.artwork), [v, A] = l.useState(t.screenshots), E = l.useRef(null), N = l.useRef(null), b = (0, s.bG)([d.A], () => d.A.useReducedMotion);
+    } = e, [i, r] = l.useState(0), [c, m] = l.useState(null), [h, _] = l.useState(t.artwork), [v, A] = l.useState(t.screenshots), E = l.useRef(null), b = l.useRef(null), N = (0, s.bG)([d.A], () => d.A.useReducedMotion);
     (h !== t.artwork || v !== t.screenshots) && (_(t.artwork), A(t.screenshots), r(0));
     let S = l.useMemo(() => {
             let e = (t.trailers ?? []).map(e => {
-                    let t = (0, f.YE)(e.application_id, e.id, e.width, "mp4");
+                    let t = (0, g.YE)(e.application_id, e.id, e.width, "mp4");
                     return {
                         url: t,
                         proxyUrl: t,
-                        poster: (0, f.YE)(e.application_id, e.id, e.width, "webp"),
+                        poster: (0, g.YE)(e.application_id, e.id, e.width, "webp"),
                         type: "VIDEO",
                         width: e.width,
                         height: e.height
@@ -219,7 +220,7 @@ function N(e) {
         [O, R] = l.useState(!1),
         G = l.useRef(null),
         M = l.useCallback(() => {
-            n(y ? g.Ws.ClickTrailer : g.Ws.ClickImage);
+            n(y ? f.Ws.ClickTrailer : f.Ws.ClickImage);
             let e = E.current,
                 t = G.current,
                 a = null != e && !e.paused,
@@ -234,7 +235,7 @@ function N(e) {
                         autoPlay: !!n && a,
                         autoMute: !n || l,
                         initialTimeSec: n ? i : void 0,
-                        videoRef: N
+                        videoRef: b
                     }
                 }
                 return e
@@ -246,7 +247,7 @@ function N(e) {
                 location: "GameProfileMedia",
                 onIndexChange: r,
                 onClose: () => {
-                    let e = N.current,
+                    let e = b.current,
                         t = G.current,
                         n = null != e ? !e.paused : a;
                     e?.pause(), null != t && null != e ? (t.setTime(e.currentTime, !1), n && t.setPlay(!0), t.setMuted(e.muted)) : n && t?.setPlay(!0), R(n)
@@ -265,7 +266,7 @@ function N(e) {
             className: j.ND,
             children: (0, a.jsx)(I, {
                 item: k,
-                reducedMotion: b,
+                reducedMotion: N,
                 videoRef: E,
                 mediaPlayerRef: G,
                 onPlay: P,
@@ -274,7 +275,7 @@ function N(e) {
             }, `${T}-${k.url}`)
         }) : (0, a.jsxs)("div", {
             className: j.wp,
-            children: [null != c && !b && (0, a.jsx)("div", {
+            children: [null != c && !N && (0, a.jsx)("div", {
                 className: j.Jy,
                 onAnimationEnd: V,
                 children: (0, a.jsx)("img", {

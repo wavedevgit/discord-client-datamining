@@ -1,5 +1,4 @@
 /** chunk id: 823476 params = (module,exports,require) **/
-"use strict";
 e.exports = {
     kL: "container_f0df50",
     Zg: "emoji_f0df50",

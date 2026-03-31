@@ -9,20 +9,20 @@ var i = n(627968),
     s = n.n(l),
     r = n(158954),
     o = n(311907),
-    d = n(793574),
-    c = n(688810),
+    c = n(793574),
+    d = n(688810),
     u = n(362490),
     g = n(429913),
     m = n(183555),
-    x = n(622543),
-    p = n(985018),
-    f = n(808104);
+    p = n(622543),
+    x = n(985018),
+    f = n(413525);
 
 function h(e) {
     let {
         applicationId: t,
         size: n = "default"
-    } = e, a = (0, o.bG)([x.A], () => x.A.getApplicationWidgetConfig(t));
+    } = e, a = (0, o.bG)([p.A], () => p.A.getApplicationWidgetConfig(t));
     return (0, i.jsxs)("div", {
         className: s()(f.kL, {
             [f.PG]: "small" === n
@@ -70,19 +70,19 @@ function _(e) {
         trackUserProfileAction: l
     } = (0, m.NJ)(), s = (0, g.h)(t), {
         hasAlreadyLinked: o,
-        canStartAuthorization: x,
+        canStartAuthorization: p,
         startAuthorization: h,
         fetched: _
     } = (0, u.RD)(s), {
         analyticsLocations: A
-    } = (0, c.Ay)(d.A.USER_PROFILE_APPLICATION_WIDGET), I = a.useCallback(() => {
-        x && (l({
+    } = (0, d.Ay)(c.A.USER_PROFILE_APPLICATION_WIDGET), I = a.useCallback(() => {
+        p && (l({
             action: "PRESS_APPLICATION_WIDGET_PLACEHOLDER_CONNECT",
             applicationId: t
         }), h({
             analyticsLocations: A
         }))
-    }, [x, l, t, h, A]);
+    }, [p, l, t, h, A]);
     return "default" !== n || null == s ? null : (0, i.jsxs)("div", {
         className: f.qr,
         children: [(0, i.jsx)(r.A5T, {
@@ -90,11 +90,11 @@ function _(e) {
         }), (0, i.jsx)(r.EYj, {
             variant: "text-sm/medium",
             color: "text-subtle",
-            children: _ ? o ? p.intl.format(p.t.wiyuG9, {
+            children: _ ? o ? x.intl.format(x.t.wiyuG9, {
                 applicationName: s.name
-            }) : x ? p.intl.format(p.t.RNWFOQ, {
+            }) : p ? x.intl.format(x.t.RNWFOQ, {
                 onConnect: I
-            }) : p.intl.string(p.t["9TX4UT"]) : (0, i.jsx)("div", {
+            }) : x.intl.string(x.t["9TX4UT"]) : (0, i.jsx)("div", {
                 className: f.bg
             })
         })]

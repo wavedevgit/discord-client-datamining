@@ -1,5 +1,4 @@
 /** chunk id: 198797 params = (module,exports,require) **/
-"use strict";
 e.exports = {
     p_: "list_c441f0",
     uW: "activeThreadsList_c441f0",

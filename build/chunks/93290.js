@@ -1,5 +1,4 @@
 /** chunk id: 93290 params = (module,exports,require) **/
-"use strict";
 e.exports = {
     kL: "container__877f0",
     Fi: "lottieContainer__877f0",

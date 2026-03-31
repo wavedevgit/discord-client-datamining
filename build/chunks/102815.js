@@ -21,17 +21,17 @@ var a = r(627968),
     g = r(788868),
     C = r(652215),
     A = r(985018),
-    R = r(130474);
+    R = r(806305);
 let v = e => {
     let {
         id: t,
         title: r,
         description: s,
         caption: v,
-        pillText: E,
+        pillText: j,
         primaryAsset: N,
-        primaryAssetClassName: y,
-        backgroundAssetUrl: I,
+        primaryAssetClassName: I,
+        backgroundAssetUrl: y,
         progress: P,
         ctaIcon: S,
         ctaIconPosition: T,
@@ -67,7 +67,7 @@ let v = e => {
             }))
         }, [O, r]),
         K = D && H === g.xc.FP_ONLY,
-        Z = !(0, l.isEmpty)(I),
+        Z = !(0, l.isEmpty)(y),
         z = Z && (0, c.q)(F),
         X = (0, u.rdh)(u.LU0.colors.BACKGROUND_BASE_LOW).hex(),
         $ = K || !(0, l.isEmpty)(w);
@@ -89,29 +89,29 @@ let v = e => {
                 [R.j8]: L
             }),
             cardStyle: {
-                backgroundImage: Z ? `url(${I})` : void 0,
+                backgroundImage: Z ? `url(${y})` : void 0,
                 backgroundSize: "cover",
                 backgroundPosition: "center",
                 backgroundOrigin: "padding-box",
                 backgroundClip: "padding-box"
             },
-            children: [!(0, l.isEmpty)(E) && (0, a.jsx)(u.Text, {
+            children: [!(0, l.isEmpty)(j) && (0, a.jsx)(u.Text, {
                 variant: "text-xs/bold",
                 color: "badge-expressive-text-default",
                 className: R.Io,
-                children: E
+                children: j
             }), (0, a.jsxs)("div", {
                 className: R.qh,
                 children: [L && (0, a.jsx)("div", {
                     className: R.gW,
                     "aria-hidden": "true",
-                    children: (0, a.jsx)(j, {
+                    children: (0, a.jsx)(E, {
                         asset: N,
-                        className: y
+                        className: I
                     })
-                }), (0, a.jsx)(j, {
+                }), (0, a.jsx)(E, {
                     asset: N,
-                    className: y
+                    className: I
                 })]
             }), (0, a.jsxs)("div", {
                 className: R.hQ,
@@ -186,7 +186,7 @@ let v = e => {
     })
 };
 
-function j(e) {
+function E(e) {
     let {
         asset: t,
         className: r

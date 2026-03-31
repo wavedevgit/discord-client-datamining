@@ -14,9 +14,9 @@ var a = n(627968),
     u = n(503364),
     m = n(305080),
     x = n(985018),
-    h = n(605408);
+    h = n(230845);
 
-function f(e) {
+function g(e) {
     let {
         game: t
     } = e, n = t.supplementalData, [i] = l.useState(() => Math.random()), r = l.useMemo(() => {
@@ -43,7 +43,7 @@ function f(e) {
     })
 }
 
-function g(e) {
+function f(e) {
     let {
         game: t
     } = e, n = t.supplementalData, l = (n?.genres ?? t.genres ?? []).map(c.du).join(", ");
@@ -131,7 +131,7 @@ let v = function(e) {
         C = E?.name ?? t.name ?? n?.name,
         I = n.getIconURL(80);
     return (0, a.jsxs)(a.Fragment, {
-        children: [(0, a.jsx)(f, {
+        children: [(0, a.jsx)(g, {
             game: t
         }), (0, a.jsxs)("div", {
             ref: p,
@@ -143,7 +143,8 @@ let v = function(e) {
                 children: [null != I && (0, a.jsx)("img", {
                     src: I,
                     alt: "",
-                    className: h.V$
+                    className: h.V$,
+                    draggable: !1
                 }), (0, a.jsxs)("div", {
                     className: h.hm,
                     children: [(0, a.jsx)(s.DZT, {
@@ -178,7 +179,7 @@ let v = function(e) {
                     ref: v,
                     variant: "heading-xxl/semibold",
                     children: C
-                }), (0, a.jsx)(g, {
+                }), (0, a.jsx)(f, {
                     game: t
                 })]
             })]

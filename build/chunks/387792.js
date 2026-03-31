@@ -1,5 +1,4 @@
 /** chunk id: 387792 params = (module,exports,require) **/
-"use strict";
 e.exports = {
     Ie: "empty__99e7c",
     TK: "headerText__99e7c",

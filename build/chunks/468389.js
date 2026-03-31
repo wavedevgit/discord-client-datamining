@@ -159,7 +159,7 @@ function X(i, t) {
                         if (null != i && i.type === k.rbe.GUILD_VOICE) return (0, a.mMO)(async () => {
                             let {
                                 default: t
-                            } = await Promise.all([e.e("43600"), e.e("28136"), e.e("72469")]).then(e.bind(e, 234355));
+                            } = await Promise.all([e.e("43600"), e.e("28136"), e.e("67893")]).then(e.bind(e, 234355));
                             return e => (0, n.jsx)(t, {
                                 ...e,
                                 guild: s,

@@ -43,7 +43,7 @@ var i = n(627968),
     B = n(386467),
     H = n(490358),
     F = n(961973),
-    Y = n(140354),
+    Y = n(917973),
     W = n(440293),
     K = n(551036),
     q = n(46533),
@@ -90,7 +90,7 @@ var i = n(627968),
     eM = n(758836),
     ej = n(539916),
     ew = n(613057),
-    eU = n(325593);
+    eU = n(373838);
 let eG = (0, c.Fe)({
         createPromise: () => Promise.resolve().then(n.bind(n, 500831)),
         webpackId: 500831
@@ -317,8 +317,8 @@ let eG = (0, c.Fe)({
         } = e;
         return (0, ef.pX)(eP.BVt.ME), (0, $.A)(t.params.inviteCode), null
     },
-    e9 = () => (0, i.jsx)(E.A, {}),
-    e6 = () => (0, i.jsx)(I.A, {}),
+    e6 = () => (0, i.jsx)(E.A, {}),
+    e9 = () => (0, i.jsx)(I.A, {}),
     e5 = () => function(e) {
         let {
             tab: t
@@ -601,12 +601,12 @@ function ta() {
                                     }
                                 }), (0, i.jsx)(x.A, {
                                     path: eP.BVt.APPLICATION_LIBRARY,
-                                    render: e9,
+                                    render: e6,
                                     impressionName: d.ImpressionNames.APPLICATION_LIBRARY,
                                     disableTrack: !0
                                 }), (0, i.jsx)(x.A, {
                                     path: eP.BVt.APPLICATION_STORE,
-                                    render: e6,
+                                    render: e9,
                                     impressionName: d.ImpressionNames.APPLICATION_STORE,
                                     disableTrack: !0
                                 }), (0, i.jsx)(x.A, {

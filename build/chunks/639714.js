@@ -15,21 +15,21 @@ var a = n(627968),
     m = n(970163),
     x = n(184989),
     h = n(486020),
-    f = n(240248),
-    g = n(409626),
+    g = n(240248),
+    f = n(409626),
     _ = n(305080),
     p = n(652215),
     v = n(985018),
-    A = n(282063),
-    j = n(682209),
-    E = n(862809);
+    A = n(325952),
+    j = n(757850),
+    E = n(408214);
 
 function C(e) {
     let {
         detectedGame: t,
         trackAction: n,
         onInviteResolved: i,
-        closeModal: f
+        closeModal: g
     } = e, [_, E] = l.useState(), C = (0, c.bG)([x.A], () => _?.guild?.id != null && x.A.isMember(_?.guild?.id)), I = l.useMemo(() => t.websites?.find(e => {
         let {
             category: t
@@ -47,16 +47,16 @@ function C(e) {
         };
         null != I && e(I.url)
     }, [I, i, _]);
-    let N = l.useCallback(() => {
-        null != _ && (n(g.Ws.JoinOfficialServer), f(), d.h.dispatch({
+    let b = l.useCallback(() => {
+        null != _ && (n(f.Ws.JoinOfficialServer), g(), d.h.dispatch({
             type: "INVITE_MODAL_OPEN",
             invite: _,
             code: _.code,
             context: p.BRT.APP
         }))
-    }, [_, n, f]);
+    }, [_, n, g]);
     if (null == _ || null == _.guild || !_.guild.features.includes(p.GuildFeatures.VERIFIED)) return null;
-    let b = h.Ay.getGuildIconURL({
+    let N = h.Ay.getGuildIconURL({
         id: _.guild.id,
         icon: _.guild.icon,
         size: 32
@@ -72,7 +72,7 @@ function C(e) {
             className: r()(A.nM, A.mX),
             children: [(0, a.jsx)("img", {
                 className: j.$f,
-                src: b,
+                src: N,
                 alt: v.intl.formatToPlainString(v.t.xm6W9D, {
                     guildName: _.guild.name
                 })
@@ -98,7 +98,7 @@ function C(e) {
         }), (0, a.jsx)(o.Button, {
             variant: "secondary",
             text: C ? v.intl.string(v.t.cEnaWx) : v.intl.string(v.t.XpeFYr),
-            onClick: N,
+            onClick: b,
             fullWidth: !0
         })]
     })
@@ -114,7 +114,7 @@ function I(e) {
         officialInvite: s,
         isMember: c
     } = (0, _.c)(), m = l.useCallback(() => {
-        null != s && (t(g.Ws.JoinOfficialServer), n(), d.h.dispatch({
+        null != s && (t(f.Ws.JoinOfficialServer), n(), d.h.dispatch({
             type: "INVITE_MODAL_OPEN",
             invite: s,
             code: s.code,
@@ -137,10 +137,11 @@ function I(e) {
             src: x,
             alt: v.intl.formatToPlainString(v.t.xm6W9D, {
                 guildName: s.guild.name
-            })
+            }),
+            draggable: !1
         }),
         I = j ? E.To : E.Kt,
-        N = j ? E.yj : E.FS;
+        b = j ? E.yj : E.FS;
     return (0, a.jsxs)("div", {
         className: E.uW,
         children: [(0, a.jsx)(o.Heading, {
@@ -153,7 +154,8 @@ function I(e) {
             children: [!j && null != A && (0, a.jsx)("img", {
                 className: E.ll,
                 src: A,
-                alt: ""
+                alt: "",
+                draggable: !1
             }), (0, a.jsxs)("div", {
                 className: E.hQ,
                 children: [(0, a.jsxs)("div", {
@@ -165,7 +167,7 @@ function I(e) {
                             children: C
                         })
                     }), (0, a.jsxs)("div", {
-                        className: N,
+                        className: b,
                         children: [(0, a.jsxs)("div", {
                             className: E.YS,
                             children: [(0, a.jsx)(u.A, {
@@ -176,7 +178,7 @@ function I(e) {
                                 color: "text-default",
                                 children: s.guild.name
                             })]
-                        }), !(0, f.uJ)(s.guild?.description) && (0, a.jsx)(o.Text, {
+                        }), !(0, g.uJ)(s.guild?.description) && (0, a.jsx)(o.Text, {
                             variant: "text-sm/medium",
                             color: "text-muted",
                             children: s.guild?.description

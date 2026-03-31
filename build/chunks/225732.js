@@ -14,8 +14,8 @@ var a = n(627968),
     m = n(379834),
     x = n(311907),
     h = n(990078),
-    f = n(397927),
-    g = n(964486),
+    g = n(397927),
+    f = n(964486),
     _ = n(359549),
     p = n(793574),
     v = n(688810),
@@ -24,8 +24,8 @@ var a = n(627968),
     E = n(429913),
     C = n(590703),
     I = n(708197),
-    N = n(583846),
-    b = n(885151),
+    b = n(583846),
+    N = n(885151),
     S = n(928550),
     T = n(657331),
     k = n(773669),
@@ -63,13 +63,13 @@ var a = n(627968),
     es = n(771004),
     ec = n(424994),
     eo = n(985018),
-    ed = n(282063),
-    eu = n(213863);
+    ed = n(325952),
+    eu = n(364620);
 let em = () => (0, a.jsxs)("div", {
     className: ed.uv,
-    children: [(0, a.jsx)(f.Y3C, {
+    children: [(0, a.jsx)(g.Y3C, {
         size: "xxs"
-    }), (0, a.jsx)(f.Text, {
+    }), (0, a.jsx)(g.Text, {
         variant: "text-sm/normal",
         color: "text-muted",
         children: eo.intl.string(eo.t.kAlUsy)
@@ -102,7 +102,7 @@ function ex(e) {
         hash: t.iconHash,
         size: 160,
         format: y.QB ? "webp" : "png"
-    }), h = O.default.extractTimestamp(n.id), g = 7 >= c()().diff(c()(h), "days"), _ = i.some(e => (0, N.CZ)(e) === m.m.GLOBAL), p = t.name ?? n?.name;
+    }), h = O.default.extractTimestamp(n.id), f = 7 >= c()().diff(c()(h), "days"), _ = i.some(e => (0, b.CZ)(e) === m.m.GLOBAL), p = t.name ?? n?.name;
     return (0, a.jsxs)(a.Fragment, {
         children: [(0, a.jsx)("div", {
             className: ed.is,
@@ -129,7 +129,7 @@ function ex(e) {
             }), (0, a.jsx)("div", {
                 className: r()(ed.nM, ed.Lc, ed.Z3),
                 children: (0, a.jsxs)("div", {
-                    children: [(0, a.jsx)(f.Heading, {
+                    children: [(0, a.jsx)(g.Heading, {
                         variant: "heading-xl/bold",
                         children: p
                     }), (0, a.jsxs)("div", {
@@ -141,16 +141,16 @@ function ex(e) {
                             alt: eo.intl.formatToPlainString(eo.t["nh+jWk"], {
                                 game: p
                             })
-                        }), (0, a.jsx)(f.Text, {
+                        }), (0, a.jsx)(g.Text, {
                             variant: "text-sm/semibold",
                             color: "text-muted",
                             children: o
-                        }), g && (0, a.jsx)(f.Text, {
+                        }), f && (0, a.jsx)(g.Text, {
                             variant: "eyebrow",
                             className: ed.Ad,
                             children: eo.intl.string(eo.t.y2b7CA)
                         }), _ && (0, a.jsxs)(a.Fragment, {
-                            children: [(0, a.jsx)(f.Text, {
+                            children: [(0, a.jsx)(g.Text, {
                                 variant: "text-sm/medium",
                                 children: " \xb7 "
                             }), (0, a.jsx)(em, {})]
@@ -196,7 +196,7 @@ function eh(e) {
     })
 }
 
-function ef(e) {
+function eg(e) {
     let {
         game: t,
         trackAction: n,
@@ -226,7 +226,7 @@ function ef(e) {
     })
 }
 
-function eg(e) {
+function ef(e) {
     let {
         game: t,
         trackAction: n,
@@ -302,8 +302,8 @@ function e_(e) {
     return (0, a.jsx)(h.m, {
         text: eo.intl.string(eo.t.JVwWva),
         position: "top",
-        children: (0, a.jsx)(f.Button, {
-            icon: f.hpF,
+        children: (0, a.jsx)(g.Button, {
+            icon: g.hpF,
             text: eo.intl.string(eo.t["jaYS/h"]),
             variant: "overlay-secondary",
             onClick: s,
@@ -358,7 +358,7 @@ function ev(e) {
                 analyticsLocations: d,
                 trackAction: s
             })]
-        }), (0, a.jsx)(f.Heading, {
+        }), (0, a.jsx)(g.Heading, {
             variant: "heading-md/bold",
             children: eo.intl.string(eo.t.CI0vSJ)
         }), (0, a.jsxs)("div", {
@@ -379,7 +379,7 @@ function ev(e) {
             }), (0, a.jsx)(z.A, {
                 application: o,
                 trackAction: s
-            }), (0, a.jsx)(f.Text, {
+            }), (0, a.jsx)(g.Text, {
                 variant: "text-xxs/normal",
                 children: eo.intl.format(eo.t.pch2Jw, {
                     igdbLink: ec.s8
@@ -455,7 +455,7 @@ function ej(e) {
     } = (0, v.Ay)(p.A.GAME_PROFILE), _ = l.useMemo(() => (0, G.u9)(), []), A = (0, x.yK)([P.A], () => (P.A.getSimilarGames(t) ?? []).slice(0, 25)), [j, S] = l.useState(null), T = (0, V.s)(t), [y, L] = l.useState(null), O = (0, E.h)(t), {
         data: R,
         refetch: w
-    } = (0, b.k)(t), D = R?.supplementalData ?? null, W = D?.name ?? O?.name, U = (e, a) => {
+    } = (0, N.k)(t), D = R?.supplementalData ?? null, W = D?.name ?? O?.name, U = (e, a) => {
         (0, G.Tn)({
             gameName: W ?? "",
             applicationId: t,
@@ -466,7 +466,7 @@ function ej(e) {
             source: n
         })
     };
-    return ((0, g.Ay)(() => {
+    return ((0, f.Ay)(() => {
         (0, G.rw)({
             source: n,
             viewId: _,
@@ -488,10 +488,10 @@ function ej(e) {
                 }
             }
         })()
-    }, [t, A]), (0, g.Ay)(() => () => {
+    }, [t, A]), (0, f.Ay)(() => () => {
         let e = Date.now(),
             n = T.map(t => {
-                let n = (0, N.JM)(t) ? (0, N.W6)(t, e) : (0, N.aJ)(t, m);
+                let n = (0, b.JM)(t) ? (0, b.W6)(t, e) : (0, b.aJ)(t, m);
                 return JSON.stringify({
                     item_id: t.id,
                     trait: t.traits,
@@ -509,20 +509,20 @@ function ej(e) {
         })
     }), null == R || null == D || null == O) ? null : (0, a.jsx)(v.f5, {
         value: h,
-        children: (0, a.jsx)(f.dWK, {
+        children: (0, a.jsx)(g.dWK, {
             transitionState: s,
             onClose: c,
             size: "xl",
             children: (0, a.jsx)("div", {
                 className: r()(u, ed.fn),
-                children: (0, a.jsxs)(f.HOs, {
+                children: (0, a.jsxs)(g.HOs, {
                     orientation: "auto",
                     children: [(0, a.jsx)(ex, {
                         detectedGame: D,
                         application: O,
                         entries: T,
                         trackAction: U
-                    }), (0, a.jsx)(f.Fmo, {
+                    }), (0, a.jsx)(g.Fmo, {
                         children: (0, a.jsxs)("div", {
                             className: r()(ed.Qs, ed.rb),
                             children: [(0, a.jsx)(eh, {
@@ -571,7 +571,7 @@ function eE(e) {
         analyticsLocations: O
     } = (0, v.Ay)(p.A.GAME_PROFILE), R = (0, E.h)(t), M = (0, V.s)(t), {
         data: P
-    } = (0, b.k)(t), w = P?.supplementalData ?? null, F = w?.name ?? P?.name ?? R?.name ?? "", {
+    } = (0, N.k)(t), w = P?.supplementalData ?? null, F = w?.name ?? P?.name ?? R?.name ?? "", {
         hasAlreadyLinked: U,
         canStartAuthorization: Y,
         fetched: B,
@@ -593,7 +593,7 @@ function eE(e) {
             source: n
         })
     };
-    (0, g.Ay)(() => {
+    (0, f.Ay)(() => {
         (0, G.rw)({
             source: n,
             viewId: L,
@@ -602,10 +602,10 @@ function eE(e) {
             authorId: i,
             profileType: G.HV.FullProfile
         }), (0, I.He)()
-    }), (0, g.Ay)(() => () => {
+    }), (0, f.Ay)(() => () => {
         let e = Date.now(),
             n = M.map(t => {
-                let n = (0, N.JM)(t) ? (0, N.W6)(t, e) : (0, N.aJ)(t, y);
+                let n = (0, b.JM)(t) ? (0, b.W6)(t, e) : (0, b.aJ)(t, y);
                 return JSON.stringify({
                     item_id: t.id,
                     trait: t.traits,
@@ -650,7 +650,7 @@ function eE(e) {
         [el, ei] = l.useState(!1);
     return null == P || null == w || null == R ? null : (0, a.jsx)(v.f5, {
         value: O,
-        children: (0, a.jsx)(f.dWK, {
+        children: (0, a.jsx)(g.dWK, {
             transitionState: s,
             onClose: c,
             size: "xxl",
@@ -661,7 +661,7 @@ function eE(e) {
                     ref: ee,
                     children: [(0, a.jsx)("div", {
                         className: r()(eu.n9, el && eu.rT)
-                    }), (0, a.jsxs)(f.HOs, {
+                    }), (0, a.jsxs)(g.HOs, {
                         orientation: "auto",
                         children: [(0, a.jsx)(J.A, {
                             game: P,
@@ -669,10 +669,10 @@ function eE(e) {
                             onClose: c,
                             trackAction: Q,
                             onScrollStateChange: ei
-                        }), (0, a.jsx)(f.Fmo, {
+                        }), (0, a.jsx)(g.Fmo, {
                             children: m ? (0, a.jsxs)("div", {
                                 className: eu.jC,
-                                children: [(0, a.jsx)(ef, {
+                                children: [(0, a.jsx)(eg, {
                                     game: P,
                                     closeModal: ea,
                                     trackAction: Q
@@ -687,7 +687,7 @@ function eE(e) {
                                 })]
                             }) : (0, a.jsx)("div", {
                                 className: eu.b9,
-                                children: (0, a.jsx)(eg, {
+                                children: (0, a.jsx)(ef, {
                                     game: P,
                                     application: R,
                                     trackAction: Q,

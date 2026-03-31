@@ -8,19 +8,19 @@ var i = n(627968),
     s = n(793574),
     r = n(688810),
     o = n(975571),
-    d = n(993401),
-    c = n(652215),
+    c = n(993401),
+    d = n(652215),
     u = n(985018);
-let g = o.A.getArticleURL(c.MVz.CUSTOM_PROFILES_WISHLIST);
+let g = o.A.getArticleURL(d.MVz.CUSTOM_PROFILES_WISHLIST);
 
 function m(e) {
     let {
         isOwner: t,
         isWishlistPublic: n,
         onToggleVisibility: o
-    } = e, c = a.useRef(null), {
+    } = e, d = a.useRef(null), {
         analyticsLocations: m
-    } = (0, r.Ay)(s.A.USER_PROFILE_WISHLIST), x = a.useMemo(() => t ? (0, i.jsxs)(l.rXV, {
+    } = (0, r.Ay)(s.A.USER_PROFILE_WISHLIST), p = a.useMemo(() => t ? (0, i.jsxs)(l.rXV, {
         children: [(0, i.jsx)(l.fPC, {
             id: "wishlist-privacy-setting",
             label: u.intl.string(u.t.b2nFyA),
@@ -38,10 +38,10 @@ function m(e) {
             action: () => window.open(g)
         })]
     }) : null, [t, n, o]);
-    return null == x ? null : (0, i.jsx)(r.f5, {
+    return null == p ? null : (0, i.jsx)(r.f5, {
         value: m,
         children: (0, i.jsx)(l.YNO, {
-            targetElementRef: c,
+            targetElementRef: d,
             renderPopout: e => {
                 let {
                     closePopout: t
@@ -52,11 +52,11 @@ function m(e) {
                     onSelect: void 0,
                     onClose: t,
                     "aria-label": u.intl.string(u.t.GdNkvG),
-                    children: x
+                    children: p
                 })
             },
-            children: e => (0, i.jsx)(d.q3, {
-                buttonRef: c,
+            children: e => (0, i.jsx)(c.q3, {
+                buttonRef: d,
                 icon: l.jNK,
                 tooltipText: u.intl.string(u.t["UKOtz+"]),
                 action: "PRESS_OPTIONS",

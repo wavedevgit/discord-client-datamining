@@ -1,5 +1,4 @@
 /** chunk id: 647126 params = (module,exports,require) **/
-"use strict";
 e.exports = {
     wL: "searchHeader_ae7890",
     g$: "searchHeaderWithSubtitle_ae7890",

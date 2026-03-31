@@ -1,5 +1,4 @@
 /** chunk id: 332741 params = (module,exports,require) **/
-"use strict";
 e.exports = {
     zr: "root__6981d",
     QX: "tileWrapper__6981d",

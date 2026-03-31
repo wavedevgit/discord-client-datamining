@@ -1,5 +1,4 @@
 /** chunk id: 795638 params = (module,exports,require) **/
-"use strict";
 e.exports = {
     UV: "keyboardShortcutsModal_f061f6",
     _$: "noBackground_f061f6",

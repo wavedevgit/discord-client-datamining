@@ -1,5 +1,4 @@
 /** chunk id: 403010 params = (module,exports,require) **/
-"use strict";
 e.exports = {
     jC: "popoutContainer_e2f0c6",
     yt: "streamPreviewWrapper_e2f0c6",

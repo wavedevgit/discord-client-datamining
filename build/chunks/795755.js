@@ -9,14 +9,14 @@ var a = n(540185),
     s = n(961350),
     r = n(735321),
     o = n(483558),
-    d = n(34442),
-    c = n(253798),
+    c = n(34442),
+    d = n(253798),
     u = n(25530),
     g = n(155400),
     m = n(844206),
-    x = n(557964),
-    p = n(987140),
-    f = n(671924);
+    p = n(557964),
+    x = n(987140),
+    f = n(286981);
 
 function h(e) {
     let {
@@ -35,7 +35,7 @@ function h(e) {
                 ...n
             });
         case a.x.WANT_TO_PLAY_GAMES:
-            return (0, i.jsx)(x.A, {
+            return (0, i.jsx)(p.A, {
                 widget: t,
                 ...n
             });
@@ -57,28 +57,28 @@ function _(e) {
         ...u
     } = e, {
         setExpanded: g
-    } = (0, c.B)(), {
+    } = (0, d.B)(), {
         shouldShowSuggestions: m,
-        handleDismissSuggestions: x
+        handleDismissSuggestions: p
     } = (0, o.q)(t), _ = (0, l.bG)([s.default], () => s.default.getId() === n.id), A = _ && !a && m, I = (0, r.L)(t), j = (0, r.FM)(t, {
         isCurrentUser: _
-    }), v = (0, r.uA)(t), T = 1 === (0, r.cv)(t.type);
+    }), E = (0, r.uA)(t), v = 1 === (0, r.cv)(t.type);
     return (0, i.jsx)(h, {
         widget: t,
         user: n,
         disableInteraction: a,
         headerTitle: I,
         headerSubtitle: j,
-        headerActionButtons: _ && !T ? [(0, i.jsx)(d.IU, {
-            disabled: v,
+        headerActionButtons: _ && !v ? [(0, i.jsx)(c.IU, {
+            disabled: E,
             widgetType: t.type,
             widget: t,
             onAddGame: () => g(!0)
         }, `${t.type}-browse-games-popout`)] : void 0,
-        trailingContent: A && (0, i.jsx)(p.A, {
+        trailingContent: A && (0, i.jsx)(x.A, {
             userId: n.id,
             widgetType: t.type,
-            onDismiss: x,
+            onDismiss: p,
             className: f.r
         }),
         ...u
@@ -90,7 +90,7 @@ function A(e) {
         widget: t,
         ...n
     } = e;
-    return (0, i.jsx)(c.M, {
+    return (0, i.jsx)(d.M, {
         widgetType: t.type,
         children: (0, i.jsx)(_, {
             widget: t,

@@ -12,8 +12,8 @@ var i = n(627968),
     d = n(46054),
     u = n(742589),
     h = n(985018),
-    A = n(170028),
-    _ = n(782691);
+    A = n(708700),
+    _ = n(830684);
 
 function m(e) {
     return e.matches("a") || "highlight" === e.className || e.className.includes("mention")
@@ -43,7 +43,7 @@ class g extends l.Component {
         (0, c.L3)(e, async () => {
             let {
                 default: e
-            } = await Promise.all([n.e("70303"), n.e("17425"), n.e("40878")]).then(n.bind(n, 340968));
+            } = await Promise.all([n.e("86097"), n.e("17425"), n.e("40878")]).then(n.bind(n, 340968));
             return n => (0, i.jsx)(e, {
                 ...n,
                 channel: t,

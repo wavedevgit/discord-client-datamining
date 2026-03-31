@@ -1,5 +1,4 @@
 /** chunk id: 109766 params = (module,exports,require) **/
-"use strict";
 e.exports = {
     kL: "container__12f17",
     ap: "darkText__12f17",

@@ -1,9 +1,9 @@
 /** chunk id: 782505 params = (module,exports,require) **/
 n.d(t, {
-    IA: () => v,
-    jB: () => T,
-    qv: () => N,
-    zf: () => E
+    IA: () => E,
+    jB: () => v,
+    qv: () => C,
+    zf: () => T
 });
 var i = n(627968),
     a = n(64700),
@@ -11,20 +11,20 @@ var i = n(627968),
     s = n(397927),
     r = n(308528),
     o = n(736653),
-    d = n(573648),
-    c = n(780964),
+    c = n(573648),
+    d = n(780964),
     u = n(840065),
     g = n(562153),
     m = n(993401),
-    x = n(652215),
-    p = n(985018),
-    f = n(160514);
-let h = [() => p.intl.string(p.t.madJdE), () => p.intl.string(p.t.NYmfoP), () => p.intl.string(p.t.R2PaCg), () => p.intl.string(p.t.laSR8h), () => p.intl.string(p.t.DnsJE8)],
-    _ = [() => p.intl.string(p.t.nFSbeE), () => p.intl.string(p.t.gTcxOz), () => p.intl.string(p.t["8T0wYj"]), () => p.intl.string(p.t.BIHl1g), () => p.intl.string(p.t["jhBm0+"])],
-    A = [() => p.intl.string(p.t.AyMGXA), () => p.intl.string(p.t.aAFW7V), e => p.intl.formatToPlainString(p.t.h2g0cM, {
+    p = n(652215),
+    x = n(985018),
+    f = n(601927);
+let h = [() => x.intl.string(x.t.madJdE), () => x.intl.string(x.t.NYmfoP), () => x.intl.string(x.t.R2PaCg), () => x.intl.string(x.t.laSR8h), () => x.intl.string(x.t.DnsJE8)],
+    _ = [() => x.intl.string(x.t.nFSbeE), () => x.intl.string(x.t.gTcxOz), () => x.intl.string(x.t["8T0wYj"]), () => x.intl.string(x.t.BIHl1g), () => x.intl.string(x.t["jhBm0+"])],
+    A = [() => x.intl.string(x.t.AyMGXA), () => x.intl.string(x.t.aAFW7V), e => x.intl.formatToPlainString(x.t.h2g0cM, {
         name: e
-    }), () => p.intl.string(p.t.rrYh58), () => p.intl.string(p.t["HX3K+F"]), () => p.intl.string(p.t["/yW3aY"]), () => p.intl.string(p.t["PmL/v0"]), () => p.intl.string(p.t.IALa3h), () => p.intl.string(p.t.HRcTFL), () => p.intl.string(p.t.NuCqPt), () => p.intl.string(p.t["M1tw+4"]), () => p.intl.string(p.t.UBm1y2), () => p.intl.string(p.t.Cu95PQ), () => p.intl.string(p.t["R/wFuh"]), () => p.intl.string(p.t.HQPAVT), () => p.intl.string(p.t.YolGh4)],
-    I = [x.fg2.STEAM, x.fg2.PLAYSTATION, x.fg2.XBOX, x.fg2.TWITCH, x.fg2.BATTLENET, x.fg2.LEAGUE_OF_LEGENDS, x.fg2.EPIC_GAMES, x.fg2.RIOT_GAMES, x.fg2.ROBLOX, x.fg2.SPOTIFY, x.fg2.YOUTUBE, x.fg2.CRUNCHYROLL, x.fg2.BUNGIE];
+    }), () => x.intl.string(x.t.rrYh58), () => x.intl.string(x.t["HX3K+F"]), () => x.intl.string(x.t["/yW3aY"]), () => x.intl.string(x.t["PmL/v0"]), () => x.intl.string(x.t.IALa3h), () => x.intl.string(x.t.HRcTFL), () => x.intl.string(x.t.NuCqPt), () => x.intl.string(x.t["M1tw+4"]), () => x.intl.string(x.t.UBm1y2), () => x.intl.string(x.t.Cu95PQ), () => x.intl.string(x.t["R/wFuh"]), () => x.intl.string(x.t.HQPAVT), () => x.intl.string(x.t.YolGh4)],
+    I = [p.fg2.STEAM, p.fg2.PLAYSTATION, p.fg2.XBOX, p.fg2.TWITCH, p.fg2.BATTLENET, p.fg2.LEAGUE_OF_LEGENDS, p.fg2.EPIC_GAMES, p.fg2.RIOT_GAMES, p.fg2.ROBLOX, p.fg2.SPOTIFY, p.fg2.YOUTUBE, p.fg2.CRUNCHYROLL, p.fg2.BUNGIE];
 
 function j(e) {
     let {
@@ -49,8 +49,8 @@ function j(e) {
     })
 }
 
-function v() {
-    let e = p.intl.string(p.t.RnD2yZ),
+function E() {
+    let e = x.intl.string(x.t.RnD2yZ),
         [t] = a.useState(() => ((0, l.sample)(h) ?? h[0])());
     return (0, i.jsx)(j, {
         heading: e,
@@ -58,8 +58,8 @@ function v() {
     })
 }
 
-function T() {
-    let e = p.intl.string(p.t.bFgqYJ),
+function v() {
+    let e = x.intl.string(x.t.bFgqYJ),
         [t] = a.useState(() => ((0, l.sample)(_) ?? _[0])());
     return (0, i.jsx)(j, {
         heading: e,
@@ -67,27 +67,27 @@ function T() {
     })
 }
 
-function E(e) {
+function T(e) {
     let {
         user: t,
         guildId: n,
         channelId: o,
-        onClose: d
-    } = e, c = g.Ay.getName(n, o, t), u = p.intl.formatToPlainString(p.t.sjSitP, {
-        name: c
-    }), [x] = a.useState(() => ((0, l.sample)(A) ?? A[0])(c)), h = a.useCallback(() => {
+        onClose: c
+    } = e, d = g.Ay.getName(n, o, t), u = x.intl.formatToPlainString(x.t.sjSitP, {
+        name: d
+    }), [p] = a.useState(() => ((0, l.sample)(A) ?? A[0])(d)), h = a.useCallback(() => {
         r.A.openPrivateChannel({
             recipientIds: t.id
-        }), d?.()
-    }, [t.id, d]);
+        }), c?.()
+    }, [t.id, c]);
     return (0, i.jsx)(j, {
         heading: u,
-        bodyText: x,
+        bodyText: p,
         children: (0, i.jsx)("div", {
             className: f.v0,
             children: (0, i.jsx)(m.FD, {
                 icon: s.oyn,
-                text: p.intl.string(p.t["g33r/P"]),
+                text: x.intl.string(x.t["g33r/P"]),
                 onClick: h
             })
         })
@@ -99,7 +99,7 @@ function b() {
     return (0, i.jsx)("div", {
         className: f.HU,
         children: I.map((t, n) => {
-            let a = d.A.get(t);
+            let a = c.A.get(t);
             if (null == a) return null;
             let l = (0, s.Mwr)(e) ? a.icon.darkPNG : a.icon.lightPNG;
             return (0, i.jsx)("img", {
@@ -111,24 +111,24 @@ function b() {
     })
 }
 
-function N(e) {
+function C(e) {
     let {
         onClose: t
     } = e, n = a.useCallback(() => {
-        t?.(), (0, u.openUserSettings)(c.X.CONNECTIONS_PANEL)
+        t?.(), (0, u.openUserSettings)(d.X.CONNECTIONS_PANEL)
     }, [t]), l = a.useCallback(() => {
-        t?.(), (0, u.openUserSettings)(c.X.CONTENT_AND_SOCIAL_CONNECTED_GAMES_TAB)
+        t?.(), (0, u.openUserSettings)(d.X.CONTENT_AND_SOCIAL_CONNECTED_GAMES_TAB)
     }, [t]);
     return (0, i.jsxs)(j, {
-        heading: p.intl.string(p.t.VB6LWY),
-        bodyText: p.intl.string(p.t.KpjsU9),
+        heading: x.intl.string(x.t.VB6LWY),
+        bodyText: x.intl.string(x.t.KpjsU9),
         children: [(0, i.jsx)(b, {}), (0, i.jsxs)("div", {
             className: f.v0,
             children: [(0, i.jsx)(m.FD, {
-                text: p.intl.string(p.t["/Hl24U"]),
+                text: x.intl.string(x.t["/Hl24U"]),
                 onClick: n
             }), (0, i.jsx)(m.FD, {
-                text: p.intl.string(p.t.GTCx0p),
+                text: x.intl.string(x.t.GTCx0p),
                 onClick: l
             })]
         })]

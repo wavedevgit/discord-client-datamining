@@ -15,10 +15,10 @@ let m = function(e) {
     let {
         detectedGame: t,
         trackAction: n
-    } = e, m = (0, i.y)("GameProfileStoreLinks"), x = (0, r._)(t), h = (0, s.A)(), f = l.useMemo(() => x.map(c.A).filter(e => null != e), [x]);
-    if (!m || 0 === f.length || null == t) return null;
-    if (1 === f.length) {
-        let [e] = f;
+    } = e, m = (0, i.y)("GameProfileStoreLinks"), x = (0, r._)(t), h = (0, s.A)(), g = l.useMemo(() => x.map(c.A).filter(e => null != e), [x]);
+    if (!m || 0 === g.length || null == t) return null;
+    if (1 === g.length) {
+        let [e] = g;
         return (0, a.jsx)(d.u, {
             icon: e.icon,
             text: e.text,
@@ -33,7 +33,7 @@ let m = function(e) {
         "aria-label": u.intl.string(u.t.nK60cc),
         onClick: () => (0, o.N)({
             detectedGame: t,
-            websiteButtons: f,
+            websiteButtons: g,
             trackAction: n
         })
     })

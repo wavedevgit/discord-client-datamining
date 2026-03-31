@@ -1,5 +1,4 @@
 /** chunk id: 420950 params = (module,exports,require) **/
-"use strict";
 e.exports = {
     Nr: "card__0c0bf",
     Eo: "addEntryCard__0c0bf card__0c0bf",

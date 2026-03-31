@@ -9,17 +9,17 @@ var a = n(503698),
     s = n(688807),
     r = n(311907),
     o = n(435371),
-    d = n(397927),
-    c = n(442433),
+    c = n(397927),
+    d = n(442433),
     u = n(775602),
     g = n(915089),
     m = n(961350),
-    x = n(183555),
-    p = n(735321),
+    p = n(183555),
+    x = n(735321),
     f = n(606758),
     h = n(518477),
     _ = n(985018),
-    A = n(558454);
+    A = n(183035);
 
 function I(e) {
     let {
@@ -27,13 +27,13 @@ function I(e) {
         className: n,
         buttonRef: a,
         additionalMenuItems: s
-    } = e, r = (0, p.L)(t), o = (0, g.GV)();
-    return (0, i.jsx)(v, {
+    } = e, r = (0, x.L)(t), o = (0, g.GV)();
+    return (0, i.jsx)(E, {
         targetRef: a,
         widget: t,
         additionalMenuItems: s,
         children: e => (0, i.jsx)(j, {
-            children: (0, i.jsxs)(d.DUT, {
+            children: (0, i.jsxs)(c.DUT, {
                 innerRef: a,
                 className: l()(A.x6, n),
                 "data-dnd-name": r,
@@ -43,9 +43,9 @@ function I(e) {
                 "aria-describedby": o,
                 "aria-keyshortcuts": "Control+D, Meta+D",
                 ...e,
-                children: [(0, i.jsx)(d.WP0, {
+                children: [(0, i.jsx)(c.WP0, {
                     size: "sm"
-                }), (0, i.jsx)(d.AC4, {
+                }), (0, i.jsx)(c.AC4, {
                     id: o,
                     children: _.intl.string(_.t.bsuqFn)
                 })]
@@ -64,7 +64,7 @@ let j = e => {
         return (0, i.jsx)(o.m_, {
             __unsupportedReactNodeAsText: (0, i.jsxs)("div", {
                 className: A.HE,
-                children: [(0, i.jsx)(d.Text, {
+                children: [(0, i.jsx)(c.Text, {
                     variant: "text-sm/normal",
                     color: "none",
                     children: _.intl.format(n ? _.t["zvln/l"] : _.t["7cdwhg"], {
@@ -72,7 +72,7 @@ let j = e => {
                             children: e
                         })
                     })
-                }), (0, i.jsx)(d.Text, {
+                }), (0, i.jsx)(c.Text, {
                     variant: "text-sm/normal",
                     color: "none",
                     children: _.intl.format(_.t["4e0rM4"], {
@@ -88,7 +88,7 @@ let j = e => {
             children: t
         })
     },
-    v = e => {
+    E = e => {
         let {
             children: t,
             widget: a,
@@ -96,14 +96,14 @@ let j = e => {
             additionalMenuItems: s
         } = e, {
             trackUserProfileEditAction: r
-        } = (0, x.NJ)(), o = e => {
+        } = (0, p.NJ)(), o = e => {
             if (e.shiftKey) {
-                (0, p.qA)(a), r({
+                (0, x.qA)(a), r({
                     action: "WIDGET_REMOVED",
                     ...a.getProfileEditAnalyticsOptions()
                 }), (0, f.XA)(h.jM.WIDGET_REMOVED);
                 return
-            }(0, d.mMO)(async () => {
+            }(0, c.mMO)(async () => {
                 let {
                     default: e
                 } = await n.e("53600").then(n.bind(n, 380035));
@@ -117,7 +117,7 @@ let j = e => {
                 stackingBehavior: "stack"
             })
         };
-        return (0, i.jsx)(d.YNO, {
+        return (0, i.jsx)(c.YNO, {
             targetElementRef: l,
             align: "top",
             position: "right",
@@ -126,25 +126,25 @@ let j = e => {
                 let {
                     closePopout: t
                 } = e;
-                return (0, i.jsx)(d.W1t, {
+                return (0, i.jsx)(c.W1t, {
                     "data-menu-migrated": !0,
                     navId: "user-profile-widget-context-menu",
                     onClose: () => {
-                        (0, c.Z_)(), t()
+                        (0, d.Z_)(), t()
                     },
                     onSelect: () => {},
                     "aria-label": _.intl.string(_.t.xpSHSk),
                     className: A.MK,
-                    children: (0, i.jsxs)(d.rXV, {
-                        children: [s, (0, i.jsx)(d.Drp, {
+                    children: (0, i.jsxs)(c.rXV, {
+                        children: [s, (0, i.jsx)(c.Drp, {
                             id: "remove-widget",
                             label: _.intl.string(_.t.Mm07Yc),
                             action: o,
                             color: "danger",
-                            icon: d.ucK,
+                            icon: c.ucK,
                             leadingAccessory: {
                                 type: "icon",
-                                icon: d.ucK
+                                icon: c.ucK
                             }
                         })]
                     })

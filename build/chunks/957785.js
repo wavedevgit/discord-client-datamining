@@ -13,7 +13,7 @@ var i = n(627968),
     u = n(183555),
     h = n(524380),
     A = n(985018),
-    _ = n(842006);
+    _ = n(943543);
 let m = l.forwardRef(function(e, t) {
     let {
         onCardClick: n,

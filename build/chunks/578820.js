@@ -1,5 +1,4 @@
 /** chunk id: 578820 params = (module,exports,require) **/
-"use strict";
 e.exports = {
     Rc: "carouselMaxWidth_b8429c",
     XG: "scroller_b8429c",

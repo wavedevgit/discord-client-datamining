@@ -8,9 +8,9 @@ var i = n(627968),
     s = n.n(l),
     r = n(397927),
     o = n(442433),
-    d = n(928658),
-    c = n(985018),
-    u = n(832493);
+    c = n(928658),
+    d = n(985018),
+    u = n(506573);
 
 function g(e) {
     let {
@@ -18,8 +18,8 @@ function g(e) {
         userId: n,
         className: l,
         menuItems: g
-    } = e, m = a.useRef(null), x = () => {
-        (0, d.GJ)(n, t)
+    } = e, m = a.useRef(null), p = () => {
+        (0, c.GJ)(n, t)
     };
     return (0, i.jsx)(r.YNO, {
         targetElementRef: m,
@@ -37,12 +37,12 @@ function g(e) {
                     (0, o.Z_)(), t()
                 },
                 onSelect: () => {},
-                "aria-label": c.intl.string(c.t.xpSHSk),
+                "aria-label": d.intl.string(d.t.xpSHSk),
                 children: (0, i.jsxs)(r.rXV, {
                     children: [g, (0, i.jsx)(r.Drp, {
                         id: "flag-widget",
-                        label: c.intl.string(c.t.D4GvHE),
-                        action: x,
+                        label: d.intl.string(d.t.D4GvHE),
+                        action: p,
                         color: "danger",
                         icon: r.iFK,
                         leadingAccessory: {
@@ -56,7 +56,7 @@ function g(e) {
         children: e => (0, i.jsx)(r.DUT, {
             ...e,
             innerRef: m,
-            "aria-label": c.intl.string(c.t.xpSHSk),
+            "aria-label": d.intl.string(d.t.xpSHSk),
             className: s()(u.x, l),
             children: (0, i.jsx)(r.jNK, {
                 size: "sm",

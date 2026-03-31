@@ -1,7 +1,7 @@
 /** chunk id: 823016 params = (module,exports,require) **/
 n.d(t, {
-    B: () => c,
-    r: () => d
+    B: () => d,
+    r: () => c
 });
 var i = n(627968),
     a = n(64700),
@@ -15,16 +15,16 @@ let r = a.createContext(null),
         manageFocusOnDelete: s.tE
     };
 
-function d() {
+function c() {
     return a.useContext(r) ?? o
 }
 
-function c(e) {
+function d(e) {
     let {
         children: t,
         emptyListFallbackRef: n
-    } = e, s = a.useRef(new Map), o = a.useRef(new Map), d = a.useRef([]), c = a.useCallback(() => {
-        d.current = Array.from(s.current.keys()).sort((e, t) => {
+    } = e, s = a.useRef(new Map), o = a.useRef(new Map), c = a.useRef([]), d = a.useCallback(() => {
+        c.current = Array.from(s.current.keys()).sort((e, t) => {
             let n = s.current.get(e),
                 i = s.current.get(t);
             if (null == n || null == i) return 0;
@@ -40,10 +40,10 @@ function c(e) {
             let t = o.current.get(e);
             t?.focus()
         })
-    }, []), x = a.useCallback(e => {
+    }, []), p = a.useCallback(e => {
         if (!l.A.keyboardModeEnabled) return;
-        c();
-        let t = d.current,
+        d();
+        let t = c.current,
             i = t.indexOf(e);
         if (-1 === i) return;
         let a = i + 1 < t.length ? i + 1 : i - 1;
@@ -56,14 +56,14 @@ function c(e) {
         } else requestAnimationFrame(() => {
             n?.focus()
         })
-    }, [n, c]), p = a.useMemo(() => ({
+    }, [n, d]), x = a.useMemo(() => ({
         registerDragHandleRef: u,
         registerItemRef: g,
         manageFocusOnReorder: m,
-        manageFocusOnDelete: x
-    }), [u, g, m, x]);
+        manageFocusOnDelete: p
+    }), [u, g, m, p]);
     return (0, i.jsx)(r.Provider, {
-        value: p,
+        value: x,
         children: t
     })
 }

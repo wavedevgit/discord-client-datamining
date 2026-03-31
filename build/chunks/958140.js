@@ -34,9 +34,9 @@ n(708455);
 var O = n(652215),
     L = n(49999),
     M = n(985018),
-    D = n(435579),
-    U = n(945375),
-    G = n(442078),
+    D = n(188712),
+    U = n(168812),
+    G = n(467935),
     P = n(266915);
 
 function k(e) {
@@ -223,7 +223,7 @@ function k(e) {
                 children: [(0, i.jsxs)("div", {
                     className: D.VA,
                     children: [(0, i.jsx)(A.Text, {
-                        variant: "text-sm/normal",
+                        variant: "text-sm/medium",
                         color: "text-muted",
                         children: M.intl.string(M.t.k8fFjp)
                     }), (0, i.jsx)(A.Gg5, {
@@ -237,7 +237,7 @@ function k(e) {
                 }), (0, i.jsxs)("div", {
                     className: D.VA,
                     children: [(0, i.jsx)(A.Text, {
-                        variant: "text-sm/normal",
+                        variant: "text-sm/medium",
                         color: "text-muted",
                         children: M.intl.string(M.t["+9QSnj"])
                     }), (0, i.jsx)(A.O4, {

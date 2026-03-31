@@ -23,18 +23,18 @@ var a, n, s, i = r(627968),
     A = r(676279),
     R = r(975571),
     v = r(852218),
-    j = r(161319),
-    E = r(992315),
+    E = r(161319),
+    j = r(992315),
     N = r(788868),
-    y = r(88001),
-    I = r(652215),
+    I = r(88001),
+    y = r(652215),
     P = r(355097),
-    S = r(653624),
-    T = r(519412),
-    w = r(49370),
+    S = r(284498),
+    T = r(518582),
+    w = r(723468),
     O = r(985018),
-    D = r(520650),
-    M = r(927961),
+    D = r(674547),
+    M = r(241015),
     U = r(817577),
     L = r(861223),
     B = r(748222),
@@ -84,7 +84,7 @@ let e_ = () => {
             initialPlanId: N.gD.PREMIUM_GROUP_MONTH,
             analyticsLocations: e
         })
-    }, [e]), eu = (0, A.TM)(), em = R.A.getArticleURL(I.MVz.REFERRAL_PROGRAM), e_ = {
+    }, [e]), eu = (0, A.TM)(), em = R.A.getArticleURL(y.MVz.REFERRAL_PROGRAM), e_ = {
         premiumGroup: {
             thumbnail: U,
             assetUrl: U
@@ -172,18 +172,18 @@ let e_ = () => {
         premiumGroup: {
             name: "premiumGroup",
             title: O.intl.formatToPlainString(T.default.VFEDDB, {
-                premiumGroupProductName: (0, y.DP)()
+                premiumGroupProductName: (0, I.DP)()
             }),
             description: O.intl.formatToPlainString(T.default.WudmR3, {
-                totalSeats: y.aw,
-                premiumGroupProductName: (0, y.DP)()
+                totalSeats: I.aw,
+                premiumGroupProductName: (0, I.DP)()
             }),
             previewImage: e_.premiumGroup.thumbnail,
             videoUrl: e_.premiumGroup.assetUrl,
             actions: [{
                 variant: "primary",
                 text: O.intl.formatToPlainString(T.default.LwdrNi, {
-                    premiumGroupProductName: (0, y.DP)()
+                    premiumGroupProductName: (0, I.DP)()
                 }),
                 onClick: ec,
                 icon: d.tvc,
@@ -253,7 +253,7 @@ let e_ = () => {
             description: O.intl.string(w.default.wMi514),
             descriptionCta: O.intl.string(O.t.hvVgAZ),
             onClick: () => {
-                window.open(R.A.getArticleURL(I.MVz.ORBS_REWARDS_FAQ), "_blank")
+                window.open(R.A.getArticleURL(y.MVz.ORBS_REWARDS_FAQ), "_blank")
             },
             previewImage: e_.orbRewards.thumbnail,
             previewImageStyle: "overlay",
@@ -268,7 +268,7 @@ let e_ = () => {
             descriptionCta: O.intl.string(S.default.HINTfJ),
             previewImage: e_.threePPromotions.thumbnail,
             videoUrl: e_.threePPromotions.assetUrl,
-            onClick: () => (0, j.u)({
+            onClick: () => (0, E.u)({
                 analyticsLocations: e,
                 partnerIds: [v.KS, v.Cs, v.XY]
             }),
@@ -278,7 +278,7 @@ let e_ = () => {
         let t = ep[e];
         if (null == t) throw Error(`useBentoBoxes: missing bento config for ${e}`);
         return t
-    }, [eh, eb, ex] = (0, E.A)();
+    }, [eh, eb, ex] = (0, j.A)();
     return {
         whatsNewBoxes: [
             [ef(eh)],

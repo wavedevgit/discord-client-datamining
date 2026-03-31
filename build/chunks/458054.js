@@ -1,5 +1,4 @@
 /** chunk id: 458054 params = (module,exports,require) **/
-"use strict";
 e.exports = {
     aq: "hoverButtonGroup__06ab4",
     HF: "hoverButton__06ab4",

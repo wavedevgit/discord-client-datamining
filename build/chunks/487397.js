@@ -1,5 +1,4 @@
 /** chunk id: 487397 params = (module,exports,require) **/
-"use strict";
 e.exports = {
     HA: "channelName_cb862a",
     gy: "unread_cb862a",

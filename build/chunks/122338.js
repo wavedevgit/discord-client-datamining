@@ -8,8 +8,8 @@ var i = n(627968),
     s = n(183555),
     r = n(735321),
     o = n(394245),
-    d = n(985018),
-    c = n(802638);
+    c = n(985018),
+    d = n(740857);
 let u = a.memo(function(e) {
     let {
         currentTags: t,
@@ -20,21 +20,21 @@ let u = a.memo(function(e) {
     return (0, i.jsx)(l.W1t, {
         "data-menu-migrated-auto": !0,
         navId: "widget-game-tags",
-        "aria-label": d.intl.string(d.t.r6EJOu),
+        "aria-label": c.intl.string(c.t.r6EJOu),
         onClose: s,
         onSelect: () => {},
-        className: c.VS,
+        className: d.VS,
         children: Object.entries(o.Pb).map(e => {
-            let s, [r, c] = e,
-                u = (s = [], c.type === o.me.RADIO && s.push((0, i.jsx)(l.iDA, {
+            let s, [r, d] = e,
+                u = (s = [], d.type === o.me.RADIO && s.push((0, i.jsx)(l.iDA, {
                     id: `${r}-none`,
                     group: r,
-                    label: d.intl.string(d.t.PoWNfe),
-                    checked: !c.tags.some(e => t.includes(e)),
-                    action: () => a(c.tags)
-                }, "none")), c.tags.forEach(e => {
+                    label: c.intl.string(c.t.PoWNfe),
+                    checked: !d.tags.some(e => t.includes(e)),
+                    action: () => a(d.tags)
+                }, "none")), d.tags.forEach(e => {
                     let a = o.PT[e];
-                    null != a && (c.type === o.me.RADIO ? s.push((0, i.jsx)(l.iDA, {
+                    null != a && (d.type === o.me.RADIO ? s.push((0, i.jsx)(l.iDA, {
                         id: e,
                         group: r,
                         label: a.getText(),
@@ -48,7 +48,7 @@ let u = a.memo(function(e) {
                     }, e)))
                 }), s);
             return (0, i.jsx)(l.rXV, {
-                label: c.getLabel(),
+                label: d.getLabel(),
                 children: u
             }, r)
         })
@@ -61,8 +61,8 @@ function g(e) {
         widgetType: n,
         applicationId: g,
         ref: m
-    } = e, x = (0, a.useRef)(null), {
-        trackUserProfileEditAction: p
+    } = e, p = (0, a.useRef)(null), {
+        trackUserProfileEditAction: x
     } = (0, s.NJ)(), f = (0, a.useMemo)(() => null != t ? t : [], [t]), h = (0, a.useCallback)(function(e) {
         let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
             i = new Set(f);
@@ -70,37 +70,37 @@ function g(e) {
             let t = Object.values(o.Pb).find(t => t.tags.includes(e));
             null != t && (t.tags.forEach(e => {
                 i.delete(e)
-            }), i.add(e), p({
+            }), i.add(e), x({
                 action: "TAG_ADDED",
                 widgetEdited: n,
                 gameId: g
             }))
-        } else i.has(e) ? (i.delete(e), p({
+        } else i.has(e) ? (i.delete(e), x({
             action: "TAG_REMOVED",
             widgetEdited: n,
             gameId: g
-        })) : (i.add(e), p({
+        })) : (i.add(e), x({
             action: "TAG_ADDED",
             widgetEdited: n,
             gameId: g
         }));
         (0, r.s1)(n, g, Array.from(i))
-    }, [f, p, n, g]), _ = (0, a.useCallback)(e => {
+    }, [f, x, n, g]), _ = (0, a.useCallback)(e => {
         let t = new Set(f);
         e.forEach(e => {
             t.delete(e)
-        }), p({
+        }), x({
             action: "TAG_REMOVED",
             widgetEdited: n,
             gameId: g
         }), (0, r.s1)(n, g, Array.from(t))
-    }, [f, p, n, g]);
+    }, [f, x, n, g]);
     return (0, i.jsx)(l.YNO, {
-        targetElementRef: x,
+        targetElementRef: p,
         position: "right",
         align: "top",
         onRequestOpen: () => {
-            p({
+            x({
                 action: "PRESS_ADD_TAG",
                 widgetEdited: n
             })
@@ -117,17 +117,17 @@ function g(e) {
             })
         },
         children: e => (0, i.jsx)("div", {
-            ref: e => (null != e && (x.current = e, m.current = e), () => {
-                x.current = null, m.current = null
+            ref: e => (null != e && (p.current = e, m.current = e), () => {
+                p.current = null, m.current = null
             }),
             children: (0, i.jsx)(l.DUT, {
                 ...e,
-                className: c.c9,
-                "aria-label": d.intl.string(d.t.r6EJOu),
+                className: d.c9,
+                "aria-label": c.intl.string(c.t.r6EJOu),
                 children: (0, i.jsx)(l.Text, {
                     variant: "text-xxs/medium",
                     color: "none",
-                    children: d.intl.string(d.t.fZSejy)
+                    children: c.intl.string(c.t.fZSejy)
                 })
             })
         })

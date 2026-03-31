@@ -67,8 +67,8 @@ var eo = n(652215),
     ec = n(746080);
 n(131955);
 var ed = n(985018),
-    eu = n(665606),
-    eh = n(116648);
+    eu = n(525736),
+    eh = n(520487);
 
 function eA(e) {
     return c.LU0.modules.channels.NAME_LINE_HEIGHT.resolve({

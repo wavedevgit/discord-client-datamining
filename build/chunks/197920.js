@@ -1,5 +1,4 @@
 /** chunk id: 197920 params = (module,exports,require) **/
-"use strict";
 e.exports = {
     U0: "lineContainer__9897f",
     my: "avatar__9897f",

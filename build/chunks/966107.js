@@ -1,33 +1,33 @@
 /** chunk id: 966107 params = (module,exports,require) **/
-n.d(e, {
-    JH: () => c,
-    RK: () => o,
-    ST: () => u,
-    Sk: () => d,
-    UK: () => E,
-    xf: () => _
+n.d(t, {
+    JH: () => s,
+    RK: () => d,
+    ST: () => h,
+    Sk: () => u,
+    UK: () => c,
+    xf: () => A
 });
 var i = n(562465),
     r = n(73153),
-    s = n(830215),
+    l = n(830215),
     a = n(961523),
-    l = n(652215);
-async function o(t) {
+    o = n(652215);
+async function d(e) {
     await i.Bo.put({
-        url: l.Rsh.CHANNEL_RECIPIENT_ME(t),
+        url: o.Rsh.CHANNEL_RECIPIENT_ME(e),
         body: {
             consent_status: a.w.ACCEPTED
         },
         rejectWithError: !1
     }), r.h.dispatch({
         type: "MESSAGE_REQUEST_ACCEPT_OPTIMISTIC",
-        channelId: t
+        channelId: e
     })
 }
 
-function c(t) {
+function s(e) {
     return i.Bo.put({
-        url: l.Rsh.CHANNEL_RECIPIENT_ME(t),
+        url: o.Rsh.CHANNEL_RECIPIENT_ME(e),
         body: {
             consent_status: a.w.UNSPECIFIED
         },
@@ -35,9 +35,9 @@ function c(t) {
     })
 }
 
-function d(t) {
+function u(e) {
     return i.Bo.put({
-        url: l.Rsh.CHANNEL_RECIPIENT_ME(t),
+        url: o.Rsh.CHANNEL_RECIPIENT_ME(e),
         body: {
             consent_status: a.w.PENDING
         },
@@ -45,23 +45,23 @@ function d(t) {
     })
 }
 
-function E(t) {
+function c(e) {
     return i.Bo.del({
-        url: l.Rsh.CHANNEL_RECIPIENT_ME(t),
+        url: o.Rsh.CHANNEL_RECIPIENT_ME(e),
         rejectWithError: !1
     })
 }
 
-function u(t) {
+function h(e) {
     return i.Bo.put({
-        url: l.Rsh.CHANNEL_RECIPIENT_REJECT_BATCH(),
+        url: o.Rsh.CHANNEL_RECIPIENT_REJECT_BATCH(),
         body: {
-            channel_ids: t
+            channel_ids: e
         },
         rejectWithError: !1
     })
 }
 
-function _() {
-    s.A.getLocationMetadata()
+function A() {
+    l.A.getLocationMetadata()
 }

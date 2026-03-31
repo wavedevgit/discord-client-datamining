@@ -16,13 +16,13 @@ var i = n(503698),
     h = n(206845),
     f = n(837921),
     m = n(985018),
-    p = n(239444);
+    p = n(766247);
 
 function _() {
     let e = (0, d.GV)(),
         t = window.GLOBAL_ENV.RELEASE_CHANNEL,
-        n = "520332",
-        i = "da3f4a03731f3c685e048e10dc68ac61f42e358b".substring(0, 7),
+        n = "520444",
+        i = "ad655dcdd164c6ef80af73ebfdffa37539359fb7".substring(0, 7),
         l = c.A?.app.getVersion(),
         _ = c.A?.app.getBuildNumber(),
         v = c.A?.app.getAppArch(),

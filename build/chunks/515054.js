@@ -9,15 +9,15 @@ var i = n(627968),
     s = n.n(l),
     r = n(397927),
     o = n(183555),
-    d = n(958805),
-    c = n(61881),
+    c = n(958805),
+    d = n(61881),
     u = n(790417),
     g = n(113763),
     m = n(583246),
-    x = n(463259),
-    p = n(133583),
+    p = n(463259),
+    x = n(133583),
     f = n(518477),
-    h = n(527573);
+    h = n(828622);
 
 function _(e) {
     let {
@@ -60,11 +60,11 @@ function A(e) {
     }) : a === f.RP.MUTUAL_GUILDS ? (0, i.jsx)(m.A, {
         user: t,
         onClose: o
-    }) : a === f.RP.WIDGETS ? (0, i.jsx)(x.A, {
+    }) : a === f.RP.WIDGETS ? (0, i.jsx)(p.A, {
         user: t,
         guildId: s,
         channelId: r
-    }) : a === f.RP.WISHLIST ? (0, i.jsx)(p.A, {
+    }) : a === f.RP.WISHLIST ? (0, i.jsx)(x.A, {
         profileOwner: t
     }) : null
 }
@@ -78,9 +78,9 @@ function I(e) {
         channelId: u,
         items: g,
         initialSection: m,
-        onClose: x
+        onClose: p
     } = e, {
-        trackUserProfileAction: p
+        trackUserProfileAction: x
     } = (0, o.NJ)(), [{
         section: _,
         text: I
@@ -102,7 +102,7 @@ function I(e) {
                 look: "custom",
                 selectedItem: _,
                 onItemSelect: e => {
-                    c.A.hasUnsavedChanges() && _ === f.RP.WIDGETS ? d.A.notifyUnsavedWidgets() : (p({
+                    d.A.hasUnsavedChanges() && _ === f.RP.WIDGETS ? c.A.notifyUnsavedWidgets() : (x({
                         action: "PRESS_SECTION",
                         section: e
                     }), j(t => g.find(t => t.section === e) ?? t))
@@ -131,7 +131,7 @@ function I(e) {
                     guildId: s,
                     channelId: u,
                     section: _,
-                    onClose: x
+                    onClose: p
                 })
             })
         })]

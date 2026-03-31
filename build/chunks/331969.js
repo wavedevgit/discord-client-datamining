@@ -17,7 +17,7 @@ var i = n(627968),
     A = n(967198),
     x = n(926140),
     h = n(985018),
-    p = n(730040);
+    p = n(563359);
 
 function T() {}
 let f = [x.rD.VOICE_CHANNEL];

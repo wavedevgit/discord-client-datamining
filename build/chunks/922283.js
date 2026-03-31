@@ -14,9 +14,9 @@ var a = n(627968),
     m = n(133580),
     x = n(37948),
     h = n(778591),
-    f = n(465736),
-    g = n(985018),
-    _ = n(928976);
+    g = n(465736),
+    f = n(985018),
+    _ = n(511858);
 
 function p(e) {
     let {
@@ -28,14 +28,14 @@ function p(e) {
     } = t, h = m?.steam ?? {
         rating: void 0,
         ratingCount: void 0
-    }, f = (0, x.A)(), p = (0, o.j)(h.rating, h.ratingCount), v = (0, u.y)(p), A = l.useCallback(() => {
-        i(d.Ws.SteamReviews), f(n)
-    }, [f, i, n]);
+    }, g = (0, x.A)(), p = (0, o.j)(h.rating, h.ratingCount), v = (0, u.y)(p), A = l.useCallback(() => {
+        i(d.Ws.SteamReviews), g(n)
+    }, [g, i, n]);
     return (0, a.jsx)(s.DUT, {
         onClick: A,
         className: _.nf,
         role: "link",
-        "aria-label": g.intl.string(g.t.YNC5Di),
+        "aria-label": f.intl.string(f.t.YNC5Di),
         children: (0, a.jsxs)("div", {
             className: _.U6,
             children: [(0, a.jsxs)("div", {
@@ -46,10 +46,10 @@ function p(e) {
                 }), (0, a.jsx)(s.Heading, {
                     variant: "heading-sm/medium",
                     color: "text-strong",
-                    children: g.intl.string(g.t.whmopT)
+                    children: f.intl.string(f.t.whmopT)
                 })]
             }), (0, a.jsx)(r.m, {
-                text: p === c.vI.NO_USER_REVIEWS ? g.intl.string(g.t.CLMt8J) : g.intl.format(g.t["lzANJ/"], {
+                text: p === c.vI.NO_USER_REVIEWS ? f.intl.string(f.t.CLMt8J) : f.intl.format(f.t["lzANJ/"], {
                     rating: h.rating,
                     rating_count: h.ratingCount?.toLocaleString()
                 }).toString(),
@@ -62,7 +62,7 @@ function p(e) {
                     }), null != h.ratingCount && p !== c.vI.NO_USER_REVIEWS && (0, a.jsx)(s.Text, {
                         variant: "text-xs/medium",
                         color: "text-subtle",
-                        children: g.intl.format(g.t.sgIoin, {
+                        children: f.intl.format(f.t.sgIoin, {
                             rating_count: h.ratingCount?.toLocaleString()
                         }).toString()
                     })]
@@ -83,31 +83,31 @@ function v(e) {
         topCriticRating: void 0,
         topCriticRatingCount: void 0,
         tier: void 0
-    }, m = o.tier, h = o.topCriticRating ?? -1, f = o.topCriticRatingCount ?? -1, p = (h <= 0 || f <= 0) && null == m, v = (0, x.A)(), E = l.useCallback(() => {
+    }, m = o.tier, h = o.topCriticRating ?? -1, g = o.topCriticRatingCount ?? -1, p = (h <= 0 || g <= 0) && null == m, v = (0, x.A)(), E = l.useCallback(() => {
         i(d.Ws.OpenCriticReviews), v(n)
     }, [v, i, n]);
     return (0, a.jsx)(s.DUT, {
         onClick: E,
         className: _.nf,
         role: "link",
-        "aria-label": g.intl.string(g.t.aLNBAw),
+        "aria-label": f.intl.string(f.t.aLNBAw),
         children: (0, a.jsxs)("div", {
             className: _.Ur,
             children: [(0, a.jsx)(s.Heading, {
                 variant: "heading-sm/medium",
                 color: "text-strong",
-                children: g.intl.string(g.t["UxvER+"])
+                children: f.intl.string(f.t["UxvER+"])
             }), (0, a.jsxs)("div", {
                 className: _.WA,
                 children: [null != m ? (0, a.jsx)(A, {
                     tier: m
-                }) : null, null != m && h > 0 && f > 0 ? (0, a.jsx)(j, {
+                }) : null, null != m && h > 0 && g > 0 ? (0, a.jsx)(j, {
                     rating: h,
                     tier: m
                 }) : null, p ? (0, a.jsx)(s.Text, {
                     variant: "text-xs/medium",
                     color: (0, u.y)(c.vI.NO_USER_REVIEWS),
-                    children: g.intl.string(g.t["0xYzpO"])
+                    children: f.intl.string(f.t["0xYzpO"])
                 }) : null]
             })]
         })
@@ -126,7 +126,8 @@ function A(e) {
                 src: l,
                 alt: n,
                 width: 32,
-                height: 32
+                height: 32,
+                draggable: !1
             })
         })
     }, "open-critic-tier")
@@ -141,13 +142,13 @@ function j(e) {
         backgroundColor: i
     } = (0, m.ff)(n);
     return (0, a.jsx)(r.m, {
-        text: g.intl.string(g.t.Ub4YR1),
+        text: f.intl.string(f.t.Ub4YR1),
         children: (0, a.jsxs)("div", {
             className: _.TE,
             style: {
                 backgroundColor: i
             },
-            children: [(0, a.jsx)(f.A, {
+            children: [(0, a.jsx)(g.A, {
                 rating: t,
                 strokeColor: l
             }), (0, a.jsx)(s.Text, {
@@ -173,7 +174,7 @@ let E = function(e) {
             children: (0, a.jsx)(s.Heading, {
                 variant: "heading-sm/semibold",
                 color: "text-strong",
-                children: g.intl.string(g.t.GaAQXP)
+                children: f.intl.string(f.t.GaAQXP)
             })
         }), (0, a.jsxs)("div", {
             className: _.kL,

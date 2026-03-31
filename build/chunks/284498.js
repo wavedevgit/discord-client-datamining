@@ -1,12 +1,12 @@
 /** chunk id: 284498 params = (module,exports,require) **/
-n.r(t), n.d(t, {
-    default: () => r,
-    messagesLoader: () => a
+r.r(t), r.d(t, {
+    default: () => i,
+    messagesLoader: () => n
 });
 let {
-    createLoader: i
-} = n(224839), a = i({
-    "en-US": () => n.e("98328").then(n.bind(n, 557451))
+    createLoader: a
+} = r(224839), n = a({
+    "en-US": () => r.e("98328").then(r.bind(r, 557451))
 }, "en-US"), {
-    makeMessagesProxy: l
-} = n(224839), r = l(a)
+    makeMessagesProxy: s
+} = r(224839), i = s(n)

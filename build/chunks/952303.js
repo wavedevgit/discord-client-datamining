@@ -1,5 +1,4 @@
 /** chunk id: 952303 params = (module,exports,require) **/
-"use strict";
 e.exports = {
     kL: "container_b7e1cb",
     jj: "gifFavoriteButton_b7e1cb",

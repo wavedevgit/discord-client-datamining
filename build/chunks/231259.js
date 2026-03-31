@@ -1,5 +1,4 @@
 /** chunk id: 231259 params = (module,exports,require) **/
-"use strict";
 e.exports = {
     nM: "row_d6271c",
     Vs: "tile_d6271c",

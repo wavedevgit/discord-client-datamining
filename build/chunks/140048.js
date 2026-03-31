@@ -1,5 +1,4 @@
 /** chunk id: 140048 params = (module,exports,require) **/
-"use strict";
 e.exports = {
     kL: "container__73abe",
     Nr: "card__73abe",

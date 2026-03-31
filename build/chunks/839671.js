@@ -13,10 +13,10 @@ var a = n(627968),
     d = n(409626),
     u = n(37948),
     m = n(985018),
-    x = n(282063),
-    h = n(808900);
-let f = [s.V.OFFICIAL, s.V.TWITTER, s.V.YOUTUBE],
-    g = {
+    x = n(325952),
+    h = n(123513);
+let g = [s.V.OFFICIAL, s.V.TWITTER, s.V.YOUTUBE],
+    f = {
         colorClass: h.wP
     },
     _ = {
@@ -87,7 +87,7 @@ function v(e) {
         action: i,
         icon: r,
         title: s
-    } = p(t, g), d = l.useCallback(() => {
+    } = p(t, f), d = l.useCallback(() => {
         n(i)
     }, [i, n]);
     return (0, a.jsx)(c.m, {
@@ -112,7 +112,7 @@ let A = function(e) {
         let {
             category: t
         } = e;
-        return f.includes(t)
+        return g.includes(t)
     }).sort((e, t) => e.category - t.category);
     return 0 === l.length ? null : (0, a.jsxs)("div", {
         children: [(0, a.jsx)(o.Heading, {

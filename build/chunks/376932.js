@@ -8,15 +8,15 @@ var i = n(627968),
     s = n.n(l),
     r = n(158954),
     o = n(311907),
-    d = n(554146),
-    c = n(932001),
+    c = n(554146),
+    d = n(932001),
     u = n(178213),
     g = n(770983),
     m = n(927813),
-    x = n(622543),
-    p = n(49999),
+    p = n(622543),
+    x = n(49999),
     f = n(985018),
-    h = n(970901);
+    h = n(465472);
 let _ = 90 * m.A.Millis.DAY,
     A = 90 * m.A.Millis.DAY;
 
@@ -28,15 +28,15 @@ function I(e) {
         analyticsLocations: m,
         className: I,
         applicationIds: j
-    } = e, v = (0, u.GG)("social_layer_wishlist_recommendations_on_profile"), T = (n?.items.length ?? 0) > 0, [E, b] = a.useState(!1);
-    !l || T || E || b(!0);
-    let N = (0, o.bG)([x.A], () => null != n ? new Date(x.A.getWishlistSettings(t.id, n.id)?.updated_at ?? 0).valueOf() : 0),
-        [S, y] = (0, c.Wl)(d.M.USER_PROFILE_WISHLIST_RECOMMENDATIONS, {
-            showAfterTimestamp: N + A,
+    } = e, E = (0, u.GG)("social_layer_wishlist_recommendations_on_profile"), v = (n?.items.length ?? 0) > 0, [T, b] = a.useState(!1);
+    !l || v || T || b(!0);
+    let C = (0, o.bG)([p.A], () => null != n ? new Date(p.A.getWishlistSettings(t.id, n.id)?.updated_at ?? 0).valueOf() : 0),
+        [S, N] = (0, d.Wl)(c.M.USER_PROFILE_WISHLIST_RECOMMENDATIONS, {
+            showAfterTimestamp: C + A,
             cooldownDurationMs: _
         }, void 0, !0),
-        C = S === d.M.USER_PROFILE_WISHLIST_RECOMMENDATIONS;
-    return l && (!T || C || E) ? (0, i.jsxs)("div", {
+        y = S === c.M.USER_PROFILE_WISHLIST_RECOMMENDATIONS;
+    return l && (!v || y || T) ? (0, i.jsxs)("div", {
         className: s()(h.kL, I),
         children: [(0, i.jsxs)("div", {
             className: h.wx,
@@ -44,10 +44,10 @@ function I(e) {
                 variant: "text-xs/normal",
                 color: "text-subtle",
                 children: f.intl.string(f.t["+GB8Kt"])
-            }), T && (0, i.jsx)(r.JnF, {
+            }), v && (0, i.jsx)(r.JnF, {
                 size: "xs",
                 onClick: () => {
-                    b(!1), y(p.i.USER_DISMISS)
+                    b(!1), N(x.i.USER_DISMISS)
                 }
             })]
         }), (0, i.jsx)(g.A, {
@@ -55,11 +55,11 @@ function I(e) {
             applicationIds: j,
             wishlist: n,
             className: s()(h.Vg, {
-                [h.e6]: v
+                [h.e6]: E
             }),
             analyticsLocations: m,
             numWishlistItemsToRecommend: 15,
-            maxWishlistItemsToShow: v ? 8 : 6
+            maxWishlistItemsToShow: E ? 8 : 6
         })]
     }) : null
 }

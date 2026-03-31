@@ -1,5 +1,4 @@
 /** chunk id: 9902 params = (module,exports,require) **/
-"use strict";
 e.exports = {
     mG: "inline__6c706",
     sC: "hiddenMosaicItem__6c706",

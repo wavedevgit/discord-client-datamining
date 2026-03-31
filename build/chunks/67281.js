@@ -1,69 +1,69 @@
 /** chunk id: 67281 params = (module,exports,require) **/
-n.d(t, {
-    A: () => x
+a.d(t, {
+    A: () => g
 });
-var i = n(627968);
-n(64700);
-var a = n(503698),
-    r = n.n(a),
-    l = n(791282),
-    s = n.n(l),
-    o = n(311907),
-    d = n(876230),
-    c = n(342952),
-    u = n(397927),
-    _ = n(429913),
-    m = n(287809),
-    h = n(405269),
-    p = n(403362),
-    g = n(985018),
-    A = n(2398);
-let x = function(e) {
+var n = a(627968);
+a(64700);
+var r = a(503698),
+    i = a.n(r),
+    o = a(791282),
+    l = a.n(o),
+    _ = a(311907),
+    c = a(876230),
+    s = a(342952),
+    d = a(397927),
+    u = a(429913),
+    m = a(287809),
+    p = a(405269),
+    f = a(403362),
+    b = a(985018),
+    C = a(653455);
+let g = function(e) {
     let {
         createdAt: t,
-        participantIds: n,
-        applicationId: a,
-        title: l,
-        guildId: x,
-        playerState: f = d.Q6.PAUSED,
-        isControlBarExpanded: C = !0
-    } = e, I = (0, _.h)(a), E = (0, o.yK)([m.default], () => n.map(e => m.default.getUser(e)).filter(p.Vq) ?? []), b = null != t ? (0, h.Fe)(new Date(t)) : null, v = s()([I?.name, b]);
-    return (0, i.jsxs)("div", {
-        className: r()(A.oK, {
-            [A.pd]: f === d.Q6.PLAYING && !C
+        participantIds: a,
+        applicationId: r,
+        title: o,
+        guildId: g,
+        playerState: I = c.Q6.PAUSED,
+        isControlBarExpanded: h = !0
+    } = e, A = (0, u.h)(r), T = (0, _.yK)([m.default], () => a.map(e => m.default.getUser(e)).filter(f.Vq) ?? []), v = null != t ? (0, p.Fe)(new Date(t)) : null, y = l()([A?.name, v]);
+    return (0, n.jsxs)("div", {
+        className: i()(C.oK, {
+            [C.pd]: I === c.Q6.PLAYING && !h
         }),
-        children: [(0, i.jsx)("div", {
-            className: A.Lu
-        }), (0, i.jsxs)("div", {
-            className: A.s$,
-            children: [(0, i.jsxs)("div", {
-                className: A.yR,
-                children: [(0, i.jsxs)("div", {
-                    className: A.$,
-                    children: [(0, i.jsx)(u.xgA, {
-                        className: A.gr,
+        children: [(0, n.jsx)("div", {
+            className: C.Lu
+        }), (0, n.jsxs)("div", {
+            className: C.s$,
+            children: [(0, n.jsxs)("div", {
+                className: C.yR,
+                children: [(0, n.jsxs)("div", {
+                    className: C.$,
+                    children: [(0, n.jsx)(d.xgA, {
+                        className: C.gr,
                         size: "xs",
                         color: "white"
-                    }), (0, i.jsx)(u.Text, {
-                        className: A.DD,
+                    }), (0, n.jsx)(d.Text, {
+                        className: C.DD,
                         variant: "text-md/semibold",
                         color: "always-white",
-                        children: null != l && l.length > 0 ? l : g.intl.string(g.t.Cyxddp)
+                        children: null != o && o.length > 0 ? o : b.intl.string(b.t.Cyxddp)
                     })]
-                }), v.length > 0 && (0, i.jsx)(u.Text, {
-                    className: A.yu,
+                }), y.length > 0 && (0, n.jsx)(d.Text, {
+                    className: C.yu,
                     variant: "text-sm/normal",
                     color: "always-white",
-                    children: v.join(" \xb7 ")
+                    children: y.join(" \xb7 ")
                 })]
-            }), E.length > 0 && (0, i.jsx)("div", {
-                className: A.HD,
-                children: (0, i.jsx)(c.A, {
+            }), T.length > 0 && (0, n.jsx)("div", {
+                className: C.HD,
+                children: (0, n.jsx)(s.A, {
                     maxUsers: 4,
-                    users: E,
-                    guildId: x,
-                    size: u._3J.SIZE_24,
-                    "aria-label": g.intl.string(g.t.WTozwe)
+                    users: T,
+                    guildId: g,
+                    size: d._3J.SIZE_24,
+                    "aria-label": b.intl.string(b.t.WTozwe)
                 })
             })]
         })]

@@ -11,7 +11,7 @@ var a = r(627968),
     d = r(786558),
     c = r(799226),
     u = r(397927),
-    m = r(190152);
+    m = r(640203);
 let _ = {
         HoverLightmode: {
             posy: "number",
@@ -41,21 +41,21 @@ let _ = {
             glowing: A = !1,
             glowAmount: R = 8,
             blurAmount: v = 30,
-            hueRotate: j = 0,
-            isReducedMotion: E,
+            hueRotate: E = 0,
+            isReducedMotion: j,
             onMouseEnter: N
-        } = e, y = n.useRef(null), I = n.useRef(null), {
+        } = e, I = n.useRef(null), y = n.useRef(null), {
             status: P,
             buffer: S
-        } = (0, c.CE)(A ? l.A : null), T = n.useContext(o.C), w = E ?? T.reducedMotion.enabled, O = {
+        } = (0, c.CE)(A ? l.A : null), T = n.useContext(o.C), w = j ?? T.reducedMotion.enabled, O = {
             "--custom-glow-amount": `${R}px`,
             "--custom-blur-amount": `${v}px`,
-            "--custom-hue-rotate": `${j}deg`,
+            "--custom-hue-rotate": `${E}deg`,
             "--custom-glow-opacity": +(0 !== R)
         };
         return (0, a.jsxs)("div", {
             id: r,
-            ref: y,
+            ref: I,
             tabIndex: s,
             className: i()(m.k, f),
             style: O,
@@ -64,9 +64,9 @@ let _ = {
                 buffer: S,
                 artboard: g,
                 artboardProperties: _,
-                eventTargetRef: y,
+                eventTargetRef: I,
                 className: m.Q,
-                ref: I,
+                ref: y,
                 fit: C,
                 withReducedMotion: w ? "halt" : "play"
             }), (0, a.jsx)(u.ZpM, {

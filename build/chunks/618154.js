@@ -1,5 +1,4 @@
 /** chunk id: 618154 params = (module,exports,require) **/
-"use strict";
 e.exports = {
     d$: "tutorial__73f2a",
     SP: "shown__73f2a",

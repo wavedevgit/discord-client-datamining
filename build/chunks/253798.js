@@ -1,7 +1,7 @@
 /** chunk id: 253798 params = (module,exports,require) **/
 n.d(t, {
-    B: () => c,
-    M: () => d
+    B: () => d,
+    M: () => c
 });
 var i = n(627968),
     a = n(64700),
@@ -10,28 +10,28 @@ var i = n(627968),
     r = n(735321);
 let o = a.createContext(null);
 
-function d(e) {
+function c(e) {
     let {
         widgetType: t,
         children: n
-    } = e, d = (0, l.bG)([s.A], () => {
+    } = e, c = (0, l.bG)([s.A], () => {
         let e = s.A.getPendingWidgets();
         if (null == e) return !1;
         let n = e.find(e => e.type === t);
         if (null == n) return !1;
         let i = (0, r.cv)(t);
         return n.games.length > i
-    }), [c, u] = a.useState(d);
+    }), [d, u] = a.useState(c);
     return (0, i.jsx)(o.Provider, {
         value: {
-            expanded: c,
+            expanded: d,
             setExpanded: u
         },
         children: n
     })
 }
 
-function c() {
+function d() {
     let e = a.useContext(o);
     if (null == e) throw Error("useGameWidgetExpandCollapse must be used within a GameWidgetExpandCollapseContextProvider");
     return e

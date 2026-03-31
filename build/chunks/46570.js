@@ -1,5 +1,4 @@
 /** chunk id: 46570 params = (module,exports,require) **/
-"use strict";
 e.exports = {
     $$: "pageContainer__09fde",
     XG: "scroller__09fde",

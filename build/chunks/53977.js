@@ -1,6 +1,6 @@
 /** chunk id: 53977 params = (module,exports,require) **/
 n.d(t, {
-    A: () => x
+    A: () => p
 });
 var i = n(627968),
     a = n(64700),
@@ -8,23 +8,23 @@ var i = n(627968),
     s = n(566605),
     r = n(379848),
     o = n(183555),
-    d = n(357541),
-    c = n(814221),
+    c = n(357541),
+    d = n(814221),
     u = n(266713),
     g = n(985018),
-    m = n(54676);
+    m = n(324679);
 
-function x() {
+function p() {
     let {
         trackUserProfileAction: e,
         trackUserProfileEditAction: t
-    } = (0, o.NJ)(), x = a.useRef(!1), {
-        suggestions: p,
+    } = (0, o.NJ)(), p = a.useRef(!1), {
+        suggestions: x,
         currentUser: f,
         isLoading: h
     } = (0, s.A)({
         location: "UserProfileModalV2ApplicationWidgetsEmptyState"
-    }), _ = p?.[0], A = a.useCallback(() => {
+    }), _ = x?.[0], A = a.useCallback(() => {
         t({
             action: "PRESS_ADD_WIDGET"
         }), (0, l.mMO)(async () => {
@@ -40,10 +40,10 @@ function x() {
         })
     }, [t]);
     if (a.useEffect(() => {
-            h || null == _ || x.current || (e({
+            h || null == _ || p.current || (e({
                 action: "VIEW_APPLICATION_WIDGETS_EMPTY_STATE",
                 applicationId: _.application.id
-            }), x.current = !0)
+            }), p.current = !0)
         }, [h, e, _]), h) return (0, i.jsx)("div", {
         className: m.Lq,
         children: (0, i.jsx)(l.y$y, {})
@@ -79,12 +79,12 @@ function x() {
                     size: 32
                 }), I, (0, i.jsx)("div", {
                     className: m.Zj,
-                    children: (0, i.jsx)(d.A, {
+                    children: (0, i.jsx)(c.A, {
                         user: f,
                         application: _.application,
                         onDismiss: n
                     })
-                }), (0, i.jsx)(c.A, {})]
+                }), (0, i.jsx)(d.A, {})]
             }) : (0, i.jsxs)(l.BJc, {
                 gap: 32,
                 align: "center",

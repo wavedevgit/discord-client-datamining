@@ -21,7 +21,7 @@ function x(e) {
         n(d.Ws.ClaimGame);
         let e = await (0, o.a)(u.dSh.DEVELOPER_PORTAL_APPLICATIONS_GAME_IDENTITY);
         (0, s.A)(e)
-    }, [n]), f = l.useCallback(e => (0, a.jsx)(i.MzZ, {
+    }, [n]), g = l.useCallback(e => (0, a.jsx)(i.MzZ, {
         onClick: h,
         children: e
     }), [h]);
@@ -29,7 +29,7 @@ function x(e) {
         variant: "text-xs/normal",
         color: "text-muted",
         children: m.intl.format(m.t.KAjfKl, {
-            claimLink: f
+            claimLink: g
         })
     })
 }

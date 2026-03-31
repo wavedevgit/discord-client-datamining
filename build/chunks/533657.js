@@ -1,5 +1,4 @@
 /** chunk id: 533657 params = (module,exports,require) **/
-"use strict";
 e.exports = {
     kL: "container__9aed4",
     Vo: "micIcon__9aed4",

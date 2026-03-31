@@ -1,7 +1,7 @@
 /** chunk id: 34442 params = (module,exports,require) **/
 n.d(t, {
-    IU: () => x,
-    dE: () => p
+    IU: () => p,
+    dE: () => x
 });
 var i = n(627968),
     a = n(64700),
@@ -9,28 +9,28 @@ var i = n(627968),
     s = n(397927),
     r = n(383329),
     o = n(183555),
-    d = n(735321),
-    c = n(958338),
+    c = n(735321),
+    d = n(958338),
     u = n(985018),
-    g = n(201669);
+    g = n(230146);
 
 function m(e) {
     let {
         widgetType: t,
         widget: n,
         onAddGame: m,
-        children: x,
-        ...p
+        children: p,
+        ...x
     } = e, f = a.useMemo(() => new Set(n.games.map(e => e.applicationId)), [n.games]), {
         trackUserProfileEditAction: h
     } = (0, o.NJ)(), [_, A] = a.useState(""), I = a.useRef(""), {
         options: j,
-        matchSorterOptions: v
+        matchSorterOptions: E
     } = (0, r.R)(), {
-        applicationIds: T,
-        onAddGame: E
-    } = (0, c.S)(t), b = a.useCallback(e => {
-        (0, d.ew)({
+        applicationIds: v,
+        onAddGame: T
+    } = (0, d.S)(t), b = a.useCallback(e => {
+        (0, c.ew)({
             widgetType: t,
             game: {
                 applicationId: e
@@ -39,32 +39,32 @@ function m(e) {
             action: "GAME_ADDED",
             gameId: e,
             widgetEdited: t
-        }), T.includes(e) && E(e), m?.()
-    }, [t, h, m, T, E]), N = a.useMemo(() => {
+        }), v.includes(e) && T(e), m?.()
+    }, [t, h, m, v, T]), C = a.useMemo(() => {
         let e = new Map(j.map(e => [String(e.value), {
                 id: String(e.value),
                 value: String(e.value),
                 label: e.label,
                 disabled: f.has(e.value)
             }])),
-            t = T.map(t => e.get(t)).filter(e => null != e && !e.disabled),
+            t = v.map(t => e.get(t)).filter(e => null != e && !e.disabled),
             n = [...e.values()].filter(e => !t.includes(e));
         return [...t, ...n]
-    }, [j, f, T]), S = a.useMemo(() => ({
-        ...v,
+    }, [j, f, v]), S = a.useMemo(() => ({
+        ...E,
         threshold: l.Ht.rankings.CONTAINS,
         keys: ["label"]
-    }), [v]), y = a.useCallback(e => "" === e.trim() ? N.length : (0, l.Ht)(N, e, S).length, [N, S]), C = a.useCallback(e => {
+    }), [E]), N = a.useCallback(e => "" === e.trim() ? C.length : (0, l.Ht)(C, e, S).length, [C, S]), y = a.useCallback(e => {
         let n = e.target.value;
         "" === _.trim() && "" !== n.trim() && h({
             action: "GAME_SEARCH_SESSION_STARTED",
             widgetEdited: t,
             numCharacters: n.trim().length,
-            numResults: y(n)
+            numResults: N(n)
         }), A(n), I.current = n
-    }, [_, h, t, y]);
+    }, [_, h, t, N]);
     return (0, i.jsx)(s.YNO, {
-        ...p,
+        ...x,
         onRequestOpen: () => {
             h({
                 action: "PRESS_ADD_GAME",
@@ -76,7 +76,7 @@ function m(e) {
                 action: "GAME_SEARCH_SESSION_ENDED",
                 widgetEdited: t,
                 numCharacters: I.current.trim().length,
-                numResults: y(I.current)
+                numResults: N(I.current)
             })
         },
         renderPopout: e => {
@@ -92,25 +92,25 @@ function m(e) {
                     onSelectionChange: e => {
                         null != e && (b(e), t())
                     },
-                    options: N,
+                    options: C,
                     matchSorterOptions: S,
                     children: [(0, i.jsx)(s.a32, {
                         label: u.intl.string(u.t["5h0QOP"]),
                         hideLabel: !0,
                         placeholder: u.intl.string(u.t["5h0QOP"]),
                         autoFocus: !0,
-                        onQueryChange: C
+                        onQueryChange: y
                     }), (0, i.jsx)(s.X2W, {
                         maxVisibleItems: 7
                     })]
                 })
             })
         },
-        children: e => x(e)
+        children: e => p(e)
     })
 }
 
-function x(e) {
+function p(e) {
     let {
         disabled: t,
         ...n
@@ -132,7 +132,7 @@ function x(e) {
     })
 }
 
-function p(e) {
+function x(e) {
     let t = a.useRef(null);
     return (0, i.jsx)(m, {
         targetElementRef: t,

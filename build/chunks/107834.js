@@ -18,7 +18,7 @@ var s = n(503698),
     A = n(652215),
     x = n(788868),
     h = n(985018),
-    p = n(670324);
+    p = n(71971);
 let T = a.Ay.connectStores([g.default], () => ({
     user: g.default.getCurrentUser()
 }))((0, c.A)(e => {

@@ -1,5 +1,4 @@
 /** chunk id: 959579 params = (module,exports,require) **/
-"use strict";
 e.exports = {
     pU: "iframe__49094",
     iE: "wrapper__49094",

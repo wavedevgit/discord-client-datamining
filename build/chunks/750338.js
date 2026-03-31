@@ -18,7 +18,7 @@ var a = r(627968),
     h = r(23003),
     b = r(652215),
     x = r(693591),
-    g = r(992284);
+    g = r(797487);
 let C = e => {
     let {
         name: t,
@@ -28,11 +28,11 @@ let C = e => {
         previewImage: A,
         videoUrl: R,
         shouldLoadVideo: v,
-        index: j,
-        customVideoStyle: E,
+        index: E,
+        customVideoStyle: j,
         isReducedMotion: N,
-        onClick: y,
-        badgeText: I,
+        onClick: I,
+        badgeText: y,
         badgeVariant: P = "gradient",
         size: S,
         backgroundVideoUrl: T,
@@ -47,12 +47,12 @@ let C = e => {
     }, W = () => {
         null == M.current || N || (U.current = M.current.currentTime, M.current.pause())
     }, K = S === h.A0.LARGE ? "heading-xxl/bold" : "heading-xl/bold", Z = () => {
-        let e = null != C && null != y,
+        let e = null != C && null != I,
             t = null != O && O.length > 0;
         if (!e && !t) return null;
         let r = e ? [{
             variant: "secondary",
-            onClick: y,
+            onClick: I,
             text: C
         }] : O;
         return (0, a.jsx)("div", {
@@ -75,21 +75,21 @@ let C = e => {
     }, z = () => (0, a.jsxs)("div", {
         className: i()(g.textBox, g[`${S}`], V && g.overlayTextBox),
         children: [(0, a.jsxs)("div", {
-            children: [null == I ? null : "gradient" === P ? (0, a.jsx)("div", {
+            children: [null == y ? null : "gradient" === P ? (0, a.jsx)("div", {
                 className: g.badgeContainer,
                 children: (0, a.jsx)("div", {
                     className: g.badge,
                     children: (0, a.jsx)(c.Heading, {
                         variant: "eyebrow",
                         color: "always-white",
-                        children: I
+                        children: y
                     })
                 })
             }) : (0, a.jsx)("div", {
                 className: g.badgeContainer,
                 children: (0, a.jsx)(d.Exy, {
                     type: {
-                        text: I
+                        text: y
                     },
                     variant: P
                 })
@@ -114,7 +114,7 @@ let C = e => {
             poster: A,
             loop: !0,
             className: i()(V ? g.overlayImage : g.boxVideo, {
-                [E]: null != E
+                [j]: null != j
             }),
             ref: M,
             children: (0, a.jsx)("source", {
@@ -122,7 +122,7 @@ let C = e => {
                 type: D ? x.a.MP4 : x.a.WEBM
             })
         }, R)
-    }), $ = j % 2 != 0;
+    }), $ = E % 2 != 0;
     return (0, a.jsx)(o.L, {
         innerRef: L,
         onChange: e => {

@@ -1,5 +1,4 @@
 /** chunk id: 937755 params = (module,exports,require) **/
-"use strict";
 e.exports = {
     eg: "priceLine__05bc9",
     pw: "priceTagContainer__05bc9",

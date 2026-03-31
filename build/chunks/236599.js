@@ -8,17 +8,17 @@ var i = n(627968),
     s = n.n(l),
     r = n(311907),
     o = n(397927),
-    d = n(773669),
-    c = n(183555),
+    c = n(773669),
+    d = n(183555),
     u = n(985018),
-    g = n(454980);
+    g = n(697737);
 
 function m(e) {
     let {
         className: t
-    } = e, l = ["en-US", "en-GB"].includes((0, r.bG)([d.default], () => d.default.locale)) ? u.intl.string(u.t.OYlggR) : u.intl.string(u.t.Y55Tua), {
+    } = e, l = ["en-US", "en-GB"].includes((0, r.bG)([c.default], () => c.default.locale)) ? u.intl.string(u.t.OYlggR) : u.intl.string(u.t.Y55Tua), {
         trackUserProfileEditAction: m
-    } = (0, c.NJ)(), x = a.useCallback(() => {
+    } = (0, d.NJ)(), p = a.useCallback(() => {
         m({
             action: "PRESS_ADD_WIDGET"
         }), (0, o.mMO)(async () => {
@@ -44,7 +44,7 @@ function m(e) {
             text: u.intl.string(u.t["lBG2s/"]),
             size: "sm",
             variant: "secondary",
-            onClick: x
+            onClick: p
         })]
     })
 }

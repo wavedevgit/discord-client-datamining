@@ -1,5 +1,4 @@
 /** chunk id: 376206 params = (module,exports,require) **/
-"use strict";
 e.exports = {
     Wh: "flexRow__16b66",
     ec: "flexColumn__16b66",

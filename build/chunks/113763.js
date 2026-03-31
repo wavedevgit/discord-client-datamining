@@ -8,13 +8,13 @@ var i = n(627968),
     s = n(688810),
     r = n(114212),
     o = n(183555),
-    d = n(913453),
-    c = n(229187),
+    c = n(913453),
+    d = n(229187),
     u = n(657331),
     g = n(503062),
     m = n(782505),
-    x = n(515054),
-    p = n(499044);
+    p = n(515054),
+    x = n(913329);
 
 function f(e) {
     let {
@@ -29,16 +29,16 @@ function f(e) {
         trackUserProfileAction: I
     } = (0, o.NJ)(), {
         mutualFriends: j,
-        mutualFriendsCount: v
-    } = (0, d.A)(t), T = (0, l.A)();
+        mutualFriendsCount: E
+    } = (0, c.A)(t), v = (0, l.A)();
     return a.useEffect(() => {
-        (0, c.A)(t.id, T)
-    }, [t.id, T]), (0, i.jsx)(x.K, {
-        className: p.XG,
+        (0, d.A)(t.id, v)
+    }, [t.id, v]), (0, i.jsx)(p.K, {
+        className: x.XG,
         children: null == j ? Array.from({
-            length: v ?? 10
+            length: E ?? 10
         }).map((e, t) => (0, i.jsxs)("div", {
-            className: p.D$,
+            className: x.D$,
             children: [(0, i.jsx)(r.FQ, {
                 width: 40,
                 opacity: .08

@@ -34,7 +34,7 @@ function y(e) {
         let e, t, n = (0, s.bG)([v.default], () => v.default.getId()),
             a = (0, g.A)(n),
             l = i.useMemo(() => a.filter(e => e instanceof x.R), [a]),
-            r = (e = (0, c.ul)({
+            r = (e = (0, c.VA)({
                 location: "UserProfileAccountPopoutApplicationWidgetCoachmark"
             }), i.useMemo(() => e?.filter(e => e.isEligibleForEditProfileUpsell()), [e])),
             m = i.useMemo(() => r?.map(e => e.applicationId) ?? [], [r]),

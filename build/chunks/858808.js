@@ -9,9 +9,9 @@ var a = n(503698),
     s = n(990078),
     r = n(397927),
     o = n(183555),
-    d = n(735321),
-    c = n(985018),
-    u = n(440375);
+    c = n(735321),
+    d = n(985018),
+    u = n(57884);
 
 function g(e) {
     let {
@@ -20,23 +20,23 @@ function g(e) {
         iconSize: a = "refresh_sm",
         className: g,
         buttonRef: m,
-        onRemove: x
+        onRemove: p
     } = e, {
-        trackUserProfileEditAction: p
+        trackUserProfileEditAction: x
     } = (0, o.NJ)();
     return (0, i.jsx)(s.m, {
-        text: c.intl.string(c.t.HUvyDc),
+        text: d.intl.string(d.t.HUvyDc),
         ariaHidden: !0,
         children: (0, i.jsx)(r.DUT, {
             innerRef: m,
             onClick: () => {
-                (0, d.ef)(n, t.applicationId), r.ORC.announce(c.intl.string(c.t["08HmMj"])), p({
+                (0, c.ef)(n, t.applicationId), r.ORC.announce(d.intl.string(d.t["08HmMj"])), x({
                     action: "GAME_REMOVED",
                     gameId: t.applicationId,
                     widgetEdited: n
-                }), x?.()
+                }), p?.()
             },
-            "aria-label": c.intl.string(c.t.HUvyDc),
+            "aria-label": d.intl.string(d.t.HUvyDc),
             className: l()(g, u.v),
             children: (0, i.jsx)(r.ucK, {
                 size: a,
