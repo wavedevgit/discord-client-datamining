@@ -9,9 +9,9 @@ var l = n(835245),
     r = n(73153),
     s = n(391048),
     c = n(636099),
-    o = n(608805),
-    d = n(120700),
-    u = n(589078),
+    o = n(120700),
+    d = n(589078),
+    u = n(742810),
     m = n(979286),
     x = n(287809),
     h = n(954571),
@@ -22,7 +22,7 @@ let p = new Set([f.pn.REVIEW, f.pn.CONFIRM, f.pn.GIFT_CUSTOMIZATION]);
 
 function v(e) {
     let t, {
-            skuId: u,
+            skuId: d,
             analyticsLocations: f,
             analyticsObject: v,
             isGift: j = !1,
@@ -42,7 +42,7 @@ function v(e) {
         })
     }), A({
         loadId: T,
-        skuId: u,
+        skuId: d,
         analyticsLocations: f,
         onStepChange: e => {
             t = e
@@ -57,19 +57,19 @@ function v(e) {
             if ((0, g.S)({
                     checkoutSucceeded: S
                 }), !S) {
-                let e = (0, o.q1)({
+                let e = (0, u.q1)({
                     location: "CollectiblesPaymentModal",
-                    unifiedCheckoutFlow: d.C.COLLECTIBLES_CHECKOUT
+                    unifiedCheckoutFlow: o.C.COLLECTIBLES_CHECKOUT
                 });
                 h.default.track(_.HAw.PAYMENT_FLOW_CANCELED, {
                     load_id: T,
                     payment_type: _.frM[_.VVm.ONE_TIME],
                     location: v,
                     is_gift: j,
-                    sku_id: u,
+                    sku_id: d,
                     location_stack: f,
-                    checkout_design: e ? o.rS.UNIFIED : o.rS.LEGACY,
-                    checkout_flow: d.C.COLLECTIBLES_CHECKOUT
+                    checkout_design: e ? u.rS.UNIFIED : u.rS.LEGACY,
+                    checkout_flow: o.C.COLLECTIBLES_CHECKOUT
                 })
             }(0, s.ET)(), (0, c.z)(), N?.(S), S && (0, m.gB)()
         },
@@ -108,12 +108,12 @@ let A = e => {
         giftMessage: s,
         giftingOrigin: c,
         giftRecipient: o,
-        onClose: d,
+        onClose: u,
         onCloseCallback: m,
         onCloseRequest: x,
         onComplete: h
     } = e;
-    return (0, u.Tx)().openCheckoutModal({
+    return (0, d.Tx)().openCheckoutModal({
         loadId: t,
         skuId: n,
         analyticsLocations: a,
@@ -123,7 +123,7 @@ let A = e => {
             giftingOrigin: c,
             giftRecipient: o
         },
-        onClose: d,
+        onClose: u,
         onComplete: h,
         flowSpecificOptions: {
             onStepChange: l

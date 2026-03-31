@@ -12,8 +12,8 @@ var l = i(284009),
     u = i(339048),
     o = i(391048),
     c = i(636099),
-    d = i(608805),
-    S = i(589078),
+    d = i(589078),
+    S = i(742810),
     p = i(163437),
     I = i(97352),
     A = i(67480),
@@ -55,7 +55,7 @@ function f(t) {
             activeSubscription: l,
             stepConfigs: o,
             skuIDs: [h],
-            unifiedCheckoutFlow: S.CL.PREMIUM_APPS_SUBSCRIPTION_CHECKOUT,
+            unifiedCheckoutFlow: d.CL.PREMIUM_APPS_SUBSCRIPTION_CHECKOUT,
             children: (0, n.jsx)(E.Qt, {
                 children: (0, n.jsx)(T.dX, {
                     children: (0, n.jsx)(a, {
@@ -82,9 +82,9 @@ function f(t) {
     }, {
         onCloseCallback: () => {
             if (!b) {
-                let t = (0, d.q1)({
+                let t = (0, S.q1)({
                     location: "ApplicationPaymentModal",
-                    unifiedCheckoutFlow: S.CL.PREMIUM_APPS_SUBSCRIPTION_CHECKOUT
+                    unifiedCheckoutFlow: d.CL.PREMIUM_APPS_SUBSCRIPTION_CHECKOUT
                 });
                 _.default.track(C.HAw.PAYMENT_FLOW_CANCELED, {
                     load_id: F,
@@ -94,8 +94,8 @@ function f(t) {
                     sku_id: h,
                     application_id: g,
                     location_stack: p,
-                    checkout_design: t ? d.rS.UNIFIED : d.rS.LEGACY,
-                    checkout_flow: S.CL.PREMIUM_APPS_SUBSCRIPTION_CHECKOUT
+                    checkout_design: t ? S.rS.UNIFIED : S.rS.LEGACY,
+                    checkout_flow: d.CL.PREMIUM_APPS_SUBSCRIPTION_CHECKOUT
                 }), (0, o.ET)(), (0, c.z)()
             }
         },

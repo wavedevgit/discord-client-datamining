@@ -157,7 +157,7 @@ class X extends s.PureComponent {
             redirecting: !0
         }), n ? p.A.verifySSOToken("login").then(() => this.transitionSSO(t)) : this.transitionSSO(t))
     }
-    handleAuthSuccess(e) {
+    handleAuthSuccess = e => {
         this.setState({
             errors: {}
         }), B.default.track(K.HAw.LOGIN_SUCCESSFUL, {
@@ -168,7 +168,7 @@ class X extends s.PureComponent {
             login_method: "remote_auth",
             login_instance_id: e ?? null
         })
-    }
+    };
     transitionSSO(e) {
         let {
             transitionTo: t,

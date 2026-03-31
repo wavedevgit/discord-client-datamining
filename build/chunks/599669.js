@@ -17,8 +17,8 @@ var i = n(627968),
     p = n(155718),
     I = n(793574),
     y = n(688810),
-    x = n(608805),
-    v = n(69882),
+    x = n(69882),
+    v = n(742810),
     S = n(596034),
     f = n(270537),
     g = n(241989),
@@ -300,7 +300,7 @@ function X(e) {
         onPurchaseTermsChange: j,
         legalTermsNodeRef: C,
         hasLegalTermsFlash: _
-    } = e, L = (0, x.D7)({
+    } = e, L = (0, v.D7)({
         location: "GuildBoostingReview"
     }), M = function(e) {
         let t, {
@@ -372,7 +372,7 @@ function X(e) {
         proratedInvoicePreview: en,
         renewalInvoicePreview: ei
     } = M;
-    if (null == en || null == ei || null == $) return L ? (0, i.jsx)(v.Ed, {}) : (0, i.jsx)(P.A, {});
+    if (null == en || null == ei || null == $) return L ? (0, i.jsx)(x.Ed, {}) : (0, i.jsx)(P.A, {});
     let er = (0, i.jsx)(Q, {
             isSubscriptionUpdate: B,
             premiumSubscription: o,
@@ -573,7 +573,7 @@ function X(e) {
             t = (0, i.jsx)(g.f7, {
                 ...e
             });
-        return (0, i.jsx)(v.rg, {
+        return (0, i.jsx)(x.rg, {
             shouldShowGlobalNotices: !0,
             purchaseItemContent: t,
             subscriptionDetailsContent: er,

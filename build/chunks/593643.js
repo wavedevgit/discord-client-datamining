@@ -1,16 +1,12 @@
 /** chunk id: 593643 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    D8: () => a,
-    _U: () => s
+    D8: () => i
 });
-var l = n(600975),
-    i = n(688151);
-let s = (0, l.C)({
+let l = (0, n(600975).C)({
     id: "2026-03_voice_badge",
     kind: "guild",
     label: "Display Voice Channel Badge",
-    commonTriggerPoint: i.$G.CONNECTION_OPEN,
     defaultConfig: {
         enabled: !1
     },
@@ -29,12 +25,12 @@ let s = (0, l.C)({
     }]
 });
 
-function a(e) {
+function i(e) {
     let {
         guildId: t,
         location: n
     } = e;
-    return s.useExperiment({
+    return l.useExperiment({
         guildId: t,
         location: n
     }, {

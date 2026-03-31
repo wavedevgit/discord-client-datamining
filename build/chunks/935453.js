@@ -8,8 +8,8 @@ var r = n(835245),
     a = n(397927),
     l = n(391048),
     s = n(636099),
-    o = n(608805),
-    d = n(120700),
+    o = n(120700),
+    d = n(742810),
     c = n(954571),
     u = n(652215);
 
@@ -40,9 +40,9 @@ function _(e) {
     }, {
         onCloseCallback: () => {
             if (!h) {
-                let e = (0, o.q1)({
+                let e = (0, d.q1)({
                     location: "GuildProductPurchaseModal",
-                    unifiedCheckoutFlow: d.C.GUILD_PRODUCT_CHECKOUT
+                    unifiedCheckoutFlow: o.C.GUILD_PRODUCT_CHECKOUT
                 });
                 c.default.track(u.HAw.PAYMENT_FLOW_CANCELED, {
                     load_id: p,
@@ -50,8 +50,8 @@ function _(e) {
                     is_gift: !1,
                     sku_id: g,
                     location_stack: Array.isArray(m) ? m : [m],
-                    checkout_design: e ? o.rS.UNIFIED : o.rS.LEGACY,
-                    checkout_flow: d.C.GUILD_PRODUCT_CHECKOUT
+                    checkout_design: e ? d.rS.UNIFIED : d.rS.LEGACY,
+                    checkout_flow: o.C.GUILD_PRODUCT_CHECKOUT
                 })
             }(0, l.ET)(), (0, s.z)()
         },

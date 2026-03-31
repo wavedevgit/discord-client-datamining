@@ -12,8 +12,8 @@ var l = t(627968),
     d = t(417597),
     c = t(397927),
     p = t(428644),
-    m = t(608805),
-    E = t(69882),
+    m = t(69882),
+    E = t(742810),
     _ = t(666468),
     x = t(543767),
     S = t(810498),
@@ -112,7 +112,7 @@ function W(e) {
         ej = e_ && null == eA,
         eR = e_ && null != eA,
         eC = ej && null == V && eg?.subscriptionPeriodEnd == null,
-        eM = (0, m.D7)({
+        eM = (0, E.D7)({
             location: "premium_payment_plan_select_step"
         }),
         ey = i.useMemo(() => ({
@@ -125,7 +125,7 @@ function W(e) {
             useCompactGiftComponents: ed,
             handleClose: K
         }), [ex, eE, X?.id, r, eg?.subscriptionPeriodEnd, eg?.invoiceItems, et, ed, K]);
-    if (eC) return eM ? (0, l.jsx)(E.Ed, {
+    if (eC) return eM ? (0, l.jsx)(m.Ed, {
         className: B.QW
     }) : (0, l.jsx)(O.A, {});
     o()(null != Q, "Step should be set"), o()(ex.length > 0, "Premium plan options should be set");

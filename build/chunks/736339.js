@@ -1,7 +1,7 @@
 /** chunk id: 736339 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => j
+    A: () => T
 }), n(321073);
 var l = n(311907),
     i = n(73153),
@@ -89,7 +89,7 @@ class S extends l.Ay.Store {
         return _ !== e || null == I ? null : c.get(e)?.conversationMetadataById.get(I)?.color ?? null
     }
 }
-let j = new S(i.h, {
+let T = new S(i.h, {
     CONVERSATIONS_FETCH_START: function(e) {
         let {
             channelId: t

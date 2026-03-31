@@ -30,11 +30,11 @@ function A(e, t) {
         viewingChannelId: _
     } = t, b = (0, c.I)({
         location: "useMessageRenderedContent"
-    }), [S, j] = i.useState(!1), T = i.useCallback(e => {
-        e && j(!0)
+    }), [S, T] = i.useState(!1), j = i.useCallback(e => {
+        e && T(!0)
     }, []);
     return i.useEffect(() => {
-        j(!1)
+        T(!1)
     }, [e.content]), i.useMemo(() => {
         if (null != e.customRenderedContent) return e.customRenderedContent;
         if (e.isUnsupported) return {
@@ -61,7 +61,7 @@ function A(e, t) {
                         channelId: e.channel_id,
                         viewingChannelId: _,
                         guildId: (0, a.U)(e),
-                        setHasSpoilerEmbeds: T
+                        setHasSpoilerEmbeds: j
                     },
                     children: (0, l.jsx)(h, {
                         content: e.content

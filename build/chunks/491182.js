@@ -37,23 +37,23 @@ let A = function(e) {
                 right: 4
             }
         },
-        hasThread: j,
-        isSystemMessage: T,
+        hasThread: T,
+        isSystemMessage: j,
         hasReply: y,
         author: R,
         onMouseEnter: M,
         onMouseLeave: O,
         ...w
-    } = e, L = (0, r.bG)([g.A], () => R?.guildId == null || R?.colorRoleId == null ? null : g.A.getRole(R.guildId, R.colorRoleId)), k = (0, m.jV)(R?.guildId, L) && (0, d.kz)(R), [G, D] = i.useState(!1), U = i.useCallback(e => {
-        D(!0), M?.(e)
+    } = e, L = (0, r.bG)([g.A], () => R?.guildId == null || R?.colorRoleId == null ? null : g.A.getRole(R.guildId, R.colorRoleId)), k = (0, m.jV)(R?.guildId, L) && (0, d.kz)(R), [D, G] = i.useState(!1), U = i.useCallback(e => {
+        G(!0), M?.(e)
     }, [M]), P = i.useCallback(e => {
-        D(!1), O?.(e)
+        G(!1), O?.(e)
     }, [O]), H = (0, c.W)({
         location: "BaseMessage"
     }), V = (0, l.jsx)(o.C.Provider, {
         value: {
-            animate: G,
-            setAnimate: D
+            animate: D,
+            setAnimate: G
         },
         children: (0, l.jsx)(u.vN3, {
             ...S,
@@ -67,8 +67,8 @@ let A = function(e) {
                     [h.VH]: f,
                     [h.E]: !n,
                     [h.GZ]: A,
-                    [h.pR]: j,
-                    [h.X4]: T,
+                    [h.pR]: T,
+                    [h.X4]: j,
                     [h.h8]: y
                 }),
                 ref: b,

@@ -45,12 +45,12 @@ let I = e => {
         }) : N.intl.formatToPlainString(N.t.UDDkGy, {
             name: I
         }),
-        j = {
+        T = {
             ...t,
             src: null == t.src ? t.src : (0, u.ux)(t.src, 40),
             size: 40
         },
-        T = b ? () => {
+        j = b ? () => {
             (0, g.pX)(v.BVt.CHANNEL(n.id, C.VV.ROLE_SUBSCRIPTIONS))
         } : () => {
             (0, c.K4)({
@@ -69,7 +69,7 @@ let I = e => {
                     children: [(0, l.jsx)("div", {
                         className: E.Xq,
                         children: (0, l.jsx)(m.A, {
-                            ...j,
+                            ...T,
                             enableTooltip: !1,
                             className: E.__invalid_roleIcon,
                             enableHeight: !1
@@ -91,7 +91,7 @@ let I = e => {
                     size: "sm",
                     variant: "secondary",
                     text: N.intl.string(N.t["H930+H"]),
-                    onClick: T,
+                    onClick: j,
                     icon: a._Jp,
                     fullWidth: !0,
                     autoFocus: !0
