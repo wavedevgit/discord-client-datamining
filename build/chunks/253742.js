@@ -15,9 +15,9 @@ var i = n(627968),
     h = n(765548),
     _ = n(793574),
     m = n(688810),
-    p = n(659974),
-    g = n(384059),
-    E = n(480890),
+    p = n(384059),
+    g = n(480890),
+    E = n(556525),
     I = n(551826),
     f = n(342296),
     C = n(961350),
@@ -120,7 +120,7 @@ function L(e) {
                 guildId: w,
                 channel: A,
                 showMediaItems: !0,
-                onInteraction: (0, E.s)("GuildChannelUserContextMenu", _.A.RTC_PANEL, {
+                onInteraction: (0, g.s)("GuildChannelUserContextMenu", _.A.RTC_PANEL, {
                     targetUserId: h.id
                 })
             })
@@ -132,17 +132,17 @@ function L(e) {
                 ...t,
                 user: h,
                 showMediaItems: !0,
-                onInteraction: (0, E.s)("UserGenericContextMenu", _.A.RTC_PANEL, {
+                onInteraction: (0, g.s)("UserGenericContextMenu", _.A.RTC_PANEL, {
                     targetUserId: h.id
                 })
             })
         })
     }
     let Y = (0, s.bG)([N.A], () => N.A.getVoiceVolume(h.id)),
-        W = (0, p.v)({
+        W = (0, E.v)({
             isSpeaking: j,
             voiceDb: Y,
-            spreadDirection: p.O.INSET_ONLY,
+            spreadDirection: E.O.INSET_ONLY,
             maxInnerSpreadRadius: 3
         });
     return (0, i.jsx)(f.A, {
@@ -157,7 +157,7 @@ function L(e) {
             children: (0, i.jsx)(d.DUT, {
                 innerRef: t,
                 onClick: t => {
-                    e.onClick(t), (0, g.X)(a, g.O.VOICE_USER)
+                    e.onClick(t), (0, p.X)(a, p.O.VOICE_USER)
                 },
                 className: b.H,
                 onContextMenu: F,

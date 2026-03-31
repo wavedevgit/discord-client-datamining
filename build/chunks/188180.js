@@ -37,14 +37,14 @@ function g(e) {
         usePersistentBadge: g,
         useTitle: x,
         variant: E = "default"
-    } = s, A = x?.(), b = function(e) {
+    } = s, A = x?.(), S = function(e) {
         switch (e) {
             case "default":
                 return "currentColor";
             case "destructive":
                 return "text-feedback-critical"
         }
-    }(E), S = function(e) {
+    }(E), b = function(e) {
         switch (e) {
             case "default":
                 return "currentColor";
@@ -69,12 +69,12 @@ function g(e) {
             children: [null != _ ? (0, r.jsx)(_, {}) : (0, r.jsxs)("div", {
                 className: v.Ly,
                 children: [(0, r.jsx)(f, {
-                    color: S,
+                    color: b,
                     size: y,
                     className: v.Kk
                 }), (0, r.jsx)(o.Text, {
                     variant: "text-md/medium",
-                    color: b,
+                    color: S,
                     children: A
                 })]
             }), j]
@@ -108,14 +108,14 @@ function x(e) {
         categories: y,
         visibleContent: n,
         dismissibleBadges: a
-    }) : null, [v, y, n, a]), A = l ? "li" : "div", b = i.useMemo(() => (0, f.H)(t.key, n, a), [t.key, n, a]);
+    }) : null, [v, y, n, a]), A = l ? "li" : "div", S = i.useMemo(() => (0, f.H)(t.key, n, a), [t.key, n, a]);
     return l ? (0, r.jsx)(g, {
         tag: A,
         panelKey: o?.key,
         onClick: x,
         active: v,
         node: t,
-        dismissibleBadge: b,
+        dismissibleBadge: S,
         children: E
     }) : (0, r.jsx)(s.tG, {
         id: t.key,
@@ -125,7 +125,7 @@ function x(e) {
             onClick: x,
             active: v,
             node: t,
-            dismissibleBadge: b,
+            dismissibleBadge: S,
             listItemProps: e,
             children: E
         })

@@ -105,9 +105,11 @@ function y(e) {
     } = e, a = (0, o.bG)([u.A], () => u.A.quests), {
         dismissQuestHomeHeroContent: r
     } = (0, f.I)();
-    return l.useEffect(() => {
+    l.useEffect(() => {
         r(T.i.INDIRECT_ACTION)
-    }, [r]), (0, i.jsx)(g.R, {
+    }, [r]);
+    let h = l.useMemo(() => t.ctaQuests.find(e => a.has(e.questId)), [a, t.ctaQuests]);
+    return (0, i.jsx)(g.R, {
         adContentId: t.campaignId,
         adCreativeType: s.p.QUEST_HOME_HERO,
         questContent: A.uF.QUEST_HOME_HERO,
@@ -145,9 +147,9 @@ function y(e) {
                     size: "md",
                     text: t.ctaSponsorUrl.title,
                     variant: "overlay-primary"
-                }), t.ctaQuests.map((e, l) => a.has(e.questId) ? (0, i.jsx)(d.Button, {
+                }), null != h && (0, i.jsx)(d.Button, {
                     onClick: () => {
-                        n?.(e.questId), (0, _.vK)({
+                        n?.(h.questId), (0, _.vK)({
                             adContentId: t.campaignId,
                             adCreativeType: s.p.QUEST_HOME_HERO,
                             questContent: A.uF.QUEST_HOME_HERO,
@@ -156,9 +158,9 @@ function y(e) {
                         })
                     },
                     size: "md",
-                    text: e.title,
+                    text: h.title,
                     variant: "color-mix"
-                }, l) : null)]
+                })]
             }),
             background: (0, i.jsx)(b, {
                 assetImage: t.assetHeroImage,

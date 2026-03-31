@@ -28,14 +28,14 @@ function p(e) {
         emptyState: x,
         searchQuery: E,
         clearSearchQuery: A
-    } = e, b = d.A.useField("currentPanelKey"), {
-        node: S,
+    } = e, S = d.A.useField("currentPanelKey"), {
+        node: b,
         visibleDirectory: N,
         accessibleDirectory: j
     } = (0, u.Ay)(t, E ?? ""), C = null != n && N.entry(n)?.parentPanelKey != null ? n : p, R = i.useMemo(() => {
-        let e = j.entry(b ?? C)?.parentPanelKey;
+        let e = j.entry(S ?? C)?.parentPanelKey;
         if (null != e) return j.getPanelOrThrow(e)
-    }, [b, j, C]), {
+    }, [S, j, C]), {
         navigateWithValidation: I
     } = (0, o.L_)();
     i.useEffect(() => {
@@ -60,13 +60,13 @@ function p(e) {
             accessibleDirectory: j
         }), [N, j]),
         L = i.useMemo(() => () => I(_), [I, _]),
-        O = null != b ? N.get(b) : void 0;
+        O = null != S ? N.get(S) : void 0;
     return (0, r.jsx)(c.x.Provider, {
         value: k,
         children: (0, r.jsxs)("div", {
             className: m.k,
             children: [(0, r.jsx)(s.L, {
-                root: S,
+                root: b,
                 onClose: L,
                 footer: v,
                 emptyState: x,

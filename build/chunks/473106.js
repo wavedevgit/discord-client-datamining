@@ -32,8 +32,8 @@ var a = l(627968),
     R = l(216678),
     I = l(194509),
     N = l(761705),
-    M = l(448362),
-    D = l(71393),
+    D = l(448362),
+    M = l(71393),
     O = l(166403),
     L = l(652215),
     B = l(788868),
@@ -102,7 +102,7 @@ let $ = {
         name: "Checkout Test Panel",
         id: "checkout-test-panel",
         component: () => {
-            let [e, t] = n.useState(B.pe.TIER_2), [l, o] = n.useState(null), u = (0, s.yK)([D.A], () => D.A.getGuildsArray()), [E] = (0, s.yK)([O.A], () => [O.A.getPremiumSubscription()]), _ = u.map(e => ({
+            let [e, t] = n.useState(B.pe.TIER_2), [l, o] = n.useState(null), u = (0, s.yK)([M.A], () => M.A.getGuildsArray()), [E] = (0, s.yK)([O.A], () => [O.A.getPremiumSubscription()]), _ = u.map(e => ({
                 id: e.id,
                 value: e,
                 label: e.name
@@ -318,9 +318,9 @@ let $ = {
                                     children: [null !== X && (0, a.jsxs)(p.Text, {
                                         variant: "text-sm/normal",
                                         children: ["Error fetching Virtual Currency Balance: ", X.message]
-                                    }), (0, a.jsx)(M.Gy, {
+                                    }), (0, a.jsx)(D.Gy, {
                                         balance: K ?? 0,
-                                        balanceWidgetMode: M.k7.SELECTED
+                                        balanceWidgetMode: D.k7.SELECTED
                                     })]
                                 })]
                             }), (0, a.jsx)(p.ksK, {

@@ -1,5 +1,5 @@
 /** chunk id: 87862 params = (module,exports,require) **/
-t.r(e.exports = {
+n.r(e.exports = {
     root: "root__9c3be",
     layoutContainer: "layoutContainer__9c3be",
     profileContentContainer: "profileContentContainer__9c3be",

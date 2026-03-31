@@ -19,8 +19,8 @@ var n = i(627968),
     h = i(717558),
     p = i(964486),
     x = i(775602),
-    f = i(659974),
-    I = i(66004),
+    f = i(66004),
+    I = i(556525),
     S = i(142524),
     E = i(534400),
     v = i(342296),
@@ -196,7 +196,7 @@ let z = l.memo(function(e) {
                 width: a,
                 height: a
             },
-            children: (0, n.jsx)(I.A, {
+            children: (0, n.jsx)(f.A, {
                 userId: i,
                 channelId: l,
                 guildId: s,
@@ -219,7 +219,7 @@ let z = l.memo(function(e) {
             displayUserMode: A,
             size: p = G.OSZ.LARGE,
             onClick: x,
-            onContextMenu: I,
+            onContextMenu: f,
             context: v,
             guildId: j,
             isSettingsPreview: b = !1,
@@ -256,8 +256,8 @@ let z = l.memo(function(e) {
             location: G.ThZ.UNLOCKED_OVERLAY,
             hideTip: !0
         }), [r, t, ed, R, eu, U]), eA = l.useCallback(e => {
-            s || I?.(e, r)
-        }, [s, I, r]), em = l.useCallback(() => {
+            s || f?.(e, r)
+        }, [s, f, r]), em = l.useCallback(() => {
             s || null != eo && L(r.id)
         }, [s, L, eo, r]), eg = s || b, eh = l.useMemo(() => M(p), [p]), ep = l.useMemo(() => k(eh), [eh]), ex = l.useMemo(() => r.getAvatarURL(j, ep), [r, j, ep]), ef = (0, d.bG)([C.A], () => C.A.getVoiceVolume($));
         return A === G.f5z.ONLY_WHILE_SPEAKING && eg && !er || null == et ? null : i ? (0, n.jsxs)(o.DUT, {
@@ -331,7 +331,7 @@ let z = l.memo(function(e) {
                 isSpeaking: er,
                 voiceDb: ef,
                 speakingStylesConfig: {
-                    spreadDirection: f.O.INSET_ONLY,
+                    spreadDirection: I.O.INSET_ONLY,
                     maxInnerSpreadRadius: 4,
                     hideIfVolumeMissing: !0
                 },
@@ -363,7 +363,7 @@ let z = l.memo(function(e) {
                 isSpeaking: er,
                 voiceDb: ef,
                 speakingStylesConfig: {
-                    spreadDirection: f.O.INSET_ONLY,
+                    spreadDirection: I.O.INSET_ONLY,
                     maxInnerSpreadRadius: 4,
                     hideIfVolumeMissing: !0
                 },

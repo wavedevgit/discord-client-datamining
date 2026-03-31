@@ -5,9 +5,9 @@ t.d(n, {
 var i = t(627968);
 t(64700);
 var s = t(347805),
-    l = t(183555),
-    r = t(716804),
-    a = t(900179),
+    a = t(183555),
+    l = t(716804),
+    r = t(900179),
     o = t(518477),
     d = t(985018),
     c = t(637089);
@@ -15,10 +15,10 @@ var s = t(347805),
 function u(e) {
     let {
         userId: n
-    } = e, t = (0, r.g)(), {
+    } = e, t = (0, l.g)(), {
         trackUserProfileAction: u
-    } = (0, l.NJ)();
-    return (0, i.jsx)(a.A, {
+    } = (0, a.NJ)();
+    return (0, i.jsx)(r.A, {
         heading: d.intl.string(d.t["mQKv+v"]),
         scrollTargetId: o.bk.NOTE,
         children: (0, i.jsx)(s.A, {

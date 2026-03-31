@@ -4,40 +4,40 @@ t.d(n, {
 });
 var i = t(627968),
     s = t(64700),
-    l = t(311907),
-    r = t(397927),
-    a = t(351906),
+    a = t(311907),
+    l = t(397927),
+    r = t(351906),
     o = t(183555),
     d = t(382120),
     c = t(128490),
     u = t(539548),
-    A = t(412775),
-    _ = t(86404),
+    _ = t(412775),
+    A = t(86404),
     x = t(738759),
     p = t(518477),
     m = t(985018),
-    I = t(272823),
-    f = t(613761);
+    g = t(272823),
+    I = t(613761);
 
-function g(e) {
+function f(e) {
     let {
         section: n,
         user: t,
         currentUser: s,
-        displayProfile: l,
-        guildId: r,
-        channelId: a,
+        displayProfile: a,
+        guildId: l,
+        channelId: r,
         onClose: o
     } = e;
     return n === p.RP.ACTIVITY ? (0, i.jsx)(u.A, {
         user: t,
         currentUser: s,
-        guildId: r,
+        guildId: l,
         onClose: o
-    }) : n === p.RP.MUTUAL_FRIENDS ? (0, i.jsx)(_.A, {
+    }) : n === p.RP.MUTUAL_FRIENDS ? (0, i.jsx)(A.A, {
         user: t,
-        guildId: r,
-        channelId: a,
+        guildId: l,
+        channelId: r,
         onClose: o
     }) : n === p.RP.MUTUAL_GUILDS ? (0, i.jsx)(x.A, {
         user: t,
@@ -46,12 +46,12 @@ function g(e) {
         user: t
     }) : n === p.RP.BOT_INFO ? (0, i.jsx)(c.A, {
         user: t,
-        displayProfile: l,
-        guildId: r,
+        displayProfile: a,
+        guildId: l,
         onClose: o
-    }) : (0, i.jsx)(A.A, {
+    }) : (0, i.jsx)(_.A, {
         user: t,
-        displayProfile: l,
+        displayProfile: a,
         onClose: o
     })
 }
@@ -63,66 +63,66 @@ function h(e) {
         displayProfile: d,
         guildId: c,
         items: u,
-        initialSection: A = p.RP.USER_INFO,
-        onClose: _
+        initialSection: _ = p.RP.USER_INFO,
+        onClose: A
     } = e, {
         trackUserProfileAction: x
-    } = (0, o.NJ)(), h = (0, l.bG)([a.A], () => a.A.hidePersonalInformation), [b, j] = s.useState(() => u.find(e => {
+    } = (0, o.NJ)(), h = (0, a.bG)([r.A], () => r.A.hidePersonalInformation), [b, j] = s.useState(() => u.find(e => {
         let {
             section: n
         } = e;
-        return n === A
+        return n === _
     })?.section ?? u[0]?.section);
     s.useEffect(() => {
         null == u.find(e => e.section === b) && j(u[0].section)
     }, [u, b]);
-    let C = s.useCallback(e => {
+    let v = s.useCallback(e => {
         x({
             action: "PRESS_SECTION",
             section: e
         }), j(e)
     }, [x]);
     return h ? (0, i.jsx)("div", {
-        className: f.kL,
+        className: I.kL,
         children: (0, i.jsxs)("div", {
-            className: I.Ie,
+            className: g.Ie,
             children: [(0, i.jsx)("div", {
-                className: I.hB
+                className: g.hB
             }), (0, i.jsx)("div", {
-                className: I.BI,
+                className: g.BI,
                 children: m.intl.string(m.t.Br1ls3)
             })]
         })
     }) : (0, i.jsxs)("div", {
-        className: f.kL,
-        children: [(0, i.jsx)(r.VQ0, {
-            className: f.$H,
+        className: I.kL,
+        children: [(0, i.jsx)(l.VQ0, {
+            className: I.$H,
             type: "top",
             selectedItem: b,
-            onItemSelect: C,
+            onItemSelect: v,
             children: u.map(e => {
                 let {
                     section: n,
                     text: t
                 } = e;
-                return (0, i.jsx)(r.VQ0.Item, {
-                    className: f.YU,
+                return (0, i.jsx)(l.VQ0.Item, {
+                    className: I.YU,
                     id: n,
                     "aria-label": t,
-                    children: (0, i.jsx)(r.Text, {
+                    children: (0, i.jsx)(l.Text, {
                         variant: "text-sm/normal",
                         children: t
                     })
                 }, n)
             })
-        }), (0, i.jsx)(g, {
+        }), (0, i.jsx)(f, {
             items: u,
             section: b,
             user: n,
             currentUser: t,
             displayProfile: d,
             guildId: c,
-            onClose: _
+            onClose: A
         })]
     })
 }
