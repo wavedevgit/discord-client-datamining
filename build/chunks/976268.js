@@ -14,15 +14,15 @@ var i = n(627968),
     m = n(968898),
     g = n(95701),
     _ = n(427157),
-    A = n(288737),
-    x = n(555528),
+    x = n(288737),
+    A = n(555528),
     h = n(287809),
     p = n(256415),
     T = n(403362),
     f = n(652215);
 n(392164);
-var E = n(985018),
-    S = n(511767);
+var S = n(985018),
+    E = n(511767);
 
 function b(e) {
     let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
@@ -30,7 +30,7 @@ function b(e) {
         i = arguments.length > 3 && void 0 !== arguments[3] && arguments[3],
         s = "456" + Math.floor(1e6 * Math.random());
     return {
-        voiceState: new A.A({
+        voiceState: new x.A({
             channelId: "123",
             userId: s,
             sessionId: "789",
@@ -78,25 +78,25 @@ function C() {
             displayNameMode: p.default.getDisplayNameMode(),
             displayUserMode: p.default.getDisplayUserMode()
         })),
-        [A] = s.useState(() => [b(E.intl.string(E.t.C0ZDvo), !0, !1), b(E.intl.string(E.t.iOtj8E), !1, !1, !0), b(E.intl.string(E.t["0oqNgL"]), !1, !0)]),
-        C = (0, r.bG)([d.A, x.A], () => {
+        [x] = s.useState(() => [b(S.intl.string(S.t.C0ZDvo), !0, !1), b(S.intl.string(S.t.iOtj8E), !1, !1, !0), b(S.intl.string(S.t["0oqNgL"]), !1, !0)]),
+        C = (0, r.bG)([d.A, A.A], () => {
             let e = d.A.getWidgetByType(f.uss.VOICE_V3);
             if (null == e) return null;
-            let t = x.A.getWidget(e.id);
+            let t = A.A.getWidget(e.id);
             return null != t && (0, c.ZO)(t) ? t : null
         }),
         N = C?.meta?.voiceStatesMaxShown ?? 8,
-        v = [null != t ? ((e = b(t.username)).user = t, e) : null, ...A].filter(T.Vq),
+        v = [null != t ? ((e = b(t.username)).user = t, e) : null, ...x].filter(T.Vq),
         I = [new Map(v.map(e => [e.user.id, e])), v.map(e => e.user.id)],
         j = (0, i.jsx)(o.NPJ, {
             theme: f.NJ8.MIDNIGHT,
             children: e => (0, i.jsxs)("div", {
-                className: a()(S.Y5, e),
+                className: a()(E.Y5, e),
                 children: [(0, i.jsx)("div", {
-                    className: S.kJ,
+                    className: E.kJ,
                     children: (0, i.jsx)(u.DH, {
                         id: "voice-widget",
-                        title: E.intl.string(E.t.KNJ6Vq),
+                        title: S.intl.string(S.t.KNJ6Vq),
                         channel: (0, g.createChannelRecord)({
                             id: "123",
                             name: "Test Channel",
@@ -120,9 +120,9 @@ function C() {
                         maxDisplayedVoiceStates: N
                     })
                 }), (0, i.jsxs)("div", {
-                    className: S.R$,
+                    className: E.R$,
                     children: [(0, i.jsx)(m.Pl, {
-                        children: E.intl.string(E.t.KNJ6Vq)
+                        children: S.intl.string(S.t.KNJ6Vq)
                     }), (0, i.jsx)(m.CS, {}), (0, i.jsx)(m.O0, {
                         id: C?.id ?? "voice-widget",
                         pinned: C?.pinned ?? !1
@@ -131,7 +131,7 @@ function C() {
             })
         });
     return (0, i.jsx)("div", {
-        className: S.F9,
+        className: E.F9,
         children: j
     })
 }

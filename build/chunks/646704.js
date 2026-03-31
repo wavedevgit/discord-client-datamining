@@ -1,6 +1,6 @@
 /** chunk id: 646704 params = (module,exports,require) **/
 n.d(t, {
-    i: () => A
+    i: () => x
 });
 var i = n(627968),
     s = n(64700),
@@ -17,7 +17,7 @@ let _ = (0, d.t_)(u.X.SUBSCRIPTIONS_PANEL, {
         useTitle: () => g.intl.string(g.t.trSpHX),
         buildLayout: () => [m.J]
     }),
-    A = (0, d.i4)(u.X.SUBSCRIPTIONS_SIDEBAR_ITEM, {
+    x = (0, d.i4)(u.X.SUBSCRIPTIONS_SIDEBAR_ITEM, {
         useTitle: () => g.intl.string(g.t.trSpHX),
         icon: l.SubscriptionIcon,
         usePersistentBadge: function() {

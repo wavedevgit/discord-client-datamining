@@ -14,14 +14,14 @@ var i = n(627968),
     m = n(793574),
     g = n(688810),
     _ = n(531260),
-    A = n(235986),
-    x = n(543767),
+    x = n(235986),
+    A = n(543767),
     h = n(253390),
     p = n(43594),
     T = n(735164),
     f = n(683433),
-    E = n(692440),
-    S = n(178368),
+    S = n(692440),
+    E = n(178368),
     b = n(97352),
     C = n(166403),
     N = n(473145),
@@ -80,7 +80,7 @@ function L(e) {
     })
 }
 async function D(e, t, n, i) {
-    let s, l, r = null != i ? i : (s = Object.values(S.A.boostSlots), null != (l = a().sortBy(s.filter(e => !(0, N.I5)(e)), e => [null != e.premiumGuildSubscription, null != e.cooldownEndsAt ? new Date(e.cooldownEndsAt) : null])[0]) ? l.id : null);
+    let s, l, r = null != i ? i : (s = Object.values(E.A.boostSlots), null != (l = a().sortBy(s.filter(e => !(0, N.I5)(e)), e => [null != e.premiumGuildSubscription, null != e.cooldownEndsAt ? new Date(e.cooldownEndsAt) : null])[0]) ? l.id : null);
     if (null == r) throw Error("No slot to cancel");
     let o = (0, v.aE)(e, t);
     await (0, u.HJ)(r), await (0, c.nV)(e, {
@@ -99,7 +99,7 @@ function G(e) {
         onBack: a,
         onNext: r,
         onClose: c
-    } = e, [u, _] = s.useState(!1), [p, S] = s.useState(null), [C, N] = s.useMemo(() => {
+    } = e, [u, _] = s.useState(!1), [p, E] = s.useState(null), [C, N] = s.useMemo(() => {
         try {
             return [(0, h.v)(t, -1), !1]
         } catch {
@@ -124,14 +124,14 @@ function G(e) {
         }
     }), {
         analyticsLocations: M
-    } = (0, g.Ay)(), [k] = (0, x.Kq)({
+    } = (0, g.Ay)(), [k] = (0, A.Kq)({
         subscriptionId: t.id,
         renewal: !0,
         currency: t.currency,
         paymentSourceId: t.paymentSourceId,
         analyticsLocations: M,
         analyticsLocation: m.A.GUILD_BOOST_SLOT_CANCELLATION_MODAL_CURRENT_INVOICE_PREVIEW
-    }), U = null != G ? (0, v.Om)(t, C[0]?.quantity ?? 0, G.id) : null, [w] = (0, x.Kq)({
+    }), U = null != G ? (0, v.Om)(t, C[0]?.quantity ?? 0, G.id) : null, [w] = (0, A.Kq)({
         subscriptionId: t.id,
         items: U,
         renewal: !0,
@@ -192,7 +192,7 @@ function G(e) {
                     value: (0, I.CE)((0, I.$g)(F, t.currency), H, z),
                     className: P.Au
                 }), null != U && U.length > 0 ? (0, i.jsxs)("div", {
-                    children: [(0, i.jsx)(T.pK, {}), (0, i.jsx)(E.m0, {
+                    children: [(0, i.jsx)(T.pK, {}), (0, i.jsx)(S.m0, {
                         premiumSubscription: t,
                         renewalInvoice: w,
                         isUpdate: !0
@@ -201,17 +201,17 @@ function G(e) {
             })]
         }), (0, i.jsxs)(d.jlY, {
             "data-migration-pending": !0,
-            align: A.A.Align.CENTER,
-            justify: A.A.Justify.BETWEEN,
+            align: x.A.Align.CENTER,
+            justify: x.A.Justify.BETWEEN,
             children: [(0, i.jsx)(d.Button, {
                 variant: "critical-primary",
                 text: R.intl.string(R.t["/AS/gM"]),
                 disabled: u,
                 onClick: async () => {
                     try {
-                        _(!0), S(null), await D(t, C, M, n), r()
+                        _(!0), E(null), await D(t, C, M, n), r()
                     } catch (e) {
-                        S(R.intl.string(R.t["5mlOCW"])), _(!1)
+                        E(R.intl.string(R.t["5mlOCW"])), _(!1)
                     }
                 }
             }), (0, i.jsx)(f.A, {
@@ -265,7 +265,7 @@ function k(e) {
     }, []);
     let r = (0, o.bG)([C.A], () => C.A.getPremiumTypeSubscription()),
         u = (0, _.A)(),
-        [A, x] = s.useState(1),
+        [x, A] = s.useState(1),
         h = "control" === (0, p.D)("GuildBoostSlotCancellationModal"),
         {
             analyticsLocations: T
@@ -274,14 +274,14 @@ function k(e) {
         "data-migration-pending": !0,
         children: (0, i.jsx)(d.y$y, {})
     });
-    else switch (A) {
+    else switch (x) {
         case 1:
             t = (0, i.jsx)(L, {
                 premiumSubscription: r,
                 fractionalPremiumInfo: u,
                 isInventory: null == n.premiumGuildSubscription,
                 showImage: h,
-                onNext: () => x(2),
+                onNext: () => A(2),
                 onClose: a,
                 transitionState: l
             });
@@ -295,8 +295,8 @@ function k(e) {
                     premiumSubscription: r,
                     guildBoostSlotId: n.id,
                     fractionalPremiumInfo: u,
-                    onBack: () => x(1),
-                    onNext: () => x(3),
+                    onBack: () => A(1),
+                    onNext: () => A(3),
                     onClose: a
                 })
             });
@@ -311,7 +311,7 @@ function k(e) {
             });
             break;
         default:
-            throw Error(`Unexpected step: ${A}`)
+            throw Error(`Unexpected step: ${x}`)
     }
     return (0, i.jsx)(g.f5, {
         value: T,

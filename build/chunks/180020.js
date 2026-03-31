@@ -14,8 +14,8 @@ var i = n(627968),
     m = n(927578),
     g = n(919395),
     _ = n(128450),
-    A = n(652215),
-    x = n(49999),
+    x = n(652215),
+    A = n(49999),
     h = n(985018),
     p = n(241015),
     T = n(162144);
@@ -25,22 +25,22 @@ function f(e) {
         user: t,
         guildId: n,
         className: f
-    } = e, E = m.Ay.canUsePremiumProfileCustomization(t), {
-        analyticsLocations: S
+    } = e, S = m.Ay.canUsePremiumProfileCustomization(t), {
+        analyticsLocations: E
     } = (0, r.Ay)(), {
         userDisplayNameStyles: b,
         guildDisplayNameStyles: C,
         pendingDisplayNameStyles: N,
         pendingErrors: v
     } = (0, g.B0)(t, n), [I, j] = (0, o.kn)([l.M.DISPLAY_NAME_STYLES_NEW_BADGE_PROFILE_PAGE]), y = I === l.M.DISPLAY_NAME_STYLES_NEW_BADGE_PROFILE_PAGE, O = (0, s.useCallback)(() => {
-        j(x.i.TAKE_ACTION), u.default.track(A.HAw.DISPLAY_NAME_STYLES_FROM_SETTINGS), (0, d.L)({
-            analyticsLocations: S,
+        j(A.i.TAKE_ACTION), u.default.track(x.HAw.DISPLAY_NAME_STYLES_FROM_SETTINGS), (0, d.L)({
+            analyticsLocations: E,
             guildId: n
         })
-    }, [S, j, n]), R = (0, s.useCallback)(() => {
+    }, [E, j, n]), R = (0, s.useCallback)(() => {
         (0, c.p)({
             displayNameStyles: null
-        }), u.default.track(A.HAw.DISPLAY_NAME_STYLES_REMOVED)
+        }), u.default.track(x.HAw.DISPLAY_NAME_STYLES_REMOVED)
     }, []), P = (0, s.useCallback)(() => {
         (0, c.p)({
             guildId: n,
@@ -54,7 +54,7 @@ function f(e) {
             className: T.A
         }) : void 0,
         className: f,
-        showPremiumIcon: E,
+        showPremiumIcon: S,
         errors: v,
         children: (0, i.jsxs)("div", {
             className: T.N,

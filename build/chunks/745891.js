@@ -14,8 +14,8 @@ var i = n(627968),
     u = n(672396),
     h = n(652215),
     p = n(985018),
-    f = n(556141);
-let _ = Object.values(u.Li).map(e => 100 * e),
+    _ = n(556141);
+let f = Object.values(u.Li).map(e => 100 * e),
     A = (0, o.Ld)();
 class g extends s.PureComponent {
     initialValue = 100 * this.props.opacity;
@@ -29,20 +29,20 @@ class g extends s.PureComponent {
     }
     render() {
         return (0, i.jsx)("div", {
-            className: f.kL,
+            className: _.kL,
             children: (0, i.jsx)("div", {
-                className: f.xJ,
+                className: _.xJ,
                 children: (0, i.jsx)(l.Apm, {
                     label: p.intl.string(p.t.OVovCb),
                     mini: !0,
                     initialValue: this.initialValue,
                     defaultValue: this.initialValue,
-                    minValue: _[0],
-                    maxValue: _[_.length - 1],
+                    minValue: f[0],
+                    maxValue: f[f.length - 1],
                     handleSize: 10,
                     onValueChange: this.handleUpdateBackgroundOpacity,
                     asValueChanges: this.handlePreviewBackgroundOpacity,
-                    markers: _,
+                    markers: f,
                     onMarkerRender: h.tEg,
                     equidistant: !0,
                     stickToMarkers: !0,

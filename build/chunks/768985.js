@@ -14,8 +14,8 @@ var i = n(64700),
     m = n(695515),
     g = n(809697),
     _ = n(500470),
-    A = n(33666),
-    x = n(834981),
+    x = n(33666),
+    A = n(834981),
     h = n(191627),
     p = n(652215),
     T = n(204925);
@@ -24,8 +24,8 @@ function f(e) {
     let {
         location: t,
         onMountEffect: n
-    } = e, f = (0, A.A)(), E = (0, x.W1)(), {
-        familyCenterInitialized: S,
+    } = e, f = (0, x.A)(), S = (0, A.W1)(), {
+        familyCenterInitialized: E,
         isLoading: b
     } = (0, l.cf)([m.A], () => ({
         familyCenterInitialized: m.A.getIsInitialized(),
@@ -33,13 +33,13 @@ function f(e) {
     })), C = (0, _.k)(), {
         selectedTab: N,
         handleTabChange: v
-    } = (0, g.A)(), I = c.default.getCurrentUser(), j = null != f, y = S && null != I && !j;
+    } = (0, g.A)(), I = c.default.getCurrentUser(), j = null != f, y = E && null != I && !j;
     (0, a.Ay)(() => {
         (0, d.d)("family-center"), null != n && n()
     });
     let O = {
             isConsideredAdult: "adult" === f,
-            numOfAcceptedRequests: E,
+            numOfAcceptedRequests: S,
             selectedTab: N,
             selectedTeenId: C
         },
@@ -47,7 +47,7 @@ function f(e) {
     return i.useEffect(() => {
         R.current = O
     }), i.useEffect(() => {
-        if (S && j) {
+        if (E && j) {
             let {
                 isConsideredAdult: e,
                 numOfAcceptedRequests: n,
@@ -64,7 +64,7 @@ function f(e) {
                 name: s.K.FAMILY_CENTER_VIEW
             })
         }
-    }, [S, j, t]), i.useEffect(() => {
+    }, [E, j, t]), i.useEffect(() => {
         y && (0, r.yO)(T.w_.FAMILY_CENTER)
     }, [y]), {
         isLoading: b,

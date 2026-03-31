@@ -14,14 +14,14 @@ var i = n(627968),
     m = n(688810),
     g = n(560138),
     _ = n(526292),
-    A = n(236834),
-    x = n(549996),
+    x = n(236834),
+    A = n(549996),
     h = n(371764),
     p = n(379040),
     T = n(65470),
     f = n(792656),
-    E = n(224850),
-    S = n(552554),
+    S = n(224850),
+    E = n(552554),
     b = n(288351),
     C = n(103733),
     N = n(326180),
@@ -35,10 +35,10 @@ let y = s.memo(s.forwardRef((e, t) => {
         isEligibleForBogoPromotion: l
     } = e, {
         analyticsLocations: y
-    } = (0, m.Ay)(u.A.PREMIUM_MARKETING_HERO_CTA), O = (0, S.N)(), R = (0, A.A)(), P = null != R, L = (0, o.bG)([c.A], () => c.A.useReducedMotion), {
+    } = (0, m.Ay)(u.A.PREMIUM_MARKETING_HERO_CTA), O = (0, E.N)(), R = (0, x.A)(), P = null != R, L = (0, o.bG)([c.A], () => c.A.useReducedMotion), {
         visibilityPercentageRef: D,
         visibilityPercentage: G
-    } = (0, C.U)(!L), M = (0, o.bG)([g.A], () => g.A.affinities), k = !P && M.length > 0, U = (0, x.c)(r.C.MARKETING_PAGE_BANNER), w = null != U && "marketingPageBanner" === U.properties.properties.oneofKind, V = (0, _.ar)() && !w;
+    } = (0, C.U)(!L), M = (0, o.bG)([g.A], () => g.A.affinities), k = !P && M.length > 0, U = (0, A.c)(r.C.MARKETING_PAGE_BANNER), w = null != U && "marketingPageBanner" === U.properties.properties.oneofKind, V = (0, _.ar)() && !w;
     return (0, i.jsx)(m.f5, {
         value: y,
         children: (0, i.jsx)("div", {
@@ -74,7 +74,7 @@ let y = s.memo(s.forwardRef((e, t) => {
                             })
                         }), k && (0, i.jsx)("div", {
                             className: j.Qn,
-                            children: (0, i.jsx)(E.A, {
+                            children: (0, i.jsx)(S.A, {
                                 textColor: "text-strong",
                                 smallerText: !1,
                                 isApplicationHome: !0,

@@ -15,14 +15,14 @@ var s = n(990078),
     m = n(927578),
     g = n(580630),
     _ = n(511484),
-    A = n(811611),
-    x = n(473702),
+    x = n(811611),
+    A = n(473702),
     h = n(788868),
     p = n(652215),
     T = n(985018),
     f = n(61772),
-    E = n(818724);
-let S = {
+    S = n(818724);
+let E = {
     page: p.liQ.USER_SETTINGS,
     section: p.JJy.SETTINGS_PREMIUM,
     object: p.ZSU.CARD
@@ -48,7 +48,7 @@ function b(e) {
             currency: t.currency,
             paymentSourceId: t.paymentSourceId
         }),
-        A = (0, g.$g)(_.amount, _.currency);
+        x = (0, g.$g)(_.amount, _.currency);
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(l.Heading, {
             variant: "heading-xl/semibold",
@@ -62,12 +62,12 @@ function b(e) {
             children: a ? T.intl.format(T.t["3ZiutU"], {
                 percent: n.percentage,
                 numMonths: n.duration,
-                regularPrice: A
+                regularPrice: x
             }) : T.intl.format(T.t.N43FMx, {
                 numMonths: n.duration,
                 discountedPrice: u,
                 billingPeriod: T.intl.string(T.t.FPybU7),
-                fullPrice: A
+                fullPrice: x
             })
         })]
     })
@@ -124,7 +124,7 @@ let N = function(e) {
             })
         },
         R = m.Ay.getPlanIdFromInvoice(g, _),
-        P = (0, A.ux)(j?.expires_at);
+        P = (0, x.ux)(j?.expires_at);
     return (0, d.m1)(R) ? null : (0, i.jsx)("div", {
         className: f.S6,
         children: (0, i.jsx)(l.hLv, {
@@ -166,7 +166,7 @@ let N = function(e) {
                                 size: "md",
                                 text: T.intl.string(T.t.zrCzVB),
                                 loading: h,
-                                onClick: () => O(x.g.CONFIRM_DISCOUNT)
+                                onClick: () => O(A.g.CONFIRM_DISCOUNT)
                             }) : (0, i.jsxs)("div", {
                                 className: f.qK,
                                 children: [(0, i.jsx)(s.m, {
@@ -182,7 +182,7 @@ let N = function(e) {
                                             (0, o.A)({
                                                 analyticsLocations: y,
                                                 analyticsLocation: N,
-                                                analyticsObject: S,
+                                                analyticsObject: E,
                                                 subscription: g
                                             })
                                         }
@@ -200,7 +200,7 @@ let N = function(e) {
                         })]
                     }), (0, i.jsx)("img", {
                         className: f.Hp,
-                        src: E,
+                        src: S,
                         alt: "",
                         draggable: !1
                     })]

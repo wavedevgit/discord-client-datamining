@@ -21,8 +21,8 @@ function g() {
         isLoggingGatewayEvents: n,
         isLoggingOverlayEvents: g,
         isLoggingAnalyticsEvents: _,
-        isTracingRequests: A,
-        isForcedCanary: x,
+        isTracingRequests: x,
+        isForcedCanary: A,
         isAxeEnabled: h,
         preventPopoutClose: p,
         onlyShowPreviewAppCollections: T,
@@ -41,8 +41,8 @@ function g() {
         onlyShowPreviewAppCollections: d.default.onlyShowPreviewAppCollections,
         disableAppCollectionsCache: d.default.disableAppCollectionsCache
     })), {
-        horizontalSpacing: E,
-        verticalSpacing: S
+        horizontalSpacing: S,
+        verticalSpacing: E
     } = (0, r.Or)(), {
         setHorizontalSpacing: b,
         setVerticalSpacing: C
@@ -63,10 +63,10 @@ function g() {
         }, "always-deliver"), (0, i.jsx)(l.sLh, {
             id: "forced-canary",
             label: "Forced Canary",
-            checked: x,
+            checked: A,
             action: () => {
                 (0, a.x)({
-                    canary: !x
+                    canary: !A
                 })
             }
         }, "forced-canary"), (0, i.jsx)(l.sLh, {
@@ -124,10 +124,10 @@ function g() {
         }, "analytics-events"), (0, i.jsx)(l.sLh, {
             id: "tracing-requests",
             label: "Tracing Requests",
-            checked: A,
+            checked: x,
             action: () => {
                 (0, a.x)({
-                    trace: !A
+                    trace: !x
                 })
             }
         }, "tracing-requests"), (0, i.jsx)(l.sLh, {
@@ -171,7 +171,7 @@ function g() {
                 control: (e, t) => (0, i.jsx)(l.i42, {
                     ...e,
                     ref: t,
-                    value: E,
+                    value: S,
                     minValue: 0,
                     maxValue: r.YR,
                     onChange: e => b(e),
@@ -184,7 +184,7 @@ function g() {
                 control: (e, t) => (0, i.jsx)(l.i42, {
                     ...e,
                     ref: t,
-                    value: S,
+                    value: E,
                     minValue: 0,
                     maxValue: r.YR,
                     onChange: e => C(e),

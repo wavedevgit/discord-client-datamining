@@ -14,10 +14,10 @@ var i = n(627968),
     m = n(520999),
     g = n(430452),
     _ = n(287809),
-    A = n(780964),
-    x = n(652215),
+    x = n(780964),
+    A = n(652215),
     h = n(985018);
-let p = (0, r.E2)(A.X.CAMERA_BACKGROUND_SETTING, {
+let p = (0, r.E2)(x.X.CAMERA_BACKGROUND_SETTING, {
     useSearchTerms: () => [h.intl.string(h.t.lZTUPs)],
     usePredicate: u.A,
     Component: function() {
@@ -25,15 +25,15 @@ let p = (0, r.E2)(A.X.CAMERA_BACKGROUND_SETTING, {
             t = s.useRef(!1),
             n = (0, l.bG)([g.Ay], () => g.Ay.getVideoDeviceId()),
             [r, u] = s.useState((0, o.i)(_.default.getCurrentUser())),
-            A = s.useRef(r);
+            x = s.useRef(r);
         return s.useEffect(() => () => {
-            t.current && (0, d._C)(A.current)
+            t.current && (0, d._C)(x.current)
         }, []), (0, i.jsx)(m.A, {
             selectedBackgroundOption: r,
             onSelectBackgroundOption: n => {
-                t.current = !0, A.current = n, u(n), (0, c.gB)(n, {
+                t.current = !0, x.current = n, u(n), (0, c.gB)(n, {
                     location: e.location
-                }).catch(x.tEg)
+                }).catch(A.tEg)
             },
             currentDeviceId: n
         })

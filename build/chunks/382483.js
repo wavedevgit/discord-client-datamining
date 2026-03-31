@@ -3,8 +3,8 @@ n.d(t, {
     W: () => o
 });
 var i = n(562465),
-    a = n(73153),
-    l = n(728458),
+    l = n(73153),
+    a = n(728458),
     s = n(385113),
     r = n(652215);
 async function o() {
@@ -12,7 +12,7 @@ async function o() {
         force: e = !1
     } = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
     if (e || s.A.getFeaturedFetchState() !== s.e.FETCHING && s.A.getFeaturedFetchState() !== s.e.SUCCESS) {
-        a.h.dispatch({
+        l.h.dispatch({
             type: "APPLICATION_WIDGET_CONFIG_FEATURED_FETCH_START"
         });
         try {
@@ -20,15 +20,15 @@ async function o() {
                 url: r.Rsh.WIDGET_CONFIGS_FEATURED,
                 rejectWithError: !0
             });
-            a.h.dispatch({
+            l.h.dispatch({
                 type: "APPLICATION_WIDGET_CONFIG_FEATURED_FETCH_SUCCESS",
                 applicationIds: e.body.application_ids,
                 configs: e.body.configs
             })
         } catch (e) {
-            a.h.dispatch({
+            l.h.dispatch({
                 type: "APPLICATION_WIDGET_CONFIG_FEATURED_FETCH_FAILURE"
-            }), l.A.captureException(e)
+            }), a.A.captureException(e)
         }
     }
 }

@@ -14,8 +14,8 @@ var i = n(627968),
     u = n(532624),
     h = n(256415),
     p = n(837921),
-    f = n(350535),
-    _ = n(93465),
+    _ = n(350535),
+    f = n(93465),
     A = n(592598),
     g = n(672396),
     m = n(652215),
@@ -34,8 +34,8 @@ function v() {
         notifications_position: t ? e : null,
         text_notifications_mode: A.A.isNotificationDisabled(g.KS.TextChat) ? "DISABLED" : "ENABLED",
         text_opacity_slider: h.default.getTextWidgetOpacity(),
-        hotkey: null != n ? (0, f.dI)(n.shortcut) : null,
-        text_activation_hotkey: null != i ? (0, f.dI)(i.shortcut) : null
+        hotkey: null != n ? (0, _.dI)(n.shortcut) : null,
+        text_activation_hotkey: null != i ? (0, _.dI)(i.shortcut) : null
     })
 }
 class S extends s.PureComponent {
@@ -55,11 +55,11 @@ class S extends s.PureComponent {
         })
     };
     handleToggleTextChatNotifications = () => {
-        r.A.setNotificationDisabledSetting(_.M.TEXT_CHAT, !this.props.textChatDisabled), v()
+        r.A.setNotificationDisabledSetting(f.M.TEXT_CHAT, !this.props.textChatDisabled), v()
     };
     handleToggleInviteNotification = () => {
         let e = this.props.shouldShowInviteNotification;
-        r.A.setNotificationDisabledSetting(_.M.GAME_ACTIVITY, !e)
+        r.A.setNotificationDisabledSetting(f.M.GAME_ACTIVITY, !e)
     };
     handleChangeNotificationPositionMode(e, t) {
         r.A.setNotificationPositionMode(t), v()

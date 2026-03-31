@@ -1,149 +1,149 @@
 /** chunk id: 592182 params = (module,exports,require) **/
-i.d(e, {
-    A: () => b
+i.d(t, {
+    A: () => M
 });
 var n = i(627968);
 i(64700);
-var l = i(503698),
-    r = i.n(l),
+var a = i(503698),
+    l = i.n(a),
     s = i(284009),
-    a = i.n(s),
+    r = i.n(s),
     o = i(311907),
-    d = i(397927),
-    u = i(707606),
-    c = i(573648),
+    c = i(397927),
+    d = i(707606),
+    u = i(573648),
     m = i(235986),
-    A = i(159426),
-    h = i(25528),
-    p = i(655724),
-    g = i(82149),
-    f = i(734057),
-    T = i(287809),
-    S = i(977997),
-    E = i(874546),
-    C = i(90644),
-    v = i(61330),
-    I = i(153331),
-    _ = i(33852),
-    x = i(834425),
-    N = i(284525),
-    y = i(730430),
-    j = i(443493),
-    D = i(462226),
-    O = i(329151),
-    P = i(738080),
-    U = i(648246),
-    L = i(305637),
-    R = i(652215),
-    M = i(758630);
-let b = (0, u.A)(t => {
+    _ = i(159426),
+    p = i(25528),
+    h = i(655724),
+    A = i(82149),
+    g = i(734057),
+    f = i(287809),
+    v = i(977997),
+    S = i(874546),
+    I = i(90644),
+    T = i(61330),
+    C = i(153331),
+    E = i(33852),
+    y = i(834425),
+    x = i(284525),
+    N = i(730430),
+    b = i(443493),
+    L = i(462226),
+    P = i(329151),
+    j = i(738080),
+    D = i(648246),
+    U = i(305637),
+    O = i(652215),
+    R = i(758630);
+let M = (0, d.A)(e => {
     let {
-        activity: e,
+        activity: t,
         embeddedActivity: i,
-        user: l,
+        user: a,
         applicationStream: s,
-        className: u,
-        guildId: b,
-        channelId: G,
+        className: d,
+        guildId: M,
+        channelId: w,
         source: V,
-        buttonVariant: H,
-        type: w,
+        buttonVariant: G,
+        type: H,
         onAction: F
-    } = t, B = (0, o.bG)([T.default], () => {
-        let t = T.default.getCurrentUser();
-        return a()(null != t, "UserActivityActions: currentUser cannot be undefined"), t
-    }), W = w === I.O.STREAM_PREVIEW || null != s, k = (0, C.A)(e), Y = k || W ? m.A.Direction.HORIZONTAL : m.A.Direction.VERTICAL, z = e?.type === R.$pd.HANG_STATUS, $ = (0, o.bG)([S.A, f.A], () => z ? f.A.getChannel(S.A.getVoiceStateForUser(l.id)?.channelId) : null), J = (0, o.bG)([f.A], () => null != G ? f.A.getChannel(G) : null, [G]), {
+    } = e, k = (0, o.bG)([f.default], () => {
+        let e = f.default.getCurrentUser();
+        return r()(null != e, "UserActivityActions: currentUser cannot be undefined"), e
+    }), W = H === C.O.STREAM_PREVIEW || null != s, B = (0, I.A)(t), Y = B || W ? m.A.Direction.HORIZONTAL : m.A.Direction.VERTICAL, z = t?.type === O.$pd.HANG_STATUS, $ = (0, o.bG)([v.A, g.A], () => z ? g.A.getChannel(v.A.getVoiceStateForUser(a.id)?.channelId) : null), J = (0, o.bG)([g.A], () => null != w ? g.A.getChannel(w) : null, [w]), {
         enableRequestToStream: K
-    } = A.m.useExperiment({
-        guildId: b ?? J?.guild_id,
+    } = _.m.useExperiment({
+        guildId: M ?? J?.guild_id,
         location: "UserActivityActions"
     }, {
         autoTrackExposure: !1
-    }), Z = null != J && K && (0, h.F9)(e), q = Y === m.A.Direction.VERTICAL;
+    }), q = null != J && K && (0, p.F9)(t), X = Y === m.A.Direction.VERTICAL;
     return (0, n.jsx)(m.A, {
         grow: 0,
         align: m.A.Align.STRETCH,
         direction: Y,
-        wrap: q ? m.A.Wrap.WRAP : m.A.Wrap.NO_WRAP,
-        className: r()(u, M.jx, q ? M.Vd : M.xM),
+        wrap: X ? m.A.Wrap.WRAP : m.A.Wrap.NO_WRAP,
+        className: l()(d, R.jx, X ? R.Vd : R.xM),
         children: (() => {
-            if (!(0, E.A)(e)) {
-                if ((0, v.A)(e)) return (0, n.jsx)(_.A, {
-                    platform: c.A.get(R.fg2.XBOX),
-                    variant: H,
+            if (!(0, S.A)(t)) {
+                if ((0, T.A)(t)) return (0, n.jsx)(E.A, {
+                    platform: u.A.get(O.fg2.XBOX),
+                    variant: G,
                     onAction: F,
-                    icon: d.YWd
+                    icon: c.YWd
                 });
-                if (e?.platform === R.yTV.PS4 || e?.platform === R.yTV.PS5) return (0, n.jsx)(_.A, {
-                    variant: H,
-                    platform: c.A.get(R.fg2.PLAYSTATION),
+                if (t?.platform === O.yTV.PS4 || t?.platform === O.yTV.PS5) return (0, n.jsx)(E.A, {
+                    variant: G,
+                    platform: u.A.get(O.fg2.PLAYSTATION),
                     onAction: F,
-                    icon: d.Xj
+                    icon: c.Xj
                 })
             }
-            if (k) {
-                let t = (0, n.jsx)(P.A, {
-                        activity: e,
-                        user: l,
-                        guildId: b,
-                        channelId: G,
+            if (B) {
+                let e = (0, n.jsx)(j.A, {
+                        activity: t,
+                        user: a,
+                        guildId: M,
+                        channelId: w,
                         source: V,
                         onAction: F
                     }),
-                    i = (0, n.jsx)(O.A, {
-                        activity: e,
-                        user: l,
+                    i = (0, n.jsx)(P.A, {
+                        activity: t,
+                        user: a,
                         source: V,
                         onAction: F
                     });
-                return (0, n.jsxs)(d.ButtonGroup, {
+                return (0, n.jsxs)(c.ButtonGroup, {
                     size: "sm",
                     fullWidth: !0,
-                    children: [i, t]
+                    children: [i, e]
                 })
             }
-            if ((0, g.Cy)(e)) {
-                let t = (0, g.UW)(e);
-                return null == t ? null : (0, n.jsx)(j.A, {
-                    guildId: t.guildId,
-                    channelId: t.channelId,
-                    variant: H,
+            if ((0, A.Cy)(t)) {
+                let e = (0, A.UW)(t);
+                return null == e ? null : (0, n.jsx)(b.A, {
+                    guildId: e.guildId,
+                    channelId: e.channelId,
+                    variant: G,
                     onAction: F
                 })
             }
-            return W ? (0, n.jsx)(L.A, {
-                isCurrentUser: B.id === l.id,
+            return W ? (0, n.jsx)(U.A, {
+                isCurrentUser: k.id === a.id,
                 applicationStream: s,
                 onAction: F
-            }) : z && null != $ ? (0, n.jsx)(y.A, {
-                userId: l.id,
-                variant: H,
+            }) : z && null != $ ? (0, n.jsx)(N.A, {
+                userId: a.id,
+                variant: G,
                 hangStatusChannel: $,
                 onAction: F
             }) : (0, n.jsxs)(n.Fragment, {
-                children: [Z && (0, n.jsx)(p.B, {
-                    userId: l.id,
+                children: [q && (0, n.jsx)(h.B, {
+                    userId: a.id,
                     channel: J,
                     onAction: F
-                }), (0, n.jsx)(U.A, {
-                    activity: e,
-                    variant: Z ? "secondary" : H,
-                    onAction: F
-                }), (0, n.jsx)(N.A, {
-                    activity: e,
-                    embeddedActivity: i,
-                    user: l,
-                    variant: Z ? "secondary" : H,
-                    onAction: F
                 }), (0, n.jsx)(D.A, {
-                    activity: e,
-                    user: l,
-                    variant: Z ? "secondary" : H,
+                    activity: t,
+                    variant: q ? "secondary" : G,
                     onAction: F
                 }), (0, n.jsx)(x.A, {
-                    user: l,
-                    activity: e,
-                    variant: Z ? "secondary" : H,
+                    activity: t,
+                    embeddedActivity: i,
+                    user: a,
+                    variant: q ? "secondary" : G,
+                    onAction: F
+                }), (0, n.jsx)(L.A, {
+                    activity: t,
+                    user: a,
+                    variant: q ? "secondary" : G,
+                    onAction: F
+                }), (0, n.jsx)(y.A, {
+                    user: a,
+                    activity: t,
+                    variant: q ? "secondary" : G,
                     onAction: F
                 })]
             })

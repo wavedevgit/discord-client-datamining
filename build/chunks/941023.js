@@ -14,23 +14,23 @@ var i = n(64700),
     u = n(899699),
     h = n(456797),
     p = n(723702);
-let f = {
+let _ = {
         x: 0,
         y: 0
     },
-    _ = !1;
+    f = !1;
 
 function A(e) {
     let {
         clientX: t,
         clientY: n
     } = e;
-    _ = !0, f.x = t, f.y = n
+    f = !0, _.x = t, _.y = n
 }
 let g = new Map;
 
 function m(e, t) {
-    if (null == t) g.delete(e), 0 === g.size && (window.removeEventListener("mousemove", A), _ = !1);
+    if (null == t) g.delete(e), 0 === g.size && (window.removeEventListener("mousemove", A), f = !1);
     else {
         let n = g.get(e);
         if (null != n && (0, r.A)(n.zone, t.zone)) return;
@@ -65,7 +65,7 @@ function m(e, t) {
                 })
             }), n = e, x || (n.setClickZoneCallback((e, t, n) => {
                 let i = g.get(e);
-                null != i && (_ || (f.x = t, f.y = n), i.instance.click())
+                null != i && (f || (_.x = t, _.y = n), i.instance.click())
             }), x = !0)
         }
 }
@@ -117,7 +117,7 @@ class E extends i.PureComponent {
         }
     };
     click() {
-        let e = (0, h._)("click", f.x, f.y);
-        (0, h.K)(e, f.x, f.y)
+        let e = (0, h._)("click", _.x, _.y);
+        (0, h.K)(e, _.x, _.y)
     }
 }

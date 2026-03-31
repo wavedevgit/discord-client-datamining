@@ -4,13 +4,13 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var a = n(540185),
-    l = n(311907),
+var l = n(540185),
+    a = n(311907),
     s = n(961350),
     r = n(735321),
     o = n(483558),
-    c = n(34442),
-    d = n(253798),
+    d = n(34442),
+    c = n(253798),
     u = n(25530),
     g = n(155400),
     m = n(844206),
@@ -24,22 +24,22 @@ function h(e) {
         ...n
     } = e;
     switch (t.type) {
-        case a.x.FAVORITE_GAMES:
+        case l.x.FAVORITE_GAMES:
             return (0, i.jsx)(g.A, {
                 widget: t,
                 ...n
             });
-        case a.x.CURRENT_GAMES:
+        case l.x.CURRENT_GAMES:
             return (0, i.jsx)(u.A, {
                 widget: t,
                 ...n
             });
-        case a.x.WANT_TO_PLAY_GAMES:
+        case l.x.WANT_TO_PLAY_GAMES:
             return (0, i.jsx)(p.A, {
                 widget: t,
                 ...n
             });
-        case a.x.PLAYED_GAMES:
+        case l.x.PLAYED_GAMES:
             return (0, i.jsx)(m.A, {
                 widget: t,
                 ...n
@@ -53,23 +53,23 @@ function _(e) {
     let {
         widget: t,
         user: n,
-        disableInteraction: a,
+        disableInteraction: l,
         ...u
     } = e, {
         setExpanded: g
-    } = (0, d.B)(), {
+    } = (0, c.B)(), {
         shouldShowSuggestions: m,
         handleDismissSuggestions: p
-    } = (0, o.q)(t), _ = (0, l.bG)([s.default], () => s.default.getId() === n.id), A = _ && !a && m, I = (0, r.L)(t), j = (0, r.FM)(t, {
+    } = (0, o.q)(t), _ = (0, a.bG)([s.default], () => s.default.getId() === n.id), A = _ && !l && m, I = (0, r.L)(t), j = (0, r.FM)(t, {
         isCurrentUser: _
     }), E = (0, r.uA)(t), v = 1 === (0, r.cv)(t.type);
     return (0, i.jsx)(h, {
         widget: t,
         user: n,
-        disableInteraction: a,
+        disableInteraction: l,
         headerTitle: I,
         headerSubtitle: j,
-        headerActionButtons: _ && !v ? [(0, i.jsx)(c.IU, {
+        headerActionButtons: _ && !v ? [(0, i.jsx)(d.IU, {
             disabled: E,
             widgetType: t.type,
             widget: t,
@@ -90,7 +90,7 @@ function A(e) {
         widget: t,
         ...n
     } = e;
-    return (0, i.jsx)(d.M, {
+    return (0, i.jsx)(c.M, {
         widgetType: t.type,
         children: (0, i.jsx)(_, {
             widget: t,

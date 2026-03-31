@@ -3,13 +3,13 @@ n.d(t, {
     A: () => b
 });
 var i = n(627968),
-    a = n(64700),
-    l = n(503698),
-    s = n.n(l),
+    l = n(64700),
+    a = n(503698),
+    s = n.n(a),
     r = n(540185),
     o = n(397927),
-    c = n(793574),
-    d = n(688810),
+    d = n(793574),
+    c = n(688810),
     u = n(362490),
     g = n(701613),
     m = n(587895),
@@ -67,7 +67,7 @@ let T = {
 function b(e) {
     let t, {
             widget: n,
-            onAddWidget: l,
+            onAddWidget: a,
             size: m = "default",
             loading: f = !1,
             trackUserProfileEditAction: b
@@ -87,27 +87,27 @@ function b(e) {
         } = (0, u.RD)(O),
         {
             analyticsLocations: P
-        } = (0, d.Ay)(c.A.USER_PROFILE_APPLICATION_WIDGET),
+        } = (0, c.Ay)(d.A.USER_PROFILE_APPLICATION_WIDGET),
         D = g.G.useConfig({
             location: "UserProfileWidgetOptionAddButton"
         }),
         G = y && !k && L && D.enabled,
-        F = a.useCallback(() => {
+        F = l.useCallback(() => {
             if (!f) {
                 if (G) {
                     D.autoAdd && ((0, h.Y5)(n), b({
                         action: "WIDGET_ADDED",
                         ...n.getProfileEditAnalyticsOptions()
-                    }), (0, _.XA)(j.jM.WIDGET_ADDED), l?.()), w({
+                    }), (0, _.XA)(j.jM.WIDGET_ADDED), a?.()), w({
                         analyticsLocations: P
                     });
                     return
                 }(0, h.Y5)(n), b({
                     action: "WIDGET_ADDED",
                     ...n.getProfileEditAnalyticsOptions()
-                }), (0, _.XA)(j.jM.WIDGET_ADDED), l?.()
+                }), (0, _.XA)(j.jM.WIDGET_ADDED), a?.()
             }
-        }, [f, G, D, n, b, l, w, P]),
+        }, [f, G, D, n, b, a, w, P]),
         U = N?.(n),
         M = G ? o.qYV : o.U1e;
     return (0, i.jsxs)("div", {

@@ -14,14 +14,14 @@ var i = n(627968),
     m = n(414079),
     g = n(416052),
     _ = n(148810),
-    A = n(380610),
-    x = n(235986),
+    x = n(380610),
+    A = n(235986),
     h = n(544028),
     p = n(652215),
     T = n(986238),
     f = n(136044),
-    E = n(903281),
-    S = n(153335);
+    S = n(903281),
+    E = n(153335);
 let b = ["discord_web", "discord_marketing", "discord_developers", "discord_ios", "discord_android"],
     C = [{
         id: "branch",
@@ -59,17 +59,17 @@ class v extends s.Component {
             disabled: s,
             error: l
         } = this.props;
-        return (0, i.jsxs)(x.A, {
-            direction: x.A.Direction.VERTICAL,
-            className: a()(f.oS, S.SX, E.N, f.nM),
+        return (0, i.jsxs)(A.A, {
+            direction: A.A.Direction.VERTICAL,
+            className: a()(f.oS, E.SX, S.N, f.nM),
             children: [(0, i.jsx)(m.A, {
                 className: a()(f.lL, {
                     [f.zi]: s
                 }),
                 onClick: s ? void 0 : this.handleRemoveBuildOverride
-            }), (0, i.jsxs)(x.A, {
-                className: S.QB,
-                children: [(0, i.jsx)(x.A.Child, {
+            }), (0, i.jsxs)(A.A, {
+                className: E.QB,
+                children: [(0, i.jsx)(A.A.Child, {
                     basis: "50%",
                     children: (0, i.jsx)(u.l6P, {
                         selectionMode: "single",
@@ -79,7 +79,7 @@ class v extends s.Component {
                         value: t,
                         disabled: s
                     })
-                }), (0, i.jsx)(x.A.Child, {
+                }), (0, i.jsx)(A.A.Child, {
                     wrap: !0,
                     basis: "50%",
                     children: (0, i.jsx)(u.ksK, {
@@ -89,7 +89,7 @@ class v extends s.Component {
                         disabled: s
                     })
                 })]
-            }), (0, i.jsxs)(x.A.Child, {
+            }), (0, i.jsxs)(A.A.Child, {
                 children: [null != l && "" !== l && (0, i.jsx)(u.Text, {
                     className: f.AS,
                     color: "text-feedback-critical",
@@ -119,7 +119,7 @@ class I extends s.Component {
         this.setState({
             loading: !0
         });
-        let e = await (0, A.bD)();
+        let e = await (0, x.bD)();
         this.setState({
             loading: !1,
             buildOverrides: e,
@@ -229,7 +229,7 @@ class I extends s.Component {
     renderEmpty() {
         return (0, i.jsx)(u.ppr, {
             theme: h.A.theme,
-            className: a()(S.eT, S.SX),
+            className: a()(E.eT, E.SX),
             children: (0, i.jsx)(u.SGT, {
                 children: "You have no build overrides configured."
             })
@@ -300,7 +300,7 @@ class I extends s.Component {
             buildOverrides: s
         } = this.state;
         e = t ? (0, i.jsx)(u.y$y, {
-            className: S.QX
+            className: E.QX
         }) : null != s && 0 === Object.keys(s).length ? this.renderEmpty() : this.renderItems();
         let l = !n && !t && this.getAvailableProjects().length > 0,
             a = N(s ?? {}) && "stable" !== window.GLOBAL_ENV.RELEASE_CHANNEL ? (0, i.jsx)(u.Text, {

@@ -15,13 +15,13 @@ var i = n(627968),
     m = n(233317),
     g = n(622017),
     _ = n(113090),
-    A = n(752533),
-    x = n(88001),
+    x = n(752533),
+    A = n(88001),
     h = n(652215),
     p = n(518582),
     T = n(985018),
     f = n(849865);
-let E = () => (0, i.jsxs)(a.BJc, {
+let S = () => (0, i.jsxs)(a.BJc, {
         direction: "horizontal",
         gap: 10,
         padding: {
@@ -32,13 +32,13 @@ let E = () => (0, i.jsxs)(a.BJc, {
         children: [(0, i.jsx)(a.Heading, {
             variant: "display-md",
             className: f.Nd,
-            children: (0, x.DP)()
+            children: (0, A.DP)()
         }), (0, i.jsx)(a.Exy, {
             type: "beta",
             variant: "expressive"
         })]
     }),
-    S = e => {
+    E = e => {
         let {
             title: t,
             description: n,
@@ -95,8 +95,8 @@ let E = () => (0, i.jsxs)(a.BJc, {
                     case h.Dmq.PAUSED:
                         return {
                             title: T.intl.string(p.default.IDyd1e), description: T.intl.format(p.default["8MfYhr"], {
-                                premiumGroupProductName: (0, x.DP)(),
-                                helpCenterLink: x.TE
+                                premiumGroupProductName: (0, A.DP)(),
+                                helpCenterLink: A.TE
                             })
                         };
                     case h.Dmq.PAST_DUE:
@@ -105,17 +105,17 @@ let E = () => (0, i.jsxs)(a.BJc, {
                         return {
                             title: T.intl.string(p.default.Duq8zp), description: T.intl.format(p.default["MHn/D6"], {
                                 endDate: u,
-                                premiumGroupProductName: (0, x.DP)()
+                                premiumGroupProductName: (0, A.DP)()
                             })
                         };
                     default:
                         return {
                             title: T.intl.formatToPlainString(p.default.xiUjMF, {
-                                premiumGroupProductName: (0, x.DP)()
+                                premiumGroupProductName: (0, A.DP)()
                             }), description: T.intl.format(p.default["2HEyqG"], {
                                 primaryName: (0, c.$3)(m),
-                                premiumGroupProductName: (0, x.DP)(),
-                                helpCenterLink: x.TE
+                                premiumGroupProductName: (0, A.DP)(),
+                                helpCenterLink: A.TE
                             })
                         }
                 }
@@ -123,9 +123,9 @@ let E = () => (0, i.jsxs)(a.BJc, {
         return (0, i.jsxs)(a.hLv, {
             className: f.kL,
             color: "nitro-pink",
-            children: [(0, i.jsx)(E, {}), (0, i.jsxs)("div", {
+            children: [(0, i.jsx)(S, {}), (0, i.jsxs)("div", {
                 className: f.wS,
-                children: [(0, i.jsx)(S, {
+                children: [(0, i.jsx)(E, {
                     title: C,
                     description: N,
                     button: (0, i.jsx)(a.Button, {
@@ -156,10 +156,10 @@ let E = () => (0, i.jsxs)(a.BJc, {
                         color: "text-strong",
                         className: f.Or,
                         children: T.intl.string(p.default["oqw/KW"])
-                    }), (0, i.jsx)(A.U4, {
+                    }), (0, i.jsx)(x.U4, {
                         user: m,
                         isOwnUser: !1
-                    }), b.map(e => (0, i.jsx)(A.YF, {
+                    }), b.map(e => (0, i.jsx)(x.YF, {
                         user: e,
                         isOwnUser: e.id === t?.id
                     }, e.id))]
@@ -213,18 +213,18 @@ let E = () => (0, i.jsxs)(a.BJc, {
                         totalSeats: d
                     })
                 })]
-            }), (0, i.jsx)(A.U4, {
+            }), (0, i.jsx)(x.U4, {
                 user: m,
                 isOwnUser: !0
-            }), g.map(e => (0, i.jsx)(A.MT, {
+            }), g.map(e => (0, i.jsx)(x.MT, {
                 user: e,
                 onRemove: () => r(e)
-            }, e.id)), _.map(e => (0, i.jsx)(A.Bs, {
+            }, e.id)), _.map(e => (0, i.jsx)(x.Bs, {
                 user: e,
                 onRemove: () => o(e)
             }, e.id)), Array.from({
                 length: u
-            }).map((e, t) => (0, i.jsx)(A.XN, {
+            }).map((e, t) => (0, i.jsx)(x.XN, {
                 onInvite: l,
                 canInvite: s
             }, `seat-available-${t}`))]
@@ -236,7 +236,7 @@ let E = () => (0, i.jsxs)(a.BJc, {
             analyticsLocations: c
         } = e, {
             premiumGroupMembers: _,
-            isLoading: A
+            isLoading: x
         } = (0, g.A)(t.id), {
             numAvailableInvites: b,
             numTotalSeats: N,
@@ -272,7 +272,7 @@ let E = () => (0, i.jsxs)(a.BJc, {
                     subscription: t
                 })
             })
-        }, L = s.useMemo(() => !x.BE.includes(t.status) && b > 0, [t.status, b]), {
+        }, L = s.useMemo(() => !A.BE.includes(t.status) && b > 0, [t.status, b]), {
             title: D,
             description: G
         } = (() => {
@@ -281,13 +281,13 @@ let E = () => (0, i.jsxs)(a.BJc, {
                     return {
                         title: T.intl.string(p.default.KME8Q6), description: T.intl.format(p.default["1sNA+Y"], {
                             endDate: t.currentPeriodEnd,
-                            premiumGroupProductName: (0, x.DP)()
+                            premiumGroupProductName: (0, A.DP)()
                         })
                     };
                 case h.Dmq.PAUSED:
                     return {
                         title: T.intl.string(p.default["4flKoC"]), description: T.intl.format(p.default["Q++BmO"], {
-                            premiumGroupProductName: (0, x.DP)()
+                            premiumGroupProductName: (0, A.DP)()
                         })
                     };
                 case h.Dmq.PAST_DUE:
@@ -296,17 +296,17 @@ let E = () => (0, i.jsxs)(a.BJc, {
                     return {
                         title: T.intl.string(p.default.cfeFEt), description: T.intl.format(p.default["5+LPUW"], {
                             endDate: t.currentPeriodEnd,
-                            helpCenterLink: x.TE
+                            helpCenterLink: A.TE
                         })
                     };
                 default:
                     return {
                         title: T.intl.formatToPlainString(p.default.NRCfnQ, {
-                            premiumGroupProductName: (0, x.DP)()
+                            premiumGroupProductName: (0, A.DP)()
                         }), description: T.intl.format(p.default.lvnrnb, {
-                            totalSeats: x.LM,
-                            premiumGroupProductName: (0, x.DP)(),
-                            helpCenterLink: x.TE
+                            totalSeats: A.LM,
+                            premiumGroupProductName: (0, A.DP)(),
+                            helpCenterLink: A.TE
                         })
                     }
             }
@@ -314,9 +314,9 @@ let E = () => (0, i.jsxs)(a.BJc, {
         return (0, i.jsxs)(a.hLv, {
             className: f.kL,
             color: "nitro-pink",
-            children: [(0, i.jsx)(E, {}), (0, i.jsxs)("div", {
+            children: [(0, i.jsx)(S, {}), (0, i.jsxs)("div", {
                 className: f.wS,
-                children: [(0, i.jsx)(S, {
+                children: [(0, i.jsx)(E, {
                     title: D,
                     description: G,
                     button: d.ki(t) ? (0, i.jsx)(a.Button, {
@@ -345,7 +345,7 @@ let E = () => (0, i.jsxs)(a.BJc, {
                     })
                 }), (0, i.jsx)(C, {
                     premiumGroupMembers: _,
-                    isLoadingPremiumGroupMembers: A,
+                    isLoadingPremiumGroupMembers: x,
                     canInvite: L,
                     onInvite: P,
                     onRemoveMember: e => {

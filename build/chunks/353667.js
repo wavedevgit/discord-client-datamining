@@ -14,8 +14,8 @@ var i = n(627968),
     m = n(823092),
     g = n(963935),
     _ = n(894858),
-    A = n(272053),
-    x = n(397274),
+    x = n(272053),
+    A = n(397274),
     h = n(641324),
     p = n(46373),
     T = n(326029);
@@ -56,7 +56,7 @@ function f(e) {
     })
 }
 
-function E(e) {
+function S(e) {
     let {
         decoration: t
     } = e, n = t.component;
@@ -69,7 +69,7 @@ function E(e) {
     })
 }
 
-function S(e) {
+function E(e) {
     let {
         panelKey: t,
         notice: n,
@@ -80,7 +80,7 @@ function S(e) {
         children: (0, i.jsx)(d.GtU, {
             className: T.XG,
             ref: e => {
-                x.A.setPanelScrollerRef(e)
+                A.A.setPanelScrollerRef(e)
             },
             children: (0, i.jsx)("div", {
                 className: T.nd,
@@ -101,7 +101,7 @@ function b(e) {
     } = e;
     return (0, i.jsxs)("div", {
         className: T.LZ,
-        children: [null != n && (0, i.jsx)(E, {
+        children: [null != n && (0, i.jsx)(S, {
             decoration: n
         }), t.map((e, n) => (0, i.jsxs)(s.Fragment, {
             children: [(0, i.jsx)(h.A, {
@@ -134,14 +134,14 @@ function C(e) {
         })
     }, [n, t]);
     let o = n.find(e => e.key === r) ?? n[0];
-    return (0, i.jsxs)(S, {
+    return (0, i.jsxs)(E, {
         panelKey: t,
         notice: l,
         children: [(0, i.jsx)(d.VQ0, {
             className: T.$H,
             selectedItem: r,
             onItemSelect: e => {
-                A.A.navigate(e, {
+                x.A.navigate(e, {
                     onTransitionStart: () => {
                         let t = n.find(t => t.key === e);
                         t?.onItemSelect?.()
@@ -178,7 +178,7 @@ function N(e) {
         decoration: s,
         layout: l
     } = e;
-    return (0, i.jsx)(S, {
+    return (0, i.jsx)(E, {
         panelKey: t,
         notice: n,
         children: (0, i.jsx)(b, {

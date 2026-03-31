@@ -14,8 +14,8 @@ var i = n(627968),
     m = n(580630),
     g = n(240248),
     _ = n(237218),
-    A = n(466915),
-    x = n(815476);
+    x = n(466915),
+    A = n(815476);
 
 function h(e) {
     let {
@@ -27,20 +27,20 @@ function h(e) {
         benefits: p,
         description: T
     } = n, f = s.useMemo(() => null == n.thumbnail ? null : (0, _.t)(h, n.thumbnail, 256), [h, n.thumbnail]), {
-        data: E
-    } = (0, c.j)(n.skuId), S = s.useMemo(() => {
-        if (null == E || 0 === E.length) return null;
-        let e = E[0];
+        data: S
+    } = (0, c.j)(n.skuId), E = s.useMemo(() => {
+        if (null == S || 0 === S.length) return null;
+        let e = S[0];
         return (0, m._J)(e)
-    }, [E]);
-    return null == S ? null : (0, i.jsxs)(r.q, {
-        className: a()(x.iE, l),
+    }, [S]);
+    return null == E ? null : (0, i.jsxs)(r.q, {
+        className: a()(A.iE, l),
         header: (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsxs)("div", {
-                className: x.qd,
+                className: A.qd,
                 children: [null != f && (0, i.jsx)(d._V3, {
                     src: f.href,
-                    imageClassName: x.rW,
+                    imageClassName: A.rW,
                     width: 48,
                     height: 48
                 }), (0, i.jsxs)("div", {
@@ -49,19 +49,19 @@ function h(e) {
                         children: n.summary
                     }), (0, i.jsx)(d.Text, {
                         variant: "text-md/medium",
-                        children: S
+                        children: E
                     })]
                 })]
             }), t]
         }),
         children: [!(0, g.uJ)(T) && (0, i.jsx)("div", {
-            className: x.h_,
-            children: (0, i.jsx)(A.A, {
+            className: A.h_,
+            children: (0, i.jsx)(x.A, {
                 variant: "text-sm/medium",
                 children: T
             })
         }), null != p && p.length > 0 && (0, i.jsx)("div", {
-            className: x.PX,
+            className: A.PX,
             children: p.map(e => {
                 let {
                     id: t,

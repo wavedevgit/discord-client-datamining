@@ -14,14 +14,14 @@ var i = n(627968),
     m = n(953143),
     g = n(560138),
     _ = n(40185),
-    A = n(526292),
-    x = n(89366),
+    x = n(526292),
+    A = n(89366),
     h = n(194509),
     p = n(396375),
     T = n(224850),
     f = n(552554),
-    E = n(985018),
-    S = n(83960);
+    S = n(985018),
+    E = n(83960);
 let b = e => {
         let {
             inOfferExperience: t,
@@ -33,38 +33,38 @@ let b = e => {
             isEligibleForBogoPromotion: c
         } = e, u = c ? (0, i.jsx)(p.A, {
             color: d ? o.XD.BRAND_INVERTED : void 0,
-            className: a()(S.x6, S.Ph, l, {
-                [S.Sq]: t && r,
-                [S.MF]: r && !d
+            className: a()(E.x6, E.Ph, l, {
+                [E.Sq]: t && r,
+                [E.MF]: r && !d
             }),
-            shinyButtonClassName: d ? void 0 : S.PJ,
+            shinyButtonClassName: d ? void 0 : E.PJ,
             subscriptionTier: n,
             hasActivePromotion: !0
         }) : (0, i.jsx)(p.A, {
             color: d || !r ? o.XD.BRAND_INVERTED : void 0,
-            className: a()(S.x6, S.Ph, l, {
-                [S.Sq]: t && r,
-                [S.MF]: r && !d
+            className: a()(E.x6, E.Ph, l, {
+                [E.Sq]: t && r,
+                [E.MF]: r && !d
             }),
             subscriptionTier: n
         }), m = t && r ? null : (0, i.jsx)(h.A, {
-            className: a()(S.x6, l),
+            className: a()(E.x6, l),
             color: r ? void 0 : o.XD.WHITE
         });
         return (0, i.jsxs)("div", {
-            className: a()(S.UD, s),
+            className: a()(E.UD, s),
             children: [u, " ", m]
         })
     },
     C = () => (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(m.p, {
-            className: S.zd
+            className: E.zd
         }), (0, i.jsx)(m.p, {
-            className: S.G
+            className: E.G
         }), (0, i.jsx)(m.p, {
-            className: S.zy
+            className: E.zy
         }), (0, i.jsx)(m.p, {
-            className: S.GX
+            className: E.GX
         })]
     });
 
@@ -77,11 +77,11 @@ function N(e) {
     return (0, i.jsx)(d.Text, {
         variant: t,
         color: s ? "text-subtle" : "always-white",
-        className: a()(S.h_, {
-            [S.If]: n,
-            [S.jn]: s
+        className: a()(E.h_, {
+            [E.If]: n,
+            [E.jn]: s
         }),
-        children: E.intl.format(E.t.kt9wxs, {
+        children: S.intl.format(S.t.kt9wxs, {
             cheapestMonthlyPrice: l
         })
     })
@@ -94,32 +94,32 @@ let v = s.forwardRef((e, t) => {
         isDarkMode: m
     } = e, {
         analyticsLocations: p
-    } = (0, u.Ay)(c.A.PREMIUM_MARKETING_HERO_CTA), f = (0, x.QQ)(), v = (0, A.ar)(), I = (0, _.cg)(), j = (0, r.bG)([g.A], () => g.A.affinities).length > 0, y = E.intl.string(E.t.YCZldK);
+    } = (0, u.Ay)(c.A.PREMIUM_MARKETING_HERO_CTA), f = (0, A.QQ)(), v = (0, x.ar)(), I = (0, _.cg)(), j = (0, r.bG)([g.A], () => g.A.affinities).length > 0, y = S.intl.string(S.t.YCZldK);
     return (0, i.jsx)(u.f5, {
         value: p,
         children: (0, i.jsxs)("div", {
             ref: t,
-            className: a()(S.kL, n, {
-                [S.V1]: !v,
-                [S.Q4]: !v && j
+            className: a()(E.kL, n, {
+                [E.V1]: !v,
+                [E.Q4]: !v && j
             }),
             "data-testid": "v2-marketing-page-hero-header",
             children: [(0, i.jsxs)("div", {
-                className: v ? S.I6 : S.G1,
+                className: v ? E.I6 : E.G1,
                 children: [(0, i.jsx)(d.Heading, {
                     variant: v ? "display-lg" : "display-md",
                     color: "always-white",
                     children: y
                 }), j ? (0, i.jsx)("div", {
-                    className: S.DF,
+                    className: E.DF,
                     children: (0, i.jsx)(T.A, {
                         textColor: "always-white",
                         smallerText: !v
                     })
                 }) : (0, i.jsx)(N, {}), I || f ? (0, i.jsx)("div", {
-                    className: S.UD,
+                    className: E.UD,
                     children: (0, i.jsx)(h.A, {
-                        className: a()(S.x6, s),
+                        className: a()(E.x6, s),
                         color: o.XD.WHITE
                     })
                 }) : (0, i.jsx)(b, {

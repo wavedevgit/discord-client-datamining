@@ -1,5 +1,4 @@
 /** chunk id: 344684 params = (module,exports,require) **/
-"use strict";
 e.exports = {
     Hz: "trialRecipientContainer__2441a",
     w4: "trialRecipientRow__2441a",

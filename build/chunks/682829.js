@@ -14,14 +14,14 @@ var i = n(627968),
     m = n(339048),
     g = n(73825),
     _ = n(974544),
-    A = n(531260),
-    x = n(262077),
+    x = n(531260),
+    A = n(262077),
     h = n(160946),
     p = n(235986),
     T = n(769015),
     f = n(723588),
-    E = n(608699),
-    S = n(714308),
+    S = n(608699),
+    E = n(714308),
     b = n(478407),
     C = n(780964),
     N = n(841329),
@@ -90,7 +90,7 @@ function Z() {
 let q = function() {
     var e;
     let t = (0, r.bG)([O.A], () => O.A.getPremiumTypeSubscription()),
-        n = (0, x.A)({
+        n = (0, A.A)({
             subscriptionFilter: e => w.Hy.has(e.status)
         }),
         l = (0, r.bG)([I.default], () => I.default.getCurrentUser()),
@@ -105,7 +105,7 @@ let q = function() {
     }, [k]);
     let K = (0, r.bG)([O.A], () => O.A.getActiveApplicationSubscriptions()?.length ?? 0),
         q = (0, r.bG)([O.A], () => Object.values(O.A.getSubscriptions() ?? {}).filter(e => e.type === F.rzx.GUILD).filter(e => e.status !== F.Dmq.ENDED).length),
-        Q = (0, A.A)({
+        Q = (0, x.A)({
             forceFetch: !0
         }),
         J = (0, G.ds)(),
@@ -115,7 +115,7 @@ let q = function() {
         (0, g.zS)(), c.hP(), (0, u.CD)(), c.$o()
     }), function() {
         V.A.resetState()
-    }), []), v.A.enabled) ? (0, i.jsx)(_.A, {}) : T && D ? k === H.nR ? (0, i.jsx)(E.A, {
+    }), []), v.A.enabled) ? (0, i.jsx)(_.A, {}) : T && D ? k === H.nR ? (0, i.jsx)(S.A, {
         onGoBack: () => V.A.setState({
             subsection: null
         })
@@ -157,7 +157,7 @@ let q = function() {
                     })
                 })]
             }), K > 0 && (0, i.jsxs)(i.Fragment, {
-                children: [(0, i.jsx)(Z, {}), (0, i.jsx)(S.A, {
+                children: [(0, i.jsx)(Z, {}), (0, i.jsx)(E.A, {
                     count: K,
                     onClickManageSubscription: () => {
                         V.A.setState({

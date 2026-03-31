@@ -3,20 +3,20 @@ n.d(t, {
     q: () => o
 });
 var i = n(64700),
-    a = n(311907),
-    l = n(961350),
+    l = n(311907),
+    a = n(961350),
     s = n(622543),
     r = n(735321);
 
 function o(e) {
-    let [t, n] = i.useState(!1), o = e.type, c = (0, a.bG)([l.default, s.A], () => {
-        let e = l.default.getId();
+    let [t, n] = i.useState(!1), o = e.type, d = (0, l.bG)([a.default, s.A], () => {
+        let e = a.default.getId();
         if (null == e) return !1;
         let t = s.A.getUserProfile(e);
         return (t?.widgets ?? []).some(e => e.type === o)
-    }), d = (0, r.uA)(e);
+    }), c = (0, r.uA)(e);
     return {
-        shouldShowSuggestions: !c && !t && !d,
+        shouldShowSuggestions: !d && !t && !c,
         handleDismissSuggestions: i.useCallback(() => {
             n(!0)
         }, [])

@@ -3,13 +3,13 @@ n.d(t, {
     A: () => f
 });
 var i = n(627968),
-    a = n(64700),
-    l = n(688807),
+    l = n(64700),
+    a = n(688807),
     s = n(311907),
     r = n(397927),
     o = n(178213),
-    c = n(86638),
-    d = n(287809),
+    d = n(86638),
+    c = n(287809),
     u = n(788593),
     g = n(742710),
     m = n(463259),
@@ -23,25 +23,25 @@ function f(e) {
         isDragging: f,
         item: h,
         sourceClientOffset: _
-    } = (0, l.V)(e => ({
+    } = (0, a.V)(e => ({
         isDragging: e.isDragging(),
         item: e.getItem(),
         sourceClientOffset: e.getSourceClientOffset()
-    })), A = (0, s.bG)([d.default], () => d.default.getCurrentUser()), I = (0, r.VUy)(), j = a.useMemo(() => null == A || null == h ? null : function(e, t, n) {
+    })), A = (0, s.bG)([c.default], () => c.default.getCurrentUser()), I = (0, r.VUy)(), j = l.useMemo(() => null == A || null == h ? null : function(e, t, n) {
         let {
-            id: a,
-            itemType: l,
+            id: l,
+            itemType: a,
             itemPreviewProps: s
         } = e;
-        if ("WIDGET" === l && s?.widget != null) {
+        if ("WIDGET" === a && s?.widget != null) {
             let {
                 widget: e,
                 getWidth: n
-            } = s, a = n?.() ?? 432;
+            } = s, l = n?.() ?? 432;
             return (0, i.jsx)("div", {
                 className: x.dt,
                 style: {
-                    width: a
+                    width: l
                 },
                 children: (0, i.jsx)(m.u, {
                     widget: e,
@@ -50,12 +50,12 @@ function f(e) {
                 })
             })
         }
-        if ("GAME_COVER" === l && s?.gameName != null) {
+        if ("GAME_COVER" === a && s?.gameName != null) {
             let {
                 imageSrc: e,
                 gameName: n,
-                getWidth: l
-            } = s, r = l?.() ?? 90;
+                getWidth: a
+            } = s, r = a?.() ?? 90;
             return (0, i.jsx)("div", {
                 style: {
                     width: r
@@ -64,22 +64,22 @@ function f(e) {
                     className: x.XJ,
                     imageSrc: e,
                     gameName: n,
-                    applicationId: a,
+                    applicationId: l,
                     userId: t?.id,
                     disableInteraction: !0
                 })
             })
         }
-        if ("GAME_DETAILS_CARD" === l && s?.game != null && s?.widgetType != null) {
+        if ("GAME_DETAILS_CARD" === a && s?.game != null && s?.widgetType != null) {
             let {
                 game: e,
                 widgetType: n,
-                getWidth: a
-            } = s, l = a?.() ?? 400;
+                getWidth: l
+            } = s, a = l?.() ?? 400;
             return (0, i.jsx)("div", {
                 className: x.xB,
                 style: {
-                    width: l
+                    width: a
                 },
                 children: (0, i.jsx)(g.A, {
                     user: t,
@@ -89,13 +89,13 @@ function f(e) {
                 })
             })
         }
-        if ("WISHLIST_ITEM" === l && s?.item != null) {
+        if ("WISHLIST_ITEM" === a && s?.item != null) {
             let {
                 item: e
             } = s;
             return (0, i.jsx)("div", {
                 className: x.Xm,
-                children: n ? (0, i.jsx)(c.A, {
+                children: n ? (0, i.jsx)(d.A, {
                     item: e,
                     wishlistOwner: t,
                     wishlistId: null,
@@ -112,7 +112,7 @@ function f(e) {
             })
         }
         return null
-    }(h, A, n), [h, A, n]), E = a.useRef(null), v = a.useCallback(() => {
+    }(h, A, n), [h, A, n]), E = l.useRef(null), v = l.useCallback(() => {
         if (null == t.current) return;
         let e = t.current.getBoundingClientRect();
         E.current = {
@@ -120,7 +120,7 @@ function f(e) {
             y: e.top
         }
     }, [t]);
-    if (a.useEffect(() => {
+    if (l.useEffect(() => {
             if (!f) {
                 E.current = null;
                 return

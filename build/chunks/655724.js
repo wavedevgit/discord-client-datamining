@@ -1,38 +1,38 @@
 /** chunk id: 655724 params = (module,exports,require) **/
-i.d(e, {
-    B: () => c
+i.d(t, {
+    B: () => u
 });
 var n = i(627968),
-    l = i(158954),
-    r = i(311907),
+    a = i(158954),
+    l = i(311907),
     s = i(990078),
-    a = i(309010),
+    r = i(309010),
     o = i(235052),
-    d = i(55705),
-    u = i(985018);
+    c = i(55705),
+    d = i(985018);
 
-function c(t) {
+function u(e) {
     let {
-        userId: e,
+        userId: t,
         channel: i,
-        onAction: c,
+        onAction: u,
         variant: m = "primary"
-    } = t, A = (0, o.u)(e, i, "useRequestToStreamButton"), h = (0, r.bG)([a.A], () => a.A.getVoiceChannelId() === i.id, [i.id]);
-    if (null == A) return null;
-    let p = (0, n.jsx)(l.$nd, {
-        text: u.intl.string(d.default.DKHhec),
+    } = e, _ = (0, o.u)(t, i, "useRequestToStreamButton"), p = (0, l.bG)([r.A], () => r.A.getVoiceChannelId() === i.id, [i.id]);
+    if (null == _) return null;
+    let h = (0, n.jsx)(a.$nd, {
+        text: d.intl.string(c.default.DKHhec),
         variant: m,
         size: "sm",
         onClick: () => {
-            A.handleRequestToStream("request to stream button"), c?.()
+            _.handleRequestToStream("request to stream button"), u?.()
         },
         fullWidth: !0,
-        disabled: !h
+        disabled: !p
     });
-    return h ? p : (0, n.jsx)(s.m, {
+    return p ? h : (0, n.jsx)(s.m, {
         position: "top",
-        text: u.intl.string(d.default.qRXats),
+        text: d.intl.string(c.default.qRXats),
         asContainer: !0,
-        children: p
+        children: h
     })
 }

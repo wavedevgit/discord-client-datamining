@@ -14,14 +14,14 @@ var i = n(627968),
     m = n(836602),
     g = n(576622),
     _ = n(841329),
-    A = n(183476),
-    x = n(338318),
+    x = n(183476),
+    A = n(338318),
     h = n(71393),
     p = n(967198),
     T = n(711014),
     f = n(287809),
-    E = n(203982),
-    S = n(115063),
+    S = n(203982),
+    E = n(115063),
     b = n(507553),
     C = n(652215),
     N = n(355097),
@@ -47,7 +47,7 @@ function y() {
         null != l && t?.id != null && (0, g.A)(l.id, l.getAvatarURL(t?.id, 80), {
             guildId: t?.id
         })
-    }, [t?.id, l]), (0, i.jsxs)(A.R, {
+    }, [t?.id, l]), (0, i.jsxs)(x.R, {
         children: [(0, i.jsxs)(o.VQ0, {
             className: I.$H,
             type: "top",
@@ -56,10 +56,10 @@ function y() {
             onItemSelect: function(e) {
                 if (y !== e) {
                     if (n) {
-                        (0, S.fO)({
+                        (0, E.fO)({
                             duration: 300,
                             intensity: d.n3
-                        }), E._.dispatch(C.jej.EMPHASIZE_NOTICE);
+                        }), S._.dispatch(C.jej.EMPHASIZE_NOTICE);
                         return
                     }
                     e === N.Eq.GUILD && null != t && (0, c.V2)(t.id), b.A.setState({
@@ -81,14 +81,14 @@ function y() {
             selectedGuild: t,
             onGuildChange: function(e) {
                 if (n) {
-                    (0, S.fO)({
+                    (0, E.fO)({
                         duration: 300,
                         intensity: d.n3
-                    }), E._.dispatch(C.jej.EMPHASIZE_NOTICE);
+                    }), S._.dispatch(C.jej.EMPHASIZE_NOTICE);
                     return
                 }
                 null != e && (0, c.JJ)(e.id)
             }
-        }) : (0, i.jsx)(x.A, {})]
+        }) : (0, i.jsx)(A.A, {})]
     })
 }

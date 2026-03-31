@@ -1,6 +1,6 @@
 /** chunk id: 161123 params = (module,exports,require) **/
 n.d(t, {
-    A: () => x
+    A: () => A
 });
 var i = n(627968);
 n(64700);
@@ -15,22 +15,22 @@ var s = n(284009),
     m = n(532624),
     g = n(9302),
     _ = n(985018),
-    A = n(511767);
+    x = n(511767);
 
-function x() {
+function A() {
     let e = (0, a.bG)([m.Ay], () => m.Ay.getOverlayKeybind()),
         t = !(0, g.supportsLegacy)(),
         n = !(0, g.supportsOutOfProcess)(),
-        [s, x] = (0, a.yK)([c.Ay], () => [c.Ay.canShowAdminWarning, c.Ay.getVisibleGame()], []),
+        [s, A] = (0, a.yK)([c.Ay], () => [c.Ay.canShowAdminWarning, c.Ay.getVisibleGame()], []),
         h = (0, u.NP)(),
-        p = null != x && x.elevated && s && !h,
+        p = null != A && A.elevated && s && !h,
         T = !(0, m.DV)(e?.shortcut ?? []);
     return (0, i.jsx)("div", {
-        className: A.hc,
+        className: x.hc,
         children: (0, i.jsxs)("div", {
-            className: A.eH,
+            className: x.eH,
             children: [(0, i.jsxs)("div", {
-                className: A.Bu,
+                className: x.Bu,
                 children: [(0, i.jsx)(r.Text, {
                     variant: "text-md/medium",
                     color: "text-strong",
@@ -38,16 +38,16 @@ function x() {
                 }), p && (0, i.jsx)(r.Text, {
                     variant: "text-xs/normal",
                     color: "text-feedback-warning",
-                    className: A.y7,
+                    className: x.y7,
                     children: _.intl.string(_.t.NsowVa)
                 }), T && (0, i.jsx)(r.Text, {
                     variant: "text-xs/normal",
                     color: "text-feedback-warning",
-                    className: A.y7,
+                    className: x.y7,
                     children: _.intl.string(_.t["UNoTw/"])
                 })]
             }), (0, i.jsx)("div", {
-                className: A.IH,
+                className: x.IH,
                 children: (0, i.jsx)(d.A, {
                     disabled: t && n,
                     defaultValue: null != e ? e.shortcut : [],

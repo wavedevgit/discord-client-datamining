@@ -1,6 +1,6 @@
 /** chunk id: 285058 params = (module,exports,require) **/
 n.d(t, {
-    A: () => x
+    A: () => A
 });
 var i = n(627968),
     s = n(64700),
@@ -15,7 +15,7 @@ var i = n(627968),
     g = n(985018),
     _ = n(506170);
 
-function A(e) {
+function x(e) {
     let {
         guild: t,
         isActivityRestricted: n,
@@ -48,7 +48,7 @@ function A(e) {
         })]
     })
 }
-let x = function() {
+let A = function() {
     let {
         guilds: e,
         searchQuery: t,
@@ -56,12 +56,12 @@ let x = function() {
         sortOrder: l,
         setSortOrder: r,
         hasActivityRestrictedGuilds: d,
-        onToggleAllActivityRestrictedGuilds: x,
+        onToggleAllActivityRestrictedGuilds: A,
         onToggleActivityRestrictedGuild: h,
         isActivityRestricted: p,
         numActivityRestrictedGuilds: T,
         numTotalGuilds: f
-    } = (0, c.M)(), E = (0, s.useId)();
+    } = (0, c.M)(), S = (0, s.useId)();
     return (0, i.jsxs)("div", {
         className: _.iE,
         children: [(0, i.jsxs)("div", {
@@ -92,7 +92,7 @@ let x = function() {
                 placeholder: g.intl.string(g.t["H+nRYw"]),
                 "aria-label": g.intl.string(g.t["5h0QOP"]),
                 inputProps: {
-                    "aria-controls": E,
+                    "aria-controls": S,
                     "aria-expanded": !0
                 }
             }), e.length > 0 && (0, i.jsxs)("div", {
@@ -129,7 +129,7 @@ let x = function() {
                     selectionMode: "single"
                 }), (0, i.jsx)(a.QWc, {
                     variant: "primary",
-                    onClick: x,
+                    onClick: A,
                     text: d ? g.intl.string(g.t["7lxcLO"]) : g.intl.string(g.t.zh6UEs)
                 })]
             })]
@@ -141,7 +141,7 @@ let x = function() {
             })
         }), (0, i.jsxs)("ul", {
             className: _.X1,
-            id: E,
+            id: S,
             "aria-label": g.intl.string(g.t["7hB4kg"]),
             children: [0 === e.length && (0, i.jsx)("div", {
                 className: _.pb,
@@ -150,7 +150,7 @@ let x = function() {
                     variant: "text-lg/medium",
                     children: g.intl.string(g.t["Xe+fJM"])
                 })
-            }), e.map(e => (0, i.jsx)(A, {
+            }), e.map(e => (0, i.jsx)(x, {
                 guild: e,
                 isActivityRestricted: p(e.id),
                 onToggleActivityRestrictedGuild: h

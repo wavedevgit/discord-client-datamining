@@ -14,14 +14,14 @@ var i = n(627968),
     m = n(117178),
     g = n(512513),
     _ = n(915967),
-    A = n(775121),
-    x = n(734066),
+    x = n(775121),
+    A = n(734066),
     h = n(880144),
     p = n(168943),
     T = n(680243),
     f = n(843401),
-    E = n(430452),
-    S = n(532624),
+    S = n(430452),
+    E = n(532624),
     b = n(975571),
     C = n(723702),
     N = n(350535),
@@ -68,7 +68,7 @@ class D extends s.PureComponent {
         let {
             keybind: e
         } = this.props, t = N.dI(e.shortcut);
-        return A.A.hasBind(t) ? (0, i.jsx)(c.po8, {
+        return x.A.hasBind(t) ? (0, i.jsx)(c.po8, {
             messageType: c.YCn.ERROR,
             children: O.intl.string(O.t["7lQlw3"])
         }) : y.Yy.has(t) ? (0, i.jsx)(c.po8, {
@@ -199,7 +199,7 @@ class G extends s.PureComponent {
             id: "activate-overlay-region-text-widget",
             value: j.hCu.OVERLAY_ACTIVATE_REGION_TEXT_WIDGET,
             label: O.intl.string(O.t.hurHWo)
-        })), t && ((0, C.isWindows)() || E.Ay.getUseSystemScreensharePicker()) && l.push({
+        })), t && ((0, C.isWindows)() || S.Ay.getUseSystemScreensharePicker()) && l.push({
             id: "toggle-go-live-streaming",
             value: j.hCu.TOGGLE_GO_LIVE_STREAMING,
             label: O.intl.string(O.t.ybdjJD)
@@ -373,11 +373,11 @@ function M() {
     s.useEffect(() => (u.A.enableAll(!1), () => {
         u.A.enableAll(!0)
     }), []);
-    let e = (0, r.bG)([S.Ay], () => S.Ay.getState()),
-        t = (0, r.bG)([E.Ay], () => (0, h.A)(E.Ay)),
+    let e = (0, r.bG)([E.Ay], () => E.Ay.getState()),
+        t = (0, r.bG)([S.Ay], () => (0, h.A)(S.Ay)),
         n = (0, r.bG)([T.A], () => T.A.isSupported),
-        l = (0, x.sw)(),
-        a = (0, x.BW)();
+        l = (0, A.sw)(),
+        a = (0, A.BW)();
     return (0, i.jsx)(G, {
         keybinds: e,
         canGoLive: t,

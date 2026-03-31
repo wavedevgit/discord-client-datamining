@@ -15,14 +15,14 @@ var s = n(284009),
     m = n(124064),
     g = n(200790),
     _ = n(230084),
-    A = n(180020),
-    x = n(431982),
+    x = n(180020),
+    A = n(431982),
     h = n(730588),
     p = n(164599),
     T = n(63675),
     f = n(546849),
-    E = n(101058),
-    S = n(84540),
+    S = n(101058),
+    E = n(84540),
     b = n(836602),
     C = n(622543),
     N = n(696451),
@@ -56,7 +56,7 @@ function M() {
     } = (0, a.cf)([b.A], () => ({
         ...b.A.getPendingChanges(n.id),
         errors: b.A.getErrors(n.id)
-    })), F = (0, E.V7)({
+    })), F = (0, S.V7)({
         userId: e.id,
         image: s
     }), H = (0, d.EC)(n.id), z = (0, a.bG)([N.Ay], () => null == n.id ? null : N.Ay.getMember(n.id, e.id)), Y = (0, a.bG)([C.A], () => C.A.getGuildMemberProfile(e.id, n.id)), X = j.Ay.canUsePremiumProfileCustomization(e), K = (0, u.z5)(s, z?.avatar), W = (0, u.Ac)(k, Y?.banner), Z = (0, O.l)(V, Y?.themeColors), q = Y?.bio ?? "", Q = Y?.pronouns ?? "", J = (e, t, n) => {
@@ -74,7 +74,7 @@ function M() {
         }, "nick"), (0, i.jsx)(f.A, {
             sectionTitle: D.intl.string(D.t["+T3RI/"]),
             errors: B?.pronouns,
-            onPronounsChange: e => (0, S.p)({
+            onPronounsChange: e => (0, E.p)({
                 guildId: n.id,
                 pronouns: e
             }),
@@ -95,7 +95,7 @@ function M() {
                     })]
                 }),
                 showRemoveAvatarButton: K,
-                onAvatarChange: e => J(e, z?.avatar, e => (0, S.p)({
+                onAvatarChange: e => J(e, z?.avatar, e => (0, E.p)({
                     guildId: n.id,
                     avatar: e
                 })),
@@ -115,10 +115,10 @@ function M() {
                 }),
                 user: e,
                 guild: n
-            }, "decoration"), !t && (0, i.jsx)(A.A, {
+            }, "decoration"), !t && (0, i.jsx)(x.A, {
                 user: e,
                 guildId: n.id
-            }), (0, i.jsx)(x.A, {
+            }), (0, i.jsx)(A.A, {
                 user: e,
                 guild: n,
                 titleIcon: (0, i.jsx)(r.m, {
@@ -145,7 +145,7 @@ function M() {
             }, "effect"), (0, i.jsx)(h.A, {
                 showRemoveBannerButton: W,
                 errors: B?.banner,
-                onBannerChange: e => J(e, Y?.banner, e => (0, S.p)({
+                onBannerChange: e => J(e, Y?.banner, e => (0, E.p)({
                     guildId: n.id,
                     banner: e
                 })),
@@ -155,7 +155,7 @@ function M() {
                 user: e,
                 pendingAvatarSrc: F,
                 pendingColors: V,
-                onThemeColorsChange: e => (0, S.p)({
+                onThemeColorsChange: e => (0, E.p)({
                     guildId: n.id,
                     themeColors: e
                 }),
@@ -173,7 +173,7 @@ function M() {
                         })
                     })]
                 }),
-                onBioChange: e => (0, S.p)({
+                onBioChange: e => (0, E.p)({
                     guildId: n.id,
                     bio: e
                 }),

@@ -15,9 +15,9 @@ var i = n(627968),
     g = n(752546);
 
 function _() {
-    let [e, t] = s.useState(!1), [n, _] = s.useState(() => (0, o.TC)()), A = (0, l.bG)([r.Ay], () => r.Ay.getSystemServiceStatus("input-service")), x = s.useCallback(async () => {
+    let [e, t] = s.useState(!1), [n, _] = s.useState(() => (0, o.TC)()), x = (0, l.bG)([r.Ay], () => r.Ay.getSystemServiceStatus("input-service")), A = s.useCallback(async () => {
         t(!0), n ? await (0, o.z8)("windows-settings") : await (0, o.sL)("windows-settings"), t(!1), _((0, o.TC)())
-    }, [n]), h = "running" === A.state;
+    }, [n]), h = "running" === x.state;
     return (0, i.jsxs)("div", {
         className: g.q,
         children: [(0, i.jsxs)("div", {
@@ -59,13 +59,13 @@ function _() {
                             default:
                                 (0, d.xb)(e.state)
                         }
-                    }(A)
+                    }(x)
                 })
             }) : null]
         }), (0, i.jsx)(a.Button, {
             variant: n ? "critical-secondary" : "primary",
             loading: e,
-            onClick: x,
+            onClick: A,
             text: n ? m.intl.string(m.t.pAwbdL) : m.intl.string(m.t["1iI46O"])
         })]
     })

@@ -15,14 +15,14 @@ var i = n(417597),
 n(652215);
 var g = n(355097),
     _ = n(985018),
-    A = n(420643),
-    x = n(755165),
+    x = n(420643),
+    A = n(755165),
     h = n(542838),
     p = n(9523),
     T = n(416999),
     f = n(338832),
-    E = n(252373),
-    S = n(522799),
+    S = n(252373),
+    E = n(522799),
     b = n(795710),
     C = n(484813),
     N = n(1748),
@@ -58,7 +58,7 @@ let U = (e, t, n) => (0, s.Mw)(e) ? t : n,
             badgeAlt: {
                 title: _.intl.string(_.t["5cYMu0"]),
                 description: _.intl.string(_.t.vxk9va),
-                imageSource: U(s, A, x),
+                imageSource: U(s, x, A),
                 imageClassName: t.badgeNewImage
             },
             clientThemes: {
@@ -124,13 +124,13 @@ let U = (e, t, n) => (0, s.Mw)(e) ? t : n,
             moreGuildsAlt: {
                 title: _.intl.string(_.t.Bv8Pfk),
                 description: _.intl.string(_.t.JMfaTU),
-                imageSource: U(s, f, E),
+                imageSource: U(s, f, S),
                 imageClassName: t.moreGuildsAltImage
             },
             soundboard: {
                 title: _.intl.string(_.t["lGcW+c"]),
                 description: _.intl.string(_.t["/fDyO+"]),
-                imageSource: U(s, S, b),
+                imageSource: U(s, E, b),
                 imageClassName: t.soundboardImage
             },
             stickers: {

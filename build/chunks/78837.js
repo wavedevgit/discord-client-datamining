@@ -20,23 +20,23 @@ function _(e) {
         title: n,
         collapsedSubtitle: l,
         isExpanded: _,
-        onExpandedChange: A,
-        children: x,
+        onExpandedChange: x,
+        children: A,
         animate: h = !0
-    } = e, p = s.useRef(null), [T, f] = s.useState(null), E = _ && null != T;
+    } = e, p = s.useRef(null), [T, f] = s.useState(null), S = _ && null != T;
     return s.useLayoutEffect(() => {
         null != p.current && null == T && f(p.current.clientHeight)
     }, [T]), (0, i.jsxs)(r.EN, {
         ref: t,
         isExpanded: _,
-        onExpandedChange: A,
+        onExpandedChange: x,
         children: [(0, i.jsx)(m.U, {
             ref: p,
             style: null != T ? {
                 minHeight: T
             } : void 0,
             title: n,
-            description: E ? void 0 : l,
+            description: S ? void 0 : l,
             trailingElement: (0, i.jsx)(u.vN3, {
                 children: (0, i.jsx)(o.$, {
                     slot: "trigger",
@@ -49,7 +49,7 @@ function _(e) {
                     })
                 })
             }),
-            onClick: () => A(!_)
+            onClick: () => x(!_)
         }), (0, i.jsx)(r.kS, {
             className: a()(g.nd, {
                 [g.t5]: !h
@@ -59,7 +59,7 @@ function _(e) {
                 padding: {
                     top: 16
                 },
-                children: x
+                children: A
             })
         })]
     })

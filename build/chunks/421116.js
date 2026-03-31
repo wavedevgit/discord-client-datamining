@@ -14,14 +14,14 @@ var i = n(627968),
     m = n(793574),
     g = n(688810),
     _ = n(726649),
-    A = n(611924),
-    x = n(649032),
+    x = n(611924),
+    A = n(649032),
     h = n(26508),
     p = n(166403),
     T = n(954571),
     f = n(927578),
-    E = n(40185),
-    S = n(994763),
+    S = n(40185),
+    E = n(994763),
     b = n(130946),
     C = n(501007),
     N = n(817267),
@@ -40,7 +40,7 @@ var i = n(627968),
     U = n(941456);
 let w = () => {
     let e = (0, r.zy)();
-    (0, A.P)(_.b);
+    (0, x.P)(_.b);
     let t = s.useRef(null),
         n = s.useRef(null),
         l = s.useRef(null),
@@ -55,16 +55,16 @@ let w = () => {
         Q = null != q ? (0, f.EL)(q) : null,
         J = null != Q ? f.Ay.getSkuIdForPlan(Q.planId) : null,
         $ = null !== J && J !== G.pe.TIER_2 ? G.pe.TIER_2 : null,
-        ee = (0, E.cg)(),
+        ee = (0, S.cg)(),
         {
             analyticsLocations: et
         } = (0, g.Ay)(m.A.PREMIUM_MARKETING);
     s.useEffect(() => {
         Z(!0)
     }, []);
-    let en = (0, h.DK)(x.W.NITRO, "PremiumMarketingHome"),
+    let en = (0, h.DK)(A.W.NITRO, "PremiumMarketingHome"),
         ei = s.useMemo(() => !!en && "orbs" === new URLSearchParams(e.search).get("section"), [e.search, en]);
-    (0, S.z)(P.NI.ORB_REWARDS, ei);
+    (0, E.z)(P.NI.ORB_REWARDS, ei);
     let es = [v.k.HOME, v.k.WHATS_NEW, v.k.BEST_OF_NITRO, v.k.PLANS, v.k.COMPARE],
         {
             navBarSections: el,

@@ -21,32 +21,32 @@ function _(e) {
         errors: n,
         onBannerChange: s,
         guildId: _,
-        className: A,
-        disabled: x = !1,
+        className: x,
+        disabled: A = !1,
         showPremiumIcon: h = !0,
         isTryItOut: p = !1,
         forcedDivider: T,
         withHighlight: f = !1
     } = e, {
-        newestAnalyticsLocation: E
-    } = (0, o.Ay)(), S = f ? r.wLn : a.$n;
+        newestAnalyticsLocation: S
+    } = (0, o.Ay)(), E = f ? r.wLn : a.$n;
     return (0, i.jsx)(c.A, {
-        className: A,
+        className: x,
         title: m.intl.string(m.t.Vgdusv),
         showPremiumIcon: h,
         errors: n,
-        disabled: x,
+        disabled: A,
         forcedDivider: T,
         children: (0, i.jsxs)("div", {
             className: g.NC,
-            children: [(0, i.jsx)(S, {
+            children: [(0, i.jsx)(E, {
                 className: l()({
                     [g.yj]: f
                 }),
                 size: a.$n.Sizes.SMALL,
                 onClick: () => (0, d.XD)({
                     uploadType: u.HL.BANNER,
-                    analyticsSource: E,
+                    analyticsSource: S,
                     guildId: _,
                     isTryItOut: p
                 }),

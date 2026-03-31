@@ -15,7 +15,7 @@ var i, s = n(627968),
     h = ((i = {}).MOVE = "MOVE", i.RESIZE_NORTH = "RESIZE_NORTH", i.RESIZE_WEST = "RESIZE_WEST", i.RESIZE_EAST = "RESIZE_EAST", i.RESIZE_SOUTH = "RESIZE_SOUTH", i.RESIZE_NORTH_WEST = "RESIZE_NORTH_WEST", i.RESIZE_NORTH_EAST = "RESIZE_NORTH_EAST", i.RESIZE_SOUTH_WEST = "RESIZE_SOUTH_WEST", i.RESIZE_SOUTH_EAST = "RESIZE_SOUTH_EAST", i);
 let p = new Set(["RESIZE_NORTH", "RESIZE_WEST", "RESIZE_EAST", "RESIZE_SOUTH", "RESIZE_NORTH_WEST", "RESIZE_NORTH_EAST", "RESIZE_SOUTH_WEST", "RESIZE_SOUTH_EAST"]);
 
-function f(e, t, n) {
+function _(e, t, n) {
     let {
         width: i,
         height: s
@@ -26,7 +26,7 @@ function f(e, t, n) {
     }
 }
 
-function _(e) {
+function f(e) {
     let {
         top: t,
         left: n,
@@ -122,13 +122,13 @@ class x extends a.Component {
         operationStarted: !1
     };
     constructor(e) {
-        super(e), this.anchor = _(e.anchor), this.size = f(e.size, e.minSize.width, e.minSize.height)
+        super(e), this.anchor = f(e.anchor), this.size = _(e.size, e.minSize.width, e.minSize.height)
     }
     shouldComponentUpdate(e, t) {
         return !(0, o.A)(t, this.state) || !(0, o.A)(e, this.props, ["anchor", "size", "minSize", "container"]) || !(0, o.A)(e.anchor, this.props.anchor) || !(0, o.A)(e.size, this.props.size) || !(0, o.A)(e.minSize, this.props.minSize) || !(0, o.A)(e.container, this.props.container)
     }
     componentDidUpdate(e, t) {
-        null == t.operation && ((0, o.A)(this.props.anchor, e.anchor) || this.setDOMPositions(_(this.props.anchor)), (0, o.A)(this.props.size, e.size) || this.setDOMSize(f(this.props.size, this.props.minSize.width, this.props.minSize.height)))
+        null == t.operation && ((0, o.A)(this.props.anchor, e.anchor) || this.setDOMPositions(f(this.props.anchor)), (0, o.A)(this.props.size, e.size) || this.setDOMSize(_(this.props.size, this.props.minSize.width, this.props.minSize.height)))
     }
     componentWillUnmount() {
         this.handleOperationEnd()
@@ -245,21 +245,21 @@ class x extends a.Component {
                 offsetY: p
             },
             state: {
-                operationStarted: f
+                operationStarted: _
             }
         } = this;
         if (null == n) return null;
         e = Math.max(Math.min(s, e), l), t = Math.max(Math.min(a, t), r);
         let {
-            width: _,
+            width: f,
             height: A
         } = g(n, this.size), x = t - p, E = e - h, y = (0, d.fh)((0, d.Ly)({
             top: x,
             left: E,
             bottom: void 0,
             right: void 0
-        }, s, a, _, A)), v = u ? (0, d.h1)(y) : m("RESIZE_SOUTH_EAST", y);
-        this.setDOMPositions(v), f || (null != o && o(), this.setState({
+        }, s, a, f, A)), v = u ? (0, d.h1)(y) : m("RESIZE_SOUTH_EAST", y);
+        this.setDOMPositions(v), _ || (null != o && o(), this.setState({
             operationStarted: !0
         })), null != c && c(i, "MOVE", this.anchor, this.size)
     }
@@ -284,8 +284,8 @@ class x extends a.Component {
         } = this, {
             startX: h,
             startY: p,
-            offsetWidth: f,
-            offsetHeight: _
+            offsetWidth: _,
+            offsetHeight: f
         } = this.dragState, A = 0, g = 0;
         if (null != c) {
             switch (e = Math.max(Math.min(s, e), l), t = Math.max(Math.min(a, t), r), c) {
@@ -310,9 +310,9 @@ class x extends a.Component {
                 case "RESIZE_NORTH_EAST":
                     g += p - t
             }
-            f = Math.max(f + A, i.width), _ = Math.max(_ + g, i.height), this.setDOMSize({
-                width: f,
-                height: _
+            _ = Math.max(_ + A, i.width), f = Math.max(f + g, i.height), this.setDOMSize({
+                width: _,
+                height: f
             }), u || (null != o && o(), this.setState({
                 operationStarted: !0
             })), null != d && d(n, c, this.anchor, this.size)

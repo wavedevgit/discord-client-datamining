@@ -1,7 +1,7 @@
 /** chunk id: 743987 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => _
+    A: () => f
 });
 var i = n(627968);
 n(64700);
@@ -15,23 +15,23 @@ var s = n(417597),
     u = n(71393),
     h = n(661191),
     p = n(985018),
-    f = n(287469);
+    _ = n(287469);
 
-function _(e) {
+function f(e) {
     let {
         userId: t,
         guildId: n,
-        textClassName: _,
+        textClassName: f,
         tooltipDelay: A
     } = e, g = (0, s.bG)([d.default], () => d.default.locale), m = (0, s.bG)([u.A], () => null != n ? u.A.getGuild(n) : null), x = (0, s.bG)([c.Ay], () => null != n ? c.Ay.getMember(n, t) : null), E = (0, r.An)(h.default.extractTimestamp(t), g), y = (0, r.An)(x?.joinedAt, g);
     return null == m || null == x ? (0, i.jsx)(l.Text, {
         variant: "text-sm/normal",
-        className: _,
+        className: f,
         children: E
     }) : (0, i.jsxs)("div", {
-        className: f.y9,
+        className: _.y9,
         children: [(0, i.jsxs)("div", {
-            className: f.R1,
+            className: _.R1,
             children: [(0, i.jsx)(a.m, {
                 text: p.intl.string(p.t.uvGmCx),
                 delay: A,
@@ -40,28 +40,28 @@ function _(e) {
                     width: 28,
                     height: 28,
                     color: "currentColor",
-                    className: f.Mg
+                    className: _.Mg
                 })
             }), (0, i.jsx)(l.Text, {
                 variant: "text-sm/normal",
-                className: _,
+                className: f,
                 children: E
             })]
         }), (0, i.jsx)("div", {
-            className: f.yF
+            className: _.yF
         }), (0, i.jsxs)("div", {
-            className: f.R1,
+            className: _.R1,
             children: [(0, i.jsx)(a.m, {
                 text: m.name,
                 delay: A,
                 children: (0, i.jsx)(o.Ay, {
                     guild: m,
                     size: o.Ay.Sizes.SMOL,
-                    className: f.$f
+                    className: _.$f
                 })
             }), (0, i.jsx)(l.Text, {
                 variant: "text-sm/normal",
-                className: _,
+                className: f,
                 children: y
             })]
         })]

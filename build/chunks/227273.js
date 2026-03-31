@@ -1,6 +1,6 @@
 /** chunk id: 227273 params = (module,exports,require) **/
 n.d(t, {
-    A: () => E
+    A: () => S
 });
 var i = n(627968),
     s = n(64700),
@@ -14,8 +14,8 @@ var i = n(627968),
     m = n(800172),
     g = n(953143),
     _ = n(954571),
-    A = n(52167),
-    x = n(652215),
+    x = n(52167),
+    A = n(652215),
     h = n(985018),
     p = n(205623);
 let T = e => {
@@ -46,19 +46,19 @@ let T = e => {
             imageClassName: r,
             titleBadge: d,
             isNew: _ = !1,
-            isEarlyAccess: A = !1
+            isEarlyAccess: x = !1
         } = e, {
-            analyticsLocations: x
+            analyticsLocations: A
         } = (0, u.Ay)(c.A.PREMIUM_MARKETING_PERK_CARD);
         return (0, i.jsx)(u.f5, {
-            value: x,
+            value: A,
             children: (0, i.jsxs)("div", {
                 className: a()(p.perkCard, s),
                 children: [_ ? (0, i.jsx)(g.A, {
                     className: p.perkCardNewBadge,
                     shouldInheritBackgroundColor: !0,
                     shouldInheritTextColor: !0
-                }) : null, A ? (0, i.jsx)(m.A, {
+                }) : null, x ? (0, i.jsx)(m.A, {
                     className: p.perkCardEarlyAccessBadge
                 }) : null, (0, i.jsx)("img", {
                     src: l,
@@ -72,21 +72,21 @@ let T = e => {
                     }), (0, i.jsx)(o.Text, {
                         variant: "text-sm/normal",
                         className: p.perkCardDescription,
-                        children: "function" == typeof n ? n(x) : n
+                        children: "function" == typeof n ? n(A) : n
                     })]
                 })]
             })
         })
     },
-    E = e => {
+    S = e => {
         let {
             className: t,
             isSubscriberNitroHome: n = !1
-        } = e, [l, c] = s.useState(!1), m = (0, A.d)({
+        } = e, [l, c] = s.useState(!1), m = (0, x.d)({
             styles: p
         }), g = (0, r.bG)([d.A], () => d.A.useReducedMotion), {
-            analyticsLocations: E
-        } = (0, u.Ay)(), S = [m.emoji, m.streaming, m.upload, m.customAppIcons, m.soundboard, m.videoBackground, m.superReactions, m.stickersPremiumPerk, m.badgeAlt];
+            analyticsLocations: S
+        } = (0, u.Ay)(), E = [m.emoji, m.streaming, m.upload, m.customAppIcons, m.soundboard, m.videoBackground, m.superReactions, m.stickersPremiumPerk, m.badgeAlt];
         return (0, i.jsxs)("div", {
             className: a()(p.perksContainer, t, {
                 [p.partiallyHidden]: n && !l,
@@ -101,7 +101,7 @@ let T = e => {
                 className: a()(p.perkCardContainer, {
                     [p.perkCardContainerExpanded]: l
                 }),
-                children: S.map(e => null != e && (0, i.jsx)(f, {
+                children: E.map(e => null != e && (0, i.jsx)(f, {
                     ...e
                 }, e.title))
             }), n && (0, i.jsxs)(i.Fragment, {
@@ -112,8 +112,8 @@ let T = e => {
                     }),
                     children: (0, i.jsx)(T, {
                         onClick: () => {
-                            _.default.track(x.HAw.PREMIUM_MARKETING_PERKS_SEE_ALL_CLICKED, {
-                                location_stack: E,
+                            _.default.track(A.HAw.PREMIUM_MARKETING_PERKS_SEE_ALL_CLICKED, {
+                                location_stack: S,
                                 was_expanded: l
                             }), c(!l)
                         },

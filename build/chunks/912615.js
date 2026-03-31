@@ -14,8 +14,8 @@ var i = n(627968),
     m = n(147964),
     g = n(985018),
     _ = n(677289),
-    A = n(153335);
-let x = /^\d+$|^$/;
+    x = n(153335);
+let A = /^\d+$|^$/;
 
 function h(e) {
     let {
@@ -29,7 +29,7 @@ function h(e) {
         authorizedApplicationId: m.A.testModeApplicationId,
         authorizationError: m.A.error,
         authorizing: m.A.isFetchingAuthorization
-    })), [f, E] = s.useState(h ?? ""), [S, b] = s.useState("8080"), [C, N] = s.useState("localhost"), v = x.test(f);
+    })), [f, S] = s.useState(h ?? ""), [E, b] = s.useState("8080"), [C, N] = s.useState("localhost"), v = A.test(f);
     async function I() {
         d.SH();
         let e = function(e, t, n) {
@@ -40,21 +40,21 @@ function h(e) {
                 case "proxy":
                     return (0, c.Ay)(n)
             }
-        }(C, S, f);
+        }(C, E, f);
         null != await d.q1(f, e) && t()
     }
     s.useEffect(() => () => o.h.wait(() => d.SH()), []);
     let j = null != h && h === f,
         y = j ? function() {
-            d.cL(), E(""), N(null)
+            d.cL(), S(""), N(null)
         } : I,
         O = s.useMemo(() => [{
             loading: T,
-            disabled: !v || 0 === f.length || "localhost" === C && 0 === S.length,
+            disabled: !v || 0 === f.length || "localhost" === C && 0 === E.length,
             variant: j ? "critical-primary" : "active",
             text: j ? g.intl.string(g.t.d6TR3I) : g.intl.string(g.t.qwuK5I),
             onClick: y
-        }], [f.length, T, j, v, S.length, y, C]);
+        }], [f.length, T, j, v, E.length, y, C]);
     return (0, i.jsxs)(l.Modal, {
         title: g.intl.string(g.t.f8fzky),
         subtitle: g.intl.string(g.t.a6Vill),
@@ -62,7 +62,7 @@ function h(e) {
         onClose: t,
         transitionState: n,
         children: [null == p ? null : (0, i.jsx)("div", {
-            className: A.SX,
+            className: x.SX,
             children: (0, i.jsx)(r.wx6, {
                 type: "critical",
                 children: p
@@ -79,7 +79,7 @@ function h(e) {
                     maxLength: 19,
                     error: v ? null : g.intl.string(g.t.gPNgKO),
                     onChange: function(e) {
-                        E(e)
+                        S(e)
                     },
                     disabled: T
                 })
@@ -109,7 +109,7 @@ function h(e) {
                 children: (0, i.jsx)(r.ksK, {
                     required: !0,
                     label: g.intl.string(g.t.fF4zxq),
-                    value: S,
+                    value: E,
                     maxLength: 5,
                     onChange: e => b(e),
                     disabled: T

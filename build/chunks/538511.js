@@ -16,14 +16,14 @@ var s = n(503698),
     m = n(793574),
     g = n(688810),
     _ = n(531260),
-    A = n(626584),
-    x = n(639289),
+    x = n(626584),
+    A = n(639289),
     h = n(532794),
     p = n(832946),
     T = n(97352),
     f = n(481354),
-    E = n(85563),
-    S = n(739508),
+    S = n(85563),
+    E = n(739508),
     b = n(203982),
     C = n(927578),
     N = n(83617),
@@ -40,7 +40,7 @@ var s = n(503698),
     M = n(601107),
     k = n(985018),
     U = n(141025);
-let w = new A.A("SubscriptionHeader.tsx"),
+let w = new x.A("SubscriptionHeader.tsx"),
     V = {
         page: G.liQ.USER_SETTINGS,
         section: G.JJy.SETTINGS_PREMIUM,
@@ -130,7 +130,7 @@ function H(e) {
 function z() {
     return (0, i.jsxs)("div", {
         className: U.Up,
-        children: [(0, i.jsx)(E.A, {
+        children: [(0, i.jsx)(S.A, {
             className: U.sq,
             "aria-label": k.intl.string(k.t.FSOz78)
         }), (0, i.jsx)("div", {
@@ -168,7 +168,7 @@ let X = function(e) {
         subscription: t,
         currentInvoicePreview: s,
         renewalInvoicePreview: a,
-        paymentSource: A,
+        paymentSource: x,
         busy: R,
         analyticsLocation: Y
     } = e, {
@@ -198,10 +198,10 @@ let X = function(e) {
         if (null != t && null != t.premiumPlanIdFromItems) {
             let e = T.A.get(t.premiumPlanIdFromItems);
             if (null == e) return void w.info(`Plan not fetched for plan id: ${t.premiumPlanIdFromItems}`);
-            let l = (0, N._w)(e, A?.id, !1),
+            let l = (0, N._w)(e, x?.id, !1),
                 d = l.length > 0 ? l[0] : t.currency,
                 u = !0;
-            if (1 === l.length && A?.id === t.paymentSourceId && (0, N.jJ)(e.id, d, A?.id) && (u = !1), u)(0, h.A)({
+            if (1 === l.length && x?.id === t.paymentSourceId && (0, N.jJ)(e.id, d, x?.id) && (u = !1), u)(0, h.A)({
                 initialPlanId: t.premiumPlanIdFromItems,
                 analyticsLocations: X,
                 analyticsLocation: Y,
@@ -224,14 +224,14 @@ let X = function(e) {
                         onClose: async () => {
                             l || (l = !0, b._.dispatch(G.jej.WOW_MOMENT_CONFIRMATION_MODAL_CLOSED), y.A.isDisplayingWowMomentConfirmation && y.A.isAnimated ? setTimeout(() => {
                                 n.onClose()
-                            }, x.K) : await n.onClose())
+                            }, A.K) : await n.onClose())
                         }
                     })
                 }, {
                     onCloseRequest: () => {
                         l || (l = !0, b._.dispatch(G.jej.WOW_MOMENT_CONFIRMATION_MODAL_CLOSED), y.A.isDisplayingWowMomentConfirmation && y.A.isAnimated ? setTimeout(() => {
                             (0, c.OoC)(e)
-                        }, x.K) : (0, c.OoC)(e))
+                        }, A.K) : (0, c.OoC)(e))
                     },
                     modalKey: e
                 })
@@ -245,7 +245,7 @@ let X = function(e) {
             analyticsObject: V,
             subscription: t,
             skipConfirm: !0
-        }) : u.U(t, X) : (0, S.pM)(Error("Invalid subscription to resume"), {
+        }) : u.U(t, X) : (0, E.pM)(Error("Invalid subscription to resume"), {
             extra: {
                 subscriptionId: t.id,
                 status: t.status,
@@ -274,7 +274,7 @@ let X = function(e) {
         case D.PremiumTypes.TIER_0:
             em = (0, i.jsxs)("div", {
                 className: U.Up,
-                children: [(0, i.jsx)(E.A, {
+                children: [(0, i.jsx)(S.A, {
                     className: U.sq,
                     "aria-label": k.intl.string(k.t["t9uG/o"])
                 }), (0, i.jsx)("div", {

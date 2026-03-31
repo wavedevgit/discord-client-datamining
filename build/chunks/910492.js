@@ -1,37 +1,37 @@
 /** chunk id: 910492 params = (module,exports,require) **/
 n.d(t, {
-    O: () => A,
-    q: () => u
+    O: () => E,
+    q: () => A
 });
 var i = n(735438),
-    r = n.n(i),
-    s = n(265422),
-    a = n(851109),
-    l = n(734057),
-    o = n(186111),
+    l = n.n(i),
+    r = n(265422),
+    s = n(851109),
+    o = n(734057),
+    a = n(186111),
     d = n(309010),
-    _ = n(203982),
-    c = n(652215);
-let u = {
+    c = n(203982),
+    u = n(652215);
+let A = {
         binds: ["mod+i"],
         comboKeysBindGlobal: !0,
-        action: () => !(o.A.getLayers().length > 0) && ((() => {
+        action: () => !(a.A.getLayers().length > 0) && ((() => {
             let {
                 notificationCenterVariant: e
-            } = (0, a.GE)({
+            } = (0, s.GE)({
                 location: "TOGGLE_INBOX"
             });
             if ("sidebar" !== e) return;
             let t = d.A.getChannelId(),
-                n = l.A.getChannel(t);
-            return window.location.pathname.startsWith(c.BVt.CHANNEL(c.gNP)) && null != n ? (0, s.i)(n.guild_id, t) : (0, s.a)(c.BVt.CHANNEL(c.gNP, t ?? void 0))
-        })(), _._.dispatch(c.jej.TOGGLE_INBOX), !1)
+                n = o.A.getChannel(t);
+            return window.location.pathname.startsWith(u.BVt.CHANNEL(u.gNP)) && null != n ? (0, r.i)(n.guild_id, t) : (0, r.a)(u.BVt.CHANNEL(u.gNP, t ?? void 0))
+        })(), c._.dispatch(u.jej.TOGGLE_INBOX), !1)
     },
-    A = {
+    E = {
         binds: ["mod+shift+e"],
         comboKeysBindGlobal: !0,
-        action: r().debounce(() => {
-            if (_._.hasSubscribers(c.jej.MARK_TOP_INBOX_CHANNEL_READ)) return _._.dispatch(c.jej.MARK_TOP_INBOX_CHANNEL_READ), !1
+        action: l().debounce(() => {
+            if (c._.hasSubscribers(u.jej.MARK_TOP_INBOX_CHANNEL_READ)) return c._.dispatch(u.jej.MARK_TOP_INBOX_CHANNEL_READ), !1
         }, 100, {
             leading: !0
         })

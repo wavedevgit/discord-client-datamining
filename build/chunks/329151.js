@@ -1,26 +1,26 @@
 /** chunk id: 329151 params = (module,exports,require) **/
-i.d(e, {
+i.d(t, {
     A: () => o
 });
 var n = i(627968);
 i(64700);
-var l = i(452626),
-    r = i(833349),
+var a = i(452626),
+    l = i(833349),
     s = i(90644),
-    a = i(652215);
+    r = i(652215);
 
-function o(t) {
+function o(e) {
     let {
-        activity: e,
+        activity: t,
         user: i,
         source: o,
-        onAction: d
-    } = t;
-    return null != e && (0, r.A)(e, a.jUm.PLAY) && (0, s.A)(e) ? (0, n.jsx)(l.A, {
+        onAction: c
+    } = e;
+    return null != t && (0, l.A)(t, r.jUm.PLAY) && (0, s.A)(t) ? (0, n.jsx)(a.A, {
         fullWidth: !0,
-        activity: e,
+        activity: t,
         user: i,
         source: o,
-        onAction: d
+        onAction: c
     }) : null
 }

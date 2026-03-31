@@ -6,45 +6,45 @@ n.d(t, {
 var r = n(627968);
 n(64700);
 var i = n(503698),
-    a = n.n(i),
-    l = n(481613),
-    s = n.n(l),
+    l = n.n(i),
+    a = n(481613),
+    s = n.n(a),
     o = n(397927),
-    c = n(77729),
-    u = n(521502),
+    u = n(77729),
+    c = n(521502),
     d = n(915089),
     h = n(206845),
-    f = n(837921),
-    m = n(985018),
+    m = n(837921),
+    f = n(985018),
     p = n(766247);
 
 function _() {
     let e = (0, d.GV)(),
         t = window.GLOBAL_ENV.RELEASE_CHANNEL,
-        n = "520760",
-        i = "64602d5839226daca01007362f58e13e9f59bd3f".substring(0, 7),
-        l = c.A?.app.getVersion(),
-        _ = c.A?.app.getBuildNumber(),
-        v = c.A?.app.getAppArch(),
-        y = u.A.getCurrentBuildOverride().overrides?.discord_web,
+        n = "520782",
+        i = "99b7058e6f17e3ed2f5162946b56b118d65c868b".substring(0, 7),
+        a = u.A?.app.getVersion(),
+        _ = u.A?.app.getBuildNumber(),
+        v = u.A?.app.getAppArch(),
+        y = c.A.getCurrentBuildOverride().overrides?.discord_web,
         g = function() {
             let e = s()?.os?.toString();
-            if (null == e || null == c.A) return null;
-            let t = c.A.os.release,
-                [n, r, i] = f.Ay.parsedOSRelease;
+            if (null == e || null == u.A) return null;
+            let t = u.A.os.release,
+                [n, r, i] = m.Ay.parsedOSRelease;
             return e.includes("Windows 10") && void 0 !== i && i >= 22e3 && (e = e.replace("Windows 10", "Windows 11")), e.includes("OS X 10.15.7") && void 0 !== n && n >= 20 && (e = `macOS ${n>=25?n+1:n-9}`), `${e} (${t})`
         }(),
         x = [t, n, `(${i})`];
-    return null != l && (x.push(`Host ${l}`), null != v && x.push(v.toLowerCase()), null != _ && x.push(`(${_})`)), x.push(`Build Override: ${null!=y?y.id:"N/A"}`), null != g && x.push(g), (0, r.jsxs)(r.Fragment, {
+    return null != a && (x.push(`Host ${a}`), null != v && x.push(v.toLowerCase()), null != _ && x.push(`(${_})`)), x.push(`Build Override: ${null!=y?y.id:"N/A"}`), null != g && x.push(g), (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(h.A, {
             copyValue: x.join(" "),
-            text: m.intl.string(m.t["9Al4Qd"]),
+            text: f.intl.string(f.t["9Al4Qd"]),
             "aria-label": !1,
             dataMeticulousIgnore: "true",
             children: s => (0, r.jsxs)(o.DUT, {
                 ...s,
                 "aria-describedby": e,
-                className: a()(p.vk, p.oE),
+                className: l()(p.vk, p.oE),
                 children: [(0, r.jsxs)("div", {
                     className: p.Cr,
                     "data-mtctest-ignore": "true",
@@ -56,11 +56,11 @@ function _() {
                             className: p.Pc,
                             children: ["(", i, ")"]
                         })]
-                    }), null != l && (0, r.jsxs)(o.Text, {
+                    }), null != a && (0, r.jsxs)(o.Text, {
                         tag: "span",
                         variant: "text-xxs/normal",
                         color: "text-muted",
-                        children: [l, null != v && (0, r.jsxs)("span", {
+                        children: [a, null != v && (0, r.jsxs)("span", {
                             className: p.GI,
                             children: [" ", v.toLowerCase()]
                         }), null != _ && (0, r.jsxs)("span", {
@@ -79,7 +79,7 @@ function _() {
             })
         }), (0, r.jsx)(o.AC4, {
             id: e,
-            children: m.intl.string(m.t["9Al4Qd"])
+            children: f.intl.string(f.t["9Al4Qd"])
         })]
     })
 }

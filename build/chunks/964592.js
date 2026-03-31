@@ -1,31 +1,31 @@
 /** chunk id: 964592 params = (module,exports,require) **/
-i.d(e, {
-    A: () => c
+i.d(t, {
+    A: () => u
 });
 var n = i(627968);
 i(64700);
-var l = i(311907),
-    r = i(397927),
+var a = i(311907),
+    l = i(397927),
     s = i(827343),
-    a = i(430452),
+    r = i(430452),
     o = i(824744),
-    d = i(723702),
-    u = i(985018);
+    c = i(723702),
+    d = i(985018);
 
-function c(t) {
-    let e = (0, l.bG)([a.Ay], () => (0, o.M)(a.Ay.getOutputVolume()));
-    return (0, n.jsx)(r.aK1, {
+function u(e) {
+    let t = (0, a.bG)([r.Ay], () => (0, o.M)(r.Ay.getOutputVolume()));
+    return (0, n.jsx)(l.aK1, {
         id: "output",
-        label: u.intl.string(u.t.eATD2B),
-        control: (i, l) => (0, n.jsx)(r.i42, {
+        label: d.intl.string(d.t.eATD2B),
+        control: (i, a) => (0, n.jsx)(l.i42, {
             ...i,
-            ref: l,
-            value: e,
-            maxValue: d.isPlatformEmbedded ? 200 : 100,
-            onChange: e => s.A.setOutputVolume((0, o.w)(e), {
-                analyticsLocations: t
+            ref: a,
+            value: t,
+            maxValue: c.isPlatformEmbedded ? 200 : 100,
+            onChange: t => s.A.setOutputVolume((0, o.w)(t), {
+                analyticsLocations: e
             }),
-            "aria-label": u.intl.string(u.t.eATD2B)
+            "aria-label": d.intl.string(d.t.eATD2B)
         })
     })
 }

@@ -14,8 +14,8 @@ var i = n(64700),
     u = n(808728),
     h = n(696451),
     p = n(71393),
-    f = n(576705),
-    _ = n(309010),
+    _ = n(576705),
+    f = n(309010),
     A = n(967198),
     g = n(287809),
     m = n(256415),
@@ -50,9 +50,9 @@ class y extends i.Component {
         return null
     }
 }
-let v = a.Ay.connectStores([A.A, _.A, p.A, g.default, m.default, u.Ay, f.A, h.Ay], () => {
+let v = a.Ay.connectStores([A.A, f.A, p.A, g.default, m.default, u.Ay, _.A, h.Ay], () => {
     let e = A.A.getGuildId(),
-        t = _.A.getChannelId(e),
+        t = f.A.getChannelId(e),
         n = p.A.getGuild(e),
         i = g.default.getCurrentUser(),
         a = u.Ay.getChannels(n?.id)[u.I6] ?? [],
@@ -60,7 +60,7 @@ let v = a.Ay.connectStores([A.A, _.A, p.A, g.default, m.default, u.Ay, f.A, h.Ay
             let {
                 channel: t
             } = e;
-            return f.A.can(s.kg(E.xBc.SEND_MESSAGES, E.xBc.VIEW_CHANNEL), t)
+            return _.A.can(s.kg(E.xBc.SEND_MESSAGES, E.xBc.VIEW_CHANNEL), t)
         }).length : 0,
         r = null != i && null != e && (h.Ay.getMember(e, i.id)?.isPending ?? !1);
     return {

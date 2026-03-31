@@ -4,13 +4,13 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var a = n(311907),
-    l = n(397927),
+var l = n(311907),
+    a = n(397927),
     s = n(517164),
     r = n(114212),
     o = n(290863),
-    c = n(461213),
-    d = n(975571),
+    d = n(461213),
+    c = n(975571),
     u = n(146655),
     g = n(489379),
     m = n(837924),
@@ -43,9 +43,9 @@ function T(e) {
     } = (0, g.A)({
         userId: t.id,
         guildId: b
-    }), L = (0, a.bG)([s.A], () => s.A.isFetchingUserOutbox(t.id)), w = t.id === n.id, P = (0, a.bG)([c.A, o.A], () => {
-        let e = w ? c.A.getStatus() : o.A.getStatus(t.id);
-        return e === l.clD.OFFLINE || e === l.clD.INVISIBLE
+    }), L = (0, l.bG)([s.A], () => s.A.isFetchingUserOutbox(t.id)), w = t.id === n.id, P = (0, l.bG)([d.A, o.A], () => {
+        let e = w ? d.A.getStatus() : o.A.getStatus(t.id);
+        return e === a.clD.OFFLINE || e === a.clD.INVISIBLE
     }), D = N.length > 0 || null != R, G = T?.private !== !0 && null == R && null == k && null != O, F = !P && (D || G), U = y.length > 0;
     return F || U || !L ? F || U || L ? (0, i.jsxs)(A.K, {
         className: v.XG,
@@ -61,14 +61,14 @@ function T(e) {
                         stream: R,
                         onClose: S
                     })
-                }), N.map((e, a) => (0, i.jsx)("li", {
+                }), N.map((e, l) => (0, i.jsx)("li", {
                     children: (0, i.jsx)(m.A, {
                         user: t,
                         currentUser: n,
                         activity: e,
                         onClose: S
                     })
-                }, `live-${a}`)), G && (0, i.jsx)("li", {
+                }, `live-${l}`)), G && (0, i.jsx)("li", {
                     children: (0, i.jsx)(f.A, {
                         user: t,
                         currentUser: n,
@@ -80,8 +80,8 @@ function T(e) {
         }) : null, U ? (0, i.jsx)(_.A, {
             heading: E.intl.string(E.t.jzgEoL),
             introText: w ? E.intl.format(E.t["4bk9Ak"], {
-                learnMoreHook: (e, t) => (0, i.jsx)(l.MzZ, {
-                    href: d.A.getArticleURL(j.MVz.ACTIVITY_STATUS_SETTINGS),
+                learnMoreHook: (e, t) => (0, i.jsx)(a.MzZ, {
+                    href: c.A.getArticleURL(j.MVz.ACTIVITY_STATUS_SETTINGS),
                     children: e
                 }, t)
             }) : void 0,

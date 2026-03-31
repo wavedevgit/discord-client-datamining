@@ -1,34 +1,34 @@
 /** chunk id: 128490 params = (module,exports,require) **/
 t.d(n, {
-    A: () => I
+    A: () => g
 });
 var i = t(627968);
 t(64700);
-var s = t(311907),
-    a = t(397927),
-    l = t(734057),
-    r = t(309010),
+var a = t(311907),
+    s = t(397927),
+    r = t(734057),
+    l = t(309010),
     o = t(622543),
     d = t(987112),
     c = t(389996),
     u = t(743987),
     _ = t(900179),
     A = t(280645),
-    x = t(928223),
-    p = t(518477),
-    m = t(985018),
-    g = t(47049);
+    p = t(928223),
+    x = t(518477),
+    f = t(985018),
+    m = t(47049);
 
-function I(e) {
+function g(e) {
     let {
         user: n,
         displayProfile: t,
-        guildId: I,
-        onClose: f
-    } = e, h = (0, s.bG)([o.A], () => o.A.getUserProfile(n.id)?.application), b = (0, s.bG)([l.A, r.A], () => l.A.getChannel(r.A.getChannelId()));
-    return (0, i.jsxs)(a.IpV, {
+        guildId: g,
+        onClose: I
+    } = e, h = (0, a.bG)([o.A], () => o.A.getUserProfile(n.id)?.application), b = (0, a.bG)([r.A, l.A], () => r.A.getChannel(l.A.getChannelId()));
+    return (0, i.jsxs)(s.IpV, {
         fade: !0,
-        className: g.XG,
+        className: m.XG,
         children: [(0, i.jsx)(c.E, {
             userBio: t?.bio,
             setLineClamp: !1
@@ -36,19 +36,19 @@ function I(e) {
             applicationId: h.id,
             commandIds: h.popularApplicationCommandIds,
             channel: b,
-            guildId: I,
-            onClick: f
+            guildId: g,
+            onClick: I
         }), t?.guildId != null && (0, i.jsx)(A.A, {
             userId: n.id,
             guildId: t.guildId
         }), (0, i.jsx)(_.A, {
-            heading: m.intl.string(m.t["A//N4k"]),
+            heading: f.intl.string(f.t["A//N4k"]),
             children: (0, i.jsx)(u.A, {
                 userId: n.id,
-                guildId: I,
-                tooltipDelay: p.In
+                guildId: g,
+                tooltipDelay: x.In
             })
-        }), (0, i.jsx)(x.A, {
+        }), (0, i.jsx)(p.A, {
             userId: n.id
         })]
     })

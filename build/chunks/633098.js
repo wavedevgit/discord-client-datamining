@@ -3,13 +3,13 @@ n.d(t, {
     A: () => E
 });
 var i = n(627968),
-    a = n(64700),
-    l = n(503698),
-    s = n.n(l),
+    l = n(64700),
+    a = n(503698),
+    s = n.n(a),
     r = n(382222),
     o = n(311907),
-    c = n(397927),
-    d = n(775602),
+    d = n(397927),
+    c = n(775602),
     u = n(203982),
     g = n(183555),
     m = n(289173),
@@ -27,7 +27,7 @@ function E(e) {
         className: t
     } = e, {
         trackUserProfileEditSaved: n
-    } = (0, g.NJ)(), [l, E] = a.useState(!1), v = (0, o.yK)([x.A], () => x.A.getSaveablePendingWidgets() ?? []), T = (0, o.yK)([x.A], () => x.A.getChangedWidgets()), b = (0, o.yK)([x.A], () => x.A.getRemovedWidgets()), C = (0, o.bG)([x.A], () => x.A.hasUnsavedChanges()), S = (0, o.bG)([x.A], () => x.A.canSaveChanges()), N = (0, o.bG)([x.A], () => x.A.isSubmitting), y = (0, o.bG)([d.A], () => d.A.useReducedMotion), R = (0, c.pnh)(C, {
+    } = (0, g.NJ)(), [a, E] = l.useState(!1), v = (0, o.yK)([x.A], () => x.A.getSaveablePendingWidgets() ?? []), T = (0, o.yK)([x.A], () => x.A.getChangedWidgets()), b = (0, o.yK)([x.A], () => x.A.getRemovedWidgets()), C = (0, o.bG)([x.A], () => x.A.hasUnsavedChanges()), S = (0, o.bG)([x.A], () => x.A.canSaveChanges()), N = (0, o.bG)([x.A], () => x.A.isSubmitting), y = (0, o.bG)([c.A], () => c.A.useReducedMotion), R = (0, d.pnh)(C, {
         from: {
             opacity: 0,
             y: 80 * !y
@@ -41,7 +41,7 @@ function E(e) {
             y: 80 * !y
         }
     });
-    a.useEffect(() => {
+    l.useEffect(() => {
         let e = null;
 
         function t() {
@@ -50,10 +50,10 @@ function E(e) {
         return u._.subscribe(_.jej.EMPHASIZE_NOTICE, t), () => {
             u._.unsubscribe(_.jej.EMPHASIZE_NOTICE, t), null !== e && clearTimeout(e)
         }
-    }, []), a.useEffect(() => {
-        C && c.ORC.announce(A.intl.string(A.t["0Y/qkL"]))
+    }, []), l.useEffect(() => {
+        C && d.ORC.announce(A.intl.string(A.t["0Y/qkL"]))
     }, [C]);
-    let O = a.useCallback(async () => {
+    let O = l.useCallback(async () => {
             if (x.A.canSaveChanges()) {
                 try {
                     await p.A.savePendingWidgets(v)
@@ -74,7 +74,7 @@ function E(e) {
                 })
             }
         }, [v, T, b, n]),
-        k = a.useCallback(() => {
+        k = l.useCallback(() => {
             p.A.clearPendingWidgets()
         }, []);
     return R((e, n) => n ? (0, i.jsx)(r.animated.div, {
@@ -82,10 +82,10 @@ function E(e) {
         style: e,
         children: (0, i.jsxs)("footer", {
             className: s()(I.Qs, {
-                [I.hO]: l
+                [I.hO]: a
             }),
             "aria-labelledby": j,
-            children: [(0, i.jsx)(c.Text, {
+            children: [(0, i.jsx)(d.Text, {
                 id: j,
                 variant: "text-md/medium",
                 color: "text-strong",
@@ -93,13 +93,13 @@ function E(e) {
                 children: A.intl.string(A.t["/lQiX/"])
             }), (0, i.jsxs)("div", {
                 className: I.o1,
-                children: [(0, i.jsx)(c.Button, {
+                children: [(0, i.jsx)(d.Button, {
                     size: "sm",
                     variant: "secondary",
                     text: A.intl.string(A.t.yBZMsQ),
                     onClick: k,
                     disabled: !C || N
-                }), (0, i.jsx)(c.Button, {
+                }), (0, i.jsx)(d.Button, {
                     size: "sm",
                     variant: "primary",
                     text: A.intl.string(A.t["R3BPH+"]),

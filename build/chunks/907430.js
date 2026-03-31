@@ -4,24 +4,24 @@ n.d(t, {
     o: () => u
 });
 var i = n(627968),
-    a = n(409626),
-    l = n(692969),
+    l = n(409626),
+    a = n(692969),
     s = n(562153),
     r = n(415043),
     o = n(617086),
-    c = n(985018),
-    d = n(34519);
+    d = n(985018),
+    c = n(34519);
 
 function u(e) {
     let {
         applicationId: t,
         ...n
-    } = e, a = (0, o.A)(t);
-    return a.length > 0 ? (0, i.jsx)(r.A, {
-        label: c.intl.formatToPlainString(c.t.ujhJdG, {
-            numFriends: a.length
+    } = e, l = (0, o.A)(t);
+    return l.length > 0 ? (0, i.jsx)(r.A, {
+        label: d.intl.formatToPlainString(d.t.ujhJdG, {
+            numFriends: l.length
         }),
-        users: a,
+        users: l,
         maxUsers: 4,
         ...n
     }) : null
@@ -38,25 +38,25 @@ function g(e) {
         } = e,
         _ = (0, o.A)(p),
         A = _.length > 0,
-        I = (t = _, n = x, u = f, g = t.slice(0, 3).map(e => s.Ay.getName(n, u, e)), 1 === t.length ? c.intl.formatToPlainString(c.t.FURqTU, {
+        I = (t = _, n = x, u = f, g = t.slice(0, 3).map(e => s.Ay.getName(n, u, e)), 1 === t.length ? d.intl.formatToPlainString(d.t.FURqTU, {
             name: g[0]
-        }) : 2 === t.length ? c.intl.formatToPlainString(c.t["08Usu/"], {
+        }) : 2 === t.length ? d.intl.formatToPlainString(d.t["08Usu/"], {
             name1: g[0],
             name2: g[1]
-        }) : 3 === t.length ? c.intl.formatToPlainString(c.t.NTYHag, {
+        }) : 3 === t.length ? d.intl.formatToPlainString(d.t.NTYHag, {
             name1: g[0],
             name2: g[1],
             name3: g[2]
-        }) : c.intl.formatToPlainString(c.t["i/5oAn"], {
+        }) : d.intl.formatToPlainString(d.t["i/5oAn"], {
             name1: g[0],
             name2: g[1],
             name3: g[2],
             numPeople: t.length - 3
         })),
-        j = (0, l.A)({
+        j = (0, a.A)({
             location: "SocialProofButton",
             applicationId: p,
-            source: a.Ob.UserProfile,
+            source: l.Ob.UserProfile,
             sourceUserId: m,
             trackEntryPointImpression: !0
         });
@@ -69,6 +69,6 @@ function g(e) {
         channelId: f,
         "aria-label": I,
         overflowCountColor: "text-strong",
-        overflowCountClassName: d.L
+        overflowCountClassName: c.L
     }) : null
 }

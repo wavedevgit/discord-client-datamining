@@ -14,14 +14,14 @@ var i = n(627968),
     m = n(711014),
     g = n(287809),
     _ = n(178368),
-    A = n(609405),
-    x = n(343557),
+    x = n(609405),
+    A = n(343557),
     h = n(242694),
     p = n(149524),
     T = n(501486),
     f = n(924699),
-    E = n(184487),
-    S = n(788868),
+    S = n(184487),
+    E = n(788868),
     b = n(533224);
 
 function C(e) {
@@ -31,21 +31,21 @@ function C(e) {
         fractionalState: R
     } = (0, a.A)({
         forceFetch: !0
-    }), P = N?.isPremiumGroupMember(), L = t?.isPausedOrPausePending !== !0 && R === S.xc.NONE && !P;
+    }), P = N?.isPremiumGroupMember(), L = t?.isPausedOrPausePending !== !0 && R === E.xc.NONE && !P;
     return (0, i.jsxs)("div", {
         className: b.GO,
         children: [(0, i.jsx)(r.kb, {
             className: b.ek
-        }), (0, i.jsx)(f.A, {}), P && (0, i.jsx)(d.A, {}), !j && (0, i.jsx)(x.A, {}), t?.isPaused && R !== S.xc.FP_SUB_PAUSED ? (0, i.jsx)(A.N, {
+        }), (0, i.jsx)(f.A, {}), P && (0, i.jsx)(d.A, {}), !j && (0, i.jsx)(A.A, {}), t?.isPaused && R !== E.xc.FP_SUB_PAUSED ? (0, i.jsx)(x.N, {
             appliedGuildBoosts: O,
             premiumSubscription: t
-        }) : (0, i.jsx)(A.A, {
+        }) : (0, i.jsx)(x.A, {
             guildBoostSlots: n,
             premiumSubscription: t
         }), (0, i.jsx)(h.A, {
             guildBoostSlots: C,
             fractionalPremiumState: R
-        }), (0, i.jsx)(E.A, {
+        }), (0, i.jsx)(S.A, {
             canAddBoosts: y && L
         }), (0, i.jsx)(o.A, {
             className: b.Q,

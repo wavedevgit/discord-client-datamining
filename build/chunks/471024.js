@@ -3,7 +3,7 @@
 n.d(t, {
     Ay: () => m,
     de: () => A,
-    sI: () => _
+    sI: () => f
 });
 var i = n(627968),
     s = n(64700),
@@ -21,10 +21,10 @@ let h = e => e.stopPropagation(),
         onMouseEnter: h,
         onMouseOver: h
     }),
-    f = () => (0, i.jsx)("div", {
+    _ = () => (0, i.jsx)("div", {
         className: c.yF
     }),
-    _ = (e, t, n) => (0, i.jsx)("div", {
+    f = (e, t, n) => (0, i.jsx)("div", {
         className: c.qD,
         children: d.intl.format(n, {
             keybind: t,
@@ -127,11 +127,11 @@ class g extends s.PureComponent {
         if ("function" == typeof e) {
             let a = e(n, t);
             return null != a ? (0, i.jsxs)(s.Fragment, {
-                children: [(0, i.jsx)(f, {}), a]
+                children: [(0, i.jsx)(_, {}), a]
             }, "hint-custom") : null
         }
         return (0, i.jsxs)(s.Fragment, {
-            children: [(0, i.jsx)(f, {}), (0, i.jsx)("div", {
+            children: [(0, i.jsx)(_, {}), (0, i.jsx)("div", {
                 className: "string" == typeof e ? c.dx : void 0,
                 children: e
             }, "hint-text")]
@@ -154,11 +154,11 @@ class g extends s.PureComponent {
         if (null != this.props.renderFooter) {
             let e = this.props.renderFooter(o);
             return null != e ? (0, i.jsxs)(s.Fragment, {
-                children: [(0, i.jsx)(f, {}), e]
+                children: [(0, i.jsx)(_, {}), e]
             }, "footer-custom-content") : null
         }
         return null != n || null != a ? (0, i.jsxs)(s.Fragment, {
-            children: [(0, i.jsx)(f, {}), (0, i.jsxs)(r.ButtonGroup, {
+            children: [(0, i.jsx)(_, {}), (0, i.jsxs)(r.ButtonGroup, {
                 fullWidth: !0,
                 children: [null != n ? (0, i.jsx)(r.Button, {
                     variant: "active",

@@ -1,203 +1,203 @@
 /** chunk id: 439447 params = (module,exports,require) **/
-i.d(e, {
-    A: () => h
+i.d(t, {
+    A: () => p
 });
-var n, l, r = i(627968),
+var n, a, l = i(627968),
     s = i(64700),
-    a = i(499979),
+    r = i(499979),
     o = i(451988),
-    d = i(985018),
-    u = ((n = u || {}).ACTIVITY_FEED = "ACTIVITY_FEED", n.ACTIVITY_FEED_NEW = "ACTIVITY_FEED_NEW", n.USER_ACTIVITY = "USER_ACTIVITY", n.USER_ACTIVITY_VOICE_USER = "USER_ACTIVITY_VOICE_USER", n.GAME_LIBRARY_TIME_PLAYED = "GAME_LIBRARY_TIME_PLAYED", n.GAME_LIBRARY_LAST_PLAYED = "GAME_LIBRARY_LAST_PLAYED", n.VOICE_CHANNEL_HISTORY = "VOICE_CHANNEL_HISTORY", n),
-    c = ((l = c || {}).START = "START", l.END = "END", l.TIME = "TIME", l);
-let m = t => (e, i) => null == i ? "" : d.intl.format(t(), {
-        time: e,
+    c = i(985018),
+    d = ((n = d || {}).ACTIVITY_FEED = "ACTIVITY_FEED", n.ACTIVITY_FEED_NEW = "ACTIVITY_FEED_NEW", n.USER_ACTIVITY = "USER_ACTIVITY", n.USER_ACTIVITY_VOICE_USER = "USER_ACTIVITY_VOICE_USER", n.GAME_LIBRARY_TIME_PLAYED = "GAME_LIBRARY_TIME_PLAYED", n.GAME_LIBRARY_LAST_PLAYED = "GAME_LIBRARY_LAST_PLAYED", n.VOICE_CHANNEL_HISTORY = "VOICE_CHANNEL_HISTORY", n),
+    u = ((a = u || {}).START = "START", a.END = "END", a.TIME = "TIME", a);
+let m = e => (t, i) => null == i ? "" : c.intl.format(e(), {
+        time: t,
         ...i
     }),
-    A = {
+    _ = {
         ACTIVITY_FEED: {
             START: {
-                [a.pJ.SECONDS]: () => d.intl.string(d.t["ahzZr+"]),
-                [a.pJ.MINUTES]: t => d.intl.formatToPlainString(d.t["03mIHW"], {
-                    time: t
+                [r.pJ.SECONDS]: () => c.intl.string(c.t["ahzZr+"]),
+                [r.pJ.MINUTES]: e => c.intl.formatToPlainString(c.t["03mIHW"], {
+                    time: e
                 }),
-                [a.pJ.HOURS]: t => d.intl.formatToPlainString(d.t.eNoooU, {
-                    time: t
+                [r.pJ.HOURS]: e => c.intl.formatToPlainString(c.t.eNoooU, {
+                    time: e
                 }),
-                [a.pJ.DAYS]: t => d.intl.formatToPlainString(d.t["2rUo/p"], {
-                    time: t
+                [r.pJ.DAYS]: e => c.intl.formatToPlainString(c.t["2rUo/p"], {
+                    time: e
                 })
             },
             END: {
-                [a.pJ.SECONDS]: () => d.intl.string(d.t.EluAd9),
-                [a.pJ.MINUTES]: t => d.intl.formatToPlainString(d.t.BZxG8Z, {
-                    time: t
+                [r.pJ.SECONDS]: () => c.intl.string(c.t.EluAd9),
+                [r.pJ.MINUTES]: e => c.intl.formatToPlainString(c.t.BZxG8Z, {
+                    time: e
                 }),
-                [a.pJ.HOURS]: t => d.intl.formatToPlainString(d.t.cRMUpw, {
-                    time: t
+                [r.pJ.HOURS]: e => c.intl.formatToPlainString(c.t.cRMUpw, {
+                    time: e
                 }),
-                [a.pJ.DAYS]: t => d.intl.formatToPlainString(d.t.yP1T84, {
-                    time: t
+                [r.pJ.DAYS]: e => c.intl.formatToPlainString(c.t.yP1T84, {
+                    time: e
                 }),
-                [a.pJ.WEEKS]: t => d.intl.formatToPlainString(d.t.AWkdqe, {
-                    time: t
+                [r.pJ.WEEKS]: e => c.intl.formatToPlainString(c.t.AWkdqe, {
+                    time: e
                 }),
-                [a.pJ.MONTHS]: t => d.intl.formatToPlainString(d.t.upamA7, {
-                    time: t
+                [r.pJ.MONTHS]: e => c.intl.formatToPlainString(c.t.upamA7, {
+                    time: e
                 }),
-                [a.pJ.YEARS]: t => d.intl.formatToPlainString(d.t.vfMC2h, {
-                    time: t
+                [r.pJ.YEARS]: e => c.intl.formatToPlainString(c.t.vfMC2h, {
+                    time: e
                 })
             }
         },
         ACTIVITY_FEED_NEW: {
             START: {
-                [a.pJ.SECONDS]: m(() => d.t.Bf3PRU),
-                [a.pJ.MINUTES]: m(() => d.t["A9P+dT"]),
-                [a.pJ.HOURS]: m(() => d.t.KwVzfh),
-                [a.pJ.DAYS]: m(() => d.t.hbUpBN)
+                [r.pJ.SECONDS]: m(() => c.t.Bf3PRU),
+                [r.pJ.MINUTES]: m(() => c.t["A9P+dT"]),
+                [r.pJ.HOURS]: m(() => c.t.KwVzfh),
+                [r.pJ.DAYS]: m(() => c.t.hbUpBN)
             },
             END: {
-                [a.pJ.SECONDS]: t => d.intl.formatToPlainString(d.t.C3MTOD, {
-                    seconds: t
+                [r.pJ.SECONDS]: e => c.intl.formatToPlainString(c.t.C3MTOD, {
+                    seconds: e
                 }),
-                [a.pJ.MINUTES]: t => d.intl.formatToPlainString(d.t["GqQ/Y9"], {
-                    minutes: t
+                [r.pJ.MINUTES]: e => c.intl.formatToPlainString(c.t["GqQ/Y9"], {
+                    minutes: e
                 }),
-                [a.pJ.HOURS]: t => d.intl.formatToPlainString(d.t.c5zfWZ, {
-                    hours: t
+                [r.pJ.HOURS]: e => c.intl.formatToPlainString(c.t.c5zfWZ, {
+                    hours: e
                 }),
-                [a.pJ.DAYS]: t => d.intl.formatToPlainString(d.t.amjnaI, {
-                    days: t
+                [r.pJ.DAYS]: e => c.intl.formatToPlainString(c.t.amjnaI, {
+                    days: e
                 })
             }
         },
         USER_ACTIVITY: {
             START: {
-                [a.pJ.SECONDS]: function(t, e) {
-                    return arguments.length > 2 && void 0 !== arguments[2] && arguments[2], d.intl.string(d.t["ahzZr+"])
+                [r.pJ.SECONDS]: function(e, t) {
+                    return arguments.length > 2 && void 0 !== arguments[2] && arguments[2], c.intl.string(c.t["ahzZr+"])
                 },
-                [a.pJ.MINUTES]: function(t, e) {
+                [r.pJ.MINUTES]: function(e, t) {
                     let i = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
                         n = arguments.length > 3 && void 0 !== arguments[3] && arguments[3];
-                    return i ? d.intl.formatToPlainString(d.t["03mIHW"], {
-                        time: t
-                    }) : n ? d.intl.formatToPlainString(d.t.w5w79N, {
-                        time: t
-                    }) : d.intl.formatToPlainString(d.t["vQml+P"], {
-                        time: t
+                    return i ? c.intl.formatToPlainString(c.t["03mIHW"], {
+                        time: e
+                    }) : n ? c.intl.formatToPlainString(c.t.w5w79N, {
+                        time: e
+                    }) : c.intl.formatToPlainString(c.t["vQml+P"], {
+                        time: e
                     })
                 },
-                [a.pJ.HOURS]: function(t, e) {
+                [r.pJ.HOURS]: function(e, t) {
                     let i = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
                         n = arguments.length > 3 && void 0 !== arguments[3] && arguments[3];
-                    return i ? d.intl.formatToPlainString(d.t.eNoooU, {
-                        time: t
-                    }) : n ? d.intl.formatToPlainString(d.t.EPkGyE, {
-                        time: t
-                    }) : d.intl.formatToPlainString(d.t["4Wq+6x"], {
-                        time: t
+                    return i ? c.intl.formatToPlainString(c.t.eNoooU, {
+                        time: e
+                    }) : n ? c.intl.formatToPlainString(c.t.EPkGyE, {
+                        time: e
+                    }) : c.intl.formatToPlainString(c.t["4Wq+6x"], {
+                        time: e
                     })
                 },
-                [a.pJ.DAYS]: function(t, e) {
+                [r.pJ.DAYS]: function(e, t) {
                     let i = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
                         n = arguments.length > 3 && void 0 !== arguments[3] && arguments[3];
-                    return i ? d.intl.formatToPlainString(d.t["2rUo/p"], {
-                        time: t
-                    }) : n ? d.intl.formatToPlainString(d.t.V3g3dS, {
-                        time: t
-                    }) : d.intl.formatToPlainString(d.t["jN3/fR"], {
-                        time: t
+                    return i ? c.intl.formatToPlainString(c.t["2rUo/p"], {
+                        time: e
+                    }) : n ? c.intl.formatToPlainString(c.t.V3g3dS, {
+                        time: e
+                    }) : c.intl.formatToPlainString(c.t["jN3/fR"], {
+                        time: e
                     })
                 }
             }
         },
         USER_ACTIVITY_VOICE_USER: {
             START: {
-                [a.pJ.SECONDS]: () => d.intl.string(d.t["ahzZr+"]),
-                [a.pJ.MINUTES]: function(t, e) {
+                [r.pJ.SECONDS]: () => c.intl.string(c.t["ahzZr+"]),
+                [r.pJ.MINUTES]: function(e, t) {
                     let i = arguments.length > 2 && void 0 !== arguments[2] && arguments[2];
-                    return i ? d.intl.formatToPlainString(d.t["03mIHW"], {
-                        time: t
-                    }) : d.intl.formatToPlainString(d.t.w5w79N, {
-                        time: t
+                    return i ? c.intl.formatToPlainString(c.t["03mIHW"], {
+                        time: e
+                    }) : c.intl.formatToPlainString(c.t.w5w79N, {
+                        time: e
                     })
                 },
-                [a.pJ.HOURS]: function(t, e) {
+                [r.pJ.HOURS]: function(e, t) {
                     let i = arguments.length > 2 && void 0 !== arguments[2] && arguments[2];
-                    return i ? d.intl.formatToPlainString(d.t.eNoooU, {
-                        time: t
-                    }) : d.intl.formatToPlainString(d.t.EPkGyE, {
-                        time: t
+                    return i ? c.intl.formatToPlainString(c.t.eNoooU, {
+                        time: e
+                    }) : c.intl.formatToPlainString(c.t.EPkGyE, {
+                        time: e
                     })
                 },
-                [a.pJ.DAYS]: function(t, e) {
+                [r.pJ.DAYS]: function(e, t) {
                     let i = arguments.length > 2 && void 0 !== arguments[2] && arguments[2];
-                    return i ? d.intl.formatToPlainString(d.t["2rUo/p"], {
-                        time: t
-                    }) : d.intl.formatToPlainString(d.t.V3g3dS, {
-                        time: t
+                    return i ? c.intl.formatToPlainString(c.t["2rUo/p"], {
+                        time: e
+                    }) : c.intl.formatToPlainString(c.t.V3g3dS, {
+                        time: e
                     })
                 }
             }
         },
         GAME_LIBRARY_TIME_PLAYED: {
             TIME: {
-                [a.pJ.NONE]: () => d.intl.string(d.t.LqDiCt),
-                [a.pJ.SECONDS]: t => d.intl.formatToPlainString(d.t.xDIDBL, {
-                    time: t
+                [r.pJ.NONE]: () => c.intl.string(c.t.LqDiCt),
+                [r.pJ.SECONDS]: e => c.intl.formatToPlainString(c.t.xDIDBL, {
+                    time: e
                 }),
-                [a.pJ.MINUTES]: t => d.intl.formatToPlainString(d.t.KGqJce, {
-                    time: t
+                [r.pJ.MINUTES]: e => c.intl.formatToPlainString(c.t.KGqJce, {
+                    time: e
                 }),
-                [a.pJ.HOURS]: t => d.intl.formatToPlainString(d.t.OLchUE, {
-                    time: t
+                [r.pJ.HOURS]: e => c.intl.formatToPlainString(c.t.OLchUE, {
+                    time: e
                 })
             }
         },
         GAME_LIBRARY_LAST_PLAYED: {
             END: {
-                [a.pJ.NONE]: () => d.intl.string(d.t.EoWLru),
-                [a.pJ.SECONDS]: () => d.intl.string(d.t.QTHa8b),
-                [a.pJ.MINUTES]: t => d.intl.formatToPlainString(d.t.SVEfcd, {
-                    time: t
+                [r.pJ.NONE]: () => c.intl.string(c.t.EoWLru),
+                [r.pJ.SECONDS]: () => c.intl.string(c.t.QTHa8b),
+                [r.pJ.MINUTES]: e => c.intl.formatToPlainString(c.t.SVEfcd, {
+                    time: e
                 }),
-                [a.pJ.HOURS]: t => d.intl.formatToPlainString(d.t["0Gbusd"], {
-                    time: t
+                [r.pJ.HOURS]: e => c.intl.formatToPlainString(c.t["0Gbusd"], {
+                    time: e
                 }),
-                [a.pJ.DAYS]: t => d.intl.formatToPlainString(d.t.hnPZZ7, {
-                    time: t
+                [r.pJ.DAYS]: e => c.intl.formatToPlainString(c.t.hnPZZ7, {
+                    time: e
                 }),
-                [a.pJ.WEEKS]: t => d.intl.formatToPlainString(d.t.L3fTpL, {
-                    time: t
+                [r.pJ.WEEKS]: e => c.intl.formatToPlainString(c.t.L3fTpL, {
+                    time: e
                 }),
-                [a.pJ.MONTHS]: t => d.intl.formatToPlainString(d.t.xAFWQV, {
-                    time: t
+                [r.pJ.MONTHS]: e => c.intl.formatToPlainString(c.t.xAFWQV, {
+                    time: e
                 }),
-                [a.pJ.YEARS]: t => d.intl.formatToPlainString(d.t["9Yr3NW"], {
-                    time: t
+                [r.pJ.YEARS]: e => c.intl.formatToPlainString(c.t["9Yr3NW"], {
+                    time: e
                 })
             }
         },
         VOICE_CHANNEL_HISTORY: {
             END: {
-                [a.pJ.SECONDS]: () => d.intl.string(d.t["1QsMmY"]),
-                [a.pJ.MINUTES]: t => d.intl.formatToPlainString(d.t.LRNgHp, {
-                    count: t
+                [r.pJ.SECONDS]: () => c.intl.string(c.t["1QsMmY"]),
+                [r.pJ.MINUTES]: e => c.intl.formatToPlainString(c.t.LRNgHp, {
+                    count: e
                 }),
-                [a.pJ.HOURS]: t => d.intl.formatToPlainString(d.t.raJpz3, {
-                    count: t
+                [r.pJ.HOURS]: e => c.intl.formatToPlainString(c.t.raJpz3, {
+                    count: e
                 }),
-                [a.pJ.DAYS]: t => d.intl.formatToPlainString(d.t.KkvKhi, {
-                    count: t
+                [r.pJ.DAYS]: e => c.intl.formatToPlainString(c.t.KkvKhi, {
+                    count: e
                 })
             }
         }
     };
 
-function h(t) {
+function p(e) {
     return class extends s.PureComponent {
-        static Locations = u;
-        static Types = c;
+        static Locations = d;
+        static Types = u;
         timer = new o.IX;
         state = {
             time: this.getDiff()
@@ -205,72 +205,72 @@ function h(t) {
         componentDidMount() {
             this.timer.start(1e4, this.update)
         }
-        componentDidUpdate(t) {
+        componentDidUpdate(e) {
             let {
-                start: e,
+                start: t,
                 end: i,
                 time: n
             } = this.props;
-            (t.start !== e || t.end !== i || t.time !== n) && this.update()
+            (e.start !== t || e.end !== i || e.time !== n) && this.update()
         }
         componentWillUnmount() {
             this.timer.stop()
         }
         getDiff() {
             let {
-                start: t,
-                end: e,
+                start: e,
+                end: t,
                 time: i
             } = this.props;
             if (null != i) return i / 1e3 / 60;
             let n = Date.now(),
-                l = 0;
-            return null != t ? l = n - t : null != e && (l = n - e), Math.abs(l) / 1e3 / 60
+                a = 0;
+            return null != e ? a = n - e : null != t && (a = n - t), Math.abs(a) / 1e3 / 60
         }
         update = () => {
             this.setState({
                 time: this.getDiff()
             })
         };
-        getTimeUnit(t, e, i) {
-            let n = (0, a.Ul)(t, t => (function(t, e, i) {
-                let n = A[i];
+        getTimeUnit(e, t, i) {
+            let n = (0, r.Ul)(e, e => (function(e, t, i) {
+                let n = _[i];
                 if (null != n) {
-                    let i = n[e];
-                    if (null != i) return null != i[t]
+                    let i = n[t];
+                    if (null != i) return null != i[e]
                 }
                 return !1
-            })(t, i, e));
-            if (null == n) throw Error(`Could not get the time unit in PlayTime with time: ${t} for type: ${i} in location: ${e}`);
+            })(e, i, t));
+            if (null == n) throw Error(`Could not get the time unit in PlayTime with time: ${e} for type: ${i} in location: ${t}`);
             return n
         }
         getType() {
             let {
-                start: t,
-                end: e,
+                start: e,
+                end: t,
                 time: i
             } = this.props;
-            return null != t ? "START" : null != e ? "END" : null != i ? "TIME" : null
+            return null != e ? "START" : null != t ? "END" : null != i ? "TIME" : null
         }
         render() {
             let {
-                location: e,
+                location: t,
                 messageProps: i,
                 isApplicationStreaming: n,
-                enableUserHoverActivities: l,
+                enableUserHoverActivities: a,
                 ...s
             } = this.props, {
                 time: o
-            } = this.state, d = this.getType();
-            if (null == d) return null;
-            let u = this.getTimeUnit(o, e, d),
-                c = A[e][d];
+            } = this.state, c = this.getType();
             if (null == c) return null;
-            let m = c[u],
-                h = Math.floor((0, a.eZ)(o, u));
-            return (0, r.jsx)(t, {
+            let d = this.getTimeUnit(o, t, c),
+                u = _[t][c];
+            if (null == u) return null;
+            let m = u[d],
+                p = Math.floor((0, r.eZ)(o, d));
+            return (0, l.jsx)(e, {
                 ...s,
-                children: m?.(h, i, n, l)
+                children: m?.(p, i, n, a)
             })
         }
     }

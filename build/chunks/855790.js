@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
     Ay: () => y,
-    q0: () => f
+    q0: () => _
 });
 var i = n(627968),
     s = n(64700),
@@ -15,10 +15,10 @@ var i = n(627968),
     u = n(652215),
     h = n(17870);
 let p = u.UVF.DEFAULT,
-    f = 1,
-    _ = s.createContext({
+    _ = 1,
+    f = s.createContext({
         type: p,
-        opacity: f
+        opacity: _
     }),
     A = s.createContext(void 0),
     g = e => {
@@ -27,7 +27,7 @@ let p = u.UVF.DEFAULT,
             className: n,
             ...s
         } = e;
-        return (0, i.jsx)(_.Consumer, {
+        return (0, i.jsx)(f.Consumer, {
             children: e => {
                 let {
                     type: a
@@ -54,7 +54,7 @@ class m extends s.PureComponent {
             className: n
         } = this.props;
         return (0, i.jsx)(A.Consumer, {
-            children: s => (0, i.jsx)(_.Consumer, {
+            children: s => (0, i.jsx)(f.Consumer, {
                 children: a => {
                     let r = l()(h.body, h[o()(a.type)], n);
                     return e ? (0, i.jsx)("div", {
@@ -78,10 +78,10 @@ let x = e => {
             height: s,
             children: a,
             className: r,
-            opacity: d = f,
+            opacity: d = _,
             onClick: c
         } = e;
-        return (0, i.jsx)(_.Provider, {
+        return (0, i.jsx)(f.Provider, {
             value: {
                 type: t,
                 opacity: d
@@ -120,7 +120,7 @@ x.Background = e => {
     } = e;
     if (null == t) return null;
     let a = [g, m, E];
-    return (0, i.jsx)(_.Consumer, {
+    return (0, i.jsx)(f.Consumer, {
         children: e => {
             let {
                 opacity: l

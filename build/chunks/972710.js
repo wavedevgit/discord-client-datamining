@@ -14,14 +14,14 @@ var i = n(627968),
     m = n(397927),
     g = n(384904),
     _ = n(793574),
-    A = n(688810),
-    x = n(701273),
+    x = n(688810),
+    A = n(701273),
     h = n(780964),
     p = n(840065),
     T = n(287809),
     f = n(954571),
-    E = n(927578),
-    S = n(866312),
+    S = n(927578),
+    E = n(866312),
     b = n(327479),
     C = n(652215),
     N = n(601107),
@@ -42,7 +42,7 @@ let j = [C.Dmq.PAST_DUE, C.Dmq.ACCOUNT_HOLD, C.Dmq.BILLING_RETRY],
                 location_stack: a
             })
         }, []);
-        let A = async () => {
+        let x = async () => {
             d(!0), _(!1);
             try {
                 await (0, g.M2)(l.id, a, r), f.default.track(C.HAw.GUILD_BOOST_PAST_DUE_CANCELLATION_FLOW_COMPLETED, {
@@ -52,13 +52,13 @@ let j = [C.Dmq.PAST_DUE, C.Dmq.ACCOUNT_HOLD, C.Dmq.BILLING_RETRY],
             } catch (e) {
                 _(!0), d(!1)
             }
-        }, x = [{
+        }, A = [{
             text: v.intl.string(v.t.oEAioF),
             onClick: () => n(),
             variant: "secondary"
         }, {
             text: v.intl.string(v.t["cY+Oob"]),
-            onClick: () => A(),
+            onClick: () => x(),
             disabled: o,
             variant: "critical-primary",
             loading: o
@@ -68,7 +68,7 @@ let j = [C.Dmq.PAST_DUE, C.Dmq.ACCOUNT_HOLD, C.Dmq.BILLING_RETRY],
             transitionState: t,
             title: v.intl.string(v.t.LZunzZ),
             subtitle: v.intl.string(v.t.FClXh9),
-            actions: x,
+            actions: A,
             onClose: async () => n(),
             children: u ? (0, i.jsx)(m.wx6, {
                 type: "critical",
@@ -91,14 +91,14 @@ function O(e) {
         }),
         {
             analyticsLocations: O
-        } = (0, A.Ay)(_.A.GUILD_BOOSTING_SUBSCRIPTION_HEADER),
-        R = (0, S.A)({
+        } = (0, x.Ay)(_.A.GUILD_BOOSTING_SUBSCRIPTION_HEADER),
+        R = (0, E.A)({
             location: "GuildBoostingHeader"
         });
-    if (0 === (0, E.bx)(n.additionalPlans)) return null;
+    if (0 === (0, S.bx)(n.additionalPlans)) return null;
     let {
         status: P
-    } = n, L = (0, E.$k)(n), D = R && !L && n.isBoostOnly && j.includes(n.status);
+    } = n, L = (0, S.$k)(n), D = R && !L && n.isBoostOnly && j.includes(n.status);
     if (L) t = I.v2;
     else switch (P) {
         case C.Dmq.PAST_DUE:
@@ -127,7 +127,7 @@ function O(e) {
                         [I.aD]: L
                     })
                 }), (0, i.jsx)("div", {
-                    children: (0, E.Uf)({
+                    children: (0, S.Uf)({
                         subscription: n,
                         renewalInvoicePreview: s,
                         user: f,
@@ -160,7 +160,7 @@ function O(e) {
             className: I.yW,
             variant: "text-sm/normal",
             children: v.intl.format(d.Fr ? v.t.uxYBEa : v.t.k6haR9, {
-                openAppHook: () => (0, x.A)("app")
+                openAppHook: () => (0, A.A)("app")
             })
         })]
     })

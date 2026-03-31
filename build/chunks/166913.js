@@ -14,14 +14,14 @@ var i = n(627968),
     m = n(736653),
     g = n(793574),
     _ = n(688810),
-    A = n(726649),
-    x = n(611924),
+    x = n(726649),
+    A = n(611924),
     h = n(909536),
     p = n(166403),
     T = n(954571),
     f = n(927578),
-    E = n(40185),
-    S = n(526292),
+    S = n(40185),
+    E = n(526292),
     b = n(234419),
     C = n(690737),
     N = n(320908),
@@ -50,7 +50,7 @@ let F = e => {
         }) : null
     },
     H = () => {
-        (0, x.P)(A.b);
+        (0, A.P)(x.b);
         let e = s.useRef(null),
             t = s.useRef(null),
             n = s.useRef(null),
@@ -66,8 +66,8 @@ let F = e => {
             ee = null !== $ && $ !== M.pe.TIER_2 ? M.pe.TIER_2 : null,
             et = (0, b.V)(),
             en = et?.subscription_trial?.sku_id,
-            ei = (0, S.ar)(),
-            es = (0, E.cg)(),
+            ei = (0, E.ar)(),
+            es = (0, S.cg)(),
             el = (0, h.Gh)("premium-marketing-settings-page"),
             ea = es ?? !1,
             er = (0, o.bG)([v.A], () => {

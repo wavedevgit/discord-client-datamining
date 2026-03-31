@@ -14,8 +14,8 @@ var i = n(627968),
     u = n(487401),
     h = n(952790),
     p = n(846930),
-    f = n(355205),
-    _ = n(366811),
+    _ = n(355205),
+    f = n(366811),
     A = n(924985),
     g = n(945886),
     m = n(72314),
@@ -32,9 +32,9 @@ var i = n(627968),
     O = n(855790),
     j = n(714977),
     D = n(439817),
-    R = n(652215),
-    L = n(349828),
-    w = n(985018),
+    L = n(652215),
+    w = n(349828),
+    R = n(985018),
     k = n(414142);
 class M extends s.PureComponent {
     static getDerivedStateFromProps(e) {
@@ -135,7 +135,7 @@ class M extends s.PureComponent {
             renderBanner: a,
             bannerVisible: l,
             communityInfoVisible: o
-        } = this.state, d = n?.id === L.Vc ? u.T : u.B;
+        } = this.state, d = n?.id === w.Vc ? u.T : u.B;
         return (0, i.jsxs)(D.A, {
             header: null != n ? (0, i.jsx)(h.Ay, {
                 guild: n,
@@ -154,7 +154,7 @@ class M extends s.PureComponent {
                     children: e => (0, i.jsx)(O.Ay.Icon, {
                         ref: this.settingsIconRef,
                         icon: r.Zes,
-                        label: w.intl.string(w.t["3D5yo/"]),
+                        label: R.intl.string(R.t["3D5yo/"]),
                         ...e
                     })
                 })
@@ -171,8 +171,8 @@ class M extends s.PureComponent {
                 })
             }), null != n && (0, i.jsx)("section", {
                 className: k.C3,
-                "aria-label": w.intl.string(w.t.StREWK),
-                children: (0, i.jsx)(f.A, {
+                "aria-label": R.intl.string(R.t.StREWK),
+                children: (0, i.jsx)(_.A, {
                     guildId: n.id
                 })
             })]
@@ -191,12 +191,12 @@ function P(e) {
         collapseMuted: T.Ay.isGuildCollapsed(t)
     })), u = (0, l.bG)([b.Ay], () => b.Ay.getVoiceStates(t)), h = (0, l.bG)([g.A], () => g.A.getCollapsed()), {
         scrollTo: p
-    } = (0, l.bG)([m.A], () => m.A.getGuildDimensions(t)), f = (0, _.A)(e => {
+    } = (0, l.bG)([m.A], () => m.A.getGuildDimensions(t)), _ = (0, f.A)(e => {
         let {
             channelId: t
         } = e;
         return t
-    }), O = (0, l.bG)([N.A], () => N.A.getVoiceChannelId()), j = (0, l.bG)([S.A], () => S.A.getGuildVersion(t)), D = (0, l.bG)([A.A], () => A.A.version), L = (0, l.bG)([y.default], () => y.default.getGuildChangeSentinel(t)), w = (0, o.a1)(n?.id), k = (0, d.vj)(n?.id), P = n?.features.has(R.GuildFeatures.COMMUNITY) ?? !1, G = (0, l.bG)([I.A], () => I.A.getChannelId()), V = (0, l.bG)([C.A], () => C.A.desyncedVoiceStatesCount);
+    }), O = (0, l.bG)([N.A], () => N.A.getVoiceChannelId()), j = (0, l.bG)([S.A], () => S.A.getGuildVersion(t)), D = (0, l.bG)([A.A], () => A.A.version), w = (0, l.bG)([y.default], () => y.default.getGuildChangeSentinel(t)), R = (0, o.a1)(n?.id), k = (0, d.vj)(n?.id), P = n?.features.has(L.GuildFeatures.COMMUNITY) ?? !1, G = (0, l.bG)([I.A], () => I.A.getChannelId()), U = (0, l.bG)([C.A], () => C.A.desyncedVoiceStatesCount);
     return (0, i.jsx)(M, {
         guildId: t,
         guild: n,
@@ -204,17 +204,17 @@ function P(e) {
         categories: a,
         mutedChannels: r,
         scrollToChannel: p,
-        selectedChannelId: f,
+        selectedChannelId: _,
         selectedVoiceChannelId: O,
         voiceStates: u,
         rtcConnectedChannelId: G,
-        rtcDesyncedVoiceStatesCount: V,
+        rtcDesyncedVoiceStatesCount: U,
         collapsedChannels: h,
         collapseMuted: c,
-        guildReadStateSentinel: L,
+        guildReadStateSentinel: w,
         permissionVersion: j,
         categoryCollapseVersion: D,
-        embeddedAppsByChannel: w,
+        embeddedAppsByChannel: R,
         activeEventsByChannel: k,
         showNewUnreadsBar: P,
         optInEnabled: !1

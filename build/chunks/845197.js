@@ -14,8 +14,8 @@ var i = n(627968),
     m = n(53719),
     g = n(390370),
     _ = n(191627),
-    A = n(870236),
-    x = n(985018),
+    x = n(870236),
+    A = n(985018),
     h = n(267507);
 
 function p(e) {
@@ -32,7 +32,7 @@ function p(e) {
                 otherUser: t
             })
         })
-    }, [T, t]), E = s.useCallback(() => {
+    }, [T, t]), S = s.useCallback(() => {
         a()(void 0 !== T, "User must be logged in to decline a link request"), (0, o.mMO)(async () => {
             let {
                 default: e
@@ -43,7 +43,7 @@ function p(e) {
                 otherUser: t
             })
         })
-    }, [T, t]), S = s.useCallback(() => {
+    }, [T, t]), E = s.useCallback(() => {
         a()(void 0 !== T, "User must be logged in to decline a link request"), (0, o.mMO)(async () => {
             let {
                 default: e
@@ -67,17 +67,17 @@ function p(e) {
             className: h.o1,
             children: l ? (0, i.jsx)(m.A, {
                 icon: o.PGe,
-                tooltip: x.intl.string(A.default.e5iHmZ),
-                onClick: S
+                tooltip: A.intl.string(x.default.e5iHmZ),
+                onClick: E
             }) : (0, i.jsxs)(i.Fragment, {
                 children: [p ? null : (0, i.jsx)(m.A, {
                     icon: o.A9s,
-                    tooltip: x.intl.string(A.default.krWQZK),
+                    tooltip: A.intl.string(x.default.krWQZK),
                     onClick: f
                 }), (0, i.jsx)(m.A, {
                     icon: o.PGe,
-                    tooltip: x.intl.string(A.default.bBDeNI),
-                    onClick: E
+                    tooltip: A.intl.string(x.default.bBDeNI),
+                    onClick: S
                 })]
             })
         })]

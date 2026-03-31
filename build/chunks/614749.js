@@ -14,8 +14,8 @@ var i = n(627968),
     m = n(12901),
     g = n(652215),
     _ = n(431144),
-    A = n(870236),
-    x = n(985018),
+    x = n(870236),
+    A = n(985018),
     h = n(24771);
 let p = () => {
     let e = u.dm.useSetting(),
@@ -28,12 +28,12 @@ let p = () => {
     }, [n]), (0, i.jsx)("div", {
         className: h.kL,
         children: (0, i.jsxs)(o.nVY, {
-            label: x.intl.string(A.default.USIXU7),
+            label: A.intl.string(x.default.USIXU7),
             children: [(0, i.jsx)(o.dOG, {
                 checked: e,
-                description: x.intl.string(A.default["5MdB3j"]),
+                description: A.intl.string(x.default["5MdB3j"]),
                 onChange: u.dm.updateSetting,
-                label: x.intl.string(A.default.zkEceS)
+                label: A.intl.string(x.default.zkEceS)
             }), e ? (0, i.jsx)(o.ZpM, {
                 className: h.MT,
                 type: o.ZpM.Types.CUSTOM,
@@ -44,7 +44,7 @@ let p = () => {
                         children: (0, i.jsx)(o.Text, {
                             variant: "text-sm/semibold",
                             color: "text-default",
-                            children: x.intl.string(A.default.xAVm7K)
+                            children: A.intl.string(x.default.xAVm7K)
                         })
                     }), (0, i.jsx)(o.DUT, {
                         children: (0, i.jsx)(l.N_, {
@@ -55,7 +55,7 @@ let p = () => {
                                     scrollRestoration: !1
                                 }
                             },
-                            children: x.intl.string(A.default.cUIXFY)
+                            children: A.intl.string(x.default.cUIXFY)
                         })
                     }), (0, i.jsx)(o.fkz, {
                         icon: o.EdP,
@@ -65,11 +65,11 @@ let p = () => {
                 })
             }) : null, (0, i.jsx)(o.dOG, {
                 checked: !!t[_.HO.FAMILY_CENTER_DIGEST],
-                description: x.intl.string(A.default.y34S46),
+                description: A.intl.string(x.default.y34S46),
                 onChange: function(e) {
                     (0, d.CA)(_.HO.FAMILY_CENTER_DIGEST, e)
                 },
-                label: x.intl.string(A.default.irvJKR)
+                label: A.intl.string(x.default.irvJKR)
             })]
         })
     })

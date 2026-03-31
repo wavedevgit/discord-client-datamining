@@ -18,7 +18,7 @@ let d = "url(#gradient)",
             progressCircleStrokeSize: m = 2,
             progressCircleVariation: g,
             progressCircleStroke: _
-        } = e, A = 43 + m / 2, x = 2 * Math.PI * A, [h, p] = s.useState(u);
+        } = e, x = 43 + m / 2, A = 2 * Math.PI * x, [h, p] = s.useState(u);
         s.useEffect(() => {
             let e = setTimeout(() => {
                 p(t)
@@ -27,7 +27,7 @@ let d = "url(#gradient)",
         }, [t]);
         let T = (0, a.Ay)(),
             f = (0, l.qB)(T),
-            E = (e => {
+            S = (e => {
                 switch (e) {
                     case r.BN.NITRO_GEM:
                     case r.BN.AVATAR_DECO:
@@ -38,7 +38,7 @@ let d = "url(#gradient)",
                         return
                 }
             })(g),
-            S = ((e, t) => {
+            E = ((e, t) => {
                 switch (e) {
                     case r.BN.NITRO_LOGO:
                         return t ? "0.3" : "0.2";
@@ -68,21 +68,21 @@ let d = "url(#gradient)",
                     className: g === r.BN.NITRO_GEM || g === r.BN.AVATAR_DECO ? o.F3 : void 0,
                     fill: "transparent",
                     strokeWidth: m,
-                    r: `${A}`,
+                    r: `${x}`,
                     cx: "50%",
                     cy: "50%",
-                    stroke: E,
-                    strokeOpacity: S
+                    stroke: S,
+                    strokeOpacity: E
                 }), (0, i.jsx)("circle", {
                     stroke: b,
                     strokeWidth: m,
                     strokeLinecap: "round",
-                    strokeDasharray: `${x} ${x}`,
+                    strokeDasharray: `${A} ${A}`,
                     className: c,
                     style: {
-                        strokeDashoffset: (1 - h / 100) * x
+                        strokeDashoffset: (1 - h / 100) * A
                     },
-                    r: `${A}`,
+                    r: `${x}`,
                     cx: "50%",
                     cy: "50%"
                 })]

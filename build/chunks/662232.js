@@ -1,6 +1,6 @@
 /** chunk id: 662232 params = (module,exports,require) **/
 n.d(t, {
-    A: () => x
+    A: () => A
 });
 var i = n(627968),
     s = n(64700),
@@ -14,12 +14,12 @@ var i = n(627968),
     m = n(855548),
     g = n(962294),
     _ = n(287638),
-    A = n(153335);
+    x = n(153335);
 
-function x(e) {
+function A(e) {
     let {
         onClose: t
-    } = e, n = (0, r.bG)([c.Ay], () => c.Ay.getCandidateGames()), [l, x] = s.useState(null), h = n.map(e => ({
+    } = e, n = (0, r.bG)([c.Ay], () => c.Ay.getCandidateGames()), [l, A] = s.useState(null), h = n.map(e => ({
         id: e.pid.toString(),
         value: e,
         label: null != e.name ? e.name : ""
@@ -33,10 +33,10 @@ function x(e) {
             value: l,
             options: h,
             onSelectionChange: function(e) {
-                x(e)
+                A(e)
             }
         }), (0, i.jsx)(o.cGx, {
-            className: a()(A.Ot, A.QB)
+            className: a()(x.Ot, x.QB)
         }), (0, i.jsxs)("div", {
             className: a()(m.o, _.xM),
             children: [(0, i.jsx)(o.QWc, {

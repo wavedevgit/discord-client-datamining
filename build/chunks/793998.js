@@ -15,14 +15,14 @@ var i = n(627968),
     m = n(688810),
     g = n(726249),
     _ = n(915089),
-    A = n(742589),
-    x = n(544028),
+    x = n(742589),
+    A = n(544028),
     h = n(253932),
     p = n(841329),
     T = n(899847),
     f = n(695515),
-    E = n(438732),
-    S = n(809697),
+    S = n(438732),
+    E = n(809697),
     b = n(834981),
     C = n(102615),
     N = n(246109),
@@ -62,7 +62,7 @@ function U(e) {
     let {
         section: t,
         handleItemSelect: n
-    } = e, s = (0, b.VT)(), l = (0, E.A)();
+    } = e, s = (0, b.VT)(), l = (0, S.A)();
     return t === O.u9.CONTENT_AND_SOCIAL || t === O.u9.DATA_AND_PRIVACY ? null : (0, i.jsxs)(d.VQ0, {
         className: D.c5,
         "aria-label": L.intl.string(P.default.RZqaJn),
@@ -98,19 +98,19 @@ function w(e) {
     } = e, l = (0, _.GV)(), o = (0, b.VT)();
     return (0, i.jsx)(d.NPJ, {
         theme: t,
-        children: e => (0, i.jsxs)(A.A, {
+        children: e => (0, i.jsxs)(x.A, {
             className: a()(e, D.ZB),
             scrollable: r.Fr,
             role: "navigation",
             "aria-labelledby": l,
             toolbar: !0,
-            children: [(0, i.jsx)(A.A.Icon, {
+            children: [(0, i.jsx)(x.A.Icon, {
                 icon: d.nFg,
                 "aria-hidden": !0
-            }), (0, i.jsx)(A.A.Title, {
+            }), (0, i.jsx)(x.A.Title, {
                 id: l,
                 children: L.intl.string(P.default.RZqaJn)
-            }), (0, i.jsx)(A.A.Divider, {}), (0, i.jsxs)(d.VQ0, {
+            }), (0, i.jsx)(x.A.Divider, {}), (0, i.jsxs)(d.VQ0, {
                 "aria-label": L.intl.string(P.default.RZqaJn),
                 selectedItem: n,
                 type: "top-pill",
@@ -147,7 +147,7 @@ function V() {
             }
         });
     if (s.useEffect(() => {
-            (0, p._)(S.q[n])
+            (0, p._)(E.q[n])
         }, [n]), a) return null;
     let r = G[n];
     return (0, i.jsxs)("main", {
@@ -172,10 +172,10 @@ function V() {
 function B() {
     let {
         analyticsLocations: e
-    } = (0, m.Ay)(u.A.FAMILY_CENTER), t = (0, E.A)(), n = (0, o.bG)([f.A], () => f.A.getIsInitialized()), l = (0, o.bG)([x.A], () => x.A.theme), r = (0, _.GV)(), {
-        isLoading: A,
+    } = (0, m.Ay)(u.A.FAMILY_CENTER), t = (0, S.A)(), n = (0, o.bG)([f.A], () => f.A.getIsInitialized()), l = (0, o.bG)([A.A], () => A.A.theme), r = (0, _.GV)(), {
+        isLoading: x,
         selectedTab: p,
-        handleTabChange: S,
+        handleTabChange: E,
         showAgeGateModal: b
     } = (0, y.j)({
         location: O.MH.SIDENAV,
@@ -200,7 +200,7 @@ function B() {
                 theme: l,
                 section: C,
                 handleItemSelect: e => {
-                    S(e)
+                    E(e)
                 }
             }), (0, i.jsx)(d.VQ0.Panel, {
                 id: C,
@@ -209,7 +209,7 @@ function B() {
                 children: (0, i.jsx)(d.HOs, {
                     children: (0, i.jsx)("div", {
                         className: D.O4,
-                        children: A ? (0, i.jsx)(k, {}) : (0, i.jsx)(N, {})
+                        children: x ? (0, i.jsx)(k, {}) : (0, i.jsx)(N, {})
                     })
                 })
             })]

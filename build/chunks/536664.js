@@ -14,14 +14,14 @@ var i = n(627968),
     m = n(56562),
     g = n(964486),
     _ = n(15285),
-    A = n(286237),
-    x = n(769015),
+    x = n(286237),
+    A = n(769015),
     h = n(496885),
     p = n(810412),
     T = n(41984),
     f = n(833551),
-    E = n(663677),
-    S = n(824189),
+    S = n(663677),
+    E = n(824189),
     b = n(760751),
     C = n(189081),
     N = n(9302),
@@ -35,7 +35,7 @@ function R() {
     let {
         runningGame: e,
         runningGameApplication: t
-    } = (0, A.A)(), n = e?.pid, l = (0, r.bG)([f.default], () => null == e || null == n ? null : f.default.getTrackedGameByPid(n), [e, n], a()), {
+    } = (0, x.A)(), n = e?.pid, l = (0, r.bG)([f.default], () => null == e || null == n ? null : f.default.getTrackedGameByPid(n), [e, n], a()), {
         enabledLegacy: R,
         enabledOOP: P
     } = (0, r.cf)([b.A, C.A], () => null == e && null == l ? {
@@ -70,7 +70,7 @@ function R() {
                     break;
                 case p.OverlayToggledClientSettingType.OOP:
                     u.A.setEnabled(F, t), (0, p.Q3)(t, p.OverlayToggledClientSettingType.OOP, e.id ?? null)
-            }(i || s) && (0, E.L)(i ? p.OverlayToggledClientSettingType.LEGACY_GAME : p.OverlayToggledClientSettingType.OOP_GAME, e.id ?? null)
+            }(i || s) && (0, S.L)(i ? p.OverlayToggledClientSettingType.LEGACY_GAME : p.OverlayToggledClientSettingType.OOP_GAME, e.id ?? null)
         },
         Y = V && B,
         X = !F && !H,
@@ -199,10 +199,10 @@ function R() {
                 children: y.intl.string(y.t.CDOx3w)
             })]
         }),
-        icon: (0, i.jsx)(x.A, {
+        icon: (0, i.jsx)(A.A, {
             game: t,
             pid: e?.pid,
-            size: x.M.MEDIUM
+            size: A.M.MEDIUM
         }),
         "aria-label": y.intl.string(y.t["87O5GC"]),
         action: (0, i.jsx)(d.DUT, {
@@ -226,7 +226,7 @@ function R() {
                                 u.A.setEnabled(t, t), c.A.toggleOverlay(e, t, t), k(t), G(t), i = !t && F || !t && M, s = !t && H || !t && D
                         }
                         let l = null;
-                        i ? l = "game" === n ? p.OverlayToggledClientSettingType.LEGACY_GAME : p.OverlayToggledClientSettingType.LEGACY : s && (l = "game" === n ? p.OverlayToggledClientSettingType.OOP_GAME : p.OverlayToggledClientSettingType.OOP), null != l && (0, E.L)(l, e.id ?? null)
+                        i ? l = "game" === n ? p.OverlayToggledClientSettingType.LEGACY_GAME : p.OverlayToggledClientSettingType.LEGACY : s && (l = "game" === n ? p.OverlayToggledClientSettingType.OOP_GAME : p.OverlayToggledClientSettingType.OOP), null != l && (0, S.L)(l, e.id ?? null)
                     })(t, ((e, t) => {
                         let n = !t && e,
                             i = !H && D,
@@ -245,7 +245,7 @@ function R() {
                 }
             })
         }),
-        warning: (0, i.jsx)(S.A, {
+        warning: (0, i.jsx)(E.A, {
             className: O.Hh,
             game: e
         }),

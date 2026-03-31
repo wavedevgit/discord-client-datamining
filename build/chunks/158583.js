@@ -14,14 +14,14 @@ var i = n(627968),
     m = n(287809),
     g = n(975571),
     _ = n(474090),
-    A = n(181079),
-    x = n(422258),
+    x = n(181079),
+    A = n(422258),
     h = n(668267),
     p = n(93055),
     T = n(652215),
     f = n(788868),
-    E = n(525736),
-    S = n(985018);
+    S = n(525736),
+    E = n(985018);
 let b = g.A.getArticleURL(T.MVz.FAVORITES_GUILD);
 
 function C() {
@@ -33,8 +33,8 @@ function C() {
     return (0, i.jsx)(o.f5, {
         value: e,
         children: (0, i.jsx)(a.D0$, {
-            label: S.intl.string(E.default.OT1NK5),
-            description: S.intl.format(E.default.GR2KOG, {
+            label: E.intl.string(S.default.OT1NK5),
+            description: E.intl.format(S.default.GR2KOG, {
                 helpCenterLink: b
             }),
             layout: "horizontal-responsive",
@@ -45,11 +45,11 @@ function C() {
                 fullWidth: !1,
                 children: [(0, i.jsx)(a.Button, {
                     variant: "secondary",
-                    text: S.intl.string(E.default["7WwLnr"]),
+                    text: E.intl.string(S.default["7WwLnr"]),
                     onClick: t
                 }), (0, i.jsx)(d.A, {
                     subscriptionTier: f.pe.TIER_2,
-                    defaultTextOverride: S.intl.string(E.default["20sYUU"])
+                    defaultTextOverride: E.intl.string(S.default["20sYUU"])
                 })]
             })
         })
@@ -57,22 +57,22 @@ function C() {
 }
 
 function N() {
-    let e = (0, l.bG)([A.A], () => A.A.favoriteGuildEnabled),
+    let e = (0, l.bG)([x.A], () => x.A.favoriteGuildEnabled),
         t = (0, l.bG)([m.default], () => {
             let e = m.default.getCurrentUser();
             return null != e && _.Ay.isPremiumExactly(e, f.PremiumTypes.TIER_2)
         }),
         n = (0, p.DZ)(),
         r = s.useCallback(e => {
-            (0, x.tV)(e, "settings_page"), !e && n && (0, c.pX)(T.BVt.ME)
+            (0, A.tV)(e, "settings_page"), !e && n && (0, c.pX)(T.BVt.ME)
         }, [n]);
     return t ? (0, i.jsx)(a.dOG, {
         checked: e,
-        description: S.intl.format(E.default.GR2KOG, {
+        description: E.intl.format(S.default.GR2KOG, {
             helpCenterLink: b
         }),
         onChange: r,
-        label: S.intl.string(E.default.OT1NK5),
+        label: E.intl.string(S.default.OT1NK5),
         badge: "beta"
     }) : (0, i.jsx)(C, {})
 }

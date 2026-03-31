@@ -1,41 +1,41 @@
 /** chunk id: 730430 params = (module,exports,require) **/
-i.d(e, {
-    A: () => A
+i.d(t, {
+    A: () => _
 });
 var n = i(627968);
 i(64700);
-var l = i(311907),
-    r = i(397927),
+var a = i(311907),
+    l = i(397927),
     s = i(956793),
-    a = i(806246),
+    r = i(806246),
     o = i(378570),
-    d = i(383501),
-    u = i(954571),
-    c = i(652215),
+    c = i(383501),
+    d = i(954571),
+    u = i(652215),
     m = i(985018);
 
-function A(t) {
+function _(e) {
     let {
-        variant: e = "active",
+        variant: t = "active",
         size: i = "sm",
-        hangStatusChannel: A,
-        onAction: h,
-        userId: p,
-        ...g
-    } = t, f = (0, l.bG)([d.A], () => d.A.getChannelId() === A.id);
-    return (0, n.jsx)(r.Button, {
-        text: f ? m.intl.string(m.t.BXxdl7) : m.intl.string(m.t["9C444m"]),
+        hangStatusChannel: _,
+        onAction: p,
+        userId: h,
+        ...A
+    } = e, g = (0, a.bG)([c.A], () => c.A.getChannelId() === _.id);
+    return (0, n.jsx)(l.Button, {
+        text: g ? m.intl.string(m.t.BXxdl7) : m.intl.string(m.t["9C444m"]),
         onClick: () => {
-            h?.(), s.default.selectVoiceChannel(A.id), (0, o.iN)(A.id), u.default.track(c.HAw.HANG_STATUS_CTA_CLICKED, {
+            p?.(), s.default.selectVoiceChannel(_.id), (0, o.iN)(_.id), d.default.track(u.HAw.HANG_STATUS_CTA_CLICKED, {
                 source: "UserProfilePopout",
-                ...(0, a.A)(A.id),
-                other_user_id: p,
-                cta_type: f ? "open" : "join"
+                ...(0, r.A)(_.id),
+                other_user_id: h,
+                cta_type: g ? "open" : "join"
             })
         },
-        variant: e,
+        variant: t,
         size: i,
         fullWidth: !0,
-        ...g
+        ...A
     })
 }

@@ -1,7 +1,7 @@
 /** chunk id: 794145 params = (module,exports,require) **/
 n.d(t, {
     K: () => f,
-    V: () => S
+    V: () => E
 });
 var i = n(421380),
     s = n(171316),
@@ -15,19 +15,19 @@ var i = n(421380),
     m = n(612025),
     g = n(445176),
     _ = n(112469),
-    A = n(137675),
-    x = n(542457),
+    x = n(137675),
+    A = n(542457),
     h = n(355097),
     p = n(652215),
     T = n(985018);
 let f = () => (0, g.e)() ? T.intl.string(T.t.PMsfcH) : T.intl.string(T.t.RAQUSN),
-    E = (e, t) => {
+    S = (e, t) => {
         r.default.track(p.HAw.GUILD_DEFAULT_DMS_UPDATED, {
             default_guilds_restricted: e,
             applied_to_existing_guilds: t
         })
     },
-    S = (0, l.zD)(u.X.CONTENT_AND_SOCIAL_PERMISSIONS_DMS_SETTING, {
+    E = (0, l.zD)(u.X.CONTENT_AND_SOCIAL_PERMISSIONS_DMS_SETTING, {
         useTitle: f,
         useSubtitle: () => {
             let e = (0, _.Tx)(),
@@ -49,23 +49,23 @@ let f = () => (0, g.e)() ? T.intl.string(T.t.PMsfcH) : T.intl.string(T.t.RAQUSN)
             let t = m.xk.getState().selectedGuildId;
             if (t === m.YG) {
                 var n;
-                n = !e, (0, A.O)({
+                n = !e, (0, x.O)({
                     header: T.intl.string(T.t["uUr+GR"]),
                     body: T.intl.string(T.t.hjGJBp),
                     confirmText: T.intl.string(T.t.gm1Vej),
                     cancelText: T.intl.string(T.t.p89ACt),
                     confirmButtonColor: i.$n.Colors.BRAND,
                     onConfirm: () => {
-                        c.n6.updateSetting(n), E(n, !1)
+                        c.n6.updateSetting(n), S(n, !1)
                     },
                     onCancel: () => {
-                        c.n6.updateSetting(n), c.$s.updateSetting(n ? a.A.getGuildIds() : []), E(n, !0)
+                        c.n6.updateSetting(n), c.$s.updateSetting(n ? a.A.getGuildIds() : []), S(n, !0)
                     }
                 })
             } else {
                 let n = (0, o.Tb)();
                 e ? n.delete(t) : n.add(t), c.$s.updateSetting(Array.from(n)), r.default.track(p.HAw.USER_SERVER_PRIVACY_SETTINGS_ACTION, {
-                    action: x.m.DIRECT_MESSAGES_TOGGLE,
+                    action: A.m.DIRECT_MESSAGES_TOGGLE,
                     ingress: h.bf.USER_SETTINGS_PRIVACY_SAFETY,
                     guild_id: t
                 })

@@ -1,6 +1,6 @@
 /** chunk id: 429619 params = (module,exports,require) **/
 n.d(t, {
-    A: () => x
+    A: () => A
 });
 var i = n(627968),
     s = n(64700),
@@ -14,18 +14,18 @@ var i = n(627968),
     m = n(652215),
     g = n(788868),
     _ = n(985018),
-    A = n(362941);
-let x = () => {
+    x = n(362941);
+let A = () => {
     let {
         analyticsLocations: e
     } = (0, r.Ay)(a.A.COLLECTIBLES_PROFILE_SETTINGS_UPSELL), t = s.useRef(null), {
         asset: n,
-        popoutAsset: x,
+        popoutAsset: A,
         title: h,
         body: p,
         version: T,
         revertTextColor: f
-    } = (0, u.M)(), E = s.useContext(o.gl), S = E?.navigateWithValidation ?? (e => e());
+    } = (0, u.M)(), S = s.useContext(o.gl), E = S?.navigateWithValidation ?? (e => e());
     return s.useEffect(() => {
         d.default.track(m.HAw.PREMIUM_UPSELL_VIEWED, {
             type: g.e.COLLECTIBLES_PROFILE_SETTINGS_UPSELL,
@@ -34,25 +34,25 @@ let x = () => {
         })
     }, [e, T]), (0, i.jsxs)("div", {
         ref: t,
-        className: A.kL,
+        className: x.kL,
         style: {
             backgroundImage: `url(${n})`
         },
         children: [(0, i.jsx)("div", {
-            className: A.JS,
+            className: x.JS,
             "aria-hidden": !0,
             role: "presentation",
             children: (0, i.jsx)("img", {
-                src: x,
-                className: A.Qw,
+                src: A,
+                className: x.Qw,
                 alt: ""
             })
         }), (0, i.jsxs)("div", {
-            className: A.Em,
+            className: x.Em,
             children: [(0, i.jsx)(l.Heading, {
                 variant: "heading-lg/extrabold",
                 color: f ? "text-overlay-dark" : "currentColor",
-                className: A.DD,
+                className: x.DD,
                 children: h
             }), (0, i.jsx)(l.Text, {
                 variant: "text-sm/normal",
@@ -61,7 +61,7 @@ let x = () => {
             })]
         }), (0, i.jsx)(l.Button, {
             onClick: () => {
-                S(() => (0, c.Cz)({
+                E(() => (0, c.Cz)({
                     analyticsLocations: e,
                     analyticsSource: a.A.COLLECTIBLES_PROFILE_SETTINGS_UPSELL
                 }))

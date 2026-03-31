@@ -4,10 +4,10 @@ t.d(n, {
 });
 var i = t(627968);
 t(64700);
-var s = t(397927),
-    a = t(398590),
-    l = t(345942),
-    r = t(183555),
+var a = t(397927),
+    s = t(398590),
+    r = t(345942),
+    l = t(183555),
     o = t(913453),
     d = t(51943),
     c = t(985018),
@@ -19,32 +19,32 @@ function _(e) {
         onClose: t
     } = e, {
         trackUserProfileAction: _
-    } = (0, r.NJ)(), {
+    } = (0, l.NJ)(), {
         mutualGuilds: A,
-        isFetching: x
+        isFetching: p
     } = (0, o.A)(n);
-    return (0, i.jsx)(s.IpV, {
+    return (0, i.jsx)(a.IpV, {
         className: u.DK,
         fade: !0,
-        children: null == A && x ? (0, i.jsx)("div", {
+        children: null == A && p ? (0, i.jsx)("div", {
             className: u.Ie,
-            children: (0, i.jsx)(s.y$y, {})
-        }) : (null != A || x) && A?.length !== 0 ? A?.map(e => {
+            children: (0, i.jsx)(a.y$y, {})
+        }) : (null != A || p) && A?.length !== 0 ? A?.map(e => {
             let {
-                guild: s,
-                nick: r
+                guild: a,
+                nick: l
             } = e;
             return (0, i.jsx)(d.A, {
                 user: n,
-                guild: s,
-                nick: r,
+                guild: a,
+                nick: l,
                 onSelect: () => {
                     var e;
                     _({
                         action: "PRESS_MUTUAL_GUILD"
-                    }), e = s.id, (0, l.u)(e), t(), (0, a.jH)()
+                    }), e = a.id, (0, r.u)(e), t(), (0, s.jH)()
                 }
-            }, s.id)
+            }, a.id)
         }) : (0, i.jsxs)("div", {
             className: u.Ie,
             children: [(0, i.jsx)("div", {

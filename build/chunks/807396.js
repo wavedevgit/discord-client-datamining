@@ -15,14 +15,14 @@ var i = n(627968),
     m = n(397927),
     g = n(73153),
     _ = n(77468),
-    A = n(289498),
-    x = n(736653),
+    x = n(289498),
+    A = n(736653),
     h = n(573648),
     p = n(681819),
     T = n(370480),
     f = n(882997),
-    E = n(373498),
-    S = n(169869),
+    S = n(373498),
+    E = n(169869),
     b = n(263063),
     C = n(496885),
     N = n(962173),
@@ -92,8 +92,8 @@ let U = e => {
 };
 
 function w(e) {
-    let t, n, l, a, o, g, A, {
-            onDisconnect: x,
+    let t, n, l, a, o, g, x, {
+            onDisconnect: A,
             account: b,
             theme: N,
             locale: v
@@ -178,12 +178,12 @@ function w(e) {
                         }, {
                             text: M.intl.string(M.t.bsbMVz),
                             onClick: () => {
-                                x(), t.onClose()
+                                A(), t.onClose()
                             },
                             variant: "primary"
                         }],
                         ...t,
-                        children: (0, E.A)(b) && (0, i.jsx)(R.A, {
+                        children: (0, S.A)(b) && (0, i.jsx)(R.A, {
                             children: M.intl.format(M.t.COW3Xn, {
                                 platformName: e.name
                             })
@@ -209,24 +209,24 @@ function w(e) {
                 s = (0, T.An)(t[G.pK.CREATED_AT], v);
             switch (e.type) {
                 case D.fg2.REDDIT:
-                    n = (0, S.xE)(t, k.Nz);
+                    n = (0, E.xE)(t, k.Nz);
                     break;
                 case D.fg2.STEAM:
-                    n = (0, S.dy)(t, k.Nz);
+                    n = (0, E.dy)(t, k.Nz);
                     break;
                 case D.fg2.BLUESKY:
                 case D.fg2.TWITTER:
                 case D.fg2.MASTODON:
-                    n = (0, S.ED)(t, k.Nz);
+                    n = (0, E.ED)(t, k.Nz);
                     break;
                 case D.fg2.EBAY:
-                    n = (0, S.ub)(t, k.Nz);
+                    n = (0, E.ub)(t, k.Nz);
                     break;
                 case D.fg2.PAYPAL:
-                    n = (0, S.gZ)(t, k.Nz);
+                    n = (0, E.gZ)(t, k.Nz);
                     break;
                 case D.fg2.TIKTOK:
-                    n = (0, S.HU)(t, k.Nz)
+                    n = (0, E.HU)(t, k.Nz)
             }
             null !== s && (null == n && (n = []), n?.push((0, i.jsx)(m.Text, {
                 variant: "text-xs/normal",
@@ -285,7 +285,7 @@ function w(e) {
             onChange: function(e) {
                 H(e), _.A.setShowActivity(b.type, b.id, e)
             }
-        })), h.A.get(b.type)?.hasMetadata === !0 && (A = (0, i.jsx)(m.dOG, {
+        })), h.A.get(b.type)?.hasMetadata === !0 && (x = (0, i.jsx)(m.dOG, {
             label: M.intl.string(M.t.FYKGsL),
             checked: 1 === V,
             onChange: function(e) {
@@ -320,7 +320,7 @@ function w(e) {
                     }
                     w(n), _.A.setVisibility(b.type, b.id, n)
                 }
-            }), A, g, o]
+            }), x, g, o]
         })), function() {
             if (b.revoked || b.integrations.length > 0) return (0, i.jsx)(m.cGx, {})
         }(), b.revoked ? (0, i.jsx)(r.po8, {
@@ -367,7 +367,7 @@ function F() {
     let e = (0, p.gn)();
     return (0, i.jsxs)("div", {
         className: k.lA,
-        children: [e.slice(0, 10).map(e => (0, i.jsx)(A.A, {
+        children: [e.slice(0, 10).map(e => (0, i.jsx)(x.A, {
             type: e.type,
             className: k.__invalid_accountButton,
             innerClassName: k.U$
@@ -434,7 +434,7 @@ function z() {
     let e = (0, o.bG)([I.A], () => I.A.hidePersonalInformation),
         t = (0, o.bG)([N.A], () => N.A.isFetching()),
         n = (0, o.bG)([N.A], () => N.A.getAccounts()),
-        s = (0, x.Ay)(),
+        s = (0, A.Ay)(),
         l = (0, o.bG)([O.default], () => O.default.locale);
     return e ? null : (0, i.jsxs)(i.Fragment, {
         children: [null, (0, i.jsx)(H, {

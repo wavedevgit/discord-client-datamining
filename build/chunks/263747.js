@@ -14,14 +14,14 @@ var i = n(627968),
     m = n(688810),
     g = n(854627),
     _ = n(427157),
-    A = n(954571),
-    x = n(975571),
+    x = n(954571),
+    A = n(975571),
     h = n(326084),
     p = n(851746),
     T = n(344904),
     f = n(664654),
-    E = n(871582),
-    S = n(652215),
+    S = n(871582),
+    E = n(652215),
     b = n(985018),
     C = n(749917),
     N = n(615981);
@@ -110,7 +110,7 @@ let v = e => {
             e === h.aK.REDEEMED && v.redeemed++, e === h.aK.CONVERTED && (v.redeemed++, v.converted++)
         });
         let I = v.sent === f.Z,
-            y = x.A.getArticleURL(S.MVz.REFERRAL_PROGRAM),
+            y = A.A.getArticleURL(E.MVz.REFERRAL_PROGRAM),
             {
                 analyticsLocations: O
             } = (0, m.Ay)(u.A.PREMIUM_MARKETING_REFERALL_PROGRAM_PROGRESS_BAR),
@@ -130,14 +130,14 @@ let v = e => {
                     children: [(0, i.jsx)(c.Heading, {
                         variant: t ? "heading-xl/extrabold" : "heading-xxl/extrabold",
                         className: C.R0,
-                        children: (0, E.X8)({
+                        children: (0, S.X8)({
                             hasSentAll: I
                         })
                     }), (0, i.jsx)(j, {
                         userRecords: g
                     }), (0, i.jsx)(c.Text, {
                         variant: t ? "text-sm/normal" : "text-lg/medium",
-                        children: (0, E.dB)({
+                        children: (0, S.dB)({
                             helpdeskArticle: y,
                             referralsStatuses: v
                         })
@@ -153,7 +153,7 @@ let v = e => {
                                 let {
                                     analyticsLocations: t
                                 } = e;
-                                A.default.track(S.HAw.REFERRAL_PROGRAM_SHARE_MODAL_CTA_CLICKED, {
+                                x.default.track(E.HAw.REFERRAL_PROGRAM_SHARE_MODAL_CTA_CLICKED, {
                                     location_stack: t
                                 }), (0, c.mMO)(async () => {
                                     let {

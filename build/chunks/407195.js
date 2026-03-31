@@ -14,8 +14,8 @@ var i = n(627968),
     u = n(442433),
     h = n(465532),
     p = n(843472),
-    f = n(684013),
-    _ = n(414798),
+    _ = n(684013),
+    f = n(414798),
     A = n(147192),
     g = n(480870),
     m = n(264140),
@@ -32,15 +32,15 @@ var i = n(627968),
     O = n(926262),
     j = n(371648),
     D = n(118517),
-    R = n(853145),
-    L = n(522556),
-    w = n(734057),
+    L = n(853145),
+    w = n(522556),
+    R = n(734057),
     k = n(31717),
     M = n(517019),
     P = n(71393),
     G = n(320501),
-    V = n(309010),
-    U = n(967198),
+    U = n(309010),
+    V = n(967198),
     z = n(287809),
     H = n(532624),
     W = n(256415),
@@ -102,7 +102,7 @@ class ei extends s.Component {
                 id: i
             }
         } = this.props;
-        h.A.changeDraft(i, this.state.textValue, k.C.ChannelMessage), "" !== t ? _.A.startTyping(i) : _.A.stopTyping(i), this.setState({
+        h.A.changeDraft(i, this.state.textValue, k.C.ChannelMessage), "" !== t ? f.A.startTyping(i) : f.A.stopTyping(i), this.setState({
             textValue: t,
             richValue: n
         })
@@ -141,7 +141,7 @@ class ei extends s.Component {
             return (p.A.sendMessage(n.id, b.Ay.parse(n, t), !0, {
                 ...r,
                 location: $.Hx.OVERLAY
-            }), this.setState((0, S.N3)()), (0, D.Jx)(n.id), s) ? (f.A.deactivateAllRegions(), {
+            }), this.setState((0, S.N3)()), (0, D.Jx)(n.id), s) ? (_.A.deactivateAllRegions(), {
                 shouldClear: !1,
                 shouldRefocus: !1
             }) : {
@@ -232,7 +232,7 @@ class es extends s.PureComponent {
             channel: t,
             activated: n
         } = this.props;
-        (0, Z.Mw)(e, this.props, this.shouldDisplay), null != t && n && !e.activated && f.A.track(q.HAw.OVERLAY_UNLOCKED, {
+        (0, Z.Mw)(e, this.props, this.shouldDisplay), null != t && n && !e.activated && _.A.track(q.HAw.OVERLAY_UNLOCKED, {
             channel_id: t.id,
             channel_type: t.type,
             guild_id: t.guild_id
@@ -243,13 +243,13 @@ class es extends s.PureComponent {
     }
     handlePin = () => {
         let e = !this.props.pinned;
-        f.A.track(q.HAw.OVERLAY_PIN_TOGGLED, {
+        _.A.track(q.HAw.OVERLAY_PIN_TOGGLED, {
             pinned: e,
             guild_id: this.props.channel?.guild_id,
             channel_id: this.props.channel?.id,
             channel_type: this.props.channel?.type,
             widget_type: q.uss.TEXT
-        }), f.A.setPinChat(e)
+        }), _.A.setPinChat(e)
     };
     getOpacity() {
         let {
@@ -272,26 +272,26 @@ class es extends s.PureComponent {
             pinned: u,
             isPreviewingInGame: h,
             dragging: p,
-            pendingReply: f
+            pendingReply: _
         } = this.props;
         if (null == t) return null;
-        let _ = o || h,
+        let f = o || h,
             g = !a && null != t && t.isNSFW(),
-            m = !_ || d;
-        return e = g && null != r ? (0, i.jsx)(L.A, {
+            m = !f || d;
+        return e = g && null != r ? (0, i.jsx)(w.A, {
             guild: r,
             channelId: t.id
         }) : (0, i.jsx)(j.A, {
             channel: t,
             className: et.Wk,
             forceCompact: u,
-            showNewMessagesBar: !_,
+            showNewMessagesBar: !f,
             scrollerClassName: u ? et.XG : void 0,
             showingQuarantineBanner: !1
         }, t.id), (0, i.jsx)(N.Y.Provider, {
             value: {
                 disableInteractions: u && o && !d,
-                disableAnimations: u && _ && !d
+                disableAnimations: u && f && !d
             },
             children: (0, i.jsxs)(s.Fragment, {
                 children: [!o && !h && (0, i.jsx)(x.A, {
@@ -315,7 +315,7 @@ class es extends s.PureComponent {
                                 channel: t,
                                 placeholder: n,
                                 isTemporarilyActive: d,
-                                pendingReply: f
+                                pendingReply: _
                             }), (0, i.jsx)("div", {
                                 className: et.V_,
                                 children: (0, i.jsx)(A.Ay, {
@@ -387,9 +387,9 @@ class es extends s.PureComponent {
             u = n && (c || s),
             h = n && s,
             p = n && c && !s,
-            f = (0, Y.A)(r);
+            _ = (0, Y.A)(r);
         return (0, i.jsx)(J.Ay, {
-            className: l()(f, {
+            className: l()(_, {
                 [et.yw]: !n,
                 [et.CP]: n,
                 [et.xt]: p,
@@ -447,7 +447,7 @@ function ea(e) {
     let {
         contained: t = !1,
         ...n
-    } = e, s = (0, d.bG)([U.A], () => U.A.getGuildId()), a = (0, d.bG)([V.A], () => V.A.getChannelId(s)), l = (0, d.bG)([w.A], () => w.A.getChannel(a)), r = (0, d.bG)([H.Ay], () => H.Ay.getOverlayChatKeybind()), o = null != r ? (0, F.dI)(r.shortcut, !0) : "]", [c, u, h] = (0, d.yK)([W.default], () => [W.default.getTextWidgetOpacity(), W.default.getActiveRegions(), !t && W.default.isPreviewingInGame()]), p = (0, d.bG)([P.A], () => P.A.getGuild(s)), f = (0, d.bG)([M.A], () => null != s && M.A.didAgree(s)), _ = null != l && l.isPrivate() ? l.getRecipientId() : null, A = (0, d.bG)([R.A], () => null != a ? R.A.getPendingReply(a) : void 0), x = (0, d.bG)([z.default], () => null != _ ? z.default.getUser(_) : null), {
+    } = e, s = (0, d.bG)([V.A], () => V.A.getGuildId()), a = (0, d.bG)([U.A], () => U.A.getChannelId(s)), l = (0, d.bG)([R.A], () => R.A.getChannel(a)), r = (0, d.bG)([H.Ay], () => H.Ay.getOverlayChatKeybind()), o = null != r ? (0, F.dI)(r.shortcut, !0) : "]", [c, u, h] = (0, d.yK)([W.default], () => [W.default.getTextWidgetOpacity(), W.default.getActiveRegions(), !t && W.default.isPreviewingInGame()]), p = (0, d.bG)([P.A], () => P.A.getGuild(s)), _ = (0, d.bG)([M.A], () => null != s && M.A.didAgree(s)), f = null != l && l.isPrivate() ? l.getRecipientId() : null, A = (0, d.bG)([L.A], () => null != a ? L.A.getPendingReply(a) : void 0), x = (0, d.bG)([z.default], () => null != f ? z.default.getUser(f) : null), {
         placeholder: E
     } = (0, g.A)({
         channel: l
@@ -457,7 +457,7 @@ function ea(e) {
         channel: l,
         user: x,
         opacity: c,
-        nsfwAgree: f,
+        nsfwAgree: _,
         chatKeybind: o,
         activated: u.has(q.ajI.TEXT_WIDGET),
         isPreviewingInGame: h,

@@ -27,13 +27,13 @@ let h = 0,
                 return d.intl.string(d.t.AlY4Za)
         }
     },
-    f = [o.G6Q.DISABLED, o.G6Q.TOP_LEFT, o.G6Q.TOP_RIGHT, o.G6Q.BOTTOM_LEFT, o.G6Q.BOTTOM_RIGHT];
+    _ = [o.G6Q.DISABLED, o.G6Q.TOP_LEFT, o.G6Q.TOP_RIGHT, o.G6Q.BOTTOM_LEFT, o.G6Q.BOTTOM_RIGHT];
 
-function _(e) {
+function f(e) {
     let {
         position: t,
         onChange: n
-    } = e, [a] = s.useState(() => `notification-position-selector-${h++}`), _ = t === o.G6Q.DISABLED ? d.intl.string(d.t.R6LxVf) : d.intl.formatToPlainString(d.t["XXHDM/"], {
+    } = e, [a] = s.useState(() => `notification-position-selector-${h++}`), f = t === o.G6Q.DISABLED ? d.intl.string(d.t.R6LxVf) : d.intl.formatToPlainString(d.t["XXHDM/"], {
         position: p(t)
     });
     return (0, i.jsxs)("div", {
@@ -44,7 +44,7 @@ function _(e) {
                 className: l()(c.iE, {
                     [c.wX]: t === o.G6Q.DISABLED
                 }),
-                children: f.map(e => (0, i.jsxs)("label", {
+                children: _.map(e => (0, i.jsxs)("label", {
                     className: l()({
                         [c.wH]: e === t,
                         [c.r9]: e === o.G6Q.DISABLED,
@@ -69,9 +69,9 @@ function _(e) {
         }), (0, i.jsx)(r.Text, {
             variant: "text-sm/normal",
             className: u.Ot,
-            children: _
+            children: f
         })]
     })
 }
-_.Positions = o.G6Q;
-let A = _
+f.Positions = o.G6Q;
+let A = f

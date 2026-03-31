@@ -16,8 +16,8 @@ var s = n(158954),
     m = n(125877),
     g = n(284498),
     _ = n(985018),
-    A = n(616825);
-let x = {
+    x = n(616825);
+let A = {
         Logitech30P: {
             title: g.default.jkdhZq,
             titleParams: {
@@ -56,7 +56,7 @@ let x = {
         }
     },
     p = (e, t) => {
-        let n = x[e.outboundTitle];
+        let n = A[e.outboundTitle];
         return {
             id: e.id,
             partnerId: e.partnerId ?? "",
@@ -73,7 +73,7 @@ let x = {
             partnerId: t,
             transitionState: n,
             onClose: a
-        } = e, r = h[t], [u, x] = (0, l.yK)([d.A], () => {
+        } = e, r = h[t], [u, A] = (0, l.yK)([d.A], () => {
             let {
                 recurring: e,
                 oneTime: n
@@ -84,23 +84,23 @@ let x = {
             claimedOutboundPromotionCodeMap: f
         } = (0, o.y7)();
         if (!T) return (0, i.jsx)(s.y$y, {});
-        let E = r?.modalSubtitle != null ? _.intl.format(r.modalSubtitle.message, r.modalSubtitle.values) : void 0,
-            S = null == r ? t : _.intl.string(r.modalTitle);
+        let S = r?.modalSubtitle != null ? _.intl.format(r.modalSubtitle.message, r.modalSubtitle.values) : void 0,
+            E = null == r ? t : _.intl.string(r.modalTitle);
         return (0, i.jsx)(s.Modal, {
-            title: S,
-            subtitle: E,
+            title: E,
+            subtitle: S,
             actions: [],
             transitionState: n,
             onClose: a,
             children: (0, i.jsxs)("div", {
-                className: A.kL,
+                className: x.kL,
                 children: [u.length > 0 && (0, i.jsxs)(i.Fragment, {
                     children: [(0, i.jsx)(s.EYj, {
                         variant: "text-md/medium",
                         color: "text-subtle",
                         children: _.intl.string(g.default["9Y2p6p"])
                     }), (0, i.jsx)("div", {
-                        className: A.kR,
+                        className: x.kR,
                         children: u.map(e => (0, i.jsx)(c.wx, {
                             recurrence: {
                                 ...p(e, f[e.id] ?? null),
@@ -110,15 +110,15 @@ let x = {
                             displayCTAInDedicatedFooter: !0
                         }, e.id))
                     })]
-                }), x.length > 0 && (0, i.jsxs)("div", {
-                    className: A.E7,
+                }), A.length > 0 && (0, i.jsxs)("div", {
+                    className: x.E7,
                     children: [(0, i.jsx)(s.EYj, {
                         variant: "text-md/medium",
                         color: "text-subtle",
                         children: _.intl.string(g.default.Wm58LR)
                     }), (0, i.jsx)("div", {
-                        className: A.kR,
-                        children: x.map(e => (0, i.jsx)(m.$, {
+                        className: x.kR,
+                        children: A.map(e => (0, i.jsx)(m.$, {
                             promotion: p(e, f[e.id] ?? null)
                         }, e.id))
                     })]

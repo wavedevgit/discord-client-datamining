@@ -2,7 +2,7 @@
 n.d(t, {
     du: () => T,
     j0: () => f,
-    yj: () => S
+    yj: () => E
 });
 var i = n(934551),
     s = n(554146),
@@ -16,8 +16,8 @@ var i = n(934551),
     m = n(859669),
     g = n(662802),
     _ = n(988208),
-    A = n(819070),
-    x = n(352694),
+    x = n(819070),
+    A = n(352694),
     h = n(136451),
     p = n(985018);
 
@@ -36,16 +36,16 @@ let f = [{
         badgeType: r.Xi.NEW,
         dismissibleContent: s.M.CLIENT_THEMES_APPEARANCE_SETTINGS_NEW_BADGE
     }],
-    E = (0, a.t_)(o.X.APPEARANCE_PANEL, {
+    S = (0, a.t_)(o.X.APPEARANCE_PANEL, {
         useTitle: () => p.intl.string(p.t["iHH+ky"]),
         initialize: T,
-        buildLayout: () => [x.S, g._, h.u, _.U, A.M, m.d]
+        buildLayout: () => [A.S, g._, h.u, _.U, x.M, m.d]
     }),
-    S = (0, a.i4)(o.X.APPEARANCE_SIDEBAR_ITEM, {
+    E = (0, a.i4)(o.X.APPEARANCE_SIDEBAR_ITEM, {
         useTitle: () => p.intl.string(p.t["iHH+ky"]),
         icon: i.PaintPaletteIcon,
         usePredicate: () => !(0, d.bp)("AppearanceSidebarItem"),
         useMenu: c.A,
         getDismissibleBadges: () => f,
-        buildLayout: () => [E]
+        buildLayout: () => [S]
     })

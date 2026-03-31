@@ -4,13 +4,13 @@ n.d(t, {
     u: () => P
 });
 var i = n(627968),
-    a = n(64700),
-    l = n(503698),
-    s = n.n(l),
+    l = n(64700),
+    a = n(503698),
+    s = n.n(a),
     r = n(311907),
     o = n(397927),
-    c = n(384904),
-    d = n(395332),
+    d = n(384904),
+    c = n(395332),
     u = n(566605),
     g = n(429913),
     m = n(379848),
@@ -77,13 +77,13 @@ function G() {
         bypassAutoDismiss: !0,
         children: e => {
             let {
-                visibleContent: a,
-                markAsDismissed: l
-            } = e, s = t.find(e => e.dismissibleContent === a);
+                visibleContent: l,
+                markAsDismissed: a
+            } = e, s = t.find(e => e.dismissibleContent === l);
             return null == s ? null : (0, i.jsx)(T.A, {
                 user: n,
                 application: s.application,
-                onDismiss: l
+                onDismiss: a
             })
         }
     })
@@ -93,37 +93,37 @@ function F(e) {
     let {
         user: t,
         guildId: n,
-        channelId: l
+        channelId: a
     } = e, s = (0, E.A)(t.id), o = (0, r.bG)([f.default], () => f.default.getId() === t.id), u = (() => {
         let [e, t] = (0, r.yK)([h.A], () => [h.A.ipCountryCode, h.A.ipCountryCodeRequest]), n = (0, p.Z)();
-        return a.useEffect(() => {
-            null == e && null == t && n && (0, c.xe)()
+        return l.useEffect(() => {
+            null == e && null == t && n && (0, d.xe)()
         }, [e, t, n]), "GB" === e && n
-    })(), m = (0, d.QR)({
+    })(), m = (0, c.QR)({
         location: "UserProfileModalV2Widgets"
-    }), j = 0 === s.length && o, v = a.useMemo(() => s.filter(A.fu), [s]), T = a.useMemo(() => s.filter(e => e instanceof _.R), [s]);
+    }), j = 0 === s.length && o, v = l.useMemo(() => s.filter(A.fu), [s]), T = l.useMemo(() => s.filter(e => e instanceof _.R), [s]);
     (0, I.Y)(o, v), ((e, t) => {
-        let n = a.useMemo(() => t.map(e => e.applicationId), [t]);
+        let n = l.useMemo(() => t.map(e => e.applicationId), [t]);
         (0, g.A)(n);
         let {
             data: i,
-            refetch: l
-        } = (0, x.P)(e), s = a.useRef(null !== i);
-        a.useEffect(() => {
-            s.current && (s.current = !1, l())
-        }, [l])
+            refetch: a
+        } = (0, x.P)(e), s = l.useRef(null !== i);
+        l.useEffect(() => {
+            s.current && (s.current = !1, a())
+        }, [a])
     })(t.id, T);
     let S = () => (0, i.jsxs)(i.Fragment, {
         children: [o && (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)(b.A, {
                 className: w.cG
             }), u && (0, i.jsx)(D, {}), m && (0, i.jsx)(G, {})]
-        }), s.map((e, a) => (0, i.jsx)(P, {
+        }), s.map((e, l) => (0, i.jsx)(P, {
             widget: e,
             user: t,
             guildId: n,
-            channelId: l,
-            index: a
+            channelId: a,
+            index: l
         }, e.getUniqueKey()))]
     });
     if (j)
@@ -138,20 +138,20 @@ function U(e) {
     let {
         user: t,
         ...n
-    } = e, l = a.useRef(null);
+    } = e, a = l.useRef(null);
     (0, j.i)({
-        containerRef: l
+        containerRef: a
     });
     let r = (0, R.k)(t.id);
     return (0, i.jsxs)(O.K, {
         "data-scroller": !0,
-        scrollerRef: l,
+        scrollerRef: a,
         className: s()(w.XG, {
             [w.az]: r
         }),
         fade: !0,
         children: [(0, i.jsx)(S.A, {
-            scrollerRef: l
+            scrollerRef: a
         }), (0, i.jsx)(F, {
             user: t,
             ...n

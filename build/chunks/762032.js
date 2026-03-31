@@ -1,4 +1,5 @@
 /** chunk id: 762032 params = (module,exports,require) **/
+"use strict";
 e.exports = {
     Ke: "result__71961",
     Qs: "content__71961",

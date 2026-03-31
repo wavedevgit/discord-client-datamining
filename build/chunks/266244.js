@@ -14,8 +14,8 @@ var i = n(627968),
     u = n(9302),
     h = n(652215),
     p = n(985018),
-    f = n(358640);
-let _ = () => (0, o.WU)("DM_SEARCH"),
+    _ = n(358640);
+let f = () => (0, o.WU)("DM_SEARCH"),
     A = s.memo(function() {
         let e = (0, a.bG)([c.default], () => c.default.isLocked((0, u.getPID)()) ? "true" : "false"),
             t = (0, d.A)(e => {
@@ -25,13 +25,13 @@ let _ = () => (0, o.WU)("DM_SEARCH"),
                 return t
             });
         return (0, i.jsxs)("div", {
-            className: f.AB,
+            className: _.AB,
             children: [(0, i.jsx)("div", {
-                className: f.ON,
+                className: _.ON,
                 children: (0, i.jsx)("button", {
                     type: "button",
-                    className: f.lU,
-                    onClick: _,
+                    className: _.lU,
+                    onClick: f,
                     children: p.intl.string(p.t.LzcpeZ)
                 })
             }), (0, i.jsx)(l.A, {
@@ -40,7 +40,7 @@ let _ = () => (0, o.WU)("DM_SEARCH"),
                 version: e,
                 selectedChannelId: t
             }), (0, i.jsx)("section", {
-                className: f.C3,
+                className: _.C3,
                 "aria-label": p.intl.string(p.t.StREWK),
                 children: (0, i.jsx)(r.A, {
                     guildId: null

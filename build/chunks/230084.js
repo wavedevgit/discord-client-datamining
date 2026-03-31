@@ -1,6 +1,6 @@
 /** chunk id: 230084 params = (module,exports,require) **/
 n.d(t, {
-    A: () => x
+    A: () => A
 });
 var i = n(627968),
     s = n(64700),
@@ -14,23 +14,23 @@ var i = n(627968),
     m = n(339984),
     g = n(985018),
     _ = n(226832);
-let A = [{
+let x = [{
     name: "gif",
     extensions: ["gif"]
 }];
 
-function x(e) {
+function A(e) {
     let {
         showRemoveAvatarButton: t,
         errors: n,
         onAvatarChange: l,
-        sectionTitle: x,
+        sectionTitle: A,
         changeAvatarButtonText: h,
         guildId: p,
         className: T,
         disabled: f = !1,
-        isTryItOut: E = !1,
-        forcedDivider: S,
+        isTryItOut: S = !1,
+        forcedDivider: E,
         withHighlight: b = !1
     } = e, {
         newestAnalyticsLocation: C
@@ -38,17 +38,17 @@ function x(e) {
         (0, c.XD)({
             uploadType: m.HL.AVATAR,
             analyticsSource: C,
-            filters: E ? A : void 0,
+            filters: S ? x : void 0,
             guildId: p,
-            isTryItOut: E
+            isTryItOut: S
         })
-    }, [p, C, E]);
+    }, [p, C, S]);
     return (0, i.jsx)(u.A, {
         className: T,
-        title: x,
+        title: A,
         errors: n,
         disabled: f,
-        forcedDivider: S,
+        forcedDivider: E,
         children: (0, i.jsxs)("div", {
             className: _.NC,
             children: [(0, i.jsx)(N, {

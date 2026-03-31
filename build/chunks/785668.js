@@ -1,6 +1,6 @@
 /** chunk id: 785668 params = (module,exports,require) **/
 n.d(t, {
-    A: () => A
+    A: () => x
 });
 var i = n(627968),
     s = n(64700),
@@ -14,16 +14,16 @@ var i = n(627968),
     m = n(652215),
     g = n(985018),
     _ = n(738784);
-let A = function() {
+let x = function() {
     let e = s.useRef(null),
         {
             analyticsLocations: t
         } = (0, o.Ay)(),
         {
-            fractionalState: A
+            fractionalState: x
         } = (0, d.A)();
 
-    function x(n) {
+    function A(n) {
         null != e.current && (0, r.OoC)(e.current), (0, c.g)({
             analyticsLocation: {
                 page: m.liQ.GUILD_BOOSTING_USER_SETTINGS,
@@ -42,7 +42,7 @@ let A = function() {
             } = await Promise.resolve().then(n.bind(n, 770101));
             return t => (0, i.jsx)(e, {
                 ...t,
-                onSelectGuild: x
+                onSelectGuild: A
             })
         }, {
             onCloseRequest: () => {
@@ -51,7 +51,7 @@ let A = function() {
         })
     }
     let p = (0, u.Nc)({
-        fractionalState: A
+        fractionalState: x
     });
     return (0, i.jsxs)("div", {
         className: _.iE,

@@ -1,5 +1,4 @@
 /** chunk id: 491706 params = (module,exports,require) **/
-"use strict";
 e.exports = {
     c: "searchbar__45744",
     p_: "list__45744",

@@ -1,6 +1,6 @@
 /** chunk id: 436805 params = (module,exports,require) **/
 n.d(t, {
-    A: () => E
+    A: () => S
 });
 var i = n(627968),
     s = n(64700),
@@ -14,7 +14,7 @@ var i = n(627968),
     m = n(580630),
     g = n(349439),
     _ = n(329803);
-let A = e => {
+let x = e => {
         let {
             displayName: t,
             product: n
@@ -25,7 +25,7 @@ let A = e => {
             className: _._P
         })
     },
-    x = e => {
+    A = e => {
         let {
             displayName: t,
             nameplateData: n
@@ -82,13 +82,13 @@ let A = e => {
         });
         switch (n.type) {
             case r.R.AVATAR_DECORATION:
-                return (0, i.jsx)(A, {
+                return (0, i.jsx)(x, {
                     displayName: t,
                     product: n
                 });
             case r.R.NAMEPLATE:
                 let s = (0, u.EQ)(n);
-                return null != s ? (0, i.jsx)(x, {
+                return null != s ? (0, i.jsx)(A, {
                     displayName: t,
                     nameplateData: s
                 }) : null;
@@ -115,14 +115,14 @@ let A = e => {
             product: c
         } = (0, d.A)(t), {
             displayName: u,
-            typeName: A,
-            isSubscription: x
+            typeName: x,
+            isSubscription: A
         } = (0, g.GZ)(c ?? null, n);
-        if (null != t && !x && null == c || null == u) return null;
+        if (null != t && !A && null == c || null == u) return null;
         let h = (0, m.$g)(s, l);
         return (0, i.jsxs)("div", {
             className: a()(_.kL, r),
-            children: [x ? (0, i.jsx)(p, {
+            children: [A ? (0, i.jsx)(p, {
                 subscriptionPlanId: n
             }) : (0, i.jsx)(T, {
                 displayName: u,
@@ -130,7 +130,7 @@ let A = e => {
             }), (0, i.jsxs)("div", {
                 children: [(0, i.jsx)(o.Text, {
                     variant: "text-md/semibold",
-                    children: null != A ? `${u} • ${A}` : u
+                    children: null != x ? `${u} • ${x}` : u
                 }), (0, i.jsx)(o.Text, {
                     variant: "text-sm/medium",
                     color: "text-subtle",
@@ -140,4 +140,4 @@ let A = e => {
         })
     });
 f.displayName = "FamilyCenterActivityPurchaseRow";
-let E = f
+let S = f

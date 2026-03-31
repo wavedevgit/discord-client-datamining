@@ -1,44 +1,44 @@
 /** chunk id: 556445 params = (module,exports,require) **/
-i.d(e, {
+i.d(t, {
     A: () => o
 });
 var n = i(627968);
 i(64700);
-var l = i(990078),
-    r = i(397927),
+var a = i(990078),
+    l = i(397927),
     s = i(562153),
-    a = i(353411);
+    r = i(353411);
 
-function o(t) {
+function o(e) {
     let {
-        activity: e,
+        activity: t,
         user: i,
         channelId: o,
-        guildId: d,
-        source: u,
-        size: c = "sm",
+        guildId: c,
+        source: d,
+        size: u = "sm",
         variant: m = "secondary",
-        onAction: A,
-        ...h
-    } = t, {
-        tooltip: p,
-        loading: g,
-        disabled: f,
-        onClick: T
-    } = (0, a.J$)(e, i, u, s.Ay.getNickname(d, o, i));
-    return (0, n.jsx)(l.m, {
-        text: p,
-        children: (0, n.jsx)(r.K0, {
-            icon: r.J2m,
-            size: c,
+        onAction: _,
+        ...p
+    } = e, {
+        tooltip: h,
+        loading: A,
+        disabled: g,
+        onClick: f
+    } = (0, r.J$)(t, i, d, s.Ay.getNickname(c, o, i));
+    return (0, n.jsx)(a.m, {
+        text: h,
+        children: (0, n.jsx)(l.K0, {
+            icon: l.J2m,
+            size: u,
             variant: m,
             onClick: () => {
-                A?.(), T()
+                _?.(), f()
             },
-            disabled: f,
-            loading: g,
-            "aria-label": p ?? e.name,
-            ...h
+            disabled: g,
+            loading: A,
+            "aria-label": h ?? t.name,
+            ...p
         })
     })
 }

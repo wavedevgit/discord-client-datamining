@@ -14,8 +14,8 @@ var i = n(627968),
     m = n(927578),
     g = n(652215),
     _ = n(788868),
-    A = n(985018),
-    x = n(49882),
+    x = n(985018),
+    A = n(49882),
     h = n(896237),
     p = n(448085);
 
@@ -25,22 +25,22 @@ function T(e) {
         showOverlay: n,
         children: T
     } = e, f = (0, r.Ay)(), {
-        analyticsLocations: E
+        analyticsLocations: S
     } = (0, d.Ay)(o.A.PREMIUM_UPSELL_OVERLAY);
     return (s.useEffect(() => {
         n && u.default.track(g.HAw.PREMIUM_UPSELL_VIEWED, {
-            location_stack: E,
+            location_stack: S,
             type: _.e.PREMIUM_GUILD_MEMBER_PROFILE_UPSELL_INLINE
         })
-    }, [n, E]), n) ? (0, i.jsxs)("div", {
-        className: x.ry,
+    }, [n, S]), n) ? (0, i.jsxs)("div", {
+        className: A.ry,
         children: [(0, i.jsx)("div", {
             children: T
         }), (0, i.jsxs)("div", {
-            className: x.Wc,
+            className: A.Wc,
             children: [(0, i.jsx)("img", {
-                className: x.Tn,
-                alt: A.intl.string(A.t.LHFZQy),
+                className: A.Tn,
+                alt: x.intl.string(x.t.LHFZQy),
                 src: function(e) {
                     switch (e) {
                         case g.NJ8.DARK:
@@ -54,21 +54,21 @@ function T(e) {
                     }
                 }(f)
             }), (0, i.jsxs)("div", {
-                className: x._9,
+                className: A._9,
                 children: [(0, i.jsx)(a.Text, {
                     variant: "text-lg/semibold",
                     color: "always-white",
-                    children: A.intl.string(A.t.dMaDFX)
+                    children: x.intl.string(x.t.dMaDFX)
                 }), (0, i.jsx)(a.Text, {
                     variant: "text-sm/normal",
                     color: "always-white",
-                    children: A.intl.string(A.t.F7sgFH)
+                    children: x.intl.string(x.t.F7sgFH)
                 })]
             }), (0, i.jsx)(c.A, {
                 size: l.$n.Sizes.LARGE,
                 color: l.$n.Colors.GREEN,
                 textOptions: {
-                    textOverride: m.Ay.isPremium(t) ? A.intl.string(A.t.AfRWI8) : A.intl.string(A.t.nkdUym)
+                    textOverride: m.Ay.isPremium(t) ? x.intl.string(x.t.AfRWI8) : x.intl.string(x.t.nkdUym)
                 },
                 subscriptionTier: _.pe.TIER_2
             })]

@@ -1,6 +1,6 @@
 /** chunk id: 200790 params = (module,exports,require) **/
 n.d(t, {
-    A: () => x
+    A: () => A
 });
 var i = n(627968);
 n(64700);
@@ -15,14 +15,14 @@ var s = n(503698),
     m = n(919395),
     g = n(128450),
     _ = n(985018),
-    A = n(399926);
+    x = n(399926);
 
-function x(e) {
+function A(e) {
     let {
         user: t,
         guild: n,
         className: s,
-        sectionTitle: x,
+        sectionTitle: A,
         forcedDivider: h = !1,
         withTutorial: p = !1
     } = e, {
@@ -31,17 +31,17 @@ function x(e) {
         user: t,
         guildId: n?.id
     }), {
-        pendingAvatarDecoration: E,
-        errors: S
+        pendingAvatarDecoration: S,
+        errors: E
     } = (0, m.CP)(n?.id), b = p ? r.wLn : a.$n;
     return (0, i.jsx)(g.A, {
         className: s,
         forcedDivider: h,
         hasBackground: !0,
-        title: x,
-        errors: S,
+        title: A,
+        errors: E,
         children: (0, i.jsxs)("div", {
-            className: A.NC,
+            className: x.NC,
             children: [(0, i.jsx)(b, {
                 size: a.$n.Sizes.SMALL,
                 onClick: () => {
@@ -51,12 +51,12 @@ function x(e) {
                     })
                 },
                 className: l()({
-                    [A.yj]: p
+                    [x.yj]: p
                 }),
                 children: _.intl.string(_.t.BVcYCx)
-            }), (void 0 === E ? null != f : null != E) && (0, i.jsx)("div", {
+            }), (void 0 === S ? null != f : null != S) && (0, i.jsx)("div", {
                 "data-button-hoisted-classname-wrapper": !0,
-                className: A.DT,
+                className: x.DT,
                 children: (0, i.jsx)(r.Button, {
                     variant: "secondary",
                     size: "sm",

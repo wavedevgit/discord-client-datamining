@@ -1,6 +1,6 @@
 /** chunk id: 447675 params = (module,exports,require) **/
 n.d(t, {
-    A: () => E
+    A: () => S
 });
 var i = n(627968);
 n(64700);
@@ -15,21 +15,21 @@ var s = n(311907),
     m = n(852218),
     g = n(783420),
     _ = n(811611),
-    A = n(788868),
-    x = n(652215),
+    x = n(788868),
+    A = n(652215),
     h = n(103659),
     p = n(985018),
     T = n(223093),
     f = n(386271);
 
-function E() {
+function S() {
     let e = (0, r.Ay)(),
         t = (0, l.Mw)(e),
         n = (0, s.bG)([u.A], () => {
             let e = u.A.getPromotionByTypeAndKey(m.pt.MARKETING_MOMENT, m.zw);
             return null == e || e.endDate < new Date ? null : e
         }),
-        E = (0, s.bG)([o.A], () => o.A.getPremiumTypeSubscription());
+        S = (0, s.bG)([o.A], () => o.A.getPremiumTypeSubscription());
     return null == n ? null : (0, i.jsxs)(a.hLv, {
         color: "nitro-pink",
         className: T.kL,
@@ -60,14 +60,14 @@ function E() {
                     children: p.intl.string(h.default["7OPz+z"])
                 }), (0, i.jsx)(a.Text, {
                     variant: "text-sm/medium",
-                    children: p.intl.format(null != E ? h.default["PyQY5+"] : h.default.SvqMnV, {
+                    children: p.intl.format(null != S ? h.default["PyQY5+"] : h.default.SvqMnV, {
                         date: n.endDate,
-                        helpCenterLink: c.A.getArticleURL(x.MVz.NITRO_CONTROL_CAMPAIGN)
+                        helpCenterLink: c.A.getArticleURL(A.MVz.NITRO_CONTROL_CAMPAIGN)
                     })
                 }), (0, i.jsx)("div", {
                     className: T.lO,
                     children: (0, i.jsx)(g.A, {
-                        subscriptionTier: A.pe.TIER_2,
+                        subscriptionTier: x.pe.TIER_2,
                         children: e => {
                             let {
                                 onClick: t

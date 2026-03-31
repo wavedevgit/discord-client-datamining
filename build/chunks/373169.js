@@ -17,7 +17,7 @@ var i = n(627968),
 function _() {
     let e = (0, l.bG)([o.default], () => o.default.locale),
         [t, _] = s.useState(e),
-        A = s.useMemo(() => (0, u.getAvailableLocales)().map(e => {
+        x = s.useMemo(() => (0, u.getAvailableLocales)().map(e => {
             let t;
             try {
                 t = n(579832)(`./${e.value}.png`)
@@ -43,7 +43,7 @@ function _() {
                 })
             }
         }), []),
-        x = s.useCallback(e => {
+        A = s.useCallback(e => {
             _(e), g.nextTick(() => {
                 r.Ay.updateLocale(e), (0, a.OoC)(c.USER_SETTINGS_MODAL_KEY) && (0, c.openUserSettings)(d.X.LANGUAGE_AND_TIME_PANEL)
             })
@@ -53,7 +53,7 @@ function _() {
         label: u.intl.string(u.t["mx+sp7"]),
         description: u.intl.string(u.t.rTPlcq),
         value: t,
-        options: A,
-        onSelectionChange: x
+        options: x,
+        onSelectionChange: A
     })
 }

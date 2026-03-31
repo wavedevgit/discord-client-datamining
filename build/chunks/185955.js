@@ -1,6 +1,6 @@
 /** chunk id: 185955 params = (module,exports,require) **/
 n.d(t, {
-    A: () => E
+    A: () => S
 }), n(321073);
 var i = n(627968),
     s = n(64700),
@@ -14,26 +14,26 @@ var i = n(627968),
     m = n(128450),
     g = n(597551),
     _ = n(287809),
-    A = n(581781),
-    x = n(743981),
+    x = n(581781),
+    A = n(743981),
     h = n(355097),
     p = n(985018),
     T = n(152093);
 let f = (0, o.Ld)(),
-    E = s.memo(function(e) {
+    S = s.memo(function(e) {
         let {
             availablePrimaryGuilds: t,
             pendingPrimaryGuildId: n,
             onChange: o
-        } = e, E = s.useMemo(() => new Map(t.map(e => [e.id, e])), [t]), S = (0, l.bG)([_.default], () => (0, c.Zo)(_.default.getCurrentUser()?.primaryGuild).guildId), b = void 0 !== n ? n : S, C = s.useMemo(() => t.reduce((e, t) => (t.profile?.tag != null && e.push({
+        } = e, S = s.useMemo(() => new Map(t.map(e => [e.id, e])), [t]), E = (0, l.bG)([_.default], () => (0, c.Zo)(_.default.getCurrentUser()?.primaryGuild).guildId), b = void 0 !== n ? n : E, C = s.useMemo(() => t.reduce((e, t) => (t.profile?.tag != null && e.push({
             label: t.name,
             value: t.id
         }), e), []), [t]), N = s.useCallback(e => {
             if (null == e) return null;
-            let t = E.get(e.value);
+            let t = S.get(e.value);
             if (null == t) return null;
             let n = t.profile?.tag;
-            return null == n ? null : (0, i.jsx)(A.A, {
+            return null == n ? null : (0, i.jsx)(x.A, {
                 guildTag: n,
                 guildBadge: t.profile?.badge ?? void 0,
                 guildId: t.id,
@@ -41,9 +41,9 @@ let f = (0, o.Ld)(),
                 guildIcon: t.icon,
                 guildIconSize: 32
             })
-        }, [E]), v = s.useCallback(e => {
+        }, [S]), v = s.useCallback(e => {
             if (null == e) return null;
-            let t = E.get(e.value);
+            let t = S.get(e.value);
             return null == t || null == t.profile?.tag ? null : (0, i.jsx)(d.j, {
                 guildId: t.id,
                 guildName: t.name,
@@ -51,20 +51,20 @@ let f = (0, o.Ld)(),
                 iconSize: 32,
                 animate: !1
             })
-        }, [E]), I = s.useCallback(e => {
+        }, [S]), I = s.useCallback(e => {
             if (null == e) return null;
-            let t = E.get(e.value);
+            let t = S.get(e.value);
             if (null == t) return null;
             let n = t.profile?.tag;
             return null == n ? null : (0, i.jsx)(u.o9, {
                 guildId: t.id,
                 guildTag: n,
                 guildBadge: t.profile?.badge ?? void 0,
-                badgeSize: x.Sl.SIZE_16,
+                badgeSize: A.Sl.SIZE_16,
                 textColor: "interactive-text-default",
                 textVariant: "text-sm/semibold"
             })
-        }, [E]), j = s.useCallback(e => {
+        }, [S]), j = s.useCallback(e => {
             let t = e[0];
             return null == t ? null : (0, i.jsx)(i.Fragment, {
                 children: N(t)

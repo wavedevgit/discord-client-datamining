@@ -1,50 +1,49 @@
 /** chunk id: 503062 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
-    A: () => E
+    A: () => I
 });
 var i = n(627968),
-    s = n(64700),
+    l = n(64700),
     a = n(311907),
-    l = n(397927),
+    s = n(397927),
     r = n(442433),
     o = n(297413),
     d = n(714114),
     c = n(729551),
     u = n(178418),
-    h = n(87664),
-    p = n(290863),
-    f = n(939496),
-    _ = n(652215),
-    A = n(996988),
-    g = n(871670);
-let m = l._3J.SIZE_40,
-    x = (0, l.FT9)(m);
+    g = n(87664),
+    m = n(290863),
+    p = n(939496),
+    x = n(652215),
+    f = n(996988),
+    h = n(871670);
+let _ = s._3J.SIZE_40,
+    A = (0, s.FT9)(_);
 
-function E(e) {
+function I(e) {
     let {
         user: t,
-        status: E,
-        guildId: y,
-        channelId: v,
-        onSelect: S
+        status: I,
+        guildId: j,
+        channelId: E,
+        onSelect: v
     } = e, {
-        theme: C,
-        themeType: I
-    } = (0, f.E)(), N = s.useMemo(() => t.isNonUserBot() || (0, u.c)(t, v), [t, v]), {
-        activities: T,
-        isMobileOnline: b
-    } = (0, a.cf)([p.A], () => ({
-        activities: p.A.getActivities(t.id),
-        isMobileOnline: p.A.isMobileOnline(t.id)
-    })), O = (0, h.A)(t.id), {
-        voiceChannel: j
+        theme: T,
+        themeType: b
+    } = (0, p.E)(), C = l.useMemo(() => t.isNonUserBot() || (0, u.c)(t, E), [t, E]), {
+        activities: S,
+        isMobileOnline: N
+    } = (0, a.cf)([m.A], () => ({
+        activities: m.A.getActivities(t.id),
+        isMobileOnline: m.A.isMobileOnline(t.id)
+    })), y = (0, g.A)(t.id), {
+        voiceChannel: R
     } = (0, d.A)({
         userId: t.id,
-        guildId: y
+        guildId: j
     });
-    return (0, i.jsxs)(l.DUT, {
-        focusProps: I === A.d.MODAL_V2 ? {
+    return (0, i.jsxs)(s.DUT, {
+        focusProps: b === f.d.MODAL_V2 ? {
             offset: {
                 top: 4,
                 right: 4,
@@ -55,8 +54,8 @@ function E(e) {
                 right: 8
             }
         },
-        className: g.nM,
-        onClick: S,
+        className: h.nM,
+        onClick: v,
         onContextMenu: e => {
             (0, r.L3)(e, async () => {
                 let {
@@ -68,25 +67,25 @@ function E(e) {
                 })
             })
         },
-        children: [(0, i.jsx)(l.euF, {
-            src: t.getAvatarURL(y, x),
+        children: [(0, i.jsx)(s.euF, {
+            src: t.getAvatarURL(j, A),
             "aria-label": t.username,
-            size: m,
-            status: N ? _.clD.UNKNOWN : E,
-            statusBackdropColor: N ? void 0 : (0, l.C$5)(C),
-            isMobile: b,
-            className: g.my
+            size: _,
+            status: C ? x.clD.UNKNOWN : I,
+            statusBackdropColor: C ? void 0 : (0, s.C$5)(T),
+            isMobile: N,
+            className: h.my
         }), (0, i.jsxs)("div", {
-            className: g.zH,
+            className: h.zH,
             children: [(0, i.jsx)(o.A, {
                 user: t,
-                className: g.Tc,
-                discriminatorClass: g.D2
+                className: h.Tc,
+                discriminatorClass: h.D2
             }), (0, i.jsx)(c.A, {
                 user: t,
-                activities: T,
-                applicationStream: O,
-                voiceChannel: j
+                activities: S,
+                applicationStream: y,
+                voiceChannel: R
             })]
         })]
     })

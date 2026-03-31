@@ -1,6 +1,6 @@
 /** chunk id: 338795 params = (module,exports,require) **/
 n.d(t, {
-    J: () => E
+    J: () => S
 });
 var i = n(934551),
     s = n(98207),
@@ -14,14 +14,14 @@ var i = n(934551),
     m = n(611478),
     g = n(402089),
     _ = n(281225),
-    A = n(935185),
-    x = n(652215),
+    x = n(935185),
+    A = n(652215),
     h = n(985018);
 let p = (0, a.dT)(c.X.ACCOUNT_STANDING_TAB, {
         getTitle: () => h.intl.string(h.t["Vov/9o"]),
         onItemSelect: () => {
-            d.default.track(x.HAw.MY_ACCOUNT_PAGE_TAB_NAVIGATE, {
-                target_tab_name: A.D.STANDING
+            d.default.track(A.HAw.MY_ACCOUNT_PAGE_TAB_NAVIGATE, {
+                target_tab_name: x.D.STANDING
             })
         },
         buildLayout: () => [_.Q]
@@ -29,8 +29,8 @@ let p = (0, a.dT)(c.X.ACCOUNT_STANDING_TAB, {
     T = (0, a.dT)(c.X.ACCOUNT_SECURITY_TAB, {
         getTitle: () => h.intl.string(h.t.Am9YHi),
         onItemSelect: () => {
-            d.default.track(x.HAw.MY_ACCOUNT_PAGE_TAB_NAVIGATE, {
-                target_tab_name: A.D.SECURITY
+            d.default.track(A.HAw.MY_ACCOUNT_PAGE_TAB_NAVIGATE, {
+                target_tab_name: x.D.SECURITY
             })
         },
         buildLayout: () => [m.P, u.o, g.s]
@@ -46,7 +46,7 @@ let p = (0, a.dT)(c.X.ACCOUNT_STANDING_TAB, {
         hideInStreamerMode: !0,
         buildLayout: () => [T, p]
     }),
-    E = (0, a.i4)(c.X.ACCOUNT_SIDEBAR_ITEM, {
+    S = (0, a.i4)(c.X.ACCOUNT_SIDEBAR_ITEM, {
         useTitle: () => h.intl.string(h.t["JAIM/m"]),
         icon: i.UserIcon,
         buildLayout: () => [f]

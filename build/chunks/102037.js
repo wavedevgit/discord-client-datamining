@@ -21,8 +21,8 @@ function p(e) {
         type: a
     } = e, {
         icon: p,
-        title: f,
-        body: _,
+        title: _,
+        body: f,
         hint: A,
         notifType: g
     } = (t = {
@@ -45,8 +45,8 @@ function p(e) {
     });
     return {
         icon: p,
-        title: f,
-        body: _,
+        title: _,
+        body: f,
         hint: A,
         renderFooter: () => (0, i.jsx)("div", {
             style: {

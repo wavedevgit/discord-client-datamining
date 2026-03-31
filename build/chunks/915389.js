@@ -1,6 +1,6 @@
 /** chunk id: 915389 params = (module,exports,require) **/
 n.d(t, {
-    A: () => E
+    A: () => S
 }), n(321073);
 var i = n(627968),
     s = n(64700),
@@ -14,20 +14,20 @@ var i = n(627968),
     m = n(166403),
     g = n(473145),
     _ = n(927578),
-    A = n(311092),
-    x = n(652215),
+    x = n(311092),
+    A = n(652215),
     h = n(788868),
     p = n(985018),
     T = n(477570),
     f = n(410229);
 
-function E(e) {
+function S(e) {
     let {
         guildBoostSlots: t,
         fractionalPremiumState: l
     } = e, d = (0, r.bG)([m.A], () => m.A.getPremiumTypeSubscription()), {
         unappliedSlots: c,
-        numActiveSlots: A
+        numActiveSlots: x
     } = s.useMemo(() => {
         let e = [],
             n = 0;
@@ -36,7 +36,7 @@ function E(e) {
             unappliedSlots: e,
             numActiveSlots: n
         }
-    }, [t]), E = A > (null != d ? _.Ay.getNumIncludedPremiumGuildSubscriptionSlots(d.planId) : 0), b = d?.isPausedOrPausePending === !0 && l === h.xc.NONE;
+    }, [t]), S = x > (null != d ? _.Ay.getNumIncludedPremiumGuildSubscriptionSlots(d.planId) : 0), b = d?.isPausedOrPausePending === !0 && l === h.xc.NONE;
     return 0 === c.length ? null : (0, i.jsxs)("div", {
         className: T.Nr,
         children: [(0, i.jsxs)("div", {
@@ -90,10 +90,10 @@ function E(e) {
                                 t.onClose(), (0, u.g)({
                                     analyticsLocations: [],
                                     analyticsLocation: {
-                                        page: x.liQ.GUILD_BOOSTING_USER_SETTINGS,
-                                        section: x.JJy.SETTINGS_PREMIUM,
-                                        object: x.ZSU.BUTTON_CTA,
-                                        objectType: x.AnalyticsObjectTypes.BUY
+                                        page: A.liQ.GUILD_BOOSTING_USER_SETTINGS,
+                                        section: A.JJy.SETTINGS_PREMIUM,
+                                        object: A.ZSU.BUTTON_CTA,
+                                        objectType: A.AnalyticsObjectTypes.BUY
                                     },
                                     guild: e
                                 })
@@ -102,10 +102,10 @@ function E(e) {
                     })
                 }
             })]
-        }), c.map((e, t) => (0, i.jsx)(S, {
+        }), c.map((e, t) => (0, i.jsx)(E, {
             slot: e,
             isLast: t === c.length - 1,
-            isCancelable: E && !(0, g.I5)(e),
+            isCancelable: S && !(0, g.I5)(e),
             isCanceled: (0, g.I5)(e),
             premiumSubscription: d,
             modificationsDisabled: b
@@ -113,7 +113,7 @@ function E(e) {
     })
 }
 
-function S(e) {
+function E(e) {
     let t, {
             slot: n,
             isLast: l,
@@ -123,15 +123,15 @@ function S(e) {
             modificationsDisabled: g
         } = e,
         _ = s.useRef(null),
-        x = s.useMemo(() => null != n.cooldownEndsAt ? new Date(n.cooldownEndsAt) : null, [n.cooldownEndsAt]);
+        A = s.useMemo(() => null != n.cooldownEndsAt ? new Date(n.cooldownEndsAt) : null, [n.cooldownEndsAt]);
     t = u && null != m ? (0, i.jsx)(o.Text, {
         variant: "text-sm/medium",
         color: "text-subtle",
         children: p.intl.format(p.t.Z4ULRD, {
             date: m.currentPeriodEnd
         })
-    }) : n.isOnCooldown() && null != x ? (0, i.jsx)(A.A, {
-        cooldown: x.getTime()
+    }) : n.isOnCooldown() && null != A ? (0, i.jsx)(x.A, {
+        cooldown: A.getTime()
     }) : (0, i.jsx)(o.Text, {
         variant: "text-sm/medium",
         color: "text-subtle",

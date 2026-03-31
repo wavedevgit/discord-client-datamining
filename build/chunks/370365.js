@@ -1,6 +1,6 @@
 /** chunk id: 370365 params = (module,exports,require) **/
 n.d(t, {
-    A: () => x
+    A: () => A
 });
 var i = n(627968),
     s = n(64700),
@@ -15,7 +15,7 @@ var i = n(627968),
     g = n(686533),
     _ = n(511767);
 
-function A(e) {
+function x(e) {
     let {
         game: t,
         gameApplication: n
@@ -27,32 +27,32 @@ function A(e) {
     })
 }
 
-function x(e) {
+function A(e) {
     let {
         rawGame: t,
         gameApplication: n,
         supportDisabled: r,
         getEnabledFromStatus: d,
-        onChange: x,
+        onChange: A,
         clientSettingType: h,
         ariaLabel: p
-    } = e, T = (0, l.cf)([o.Ay, u.A, m.A], () => (0, o.xU)(t, o.Ay, u.A, m.A)), f = (0, l.cf)([u.A, m.A], () => (0, o.hw)(t, !1, [u.A, m.A]), [t]), E = d(f), [S, b] = s.useState(E);
+    } = e, T = (0, l.cf)([o.Ay, u.A, m.A], () => (0, o.xU)(t, o.Ay, u.A, m.A)), f = (0, l.cf)([u.A, m.A], () => (0, o.hw)(t, !1, [u.A, m.A]), [t]), S = d(f), [E, b] = s.useState(S);
     return s.useEffect(() => {
-        b(E)
-    }, [E]), (0, i.jsx)(g.A, {
+        b(S)
+    }, [S]), (0, i.jsx)(g.A, {
         title: t.name,
-        icon: (0, i.jsx)(A, {
+        icon: (0, i.jsx)(x, {
             game: T,
             gameApplication: n
         }),
         "aria-label": p,
         action: (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)(a.dOG, {
-                checked: S,
+                checked: E,
                 disabled: r,
                 onChange: e => {
                     let n;
-                    return n = !e && S, void(b(e), x(e, T, f), n && (0, c.L)(h, T.id ?? t?.id ?? null))
+                    return n = !e && E, void(b(e), A(e, T, f), n && (0, c.L)(h, T.id ?? t?.id ?? null))
                 }
             }), (0, i.jsx)("div", {
                 className: _.Kz

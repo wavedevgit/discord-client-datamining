@@ -15,14 +15,14 @@ var s = n(284009),
     m = n(200790),
     g = n(230084),
     _ = n(339442),
-    A = n(900254),
-    x = n(431982),
+    x = n(900254),
+    A = n(431982),
     h = n(730588),
     p = n(593629),
     T = n(164599),
     f = n(63675),
-    E = n(617514),
-    S = n(546849),
+    S = n(617514),
+    E = n(546849),
     b = n(101058),
     C = n(84540),
     N = n(836602),
@@ -82,7 +82,7 @@ function P() {
                 globalName: e
             }),
             user: e
-        }), (0, i.jsx)(S.A, {
+        }), (0, i.jsx)(E.A, {
             sectionTitle: O.intl.string(O.t["+T3RI/"]),
             errors: w.pronouns,
             onPronounsChange: e => (0, C.p)({
@@ -90,7 +90,7 @@ function P() {
             }),
             pendingPronouns: D,
             currentPronouns: t?.pronouns ?? ""
-        }, "pronouns"), (0, i.jsx)(E.A, {}), (0, i.jsx)(g.A, {
+        }, "pronouns"), (0, i.jsx)(S.A, {}), (0, i.jsx)(g.A, {
             onAvatarChange: e => {
                 (0, C.p)({
                     avatar: e
@@ -103,7 +103,7 @@ function P() {
         }, "avatar"), (0, i.jsx)(m.A, {
             user: e,
             sectionTitle: O.intl.string(O.t["7v0T9P"])
-        }, "decoration"), (0, i.jsx)(x.A, {
+        }, "decoration"), (0, i.jsx)(A.A, {
             user: e
         }), (0, i.jsx)(T.A, {
             user: e,
@@ -146,7 +146,7 @@ function P() {
             onChange: e => (0, C.p)({
                 primaryGuildId: e
             })
-        }), null != X && (0, i.jsx)(A.A, {
+        }), null != X && (0, i.jsx)(x.A, {
             legacyUsername: X,
             pendingLegacyUsernameDisabled: k
         }, "legacy_username")]

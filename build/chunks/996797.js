@@ -15,11 +15,11 @@ var i = n(308368),
 
 function h(e, t, n, h) {
     let p = t.username,
-        f = u.intl.format(u.t.VDODnv, {
+        _ = u.intl.format(u.t.VDODnv, {
             username: "",
             game: n.name
         }),
-        _ = t.getAvatarURL(e.guild_id, 80),
+        f = t.getAvatarURL(e.guild_id, 80),
         {
             trackView: A,
             trackClick: g
@@ -30,9 +30,9 @@ function h(e, t, n, h) {
             activity_name: n.name
         });
     return {
-        icon: _,
+        icon: f,
         title: p,
-        body: f,
+        body: _,
         hint: e => (0, l.sI)(e, (0, o.J)(), u.t.Odi54y),
         confirmText: u.intl.string(u.t["fgP/wX"]),
         cancelText: u.intl.string(u.t["tpXzJ+"]),

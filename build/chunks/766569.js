@@ -14,14 +14,14 @@ var i = n(627968),
     m = n(688810),
     g = n(512213),
     _ = n(919395),
-    A = n(884546),
-    x = n(287070),
+    x = n(884546),
+    A = n(287070),
     h = n(101058),
     p = n(836602),
     T = n(622543),
     f = n(696451),
-    E = n(351906),
-    S = n(287809),
+    S = n(351906),
+    E = n(287809),
     b = n(975571),
     C = n(927578),
     N = n(159001),
@@ -53,10 +53,10 @@ function L(e) {
         onGuildChange: n
     } = e, {
         analyticsLocations: l
-    } = (0, m.Ay)(u.A.USER_SETTINGS_GUILD_PROFILE), L = (0, r.bG)([S.default], () => {
-        let e = S.default.getCurrentUser();
+    } = (0, m.Ay)(u.A.USER_SETTINGS_GUILD_PROFILE), L = (0, r.bG)([E.default], () => {
+        let e = E.default.getCurrentUser();
         return a()(null != e, "GuildIdentitySettingsPage: user cannot be undefined"), e
-    }), D = (0, r.bG)([f.Ay], () => null != t ? f.Ay.getMember(t.id, L.id) : null), G = (0, r.bG)([T.A], () => !T.A.isFetchingProfile(L.id, t?.id)), M = (0, r.bG)([E.A], () => E.A.hidePersonalInformation), {
+    }), D = (0, r.bG)([f.Ay], () => null != t ? f.Ay.getMember(t.id, L.id) : null), G = (0, r.bG)([T.A], () => !T.A.isFetchingProfile(L.id, t?.id)), M = (0, r.bG)([S.A], () => S.A.hidePersonalInformation), {
         pendingAvatar: k,
         pendingNameplate: U,
         ...w
@@ -82,7 +82,7 @@ function L(e) {
             children: [(0, i.jsx)(j.A, {
                 guildId: t.id,
                 onChange: n
-            }), (0, i.jsx)(A.A, {
+            }), (0, i.jsx)(x.A, {
                 profilePreviewTitle: (0, i.jsx)(o.Heading, {
                     variant: "heading-md/medium",
                     className: R.Y,
@@ -90,7 +90,7 @@ function L(e) {
                         guildName: t?.name
                     })
                 }),
-                profilePreview: (0, i.jsx)(x.A, {
+                profilePreview: (0, i.jsx)(A.A, {
                     ...w,
                     pendingAvatar: V,
                     pendingDisplayNameStyles: F,

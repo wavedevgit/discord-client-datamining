@@ -14,14 +14,14 @@ var i = n(627968),
     m = n(793574),
     g = n(688810),
     _ = n(562819),
-    A = n(793943),
-    x = n(259065),
+    x = n(793943),
+    A = n(259065),
     h = n(95035),
     p = n(532794),
     T = n(829219),
     f = n(859703),
-    E = n(341915),
-    S = n(890687),
+    S = n(341915),
+    E = n(890687),
     b = n(590202),
     C = n(591179),
     N = n(462463),
@@ -68,10 +68,10 @@ function ei() {
         location: "PremiumWhatsNewSection"
     }).enabled, eo = (0, a.bG)([y.A], () => y.A.getPremiumTypeSubscription()), ed = eo?.hasActiveTrial ?? !1, ec = (0, a.bG)([f.A], () => [...f.A.quests.values()].find(e => e.config.features.includes(B.Li.NITRO_CONTROL_CTA)) ?? null), eu = (0, N.A)(), {
         launchInGameActivity: em
-    } = (0, S.zW)(ec), eg = (0, s.useCallback)(() => {
+    } = (0, E.zW)(ec), eg = (0, s.useCallback)(() => {
         (0, j.openUserSettings)(v.X.PROFILE_PANEL, {
             analyticsLocations: e
-        }, () => (0, x.L)({
+        }, () => (0, A.L)({
             analyticsLocations: e
         }))
     }, [e]), e_ = (0, s.useCallback)(() => {
@@ -80,14 +80,14 @@ function ei() {
         }, () => (0, _.L)({
             analyticsLocations: e
         }))
-    }, [e]), eA = (0, s.useCallback)(() => {
+    }, [e]), ex = (0, s.useCallback)(() => {
         let e = (0, I.Ci)("openCustomAppSettings") ? v.X.DISPLAY_IN_APP_ICON_CATEGORY : v.X.APPEARANCE_IN_APP_ICON;
         (0, j.openUserSettings)(e)
-    }, []), ex = (0, s.useCallback)(() => {
+    }, []), eA = (0, s.useCallback)(() => {
         null != ec && (ec.userStatus?.enrolledAt == null ? (0, T.Oy)(ec.id, {
-            questContent: E.uF.NITRO_HOME_PERK_CARD,
+            questContent: S.uF.NITRO_HOME_PERK_CARD,
             questContentCTA: b.Cy.START_QUEST,
-            sourceQuestContent: E.uF.NITRO_HOME_PERK_CARD
+            sourceQuestContent: S.uF.NITRO_HOME_PERK_CARD
         }).then(e => {
             switch (e.type) {
                 case T.WM.SUCCESS:
@@ -133,7 +133,7 @@ function ei() {
         })
     }, [ea, e, ed]), eT = (0, U.A)(e), {
         currentDate: ef,
-        nDaysInMonth: eE
+        nDaysInMonth: eS
     } = (0, s.useMemo)(() => {
         let e = new Date;
         return {
@@ -152,7 +152,7 @@ function ei() {
                 pillText: Y.intl.string(z.default["3rpSiP"]),
                 primaryAsset: (0, r.Mw)(ei) ? et.A : ee.A,
                 ctaText: Y.intl.string(e ? z.default.QBfwzW : z.default["1Ng1ci"]),
-                onCtaClick: ex
+                onCtaClick: eA
             }
         }
         let s = [n, el ? {
@@ -163,7 +163,7 @@ function ei() {
                     termsUrl: "https://logitech.com"
                 }),
                 subscriptionRequired: !0,
-                progress: ef.getDate() / eE,
+                progress: ef.getDate() / eS,
                 ctaText: Y.intl.string(F.default["bZLaD+"]),
                 onCtaClick: () => (0, L.P)({
                     partnerId: G.XY
@@ -209,7 +209,7 @@ function ei() {
                     alt: "SteelSeries"
                 }),
                 backgroundAssetUrl: $.A,
-                progress: ef.getDate() / eE,
+                progress: ef.getDate() / eS,
                 ctaText: Y.intl.string(Y.t.w7s5Qr),
                 onCtaClick: () => (0, M.u)({
                     analyticsLocations: e,
@@ -233,7 +233,7 @@ function ei() {
                 primaryAsset: en.A,
                 ctaText: Y.intl.string(Y.t.jVcuVY),
                 onCtaClick: () => {
-                    (0, A.nf)(A.HP.CUSTOM_THEME)
+                    (0, x.nf)(x.HP.CUSTOM_THEME)
                 }
             }, {
                 id: k.PERMADECOS_CARD_ID,
@@ -251,10 +251,10 @@ function ei() {
                 description: Y.intl.string(Y.t["1uPk1Z"]),
                 primaryAsset: q.A,
                 ctaText: Y.intl.string(Y.t.y9TxXV),
-                onCtaClick: eA
+                onCtaClick: ex
             }],
             a = (s = s.filter(e => null != e))[0].featured,
             d = a ? 5 : 6;
         return s.splice(+!!a, 0, eT), s.length > d && s.splice(d, s.length - d), s
-    }, [eT, ec, ei, ex, es, ea, er, eE, ef, e, eg, eA, e_, ep, eu, t, el])
+    }, [eT, ec, ei, eA, es, ea, er, eS, ef, e, eg, ex, e_, ep, eu, t, el])
 }

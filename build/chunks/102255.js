@@ -1,6 +1,6 @@
 /** chunk id: 102255 params = (module,exports,require) **/
 n.d(t, {
-    AF: () => S,
+    AF: () => E,
     Im: () => f,
     jH: () => T
 });
@@ -16,8 +16,8 @@ var i = n(627968),
     m = n(287809),
     g = n(791606),
     _ = n(403362),
-    A = n(780964),
-    x = n(840065),
+    x = n(780964),
+    A = n(840065),
     h = n(985018),
     p = n(754273);
 
@@ -45,7 +45,7 @@ function f() {
     })
 }
 
-function E(e) {
+function S(e) {
     let {
         checked: t,
         otherSessions: n
@@ -70,7 +70,7 @@ function E(e) {
     })
 }
 
-function S() {
+function E() {
     let {
         currentSession: e,
         otherSessions: t
@@ -89,7 +89,7 @@ function S() {
             }, e.id_hash)), n?.mfaEnabled ? null : (0, i.jsx)(C, {})]
         }), t.length > 0 && (0, i.jsx)("div", {
             className: p.wq,
-            children: (0, i.jsx)(E, {
+            children: (0, i.jsx)(S, {
                 checked: l,
                 otherSessions: t
             })
@@ -106,7 +106,7 @@ function b(e) {
         useChecks: r
     } = e, d = t.client_info?.location ?? t.client_info?.ip, m = t.client_info?.platform, {
         text: g,
-        icon: A
+        icon: x
     } = function(e) {
         switch (e?.toLowerCase().trim()) {
             case null:
@@ -129,7 +129,7 @@ function b(e) {
                     text: e, icon: o.kN9
                 }
         }
-    }(t.client_info?.os), x = n ? null : (0, u.Y)(t.approx_last_used_time), T = [g, m].filter(_.Vq), f = [d, x].filter(_.Vq);
+    }(t.client_info?.os), A = n ? null : (0, u.Y)(t.approx_last_used_time), T = [g, m].filter(_.Vq), f = [d, A].filter(_.Vq);
     return (0, i.jsxs)("div", {
         className: a()(p.dZ, {
             [p.gg]: n
@@ -138,7 +138,7 @@ function b(e) {
             className: p.OC,
             children: [(0, i.jsx)("div", {
                 className: p.km,
-                children: (0, i.jsx)(A, {
+                children: (0, i.jsx)(x, {
                     size: "md",
                     color: "currentColor"
                 })
@@ -220,7 +220,7 @@ function C() {
                     color: "text-muted",
                     children: (0, i.jsx)("span", {
                         children: h.intl.format(h.t["044+8i"], {
-                            onClick: () => (0, x.openUserSettings)(A.X.ACCOUNT_PANEL, {
+                            onClick: () => (0, A.openUserSettings)(x.X.ACCOUNT_PANEL, {
                                 analyticsLocations: [d.A.USER_SETTINGS_SESSIONS]
                             })
                         })

@@ -3,13 +3,13 @@ n.d(t, {
     A: () => Q
 });
 var i = n(627968),
-    a = n(64700),
-    l = n(503698),
-    s = n.n(l),
+    l = n(64700),
+    a = n(503698),
+    s = n.n(a),
     r = n(205338),
     o = n(179771),
-    c = n(87075),
-    d = n(311907),
+    d = n(87075),
+    c = n(311907),
     u = n(397927),
     g = n(155718),
     m = n(793574),
@@ -229,10 +229,10 @@ function U(e) {
     switch (t.type) {
         case "HERO":
             let {
-                body: n, ...a
+                body: n, ...l
             } = t;
             return (0, i.jsx)(H, {
-                ...a,
+                ...l,
                 body: W(n)
             });
         case "GRID":
@@ -273,8 +273,8 @@ function H(e) {
     let {
         title: t,
         body: n,
-        image: a,
-        imagePlaceholder: l
+        image: l,
+        imagePlaceholder: a
     } = e;
     return (0, i.jsxs)("div", {
         className: D.mY,
@@ -290,20 +290,20 @@ function H(e) {
                 color: "muted",
                 children: n
             })]
-        }), (0, h.c)(a) ? (0, i.jsx)("div", {
+        }), (0, h.c)(l) ? (0, i.jsx)("div", {
             className: D.Xr,
             children: (0, i.jsx)(S.Ay, {
-                src: a.proxyUrl,
+                src: l.proxyUrl,
                 alt: "",
-                width: a.width,
-                height: a.height,
+                width: l.width,
+                height: l.height,
                 responsive: !0,
                 className: D.c8
             })
-        }) : null != l ? (0, i.jsx)("div", {
+        }) : null != a ? (0, i.jsx)("div", {
             className: D.Xr,
             children: (0, i.jsx)("img", {
-                src: l,
+                src: a,
                 alt: "",
                 className: D.c8
             })
@@ -336,14 +336,14 @@ function X(e) {
 function V(e) {
     let {
         content: t
-    } = e, n = a.useId(), l = (0, v.X)();
+    } = e, n = l.useId(), a = (0, v.X)();
     return null != t ? (0, i.jsx)(b.A, {
         type: g.I5.TEXT_DISPLAY,
         id: n,
         content: t,
         className: D.Qq
     }) : (0, i.jsx)("div", {
-        className: s()(D.jC, l.className)
+        className: s()(D.jC, a.className)
     })
 }
 
@@ -351,10 +351,10 @@ function z(e) {
     let {
         content: t,
         image: n,
-        imagePosition: a
-    } = e, l = (0, v.X)(), r = (0, h.c)(n) ? (0, i.jsx)("div", {
-        className: s()(D.Sl, l.className),
-        "data-position": a,
+        imagePosition: l
+    } = e, a = (0, v.X)(), r = (0, h.c)(n) ? (0, i.jsx)("div", {
+        className: s()(D.Sl, a.className),
+        "data-position": l,
         children: (0, i.jsx)(S.Ay, {
             src: n.proxyUrl,
             alt: "",
@@ -363,15 +363,15 @@ function z(e) {
             responsive: !0
         })
     }) : null == t ? (0, i.jsx)("div", {
-        className: s()(D.bc, l.className)
+        className: s()(D.bc, a.className)
     }) : null;
     return (0, i.jsxs)("div", {
         className: D.rQ,
-        children: [null != r && "left" === a ? (0, i.jsxs)(i.Fragment, {
+        children: [null != r && "left" === l ? (0, i.jsxs)(i.Fragment, {
             children: [r, " "]
         }) : null, (0, i.jsx)(V, {
             content: t
-        }), null != r && "right" === a ? (0, i.jsxs)(i.Fragment, {
+        }), null != r && "right" === l ? (0, i.jsxs)(i.Fragment, {
             children: [" ", r]
         }) : null]
     })
@@ -381,10 +381,10 @@ function Y(e) {
     let {
         size: t = "small",
         divider: n = !1
-    } = e, l = a.useId();
+    } = e, a = l.useId();
     return (0, i.jsx)(T.A, {
         type: g.I5.SEPARATOR,
-        id: l,
+        id: a,
         divider: n,
         spacing: "large" === t ? g.C8.LARGE : g.C8.SMALL
     })
@@ -397,13 +397,13 @@ function K(e, t) {
     if ("skeleton" === t.mode) return null;
     let i = "";
     for (let e = 0; e < n.length; e++) {
-        let a = n[e];
+        let l = n[e];
         if (e % 2 == 0) {
-            i += a;
+            i += l;
             continue
         }
-        let l = t.variables[a];
-        null == l ? i += "––" : "unfurled_media" === l.type ? i += l.media.url : "number" === l.type ? i += t.numberFormat.format(l.value) : "string" === l.type && (i += l.value)
+        let a = t.variables[l];
+        null == a ? i += "––" : "unfurled_media" === a.type ? i += a.media.url : "number" === a.type ? i += t.numberFormat.format(a.value) : "string" === a.type && (i += a.value)
     }
     return i
 }
@@ -471,7 +471,7 @@ function Z(e) {
 }
 let Q = Object.assign(function(e) {
     var t, n;
-    let l, r, g, h, j, {
+    let a, r, g, h, j, {
             trackUserProfileAction: E
         } = (0, k.NJ)(),
         {
@@ -480,10 +480,10 @@ let Q = Object.assign(function(e) {
             cta: b,
             subtle: S = !1
         } = e,
-        G = (0, d.bG)([y.default], () => y.default.getId()) === v.id,
+        G = (0, c.bG)([y.default], () => y.default.getId()) === v.id,
         M = (0, _.h)(T.applicationId),
         W = M?.getIconURL(16),
-        H = (0, d.bG)([R.A], () => null != M ? R.A.getGameByApplication(M) : null),
+        H = (0, c.bG)([R.A], () => null != M ? R.A.getGameByApplication(M) : null),
         B = (0, I.A)({
             location: "UserProfileApplicationWidget",
             applicationId: H?.id,
@@ -501,7 +501,7 @@ let Q = Object.assign(function(e) {
         {
             analyticsLocations: $
         } = (0, p.Ay)(m.A.USER_PROFILE_APPLICATION_WIDGET),
-        ee = a.useCallback(() => {
+        ee = l.useCallback(() => {
             z && (E({
                 action: V ? "PRESS_APPLICATION_WIDGET_LINKED_RECONNECT" : "PRESS_APPLICATION_WIDGET_UNLINKED_CONNECT",
                 applicationId: T.applicationId
@@ -527,7 +527,7 @@ let Q = Object.assign(function(e) {
                 })
             })]
         }),
-        ea = null == H ? (0, i.jsx)("div", {
+        el = null == H ? (0, i.jsx)("div", {
             className: D.qd,
             children: ei
         }) : (0, i.jsx)(u.DUT, {
@@ -536,10 +536,10 @@ let Q = Object.assign(function(e) {
             children: ei
         }),
         {
-            isLoading: el,
+            isLoading: ea,
             hasData: es,
             components: er
-        } = (t = v.id, n = T.applicationId, l = (0, f.A)(), r = (0, d.bG)([N.A], () => N.A.getUserIdentityByApplication(t, n)), g = (0, d.bG)([L.A], () => L.A.getApplicationWidgetConfig(n)), h = (0, d.bG)([N.A, L.A], () => null == N.A.getUserIdentities(t) || null == L.A.applicationWidgetConfigs), j = a.useMemo(() => {
+        } = (t = v.id, n = T.applicationId, a = (0, f.A)(), r = (0, c.bG)([N.A], () => N.A.getUserIdentityByApplication(t, n)), g = (0, c.bG)([L.A], () => L.A.getApplicationWidgetConfig(n)), h = (0, c.bG)([N.A, L.A], () => null == N.A.getUserIdentities(t) || null == L.A.applicationWidgetConfigs), j = l.useMemo(() => {
             var e, t;
             if (null == g) return null;
             let n = F[g.widgetTemplateId];
@@ -547,16 +547,16 @@ let Q = Object.assign(function(e) {
             let i = (e = r ?? null, t = g ?? null, null == e ? {
                 mode: "skeleton",
                 config: t,
-                numberFormat: l
+                numberFormat: a
             } : {
                 mode: "from_data",
-                variables: Object.fromEntries([...e.profile?.data?.dynamic?.map(e => e.type === c.f.STRING ? [e.name, {
+                variables: Object.fromEntries([...e.profile?.data?.dynamic?.map(e => e.type === d.f.STRING ? [e.name, {
                     type: "string",
                     value: e.value
-                }] : e.type === c.f.NUMBER ? [e.name, {
+                }] : e.type === d.f.NUMBER ? [e.name, {
                     type: "number",
                     value: e.value
-                }] : e.type === c.f.MEDIA ? [e.name, {
+                }] : e.type === d.f.MEDIA ? [e.name, {
                     type: "unfurled_media",
                     media: (0, C.Uv)(e.value)
                 }] : (0, O.xb)(e)) ?? [], ...Object.entries({
@@ -580,7 +580,7 @@ let Q = Object.assign(function(e) {
                     return null
                 }).filter(O.Vq)]),
                 config: t,
-                numberFormat: l
+                numberFormat: a
             });
             return n.map(function e(t) {
                 switch (t.type) {
@@ -608,7 +608,7 @@ let Q = Object.assign(function(e) {
                         return t
                 }
             })
-        }, [g, r, l]), {
+        }, [g, r, a]), {
             isLoading: h,
             hasData: null != r,
             components: j
@@ -618,7 +618,7 @@ let Q = Object.assign(function(e) {
         userId: v.id,
         widget: T,
         className: s()(D.Y5, S && D.aK),
-        headerTitle: ea,
+        headerTitle: el,
         headerClassName: D.wx,
         additionalManageWidgetMenuItems: null != H ? (0, i.jsx)(u.Drp, {
             id: "view-game-profile",
@@ -633,7 +633,7 @@ let Q = Object.assign(function(e) {
             })
         }), G && (0, i.jsxs)("div", {
             className: D.qr,
-            children: [el || es || et || en ? null : (0, i.jsxs)("div", {
+            children: [ea || es || et || en ? null : (0, i.jsxs)("div", {
                 className: D.o8,
                 children: [(0, i.jsx)(u.Qfk, {
                     size: "xxs"

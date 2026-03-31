@@ -14,14 +14,14 @@ var i = n(627968),
     m = n(414079),
     g = n(29160),
     _ = n(15285),
-    A = n(496885),
-    x = n(847521),
+    x = n(496885),
+    A = n(847521),
     h = n(760751),
     p = n(189081),
     T = n(954571),
     f = n(723702),
-    E = n(652215),
-    S = n(650583),
+    S = n(652215),
+    E = n(650583),
     b = n(985018),
     C = n(519856),
     N = n(287638);
@@ -41,7 +41,7 @@ function I(e) {
     } = (0, r.cf)([_.Ay], () => ({
         canToggleDetection: null == O || _.Ay.isDetectionEnabled(O),
         isCurrentGameDetectionEnabled: _.Ay.isDetectionEnabled(R)
-    })), D = (0, r.bG)([_.Ay], () => _.Ay.getVisibleGame()), [G, M] = s.useState(!1), k = s.useMemo(() => (0, x.n1)(R) ? y ? R.gameName : b.intl.formatToPlainString(b.t.G6BGdx, {
+    })), D = (0, r.bG)([_.Ay], () => _.Ay.getVisibleGame()), [G, M] = s.useState(!1), k = s.useMemo(() => (0, A.n1)(R) ? y ? R.gameName : b.intl.formatToPlainString(b.t.G6BGdx, {
         subgameName: R.gameName
     }) : R.name, [R, y]), [U, w] = s.useState(k ?? "???"), V = a()(N.tR, {
         [C.LO]: !l,
@@ -92,7 +92,7 @@ function I(e) {
                         children: k
                     }), (0, i.jsx)(d.m_, {
                         text: b.intl.string(b.t["4PJP5p"]),
-                        children: (0, i.jsx)(A.A, {
+                        children: (0, i.jsx)(x.A, {
                             className: C.qf,
                             size: 18,
                             color: o.A.unsafe_rawColors.BRAND_500.css,
@@ -113,7 +113,7 @@ function I(e) {
                         R.name !== U && u.A.editName(R, U)
                     },
                     onKeyDown: function(e) {
-                        e.key === S.dh.ENTER && (e.currentTarget.blur(), e.preventDefault())
+                        e.key === E.dh.ENTER && (e.currentTarget.blur(), e.preventDefault())
                     },
                     onChange: e => w(e.target.value)
                 }), function() {
@@ -141,9 +141,9 @@ function I(e) {
                         onClick: function() {
                             if (G) return;
                             let e = null != R.id ? h.A.getDetectableGame(R.id) : null;
-                            T.default.track(E.HAw.USER_SETTINGS_REPORT_INCORRECT_GAME_DETECTION, {
+                            T.default.track(S.HAw.USER_SETTINGS_REPORT_INCORRECT_GAME_DETECTION, {
                                 application_id: e?.id,
-                                game_name: (0, x.n1)(R) ? R.gameName : R.name
+                                game_name: (0, A.n1)(R) ? R.gameName : R.name
                             }), M(!0), (0, c.mMO)(async () => {
                                 let {
                                     default: t
@@ -153,7 +153,7 @@ function I(e) {
                                     detectedActivity: {
                                         name: R.name ?? "",
                                         application_id: e?.id ?? R.id ?? void 0,
-                                        type: E.$pd.PLAYING
+                                        type: S.$pd.PLAYING
                                     },
                                     onSubmitted: () => {}
                                 })

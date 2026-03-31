@@ -1,49 +1,49 @@
 /** chunk id: 54570 params = (module,exports,require) **/
-n.d(e, {
-    AU: () => r,
-    kC: () => l,
-    kP: () => a,
-    pr: () => s,
+i.d(t, {
+    AU: () => a,
+    kC: () => s,
+    kP: () => l,
+    pr: () => r,
     zU: () => o
 });
-var i = n(73153);
+var n = i(73153);
 
-function r(t, e, n, r, a) {
-    i.h.dispatch({
+function a(e, t, i, a, l) {
+    n.h.dispatch({
         type: "SPEAK_TEXT",
-        text: t,
-        interrupt: e,
-        maxLength: n,
-        onStart: r,
-        onEnd: a
+        text: e,
+        interrupt: t,
+        maxLength: i,
+        onStart: a,
+        onEnd: l
     })
 }
 
-function a(t, e) {
-    i.h.dispatch({
+function l(e, t) {
+    n.h.dispatch({
         type: "SPEAK_MESSAGE",
-        channel: t,
-        message: e
+        channel: e,
+        message: t
     })
 }
 
-function l(t, e) {
-    i.h.dispatch({
+function s(e, t) {
+    n.h.dispatch({
         type: "SPEAKING_MESSAGE",
-        channelId: t,
-        messageId: e
+        channelId: e,
+        messageId: t
     })
 }
 
-function s() {
-    i.h.dispatch({
+function r() {
+    n.h.dispatch({
         type: "STOP_SPEAKING"
     })
 }
 
-function o(t) {
-    i.h.dispatch({
+function o(e) {
+    n.h.dispatch({
         type: "SET_TTS_SPEECH_RATE",
-        speechRate: t
+        speechRate: e
     })
 }

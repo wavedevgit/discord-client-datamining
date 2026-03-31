@@ -3,13 +3,13 @@ n.d(t, {
     A: () => v
 });
 var i = n(627968),
-    a = n(64700),
-    l = n(503698),
-    s = n.n(l),
+    l = n(64700),
+    a = n(503698),
+    s = n.n(a),
     r = n(158954),
     o = n(311907),
-    c = n(915089),
-    d = n(961350),
+    d = n(915089),
+    c = n(961350),
     u = n(183555),
     g = n(735321),
     m = n(94343),
@@ -26,23 +26,23 @@ function E(e) {
     let {
         index: t,
         widget: n,
-        additionalManageWidgetMenuItems: l,
+        additionalManageWidgetMenuItems: a,
         children: r,
         getWidth: o
-    } = e, d = a.useRef(null), u = a.useRef(null), {
+    } = e, c = l.useRef(null), u = l.useRef(null), {
         registerManageWidgetButtonRef: m,
         manageFocusOnReorder: p
     } = (0, A.r)();
-    a.useLayoutEffect(() => {
+    l.useLayoutEffect(() => {
         let e = m(n.type);
-        return e(d.current), () => e(null)
+        return e(c.current), () => e(null)
     }, [m, n.type]);
-    let f = a.useMemo(() => n.id ?? (0, c.Ld)(), [n.id]),
+    let f = l.useMemo(() => n.id ?? (0, d.Ld)(), [n.id]),
         {
             isDragging: _,
             dragSourcePosition: E
         } = (0, x.gY)({
-            dragRef: d,
+            dragRef: c,
             dropRef: u,
             index: t,
             listType: "WIDGETS",
@@ -69,10 +69,10 @@ function E(e) {
             positionNumber: t + 1
         }),
         children: [(0, i.jsx)(h.A, {
-            buttonRef: d,
+            buttonRef: c,
             widget: n,
             className: j.vn,
-            additionalMenuItems: l
+            additionalMenuItems: a
         }), r]
     })
 }
@@ -81,7 +81,7 @@ function v(e) {
     let {
         userId: t,
         widget: n,
-        children: l,
+        children: a,
         disableInteraction: g,
         className: x,
         index: h,
@@ -91,7 +91,7 @@ function v(e) {
         headerActionButtons: T,
         headerClassName: b,
         additionalManageWidgetMenuItems: C
-    } = e, S = (0, c.GV)(), N = a.useRef(null), y = (0, o.bG)([d.default], () => d.default.getId() === t), R = (0, f.g)(), {
+    } = e, S = (0, d.GV)(), N = l.useRef(null), y = (0, o.bG)([c.default], () => c.default.getId() === t), R = (0, f.g)(), {
         trackUserProfileAction: O
     } = (0, u.NJ)(), k = (0, p.A)({
         widget: n,
@@ -112,7 +112,7 @@ function v(e) {
                 disableInteraction: g,
                 className: b
             }), (0, i.jsxs)(r.Fmo, {
-                children: [l, A]
+                children: [a, A]
             })]
         });
     return (0, i.jsx)("section", {

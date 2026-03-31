@@ -3,13 +3,13 @@ n.d(t, {
     A: () => p
 });
 var i = n(627968),
-    a = n(64700),
-    l = n(397927),
+    l = n(64700),
+    a = n(397927),
     s = n(566605),
     r = n(379848),
     o = n(183555),
-    c = n(357541),
-    d = n(814221),
+    d = n(357541),
+    c = n(814221),
     u = n(266713),
     g = n(985018),
     m = n(324679);
@@ -18,16 +18,16 @@ function p() {
     let {
         trackUserProfileAction: e,
         trackUserProfileEditAction: t
-    } = (0, o.NJ)(), p = a.useRef(!1), {
+    } = (0, o.NJ)(), p = l.useRef(!1), {
         suggestions: x,
         currentUser: f,
         isLoading: h
     } = (0, s.A)({
         location: "UserProfileModalV2ApplicationWidgetsEmptyState"
-    }), _ = x?.[0], A = a.useCallback(() => {
+    }), _ = x?.[0], A = l.useCallback(() => {
         t({
             action: "PRESS_ADD_WIDGET"
-        }), (0, l.mMO)(async () => {
+        }), (0, a.mMO)(async () => {
             let {
                 default: e
             } = await n.e("87591").then(n.bind(n, 333114));
@@ -39,24 +39,24 @@ function p() {
             stackingBehavior: "stack"
         })
     }, [t]);
-    if (a.useEffect(() => {
+    if (l.useEffect(() => {
             h || null == _ || p.current || (e({
                 action: "VIEW_APPLICATION_WIDGETS_EMPTY_STATE",
                 applicationId: _.application.id
             }), p.current = !0)
         }, [h, e, _]), h) return (0, i.jsx)("div", {
         className: m.Lq,
-        children: (0, i.jsx)(l.y$y, {})
+        children: (0, i.jsx)(a.y$y, {})
     });
     if (null == _) return (0, i.jsx)(u.A, {});
-    let I = (0, i.jsxs)(l.BJc, {
+    let I = (0, i.jsxs)(a.BJc, {
         gap: 4,
         className: m.wx,
-        children: [(0, i.jsx)(l.Heading, {
+        children: [(0, i.jsx)(a.Heading, {
             variant: "heading-md/medium",
             color: "text-strong",
             children: g.intl.string(g.t["oqalC+"])
-        }), (0, i.jsx)(l.Text, {
+        }), (0, i.jsx)(a.Text, {
             variant: "text-sm/normal",
             color: "text-subtle",
             children: g.intl.format(g.t.YnNFWa, {
@@ -72,26 +72,26 @@ function p() {
                 visibleContent: t,
                 markAsDismissed: n
             } = e;
-            return t === _.dismissibleContent ? (0, i.jsxs)(l.BJc, {
+            return t === _.dismissibleContent ? (0, i.jsxs)(a.BJc, {
                 gap: 16,
                 align: "center",
-                children: [(0, i.jsx)(l.hKd, {
+                children: [(0, i.jsx)(a.hKd, {
                     size: 32
                 }), I, (0, i.jsx)("div", {
                     className: m.Zj,
-                    children: (0, i.jsx)(c.A, {
+                    children: (0, i.jsx)(d.A, {
                         user: f,
                         application: _.application,
                         onDismiss: n
                     })
-                }), (0, i.jsx)(d.A, {})]
-            }) : (0, i.jsxs)(l.BJc, {
+                }), (0, i.jsx)(c.A, {})]
+            }) : (0, i.jsxs)(a.BJc, {
                 gap: 32,
                 align: "center",
-                children: [(0, i.jsx)(l.hKd, {
+                children: [(0, i.jsx)(a.hKd, {
                     size: 128
-                }), I, (0, i.jsx)(l.Button, {
-                    icon: l.j96,
+                }), I, (0, i.jsx)(a.Button, {
+                    icon: a.j96,
                     text: g.intl.string(g.t["lBG2s/"]),
                     size: "md",
                     color: "secondary",

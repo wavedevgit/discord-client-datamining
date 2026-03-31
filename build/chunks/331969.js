@@ -14,21 +14,21 @@ var i = n(627968),
     m = n(734057),
     g = n(808728),
     _ = n(71393),
-    A = n(967198),
-    x = n(926140),
+    x = n(967198),
+    A = n(926140),
     h = n(985018),
     p = n(563359);
 
 function T() {}
-let f = [x.rD.VOICE_CHANNEL];
+let f = [A.rD.VOICE_CHANNEL];
 
-function E(e) {
+function S(e) {
     e.setOptions({
         voiceChannelGuildFilter: null
     }), e.setLimit(1 / 0)
 }
 
-function S() {
+function E() {
     return (0, i.jsx)("div", {
         className: p.i1,
         children: (0, i.jsx)(r.Text, {
@@ -100,10 +100,10 @@ function C(e) {
         } = (0, d.A)({
             visible: !0,
             autocompleterResultTypes: f,
-            autocompleterBeforeCreateSearchContext: E
+            autocompleterBeforeCreateSearchContext: S
         }),
-        j = (t = "" !== N, n = (0, a.yK)([g.Ay, m.A, A.A], () => {
-            let e = A.A.getGuildId();
+        j = (t = "" !== N, n = (0, a.yK)([g.Ay, m.A, x.A], () => {
+            let e = x.A.getGuildId();
             if (t || null == e) return [];
             let n = [];
             for (let t of g.Ay.getVocalChannelIds(e)) {
@@ -137,7 +137,7 @@ function C(e) {
         P = (() => {
             if (null != j) return j[y]?.id;
             let e = I[y];
-            if (e?.type === x.rD.VOICE_CHANNEL) return e.record.id
+            if (e?.type === A.rD.VOICE_CHANNEL) return e.record.id
         })(),
         L = R > 0 || "" === N ? {
             innerId: b,
@@ -151,7 +151,7 @@ function C(e) {
                 } = e, n = (() => {
                     if (null != j) return j[t];
                     let e = I[t];
-                    if (e?.type === x.rD.VOICE_CHANNEL) return e.record
+                    if (e?.type === A.rD.VOICE_CHANNEL) return e.record
                 })();
                 if (null == n) return null;
                 let s = null != n.parent_id ? m.A.getChannel(n.parent_id) : void 0,
@@ -176,7 +176,7 @@ function C(e) {
             rowHeight: 34
         } : {
             sections: [1],
-            renderRow: () => (0, i.jsx)(S, {}),
+            renderRow: () => (0, i.jsx)(E, {}),
             sectionHeight: 0,
             rowHeight: 52
         };
@@ -199,7 +199,7 @@ function C(e) {
                         let e = (() => {
                             if (null != j) return j[y];
                             let e = I[y];
-                            if (e?.type === x.rD.VOICE_CHANNEL) return e.record
+                            if (e?.type === A.rD.VOICE_CHANNEL) return e.record
                         })();
                         null == e ? T(void 0) : T(e.id), c();
                         break

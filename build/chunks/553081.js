@@ -15,14 +15,14 @@ var i = n(627968),
     m = n(793574),
     g = n(688810),
     _ = n(726649),
-    A = n(611924),
-    x = n(961250),
+    x = n(611924),
+    A = n(961250),
     h = n(320118),
     p = n(622543),
     T = n(576622),
     f = n(166403),
-    E = n(954571),
-    S = n(881489),
+    S = n(954571),
+    E = n(881489),
     b = n(131168),
     C = n(482589),
     N = n(511484),
@@ -43,15 +43,15 @@ let w = "perk",
     V = e => {
         let {
             userId: t
-        } = e, n = (0, S.ds)(), l = (0, r.zy)();
+        } = e, n = (0, E.ds)(), l = (0, r.zy)();
         s.useEffect(() => {
             u.h.wait(async () => {
-                let e = [(0, x.Ay)()];
+                let e = [(0, A.Ay)()];
                 null != t && e.push((0, T.A)(t)), await Promise.all(e)
             })
         }, [t]), s.useEffect(() => {
             Q(!0)
-        }, []), (0, C.j)(), (0, A.P)(_.b);
+        }, []), (0, C.j)(), (0, x.P)(_.b);
         let V = s.useRef(null),
             B = s.useRef(null),
             F = (0, o.bG)([f.A], () => f.A.getPremiumTypeSubscription()),
@@ -124,7 +124,7 @@ let w = "perk",
                     }), (0, i.jsx)(d.L, {
                         innerRef: B,
                         onChange: e => {
-                            e && !ea && (E.default.track(G.HAw.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
+                            e && !ea && (S.default.track(G.HAw.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
                                 location_stack: el
                             }), er(!0))
                         },

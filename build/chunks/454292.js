@@ -14,14 +14,14 @@ var i = n(627968),
     m = n(400492),
     g = n(841329),
     _ = n(12901),
-    A = n(115063),
-    x = n(414736),
+    x = n(115063),
+    A = n(414736),
     h = n(927018),
     p = n(928830),
     T = n(3137),
     f = n(301656),
-    E = n(224964),
-    S = n(31408),
+    S = n(224964),
+    E = n(31408),
     b = n(985018),
     C = n(124528);
 let N = {
@@ -86,7 +86,7 @@ function L(e) {
         description: b.intl.string(b.t.KuYbWN),
         checked: t,
         onChange: e => {
-            e || (0, x._)(h.sn.DISABLE_POGGERMODE), e && (!n || l) ? (0, o.A)({
+            e || (0, A._)(h.sn.DISABLE_POGGERMODE), e && (!n || l) ? (0, o.A)({
                 title: l ? b.intl.string(b.t["FxT+p0"]) : b.intl.string(b.t.TAZ4F9),
                 subtitle: l ? b.intl.string(b.t.gmixrx) : b.intl.string(b.t.jN3t3K),
                 confirmText: b.intl.string(b.t.JFfins),
@@ -165,19 +165,19 @@ function D(e) {
         }), (0, i.jsx)(R, {
             disabled: o,
             locations: [{
-                location: S.k.CHAT_INPUT,
+                location: E.k.CHAT_INPUT,
                 title: b.intl.string(b.t.elTtyz),
                 description: b.intl.string(b.t.HtKfMi)
             }, {
-                location: S.k.REACTION,
+                location: E.k.REACTION,
                 title: b.intl.string(b.t.Ik4VIa),
                 description: b.intl.string(b.t.y4rqK0)
             }, {
-                location: S.k.MEMBER_USER,
+                location: E.k.MEMBER_USER,
                 title: b.intl.string(b.t.ZXBlAn),
                 description: b.intl.string(b.t["m9RD+c"])
             }, {
-                location: S.k.CALL_TILE,
+                location: E.k.CALL_TILE,
                 title: b.intl.string(b.t.V66giQ),
                 description: b.intl.string(b.t.fiHV7u)
             }],
@@ -281,22 +281,22 @@ function M(e) {
                     var t;
                     null != (t = {
                         shakeIntensity: e
-                    }).shakeIntensity && t.shakeIntensity > s && (0, x._)(h.sn.MORE), r(t, 1)
+                    }).shakeIntensity && t.shakeIntensity > s && (0, A._)(h.sn.MORE), r(t, 1)
                 },
                 onMarkerRender: e => e === I[I.length - 1] ? b.intl.string(b.t["4rbMWc"]) : `${100*e}%`
             })]
         }), (0, i.jsx)(R, {
             disabled: u,
             locations: [{
-                location: S.uD.CHAT_INPUT,
+                location: E.uD.CHAT_INPUT,
                 title: b.intl.string(b.t.vUcvPP),
                 description: b.intl.string(b.t.y00OrF)
             }, {
-                location: S.uD.VOICE_USER,
+                location: E.uD.VOICE_USER,
                 title: b.intl.string(b.t.TcRO54),
                 description: b.intl.string(b.t.YJCxVY)
             }, {
-                location: S.uD.MENTION,
+                location: E.uD.MENTION,
                 title: b.intl.string(b.t.oW4shO),
                 description: b.intl.string(b.t["mqfw/H"])
             }],
@@ -383,18 +383,18 @@ function V(e) {
     } = e, l = (0, a.cf)([T.A], () => T.A.getState()), [r, o] = s.useState({
         x: 0,
         y: 0
-    }), c = (0, E.A)(), u = (e, t) => {
+    }), c = (0, S.A)(), u = (e, t) => {
         var i, s, a, o, d, u, g, _;
-        if (e.enabled && !1 === l.enabled && (n(!0), (0, m.Ak)("poggermode_enabled"), (0, A.fO)({
+        if (e.enabled && !1 === l.enabled && (n(!0), (0, m.Ak)("poggermode_enabled"), (0, x.fO)({
                 duration: 2e3,
                 intensity: e.shakeIntensity ?? l.shakeIntensity
             })), (0, p.O9)(e), null == t) return;
-        let x = (i = l.confettiEnabled, s = e.confettiEnabled, a = l.enabled, o = e.enabled, (s ?? i) && (o ?? a));
-        0 === t && x && c.fire(r.x, r.y, {
+        let A = (i = l.confettiEnabled, s = e.confettiEnabled, a = l.enabled, o = e.enabled, (s ?? i) && (o ?? a));
+        0 === t && A && c.fire(r.x, r.y, {
             settings: e
         });
         let h = (d = l.screenshakeEnabled, u = e.screenshakeEnabled, g = l.enabled, _ = e.enabled, (u ?? d) && (_ ?? g));
-        1 === t && h && (0, A.fO)({
+        1 === t && h && (0, x.fO)({
             duration: 1e3,
             intensity: e.shakeIntensity ?? l.shakeIntensity
         })
@@ -437,7 +437,7 @@ function F() {
     }, [e]), s.useEffect(() => {
         (0, g._)(O[e])
     }, [e]), s.useEffect(() => {
-        Math.random() > .99 && (0, x._)(h.sn.VISITOR_100)
+        Math.random() > .99 && (0, A._)(h.sn.VISITOR_100)
     }, []), (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(u.A, {
             className: C.l3,

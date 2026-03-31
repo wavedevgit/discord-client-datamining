@@ -14,8 +14,8 @@ var i = n(627968),
     u = n(256415),
     h = n(531685),
     p = n(5463),
-    f = n(9302),
-    _ = n(328913),
+    _ = n(9302),
+    f = n(328913),
     A = n(131575),
     g = n(799808),
     m = n(407195),
@@ -44,7 +44,7 @@ let y = {
             dragStart: n,
             className: s
         } = e;
-        return (0, i.jsx)(_.A, {
+        return (0, i.jsx)(f.A, {
             dragStart: n,
             locked: t,
             className: s
@@ -102,7 +102,7 @@ class v extends s.PureComponent {
                 lastLayoutUpdate: r
             }
         } = this;
-        if (!(0, f.validResolution)(a)) return;
+        if (!(0, _.validResolution)(a)) return;
         let o = (0, p.NO)(n, a),
             u = (0, p.R9)(i, a);
         (0, l.uD)(t), (0, l.Ju)({
@@ -111,7 +111,7 @@ class v extends s.PureComponent {
             size: u
         });
         let h = e === d.P.MOVE,
-            _ = (0, p.Ly)(n, a.width, a.height, s.width, s.height);
+            f = (0, p.Ly)(n, a.width, a.height, s.width, s.height);
         this.setState({
             lastLayoutUpdate: {
                 was_resized: null != r && r.was_resized || !h,
@@ -121,8 +121,8 @@ class v extends s.PureComponent {
                 window_height: a.height,
                 widget_width: s.width,
                 widget_height: s.height,
-                widget_left: _.left,
-                widget_top: _.top
+                widget_left: f.left,
+                widget_top: f.top
             }
         })
     };
@@ -130,7 +130,7 @@ class v extends s.PureComponent {
         let {
             layoutSize: t
         } = this.props;
-        (0, f.validResolution)(t) && (0, l.uD)(e)
+        (0, _.validResolution)(t) && (0, l.uD)(e)
     };
     handleDragStart = () => {
         let {
@@ -185,8 +185,8 @@ class v extends s.PureComponent {
             zIndex: c,
             size: u,
             anchor: h,
-            minSize: f
-        } = e, _ = (0, p.fd)(u, n), A = (0, p.Nv)(h, n), {
+            minSize: _
+        } = e, f = (0, p.fd)(u, n), A = (0, p.Nv)(h, n), {
             resizeX: m,
             resizeY: x,
             dragAnywhere: E
@@ -199,13 +199,13 @@ class v extends s.PureComponent {
             minY: 0,
             maxX: n.width,
             maxY: n.height
-        }, S = this.renderWidget(e, A, _);
+        }, S = this.renderWidget(e, A, f);
         return null == S ? null : (0, i.jsx)(d.A, {
             id: r,
-            size: _,
+            size: f,
             anchor: A,
             container: v,
-            minSize: f,
+            minSize: _,
             hidden: !y,
             resizeX: m,
             resizeY: x,
@@ -242,7 +242,7 @@ function C(e, t) {
     }, e)
 }
 let I = a.Ay.connectStores([c.A, h.A], () => ({
-    layout: c.A.getLayout(f.OVERLAY_LAYOUT_ID) ?? void 0,
+    layout: c.A.getLayout(_.OVERLAY_LAYOUT_ID) ?? void 0,
     layoutSize: h.A.windowSize(),
     renderWidget: C
 }))(o.A)
