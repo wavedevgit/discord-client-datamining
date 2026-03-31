@@ -55,14 +55,14 @@ t.exports = function(t, e) {
     var w = t.props.keyBindingFn(e);
     if (null == w || "" === w) {
         if (r === a.SPACE && S && b(e)) {
-            var x = n.replaceText(o.getCurrentContent(), o.getSelection(), "\xa0");
-            t.update(i.push(o, x, "insert-characters"))
+            var k = n.replaceText(o.getCurrentContent(), o.getSelection(), "\xa0");
+            t.update(i.push(o, k, "insert-characters"))
         }
         return
     }
     if ("undo" === w) return void _(e, o, t.update);
     if (e.preventDefault(), !(t.props.handleKeyCommand && c(t.props.handleKeyCommand(w, o, e.timeStamp)))) {
-        var k = function(t, e, r) {
+        var x = function(t, e, r) {
             switch (t) {
                 case "redo":
                     return i.redo(e);
@@ -92,6 +92,6 @@ t.exports = function(t, e) {
                     return e
             }
         }(w, o, e);
-        k !== o && t.update(k)
+        x !== o && t.update(x)
     }
 }

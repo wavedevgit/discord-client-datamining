@@ -18,8 +18,8 @@ var r = n(627968),
     m = n(397274),
     p = n(189857),
     v = n(188180),
-    y = n(133457),
-    b = n(985018),
+    b = n(133457),
+    y = n(985018),
     g = n(107567);
 
 function x(e) {
@@ -32,7 +32,7 @@ function x(e) {
     } = e, S = f.A.useField("showNavigationMobile"), A = i.useRef(null), [N] = i.useState(t), {
         accessibleDirectory: C
     } = (0, h._)(), I = i.useMemo(() => (0, p.Z)(N, C), [N, C]), [j] = (0, d.kn)(I.allDismissibleContents);
-    (0, y.B)({
+    (0, b.B)({
         visibleContent: j,
         dismissibleBadges: I,
         accessibleDirectory: C
@@ -60,7 +60,7 @@ function x(e) {
                         onClick: n,
                         variant: "icon-only",
                         size: "sm",
-                        "aria-label": b.intl.string(b.t.cpT0Cq)
+                        "aria-label": y.intl.string(y.t.cpT0Cq)
                     })
                 }), (0, r.jsx)("div", {
                     children: T.map(e => (0, r.jsx)(E, {

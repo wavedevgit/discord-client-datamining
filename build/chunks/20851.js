@@ -1,25 +1,24 @@
 /** chunk id: 20851 params = (module,exports,require) **/
-"use strict";
-r.d(t, {
+n.d(t, {
     A: () => x
 });
-var n = r(627968),
-    i = r(64700),
-    s = r(503698),
-    a = r.n(s),
-    l = r(384231),
-    o = r(903369),
-    c = r(491182),
-    d = r(538355),
-    u = r(699352),
-    m = r(715628),
-    p = r(752636),
-    h = r(480972);
-let x = i.memo(function(e) {
+var r = n(627968),
+    a = n(64700),
+    i = n(503698),
+    s = n.n(i),
+    l = n(384231),
+    o = n(903369),
+    c = n(491182),
+    d = n(538355),
+    u = n(699352),
+    m = n(715628),
+    p = n(752636),
+    h = n(480972);
+let x = a.memo(function(e) {
     let {
         message: t,
-        channel: r,
-        compact: s,
+        channel: n,
+        compact: i,
         className: x,
         isGroupStart: f,
         hideSimpleEmbedContent: v = !0,
@@ -28,31 +27,31 @@ let x = i.memo(function(e) {
         preview: A,
         author: j
     } = e, C = _ ?? (0, o.U)(t), N = (0, l.S)((t.editedTimestamp ?? t.timestamp).valueOf()), {
-        content: b
+        content: I
     } = (0, d.A)(t, {
         hideSimpleEmbedContent: v,
         allowList: N,
         allowHeading: N,
         allowLinks: !0,
         previewLinkTarget: !0
-    }), I = i.useMemo(() => (0, p.A)({
+    }), b = a.useMemo(() => (0, p.A)({
         ...e,
-        channel: r,
+        channel: n,
         guildId: C
-    }), [e, r, C]);
-    return (0, n.jsx)(c.A, {
-        compact: s,
-        className: a()(x, {
+    }), [e, n, C]);
+    return (0, r.jsx)(c.A, {
+        compact: i,
+        className: s()(x, {
             [h.iU]: !0,
-            [h.HJ]: !s,
+            [h.HJ]: !i,
             [h._A]: f
         }),
-        childrenHeader: I,
-        childrenMessageContent: (0, m.A)(e, b),
-        childrenAccessories: null != r ? (0, u.J)({
+        childrenHeader: b,
+        childrenMessageContent: (0, m.A)(e, I),
+        childrenAccessories: null != n ? (0, u.J)({
             message: t,
-            channel: r,
-            compact: s
+            channel: n,
+            compact: i
         }, !1, !1) : null,
         disableInteraction: g,
         author: j,

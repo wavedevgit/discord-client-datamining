@@ -18,12 +18,9 @@ function c(e) {
         targetElementRef: u
     } = e, A = l.useCallback(() => {
         t(), (0, r.pX)(s.BVt.QUEST_HOME)
-    }, [t]), [h, _] = l.useState(!1);
+    }, [t]);
     return l.useEffect(() => {
-        let e = setTimeout(() => {
-            _(!0), n()
-        }, 1e3);
-        return () => clearTimeout(e)
+        n()
     }, [n]), (0, i.jsx)(a.AM, {
         actions: [{
             text: o.intl.string(o.t.facYnD),
@@ -41,7 +38,6 @@ function c(e) {
             src: d.A
         },
         onRequestClose: c,
-        shouldShow: h,
         position: "right",
         size: "lg",
         targetElementRef: u,

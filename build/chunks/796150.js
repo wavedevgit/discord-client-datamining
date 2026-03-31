@@ -18,8 +18,8 @@ var r = n(627968),
     m = n(780964),
     p = n(162396),
     v = n(960545),
-    y = n(841329),
-    b = n(12901),
+    b = n(841329),
+    y = n(12901),
     g = n(921854),
     x = n(985018),
     E = n(879797);
@@ -40,7 +40,7 @@ function N(e) {
     }, []), [E, N] = i.useState(!1);
     return (i.useLayoutEffect(() => {
         let e = () => {
-            null == h.default.getCurrentUser() && (N(!0), (0, b.default)())
+            null == h.default.getCurrentUser() && (N(!0), (0, y.default)())
         };
         return _.default.addChangeListener(e), () => {
             _.default.removeChangeListener(e), v.A.resetState(), c.A.resetState(), s.A.close()
@@ -51,7 +51,7 @@ function N(e) {
         emptyState: I,
         sidebarFooter: p.A,
         onViewChange: e => {
-            S.has(e) || (0, y._)(e);
+            S.has(e) || (0, b._)(e);
             let t = A.get(e);
             null != t && (0, o.x)({
                 type: a.ImpressionTypes.PANE,

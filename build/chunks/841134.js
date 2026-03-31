@@ -37,7 +37,7 @@ t.exports = function(t) {
     }, r.render = function() {
         for (var t = this.props, e = t.blockRenderMap, r = t.blockRendererFn, n = t.blockStyleFn, c = t.customStyleMap, l = t.customStyleFn, f = t.editorState, p = t.editorKey, h = t.textDirectionality, d = f.getCurrentContent(), g = f.getSelection(), y = f.mustForceSelection(), v = f.getDecorator(), m = u(f.getDirectionMap()), _ = d.getBlocksAsArray()[0], b = [], S = _; S;) {
             var w = S.getKey(),
-                x = {
+                k = {
                     blockRenderMap: e,
                     blockRendererFn: r,
                     blockStyleFn: n,
@@ -53,12 +53,12 @@ t.exports = function(t) {
                     direction: h || m.get(w),
                     tree: f.getBlockTree(w)
                 },
-                k = (e.get(S.getType()) || e.get("unstyled")).wrapper;
+                x = (e.get(S.getType()) || e.get("unstyled")).wrapper;
             b.push({
                 block: s.createElement(o, i({
                     key: w
-                }, x)),
-                wrapperTemplate: k,
+                }, k)),
+                wrapperTemplate: x,
                 key: w,
                 offsetKey: a.encode(w, 0, 0)
             });

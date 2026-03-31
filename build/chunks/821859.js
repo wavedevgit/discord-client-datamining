@@ -41,9 +41,9 @@ function f(e) {
         onScrubBack: j,
         onScrubForward: P,
         indicatorConfig: D,
-        "data-testid": L
+        "data-testid": M
     } = e, {
-        contRef: M,
+        contRef: L,
         boundingRect: k,
         handleMouseEnter: I,
         handleMouseLeave: B,
@@ -117,8 +117,8 @@ function f(e) {
         ee = l.useCallback(e => null != e && null != J && J.some(t => e >= t.leftPx - t.gapPx - (D?.animatingIndex === t.index ? q : 0) && e <= t.rightPx + t.gapPx + (D?.animatingIndex === t.index ? q : 0)), [J, D?.animatingIndex, q]);
     return (0, r.jsx)("div", {
         className: p.jD,
-        ref: M,
-        "data-testid": L,
+        ref: L,
+        "data-testid": M,
         style: {
             "--custom-timeline-height": `${null!=T&&G?T:A}px`,
             "--custom-initial-timeline-height": `${R}px`

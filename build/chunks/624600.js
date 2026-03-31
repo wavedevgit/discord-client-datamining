@@ -30,7 +30,7 @@ let u = e => {
         rightIndicatorIndex: S
     } = t, C = b - g, A = u.to(e => Math.min(Math.max(0, e - g), C)), N = null != n && null != c && y === n, T = !N && null != n && null != c && S === n, R = N || T, w = T ? (0, s.to)([A, c], (e, t) => `translateX(-${Math.max(0,C-t-e)}px)`) : A.to(e => `translateX(-${C-e}px)`), j = R ? (0, s.to)([A, c], (e, t) => N ? Math.max(0, e - t) : Math.min(e, C - t)) : A, P = Math.max(0, (p ?? 0) - g), D = {
         borderRadius: `${f}px`
-    }, L = l.useMemo(() => m?.map(e => ({
+    }, M = l.useMemo(() => m?.map(e => ({
         startPx: e.start * d,
         endPx: (e.start + e.size) * d
     })).filter(e => e.endPx >= g && e.startPx <= b), [m, g, b, d]);
@@ -51,7 +51,7 @@ let u = e => {
                 style: {
                     left: N ? c.to(e => -(g + e)) : -g
                 },
-                children: [L?.map(e => (0, r.jsx)("div", {
+                children: [M?.map(e => (0, r.jsx)("div", {
                     className: o.r,
                     style: {
                         width: `${e.endPx-e.startPx}px`,

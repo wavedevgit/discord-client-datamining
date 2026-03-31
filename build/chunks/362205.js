@@ -18,8 +18,8 @@ var r = n(627968),
     m = n(253932),
     p = n(894858),
     v = n(272053),
-    y = n(189857),
-    b = n(674085),
+    b = n(189857),
+    y = n(674085),
     g = n(188180),
     x = n(890690),
     E = n(480270);
@@ -43,7 +43,7 @@ function S(e) {
                 [E.vu]: i
             }),
             ...e,
-            children: [f, null != a && !i && (0, r.jsx)(b.A, {
+            children: [f, null != a && !i && (0, r.jsx)(y.A, {
                 badge: a
             })]
         }, u)
@@ -74,7 +74,7 @@ function A(e) {
     let o = i.useMemo(() => Math.max(t.findIndex(e => e.key === l), 0), [t, l]),
         {
             thumbRef: d,
-            trackRef: b,
+            trackRef: y,
             thumbAnchorRef: A,
             springs: N
         } = function(e) {
@@ -128,7 +128,7 @@ function A(e) {
         children: [(0, r.jsx)("div", {
             className: E.u4,
             "aria-hidden": "true",
-            ref: b,
+            ref: y,
             children: (0, r.jsx)(c.animated.div, {
                 className: E.FF,
                 style: N,
@@ -139,7 +139,7 @@ function A(e) {
             "aria-hidden": "true",
             ref: A
         }), t.map(e => {
-            let t = (0, y.H)(e.key, n, a);
+            let t = (0, b.H)(e.key, n, a);
             return (0, r.jsx)(S, {
                 onClick: () => {
                     var t;

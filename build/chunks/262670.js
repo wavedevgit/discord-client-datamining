@@ -60,9 +60,9 @@ t.exports = {
         }), w = n({}, w, {
             prevSibling: S.key
         }));
-        var x = [new g(S), new g(w)],
-            k = i.createFromArray(x),
-            C = u.replaceWithFragment(_, m, k),
+        var k = [new g(S), new g(w)],
+            x = i.createFromArray(k),
+            C = u.replaceWithFragment(_, m, x),
             E = C.merge({
                 selectionBefore: s,
                 selectionAfter: C.getSelectionAfter().set("hasFocus", !0)

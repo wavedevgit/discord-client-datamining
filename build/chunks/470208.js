@@ -37,8 +37,8 @@ function S(e) {
         downloadContentType: j,
         autoFocus: P = !1,
         keyDownHandlerRef: D,
-        volume: L,
-        muted: M,
+        volume: M,
+        muted: L,
         transcriptEnabled: k,
         captionEnabled: I,
         fullScreenEnabled: B,
@@ -51,7 +51,7 @@ function S(e) {
         handleControlBarPendingInteraction: $,
         onVolumeChange: F,
         onMutedChange: Y
-    } = e, z = (0, o.bG)([p.A], () => p.A.useReducedMotion), X = (0, o.bG)([p.A], () => p.A.keyboardModeEnabled), [W, V] = l.useState(M ? 0 : L), [H, J] = l.useState(!1), [Z, q] = l.useState(!1), [{
+    } = e, z = (0, o.bG)([p.A], () => p.A.useReducedMotion), X = (0, o.bG)([p.A], () => p.A.keyboardModeEnabled), [W, V] = l.useState(L ? 0 : M), [H, J] = l.useState(!1), [Z, q] = l.useState(!1), [{
         volumeAnimSpring: ee
     }, et] = (0, m.zhh)(() => ({
         from: {
@@ -72,8 +72,8 @@ function S(e) {
     }, [w, j]), el = l.useCallback(e => {
         null != t.current && (e !== t.current.volume && (t.current.volume = e), e !== W && V(e))
     }, [t, W]), ea = l.useCallback(() => {
-        null != t.current && (0 === W ? (el(L), Y(!1), F(L)) : (F(W), el(0), Y(!0)))
-    }, [t, W, el, L, Y, F]), ei = () => {
+        null != t.current && (0 === W ? (el(M), Y(!1), F(M)) : (F(W), el(0), Y(!0)))
+    }, [t, W, el, M, Y, F]), ei = () => {
         J(!0)
     }, es = () => {
         J(!1)
@@ -200,7 +200,7 @@ function S(e) {
                         minValue: 0,
                         maxValue: 1,
                         onValueChange: e => {
-                            el(e), F(e), Z && (q(!1), $(!1)), M && e > 0 && Y(!1)
+                            el(e), F(e), Z && (q(!1), $(!1)), L && e > 0 && Y(!1)
                         },
                         asValueChanges: e => {
                             el(e), Z || (q(!0), $(!0))

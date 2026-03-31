@@ -44,31 +44,33 @@ let L = s.memo(function(e) {
     }, [t.id]);
     let w = (0, r.bG)([p.A], () => p.A.getAnnouncement(t.id)),
         k = w?.state === "success" ? w.announcement : void 0,
-        [V, B] = (0, A.x_)(o.M.GAME_SHOP_NEW_BADGE, t.id, k?.id ?? ""),
+        [V, B] = (0, A.x_)(o.M.GAME_SHOP_NEW_BADGE, t.id, k?.id ?? "", void 0, !0),
         H = V === o.M.GAME_SHOP_NEW_BADGE && null != k,
-        F = null == w || "loading" === w.state || H || !t.features.has(v.GuildFeatures.SOCIAL_LAYER_STOREFRONT) || !P,
-        [K, W] = (0, A.RF)(F ? null : o.M.SLAYER_STOREFRONT_ORBS_REWARDS_ANNOUNCEMENT, 1),
-        Y = K === o.M.SLAYER_STOREFRONT_ORBS_REWARDS_ANNOUNCEMENT,
-        z = H || Y,
-        q = s.useMemo(() => H ? B : W, [H, B, W]);
+        [F, K] = (0, A.x_)(o.M.GAME_SHOP_NEW_DROP_POPOVER, t.id, k?.id ?? ""),
+        W = F === o.M.GAME_SHOP_NEW_DROP_POPOVER && null != k,
+        Y = null == w || "loading" === w.state || W || !t.features.has(v.GuildFeatures.SOCIAL_LAYER_STOREFRONT) || !P,
+        [z, q] = (0, A.RF)(Y ? null : o.M.SLAYER_STOREFRONT_ORBS_REWARDS_ANNOUNCEMENT, 1),
+        X = z === o.M.SLAYER_STOREFRONT_ORBS_REWARDS_ANNOUNCEMENT,
+        Q = W || X,
+        J = s.useMemo(() => W ? K : q, [W, K, q]);
     s.useEffect(() => {
-        l && z && q(y.i.INDIRECT_ACTION)
-    }, [q, l, z]);
-    let X = s.useCallback(() => {
-            q(y.i.TAKE_ACTION);
+        l && (H && B(y.i.INDIRECT_ACTION), Q && J(y.i.INDIRECT_ACTION))
+    }, [B, J, l, H, Q]);
+    let $ = s.useCallback(() => {
+            B(y.i.TAKE_ACTION), J(y.i.TAKE_ACTION);
             let e = p.A.getStorefrontState(t.id)?.activePage ?? 0;
             (0, _.pX)(v.BVt.CHANNELS_GAME_SHOP(t.id, e))
-        }, [t.id, q]),
-        Q = s.useCallback(() => {
+        }, [t.id, B, J]),
+        Z = s.useCallback(() => {
             (0, x.X)({
                 guildId: t.id,
-                forceFetch: H
+                forceFetch: W
             })
-        }, [t.id, H]),
-        J = s.useCallback(() => {
-            q(y.i.USER_DISMISS)
-        }, [q]),
-        $ = s.useCallback(e => {
+        }, [t.id, W]),
+        ee = s.useCallback(() => {
+            J(y.i.USER_DISMISS)
+        }, [J]),
+        et = s.useCallback(e => {
             null != t && (0, h.L3)(e, async () => {
                 let {
                     default: e
@@ -79,10 +81,10 @@ let L = s.memo(function(e) {
                 })
             })
         }, [t]),
-        Z = s.useCallback(() => {
+        en = s.useCallback(() => {
             L.current?.onMouseEnter(null, 500)
         }, [L]),
-        ee = s.useCallback((e, n, s, r) => (0, i.jsx)(T.G, {
+        ei = s.useCallback((e, n, s, r) => (0, i.jsx)(T.G, {
             innerClassName: e,
             ref: M,
             id: `game-shop-${t.id}`,
@@ -99,17 +101,17 @@ let L = s.memo(function(e) {
                 children: j.intl.string(j.t.vyaWs7)
             }),
             selected: l,
-            onMouseDown: Q,
-            onClick: X,
-            onContextMenu: $,
+            onMouseDown: Z,
+            onClick: $,
+            onContextMenu: et,
             trailing: (0, i.jsxs)(i.Fragment, {
                 children: [H && (0, i.jsx)(u.LpS, {
                     text: j.intl.string(j.t.y2b7CA),
                     color: c.A.colors.BACKGROUND_BRAND.css
                 }), r]
             })
-        }), [t.id, l, Q, X, $, H]),
-        et = s.useMemo(() => {
+        }), [t.id, l, Z, $, et, H]),
+        es = s.useMemo(() => {
             if (null == k) return;
             let e = null != k.assetId ? b.A.toURLSafe((0, S.YE)(k.applicationId, k.assetId, 128, "webp")) : void 0,
                 t = null != k.backgroundImageAssetId ? b.A.toURLSafe((0, S.YE)(k.applicationId, k.backgroundImageAssetId, 128, "webp")) : void 0;
@@ -118,36 +120,36 @@ let L = s.memo(function(e) {
                 backgroundImageUrl: t
             }
         }, [k]),
-        en = s.useCallback(() => {
-            if (H) {
+        el = s.useCallback(() => {
+            if (W) {
                 let e = P ? j.intl.string(j.t["z/QEIP"]) : j.intl.formatToPlainString(j.t["9J4h1a"], {
                     applicationName: k.applicationName
                 });
                 return (0, i.jsx)(C.A, {
-                    onActionClick: X,
-                    onActionMouseDown: Q,
-                    onRender: Z,
-                    onRequestClose: J,
+                    onActionClick: $,
+                    onActionMouseDown: Z,
+                    onRender: en,
+                    onRequestClose: ee,
                     targetElementRef: M,
-                    skuImageDetails: et,
+                    skuImageDetails: es,
                     title: j.intl.string(j.t["7PvvS9"]),
                     body: e,
                     overlayImageUrl: P ? O.A : void 0
                 })
             }
-            return Y ? (0, i.jsx)(E.A, {
-                onActionClick: X,
-                onActionMouseDown: Q,
-                onRender: Z,
-                onRequestClose: J,
+            return X ? (0, i.jsx)(E.A, {
+                onActionClick: $,
+                onActionMouseDown: Z,
+                onRender: en,
+                onRequestClose: ee,
                 targetElementRef: M,
                 applicationName: j.intl.string(j.t.Uu8hke)
             }) : null
-        }, [H, P, k, X, Q, Z, J, et, Y]);
+        }, [W, P, k, $, Z, en, ee, es, X]);
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(I.A, {
             ref: L,
-            children: ee
-        }), !D && !G && !U && en()]
+            children: ei
+        }), !D && !G && !U && el()]
     })
 })

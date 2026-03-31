@@ -20,8 +20,8 @@ var n = r(262670),
     b = r(225758),
     S = r(124377),
     w = r(205968),
-    x = r(279998),
-    k = r(673776),
+    k = r(279998),
+    x = r(673776),
     C = r(985247);
 t.exports = {
     Editor: f,
@@ -45,7 +45,7 @@ t.exports = {
     convertFromHTML: r(430031),
     convertFromRaw: w,
     convertToRaw: S,
-    genKey: x,
-    getDefaultKeyBinding: k,
+    genKey: k,
+    getDefaultKeyBinding: x,
     getVisibleSelectionRect: C
 }

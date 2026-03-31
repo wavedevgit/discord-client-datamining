@@ -69,18 +69,7 @@ function y(e) {
         }),
         _ = (0, a.Lt)(t.flags ?? 0, E.sbO.IS_CLIP),
         h = (0, l.bG)([A.A], () => A.A.getBasicChannel(e.message.channel_id)?.guild_id),
-        g = r.useCallback(() => _ ? n ? (0, i.jsx)(u.A, {
-            createdAt: null != t.clip_created_at ? Date.parse(t.clip_created_at) : void 0,
-            participantIds: t.clip_participants?.map(e => {
-                let {
-                    id: t
-                } = e;
-                return t
-            }) ?? [],
-            applicationId: t.application?.id,
-            title: t.title,
-            guildId: h
-        }) : (0, i.jsx)(o.m, {
+        g = r.useCallback(() => !_ || n ? null : (0, i.jsx)(o.m, {
             text: b.intl.string(b.t["/fgfWh"]),
             children: (0, i.jsxs)("div", {
                 className: v.M,
@@ -93,17 +82,37 @@ function y(e) {
                     children: b.intl.string(b.t.oA4afG)
                 })]
             })
-        }) : null, [t, _, n, h]),
-        x = f.A.toURLSafe(t.proxy_url);
-    if (null == x) return null;
-    if (x.searchParams.append("format", "webp"), _ && n) {
+        }), [_, n]),
+        x = r.useCallback(e => {
+            let {
+                playerState: r,
+                isControlBarExpanded: a
+            } = e;
+            return _ && n ? (0, i.jsx)(u.A, {
+                createdAt: null != t.clip_created_at ? Date.parse(t.clip_created_at) : void 0,
+                participantIds: t.clip_participants?.map(e => {
+                    let {
+                        id: t
+                    } = e;
+                    return t
+                }) ?? [],
+                applicationId: t.application?.id,
+                title: t.title,
+                guildId: h,
+                playerState: r,
+                isControlBarExpanded: a
+            }) : null
+        }, [t, _, n, h]),
+        T = f.A.toURLSafe(t.proxy_url);
+    if (null == T) return null;
+    if (T.searchParams.append("format", "webp"), _ && n) {
         let {
             width: n,
             height: r,
             naturalWidth: a,
             naturalHeight: l
         } = e, s = (0, m.AE)({
-            src: x.toString(),
+            src: T.toString(),
             width: n,
             height: r
         });
@@ -121,7 +130,7 @@ function y(e) {
                 posterPlaceholderVersion: t.placeholder_version,
                 active: !1,
                 orientation: a >= l ? "landscape" : "portrait",
-                renderOverlay: g,
+                renderPersistentOverlay: x,
                 targetTimeSec: 1 / 0,
                 parentTransitionState: null,
                 onOptimisticProgressUpdate: () => {},
@@ -132,7 +141,7 @@ function y(e) {
     return (0, I.$o)({
         ...e,
         alt: t.description,
-        poster: x.toString(),
+        poster: T.toString(),
         fileSize: t.size,
         fileName: (0, C.A)(t),
         src: t.url,

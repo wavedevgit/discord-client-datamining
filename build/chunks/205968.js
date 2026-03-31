@@ -61,12 +61,12 @@ var c = r(225758),
             })
         })))
     },
-    x = function(t) {
+    k = function(t) {
         return n({}, t, {
             key: t.key || h()
         })
     },
-    k = function(t, e, r) {
+    x = function(t, e, r) {
         var i = e.map(function(t) {
             return n({}, t, {
                 parentRef: r
@@ -79,9 +79,9 @@ var c = r(225758),
                 return Array.isArray(t.children) && t.children.length > 0
             }),
             s = v && !a ? u.fromRawStateToRawTreeState(t).blocks : t.blocks;
-        return v ? s.map(x).reduce(function(t, r, i) {
+        return v ? s.map(k).reduce(function(t, r, i) {
             Array.isArray(r.children) || y(!1);
-            var a = r.children.map(x),
+            var a = r.children.map(k),
                 u = new o(n({}, S(r, e), {
                     prevSibling: 0 === i ? null : s[i - 1].key,
                     nextSibling: i === s.length - 1 ? null : s[i + 1].key,
@@ -90,7 +90,7 @@ var c = r(225758),
                     }))
                 }));
             t = t.set(u.getKey(), u);
-            for (var c = k([], a, u); c.length > 0;) {
+            for (var c = x([], a, u); c.length > 0;) {
                 var l = c.pop(),
                     f = l.parentRef,
                     p = f.getChildKeys(),
@@ -100,7 +100,7 @@ var c = r(225758),
                     d || y(!1);
                     break
                 }
-                var g = l.children.map(x),
+                var g = l.children.map(k),
                     v = new o(n({}, S(l, e), {
                         parent: f.getKey(),
                         children: m(g.map(function(t) {
@@ -109,7 +109,7 @@ var c = r(225758),
                         prevSibling: 0 === h ? null : p.get(h - 1),
                         nextSibling: h === p.size - 1 ? null : p.get(h + 1)
                     }));
-                t = t.set(v.getKey(), v), c = k(c, g, v)
+                t = t.set(v.getKey(), v), c = x(c, g, v)
             }
             return t
         }, b()) : (r = a ? u.fromRawTreeStateToRawState(t).blocks : s, b(r.map(function(t) {

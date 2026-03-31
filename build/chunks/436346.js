@@ -64,11 +64,11 @@ t.exports = function(t, e) {
         S = [];
     if (b) {
         var w = _.getChildKeys(),
-            x = u(y, h);
-        _.getNextSiblingKey() && (S = S.concat(x)), w.isEmpty() || (S = S.concat(x.concat([y]))), S = S.concat(u(i(_, h), h))
+            k = u(y, h);
+        _.getNextSiblingKey() && (S = S.concat(k)), w.isEmpty() || (S = S.concat(k.concat([y]))), S = S.concat(u(i(_, h), h))
     }
     o = m === _ ? p(m.getCharacterList(), g, v) : m.getCharacterList().slice(0, g).concat(_.getCharacterList().slice(v));
-    var k = m.merge({
+    var x = m.merge({
             text: m.getText().slice(0, g) + _.getText().slice(v),
             characterList: o
         }),
@@ -83,7 +83,7 @@ t.exports = function(t, e) {
         }).concat(a([
             [y, null]
         ])).map(function(t, e) {
-            return e === d ? k : null
+            return e === d ? x : null
         }),
         E = h.merge(C).filter(function(t) {
             return !!t

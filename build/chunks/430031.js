@@ -39,8 +39,8 @@ var o, a = r(387739),
     b = r(154745),
     S = r(882586),
     w = r(537578),
-    x = r(609395),
-    k = g("draft_tree_data_support"),
+    k = r(609395),
+    x = g("draft_tree_data_support"),
     C = RegExp("\r", "g"),
     E = RegExp("\n", "g"),
     O = RegExp("^\n", "g"),
@@ -102,7 +102,7 @@ var o, a = r(387739),
             var e;
             return this.contentBlocks = [], this.currentDepth = 0, (e = this.blockConfigs).push.apply(e, this._toBlockConfigs([t], _())), this._trimCurrentText(), "" !== this.currentText && this.blockConfigs.push(this._makeBlockConfig()), this
         }, e.getContentBlocks = function() {
-            return 0 === this.contentBlocks.length && (k ? this._toContentBlocks(this.blockConfigs) : this._toFlatContentBlocks(this.blockConfigs)), {
+            return 0 === this.contentBlocks.length && (x ? this._toContentBlocks(this.blockConfigs) : this._toFlatContentBlocks(this.blockConfigs)), {
                 contentBlocks: this.contentBlocks,
                 entityMap: this.entityMap
             }
@@ -137,7 +137,7 @@ var o, a = r(387739),
                     this._trimCurrentText(), "" !== this.currentText && r.push(this._makeBlockConfig());
                     var c = this.currentDepth,
                         l = this.wrapper;
-                    this.wrapper = "pre" === o ? "pre" : this.wrapper, "string" != typeof u && (u = this.disambiguate(o, this.wrapper) || u[0] || "unstyled"), !k && w(i) && ("unordered-list-item" === u || "ordered-list-item" === u) && (this.currentDepth = F(i, this.currentDepth));
+                    this.wrapper = "pre" === o ? "pre" : this.wrapper, "string" != typeof u && (u = this.disambiguate(o, this.wrapper) || u[0] || "unstyled"), !x && w(i) && ("unordered-list-item" === u || "ordered-list-item" === u) && (this.currentDepth = F(i, this.currentDepth));
                     var f = h(),
                         p = this._toBlockConfigs(Array.from(i.childNodes), e);
                     this._trimCurrentText(), r.push(this._makeBlockConfig({
@@ -155,7 +155,7 @@ var o, a = r(387739),
                     this._addBreakNode(i, e);
                     continue
                 }
-                if (x(i) && i.attributes.getNamedItem("src") && i.attributes.getNamedItem("src").value) {
+                if (k(i) && i.attributes.getNamedItem("src") && i.attributes.getNamedItem("src").value) {
                     this._addImgNode(i, e);
                     continue
                 }
@@ -190,7 +190,7 @@ var o, a = r(387739),
         }, e._addBreakNode = function(t, e) {
             S(t) && this._appendText("\n", e)
         }, e._addImgNode = function(t, e) {
-            if (x(t)) {
+            if (k(t)) {
                 var r = {};
                 B.forEach(function(e) {
                     var n = t.getAttribute(e);

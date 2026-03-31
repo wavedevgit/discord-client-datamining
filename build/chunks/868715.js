@@ -96,7 +96,7 @@ var m = function(t, e) {
             customEditable: r.editable
         } : {}
     },
-    x = function(t, e, r, n, i, a) {
+    k = function(t, e, r, n, i, a) {
         var s = {
                 "data-block": !0,
                 "data-editor": e,
@@ -155,7 +155,7 @@ t.exports = function(t) {
             g = r.editorState,
             y = r.customStyleFn,
             v = r.customStyleMap,
-            k = r.direction,
+            x = r.direction,
             C = r.forceSelection,
             E = r.selection,
             O = r.tree,
@@ -167,15 +167,15 @@ t.exports = function(t) {
                 y = h.CustomComponent || e,
                 v = S(s, a),
                 m = v.Element,
-                k = v.wrapperTemplate,
-                C = x(s, d, i, f, h, null),
+                x = v.wrapperTemplate,
+                C = k(s, d, i, f, h, null),
                 E = o({}, t.props, {
                     tree: g.getBlockTree(n),
                     blockProps: h.customProps,
                     offsetKey: i,
                     block: s
                 });
-            return r.push(c.createElement(m, C, c.createElement(y, E))), !k || _(s, p) || b(k, m, r), r
+            return r.push(c.createElement(m, C, c.createElement(y, E))), !x || _(s, p) || b(x, m, r), r
         }, []));
         var K = n.getKey(),
             T = u.encode(K, 0, 0),
@@ -193,7 +193,7 @@ t.exports = function(t) {
                 customStyleFn: y,
                 customStyleMap: v,
                 decorator: h,
-                direction: k,
+                direction: x,
                 forceSelection: C,
                 hasSelection: m(E, K),
                 selection: E,
@@ -201,7 +201,7 @@ t.exports = function(t) {
             });
         if (n.getParentKey()) return I;
         var B = S(n, a).Element,
-            L = x(n, d, T, f, M, this.wrapperRef);
+            L = k(n, d, T, f, M, this.wrapperRef);
         return c.createElement(B, L, I)
     }, e
 }(c.Component)

@@ -1,30 +1,29 @@
 /** chunk id: 709772 params = (module,exports,require) **/
-"use strict";
-r.d(t, {
-    a: () => l
+a.d(t, {
+    a: () => i
 });
-var n = r(627968);
-r(64700);
-var a = r(342393),
-    s = r(71532),
-    i = r(714126);
-let l = e => {
+var _ = a(627968);
+a(64700);
+var n = a(342393),
+    o = a(71532),
+    r = a(714126);
+let i = e => {
     let {
         errorLabel: t,
-        children: r,
-        elementOptions: l
-    } = e, o = Date.now();
-    return (0, n.jsx)(i.W, {
+        children: a,
+        elementOptions: i
+    } = e, s = Date.now();
+    return (0, _.jsx)(r.W, {
         label: t,
-        children: (0, n.jsx)(a.Elements, {
-            stripe: (0, s.Cv)(),
+        children: (0, _.jsx)(n.Elements, {
+            stripe: (0, o.Cv)(),
             options: {
                 mode: "setup",
                 currency: "usd",
                 setup_future_usage: "off_session",
-                ...l
+                ...i
             },
-            children: r
+            children: a
         })
-    }, o)
+    }, s)
 }

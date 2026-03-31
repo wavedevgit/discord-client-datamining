@@ -1,82 +1,81 @@
 /** chunk id: 953756 params = (module,exports,require) **/
-"use strict";
-r.d(t, {
-    Hq: () => o,
-    O7: () => a,
-    zn: () => c
+n.d(t, {
+    Hq: () => _,
+    O7: () => o,
+    zn: () => s
 });
-var n = r(627968),
-    i = r(64700);
-let s = i.createContext(null),
-    a = {
+var r = n(627968),
+    i = n(64700);
+let a = i.createContext(null),
+    o = {
         Root(e) {
             let {
                 containerInnerWidth: t,
-                children: r
-            } = e, a = i.useMemo(() => ({
+                children: n
+            } = e, o = i.useMemo(() => ({
                 isParentWidthLimited: !0,
                 parentContainerInnerWidth: t
             }), [t]);
-            return (0, n.jsx)(s.Provider, {
-                value: a,
-                children: r
+            return (0, r.jsx)(a.Provider, {
+                value: o,
+                children: n
             })
         },
         NestedContainer(e) {
             let {
                 containerOuterWidth: t,
-                containerInnerWidth: r,
-                children: a
+                containerInnerWidth: n,
+                children: o
             } = e, {
-                isParentWidthLimited: o,
-                parentContainerInnerWidth: c
-            } = l(), d = o && c === t, u = i.useMemo(() => ({
-                isParentWidthLimited: d,
-                parentContainerInnerWidth: r
-            }), [d, r]);
-            return (0, n.jsx)(s.Provider, {
-                value: u,
-                children: a
+                isParentWidthLimited: _,
+                parentContainerInnerWidth: s
+            } = l(), c = _ && s === t, d = i.useMemo(() => ({
+                isParentWidthLimited: c,
+                parentContainerInnerWidth: n
+            }), [c, n]);
+            return (0, r.jsx)(a.Provider, {
+                value: d,
+                children: o
             })
         },
         AutoMeasuredNestedContainer(e) {
             let {
                 children: t
-            } = e, [r, i, s] = c(!0);
-            return (0, n.jsx)(a.NestedContainer, {
+            } = e, [n, i, a] = s(!0);
+            return (0, r.jsx)(o.NestedContainer, {
                 containerOuterWidth: i,
-                containerInnerWidth: s,
-                children: t(r)
+                containerInnerWidth: a,
+                children: t(n)
             })
         }
     };
 
 function l() {
-    let e = i.useContext(s);
+    let e = i.useContext(a);
     if (null == e) throw Error("Cannot use the ComponentLayoutLimitContext system when not within the context");
     return e
 }
 
-function o(e) {
+function _(e) {
     let {
         isParentWidthLimited: t,
-        parentContainerInnerWidth: r
+        parentContainerInnerWidth: n
     } = l();
-    return t && r === e
+    return t && n === e
 }
 
-function c() {
+function s() {
     let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0],
         t = i.useRef(null),
-        [r, n] = i.useState(0),
-        [s, a] = i.useState(0);
+        [n, r] = i.useState(0),
+        [a, o] = i.useState(0);
     return i.useLayoutEffect(() => {
         if (null == t.current) return;
-        let r = new ResizeObserver(() => {
-            let r = t.current.getBoundingClientRect().width,
+        let n = new ResizeObserver(() => {
+            let n = t.current.getBoundingClientRect().width,
                 i = getComputedStyle(t.current);
-            n(r + (parseFloat(i.marginLeft) + parseFloat(i.marginRight))), e && a(r - (parseFloat(i.paddingLeft) + parseFloat(i.paddingRight) + parseFloat(i.borderLeftWidth) + parseFloat(i.borderRightWidth)))
+            r(n + (parseFloat(i.marginLeft) + parseFloat(i.marginRight))), e && o(n - (parseFloat(i.paddingLeft) + parseFloat(i.paddingRight) + parseFloat(i.borderLeftWidth) + parseFloat(i.borderRightWidth)))
         });
-        return r.observe(t.current), () => r.disconnect()
-    }, [e]), [t, r, s]
+        return n.observe(t.current), () => n.disconnect()
+    }, [e]), [t, n, a]
 }

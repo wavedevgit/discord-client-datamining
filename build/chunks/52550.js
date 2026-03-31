@@ -56,8 +56,8 @@ var c = r(611668),
     b = r(251577),
     S = r(448567),
     w = r(573750),
-    x = r(550835),
-    k = r(279998),
+    k = r(550835),
+    x = r(279998),
     C = r(673776),
     E = r(423856),
     O = r(661551),
@@ -137,7 +137,7 @@ var c = r(611668),
                 r._dragCount++
             }), s(a(r), "onDragLeave", function() {
                 r._dragCount--, 0 === r._dragCount && r.exitCurrentMode()
-            }), r._blockSelectEvents = !1, r._clipboard = null, r._handler = null, r._dragCount = 0, r._editorKey = e.editorKey || k(), r._placeholderAccessibilityID = "placeholder-" + r._editorKey, r._latestEditorState = e.editorState, r._latestCommittedEditorState = e.editorState, r._onBeforeInput = r._buildHandler("onBeforeInput"), r._onBlur = r._buildHandler("onBlur"), r._onCharacterData = r._buildHandler("onCharacterData"), r._onCompositionEnd = r._buildHandler("onCompositionEnd"), r._onCompositionStart = r._buildHandler("onCompositionStart"), r._onCopy = r._buildHandler("onCopy"), r._onCut = r._buildHandler("onCut"), r._onDragEnd = r._buildHandler("onDragEnd"), r._onDragOver = r._buildHandler("onDragOver"), r._onDragStart = r._buildHandler("onDragStart"), r._onDrop = r._buildHandler("onDrop"), r._onInput = r._buildHandler("onInput"), r._onFocus = r._buildHandler("onFocus"), r._onKeyDown = r._buildHandler("onKeyDown"), r._onKeyPress = r._buildHandler("onKeyPress"), r._onKeyUp = r._buildHandler("onKeyUp"), r._onMouseDown = r._buildHandler("onMouseDown"), r._onMouseUp = r._buildHandler("onMouseUp"), r._onPaste = r._buildHandler("onPaste"), r._onSelect = r._buildHandler("onSelect"), r.getEditorKey = function() {
+            }), r._blockSelectEvents = !1, r._clipboard = null, r._handler = null, r._dragCount = 0, r._editorKey = e.editorKey || x(), r._placeholderAccessibilityID = "placeholder-" + r._editorKey, r._latestEditorState = e.editorState, r._latestCommittedEditorState = e.editorState, r._onBeforeInput = r._buildHandler("onBeforeInput"), r._onBlur = r._buildHandler("onBlur"), r._onCharacterData = r._buildHandler("onCharacterData"), r._onCompositionEnd = r._buildHandler("onCompositionEnd"), r._onCompositionStart = r._buildHandler("onCompositionStart"), r._onCopy = r._buildHandler("onCopy"), r._onCut = r._buildHandler("onCut"), r._onDragEnd = r._buildHandler("onDragEnd"), r._onDragOver = r._buildHandler("onDragOver"), r._onDragStart = r._buildHandler("onDragStart"), r._onDrop = r._buildHandler("onDrop"), r._onInput = r._buildHandler("onInput"), r._onFocus = r._buildHandler("onFocus"), r._onKeyDown = r._buildHandler("onKeyDown"), r._onKeyPress = r._buildHandler("onKeyPress"), r._onKeyUp = r._buildHandler("onKeyUp"), r._onMouseDown = r._buildHandler("onMouseDown"), r._onMouseUp = r._buildHandler("onMouseUp"), r._onPaste = r._buildHandler("onPaste"), r._onSelect = r._buildHandler("onSelect"), r.getEditorKey = function() {
                 return r._editorKey
             }, r.state = {
                 contentsKey: 0
@@ -180,7 +180,7 @@ var c = r(611668),
                 f = t.readOnly,
                 h = t.textAlignment,
                 d = t.textDirectionality,
-                g = x({
+                g = k({
                     "DraftEditor/root": !0,
                     "DraftEditor/alignLeft": "left" === h,
                     "DraftEditor/alignRight": "right" === h,
@@ -202,7 +202,7 @@ var c = r(611668),
             return _.createElement("div", {
                 className: g
             }, this._renderPlaceholder(), _.createElement("div", {
-                className: x("DraftEditor/editorContainer"),
+                className: k("DraftEditor/editorContainer"),
                 ref: this._handleEditorContainerRef
             }, _.createElement("div", {
                 "aria-activedescendant": f ? null : this.props.ariaActiveDescendantID,
@@ -217,7 +217,7 @@ var c = r(611668),
                 autoCapitalize: this.props.autoCapitalize,
                 autoComplete: this.props.autoComplete,
                 autoCorrect: this.props.autoCorrect,
-                className: x({
+                className: k({
                     notranslate: !f,
                     "public/DraftEditor/content": !0
                 }),
