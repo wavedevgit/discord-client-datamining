@@ -3,9 +3,9 @@ n.d(t, {
     A: () => F
 });
 var i = n(627968),
-    r = n(64700),
-    a = n(503698),
-    l = n.n(a),
+    a = n(64700),
+    r = n(503698),
+    l = n.n(r),
     s = n(311907),
     o = n(3026),
     d = n(990078),
@@ -73,33 +73,33 @@ let U = e => {
         let {
             closePopout: t,
             sticker: n,
-            channel: a,
+            channel: r,
             refreshPositionKey: l
         } = e, [o, d, c] = (0, s.yK)([S.A], () => [S.A.getStickerPack(n.pack_id), !S.A.hasLoadedStickerPacks, S.A.isPremiumPack(n.pack_id)], [n]), _ = (e => {
             let {
                 sticker: t,
                 stickerPack: n
             } = e;
-            return r.useMemo(() => null == n ? [] : n.stickers.slice(0, 4).reduce((e, n) => 3 !== e.length && n.id !== t.id ? e.concat(n) : e, []), [t, n])
+            return a.useMemo(() => null == n ? [] : n.stickers.slice(0, 4).reduce((e, n) => 3 !== e.length && n.id !== t.id ? e.concat(n) : e, []), [t, n])
         })({
             sticker: n,
             stickerPack: o
         });
         (0, y.Sr)(n.pack_id);
-        let m = (0, y.pD)(a),
+        let m = (0, y.pD)(r),
             p = {
                 refreshPositionKey: l,
-                channel: a
+                channel: r
             },
-            g = r.useRef(p);
-        return (r.useEffect(() => {
+            g = a.useRef(p);
+        return (a.useEffect(() => {
             g.current = p
-        }), r.useEffect(() => {
+        }), a.useEffect(() => {
             let {
                 refreshPositionKey: e
             } = g.current;
             e()
-        }, [d]), r.useEffect(() => {
+        }, [d]), a.useEffect(() => {
             let {
                 channel: e
             } = g.current;
@@ -149,36 +149,36 @@ let U = e => {
     B = e => {
         let t, {
                 sticker: n,
-                channel: a,
+                channel: r,
                 closePopout: o,
                 refreshPositionKey: C
             } = e,
-            [y, S] = r.useState(null),
-            [N, L] = r.useState(!1),
+            [y, S] = a.useState(null),
+            [N, L] = a.useState(!1),
             U = b.default.getCurrentUser(),
             B = T.Ay.canUseCustomStickersEverywhere(U),
             G = (0, s.bG)([E.A], () => E.A.getGuild(n.guild_id)),
             F = null != G,
-            [H, V] = r.useState(!1),
-            [q, W] = r.useState(null),
-            z = r.useMemo(() => ({
-                page: null != a.guild_id ? R.liQ.GUILD_CHANNEL : R.liQ.DM_CHANNEL,
+            [H, V] = a.useState(!1),
+            [q, W] = a.useState(null),
+            z = a.useMemo(() => ({
+                page: null != r.guild_id ? R.liQ.GUILD_CHANNEL : R.liQ.DM_CHANNEL,
                 section: R.JJy.STICKER_POPOUT
-            }), [a.guild_id]),
+            }), [r.guild_id]),
             {
                 current: Y
-            } = r.useRef({
-                guild_id: a.getGuildId(),
-                ...(0, h.dI)(a)
+            } = a.useRef({
+                guild_id: r.getGuildId(),
+                ...(0, h.dI)(r)
             }),
             Q = {
                 stickerSourceGuild: G,
                 refreshPositionKey: C
             },
-            K = r.useRef(Q);
-        r.useEffect(() => {
+            K = a.useRef(Q);
+        a.useEffect(() => {
             K.current = Q
-        }), r.useEffect(() => {
+        }), a.useEffect(() => {
             let {
                 stickerSourceGuild: e
             } = K.current;
@@ -186,17 +186,17 @@ let U = e => {
                 (null == e || e.features.has(R.GuildFeatures.DISCOVERABLE)) && S(await (0, A.A)(n.id)), L(!0)
             })()
         }, [n.id, F]);
-        let J = n.guild_id === a.getGuildId(),
+        let J = n.guild_id === r.getGuildId(),
             X = null != y,
             Z = !1,
             $ = "Custom Sticker Popout";
         B ? t = F ? J ? w.intl.string(w.t.fZ0DiG) : w.intl.string(w.t["1f6D9m"]) : X ? w.intl.string(w.t.yHmoR9) : w.intl.string(w.t.vZaScH) : F ? (t = J ? w.intl.string(w.t.jNphpt) : w.intl.string(w.t.lyD5ZW), Z = !0, $ = "Custom Sticker Popout (Upsell)") : X ? (t = w.intl.string(w.t.IuXYch), Z = !0, $ = "Custom Sticker Popout (Upsell)") : (t = w.intl.format(w.t.hGWuxU, {
             openPremiumSettings: () => {
-                k(a), o()
+                k(r), o()
             }
         }), $ = "Custom Sticker Popout (Soft Upsell)");
         let ee = !Z && !F && X && B;
-        if (r.useEffect(() => {
+        if (a.useEffect(() => {
                 let {
                     refreshPositionKey: e
                 } = K.current;
@@ -322,12 +322,12 @@ function G(e) {
     let {
         channel: t,
         closePopout: n,
-        sticker: r
+        sticker: a
     } = e;
     return (0, i.jsx)(f.Uq, {
         className: M.Bm,
         children: (0, i.jsx)(O, {
-            sticker: r,
+            sticker: a,
             description: w.intl.format(w.t.hGWuxU, {
                 openPremiumSettings: () => {
                     n(), k(t)
@@ -340,22 +340,22 @@ let F = e => {
     let {
         renderableSticker: t,
         channel: n,
-        closePopout: r,
-        refreshPositionKey: a
+        closePopout: a,
+        refreshPositionKey: r
     } = e, [l, s] = (0, y.Zq)(t, !0);
     return null != l && (0, N.FD)(l) ? (0, i.jsx)(U, {
         sticker: l,
-        closePopout: r,
+        closePopout: a,
         channel: n,
-        refreshPositionKey: a
+        refreshPositionKey: r
     }) : null != l && (0, N.Xw)(l) ? (0, i.jsx)(B, {
         sticker: l,
         channel: n,
-        closePopout: r,
-        refreshPositionKey: a
+        closePopout: a,
+        refreshPositionKey: r
     }) : s ? null == l ? (0, i.jsx)(G, {
         channel: n,
-        closePopout: r,
+        closePopout: a,
         sticker: t
-    }) : (r(), null) : (0, i.jsx)(f.Y0, {})
+    }) : (a(), null) : (0, i.jsx)(f.Y0, {})
 }

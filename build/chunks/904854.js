@@ -19,18 +19,18 @@ var i = n(627968),
     T = n(888675),
     f = n(502197),
     N = n(985018),
-    C = n(139487);
+    g = n(139487);
 
-function g(e) {
+function C(e) {
     let {
         users: t,
         guildId: n,
         channelId: l
     } = e;
     return (0, i.jsx)(s.lGe, {
-        className: C.XM,
+        className: g.XM,
         children: (0, i.jsx)(s.HOs, {
-            className: C.XG,
+            className: g.XG,
             children: (0, i.jsx)("div", {
                 children: t.map(e => (0, i.jsx)(c.A, {
                     user: e,
@@ -74,7 +74,7 @@ function h(e) {
             p = function(e, t) {
                 let n = l.useRef(null),
                     [a, r] = l.useState(!1),
-                    o = l.useCallback(n => (0, i.jsx)(g, {
+                    o = l.useCallback(n => (0, i.jsx)(C, {
                         users: n,
                         guildId: e,
                         channelId: t
@@ -101,7 +101,7 @@ function h(e) {
             }(t.guild_id, t.id),
             x = l.useCallback((e, t) => null == c ? e : (0, i.jsx)(o.T, {
                 channel: c,
-                childWrapperClassName: C.c6,
+                childWrapperClassName: g.c6,
                 children: (0, i.jsx)(s.DUT, {
                     tag: "a",
                     children: e
@@ -138,7 +138,7 @@ function h(e) {
     }, [S, A]);
     return (0, i.jsx)(T.A, {
         iconNode: M,
-        iconContainerClassName: C.zc,
+        iconContainerClassName: g.zc,
         timestamp: t.timestamp,
         compact: c,
         children: O

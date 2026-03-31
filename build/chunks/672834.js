@@ -1,6 +1,6 @@
 /** chunk id: 672834 params = (module,exports,require) **/
 n.d(t, {
-    A: () => ey
+    A: () => eb
 });
 var i = n(627968),
     l = n(64700),
@@ -19,8 +19,8 @@ var i = n(627968),
     T = n(120120),
     f = n(379114),
     N = n(698441),
-    C = n(484724),
-    g = n(997509),
+    g = n(484724),
+    C = n(997509),
     h = n(850131),
     p = n(31051),
     x = n(659203),
@@ -34,8 +34,8 @@ var i = n(627968),
     v = n(353202),
     L = n(747926),
     j = n(336589),
-    y = n(961350),
-    b = n(470710),
+    b = n(961350),
+    y = n(470710),
     k = n(734057),
     G = n(71393),
     F = n(576705),
@@ -73,8 +73,8 @@ var i = n(627968),
     eT = n(640289),
     ef = n(293657),
     eN = n(269802),
-    eC = n(576471),
-    eg = n(808821),
+    eg = n(576471),
+    eC = n(808821),
     eh = n(933762),
     ep = n(840233),
     ex = n(536030),
@@ -220,7 +220,7 @@ let ej = Object.freeze({
             } = e, {
                 id: s,
                 author: o
-            } = t, d = y.default.getId(), u = t.getChannelId(), _ = (0, a.bG)([b.A], () => b.A.isCallActive(u, s), [u, s]), m = (0, a.bG)([w.A], () => w.A.getVoiceState(eD.ME, d)), A = !_ && null != t.call && !t.call.participants.includes(d), E = _ && (null == m || m.channelId !== u), I = l.useCallback(() => c.default.selectVoiceChannel(u), [u]), T = (0, Z.P)({
+            } = t, d = b.default.getId(), u = t.getChannelId(), _ = (0, a.bG)([y.A], () => y.A.isCallActive(u, s), [u, s]), m = (0, a.bG)([w.A], () => w.A.getVoiceState(eD.ME, d)), A = !_ && null != t.call && !t.call.participants.includes(d), E = _ && (null == m || m.channelId !== u), I = l.useCallback(() => c.default.selectVoiceChannel(u), [u]), T = (0, Z.P)({
                 user: o,
                 channelId: u,
                 guildId: r.guild_id,
@@ -390,7 +390,7 @@ let ej = Object.freeze({
                 message: t,
                 compact: n,
                 onClick: () => {
-                    null != s && g.A.open(s, eD.BEX.ACCESS, eD.nd0.ACCESS_DISCOVERABLE)
+                    null != s && C.A.open(s, eD.BEX.ACCESS, eD.nd0.ACCESS_DISCOVERABLE)
                 }
             })
         },
@@ -527,7 +527,7 @@ let ej = Object.freeze({
                     message: t,
                     compact: l,
                     usernameHook: r
-                }), null != s && s.name === t.content ? (0, i.jsx)(C.A, {
+                }), null != s && s.name === t.content ? (0, i.jsx)(g.A, {
                     code: `${n.guild_id}-${s.id}`
                 }) : null]
             })
@@ -603,7 +603,7 @@ let ej = Object.freeze({
                 guildId: n.guild_id,
                 messageId: t.id
             });
-            return (0, i.jsx)(eC.A, {
+            return (0, i.jsx)(eg.A, {
                 message: t,
                 compact: l,
                 usernameHook: a
@@ -755,13 +755,13 @@ let ej = Object.freeze({
                 message: t,
                 compact: n
             } = e;
-            return (0, i.jsx)(eg.A, {
+            return (0, i.jsx)(eC.A, {
                 message: t,
                 compact: n
             })
         }
     }),
-    ey = l.memo(function(e) {
+    eb = l.memo(function(e) {
         let {
             message: t,
             channel: n,

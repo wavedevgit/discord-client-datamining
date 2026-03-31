@@ -1,16 +1,16 @@
 /** chunk id: 579297 params = (module,exports,require) **/
 n.d(t, {
-    A: () => a
+    A: () => r
 });
 var i = n(64700),
-    r = n(765671);
+    a = n(765671);
 
-function a() {
+function r() {
     let {
         ref: e,
         width: t
-    } = (0, r.Ay)(), [n, a] = i.useState();
+    } = (0, a.Ay)(), [n, r] = i.useState();
     return i.useEffect(() => {
-        null == n && null != t && a(t)
+        null == n && null != t && r(t)
     }, [n, t]), [e, n]
 }

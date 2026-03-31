@@ -19,8 +19,8 @@ var i = n(627968),
     T = n(529942),
     f = n(164956),
     N = n(209700),
-    C = n(652215),
-    g = n(985018),
+    g = n(652215),
+    C = n(985018),
     h = n(698222);
 
 function p(e) {
@@ -49,10 +49,10 @@ function p(e) {
             })
         }
     }, [v, O, R]);
-    let y = null != p && null != n && null != P ? S.find(e => P.roles.includes(e.id)) : void 0,
-        b = l.useMemo(() => null != p && null != n ? S.filter(e => !(0, d.Oy)(e)).filter(e => !D || e.tags?.subscription_listing_id != null).filter(e => y?.id === e.id || E.wO(p, n.id, y, e)) : [], [p, n, D, y, S]),
+    let b = null != p && null != n && null != P ? S.find(e => P.roles.includes(e.id)) : void 0,
+        y = l.useMemo(() => null != p && null != n ? S.filter(e => !(0, d.Oy)(e)).filter(e => !D || e.tags?.subscription_listing_id != null).filter(e => b?.id === e.id || E.wO(p, n.id, b, e)) : [], [p, n, D, b, S]),
         k = l.useMemo(() => {
-            let e = Array.from(b).map(e => ({
+            let e = Array.from(y).map(e => ({
                 leading: x(e),
                 value: e.id,
                 label: e.name,
@@ -66,7 +66,7 @@ function p(e) {
                 id: U.id.toString(),
                 disabled: !0
             }), e
-        }, [b, p, U]);
+        }, [y, p, U]);
     if (null == n || null == p || null == P) return null;
     let G = {};
     return (P.roles.forEach(e => {
@@ -75,7 +75,7 @@ function p(e) {
     }), a.zy(E.aH({
         forceRoles: G,
         context: p
-    }), a.kg(C.xBc.MANAGE_GUILD, C.xBc.MANAGE_ROLES)) || (0, c.bM)(p, n)) ? (0, i.jsx)("div", {
+    }), a.kg(g.xBc.MANAGE_GUILD, g.xBc.MANAGE_ROLES)) || (0, c.bM)(p, n)) ? (0, i.jsx)("div", {
         className: h.kL,
         children: (0, i.jsxs)(o.iS7, {
             selectionMode: "multiple",
@@ -87,7 +87,7 @@ function p(e) {
             children: [(0, i.jsx)(o.a32, {
                 hideTags: !0,
                 autoFocus: !0,
-                placeholder: g.intl.string(g.t.Sojqsr)
+                placeholder: C.intl.string(C.t.Sojqsr)
             }), (0, i.jsx)(o.X2W, {
                 renderListItem: e => (0, i.jsx)(r.c$x, {
                     ...e
@@ -96,7 +96,7 @@ function p(e) {
         })
     }) : (0, i.jsx)(o.Text, {
         variant: "text-md/medium",
-        children: g.intl.string(g.t.MNSTbY)
+        children: C.intl.string(C.t.MNSTbY)
     })
 }
 

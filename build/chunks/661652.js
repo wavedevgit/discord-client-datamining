@@ -24,8 +24,8 @@ var a = n(627968),
     A = n(134861),
     C = n(157257),
     y = n(985018),
-    S = n(271469),
-    T = n(310086),
+    T = n(271469),
+    S = n(310086),
     E = n(521807);
 let N = [{
     id: "unset",
@@ -80,7 +80,7 @@ function I() {
         });
     return (0, a.jsxs)("div", {
         ref: s,
-        className: l()(T.nd, E.n),
+        className: l()(S.nd, E.n),
         children: [(0, a.jsxs)("div", {
             className: E.k,
             children: [(0, a.jsx)(d.Heading, {
@@ -121,26 +121,26 @@ function I() {
                 children: "Authorization"
             }), (0, a.jsx)(p.VT, {
                 overallStatus: M.debug.isSubscribedToAuthorizeRequest ? p.nW.OVERALL_GOOD : U ? p.nW.WARN : p.nW.OVERALL_BAD,
-                name: y.intl.string(S.default.AGLx00),
+                name: y.intl.string(T.default.AGLx00),
                 steps: [{
                     status: U ? p.nW.GOOD : p.nW.BAD,
-                    text: y.intl.string(S.default.kxF9br),
-                    description: U ? null : y.intl.string(S.default.PFxxJa),
+                    text: y.intl.string(T.default.kxF9br),
+                    description: U ? null : y.intl.string(T.default.PFxxJa),
                     learnMoreLink: U ? null : "https://discord.com/developers/docs/discord-social-sdk/how-to/debug-log"
                 }, {
                     status: M.debug.isSubscribedToAuthorizeRequest ? p.nW.GOOD : U ? p.nW.WARN : p.nW.BAD,
-                    text: y.intl.string(S.default.S94dzs),
-                    description: M.debug.isSubscribedToAuthorizeRequest || !U ? null : y.intl.string(S.default.aTULMB),
+                    text: y.intl.string(T.default.S94dzs),
+                    description: M.debug.isSubscribedToAuthorizeRequest || !U ? null : y.intl.string(T.default.aTULMB),
                     learnMoreLink: M.debug.isSubscribedToAuthorizeRequest || !U ? null : "https://discord.com/developers/docs/discord-social-sdk/how-to/debug-log"
                 }],
                 isChosen: B.chosenFlow === x._M.RPC
             }), (0, a.jsx)(p.VT, {
                 overallStatus: L.debug.hasConnectionEntrypointUrl ? p.nW.OVERALL_GOOD : p.nW.OVERALL_BAD,
-                name: y.intl.string(S.default.K3ObrU),
+                name: y.intl.string(T.default.K3ObrU),
                 steps: [{
                     status: L.debug.hasConnectionEntrypointUrl ? p.nW.GOOD : p.nW.BAD,
-                    text: y.intl.string(S.default["8a7IrV"]),
-                    description: L.debug.hasConnectionEntrypointUrl ? y.intl.formatToPlainString(S.default["9iLeL2"], {
+                    text: y.intl.string(T.default["8a7IrV"]),
+                    description: L.debug.hasConnectionEntrypointUrl ? y.intl.formatToPlainString(T.default["9iLeL2"], {
                         url: L.connectionApp?.connectionEntrypointUrl
                     }) : null
                 }],
@@ -154,7 +154,7 @@ function I() {
                     overflow: "hidden"
                 },
                 variant: "text-md/medium",
-                children: y.intl.string(S.default.eg0mNa)
+                children: y.intl.string(T.default.eg0mNa)
             }), (0, a.jsx)(d.Button, {
                 disabled: !B.canStartAuthorization,
                 onClick: () => B.startAuthorization({

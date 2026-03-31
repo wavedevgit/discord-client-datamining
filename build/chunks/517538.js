@@ -97,7 +97,7 @@ function b(e) {
 function j() {
     let {
         name: e
-    } = (0, x.x5)(g.oh.AUDIO_INPUT), [t, n] = i.useState(!1), [s, l] = i.useState([]), v = (0, r.bG)([p.Ay], () => p.Ay.getKrispSuppressionLevel()), [j, A] = i.useState(null), C = i.useRef(null), y = i.useRef(null), [S, T] = i.useState(.5), {
+    } = (0, x.x5)(g.oh.AUDIO_INPUT), [t, n] = i.useState(!1), [s, l] = i.useState([]), v = (0, r.bG)([p.Ay], () => p.Ay.getKrispSuppressionLevel()), [j, A] = i.useState(null), C = i.useRef(null), y = i.useRef(null), [T, S] = i.useState(.5), {
         krispModels: E,
         krispModelOverride: N,
         inputMode: I,
@@ -136,7 +136,7 @@ function j() {
     function H(e) {
         if (t && W(), V(), null == F) return;
         let n = F.createBufferSource();
-        n.buffer = e.audioBuffer, y.current = F.createGain(), y.current.gain.value = S, n.connect(y.current), y.current.connect(F.destination), n.loop = !0, n.start(), C.current = n, A(e)
+        n.buffer = e.audioBuffer, y.current = F.createGain(), y.current.gain.value = T, n.connect(y.current), y.current.connect(F.destination), n.loop = !0, n.start(), C.current = n, A(e)
     }
     i.useEffect(() => {
         V()
@@ -273,9 +273,9 @@ function j() {
                 })]
             }), (0, a.jsx)(d.Apm, {
                 label: "Volume",
-                initialValue: S,
+                initialValue: T,
                 asValueChanges: function(e) {
-                    null != y.current && (y.current.gain.value = e, T(e))
+                    null != y.current && (y.current.gain.value = e, S(e))
                 },
                 minValue: 0,
                 maxValue: 1

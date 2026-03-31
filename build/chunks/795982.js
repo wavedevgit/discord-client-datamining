@@ -3,8 +3,8 @@ n.d(t, {
     A: () => M
 });
 var i = n(627968),
-    r = n(64700),
-    a = n(158954),
+    a = n(64700),
+    r = n(158954),
     l = n(311907),
     s = n(52133),
     o = n(827734),
@@ -37,7 +37,7 @@ function L() {
             size: "xs",
             className: j.nr,
             color: o.A.colors.TEXT_MUTED
-        }), (0, i.jsx)(a.EYj, {
+        }), (0, i.jsx)(r.EYj, {
             className: j.TK,
             variant: "text-sm/semibold",
             color: "text-muted",
@@ -51,7 +51,7 @@ function R(e) {
         message: t,
         snapshot: n,
         index: c
-    } = e, _ = r.useMemo(() => new v.j(t, n, c), [t, n, c]), m = (0, l.bG)([x.A, b.default, E.A, I.A, C.A, u.A], () => _.getForwardInfo(x.A, b.default, E.A, I.A, C.A, u.A).footerInfo, [_], s.A), h = (0, l.bG)([x.A], () => x.A.getChannel(t.messageReference?.channel_id)), p = r.useCallback(() => {
+    } = e, _ = a.useMemo(() => new v.j(t, n, c), [t, n, c]), m = (0, l.bG)([x.A, b.default, E.A, I.A, C.A, u.A], () => _.getForwardInfo(x.A, b.default, E.A, I.A, C.A, u.A).footerInfo, [_], s.A), h = (0, l.bG)([x.A], () => x.A.getChannel(t.messageReference?.channel_id)), p = a.useCallback(() => {
         (0, T.A)(t)
     }, [t]);
     return null == m ? null : (0, i.jsxs)(d.DUT, {
@@ -64,7 +64,7 @@ function R(e) {
             alt: ""
         }) : null, null == m.originIconUrl && h?.isThread() ? (0, i.jsx)(P, {
             channel: h
-        }) : null, (0, i.jsx)(a.EYj, {
+        }) : null, (0, i.jsx)(r.EYj, {
             className: j.PJ,
             variant: "text-sm/medium",
             color: "none",
@@ -81,8 +81,8 @@ function P(e) {
         channel: t
     } = e, n = (0, g.Vp)({
         location: "ForwardFooter"
-    }), a = r.useMemo(() => (0, c.gU)(t), [t]);
-    return n.enabled && null != a ? (0, i.jsx)(a, {
+    }), r = a.useMemo(() => (0, c.gU)(t), [t]);
+    return n.enabled && null != r ? (0, i.jsx)(r, {
         className: j.yl,
         size: "xs",
         color: "currentColor"
@@ -93,8 +93,8 @@ function w(e) {
     let {
         message: t,
         snapshot: n,
-        index: a
-    } = e, s = r.useMemo(() => (0, y.A)(t, n), [t, n]), o = A.hD.useSetting(), d = A.rs.useSetting(), c = (0, l.bG)([f.A], () => f.A.isDeveloper), u = (0, _.S)((s.editedTimestamp ?? s.timestamp).valueOf()), {
+        index: r
+    } = e, s = a.useMemo(() => (0, y.A)(t, n), [t, n]), o = A.hD.useSetting(), d = A.rs.useSetting(), c = (0, l.bG)([f.A], () => f.A.isDeveloper), u = (0, _.S)((s.editedTimestamp ?? s.timestamp).valueOf()), {
         content: g,
         hasSpoilerEmbeds: C,
         hasBailedAst: I
@@ -132,10 +132,10 @@ function w(e) {
             }), (0, i.jsx)(R, {
                 message: t,
                 snapshot: n,
-                index: a
+                index: r
             })]
         })]
-    }, a)
+    }, r)
 }
 
 function M(e) {

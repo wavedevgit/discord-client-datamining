@@ -1,19 +1,19 @@
 /** chunk id: 56739 params = (module,exports,require) **/
 n.d(t, {
-    A: () => a
+    A: () => r
 });
 var i = n(627968);
 n(64700);
-var r = n(953727);
+var a = n(953727);
 
-function a(e) {
+function r(e) {
     let {
         color: t = "currentColor",
         foreground: n,
-        ...a
+        ...r
     } = e;
     return (0, i.jsx)("svg", {
-        ...(0, r.A)(a),
+        ...(0, a.A)(r),
         viewBox: "0 0 136 56",
         fill: "none",
         xmlns: "http://www.w3.org/2000/svg",

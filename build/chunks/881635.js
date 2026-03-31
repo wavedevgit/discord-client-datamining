@@ -22,7 +22,7 @@ function _(e) {
     } = e, [E, I] = l.useState(!1), {
         analyticsLocations: T
     } = (0, s.Ay)(_ ?? []), f = (0, a.bG)([o.default], () => o.default.getCurrentUser()), N = f?.isPremiumGroupMember();
-    async function C() {
+    async function g() {
         I(!0), await (0, c.g)({
             analyticsLocations: T,
             analyticsLocation: {
@@ -42,7 +42,7 @@ function _(e) {
         size: "md",
         icon: r._Jp,
         text: u.intl.string(u.t.gKmQ1G),
-        onClick: C,
+        onClick: g,
         loading: E,
         disabled: N
     })

@@ -3,8 +3,8 @@ n.d(t, {
     A: () => R
 });
 var i = n(627968),
-    r = n(64700),
-    a = n(311907),
+    a = n(64700),
+    r = n(311907),
     l = n(846293),
     s = n(820284),
     o = n(688810),
@@ -39,11 +39,11 @@ function R(e) {
     } = e, {
         invite: P,
         inviteError: w
-    } = (0, a.cf)([A.A], () => ({
+    } = (0, r.cf)([A.A], () => ({
         invite: A.A.getInvite(t),
         inviteError: A.A.getInviteError(t)
     }), [t]), M = null == P;
-    r.useEffect(() => {
+    a.useEffect(() => {
         M && l.Ay.resolveInvite(t)
     }, [t, M]);
     let D = P ?? {
@@ -53,9 +53,9 @@ function R(e) {
         {
             analyticsLocations: k
         } = (0, o.Ay)(),
-        O = (0, a.bG)([g.A], () => P?.guild != null ? g.A.getGuild(P.guild.id) : null, [P]),
-        U = (0, a.bG)([p.default], () => p.default.getId()),
-        B = (0, a.bG)([c.Ay], () => c.Ay.getGuildScheduledEvent(D.guild_scheduled_event?.id), [D]),
+        O = (0, r.bG)([g.A], () => P?.guild != null ? g.A.getGuild(P.guild.id) : null, [P]),
+        U = (0, r.bG)([p.default], () => p.default.getId()),
+        B = (0, r.bG)([c.Ay], () => c.Ay.getGuildScheduledEvent(D.guild_scheduled_event?.id), [D]),
         G = () => {
             null != D.channel && l.Ay.transitionToInviteSync(D)
         },

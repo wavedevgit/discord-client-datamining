@@ -32,8 +32,8 @@ let A = e => {
     } = i.useContext(g.T), {
         expansionSpring: y
     } = i.useContext(p.PW), {
-        completionSpring: S,
-        startCompletionAnimation: T
+        completionSpring: T,
+        startCompletionAnimation: S
     } = (0, _.R)(), E = A.userStatus?.completedAt != null, N = i.useRef(!1), I = (0, c.bG)([m.A], () => m.A.useReducedMotion), k = i.useRef(null), O = (0, c.bG)([h.A], () => h.A.hasLayers()), R = (0, u.A)(O), [w, D] = i.useState(null), [P, M] = i.useState(null), L = i.useRef(new r.OH({
         gravity: 0,
         wind: 0
@@ -92,28 +92,28 @@ let A = e => {
         }
     }, [n, k, U, I]), F = (0, u.A)(C);
     return (i.useEffect(() => {
-        E && C && !F && (T(), G())
-    }, [C, E, T, G, F]), i.useEffect(() => {
+        E && C && !F && (S(), G())
+    }, [C, E, S, G, F]), i.useEffect(() => {
         E && !O && R && setTimeout(() => {
-            T(), G()
+            S(), G()
         }, 200)
-    }, [E, R, O, T, G]), i.useEffect(() => {
-        U.isReady && (!N.current && E && (T(), G()), N.current = E)
-    }, [E, N, G, T, U]), i.useEffect(() => {
-        s && E && (T(), G())
-    }, [s, E, T, G]), I) ? null : (0, a.jsxs)("div", {
+    }, [E, R, O, S, G]), i.useEffect(() => {
+        U.isReady && (!N.current && E && (S(), G()), N.current = E)
+    }, [E, N, G, S, U]), i.useEffect(() => {
+        s && E && (S(), G())
+    }, [s, E, S, G]), I) ? null : (0, a.jsxs)("div", {
         className: b.iE,
         "aria-hidden": "true",
         ref: k,
         children: [(0, a.jsx)(d.animated.div, {
             className: b.Tp,
             style: {
-                opacity: (0, x.a)(S)
+                opacity: (0, x.a)(T)
             }
         }), (0, a.jsx)(d.animated.div, {
             className: l()(b.sJ, b.ix),
             style: {
-                opacity: (0, x.a)(S)
+                opacity: (0, x.a)(T)
             }
         }), (0, a.jsxs)(d.animated.div, {
             className: b.KG,
@@ -136,7 +136,7 @@ let A = e => {
             }), null != t.current && (0, o.createPortal)((0, a.jsx)(d.animated.div, {
                 className: l()(b.sJ, b.d7),
                 style: {
-                    opacity: (0, x.a)(S)
+                    opacity: (0, x.a)(T)
                 }
             }), t.current)]
         })]

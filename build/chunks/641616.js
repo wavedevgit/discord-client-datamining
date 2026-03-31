@@ -25,8 +25,8 @@ var x = n(173628),
     A = n(866001),
     C = n(855936),
     y = n(489967),
-    S = n(2915),
-    T = n(986789),
+    T = n(2915),
+    S = n(986789),
     E = n(821306),
     N = n(226936),
     I = n(27126),
@@ -305,7 +305,7 @@ function ec() {
             name: "Fractional Nitro",
             group: er.fu.PREMIUM,
             tags: ["entitlements", "quests"],
-            render: () => (0, a.jsx)(S.A, {})
+            render: () => (0, a.jsx)(T.A, {})
         })), e.push({
             id: "gifting_intent",
             name: "Gifting Intent",
@@ -334,7 +334,7 @@ function ec() {
             id: "game_server",
             name: "Game Server",
             group: er.fu.BOOSTING,
-            render: () => (0, a.jsx)(T.A, {})
+            render: () => (0, a.jsx)(S.A, {})
         }), e.push({
             id: "language",
             name: "Language",

@@ -19,8 +19,8 @@ var i = n(627968),
     T = n(860227),
     f = n(538355),
     N = n(522871),
-    C = n(699352),
-    g = n(715628),
+    g = n(699352),
+    C = n(715628),
     h = n(752636),
     p = n(675722),
     x = n(268719),
@@ -40,8 +40,8 @@ let M = l.memo(function(e) {
         animateAvatar: v,
         subscribeToComponentDispatch: L,
         renderThreadAccessory: j,
-        trackAnnouncementViews: y = !1,
-        ...b
+        trackAnnouncementViews: b = !1,
+        ...y
     } = e, k = t.type === S.lAJ.POLL_RESULT || (e.disableInteraction ?? !1), G = t.isFirstMessageInForumPost(P), F = (0, d.S)((t.editedTimestamp ?? t.timestamp).valueOf()), {
         content: B,
         hasSpoilerEmbeds: H,
@@ -58,7 +58,7 @@ let M = l.memo(function(e) {
     }), J = (0, N.A)({
         message: t,
         channel: P,
-        enabled: y
+        enabled: b
     }), W = (0, T.fF)(t), Q = (0, T.ZD)(t);
     return (0, i.jsx)(I.A, {
         compact: n,
@@ -75,8 +75,8 @@ let M = l.memo(function(e) {
             author: K,
             roleIcon: Y
         }),
-        childrenAccessories: e.hideAccessories ? void 0 : (0, C.J)(e, H, V),
-        childrenMessageContent: (0, g.A)(e, B),
+        childrenAccessories: e.hideAccessories ? void 0 : (0, g.J)(e, H, V),
+        childrenMessageContent: (0, C.A)(e, B),
         childrenSystemMessage: (0, p.A)({
             ...e,
             disableInteraction: k
@@ -90,6 +90,6 @@ let M = l.memo(function(e) {
         messageRef: J,
         author: K,
         ...q,
-        ...b
+        ...y
     })
 })

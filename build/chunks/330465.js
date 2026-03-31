@@ -147,7 +147,14 @@ let P = s.memo(function(e) {
         }, [ee, n]),
         eT = (0, A.rdh)(A.LU0.modules.guildbar.AVATAR_SIZE);
     if (null == w) return null;
-    let ev = (0, i.jsx)(T.A, {
+    let ev = w.name;
+    K > 0 ? ev = M.intl.formatToPlainString(M.t["/uzRss"], {
+        guildName: w.name,
+        mentions: K
+    }) : B && (ev = M.intl.formatToPlainString(M.t.lzqe42, {
+        guildName: w.name
+    }));
+    let ey = (0, i.jsx)(T.A, {
             guild: w,
             show: eA,
             active: V,
@@ -158,11 +165,8 @@ let P = s.memo(function(e) {
                 eA || eh(!1)
             }
         }),
-        ey = eg ? (0, i.jsx)(A.jlP, {
-            ariaLabel: M.intl.formatToPlainString(M.t["/uzRss"], {
-                guildName: w.name,
-                mentions: K
-            }),
+        ej = eg ? (0, i.jsx)(A.jlP, {
+            ariaLabel: ev,
             name: w.name,
             onClick: ep,
             onMouseEnter: eN,
@@ -185,10 +189,7 @@ let P = s.memo(function(e) {
                 "data-dnd-name": w.name,
                 "data-drop-hovering": eA,
                 children: (0, i.jsx)(A.jlP, {
-                    ariaLabel: M.intl.formatToPlainString(M.t["/uzRss"], {
-                        guildName: w.name,
-                        mentions: K
-                    }),
+                    ariaLabel: ev,
                     name: w.name,
                     onClick: ep,
                     onMouseEnter: eN,
@@ -205,11 +206,11 @@ let P = s.memo(function(e) {
                 })
             })
         }),
-        ej = eA || eu ? ev : ey,
-        eR = (0, i.jsx)(v.g4, {
+        eR = eA || eu ? ey : ej,
+        eO = (0, i.jsx)(v.g4, {
             children: (0, i.jsx)(j.A, {})
         }),
-        eO = eg ? (0, i.jsx)(o.animated.div, {
+        eL = eg ? (0, i.jsx)(o.animated.div, {
             ref: z ? e => {
                 ea(e)
             } : void 0,
@@ -228,7 +229,7 @@ let P = s.memo(function(e) {
                 upperBadge: en,
                 lowerBadge: ei,
                 lowerBadgeSize: es,
-                children: ej
+                children: eR
             })
         }) : (0, i.jsx)(o.animated.div, {
             style: {
@@ -245,7 +246,7 @@ let P = s.memo(function(e) {
                 upperBadge: en,
                 lowerBadge: ei,
                 lowerBadgeSize: es,
-                children: ej
+                children: eR
             })
         });
     return (0, i.jsxs)(R.c, {
@@ -259,7 +260,7 @@ let P = s.memo(function(e) {
             guild: w,
             disabled: q,
             isDragging: el,
-            children: el ? eR : eO
+            children: el ? eO : eL
         }), z ? (0, i.jsx)(v.Ay, {
             name: w.name,
             targetNode: t,

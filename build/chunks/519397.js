@@ -3,8 +3,8 @@ n.d(t, {
     A: () => m
 });
 var i = n(627968),
-    r = n(64700),
-    a = n(311907),
+    a = n(64700),
+    r = n(311907),
     l = n(80682),
     s = n(465364),
     o = n(448368),
@@ -20,14 +20,14 @@ function m(e) {
     } = e, {
         isBlocked: m,
         isIgnored: h
-    } = (0, a.cf)([c.A], () => ({
+    } = (0, r.cf)([c.A], () => ({
         isBlocked: c.A.isBlockedForMessage(t),
         isIgnored: c.A.isIgnoredForMessage(t)
-    }), [t]), p = r.useMemo(() => ({
+    }), [t]), p = a.useMemo(() => ({
         [n.guild_id]: [t.author.id]
     }), [n.guild_id, t.author.id]);
     (0, l.Eq)(p, "ThreadMessageAccessoryMessage");
-    let g = r.useMemo(() => null != t.content && "" !== t.content ? (0, s.Ay)(t, {
+    let g = a.useMemo(() => null != t.content && "" !== t.content ? (0, s.Ay)(t, {
         formatInline: !0
     }).content : null, [t]);
     return (0, i.jsxs)("div", {
@@ -42,13 +42,13 @@ function m(e) {
             compact: !0
         }), (0, i.jsx)("div", {
             className: _.Au,
-            children: function(e, t, n, r) {
+            children: function(e, t, n, a) {
                 let {
-                    contentPlaceholder: a,
+                    contentPlaceholder: r,
                     renderedContent: l,
                     leadingIcon: s,
                     trailingIcon: d
-                } = (0, o.o)(e, t, n, r, _.tP, {
+                } = (0, o.o)(e, t, n, a, _.tP, {
                     trailingIconClass: _._v,
                     leadingIconClass: _.a5,
                     iconSize: u.eJ
@@ -56,7 +56,7 @@ function m(e) {
                 return (0, i.jsxs)(i.Fragment, {
                     children: [s, l ?? (0, i.jsx)("span", {
                         className: _.dp,
-                        children: a
+                        children: r
                     }), d]
                 })
             }(t, g, m, h)

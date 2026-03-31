@@ -43,7 +43,7 @@ let C = async () => {
     } catch {} finally {
         await (0, u._D)()
     }
-}, S = async (e, t) => {
+}, T = async (e, t) => {
     try {
         await r.Bo.del({
             url: v.Rsh.UPDATE_USER_OFFER(e, t),
@@ -52,7 +52,7 @@ let C = async () => {
     } catch {} finally {
         await (0, u._D)()
     }
-}, T = async () => {
+}, S = async () => {
     try {
         let {
             body: e
@@ -102,7 +102,7 @@ function I(e) {
         }
     }, [f]);
     let {
-        id: T,
+        id: S,
         expires_at: E,
         redeemed_at: N,
         trial_id: I,
@@ -126,7 +126,7 @@ function I(e) {
             A(!0);
             try {
                 await r.Bo.patch({
-                    url: v.Rsh.UPDATE_USER_OFFER(T, "trial"),
+                    url: v.Rsh.UPDATE_USER_OFFER(S, "trial"),
                     body: {
                         ..."expiresAt" in e && {
                             expires_at: e.expiresAt
@@ -172,12 +172,12 @@ function I(e) {
         }), (0, a.jsxs)(d.DUT, {
             className: l()(j.nM, j.QB),
             onClick: () => {
-                (0, x.C)(T, () => m(!0))
+                (0, x.C)(S, () => m(!0))
             },
             children: [(0, a.jsxs)(d.Text, {
                 variant: "eyebrow",
                 color: "always-white",
-                children: ["Offer: ", T]
+                children: ["Offer: ", S]
             }), o ? (0, a.jsx)(d.A9s, {
                 size: "md",
                 color: "currentColor",
@@ -267,7 +267,7 @@ function I(e) {
             })]
         }), (0, a.jsx)(d.DUT, {
             onClick: async () => {
-                A(!0), await S(T, "trial"), s(), A(!1)
+                A(!0), await T(S, "trial"), s(), A(!1)
             },
             children: (0, a.jsx)(d.ucK, {
                 size: "md",
@@ -301,7 +301,7 @@ function k(e) {
     let {
         id: C,
         expires_at: y,
-        applied_at: T,
+        applied_at: S,
         discount_id: E,
         discount: N
     } = t, I = n.find(e => {
@@ -426,7 +426,7 @@ function k(e) {
                     color: "Acked" === D ? void 0 : "always-white",
                     children: D
                 })
-            }), null != T && (0, a.jsx)("div", {
+            }), null != S && (0, a.jsx)("div", {
                 className: l()(j.qS, j.k3),
                 children: (0, a.jsx)(d.Text, {
                     variant: "eyebrow",
@@ -437,7 +437,7 @@ function k(e) {
         }), (0, a.jsx)(d.DUT, {
             className: j.aR,
             onClick: async () => {
-                f(!0), await S(C, "discount"), s(), f(!1)
+                f(!0), await T(C, "discount"), s(), f(!1)
             },
             children: (0, a.jsx)(d.ucK, {
                 size: "md",
@@ -454,7 +454,7 @@ function k(e) {
 }
 
 function O() {
-    let [e, t] = i.useState([]), [n, s] = i.useState([]), [l, r] = i.useState(), [c, x] = i.useState(), [p, g] = i.useState([]), [b, S] = i.useState([]), [O, R] = i.useState(!0), [w, D] = i.useState(10080), [P, M] = i.useState([]), {
+    let [e, t] = i.useState([]), [n, s] = i.useState([]), [l, r] = i.useState(), [c, x] = i.useState(), [p, g] = i.useState([]), [b, T] = i.useState([]), [O, R] = i.useState(!0), [w, D] = i.useState(10080), [P, M] = i.useState([]), {
         entitlements: L,
         deleteFractionalPremium: U,
         refreshEntitlementList: B
@@ -476,8 +476,8 @@ function O() {
             t(n), s(a), null == l && r(n[0].value), null == c && x(a[0].value)
         })
     }, [e, n, l, c, O]), i.useEffect(() => {
-        O && (R(!1), h.A.forceReset(), (0, u._D)(), T().then(e => {
-            g(e.trial.sort((e, t) => e.id.localeCompare(t.id))), S(e.discount.sort((e, t) => e.id.localeCompare(t.id)))
+        O && (R(!1), h.A.forceReset(), (0, u._D)(), S().then(e => {
+            g(e.trial.sort((e, t) => e.id.localeCompare(t.id))), T(e.discount.sort((e, t) => e.id.localeCompare(t.id)))
         }))
     }, [O]);
     let G = async () => {

@@ -19,8 +19,8 @@ var i = n(627968),
     T = n(317525),
     f = n(71393),
     N = n(994500),
-    C = n(287809),
-    g = n(763754);
+    g = n(287809),
+    C = n(763754);
 n(827669);
 var h = n(985018),
     p = n(572168);
@@ -97,9 +97,9 @@ let O = l.memo(function(e) {
             if (null != a.value) switch (a.type) {
                 case c.n4.USER: {
                     let e = a.value.toString(),
-                        t = C.default.getUser(e);
+                        t = g.default.getUser(e);
                     if (null != t) {
-                        let e = (0, g.FT)(t, r);
+                        let e = (0, C.FT)(t, r);
                         n = (0, i.jsxs)(A.A, {
                             ...R,
                             onClick: () => (0, E.openUserProfileModal)({
@@ -119,7 +119,7 @@ let O = l.memo(function(e) {
                         t = I.A.getChannel(e);
                     null != t && (n = (0, i.jsxs)(A.A, {
                         ...R,
-                        children: ["#", (0, u.m1)(t, C.default, N.A)]
+                        children: ["#", (0, u.m1)(t, g.default, N.A)]
                     }));
                     break
                 }
@@ -139,9 +139,9 @@ let O = l.memo(function(e) {
                         children: ["@", t.name]
                     });
                     else {
-                        let t = C.default.getUser(e);
+                        let t = g.default.getUser(e);
                         if (null != t) {
-                            let e = (0, g.FT)(t, r);
+                            let e = (0, C.FT)(t, r);
                             n = (0, i.jsxs)(A.A, {
                                 ...R,
                                 onClick: () => (0, E.openUserProfileModal)({

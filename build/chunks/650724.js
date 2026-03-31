@@ -3,8 +3,8 @@ n.d(t, {
     D: () => A
 });
 var i = n(64700),
-    r = n(417597),
-    a = n(717125),
+    a = n(417597),
+    r = n(717125),
     l = n(376943),
     s = n(961350),
     o = n(734057),
@@ -19,11 +19,11 @@ var i = n(64700),
 
 function A(e, t) {
     let n = (0, p.CI)(e),
-        A = (0, r.bG)([d.Ay, s.default], () => {
+        A = (0, a.bG)([d.Ay, s.default], () => {
             let e = s.default.getId();
             return d.Ay.isMember(n?.guildId, e)
         }, [n]),
-        x = (0, r.bG)([a.A], () => null != n && n?.channelId != null && a.A.isChannelGated(n.guildId, n.channelId), [n]),
+        x = (0, a.bG)([r.A], () => null != n && n?.channelId != null && r.A.isChannelGated(n.guildId, n.channelId), [n]),
         f = t.hasFlag(g.pr7.IS_CROSSPOST),
         {
             rawMediaPostEmbedData: C,
@@ -32,19 +32,19 @@ function A(e, t) {
             user: b,
             selectedGuildId: v,
             canAccess: T
-        } = (0, r.cf)([h.A, c.A, o.A, _.default, u.A], () => {
+        } = (0, a.cf)([h.A, c.A, o.A, _.default, u.A], () => {
             let e = h.A.getMediaPostEmbed(n?.threadId)?.media,
                 t = c.A.getGuild(n?.guildId),
                 i = o.A.getChannel(n?.channelId),
-                r = _.default.getUser(e?.author_id),
-                a = u.A.getGuildId(),
+                a = _.default.getUser(e?.author_id),
+                r = u.A.getGuildId(),
                 s = null != i && (0, l.nc)(i);
             return {
                 rawMediaPostEmbedData: e,
                 guild: t,
                 parentChannel: i,
-                user: r,
-                selectedGuildId: a,
+                user: a,
+                selectedGuildId: r,
                 canAccess: s
             }
         }, [n]),

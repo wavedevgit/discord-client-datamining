@@ -9,8 +9,8 @@ var i = n(158954),
     s = n(421380),
     o = n(397927),
     a = n(721923),
-    d = n(71393),
-    u = n(975571),
+    u = n(71393),
+    d = n(975571),
     c = n(953382),
     p = n(864310),
     _ = n(931936),
@@ -23,14 +23,13 @@ var i = n(158954),
 
 function h(e) {
     let {
-        guildId: t,
-        showVideoCard: n
-    } = e, h = (0, l.bG)([d.A], () => d.A.getGuild(t)), {
-        available: E,
-        spent: b,
+        guildId: t
+    } = e, n = (0, l.bG)([u.A], () => u.A.getGuild(t)), {
+        available: h,
+        spent: E,
         total: I
-    } = (0, p.A)(t), j = (0, c.q)("GuildPowerupsBoostInfoContainerAdmin");
-    if (null != h) return (0, r.jsxs)("div", {
+    } = (0, p.A)(t), b = (0, c.q)("GuildPowerupsBoostInfoContainerAdmin");
+    if (null != n) return (0, r.jsxs)("div", {
         className: v.kL,
         children: [(0, r.jsxs)("div", {
             className: v.N1,
@@ -42,40 +41,39 @@ function h(e) {
                 className: v.C2,
                 variant: "text-xs/semibold",
                 children: x.intl.format(g.default.fXE30d, {
-                    helpDeskArticle: u.A.getArticleURL(A.MVz.GUILD_BOOSTING_FAQ)
+                    helpDeskArticle: d.A.getArticleURL(A.MVz.GUILD_BOOSTING_FAQ)
                 })
             })]
         }), (0, r.jsxs)("div", {
             className: v.hQ,
             children: [(0, r.jsx)(m.A, {
-                count: E,
+                count: h,
                 type: f.yG.AVAILABLE
             }), (0, r.jsx)(m.A, {
-                count: b,
+                count: E,
                 type: f.yG.SPENT
             }), (0, r.jsx)(m.A, {
                 count: I,
                 type: f.yG.TOTAL
             })]
         }), (0, r.jsx)(a.A, {
-            className: j ? void 0 : v.S6,
-            guild: h,
+            className: b ? void 0 : v.S6,
+            guild: n,
             analyticsLocation: {
                 page: A.liQ.GUILD_POWERUPS_OVERVIEW,
                 section: A.JJy.GUILD_POWERUPS_OVERVIEW_SIDEBAR
             },
             color: s.XD.CUSTOM,
             size: s.lO.LARGE,
-            fullWidth: j,
-            useExpressiveButton: j,
+            fullWidth: b,
+            useExpressiveButton: b,
             icon: (0, r.jsx)(o._Jp, {
                 className: v.Ng,
                 size: "sm",
                 color: o.LU0.unsafe_rawColors.GUILD_BOOSTING_PINK
             })
         }), (0, r.jsx)(_.A, {
-            guildId: t,
-            showVideoCard: n
+            guildId: t
         })]
     })
 }

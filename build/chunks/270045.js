@@ -3,8 +3,8 @@ n.d(t, {
     C: () => R
 });
 var i = n(627968),
-    r = n(64700),
-    a = n(311907),
+    a = n(64700),
+    r = n(311907),
     l = n(397927),
     s = n(442433),
     o = n(181658),
@@ -31,7 +31,7 @@ var i = n(627968),
     j = n(985018);
 
 function L(e) {
-    let t = (0, a.bG)([m.A], () => m.A.questDeliveryOverride, []),
+    let t = (0, r.bG)([m.A], () => m.A.questDeliveryOverride, []),
         n = (0, I.vy)(e.questContent),
         c = [h.uF.QUEST_BAR_V2, h.uF.QUEST_BAR].includes(e.questContent),
         L = (0, A.Ut)(),
@@ -54,7 +54,7 @@ function L(e) {
         G = (0, v.Lk)({
             isShareable: w,
             questId: e.quest.id,
-            trackingCtx: r.useMemo(() => ({
+            trackingCtx: a.useMemo(() => ({
                 content: e.questContent,
                 position: e.questContentPosition,
                 ctaContent: x.Cy.CONTEXT_MENU_COPY_LINK,
@@ -65,13 +65,13 @@ function L(e) {
         F = e => (0, l.showToast)((0, l.createToast)(new o.A(e, e.status).message, l.ToastType.FAILURE)),
         H = () => (0, _.CV)(e.quest.id).catch(F),
         V = (0, g.nv)(e.quest),
-        q = r.useMemo(() => (0, i.jsx)(l.sLh, {
+        q = a.useMemo(() => (0, i.jsx)(l.sLh, {
             id: "delivery",
             label: "Show in Quest Bar",
             checked: t?.id === e.quest.id,
             action: U
         }), [U, e.quest.id, t?.id]),
-        W = r.useCallback(() => {
+        W = a.useCallback(() => {
             (0, d.pX)(S.BVt.QUEST_PREVIEW_TOOL_2(e.quest.id))
         }, [e.quest.id]),
         z = e.shouldShowDisclosure && e.quest.id !== y.Fw;
@@ -210,14 +210,14 @@ function R(e) {
     let {
         children: t,
         onOpen: n,
-        onClose: a,
+        onClose: r,
         preventIdle: s,
         quest: o,
         questContent: d,
         questContentPosition: u,
         sourceQuestContent: _,
         ...m
-    } = e, h = (0, A.Ut)(), p = r.useRef(null), g = r.useCallback(() => {
+    } = e, h = (0, A.Ut)(), p = a.useRef(null), g = a.useCallback(() => {
         h({
             questId: o.id,
             questContent: d,
@@ -229,7 +229,7 @@ function R(e) {
     return (0, i.jsx)(l.YNO, {
         targetElementRef: p,
         onRequestOpen: g,
-        onRequestClose: a,
+        onRequestClose: r,
         renderPopout: e => {
             let {
                 closePopout: t

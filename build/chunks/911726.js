@@ -18,8 +18,8 @@ var i, l = n(627968),
     T = n(567771),
     f = n(780964),
     N = n(840065),
-    C = n(473145),
-    g = n(763754),
+    g = n(473145),
+    C = n(763754),
     h = n(888675),
     p = n(921066),
     x = n(652215),
@@ -113,9 +113,9 @@ let D = ["TOP_LEFT", "TOP_RIGHT"],
     }),
     L = "falling-leaf",
     j = ["#61D5B2"],
-    y = n(80705),
-    b = n(232460),
-    k = [y, b];
+    b = n(80705),
+    y = n(232460),
+    k = [b, y];
 
 function G() {
     return n.e("98150").then(n.t.bind(n, 633343, 19)).then(e => {
@@ -146,7 +146,7 @@ function F(e) {
     }()), {
         createMultipleConfettiAt: I,
         confettiCanvas: T
-    } = a.useContext(m.x), [f, N] = a.useState(null), C = (0, o.f9)(T, f), g = function(e, t) {
+    } = a.useContext(m.x), [f, N] = a.useState(null), g = (0, o.f9)(T, f), C = function(e, t) {
         if (null == e) return "enter";
         switch (e) {
             case "enter":
@@ -202,7 +202,7 @@ function F(e) {
     }, [I, E, u, r]), a.useEffect(() => {
         if (h && "leaf_fall" === u) {
             let e = v[E].leafRotationDirection;
-            C.createConfetti({
+            g.createConfetti({
                 id: `${L}-${(0,c.A)()}`,
                 position: {
                     type: "static",
@@ -247,10 +247,10 @@ function F(e) {
                     }
                 }
             }, {
-                sprite: "TOP_LEFT" === E ? y : b
+                sprite: "TOP_LEFT" === E ? b : y
             })
         }
-    }, [h, C, E, u]), (0, l.jsxs)(l.Fragment, {
+    }, [h, g, E, u]), (0, l.jsxs)(l.Fragment, {
         children: [(0, l.jsx)(o.K_, {
             ref: N,
             sprites: k,
@@ -270,7 +270,7 @@ function F(e) {
                 className: s()(S.oQ, {
                     [S.EG]: p
                 }),
-                nextScene: g,
+                nextScene: C,
                 sceneSegments: O,
                 onScenePlay: x,
                 onSceneComplete: R,
@@ -310,7 +310,7 @@ function B(e) {
         {
             reducedMotion: D
         } = a.useContext(_.CZY),
-        P = (0, g.Ay)(n),
+        P = (0, C.Ay)(n),
         U = P.nick,
         v = s(P);
     t = null == c || null == r ? d > 1 ? R.intl.format(R.t.yfC9ds, {
@@ -325,12 +325,12 @@ function B(e) {
         usernameHook: v,
         numSubscriptions: d,
         guildName: r.name,
-        newTierName: (0, C.gb)(c)
+        newTierName: (0, g.gb)(c)
     }) : R.intl.format(R.t.cUfTTE, {
         username: U,
         usernameHook: v,
         guildName: r.name,
-        newTierName: (0, C.gb)(c)
+        newTierName: (0, g.gb)(c)
     });
     let j = a.useCallback(() => {
             if (!D.enabled)
@@ -340,17 +340,17 @@ function B(e) {
                     u(e.left + e.width / 2, e.top + e.height / 2)
                 } else O(!0)
         }, [u, D, p]),
-        y = a.useCallback(() => {
+        b = a.useCallback(() => {
             O(!1)
         }, []),
-        b = a.useCallback(() => {
+        y = a.useCallback(() => {
             (0, I.O9)({
                 settingsVisible: !0
             }), (0, N.openUserSettings)(f.X.POGGERMODE_PANEL), O(!1)
         }, []),
         k = a.useCallback((e, t) => {
-            t?.id.startsWith(L) && b()
-        }, [b]);
+            t?.id.startsWith(L) && y()
+        }, [y]);
     a.useEffect(() => A(k));
     let G = a.useCallback(e => {
             e.target === e.currentTarget && o(e)
@@ -377,8 +377,8 @@ function B(e) {
             children: (0, l.jsx)("div", {
                 className: S.LK,
                 children: (0, l.jsx)(F, {
-                    onAnimationComplete: y,
-                    onClick: b
+                    onAnimationComplete: b,
+                    onClick: y
                 })
             })
         }) : null]

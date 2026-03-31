@@ -3,19 +3,19 @@ n.d(t, {
     A: () => m
 });
 var i = n(627968),
-    r = n(64700),
-    a = n(503698),
-    l = n.n(a),
+    a = n(64700),
+    r = n(503698),
+    l = n.n(r),
     s = n(382222),
     o = n(397927),
     d = n(398025),
     c = n(419367),
     u = n(293225);
 let _ = "var(--background-mod-strong)",
-    m = r.forwardRef((e, t) => {
+    m = a.forwardRef((e, t) => {
         let {
             percentComplete: n,
-            size: a = 42,
+            size: r = 42,
             style: m = "default",
             percentCompleteText: h,
             percentCompleteTextVariant: p = "text-lg/medium",
@@ -26,7 +26,7 @@ let _ = "var(--background-mod-strong)",
             strokeWidth: 3
         } : {
             strokeWidth: 4
-        }, x = a / 2, f = a / 2 - A / 2, C = 2 * Math.PI * f, I = C - n * C, E = r.useMemo(() => ({
+        }, x = r / 2, f = r / 2 - A / 2, C = 2 * Math.PI * f, I = C - n * C, E = a.useMemo(() => ({
             strokeDasharray: `${C} ${C}`,
             strokeDashoffset: I
         }), [C, I]), {
@@ -39,8 +39,8 @@ let _ = "var(--background-mod-strong)",
             className: u.A7,
             ref: t,
             style: {
-                width: a,
-                height: a,
+                width: r,
+                height: r,
                 padding: A + 2
             },
             children: [(0, i.jsxs)("div", {
@@ -62,8 +62,8 @@ let _ = "var(--background-mod-strong)",
                 })]
             }), (0, i.jsxs)("svg", {
                 className: u.hr,
-                height: a,
-                width: a,
+                height: r,
+                width: r,
                 children: [(0, i.jsx)("circle", {
                     className: u.qB,
                     strokeWidth: A,

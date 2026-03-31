@@ -81,15 +81,15 @@ function b() {
         refreshEntitlementList: A,
         grantFractionalPremium: C,
         deleteFractionalPremium: y,
-        triggerNextEntitlementFulfillment: S,
-        entitlements: T,
+        triggerNextEntitlementFulfillment: T,
+        entitlements: S,
         loading: E
     } = (0, m.o)();
     return i.useEffect(() => {
         A()
     }, [A]), i.useEffect(() => {
-        _(T.filter(e => null != e.endsAt && e.endsAt > new Date && e.type === h.zF_.FRACTIONAL_REDEMPTION)), j(T.filter(e => Object.values(r.j).includes(e.skuId) && null == e.startsAt))
-    }, [T]), (0, a.jsx)(d.IpV, {
+        _(S.filter(e => null != e.endsAt && e.endsAt > new Date && e.type === h.zF_.FRACTIONAL_REDEMPTION)), j(S.filter(e => Object.values(r.j).includes(e.skuId) && null == e.startsAt))
+    }, [S]), (0, a.jsx)(d.IpV, {
         className: g.nd,
         children: (0, a.jsxs)("div", {
             className: p.l$,
@@ -169,7 +169,7 @@ function b() {
                             size: o.$n.Sizes.TINY,
                             color: o.$n.Colors.PRIMARY,
                             look: o.$n.Looks.OUTLINED,
-                            onClick: () => S(),
+                            onClick: () => T(),
                             children: "Run fulfillment"
                         }), (0, a.jsx)(o.$n, {
                             disabled: E,

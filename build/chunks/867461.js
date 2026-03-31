@@ -3,9 +3,9 @@ n.d(t, {
     l: () => E
 });
 var i = n(627968),
-    r = n(64700),
-    a = n(503698),
-    l = n.n(a),
+    a = n(64700),
+    r = n(503698),
+    l = n.n(r),
     s = n(158954),
     o = n(311907),
     d = n(827734),
@@ -44,12 +44,12 @@ function E(e) {
     let {
         quest: t,
         isInteracting: n,
-        location: a,
+        location: r,
         sourceQuestContent: l
     } = e, E = (0, h.Ic)(t), b = t.userStatus?.claimedAt != null, v = (0, m.S5)(t.config.expiresAt, {
         month: "numeric",
         day: "numeric"
-    }), T = (0, o.bG)([_.A], () => _.A.getQuestHomeHeroConfig()), y = r.useMemo(() => null != T && (0, p.I0)(T, t.id), [T, t.id]), S = (0, c.Ay)(), N = (0, s.Mwr)(S) ? "text-muted" : "always-white";
+    }), T = (0, o.bG)([_.A], () => _.A.getQuestHomeHeroConfig()), y = a.useMemo(() => null != T && (0, p.I0)(T, t.id), [T, t.id]), S = (0, c.Ay)(), N = (0, s.Mwr)(S) ? "text-muted" : "always-white";
     return (0, i.jsxs)("div", {
         className: C.kL,
         children: [(0, i.jsx)("div", {
@@ -84,7 +84,7 @@ function E(e) {
                             children: f.intl.string(f.t.SKNnqq)
                         })]
                     }), (0, i.jsx)(A.C, {
-                        questContent: a,
+                        questContent: r,
                         quest: t,
                         hideLearnMore: !0,
                         shouldShowDisclosure: !0,

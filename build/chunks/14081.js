@@ -1,6 +1,6 @@
 /** chunk id: 14081 params = (module,exports,require) **/
 n.d(t, {
-    A: () => I
+    A: () => b
 });
 var r = n(627968),
     i = n(64700),
@@ -8,8 +8,8 @@ var r = n(627968),
     s = n.n(l),
     o = n(158954),
     a = n(311907),
-    d = n(397927),
-    u = n(793574),
+    u = n(397927),
+    d = n(793574),
     c = n(890942),
     p = n(744201),
     _ = n(522055),
@@ -21,14 +21,14 @@ var r = n(627968),
     v = n(294726),
     h = n(985018),
     E = n(849289),
-    b = n(848820);
+    I = n(848820);
 
-function I(e) {
+function b(e) {
     let {
         guildId: t
     } = e, n = i.useRef(null), {
         state: l,
-        lowestGameServerCost: I
+        lowestGameServerCost: b
     } = (0, a.cf)([_.A], () => ({
         state: _.A.getStateForGuild(t),
         lowestGameServerCost: _.A.getLowestGameCostForGuild(t)
@@ -45,14 +45,14 @@ function I(e) {
         isWarning: j?.type === "expiring",
         onClick: () => (0, A.A)({
             guildId: t,
-            analyticsLocation: u.A.GUILD_POWERUPS_OVERVIEW
+            analyticsLocation: d.A.GUILD_POWERUPS_OVERVIEW
         }),
         children: [(0, r.jsx)("div", {
-            className: s()(b.ZS, E.Sl),
+            className: s()(I.ZS, E.Sl),
             children: (0, r.jsx)(o.E_w, {
                 withReducedMotion: "halt",
                 eventTargetRef: n,
-                className: b.Sl,
+                className: I.Sl,
                 fit: "contain",
                 stateMachine: "SM_Main_Int"
             })
@@ -60,7 +60,7 @@ function I(e) {
             title: h.intl.string(v.default["B3OfL/"]),
             textColor: w,
             footer: (0, r.jsx)(c.$L, {
-                cost: I ?? 0,
+                cost: b ?? 0,
                 costDecorator: "+",
                 status: j
             }),
@@ -74,14 +74,14 @@ function I(e) {
                 })
             })
         }), (0, r.jsx)(c.kd, {
-            children: (0, r.jsx)(d.Button, {
+            children: (0, r.jsx)(u.Button, {
                 variant: "primary",
                 fullWidth: !0,
                 text: Object.values(l.entitlements).length > 0 ? h.intl.string(v.default.PuvU5b) : h.intl.string(v.default.b62EHM),
                 onClick: e => {
                     e.stopPropagation(), (0, A.A)({
                         guildId: t,
-                        analyticsLocation: u.A.GUILD_POWERUPS_OVERVIEW
+                        analyticsLocation: d.A.GUILD_POWERUPS_OVERVIEW
                     })
                 }
             })

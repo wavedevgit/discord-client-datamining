@@ -6,8 +6,8 @@ n.d(t, {
     j8: () => N
 }), n(801541);
 var i = n(889137),
-    r = n(966974),
-    a = n(775602),
+    a = n(966974),
+    r = n(775602),
     l = n(508675),
     s = n(7584),
     o = n(229527),
@@ -51,9 +51,9 @@ function N(e, t) {
         poll: i
     } = e;
     if (null == i) return;
-    let r = e.state === b.cmJ.SENT,
-        a = r ? n ?? (0, E.J)(i.expiry) : "",
-        l = null == a && r,
+    let a = e.state === b.cmJ.SENT,
+        r = a ? n ?? (0, E.J)(i.expiry) : "",
+        l = null == r && a,
         {
             selectedAnswerIds: s,
             submitting: m,
@@ -70,26 +70,26 @@ function N(e, t) {
         C = g.some(e => !0 === e.me_vote),
         I = !h && C,
         v = I || l || p,
-        y = r && x && (!C || h || v),
+        y = a && x && (!C || h || v),
         N = c.A.getChannel(e.getChannelId())?.getGuildId?.(),
         j = null != N ? u.Ay.getSelfMember(N) : null,
         L = (0, o.TR)(j),
         R = (0, d.Z)(j),
-        P = !m && f && !I && r && !L && !R;
+        P = !m && f && !I && a && !L && !R;
     return {
         poll: i,
         canTapAnswers: y,
-        canRemoveVote: I && r && !l,
+        canRemoveVote: I && a && !l,
         canShowVoteCounts: v,
         canSubmitVote: P,
-        expirationLabel: a,
+        expirationLabel: r,
         hasSelectedAnswer: f,
         hasVoted: I,
         hasVoteRecorded: C,
         isEditingVote: h,
         isExpired: l,
         isInteractive: x,
-        isSent: r,
+        isSent: a,
         reactions: g,
         selectedAnswerIds: s,
         submitting: m,
@@ -109,7 +109,7 @@ function j(e, t) {
     if (null == u) return;
     let _ = m.default.getCurrentUser();
     if (null == _) return;
-    let A = a.A.useReducedMotion,
+    let A = r.A.useReducedMotion,
         E = c.A.getChannel(e.getChannelId())?.getGuildId?.(),
         b = (0, C.T)(_, E),
         T = u.answers,
@@ -140,11 +140,11 @@ function j(e, t) {
         let t = y(G, `${e.answer_id}`);
         return t?.count_details?.vote ?? 0
     })), Q = T.map(e => {
-        let t, a = `${e.answer_id}`,
-            o = y(G, a),
+        let t, r = `${e.answer_id}`,
+            o = y(G, r),
             d = o?.count_details?.vote ?? 0,
             c = 0 === W ? 0 : d / W,
-            u = F.has(a),
+            u = F.has(r),
             _ = d >= Y && 0 !== d,
             m = k && (o?.me_vote ?? !1),
             g = (t = {
@@ -180,7 +180,7 @@ function j(e, t) {
                 showResults: !0
             }, () => "notVoted").otherwise(() => "normalVote"));
         return {
-            answerId: a,
+            answerId: r,
             pollMedia: {
                 text: e.poll_media.text,
                 emoji: function(e) {
@@ -191,17 +191,17 @@ function j(e, t) {
                     if (null == e) return;
                     let i = e.animated;
                     null == i && null != e.id && (i = l.Ay.getCustomEmojiById(e.id)?.animated ?? !1);
-                    let r = t && (i ?? !1);
+                    let a = t && (i ?? !1);
                     return {
                         id: null == e.id ? null : `${e.id}`,
                         name: e.name,
                         displayName: null == e.id ? s.Ay.convertSurrogateToName(e.name) : e.name,
                         src: null == e.id ? p.Ay.getURL(e.name) : h.Ay.getEmojiURL({
                             id: e.id,
-                            animated: r,
+                            animated: a,
                             size: n
                         }),
-                        animated: r
+                        animated: a
                     }
                 }(e.poll_media.emoji, {
                     animateEmoji: n
@@ -215,7 +215,7 @@ function j(e, t) {
             style: g,
             shouldAnimateTransition: H && !A,
             votesPercentage: Math.round(100 * c),
-            votes: (0, i.YW)(S).with(r.Z.IMAGE_ONLY_ANSWERS, () => `(${d.toLocaleString()})`).otherwise(() => v.intl.formatToPlainString(v.t.XRkuof, {
+            votes: (0, i.YW)(S).with(a.Z.IMAGE_ONLY_ANSWERS, () => `(${d.toLocaleString()})`).otherwise(() => v.intl.formatToPlainString(v.t.XRkuof, {
                 count: d
             }))
         }

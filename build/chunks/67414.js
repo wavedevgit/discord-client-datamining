@@ -19,12 +19,12 @@ var i = n(627968),
     T = n(51501),
     f = n(233971),
     N = n(788868),
-    C = n(652215),
-    g = n(778712),
+    g = n(652215),
+    C = n(778712),
     h = n(985018),
     p = n(478169);
-let x = (0, s.FT9)(g._3.SIZE_56),
-    R = (0, s.FT9)(g._3.SIZE_24);
+let x = (0, s.FT9)(C._3.SIZE_56),
+    R = (0, s.FT9)(C._3.SIZE_24);
 
 function S(e) {
     let {
@@ -62,7 +62,7 @@ function S(e) {
                 className: p.A6,
                 user: t,
                 "aria-label": n,
-                size: g._3.SIZE_56
+                size: C._3.SIZE_56
             })
         })]
     })
@@ -86,8 +86,8 @@ function O(e) {
         analyticsObject: {
             page: R,
             section: O,
-            object: C.ZSU.BUTTON_CTA,
-            objectType: C.AnalyticsObjectTypes.GIFT
+            object: g.ZSU.BUTTON_CTA,
+            objectType: g.AnalyticsObjectTypes.GIFT
         },
         location: "gift-intent-card"
     });
@@ -119,7 +119,7 @@ function O(e) {
                         className: p.GM,
                         user: D,
                         "aria-label": x.username,
-                        size: g._3.SIZE_24
+                        size: C._3.SIZE_24
                     })]
                 }), (0, i.jsxs)("div", {
                     className: p.FS,
@@ -151,7 +151,7 @@ function O(e) {
                     text: h.intl.string(h.t.nffuyb),
                     "aria-label": h.intl.string(h.t.nffuyb),
                     onClick: e => {
-                        e.stopPropagation(), A.default.track(C.HAw.GIFT_INTENT_CARD_SECONDARY_CTA_CLICKED, {
+                        e.stopPropagation(), A.default.track(g.HAw.GIFT_INTENT_CARD_SECONDARY_CTA_CLICKED, {
                             gift_intent_type: t,
                             cta_type: "send_message",
                             location_stack: P
@@ -175,7 +175,7 @@ function O(e) {
                     onClick: e => {
                         e.stopPropagation();
                         let n = _.A.getUserAffinity(x.id);
-                        A.default.track(C.HAw.GIFT_INTENT_ACTION_BUTTON_CLICKED, {
+                        A.default.track(g.HAw.GIFT_INTENT_ACTION_BUTTON_CLICKED, {
                             gift_intent_type: t,
                             affinity: n?.dmProbability,
                             location_stack: P

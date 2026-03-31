@@ -25,7 +25,7 @@ function v() {
         removeToolsCache: v
     } = (0, u.DE)(), {
         setImgCache: y
-    } = (0, u.TW)(), S = (0, i.useCallback)(e => {
+    } = (0, u.TW)(), T = (0, i.useCallback)(e => {
         let t = x[e];
         null != t ? c({
             previewToolKey: t.url,
@@ -39,7 +39,7 @@ function v() {
             ...t,
             previewToolKey: e
         })
-    }, [x]), T = (0, i.useCallback)(e => {
+    }, [x]), S = (0, i.useCallback)(e => {
         c(t => null == t ? null : {
             ...t,
             palette: e
@@ -72,7 +72,7 @@ function v() {
                 children: [e && (0, a.jsx)(d.Ix, {}), n && (0, a.jsx)(p.A, {
                     selected: r?.palette?.name,
                     onSelect: e => {
-                        r?.previewToolKey != null && g(r.previewToolKey, r.previewToolKey, e), T(e)
+                        r?.previewToolKey != null && g(r.previewToolKey, r.previewToolKey, e), S(e)
                     }
                 })]
             })]
@@ -103,13 +103,13 @@ function v() {
                         } = e;
                         return (0, a.jsx)(j, {
                             src: t,
-                            onSetStatic: S,
+                            onSetStatic: T,
                             removeAsset: E
                         }, t)
                     })
                 }), (0, a.jsx)(C, {
                     label: "gradient override",
-                    onChange: e => T({
+                    onChange: e => S({
                         name: m.AK,
                         darkBackground: e,
                         lightBackground: e
@@ -162,12 +162,12 @@ function b(e) {
             }), (0, a.jsx)(l.Text, {
                 variant: "text-sm/semibold",
                 children: "DMs"
-            }), (0, a.jsx)(S, {
+            }), (0, a.jsx)(T, {
                 nameplate: t
             }), (0, a.jsx)(l.Text, {
                 variant: "text-sm/semibold",
                 children: "RTC"
-            }), (0, a.jsx)(T, {
+            }), (0, a.jsx)(S, {
                 nameplate: t
             }), (0, a.jsx)("div", {
                 className: f.Di,
@@ -286,7 +286,7 @@ function y(e) {
     })
 }
 
-function S(e) {
+function T(e) {
     let {
         nameplate: t
     } = e;
@@ -316,7 +316,7 @@ function S(e) {
     })
 }
 
-function T(e) {
+function S(e) {
     let {
         nameplate: t
     } = e;

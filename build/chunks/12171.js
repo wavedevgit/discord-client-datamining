@@ -1,6 +1,6 @@
 /** chunk id: 12171 params = (module,exports,require) **/
 n.d(t, {
-    A: () => T
+    A: () => S
 });
 var a = n(627968),
     i = n(64700),
@@ -1160,7 +1160,7 @@ let b = [{
         label: "Yukon",
         value: "YT"
     }],
-    S = {
+    T = {
         NONE: null,
         AB: {
             name: "Alberta Legislature Building",
@@ -1281,8 +1281,8 @@ let b = [{
         }
     };
 
-function T() {
-    let [e, t] = i.useState("US"), [n, d] = i.useState(null), [c, m] = i.useState(null), [h, x] = i.useState(null), [g, T] = i.useState(null), [E, N] = i.useState("pm_card_us"), [k, O] = i.useState(!1), D = Object.values((0, s.bG)([p.A], () => p.A.paymentSources)), P = j[e], M = async () => {
+function S() {
+    let [e, t] = i.useState("US"), [n, d] = i.useState(null), [c, m] = i.useState(null), [h, x] = i.useState(null), [g, S] = i.useState(null), [E, N] = i.useState("pm_card_us"), [k, O] = i.useState(!1), D = Object.values((0, s.bG)([p.A], () => p.A.paymentSources)), P = j[e], M = async () => {
         let t = E;
         "" === t && (t = "pm_card_us"), await l.Bo.post({
             url: "/debug/payment-source",
@@ -1376,7 +1376,7 @@ function T() {
                         }
                     }),
                     onSelectionChange: e => {
-                        x(e), T(S[e] ?? null)
+                        x(e), S(T[e] ?? null)
                     }
                 }), (0, a.jsx)(r.l6P, {
                     selectionMode: "single",

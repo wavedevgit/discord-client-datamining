@@ -24,9 +24,9 @@ var a = n(627968),
     A = n(536242),
     C = n(985018),
     y = n(774992),
-    S = n(700129);
+    T = n(700129);
 
-function T(e) {
+function S(e) {
     let {
         modalSessionId: t,
         entryPoint: n
@@ -87,13 +87,13 @@ let E = function(e) {
         dismissable: E,
         graphic: {
             type: "image",
-            src: S.A
+            src: T.A
         },
         title: (0, f.ST)(n),
         subtitle: (0, f.mK)(n, () => {
             p.A.openUrl(x.A.getArticleURL(b.MVz.TIGGER_PAWTECT_LEARN_MORE)), (0, g.St)(D, g.WU.EXPRESSIVE_PRIMARY, g._7.LEARN_MORE)
         }, M),
-        actionBarInput: (0, a.jsx)(T, {
+        actionBarInput: (0, a.jsx)(S, {
             modalSessionId: D,
             entryPoint: n
         }),

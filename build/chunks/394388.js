@@ -19,8 +19,8 @@ var i = n(627968),
     T = n(888675),
     f = n(652215),
     N = n(49999),
-    C = n(985018),
-    g = n(333354),
+    g = n(985018),
+    C = n(333354),
     h = n(884967),
     p = n(274993),
     x = n(218924);
@@ -81,8 +81,8 @@ function S(e) {
     }, [t.id]);
     let n = (0, A.A)(t.id);
     return (0, i.jsx)(R, {
-        title: C.intl.string(g.default.qGDEON),
-        body: C.intl.format(g.default["s+HTdX"], {
+        title: g.intl.string(C.default.qGDEON),
+        body: g.intl.format(C.default["s+HTdX"], {
             viewAllPerks: e => (0, i.jsx)(s.DUT, {
                 tag: "a",
                 role: "link",

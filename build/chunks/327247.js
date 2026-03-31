@@ -3,9 +3,9 @@ n.d(t, {
     x: () => D
 });
 var i = n(627968),
-    r = n(64700),
-    a = n(503698),
-    l = n.n(a),
+    a = n(64700),
+    r = n(503698),
+    l = n.n(r),
     s = n(382222),
     o = n(494012),
     d = n(158954),
@@ -39,16 +39,16 @@ function D(e) {
     let {
         quest: t,
         location: n,
-        isInteracting: a,
+        isInteracting: r,
         contentPosition: E,
         sourceQuestContent: v
-    } = e, D = r.useRef(null), {
+    } = e, D = a.useRef(null), {
         ref: U,
         scrollHeight: B
     } = (0, o.wR)(), G = 104 !== B, {
         expansionSpring: F
     } = (0, d.zhh)({
-        expansionSpring: +!!a,
+        expansionSpring: +!!r,
         config: {
             tension: 250,
             friction: 20,
@@ -57,7 +57,7 @@ function D(e) {
     }), H = (0, C.Ic)(t), V = (0, A.In)(t), q = (0, I.mq)(t.config), W = (0, I.mH)(t.config), z = t.userStatus?.enrolledAt != null, Y = t.userStatus?.completedAt != null, Q = t.userStatus?.claimedAt != null, K = (0, I.ks)(t.config), J = (0, I._Z)(t.config), {
         completedRatio: X,
         completedRatioDisplay: Z
-    } = (0, A.O9)(t), $ = (0, g.gj)(t, v, _.Ob.QuestEmbed, D), ee = (0, y.Pd)(t), et = r.useMemo(() => Q && K ? R.intl.format(R.t["8Op4c4"], {
+    } = (0, A.O9)(t), $ = (0, g.gj)(t, v, _.Ob.QuestEmbed, D), ee = (0, y.Pd)(t), et = a.useMemo(() => Q && K ? R.intl.format(R.t["8Op4c4"], {
         balanceHook: () => (0, i.jsxs)(k, {
             questId: t.id,
             children: [(0, i.jsx)(m.A, {
@@ -83,14 +83,14 @@ function D(e) {
             questId: t.id,
             children: W
         }, t.id)
-    }), [q, Q, W, t.id, J, K]), en = r.useMemo(() => {
+    }), [q, Q, W, t.id, J, K]), en = a.useMemo(() => {
         if (null != $) return (0, i.jsx)(d.EYj, {
             variant: "text-sm/medium",
             color: "text-muted",
             className: w.h_,
             children: $
         })
-    }, [$]), ei = (0, c.bG)([u.A], () => u.A.useReducedMotion), er = r.useCallback(() => {
+    }, [$]), ei = (0, c.bG)([u.A], () => u.A.useReducedMotion), ea = a.useCallback(() => {
         (0, j.navigateToQuestHome)({
             fromContent: n,
             questId: t.id
@@ -101,7 +101,7 @@ function D(e) {
             questContentCTA: f.Cy.LEARN_MORE,
             sourceQuestContent: v
         })
-    }, [t.id, n, E, v]), ea = (0, c.bG)([h.A], () => null != h.A.questEnrollmentBlockedUntil, []), el = p.t.useConfig({
+    }, [t.id, n, E, v]), er = (0, c.bG)([h.A], () => null != h.A.questEnrollmentBlockedUntil, []), el = p.t.useConfig({
         location: L.rE.EMBED_DESKTOP
     });
     return (0, i.jsxs)("div", {
@@ -127,11 +127,11 @@ function D(e) {
                     }), (0, i.jsx)(b.A, {
                         size: 76,
                         percentComplete: X,
-                        percentCompleteText: a && !H ? Z : void 0,
+                        percentCompleteText: r && !H ? Z : void 0,
                         children: (0, i.jsx)(S.A, {
                             quest: t,
                             questContent: n,
-                            autoplay: a,
+                            autoplay: r,
                             lazyLoad: !0,
                             fullWidth: !0,
                             sourceQuestContent: v
@@ -139,7 +139,7 @@ function D(e) {
                     })]
                 }) : (0, i.jsx)(S.A, {
                     quest: t,
-                    autoplay: a,
+                    autoplay: r,
                     questContent: n,
                     className: w.eB,
                     lazyLoad: !0,
@@ -171,7 +171,7 @@ function D(e) {
             })]
         }), (0, i.jsx)("div", {
             className: P.kL,
-            children: ea ? (0, i.jsxs)(d.e2v, {
+            children: er ? (0, i.jsxs)(d.e2v, {
                 direction: "horizontal",
                 fullWidth: !0,
                 wrap: !1,
@@ -192,10 +192,10 @@ function D(e) {
                     variant: "secondary",
                     text: R.intl.string(R.t.LLLLPD),
                     fullWidth: !0,
-                    onClick: er
+                    onClick: ea
                 }), el.enabled && (ee === y.UA.UNENROLLED || ee === y.UA.ENROLLED) && el.enabledQuestStates.has(ee) ? (0, i.jsx)(T.A, {
                     quest: t,
-                    surface: y.V3.QUEST_EMBED_CARD,
+                    surface: y.V3.QUEST_EMBED,
                     analyticsCtxQuestContent: n,
                     analyticsCtxSourceQuestContent: v,
                     analyticsCtxQuestContentPosition: E
@@ -210,7 +210,7 @@ function D(e) {
         })]
     })
 }
-let k = r.memo(function(e) {
+let k = a.memo(function(e) {
     let {
         questId: t,
         children: n
@@ -228,14 +228,14 @@ function O(e) {
     let {
         quest: t,
         progressState: n,
-        questContent: r,
-        questContentPosition: a,
+        questContent: a,
+        questContentPosition: r,
         sourceQuestContent: l
     } = e, s = (0, c.bG)([h.A], () => h.A.isEnrolling(t.id)), o = (0, E.vv)(t), u = (0, E.Cr)(t), _ = (0, C.Ic)(t), m = (0, v._c)({
         progressState: n,
         quest: t,
-        questContent: r,
-        questContentPosition: a,
+        questContent: a,
+        questContentPosition: r,
         inGiftInventory: !1,
         isVideoQuest: o,
         inGameQuest: u,

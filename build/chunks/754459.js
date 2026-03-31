@@ -3,8 +3,8 @@ n.d(t, {
     A: () => s
 });
 var i = n(64700),
-    r = n(203982),
-    a = n(652215);
+    a = n(203982),
+    r = n(652215);
 
 function l(e) {
     return Object.keys(e).some(t => e[t])
@@ -32,7 +32,7 @@ function s(e, t) {
                 emojiBurstPicker: n
             })
         };
-        return r._.subscribeKeyed(a.zOV.TOGGLE_REACTION_POPOUT, e, t), () => void r._.unsubscribeKeyed(a.zOV.TOGGLE_REACTION_POPOUT, e, t)
+        return a._.subscribeKeyed(r.zOV.TOGGLE_REACTION_POPOUT, e, t), () => void a._.unsubscribeKeyed(r.zOV.TOGGLE_REACTION_POPOUT, e, t)
     }, [e, _]), {
         popouts: n,
         setPopout: _,

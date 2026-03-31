@@ -8,8 +8,8 @@ var r = n(627968),
     s = n(932001),
     o = n(630117),
     a = n(613943),
-    d = n(71478),
-    u = n(182859),
+    u = n(71478),
+    d = n(182859),
     c = n(636086),
     p = n(180185),
     _ = n(629721),
@@ -35,34 +35,33 @@ function h(e) {
 
 function E(e) {
     let {
-        guildId: t,
-        showVideoCard: n = !1
-    } = e, E = (0, d.A)(t), b = (0, o.A)(t), I = (0, a.A)(t), j = n ? [l.M.GUILD_POWERUPS_OVERVIEW_SIDEBAR_VIDEO_CARD] : [], [S, C] = (0, s.kn)(j), w = S === l.M.GUILD_POWERUPS_OVERVIEW_SIDEBAR_VIDEO_CARD, y = (0, m.A)(b.shouldShow || I.shouldShow || w);
-    return E.shouldShow || b.shouldShow || I.shouldShow || y.shouldShow || w ? (0, r.jsxs)("div", {
+        guildId: t
+    } = e, n = (0, u.A)(t), E = (0, o.A)(t), I = (0, a.A)(t), b = [l.M.GUILD_POWERUPS_OVERVIEW_SIDEBAR_VIDEO_CARD], [j, S] = (0, s.kn)(b), C = j === l.M.GUILD_POWERUPS_OVERVIEW_SIDEBAR_VIDEO_CARD, w = (0, m.A)(E.shouldShow || I.shouldShow || C);
+    return n.shouldShow || E.shouldShow || I.shouldShow || w.shouldShow || C ? (0, r.jsxs)("div", {
         className: v.kL,
         children: [(0, r.jsx)(i.EYj, {
             variant: "eyebrow",
             color: "text-subtle",
             children: x.intl.string(g.default["3FRirU"])
-        }), E.shouldShow && (0, r.jsx)(h, {
-            text: E.text
-        }), b.shouldShow && (0, r.jsx)(_.A, {
+        }), n.shouldShow && (0, r.jsx)(h, {
+            text: n.text
+        }), E.shouldShow && (0, r.jsx)(_.A, {
             guildId: t,
-            powerupNames: b.expiringPowerupNames,
-            warnings: b.warnings
+            powerupNames: E.expiringPowerupNames,
+            warnings: E.warnings
         }), I.shouldShow && null != I.notificationConfig && (0, r.jsx)(p.A, {
             notificationConfig: I.notificationConfig,
             markAsDismissed: I.markAsDismissed
-        }), y.shouldShow && (0, r.jsx)(c.A, {
-            markAsDismissed: y.markAsDismissed
-        }), w && (0, r.jsx)(u.A, {
+        }), w.shouldShow && (0, r.jsx)(c.A, {
+            markAsDismissed: w.markAsDismissed
+        }), C && (0, r.jsx)(d.A, {
             guildId: t,
             analyticsLocation: {
                 page: f.liQ.GUILD_POWERUPS_OVERVIEW,
                 section: f.JJy.GUILD_POWERUPS_OVERVIEW_SIDEBAR,
                 object: f.ZSU.CARD
             },
-            onDismiss: () => C(A.i.USER_DISMISS)
+            onDismiss: () => S(A.i.USER_DISMISS)
         })]
     }) : null
 }

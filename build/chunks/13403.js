@@ -3,8 +3,8 @@ n.d(t, {
     A: () => w
 }), n(321073);
 var i = n(627968),
-    r = n(64700),
-    a = n(311907),
+    a = n(64700),
+    r = n(311907),
     l = n(554146),
     s = n(342494),
     o = n(397927),
@@ -72,7 +72,7 @@ function w(e) {
         {
             openGameProfileModal: K,
             launchableAppId: J
-        } = (t = k.id, n = F.author.id, w = (0, f.d)(t), M = (0, a.bG)([m.A, C.A], () => {
+        } = (t = k.id, n = F.author.id, w = (0, f.d)(t), M = (0, r.bG)([m.A, C.A], () => {
             let e = m.A.getApplication(t);
             return null != e ? C.A.getGameByApplication(e) : null
         }, [t]), {
@@ -89,7 +89,7 @@ function w(e) {
             application: k,
             analyticsLocations: D
         }),
-        Z = r.useMemo(() => {
+        Z = a.useMemo(() => {
             if (null != X) return {
                 label: P.intl.string(P.t["jaYS/h"]),
                 icon: o.hpF,
@@ -98,20 +98,20 @@ function w(e) {
             }
         }, [X]),
         $ = (0, p.F)(k),
-        ee = r.useMemo(() => null != K ? K : null != $ && W ? $ : void 0, [W, K, $]),
+        ee = a.useMemo(() => null != K ? K : null != $ && W ? $ : void 0, [W, K, $]),
         et = c.A.useConfig({
             location: "RichPresenceGameActivityInviteEmbed"
         }),
         {
             canStartAuthorization: en,
             hasAlreadyLinked: ei,
-            startAuthorization: er
+            startAuthorization: ea
         } = (0, _.RD)(k),
-        ea = (0, u.z)(er, ei),
+        er = (0, u.z)(ea, ei),
         el = !(0, T.A)(q, F, k.id),
         es = (0, v.n$)(Y, F.activity?.type, el),
-        eo = r.useRef(null),
-        ed = (0, a.bG)([I.A], () => I.A.getMessages(O.id)),
+        eo = a.useRef(null),
+        ed = (0, r.bG)([I.A], () => I.A.getMessages(O.id)),
         ec = () => {
             let e = [];
             return (0, y.G)(F.id, ed) && en && !ei && et.enabled && e.push(l.M.GAME_INVITE_ACCOUNT_LINK_UPSELL), (0, i.jsx)(g.Ay, {
@@ -161,7 +161,7 @@ function w(e) {
         presenceActivity: q,
         analyticsLocations: D,
         showAuthButton: en && !ei && et.enabled,
-        startAuthorization: ea,
+        startAuthorization: er,
         accountLinkButtonRef: eo,
         renderAccountLinkUpsell: ec
     }) : (0, i.jsx)(L.A, {
@@ -185,7 +185,7 @@ function w(e) {
         analyticsLocations: D,
         showAuthButton: en && !ei && et.enabled,
         canPromptAuth: en && !ei,
-        startAuthorization: ea,
+        startAuthorization: er,
         accountLinkButtonRef: eo,
         renderAccountLinkUpsell: ec
     })

@@ -3,8 +3,8 @@ n.d(t, {
     A: () => C
 });
 var i = n(627968),
-    r = n(64700),
-    a = n(158954),
+    a = n(64700),
+    r = n(158954),
     l = n(311907),
     s = n(308528),
     o = n(846293),
@@ -27,7 +27,7 @@ function C(e) {
         getAcceptInviteContext: C
     } = e, I = (0, l.bG)([m.default], () => m.default.getId()), E = t.inviter?.id === I, b = t.state === A.elq.ACCEPTING, {
         analyticsLocations: v
-    } = (0, c.Ay)(d.A.INVITE_EMBED), T = (0, l.bG)([p.A], () => null != t.inviter && p.A.isFriend(t.inviter?.id)), y = r.useCallback(() => {
+    } = (0, c.Ay)(d.A.INVITE_EMBED), T = (0, l.bG)([p.A], () => null != t.inviter && p.A.isFriend(t.inviter?.id)), y = a.useCallback(() => {
         let e = "noop";
         null != t.inviter && null != h.A.getDMFromUserId(t.inviter.id) && (e = "transition", s.A.openPrivateChannel({
             recipientIds: [t.inviter.id]
@@ -37,7 +37,7 @@ function C(e) {
             inviter_id: n.author.id,
             invite_message_id: n.id
         }, v)
-    }, [t, n, v]), S = r.useCallback(() => {
+    }, [t, n, v]), S = a.useCallback(() => {
         (0, o.he)({
             invite: t,
             action: "accept",
@@ -72,7 +72,7 @@ function C(e) {
                     onClick: T ? N : void 0,
                     children: w
                 })]
-            }), (0, i.jsx)(a.$nd, {
+            }), (0, i.jsx)(r.$nd, {
                 onClick: N,
                 text: j,
                 loading: b,

@@ -1,13 +1,13 @@
 /** chunk id: 960427 params = (module,exports,require) **/
 n.d(t, {
-    A: () => a
+    A: () => r
 });
 var i = n(627968);
 n(64700);
-var r = n(397927);
-let a = {
+var a = n(397927);
+let r = {
     open: function(e) {
-        (0, r.mMO)(async () => {
+        (0, a.mMO)(async () => {
             let {
                 default: t
             } = await n.e("2347").then(n.bind(n, 259142));

@@ -9,8 +9,8 @@ var r = n(627968),
     s = n(311907),
     o = n(397927),
     a = n(997509),
-    d = n(645619),
-    u = n(363487),
+    u = n(645619),
+    d = n(363487),
     c = n(915667),
     p = n(568065),
     _ = n(652215),
@@ -20,21 +20,21 @@ var r = n(627968),
     g = n(849630);
 
 function x(e, t) {
-    let x = (0, u.A)(t) ?? !1,
-        v = (0, s.bG)([d.A], () => d.A.getStateForGuild(t)?.allPowerups),
-        h = (0, s.bG)([d.A], () => d.A.getStateForGuild(t)?.unlockedPowerups);
+    let x = (0, d.A)(t) ?? !1,
+        v = (0, s.bG)([u.A], () => u.A.getStateForGuild(t)?.allPowerups),
+        h = (0, s.bG)([u.A], () => u.A.getStateForGuild(t)?.unlockedPowerups);
     return i.useMemo(() => {
         let i = e => "guildTagsBadgePacks" === e ? function(e) {
                 let {
                     guildId: t,
                     canUseBoosts: i,
                     allPowerups: s,
-                    unlockedPowerups: d
-                } = e, u = f.intl.string(m.default.KC9HRW), x = f.intl.string(m.default.GJiSmP), v = s?.[l.SL], h = d?.[l.SL] != null, E = f.intl.string(m.default["/egwJA"]), b = h ? void 0 : f.intl.string(m.default.W6Vwn3), I = h ? void 0 : f.intl.string(m.default.lvk1Gc), j = h ? f.intl.string(m.default["9CfkLO"]) : f.intl.string(f.t["+7XY31"]), S = h ? "secondary" : "expressive", C = i ? () => {
+                    unlockedPowerups: u
+                } = e, d = f.intl.string(m.default.KC9HRW), x = f.intl.string(m.default.GJiSmP), v = s?.[l.SL], h = u?.[l.SL] != null, E = f.intl.string(m.default["/egwJA"]), I = h ? void 0 : f.intl.string(m.default.W6Vwn3), b = h ? void 0 : f.intl.string(m.default.lvk1Gc), j = h ? f.intl.string(m.default["9CfkLO"]) : f.intl.string(f.t["+7XY31"]), S = h ? "secondary" : "expressive", C = i ? () => {
                     h ? a.A.open(t, _.BEX.TAG, _.JJy.GUILD_POWERUPS_OVERVIEW_CARD) : null != v && (0, c.A)(t, v), (0, o.s7G)()
                 } : void 0, w = p.m_;
                 return {
-                    title: u,
+                    title: d,
                     description: x,
                     openModal: function(e) {
                         let l = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
@@ -44,12 +44,12 @@ function x(e, t) {
                             } = await n.e("56065").then(n.bind(n, 534904));
                             return n => (0, r.jsx)(l, {
                                 guildId: t,
-                                title: u,
+                                title: d,
                                 description: f.intl.string(m.default.BBRFRd),
                                 powerups: e,
                                 newPowerupSkuIdSet: w,
                                 forceStaticImages: !0,
-                                footerInfoText: I,
+                                footerInfoText: b,
                                 footerAction: i && null != C && null != j ? {
                                     variant: S,
                                     text: j,
@@ -63,7 +63,7 @@ function x(e, t) {
                         })
                     },
                     viewCta: E,
-                    viewCtaTooltip: b,
+                    viewCtaTooltip: I,
                     badge: "new",
                     newPowerupSkuIdSet: w,
                     image: {

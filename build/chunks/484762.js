@@ -24,8 +24,8 @@ var a = n(627968),
     A = n(41984),
     C = n(181435),
     y = n(435736),
-    S = n(833551),
-    T = n(515183),
+    T = n(833551),
+    S = n(515183),
     E = n(395011),
     N = n(127242),
     I = n(869014),
@@ -139,7 +139,7 @@ let et = i.memo(function(e) {
             }), (0, a.jsxs)(h.Text, {
                 variant: "text-sm/normal",
                 color: "text-default",
-                children: ["fullscreenType: ", (0, T.wR)(t.fullscreenType)]
+                children: ["fullscreenType: ", (0, S.wR)(t.fullscreenType)]
             }), (0, a.jsxs)(h.Text, {
                 variant: "text-sm/normal",
                 color: "text-default",
@@ -165,7 +165,7 @@ let et = i.memo(function(e) {
                 }), (0, a.jsxs)(h.Text, {
                     variant: "text-sm/normal",
                     color: "text-default",
-                    children: ["overlayMethod: ", (0, T.gK)(t.overlayMethod)]
+                    children: ["overlayMethod: ", (0, S.gK)(t.overlayMethod)]
                 })]
             }), null != s && (0, a.jsxs)("div", {
                 className: Y.st,
@@ -184,7 +184,7 @@ let et = i.memo(function(e) {
                 }), (0, a.jsxs)(h.Text, {
                     variant: "text-sm/normal",
                     color: "text-default",
-                    children: ["raw overlayMethod: ", (0, T.gK)(s.overlayMethod)]
+                    children: ["raw overlayMethod: ", (0, S.gK)(s.overlayMethod)]
                 })]
             }), (0, a.jsxs)(h.Text, {
                 variant: "text-sm/normal",
@@ -212,7 +212,7 @@ let et = i.memo(function(e) {
     en = i.memo(function(e) {
         let {
             pid: t
-        } = e, n = (0, c.cf)([M.default], () => M.default.getOverlayPIDStatuses()), i = (0, c.cf)([S.default], () => S.default.getTrackedGames()), s = (0, c.bG)([M.default], () => M.default.isInputLocked(t), [t]), l = (0, c.bG)([M.default], () => M.default.DEV_isInputLockedV3(t), [t]), r = (0, c.bG)([M.default], () => M.default.DEV_isInputLocked(t), [t]), o = (0, c.bG)([M.default], () => M.default.isReady(t), [t]);
+        } = e, n = (0, c.cf)([M.default], () => M.default.getOverlayPIDStatuses()), i = (0, c.cf)([T.default], () => T.default.getTrackedGames()), s = (0, c.bG)([M.default], () => M.default.isInputLocked(t), [t]), l = (0, c.bG)([M.default], () => M.default.DEV_isInputLockedV3(t), [t]), r = (0, c.bG)([M.default], () => M.default.DEV_isInputLocked(t), [t]), o = (0, c.bG)([M.default], () => M.default.isReady(t), [t]);
         return (0, a.jsxs)("div", {
             className: Y.st,
             children: [(0, a.jsx)(h.Text, {
@@ -291,9 +291,9 @@ let es = i.memo(function(e) {
     let {
         pid: t,
         ...n
-    } = e, i = (0, c.bG)([S.default], () => {
+    } = e, i = (0, c.bG)([T.default], () => {
         if (null == t) return "Unknown";
-        let e = S.default.getTrackedGameByPid(t)?.gameName;
+        let e = T.default.getTrackedGameByPid(t)?.gameName;
         return null != e ? (Z[t] = e, e) : Z[t] ?? "Unknown"
     }, [t]);
     return (0, a.jsx)(h.Text, {
@@ -306,7 +306,7 @@ let es = i.memo(function(e) {
 
 function el() {
     let e = (0, c.bG)([N.A], () => N.A.hasRenderDebugMode(A.x7.TrackFocusPIDs)),
-        t = (0, c.yK)([S.default], () => S.default.getDevToolsFocusedPidsWithTimestamp());
+        t = (0, c.yK)([T.default], () => T.default.getDevToolsFocusedPidsWithTimestamp());
     return (0, a.jsxs)("div", {
         className: Y.st,
         children: [(0, a.jsxs)("div", {
@@ -354,9 +354,9 @@ function el() {
 let er = i.memo(function(e) {
         let {
             pid: t
-        } = e, n = (0, c.bG)([S.default, b.Ay], () => {
+        } = e, n = (0, c.bG)([T.default, b.Ay], () => {
             if (null == t) return null;
-            let e = S.default.getTrackedGameByPid(t)?.fullscreenType;
+            let e = T.default.getTrackedGameByPid(t)?.fullscreenType;
             if (null != e) return e;
             let n = b.Ay.getGameOrTransformedSubgameForPID(t);
             return n?.fullscreenType ?? _.aI.UNKNOWN
@@ -365,18 +365,18 @@ let er = i.memo(function(e) {
             variant: "text-sm/normal",
             color: "text-subtle",
             tag: "span",
-            children: ["Original Screen Type: ", null != n ? (0, T.wR)(n) : "Unknown"]
+            children: ["Original Screen Type: ", null != n ? (0, S.wR)(n) : "Unknown"]
         })
     }),
     eo = i.memo(function() {
-        let e = (0, c.cf)([S.default], () => S.default.getTrackedGames()),
+        let e = (0, c.cf)([T.default], () => T.default.getTrackedGames()),
             [t, n] = i.useState({}),
             s = i.useRef(null);
         return i.useEffect(() => (s.current = setInterval(async () => {
             let e = b.Ay.getRunningGames(),
                 t = [],
                 a = Date.now();
-            for (let n of e) t.push((0, T.E1)(n.pid, 0).then(e => [n.pid, e, a]));
+            for (let n of e) t.push((0, S.E1)(n.pid, 0).then(e => [n.pid, e, a]));
             let i = await Promise.all(t);
             n(e => i.reduce((e, t) => {
                 let [n, a, i] = t;
@@ -415,7 +415,7 @@ let er = i.memo(function(e) {
                             return (0, a.jsx)(h.Text, {
                                 variant: "text-xs/normal",
                                 color: "text-default",
-                                children: `${n}:${(0,T.wR)(n)} @ ${ei(i)}`
+                                children: `${n}:${(0,S.wR)(n)} @ ${ei(i)}`
                             }, `${e.pid}-${n}-${i}`)
                         })]
                     }, e.pid))]
@@ -424,9 +424,9 @@ let er = i.memo(function(e) {
         })
     }),
     ed = i.memo(function() {
-        let e = (0, c.cf)([S.default], () => S.default.getTrackedGames()),
+        let e = (0, c.cf)([T.default], () => T.default.getTrackedGames()),
             t = (0, V.getPID)(),
-            n = (0, c.bG)([S.default], () => S.default.isOverlayOOPEnabledForPid(t), [t]),
+            n = (0, c.bG)([T.default], () => T.default.isOverlayOOPEnabledForPid(t), [t]),
             [i, s] = (0, c.yK)([R.A], () => [R.A.enabled, R.A.keepOpen]),
             l = (0, c.bG)([M.default], () => M.default.getFocusedPID()),
             r = (0, c.bG)([M.default], () => M.default.isFocusedPidOutOfProcess());
@@ -524,7 +524,7 @@ let er = i.memo(function(e) {
         })
     }),
     em = i.memo(function() {
-        let e = (0, c.cf)([S.default], () => S.default.getTrackedGames()),
+        let e = (0, c.cf)([T.default], () => T.default.getTrackedGames()),
             t = (0, c.bG)([b.Ay], () => b.Ay.getRunningGames()).filter(t => null == e[t.pid]);
         return (0, a.jsxs)(a.Fragment, {
             children: [t.length > 0 && (0, a.jsx)(u.m_, {
@@ -567,7 +567,7 @@ let er = i.memo(function(e) {
         })
     }),
     eh = i.memo(function() {
-        let e = (0, c.bG)([S.default], () => S.default.getForcedRenderMode()),
+        let e = (0, c.bG)([T.default], () => T.default.getForcedRenderMode()),
             [t, n] = i.useState(e),
             s = [{
                 label: A.V6.UNSET,
@@ -919,7 +919,7 @@ function ey() {
     i.useEffect(() => {
         0 !== C && (o ? m(A.reduce((e, t) => "game_tracking_starting" === t.name ? Math.max(e, t.timestamp) : e, 0)) : m(null))
     }, [o, A, C]);
-    let [y, S] = i.useState(""), T = i.useMemo(() => 0 === C ? [] : A.filter(e => {
+    let [y, T] = i.useState(""), S = i.useMemo(() => 0 === C ? [] : A.filter(e => {
         if (o && null != u && e.timestamp < u) return !1;
         for (let t of x) {
             let {
@@ -928,22 +928,22 @@ function ey() {
             if (n(e)) return !0
         }
         return !1
-    }), [A, x, u, o, C]), [E, I] = i.useState(T), [k, R] = i.useState(null), w = i.useMemo(() => A.find(e => e.key === k), [A, k]), D = i.useCallback(e => {
+    }), [A, x, u, o, C]), [E, I] = i.useState(S), [k, R] = i.useState(null), w = i.useMemo(() => A.find(e => e.key === k), [A, k]), D = i.useCallback(e => {
         I(e)
     }, []), {
         renderSelectedTab: P
     } = (0, z.Ay)({
         tabs: eA
     }, []);
-    (0, O.RT)(y, T, D, eC, [A]);
+    (0, O.RT)(y, S, D, eC, [A]);
     let M = i.useCallback(e => {
             r(e), g.A.setModuleLogging(e)
         }, []),
         [U, B] = i.useState(!1),
         F = i.useRef(null),
         V = i.useCallback(() => {
-            (0, L.C)(JSON.stringify(T)), B(!0)
-        }, [T]);
+            (0, L.C)(JSON.stringify(S)), B(!0)
+        }, [S]);
     i.useEffect(() => {
         if (U) return F.current = setTimeout(() => {
             B(!1)
@@ -1031,8 +1031,8 @@ function ey() {
                 className: Y._V,
                 children: (0, a.jsx)(h.IWV, {
                     query: y,
-                    onChange: S,
-                    onClear: () => S(""),
+                    onChange: T,
+                    onClear: () => T(""),
                     placeholder: "Regex search by breadcrumb name and data"
                 })
             })]
@@ -1055,7 +1055,7 @@ function ey() {
         })]
     })
 }
-let eS = i.memo(function() {
+let eT = i.memo(function() {
         let e = (0, c.bG)([E.A], () => E.A.getPopoutInitializationStages());
         return (0, a.jsxs)("div", {
             className: Y.st,
@@ -1075,7 +1075,7 @@ let eS = i.memo(function() {
             })]
         })
     }),
-    eT = i.memo(function() {
+    eS = i.memo(function() {
         let e = (0, c.bG)([N.A], () => N.A.isStateDebuggingEnabled()),
             t = (0, c.bG)([N.A], () => N.A.getDebuggingState());
         return i.useEffect(() => (g.A.setStateDebugging(!0), () => {
@@ -1103,7 +1103,7 @@ function eE() {
     return (0, a.jsx)(h.ArX, {
         children: (0, a.jsxs)("div", {
             className: l()(J.nd, Y.rf),
-            children: [(0, a.jsx)(eu, {}), (0, a.jsx)(eh, {}), (0, a.jsx)(em, {}), (0, a.jsx)(ed, {}), (0, a.jsx)(el, {}), (0, a.jsx)(eo, {}), (0, a.jsx)(eS, {}), (0, a.jsx)(eT, {})]
+            children: [(0, a.jsx)(eu, {}), (0, a.jsx)(eh, {}), (0, a.jsx)(em, {}), (0, a.jsx)(ed, {}), (0, a.jsx)(el, {}), (0, a.jsx)(eo, {}), (0, a.jsx)(eT, {}), (0, a.jsx)(eS, {})]
         })
     })
 }

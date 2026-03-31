@@ -3,11 +3,11 @@ n.d(t, {
     A: () => l
 });
 var i = n(627968),
-    r = n(422844),
-    a = n(37205);
+    a = n(422844),
+    r = n(37205);
 
 function l(e) {
-    return (0, r.xR)("VoiceInvite").enabled ? (0, i.jsx)(a.A, {
+    return (0, a.xR)("VoiceInvite").enabled ? (0, i.jsx)(r.A, {
         ...e
     }) : null
 }

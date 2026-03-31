@@ -24,8 +24,8 @@ var a = n(627968),
     A = n(231643),
     C = n(985018),
     y = n(380649),
-    S = n(310086);
-let T = [{
+    T = n(310086);
+let S = [{
         key: "id",
         cellClassName: y.Hz,
         render(e) {
@@ -71,7 +71,7 @@ let T = [{
             } = e, u = c()(r);
             return (0, a.jsxs)(a.Fragment, {
                 children: [(0, a.jsxs)(p.Ay, {
-                    className: l()(S.jr, y.nZ),
+                    className: l()(T.jr, y.nZ),
                     children: [(0, a.jsx)(p.Ay.Icon, {
                         icon: h.Uy2,
                         tooltip: t
@@ -147,7 +147,7 @@ function N() {
     }, []), k = N ? "Stop Tracking" : "Start Tracking";
     return (0, a.jsxs)("div", {
         ref: n,
-        className: l()(S.nd, y.nd),
+        className: l()(T.nd, y.nd),
         children: [(0, a.jsxs)("div", {
             className: y.rh,
             children: [(0, a.jsx)(m.m_, {
@@ -173,7 +173,7 @@ function N() {
                 onClick: f.eY
             })]
         }), (0, a.jsx)(j.A, {
-            columns: T,
+            columns: S,
             data: r,
             selectedRowKey: d,
             onClickRow: e => c(e.key)

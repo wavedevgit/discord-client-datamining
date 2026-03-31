@@ -28,7 +28,7 @@ let A = {
     },
     C = "debug",
     y = "reduced-motion-preview-modal",
-    S = e => {
+    T = e => {
         let {
             transitionState: t,
             onClose: n,
@@ -70,7 +70,7 @@ let A = {
             })
         })
     },
-    T = e => {
+    S = e => {
         let {
             type: t,
             frame: n,
@@ -99,7 +99,7 @@ let A = {
             }), r ? (0, a.jsx)(c.DUT, {
                 className: l()(v.zd, v.eB),
                 onClick: () => {
-                    (0, c.kBI)(y) ? (0, c.OoC)(y) : (0, c.mMO)(() => Promise.resolve(e => (0, a.jsx)(S, {
+                    (0, c.kBI)(y) ? (0, c.OoC)(y) : (0, c.mMO)(() => Promise.resolve(e => (0, a.jsx)(T, {
                         ...e,
                         frameSrc: n?.src ?? null,
                         theme: i
@@ -125,7 +125,7 @@ let A = {
             effect: t
         } = e, {
             upsertConfig: n
-        } = (0, g.wu)(), s = (0, o.bG)([p.default], () => p.default.getCurrentUser()), [d, j] = i.useState(!0), y = i.useRef({}), [S, E] = i.useState(!1), [N, I] = i.useState(!1), [k, O] = i.useState(8), [R, w] = i.useState([]), [D, P] = i.useState(A), M = i.useRef([]), [L, U] = i.useState(t.name), B = L.toLowerCase().replace(/\s+/g, "_"), G = i.useMemo(() => ({
+        } = (0, g.wu)(), s = (0, o.bG)([p.default], () => p.default.getCurrentUser()), [d, j] = i.useState(!0), y = i.useRef({}), [T, E] = i.useState(!1), [N, I] = i.useState(!1), [k, O] = i.useState(8), [R, w] = i.useState([]), [D, P] = i.useState(A), M = i.useRef([]), [L, U] = i.useState(t.name), B = L.toLowerCase().replace(/\s+/g, "_"), G = i.useMemo(() => ({
             id: C,
             skuId: C,
             title: C,
@@ -135,7 +135,7 @@ let A = {
             thumbnailPreviewSrc: "",
             effects: R,
             animationType: r.l.ANIMATION_TYPE_UNSPECIFIED
-        }), [R]), F = S ? c.LU0.themes.DARKER : c.LU0.themes.LIGHT, V = e => {
+        }), [R]), F = T ? c.LU0.themes.DARKER : c.LU0.themes.LIGHT, V = e => {
             let t = e.currentTarget.files;
             return null == t ? null : t[0]
         }, W = (e, t) => {
@@ -252,10 +252,10 @@ let A = {
                         children: "Dark Theme"
                     }), (0, a.jsx)("input", {
                         type: "checkbox",
-                        checked: S,
+                        checked: T,
                         className: v.OO,
                         onChange: () => {
-                            E(!S)
+                            E(!T)
                         }
                     }), (0, a.jsx)(c.Text, {
                         variant: "text-md/normal",
@@ -418,7 +418,7 @@ let A = {
                             className: v.mv,
                             children: Object.entries(D).map(e => {
                                 let [t, n] = e;
-                                return (0, a.jsx)(T, {
+                                return (0, a.jsx)(S, {
                                     type: t,
                                     frame: n,
                                     theme: F,

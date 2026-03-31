@@ -10,8 +10,8 @@ var i = n(503698),
     s = n(732955),
     o = n(438874),
     a = n(363487),
-    d = n(439156),
-    u = n(689906),
+    u = n(439156),
+    d = n(689906),
     c = n(224331),
     p = n(568065),
     _ = n(333354),
@@ -24,7 +24,7 @@ function A(e) {
         guildId: n,
         powerup: i,
         onClick: o
-    } = e, a = (0, u.A)(n, i);
+    } = e, a = (0, d.A)(n, i);
     return (0, r.jsx)("div", {
         className: l()(f.FS, t),
         children: (0, r.jsx)(s.$nd, {
@@ -86,13 +86,13 @@ function v(e) {
         expressiveCta: s,
         onError: a
     } = e, {
-        showToggleButton: u,
+        showToggleButton: d,
         isPowerupActive: c,
         showConfigureButton: p
     } = (0, o.A)(n, i), _ = !c;
     return (0, r.jsxs)("div", {
         className: l()(f.kL, t),
-        children: [u && (0, r.jsx)(d.A, {
+        children: [d && (0, r.jsx)(u.A, {
             guildId: n,
             powerup: i,
             onError: a,

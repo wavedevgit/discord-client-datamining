@@ -59,7 +59,7 @@ function j() {
         clearAll: n
     } = (0, p.wu)(), [s, j] = i.useState(), A = i.useRef(null), C = (0, o.yK)([x.A], () => x.A.getAllProfileEffects());
     (0, m.A)();
-    let [y, S] = i.useState(""), T = i.useMemo(() => "" === y ? C : C.filter(e => {
+    let [y, T] = i.useState(""), S = i.useMemo(() => "" === y ? C : C.filter(e => {
         let t = y.toLowerCase(),
             n = e.config.title?.toLowerCase() ?? "",
             a = e.config.description?.toLowerCase() ?? "";
@@ -138,11 +138,11 @@ function j() {
                 }), (0, a.jsx)(d.ksK, {
                     value: y,
                     onChange: e => {
-                        S(e)
+                        T(e)
                     }
                 }), (0, a.jsx)("div", {
                     className: f.xm,
-                    children: T.map(e => (0, a.jsx)(d.DUT, {
+                    children: S.map(e => (0, a.jsx)(d.DUT, {
                         className: f.S5,
                         style: {
                             backgroundImage: `url(${e.config.thumbnailPreviewSrc})`

@@ -8,8 +8,8 @@ var r = n(627968),
     s = n(998418),
     o = n(890942),
     a = n(722523),
-    d = n(490557),
-    u = n(634925),
+    u = n(490557),
+    d = n(634925),
     c = n(744201),
     p = n(867060),
     _ = n(568065),
@@ -25,19 +25,19 @@ function f(e) {
     let [x, v] = i.useState(!1), h = (0, s.Ay)(t, n).type !== _.b_.INACTIVE, {
         textColor: E
     } = (0, c.A)(h);
-    return (0, r.jsxs)(u.h, {
+    return (0, r.jsxs)(d.h, {
         onHover: e => v(e),
         guildId: t,
         powerup: n,
         badge: f,
-        children: [(0, r.jsx)(d.l, {
+        children: [(0, r.jsx)(u.l, {
             className: m.Sl,
             powerup: n,
             isHovering: x
         }), (0, r.jsx)(o.Ft, {
             title: n.title,
             textColor: E,
-            footer: (0, r.jsx)(u.A, {
+            footer: (0, r.jsx)(d.A, {
                 guildId: t,
                 powerup: n
             }),

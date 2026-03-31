@@ -1,6 +1,6 @@
 /** chunk id: 556499 params = (module,exports,require) **/
 n.d(t, {
-    A: () => T
+    A: () => S
 }), n(321073);
 var a = n(627968),
     i = n(64700),
@@ -78,7 +78,7 @@ let A = {
         value: _.Dmq.PAUSE_PENDING
     }];
 
-function S(e) {
+function T(e) {
     let {
         subscription: t,
         onClose: n,
@@ -161,14 +161,14 @@ function S(e) {
     })
 }
 
-function T(e) {
+function S(e) {
     var t;
     let n, {
             subscription: s,
             onUpdated: r
         } = e,
         [d, f] = i.useState(!1),
-        [T, E] = i.useState(!1),
+        [S, E] = i.useState(!1),
         [N, I] = i.useState(!1),
         [k, O] = i.useState(!1),
         [R, w] = i.useState(null),
@@ -346,7 +346,7 @@ function T(e) {
                 className: j.VK,
                 children: [(0, a.jsxs)(u.DUT, {
                     onClick: () => {
-                        E(!T)
+                        E(!S)
                     },
                     className: j.Eh,
                     children: [(0, a.jsx)("div", {
@@ -355,9 +355,9 @@ function T(e) {
                             children: "Modifications"
                         })
                     }), (0, a.jsx)(m.A, {
-                        direction: T ? m.A.Directions.UP : m.A.Directions.DOWN
+                        direction: S ? m.A.Directions.UP : m.A.Directions.DOWN
                     })]
-                }), T && (0, a.jsxs)(u.BJc, {
+                }), S && (0, a.jsxs)(u.BJc, {
                     gap: 24,
                     children: [(0, a.jsx)(u.l6P, {
                         label: "Status",
@@ -383,7 +383,7 @@ function T(e) {
                                 size: "sm",
                                 text: "Time Travel",
                                 onClick: () => {
-                                    (0, u.mMO)(() => Promise.resolve(e => (0, a.jsx)(S, {
+                                    (0, u.mMO)(() => Promise.resolve(e => (0, a.jsx)(T, {
                                         subscription: s,
                                         onUpdated: r,
                                         ...e

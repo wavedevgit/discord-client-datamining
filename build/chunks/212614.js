@@ -3,33 +3,22 @@ n.d(t, {
     A: () => _
 });
 var i = n(627968),
-    r = n(732955),
-    a = n(79545),
+    a = n(732955),
+    r = n(79545),
     l = n(561393),
-    s = n(884392),
-    o = n(985018);
-
-function d(e) {
-    let {
-        taskType: t
-    } = e;
-    return (0, i.jsx)(r.$nd, {
-        variant: "primary",
-        fullWidth: !0,
-        size: "sm",
-        text: o.intl.string(o.t.P84bAD)
-    })
-}
+    s = n(220514),
+    o = n(884392),
+    d = n(985018);
 
 function c(e) {
     let {
         taskType: t
     } = e;
-    return (0, i.jsx)(r.$nd, {
+    return (0, i.jsx)(a.$nd, {
         variant: "primary",
         fullWidth: !0,
         size: "sm",
-        text: o.intl.string(o.t.P84bAD)
+        text: d.intl.string(d.t.P84bAD)
     })
 }
 
@@ -37,11 +26,11 @@ function u(e) {
     let {
         taskType: t
     } = e;
-    return (0, i.jsx)(r.$nd, {
+    return (0, i.jsx)(a.$nd, {
         variant: "primary",
         fullWidth: !0,
         size: "sm",
-        text: o.intl.string(o.t.P84bAD)
+        text: d.intl.string(d.t.P84bAD)
     })
 }
 let _ = function(e) {
@@ -55,17 +44,17 @@ let _ = function(e) {
         analyticsCtxQuestContentRowIndex: g,
         size: A = "md",
         variant: x = "primary"
-    } = e, f = (0, a.Pd)(t);
-    if (0 === Object.keys(t.config.taskConfigV2.tasks).length) return (0, i.jsx)(r.$nd, {
+    } = e, f = (0, r.Pd)(t);
+    if (0 === Object.keys(t.config.taskConfigV2.tasks).length) return (0, i.jsx)(a.$nd, {
         variant: "primary",
         fullWidth: !0,
         size: "sm",
-        text: o.intl.string(o.t.P84bAD)
+        text: d.intl.string(d.t.P84bAD)
     });
     let C = Object.values(t.config.taskConfigV2.tasks)[0];
     switch (f) {
-        case a.UA.UNENROLLED:
-            return (0, i.jsx)(s.A, {
+        case r.UA.UNENROLLED:
+            return (0, i.jsx)(o.A, {
                 variant: x,
                 quest: t,
                 taskType: C.type,
@@ -76,7 +65,7 @@ let _ = function(e) {
                 analyticsCtxQuestContentPosition: p,
                 analyticsCtxQuestContentRowIndex: g
             });
-        case a.UA.ENROLLED:
+        case r.UA.ENROLLED:
             return (0, i.jsx)(l.A, {
                 quest: t,
                 taskType: C.type,
@@ -87,24 +76,31 @@ let _ = function(e) {
                 analyticsCtxQuestContentRowIndex: g,
                 surface: n
             });
-        case a.UA.INCOMPLETE:
-            return (0, i.jsx)(d, {
-                taskType: C.type
+        case r.UA.INCOMPLETE:
+            return (0, i.jsx)(s.A, {
+                quest: t,
+                taskType: C.type,
+                size: A,
+                analyticsCtxQuestContent: m,
+                analyticsCtxSourceQuestContent: h,
+                analyticsCtxQuestContentPosition: p,
+                analyticsCtxQuestContentRowIndex: g,
+                surface: n
             });
-        case a.UA.COMPLETED:
+        case r.UA.COMPLETED:
             return (0, i.jsx)(c, {
                 taskType: C.type
             });
-        case a.UA.CLAIMED:
+        case r.UA.CLAIMED:
             return (0, i.jsx)(u, {
                 taskType: C.type
             });
         default:
-            return (0, i.jsx)(r.$nd, {
+            return (0, i.jsx)(a.$nd, {
                 variant: "primary",
                 fullWidth: !0,
                 size: A,
-                text: o.intl.string(o.t.P84bAD)
+                text: d.intl.string(d.t.P84bAD)
             })
     }
 }

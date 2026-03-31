@@ -58,22 +58,22 @@ function I(e) {
         author: r,
         mentions: u,
         type: A
-    } = t, I = (0, s.Ay)(t), T = t.getChannelId(), f = (0, a.bG)([d.default], () => d.default.getUser(u[0]), [u]), N = (0, s.m2)(r, n), C = (0, o.P)({
+    } = t, I = (0, s.Ay)(t), T = t.getChannelId(), f = (0, a.bG)([d.default], () => d.default.getUser(u[0]), [u]), N = (0, s.m2)(r, n), g = (0, o.P)({
         user: r,
         channelId: T,
         guildId: n.guild_id,
         messageId: t.id
-    })(N), g = (0, s.d8)(f, n), h = (0, o.P)({
+    })(N), C = (0, s.d8)(f, n), h = (0, o.P)({
         user: f,
         channelId: T,
         guildId: n.guild_id,
         messageId: t.id
-    })(g), p = m[A] ?? null;
+    })(C), p = m[A] ?? null;
     if (null == p) return null;
     let x = _.intl.format(p(), {
         actorName: I.nick,
-        actorHook: C,
-        targetName: g?.nick,
+        actorHook: g,
+        targetName: C?.nick,
         targetHook: h
     });
     return (0, i.jsx)(c.A, {

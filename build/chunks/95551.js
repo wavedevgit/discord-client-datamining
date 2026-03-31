@@ -45,9 +45,9 @@ function u(e) {
             right: -8,
             bottom: -8
         }
-    }, S = i.useCallback(() => {
+    }, T = i.useCallback(() => {
         v(!0)
-    }, []), T = i.useCallback(() => {
+    }, []), S = i.useCallback(() => {
         v(!1)
     }, []), E = () => (0, a.jsxs)(a.Fragment, {
         children: [(0, a.jsx)("div", {
@@ -88,7 +88,7 @@ function u(e) {
                 className: d.ap,
                 "aria-label": o.intl.string(o.t.PdRCRg),
                 ...e,
-                onClick: S,
+                onClick: T,
                 focusProps: y,
                 children: (0, a.jsx)(s.ChevronSmallRightIcon, {
                     size: "xs",
@@ -98,7 +98,7 @@ function u(e) {
         }) : A ? (0, a.jsxs)(l.DUT, {
             className: d.ef,
             ...e,
-            onClick: S,
+            onClick: T,
             focusProps: y,
             children: [E(), (0, a.jsx)("div", {
                 className: d.ap,
@@ -120,14 +120,14 @@ function u(e) {
     };
     return A ? (0, a.jsx)("li", {
         className: d.j$,
-        onMouseEnter: S,
-        onMouseLeave: T,
+        onMouseEnter: T,
+        onMouseLeave: S,
         children: (0, a.jsx)(l.YNO, {
             targetElementRef: j,
             spacing: 0,
             renderPopout: x,
             shouldShow: f,
-            onRequestClose: T,
+            onRequestClose: S,
             children: N
         })
     }) : (0, a.jsx)("li", {

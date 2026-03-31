@@ -19,8 +19,8 @@ var i, l = n(627968),
     T = n(975571),
     f = n(427262),
     N = n(326084),
-    C = n(851746),
-    g = n(761546),
+    g = n(851746),
+    C = n(761546),
     h = n(972007),
     p = n(636184),
     x = n(652215),
@@ -31,7 +31,7 @@ let O = e => {
             transitionState: t,
             onClose: n,
             onShare: i
-        } = e, r = (0, c.bG)([C.A], () => C.A.getReferralsRemaining()), u = (0, c.bG)([C.A], () => C.A.getHasEligibleFriends()), [m, A] = a.useState(new Map), [E, I] = a.useState(""), N = (0, _.A)(E, 400), {
+        } = e, r = (0, c.bG)([g.A], () => g.A.getReferralsRemaining()), u = (0, c.bG)([g.A], () => g.A.getHasEligibleFriends()), [m, A] = a.useState(new Map), [E, I] = a.useState(""), N = (0, _.A)(E, 400), {
             eligibleUsers: p,
             fetchUsers: O,
             hasError: M,
@@ -117,7 +117,7 @@ let O = e => {
                 let {
                     eligibleRecipients: t
                 } = e;
-                return (0, l.jsx)(g.A, {
+                return (0, l.jsx)(C.A, {
                     users: Array.from(t.values()),
                     isUserSelected: e => m.has(e.id),
                     onSelectionChange: (e, t) => {
@@ -147,7 +147,7 @@ let O = e => {
                 onClose: i,
                 onShare: r
             } = e,
-            _ = (0, c.bG)([C.A], () => C.A.getRecipientStatus()),
+            _ = (0, c.bG)([g.A], () => g.A.getRecipientStatus()),
             [m, A] = a.useState(new Map),
             [I, T] = a.useState(new Map),
             [f, h] = a.useState(!1);
@@ -183,7 +183,7 @@ let O = e => {
                     }
                 })
             })),
-            children: (0, l.jsx)(g.A, {
+            children: (0, l.jsx)(C.A, {
                 users: Array.from(m.values()),
                 isUserSelected: e => I.has(e.id),
                 isUserDisabled: e => e.referralStatus === N.aK.REDEEMED,
@@ -203,7 +203,7 @@ let P = e => {
         transitionState: t,
         onClose: n,
         startingScreen: i = 1
-    } = e, r = (0, c.bG)([C.A], () => C.A.getReferralsRemaining()), [s, o] = a.useState(i), [u, _] = a.useState([]), {
+    } = e, r = (0, c.bG)([g.A], () => g.A.getReferralsRemaining()), [s, o] = a.useState(i), [u, _] = a.useState([]), {
         analyticsLocations: E
     } = (0, A.Ay)([m.A.PREMIUM_MARKETING_REFERALL_PROGRAM_SHARE_MODAL]), T = async e => {
         I.default.track(x.HAw.REFERRAL_PROGRAM_SHARE_CTA_CLICKED, {

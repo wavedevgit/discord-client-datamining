@@ -1,6 +1,6 @@
 /** chunk id: 147351 params = (module,exports,require) **/
 n.d(t, {
-    A: () => g
+    A: () => C
 });
 var i = n(627968),
     l = n(64700),
@@ -28,7 +28,7 @@ function N(e) {
     return t[l]
 }
 
-function C(e) {
+function g(e) {
     let {
         currentUser: t,
         channel: n,
@@ -97,7 +97,7 @@ function C(e) {
     })
 }
 
-function g(e) {
+function C(e) {
     let {
         channel: t,
         message: n,
@@ -127,7 +127,7 @@ function g(e) {
     });
     return null != c && A ? (0, i.jsx)("div", {
         className: f.S,
-        children: (0, i.jsx)(C, {
+        children: (0, i.jsx)(g, {
             currentUser: c,
             channel: t,
             message: n,

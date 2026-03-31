@@ -19,8 +19,8 @@ var i = n(627968),
     T = n(688810),
     f = n(735991),
     N = n(975412),
-    C = n(168186),
-    g = n(597929),
+    g = n(168186),
+    C = n(597929),
     h = n(589022),
     p = n(427157),
     x = n(287809),
@@ -35,7 +35,7 @@ var i = n(627968),
     L = n(985018),
     j = n(767283);
 
-function y(e) {
+function b(e) {
     let {
         width: t = 6,
         height: n = 10,
@@ -58,7 +58,7 @@ function y(e) {
     })
 }
 
-function b(e, t, n, l, a, s) {
+function y(e, t, n, l, a, s) {
     let {
         message: o,
         compact: c,
@@ -71,16 +71,16 @@ function b(e, t, n, l, a, s) {
         onUserContextMenu: T,
         onClickTargetAvatar: f,
         onTargetUserContextMenu: N,
-        onPopoutRequestClose: C
+        onPopoutRequestClose: g
     } = e;
     if (c && 1 === n) return null;
     if (c && null == o.activityInstance || u || m) return (0, i.jsx)("div", {
         className: j.Cz,
-        children: (0, i.jsx)(y, {
+        children: (0, i.jsx)(b, {
             className: j.Jx
         })
     });
-    let g = R.Ay.getGuildMemberAvatarURL({
+    let C = R.Ay.getGuildMemberAvatarURL({
             avatar: l.guildMemberAvatar ?? void 0,
             userId: t.id,
             guildId: d?.guild_id ?? ""
@@ -110,7 +110,7 @@ function b(e, t, n, l, a, s) {
         })({
             user: t,
             guildId: d.guild_id,
-            guildAvatar: g,
+            guildAvatar: C,
             onClick: 1 === n ? f : I,
             onContextMenu: 1 === n ? N : T,
             ref: s
@@ -121,7 +121,7 @@ function b(e, t, n, l, a, s) {
         renderPopout: a,
         shouldShow: p,
         position: "right",
-        onRequestClose: C,
+        onRequestClose: g,
         children: h
     }) : h()
 }
@@ -169,7 +169,7 @@ function F(e) {
         } = (0, T.Ay)(I.A.EXECUTED_COMMAND),
         R = (0, u.bG)([x.default], () => x.default.getCurrentUser()),
         D = l.useRef(null),
-        y = l.useRef(null),
+        b = l.useRef(null),
         F = l.useMemo(() => (e, t, l) => (o()(null != t, "ExecutedCommand: user cannot be undefined"), o()(null != R, "ExecutedCommand: currentUser cannot be undefined"), o()(null != a, "ExecutedCommand: channel cannot be undefined"), (0, i.jsx)(h.A, {
             ...e,
             user: t,
@@ -185,7 +185,7 @@ function F(e) {
             messageId: n.id,
             interactionData: n.interactionData
         })), [a, n.id, n.interactionData]),
-        H = (0, C.Am)(n),
+        H = (0, g.Am)(n),
         V = H?.type === m.G4.APPLICATION_COMMAND && null != H.target_user ? new p.A(H.target_user) : null,
         w = H?.type === m.G4.APPLICATION_COMMAND && null != n.messageReference && null != e.renderTargetMessage,
         X = (0, M.d8)(n.interaction?.user, a),
@@ -195,13 +195,13 @@ function F(e) {
         Y = n.interaction;
     if (null == Y || null == X) return null;
     let J = () => {
-        let t = b(e, Y.user, 0, X, e => F(e, Y.user, [I.A.AVATAR]), D),
+        let t = y(e, Y.user, 0, X, e => F(e, Y.user, [I.A.AVATAR]), D),
             n = k(e, Y.user, 0, X, e => F(e, Y.user));
         return (0, i.jsxs)(l.Fragment, {
             children: [t, n]
         }, "user")
     };
-    if (n?.activityInstance === null || (0, g.V)(n)) t = L.intl.format(L.t["rg7U+C"], {
+    if (n?.activityInstance === null || (0, C.V)(n)) t = L.intl.format(L.t["rg7U+C"], {
         userHook: J,
         commandHook: () => {
             let t = function(e, t, n) {
@@ -241,7 +241,7 @@ function F(e) {
                                 }), c]
                             })
                         });
-                        if (!(0, g.V)(a)) return (0, i.jsx)("div", {
+                        if (!(0, C.V)(a)) return (0, i.jsx)("div", {
                             className: j.p6,
                             ref: n,
                             children: c
@@ -271,7 +271,7 @@ function F(e) {
                         }
                     }
                 })
-            }(e, B, y);
+            }(e, B, b);
             return (0, i.jsx)(l.Fragment, {
                 children: t
             }, "command")
@@ -281,7 +281,7 @@ function F(e) {
     }) : null != V && (t = (0, i.jsxs)(i.Fragment, {
         children: [t, (0, i.jsx)(G, {}), (0, i.jsx)(() => {
             if (null == V) return null;
-            let t = b(e, V, 1, q, e => F(e, V, [I.A.AVATAR]), D),
+            let t = y(e, V, 1, q, e => F(e, V, [I.A.AVATAR]), D),
                 n = k(e, V, 1, q, e => F(e, V));
             return (0, i.jsxs)(l.Fragment, {
                 children: [t, n]

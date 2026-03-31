@@ -23,8 +23,8 @@ var i = n(989349),
     T = n(367727),
     f = n(487329),
     N = n(161518),
-    C = n(49463),
-    g = n(15285),
+    g = n(49463),
+    C = n(15285),
     h = n(142120),
     p = n(652896),
     x = n(585510),
@@ -38,8 +38,8 @@ var i = n(989349),
     v = n(264779),
     L = n(412260),
     j = n(160394),
-    y = n(859703),
-    b = n(34550),
+    b = n(859703),
+    y = n(34550),
     k = n(655116),
     G = n(105530),
     F = n(942405),
@@ -77,8 +77,8 @@ var i = n(989349),
     eT = n(723702),
     ef = n(927578),
     eN = n(837921),
-    eC = n(755439),
-    eg = n(422033),
+    eg = n(755439),
+    eC = n(422033),
     eh = n(966846),
     ep = n(652215);
 n(436317);
@@ -130,8 +130,8 @@ let eM = {
     },
     eL = new Set([ep.kqX.NO_INPUT_DETECTED, ep.kqX.NO_INPUT_DEVICES_DETECTED, ep.kqX.STREAMER_MODE, ep.kqX.VIDEO_UNSUPPORTED_BROWSER, ep.kqX.SPOTIFY_AUTO_PAUSED, ep.kqX.DISPATCH_ERROR, ep.kqX.DISPATCH_ERROR, ep.kqX.DISPATCH_INSTALL_SCRIPT_PROGRESS, ep.kqX.WINDOWS_MEDIA_PACK_REQUIRED]),
     ej = {},
-    ey = {},
-    eb = Object.freeze({
+    eb = {},
+    ey = Object.freeze({
         id: null,
         message: null,
         buttonText: null,
@@ -264,14 +264,14 @@ let eX = {
         }).showPTTNoKeybindWarning
     },
     [ep.kqX.DISPATCH_ERROR]: {
-        predicate: () => null != eC.A.getLastError(),
+        predicate: () => null != eg.A.getLastError(),
         metadata: () => ({
-            error: eC.A.getLastError()
+            error: eg.A.getLastError()
         })
     },
     [ep.kqX.DISPATCH_INSTALL_SCRIPT_PROGRESS]: {
-        predicate: () => null != eg.A.getLastProgress(),
-        metadata: () => eg.A.getLastProgress()
+        predicate: () => null != eC.A.getLastProgress(),
+        metadata: () => eC.A.getLastProgress()
     },
     [ep.kqX.SPOTIFY_AUTO_PAUSED]: {
         predicate: () => k.A.wasAutoPaused()
@@ -363,7 +363,7 @@ let eX = {
         }
     },
     [ep.kqX.CONNECT_SPOTIFY]: {
-        predicate: () => !k.A.hasConnectedAccount() && g.Ay.isObservedAppRunning(_.A.get(ep.fg2.SPOTIFY).name) && !eV(ep.kqX.CONNECT_SPOTIFY)
+        predicate: () => !k.A.hasConnectedAccount() && C.Ay.isObservedAppRunning(_.A.get(ep.fg2.SPOTIFY).name) && !eV(ep.kqX.CONNECT_SPOTIFY)
     },
     [ep.kqX.WIN32_DEPRECATED_MESSAGE]: {
         predicate: () => u.A?.os.arch === "ia32" && u.A?.process.platform === "win32",
@@ -568,7 +568,7 @@ let eX = {
             let e = X.A.getCurrentUserActiveStream();
             if (null == e) return !1;
             let t = (0, p._z)(e),
-                n = y.A.getStreamHeartbeatFailure(t);
+                n = b.A.getStreamHeartbeatFailure(t);
             return null != n && Date.now() - n.firstFailedAt >= eR.tZ
         },
         metadata: () => {
@@ -587,14 +587,14 @@ let eX = {
         }
     },
     [ep.kqX.BLOCK_USER_FEEDBACK_NAGBAR]: {
-        predicate: () => !eV(ep.kqX.BLOCK_USER_FEEDBACK_NAGBAR) && b.Cm(),
+        predicate: () => !eV(ep.kqX.BLOCK_USER_FEEDBACK_NAGBAR) && y.Cm(),
         metadata: () => ({
             dismissUntil: l()().add(180, "days").toDate(),
             sampleRate: .1
         })
     },
     [ep.kqX.IGNORE_USER_FEEDBACK_NAGBAR]: {
-        predicate: () => b.h6(),
+        predicate: () => y.h6(),
         metadata: () => ({
             sampleRate: .1
         })
@@ -604,8 +604,8 @@ let eX = {
             let {
                 voiceChannelId: t
             } = e;
-            if (eV(ep.kqX.SYSTEM_SERVICE_WARNING) || !(0, F.yA)(g.Ay) || null == t || $.Ay.getMode() !== ep.TBI.PUSH_TO_TALK) return !1;
-            let n = g.Ay.getVisibleGame();
+            if (eV(ep.kqX.SYSTEM_SERVICE_WARNING) || !(0, F.yA)(C.Ay) || null == t || $.Ay.getMode() !== ep.TBI.PUSH_TO_TALK) return !1;
+            let n = C.Ay.getVisibleGame();
             return null != n && !!n.elevated
         }
     },
@@ -647,14 +647,14 @@ function eq() {
                 selectedGuildId: n
             });
             ek = {
-                ...eb,
+                ...ey,
                 type: a,
                 metadata: i
             };
             break
         } if (null != ek) {
-        ek.metadata?.sampleRate != null && null == ey[ek.type] && (ey[ek.type] = Math.random() <= ek.metadata.sampleRate);
-        let e = !1 === ey[ek.type];
+        ek.metadata?.sampleRate != null && null == eb[ek.type] && (eb[ek.type] = Math.random() <= ek.metadata.sampleRate);
+        let e = !1 === eb[ek.type];
         (eV(ek.type) || e) && (ek = null)
     }
 }
@@ -665,7 +665,7 @@ function eK() {
 class ez extends r.Ay.Store {
     static displayName = "NoticeStore";
     initialize() {
-        this.syncWith([N.A, eo.Ay, en.A, W.A, ea.A, L.A, eA.A, K.default, J.A, H.A, R.A, y.A, X.A, g.Ay, w.A, N.A], eq), this.waitFor(N.A, m.A, X.A, q.default, K.default, z.A, Y.A, P.A, J.A, E.A, W.A, eC.A, eg.A, eh.A, eE.A, C.A, h.A, O.A, R.A, Q.Ay, Z.A, M.A, D.A, $.Ay, ee.A, e_.A, et.A, en.A, L.A, y.A, ei.A, g.Ay, el.A, ea.A, k.A, er.A, es.A, U.A, em.A, eo.Ay, eI.A, B.Ay, eA.A, ec.A, H.A, ed.default, eu.A, w.A)
+        this.syncWith([N.A, eo.Ay, en.A, W.A, ea.A, L.A, eA.A, K.default, J.A, H.A, R.A, b.A, X.A, C.Ay, w.A, N.A], eq), this.waitFor(N.A, m.A, X.A, q.default, K.default, z.A, Y.A, P.A, J.A, E.A, W.A, eg.A, eC.A, eh.A, eE.A, g.A, h.A, O.A, R.A, Q.Ay, Z.A, M.A, D.A, $.Ay, ee.A, e_.A, et.A, en.A, L.A, b.A, ei.A, C.Ay, el.A, ea.A, k.A, er.A, es.A, U.A, em.A, eo.Ay, eI.A, B.Ay, eA.A, ec.A, H.A, ed.default, eu.A, w.A)
     }
     hasNotice() {
         return null != ek && null != ek.type
@@ -758,7 +758,7 @@ let eY = new ez(d.h, {
         return eF(t), eq()
     },
     LOGOUT: function() {
-        ej = {}, ey = {}, ek = null
+        ej = {}, eb = {}, ek = null
     },
     SUBSCRIPTION_PLANS_FETCH_SUCCESS: eq,
     AUTO_MODERATION_MENTION_RAID_DETECTION: eq,

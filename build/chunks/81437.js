@@ -3,8 +3,8 @@ n.d(t, {
     A: () => c
 });
 var i = n(157559),
-    r = n(734057),
-    a = n(576705),
+    a = n(734057),
+    r = n(576705),
     l = n(994500),
     s = n(694318),
     o = n(652215),
@@ -26,8 +26,8 @@ function c(e, t) {
         confirmText: d.intl.string(d.t.BddRzS)
     }), !1;
     if ((0, s.kf)(e)) {
-        let n = r.A.getChannel(e.channel_id);
-        return n?.isPrivate() || a.A.can(o.xBc.MODERATE_MEMBERS, n) ? i.A.show({
+        let n = a.A.getChannel(e.channel_id);
+        return n?.isPrivate() || r.A.can(o.xBc.MODERATE_MEMBERS, n) ? i.A.show({
             title: d.intl.string(d.t["cZcG+P"]),
             body: d.intl.formatToPlainString(d.t["1YTWty"], {
                 name: e.author.username

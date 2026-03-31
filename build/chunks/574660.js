@@ -4,8 +4,8 @@ n.d(t, {
     t: () => I
 });
 var i = n(64700),
-    r = n(311907),
-    a = n(735991),
+    a = n(311907),
+    r = n(735991),
     l = n(297486),
     s = n(837057),
     o = n(310419),
@@ -30,10 +30,10 @@ function f(e) {
         customInstallUrl: n,
         installParams: i,
         integrationTypesConfig: l
-    }), o = (0, r.bG)([_.A], () => _.A.getGuildId() ?? void 0), m = (0, r.bG)([d.A, c.A, u.A], () => {
+    }), o = (0, a.bG)([_.A], () => _.A.getGuildId() ?? void 0), m = (0, a.bG)([d.A, c.A, u.A], () => {
         let e = d.A.getChannel(u.A.getChannelId());
         return null != e && (e.isPrivate() || c.A.can(g.xBc.SEND_MESSAGES, e))
-    }, []), p = (0, a.V1)(e, o) && m;
+    }, []), p = (0, r.V1)(e, o) && m;
     return {
         isDiscoverable: t,
         customInstallUrl: n,
@@ -49,15 +49,15 @@ function f(e) {
 function C(e, t) {
     let {
         canViewApp: n,
-        canOpenAppLauncher: r,
-        isInstallable: a,
+        canOpenAppLauncher: a,
+        isInstallable: r,
         customInstallUrl: d,
         installParams: c,
         integrationTypesConfig: u,
         selectedGuildId: _
     } = f(e);
     return i.useMemo(() => n ? () => {
-        (t?.(), r) ? (0, l.hg)(e.id) : (0, s.transitionToGlobalDiscovery)({
+        (t?.(), a) ? (0, l.hg)(e.id) : (0, s.transitionToGlobalDiscovery)({
             tab: A.GlobalDiscoveryTab.APPS,
             applicationId: e.id,
             newSessionState: {
@@ -66,7 +66,7 @@ function C(e, t) {
                 }
             }
         })
-    } : a ? () => {
+    } : r ? () => {
         t?.(), (0, m.o)({
             applicationId: e.id,
             customInstallUrl: d,
@@ -75,25 +75,25 @@ function C(e, t) {
             guildId: _,
             source: "app_message_embed"
         })
-    } : void 0, [e.id, r, n, d, c, u, a, t, _])
+    } : void 0, [e.id, a, n, d, c, u, r, t, _])
 }
 
 function I(e) {
     let {
         canViewApp: t,
         isInstallable: n
-    } = f(e), r = C(e);
-    return i.useMemo(() => t && null != r ? {
+    } = f(e), a = C(e);
+    return i.useMemo(() => t && null != a ? {
         label: x.intl.string(x.t.hvVgAZ),
         trackingArea: p.kY.VIEW,
         onClick() {
-            r()
+            a()
         }
-    } : n && null != r ? {
+    } : n && null != a ? {
         label: x.intl.string(x.t.NgXl3C),
         trackingArea: p.kY.ADD_APP,
         onClick() {
-            r()
+            a()
         }
-    } : void 0, [t, n, r])
+    } : void 0, [t, n, a])
 }

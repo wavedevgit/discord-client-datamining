@@ -27,15 +27,15 @@ function _(e) {
             nameplate: A
         } = e,
         C = i.useRef(null),
-        [y, S] = i.useState(!1);
+        [y, T] = i.useState(!1);
     (0, s.Ay)(() => {
-        let e = () => S(!0);
+        let e = () => T(!0);
         return m._.subscribe(x.jej.PREMIUM_GROUP_PURCHASE_FLOW_COMPLETED, e), () => {
             m._.unsubscribe(x.jej.PREMIUM_GROUP_PURCHASE_FLOW_COMPLETED, e)
         }
     });
-    let T = i.useCallback(() => {
-        S(!1), f()
+    let S = i.useCallback(() => {
+        T(!1), f()
     }, [f]);
     t = null != _ ? g.intl.formatToPlainString(g.t.Gzh6ZP, {
         webBuildOverride: _.id
@@ -47,7 +47,7 @@ function _(e) {
             ref: C,
             tooltipText: t,
             tooltipPositionKey: n,
-            onClick: T,
+            onClick: S,
             onContextMenu: v,
             "aria-label": g.intl.string(g.t.cduTBL),
             icon: (0, a.jsx)(E, {
@@ -60,7 +60,7 @@ function _(e) {
         }), (0, a.jsx)(c.V, {
             targetElementRef: C,
             shouldShow: y,
-            onDismiss: () => S(!1)
+            onDismiss: () => T(!1)
         }), (0, a.jsx)(d.Ay, {
             contentTypes: b,
             groupName: p.m.ACCOUNT_NAME_ZONE,

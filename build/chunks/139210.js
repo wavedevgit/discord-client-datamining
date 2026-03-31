@@ -34,23 +34,23 @@ let A = (0, r.animated)(x.Ay),
                 onCtxMenuSelect: x,
                 isExpanded: C,
                 isExpansionAnimationComplete: y,
-                quest: S
+                quest: T
             } = i.useContext(f.T),
-            T = i.useCallback(() => {
-                (0, g.Zc)(S, {
+            S = i.useCallback(() => {
+                (0, g.Zc)(T, {
                     content: d.uF.QUEST_BAR_V2,
                     ctaContent: c.Cy.OPEN_DISCLOSURE,
                     sourceQuestContent: d.uF.QUEST_BAR_V2
                 })
-            }, [S]),
+            }, [T]),
             E = i.useCallback(() => {
-                (0, m.pu)(S, {
+                (0, m.pu)(T, {
                     content: d.uF.QUEST_BAR_V2,
                     ctaContent: c.Cy.OPEN_GAME_LINK,
                     impressionId: e,
                     sourceQuestContent: d.uF.QUEST_BAR_V2
                 })
-            }, [e, S]),
+            }, [e, T]),
             N = C && y,
             I = (0, a.jsx)(o.DUT, {
                 onClick: E,
@@ -58,7 +58,7 @@ let A = (0, r.animated)(x.Ay),
                     [j.wm]: N
                 }),
                 children: (0, a.jsx)(A, {
-                    quest: S,
+                    quest: T,
                     withGameTile: !1,
                     logotypeClassName: j.Iu,
                     logotypeStyle: {
@@ -102,7 +102,7 @@ let A = (0, r.animated)(x.Ay),
                 },
                 children: [(0, a.jsxs)(o.DUT, {
                     className: j.y8,
-                    onClick: T,
+                    onClick: S,
                     children: [(0, a.jsx)(o.Text, {
                         color: "always-white",
                         variant: "text-xs/normal",
@@ -116,7 +116,7 @@ let A = (0, r.animated)(x.Ay),
                     onClose: s,
                     onSelect: x,
                     questContent: d.uF.QUEST_BAR_V2,
-                    quest: S,
+                    quest: T,
                     shouldShowDisclosure: !0,
                     showShareLink: !0,
                     sourceQuestContent: d.uF.QUEST_BAR_V2,

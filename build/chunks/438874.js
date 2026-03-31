@@ -11,10 +11,10 @@ function s(e, t) {
         s = n.type !== l.b_.INACTIVE,
         o = n.type === l.b_.TIER_OVERRIDE_ACTIVATED,
         a = (0, r.A)(e, t, "GuildPowerupCardFooterAdmin"),
-        d = l.HO;
+        u = l.HO;
     return {
         showToggleButton: (s || !a) && !o,
-        showConfigureButton: s && d.has(t.skuId),
+        showConfigureButton: s && u.has(t.skuId),
         isPowerupActive: s
     }
 }

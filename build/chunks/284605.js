@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var r = n(417597),
-    a = n(732955),
+var a = n(417597),
+    r = n(732955),
     l = n(492749),
     s = n(827186),
     o = n(465932),
@@ -35,7 +35,7 @@ function I(e) {
         thumbnailHeight: S,
         descriptionTextVariant: N = "text-sm/normal",
         showOpaqueBackground: j = !1
-    } = e, L = (0, r.bG)([c.A], () => c.A.getGuild(n), [n]), R = (0, r.bG)([d.A], () => d.A.getRole(n, t?.role_id ?? C.dJq)), P = (0, l.R)(t, 600), w = (0, g.z)(t), M = (0, _.BB)(L), {
+    } = e, L = (0, a.bG)([c.A], () => c.A.getGuild(n), [n]), R = (0, a.bG)([d.A], () => d.A.getRole(n, t?.role_id ?? C.dJq)), P = (0, l.R)(t, 600), w = (0, g.z)(t), M = (0, _.BB)(L), {
         shouldHideGuildPurchaseEntryPoints: D
     } = (0, o.MH)(n), k = (0, g.X)(t), O = (0, x.A)({
         guildId: n,
@@ -78,7 +78,7 @@ function I(e) {
         description: t.description,
         formattedPrice: k,
         role: R,
-        ctaComponent: (0, i.jsx)(a.$nd, {
+        ctaComponent: (0, i.jsx)(r.$nd, {
             ...O
         }),
         productType: w,

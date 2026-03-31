@@ -3,9 +3,9 @@ n.d(t, {
     A: () => b
 });
 var i = n(627968),
-    r = n(64700),
-    a = n(284009),
-    l = n.n(a),
+    a = n(64700),
+    r = n(284009),
+    l = n.n(r),
     s = n(158954),
     o = n(311907),
     d = n(846293),
@@ -26,7 +26,7 @@ var i = n(627968),
 function b(e) {
     let t, {
             invite: n,
-            currentUserId: a,
+            currentUserId: r,
             guild: b,
             message: v,
             onTransitionToInviteChannel: T,
@@ -47,9 +47,9 @@ function b(e) {
         target_user: D
     } = n;
     l()(M === C.yV.STREAM && null != D, "invalid streaming invite");
-    let k = a === D.id,
+    let k = r === D.id,
         O = n.state === f.elq.ACCEPTING,
-        U = r.useCallback(() => {
+        U = a.useCallback(() => {
             let e = "noop";
             P ? (T(), e = "transition") : (y(), e = "accept"), (0, d.he)({
                 invite: n,

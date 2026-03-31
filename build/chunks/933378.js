@@ -25,7 +25,7 @@ var a = n(627968),
     C = n(985018),
     y = n(146567);
 
-function S(e) {
+function T(e) {
     return (0, a.jsx)(d.Text, {
         className: y.eW,
         color: "text-muted",
@@ -34,7 +34,7 @@ function S(e) {
     })
 }
 
-function T(e) {
+function S(e) {
     let {
         quest: t,
         useReducedMotion: n
@@ -43,7 +43,7 @@ function T(e) {
     }), c = (0, x.Ut)(), f = (0, g.go)(), {
         errorHints: j,
         startingConsoleQuest: A,
-        startConsoleQuest: T
+        startConsoleQuest: S
     } = (0, h.Wj)({
         questId: t.id,
         beforeRequest: () => {
@@ -73,7 +73,7 @@ function T(e) {
                         let i = u.A.getAccount(e.connected_account_id, e.connected_account_type),
                             s = (0, _.IG)(e),
                             l = (0, _.$J)(e);
-                        return (0, a.jsx)(S, {
+                        return (0, a.jsx)(T, {
                             children: C.intl.format(s, {
                                 account_name: i?.name,
                                 onClick: () => {
@@ -90,7 +90,7 @@ function T(e) {
                             })
                         }, n)
                     }
-                    return (0, a.jsx)(S, {
+                    return (0, a.jsx)(T, {
                         children: e.message
                     }, n)
                 })
@@ -121,14 +121,14 @@ function T(e) {
                 className: l()(y.w, {
                     [y.r9]: A
                 }),
-                onClick: () => T(),
+                onClick: () => S(),
                 children: o.render()
             })]
         }), (0, a.jsxs)("div", {
             className: l()({
                 [y.Iu]: A
             }),
-            children: [N(), 0 === j.length ? null : (0, a.jsx)(S, {
+            children: [N(), 0 === j.length ? null : (0, a.jsx)(T, {
                 children: s
             })]
         })]
@@ -179,7 +179,7 @@ let E = function(e) {
     return (0, a.jsx)(A.Ay, {
         heading: C.intl.string(C.t.UPWlJu),
         steps: d,
-        children: u && !x && !p && (0, a.jsx)(T, {
+        children: u && !x && !p && (0, a.jsx)(S, {
             useReducedMotion: s,
             quest: t
         })

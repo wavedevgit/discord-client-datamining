@@ -22,12 +22,12 @@ var l = n(192308),
 async function N(e, t) {
     let {
         channelId: N,
-        analyticsLocations: C,
-        messageReference: g
+        analyticsLocations: g,
+        messageReference: C
     } = t, h = o.A.getChannel(N);
     if (null != h) {
-        if (null != g) {
-            let e = d.A.getMessage(g.channel_id, g.message_id);
+        if (null != C) {
+            let e = d.A.getMessage(C.channel_id, C.message_id);
             null != e && (0, s.Yf)({
                 message: e,
                 channel: h,
@@ -56,7 +56,7 @@ async function N(e, t) {
                     })), n.push({})
                 }
                 u.default.track(f.HAw.CLIP_SHARED, {
-                    location_stack: C,
+                    location_stack: g,
                     guild_id: h.guild_id,
                     channel_id: h.id,
                     channel_type: h.type,
@@ -77,7 +77,7 @@ async function N(e, t) {
         return n => (0, i.jsx)(t, {
             ...n,
             clips: e,
-            analyticsLocations: C
+            analyticsLocations: g
         })
     }, {
         stackingBehavior: "stack",

@@ -1,7 +1,7 @@
 /** chunk id: 902592 params = (module,exports,require) **/
 n.r(t), n.d(t, {
     default: () => k,
-    openDevToolsPopout: () => T
+    openDevToolsPopout: () => S
 });
 var a = n(627968),
     i = n(64700),
@@ -26,7 +26,7 @@ var a = n(627968),
     C = n(670211),
     y = n(310086);
 
-function S(e) {
+function T(e) {
     let {
         resizableNode: t,
         onResize: n,
@@ -44,7 +44,7 @@ function S(e) {
     })
 }
 
-function T() {
+function S() {
     (0, x.open)(j.MLl.DEVTOOLS_POPOUT, () => (0, a.jsx)(h.A, {
         windowKey: j.MLl.DEVTOOLS_POPOUT,
         title: "DevTools",
@@ -88,7 +88,7 @@ function E(e) {
                 children: [(0, a.jsx)(m.Ay.Icon, {
                     icon: d.tfB,
                     tooltip: "Pop Out",
-                    onClick: T
+                    onClick: S
                 }), (0, a.jsx)(m.Ay.Icon, {
                     icon: d.PGe,
                     tooltip: A.intl.string(A.t.cpT0Cq),
@@ -124,7 +124,7 @@ function N() {
             width: n
         },
         "data-app-right-panel": !0,
-        children: [(0, a.jsx)(S, {
+        children: [(0, a.jsx)(T, {
             resizableNode: e,
             onResize: s,
             onResizeEnd: l

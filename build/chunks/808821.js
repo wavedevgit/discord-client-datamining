@@ -23,8 +23,8 @@ function f(e) {
         message: t,
         compact: n
     } = e, f = t.channel_id, N = (0, r.bG)([_.A], () => null != t.messageReference ? _.A.getMessage(t.messageReference.channel_id, t.messageReference.message_id) : null, [t.messageReference]), {
-        clipId: C,
-        remoteTriggerClipId: g
+        clipId: g,
+        remoteTriggerClipId: C
     } = l.useMemo(() => null != N ? function(e) {
         let t = "__CLIP_METADATA__",
             n = e.indexOf(t);
@@ -40,7 +40,7 @@ function f(e) {
         } catch (e) {
             return {}
         }
-    }(N.content) : {}, [N]), h = (0, r.bG)([c.A], () => c.A.getMatchingGroupClip(C, g)), p = (0, r.bG)([c.A], () => null != h && null != f && c.A.wasClipSharedInChannel(h.id, f)), {
+    }(N.content) : {}, [N]), h = (0, r.bG)([c.A], () => c.A.getMatchingGroupClip(g, C)), p = (0, r.bG)([c.A], () => null != h && null != f && c.A.wasClipSharedInChannel(h.id, f)), {
         onShareClick: x
     } = (0, u.A)(f), R = l.useCallback(() => {
         null != h && null != f && t.messageReference?.message_id != null && x({
@@ -51,7 +51,7 @@ function f(e) {
             }
         })
     }, [h, f, t.messageReference, x]);
-    if (null == N || null == C && null == g || null == h || p) return null;
+    if (null == N || null == g && null == C || null == h || p) return null;
     let S = N.attachments.find(e => (0, a.Lt)(e.flags ?? 0, E.sbO.IS_CLIP)),
         O = null;
     if (S?.proxy_url != null) {

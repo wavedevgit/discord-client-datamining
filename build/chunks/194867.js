@@ -8,8 +8,8 @@ var r = n(627968),
     s = n(990078),
     o = n(397927),
     a = n(775602),
-    d = n(600941),
-    u = n(890942),
+    u = n(600941),
+    d = n(890942),
     c = n(744201),
     p = n(271484),
     _ = n(526652);
@@ -19,7 +19,7 @@ function m(e) {
         guildId: t,
         group: n,
         powerups: m
-    } = e, [f, A] = i.useState(!1), g = (0, l.bG)([a.A], () => a.A.useReducedMotion), x = (0, p.A)(n, t), v = !g && f ? x?.image?.animatedUrl : x?.image?.staticUrl, h = (0, d.A)({
+    } = e, [f, A] = i.useState(!1), g = (0, l.bG)([a.A], () => a.A.useReducedMotion), x = (0, p.A)(n, t), v = !g && f ? x?.image?.animatedUrl : x?.image?.staticUrl, h = (0, u.A)({
         guildId: t,
         powerups: m
     }), {
@@ -27,14 +27,14 @@ function m(e) {
     } = (0, c.A)(h?.isActive ?? !1);
     if (null == h || null == x) return null;
     let {
-        status: b,
-        cost: I,
+        status: I,
+        cost: b,
         costDecorator: j
     } = h;
-    return (0, r.jsxs)(u.NI, {
+    return (0, r.jsxs)(d.NI, {
         label: x.title,
-        isActive: b?.type === "active",
-        isWarning: b?.type === "expiring",
+        isActive: I?.type === "active",
+        isWarning: I?.type === "expiring",
         badge: x.badge,
         onClick: () => x.openModal(m),
         onMouseOver: () => A(!0),
@@ -43,12 +43,12 @@ function m(e) {
             alt: "",
             src: v,
             className: _.S
-        }), (0, r.jsx)(u.Ft, {
+        }), (0, r.jsx)(d.Ft, {
             title: x.title,
             textColor: E,
-            footer: (0, r.jsx)(u.$L, {
-                status: b,
-                cost: I,
+            footer: (0, r.jsx)(d.$L, {
+                status: I,
+                cost: b,
                 costDecorator: j
             }),
             children: (0, r.jsx)(o.Text, {
@@ -57,7 +57,7 @@ function m(e) {
                 variant: "text-sm/medium",
                 children: x.description
             })
-        }), (0, r.jsx)(u.kd, {
+        }), (0, r.jsx)(d.kd, {
             children: x?.viewCtaTooltip != null ? (0, r.jsx)(s.m, {
                 asContainer: !0,
                 text: x.viewCtaTooltip,

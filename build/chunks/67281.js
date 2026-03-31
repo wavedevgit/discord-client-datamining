@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var r = n(503698),
-    a = n.n(r),
+var a = n(503698),
+    r = n.n(a),
     l = n(791282),
     s = n.n(l),
     o = n(311907),
@@ -22,14 +22,14 @@ let x = function(e) {
     let {
         createdAt: t,
         participantIds: n,
-        applicationId: r,
+        applicationId: a,
         title: l,
         guildId: x,
         playerState: f = d.Q6.PAUSED,
         isControlBarExpanded: C = !0
-    } = e, I = (0, _.h)(r), E = (0, o.yK)([m.default], () => n.map(e => m.default.getUser(e)).filter(p.Vq) ?? []), b = null != t ? (0, h.Fe)(new Date(t)) : null, v = s()([I?.name, b]);
+    } = e, I = (0, _.h)(a), E = (0, o.yK)([m.default], () => n.map(e => m.default.getUser(e)).filter(p.Vq) ?? []), b = null != t ? (0, h.Fe)(new Date(t)) : null, v = s()([I?.name, b]);
     return (0, i.jsxs)("div", {
-        className: a()(A.oK, {
+        className: r()(A.oK, {
             [A.pd]: f === d.Q6.PLAYING && !C
         }),
         children: [(0, i.jsx)("div", {

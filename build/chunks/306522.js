@@ -7,12 +7,12 @@ n.d(t, {
     oG: () => d
 });
 var i = n(562465),
-    r = n(198982),
-    a = n(371794),
+    a = n(198982),
+    r = n(371794),
     l = n(652215);
 let s = async (e, t, n) => {
     let {
-        priceTier: a,
+        priceTier: r,
         imageName: s,
         createNewRole: o,
         unlinkRole: d,
@@ -24,14 +24,14 @@ let s = async (e, t, n) => {
             body: {
                 ...c,
                 image_name: s,
-                price_tier: a,
+                price_tier: r,
                 create_new_role: o,
                 unlink_role: d
             },
             rejectWithError: !1
         })).body
     } catch (e) {
-        throw new r.LG(e)
+        throw new a.LG(e)
     }
 }, o = async (e, t) => {
     try {
@@ -40,38 +40,38 @@ let s = async (e, t, n) => {
             rejectWithError: !1
         })
     } catch (e) {
-        throw new r.LG(e)
+        throw new a.LG(e)
     }
 }, d = async e => {
     try {
-        return (await (0, a.aP)({
+        return (await (0, r.aP)({
             url: l.Rsh.GUILD_PRODUCT_LISTINGS(e),
             rejectWithError: !1
         })).body.listings
     } catch (e) {
-        throw new r.LG(e)
+        throw new a.LG(e)
     }
 }, c = async (e, t) => {
     try {
-        return (await (0, a.aP)({
+        return (await (0, r.aP)({
             url: l.Rsh.GUILD_PRODUCT_LISTINGS(e, t),
             rejectWithError: !1
         })).body
     } catch (e) {
-        throw new r.LG(e)
+        throw new a.LG(e)
     }
 }, u = async e => {
     let {
         guildId: t,
         productId: n,
-        attachmentId: a
+        attachmentId: r
     } = e;
     try {
         return (await i.Bo.post({
-            url: l.Rsh.GUILD_PRODUCT_ATTACHMENT_DOWNLOAD(t, n, a),
+            url: l.Rsh.GUILD_PRODUCT_ATTACHMENT_DOWNLOAD(t, n, r),
             rejectWithError: !1
         })).body
     } catch (e) {
-        throw new r.LG(e)
+        throw new a.LG(e)
     }
 }

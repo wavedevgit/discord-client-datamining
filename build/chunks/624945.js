@@ -18,17 +18,17 @@ function m(e) {
         message: t,
         channel: n,
         compact: m
-    } = e, A = t.getChannelId(), E = n.isDM() ? n.getRecipientId() : void 0, I = (0, l.bG)([s.default], () => null != E ? s.default.getUser(E) : void 0, [E]), T = (0, l.bG)([s.default], () => s.default.getCurrentUser(), []), f = null != T && t.author.id === T.id, N = (0, o.d8)(I, n), C = (0, c.P)({
+    } = e, A = t.getChannelId(), E = n.isDM() ? n.getRecipientId() : void 0, I = (0, l.bG)([s.default], () => null != E ? s.default.getUser(E) : void 0, [E]), T = (0, l.bG)([s.default], () => s.default.getCurrentUser(), []), f = null != T && t.author.id === T.id, N = (0, o.d8)(I, n), g = (0, c.P)({
         user: I,
         channelId: A,
         guildId: void 0,
         messageId: t.id
     })(N);
     if (!n.isDM() || null == I || null == T) return null;
-    let g = f ? u.t.S6PRsh : u.t["H/9Tlj"],
-        h = u.intl.format(g, {
+    let C = f ? u.t.S6PRsh : u.t["H/9Tlj"],
+        h = u.intl.format(C, {
             username: N.nick,
-            usernameHook: C
+            usernameHook: g
         });
     return (0, i.jsx)(d.A, {
         iconNode: (0, i.jsx)(r.V1C, {

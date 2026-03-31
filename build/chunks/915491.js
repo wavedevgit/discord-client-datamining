@@ -9,8 +9,8 @@ var i = n(158954),
     s = n(397927),
     o = n(449859),
     a = n(777347),
-    d = n(967144),
-    u = n(333354),
+    u = n(967144),
+    d = n(333354),
     c = n(985018),
     p = n(915666);
 
@@ -22,7 +22,7 @@ function _(e) {
         username: _,
         roleColor: m,
         roleColorStrings: f
-    } = (0, a.U)(t), A = (0, d.gn)(t.guildId, t.userId, f ?? null);
+    } = (0, a.U)(t), A = (0, u.gn)(t.guildId, t.userId, f ?? null);
     return (0, r.jsxs)("div", {
         className: p.og,
         children: [(0, r.jsx)(s._Jp, {
@@ -47,7 +47,7 @@ function _(e) {
                         colorString: m ?? null,
                         colorStrings: A
                     })
-                }), c.intl.string(u.default.plwH8d)]
+                }), c.intl.string(d.default.plwH8d)]
             })
         }), (0, r.jsx)(o.A, {
             timestamp: n,

@@ -24,8 +24,8 @@ var a = n(627968),
     A = n(792620),
     C = n(814793),
     y = n(988436),
-    S = n(918338),
-    T = n(270045),
+    T = n(918338),
+    S = n(270045),
     E = n(57718),
     N = n(398025),
     I = n(545986),
@@ -153,7 +153,7 @@ function B(e) {
         className: M.kL,
         children: [(0, a.jsx)("div", {
             className: M.IC,
-            children: (0, a.jsx)(S.A, {
+            children: (0, a.jsx)(T.A, {
                 quest: t,
                 isInteracting: n,
                 hideAssets: !r,
@@ -204,7 +204,7 @@ function B(e) {
                                 className: M.A9
                             })
                         })
-                    }), (0, a.jsx)(T.C, {
+                    }), (0, a.jsx)(S.C, {
                         onOpen: y,
                         onClose: m,
                         onSelect: N,

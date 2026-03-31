@@ -13,18 +13,18 @@ function o(e) {
             powerups: o
         } = e,
         a = (0, r.jJ)(n, o),
-        d = a.some(e => e.type !== i.b_.INACTIVE);
+        u = a.some(e => e.type !== i.b_.INACTIVE);
     if (o.length <= 0) return null;
-    let u = a.reduce((e, t) => {
+    let d = a.reduce((e, t) => {
         let {
             sourceEntitlement: n
         } = t, r = n?.ends_at;
         return null == r ? e : null == e || r < e ? r : e
     }, void 0);
-    null != u ? t = {
+    null != d ? t = {
         type: "expiring",
-        expiringAt: u
-    } : d && (t = {
+        expiringAt: d
+    } : u && (t = {
         type: "active",
         statusText: s.intl.string(l.default.FFLkmx)
     });
@@ -47,13 +47,13 @@ function o(e) {
             } = t;
             return e + (n?.cost ?? 0)
         }, 0),
-        m = d ? c : p;
+        m = u ? c : p;
     return {
-        isActive: d,
+        isActive: u,
         status: t,
         cost: m,
-        costDecorator: !d && _ > m ? "+" : void 0,
-        expiringAt: u,
+        costDecorator: !u && _ > m ? "+" : void 0,
+        expiringAt: d,
         activeCost: c,
         minCost: p,
         totalCost: _

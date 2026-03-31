@@ -3,8 +3,8 @@ n.d(t, {
     A: () => g
 });
 var i = n(627968),
-    r = n(412703),
-    a = n(311907),
+    a = n(412703),
+    r = n(311907),
     l = n(397927),
     s = n(829219),
     o = n(859703),
@@ -17,9 +17,9 @@ var i = n(627968),
 
 function p(e) {
     switch (e) {
-        case r.n.ACHIEVEMENT_IN_ACTIVITY:
-        case r.n.PLAY_ACTIVITY:
-        case r.n.WATCH_VIDEO:
+        case a.n.ACHIEVEMENT_IN_ACTIVITY:
+        case a.n.PLAY_ACTIVITY:
+        case a.n.WATCH_VIDEO:
             return c.Cy.START_QUEST;
         default:
             return c.Cy.ACCEPT_QUEST
@@ -45,7 +45,7 @@ let g = function(e) {
         questContentRowIndex: E
     }, v = n.id, {
         isEnrolling: T
-    } = (0, a.cf)([o.A], () => ({
+    } = (0, r.cf)([o.A], () => ({
         isEnrolling: o.A.isEnrolling(v)
     }), [v]), y = (0, _.Oz)(n), S = function(e, t) {
         let {
@@ -55,8 +55,8 @@ let g = function(e) {
             (0, _.Fy)(t)
         };
         switch (e) {
-            case r.n.ACHIEVEMENT_IN_ACTIVITY:
-            case r.n.PLAY_ACTIVITY:
+            case a.n.ACHIEVEMENT_IN_ACTIVITY:
+            case a.n.PLAY_ACTIVITY:
                 return () => {
                     n()
                 };
@@ -68,19 +68,19 @@ let g = function(e) {
             features: n
         } = t.config;
         switch (e) {
-            case r.n.WATCH_VIDEO:
+            case a.n.WATCH_VIDEO:
                 return h.intl.formatToPlainString(h.t.GNsKiW, {
                     remainTime: (0, u.xm)((0, u.Yh)(t))
                 });
-            case r.n.ACHIEVEMENT_IN_ACTIVITY:
+            case a.n.ACHIEVEMENT_IN_ACTIVITY:
                 return h.intl.string(h.t["hRIVy+"]);
-            case r.n.PLAY_ACTIVITY:
+            case a.n.PLAY_ACTIVITY:
                 if (n.includes(m.Li.CLOUD_GAMING_ACTIVITY)) return h.intl.string(h.t["+qoymD"]);
                 return h.intl.string(h.t["Ie9++s"]);
             default:
                 return h.intl.string(h.t.kUQLMJ)
         }
-    }(c, n), j = (t = S ?? void 0, c === r.n.WATCH_VIDEO ? async () => {
+    }(c, n), j = (t = S ?? void 0, c === a.n.WATCH_VIDEO ? async () => {
         await (0, _.e0)(n, {
             questContent: b.questContent,
             questContentCTA: b.questContentCTA,
