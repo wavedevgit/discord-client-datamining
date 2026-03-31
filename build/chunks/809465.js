@@ -21,23 +21,23 @@ var i = n(503698),
 function p() {
     let e = (0, d.GV)(),
         t = window.GLOBAL_ENV.RELEASE_CHANNEL,
-        n = "520129",
-        i = "32a01e2e26894996c1301be7f76cddf94a3d3d02".substring(0, 7),
+        n = "520199",
+        i = "dc64fad0070362fbc5483ee208d8eee42fe7b0fd".substring(0, 7),
         l = c.A?.app.getVersion(),
         p = c.A?.app.getBuildNumber(),
         v = c.A?.app.getAppArch(),
         y = u.A.getCurrentBuildOverride().overrides?.discord_web,
-        g = function() {
+        b = function() {
             let e = s()?.os?.toString();
             if (null == e || null == c.A) return null;
             let t = c.A.os.release,
                 [n, r, i] = h.Ay.parsedOSRelease;
             return e.includes("Windows 10") && void 0 !== i && i >= 22e3 && (e = e.replace("Windows 10", "Windows 11")), e.includes("OS X 10.15.7") && void 0 !== n && n >= 20 && (e = `macOS ${n>=25?n+1:n-9}`), `${e} (${t})`
         }(),
-        b = [t, n, `(${i})`];
-    return null != l && (b.push(`Host ${l}`), null != v && b.push(v.toLowerCase()), null != p && b.push(`(${p})`)), b.push(`Build Override: ${null!=y?y.id:"N/A"}`), null != g && b.push(g), (0, r.jsxs)(r.Fragment, {
+        g = [t, n, `(${i})`];
+    return null != l && (g.push(`Host ${l}`), null != v && g.push(v.toLowerCase()), null != p && g.push(`(${p})`)), g.push(`Build Override: ${null!=y?y.id:"N/A"}`), null != b && g.push(b), (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(_.A, {
-            copyValue: b.join(" "),
+            copyValue: g.join(" "),
             text: f.intl.string(f.t["9Al4Qd"]),
             "aria-label": !1,
             dataMeticulousIgnore: "true",

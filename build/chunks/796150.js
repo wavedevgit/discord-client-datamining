@@ -19,8 +19,8 @@ var r = n(627968),
     p = n(162396),
     v = n(960545),
     y = n(841329),
-    g = n(12901),
-    b = n(921854),
+    b = n(12901),
+    g = n(921854),
     x = n(985018),
     E = n(879797);
 let S = new Set([m.X.PROFILE_PANEL, m.X.SUBSCRIPTIONS_PANEL, m.X.FAMILY_CENTER_PANEL, m.X.POGGERMODE_PANEL]),
@@ -40,13 +40,13 @@ function N(e) {
     }, []), [E, N] = i.useState(!1);
     return (i.useLayoutEffect(() => {
         let e = () => {
-            null == h.default.getCurrentUser() && (N(!0), (0, g.default)())
+            null == h.default.getCurrentUser() && (N(!0), (0, b.default)())
         };
         return _.default.addChangeListener(e), () => {
             _.default.removeChangeListener(e), v.A.resetState(), c.A.resetState(), s.A.close()
         }
     }, []), E) ? null : (0, r.jsx)(d.A, {
-        partialRoot: b.D,
+        partialRoot: g.D,
         searchBar: C,
         emptyState: I,
         sidebarFooter: p.A,
