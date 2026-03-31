@@ -7,8 +7,8 @@ var i = n(627968),
     o = n(158954),
     l = n(397927),
     s = n(827343),
-    c = n(820284),
-    r = n(212245),
+    r = n(820284),
+    c = n(212245),
     d = n(793574),
     _ = n(688810),
     u = n(253932),
@@ -20,8 +20,8 @@ var i = n(627968),
     k = n(954571),
     x = n(745317),
     C = n(652215),
-    I = n(985018),
-    h = n(980027);
+    h = n(985018),
+    I = n(980027);
 
 function O(e) {
     let {
@@ -29,7 +29,7 @@ function O(e) {
         videoEnabled: n,
         onEnable: O,
         onClose: D
-    } = e, f = b.Ay.getCameraComponent(), A = u.bm.useSetting(), [S, T] = a.useState((0, g.i)(v.default.getCurrentUser())), w = (0, r.p)(), {
+    } = e, f = b.Ay.getCameraComponent(), A = u.bm.useSetting(), [S, T] = a.useState((0, g.i)(v.default.getCurrentUser())), w = (0, c.p)(), {
         analyticsLocations: U
     } = (0, _.Ay)(d.A.CAMERA_PREVIEW);
     a.useEffect(() => {
@@ -53,18 +53,18 @@ function O(e) {
         }, [E, O]),
         N = a.useMemo(() => [{
             variant: "primary",
-            text: n ? I.intl.string(I.t.KQENhq) : I.intl.string(I.t.kgIe9a),
+            text: n ? h.intl.string(h.t.KQENhq) : h.intl.string(h.t.kgIe9a),
             onClick: n ? E : j
         }], [E, j, n]);
     return (0, i.jsx)(_.f5, {
         value: U,
-        children: (0, i.jsx)(c.A, {
+        children: (0, i.jsx)(r.A, {
             page: C.liQ.PREVIEW_CAMERA_MODAL,
             children: (0, i.jsx)(o.Modal, {
                 size: "md",
-                title: n ? I.intl.string(I.t.LAwwbQ) : I.intl.string(I.t["/HITVD"]),
+                title: n ? h.intl.string(h.t.LAwwbQ) : h.intl.string(h.t["/HITVD"]),
                 actionBarInput: (0, i.jsx)(l.Checkbox, {
-                    label: I.intl.string(I.t["3Ppr1h"]),
+                    label: h.intl.string(h.t["3Ppr1h"]),
                     labelType: "secondary",
                     checked: A,
                     onChange: () => {
@@ -84,9 +84,9 @@ function O(e) {
                     onSelectBackgroundOption: T,
                     hideDeviceSelector: n,
                     renderCamera: e => (0, i.jsxs)("div", {
-                        className: h.S,
+                        className: I.S,
                         children: [(0, i.jsx)("div", {
-                            className: h.U,
+                            className: I.U,
                             children: (0, i.jsx)(f, {
                                 disabled: !1,
                                 deviceId: e,

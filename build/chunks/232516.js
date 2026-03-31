@@ -1,6 +1,6 @@
 /** chunk id: 232516 params = (module,exports,require) **/
 t.d(i, {
-    A: () => d
+    A: () => c
 });
 var r = t(627968);
 t(64700);
@@ -9,12 +9,12 @@ var n = t(937008),
     s = t(802246),
     l = t(788868),
     o = t(208016);
-let d = function(e) {
+let c = function(e) {
     let {
         onSelectSku: i,
         priceOptions: t,
-        giftRecipient: d,
-        onWishlistItemClick: c
+        giftRecipient: c,
+        onWishlistItemClick: d
     } = e, {
         claimableRewards: _
     } = (0, n.Pv)(), m = null != _ && _.length > 0;
@@ -34,8 +34,8 @@ let d = function(e) {
                 removeTopMargin: !0
             })]
         }), (0, r.jsx)(s.s, {
-            giftRecipient: d,
-            onWishlistItemClick: c
+            giftRecipient: c,
+            onWishlistItemClick: d
         })]
     })
 }

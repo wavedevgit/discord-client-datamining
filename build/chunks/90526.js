@@ -45,8 +45,8 @@ function v(e) {
         offerType: s,
         showYearlyPrice: p,
         priceOptions: v,
-        textVariant: _,
-        className: R,
+        textVariant: R,
+        className: _,
         isApplicationHome: P,
         enablePremiumBrandRefresh: N,
         headerClassName: E,
@@ -105,18 +105,18 @@ function v(e) {
         children: [(0, i.jsx)(h.A, {
             subscriptionTier: U,
             isGift: t,
-            className: null != R ? R : j.q,
+            className: null != _ ? _ : j.q,
             priceOptions: v,
-            variant: _,
+            variant: R,
             isApplicationHome: P,
             enablePremiumBrandRefresh: N
         }), p && (0, i.jsx)(h.A, {
             subscriptionTier: U,
             interval: I.WT.YEAR,
-            className: null != R ? R : j.q,
+            className: null != _ ? _ : j.q,
             isGift: t,
             priceOptions: v,
-            variant: _,
+            variant: R,
             isApplicationHome: P,
             enablePremiumBrandRefresh: N
         })]

@@ -2,8 +2,8 @@
 n.d(t, {
     A: () => h
 });
-var i = n(627968),
-    a = n(64700),
+var a = n(627968),
+    i = n(64700),
     r = n(503698),
     o = n.n(r),
     s = n(311907),
@@ -22,12 +22,12 @@ function h(e) {
         analyticsSource: n,
         className: r,
         ...h
-    } = e, L = a.useCallback(() => {
+    } = e, L = i.useCallback(() => {
         (0, d.G)({
             uploadType: t,
             analyticsSource: n
         })
-    }, [t, n]), x = (0, s.bG)([l.default], () => l.default.getCurrentUser()), C = c.Ay.canUseAnimatedAvatar(x), N = a.useMemo(() => {
+    }, [t, n]), x = (0, s.bG)([l.default], () => l.default.getCurrentUser()), C = c.Ay.canUseAnimatedAvatar(x), f = i.useMemo(() => {
         switch (t) {
             case u.HL.AVATAR:
                 return g.intl.format(g.t["pvw/HH"], {
@@ -41,8 +41,8 @@ function h(e) {
                 return ""
         }
     }, [t, L]);
-    return t !== u.HL.AVATAR && t !== u.HL.BANNER || t === u.HL.AVATAR && C ? null : (0, i.jsx)(_.d, {
-        text: N,
+    return t !== u.HL.AVATAR && t !== u.HL.BANNER || t === u.HL.AVATAR && C ? null : (0, a.jsx)(_.d, {
+        text: f,
         button: g.intl.string(g.t.BmJkbd),
         buttonAnalyticsObject: {
             section: A.JJy.USER_PROFILE

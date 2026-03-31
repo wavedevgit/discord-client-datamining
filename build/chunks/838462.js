@@ -50,8 +50,8 @@ function v(e) {
             selectedSkuId: B,
             step: W,
             updatedSubscription: K,
-            startingPremiumSubscriptionPlanIdRef: V,
-            startingFractionalPremiumEndsAtRef: z,
+            startingPremiumSubscriptionPlanIdRef: z,
+            startingFractionalPremiumEndsAtRef: V,
             isPremiumGroupPurchase: q
         } = (0, f.P5)(),
         {
@@ -136,11 +136,11 @@ function v(e) {
         onClose: eu
     });
     else {
-        let e = V.current === H.id ? {
+        let e = z.current === H.id ? {
             postSuccessGuild: U
         } : {
             followupSKUInfo: w,
-            startingPremiumSubscriptionPlanId: V.current,
+            startingPremiumSubscriptionPlanId: z.current,
             isDowngrade: null != D && (0, g.vT)(D, H.id, v)
         };
         n = (0, l.jsx)(P.Ay, {
@@ -148,7 +148,7 @@ function v(e) {
             onClose: eu,
             paymentSourceType: ea,
             hideClose: null != et,
-            startingFractionalPremiumEndsAt: z.current,
+            startingFractionalPremiumEndsAt: V.current,
             customCTAType: ed,
             ...e
         })

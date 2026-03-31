@@ -1,6 +1,6 @@
 /** chunk id: 560138 params = (module,exports,require) **/
 t.d(r, {
-    A: () => _
+    A: () => n
 });
 var a = t(311907),
     i = t(73153);
@@ -8,7 +8,7 @@ let o = {
     fetched: !1,
     affinities: []
 };
-class n extends a.Ay.Store {
+class _ extends a.Ay.Store {
     get hasFetched() {
         return o.fetched
     }
@@ -16,7 +16,7 @@ class n extends a.Ay.Store {
         return o.affinities
     }
 }
-let _ = new n(i.h, {
+let n = new _(i.h, {
     BILLING_NITRO_AFFINITY_FETCHED: function(e) {
         let {} = e;
         o.fetched = !0

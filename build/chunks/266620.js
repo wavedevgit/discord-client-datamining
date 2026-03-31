@@ -12,17 +12,17 @@ var n = a(627968),
     r = a(64700),
     i = a(665260),
     o = a(311907),
-    l = a(571356),
-    _ = a(990078),
-    c = a(397927),
-    s = a(672477),
+    c = a(571356),
+    l = a(990078),
+    s = a(397927),
+    _ = a(672477),
     d = a(67281),
     u = a(458517),
     m = a(776231),
     p = a(713021),
-    f = a(476066),
-    b = a(121489),
-    C = a(734057),
+    b = a(664111),
+    C = a(121489),
+    f = a(734057),
     g = a(644447),
     I = a(998218),
     h = a(465856),
@@ -64,19 +64,19 @@ function S(e) {
     let t = e.item.originalItem,
         {
             newEmbedUi: a
-        } = s.Q.useConfig({
+        } = _.Q.useConfig({
             location: "VideoComponentForMessageAttachment"
         }),
         u = (0, i.Lt)(t.flags ?? 0, T.sbO.IS_CLIP),
-        p = (0, o.bG)([C.A], () => C.A.getBasicChannel(e.message.channel_id)?.guild_id),
-        b = r.useCallback(() => !u || a ? null : (0, n.jsx)(_.m, {
+        p = (0, o.bG)([f.A], () => f.A.getBasicChannel(e.message.channel_id)?.guild_id),
+        C = r.useCallback(() => !u || a ? null : (0, n.jsx)(l.m, {
             text: v.intl.string(v.t["/fgfWh"]),
             children: (0, n.jsxs)("div", {
                 className: y.M,
-                children: [(0, n.jsx)(c.xgA, {
+                children: [(0, n.jsx)(s.xgA, {
                     size: "xs",
                     color: "currentColor"
-                }), (0, n.jsx)(l.E, {
+                }), (0, n.jsx)(c.E, {
                     variant: "text-xs/semibold",
                     color: "always-white",
                     children: v.intl.string(v.t.oA4afG)
@@ -111,7 +111,7 @@ function S(e) {
             height: r,
             naturalWidth: i,
             naturalHeight: o
-        } = e, l = (0, m.AE)({
+        } = e, c = (0, m.AE)({
             src: x.toString(),
             width: a,
             height: r
@@ -121,11 +121,11 @@ function S(e) {
                 width: "100%",
                 aspectRatio: `${a} / ${r}`
             },
-            children: (0, n.jsx)(f.A, {
+            children: (0, n.jsx)(b.A, {
                 src: t.url,
                 downloadUrl: t.url,
                 downloadContentType: t.content_type,
-                poster: l,
+                poster: c,
                 posterPlaceholder: t.placeholder,
                 posterPlaceholderVersion: t.placeholder_version,
                 active: !1,
@@ -148,7 +148,7 @@ function S(e) {
         placeholder: t.placeholder,
         placeholderVersion: t.placeholder_version,
         srcIsAnimated: (0, i.Lt)(t.flags ?? 0, T.sbO.IS_ANIMATED),
-        renderOverlayContent: b,
+        renderOverlayContent: C,
         sourceMetadata: {
             message: e.message,
             identifier: {
@@ -176,11 +176,11 @@ function N(e) {
         message: t,
         item: a
     } = e, n = a.originalItem, i = (0, p.dx)(p.k0.VOICE_MESSAGE, n.id), o = r.useCallback((e, a, r) => {
-        (0, b.wQ)(t.id, n.duration_secs ?? null, a, t.author.id)
-    }, [t, n.duration_secs]), l = r.useCallback((e, a) => {
-        (0, b.dP)(t.id, n.duration_secs ?? null, e, t.author.id, a)
-    }, [t, n.duration_secs]), _ = r.useCallback(e => {
-        (0, b._O)(t.id, e?.message ?? null)
+        (0, C.wQ)(t.id, n.duration_secs ?? null, a, t.author.id)
+    }, [t, n.duration_secs]), c = r.useCallback((e, a) => {
+        (0, C.dP)(t.id, n.duration_secs ?? null, e, t.author.id, a)
+    }, [t, n.duration_secs]), l = r.useCallback(e => {
+        (0, C._O)(t.id, e?.message ?? null)
     }, [t]);
     return (0, A.P$)({
         ...e,
@@ -190,8 +190,8 @@ function N(e) {
         durationSecs: n.duration_secs,
         waveform: n.waveform,
         onPlay: o,
-        onPause: l,
-        onError: _,
+        onPause: c,
+        onError: l,
         playbackCacheKey: i
     })
 }
@@ -220,7 +220,7 @@ function O(e) {
 function P(e) {
     let {
         newEmbedUi: t
-    } = s.Q.useConfig({
+    } = _.Q.useConfig({
         location: "MosaicItemFooterForMessageAttachment"
     });
     return "CLIP" !== e.item.type || t ? null : (0, n.jsx)(w, {
@@ -233,22 +233,22 @@ function w(e) {
     let {
         attachment: t,
         message: a
-    } = e, r = a.channel_id, i = (0, o.bG)([C.A], () => C.A.getBasicChannel(r)?.guild_id), {
-        clip_created_at: l,
-        clip_participants: _,
-        title: c,
-        application: s
+    } = e, r = a.channel_id, i = (0, o.bG)([f.A], () => f.A.getBasicChannel(r)?.guild_id), {
+        clip_created_at: c,
+        clip_participants: l,
+        title: s,
+        application: _
     } = t;
     return (0, n.jsx)(u.A, {
-        createdAt: null != l ? Date.parse(l) : void 0,
-        participantIds: _?.map(e => {
+        createdAt: null != c ? Date.parse(c) : void 0,
+        participantIds: l?.map(e => {
             let {
                 id: t
             } = e;
             return t
         }) ?? [],
-        applicationId: s?.id,
-        title: c,
+        applicationId: _?.id,
+        title: s,
         guildId: i
     })
 }

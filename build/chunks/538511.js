@@ -32,7 +32,7 @@ var s = n(503698),
     j = n(881489),
     y = n(573359),
     O = n(422936),
-    R = n(795269),
+    R = n(774774),
     P = n(327479),
     L = n(473702),
     D = n(788868),
@@ -69,7 +69,7 @@ function F(e) {
                 className: U.zH,
                 children: [(0, i.jsxs)("div", {
                     className: U.Gp,
-                    children: [t, r && null != o && (0, i.jsx)(R.ir, {
+                    children: [t, r && null != o && (0, i.jsx)(R.HU, {
                         text: k.intl.formatToPlainString(k.t.iiLbvu, {
                             percent: o
                         }),
@@ -109,7 +109,7 @@ function H(e) {
                         className: U.Sl
                     }), (0, i.jsxs)("div", {
                         className: U.Ck,
-                        children: [t, r && null != o && (0, i.jsx)(R.ir, {
+                        children: [t, r && null != o && (0, i.jsx)(R.HU, {
                             text: k.intl.formatToPlainString(k.t.iiLbvu, {
                                 percent: o
                             }),

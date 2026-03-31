@@ -1,20 +1,20 @@
 /** chunk id: 316628 params = (module,exports,require) **/
-n.d(t, {
+l.d(t, {
     e: () => u
 });
-var l = n(627968),
-    i = n(64700),
-    r = n(397927),
-    a = n(690521),
-    s = n(985018);
+var n = l(627968),
+    i = l(64700),
+    r = l(397927),
+    a = l(690521),
+    s = l(985018);
 let u = e => {
     let {
         name: t,
-        onNameChange: n,
+        onNameChange: l,
         label: u
     } = e, o = i.useRef(null), c = i.useRef(null), [d, m] = i.useState(!1), h = i.useCallback(e => {
-        c.current = o.current?.selectionStart, n(e = (e = e.replace(/\s/g, "_")).length < 2 ? e : a.Ay.sanitizeEmojiName(e))
-    }, [n]);
+        c.current = o.current?.selectionStart, l(e = (e = e.replace(/\s/g, "_")).length < 2 ? e : a.Ay.sanitizeEmojiName(e))
+    }, [l]);
     i.useEffect(() => {
         null != c.current && (o.current?.setSelectionRange(c.current, c.current), c.current = null)
     });
@@ -24,7 +24,7 @@ let u = e => {
         x = i.useCallback(() => {
             m(!0)
         }, []);
-    return (0, l.jsx)(r.ksK, {
+    return (0, n.jsx)(r.ksK, {
         inputRef: o,
         error: d ? "" : void 0,
         minLength: 2,

@@ -28,32 +28,33 @@ function f(e) {
         placeholderValue: g,
         startName: V,
         endName: C,
-        ...j
+        fullWidth: j = !1,
+        ...S
     } = e, {
-        i18n: S
+        i18n: k
     } = (0, h.G9)(), {
-        fieldProps: k
-    } = (0, p.n)(j), {
-        disabled: w,
-        errorMessage: T,
-        required: M = !1
-    } = k, D = {
-        hasError: null != T && "" !== T
+        fieldProps: w
+    } = (0, p.n)(S), {
+        disabled: T,
+        errorMessage: M,
+        required: D = !1
+    } = w, N = {
+        hasError: null != M && "" !== M
     }, {
-        refs: N,
-        floatingStyles: I,
-        isOpen: E,
-        setIsOpen: A,
-        context: L,
-        getFloatingProps: O,
-        getReferenceProps: R
+        refs: I,
+        floatingStyles: E,
+        isOpen: A,
+        setIsOpen: L,
+        context: O,
+        getFloatingProps: R,
+        getReferenceProps: B
     } = (0, b.u)({
         matchReferenceWidth: !1,
         placement: "bottom-start"
     }), {
-        isMounted: B,
+        isMounted: _,
         styles: P
-    } = (0, b.D)(L, {
+    } = (0, b.D)(O, {
         common: e => {
             let {
                 side: l
@@ -67,16 +68,16 @@ function f(e) {
             transform: "scaleY(0.96)"
         },
         duration: 100
-    }), _ = e => {
-        a(e), e?.start != null && e?.end != null && A(!1)
+    }), z = e => {
+        a(e), e?.start != null && e?.end != null && L(!1)
     };
     return (0, t.jsx)(p.D, {
-        ...k,
+        ...w,
         children: e => (0, t.jsx)(x.F, {
-            className: y.qX,
-            validation: D,
-            ref: N.setReference,
-            ...R(),
+            className: j ? y.e2 : y.qX,
+            validation: N,
+            ref: I.setReference,
+            ...B(),
             children: (0, t.jsxs)(s.Ur, {
                 id: e.controlId,
                 "aria-labelledby": e.labelId,
@@ -84,9 +85,9 @@ function f(e) {
                 "aria-invalid": null != e.errorMessageId,
                 "aria-errormessage": e.errorMessageId,
                 value: l,
-                onChange: _,
-                isDisabled: w,
-                isRequired: M,
+                onChange: z,
+                isDisabled: T,
+                isRequired: D,
                 minValue: o,
                 maxValue: f,
                 placeholderValue: g,
@@ -115,31 +116,31 @@ function f(e) {
                         })
                     }), (0, t.jsx)(u.$, {
                         className: y.B7,
-                        onClick: () => A(!E),
-                        "aria-label": S.DATE_INPUT_OPEN_CALENDAR_LABEL,
+                        onClick: () => L(!A),
+                        "aria-label": k.DATE_INPUT_OPEN_CALENDAR_LABEL,
                         children: (0, t.jsx)(m.CalendarIcon, {
                             size: "sm",
                             color: "currentColor"
                         })
                     })]
-                }), E && B && (0, t.jsx)("div", {
-                    ...O(),
-                    ref: N.setFloating,
-                    style: I,
+                }), A && _ && (0, t.jsx)("div", {
+                    ...R(),
+                    ref: I.setFloating,
+                    style: E,
                     className: y.oO,
                     children: (0, t.jsx)(i.n1, {
                         contain: !0,
                         restoreFocus: !0,
                         children: (0, t.jsx)(c.lG, {
-                            "aria-label": S.DATE_INPUT_OPEN_CALENDAR_LABEL,
+                            "aria-label": k.DATE_INPUT_OPEN_CALENDAR_LABEL,
                             style: P,
                             className: y.r3,
                             children: (0, t.jsx)(v._, {
                                 value: l,
-                                onChange: _,
+                                onChange: z,
                                 minValue: o,
                                 maxValue: f,
-                                isDisabled: w,
+                                isDisabled: T,
                                 visibleMonths: 2
                             })
                         })

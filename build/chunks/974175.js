@@ -70,8 +70,8 @@ let u = {
     framesReceived: "Frames Received",
     framesSent: "Frames Sent",
     freezeCount: "Freeze Count",
-    hostname: "Hostname",
     hdrFrames: "HDR Frames",
+    hostname: "Hostname",
     hybridCaptureMethodSwitches: "Hybrid Capture Method Switches",
     hybridDxgiFrames: "Hybrid DXGI Frames",
     hybridGdiBitBltFrames: "Hybrid GDI BitBlt Frames",
@@ -106,6 +106,8 @@ let u = {
     pauseCount: "Pause Count",
     ping: "Ping",
     pliCount: "PLI",
+    powerEfficientDecoder: "Power Efficient Decoder",
+    powerEfficientEncoder: "Power Efficient Encoder",
     preemptiveExpandRate: "Pre-emptive Expand Rate",
     qpSum: "QP Sum",
     qualityDecodeErrors: "Encoder Quality Decode Errors",
@@ -160,11 +162,11 @@ function y(e) {
     return `${e.toFixed(0)}%`
 }
 
-function A(e) {
+function f(e) {
     return e ? "Yes" : "No"
 }
 
-function f(e) {
+function A(e) {
     return 20 * Math.log(e)
 }
 
@@ -213,15 +215,15 @@ let v = {
     },
     C = {
         accelerateRate: y,
-        audioDetected: A,
+        audioDetected: f,
         audioLevel: function(e) {
-            return e <= 0 ? "-∞ dB" : `${f(e).toFixed(2)} dB`
+            return e <= 0 ? "-∞ dB" : `${A(e).toFixed(2)} dB`
         },
         availableOutgoingBitrate: c,
         averageDecodeTime: h,
         averageEncodeTime: h,
-        bandwidthLimitedFrameRate: A,
-        bandwidthLimitedResolution: A,
+        bandwidthLimitedFrameRate: f,
+        bandwidthLimitedResolution: f,
         bitrate: c,
         bitrateTarget: c,
         bytesReceived: m,
@@ -233,11 +235,11 @@ let v = {
             } = e;
             return r = (r = "" === r ? "unknown" : r) ?? "unknown", `${r[0].toUpperCase()}${r.slice(1)} (${t})`
         },
-        cpuLimitedResolution: A,
+        cpuLimitedResolution: f,
+        currentDelay: h,
         currentSampleRate: function(e) {
             return e % 100 == 0 ? `${e/1e3} kHz` : `${e} Hz`
         },
-        currentDelay: h,
         decoderImplementationName: p,
         delayEstimate: h,
         encoderImplementationName: p,
@@ -258,6 +260,8 @@ let v = {
         outboundBitrateEstimate: c,
         pacerDelay: h,
         ping: h,
+        powerEfficientDecoder: f,
+        powerEfficientEncoder: f,
         preemptiveExpandRate: y,
         receiverBitrateEstimate: c,
         relativePlayoutDelay: g,
@@ -287,11 +291,11 @@ let v = {
     },
     b = {
         audioLevel: function(e) {
-            return Math.max(f(e), -100) + 100
+            return Math.max(A(e), -100) + 100
         }
     },
-    x = e => e,
-    E = e => {
+    E = e => e,
+    x = e => {
         let [t] = a.useState([]);
         return t.push({
             value: e.value,
@@ -309,12 +313,12 @@ function D(e) {
         label: t,
         value: r,
         section: a
-    } = e, i = C[t] ?? x, s = b[t], c = l.iA[t] && (Array.isArray(r) && r.length > 0 && "number" == typeof r[0].value ? (0, n.jsx)(o.A, {
+    } = e, i = C[t] ?? E, s = b[t], c = l.iA[t] && (Array.isArray(r) && r.length > 0 && "number" == typeof r[0].value ? (0, n.jsx)(o.A, {
         converter: s,
         dataPoints: r,
         width: 300,
         height: 100
-    }) : "number" == typeof r ? (0, n.jsx)(E, {
+    }) : "number" == typeof r ? (0, n.jsx)(x, {
         converter: s,
         value: r,
         width: 300,

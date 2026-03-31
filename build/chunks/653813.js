@@ -1,6 +1,6 @@
 /** chunk id: 653813 params = (module,exports,require) **/
 t.d(i, {
-    default: () => p
+    default: () => h
 });
 var r = t(627968),
     n = t(64700),
@@ -8,20 +8,20 @@ var r = t(627968),
     s = t(937008),
     l = t(156312),
     o = t(532794),
-    d = t(232516),
-    c = t(788868),
+    c = t(232516),
+    d = t(788868),
     _ = t(652215),
     m = t(985018),
     u = t(757515);
 
-function f(e) {
+function p(e) {
     let {
         giftRecipient: i,
         onClose: t,
         transitionState: s,
-        analyticsLocations: f,
-        analyticsLocation: p,
-        analyticsObject: h,
+        analyticsLocations: p,
+        analyticsLocation: h,
+        analyticsObject: f,
         giftMessage: g
     } = e, {
         priceOptions: I
@@ -30,10 +30,10 @@ function f(e) {
             isGift: !0,
             giftRecipient: i,
             subscriptionTier: e,
-            giftingOrigin: c.vQ.DM_CHANNEL,
-            analyticsLocations: f ?? [],
-            analyticsLocation: p,
-            analyticsObject: h ?? {
+            giftingOrigin: d.vQ.DM_CHANNEL,
+            analyticsLocations: p ?? [],
+            analyticsLocation: h,
+            analyticsObject: f ?? {
                 page: _.liQ.DM_CHANNEL,
                 section: _.JJy.CHANNEL_TEXT_AREA,
                 object: _.ZSU.BUTTON_ICON,
@@ -41,7 +41,7 @@ function f(e) {
             },
             giftMessage: g
         }), t()
-    }, [i, f, p, h, g, t]);
+    }, [i, p, h, f, g, t]);
     return (0, r.jsxs)(a.EOs, {
         transitionState: s,
         size: a.rIJ.DYNAMIC,
@@ -65,7 +65,7 @@ function f(e) {
         }), (0, r.jsx)(a.$mQ, {
             className: u.S3,
             "data-migration-pending": !0,
-            children: (0, r.jsx)(d.A, {
+            children: (0, r.jsx)(c.A, {
                 onSelectSku: b,
                 giftRecipient: i,
                 priceOptions: I,
@@ -75,32 +75,32 @@ function f(e) {
     })
 }
 
-function p(e) {
+function h(e) {
     let {
         giftRecipient: i,
         onClose: t,
         transitionState: n,
         analyticsLocations: a,
         analyticsLocation: o,
-        analyticsObject: d,
+        analyticsObject: c,
         giftMessage: _
     } = e;
     return (0, r.jsx)(l.PaymentContextProvider, {
         activeSubscription: null,
         stepConfigs: [],
-        skuIDs: c.T7,
+        skuIDs: d.T7,
         isGift: !0,
         children: (0, r.jsx)(s.dX, {
             isGift: !0,
             giftRecipient: i,
-            giftingOrigin: c.vQ.DM_CHANNEL,
-            children: (0, r.jsx)(f, {
+            giftingOrigin: d.vQ.DM_CHANNEL,
+            children: (0, r.jsx)(p, {
                 giftRecipient: i,
                 onClose: t,
                 transitionState: n,
                 analyticsLocations: a,
                 analyticsLocation: o,
-                analyticsObject: d,
+                analyticsObject: c,
                 giftMessage: _
             })
         })

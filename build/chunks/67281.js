@@ -7,17 +7,17 @@ a(64700);
 var r = a(503698),
     i = a.n(r),
     o = a(791282),
-    l = a.n(o),
-    _ = a(311907),
-    c = a(876230),
-    s = a(342952),
+    c = a.n(o),
+    l = a(311907),
+    s = a(876230),
+    _ = a(342952),
     d = a(397927),
     u = a(429913),
     m = a(287809),
     p = a(405269),
-    f = a(403362),
-    b = a(985018),
-    C = a(653455);
+    b = a(403362),
+    C = a(985018),
+    f = a(653455);
 let g = function(e) {
     let {
         createdAt: t,
@@ -25,45 +25,45 @@ let g = function(e) {
         applicationId: r,
         title: o,
         guildId: g,
-        playerState: I = c.Q6.PAUSED,
+        playerState: I = s.Q6.PAUSED,
         isControlBarExpanded: h = !0
-    } = e, A = (0, u.h)(r), T = (0, _.yK)([m.default], () => a.map(e => m.default.getUser(e)).filter(f.Vq) ?? []), v = null != t ? (0, p.Fe)(new Date(t)) : null, y = l()([A?.name, v]);
+    } = e, A = (0, u.h)(r), T = (0, l.yK)([m.default], () => a.map(e => m.default.getUser(e)).filter(b.Vq) ?? []), v = null != t ? (0, p.Fe)(new Date(t)) : null, y = c()([A?.name, v]);
     return (0, n.jsxs)("div", {
-        className: i()(C.oK, {
-            [C.pd]: I === c.Q6.PLAYING && !h
+        className: i()(f.oK, {
+            [f.pd]: I === s.Q6.PLAYING && !h
         }),
         children: [(0, n.jsx)("div", {
-            className: C.Lu
+            className: f.Lu
         }), (0, n.jsxs)("div", {
-            className: C.s$,
+            className: f.s$,
             children: [(0, n.jsxs)("div", {
-                className: C.yR,
+                className: f.yR,
                 children: [(0, n.jsxs)("div", {
-                    className: C.$,
+                    className: f.$,
                     children: [(0, n.jsx)(d.xgA, {
-                        className: C.gr,
+                        className: f.gr,
                         size: "xs",
                         color: "white"
                     }), (0, n.jsx)(d.Text, {
-                        className: C.DD,
+                        className: f.DD,
                         variant: "text-md/semibold",
                         color: "always-white",
-                        children: null != o && o.length > 0 ? o : b.intl.string(b.t.Cyxddp)
+                        children: null != o && o.length > 0 ? o : C.intl.string(C.t.Cyxddp)
                     })]
                 }), y.length > 0 && (0, n.jsx)(d.Text, {
-                    className: C.yu,
+                    className: f.yu,
                     variant: "text-sm/normal",
                     color: "always-white",
                     children: y.join(" \xb7 ")
                 })]
             }), T.length > 0 && (0, n.jsx)("div", {
-                className: C.HD,
-                children: (0, n.jsx)(s.A, {
+                className: f.HD,
+                children: (0, n.jsx)(_.A, {
                     maxUsers: 4,
                     users: T,
                     guildId: g,
                     size: d._3J.SIZE_24,
-                    "aria-label": b.intl.string(b.t.WTozwe)
+                    "aria-label": C.intl.string(C.t.WTozwe)
                 })
             })]
         })]

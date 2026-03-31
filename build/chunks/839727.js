@@ -16,7 +16,7 @@ var r = n(627968),
     _ = n(964486),
     p = n(775602),
     f = n(607470),
-    v = n(892358),
+    v = n(697397),
     S = n(544180),
     h = n(723702),
     g = n(475815),
@@ -41,7 +41,7 @@ var r = n(627968),
     U = n(654487),
     Q = n(838541),
     B = n(985018),
-    F = n(155350);
+    F = n(256181);
 let K = {
     tension: 250,
     friction: 5,
@@ -74,7 +74,7 @@ function Y(e) {
         targetRef: eu
     } = (0, v.O7)(), [ec, ed] = i.useState(!0 === s ? O.Q6.PLAYING : O.Q6.PAUSED), [em, eE] = i.useState(!1), [e_, ep] = i.useState(!1), ef = (0, y.Yh)(W), [ev, eS] = i.useState(ef.percentComplete), eh = i.useCallback(e => {
         eU(null), eS(e)
-    }, []), [eg, eA] = i.useState(!1), [eC, eT] = i.useState(!0), [eb, ex] = i.useState(!1), [eD, ey] = i.useState([]), [eI, eL] = i.useState(S.A.getEffectiveConnectionSpeed()), [eN, eR] = i.useState(0), [eO, ek] = i.useState(0), [eM, ew] = i.useState(!1), [eP, ej] = i.useState(!1), [eV, eU] = i.useState(null), eQ = i.useRef(!0), eB = i.useRef(null), eF = i.useRef(null), eK = (0, T.Kr)(e => e.videoProgress[W.id] ?? T.yc, u.x), eY = (0, T.Kr)(e => e.setVideoProgress), eH = (0, T.Kr)(e => e.muted), e$ = (0, T.Kr)(e => e.volume), eG = (0, c.bG)([p.A], () => p.A.useReducedMotion), eq = (0, i.useRef)(null), eW = (0, i.useRef)(null), ez = i.useRef(!0), eJ = W.userStatus?.completedAt != null, eX = i.useMemo(() => W.config.features.includes(U.Li.FULL_EPISODE_VIDEO_QUEST), [W.config.features]), eZ = i.useRef(!1), [e0, e1] = i.useState(null), [e6, e7] = i.useState(!1), [e5, e4] = i.useState(!1), [e2, e3] = i.useState(!1), [e8, e9] = i.useState(null), te = eJ ? eq.current?.duration ?? 0 : Math.max(eK.maxTimestampSec, ef.progressSeconds), tt = i.useMemo(() => (0, D.L)({
+    }, []), [eg, eA] = i.useState(!1), [eC, eT] = i.useState(!0), [eb, ex] = i.useState(!1), [eD, ey] = i.useState([]), [eI, eL] = i.useState(S.A.getEffectiveConnectionSpeed()), [eN, eR] = i.useState(0), [eO, ek] = i.useState(0), [eM, ew] = i.useState(!1), [eP, ej] = i.useState(!1), [eV, eU] = i.useState(null), eQ = i.useRef(!0), eB = i.useRef(null), eF = i.useRef(null), eK = (0, T.Kr)(e => e.videoProgress[W.id] ?? T.yc, u.x), eY = (0, T.Kr)(e => e.setVideoProgress), eH = (0, T.Kr)(e => e.muted), e$ = (0, T.Kr)(e => e.volume), eG = (0, c.bG)([p.A], () => p.A.useReducedMotion), eq = (0, i.useRef)(null), eW = (0, i.useRef)(null), ez = i.useRef(!0), eJ = W.userStatus?.completedAt != null, eX = i.useMemo(() => W.config.features.includes(U.Li.FULL_EPISODE_VIDEO_QUEST), [W.config.features]), eZ = i.useRef(!1), [e0, e1] = i.useState(null), [e6, e7] = i.useState(!1), [e4, e9] = i.useState(!1), [e5, e3] = i.useState(!1), [e2, e8] = i.useState(null), te = eJ ? eq.current?.duration ?? 0 : Math.max(eK.maxTimestampSec, ef.progressSeconds), tt = i.useMemo(() => (0, D.L)({
         quest: W,
         location: U.rE.VIDEO_MODAL
     }), [W]), tn = (0, m.g)(eJ, eK, ef.progressSeconds), [tr, ti] = i.useState(O.oA.MD), ts = {
@@ -137,7 +137,7 @@ function Y(e) {
             getCurrentVideoTime: tD,
             isPlaying: ec === O.Q6.PLAYING,
             isMetadataLoaded: e6,
-            isInitialSeekComplete: e5,
+            isInitialSeekComplete: e4,
             onAnalytics: th,
             emitIntervalMs: v.KI,
             minSegmentDurationMs: v._4
@@ -207,7 +207,7 @@ function Y(e) {
         }
     }, [tj]);
     let tQ = i.useCallback(e => {
-        null != eq.current && (tt.info(`[QV] | seekTimeline | timeSec: ${e}`), eU(e / (eq.current.duration ?? 1) * 100), ty(), eA(!0), e4(!1), eq.current.currentTime = e, eY(W.id, e, eq.current.duration))
+        null != eq.current && (tt.info(`[QV] | seekTimeline | timeSec: ${e}`), eU(e / (eq.current.duration ?? 1) * 100), ty(), eA(!0), e9(!1), eq.current.currentTime = e, eY(W.id, e, eq.current.duration))
     }, [eq, eY, W.id, ty, tt]);
     i.useEffect(() => {
         let e = eq.current;
@@ -236,10 +236,10 @@ function Y(e) {
             }
         },
         tF = e => {
-            e9(e)
+            e8(e)
         },
         tK = e => {
-            e9(t => t?.id === e.id ? null : t)
+            e8(t => t?.id === e.id ? null : t)
         },
         tY = i.useCallback(() => {
             if (null == eq.current || (tt.info(`[QV] | handleTracksLoaded: textTracks.length: ${eq.current.textTracks.length}`), 0 === eq.current.textTracks.length)) return;
@@ -296,11 +296,11 @@ function Y(e) {
         config: K
     }));
     i.useEffect(() => (tX({
-        captionHeightSpring: er && null != e8 ? tz.current?.clientHeight ?? 0 : 0,
+        captionHeightSpring: er && null != e2 ? tz.current?.clientHeight ?? 0 : 0,
         immediate: eG
     }), () => {
         tJ.stop()
-    }), [er, tX, eG, e8, tJ]), i.useEffect(() => (tW({
+    }), [er, tX, eG, e2, tJ]), i.useEffect(() => (tW({
         controlBarAnimSpring: tP || eM ? 1 : 0,
         immediate: eG
     }), () => {
@@ -311,9 +311,9 @@ function Y(e) {
         t1 = i.useMemo(() => (0, b.tW)(W, b.fY.VIDEO_PLAYER_CAPTION, void 0, !1), [W]),
         t6 = eJ || eK.maxTimestampSec >= (eq.current?.currentTime ?? 0) + 1,
         t7 = i.useMemo(() => null === (0, b.tW)(W, b.fY.VIDEO_PLAYER_TRANSCRIPT, void 0, !1), [W]),
-        t5 = ee ? 20 : 12,
-        t4 = 20 * !!ee,
-        t2 = eJ && eP;
+        t4 = ee ? 20 : 12,
+        t9 = 20 * !!ee,
+        t5 = eJ && eP;
     return (0, r.jsx)(E.DUT, {
         className: F.W6,
         "data-fullscreen": X,
@@ -400,7 +400,7 @@ function Y(e) {
                 onCanPlay: tG,
                 onCanPlayThrough: tG,
                 onSeeked: () => {
-                    tt.info("[QV] | handleSeeked"), e4(!0)
+                    tt.info("[QV] | handleSeeked"), e9(!0)
                 },
                 onAbort: () => tH(O.SB.ABORT),
                 onError: () => tH(O.SB.ERROR),
@@ -512,7 +512,7 @@ function Y(e) {
                         output: [0, 1]
                     })], e => `${e}`)
                 }
-            }), e2 && (0, r.jsx)("div", {
+            }), e5 && (0, r.jsx)("div", {
                 className: a()(F.yf, {
                     [F.ZH]: ec === O.Q6.PLAYING,
                     [F.v7]: ec === O.Q6.PAUSED
@@ -525,21 +525,21 @@ function Y(e) {
                 }) : (0, r.jsx)(E.E$n, {
                     className: F.PK
                 })
-            }, ec), er && null != e8 && !tZ && (0, r.jsx)(o.animated.div, {
+            }, ec), er && null != e2 && !tZ && (0, r.jsx)(o.animated.div, {
                 className: F.o$,
                 ref: tz,
                 "data-testid": "discord-web-video-player-captions",
                 style: {
                     translateY: (0, o.to)([tq.to({
                         range: [0, 1],
-                        output: [-t4, -ts[tr]]
+                        output: [-t9, -ts[tr]]
                     })], e => `${e}px`)
                 },
                 children: (0, r.jsx)(E.Text, {
                     variant: "text-lg/semibold",
                     color: "always-white",
                     className: F.qh,
-                    children: e8.text
+                    children: e2.text
                 })
             }), (0, r.jsxs)(o.animated.div, {
                 className: F.r8,
@@ -554,19 +554,19 @@ function Y(e) {
                         transform: (0, o.to)([tq.to({
                             range: [1, 0],
                             output: [0, 1]
-                        })], e => `translateY(-${e*t4}px)`)
+                        })], e => `translateY(-${e*t9}px)`)
                     },
                     children: (0, r.jsx)(j.A, {
                         percent: null != eV ? eV : ev,
                         animate: !0 !== ez.current && !eg,
-                        interactionEnabled: t2,
+                        interactionEnabled: t5,
                         playerState: ec,
                         preloadedBuffers: tP ? eD : void 0,
                         durationSec: eq.current?.duration ?? 1,
                         isFullyVisible: tP && eP,
                         maxSeekableTime: tP && eP ? te : void 0,
                         onClick: e => {
-                            t2 && (tQ(e), ec === O.Q6.ENDED && tI(O.Q6.PLAYING))
+                            t5 && (tQ(e), ec === O.Q6.ENDED && tI(O.Q6.PLAYING))
                         },
                         onScrubBack: tV,
                         onScrubForward: tU,
@@ -581,7 +581,7 @@ function Y(e) {
                         paddingTop: (0, o.to)([tq.to({
                             range: [0, 1],
                             output: [0, 1]
-                        })], e => `${e*e*t5}px`),
+                        })], e => `${e*e*t4}px`),
                         paddingBottom: (0, o.to)([tq.to({
                             range: [0, 1],
                             output: [0, 1]

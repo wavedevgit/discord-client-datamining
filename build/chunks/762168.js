@@ -1,10 +1,10 @@
 /** chunk id: 762168 params = (module,exports,require) **/
 n.d(t, {
-    DX: () => S,
+    DX: () => g,
     _v: () => y,
     cs: () => T,
     ec: () => C,
-    kK: () => g,
+    kK: () => f,
     sn: () => h
 });
 var r = n(627968),
@@ -13,16 +13,16 @@ var r = n(627968),
     i = n(440703),
     s = n(267548),
     l = n(668824),
-    d = n(397927),
-    u = n(341915),
-    c = n(73473),
+    c = n(397927),
+    d = n(341915),
+    u = n(73473),
     p = n(839727),
-    _ = n(795068),
-    f = n(654487),
-    m = n(652215),
-    b = n(784018);
+    m = n(795068),
+    b = n(654487),
+    _ = n(652215),
+    S = n(784018);
 
-function S(e) {
+function g(e) {
     let {
         url: t,
         width: n = 640,
@@ -48,7 +48,7 @@ function S(e) {
     }
 }
 
-function g() {
+function f() {
     let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {},
         {
             streamProgressSeconds: t = 0,
@@ -106,11 +106,11 @@ function C(e) {
                     }
                 }],
                 rewardsExpireAt: "2030-01-01T00:00:00+00:00",
-                platforms: [u.pY.CROSS_PLATFORM]
+                platforms: [d.pY.CROSS_PLATFORM]
             },
             assets: {
                 hero: "",
-                heroVideo: b.kz,
+                heroVideo: S.kz,
                 questBarHero: "",
                 questBarHeroVideo: null,
                 questBarHeroBlurhash: null,
@@ -130,10 +130,10 @@ function C(e) {
                 buttonLabel: "Learn More"
             }
         },
-        userStatus: g({
+        userStatus: f({
             enrolledAt: new Date().toISOString()
         }),
-        targetedContent: [u.uF.QUEST_HOME_DESKTOP]
+        targetedContent: [d.uF.QUEST_HOME_DESKTOP]
     }
 }
 
@@ -144,27 +144,27 @@ function h(e) {
         children: o,
         isFullscreenEnabled: i = !1,
         useNewStyling: s = !1,
-        setIsFullscreenEnabled: l = m.tEg
-    } = e, d = a.useMemo(() => ({
+        setIsFullscreenEnabled: l = _.tEg
+    } = e, c = a.useMemo(() => ({
         quest: t,
-        sourceQuestContent: u.uF.INTERNAL_PREVIEW_TOOL,
+        sourceQuestContent: d.uF.INTERNAL_PREVIEW_TOOL,
         videoSessionId: "playground-session",
         isPortrait: n,
-        onClose: m.tEg,
+        onClose: _.tEg,
         isFullscreenEnabled: i,
         setIsFullscreenEnabled: l,
         useNewProgressBarStyling: s
     }), [t, n, i, l, s]), p = a.useMemo(() => ({
         questConfig: t.config
     }), [t.config]);
-    return (0, r.jsx)(c.R, {
+    return (0, r.jsx)(u.R, {
         questOrQuests: t,
-        questContent: u.uF.VIDEO_MODAL,
-        sourceQuestContent: u.uF.INTERNAL_PREVIEW_TOOL,
-        children: (e, t) => (0, r.jsx)(_.l.Provider, {
+        questContent: d.uF.VIDEO_MODAL,
+        sourceQuestContent: d.uF.INTERNAL_PREVIEW_TOOL,
+        children: (e, t) => (0, r.jsx)(m.l.Provider, {
             value: p,
-            children: (0, r.jsx)(_.a.Provider, {
-                value: d,
+            children: (0, r.jsx)(m.a.Provider, {
+                value: c,
                 children: o
             })
         })
@@ -179,19 +179,19 @@ function x(e) {
         fullEpisode: i,
         targetTimeSec: s,
         useNewStyling: l,
-        videoUrl: u
-    } = e, c = "portrait" === t, [_, b] = a.useState(!1), v = S({
-        url: u,
-        width: c ? 360 : 640,
-        height: c ? 640 : 360,
+        videoUrl: d
+    } = e, u = "portrait" === t, [m, S] = a.useState(!1), v = g({
+        url: d,
+        width: u ? 360 : 640,
+        height: u ? 640 : 360,
         target: s,
-        videoTitle: c ? "Test Portrait Video" : "Test Landscape Video",
+        videoTitle: u ? "Test Portrait Video" : "Test Landscape Video",
         transcript: "transcript.txt"
     }), x = C(v);
-    i && (x.config.features = [f.Li.FULL_EPISODE_VIDEO_QUEST]);
+    i && (x.config.features = [b.Li.FULL_EPISODE_VIDEO_QUEST]);
     let y = o ? {
         ...x,
-        userStatus: g({
+        userStatus: f({
             enrolledAt: x.userStatus?.enrolledAt ?? null,
             completedAt: x.userStatus?.enrolledAt ?? null,
             streamProgressSeconds: v.target
@@ -199,9 +199,9 @@ function x(e) {
     } : x;
     return (0, r.jsx)("div", {
         style: {
-            width: c ? "400px" : "100%",
-            maxWidth: c ? void 0 : "800px",
-            height: c ? "700px" : "500px",
+            width: u ? "400px" : "100%",
+            maxWidth: u ? void 0 : "800px",
+            height: u ? "700px" : "500px",
             backgroundColor: "#1e1f22",
             borderRadius: "8px",
             overflow: "hidden",
@@ -209,18 +209,18 @@ function x(e) {
         },
         children: (0, r.jsx)(h, {
             quest: y,
-            isPortrait: c,
-            isFullscreenEnabled: _,
-            setIsFullscreenEnabled: b,
+            isPortrait: u,
+            isFullscreenEnabled: m,
+            setIsFullscreenEnabled: S,
             useNewStyling: l,
             children: (0, r.jsx)(p.A, {
                 targetTimeSec: v.target,
-                parentTransitionState: d.ip4.ENTERED,
-                onOptimisticProgressUpdate: m.tEg,
+                parentTransitionState: c.ip4.ENTERED,
+                onOptimisticProgressUpdate: _.tEg,
                 autoplay: n,
                 performanceClockStartTime: 0,
                 orientation: t,
-                videoUrlOverride: u
+                videoUrlOverride: d
             })
         })
     })
@@ -266,7 +266,7 @@ let y = {
         videoUrl: {
             label: "Video URL",
             type: "text",
-            defaultValue: b.kz
+            defaultValue: S.kz
         }
     },
     T = {

@@ -1,10 +1,10 @@
 /** chunk id: 950762 params = (module,exports,require) **/
-n.d(t, {
+l.d(t, {
     A: () => r
 });
-var l = n(315069),
-    i = n(427157);
-class r extends l.A {
+var n = l(315069),
+    i = l(427157);
+class r extends n.A {
     id;
     name;
     managed;

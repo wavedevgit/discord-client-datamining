@@ -56,11 +56,11 @@ async function o(e) {
                 break
             }
             let s = t.HEAPU32[e >> 2],
-                f = t.HEAP32[n >> 2],
+                h = t.HEAP32[n >> 2],
                 u = new Uint8Array(t.HEAPU8.buffer, s, c).slice();
             o.push({
                 data: u,
-                timestamp: f,
+                timestamp: h,
                 width: r,
                 height: a
             }), t._free(e), t._free(n)

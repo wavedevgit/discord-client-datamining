@@ -1,6 +1,6 @@
 /** chunk id: 758889 params = (module,exports,require) **/
 n.d(t, {
-    Vy: () => c
+    Vy: () => u
 });
 var r = n(627968);
 n(64700);
@@ -10,45 +10,45 @@ var a = n(397927),
     s = n(654487),
     l = n(652215);
 
-function d(e) {
+function c(e) {
     let {
         orientation: t,
         autoplay: n,
-        questCompleted: d,
-        fullEpisode: u,
-        targetTimeSec: c,
+        questCompleted: c,
+        fullEpisode: d,
+        targetTimeSec: u,
         videoUrl: p
-    } = e, _ = "portrait" === t, f = (0, i.DX)({
+    } = e, m = "portrait" === t, b = (0, i.DX)({
         url: p,
-        width: _ ? 360 : 640,
-        height: _ ? 640 : 360,
-        target: c,
-        videoTitle: _ ? "Test Portrait Video" : "Test Landscape Video",
+        width: m ? 360 : 640,
+        height: m ? 640 : 360,
+        target: u,
+        videoTitle: m ? "Test Portrait Video" : "Test Landscape Video",
         transcript: "transcript.txt"
-    }), m = (0, i.ec)(f);
-    u && (m.config.features = [s.Li.FULL_EPISODE_VIDEO_QUEST]);
-    let b = d ? {
-        ...m,
+    }), _ = (0, i.ec)(b);
+    d && (_.config.features = [s.Li.FULL_EPISODE_VIDEO_QUEST]);
+    let S = c ? {
+        ..._,
         userStatus: (0, i.kK)({
-            enrolledAt: m.userStatus?.enrolledAt ?? null,
-            completedAt: m.userStatus?.enrolledAt ?? null,
-            streamProgressSeconds: f.target
+            enrolledAt: _.userStatus?.enrolledAt ?? null,
+            completedAt: _.userStatus?.enrolledAt ?? null,
+            streamProgressSeconds: b.target
         })
-    } : m;
+    } : _;
     return (0, r.jsx)("div", {
         style: {
-            width: _ ? "400px" : "100%",
-            maxWidth: _ ? void 0 : "800px",
-            height: _ ? "700px" : "500px",
+            width: m ? "400px" : "100%",
+            maxWidth: m ? void 0 : "800px",
+            height: m ? "700px" : "500px",
             backgroundColor: "#1e1f22",
             borderRadius: "8px",
             overflow: "hidden"
         },
         children: (0, r.jsx)(i.sn, {
-            quest: b,
-            isPortrait: _,
+            quest: S,
+            isPortrait: m,
             children: (0, r.jsx)(o.A, {
-                targetTimeSec: f.target,
+                targetTimeSec: b.target,
                 parentTransitionState: a.ip4.ENTERED,
                 onOptimisticProgressUpdate: l.tEg,
                 autoplay: n,
@@ -59,36 +59,36 @@ function d(e) {
         })
     })
 }
-let u = {
+let d = {
         label: "Full Episode (shows reward indicator)",
         type: "boolean",
         defaultValue: !1
     },
-    c = {
+    u = {
         title: "Video Player (Composed Quests)",
         stories: [{
             name: "Landscape Video (Composed Quests)",
             id: "landscape-video-composed",
-            component: d,
+            component: c,
             controls: {
                 ...i._v,
                 orientation: {
                     ...i._v.orientation,
                     defaultValue: "landscape"
                 },
-                fullEpisode: u
+                fullEpisode: d
             }
         }, {
             name: "Portrait Video (Composed Quests)",
             id: "portrait-video-composed",
-            component: d,
+            component: c,
             controls: {
                 ...i._v,
                 orientation: {
                     ...i._v.orientation,
                     defaultValue: "portrait"
                 },
-                fullEpisode: u
+                fullEpisode: d
             }
         }]
     }

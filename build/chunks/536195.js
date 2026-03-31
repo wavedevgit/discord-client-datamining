@@ -15,7 +15,7 @@ var i = n(627968),
     g = n(422936),
     _ = n(234419),
     A = n(511484),
-    x = n(356309),
+    x = n(795269),
     h = n(121304),
     p = n(788868),
     T = n(985018),
@@ -189,7 +189,7 @@ let b = e => {
         if (l) t = null;
         else {
             let e = null != b ? T.intl.string(T.t.IBYG5U) : T.intl.string(T.t.TR2B4T);
-            t = (0, i.jsx)(x.D, {
+            t = (0, i.jsx)(x.R, {
                 className: a()(f.Io, f.SP),
                 text: e
             })

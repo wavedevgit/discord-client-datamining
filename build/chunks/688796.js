@@ -3,9 +3,9 @@ n.d(t, {
     G: () => x,
     default: () => C
 });
-var i = n(627968);
+var a = n(627968);
 n(64700);
-var a = n(397927),
+var i = n(397927),
     r = n(287070),
     o = n(950191),
     s = n(101928),
@@ -26,11 +26,11 @@ function x(e) {
         imageSrc: r,
         analyticsSource: o
     } = e, s = l.default.getCurrentUser();
-    return null != s && ((0, a.mMO)(async () => {
+    return null != s && ((0, i.mMO)(async () => {
         let {
             default: e
         } = await Promise.resolve().then(n.bind(n, 688796));
-        return n => (0, i.jsx)(e, {
+        return n => (0, a.jsx)(e, {
             user: s,
             imageSrc: r,
             uploadType: t,
@@ -39,7 +39,7 @@ function x(e) {
                 section: g.JJy.USER_PROFILE,
                 object: g.ZSU.BUTTON_CTA
             },
-            onSecondaryClick: a.s7G,
+            onSecondaryClick: i.s7G,
             ...n
         })
     }), !0)
@@ -49,24 +49,24 @@ function C(e) {
     let {
         user: t,
         uploadType: n,
-        imageSrc: a,
+        imageSrc: i,
         onClose: l,
         analyticsSource: g,
         analyticsLocation: x,
         onSecondaryClick: C,
-        ...N
-    } = e, f = (0, o.Ay)(t.id), {
+        ...f
+    } = e, N = (0, o.Ay)(t.id), {
         primaryColor: R,
-        secondaryColor: p
+        secondaryColor: y
     } = (0, s.A)({
         user: t,
-        displayProfile: f,
-        pendingAvatarSrc: n === m.HL.AVATAR ? a : void 0,
+        displayProfile: N,
+        pendingAvatarSrc: n === m.HL.AVATAR ? i : void 0,
         isPreview: !0
-    }), E = n === m.HL.AVATAR || n === m.HL.BANNER, y = null != a, T = (0, d.u)(n === m.HL.AVATAR ? u.e.ANIMATED_AVATAR_MODAL_UPSELL : u.e.ANIMATED_BANNER_MODAL_UPSELL), v = (0, d.A)(n === m.HL.AVATAR ? u.e.ANIMATED_AVATAR_MODAL_UPSELL : u.e.ANIMATED_BANNER_MODAL_UPSELL);
-    return E ? (0, _.g1)({
+    }), p = n === m.HL.AVATAR || n === m.HL.BANNER, E = null != i, b = (0, d.u)(n === m.HL.AVATAR ? u.e.ANIMATED_AVATAR_MODAL_UPSELL : u.e.ANIMATED_BANNER_MODAL_UPSELL), v = (0, d.A)(n === m.HL.AVATAR ? u.e.ANIMATED_AVATAR_MODAL_UPSELL : u.e.ANIMATED_BANNER_MODAL_UPSELL);
+    return p ? (0, _.g1)({
         location: "getReducedMotionImageUrl"
-    }) ? (0, i.jsx)(A.F, {
+    }) ? (0, a.jsx)(A.F, {
         title: n === m.HL.AVATAR ? h.intl.string(h.t.X7tO60) : h.intl.string(h.t.zXPa2C),
         subtitle: n === m.HL.AVATAR ? h.intl.string(h.t.ifCRdB) : h.intl.string(h.t.yQAnf4),
         graphic: v,
@@ -75,11 +75,11 @@ function C(e) {
         },
         secondaryCTA: h.intl.string(h.t.PcTCB7),
         onClose: l,
-        ...N
-    }) : (0, i.jsx)(A.A, {
-        artURL: y ? void 0 : T,
-        modalClassName: y ? L.yl : void 0,
-        modalContentClassName: y ? L.jE : void 0,
+        ...f
+    }) : (0, a.jsx)(A.A, {
+        artURL: E ? void 0 : b,
+        modalClassName: E ? L.yl : void 0,
+        modalContentClassName: E ? L.jE : void 0,
         type: n === m.HL.AVATAR ? u.e.ANIMATED_AVATAR_MODAL_UPSELL : u.e.ANIMATED_BANNER_MODAL_UPSELL,
         title: n === m.HL.AVATAR ? h.intl.string(h.t.X7tO60) : h.intl.string(h.t.zXPa2C),
         body: n === m.HL.AVATAR ? h.intl.string(h.t.ifCRdB) : h.intl.string(h.t.yQAnf4),
@@ -94,19 +94,19 @@ function C(e) {
         analyticsLocation: x,
         hideBackButton: !0,
         showEnhancedUpsell: !0,
-        LeadingComponent: y ? (0, i.jsx)("div", {
+        LeadingComponent: E ? (0, a.jsx)("div", {
             className: L.wC,
-            children: (0, i.jsx)(r.A, {
+            children: (0, a.jsx)(r.A, {
                 containerClassName: L.i1,
                 user: t,
                 canUsePremiumCustomization: !0,
                 disabledInputs: !0,
-                pendingAvatar: n === m.HL.AVATAR ? a : void 0,
-                pendingBanner: n === m.HL.BANNER ? a : void 0,
-                pendingThemeColors: [R, p],
+                pendingAvatar: n === m.HL.AVATAR ? i : void 0,
+                pendingBanner: n === m.HL.BANNER ? i : void 0,
+                pendingThemeColors: [R, y],
                 hideExampleButton: !0
             })
         }) : void 0,
-        ...N
+        ...f
     }) : null
 }

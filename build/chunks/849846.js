@@ -1,36 +1,36 @@
 /** chunk id: 849846 params = (module,exports,require) **/
-n.d(t, {
+l.d(t, {
     EmojiStudioModal: () => s
 });
-var l = n(627968);
-n(64700);
-var i = n(397927),
-    r = n(534225),
-    a = n(152470);
+var n = l(627968);
+l(64700);
+var i = l(397927),
+    r = l(534225),
+    a = l(152470);
 let s = e => {
     let {
         transitionState: t,
-        guildId: n
+        guildId: l
     } = e, s = "userImage" in e ? e.userImage : void 0, u = "emoji" in e ? e.emoji : void 0, o = {
-        guildId: n,
+        guildId: l,
         ...null != u ? {
             emoji: u
         } : null != s ? {
             userImage: s
         } : {}
     };
-    return (0, l.jsx)(i.EOs, {
+    return (0, n.jsx)(i.EOs, {
         "data-migration-pending": !0,
         transitionState: t,
         size: i.rIJ.DYNAMIC,
         fullscreenOnMobile: !1,
         className: a.CR,
         parentComponent: "Modal",
-        children: (0, l.jsx)(i.$mQ, {
+        children: (0, n.jsx)(i.$mQ, {
             "data-migration-pending": !0,
             scrollbarType: "none",
             className: a.jE,
-            children: (0, l.jsx)(r.l, {
+            children: (0, n.jsx)(r.l, {
                 ...o
             })
         })

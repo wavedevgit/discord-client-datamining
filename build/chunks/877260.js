@@ -13,8 +13,8 @@ var r = n(627968),
     u = n(928039),
     d = n(932001),
     h = n(97469),
-    m = n(199966),
-    f = n(894858),
+    f = n(199966),
+    m = n(894858),
     p = n(397274),
     _ = n(189857),
     v = n(188180),
@@ -29,9 +29,9 @@ function E(e) {
         footer: a,
         emptyState: v,
         searchBar: E
-    } = e, b = f.A.useField("showNavigationMobile"), S = i.useRef(null), [N] = i.useState(t), {
+    } = e, S = m.A.useField("showNavigationMobile"), b = i.useRef(null), [N] = i.useState(t), {
         accessibleDirectory: j
-    } = (0, m._)(), C = i.useMemo(() => (0, _.Z)(N, j), [N, j]), [R] = (0, d.kn)(C.allDismissibleContents);
+    } = (0, f._)(), C = i.useMemo(() => (0, _.Z)(N, j), [N, j]), [R] = (0, d.kn)(C.allDismissibleContents);
     (0, y.B)({
         visibleContent: R,
         dismissibleBadges: C,
@@ -43,13 +43,13 @@ function E(e) {
         return t.layout.forEach(t => {
             t.hoisted ? e.push(t) : n.push(t)
         }), [e, n]
-    }, [t.layout]), w = (0, h.NC)(), k = (0, u.A)("settings-sidebar", S);
+    }, [t.layout]), w = (0, h.NC)(), k = (0, u.A)("settings-sidebar", b);
     return (0, r.jsx)(c.NPJ, {
         theme: w,
         children: e => (0, r.jsxs)("div", {
             className: l()(x.pz, e, {
                 [x.Hw]: o.Fr,
-                [x.n7]: b
+                [x.n7]: S
             }),
             children: [(0, r.jsxs)("div", {
                 className: x.gM,
@@ -80,7 +80,7 @@ function E(e) {
                         } = e;
                         return (0, r.jsxs)(c.ChK, {
                             ref: e => {
-                                S.current = e, p.A.setSidebarScrollerRef(e), t.current = e?.getScrollerNode() ?? null
+                                b.current = e, p.A.setSidebarScrollerRef(e), t.current = e?.getScrollerNode() ?? null
                             },
                             className: x.Mt,
                             fade: !0,

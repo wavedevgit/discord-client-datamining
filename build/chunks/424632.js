@@ -3,7 +3,7 @@ r.d(t, {
     F3: () => l,
     Qp: () => u,
     Qx: () => s,
-    l$: () => f,
+    l$: () => h,
     ny: () => o
 }), r(323874), r(14289), r(35956), r(393431), r(532706), r(42231), r(232424), r(949626), r(767709), r(65162);
 var a = r(735438),
@@ -17,20 +17,22 @@ async function o(e) {
         cropOriginCoordinates: l,
         maxDimensions: c,
         imageRotation: s = 0,
-        resizeWidth: f = null,
-        resizeHeight: u = null
+        flipHorizontal: h = !1,
+        resizeWidth: u = null,
+        resizeHeight: f = null
     } = e, {
         sourceX: A,
-        sourceY: h,
-        sourceWidth: m,
-        sourceHeight: w
+        sourceY: m,
+        sourceWidth: w,
+        sourceHeight: d
     } = (0, n.R7)({
         image: a,
         cropDimensions: o,
         cropOriginCoordinates: l,
         maxDimensions: c,
-        imageRotation: s
-    }), E = await t.arrayBuffer(), _ = new Worker(new URL("/assets/" + r.u("47773"), r.b)), d = new Promise((e, r) => {
+        imageRotation: s,
+        flipHorizontal: h
+    }), E = await t.arrayBuffer(), _ = new Worker(new URL("/assets/" + r.u("47773"), r.b)), p = new Promise((e, r) => {
         _.onmessage = a => {
             let {
                 data: n
@@ -52,20 +54,21 @@ async function o(e) {
                 r(Error(`Error cropping animated image: ${t}`)), _.terminate()
             }
         }
-    }), p = "image/webp" === t.type ? "webp" : "gif";
+    }), b = "image/webp" === t.type ? "webp" : "gif", y = Math.max(0, Math.round(A)), M = Math.max(0, Math.round(m)), H = Math.round(w), g = Math.round(d), D = a.naturalWidth - y, I = a.naturalHeight - M, L = Math.min(H, D), P = Math.min(g, I);
     return _.postMessage({
         type: i.lA.CROP_ANIMATED_IMAGE_START,
         data: new Uint8Array(E),
-        x: 0 | A,
-        y: 0 | h,
-        width: 0 | m,
-        height: 0 | w,
+        x: y,
+        y: M,
+        width: L,
+        height: P,
         imageRotation: 0 | s,
-        resizeWidth: f,
-        resizeHeight: u,
-        format: p
+        flipHorizontal: h,
+        resizeWidth: u,
+        resizeHeight: f,
+        format: b
     }), {
-        result: d,
+        result: p,
         cancelFn: () => _.terminate()
     }
 }
@@ -115,7 +118,7 @@ function s(e, t, r) {
     }
 }
 
-function f(e, t, r) {
+function h(e, t, r) {
     let a = {
             top: 0,
             bottom: 0,
@@ -157,9 +160,9 @@ function u(e, t, r, a) {
                 width: s, height: .4 * s
             };
         case i.HL.HOME_HEADER:
-            let f = Math.min(t, i.Ip);
+            let h = Math.min(t, i.Ip);
             return {
-                width: f, height: f * (1 / i.ny)
+                width: h, height: h * (1 / i.ny)
             }
     }
 }

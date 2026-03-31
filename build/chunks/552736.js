@@ -1,9 +1,8 @@
 /** chunk id: 552736 params = (module,exports,require) **/
-"use strict";
+r.d(t, {
+    A: () => i
+});
 
 function i() {
     return null
 }
-n.d(t, {
-    A: () => i
-})

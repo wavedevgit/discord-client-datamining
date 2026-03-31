@@ -12,30 +12,30 @@ function c(e) {
     let t = "image/gif" === e.type,
         r = "image/webp" === e.type,
         [n, c] = a.useState(!1),
-        [s, f] = a.useState(null),
+        [s, h] = a.useState(null),
         u = r && s !== e;
     a.useEffect(() => {
         let a = !1;
-        return t ? ((0, i.A)(), c(!1), f(e)) : r ? (async () => {
+        return t ? ((0, i.A)(), c(!1), h(e)) : r ? (async () => {
             try {
                 let t = await e.arrayBuffer(),
                     r = new Uint8Array(t),
                     n = await (0, o.Sf)(r);
-                a || (c(n), n && (0, o.L_)(), f(e))
+                a || (c(n), n && (0, o.L_)(), h(e))
             } catch (t) {
-                a || (l.error("Error checking WebP animation", t), c(!1), f(e))
+                a || (l.error("Error checking WebP animation", t), c(!1), h(e))
             }
-        })() : (c(!1), f(e)), () => {
+        })() : (c(!1), h(e)), () => {
             a = !0
         }
     }, [e, t, r]);
-    let A = n && s === e,
-        h = t || A;
+    let f = n && s === e,
+        A = t || f;
     return {
         isGIF: t,
         isWebP: r,
-        isAnimatedWebPFile: A,
+        isAnimatedWebPFile: f,
         isCheckingAnimation: u,
-        isEditableAnimatedImage: h
+        isEditableAnimatedImage: A
     }
 }

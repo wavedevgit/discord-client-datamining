@@ -26,8 +26,8 @@ var i = n(627968),
     C = n(194509),
     N = n(396375),
     v = n(511484),
-    I = n(231265),
-    j = n(795269),
+    I = n(774774),
+    j = n(231265),
     y = n(38720),
     O = n(788868),
     R = n(985018),
@@ -37,11 +37,11 @@ var i = n(627968),
     G = n(255631),
     M = n(193023);
 let k = () => {
-        let e = (0, I._)();
-        return (0, i.jsx)(j.ir, {
+        let e = (0, j._)();
+        return (0, i.jsx)(I.HU, {
             text: e,
             className: P.QR,
-            colorOptions: j.at.PREMIUM_TIER_2_NEW_GRADIENT_FILL
+            colorOptions: I.at.PREMIUM_TIER_2_NEW_GRADIENT_FILL
         })
     },
     U = () => (0, i.jsx)("div", {
@@ -142,7 +142,7 @@ let k = () => {
         let t, {
                 className: n,
                 hideCTAs: l = !1,
-                headingOverride: I,
+                headingOverride: j,
                 hidePill: L = !1,
                 selectedPlanColumnClassName: D,
                 selectedPlanTier: G = O.PremiumTypes.TIER_2
@@ -231,10 +231,10 @@ let k = () => {
             withBottomBorder: !1,
             withBottomBorderRadius: !0,
             buttonsRow: null == q
-        }), t = L ? null : null != q || null != Q ? (0, i.jsx)(j.ir, {
+        }), t = L ? null : null != q || null != Q ? (0, i.jsx)(I.HU, {
             text: null != q ? R.intl.string(R.t.IBYG5U) : R.intl.string(R.t.ce1v3V),
             className: P.ls,
-            colorOptions: q === O.pe.TIER_0 ? Y ? j.at.PREMIUM_TIER_0_GRADIENT_FILL : j.at.PREMIUM_TIER_0_WHITE_FILL : Y ? W ? j.at.PREMIUM_TIER_2_OLD_GRADIENT_FILL : j.at.PREMIUM_TIER_2_NEW_GRADIENT_FILL : j.at.PREMIUM_TIER_2_WHITE_FILL
+            colorOptions: q === O.pe.TIER_0 ? Y ? I.at.PREMIUM_TIER_0_GRADIENT_FILL : I.at.PREMIUM_TIER_0_WHITE_FILL : Y ? W ? I.at.PREMIUM_TIER_2_OLD_GRADIENT_FILL : I.at.PREMIUM_TIER_2_NEW_GRADIENT_FILL : I.at.PREMIUM_TIER_2_WHITE_FILL
         }) : ea ? (0, i.jsx)(k, {}) : (0, i.jsx)(U, {});
         let eo = q === O.pe.TIER_0 || Q === O.PremiumTypes.TIER_0 || G === O.PremiumTypes.TIER_0;
         return (0, i.jsx)(g.f5, {
@@ -245,7 +245,7 @@ let k = () => {
                 children: [(0, i.jsx)(c.Heading, {
                     className: a()(P.Qw, P.__invalid_textColor),
                     variant: "heading-xxl/extrabold",
-                    children: I ?? R.intl.string(R.t.FIbMh9)
+                    children: j ?? R.intl.string(R.t.FIbMh9)
                 }), K && (0, i.jsx)(b.A, {
                     premiumGroupRole: X.premiumGroupRole,
                     className: P.vg

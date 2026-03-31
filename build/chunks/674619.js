@@ -79,11 +79,11 @@ function L(e) {
         purchaseState: W
     } = (0, P.P5)(), {
         isGift: K,
-        giftMessage: V
-    } = (0, x.Pv)(), z = (0, m.T)(K, B), q = W === h.h.PURCHASING;
+        giftMessage: z
+    } = (0, x.Pv)(), V = (0, m.T)(K, B), q = W === h.h.PURCHASING;
     return (0, l.jsx)(C.A, {
         isConfirmationStep: H === T.pn.CONFIRM && null == L && null == R,
-        isEligibleForWowMoment: z,
+        isEligibleForWowMoment: V,
         shouldPrefetchWowMoment: q,
         children: (0, l.jsx)(g.PaymentModal, {
             analyticsLocations: F,
@@ -94,7 +94,7 @@ function L(e) {
             onComplete: o,
             transitionState: d,
             initialPlanId: c,
-            giftMessage: V,
+            giftMessage: z,
             subscriptionTier: p,
             onClose: E,
             trialId: S,

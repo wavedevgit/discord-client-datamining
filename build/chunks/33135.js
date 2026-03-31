@@ -15,15 +15,15 @@ var n = r(627968),
     p = r(97469),
     h = r(544028),
     y = r(734057),
-    A = r(696451),
-    f = r(383501),
+    f = r(696451),
+    A = r(383501),
     g = r(412780),
     F = r(287809),
     v = r(427262),
     C = r(817006),
     b = r(121614),
-    x = r(663272),
-    E = r(820931),
+    E = r(663272),
+    x = r(820931),
     D = r(307414),
     R = r(244920),
     S = r(652215),
@@ -58,7 +58,7 @@ function P(e, t, r, a, i) {
         }), null == h || s().isEmpty(h) || l.push({
             section: (0, g.Xi)(e, S.zWA.OUTBOUND, r),
             label: N.intl.string(N.t["3u0gII"]),
-            element: E.A,
+            element: x.A,
             elementProps: {
                 context: e,
                 index: r
@@ -76,7 +76,7 @@ function P(e, t, r, a, i) {
         let t = [];
         Object.keys(p).forEach(s => {
             let l, u = F.default.getUser(s),
-                c = A.Ay.getNick(i, s),
+                c = f.Ay.getNick(i, s),
                 h = (0, g.Xi)(e, s, r);
             null != p[s] && p[s].length > 0 && t.push({
                 section: h,
@@ -112,7 +112,7 @@ function P(e, t, r, a, i) {
                 onClick: () => {
                     d.c4(h)
                 },
-                element: x.A,
+                element: E.A,
                 elementProps: {
                     context: e,
                     index: r,
@@ -134,7 +134,7 @@ function k() {
     } = (0, l.bG)([g.Ay], () => ({
         defaultStats: g.Ay.getAllStats(j.x.DEFAULT),
         streamStats: g.Ay.getAllStats(j.x.STREAM)
-    }), [], l.My), r = (0, l.bG)([f.A, y.A], () => y.A.getChannel(f.A.getChannelId())), i = e.concat(t).find(e => null != e.screenshare)?.screenshare, s = t.find(e => null != e.clips)?.clips, m = (0, l.bG)([h.A], () => h.A.theme), A = (0, p.NC)(), F = (0, l.bG)([g.Ay], () => g.Ay.getSection()), v = function(e) {
+    }), [], l.My), r = (0, l.bG)([A.A, y.A], () => y.A.getChannel(A.A.getChannelId())), i = e.concat(t).find(e => null != e.screenshare)?.screenshare, s = t.find(e => null != e.clips)?.clips, m = (0, l.bG)([h.A], () => h.A.theme), f = (0, p.NC)(), F = (0, l.bG)([g.Ay], () => g.Ay.getSection()), v = function(e) {
         let {
             defaultStats: t,
             streamStats: r,
@@ -184,7 +184,7 @@ function k() {
         screenshare: i,
         clips: s,
         channel: r,
-        connectionState: (0, l.bG)([f.A], () => f.A.getState())
+        connectionState: (0, l.bG)([A.A], () => A.A.getState())
     });
     return a.useEffect(() => () => {
         d.VN()
@@ -192,7 +192,7 @@ function k() {
         v.some(e => e.section === F) || F === g.EM || d.c4(g.EM)
     }, [v, F]), (0, n.jsx)(u.Ay, {
         theme: m,
-        sidebarTheme: A,
+        sidebarTheme: f,
         section: F,
         onSetSection: d.c4,
         sections: v

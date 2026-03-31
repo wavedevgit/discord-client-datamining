@@ -22,7 +22,7 @@ var i = n(627968),
     f = n(652176),
     C = n(954571),
     T = n(728458),
-    N = n(795269),
+    N = n(774774),
     S = n(652215),
     x = n(49999),
     v = n(985018),
@@ -237,7 +237,7 @@ function R(e) {
                     alt: "",
                     className: r()(b.Ki, P),
                     src: R.src
-                }) : null, null != j && "" !== j ? (0, i.jsx)(N.R, {
+                }) : null, null != j && "" !== j ? (0, i.jsx)(N.e4, {
                     text: j,
                     colorOptions: N.at.PREMIUM_TIER_2_WHITE_FILL,
                     className: b.ON

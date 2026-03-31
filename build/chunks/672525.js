@@ -10,7 +10,7 @@ t(64700);
 var s = t(503698),
     r = t.n(s),
     o = t(397927),
-    l = t(407775),
+    l = t(501007),
     a = t(788868),
     c = t(959395);
 
@@ -29,7 +29,7 @@ function u(i) {
         style: {
             cursor: "pointer"
         },
-        children: (0, n.jsx)(l.KV, {
+        children: (0, n.jsx)(l.oK, {
             ctaButton: null,
             showPromotionalGiftBanner: a,
             showYearlyPrice: !0,
@@ -60,7 +60,7 @@ function d(i) {
         style: {
             cursor: "pointer"
         },
-        children: (0, n.jsx)(l.AP, {
+        children: (0, n.jsx)(l.MR, {
             className: r()(d, {
                 [c.ym]: !a,
                 [c.gH]: u

@@ -15,15 +15,15 @@ var n = r(627968),
     p = r(162605),
     h = r(351906),
     y = r(287809),
-    A = r(562153),
-    f = r(917592),
+    f = r(562153),
+    A = r(917592),
     g = r(828904),
     F = r(522278),
     v = r(974175),
     C = r(731854),
     b = r(985018),
-    x = r(653297),
-    E = r(153335);
+    E = r(653297),
+    x = r(153335);
 class D extends a.PureComponent {
     render() {
         let {
@@ -48,7 +48,7 @@ class D extends a.PureComponent {
             u = s().map(i.receiverReports, e => {
                 let t = Array.isArray(e.bitrate) ? e.bitrate.at(-1)?.value : e.bitrate,
                     r = y.default.getUser(e.id);
-                var n = A.Ay.getNickname(m.A.getGuildId(), void 0, r);
+                var n = f.Ay.getNickname(m.A.getGuildId(), void 0, r);
                 return null == n && (n = null != r ? r.username : e.id), {
                     displayName: n,
                     bitrate: t / 1e3,
@@ -82,12 +82,12 @@ class D extends a.PureComponent {
                 }, t)
             });
         return (0, n.jsxs)(o.BJc, {
-            className: x._8,
+            className: E._8,
             children: [(0, n.jsx)(o.Heading, {
                 variant: "heading-md/medium",
                 children: b.intl.string(b.t.wU9IN2) + (null != t ? " - " + t : "")
             }), (0, g.C6)(l), 0 === p.length ? null : (0, n.jsx)(o.cGx, {
-                className: E.SX
+                className: x.SX
             }), (0, g.C6)(p)]
         })
     }
@@ -101,6 +101,6 @@ let R = l.Ay.connectStores([c.Ay, u.A, h.A, p.A], e => {
         hidePersonalInformation: h.A.hidePersonalInformation,
         transport: null != n ? n.transport : null,
         mediaSessionId: u.A.getMediaSessionId(),
-        hostname: f.A.getShortHostname(i)
+        hostname: A.A.getShortHostname(i)
     }
 })(D)

@@ -13,8 +13,8 @@ var r = n(627968),
     u = n(97469),
     d = n(894858),
     h = n(641324),
-    m = n(82186),
-    f = n(985018),
+    f = n(82186),
+    m = n(985018),
     p = n(678545);
 
 function _(e) {
@@ -50,14 +50,14 @@ function v(e) {
                     onClick: () => d.A.setState({
                         showNavigationMobile: !0
                     }),
-                    label: f.intl.string(f.t["13/7kX"])
-                }), null != t && (0, r.jsx)(m.E, {
+                    label: m.intl.string(m.t["13/7kX"])
+                }), null != t && (0, r.jsx)(f.E, {
                     node: t
                 })]
             }), (0, r.jsx)(_, {
                 icon: c.d$L,
                 onClick: n,
-                label: f.intl.string(f.t.cpT0Cq)
+                label: m.intl.string(m.t.cpT0Cq)
             })]
         })
     })

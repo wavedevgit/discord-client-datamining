@@ -15,15 +15,15 @@ var n = r(627968),
     p = r(568765),
     h = r(512513),
     y = r(795816),
-    A = r(933958),
-    f = r(47294),
+    f = r(933958),
+    A = r(47294),
     g = r(386467),
     F = r(923917),
     v = r(734057),
     C = r(31717),
     b = r(164617),
-    x = r(540462),
-    E = r(43061);
+    E = r(540462),
+    x = r(43061);
 let D = [c.L, m.T, p.w, h.z];
 
 function R(e) {
@@ -32,7 +32,7 @@ function R(e) {
         channelId: r
     } = e, a = (0, o.bG)([v.A], () => v.A.getChannel(r));
     l()(null != a, "channel cannot be null for popout");
-    let s = (0, o.bG)([A.Ay], () => A.Ay.getSelfEmbeddedActivityForChannel(a.id), [a]);
+    let s = (0, o.bG)([f.Ay], () => f.Ay.getSelfEmbeddedActivityForChannel(a.id), [a]);
     return (0, n.jsx)(F.A, {
         withTitleBar: !0,
         keybinds: D,
@@ -46,7 +46,7 @@ function R(e) {
             } = e;
             if (null != s) {
                 let e = (0, y.od)(s.applicationId, a.id);
-                t.preventDefault(), (0, f.A)({
+                t.preventDefault(), (0, A.A)({
                     onConfirm: async () => {
                         await e, r()
                     },
@@ -55,13 +55,13 @@ function R(e) {
             } else r()
         },
         children: (0, n.jsx)("div", {
-            className: i()("root", E.M),
+            className: i()("root", x.M),
             children: (0, n.jsxs)(g.A.Provider, {
                 value: a.guild_id,
                 children: [(0, n.jsx)(u.A, {
                     channel: a,
                     draftType: C.C.ChannelMessage
-                }), (0, n.jsx)(x.A, {
+                }), (0, n.jsx)(E.A, {
                     channel: a,
                     popoutType: b.N.VOICE_UI
                 }), (0, n.jsx)(d.A, {

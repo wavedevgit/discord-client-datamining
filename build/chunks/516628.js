@@ -1,23 +1,23 @@
 /** chunk id: 516628 params = (module,exports,require) **/
-n.d(t, {
+l.d(t, {
     E2: () => c,
     Fx: () => u,
     u1: () => o
 });
-var l = n(627968),
-    i = n(397927),
-    r = n(80569),
-    a = n(652215);
-n(307731);
-var s = n(985018);
+var n = l(627968),
+    i = l(397927),
+    r = l(80569),
+    a = l(652215);
+l(307731);
+var s = l(985018);
 let u = e => {
         let {
             error: t,
-            variant: n,
+            variant: l,
             color: r
         } = e;
-        return (0, l.jsx)(i.Text, {
-            variant: n,
+        return (0, n.jsx)(i.Text, {
+            variant: l,
             color: r,
             children: o(t)
         })

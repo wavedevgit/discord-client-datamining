@@ -1,6 +1,6 @@
 /** chunk id: 878244 params = (module,exports,require) **/
 t.d(e, {
-    A: () => M,
+    A: () => P,
     O: () => w
 });
 var n = t(627968),
@@ -56,8 +56,8 @@ function m(i) {
         guildId: k,
         channelId: O,
         numMoreItems: v
-    } = i, [w, m] = s.useState(!1), P = null != v && v > 0, R = s.useCallback(() => {
-        if (P) return void l();
+    } = i, [w, m] = s.useState(!1), R = null != v && v > 0, M = s.useCallback(() => {
+        if (R) return void l();
         let i = u === _.uS.WISHLIST ? "wishlist" : "shop";
         f.default.track(A.HAw.GIFTING_ITEM_CLICKED, {
             sku_id: e.id,
@@ -65,7 +65,7 @@ function m(i) {
             wishlist_id: u === _.uS.WISHLIST ? c : null,
             product_line: e.productLine
         }), t?.()
-    }, [t, c, u, e.id, e.productLine, l, P]), M = s.useCallback(() => {
+    }, [t, c, u, e.id, e.productLine, l, R]), P = s.useCallback(() => {
         let i = u === _.uS.WISHLIST ? "wishlist" : "shop";
         f.default.track(A.HAw.GIFTING_ITEM_CLICKED, {
             sku_id: e.id,
@@ -88,8 +88,8 @@ function m(i) {
         user: a,
         spec: h,
         skuPreviewStyle: o()(y.e, p, w ? I : void 0),
-        onClick: R,
-        "aria-label": P ? x.intl.formatToPlainString(x.t["8uYD+I"], {
+        onClick: M,
+        "aria-label": R ? x.intl.formatToPlainString(x.t["8uYD+I"], {
             username: a.username
         }) : x.intl.formatToPlainString(x.t.ZBB4Ty, {
             productName: (0, C.TC)(e)
@@ -98,7 +98,7 @@ function m(i) {
         children: [(0, n.jsx)(T.A, {
             spec: h,
             sku: e,
-            isCardHovered: w && !P,
+            isCardHovered: w && !R,
             location: "DMGiftingModalWishlistItemCardBase",
             replacedElement: d && u === _.uS.WISHLIST ? (0, n.jsx)(L.X, {
                 spec: h,
@@ -106,19 +106,19 @@ function m(i) {
                 guildId: k ?? void 0,
                 channelId: O ?? void 0
             }) : null
-        }), !P && (0, n.jsx)(S.A, {
+        }), !R && (0, n.jsx)(S.A, {
             spec: h,
-            onClick: j ? M : R,
+            onClick: j ? P : M,
             label: H,
             icon: b,
             isHoveringOrFocusing: w
-        }), P && (0, n.jsx)(E.Yb, {
+        }), R && (0, n.jsx)(E.Yb, {
             count: v
         })]
     })
 }
 
-function P(i) {
+function R(i) {
     let {
         sku: e,
         wishlistOwner: t,
@@ -157,7 +157,7 @@ function P(i) {
     })
 }
 
-function R(i) {
+function M(i) {
     let {
         sku: e,
         wishlistOwner: t,
@@ -197,19 +197,19 @@ function R(i) {
     })
 }
 
-function M(i) {
+function P(i) {
     let {
         sku: e,
         ...t
     } = i;
     switch (e.productLine) {
         case A.EZt.SOCIAL_LAYER_GAME_ITEM:
-            return (0, n.jsx)(P, {
+            return (0, n.jsx)(R, {
                 sku: e,
                 ...t
             });
         case A.EZt.COLLECTIBLES:
-            return (0, n.jsx)(R, {
+            return (0, n.jsx)(M, {
                 sku: e,
                 ...t
             });

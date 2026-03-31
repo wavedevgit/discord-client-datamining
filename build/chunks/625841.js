@@ -1,14 +1,14 @@
 /** chunk id: 625841 params = (module,exports,require) **/
 n.d(t, {
-    U: () => I
+    U: () => h
 });
 var i = n(627968),
     a = n(64700),
     o = n(503698),
     l = n.n(o),
     s = n(311907),
-    c = n(843282),
-    r = n(582754),
+    r = n(843282),
+    c = n(582754),
     d = n(397927),
     _ = n(827343),
     u = n(688810),
@@ -21,12 +21,12 @@ var i = n(627968),
     x = n(985018),
     C = n(709759);
 
-function I(e) {
+function h(e) {
     let {
         deviceType: t,
         location: o,
-        selectedDeviceId: I,
-        onSelectDevice: h,
+        selectedDeviceId: h,
+        onSelectDevice: I,
         hideDeviceTypeIcon: O = !1,
         label: D,
         ...f
@@ -68,28 +68,28 @@ function I(e) {
         analyticsLocations: E
     } = (0, u.Ay)(), j = (0, s.bG)([g.A], () => g.A.theme), N = U(o), P = (0, v.tR)(t), {
         id: V
-    } = (0, v.x5)(t), y = (0, s.bG)([b.Ay], () => T(b.Ay)), L = (0, i.jsx)(d.po8, {
+    } = (0, v.x5)(t), y = (0, s.bG)([b.Ay], () => T(b.Ay)), B = (0, i.jsx)(d.po8, {
         messageType: d.YCn.WARNING,
         children: w()
-    }), B = a.useCallback(e => {
-        (h?.(e) ?? !0) && A(e, {
+    }), L = a.useCallback(e => {
+        (I?.(e) ?? !0) && A(e, {
             location: N,
             analyticsLocations: E
         })
-    }, [N, E, h, A]);
+    }, [N, E, I, A]);
 
     function M(e) {
         let t, a, {
                 label: o,
                 value: s
             } = e,
-            c = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
+            r = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
             _ = o,
             u = (0, v.d)(o);
         null != u && (_ = u.prefix, t = u.subName);
         let g = m.A.getCertifiedDeviceName(s, _);
         if (m.A.isCertified(s)) {
-            let e = (0, r.qB)(j) ? n(961392) : n(848672);
+            let e = (0, c.qB)(j) ? n(961392) : n(848672);
             a = (0, i.jsx)("img", {
                 src: e,
                 alt: x.intl.string(x.t.smSKsj)
@@ -97,7 +97,7 @@ function I(e) {
         }
         return (0, i.jsxs)("div", {
             className: l()(C.Mg, {
-                [C.S2]: c && null != t,
+                [C.S2]: r && null != t,
                 [C.Sy]: !O
             }),
             children: [!O && (0, i.jsx)("div", {
@@ -106,17 +106,17 @@ function I(e) {
                     size: "custom",
                     width: 20,
                     height: 20,
-                    color: d.LU0.colors.ICON_MUTED
+                    color: "currentColor"
                 })
             }), (0, i.jsx)(d.Text, {
                 lineClamp: 2,
                 variant: "text-md/medium",
-                color: c ? "text-subtle" : "text-default",
+                color: r ? "text-subtle" : "text-default",
                 className: C.hV,
                 children: g
             }), null != t && (0, i.jsx)(d.Text, {
                 lineClamp: 2,
-                variant: c ? "text-xs/medium" : "text-md/medium",
+                variant: r ? "text-xs/medium" : "text-md/medium",
                 color: "text-muted",
                 className: C.VT,
                 children: t
@@ -127,10 +127,10 @@ function I(e) {
         })
     }
     return (0, i.jsxs)(i.Fragment, {
-        children: [(0, i.jsx)(c.Te, {
+        children: [(0, i.jsx)(r.Te, {
             label: D,
-            value: I ?? V,
-            onChange: B,
+            value: h ?? V,
+            onChange: L,
             options: P.map(e => {
                 let {
                     id: t,
@@ -151,6 +151,6 @@ function I(e) {
             optionClassName: C.OS,
             ...f,
             "data-migration-pending": !0
-        }), !y && L]
+        }), !y && B]
     })
 }

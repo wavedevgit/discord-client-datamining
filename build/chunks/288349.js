@@ -10,7 +10,7 @@ var l = n(503698),
     s = n(366999),
     o = n(160761),
     d = n(953727),
-    c = n(795269),
+    c = n(774774),
     u = n(408643);
 let A = "premium_tier_gradient",
     h = "smaller_sparkle_gradient";
@@ -96,7 +96,7 @@ function m(e) {
                 foreground: u.J0,
                 color: `url(#${A})`
             })]
-        }) : null, (0, i.jsx)(c.R, {
+        }) : null, (0, i.jsx)(c.e4, {
             text: E,
             colorOptions: g === r.M.FRACTIONAL_NITRO_DURATION_LEFT_PILL ? c.at.PREMIUM_TIER_2_NEW_GRADIENT_FILL : c.at.PREMIUM_TIER_2_GREY_FILL
         })]

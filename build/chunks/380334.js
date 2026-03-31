@@ -1,44 +1,44 @@
 /** chunk id: 380334 params = (module,exports,require) **/
-n.d(t, {
+l.d(t, {
     T: () => j
 });
-var l = n(627968);
-n(64700);
-var i = n(503698),
-    r = n.n(i),
-    a = n(311907),
-    s = n(397927),
-    u = n(565645),
-    o = n(71393),
-    c = n(927813),
-    d = n(985018),
-    m = n(193518),
-    h = n(549290);
+var n = l(627968);
+l(64700);
+var i = l(503698),
+    r = l.n(i),
+    a = l(311907),
+    s = l(397927),
+    u = l(565645),
+    o = l(71393),
+    c = l(927813),
+    d = l(985018),
+    m = l(193518),
+    h = l(549290);
 let g = 6 * c.A.Millis.SECOND;
 
 function x(e) {
     let {
         emoji: t,
-        guildId: n
-    } = e, i = (0, a.bG)([o.A], () => o.A.getGuild(n)?.name);
-    return (0, l.jsxs)("div", {
+        guildId: l
+    } = e, i = (0, a.bG)([o.A], () => o.A.getGuild(l)?.name);
+    return (0, n.jsxs)("div", {
         className: r()(h.oR, m.o),
-        children: [(0, l.jsx)(u.A, {
+        children: [(0, n.jsx)(u.A, {
             emojiId: t.id,
             size: "default"
-        }), (0, l.jsx)(s.Text, {
+        }), (0, n.jsx)(s.Text, {
             variant: "text-md/normal",
             color: "text-muted",
             children: d.intl.format(d.t.BaxFf8, {
                 emojiName: t.name,
-                emojiNameHook: (e, t) => (0, l.jsx)(s.Text, {
+                emojiNameHook: (e, t) => (0, n.jsx)(s.Text, {
                     variant: "text-md/semibold",
                     color: "text-strong",
                     tag: "strong",
                     children: e
                 }, t),
                 guildName: i,
-                guildNameHook: (e, t) => (0, l.jsx)(s.Text, {
+                guildNameHook: (e, t) => (0, n.jsx)(s.Text, {
                     variant: "text-md/semibold",
                     color: "text-strong",
                     tag: "strong",
@@ -52,13 +52,13 @@ function x(e) {
 function j(e) {
     let {
         emoji: t,
-        guildId: n
+        guildId: l
     } = e;
     (0, s.showToast)((0, s.createToast)("", s.ToastType.CUSTOM, {
         position: s.ToastPosition.TOP,
-        component: (0, l.jsx)(x, {
+        component: (0, n.jsx)(x, {
             emoji: t,
-            guildId: n
+            guildId: l
         }),
         duration: g
     }))

@@ -48,9 +48,9 @@ var i = n(627968),
     Y = n(263747),
     X = n(194509),
     K = n(65470),
-    W = n(857586),
-    Z = n(795269),
-    q = n(501007),
+    W = n(465794),
+    Z = n(774774),
+    q = n(559606),
     Q = n(156601),
     J = n(244778),
     $ = n(788868),
@@ -73,7 +73,7 @@ function ec(e) {
         theme: l
     } = e, a = t.hasActiveTrial, r = t.planIdFromItems === $.gD.PREMIUM_YEAR_TIER_2, d = n || a, c = null != t.trialEndsAt ? o()(t.trialEndsAt).diff(o()(), "d") : 0, u = $.hd[t.planIdFromItems], m = k.Ay.formatPriceString(k.Ay.getDefaultPrice(u.id), u.interval);
     return d ? (0, i.jsxs)(i.Fragment, {
-        children: [(a || !r) && (0, i.jsx)(Z.ir, {
+        children: [(a || !r) && (0, i.jsx)(Z.HU, {
             text: a ? en.intl.string(en.t.qYKftX) : en.intl.string(en.t.EyjDRE),
             className: ei.uS,
             colorOptions: (0, _.Mw)(l) ? Z.at.PREMIUM_TIER_2_WHITE_FILL : Z.at.PREMIUM_TIER_2_OLD_GRADIENT_FILL
@@ -133,7 +133,7 @@ function eu() {
                     marginBottom: "18px"
                 }
             }) : m && !d ? (0, i.jsxs)(i.Fragment, {
-                children: [(0, i.jsx)(Z.R, {
+                children: [(0, i.jsx)(Z.e4, {
                     text: en.intl.string(en.t.uXF4c4),
                     className: ei.rd,
                     colorOptions: Z.at.PREMIUM_TIER_2_OLD_GRADIENT_FILL
@@ -151,7 +151,7 @@ function eu() {
                 activeDiscountInfo: t,
                 theme: n
             }) : d ? (0, i.jsxs)(i.Fragment, {
-                children: [(0, i.jsx)(Z.ir, {
+                children: [(0, i.jsx)(Z.HU, {
                     text: en.intl.string(en.t.qYKftX),
                     className: ei.uS,
                     colorOptions: (0, _.Mw)(n) ? Z.at.PREMIUM_TIER_2_WHITE_FILL : Z.at.PREMIUM_TIER_2_OLD_GRADIENT_FILL

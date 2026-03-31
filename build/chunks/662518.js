@@ -1,5 +1,5 @@
 /** chunk id: 662518 params = (module,exports,require) **/
-n.d(t, {
-    q: () => l
+l.d(t, {
+    q: () => n
 });
-let l = e => "image/gif" === e || "image/webp" === e || "image/avif" === e
+let n = e => "image/gif" === e || "image/webp" === e || "image/avif" === e
