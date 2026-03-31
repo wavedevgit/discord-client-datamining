@@ -8,18 +8,18 @@ var a = n(58149),
     i = n(943667),
     r = n(954571),
     s = n(124759),
-    l = n(652215),
-    o = n(375577);
+    o = n(652215),
+    l = n(375577);
 
 function c(e) {
     return (0, i.A)(e) && e.messageReference.guild_id === s.Vi || null != e.author && e.author.id === s.hs
 }
 
 function d() {
-    return o
+    return l
 }
 let u = e => {
-    r.default.track(l.HAw.USER_FLOW_TRANSITION, {
+    r.default.track(o.HAw.USER_FLOW_TRANSITION, {
         flow_type: s.bK,
         from_step: e.fromStep,
         to_step: e.toStep,

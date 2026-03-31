@@ -8,8 +8,8 @@ var t = a(627968),
 let i = {
     title: "Switch",
     stories: [{
-        id: "baseSwitch",
-        name: "BaseSwitch",
+        id: "switch",
+        name: "Switch",
         component: function(e) {
             let {
                 disabled: l,
@@ -19,7 +19,7 @@ let i = {
                 required: r,
                 errorMessage: d
             } = e, [u, c] = o.useState(!1);
-            return (0, t.jsx)(n.Ad5, {
+            return (0, t.jsx)(n.dOG, {
                 label: i,
                 description: s,
                 required: r,

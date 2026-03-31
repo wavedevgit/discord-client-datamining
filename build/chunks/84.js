@@ -6,9 +6,16 @@ var a = n(20015),
     i = n(833349),
     r = n(652215);
 
-function s(e, t, n, s, l) {
-    let o = t?.application_id;
-    if (null == e || null == t || !(0, i.A)(t, r.jUm.JOIN) || null == o) return !1;
-    let c = s.getApplication(o);
-    return !(null == c || (0, a.n)(c, r.gfo.EMBEDDED) || e.isPrivate() && l.isBlockedOrIgnored(e.getRecipientId())) && n.shouldShowEducation(o)
+function s(e) {
+    let {
+        channel: t,
+        activity: n,
+        ActivityInviteEducationStore: s,
+        ApplicationStore: o,
+        RelationshipStore: l,
+        GamePartyStore: c
+    } = e, d = n?.application_id;
+    if (null == t || null == n || !(0, i.A)(n, r.jUm.JOIN) || null == d) return !1;
+    let u = o.getApplication(d);
+    return !(null == u || (0, a.n)(u, r.gfo.EMBEDDED) || t.isPrivate() && l.isBlockedOrIgnored(t.getRecipientId()) || t.isDM() && c.getParty(n.party?.id)?.has(t.getRecipientId()) === !0) && s.shouldShowEducation(d)
 }

@@ -1,14 +1,14 @@
 /** chunk id: 863439 params = (module,exports,require) **/
 n.d(t, {
-    A: () => l,
-    z: () => o
+    A: () => o,
+    z: () => l
 });
 var a = n(417597),
     i = n(253932),
     r = n(576705),
     s = n(652215);
 
-function l(e, t) {
+function o(e, t) {
     switch (e) {
         case s.P6Q.ALWAYS:
             return !0;
@@ -20,7 +20,7 @@ function l(e, t) {
     }
 }
 
-function o(e) {
+function l(e) {
     let t = (0, a.bG)([r.A], () => r.A.can(s.xBc.MANAGE_MESSAGES, e));
-    return !l(i.gs.useSetting(), t)
+    return !o(i.gs.useSetting(), t)
 }

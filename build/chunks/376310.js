@@ -6,8 +6,8 @@ n.d(t, {
 var a, i = n(627968),
     r = n(64700),
     s = n(503698),
-    l = n.n(s),
-    o = n(837381),
+    o = n.n(s),
+    l = n(837381),
     c = n(311907),
     d = n(990078),
     u = n(397927),
@@ -35,9 +35,9 @@ function T(e) {
         name: S,
         emojiId: E,
         emojiName: y
-    } = t, v = null != T, [j, R] = r.useState(!1), M = (0, c.bG)([f.Ay], () => null != E ? f.Ay.getUsableCustomEmojiById(E) : null), N = v || null != x, w = (!v || !j) && (null != E || null != y), O = 0 === a, k = r.useRef(null), D = (0, c.bG)([p.A], () => p.A.keyboardModeEnabled), L = (0, i.jsxs)(i.Fragment, {
+    } = t, v = null != T, [j, R] = r.useState(!1), M = (0, c.bG)([f.Ay], () => null != E ? f.Ay.getUsableCustomEmojiById(E) : null), N = v || null != x, w = (!v || !j) && (null != E || null != y), O = 0 === a, k = r.useRef(null), D = (0, c.bG)([p.A], () => p.A.keyboardModeEnabled), G = (0, i.jsxs)(i.Fragment, {
         children: [w ? (0, i.jsx)(m.A, {
-            className: l()(A.emoji, {
+            className: o()(A.emoji, {
                 [A.small]: O
             }),
             emojiId: E,
@@ -57,9 +57,9 @@ function T(e) {
             color: "currentColor",
             children: S
         })]
-    }), U = {
+    }), L = {
         key: t.id,
-        className: l()(A.pill, {
+        className: o()(A.pill, {
             [A.disabled]: s,
             [A.clickable]: N,
             [A.small]: O,
@@ -83,9 +83,9 @@ function T(e) {
         },
         onMouseEnter: () => v && R(!0),
         onMouseLeave: () => v && R(!1)
-    }, G = (0, o.rm)(`forum-tag-${t.id}`);
+    }, U = (0, l.rm)(`forum-tag-${t.id}`);
     return N ? (0, i.jsx)(u.DUT, {
-        ...G,
+        ...U,
         innerRef: k,
         focusProps: {
             ringTarget: k
@@ -95,11 +95,11 @@ function T(e) {
         }),
         role: "button",
         "aria-pressed": C,
-        ...U,
-        children: L
+        ...L,
+        children: G
     }) : (0, i.jsx)("div", {
-        ...U,
-        children: L
+        ...L,
+        children: G
     })
 }
 
@@ -119,7 +119,7 @@ function C(e) {
             }, e.id))
         }),
         children: (0, i.jsx)("div", {
-            className: l()(A.pill, {
+            className: o()(A.pill, {
                 [A.small]: r
             }),
             children: (0, i.jsxs)(u.Text, {

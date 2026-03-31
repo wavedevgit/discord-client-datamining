@@ -7,8 +7,8 @@ n(64700);
 var i = n(435371),
     r = n(397927),
     s = n(769015),
-    l = n(985018),
-    o = n(578090);
+    o = n(985018),
+    l = n(578090);
 
 function c(e) {
     let {
@@ -20,12 +20,12 @@ function c(e) {
             size: s.M.MEDIUM_LARGE,
             game: t
         }),
-        body: l.intl.format(l.t.J3s8JP, {
+        body: o.intl.format(o.t.J3s8JP, {
             applicationName: t.name
         }),
         position: "top",
         asContainer: !0,
-        "aria-label": l.intl.string(l.t["5nMcv1"]),
+        "aria-label": o.intl.string(o.t["5nMcv1"]),
         children: (0, a.jsx)(r.DUT, {
             tag: "span",
             children: n
@@ -42,7 +42,7 @@ function d(e) {
     return (0, a.jsxs)(c, {
         application: t,
         children: [n ? null : (0, a.jsx)(r._xR, {
-            className: o.Gt,
+            className: l.Gt,
             size: "custom",
             width: 14,
             height: 14

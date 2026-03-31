@@ -2,8 +2,8 @@
 t.d(n, {
     A: () => g
 });
-var l = t(627968),
-    i = t(64700),
+var i = t(627968),
+    l = t(64700),
     r = t(311907),
     s = t(732955),
     a = t(397927),
@@ -31,29 +31,29 @@ function g(e) {
     } = (0, u.Ay)(), j = a._3J.SIZE_32, {
         product: R,
         isFetching: C
-    } = (0, c.q)(n), [M, y] = i.useState(!1), N = R?.items[0], {
-        isNameplateReward: O,
+    } = (0, c.q)(n), [M, N] = l.useState(!1), O = R?.items[0], {
+        isNameplateReward: y,
         nameplateData: v,
         rewardAvatarDecorationSrc: b
-    } = i.useMemo(() => null == N ? {
+    } = l.useMemo(() => null == O ? {
         isNameplateReward: !1,
         nameplateData: null,
         rewardAvatarDecorationSrc: null
-    } : (0, _.F)(N) ? {
+    } : (0, _.F)(O) ? {
         isNameplateReward: !0,
         nameplateData: {
-            skuId: N.skuId,
-            src: N.asset,
-            palette: (0, p.H6)(N.palette ?? "sky"),
-            imgAlt: N.label
+            skuId: O.skuId,
+            src: O.asset,
+            palette: (0, p.H6)(O.palette ?? "sky"),
+            imgAlt: O.label
         },
         rewardAvatarDecorationSrc: null
-    } : (0, E.T)(N) ? {
+    } : (0, E.T)(O) ? {
         isNameplateReward: !1,
         nameplateData: null,
         rewardAvatarDecorationSrc: (0, d.A)({
-            legacyAssetId: N.asset,
-            skuId: N.skuId,
+            legacyAssetId: O.asset,
+            skuId: O.skuId,
             size: j,
             canAnimate: !A
         })
@@ -61,16 +61,16 @@ function g(e) {
         isNameplateReward: !1,
         nameplateData: null,
         rewardAvatarDecorationSrc: null
-    }, [N, j, A]);
-    return (0, l.jsx)(P.UX, {
-        children: (0, l.jsx)(s.jlY, {
-            children: (0, l.jsxs)("div", {
+    }, [O, j, A]);
+    return (0, i.jsx)(P.UX, {
+        children: (0, i.jsx)(s.jlY, {
+            children: (0, i.jsxs)("div", {
                 className: h.W,
-                children: [O && null != v ? (0, l.jsx)("div", {
+                children: [y && null != v ? (0, i.jsx)("div", {
                     className: h.D,
-                    onMouseEnter: () => y(!0),
-                    onMouseLeave: () => y(!1),
-                    children: (0, l.jsx)(m.a, {
+                    onMouseEnter: () => N(!0),
+                    onMouseLeave: () => N(!1),
+                    children: (0, i.jsx)(m.a, {
                         user: g,
                         nameplate: null,
                         nameplateData: v,
@@ -78,12 +78,12 @@ function g(e) {
                         nameplatePreviewSize: "xsmall",
                         isHighlighted: M
                     })
-                }) : (0, l.jsx)(a.JsQ, {
+                }) : (0, i.jsx)(a.JsQ, {
                     "aria-label": g?.username,
                     size: j,
                     src: g?.getAvatarURL(void 0, (0, a.FT9)(j), !A),
                     avatarDecoration: b
-                }), (0, l.jsx)(s.$nd, {
+                }), (0, i.jsx)(s.$nd, {
                     variant: "primary",
                     text: I.intl.string(I.t.kMYVwv),
                     loading: C,

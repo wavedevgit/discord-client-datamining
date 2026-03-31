@@ -2,19 +2,19 @@
 n.d(t, {
     Ay: () => d,
     U0: () => u,
-    c: () => l
+    c: () => o
 });
 var a = n(311907),
     i = n(696451),
     r = n(287809),
     s = n(316031);
 
-function l(e) {
+function o(e) {
     let t = (0, a.bG)([r.default], () => r.default.getCurrentUser());
     return d(t?.id, e)
 }
 
-function o(e, t, n) {
+function l(e, t, n) {
     return null != t && null != e ? n.getMember(t, e) : null
 }
 
@@ -23,9 +23,9 @@ function c(e) {
 }
 
 function d(e, t) {
-    return c((0, a.bG)([i.Ay], () => o(e, t, i.Ay), [t, e]))
+    return c((0, a.bG)([i.Ay], () => l(e, t, i.Ay), [t, e]))
 }
 
 function u(e, t) {
-    return c(o(e, t, i.Ay))
+    return c(l(e, t, i.Ay))
 }

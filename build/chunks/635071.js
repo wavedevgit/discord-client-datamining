@@ -6,8 +6,8 @@ n.d(t, {
 var a, i = n(627968),
     r = n(64700),
     s = n(503698),
-    l = n.n(s),
-    o = n(607399),
+    o = n.n(s),
+    l = n(607399),
     c = n(311907),
     d = n(473193),
     u = n(36075),
@@ -43,9 +43,9 @@ function N(e) {
         hideGuildTag: O = !1,
         hideSystemTag: k = !1,
         className: D,
-        onClick: L,
-        onContextMenu: U,
-        onPopoutRequestClose: G,
+        onClick: G,
+        onContextMenu: L,
+        onPopoutRequestClose: U,
         renderPopout: F,
         decorations: P,
         previewGuildId: B,
@@ -60,9 +60,9 @@ function N(e) {
         displayNameStyles: q
     } = t, Y = (0, c.bG)([m.A], () => m.A.roleStyle), ee = "username" === Y, et = (0, g.a)({
         displayNameStyles: q
-    }), en = (0, c.bG)([S.A], () => null == t.guildId || null == t.colorRoleId ? null : S.A.getRole(t.guildId, t.colorRoleId)), ea = (0, C.jV)(B ?? z, en), ei = (0, y.A)(n), er = r.useContext(d.C), es = er?.animate || w, el = ea && (0, T.kz)(t), eo = ee && el, ec = a?.isPrivate() && null != q;
+    }), en = (0, c.bG)([S.A], () => null == t.guildId || null == t.colorRoleId ? null : S.A.getRole(t.guildId, t.colorRoleId)), ea = (0, C.jV)(B ?? z, en), ei = (0, y.A)(n), er = r.useContext(d.C), es = er?.animate || w, eo = ea && (0, T.kz)(t), el = ee && eo, ec = a?.isPrivate() && null != q;
     (0, v.A)({
-        shouldSubscribe: ec || eo,
+        shouldSubscribe: ec || el,
         subscribeToGroupId: $,
         authorId: n.author.id
     });
@@ -75,30 +75,30 @@ function N(e) {
         includeConvenienceGlow: !0,
         animateGradient: es
     }), e_ = (0, u.CR)(J + Q), em = {
-        className: l()(R.oF, et, {
-            [eu]: eo,
+        className: o()(R.oF, et, {
+            [eu]: el,
             [R.IW]: "username" === Y && null != K
         }),
         style: (() => {
-            if (ee) return eo && null != Z ? {
+            if (ee) return el && null != Z ? {
                 ...ed,
                 textDecorationColor: Z?.primaryColor ?? void 0
             } : null != K ? {
                 color: K
             } : void 0
         })(),
-        onClick: L,
-        onContextMenu: U,
+        onClick: G,
+        onContextMenu: L,
         children: ec ? (0, i.jsx)(h.A, {
             userName: e_,
             displayNameStyles: q,
             effectDisplayType: es ? b.G.ANIMATED : b.G.PLAIN,
             loop: !0,
-            shouldUnderlineOnHover: null != L,
+            shouldUnderlineOnHover: null != G,
             textClassName: R.Mu
         }) : e_,
         "data-text": J + Q,
-        "data-username-has-gradient": !!el || void 0
+        "data-username-has-gradient": !!eo || void 0
     }, ep = r.useMemo(() => O ? null : (0, i.jsx)(x.Cw, {
         primaryGuild: t.primaryGuild,
         userId: n.author.id,
@@ -113,14 +113,14 @@ function N(e) {
         renderPopout: F,
         shouldShow: w,
         shouldPreload: ei,
-        position: o.Fr ? "window_center" : "right",
+        position: l.Fr ? "window_center" : "right",
         avatarUrl: null != t.guildMemberAvatar && null != z ? (0, E.s7)({
             guildId: z,
             userId: ef.id,
             avatar: t.guildMemberAvatar,
             size: 80
         }) : void 0,
-        onRequestClose: G,
+        onRequestClose: U,
         clickTrap: w,
         children: e => {
             let {
@@ -133,14 +133,14 @@ function N(e) {
                     innerRef: W,
                     ...n,
                     ...em,
-                    className: l()(em.className, R.vk, D)
+                    className: o()(em.className, R.vk, D)
                 }), ep]
             })
         }
     }) : (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(_.DUT, {
             ...em,
-            className: l()(em.className, D)
+            className: o()(em.className, D)
         }), ep]
     }), eh = null != P ? P[0] : null, eg = null != P ? P[1] : null;
     return (0, i.jsxs)(f.f5, {
@@ -149,7 +149,7 @@ function N(e) {
             children: [" ", eh, " "]
         }) : null, "dot" === Y ? (0, i.jsx)(_.WYI, {
             color: K,
-            colors: el ? Z : null,
+            colors: eo ? Z : null,
             name: X,
             className: R.m4,
             hoverOverride: es

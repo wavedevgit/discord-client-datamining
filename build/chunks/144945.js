@@ -6,8 +6,8 @@ var a = n(627968),
     i = n(64700),
     r = n(989349),
     s = n.n(r),
-    l = n(311907),
-    o = n(990078),
+    o = n(311907),
+    l = n(990078),
     c = n(397927),
     d = n(943330),
     u = n(101392),
@@ -22,7 +22,7 @@ function g(e) {
     let t, {
             isEnabled: n,
             rateLimitPerUser: r,
-            isBypassSlowmode: l,
+            isBypassSlowmode: o,
             slowmodeCooldownGuess: u
         } = e,
         [p, g] = i.useState(!1);
@@ -37,7 +37,7 @@ function g(e) {
             }
         }, []), !n) return null;
     let A = (0, d.L)(r);
-    if (!l && u > 0) {
+    if (!o && u > 0) {
         let e = s().duration(u);
         if (u > m.A.Millis.HOUR) {
             let n = `${e.minutes()}`.padStart(2, "0"),
@@ -47,7 +47,7 @@ function g(e) {
             let n = `${e.seconds()}`.padStart(2, "0");
             t = `${e.minutes()}:${n}`
         }
-    } else t = l ? b.intl.string(b.t["8+NidX"]) : b.intl.string(b.t.Icu3bf);
+    } else t = o ? b.intl.string(b.t["8+NidX"]) : b.intl.string(b.t.Icu3bf);
     let x = (0, a.jsxs)(c.Text, {
         className: h.rk,
         variant: "text-xs/medium",
@@ -59,7 +59,7 @@ function g(e) {
             className: h.Eq
         }), t]
     });
-    return (0, a.jsx)(o.m, {
+    return (0, a.jsx)(l.m, {
         text: A,
         children: (0, a.jsx)("div", {
             className: h.ns,
@@ -72,7 +72,7 @@ function A(e) {
     let {
         channel: t,
         isThreadCreation: n = !1
-    } = e, i = (0, l.bG)([u.A], () => u.A.getSlowmodeCooldownGuess(t.id, n ? u.R.CreateThread : u.R.SendMessage)), r = (0, p._)(t, n ? u.R.CreateThread : u.R.SendMessage), {
+    } = e, i = (0, o.bG)([u.A], () => u.A.getSlowmodeCooldownGuess(t.id, n ? u.R.CreateThread : u.R.SendMessage)), r = (0, p._)(t, n ? u.R.CreateThread : u.R.SendMessage), {
         rateLimitPerUser: s
     } = t;
     return (0, a.jsx)(g, {

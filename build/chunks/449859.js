@@ -6,8 +6,8 @@ var a = n(627968),
     i = n(64700),
     r = n(503698),
     s = n.n(r),
-    l = n(990078),
-    o = n(253932),
+    o = n(990078),
+    l = n(253932),
     c = n(405269),
     d = n(355938),
     u = n(943815),
@@ -27,7 +27,7 @@ let p = i.memo(function(e) {
             isEdited: T = !1,
             application: C,
             tooltipPosition: I
-        } = e, S = i.useMemo(() => new Date(p), [p]), E = i.useMemo(() => (0, c.K7)(S), [S]), y = o.PZ.useSetting(), v = i.useMemo(() => null != b ? (0, c.i$)(S, b, y) : r ? (0, c.i$)(S, "LT", y) : (0, c.mk)(S, !0), [S, b, r, y]), j = i.useMemo(() => r ? (0, u.A)(v) : null, [r, v]), R = i.useMemo(() => T ? _.intl.formatToPlainString(_.t.CDzOFd, {
+        } = e, S = i.useMemo(() => new Date(p), [p]), E = i.useMemo(() => (0, c.K7)(S), [S]), y = l.PZ.useSetting(), v = i.useMemo(() => null != b ? (0, c.i$)(S, b, y) : r ? (0, c.i$)(S, "LT", y) : (0, c.mk)(S, !0), [S, b, r, y]), j = i.useMemo(() => r ? (0, u.A)(v) : null, [r, v]), R = i.useMemo(() => T ? _.intl.formatToPlainString(_.t.CDzOFd, {
             timeFormatted: E
         }) : E, [T, E]);
         return (0, a.jsx)("span", {
@@ -37,7 +37,7 @@ let p = i.memo(function(e) {
                 [m.YQ]: A,
                 [m.CC]: g
             }),
-            children: null == C ? (0, a.jsx)(l.m, {
+            children: null == C ? (0, a.jsx)(o.m, {
                 asContainer: !0,
                 __unsupportedReactNodeAsText: (0, c.i$)(S, "LLLL"),
                 "aria-label": R,
@@ -70,11 +70,11 @@ let p = i.memo(function(e) {
             children: i,
             compact: r,
             timestamp: s,
-            id: l
+            id: o
         } = e;
         return (0, a.jsx)("time", {
             ...t,
-            id: l,
+            id: o,
             dateTime: s.toISOString(),
             children: null != i ? i : (0, a.jsxs)(a.Fragment, {
                 children: [(0, a.jsx)("i", {

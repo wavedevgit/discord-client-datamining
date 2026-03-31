@@ -2,8 +2,8 @@
 t.d(n, {
     k: () => x
 });
-var l = t(627968),
-    i = t(64700),
+var i = t(627968),
+    l = t(64700),
     r = t(503698),
     s = t.n(r),
     a = t(575593),
@@ -24,11 +24,11 @@ let x = e => {
             onSelect: T,
             selectedSkuId: I
         } = e,
-        [h, g] = i.useState(null),
-        A = i.useCallback(e => {
+        [h, g] = l.useState(null),
+        A = l.useCallback(e => {
             g(e)
         }, []),
-        f = i.useMemo(() => ({
+        f = l.useMemo(() => ({
             current: h
         }), [h]),
         {
@@ -40,18 +40,18 @@ let x = e => {
         } = (0, d.q)(r);
     if (null == C) return null;
     let M = C.items[0];
-    return null == M ? null : ((0, c.T)(M) ? (t = a.R.AVATAR_DECORATION, n = (0, l.jsx)(m.i, {
+    return null == M ? null : ((0, c.T)(M) ? (t = a.R.AVATAR_DECORATION, n = (0, i.jsx)(m.i, {
         item: M,
         user: x,
         isHighlighted: R,
         avatarSize: o._3J.SIZE_96
-    })) : (0, p.F)(M) && (t = a.R.NAMEPLATE, n = (0, l.jsx)(E.A, {
+    })) : (0, p.F)(M) && (t = a.R.NAMEPLATE, n = (0, i.jsx)(E.A, {
         nameplate: M,
         user: x,
         isHighlighted: R,
         size: "small"
-    })), (0, l.jsx)(o.vN3, {
-        children: (0, l.jsxs)(o.sqX, {
+    })), (0, i.jsx)(o.vN3, {
+        children: (0, i.jsxs)(o.sqX, {
             ref: A,
             "aria-label": C.name ?? "",
             onClick: () => {
@@ -62,18 +62,18 @@ let x = e => {
                 [S.mr]: R,
                 [S.md]: I === r
             }),
-            children: [(0, l.jsx)("div", {
+            children: [(0, i.jsx)("div", {
                 className: s()(S.VH, {
                     [S._Q]: t === a.R.AVATAR_DECORATION,
                     [S.M4]: t === a.R.NAMEPLATE
                 }),
-                children: null != n ? (0, l.jsxs)(l.Fragment, {
-                    children: [(0, l.jsx)("div", {
+                children: null != n ? (0, i.jsxs)(i.Fragment, {
+                    children: [(0, i.jsx)("div", {
                         className: s()(S.i1, {
                             [S.Sf]: P
                         }),
                         children: n
-                    }), P && (0, l.jsx)(o.rOg, {
+                    }), P && (0, i.jsx)(o.rOg, {
                         size: "custom",
                         width: 48,
                         height: 48,
@@ -81,12 +81,12 @@ let x = e => {
                         className: S.j0
                     })]
                 }) : null
-            }), (0, l.jsxs)("div", {
+            }), (0, i.jsxs)("div", {
                 className: S.tZ,
-                children: [(0, l.jsx)(o.Heading, {
+                children: [(0, i.jsx)(o.Heading, {
                     variant: "heading-md/extrabold",
                     children: C.name
-                }), (0, l.jsx)(o.Text, {
+                }), (0, i.jsx)(o.Text, {
                     variant: "text-sm/normal",
                     children: P ? _.intl.string(_.t["6cfuDj"]) : _.intl.string(_.t.QQsaCc)
                 })]

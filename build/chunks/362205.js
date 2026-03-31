@@ -1,7 +1,7 @@
 /** chunk id: 362205 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => b
+    A: () => S
 });
 var r = n(627968),
     i = n(64700),
@@ -24,7 +24,7 @@ var r = n(627968),
     E = n(890690),
     A = n(422419);
 
-function S(e) {
+function b(e) {
     let {
         category: t,
         onClick: n,
@@ -50,7 +50,7 @@ function S(e) {
     })
 }
 
-function b(e) {
+function S(e) {
     let {
         categories: t,
         visibleContent: n,
@@ -75,7 +75,7 @@ function b(e) {
         {
             thumbRef: d,
             trackRef: g,
-            thumbAnchorRef: b,
+            thumbAnchorRef: S,
             springs: N
         } = function(e) {
             let t = p.Xi.useSetting(),
@@ -137,10 +137,10 @@ function b(e) {
         }), (0, r.jsx)("div", {
             className: A.gu,
             "aria-hidden": "true",
-            ref: b
+            ref: S
         }), t.map(e => {
             let t = (0, y.H)(e.key, n, a);
-            return (0, r.jsx)(S, {
+            return (0, r.jsx)(b, {
                 onClick: () => {
                     var t;
                     return t = e.key, void v.A.navigate(t, {

@@ -4,9 +4,9 @@ n.d(t, {
     JH: () => d,
     XL: () => u,
     ZD: () => m,
-    d$: () => o,
+    d$: () => l,
     fF: () => _,
-    nS: () => l,
+    nS: () => o,
     xl: () => c
 });
 var a = n(264927),
@@ -17,11 +17,11 @@ function s(e) {
     return `message-content-${e.id}`
 }
 
-function l(e) {
+function o(e) {
     return `message-reply-context-${e.id}`
 }
 
-function o(e, t) {
+function l(e, t) {
     let n = t ?? e.id;
     return `message-username-${n}`
 }
@@ -51,8 +51,8 @@ function _(e, t, n) {
         x = e.type !== r.lAJ.DEFAULT || !A && "" !== e.content,
         T = (0, i.A)(e),
         C = !T && n?.hasTimestamp !== !1,
-        I = o(e, t),
-        S = l(e),
+        I = l(e, t),
+        S = o(e),
         E = T ? "" : `${d?S:I} ${a.lW}`;
     if (x) {
         let t = s(e);

@@ -1,14 +1,14 @@
 /** chunk id: 861986 params = (module,exports,require) **/
 n.d(t, {
     A: () => c,
-    O: () => o
+    O: () => l
 });
 var a, i = n(627968);
 n(64700);
 var r = n(449859),
     s = n(985018),
-    l = n(812782),
-    o = ((a = {})[a.WITH_CONTENT = 0] = "WITH_CONTENT", a[a.AFTER_ACCESSORIES = 1] = "AFTER_ACCESSORIES", a);
+    o = n(812782),
+    l = ((a = {})[a.WITH_CONTENT = 0] = "WITH_CONTENT", a[a.AFTER_ACCESSORIES = 1] = "AFTER_ACCESSORIES", a);
 
 function c(e) {
     let {
@@ -22,7 +22,7 @@ function c(e) {
             isEdited: !0,
             isInline: !1,
             children: (0, i.jsxs)("span", {
-                className: l.oh,
+                className: o.oh,
                 children: ["(", s.intl.string(s.t.C8sXIM), ")"]
             })
         })]

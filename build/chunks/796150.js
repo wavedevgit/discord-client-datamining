@@ -23,8 +23,8 @@ var r = n(627968),
     x = n(921854),
     E = n(985018),
     A = n(442182);
-let S = new Set([p.X.PROFILE_PANEL, p.X.SUBSCRIPTIONS_PANEL, p.X.FAMILY_CENTER_PANEL, p.X.POGGERMODE_PANEL]),
-    b = new Map([
+let b = new Set([p.X.PROFILE_PANEL, p.X.SUBSCRIPTIONS_PANEL, p.X.FAMILY_CENTER_PANEL, p.X.POGGERMODE_PANEL]),
+    S = new Map([
         [p.X.CONNECTIONS_PANEL, a.ImpressionNames.USER_SETTINGS_CONNECTIONS],
         [p.X.SESSIONS_PANEL, a.ImpressionNames.USER_SETTINGS_SESSIONS]
     ]);
@@ -51,8 +51,8 @@ function N(e) {
         emptyState: C,
         sidebarFooter: _.A,
         onViewChange: e => {
-            S.has(e) || (0, y._)(e);
-            let t = b.get(e);
+            b.has(e) || (0, y._)(e);
+            let t = S.get(e);
             null != t && (0, o.x)({
                 type: a.ImpressionTypes.PANE,
                 name: t,

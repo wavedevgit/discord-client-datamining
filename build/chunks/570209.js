@@ -8,11 +8,11 @@ n(309613);
 var r = n(289732);
 let s = new Set(["a", "an", "and", "are", "as", "at", "be", "but", "by", "for", "if", "in", "into", "is", "it", "no", "not", "of", "on", "or", "such", "that", "the", "their", "then", "there", "these", "they", "this", "to", "was", "will", "with"]);
 
-function l(e) {
+function o(e) {
     return e.replace(/('|\u2019|\uFF07)(s|S)$/, "")
 }
 
-function o(e) {
+function l(e) {
     return e.toLowerCase()
 }
 
@@ -27,7 +27,7 @@ function d(e) {
 function u(e) {
     let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
         n = e.length >= 3 && e.length <= 12 && t,
-        a = new Set(i()(e.split(/\W+/)).map(l).reject(d).map(o).reject(c).map(r.U).value());
+        a = new Set(i()(e.split(/\W+/)).map(o).reject(d).map(l).reject(c).map(r.U).value());
     return e => (function e(t, n, a) {
         if (Array.isArray(t)) t.forEach(t => e(t, n, a));
         else if ("list" === t.type) t.items.forEach(t => e(t, n, a));
@@ -37,7 +37,7 @@ function u(e) {
             t.content.split(/(\W+)/g).forEach(t => {
                 ! function(e, t) {
                     let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2];
-                    if (d(e = o(l(e))) || c(e)) return !1;
+                    if (d(e = l(o(e))) || c(e)) return !1;
                     let a = (0, r.U)(e);
                     if (n) {
                         for (let e of t.values())
