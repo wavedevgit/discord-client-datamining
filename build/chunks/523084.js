@@ -1,64 +1,64 @@
 /** chunk id: 523084 params = (module,exports,require) **/
-t.d(n, {
+a.d(t, {
     A: () => m
 });
-var a = t(627968),
-    s = t(64700),
-    i = t(106778),
-    r = t(311907),
-    l = t(397927),
-    d = t(775602),
-    c = t(524246),
-    o = t(14368),
-    u = t(62296);
+var n = a(627968),
+    r = a(64700),
+    i = a(106778),
+    s = a(311907),
+    l = a(397927),
+    c = a(775602),
+    o = a(524246),
+    d = a(14368),
+    u = a(62296);
 
 function m(e) {
     let {
-        title: n,
-        description: t,
+        title: t,
+        description: a,
         image: m,
-        button: _,
-        ...f
-    } = e, p = (0, r.bG)([d.A], () => d.A.useReducedMotion), x = s.useRef(null), g = s.useRef(new i.OH), [h, b] = s.useState(null);
-    return (0, a.jsxs)(a.Fragment, {
-        children: [(0, a.jsx)(i.Fk, {
-            ref: b,
+        button: f,
+        ...p
+    } = e, x = (0, s.bG)([c.A], () => c.A.useReducedMotion), _ = r.useRef(null), g = r.useRef(new i.OH), [v, h] = r.useState(null);
+    return (0, n.jsxs)(n.Fragment, {
+        children: [(0, n.jsx)(i.Fk, {
+            ref: h,
             className: u.Lb,
             environment: g.current
-        }), (0, a.jsxs)(l.EOs, {
+        }), (0, n.jsxs)(l.EOs, {
             "data-migration-pending": !0,
             className: u.yl,
             size: l.rIJ.DYNAMIC,
-            ...f,
+            ...p,
             parentComponent: "GuildPowerupActivateModal",
-            children: [(0, a.jsx)(l.$mQ, {
+            children: [(0, n.jsx)(l.$mQ, {
                 "data-migration-pending": !0,
                 className: u._F,
                 scrollbarType: "none",
-                children: (0, a.jsxs)("div", {
+                children: (0, n.jsxs)("div", {
                     className: u.kL,
-                    ref: x,
-                    children: [m, (0, a.jsxs)("div", {
+                    ref: _,
+                    children: [m, (0, n.jsxs)("div", {
                         className: u.hQ,
-                        children: [(0, a.jsx)(l.Heading, {
+                        children: [(0, n.jsx)(l.Heading, {
                             variant: "heading-xl/extrabold",
-                            children: n
-                        }), null != t && (0, a.jsx)(l.Text, {
+                            children: t
+                        }), null != a && (0, n.jsx)(l.Text, {
                             tag: "span",
                             className: u.h_,
                             variant: "text-sm/normal",
-                            children: t
-                        }), _]
+                            children: a
+                        }), f]
                     })]
                 })
-            }), (0, a.jsx)(l.s_y, {
+            }), (0, n.jsx)(l.s_y, {
                 "data-migration-pending": !0,
                 className: u.VN,
-                onClick: f.onClose
-            }), !p && (0, a.jsx)(c.A, {
-                confettiTarget: x.current,
-                confettiCanvas: h,
-                sprites: (0, o.rA)()
+                onClick: p.onClose
+            }), !x && (0, n.jsx)(o.A, {
+                confettiTarget: _.current,
+                confettiCanvas: v,
+                sprites: (0, d.rA)()
             })]
         })]
     })
