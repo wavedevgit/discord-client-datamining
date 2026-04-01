@@ -8,8 +8,8 @@ var i = n(627968),
     a = n.n(s),
     r = n(131346),
     o = n(382222),
-    c = n(837381),
-    d = n(317097),
+    d = n(837381),
+    c = n(317097),
     u = n(319060),
     h = n(397927),
     A = n(817281),
@@ -83,7 +83,7 @@ let v = (0, g.xI)(u.A.FOLDER_ITEM_ANIMATION_DURATION),
             ee(e)
         }, []), ea = l.useCallback(e => {
             ("ArrowRight" === e.key && !O || "ArrowLeft" === e.key && O) && V()
-        }, [V, O]), er = null != X && "" !== X ? X : null != G && "" !== G ? G : S.intl.string(S.t.xV9hVh), eo = (0, c.Vd)(`${q}`), ec = `folder-items-${q}`, ed = (t = J.length, n = (0, h.rdh)(h.LU0.modules.guildbar.FOLDER_SIZE), s = (0, h.rdh)(h.LU0.modules.guildbar.AVATAR_SIZE), t * (s + (o = (0, h.rdh)(h.LU0.space.SPACE_XS))) - o + (o - (n - s) / 2) + (0, h.rdh)(h.LU0.space.SPACE_4)), eu = (0, h.pnh)(!ei && O, {
+        }, [V, O]), er = null != X && "" !== X ? X : null != G && "" !== G ? G : S.intl.string(S.t.xV9hVh), eo = (0, d.Vd)(`${q}`), ed = `folder-items-${q}`, ec = (t = J.length, n = (0, h.rdh)(h.LU0.modules.guildbar.FOLDER_SIZE), s = (0, h.rdh)(h.LU0.modules.guildbar.AVATAR_SIZE), t * (s + (o = (0, h.rdh)(h.LU0.space.SPACE_XS))) - o + (o - (n - s) / 2) + (0, h.rdh)(h.LU0.space.SPACE_4)), eu = (0, h.pnh)(!ei && O, {
             from: {
                 height: 0
             },
@@ -127,7 +127,7 @@ let v = (0, g.xI)(u.A.FOLDER_ITEM_ANIMATION_DURATION),
                         mentionCount: M,
                         isMentionLowImportance: D,
                         tooltipName: er,
-                        folderGroupId: ec,
+                        folderGroupId: ed,
                         onClick: V,
                         onContextMenu: H,
                         onHoverChange: $,
@@ -143,7 +143,7 @@ let v = (0, g.xI)(u.A.FOLDER_ITEM_ANIMATION_DURATION),
                 targetNode: u,
                 onDragOverChanged: es
             }) : null]
-        }), e_ = null != u.color ? u.color : T.DO, em = e_ === T.DO ? void 0 : (0, d.Hl)(e_);
+        }), e_ = null != u.color ? u.color : T.DO, em = e_ === T.DO ? void 0 : (0, c.Hl)(e_);
         return (0, i.jsxs)("div", {
             ref: eh,
             className: a()(b.qc, {
@@ -161,13 +161,13 @@ let v = (0, g.xI)(u.A.FOLDER_ITEM_ANIMATION_DURATION),
                     key: l
                 } = n;
                 return t && (0, i.jsx)(j, {
-                    id: ec,
+                    id: ed,
                     role: "group",
                     as: "ul",
                     gap: "xs",
                     className: b.TN,
                     style: {
-                        height: e.height.to(e => e * ed)
+                        height: e.height.to(e => e * ec)
                     },
                     "aria-label": u.name,
                     children: J.map((t, n) => F(t, n, J.length, e.height))

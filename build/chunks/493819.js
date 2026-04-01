@@ -1,6 +1,6 @@
 /** chunk id: 493819 params = (module,exports,require) **/
 n.d(t, {
-    A: () => d
+    A: () => c
 });
 var i = n(627968),
     l = n(64700),
@@ -14,14 +14,14 @@ function o(e) {
         src: t,
         className: n,
         autoPlayOnMount: a
-    } = e, o = l.useRef(null), c = l.useRef(!1), [d, u] = l.useState(!1);
+    } = e, o = l.useRef(null), d = l.useRef(!1), [c, u] = l.useState(!1);
     l.useEffect(() => {
         if (!a) return;
         let e = o.current;
-        if (null != e) return c.current = !1, e.addEventListener("canplay", t), e.readyState >= HTMLMediaElement.HAVE_ENOUGH_DATA && t(), () => e.removeEventListener("canplay", t);
+        if (null != e) return d.current = !1, e.addEventListener("canplay", t), e.readyState >= HTMLMediaElement.HAVE_ENOUGH_DATA && t(), () => e.removeEventListener("canplay", t);
 
         function t() {
-            c.current || null == e || (c.current = !0, e.play())
+            d.current || null == e || (d.current = !0, e.play())
         }
     }, [t, a]);
     let h = l.useCallback(() => {
@@ -42,31 +42,31 @@ function o(e) {
             src: t,
             muted: !0,
             playsInline: !0,
-            loop: d
+            loop: c
         })
     })
 }
 
-function c(e) {
+function d(e) {
     let {
         animatedSrc: t,
         staticSrc: n,
         className: s,
         autoPlayOnMount: a,
         animationDurationMs: r = 4e3
-    } = e, [o, c] = l.useState(() => a), d = l.useRef(!a);
+    } = e, [o, d] = l.useState(() => a), c = l.useRef(!a);
     l.useEffect(() => {
         if (!a) return;
         let e = setTimeout(() => {
-            d.current = !0, c(!1)
+            c.current = !0, d(!1)
         }, r);
         return () => clearTimeout(e)
     }, [t, a, r]);
     let u = l.useCallback(() => {
-            c(!0)
+            d(!0)
         }, []),
         h = l.useCallback(() => {
-            d.current && c(!1)
+            c.current && d(!1)
         }, []);
     return (0, i.jsx)("img", {
         className: s,
@@ -77,7 +77,7 @@ function c(e) {
     })
 }
 
-function d(e) {
+function c(e) {
     let {
         src: t,
         staticSrc: n,
@@ -88,7 +88,7 @@ function d(e) {
         src: t,
         className: l,
         autoPlayOnMount: s
-    }) : null != n ? (0, i.jsx)(c, {
+    }) : null != n ? (0, i.jsx)(d, {
         animatedSrc: t,
         staticSrc: n,
         className: l,

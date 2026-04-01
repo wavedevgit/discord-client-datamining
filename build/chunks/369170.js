@@ -8,8 +8,8 @@ var i = n(627968),
     a = n(397927),
     r = n(793574),
     o = n(688810),
-    c = n(792656),
-    d = n(422258),
+    d = n(792656),
+    c = n(422258),
     u = n(93055),
     h = n(788868),
     A = n(525736),
@@ -57,11 +57,11 @@ function p(e) {
                     text: _.intl.string(A.default["6kk0gM"]),
                     onClick: x,
                     icon: s.PlusMediumIcon
-                }) : (0, i.jsx)(c.A, {
+                }) : (0, i.jsx)(d.A, {
                     subscriptionTier: h.pe.TIER_2,
                     defaultTextOverride: _.intl.string(A.default.yYVbdv),
                     onSubscribeModalClose: e => {
-                        e && (0, d.tV)(!0, "favorites_empty_state")
+                        e && (0, c.tV)(!0, "favorites_empty_state")
                     }
                 })]
             })

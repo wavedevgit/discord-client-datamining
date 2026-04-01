@@ -8,24 +8,24 @@ var i = n(627968),
     a = n(118019),
     r = n(383501),
     o = n(728458),
-    c = n(38050),
-    d = n(998740),
+    d = n(38050),
+    c = n(998740),
     u = n(572808),
     h = n(241080);
 let A = () => {
     let e = (0, s.bG)([r.A], () => r.A.getChannelId()),
-        t = (0, s.bG)([d.A], () => null != e && d.A.isUserConnected(e)),
-        n = (0, c.n)(e => e.genre),
-        A = (0, c.n)(e => e.songIndex),
-        _ = (0, c.n)(e => e.playRadio),
-        m = (0, c.n)(e => e.globalMute),
-        g = (0, c.n)(e => e.playNextSong),
-        p = (0, c.n)(e => e.volumes),
+        t = (0, s.bG)([c.A], () => null != e && c.A.isUserConnected(e)),
+        n = (0, d.n)(e => e.genre),
+        A = (0, d.n)(e => e.songIndex),
+        _ = (0, d.n)(e => e.playRadio),
+        m = (0, d.n)(e => e.globalMute),
+        g = (0, d.n)(e => e.playNextSong),
+        p = (0, d.n)(e => e.volumes),
         f = l.useRef(null),
         x = l.useRef(null),
         E = l.useRef(null),
         I = (0, h.A)(n, A),
-        C = (0, s.bG)([d.A], () => d.A.assets);
+        C = (0, s.bG)([c.A], () => c.A.assets);
     return (l.useEffect(() => {
         let e = f.current;
         null != e && I?.src != null && (e.pause(), e.src = I.src, !m && _ && t && e.play()?.catch(e => {

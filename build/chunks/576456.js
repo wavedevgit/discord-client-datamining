@@ -1,6 +1,6 @@
 /** chunk id: 576456 params = (module,exports,require) **/
 n.d(t, {
-    A: () => d
+    A: () => c
 });
 var i = n(627968),
     l = n(64700),
@@ -8,23 +8,23 @@ var i = n(627968),
     a = n.n(s),
     r = n(397927),
     o = n(985018),
-    c = n(80460);
+    d = n(80460);
 
-function d(e) {
+function c(e) {
     let {
         className: t,
         onJump: n
-    } = e, [s, d] = l.useState(!1);
+    } = e, [s, c] = l.useState(!1);
     return (0, i.jsx)(r.DUT, {
-        className: a()(c.n, t),
+        className: a()(d.n, t),
         onClick: e => {
-            d(!0), n(e)
+            c(!0), n(e)
         },
         children: s ? (0, i.jsx)(r.y$y, {
             type: r.y$y.Type.PULSING_ELLIPSIS
         }) : (0, i.jsx)(r.Text, {
             variant: "text-xs/medium",
-            className: c.Q,
+            className: d.Q,
             children: o.intl.string(o.t.k5WiPf)
         })
     })

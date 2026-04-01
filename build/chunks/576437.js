@@ -8,8 +8,8 @@ var i = n(627968),
     a = n(554146),
     r = n(379848),
     o = n(832248),
-    c = n(201805),
-    d = n(253932),
+    d = n(201805),
+    c = n(253932),
     u = n(995377),
     h = n(461213),
     A = n(954571),
@@ -28,7 +28,7 @@ let p = e => {
         } = e, {
             isQuestBarEmpty: n,
             hasLoadedQuestBar: i
-        } = (0, c.c9)(), l = d.tz.useSetting(), a = (0, u.G)(), r = (0, s.bG)([h.A], () => h.A.getStatus()), {
+        } = (0, d.c9)(), l = c.tz.useSetting(), a = (0, u.G)(), r = (0, s.bG)([h.A], () => h.A.getStatus()), {
             isOpen: A
         } = (0, o.A)();
         if ((n && i || t) && !a && !A && !__OVERLAY__) {

@@ -31,7 +31,7 @@ function m(e, t) {
     return r
 }
 
-function A(e) {
+function w(e) {
     for (var t = 1; t < arguments.length; t++) {
         var r = null != arguments[t] ? arguments[t] : {};
         t % 2 ? m(Object(r), !0).forEach(function(t) {
@@ -42,7 +42,7 @@ function A(e) {
     }
     return e
 }
-var w = function(e) {
+var A = function(e) {
     return e
 };
 
@@ -57,11 +57,11 @@ function O(e) {
         return e[t]
     })).length > 0 && (t = "string" == typeof t ? {
         extend: t
-    } : A({}, t), a.forEach(function(a) {
+    } : w({}, t), a.forEach(function(a) {
         console.error('Styling method "'.concat(a, '" is deprecated, use "theme" property instead')), t[r[a]] = function(t) {
             for (var r = t.style, n = arguments.length, o = Array(n > 1 ? n - 1 : 0), s = 1; s < n; s++) o[s - 1] = arguments[s];
             return {
-                style: A(A({}, r), e[a].apply(e, o))
+                style: w(w({}, r), e[a].apply(e, o))
             }
         }
     })), t);
@@ -114,7 +114,7 @@ var k = function(e) {
                 s = e.hideRoot,
                 i = (e.theme, e.invertTheme, (0, n.A)(e, g)),
                 c = this.state.styling;
-            return f.createElement("ul", c("tree"), f.createElement(p.A, (0, a.A)({}, A({
+            return f.createElement("ul", c("tree"), f.createElement(p.A, (0, a.A)({}, w({
                 postprocessValue: o,
                 hideRoot: s,
                 styling: c
@@ -146,8 +146,8 @@ var k = function(e) {
         var t = (0, b.A)(e, 1)[0];
         return f.createElement("span", null, t, ":")
     },
-    valueRenderer: w,
-    postprocessValue: w,
+    valueRenderer: A,
+    postprocessValue: A,
     isCustomNode: function() {
         return !1
     },

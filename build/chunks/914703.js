@@ -1,6 +1,6 @@
 /** chunk id: 914703 params = (module,exports,require) **/
 n.d(t, {
-    A: () => d
+    A: () => c
 });
 var i = n(627968);
 n(64700);
@@ -9,13 +9,13 @@ var l = n(397927),
     a = n(57907),
     r = n(867455),
     o = n(607508),
-    c = n(37411);
+    d = n(37411);
 
-function d(e) {
+function c(e) {
     let {
         channel: t,
         closePopout: n,
-        onSelect: d,
+        onSelect: c,
         navId: u,
         label: h
     } = e, A = (0, s.A)(t, "Notifications Bell"), _ = (0, a.A)(t), m = (0, o.X)(t);
@@ -24,11 +24,11 @@ function d(e) {
         navId: u,
         onClose: n,
         "aria-label": h,
-        onSelect: d,
+        onSelect: c,
         children: [(0, i.jsxs)(l.rXV, {
             children: [t.isForumPost() ? A : null, _]
         }), (0, i.jsx)(l.rXV, {
-            children: (0, c.EU)().map(e => {
+            children: (0, d.EU)().map(e => {
                 let {
                     setting: n,
                     label: s

@@ -8,17 +8,17 @@ var i = n(627968),
     a = n(253932),
     r = n(461213),
     o = n(985018),
-    c = n(394157);
+    d = n(394157);
 
-function d(e) {
+function c(e) {
     let {
         onClick: t
     } = e;
     return (0, i.jsx)(s.DUT, {
-        className: c.kL,
+        className: d.kL,
         onClick: t,
         children: (0, i.jsx)(s.Text, {
-            className: c.P_,
+            className: d.P_,
             variant: "text-xs/medium",
             color: "text-subtle",
             children: o.intl.string(o.t.jfrLLb)
@@ -30,7 +30,7 @@ function u(e) {
     let {
         onClick: t
     } = e, n = a.tz.useSetting(), o = (0, l.bG)([r.A], () => r.A.getStatus());
-    return __OVERLAY__ || n && o !== s.clD.INVISIBLE ? null : (0, i.jsx)(d, {
+    return __OVERLAY__ || n && o !== s.clD.INVISIBLE ? null : (0, i.jsx)(c, {
         onClick: t
     })
 }

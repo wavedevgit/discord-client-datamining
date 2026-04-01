@@ -9,8 +9,8 @@ var l = n(311907),
     a = n(652793),
     r = n(855725),
     o = n(976860),
-    c = n(309010),
-    d = n(64071),
+    d = n(309010),
+    c = n(64071),
     u = n(652215),
     h = n(985018);
 let A = [{
@@ -63,21 +63,21 @@ let A = [{
         let {
             guild: t,
             channel: n
-        } = e, s = (0, l.bG)([c.A], () => null != n && c.A.getChannelId() === n.id), o = (0, d.x)(n);
+        } = e, s = (0, l.bG)([d.A], () => null != n && d.A.getChannelId() === n.id), o = (0, c.x)(n);
         return (0, i.jsx)(i.Fragment, {
             children: A.map(e => {
                 let {
                     key: l,
-                    getName: c,
-                    handler: d,
+                    getName: d,
+                    handler: c,
                     renderIcon: u
                 } = e, h = s && "JOIN_SERVERS" === l, A = `${l}-${t.id}`;
                 return (0, i.jsx)(a.G, {
                     id: A,
                     renderIcon: u,
-                    text: c(),
+                    text: d(),
                     selected: h,
-                    onClick: null != n ? () => d(t, n) : void 0,
+                    onClick: null != n ? () => c(t, n) : void 0,
                     trailing: "JOIN_SERVERS" === l && o > 0 ? (0, r.w)(o) : null
                 }, A)
             })

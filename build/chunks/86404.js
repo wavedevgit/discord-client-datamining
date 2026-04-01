@@ -1,6 +1,6 @@
 /** chunk id: 86404 params = (module,exports,require) **/
 t.d(n, {
-    A: () => x
+    A: () => A
 });
 var i = t(627968),
     a = t(64700),
@@ -12,14 +12,14 @@ var i = t(627968),
     c = t(229187),
     u = t(657331),
     _ = t(503062),
-    A = t(985018),
-    p = t(272823);
+    p = t(985018),
+    x = t(272823);
 
-function x(e) {
+function A(e) {
     let {
         user: n,
         guildId: t,
-        channelId: x,
+        channelId: A,
         onClose: f
     } = e, {
         mutualFriends: m
@@ -32,18 +32,18 @@ function x(e) {
     return a.useEffect(() => {
         (0, c.A)(n.id, b)
     }, [n.id, b]), (0, i.jsx)(s.IpV, {
-        className: p.DK,
+        className: x.DK,
         fade: !0,
         children: null == m ? (0, i.jsx)("div", {
-            className: p.Ie,
+            className: x.Ie,
             children: (0, i.jsx)(s.y$y, {})
         }) : 0 === m.length ? (0, i.jsxs)("div", {
-            className: p.Ie,
+            className: x.Ie,
             children: [(0, i.jsx)("div", {
-                className: p.on
+                className: x.on
             }), (0, i.jsx)("div", {
-                className: p.BI,
-                children: A.intl.string(A.t["/5p4gx"])
+                className: x.BI,
+                children: p.intl.string(p.t["/5p4gx"])
             })]
         }) : m.map(e => {
             let {
@@ -55,7 +55,7 @@ function x(e) {
                 user: a,
                 status: s,
                 guildId: t,
-                channelId: x,
+                channelId: A,
                 onSelect: () => {
                     var e;
                     f?.(), h({

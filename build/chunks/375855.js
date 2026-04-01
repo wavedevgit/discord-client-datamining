@@ -8,8 +8,8 @@ var i = n(627968),
     a = n.n(s),
     r = n(311907),
     o = n(435371),
-    c = n(397927),
-    d = n(933958),
+    d = n(397927),
+    c = n(933958),
     u = n(104171),
     h = n(297334),
     A = n(47167),
@@ -46,7 +46,7 @@ function S(e) {
         muteConfig: t,
         className: n
     } = e;
-    return t?.end_time == null ? (0, i.jsx)(c.Text, {
+    return t?.end_time == null ? (0, i.jsx)(d.Text, {
         variant: "text-xs/normal",
         color: "text-muted",
         className: n,
@@ -66,7 +66,7 @@ function b(e) {
             activityUsers: M,
             streamUsers: D,
             voiceUsers: U
-        } = (t = O.id, n = (0, r.yK)([p.A], () => p.A.getBlockedOrIgnoredIDs()), s = (0, r.bG)([_.A], () => _.A.getUserAffinitiesMap(), []), o = (0, r.yK)([d.Ay, x.default], () => d.Ay.getEmbeddedActivitiesForChannel(t).flatMap(e => Array.from(e.userIds)).map(e => x.default.getUser(e)), [t]), u = l.useMemo(() => (0, h.aw)(o, n), [o, n]), A = l.useMemo(() => (0, m.L)(u, s, "DirectMessageTooltip - activityUsers"), [u, s]), I = (0, r.yK)([g.A, x.default], () => {
+        } = (t = O.id, n = (0, r.yK)([p.A], () => p.A.getBlockedOrIgnoredIDs()), s = (0, r.bG)([_.A], () => _.A.getUserAffinitiesMap(), []), o = (0, r.yK)([c.Ay, x.default], () => c.Ay.getEmbeddedActivitiesForChannel(t).flatMap(e => Array.from(e.userIds)).map(e => x.default.getUser(e)), [t]), u = l.useMemo(() => (0, h.aw)(o, n), [o, n]), A = l.useMemo(() => (0, m.L)(u, s, "DirectMessageTooltip - activityUsers"), [u, s]), I = (0, r.yK)([g.A, x.default], () => {
             let e = g.A.getAllApplicationStreamsForChannel(t).map(e => e.ownerId).map(e => x.default.getUser(e));
             return (0, h.aw)(e, n)
         }, [t, n]), C = l.useMemo(() => (0, h.aw)(I, n), [I, n]), b = l.useMemo(() => (0, m.L)(C, s, "DirectMessageTooltip - activityUsers"), [C, s]), y = l.useMemo(() => b.filter(e => !A.some(t => t.id === e.id)), [b, A]), v = (0, r.yK)([E.Ay], () => {
@@ -83,15 +83,15 @@ function b(e) {
             activityUsers: A
         }),
         G = (0, i.jsx)(T, {
-            icon: c.HKD,
+            icon: d.HKD,
             users: U
         }),
         P = (0, i.jsx)(T, {
-            icon: c.Fzq,
+            icon: d.Fzq,
             users: D
         }),
         k = (0, i.jsx)(T, {
-            icon: c.k9F,
+            icon: d.k9F,
             users: M
         }),
         {

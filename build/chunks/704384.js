@@ -14,8 +14,8 @@ function r(e) {
         className: n,
         children: r,
         width: o,
-        ...c
-    } = e, d = s.Ay.getVideoComponent();
+        ...d
+    } = e, c = s.Ay.getVideoComponent();
     return (0, i.jsx)("div", {
         style: {
             width: o
@@ -28,9 +28,9 @@ function r(e) {
             },
             children: [(0, i.jsx)(l.Ay, {
                 className: n,
-                videoComponent: d,
+                videoComponent: c,
                 width: o,
-                ...c
+                ...d
             }), r]
         })
     })

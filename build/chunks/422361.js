@@ -8,8 +8,8 @@ var i = n(627968),
     a = n.n(s),
     r = n(311907),
     o = n(451988),
-    c = n(990078),
-    d = n(397927),
+    d = n(990078),
+    c = n(397927),
     u = n(367513),
     h = n(442433),
     A = n(676002),
@@ -252,10 +252,10 @@ class en extends W.Ay {
             forceShowButtons: n,
             isSuggestedSection: l
         } = this.props;
-        if (!t) return (0, i.jsx)(c.m, {
+        if (!t) return (0, i.jsx)(d.m, {
             asContainer: !0,
             text: ee.intl.string(ee.t.ZXxLQg),
-            children: (0, i.jsx)(d.DUT, {
+            children: (0, i.jsx)(c.DUT, {
                 className: a()(et.Xs, n ? et.Tf : null),
                 onClick: () => {
                     u.A.updateChatOpen(e.id, !0), (0, D.iN)(e.id, l ? {
@@ -263,7 +263,7 @@ class en extends W.Ay {
                     } : void 0)
                 },
                 "aria-label": ee.intl.string(ee.t.ZXxLQg),
-                children: (0, i.jsx)(d.oyn, {
+                children: (0, i.jsx)(c.oyn, {
                     size: "xs",
                     color: "currentColor",
                     className: et.gE
@@ -338,14 +338,14 @@ class en extends W.Ay {
             }), (0, i.jsx)("div", {
                 onMouseEnter: this.handleMouseEnter,
                 onMouseLeave: this.handleMouseLeave,
-                children: (0, i.jsx)(d.YNO, {
+                children: (0, i.jsx)(c.YNO, {
                     targetElementRef: this.channelItemRef,
                     position: "right",
                     renderPopout: this.renderPopout,
                     onRequestClose: this.closeGuildVerificationPopout,
                     spacing: 17,
                     shouldShow: O || "history" === this.state.popoutToShow && !(u || h),
-                    children: () => (0, i.jsx)(c.m, {
+                    children: () => (0, i.jsx)(d.m, {
                         text: this.getTooltipText(),
                         children: (0, i.jsxs)(z.Ay, {
                             ref: this.channelItemRef,
@@ -412,8 +412,8 @@ function el(e) {
         isFavoriteCategory: s,
         selected: a,
         collapsed: o,
-        voiceStates: c
-    } = e, d = (0, r.cf)([V.Ay], () => ({
+        voiceStates: d
+    } = e, c = (0, r.cf)([V.Ay], () => ({
         unread: V.Ay.hasUnread(n.id),
         mentionCount: V.Ay.getMentionCount(n.id)
     })), u = (0, r.bG)([H.Ay], () => H.Ay.resolveUnreadSetting(n)), h = (0, r.cf)([P.A, w.A, B.A], () => {
@@ -446,11 +446,11 @@ function el(e) {
     }), {
         enableHighlight: U,
         enableWaveformIcon: G
-    } = (0, p.b)(t.id, "VoiceChannel"), k = null != c && c.length > 0, K = U && k, W = G && k, z = (0, Y.A)({
+    } = (0, p.b)(t.id, "VoiceChannel"), k = null != d && d.length > 0, K = U && k, W = G && k, z = (0, Y.A)({
         channel: n,
         isChannelSelected: a,
         isChannelCollapsed: o,
-        voiceStates: c,
+        voiceStates: d,
         isSubscriptionGated: C,
         needSubscriptionToAccess: N,
         enableConnectedUserLimit: !0,
@@ -464,7 +464,7 @@ function el(e) {
         hasActiveEvent: null != x,
         isSubscriptionGated: C,
         needSubscriptionToAccess: N,
-        ...d,
+        ...c,
         ...h,
         ...e,
         connected: j,

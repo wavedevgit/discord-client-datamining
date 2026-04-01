@@ -1,52 +1,52 @@
 /** chunk id: 300131 params = (module,exports,require) **/
 n.d(t, {
-    A: () => m
+    A: () => g
 });
 var i = n(627968),
-    l = n(64700),
-    a = n(397927),
+    a = n(64700),
+    l = n(397927),
     s = n(793574),
     r = n(688810),
     o = n(975571),
-    d = n(993401),
-    c = n(652215),
+    c = n(993401),
+    d = n(652215),
     u = n(985018);
-let g = o.A.getArticleURL(c.MVz.CUSTOM_PROFILES_WISHLIST);
+let m = o.A.getArticleURL(d.MVz.CUSTOM_PROFILES_WISHLIST);
 
-function m(e) {
+function g(e) {
     let {
         isOwner: t,
         isWishlistPublic: n,
         onToggleVisibility: o
-    } = e, c = l.useRef(null), {
-        analyticsLocations: m
-    } = (0, r.Ay)(s.A.USER_PROFILE_WISHLIST), p = l.useMemo(() => t ? (0, i.jsxs)(a.rXV, {
-        children: [(0, i.jsx)(a.fPC, {
+    } = e, d = a.useRef(null), {
+        analyticsLocations: g
+    } = (0, r.Ay)(s.A.USER_PROFILE_WISHLIST), p = a.useMemo(() => t ? (0, i.jsxs)(l.rXV, {
+        children: [(0, i.jsx)(l.fPC, {
             id: "wishlist-privacy-setting",
             label: u.intl.string(u.t.b2nFyA),
             subtext: u.intl.string(u.t.dw58pE),
             checked: n,
             action: o
-        }), (0, i.jsx)(a.bXX, {}), (0, i.jsx)(a.Drp, {
+        }), (0, i.jsx)(l.bXX, {}), (0, i.jsx)(l.Drp, {
             id: "wishlist-privacy-setting2",
             label: u.intl.string(u.t.hvVgAZ),
-            icon: a.I9m,
+            icon: l.I9m,
             trailingIndicator: {
                 type: "icon",
-                icon: a.I9m
+                icon: l.I9m
             },
-            action: () => window.open(g)
+            action: () => window.open(m)
         })]
     }) : null, [t, n, o]);
     return null == p ? null : (0, i.jsx)(r.f5, {
-        value: m,
-        children: (0, i.jsx)(a.YNO, {
-            targetElementRef: c,
+        value: g,
+        children: (0, i.jsx)(l.YNO, {
+            targetElementRef: d,
             renderPopout: e => {
                 let {
                     closePopout: t
                 } = e;
-                return (0, i.jsx)(a.W1t, {
+                return (0, i.jsx)(l.W1t, {
                     "data-menu-migrated": !0,
                     navId: "wishlist-overflow-menu",
                     onSelect: void 0,
@@ -55,9 +55,9 @@ function m(e) {
                     children: p
                 })
             },
-            children: e => (0, i.jsx)(d.q3, {
-                buttonRef: c,
-                icon: a.jNK,
+            children: e => (0, i.jsx)(c.q3, {
+                buttonRef: d,
+                icon: l.jNK,
                 tooltipText: u.intl.string(u.t["UKOtz+"]),
                 action: "PRESS_OPTIONS",
                 ...e

@@ -1,6 +1,6 @@
 /** chunk id: 195007 params = (module,exports,require) **/
 n.d(t, {
-    A: () => d
+    A: () => c
 });
 var i = n(627968);
 n(64700);
@@ -9,26 +9,26 @@ var l = n(311907),
     a = n(588224),
     r = n(607567),
     o = n(985018),
-    c = n(612209);
+    d = n(612209);
 
-function d(e) {
+function c(e) {
     let {
         channel: t
     } = e, n = (0, l.bG)([r.Ay], () => r.Ay.getVoiceStatesForChannel(t));
     return (0, i.jsxs)("div", {
-        className: c.zr,
+        className: d.zr,
         children: [(0, i.jsx)(s.Text, {
             variant: "text-xs/bold",
-            className: c.wx,
+            className: d.wx,
             children: o.intl.format(o.t.e95u3C, {
                 count: n.length
             })
         }), (0, i.jsx)(s.HOs, {
-            className: c.XG,
+            className: d.XG,
             children: (0, i.jsx)(a.A, {
                 allowDragging: !1,
                 allowPreviews: !1,
-                className: c.Xk,
+                className: d.Xk,
                 channel: t,
                 voiceStates: n,
                 collapsed: !1

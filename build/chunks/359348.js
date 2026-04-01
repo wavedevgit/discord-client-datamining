@@ -8,8 +8,8 @@ var i = n(627968),
     a = n(342494),
     r = n(397927),
     o = n(442433),
-    c = n(688810),
-    d = n(384059),
+    d = n(688810),
+    c = n(384059),
     u = n(42473),
     h = n(186111),
     A = n(532624),
@@ -36,7 +36,7 @@ let N = e => {
         let {
             keybindString: t,
             targetElementRef: n
-        } = e, [s, o] = l.useState(!1), c = l.useCallback(() => o(!1), []);
+        } = e, [s, o] = l.useState(!1), d = l.useCallback(() => o(!1), []);
         return (0, i.jsx)(a.AM, {
             shouldShow: s,
             targetElementRef: n,
@@ -62,14 +62,14 @@ let N = e => {
             caretConfig: {
                 align: "center"
             },
-            onRequestClose: c
+            onRequestClose: d
         })
     },
     T = () => {
         let e = l.useRef(null),
             {
                 parentAnalyticsLocation: t
-            } = (0, c.Ay)(),
+            } = (0, d.Ay)(),
             n = (0, s.bG)([h.A], () => h.A.hasLayers()),
             a = (0, g.Et)(),
             o = (0, s.bG)([m.A], () => m.A.getIsAtMaxSaveClipOperations()),
@@ -87,7 +87,7 @@ let N = e => {
                     hotkey: _.dI(E?.shortcut, !0)
                 }) : x.intl.string(x.t.s52pju),
                 onClick: () => {
-                    (0, p.l0)(), (0, d.X)(t, d.O.CLIP)
+                    (0, p.l0)(), (0, c.X)(t, c.O.CLIP)
                 },
                 onContextMenu: C,
                 icon: r.xgA

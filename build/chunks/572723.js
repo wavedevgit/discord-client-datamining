@@ -14,8 +14,8 @@ var i = n(627968),
     m = n(565150),
     h = n(521502),
     p = n(851023),
-    f = n(349688),
-    x = n(914905),
+    x = n(349688),
+    f = n(914905),
     v = n(176634),
     g = n(101555),
     b = n(386976),
@@ -58,19 +58,19 @@ function L(e) {
             },
             rejectWithError: !0
         }).then(e => {
-            if (null != e.body && "bdc9fbb279009583712792df3b322c6a36c8f788" !== e.body.hash) {
-                let e = new Date("1775005320022"),
+            if (null != e.body && "0876c2ccecd49a95847b0a21e0df79d11a79e6f6" !== e.body.hash) {
+                let e = new Date("1775015522690"),
                     t = new Date,
                     n = (0, S.Tf)(t, e);
                 n.hours > 6 && ep(n.hours)
             }
         })
     }, []);
-    let ef = (0, r.bG)([_.default], () => {
+    let ex = (0, r.bG)([_.default], () => {
             let e = _.default.getCurrentUser();
             return e?.isStaff() || e?.isStaffPersonal()
         }),
-        ex = (0, r.bG)([h.A], () => h.A.getCurrentBuildOverride().overrides?.discord_web),
+        ef = (0, r.bG)([h.A], () => h.A.getCurrentBuildOverride().overrides?.discord_web),
         {
             overridesInfo: ev
         } = (0, j.hI)(),
@@ -105,7 +105,7 @@ function L(e) {
                 priority: D,
                 feature: e,
                 url: M,
-                buildOverride: ex?.id ?? null,
+                buildOverride: ef?.id ?? null,
                 experimentOverrides: eb
             }, !0 === F ? {
                 overridePlatformInformation: F,
@@ -118,7 +118,7 @@ function L(e) {
             } : {
                 overridePlatformInformation: F
             }, t).catch(() => em(!0));
-        ed(!1), null != a && a.ok ? (ef && window.open(a.body.permalink_url, "_blank"), L(), (0, d.mMO)(async () => {
+        ed(!1), null != a && a.ok ? (ex && window.open(a.body.permalink_url, "_blank"), L(), (0, d.mMO)(async () => {
             let {
                 default: e
             } = await n.e("71256").then(n.bind(n, 369323));
@@ -132,8 +132,8 @@ function L(e) {
         async function e() {
             H(await (0, k.xt)())
         }
-        ef && e()
-    }, [ef]), a.useEffect(() => {
+        ex && e()
+    }, [ex]), a.useEffect(() => {
         W.length > 0 && N.current?.scrollIntoView({
             behavior: "smooth",
             block: "end"
@@ -163,7 +163,7 @@ function L(e) {
             autoFocus: !1
         }, {
             variant: "primary",
-            text: ef ? "Submit and Open Report" : "Submit Report",
+            text: ex ? "Submit and Open Report" : "Submit Report",
             loading: eu,
             onClick: ej,
             autoFocus: !1
@@ -172,7 +172,7 @@ function L(e) {
         children: (0, i.jsxs)("div", {
             children: [(0, i.jsxs)(d.BJc, {
                 gap: 8,
-                children: [null != ex && (0, i.jsxs)(d.wx6, {
+                children: [null != ef && (0, i.jsxs)(d.wx6, {
                     type: "critical",
                     children: [(0, i.jsx)(d.Heading, {
                         variant: "heading-md/medium",
@@ -181,11 +181,11 @@ function L(e) {
                         variant: "text-sm/normal",
                         children: E.intl.format(E.t["yY60+7"], {
                             buildOverrideHook: () => (0, i.jsx)("b", {
-                                children: ex?.id
+                                children: ef?.id
                             })
                         })
                     })]
-                }), null == ex && null != eh && (0, i.jsxs)(d.wx6, {
+                }), null == ef && null != eh && (0, i.jsxs)(d.wx6, {
                     type: "critical",
                     children: [(0, i.jsx)(d.Heading, {
                         variant: "heading-md/medium",
@@ -196,7 +196,7 @@ function L(e) {
                         variant: "text-sm/normal",
                         children: E.intl.string(E.t.x18RUs)
                     })]
-                }), ef && Object.keys(eb).length > 0 && (0, i.jsxs)(d.wx6, {
+                }), ex && Object.keys(eb).length > 0 && (0, i.jsxs)(d.wx6, {
                     type: "warning",
                     children: [(0, i.jsx)(d.Heading, {
                         variant: "heading-md/medium",
@@ -229,7 +229,7 @@ function L(e) {
                     placeholder: "What did you expect to see?",
                     value: I,
                     onChange: R,
-                    description: ef ? "You can add additional information/media on the ticket after submitting" : void 0,
+                    description: ex ? "You can add additional information/media on the ticket after submitting" : void 0,
                     autosize: !0
                 }), (0, i.jsx)(o.Te, {
                     label: E.intl.string(E.t.xMXLda),
@@ -273,7 +273,7 @@ function L(e) {
                     maxVisibleItems: 4,
                     closeOnSelect: !0,
                     "data-migration-pending": !0
-                }), ef && (0, i.jsx)(d.ZiE, {
+                }), ex && (0, i.jsx)(d.ZiE, {
                     selectionMode: "single",
                     label: E.intl.string(E.t["77VVd8"]),
                     value: K,
@@ -371,8 +371,8 @@ function L(e) {
                         children: W.length > 0 && W.map(e => (0, i.jsxs)("div", {
                             className: A.oh,
                             children: [(0, i.jsxs)("div", {
-                                children: [(0, i.jsx)(x.J, {
-                                    size: f.L.SMALL,
+                                children: [(0, i.jsx)(f.J, {
+                                    size: x.L.SMALL,
                                     upload: e
                                 }), (0, i.jsx)("div", {
                                     className: A.eA,

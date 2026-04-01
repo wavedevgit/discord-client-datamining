@@ -8,8 +8,8 @@ var i = n(627968),
     a = n(158954),
     r = n(421380),
     o = n(397927),
-    c = n(793574),
-    d = n(404374),
+    d = n(793574),
+    c = n(404374),
     u = n(725807),
     h = n(927578),
     A = n(226017),
@@ -69,7 +69,7 @@ function I() {
                 default: e
             } = await n.e("159").then(n.bind(n, 530951));
             return t => (0, i.jsx)(e, {
-                source: c.A.FOR_LATER_POPOUT,
+                source: d.A.FOR_LATER_POPOUT,
                 ...t
             })
         }), []),
@@ -81,7 +81,7 @@ function I() {
         className: p.Zj,
         children: [(0, i.jsx)(s.NitroWheelIcon, {
             size: "md",
-            color: d.k0.PREMIUM_TIER_2
+            color: c.k0.PREMIUM_TIER_2
         }), (0, i.jsx)(a.EYj, {
             variant: "text-xs/medium",
             color: "text-strong",

@@ -9,8 +9,8 @@ var i = n(627968),
     a = n.n(s),
     r = n(311907),
     o = n(397927),
-    c = n(854627),
-    d = n(560138),
+    d = n(854627),
+    c = n(560138),
     u = n(778712),
     h = n(985018),
     A = n(375722);
@@ -20,9 +20,9 @@ function _(e) {
         smallerText: t,
         className: n,
         textColor: s,
-        isApplicationHome: c,
+        isApplicationHome: d,
         enablePremiumBrandRefresh: _
-    } = e, g = (0, r.bG)([d.A], () => d.A.affinities.slice(0, 3).reverse()), p = g.map((e, t) => (0, i.jsx)(m, {
+    } = e, g = (0, r.bG)([c.A], () => c.A.affinities.slice(0, 3).reverse()), p = g.map((e, t) => (0, i.jsx)(m, {
         affinity: e,
         applyMask: t !== g.length - 1,
         size: _ ? u._3.SIZE_24 : u._3.SIZE_32
@@ -36,7 +36,7 @@ function _(e) {
     }) : "", [g]);
     return 0 === g.length ? null : (0, i.jsxs)("div", {
         className: a()(_ ? A.bD : A.kL, n, {
-            [A.gr]: !_ && c
+            [A.gr]: !_ && d
         }),
         children: [(0, i.jsx)("div", {
             className: A.zc,
@@ -48,8 +48,8 @@ function _(e) {
                     variant: "text-sm/medium",
                     color: s,
                     children: x
-                }) : t || c ? (0, i.jsx)(o.Text, {
-                    variant: c ? "text-sm/normal" : "text-lg/medium",
+                }) : t || d ? (0, i.jsx)(o.Text, {
+                    variant: d ? "text-sm/normal" : "text-lg/medium",
                     color: s,
                     children: x
                 }) : (0, i.jsx)(o.Heading, {
@@ -70,7 +70,7 @@ function m(e) {
     } = e, {
         avatarSrc: s,
         eventHandlers: r
-    } = (0, c.A)({
+    } = (0, d.A)({
         userId: t?.id,
         size: l,
         animateOnHover: !0

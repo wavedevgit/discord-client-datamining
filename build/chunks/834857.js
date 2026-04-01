@@ -1,6 +1,6 @@
 /** chunk id: 834857 params = (module,exports,require) **/
 n.d(t, {
-    A: () => d
+    A: () => c
 });
 var i = n(627968);
 n(64700);
@@ -9,13 +9,13 @@ var l = n(397927),
     a = n(520006),
     r = n(576705),
     o = n(652215),
-    c = n(985018);
+    d = n(985018);
 
-function d(e, t, n, d) {
+function c(e, t, n, c) {
     let u = {
             streamUserId: n,
             channel: e,
-            applicationId: d,
+            applicationId: c,
             appContext: (0, s.Us)()
         },
         h = () => {
@@ -25,9 +25,9 @@ function d(e, t, n, d) {
                 ...u
             })
         };
-    return null != d ? (0, i.jsx)(l.Drp, {
+    return null != c ? (0, i.jsx)(l.Drp, {
         id: "invite-to-stream",
-        label: c.intl.string(c.t["OzOM/q"]),
+        label: d.intl.string(d.t["OzOM/q"]),
         action: h,
         icon: l.DpX,
         leadingAccessory: {
@@ -36,7 +36,7 @@ function d(e, t, n, d) {
         }
     }) : null != t && null != e && r.A.can(o.xBc.CREATE_INSTANT_INVITE, e) ? (0, i.jsx)(l.Drp, {
         id: "invite-friends",
-        label: c.intl.string(c.t["EE+P0H"]),
+        label: d.intl.string(d.t["EE+P0H"]),
         action: h,
         icon: l.Rvf,
         leadingAccessory: {

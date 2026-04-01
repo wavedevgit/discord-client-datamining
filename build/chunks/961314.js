@@ -9,8 +9,8 @@ var l = n(397927),
     a = n(722260),
     r = n(563312),
     o = n(974930),
-    c = n(103355),
-    d = n(985018),
+    d = n(103355),
+    c = n(985018),
     u = n(393802);
 
 function h(e) {
@@ -23,10 +23,10 @@ function h(e) {
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(s.Ay.Divider, {
             className: u.yF
-        }), (0, i.jsx)(c.L, {
+        }), (0, i.jsx)(d.L, {
             startTime: h.startTime.toISOString(),
             status: _ ?? t.status,
-            liveText: d.intl.string(d.t.kM6e4G),
+            liveText: c.intl.string(c.t.kM6e4G),
             className: u.aF,
             textVariant: "text-md/semibold",
             eventType: t.entity_type,

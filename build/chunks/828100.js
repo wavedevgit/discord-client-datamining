@@ -8,8 +8,8 @@ var i = n(627968),
     a = n.n(s),
     r = n(837381),
     o = n(884362),
-    c = n(311907),
-    d = n(52133),
+    d = n(311907),
+    c = n(52133),
     u = n(397927),
     h = n(951001),
     A = n(775602),
@@ -201,7 +201,7 @@ class G extends l.Component {
         null != e && null != t && t.indexOf(e) >= 0 && this.scrollToChannel(e), this.reportAnalytics()
     }
     shouldComponentUpdate(e) {
-        return !(0, d.A)(this.props, e, ["children"])
+        return !(0, c.A)(this.props, e, ["children"])
     }
     componentDidUpdate(e) {
         let {
@@ -239,12 +239,12 @@ class G extends l.Component {
             a = s > t.length ? t.slice(0, s + 1) : t,
             r = a.map(e => null != n[e] ? n[e].getRecipientId() : null),
             o = t.some(e => (0, f.A)(e)),
-            c = {
+            d = {
                 num_users_visible: a.length,
                 num_users_visible_with_mobile_indicator: r.filter(e => null != e && j.A.isMobileOnline(e)).length
             };
         this.hasReportedAnalytics = !0, m.Ay.trackWithMetadata(L.HAw.DM_LIST_VIEWED, {
-            ...c,
+            ...d,
             ...(0, p.F)(),
             visible_user_ids: r.filter(e => null != e),
             changelog_dm_visible: o
@@ -372,8 +372,8 @@ let P = e => {
         version: n,
         theme: s,
         children: a,
-        listScrollerRef: d
-    } = e, h = l.Children.count(a), m = v.A.getMutablePrivateChannels(), p = (0, S.uX)(m), f = (0, c.yK)([R.default, T.A, b.A], () => {
+        listScrollerRef: c
+    } = e, h = l.Children.count(a), m = v.A.getMutablePrivateChannels(), p = (0, S.uX)(m), f = (0, d.yK)([R.default, T.A, b.A], () => {
         let e = R.default.getPrivateChannelIds();
         return (0, S.eh)(e, [T.A, b.A])
     });
@@ -383,10 +383,10 @@ let P = e => {
     } = (0, g.Ay)(_.A.CONTACTS_LIST), N = (0, y.NC)(), {
         keyboardModeEnabled: j,
         version: O
-    } = (0, c.cf)([A.A, v.A], () => ({
+    } = (0, d.cf)([A.A, v.A], () => ({
         keyboardModeEnabled: A.A.keyboardModeEnabled,
         version: null != n ? `${n}:${v.A.getPrivateChannelsVersion()}` : v.A.getPrivateChannelsVersion()
-    })), L = l.useRef(null), M = d ?? L, D = l.useCallback(e => {
+    })), L = l.useRef(null), M = c ?? L, D = l.useCallback(e => {
         let t = M.current,
             n = document.querySelector(e);
         null != t && null != n && t.scrollIntoViewNode({

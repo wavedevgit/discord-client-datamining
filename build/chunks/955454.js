@@ -8,8 +8,8 @@ var i = n(627968),
     a = n.n(s),
     r = n(311907),
     o = n(73153),
-    c = n(334738),
-    d = n(835369),
+    d = n(334738),
+    c = n(835369),
     u = n(218152),
     h = n(970278),
     A = n(747926),
@@ -40,7 +40,7 @@ function E(e) {
     }, []);
     return l.useEffect(() => {
         null == n || !t.isFullyLoaded || t.hasError || t.collapsed || 0 !== E.length || o.h.wait(() => {
-            (0, c.ack)(t.channelId, {
+            (0, d.ack)(t.channelId, {
                 section: p.JJy.INBOX,
                 object: p.ZSU.ACK_INBOX_FORUM_NO_POSTS,
                 objectType: p.AnalyticsObjectTypes.ACK_AUTOMATIC
@@ -50,7 +50,7 @@ function E(e) {
         className: x.k,
         children: E.map(e => (0, i.jsx)(u.Cp, {
             channel: n,
-            children: (0, i.jsx)(d.Ay, {
+            children: (0, i.jsx)(c.Ay, {
                 className: x.u,
                 threadId: e.id,
                 goToThread: I

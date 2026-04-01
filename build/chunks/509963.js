@@ -9,8 +9,8 @@ var i = n(627968),
     a = n.n(s),
     r = n(615300),
     o = n(311907),
-    c = n(827734),
-    d = n(73939),
+    d = n(827734),
+    c = n(73939),
     u = n(990078),
     h = n(397927),
     A = n(587895),
@@ -89,15 +89,15 @@ class T extends l.PureComponent {
         } = n;
         if (null == s || null == a || null == l) return null;
         let o = e[e.length - 1] / t * 1e3,
-            c = 0 !== o ? Math.max(1, (a - s) / o) : null,
-            d = N[r],
-            u = null != d ? Object.keys(d) : [],
+            d = 0 !== o ? Math.max(1, (a - s) / o) : null,
+            c = N[r],
+            u = null != c ? Object.keys(c) : [],
             {
                 unit: h,
                 time: A
-            } = (0, _.$l)(null != c ? c / 60 : null, u);
-        if (null != d && null != h) {
-            let e = d[h];
+            } = (0, _.$l)(null != d ? d / 60 : null, u);
+        if (null != c && null != h) {
+            let e = c[h];
             return null != e ? e(i.name, A) : null
         }
         return null
@@ -183,7 +183,7 @@ class S extends l.PureComponent {
                 children: (0, i.jsx)("div", {
                     children: (0, i.jsx)(h.a3E, {
                         percent: e,
-                        colorOverride: t ? c.A.unsafe_rawColors.PRIMARY_500.css : null,
+                        colorOverride: t ? d.A.unsafe_rawColors.PRIMARY_500.css : null,
                         children: (0, i.jsx)(h.s3U, {
                             size: "md",
                             color: "currentColor",
@@ -223,7 +223,7 @@ let y = o.Ay.connectStores([p.A, g.A, A.A], () => {
         determineOwnVisibility: t = !0,
         ...n
     } = e;
-    return t ? (0, i.jsx)(d.F, {
+    return t ? (0, i.jsx)(c.F, {
         component: l.Fragment,
         children: n.percent > 0 && n.percent < 100 ? (0, i.jsx)(S, {
             ...n

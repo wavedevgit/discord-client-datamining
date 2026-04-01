@@ -12,9 +12,9 @@ var i = t(627968),
     c = t(562153),
     u = t(183555),
     _ = t(672385),
-    A = t(950191),
-    p = t(249790),
-    x = t(946356),
+    p = t(950191),
+    x = t(249790),
+    A = t(946356),
     f = t(254828),
     m = t(783123),
     g = t(652215),
@@ -30,11 +30,11 @@ function j(e) {
         messageId: v,
         roleId: C,
         transitionState: N,
-        onHide: E,
-        sourceAnalyticsLocations: y = []
+        onHide: y,
+        sourceAnalyticsLocations: E = []
     } = e, T = t === g.ME ? void 0 : t, L = (0, a.bG)([d.A], () => d.A.isBlocked(n.id)), {
         analyticsLocations: P
-    } = (0, l.Ay)([...y, L ? r.A.BLOCKED_PROFILE_MODAL : r.A.IGNORED_PROFILE_MODAL]), O = (0, u.pb)({
+    } = (0, l.Ay)([...E, L ? r.A.BLOCKED_PROFILE_MODAL : r.A.IGNORED_PROFILE_MODAL]), O = (0, u.pb)({
         layout: "MODAL_V2",
         userId: n.id,
         guildId: T,
@@ -47,7 +47,7 @@ function j(e) {
     }, {
         icon: s.yr3,
         description: h.intl.string(L ? h.t.QxrDY1 : h.t.W6fjkS)
-    }], R = (0, A.Ay)(n.id, T), k = c.Ay.getName(R?.guildId, j, n), B = h.intl.formatToPlainString(h.t.KRe1Fk, {
+    }], R = (0, p.Ay)(n.id, T), k = c.Ay.getName(R?.guildId, j, n), M = h.intl.formatToPlainString(h.t.KRe1Fk, {
         name: k
     });
     return (0, i.jsx)(l.f5, {
@@ -59,9 +59,9 @@ function j(e) {
                 "data-migration-pending": !0,
                 transitionState: N,
                 className: b.zr,
-                "aria-label": B,
+                "aria-label": M,
                 parentComponent: "RestrictedUserProfileModalV2",
-                children: (0, i.jsxs)(x.A, {
+                children: (0, i.jsxs)(A.A, {
                     user: n,
                     displayProfile: R,
                     themeType: I.d.MODAL_V2,
@@ -69,7 +69,7 @@ function j(e) {
                         className: b.Tp
                     }), (0, i.jsxs)("div", {
                         className: b.Qs,
-                        children: [(0, i.jsx)(p.A, {
+                        children: [(0, i.jsx)(x.A, {
                             user: n,
                             guildId: T
                         }), (0, i.jsxs)("div", {
@@ -105,7 +105,7 @@ function j(e) {
                                 size: "md",
                                 isBlocked: L,
                                 onClick: () => {
-                                    E(), (0, _.Wn)({
+                                    y(), (0, _.Wn)({
                                         action: L ? "VIEW_BLOCKED_PROFILE" : "VIEW_IGNORED_PROFILE",
                                         analyticsLocations: P,
                                         ...O
@@ -114,7 +114,7 @@ function j(e) {
                             }), (0, i.jsx)(f.A, {
                                 userId: n.id,
                                 onClick: () => {
-                                    E(), (0, _.Wn)({
+                                    y(), (0, _.Wn)({
                                         action: "DONT_SHOW_AGAIN_IGNORED_PROFILE",
                                         analyticsLocations: P,
                                         ...O

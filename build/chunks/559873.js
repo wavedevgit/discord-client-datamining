@@ -8,8 +8,8 @@ var i = n(627968),
     a = n(990078),
     r = n(397927),
     o = n(73153),
-    c = n(334738),
-    d = n(461678),
+    d = n(334738),
+    c = n(461678),
     u = n(880457),
     h = n(164684),
     A = n(85109),
@@ -35,8 +35,8 @@ function N(e) {
         onClick: n,
         message: s,
         Icon: o,
-        interactionType: c
-    } = e, [d, u] = (0, l.useState)(!1), h = (0, m.op)();
+        interactionType: d
+    } = e, [c, u] = (0, l.useState)(!1), h = (0, m.op)();
     return (0, i.jsx)(a.m, {
         text: t,
         position: "top",
@@ -49,12 +49,12 @@ function N(e) {
             onClick: e => {
                 (0, m.Ml)({
                     message: s,
-                    interactionType: c,
+                    interactionType: d,
                     viewId: h
                 }), e.stopPropagation(), n(s)
             },
             children: (0, i.jsx)(o, {
-                size: d ? "sm" : "xs",
+                size: c ? "sm" : "xs",
                 className: I.gE
             })
         })
@@ -67,8 +67,8 @@ function T(e) {
         message: n,
         label: s,
         Icon: o,
-        Menu: c,
-        interactionType: d,
+        Menu: d,
+        interactionType: c,
         actionType: u
     } = e, h = (0, m.op)(), [A, _] = (0, l.useState)(!1), [g, f] = (0, l.useState)(!1), x = (0, l.useRef)(null), {
         openMenu: E,
@@ -87,7 +87,7 @@ function T(e) {
         renderPopout: e => (0, i.jsx)(r.lGe, {
             onClick: e => e.stopPropagation(),
             returnRef: x,
-            children: (0, i.jsx)(c, {
+            children: (0, i.jsx)(d, {
                 "data-menu-migrated": !0,
                 renderPopoutProps: e,
                 channel: t,
@@ -108,7 +108,7 @@ function T(e) {
                     let t;
                     (0, m.Ml)({
                         message: n,
-                        interactionType: d,
+                        interactionType: c,
                         viewId: h
                     }), e.stopPropagation(), f(t = !g), t ? E(n.id, u) : C(n.id, u)
                 },
@@ -133,7 +133,7 @@ let S = {
                 type: "NOTIFICATIONS_INBOX_ITEM_ACK",
                 messageId: e.id,
                 channelId: e.channel_id
-            }), c.ack(e.channel_id, {
+            }), d.ack(e.channel_id, {
                 object: x.ZSU.MARK_MESSAGE_AS_READ_BUTTON,
                 objectType: x.AnalyticsObjectTypes.ACK_MANUAL
             }, !0, void 0, e.id)
@@ -210,7 +210,7 @@ let S = {
                 channel: t,
                 navId: "thread-context",
                 label: E.intl.string(E.t["1NBjqb"])
-            }) : (0, i.jsx)(d.A, {
+            }) : (0, i.jsx)(c.A, {
                 ...n,
                 channel: t,
                 navId: "channel-context",

@@ -8,8 +8,8 @@ var i = n(627968),
     a = n(265872),
     r = n(688810),
     o = n(384059),
-    c = n(421773),
-    d = n(729081),
+    d = n(421773),
+    c = n(729081),
     u = n(709562),
     h = n(376086),
     A = n(985018);
@@ -27,7 +27,7 @@ function _(e) {
         setIsHovered: x,
         onMouseEnter: E,
         onMouseLeave: I
-    } = (0, c.A)(200, 300), {
+    } = (0, d.A)(200, 300), {
         Component: C,
         play: N,
         events: {
@@ -56,7 +56,7 @@ function _(e) {
             let {
                 closePopout: n
             } = e;
-            return (0, i.jsx)(d.A, {
+            return (0, i.jsx)(c.A, {
                 channel: t,
                 closePopout: n,
                 isHovered: f,

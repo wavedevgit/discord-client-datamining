@@ -10,8 +10,8 @@ var l = n(284009),
     a = n(311907),
     r = n(397927),
     o = n(298990),
-    c = n(688810),
-    d = n(384059),
+    d = n(688810),
+    c = n(384059),
     u = n(267102),
     h = n(71393),
     A = n(375492),
@@ -27,12 +27,12 @@ function f(e) {
         streamUserId: s,
         applicationId: a,
         appContext: o,
-        exitFullScreen: c,
-        analyticsLocation: d,
+        exitFullScreen: d,
+        analyticsLocation: c,
         guildScheduledEvent: u,
         source: h
     } = e;
-    c?.(), (0, r.mMO)(async () => {
+    d?.(), (0, r.mMO)(async () => {
         let {
             default: e
         } = await Promise.all([n.e("43600"), n.e("28136"), n.e("93662")]).then(n.bind(n, 234355));
@@ -42,7 +42,7 @@ function f(e) {
             channel: l,
             streamUserId: s,
             applicationId: a,
-            analyticsLocation: d,
+            analyticsLocation: c,
             source: h,
             guildScheduledEvent: u
         })
@@ -71,10 +71,10 @@ function x(e) {
         ...R
     } = e, O = (0, u.Us)(), {
         parentAnalyticsLocation: L
-    } = (0, c.Ay)(), M = l?.getGuildId(), D = (0, a.bG)([h.A], () => null != M ? h.A.getGuild(M) : null, [M]), U = (0, a.bG)([A.A], () => null != t ? A.A.getApplicationActivity(t) : void 0), G = null == t || N ? r.DpX : r.dCJ, P = p.intl.string(p.t["6F9ivu"]);
+    } = (0, d.Ay)(), M = l?.getGuildId(), D = (0, a.bG)([h.A], () => null != M ? h.A.getGuild(M) : null, [M]), U = (0, a.bG)([A.A], () => null != t ? A.A.getApplicationActivity(t) : void 0), G = null == t || N ? r.DpX : r.dCJ, P = p.intl.string(p.t["6F9ivu"]);
     return (null != t && (P = p.intl.string(p.t["OzOM/q"])), null != n && (P = p.intl.string(p.t["6VQaqd"])), null != U && T) ? (0, i.jsx)(m.A, {
         onClick: () => {
-            null != L && (0, d.X)(L, d.O.INVITE), o.qf(U, !1, O)
+            null != L && (0, c.X)(L, c.O.INVITE), o.qf(U, !1, O)
         },
         iconComponent: G,
         label: P,
@@ -85,7 +85,7 @@ function x(e) {
         color: j ?? void 0
     }) : null != D && null != l && _.A.can(g.xBc.CREATE_INSTANT_INVITE, l) ? (0, i.jsx)(m.A, {
         onClick: () => {
-            s()(null != D, "guild cannot be null"), s()(null != l, "channel cannot be null"), null != L && (0, d.X)(L, d.O.INVITE), f({
+            s()(null != D, "guild cannot be null"), s()(null != l, "channel cannot be null"), null != L && (0, c.X)(L, c.O.INVITE), f({
                 guild: D,
                 channel: l,
                 streamUserId: n?.ownerId,

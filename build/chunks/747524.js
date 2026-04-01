@@ -1,6 +1,6 @@
 /** chunk id: 747524 params = (module,exports,require) **/
 n.d(t, {
-    A: () => c
+    A: () => d
 });
 var i = n(627968);
 n(64700);
@@ -10,17 +10,17 @@ var l = n(397927),
     r = n(985018),
     o = n(589808);
 
-function c(e) {
+function d(e) {
     let {
         context: t,
         analyticsLocations: n,
-        profileFrame: c,
-        handleOpenProfile: d
+        profileFrame: d,
+        handleOpenProfile: c
     } = e, u = (0, i.jsx)("div", {
         className: o.qr,
         children: (0, i.jsx)(l.DUT, {
             onClick: () => {
-                d(), (0, a.Wn)({
+                c(), (0, a.Wn)({
                     action: "PRESS_VIEW_PROFILE",
                     analyticsLocations: n,
                     ...t
@@ -34,10 +34,10 @@ function c(e) {
             })
         })
     });
-    return null != c ? (0, i.jsxs)("div", {
+    return null != d ? (0, i.jsxs)("div", {
         className: o.xQ,
         children: [(0, i.jsx)(s.A, {
-            frame: c
+            frame: d
         }), u]
     }) : u
 }

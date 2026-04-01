@@ -10,8 +10,8 @@ var i = n(627968),
     a = n.n(s),
     r = n(481613),
     o = n.n(r),
-    c = n(837381),
-    d = n(311907),
+    d = n(837381),
+    c = n(311907),
     u = n(397927),
     h = n(73153),
     A = n(964486),
@@ -40,7 +40,7 @@ function b(e) {
         channels: G
     } = M, {
         maybeLoadMore: P
-    } = D, k = (0, d.bG)([_.A], () => _.A.messageGroupSpacing);
+    } = D, k = (0, c.bG)([_.A], () => _.A.messageGroupSpacing);
     t = L, n = M, s = D, l.useLayoutEffect(() => {
         let {
             scrollToChannelIndex: e
@@ -90,9 +90,9 @@ function b(e) {
         Icon: u.K$s,
         header: T.intl.string(T.t["6XMM+D"]),
         tip: o().os?.family === "OS X" ? T.intl.string(T.t.w9uDOW) : T.intl.string(T.t.BiUJC6)
-    }) : (0, i.jsx)(c.hD, {
+    }) : (0, i.jsx)(d.hD, {
         navigator: w,
-        children: (0, i.jsx)(c.PR, {
+        children: (0, i.jsx)(d.PR, {
             children: e => {
                 let {
                     ref: t,

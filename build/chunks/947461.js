@@ -8,8 +8,8 @@ var i = n(627968),
     a = n(192308),
     r = n(990078),
     o = n(397927),
-    c = n(932001),
-    d = n(652793),
+    d = n(932001),
+    c = n(652793),
     u = n(976860),
     h = n(652215),
     A = n(746080),
@@ -22,7 +22,7 @@ let x = l.memo(function(e) {
     let {
         guildId: t,
         selected: x
-    } = e, [E, I] = (0, c.ww)([s.M.GAME_SERVER_HOSTING_NEW_BADGE], t), C = E === s.M.GAME_SERVER_HOSTING_NEW_BADGE, N = l.useCallback(() => {
+    } = e, [E, I] = (0, d.ww)([s.M.GAME_SERVER_HOSTING_NEW_BADGE], t), C = E === s.M.GAME_SERVER_HOSTING_NEW_BADGE, N = l.useCallback(() => {
         I(_.i.USER_DISMISS), (0, u.pX)(h.BVt.CHANNEL(t, A.VV.GAME_SERVERS))
     }, [t, I]), T = l.useCallback(e => {
         e.stopPropagation(), (0, a.openModalLazy)(async () => {
@@ -60,7 +60,7 @@ let x = l.memo(function(e) {
             })
         })]
     });
-    return (0, i.jsx)(d.G, {
+    return (0, i.jsx)(c.G, {
         className: f.Ki,
         id: `game-server-empty-${t}`,
         renderIcon: e => (0, i.jsx)(o._xR, {

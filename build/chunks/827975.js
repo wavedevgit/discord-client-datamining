@@ -9,8 +9,8 @@ var l = n(837381),
     a = n(397927),
     r = n(919638),
     o = n(71393),
-    c = n(900848),
-    d = n(772972),
+    d = n(900848),
+    c = n(772972),
     u = n(818348),
     h = n(985018),
     A = n(557849);
@@ -18,8 +18,8 @@ var l = n(837381),
 function _() {
     let e = (0, s.bG)([r.A, o.A], () => r.A.unavailableGuilds.filter(e => null == o.A.getGuild(e)).length),
         t = (0, l.Vd)("unavailable-guilds-button");
-    return e <= 0 ? null : (0, i.jsx)(c.c, {
-        children: (0, i.jsx)(d.A, {
+    return e <= 0 ? null : (0, i.jsx)(d.c, {
+        children: (0, i.jsx)(c.A, {
             text: h.intl.format(h.t["TnH05/"], {
                 count: e
             }),

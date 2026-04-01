@@ -8,8 +8,8 @@ var i = n(627968),
     a = n.n(s),
     r = n(311907),
     o = n(3026),
-    c = n(990078),
-    d = n(397927),
+    d = n(990078),
+    c = n(397927),
     u = n(367513),
     h = n(442433),
     A = n(676002),
@@ -154,16 +154,16 @@ class Y extends P.Ay {
             locked: t,
             forceShowButtons: n
         } = this.props;
-        if (!t) return (0, i.jsx)(c.m, {
+        if (!t) return (0, i.jsx)(d.m, {
             asContainer: !0,
             text: F.intl.string(F.t.ZXxLQg),
-            children: (0, i.jsx)(d.DUT, {
+            children: (0, i.jsx)(c.DUT, {
                 className: a()(K.Xs, n ? K.Tf : null),
                 onClick: () => {
                     u.A.updateChatOpen(e.id, !0), this.handleClickChat()
                 },
                 "aria-label": F.intl.string(F.t.ZXxLQg),
-                children: (0, i.jsx)(d.oyn, {
+                children: (0, i.jsx)(c.oyn, {
                     size: "xs",
                     color: "currentColor",
                     className: K.gE
@@ -212,14 +212,14 @@ class Y extends P.Ay {
                 [K.r9]: this.isDisabled()
             }),
             "data-dnd-name": e.name,
-            children: [(0, i.jsx)(d.YNO, {
+            children: [(0, i.jsx)(c.YNO, {
                 targetElementRef: this.channelItemRef,
                 position: "right",
                 renderPopout: this.renderPopout,
                 spacing: 17,
                 onRequestClose: this.closeGuildVerificationPopout,
                 shouldShow: C,
-                children: () => (0, i.jsx)(c.m, {
+                children: () => (0, i.jsx)(d.m, {
                     text: this.getTooltipText(),
                     children: (0, i.jsxs)(w.Ay, {
                         ref: this.channelItemRef,
@@ -268,10 +268,10 @@ function q(e) {
         isFavoriteCategory: s,
         collapsed: a,
         voiceStates: o
-    } = e, c = (0, r.cf)([M.Ay], () => ({
+    } = e, d = (0, r.cf)([M.Ay], () => ({
         unread: M.Ay.hasUnread(n.id),
         mentionCount: M.Ay.getMentionCount(n.id)
-    })), d = (0, r.bG)([D.Ay], () => D.Ay.resolveUnreadSetting(n)), u = (0, r.cf)([j.A, O.A, L.A], () => {
+    })), c = (0, r.bG)([D.Ay], () => D.Ay.resolveUnreadSetting(n)), u = (0, r.cf)([j.A, O.A, L.A], () => {
         let e = j.A.getChannel(n.parent_id),
             i = O.A.getCheck(n.guild_id);
         return {
@@ -301,12 +301,12 @@ function q(e) {
         stageInstance: _,
         isSubscriptionGated: g,
         needSubscriptionToAccess: p,
-        ...c,
+        ...d,
         ...u,
         ...e,
         isFavoriteSuggestion: s && !x,
         forceShowButtons: C,
         channelInfo: I,
-        resolvedUnreadSetting: d
+        resolvedUnreadSetting: c
     })
 }

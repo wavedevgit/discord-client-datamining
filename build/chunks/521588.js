@@ -14,15 +14,15 @@ let r = e => {
         right: l = 0,
         bottom: r,
         size: o = 8,
-        alert: c = !1,
-        showBlurpleTreatment: d = !1,
+        alert: d = !1,
+        showBlurpleTreatment: c = !1,
         maskColor: u = 2,
         additionalStyles: h
     } = e;
     return (0, i.jsx)("span", {
         className: s()(a.Om, {
-            [a.xE]: c,
-            [a.nB]: d,
+            [a.xE]: d,
+            [a.nB]: c,
             [a.GS]: 0 === u,
             [a.Pn]: 1 === u,
             [a.HP]: 2 === u,

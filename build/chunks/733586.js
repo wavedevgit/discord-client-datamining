@@ -8,9 +8,9 @@ var i = n(627968),
     a = n.n(s),
     r = n(962125),
     o = n(231259);
-let c = 16 / 9;
+let d = 16 / 9;
 
-function d(e, t) {
+function c(e, t) {
     return Math.max(1, Math.floor((t - e) / (8 + e)) + 1)
 }
 
@@ -50,11 +50,11 @@ function h(e) {
             tileWidth: m
         } = (i = e, l = t, s = n, r = Math.floor(l / 25), a = i > 25 ? u(r, l, e => {
             let t;
-            return d(e, l) * (Math.ceil((s - (t = e / c)) / (8 + t)) + 1) > 25
+            return c(e, l) * (Math.ceil((s - (t = e / d)) / (8 + t)) + 1) > 25
         }) : u(r, l, e => {
             let t;
-            return d(e, l) * (Math.floor((s - (t = e / c)) / (8 + t)) + 1) >= i
-        }) - 1, h = Math.ceil(i / (o = d(a, l))), {
+            return c(e, l) * (Math.floor((s - (t = e / d)) / (8 + t)) + 1) >= i
+        }) - 1, h = Math.ceil(i / (o = c(a, l))), {
             tileWidth: a,
             columns: Math.max(1, o),
             rows: h
@@ -67,7 +67,7 @@ function h(e) {
             rows: A,
             columns: _
         }
-    })(f, x, E), [f, x, E]), S = T + 1, b = S * C + (S - 1) * 8 <= g, y = Math.floor(C / c) + 8, v = Math.max(0, E - y * N) / 2;
+    })(f, x, E), [f, x, E]), S = T + 1, b = S * C + (S - 1) * 8 <= g, y = Math.floor(C / d) + 8, v = Math.max(0, E - y * N) / 2;
     return (0, i.jsx)(r.A, {
         fade: !0,
         className: t,

@@ -8,8 +8,8 @@ var i = n(627968),
     a = n(688810),
     r = n(980923),
     o = n(384059),
-    c = n(277342),
-    d = n(709562);
+    d = n(277342),
+    c = n(709562);
 
 function u(e) {
     let {
@@ -24,11 +24,11 @@ function u(e) {
         ...p
     } = e, {
         parentAnalyticsLocation: f
-    } = (0, a.Ay)(), x = t || n || u, E = h ? d.l : d.A, I = (0, r.A)(t, n, u, A), {
+    } = (0, a.Ay)(), x = t || n || u, E = h ? c.l : c.A, I = (0, r.A)(t, n, u, A), {
         events: C,
         play: N,
         Component: T
-    } = (0, c.q)(x), S = n || u ? s.O1p : T;
+    } = (0, d.q)(x), S = n || u ? s.O1p : T;
     return l.useEffect(() => () => N(), [N, x]), (0, i.jsx)(E, {
         iconComponent: S,
         isTrayButton: !0,

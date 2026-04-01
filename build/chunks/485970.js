@@ -1,6 +1,6 @@
 /** chunk id: 485970 params = (module,exports,require) **/
 n.d(t, {
-    A: () => d
+    A: () => c
 });
 var i = n(64700),
     l = n(311907),
@@ -8,25 +8,25 @@ var i = n(64700),
     a = n(403362),
     r = n(645619),
     o = n(864310),
-    c = n(568065);
+    d = n(568065);
 
-function d(e, t) {
+function c(e, t) {
     let n = (0, l.bG)([s.A], () => s.A.getGuild(e)),
-        d = (0, l.bG)([r.A], () => r.A.getStateForGuild(e)),
+        c = (0, l.bG)([r.A], () => r.A.getStateForGuild(e)),
         {
             spent: u
         } = (0, o.A)(e),
         h = i.useMemo(() => {
-            if (null == t || t.type !== c.o9.LEVEL || null == d) return [];
-            let e = c.y7[t.skuId];
-            return null == e ? [] : Object.entries(c.wr).filter(t => {
+            if (null == t || t.type !== d.o9.LEVEL || null == c) return [];
+            let e = d.y7[t.skuId];
+            return null == e ? [] : Object.entries(d.wr).filter(t => {
                 let [n, i] = t;
-                return i === e && null != d.unlockedPowerups[n]
+                return i === e && null != c.unlockedPowerups[n]
             }).map(e => {
                 let [t] = e;
-                return d.allPowerups[t]
+                return c.allPowerups[t]
             }).filter(a.Vq)
-        }, [t, d]),
+        }, [t, c]),
         A = h?.reduce((e, t) => e + t.cost, 0);
     return Math.max((n?.premiumSubscriberCount ?? 0) - u + (A ?? 0), 0)
 }

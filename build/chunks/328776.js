@@ -8,8 +8,8 @@ var i = n(627968),
     a = n(397927),
     r = n(287809),
     o = n(562153),
-    c = n(215530),
-    d = n(168015),
+    d = n(215530),
+    c = n(168015),
     u = n(454719),
     h = n(10635),
     A = n(318162),
@@ -19,7 +19,7 @@ var i = n(627968),
 function g(e) {
     let {
         channel: t
-    } = e, [n] = t.recipients, g = (0, s.bG)([r.default], () => r.default.getUser(n)), p = (0, s.bG)([r.default], () => r.default.getCurrentUser()), f = (0, d.A)(), [x, E] = (0, c.A)(n);
+    } = e, [n] = t.recipients, g = (0, s.bG)([r.default], () => r.default.getUser(n)), p = (0, s.bG)([r.default], () => r.default.getCurrentUser()), f = (0, c.A)(), [x, E] = (0, d.A)(n);
     if (l.useEffect(() => {
             (0, u.A)(g ?? n, {
                 type: "sidebar",

@@ -8,8 +8,8 @@ var i = n(627968),
     a = n(73153),
     r = n(964486),
     o = n(203982),
-    c = n(851109),
-    d = n(355741),
+    d = n(851109),
+    c = n(355741),
     u = n(480680),
     h = n(652215),
     A = n(985018),
@@ -25,7 +25,7 @@ function m(e) {
     } = e, {
         isOpen: p,
         setIsOpen: f
-    } = (0, d.A)(), x = l.useCallback(() => {
+    } = (0, c.A)(), x = l.useCallback(() => {
         f(!1)
     }, [f]), E = l.useCallback(() => {
         f(!p)
@@ -38,15 +38,15 @@ function m(e) {
     }), l.useEffect(() => (o._.subscribe(h.jej.TOGGLE_INBOX, E), () => void o._.unsubscribe(h.jej.TOGGLE_INBOX, E)), [E]);
     let {
         entrypoint: I
-    } = (0, c.X8)({
+    } = (0, d.X8)({
         location: "NotificationsInboxPopout"
     });
     return (0, i.jsx)(s.YNO, {
         targetElementRef: _,
         shouldShow: p,
         align: u,
-        animation: I === c.RK.TITLE_BAR_LEFT ? s.YNO.Animation.TRANSLATE : s.YNO.Animation.FADE,
-        animationPosition: I === c.RK.TITLE_BAR_LEFT ? "bottom" : "left",
+        animation: I === d.RK.TITLE_BAR_LEFT ? s.YNO.Animation.TRANSLATE : s.YNO.Animation.FADE,
+        animationPosition: I === d.RK.TITLE_BAR_LEFT ? "bottom" : "left",
         position: n,
         onRequestClose: x,
         spacing: m,

@@ -1,33 +1,33 @@
 /** chunk id: 633098 params = (module,exports,require) **/
 n.d(t, {
-    A: () => E
+    A: () => j
 });
 var i = n(627968),
-    l = n(64700),
-    a = n(503698),
-    s = n.n(a),
+    a = n(64700),
+    l = n(503698),
+    s = n.n(l),
     r = n(382222),
     o = n(311907),
-    d = n(397927),
-    c = n(775602),
+    c = n(397927),
+    d = n(775602),
     u = n(203982),
-    g = n(183555),
-    m = n(289173),
+    m = n(183555),
+    g = n(289173),
     p = n(958805),
     x = n(61881),
     f = n(606758),
-    h = n(518477),
-    _ = n(652215),
+    _ = n(518477),
+    h = n(652215),
     A = n(985018),
     I = n(471138);
-let j = "user-profile-save-reset-toolbar-label";
+let v = "user-profile-save-reset-toolbar-label";
 
-function E(e) {
+function j(e) {
     let {
         className: t
     } = e, {
         trackUserProfileEditSaved: n
-    } = (0, g.NJ)(), [a, E] = l.useState(!1), v = (0, o.yK)([x.A], () => x.A.getSaveablePendingWidgets() ?? []), T = (0, o.yK)([x.A], () => x.A.getChangedWidgets()), b = (0, o.yK)([x.A], () => x.A.getRemovedWidgets()), C = (0, o.bG)([x.A], () => x.A.hasUnsavedChanges()), S = (0, o.bG)([x.A], () => x.A.canSaveChanges()), N = (0, o.bG)([x.A], () => x.A.isSubmitting), y = (0, o.bG)([c.A], () => c.A.useReducedMotion), R = (0, d.pnh)(C, {
+    } = (0, m.NJ)(), [l, j] = a.useState(!1), E = (0, o.yK)([x.A], () => x.A.getSaveablePendingWidgets() ?? []), T = (0, o.yK)([x.A], () => x.A.getChangedWidgets()), N = (0, o.yK)([x.A], () => x.A.getRemovedWidgets()), C = (0, o.bG)([x.A], () => x.A.hasUnsavedChanges()), b = (0, o.bG)([x.A], () => x.A.canSaveChanges()), S = (0, o.bG)([x.A], () => x.A.isSubmitting), y = (0, o.bG)([d.A], () => d.A.useReducedMotion), R = (0, c.pnh)(C, {
         from: {
             opacity: 0,
             y: 80 * !y
@@ -41,24 +41,24 @@ function E(e) {
             y: 80 * !y
         }
     });
-    l.useEffect(() => {
+    a.useEffect(() => {
         let e = null;
 
         function t() {
-            E(!0), e = setTimeout(() => E(!1), 500)
+            j(!0), e = setTimeout(() => j(!1), 500)
         }
-        return u._.subscribe(_.jej.EMPHASIZE_NOTICE, t), () => {
-            u._.unsubscribe(_.jej.EMPHASIZE_NOTICE, t), null !== e && clearTimeout(e)
+        return u._.subscribe(h.jej.EMPHASIZE_NOTICE, t), () => {
+            u._.unsubscribe(h.jej.EMPHASIZE_NOTICE, t), null !== e && clearTimeout(e)
         }
-    }, []), l.useEffect(() => {
-        C && d.ORC.announce(A.intl.string(A.t["0Y/qkL"]))
+    }, []), a.useEffect(() => {
+        C && c.ORC.announce(A.intl.string(A.t["0Y/qkL"]))
     }, [C]);
-    let O = l.useCallback(async () => {
+    let O = a.useCallback(async () => {
             if (x.A.canSaveChanges()) {
                 try {
-                    await p.A.savePendingWidgets(v)
+                    await p.A.savePendingWidgets(E)
                 } catch (e) {
-                    (0, f.XA)(h.jM.WIDGET_SAVE_FAILURE);
+                    (0, f.XA)(_.jM.WIDGET_SAVE_FAILURE);
                     return
                 }
                 for (let e of T) {
@@ -66,15 +66,15 @@ function E(e) {
                         widgetEdited: e.type,
                         isWidgetRemoved: !1
                     };
-                    (0, m.fu)(e) && (t.gameIds = e.games.map(e => e.applicationId), t.tags = e.games.flatMap(e => e.tags ?? []).map(e => e.toString()), t.numCharactersCommentary = e.games.reduce((e, t) => e + (t.comment?.length ?? 0), 0)), n(t)
+                    (0, g.fu)(e) && (t.gameIds = e.games.map(e => e.applicationId), t.tags = e.games.flatMap(e => e.tags ?? []).map(e => e.toString()), t.numCharactersCommentary = e.games.reduce((e, t) => e + (t.comment?.length ?? 0), 0)), n(t)
                 }
-                for (let e of b) n({
+                for (let e of N) n({
                     widgetEdited: e.type,
                     isWidgetRemoved: !0
                 })
             }
-        }, [v, T, b, n]),
-        k = l.useCallback(() => {
+        }, [E, T, N, n]),
+        w = a.useCallback(() => {
             p.A.clearPendingWidgets()
         }, []);
     return R((e, n) => n ? (0, i.jsx)(r.animated.div, {
@@ -82,30 +82,30 @@ function E(e) {
         style: e,
         children: (0, i.jsxs)("footer", {
             className: s()(I.Qs, {
-                [I.hO]: a
+                [I.hO]: l
             }),
-            "aria-labelledby": j,
-            children: [(0, i.jsx)(d.Text, {
-                id: j,
+            "aria-labelledby": v,
+            children: [(0, i.jsx)(c.Text, {
+                id: v,
                 variant: "text-md/medium",
                 color: "text-strong",
                 className: I.iU,
                 children: A.intl.string(A.t["/lQiX/"])
             }), (0, i.jsxs)("div", {
                 className: I.o1,
-                children: [(0, i.jsx)(d.Button, {
+                children: [(0, i.jsx)(c.Button, {
                     size: "sm",
                     variant: "secondary",
                     text: A.intl.string(A.t.yBZMsQ),
-                    onClick: k,
-                    disabled: !C || N
-                }), (0, i.jsx)(d.Button, {
+                    onClick: w,
+                    disabled: !C || S
+                }), (0, i.jsx)(c.Button, {
                     size: "sm",
                     variant: "primary",
                     text: A.intl.string(A.t["R3BPH+"]),
                     onClick: O,
-                    loading: N,
-                    disabled: !S || !C || N
+                    loading: S,
+                    disabled: !b || !C || S
                 })]
             })]
         })

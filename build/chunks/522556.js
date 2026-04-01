@@ -8,8 +8,8 @@ var i = n(627968),
     a = n.n(s),
     r = n(397927),
     o = n(686956),
-    c = n(935649),
-    d = n(847599),
+    d = n(935649),
+    c = n(847599),
     u = n(36149),
     h = n(323073),
     A = n(506164),
@@ -29,8 +29,8 @@ function p(e) {
     }, [t]), g = l.useCallback(() => {
         null != t && o.A.nsfwAgree(t.id)
     }, [t]), p = l.useCallback(() => {
-        c.A.showAgeVerificationGetStartedModal({
-            entryPoint: d.q1.NSFW_GUILD
+        d.A.showAgeVerificationGetStartedModal({
+            entryPoint: c.q1.NSFW_GUILD
         })
     }, []);
     (0, u.I7)(_.w_.NSFW_SERVER);
@@ -41,8 +41,8 @@ function p(e) {
         disagreement: m.intl.string(m.t["/g10LC"])
     };
     switch (s) {
-        case d.A5.NSFW_CHANNEL_AGE_VERIFY:
-        case d.A5.GUILD_LARGE_SERVER:
+        case c.A5.NSFW_CHANNEL_AGE_VERIFY:
+        case c.A5.GUILD_LARGE_SERVER:
             return (0, i.jsx)(A.A, {
                 onAgree: p,
                 onDisagree: r,

@@ -8,8 +8,8 @@ var i = n(627968),
     a = n.n(s),
     r = n(621466),
     o = n(397927),
-    c = n(442433),
-    d = n(46054),
+    d = n(442433),
+    c = n(46054),
     u = n(742589),
     h = n(985018),
     A = n(708700),
@@ -40,7 +40,7 @@ class g extends l.Component {
             channel: t,
             guild: l
         } = this.props;
-        (0, c.L3)(e, async () => {
+        (0, d.L3)(e, async () => {
             let {
                 default: e
             } = await Promise.all([n.e("86097"), n.e("17425"), n.e("40878")]).then(n.bind(n, 340968));
@@ -67,7 +67,7 @@ class g extends l.Component {
                     onClick: this.handleOpenTopic,
                     "aria-label": h.intl.string(h.t.mKwsSp),
                     className: A.h8
-                }), null == e.linkedLobby || t ? d.A.parseTopic(e.topic, !0, {
+                }), null == e.linkedLobby || t ? c.A.parseTopic(e.topic, !0, {
                     channelId: e.id
                 }) : h.intl.string(h.t["XJVlf/"])]
             })]

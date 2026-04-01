@@ -8,8 +8,8 @@ var i = n(627968),
     a = n(837381),
     r = n(397927),
     o = n(928039),
-    c = n(139286),
-    d = n(688895),
+    d = n(139286),
+    c = n(688895),
     u = n(456425),
     h = n(360482);
 
@@ -20,7 +20,7 @@ function A(e) {
         loading: A,
         loadMore: _
     } = e, m = l.useRef(null), g = (0, o.A)("for-you", m);
-    (0, c.A)({
+    (0, d.A)({
         type: s.ImpressionTypes.VIEW,
         name: s.ImpressionNames.NOTIFICATION_CENTER_LANDING,
         properties: {
@@ -33,7 +33,7 @@ function A(e) {
         let e = m.current?.getScrollerState();
         null == e || e.scrollHeight - e.scrollTop - e.offsetHeight < 1500 && _()
     };
-    return t ? 0 === n.length ? (0, i.jsx)(d.H, {}) : (0, i.jsx)(a.hD, {
+    return t ? 0 === n.length ? (0, i.jsx)(c.H, {}) : (0, i.jsx)(a.hD, {
         navigator: g,
         children: (0, i.jsx)(a.PR, {
             children: e => {

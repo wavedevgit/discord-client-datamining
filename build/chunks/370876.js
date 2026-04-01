@@ -1,10 +1,10 @@
 /** chunk id: 370876 params = (module,exports,require) **/
 n.d(t, {
     A3: () => u,
-    DN: () => d,
+    DN: () => c,
     _t: () => h,
     mR: () => o,
-    zP: () => c
+    zP: () => d
 });
 var i = n(284009),
     l = n.n(i),
@@ -30,17 +30,17 @@ function o(e) {
         featurableInDirectory: e.guild?.featurable_in_directory
     }
 }
-let c = 5;
+let d = 5;
 
-function d(e) {
+function c(e) {
     return a().orderBy(e, [e => e.approximateMemberCount], ["desc"])
 }
 
 function u(e) {
     var t;
-    return (t = e.filter(e => e.featurableInDirectory), a().orderBy(t, [e => e.createdAt], ["desc"])).slice(0, c)
+    return (t = e.filter(e => e.featurableInDirectory), a().orderBy(t, [e => e.createdAt], ["desc"])).slice(0, d)
 }
 
 function h(e) {
-    return d(e)
+    return c(e)
 }

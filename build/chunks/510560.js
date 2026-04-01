@@ -8,8 +8,8 @@ var i = n(627968),
     a = n(397927),
     r = n(461678),
     o = n(914703),
-    c = n(652215),
-    d = n(985018);
+    d = n(652215),
+    c = n(985018);
 
 function u(e) {
     let {
@@ -24,14 +24,14 @@ function u(e) {
             ...e,
             channel: t,
             navId: "recents-thread-notifications",
-            label: d.intl.string(d.t.ljs3Oe)
+            label: c.intl.string(c.t.ljs3Oe)
         }) : (0, i.jsx)(r.A, {
             ...e,
             channel: t,
             navId: "recents-notifications",
-            label: d.intl.string(d.t.ljs3Oe),
+            label: c.intl.string(c.t.ljs3Oe),
             location: {
-                section: c.JJy.INBOX
+                section: d.JJy.INBOX
             },
             includeGuildMute: !0
         }),
@@ -40,10 +40,10 @@ function u(e) {
                 onClick: t
             } = e;
             return (0, i.jsx)(s.m_, {
-                text: d.intl.string(d.t.h850Ss),
+                text: c.intl.string(c.t.h850Ss),
                 targetElementRef: n,
                 children: (0, i.jsx)(a.K0, {
-                    "aria-label": d.intl.string(d.t.h850Ss),
+                    "aria-label": c.intl.string(c.t.h850Ss),
                     icon: a.XFE,
                     variant: "secondary",
                     size: "sm",

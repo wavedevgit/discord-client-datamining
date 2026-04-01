@@ -9,8 +9,8 @@ var l = n(417597),
     a = n(811024),
     r = n(933958),
     o = n(969151),
-    c = n(108959),
-    d = n(829861),
+    d = n(108959),
+    c = n(829861),
     u = n(5867),
     h = n(652215);
 
@@ -33,7 +33,7 @@ function A(e) {
     }), g = (0, l.bG)([s.A], () => s.A.getWindowOpen(h.MLl.ACTIVITY_POPOUT));
     if (!(0, a.Gp)(A)) return null;
     let p = _?.applicationId;
-    return m !== u.Gd.PANEL || null == p || g || null == A || null == _ || (0, c.A)(A) ? null : (0, i.jsx)(d.A, {
+    return m !== u.Gd.PANEL || null == p || g || null == A || null == _ || (0, d.A)(A) ? null : (0, i.jsx)(c.A, {
         maxHeight: t,
         connectedLocation: _.location,
         renderExternalHeader: n

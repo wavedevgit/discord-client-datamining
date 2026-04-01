@@ -8,8 +8,8 @@ var i = n(311907),
     a = n(946116);
 let r = Object.freeze({}),
     o = !1,
-    c = {},
     d = {},
+    c = {},
     u = {},
     h = {},
     A = {};
@@ -19,16 +19,16 @@ class _ extends i.Ay.Store {
         return o
     }
     getCurrentCategoryId(e) {
-        return d[e] ?? a.mU.ALL
+        return c[e] ?? a.mU.ALL
     }
     getDirectoryEntries(e, t) {
-        return null != t ? u[e]?.[t] : c[e]
+        return null != t ? u[e]?.[t] : d[e]
     }
     getDirectoryEntry(e, t) {
-        return c[e]?.[t]
+        return d[e]?.[t]
     }
     getDirectoryAllEntriesCount(e) {
-        return Object.keys(c[e] ?? {}).length
+        return Object.keys(d[e] ?? {}).length
     }
     getDirectoryCategoryCounts(e) {
         return h[e] ?? r
@@ -54,7 +54,7 @@ let m = new _(l.h, {
             i[t.guildId] = t, null != l[t.primaryCategoryId] ? l[t.primaryCategoryId][t.guildId] = t : l[t.primaryCategoryId] = {
                 [t.guildId]: t
             }
-        }), c[t] = i, u[t] = l
+        }), d[t] = i, u[t] = l
     },
     GUILD_DIRECTORY_FETCH_FAILURE: function() {
         o = !1
@@ -64,9 +64,9 @@ let m = new _(l.h, {
             channelId: t,
             entry: n
         } = e, i = (0, s.mR)(n);
-        if (null == i || c[t]?.[i.guildId] != null) return;
-        c[t] = {
-            ...c[t],
+        if (null == i || d[t]?.[i.guildId] != null) return;
+        d[t] = {
+            ...d[t],
             [i.guildId]: i
         };
         let l = i.primaryCategoryId ?? a.mU.UNCATEGORIZED;
@@ -88,11 +88,11 @@ let m = new _(l.h, {
         let {
             channelId: t,
             guildId: n
-        } = e, i = c[t]?.[n];
+        } = e, i = d[t]?.[n];
         if (null == i) return;
         let l = i.primaryCategoryId,
-            s = Object.assign({}, c[t]);
-        delete s[n], A[t]?.delete(n), A[t] = new Set(A[t]), c[t] = s;
+            s = Object.assign({}, d[t]);
+        delete s[n], A[t]?.delete(n), A[t] = new Set(A[t]), d[t] = s;
         let a = Object.assign({}, u[t][l]);
         if (delete a[n], u[t] = {
                 ...u[t],
@@ -109,9 +109,9 @@ let m = new _(l.h, {
         let {
             channelId: t,
             entry: n
-        } = e, i = (0, s.mR)(n), l = c[t]?.[i.guildId];
-        c[t] = {
-            ...c[t],
+        } = e, i = (0, s.mR)(n), l = d[t]?.[i.guildId];
+        d[t] = {
+            ...d[t],
             [i.guildId]: {
                 ...l,
                 ...i
@@ -119,10 +119,10 @@ let m = new _(l.h, {
         };
         let r = l?.primaryCategoryId ?? a.mU.UNCATEGORIZED,
             o = i.primaryCategoryId ?? a.mU.UNCATEGORIZED,
-            d = Object.assign({}, u[t]?.[r]);
-        null != l && r !== o && delete d[i.guildId], u[t] = {
+            c = Object.assign({}, u[t]?.[r]);
+        null != l && r !== o && delete c[i.guildId], u[t] = {
             ...u[t],
-            [r]: d,
+            [r]: c,
             [o]: {
                 ...u[t]?.[o],
                 [i.guildId]: {
@@ -141,7 +141,7 @@ let m = new _(l.h, {
             channelId: t,
             categoryId: n
         } = e;
-        d[t] = n
+        c[t] = n
     },
     GUILD_DIRECTORY_COUNTS_FETCH_SUCCESS: function(e) {
         let {

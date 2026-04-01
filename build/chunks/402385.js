@@ -8,8 +8,8 @@ var i = n(627968),
     a = n(554146),
     r = n(342494),
     o = n(397927),
-    c = n(387755),
-    d = n(956793),
+    d = n(387755),
+    c = n(956793),
     u = n(775602),
     h = n(641703),
     A = n(313961),
@@ -48,13 +48,13 @@ class M extends l.PureComponent {
             isBlocked: s,
             channel: a,
             mode: r,
-            isProvisional: c
+            isProvisional: d
         } = this.props;
         if (t || n && r === v._Of.VOICE) return null;
-        let d = a.isManaged(),
+        let c = a.isManaged(),
             u = null,
             h = !1;
-        return c ? (h = !0, u = L.intl.string(L.t.izMR7o)) : C.Ay.supports(O.O5.VIDEO) ? s ? (u = L.intl.string(L.t.PHzjvX), h = !0) : n && r === v._Of.VIDEO ? (e = this.handleJoinVideoCall, u = d ? L.intl.string(L.t.S0W8Z5) : L.intl.string(L.t.W68MhH)) : (e = this.handleStartVideoCall, u = d ? L.intl.string(L.t.S0W8Z5) : L.intl.string(L.t.oCqlGG)) : (h = !0, e = this.handleBrowserNotSupported, u = L.intl.string(L.t.UVpg3U)), (0, i.jsx)(y.Ay.Icon, {
+        return d ? (h = !0, u = L.intl.string(L.t.izMR7o)) : C.Ay.supports(O.O5.VIDEO) ? s ? (u = L.intl.string(L.t.PHzjvX), h = !0) : n && r === v._Of.VIDEO ? (e = this.handleJoinVideoCall, u = c ? L.intl.string(L.t.S0W8Z5) : L.intl.string(L.t.W68MhH)) : (e = this.handleStartVideoCall, u = c ? L.intl.string(L.t.S0W8Z5) : L.intl.string(L.t.oCqlGG)) : (h = !0, e = this.handleBrowserNotSupported, u = L.intl.string(L.t.UVpg3U)), (0, i.jsx)(y.Ay.Icon, {
             icon: o.npA,
             onClick: e,
             disabled: h || l,
@@ -67,12 +67,12 @@ class M extends l.PureComponent {
             callActive: n,
             callUnavailable: l,
             isBlocked: s,
-            channel: c,
-            dismissibleContentTypes: d,
+            channel: d,
+            dismissibleContentTypes: c,
             isProvisional: u
         } = this.props;
         if (t) return null;
-        let h = c.isManaged(),
+        let h = d.isManaged(),
             A = !1;
         u ? (A = !0, e = L.intl.string(L.t.izMR7o)) : l ? (e = h ? L.intl.string(L.t.LW2Ghr) : L.intl.string(L.t.rF7lN5), A = !0) : s ? (e = L.intl.string(L.t.PHzjvX), A = !0) : e = n ? h ? L.intl.string(L.t.S0W8Z5) : L.intl.string(L.t.fdEeb5) : h ? L.intl.string(L.t.S0W8Z5) : L.intl.string(L.t.focH1t);
         let _ = (0, i.jsx)(y.Ay.Icon, {
@@ -84,7 +84,7 @@ class M extends l.PureComponent {
         });
         return (0, i.jsxs)(i.Fragment, {
             children: [_, (0, i.jsx)(m.Ay, {
-                contentTypes: d,
+                contentTypes: c,
                 children: e => {
                     let {
                         visibleContent: t,
@@ -117,11 +117,11 @@ class M extends l.PureComponent {
             channel: n,
             notFriend: i,
             appContext: l
-        } = this.props, s = i ? n.getRecipientId() : null, a = () => c.A.call(n.id, t, !i && !n.isManaged() && !e?.shiftKey, s);
+        } = this.props, s = i ? n.getRecipientId() : null, a = () => d.A.call(n.id, t, !i && !n.isManaged() && !e?.shiftKey, s);
         t ? (0, x.A)(a, l) : a()
     };
     handleJoinCall = e => {
-        d.default.selectVoiceChannel(this.props.channel.id, e)
+        c.default.selectVoiceChannel(this.props.channel.id, e)
     };
     handleVoiceClick = e => {
         let {
@@ -153,8 +153,8 @@ function D(e) {
     let {
         channel: t
     } = e, n = (0, g.A)(), l = (0, s.bG)([A.A], () => A.A.getMode(t.id)), r = (0, s.bG)([S.A], () => S.A.isInChannel(t.id)), o = (0, s.bG)([u.A], () => u.A.useReducedMotion), {
-        callActive: c,
-        callUnavailable: d
+        callActive: d,
+        callUnavailable: c
     } = (0, s.cf)([E.A], () => ({
         callActive: E.A.isCallActive(t.id),
         callUnavailable: E.A.isCallUnavailable(t.id)
@@ -169,9 +169,9 @@ function D(e) {
         channel: t,
         mode: l,
         inCall: r,
-        callActive: c,
+        callActive: d,
         isProvisional: x?.isProvisional ?? !1,
-        callUnavailable: d,
+        callUnavailable: c,
         notFriend: m,
         isBlocked: f,
         appContext: C,

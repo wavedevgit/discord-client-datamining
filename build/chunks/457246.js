@@ -8,12 +8,12 @@ var i = n(627968),
     a = n(397927),
     r = n(534963),
     o = n(470710),
-    c = n(717518),
-    d = n(985018);
+    d = n(717518),
+    c = n(985018);
 
 function u(e) {
     let t = (0, s.bG)([o.A], () => o.A.getCall(e), [e]),
-        n = (0, s.bG)([c.A], () => c.A.getRegions(null));
+        n = (0, s.bG)([d.A], () => d.A.getRegions(null));
     l.useEffect(() => {
         null == n && r.A.fetchRegions(null)
     }, [n]);
@@ -27,7 +27,7 @@ function u(e) {
             id: t.region
         } : {
             id: "automatic",
-            name: d.intl.string(d.t.JEmsap)
+            name: c.intl.string(c.t.JEmsap)
         }, [t, n]),
         h = l.useCallback(e => {
             null != t && r.A.changeCallRegion(t.channelId, e.id)
@@ -47,7 +47,7 @@ function u(e) {
         }), [n, u, h]);
     return (0, i.jsx)(a.Drp, {
         id: "region-select",
-        label: d.intl.string(d.t.w8gMqh),
+        label: c.intl.string(c.t.w8gMqh),
         subtext: u.name,
         children: A
     })

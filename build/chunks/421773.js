@@ -10,7 +10,7 @@ function s(e, t) {
         a.current.cancel(), r.current.cancel()
     }, []);
     i.useEffect(() => o, [o]);
-    let c = i.useCallback(() => {
+    let d = i.useCallback(() => {
         o(), a.current.delay()
     }, [o]);
     return {
@@ -19,7 +19,7 @@ function s(e, t) {
         onMouseEnter: i.useCallback(() => {
             o(), r.current.delay()
         }, [o]),
-        onMouseLeave: c,
+        onMouseLeave: d,
         cancelTimers: o
     }
 }

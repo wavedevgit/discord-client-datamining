@@ -8,8 +8,8 @@ var i = n(627968),
     a = n(397927),
     r = n(442433),
     o = n(50268),
-    c = n(928658),
-    d = n(208882),
+    d = n(928658),
+    c = n(208882),
     u = n(352123),
     h = n(985018);
 
@@ -32,7 +32,7 @@ function A(e) {
         p || f || null != x || (0, r.Z_)()
     });
     let E = () => {
-        d.ZM(t.channelId, t.guildId)
+        c.ZM(t.channelId, t.guildId)
     };
 
     function I() {
@@ -85,7 +85,7 @@ function A(e) {
                 id: "report-server-listing",
                 label: h.intl.string(h.t.Aen9eh),
                 action: function() {
-                    null != t && ((0, c.sJ)(t), I())
+                    null != t && ((0, d.sJ)(t), I())
                 },
                 icon: a.iFK,
                 leadingAccessory: {

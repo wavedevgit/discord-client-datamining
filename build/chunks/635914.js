@@ -8,8 +8,8 @@ var i = n(627968),
     a = n.n(s),
     r = n(735438),
     o = n.n(r),
-    c = n(775121),
-    d = n(203982),
+    d = n(775121),
+    c = n(203982),
     u = n(652215),
     h = n(657410);
 let A = () => (0, i.jsxs)("div", {
@@ -145,13 +145,13 @@ class m extends l.PureComponent {
         this.setTimeout(() => {
             this.setState({
                 visible: !0
-            }), d._.dispatch(u.jej.SHAKE_APP, {
+            }), c._.dispatch(u.jej.SHAKE_APP, {
                 duration: 2400
             })
         }, 1800), this.setTimeout(this.createExplosion, 1800)
     }
     componentWillUnmount() {
-        for (let e of (c.A.enable(), this.children.length = 0, this._timeouts)) clearTimeout(e)
+        for (let e of (d.A.enable(), this.children.length = 0, this._timeouts)) clearTimeout(e)
     }
     setTimeout = (e, t) => {
         let n = setTimeout(e, t);

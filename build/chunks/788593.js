@@ -1,19 +1,19 @@
 /** chunk id: 788593 params = (module,exports,require) **/
 n.d(t, {
-    A: () => _,
+    A: () => h,
     R: () => f
 });
 var i = n(627968),
-    l = n(64700),
-    a = n(503698),
-    s = n.n(a),
+    a = n(64700),
+    l = n(503698),
+    s = n.n(l),
     r = n(311907),
     o = n(990078),
-    d = n(397927),
-    c = n(409626),
+    c = n(397927),
+    d = n(409626),
     u = n(692969),
-    g = n(958805),
-    m = n(61881),
+    m = n(958805),
+    g = n(61881),
     p = n(985018),
     x = n(496527);
 
@@ -21,12 +21,12 @@ function f(e) {
     let {
         imageSrc: t,
         gameName: n
-    } = e, [a, s] = l.useState(!1), r = n ?? p.intl.string(p.t.GIWFlF);
-    return a || null == t ? (0, i.jsx)("div", {
+    } = e, [l, s] = a.useState(!1), r = n ?? p.intl.string(p.t.GIWFlF);
+    return l || null == t ? (0, i.jsx)("div", {
         role: "img",
         "aria-label": r,
         className: x.Np,
-        children: (0, i.jsx)(d.Text, {
+        children: (0, i.jsx)(c.Text, {
             variant: "text-xxs/medium",
             lineClamp: 3,
             "aria-hidden": !0,
@@ -41,49 +41,49 @@ function f(e) {
     })
 }
 
-function h(e) {
+function _(e) {
     let {
         imageSrc: t,
         gameName: n,
-        applicationId: a,
-        userId: h,
-        className: _,
+        applicationId: l,
+        userId: _,
+        className: h,
         hideTooltip: A = !1,
         coverRef: I
-    } = e, j = (0, r.bG)([m.A], () => m.A.hasUnsavedChanges()), E = (0, u.A)({
+    } = e, v = (0, r.bG)([g.A], () => g.A.hasUnsavedChanges()), j = (0, u.A)({
         location: "GameCover",
-        applicationId: a,
-        source: c.Ob.UserProfile,
-        sourceUserId: h,
+        applicationId: l,
+        source: d.Ob.UserProfile,
+        sourceUserId: _,
         trackEntryPointImpression: !0
-    }), v = n ?? p.intl.string(p.t.GIWFlF), T = p.intl.formatToPlainString(p.t["8QLQB+"], {
-        gameName: v
-    }), b = l.useCallback(e => {
-        if (j) {
-            e.preventDefault(), e.stopPropagation(), g.A.notifyUnsavedWidgets();
+    }), E = n ?? p.intl.string(p.t.GIWFlF), T = p.intl.formatToPlainString(p.t["8QLQB+"], {
+        gameName: E
+    }), N = a.useCallback(e => {
+        if (v) {
+            e.preventDefault(), e.stopPropagation(), m.A.notifyUnsavedWidgets();
             return
         }
-        E?.(e)
-    }, [j, E]), C = e => A ? e : (0, i.jsx)(o.m, {
-        text: v,
+        j?.(e)
+    }, [v, j]), C = e => A ? e : (0, i.jsx)(o.m, {
+        text: E,
         ariaHidden: !0,
         children: e
     });
-    return C(null == E ? (0, i.jsx)(d.vN3, {
+    return C(null == j ? (0, i.jsx)(c.vN3, {
         children: (0, i.jsx)("div", {
             ref: I,
-            className: _,
+            className: h,
             tabIndex: -1,
             children: (0, i.jsx)(f, {
                 imageSrc: t,
                 gameName: n
             })
         })
-    }) : (0, i.jsx)(d.DUT, {
+    }) : (0, i.jsx)(c.DUT, {
         innerRef: I,
-        onClick: b,
+        onClick: N,
         "aria-label": T,
-        className: s()(x.vk, _),
+        className: s()(x.vk, h),
         children: (0, i.jsx)(f, {
             imageSrc: t,
             gameName: n
@@ -91,31 +91,31 @@ function h(e) {
     }))
 }
 
-function _(e) {
+function h(e) {
     let {
         applicationId: t,
         userId: n,
-        className: l,
-        disableInteraction: a = !1,
+        className: a,
+        disableInteraction: l = !1,
         hideTooltip: r,
         coverRef: o,
-        ...c
-    } = e, u = s()(x.PY, l);
-    return a ? (0, i.jsx)(d.vN3, {
+        ...d
+    } = e, u = s()(x.PY, a);
+    return l ? (0, i.jsx)(c.vN3, {
         children: (0, i.jsx)("div", {
             ref: o,
             className: u,
             tabIndex: -1,
             children: (0, i.jsx)(f, {
-                ...c
+                ...d
             })
         })
-    }) : (0, i.jsx)(h, {
+    }) : (0, i.jsx)(_, {
         className: u,
         applicationId: t,
         userId: n,
         hideTooltip: r,
         coverRef: o,
-        ...c
+        ...d
     })
 }

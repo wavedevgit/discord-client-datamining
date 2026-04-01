@@ -10,8 +10,8 @@ var i = n(627968),
     a = n(637248),
     r = n(728321),
     o = n(244083),
-    c = n(32603),
-    d = n(823142),
+    d = n(32603),
+    c = n(823142),
     u = n(83766),
     h = n(652215),
     A = n(985018),
@@ -19,8 +19,8 @@ var i = n(627968),
 
 function m(e, t, n, i) {
     let l = "compact" === i ? 8 : 12;
-    if (e === c.PU) return l;
-    if (e === c.bK) return t.features.has(h.GuildFeatures.HUB) ? 0 : l;
+    if (e === d.PU) return l;
+    if (e === d.bK) return t.features.has(h.GuildFeatures.HUB) ? 0 : l;
     if (e === n.voiceChannelsSectionNumber) {
         let t = n.getCategoryFromSection(e);
         if (null == t || t.isEmpty()) return 0;
@@ -33,11 +33,11 @@ function m(e, t, n, i) {
 
 function g(e, t) {
     switch (e) {
-        case c.PU:
+        case d.PU:
             return "hoisted-spacer";
-        case c.bK:
+        case d.bK:
             return "uncategorized-spacer";
-        case c.HP:
+        case d.HP:
             return "favorites";
         case t.recentsSectionNumber:
             return "recents-header";
@@ -68,25 +68,25 @@ let p = l.memo(function(e) {
         density: E
     } = (0, s.wRf)(), I = "compact" === E ? 8 : 12;
     switch (t) {
-        case c.PU:
+        case d.PU:
             return (0, i.jsx)("div", {
                 style: {
                     height: I
                 }
             });
-        case c.bK:
+        case d.bK:
             if (n.features.has(h.GuildFeatures.HUB)) return null;
             return (0, i.jsx)("div", {
                 style: {
                     height: I
                 }
             });
-        case c.HP:
-            return (0, i.jsx)(d.P4, {
+        case d.HP:
+            return (0, i.jsx)(c.P4, {
                 name: A.intl.string(A.t.mlPMCy)
             });
         case m.recentsSectionNumber:
-            return (0, i.jsx)(d.P4, {
+            return (0, i.jsx)(c.P4, {
                 name: A.intl.string(A.t.gKcrqM),
                 onDismiss: x
             });
@@ -97,16 +97,16 @@ let p = l.memo(function(e) {
             return (0, i.jsxs)(l.Fragment, {
                 children: [(0, i.jsx)("div", {
                     className: _.ts
-                }), (0, i.jsx)(d.kD, {
+                }), (0, i.jsx)(c.kD, {
                     category: e,
                     channel: n
                 })]
             })
         }
-        case c.TF: {
+        case d.TF: {
             let e = m.getNamedCategoryFromSection(t);
             if (null == e) return null;
-            return (0, i.jsx)(d.Ay, {
+            return (0, i.jsx)(c.Ay, {
                 channel: e.record,
                 position: e.position,
                 disableManageChannels: f,
@@ -121,7 +121,7 @@ let p = l.memo(function(e) {
         default: {
             let e = m.getNamedCategoryFromSection(t);
             if (null == e) return null;
-            return (0, i.jsx)(d.Ay, {
+            return (0, i.jsx)(c.Ay, {
                 channel: e.record,
                 position: e.position,
                 disableManageChannels: f

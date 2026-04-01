@@ -8,8 +8,8 @@ var i = n(627968),
     a = n.n(s),
     r = n(397927),
     o = n(402216),
-    c = n(667992),
-    d = n(533657);
+    d = n(667992),
+    c = n(533657);
 let u = l.memo(function(e) {
     let {
         label: t,
@@ -23,26 +23,26 @@ let u = l.memo(function(e) {
     } = e;
     return (0, i.jsxs)(r.DUT, {
         onClick: l,
-        className: a()(d.kL, s),
+        className: a()(c.kL, s),
         children: [null == h ? (0, i.jsx)(r.nFg, {
             size: "custom",
             color: "currentColor",
             width: 20,
             height: 20,
-            className: d.Vo
+            className: c.Vo
         }) : (0, i.jsx)(r.cNw, {
             size: "custom",
             color: "currentColor",
             width: 20,
             height: 20,
-            className: d.Vo
+            className: c.Vo
         }), (0, i.jsxs)(r.Text, {
             color: "text-strong",
             variant: "text-md/semibold",
-            className: d.Qq,
+            className: c.Qq,
             children: [t, " — ", n]
         }), u && null != A && null != h && h.length > 0 && (0, i.jsxs)(i.Fragment, {
-            children: [(0, i.jsx)(c.A, {
+            children: [(0, i.jsx)(d.A, {
                 channel: A,
                 speakers: h
             }), _ && (0, i.jsx)(o.Ay, {})]
@@ -51,8 +51,8 @@ let u = l.memo(function(e) {
             color: "currentColor",
             width: 20,
             height: 20,
-            className: a()(d.mw, {
-                [d.VU]: u
+            className: a()(c.mw, {
+                [c.VU]: u
             })
         })]
     })

@@ -8,8 +8,8 @@ var i = n(627968),
     a = n.n(s),
     r = n(837381),
     o = n(397927),
-    c = n(559149),
-    d = n(857069),
+    d = n(559149),
+    c = n(857069),
     u = n(694318),
     h = n(813516),
     A = n(906141),
@@ -34,8 +34,8 @@ function S(e) {
         message: n,
         compact: s,
         isGroupStart: a,
-        treatSpam: c,
-        gotoChannel: d
+        treatSpam: d,
+        gotoChannel: c
     } = e, u = (0, r.rm)(n.id ?? ""), h = l.useCallback(e => {
         "ArrowLeft" === e.key && document.querySelector(`[data-recents-channel="${t.id}"]`)?.focus()
     }, [t.id]), _ = T.includes(n.type);
@@ -47,7 +47,7 @@ function S(e) {
             ...u,
             children: [!_ && (0, i.jsx)(f.A, {
                 className: C.nn,
-                onJump: e => d(e, n.id)
+                onJump: e => c(e, n.id)
             }), (0, i.jsx)(A.A, {
                 id: n.id,
                 message: n,
@@ -57,7 +57,7 @@ function S(e) {
                 animateAvatar: !1,
                 isGroupStart: a,
                 onKeyDown: h,
-                treatSpam: c
+                treatSpam: d
             })]
         }, n.id)
     })
@@ -70,14 +70,14 @@ function b(e) {
         gotoChannel: l
     } = e, {
         enabled: s
-    } = c.A.useExperiment({
+    } = d.A.useExperiment({
         location: "20e3b0_1"
     }, {
         autoTrackExposure: !1
     }), r = _.hH.useSetting(), A = (0, u.iJ)(n), f = !1, N = 0 === t.messages.length || a()(t.messages[0].timestamp).isSame(a()(), "day"), T = g.default.getUser(m.default.getId())?.hasFlag(E.nhx.SPAMMER) ?? !1, b = [];
     if (!t.collapsed) {
         let e = null,
-            c = null,
+            d = null,
             _ = t.messages.slice(0, x.sz);
         _.forEach(t => {
             if (!N && (null == e || !e.isSame(t.timestamp, "day"))) {
@@ -87,8 +87,8 @@ function b(e) {
                     children: n
                 }, n)), e = a()(t.timestamp)
             }
-            let o = null == c || (0, d.A)(n, c, t);
-            c = t, f = f || (0, u.kf)(t), b.push((0, i.jsx)(S, {
+            let o = null == d || (0, c.A)(n, d, t);
+            d = t, f = f || (0, u.kf)(t), b.push((0, i.jsx)(S, {
                 channel: n,
                 message: t,
                 compact: r,
@@ -105,7 +105,7 @@ function b(e) {
             })
         }, "view-all")), 0 === b.length && (b = [(0, i.jsx)(o.y$y, {}, "spinner")])
     }
-    return f && A && c.A.trackExposure({
+    return f && A && d.A.trackExposure({
         location: "20e3b0_2"
     }), (0, i.jsx)("div", {
         className: C.DZ,

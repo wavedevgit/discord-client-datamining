@@ -8,8 +8,8 @@ var i = n(627968),
     a = n.n(s),
     r = n(311907),
     o = n(554146),
-    c = n(435371),
-    d = n(397927),
+    d = n(435371),
+    c = n(397927),
     u = n(964486),
     h = n(932001),
     A = n(651649),
@@ -118,8 +118,8 @@ function w(e) {
         search: s,
         searchContext: r,
         renderEmbeds: o,
-        onClick: c,
-        onScrollTo: d,
+        onClick: d,
+        onScrollTo: c,
         onPageChange: u,
         paginationTotalCount: h,
         renderPageWrapper: A,
@@ -153,11 +153,11 @@ function w(e) {
     if (p > 0) return (0, i.jsx)(R.A, {
         search: s,
         messages: t,
-        onClick: c,
+        onClick: d,
         blockCount: n,
         ignoreCount: l,
         renderEmbeds: o,
-        scrollTo: d,
+        scrollTo: c,
         onPageChange: u,
         paginationTotalCount: h,
         renderPageWrapper: A,
@@ -238,7 +238,7 @@ let B = [],
                     let e = D.intl.formatToPlainString(D.t["E+2azY"], {
                         maxPages: n
                     });
-                    return (0, i.jsx)(c.m_, {
+                    return (0, i.jsx)(d.m_, {
                         asContainer: !0,
                         text: e,
                         children: t
@@ -258,7 +258,7 @@ let B = [],
                     r = (0, f.bS)(t),
                     {
                         offset: o,
-                        totalResults: c
+                        totalResults: d
                     } = n;
                 (0, y.i4)({
                     searchContext: t,
@@ -267,7 +267,7 @@ let B = [],
                     channelId: e.channel_id,
                     messageId: e.id,
                     pageResults: null != u ? u.length : null,
-                    totalResults: c,
+                    totalResults: d,
                     limit: L.T_y,
                     page: Math.floor(o / L.T_y) + 1,
                     offset: o,
@@ -317,18 +317,18 @@ let B = [],
                 isIndexing: n.isHistoricalIndexing,
                 documentsIndexed: n.documentsIndexed,
                 selectedChannelId: O
-            }), (0, i.jsxs)(d.T7Y, {
+            }), (0, i.jsxs)(c.T7Y, {
                 ref: M,
                 className: U.XG,
-                children: [J && !n.isSearching && (0, i.jsx)(d.po8, {
+                children: [J && !n.isSearching && (0, i.jsx)(c.po8, {
                     className: U.VC,
-                    messageType: d.YCn.WARNING,
+                    messageType: c.YCn.WARNING,
                     children: D.intl.formatToPlainString(D.t["E+2azY"], {
                         maxPages: Q
                     })
-                }), et && (0, i.jsx)(d.po8, {
+                }), et && (0, i.jsx)(c.po8, {
                     className: U.QR,
-                    messageType: d.YCn.INFO,
+                    messageType: c.YCn.INFO,
                     children: D.intl.format(D.t["gQeg/R"], {
                         handleClick: en
                     })
@@ -375,7 +375,7 @@ function H(e) {
             }, []),
             isFeedbackVisible: e
         }
-    }(), o = (0, f.bS)(t), c = (0, r.cf)([p.A, b.A], () => ({
+    }(), o = (0, f.bS)(t), d = (0, r.cf)([p.A, b.A], () => ({
         isSearching: p.A.getIsFetching(o) ?? !1,
         isIndexing: p.A.getIsIndexing(o) ?? !1,
         isHistoricalIndexing: p.A.getIsHistoricalIndexing(o) ?? !1,
@@ -385,14 +385,14 @@ function H(e) {
         hasError: null != p.A.getError(o),
         showBlockedResults: b.A.shouldShowBlockedResults(o),
         showNoResultsAlt: b.A.shouldShowNoResultsAlt(o)
-    })), d = (0, r.bG)([p.A], () => p.A.getAnalyticsId(o)), {
+    })), c = (0, r.bG)([p.A], () => p.A.getAnalyticsId(o)), {
         renderedMessages: h,
         ignoreCount: m,
         blockCount: g
     } = (0, T.A)({
         searchContext: t
     }), E = (0, r.bG)([b.A], () => b.A.getSearchMode(o) ?? L.BBH.NEWEST), N = l.useCallback(e => {
-        if (c.isSearching) return;
+        if (d.isSearching) return;
         I.A.updateSearchMode(t, e);
         let n = C.A.getSearchInputText(t);
         null != n && C.A.fetchMessages({
@@ -400,18 +400,18 @@ function H(e) {
             searchQueryString: n,
             offset: 0
         })
-    }, [c.isSearching, t]), S = l.useCallback(e => {
-        if (c.isSearching) return;
+    }, [d.isSearching, t]), S = l.useCallback(e => {
+        if (d.isSearching) return;
         let n = C.A.getSearchInputText(t);
         null != n && C.A.fetchMessages({
             searchContext: t,
             searchQueryString: n,
             offset: e * L.T_y
         })
-    }, [c.isSearching, t]), y = (0, r.bG)([b.A], () => {
+    }, [d.isSearching, t]), y = (0, r.bG)([b.A], () => {
         let e = (0, f.bS)(t);
         return b.A.getSearchResultsQuery(e)
-    }), v = l.useCallback(e => I.A.setShowBlockedResults(t, e), [t]), j = l.useDeferredValue(h), R = l.useDeferredValue(c), O = l.useDeferredValue(d);
+    }), v = l.useCallback(e => I.A.setShowBlockedResults(t, e), [t]), j = l.useDeferredValue(h), R = l.useDeferredValue(d), O = l.useDeferredValue(c);
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(V, {
             searchContext: t,

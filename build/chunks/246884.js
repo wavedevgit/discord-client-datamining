@@ -8,8 +8,8 @@ var i = n(627968),
     a = n(397927),
     r = n(442433),
     o = n(688810),
-    c = n(272613),
-    d = n(398884),
+    d = n(272613),
+    c = n(398884),
     u = n(772366),
     h = n(728321),
     A = n(260509),
@@ -51,35 +51,36 @@ function T(e) {
         lastTargetNode: n
     } = e, r = (0, s.yK)([_.A], () => _.A.getGuildsArray()), T = (0, s.bG)([m.default], () => m.default.getCurrentUser()), S = l.useMemo(() => r.some(e => (0, A.bM)(e, T)), [r, T]), b = (0, a.red)(e => (0, a.fDT)(e, x.fc)), {
         analyticsLocations: y
-    } = (0, o.Ay)(), v = (0, i.jsx)(p.A, {
-        showPill: !1,
-        id: "create-join-button",
-        onClick: () => {
-            (0, d.Sn)() ? (0, u.A)({
-                analyticsSource: {
-                    page: f.ThZ.CREATE_JOIN_GUILD_MODAL
-                },
-                analyticsLocation: {
-                    page: f.ThZ.CREATE_JOIN_GUILD_MODAL,
-                    section: f.JJy.GUILD_CAP_UPSELL_MODAL
-                },
-                analyticsLocations: y
-            }) : c.A.openCreateGuildModal({
-                location: "Guild List"
-            })
-        },
-        selected: b,
-        onContextMenu: N,
-        tooltip: E.intl.string(E.t.l5WIbf),
-        icon: a.U1e
-    });
-    return t ? v : (0, i.jsx)("div", {
+    } = (0, o.Ay)();
+    return (0, i.jsx)("div", {
         className: I.Uq,
         children: (0, i.jsxs)(h.A, {
             tutorialId: S ? "create-more-servers" : "create-first-server",
             inlineSpecs: C,
             position: "right",
-            children: [v, null != n && (0, i.jsx)(g.Ay, {
+            disabled: t,
+            children: [(0, i.jsx)(p.A, {
+                showPill: !1,
+                id: "create-join-button",
+                onClick: () => {
+                    (0, c.Sn)() ? (0, u.A)({
+                        analyticsSource: {
+                            page: f.ThZ.CREATE_JOIN_GUILD_MODAL
+                        },
+                        analyticsLocation: {
+                            page: f.ThZ.CREATE_JOIN_GUILD_MODAL,
+                            section: f.JJy.GUILD_CAP_UPSELL_MODAL
+                        },
+                        analyticsLocations: y
+                    }) : d.A.openCreateGuildModal({
+                        location: "Guild List"
+                    })
+                },
+                selected: b,
+                onContextMenu: N,
+                tooltip: E.intl.string(E.t.l5WIbf),
+                icon: a.U1e
+            }), null != n && (0, i.jsx)(g.Ay, {
                 name: E.intl.string(E.t["45xjM5"]),
                 targetNode: n,
                 below: !0,

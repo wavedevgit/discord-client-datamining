@@ -8,8 +8,8 @@ var i = n(627968),
     a = n.n(s),
     r = n(735438),
     o = n(835245),
-    c = n(311907),
-    d = n(73153),
+    d = n(311907),
+    c = n(73153),
     u = n(565645),
     h = n(775602),
     A = n(823476);
@@ -36,7 +36,7 @@ function g(e) {
     let {
         channelId: t,
         callHeight: n
-    } = e, s = (0, c.bG)([h.A], () => h.A.useReducedMotion), [a, r] = l.useState([]);
+    } = e, s = (0, d.bG)([h.A], () => h.A.useReducedMotion), [a, r] = l.useState([]);
     l.useEffect(() => {
         function e(e) {
             let {
@@ -48,8 +48,8 @@ function g(e) {
                 ...i
             }])
         }
-        return d.h.subscribe("VOICE_CHANNEL_EFFECT_SEND", e), () => {
-            d.h.unsubscribe("VOICE_CHANNEL_EFFECT_SEND", e)
+        return c.h.subscribe("VOICE_CHANNEL_EFFECT_SEND", e), () => {
+            c.h.unsubscribe("VOICE_CHANNEL_EFFECT_SEND", e)
         }
     }, [t, s]);
     let u = l.useCallback(e => {

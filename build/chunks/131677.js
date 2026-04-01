@@ -8,13 +8,13 @@ var i = n(311907),
     a = n(583613),
     r = n(734057),
     o = n(222823),
-    c = n(309010),
-    d = n(645959);
+    d = n(309010),
+    c = n(645959);
 let u = [],
     h = new Set;
 
 function A() {
-    let e = d.default.getPrivateChannelIds().filter(e => o.Ay.getMentionCount(e) > 0);
+    let e = c.default.getPrivateChannelIds().filter(e => o.Ay.getMentionCount(e) > 0);
     return e.length > 20 && (e.length = 20), !(0, a.in)(e, u) && (u = e, h = new Set(e), !0)
 }
 
@@ -31,7 +31,7 @@ function m(e) {
 class g extends i.Ay.Store {
     static displayName = "PrivateChannelReadStateStore";
     initialize() {
-        this.waitFor(d.default, r.A, c.A, o.Ay)
+        this.waitFor(c.default, r.A, d.A, o.Ay)
     }
     getUnreadPrivateChannelIds() {
         return u
@@ -57,7 +57,7 @@ let p = new g(l.h, {
         return !!h.has(t) && A()
     },
     WINDOW_FOCUS: function() {
-        let e = r.A.getChannel(c.A.getChannelId());
+        let e = r.A.getChannel(d.A.getChannelId());
         return null != e && !!(0, s.Gw)(e.type) && A()
     },
     CHANNEL_CREATE: function(e) {

@@ -9,8 +9,8 @@ var l = n(934551),
     a = n(827734),
     r = n(922590),
     o = n(821269),
-    c = n(437774),
-    d = n(994500),
+    d = n(437774),
+    c = n(994500),
     u = n(351906),
     h = n(562153),
     A = n(622543),
@@ -44,9 +44,9 @@ function L(e) {
     } = e, {
         relationshipType: G,
         originApplicationId: P
-    } = (0, s.cf)([d.A], () => ({
-        relationshipType: d.A.getRelationshipType(t.id),
-        originApplicationId: d.A.getOriginApplicationId(t.id)
+    } = (0, s.cf)([c.A], () => ({
+        relationshipType: c.A.getRelationshipType(t.id),
+        originApplicationId: c.A.getOriginApplicationId(t.id)
     })), k = (0, r.fi)(t.id), w = (0, o.q)({
         userId: t.id
     }), B = (0, s.bG)([u.A], () => u.A.hidePersonalInformation), V = (0, s.bG)([A.A], () => A.A.getUserProfile(t.id)?.application);
@@ -96,7 +96,7 @@ function L(e) {
                     color: a.A.colors.TEXT_STRONG
                 }),
                 headingColor: "text-strong",
-                children: (0, i.jsx)(c.T, {
+                children: (0, i.jsx)(d.T, {
                     userId: t.id
                 })
             })

@@ -8,8 +8,8 @@ var i = n(627968),
     a = n.n(s),
     r = n(311907),
     o = n(73153),
-    c = n(442433),
-    d = n(738876),
+    d = n(442433),
+    c = n(738876),
     u = n(58149),
     h = n(332456),
     A = n(973854),
@@ -65,7 +65,7 @@ function j(e) {
         baseChannelId: R
     });
     return (0, i.jsxs)(i.Fragment, {
-        children: [(0, i.jsx)(d.A, {
+        children: [(0, i.jsx)(c.A, {
             channel: L,
             draftType: I.C.ChannelMessage
         }), (0, i.jsx)(p.Ay, {
@@ -77,7 +77,7 @@ function j(e) {
                 guild: M,
                 inSidebar: !0,
                 handleContextMenu: function(e) {
-                    (0, c.L3)(e, async () => {
+                    (0, d.L3)(e, async () => {
                         let {
                             default: e
                         } = await n.e("33").then(n.bind(n, 44536));

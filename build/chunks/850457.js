@@ -8,8 +8,8 @@ var i = n(627968),
     a = n(827734),
     r = n(397927),
     o = n(858177),
-    c = n(47167),
-    d = n(475889),
+    d = n(47167),
+    c = n(475889),
     u = n(291594),
     h = n(693879),
     A = n(769015),
@@ -32,7 +32,7 @@ function y(e) {
         event: t,
         guildId: n,
         channelId: l
-    } = e, a = (0, s.bG)([I.default], () => I.default.getUser(t.userId)), c = (0, o.O)(t.applicationId ?? null), d = N.Ay.useName(n, l, a), h = (0, m.A)({
+    } = e, a = (0, s.bG)([I.default], () => I.default.getUser(t.userId)), d = (0, o.O)(t.applicationId ?? null), c = N.Ay.useName(n, l, a), h = (0, m.A)({
         location: "VoiceChannelHistory",
         applicationId: t.applicationId ?? void 0,
         source: _.Ob.ActivityCard
@@ -44,7 +44,7 @@ function y(e) {
         }), (0, i.jsx)("div", {
             className: b.xW,
             children: (0, i.jsx)(A.A, {
-                game: c,
+                game: d,
                 className: b.AW,
                 "aria-hidden": !0
             })
@@ -64,21 +64,21 @@ function y(e) {
                         children: (0, i.jsx)(r.Text, {
                             variant: "text-sm/semibold",
                             tag: "span",
-                            children: d
+                            children: c
                         })
                     }),
-                    activityName: null != h && null != c ? (0, i.jsx)(u.A, {
+                    activityName: null != h && null != d ? (0, i.jsx)(u.A, {
                         tag: "span",
                         onClick: h,
                         children: (0, i.jsx)(r.Text, {
                             variant: "text-sm/semibold",
                             tag: "span",
-                            children: c.name
+                            children: d.name
                         })
                     }) : (0, i.jsx)(r.Text, {
                         variant: "text-sm/semibold",
                         tag: "span",
-                        children: c?.name ?? S.intl.string(S.t.GIWFlF)
+                        children: d?.name ?? S.intl.string(S.t.GIWFlF)
                     })
                 })
             }), (0, i.jsx)(r.Text, {
@@ -171,7 +171,7 @@ function j(e) {
 function R(e) {
     let {
         channel: t
-    } = e, n = (0, d.H)(t), l = (0, c.Ay)(t);
+    } = e, n = (0, c.H)(t), l = (0, d.Ay)(t);
     return (0, i.jsxs)("div", {
         className: b.hY,
         children: [(0, i.jsx)(r.HKD, {
@@ -202,15 +202,15 @@ function O(e) {
     l.useEffect(() => {
         (0, f.q)(t.id)
     }, [t.id]);
-    let c = (0, s.bG)([x.A], () => x.A.getHistory(t.id), [t.id]),
-        d = c.length > 0;
+    let d = (0, s.bG)([x.A], () => x.A.getHistory(t.id), [t.id]),
+        c = d.length > 0;
     return (l.useEffect(() => {
-        d && C.default.track(T.HAw.OPEN_POPOUT, {
+        c && C.default.track(T.HAw.OPEN_POPOUT, {
             type: "Voice Channel History",
             channel_id: t.id,
             source: n
         })
-    }, [d, t.id, n]), d) ? (0, i.jsxs)("div", {
+    }, [c, t.id, n]), c) ? (0, i.jsxs)("div", {
         role: "dialog",
         "aria-label": S.intl.string(S.t.N0ED9s),
         className: b.kL,
@@ -230,7 +230,7 @@ function O(e) {
                     })
                 }), (0, i.jsx)("ol", {
                     className: b.Gz,
-                    children: c.map(e => (0, i.jsx)(j, {
+                    children: d.map(e => (0, i.jsx)(j, {
                         event: e,
                         guildId: t.guild_id,
                         channelId: t.id

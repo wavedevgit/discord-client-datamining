@@ -10,8 +10,8 @@ var i = n(627968),
     a = n.n(s),
     r = n(284009),
     o = n.n(r),
-    c = n(522437),
-    d = n(686956),
+    d = n(522437),
+    c = n(686956),
     u = n(954571),
     h = n(263715),
     A = n(772972),
@@ -42,7 +42,7 @@ function f(e, t) {
             let {
                 nodeId: l
             } = e;
-            i && t.type !== h.PJ.FOLDER && u.default.track(_.HAw.GUILD_FOLDER_CREATED), d.A.moveById(l, t.id, n, i)
+            i && t.type !== h.PJ.FOLDER && u.default.track(_.HAw.GUILD_FOLDER_CREATED), c.A.moveById(l, t.id, n, i)
         },
         collect: e => ({
             canDrop: e.canDrop(),
@@ -59,10 +59,10 @@ function x(e) {
         below: a
     } = e, r = l.useMemo(() => f([h.PJ.GUILD, h.PJ.FOLDER], n, a, s), [n, a, s]), [{
         canDrop: o,
-        isOver: d
-    }, u] = (0, c.H)(r), A = p([
+        isOver: c
+    }, u] = (0, d.H)(r), A = p([
         [o, g.OP],
-        [d, g.NQ]
+        [c, g.NQ]
     ]);
     return (0, i.jsx)("div", {
         ref: e => {
@@ -83,7 +83,7 @@ function E(e) {
     } = e, [{
         canDrop: r,
         isOver: o
-    }, d] = (0, c.H)(() => f([h.PJ.GUILD], n, !0, !0));
+    }, c] = (0, d.H)(() => f([h.PJ.GUILD], n, !0, !0));
     l.useEffect(() => {
         s?.(o)
     }, [s, o]);
@@ -98,7 +98,7 @@ function E(e) {
         disableWrapper: !0,
         children: (0, i.jsx)("div", {
             ref: e => {
-                u.current = e, d(e)
+                u.current = e, c(e)
             },
             "data-dnd-name": m.intl.formatToPlainString(m.t.qiQ0QI, {
                 itemName: t
@@ -137,7 +137,7 @@ function C(e) {
     } = e, [{
         canDrop: l,
         isOver: s
-    }, a] = (0, c.H)(() => f([h.PJ.GUILD], n, !0, !0)), r = p([
+    }, a] = (0, d.H)(() => f([h.PJ.GUILD], n, !0, !0)), r = p([
         [s, g.a7]
     ]), o = p([
         [s, g.NQ],
@@ -163,7 +163,7 @@ function C(e) {
 function N(e) {
     let {
         children: t
-    } = e, [, n] = (0, c.H)({
+    } = e, [, n] = (0, d.H)({
         accept: []
     });
     return (0, i.jsx)("div", {

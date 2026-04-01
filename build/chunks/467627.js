@@ -8,8 +8,8 @@ var i = n(627968),
     a = n.n(s),
     r = n(735438),
     o = n.n(r),
-    c = n(873263),
-    d = n(837381),
+    d = n(873263),
+    c = n(837381),
     u = n(621466),
     h = n(311907),
     A = n(554146),
@@ -63,10 +63,10 @@ var i = n(627968),
     er = n(353058);
 let eo = (0, H.isWindows)() ? 4 : 12 * !(0, H.isMac)();
 
-function ec(e) {
+function ed(e) {
     return e.startsWith(es.BVt.GUILD_DISCOVERY) || e.startsWith(es.BVt.GLOBAL_DISCOVERY)
 }
-class ed {
+class ec {
     guildsTree;
     setScrolling;
     setIsScrolledToBottom;
@@ -91,7 +91,7 @@ class ed {
     }
     scrollToGuild = (e, t) => {
         let n = this.scrollerRef.current;
-        if (null == n || null == e && ec(window.location.pathname) || e === es.sFm.SERVER_DISCOVERY_BADGE || e === es.sFm.E3_SERVER_DISCOVERY_BADGE) return;
+        if (null == n || null == e && ed(window.location.pathname) || e === es.sFm.SERVER_DISCOVERY_BADGE || e === es.sFm.E3_SERVER_DISCOVERY_BADGE) return;
         if (null == e) return void n.scrollTo({
             to: 0,
             animate: t
@@ -130,9 +130,9 @@ class ed {
         if (null == r) return !1;
         let o = n.findIndex(t => "string" == typeof t || null == t ? t === e : t.includes(e));
         if (o < 0) return !1;
-        let c = i * o + s,
-            d = r.getScrollerState();
-        return !t && !!(c >= d.scrollTop) || !!t && !!(c + i + l <= d.scrollTop + d.offsetHeight - a)
+        let d = i * o + s,
+            c = r.getScrollerState();
+        return !t && !!(d >= c.scrollTop) || !!t && !!(d + i + l <= c.scrollTop + c.offsetHeight - a)
     };
     getVisibleGuildIds = () => {
         let e = this.scrollerRef.current;
@@ -180,7 +180,7 @@ function eu(e) {
         lurkingGuildIds: s
     } = e, a = (0, v.A)("TopSection"), {
         isExperimentEnabled: r
-    } = (0, y.TW)("TopSection"), o = (0, h.bG)([B.A], () => null != B.A.getVoiceChannelId()), c = (0, p.useHasAnyModalOpen)(), d = (0, S.Ay)(e => e.postConnectionOpen), [u, _] = (0, b.kn)(d && r && !o && !c ? [A.M.FAVORITES_SERVER_ONBOARDING_INTRO] : []), m = u === A.M.FAVORITES_SERVER_ONBOARDING_INTRO, [g] = (0, b.kn)(m ? [A.M.FAVORITES_SERVER_ONBOARDING_MENU_ITEM] : [], void 0, !0), f = g === A.M.FAVORITES_SERVER_ONBOARDING_MENU_ITEM, x = l.useRef(!1), E = f && a;
+    } = (0, y.TW)("TopSection"), o = (0, h.bG)([B.A], () => null != B.A.getVoiceChannelId()), d = (0, p.useHasAnyModalOpen)(), c = (0, S.Ay)(e => e.postConnectionOpen), [u, _] = (0, b.kn)(c && r && !o && !d ? [A.M.FAVORITES_SERVER_ONBOARDING_INTRO] : []), m = u === A.M.FAVORITES_SERVER_ONBOARDING_INTRO, [g] = (0, b.kn)(m ? [A.M.FAVORITES_SERVER_ONBOARDING_MENU_ITEM] : [], void 0, !0), f = g === A.M.FAVORITES_SERVER_ONBOARDING_MENU_ITEM, x = l.useRef(!1), E = f && a;
     l.useEffect(() => {
         E && !x.current && n(), x.current = E
     }, [n, E]);
@@ -213,7 +213,7 @@ function eh(e) {
     } = e, [r] = (0, h.yK)([V.Ay], () => {
         let e = V.Ay.getGuildsTree();
         return [e, e.version]
-    }), o = r.getRoots(), c = (0, h.yK)([G.A], () => G.A.getGeoRestrictedGuilds()).map(e => (0, i.jsx)(J.A, {
+    }), o = r.getRoots(), d = (0, h.yK)([G.A], () => G.A.getGeoRestrictedGuilds()).map(e => (0, i.jsx)(J.A, {
         id: e.id,
         name: e.name,
         icon: e.icon
@@ -224,7 +224,7 @@ function eh(e) {
             "aria-label": ea.intl.string(ea.t["7hB4kg"]),
             gap: "xs",
             children: o.map((e, t) => s(e, t, o.length))
-        }), c, (0, i.jsx)(ee.A, {}), l ? null : (0, i.jsx)(X.A, {
+        }), d, (0, i.jsx)(ee.A, {}), l ? null : (0, i.jsx)(X.A, {
             disableTooltip: a.length > 0,
             lastTargetNode: o[o.length - 1]
         }), l ? null : t, n ? null : (0, i.jsx)(q.A, {})]
@@ -247,9 +247,9 @@ function eA(e) {
     } = (0, F.A)(), S = l.useRef(!1), [b] = l.useState(() => new m.Ep), y = l.useRef(null), j = l.useRef(null), {
         ref: R,
         ...G
-    } = (0, d.$y)(), P = (0, f.R7z)(), [w, B] = l.useState(!1), z = (0, f.rdh)(g.A.modules.guildbar.AVATAR_SIZE), q = (0, f.rdh)(g.A.space.SPACE_XS), X = (0, v.A)("GuildsBar"), {
+    } = (0, c.$y)(), P = (0, f.R7z)(), [w, B] = l.useState(!1), z = (0, f.rdh)(g.A.modules.guildbar.AVATAR_SIZE), q = (0, f.rdh)(g.A.space.SPACE_XS), X = (0, v.A)("GuildsBar"), {
         pathname: J
-    } = (0, c.zy)(), {
+    } = (0, d.zy)(), {
         entrypoint: $
     } = (0, L.X8)({
         location: "GuildsBar"
@@ -262,7 +262,7 @@ function eA(e) {
             heightBeforeGuilds: eo + t + ee * e,
             bottomInset: 16
         });
-        return new ed(o, B, es.tEg, () => {
+        return new ec(o, B, es.tEg, () => {
             y.current?.calculateState(), j.current?.calculateState()
         }, n)
     }, [z, q, o, ee]);
@@ -276,7 +276,7 @@ function eA(e) {
     }, []);
     let {
         analyticsLocations: el
-    } = (0, N.Ay)(C.A.GUILDS_LIST), eA = ec(J);
+    } = (0, N.Ay)(C.A.GUILDS_LIST), eA = ed(J);
     (0, E.u5)(() => {
         if (!S.current && 0 !== o.size) {
             if (!eA) {
@@ -411,7 +411,7 @@ function eA(e) {
 }
 let e_ = l.memo(function(e) {
     let t = (0, I.A)("guildsnav");
-    return (0, i.jsx)(d.hD, {
+    return (0, i.jsx)(c.hD, {
         navigator: t,
         children: (0, i.jsx)(eA, {
             ...e

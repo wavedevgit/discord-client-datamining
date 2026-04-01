@@ -8,8 +8,8 @@ var i = n(627968),
     a = n.n(s),
     r = n(484030),
     o = n(311907),
-    c = n(873298),
-    d = n(397927),
+    d = n(873298),
+    c = n(397927),
     u = n(793574),
     h = n(688810),
     A = n(966597),
@@ -44,7 +44,7 @@ function v(e) {
             analyticsLocations: G
         } = (0, h.Ay)(u.A.NOTIFICATION_CENTER),
         [P, k] = l.useState(!1),
-        [w, B] = [(0, o.bG)([f.A], () => f.A.settings.inbox?.currentTab ?? c.Y2.UNREADS), l.useCallback(e => {
+        [w, B] = [(0, o.bG)([f.A], () => f.A.settings.inbox?.currentTab ?? d.Y2.UNREADS), l.useCallback(e => {
             p.wc.updateAsync("inbox", t => {
                 if (t.currentTab === e) return !1;
                 t.currentTab = e
@@ -58,7 +58,7 @@ function v(e) {
                 e.viewedTutorial = !0
             }, p.Sb.INFREQUENT_USER_ACTION)
         }, []), {
-            showTutorial: !t && w === c.Y2.UNREADS,
+            showTutorial: !t && w === d.Y2.UNREADS,
             setSeenTutorial: n
         }),
         F = l.useCallback(() => {
@@ -75,7 +75,7 @@ function v(e) {
         location: "RecentsPopout"
     }), z = (0, o.bG)([_.A], () => _.A.hasOverdueReminder(), []) && W && Y;
     l.useEffect(() => {
-        w !== c.Y2.BOOKMARKS || W || Y || B(c.Y2.MENTIONS), w === c.Y2.GAME_INVITES && B(c.Y2.MENTIONS)
+        w !== d.Y2.BOOKMARKS || W || Y || B(d.Y2.MENTIONS), w === d.Y2.GAME_INVITES && B(d.Y2.MENTIONS)
     });
     let q = l.useCallback(e => {
             e.shiftKey || F()
@@ -83,34 +83,34 @@ function v(e) {
         X = (0, g.Sc)();
     return (0, i.jsx)(h.f5, {
         value: G,
-        children: (0, i.jsx)(d.YNO, {
+        children: (0, i.jsx)(c.YNO, {
             targetElementRef: M,
-            animation: d.YNO.Animation.NONE,
+            animation: c.YNO.Animation.NONE,
             position: O,
             align: L,
             autoInvert: !1,
             shouldShow: P,
             onRequestClose: F,
             renderPopout: function() {
-                return (0, i.jsx)(d.lGe, {
+                return (0, i.jsx)(c.lGe, {
                     "aria-label": b.intl.string(b.t.GSmTKJ),
                     className: U,
                     children: (0, i.jsx)("div", {
                         className: a()(y.k, {
                             [y.q]: X
                         }),
-                        children: (0, i.jsx)(d.Fmo, {
+                        children: (0, i.jsx)(c.Fmo, {
                             component: (0, i.jsx)(C.A, {
                                 tab: w,
                                 setTab: B,
                                 badgeState: R,
                                 closePopout: F
                             }),
-                            children: w === c.Y2.FOR_YOU ? (0, i.jsx)(E.Ay, {}) : w === c.Y2.MENTIONS ? (0, i.jsx)(I.A, {
+                            children: w === d.Y2.FOR_YOU ? (0, i.jsx)(E.Ay, {}) : w === d.Y2.MENTIONS ? (0, i.jsx)(I.A, {
                                 onJump: q
-                            }) : W && Y && w === c.Y2.BOOKMARKS ? (0, i.jsx)(m.J, {
+                            }) : W && Y && w === d.Y2.BOOKMARKS ? (0, i.jsx)(m.J, {
                                 closePopout: F
-                            }) : w === c.Y2.SCHEDULED ? (0, i.jsx)(N.w, {}) : (0, i.jsx)(r.tH, {
+                            }) : w === d.Y2.SCHEDULED ? (0, i.jsx)(N.w, {}) : (0, i.jsx)(r.tH, {
                                 fallback: (0, i.jsx)(T.T, {}),
                                 children: (0, i.jsx)(T.Ay, {
                                     onJump: q,

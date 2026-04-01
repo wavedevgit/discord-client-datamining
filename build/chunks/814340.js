@@ -8,8 +8,8 @@ var i = n(627968),
     a = n.n(s),
     r = n(158954),
     o = n(311907),
-    c = n(990078),
-    d = n(397927),
+    d = n(990078),
+    c = n(397927),
     u = n(442433),
     h = n(390435),
     A = n(775121),
@@ -41,7 +41,7 @@ let U = () => (0, i.jsxs)("div", {
         children: M.intl.string(M.t.bpbATE)
     }), (0, i.jsx)("div", {
         className: D.PA,
-        children: (0, i.jsx)(d.MzZ, {
+        children: (0, i.jsx)(c.MzZ, {
             href: y.A.getArticleURL(L.MVz.QUICK_SWITCHER_TUTORIAL),
             children: M.intl.string(M.t["4iPfEO"])
         })
@@ -111,7 +111,7 @@ let P = o.Ay.connectStores([C.Ay, f.A], e => {
     })(R.KJ);
 
 function H(e, t, n) {
-    return (0, i.jsx)(c.m, {
+    return (0, i.jsx)(d.m, {
         __unsupportedReactNodeAsText: n,
         children: (0, i.jsx)("span", {
             className: D.ZT,
@@ -354,7 +354,7 @@ class F extends l.PureComponent {
             children: [(0, i.jsx)(S.EG, {
                 event: L.jej.GLOBAL_CLIPBOARD_PASTE,
                 handler: this.handleGlobalPaste
-            }), (0, i.jsx)(d.vN3, {
+            }), (0, i.jsx)(c.vN3, {
                 children: (0, i.jsx)("input", {
                     className: D.hF,
                     "aria-label": M.intl.string(M.t.ZvKwYa),
@@ -385,7 +385,7 @@ class F extends l.PureComponent {
             } = this.state, {
                 results: t
             } = this.props;
-            return 0 === t.length && e.length > 0 ? (0, i.jsx)(U, {}) : 0 === t.length ? null : (0, i.jsx)(d.Eie, {
+            return 0 === t.length && e.length > 0 ? (0, i.jsx)(U, {}) : 0 === t.length ? null : (0, i.jsx)(c.Eie, {
                 innerId: this._listId,
                 innerRole: "listbox",
                 "aria-label": M.intl.string(M.t.Wef5Do),

@@ -8,8 +8,8 @@ var i = n(627968),
     a = n.n(s),
     r = n(735438),
     o = n.n(r),
-    c = n(311907),
-    d = n(435371),
+    d = n(311907),
+    c = n(435371),
     u = n(397927),
     h = n(933958),
     A = n(104171),
@@ -41,37 +41,37 @@ function b(e, t) {
 }
 
 function y() {
-    let e = (0, c.yK)([C.A, p.A], () => I.default.keys(C.A.getFavoriteChannels()).map(e => p.A.getChannel(e)).filter(E.Vq)),
+    let e = (0, d.yK)([C.A, p.A], () => I.default.keys(C.A.getFavoriteChannels()).map(e => p.A.getChannel(e)).filter(E.Vq)),
         t = e.map(e => e.id),
         n = e.filter(e => e.type === N.rbe.GUILD_VOICE),
         l = e.filter(e => e.type === N.rbe.GUILD_STAGE_VOICE).map(e => e.id),
-        s = (0, c.yK)([x.Ay], () => o().flatMap(n, e => x.Ay.getVoiceStatesForChannel(e).map(e => {
+        s = (0, d.yK)([x.Ay], () => o().flatMap(n, e => x.Ay.getVoiceStatesForChannel(e).map(e => {
             let {
                 user: t
             } = e;
             return t
         })), [n]),
-        a = (0, c.yK)([_.A], () => o().flatMap(l, e => _.A.getMutableParticipants(e, m.ip.SPEAKER).filter(e => e.type === m.wY.VOICE).map(e => {
+        a = (0, d.yK)([_.A], () => o().flatMap(l, e => _.A.getMutableParticipants(e, m.ip.SPEAKER).filter(e => e.type === m.wY.VOICE).map(e => {
             let {
                 user: t
             } = e;
             return t
         }))),
-        r = (0, c.bG)([_.A], () => {
+        r = (0, d.bG)([_.A], () => {
             let e = 0;
             for (let t of l) e += _.A.getParticipantCount(t, m.ip.AUDIENCE);
             return e
         }),
-        d = (0, c.yK)([g.A], () => g.A.getAllApplicationStreams().filter(e => t.includes(e.channelId)).map(e => e.ownerId), [t]),
-        T = (0, c.yK)([h.Ay], () => {
+        c = (0, d.yK)([g.A], () => g.A.getAllApplicationStreams().filter(e => t.includes(e.channelId)).map(e => e.ownerId), [t]),
+        T = (0, d.yK)([h.Ay], () => {
             let e = h.Ay.getEmbeddedActivitiesByChannel(),
                 n = [];
             for (let i of t) n.push(...e.get(i)?.flatMap(e => Array.from(e.userIds)) ?? []);
             return n
         }, [t]),
-        y = (0, c.yK)([f.default], () => T.map(e => f.default.getUser(e)), [T]),
-        v = (0, c.yK)([f.default], () => d.map(e => f.default.getUser(e)), [d]),
-        j = b(u.HKD, s.filter(e => !d.includes(e.id) && !T.includes(e.id))),
+        y = (0, d.yK)([f.default], () => T.map(e => f.default.getUser(e)), [T]),
+        v = (0, d.yK)([f.default], () => c.map(e => f.default.getUser(e)), [c]),
+        j = b(u.HKD, s.filter(e => !c.includes(e.id) && !T.includes(e.id))),
         R = 0 === a.length ? null : (0, i.jsxs)("div", {
             className: S.nM,
             children: [(0, i.jsx)(u.qux, {
@@ -122,7 +122,7 @@ function j(e) {
         className: S.A_,
         children: (0, i.jsx)(v, {})
     }), []);
-    return (0, i.jsx)(d.m_, {
+    return (0, i.jsx)(c.m_, {
         __unsupportedReactNodeAsText: s,
         hideOnClick: !0,
         spacing: 12,

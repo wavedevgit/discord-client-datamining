@@ -1,6 +1,6 @@
 /** chunk id: 846930 params = (module,exports,require) **/
 n.d(t, {
-    A: () => d
+    A: () => c
 });
 var i = n(627968);
 n(64700);
@@ -13,7 +13,7 @@ let r = () => (0, i.jsx)("div", {
     o = () => (0, i.jsx)("div", {
         className: a.L1
     }),
-    c = e => {
+    d = e => {
         let {
             width: t
         } = e;
@@ -29,7 +29,7 @@ let r = () => (0, i.jsx)("div", {
             })]
         })
     },
-    d = e => {
+    c = e => {
         let {
             withBannerPadding: t
         } = e;
@@ -37,29 +37,29 @@ let r = () => (0, i.jsx)("div", {
             className: s()(a.kL, {
                 [a.o5]: t
             }),
-            children: [(0, i.jsx)(o, {}), (0, i.jsx)(c, {
+            children: [(0, i.jsx)(o, {}), (0, i.jsx)(d, {
                 width: 100
-            }), (0, i.jsx)(c, {
+            }), (0, i.jsx)(d, {
                 width: 74
-            }), (0, i.jsx)(c, {
+            }), (0, i.jsx)(d, {
                 width: 100
-            }), (0, i.jsx)(c, {
+            }), (0, i.jsx)(d, {
                 width: 70
-            }), (0, i.jsx)(c, {
+            }), (0, i.jsx)(d, {
                 width: 112
-            }), (0, i.jsx)(c, {
+            }), (0, i.jsx)(d, {
                 width: 175
-            }), (0, i.jsx)(r, {}), (0, i.jsx)(o, {}), (0, i.jsx)(c, {
+            }), (0, i.jsx)(r, {}), (0, i.jsx)(o, {}), (0, i.jsx)(d, {
                 width: 100
-            }), (0, i.jsx)(c, {
+            }), (0, i.jsx)(d, {
                 width: 74
-            }), (0, i.jsx)(c, {
+            }), (0, i.jsx)(d, {
                 width: 100
-            }), (0, i.jsx)(c, {
+            }), (0, i.jsx)(d, {
                 width: 70
-            }), (0, i.jsx)(c, {
+            }), (0, i.jsx)(d, {
                 width: 112
-            }), (0, i.jsx)(c, {
+            }), (0, i.jsx)(d, {
                 width: 56
             })]
         })

@@ -9,8 +9,8 @@ var i = n(64700),
     a = n(843472),
     r = n(608299),
     o = n(23658),
-    c = n(425059),
-    d = n(218152),
+    d = n(425059),
+    c = n(218152),
     u = n(451909),
     h = n(31717),
     A = n(522602),
@@ -23,8 +23,8 @@ function p(e) {
         parentChannel: t,
         parentMessageId: n,
         threadSettings: l,
-        privateThreadMode: c,
-        location: d,
+        privateThreadMode: d,
+        location: c,
         onThreadCreated: p,
         useDefaultThreadName: f
     } = e, x = i.useCallback((e, t, n, i) => {
@@ -33,10 +33,10 @@ function p(e) {
             location: m.Hx.THREAD_CREATION,
             stickerIds: i,
             attachmentsToUpload: t,
-            onAttachmentUploadError: (i, l, a, c) => {
+            onAttachmentUploadError: (i, l, a, d) => {
                 (0, o.openUploadError)({
                     title: g.intl.string(g.t.B3vFdU),
-                    help: c?.message ?? g.intl.string(g.t.zMEjJg)
+                    help: d?.message ?? g.intl.string(g.t.zMEjJg)
                 }), "" !== n && "" === h.A.getDraft(e.id, h.C.FirstThreadMessage) && s.A.saveDraft(e.id, n, h.C.FirstThreadMessage), 0 === A.A.getUploadCount(e.id, h.C.FirstThreadMessage) && r.A.setUploads({
                     channelId: e.id,
                     uploads: t,
@@ -49,15 +49,15 @@ function p(e) {
         parentChannel: t,
         parentMessageId: n,
         threadSettings: l,
-        privateThreadMode: c,
-        location: d,
+        privateThreadMode: d,
+        location: c,
         onThreadCreated: p,
         useDefaultThreadName: f,
         uploadHandler: x
     })
 }
 async function f(e) {
-    let t = new c.A,
+    let t = new d.A,
         n = await t.uploadFiles(e);
     return {
         uploaderFile: t._file,
@@ -71,7 +71,7 @@ function x(e) {
     } = e, {
         name: n,
         appliedTags: i
-    } = (0, d.kU)(e => {
+    } = (0, c.kU)(e => {
         let {
             name: t,
             appliedTags: n

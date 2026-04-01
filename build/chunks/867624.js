@@ -9,8 +9,8 @@ var l = n(311907),
     a = n(863922),
     r = n(513272),
     o = n(954571),
-    c = n(58736),
-    d = n(652215),
+    d = n(58736),
+    c = n(652215),
     u = n(521732),
     h = n(985018);
 
@@ -18,10 +18,10 @@ function A(e) {
     let {
         channel: t
     } = e, n = (0, l.bG)([r.A], () => r.A.shouldShowTopicsBar());
-    return (0, i.jsx)(c.Ay.Icon, {
+    return (0, i.jsx)(d.Ay.Icon, {
         icon: s.Kck,
         onClick: () => {
-            o.default.track(d.HAw.SUMMARIES_SIDEBAR_TOGGLED, {
+            o.default.track(c.HAw.SUMMARIES_SIDEBAR_TOGGLED, {
                 summaries_sidebar_open: !n,
                 source: u.er.TOOLBAR_BUTTON,
                 guild_id: t.guild_id,

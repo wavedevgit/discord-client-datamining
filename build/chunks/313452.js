@@ -8,8 +8,8 @@ var i = n(627968),
     a = n.n(s),
     r = n(735438),
     o = n.n(r),
-    c = n(837381),
-    d = n(311907),
+    d = n(837381),
+    c = n(311907),
     u = n(397927),
     h = n(928039),
     A = n(793574),
@@ -123,7 +123,7 @@ function D(e) {
             isLoading: V,
             isLoadingComplete: H,
             hasLoadedEver: F
-        } = (0, d.cf)([I.A], () => ({
+        } = (0, c.cf)([I.A], () => ({
             isLoading: I.A.isLoading,
             isLoadingComplete: I.A.isLoadingComplete,
             hasLoadedEver: I.A.hasLoadedEver
@@ -133,7 +133,7 @@ function D(e) {
             messageCategoryOpenStates: W,
             toggleOpenState: Y
         } = (0, E.A)(),
-        z = (t = (0, d.yK)([I.A], () => I.A.getNotifyingChannelIds() ?? []), (0, d.bG)([I.A, m.Ay], () => {
+        z = (t = (0, c.yK)([I.A], () => I.A.getNotifyingChannelIds() ?? []), (0, c.bG)([I.A, m.Ay], () => {
             let e = I.A.getChannelInfoMap();
             for (let n of t) {
                 let t = e[n];
@@ -260,9 +260,9 @@ function D(e) {
         onClick: R,
         onDoubleClick: R,
         "aria-label": e["aria-label"],
-        children: (0, i.jsx)(c.hD, {
+        children: (0, i.jsx)(d.hD, {
             navigator: k,
-            children: (0, i.jsx)(c.PR, {
+            children: (0, i.jsx)(d.PR, {
                 children: e => {
                     let {
                         ref: t,

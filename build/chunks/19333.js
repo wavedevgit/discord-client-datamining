@@ -4,78 +4,78 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var l = n(503698),
-    a = n.n(l),
+var a = n(503698),
+    l = n.n(a),
     s = n(688807),
     r = n(311907),
     o = n(435371),
-    d = n(397927),
-    c = n(442433),
+    c = n(397927),
+    d = n(442433),
     u = n(775602),
-    g = n(915089),
-    m = n(961350),
+    m = n(915089),
+    g = n(961350),
     p = n(183555),
     x = n(735321),
     f = n(606758),
-    h = n(518477),
-    _ = n(985018),
+    _ = n(518477),
+    h = n(985018),
     A = n(183035);
 
 function I(e) {
     let {
         widget: t,
         className: n,
-        buttonRef: l,
+        buttonRef: a,
         additionalMenuItems: s
-    } = e, r = (0, x.L)(t), o = (0, g.GV)();
-    return (0, i.jsx)(E, {
-        targetRef: l,
+    } = e, r = (0, x.L)(t), o = (0, m.GV)();
+    return (0, i.jsx)(j, {
+        targetRef: a,
         widget: t,
         additionalMenuItems: s,
-        children: e => (0, i.jsx)(j, {
-            children: (0, i.jsxs)(d.DUT, {
-                innerRef: l,
-                className: a()(A.x6, n),
+        children: e => (0, i.jsx)(v, {
+            children: (0, i.jsxs)(c.DUT, {
+                innerRef: a,
+                className: l()(A.x6, n),
                 "data-dnd-name": r,
-                "aria-label": _.intl.formatToPlainString(_.t.HWNJJN, {
+                "aria-label": h.intl.formatToPlainString(h.t.HWNJJN, {
                     widgetTitle: r
                 }),
                 "aria-describedby": o,
                 "aria-keyshortcuts": "Control+D, Meta+D",
                 ...e,
-                children: [(0, i.jsx)(d.WP0, {
+                children: [(0, i.jsx)(c.WP0, {
                     size: "sm"
-                }), (0, i.jsx)(d.AC4, {
+                }), (0, i.jsx)(c.AC4, {
                     id: o,
-                    children: _.intl.string(_.t.bsuqFn)
+                    children: h.intl.string(h.t.bsuqFn)
                 })]
             })
         })
     })
 }
-let j = e => {
+let v = e => {
         let {
             children: t
         } = e, n = (0, r.bG)([u.A], () => u.A.keyboardModeEnabled), {
-            isDragging: l
+            isDragging: a
         } = (0, s.V)(e => ({
             isDragging: e.isDragging()
         }));
         return (0, i.jsx)(o.m_, {
             __unsupportedReactNodeAsText: (0, i.jsxs)("div", {
                 className: A.HE,
-                children: [(0, i.jsx)(d.Text, {
+                children: [(0, i.jsx)(c.Text, {
                     variant: "text-sm/normal",
                     color: "none",
-                    children: _.intl.format(n ? _.t["zvln/l"] : _.t["7cdwhg"], {
+                    children: h.intl.format(n ? h.t["zvln/l"] : h.t["7cdwhg"], {
                         emphasizeHook: e => (0, i.jsx)("strong", {
                             children: e
                         })
                     })
-                }), (0, i.jsx)(d.Text, {
+                }), (0, i.jsx)(c.Text, {
                     variant: "text-sm/normal",
                     color: "none",
-                    children: _.intl.format(_.t["4e0rM4"], {
+                    children: h.intl.format(h.t["4e0rM4"], {
                         emphasizeHook: e => (0, i.jsx)("strong", {
                             children: e
                         })
@@ -83,42 +83,42 @@ let j = e => {
                 })]
             }),
             position: "top",
-            shouldShow: !0 !== l,
+            shouldShow: !0 !== a,
             ariaHidden: !0,
             children: t
         })
     },
-    E = e => {
+    j = e => {
         let {
             children: t,
-            widget: l,
-            targetRef: a,
+            widget: a,
+            targetRef: l,
             additionalMenuItems: s
         } = e, {
             trackUserProfileEditAction: r
         } = (0, p.NJ)(), o = e => {
             if (e.shiftKey) {
-                (0, x.qA)(l), r({
+                (0, x.qA)(a), r({
                     action: "WIDGET_REMOVED",
-                    ...l.getProfileEditAnalyticsOptions()
-                }), (0, f.XA)(h.jM.WIDGET_REMOVED);
+                    ...a.getProfileEditAnalyticsOptions()
+                }), (0, f.XA)(_.jM.WIDGET_REMOVED);
                 return
-            }(0, d.mMO)(async () => {
+            }(0, c.mMO)(async () => {
                 let {
                     default: e
                 } = await n.e("53600").then(n.bind(n, 380035));
                 return t => (0, i.jsx)(e, {
                     ...t,
-                    userId: m.default.getId(),
-                    widget: l,
+                    userId: g.default.getId(),
+                    widget: a,
                     trackUserProfileEditAction: r
                 })
             }, {
                 stackingBehavior: "stack"
             })
         };
-        return (0, i.jsx)(d.YNO, {
-            targetElementRef: a,
+        return (0, i.jsx)(c.YNO, {
+            targetElementRef: l,
             align: "top",
             position: "right",
             disablePointerEvents: !1,
@@ -126,25 +126,25 @@ let j = e => {
                 let {
                     closePopout: t
                 } = e;
-                return (0, i.jsx)(d.W1t, {
+                return (0, i.jsx)(c.W1t, {
                     "data-menu-migrated": !0,
                     navId: "user-profile-widget-context-menu",
                     onClose: () => {
-                        (0, c.Z_)(), t()
+                        (0, d.Z_)(), t()
                     },
                     onSelect: () => {},
-                    "aria-label": _.intl.string(_.t.xpSHSk),
+                    "aria-label": h.intl.string(h.t.xpSHSk),
                     className: A.MK,
-                    children: (0, i.jsxs)(d.rXV, {
-                        children: [s, (0, i.jsx)(d.Drp, {
+                    children: (0, i.jsxs)(c.rXV, {
+                        children: [s, (0, i.jsx)(c.Drp, {
                             id: "remove-widget",
-                            label: _.intl.string(_.t.Mm07Yc),
+                            label: h.intl.string(h.t.Mm07Yc),
                             action: o,
                             color: "danger",
-                            icon: d.ucK,
+                            icon: c.ucK,
                             leadingAccessory: {
                                 type: "icon",
-                                icon: d.ucK
+                                icon: c.ucK
                             }
                         })]
                     })

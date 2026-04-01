@@ -13,10 +13,10 @@ let a = e => {
         children: a,
         onRequestOpen: r,
         onRequestClose: o,
-        targetElementRef: c
+        targetElementRef: d
     } = e;
     return (0, i.jsx)(l.YNO, {
-        targetElementRef: c,
+        targetElementRef: d,
         onRequestOpen: r,
         onRequestClose: o,
         animation: l.YNO.Animation.NONE,

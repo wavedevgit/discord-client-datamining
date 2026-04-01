@@ -8,8 +8,8 @@ var i, l = n(735438),
     a = n(311907),
     r = n(73153),
     o = n(455234),
-    c = n(63995),
-    d = n(69407),
+    d = n(63995),
+    c = n(69407),
     u = n(152007),
     h = n(734057),
     A = n(71393),
@@ -49,7 +49,7 @@ function y(e) {
 }
 
 function v(e) {
-    return !g.Ay.isChannelMuted(e.guild_id, e.id) && (e.isGuildStageVoice() ? c.A.getMutableParticipants(e.id, d.ip.SPEAKER).length > 0 : p.Ay.getVoiceStatesForChannel(e).length > 0)
+    return !g.Ay.isChannelMuted(e.guild_id, e.id) && (e.isGuildStageVoice() ? d.A.getMutableParticipants(e.id, c.ip.SPEAKER).length > 0 : p.Ay.getVoiceStatesForChannel(e).length > 0)
 }
 
 function j(e) {
@@ -62,28 +62,28 @@ function j(e) {
         a = null,
         r = null,
         o = !0,
-        c = !0,
-        d = !1,
+        d = !0,
+        c = !1,
         u = t.getCategoryFromSection(t.voiceChannelsSectionNumber),
         h = u?.getShownChannelIds() ?? [],
         [A, m, g] = t.getSlicedChannels(n);
     for (let e = 0; e < m.length; e++) {
         let t = m[e];
-        if ((b(t.id) || s().some(t.threadIds, b)) && (c = !1), (y(t.id) || s().some(t.threadIds, y)) && (o = !1), h.includes(t.id) && (d = !0), !c && !o && d) break
+        if ((b(t.id) || s().some(t.threadIds, b)) && (d = !1), (y(t.id) || s().some(t.threadIds, y)) && (o = !1), h.includes(t.id) && (c = !0), !d && !o && c) break
     }
     let p = 0,
         f = !1,
         E = 0,
         I = !1;
-    if (c || o)
+    if (d || o)
         for (let e = A.length - 1; e >= 0; e--) {
             let t = A[e];
             (b(t.id) || s().some(t.threadIds, b)) && (null == l && (l = t.id), f = !0), (y(t.id) || s().some(t.threadIds, y)) && (null == i && (i = t.id), p += _.Ay.getMentionCount(t.id), p += s().sumBy(t.threadIds, _.Ay.getMentionCount))
         }
-    if (c || o)
+    if (d || o)
         for (let e = 0; e < g.length; e++) {
             let t = g[e];
-            if (!c && !o) break;
+            if (!d && !o) break;
             (b(t.id) || s().some(t.threadIds, b)) && (null == r && (r = t.id), I = !0), (y(t.id) || s().some(t.threadIds, y)) && (null == a && (a = t.id), E += _.Ay.getMentionCount(t.id), E += s().sumBy(t.threadIds, _.Ay.getMentionCount))
         }
     let N = null,
@@ -93,11 +93,11 @@ function j(e) {
         mode: "mentions",
         mentionCount: E,
         targetChannelId: a
-    } : !d && s().some(R, v) ? N = {
+    } : !c && s().some(R, v) ? N = {
         mode: "voice-channels",
         mentionCount: 0,
         targetChannelId: null
-    } : c && I && (N = {
+    } : d && I && (N = {
         mode: "unread",
         mentionCount: 0,
         targetChannelId: r
@@ -105,7 +105,7 @@ function j(e) {
         mode: "mentions",
         mentionCount: p,
         targetChannelId: i
-    } : c && f && (j = {
+    } : d && f && (j = {
         mode: "unread",
         mentionCount: 0,
         targetChannelId: l
@@ -162,7 +162,7 @@ function U(e) {
 class G extends a.Ay.Store {
     static displayName = "ChannelListUnreadsStore";
     initialize() {
-        this.waitFor(x.A, h.A, A.A, u.A, _.Ay, m.A, p.Ay, c.A, g.Ay)
+        this.waitFor(x.A, h.A, A.A, u.A, _.Ay, m.A, p.Ay, d.A, g.Ay)
     }
     getUnreadStateForGuildId(e) {
         return T[e] ?? N

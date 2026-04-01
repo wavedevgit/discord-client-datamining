@@ -8,21 +8,21 @@ var i = n(627968),
     a = n(73939),
     r = n(397927),
     o = n(734057),
-    c = n(131677),
-    d = n(383501),
+    d = n(131677),
+    c = n(383501),
     u = n(50400),
     h = n(985018);
 
 function A() {
     (0, s.bG)([o.A], () => o.A.getPrivateChannelsVersion());
     let e = o.A.getMutablePrivateChannels(),
-        t = (0, s.yK)([c.A], () => c.A.getUnreadPrivateChannelIds()),
+        t = (0, s.yK)([d.A], () => d.A.getUnreadPrivateChannelIds()),
         {
             selectedVoiceGuildId: n,
             selectedVoiceChannelId: A
-        } = (0, s.cf)([d.A], () => ({
-            selectedVoiceGuildId: d.A.getGuildId(),
-            selectedVoiceChannelId: d.A.getChannelId()
+        } = (0, s.cf)([c.A], () => ({
+            selectedVoiceGuildId: c.A.getGuildId(),
+            selectedVoiceChannelId: c.A.getChannelId()
         })),
         _ = t.map(t => {
             let n = e[t];

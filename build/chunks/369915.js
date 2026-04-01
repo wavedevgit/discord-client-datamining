@@ -8,8 +8,8 @@ var i = n(627968),
     a = n(442433),
     r = n(686956),
     o = n(366811),
-    c = n(383394),
-    d = n(458294),
+    d = n(383394),
+    c = n(458294),
     u = n(71393),
     h = n(403362),
     A = n(842452),
@@ -24,7 +24,7 @@ let g = l.memo(function(e) {
         name: f,
         color: x,
         children: E
-    } = t, I = E.map(e => e.id), C = (0, o.A)(e => e.guildId), N = (0, s.bG)([c.A], () => c.A.isFolderExpanded(p)), T = function(e) {
+    } = t, I = E.map(e => e.id), C = (0, o.A)(e => e.guildId), N = (0, s.bG)([d.A], () => d.A.isFolderExpanded(p)), T = function(e) {
         let t = e.children.map(e => {
                 let t = e.id,
                     n = u.A.getGuild(t);
@@ -38,10 +38,10 @@ let g = l.memo(function(e) {
         mentionCount: b,
         isMentionLowImportance: y,
         unread: v
-    } = (0, s.cf)([d.default], () => ({
-        mentionCount: I.map(e => d.default.getMentionCount(e)).reduce((e, t) => e + t, 0),
-        isMentionLowImportance: I.every(e => d.default.getIsMentionLowImportance(e)),
-        unread: I.some(e => d.default.hasUnread(e))
+    } = (0, s.cf)([c.default], () => ({
+        mentionCount: I.map(e => c.default.getMentionCount(e)).reduce((e, t) => e + t, 0),
+        isMentionLowImportance: I.every(e => c.default.getIsMentionLowImportance(e)),
+        unread: I.some(e => c.default.hasUnread(e))
     })), j = l.useCallback(() => {
         r.A.toggleGuildFolderExpand(p)
     }, [p]), R = l.useCallback(e => {

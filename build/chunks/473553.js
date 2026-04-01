@@ -8,8 +8,8 @@ var i = n(627968),
     a = n(311907),
     r = n(554146),
     o = n(397927),
-    c = n(932001),
-    d = n(625180),
+    d = n(932001),
+    c = n(625180),
     u = n(544028),
     h = n(829219),
     A = n(859703),
@@ -41,12 +41,12 @@ function O(e) {
         location: b.rE.QUEST_ACTIVITY_HEADER,
         questContent: _.uF.QUEST_ACTIVITY_HEADER,
         sourceQuestContent: _.uF.RUNNING_ACTIVITY
-    }), [A, m] = l.useState(!1), g = l.useRef(null), E = l.useRef(null), [T, O] = (0, c.kn)([r.M.QUEST_ACTIVITY_HEADER_INTRO], void 0, !0), {
+    }), [A, m] = l.useState(!1), g = l.useRef(null), E = l.useRef(null), [T, O] = (0, d.kn)([r.M.QUEST_ACTIVITY_HEADER_INTRO], void 0, !0), {
         completedRatio: L,
         completedRatioDisplay: M,
         percentComplete: D
     } = (0, f.O9)(t, !0), U = l.useCallback(() => {
-        d.A.updateFrameLayoutMode({
+        c.A.updateFrameLayoutMode({
             applicationId: n,
             layoutMode: v.y.PIP
         })
@@ -159,36 +159,36 @@ function O(e) {
 function L(e) {
     let {
         applicationId: t
-    } = e, r = (0, a.bG)([A.A], () => A.A.quests), c = (0, a.bG)([u.A], () => u.A.theme), d = l.useMemo(() => (0, E.jm)(r, t, !0)[0], [r, t]), {
+    } = e, r = (0, a.bG)([A.A], () => A.A.quests), d = (0, a.bG)([u.A], () => u.A.theme), c = l.useMemo(() => (0, E.jm)(r, t, !0)[0], [r, t]), {
         enabled: h,
         showSkipButton: p
     } = g.Ym.useConfig({
         location: b.rE.QUEST_ACTIVITY_HEADER
-    }), f = (0, a.bG)([m.A], () => m.A.getState().autoEnroll), x = d?.id, I = (0, a.bG)([m.A], () => m.A.isDismissed(x), [x]);
+    }), f = (0, a.bG)([m.A], () => m.A.getState().autoEnroll), x = c?.id, I = (0, a.bG)([m.A], () => m.A.isDismissed(x), [x]);
     return (l.useEffect(() => {
-        !h || null == d || d.userStatus?.enrolledAt != null || f || I || (0, o.mMO)(async () => {
+        !h || null == c || c.userStatus?.enrolledAt != null || f || I || (0, o.mMO)(async () => {
             let {
                 default: e
             } = await n.e("85986").then(n.bind(n, 113273));
             return t => (0, i.jsx)(e, {
                 ...t,
-                quest: d,
+                quest: c,
                 showSkipButton: p
             })
         }, {
             modalKey: "quest-activity-unenrolled-modal"
         })
-    }, [h, d, f, I, p]), null != d && h) ? (0, i.jsx)(s.NPJ, {
-        theme: c,
+    }, [h, c, f, I, p]), null != c && h) ? (0, i.jsx)(s.NPJ, {
+        theme: d,
         children: e => (0, i.jsx)("div", {
             className: e,
             children: (0, i.jsx)(T.R, {
-                questOrQuests: d,
+                questOrQuests: c,
                 questContent: _.uF.QUEST_ACTIVITY_HEADER,
                 sourceQuestContent: _.uF.RUNNING_ACTIVITY,
                 overrideVisibility: !0,
                 children: () => (0, i.jsx)(O, {
-                    quest: d,
+                    quest: c,
                     applicationId: t
                 })
             })

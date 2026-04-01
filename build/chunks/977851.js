@@ -8,8 +8,8 @@ var i = n(627968),
     a = n.n(s),
     r = n(735438),
     o = n(311907),
-    c = n(367513),
-    d = n(688810),
+    d = n(367513),
+    c = n(688810),
     u = n(313961),
     h = n(384059),
     A = n(222823),
@@ -72,7 +72,7 @@ function T(e) {
         } = e,
         {
             parentAnalyticsLocation: S
-        } = (0, d.Ay)(),
+        } = (0, c.Ay)(),
         {
             disabled: b
         } = T,
@@ -103,7 +103,7 @@ function T(e) {
             }
         }(n),
         L = l.useCallback(() => {
-            (0, h.X)(S, h.O.CHAT, !v), A?.(), !v && m && f?.(), c.A.updateChatOpen(n, !v, "toggle chat button")
+            (0, h.X)(S, h.O.CHAT, !v), A?.(), !v && m && f?.(), d.A.updateChatOpen(n, !v, "toggle chat button")
         }, [n, v, A, m, f, S]),
         M = l.useCallback(e => {
             let {

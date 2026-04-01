@@ -8,8 +8,8 @@ var i = n(627968),
     a = n.n(s),
     r = n(311907),
     o = n(3026),
-    c = n(990078),
-    d = n(397927),
+    d = n(990078),
+    c = n(397927),
     u = n(104171),
     h = n(793574),
     A = n(688810),
@@ -56,15 +56,15 @@ class S {
     getNicknameGuildPairs() {
         return this.generateNicknameGuildPairs(this.user)
     }
-    renderMoreAvatars = () => (0, i.jsx)(c.m, {
+    renderMoreAvatars = () => (0, i.jsx)(d.m, {
         asContainer: !0,
         tag: "span",
         text: N.intl.string(N.t["UTjRE/"]),
         position: "bottom",
-        children: (0, i.jsx)(d.DUT, {
+        children: (0, i.jsx)(c.DUT, {
             className: T.OZ,
             onClick: this.handleClick,
-            children: (0, i.jsx)(d.U1e, {
+            children: (0, i.jsx)(c.U1e, {
                 size: "xs",
                 color: "currentColor",
                 className: T.WW
@@ -73,12 +73,12 @@ class S {
     }, "more-avatars");
     renderNicknamePairs(e) {
         return this.getNicknameGuildPairs().map((t, n) => {
-            let [s, a] = t, r = (0, i.jsx)(d.DUT, {
+            let [s, a] = t, r = (0, i.jsx)(c.DUT, {
                 tag: "span",
                 onClick: this.handleClick,
                 children: s
             });
-            return a.length > 0 && (r = (0, i.jsx)(c.m, {
+            return a.length > 0 && (r = (0, i.jsx)(d.m, {
                 asContainer: !0,
                 tag: "span",
                 text: a.join(", "),
@@ -138,7 +138,7 @@ function b(e) {
         value: m,
         children: [(0, i.jsx)(I.cG, {
             className: T.yF
-        }), (0, i.jsx)(d.LpS, {
+        }), (0, i.jsx)(c.LpS, {
             text: N.intl.string(N.t.l1QVfj),
             disableColor: !0,
             className: T.RV
@@ -149,7 +149,7 @@ function b(e) {
             renderUser: (e, t, n) => {
                 let l = g.user,
                     a = s[n];
-                return null == a || null == l ? null : (0, i.jsx)(c.m, {
+                return null == a || null == l ? null : (0, i.jsx)(d.m, {
                     asContainer: !0,
                     text: p.A.getGuild(a)?.name,
                     position: "bottom",

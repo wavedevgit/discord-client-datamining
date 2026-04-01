@@ -8,8 +8,8 @@ var i = n(627968),
     a = n(837381),
     r = n(311907),
     o = n(397927),
-    c = n(442433),
-    d = n(313961),
+    d = n(442433),
+    c = n(313961),
     u = n(571694),
     h = n(47167),
     A = n(598104),
@@ -133,7 +133,7 @@ class R extends l.PureComponent {
         let {
             channel: t
         } = this.props, l = t.type === S.rbe.DM ? f.default.getUser(t.getRecipientId()) : null;
-        null != l ? (0, c.L3)(e, async () => {
+        null != l ? (0, d.L3)(e, async () => {
             let {
                 default: e
             } = await Promise.all([n.e("97262"), n.e("42128"), n.e("39778"), n.e("22283")]).then(n.bind(n, 385913));
@@ -142,7 +142,7 @@ class R extends l.PureComponent {
                 channel: t,
                 user: l
             })
-        }) : (0, c.L3)(e, async () => {
+        }) : (0, d.L3)(e, async () => {
             let {
                 default: e
             } = await Promise.all([n.e("97262"), n.e("60200")]).then(n.bind(n, 4027));
@@ -161,8 +161,8 @@ class R extends l.PureComponent {
             badge: l,
             audio: a,
             video: r,
-            stream: c,
-            isCurrentUserInThisDMCall: d,
+            stream: d,
+            isCurrentUserInThisDMCall: c,
             unread: u,
             treeItemProps: h
         } = this.props, {
@@ -209,8 +209,8 @@ class R extends l.PureComponent {
                         upperBadge: (0, T.oi)({
                             audio: a,
                             video: r,
-                            screenshare: c,
-                            isCurrentUserConnected: d
+                            screenshare: d,
+                            isCurrentUserConnected: c
                         }),
                         lowerBadgeSize: {
                             width: (0, o.o6S)(l)
@@ -226,13 +226,13 @@ let O = l.forwardRef(function(e, t) {
     let n = e.channel.id,
         l = (0, h.Ay)(e.channel),
         s = (0, a.Vd)(n, 2),
-        c = (0, r.bG)([m.A], () => m.A.getChannelId(), []),
-        u = (0, r.bG)([d.A], () => d.A.getMode(n), [n]),
+        d = (0, r.bG)([m.A], () => m.A.getChannelId(), []),
+        u = (0, r.bG)([c.A], () => c.A.getMode(n), [n]),
         A = (0, r.bG)([_.A], () => _.A.getAllApplicationStreamsForChannel(n).length > 0),
         f = (0, r.bG)([x.Ay], () => x.Ay.getVoiceStatesForChannel(e.channel).length > 0, [e.channel]),
         E = (0, r.bG)([p.A], () => p.A.getChannelId(), []),
         I = (0, r.bG)([g.Ay], () => g.Ay.getMentionCount(n), [n]),
-        C = c === n,
+        C = d === n,
         N = !1,
         T = !1;
     (C || f) && (N = u === S._Of.VOICE, T = u === S._Of.VIDEO);

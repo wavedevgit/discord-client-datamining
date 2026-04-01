@@ -8,8 +8,8 @@ var i = n(627968),
     a = n(311907),
     r = n(397927),
     o = n(736653),
-    c = n(793574),
-    d = n(688810),
+    d = n(793574),
+    c = n(688810),
     u = n(994500),
     h = n(562153),
     A = n(183555),
@@ -31,12 +31,12 @@ function T(e) {
         onHide: T
     } = e, S = (0, m.Ay)(t.id), b = (0, o.Ay)(), y = (0, a.bG)([u.A], () => u.A.isBlocked(t.id)), {
         analyticsLocations: v
-    } = (0, d.Ay)(y ? c.A.BLOCKED_PROFILE_PANEL : c.A.IGNORED_PROFILE_PANEL), j = (0, A.pb)({
+    } = (0, c.Ay)(y ? d.A.BLOCKED_PROFILE_PANEL : d.A.IGNORED_PROFILE_PANEL), j = (0, A.pb)({
         layout: "SIDEBAR",
         userId: t.id,
         channelId: n.id
     }), R = l.useRef(null);
-    return (0, i.jsx)(d.f5, {
+    return (0, i.jsx)(c.f5, {
         value: v,
         children: (0, i.jsx)(A.of, {
             value: j,

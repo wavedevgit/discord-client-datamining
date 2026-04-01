@@ -8,8 +8,8 @@ var i = n(627968),
     a = n(311907),
     r = n(827734),
     o = n(397927),
-    c = n(941971),
-    d = n(900848),
+    d = n(941971),
+    c = n(900848),
     u = n(371911),
     h = n(222823),
     A = n(309010),
@@ -78,9 +78,9 @@ function T(e) {
     }(S), R = b === m.U5.LEGACY ? o.K$s : o.XFE, O = (0, a.bG)([A.A], () => A.A.getChannelId()), L = l.useMemo(() => {
         if (b === m.U5.SIDEBAR) return E.BVt.CHANNEL(E.gNP, O)
     }, [b, O]);
-    return (0, i.jsxs)(d.c, {
+    return (0, i.jsxs)(c.c, {
         ref: h,
-        children: [(0, i.jsx)(c.A, {
+        children: [(0, i.jsx)(d.A, {
             selected: S && b === m.U5.SIDEBAR,
             hovered: f && b === m.U5.SIDEBAR,
             unread: j > 0,

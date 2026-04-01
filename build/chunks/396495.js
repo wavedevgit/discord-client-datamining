@@ -9,8 +9,8 @@ var l = n(503698),
     a = n(110259),
     r = n(421380),
     o = n(397927),
-    c = n(139286),
-    d = n(954571),
+    d = n(139286),
+    c = n(954571),
     u = n(222643),
     h = n(652215),
     A = n(985018),
@@ -21,7 +21,7 @@ function m(e) {
         hidden: t,
         onDismiss: n
     } = e;
-    return (0, c.A)({
+    return (0, d.A)({
         type: a.ImpressionTypes.VIEW,
         name: a.ImpressionNames.HD_STREAMING_POPOUT
     }, {
@@ -41,7 +41,7 @@ function m(e) {
             look: r.$n.Looks.BLANK,
             size: r.$n.Sizes.NONE,
             onClick: () => {
-                n(), d.default.track(h.HAw.HD_STREAMING_POPOUT_DISMISSED)
+                n(), c.default.track(h.HAw.HD_STREAMING_POPOUT_DISMISSED)
             },
             children: (0, i.jsx)(o.PGe, {
                 size: "xs",

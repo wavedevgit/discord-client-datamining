@@ -12,9 +12,9 @@ var i = t(627968),
     c = t(128490),
     u = t(539548),
     _ = t(412775),
-    A = t(86404),
-    p = t(738759),
-    x = t(518477),
+    p = t(86404),
+    x = t(738759),
+    A = t(518477),
     f = t(985018),
     m = t(272823),
     g = t(613761);
@@ -29,22 +29,22 @@ function I(e) {
         channelId: l,
         onClose: o
     } = e;
-    return n === x.RP.ACTIVITY ? (0, i.jsx)(u.A, {
+    return n === A.RP.ACTIVITY ? (0, i.jsx)(u.A, {
         user: t,
         currentUser: a,
         guildId: r,
         onClose: o
-    }) : n === x.RP.MUTUAL_FRIENDS ? (0, i.jsx)(A.A, {
+    }) : n === A.RP.MUTUAL_FRIENDS ? (0, i.jsx)(p.A, {
         user: t,
         guildId: r,
         channelId: l,
         onClose: o
-    }) : n === x.RP.MUTUAL_GUILDS ? (0, i.jsx)(p.A, {
+    }) : n === A.RP.MUTUAL_GUILDS ? (0, i.jsx)(x.A, {
         user: t,
         onClose: o
-    }) : n === x.RP.BOT_DATA_ACCESS ? (0, i.jsx)(d.A, {
+    }) : n === A.RP.BOT_DATA_ACCESS ? (0, i.jsx)(d.A, {
         user: t
-    }) : n === x.RP.BOT_INFO ? (0, i.jsx)(c.A, {
+    }) : n === A.RP.BOT_INFO ? (0, i.jsx)(c.A, {
         user: t,
         displayProfile: s,
         guildId: r,
@@ -63,10 +63,10 @@ function h(e) {
         displayProfile: d,
         guildId: c,
         items: u,
-        initialSection: _ = x.RP.USER_INFO,
-        onClose: A
+        initialSection: _ = A.RP.USER_INFO,
+        onClose: p
     } = e, {
-        trackUserProfileAction: p
+        trackUserProfileAction: x
     } = (0, o.NJ)(), h = (0, s.bG)([l.A], () => l.A.hidePersonalInformation), [b, j] = a.useState(() => u.find(e => {
         let {
             section: n
@@ -77,11 +77,11 @@ function h(e) {
         null == u.find(e => e.section === b) && j(u[0].section)
     }, [u, b]);
     let v = a.useCallback(e => {
-        p({
+        x({
             action: "PRESS_SECTION",
             section: e
         }), j(e)
-    }, [p]);
+    }, [x]);
     return h ? (0, i.jsx)("div", {
         className: g.kL,
         children: (0, i.jsxs)("div", {
@@ -122,7 +122,7 @@ function h(e) {
             currentUser: t,
             displayProfile: d,
             guildId: c,
-            onClose: A
+            onClose: p
         })]
     })
 }

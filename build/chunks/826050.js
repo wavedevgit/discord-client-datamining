@@ -8,8 +8,8 @@ var i = n(627968),
     a = n.n(s),
     r = n(615300),
     o = n(451988),
-    c = n(397927),
-    d = n(203982),
+    d = n(397927),
+    c = n(203982),
     u = n(652215),
     h = n(985018),
     A = n(618154);
@@ -22,16 +22,16 @@ class m extends l.PureComponent {
         shown: !1,
         translateY: new r.A.Value(0)
     };
-    static contextType = c.CZY;
+    static contextType = d.CZY;
     rootRef = l.createRef();
     focusTimeout = new o.Ep;
     componentDidMount() {
         this.setState({
             shown: !0
-        }), d._.subscribe(u.jej.QUICKSWITCHER_RESULT_FOCUS, this.handleResultFocus)
+        }), c._.subscribe(u.jej.QUICKSWITCHER_RESULT_FOCUS, this.handleResultFocus)
     }
     componentWillUnmount() {
-        this.focusTimeout.stop(), d._.unsubscribe(u.jej.QUICKSWITCHER_RESULT_FOCUS, this.handleResultFocus)
+        this.focusTimeout.stop(), c._.unsubscribe(u.jej.QUICKSWITCHER_RESULT_FOCUS, this.handleResultFocus)
     }
     componentDidUpdate() {
         let {

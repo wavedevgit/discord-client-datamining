@@ -8,8 +8,8 @@ var i = n(627968),
     a = n(456412),
     r = n(878549),
     o = n(313961),
-    c = n(493387),
-    d = n(235986),
+    d = n(493387),
+    c = n(235986),
     u = n(808124),
     h = n(203982),
     A = n(484191),
@@ -61,7 +61,7 @@ let I = (0, a.A)(e => {
         channel: b,
         idle: M
     });
-    if (D === f._Of.VOICE) return (0, i.jsx)(c.A, {
+    if (D === f._Of.VOICE) return (0, i.jsx)(d.A, {
         guildId: b.guild_id,
         width: O,
         className: E.Er,
@@ -76,10 +76,10 @@ let I = (0, a.A)(e => {
                 allPoppedOut: e
             })
         }
-        return (0, i.jsx)(d.A, {
+        return (0, i.jsx)(c.A, {
             className: E.HA,
-            justify: d.A.Justify.CENTER,
-            align: d.A.Align.CENTER,
+            justify: c.A.Justify.CENTER,
+            align: c.A.Align.CENTER,
             children: (0, i.jsx)(m.A, {
                 channel: b,
                 className: E.g9,

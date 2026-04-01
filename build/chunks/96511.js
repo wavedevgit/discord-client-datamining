@@ -8,8 +8,8 @@ var i = n(284009),
     a = n(71393),
     r = n(994500),
     o = n(287809),
-    c = n(240248),
-    d = n(427262),
+    d = n(240248),
+    c = n(427262),
     u = n(322387),
     h = n(652215),
     A = n(985018);
@@ -34,11 +34,11 @@ function m(e) {
     let {
         item: t,
         renderApplication: n
-    } = e, i = t.other_user?.id ?? h.dJq, m = d.Ay.getName(o.default.getUser(t.other_user?.id)), g = t.applicationId;
+    } = e, i = t.other_user?.id ?? h.dJq, m = c.Ay.getName(o.default.getUser(t.other_user?.id)), g = t.applicationId;
     switch (t.type) {
         case u.Uo.FRIEND_REQUESTS_GROUPED:
-            let p = d.Ay.getName(o.default.getUser(t.other_users?.[0]?.id)),
-                f = d.Ay.getName(o.default.getUser(t.other_users?.[1]?.id)),
+            let p = c.Ay.getName(o.default.getUser(t.other_users?.[0]?.id)),
+                f = c.Ay.getName(o.default.getUser(t.other_users?.[1]?.id)),
                 x = Math.max((t.other_users?.length ?? 0) - 2, 0);
             return A.intl.format(A.t.g5xyIC, {
                 user: p,
@@ -57,7 +57,7 @@ function m(e) {
                 N = C?.name,
                 T = a.A.getGuild(C?.guild_id)?.name,
                 S = (0, s.AZ)(C ?? void 0);
-            return (0, c.uJ)(T) || (0, c.uJ)(N) || !S ? t.body ?? "" : A.intl.format(A.t.AyvfXR, {
+            return (0, d.uJ)(T) || (0, d.uJ)(N) || !S ? t.body ?? "" : A.intl.format(A.t.AyvfXR, {
                 event_name: N,
                 guild_name: T
             });

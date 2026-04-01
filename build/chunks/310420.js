@@ -8,23 +8,23 @@ var i = n(627968),
     a = n(397927),
     r = n(145331),
     o = n(670455),
-    c = n(985018),
-    d = n(553936);
+    d = n(985018),
+    c = n(553936);
 
 function u(e) {
     let {
         rating: t,
         onClick: n
-    } = e, r = t === o.P0.BAD ? s.ThumbsDownIcon : s.ThumbsUpIcon, c = l.useCallback(() => {
+    } = e, r = t === o.P0.BAD ? s.ThumbsDownIcon : s.ThumbsUpIcon, d = l.useCallback(() => {
         n(t)
     }, [n, t]);
     return (0, i.jsx)(a.DUT, {
-        onClick: c,
-        className: d.zc,
+        onClick: d,
+        className: c.zc,
         children: (0, i.jsx)(r, {
             size: "md",
             color: "currentColor",
-            className: d.Kk
+            className: c.Kk
         })
     })
 }
@@ -51,13 +51,13 @@ let h = function(e) {
         })
     }, [s, t]);
     return (0, i.jsxs)("div", {
-        className: d.kL,
+        className: c.kL,
         children: [(0, i.jsx)(a.Text, {
             variant: "text-sm/medium",
             color: "text-strong",
-            children: c.intl.string(c.t["I+4OJC"])
+            children: d.intl.string(d.t["I+4OJC"])
         }), (0, i.jsxs)("div", {
-            className: d.Pt,
+            className: c.Pt,
             children: [(0, i.jsx)(u, {
                 rating: o.P0.GOOD,
                 onClick: h

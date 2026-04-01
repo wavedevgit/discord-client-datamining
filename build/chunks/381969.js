@@ -9,8 +9,8 @@ var i = n(627968),
     a = n.n(s),
     r = n(417597),
     o = n(554146),
-    c = n(58149),
-    d = n(826673),
+    d = n(58149),
+    c = n(826673),
     u = n(440293),
     h = n(599941),
     A = n(960253),
@@ -48,9 +48,9 @@ function b(e) {
             categoryTabs: O,
             isPhantomPreview: U,
             handlePreviewDismiss: e => {
-                (0, d.Dr)(o.M.SERVER_SHOP_PHANTOM_PREVIEW);
+                (0, c.Dr)(o.M.SERVER_SHOP_PHANTOM_PREVIEW);
                 let t = {
-                    ...(0, c.H$)(s)
+                    ...(0, d.H$)(s)
                 };
                 M === E.B.GUILD_PRODUCTS_PREVIEW ? (e.stopPropagation(), D(E.B.GUILD_ROLE_SUBSCRIPTIONS), t.action_taken = C.hN.DISMISS_TAB_PREVIEW) : ((0, m.bG)(N.BVt.CHANNEL(s, g.Ay.getDefaultChannel(s)?.id)), t.action_taken = C.hN.DISMISS_FULL_PREVIEW), f.default.track(N.HAw.GUILD_SHOP_PREVIEW_CLICK, t)
             }

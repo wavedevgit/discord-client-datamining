@@ -9,8 +9,8 @@ var l = n(397927),
     a = n(272355),
     r = n(793574),
     o = n(532794),
-    c = n(219271),
-    d = n(287809),
+    d = n(219271),
+    c = n(287809),
     u = n(816733),
     h = n(927578),
     A = n(882442),
@@ -43,7 +43,7 @@ class p extends a.A {
         })
     }
     _maybeFetchPremiumOffer = async () => {
-        let e = d.default.getCurrentUser();
+        let e = c.default.getCurrentUser();
         if (null != e && e.verified) {
             let t = (u.A.canFractionalPremiumUserUseOffer() || !(0, h.TW)(e)) && !u.A.isFetchingOffer();
             await (0, m._D)("PremiumManager", t)
@@ -53,7 +53,7 @@ class p extends a.A {
         })
     };
     _maybeFetchCheckoutRecovery = async () => {
-        let e = d.default.getCurrentUser();
+        let e = c.default.getCurrentUser();
         null != e && e.verified && !(0, h.TW)(e) && _.A.shouldFetchCheckoutRecovery() && await (0, A.c)()
     };
     _maybeFetchUserAffinities = () => {
@@ -62,7 +62,7 @@ class p extends a.A {
         } = g.u.getConfig({
             location: "PremiumManager"
         });
-        e && (0, c.u)()
+        e && (0, d.u)()
     };
     _handlePremiumPaymentModalOpen = e => {
         (0, o.A)({

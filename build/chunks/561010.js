@@ -8,8 +8,8 @@ var i = n(64700),
     a = n(964486),
     r = n(36124),
     o = n(317525),
-    c = n(219065),
-    d = n(818348),
+    d = n(219065),
+    c = n(818348),
     u = n(985018);
 let h = [];
 
@@ -21,9 +21,9 @@ function A(e, t) {
         {
             version: A,
             members: _
-        } = (0, l.cf)([c.A], () => ({
-            version: c.A.getMemberListVersion(e),
-            members: c.A.getMemberListSections(e)
+        } = (0, l.cf)([d.A], () => ({
+            version: d.A.getMemberListVersion(e),
+            members: d.A.getMemberListSections(e)
         })),
         m = null == t,
         g = i.useMemo(() => {
@@ -33,10 +33,10 @@ function A(e, t) {
                 label: e.name
             }));
             return e.push({
-                id: d.cl.ONLINE,
+                id: c.cl.ONLINE,
                 label: u.intl.string(u.t.WbGtnH)
             }, {
-                id: d.cl.OFFLINE,
+                id: c.cl.OFFLINE,
                 label: u.intl.string(u.t.Vv0abJ)
             }), e.map(e => {
                 let {

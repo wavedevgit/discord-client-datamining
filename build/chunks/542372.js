@@ -8,8 +8,8 @@ var i = n(627968),
     a = n(73153),
     r = n(367513),
     o = n(58149),
-    c = n(688810),
-    d = n(313961),
+    d = n(688810),
+    c = n(313961),
     u = n(384059),
     h = n(574172),
     A = n(423562),
@@ -29,14 +29,14 @@ function E(e) {
         currentWindow: C
     } = e, {
         parentAnalyticsLocation: N
-    } = (0, c.Ay)(), T = n === x.BRT.POPOUT, S = l.useRef(null), {
+    } = (0, d.Ay)(), T = n === x.BRT.POPOUT, S = l.useRef(null), {
         currentLayout: b,
         mode: y
-    } = (0, s.cf)([d.A], () => {
-        let e = d.A.getMode(t.id),
+    } = (0, s.cf)([c.A], () => {
+        let e = c.A.getMode(t.id),
             i = n === x.BRT.POPOUT;
         i && (e = x._Of.VIDEO);
-        let l = e === x._Of.VIDEO ? d.A.getLayout(t.id, n) : x.DUB.MINIMUM;
+        let l = e === x._Of.VIDEO ? c.A.getLayout(t.id, n) : x.DUB.MINIMUM;
         return i && l !== x.DUB.FULL_SCREEN && (l = x.DUB.NO_CHAT), {
             currentLayout: l,
             mode: e

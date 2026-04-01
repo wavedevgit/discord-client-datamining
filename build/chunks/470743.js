@@ -9,8 +9,8 @@ var l = n(397927),
     a = n(523527),
     r = n(267102),
     o = n(780964),
-    c = n(840065),
-    d = n(652215),
+    d = n(840065),
+    c = n(652215),
     u = n(985018);
 
 function h() {
@@ -22,7 +22,7 @@ function h() {
         id: "voice-and-video-settings",
         label: u.intl.string(u.t.dsXapM),
         action: () => {
-            (0, a.A)(null, e === d.BRT.POPOUT), (0, c.openUserSettings)(o.X.VOICE_AND_VIDEO_PANEL, {
+            (0, a.A)(null, e === c.BRT.POPOUT), (0, d.openUserSettings)(o.X.VOICE_AND_VIDEO_PANEL, {
                 analyticsLocations: t
             })
         },

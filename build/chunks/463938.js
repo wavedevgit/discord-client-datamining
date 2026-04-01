@@ -8,8 +8,8 @@ var i = n(627968),
     a = n(311907),
     r = n(827734),
     o = n(397927),
-    c = n(701785),
-    d = n(65995),
+    d = n(701785),
+    c = n(65995),
     u = n(976860),
     h = n(147925),
     A = n(652215),
@@ -27,7 +27,7 @@ function p(e, t) {
 let f = l.memo(function(e) {
     let {
         guild: t
-    } = e, n = (0, a.bG)([c.h], () => c.h.getNewMemberActions(t.id), [t.id]), f = (0, a.bG)([d.A], () => d.A.getCompletedActions(t.id)), x = l.useMemo(() => {
+    } = e, n = (0, a.bG)([d.h], () => d.h.getNewMemberActions(t.id), [t.id]), f = (0, a.bG)([c.A], () => c.A.getCompletedActions(t.id)), x = l.useMemo(() => {
         if (null == n || null == f) return 0;
         let e = 0;
         return n.forEach(t => {

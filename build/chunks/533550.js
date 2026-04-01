@@ -1,7 +1,7 @@
 /** chunk id: 533550 params = (module,exports,require) **/
 n.d(t, {
     RX: () => o,
-    q8: () => d
+    q8: () => c
 });
 var i = n(64700),
     l = n(942381),
@@ -18,7 +18,7 @@ function o(e) {
     }, l.x)
 }
 
-function c(e) {
+function d(e) {
     if (null == e) return !1;
     try {
         return window.getComputedStyle(e).overflow.includes("scroll")
@@ -27,7 +27,7 @@ function c(e) {
     }
 }
 
-function d(e, t) {
+function c(e, t) {
     let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
         l = i.useRef(null);
     return i.useLayoutEffect(() => {
@@ -56,8 +56,8 @@ function d(e, t) {
         if (null == i) return s(), () => {};
         let o = function(e) {
             let t = e.parentNode;
-            for (; null != t && t !== document.body && !c(t);) t = t.parentNode;
-            return c(t) ? t : null
+            for (; null != t && t !== document.body && !d(t);) t = t.parentNode;
+            return d(t) ? t : null
         }(i);
         return s(), o?.addEventListener("scroll", s, {
             passive: !0

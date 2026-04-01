@@ -8,8 +8,8 @@ var i = n(627968),
     a = n(397927),
     r = n(475743),
     o = n(624458),
-    c = n(408213),
-    d = n(212455),
+    d = n(408213),
+    c = n(212455),
     u = n(967198),
     h = n(636449),
     A = n(263715),
@@ -23,8 +23,8 @@ function x(e) {
     let {
         onActivate: t,
         children: n
-    } = e, o = l.useRef(null), u = (0, s.bG)([d.A], () => d.A.hasJoinRequestCoackmark()), h = l.useCallback(() => {
-        c.Ay.clearCoachmark()
+    } = e, o = l.useRef(null), u = (0, s.bG)([c.A], () => c.A.hasJoinRequestCoackmark()), h = l.useCallback(() => {
+        d.Ay.clearCoachmark()
     }, []), A = (0, r.A)(u), _ = l.useRef(null);
     return l.useEffect(() => {
         u && u !== A && (t(), _.current?.ref?.current?.layerRef?.current?.updatePosition())
@@ -75,7 +75,7 @@ function x(e) {
 function E(e) {
     let {
         onActivate: t
-    } = e, [n, E] = l.useState(!1), I = (0, s.bG)([u.A], () => u.A.getGuildId()), C = (0, s.bG)([d.A], () => d.A.hasFetchedRequestToJoinGuilds), N = (0, _.A)(), T = (0, r.A)(I), S = l.useMemo(() => {
+    } = e, [n, E] = l.useState(!1), I = (0, s.bG)([u.A], () => u.A.getGuildId()), C = (0, s.bG)([c.A], () => c.A.hasFetchedRequestToJoinGuilds), N = (0, _.A)(), T = (0, r.A)(I), S = l.useMemo(() => {
         let e = (0, A.xW)({
             folderId: h.U.PENDING_JOIN_REQUESTS_FOLDER,
             folderName: p.intl.string(p.t["scsU+l"]),
@@ -100,7 +100,7 @@ function E(e) {
             draggable: !1,
             sorting: !1,
             onExpandCollapse: () => {
-                E(!n), c.Ay.clearCoachmark()
+                E(!n), d.Ay.clearCoachmark()
             },
             folderButtonSize: "icon",
             folderButtonContent: (0, i.jsx)("div", {

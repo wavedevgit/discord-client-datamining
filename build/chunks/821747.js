@@ -9,8 +9,8 @@ var l = n(503698),
     a = n(311907),
     r = n(827343),
     o = n(384059),
-    c = n(20504),
-    d = n(430452),
+    d = n(20504),
+    c = n(430452),
     u = n(824744),
     h = n(723702),
     A = n(447404),
@@ -28,12 +28,12 @@ function m(e) {
     } = e, {
         currentVolume: x,
         muted: E
-    } = (0, a.cf)([d.Ay], () => ({
-        currentVolume: d.Ay.getLocalVolume(m, g),
-        muted: d.Ay.isLocalMute(m, g)
+    } = (0, a.cf)([c.Ay], () => ({
+        currentVolume: c.Ay.getLocalVolume(m, g),
+        muted: c.Ay.isLocalMute(m, g)
     }));
     return (0, i.jsx)(A.A, {
-        children: (0, i.jsx)(c.A, {
+        children: (0, i.jsx)(d.A, {
             currentWindow: p,
             iconClassName: s()(n, _.pd),
             sliderClassName: l,

@@ -8,8 +8,8 @@ var i = n(627968),
     a = n(397927),
     r = n(58736),
     o = n(857071),
-    c = n(203982),
-    d = n(607508),
+    d = n(203982),
+    c = n(607508),
     u = n(914703),
     h = n(37411),
     A = n(652215),
@@ -18,11 +18,11 @@ var i = n(627968),
 function m(e) {
     let {
         channel: t
-    } = e, n = (0, d.X)(t), [m, g] = l.useState(!1), p = l.useRef(null), f = (0, s.bG)([o.A], () => null != t.guild_id && o.A.isLurking(t.guild_id));
+    } = e, n = (0, c.X)(t), [m, g] = l.useState(!1), p = l.useRef(null), f = (0, s.bG)([o.A], () => null != t.guild_id && o.A.isLurking(t.guild_id));
     if (l.useEffect(() => {
             let e = () => g(!0);
-            return c._.subscribe(A.jej.OPEN_THREAD_NOTIFICATION_SETTINGS, e), () => {
-                c._.unsubscribe(A.jej.OPEN_THREAD_NOTIFICATION_SETTINGS, e)
+            return d._.subscribe(A.jej.OPEN_THREAD_NOTIFICATION_SETTINGS, e), () => {
+                d._.unsubscribe(A.jej.OPEN_THREAD_NOTIFICATION_SETTINGS, e)
             }
         }, []), f) return null;
     let x = _.intl.string(_.t.h850Ss);

@@ -48,7 +48,7 @@ var v = function(e) {
         v = e.isCustomNode,
         g = (0, o.A)(e, h),
         m = v(c) ? "Custom" : (0, l.A)(c),
-        A = {
+        w = {
             getItemString: t,
             key: r[0],
             keyPath: r,
@@ -58,7 +58,7 @@ var v = function(e) {
             value: c,
             valueRenderer: p
         },
-        w = y(y(y({}, g), A), {}, {
+        A = y(y(y({}, g), w), {}, {
             data: c,
             isCustomNode: v
         });
@@ -67,55 +67,55 @@ var v = function(e) {
         case "Error":
         case "WeakMap":
         case "WeakSet":
-            return s.createElement(u.A, w);
+            return s.createElement(u.A, A);
         case "Array":
-            return s.createElement(b.A, w);
+            return s.createElement(b.A, A);
         case "Iterable":
         case "Map":
         case "Set":
-            return s.createElement(f.A, w);
+            return s.createElement(f.A, A);
         case "String":
-            return s.createElement(d.A, (0, a.A)({}, A, {
+            return s.createElement(d.A, (0, a.A)({}, w, {
                 valueGetter: function(e) {
                     return '"'.concat(e, '"')
                 }
             }));
         case "Number":
         case "Custom":
-            return s.createElement(d.A, A);
+            return s.createElement(d.A, w);
         case "Boolean":
-            return s.createElement(d.A, (0, a.A)({}, A, {
+            return s.createElement(d.A, (0, a.A)({}, w, {
                 valueGetter: function(e) {
                     return e ? "true" : "false"
                 }
             }));
         case "Date":
-            return s.createElement(d.A, (0, a.A)({}, A, {
+            return s.createElement(d.A, (0, a.A)({}, w, {
                 valueGetter: function(e) {
                     return e.toISOString()
                 }
             }));
         case "Null":
-            return s.createElement(d.A, (0, a.A)({}, A, {
+            return s.createElement(d.A, (0, a.A)({}, w, {
                 valueGetter: function() {
                     return "null"
                 }
             }));
         case "Undefined":
-            return s.createElement(d.A, (0, a.A)({}, A, {
+            return s.createElement(d.A, (0, a.A)({}, w, {
                 valueGetter: function() {
                     return "undefined"
                 }
             }));
         case "Function":
         case "Symbol":
-            return s.createElement(d.A, (0, a.A)({}, A, {
+            return s.createElement(d.A, (0, a.A)({}, w, {
                 valueGetter: function(e) {
                     return e.toString()
                 }
             }));
         default:
-            return s.createElement(d.A, (0, a.A)({}, A, {
+            return s.createElement(d.A, (0, a.A)({}, w, {
                 valueGetter: function() {
                     return "<".concat(m, ">")
                 }

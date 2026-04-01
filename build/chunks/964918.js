@@ -8,8 +8,8 @@ var i = n(627968),
     a = n.n(s),
     r = n(735438),
     o = n.n(r),
-    c = n(311907),
-    d = n(397927),
+    d = n(311907),
+    c = n(397927),
     u = n(730134),
     h = n(378570),
     A = n(863005),
@@ -29,19 +29,19 @@ var i = n(627968),
 function b(e) {
     let {
         channel: t
-    } = e, s = (0, c.yK)([A.A, p.Ay, g.A], () => {
+    } = e, s = (0, d.yK)([A.A, p.Ay, g.A], () => {
         let e = A.A.getActiveJoinedRelevantThreadsForParent(t.guild_id, t.id);
         return o()(A.A.getActiveJoinedThreadsForParent(t.guild_id, t.id)).values().map(e => e.channel).concat(o().values(A.A.getActiveUnjoinedThreadsForParent(t.guild_id, t.id))).filter(t => !(t.id in e) && g.A.can(I.xBc.VIEW_CHANNEL, t)).sort((e, t) => {
             let n = p.Ay.lastMessageId(e.id),
                 i = p.Ay.lastMessageId(t.id);
             return E.default.compare(n, i)
         }).reverse().value()
-    }), r = t.isForumLikeChannel() ? 5 : 3, u = t.isForumLikeChannel() ? d.bSJ : d.ysw;
+    }), r = t.isForumLikeChannel() ? 5 : 3, u = t.isForumLikeChannel() ? c.bSJ : c.ysw;
     return l.useEffect(() => {
         (0, _.TE)()
     }, []), (0, i.jsxs)("div", {
         className: a()(S.popover, T.SW),
-        children: [(0, i.jsx)(d.Text, {
+        children: [(0, i.jsx)(c.Text, {
             variant: "text-sm/medium",
             color: "text-muted",
             className: T.DD,
@@ -50,10 +50,10 @@ function b(e) {
             className: T.p_,
             children: [s.slice(0, t.isForumLikeChannel() ? s.length : r).map(e => (0, i.jsx)(y, {
                 thread: e
-            }, e.id)).filter(e => l.isValidElement(e)).slice(0, r), (0, i.jsxs)(d.DUT, {
+            }, e.id)).filter(e => l.isValidElement(e)).slice(0, r), (0, i.jsxs)(c.DUT, {
                 className: T.nM,
                 onClick: () => {
-                    t.isForumLikeChannel() ? (0, h.iN)(t.id) : (0, d.mMO)(async () => {
+                    t.isForumLikeChannel() ? (0, h.iN)(t.id) : (0, c.mMO)(async () => {
                         let {
                             default: e
                         } = await n.e("65225").then(n.bind(n, 126768));
@@ -71,7 +71,7 @@ function b(e) {
                     })
                 }), (0, i.jsx)("div", {
                     className: T.Pf,
-                    children: (0, i.jsx)(d.Text, {
+                    children: (0, i.jsx)(c.Text, {
                         variant: "text-sm/normal",
                         color: "none",
                         children: N.intl.string(N.t["4qdZ93"])
@@ -85,8 +85,8 @@ function b(e) {
 function y(e) {
     let {
         thread: t
-    } = e, n = (0, c.bG)([f.default], () => f.default.getUser(t.ownerId)), l = (0, _.JO)(t);
-    return (0, i.jsxs)(d.DUT, {
+    } = e, n = (0, d.bG)([f.default], () => f.default.getUser(t.ownerId)), l = (0, _.JO)(t);
+    return (0, i.jsxs)(c.DUT, {
         className: T.nM,
         onClick: e => {
             (0, m.JA)(t, t.isForumPost() ? e.shiftKey : !e.shiftKey, C.H9.POPOUT)
@@ -100,20 +100,20 @@ function y(e) {
             }) : (0, i.jsx)(u.A, {
                 className: T.my,
                 user: n,
-                size: d._3J.SIZE_16
+                size: c._3J.SIZE_16
             })
         }), (0, i.jsxs)("div", {
             className: T.Pf,
-            children: [(0, i.jsx)(d.Text, {
+            children: [(0, i.jsx)(c.Text, {
                 className: T.UU,
                 variant: "text-sm/normal",
                 color: "none",
                 children: t.name
-            }), (0, i.jsx)(d.Text, {
+            }), (0, i.jsx)(c.Text, {
                 variant: "text-sm/normal",
                 color: "text-muted",
                 children: "•"
-            }), (0, i.jsx)(d.Text, {
+            }), (0, i.jsx)(c.Text, {
                 className: T.vE,
                 variant: "text-sm/normal",
                 color: "text-muted",

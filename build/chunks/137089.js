@@ -10,8 +10,8 @@ var i = n(627968),
     a = n.n(s),
     r = n(311907),
     o = n(104171),
-    c = n(186369),
-    d = n(970812),
+    d = n(186369),
+    c = n(970812),
     u = n(395504),
     h = n(543465),
     A = n(147036),
@@ -44,10 +44,10 @@ function E(e) {
     } = e;
     if (t === n.voiceChannelsSectionNumber) return 44;
     let {
-        hasDivider: c,
-        canHaveVoiceSummary: d
-    } = (0, m.B3)(n, a, t), u = c ? r ? 9 : 12 : 0;
-    if (!d || t === _.PU) return u;
+        hasDivider: d,
+        canHaveVoiceSummary: c
+    } = (0, m.B3)(n, a, t), u = d ? r ? 9 : 12 : 0;
+    if (!c || t === _.PU) return u;
     let h = n.getNamedCategoryFromSection(t);
     return null == h ? u : (0, m.Bo)({
         category: h,
@@ -80,7 +80,7 @@ let C = l.memo(function(e) {
         canHaveVoiceSummary: S
     } = l.useMemo(() => (0, m.B3)(n, N, t), [n, N, t, s]), b = l.useMemo(() => t === _.PU ? null : n.getCategoryFromSection(t), [n, t, s]), y = (0, u.jN)(E), {
         enableWaveformIcon: v
-    } = (0, c.b)(E, "ChannelListSectionFooter"), j = (0, r.yK)([h.Ay], () => {
+    } = (0, d.b)(E, "ChannelListSectionFooter"), j = (0, r.yK)([h.Ay], () => {
         if (null == b || !b.isCollapsed || !S) return [];
         let e = b.getChannelRecords(),
             t = [];
@@ -112,7 +112,7 @@ let C = l.memo(function(e) {
                 max: 8,
                 showUserPopout: !0,
                 guildId: E,
-                renderLeadingIcon: v ? e => (0, i.jsx)(d.A, {
+                renderLeadingIcon: v ? e => (0, i.jsx)(c.A, {
                     color: "currentColor",
                     className: a()(e, p.Gj)
                 }) : void 0

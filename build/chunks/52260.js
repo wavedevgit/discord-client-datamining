@@ -1,6 +1,6 @@
 /** chunk id: 52260 params = (module,exports,require) **/
 n.d(t, {
-    A: () => c
+    A: () => d
 });
 var i = n(64700),
     l = n(311907),
@@ -9,12 +9,12 @@ var i = n(64700),
     r = n(645619),
     o = n(103821);
 
-function c(e) {
+function d(e) {
     let t = (0, l.bG)([r.A], () => r.A.getStateForGuild(e)),
         n = (0, l.bG)([a.A], () => a.A.getStateForGuild(e)),
-        c = (0, o.i)("useFeaturedExpiringPowerup");
+        d = (0, o.i)("useFeaturedExpiringPowerup");
     return i.useMemo(() => {
-        if (!c) return;
+        if (!d) return;
         let e = [...Object.values(t?.unlockedPowerups ?? {}), ...Object.values(n?.entitlements ?? {})].filter(e => null != e.ends_at && (e.metadata?.num_expiring_boosts ?? 0) > 0);
         if (0 === e.length) return;
         let i = e.reduce((e, t) => t.ends_at > e.ends_at ? t : e),
@@ -27,5 +27,5 @@ function c(e) {
             isGameServer: a,
             skuId: i.sku_id
         }
-    }, [t, n, c])
+    }, [t, n, d])
 }

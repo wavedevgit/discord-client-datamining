@@ -8,8 +8,8 @@ var i = n(627968),
     a = n.n(s),
     r = n(172218),
     o = n(311907),
-    c = n(397927),
-    d = n(308528),
+    d = n(397927),
+    c = n(308528),
     u = n(442433),
     h = n(676002),
     A = n(811024),
@@ -90,7 +90,7 @@ class B extends M.Ay {
         let {
             channel: e
         } = this.props, t = e.getGuildId();
-        d.A.preload(t ?? P.ME, e.id)
+        c.A.preload(t ?? P.ME, e.id)
     };
     renderPopout = e => {
         let {
@@ -183,7 +183,7 @@ class B extends M.Ay {
             unread: s,
             hasActiveThreads: r,
             hasMoreActiveThreads: o,
-            mentionCount: d,
+            mentionCount: c,
             connectChannelDropTarget: u,
             connectChannelDragSource: h,
             connectDragPreview: A,
@@ -207,7 +207,7 @@ class B extends M.Ay {
             "data-dnd-name": e.name,
             onMouseEnter: O || L ? this.handleMouseEnter : void 0,
             onMouseLeave: O || L ? this.handleMouseLeave : void 0,
-            children: [(0, i.jsx)(c.YNO, {
+            children: [(0, i.jsx)(d.YNO, {
                 targetElementRef: R,
                 position: "right",
                 renderPopout: this.renderPopout,
@@ -222,7 +222,7 @@ class B extends M.Ay {
                     selected: !x && n,
                     muted: l,
                     unread: s,
-                    mentionCount: d,
+                    mentionCount: c,
                     hasActiveThreads: r,
                     subtitle: M?.subtitle,
                     subtitleColor: M?.color,
@@ -238,7 +238,7 @@ class B extends M.Ay {
                     "aria-label": (0, g.Ay)({
                         channel: e,
                         unread: s,
-                        mentionCount: d,
+                        mentionCount: c,
                         isSubscriptionGated: m
                     }),
                     children: [x && (0, i.jsxs)(i.Fragment, {
@@ -263,8 +263,8 @@ function H(e) {
         guild: n,
         disableSorting: s,
         isFavoriteCategory: a,
-        muted: c,
-        selected: d
+        muted: d,
+        selected: c
     } = e, {
         hasActiveThreads: u,
         hasMoreActiveThreads: h
@@ -284,11 +284,11 @@ function H(e) {
     } = (0, E.A)(t.id), L = (0, o.bG)([R.Ay], () => R.Ay.isFavorite(n.id, t.id)), M = (0, m.vL)(t), U = (0, A.Gp)(t.id), G = (0, D.A)({
         channel: t,
         isChannelCollapsed: !1,
-        isChannelSelected: d,
+        isChannelSelected: c,
         isSubscriptionGated: O,
         needSubscriptionToAccess: b,
         isNewChannel: C,
-        muted: c,
+        muted: d,
         enableActivities: U,
         resolvedUnreadSetting: p
     }), w = (0, _.Ay)(t), [B, H] = l.useState(!1), F = (0, r.K)(l.useCallback(e => {
@@ -298,7 +298,7 @@ function H(e) {
         markMenuItemPopoverAsDismissed: W
     } = (0, x.z)({
         location: "TextChannel",
-        isChannelSelected: d,
+        isChannelSelected: c,
         isTargetInViewport: B,
         channelType: t.type,
         isPopoverAllowed: n.id !== k.Vc

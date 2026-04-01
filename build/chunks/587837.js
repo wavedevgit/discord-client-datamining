@@ -13,15 +13,15 @@ function r(e) {
         onResize: n,
         onResizeEnd: r,
         minHeight: o,
-        maxHeight: c
-    } = e, [d, u] = l.useState(null);
+        maxHeight: d
+    } = e, [c, u] = l.useState(null);
     l.useEffect(() => {
         u(t.current?.offsetHeight ?? null)
     }, [t]);
     let h = (0, s.A)({
-        initialElementDimension: d,
+        initialElementDimension: c,
         minDimension: o,
-        maxDimension: c,
+        maxDimension: d,
         resizableDomNodeRef: t,
         onElementResize: n,
         onElementResizeEnd: r,

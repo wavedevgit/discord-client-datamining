@@ -9,8 +9,8 @@ var i = n(627968),
     a = n(576030),
     r = n(245068),
     o = n(44120),
-    c = n(353157),
-    d = n(957785),
+    d = n(353157),
+    c = n(957785),
     u = n(788868),
     h = n(985018),
     A = n(943543),
@@ -42,7 +42,7 @@ function g(e, t) {
         renderIcon: I ? a.GM : void 0,
         shouldShow: !0
     }, T = !x && e.collectiblesItem.type === l.R.PROFILE_EFFECT;
-    return (0, i.jsx)(d.A, {
+    return (0, i.jsx)(c.A, {
         onCardClick: () => {
             E ? u() : m(e, s, o)
         },
@@ -62,7 +62,7 @@ function g(e, t) {
                     })
                 })
             }
-            return (0, i.jsx)(c.A, {
+            return (0, i.jsx)(d.A, {
                 item: e,
                 profileOwner: s,
                 isHighlighted: !1
@@ -82,14 +82,14 @@ function p(e, t) {
         analyticsLocations: a,
         wishlistId: r,
         onViewWishlist: o
-    } = t, c = null != e.bundleItems && e.bundleItems.length > 0, d = g(e, {
+    } = t, d = null != e.bundleItems && e.bundleItems.length > 0, c = g(e, {
         profileOwner: n,
         analyticsLocations: a,
         onViewWishlist: o,
         isSingleCard: !0,
         wishlistId: r,
         index: 0
-    }), u = c ? h.intl.string(h.t.Zr5tjn) : function(e) {
+    }), u = d ? h.intl.string(h.t.Zr5tjn) : function(e) {
         switch (e.collectiblesItem.type) {
             case l.R.AVATAR_DECORATION:
                 return h.intl.string(h.t["7v0T9P"]);
@@ -103,7 +103,7 @@ function p(e, t) {
     }(e);
     return (0, i.jsxs)("div", {
         className: _.D5,
-        children: [d, (0, i.jsxs)("div", {
+        children: [c, (0, i.jsxs)("div", {
             className: _.S7,
             children: [(0, i.jsx)(s.DUT, {
                 onClick: () => {

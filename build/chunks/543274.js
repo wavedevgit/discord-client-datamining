@@ -8,8 +8,8 @@ var i = n(627968),
     a = n(554146),
     r = n(990078),
     o = n(397927),
-    c = n(155718),
-    d = n(933958),
+    d = n(155718),
+    c = n(933958),
     u = n(404522),
     h = n(782091),
     A = n(641703),
@@ -33,14 +33,14 @@ function y(e) {
         idle: n,
         whichPopoutIsOpen: y,
         setWhichPopoutIsOpen: v
-    } = e, j = (0, s.bG)([d.Ay], () => d.Ay.isLaunchingActivity()), R = (0, h.et)(t.id), O = (0, h.dL)(R), L = R !== h.xy.CAN_LAUNCH || j, {
+    } = e, j = (0, s.bG)([c.Ay], () => c.Ay.isLaunchingActivity()), R = (0, h.et)(t.id), O = (0, h.dL)(R), L = R !== h.xy.CAN_LAUNCH || j, {
         isHovered: M,
         setIsHovered: D,
         onMouseEnter: U,
         onMouseLeave: G
     } = (0, I.A)(200, 300), P = (0, u.b)({
-        surface: c.YI.VOICE_LAUNCHER
-    }), k = (0, s.bG)([d.Ay], () => null != d.Ay.getSelfEmbeddedActivityForLocation(d.Ay.getConnectedActivityLocation())), w = !L, B = l.useCallback(e => {
+        surface: d.YI.VOICE_LAUNCHER
+    }), k = (0, s.bG)([c.Ay], () => null != c.Ay.getSelfEmbeddedActivityForLocation(c.Ay.getConnectedActivityLocation())), w = !L, B = l.useCallback(e => {
         "focus" !== e.type && U()
     }, [U]), V = (0, E.Us)() === T.BRT.POPOUT, {
         parentAnalyticsLocation: H,
@@ -66,8 +66,8 @@ function y(e) {
             let {
                 visibleContent: l,
                 markAsDismissed: s
-            } = e, c = l === a.M.VOICE_PANEL_ACTIVITIES_SHAPES_BUTTON_EDUCATION_TOOLTIP && !n && !M;
-            return Y.current && !c && s(S.i.AUTO_DISMISS), Y.current !== c && (Y.current = c), (0, i.jsx)(o.YNO, {
+            } = e, d = l === a.M.VOICE_PANEL_ACTIVITIES_SHAPES_BUTTON_EDUCATION_TOOLTIP && !n && !M;
+            return Y.current && !d && s(S.i.AUTO_DISMISS), Y.current !== d && (Y.current = d), (0, i.jsx)(o.YNO, {
                 targetElementRef: z,
                 fixed: !0,
                 shouldShow: M && (y === N.P.ACTIVITY || null == y),
@@ -108,7 +108,7 @@ function y(e) {
                             children: [(0, i.jsx)(r.m, {
                                 text: b.intl.string(b.t.P8vmUv),
                                 forceOpen: !0,
-                                shouldShow: c,
+                                shouldShow: d,
                                 children: (0, i.jsx)("div", {
                                     ref: z,
                                     children: (0, i.jsx)(C.A, {

@@ -1,6 +1,6 @@
 /** chunk id: 524628 params = (module,exports,require) **/
 n.d(t, {
-    A: () => d
+    A: () => c
 });
 var i = n(627968);
 n(64700);
@@ -9,9 +9,9 @@ var l = n(503698),
     a = n(158954),
     r = n(311907),
     o = n(775602),
-    c = n(197920);
+    d = n(197920);
 
-function d(e) {
+function c(e) {
     let {
         withHeader: t = !0,
         size: n = 15
@@ -19,15 +19,15 @@ function d(e) {
     return (0, i.jsxs)(a.BJc, {
         gap: 4,
         children: [t && (0, i.jsx)("div", {
-            className: s()(c.iE, {
-                [c.cb]: l
+            className: s()(d.iE, {
+                [d.cb]: l
             }),
             style: {
                 paddingTop: 8,
                 paddingBottom: 8
             },
             children: (0, i.jsx)(u, {
-                className: s()(c.nq, c.NX)
+                className: s()(d.nq, d.NX)
             })
         }), Array.from({
             length: n
@@ -40,7 +40,7 @@ function u(e) {
         className: t
     } = e;
     return (0, i.jsx)("div", {
-        className: s()(c.n8, t)
+        className: s()(d.n8, t)
     })
 }
 
@@ -53,19 +53,19 @@ function h() {
             gap: 12,
             padding: 4
         },
-        className: s()(c.iE, {
-            [c.cb]: e
+        className: s()(d.iE, {
+            [d.cb]: e
         }),
         children: [(0, i.jsx)("div", {
-            className: s()(c.my, c.NX)
+            className: s()(d.my, d.NX)
         }), (0, i.jsxs)("div", {
-            className: c.U0,
+            className: d.U0,
             children: [(0, i.jsx)(u, {
-                className: s()(c.Md, c.NX)
+                className: s()(d.Md, d.NX)
             }), (0, i.jsx)(u, {
-                className: s()(c.nq, c.NX)
+                className: s()(d.nq, d.NX)
             }), (0, i.jsx)(u, {
-                className: s()(c.xs, c.NX)
+                className: s()(d.xs, d.NX)
             })]
         })]
     })

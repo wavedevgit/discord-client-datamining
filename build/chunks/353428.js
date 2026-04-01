@@ -10,8 +10,8 @@ var i = n(627968),
     a = n.n(s),
     r = n(311907),
     o = n(554146),
-    c = n(990078),
-    d = n(397927),
+    d = n(990078),
+    c = n(397927),
     u = n(429913),
     h = n(709066),
     A = n(47167),
@@ -50,26 +50,26 @@ function U(e) {
         }),
         [h, A] = s !== o.M.CHANNEL_LINKED_LOBBY_EDUCATION_TOOLTIP ? [M.intl.string(M.t["XJVlf/"]), void 0] : [(0, i.jsxs)("div", {
             className: D.lE,
-            children: [(0, i.jsx)(d.Text, {
+            children: [(0, i.jsx)(c.Text, {
                 variant: "text-md/semibold",
                 color: "text-strong",
                 children: M.intl.string(M.t.YIVr4B)
-            }), (0, i.jsx)(d.Text, {
+            }), (0, i.jsx)(c.Text, {
                 variant: "text-sm/medium",
                 color: "text-default",
                 children: M.intl.format(M.t["16aguo"], {
                     helpdeskArticle: S.A.getArticleURL(O.MVz.LINKED_LOBBIES)
                 })
-            }), (0, i.jsx)(d.DUT, {
+            }), (0, i.jsx)(c.DUT, {
                 className: D.Q1,
                 onClick: () => a(L.i.USER_DISMISS),
-                children: (0, i.jsx)(d.PGe, {
+                children: (0, i.jsx)(c.PGe, {
                     className: D.U0,
                     color: "currentColor"
                 })
             })]
         }, 0), M.intl.string(M.t.YIVr4B)];
-    return (0, i.jsx)(c.m, {
+    return (0, i.jsx)(d.m, {
         position: "bottom",
         align: "left",
         __unsupportedReactNodeAsText: h,
@@ -77,7 +77,7 @@ function U(e) {
         forceOpen: s === o.M.CHANNEL_LINKED_LOBBY_EDUCATION_TOOLTIP || void 0,
         children: (0, i.jsxs)("div", {
             className: D.hl,
-            children: [n, (0, i.jsxs)(d.Text, {
+            children: [n, (0, i.jsxs)(c.Text, {
                 className: D.iO,
                 variant: "text-sm/medium",
                 color: "text-strong",
@@ -98,7 +98,7 @@ function G(e) {
         parentChannel: s,
         guild: r,
         inSidebar: o = !1,
-        handleClick: c,
+        handleClick: d,
         handleContextMenu: u,
         handleParentClick: h,
         handleParentContextMenu: m,
@@ -138,7 +138,7 @@ function G(e) {
                 }
         }
     }(t.type, r), E = (0, i.jsxs)(i.Fragment, {
-        children: [null != f ? (0, i.jsxs)(d.AC4, {
+        children: [null != f ? (0, i.jsxs)(c.AC4, {
             children: [f, ":"]
         }) : null, " ", n]
     });
@@ -147,13 +147,13 @@ function G(e) {
             return (0, i.jsx)(R.A, {
                 level: x,
                 channel: t,
-                handleClick: c,
+                handleClick: d,
                 handleContextMenu: u
             });
         case O.rbe.GROUP_DM:
             if (t.isManaged()) return E;
             return (0, i.jsxs)(i.Fragment, {
-                children: [(0, i.jsx)(d.AC4, {
+                children: [(0, i.jsx)(c.AC4, {
                     children: M.intl.string(M.t["e5y+gm"])
                 }), (0, i.jsx)(y.n, {
                     channel: t
@@ -168,14 +168,14 @@ function G(e) {
                 children: [w(p, t.type === O.rbe.GUILD_ANNOUNCEMENT ? M.intl.string(M.t.l1dkSD) : M.intl.string(M.t.Pnajj0)), (0, i.jsx)(j.A.Title, {
                     level: x,
                     onContextMenu: u,
-                    onClick: c,
+                    onClick: d,
                     children: E
                 })]
             }) : (0, i.jsxs)(l.Fragment, {
                 children: [w(p, t.type === O.rbe.GUILD_ANNOUNCEMENT ? M.intl.string(M.t.l1dkSD) : M.intl.string(M.t.Pnajj0)), (0, i.jsx)(j.A.Title, {
                     level: x,
                     onContextMenu: u,
-                    onClick: c,
+                    onClick: d,
                     children: E
                 }), null != g ? g() : null]
             });
@@ -184,7 +184,7 @@ function G(e) {
                 children: [w(p, M.intl.string(M.t.BVZqJl)), (0, i.jsx)(j.A.Title, {
                     level: x,
                     onContextMenu: u,
-                    onClick: c,
+                    onClick: d,
                     children: E
                 })]
             });
@@ -193,7 +193,7 @@ function G(e) {
                 children: [w(p, M.intl.string(M.t.EErMzA)), (0, i.jsx)(j.A.Title, {
                     level: x,
                     onContextMenu: u,
-                    onClick: c,
+                    onClick: d,
                     children: E
                 })]
             });
@@ -218,7 +218,7 @@ function G(e) {
                 children: [C, w(T ? null : p, M.intl.string(M.t["7Xm5QI"])), (0, i.jsx)(j.A.Title, {
                     level: x,
                     onContextMenu: u,
-                    onClick: c,
+                    onClick: d,
                     className: a()({
                         [D.or]: o
                     }),
@@ -236,8 +236,8 @@ function G(e) {
                 }) : null, (0, i.jsxs)(j.A.Title, {
                     level: x,
                     onContextMenu: u,
-                    onClick: c,
-                    children: [null != f ? (0, i.jsxs)(d.AC4, {
+                    onClick: d,
+                    children: [null != f ? (0, i.jsxs)(c.AC4, {
                         children: [f, ":"]
                     }) : null, " ", S]
                 })]
@@ -292,7 +292,7 @@ function w(e, t) {
         children: [null !== e && (0, i.jsx)(j.A.ChannelIcon, {
             icon: e,
             "aria-hidden": !0
-        }), (0, i.jsx)(d.AC4, {
+        }), (0, i.jsx)(c.AC4, {
             children: t
         })]
     })
@@ -304,12 +304,12 @@ function B(e) {
         channel: n,
         caretPosition: s = "left"
     } = e, a = (0, r.bG)([C.A], () => C.A.getGuildId()), o = (0, p.lI)(), u = l.useRef(null);
-    return (a === O.YYv || o) && null != t ? (0, i.jsx)(c.m, {
+    return (a === O.YYv || o) && null != t ? (0, i.jsx)(d.m, {
         asContainer: !0,
         text: t.name,
         targetElementRef: u,
         position: "bottom",
-        children: (0, i.jsxs)(d.DUT, {
+        children: (0, i.jsxs)(c.DUT, {
             onClick: () => {
                 (0, f.uh)(t.id, n.id)
             },

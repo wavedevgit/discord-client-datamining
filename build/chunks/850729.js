@@ -8,8 +8,8 @@ var i = n(627968),
     a = n(311907),
     r = n(506774),
     o = n(397927),
-    c = n(509963),
-    d = n(704761),
+    d = n(509963),
+    c = n(704761),
     u = n(531260),
     h = n(793943),
     A = n(411976),
@@ -60,7 +60,7 @@ function U(e) {
     let G = L.intl.string(L.t.YUU0RF);
     f && (G = r.w.get(j.wqg) ? L.intl.string(L.t["nkq1l+"]) : L.intl.string(L.t.Be8Q5E));
     let P = null;
-    !t && A && (P = (0, i.jsx)(c.A, {
+    !t && A && (P = (0, i.jsx)(d.A, {
         className: M.Cp,
         determineOwnVisibility: !1
     }));
@@ -99,7 +99,7 @@ function U(e) {
                         }
                     }
                 },
-                children: (0, i.jsx)(d.A, {})
+                children: (0, i.jsx)(c.A, {})
             })
         });
     return (0, i.jsx)("div", {
@@ -127,7 +127,7 @@ function U(e) {
 function G() {
     let e = (0, T.q)(),
         t = (0, a.bG)([C.A, I.A], () => {
-            let e = (0, c.v)(C.A.activeItems, I.A),
+            let e = (0, d.v)(C.A.activeItems, I.A),
                 {
                     total: t,
                     progress: n
@@ -145,11 +145,11 @@ function G() {
             unviewedTrialCount: x.A.getUnacknowledgedOffers(l).length,
             unviewedDiscountCount: x.A.getUnacknowledgedDiscountOffers().length
         })),
-        d = s.fractionalState === R.xc.NONE ? r + o : 0,
+        c = s.fractionalState === R.xc.NONE ? r + o : 0,
         h = (0, a.bG)([f.default], () => f.default.getCurrentUser()),
         m = (0, A.W)(),
-        g = n + d + m,
-        S = g === d && d > 0 && n + m === 0,
+        g = n + c + m,
+        S = g === c && c > 0 && n + m === 0,
         b = E.A.getHomeLink();
     return S && (b = j.BVt.APPLICATION_STORE), (0, i.jsx)(U, {
         selected: e,

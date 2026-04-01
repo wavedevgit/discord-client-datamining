@@ -8,8 +8,8 @@ var i = n(311907),
     a = n(725613),
     r = n(734057),
     o = n(994500),
-    c = n(977997),
-    d = n(898926);
+    d = n(977997),
+    c = n(898926);
 
 function u(e, t) {
     return `voice-activity-${e}-${t}`
@@ -22,13 +22,13 @@ let A = "past";
 
 function _(e) {
     switch (e.eventType) {
-        case d.i.USER_JOINED:
+        case c.i.USER_JOINED:
             return ["present-user", e.userId];
-        case d.i.USER_LEFT:
+        case c.i.USER_LEFT:
             return [A, e.userId];
-        case d.i.ACTIVITY_STARTED:
+        case c.i.ACTIVITY_STARTED:
             return ["present-activity", e.userId];
-        case d.i.ACTIVITY_ENDED:
+        case c.i.ACTIVITY_ENDED:
             return [A, e.userId];
         default:
             return []
@@ -47,7 +47,7 @@ let g = new Map,
 function I(e) {
     let t = g.get(e),
         n = f.get(e),
-        i = t?.values(A).find(e => e.eventType === d.i.USER_LEFT && !o.A.isBlockedOrIgnored(e.userId));
+        i = t?.values(A).find(e => e.eventType === c.i.USER_LEFT && !o.A.isBlockedOrIgnored(e.userId));
     if (null != i) {
         if (f.set(e, i.userId), n !== i.userId) return !0
     } else if (f.delete(e), null != n) return !0;
@@ -67,7 +67,7 @@ function N(e, t) {
     return null != i && (i.set(n, {
         userId: t,
         timestamp: Date.now(),
-        eventType: d.i.USER_JOINED,
+        eventType: c.i.USER_JOINED,
         key: n
     }), !0)
 }
@@ -80,15 +80,15 @@ function T(e, t, n) {
     if (null == s) return null != n && (l.set(i, {
         userId: t,
         key: i,
-        eventType: d.i.USER_LEFT,
+        eventType: c.i.USER_LEFT,
         timestamp: n
     }), !0);
-    if (null != n && (s.eventType === d.i.USER_JOINED || s.timestamp >= n)) return !1;
+    if (null != n && (s.eventType === c.i.USER_JOINED || s.timestamp >= n)) return !1;
     let a = n ?? Date.now();
     return l.set(i, {
         userId: t,
         key: i,
-        eventType: d.i.USER_LEFT,
+        eventType: c.i.USER_LEFT,
         timestamp: a
     }), !0
 }
@@ -107,7 +107,7 @@ function S() {
 }
 class b extends i.Ay.Store {
     initialize() {
-        this.waitFor(r.A, a.A, c.A, o.A)
+        this.waitFor(r.A, a.A, d.A, o.A)
     }
     __getLocalVars = () => ({
         channelEventMaps: g,
@@ -138,7 +138,7 @@ let y = new b(s.h, {
         return new Set(i.map(e => e.oldChannelId).filter(e => null != e)).forEach(e => {
             var t;
             let n;
-            0 === Object.keys(c.A.getVoiceStatesForChannel(e)).length && (t = e, null != (n = g.get(t)) && n.clear(), f.delete(t), x.delete(t))
+            0 === Object.keys(d.A.getVoiceStatesForChannel(e)).length && (t = e, null != (n = g.get(t)) && n.clear(), f.delete(t), x.delete(t))
         }), i.forEach(e => {
             let {
                 userId: i,
@@ -163,7 +163,7 @@ let y = new b(s.h, {
         let {
             channelId: t
         } = e;
-        if (!g.has(t)) return g.has(t) || (g.set(t, new l.J(_, m)), Object.values(c.A.getVoiceStatesForChannel(t)).forEach(e => {
+        if (!g.has(t)) return g.has(t) || (g.set(t, new l.J(_, m)), Object.values(d.A.getVoiceStatesForChannel(t)).forEach(e => {
             N(t, e.userId)
         })), !0;
         return !1
@@ -189,7 +189,7 @@ let y = new b(s.h, {
             } = e;
             return u(t, n ?? i)
         }));
-        for (let e of l.values(A)) e.eventType !== d.i.ACTIVITY_ENDED || a.has(e.key) || (s = l.delete(e.key) || s);
+        for (let e of l.values(A)) e.eventType !== c.i.ACTIVITY_ENDED || a.has(e.key) || (s = l.delete(e.key) || s);
         for (let {
                 userId: e,
                 applicationId: n,
@@ -209,7 +209,7 @@ let y = new b(s.h, {
                 applicationId: n,
                 applicationName: i,
                 activityType: "PLAYED_GAME",
-                eventType: d.i.ACTIVITY_ENDED
+                eventType: c.i.ACTIVITY_ENDED
             }), !0
         }(t, e, n, l, a) || s;
         return s && (I(t), C(t)), s

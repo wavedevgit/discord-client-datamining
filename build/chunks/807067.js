@@ -8,8 +8,8 @@ var i = n(627968),
     a = n(724002),
     r = n(287174),
     o = n(487899),
-    c = n(311907),
-    d = n(397927),
+    d = n(311907),
+    c = n(397927),
     u = n(793574),
     h = n(688810),
     A = n(735991),
@@ -41,17 +41,17 @@ function L(e) {
         {
             fetchState: g,
             voiceBannerCollection: E
-        } = (t = (0, c.bG)([C.default], () => C.default.onlyShowPreviewAppCollections) ? a.W.PREVIEW : a.W.ACTIVE, l.useEffect(() => {
+        } = (t = (0, d.bG)([C.default], () => C.default.onlyShowPreviewAppCollections) ? a.W.PREVIEW : a.W.ACTIVE, l.useEffect(() => {
             (0, p.An)({
                 surface: R,
                 activeState: t
             })
         }, [t]), {
-            fetchState: (0, c.bG)([f.A], () => f.A.getFetchState({
+            fetchState: (0, d.bG)([f.A], () => f.A.getFetchState({
                 surface: R,
                 activeState: t
             })),
-            voiceBannerCollection: (0, c.bG)([f.A], () => f.A.getCollections({
+            voiceBannerCollection: (0, d.bG)([f.A], () => f.A.getCollections({
                 surface: R,
                 activeState: t
             }))[0]
@@ -75,7 +75,7 @@ function L(e) {
         itemId: N.id,
         hash: N.image_hash,
         containerWidth: 584
-    })), (0, i.jsxs)(d.DUT, {
+    })), (0, i.jsxs)(c.DUT, {
         className: j.V8,
         innerRef: T,
         onClick: () => {
@@ -107,7 +107,7 @@ let M = l.forwardRef(function(e, t) {
         isHovered: a,
         closePopout: r,
         onMouseEnter: o,
-        onMouseLeave: c,
+        onMouseLeave: d,
         onClick: A,
         className: _
     } = e, {
@@ -145,8 +145,8 @@ let M = l.forwardRef(function(e, t) {
                 },
                 openInPopout: M,
                 analyticsLocation: R
-            }), c(), A()
-        }, [s, R, A, c, M]),
+            }), d(), A()
+        }, [s, R, A, d, M]),
         G = l.useCallback(e => {
             o(), N.default.track(y.HAw.ACTIVITIES_MINI_SHELF_HOVERED, {
                 channel_id: s.id,
@@ -156,14 +156,14 @@ let M = l.forwardRef(function(e, t) {
     return (0, i.jsx)(h.f5, {
         value: C,
         children: (0, i.jsx)(I.A, {
-            children: (0, i.jsxs)(d.lGe, {
+            children: (0, i.jsxs)(c.lGe, {
                 ref: t,
                 "aria-labelledby": O,
                 className: _,
-                children: [(0, i.jsx)(d.Fmo, {
+                children: [(0, i.jsx)(c.Fmo, {
                     forceLevel: 2,
-                    children: (0, i.jsx)(d.AC4, {
-                        children: (0, i.jsx)(d.H, {
+                    children: (0, i.jsx)(c.AC4, {
+                        children: (0, i.jsx)(c.H, {
                             id: O,
                             children: v.intl.string(v.t["2lnYtB"])
                         })
@@ -171,26 +171,26 @@ let M = l.forwardRef(function(e, t) {
                 }), (0, i.jsxs)("div", {
                     className: j.kL,
                     onMouseEnter: G,
-                    onMouseLeave: c,
+                    onMouseLeave: d,
                     children: [(0, i.jsxs)("div", {
                         className: j.gn,
                         children: [(0, i.jsxs)("div", {
                             className: j.gH,
-                            children: [(0, i.jsx)(d.k9F, {
+                            children: [(0, i.jsx)(c.k9F, {
                                 size: "md",
                                 className: j.ch,
                                 color: "var(--interactive-text-active)"
-                            }), (0, i.jsx)(d.Text, {
+                            }), (0, i.jsx)(c.Text, {
                                 variant: "eyebrow",
                                 children: v.intl.string(v.t.f3Cz25)
                             })]
-                        }), (0, i.jsxs)(d.DUT, {
+                        }), (0, i.jsxs)(c.DUT, {
                             className: j.hc,
                             onClick: U,
-                            children: [(0, i.jsx)(d.Text, {
+                            children: [(0, i.jsx)(c.Text, {
                                 variant: "eyebrow",
                                 children: v.intl.string(v.t["K8+z4S"])
-                            }), (0, i.jsx)(d._BQ, {
+                            }), (0, i.jsx)(c._BQ, {
                                 size: "custom",
                                 width: 12,
                                 height: 12,

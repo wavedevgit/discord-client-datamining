@@ -8,8 +8,8 @@ var i = n(311907),
     a = n(607567),
     r = n(403362),
     o = n(996439),
-    c = n(661191),
-    d = n(63995),
+    d = n(661191),
+    c = n(63995),
     u = n(69407),
     h = n(652215);
 
@@ -28,16 +28,16 @@ function A(e) {
 }
 
 function _(e) {
-    let [t] = (0, i.bG)([d.A, s.A, l.A], () => {
+    let [t] = (0, i.bG)([c.A, s.A, l.A], () => {
         let t;
-        return [(t = e === h.YYv ? c.default.keys(l.A.getFavoriteChannels()).map(e => s.A.getChannel(e)).filter(r.Vq).filter(e => e.isGuildStageVoice()) : d.A.getChannels(e)).reduce((e, t) => {
-            let n = d.A.getMutableParticipants(t.id, u.ip.SPEAKER);
+        return [(t = e === h.YYv ? d.default.keys(l.A.getFavoriteChannels()).map(e => s.A.getChannel(e)).filter(r.Vq).filter(e => e.isGuildStageVoice()) : c.A.getChannels(e)).reduce((e, t) => {
+            let n = c.A.getMutableParticipants(t.id, u.ip.SPEAKER);
             return e[t.id] = n.filter(e => e.type === u.wY.VOICE).map(A), e
         }, {}), t.reduce((e, t) => {
             let {
                 id: n
             } = t;
-            return e + d.A.getParticipantsVersion(n)
+            return e + c.A.getParticipantsVersion(n)
         }, 0)]
     }, [e], o.D);
     return t

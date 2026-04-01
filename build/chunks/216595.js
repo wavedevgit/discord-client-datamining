@@ -8,8 +8,8 @@ var i = n(627968),
     a = n(934551),
     r = n(158954),
     o = n(311907),
-    c = n(397927),
-    d = n(47167),
+    d = n(397927),
+    c = n(47167),
     u = n(713654),
     h = n(598104),
     A = n(263063),
@@ -55,7 +55,7 @@ function x(e) {
         "aria-hidden": !0
     }) : t.isGroupDM() ? (0, i.jsx)(h.A, {
         channel: t,
-        size: c._3J.SIZE_24
+        size: d._3J.SIZE_24
     }) : (0, i.jsx)("div", {
         className: s()(g.Kk, g.ro),
         children: (0, i.jsx)(a.ChatIcon, {
@@ -67,7 +67,7 @@ function x(e) {
 function E(e) {
     let {
         channel: t
-    } = e, n = (0, o.bG)([_.A], () => _.A.getGuild(t.guild_id)), l = (0, d.Ay)(t, !1), s = (0, u.gU)(t, n), a = t.isPrivate() || null == s, r = t.isDM() ? m.intl.formatToPlainString(m.t.smD7XV, {
+    } = e, n = (0, o.bG)([_.A], () => _.A.getGuild(t.guild_id)), l = (0, c.Ay)(t, !1), s = (0, u.gU)(t, n), a = t.isPrivate() || null == s, r = t.isDM() ? m.intl.formatToPlainString(m.t.smD7XV, {
         username: l
     }) : l;
     return (0, i.jsxs)("div", {
@@ -75,7 +75,7 @@ function E(e) {
         children: [a ? null : (0, i.jsx)(s, {
             className: g.j1,
             size: "xxs"
-        }), (0, i.jsx)(c.Heading, {
+        }), (0, i.jsx)(d.Heading, {
             variant: "text-md/semibold",
             color: "text-default",
             children: r

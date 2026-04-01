@@ -8,8 +8,8 @@ var i = n(627968),
     a = n(158954),
     r = n(311907),
     o = n(397927),
-    c = n(736653),
-    d = n(793574),
+    d = n(736653),
+    c = n(793574),
     u = n(688810),
     h = n(351966),
     A = n(361628),
@@ -46,9 +46,9 @@ function V(e) {
         user: t,
         currentUser: n,
         channel: V
-    } = e, H = __OVERLAY__, F = (0, f.Ay)(t.id), K = (0, A.A)(F?.profileFrame?.skuId, "UserProfileSidebar"), W = (0, c.Ay)(), {
+    } = e, H = __OVERLAY__, F = (0, f.Ay)(t.id), K = (0, A.A)(F?.profileFrame?.skuId, "UserProfileSidebar"), W = (0, d.Ay)(), {
         analyticsLocations: Y
-    } = (0, u.Ay)(d.A.USER_PROFILE_SIDEBAR), z = (0, g.pb)({
+    } = (0, u.Ay)(c.A.USER_PROFILE_SIDEBAR), z = (0, g.pb)({
         layout: "SIDEBAR",
         userId: t.id,
         channelId: V.id

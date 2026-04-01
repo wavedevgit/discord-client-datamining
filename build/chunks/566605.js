@@ -1,29 +1,29 @@
 /** chunk id: 566605 params = (module,exports,require) **/
 n.d(t, {
-    A: () => m
+    A: () => g
 });
 var i = n(64700),
-    l = n(311907),
-    a = n(704824),
+    a = n(311907),
+    l = n(704824),
     s = n(429913),
     r = n(633075),
     o = n(667049),
-    d = n(287809),
-    c = n(403362),
+    c = n(287809),
+    d = n(403362),
     u = n(369374),
-    g = n(395332);
+    m = n(395332);
 
-function m(e) {
+function g(e) {
     let {
         enabled: t
     } = u.A.useConfig({
         location: e.location
-    }), n = (0, l.bG)([d.default], () => d.default.getCurrentUser()), m = (0, g.w$)({
+    }), n = (0, a.bG)([c.default], () => c.default.getCurrentUser()), g = (0, m.w$)({
         location: e.location
-    }), p = i.useMemo(() => m?.filter(e => e.isEligibleForSuggestions()), [m]), x = i.useMemo(() => p?.map(e => e.applicationId) ?? [], [p]), f = (0, s.A)(x), {
-        tokens: h,
-        fetched: _
-    } = (0, a.j)(x), A = (0, o.A)(n?.id), I = null == n || null == p || null == h || !_;
+    }), p = i.useMemo(() => g?.filter(e => e.isEligibleForSuggestions()), [g]), x = i.useMemo(() => p?.map(e => e.applicationId) ?? [], [p]), f = (0, s.A)(x), {
+        tokens: _,
+        fetched: h
+    } = (0, l.j)(x), A = (0, o.A)(n?.id), I = null == n || null == p || null == _ || !h;
     return i.useMemo(() => I ? {
         isLoading: I
     } : t ? {
@@ -34,12 +34,12 @@ function m(e) {
         isLoading: I,
         suggestions: p.map(e => {
             let t = f.find(t => t?.id === e.applicationId);
-            return null == t || null == h.find(t => t.application.id === e.applicationId) || null != A.find(t => t instanceof r.R && t.applicationId === e.applicationId) ? null : {
+            return null == t || null == _.find(t => t.application.id === e.applicationId) || null != A.find(t => t instanceof r.R && t.applicationId === e.applicationId) ? null : {
                 config: e,
                 application: t,
                 dismissibleContent: e.suggestedWidgetLinkedDc
             }
-        }).filter(c.Vq),
+        }).filter(d.Vq),
         currentUser: n
-    }, [t, I, p, n, f, h, A])
+    }, [t, I, p, n, f, _, A])
 }

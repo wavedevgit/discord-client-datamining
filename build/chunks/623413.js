@@ -8,8 +8,8 @@ var i = n(627968),
     a = n(397927),
     r = n(956793),
     o = n(313961),
-    c = n(164617),
-    d = n(47167),
+    d = n(164617),
+    c = n(47167),
     u = n(202384),
     h = n(51758),
     A = n(175203),
@@ -27,7 +27,7 @@ let I = function(e) {
         hasConnectPermission: I
     } = e, C = (0, h.H)(n.guild_id), N = l.useCallback(() => {
         C ? (0, u.Ze)(n.guild_id, () => r.default.selectVoiceChannel(n.id)) : r.default.selectVoiceChannel(n.id)
-    }, [n.id, n.guild_id, C]), T = t.filter(e => e.type === g.wY.VOICE), S = (0, d.Ay)(n), b = 4 === T.length ? 2 : 3, y = (0, s.yK)([o.A], () => T.map(e => o.A.getParticipant(n.id, e.id)).filter(m.Vq), [n.id, T]);
+    }, [n.id, n.guild_id, C]), T = t.filter(e => e.type === g.wY.VOICE), S = (0, c.Ay)(n), b = 4 === T.length ? 2 : 3, y = (0, s.yK)([o.A], () => T.map(e => o.A.getParticipant(n.id, e.id)).filter(m.Vq), [n.id, T]);
     return (0, i.jsxs)("div", {
         className: E.kL,
         children: [(0, i.jsx)(_.A, {}), (0, i.jsx)("div", {
@@ -41,7 +41,7 @@ let I = function(e) {
                 className: E.Vs,
                 inCall: !0,
                 noVideoRender: !0,
-                popoutType: c.N.NO_POPOUT,
+                popoutType: d.N.NO_POPOUT,
                 width: 48
             }, e.id))
         }), (0, i.jsx)(a.Heading, {

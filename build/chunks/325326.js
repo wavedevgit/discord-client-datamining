@@ -8,8 +8,8 @@ var i = n(64700),
     a = n(964459),
     r = n(187508),
     o = n(245205),
-    c = n(252431),
-    d = n(810153),
+    d = n(252431),
+    c = n(810153),
     u = n(790782);
 let h = () => {
     let {
@@ -25,20 +25,20 @@ let h = () => {
             isDesktop: h,
             withMentions: A = !1,
             initialPageSize: _
-        } = e, m = (0, l.bG)([d.A], () => d.A.shouldReload()), g = i.useRef(!1), [p, f] = i.useState(!1), {
+        } = e, m = (0, l.bG)([c.A], () => c.A.shouldReload()), g = i.useRef(!1), [p, f] = i.useState(!1), {
             initialized: x,
             loading: E,
             items: I,
             hasMore: C,
             cursor: N,
             errored: T
-        } = (0, l.cf)([c.A], () => ({
-            initialized: c.A.initialized,
-            loading: c.A.loading,
-            items: c.A.items,
-            hasMore: c.A.hasMore,
-            cursor: c.A.cursor,
-            errored: c.A.errored
+        } = (0, l.cf)([d.A], () => ({
+            initialized: d.A.initialized,
+            loading: d.A.loading,
+            items: d.A.items,
+            hasMore: d.A.hasMore,
+            cursor: d.A.cursor,
+            errored: d.A.errored
         })), {
             roleFilter: S,
             everyoneFilter: b

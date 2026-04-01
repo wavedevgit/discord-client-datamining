@@ -10,8 +10,8 @@ var i = n(627968),
     a = n.n(s),
     r = n(990078),
     o = n(397927),
-    c = n(367513),
-    d = n(442433),
+    d = n(367513),
+    c = n(442433),
     u = n(956793),
     h = n(401843),
     A = n(296216),
@@ -109,8 +109,8 @@ let U = (0, A.J)(function(e) {
         application: es,
         hangStatusActivity: ea,
         showHangStatus: er
-    } = e, eo = l.useRef(null), [ec, ed] = l.useState(!1), eu = l.useRef(null), [eh, eA] = l.useState(!1), [e_, em] = l.useState(!1), [eg, ep] = l.useState(!1), ef = eh || eg || e_, ex = () => {
-        ed(!ec)
+    } = e, eo = l.useRef(null), [ed, ec] = l.useState(!1), eu = l.useRef(null), [eh, eA] = l.useState(!1), [e_, em] = l.useState(!1), [eg, ep] = l.useState(!1), ef = eh || eg || e_, ex = () => {
+        ec(!ed)
     }, eE = (e, t) => {
         let n = new Set(["system:click_outside", "user:escape", "user:explicit"]);
         null != t && n.has(t) && (e_ && em(!1), eh && eA(!1)), eI()
@@ -128,10 +128,10 @@ let U = (0, A.J)(function(e) {
                 channelId: A.id,
                 guildId: A.guild_id
             };
-            N.default.getId() !== s.id && u.default.selectVoiceChannel(A.id), q ? ((0, E.A)(e), c.A.selectParticipant(e.channelId, (0, f._z)(e))) : (0, h.Nl)(e), $?.(s.id)
+            N.default.getId() !== s.id && u.default.selectVoiceChannel(A.id), q ? ((0, E.A)(e), d.A.selectParticipant(e.channelId, (0, f._z)(e))) : (0, h.Nl)(e), $?.(s.id)
         },
         eN = e => {
-            (0, d.L3)(e, async () => {
+            (0, c.L3)(e, async () => {
                 let {
                     default: e
                 } = await Promise.all([n.e("97262"), n.e("42128"), n.e("84841"), n.e("36382")]).then(n.bind(n, 107632));
@@ -152,18 +152,18 @@ let U = (0, A.J)(function(e) {
             className: L.kZ,
             "data-dnd-name": A.name,
             onMouseEnter: en ? void 0 : () => {
-                ec || (eu.current = setTimeout(() => Q?.(s.id), 100))
+                ed || (eu.current = setTimeout(() => Q?.(s.id), 100))
             },
             onMouseLeave: en ? void 0 : eI,
             children: (0, i.jsx)(I.A, {
-                clickTrap: s?.id === b.default.getCurrentUser()?.id && ec,
+                clickTrap: s?.id === b.default.getCurrentUser()?.id && ed,
                 targetElementRef: eo,
                 user: s,
                 guildId: A.guild_id,
                 channelId: A.id,
                 newAnalyticsLocations: [_.A.VOICE_USER],
-                shouldShow: ec,
-                onRequestClose: () => ed(!1),
+                shouldShow: ed,
+                onRequestClose: () => ec(!1),
                 children: e => {
                     let n, l;
                     return n = j.hv.has(ee ?? ""), l = {
@@ -192,7 +192,7 @@ let U = (0, A.J)(function(e) {
                             [L.dj]: !0
                         }),
                         disabled: en && !n,
-                        selected: ec,
+                        selected: ed,
                         onClick: n ? void 0 : ex,
                         onDoubleClick: eC,
                         onContextMenu: eN,
@@ -220,7 +220,7 @@ let U = (0, A.J)(function(e) {
                             setIsHangStatusInputFocused: eA,
                             setIsHangStatusEmojiPickerOpen: ep
                         }),
-                        shouldShow: (Z || er && ef && el) && !ec,
+                        shouldShow: (Z || er && ef && el) && !ed,
                         onRequestClose: eE,
                         spacing: 17,
                         children: () => (0, i.jsx)(C.Ay, {

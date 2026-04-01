@@ -9,8 +9,8 @@ var i = n(627968),
     a = n.n(s),
     r = n(382222),
     o = n(158954),
-    c = n(311907),
-    d = n(397927),
+    d = n(311907),
+    c = n(397927),
     u = n(442433),
     h = n(793574),
     A = n(230135),
@@ -27,16 +27,16 @@ let N = l.forwardRef((e, t) => {
     let {
         appliedBoostCount: n,
         maxBoostCount: s,
-        premiumSubscriberCount: c,
+        premiumSubscriberCount: d,
         className: u
-    } = e, h = n >= s, A = Math.min(n / s * 100, 100), [_, g] = (0, d.zhh)(() => ({
-        width: n === c ? `calc(${A}% - 4px)` : "0%",
+    } = e, h = n >= s, A = Math.min(n / s * 100, 100), [_, g] = (0, c.zhh)(() => ({
+        width: n === d ? `calc(${A}% - 4px)` : "0%",
         config: {
             tension: 250,
             damping: 5,
             mass: 1
         }
-    }), "respect-motion-settings", [n, c]);
+    }), "respect-motion-settings", [n, d]);
     return l.useEffect(() => {
         g({
             width: `calc(${A}% - 4px)`
@@ -59,7 +59,7 @@ let N = l.forwardRef((e, t) => {
                     className: C.Qq,
                     variant: "text-xs/semibold",
                     children: I.intl.string(E.default.NI6Ihe)
-                }), c >= s && (0, i.jsx)(o.EYj, {
+                }), d >= s && (0, i.jsx)(o.EYj, {
                     className: C.Qq,
                     variant: "text-xs/semibold",
                     children: "\uD83C\uDF89"
@@ -92,7 +92,7 @@ function T(e) {
         withMargin: s
     } = e, r = l.useRef(null), o = (0, p.A)(t), m = (0, g.A)(t.id), E = l.useCallback(() => {
         (0, f.A)(t.id, h.A.GUILD_BOOSTING_SIDEBAR_DISPLAY)
-    }, [t.id]), I = (0, c.bG)([_.A], () => _.A.getCountForGuild(t.id) ?? 0);
+    }, [t.id]), I = (0, d.bG)([_.A], () => _.A.getCountForGuild(t.id) ?? 0);
     l.useEffect(() => {
         I !== t.premiumSubscriberCount && (0, A.u)(t.id, t.premiumSubscriberCount)
     }, [t.id, I, t.premiumSubscriberCount]);
@@ -108,7 +108,7 @@ function T(e) {
         })
     }, [m, t]);
     return (0, i.jsxs)(i.Fragment, {
-        children: [(0, i.jsx)(d.DUT, {
+        children: [(0, i.jsx)(c.DUT, {
             "aria-label": void 0,
             role: "button",
             focusProps: {

@@ -1,6 +1,6 @@
 /** chunk id: 199285 params = (module,exports,require) **/
 n.d(t, {
-    a: () => c
+    a: () => d
 });
 var i = n(311907),
     l = n(696451),
@@ -9,7 +9,7 @@ var i = n(311907),
     r = n(212455),
     o = n(652215);
 
-function c(e) {
+function d(e) {
     let t = e?.features.has(o.GuildFeatures.MEMBER_VERIFICATION_MANUAL_APPROVAL),
         n = (0, i.bG)([r.A, s.default, l.Ay], () => {
             if (null == e) return;

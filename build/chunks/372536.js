@@ -1,6 +1,6 @@
 /** chunk id: 372536 params = (module,exports,require) **/
 n.d(t, {
-    A: () => d
+    A: () => c
 });
 var i = n(627968),
     l = n(64700),
@@ -8,11 +8,11 @@ var i = n(627968),
     a = n(825244),
     r = n(652215),
     o = n(985018),
-    c = n(3580);
-let d = e => {
+    d = n(3580);
+let c = e => {
     let {
         guild: t,
-        onAddGuild: d
+        onAddGuild: c
     } = e, u = l.useCallback(() => {
         (0, s.mMO)(async () => {
             let {
@@ -29,29 +29,29 @@ let d = e => {
         })
     }, [t]);
     return (0, i.jsxs)("div", {
-        className: c.h2,
+        className: d.h2,
         children: [(0, i.jsx)("img", {
-            className: c.hd,
+            className: d.hd,
             alt: "",
             src: n(668778)
         }), (0, i.jsx)(s.Heading, {
-            className: c._U,
+            className: d._U,
             variant: "heading-xl/semibold",
             children: o.intl.format(o.t.vyvrpC, {
                 guildName: t.name
             })
         }), (0, i.jsx)(s.Text, {
             variant: "text-md/normal",
-            className: c.YI,
+            className: d.YI,
             children: o.intl.string(o.t.WypE0i)
-        }), null != d ? (0, i.jsx)(a.E, {
-            className: c.c5,
+        }), null != c ? (0, i.jsx)(a.E, {
+            className: d.c5,
             iconUrl: n(928202),
             header: o.intl.string(o.t.hyK15i),
             completed: !1,
-            onClick: d
+            onClick: c
         }) : null, (0, i.jsx)(a.E, {
-            className: c.c5,
+            className: d.c5,
             iconUrl: n(799258),
             header: o.intl.string(o.t.L4bwJ9),
             completed: !1,

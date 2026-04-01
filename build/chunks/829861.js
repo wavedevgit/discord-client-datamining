@@ -8,8 +8,8 @@ var i = n(627968),
     a = n.n(s),
     r = n(311907),
     o = n(571356),
-    c = n(990078),
-    d = n(397927),
+    d = n(990078),
+    c = n(397927),
     u = n(817281),
     h = n(475743),
     A = n(775602),
@@ -75,12 +75,12 @@ function W(e) {
     }, []);
     let er = es.width / Math.max(es.height, 1) < w.B5,
         eo = 0,
-        ec = 0,
-        ed = (0, R.A)(W?.id);
-    if (!ed) {
+        ed = 0,
+        ec = (0, R.A)(W?.id);
+    if (!ec) {
         let e = es.width,
             t = es.height;
-        er ? ((t = es.width / w.B5) > es.height && (e = (t = es.height) * w.B5), ec = (es.height - t) / 2) : ((e = Math.min(es.height * w.B5)) > es.width && (t = (e = es.width) / w.B5), eo = (es.width - e) / 2)
+        er ? ((t = es.width / w.B5) > es.height && (e = (t = es.height) * w.B5), ed = (es.height - t) / 2) : ((e = Math.min(es.height * w.B5)) > es.width && (t = (e = es.width) / w.B5), eo = (es.width - e) / 2)
     }
     let eu = J.get(W?.id ?? ""),
         eh = (0, r.bG)([N.A], () => N.A.getChannelId()),
@@ -123,7 +123,7 @@ function W(e) {
         if (null == e || void 0 === e || e === D.mt) return null;
         let t = e_.get(e.id),
             n = t?.nick ?? b.Ay.getName(e);
-        return (0, i.jsx)(c.m, {
+        return (0, i.jsx)(d.m, {
             asContainer: !0,
             text: n,
             position: "bottom",
@@ -134,7 +134,7 @@ function W(e) {
             }, e.id)
         }, e.id)
     };
-    return (0, i.jsx)(d.NPJ, {
+    return (0, i.jsx)(c.NPJ, {
         theme: B.NJ8.DARK,
         children: e => (0, i.jsxs)("div", {
             className: a()(H.iE, K[Z], e),
@@ -154,13 +154,13 @@ function W(e) {
                     })
                 }), (0, i.jsx)("div", {
                     className: a()(H.ht, {
-                        [H.kK]: ed
+                        [H.kK]: ec
                     }),
                     style: {
                         paddingLeft: eo,
                         paddingRight: eo,
-                        paddingTop: ec,
-                        paddingBottom: ec
+                        paddingTop: ed,
+                        paddingBottom: ed
                     },
                     ref: el,
                     children: (0, i.jsx)(M.A, {
@@ -185,7 +185,7 @@ function W(e) {
                                 isTrayButton: !0,
                                 label: V.intl.string(V.t.brPQ5U),
                                 onClick: Q,
-                                iconComponent: d.gR,
+                                iconComponent: c.gR,
                                 themeable: !0
                             })]
                         }), (0, i.jsx)("div", {

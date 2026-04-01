@@ -1,74 +1,74 @@
 /** chunk id: 907430 params = (module,exports,require) **/
 n.d(t, {
-    d: () => g,
+    d: () => m,
     o: () => u
 });
 var i = n(627968),
-    l = n(409626),
-    a = n(692969),
+    a = n(409626),
+    l = n(692969),
     s = n(562153),
     r = n(415043),
     o = n(617086),
-    d = n(985018),
-    c = n(34519);
+    c = n(985018),
+    d = n(34519);
 
 function u(e) {
     let {
         applicationId: t,
         ...n
-    } = e, l = (0, o.A)(t);
-    return l.length > 0 ? (0, i.jsx)(r.A, {
-        label: d.intl.formatToPlainString(d.t.ujhJdG, {
-            numFriends: l.length
+    } = e, a = (0, o.A)(t);
+    return a.length > 0 ? (0, i.jsx)(r.A, {
+        label: c.intl.formatToPlainString(c.t.ujhJdG, {
+            numFriends: a.length
         }),
-        users: l,
+        users: a,
         maxUsers: 4,
         ...n
     }) : null
 }
 
-function g(e) {
+function m(e) {
     var t, n, u;
-    let g, {
-            userId: m,
+    let m, {
+            userId: g,
             applicationId: p,
             guildId: x,
             channelId: f,
-            className: h
+            className: _
         } = e,
-        _ = (0, o.A)(p),
-        A = _.length > 0,
-        I = (t = _, n = x, u = f, g = t.slice(0, 3).map(e => s.Ay.getName(n, u, e)), 1 === t.length ? d.intl.formatToPlainString(d.t.FURqTU, {
-            name: g[0]
-        }) : 2 === t.length ? d.intl.formatToPlainString(d.t["08Usu/"], {
-            name1: g[0],
-            name2: g[1]
-        }) : 3 === t.length ? d.intl.formatToPlainString(d.t.NTYHag, {
-            name1: g[0],
-            name2: g[1],
-            name3: g[2]
-        }) : d.intl.formatToPlainString(d.t["i/5oAn"], {
-            name1: g[0],
-            name2: g[1],
-            name3: g[2],
+        h = (0, o.A)(p),
+        A = h.length > 0,
+        I = (t = h, n = x, u = f, m = t.slice(0, 3).map(e => s.Ay.getName(n, u, e)), 1 === t.length ? c.intl.formatToPlainString(c.t.FURqTU, {
+            name: m[0]
+        }) : 2 === t.length ? c.intl.formatToPlainString(c.t["08Usu/"], {
+            name1: m[0],
+            name2: m[1]
+        }) : 3 === t.length ? c.intl.formatToPlainString(c.t.NTYHag, {
+            name1: m[0],
+            name2: m[1],
+            name3: m[2]
+        }) : c.intl.formatToPlainString(c.t["i/5oAn"], {
+            name1: m[0],
+            name2: m[1],
+            name3: m[2],
             numPeople: t.length - 3
         })),
-        j = (0, a.A)({
+        v = (0, l.A)({
             location: "SocialProofButton",
             applicationId: p,
-            source: l.Ob.UserProfile,
-            sourceUserId: m,
+            source: a.Ob.UserProfile,
+            sourceUserId: g,
             trackEntryPointImpression: !0
         });
-    return A && null != j ? (0, i.jsx)(r.H, {
-        users: _,
+    return A && null != v ? (0, i.jsx)(r.H, {
+        users: h,
         label: I,
-        className: h,
-        onClick: j,
+        className: _,
+        onClick: v,
         guildId: x,
         channelId: f,
         "aria-label": I,
         overflowCountColor: "text-strong",
-        overflowCountClassName: c.L
+        overflowCountClassName: d.L
     }) : null
 }

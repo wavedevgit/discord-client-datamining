@@ -8,8 +8,8 @@ var i = n(627968),
     a = n.n(s),
     r = n(575593),
     o = n(158954),
-    c = n(417597),
-    d = n(793574),
+    d = n(417597),
+    c = n(793574),
     u = n(688810),
     h = n(587895),
     A = n(44120),
@@ -35,8 +35,8 @@ function j(e) {
         wishlistOwner: n,
         wishlistId: s,
         isSingleCard: r,
-        style: c,
-        skuPreviewStyle: d,
+        style: d,
+        skuPreviewStyle: c,
         onDetailsClick: u,
         onPurchaseClick: h,
         singleCardInfo: A
@@ -79,8 +79,8 @@ function j(e) {
                 sku: t,
                 user: n,
                 spec: v,
-                cardStyle: a()(y.Nr, y.Q1, c),
-                skuPreviewStyle: a()(y.ho, d),
+                cardStyle: a()(y.Nr, y.Q1, d),
+                skuPreviewStyle: a()(y.ho, c),
                 onClick: m,
                 "aria-label": b.intl.formatToPlainString(b.t.ZBB4Ty, {
                     productName: (0, p.TC)(t)
@@ -108,9 +108,9 @@ function R(e) {
         wishlistOwner: n,
         analyticsLocations: s,
         ...a
-    } = e, r = (0, c.bG)([h.A], () => h.A.getApplication(t.applicationId)), {
+    } = e, r = (0, d.bG)([h.A], () => h.A.getApplication(t.applicationId)), {
         analyticsLocations: o
-    } = (0, u.Ay)(...s ?? [], d.A.SLAYER_STOREFRONT_BREADCRUMB_WISHLIST_ITEM_CARD_GIFT_BUTTON), A = l.useCallback(() => {
+    } = (0, u.Ay)(...s ?? [], c.A.SLAYER_STOREFRONT_BREADCRUMB_WISHLIST_ITEM_CARD_GIFT_BUTTON), A = l.useCallback(() => {
         (0, m.a)(t, {
             isGift: !0,
             giftRecipient: n,
@@ -150,7 +150,7 @@ function O(e) {
         wishlistOwner: n,
         analyticsLocations: s,
         ...o
-    } = e, c = l.useCallback(() => {
+    } = e, d = l.useCallback(() => {
         (0, A.A)({
             skuId: t.id,
             isGift: !0,
@@ -158,7 +158,7 @@ function O(e) {
             analyticsLocations: s ?? [],
             giftRecipient: n
         })
-    }, [t.id, n, s]), d = (0, I.e)({
+    }, [t.id, n, s]), c = (0, I.e)({
         sku: t,
         giftRecipient: n,
         giftingOrigin: T.vQ.USER_PROFILE_WISHLIST,
@@ -194,8 +194,8 @@ function O(e) {
         sku: t,
         wishlistOwner: n,
         analyticsLocations: s,
-        onDetailsClick: d,
-        onPurchaseClick: c,
+        onDetailsClick: c,
+        onPurchaseClick: d,
         skuPreviewStyle: u,
         singleCardInfo: h,
         ...o

@@ -1,6 +1,6 @@
 /** chunk id: 289105 params = (module,exports,require) **/
 n.d(t, {
-    A: () => c
+    A: () => d
 });
 var i = n(627968);
 n(64700);
@@ -9,7 +9,7 @@ var l = n(827734),
     a = n(786889),
     r = n(985018),
     o = n(976207);
-let c = () => (0, i.jsx)(s.m, {
+let d = () => (0, i.jsx)(s.m, {
     text: r.intl.string(r.t.GMZqSi),
     children: (0, i.jsx)("div", {
         className: o.k,

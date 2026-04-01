@@ -9,8 +9,8 @@ var l = n(205369),
     a = n(397927),
     r = n(686956),
     o = n(999903),
-    c = n(544169),
-    d = n(422258),
+    d = n(544169),
+    c = n(422258),
     u = n(5180),
     h = n(770376),
     A = n(395504),
@@ -48,7 +48,7 @@ function b(e) {
             if (null == _) return;
             let p = (0, I.Zj)(h, S(l, o.referenceId), o.parentId, A);
             if (0 !== p.length) {
-                if ((0, u.ai)(l)) return void(0, d.zN)(p);
+                if ((0, u.ai)(l)) return void(0, c.zN)(p);
                 if (p = p.filter(e => {
                         let {
                             id: t
@@ -65,7 +65,7 @@ function b(e) {
                         return (null != h.parent_id || i) && (!l || i) || (n = e), !0
                     }), null != n) {
                     let e = m.A.getChannel(n.parent_id);
-                    null != e && (0, a.qfG)(t => (0, i.jsx)(c.default, {
+                    null != e && (0, a.qfG)(t => (0, i.jsx)(d.default, {
                         ...t,
                         channel: h,
                         category: e,
@@ -91,9 +91,9 @@ function b(e) {
             let a = m.A.getChannel(l.parentId),
                 r = m.A.getChannel(i.parent_id),
                 o = x.A.can(N.xBc.MANAGE_CHANNELS, s),
-                c = null != r ? x.A.can(N.xBc.MANAGE_CHANNELS, r) : o,
-                d = null != a ? x.A.can(N.xBc.MANAGE_CHANNELS, a) : o;
-            return c && d
+                d = null != r ? x.A.can(N.xBc.MANAGE_CHANNELS, r) : o,
+                c = null != a ? x.A.can(N.xBc.MANAGE_CHANNELS, a) : o;
+            return d && c
         }
     }, (e, t) => {
         let n = t.getItem();

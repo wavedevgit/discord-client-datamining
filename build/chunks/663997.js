@@ -1,7 +1,7 @@
 /** chunk id: 663997 params = (module,exports,require) **/
 n.d(t, {
     K: () => u,
-    L: () => d
+    L: () => c
 });
 var i = n(64700),
     l = n(989349),
@@ -9,8 +9,8 @@ var i = n(64700),
     a = n(198982),
     r = n(661191),
     o = n(624458),
-    c = n(513461);
-let d = 100;
+    d = n(513461);
+let c = 100;
 
 function u(e) {
     let {
@@ -25,8 +25,8 @@ function u(e) {
             if (m !== A.current && (A.current = m, _.current = !1, g = !0), _.current) return;
             null != u && h(null);
             let p = function(e, t, n, i) {
-                let l = n === c.B5.SUBMITTED;
-                if (t === c._e.TIMESTAMP_DESC)
+                let l = n === d.B5.SUBMITTED;
+                if (t === d._e.TIMESTAMP_DESC)
                     if (i) return {
                         before: r.default.fromTimestamp(new Date().getTime())
                     };
@@ -50,7 +50,7 @@ function u(e) {
                 let e = await o.A.fetchGuildJoinRequests({
                     guildId: t,
                     status: i,
-                    limit: d,
+                    limit: c,
                     force: !0,
                     ...p
                 });
@@ -58,7 +58,7 @@ function u(e) {
                     let {
                         guild_join_requests: t
                     } = e.body;
-                    t.length < d && (_.current = !0)
+                    t.length < c && (_.current = !0)
                 }
             } catch (e) {
                 h(new a.LG(e).getAnyErrorMessage())

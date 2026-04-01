@@ -12,8 +12,8 @@ let o = function(e) {
         title: t,
         description: n,
         agreement: o,
-        disagreement: c,
-        onAgree: d,
+        disagreement: d,
+        onAgree: c,
         onDisagree: u,
         modalType: h,
         channelId: A,
@@ -26,8 +26,8 @@ let o = function(e) {
             (0, a.mU)(a.IY.NSFW_CHANNEL_DISAGREE_CTA, h, A, _), u?.()
         }, [u, h, A, _]),
         g = l.useCallback(() => {
-            (0, a.mU)(a.IY.NSFW_CHANNEL_AGREE_CTA, h, A, _), d?.()
-        }, [d, h, A, _]);
+            (0, a.mU)(a.IY.NSFW_CHANNEL_AGREE_CTA, h, A, _), c?.()
+        }, [c, h, A, _]);
     return (0, i.jsxs)(s.BJc, {
         justify: "center",
         align: "center",
@@ -54,11 +54,11 @@ let o = function(e) {
             justify: "center",
             align: "center",
             gap: 16,
-            children: [null != c && null != u ? (0, i.jsx)(s.Button, {
+            children: [null != d && null != u ? (0, i.jsx)(s.Button, {
                 variant: "secondary",
-                text: c,
+                text: d,
                 onClick: m
-            }) : null, null != o && null != d ? (0, i.jsx)(s.Button, {
+            }) : null, null != o && null != c ? (0, i.jsx)(s.Button, {
                 onClick: g,
                 text: o
             }) : null]

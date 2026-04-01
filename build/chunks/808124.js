@@ -8,8 +8,8 @@ var i = n(627968),
     a = n.n(s),
     r = n(311907),
     o = n(397927),
-    c = n(517461),
-    d = n(770178),
+    d = n(517461),
+    c = n(770178),
     u = n(418126),
     h = n(266626),
     A = n(998740),
@@ -32,7 +32,7 @@ let N = e => {
             u.Ay.update(t.id, {
                 seat: e
             })
-        }, [t.id]), [S, b] = (0, c.V)("haven-show-chat", !1);
+        }, [t.id]), [S, b] = (0, d.V)("haven-show-chat", !1);
         l.useEffect(() => {
             setTimeout(() => {
                 N(!0)
@@ -47,17 +47,17 @@ let N = e => {
         }), [V, H] = l.useState({
             x: 0,
             y: 0
-        }), [F, K] = l.useState(!1), W = l.useRef(null), [Y, z] = l.useState(null), q = (0, d.w)(e => {
+        }), [F, K] = l.useState(!1), W = l.useRef(null), [Y, z] = l.useState(null), q = (0, c.w)(e => {
             let {
                 contentRect: t,
                 target: n
-            } = e, i = n.getBoundingClientRect(), l = t.width, s = t.height, a = l / m.i.width * 1.5, r = s / m.i.height * 1.5, o = l / m.i.width * 1.1, c = s / m.i.height * 1.1;
+            } = e, i = n.getBoundingClientRect(), l = t.width, s = t.height, a = l / m.i.width * 1.5, r = s / m.i.height * 1.5, o = l / m.i.width * 1.1, d = s / m.i.height * 1.1;
             B({
                 x: l / 2 + i.x,
                 y: s / 2 + i.y
             });
-            let d = Math.max(a, r);
-            if (v(Math.max(o, c)), L(d), null != W.current) {
+            let c = Math.max(a, r);
+            if (v(Math.max(o, d)), L(c), null != W.current) {
                 let e = W.current.getBoundingClientRect();
                 z({
                     x: e.left - i.left,
@@ -78,11 +78,11 @@ let N = e => {
             for (; l && s < 10;)(l = i.y + a / 2 > 1536) && (i.y -= 32), s++;
             let r = i.x * t,
                 o = i.y * t,
-                c = n.width / 2 - r,
-                d = n.height / 2 - o;
+                d = n.width / 2 - r,
+                c = n.height / 2 - o;
             R(t), D({
-                x: c,
-                y: d
+                x: d,
+                y: c
             })
         }, [q, y]);
         l.useEffect(() => {

@@ -8,8 +8,8 @@ var i = n(627968),
     a = n.n(s),
     r = n(311907),
     o = n(990078),
-    c = n(397927),
-    d = n(309698),
+    d = n(397927),
+    c = n(309698),
     u = n(262763),
     h = n(743674),
     A = n(888697),
@@ -26,7 +26,7 @@ function I(e) {
         channel: t,
         imageUrl: n,
         isConnected: s
-    } = e, r = (0, h.S)(n), d = l.useCallback(() => {
+    } = e, r = (0, h.S)(n), c = l.useCallback(() => {
         (0, p.A)({
             channel: t
         })
@@ -50,7 +50,7 @@ function I(e) {
                 src: n,
                 className: E.Sl
             })
-        }) : (0, i.jsx)(c.DUT, {
+        }) : (0, i.jsx)(d.DUT, {
             className: a()(E.ZS, E.jI),
             style: I,
             onClick: m,
@@ -62,20 +62,20 @@ function I(e) {
             className: E.n_,
             children: [(0, i.jsx)(o.m, {
                 text: x.intl.string(f.default.XJ4UpB),
-                children: (0, i.jsx)(c.DUT, {
+                children: (0, i.jsx)(d.DUT, {
                     className: E.HF,
-                    onClick: d,
-                    children: (0, i.jsx)(c.R2l, {
+                    onClick: c,
+                    children: (0, i.jsx)(d.R2l, {
                         size: "xs",
                         color: "currentColor"
                     })
                 })
             }), (0, i.jsx)(o.m, {
                 text: x.intl.string(f.default.XV4qT6),
-                children: (0, i.jsx)(c.DUT, {
+                children: (0, i.jsx)(d.DUT, {
                     className: E.HF,
                     onClick: _,
-                    children: (0, i.jsx)(c.ucK, {
+                    children: (0, i.jsx)(d.ucK, {
                         size: "xs",
                         color: "currentColor"
                     })
@@ -95,13 +95,13 @@ function C(e) {
     }, [t]);
     return (0, i.jsx)("div", {
         className: E._o,
-        children: (0, i.jsxs)(c.DUT, {
+        children: (0, i.jsxs)(d.DUT, {
             className: E.hH,
             onClick: n,
-            children: [(0, i.jsx)(c.XGR, {
+            children: [(0, i.jsx)(d.XGR, {
                 size: "xs",
                 color: "currentColor"
-            }), (0, i.jsx)(c.Text, {
+            }), (0, i.jsx)(d.Text, {
                 variant: "text-sm/medium",
                 color: "currentColor",
                 children: x.intl.string(f.default.NGcIOF)
@@ -119,10 +119,10 @@ function N(e) {
     } = (0, _.Dm)({
         guildId: t.guild_id,
         location: "HangoutWindow"
-    }), a = (0, r.bG)([d.A], () => d.A.getChannelStatus(t), [t]), o = l.useMemo(() => (0, m.TP)(a), [a]), c = l.useMemo(() => null == a ? null : (0, m.K7)(a), [a]);
-    return s ? null != a && o && null != c ? (0, i.jsx)(I, {
+    }), a = (0, r.bG)([c.A], () => c.A.getChannelStatus(t), [t]), o = l.useMemo(() => (0, m.TP)(a), [a]), d = l.useMemo(() => null == a ? null : (0, m.K7)(a), [a]);
+    return s ? null != a && o && null != d ? (0, i.jsx)(I, {
         channel: t,
-        imageUrl: c,
+        imageUrl: d,
         isConnected: n
     }) : n ? (0, i.jsx)(C, {
         channel: t

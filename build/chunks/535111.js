@@ -9,8 +9,8 @@ var l = n(503698),
     a = n(397927),
     r = n(275667),
     o = n(576437),
-    c = n(408486),
-    d = n(769015),
+    d = n(408486),
+    c = n(769015),
     u = n(409626),
     h = n(692969),
     A = n(485599),
@@ -48,11 +48,11 @@ function p(e) {
         ref: A,
         popoutTargetRef: p
     } = e, f = null != n ? n.name : null != l ? l.name : _.intl.string(_.t["UQMV/E"]);
-    return (0, c.z)(), (0, i.jsxs)("div", {
+    return (0, d.z)(), (0, i.jsxs)("div", {
         className: m.cm,
         children: [(0, i.jsxs)("div", {
             className: m.f9,
-            children: [(0, i.jsx)(d.A, {
+            children: [(0, i.jsx)(c.A, {
                 className: m.Gt,
                 game: n,
                 pid: l?.pid,

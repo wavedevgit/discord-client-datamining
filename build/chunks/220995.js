@@ -8,8 +8,8 @@ var i = n(627968),
     a = n.n(s),
     r = n(382222),
     o = n(110259),
-    c = n(311907),
-    d = n(435371),
+    d = n(311907),
+    c = n(435371),
     u = n(397927),
     h = n(964486),
     A = n(793574),
@@ -43,8 +43,8 @@ function b(e) {
             location_stack: M
         }
     });
-    let D = (0, c.bG)([f.A], () => f.A.can(I.xBc.CREATE_INSTANT_INVITE, t), [t]),
-        U = (0, c.bG)([p.A], () => p.A.getGuild(t.guild_id)),
+    let D = (0, d.bG)([f.A], () => f.A.can(I.xBc.CREATE_INSTANT_INVITE, t), [t]),
+        U = (0, d.bG)([p.A], () => p.A.getGuild(t.guild_id)),
         [G, P] = l.useState(!1),
         k = l.useRef(null),
         {
@@ -174,7 +174,7 @@ function b(e) {
                                 color: "currentColor",
                                 className: a()(N.Hk, N.Kk)
                             })]
-                        }), (0, i.jsx)(d.m_, {
+                        }), (0, i.jsx)(c.m_, {
                             text: C.intl.string(C.t["EE+P0H"]),
                             overflowOnly: !0,
                             children: (0, i.jsx)(u.Text, {

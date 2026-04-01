@@ -9,8 +9,8 @@ var i = n(562465),
     a = n(734057),
     r = n(927813),
     o = n(769022),
-    c = n(652215);
-let d = 10 * r.A.Millis.MINUTE;
+    d = n(652215);
+let c = 10 * r.A.Millis.MINUTE;
 
 function u(e) {
     l.h.dispatch({
@@ -21,7 +21,7 @@ function u(e) {
 
 function h(e) {
     let t = o.A.getLastFetchTime(e);
-    null != t && Date.now() - t < d || (l.h.dispatch({
+    null != t && Date.now() - t < c || (l.h.dispatch({
         type: "VOICE_CHANNEL_HISTORY_UPDATE_LAST_FETCH_TIME",
         channelId: e,
         timestamp: Date.now()
@@ -38,11 +38,11 @@ async function A(e) {
             {
                 body: o
             } = await i.Bo.get({
-                url: c.Rsh.CHANNEL_VOICE_HISTORY(e),
+                url: d.Rsh.CHANNEL_VOICE_HISTORY(e),
                 rejectWithError: !0,
                 query: r
             }),
-            d = (o.voice_leaves ?? []).map(e => ({
+            c = (o.voice_leaves ?? []).map(e => ({
                 userId: e.user_id,
                 leftAt: e.timestamp
             })),
@@ -55,7 +55,7 @@ async function A(e) {
         l.h.dispatch({
             type: "VOICE_CHANNEL_HISTORY_FETCH_COMPLETE",
             channelId: e,
-            voiceLeaves: d,
+            voiceLeaves: c,
             activities: u
         })
     } catch {}

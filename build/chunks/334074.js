@@ -1,6 +1,6 @@
 /** chunk id: 334074 params = (module,exports,require) **/
 n.d(t, {
-    A: () => c
+    A: () => d
 });
 var i = n(64700),
     l = n(311907),
@@ -9,14 +9,14 @@ var i = n(64700),
     r = n(574560),
     o = n(652215);
 
-function c(e) {
+function d(e) {
     let {
         application: t,
         disabled: n = !1,
-        dismissibleContent: c,
-        dismissibleContentGroupName: d,
+        dismissibleContent: d,
+        dismissibleContentGroupName: c,
         bypassAutoDismiss: u = !1
-    } = e, h = (0, l.bG)([r.A], () => null != t ? r.A.getGameUpsellDismissal(t.id, c) : null), [A, _] = (0, i.useState)(!1);
+    } = e, h = (0, l.bG)([r.A], () => null != t ? r.A.getGameUpsellDismissal(t.id, d) : null), [A, _] = (0, i.useState)(!1);
     (0, i.useEffect)(() => {
         let e = null != h ? h.dismissedAt + Math.min(864e5 * Math.pow(2, h.timesDismissed - 1), 24192e5) : 0,
             t = 0,
@@ -28,13 +28,13 @@ function c(e) {
         return n(), () => clearTimeout(t)
     }, [h]);
     let m = !n && null != t && A,
-        [g, p] = (0, s.Wl)(m ? c : null, {
+        [g, p] = (0, s.Wl)(m ? d : null, {
             cooldownDurationMs: 864e5
-        }, d, u);
+        }, c, u);
     return {
-        shouldShow: g === c,
+        shouldShow: g === d,
         markAsDismissed: e => {
-            null != t && ((0, a.M)(t.id, c), p(e))
+            null != t && ((0, a.M)(t.id, d), p(e))
         }
     }
 }

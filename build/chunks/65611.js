@@ -12,8 +12,8 @@ var l = n(503698),
     a = n(827734),
     r = n(397927),
     o = n(513461),
-    c = n(791606),
-    d = n(557883);
+    d = n(791606),
+    c = n(557883);
 
 function u(e, t, n) {
     return (0, i.jsx)(r.hVq, {
@@ -25,9 +25,9 @@ function u(e, t, n) {
 
 function h() {
     return (0, i.jsx)(r.fkz, {
-        icon: (0, r.kHD)(c.A),
+        icon: (0, r.kHD)(d.A),
         disableColor: !0,
-        className: d.yk
+        className: c.yk
     })
 }
 
@@ -39,7 +39,7 @@ function A(e) {
         isCurrentUserConnected: s,
         liveStage: a,
         activeEvent: o,
-        activity: c
+        activity: d
     } = e;
     if (o) t = r.CTc;
     else if (a) t = r.qux;
@@ -47,7 +47,7 @@ function A(e) {
     else if (i) t = r.npA;
     else if (n) t = r.HKD;
     else {
-        if (!c) return null;
+        if (!d) return null;
         t = r.k9F
     }
     return m({
@@ -85,8 +85,8 @@ function m(e) {
     } = e;
     return (0, i.jsx)(r.fkz, {
         icon: t,
-        className: s()(d.bG, {
-            [d.gB]: l
+        className: s()(c.bG, {
+            [c.gB]: l
         }),
         ...null == n ? {
             disableColor: !0

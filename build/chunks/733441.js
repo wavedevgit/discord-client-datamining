@@ -9,16 +9,16 @@ var l = n(311907),
     a = n(604681),
     r = n(58149),
     o = n(761640),
-    c = n(967198),
-    d = n(58736),
+    d = n(967198),
+    c = n(58736),
     u = n(652215),
     h = n(985018);
 
 function A(e) {
     let {
         channelId: t
-    } = e, n = (0, l.bG)([o.Ay], () => o.Ay.getSection(t)), A = (0, l.bG)([c.A], () => c.A.getGuildId()), _ = n === u.YvQ.MEMBERS;
-    return (0, i.jsx)(d.In, {
+    } = e, n = (0, l.bG)([o.Ay], () => o.Ay.getSection(t)), A = (0, l.bG)([d.A], () => d.A.getGuildId()), _ = n === u.YvQ.MEMBERS;
+    return (0, i.jsx)(c.In, {
         tooltip: _ ? h.intl.string(h.t.Axvx8c) : h.intl.string(h.t.gxChDx),
         icon: s.nFg,
         onClick: () => {

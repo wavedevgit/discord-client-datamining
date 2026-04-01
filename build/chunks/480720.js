@@ -8,8 +8,8 @@ var i = n(64700),
     a = n(203982),
     r = n(969151),
     o = n(108959),
-    c = n(90804),
-    d = n(748975),
+    d = n(90804),
+    c = n(748975),
     u = n(652215);
 
 function h(e) {
@@ -22,13 +22,13 @@ function h(e) {
                 location: n
             } = e, i = (0, r.H)(n);
             if (null == i || !(0, o.A)(i)) return;
-            s.A.getVoiceChannelId() !== i && await (0, c.A)({
+            s.A.getVoiceChannelId() !== i && await (0, d.A)({
                 channelId: i
             });
             let a = l.A.getChannel(i),
                 u = a?.guild_id;
             setTimeout(() => {
-                (0, d.A)(u, n), t?.()
+                (0, c.A)(u, n), t?.()
             }, 0)
         }
         return a._.subscribe(u.jej.OPEN_EMBEDDED_ACTIVITY, e), () => {

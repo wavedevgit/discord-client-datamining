@@ -15,20 +15,20 @@ function a(e) {
         onClick: r,
         ...o
     } = e, {
-        Component: c,
-        events: d,
+        Component: d,
+        events: c,
         play: u
     } = (0, l.c)();
     return (0, i.jsx)(s.l, {
         isTrayButton: !0,
         isActive: t,
         color: t ? "green" : void 0,
-        iconComponent: c,
+        iconComponent: d,
         onMouseEnter: e => {
-            n?.(e), d.onMouseEnter()
+            n?.(e), c.onMouseEnter()
         },
         onMouseLeave: e => {
-            a?.(e), d.onMouseLeave()
+            a?.(e), c.onMouseLeave()
         },
         onClick: e => {
             r?.(e), u()

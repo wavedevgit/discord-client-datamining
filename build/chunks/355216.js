@@ -9,8 +9,8 @@ var i = n(627968),
     a = n.n(s),
     r = n(311907),
     o = n(397927),
-    c = n(187508),
-    d = n(851109),
+    d = n(187508),
+    c = n(851109),
     u = n(599486),
     h = n(394953),
     A = n(628325),
@@ -41,9 +41,9 @@ function p(e) {
             } = (0, h.U4)(), {
                 hasMoreMentions: t,
                 mentionsLoading: n
-            } = (0, r.cf)([c.Ay], () => ({
-                hasMoreMentions: c.Ay.hasMore,
-                mentionsLoading: c.Ay.loading
+            } = (0, r.cf)([d.Ay], () => ({
+                hasMoreMentions: d.Ay.hasMore,
+                mentionsLoading: d.Ay.loading
             })), i = Math.min(e, 25), l = e > i || t || n, s = (0, o.o6S)(i) + 6 * !!l;
             return {
                 clampedCount: i,
@@ -73,7 +73,7 @@ function p(e) {
         }), [s, t.width])),
         {
             entrypoint: p
-        } = (0, d.X8)({
+        } = (0, c.X8)({
             location: "useInboxBadgeInfo"
         });
     return l.useMemo(() => {
@@ -83,7 +83,7 @@ function p(e) {
             badge: null,
             badgeType: null
         };
-        if (p === d.RK.SERVER_RAIL_TOP) {
+        if (p === c.RK.SERVER_RAIL_TOP) {
             let t, n = (0, o.o6S)(e) - 3;
             return {
                 badge: (t = (0, o.o6S)(e) - 3, (0, i.jsx)(o.hVq, {
@@ -106,7 +106,7 @@ function p(e) {
                 }
             }
         }
-        return p === d.RK.TITLE_BAR_LEFT ? {
+        return p === c.RK.TITLE_BAR_LEFT ? {
             badge: (0, i.jsx)(o.Text, {
                 variant: "eyebrow",
                 children: (0, o.Gub)(e)

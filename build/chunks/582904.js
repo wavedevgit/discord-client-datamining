@@ -10,8 +10,8 @@ var i = n(64700),
     a = n(95701),
     r = n(696451),
     o = n(576705),
-    c = n(287809),
-    d = n(607567),
+    d = n(287809),
+    c = n(607567),
     u = n(488926),
     h = n(605431),
     A = n(366251),
@@ -21,16 +21,16 @@ function m(e) {
     let {
         channel: t
     } = e, n = t?.guild_id;
-    return (0, l.yK)([s.A, d.Ay, r.Ay, c.default], () => {
+    return (0, l.yK)([s.A, c.Ay, r.Ay, d.default], () => {
         if (null == t) return [];
         let e = s.A.getUserAffinitiesMap(),
-            i = null != t ? d.Ay.getVoiceStatesForChannel(t) : [],
+            i = null != t ? c.Ay.getVoiceStatesForChannel(t) : [],
             l = new Set;
         i.forEach(e => l.add(e.user.id));
         let o = [];
         for (let e of r.Ay.getMembers(n)) {
             if (l.has(e.userId)) continue;
-            let n = c.default.getUser(e.userId);
+            let n = d.default.getUser(e.userId);
             if (null == n) continue;
             let i = (0, a.TA)(t.type);
             (0, u.$3)({

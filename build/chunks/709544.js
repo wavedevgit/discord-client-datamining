@@ -1,6 +1,6 @@
 /** chunk id: 709544 params = (module,exports,require) **/
 n.d(t, {
-    A: () => c
+    A: () => d
 });
 var i = n(311907),
     l = n(95701),
@@ -9,7 +9,7 @@ var i = n(311907),
     r = n(309010),
     o = n(652215);
 
-function c(e, t) {
+function d(e, t) {
     return (0, i.bG)([s.A, a.A, r.A], () => {
         let n = a.A.getGuild(t);
         if (!(n?.features.has(o.GuildFeatures.WELCOME_SCREEN_ENABLED) === !0 && n.features.has(o.GuildFeatures.COMMUNITY)) || n.features.has(o.GuildFeatures.GUILD_SERVER_GUIDE)) return !1;

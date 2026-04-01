@@ -4,31 +4,31 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var l = n(311907),
-    a = n(961350),
+var a = n(311907),
+    l = n(961350),
     s = n(823016),
     r = n(507247),
     o = n(750492),
-    d = n(253798),
-    c = n(622249),
+    c = n(253798),
+    d = n(622249),
     u = n(676526),
-    g = n(192);
+    m = n(192);
 
-function m(e) {
+function g(e) {
     let {
         games: t,
         ...n
     } = e, {
-        registerItemRef: l,
-        manageFocusOnDelete: a
+        registerItemRef: a,
+        manageFocusOnDelete: l
     } = (0, s.r)();
     return (0, i.jsx)(r.A, {
         games: t,
         renderGame: (e, t) => (0, i.jsx)(u.h, {
             index: t,
             game: e,
-            coverRef: l(e.applicationId),
-            onRemoveGame: a,
+            coverRef: a(e.applicationId),
+            onRemoveGame: l,
             ...n
         })
     })
@@ -40,18 +40,18 @@ function p(e) {
         widgetType: n,
         disableInteraction: r,
         games: u
-    } = e, p = (0, l.bG)([a.default], () => a.default.getId() === t), {
+    } = e, p = (0, a.bG)([l.default], () => l.default.getId() === t), {
         getManageButtonForWidget: x
-    } = (0, g.r)(), f = x(n), {
-        expanded: h,
-        setExpanded: _
-    } = (0, d.B)(), A = h ? u : u.slice(0, 8), I = u.length > 8, j = (0, i.jsxs)(i.Fragment, {
-        children: [(0, i.jsx)(m, {
+    } = (0, m.r)(), f = x(n), {
+        expanded: _,
+        setExpanded: h
+    } = (0, c.B)(), A = _ ? u : u.slice(0, 8), I = u.length > 8, v = (0, i.jsxs)(i.Fragment, {
+        children: [(0, i.jsx)(g, {
             ...e,
             games: A
-        }), I && (0, i.jsx)(c.A, {
-            expanded: h,
-            onClick: () => _(e => !e)
+        }), I && (0, i.jsx)(d.A, {
+            expanded: _,
+            onClick: () => h(e => !e)
         })]
     });
     return p && !r ? (0, i.jsxs)(i.Fragment, {
@@ -60,7 +60,7 @@ function p(e) {
             gameCount: u.length
         }), (0, i.jsx)(s.B, {
             emptyListFallbackRef: f,
-            children: j
+            children: v
         })]
-    }) : j
+    }) : v
 }

@@ -8,8 +8,8 @@ var i = n(627968),
     a = n.n(s),
     r = n(311907),
     o = n(397927),
-    c = n(465532),
-    d = n(414798),
+    d = n(465532),
+    c = n(414798),
     u = n(579872),
     h = n(147192),
     A = n(738876),
@@ -114,7 +114,7 @@ function X(e) {
     let t, {
             parentChannel: n,
             parentMessageId: s,
-            location: d
+            location: c
         } = e,
         u = (0, r.bG)([_.A], () => _.A.messageGroupSpacing),
         A = (t = l.useContext(M.EH), l.useCallback(() => {
@@ -131,7 +131,7 @@ function X(e) {
                     s(e => ({
                         ...e,
                         ...n
-                    })), c.A.changeThreadSettings(e.id, {
+                    })), d.A.changeThreadSettings(e.id, {
                         ...n,
                         parentMessageId: t
                     })
@@ -186,7 +186,7 @@ function X(e) {
                 textAreaState: a,
                 location: r,
                 enableAIFeatures: o
-            } = e, [c, d] = l.useState(null), [u, h] = l.useState(null), [A, _] = l.useState(!1), m = (0, V.A)({
+            } = e, [d, c] = l.useState(null), [u, h] = l.useState(null), [A, _] = l.useState(!1), m = (0, V.A)({
                 parentChannel: t,
                 parentMessageId: n,
                 threadSettings: i,
@@ -196,7 +196,7 @@ function X(e) {
                 useDefaultThreadName: !0
             });
             return {
-                nameError: c,
+                nameError: d,
                 messageError: u,
                 submit: l.useCallback(async (e, l, s) => {
                     if (A) return {
@@ -205,9 +205,9 @@ function X(e) {
                     };
                     _(!0), null == e && (e = a.textValue), e = e.trim(), (null == l || 0 === l.length) && (l = S.A.getStickerPreview(t.id, Y.drafts.type)?.map(e => e.id)), (null == s || 0 === s.length) && (s = L.A.getUploads(t.id, j.C.FirstThreadMessage));
                     let r = (i.name ?? "").trim(),
-                        c = (o || null == n) && 0 === r.length,
+                        d = (o || null == n) && 0 === r.length,
                         u = "" === e && (null == l || 0 === l.length) && 0 === s.length;
-                    if (d(c ? (0, G.uW)() : null), h(u ? (0, G.fo)() : null), c || u) return _(!1), {
+                    if (c(d ? (0, G.uW)() : null), h(u ? (0, G.fo)() : null), d || u) return _(!1), {
                         shouldClear: !1,
                         shouldRefocus: !0
                     };
@@ -227,7 +227,7 @@ function X(e) {
                     try {
                         await m(e, l, s)
                     } catch (e) {
-                        return e.body?.code === H.t02.AUTOMOD_TITLE_BLOCKED ? d((0, G.z0)(e.body, t)) : e.body?.code === H.t02.INVALID_FORM_BODY && e.body?.errors?.name != null && d((0, G.T4)()), _(!1), {
+                        return e.body?.code === H.t02.AUTOMOD_TITLE_BLOCKED ? c((0, G.z0)(e.body, t)) : e.body?.code === H.t02.INVALID_FORM_BODY && e.body?.errors?.name != null && c((0, G.T4)()), _(!1), {
                             shouldClear: !1,
                             shouldRefocus: !0
                         }
@@ -245,7 +245,7 @@ function X(e) {
             threadSettings: m,
             privateThreadMode: I,
             textAreaState: x,
-            location: d,
+            location: c,
             enableAIFeatures: T
         }),
         k = (0, P.Iy)(m, I) ? o.tn0 : o.ysw;
@@ -344,7 +344,7 @@ function Q(e) {
         updateThreadSettings: s,
         error: a,
         disabled: r,
-        isGeneratingAI: c,
+        isGeneratingAI: d,
         enableAIFeatures: u,
         getThreadNameInputAccessory: h
     } = e, A = l.name ?? "", _ = (0, G.vr)(a, {
@@ -360,7 +360,7 @@ function Q(e) {
         onChange: e => {
             s({
                 name: (0, k.A)(e, !1)
-            }), "" !== e ? d.A.startTyping(t.id) : d.A.stopTyping(t.id)
+            }), "" !== e ? c.A.startTyping(t.id) : c.A.stopTyping(t.id)
         },
         onBlur: () => {
             let e = (0, k.A)(A, !0);
@@ -369,7 +369,7 @@ function Q(e) {
             })
         },
         error: _,
-        disabled: r || c
+        disabled: r || d
     })
 }
 
@@ -381,7 +381,7 @@ function $(e) {
         submit: u,
         error: h
     } = e, [A, _] = l.useState(!0), m = l.useCallback(() => _(!0), []), g = l.useCallback(() => _(!1), []), p = l.useCallback((e, n, i) => {
-        c.A.saveDraft(t.id, n, j.C.FirstThreadMessage), s(e => ("" !== n && e.textValue !== n ? d.A.startTyping(t.id) : "" === n && d.A.stopTyping(t.id), {
+        d.A.saveDraft(t.id, n, j.C.FirstThreadMessage), s(e => ("" !== n && e.textValue !== n ? c.A.startTyping(t.id) : "" === n && c.A.stopTyping(t.id), {
             textValue: n,
             richValue: i
         }))

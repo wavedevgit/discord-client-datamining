@@ -8,8 +8,8 @@ var i = n(627968),
     a = n(397927),
     r = n(915089),
     o = n(341915),
-    c = n(18437),
-    d = n(590202),
+    d = n(18437),
+    c = n(590202),
     u = n(453384),
     h = n(646764),
     A = n(545986),
@@ -23,11 +23,11 @@ function g(e) {
         completedRatio: g,
         minimizeFrame: p,
         onClose: f
-    } = e, x = (0, r.GV)(), E = (0, c.Ut)(), I = l.useCallback(() => {
+    } = e, x = (0, r.GV)(), E = (0, d.Ut)(), I = l.useCallback(() => {
         E({
             questId: t.id,
             questContent: o.uF.RUNNING_ACTIVITY,
-            questContentCTA: d.Cy.LEARN_MORE,
+            questContentCTA: c.Cy.LEARN_MORE,
             sourceQuestContent: o.uF.RUNNING_ACTIVITY
         }), (0, A.navigateToQuestHome)({
             fromContent: o.uF.RUNNING_ACTIVITY,

@@ -9,8 +9,8 @@ var l = n(397927),
     a = n(272355),
     r = n(793322),
     o = n(174768),
-    c = n(814340);
-let d = "QUICK_SWITCHER_MODAL_KEY";
+    d = n(814340);
+let c = "QUICK_SWITCHER_MODAL_KEY";
 class u extends a.A {
     _initialize() {
         s.h.subscribe("QUICKSWITCHER_SHOW", this.handleShow), s.h.subscribe("QUICKSWITCHER_HIDE", this.handleHide)
@@ -19,16 +19,16 @@ class u extends a.A {
         s.h.unsubscribe("QUICKSWITCHER_SHOW", this.handleShow), s.h.unsubscribe("QUICKSWITCHER_HIDE", this.handleHide)
     }
     handleShow() {
-        o.A.isOpen() && !(0, l.kBI)(d) && (0, l.qfG)(e => (0, i.jsx)(c.A, {
+        o.A.isOpen() && !(0, l.kBI)(c) && (0, l.qfG)(e => (0, i.jsx)(d.A, {
             ...e
         }), {
-            modalKey: d,
+            modalKey: c,
             instant: !0,
             onCloseCallback: r.jD
         })
     }
     handleHide() {
-        (0, l.OoC)(d)
+        (0, l.OoC)(c)
     }
 }
 let h = new u

@@ -20,18 +20,18 @@ function r(e) {
         type: s.kh.SHORT
     });
     if (null == t.saveData.dueAt) return null;
-    let c = o ? "text-feedback-critical" : "text-default";
+    let d = o ? "text-feedback-critical" : "text-default";
     return (0, i.jsxs)("div", {
         className: a.k,
         children: [(0, i.jsx)("div", {
             className: a.K,
             children: (0, i.jsx)(l.O4, {
                 size: "xxs",
-                color: "text-feedback-critical" === c ? l.LU0.colors.TEXT_FEEDBACK_CRITICAL : l.LU0.colors.INTERACTIVE_TEXT_ACTIVE
+                color: "text-feedback-critical" === d ? l.LU0.colors.TEXT_FEEDBACK_CRITICAL : l.LU0.colors.INTERACTIVE_TEXT_ACTIVE
             })
         }), (0, i.jsx)(l.Heading, {
             variant: "text-md/semibold",
-            color: c,
+            color: d,
             children: r
         })]
     })

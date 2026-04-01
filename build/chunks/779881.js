@@ -9,8 +9,8 @@ var l = n(442433),
     a = n(976860),
     r = n(652793),
     o = n(652215),
-    c = n(746080),
-    d = n(985018);
+    d = n(746080),
+    c = n(985018);
 
 function u(e) {
     let {
@@ -22,10 +22,10 @@ function u(e) {
         renderIcon: e => (0, i.jsx)(s.A, {
             className: e
         }),
-        text: d.intl.string(d.t["KzCF/6"]),
+        text: c.intl.string(c.t["KzCF/6"]),
         selected: u,
         onClick: () => {
-            (0, a.pX)(o.BVt.CHANNEL(t.id, c.VV.ROLE_SUBSCRIPTIONS))
+            (0, a.pX)(o.BVt.CHANNEL(t.id, d.VV.ROLE_SUBSCRIPTIONS))
         },
         onContextMenu: e => {
             null != t && (0, l.L3)(e, async () => {

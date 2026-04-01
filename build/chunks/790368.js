@@ -9,8 +9,8 @@ var l = n(827734),
     a = n(397927),
     r = n(711950),
     o = n(322387),
-    c = n(912309),
-    d = n(954571),
+    d = n(912309),
+    c = n(954571),
     u = n(652215),
     h = n(985018),
     A = n(778068);
@@ -18,7 +18,7 @@ var l = n(827734),
 function _(e) {
     let {
         closePopout: t
-    } = e, n = (0, c.kX)();
+    } = e, n = (0, d.kX)();
     return (0, i.jsx)(s.m, {
         asContainer: !0,
         text: h.intl.string(h.t["lMR96+"]),
@@ -26,7 +26,7 @@ function _(e) {
             "aria-label": `${h.intl.string(h.t["lMR96+"])}, ${n}`,
             className: A.b,
             onClick: () => {
-                d.default.track(u.HAw.NOTIFICATION_CENTER_ACTION, {
+                c.default.track(u.HAw.NOTIFICATION_CENTER_ACTION, {
                     action_type: o.e1.FRIEND_REQUESTS_BUTTON_CLICK
                 }), r.A.transitionToSection(u.m3P.PENDING, {
                     explicit: !0

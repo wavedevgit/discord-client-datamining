@@ -8,8 +8,8 @@ var i = n(627968),
     a = n(397927),
     r = n(367513),
     o = n(738876),
-    c = n(698718),
-    d = n(812771),
+    d = n(698718),
+    c = n(812771),
     u = n(355622),
     h = n(826673),
     A = n(58736),
@@ -39,8 +39,8 @@ let I = function(e) {
             tooltip: x.intl.string(x.t.cpT0Cq),
             onClick: C
         });
-    return (0, i.jsxs)(d.A, {
-        sidebarType: d.X.CallChatSidebar,
+    return (0, i.jsxs)(c.A, {
+        sidebarType: c.X.CallChatSidebar,
         maxWidth: I,
         floatingLayer: g.Ay,
         children: [(0, i.jsx)(o.A, {
@@ -57,7 +57,7 @@ let I = function(e) {
             })]
         }), (0, i.jsx)("div", {
             className: E.T,
-            children: (0, i.jsx)(c.A, {
+            children: (0, i.jsx)(d.A, {
                 channel: t,
                 guild: n,
                 chatInputType: u.oU.SIDEBAR

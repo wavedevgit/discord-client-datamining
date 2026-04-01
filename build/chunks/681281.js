@@ -9,8 +9,8 @@ var l = n(503698),
     a = n(311907),
     r = n(990078),
     o = n(397927),
-    c = n(730134),
-    d = n(440594),
+    d = n(730134),
+    c = n(440594),
     u = n(429913),
     h = n(309698),
     A = n(47167),
@@ -65,7 +65,7 @@ function V(e) {
         color: s
     } = e, a = (0, y.A)(n, t, l);
     return null == t || null == l ? null : (0, i.jsxs)(i.Fragment, {
-        children: [(0, i.jsx)(c.A, {
+        children: [(0, i.jsx)(d.A, {
             className: k.my,
             size: o._3J.SIZE_24,
             user: t,
@@ -87,7 +87,7 @@ function H(e) {
         } = e,
         a = (0, b.$F)(s),
         r = (0, g.Qs)(s.id),
-        c = null != r ? (0, p.G3)(r) : null,
+        d = null != r ? (0, p.G3)(r) : null,
         u = null != r;
     if (l?.type === D.lp.ACTIVITY) null != n && (t = (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(x.Ay.Divider, {
@@ -99,7 +99,7 @@ function H(e) {
             className: k.W$,
             variant: "text-md/normal",
             color: "none",
-            children: (0, d.A)(n.name)
+            children: (0, c.A)(n.name)
         }), a && (0, i.jsx)(B, {
             channel: s,
             focusedParticipant: l
@@ -123,7 +123,7 @@ function H(e) {
         })
     } else u && (t = (0, i.jsx)(f.A, {
         guildEvent: r,
-        recurrenceId: c
+        recurrenceId: d
     }));
     return (0, i.jsx)("div", {
         className: k.kL,
@@ -135,8 +135,8 @@ function F(e) {
     let {
         channel: t,
         guild: l,
-        appContext: c,
-        inCall: d,
+        appContext: d,
+        inCall: c,
         isChatOpen: m,
         exitFullScreen: g
     } = e, {
@@ -147,7 +147,7 @@ function F(e) {
     }), [t.id]), f = (0, A.Ay)(t), C = (0, _.gU)(t), [b] = (0, u.A)(p?.type === D.lp.ACTIVITY ? [p.applicationId] : []), y = P.intl.string(P.t.BVZqJl);
     t.isDM() ? y = P.intl.string(P.t.jN2DfZ) : t.isGroupDM() && (y = P.intl.string(P.t["e5y+gm"]));
     let v = (0, a.bG)([h.A], () => h.A.getChannelStatus(t)),
-        L = t.isGuildVoice() && d && null != v && v.length > 0,
+        L = t.isGuildVoice() && c && null != v && v.length > 0,
         U = (0, R.Ay)(t),
         B = L ? (0, i.jsx)(r.m, {
             asContainer: !0,
@@ -205,8 +205,8 @@ function F(e) {
                 childrenBottom: B,
                 toolbar: (0, i.jsx)(O.A, {
                     channel: t,
-                    appContext: c,
-                    inCall: d,
+                    appContext: d,
+                    inCall: c,
                     isChatOpen: m,
                     exitFullScreen: g
                 }),

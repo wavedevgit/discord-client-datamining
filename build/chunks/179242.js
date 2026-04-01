@@ -9,8 +9,8 @@ var l = n(163126),
     a = n(114212),
     r = n(345942),
     o = n(183555),
-    c = n(913453),
-    d = n(229187),
+    d = n(913453),
+    c = n(229187),
     u = n(657331),
     h = n(21241),
     A = n(503062),
@@ -32,7 +32,7 @@ function x(e) {
         mutualFriendsCount: C,
         mutualFriends: N,
         mutualGuilds: T
-    } = (0, c.A)(t), S = !t.bot && null != C && C > 0, b = null != T && T.length > 0;
+    } = (0, d.A)(t), S = !t.bot && null != C && C > 0, b = null != T && T.length > 0;
     return S || b ? (0, i.jsxs)(m.A.Overlay, {
         className: f.Lw,
         children: [b && (0, i.jsx)(g.A, {
@@ -57,7 +57,7 @@ function x(e) {
             section: "MUTUAL_FRIENDS",
             header: p.intl.string(p.t["0mTJ3j"]),
             listClassName: f.p_,
-            onExpand: () => (0, d.A)(t.id, I),
+            onExpand: () => (0, c.A)(t.id, I),
             items: null == N ? Array.from({
                 length: C
             }).map((e, t) => (0, i.jsxs)("div", {

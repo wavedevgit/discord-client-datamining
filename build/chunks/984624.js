@@ -8,8 +8,8 @@ var i = n(627968),
     a = n(397927),
     r = n(267102),
     o = n(931991),
-    c = n(246356),
-    d = n(404355),
+    d = n(246356),
+    c = n(404355),
     u = n(734057),
     h = n(707592),
     A = n(496092),
@@ -37,7 +37,7 @@ function p(e) {
             let {
                 closePopout: t
             } = e;
-            return (0, i.jsx)(c.A, {
+            return (0, i.jsx)(d.A, {
                 children: (0, i.jsx)(a.W1t, {
                     "data-menu-migrated": !0,
                     navId: "exit-options",
@@ -65,14 +65,14 @@ function p(e) {
             let {
                 onClick: t
             } = e;
-            return (0, i.jsx)(d.A, {
+            return (0, i.jsx)(c.A, {
                 buttonRef: C,
                 label: g.intl.string(g.t["6vrfgt"]),
                 onClick: N,
                 onPopoutClick: t
             })
         }
-    }) : (0, i.jsx)(d.A, {
+    }) : (0, i.jsx)(c.A, {
         label: g.intl.string(g.t["6vrfgt"]),
         onClick: n
     })

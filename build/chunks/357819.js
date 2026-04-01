@@ -8,8 +8,8 @@ var i = n(627968),
     a = n(456412),
     r = n(313961),
     o = n(63995),
-    c = n(113783),
-    d = n(69407),
+    d = n(113783),
+    c = n(69407),
     u = n(224648),
     h = n(694257),
     A = n(927630),
@@ -20,7 +20,7 @@ var i = n(627968),
     f = n(979909);
 
 function x(e) {
-    return e.type === d.wY.VOICE
+    return e.type === c.wY.VOICE
 }
 let E = (0, a.A)(e => {
     let t, n, {
@@ -38,18 +38,18 @@ let E = (0, a.A)(e => {
             largeStream: r.A.getStageStreamSize(a.id),
             chatOpen: r.A.getChatOpen(a.id)
         }), [a.id]),
-        b = (0, c.uy)(a.id),
-        y = (0, c.zy)(a.id, d.ip.AUDIENCE),
+        b = (0, d.uy)(a.id),
+        y = (0, d.zy)(a.id, c.ip.AUDIENCE),
         v = (0, s.bG)([o.A], () => null != N ? o.A.getParticipant(a.id, N) : null),
-        j = (0, c.E5)(a.id, d.ip.SPEAKER),
+        j = (0, d.E5)(a.id, c.ip.SPEAKER),
         R = j.filter(x),
-        O = null != j.find(e => e.type === d.wY.STREAM),
+        O = null != j.find(e => e.type === c.wY.STREAM),
         L = Math.floor((E - 32) / 102),
         M = E < 424 ? 1 : E < 624 ? 2 : E < 824 || S ? 3 : 4,
         D = {
-            [d.ip.SPEAKER]: M,
-            [d.ip.AUDIENCE]: L,
-            [d.ip.SELECTED]: 1
+            [c.ip.SPEAKER]: M,
+            [c.ip.AUDIENCE]: L,
+            [c.ip.SELECTED]: 1
         },
         U = (0, u.Uo)(a.id),
         [G, P] = (0, u.RG)(a.id, D, U),

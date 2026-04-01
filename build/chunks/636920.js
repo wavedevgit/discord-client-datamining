@@ -8,8 +8,8 @@ var i = n(627968),
     a = n(3026),
     r = n(435371),
     o = n(397927),
-    c = n(956793),
-    d = n(576705),
+    d = n(956793),
+    c = n(576705),
     u = n(309010),
     h = n(954571),
     A = n(69555),
@@ -31,7 +31,7 @@ function N(e) {
         isSelf: T = !1,
         analyticsSource: S,
         onAction: b
-    } = e, y = (0, s.bG)([u.A], () => u.A.getVoiceChannelId() === n.id, [n]), v = (0, s.bG)([d.A], () => d.A.can(E.xBc.CONNECT, n), [n]), j = null == t.emoji || (0, m.n)(t.emoji, n);
+    } = e, y = (0, s.bG)([u.A], () => u.A.getVoiceChannelId() === n.id, [n]), v = (0, s.bG)([c.A], () => c.A.can(E.xBc.CONNECT, n), [n]), j = null == t.emoji || (0, m.n)(t.emoji, n);
     l.useEffect(() => {
         h.default.track(E.HAw.VIEW_HANG_STATUS, {
             source: S,
@@ -40,7 +40,7 @@ function N(e) {
         })
     }, [S, n.id, N]);
     let R = l.useCallback(() => {
-            !y && v && (c.default.selectVoiceChannel(n.id), b?.(), h.default.track(E.HAw.HANG_STATUS_CTA_CLICKED, {
+            !y && v && (d.default.selectVoiceChannel(n.id), b?.(), h.default.track(E.HAw.HANG_STATUS_CTA_CLICKED, {
                 source: S,
                 ...(0, g.A)(n.id),
                 other_user_id: N,

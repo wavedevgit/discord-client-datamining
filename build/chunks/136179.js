@@ -1,6 +1,6 @@
 /** chunk id: 136179 params = (module,exports,require) **/
 n.d(t, {
-    A: () => d
+    A: () => c
 });
 var i = n(627968);
 n(64700);
@@ -9,34 +9,34 @@ var l = n(503698),
     a = n(607399),
     r = n(397927),
     o = n(772577),
-    c = n(578820);
+    d = n(578820);
 
-function d(e) {
+function c(e) {
     let {
         children: t,
         className: n
     } = e, {
         horizontalScrollNotice: l,
-        handleScroll: d,
+        handleScroll: c,
         handleSetScrollerRef: u,
         handleSetContainerRef: h
     } = (0, o.A)(), A = (0, i.jsx)("div", {
-        className: c.vi,
+        className: d.vi,
         children: (0, i.jsx)("div", {
-            className: s()(c._s, n),
+            className: s()(d._s, n),
             children: t
         })
     });
     return a.Fr || (A = (0, i.jsxs)(i.Fragment, {
         children: [l, (0, i.jsx)(r.T7Y, {
-            className: c.XG,
+            className: d.XG,
             orientation: "horizontal",
             ref: u,
-            onScroll: d,
+            onScroll: c,
             children: A
         })]
     })), (0, i.jsx)("div", {
-        className: c.Rc,
+        className: d.Rc,
         ref: h,
         children: A
     })

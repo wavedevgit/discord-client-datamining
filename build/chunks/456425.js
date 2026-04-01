@@ -8,8 +8,8 @@ var i = n(627968),
     a = n(397927),
     r = n(565645),
     o = n(730134),
-    c = n(688810),
-    d = n(587895),
+    d = n(688810),
+    c = n(587895),
     u = n(22007),
     h = n(46054),
     A = n(102876),
@@ -96,7 +96,7 @@ function P(e) {
 function k(e) {
     let {
         applicationId: t
-    } = e, n = (0, s.bG)([d.A], () => d.A.getApplication(t));
+    } = e, n = (0, s.bG)([c.A], () => c.A.getApplication(t));
     return null == n ? (0, i.jsx)("div", {}) : (0, i.jsx)(A.A, {
         application: n
     }, n.id)
@@ -107,8 +107,8 @@ let w = l.memo(function(e) {
             ackedBeforeId: s
         } = e, {
             analyticsLocations: o
-        } = (0, c.Ay)(), d = (0, b.t)(t, s), A = l.useCallback(async () => {
-            if (d || (0, I.R7)(t), null != t.item_enum && t.item_enum === C.r_.FIND_FRIENDS) return void(0, a.mMO)(async () => {
+        } = (0, d.Ay)(), c = (0, b.t)(t, s), A = l.useCallback(async () => {
+            if (c || (0, I.R7)(t), null != t.item_enum && t.item_enum === C.r_.FIND_FRIENDS) return void(0, a.mMO)(async () => {
                 let {
                     default: e
                 } = await n.e("67248").then(n.bind(n, 911539));
@@ -135,10 +135,10 @@ let w = l.memo(function(e) {
                     action_type: C.e1.CLICKED,
                     notification_center_id: t.id,
                     item_type: t.type,
-                    acked: d
+                    acked: c
                 })
             }
-        }, [t, d, o]), m = null;
+        }, [t, c, o]), m = null;
         t.type === C.Uo.INCOMING_FRIEND_REQUESTS && null != t.other_user ? m = (0, i.jsx)(v.A, {
             userId: t.other_user.id
         }) : t.type === C.Uo.INCOMING_GAME_FRIEND_REQUESTS && null != t.other_user ? m = (0, i.jsx)(v.A, {
@@ -172,7 +172,7 @@ let w = l.memo(function(e) {
                 },
                 "aria-label": p,
                 onClick: A,
-                children: [d ? null : (0, i.jsx)("div", {
+                children: [c ? null : (0, i.jsx)("div", {
                     className: L.gy
                 }), (0, i.jsx)(y.J, {
                     item: t
@@ -182,7 +182,7 @@ let w = l.memo(function(e) {
                         item: t
                     }), (0, i.jsxs)(a.Text, {
                         variant: "text-md/normal",
-                        color: d ? "text-muted" : "text-default",
+                        color: c ? "text-muted" : "text-default",
                         children: ["string" != typeof p ? p : h.A.parse(p), M]
                     }), t.message?.content != null ? (0, i.jsx)(U, {
                         item: t
@@ -190,7 +190,7 @@ let w = l.memo(function(e) {
                         item: t
                     }) : null, (0, i.jsx)(a.Text, {
                         variant: "text-xs/medium",
-                        color: d ? "text-muted" : "text-default",
+                        color: c ? "text-muted" : "text-default",
                         children: (0, N.jb)(x.default.extractTimestamp(t.id))
                     }), m]
                 })]

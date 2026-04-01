@@ -8,8 +8,8 @@ var i = n(627968),
     a = n.n(s),
     r = n(382222),
     o = n(397927),
-    c = n(475743),
-    d = n(216418),
+    d = n(475743),
+    c = n(216418),
     u = n(80051),
     h = n(961350),
     A = n(430452),
@@ -47,28 +47,28 @@ function b(e) {
         w = A.Ay.getVideoComponent(),
         B = h.default.getId(),
         [V, H] = l.useState(null),
-        F = (0, c.A)(V),
+        F = (0, d.A)(V),
         [K, W] = l.useState(!0),
         [Y, z] = l.useState(!1),
         q = L.type === I.lp.ACTIVITY,
-        X = (0, d.A)(q ? L.applicationId : void 0),
+        X = (0, c.A)(q ? L.applicationId : void 0),
         J = !q && null != L.streamId,
         Q = G <= 2 * S + 144,
         $ = M && !Q,
-        Z = (0, c.A)($),
+        Z = (0, d.A)($),
         ee = P === E.DUB.MINIMUM || P === E.DUB.NORMAL,
         et = !Q && (!ee || q),
         en = (0, m.A)(et, 100),
-        ei = ((0, c.A)(L.id) ?? L.id) !== L.id,
+        ei = ((0, d.A)(L.id) ?? L.id) !== L.id,
         el = 0;
     (q || $) && (el += 72), q && !$ && (et ? el += 48 : el += 8), $ && (el += .5 * S + 8);
     let es = l.useMemo(() => q && X ? U / (G - 2 * el) : J && null != V && V.width > 0 && V.height > 0 ? V.width / V.height : T, [J, V, q, U, G, el, X]),
         ea = G - 2 * el,
         er = q && X ? U : ea * es,
         eo = Math.floor(Math.min(U, er) / es),
-        ec = G > U / es + 72 + S + 8;
+        ed = G > U / es + 72 + S + 8;
     t = $ || q ? $ ? -16 : -8 : 40 + Math.max(0, 72 - (G - eo) / 2);
-    let ed = Math.max(0, 72 - (G - eo) / 2);
+    let ec = Math.max(0, 72 - (G - eo) / 2);
     l.useEffect(() => {
         let e = setTimeout(() => {
             W(!1)
@@ -81,7 +81,7 @@ function b(e) {
         eh = eu ? "animate-never" : "animate-always",
         eA = (0, o.zhh)({
             value: +!!$,
-            delay: ec || !$ ? 0 : 100,
+            delay: ed || !$ ? 0 : 100,
             config: {
                 ...r.config.stiff,
                 clamp: !0
@@ -181,7 +181,7 @@ function b(e) {
                                     onVideoResize: ef,
                                     inCall: R,
                                     popoutType: j,
-                                    controlsBottom: ed
+                                    controlsBottom: ec
                                 })
                             }, a) : null
                         })

@@ -1,6 +1,6 @@
 /** chunk id: 107385 params = (module,exports,require) **/
 n.d(t, {
-    A: () => c
+    A: () => d
 });
 var i = n(627968);
 n(64700);
@@ -10,7 +10,7 @@ var l = n(503698),
     r = n(573435),
     o = n(784900);
 
-function c(e) {
+function d(e) {
     let {
         className: t,
         isFolder: n

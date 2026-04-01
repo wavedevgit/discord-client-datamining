@@ -8,8 +8,8 @@ var i = n(627968),
     a = n(956793),
     r = n(164617),
     o = n(47167),
-    c = n(202384),
-    d = n(51758),
+    d = n(202384),
+    c = n(51758),
     u = n(141035),
     h = n(175203),
     A = n(426660),
@@ -21,8 +21,8 @@ let p = function(e) {
         participants: t,
         channel: n,
         hasConnectPermission: p
-    } = e, f = t.filter(_.Xw), x = (0, d.H)(n.guild_id), E = l.useCallback(() => {
-        x ? (0, c.Ze)(n.guild_id, () => a.default.selectVoiceChannel(n.id)) : a.default.selectVoiceChannel(n.id)
+    } = e, f = t.filter(_.Xw), x = (0, c.H)(n.guild_id), E = l.useCallback(() => {
+        x ? (0, d.Ze)(n.guild_id, () => a.default.selectVoiceChannel(n.id)) : a.default.selectVoiceChannel(n.id)
     }, [n.id, n.guild_id, x]), I = 4 === f.length ? 2 : 3, C = (0, o.Ay)(n);
     return (0, i.jsxs)("div", {
         className: g.kL,

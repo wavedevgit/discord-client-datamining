@@ -8,8 +8,8 @@ var i = n(627968),
     a = n.n(s),
     r = n(311907),
     o = n(397927),
-    c = n(717558),
-    d = n(287809),
+    d = n(717558),
+    c = n(287809),
     u = n(562153),
     h = n(732777),
     A = n(806931),
@@ -19,7 +19,7 @@ let g = l.memo(function(e) {
     let {
         channel: t,
         participant: n
-    } = e, s = (0, r.bG)([d.default], () => d.default.getUser(n.user.id), [n.user.id]), h = l.useMemo(() => u.Ay.getNickname(t.guild_id, t.id, s) ?? s?.globalName ?? n.userNick, [t, s, n.userNick]), A = (0, c.A)({
+    } = e, s = (0, r.bG)([c.default], () => c.default.getUser(n.user.id), [n.user.id]), h = l.useMemo(() => u.Ay.getNickname(t.guild_id, t.id, s) ?? s?.globalName ?? n.userNick, [t, s, n.userNick]), A = (0, d.A)({
         userId: n.user.id,
         context: _.x.DEFAULT
     });

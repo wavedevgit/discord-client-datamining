@@ -8,13 +8,13 @@ var i = n(627968),
     a = n(990078),
     r = n(397927),
     o = n(147087),
-    c = n(320501),
-    d = n(652215),
+    d = n(320501),
+    c = n(652215),
     u = n(985018);
 async function h(e) {
     try {
         let t = await s.Bo.post({
-            url: d.Rsh.AI_TITLE,
+            url: c.Rsh.AI_TITLE,
             body: {
                 content: e
             },
@@ -32,7 +32,7 @@ function A(e) {
         parentChannel: t,
         parentMessageId: n,
         updateThreadSettings: s,
-        threadSettings: d,
+        threadSettings: c,
         textAreaState: A
     } = e, [_, m] = l.useState(!1), [g, p] = l.useState(!1), f = (0, o.b)(), x = l.useCallback(async () => {
         if (f) {
@@ -40,7 +40,7 @@ function A(e) {
             try {
                 let e = null;
                 if (null != n) {
-                    let i = c.A.getMessage(t.id, n);
+                    let i = d.A.getMessage(t.id, n);
                     e = i?.content ?? null
                 } else A.textValue.trim().length >= 10 && (e = A.textValue);
                 if (null != e) {
@@ -55,12 +55,12 @@ function A(e) {
         }
     }, [t.id, n, s, f, A.textValue]);
     l.useEffect(() => {
-        p(!1), m(!1), t.id === d.parentChannelId && n !== d.parentMessageId && s({
+        p(!1), m(!1), t.id === c.parentChannelId && n !== c.parentMessageId && s({
             name: ""
         })
-    }, [n, s, t.id, d.parentChannelId, d.parentMessageId]), l.useEffect(() => {
-        null != d.name && "" !== d.name.trim() || g || f && null != n && (p(!0), x())
-    }, [t.id, n, s, d.name, g, f, x]);
+    }, [n, s, t.id, c.parentChannelId, c.parentMessageId]), l.useEffect(() => {
+        null != c.name && "" !== c.name.trim() || g || f && null != n && (p(!0), x())
+    }, [t.id, n, s, c.name, g, f, x]);
     let E = l.useCallback(function() {
             let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0];
             if (f) return {

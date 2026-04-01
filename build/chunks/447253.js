@@ -8,8 +8,8 @@ var i = n(627968),
     a = n.n(s),
     r = n(311907),
     o = n(397927),
-    c = n(263063),
-    d = n(71393),
+    d = n(263063),
+    c = n(71393),
     u = n(65611),
     h = n(985018),
     A = n(161136);
@@ -18,16 +18,16 @@ function _(e) {
     let {
         guildId: t,
         animate: n
-    } = e, l = (0, r.bG)([d.A], () => d.A.getGuild(t), [t]), s = (0, o.rdh)(o.LU0.modules.guildbar.AVATAR_SIZE);
+    } = e, l = (0, r.bG)([c.A], () => c.A.getGuild(t), [t]), s = (0, o.rdh)(o.LU0.modules.guildbar.AVATAR_SIZE);
     return null == l ? (0, i.jsx)("div", {
         className: a()(A.VL, A.zU),
         children: (0, i.jsx)(o.EpV, {
             color: "currentColor"
         })
-    }) : (0, i.jsx)(c.Ay, {
+    }) : (0, i.jsx)(d.Ay, {
         guild: l,
         animate: n,
-        size: c.Ay.Sizes.MINI,
+        size: d.Ay.Sizes.MINI,
         iconSize: s,
         lossless: !0,
         className: A.VL,
@@ -42,7 +42,7 @@ function m(e) {
         sorting: l
     } = e, {
         children: s
-    } = t, r = n && l, c = (0, i.jsx)("div", {
+    } = t, r = n && l, d = (0, i.jsx)("div", {
         className: A.hJ,
         children: (0, i.jsx)("div", {
             className: A.Eh,
@@ -51,7 +51,7 @@ function m(e) {
                 color: "currentColor"
             })
         })
-    }), d = (0, i.jsx)("div", {
+    }), c = (0, i.jsx)("div", {
         className: A.qJ,
         children: (0, i.jsx)("div", {
             className: A.jg,
@@ -67,7 +67,7 @@ function m(e) {
             [A.NG]: r,
             [A.yd]: !r
         }),
-        children: [!r && c, d]
+        children: [!r && d, c]
     })
 }
 
@@ -78,8 +78,8 @@ function g(e) {
         sorting: s,
         mediaState: a,
         mentionCount: r = 0,
-        isMentionLowImportance: c,
-        tooltipName: d,
+        isMentionLowImportance: d,
+        tooltipName: c,
         folderGroupId: _,
         folderButtonContent: g,
         onClick: p,
@@ -96,7 +96,7 @@ function g(e) {
         s || b(!0), x?.(!0)
     }, [s, x]), v = l.useCallback(() => {
         s || b(!1), x?.(!1)
-    }, [s, x]), j = n || null == a ? null : (0, u.oi)(a), R = !n && r > 0 ? (0, u.wN)(r, c ? o.LU0.colors.BACKGROUND_MOD_STRONG.css : o.LU0.colors.BACKGROUND_FEEDBACK_NOTIFICATION.css) : null;
+    }, [s, x]), j = n || null == a ? null : (0, u.oi)(a), R = !n && r > 0 ? (0, u.wN)(r, d ? o.LU0.colors.BACKGROUND_MOD_STRONG.css : o.LU0.colors.BACKGROUND_FEEDBACK_NOTIFICATION.css) : null;
     return (0, i.jsx)(o.vN3, {
         children: (0, i.jsxs)(o.DUT, {
             className: A.H3,
@@ -117,7 +117,7 @@ function g(e) {
             "aria-owns": _,
             children: [(0, i.jsx)(o.AC4, {
                 children: h.intl.formatToPlainString(h.t["90/DwM"], {
-                    folderName: d,
+                    folderName: c,
                     mentions: r
                 })
             }), (0, i.jsx)(o.Qk9, {

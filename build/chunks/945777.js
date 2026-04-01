@@ -9,8 +9,8 @@ var i = n(627968),
     a = n.n(s),
     r = n(284009),
     o = n.n(r),
-    c = n(110259),
-    d = n(311907),
+    d = n(110259),
+    c = n(311907),
     u = n(827734),
     h = n(397927),
     A = n(442433),
@@ -64,9 +64,9 @@ let b = l.memo(function(e) {
         } = e, {
             user: r,
             blocked: o,
-            ignored: c,
-            rtsState: d
-        } = t, u = d === N.zF.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK, A = d === N.zF.REQUESTED_TO_SPEAK || u;
+            ignored: d,
+            rtsState: c
+        } = t, u = c === N.zF.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK, A = c === N.zF.REQUESTED_TO_SPEAK || u;
         return (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsxs)("div", {
                 className: S.H,
@@ -81,7 +81,7 @@ let b = l.memo(function(e) {
                     alt: r.username,
                     "aria-label": r.username,
                     className: a()(S.my, {
-                        [S.zj]: o || c
+                        [S.zj]: o || d
                     })
                 })]
             }), (0, i.jsx)(b, {
@@ -90,7 +90,7 @@ let b = l.memo(function(e) {
                 user: r,
                 isPremium: s,
                 isBlocked: o,
-                isIgnored: c
+                isIgnored: d
             })]
         })
     }),
@@ -106,12 +106,12 @@ let b = l.memo(function(e) {
             blocked: u
         } = t, C = s.getGuildId(), N = E.default.getId(), {
             newestAnalyticsLocation: b
-        } = (0, m.Ay)(_.A.AUDIENCE_TILE), v = (0, f.Us)(), j = (0, d.bG)([I.Ay], () => null != C && I.Ay.getMember(C, r.id)?.premiumSince != null, [C, r.id]), R = l.useRef(null);
+        } = (0, m.Ay)(_.A.AUDIENCE_TILE), v = (0, f.Us)(), j = (0, c.bG)([I.Ay], () => null != C && I.Ay.getMember(C, r.id)?.premiumSince != null, [C, r.id]), R = l.useRef(null);
         o()(null != C, "Channel cannot be guildless");
         let O = l.useCallback(e => {
             (0, g.x)({
-                type: c.ImpressionTypes.MENU,
-                name: c.ImpressionNames.CALL_TILE_CONTEXT_MENU,
+                type: d.ImpressionTypes.MENU,
+                name: d.ImpressionNames.CALL_TILE_CONTEXT_MENU,
                 properties: {
                     location: "AudienceTile",
                     is_tile_owner: r.id === N,

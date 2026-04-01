@@ -9,8 +9,8 @@ var l = n(397927),
     a = n(272355),
     r = n(960736),
     o = n(954571),
-    c = n(972387),
-    d = n(539895),
+    d = n(972387),
+    c = n(539895),
     u = n(652215);
 let h = "INVITE_MODAL_KEY";
 class A extends a.A {
@@ -24,7 +24,7 @@ class A extends a.A {
         let {
             context: t
         } = e;
-        d.A.isOpen() && !(0, l.kBI)(h) && (0, l.mMO)(async () => {
+        c.A.isOpen() && !(0, l.kBI)(h) && (0, l.mMO)(async () => {
             let {
                 default: e
             } = await Promise.all([n.e("83155"), n.e("49071")]).then(n.bind(n, 563038));
@@ -40,7 +40,7 @@ class A extends a.A {
                 o.default.track(u.HAw.INVITE_ACCEPT_DISMISSED, {
                     invite_code: e,
                     guild_id: t
-                }), c.A.close()
+                }), d.A.close()
             }
         })
     }

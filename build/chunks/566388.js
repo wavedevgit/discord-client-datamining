@@ -9,8 +9,8 @@ var i = n(627968),
     a = n.n(s),
     r = n(735438),
     o = n(311907),
-    c = n(506774),
-    d = n(397927),
+    d = n(506774),
+    c = n(397927),
     u = n(73153),
     h = n(765671),
     A = n(964486),
@@ -68,10 +68,10 @@ function el(e) {
         popoutOpen: s,
         popoutWindow: a,
         popoutWindowAlwaysOnTop: r,
-        selectedParticipant: c
+        selectedParticipant: d
     } = e, {
-        parentAnalyticsLocation: d
-    } = (0, m.Ay)(), h = t.getGuildId(), A = (0, o.bG)([U.A], () => U.A.getMostRecentSelectedTextChannelId(h), [h]), _ = O.default.getId(), f = !(0, o.bG)([g.A], () => g.A.isFullscreenInContext(n)) && (!G.isPlatformEmbedded || P.Ay.supportsFeature($.BYE.POPOUT_WINDOWS)), x = null != c && c.type !== Z.lp.ACTIVITY && c.user.id !== _, I = l.useMemo(() => a?.window ?? window, [a]), N = (0, J.A)({
+        parentAnalyticsLocation: c
+    } = (0, m.Ay)(), h = t.getGuildId(), A = (0, o.bG)([U.A], () => U.A.getMostRecentSelectedTextChannelId(h), [h]), _ = O.default.getId(), f = !(0, o.bG)([g.A], () => g.A.isFullscreenInContext(n)) && (!G.isPlatformEmbedded || P.Ay.supportsFeature($.BYE.POPOUT_WINDOWS)), x = null != d && d.type !== Z.lp.ACTIVITY && d.user.id !== _, I = l.useMemo(() => a?.window ?? window, [a]), N = (0, J.A)({
         channel: t,
         appContext: n,
         popoutOpen: s,
@@ -80,24 +80,24 @@ function el(e) {
     }), S = n === $.BRT.POPOUT && G.isPlatformEmbedded && P.Ay.supportsFeature($.BYE.POPOUT_WINDOWS);
     return (0, i.jsxs)(i.Fragment, {
         children: [x ? (0, i.jsx)(R.A, {
-            context: (0, p.A)(c.type),
-            userId: c.user.id,
+            context: (0, p.A)(d.type),
+            userId: d.user.id,
             currentWindow: I,
             sliderClassName: et.MQ,
-            location: d
+            location: c
         }) : null, S ? (0, i.jsx)(j.A, {
             popoutWindowAlwaysOnTop: r,
             onToggleStayOnTop: ei
         }) : null, f ? (0, i.jsx)(v.A, {
             popoutOpen: s,
             onOpenPopout: () => {
-                (0, E.X)(d, E.O.POPOUT, !0), (() => {
+                (0, E.X)(c, E.O.POPOUT, !0), (() => {
                     let e = t.getGuildId();
                     null != e && null != A && (0, T.uh)(e, A), C.openChannelCallPopout(t)
                 })()
             },
             onClosePopout: () => {
-                (0, E.X)(d, E.O.POPOUT, !1), u.h.wait(() => C.close($.MLl.CHANNEL_CALL_POPOUT))
+                (0, E.X)(c, E.O.POPOUT, !1), u.h.wait(() => C.close($.MLl.CHANNEL_CALL_POPOUT))
             }
         }) : null, N]
     })
@@ -119,8 +119,8 @@ function ea(e) {
     let t, {
             channel: n,
             toggleRequestToSpeakSidebar: s,
-            showRequestToSpeakSidebar: c,
-            popoutWindow: d,
+            showRequestToSpeakSidebar: d,
+            popoutWindow: c,
             popoutWindowAlwaysOnTop: u,
             popoutOpen: h,
             popoutType: A,
@@ -183,20 +183,20 @@ function ea(e) {
                 channel: n,
                 appContext: C,
                 popoutOpen: h,
-                popoutWindow: d,
+                popoutWindow: c,
                 popoutWindowAlwaysOnTop: u,
                 selectedParticipant: v
             })
         }) : null,
         renderHeader: () => (0, i.jsx)(W.A, {
             toggleRequestToSpeakSidebar: s,
-            showRequestToSpeakSidebar: c,
+            showRequestToSpeakSidebar: d,
             channel: n
         }),
         renderChatToasts: () => !P || p || j ? null : (0, i.jsx)(f.Ay, {
             children: (0, i.jsx)(b.A, {
                 className: a()(et.T6, {
-                    [et.c3]: c
+                    [et.c3]: d
                 }),
                 channelId: n.id
             })
@@ -225,14 +225,14 @@ function er(e) {
         analyticsLocations: b
     } = (0, m.Ay)(_.A.STAGE_CHANNEL_CALL), y = (0, I.Us)(), v = (0, o.bG)([g.A], () => g.A.getChatOpen(t.id), [t.id]), j = (0, o.bG)([M.A], () => M.A.getGuild(t.guild_id), [t.guild_id]);
     (0, A.Ay)(() => {
-        null == c.w.get(en) && ((0, d.mMO)(async () => {
+        null == d.w.get(en) && ((0, c.mMO)(async () => {
             let {
                 default: e
             } = await n.e("56016").then(n.bind(n, 456947));
             return t => (0, i.jsx)(e, {
                 ...t
             })
-        }), c.w.set(en, Date.now()))
+        }), d.w.set(en, Date.now()))
     });
     let {
         width: R = 0,
@@ -244,7 +244,7 @@ function er(e) {
             children: [(0, i.jsxs)("div", {
                 className: et.kL,
                 ref: O,
-                children: [(0, i.jsx)(d.NPJ, {
+                children: [(0, i.jsx)(c.NPJ, {
                     theme: $.NJ8.DARK,
                     children: e => (0, i.jsx)("div", {
                         className: a()(et.ik, e, {

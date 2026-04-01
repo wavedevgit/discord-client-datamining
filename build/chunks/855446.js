@@ -7,8 +7,8 @@ var i, l = n(627968),
     a = n(503698),
     r = n.n(a),
     o = n(382222),
-    c = n(696292),
-    d = n(397927),
+    d = n(696292),
+    c = n(397927),
     u = n(932413),
     h = n(849269),
     A = n(881343),
@@ -65,7 +65,7 @@ function C(e) {
                     className: f.m9,
                     children: (0, l.jsx)("div", {
                         className: f.aF,
-                        children: (0, l.jsx)(d.Text, {
+                        children: (0, l.jsx)(c.Text, {
                             variant: "text-sm/medium",
                             color: "always-white",
                             children: p.intl.string(p.t.VJlc0S)
@@ -77,7 +77,7 @@ function C(e) {
                     className: f.m9,
                     children: (0, l.jsx)("div", {
                         className: r()(f.aF, f.pS),
-                        children: (0, l.jsx)(d.Text, {
+                        children: (0, l.jsx)(c.Text, {
                             variant: "text-sm/medium",
                             color: "always-white",
                             children: p.intl.string(p.t["wH/wDO"])
@@ -89,14 +89,14 @@ function C(e) {
                 return null
         }
     }, [S]);
-    return (0, l.jsx)(d.DUT, {
+    return (0, l.jsx)(c.DUT, {
         onClick: N,
         onFocus: j,
         onBlur: R,
         onMouseEnter: j,
         onMouseLeave: R,
         className: f.XA,
-        children: (0, l.jsx)(d.c7X, {
+        children: (0, l.jsx)(c.c7X, {
             config: E,
             from: {
                 value: 0
@@ -108,11 +108,11 @@ function C(e) {
                 let {
                     value: t
                 } = e;
-                return (0, l.jsx)(d.NPJ, {
+                return (0, l.jsx)(c.NPJ, {
                     theme: g.NJ8.DARK,
                     children: e => (0, l.jsx)(u.A, {
                         applicationId: n.application.id,
-                        questContent: c.u.ACTIVITY_SUGGESTION,
+                        questContent: d.u.ACTIVITY_SUGGESTION,
                         children: i => (0, l.jsxs)(o.animated.div, {
                             ref: i,
                             className: r()(e, f.LM, I, {

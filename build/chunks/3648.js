@@ -10,8 +10,8 @@ var l = n(397927),
     a = n(627363),
     r = n(576030),
     o = n(957785),
-    c = n(533406),
-    d = n(366523),
+    d = n(533406),
+    c = n(366523),
     u = n(788868),
     h = n(985018),
     A = n(128948),
@@ -35,7 +35,7 @@ function m(e, t) {
     return (0, i.jsx)(o.A, {
         wishlistItem: e,
         onCardClick: () => {
-            f ? l() : (0, c.a)(e.sku, {
+            f ? l() : (0, d.a)(e.sku, {
                 isGift: !0,
                 giftRecipient: _,
                 giftingOrigin: u.vQ.USER_PROFILE_WISHLIST
@@ -45,7 +45,7 @@ function m(e, t) {
         },
         tooltipConfig: x,
         shouldScalePreview: !1,
-        renderPreview: () => (0, i.jsx)(d.e, {
+        renderPreview: () => (0, i.jsx)(c.e, {
             containerClassName: A.Nr,
             backgroundImageClassName: A.GC,
             foregroundImageClassName: A.wP,
@@ -66,7 +66,7 @@ function g(e) {
         analyticsLocations: r,
         profileOwner: o
     } = e, {
-        data: d
+        data: c
     } = (0, a.YY)(t.sku.applicationId);
     return (0, i.jsxs)("div", {
         className: _.D5,
@@ -74,7 +74,7 @@ function g(e) {
             className: _.S7,
             children: (0, i.jsxs)(l.DUT, {
                 onClick: () => {
-                    (0, c.a)(t.sku, {
+                    (0, d.a)(t.sku, {
                         isGift: !0,
                         giftRecipient: o,
                         giftingOrigin: u.vQ.USER_PROFILE_WISHLIST
@@ -92,7 +92,7 @@ function g(e) {
                     variant: "text-xs/medium",
                     color: "text-default",
                     children: h.intl.format(h.t["CqpEC+"], {
-                        applicationName: d?.name
+                        applicationName: c?.name
                     })
                 })]
             })

@@ -1,16 +1,16 @@
 /** chunk id: 385113 params = (module,exports,require) **/
 n.d(t, {
-    A: () => g,
+    A: () => m,
     e: () => s
 });
-var i, l = n(311907),
-    a = n(73153),
+var i, a = n(311907),
+    l = n(73153),
     s = ((i = {}).NOT_FETCHED = "NOT_FETCHED", i.FETCHING = "FETCHING", i.SUCCESS = "SUCCESS", i.FAILURE = "FAILURE", i);
 let r = {},
     o = {},
-    d = "NOT_FETCHED",
-    c = [];
-class u extends l.Ay.Store {
+    c = "NOT_FETCHED",
+    d = [];
+class u extends a.Ay.Store {
     static displayName = "ApplicationWidgetConfigStore";
     getConfig(e) {
         return r[e]?.[0] ?? void 0
@@ -22,24 +22,24 @@ class u extends l.Ay.Store {
         return o[e] ?? "NOT_FETCHED"
     }
     getFeaturedFetchState() {
-        return d
+        return c
     }
     getAllConfigsByApplication() {
         return r
     }
     getFeaturedApplicationIds() {
-        return c
+        return d
     }
 }
-let g = new u(a.h, {
+let m = new u(l.h, {
     LOGOUT: function() {
-        r = {}, o = {}, d = "NOT_FETCHED", c = []
+        r = {}, o = {}, c = "NOT_FETCHED", d = []
     },
     APPLICATION_WIDGET_CONFIG_FEATURED_FETCH_START: function(e) {
-        d = "FETCHING"
+        c = "FETCHING"
     },
     APPLICATION_WIDGET_CONFIG_FEATURED_FETCH_SUCCESS: function(e) {
-        d = "SUCCESS", c = e.applicationIds, r = {
+        c = "SUCCESS", d = e.applicationIds, r = {
             ...r,
             ...e.configs
         }, o = {
@@ -48,7 +48,7 @@ let g = new u(a.h, {
         }
     },
     APPLICATION_WIDGET_CONFIG_FEATURED_FETCH_FAILURE: function() {
-        d = "FAILURE"
+        c = "FAILURE"
     },
     APPLICATION_WIDGET_CONFIG_FETCH_START: function(e) {
         o = {

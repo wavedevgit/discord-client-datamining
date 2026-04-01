@@ -3,9 +3,9 @@ n.d(t, {
     FC: () => r,
     W2: () => h,
     rd: () => o,
-    ru: () => d,
+    ru: () => c,
     ty: () => a,
-    vn: () => c,
+    vn: () => d,
     ww: () => u
 });
 var i = n(554146),
@@ -24,11 +24,11 @@ function o(e) {
     return (0, l.kn)(e ? [i.M.GAME_SERVER_HOSTING_BATCH_RELEASE_V3_COACHMARK] : [])
 }
 
-function c(e) {
+function d(e) {
     return (0, l.kn)(e ? [i.M.GAME_SERVER_PRICING_CHANGE_COACHMARK] : [])
 }
 
-function d(e) {
+function c(e) {
     return (0, l.Wl)(e ? i.M.GUILD_POWERUP_NOTIFICATION : null, {
         cooldownDurationMs: s.lE
     })

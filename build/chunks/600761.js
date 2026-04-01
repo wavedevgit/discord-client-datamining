@@ -3,8 +3,8 @@ n.d(t, {
     i: () => s
 });
 var i = n(64700),
-    l = n(688807),
-    a = n(397927);
+    a = n(688807),
+    l = n(397927);
 
 function s(e) {
     let {
@@ -13,10 +13,10 @@ function s(e) {
         edgeDistance: s = 130,
         maxSpeed: r = 1700,
         power: o = 2.2
-    } = e, d = (0, i.useRef)(null), c = (0, i.useRef)(0), u = (0, i.useRef)({
+    } = e, c = (0, i.useRef)(null), d = (0, i.useRef)(0), u = (0, i.useRef)({
         top: 0,
         bottom: 0
-    }), g = (0, i.useRef)(null), m = (0, i.useCallback)(e => ({
+    }), m = (0, i.useRef)(null), g = (0, i.useCallback)(e => ({
         isDragging: e.isDragging(),
         clientOffset: e.getClientOffset(),
         item: e.getItem()
@@ -24,41 +24,41 @@ function s(e) {
         isDragging: p,
         clientOffset: x,
         item: f
-    } = (0, l.V)(m);
+    } = (0, a.V)(g);
     (0, i.useEffect)(() => {
-        g.current = x
+        m.current = x
     }, [x]);
-    let h = (0, a.VUy)();
+    let _ = (0, l.VUy)();
     (0, i.useEffect)(() => {
         let e = t.current;
         if (null == e) return;
-        if (!(!0 === p && f?.itemType === n && !h)) {
-            null !== d.current && cancelAnimationFrame(d.current), d.current = null, e.style.overflowAnchor = "auto", e.style.overscrollBehavior = "auto", c.current = 0;
+        if (!(!0 === p && f?.itemType === n && !_)) {
+            null !== c.current && cancelAnimationFrame(c.current), c.current = null, e.style.overflowAnchor = "auto", e.style.overscrollBehavior = "auto", d.current = 0;
             return
         }
         let i = e.getBoundingClientRect();
         return u.current = {
             top: i.top,
             bottom: i.bottom
-        }, e.style.overflowAnchor = "none", e.style.overscrollBehavior = "contain", d.current = requestAnimationFrame(function t(n) {
-            d.current = requestAnimationFrame(t);
-            let i = g.current;
+        }, e.style.overflowAnchor = "none", e.style.overscrollBehavior = "contain", c.current = requestAnimationFrame(function t(n) {
+            c.current = requestAnimationFrame(t);
+            let i = m.current;
             if (null == e || null == i) {
-                c.current = n;
+                d.current = n;
                 return
             }
-            let l = Math.min(32, 0 !== c.current ? n - c.current : 16) / 1e3;
-            c.current = n;
+            let a = Math.min(32, 0 !== d.current ? n - d.current : 16) / 1e3;
+            d.current = n;
             let {
-                top: a,
-                bottom: m
-            } = u.current, p = i.y, x = p - a, f = m - p, h = 0;
-            if (x >= 0 && x < s ? h = -r * Math.pow(1 - x / s, o) : f >= 0 && f < s && (h = r * Math.pow(1 - f / s, o)), 0 !== h) {
-                let t = h * l;
+                top: l,
+                bottom: g
+            } = u.current, p = i.y, x = p - l, f = g - p, _ = 0;
+            if (x >= 0 && x < s ? _ = -r * Math.pow(1 - x / s, o) : f >= 0 && f < s && (_ = r * Math.pow(1 - f / s, o)), 0 !== _) {
+                let t = _ * a;
                 Math.abs(t) >= 1 && (e.scrollTop += Math.round(t))
             }
         }), () => {
-            null !== d.current && cancelAnimationFrame(d.current), d.current = null, c.current = 0, null != e && (e.style.overflowAnchor = "auto", e.style.overscrollBehavior = "auto")
+            null !== c.current && cancelAnimationFrame(c.current), c.current = null, d.current = 0, null != e && (e.style.overflowAnchor = "auto", e.style.overscrollBehavior = "auto")
         }
-    }, [t, p, f?.itemType, n, s, r, o, h])
+    }, [t, p, f?.itemType, n, s, r, o, _])
 }

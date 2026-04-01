@@ -8,8 +8,8 @@ var i = n(627968),
     a = n(311907),
     r = n(342494),
     o = n(397927),
-    c = n(308528),
-    d = n(933958),
+    d = n(308528),
+    c = n(933958),
     u = n(969151),
     h = n(793574),
     A = n(688810),
@@ -64,9 +64,9 @@ function F(e) {
             analyticsLocations: ea
         } = (0, A.Ay)(h.A.FAVORITES_GUILD_BUTTON),
         [er, eo] = l.useState(!1),
-        ec = (0, L.$)("favorite-server-context"),
+        ed = (0, L.$)("favorite-server-context"),
         {
-            favoriteGuildEnabled: ed,
+            favoriteGuildEnabled: ec,
             favoriteGuildMuted: eu,
             favoriteChannels: eh
         } = (0, a.cf)([b.A], () => ({
@@ -86,7 +86,7 @@ function F(e) {
             if (!F) return !1;
             let e = I.A.getCurrentUserActiveStream();
             return null != e && null != eh[e.channelId]
-        }), W = (0, a.bG)([I.A], () => I.A.getAllApplicationStreams().some(e => null != eh[e.channelId])), Y = (0, a.bG)([T.A], () => F && null != t && T.A.hasVideo(t), [F, t]), z = (0, a.yK)([d.Ay], () => S.default.keys(eh).reduce((e, t) => (e.push(...d.Ay.getEmbeddedActivitiesForChannel(t)), e), [])), q = (0, a.bG)([d.Ay], () => Array.from(d.Ay.getSelfEmbeddedActivities().values()).some(e => {
+        }), W = (0, a.bG)([I.A], () => I.A.getAllApplicationStreams().some(e => null != eh[e.channelId])), Y = (0, a.bG)([T.A], () => F && null != t && T.A.hasVideo(t), [F, t]), z = (0, a.yK)([c.Ay], () => S.default.keys(eh).reduce((e, t) => (e.push(...c.Ay.getEmbeddedActivitiesForChannel(t)), e), [])), q = (0, a.bG)([c.Ay], () => Array.from(c.Ay.getSelfEmbeddedActivities().values()).some(e => {
             let {
                 location: t
             } = e, n = (0, u.H)(t);
@@ -108,7 +108,7 @@ function F(e) {
             eI.current = !0, et(e, t)
         }, [et]),
         eT = l.useCallback(e => {
-            e && ((0, v.mv)("intro_dc"), (0, E.u)(D.YYv)), eC ? (ed || (0, y.tV)(!0, "favorites_button_onboarding"), e && (0, o.mMO)(async () => {
+            e && ((0, v.mv)("intro_dc"), (0, E.u)(D.YYv)), eC ? (ec || (0, y.tV)(!0, "favorites_button_onboarding"), e && (0, o.mMO)(async () => {
                 let {
                     default: e
                 } = await n.e("59839").then(n.bind(n, 889186));
@@ -121,7 +121,7 @@ function F(e) {
                 subscriptionTier: P.pe.TIER_2,
                 analyticsLocations: ea
             }), eN(G.i.TAKE_ACTION)
-        }, [eN, ed, eC, ea]);
+        }, [eN, ec, eC, ea]);
     return l.useEffect(() => {
         ee && (eI.current = !1)
     }, [ee]), l.useEffect(() => () => {
@@ -166,9 +166,9 @@ function F(e) {
                         onMouseEnter: () => eo(!0),
                         onMouseLeave: () => eo(!1),
                         onMouseDown: function() {
-                            null != e_ && c.A.preload(e_.guild_id, e_.id)
+                            null != e_ && d.A.preload(e_.guild_id, e_.id)
                         },
-                        onContextMenu: ec,
+                        onContextMenu: ed,
                         children: (0, i.jsx)(o.Gg5, {
                             size: "custom",
                             color: "currentColor",

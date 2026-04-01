@@ -1,6 +1,6 @@
 /** chunk id: 938764 params = (module,exports,require) **/
 n.d(t, {
-    A: () => d
+    A: () => c
 }), n(321073);
 var i = n(311907),
     l = n(73153),
@@ -8,7 +8,7 @@ var i = n(311907),
 let a = [],
     r = {},
     o = {};
-class c extends i.Ay.Store {
+class d extends i.Ay.Store {
     static displayName = "GuildDirectorySearchStore";
     getSearchState(e) {
         return r[e] ?? {
@@ -24,7 +24,7 @@ class c extends i.Ay.Store {
         return null == n || Date.now() - n > 12e4
     }
 }
-let d = new c(l.h, {
+let c = new d(l.h, {
     GUILD_DIRECTORY_SEARCH_START: function(e) {
         let {
             channelId: t,

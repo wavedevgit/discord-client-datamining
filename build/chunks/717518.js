@@ -8,8 +8,8 @@ var i = n(735438),
     a = n(73153),
     r = n(71393);
 let o = null,
-    c = {};
-class d extends s.Ay.Store {
+    d = {};
+class c extends s.Ay.Store {
     static displayName = "RegionStore";
     initialize() {
         this.waitFor(r.A)
@@ -40,15 +40,15 @@ class d extends s.Ay.Store {
         return null != t ? t.id : null
     }
     getRegions(e) {
-        return null != e ? c[e] : o
+        return null != e ? d[e] : o
     }
 }
-let u = new d(a.h, {
+let u = new c(a.h, {
     LOAD_REGIONS: function(e) {
         let t = l().sortBy(e.regions, e => e.name);
-        null != e.guildId ? c[e.guildId] = t : o = t
+        null != e.guildId ? d[e.guildId] = t : o = t
     },
     GUILD_DELETE: function(e) {
-        delete c[e.guild.id]
+        delete d[e.guild.id]
     }
 })

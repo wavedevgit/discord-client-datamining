@@ -8,8 +8,8 @@ var i = n(627968),
     a = n(554146),
     r = n(397927),
     o = n(533550),
-    c = n(624458),
-    d = n(844944),
+    d = n(624458),
+    c = n(844944),
     u = n(513461),
     h = n(663997),
     A = n(652793),
@@ -22,9 +22,9 @@ function f(e) {
     let {
         guild: t,
         selected: n
-    } = e, f = (0, s.bG)([_.A], () => _.A.can(g.xBc.KICK_MEMBERS, t)), x = (0, s.bG)([d.A], () => d.A.getSubmittedGuildJoinRequestTotal(t.id)), E = f ? x ?? 0 : 0;
+    } = e, f = (0, s.bG)([_.A], () => _.A.can(g.xBc.KICK_MEMBERS, t)), x = (0, s.bG)([c.A], () => c.A.getSubmittedGuildJoinRequestTotal(t.id)), E = f ? x ?? 0 : 0;
     l.useEffect(() => {
-        f && t.features.has(g.GuildFeatures.MEMBER_VERIFICATION_GATE_ENABLED) && t.features.has(g.GuildFeatures.MEMBER_VERIFICATION_MANUAL_APPROVAL) && c.A.fetchGuildJoinRequests({
+        f && t.features.has(g.GuildFeatures.MEMBER_VERIFICATION_GATE_ENABLED) && t.features.has(g.GuildFeatures.MEMBER_VERIFICATION_MANUAL_APPROVAL) && d.A.fetchGuildJoinRequests({
             guildId: t.id,
             status: u.B5.SUBMITTED,
             limit: h.L

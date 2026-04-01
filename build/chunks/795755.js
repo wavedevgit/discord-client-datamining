@@ -4,43 +4,43 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var l = n(540185),
-    a = n(311907),
+var a = n(540185),
+    l = n(311907),
     s = n(961350),
     r = n(735321),
     o = n(483558),
-    d = n(34442),
-    c = n(253798),
+    c = n(34442),
+    d = n(253798),
     u = n(25530),
-    g = n(155400),
-    m = n(844206),
+    m = n(155400),
+    g = n(844206),
     p = n(557964),
     x = n(987140),
     f = n(286981);
 
-function h(e) {
+function _(e) {
     let {
         widget: t,
         ...n
     } = e;
     switch (t.type) {
-        case l.x.FAVORITE_GAMES:
-            return (0, i.jsx)(g.A, {
+        case a.x.FAVORITE_GAMES:
+            return (0, i.jsx)(m.A, {
                 widget: t,
                 ...n
             });
-        case l.x.CURRENT_GAMES:
+        case a.x.CURRENT_GAMES:
             return (0, i.jsx)(u.A, {
                 widget: t,
                 ...n
             });
-        case l.x.WANT_TO_PLAY_GAMES:
+        case a.x.WANT_TO_PLAY_GAMES:
             return (0, i.jsx)(p.A, {
                 widget: t,
                 ...n
             });
-        case l.x.PLAYED_GAMES:
-            return (0, i.jsx)(m.A, {
+        case a.x.PLAYED_GAMES:
+            return (0, i.jsx)(g.A, {
                 widget: t,
                 ...n
             });
@@ -49,31 +49,31 @@ function h(e) {
     }
 }
 
-function _(e) {
+function h(e) {
     let {
         widget: t,
         user: n,
-        disableInteraction: l,
+        disableInteraction: a,
         ...u
     } = e, {
-        setExpanded: g
-    } = (0, c.B)(), {
-        shouldShowSuggestions: m,
+        setExpanded: m
+    } = (0, d.B)(), {
+        shouldShowSuggestions: g,
         handleDismissSuggestions: p
-    } = (0, o.q)(t), _ = (0, a.bG)([s.default], () => s.default.getId() === n.id), A = _ && !l && m, I = (0, r.L)(t), j = (0, r.FM)(t, {
-        isCurrentUser: _
-    }), E = (0, r.uA)(t), v = 1 === (0, r.cv)(t.type);
-    return (0, i.jsx)(h, {
+    } = (0, o.q)(t), h = (0, l.bG)([s.default], () => s.default.getId() === n.id), A = h && !a && g, I = (0, r.L)(t), v = (0, r.FM)(t, {
+        isCurrentUser: h
+    }), j = (0, r.uA)(t), E = 1 === (0, r.cv)(t.type);
+    return (0, i.jsx)(_, {
         widget: t,
         user: n,
-        disableInteraction: l,
+        disableInteraction: a,
         headerTitle: I,
-        headerSubtitle: j,
-        headerActionButtons: _ && !v ? [(0, i.jsx)(d.IU, {
-            disabled: E,
+        headerSubtitle: v,
+        headerActionButtons: h && !E ? [(0, i.jsx)(c.IU, {
+            disabled: j,
             widgetType: t.type,
             widget: t,
-            onAddGame: () => g(!0)
+            onAddGame: () => m(!0)
         }, `${t.type}-browse-games-popout`)] : void 0,
         trailingContent: A && (0, i.jsx)(x.A, {
             userId: n.id,
@@ -90,9 +90,9 @@ function A(e) {
         widget: t,
         ...n
     } = e;
-    return (0, i.jsx)(c.M, {
+    return (0, i.jsx)(d.M, {
         widgetType: t.type,
-        children: (0, i.jsx)(_, {
+        children: (0, i.jsx)(h, {
             widget: t,
             ...n
         })

@@ -13,11 +13,11 @@ function r(e) {
         popoutWindowAlwaysOnTop: t,
         onToggleStayOnTop: n,
         ...r
-    } = e, o = t ? a.intl.string(a.t.YdyDM9) : a.intl.string(a.t.ZVGHwP), c = t ? l.hl9 : l.qgw;
+    } = e, o = t ? a.intl.string(a.t.YdyDM9) : a.intl.string(a.t.ZVGHwP), d = t ? l.hl9 : l.qgw;
     return (0, i.jsx)(s.A, {
         onClick: () => n(!t),
         label: o,
-        iconComponent: c,
+        iconComponent: d,
         ...r
     })
 }

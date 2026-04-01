@@ -9,8 +9,8 @@ var l = n(311907),
     a = n(604681),
     r = n(672385),
     o = n(950191),
-    c = n(168015),
-    d = n(761640),
+    d = n(168015),
+    c = n(761640),
     u = n(58736),
     h = n(652215),
     A = n(985018);
@@ -19,7 +19,7 @@ function _(e) {
     let {
         channel: t,
         showCallOrActivityPanel: n
-    } = e, _ = (0, l.bG)([d.Ay], () => d.Ay.getSection(t.id, t?.isDM())), m = (0, o.Ay)(t.getRecipientId()), g = (0, c.A)(), p = _ === h.YvQ.PROFILE && g;
+    } = e, _ = (0, l.bG)([c.Ay], () => c.Ay.getSection(t.id, t?.isDM())), m = (0, o.Ay)(t.getRecipientId()), g = (0, d.A)(), p = _ === h.YvQ.PROFILE && g;
     return (0, i.jsx)(u.In, {
         disabled: !g || n,
         tooltip: !g || n ? A.intl.string(A.t.YneDgF) : p ? A.intl.string(A.t.niD64e) : A.intl.string(A.t["+FAsHq"]),

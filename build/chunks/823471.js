@@ -8,8 +8,8 @@ var i = n(627968),
     a = n(182061),
     r = n(886393),
     o = n(307623),
-    c = n(660273),
-    d = n(707792),
+    d = n(660273),
+    c = n(707792),
     u = n(41402),
     h = n(271456),
     A = n(200273),
@@ -36,7 +36,7 @@ function v(e) {
     function o() {
         a(e => !e)
     }
-    let c = y.intl.string(y.t["UKOtz+"]);
+    let d = y.intl.string(y.t["UKOtz+"]);
     return (0, i.jsx)(s.YNO, {
         targetElementRef: r,
         shouldShow: n,
@@ -59,9 +59,9 @@ function v(e) {
                 ...e,
                 ref: r,
                 onClick: o,
-                tooltip: n ? null : c,
+                tooltip: n ? null : d,
                 icon: s.jNK,
-                "aria-label": c,
+                "aria-label": d,
                 selected: n
             })
         }
@@ -73,7 +73,7 @@ function j(e) {
         channel: t,
         closePopout: n,
         onSelect: l
-    } = e, x = (0, c.A)(t, "Sidebar Overflow"), E = (0, u.A)(t), N = (0, m.A)(t), T = (0, g.A)(t), S = (0, a.A)(t), v = (0, d.A)(t), j = (0, _.A)(t.id), R = (0, A.A)(t), O = (0, o.A)(t), L = (0, r.A)(t), M = (0, f.A)({
+    } = e, x = (0, d.A)(t, "Sidebar Overflow"), E = (0, u.A)(t), N = (0, m.A)(t), T = (0, g.A)(t), S = (0, a.A)(t), v = (0, c.A)(t), j = (0, _.A)(t.id), R = (0, A.A)(t), O = (0, o.A)(t), L = (0, r.A)(t), M = (0, f.A)({
         id: t.id,
         label: y.intl.string(y.t.DQ797g)
     }), D = (0, p.A)(t), U = (0, h.A)(t);

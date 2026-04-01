@@ -8,8 +8,8 @@ var i = n(627968),
     a = n.n(s),
     r = n(554146),
     o = n(827734),
-    c = n(990078),
-    d = n(397927),
+    d = n(990078),
+    c = n(397927),
     u = n(964486),
     h = n(887700),
     A = n(855446),
@@ -72,10 +72,10 @@ function y(e) {
         value: s,
         children: (0, i.jsxs)(I.A, {
             className: T.zr,
-            children: [(0, i.jsx)(c.m, {
+            children: [(0, i.jsx)(d.m, {
                 asContainer: !0,
                 text: N.intl.string(N.t.qJvTKQ),
-                children: (0, i.jsx)(d.DUT, {
+                children: (0, i.jsx)(c.DUT, {
                     onClick: () => {
                         (0, g.A)({
                             context: null != t ? {
@@ -91,7 +91,7 @@ function y(e) {
                     className: T.F1,
                     children: (0, i.jsx)("div", {
                         className: T.zc,
-                        children: (0, i.jsx)(d.k9F, {
+                        children: (0, i.jsx)(c.k9F, {
                             size: "custom",
                             color: "currentColor",
                             width: 40,
@@ -99,12 +99,12 @@ function y(e) {
                         })
                     })
                 })
-            }), (0, i.jsx)(d.NPJ, {
+            }), (0, i.jsx)(c.NPJ, {
                 theme: C.NJ8.DARK,
-                children: e => (0, i.jsx)(d.DUT, {
+                children: e => (0, i.jsx)(c.DUT, {
                     onClick: l,
                     className: a()(e, T.lg),
-                    children: (0, i.jsx)(d.aXh, {
+                    children: (0, i.jsx)(c.aXh, {
                         size: "md",
                         color: "currentColor",
                         className: T.yP,
@@ -130,12 +130,12 @@ function v(e) {
         })
     }, []);
     let {
-        analyticsLocations: c,
+        analyticsLocations: d,
         newestAnalyticsLocation: u
     } = (0, m.Ay)(_.A.VC_TILE_ACTIVITY_INVITE);
 
     function h() {
-        (0, d.mMO)(async () => {
+        (0, c.mMO)(async () => {
             let {
                 default: e
             } = await Promise.all([n.e("43600"), n.e("28136"), n.e("93662")]).then(n.bind(n, 234355));
@@ -146,7 +146,7 @@ function v(e) {
                 source: C.PE1.ACTIVITY_ENTRY_POINT_TILE
             })
         }, {
-            contextKey: r ? d.KX8 : d.SYi
+            contextKey: r ? c.KX8 : c.SYi
         })
     }
 
@@ -163,8 +163,8 @@ function v(e) {
         })
     }
     return (0, i.jsx)(m.f5, {
-        value: c,
-        children: (0, i.jsx)(d.NPJ, {
+        value: d,
+        children: (0, i.jsx)(c.NPJ, {
             disableAdaptiveTheme: !0,
             theme: C.NJ8.MIDNIGHT,
             children: e => (0, i.jsxs)(I.A, {
@@ -173,17 +173,17 @@ function v(e) {
                     src: S,
                     className: T.Qw,
                     alt: ""
-                }), (0, i.jsxs)(d.ButtonGroup, {
+                }), (0, i.jsxs)(c.ButtonGroup, {
                     justify: "center",
                     align: "center",
-                    children: [(0, i.jsx)(d.Button, {
+                    children: [(0, i.jsx)(c.Button, {
                         variant: "secondary",
-                        icon: d.Rvf,
+                        icon: c.Rvf,
                         text: N.intl.string(N.t["EE+P0H"]),
                         onClick: h
-                    }), o && (0, i.jsx)(d.Button, {
+                    }), o && (0, i.jsx)(c.Button, {
                         variant: "secondary",
-                        icon: d.k9F,
+                        icon: c.k9F,
                         text: N.intl.string(N.t.qnFavR),
                         onClick: A
                     })]
@@ -199,12 +199,12 @@ function j(e) {
         guild: n,
         handleClose: s,
         width: o,
-        userParticipantCount: c
+        userParticipantCount: d
     } = e;
     (0, u.Ay)(() => {
         E.default.track(C.HAw.VC_TILE_ACTIVITIES_ENTRY_POINT_VIEWED, {
             tile_type: "activity suggestion",
-            n_participants: c
+            n_participants: d
         })
     });
     let g = (0, h.A)({
@@ -221,7 +221,7 @@ function j(e) {
         value: S,
         children: (0, i.jsxs)(I.A, {
             className: T.zr,
-            children: [o > 300 ? (0, i.jsx)(d.Text, {
+            children: [o > 300 ? (0, i.jsx)(c.Text, {
                 className: T.R_,
                 variant: o > 550 ? "text-md/semibold" : "text-sm/semibold",
                 children: N.intl.string(N.t["7BKMcG"])
@@ -236,29 +236,29 @@ function j(e) {
                     animatedDivClass: T.KU,
                     commandOrigin: p.iw.VOICE_TILE_ACTIVITY_SUGGESTIONS
                 }, e.application.id))
-            }), (0, i.jsxs)(d.DUT, {
+            }), (0, i.jsxs)(c.DUT, {
                 className: T.HI,
                 onClick: function() {
                     E.default.track(C.HAw.VC_TILE_ACTIVITIES_ENTRY_POINT_CLOSED, {
                         tile_type: "activity suggestion",
                         close_type: "permanent",
-                        n_participants: c
+                        n_participants: d
                     }), (0, f.Dr)(r.M.VC_TILE_ACTIVITIES_ENTRY_POINT)
                 },
-                children: [(0, i.jsx)(x.A, {}), (0, i.jsx)(d.Text, {
+                children: [(0, i.jsx)(x.A, {}), (0, i.jsx)(c.Text, {
                     variant: "text-sm/medium",
                     children: N.intl.string(N.t["5E9SB9"])
                 })]
-            }), (0, i.jsx)(d.DUT, {
+            }), (0, i.jsx)(c.DUT, {
                 className: T.cG,
                 onClick: function() {
                     E.default.track(C.HAw.VC_TILE_ACTIVITIES_ENTRY_POINT_CLOSED, {
                         tile_type: "activity suggestion",
                         close_type: "temporary",
-                        n_participants: c
+                        n_participants: d
                     }), s()
                 },
-                children: (0, i.jsx)(d.PGe, {
+                children: (0, i.jsx)(c.PGe, {
                     size: "md",
                     color: "currentColor",
                     className: T.b

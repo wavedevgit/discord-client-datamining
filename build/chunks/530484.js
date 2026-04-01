@@ -9,8 +9,8 @@ var l = n(311907),
     a = n(397927),
     r = n(442433),
     o = n(826673),
-    c = n(508654),
-    d = n(222823),
+    d = n(508654),
+    c = n(222823),
     u = n(543465),
     h = n(652793),
     A = n(790782),
@@ -24,9 +24,9 @@ function g(e) {
     } = e, {
         hasUnread: p,
         mentionCount: f
-    } = (0, l.cf)([d.Ay], () => ({
-        hasUnread: d.Ay.hasUnread(t.id, A.P.GUILD_EVENT),
-        mentionCount: d.Ay.getMentionCount(t.id, A.P.GUILD_EVENT)
+    } = (0, l.cf)([c.Ay], () => ({
+        hasUnread: c.Ay.hasUnread(t.id, A.P.GUILD_EVENT),
+        mentionCount: c.Ay.getMentionCount(t.id, A.P.GUILD_EVENT)
     }), [t.id]), x = (0, l.bG)([u.Ay], () => u.Ay.isMuteScheduledEventsEnabled(t.id));
     async function E() {
         await (0, a.mMO)(async () => {
@@ -39,7 +39,7 @@ function g(e) {
             })
         }), (0, o.Dr)(s.M.GUILD_HEADER_EVENT_UPSELL)
     }
-    let I = (0, c.Ay)(t.id),
+    let I = (0, d.Ay)(t.id),
         C = I.length > 0 ? _.intl.formatToPlainString(_.t.IBdqSu, {
             number: I.length
         }) : _.intl.string(_.t.tlopTM);

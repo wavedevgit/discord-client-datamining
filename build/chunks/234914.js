@@ -1,6 +1,6 @@
 /** chunk id: 234914 params = (module,exports,require) **/
 n.d(t, {
-    A: () => d
+    A: () => c
 });
 var i = n(627968),
     l = n(64700),
@@ -9,7 +9,7 @@ var i = n(627968),
     r = n(397927),
     o = n(658362);
 
-function c(e) {
+function d(e) {
     let {
         alt: t,
         ...n
@@ -26,14 +26,14 @@ function c(e) {
     })
 }
 
-function d(e) {
+function c(e) {
     let {
         src: t,
         backgroundSrc: n,
         alt: l,
         aspectRatio: s,
         className: r,
-        imageChildClassName: d,
+        imageChildClassName: c,
         ...u
     } = e;
     return (0, i.jsxs)("div", {
@@ -49,10 +49,10 @@ function d(e) {
                 aspectRatio: s
             },
             className: o.ZS,
-            children: (0, i.jsx)(c, {
+            children: (0, i.jsx)(d, {
                 src: t,
                 alt: l,
-                className: a()(o.Sl, d),
+                className: a()(o.Sl, c),
                 ...u
             })
         })]

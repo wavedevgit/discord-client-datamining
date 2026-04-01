@@ -3,16 +3,16 @@ n.d(t, {
     A: () => x
 });
 var i = n(627968),
-    l = n(64700),
-    a = n(990078),
+    a = n(64700),
+    l = n(990078),
     s = n(397927),
     r = n(183555),
     o = n(633075),
-    d = n(735321),
-    c = n(606758),
+    c = n(735321),
+    d = n(606758),
     u = n(605694),
-    g = n(518477),
-    m = n(49999),
+    m = n(518477),
+    g = n(49999),
     p = n(985018);
 
 function x(e) {
@@ -22,17 +22,17 @@ function x(e) {
         onDismiss: x
     } = e, {
         trackUserProfileEditAction: f
-    } = (0, r.NJ)(), h = l.useMemo(() => new o.R({
+    } = (0, r.NJ)(), _ = a.useMemo(() => new o.R({
         applicationId: n.id
-    }), [n.id]), _ = l.useCallback(() => {
-        null != h && ((0, d.Y5)(h), f({
+    }), [n.id]), h = a.useCallback(() => {
+        null != _ && ((0, c.Y5)(_), f({
             action: "WIDGET_ADDED",
-            ...h.getProfileEditAnalyticsOptions()
-        }), (0, c.XA)(g.jM.WIDGET_ADDED))
-    }, [h, f]);
+            ..._.getProfileEditAnalyticsOptions()
+        }), (0, d.XA)(m.jM.WIDGET_ADDED))
+    }, [_, f]);
     return (0, i.jsx)(u.A, {
         user: t,
-        widget: h,
+        widget: _,
         subtle: !0,
         cta: (0, i.jsx)(u.A.Cta, {
             showSuggestedForYou: !0,
@@ -43,7 +43,7 @@ function x(e) {
                 applicationName: n.name
             }),
             buttons: (0, i.jsxs)(i.Fragment, {
-                children: [(0, i.jsx)(a.m, {
+                children: [(0, i.jsx)(l.m, {
                     text: p.intl.string(p.t.WAI6xu),
                     ariaHidden: !0,
                     children: (0, i.jsx)(s.SCx, {
@@ -52,10 +52,10 @@ function x(e) {
                         icon: s.PGe,
                         "aria-label": p.intl.string(p.t.WAI6xu),
                         onClick: () => {
-                            x(m.i.USER_DISMISS)
+                            x(g.i.USER_DISMISS)
                         }
                     })
-                }), (0, i.jsx)(a.m, {
+                }), (0, i.jsx)(l.m, {
                     text: p.intl.string(p.t["lBG2s/"]),
                     ariaHidden: !0,
                     children: (0, i.jsx)(s.SCx, {
@@ -66,7 +66,7 @@ function x(e) {
                             applicationName: n.name
                         }),
                         onClick: () => {
-                            x(m.i.TAKE_ACTION), _()
+                            x(g.i.TAKE_ACTION), h()
                         }
                     })
                 })]

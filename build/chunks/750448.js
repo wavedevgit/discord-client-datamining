@@ -8,8 +8,8 @@ var i = n(627968),
     a = n(173860),
     r = n(383394),
     o = n(458294),
-    c = n(131677),
-    d = n(711014),
+    d = n(131677),
+    c = n(711014),
     u = n(871697),
     h = n(531685),
     A = n(583613),
@@ -28,7 +28,7 @@ function x(e) {
 }
 let E = (0, A.L_)((e, t, n) => ["null", ...t, ...e, p, _.sFm.E3_SERVER_DISCOVERY_BADGE, g]),
     I = l.forwardRef(function(e, t) {
-        let n = (0, s.yK)([d.Ay, c.A, o.default], () => E(d.Ay.getGuildFolders(), c.A.getUnreadPrivateChannelIds(), o.default.getStoreChangeSentinel())),
+        let n = (0, s.yK)([c.Ay, d.A, o.default], () => E(c.Ay.getGuildFolders(), d.A.getUnreadPrivateChannelIds(), o.default.getStoreChangeSentinel())),
             l = (0, s.bG)([h.A], () => h.A.isFocused()),
             u = (0, s.bG)([r.A], () => r.A.getExpandedFolders());
         return (0, i.jsx)(a.A, {

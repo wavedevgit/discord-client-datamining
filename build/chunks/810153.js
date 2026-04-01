@@ -8,8 +8,8 @@ var i = n(311907),
     a = n(927813),
     r = n(661191),
     o = n(322387);
-let c = 90 * a.A.Millis.DAY,
-    d = {
+let d = 90 * a.A.Millis.DAY,
+    c = {
         tab: null,
         localItemAcks: {},
         hasNewMentions: !1,
@@ -20,37 +20,37 @@ class u extends i.Ay.PersistedStore {
     static displayName = "NotificationCenterStore";
     static persistKey = "NotificationCenterStore";
     initialize(e) {
-        this.waitFor(s.Ay), null != e && ((d = e).localItemAcks = function(e) {
+        this.waitFor(s.Ay), null != e && ((c = e).localItemAcks = function(e) {
             let t = {};
-            for (let [n, i] of Object.entries(e)) Date.now() - i < c && (t[n] = i);
+            for (let [n, i] of Object.entries(e)) Date.now() - i < d && (t[n] = i);
             return t
-        }(d.localItemAcks ?? {}), d.isDataStale = !0)
+        }(c.localItemAcks ?? {}), c.isDataStale = !0)
     }
     getState() {
-        return d
+        return c
     }
     getTab() {
-        return d.tab ?? o.$w.ForYou
+        return c.tab ?? o.$w.ForYou
     }
     isLocalItemAcked(e) {
-        return null != e.local_id && (null != d.localItemAcks[e.local_id] || r.default.age(e.id) > c)
+        return null != e.local_id && (null != c.localItemAcks[e.local_id] || r.default.age(e.id) > d)
     }
     hasNewMentions() {
-        return d.hasNewMentions
+        return c.hasNewMentions
     }
     isDataStale() {
-        return d.isDataStale
+        return c.isDataStale
     }
     isRefreshing() {
-        return d.isRefreshing
+        return c.isRefreshing
     }
     shouldReload() {
-        return d.hasNewMentions || d.isDataStale || d.isRefreshing
+        return c.hasNewMentions || c.isDataStale || c.isRefreshing
     }
 }
 
 function h() {
-    d.hasNewMentions = !1, d.isDataStale = !1, d.isRefreshing = !1
+    c.hasNewMentions = !1, c.isDataStale = !1, c.isRefreshing = !1
 }
 let A = new u(l.h, {
     MESSAGE_CREATE: function(e) {
@@ -59,8 +59,8 @@ let A = new u(l.h, {
         } = e
     },
     NOTIFICATION_CENTER_SET_TAB: function(e) {
-        d = {
-            ...d,
+        c = {
+            ...c,
             tab: e.tab
         }
     },
@@ -69,17 +69,17 @@ let A = new u(l.h, {
             localIds: t
         } = e;
         t.forEach(e => {
-            d = {
-                ...d,
+            c = {
+                ...c,
                 localItemAcks: {
-                    ...d.localItemAcks,
+                    ...c.localItemAcks,
                     [e]: Date.now()
                 }
             }
         })
     },
     NOTIFICATION_CENTER_REFRESH: function() {
-        d.isRefreshing = !0
+        c.isRefreshing = !0
     },
     LOAD_NOTIFICATION_CENTER_ITEMS_FAILURE: h,
     LOAD_NOTIFICATION_CENTER_ITEMS_SUCCESS: h

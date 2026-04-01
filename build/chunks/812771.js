@@ -8,8 +8,8 @@ var i, l = n(627968),
     a = n(503698),
     r = n.n(a),
     o = n(735438),
-    c = n(827734),
-    d = n(397927),
+    d = n(827734),
+    c = n(397927),
     u = n(817281),
     h = n(761929),
     A = n(964404),
@@ -66,7 +66,7 @@ function f(e) {
     }, [f]), C = (0, _.P)({
         maxWidth: n,
         minWidth: 450
-    }), N = (0, d.rdh)(c.A.modules.chat.RESIZE_HANDLE_WIDTH), T = (0, o.clamp)(x, 450, n), S = C ? T : T + N;
+    }), N = (0, c.rdh)(d.A.modules.chat.RESIZE_HANDLE_WIDTH), T = (0, o.clamp)(x, 450, n), S = C ? T : T + N;
     s.useEffect(() => {
         i?.(T, C)
     }, [T, i, C]);

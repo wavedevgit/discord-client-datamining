@@ -9,8 +9,8 @@ var l = n(311907),
     a = n(513461),
     r = n(212455),
     o = n(967198),
-    c = n(531685),
-    d = n(330465),
+    d = n(531685),
+    c = n(330465),
     u = n(65611),
     h = n(652215);
 
@@ -29,8 +29,8 @@ function A(e, t) {
 function _(e) {
     let {
         guildNode: t
-    } = e, n = t.id, s = (0, l.bG)([r.A], () => r.A.getRequest(n)), _ = (0, l.bG)([r.A], () => r.A.getJoinRequestGuild(n), [n]), m = (0, l.bG)([c.A], () => c.A.isFocused()), g = (0, l.bG)([o.A], () => o.A.getGuildId());
-    return null == _ ? null : (0, i.jsx)(d.A, {
+    } = e, n = t.id, s = (0, l.bG)([r.A], () => r.A.getRequest(n)), _ = (0, l.bG)([r.A], () => r.A.getJoinRequestGuild(n), [n]), m = (0, l.bG)([d.A], () => d.A.isFocused()), g = (0, l.bG)([o.A], () => o.A.getGuildId());
+    return null == _ ? null : (0, i.jsx)(c.A, {
         guildNode: t,
         guild: _,
         animatable: m,

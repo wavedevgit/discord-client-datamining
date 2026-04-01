@@ -8,8 +8,8 @@ var i = n(627968),
     a = n(688810),
     r = n(592982),
     o = n(384059),
-    c = n(480890),
-    d = n(246356),
+    d = n(480890),
+    c = n(246356),
     u = n(709562),
     h = n(806931),
     A = n(985018);
@@ -26,12 +26,12 @@ let _ = e => {
             let {
                 closePopout: l
             } = e;
-            return (0, i.jsx)(d.A, {
+            return (0, i.jsx)(c.A, {
                 children: (0, i.jsx)(r.A, {
                     onClose: l,
                     channel: t,
                     remoteMode: n,
-                    onInteraction: (0, c.s)("MoreSettingsMenu", _, {
+                    onInteraction: (0, d.s)("MoreSettingsMenu", _, {
                         entrypoint: h.GK.THREE_DOT
                     })
                 })

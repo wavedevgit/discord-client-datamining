@@ -8,8 +8,8 @@ var i = n(627968),
     a = n(397927),
     r = n(976860),
     o = n(93055),
-    c = n(652215),
-    d = n(525736),
+    d = n(652215),
+    c = n(525736),
     u = n(985018);
 let h = l.lazy(() => n.e("60497").then(n.bind(n, 908424)));
 
@@ -18,8 +18,8 @@ function A(e) {
         className: t
     } = e, {
         hasAccess: n
-    } = (0, o.TW)("FavoriteGuildHeaderActionButton"), A = l.useRef(null), _ = n ? u.intl.string(d.default.G9fGlP) : u.intl.string(u.t.ojM1xJ), m = l.useCallback(() => {
-        (0, r.pX)(c.BVt.ME)
+    } = (0, o.TW)("FavoriteGuildHeaderActionButton"), A = l.useRef(null), _ = n ? u.intl.string(c.default.G9fGlP) : u.intl.string(u.t.ojM1xJ), m = l.useCallback(() => {
+        (0, r.pX)(d.BVt.ME)
     }, []), g = l.useCallback(e => {
         let {
             closePopout: t

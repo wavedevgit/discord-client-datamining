@@ -9,8 +9,8 @@ var l = n(503698),
     a = n(311907),
     r = n(397927),
     o = n(775602),
-    c = n(108713),
-    d = n(985018),
+    d = n(108713),
+    c = n(985018),
     u = n(627170);
 
 function h(e) {
@@ -33,12 +33,12 @@ function h(e) {
         }), (0, i.jsx)(r.Heading, {
             className: u.wx,
             variant: "heading-md/bold",
-            children: d.intl.string(d.t["C+tj1c"])
+            children: c.intl.string(c.t["C+tj1c"])
         }), (0, i.jsx)(r.Text, {
             variant: "text-md/normal",
             color: "text-default",
-            children: d.intl.format(d.t["nNHd/y"], {
-                onCancel: c.ZG
+            children: c.intl.format(c.t["nNHd/y"], {
+                onCancel: d.ZG
             })
         })]
     })

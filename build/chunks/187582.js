@@ -8,8 +8,8 @@ var i = n(627968),
     a = n(311907),
     r = n(397927),
     o = n(442433),
-    c = n(414798),
-    d = n(110574),
+    d = n(414798),
+    c = n(110574),
     u = n(793574),
     h = n(688810),
     A = n(709066),
@@ -57,7 +57,7 @@ function L(e) {
         }), N._.dispatchToLastSubscribed(y.jej.INSERT_TEXT, {
             plainText: e,
             rawText: n
-        }), c.A.startTyping(r.id)
+        }), d.A.startTyping(r.id)
     }, M = (0, m.r)({
         user: t
     }), [D, U] = l.useState(!1);
@@ -76,7 +76,7 @@ function L(e) {
                 onMouseDown: l,
                 ...s
             } = e;
-            return (0, i.jsx)(d.A, {
+            return (0, i.jsx)(c.A, {
                 ref: j,
                 user: t,
                 currentUser: g,
@@ -121,7 +121,7 @@ function D(e) {
     } = e, n = I.default.getCurrentUser(), s = n?.isStaff(), {
         analyticsLocations: o
     } = (0, h.Ay)(u.A.MEMBER_LIST), {
-        listItems: c
+        listItems: d
     } = (0, a.bG)([x.A, I.default, f.A], () => {
         let e = (0, T.F)(t.recipients, I.default),
             n = {};
@@ -152,7 +152,7 @@ function D(e) {
             guild_id: t.guild_id
         })
     }, [t.guild_id, t.id, t.type]);
-    let d = s && c.every(e => e.user.isStaff());
+    let c = s && d.every(e => e.user.isStaff());
     return (0, i.jsx)(h.f5, {
         value: o,
         children: (0, i.jsx)("div", {
@@ -164,10 +164,10 @@ function D(e) {
                     fade: !0,
                     children: [(0, i.jsxs)(g.A, {
                         className: j.lL,
-                        children: [`${v.intl.string(v.t["9Oq93m"])}—${c.length} `, d && (0, i.jsx)(A.A, {
+                        children: [`${v.intl.string(v.t["9Oq93m"])}—${d.length} `, c && (0, i.jsx)(A.A, {
                             type: A.A.Types.STAFF_ONLY_DM
                         })]
-                    }), c.map(e => (0, i.jsx)(L, {
+                    }), d.map(e => (0, i.jsx)(L, {
                         user: e.user,
                         status: e.status,
                         activities: e.activities,

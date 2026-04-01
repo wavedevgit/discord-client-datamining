@@ -1,6 +1,6 @@
 /** chunk id: 743674 params = (module,exports,require) **/
 n.d(t, {
-    S: () => d
+    S: () => c
 });
 var i = n(64700),
     l = n(635377),
@@ -10,7 +10,7 @@ var i = n(64700),
 let o = new(s())({
     max: 50
 });
-async function c(e) {
+async function d(e) {
     let t = o.get(e);
     if (null != t) return t;
     let n = await new Promise((t, n) => {
@@ -25,12 +25,12 @@ async function c(e) {
     return o.set(e, i), i
 }
 
-function d(e) {
+function c(e) {
     let [t, n] = i.useState(() => null != e ? o.get(e) : void 0), [l, s] = i.useState();
     if (null != e && e !== l) {
         s(e);
         let t = o.get(e);
-        null != t ? n(t) : c(e).then(e => {
+        null != t ? n(t) : d(e).then(e => {
             n(e)
         })
     }

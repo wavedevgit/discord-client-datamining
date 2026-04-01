@@ -8,8 +8,8 @@ var i = n(627968),
     a = n.n(s),
     r = n(311907),
     o = n(397927),
-    c = n(793574),
-    d = n(652793),
+    d = n(793574),
+    c = n(652793),
     u = n(361158),
     h = n(186111),
     A = n(942975),
@@ -57,7 +57,7 @@ let N = {
             guildId: t,
             selected: s
         } = e, T = (0, m.Ay)(t), S = l.useCallback(() => {
-            (0, A.Zm)(t), (0, g.A)(t, c.A.GUILD_POWERUPS_CHANNEL_LIST_ROW), T?.popout?.markAsDismissed(f.i.INDIRECT_ACTION)
+            (0, A.Zm)(t), (0, g.A)(t, d.A.GUILD_POWERUPS_CHANNEL_LIST_ROW), T?.popout?.markAsDismissed(f.i.INDIRECT_ACTION)
         }, [t, T]), b = l.useRef(null), y = (0, o.red)(o.DXt), v = (0, r.bG)([h.A], () => h.A.hasLayers()), j = (0, u.xr)(e => e.fullScreenLayers.length > 0), R = y || v || j, O = l.useCallback(() => {
             if (T?.popout == null || R) return null;
             switch (T?.popout?.type) {
@@ -127,7 +127,7 @@ let N = {
             M(e)
         }, []);
         return (0, i.jsxs)(i.Fragment, {
-            children: [(0, i.jsx)(d.G, {
+            children: [(0, i.jsx)(c.G, {
                 ref: b,
                 className: I.kL,
                 id: `skill-trees-${t}`,

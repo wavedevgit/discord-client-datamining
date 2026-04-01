@@ -8,8 +8,8 @@ var i = n(627968),
     a = n.n(s),
     r = n(284009),
     o = n.n(r),
-    c = n(311907),
-    d = n(990078),
+    d = n(311907),
+    c = n(990078),
     u = n(397927),
     h = n(442433),
     A = n(730134),
@@ -69,10 +69,10 @@ let O = l.memo(function(e) {
         let {
             isMobile: b,
             status: y
-        } = (0, c.cf)([I.A], () => ({
+        } = (0, d.cf)([I.A], () => ({
             isMobile: I.A.isMobileOnline(s.user.id),
             status: I.A.getStatus(s.user.id, N)
-        })), v = (0, c.bG)([x.Ay], () => x.Ay.getMember(N, s.user.id)), O = (0, p.gn)(t.guild_id, v?.userId, v?.colorStrings ?? null), L = l.useMemo(() => ({
+        })), v = (0, d.bG)([x.Ay], () => x.Ay.getMember(N, s.user.id)), O = (0, p.gn)(t.guild_id, v?.userId, v?.colorStrings ?? null), L = l.useMemo(() => ({
             [N]: [s.user.id]
         }), [N, s.user.id]);
         (0, m.Eq)(L, "RequestToSpeakSidebar");
@@ -128,7 +128,7 @@ let O = l.memo(function(e) {
                 })
             }), (0, i.jsxs)("div", {
                 className: R.UD,
-                children: [(0, i.jsx)(d.m, {
+                children: [(0, i.jsx)(c.m, {
                     text: M ? j.intl.string(j.t.h9rsTd) : j.intl.string(j.t.f0T7hI),
                     asContainer: !0,
                     children: (0, i.jsx)(u.K0, {
@@ -140,7 +140,7 @@ let O = l.memo(function(e) {
                         variant: "secondary",
                         "aria-label": M ? j.intl.string(j.t.h9rsTd) : j.intl.string(j.t.f0T7hI)
                     })
-                }), (0, i.jsx)(d.m, {
+                }), (0, i.jsx)(c.m, {
                     text: j.intl.string(j.t.moABMy),
                     asContainer: !0,
                     children: (0, i.jsx)(u.K0, {
@@ -187,7 +187,7 @@ function U(e) {
         channel: t,
         toggleRequestToSpeakSidebar: n,
         chatOpen: l
-    } = e, s = (0, N.J2)(t.id), r = [+!!(0, c.bG)([E.A], () => E.A.can(v.xB.MANAGE_CHANNELS, t) || E.A.can(v.xB.MANAGE_ROLES, t)), Math.max(1, s.length)];
+    } = e, s = (0, N.J2)(t.id), r = [+!!(0, d.bG)([E.A], () => E.A.can(v.xB.MANAGE_CHANNELS, t) || E.A.can(v.xB.MANAGE_ROLES, t)), Math.max(1, s.length)];
     return (0, i.jsxs)("div", {
         className: a()(R.kL, {
             [R.X_]: l

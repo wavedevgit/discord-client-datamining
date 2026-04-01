@@ -1,6 +1,6 @@
 /** chunk id: 956747 params = (module,exports,require) **/
 n.d(t, {
-    A: () => c
+    A: () => d
 });
 var i = n(627968);
 n(64700);
@@ -10,7 +10,7 @@ var l = n(311907),
     r = n(221598),
     o = n(985018);
 
-function c(e) {
+function d(e) {
     let t = (0, l.bG)([a.A], () => a.A.getToastsEnabled(e));
     return (0, i.jsx)(s.sLh, {
         id: "show-call-chat-toasts",

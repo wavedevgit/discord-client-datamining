@@ -8,8 +8,8 @@ var i = n(64700),
     a = n(688810),
     r = n(987144),
     o = n(71393),
-    c = n(485970),
-    d = n(181940),
+    d = n(485970),
+    c = n(181940),
     u = n(299975),
     h = n(568065),
     A = n(652215);
@@ -25,7 +25,7 @@ function m(e, t) {
         onToggle: s,
         isLoading: u,
         error: m
-    } = (0, d.A)(e, t), g = (0, l.bG)([o.A], () => o.A.getGuild(e)), p = (0, c.A)(e, t);
+    } = (0, c.A)(e, t), g = (0, l.bG)([o.A], () => o.A.getGuild(e)), p = (0, d.A)(e, t);
     return {
         onActivate: i.useCallback(function() {
             let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {},

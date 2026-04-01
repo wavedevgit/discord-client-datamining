@@ -8,8 +8,8 @@ var i = n(627968),
     a = n.n(s),
     r = n(835245),
     o = n(397927),
-    c = n(315502),
-    d = n(254968);
+    d = n(315502),
+    c = n(254968);
 
 function u(e) {
     let {
@@ -17,14 +17,14 @@ function u(e) {
         height: n = 24,
         isBadged: s = !1,
         isTyping: a = !1
-    } = e, [c] = l.useState(() => (0, r.A)());
+    } = e, [d] = l.useState(() => (0, r.A)());
     return (0, i.jsxs)("svg", {
         width: t,
         height: n,
         viewBox: "0 0 24 24",
         children: [(0, i.jsx)("defs", {
             children: (0, i.jsxs)("mask", {
-                id: c,
+                id: d,
                 children: [(0, i.jsx)("rect", {
                     fill: "white",
                     width: "100%",
@@ -45,7 +45,7 @@ function u(e) {
                 })]
             })
         }), (0, i.jsx)("g", {
-            mask: `url(#${c})`,
+            mask: `url(#${d})`,
             children: (0, i.jsx)(o.oyn, {
                 size: "custom",
                 width: t,
@@ -65,14 +65,14 @@ function h(e) {
         canBadge: r
     } = e, o = null != l && l > 0, h = (o ? l : n) ?? 0, A = r && null != n && n > 0;
     return (0, i.jsxs)("div", {
-        className: a()(d.Or, t),
+        className: a()(c.Or, t),
         children: [(0, i.jsx)(u, {
             isBadged: A,
             isTyping: s
-        }), A && (0, i.jsx)(c.A, {
+        }), A && (0, i.jsx)(d.A, {
             hasMentions: o,
             truncatedCount: h > 99 ? "99+" : h,
-            className: d.qS
+            className: c.qS
         })]
     })
 }

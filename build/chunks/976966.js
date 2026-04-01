@@ -8,8 +8,8 @@ var i = n(627968),
     a = n.n(s),
     r = n(554146),
     o = n(342494),
-    c = n(990078),
-    d = n(397927),
+    d = n(990078),
+    c = n(397927),
     u = n(932001),
     h = n(93055),
     A = n(253932),
@@ -30,7 +30,7 @@ function T(e) {
         searchMode: n,
         onSearchModeChange: s,
         totalResults: o,
-        isIndexing: c,
+        isIndexing: d,
         isSearching: A,
         documentsIndexed: _,
         selectedChannelId: f
@@ -64,17 +64,17 @@ function T(e) {
             children: (0, i.jsx)(S, {
                 totalResults: o,
                 subtitle: y,
-                isIndexing: c,
+                isIndexing: d,
                 isSearching: A,
                 documentsIndexed: _
             })
         }), (0, i.jsxs)("div", {
             className: N.vd,
-            children: [(0, i.jsx)(d.Button, {
+            children: [(0, i.jsx)(c.Button, {
                 variant: "secondary",
                 onClick: k,
                 text: w,
-                icon: d.RgP,
+                icon: c.RgP,
                 size: "sm"
             }), (0, i.jsx)(O, {
                 searchMode: n,
@@ -112,8 +112,8 @@ function S(e) {
 function b() {
     return (0, i.jsx)("div", {
         className: N.zp,
-        children: (0, i.jsx)(d.y$y, {
-            type: d.y$y.Type.SPINNING_CIRCLE,
+        children: (0, i.jsx)(c.y$y, {
+            type: c.y$y.Type.SPINNING_CIRCLE,
             className: N.u1,
             itemClassName: N.pu
         })
@@ -124,17 +124,17 @@ function y(e) {
     let {
         documentsIndexed: t
     } = e;
-    return (0, i.jsx)(c.m, {
+    return (0, i.jsx)(d.m, {
         asContainer: !0,
         text: C.intl.formatToPlainString(C.t["4Y3O+O"], {
             count: t ?? ""
         }),
         children: (0, i.jsxs)("div", {
             className: N.q_,
-            children: [(0, i.jsx)(d.Text, {
+            children: [(0, i.jsx)(c.Text, {
                 variant: "text-md/medium",
                 color: "text-muted",
-                children: (0, i.jsx)(d.MzZ, {
+                children: (0, i.jsx)(c.MzZ, {
                     className: N.Zd,
                     href: _.A.getArticleURL(E.MVz.SEARCH_INDEXING),
                     children: C.intl.string(C.t["G3EA+4"])
@@ -146,7 +146,7 @@ function y(e) {
 
 function v() {
     return (0, i.jsxs)(i.Fragment, {
-        children: [(0, i.jsx)(d.Text, {
+        children: [(0, i.jsx)(c.Text, {
             variant: "text-md/medium",
             color: "text-default",
             children: C.intl.string(C.t.uixzLf)
@@ -158,7 +158,7 @@ function j(e) {
     let {
         totalResults: t,
         subtitle: n
-    } = e, l = (0, i.jsx)(d.Text, {
+    } = e, l = (0, i.jsx)(c.Text, {
         variant: "text-md/medium",
         color: "text-strong",
         children: C.intl.format(C.t.ZGVL3g, {
@@ -167,7 +167,7 @@ function j(e) {
     });
     return null != n ? (0, i.jsxs)("div", {
         className: N.hy,
-        children: [l, (0, i.jsx)(d.Text, {
+        children: [l, (0, i.jsx)(c.Text, {
             variant: "text-xs/medium",
             color: "text-subtle",
             children: n
@@ -182,7 +182,7 @@ function R(e) {
         isPopoutOpen: s,
         setOpenPopout: a,
         onPopoverRequestClose: r,
-        isPopoverVisible: c
+        isPopoverVisible: d
     } = e, u = l.useRef(null), h = A.Hu.useSetting(), _ = l.useCallback(e => {
         if (h !== e) {
             if ((0, f._k)({
@@ -208,10 +208,10 @@ function R(e) {
         align: "end"
     }), []);
     return (0, i.jsxs)(i.Fragment, {
-        children: [(0, i.jsx)(d.YNO, {
+        children: [(0, i.jsx)(c.YNO, {
             targetElementRef: u,
             shouldShow: s,
-            animation: d.YNO.Animation.NONE,
+            animation: c.YNO.Animation.NONE,
             position: "bottom",
             align: "right",
             onRequestClose: () => a(null),
@@ -219,21 +219,21 @@ function R(e) {
                 let {
                     closePopout: t
                 } = e;
-                return (0, i.jsx)(d.W1t, {
+                return (0, i.jsx)(c.W1t, {
                     "data-menu-migrated-auto": !0,
                     navId: "search-settings-cog",
                     onClose: t,
                     "aria-label": C.intl.string(C.t.fb59v0),
                     onSelect: () => a(null),
-                    children: (0, i.jsxs)(d.rXV, {
+                    children: (0, i.jsxs)(c.rXV, {
                         label: C.intl.string(C.t["/tMwrA"]),
-                        children: [(0, i.jsx)(d.iDA, {
+                        children: [(0, i.jsx)(c.iDA, {
                             id: "xdm-search-disabled",
                             group: "xdm-search-items",
                             label: C.intl.string(C.t.jRkYAh),
                             checked: !h,
                             action: () => _(!1)
-                        }), (0, i.jsx)(d.iDA, {
+                        }), (0, i.jsx)(c.iDA, {
                             id: "xdm-search-enabled",
                             group: "xdm-search-items",
                             label: C.intl.string(C.t["lWpJ/t"]),
@@ -243,11 +243,11 @@ function R(e) {
                     }, "xdm-search-items")
                 })
             },
-            children: e => (0, i.jsx)(d.K0, {
+            children: e => (0, i.jsx)(c.K0, {
                 ...e,
                 buttonRef: u,
                 variant: "secondary",
-                icon: d.Zes,
+                icon: c.Zes,
                 onClick: () => {
                     a(s ? null : "settings")
                 },
@@ -256,7 +256,7 @@ function R(e) {
             })
         }), (0, i.jsx)(o.AM, {
             targetElementRef: u,
-            shouldShow: c,
+            shouldShow: d,
             onRequestClose: r,
             title: m,
             body: p,
@@ -281,13 +281,13 @@ function O(e) {
     }, {
         label: C.intl.string(C.t.q8gB52),
         value: E.BBH.MOST_RELEVANT
-    }], []), c = l.useCallback(e => {
+    }], []), d = l.useCallback(e => {
         a(null), n(e)
     }, [a, n]);
-    return (0, i.jsx)(d.YNO, {
+    return (0, i.jsx)(c.YNO, {
         targetElementRef: r,
         shouldShow: s,
-        animation: d.YNO.Animation.NONE,
+        animation: c.YNO.Animation.NONE,
         position: "bottom",
         align: "right",
         onRequestClose: () => a(null),
@@ -295,34 +295,34 @@ function O(e) {
             let {
                 closePopout: n
             } = e;
-            return (0, i.jsx)(d.W1t, {
+            return (0, i.jsx)(c.W1t, {
                 "data-menu-migrated-auto": !0,
                 navId: "search-result-sort-menu",
                 onClose: n,
                 "aria-label": C.intl.string(C.t.utp2hS),
                 onSelect: () => a(null),
-                children: (0, i.jsx)(d.rXV, {
+                children: (0, i.jsx)(c.rXV, {
                     children: o.map(e => {
                         let {
                             label: n,
                             value: l
                         } = e;
-                        return (0, i.jsx)(d.iDA, {
+                        return (0, i.jsx)(c.iDA, {
                             group: "sort-by",
                             id: `sort-by-option-${l}`,
                             label: n,
-                            action: () => c(l),
+                            action: () => d(l),
                             checked: t === l
                         }, l)
                     })
                 }, "sort-by")
             })
         },
-        children: e => (0, i.jsx)(d.Button, {
+        children: e => (0, i.jsx)(c.Button, {
             ...e,
             buttonRef: r,
             variant: "secondary",
-            icon: d.JNJ,
+            icon: c.JNJ,
             onClick: () => {
                 a(s ? null : "sort")
             },

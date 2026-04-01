@@ -9,8 +9,8 @@ var l = n(311907),
     a = n(990078),
     r = n(397927),
     o = n(775602),
-    c = n(890687),
-    d = n(92246),
+    d = n(890687),
+    c = n(92246),
     u = n(792620),
     h = n(793683),
     A = n(985018);
@@ -22,7 +22,7 @@ function _(e) {
         sourceQuestContent: _,
         onClose: m,
         size: g = "md"
-    } = e, p = (0, c.LS)(t), f = (0, l.bG)([o.A], () => o.A.useReducedMotion), x = null != (0, d._Z)(t.config), E = (0, u.vv)(t), I = (0, h.v)({
+    } = e, p = (0, d.LS)(t), f = (0, l.bG)([o.A], () => o.A.useReducedMotion), x = null != (0, c._Z)(t.config), E = (0, u.vv)(t), I = (0, h.v)({
         quest: t,
         questContent: n,
         sourceQuestContent: _,

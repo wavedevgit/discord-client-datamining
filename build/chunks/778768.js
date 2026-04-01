@@ -8,8 +8,8 @@ var i = n(627968),
     a = n.n(s),
     r = n(284009),
     o = n.n(r),
-    c = n(110259),
-    d = n(311907),
+    d = n(110259),
+    c = n(311907),
     u = n(435371),
     h = n(397927),
     A = n(846293),
@@ -46,7 +46,7 @@ function V(e) {
         channel: t,
         onHoverOrFocus: s,
         setPopoutRef: r,
-        closePopout: d
+        closePopout: c
     } = e, u = l.useRef(null), A = (0, N.A)(u), _ = (0, D.kt)({
         channel: t
     }), {
@@ -58,8 +58,8 @@ function V(e) {
         analyticsLocations: g
     } = (0, E.Ay)(x.A.VOICE_INVITE_SUGGESTIONS_POPOVER);
     (0, I.A)({
-        name: c.ImpressionNames.VOICE_INVITE_SUGGESTIONS_POPOVER,
-        type: c.ImpressionTypes.POPOUT,
+        name: d.ImpressionNames.VOICE_INVITE_SUGGESTIONS_POPOVER,
+        type: d.ImpressionTypes.POPOUT,
         properties: {
             voice_channel_id: t.id,
             voice_guild_id: t.guild_id,
@@ -82,8 +82,8 @@ function V(e) {
                 channel: t,
                 source: U.PE1.VOICE_INVITE_SUGGESTIONS
             })
-        }), d()
-    }, [t, d]);
+        }), c()
+    }, [t, c]);
     return (0, i.jsx)("div", {
         ref: u,
         "aria-label": G.intl.string(G.t.o53CL2),
@@ -128,7 +128,7 @@ function H(e) {
         channel: t,
         user: n,
         ringingEnabled: s
-    } = e, r = t.guild_id, o = l.useRef(null), c = (0, d.bG)([v.Ay], () => v.Ay.getMember(r, n.id), [r, n.id]), {
+    } = e, r = t.guild_id, o = l.useRef(null), d = (0, c.bG)([v.Ay], () => v.Ay.getMember(r, n.id), [r, n.id]), {
         isHoveringOrFocusing: x
     } = (0, N.A)(o), [E, I] = l.useState(null), {
         icon: b,
@@ -145,7 +145,7 @@ function H(e) {
         status: F,
         isMobileOnline: K,
         activities: W
-    } = (0, d.cf)([L.A], () => ({
+    } = (0, c.cf)([L.A], () => ({
         status: L.A.getStatus(n.id, r),
         isMobileOnline: L.A.isMobileOnline(n.id),
         activities: L.A.getActivities(n.id, r)
@@ -202,7 +202,7 @@ function H(e) {
         animateOnHover: !x,
         guildId: r
     });
-    if (null == c) return null;
+    if (null == d) return null;
     let ei = M.Ay.getName(n),
         el = G.intl.string(G.t.jYnGPG),
         es = F !== h.clD.OFFLINE ? F : void 0,

@@ -1,6 +1,6 @@
 /** chunk id: 768841 params = (module,exports,require) **/
 n.d(t, {
-    A: () => d
+    A: () => c
 });
 var i = n(627968);
 n(64700);
@@ -9,7 +9,7 @@ var l = n(397927),
     a = n(272355),
     r = n(296838),
     o = n(946974);
-class c extends a.A {
+class d extends a.A {
     _initialize() {
         s.h.subscribe("SHOW_KEYBOARD_SHORTCUTS", this.showKeyboardShortcuts), s.h.subscribe("HIDE_KEYBOARD_SHORTCUTS", this.hideKeyboardShortcuts)
     }
@@ -27,4 +27,4 @@ class c extends a.A {
         (0, l.OoC)(o.P)
     }
 }
-let d = new c
+let c = new d

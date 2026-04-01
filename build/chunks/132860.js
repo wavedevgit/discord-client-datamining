@@ -1,6 +1,6 @@
 /** chunk id: 132860 params = (module,exports,require) **/
 n.d(t, {
-    A: () => c
+    A: () => d
 });
 var i = n(961350),
     l = n(576705),
@@ -9,7 +9,7 @@ var i = n(961350),
     r = n(698441),
     o = n(219935);
 
-function c(e) {
+function d(e) {
     if (!e.isGuildVoice() || r.Ay.getGuildScheduledEventsByIndex(r.ej.CHANNEL_EVENT_ACTIVE(e.id)).length < 1 || !l.A.can(o.EN, e)) return !1;
     let t = new Set(s.Ay.getVoiceStatesForChannel(e).map(e => e.user.id)),
         n = i.default.getId();

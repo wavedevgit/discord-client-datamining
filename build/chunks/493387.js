@@ -8,8 +8,8 @@ var i = n(627968),
     a = n.n(s),
     r = n(615300),
     o = n(311907),
-    c = n(73939),
-    d = n(582754),
+    d = n(73939),
+    c = n(582754),
     u = n(397927),
     h = n(736653),
     A = n(531685),
@@ -114,7 +114,7 @@ class E extends l.PureComponent {
             theme: e,
             children: t,
             className: n
-        } = this.props, l = (0, d.Mw)(e), s = a()(g._y, {
+        } = this.props, l = (0, c.Mw)(e), s = a()(g._y, {
             [f.cp]: l,
             [f.QB]: !l
         });
@@ -143,9 +143,9 @@ function I(e) {
         onContextMenu: l,
         className: s,
         onClick: r,
-        width: d,
+        width: c,
         guildId: p
-    } = e, f = (0, h.Ay)(), x = (t = n.length, ((0, u.FT9)(u._3J.SIZE_80) + 16) * t > d ? u._3J.SIZE_40 : u._3J.SIZE_80), I = (0, o.bG)([A.A], () => A.A.isFocused()), C = n.map(e => {
+    } = e, f = (0, h.Ay)(), x = (t = n.length, ((0, u.FT9)(u._3J.SIZE_80) + 16) * t > c ? u._3J.SIZE_40 : u._3J.SIZE_80), I = (0, o.bG)([A.A], () => A.A.isFocused()), C = n.map(e => {
         if (e.type !== m.lp.USER) return null;
         let {
             user: t,
@@ -173,7 +173,7 @@ function I(e) {
             })
         }, t.id)
     });
-    return (0, i.jsx)(c.F, {
+    return (0, i.jsx)(d.F, {
         component: "div",
         role: "list",
         className: a()(g.zr, s),

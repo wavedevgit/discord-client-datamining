@@ -9,8 +9,8 @@ var i = n(627968),
     a = n.n(s),
     r = n(311907),
     o = n(990078),
-    c = n(397927),
-    d = n(90644),
+    d = n(397927),
+    c = n(90644),
     u = n(432166),
     h = n(104171),
     A = n(763758),
@@ -50,14 +50,14 @@ function N(e) {
                 })
             })
         } let h = r.large_image ?? r.small_image,
-        A = (0, d.A)(t),
+        A = (0, c.A)(t),
         _ = a ? I.p_ : A ? I.RC : I.P3,
         p = null != h ? (0, i.jsx)("img", {
             alt: r.large_text ?? "",
             src: (0, m.uD)(u, h, [128, 128]),
             className: _
         }) : null;
-    return A && null != s ? (p = (0, i.jsx)(c.DUT, {
+    return A && null != s ? (p = (0, i.jsx)(d.DUT, {
         className: I.vk,
         onClick: () => {
             s(t, n.id)
@@ -79,8 +79,8 @@ function T(e) {
     } = e, a = t?.details, r = t?.name, o = r;
     if (null != n) o = n.application.name;
     else {
-        if (!(null != t && (0, d.A)(t)) || null == t.sync_id || null == a || null == l) return null;
-        r = a, o = (0, i.jsx)(c.DUT, {
+        if (!(null != t && (0, c.A)(t)) || null == t.sync_id || null == a || null == l) return null;
+        r = a, o = (0, i.jsx)(d.DUT, {
             className: I.wp,
             onClick: () => {
                 l(t)
@@ -88,7 +88,7 @@ function T(e) {
             children: a
         })
     }
-    return (0, i.jsx)(c.Heading, {
+    return (0, i.jsx)(d.Heading, {
         variant: s ? "heading-sm/medium" : "heading-sm/semibold",
         color: "text-strong",
         className: I.wx,
@@ -102,17 +102,17 @@ function S(e) {
         user: n,
         onOpenSpotifyArtist: l,
         muted: s
-    } = e, r = t?.details, o = t?.state, c = r;
-    return (null != t && (0, d.A)(t) && null != o && (c = [(0, i.jsx)(A.A, {
+    } = e, r = t?.details, o = t?.state, d = r;
+    return (null != t && (0, c.A)(t) && null != o && (d = [(0, i.jsx)(A.A, {
         artists: o,
         linkClassName: s ? I.QJ : I.hw,
         canOpen: null != t.sync_id,
         onOpenSpotifyArtist: e => {
             l?.(t, n.id, e)
         }
-    }, o)]), null == c || "" === c) ? null : (0, i.jsx)("div", {
+    }, o)]), null == d || "" === d) ? null : (0, i.jsx)("div", {
         className: a()(I.Mo, s ? I.JF : I.Tf, I.p9),
-        children: c
+        children: d
     })
 }
 
@@ -120,7 +120,7 @@ function b(e) {
     let {
         activity: t
     } = e, n = t?.state;
-    return null == n || "" === n || (0, d.A)(t) ? null : (0, i.jsx)("div", {
+    return null == n || "" === n || (0, c.A)(t) ? null : (0, i.jsx)("div", {
         className: a()(I.Mo, I.Tf, I.p9, I.__invalid_activity),
         children: n
     })
@@ -130,7 +130,7 @@ function y(e) {
     let {
         activity: t
     } = e;
-    if (null == t || !(0, d.A)(t)) return null;
+    if (null == t || !(0, c.A)(t)) return null;
     let {
         timestamps: n
     } = t;
@@ -154,21 +154,21 @@ function v(e) {
         embeddedApp: n,
         user: s,
         channel: a,
-        sortedVoiceStates: c,
+        sortedVoiceStates: d,
         onOpenSpotifyTrack: u,
         onOpenSpotifyArtist: A,
         onOpenSpotifyAlbum: m
     } = e, g = [];
-    null != n ? g = Array.from(n.embeddedActivity.userIds) : (0, d.A)(t) && null != c && (g = c.map(e => e.user.id));
+    null != n ? g = Array.from(n.embeddedActivity.userIds) : (0, c.A)(t) && null != d && (g = d.map(e => e.user.id));
     let x = (0, r.yK)([_.default], () => g.map(e => _.default.getUser(e)).filter(p.Vq)),
-        E = null != n || (0, d.A)(t),
+        E = null != n || (0, c.A)(t),
         v = l.useMemo(() => {
             let e = new Map;
-            return E && null != c && c.forEach(t => {
+            return E && null != d && d.forEach(t => {
                 let n = t.member;
                 null != n && e.set(t.user.id, n)
             }), e
-        }, [c, E]);
+        }, [d, E]);
     return E ? (0, i.jsxs)("div", {
         className: I.ec,
         children: [(0, i.jsxs)("div", {
@@ -228,14 +228,14 @@ function j(e) {
         onOpenSpotifyArtist: a,
         onOpenSpotifyAlbum: r
     } = e;
-    if (!(null != n || (0, d.A)(t))) return null;
+    if (!(null != n || (0, c.A)(t))) return null;
     let o = null,
         u = t?.type ?? null;
     return o = null != n ? u === x.$pd.WATCHING ? E.intl.string(E.t.xeqvTg) : E.intl.string(E.t.J4MQFX) : E.intl.string(E.t.ep6av7), (0, i.jsxs)("div", {
         className: I.ec,
         children: [null != o && (0, i.jsx)("div", {
             className: I.N1,
-            children: (0, i.jsx)(c.Heading, {
+            children: (0, i.jsx)(d.Heading, {
                 variant: "text-xs/medium",
                 color: "text-muted",
                 children: o

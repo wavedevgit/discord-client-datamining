@@ -1,7 +1,7 @@
 /** chunk id: 84052 params = (module,exports,require) **/
 n.d(t, {
     A: () => u,
-    v: () => d
+    v: () => c
 });
 var i = n(627968);
 n(64700);
@@ -10,9 +10,9 @@ var l = n(503698),
     a = n(827734),
     r = n(35275),
     o = n(713088),
-    c = n(99566);
+    d = n(99566);
 
-function d(e) {
+function c(e) {
     return e
 }
 
@@ -21,9 +21,9 @@ function u(e) {
         locked: t
     } = e;
     return (0, i.jsx)("div", {
-        className: s()(c.Xs, o.U),
+        className: s()(d.Xs, o.U),
         children: (0, i.jsx)(r.A, {
-            className: c.gE,
+            className: d.gE,
             color: t ? a.A.colors.CREATOR_REVENUE_LOCKED_CHANNEL_ICON.css : void 0
         })
     })

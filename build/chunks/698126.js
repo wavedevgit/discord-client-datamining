@@ -8,8 +8,8 @@ var i = n(627968),
     a = n.n(s),
     r = n(311907),
     o = n(308528),
-    c = n(442433),
-    d = n(676002),
+    d = n(442433),
+    c = n(676002),
     u = n(963027),
     h = n(976860),
     A = n(734057),
@@ -31,7 +31,7 @@ class C extends g.Ay {
         let {
             channel: t
         } = this.props, l = _.A.getGuild(t.getGuildId());
-        null != l && (0, c.L3)(e, async () => {
+        null != l && (0, d.L3)(e, async () => {
             let {
                 default: e
             } = await n.e("15669").then(n.bind(n, 313140));
@@ -86,7 +86,7 @@ class C extends g.Ay {
         return r ? n(l(o)) : o
     }
 }
-let N = (0, d.a)(C),
+let N = (0, c.a)(C),
     T = l.memo(function(e) {
         let {
             channel: t,

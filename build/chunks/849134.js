@@ -1,6 +1,6 @@
 /** chunk id: 849134 params = (module,exports,require) **/
 n.d(t, {
-    A: () => d
+    A: () => c
 });
 var i = n(627968),
     l = n(64700),
@@ -8,13 +8,13 @@ var i = n(627968),
     a = n(486318),
     r = n(985018),
     o = n(766382),
-    c = n(585048);
+    d = n(585048);
 
-function d(e) {
+function c(e) {
     let {
         targetElementRef: t,
         onRender: n,
-        onRequestClose: d,
+        onRequestClose: c,
         onActionClick: u,
         onActionMouseDown: h,
         position: A = "right",
@@ -32,7 +32,7 @@ function d(e) {
     }, [n]);
     let E = l.useMemo(() => g?.imageUrl == null ? {
         type: "image",
-        src: c.A,
+        src: d.A,
         aspectRatio: "6/4"
     } : (0, a.e)({
         imageUrl: g?.imageUrl,
@@ -56,7 +56,7 @@ function d(e) {
             type: "new",
             variant: "default"
         },
-        onRequestClose: d,
+        onRequestClose: c,
         actions: [{
             text: r.intl.string(r.t.RzWDqY),
             variant: "primary",

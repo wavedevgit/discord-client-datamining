@@ -8,8 +8,8 @@ var i = n(73153),
     a = n(960736),
     r = n(253932),
     o = n(954571),
-    c = n(4274),
-    d = n(115063),
+    d = n(4274),
+    c = n(115063),
     u = n(652215);
 let h = {
     acceptInvite(e, t) {
@@ -32,20 +32,20 @@ let h = {
             if (null != e.guild) {
                 if (u) {
                     if (r.$s.getSetting().includes(e.guild.id)) {
-                        let t = new Set((0, d.Tb)());
+                        let t = new Set((0, c.Tb)());
                         t.delete(e.guild.id), r.$s.updateSetting(Array.from(t))
                     }
                 } else {
-                    let t = new Set((0, d.Tb)());
+                    let t = new Set((0, c.Tb)());
                     t.add(e.guild?.id), r.$s.updateSetting(Array.from(t))
                 }
                 if (h) {
                     if (r.JG.getSetting().includes(e.guild.id)) {
-                        let t = new Set((0, d.Kk)());
+                        let t = new Set((0, c.Kk)());
                         t.delete(e.guild.id), r.JG.updateSetting(Array.from(t))
                     }
                 } else {
-                    let t = new Set((0, d.Kk)());
+                    let t = new Set((0, c.Kk)());
                     t.add(e.guild.id), r.JG.updateSetting(Array.from(t))
                 }
                 null != o && o.length > 0 && (0, s.GL)(e.guild.id, {
@@ -56,7 +56,7 @@ let h = {
         }, e => {
             i.h.dispatch({
                 type: "INVITE_MODAL_ERROR",
-                message: (0, c.s)(e.code)
+                message: (0, d.s)(e.code)
             })
         })
     },

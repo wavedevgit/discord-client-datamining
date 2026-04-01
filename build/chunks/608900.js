@@ -8,8 +8,8 @@ var i = n(627968),
     a = n.n(s),
     r = n(835245),
     o = n(397927),
-    c = n(709562),
-    d = n(985018),
+    d = n(709562),
+    c = n(985018),
     u = n(212832);
 
 function h(e) {
@@ -71,9 +71,9 @@ function _(e) {
     } = e, u = l.useCallback(() => {
         r?.(), t()
     }, [r, t]);
-    return (0, i.jsx)(c.A, {
+    return (0, i.jsx)(d.A, {
         onClick: u,
-        label: n ? d.intl.string(d.t.gKGz7A) : d.intl.string(d.t.ImQ4dW),
+        label: n ? c.intl.string(c.t.gKGz7A) : c.intl.string(c.t.ImQ4dW),
         className: s,
         iconComponent: () => (0, i.jsx)(A, {
             numRequestToSpeak: a,

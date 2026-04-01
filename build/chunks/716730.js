@@ -8,8 +8,8 @@ var i = n(627968),
     a = n(311907),
     r = n(397927),
     o = n(315502),
-    c = n(709562),
-    d = n(222823),
+    d = n(709562),
+    c = n(222823),
     u = n(741961),
     h = n(234320),
     A = n(795816),
@@ -35,9 +35,9 @@ function x(e) {
             {
                 unreadCount: n,
                 mentionCount: i
-            } = (0, a.cf)([d.Ay], () => ({
-                unreadCount: d.Ay.getUnreadCount(e),
-                mentionCount: d.Ay.getMentionCount(e)
+            } = (0, a.cf)([c.Ay], () => ({
+                unreadCount: c.Ay.getUnreadCount(e),
+                mentionCount: c.Ay.getMentionCount(e)
             }), [e]);
         return {
             unreadCount: n,
@@ -61,7 +61,7 @@ function x(e) {
         R = j > 0;
     return (0, i.jsxs)("div", {
         className: f.iE,
-        children: [(0, i.jsx)(c.l, {
+        children: [(0, i.jsx)(d.l, {
             isTrayButton: !0,
             buttonRef: E,
             onClick: C,

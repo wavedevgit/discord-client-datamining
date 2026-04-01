@@ -1,6 +1,6 @@
 /** chunk id: 83942 params = (module,exports,require) **/
 n.d(t, {
-    c: () => c,
+    c: () => d,
     w: () => o
 });
 var i = n(311907),
@@ -20,7 +20,7 @@ function o(e) {
     })
 }
 
-function c() {
+function d() {
     return (0, i.bG)([s.A, l.default], () => {
         let e = s.A.getUserIds();
         return null == e || r(e, l.default.getId())

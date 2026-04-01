@@ -9,8 +9,8 @@ var l = n(827734),
     a = n(267102),
     r = n(993838),
     o = n(418208),
-    c = n(47868),
-    d = n(985018);
+    d = n(47868),
+    c = n(985018);
 
 function u(e) {
     let {
@@ -18,7 +18,7 @@ function u(e) {
         channel: n,
         highlight: u
     } = e, h = (0, a.Us)();
-    return (0, o.zU)() ? null : (0, i.jsx)(c.A, {
+    return (0, o.zU)() ? null : (0, i.jsx)(d.A, {
         highlight: u ?? !1,
         className: t,
         icon: (0, i.jsx)(s.qux, {
@@ -28,8 +28,8 @@ function u(e) {
             width: 20
         }),
         color: l.A.unsafe_rawColors.GREEN_360.css,
-        title: d.intl.string(d.t.OYbHfv),
-        description: d.intl.string(d.t.yXwLMQ),
+        title: c.intl.string(c.t.OYbHfv),
+        description: c.intl.string(c.t.yXwLMQ),
         onClick: function() {
             (0, r.tQ)(n, h)
         }

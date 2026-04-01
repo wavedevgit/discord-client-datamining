@@ -8,8 +8,8 @@ var i = n(627968),
     a = n(573435),
     r = n(427157),
     o = n(71393),
-    c = n(486020),
-    d = n(961291),
+    d = n(486020),
+    c = n(961291),
     u = n(552623);
 let h = e => {
         let {
@@ -33,7 +33,7 @@ let h = e => {
         } = e, n = null, l = !1, A = (0, s.bG)([o.A], () => o.A.getGuild(t.guild_id));
         if (null != t.icon_name) n = (0, i.jsx)("img", {
             alt: "",
-            src: d.rr[(0, d.yI)(t.icon_name)]
+            src: c.rr[(0, c.yI)(t.icon_name)]
         });
         else if (null != t.other_user) {
             let e = t.other_user instanceof r.A ? t.other_user : new r.A(t.other_user),
@@ -44,7 +44,7 @@ let h = e => {
                 src: e.getAvatarURL(void 0, 40)
             }), l = !0
         } else if (null != t.icon_url) {
-            let e = (null != A ? c.Ay.getGuildIconURL({
+            let e = (null != A ? d.Ay.getGuildIconURL({
                 id: A.id,
                 icon: A.icon,
                 size: 40
@@ -56,9 +56,9 @@ let h = e => {
             })
         } else n = (0, i.jsx)("img", {
             alt: "",
-            src: d.rr[(0, d.sW)(t)]
+            src: c.rr[(0, c.sW)(t)]
         });
-        let _ = (0, d.rS)(t.type);
+        let _ = (0, c.rS)(t.type);
         return (0, i.jsxs)("div", {
             className: u.kL,
             children: [(0, i.jsx)(a.Ay, {
@@ -71,7 +71,7 @@ let h = e => {
                 children: (0, i.jsx)("div", {
                     className: u.ZS,
                     style: l ? void 0 : {
-                        backgroundColor: (0, d.Pm)(t)
+                        backgroundColor: (0, c.Pm)(t)
                     },
                     children: n
                 })

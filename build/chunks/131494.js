@@ -8,8 +8,8 @@ var i = n(478437),
     a = n(933958),
     r = n(969151),
     o = n(297334),
-    c = n(508654),
-    d = n(233993),
+    d = n(508654),
+    c = n(233993),
     u = n(446600),
     h = n(95701),
     A = n(616356),
@@ -31,7 +31,7 @@ function T(e, t) {
 
 function S(e) {
     let t = (0, l.bG)([E.Ay], () => E.Ay.isMuted(e)),
-        n = (0, c.BP)(e),
+        n = (0, d.BP)(e),
         i = (0, l.yK)([a.Ay, f.A], () => a.Ay.getEmbeddedActivitiesForGuild(e).filter(e => !(0, o.PH)([...e.userIds], f.A.getBlockedOrIgnoredIDs()))),
         N = (0, r.H)(i[0]?.location),
         S = (0, s.Gp)(N),
@@ -64,14 +64,14 @@ function S(e) {
     return (0, l.cf)([x.A, m.A, a.Ay, u.A, A.A, p.A], () => {
         let l = x.A.getVoiceChannelId(),
             s = m.A.getChannel(l)?.guild_id === e,
-            c = !1,
+            d = !1,
             _ = !1,
             g = !1,
             f = !1,
             E = !1,
             I = !1;
         if (!s && t) return {
-            audio: c,
+            audio: d,
             video: f,
             screenshare: E,
             liveStage: g,
@@ -81,7 +81,7 @@ function S(e) {
         };
         let N = C.default.keys(u.A.getStageInstancesByGuild(e)).some(e => {
                 let t = m.A.getChannel(e);
-                return null != t && p.A.can(d.Gk, t)
+                return null != t && p.A.can(c.Gk, t)
             }),
             T = s && (m.A.getChannel(l)?.isGuildStageVoice() ?? !1),
             R = !!s && null != A.A.getActiveStreamForUser(j, e),
@@ -96,8 +96,8 @@ function S(e) {
                 return !1
             })(),
             D = a.Ay.getEmbeddedActivitiesForGuild(e).length > 0;
-        return s ? (c = !0, _ = n?.channel_id === l, g = T, f = L, E = R, I = D) : (c = b, _ = null != n, g = N, f = y, E = O, I = M), {
-            audio: c,
+        return s ? (d = !0, _ = n?.channel_id === l, g = T, f = L, E = R, I = D) : (d = b, _ = null != n, g = N, f = y, E = O, I = M), {
+            audio: d,
             video: f,
             screenshare: E,
             liveStage: g,

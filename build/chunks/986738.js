@@ -1,6 +1,6 @@
 /** chunk id: 986738 params = (module,exports,require) **/
 n.d(t, {
-    A: () => c
+    A: () => d
 });
 var i = n(627968);
 n(64700);
@@ -10,11 +10,11 @@ var l = n(827734),
     r = n(47868),
     o = n(985018);
 
-function c(e) {
+function d(e) {
     let {
         className: t,
-        guildId: c
-    } = e, d = (0, a.A)();
+        guildId: d
+    } = e, c = (0, a.A)();
     return (0, i.jsx)(r.A, {
         className: t,
         icon: (0, i.jsx)(s.CTc, {
@@ -33,9 +33,9 @@ function c(e) {
                 } = await Promise.all([n.e("68587"), n.e("51354"), n.e("342"), n.e("31578")]).then(n.bind(n, 21653));
                 return t => (0, i.jsx)(e, {
                     ...t,
-                    guildId: c
+                    guildId: d
                 })
-            }, d)
+            }, c)
         }
     })
 }

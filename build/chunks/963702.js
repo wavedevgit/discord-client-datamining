@@ -14,7 +14,7 @@ function o(e) {
         Icon: t,
         header: n,
         tip: o,
-        disableStars: c
+        disableStars: d
     } = e;
     return (0, i.jsxs)("div", {
         className: r.kL,
@@ -26,7 +26,7 @@ function o(e) {
                 className: r.Kk,
                 width: 36,
                 height: 36
-            }), c ? null : (0, i.jsx)(s.A, {
+            }), d ? null : (0, i.jsx)(s.A, {
                 className: r.uf
             })]
         }), (0, i.jsx)(l.Heading, {
@@ -36,7 +36,7 @@ function o(e) {
         }), (0, i.jsxs)(l.Text, {
             color: "text-default",
             variant: "text-xs/normal",
-            children: [c ? null : (0, i.jsxs)(l.Text, {
+            children: [d ? null : (0, i.jsxs)(l.Text, {
                 tag: "span",
                 className: r.PP,
                 variant: "text-xs/bold",

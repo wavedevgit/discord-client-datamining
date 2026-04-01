@@ -8,8 +8,8 @@ var i = n(627968),
     a = n(554146),
     r = n(192308),
     o = n(397927),
-    c = n(932001),
-    d = n(652793),
+    d = n(932001),
+    c = n(652793),
     u = n(361158),
     h = n(976860),
     A = n(186111),
@@ -24,7 +24,7 @@ let I = l.memo(function(e) {
     let {
         guildId: t,
         selected: n
-    } = e, I = (0, r.useHasAnyModalOpen)(), C = (0, s.bG)([A.A], () => A.A.hasLayers()), N = (0, u.xr)(e => e.fullScreenLayers.length > 0), [T, S] = (0, c.ww)([a.M.GAME_SERVER_HOSTING_NEW_BADGE], t), b = T === a.M.GAME_SERVER_HOSTING_NEW_BADGE, [y, v] = (0, c.ww)(I || C || N || !b ? [] : [a.M.GAME_SERVER_HOSTING_NEW_COACHMARK], t), j = l.useCallback(e => {
+    } = e, I = (0, r.useHasAnyModalOpen)(), C = (0, s.bG)([A.A], () => A.A.hasLayers()), N = (0, u.xr)(e => e.fullScreenLayers.length > 0), [T, S] = (0, d.ww)([a.M.GAME_SERVER_HOSTING_NEW_BADGE], t), b = T === a.M.GAME_SERVER_HOSTING_NEW_BADGE, [y, v] = (0, d.ww)(I || C || N || !b ? [] : [a.M.GAME_SERVER_HOSTING_NEW_COACHMARK], t), j = l.useCallback(e => {
         S(e), v(e)
     }, [S, v]), R = l.useCallback(() => {
         j(p.i.USER_DISMISS), (0, h.pX)(m.BVt.CHANNEL(t, g.VV.GAME_SERVERS))
@@ -34,7 +34,7 @@ let I = l.memo(function(e) {
         markAsDismissed: j
     }), [t, j]);
     return (0, i.jsxs)(i.Fragment, {
-        children: [(0, i.jsx)(d.G, {
+        children: [(0, i.jsx)(c.G, {
             ref: O,
             id: `game-server-${t}`,
             renderIcon: e => (0, i.jsx)(o._xR, {

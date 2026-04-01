@@ -9,8 +9,8 @@ var l = n(417597),
     a = n(827734),
     r = n(397927),
     o = n(966597),
-    c = n(85109),
-    d = n(566908),
+    d = n(85109),
+    c = n(566908),
     u = n(646468),
     h = n(790368),
     A = n(435084),
@@ -29,7 +29,7 @@ function p(e) {
         inInbox: p
     } = o.A.useConfig({
         location: "RecentsPopout"
-    }), x = (0, d.Sc)(), E = (0, l.bG)([c.A], () => c.A.getOverdueMessageReminderCount());
+    }), x = (0, c.Sc)(), E = (0, l.bG)([d.A], () => d.A.getOverdueMessageReminderCount());
     return (0, i.jsxs)("div", {
         className: g.wx,
         children: [(0, i.jsxs)("div", {

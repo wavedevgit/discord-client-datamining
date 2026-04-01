@@ -10,8 +10,8 @@ var i = n(774603),
     a = n(92960),
     r = n(739008),
     o = n(314519),
-    c = n(967497),
-    d = n(806964),
+    d = n(967497),
+    c = n(806964),
     u = n(552049),
     h = n(877991),
     A = n(904828),
@@ -57,13 +57,13 @@ let N = {
         [E.IWg.SEARCH_EMOJIS]: h.L,
         [E.IWg.TOGGLE_HOTKEYS]: f.z,
         [E.IWg.JUMP_TO_FIRST_UNREAD]: o.s,
-        [E.IWg.RETURN_TO_AUDIO_CHANNEL]: d.u,
+        [E.IWg.RETURN_TO_AUDIO_CHANNEL]: c.u,
         [E.IWg.CALL_ACCEPT]: i.Yo,
         [E.IWg.CALL_START]: i.OX,
-        [E.IWg.QUICKSWITCHER_SHOW]: c.R
+        [E.IWg.QUICKSWITCHER_SHOW]: d.R
     },
     T = {
-        [E.IWg.QUICKSWITCHER_SHOW]: c.R
+        [E.IWg.QUICKSWITCHER_SHOW]: d.R
     };
 
 function S() {

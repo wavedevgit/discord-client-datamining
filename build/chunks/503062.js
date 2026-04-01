@@ -3,47 +3,47 @@ n.d(t, {
     A: () => I
 });
 var i = n(627968),
-    l = n(64700),
-    a = n(311907),
+    a = n(64700),
+    l = n(311907),
     s = n(397927),
     r = n(442433),
     o = n(297413),
-    d = n(714114),
-    c = n(729551),
+    c = n(714114),
+    d = n(729551),
     u = n(178418),
-    g = n(87664),
-    m = n(290863),
+    m = n(87664),
+    g = n(290863),
     p = n(939496),
     x = n(652215),
     f = n(996988),
-    h = n(871670);
-let _ = s._3J.SIZE_40,
-    A = (0, s.FT9)(_);
+    _ = n(871670);
+let h = s._3J.SIZE_40,
+    A = (0, s.FT9)(h);
 
 function I(e) {
     let {
         user: t,
         status: I,
-        guildId: j,
-        channelId: E,
-        onSelect: v
+        guildId: v,
+        channelId: j,
+        onSelect: E
     } = e, {
         theme: T,
-        themeType: b
-    } = (0, p.E)(), C = l.useMemo(() => t.isNonUserBot() || (0, u.c)(t, E), [t, E]), {
-        activities: S,
-        isMobileOnline: N
-    } = (0, a.cf)([m.A], () => ({
-        activities: m.A.getActivities(t.id),
-        isMobileOnline: m.A.isMobileOnline(t.id)
-    })), y = (0, g.A)(t.id), {
+        themeType: N
+    } = (0, p.E)(), C = a.useMemo(() => t.isNonUserBot() || (0, u.c)(t, j), [t, j]), {
+        activities: b,
+        isMobileOnline: S
+    } = (0, l.cf)([g.A], () => ({
+        activities: g.A.getActivities(t.id),
+        isMobileOnline: g.A.isMobileOnline(t.id)
+    })), y = (0, m.A)(t.id), {
         voiceChannel: R
-    } = (0, d.A)({
+    } = (0, c.A)({
         userId: t.id,
-        guildId: j
+        guildId: v
     });
     return (0, i.jsxs)(s.DUT, {
-        focusProps: b === f.d.MODAL_V2 ? {
+        focusProps: N === f.d.MODAL_V2 ? {
             offset: {
                 top: 4,
                 right: 4,
@@ -54,8 +54,8 @@ function I(e) {
                 right: 8
             }
         },
-        className: h.nM,
-        onClick: v,
+        className: _.nM,
+        onClick: E,
         onContextMenu: e => {
             (0, r.L3)(e, async () => {
                 let {
@@ -68,22 +68,22 @@ function I(e) {
             })
         },
         children: [(0, i.jsx)(s.euF, {
-            src: t.getAvatarURL(j, A),
+            src: t.getAvatarURL(v, A),
             "aria-label": t.username,
-            size: _,
+            size: h,
             status: C ? x.clD.UNKNOWN : I,
             statusBackdropColor: C ? void 0 : (0, s.C$5)(T),
-            isMobile: N,
-            className: h.my
+            isMobile: S,
+            className: _.my
         }), (0, i.jsxs)("div", {
-            className: h.zH,
+            className: _.zH,
             children: [(0, i.jsx)(o.A, {
                 user: t,
-                className: h.Tc,
-                discriminatorClass: h.D2
-            }), (0, i.jsx)(c.A, {
+                className: _.Tc,
+                discriminatorClass: _.D2
+            }), (0, i.jsx)(d.A, {
                 user: t,
-                activities: S,
+                activities: b,
                 applicationStream: y,
                 voiceChannel: R
             })]

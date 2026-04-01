@@ -8,8 +8,8 @@ var i = n(627968),
     a = n(736653),
     r = n(793574),
     o = n(688810),
-    c = n(311016),
-    d = n(351966),
+    d = n(311016),
+    c = n(351966),
     u = n(713517),
     h = n(562153),
     A = n(183555),
@@ -35,7 +35,7 @@ function O(e) {
     let {
         user: t,
         channel: n
-    } = e, O = __OVERLAY__ || !(0, c.A)(t.id), L = (0, _.Ay)(t.id), M = (0, a.Ay)(), {
+    } = e, O = __OVERLAY__ || !(0, d.A)(t.id), L = (0, _.Ay)(t.id), M = (0, a.Ay)(), {
         analyticsLocations: D
     } = (0, o.Ay)(r.A.USER_PROFILE_SIDEBAR), U = (0, A.pb)({
         layout: "SIDEBAR",
@@ -117,7 +117,7 @@ function O(e) {
                     handleOpenProfile: w,
                     analyticsLocations: D,
                     context: U
-                }), L?.profileEffect != null && (0, i.jsx)(d.A, {
+                }), L?.profileEffect != null && (0, i.jsx)(c.A, {
                     skuId: L?.profileEffect?.skuId,
                     isHovering: k
                 })]

@@ -13,8 +13,8 @@ function o(e) {
         targetElementRef: t,
         onRender: n,
         onRequestClose: o,
-        onActionClick: c,
-        onActionMouseDown: d,
+        onActionClick: d,
+        onActionMouseDown: c,
         position: u = "right",
         align: h = "top",
         caretConfig: A = {
@@ -42,8 +42,8 @@ function o(e) {
         actions: [{
             text: a.intl.string(a.t.RzWDqY),
             variant: "primary",
-            onClick: c,
-            onMouseDown: d
+            onClick: d,
+            onMouseDown: c
         }],
         targetElementRef: t,
         title: a.intl.format(a.t.TpuAkN, {

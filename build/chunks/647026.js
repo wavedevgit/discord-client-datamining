@@ -9,8 +9,8 @@ var l = n(397927),
     a = n(226694),
     r = n(985018),
     o = n(46570),
-    c = n(624042),
-    d = n(578576);
+    d = n(624042),
+    c = n(578576);
 let u = e => {
     let t, {
         searchQuery: n,
@@ -38,20 +38,20 @@ let u = e => {
             }
         }) : r.intl.string(r.t.vYyEnv);
         t = (0, i.jsxs)("div", {
-            className: c.Je,
+            className: d.Je,
             children: [(0, i.jsx)("img", {
-                className: c.Tc,
+                className: d.Tc,
                 alt: "",
-                src: d
+                src: c
             }), (0, i.jsx)(l.Heading, {
                 variant: "heading-xl/semibold",
                 color: "text-strong",
-                className: c.gR,
+                className: d.gR,
                 children: r.intl.string(r.t["6HXiuE"])
             }), (0, i.jsx)(l.Text, {
                 variant: "text-md/normal",
                 color: "text-default",
-                className: c.av,
+                className: d.av,
                 children: e
             })]
         })
@@ -66,18 +66,18 @@ let u = e => {
         children: (0, i.jsxs)(l.ArX, {
             className: o.XG,
             children: [(0, i.jsxs)("div", {
-                className: c.wL,
+                className: d.wL,
                 children: [(0, i.jsxs)("div", {
-                    className: c.Dr,
+                    className: d.Dr,
                     children: [(0, i.jsx)(l.DUT, {
                         onClick: A,
-                        className: c.UE,
+                        className: d.UE,
                         children: (0, i.jsx)(s.A, {
                             direction: s.A.Directions.LEFT
                         })
                     }), (0, i.jsx)(l.Heading, {
                         variant: "heading-xl/semibold",
-                        className: c.s7,
+                        className: d.s7,
                         children: r.intl.format(r.t.UkOHRd, {
                             numResults: g.length,
                             query: h

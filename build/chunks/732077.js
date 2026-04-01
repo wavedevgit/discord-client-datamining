@@ -8,8 +8,8 @@ var i = n(627968),
     a = n.n(s),
     r = n(311907),
     o = n(397927),
-    c = n(734057),
-    d = n(607567),
+    d = n(734057),
+    c = n(607567),
     u = n(403362),
     h = n(108197),
     A = n(985018),
@@ -23,10 +23,10 @@ let m = l.memo(function(e) {
         withGuildIcon: m
     } = e, {
         density: g
-    } = (0, o.wRf)(), p = (0, r.yK)([c.A], () => s.map(e => c.A.getChannel(e)).filter(u.Vq), [s]), f = (0, r.bG)([d.Ay], () => {
+    } = (0, o.wRf)(), p = (0, r.yK)([d.A], () => s.map(e => d.A.getChannel(e)).filter(u.Vq), [s]), f = (0, r.bG)([c.Ay], () => {
         let e = p[p.length - 1];
         if (null == e) return 0;
-        let t = d.Ay.getVoiceStates(e.guild_id)[e.id];
+        let t = c.Ay.getVoiceStates(e.guild_id)[e.id];
         return null == t || 0 === t.length ? 0 : l !== e.id ? 40 : 32 * t.length + 8
     });
     return (0, i.jsx)("li", {

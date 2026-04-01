@@ -8,8 +8,8 @@ var i = n(627968),
     a = n.n(s),
     r = n(735438),
     o = n.n(r),
-    c = n(837381),
-    d = n(884362),
+    d = n(837381),
+    c = n(884362),
     u = n(607399),
     h = n(311907),
     A = n(397927),
@@ -52,7 +52,7 @@ let W = w.Ay.getEnableHardwareAcceleration(),
             sectionId: s,
             userId: a,
             guildOwnerId: r
-        } = e, o = l.useRef(null), d = (0, h.bG)([L.A], () => L.A.isTyping(t.id, a)), A = (0, h.bG)([v.Ay], () => v.Ay.getMember(t.guild_id, a)), g = (0, h.bG)([j.A], () => A?.colorRoleId != null ? j.A.getRole(t.guild_id, A.colorRoleId)?.name : void 0, [t.guild_id, A]), p = (0, h.bG)([M.default], () => M.default.getUser(a)), f = (0, h.bG)([M.default], () => M.default.getCurrentUser()), E = p?.id === f?.id, C = (0, h.bG)([R.A, O.A], () => E ? O.A.getStatus() : R.A.getStatus(a, t.guild_id)), N = (0, h.bG)([R.A], () => R.A.isMobileOnline(a)), T = (0, h.bG)([R.A, O.A], () => E ? O.A.getActivities() : R.A.getActivities(a, t.guild_id)), D = (0, h.bG)([y.A], () => y.A.getAnyStreamForUser(a)), U = (0, c.rm)(a), P = (0, h.bG)([S.A], () => S.A.canUserViewChannel(t.id, s, a)), w = p?.id != null && p.id === r, F = l.useCallback(e => {
+        } = e, o = l.useRef(null), c = (0, h.bG)([L.A], () => L.A.isTyping(t.id, a)), A = (0, h.bG)([v.Ay], () => v.Ay.getMember(t.guild_id, a)), g = (0, h.bG)([j.A], () => A?.colorRoleId != null ? j.A.getRole(t.guild_id, A.colorRoleId)?.name : void 0, [t.guild_id, A]), p = (0, h.bG)([M.default], () => M.default.getUser(a)), f = (0, h.bG)([M.default], () => M.default.getCurrentUser()), E = p?.id === f?.id, C = (0, h.bG)([R.A, O.A], () => E ? O.A.getStatus() : R.A.getStatus(a, t.guild_id)), N = (0, h.bG)([R.A], () => R.A.isMobileOnline(a)), T = (0, h.bG)([R.A, O.A], () => E ? O.A.getActivities() : R.A.getActivities(a, t.guild_id)), D = (0, h.bG)([y.A], () => y.A.getAnyStreamForUser(a)), U = (0, d.rm)(a), P = (0, h.bG)([S.A], () => S.A.canUserViewChannel(t.id, s, a)), w = p?.id != null && p.id === r, F = l.useCallback(e => {
             null != p && (0, _.L3)(e, async () => {
                 let {
                     default: e
@@ -116,7 +116,7 @@ let W = w.Ay.getEnableHardwareAcceleration(),
                     colorString: A?.colorString,
                     colorStrings: A?.colorStrings,
                     colorRoleName: g,
-                    isTyping: d,
+                    isTyping: c,
                     channel: t,
                     guildId: t.guild_id,
                     isMobile: N,
@@ -240,7 +240,7 @@ function J(e) {
                 }
             })
         }), []), {
-            navigator: (0, d.Ay)({
+            navigator: (0, c.Ay)({
                 id: t,
                 setFocus: u,
                 isEnabled: s,
@@ -263,7 +263,7 @@ function J(e) {
         R = P.wT(E);
     return (0, i.jsx)(f.f5, {
         value: C,
-        children: (0, i.jsx)(c.hD, {
+        children: (0, i.jsx)(d.hD, {
             navigator: b,
             children: (0, i.jsx)(A.skg, {
                 children: e => (0, i.jsx)("div", {

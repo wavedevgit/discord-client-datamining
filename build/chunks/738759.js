@@ -20,16 +20,16 @@ function _(e) {
     } = e, {
         trackUserProfileAction: _
     } = (0, l.NJ)(), {
-        mutualGuilds: A,
-        isFetching: p
+        mutualGuilds: p,
+        isFetching: x
     } = (0, o.A)(n);
     return (0, i.jsx)(a.IpV, {
         className: u.DK,
         fade: !0,
-        children: null == A && p ? (0, i.jsx)("div", {
+        children: null == p && x ? (0, i.jsx)("div", {
             className: u.Ie,
             children: (0, i.jsx)(a.y$y, {})
-        }) : (null != A || p) && A?.length !== 0 ? A?.map(e => {
+        }) : (null != p || x) && p?.length !== 0 ? p?.map(e => {
             let {
                 guild: a,
                 nick: l

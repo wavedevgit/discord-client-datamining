@@ -1,7 +1,7 @@
 /** chunk id: 717607 params = (module,exports,require) **/
 n.d(t, {
     A: () => u,
-    R: () => d
+    R: () => c
 });
 var i = n(627968),
     l = n(64700),
@@ -9,9 +9,9 @@ var i = n(627968),
     a = n(308528),
     r = n(607272),
     o = n(985018),
-    c = n(616999);
+    d = n(616999);
 
-function d(e) {
+function c(e) {
     let {
         userId: t
     } = e, n = l.useCallback(e => {
@@ -20,7 +20,7 @@ function d(e) {
         })
     }, [t]);
     return (0, i.jsx)("div", {
-        className: c.Ze,
+        className: d.Ze,
         children: (0, i.jsx)(s.e2v, {
             size: "sm",
             children: (0, i.jsx)(s.$nd, {
@@ -36,7 +36,7 @@ function u(e) {
     let {
         userId: t,
         applicationId: n
-    } = e, [a, d] = l.useState(!1), [u, h] = l.useState(!1), A = l.useCallback(async e => {
+    } = e, [a, c] = l.useState(!1), [u, h] = l.useState(!1), A = l.useCallback(async e => {
         e.stopPropagation(), h(!0);
         try {
             await r.A.cancelFriendRequest({
@@ -48,7 +48,7 @@ function u(e) {
             h(!1)
         }
     }, [n, t]), _ = l.useCallback(async e => {
-        e.stopPropagation(), d(!0);
+        e.stopPropagation(), c(!0);
         try {
             await r.A.maybeConfirmFriendRequestAccept({
                 userId: t,
@@ -56,11 +56,11 @@ function u(e) {
                 location: "ActionButtonFriendRequest"
             })
         } finally {
-            d(!1)
+            c(!1)
         }
     }, [n, t]);
     return (0, i.jsx)("div", {
-        className: c.Ze,
+        className: d.Ze,
         children: (0, i.jsxs)(s.e2v, {
             size: "sm",
             children: [(0, i.jsx)(s.$nd, {

@@ -13,9 +13,9 @@ var a = t(311907),
     c = t(351906),
     u = t(183555),
     _ = t(346713),
-    A = t(484509),
-    p = t(389996),
-    x = t(46937),
+    p = t(484509),
+    x = t(389996),
+    A = t(46937),
     f = t(361311),
     m = t(743987),
     g = t(900179),
@@ -32,13 +32,13 @@ function C(e) {
         onClose: C
     } = e, {
         trackUserProfileAction: N
-    } = (0, u.NJ)(), E = (0, a.bG)([d.A], () => d.A.getGuildId()), y = (0, r.q)({
+    } = (0, u.NJ)(), y = (0, a.bG)([d.A], () => d.A.getGuildId()), E = (0, r.q)({
         userId: n.id
-    }), T = (0, a.bG)([c.A], () => c.A.hidePersonalInformation), L = (0, a.bG)([o.default], () => o.default.locale), P = (0, A.A)(n.id), O = (0, _.A)(n.id);
+    }), T = (0, a.bG)([c.A], () => c.A.hidePersonalInformation), L = (0, a.bG)([o.default], () => o.default.locale), P = (0, p.A)(n.id), O = (0, _.A)(n.id);
     return (0, i.jsxs)(s.IpV, {
         fade: !0,
         className: v.XG,
-        children: [t?.bio != null && t?.bio !== "" && !T && (0, i.jsx)(p.A, {
+        children: [t?.bio != null && t?.bio !== "" && !T && (0, i.jsx)(x.A, {
             userBio: t.bio,
             setLineClamp: !1
         }), t?.guildId != null && (0, i.jsx)(I.A, {
@@ -54,10 +54,10 @@ function C(e) {
             children: (0, i.jsx)(l.T, {
                 userId: n.id
             })
-        }), y.length > 0 && (0, i.jsx)(g.A, {
+        }), E.length > 0 && (0, i.jsx)(g.A, {
             heading: j.intl.string(j.t["Uv/eTx"]),
             children: (0, i.jsx)(f.A, {
-                applicationIds: y
+                applicationIds: E
             })
         }), (0, i.jsx)(g.A, {
             heading: j.intl.string(j.t.a6XYD9),
@@ -69,7 +69,7 @@ function C(e) {
         }), P.length > 0 && (0, i.jsx)(g.A, {
             heading: j.intl.string(j.t["3fe7U5"]),
             scrollTargetId: b.bk.CONNECTIONS,
-            children: (0, i.jsx)(x.Ay, {
+            children: (0, i.jsx)(A.Ay, {
                 connectedAccounts: P,
                 className: v.oQ,
                 userId: n.id,
@@ -77,7 +77,7 @@ function C(e) {
             })
         }), O.length > 0 && (0, i.jsx)(g.A, {
             heading: j.intl.string(j.t.PHjkRE),
-            children: O.map(e => (0, i.jsx)(x.Wc, {
+            children: O.map(e => (0, i.jsx)(A.Wc, {
                 className: v.MI,
                 applicationRoleConnection: e,
                 locale: L,
@@ -86,7 +86,7 @@ function C(e) {
                         action: "PRESS_APP_CONNECTION"
                     }), C()
                 },
-                selectedGuildId: E ?? void 0
+                selectedGuildId: y ?? void 0
             }, e.application.id))
         }), (0, i.jsx)(h.A, {
             userId: n.id

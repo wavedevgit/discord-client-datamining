@@ -9,8 +9,8 @@ var l = n(503698),
     a = n(837381),
     r = n(311907),
     o = n(827734),
-    c = n(435371),
-    d = n(397927),
+    d = n(435371),
+    c = n(397927),
     u = n(397244),
     h = n(714114),
     A = n(729551),
@@ -43,9 +43,9 @@ function O(e) {
         toggle: n,
         getNumUnreadChannels: l
     } = e;
-    return (0, i.jsx)(c.m_, {
+    return (0, i.jsx)(d.m_, {
         text: v.intl.string(v.t.iTcuma),
-        children: (0, i.jsx)(d.DUT, {
+        children: (0, i.jsx)(c.DUT, {
             className: s()(j.cS, {
                 [j.yZ]: t?.collapsed
             }),
@@ -72,11 +72,11 @@ function L(e) {
         gotoChannel: l,
         mentionCount: r,
         channelState: o,
-        toggleCollapsed: c,
+        toggleCollapsed: d,
         showCollapseButton: u = !1,
         getNumUnreadChannels: h
     } = e, A = (0, a.rm)(`recents-header-${t.id}-${(0,f.GV)()}`), _ = u && !t.isNSFW() && null != o && "nsfw" !== o.type;
-    return (0, i.jsx)(d.vN3, {
+    return (0, i.jsx)(c.vN3, {
         offset: R,
         children: (0, i.jsxs)("div", {
             className: s()(j.ZO, {
@@ -86,11 +86,11 @@ function L(e) {
             tabIndex: 0,
             "data-recents-channel": t.id,
             onKeyDown: function(e) {
-                null != c && null != o && ("ArrowRight" === e.key && o.collapsed || "ArrowLeft" === e.key && !o.collapsed) && c?.(o)
+                null != d && null != o && ("ArrowRight" === e.key && o.collapsed || "ArrowLeft" === e.key && !o.collapsed) && d?.(o)
             },
             children: [_ && null != o ? (0, i.jsx)(O, {
                 channelState: o,
-                toggle: c,
+                toggle: d,
                 getNumUnreadChannels: h
             }) : null, (0, i.jsx)(M, {
                 channel: t,
@@ -123,7 +123,7 @@ function D(e) {
         channel: t,
         gotoChannel: n
     } = e, l = (0, r.bG)([S.default], () => t.isDM() ? S.default.getUser(t.getRecipientId()) : null), s = null == l ? (0, m.Y)(t) : l.getAvatarURL(void 0, 40);
-    return (0, i.jsx)(d.DUT, {
+    return (0, i.jsx)(c.DUT, {
         onClick: n,
         tabIndex: -1,
         children: (0, i.jsx)("img", {
@@ -156,21 +156,21 @@ function G(e) {
         channel: t,
         gotoChannel: n,
         mentionCount: l
-    } = e, a = (0, r.bG)([C.A], () => C.A.getGuild(t.guild_id)), c = (0, r.bG)([I.A], () => I.A.getChannel(t.parent_id)), u = (0, r.bG)([T.Ay], () => T.Ay.getIsMentionLowImportance(t.id)), h = (0, p.gU)(t, a), A = (0, g.Ay)(t, !1), _ = null == c ? a?.name : `${a?.name} › ${c.name}`, m = t.isMultiUserDM() ? v.intl.formatToPlainString(v.t.CxSA5N, {
+    } = e, a = (0, r.bG)([C.A], () => C.A.getGuild(t.guild_id)), d = (0, r.bG)([I.A], () => I.A.getChannel(t.parent_id)), u = (0, r.bG)([T.Ay], () => T.Ay.getIsMentionLowImportance(t.id)), h = (0, p.gU)(t, a), A = (0, g.Ay)(t, !1), _ = null == d ? a?.name : `${a?.name} › ${d.name}`, m = t.isMultiUserDM() ? v.intl.formatToPlainString(v.t.CxSA5N, {
         members: t.recipients.length + 1
     }) : t.isPrivate() ? (0, i.jsx)(P, {
         channel: t
-    }) : (0, i.jsx)(d.DUT, {
+    }) : (0, i.jsx)(c.DUT, {
         className: s()(j.W$, j.J5),
         onClick: n,
         children: _
     });
     return (0, i.jsxs)("div", {
         className: j.yP,
-        children: [(0, i.jsx)(d.Heading, {
+        children: [(0, i.jsx)(c.Heading, {
             variant: "heading-md/semibold",
             className: j.un,
-            children: (0, i.jsxs)(d.DUT, {
+            children: (0, i.jsxs)(c.DUT, {
                 className: j.HA,
                 onClick: n,
                 children: [t.isThread() || t.isGroupDM() || null == h ? null : (0, i.jsx)(h, {
@@ -184,13 +184,13 @@ function G(e) {
                     children: A
                 }), null != l && l > 0 ? (0, i.jsx)("div", {
                     className: j.qS,
-                    children: (0, i.jsx)(d.hVq, {
+                    children: (0, i.jsx)(c.hVq, {
                         count: l,
                         color: u ? o.A.colors.BACKGROUND_MOD_STRONG.css : o.A.colors.BACKGROUND_FEEDBACK_NOTIFICATION.css
                     })
                 }) : null]
             })
-        }), (0, i.jsx)(d.Text, {
+        }), (0, i.jsx)(c.Text, {
             color: "text-default",
             variant: "text-xs/normal",
             className: j.PL,

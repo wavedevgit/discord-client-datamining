@@ -1,6 +1,6 @@
 /** chunk id: 359656 params = (module,exports,require) **/
 n.d(t, {
-    A: () => d
+    A: () => c
 });
 var i = n(627968),
     l = n(64700),
@@ -8,22 +8,22 @@ var i = n(627968),
     a = n.n(s),
     r = n(397927),
     o = n(183555),
-    c = n(266348);
+    d = n(266348);
 
-function d(e) {
+function c(e) {
     let {
         section: t,
         header: n,
         items: s,
-        listClassName: d,
+        listClassName: c,
         onExpand: u
     } = e, {
         trackUserProfileAction: h
     } = (0, o.NJ)(), A = l.useId(), [_, m] = l.useState(!1), g = _ ? r.abt : r._BQ;
     return (0, i.jsxs)("section", {
-        className: c.uW,
+        className: d.uW,
         children: [(0, i.jsxs)(r.DUT, {
-            className: a()(c.wx, c.vk),
+            className: a()(d.wx, d.vk),
             "aria-controls": A,
             "aria-expanded": _,
             onClick: () => {
@@ -42,7 +42,7 @@ function d(e) {
         }), s.length > 0 && (0, i.jsx)("ul", {
             id: A,
             hidden: !_,
-            className: a()(c.p_, d),
+            className: a()(d.p_, c),
             children: s
         })]
     })

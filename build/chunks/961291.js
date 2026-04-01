@@ -12,8 +12,8 @@ var i = n(827734),
     a = n(289876),
     r = n(31687),
     o = n(441955),
-    c = n(271764),
-    d = n(790018),
+    d = n(271764),
+    c = n(790018),
     u = n(338943),
     h = n(478772),
     A = n(846500),
@@ -24,7 +24,7 @@ var i = n(827734),
 let f = {
         MISSED_MESSAGES: _,
         FRIEND_REQUEST_REMINDER: u,
-        SCHEDULED_GUILD_EVENT: c,
+        SCHEDULED_GUILD_EVENT: d,
         TOP_MESSAGES: A,
         NOTIFICATION_CENTER: r,
         UPDATE_PROFILE: n(566213),
@@ -75,7 +75,7 @@ let f = {
             case l.hW.FRIEND_REQUEST_PENDING:
             case l.hW.FRIEND_SUGGESTION_CREATED:
                 return {
-                    icon: d, color: i.A.colors.BACKGROUND_MOD_STRONG
+                    icon: c, color: i.A.colors.BACKGROUND_MOD_STRONG
                 };
             case l.hW.DM_FRIEND_NUDGE:
                 return {
@@ -84,7 +84,7 @@ let f = {
             case l.Uo.INCOMING_FRIEND_REQUESTS:
             case l.Uo.INCOMING_FRIEND_REQUESTS_ACCEPTED:
                 return {
-                    icon: d, color: i.A.colors.BACKGROUND_MOD_STRONG
+                    icon: c, color: i.A.colors.BACKGROUND_MOD_STRONG
                 };
             case l.Uo.INCOMING_GAME_FRIEND_REQUESTS:
             case l.Uo.INCOMING_GAME_FRIEND_REQUESTS_ACCEPTED:

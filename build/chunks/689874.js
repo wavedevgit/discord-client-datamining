@@ -8,8 +8,8 @@ var i = n(627968),
     a = n(990078),
     r = n(397927),
     o = n(313961),
-    c = n(15285),
-    d = n(616356),
+    d = n(15285),
+    c = n(616356),
     u = n(274372),
     h = n(572164),
     A = n(806931),
@@ -19,10 +19,10 @@ let g = e => {
     let {
         channelId: t
     } = e;
-    return (0, l.bG)([d.A, o.A, u.A, c.Ay], () => {
+    return (0, l.bG)([c.A, o.A, u.A, d.Ay], () => {
         if (null == t) return !1;
-        let e = d.A.getCurrentUserActiveStream(),
-            n = c.Ay.getVisibleGame()?.windowHandle;
+        let e = c.A.getCurrentUserActiveStream(),
+            n = d.Ay.getVisibleGame()?.windowHandle;
         return !!(null != e && (0, h.TD)() || null != n && (0, h.Ao)()) || o.A.getParticipants(t).some(e => e.type === A.lp.USER && u.A.isClipsEnabledForUser(e.user.id))
     }) ? (0, i.jsx)(a.m, {
         text: _.intl.string(_.t.DJXW3G),

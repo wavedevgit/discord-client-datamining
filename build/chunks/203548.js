@@ -8,8 +8,8 @@ var i = n(627968),
     a = n(397927),
     r = n(770178),
     o = n(727528);
-let c = Math.ceil(Math.sqrt(115200)),
-    d = (c - 240) / 2,
+let d = Math.ceil(Math.sqrt(115200)),
+    c = (d - 240) / 2,
     u = l.forwardRef(function(e, t) {
         let {
             children: n
@@ -43,7 +43,7 @@ let c = Math.ceil(Math.sqrt(115200)),
             let e = (0, i.jsx)(s.animated.div, {
                 className: o.q2,
                 style: {
-                    transform: m.to(e => `translateX(calc(${e*u}px + ${e*c}px)) translateY(-50%) rotate(45deg)`)
+                    transform: m.to(e => `translateX(calc(${e*u}px + ${e*d}px)) translateY(-50%) rotate(45deg)`)
                 }
             });
             return n(o.VU, o.Qq, o.Kk, e)
@@ -60,7 +60,7 @@ let c = Math.ceil(Math.sqrt(115200)),
             ref: _,
             style: {
                 "--custom-shine-dimensions": "240px",
-                "--custom-shine-rotated-dimensions-delta": `${d}px`
+                "--custom-shine-rotated-dimensions-delta": `${c}px`
             },
             children: x
         })

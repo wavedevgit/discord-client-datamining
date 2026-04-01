@@ -3,16 +3,16 @@ n.d(t, {
     A: () => f
 });
 var i = n(627968),
-    l = n(64700),
-    a = n(688807),
+    a = n(64700),
+    l = n(688807),
     s = n(311907),
     r = n(397927),
     o = n(178213),
-    d = n(86638),
-    c = n(287809),
+    c = n(86638),
+    d = n(287809),
     u = n(788593),
-    g = n(742710),
-    m = n(463259),
+    m = n(742710),
+    g = n(463259),
     p = n(18983),
     x = n(214456);
 
@@ -21,41 +21,41 @@ function f(e) {
         scrollerRef: t
     } = e, n = (0, o.GG)("user_profile_drag_preview_layer"), {
         isDragging: f,
-        item: h,
-        sourceClientOffset: _
-    } = (0, a.V)(e => ({
+        item: _,
+        sourceClientOffset: h
+    } = (0, l.V)(e => ({
         isDragging: e.isDragging(),
         item: e.getItem(),
         sourceClientOffset: e.getSourceClientOffset()
-    })), A = (0, s.bG)([c.default], () => c.default.getCurrentUser()), I = (0, r.VUy)(), j = l.useMemo(() => null == A || null == h ? null : function(e, t, n) {
+    })), A = (0, s.bG)([d.default], () => d.default.getCurrentUser()), I = (0, r.VUy)(), v = a.useMemo(() => null == A || null == _ ? null : function(e, t, n) {
         let {
-            id: l,
-            itemType: a,
+            id: a,
+            itemType: l,
             itemPreviewProps: s
         } = e;
-        if ("WIDGET" === a && s?.widget != null) {
+        if ("WIDGET" === l && s?.widget != null) {
             let {
                 widget: e,
                 getWidth: n
-            } = s, l = n?.() ?? 432;
+            } = s, a = n?.() ?? 432;
             return (0, i.jsx)("div", {
                 className: x.dt,
                 style: {
-                    width: l
+                    width: a
                 },
-                children: (0, i.jsx)(m.u, {
+                children: (0, i.jsx)(g.u, {
                     widget: e,
                     user: t,
                     disableInteraction: !0
                 })
             })
         }
-        if ("GAME_COVER" === a && s?.gameName != null) {
+        if ("GAME_COVER" === l && s?.gameName != null) {
             let {
                 imageSrc: e,
                 gameName: n,
-                getWidth: a
-            } = s, r = a?.() ?? 90;
+                getWidth: l
+            } = s, r = l?.() ?? 90;
             return (0, i.jsx)("div", {
                 style: {
                     width: r
@@ -64,24 +64,24 @@ function f(e) {
                     className: x.XJ,
                     imageSrc: e,
                     gameName: n,
-                    applicationId: l,
+                    applicationId: a,
                     userId: t?.id,
                     disableInteraction: !0
                 })
             })
         }
-        if ("GAME_DETAILS_CARD" === a && s?.game != null && s?.widgetType != null) {
+        if ("GAME_DETAILS_CARD" === l && s?.game != null && s?.widgetType != null) {
             let {
                 game: e,
                 widgetType: n,
-                getWidth: l
-            } = s, a = l?.() ?? 400;
+                getWidth: a
+            } = s, l = a?.() ?? 400;
             return (0, i.jsx)("div", {
                 className: x.xB,
                 style: {
-                    width: a
+                    width: l
                 },
-                children: (0, i.jsx)(g.A, {
+                children: (0, i.jsx)(m.A, {
                     user: t,
                     widgetType: n,
                     game: e,
@@ -89,13 +89,13 @@ function f(e) {
                 })
             })
         }
-        if ("WISHLIST_ITEM" === a && s?.item != null) {
+        if ("WISHLIST_ITEM" === l && s?.item != null) {
             let {
                 item: e
             } = s;
             return (0, i.jsx)("div", {
                 className: x.Xm,
-                children: n ? (0, i.jsx)(d.A, {
+                children: n ? (0, i.jsx)(c.A, {
                     item: e,
                     wishlistOwner: t,
                     wishlistId: null,
@@ -112,34 +112,34 @@ function f(e) {
             })
         }
         return null
-    }(h, A, n), [h, A, n]), E = l.useRef(null), v = l.useCallback(() => {
+    }(_, A, n), [_, A, n]), j = a.useRef(null), E = a.useCallback(() => {
         if (null == t.current) return;
         let e = t.current.getBoundingClientRect();
-        E.current = {
+        j.current = {
             x: e.left,
             y: e.top
         }
     }, [t]);
-    if (l.useEffect(() => {
+    if (a.useEffect(() => {
             if (!f) {
-                E.current = null;
+                j.current = null;
                 return
             }
-            null == E.current && v()
-        }, [f, v]), !0 !== f || null == _ || null == j) return null;
-    null == E.current && v();
+            null == j.current && E()
+        }, [f, E]), !0 !== f || null == h || null == v) return null;
+    null == j.current && E();
     let {
         x: T,
-        y: b
-    } = E.current ?? {
+        y: N
+    } = j.current ?? {
         x: 0,
         y: 0
-    }, C = _.x - T - 60 * !!I, S = _.y - b;
+    }, C = h.x - T - 60 * !!I, b = h.y - N;
     return (0, i.jsx)("div", {
         className: x.kL,
         style: {
-            transform: `translate3d(${C}px, ${S}px, 0)`
+            transform: `translate3d(${C}px, ${b}px, 0)`
         },
-        children: j
+        children: v
     })
 }

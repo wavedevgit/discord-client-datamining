@@ -9,8 +9,8 @@ var i = n(627968),
     a = n.n(s),
     r = n(141628),
     o = n(311907),
-    c = n(554146),
-    d = n(342494),
+    d = n(554146),
+    c = n(342494),
     u = n(397927),
     h = n(298990),
     A = n(942857),
@@ -54,7 +54,7 @@ let Y = l.memo(function(e) {
             stream: t,
             canGoLive: s,
             guildId: r,
-            isStreaming: c,
+            isStreaming: d,
             channel: A,
             canStream: m,
             runningGame: p,
@@ -76,9 +76,9 @@ let Y = l.memo(function(e) {
             enabled: ea
         } = v._.useConfig({
             location: "activity-panel"
-        }), er = (0, j.Bp)("activity-panel"), eo = (0, y.C$)(r ?? void 0, "activity-panel"), ec = (0, o.bG)([G.A], () => G.A.hasConsented(B.YAq.PERSONALIZATION)), ed = (0, j.TF)(p?.id, {
+        }), er = (0, j.Bp)("activity-panel"), eo = (0, y.C$)(r ?? void 0, "activity-panel"), ed = (0, o.bG)([G.A], () => G.A.hasConsented(B.YAq.PERSONALIZATION)), ec = (0, j.TF)(p?.id, {
             shouldFetch: er || eo
-        }), eu = ea && ec && ed, eh = eu && er, eA = eu && eo, e_ = l.useCallback(() => {
+        }), eu = ea && ed && ec, eh = eu && er, eA = eu && eo, e_ = l.useCallback(() => {
             a()(null != M, "Received null activity"), k.default.track(B.HAw.ACTIVITY_PANEL_BUTTON_CLICKED, {
                 action_type: "invite_to_game",
                 game_id: p?.id ?? null,
@@ -198,9 +198,9 @@ let Y = l.memo(function(e) {
             }) : null,
             ey = function() {
                 let e, t, n;
-                if (null == p && null != C && !(0, _.f)() || !c && !s) return null;
+                if (null == p && null != C && !(0, _.f)() || !d && !s) return null;
                 let l = null;
-                return c ? (e = !1, t = () => {
+                return d ? (e = !1, t = () => {
                     ep(), (0, E.X)(en, E.O.STREAM, !1)
                 }, n = u.GT3, l = H.intl.string(H.t.S5anIc)) : m ? (e = !1, t = () => {
                     ef(), (0, E.X)(en, E.O.STREAM, !0)
@@ -245,7 +245,7 @@ let Y = l.memo(function(e) {
                 connectionApp: et,
                 ref: Q
             }),
-            eM = !Z || ee ? null : (0, i.jsx)(d.AM, {
+            eM = !Z || ee ? null : (0, i.jsx)(c.AM, {
                 title: H.intl.string(H.t.ULvRFd),
                 body: H.intl.string(H.t["HJJDr+"]),
                 targetElementRef: Q,
@@ -294,13 +294,13 @@ function q(e) {
     l.useEffect(() => {
         o.current || (o.current = !0, s())
     }, [s]);
-    let d = (0, A.A)(),
+    let c = (0, A.A)(),
         {
             isQuestBarEmpty: h,
             hasLoadedQuestBar: _
         } = (0, O.c9)(),
-        [m, g] = (0, C.kn)(!d && h && _ ? [c.M.GAME_DETECTION_CREATE_GAME_SERVER_COACHMARK] : [], void 0, !0),
-        [f, x] = (0, C.kn)([c.M.GAME_SERVER_GAME_DETECTION_UPSELL_NEW_BADGE], void 0, !0),
+        [m, g] = (0, C.kn)(!c && h && _ ? [d.M.GAME_DETECTION_CREATE_GAME_SERVER_COACHMARK] : [], void 0, !0),
+        [f, x] = (0, C.kn)([d.M.GAME_SERVER_GAME_DETECTION_UPSELL_NEW_BADGE], void 0, !0),
         E = l.useCallback(() => {
             g(V.i.TAKE_ACTION), x(V.i.TAKE_ACTION), n()
         }, [g, x, n]);
@@ -317,7 +317,7 @@ function q(e) {
                 tooltipText: t,
                 onClick: E,
                 icon: u._xR
-            }), f === c.M.GAME_SERVER_GAME_DETECTION_UPSELL_NEW_BADGE && (0, i.jsx)(p.a, {
+            }), f === d.M.GAME_SERVER_GAME_DETECTION_UPSELL_NEW_BADGE && (0, i.jsx)(p.a, {
                 top: 2,
                 right: 2,
                 alert: !0
@@ -340,19 +340,19 @@ function X(e) {
             application_id: t
         })
     }, [t]);
-    let [a, r] = (0, C.kn)([c.M.GAME_SHOP_RTC_POPOVER], V.m.ACCOUNT_NAME_ZONE, !0), o = l.useCallback(() => {
+    let [a, r] = (0, C.kn)([d.M.GAME_SHOP_RTC_POPOVER], V.m.ACCOUNT_NAME_ZONE, !0), o = l.useCallback(() => {
         (0, M.X)({
             guildId: n
         })
-    }, [n]), d = l.useCallback(() => {
+    }, [n]), c = l.useCallback(() => {
         (0, M.default)({
             guildId: n
         }), r(V.i.USER_DISMISS)
     }, [n, r]), h = l.useCallback(() => {
         k.default.track(B.HAw.RTC_GAME_SHOP_BUTTON_CLICKED, {
             application_id: t
-        }), d()
-    }, [t, d]), A = l.useCallback(() => {
+        }), c()
+    }, [t, c]), A = l.useCallback(() => {
         r(V.i.USER_DISMISS)
     }, [r]);
     return (0, i.jsxs)(i.Fragment, {
@@ -362,8 +362,8 @@ function X(e) {
             onMouseDown: o,
             icon: u.U1X,
             ref: s
-        }), a === c.M.GAME_SHOP_RTC_POPOVER ? (0, i.jsx)(D.A, {
-            onActionClick: d,
+        }), a === d.M.GAME_SHOP_RTC_POPOVER ? (0, i.jsx)(D.A, {
+            onActionClick: c,
             onRequestClose: A,
             targetElementRef: s,
             position: "top",

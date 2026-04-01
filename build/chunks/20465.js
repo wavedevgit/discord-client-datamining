@@ -9,8 +9,8 @@ var i = n(627968),
     a = n.n(s),
     r = n(735438),
     o = n(382222),
-    c = n(311907),
-    d = n(397927),
+    d = n(311907),
+    c = n(397927),
     u = n(73153),
     h = n(367513),
     A = n(843472),
@@ -36,7 +36,7 @@ function j(e) {
     } = e, {
         isBlocked: n,
         isIgnored: s
-    } = (0, c.cf)([I.A], () => ({
+    } = (0, d.cf)([I.A], () => ({
         isBlocked: I.A.isBlockedForMessage(t),
         isIgnored: I.A.isIgnoredForMessage(t)
     }), [t]), r = (0, g.X4)(t), o = l.useContext(_.A), [u, E] = l.useState(!1), N = l.useCallback(e => {
@@ -62,7 +62,7 @@ function j(e) {
         sticker: e,
         isInteracting: u
     }, e.id)) : null;
-    return (0, i.jsxs)(d.DUT, {
+    return (0, i.jsxs)(c.DUT, {
         className: y.oR,
         onMouseEnter: () => {
             E(!0)
@@ -103,8 +103,8 @@ function R(e) {
             isFrozen: n,
             count: i,
             lingerMs: s
-        } = e, [a, r] = l.useState([]), [o, d] = l.useState(!1), h = l.useRef(null), A = l.useRef(void 0), _ = l.useCallback(() => {
-            r([]), d(!0)
+        } = e, [a, r] = l.useState([]), [o, c] = l.useState(!1), h = l.useRef(null), A = l.useRef(void 0), _ = l.useCallback(() => {
+            r([]), c(!0)
         }, []);
         l.useEffect(() => {
             function e(e) {
@@ -129,7 +129,7 @@ function R(e) {
         let m = h.current ?? a;
         return {
             toastsHidden: o,
-            toastMessages: (0, c.yK)([E.A], () => m.map(e => E.A.getMessage(t, e)), [t, m]).filter(T.Vq)
+            toastMessages: (0, d.yK)([E.A], () => m.map(e => E.A.getMessage(t, e)), [t, m]).filter(T.Vq)
         }
     }({
         channelId: t,
@@ -154,7 +154,7 @@ function R(e) {
             height: m.current[e.id],
             y: g[e.id]
         })),
-        C = (0, d.pnh)(I, {
+        C = (0, c.pnh)(I, {
             keys: e => e.message.id,
             from: () => ({
                 opacity: 0
@@ -188,7 +188,7 @@ function R(e) {
                 }
             }
         });
-    return (0, i.jsx)(d.NPJ, {
+    return (0, i.jsx)(c.NPJ, {
         theme: S.NJ8.DARK,
         children: e => (0, i.jsx)("div", {
             className: a()(n, e),

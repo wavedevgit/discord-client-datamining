@@ -8,8 +8,8 @@ var i = n(627968),
     a = n(435371),
     r = n(397927),
     o = n(378939),
-    c = n(734057),
-    d = n(309010),
+    d = n(734057),
+    c = n(309010),
     u = n(187508),
     h = n(652215),
     A = n(985018);
@@ -18,7 +18,7 @@ function _(e) {
     let {
         closePopout: t,
         onSelect: n
-    } = e, l = (0, s.bG)([c.A, d.A], () => c.A.getChannel(d.A.getChannelId())), {
+    } = e, l = (0, s.bG)([d.A, c.A], () => d.A.getChannel(c.A.getChannelId())), {
         everyoneFilter: a,
         roleFilter: _,
         guildFilter: m

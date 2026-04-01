@@ -11,8 +11,8 @@ var l = n(284009),
     r = n(397927);
 n(313961), n(666328), n(734337), n(74329), n(956747);
 var o = n(288104),
-    c = n(661504),
-    d = n(267102),
+    d = n(661504),
+    c = n(267102),
     u = n(769591),
     h = n(734057),
     A = n(576705),
@@ -28,7 +28,7 @@ function x(e) {
         n = (0, a.bG)([A.A], () => A.A.can(m.QY, t)),
         l = (0, p.zU)(),
         s = (0, a.bG)([g.A], () => g.A.getStageInstanceByChannel(e), [e]),
-        o = (0, d.Us)();
+        o = (0, c.Us)();
     return t?.isGuildStageVoice() && n && !l ? null != s ? (0, i.jsx)(r.Drp, {
         id: "edit-stage",
         label: f.intl.string(f.t["I+9bLx"]),
@@ -48,7 +48,7 @@ function E(e) {
     let t = (0, a.bG)([h.A], () => h.A.getChannel(e), [e]);
     s()(null != t, "useNotificationSettingsItem: channel cannot be undefined");
     let n = (0, u.os)("StageChannelCallOverflowMenu"),
-        i = (0, c.Ay)(t),
+        i = (0, d.Ay)(t),
         l = (0, o.A)(t);
     return n ? i : l
 }

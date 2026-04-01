@@ -9,8 +9,8 @@ var s = n(503698),
     a = n.n(s),
     r = n(311907),
     o = n(139033),
-    c = n(397927),
-    d = n(830215),
+    d = n(397927),
+    c = n(830215),
     u = n(315982),
     h = n(915089),
     A = n(557722),
@@ -38,7 +38,7 @@ let C = e => {
         min: g.$8o.MEMBER_AGE
     }), j = f.intl.string(f.t.BddRzS)) : S && (v = f.intl.formatToPlainString(f.t.sncw41, {
         min: g.$8o.ACCOUNT_AGE
-    }), j = f.intl.string(f.t.BddRzS))), null == y || null == v) ? null : (0, l.jsxs)(c.lGe, {
+    }), j = f.intl.string(f.t.BddRzS))), null == y || null == v) ? null : (0, l.jsxs)(d.lGe, {
         className: a()(E.popover, x.kL),
         "aria-labelledby": I,
         children: [(0, l.jsx)("img", {
@@ -47,11 +47,11 @@ let C = e => {
             src: n(303528)
         }), (0, l.jsxs)("div", {
             className: x.Qs,
-            children: [(0, l.jsx)(c.Heading, {
+            children: [(0, l.jsx)(d.Heading, {
                 variant: "heading-md/semibold",
                 id: I,
                 children: y
-            }), (0, l.jsx)(c.Text, {
+            }), (0, l.jsx)(d.Text, {
                 color: "text-default",
                 variant: "text-sm/normal",
                 children: v
@@ -60,11 +60,11 @@ let C = e => {
                 children: [null != j ? (0, l.jsx)("div", {
                     "data-button-hoisted-classname-wrapper": !0,
                     className: x.FS,
-                    children: (0, l.jsx)(c.Button, {
+                    children: (0, l.jsx)(d.Button, {
                         variant: "primary",
                         text: j,
                         onClick: () => {
-                            C ? u.R() : T ? (0, c.mMO)(async () => {
+                            C ? u.R() : T ? (0, d.mMO)(async () => {
                                 let {
                                     default: e
                                 } = await Promise.all([n.e("84704"), n.e("75904")]).then(n.bind(n, 615715));
@@ -74,7 +74,7 @@ let C = e => {
                                 })
                             }, {
                                 modalKey: p.V
-                            }) : N && (d.A.verifyResend(), (0, o.A)({
+                            }) : N && (c.A.verifyResend(), (0, o.A)({
                                 title: f.intl.string(f.t.LykQYk),
                                 subtitle: f.intl.format(f.t.azKEPy, {
                                     email: m.default.getCurrentUser()?.email
@@ -82,7 +82,7 @@ let C = e => {
                             })), s()
                         }
                     })
-                }) : null, C || T || N ? (0, l.jsx)(c.QWc, {
+                }) : null, C || T || N ? (0, l.jsx)(d.QWc, {
                     onClick: s,
                     text: f.intl.string(f.t.oEAioF),
                     variant: "secondary"

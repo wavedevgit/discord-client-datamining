@@ -1,6 +1,6 @@
 /** chunk id: 141515 params = (module,exports,require) **/
 n.d(t, {
-    A: () => d
+    A: () => c
 });
 var i = n(627968);
 n(64700);
@@ -9,9 +9,9 @@ var l = n(397927),
     a = n(652793),
     r = n(652215),
     o = n(746080),
-    c = n(985018);
+    d = n(985018);
 
-function d(e) {
+function c(e) {
     let {
         guild: t,
         selected: n
@@ -23,7 +23,7 @@ function d(e) {
             color: "currentColor",
             className: e
         }),
-        text: c.intl.string(c.t.VbpLyU),
+        text: d.intl.string(d.t.VbpLyU),
         selected: n,
         onClick: function() {
             (0, s.pX)(r.BVt.CHANNEL(t.id, o.VV.GUILD_HOME))

@@ -1,7 +1,7 @@
 /** chunk id: 770376 params = (module,exports,require) **/
 n.d(t, {
-    A: () => d,
-    f: () => c
+    A: () => c,
+    f: () => d
 });
 var i = n(554146),
     l = n(506774),
@@ -10,13 +10,13 @@ var i = n(554146),
     r = n(49999);
 let o = "doNotShowReorderModal";
 
-function c() {
+function d() {
     (0, s.uh)(i.M.CHANNEL_REORDER_MODAL_DISMISS_SETTING, {
         dismissAction: r.i.USER_DISMISS
     })
 }
 
-function d() {
+function c() {
     null != l.w.get(o) && l.w.remove(o);
     let {
         isDismissed: e

@@ -8,8 +8,8 @@ var i, l = n(627968),
     a = n(503698),
     r = n.n(a),
     o = n(397927),
-    c = n(765671),
-    d = n(401685),
+    d = n(765671),
+    c = n(401685),
     u = n(919706),
     h = n(813496),
     A = ((i = {})[i.TOP = 0] = "TOP", i[i.BOTTOM = 1] = "BOTTOM", i);
@@ -25,7 +25,7 @@ function _(e) {
     } = e, A = s.useRef(null), {
         width: _,
         ref: m
-    } = (0, c.Ay)(), g = (0, d.bf)(_);
+    } = (0, d.Ay)(), g = (0, c.bf)(_);
     return (0, l.jsx)(o.xpW, {
         containerRef: A,
         children: (0, l.jsxs)("div", {
@@ -38,7 +38,7 @@ function _(e) {
             }), (0, l.jsx)("div", {
                 className: h.K1,
                 children: n?.()
-            }), u?.(), (0, l.jsx)(d.Ay.Provider, {
+            }), u?.(), (0, l.jsx)(c.Ay.Provider, {
                 value: g,
                 children: (0, l.jsxs)("div", {
                     className: h.q6,
@@ -67,8 +67,8 @@ function m(e) {
         onForceIdle: s,
         idle: a,
         children: o,
-        renderChatToasts: c,
-        renderVoiceChannelEffects: d,
+        renderChatToasts: d,
+        renderVoiceChannelEffects: c,
         style: A,
         ...m
     } = e;
@@ -86,6 +86,6 @@ function m(e) {
             ...t
         }) : null, (0, l.jsx)(_, {
             ...m
-        }), c?.(), d?.()]
+        }), d?.(), c?.()]
     })
 }

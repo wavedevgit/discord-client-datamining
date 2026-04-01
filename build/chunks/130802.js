@@ -8,8 +8,8 @@ var i, l = n(627968),
     a = n(311907),
     r = n(342494),
     o = n(397927),
-    c = n(827827),
-    d = n(253932),
+    d = n(827827),
+    c = n(253932),
     u = n(461213),
     h = n(481045),
     A = n(730844),
@@ -29,7 +29,7 @@ function p(e) {
             size: "sm",
             text: _.intl.string(A.default.Poezn1),
             onClick: () => {
-                t(), (0, c.A)({
+                t(), (0, d.A)({
                     nextStatus: o.clD.ONLINE
                 })
             },
@@ -64,7 +64,7 @@ function f(e) {
             })]
         }), (0, l.jsx)(o.dOG, {
             onChange: e => {
-                d.tz.updateSetting(e), n && (0, c.A)({
+                c.tz.updateSetting(e), n && (0, d.A)({
                     nextStatus: e ? o.clD.ONLINE : o.clD.INVISIBLE
                 })
             },
@@ -90,7 +90,7 @@ function x(e) {
 function E(e) {
     let {
         closePopout: t
-    } = e, n = d.tz.useSetting();
+    } = e, n = c.tz.useSetting();
     return (0, l.jsxs)(x, {
         children: [(0, l.jsx)(f, {
             showCurrentGame: n
@@ -146,7 +146,7 @@ function I(e) {
 function C(e) {
     let {
         closePopout: t
-    } = e, n = d.tz.useSetting();
+    } = e, n = c.tz.useSetting();
     return (0, l.jsxs)(x, {
         children: [(0, l.jsx)(f, {
             showCurrentGame: n,
@@ -179,7 +179,7 @@ function T(e) {
                     type: "popover", title: _.intl.string(A.default.vxVbGP), body: [_.intl.string(A.default["7cfFob"])], action: {
                         text: _.intl.string(A.default.k4tCg2),
                         onClick: () => {
-                            d.tz.updateSetting(!0)
+                            c.tz.updateSetting(!0)
                         }
                     }, textLink: {
                         text: _.intl.string(_.t["ZrN+DT"]),
@@ -191,7 +191,7 @@ function T(e) {
                     type: "popover", title: _.intl.string(A.default.qKDqet), body: [_.intl.string(A.default.Yl0mh4)], action: {
                         text: _.intl.string(A.default.Poezn1),
                         onClick: () => {
-                            (0, c.A)({
+                            (0, d.A)({
                                 nextStatus: o.clD.ONLINE
                             })
                         }
@@ -202,7 +202,7 @@ function T(e) {
                     type: "popover", title: _.intl.string(A.default["6cA8HZ"]), body: [_.intl.string(A.default["7cfFob"])], action: {
                         text: _.intl.string(A.default.k4tCg2),
                         onClick: () => {
-                            d.tz.updateSetting(!0), (0, c.A)({
+                            c.tz.updateSetting(!0), (0, d.A)({
                                 nextStatus: o.clD.ONLINE
                             })
                         }

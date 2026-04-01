@@ -8,8 +8,8 @@ var i = n(627968),
     a = n.n(s),
     r = n(311907),
     o = n(506774),
-    c = n(31728),
-    d = n(164617),
+    d = n(31728),
+    c = n(164617),
     u = n(205297),
     h = n(334463),
     A = n(175203),
@@ -41,7 +41,7 @@ function x(e) {
     }, [E.length]);
     let R = l.useCallback(e => {
             let t = 0 === y ? e : (e - 8 * (y - 1)) / y;
-            c.EB(t, m.R8.CAMERA_PREVIEW)
+            d.EB(t, m.R8.CAMERA_PREVIEW)
         }, [y]),
         O = l.useCallback((e, t) => {
             N(t)
@@ -71,7 +71,7 @@ function x(e) {
                     className: a()(g.Vs, p.a8),
                     fit: A.Yl.COVER,
                     inCall: !0,
-                    popoutType: d.N.NO_POPOUT,
+                    popoutType: c.N.NO_POPOUT,
                     width: 160,
                     onClick: I
                 }, e.id))

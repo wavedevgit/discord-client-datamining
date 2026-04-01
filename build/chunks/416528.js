@@ -8,8 +8,8 @@ var i = n(627968),
     a = n.n(s),
     r = n(311907),
     o = n(990078),
-    c = n(397927),
-    d = n(793574),
+    d = n(397927),
+    c = n(793574),
     u = n(688810),
     h = n(402216),
     A = n(689874),
@@ -59,7 +59,7 @@ function j(e) {
         isChatOpen: n
     } = e, s = l.useRef(null), {
         analyticsLocations: a
-    } = (0, u.Ay)(d.A.VOICE_CHANNEL_HEADER), o = t.id, {
+    } = (0, u.Ay)(c.A.VOICE_CHANNEL_HEADER), o = t.id, {
         voiceParticipantsHidden: m,
         selectedParticipant: I,
         userParticipantCount: C
@@ -86,7 +86,7 @@ function j(e) {
     }, "live-indicator"))), I?.type === S.lp.USER && j.push((0, i.jsx)(p.A, {
         className: y.x6,
         userId: I.id
-    }, "video-warning")), m && j.push((0, i.jsx)(c.YNO, {
+    }, "video-warning")), m && j.push((0, i.jsx)(d.YNO, {
         targetElementRef: s,
         position: "bottom",
         renderPopout: () => (0, i.jsx)(f.A, {

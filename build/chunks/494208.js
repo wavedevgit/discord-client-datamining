@@ -8,8 +8,8 @@ var i = n(627968),
     a = n(323073),
     r = n(58736),
     o = n(707539),
-    c = n(617011),
-    d = n(985018),
+    d = n(617011),
+    c = n(985018),
     u = n(857476);
 
 function h(e) {
@@ -30,7 +30,7 @@ function h(e) {
         onRequestClose: m,
         renderPopout: function() {
             return (0, i.jsx)(s.lGe, {
-                children: (0, i.jsx)(c.A, {
+                children: (0, i.jsx)(d.A, {
                     className: u.T,
                     channel: t,
                     onClose: m,
@@ -49,8 +49,8 @@ function h(e) {
                 className: u.Kk,
                 onClick: g,
                 icon: s.ysw,
-                "aria-label": d.intl.string(d.t.B2panI),
-                tooltip: n ? null : d.intl.string(d.t.B2panI),
+                "aria-label": c.intl.string(c.t.B2panI),
+                tooltip: n ? null : c.intl.string(c.t.B2panI),
                 disabled: _,
                 selected: n
             })
