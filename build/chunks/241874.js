@@ -21,10 +21,10 @@ let h = l.memo(function(e) {
             usernameProfile: h,
             avatarProfile: m,
             setPopout: A,
-            author: p,
-            repliedMessage: g,
+            author: g,
+            repliedMessage: p,
             roleIcon: f
-        } = e, _ = (0, d.r4)(t.author.id, n.id), E = (0, d.m)(t, n, h, A), x = (0, d.Jo)(m, A), C = l.useCallback(() => {
+        } = e, _ = (0, d.r4)(t.author.id, n.id), E = (0, d.m)(t, n, h, A), C = (0, d.Jo)(m, A), x = l.useCallback(() => {
             A({
                 usernameProfile: !1,
                 avatarProfile: !1,
@@ -35,18 +35,18 @@ let h = l.memo(function(e) {
             guildId: n.guild_id,
             message: t,
             channel: n,
-            repliedMessage: g,
-            author: p,
+            repliedMessage: p,
+            author: g,
             compact: s,
             subscribeToGroupId: a,
             showTimestampOnHover: !o && s && t.type !== u.lAJ.REPLY,
             renderPopout: c.A,
             showAvatarPopout: m,
             showUsernamePopout: h,
-            onClickAvatar: x,
+            onClickAvatar: C,
             onClickUsername: E,
             onContextMenu: _,
-            onPopoutRequestClose: C,
+            onPopoutRequestClose: x,
             roleIcon: f
         })
     }),
@@ -64,21 +64,21 @@ function A(e) {
     } = e, {
         message: u,
         compact: A,
-        channel: p,
-        groupId: g
+        channel: g,
+        groupId: p
     } = t, {
         usernameProfile: f,
         avatarProfile: _
     } = l;
     if ((0, s.A)(u)) return null;
-    let E = u.id === g;
+    let E = u.id === p;
     return E || A || null != r ? (0, i.jsx)(h, {
         message: u,
-        channel: p,
+        channel: g,
         compact: A,
-        subscribeToGroupId: g,
+        subscribeToGroupId: p,
         isGroupStart: E,
-        groupId: g,
+        groupId: p,
         setPopout: n,
         usernameProfile: f,
         avatarProfile: _,

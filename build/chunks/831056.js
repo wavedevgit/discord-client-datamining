@@ -2,16 +2,16 @@
 n.d(t, {
     KP: () => d,
     Kb: () => E,
-    OH: () => S,
-    lx: () => p,
+    OH: () => v,
+    lx: () => f,
     nY: () => c,
     pK: () => _,
     zj: () => m
 });
 var r = n(627968),
-    i = n(64700),
-    s = n(503698),
-    a = n.n(s),
+    s = n(64700),
+    i = n(503698),
+    a = n.n(i),
     l = n(158954),
     o = n(827734),
     u = n(246878);
@@ -51,10 +51,10 @@ function E(e) {
     let {
         url: t,
         orientation: n,
-        ref: i
+        ref: s
     } = e;
     return null == t ? null : (0, r.jsx)("img", {
-        ref: i,
+        ref: s,
         src: t,
         alt: "Video thumbnail",
         className: a()(u.C, {
@@ -76,12 +76,12 @@ function _(e) {
     })
 }
 
-function p(e) {
+function f(e) {
     let {
         title: t,
         subtitle: n,
-        ctaBtnLabel: i,
-        onCTAClick: s,
+        ctaBtnLabel: s,
+        onCTAClick: i,
         orientation: l,
         ctaIcon: o
     } = e;
@@ -89,18 +89,18 @@ function p(e) {
         className: a()(u.pP, {
             [u.iC]: "portrait" === l
         }),
-        children: [(0, r.jsx)(f, {
+        children: [(0, r.jsx)(p, {
             title: t,
             subtitle: n
-        }), (0, r.jsx)(v, {
-            label: i,
+        }), (0, r.jsx)(S, {
+            label: s,
             icon: o,
-            onClick: s
+            onClick: i
         })]
     })
 }
 
-function f(e) {
+function p(e) {
     let {
         title: t,
         subtitle: n
@@ -119,13 +119,13 @@ function f(e) {
     })
 }
 
-function v(e) {
+function S(e) {
     let {
         label: t,
         icon: n,
-        onClick: s,
+        onClick: i,
         className: c
-    } = e, [d, m] = i.useState(!1), E = () => {
+    } = e, [d, m] = s.useState(!1), E = () => {
         m(!0)
     }, _ = () => {
         m(!1)
@@ -136,7 +136,7 @@ function v(e) {
         onMouseLeave: _,
         onFocus: E,
         onBlur: _,
-        onClick: s,
+        onClick: i,
         children: [(0, r.jsx)(l.DZT, {
             variant: "heading-md/semibold",
             className: u.ce,
@@ -149,25 +149,25 @@ function v(e) {
     })
 }
 
-function S(e) {
+function v(e) {
     let {
         title: t,
         subtitle: n,
-        icon: s,
+        icon: i,
         onClick: o,
         className: c,
         divider: d
-    } = e, [m, E] = i.useState(!1), _ = () => {
+    } = e, [m, E] = s.useState(!1), _ = () => {
         E(!0)
-    }, p = () => {
+    }, f = () => {
         E(!1)
     };
     return (0, r.jsx)(l.DUT, {
         className: a()(u.Mr, u.iM, c),
         onMouseEnter: _,
-        onMouseLeave: p,
+        onMouseLeave: f,
         onFocus: _,
-        onBlur: p,
+        onBlur: f,
         onClick: o,
         children: (0, r.jsxs)("div", {
             className: u.ee,
@@ -182,7 +182,7 @@ function S(e) {
                     className: u.Hk,
                     children: n
                 })]
-            }), d, (0, r.jsx)(s, {
+            }), d, (0, r.jsx)(i, {
                 size: "md",
                 color: m ? "#FFFFFF" : "#B5BAC1",
                 className: u.J5

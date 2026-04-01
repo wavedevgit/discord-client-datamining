@@ -14,20 +14,20 @@ var i = n(627968),
     h = n(397927),
     m = n(435183),
     A = n(155718),
-    p = n(47167),
-    g = n(685374),
+    g = n(47167),
+    p = n(685374),
     f = n(569989),
     _ = n(997509),
     E = n(46054),
-    x = n(34457),
-    C = n(317525),
+    C = n(34457),
+    x = n(317525),
     S = n(71393),
     I = n(576705),
     T = n(287809),
-    v = n(488926),
-    N = n(427262),
+    N = n(488926),
+    b = n(427262),
     y = n(314307),
-    b = n(234567),
+    v = n(234567),
     j = n(652215),
     R = n(985018),
     M = n(650373),
@@ -36,9 +36,9 @@ var i = n(627968),
 function O(e) {
     let {
         channel: t
-    } = e, [n, s] = l.useState(!1), r = (0, p.Ay)(t, !0), O = t.guild_id, L = (0, d.bG)([C.A], () => null != O ? C.A.getSortedRoles(O) : void 0), P = (0, d.bG)([T.default, S.A], () => T.default.getUser(S.A.getGuild(O)?.ownerId)), w = l.useMemo(() => null != L ? L.filter(e => !(0, x.Oy)(e)) : [], [L]), k = l.useMemo(() => o()(w).filter(e => {
+    } = e, [n, s] = l.useState(!1), r = (0, g.Ay)(t, !0), O = t.guild_id, L = (0, d.bG)([x.A], () => null != O ? x.A.getSortedRoles(O) : void 0), P = (0, d.bG)([T.default, S.A], () => T.default.getUser(S.A.getGuild(O)?.ownerId)), w = l.useMemo(() => null != L ? L.filter(e => !(0, C.Oy)(e)) : [], [L]), k = l.useMemo(() => o()(w).filter(e => {
         if (null == O) return !1;
-        let n = v.aH({
+        let n = N.aH({
             forceRoles: {
                 [e.id]: e
             },
@@ -53,12 +53,12 @@ function O(e) {
             null != t && (e[t.id] = t)
         }
         return o()(e).filter(e => {
-            let n = v.$3({
+            let n = N.$3({
                     permission: j.xBc.ADMINISTRATOR,
                     user: e,
                     context: t
                 }),
-                i = t.permissionOverwrites[e.id] ?? v.x3,
+                i = t.permissionOverwrites[e.id] ?? N.x3,
                 l = c.zy(i.allow, j.xBc.VIEW_CHANNEL);
             return n || l
         }).value()
@@ -107,7 +107,7 @@ function O(e) {
                     users: U
                 });
                 let e = U[0],
-                    n = N.Ay.getName(e);
+                    n = b.Ay.getName(e);
                 return (0, i.jsxs)("div", {
                     className: M.HD,
                     children: [(0, i.jsx)(h.euF, {
@@ -129,7 +129,7 @@ function O(e) {
             }(), k.map((e, n) => {
                 let l = e.colorString ?? j.TpD,
                     s = e.tags?.guild_connections !== void 0;
-                return G ? (0, i.jsx)(b.A, {
+                return G ? (0, i.jsx)(v.A, {
                     className: a()(M.JC, {
                         [M.HV]: n === k.length - 1
                     }),
@@ -150,7 +150,7 @@ function O(e) {
                 }, e.id)
             })]
         }), n ? (0, i.jsx)(h.aFV, {
-            renderModal: e => (0, i.jsx)(g.default, {
+            renderModal: e => (0, i.jsx)(p.default, {
                 ...e,
                 onClose: () => (F(), e.onClose()),
                 channelId: t.id

@@ -25,17 +25,17 @@ function o(e) {
         }, n.fontFamily = "gg sans", n.fontSize = 11, c.setColor(m), n.addDataSeries(c), n.updateEndDate(), o(n)
     }, [t, d, m, h, u, c]);
     let A = e.converter,
-        p = null != A ? e.dataPoints.map(e => ({
+        g = null != A ? e.dataPoints.map(e => ({
             ...e,
             value: A(e.value)
         })) : e.dataPoints;
-    c.setPoints(p), n?.updateEndDate();
-    let g = {
+    c.setPoints(g), n?.updateEndDate();
+    let p = {
         width: e.width,
         height: e.height
     };
     return (0, i.jsx)("canvas", {
-        style: g,
+        style: p,
         width: e.width,
         height: e.height,
         ref: t

@@ -3,13 +3,13 @@ n.d(t, {
     A: () => es
 });
 var i = n(627968),
-    l = n(64700),
-    a = n(503698),
-    s = n.n(a),
+    a = n(64700),
+    l = n(503698),
+    s = n.n(l),
     r = n(485584),
     o = n(598748),
-    d = n(205338),
-    c = n(179771),
+    c = n(205338),
+    d = n(179771),
     u = n(87075),
     g = n(311907),
     m = n(397927),
@@ -31,8 +31,8 @@ var i = n(627968),
     y = n(61266),
     R = n(731068),
     k = n(619517),
-    O = n(339580),
-    w = n(961350),
+    w = n(339580),
+    O = n(961350),
     L = n(760751),
     P = n(403362),
     D = n(183555),
@@ -46,9 +46,9 @@ function W(e) {
         trackUserProfileAction: t
     } = (0, D.NJ)(), {
         user: n,
-        widget: a,
+        widget: l,
         cta: r
-    } = e, o = (0, g.bG)([w.default], () => w.default.getId()) === n.id, d = (0, v.h)(a.applicationId), u = d?.getIconURL(16), x = (0, g.bG)([L.A], () => null != d ? L.A.getGameByApplication(d) : null), _ = (0, E.A)({
+    } = e, o = (0, g.bG)([O.default], () => O.default.getId()) === n.id, c = (0, v.h)(l.applicationId), u = c?.getIconURL(16), x = (0, g.bG)([L.A], () => null != c ? L.A.getGameByApplication(c) : null), _ = (0, E.A)({
         location: "UserProfileApplicationWidget",
         applicationId: x?.id,
         source: T.Ob.UserProfile,
@@ -60,16 +60,16 @@ function W(e) {
         canStartAuthorization: j,
         startAuthorization: b,
         token: C
-    } = (0, h.RD)(d), {
+    } = (0, h.RD)(c), {
         analyticsLocations: N
-    } = (0, f.Ay)(p.A.USER_PROFILE_APPLICATION_WIDGET), S = l.useCallback(() => {
+    } = (0, f.Ay)(p.A.USER_PROFILE_APPLICATION_WIDGET), S = a.useCallback(() => {
         j && (t({
             action: I ? "PRESS_APPLICATION_WIDGET_LINKED_RECONNECT" : "PRESS_APPLICATION_WIDGET_UNLINKED_CONNECT",
-            applicationId: a.applicationId
+            applicationId: l.applicationId
         }), b({
             analyticsLocations: N
         }))
-    }, [j, I, b, t, a.applicationId, N]), y = null == r && A && !I && j, R = null == r && A && I && j && null != C && !C.scopes.includes(c.F.APPLICATION_IDENTITIES_WRITE) && !C.scopes.includes(c.F.SDK_SOCIAL_LAYER) && !C.scopes.includes(c.F.SDK_SOCIAL_LAYER_PRESENCE), k = (0, i.jsxs)(i.Fragment, {
+    }, [j, I, b, t, l.applicationId, N]), y = null == r && A && !I && j, R = null == r && A && I && j && null != C && !C.scopes.includes(d.F.APPLICATION_IDENTITIES_WRITE) && !C.scopes.includes(d.F.SDK_SOCIAL_LAYER) && !C.scopes.includes(d.F.SDK_SOCIAL_LAYER_PRESENCE), k = (0, i.jsxs)(i.Fragment, {
         children: [null != u ? (0, i.jsx)("img", {
             className: F.Z2,
             src: u,
@@ -80,11 +80,11 @@ function W(e) {
             className: F.qP
         }), (0, i.jsx)(m.Text, {
             variant: "text-sm/medium",
-            children: d?.name != null ? d.name : (0, i.jsx)("div", {
+            children: c?.name != null ? c.name : (0, i.jsx)("div", {
                 className: F.jC
             })
         })]
-    }), O = null == x ? (0, i.jsx)("div", {
+    }), w = null == x ? (0, i.jsx)("div", {
         className: F.qd,
         children: k
     }) : (0, i.jsx)(m.DUT, {
@@ -99,7 +99,7 @@ function W(e) {
         handleConnect: S,
         showConnectCta: y,
         showReconnectCta: R,
-        headerTitle: O
+        headerTitle: w
     }
 }
 
@@ -107,16 +107,16 @@ function H(e) {
     let {
         isCurrentUser: t,
         isLoading: n,
-        hasData: l,
-        showConnectCta: a,
+        hasData: a,
+        showConnectCta: l,
         showReconnectCta: r,
         handleConnect: o,
-        cta: d,
-        v2: c = !1
+        cta: c,
+        v2: d = !1
     } = e;
     return t ? (0, i.jsxs)("div", {
-        className: s()(F.qr, c && F.v2),
-        children: [n || l || a || r ? null : (0, i.jsxs)("div", {
+        className: s()(F.qr, d && F.v2),
+        children: [n || a || l || r ? null : (0, i.jsxs)("div", {
             className: F.o8,
             children: [(0, i.jsx)(m.Qfk, {
                 size: "xxs"
@@ -125,7 +125,7 @@ function H(e) {
                 color: "text-subtle",
                 children: U.intl.string(U.t.z5K4Uv)
             })]
-        }), a ? (0, i.jsx)(B, {
+        }), l ? (0, i.jsx)(B, {
             heading: U.intl.string(U.t.UDPRLO),
             content: U.intl.string(U.t["OW/2al"]),
             buttons: (0, i.jsx)(m.Button, {
@@ -139,7 +139,7 @@ function H(e) {
                 text: U.intl.string(U.t.vD60Pv),
                 onClick: o
             })
-        }) : d]
+        }) : c]
     }) : null
 }
 
@@ -177,7 +177,7 @@ function B(e) {
 }
 let X = /{{(.*?)}}/g,
     V = {
-        [d.A.MARVEL_RIVALS]: [{
+        [c.A.MARVEL_RIVALS]: [{
             type: "HERO",
             title: "{{username}}",
             image: "{{featured_played_character_image}}",
@@ -271,7 +271,7 @@ let X = /{{(.*?)}}/g,
                 }
             }]
         }],
-        [d.A.WUTHERING_WAVES]: [{
+        [c.A.WUTHERING_WAVES]: [{
             type: "HERO",
             title: "{{username}}",
             image: "{{featured_played_character_image}}",
@@ -368,10 +368,10 @@ function z(e) {
     switch (t.type) {
         case "HERO":
             let {
-                body: n, ...l
+                body: n, ...a
             } = t;
             return (0, i.jsx)(q, {
-                ...l,
+                ...a,
                 body: K(n)
             });
         case "GRID":
@@ -412,8 +412,8 @@ function q(e) {
     let {
         title: t,
         body: n,
-        image: l,
-        imagePlaceholder: a
+        image: a,
+        imagePlaceholder: l
     } = e;
     return (0, i.jsxs)("div", {
         className: F.mY,
@@ -429,20 +429,20 @@ function q(e) {
                 color: "muted",
                 children: n
             })]
-        }), (0, j.c)(l) ? (0, i.jsx)("div", {
+        }), (0, j.c)(a) ? (0, i.jsx)("div", {
             className: F.Xr,
             children: (0, i.jsx)(k.Ay, {
-                src: l.proxyUrl,
+                src: a.proxyUrl,
                 alt: "",
-                width: l.width,
-                height: l.height,
+                width: a.width,
+                height: a.height,
                 responsive: !0,
                 className: F.c8
             })
-        }) : null != a ? (0, i.jsx)("div", {
+        }) : null != l ? (0, i.jsx)("div", {
             className: F.Xr,
             children: (0, i.jsx)("img", {
-                src: a,
+                src: l,
                 alt: "",
                 className: F.c8
             })
@@ -475,14 +475,14 @@ function Z(e) {
 function Q(e) {
     let {
         content: t
-    } = e, n = l.useId(), a = (0, N.X)();
+    } = e, n = a.useId(), l = (0, N.X)();
     return null != t ? (0, i.jsx)(y.A, {
         type: x.I5.TEXT_DISPLAY,
         id: n,
         content: t,
         className: F.Qq
     }) : (0, i.jsx)("div", {
-        className: s()(F.jC, a.className)
+        className: s()(F.jC, l.className)
     })
 }
 
@@ -490,10 +490,10 @@ function $(e) {
     let {
         content: t,
         image: n,
-        imagePosition: l
-    } = e, a = (0, N.X)(), r = (0, j.c)(n) ? (0, i.jsx)("div", {
-        className: s()(F.Sl, a.className),
-        "data-position": l,
+        imagePosition: a
+    } = e, l = (0, N.X)(), r = (0, j.c)(n) ? (0, i.jsx)("div", {
+        className: s()(F.Sl, l.className),
+        "data-position": a,
         children: (0, i.jsx)(k.Ay, {
             src: n.proxyUrl,
             alt: "",
@@ -502,15 +502,15 @@ function $(e) {
             responsive: !0
         })
     }) : null == t ? (0, i.jsx)("div", {
-        className: s()(F.bc, a.className)
+        className: s()(F.bc, l.className)
     }) : null;
     return (0, i.jsxs)("div", {
         className: F.rQ,
-        children: [null != r && "left" === l ? (0, i.jsxs)(i.Fragment, {
+        children: [null != r && "left" === a ? (0, i.jsxs)(i.Fragment, {
             children: [r, " "]
         }) : null, (0, i.jsx)(Q, {
             content: t
-        }), null != r && "right" === l ? (0, i.jsxs)(i.Fragment, {
+        }), null != r && "right" === a ? (0, i.jsxs)(i.Fragment, {
             children: [" ", r]
         }) : null]
     })
@@ -520,10 +520,10 @@ function ee(e) {
     let {
         size: t = "small",
         divider: n = !1
-    } = e, a = l.useId();
+    } = e, l = a.useId();
     return (0, i.jsx)(S.A, {
         type: x.I5.SEPARATOR,
-        id: a,
+        id: l,
         divider: n,
         spacing: "large" === t ? x.C8.LARGE : x.C8.SMALL
     })
@@ -536,13 +536,13 @@ function et(e, t) {
     if ("skeleton" === t.mode) return null;
     let i = "";
     for (let e = 0; e < n.length; e++) {
-        let l = n[e];
+        let a = n[e];
         if (e % 2 == 0) {
-            i += l;
+            i += a;
             continue
         }
-        let a = t.variables[l];
-        null == a ? i += "––" : "unfurled_media" === a.type ? i += a.media.url : "number" === a.type ? i += t.numberFormat.format(a.value) : "string" === a.type && (i += a.value)
+        let l = t.variables[a];
+        null == l ? i += "––" : "unfurled_media" === l.type ? i += l.media.url : "number" === l.type ? i += t.numberFormat.format(l.value) : "string" === l.type && (i += l.value)
     }
     return i
 }
@@ -576,9 +576,9 @@ function ei(e) {
     })
 }
 
-function el(e) {
+function ea(e) {
     var t, n;
-    let a, r, o, d, c, {
+    let l, r, o, c, d, {
             user: x,
             widget: p,
             cta: f,
@@ -589,7 +589,7 @@ function el(e) {
             isLoading: A,
             hasData: j,
             components: v
-        } = (t = x.id, n = p.applicationId, a = (0, I.A)(), r = (0, g.bG)([O.A], () => O.A.getUserIdentityByApplication(t, n)), o = (0, g.bG)([G.A], () => G.A.getApplicationWidgetConfig(n)), d = (0, g.bG)([O.A, G.A], () => null == O.A.getUserIdentities(t) || null == G.A.applicationWidgetConfigs), c = l.useMemo(() => {
+        } = (t = x.id, n = p.applicationId, l = (0, I.A)(), r = (0, g.bG)([w.A], () => w.A.getUserIdentityByApplication(t, n)), o = (0, g.bG)([G.A], () => G.A.getApplicationWidgetConfig(n)), c = (0, g.bG)([w.A, G.A], () => null == w.A.getUserIdentities(t) || null == G.A.applicationWidgetConfigs), d = a.useMemo(() => {
             var e, t;
             if (null == o) return null;
             let n = V[o.widgetTemplateId];
@@ -597,7 +597,7 @@ function el(e) {
             let i = (e = r ?? null, t = o ?? null, null == e ? {
                 mode: "skeleton",
                 config: t,
-                numberFormat: a
+                numberFormat: l
             } : {
                 mode: "from_data",
                 variables: Object.fromEntries([...e.profile?.data?.dynamic?.map(e => e.type === u.f.STRING ? [e.name, {
@@ -630,7 +630,7 @@ function el(e) {
                     return null
                 }).filter(P.Vq)]),
                 config: t,
-                numberFormat: a
+                numberFormat: l
             });
             return n.map(function e(t) {
                 switch (t.type) {
@@ -658,10 +658,10 @@ function el(e) {
                         return t
                 }
             })
-        }, [o, r, a]), {
-            isLoading: d,
+        }, [o, r, l]), {
+            isLoading: c,
             hasData: null != r,
-            components: c
+            components: d
         });
     return null == v ? null : (0, i.jsxs)(M.A, {
         ...e,
@@ -693,48 +693,48 @@ function el(e) {
     })
 }
 
-function ea(e) {
+function el(e) {
     let {
         user: t,
         widget: n,
-        cta: l,
-        subtle: a = !1
-    } = e, d = W(e), c = (0, A.A)(t.id, n.applicationId), u = c.surfaceConfigs[o.m.WIDGET_TOP], g = c.surfaceConfigs[o.m.WIDGET_BOTTOM];
+        cta: a,
+        subtle: l = !1
+    } = e, c = W(e), d = (0, A.A)(t.id, n.applicationId), u = d.surfaceConfigs[o.m.WIDGET_TOP], g = d.surfaceConfigs[o.m.WIDGET_BOTTOM];
     return null == u || null == g ? null : (0, i.jsxs)(M.A, {
         ...e,
         userId: t.id,
         widget: n,
-        className: s()(F.Y5, F.v2, a && F.aK),
+        className: s()(F.Y5, F.v2, l && F.aK),
         headerClassName: F.vX,
-        additionalManageWidgetMenuItems: null != d.game ? (0, i.jsx)(m.Drp, {
+        additionalManageWidgetMenuItems: null != c.game ? (0, i.jsx)(m.Drp, {
             id: "view-game-profile",
             label: "View Game Profile",
             icon: m._xR,
-            action: d.openGameProfileModal
+            action: c.openGameProfileModal
         }) : null,
         children: [(0, i.jsx)(r.kH, {
             surface: o.m.WIDGET_TOP,
             surfaceConfig: u,
-            header: d.headerTitle,
-            data: c.data,
-            locale: c.locale,
-            applicationAssets: c.applicationAssets,
-            localizedStrings: c.localizedStrings
+            header: c.headerTitle,
+            data: d.data,
+            locale: d.locale,
+            applicationAssets: d.applicationAssets,
+            localizedStrings: d.localizedStrings
         }), (0, i.jsx)(m.cGx, {}), (0, i.jsx)(r.kH, {
             surface: o.m.WIDGET_BOTTOM,
             surfaceConfig: g,
-            data: c.data,
-            locale: c.locale,
-            applicationAssets: c.applicationAssets,
-            localizedStrings: c.localizedStrings
+            data: d.data,
+            locale: d.locale,
+            applicationAssets: d.applicationAssets,
+            localizedStrings: d.localizedStrings
         }), (0, i.jsx)(H, {
-            isCurrentUser: d.isCurrentUser,
-            isLoading: c.isLoading,
-            hasData: c.hasIdentity,
-            showConnectCta: d.showConnectCta,
-            showReconnectCta: d.showReconnectCta,
-            handleConnect: d.handleConnect,
-            cta: l,
+            isCurrentUser: c.isCurrentUser,
+            isLoading: d.isLoading,
+            hasData: d.hasIdentity,
+            showConnectCta: c.showConnectCta,
+            showReconnectCta: c.showReconnectCta,
+            handleConnect: c.handleConnect,
+            cta: a,
             v2: !0
         })]
     })
@@ -745,9 +745,9 @@ let es = Object.assign(function(e) {
     } = _.A.useConfig({
         location: "UserProfileApplicationWidget"
     });
-    return t ? (0, i.jsx)(ea, {
+    return t ? (0, i.jsx)(el, {
         ...e
-    }) : (0, i.jsx)(el, {
+    }) : (0, i.jsx)(ea, {
         ...e
     })
 }, {

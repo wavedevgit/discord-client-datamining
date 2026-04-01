@@ -23,7 +23,7 @@ function c(e) {
         message: A
     } = (0, r.I)(t);
     if (null == A && (m || h)) return null;
-    let p = () => {
+    let g = () => {
         c?.(), s.A.closePrivateChannel(t.id)
     };
     return (0, i.jsx)(l.Button, {
@@ -31,7 +31,7 @@ function c(e) {
         size: "sm",
         disabled: null == A,
         onClick: e => {
-            e.stopPropagation(), n?.(), null != A && (0, a.b8)(A, p)
+            e.stopPropagation(), n?.(), null != A && (0, a.b8)(A, g)
         },
         onMouseEnter: d,
         onMouseLeave: u,

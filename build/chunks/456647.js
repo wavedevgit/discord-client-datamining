@@ -3,13 +3,13 @@ n.d(t, {
     X: () => r
 });
 var i = n(64700),
-    l = n(311907),
-    a = n(77468),
+    a = n(311907),
+    l = n(77468),
     s = n(962173);
 
 function r(e) {
-    let t = (0, l.bG)([s.A], () => null != e ? s.A.getAccount(null, e) : null),
-        n = (0, l.bG)([s.A], () => s.A.isFetching()),
+    let t = (0, a.bG)([s.A], () => null != e ? s.A.getAccount(null, e) : null),
+        n = (0, a.bG)([s.A], () => s.A.isFetching()),
         r = null != t && !t.revoked;
     return {
         loading: n,
@@ -20,7 +20,7 @@ function r(e) {
                 success: !1
             };
             try {
-                let n = await a.A.authorize(e, {
+                let n = await l.A.authorize(e, {
                     location: t ?? "Account Linking"
                 });
                 if (n.ok && n.body?.url != null) return {

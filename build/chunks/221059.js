@@ -1,6 +1,6 @@
 /** chunk id: 221059 params = (module,exports,require) **/
 n.d(t, {
-    e: () => C
+    e: () => x
 });
 var i = n(627968),
     l = n(64700),
@@ -14,13 +14,13 @@ var i = n(627968),
     h = n(994500),
     m = n(544231),
     A = n(349435),
-    p = n(665909),
-    g = n(576045),
+    g = n(665909),
+    p = n(576045),
     f = n(327337),
     _ = n(652215),
     E = n(985018);
 
-function x(e) {
+function C(e) {
     let {
         senderId: t,
         channelId: n,
@@ -30,20 +30,20 @@ function x(e) {
     } = (0, a.cf)([h.A], () => ({
         isIgnored: h.A.isIgnored(t)
     }), [t]), c = l.useCallback(() => {
-        (0, p._$)({
+        (0, g._$)({
             channelId: n,
             warningId: s,
             senderId: t,
             warningType: A._j.STRANGER_DANGER,
-            cta: p.Wm.USER_MODAL_IGNORE
+            cta: g.Wm.USER_MODAL_IGNORE
         }), o.A.ignoreUser(t, "web_stranger_danger_more", n)
     }, [n, s, t]), d = l.useCallback(() => {
-        (0, p._$)({
+        (0, g._$)({
             channelId: n,
             warningId: s,
             senderId: t,
             warningType: A._j.STRANGER_DANGER,
-            cta: p.Wm.USER_MODAL_UNIGNORE
+            cta: g.Wm.USER_MODAL_UNIGNORE
         }), o.A.unignoreUser(t, "web_stranger_danger_more", n)
     }, [n, s, t]);
     return (0, i.jsx)(u.PQ, {
@@ -54,40 +54,40 @@ function x(e) {
     })
 }
 
-function C(e) {
+function x(e) {
     let {
         channelId: t,
-        warningId: C,
+        warningId: x,
         senderId: S
     } = e, {
         isBlocked: I
     } = (0, a.cf)([h.A], () => ({
         isBlocked: h.A.isBlocked(S)
     }), [S]), T = l.useCallback(() => {
-        (0, m.xi)(t, [C])
-    }, [t, C]), v = (0, f.eT)(), N = l.useCallback(e => () => {
+        (0, m.xi)(t, [x])
+    }, [t, x]), N = (0, f.eT)(), b = l.useCallback(e => () => {
         o.A.blockUser(S, {
             location: f.Rx
         }).then(() => {
             T()
-        }), (0, p._$)({
+        }), (0, g._$)({
             channelId: t,
-            warningId: C,
+            warningId: x,
             senderId: S,
             warningType: A._j.STRANGER_DANGER,
             cta: e
         })
-    }, [T, t, C, S]);
+    }, [T, t, x, S]);
     l.useEffect(() => {
-        (0, p.mO)(_.HAw.SAFETY_WARNING_VIEWED, {
+        (0, g.mO)(_.HAw.SAFETY_WARNING_VIEWED, {
             channelId: t,
-            warningId: C,
+            warningId: x,
             senderId: S,
             warningType: A._j.STRANGER_DANGER
         }), c.A.increment({
             name: s.K.SAFETY_WARNING_VIEW
         })
-    }, [t, C, S]);
+    }, [t, x, S]);
     let y = () => {
             (0, r.mMO)(async () => {
                 let {
@@ -102,26 +102,26 @@ function C(e) {
                         transitionState: l,
                         onClose: s,
                         channelId: t,
-                        warningId: C,
+                        warningId: x,
                         senderId: S,
                         description: E.intl.string(E.t.DJMZX6),
-                        safetyTipRows: v.map((e, t) => (0, i.jsx)(d.B, {
+                        safetyTipRows: N.map((e, t) => (0, i.jsx)(d.B, {
                             index: t,
                             listType: "numbered",
                             title: e
                         }, t)),
                         actionRows: (0, i.jsxs)(i.Fragment, {
-                            children: [(0, i.jsx)(x, {
+                            children: [(0, i.jsx)(C, {
                                 senderId: S,
                                 channelId: t,
-                                warningId: C
+                                warningId: x
                             }, "more-tips-button"), (0, i.jsx)(u.PQ, {
                                 title: E.intl.string(E.t["5QYPO2"]),
                                 description: E.intl.string(E.t.G08MKu),
                                 buttonText: E.intl.string(E.t["5QYPO2"]),
                                 buttonVariant: "critical-primary",
                                 onButtonPress: () => {
-                                    s(), b(p.Wm.USER_MODAL_BLOCK_CONFIRM, p.Wm.USER_MODAL_BLOCK_CANCEL, y)
+                                    s(), v(g.Wm.USER_MODAL_BLOCK_CONFIRM, g.Wm.USER_MODAL_BLOCK_CANCEL, y)
                                 }
                             }, "block-button")]
                         })
@@ -129,7 +129,7 @@ function C(e) {
                 }
             })
         },
-        b = (e, l, s) => {
+        v = (e, l, s) => {
             (0, r.mMO)(async () => {
                 let {
                     default: a
@@ -137,11 +137,11 @@ function C(e) {
                 return n => (0, i.jsx)(a, {
                     ...n,
                     userId: S,
-                    confirmBlock: N(e),
+                    confirmBlock: b(e),
                     onCancel: () => {
-                        s?.(), (0, p._$)({
+                        s?.(), (0, g._$)({
                             channelId: t,
-                            warningId: C,
+                            warningId: x,
                             senderId: S,
                             warningType: A._j.STRANGER_DANGER,
                             cta: l
@@ -150,9 +150,9 @@ function C(e) {
                 })
             })
         };
-    return (0, i.jsx)(g.N, {
+    return (0, i.jsx)(p.N, {
         channelId: t,
-        warningId: C,
+        warningId: x,
         senderId: S,
         warningType: A._j.STRANGER_DANGER,
         header: E.intl.string(E.t.iOkDpM),
@@ -162,18 +162,18 @@ function C(e) {
             text: E.intl.string(E.t["Qk/c48"]),
             variant: "primary",
             onClick: () => {
-                y(), (0, p._$)({
+                y(), (0, g._$)({
                     channelId: t,
-                    warningId: C,
+                    warningId: x,
                     senderId: S,
                     warningType: A._j.STRANGER_DANGER,
-                    cta: p.Wm.OPEN_MORE_TIPS
+                    cta: g.Wm.OPEN_MORE_TIPS
                 })
             }
         }, ...I ? [] : [{
             text: E.intl.string(E.t.ie0QdN),
             variant: "critical-primary",
-            onClick: () => b(p.Wm.USER_BANNER_BLOCK_CONFIRM, p.Wm.USER_BANNER_BLOCK_CANCEL)
+            onClick: () => v(g.Wm.USER_BANNER_BLOCK_CONFIRM, g.Wm.USER_BANNER_BLOCK_CANCEL)
         }]]
     })
 }

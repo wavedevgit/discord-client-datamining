@@ -18,27 +18,27 @@ let u = function(e) {
         buttonText: h,
         buttonIcon: m,
         buttonSubmitting: A,
-        onButtonClick: p,
-        imageSrc: g,
+        onButtonClick: g,
+        imageSrc: p,
         animationSrc: f,
         secondaryButtonText: _,
         onSecondaryButtonClick: E,
-        children: x,
-        useReducedMotion: C = !1,
+        children: C,
+        useReducedMotion: x = !1,
         buttonVariant: S
     } = e, I = (0, a.bG)([c.Ay], () => c.Ay.getState().isMembersOpen);
     if (s.Fr && I) return null;
     if (null == t) return (0, i.jsx)(i.Fragment, {
-        children: l.Children.only(x)
+        children: l.Children.only(C)
     });
     let T = null;
-    return null != g ? T = (0, i.jsx)("img", {
+    return null != p ? T = (0, i.jsx)("img", {
         alt: "",
-        src: g,
+        src: p,
         className: d.Sl
     }) : null != f && (T = (0, i.jsx)(r.akl, {
         importData: f,
-        shouldAnimate: !C,
+        shouldAnimate: !x,
         className: d.lY
     })), (0, i.jsxs)("div", {
         className: d.iE,
@@ -71,7 +71,7 @@ let u = function(e) {
                     text: h,
                     size: "sm",
                     variant: S ?? "secondary",
-                    onClick: p,
+                    onClick: g,
                     loading: A,
                     icon: m
                 })

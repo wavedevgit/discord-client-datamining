@@ -16,13 +16,13 @@ var s = n(311907),
     h = n(931374);
 
 function p() {
-    let [e, t] = (0, s.yK)([a.A], () => [a.A.enabled, a.A.keepOpen]), n = (0, s.bG)([d.A], () => d.A.getVoiceChannelId()), p = (0, s.bG)([o.A], () => o.A.getChannel(n), [n]), _ = p?.getGuildId();
+    let [e, t] = (0, s.yK)([a.A], () => [a.A.enabled, a.A.keepOpen]), n = (0, s.bG)([d.A], () => d.A.getVoiceChannelId()), p = (0, s.bG)([o.A], () => o.A.getChannel(n), [n]), f = p?.getGuildId();
     return e && null != p ? (0, i.jsx)("div", {
         className: h.H,
         children: (0, i.jsx)(r.A, {
             width: u.ed.width,
             height: u.ed.height,
-            guildId: _,
+            guildId: f,
             channel: p,
             keepOpen: t,
             onClose: function() {

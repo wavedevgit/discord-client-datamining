@@ -17,8 +17,8 @@ var i = n(627968),
     p = n(916494),
     A = n(897720),
     x = n(652215),
-    E = n(456847);
-let f = {
+    f = n(456847);
+let E = {
         mass: 1,
         tension: 250,
         friction: 18,
@@ -44,7 +44,7 @@ let f = {
             locked: I,
             widgetId: t,
             pinned: j
-        })), O = (0, d.A)(n), _ = (0, d.A)(I), N = S === A.IV.VERTICAL, b = I || _ !== I || O !== n, R = s.useMemo(() => {
+        })), _ = (0, d.A)(n), O = (0, d.A)(I), N = S === A.IV.VERTICAL, b = I || O !== I || _ !== n, R = s.useMemo(() => {
             let e = 0,
                 t = 0;
             return N ? w.map((t, n) => ({
@@ -95,7 +95,7 @@ let f = {
                     height: s
                 }
             },
-            config: f,
+            config: E,
             trail: 100 * !b
         }, b ? "animate-never" : "respect-motion-settings"), D = (0, h.Dk)(() => new Set(v.map(e => e.user.id)), [v, C]), k = (0, h.Dk)(() => new Set(v.filter(e => T.has((0, u._z)(e.stream))).map(e => e.user.id)), [v, T, C]);
         return s.useEffect(() => {
@@ -107,9 +107,9 @@ let f = {
             })
         }, [D, k]), (0, i.jsx)("div", {
             className: r()({
-                [E.UT]: !0,
-                [E.Vd]: N,
-                [E.xM]: !N
+                [f.UT]: !0,
+                [f.Vd]: N,
+                [f.xM]: !N
             }),
             style: N ? {
                 height: M
@@ -117,7 +117,7 @@ let f = {
                 width: L
             },
             children: z((e, t, s, r) => (0, i.jsx)(a.animated.div, {
-                className: E.ux,
+                className: f.ux,
                 style: Object.assign({}, e, {
                     width: n,
                     height: l,
@@ -132,7 +132,7 @@ let f = {
                         pinned: r
                     } = e;
                     return (0, i.jsx)("div", {
-                        className: E.iA,
+                        className: f.iA,
                         children: (0, i.jsx)(g.d, {
                             participant: t,
                             width: n,

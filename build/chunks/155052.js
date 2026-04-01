@@ -1,6 +1,6 @@
 /** chunk id: 155052 params = (module,exports,require) **/
 n.d(t, {
-    A: () => E
+    A: () => f
 }), n(321073);
 var i = n(627968),
     s = n(64700),
@@ -27,10 +27,10 @@ function A(e, t, n, s) {
     }, e)
 }
 let x = [],
-    E = s.memo(function(e) {
+    f = s.memo(function(e) {
         let {
             className: t
-        } = e, n = (0, g.A)(), c = (0, l.bG)([o.A], () => o.A.windowSize((0, d.Q2)(n))), E = (0, l.bG)([a.A], () => {
+        } = e, n = (0, g.A)(), c = (0, l.bG)([o.A], () => o.A.windowSize((0, d.Q2)(n))), f = (0, l.bG)([a.A], () => {
             let e = a.A.getLayout(m.G);
             if (null == e) return x;
             let t = [];
@@ -44,15 +44,15 @@ let x = [],
                 })
             }
             return t
-        }, [], u.VC), f = s.useCallback(e => (0, i.jsx)("div", {
+        }, [], u.VC), E = s.useCallback(e => (0, i.jsx)("div", {
             className: t,
             style: c,
             children: e
         }), [t, c]);
         return (0, i.jsx)(r.Fai, {
-            items: E,
+            items: f,
             renderItem: A,
             getItemKey: p,
-            wrapChildren: f
+            wrapChildren: E
         })
     })

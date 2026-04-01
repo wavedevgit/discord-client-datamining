@@ -14,30 +14,30 @@ var i = n(627968),
     h = n(573435),
     m = n(327166),
     A = n(157550),
-    p = n(471271),
-    g = n(957283),
+    g = n(471271),
+    p = n(957283),
     f = n(772659),
     _ = n(390848),
     E = n(138298),
-    x = n(622543),
-    C = n(657331),
+    C = n(622543),
+    x = n(657331),
     S = n(761640),
     I = n(994500),
     T = n(287809),
-    v = n(486020),
-    N = n(302975),
+    N = n(486020),
+    b = n(302975),
     y = n(652215),
-    b = n(518477),
+    v = n(518477),
     j = n(985018),
     R = n(342659);
 let M = e => {
         let {
             userId: t,
             channelId: n
-        } = e, s = (0, o.bG)([x.A], () => x.A.getMutualGuilds(t), [t]), a = l.useMemo(() => null != s ? s.slice(0, 3).map((e, t) => {
+        } = e, s = (0, o.bG)([C.A], () => C.A.getMutualGuilds(t), [t]), a = l.useMemo(() => null != s ? s.slice(0, 3).map((e, t) => {
             let {
                 guild: n
-            } = e, l = null != n ? v.Ay.getGuildIconURL({
+            } = e, l = null != n ? N.Ay.getGuildIconURL({
                 id: n.id,
                 icon: n.icon,
                 size: 24
@@ -67,10 +67,10 @@ let M = e => {
                 children: a
             }), (0, i.jsx)(c.DUT, {
                 onClick: () => {
-                    (0, C.openUserProfileModal)({
+                    (0, x.openUserProfileModal)({
                         userId: t,
                         channelId: n,
-                        tabSection: b.RP.MUTUAL_GUILDS,
+                        tabSection: v.RP.MUTUAL_GUILDS,
                         sourceAnalyticsLocations: [u.A.DM_CHANNEL]
                     })
                 },
@@ -195,24 +195,24 @@ let M = e => {
             isRejectLoading: h,
             isOptimisticAccepted: m,
             isOptimisticRejected: A
-        } = (0, p.t)({
+        } = (0, g.t)({
             user: T.default.getUser(n),
             onError: s,
             onAcceptSuccess: r,
             onRejectSuccess: a
-        }), g = u || h || m || A;
+        }), p = u || h || m || A;
         return (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)(c.Button, {
                 variant: "primary",
                 size: "sm",
-                disabled: g,
+                disabled: p,
                 onClick: () => o(t),
                 loading: u,
                 text: j.intl.string(j.t.Kz8Pwr)
             }), (0, i.jsx)(c.Button, {
                 variant: "secondary",
                 size: "sm",
-                disabled: g,
+                disabled: p,
                 onClick: () => d(t),
                 loading: h,
                 text: j.intl.string(j.t.B2nygW)
@@ -226,7 +226,7 @@ let M = e => {
             showingBanner: l
         } = e, {
             channelId: s
-        } = (0, g.N)(), d = (0, o.bG)([A.A], () => null != s && A.A.isSpam(s), [s]), u = (0, o.bG)([I.A], () => I.A.getRelationshipType(t), [t]), h = n.id === s, m = !r.Fr && !h, p = !!r.Fr || h || d, _ = d || h ? (0, i.jsxs)("div", {
+        } = (0, p.N)(), d = (0, o.bG)([A.A], () => null != s && A.A.isSpam(s), [s]), u = (0, o.bG)([I.A], () => I.A.getRelationshipType(t), [t]), h = n.id === s, m = !r.Fr && !h, g = !!r.Fr || h || d, _ = d || h ? (0, i.jsxs)("div", {
             className: R.mG,
             children: [(0, i.jsx)(O, {
                 channelId: n.id,
@@ -240,7 +240,7 @@ let M = e => {
                 relationshipType: u,
                 userId: t,
                 showingBanner: l
-            }), !l && (0, i.jsx)(N.A, {
+            }), !l && (0, i.jsx)(b.A, {
                 otherUserId: t,
                 channel: n,
                 navigateAwayOnReportSuccess: m
@@ -251,14 +251,14 @@ let M = e => {
             children: j.intl.string(j.t.c2v5nO)
         });
         return (0, i.jsxs)("div", {
-            className: p ? R.AA : R.kL,
+            className: g ? R.AA : R.kL,
             children: [(0, i.jsx)("div", {
                 className: R.mG,
                 children: (0, i.jsx)(M, {
                     userId: t,
                     channelId: n.id
                 })
-            }), !p && (0, i.jsx)("div", {
+            }), !g && (0, i.jsx)("div", {
                 className: R.yF
             }), (0, i.jsxs)("div", {
                 className: a()(R.mG, R.LV),

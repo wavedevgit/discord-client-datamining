@@ -14,13 +14,13 @@ var i = n(627968),
     h = n(430452),
     m = n(954571),
     A = n(957565),
-    p = n(975571),
-    g = n(917592),
+    g = n(975571),
+    p = n(917592),
     f = n(652215),
     _ = n(731854),
     E = n(985018),
-    x = n(452088);
-let C = () => {
+    C = n(452088);
+let x = () => {
         h.Ay.getMediaEngine().once(r.bg.ConnectionStats, e => {
             let t = JSON.stringify(Object.values(_.x).map(t => {
                 let n = e.filter(e => {
@@ -60,35 +60,35 @@ let C = () => {
                 return (0, i.jsxs)(l.Fragment, {
                     children: [o && (0, i.jsxs)("div", {
                         children: [(0, i.jsx)("div", {
-                            className: x.o0,
+                            className: C.o0,
                             children: (0, i.jsx)(d.A, {
                                 dataPoints: e.pings,
                                 width: 258,
                                 height: 80
                             })
                         }), (0, i.jsx)("div", {
-                            className: x.xB,
+                            className: C.xB,
                             children: (0, i.jsx)("strong", {
-                                children: g.A.getShortHostname(t)
+                                children: p.A.getShortHostname(t)
                             })
                         })]
                     }), (0, i.jsx)("div", {
-                        className: x.xB,
+                        className: C.xB,
                         children: E.intl.format(E.t["X58/lN"], {
                             averagePing: n.toFixed(0)
                         })
                     }), null != s ? (0, i.jsx)("div", {
-                        className: x.xB,
+                        className: C.xB,
                         children: E.intl.format(E.t["6iv2TF"], {
                             lastPing: s.toFixed(0)
                         })
                     }) : null, null != r ? (0, i.jsx)("div", {
-                        className: x.xB,
+                        className: C.xB,
                         children: E.intl.format(E.t["VIBJM+"], {
                             outboundLossRate: r.toFixed(1)
                         })
                     }) : null, (0, i.jsxs)("div", {
-                        className: a()(x.xB, x.xJ),
+                        className: a()(C.xB, C.xJ),
                         children: [null == r ? E.intl.formatToPlainString(E.t.vggaMt, {
                             badPing: 250
                         }) : null, null != r ? E.intl.formatToPlainString(E.t["3pFz1P"], {
@@ -112,54 +112,54 @@ let C = () => {
                 [f.S7L.DISCONNECTED]: E.intl.string(E.t.fOX25I),
                 [f.S7L.RTC_CONNECTING]: E.intl.string(E.t.b5Ubd5),
                 [f.S7L.ICE_CHECKING]: E.intl.format(E.t.SyoYUb, {
-                    url: p.A.getArticleURL(f.MVz.VOICE_CONNECTION_ERRORS)
+                    url: g.A.getArticleURL(f.MVz.VOICE_CONNECTION_ERRORS)
                 }),
                 [f.S7L.DTLS_CONNECTING]: E.intl.format(E.t.SyoYUb, {
-                    url: p.A.getArticleURL(f.MVz.VOICE_CONNECTION_ERRORS)
+                    url: g.A.getArticleURL(f.MVz.VOICE_CONNECTION_ERRORS)
                 }),
                 [f.S7L.RTC_CONNECTED]: n,
                 [f.S7L.NO_ROUTE]: E.intl.format(E.t["2tgQnk"], {
-                    url: p.A.getArticleURL(f.MVz.VOICE_CONNECTION_ERRORS)
+                    url: g.A.getArticleURL(f.MVz.VOICE_CONNECTION_ERRORS)
                 }),
                 [f.S7L.RTC_DISCONNECTED]: E.intl.string(E.t.fOX25I)
             } [s];
         return (0, i.jsxs)(i.Fragment, {
             children: ["function" == typeof S ? S() : (0, i.jsx)("p", {
-                className: a()(x.xB, x.xJ),
+                className: a()(C.xB, C.xJ),
                 children: S
             }), (0, i.jsx)("hr", {
-                className: x.me
+                className: C.me
             }), (0, i.jsxs)("div", {
-                className: x.Vf,
+                className: C.Vf,
                 children: [(0, i.jsxs)("span", {
-                    className: a()(x.uO, x.ro),
+                    className: a()(C.uO, C.ro),
                     children: [(0, i.jsx)(o.XAi, {
                         size: "xxs",
                         color: o.LU0.colors.TEXT_FEEDBACK_POSITIVE.css,
-                        className: x.__invalid_icon
+                        className: C.__invalid_icon
                     }), r]
                 }), A && h.Ay.supports(_.O5.DIAGNOSTICS) && !__OVERLAY__ && (0, i.jsxs)(i.Fragment, {
                     children: [(0, i.jsxs)(o.MzZ, {
-                        className: a()(x.Ce, x.ro),
+                        className: a()(C.Ce, C.ro),
                         onClick: t,
                         children: [E.intl.string(E.t.KBoWg9), (0, i.jsx)(o.tfB, {
                             size: "xxs",
                             color: "currentColor",
-                            className: x.__invalid_icon
+                            className: C.__invalid_icon
                         })]
                     }), (0, i.jsxs)(o.MzZ, {
-                        className: a()(x.d3, x.ro),
-                        onClick: C,
+                        className: a()(C.d3, C.ro),
+                        onClick: x,
                         title: "Copy to clipboard",
                         children: [E.intl.string(E.t["XEb+Sj"]), (0, i.jsx)(o.TdU, {
                             size: "xxs",
                             color: "currentColor",
-                            className: x.__invalid_icon
+                            className: C.__invalid_icon
                         })]
                     })]
                 }), !A && !__OVERLAY__ && (0, i.jsx)(o.MzZ, {
-                    className: x.Ce,
-                    href: p.A.getArticleURL(f.MVz.VOICE_VIDEO_TROUBLESHOOTING),
+                    className: C.Ce,
+                    href: g.A.getArticleURL(f.MVz.VOICE_VIDEO_TROUBLESHOOTING),
                     children: E.intl.string(E.t.hvVgAZ)
                 })]
             })]

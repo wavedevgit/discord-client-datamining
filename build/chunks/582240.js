@@ -17,8 +17,8 @@ var i = n(627968),
     p = n(41984),
     A = n(129537),
     x = n(127242),
-    E = n(968898),
-    f = n(481484),
+    f = n(968898),
+    E = n(481484),
     S = n(545807),
     I = n(652215),
     T = n(620819);
@@ -32,8 +32,8 @@ let v = [],
             resizeValidation: j,
             containerRenderGate: y,
             className: w,
-            dragContainerClassName: O
-        } = e, _ = (0, a.bG)([c.A], () => c.A.getWidgetConfig(t.type), [t.type]), N = (0, E.RE)(t.id, E.X1), b = (0, f.A)(), [R, M] = s.useState(() => y?.stores ?? v);
+            dragContainerClassName: _
+        } = e, O = (0, a.bG)([c.A], () => c.A.getWidgetConfig(t.type), [t.type]), N = (0, f.RE)(t.id, f.X1), b = (0, E.A)(), [R, M] = s.useState(() => y?.stores ?? v);
         (0, u.Ay)(() => {
             M(y?.stores ?? v)
         });
@@ -83,9 +83,9 @@ let v = [],
                 resizeX: F,
                 resizeY: K,
                 dragAnywhere: B,
-                constrainAutoSizeToExplicitResizeEvents: q
-            } = _ ?? {},
-            Q = !b,
+                constrainAutoSizeToExplicitResizeEvents: Q
+            } = O ?? {},
+            q = !b,
             J = V || !b,
             $ = s.useMemo(() => ({
                 minX: 0,
@@ -115,7 +115,7 @@ let v = [],
                 [T.Yz]: en,
                 [T.xu]: en && !V,
                 [T.E]: en && V
-            }, O),
+            }, _),
             id: G,
             size: W,
             anchor: X,
@@ -132,8 +132,8 @@ let v = [],
                 zIndex: U
             },
             dragAnywhere: B ?? !1,
-            constrainAutoSizeToExplicitResizeEvents: q ?? !1,
-            active: Q,
+            constrainAutoSizeToExplicitResizeEvents: Q ?? !1,
+            active: q,
             onUpdate: k,
             onClick: P,
             targetWindow: z,

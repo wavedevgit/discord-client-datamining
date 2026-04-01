@@ -1,18 +1,18 @@
 /** chunk id: 83220 params = (module,exports,require) **/
 s.d(e, {
-    lu: () => r,
+    lu: () => i,
     zf: () => n
 });
-var i = s(978862);
+var r = s(978862);
 
-function r() {
+function i() {
     return Date.now() / 1e3
 }
 let n = function() {
     let {
         performance: t
-    } = i.O;
-    if (!t || !t.now) return r;
+    } = r.O;
+    if (!t || !t.now) return i;
     let e = Date.now() - t.now(),
         s = void 0 == t.timeOrigin ? e : t.timeOrigin;
     return () => (s + t.now()) / 1e3
@@ -20,12 +20,12 @@ let n = function() {
 (() => {
     let {
         performance: t
-    } = i.O;
+    } = r.O;
     if (!t || !t.now) return;
     let e = t.now(),
         s = Date.now(),
-        r = t.timeOrigin ? Math.abs(t.timeOrigin + e - s) : 36e5,
+        i = t.timeOrigin ? Math.abs(t.timeOrigin + e - s) : 36e5,
         n = t.timing && t.timing.navigationStart,
         o = "number" == typeof n ? Math.abs(n + e - s) : 36e5;
-    if ((r < 36e5 || o < 36e5) && r <= o) return t.timeOrigin
+    if ((i < 36e5 || o < 36e5) && i <= o) return t.timeOrigin
 })()

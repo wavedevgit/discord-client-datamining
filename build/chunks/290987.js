@@ -1,20 +1,20 @@
 /** chunk id: 290987 params = (module,exports,require) **/
-i.d(t, {
-    $l: () => l.$l,
+i.d(e, {
+    $l: () => r.$l,
     Ay: () => s,
-    pJ: () => l.pJ
+    pJ: () => r.pJ
 });
 var n = i(627968);
 i(64700);
-var a = i(439447),
-    l = i(499979);
-let s = (0, a.A)(function(e) {
+var l = i(439447),
+    r = i(499979);
+let s = (0, l.A)(function(t) {
     let {
-        children: t,
+        children: e,
         className: i
-    } = e;
+    } = t;
     return (0, n.jsx)("span", {
         className: i,
-        children: t
+        children: e
     })
 })

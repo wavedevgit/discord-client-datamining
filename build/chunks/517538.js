@@ -106,8 +106,8 @@ function j() {
         vadUseKrisp: R,
         vadKrispActivationThreshold: w,
         noiseCancellation: D,
-        noiseSuppression: P,
-        noiseSuppressionSupported: M,
+        noiseSuppression: M,
+        noiseSuppressionSupported: P,
         noiseCancellationSupported: L,
         noiseCancellationEnableStats: U,
         vadDuringPreProcess: B
@@ -125,7 +125,7 @@ function j() {
         noiseCancellationSupported: p.Ay.isNoiseCancellationSupported(),
         noiseCancellationEnableStats: p.Ay.getKrispEnableStats(),
         vadDuringPreProcess: p.Ay.getModeOptions().vadDuringPreProcess
-    })), G = D ? "KRISP" : P ? "STANDARD" : "NONE", F = (0, m.v)(), V = i.useCallback(() => {
+    })), G = D ? "KRISP" : M ? "STANDARD" : "NONE", F = (0, m.v)(), V = i.useCallback(() => {
         C.current?.stop(), C.current = null, A(null)
     }, []);
 
@@ -151,7 +151,7 @@ function j() {
         id: "krisp",
         label: "Krisp",
         value: "KRISP"
-    }), M && K.push({
+    }), P && K.push({
         id: "standard",
         label: "Standard",
         value: "STANDARD"

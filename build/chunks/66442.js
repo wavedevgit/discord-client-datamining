@@ -3,8 +3,8 @@ n.d(e, {
     X: () => D,
     default: () => j
 });
-var l = n(627968),
-    i = n(64700),
+var i = n(627968),
+    l = n(64700),
     a = n(503698),
     s = n.n(a),
     r = n(158954),
@@ -17,9 +17,9 @@ var l = n(627968),
     m = n(571694),
     p = n(47167),
     v = n(734057),
-    f = n(954571),
-    x = n(396787),
-    A = n(652215),
+    A = n(954571),
+    f = n(396787),
+    x = n(652215),
     g = n(985018),
     y = n(514693);
 
@@ -27,7 +27,7 @@ function D(t) {
     let {
         channel: e,
         previewIcon: n,
-        onIconChange: i,
+        onIconChange: l,
         onIconRemove: a,
         analyticsLocations: r,
         petite: o = !1,
@@ -35,35 +35,35 @@ function D(t) {
         allowRemovingIcon: u = !0
     } = t, p = void 0 !== n ? n : e?.icon != null ? (0, m.Y)(e, 120) : null, {
         analyticsLocations: v
-    } = (0, _.Ay)(r, h.A.GROUP_DM_ICON_EDITOR), f = o ? 32 : 64;
-    return (0, l.jsxs)("div", {
+    } = (0, _.Ay)(r, h.A.GROUP_DM_ICON_EDITOR), A = o ? 32 : 64;
+    return (0, i.jsxs)("div", {
         className: s()(y.r2, d),
-        children: [(0, l.jsxs)(c.DUT, {
+        children: [(0, i.jsxs)(c.DUT, {
             className: s()(y.zc, {
                 [y.ud]: o
             }),
             "aria-label": g.intl.string(g.t["0qPSMV"]),
-            onClick: () => (0, x.F5)(i, v),
-            children: [null != p ? (0, l.jsx)("img", {
+            onClick: () => (0, f.F5)(l, v),
+            children: [null != p ? (0, i.jsx)("img", {
                 src: p,
                 alt: "",
                 className: y.Dp
-            }) : (0, l.jsx)("div", {
+            }) : (0, i.jsx)("div", {
                 className: y.Pz,
-                children: (0, l.jsx)(c.nFg, {
+                children: (0, i.jsx)(c.nFg, {
                     size: "custom",
-                    width: f,
-                    height: f,
+                    width: A,
+                    height: A,
                     color: "currentColor"
                 })
-            }), (0, l.jsx)("div", {
+            }), (0, i.jsx)("div", {
                 className: y.qc,
-                children: (0, l.jsx)(c.R2l, {
+                children: (0, i.jsx)(c.R2l, {
                     color: "currentColor",
                     size: o ? "xs" : "refresh_sm"
                 })
             })]
-        }), null != p && u ? (0, l.jsx)(c.QWc, {
+        }), null != p && u ? (0, i.jsx)(c.QWc, {
             variant: "critical",
             onClick: a,
             "aria-label": g.intl.string(g.t["uY+Nk/"]),
@@ -83,7 +83,7 @@ let j = function(t) {
         setHasPendingChanges: s,
         closeOrShowDiscardChangesAlert: m,
         location: j
-    } = t, C = (0, o.bG)([v.A], () => v.A.getChannel(e)), I = C?.name, w = (0, p.e5)(C), [E, T] = i.useState(I ?? ""), [b, R] = i.useState(void 0), k = void 0 !== b, {
+    } = t, C = (0, o.bG)([v.A], () => v.A.getChannel(e)), I = C?.name, w = (0, p.e5)(C), [E, T] = l.useState(I ?? ""), [b, R] = l.useState(void 0), k = void 0 !== b, {
         analyticsLocations: N
     } = (0, _.Ay)(j, h.A.GROUP_DM_EDIT_MODAL), P = {
         channel_id: e,
@@ -93,37 +93,37 @@ let j = function(t) {
         old_name_set: "" !== I,
         old_icon_set: C?.icon != null
     };
-    return (i.useEffect(() => {
+    return (l.useEffect(() => {
         s(E !== I || k)
-    }, [E, I, k, s]), (0, u.Ay)(() => (f.default.track(A.HAw.GDM_EDIT_INTERACTED, {
+    }, [E, I, k, s]), (0, u.Ay)(() => (A.default.track(x.HAw.GDM_EDIT_INTERACTED, {
         ...P,
         action: "opened"
     }), () => {
-        f.default.track(A.HAw.GDM_EDIT_INTERACTED, {
+        A.default.track(x.HAw.GDM_EDIT_INTERACTED, {
             ...P,
             action: "dismissed"
         })
-    })), null == C) ? null : (0, l.jsx)(_.f5, {
+    })), null == C) ? null : (0, i.jsx)(_.f5, {
         value: N,
-        children: (0, l.jsx)("form", {
+        children: (0, i.jsx)("form", {
             onSubmit: t => {
                 t.preventDefault();
-                let l = E !== I,
-                    i = void 0 !== b;
-                if (f.default.track(A.HAw.GDM_EDIT_INTERACTED, {
+                let i = E !== I,
+                    l = void 0 !== b;
+                if (A.default.track(x.HAw.GDM_EDIT_INTERACTED, {
                         ...P,
                         action: "saved",
                         new_name_set: "" !== E,
-                        new_icon_set: (i ? b : C?.icon) != null,
-                        name_changed: l,
-                        icon_changed: i
-                    }), l || i) {
+                        new_icon_set: (l ? b : C?.icon) != null,
+                        name_changed: i,
+                        icon_changed: l
+                    }), i || l) {
                     let t = {};
-                    l && (t.name = E), i && (t.icon = b), d.A.updateChannel(e, t, j).catch(x.XA)
+                    i && (t.name = E), l && (t.icon = b), d.A.updateChannel(e, t, j).catch(f.XA)
                 }
                 n()
             },
-            children: (0, l.jsx)(r.Modal, {
+            children: (0, i.jsx)(r.Modal, {
                 title: g.intl.string(g.t["5Q9+/L"]),
                 actions: [{
                     text: g.intl.string(g.t["ETE/oC"]),
@@ -137,18 +137,18 @@ let j = function(t) {
                 }],
                 onClose: () => Promise.resolve(m()),
                 transitionState: a,
-                children: (0, l.jsxs)("div", {
+                children: (0, i.jsxs)("div", {
                     className: y.jE,
-                    children: [(0, l.jsx)(D, {
+                    children: [(0, i.jsx)(D, {
                         channel: C,
                         previewIcon: b,
                         onIconChange: t => R(t.imageUri),
                         onIconRemove: () => R(null),
                         analyticsLocations: N
-                    }), (0, l.jsx)(c.ksK, {
+                    }), (0, i.jsx)(c.ksK, {
                         "aria-label": g.intl.string(g.t.GEGW3P),
                         placeholder: w ?? "",
-                        maxLength: A.Ign,
+                        maxLength: x.Ign,
                         value: E,
                         onChange: T,
                         autoFocus: !0

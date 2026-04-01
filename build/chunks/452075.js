@@ -47,12 +47,12 @@ function p() {
             return r.A.isVisible(t) && r.A.isFocused(t)
         }, [e]),
         x = i.useRef([]),
-        E = i.useMemo(() => (0, a.pi)(n).map(e => g(e)), [n]),
-        f = i.useMemo(() => n.length > 0, [n]),
-        S = !p && f && A;
+        f = i.useMemo(() => (0, a.pi)(n).map(e => g(e)), [n]),
+        E = i.useMemo(() => n.length > 0, [n]),
+        S = !p && E && A;
     i.useEffect(() => {
         x.current = []
-    }, [p, E]), i.useEffect(() => {
+    }, [p, f]), i.useEffect(() => {
         if (!S) {
             x.current = [];
             return
@@ -67,7 +67,7 @@ function p() {
                             if (t.includes(e)) return !0;
                         return !1
                     }(e);
-                i || s || n.push(t), 0 !== E.length && n.length === E.length && E.every(e => n.some(t => m(e, t))) && (e.preventDefault(), e.stopPropagation())
+                i || s || n.push(t), 0 !== f.length && n.length === f.length && f.every(e => n.some(t => m(e, t))) && (e.preventDefault(), e.stopPropagation())
             },
             n = e => {
                 let t = g(e),
@@ -78,5 +78,5 @@ function p() {
         return e.addEventListener("keydown", t, !0), e.addEventListener("keyup", n, !0), () => {
             e.removeEventListener("keydown", t, !0), e.removeEventListener("keyup", n, !0)
         }
-    }, [S, E, e])
+    }, [S, f, e])
 }

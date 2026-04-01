@@ -4,13 +4,13 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var l = n(503698),
-    a = n.n(l),
+var a = n(503698),
+    l = n.n(a),
     s = n(311907),
     r = n(990078),
     o = n(397927),
-    d = n(915089),
-    c = n(152621),
+    c = n(915089),
+    d = n(152621),
     u = n(61881),
     g = n(788593),
     m = n(985018),
@@ -21,13 +21,13 @@ function f(e) {
     let {
         applicationId: t,
         userId: n,
-        onClick: l
+        onClick: a
     } = e, {
-        coverImageUrl: a,
-        gameName: d,
+        coverImageUrl: l,
+        gameName: c,
         isLoading: f
-    } = (0, c.A)(t), h = (0, s.bG)([u.A], () => u.A.suggestedFetchIsLoading), _ = m.intl.formatToPlainString(m.t["3mb1s5"], {
-        game: d
+    } = (0, d.A)(t), h = (0, s.bG)([u.A], () => u.A.suggestedFetchIsLoading), _ = m.intl.formatToPlainString(m.t["3mb1s5"], {
+        game: c
     });
     return f || h ? (0, i.jsx)("div", {
         className: x.mD
@@ -36,12 +36,12 @@ function f(e) {
         ariaHidden: !0,
         children: (0, i.jsxs)(o.DUT, {
             className: p.c9,
-            onClick: l,
+            onClick: a,
             "aria-label": _,
             children: [(0, i.jsx)(g.A, {
                 className: p.Iv,
-                imageSrc: a,
-                gameName: d,
+                imageSrc: l,
+                gameName: c,
                 applicationId: t,
                 userId: n,
                 disableInteraction: !0
@@ -58,25 +58,25 @@ function h(e) {
     let {
         userId: t,
         games: n,
-        onDismiss: l,
+        onDismiss: a,
         onClick: s,
         className: r
-    } = e, c = (0, d.GV)();
+    } = e, d = (0, c.GV)();
     return (0, i.jsxs)("aside", {
-        className: a()(p.kL, r),
-        "aria-labelledby": c,
+        className: l()(p.kL, r),
+        "aria-labelledby": d,
         children: [(0, i.jsxs)("div", {
             className: p.wx,
             children: [(0, i.jsx)(o.DUT, {
                 className: p.r,
                 "aria-label": m.intl.string(m.t["pUR+3g"]),
-                onClick: l,
+                onClick: a,
                 children: (0, i.jsx)(o.PGe, {
                     size: "sm",
                     color: "currentColor"
                 })
             }), (0, i.jsx)(o.Heading, {
-                id: c,
+                id: d,
                 variant: "text-xs/medium",
                 color: "text-subtle",
                 children: m.intl.string(m.t.zMUr6Z)

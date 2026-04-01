@@ -1,31 +1,31 @@
 /** chunk id: 462226 params = (module,exports,require) **/
-i.d(t, {
-    A: () => c
+i.d(e, {
+    A: () => d
 });
 var n = i(627968);
 i(64700);
-var a = i(397927),
-    l = i(626584),
+var l = i(397927),
+    r = i(626584),
     s = i(833349),
-    r = i(652215),
+    a = i(652215),
     o = i(985018);
 
-function c(e) {
+function d(t) {
     let {
-        activity: t,
+        activity: e,
         user: i,
-        variant: c = "secondary",
-        onAction: d,
-        ...u
-    } = e;
-    return (0, s.A)(t, r.jUm.INSTANCE) ? (0, n.jsx)(a.Button, {
+        variant: d = "secondary",
+        onAction: u,
+        ...c
+    } = t;
+    return (0, s.A)(e, a.jUm.INSTANCE) ? (0, n.jsx)(l.Button, {
         text: o.intl.string(o.t.vwl1PK),
-        variant: c,
+        variant: d,
         size: "sm",
         onClick: () => {
-            d?.(), new l.A("UserActivityActions").log("notify", i.id, t)
+            u?.(), new r.A("UserActivityActions").log("notify", i.id, e)
         },
         fullWidth: !0,
-        ...u
+        ...c
     }) : null
 }

@@ -1,6 +1,6 @@
 /** chunk id: 667285 params = (module,exports,require) **/
 n.d(t, {
-    A: () => g
+    A: () => p
 });
 var i = n(627968);
 n(64700);
@@ -15,21 +15,21 @@ var l = n(311907),
     h = n(786051),
     m = n(652215),
     A = n(559868),
-    p = n(985018);
+    g = n(985018);
 
-function g(e) {
+function p(e) {
     let {
         channel: t,
-        children: g
+        children: p
     } = e, f = (0, l.bG)([c.A], () => c.A.isBlocked(t.getRecipientId()));
     (0, r.A)(t.id);
     let _ = (0, o.A)(t.id),
         E = t.isSystemDM(),
-        x = f && !E && !t.isMultiUserDM(),
-        C = {};
+        C = f && !E && !t.isMultiUserDM(),
+        x = {};
     if (E) {
-        let e = _ ? p.intl.string(p.t["+KSnWX"]) : p.intl.string(p.t.hvVgAZ);
-        C.message = p.intl.string(p.t.Bt2N7D), C.subtitle = p.intl.string(p.t["n/Vzkw"]), C.buttonText = e, C.buttonIcon = _ ? s.tfB : void 0, C.onButtonClick = () => {
+        let e = _ ? g.intl.string(g.t["+KSnWX"]) : g.intl.string(g.t.hvVgAZ);
+        x.message = g.intl.string(g.t.Bt2N7D), x.subtitle = g.intl.string(g.t["n/Vzkw"]), x.buttonText = e, x.buttonIcon = _ ? s.tfB : void 0, x.onButtonClick = () => {
             if (_) {
                 open(A.Do), d.default.track(m.HAw.CHANGE_LOG_CTA_CLICKED, {
                     cta_type: "chat_blocker",
@@ -38,12 +38,12 @@ function g(e) {
                 return
             }
             open(u.A.getArticleURL(m.MVz.SYSTEM_DMS))
-        }, C.imageSrc = n(388668)
-    } else x && (C.message = p.intl.string(p.t["9T6N5/"]), C.buttonText = p.intl.string(p.t.XyHpKH), C.onButtonClick = () => {
+        }, x.imageSrc = n(388668)
+    } else C && (x.message = g.intl.string(g.t["9T6N5/"]), x.buttonText = g.intl.string(g.t.XyHpKH), x.onButtonClick = () => {
         a.A.unblockUser(t.getRecipientId())
     });
     return (0, i.jsx)(h.A, {
-        ...C,
-        children: g
+        ...x,
+        children: p
     })
 }

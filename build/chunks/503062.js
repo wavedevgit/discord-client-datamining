@@ -14,8 +14,8 @@ var i = n(627968),
     u = n(178418),
     h = n(87664),
     p = n(290863),
-    _ = n(939496),
-    f = n(652215),
+    f = n(939496),
+    _ = n(652215),
     A = n(996988),
     g = n(816223);
 let m = l._3J.SIZE_40,
@@ -31,7 +31,7 @@ function E(e) {
     } = e, {
         theme: C,
         themeType: I
-    } = (0, _.E)(), N = s.useMemo(() => t.isNonUserBot() || (0, u.c)(t, v), [t, v]), {
+    } = (0, f.E)(), N = s.useMemo(() => t.isNonUserBot() || (0, u.c)(t, v), [t, v]), {
         activities: T,
         isMobileOnline: b
     } = (0, a.cf)([p.A], () => ({
@@ -72,7 +72,7 @@ function E(e) {
             src: t.getAvatarURL(y, x),
             "aria-label": t.username,
             size: m,
-            status: N ? f.clD.UNKNOWN : E,
+            status: N ? _.clD.UNKNOWN : E,
             statusBackdropColor: N ? void 0 : (0, l.C$5)(C),
             isMobile: b,
             className: g.my

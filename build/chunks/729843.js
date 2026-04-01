@@ -14,19 +14,19 @@ var i = n(387755),
     u = n(287809),
     h = n(684748),
     p = n(652215),
-    _ = n(672396),
-    f = n(985018);
+    f = n(672396),
+    _ = n(985018);
 
 function A(e) {
     let t = (0, r.m1)(e, u.default, c.A),
-        n = f.intl.string(f.t.ssrVzG),
+        n = _.intl.string(_.t.ssrVzG),
         A = (0, l.Y)(e),
         g = (0, d.A)(e),
         {
             trackView: m,
             trackClick: x
-        } = (0, h.Y)(_.KS.IncomingCall, {
-            notif_type: _.KS.IncomingCall,
+        } = (0, h.Y)(f.KS.IncomingCall, {
+            notif_type: f.KS.IncomingCall,
             notif_user_id: g,
             guild_id: e.guild_id,
             channel_id: e.id,
@@ -36,9 +36,9 @@ function A(e) {
         icon: A,
         title: t,
         body: n,
-        hint: e => (0, o.sI)(e, (0, h.J)(), f.t.Odi54y),
-        confirmText: f.intl.string(f.t["0D/6Rz"]),
-        cancelText: f.intl.string(f.t.BVN4pL),
+        hint: e => (0, o.sI)(e, (0, h.J)(), _.t.Odi54y),
+        confirmText: _.intl.string(_.t["0D/6Rz"]),
+        cancelText: _.intl.string(_.t.BVN4pL),
         onNotificationShow: () => {
             m()
         },

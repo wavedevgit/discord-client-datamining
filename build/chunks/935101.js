@@ -1,44 +1,44 @@
 /** chunk id: 935101 params = (module,exports,require) **/
-a.d(t, {
-    A: () => b
+n.d(t, {
+    A: () => g
 });
-var n = a(64700),
-    r = a(311907),
-    o = a(205693),
-    i = a(451988),
-    _ = a(430452),
-    s = a(383501),
-    l = a(485296),
-    c = a(927813),
-    u = a(499156),
-    d = a(731854);
-let p = 3 * c.A.Millis.SECOND,
-    f = +c.A.Millis.DAY;
+var r = n(64700),
+    a = n(311907),
+    i = n(205693),
+    l = n(451988),
+    s = n(430452),
+    o = n(383501),
+    _ = n(485296),
+    u = n(927813),
+    c = n(499156),
+    d = n(731854);
+let p = 3 * u.A.Millis.SECOND,
+    A = +u.A.Millis.DAY;
 
-function b() {
+function g() {
     let {
         showPTTSpeakingIndicator: e
-    } = u.A.useConfig({
+    } = c.A.useConfig({
         location: "useSpeakingWhilePTT"
-    }), [t, a] = n.useState(!1), c = (0, r.bG)([_.Ay], () => _.Ay.getMode() === d.TB.PUSH_TO_TALK), b = (0, r.bG)([s.A], () => s.A.getRTCConnectionId()), g = (0, r.bG)([_.Ay], () => {
-        let e = _.Ay.getModeOptions().updatedAt;
-        return null != e && Date.now() - e < f
-    }), A = n.useRef(new i.Ep);
-    return n.useEffect(() => {
-        a(!1)
-    }, [b]), n.useEffect(() => {
+    }), [t, n] = r.useState(!1), u = (0, a.bG)([s.Ay], () => s.Ay.getMode() === d.TB.PUSH_TO_TALK), g = (0, a.bG)([o.A], () => o.A.getRTCConnectionId()), f = (0, a.bG)([s.Ay], () => {
+        let e = s.Ay.getModeOptions().updatedAt;
+        return null != e && Date.now() - e < A
+    }), b = r.useRef(new l.Ep);
+    return r.useEffect(() => {
+        n(!1)
+    }, [g]), r.useEffect(() => {
         let t = 0,
-            n = A.current;
+            r = b.current;
 
-        function r(e, r) {
-            let o = (r & d.ME.VOICE) === d.ME.VOICE,
-                i = l.A.isCurrentUserPTTActive();
-            o && !i ? ++t >= 6 && (a(!0), n.start(p, () => {
-                a(!1)
+        function a(e, a) {
+            let i = (a & d.ME.VOICE) === d.ME.VOICE,
+                l = _.A.isCurrentUserPTTActive();
+            i && !l ? ++t >= 6 && (n(!0), r.start(p, () => {
+                n(!1)
             })) : t = 0
         }
-        return g && e && c && null != b && _.Ay.getMediaEngine().on(o.bg.VoiceActivity, r), () => {
-            _.Ay.getMediaEngine().removeListener(o.bg.VoiceActivity, r), n.stop()
+        return f && e && u && null != g && s.Ay.getMediaEngine().on(i.bg.VoiceActivity, a), () => {
+            s.Ay.getMediaEngine().removeListener(i.bg.VoiceActivity, a), r.stop()
         }
-    }, [e, c, g, b]), t
+    }, [e, u, f, g]), t
 }

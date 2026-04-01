@@ -17,8 +17,8 @@ var i = n(627968),
     p = n(555528),
     A = n(309010),
     x = n(41984),
-    E = n(412477),
-    f = n(75280),
+    f = n(412477),
+    E = n(75280),
     S = n(433560),
     I = n(324093),
     T = n(897720),
@@ -28,8 +28,8 @@ var i = n(627968),
 
 function y(e) {
     var t, n;
-    let y, w, O, {
-            id: _,
+    let y, w, _, {
+            id: O,
             widget: N,
             size: b,
             locked: R,
@@ -45,9 +45,9 @@ function y(e) {
         U = D ? T.IV.HORIZONTAL : T.IV.VERTICAL,
         H = U === T.IV.VERTICAL,
         Y = (0, l.bG)([p.A], () => {
-            let e = p.A.getWidget(_);
+            let e = p.A.getWidget(O);
             return !!(0, T.dO)(e) && !R && (e.meta.showAllStreams ?? !0)
-        }, [_, R]),
+        }, [O, R]),
         Z = (0, l.bG)([A.A], () => A.A.getVoiceChannelId()),
         W = (0, l.bG)([m.A], () => m.A.getChannel(Z)),
         X = (0, l.bG)([g.default], () => g.default.getId()),
@@ -55,7 +55,7 @@ function y(e) {
             streamParticipants: F,
             activeStreams: K,
             participantsVersion: B
-        } = (t = P && H || G && D, n = !P && H || !G && D, y = (0, l.yK)([h.A], () => null == Z ? [] : h.A.getAllActiveStreamsForChannel(Z)), w = s.useMemo(() => new Set(y.map(e => (0, u._z)(e))), [y]), O = (0, l.bG)([d.A], () => null == Z ? -1 : d.A.getParticipantsVersion(Z)), {
+        } = (t = P && H || G && D, n = !P && H || !G && D, y = (0, l.yK)([h.A], () => null == Z ? [] : h.A.getAllActiveStreamsForChannel(Z)), w = s.useMemo(() => new Set(y.map(e => (0, u._z)(e))), [y]), _ = (0, l.bG)([d.A], () => null == Z ? -1 : d.A.getParticipantsVersion(Z)), {
             streamParticipants: (0, l.yK)([d.A, h.A], () => {
                 if (null == Z) return [];
 
@@ -79,10 +79,10 @@ function y(e) {
                 }), i
             }, [Z, w, X, Y, t, n]),
             activeStreams: w,
-            participantsVersion: O
+            participantsVersion: _
         }),
-        q = F.length,
-        Q = (0, l.bG)([c.A], () => c.A.getWindowState(v.f), []),
+        Q = F.length,
+        q = (0, l.bG)([c.A], () => c.A.getWindowState(v.f), []),
         {
             tileWidth: J,
             tileHeight: $,
@@ -91,14 +91,14 @@ function y(e) {
             containerRef: en,
             containerMinMaxSizes: ei
         } = (0, I.K2)({
-            tileCount: q,
+            tileCount: Q,
             padding: M,
             borderWidth: L,
             isVertical: H,
             widgetSize: b
         }),
         es = {
-            id: _,
+            id: O,
             widget: N,
             layout: U,
             participants: F.length,
@@ -112,23 +112,23 @@ function y(e) {
             orientedPosition: {
                 top: 0,
                 left: 0,
-                bottom: Q?.height ?? et,
-                right: Q?.width ?? ee
+                bottom: q?.height ?? et,
+                right: q?.width ?? ee
             },
             locked: R
         };
     (0, I.k1)({
-        id: _,
+        id: O,
         streamParticipants: F,
         layout: U,
         widgetLayoutSpecs: es
     });
-    let el = null == W || 0 === K.size && R || 0 === q && !R;
+    let el = null == W || 0 === K.size && R || 0 === Q && !R;
     return (s.useEffect(() => {
         a.A.setGpuBoostRequested(x.y7.OVERLAY_VIDEO_STREAM_RENDERING, !el)
     }, [el]), (0, o.Ay)(() => () => {
         a.A.setGpuBoostRequested(x.y7.OVERLAY_VIDEO_STREAM_RENDERING, !1)
-    }), (el || !k) && R) ? null : el && !R ? V ? R ? null : (0, i.jsx)(E.g, {
+    }), (el || !k) && R) ? null : el && !R ? V ? R ? null : (0, i.jsx)(f.g, {
         emptyText: C.intl.string(C.t["T6+rXy"]),
         icon: r.Fzq,
         absolute: !0
@@ -138,8 +138,8 @@ function y(e) {
             opacity: z
         },
         ref: en,
-        children: (0, i.jsx)(f.A, {
-            widgetId: _,
+        children: (0, i.jsx)(E.A, {
+            widgetId: O,
             tileWidth: J,
             tileHeight: $,
             locked: R,

@@ -59,8 +59,8 @@ let R = {
             onBufferingStart: z,
             onBufferingEnd: X,
             onFocusChange: W,
-            onVisibilityChange: V,
-            onSeek: H,
+            onVisibilityChange: H,
+            onSeek: V,
             renderOverlay: J,
             renderPersistentOverlay: Z,
             onHlsInstance: q,
@@ -84,7 +84,7 @@ let R = {
         l.useLayoutEffect(() => {
             eK.current = performance.now()
         }, []);
-        let [e_, eG] = l.useState(.3), [eQ, e$] = l.useState(!1), [eF, eY] = l.useState(!1), [ez, eX] = l.useState(!1), [eW, eV] = l.useState(!1), eH = (0, o.bG)([p.A], () => p.A.useReducedMotion), eJ = (0, l.useRef)(null), eZ = (0, l.useRef)(null), eq = l.useRef(!0), [e0, e1] = l.useState(null), e6 = l.useCallback((e, t) => {
+        let [e_, eG] = l.useState(.3), [eQ, e$] = l.useState(!1), [eF, eY] = l.useState(!1), [ez, eX] = l.useState(!1), [eW, eH] = l.useState(!1), eV = (0, o.bG)([p.A], () => p.A.useReducedMotion), eJ = (0, l.useRef)(null), eZ = (0, l.useRef)(null), eq = l.useRef(!0), [e0, e1] = l.useState(null), e6 = l.useCallback((e, t) => {
             I?.(e, t)
         }, [I]), {
             isHlsActive: e2
@@ -125,8 +125,8 @@ let R = {
         }, [el, a, eo, eu, ec, ed, ep, tl]), l.useEffect(() => {
             eu && W?.(eo, ep)
         }, [eo, eu, ep, W]), l.useEffect(() => {
-            ed && V?.(ec, ep)
-        }, [ec, ed, ep, V]);
+            ed && H?.(ec, ep)
+        }, [ec, ed, ep, H]);
         let [ta, ti] = l.useState(!1), ts = l.useRef(null), to = l.useRef(0);
         l.useLayoutEffect(() => {
             to.current = performance.now()
@@ -151,7 +151,7 @@ let R = {
         let td = !ta && (eE || ef || ep === u.Q6.ENDED),
             tm = l.useCallback(() => {
                 let e = (0, f.qf)(eJ.current?.parentNode, eJ.current);
-                null == e || (0, f._U)(e) || (e.removeEventListener(f.Wb, tm), eV(!1), G?.(!1), tn(u.oA.MD))
+                null == e || (0, f._U)(e) || (e.removeEventListener(f.Wb, tm), eH(!1), G?.(!1), tn(u.oA.MD))
             }, [G]),
             tp = () => {
                 null == eJ.current || (tf(Math.max(eJ.current.currentTime - 10, 0)), ep === u.Q6.ENDED && tl(u.Q6.PAUSED, u.KB.SEEK))
@@ -172,8 +172,8 @@ let R = {
                 let t = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1];
                 if (null == eJ.current) return;
                 let n = eJ.current.currentTime;
-                eS(e / (eJ.current.duration ?? 1) * 100), eN(!0), e7(!1), eJ.current.currentTime = e, t && H?.(n, e)
-            }, [H]),
+                eS(e / (eJ.current.duration ?? 1) * 100), eN(!0), e7(!1), eJ.current.currentTime = e, t && V?.(n, e)
+            }, [V]),
             tx = () => {
                 if (null != eJ.current) switch (ep) {
                     case u.Q6.ENDED:
@@ -247,15 +247,15 @@ let R = {
         }));
         l.useEffect(() => (tN({
             captionHeightSpring: ez && null != e9 ? tC.current?.clientHeight ?? 0 : 0,
-            immediate: eH
+            immediate: eV
         }), () => {
             tA.stop()
-        }), [ez, tN, eH, e9, tA]), l.useEffect(() => (tS({
+        }), [ez, tN, eV, e9, tA]), l.useEffect(() => (tS({
             controlBarAnimSpring: td || eM ? 1 : 0,
-            immediate: eH
+            immediate: eV
         }), () => {
             ty.stop()
-        }), [td, tS, eH, eM, ty]);
+        }), [td, tS, eV, eM, ty]);
         let tT = ep === u.Q6.ENDED && null != K,
             tR = l.useCallback(function() {
                 let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : u.KB.USER;
@@ -552,7 +552,7 @@ let R = {
                             handleFullScreenBtnClick: () => {
                                 let e = !eW,
                                     t = (0, f.qf)(eJ.current?.parentNode, eJ.current);
-                                e && null != t ? ((0, f.tl)(t), t.addEventListener(f.Wb, tm), G?.(!0), tn(u.oA.LG)) : e || null == t || (t.removeEventListener(f.Wb, tm), G?.(!1), (0, f.sP)(t), tn(u.oA.MD)), eV(e)
+                                e && null != t ? ((0, f.tl)(t), t.addEventListener(f.Wb, tm), G?.(!0), tn(u.oA.LG)) : e || null == t || (t.removeEventListener(f.Wb, tm), G?.(!1), (0, f.sP)(t), tn(u.oA.MD)), eH(e)
                             },
                             handleSeekBackBtnClick: tp,
                             handleSeekForwardBtnClick: th,

@@ -1,9 +1,9 @@
 /** chunk id: 830004 params = (module,exports,require) **/
 n.d(t, {
-    i: () => l
+    i: () => r
 });
 var i = n(723702);
-let l = {
+let r = {
     binds: ["mod+alt+i"],
     comboKeysBindGlobal: !0,
     action(e) {

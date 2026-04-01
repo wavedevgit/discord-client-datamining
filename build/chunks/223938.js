@@ -14,20 +14,20 @@ var i = n(627968),
     h = n(827734),
     m = n(990078),
     A = n(397927),
-    p = n(608299),
-    g = n(155718),
+    g = n(608299),
+    p = n(155718),
     f = n(565150),
     _ = n(775602),
     E = n(793574),
-    x = n(688810),
-    C = n(861382),
+    C = n(688810),
+    x = n(861382),
     S = n(875163),
     I = n(224805),
     T = n(598071),
-    v = n(101555),
-    N = n(834755),
+    N = n(101555),
+    b = n(834755),
     y = n(703007),
-    b = n(2553),
+    v = n(2553),
     j = n(946274),
     R = n(135621),
     M = n(406704),
@@ -47,8 +47,8 @@ var i = n(627968),
     W = n(171593),
     z = n(652215);
 n(827669), n(294920);
-var Y = n(478644),
-    q = n(985018),
+var q = n(478644),
+    Y = n(985018),
     J = n(287303),
     $ = n(351671);
 
@@ -63,7 +63,7 @@ function Z(e, t, n) {
         media: {
             url: l,
             proxyUrl: l,
-            loadingState: g.TD.UNKNOWN,
+            loadingState: p.TD.UNKNOWN,
             flags: 0
         },
         description: t ?? void 0,
@@ -78,14 +78,14 @@ let X = l.memo(l.forwardRef(function(e, t) {
             id: h,
             required: m,
             disabled: f,
-            accessibilityLabel: v,
+            accessibilityLabel: N,
             channel: y,
-            type: b,
+            type: v,
             focused: j,
             onChange: w,
             onResize: U,
             onBlur: K,
-            onFocus: Y,
+            onFocus: q,
             onKeyDown: X,
             onSubmit: ei,
             promptToUpload: el,
@@ -99,36 +99,36 @@ let X = l.memo(l.forwardRef(function(e, t) {
             autoCompletePosition: eh,
             disableThemedBackground: em = !1,
             emojiPickerCloseOnModalOuterClick: eA,
-            parentModalKey: ep
+            parentModalKey: eg
         } = e,
-        eg = I.A.useField("channelDrafts")[y.id],
-        ef = eg?.title ?? "",
-        e_ = eg?.heroFile,
-        eE = eg?.publish ?? !0,
-        ex = eg?.createThread ?? !0;
-    o()(null != b, "chat input type must be set");
+        ep = I.A.useField("channelDrafts")[y.id],
+        ef = ep?.title ?? "",
+        e_ = ep?.heroFile,
+        eE = ep?.publish ?? !0,
+        eC = ep?.createThread ?? !0;
+    o()(null != v, "chat input type must be set");
     let {
-        analyticsLocations: eC
-    } = (0, x.Ay)(E.A.CHANNEL_TEXT_AREA), eS = (0, V.L0)(t), eI = l.useRef(null), eT = l.useRef(null), ev = l.useRef(null), eN = l.useRef(null);
+        analyticsLocations: ex
+    } = (0, C.Ay)(E.A.CHANNEL_TEXT_AREA), eS = (0, V.L0)(t), eI = l.useRef(null), eT = l.useRef(null), eN = l.useRef(null), eb = l.useRef(null);
     eu?.(eT.current);
     let {
         activeCommand: ey
-    } = (0, u.cf)([C.A], () => ({
-        activeCommand: b.commands?.enabled ? C.A.getActiveCommand(y.id) : null,
-        activeCommandSection: b.commands?.enabled ? C.A.getActiveCommandSection(y.id) : null
+    } = (0, u.cf)([x.A], () => ({
+        activeCommand: v.commands?.enabled ? x.A.getActiveCommand(y.id) : null,
+        activeCommandSection: v.commands?.enabled ? x.A.getActiveCommandSection(y.id) : null
     })), {
-        isLurking: eb,
+        isLurking: ev,
         isPendingMember: ej,
         disabled: eR,
         canAttachFiles: eM,
         canEveryoneSendMessages: eD
-    } = (0, V.Sk)(y, b, ey, f), eO = !D.D_.useSetting() && !(0, k.isAndroidWeb)() && null != window.ResizeObserver, eL = !eO || !b.commands?.enabled || !j || "/" !== s, eP = (0, R.A)(), {
+    } = (0, V.Sk)(y, v, ey, f), eO = !D.D_.useSetting() && !(0, k.isAndroidWeb)() && null != window.ResizeObserver, eL = !eO || !v.commands?.enabled || !j || "/" !== s, eP = (0, R.A)(), {
         fontSize: ew
     } = (0, u.cf)([_.A], () => ({
         fontSize: _.A.fontSize,
         isSubmitButtonEnabled: _.A.isSubmitButtonEnabled
     })), ek = (0, u.bG)([L.A], () => L.A.isEnabled()), eU = (0, M.n)(y);
-    (0, V.N_)(b, eR, y.id);
+    (0, V.N_)(v, eR, y.id);
     let {
         eventEmitter: eG,
         handleEditorSelectionChanged: eF
@@ -138,21 +138,21 @@ let X = l.memo(l.forwardRef(function(e, t) {
                 heroFile: null
             }), eT.current?.blur()), e),
             n = [],
-            i = (ef.length > 0 ? ef : e.value.length > 0 ? e.value : q.intl.string(q.t["7Xm5QI"])).slice(0, z.Ign);
+            i = (ef.length > 0 ? ef : e.value.length > 0 ? e.value : Y.intl.string(Y.t["7Xm5QI"])).slice(0, z.Ign);
         if (null == e_) return ei({
             ...e,
             announcementSendOptions: {
-                createThread: eU && ex,
+                createThread: eU && eC,
                 threadName: i,
                 publish: eE
             }
         }).then(t);
         n.push({
-            type: g.I5.MEDIA_GALLERY,
+            type: p.I5.MEDIA_GALLERY,
             items: [Z(`attachment://${e_.name}`, null, !1)],
             id: "82733"
         }), e.value.length > 0 && n.push({
-            type: g.I5.TEXT_DISPLAY,
+            type: p.I5.TEXT_DISPLAY,
             content: e.value,
             id: "82744"
         });
@@ -161,12 +161,12 @@ let X = l.memo(l.forwardRef(function(e, t) {
             a = l.filter(e => !e.isImage && !e.isVideo && e.filename !== e_?.name),
             r = s.map(e => Z(`attachment://${e.filename}`, e.description, e.spoiler));
         return r.length > 0 && n.push({
-            type: g.I5.MEDIA_GALLERY,
+            type: p.I5.MEDIA_GALLERY,
             items: r,
             id: "82755"
         }), a.forEach((e, t) => {
             n.push({
-                type: g.I5.FILE,
+                type: p.I5.FILE,
                 file: Z(`attachment://${e.filename}`, e.description, e.spoiler).media,
                 id: `${82766+t}`,
                 spoiler: e.spoiler,
@@ -177,20 +177,20 @@ let X = l.memo(l.forwardRef(function(e, t) {
             ...e,
             components: n,
             announcementSendOptions: {
-                createThread: eU && ex,
+                createThread: eU && eC,
                 threadName: i,
                 publish: eE
             }
         }).then(t)
-    }, [ei, ef, e_, y.id, ex, eE, eU]), {
+    }, [ei, ef, e_, y.id, eC, eE, eU]), {
         submit: eB,
         handleSubmit: eV
-    } = (0, V.Zx)(eH, b, eT, eN, y.id), {
+    } = (0, V.Zx)(eH, v, eT, eb, y.id), {
         autocompleteRef: eK,
         handleMaybeShowAutocomplete: eW,
         handleHideAutocomplete: ez
-    } = (0, V.v7)(), eY = l.useCallback(() => eN?.current?.hide(), []), {
-        editorHeight: eq,
+    } = (0, V.v7)(), eq = l.useCallback(() => eb?.current?.hide(), []), {
+        editorHeight: eY,
         handleResize: eJ
     } = (0, V.ck)(U), {
         handleTab: e$,
@@ -204,14 +204,14 @@ let X = l.memo(l.forwardRef(function(e, t) {
         expressionPickerView: eQ,
         shouldHideExpressionPicker: e0,
         handleOuterClick: e1
-    } = (0, V.MD)(b, eT, y.id), {
+    } = (0, V.MD)(v, eT, y.id), {
         handleAutocompleteVisibilityChange: e2
-    } = (0, V.uW)(b, y.id), e3 = (0, V.NO)(eT), e7 = (0, V.Vu)(eB, b, eT), e5 = (0, V.HG)(eT), e9 = (0, V.C)({
+    } = (0, V.uW)(v, y.id), e3 = (0, V.NO)(eT), e7 = (0, V.Vu)(eB, v, eT), e5 = (0, V.HG)(eT), e9 = (0, V.C)({
         editorRef: eT,
         disabled: eR,
         textValue: s,
         channelId: y.id,
-        chatInputType: b,
+        chatInputType: v,
         submit: eH
     });
     (0, G.R)(eG, y.guild_id, y.id);
@@ -242,23 +242,23 @@ let X = l.memo(l.forwardRef(function(e, t) {
         return () => clearTimeout(e)
     }, []), tc = l.useCallback(() => {
         if (null == e_) return;
-        let e = P.A.getUploads(y.id, b.drafts.type),
+        let e = P.A.getUploads(y.id, v.drafts.type),
             t = e.find(e => e.filename === e_.name)?.id;
-        null != t && p.A.remove(y.id, t, O.C.ChannelMessage), (0, I.x)(y.id, {
+        null != t && g.A.remove(y.id, t, O.C.ChannelMessage), (0, I.x)(y.id, {
             heroFile: null
         })
-    }, [y.id, e_, b.drafts.type]);
+    }, [y.id, e_, v.drafts.type]);
     return (0, i.jsx)(T.Sv, {
         value: eG,
-        children: (0, i.jsxs)(x.f5, {
-            value: eC,
+        children: (0, i.jsxs)(C.f5, {
+            value: ex,
             children: [(0, i.jsxs)("div", {
                 ref: eS,
                 className: a()(d, $.gM),
                 onMouseDown: e8,
                 children: [(0, i.jsx)("div", {
-                    ref: ev,
-                    onScroll: eY,
+                    ref: eN,
+                    onScroll: eq,
                     className: a()($.Ui, {
                         [$.k6]: !em
                     }),
@@ -284,7 +284,7 @@ let X = l.memo(l.forwardRef(function(e, t) {
                                 }), (0, i.jsx)("input", {
                                     maxLength: 140,
                                     className: J.hz,
-                                    placeholder: q.intl.string(q.t.Z8fYjO),
+                                    placeholder: Y.intl.string(Y.t.Z8fYjO),
                                     value: ef,
                                     onChange: e => (0, I.x)(y.id, {
                                         title: e.target.value
@@ -305,8 +305,8 @@ let X = l.memo(l.forwardRef(function(e, t) {
                                         disabled: eR,
                                         placeholder: eo,
                                         required: m,
-                                        accessibilityLabel: v,
-                                        isPreviewing: (eb || ej) && eD,
+                                        accessibilityLabel: N,
+                                        isPreviewing: (ev || ej) && eD,
                                         channel: y,
                                         type: F.oU.CREATE_ANNOUNCEMENT_POST,
                                         canPasteFiles: eM,
@@ -317,7 +317,7 @@ let X = l.memo(l.forwardRef(function(e, t) {
                                         onChange: w,
                                         onResize: eJ,
                                         onBlur: K,
-                                        onFocus: Y,
+                                        onFocus: q,
                                         onKeyDown: X,
                                         onSubmit: eB,
                                         onTab: e$,
@@ -338,7 +338,7 @@ let X = l.memo(l.forwardRef(function(e, t) {
                             className: J.KK,
                             children: (0, i.jsx)(W.A, {
                                 channelId: y.id,
-                                type: b,
+                                type: v,
                                 canAttachFiles: eM,
                                 ignoreFile: e_?.name,
                                 smallAttachments: !0
@@ -387,20 +387,20 @@ let X = l.memo(l.forwardRef(function(e, t) {
                                     },
                                     disabled: 0 === s.length && 0 === ef.length,
                                     size: "sm",
-                                    "aria-label": q.intl.string(q.t.TXNS7S),
+                                    "aria-label": Y.intl.string(Y.t.TXNS7S),
                                     innerClassName: J.jo,
                                     text: (0, i.jsxs)("div", {
                                         className: J.f9,
                                         children: [(0, i.jsx)(A.Text, {
                                             variant: "text-sm/semibold",
                                             color: "always-white",
-                                            children: q.intl.string(q.t.TXNS7S)
+                                            children: Y.intl.string(Y.t.TXNS7S)
                                         }), (0, i.jsxs)("div", {
                                             className: J.pj,
                                             children: [(0, i.jsx)(A.lX7, {
                                                 size: "xs",
                                                 color: "white"
-                                            }), eU && ex ? (0, i.jsx)(A.ysw, {
+                                            }), eU && eC ? (0, i.jsx)(A.ysw, {
                                                 size: "xxs",
                                                 color: "white",
                                                 className: J.Q5
@@ -423,25 +423,25 @@ let X = l.memo(l.forwardRef(function(e, t) {
                     textValue: s,
                     focused: j,
                     expressionPickerView: eQ,
-                    type: b,
+                    type: v,
                     editorRef: eT,
                     onSendMessage: eB,
                     onSendSticker: () => {},
                     onVisibilityChange: e2,
-                    editorHeight: eq,
+                    editorHeight: eY,
                     setValue: (e, t) => w?.(null, e, t),
                     position: eh
                 })]
-            }), e0 ? null : (0, i.jsx)(N.A, {
+            }), e0 ? null : (0, i.jsx)(b.A, {
                 positionTargetRef: eS,
-                type: b,
+                type: v,
                 onSelectGIF: e7,
                 onSelectEmoji: e3,
                 onSelectKaomoji: e5,
                 onSelectSticker: e9,
                 channel: y,
                 closeOnModalOuterClick: eA,
-                parentModalKey: ep,
+                parentModalKey: eg,
                 position: "top",
                 align: "right",
                 positionLayerClassName: $.BD
@@ -457,13 +457,13 @@ function Q(e) {
     } = e, l = I.A.useField("channelDrafts")[t], s = l?.createThread ?? !0, a = l?.publish ?? !0;
     return (0, i.jsxs)(A.W1t, {
         "data-menu-migrated": !0,
-        "aria-label": q.intl.string(q.t["9WnJyo"]),
+        "aria-label": Y.intl.string(Y.t["9WnJyo"]),
         navId: "send-announcement-options",
         onClose: z.tEg,
         onSelect: z.tEg,
         children: [(0, i.jsx)(A.sLh, {
             id: "create-thread",
-            label: q.intl.string(q.t.rBIGBL),
+            label: Y.intl.string(Y.t.rBIGBL),
             checked: n && s,
             disabled: !n,
             action: () => {
@@ -473,7 +473,7 @@ function Q(e) {
             }
         }), (0, i.jsx)(A.sLh, {
             id: "send-and-publish",
-            label: q.intl.string(q.t.MFGE51),
+            label: Y.intl.string(Y.t.MFGE51),
             checked: a,
             action: () => {
                 (0, I.x)(t, {
@@ -508,12 +508,12 @@ function ee(e) {
         "aria-hidden": !0,
         children: [(0, i.jsx)("img", {
             src: s,
-            alt: q.intl.string(q.t["2ePvR8"]),
+            alt: Y.intl.string(Y.t["2ePvR8"]),
             className: J.c8
-        }), r ? (0, i.jsx)(v.Ay, {
+        }), r ? (0, i.jsx)(N.Ay, {
             className: J.jM,
             children: (0, i.jsx)(K.A, {
-                tooltip: q.intl.string(q.t.VjC21x),
+                tooltip: Y.intl.string(Y.t.VjC21x),
                 onClick: n,
                 dangerous: !0,
                 children: (0, i.jsx)(A.ucK, {})
@@ -527,7 +527,7 @@ function et(e) {
         channel: t
     } = e;
     return (0, i.jsx)(y.A, {
-        "aria-label": q.intl.string(q.t["/IBYAq"]),
+        "aria-label": Y.intl.string(Y.t["/IBYAq"]),
         className: J.g$,
         size: "icon",
         color: "transparent",
@@ -561,34 +561,34 @@ function en(e) {
                 isThumbnail: !1,
                 origin: "file_picker"
             };
-        p.A.addFile({
+        g.A.addFile({
             file: s,
             channelId: t.id,
             draftType: O.C.ChannelMessage
         }), n(l)
     }, [o, c] = l.useState(!1), u = l.useCallback(() => {
         c(!0)
-    }, []), g = l.useCallback(() => {
+    }, []), p = l.useCallback(() => {
         c(!1)
     }, []);
     return (0, i.jsx)("div", {
         className: J.qN,
         children: (0, i.jsx)(m.m, {
             asContainer: !0,
-            text: q.intl.string(q.t["/IBYAq"]),
+            text: Y.intl.string(Y.t["/IBYAq"]),
             position: "top",
             children: (0, i.jsxs)(A.DUT, {
                 className: J.qN,
                 onMouseOver: u,
-                onMouseOut: g,
+                onMouseOut: p,
                 onFocus: s,
                 children: [(0, i.jsx)(j.Ay, {
                     ref: a,
                     onChange: r,
                     "aria-hidden": !0,
                     tabIndex: -1,
-                    maxFileSizeBytes: Y.j,
-                    onFileSizeError: () => (0, b.A)(Y.j)
+                    maxFileSizeBytes: q.j,
+                    onFileSizeError: () => (0, v.A)(q.j)
                 }), (0, i.jsx)(A.XGR, {
                     size: "md",
                     color: o ? h.A.colors.INTERACTIVE_TEXT_ACTIVE : h.A.colors.INTERACTIVE_TEXT_DEFAULT

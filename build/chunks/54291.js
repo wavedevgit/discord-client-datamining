@@ -4,8 +4,8 @@ n.d(t, {
 });
 var r = n(627968);
 n(64700);
-var i = n(503698),
-    s = n.n(i),
+var s = n(503698),
+    i = n.n(s),
     a = n(246878);
 
 function l(e) {
@@ -19,7 +19,7 @@ function l(e) {
         height: "40",
         viewBox: "0 0 2 40",
         fill: "none",
-        className: s()(a.SU, t),
+        className: i()(a.SU, t),
         children: (0, r.jsx)("path", {
             d: "M1 0V40",
             stroke: n,

@@ -1,11 +1,11 @@
 /** chunk id: 856658 params = (module,exports,require) **/
 n.d(t, {
-    A: () => f
+    A: () => p
 });
 var r = n(627968),
-    i = n(64700),
-    s = n(503698),
-    a = n.n(s),
+    s = n(64700),
+    i = n(503698),
+    a = n.n(i),
     l = n(773690),
     o = n(397927),
     u = n(697397),
@@ -14,49 +14,49 @@ var r = n(627968),
     m = n(646764),
     E = n(80026),
     _ = n(684739);
-let p = {
+let f = {
         duration: 250
     },
-    f = e => {
+    p = e => {
         let {
             currentPx: t,
             indicator: n,
-            isAnimated: s,
-            quest: f,
-            sourceQuestContent: v,
-            expansionSpring: S,
+            isAnimated: i,
+            quest: p,
+            sourceQuestContent: S,
+            expansionSpring: v,
             onClick: h,
             onMouseEnter: g,
             onMouseLeave: A
         } = e, {
             label: C,
-            targetSec: T,
-            leftPx: b,
-            rightPx: x,
-            index: D
+            targetSec: x,
+            leftPx: T,
+            rightPx: D,
+            index: I
         } = n, {
             completedRatio: y
-        } = (0, d.O9)(f), [I, L] = i.useState(!1), N = b - E.Ue, R = t >= N ? Math.min(1, (t - N) / (x - N)) : 0, O = 0 === D && y < 1, {
-            fill: k
+        } = (0, d.O9)(p), [R, b] = s.useState(!1), N = T - E.Ue, O = t >= N ? Math.min(1, (t - N) / (D - N)) : 0, L = 0 === I && y < 1, {
+            fill: M
         } = (0, o.zhh)({
-            fill: 100 * R,
-            config: p,
+            fill: 100 * O,
+            config: f,
             onRest: () => {
-                R <= 0 && L(!1)
+                O <= 0 && b(!1)
             },
             onStart: () => {
-                L(!0)
+                b(!0)
             }
         });
         return (0, r.jsxs)(l.animated.div, {
             className: a()(_.ck, {
-                [_.a]: O && I,
-                [_.C9]: !O && I
+                [_.a]: L && R,
+                [_.C9]: !L && R
             }),
             style: {
-                left: s ? S.to(e => b - e) : b,
-                "--custom-indicator-size": s ? S.to(e => `${E.lS+2*e}px`) : `${E.lS}px`,
-                "--custom-indicator-fill": k.to(e => e)
+                left: i ? v.to(e => T - e) : T,
+                "--custom-indicator-size": i ? v.to(e => `${E.lS+2*e}px`) : `${E.lS}px`,
+                "--custom-indicator-fill": M.to(e => e)
             },
             children: [(0, r.jsx)(o.DUT, {
                 className: _.E6,
@@ -67,19 +67,19 @@ let p = {
                 onMouseLeave: A,
                 children: (0, r.jsx)(m.A, {
                     fullWidth: !0,
-                    quest: f,
+                    quest: p,
                     questContent: c.uF.VIDEO_MODAL,
-                    sourceQuestContent: v,
+                    sourceQuestContent: S,
                     autoplay: !1
                 })
             }), (0, r.jsxs)("div", {
                 className: _.Ru,
                 role: "tooltip",
-                "aria-label": null != C ? `${(0,u.rB)(T)} - ${C}` : (0, u.rB)(T),
+                "aria-label": null != C ? `${(0,u.rB)(x)} - ${C}` : (0, u.rB)(x),
                 children: [(0, r.jsx)(o.Text, {
                     variant: "text-xs/normal",
                     color: "always-white",
-                    children: (0, u.rB)(T)
+                    children: (0, u.rB)(x)
                 }), null != C && (0, r.jsxs)(r.Fragment, {
                     children: [(0, r.jsx)("span", {
                         className: _.AE,

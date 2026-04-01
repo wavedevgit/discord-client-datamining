@@ -15,20 +15,20 @@ var i = n(627968),
     h = n(919796),
     m = n(58149),
     A = n(668446),
-    p = n(997509),
-    g = n(794967),
+    g = n(997509),
+    p = n(794967),
     f = n(595818),
     _ = n(961350),
     E = n(71393),
-    x = n(287809),
-    C = n(147925),
+    C = n(287809),
+    x = n(147925),
     S = n(203982),
     I = n(975571),
     T = n(723702),
-    v = n(661191),
-    N = n(314307),
+    N = n(661191),
+    b = n(314307),
     y = n(652215),
-    b = n(936649),
+    v = n(936649),
     j = n(985018),
     R = n(103935);
 
@@ -63,26 +63,26 @@ function M(e) {
             className: a()(R.AI, {
                 [R.i0]: u
             })
-        }) : (0, i.jsx)(C.A, {
+        }) : (0, i.jsx)(x.A, {
             className: R.UE,
-            direction: C.A.Directions.RIGHT
+            direction: x.A.Directions.RIGHT
         })]
     })
 }
 
 function D(e) {
-    let t, s, h, C, D, O, {
+    let t, s, h, x, D, O, {
             channel: L
         } = e,
         P = (0, o.bG)([E.A], () => null != L ? E.A.getGuild(L.getGuildId()) : null, [L]),
-        w = null != P && v.default.extractTimestamp(P.id) < Date.now() - y.NOr,
+        w = null != P && N.default.extractTimestamp(P.id) < Date.now() - y.NOr,
         k = (0, o.bG)([_.default], () => P?.ownerId === _.default.getId(), [P]),
         {
             canInvite: U,
             canManageGuild: G,
             canMessage: F
         } = (0, A.Sk)(L, P),
-        H = (0, o.bG)([x.default], () => x.default.getCurrentUser()?.desktop === !0 || x.default.getCurrentUser()?.mobile === !0),
+        H = (0, o.bG)([C.default], () => C.default.getCurrentUser()?.desktop === !0 || C.default.getCurrentUser()?.mobile === !0),
         {
             guildPopulated: B,
             guildMessaged: V,
@@ -91,13 +91,13 @@ function D(e) {
         {
             handleInvite: W,
             handleMessage: z,
-            handlePersonalize: Y,
-            handleDownload: q,
+            handlePersonalize: q,
+            handleDownload: Y,
             handleAddApplication: J
         } = (t = l.useCallback(() => {
             m.Ay.trackWithMetadata(y.HAw.SERVER_SETUP_CTA_CLICKED, {
-                setup_type: b.XT.CHANNEL_WELCOME,
-                action: b.AG.INVITE
+                setup_type: v.XT.CHANNEL_WELCOME,
+                action: v.AG.INVITE
             }), null != P && (0, d.mMO)(async () => {
                 let {
                     default: e
@@ -113,17 +113,17 @@ function D(e) {
             })
         }, [P]), s = l.useCallback(() => {
             m.Ay.trackWithMetadata(y.HAw.SERVER_SETUP_CTA_CLICKED, {
-                setup_type: b.XT.CHANNEL_WELCOME,
-                action: b.AG.SEND_MESSAGE
+                setup_type: v.XT.CHANNEL_WELCOME,
+                action: v.AG.SEND_MESSAGE
             }), S._.dispatch(y.jej.TEXTAREA_FOCUS, {
                 highlight: !0,
                 channelId: y.dJq
             })
         }, []), h = l.useCallback(() => {
             m.Ay.trackWithMetadata(y.HAw.SERVER_SETUP_CTA_CLICKED, {
-                setup_type: b.XT.CHANNEL_WELCOME,
-                action: b.AG.PERSONALIZE_SERVER
-            }), null != P && p.A.open(P.id, (0, f.x)(), {
+                setup_type: v.XT.CHANNEL_WELCOME,
+                action: v.AG.PERSONALIZE_SERVER
+            }), null != P && g.A.open(P.id, (0, f.x)(), {
                 section: y.JJy.CHANNEL_WELCOME_CTA
             })
         }, [P]), {
@@ -132,8 +132,8 @@ function D(e) {
             handlePersonalize: h,
             handleDownload: l.useCallback(() => {
                 m.Ay.trackWithMetadata(y.HAw.SERVER_SETUP_CTA_CLICKED, {
-                    setup_type: b.XT.CHANNEL_WELCOME,
-                    action: b.AG.DOWNLOAD
+                    setup_type: v.XT.CHANNEL_WELCOME,
+                    action: v.AG.DOWNLOAD
                 }), (0, d.mMO)(async () => {
                     let {
                         default: e
@@ -146,8 +146,8 @@ function D(e) {
             }, []),
             handleAddApplication: l.useCallback(() => {
                 null != P && (m.Ay.trackWithMetadata(y.HAw.SERVER_SETUP_CTA_CLICKED, {
-                    setup_type: b.XT.CHANNEL_WELCOME,
-                    action: b.AG.ADD_APP
+                    setup_type: v.XT.CHANNEL_WELCOME,
+                    action: v.AG.ADD_APP
                 }), (0, d.mMO)(async () => {
                     let {
                         default: e
@@ -164,11 +164,11 @@ function D(e) {
         {
             titleAnimatedStyle: Z,
             opacities: X
-        } = (C = (0, u.A)(() => new r.A.Value(0)), D = (0, u.A)(() => new r.A.Value(0)), O = (0, u.A)(() => [new r.A.Value(0), new r.A.Value(0), new r.A.Value(0), new r.A.Value(0)]), l.useEffect(() => {
+        } = (x = (0, u.A)(() => new r.A.Value(0)), D = (0, u.A)(() => new r.A.Value(0)), O = (0, u.A)(() => [new r.A.Value(0), new r.A.Value(0), new r.A.Value(0), new r.A.Value(0)]), l.useEffect(() => {
             r.A.stagger(300, [r.A.parallel([r.A.timing(D, {
                 toValue: 1,
                 duration: 450
-            }), r.A.timing(C, {
+            }), r.A.timing(x, {
                 toValue: 1,
                 duration: 450
             })]), r.A.stagger(100, [r.A.timing(O[0], {
@@ -184,10 +184,10 @@ function D(e) {
                 toValue: 1,
                 duration: 300
             })])]).start()
-        }, [D, C, O]), {
+        }, [D, x, O]), {
             titleAnimatedStyle: $ ? {
                 transform: [{
-                    translateY: C.interpolate({
+                    translateY: x.interpolate({
                         inputRange: [0, 1],
                         outputRange: ["-20px", "0px"]
                     })
@@ -201,7 +201,7 @@ function D(e) {
     if (l.useEffect(() => {
             (async () => {
                 try {
-                    let e = await (0, g.c)(P?.id ?? y.dJq);
+                    let e = await (0, p.c)(P?.id ?? y.dJq);
                     ee(e.map(e => e.id))
                 } catch {}
             })()
@@ -227,7 +227,7 @@ function D(e) {
             iconUrl: d.nIm,
             header: j.intl.string(j.t.c5kxPh),
             completed: K,
-            onClick: Y
+            onClick: q
         })
     }, "customize")), F && en.push((0, i.jsx)(r.A.div, {
         className: R.cW,
@@ -249,7 +249,7 @@ function D(e) {
             iconUrl: d.Gl0,
             header: j.intl.string(j.t.pGVNI9),
             completed: H,
-            onClick: q
+            onClick: Y
         })
     }, "download")), en.push((0, i.jsx)(r.A.div, {
         className: R.cW,
@@ -266,7 +266,7 @@ function D(e) {
     let ei = k ? j.intl.string(j.t["1ach9C"]) : j.intl.string(j.t["ezm+/j"]);
     w && (ei = j.intl.string(j.t["gwyU/J"]));
     let el = `${I.A.getArticleURL(y.MVz.GUILD_GETTING_STARTED)}?utm_source=discord&utm_medium=blog&utm_campaign=2020-06_help-new-user&utm_content=--t%3Apm`;
-    return (0, i.jsx)(N.Ay, {
+    return (0, i.jsx)(b.Ay, {
         channelId: L.id,
         children: (0, i.jsx)("div", {
             className: R.kL,

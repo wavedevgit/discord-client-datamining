@@ -1,43 +1,43 @@
 /** chunk id: 12351 params = (module,exports,require) **/
-i.d(t, {
-    A: () => m
+n.d(e, {
+    A: () => g
 });
-var n = i(627968),
-    a = i(64700),
-    l = i(503698),
-    s = i.n(l),
-    r = i(397927),
-    o = i(985018),
-    c = i(522946);
+var i = n(627968),
+    r = n(64700),
+    s = n(503698),
+    l = n.n(s),
+    a = n(397927),
+    o = n(985018),
+    c = n(522946);
 let d = {
     BLOCK: c.om,
     INLINE: c.mG
 };
-class u extends a.PureComponent {
+class h extends r.PureComponent {
     static Types = d;
     render() {
         let {
-            children: e,
-            className: t,
-            textClassName: i,
-            type: a = d.BLOCK,
-            style: l
+            children: t,
+            className: e,
+            textClassName: n,
+            type: r = d.BLOCK,
+            style: s
         } = this.props;
-        return (0, n.jsxs)("div", {
-            className: s()(t, a),
-            style: l,
-            children: [(0, n.jsxs)(r.Text, {
+        return (0, i.jsxs)("div", {
+            className: l()(e, r),
+            style: s,
+            children: [(0, i.jsxs)(a.Text, {
                 variant: "text-sm/bold",
                 tag: "div",
                 color: "text-feedback-positive",
                 className: c.AD,
                 children: [o.intl.string(o.t["8tvIiN"]), ":"]
-            }), (0, n.jsx)(r.Text, {
-                className: s()(c.uN, i),
+            }), (0, i.jsx)(a.Text, {
+                className: l()(c.uN, n),
                 variant: "text-sm/normal",
-                children: e
+                children: t
             })]
         })
     }
 }
-let m = u
+let g = h

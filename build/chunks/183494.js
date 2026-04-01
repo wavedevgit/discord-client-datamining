@@ -77,11 +77,11 @@ function f(e) {
         })
     }, [Y, a, X]);
     let W = k?.width != null && k?.width !== 0 ? k?.width : 1,
-        V = g > 1,
-        H = D?.indicators,
+        H = g > 1,
+        V = D?.indicators,
         J = l.useMemo(() => {
             let e;
-            return null != H && null != k && V ? (e = k.width, H.map(t => {
+            return null != V && null != k && H ? (e = k.width, V.map(t => {
                 let n = Math.max(0, Math.min((0, u.DX)(t.timeSec, g, k) - t.widthPx / 2, e - t.widthPx));
                 return {
                     leftPx: n,
@@ -91,7 +91,7 @@ function f(e) {
                     source: t
                 }
             })) : void 0
-        }, [H, g, k, V]),
+        }, [V, g, k, H]),
         Z = l.useMemo(() => ((e, t) => {
             let n = [{
                 startPx: 0,

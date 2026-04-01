@@ -3,10 +3,10 @@ n.d(t, {
     G: () => o
 });
 var r = n(141711),
-    i = n(118356),
-    s = n(740644),
+    s = n(118356),
+    i = n(740644),
     a = n(497329);
-let l = new i.Vy("SimpleMuxWrapper");
+let l = new s.Vy("SimpleMuxWrapper");
 class o {
     isMonitoring = !1;
     videoElement;
@@ -21,7 +21,7 @@ class o {
             debug: this.config.debug ?? !1,
             disableCookies: !0,
             respectDoNotTrack: !0,
-            data: s.H.mapDiscordToMuxMetadata(this.config, this.sessionId)
+            data: i.H.mapDiscordToMuxMetadata(this.config, this.sessionId)
         };
         null != this.hlsInstance && (e.hlsjs = this.hlsInstance, e.Hls = this.hlsInstance.constructor);
         try {

@@ -1,6 +1,6 @@
 /** chunk id: 639555 params = (module,exports,require) **/
-i.d(t, {
-    Rv: () => a
+i.d(e, {
+    Rv: () => l
 });
 let n = (0, i(600975).C)({
     kind: "user",
@@ -18,13 +18,13 @@ let n = (0, i(600975).C)({
     }]
 });
 
-function a(e) {
+function l(t) {
     let {
-        location: t
-    } = e, {
+        location: e
+    } = t, {
         enabled: i
     } = n.useExperiment({
-        location: t
+        location: e
     }, {
         autoTrackExposure: !1
     });

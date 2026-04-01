@@ -14,8 +14,8 @@ var i = n(627968),
     h = n(83942),
     m = n(259374),
     A = n(763845),
-    p = n(857341),
-    g = n(603266),
+    g = n(857341),
+    p = n(603266),
     f = n(985018),
     _ = n(451070);
 
@@ -39,7 +39,7 @@ function E(e) {
     })
 }
 
-function x(e) {
+function C(e) {
     let {
         closePopout: t,
         connectionTypeText: n
@@ -58,7 +58,7 @@ function x(e) {
     })
 }
 
-function C(e) {
+function x(e) {
     let {
         channelId: t,
         isOverlay: n,
@@ -71,7 +71,7 @@ function C(e) {
         lobbyId: l,
         closePopout: s,
         connectionTypeText: a
-    }) : (0, i.jsx)(x, {
+    }) : (0, i.jsx)(C, {
         closePopout: s,
         connectionTypeText: a
     })
@@ -79,16 +79,16 @@ function C(e) {
 
 function S(e) {
     let t = (0, s.bG)([c.A], () => c.A.hasVideo(e.channelId)),
-        [n, o] = l.useState(g.Rj.RTC_DEBUG_PANEL),
+        [n, o] = l.useState(p.Rj.RTC_DEBUG_PANEL),
         d = (0, r.GV)(),
         m = l.useMemo(() => {
             switch (n) {
-                case g.Rj.RTC_DEBUG_PANEL:
-                    return (0, i.jsx)(C, {
+                case p.Rj.RTC_DEBUG_PANEL:
+                    return (0, i.jsx)(x, {
                         ...e
                     });
-                case g.Rj.RTC_SECURE_FRAMES:
-                    return (0, i.jsx)(p.A, {
+                case p.Rj.RTC_SECURE_FRAMES:
+                    return (0, i.jsx)(g.A, {
                         channelId: e.channelId
                     })
             }
@@ -101,7 +101,7 @@ function S(e) {
     }, [e.channelId, n]);
     let A = (0, h.c)();
     return l.useEffect(() => {
-        A && o(g.Rj.RTC_DEBUG_PANEL)
+        A && o(p.Rj.RTC_DEBUG_PANEL)
     }, [A]), (0, i.jsxs)("div", {
         className: _.kL,
         children: [(0, i.jsx)(a.Heading, {
@@ -116,11 +116,11 @@ function S(e) {
             look: "brand",
             onItemSelect: o,
             children: [(0, i.jsx)(a.VQ0.Item, {
-                id: g.Rj.RTC_DEBUG_PANEL,
+                id: p.Rj.RTC_DEBUG_PANEL,
                 className: _.YU,
                 children: f.intl.string(f.t.MBY1Pm)
             }), A ? null : (0, i.jsx)(a.VQ0.Item, {
-                id: g.Rj.RTC_SECURE_FRAMES,
+                id: p.Rj.RTC_SECURE_FRAMES,
                 className: _.YU,
                 children: f.intl.string(f.t.zC6o3s)
             })]
@@ -141,7 +141,7 @@ function I(e) {
         className: _.L3,
         children: (0, i.jsx)("section", {
             className: _.J8,
-            children: (0, i.jsx)(C, {
+            children: (0, i.jsx)(x, {
                 ...e
             })
         })

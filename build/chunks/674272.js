@@ -1,17 +1,17 @@
 /** chunk id: 674272 params = (module,exports,require) **/
 n.d(t, {
-    A: () => r
+    A: () => s
 });
 var i = n(627968);
 n(64700);
-var l = n(397927);
+var r = n(397927);
 
-function r(e) {
+function s(e) {
     let {
         source: t,
-        onClose: r
+        onClose: s
     } = e;
-    (0, l.mMO)(async () => {
+    (0, r.mMO)(async () => {
         let {
             default: e
         } = await n.e("61376").then(n.bind(n, 999235));
@@ -20,7 +20,7 @@ function r(e) {
             source: t
         })
     }, {
-        onCloseCallback: r,
-        backdropStyle: l.F2Z.BLUR
+        onCloseCallback: s,
+        backdropStyle: r.F2Z.BLUR
     })
 }

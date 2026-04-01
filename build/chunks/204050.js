@@ -4,13 +4,13 @@ s.d(t, {
     p: () => r
 });
 var n = s(299855),
-    l = s.n(n),
-    i = s(77729),
+    i = s.n(n),
+    l = s(77729),
     a = s(723702);
 let o = /\{65E8773D-8F56-11D0-A3B9-00A0C9223196\}/i;
 
 function r() {
-    return !!(0, a.isWindows)() && !!a.isPlatformEmbedded && l().satisfies(i.A.os.release, ">=10.0.22000")
+    return !!(0, a.isWindows)() && !!a.isPlatformEmbedded && i().satisfies(l.A.os.release, ">=10.0.22000")
 }
 
 function c(e) {

@@ -3,13 +3,13 @@ n.d(t, {
     A: () => f
 });
 var i = n(627968),
-    l = n(64700),
-    a = n(163126),
+    a = n(64700),
+    l = n(163126),
     s = n(688810),
     r = n(114212),
     o = n(183555),
-    d = n(913453),
-    c = n(229187),
+    c = n(913453),
+    d = n(229187),
     u = n(657331),
     g = n(503062),
     m = n(782505),
@@ -30,9 +30,9 @@ function f(e) {
     } = (0, o.NJ)(), {
         mutualFriends: j,
         mutualFriendsCount: v
-    } = (0, d.A)(t), T = (0, a.A)();
-    return l.useEffect(() => {
-        (0, c.A)(t.id, T)
+    } = (0, c.A)(t), T = (0, l.A)();
+    return a.useEffect(() => {
+        (0, d.A)(t.id, T)
     }, [t.id, T]), (0, i.jsx)(x.K, {
         className: p.XG,
         children: null == j ? Array.from({
@@ -49,12 +49,12 @@ function f(e) {
         }, t)) : 0 === j.length ? (0, i.jsx)(m.IA, {}) : j.map(e => {
             let {
                 key: t,
-                user: l,
-                status: a
+                user: a,
+                status: l
             } = e;
             return (0, i.jsx)(g.A, {
-                user: l,
-                status: a,
+                user: a,
+                status: l,
                 guildId: n,
                 channelId: f,
                 onSelect: () => {
@@ -62,7 +62,7 @@ function f(e) {
                         action: "PRESS_MUTUAL_FRIEND"
                     }), (0, u.openUserProfileModal)({
                         ...A,
-                        userId: l.id,
+                        userId: a.id,
                         sourceAnalyticsLocations: _
                     })
                 }

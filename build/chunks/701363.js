@@ -340,10 +340,10 @@ function eA(e) {
         channel: t,
         muted: eG,
         userStatus: w
-    })].filter(Boolean).join(", "), e5 = (0, S.bG)([$.Ay], () => $.Ay.lastMessageId(t.id)), {
-        waveShouldShow: e4,
+    })].filter(Boolean).join(", "), e4 = (0, S.bG)([$.Ay], () => $.Ay.lastMessageId(t.id)), {
+        waveShouldShow: e5,
         wavePressed: te
-    } = (0, D.A)(t, e5), {
+    } = (0, D.A)(t, e4), {
         showClose: tt
     } = R.A.useConfig({
         location: "PrivateChannel"
@@ -487,11 +487,11 @@ function eA(e) {
                         className: a()(ei._q, {
                             [ei.EY]: ez
                         }),
-                        children: [eF ? (0, l.jsx)(ec, {}) : null, ek ? (0, l.jsx)(ed, {}) : null, e4 && null != eB ? (0, l.jsx)(eo, {
+                        children: [eF ? (0, l.jsx)(ec, {}) : null, ek ? (0, l.jsx)(ed, {}) : null, e5 && null != eB ? (0, l.jsx)(eo, {
                             channelName: eB,
                             onClick: te,
                             showNameplate: ez
-                        }) : null, tt || !e4 ? (0, l.jsx)(eu, {
+                        }) : null, tt || !e5 ? (0, l.jsx)(eu, {
                             icon: T.PGe,
                             "aria-label": eU ? es.intl.string(es.t["26C4oi"]) : es.intl.string(es.t.jsvgc3),
                             onClick: eU ? e2 : eJ,

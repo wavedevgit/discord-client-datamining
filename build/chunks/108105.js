@@ -38,7 +38,7 @@ var a = n(627968),
     P = n(985018),
     D = n(136242);
 
-function B(e) {
+function M(e) {
     let {
         sku: t,
         guildId: n,
@@ -132,7 +132,7 @@ function B(e) {
     })
 }
 
-function M(e) {
+function B(e) {
     let {
         sku: t,
         applicationId: n,
@@ -314,7 +314,7 @@ function G(e) {
                 }), (0, a.jsx)(F, {
                     applicationId: r,
                     selectedCarouselItem: K
-                }), (0, a.jsx)(B, {
+                }), (0, a.jsx)(M, {
                     sku: J,
                     guildId: W,
                     shouldShowShopLink: !u,
@@ -326,7 +326,7 @@ function G(e) {
                 })]
             }), (0, a.jsxs)("div", {
                 className: D.Cf,
-                children: [(0, a.jsx)(M, {
+                children: [(0, a.jsx)(B, {
                     sku: J,
                     applicationId: r,
                     assets: q,

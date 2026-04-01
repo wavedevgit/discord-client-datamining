@@ -36,8 +36,8 @@ let m = l.memo(function(e) {
         isTyping: m = !1,
         mentionCount: p = 0,
         isMentionLowImportance: A = !1
-    } = e, x = t?.isPrivate() ?? !1, E = t?.isMultiUserDM() ?? !1, f = n?.id, S = (0, r.bG)([d.A], () => null != f ? d.A.getStatus(f) : null, [f]), I = (0, r.bG)([d.A], () => null != f && d.A.isMobileOnline(f), [f]);
-    if (x || E) return (0, s.jsx)(u.h, {
+    } = e, x = t?.isPrivate() ?? !1, f = t?.isMultiUserDM() ?? !1, E = n?.id, S = (0, r.bG)([d.A], () => null != E ? d.A.getStatus(E) : null, [E]), I = (0, r.bG)([d.A], () => null != E && d.A.isMobileOnline(E), [E]);
+    if (x || f) return (0, s.jsx)(u.h, {
         channel: t ?? null,
         user: n,
         "aria-hidden": !0,

@@ -1,16 +1,16 @@
 /** chunk id: 183184 params = (module,exports,require) **/
 n.d(t, {
-    A: () => o
+    A: () => _
 });
 var r = n(627968);
 n(64700);
 var a = n(397927),
-    l = n(827343),
-    i = n(579872),
+    i = n(827343),
+    l = n(579872),
     s = n(48686),
-    u = n(985018);
+    o = n(985018);
 
-function o(e, t, o) {
+function _(e, t, _) {
     t && (0, s.t)() ? (0, a.mMO)(async () => {
         let {
             default: e
@@ -18,13 +18,13 @@ function o(e, t, o) {
         return t => (0, r.jsx)(e, {
             ...t
         })
-    }) : t ? i.A.show({
-        title: u.intl.string(u.t.FJSZVM),
-        body: u.intl.string(u.t.etJjgW)
-    }) : e ? i.A.show({
-        title: u.intl.string(u.t["+JQCa/"]),
-        body: u.intl.string(u.t.hsNm7d)
-    }) : l.A.toggleSelfMute({
-        location: o
+    }) : t ? l.A.show({
+        title: o.intl.string(o.t.FJSZVM),
+        body: o.intl.string(o.t.etJjgW)
+    }) : e ? l.A.show({
+        title: o.intl.string(o.t["+JQCa/"]),
+        body: o.intl.string(o.t.hsNm7d)
+    }) : i.A.toggleSelfMute({
+        location: _
     })
 }

@@ -16,21 +16,21 @@ var i = n(627968),
     h = n(843472),
     m = n(928039),
     A = n(12351),
-    p = n(976860),
-    g = n(734057),
+    g = n(976860),
+    p = n(734057),
     f = n(320501),
     _ = n(576705),
     E = n(519057),
-    x = n(531685),
-    C = n(954571),
+    C = n(531685),
+    x = n(954571),
     S = n(203982),
     I = n(81437),
     T = n(636922),
-    v = n(652215),
-    N = n(985018),
+    N = n(652215),
+    b = n(985018),
     y = n(284362);
 
-function b(e) {
+function v(e) {
     e.stopPropagation()
 }
 let j = e => {
@@ -96,7 +96,7 @@ class M extends l.PureComponent {
             children: (0, i.jsx)(u.Button, {
                 variant: "secondary",
                 size: "sm",
-                text: N.intl.string(N.t.k5WiPf),
+                text: b.intl.string(b.t.k5WiPf),
                 onClick: this.handleClickJump,
                 loading: e
             })
@@ -116,7 +116,7 @@ class M extends l.PureComponent {
                 icon: u.PGe,
                 size: "sm",
                 variant: "secondary",
-                "aria-label": s ?? N.intl.string(N.t.cpT0Cq),
+                "aria-label": s ?? b.intl.string(b.t.cpT0Cq),
                 onClick: this.handleClickClose
             })
         }) : null
@@ -133,7 +133,7 @@ let D = d.Ay.connectStores([_.A], e => {
         channel: t
     } = e;
     return {
-        canManageMessages: null != t && _.A.can(v.xBc.MANAGE_MESSAGES, t)
+        canManageMessages: null != t && _.A.can(N.xBc.MANAGE_MESSAGES, t)
     }
 })(M);
 
@@ -144,16 +144,16 @@ function O(e) {
         hasMore: s,
         loading: r,
         loadMore: h,
-        renderHeader: p,
-        renderEmptyState: g,
+        renderHeader: g,
+        renderEmptyState: p,
         renderItem: f,
         getProTip: _,
         scrollerClassName: I,
         className: T,
         listName: j
-    } = e, R = l.useRef(null), M = (0, m.A)(j, R), D = (0, d.bG)([E.Ay], () => E.Ay.hasNotice()), O = (0, d.bG)([x.A], () => x.A.windowSize());
+    } = e, R = l.useRef(null), M = (0, m.A)(j, R), D = (0, d.bG)([E.Ay], () => E.Ay.hasNotice()), O = (0, d.bG)([C.A], () => C.A.windowSize());
     l.useEffect(() => {
-        C.default.track(v.HAw.OPEN_POPOUT, {
+        x.default.track(N.HAw.OPEN_POPOUT, {
             type: t
         })
     }, [t]), l.useEffect(() => {
@@ -168,8 +168,8 @@ function O(e) {
                 animate: !0
             })
         }
-        return S._.subscribe(v.jej.SCROLL_PAGE_DOWN, t), S._.subscribe(v.jej.SCROLL_PAGE_UP, e), () => {
-            S._.unsubscribe(v.jej.SCROLL_PAGE_DOWN, t), S._.unsubscribe(v.jej.SCROLL_PAGE_UP, e)
+        return S._.subscribe(N.jej.SCROLL_PAGE_DOWN, t), S._.subscribe(N.jej.SCROLL_PAGE_UP, e), () => {
+            S._.unsubscribe(N.jej.SCROLL_PAGE_DOWN, t), S._.unsubscribe(N.jej.SCROLL_PAGE_UP, e)
         }
     }, []);
     let L = l.useCallback(() => {
@@ -182,7 +182,7 @@ function O(e) {
         className: a()(y.zC, y.k$),
         children: (0, i.jsx)(u.y$y, {})
     }, "spinner")] : 0 === n.length ? P.push((0, i.jsx)(l.Fragment, {
-        children: g()
+        children: p()
     }, "empty-state")) : (w = !1, P = [], o().each(n, e => {
         P.push(...f(e))
     }));
@@ -196,12 +196,12 @@ function O(e) {
             variant: "secondary",
             size: "sm",
             fullWidth: !0,
-            text: N.intl.string(N.t.XBlaiC),
+            text: b.intl.string(b.t.XBlaiC),
             onClick: h
         })
     }) : (0, i.jsx)("div", {
         className: y.lJ,
-        children: g()
+        children: p()
     }));
     let U = _?.(),
         G = w && null != U ? (0, i.jsx)("div", {
@@ -223,11 +223,11 @@ function O(e) {
     return (0, i.jsx)("div", {
         className: a()(y.KQ, T ?? y.G6),
         style: F,
-        onClick: b,
-        onDoubleClick: b,
+        onClick: v,
+        onDoubleClick: v,
         "aria-label": e["aria-label"],
         children: (0, i.jsxs)(u.Fmo, {
-            component: p(),
+            component: g(),
             children: [(0, i.jsxs)(u.T7Y, {
                 className: I ?? y.m4,
                 onScroll: H ? L : void 0,
@@ -267,11 +267,11 @@ function L(e) {
         renderHeader: A,
         renderEmptyState: _,
         renderMessage: E,
-        getProTip: x,
-        scrollerClassName: C,
+        getProTip: C,
+        scrollerClassName: x,
         className: S,
-        onCloseMessage: N,
-        listName: b,
+        onCloseMessage: b,
+        listName: v,
         closeAriaLabel: j
     } = e, R = (0, d.bG)([f.A], () => {
         let e = null != s ? f.A.getMessages(s.id) : null;
@@ -283,8 +283,8 @@ function L(e) {
             let {
                 id: i,
                 channel_id: l
-            } = e, s = g.A.getChannel(l);
-            null != s && (h.A.trackJump(l, i, t), (0, p.pX)(v.BVt.CHANNEL(s.getGuildId(), l, i))), u?.(n)
+            } = e, s = p.A.getChannel(l);
+            null != s && (h.A.trackJump(l, i, t), (0, g.pX)(N.BVt.CHANNEL(s.getGuildId(), l, i))), u?.(n)
         };
         (0, I.A)(e, i) && !R && i()
     }
@@ -297,7 +297,7 @@ function L(e) {
     })), [a, s]);
     return (0, i.jsx)(O, {
         className: S,
-        scrollerClassName: C,
+        scrollerClassName: x,
         items: L,
         loading: o,
         analyticsName: t,
@@ -305,7 +305,7 @@ function L(e) {
         renderHeader: A,
         hasMore: r,
         loadMore: c,
-        getProTip: x,
+        getProTip: C,
         renderItem: function(e) {
             let {
                 message: t,
@@ -326,12 +326,12 @@ function L(e) {
                     jumping: R,
                     canCloseAllMessages: m,
                     jumpTo: M,
-                    onCloseMessage: N,
+                    onCloseMessage: b,
                     closeAriaLabel: j
                 })]
             }, t.id)), l)
         },
-        listName: b,
+        listName: v,
         "aria-label": e["aria-label"]
     })
 }

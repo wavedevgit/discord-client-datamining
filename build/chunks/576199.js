@@ -3,8 +3,8 @@ n.d(t, {
     A: () => _
 });
 var r = n(627968),
-    i = n(64700),
-    s = n(435371),
+    s = n(64700),
+    i = n(435371),
     a = n(397927),
     l = n(341915),
     o = n(590202),
@@ -20,27 +20,27 @@ function _(e) {
     } = e, {
         quest: n,
         sourceQuestContent: _
-    } = i.useContext(m.a), p = (0, u.go)(), f = (0, d.E0)(n.config), v = i.useCallback(() => {
-        f && ((0, c.Xm)(n.id, {
+    } = s.useContext(m.a), f = (0, u.go)(), p = (0, d.E0)(n.config), S = s.useCallback(() => {
+        p && ((0, c.Xm)(n.id, {
             content: l.uF.VIDEO_MODAL,
             ctaContent: o.Cy.COPY_QUEST_URL,
-            impressionId: p,
+            impressionId: f,
             sourceQuestContent: _
         }), (0, a.showToast)((0, a.createToast)(E.intl.string(E.t["+5kSoW"]), a.ToastType.SUCCESS)))
-    }, [p, f, n.id, _]);
-    return f ? (0, r.jsx)("div", {
+    }, [f, p, n.id, _]);
+    return p ? (0, r.jsx)("div", {
         "data-testid": "video-quest-share-btn",
         "data-quest-id": n.id,
         style: {
             marginLeft: t ? "auto" : void 0
         },
-        children: (0, r.jsx)(s.m_, {
+        children: (0, r.jsx)(i.m_, {
             text: E.intl.string(E.t.WmfZHZ),
             children: (0, r.jsx)(a.K0, {
                 variant: "overlay-secondary",
                 icon: a.qYV,
                 "aria-label": E.intl.string(E.t.RDE0Sc),
-                onClick: v
+                onClick: S
             })
         })
     }) : null

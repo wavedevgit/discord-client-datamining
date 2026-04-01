@@ -20,8 +20,8 @@ function d(e) {
         navigateAwayOnReportSuccess: h = !0,
         onReportClick: m,
         onReportSubmit: A,
-        onMouseEnter: p,
-        onMouseLeave: g
+        onMouseEnter: g,
+        onMouseLeave: p
     } = e, f = (0, r.V)(t), _ = (0, o.D)(n.id, t);
     if (!f || null == _) return null;
     let E = () => {
@@ -34,8 +34,8 @@ function d(e) {
         onClick: () => {
             m?.(), (0, a.b8)(_, E)
         },
-        onMouseEnter: p,
-        onMouseLeave: g,
+        onMouseEnter: g,
+        onMouseLeave: p,
         text: null != d ? d : c.intl.string(c.t.HHZmDn)
     })
 }

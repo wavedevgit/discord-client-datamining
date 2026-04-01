@@ -18,8 +18,8 @@ var i = n(627968),
     p = n(520698),
     A = n(164617),
     x = n(402216),
-    E = n(607407),
-    f = n(534400),
+    f = n(607407),
+    E = n(534400),
     S = n(267102),
     I = n(401901),
     T = n(203355),
@@ -28,8 +28,8 @@ var i = n(627968),
     j = n(961350),
     y = n(430452),
     w = n(287809),
-    O = n(562153),
-    _ = n(810412),
+    _ = n(562153),
+    O = n(810412),
     N = n(761661),
     b = n(652215),
     R = n(985018),
@@ -51,9 +51,9 @@ function L(e) {
         children: (0, i.jsx)(u.DUT, {
             className: M.IF,
             onClick: e => {
-                e.stopPropagation(), (0, _.YX)(b.uss.GO_LIVE, {
-                    type: _.Z5.AUDIO,
-                    value: g ? _.IP.ENABLED : _.IP.DISABLED,
+                e.stopPropagation(), (0, O.YX)(b.uss.GO_LIVE, {
+                    type: O.Z5.AUDIO,
+                    value: g ? O.IP.ENABLED : O.IP.DISABLED,
                     userId: t.user.id
                 }), m()
             },
@@ -70,9 +70,9 @@ function L(e) {
 
 function z(e, t) {
     return s => {
-        (0, _.YX)(b.uss.GO_LIVE, {
-            type: _.Z5.GO_LIVE,
-            value: _.IP.SETTINGS_OPENED,
+        (0, O.YX)(b.uss.GO_LIVE, {
+            type: O.Z5.GO_LIVE,
+            value: O.IP.SETTINGS_OPENED,
             userId: e.user.id
         }), s.stopPropagation(), (0, h.L3)(s, async () => {
             let {
@@ -109,9 +109,9 @@ function D(e) {
                         (0, m.A9)(n.stream, {
                             forceMultiple: !0,
                             noFocus: !0
-                        }), s(), (0, _.YX)(b.uss.GO_LIVE, {
-                            type: _.Z5.GO_LIVE,
-                            value: _.IP.ENABLED,
+                        }), s(), (0, O.YX)(b.uss.GO_LIVE, {
+                            type: O.Z5.GO_LIVE,
+                            value: O.IP.ENABLED,
                             userId: n.user.id
                         })
                     },
@@ -135,16 +135,16 @@ function D(e) {
                         variant: "text-md/medium",
                         color: "always-white",
                         className: M.yb,
-                        children: O.Ay.getName(n.stream.guildId, n.stream.channelId, o)
-                    }), (0, i.jsx)(f.Ay, {
+                        children: _.Ay.getName(n.stream.guildId, n.stream.channelId, o)
+                    }), (0, i.jsx)(E.Ay, {
                         primaryGuild: c.primaryGuild,
                         userId: c.id,
                         containerClassName: M.Mp,
                         inline: !1,
                         onShowProfile: () => {
-                            (0, _.YX)(b.uss.GO_LIVE, {
-                                type: _.Z5.GO_LIVE,
-                                value: _.IP.GUILD_PROFILE_OPENED,
+                            (0, O.YX)(b.uss.GO_LIVE, {
+                                type: O.Z5.GO_LIVE,
+                                value: O.IP.GUILD_PROFILE_OPENED,
                                 userId: n.user.id
                             })
                         }
@@ -208,7 +208,7 @@ let k = new Set([b.XYD.ENDED, b.XYD.FAILED, b.XYD.PAUSED]),
                 })
             }) : (0, i.jsx)("div", {
                 className: M.Rh,
-                children: (0, i.jsx)(E.A, {
+                children: (0, i.jsx)(f.A, {
                     noText: !0,
                     className: M.HL,
                     stream: t.stream

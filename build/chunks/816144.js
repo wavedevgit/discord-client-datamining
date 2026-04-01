@@ -14,20 +14,20 @@ var i = n(627968),
     h = n(495273),
     m = n(265869),
     A = n(772659),
-    p = n(437774),
-    g = n(622543),
+    g = n(437774),
+    p = n(622543),
     f = n(576622),
     _ = n(95701),
     E = n(546183),
-    x = n(808728),
-    C = n(576705),
+    C = n(808728),
+    x = n(576705),
     S = n(287809),
     I = n(427262),
     T = n(803622),
-    v = n(314307),
-    N = n(393194),
+    N = n(314307),
+    b = n(393194),
     y = n(455067),
-    b = n(432817),
+    v = n(432817),
     j = n(324799),
     R = n(635157),
     M = n(379768),
@@ -44,9 +44,9 @@ function F(e) {
     let {
         canManageRoles: t,
         channel: n
-    } = e, l = t && (0, h.Ae)(n), a = (0, s.bG)([x.Ay], () => null != n.guild_id && n === x.Ay.getDefaultChannel(n.guild_id), [n]);
+    } = e, l = t && (0, h.Ae)(n), a = (0, s.bG)([C.Ay], () => null != n.guild_id && n === C.Ay.getDefaultChannel(n.guild_id), [n]);
     if ((0, m.A)(n.id)) return null;
-    if (n.isForumPost()) return (0, i.jsx)(N.A, {
+    if (n.isForumPost()) return (0, i.jsx)(b.A, {
         channel: n
     });
     if (_.Le.has(n.type)) return (0, i.jsx)(O.A, {
@@ -69,13 +69,13 @@ function H(e) {
         showingBanner: n
     } = e, h = (0, u.Ay)(t), {
         type: m
-    } = t, _ = (0, s.bG)([S.default], () => t.isPrivate() ? S.default.getUser(t.getRecipientId()) : null), x = I.Ay.useUserTag(_), {
-        canManageRoles: N,
+    } = t, _ = (0, s.bG)([S.default], () => t.isPrivate() ? S.default.getUser(t.getRecipientId()) : null), C = I.Ay.useUserTag(_), {
+        canManageRoles: b,
         canReadMessageHistory: M
-    } = (0, s.cf)([C.A], () => ({
-        canManageRoles: C.A.can(P.xBc.MANAGE_ROLES, t),
-        canReadMessageHistory: C.A.can(P.xBc.READ_MESSAGE_HISTORY, t)
-    })), D = (0, s.bG)([g.A], () => m === P.rbe.DM ? g.A.getMutualGuilds(t.getRecipientId()) : null, [t, m]), O = (0, d.A)(_?.id ?? P.dJq), {
+    } = (0, s.cf)([x.A], () => ({
+        canManageRoles: x.A.can(P.xBc.MANAGE_ROLES, t),
+        canReadMessageHistory: x.A.can(P.xBc.READ_MESSAGE_HISTORY, t)
+    })), D = (0, s.bG)([p.A], () => m === P.rbe.DM ? p.A.getMutualGuilds(t.getRecipientId()) : null, [t, m]), O = (0, d.A)(_?.id ?? P.dJq), {
         authorizedAppToken: L,
         authorizedAppsFetchState: H
     } = (0, s.cf)([E.default], () => ({
@@ -101,7 +101,7 @@ function H(e) {
             null != L && (n.push((0, i.jsx)(j.X, {
                 channel: t,
                 user: _
-            }, "mute")), n.push((0, i.jsx)(b.L, {
+            }, "mute")), n.push((0, i.jsx)(v.L, {
                 user: _,
                 application: O,
                 channel: t,
@@ -123,22 +123,22 @@ function H(e) {
             children: [null != _ && !_.isProvisional && (0, i.jsx)(a.Heading, {
                 variant: "heading-xl/medium",
                 className: G.SX,
-                children: x
+                children: C
             }), k.intl.format(k.t["Qvg+6+"], {
                 username: h
-            }), _?.isProvisional && (0, i.jsx)(p.Y, {
+            }), _?.isProvisional && (0, i.jsx)(g.Y, {
                 userId: _.id
             }), e]
         })
     }
     if (t.isMultiUserDM())
-        if (t.isManaged()) return (0, i.jsxs)(v.Ay, {
+        if (t.isManaged()) return (0, i.jsxs)(N.Ay, {
             channelId: t.id,
-            children: [(0, i.jsx)(v.cr, {
+            children: [(0, i.jsx)(N.cr, {
                 children: k.intl.format(k.t.I3R7Vn, {
                     channelName: h
                 })
-            }), (0, i.jsx)(v.j1, {
+            }), (0, i.jsx)(N.j1, {
                 children: k.intl.string(k.t.M8Ao6I)
             })]
         });
@@ -153,10 +153,10 @@ function H(e) {
     });
     return M ? (0, i.jsx)(F, {
         channel: t,
-        canManageRoles: N
-    }) : (0, i.jsx)(v.Ay, {
+        canManageRoles: b
+    }) : (0, i.jsx)(N.Ay, {
         channelId: t.id,
-        children: (0, i.jsx)(v.j1, {
+        children: (0, i.jsx)(N.j1, {
             children: k.intl.format(k.t.hPVEQG, {
                 channelName: h
             })

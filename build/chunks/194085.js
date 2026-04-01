@@ -21,12 +21,12 @@ let d = l.forwardRef(function(e, t) {
         onClick: h,
         onTooltipShow: m,
         onTooltipHide: A,
-        disabled: p,
-        dangerous: g,
+        disabled: g,
+        dangerous: p,
         separator: f,
         buttonClassName: _,
         children: E,
-        ...x
+        ...C
     } = e;
     return (0, i.jsx)(r.m, {
         asContainer: !0,
@@ -42,9 +42,9 @@ let d = l.forwardRef(function(e, t) {
                     h(e)
                 },
                 "aria-label": l ?? n,
-                disabled: p,
-                dangerous: g,
-                ...x,
+                disabled: g,
+                dangerous: p,
+                ...C,
                 children: [null != d ? (0, i.jsx)(d, {
                     className: c.Kk,
                     color: "currentColor",

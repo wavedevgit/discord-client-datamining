@@ -5,16 +5,16 @@ n.d(t, {
 });
 var r = n(627968),
     i = n(64700),
-    l = n(110259),
-    a = n(397927),
+    a = n(110259),
+    l = n(397927),
     s = n(252452),
     o = n(139286),
-    u = n(507553),
-    c = n(324593),
+    c = n(507553),
+    u = n(324593),
     d = n(883662),
     h = n(961350),
-    m = n(287809),
-    f = n(152056),
+    f = n(287809),
+    m = n(152056),
     p = n(780964),
     _ = n(162396),
     v = n(960545),
@@ -25,25 +25,25 @@ var r = n(627968),
     A = n(879797);
 let S = new Set([p.X.PROFILE_PANEL, p.X.SUBSCRIPTIONS_PANEL, p.X.FAMILY_CENTER_PANEL, p.X.POGGERMODE_PANEL]),
     b = new Map([
-        [p.X.CONNECTIONS_PANEL, l.ImpressionNames.USER_SETTINGS_CONNECTIONS],
-        [p.X.SESSIONS_PANEL, l.ImpressionNames.USER_SETTINGS_SESSIONS]
+        [p.X.CONNECTIONS_PANEL, a.ImpressionNames.USER_SETTINGS_CONNECTIONS],
+        [p.X.SESSIONS_PANEL, a.ImpressionNames.USER_SETTINGS_SESSIONS]
     ]);
 
 function N(e) {
     let {
         target: t,
         ...n
-    } = e, a = f.A.useField("query"), E = i.useCallback(() => {
-        f.A.setState({
+    } = e, l = m.A.useField("query"), E = i.useCallback(() => {
+        m.A.setState({
             query: ""
-        }), c.A.terminate()
+        }), u.A.terminate()
     }, []), [A, N] = i.useState(!1);
     return (i.useLayoutEffect(() => {
         let e = () => {
-            null == m.default.getCurrentUser() && (N(!0), (0, g.default)())
+            null == f.default.getCurrentUser() && (N(!0), (0, g.default)())
         };
         return h.default.addChangeListener(e), () => {
-            h.default.removeChangeListener(e), v.A.resetState(), u.A.resetState(), s.A.close()
+            h.default.removeChangeListener(e), v.A.resetState(), c.A.resetState(), s.A.close()
         }
     }, []), A) ? null : (0, r.jsx)(d.A, {
         partialRoot: x.D,
@@ -54,7 +54,7 @@ function N(e) {
             S.has(e) || (0, y._)(e);
             let t = b.get(e);
             null != t && (0, o.x)({
-                type: l.ImpressionTypes.PANE,
+                type: a.ImpressionTypes.PANE,
                 name: t,
                 properties: {
                     source: v.A.getField("source")
@@ -65,39 +65,39 @@ function N(e) {
         },
         target: t,
         defaultTarget: p.X.ACCOUNT_PANEL,
-        searchQuery: a,
+        searchQuery: l,
         clearSearchQuery: E,
         ...n
     })
 }
 
 function j() {
-    let e = f.A.useField("query"),
+    let e = m.A.useField("query"),
         t = i.useCallback(e => {
-            f.A.setState({
+            m.A.setState({
                 query: e
-            }), c.A.maybeTrackQueryEntered()
+            }), u.A.maybeTrackQueryEntered()
         }, []),
         n = i.useCallback(() => {
-            c.A.isSessionActive() || c.A.initialize()
+            u.A.isSessionActive() || u.A.initialize()
         }, []),
-        l = i.useCallback(() => {
-            0 === f.A.getField("query").trim().length && c.A.terminate()
+        a = i.useCallback(() => {
+            0 === m.A.getField("query").trim().length && u.A.terminate()
         }, []),
         s = i.useCallback(() => {
-            f.A.setState({
+            m.A.setState({
                 query: ""
-            }), c.A.terminate()
+            }), u.A.terminate()
         }, []);
     return i.useEffect(() => () => {
-        f.A.resetState(), c.A.terminate()
+        m.A.resetState(), u.A.terminate()
     }, []), (0, r.jsx)("div", {
         className: A.P,
-        children: (0, r.jsx)(a.IWV, {
+        children: (0, r.jsx)(l.IWV, {
             size: "md",
             query: e,
             onFocus: n,
-            onBlur: l,
+            onBlur: a,
             onChange: t,
             onClear: s
         })
@@ -107,11 +107,11 @@ function j() {
 function C() {
     return (0, r.jsxs)("div", {
         className: A.t,
-        children: [(0, r.jsx)(a.Text, {
+        children: [(0, r.jsx)(l.Text, {
             variant: "text-sm/semibold",
             color: "text-strong",
             children: E.intl.string(E.t.zihbmv)
-        }), (0, r.jsx)(a.Text, {
+        }), (0, r.jsx)(l.Text, {
             variant: "text-sm/normal",
             color: "text-subtle",
             children: E.intl.string(E.t.XclvsB)

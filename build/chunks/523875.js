@@ -4,8 +4,8 @@ n.d(t, {
 });
 var r = n(627968),
     a = n(64700),
-    l = n(744682);
-let i = {
+    i = n(744682);
+let l = {
         mute: {
             name: "mute",
             start: 0,
@@ -31,35 +31,35 @@ let i = {
         let t = a.useRef(null),
             s = a.useRef(e);
         s.current = e;
-        let u = a.useMemo(() => () => {
+        let o = a.useMemo(() => () => {
                 null != t.current && t.current.play(e)
             }, [e]),
-            o = a.useCallback(() => {
+            _ = a.useCallback(() => {
                 if (null == t.current) return;
                 let n = "mute" === e ? "hover_unmuted" : "hover_muted";
                 t.current.play(n)
             }, [e]),
-            c = a.useCallback(() => {
+            u = a.useCallback(() => {
                 if (null == t.current) return;
                 let n = "mute" === e ? "hover_unmuted" : "hover_muted";
                 t.current.stopIfPlaying(n)
             }, [e]),
-            d = a.useCallback(e => (0, r.jsx)(l.P, {
+            c = a.useCallback(e => (0, r.jsx)(i.P, {
                 ...e,
                 src: () => n.e("18133").then(n.t.bind(n, 705844, 19)),
                 ref: t,
                 initialAnimation: s.current,
-                markers: i
+                markers: l
             }), []);
         return {
             events: {
-                onClick: u,
-                onMouseEnter: o,
-                onMouseLeave: c
+                onClick: o,
+                onMouseEnter: _,
+                onMouseLeave: u
             },
-            play: u,
+            play: o,
             getDuration: a.useCallback(() => t.current?.getDuration(), []),
             getCurrentFrame: a.useCallback(() => t.current?.getCurrentFrame() ?? null, []),
-            Component: d
+            Component: c
         }
     }

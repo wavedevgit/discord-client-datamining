@@ -1,52 +1,52 @@
 /** chunk id: 619921 params = (module,exports,require) **/
 n.d(t, {
-    A: () => _
+    A: () => E
 });
 var i = n(311907),
-    l = n(73153),
-    r = n(734057),
-    s = n(650048),
-    o = n(71393),
-    a = n(309010),
+    r = n(73153),
+    s = n(734057),
+    a = n(650048),
+    l = n(71393),
+    o = n(309010),
     d = n(645959),
     c = n(652215);
-let u = (window?.location?.pathname ?? "").startsWith(c.BVt.ACTIVITIES) ? c.BVt.ACTIVITIES : null;
+let _ = (window?.location?.pathname ?? "").startsWith(c.BVt.ACTIVITIES) ? c.BVt.ACTIVITIES : null;
 
-function A(e) {
+function u(e) {
     let {
         link: t
     } = e;
-    if (u === t) return !1;
-    u = t
+    if (_ === t) return !1;
+    _ = t
 }
-class E extends i.Ay.Store {
+class A extends i.Ay.Store {
     static displayName = "AppViewStore";
     initialize() {
-        this.waitFor(s.A, d.default, a.A, o.A, r.A)
+        this.waitFor(a.A, d.default, o.A, l.A, s.A)
     }
     getHomeLink() {
-        return u ?? s.A.fallbackRoute
+        return _ ?? a.A.fallbackRoute
     }
 }
-let _ = new E(l.h, {
+let E = new A(r.h, {
     OVERLAY_INITIALIZE: function() {
         let e = d.default.getPrivateChannelIds(),
-            t = a.A.getChannelId(c.ME);
-        (null != t || null != e[0]) && (u = c.BVt.CHANNEL(c.ME, t ?? e[0]))
+            t = o.A.getChannelId(c.ME);
+        (null != t || null != e[0]) && (_ = c.BVt.CHANNEL(c.ME, t ?? e[0]))
     },
-    APP_VIEW_SET_HOME_LINK: A,
+    APP_VIEW_SET_HOME_LINK: u,
     APPLICATION_STORE_LOCATION_CHANGE: function(e) {
         let {
             location: t
         } = e;
-        A({
+        u({
             link: t.pathname,
             type: "APP_VIEW_SET_HOME_LINK"
         })
     },
     APPLICATION_STORE_RESET_NAVIGATION: function() {
-        if (null == u || !u.startsWith(c.BVt.APPLICATION_STORE)) return !1;
-        u = c.BVt.APPLICATION_STORE
+        if (null == _ || !_.startsWith(c.BVt.APPLICATION_STORE)) return !1;
+        _ = c.BVt.APPLICATION_STORE
     },
     CHANNEL_SELECT: function(e) {
         let {
@@ -55,7 +55,7 @@ let _ = new E(l.h, {
         } = e;
         if (null == t && null != n) {
             let e = c.BVt.CHANNEL(c.ME, n);
-            if (e !== u) return u = e, !0
+            if (e !== _) return _ = e, !0
         }
         return !1
     },
@@ -63,6 +63,6 @@ let _ = new E(l.h, {
         let {
             channel: t
         } = e;
-        null == t.guild_id && null != t.id && null != u && u === c.BVt.CHANNEL(c.ME, t.id) && (u = null)
+        null == t.guild_id && null != t.id && null != _ && _ === c.BVt.CHANNEL(c.ME, t.id) && (_ = null)
     }
 })

@@ -14,13 +14,13 @@ var i = n(627968),
     h = n(961350),
     m = n(741961),
     A = n(682174),
-    p = n(928830),
-    g = n(3137),
+    g = n(928830),
+    p = n(3137),
     f = n(559908),
     _ = n(103640),
     E = n(924177),
-    x = n(985018),
-    C = n(228596);
+    C = n(985018),
+    x = n(228596);
 let S = l.memo(function(e) {
         let {
             channelId: t,
@@ -32,7 +32,7 @@ let S = l.memo(function(e) {
                 h((null != a ? (0, _.RL)(a.combo) : 0) > 0)
             });
             let e = setTimeout(() => {
-                h(!1), null != a && (0, p.Nu)(a)
+                h(!1), null != a && (0, g.Nu)(a)
             }, 2e3);
             return () => clearTimeout(e)
         }, [a]);
@@ -45,10 +45,10 @@ let S = l.memo(function(e) {
                 config: s ? r.config.stiff : r.config.slow
             }, "animate-always");
         return null != a && (0, i.jsx)(r.animated.div, {
-            className: C.Gi,
+            className: x.Gi,
             style: A,
             children: (0, i.jsx)(c.Text, {
-                className: C.fX,
+                className: x.fX,
                 variant: "text-sm/bold",
                 children: (0, _.RL)(a.combo)
             })
@@ -65,53 +65,53 @@ let S = l.memo(function(e) {
         } = l.useMemo(() => (0, _.HN)(n), [n]);
         return (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)(c.Text, {
-                className: C.iR,
+                className: x.iR,
                 variant: "text-sm/bold",
                 children: t
             }), (0, i.jsxs)("div", {
-                className: C._Z,
+                className: x._Z,
                 style: {
                     color: s
                 },
                 children: [(0, i.jsx)(c.Text, {
-                    className: C.On,
+                    className: x.On,
                     style: {
                         color: s
                     },
                     variant: "text-sm/bold",
-                    children: x.intl.format(x.t["6bgVlq"], {
+                    children: C.intl.format(C.t["6bgVlq"], {
                         multiplier: n
                     })
                 }), r && (0, i.jsxs)(i.Fragment, {
                     children: [(0, i.jsx)("div", {
-                        className: a()(C.QA, C.kb),
+                        className: a()(x.QA, x.kb),
                         style: {
                             backgroundColor: s
                         }
                     }), (0, i.jsx)("div", {
-                        className: a()(C.QA, C.pG),
+                        className: a()(x.QA, x.pG),
                         style: {
                             backgroundColor: s
                         }
                     })]
                 }), o && (0, i.jsxs)(i.Fragment, {
                     children: [(0, i.jsx)("div", {
-                        className: a()(C.ox, C.kb),
+                        className: a()(x.ox, x.kb),
                         children: (0, i.jsx)(A.A, {
                             width: 24,
                             height: 24
                         })
                     }), (0, i.jsx)("div", {
-                        className: a()(C.ox, C.pG),
+                        className: a()(x.ox, x.pG),
                         children: (0, i.jsx)(A.A, {
                             width: 24,
                             height: 24
                         })
                     })]
                 }), 1 === n && (0, i.jsx)(c.Text, {
-                    className: C.uN,
+                    className: x.uN,
                     variant: "text-sm/bold",
-                    children: x.intl.string(x.t.b5Cpof)
+                    children: C.intl.string(C.t.b5Cpof)
                 })]
             })]
         })
@@ -119,16 +119,16 @@ let S = l.memo(function(e) {
     T = l.memo(function(e) {
         let {
             channelId: t
-        } = e, n = (0, o.bG)([h.default], () => h.default.getId()), s = (0, o.bG)([m.A], () => m.A.isTyping(t, n), [t, n]), a = (0, o.bG)([g.A], () => g.A.isEnabled()), u = (0, o.bG)([f.Ay], () => f.Ay.isComboing(n, t), [t, n]), {
+        } = e, n = (0, o.bG)([h.default], () => h.default.getId()), s = (0, o.bG)([m.A], () => m.A.isTyping(t, n), [t, n]), a = (0, o.bG)([p.A], () => p.A.isEnabled()), u = (0, o.bG)([f.Ay], () => f.Ay.isComboing(n, t), [t, n]), {
             ref: A,
-            width: p = 0
-        } = (0, d.Ay)(), [_, x] = l.useState(!1), T = (0, E.A)(t), v = a && u && s;
+            width: g = 0
+        } = (0, d.Ay)(), [_, C] = l.useState(!1), T = (0, E.A)(t), N = a && u && s;
         l.useEffect(() => {
-            v && x(!0);
-            let e = setTimeout(() => x(v), 1e3);
+            N && C(!0);
+            let e = setTimeout(() => C(N), 1e3);
             return () => clearTimeout(e)
-        }, [v]);
-        let N = (0, c.zhh)({
+        }, [N]);
+        let b = (0, c.zhh)({
                 opacity: +!!_,
                 transform: _ ? "translateY(0)" : "translateY(100%)",
                 pointerEvents: "none",
@@ -138,25 +138,25 @@ let S = l.memo(function(e) {
                 value: 0,
                 multiplier: 1
             }, [T]),
-            b = l.useRef(y);
+            v = l.useRef(y);
         l.useEffect(() => {
-            (y.multiplier > 1 || y.value > 0) && (b.current = y)
+            (y.multiplier > 1 || y.value > 0) && (v.current = y)
         }, [y]);
         let {
             multiplier: j,
             value: R
         } = l.useMemo(() => ({
-            value: v ? y.value : b.current.value,
-            multiplier: v ? y.multiplier : b.current.multiplier
-        }), [v, y, b]);
+            value: N ? y.value : v.current.value,
+            multiplier: N ? y.multiplier : v.current.multiplier
+        }), [N, y, v]);
         return (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)(S, {
                 channelId: t,
-                width: p
+                width: g
             }), (0, i.jsx)(r.animated.div, {
                 ref: A,
-                className: C.p_,
-                style: N,
+                className: x.p_,
+                style: b,
                 children: (0, i.jsx)(I, {
                     value: R,
                     multiplier: j

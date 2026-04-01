@@ -3,13 +3,13 @@ n.d(t, {
     A: () => b
 });
 var i = n(627968),
-    l = n(64700),
-    a = n(503698),
-    s = n.n(a),
+    a = n(64700),
+    l = n(503698),
+    s = n.n(l),
     r = n(540185),
     o = n(397927),
-    d = n(793574),
-    c = n(688810),
+    c = n(793574),
+    d = n(688810),
     u = n(362490),
     g = n(701613),
     m = n(587895),
@@ -67,7 +67,7 @@ let E = {
 function b(e) {
     let t, {
             widget: n,
-            onAddWidget: a,
+            onAddWidget: l,
             size: m = "default",
             loading: f = !1,
             trackUserProfileEditAction: b
@@ -81,33 +81,33 @@ function b(e) {
         R = y ? n.applicationId : void 0,
         k = (0, x.h)(R),
         {
-            hasAlreadyLinked: O,
-            canStartAuthorization: w,
+            hasAlreadyLinked: w,
+            canStartAuthorization: O,
             startAuthorization: L
         } = (0, u.RD)(k),
         {
             analyticsLocations: P
-        } = (0, c.Ay)(d.A.USER_PROFILE_APPLICATION_WIDGET),
+        } = (0, d.Ay)(c.A.USER_PROFILE_APPLICATION_WIDGET),
         D = g.G.useConfig({
             location: "UserProfileWidgetOptionAddButton"
         }),
-        G = y && !O && w && D.enabled,
-        M = l.useCallback(() => {
+        G = y && !w && O && D.enabled,
+        M = a.useCallback(() => {
             if (!f) {
                 if (G) {
                     D.autoAdd && ((0, h.Y5)(n), b({
                         action: "WIDGET_ADDED",
                         ...n.getProfileEditAnalyticsOptions()
-                    }), (0, _.XA)(j.jM.WIDGET_ADDED), a?.()), L({
+                    }), (0, _.XA)(j.jM.WIDGET_ADDED), l?.()), L({
                         analyticsLocations: P
                     });
                     return
                 }(0, h.Y5)(n), b({
                     action: "WIDGET_ADDED",
                     ...n.getProfileEditAnalyticsOptions()
-                }), (0, _.XA)(j.jM.WIDGET_ADDED), a?.()
+                }), (0, _.XA)(j.jM.WIDGET_ADDED), l?.()
             }
-        }, [f, G, D, n, b, a, L, P]),
+        }, [f, G, D, n, b, l, L, P]),
         U = S?.(n),
         F = G ? o.qYV : o.U1e;
     return (0, i.jsxs)("div", {

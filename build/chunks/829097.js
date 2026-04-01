@@ -1,6 +1,6 @@
 /** chunk id: 829097 params = (module,exports,require) **/
 n.d(t, {
-    _: () => i
+    _: () => s
 });
 let r = (0, n(945810).mj)({
     name: "2025-09-video-qoe-metrics-tracking",
@@ -18,7 +18,7 @@ let r = (0, n(945810).mj)({
     }
 });
 
-function i(e) {
+function s(e) {
     let {
         location: t
     } = e;

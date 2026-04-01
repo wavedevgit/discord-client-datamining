@@ -1,34 +1,34 @@
 /** chunk id: 839067 params = (module,exports,require) **/
 n.d(t, {
-    A: () => o
+    A: () => l
 });
 var i = n(311907),
-    l = n(73153);
-let r = null;
-class s extends i.Ay.Store {
+    r = n(73153);
+let s = null;
+class a extends i.Ay.Store {
     static displayName = "ApplicationStoreLocationStore";
     getCurrentPath() {
-        return null != r ? r.pathname : null
+        return null != s ? s.pathname : null
     }
     getCurrentRoute() {
         var e;
         let t;
-        return t = null != (e = r) && null != e.search ? e.search : "", null != e ? `${e.pathname}${t}` : null
+        return t = null != (e = s) && null != e.search ? e.search : "", null != e ? `${e.pathname}${t}` : null
     }
     reset() {
         throw Error("Should not reset the store this way outside of a test environment")
     }
 }
-let o = new s(l.h, {
+let l = new a(r.h, {
     APPLICATION_STORE_LOCATION_CHANGE: function(e) {
         let {
             location: t
         } = e;
-        r = {
+        s = {
             ...t
         }
     },
     APPLICATION_STORE_RESET_NAVIGATION: function() {
-        r = null
+        s = null
     }
 })

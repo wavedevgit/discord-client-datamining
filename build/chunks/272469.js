@@ -1,0 +1,48 @@
+/** chunk id: 272469 params = (module,exports,require) **/
+s.d(e, {
+    pq: () => a,
+    vF: () => c
+});
+var r = s(780755),
+    i = s(978862);
+let n = ["debug", "info", "warn", "error", "log", "assert", "trace"],
+    o = {};
+
+function a(t) {
+    if (!("console" in i.O)) return t();
+    let e = i.O.console,
+        s = {},
+        r = Object.keys(o);
+    r.forEach(t => {
+        let r = o[t];
+        s[t] = e[t], e[t] = r
+    });
+    try {
+        return t()
+    } finally {
+        r.forEach(t => {
+            e[t] = s[t]
+        })
+    }
+}
+let c = (0, i.B)("logger", function() {
+    let t = !1,
+        e = {
+            enable: () => {
+                t = !0
+            },
+            disable: () => {
+                t = !1
+            },
+            isEnabled: () => t
+        };
+    return r.T ? n.forEach(s => {
+        e[s] = (...e) => {
+            t && a(() => {
+                i.O.console[s](`Sentry Logger [${s}]:`, ...e)
+            })
+        }
+    }) : n.forEach(t => {
+        e[t] = () => void 0
+    }), e
+})

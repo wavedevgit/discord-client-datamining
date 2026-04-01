@@ -14,20 +14,20 @@ var i = n(64700),
     h = n(8880),
     m = n(253932),
     A = n(961350),
-    p = n(734057),
-    g = n(580745),
+    g = n(734057),
+    p = n(580745),
     f = n(834942),
     _ = n(320501),
     E = n(576705),
-    x = n(957565),
-    C = n(203982),
+    C = n(957565),
+    x = n(203982),
     S = n(723702),
     I = n(661191),
     T = n(697470),
-    v = n(492841),
-    N = n(707985),
+    N = n(492841),
+    b = n(707985),
     y = n(519222),
-    b = n(652215);
+    v = n(652215);
 let j = function(e, t, n) {
     let j = i.useRef(n);
     return j.current = n, i.useCallback(n => {
@@ -38,21 +38,21 @@ let j = function(e, t, n) {
             D = n.metaKey && !(n.altKey || n.ctrlKey || n.shiftKey),
             O = n.shiftKey && !(n.altKey || n.ctrlKey || n.metaKey),
             L = _.A.getMessage(t, e),
-            P = p.A.getChannel(t);
+            P = g.A.getChannel(t);
         if (null == L || null == P) return;
         let w = A.default.getId();
         switch (n.key.toLowerCase()) {
             case "backspace":
-                i && (E.A.can(b.xBc.MANAGE_MESSAGES, P) || L.canDeleteOwnMessage(w)) && (n.preventDefault(), (0, y.RC)(P, L, n));
+                i && (E.A.can(v.xBc.MANAGE_MESSAGES, P) || L.canDeleteOwnMessage(w)) && (n.preventDefault(), (0, y.RC)(P, L, n));
                 break;
             case "c":
-                ((0, S.isMac)() ? D : M) && x.p5 && (n.preventDefault(), (0, x.C)(L.content));
+                ((0, S.isMac)() ? D : M) && C.p5 && (n.preventDefault(), (0, C.C)(L.content));
                 break;
             case "e":
                 i && !P.isSystemDM() && (0, T.A)(L, w) && (n.preventDefault(), (0, y.u_)(P, L));
                 break;
             case "p":
-                (i || O) && (0, v.A)(L, P) && (n.preventDefault(), (0, y.rS)(P, L, n));
+                (i || O) && (0, N.A)(L, P) && (n.preventDefault(), (0, y.rS)(P, L, n));
                 break;
             case "+":
                 (i || O) && function(e) {
@@ -60,16 +60,16 @@ let j = function(e, t, n) {
                         n = m.jW.getSetting(),
                         {
                             disableReactionCreates: i
-                        } = (0, N.A)({
+                        } = (0, b.A)({
                             channel: e,
                             canChat: t,
                             renderReactions: n,
-                            canAddNewReactions: t && E.A.can(b.xBc.ADD_REACTIONS, e),
+                            canAddNewReactions: t && E.A.can(v.xBc.ADD_REACTIONS, e),
                             isLurking: null != e.guild_id && r.A.isLurking(e.guild_id),
                             isActiveChannelOrUnarchivableThread: (0, c.jr)(e)
                         });
                     return !i && n
-                }(P) && (n.preventDefault(), C._.dispatchKeyed(b.zOV.TOGGLE_REACTION_POPOUT, L.id, {
+                }(P) && (n.preventDefault(), x._.dispatchKeyed(v.zOV.TOGGLE_REACTION_POPOUT, L.id, {
                     emojiPicker: !0
                 }));
                 break;
@@ -87,8 +87,8 @@ let j = function(e, t, n) {
                 break;
             case "t":
                 if (i && (0, c.D1)(P, L)) n.preventDefault(), (0, d.Tv)(P, L, "Message Shortcut");
-                else if (L.hasFlag(b.pr7.HAS_THREAD)) {
-                    let e = p.A.getChannel(I.default.castMessageIdAsChannelId(L.id));
+                else if (L.hasFlag(v.pr7.HAS_THREAD)) {
+                    let e = g.A.getChannel(I.default.castMessageIdAsChannelId(L.id));
                     null != e && (i || O) && (n.preventDefault(), (0, d.JA)(e, O))
                 }
                 break;
@@ -96,7 +96,7 @@ let j = function(e, t, n) {
                 R && (n.preventDefault(), (0, y.cl)(P, L));
                 break;
             case "escape":
-                g.A.isEditing(P.id, L.id) ? l.A.endEditMessage(P.id) : C._.dispatch(b.jej.TEXTAREA_FOCUS)
+                p.A.isEditing(P.id, L.id) ? l.A.endEditMessage(P.id) : x._.dispatch(v.jej.TEXTAREA_FOCUS)
         }
     }, [e, t])
 }

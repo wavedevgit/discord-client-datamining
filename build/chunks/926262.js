@@ -1,6 +1,6 @@
 /** chunk id: 926262 params = (module,exports,require) **/
 n.d(t, {
-    A: () => p
+    A: () => g
 });
 var i = n(627968),
     l = n(64700),
@@ -15,15 +15,15 @@ var i = n(627968),
     m = n(976369),
     A = n(782691);
 
-function p(e) {
+function g(e) {
     let {
         onClose: t,
-        onConfirm: p,
-        onCancel: g,
+        onConfirm: g,
+        onCancel: p,
         channel: f,
         analyticsType: _,
         popoutText: E,
-        animation: x
+        animation: C
     } = e;
     l.useEffect(() => {
         d.default.track(u.HAw.OPEN_POPOUT, {
@@ -31,20 +31,20 @@ function p(e) {
             ...(0, o.dI)(f)
         })
     }, [_, f]);
-    let C = l.useCallback(() => {
-            p?.(), t()
-        }, [p, t]),
-        S = l.useCallback(() => {
+    let x = l.useCallback(() => {
             g?.(), t()
         }, [g, t]),
+        S = l.useCallback(() => {
+            p?.(), t()
+        }, [p, t]),
         I = l.useRef(null);
     return l.useEffect(() => {
         let e, t = c.A.theme,
             i = !1;
-        return null != x && (async () => {
+        return null != C && (async () => {
             let [{
                 default: l
-            }, s] = await Promise.all([Promise.resolve().then(n.t.bind(n, 883885, 23)), (0, a.Mw)(t) ? x.dark() : x.light()]);
+            }, s] = await Promise.all([Promise.resolve().then(n.t.bind(n, 883885, 23)), (0, a.Mw)(t) ? C.dark() : C.light()]);
             i || null == I.current || (e = l.loadAnimation({
                 container: I.current,
                 renderer: "svg",
@@ -55,14 +55,14 @@ function p(e) {
         })(), () => {
             i = !0, null != e && (e.destroy(), e = void 0)
         }
-    }, [x]), (0, i.jsx)(r.lGe, {
+    }, [C]), (0, i.jsx)(r.lGe, {
         "aria-labelledby": "content-warning-popout-label",
         children: (0, i.jsxs)("form", {
             className: m.$,
-            onSubmit: C,
+            onSubmit: x,
             children: [(0, i.jsxs)("div", {
                 className: m.rf,
-                children: [null != x && (0, i.jsx)("div", {
+                children: [null != C && (0, i.jsx)("div", {
                     className: m.lY,
                     ref: I
                 }), (0, i.jsxs)("div", {
@@ -97,7 +97,7 @@ function p(e) {
                                 className: m.x6,
                                 children: (0, i.jsx)(r.Button, {
                                     variant: "primary",
-                                    onClick: C,
+                                    onClick: x,
                                     text: h.intl.string(h.t.KJnHq3),
                                     autoFocus: !0
                                 })

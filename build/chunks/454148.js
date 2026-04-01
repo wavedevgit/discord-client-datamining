@@ -1,6 +1,6 @@
 /** chunk id: 454148 params = (module,exports,require) **/
 n.d(t, {
-    L: () => x
+    L: () => C
 });
 var i = n(627968),
     l = n(64700),
@@ -14,26 +14,26 @@ var i = n(627968),
     h = n(544231),
     m = n(349435),
     A = n(665909),
-    p = n(576045),
-    g = n(477427),
+    g = n(576045),
+    p = n(477427),
     f = n(56462),
     _ = n(652215),
     E = n(985018);
 
-function x(e) {
+function C(e) {
     let {
         channelId: t,
-        warningId: x,
-        senderId: C
+        warningId: C,
+        senderId: x
     } = e, S = (0, f.CW)(), I = l.useCallback(() => {
-        (0, h.xi)(t, [x])
-    }, [t, x]), T = e => {
+        (0, h.xi)(t, [C])
+    }, [t, C]), T = e => {
         r.A.updateChannelOverrideSettings(null, t, {
             muted: !0
-        }, g.fd.Muted), c.A.showMuteSuccessToast(C, t), (0, A._$)({
+        }, p.fd.Muted), c.A.showMuteSuccessToast(x, t), (0, A._$)({
             channelId: t,
-            warningId: x,
-            senderId: C,
+            warningId: C,
+            senderId: x,
             warningType: m._j.LIKELY_ATO,
             cta: e
         }), I()
@@ -41,16 +41,16 @@ function x(e) {
     return l.useEffect(() => {
         (0, A.mO)(_.HAw.SAFETY_WARNING_VIEWED, {
             channelId: t,
-            warningId: x,
-            senderId: C,
+            warningId: C,
+            senderId: x,
             warningType: m._j.LIKELY_ATO
         }), o.A.increment({
             name: s.K.SAFETY_WARNING_VIEW
         })
-    }, [t, x, C]), (0, i.jsx)(p.N, {
+    }, [t, C, x]), (0, i.jsx)(g.N, {
         channelId: t,
-        warningId: x,
-        senderId: C,
+        warningId: C,
+        senderId: x,
         warningType: m._j.LIKELY_ATO,
         header: E.intl.string(E.t.R8UsiI),
         description: E.intl.string(E.t.lI8nQl),
@@ -72,8 +72,8 @@ function x(e) {
                             transitionState: l,
                             onClose: s,
                             channelId: t,
-                            warningId: x,
-                            senderId: C,
+                            warningId: C,
+                            senderId: x,
                             description: E.intl.string(E.t["/uid3p"]),
                             safetyTipRows: S.map((e, t) => (0, i.jsx)(d.B, {
                                 listType: "numbered",
@@ -92,8 +92,8 @@ function x(e) {
                             learnMore: (0, i.jsx)(a.DUT, {
                                 onClick: () => (0, A._$)({
                                     channelId: t,
-                                    warningId: x,
-                                    senderId: C,
+                                    warningId: C,
+                                    senderId: x,
                                     warningType: m._j.LIKELY_ATO,
                                     cta: A.Wm.USER_MODAL_LEARN_MORE
                                 }),
@@ -109,8 +109,8 @@ function x(e) {
                     }
                 }), (0, A._$)({
                     channelId: t,
-                    warningId: x,
-                    senderId: C,
+                    warningId: C,
+                    senderId: x,
                     warningType: m._j.LIKELY_ATO,
                     cta: A.Wm.OPEN_MORE_TIPS
                 })

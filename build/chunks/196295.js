@@ -17,9 +17,9 @@ var i = n(627968),
     p = n(652215),
     A = n(985018),
     x = n(458904);
-let E = [];
+let f = [];
 
-function f(e) {
+function E(e) {
     return e.notification.id
 }
 
@@ -52,7 +52,7 @@ let T = s.memo(function(e) {
         pinned: n,
         showEmpty: c = !0
     } = e, x = (0, l.bG)([g.A, o.A], () => {
-        if (o.A.isNotificationDisabled(m.KS.TextChat)) return E;
+        if (o.A.isNotificationDisabled(m.KS.TextChat)) return f;
         let e = [],
             i = 0;
         for (let s of g.A.getNotifications()) {
@@ -71,7 +71,7 @@ let T = s.memo(function(e) {
         children: (0, i.jsx)(r.Fai, {
             items: x,
             renderItem: S,
-            getItemKey: f,
+            getItemKey: E,
             wrapChildren: I
         })
     }) : c ? t ? null : (0, i.jsx)(a.g, {

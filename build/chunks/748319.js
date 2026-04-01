@@ -35,8 +35,8 @@ var a = n(627968),
     R = n(601255),
     w = n(562819),
     D = n(449582),
-    P = n(351952),
-    M = n(88686),
+    M = n(351952),
+    P = n(88686),
     L = n(214881),
     U = n(302223),
     B = n(609425),
@@ -89,8 +89,8 @@ var a = n(627968),
 let eR = ej.Ay.getEnableHardwareAcceleration() ? h.JsQ : h.euF,
     ew = 2.5 * e_.A.Millis.SECOND,
     eD = 2 * e_.A.Millis.MINUTE,
-    eP = 2 * e_.A.Millis.MINUTE,
-    eM = 5 * e_.A.Millis.SECOND;
+    eM = 2 * e_.A.Millis.MINUTE,
+    eP = 5 * e_.A.Millis.SECOND;
 
 function eL(e) {
     let {
@@ -137,7 +137,7 @@ function eL(e) {
             highlightBadge: s ? n : void 0,
             setHighlightBadge: a
         }
-    }(), T = (0, P.K)(x);
+    }(), T = (0, M.K)(x);
     return null == o ? null : (0, a.jsx)(p.A, {
         object: eN.ZSU.AVATAR,
         children: (0, a.jsx)(Y.A, {
@@ -224,7 +224,7 @@ function eL(e) {
 class eU extends i.PureComponent {
     speakingWhileMutedTooltipTimeout = new m.Ep;
     speakingWhilePTTTooltipTimeout = new m.Ep;
-    speakingWhilePTTInactiveBackoff = new d.A(eP, null, !1);
+    speakingWhilePTTInactiveBackoff = new d.A(eM, null, !1);
     lastSpeakingWhileMutedNotificationTime = void 0;
     lastSpeakingWhilePTTNotificationTime = void 0;
     state = {
@@ -540,7 +540,7 @@ class eU extends i.PureComponent {
                     children: [(0, a.jsx)(L.A, {
                         nameplate: t,
                         hovered: r,
-                        placement: M.u.ACCOUNT
+                        placement: P.u.ACCOUNT
                     }), this.renderNameZone(e), (0, a.jsx)(eB, {
                         ...this.props,
                         ...this.state,
@@ -587,7 +587,7 @@ function eB(e) {
         shouldShowPTTJoinTooltip: C = !1,
         dismissTooltips: y,
         speaking: S
-    } = e, T = (0, P.K)(b);
+    } = e, T = (0, M.K)(b);
     return (0, a.jsxs)("div", {
         className: eO.Uo,
         style: T,
@@ -636,7 +636,7 @@ function eG(e) {
         a = i.useRef(new m.Ep),
         [s, l] = i.useState(!1);
     i.useEffect(() => {
-        t && n && (l(!0), a.current.start(eM, () => {
+        t && n && (l(!0), a.current.start(eP, () => {
             l(!1)
         }))
     }, [t, n]);
@@ -698,9 +698,9 @@ function eF() {
         k = (0, c.bG)([eo.A], () => eo.A.hasLayers()),
         O = (0, h.red)(h.DXt) || k || ev.P.isDisallowPopupsSet() || I,
         w = (0, c.bG)([V.default], () => null != V.default.getAwaitingRemoteSessionInfo()),
-        P = (0, c.bG)([eu.A], () => eu.A.getGuildId()),
-        M = e?.avatarDecoration,
-        L = (0, R.A)(M),
+        M = (0, c.bG)([eu.A], () => eu.A.getGuildId()),
+        P = e?.avatarDecoration,
+        L = (0, R.A)(P),
         U = eb.Ay.useName(e) ?? "",
         {
             analyticsLocations: B
@@ -767,7 +767,7 @@ function eF() {
             webBuildOverride: A,
             awaitingRemote: w,
             nameplate: G,
-            selectedGuildId: P,
+            selectedGuildId: M,
             avatarDecoration: L,
             isQuestBarEmpty: F,
             isListenAlongVisible: W,

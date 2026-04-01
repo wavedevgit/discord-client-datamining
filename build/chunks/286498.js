@@ -1,6 +1,6 @@
 /** chunk id: 286498 params = (module,exports,require) **/
 n.d(t, {
-    A: () => N
+    A: () => b
 });
 var i = n(627968),
     l = n(64700),
@@ -14,25 +14,25 @@ var i = n(627968),
     h = n(297413),
     m = n(966327),
     A = n(793574),
-    p = n(235986),
-    g = n(803664),
+    g = n(235986),
+    p = n(803664),
     f = n(583311),
     _ = n(290863),
     E = n(584777),
-    x = n(994500),
-    C = n(427262),
+    C = n(994500),
+    x = n(427262),
     S = n(652215),
     I = n(985018),
     T = n(442921);
-let v = e => {
+let N = e => {
     let {
         user: t,
         handleTrackAction: n
-    } = e, s = (0, o.bG)([x.A], () => x.A.getRelationshipType(t.id)), [a, r] = l.useState(!1), h = (0, g.A)({
+    } = e, s = (0, o.bG)([C.A], () => C.A.getRelationshipType(t.id)), [a, r] = l.useState(!1), h = (0, p.A)({
         user: t,
         location: A.A.NEW_GROUP_DM_INVITE_MODAL,
         setLoading: r
-    }), m = l.useRef(null), p = l.useCallback(async () => {
+    }), m = l.useRef(null), g = l.useCallback(async () => {
         n(), r(!0), await u.A.addRelationship({
             userId: t.id,
             context: {
@@ -83,7 +83,7 @@ let v = e => {
                 ariaHidden: !0,
                 children: (0, i.jsx)(d.K0, {
                     size: "sm",
-                    onClick: p,
+                    onClick: g,
                     variant: "icon-only",
                     "aria-label": I.intl.string(I.t.w5uwoI),
                     icon: d.Rvf,
@@ -93,20 +93,20 @@ let v = e => {
     }
 };
 
-function N(e) {
+function b(e) {
     let t, {
             user: n,
             section: l,
             row: s,
             hideDiscriminator: u,
             comparator: A,
-            selected: g,
+            selected: p,
             checked: f,
-            disabled: x = !1,
+            disabled: C = !1,
             onClick: S,
-            onMessageClick: N,
+            onMessageClick: b,
             onMouseEnter: y,
-            "aria-setsize": b,
+            "aria-setsize": v,
             "aria-posinset": j,
             handleTrackAction: R,
             inImprovedDMExperiment: M,
@@ -121,23 +121,23 @@ function N(e) {
         })
     }) : (0, i.jsx)(c.m_, {
         asContainer: !0,
-        text: x ? D : I.intl.string(I.t["6Urw1t"]),
+        text: C ? D : I.intl.string(I.t["6Urw1t"]),
         children: (0, i.jsx)(d.K0, {
             "aria-label": "",
             size: "sm",
             variant: "secondary",
             icon: d.ggM,
             onClick: () => {
-                R(l, s, "message"), N?.(n.id)
+                R(l, s, "message"), b?.(n.id)
             },
-            disabled: x
+            disabled: C
         })
     }) : (0, i.jsx)(d.P7L, {
         checked: f,
-        disabled: x
+        disabled: C
     });
     let P = (0, r.rm)(String(n.id)),
-        w = !x && l === E.A.FRIENDS || O;
+        w = !C && l === E.A.FRIENDS || O;
     return (0, i.jsx)(d.DUT, {
         id: `user-row-${s}`,
         className: a()(T.Se, {
@@ -152,13 +152,13 @@ function N(e) {
         ...P,
         role: "option",
         "aria-selected": f,
-        "aria-disabled": x,
-        "aria-setsize": b,
+        "aria-disabled": C,
+        "aria-setsize": v,
         "aria-posinset": j,
-        children: (0, i.jsxs)(p.A, {
-            align: p.A.Align.CENTER,
+        children: (0, i.jsxs)(g.A, {
+            align: g.A.Align.CENTER,
             className: a()(T.Bc, {
-                [T.oz]: g
+                [T.oz]: p
             }),
             children: [(0, i.jsx)(m.A, {
                 user: n,
@@ -171,7 +171,7 @@ function N(e) {
                     className: T.$R,
                     "aria-hidden": !0,
                     variant: "text-md/medium",
-                    children: null != A && A === n.tag ? C.Ay.getName(n) : null != A && "" !== A ? A : C.Ay.getName(n)
+                    children: null != A && A === n.tag ? x.Ay.getName(n) : null != A && "" !== A ? A : x.Ay.getName(n)
                 }), (0, i.jsx)(d.Text, {
                     variant: "text-xs/normal",
                     color: "text-muted",
@@ -182,7 +182,7 @@ function N(e) {
                         forceUsername: !0
                     })
                 })]
-            }), l !== E.A.FRIENDS && M ? (0, i.jsx)(v, {
+            }), l !== E.A.FRIENDS && M ? (0, i.jsx)(N, {
                 user: n,
                 handleTrackAction: () => R(l, s, "friend")
             }) : null, t]

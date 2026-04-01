@@ -34,8 +34,8 @@ var a = n(627968),
     R = n(379654),
     w = n(946356),
     D = n(810396),
-    P = n(376285),
-    M = n(159218),
+    M = n(376285),
+    P = n(159218),
     L = n(442228),
     U = n(253932),
     B = n(290863),
@@ -124,10 +124,10 @@ function ea(e) {
         eD = (0, x.QR)({
             location: "UserProfileAccountPopout"
         }),
-        eP = (0, x.zd)({
+        eM = (0, x.zd)({
             location: "UserProfileAccountPopout"
         }),
-        eM = i.useId();
+        eP = i.useId();
     return (0, a.jsx)(h.f5, {
         value: eo,
         children: (0, a.jsx)(C.of, {
@@ -135,7 +135,7 @@ function ea(e) {
             isLoaded: el?.isLoaded,
             children: (0, a.jsxs)(c.lGe, {
                 ref: ec,
-                "aria-labelledby": eM,
+                "aria-labelledby": eP,
                 className: l()(et.jC, ei, {
                     [et.lO]: null != er,
                     [et.IW]: er?.layers.find(e => {
@@ -149,7 +149,7 @@ function ea(e) {
                 "data-layer": "base",
                 children: [(0, a.jsx)(o.AC4, {
                     children: (0, a.jsx)(o.H, {
-                        id: eM,
+                        id: eP,
                         children: ee.intl.string(ee.t["5fWB8U"])
                     })
                 }), (0, a.jsxs)(c.Fmo, {
@@ -173,7 +173,7 @@ function ea(e) {
                                 displayProfile: el,
                                 themeType: Z.d.POPOUT,
                                 onOpenProfile: es ? void 0 : ek
-                            }), (0, a.jsx)(M.A, {
+                            }), (0, a.jsx)(P.A, {
                                 ref: ey,
                                 user: t,
                                 themeType: Z.d.POPOUT,
@@ -200,7 +200,7 @@ function ea(e) {
                                     shouldOpenBadgeTooltip: null != ea ? e => e === ea : void 0,
                                     shouldGlowTenureBadge: eT.current
                                 }),
-                                nicknameIcons: (0, a.jsx)(P.A, {
+                                nicknameIcons: (0, a.jsx)(M.A, {
                                     user: t,
                                     isVisible: em
                                 })
@@ -319,7 +319,7 @@ function ea(e) {
                             skuId: el.profileEffect.skuId,
                             isHovering: eh
                         })]
-                    }), eD && eP ? (0, a.jsx)(z.A, {
+                    }), eD && eM ? (0, a.jsx)(z.A, {
                         targetElementRef: eS,
                         onClose: n
                     }) : null, (0, a.jsx)(j.A, {})]

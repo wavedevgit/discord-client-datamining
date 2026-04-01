@@ -1,22 +1,22 @@
 /** chunk id: 528772 params = (module,exports,require) **/
 n.d(t, {
-    A: () => u
+    A: () => o
 });
 var r = n(311907),
     a = n(73153);
-let l = !1,
-    i = !1;
+let i = !1,
+    l = !1;
 class s extends r.Ay.Store {
     static displayName = "SoundboardOverlayStore";
     get keepOpen() {
-        return i
-    }
-    get enabled() {
         return l
     }
+    get enabled() {
+        return i
+    }
 }
-let u = new s(a.h, {
+let o = new s(a.h, {
     SOUNDBOARD_SET_OVERLAY_ENABLED: function(e) {
-        l = e.enabled, e.enabled && (i = e.keepOpen ?? !1)
+        i = e.enabled, e.enabled && (l = e.keepOpen ?? !1)
     }
 })

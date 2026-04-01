@@ -1,23 +1,23 @@
 /** chunk id: 682174 params = (module,exports,require) **/
-i.d(t, {
-    A: () => l
+i.d(e, {
+    A: () => r
 });
 var n = i(627968);
 i(64700);
-var a = i(953727);
+var l = i(953727);
 
-function l(e) {
+function r(t) {
     let {
-        width: t = 20,
+        width: e = 20,
         height: i = 20,
-        className: l,
+        className: r,
         ...s
-    } = e;
+    } = t;
     return (0, n.jsx)("svg", {
-        width: t,
+        width: e,
         height: i,
-        className: l,
-        ...(0, a.A)(s),
+        className: r,
+        ...(0, l.A)(s),
         viewBox: "0 0 20 20",
         children: (0, n.jsxs)("g", {
             clipPath: "url(#clip0_198_5469)",

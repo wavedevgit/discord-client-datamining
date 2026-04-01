@@ -14,13 +14,13 @@ var i = n(627968),
     h = n(922301),
     m = n(750112),
     A = n(598104),
-    p = n(697122),
-    g = n(73028),
+    g = n(697122),
+    p = n(73028),
     f = n(95550),
     _ = n(854627),
     E = n(314307),
-    x = n(985018),
-    C = n(563003);
+    C = n(985018),
+    x = n(563003);
 
 function S(e) {
     let t, {
@@ -29,11 +29,11 @@ function S(e) {
             user: I
         } = e,
         T = (0, s.bG)([o.A], () => o.A.useReducedMotion),
-        v = (0, u.Ay)(n) ?? "",
+        N = (0, u.Ay)(n) ?? "",
         {
-            avatarDecorationSrc: N,
+            avatarDecorationSrc: b,
             eventHandlers: y,
-            isAnimating: b
+            isAnimating: v
         } = (0, _.A)({
             userId: I?.id,
             size: r._3J.SIZE_80,
@@ -51,7 +51,7 @@ function S(e) {
         channelId: n.id,
         onMouseEnter: M,
         onMouseLeave: D,
-        children: [(t = !T && b, n.isMultiUserDM() ? (0, i.jsx)(p.Q, {
+        children: [(t = !T && v, n.isMultiUserDM() ? (0, i.jsx)(g.Q, {
             channel: n,
             editable: !0,
             location: c.A.EMPTY_GROUP_DM,
@@ -59,34 +59,34 @@ function S(e) {
                 channel: n,
                 size: r._3J.SIZE_80,
                 animated: t,
-                "aria-label": v
+                "aria-label": N
             })
         }) : (0, i.jsx)(r.euF, {
-            "aria-label": v,
+            "aria-label": N,
             size: r._3J.SIZE_80,
             src: (0, d.Y)(n, 80, t),
-            avatarDecoration: N
+            avatarDecoration: b
         })), (0, i.jsx)(E.cr, {
             children: O ? (0, i.jsx)(m.A, {
-                userName: v,
+                userName: N,
                 displayNameStyles: I?.displayNameStyles,
                 effectDisplayType: j ? h.G.ANIMATED : h.G.STATIC,
                 loop: !0
-            }) : v
+            }) : N
         }), (0, i.jsx)(E.j1, {
             children: S
         }), n.isMultiUserDM() && (0, i.jsxs)(a.e2v, {
-            className: C.U,
+            className: x.U,
             children: [(0, i.jsx)(f.NE, {
                 channel: n,
-                text: x.intl.string(x.t["6Qgrev"]),
+                text: C.intl.string(C.t["6Qgrev"]),
                 icon: r.DpX
             }), (0, i.jsx)(a.$nd, {
                 icon: r.R2l,
                 variant: "secondary",
-                text: x.intl.string(x.t["5Q9+/L"]),
-                "aria-label": x.intl.string(x.t["5Q9+/L"]),
-                onClick: () => (0, g.U)(n.id, c.A.EMPTY_GROUP_DM)
+                text: C.intl.string(C.t["5Q9+/L"]),
+                "aria-label": C.intl.string(C.t["5Q9+/L"]),
+                onClick: () => (0, p.U)(n.id, c.A.EMPTY_GROUP_DM)
             })]
         })]
     })

@@ -14,8 +14,8 @@ var i = n(284009),
     u = n(175333),
     h = n(242363),
     p = n(729843),
-    _ = n(996797),
-    f = n(942236),
+    f = n(996797),
+    _ = n(942236),
     A = n(102037),
     g = n(274372),
     m = n(747189),
@@ -32,15 +32,15 @@ var i = n(284009),
     O = n(461213),
     j = n(351906),
     D = n(287809),
-    L = n(845618),
-    w = n(242286),
-    R = n(256415),
+    R = n(845618),
+    L = n(242286),
+    w = n(256415),
     k = n(927813),
     M = n(9302),
     P = n(157257),
     G = n(652215),
-    U = n(672396),
-    V = n(985018);
+    V = n(672396),
+    U = n(985018);
 let z = new r.Vy("LegacyOverlayNotificationsStore"),
     H = 5 * k.A.Millis.SECOND,
     W = 8 * k.A.Millis.SECOND,
@@ -84,7 +84,7 @@ function Q(e, t) {
         ...K,
         ...t
     };
-    if (2 !== n.priority && !R.default.isInstanceFocused()) return null;
+    if (2 !== n.priority && !w.default.isInstanceFocused()) return null;
     let i = (0, a.A)(),
         s = {
             id: i,
@@ -120,7 +120,7 @@ function q(e) {
 class $ extends l.Ay.Store {
     static displayName = "OverlayNotificationsStore";
     initialize() {
-        this.waitFor(C.default, I.A, g.A, N.A, w.default, E.default, P.A, y.A, R.default, T.A, b.A, O.A, j.A, D.default)
+        this.waitFor(C.default, I.A, g.A, N.A, L.default, E.default, P.A, y.A, w.default, T.A, b.A, O.A, j.A, D.default)
     }
     getNotifications() {
         return F
@@ -138,7 +138,7 @@ let ee = new $(o.h, !__OVERLAY__ ? {} : {
         let {
             nudges: t
         } = e;
-        if (E.default.hasChangedRenderMode(w.default.getFocusedPID() ?? (0, M.getPID)())) return void z.info("Overlay mounted, but render modes have changed", {
+        if (E.default.hasChangedRenderMode(L.default.getFocusedPID() ?? (0, M.getPID)())) return void z.info("Overlay mounted, but render modes have changed", {
             nudges: t
         });
         let n = t[0];
@@ -148,10 +148,10 @@ let ee = new $(o.h, !__OVERLAY__ ? {} : {
             }), null == n) return;
         let i = function(e) {
             switch (e.type) {
-                case U.Jr.GO_LIVE_VOICE:
-                case U.Jr.GO_LIVE_NON_VOICE:
+                case V.Jr.GO_LIVE_VOICE:
+                case V.Jr.GO_LIVE_NON_VOICE:
                     return (0, h.A)(e);
-                case U.Jr.NEWS:
+                case V.Jr.NEWS:
                 default:
                     return (0, A.A)(e)
             }
@@ -191,7 +191,7 @@ let ee = new $(o.h, !__OVERLAY__ ? {} : {
                         break;
                     case G.xL.JOIN_REQUEST:
                         if (null == (i = O.A.getApplicationActivity(l.id)) || null == i.party || i.party.id !== t.activity.party_id) return !1;
-                        a = (0, _.A)(e, n, l, i)
+                        a = (0, f.A)(e, n, l, i)
                 }
                 if (null == a) return !1;
                 let r = Q(a, {
@@ -203,9 +203,9 @@ let ee = new $(o.h, !__OVERLAY__ ? {} : {
             }(i, n, a);
             if (!1 !== e) return e
         }
-        if ((!R.default.isInstanceLocked() || R.default.isPinned(G.uss.TEXT)) && t === b.A.getChannelId() || y.A.isNotificationDisabled(U.KS.TextChat) || j.A.disableNotifications || !(0, x.lx)(n, t)) return !1;
-        let l = !N.A.isSoundDisabled(L.cH);
-        Q((0, f.A)(i, n, a, l), {
+        if ((!w.default.isInstanceLocked() || w.default.isPinned(G.uss.TEXT)) && t === b.A.getChannelId() || y.A.isNotificationDisabled(V.KS.TextChat) || j.A.disableNotifications || !(0, x.lx)(n, t)) return !1;
+        let l = !N.A.isSoundDisabled(R.cH);
+        Q((0, _.A)(i, n, a, l), {
             type: 1,
             channelId: i.id,
             messageType: n.type
@@ -257,10 +257,10 @@ let ee = new $(o.h, !__OVERLAY__ ? {} : {
         }))
     },
     CLIPS_SAVE_CLIP_START: function(e) {
-        "manual" === e.clipMethod && Q((0, m.V)(V.intl.string(V.t.NBMK9m)))
+        "manual" === e.clipMethod && Q((0, m.V)(U.intl.string(U.t.NBMK9m)))
     },
     CLIPS_SAVE_CLIP_ERROR: function() {
-        Q((0, m.V)(V.intl.string(V.t["1ZbZuh"])))
+        Q((0, m.V)(U.intl.string(U.t["1ZbZuh"])))
     },
     STREAM_START: function(e) {
         let t = (0, m.t)();

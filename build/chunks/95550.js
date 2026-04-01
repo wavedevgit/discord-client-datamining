@@ -16,20 +16,20 @@ var i = n(627968),
     h = n(73153),
     m = n(387755),
     A = n(308528),
-    p = n(711950),
-    g = n(846293),
+    g = n(711950),
+    p = n(846293),
     f = n(888906),
     _ = n(49229),
     E = n(684136),
-    x = n(964486),
-    C = n(793574),
+    C = n(964486),
+    x = n(793574),
     S = n(58149),
     I = n(688810),
     T = n(571694),
-    v = n(47167),
-    N = n(915089),
+    N = n(47167),
+    b = n(915089),
     y = n(66442),
-    b = n(279208),
+    v = n(279208),
     j = n(267102),
     R = n(976860),
     M = n(219271),
@@ -48,8 +48,8 @@ var i = n(627968),
     K = n(957565),
     W = n(203982),
     z = n(403362),
-    Y = n(695184),
-    q = n(661191),
+    q = n(695184),
+    Y = n(661191),
     J = n(427262),
     $ = n(625788),
     Z = n(662367),
@@ -59,12 +59,12 @@ var i = n(627968),
     et = n(650583),
     en = n(985018),
     ei = n(94521);
-let el = (0, N.Ld)(),
+let el = (0, b.Ld)(),
     es = e => {
         let {
             channel: t,
             onClose: n
-        } = e, l = (0, v.Ay)(t) ?? "", s = (0, c.bG)([G.Ay], () => G.Ay.lastMessageId(t.id) ?? t.id);
+        } = e, l = (0, N.Ay)(t) ?? "", s = (0, c.bG)([G.Ay], () => G.Ay.lastMessageId(t.id) ?? t.id);
         return (0, i.jsx)(u.DUT, {
             onClick: () => {
                 (0, R.uh)(ee.ME, t.id), n()
@@ -80,7 +80,7 @@ let el = (0, N.Ld)(),
                     children: l
                 }), (0, i.jsx)("span", {
                     className: ei.Pd,
-                    children: r()(q.default.extractTimestamp(s)).fromNow()
+                    children: r()(Y.default.extractTimestamp(s)).fromNow()
                 })]
             })
         })
@@ -114,7 +114,7 @@ let el = (0, N.Ld)(),
             children: s.filter(z.Vq).sort((e, t) => {
                 let n = e.lastMessageId ?? e.id,
                     i = t.lastMessageId ?? t.id;
-                return q.default.compare(i, n)
+                return Y.default.compare(i, n)
             }).map(e => (0, i.jsx)(es, {
                 onClose: l.onClose,
                 channel: e
@@ -191,7 +191,7 @@ class er extends l.PureComponent {
         let t = (0, Z.i)({
             location: "5326c5_1"
         });
-        g.Ay.createInvite(e.id, {
+        p.Ay.createInvite(e.id, {
             max_age: t
         }, ee.PE1.GROUP_DM)
     }
@@ -487,15 +487,15 @@ class er extends l.PureComponent {
                 hideDiscriminator: h,
                 isStaffOnlyDM: m,
                 channel: A,
-                currentUser: p,
-                query: g
+                currentUser: g,
+                query: p
             } = this.props,
             {
                 sectionVisibility: f
             } = this.state;
         if (s) {
             if (!1 === f[n]) return null;
-            if (n === k.A.GUILD_MEMBERS && "" === g) return (0, i.jsx)("div", {
+            if (n === k.A.GUILD_MEMBERS && "" === p) return (0, i.jsx)("div", {
                 className: ei.Rg,
                 children: (0, i.jsx)(u.Text, {
                     variant: "text-md/normal",
@@ -509,15 +509,15 @@ class er extends l.PureComponent {
         if (null == _) return null;
         let {
             user: E,
-            comparator: x
-        } = _, C = o.has(E.id), S = ((m || null == A) && E.isStaff() && p?.isStaff()) ?? !1, I = !1;
-        return !C && 0 >= this.getRemaining() ? I = !0 : s && !C && o.size > 0 && n === k.A.GUILD_MEMBERS && (I = !0, t = en.intl.string(en.t.z9qAt9)), (0, i.jsx)(Q.A, {
+            comparator: C
+        } = _, x = o.has(E.id), S = ((m || null == A) && E.isStaff() && g?.isStaff()) ?? !1, I = !1;
+        return !x && 0 >= this.getRemaining() ? I = !0 : s && !x && o.size > 0 && n === k.A.GUILD_MEMBERS && (I = !0, t = en.intl.string(en.t.z9qAt9)), (0, i.jsx)(Q.A, {
             section: n,
             row: l,
             user: E,
             hideDiscriminator: h,
-            comparator: x,
-            checked: C,
+            comparator: C,
+            checked: x,
             disabled: I,
             selected: n === d && l === c,
             onClick: this.handleClick,
@@ -543,7 +543,7 @@ class er extends l.PureComponent {
         } = this.props, {
             sectionVisibility: s
         } = this.state, a = n[t];
-        return "" !== l && (null == a || 0 === a.length) ? null : (0, i.jsx)(eg, {
+        return "" !== l && (null == a || 0 === a.length) ? null : (0, i.jsx)(ep, {
             section: t,
             heading: t === k.A.FRIENDS ? en.intl.string(en.t.TdEu5X) : en.intl.string(en.t.y29JXs),
             onToggleVisibility: this.handleToggleSectionVisibility,
@@ -577,7 +577,7 @@ class er extends l.PureComponent {
             copied: l
         } = this.state;
         if (null == e || !e.isMultiUserDM() || this.isPartyFull()) return null;
-        let s = null != t ? (0, b.A)(t.code) : "",
+        let s = null != t ? (0, v.A)(t.code) : "",
             a = s.length > 0;
         return (0, i.jsx)(u.D0$, {
             label: en.intl.string(en.t.t3O2BR),
@@ -586,7 +586,7 @@ class er extends l.PureComponent {
             }) : void 0,
             children: (0, i.jsx)(u.e2O, {
                 supportsCopy: K.p5,
-                placeholder: (0, b.A)(en.intl.string(en.t.lPVBqP)),
+                placeholder: (0, v.A)(en.intl.string(en.t.lPVBqP)),
                 value: a ? n ? en.intl.string(en.t["6HzNgZ"]) : s : "",
                 buttonColor: d.$n.Colors.BRAND,
                 text: a ? l ? en.intl.string(en.t.q30c5i) : en.intl.string(en.t.OpuAlK) : en.intl.string(en.t.qzxqUf),
@@ -714,7 +714,7 @@ class er extends l.PureComponent {
             channel: t,
             inImprovedDMExperiment: n
         } = this.props, i = (0, S.dI)(t);
-        n && Y.A.requestMembers(null, e), f.A.search(e, t?.id), null != this._existingTimeout && clearTimeout(this._existingTimeout), this._existingTimeout = setTimeout(() => {
+        n && q.A.requestMembers(null, e), f.A.search(e, t?.id), null != this._existingTimeout && clearTimeout(this._existingTimeout), this._existingTimeout = setTimeout(() => {
             V.default.track(ee.HAw.SEARCH_USER_LIST_STARTED, {
                 ...i,
                 entry_point_type: this._getAnalyticsEntryPoint().entryPointType,
@@ -746,11 +746,11 @@ class er extends l.PureComponent {
         } = this.props;
         A.A.openPrivateChannel({
             recipientIds: [e],
-            location: C.A.NEW_GROUP_DM_INVITE_MODAL
+            location: x.A.NEW_GROUP_DM_INVITE_MODAL
         }), t()
     };
     handleAddFriendNavigation = () => {
-        p.A.transitionToSection(ee.m3P.ADD_FRIEND, {
+        g.A.transitionToSection(ee.m3P.ADD_FRIEND, {
             explicit: !0
         }), this.props.onClose()
     };
@@ -809,10 +809,10 @@ class er extends l.PureComponent {
         }).then(e => {
             this.props.onComplete?.(e);
             let t = {};
-            "" !== this.state.newChannelName && (t.name = this.state.newChannelName), null != this.state.previewIcon && (t.icon = this.state.previewIcon), (null != t.name || null != t.icon) && A.A.updateChannel(e, t, C.A.NEW_GROUP_DM_INVITE_MODAL), V.default.track(ee.HAw.GDM_EDIT_INTERACTED, {
+            "" !== this.state.newChannelName && (t.name = this.state.newChannelName), null != this.state.previewIcon && (t.icon = this.state.previewIcon), (null != t.name || null != t.icon) && A.A.updateChannel(e, t, x.A.NEW_GROUP_DM_INVITE_MODAL), V.default.track(ee.HAw.GDM_EDIT_INTERACTED, {
                 channel_id: e,
                 channel_type: ee.rbe.GROUP_DM,
-                location: C.A.NEW_GROUP_DM_INVITE_MODAL,
+                location: x.A.NEW_GROUP_DM_INVITE_MODAL,
                 new_name_set: "" !== this.state.newChannelName,
                 new_icon_set: null != this.state.previewIcon
             })
@@ -908,7 +908,7 @@ function eo(e) {
         onChange: r
     } = e, {
         analyticsLocations: o
-    } = (0, I.Ay)(C.A.NEW_GROUP_DM_INVITE_MODAL), c = (0, v.Jo)(Array.from(t), B.default, F.A);
+    } = (0, I.Ay)(x.A.NEW_GROUP_DM_INVITE_MODAL), c = (0, N.Jo)(Array.from(t), B.default, F.A);
     return (0, i.jsxs)("div", {
         className: ei.zj,
         children: [(0, i.jsx)(y.X, {
@@ -978,7 +978,7 @@ function ed(e) {
     }), [t, s]), o = l.useCallback(() => a ? (0, u.OoC)(s) : r(), [a, s, r]);
     return l.useEffect(() => (n && W._.subscribe(ee.jej.TOGGLE_DM_CREATE, o), () => {
         W._.unsubscribe(ee.jej.TOGGLE_DM_CREATE, o)
-    }), [n, o]), (0, x.Ay)(() => {
+    }), [n, o]), (0, C.Ay)(() => {
         (0, M.u)()
     }), {
         showModal: r,
@@ -1014,8 +1014,8 @@ function eh(e) {
     } = ed({
         channel: t,
         subscribeToGlobalHotkey: d
-    }), p = (0, c.bG)([B.default], () => B.default.getUser(t?.getRecipientId()));
-    return p?.bot || p?.isProvisional ? null : (0, i.jsx)(X.Ay.Icon, {
+    }), g = (0, c.bG)([B.default], () => B.default.getUser(t?.getRecipientId()));
+    return g?.bot || g?.isProvisional ? null : (0, i.jsx)(X.Ay.Icon, {
         ref: h,
         onClick: A,
         icon: m,
@@ -1053,15 +1053,15 @@ function em(e) {
 }
 
 function eA(e) {
-    let t = ep(e);
-    return new Set((0, s.chain)(L.A.getMutablePrivateChannels()).values().filter(e => (0, O.MK)(e.type)).filter(e => ep(e.recipients) === t).map(e => e.id).value())
-}
-
-function ep(e) {
-    return JSON.stringify(e.sort())
+    let t = eg(e);
+    return new Set((0, s.chain)(L.A.getMutablePrivateChannels()).values().filter(e => (0, O.MK)(e.type)).filter(e => eg(e.recipients) === t).map(e => e.id).value())
 }
 
 function eg(e) {
+    return JSON.stringify(e.sort())
+}
+
+function ep(e) {
     let {
         section: t,
         heading: n,

@@ -1,7 +1,7 @@
 /** chunk id: 242363 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => f
+    A: () => _
 });
 var i = n(627968);
 n(64700);
@@ -16,7 +16,7 @@ var s = n(397927),
     h = n(985018),
     p = n(653168);
 
-function _() {
+function f() {
     return (0, i.jsx)("div", {
         className: p.q,
         children: (0, i.jsx)(s.Button, {
@@ -28,14 +28,14 @@ function _() {
     })
 }
 
-function f(e) {
+function _(e) {
     switch (e.type) {
         case u.Jr.GO_LIVE_VOICE: {
             let {
                 game: t,
                 voiceGuild: p
             } = e, {
-                trackView: f,
+                trackView: _,
                 trackClick: A
             } = (0, c.Y)(u.KS.GoLiveNudge, {
                 notif_type: u.KS.GoLiveNudge
@@ -47,10 +47,10 @@ function f(e) {
                     game: t.name,
                     server: p.name
                 }),
-                hint: () => (0, i.jsx)(_, {}),
-                renderFooter: () => (0, i.jsx)(_, {}),
+                hint: () => (0, i.jsx)(f, {}),
+                renderFooter: () => (0, i.jsx)(f, {}),
                 onNotificationShow: () => {
-                    f()
+                    _()
                 },
                 onNotificationClick: (e, t) => {
                     A("unlock");
@@ -93,8 +93,8 @@ function f(e) {
                 body: h.intl.formatToPlainString(h.t["0SVWgF"], {
                     game: t.name
                 }),
-                hint: () => (0, i.jsx)(_, {}),
-                renderFooter: () => (0, i.jsx)(_, {}),
+                hint: () => (0, i.jsx)(f, {}),
+                renderFooter: () => (0, i.jsx)(f, {}),
                 onNotificationShow: () => {
                     o()
                 },

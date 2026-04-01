@@ -1,6 +1,6 @@
 /** chunk id: 888987 params = (module,exports,require) **/
 n.d(t, {
-    A: () => E
+    A: () => f
 });
 var i = n(627968),
     s = n(64700),
@@ -18,29 +18,29 @@ var i = n(627968),
     A = n(392164),
     x = n(165366);
 
-function E(e) {
+function f(e) {
     let {
         locked: t,
         pinned: n,
         anchorLeft: l
-    } = e, E = (0, a.bG)([h.A], () => h.A.getSocket()), f = (0, a.bG)([p.A], () => p.A.isGPUBoosted());
+    } = e, f = (0, a.bG)([h.A], () => h.A.getSocket()), E = (0, a.bG)([p.A], () => p.A.isGPUBoosted());
     (0, c.ZX)();
     let S = (0, a.bG)([g.A], () => g.A.getWindow(A.f)),
-        [I, T] = (0, c.DQ)(E),
+        [I, T] = (0, c.DQ)(f),
         {
             currentFPS: v,
             averageFrameTime: C,
             timeSinceLastDrop: j,
             onResetFrameData: y,
             droppedFramesRef: w,
-            renderedFrameCount: O,
-            bufferFramecountRef: _,
+            renderedFrameCount: _,
+            bufferFramecountRef: O,
             frameCheckerEffect: N
         } = (0, c.Dj)(!0, I, !0),
-        [b, R, M] = (0, c.F5)(E),
+        [b, R, M] = (0, c.F5)(f),
         [L, z] = (0, c.km)(b, N, S),
         D = performance.now() - T.current < c.Jc,
-        k = R(C, _.current);
+        k = R(C, O.current);
     (0, u.Ay)(() => (L(), () => {
         z()
     }));
@@ -114,7 +114,7 @@ function E(e) {
                     variant: "code",
                     color: "text-subtle",
                     className: x.af,
-                    children: ["(", (w.current / O.current * 100).toFixed(3), "%)"]
+                    children: ["(", (w.current / _.current * 100).toFixed(3), "%)"]
                 })]
             })]
         }), (W || !t) && (0, i.jsxs)("div", {
@@ -133,7 +133,7 @@ function E(e) {
                     tag: "span",
                     variant: "code",
                     color: "text-strong",
-                    children: O.current.toFixed(0)
+                    children: _.current.toFixed(0)
                 })]
             })]
         }), (F || !t) && (0, i.jsxs)("div", {
@@ -172,7 +172,7 @@ function E(e) {
                     children: "(Main App Backgrounded)"
                 })
             })
-        }), f && (0, i.jsx)(d.Text, {
+        }), E && (0, i.jsx)(d.Text, {
             tag: "span",
             variant: "code",
             color: "text-feedback-positive",

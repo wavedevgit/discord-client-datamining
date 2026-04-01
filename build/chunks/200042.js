@@ -17,8 +17,8 @@ var i = n(627968),
     p = n(607470),
     A = n(880144),
     x = n(616356),
-    E = n(734057),
-    f = n(71393),
+    f = n(734057),
+    E = n(71393),
     S = n(430452),
     I = n(309010),
     T = n(532624),
@@ -27,8 +27,8 @@ var i = n(627968),
     j = n(203982),
     y = n(723702),
     w = n(350535),
-    O = n(365971),
-    _ = n(41984),
+    _ = n(365971),
+    O = n(41984),
     N = n(589051),
     b = n(223251),
     R = n(935975),
@@ -49,8 +49,8 @@ var i = n(627968),
     F = n(644434),
     K = n(652215),
     B = n(650519);
-let q = !y.isPlatformEmbedded && !1,
-    Q = q ? (0, i.jsx)(p.A, {
+let Q = !y.isPlatformEmbedded && !1,
+    q = Q ? (0, i.jsx)(p.A, {
         src: "https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExNzdpcnRrYXdrNzVuNjZ3NXpmeTJvNGl4Z2N4OXBsamx5aXphdHhxaCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9dg/OPg2B0FPBL94H12uM0/giphy480p.mp4",
         className: B.pN,
         autoPlay: !0,
@@ -138,14 +138,14 @@ function ei(e) {
             if (t || "keydown" !== e.type.toLowerCase()) return;
             let n = e.key.toLowerCase();
             ("escape" === n || "esc" === n) && c.A.setInputLocked(!0, G.A.getTargetPID())
-        }(e, t), q && function(e) {
+        }(e, t), Q && function(e) {
             if ("keydown" !== e.type.toLowerCase() || e.repeat) return !1;
             let t = T.Ay.getOverlayKeybind();
             return !!t.enabled && 0 !== t.shortcut.length && (0, w.pi)(t.shortcut).some(t => 0 !== t.keyCode && t.keyCode === e.keyCode && t.shiftKey === e.shiftKey && t.metaKey === e.metaKey && t.altKey === e.altKey && t.ctrlKey === e.ctrlKey)
         }(e) && (e.preventDefault(), e.stopPropagation(), c.A.setInputLocked(!t, G.A.getTargetPID()))
 }
 let es = s.memo(function() {
-        return (0, a.bG)([U.A], () => U.A.hasRenderDebugMode(_.x7.WindowContainer)) ? (0, i.jsx)("div", {
+        return (0, a.bG)([U.A], () => U.A.hasRenderDebugMode(O.x7.WindowContainer)) ? (0, i.jsx)("div", {
             className: B.N1
         }) : null
     }),
@@ -172,7 +172,7 @@ let es = s.memo(function() {
                     [B.ZK]: n,
                     [B.al]: !n
                 })
-            }), q && (0, i.jsx)(et, {
+            }), Q && (0, i.jsx)(et, {
                 locked: n,
                 focused: l
             }), (0, i.jsx)(M.A, {
@@ -189,7 +189,7 @@ function er(e) {
         p = (0, W.A)(),
         T = (0, a.bG)([v.default], () => v.default.incompatibleApp),
         j = (0, a.bG)([C.A], () => {
-            let e = (0, O.Q2)(p),
+            let e = (0, _.Q2)(p),
                 t = C.A.windowSize(e);
             return t.height < 360 || t.width < 640
         }, [p]),
@@ -215,8 +215,8 @@ function er(e) {
     }), []), (o = s.useRef(null), (0, h.Ay)(() => {
         let e = (0, Y.qv)(),
             t = I.A.getVoiceChannelId(),
-            n = E.A.getChannel(t),
-            i = null != n ? f.A.getGuild(n.guild_id) : null,
+            n = f.A.getChannel(t),
+            i = null != n ? E.A.getGuild(n.guild_id) : null,
             s = null != x.A.getCurrentUserActiveStream(),
             l = null != t,
             r = (0, A.A)(S.Ay) && !s && null != e,
@@ -250,7 +250,7 @@ function er(e) {
         children: (0, i.jsxs)("div", {
             id: "overlay-container",
             className: B.Lw,
-            children: [!u && Q, (0, i.jsx)(el, {}), (0, i.jsx)(Z.A, {}), (0, i.jsx)(b.A, {}), (0, i.jsx)(d.N9M, {
+            children: [!u && q, (0, i.jsx)(el, {}), (0, i.jsx)(Z.A, {}), (0, i.jsx)(b.A, {}), (0, i.jsx)(d.N9M, {
                 appContext: K.BRT.OVERLAY
             }), (0, i.jsx)(es, {})]
         })

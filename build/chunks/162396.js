@@ -5,16 +5,16 @@ n.d(t, {
 });
 var r = n(627968),
     i = n(64700),
-    l = n(503698),
-    a = n.n(l),
+    a = n(503698),
+    l = n.n(a),
     s = n(397927),
     o = n(975807),
-    u = n(212031),
-    c = n(975571),
+    c = n(212031),
+    u = n(975571),
     d = n(809465),
     h = n(652215),
-    m = n(985018),
-    f = n(113853);
+    f = n(985018),
+    m = n(113853);
 
 function p(e) {
     let {
@@ -29,16 +29,16 @@ function p(e) {
         children: (0, r.jsxs)(s.rXV, {
             children: [(0, r.jsx)(s.Drp, {
                 id: "changelog",
-                label: m.intl.string(m.t.LRmNAl),
-                action: () => (0, u.j)(!0)
+                label: f.intl.string(f.t.LRmNAl),
+                action: () => (0, c.j)(!0)
             }), (0, r.jsx)(s.Drp, {
                 id: "acknowledgements",
-                label: m.intl.string(m.t["0nUKy3"]),
+                label: f.intl.string(f.t["0nUKy3"]),
                 action: () => (0, o.A)(h.X7G.ACKNOWLEDGEMENTS)
             }), (0, r.jsx)(s.Drp, {
                 id: "support",
-                label: m.intl.string(m.t["Yl/Riu"]),
-                action: () => (0, o.A)(c.C)
+                label: f.intl.string(f.t["Yl/Riu"]),
+                action: () => (0, o.A)(u.C)
             })]
         })
     })
@@ -48,17 +48,17 @@ function _() {
     let e = i.useRef(null);
     return (0, r.jsxs)("div", {
         children: [(0, r.jsx)(d.A, {}), (0, r.jsxs)("div", {
-            className: f.yJ,
+            className: m.yJ,
             children: [(0, r.jsx)(s.MzZ, {
                 href: h.X7G.PRIVACY,
                 children: (0, r.jsx)(s.Text, {
                     tag: "span",
                     variant: "text-xxs/normal",
                     color: "currentColor",
-                    children: m.intl.string(m.t["Knf/f/"])
+                    children: f.intl.string(f.t["Knf/f/"])
                 })
             }), (0, r.jsx)("span", {
-                className: f.xE,
+                className: m.xE,
                 "aria-hidden": "true",
                 children: "•"
             }), (0, r.jsx)(s.MzZ, {
@@ -67,10 +67,10 @@ function _() {
                     tag: "span",
                     variant: "text-xxs/normal",
                     color: "currentColor",
-                    children: m.intl.string(m.t.uFSTGq)
+                    children: f.intl.string(f.t.uFSTGq)
                 })
             }), (0, r.jsx)("span", {
-                className: f.xE,
+                className: m.xE,
                 "aria-hidden": "true",
                 children: "•"
             }), (0, r.jsx)(s.YNO, {
@@ -91,14 +91,14 @@ function _() {
                     ...t,
                     ref: e,
                     useDefaultUnderlineStyles: !1,
-                    className: a()(f.Mj, {
-                        [f.vu]: n.isShown
+                    className: l()(m.Mj, {
+                        [m.vu]: n.isShown
                     }),
                     children: (0, r.jsx)(s.Text, {
                         tag: "span",
                         variant: "text-xxs/normal",
                         color: "currentColor",
-                        children: m.intl.string(m.t["UKOtz+"])
+                        children: f.intl.string(f.t["UKOtz+"])
                     })
                 })
             })]

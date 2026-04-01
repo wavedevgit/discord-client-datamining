@@ -3,8 +3,8 @@ n.d(t, {
     A: () => d
 });
 var r = n(627968),
-    i = n(64700),
-    s = n(158954),
+    s = n(64700),
+    i = n(158954),
     a = n(92246),
     l = n(856658),
     o = n(80026),
@@ -22,27 +22,27 @@ function d(e) {
         sourceQuestContent: d,
         questConfig: m,
         onIndicatorClick: E
-    } = e, _ = i.useMemo(() => m?.features.includes(u.Li.FULL_EPISODE_VIDEO_QUEST) === !0, [m?.features]), [p, f] = i.useState(null), v = i.useRef(null), [{
-        expansion: S
-    }, h] = (0, s.zhh)(() => ({
+    } = e, _ = s.useMemo(() => m?.features.includes(u.Li.FULL_EPISODE_VIDEO_QUEST) === !0, [m?.features]), [f, p] = s.useState(null), S = s.useRef(null), [{
+        expansion: v
+    }, h] = (0, i.zhh)(() => ({
         expansion: 0,
         config: c,
         onRest: () => {
-            null == v.current && f(null)
+            null == S.current && p(null)
         }
-    })), g = i.useCallback(e => {
-        v.current = e, null != e ? (f(e), h({
+    })), g = s.useCallback(e => {
+        S.current = e, null != e ? (p(e), h({
             expansion: o.KY
         })) : h({
             expansion: 0
         })
-    }, [h]), A = i.useMemo(() => [{
+    }, [h]), A = s.useMemo(() => [{
         index: 0,
         timeSec: t,
         widthPx: o.ws,
         gapPx: o.Ue
-    }], [t]), C = i.useMemo(() => _ ? (0, a.mq)(m) : void 0, [m, _]), T = i.useCallback((e, i) => {
-        let s = {
+    }], [t]), C = s.useMemo(() => _ ? (0, a.mq)(m) : void 0, [m, _]), x = s.useCallback((e, s) => {
+        let i = {
             leftPx: e.leftPx,
             rightPx: e.rightPx,
             targetSec: t,
@@ -50,22 +50,22 @@ function d(e) {
             label: C
         };
         return (0, r.jsx)(l.A, {
-            currentPx: i,
-            indicator: s,
-            isAnimated: p === e.index,
-            expansionSpring: S,
+            currentPx: s,
+            indicator: i,
+            isAnimated: f === e.index,
+            expansionSpring: v,
             quest: n,
             sourceQuestContent: d,
             onMouseEnter: () => g(e.index),
             onMouseLeave: () => g(null),
-            onClick: null != E ? () => E(s.targetSec) : void 0
+            onClick: null != E ? () => E(i.targetSec) : void 0
         }, `indicator-${e.index}`)
-    }, [t, C, p, S, n, d, g, E]);
+    }, [t, C, f, v, n, d, g, E]);
     if (_) return {
         indicators: A,
-        animatingIndex: p,
-        expansionSpring: S,
+        animatingIndex: f,
+        expansionSpring: v,
         hoverExpansionPx: o.KY,
-        renderIndicator: T
+        renderIndicator: x
     }
 }

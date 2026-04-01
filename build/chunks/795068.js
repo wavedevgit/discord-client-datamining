@@ -1,10 +1,10 @@
 /** chunk id: 795068 params = (module,exports,require) **/
 n.d(t, {
-    a: () => i,
-    l: () => s
+    a: () => s,
+    l: () => i
 });
 var r = n(64700);
-let i = r.createContext({
+let s = r.createContext({
         quest: null,
         sourceQuestContent: null,
         videoSessionId: "",
@@ -14,6 +14,6 @@ let i = r.createContext({
         onClose: () => {},
         setIsFullscreenEnabled: () => {}
     }),
-    s = r.createContext({
+    i = r.createContext({
         questConfig: null
     })

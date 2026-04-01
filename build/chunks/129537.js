@@ -44,11 +44,11 @@ function x(e) {
     }
 }
 
-function E(e) {
+function f(e) {
     return "auto" === e || null == e ? "auto" : `${e}px`
 }
 
-function f(e, t) {
+function E(e, t) {
     let n = 0;
     return {
         width: n = "auto" === t.width ? null != e ? e.clientWidth : 0 : t.width,
@@ -229,7 +229,7 @@ class T extends l.Component {
         let {
             width: o,
             height: d
-        } = f(i, this.size), u = (0, c.Ly)(this.anchor, r, a, o, d);
+        } = E(i, this.size), u = (0, c.Ly)(this.anchor, r, a, o, d);
         if ("MOVE" === e) {
             let {
                 x: e,
@@ -299,9 +299,9 @@ class T extends l.Component {
         let {
             width: p,
             height: A
-        } = f(n, this.size), x = t - g, E = e - h, I = (0, c.fh)((0, c.Ly)({
+        } = E(n, this.size), x = t - g, f = e - h, I = (0, c.fh)((0, c.Ly)({
             top: x,
-            left: E,
+            left: f,
             bottom: void 0,
             right: void 0
         }, s, l, p, A)), T = u ? (0, c.h1)(I) : S("RESIZE_SOUTH_EAST", I);
@@ -335,7 +335,7 @@ class T extends l.Component {
         } = this, {
             startX: p,
             startY: A
-        } = this.dragState, x = 0, E = 0;
+        } = this.dragState, x = 0, f = 0;
         if (null == g) return;
         switch (e = Math.max(Math.min(s, e), r), t = Math.max(Math.min(l, t), a), g) {
             case "RESIZE_EAST":
@@ -352,20 +352,20 @@ class T extends l.Component {
             case "RESIZE_SOUTH":
             case "RESIZE_SOUTH_WEST":
             case "RESIZE_SOUTH_EAST":
-                E -= A - t;
+                f -= A - t;
                 break;
             case "RESIZE_NORTH":
             case "RESIZE_NORTH_WEST":
             case "RESIZE_NORTH_EAST":
-                E += A - t
+                f += A - t
         }
-        let f = h({
+        let E = h({
                 padding: 8,
                 borderWidth: 2,
                 operation: g,
                 computedSize: {
                     width: Math.max(this.dragState.offsetWidth + x, i.width),
-                    height: Math.max(this.dragState.offsetHeight + E, i.height)
+                    height: Math.max(this.dragState.offsetHeight + f, i.height)
                 },
                 originSize: {
                     width: this.dragState.offsetWidth,
@@ -374,9 +374,9 @@ class T extends l.Component {
                 containerSpecs: this.props.container,
                 orientedPosition: this.dragState.dragOrientedCoords
             }),
-            S = (0, c.af)((0, c.fh)((0, c.Ly)(this.dragState.dragOrientedCoords, s, l, f.width, f.height)), this.dragState.dragOrientedCoords);
+            S = (0, c.af)((0, c.fh)((0, c.Ly)(this.dragState.dragOrientedCoords, s, l, E.width, E.height)), this.dragState.dragOrientedCoords);
         this.setDOMSize({
-            ...f,
+            ...E,
             fixed: this.size.fixed
         }, !0), (0, d.A)(S, this.dragState.dragOrientedCoords) || (this.dragState.dragOrientedCoords = S, this.setDOMPositions(this.dragState.dragOrientedCoords)), m || (null != o && o(), this.setState({
             operationStarted: !0
@@ -396,7 +396,7 @@ class T extends l.Component {
                 onUpdate: t,
                 id: n
             } = this.props, i = this.shouldConstrainAutoSizeToExplicitResizeEvents() && "MOVE" === e ? this.requestedSize : this.size;
-            t(e, n, this.anchor, i, f(this.ref.current, this.size))
+            t(e, n, this.anchor, i, E(this.ref.current, this.size))
         } : void 0;
         if (t) {
             let {
@@ -405,7 +405,7 @@ class T extends l.Component {
             } = this.props.container, {
                 width: n,
                 height: s
-            } = f(this.ref.current, this.size), l = (0, c.Ly)(this.anchor, e, t, n, s), r = (0, c.h1)(l);
+            } = E(this.ref.current, this.size), l = (0, c.Ly)(this.anchor, e, t, n, s), r = (0, c.h1)(l);
             this.setDOMPositions(r), this.setDOMSize({
                 width: n,
                 height: s,
@@ -433,7 +433,7 @@ class T extends l.Component {
             left: n,
             bottom: i,
             right: s
-        }, null != l && (l.style.top = E(t), l.style.bottom = E(i), l.style.left = E(n), l.style.right = E(s))
+        }, null != l && (l.style.top = f(t), l.style.bottom = f(i), l.style.left = f(n), l.style.right = f(s))
     }
     setDOMSize(e) {
         let {
@@ -447,7 +447,7 @@ class T extends l.Component {
             width: t,
             height: n,
             fixed: i
-        }, null != l && (l.style.width = E(t), l.style.height = E(n))
+        }, null != l && (l.style.width = f(t), l.style.height = f(n))
     }
     renderResizeHandles() {
         let {

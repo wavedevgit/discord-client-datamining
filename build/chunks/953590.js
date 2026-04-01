@@ -133,7 +133,7 @@ let k = (0, u.A)(e => {
         onItemChange: r,
         isMuted: c = !0,
         onTrackClick: u
-    } = e, _ = (0, l.useRef)(0), [m, f] = (0, l.useState)(0), [g, I] = (0, l.useState)(0), v = (0, l.useRef)(0), N = (0, l.useRef)(t.length), [k, y] = (0, l.useState)(!0), [R, U] = (0, l.useState)(!1), [O, w] = (0, l.useState)(!1), [L, P] = (0, l.useState)(!1), [D, B] = (0, l.useState)(!1), M = (0, l.useCallback)((e, n) => {
+    } = e, _ = (0, l.useRef)(0), [m, f] = (0, l.useState)(0), [g, I] = (0, l.useState)(0), v = (0, l.useRef)(0), N = (0, l.useRef)(t.length), [k, y] = (0, l.useState)(!0), [R, U] = (0, l.useState)(!1), [O, w] = (0, l.useState)(!1), [L, P] = (0, l.useState)(!1), [D, M] = (0, l.useState)(!1), B = (0, l.useCallback)((e, n) => {
         let a = t[e]?.backgroundSrc,
             l = n.interpolate({
                 inputRange: [0, 1],
@@ -171,9 +171,9 @@ let k = (0, u.A)(e => {
         O || H()
     }, [O, H]), X = (0, l.useCallback)(e => {
         let t = v.current;
-        e < t ? P(!0) : e > t && B(!0)
+        e < t ? P(!0) : e > t && M(!0)
     }, []), V = (0, l.useCallback)(() => {
-        P(!1), B(!1)
+        P(!1), M(!1)
     }, []), $ = (0, l.useCallback)((e, t, n) => (0, a.jsx)(S, {
         item: e,
         itemIndex: t,
@@ -188,7 +188,7 @@ let k = (0, u.A)(e => {
             className: o()(T.AS, {
                 [T.Xt]: s
             }),
-            style: null != l ? M(n, l) : null,
+            style: null != l ? B(n, l) : null,
             onMouseEnter: s ? null : () => X(n),
             onMouseLeave: s ? null : V,
             children: "video" === e.type ? (0, a.jsx)(j, {
@@ -202,7 +202,7 @@ let k = (0, u.A)(e => {
                 }
             }, m) : $(e, n, s)
         })
-    }, [g, t.length, M, X, V, Y, q, F, $, c, u, m]), J = (0, l.useCallback)(() => {
+    }, [g, t.length, B, X, V, Y, q, F, $, c, u, m]), J = (0, l.useCallback)(() => {
         let e = (0, a.jsx)(b.Ay, {
             className: T.Dk,
             items: t,

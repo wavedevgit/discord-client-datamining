@@ -17,8 +17,8 @@ var i = n(627968),
     p = n(461678),
     A = n(95550),
     x = n(95701),
-    E = n(734057),
-    f = n(383501),
+    f = n(734057),
+    E = n(383501),
     S = n(994500),
     I = n(543465),
     T = n(287809),
@@ -27,8 +27,8 @@ var i = n(627968),
     j = n(589051),
     y = n(129537),
     w = n(578093),
-    O = n(145567),
-    _ = n(922611),
+    _ = n(145567),
+    O = n(922611),
     N = n(201479),
     b = n(691761),
     R = n(34307),
@@ -182,9 +182,9 @@ function V(e) {
                     }), (0, A.Jz)({
                         channel: t,
                         onComplete: e => {
-                            (0, O.D$)({
+                            (0, _.D$)({
                                 target: {
-                                    kind: O.bB.CHANNEL,
+                                    kind: _.bB.CHANNEL,
                                     channelId: e,
                                     guildId: null,
                                     messageId: null
@@ -229,7 +229,7 @@ function H(e) {
         dragging: A
     } = e, {
         hasFriendList: I
-    } = (0, j.M8)("TextChatHeader"), [P, G] = s.useState(!1), H = (0, a.bG)([f.A], () => f.A.getChannelId(), []), Y = t?.isDM() ? n?.id ?? null : null, Z = (0, b.p)(Y), W = H === t?.id, X = z.intl.string(L.default.tYPfF2), F = (0, a.bG)([E.A], () => t?.isThread() && null != t.parent_id ? E.A.getChannel(t.parent_id) : null, [t]), K = (0, a.bG)([T.default, S.A], () => null != F ? (0, g.m1)(F, T.default, S.A) : null, [F]), B = (0, a.bG)([], () => {
+    } = (0, j.M8)("TextChatHeader"), [P, G] = s.useState(!1), H = (0, a.bG)([E.A], () => E.A.getChannelId(), []), Y = t?.isDM() ? n?.id ?? null : null, Z = (0, b.p)(Y), W = H === t?.id, X = z.intl.string(L.default.tYPfF2), F = (0, a.bG)([f.A], () => t?.isThread() && null != t.parent_id ? f.A.getChannel(t.parent_id) : null, [t]), K = (0, a.bG)([T.default, S.A], () => null != F ? (0, g.m1)(F, T.default, S.A) : null, [F]), B = (0, a.bG)([], () => {
         var e, i;
         return e = t, i = n, null == e ? null : e.isDM() && null != i ? S.A.isFriend(i.id) ? {
             tab: C.x.FRIENDS,
@@ -241,13 +241,13 @@ function H(e) {
             tab: C.x.VOICE,
             targetId: e.id
         } : null
-    }, [t, n]), q = s.useCallback(e => {
+    }, [t, n]), Q = s.useCallback(e => {
         k(t) && ((0, v.YX)(M.uss.TEXT_CHAT_V3, {
             type: v.Z5.CALL_BUTTON,
             value: v.IP.ENABLED,
             secondaryValue: e ? "video" : "voice"
         }), c.A.call(t.id, e, !0, t.isDM() ? t.getRecipientId() : null))
-    }, [t]), Q = s.useCallback(() => {
+    }, [t]), q = s.useCallback(() => {
         t?.id != null && G(e => {
             let t = !e;
             return t && (0, v.YX)(M.uss.TEXT_CHAT_V3, {
@@ -268,11 +268,11 @@ function H(e) {
                 className: D.gr,
                 children: (0, i.jsx)(N.J, {
                     application: Z,
-                    fallback: (0, i.jsx)(_.g, {
+                    fallback: (0, i.jsx)(O.g, {
                         channel: null,
                         user: n,
                         guild: l,
-                        size: _.c.SIZE_24
+                        size: O.c.SIZE_24
                     })
                 })
             }), (0, i.jsxs)("div", {
@@ -289,9 +289,9 @@ function H(e) {
                         className: D.oH,
                         onMouseDown: e => e.stopPropagation(),
                         onClick: e => {
-                            e.stopPropagation(), (0, O.D$)({
+                            e.stopPropagation(), (0, _.D$)({
                                 target: {
-                                    kind: O.bB.CHANNEL,
+                                    kind: _.bB.CHANNEL,
                                     channelId: F.id,
                                     guildId: F.getGuildId?.() ?? F.guild_id ?? null,
                                     messageId: null
@@ -332,14 +332,14 @@ function H(e) {
             },
             children: [(0, i.jsx)(V, {
                 channel: t,
-                onStartPrivateCall: q,
+                onStartPrivateCall: Q,
                 pinsOpen: P,
-                onTogglePinsPopout: Q,
+                onTogglePinsPopout: q,
                 onRequestClosePinsPopout: () => G(!1)
             }), (0, i.jsx)(U, {
                 channel: t,
                 pinsOpen: P,
-                onTogglePinsPopout: Q,
+                onTogglePinsPopout: q,
                 onRequestClosePinsPopout: () => G(!1)
             }), I && null != B && (0, i.jsx)(w.j, {
                 tab: B.tab,
@@ -359,7 +359,7 @@ function H(e) {
                             type: v.Z5.TEXT_CHAT,
                             value: v.IP.CLOSED_TEXT_CHAT,
                             secondaryValue: "minimize_voice"
-                        }), (0, O.S$)({
+                        }), (0, _.S$)({
                             minimized: !0
                         })
                     }
@@ -377,7 +377,7 @@ function H(e) {
                             type: v.Z5.TEXT_CHAT,
                             value: v.IP.CLOSED_TEXT_CHAT,
                             secondaryValue: "close_all"
-                        }), (0, O.$p)()) : (0, O.lu)({
+                        }), (0, _.$p)()) : (0, _.lu)({
                             channelId: t.id,
                             widgetType: M.uss.TEXT_CHAT_V3,
                             secondaryValue: "close_button"

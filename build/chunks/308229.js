@@ -1,101 +1,101 @@
 /** chunk id: 308229 params = (module,exports,require) **/
-n.d(t, {
-    default: () => O
+a.d(n, {
+    default: () => A
 });
-var i = n(627968),
-    a = n(64700),
-    o = n(158954),
-    l = n(397927),
-    s = n(827343),
-    r = n(820284),
-    c = n(212245),
-    d = n(793574),
-    _ = n(688810),
-    u = n(253932),
-    g = n(329551),
-    p = n(987384),
-    m = n(413339),
-    b = n(430452),
-    v = n(287809),
-    k = n(954571),
-    x = n(745317),
-    C = n(652215),
-    h = n(985018),
-    I = n(677066);
+var t = a(627968),
+    o = a(64700),
+    i = a(158954),
+    r = a(397927),
+    _ = a(827343),
+    c = a(820284),
+    d = a(212245),
+    l = a(793574),
+    s = a(688810),
+    u = a(253932),
+    g = a(329551),
+    p = a(987384),
+    k = a(413339),
+    b = a(430452),
+    m = a(287809),
+    C = a(954571),
+    I = a(745317),
+    f = a(652215),
+    h = a(985018),
+    O = a(677066);
 
-function O(e) {
+function A(e) {
     let {
-        transitionState: t,
-        videoEnabled: n,
-        onEnable: O,
-        onClose: D
-    } = e, f = b.Ay.getCameraComponent(), A = u.bm.useSetting(), [S, T] = a.useState((0, g.i)(v.default.getCurrentUser())), w = (0, c.p)(), {
-        analyticsLocations: U
-    } = (0, _.Ay)(d.A.CAMERA_PREVIEW);
-    a.useEffect(() => {
-        k.default.track(C.HAw.OPEN_MODAL, {
+        transitionState: n,
+        videoEnabled: a,
+        onEnable: A,
+        onClose: v
+    } = e, w = b.Ay.getCameraComponent(), S = u.bm.useSetting(), [E, x] = o.useState((0, g.i)(m.default.getCurrentUser())), B = (0, d.p)(), {
+        analyticsLocations: y
+    } = (0, s.Ay)(l.A.CAMERA_PREVIEW);
+    o.useEffect(() => {
+        C.default.track(f.HAw.OPEN_MODAL, {
             type: "Camera Preview Modal"
         })
     }, []);
-    let E = a.useCallback(async () => {
+    let L = o.useCallback(async () => {
             try {
-                await (0, m.gB)(S, {
+                await (0, k.gB)(E, {
                     location: {
-                        page: C.liQ.PREVIEW_CAMERA_MODAL,
-                        ...w.location
+                        page: f.liQ.PREVIEW_CAMERA_MODAL,
+                        ...B.location
                     }
                 })
             } catch (e) {}
-            await D(), (0, p._C)(S)
-        }, [S, w.location, D]),
-        j = a.useCallback(async () => {
-            await E(), s.A.setVideoEnabled(!0), O?.()
-        }, [E, O]),
-        N = a.useMemo(() => [{
+            await v(), (0, p._C)(E)
+        }, [E, B.location, v]),
+        P = o.useCallback(async () => {
+            await L(), _.A.setVideoEnabled(!0), A?.()
+        }, [L, A]),
+        T = o.useMemo(() => [{
             variant: "primary",
-            text: n ? h.intl.string(h.t.KQENhq) : h.intl.string(h.t.kgIe9a),
-            onClick: n ? E : j
-        }], [E, j, n]);
-    return (0, i.jsx)(_.f5, {
-        value: U,
-        children: (0, i.jsx)(r.A, {
-            page: C.liQ.PREVIEW_CAMERA_MODAL,
-            children: (0, i.jsx)(o.Modal, {
+            text: a ? h.intl.string(h.t.KQENhq) : h.intl.string(h.t.kgIe9a),
+            onClick: a ? L : P
+        }], [L, P, a]);
+    return (0, t.jsx)(s.f5, {
+        value: y,
+        children: (0, t.jsx)(c.A, {
+            page: f.liQ.PREVIEW_CAMERA_MODAL,
+            children: (0, t.jsx)(i.Modal, {
                 size: "md",
-                title: n ? h.intl.string(h.t.LAwwbQ) : h.intl.string(h.t["/HITVD"]),
-                actionBarInput: (0, i.jsx)(l.Checkbox, {
+                title: a ? h.intl.string(h.t.LAwwbQ) : h.intl.string(h.t["/HITVD"]),
+                actionBarInput: (0, t.jsx)(r.Checkbox, {
                     label: h.intl.string(h.t["3Ppr1h"]),
                     labelType: "secondary",
-                    checked: A,
+                    checked: S,
                     onChange: () => {
-                        u.bm.updateSetting(!A), k.default.track(C.HAw.UPDATE_USER_SETTINGS_LOCAL, {
-                            always_preview_video: !A
+                        u.bm.updateSetting(!S), C.default.track(f.HAw.UPDATE_USER_SETTINGS_LOCAL, {
+                            always_preview_video: !S
                         })
                     }
                 }),
-                actions: N,
-                onClose: D,
-                transitionState: t,
-                children: (0, i.jsx)(x.A, {
+                actions: T,
+                onClose: v,
+                transitionState: n,
+                children: (0, t.jsx)(I.A, {
                     hidePreviewToggle: !0,
                     hideDeviceHeader: !0,
                     hideCameraSettingsLink: !0,
-                    selectedBackgroundOption: S,
-                    onSelectBackgroundOption: T,
-                    hideDeviceSelector: n,
-                    renderCamera: e => (0, i.jsxs)("div", {
-                        className: I.S,
-                        children: [(0, i.jsx)("div", {
-                            className: I.U,
-                            children: (0, i.jsx)(f, {
+                    selectedBackgroundOption: E,
+                    onSelectBackgroundOption: x,
+                    hideDeviceSelector: a,
+                    renderCamera: e => (0, t.jsxs)("div", {
+                        className: O.S,
+                        children: [(0, t.jsx)("div", {
+                            className: O.U,
+                            children: (0, t.jsx)(w, {
                                 disabled: !1,
                                 deviceId: e,
                                 width: 430,
                                 height: 242
                             })
-                        }), (0, i.jsx)(x.k, {})]
+                        }), (0, t.jsx)(I.k, {})]
                     }),
-                    onLearnMore: D
+                    onLearnMore: v
                 })
             })
         })

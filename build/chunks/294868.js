@@ -4,13 +4,13 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var l = n(311907),
-    a = n(961350),
+var a = n(311907),
+    l = n(961350),
     s = n(823016),
     r = n(750492),
     o = n(253798),
-    d = n(622249),
-    c = n(742710),
+    c = n(622249),
+    d = n(742710),
     u = n(192),
     g = n(899149);
 
@@ -18,8 +18,8 @@ function m(e) {
     let {
         games: t,
         user: n,
-        widgetType: l,
-        ...a
+        widgetType: a,
+        ...l
     } = e, {
         registerItemRef: r,
         manageFocusOnDelete: o
@@ -27,14 +27,14 @@ function m(e) {
     return (0, i.jsx)("ul", {
         className: g.h,
         children: t.map((e, t) => (0, i.jsx)("li", {
-            children: (0, i.jsx)(c.A, {
+            children: (0, i.jsx)(d.A, {
                 index: t,
                 user: n,
                 game: e,
-                widgetType: l,
+                widgetType: a,
                 coverRef: r(e.applicationId),
                 onRemoveGame: o,
-                ...a
+                ...l
             })
         }, e.applicationId))
     })
@@ -44,9 +44,9 @@ function x(e) {
     let {
         user: t,
         widgetType: n,
-        disableInteraction: c,
+        disableInteraction: d,
         games: g
-    } = e, x = (0, l.bG)([a.default], () => a.default.getId() === t.id), {
+    } = e, x = (0, a.bG)([l.default], () => l.default.getId() === t.id), {
         getManageButtonForWidget: p
     } = (0, u.r)(), f = p(n), {
         expanded: h,
@@ -55,12 +55,12 @@ function x(e) {
         children: [(0, i.jsx)(m, {
             ...e,
             games: A
-        }), I && (0, i.jsx)(d.A, {
+        }), I && (0, i.jsx)(c.A, {
             expanded: h,
             onClick: () => _(e => !e)
         })]
     });
-    return x && !c ? (0, i.jsxs)(i.Fragment, {
+    return x && !d ? (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(r.A, {
             widgetType: n,
             gameCount: g.length

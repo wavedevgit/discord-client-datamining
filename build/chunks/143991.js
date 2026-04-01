@@ -1,6 +1,6 @@
 /** chunk id: 143991 params = (module,exports,require) **/
 n.d(t, {
-    A: () => F
+    A: () => H
 });
 var i = n(627968),
     l = n(64700),
@@ -124,14 +124,6 @@ function M() {
 }
 
 function j() {
-    return L([C.Ay], () => C.Ay.getActiveVoiceFilter(), (e, t) => {
-        if (e !== t)
-            if (null != t) return null != e ? "voice_filter_swap" : "voice_filter_on";
-            else return "voice_filter_off"
-    }), null
-}
-
-function w() {
     return L([C.Ay], () => C.Ay.isSelfMutedTemporarily(), (e, t) => {
         if (e !== t) {
             let e = C.Ay.isSelfMute();
@@ -140,7 +132,7 @@ function w() {
     }), null
 }
 
-function U() {
+function w() {
     return L([x.A], () => x.A.isCurrentUserPrioritySpeaker(), (e, t) => {
         if (e !== t) {
             let e = C.Ay.isSelfMute();
@@ -149,13 +141,13 @@ function U() {
     }), null
 }
 
-function G() {
+function U() {
     return L([v.A], () => v.A.userHasBeenMovedVersion, (e, t) => {
         if (e !== t) return "user_moved"
     }), null
 }
 
-function k() {
+function G() {
     return L([S.A, v.A], () => {
         let e = S.A.getVoiceChannelId();
         if (null == e) return m.zF.NONE;
@@ -166,7 +158,7 @@ function k() {
     }), null
 }
 
-function V() {
+function k() {
     return L([S.A, g.A, E.default, v.A, I.A], () => {
         let e, t, n = S.A.getVoiceChannelId(),
             i = E.default.getId(),
@@ -220,7 +212,7 @@ function V() {
     }), null
 }
 
-function B() {
+function V() {
     return L([S.A, s.Ay, d.A, E.default], () => {
         let e = S.A.getVoiceChannelId(),
             t = S.A.getChannelId(),
@@ -267,7 +259,7 @@ function B() {
     }), null
 }
 
-function H() {
+function B() {
     return L([A.A, S.A], () => ({
         hangStatus: A.A.getCurrentHangStatus(),
         customHangStatus: A.A.getCustomHangStatus(),
@@ -283,8 +275,8 @@ function H() {
     }, .15), null
 }
 
-function F() {
+function H() {
     return (0, i.jsxs)(i.Fragment, {
-        children: [(0, i.jsx)(R, {}), (0, i.jsx)(P, {}), (0, i.jsx)(D, {}), (0, i.jsx)(M, {}), (0, i.jsx)(w, {}), (0, i.jsx)(G, {}), (0, i.jsx)(V, {}), (0, i.jsx)(k, {}), (0, i.jsx)(B, {}), (0, i.jsx)(j, {}), (0, i.jsx)(U, {}), (0, i.jsx)(H, {})]
+        children: [(0, i.jsx)(R, {}), (0, i.jsx)(P, {}), (0, i.jsx)(D, {}), (0, i.jsx)(M, {}), (0, i.jsx)(j, {}), (0, i.jsx)(U, {}), (0, i.jsx)(k, {}), (0, i.jsx)(G, {}), (0, i.jsx)(V, {}), (0, i.jsx)(w, {}), (0, i.jsx)(B, {})]
     })
 }

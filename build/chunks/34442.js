@@ -4,13 +4,13 @@ n.d(t, {
     dE: () => p
 });
 var i = n(627968),
-    l = n(64700),
-    a = n(896170),
+    a = n(64700),
+    l = n(896170),
     s = n(397927),
     r = n(383329),
     o = n(183555),
-    d = n(735321),
-    c = n(958338),
+    c = n(735321),
+    d = n(958338),
     u = n(985018),
     g = n(201669);
 
@@ -21,16 +21,16 @@ function m(e) {
         onAddGame: m,
         children: x,
         ...p
-    } = e, f = l.useMemo(() => new Set(n.games.map(e => e.applicationId)), [n.games]), {
+    } = e, f = a.useMemo(() => new Set(n.games.map(e => e.applicationId)), [n.games]), {
         trackUserProfileEditAction: h
-    } = (0, o.NJ)(), [_, A] = l.useState(""), I = l.useRef(""), {
+    } = (0, o.NJ)(), [_, A] = a.useState(""), I = a.useRef(""), {
         options: j,
         matchSorterOptions: v
     } = (0, r.R)(), {
         applicationIds: T,
         onAddGame: E
-    } = (0, c.S)(t), b = l.useCallback(e => {
-        (0, d.ew)({
+    } = (0, d.S)(t), b = a.useCallback(e => {
+        (0, c.ew)({
             widgetType: t,
             game: {
                 applicationId: e
@@ -40,7 +40,7 @@ function m(e) {
             gameId: e,
             widgetEdited: t
         }), T.includes(e) && E(e), m?.()
-    }, [t, h, m, T, E]), C = l.useMemo(() => {
+    }, [t, h, m, T, E]), C = a.useMemo(() => {
         let e = new Map(j.map(e => [String(e.value), {
                 id: String(e.value),
                 value: String(e.value),
@@ -50,11 +50,11 @@ function m(e) {
             t = T.map(t => e.get(t)).filter(e => null != e && !e.disabled),
             n = [...e.values()].filter(e => !t.includes(e));
         return [...t, ...n]
-    }, [j, f, T]), N = l.useMemo(() => ({
+    }, [j, f, T]), N = a.useMemo(() => ({
         ...v,
-        threshold: a.Ht.rankings.CONTAINS,
+        threshold: l.Ht.rankings.CONTAINS,
         keys: ["label"]
-    }), [v]), S = l.useCallback(e => "" === e.trim() ? C.length : (0, a.Ht)(C, e, N).length, [C, N]), y = l.useCallback(e => {
+    }), [v]), S = a.useCallback(e => "" === e.trim() ? C.length : (0, l.Ht)(C, e, N).length, [C, N]), y = a.useCallback(e => {
         let n = e.target.value;
         "" === _.trim() && "" !== n.trim() && h({
             action: "GAME_SEARCH_SESSION_STARTED",
@@ -114,14 +114,14 @@ function x(e) {
     let {
         disabled: t,
         ...n
-    } = e, a = l.useRef(null);
+    } = e, l = a.useRef(null);
     return (0, i.jsx)(m, {
-        targetElementRef: a,
+        targetElementRef: l,
         position: "bottom",
         align: "center",
         ...n,
         children: e => (0, i.jsx)(s.Button, {
-            buttonRef: a,
+            buttonRef: l,
             variant: "secondary",
             size: "sm",
             icon: s.j96,
@@ -133,7 +133,7 @@ function x(e) {
 }
 
 function p(e) {
-    let t = l.useRef(null);
+    let t = a.useRef(null);
     return (0, i.jsx)(m, {
         targetElementRef: t,
         position: "right",

@@ -5,16 +5,16 @@ n.d(t, {
 }), n(321073);
 var r = n(627968),
     i = n(64700),
-    l = n(503698),
-    a = n.n(l),
+    a = n(503698),
+    l = n.n(a),
     s = n(837381),
     o = n(607399),
-    u = n(397927),
-    c = n(928039),
+    c = n(397927),
+    u = n(928039),
     d = n(932001),
     h = n(97469),
-    m = n(199966),
-    f = n(894858),
+    f = n(199966),
+    m = n(894858),
     p = n(397274),
     _ = n(189857),
     v = n(188180),
@@ -26,28 +26,28 @@ function E(e) {
     let {
         root: t,
         onClose: n,
-        footer: l,
+        footer: a,
         emptyState: v,
         searchBar: E
-    } = e, S = f.A.useField("showNavigationMobile"), b = i.useRef(null), [N] = i.useState(t), {
+    } = e, S = m.A.useField("showNavigationMobile"), b = i.useRef(null), [N] = i.useState(t), {
         accessibleDirectory: j
-    } = (0, m._)(), C = i.useMemo(() => (0, _.Z)(N, j), [N, j]), [I] = (0, d.kn)(C.allDismissibleContents);
+    } = (0, f._)(), C = i.useMemo(() => (0, _.Z)(N, j), [N, j]), [R] = (0, d.kn)(C.allDismissibleContents);
     (0, y.B)({
-        visibleContent: I,
+        visibleContent: R,
         dismissibleBadges: C,
         accessibleDirectory: j
     });
-    let [R, T] = i.useMemo(() => {
+    let [I, T] = i.useMemo(() => {
         let e = [],
             n = [];
         return t.layout.forEach(t => {
             t.hoisted ? e.push(t) : n.push(t)
         }), [e, n]
-    }, [t.layout]), w = (0, h.NC)(), k = (0, c.A)("settings-sidebar", b);
-    return (0, r.jsx)(u.NPJ, {
+    }, [t.layout]), w = (0, h.NC)(), k = (0, u.A)("settings-sidebar", b);
+    return (0, r.jsx)(c.NPJ, {
         theme: w,
         children: e => (0, r.jsxs)("div", {
-            className: a()(x.pz, e, {
+            className: l()(x.pz, e, {
                 [x.Hw]: o.Fr,
                 [x.n7]: S
             }),
@@ -55,17 +55,17 @@ function E(e) {
                 className: x.gM,
                 children: [o.Fr && (0, r.jsx)("div", {
                     className: x.hg,
-                    children: (0, r.jsx)(u.K0, {
-                        icon: u.d$L,
+                    children: (0, r.jsx)(c.K0, {
+                        icon: c.d$L,
                         onClick: n,
                         variant: "icon-only",
                         size: "sm",
                         "aria-label": g.intl.string(g.t.cpT0Cq)
                     })
                 }), (0, r.jsx)("div", {
-                    children: R.map(e => (0, r.jsx)(A, {
+                    children: I.map(e => (0, r.jsx)(A, {
                         section: e,
-                        visibleContent: I,
+                        visibleContent: R,
                         dismissibleBadges: C,
                         hoisted: !0
                     }, e.key))
@@ -78,7 +78,7 @@ function E(e) {
                             ref: t,
                             ...n
                         } = e;
-                        return (0, r.jsxs)(u.ChK, {
+                        return (0, r.jsxs)(c.ChK, {
                             ref: e => {
                                 b.current = e, p.A.setSidebarScrollerRef(e), t.current = e?.getScrollerNode() ?? null
                             },
@@ -89,10 +89,10 @@ function E(e) {
                                 className: x.C$,
                                 children: T.map(e => (0, r.jsx)(A, {
                                     section: e,
-                                    visibleContent: I,
+                                    visibleContent: R,
                                     dismissibleBadges: C
                                 }, e.key))
-                            }), null != l && (0, r.jsx)(l, {})]
+                            }), null != a && (0, r.jsx)(a, {})]
                         })
                     }
                 })
@@ -106,24 +106,24 @@ function A(e) {
         section: t,
         visibleContent: n,
         dismissibleBadges: i,
-        hoisted: l = !1
-    } = e, a = t.useTitle?.();
+        hoisted: a = !1
+    } = e, l = t.useTitle?.();
     return (0, r.jsxs)("ul", {
         className: x.uW,
-        "aria-label": a,
-        children: [null != a && (0, r.jsx)("div", {
+        "aria-label": l,
+        children: [null != l && (0, r.jsx)("div", {
             className: x.a9,
-            children: (0, r.jsx)(u.Heading, {
+            children: (0, r.jsx)(c.Heading, {
                 className: x.Pf,
                 variant: "heading-sm/medium",
                 color: "text-muted",
-                children: a
+                children: l
             })
         }), t.layout.map(e => (0, r.jsx)(v.X, {
             node: e,
             visibleContent: n,
             dismissibleBadges: i,
-            hoisted: l
+            hoisted: a
         }, e.key))]
     })
 }

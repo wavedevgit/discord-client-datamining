@@ -56,8 +56,8 @@ function I() {
         R = (0, r.bG)([f.Ay, C.A], () => (0, v.A)(f.Ay, C.A)),
         w = (0, _.h)(k),
         D = (0, h.g)(w),
-        P = (0, r.yK)([g.A], () => w?.linkedGames?.map(e => g.A.getApplication(e.id)).filter(e => null != e) ?? []),
-        M = (0, x.RD)(w, {
+        M = (0, r.yK)([g.A], () => w?.linkedGames?.map(e => g.A.getApplication(e.id)).filter(e => null != e) ?? []),
+        P = (0, x.RD)(w, {
             allowedFlows: [x._M.RPC],
             debug: !0
         }),
@@ -112,7 +112,7 @@ function I() {
                 children: ["Application Name: ", null != w ? w.name : "N/A"]
             }), (0, a.jsxs)(d.Text, {
                 variant: "text-md/normal",
-                children: ["Linked Games:", " ", P.length > 0 ? P.map(e => (0, h.t)(w)?.id === e.id ? `${e.name}*` : e.name).join(", ") : "N/A"]
+                children: ["Linked Games:", " ", M.length > 0 ? M.map(e => (0, h.t)(w)?.id === e.id ? `${e.name}*` : e.name).join(", ") : "N/A"]
             })]
         }), (0, a.jsxs)("div", {
             className: E.k,
@@ -120,7 +120,7 @@ function I() {
                 variant: "heading-lg/normal",
                 children: "Authorization"
             }), (0, a.jsx)(p.VT, {
-                overallStatus: M.debug.isSubscribedToAuthorizeRequest ? p.nW.OVERALL_GOOD : U ? p.nW.WARN : p.nW.OVERALL_BAD,
+                overallStatus: P.debug.isSubscribedToAuthorizeRequest ? p.nW.OVERALL_GOOD : U ? p.nW.WARN : p.nW.OVERALL_BAD,
                 name: y.intl.string(S.default.AGLx00),
                 steps: [{
                     status: U ? p.nW.GOOD : p.nW.BAD,
@@ -128,10 +128,10 @@ function I() {
                     description: U ? null : y.intl.string(S.default.PFxxJa),
                     learnMoreLink: U ? null : "https://discord.com/developers/docs/discord-social-sdk/how-to/debug-log"
                 }, {
-                    status: M.debug.isSubscribedToAuthorizeRequest ? p.nW.GOOD : U ? p.nW.WARN : p.nW.BAD,
+                    status: P.debug.isSubscribedToAuthorizeRequest ? p.nW.GOOD : U ? p.nW.WARN : p.nW.BAD,
                     text: y.intl.string(S.default.S94dzs),
-                    description: M.debug.isSubscribedToAuthorizeRequest || !U ? null : y.intl.string(S.default.aTULMB),
-                    learnMoreLink: M.debug.isSubscribedToAuthorizeRequest || !U ? null : "https://discord.com/developers/docs/discord-social-sdk/how-to/debug-log"
+                    description: P.debug.isSubscribedToAuthorizeRequest || !U ? null : y.intl.string(S.default.aTULMB),
+                    learnMoreLink: P.debug.isSubscribedToAuthorizeRequest || !U ? null : "https://discord.com/developers/docs/discord-social-sdk/how-to/debug-log"
                 }],
                 isChosen: B.chosenFlow === x._M.RPC
             }), (0, a.jsx)(p.VT, {
@@ -167,8 +167,8 @@ function I() {
                 color: "text-subtle",
                 children: "This will start whichever authorization flow is available. RPC authorization takes precedence over web."
             }), (0, a.jsx)(d.Button, {
-                disabled: !M.canStartAuthorization,
-                onClick: () => M.startAuthorization({
+                disabled: !P.canStartAuthorization,
+                onClick: () => P.startAuthorization({
                     analyticsLocations: o
                 }),
                 variant: "secondary",

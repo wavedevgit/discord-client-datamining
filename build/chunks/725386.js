@@ -3,13 +3,13 @@ n.d(t, {
     A: () => f
 });
 var i = n(64700),
-    l = n(540185),
-    a = n(417597),
+    a = n(540185),
+    l = n(417597),
     s = n(382483),
     r = n(385113),
     o = n(369374),
-    d = n(395332),
-    c = n(287809),
+    c = n(395332),
+    d = n(287809),
     u = n(403362),
     g = n(633075),
     m = n(289173),
@@ -21,13 +21,13 @@ function f(e) {
         enabled: t
     } = o.A.useConfig({
         location: e.location
-    }), n = (0, a.bG)([c.default], () => c.default.getCurrentUser()), f = (0, x.A)(n?.id), h = (0, d.w$)(e), _ = (0, a.bG)([r.A], () => r.A.getAllConfigsByApplication());
+    }), n = (0, l.bG)([d.default], () => d.default.getCurrentUser()), f = (0, x.A)(n?.id), h = (0, c.w$)(e), _ = (0, l.bG)([r.A], () => r.A.getAllConfigsByApplication());
     return i.useEffect(() => {
         t && (0, s.W)()
     }, [t]), i.useMemo(() => {
         let e = new Set(f.filter(e => e instanceof g.R).map(e => e.applicationId)),
             n = new Set(f.map(e => e.type));
-        return p.Zc.flatMap(i => i === l.x.APPLICATION ? t ? Object.values(_).map(e => e[0]).filter(u.Vq).filter(t => !e.has(t.application_id)).map(e => new g.R({
+        return p.Zc.flatMap(i => i === a.x.APPLICATION ? t ? Object.values(_).map(e => e[0]).filter(u.Vq).filter(t => !e.has(t.application_id)).map(e => new g.R({
             applicationId: e.application_id
         })) : null == h ? [] : h.filter(t => !e.has(t.applicationId)).map(e => new g.R({
             applicationId: e.applicationId

@@ -1,13 +1,13 @@
 /** chunk id: 251494 params = (module,exports,require) **/
 n.d(t, {
-    X: () => s
+    X: () => a
 });
 var i = n(775602),
-    l = n(203982),
-    r = n(652215);
-let s = {
+    r = n(203982),
+    s = n(652215);
+let a = {
     binds: ["return"],
     action() {
-        if (!i.A.keyboardModeEnabled && l._.hasSubscribers(r.jej.MODAL_SUBMIT)) return l._.dispatch(r.jej.MODAL_SUBMIT), !1
+        if (!i.A.keyboardModeEnabled && r._.hasSubscribers(s.jej.MODAL_SUBMIT)) return r._.dispatch(s.jej.MODAL_SUBMIT), !1
     }
 }

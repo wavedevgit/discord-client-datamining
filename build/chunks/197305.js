@@ -1,57 +1,57 @@
 /** chunk id: 197305 params = (module,exports,require) **/
-i.d(t, {
-    A: () => d
+i.d(e, {
+    A: () => u
 }), i(321073);
 var n = i(311907),
-    a = i(73153),
-    l = i(213012),
+    l = i(73153),
+    r = i(213012),
     s = i(71393);
-let r = {},
+let a = {},
     o = () => {
-        r = {
+        a = {
             guildAffinitiesByGuildId: {},
             guildAffinities: [],
             lastFetched: 0
         }
     };
 o();
-class c extends n.Ay.PersistedStore {
+class d extends n.Ay.PersistedStore {
     static displayName = "GuildAffinitiesStore";
     static persistKey = "GuildAffinitiesStore";
-    initialize(e) {
-        null != e && (r = e), this.waitFor(s.A)
+    initialize(t) {
+        null != t && (a = t), this.waitFor(s.A)
     }
     getState() {
-        return r
+        return a
     }
-    getGuildAffinity(e) {
-        return r.guildAffinitiesByGuildId[e]
+    getGuildAffinity(t) {
+        return a.guildAffinitiesByGuildId[t]
     }
     get affinities() {
-        return r.guildAffinities
+        return a.guildAffinities
     }
     get hasRequestResolved() {
-        return 0 !== r.lastFetched
+        return 0 !== a.lastFetched
     }
 }
-let d = new c(a.h, {
+let u = new d(l.h, {
     CONNECTION_OPEN: function() {
-        return Date.now() - r.lastFetched > 864e5 && (0, l.I)(), !1
+        return Date.now() - a.lastFetched > 864e5 && (0, r.I)(), !1
     },
-    LOAD_GUILD_AFFINITIES_SUCCESS: function(e) {
+    LOAD_GUILD_AFFINITIES_SUCCESS: function(t) {
         let {
-            guildAffinities: t
-        } = e;
-        r.guildAffinities = [], r.guildAffinitiesByGuildId = {}, r.lastFetched = Date.now(), t.forEach((e, t) => {
+            guildAffinities: e
+        } = t;
+        a.guildAffinities = [], a.guildAffinitiesByGuildId = {}, a.lastFetched = Date.now(), e.forEach((t, e) => {
             let {
                 affinity: i,
                 guild_id: n
-            } = e, a = {
+            } = t, l = {
                 score: i,
                 guildId: n,
-                index: t
+                index: e
             };
-            r.guildAffinitiesByGuildId[n] = a, r.guildAffinities.push(a)
+            a.guildAffinitiesByGuildId[n] = l, a.guildAffinities.push(l)
         })
     },
     LOGOUT: function() {

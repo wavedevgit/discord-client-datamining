@@ -14,8 +14,8 @@ var i = n(627968),
     h = n(108959),
     m = n(902439),
     A = n(5867),
-    p = n(652215);
-let g = (e, t) => {
+    g = n(652215);
+let p = (e, t) => {
     a.h.wait(() => {
         (0, r.I_)(e, t)
     })
@@ -27,33 +27,33 @@ function f(e) {
             className: a,
             style: r
         } = e,
-        f = (0, s.bG)([o.A], () => o.A.getWindow(p.MLl.CHANNEL_CALL_POPOUT)),
+        f = (0, s.bG)([o.A], () => o.A.getWindow(g.MLl.CHANNEL_CALL_POPOUT)),
         _ = (0, m.A)(),
         E = (0, s.bG)([d.Ay], () => d.Ay.getActivityPanelMode());
     t = null == _ || (0, h.A)((0, u.H)(_.location)) || E !== A.Gd.PANEL ? f?.window ?? window : window;
-    let x = l.useRef(null),
-        C = l.useMemo(() => {
+    let C = l.useRef(null),
+        x = l.useMemo(() => {
             let e = null;
             return () => {
                 null == e && (e = t.requestAnimationFrame(() => {
-                    g(n, x.current?.getBoundingClientRect() ?? null), e = null
+                    p(n, C.current?.getBoundingClientRect() ?? null), e = null
                 }))
             }
         }, [n, t]);
-    return l.useEffect(() => (t.addEventListener("resize", C), c._.subscribe(p.jej.REMEASURE_TARGET, C), () => {
-        t.removeEventListener("resize", C), c._.unsubscribe(p.jej.REMEASURE_TARGET, C)
-    }), [C, t]), l.useLayoutEffect(() => {
-        let e = x.current;
+    return l.useEffect(() => (t.addEventListener("resize", x), c._.subscribe(g.jej.REMEASURE_TARGET, x), () => {
+        t.removeEventListener("resize", x), c._.unsubscribe(g.jej.REMEASURE_TARGET, x)
+    }), [x, t]), l.useLayoutEffect(() => {
+        let e = C.current;
         if (null == e) return;
         let t = e.ownerDocument.defaultView;
         if (null == t) return;
-        C();
-        let i = new t.ResizeObserver(C);
+        x();
+        let i = new t.ResizeObserver(x);
         return i.observe(e), () => {
-            i.disconnect(), g(n, null)
+            i.disconnect(), p(n, null)
         }
-    }, [n, C]), (0, i.jsx)("div", {
-        ref: x,
+    }, [n, x]), (0, i.jsx)("div", {
+        ref: C,
         style: r,
         className: a
     })

@@ -3,22 +3,22 @@ t.d(n, {
     A: () => O
 });
 var i = t(627968),
-    a = t(64700),
-    s = t(397927),
-    r = t(793574),
-    l = t(688810),
+    s = t(64700),
+    a = t(397927),
+    l = t(793574),
+    r = t(688810),
     o = t(351966),
     d = t(915089),
     c = t(713517),
     u = t(562153),
     _ = t(183555),
     A = t(950191),
-    p = t(718019),
-    x = t(31432),
-    f = t(915614),
-    m = t(389996),
-    g = t(743987),
-    I = t(900179),
+    x = t(718019),
+    p = t(31432),
+    m = t(915614),
+    g = t(389996),
+    I = t(743987),
+    f = t(900179),
     h = t(946356),
     b = t(810396),
     j = t(35241),
@@ -43,8 +43,8 @@ function O(e) {
         onClose: M,
         sourceAnalyticsLocations: D = []
     } = e, G = t === N.ME ? void 0 : t, U = (0, A.Ay)(n.id, G), V = u.Ay.getName(G, O, n), F = (0, d.GV)(), {
-        analyticsLocations: w
-    } = (0, l.Ay)([...D, r.A.USER_PROFILE_MODAL]), W = (0, _.pb)({
+        analyticsLocations: W
+    } = (0, r.Ay)([...D, l.A.USER_PROFILE_MODAL]), H = (0, _.pb)({
         layout: "MODAL",
         userId: n.id,
         sourceSessionId: k,
@@ -52,22 +52,22 @@ function O(e) {
         channelId: O,
         messageId: S,
         roleId: R
-    }), H = a.useRef(null), z = (0, c.M)(H);
-    return (0, i.jsx)(l.f5, {
-        value: w,
+    }), w = s.useRef(null), z = (0, c.M)(w);
+    return (0, i.jsx)(r.f5, {
+        value: W,
         children: (0, i.jsx)(_.of, {
-            value: W,
+            value: H,
             isLoaded: U?.isLoaded,
-            children: (0, i.jsxs)(s.EOs, {
+            children: (0, i.jsxs)(a.EOs, {
                 "data-migration-pending": !0,
                 transitionState: B,
                 className: T.zr,
                 hideShadow: !0,
                 "aria-labelledby": F,
                 parentComponent: "NonUserBotProfileModal",
-                children: [(0, i.jsx)(s.Fmo, {
-                    component: (0, i.jsx)(s.AC4, {
-                        children: (0, i.jsx)(s.H, {
+                children: [(0, i.jsx)(a.Fmo, {
+                    component: (0, i.jsx)(a.AC4, {
+                        children: (0, i.jsx)(a.H, {
                             id: F,
                             children: y.intl.format(y.t.KRe1Fk, {
                                 name: V
@@ -78,19 +78,19 @@ function O(e) {
                         user: n,
                         displayProfile: U,
                         themeType: E.d.MODAL,
-                        ref: U?.profileEffect != null ? H : void 0,
+                        ref: U?.profileEffect != null ? w : void 0,
                         children: [(0, i.jsx)(v.A, {
                             children: (0, i.jsx)(j.A, {
                                 user: n
                             })
                         }), (0, i.jsxs)("div", {
-                            children: [(0, i.jsx)(f.A, {
+                            children: [(0, i.jsx)(m.A, {
                                 user: n,
                                 displayProfile: U,
                                 themeType: E.d.MODAL
                             }), (0, i.jsx)("div", {
                                 className: T.El,
-                                children: (0, i.jsx)(p.A, {
+                                children: (0, i.jsx)(x.A, {
                                     user: n,
                                     displayProfile: U,
                                     guildId: G,
@@ -107,37 +107,37 @@ function O(e) {
                                 nickname: V,
                                 pronouns: U?.pronouns,
                                 nicknameVariant: "heading-xl/bold",
-                                tags: (0, i.jsx)(x.A, {
+                                tags: (0, i.jsx)(p.A, {
                                     displayProfile: U,
                                     themeType: E.d.MODAL,
                                     onClose: M
                                 })
                             }), (0, i.jsxs)("div", {
                                 className: P.kL,
-                                children: [(0, i.jsx)(s.VQ0, {
+                                children: [(0, i.jsx)(a.VQ0, {
                                     className: P.$H,
                                     type: "top",
                                     selectedItem: C.RP.BOT_INFO,
                                     onItemSelect: N.tEg,
-                                    children: (0, i.jsx)(s.VQ0.Item, {
+                                    children: (0, i.jsx)(a.VQ0.Item, {
                                         className: P.YU,
                                         id: C.RP.BOT_INFO,
                                         "aria-label": y.intl.string(y.t.ZzAR2Y),
-                                        children: (0, i.jsx)(s.Text, {
+                                        children: (0, i.jsx)(a.Text, {
                                             variant: "text-sm/normal",
                                             children: y.intl.string(y.t.ZzAR2Y)
                                         })
                                     }, C.RP.BOT_INFO)
-                                }), (0, i.jsxs)(s.IpV, {
+                                }), (0, i.jsxs)(a.IpV, {
                                     fade: !0,
                                     className: L.XG,
-                                    children: [(0, i.jsx)(m.E, {
+                                    children: [(0, i.jsx)(g.E, {
                                         userId: n.id,
                                         userBio: U?.bio,
                                         setLineClamp: !1
-                                    }), (0, i.jsx)(I.A, {
+                                    }), (0, i.jsx)(f.A, {
                                         heading: y.intl.string(y.t["A//N4k"]),
-                                        children: (0, i.jsx)(g.A, {
+                                        children: (0, i.jsx)(I.A, {
                                             userId: n.id,
                                             guildId: G,
                                             tooltipDelay: C.In

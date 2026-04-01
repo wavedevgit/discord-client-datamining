@@ -1,64 +1,64 @@
 /** chunk id: 305637 params = (module,exports,require) **/
-i.d(t, {
-    A: () => g
+i.d(e, {
+    A: () => f
 });
 var n = i(627968);
 i(64700);
-var a = i(311907),
-    l = i(990078),
+var l = i(311907),
+    r = i(990078),
     s = i(397927),
-    r = i(630054),
+    a = i(630054),
     o = i(956793),
-    c = i(401843),
-    d = i(279250),
-    u = i(267102),
-    m = i(616356),
-    _ = i(734057),
-    p = i(203982),
+    d = i(401843),
+    u = i(279250),
+    c = i(267102),
+    p = i(616356),
+    m = i(734057),
+    A = i(203982),
     h = i(652215),
-    A = i(985018);
+    g = i(985018);
 
-function g(e) {
+function f(t) {
     let {
-        isCurrentUser: t,
+        isCurrentUser: e,
         applicationStream: i,
-        onAction: g
-    } = e, {
-        activeStream: f,
-        watchingOtherStream: v
-    } = (0, a.cf)([m.A], () => ({
-        activeStream: m.A.getActiveStreamForApplicationStream(i),
-        watchingOtherStream: null != i && m.A.getAllActiveStreamsForChannel(i.channelId).filter(e => {
+        onAction: f
+    } = t, {
+        activeStream: S,
+        watchingOtherStream: T
+    } = (0, l.cf)([p.A], () => ({
+        activeStream: p.A.getActiveStreamForApplicationStream(i),
+        watchingOtherStream: null != i && p.A.getAllActiveStreamsForChannel(i.channelId).filter(t => {
             let {
-                ownerId: t
-            } = e;
-            return t !== i.ownerId
+                ownerId: e
+            } = t;
+            return e !== i.ownerId
         }).length > 0
-    })), S = (0, a.bG)([_.A], () => _.A.getChannel(i?.channelId)), [I, T] = (0, d.zP)(S), C = (0, u.aL)(), E = null != f && null != i && f.state !== h.XYD.ENDED && f.ownerId === i.ownerId, y = e => {
-        null != i && (g?.(), o.default.selectVoiceChannel(i.channelId), E || (0, c.Nl)(i, {
-            forceMultiple: e
-        }), C.dispatch(h.jej.POPOUT_CLOSE), p._.dispatch(h.jej.MODAL_CLOSE), r.A.popAll())
+    })), E = (0, l.bG)([m.A], () => m.A.getChannel(i?.channelId)), [C, v] = (0, u.zP)(E), y = (0, c.aL)(), I = null != S && null != i && S.state !== h.XYD.ENDED && S.ownerId === i.ownerId, _ = t => {
+        null != i && (f?.(), o.default.selectVoiceChannel(i.channelId), I || (0, d.Nl)(i, {
+            forceMultiple: t
+        }), y.dispatch(h.jej.POPOUT_CLOSE), A._.dispatch(h.jej.MODAL_CLOSE), a.A.popAll())
     };
     if (null == i) return null;
-    let x = (0, d.CT)(T);
-    return t ? x = A.intl.string(A.t.XvBdeT) : E && (x = A.intl.string(A.t["JH1SJ+"])), (0, n.jsxs)(n.Fragment, {
+    let N = (0, u.CT)(v);
+    return e ? N = g.intl.string(g.t.XvBdeT) : I && (N = g.intl.string(g.t["JH1SJ+"])), (0, n.jsxs)(n.Fragment, {
         children: [(0, n.jsx)(s.Button, {
             size: "sm",
-            variant: E ? "secondary" : "active",
+            variant: I ? "secondary" : "active",
             icon: s.Fzq,
-            text: x,
-            disabled: t || E || !I,
-            onClick: () => y(!1),
+            text: N,
+            disabled: e || I || !C,
+            onClick: () => _(!1),
             fullWidth: !0
-        }), v && !E ? (0, n.jsx)(l.m, {
-            text: A.intl.string(A.t.wCrzut),
+        }), T && !I ? (0, n.jsx)(r.m, {
+            text: g.intl.string(g.t.wCrzut),
             children: (0, n.jsx)(s.K0, {
                 variant: "secondary",
                 size: "sm",
                 icon: s.vAm,
-                "aria-label": A.intl.string(A.t.wCrzut),
+                "aria-label": g.intl.string(g.t.wCrzut),
                 onClick: () => {
-                    y(!0)
+                    _(!0)
                 }
             })
         }) : null]

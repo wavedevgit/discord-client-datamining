@@ -1,6 +1,6 @@
 /** chunk id: 38198 params = (module,exports,require) **/
 n.d(t, {
-    A: () => N
+    A: () => b
 });
 var i = n(627968),
     l = n(64700),
@@ -14,24 +14,24 @@ var i = n(627968),
     h = n(867455),
     m = n(780057),
     A = n(747926),
-    p = n(954571),
-    g = n(203982),
+    g = n(954571),
+    p = n(203982),
     f = n(453771),
     _ = n(518960),
     E = n(408018),
-    x = n(447155),
-    C = n(652215),
+    C = n(447155),
+    x = n(652215),
     S = n(49999),
     I = n(412136),
     T = n(985018);
-let v = /(.*)```(\w+)\n(.*)```(.*)/s;
+let N = /(.*)```(\w+)\n(.*)```(.*)/s;
 
-function N(e) {
+function b(e) {
     let {
         channel: t,
-        options: N,
+        options: b,
         onFileUpload: y,
-        onClose: b,
+        onClose: v,
         onSelect: j,
         draftType: R,
         editorTextContent: M,
@@ -48,7 +48,7 @@ function N(e) {
     }
 
     function U() {
-        p.default.track(C.HAw.CHANNEL_ATTACH_MENU_USE_APPS_CLICKED), D("/", (0, E.x7)("/"))
+        g.default.track(x.HAw.CHANNEL_ATTACH_MENU_USE_APPS_CLICKED), D("/", (0, E.x7)("/"))
     }
 
     function G() {
@@ -75,15 +75,15 @@ function N(e) {
         let e = M,
             n = "txt",
             i = "",
-            l = M.match(v);
+            l = M.match(N);
         null != l && (i = l[1], n = l[2], e = l[3], i += l[4]), (0, _.R)([(0, f.VE)(new Blob([e], {
             type: "text/plain"
-        }), `message.${n}`, "text/plain")], t, R), g._.dispatchToLastSubscribed(C.jej.CLEAR_TEXT), "" !== i && g._.dispatchToLastSubscribed(C.jej.INSERT_TEXT, {
+        }), `message.${n}`, "text/plain")], t, R), p._.dispatchToLastSubscribed(x.jej.CLEAR_TEXT), "" !== i && p._.dispatchToLastSubscribed(x.jej.INSERT_TEXT, {
             plainText: i
         })
     }
     return l.useEffect(() => {
-        p.default.track(C.HAw.OPEN_POPOUT, {
+        g.default.track(x.HAw.OPEN_POPOUT, {
             type: "Send Attachment",
             channel_id: t.id,
             guild_id: t.guild_id
@@ -92,11 +92,11 @@ function N(e) {
         "data-menu-migrated": !0,
         onSelect: j,
         navId: "channel-attach",
-        onClose: b,
+        onClose: v,
         "aria-label": T.intl.string(T.t.Xm41aV),
-        children: N.map(function(e) {
+        children: b.map(function(e) {
             switch (e.type) {
-                case x.v.UPLOAD_A_FILE:
+                case C.v.UPLOAD_A_FILE:
                     return (0, i.jsx)(r.Drp, {
                         id: "upload-file",
                         label: e.display,
@@ -107,7 +107,7 @@ function N(e) {
                         },
                         action: y
                     }, "upload-file");
-                case x.v.UPLOAD_TEXT_AS_FILE:
+                case C.v.UPLOAD_TEXT_AS_FILE:
                     if ("" === M) return null;
                     return (0, i.jsx)(r.Drp, {
                         id: "upload-text-as-file",
@@ -119,7 +119,7 @@ function N(e) {
                         },
                         action: H
                     }, "upload-text-as-file");
-                case x.v.CLIPS:
+                case C.v.CLIPS:
                     return (0, i.jsx)(r.Drp, {
                         id: "clips",
                         label: e.display,
@@ -133,7 +133,7 @@ function N(e) {
                         } : void 0,
                         action: G
                     }, "clips");
-                case x.v.POLL:
+                case C.v.POLL:
                     return (0, i.jsx)(r.Drp, {
                         id: "poll",
                         label: e.display,
@@ -144,7 +144,7 @@ function N(e) {
                         },
                         action: F
                     }, "poll");
-                case x.v.INVITE_TO_PLAY_GAME:
+                case C.v.INVITE_TO_PLAY_GAME:
                     return (0, i.jsx)(r.Drp, {
                         id: "play",
                         label: e.display,
@@ -157,13 +157,13 @@ function N(e) {
                             var n;
                             return n = e.activity, void o.A.sendActivityInvite({
                                 channelId: t.id,
-                                type: C.xL.JOIN,
+                                type: x.xL.JOIN,
                                 activity: n,
                                 location: L[L.length - 1]
                             })
                         }
                     }, "play");
-                case x.v.INVITE_TO_LISTEN:
+                case C.v.INVITE_TO_LISTEN:
                     return (0, i.jsx)(r.Drp, {
                         id: "listen",
                         label: e.display,
@@ -176,13 +176,13 @@ function N(e) {
                             var n;
                             return n = e.activity, void o.A.sendActivityInvite({
                                 channelId: t.id,
-                                type: C.xL.LISTEN,
+                                type: x.xL.LISTEN,
                                 activity: n,
                                 location: L[L.length - 1]
                             })
                         }
                     }, "listen");
-                case x.v.INVITE_TO_WATCH:
+                case C.v.INVITE_TO_WATCH:
                     return (0, i.jsx)(r.Drp, {
                         id: "watch",
                         label: e.display,
@@ -195,13 +195,13 @@ function N(e) {
                             var n;
                             return n = e.activity, void o.A.sendActivityInvite({
                                 channelId: t.id,
-                                type: C.xL.WATCH,
+                                type: x.xL.WATCH,
                                 activity: n,
                                 location: L[L.length - 1]
                             })
                         }
                     }, "watch");
-                case x.v.CREATE_THREAD:
+                case C.v.CREATE_THREAD:
                     return (0, i.jsx)(r.Drp, {
                         id: "THREAD",
                         label: e.display,
@@ -212,7 +212,7 @@ function N(e) {
                         },
                         action: k
                     }, "THREAD");
-                case x.v.SLASH_COMMAND:
+                case C.v.SLASH_COMMAND:
                     return (0, i.jsx)(r.Drp, {
                         id: "SLASH_COMMAND",
                         label: e.display,
@@ -223,7 +223,7 @@ function N(e) {
                         },
                         action: U
                     }, "SLASH_COMMAND");
-                case x.v.SCHEDULED_MESSAGE:
+                case C.v.SCHEDULED_MESSAGE:
                     return (0, i.jsx)(r.Drp, {
                         id: "scheduled_message",
                         label: e.display,
@@ -237,7 +237,7 @@ function N(e) {
                         }),
                         children: P
                     }, "scheduled_message");
-                case x.v.SUMMARIZE_THREAD:
+                case C.v.SUMMARIZE_THREAD:
                     return (0, i.jsx)(r.Drp, {
                         id: "summarize_thread",
                         label: e.display,

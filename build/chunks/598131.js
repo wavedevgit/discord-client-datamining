@@ -48,10 +48,10 @@ var l = n(627968),
     K = n(908675),
     $ = n(503985),
     Q = n(145996),
-    q = n(964448),
-    Y = n(652215),
-    J = n(985018),
-    Z = n(641131),
+    Y = n(964448),
+    q = n(652215),
+    Z = n(985018),
+    J = n(641131),
     X = n(687404);
 let ee = ["user_urf", "message_urf", "guild_urf", "media_takedown"];
 
@@ -159,19 +159,19 @@ let el = e => {
     }, [em]);
     let eV = a.useCallback(e => {
             switch (e) {
-                case Y.t02.UNKNOWN_TIDA_CONTENT: {
-                    let e = J.intl.string(J.t["2EPoxE"]);
+                case q.t02.UNKNOWN_TIDA_CONTENT: {
+                    let e = Z.intl.string(Z.t["2EPoxE"]);
                     eE(e), ed?.("MEDIA_TAKEDOWN_CONTENT_DETAILS", e);
                     break
                 }
-                case Y.t02.INVALID_SIGNATURE_MISMATCH:
-                    eE(J.intl.string(J.t.kXrnQM));
+                case q.t02.INVALID_SIGNATURE_MISMATCH:
+                    eE(Z.intl.string(Z.t.kXrnQM));
                     break;
-                case Y.t02.INVALID_FORM_BODY:
-                    eE(J.intl.string(J.t.VjAAuP));
+                case q.t02.INVALID_FORM_BODY:
+                    eE(Z.intl.string(Z.t.VjAAuP));
                     break;
                 default:
-                    eC ? eE(J.intl.string(Z.default.psKFdJ)) : eE(J.intl.string(J.t.h6D8Vy))
+                    eC ? eE(Z.intl.string(J.default.psKFdJ)) : eE(Z.intl.string(Z.t.h6D8Vy))
             }
         }, [eC, ed]),
         eF = a.useCallback(() => {
@@ -206,8 +206,8 @@ let el = e => {
     let eK = (0, u.fY)(el),
         e$ = null != et(t, "ignore_users") && ("message" === n.name || "first_dm" === n.name || "user" === n.name),
         eQ = (0, c.Z)(),
-        eq = (0, o.GR)(),
-        eY = eQ && eq.length > 0 && null != et(t, "share_with_parents");
+        eY = (0, o.GR)(),
+        eq = eQ && eY.length > 0 && null != et(t, "share_with_parents");
     return (0, l.jsxs)("div", {
         className: X.kL,
         onKeyDown: ez,
@@ -265,15 +265,15 @@ let el = e => {
                     let {
                         type: t
                     } = e;
-                    return q.T.includes(t)
+                    return Y.T.includes(t)
                 })
             }(t) && (0, l.jsxs)(P.A, {
                 children: [e$ && (0, l.jsx)(M.A, {
                     user: "user" === n.name ? n.record : n.record.author,
                     channelId: eL,
                     reportId: ec
-                }), eY && (0, l.jsx)(V.A, {
-                    parents: eq
+                }), eq && (0, l.jsx)(V.A, {
+                    parents: eY
                 }), null != et(t, "block_users") && ("message" === n.name || "first_dm" === n.name || "user" === n.name || "report_to_mod_message" === n.name || "application" === n.name && null != n.record.bot) && (0, l.jsx)(g.A, {
                     user: "application" === n.name ? n.record.bot : "user" === n.name ? n.record : n.record.author,
                     channelId: eL,

@@ -3,8 +3,8 @@ n.d(t, {
     A: () => u
 });
 var r = n(627968),
-    i = n(64700),
-    s = n(697397),
+    s = n(64700),
+    i = n(697397),
     a = n(721092),
     l = n(795068),
     o = n(590358);
@@ -19,44 +19,44 @@ function u(e) {
         isQuestCompleted: m,
         backgroundColor: E,
         preloadedBuffers: _,
-        durationSec: p,
-        maxSeekableTime: f,
-        playerState: v,
-        onClick: S,
+        durationSec: f,
+        maxSeekableTime: p,
+        playerState: S,
+        onClick: v,
         onScrubBack: h,
         onScrubForward: g,
         "data-testid": A
     } = e, {
         quest: C,
-        sourceQuestContent: T,
-        useNewProgressBarStyling: b
-    } = i.useContext(l.a), {
-        questConfig: x
-    } = i.useContext(l.l), D = !m && b, y = (0, a.A)({
+        sourceQuestContent: x,
+        useNewProgressBarStyling: T
+    } = s.useContext(l.a), {
+        questConfig: D
+    } = s.useContext(l.l), I = !m && T, y = (0, a.A)({
         targetSec: t,
         quest: C,
-        sourceQuestContent: T,
-        questConfig: x,
-        onIndicatorClick: S
+        sourceQuestContent: x,
+        questConfig: D,
+        onIndicatorClick: v
     });
-    return (0, r.jsx)(s.uI, {
+    return (0, r.jsx)(i.uI, {
         isFullyVisible: n,
         percent: u,
         animate: c,
         interactionEnabled: d,
-        playerState: v,
+        playerState: S,
         backgroundColor: E,
         preloadedBuffers: _,
-        durationSec: p,
-        maxSeekableTime: f,
-        segmentBorderRadius: b ? 99 : 8,
+        durationSec: f,
+        maxSeekableTime: p,
+        segmentBorderRadius: T ? 99 : 8,
         progressGlow: !0,
-        progressFillClassName: D ? o.QR : o.UA,
-        glowClassName: D ? o.Um : o.U5,
-        timelineHeightPx: b ? 4 : 2,
-        hoverTimelineHeightPx: b ? void 0 : 4,
-        initialTimelineHeightPx: b ? 4 : 2,
-        onClick: S,
+        progressFillClassName: I ? o.QR : o.UA,
+        glowClassName: I ? o.Um : o.U5,
+        timelineHeightPx: T ? 4 : 2,
+        hoverTimelineHeightPx: T ? void 0 : 4,
+        initialTimelineHeightPx: T ? 4 : 2,
+        onClick: v,
         onScrubBack: h,
         onScrubForward: g,
         indicatorConfig: y,

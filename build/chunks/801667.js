@@ -1,6 +1,6 @@
 /** chunk id: 801667 params = (module,exports,require) **/
 n.d(t, {
-    A: () => x
+    A: () => C
 });
 var i = n(64700),
     l = n(311907),
@@ -14,29 +14,29 @@ var i = n(64700),
     h = n(576705),
     m = n(927813),
     A = n(661191),
-    p = n(302909),
-    g = n(342220),
+    g = n(302909),
+    p = n(342220),
     f = n(652215);
 let _ = 90 * m.A.Millis.DAY,
     E = 14 * m.A.Millis.DAY;
 
-function x(e) {
+function C(e) {
     let t = (0, l.bG)([d.A], () => d.A.getGuild(e.guild_id)),
         n = (0, l.bG)([c.A], () => c.A.getMemberCount(t?.id) ?? 0),
         m = (0, l.bG)([u.A], () => u.A.getLastMessage(e.id)),
-        x = (0, l.bG)([h.A], () => null != t && h.A.can(f.xBc.ADMINISTRATOR, t)),
-        C = (0, l.bG)([o.A], () => o.A.getGuildAffinity(e.guild_id)?.score),
+        C = (0, l.bG)([h.A], () => null != t && h.A.can(f.xBc.ADMINISTRATOR, t)),
+        x = (0, l.bG)([o.A], () => o.A.getGuildAffinity(e.guild_id)?.score),
         S = (0, l.bG)([r.A], () => r.A.hasConsented(f.YAq.PERSONALIZATION)),
-        I = (0, g.A)(),
+        I = (0, p.A)(),
         {
             enabled: T
-        } = p.A.useConfig({
+        } = g.A.useConfig({
             location: "useIsEligibleForFirstBoosterUpsell"
         }),
-        [v] = (0, a.Wl)(s.M.FIRST_BOOSTER_UPSELL_OVERSEER, {
+        [N] = (0, a.Wl)(s.M.FIRST_BOOSTER_UPSELL_OVERSEER, {
             cooldownDurationMs: 0,
             numTimesToRecur: 3
         }),
-        N = v === s.M.FIRST_BOOSTER_UPSELL_OVERSEER;
-    return i.useMemo(() => !(!T || !N || !S || null == C || C <= 17.06 || e.type !== f.rbe.GUILD_TEXT || null == t || A.default.age(t.id) < _ || null == t.premiumSubscriberCount || 0 !== t.premiumSubscriberCount || n < 10 || m?.id == null || A.default.age(m.id) > E) && (x || I), [T, N, S, e.type, t, n, C, m?.id, x, I])
+        b = N === s.M.FIRST_BOOSTER_UPSELL_OVERSEER;
+    return i.useMemo(() => !(!T || !b || !S || null == x || x <= 17.06 || e.type !== f.rbe.GUILD_TEXT || null == t || A.default.age(t.id) < _ || null == t.premiumSubscriberCount || 0 !== t.premiumSubscriberCount || n < 10 || m?.id == null || A.default.age(m.id) > E) && (C || I), [T, b, S, e.type, t, n, x, m?.id, C, I])
 }

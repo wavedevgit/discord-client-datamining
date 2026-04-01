@@ -15,8 +15,8 @@ var l = n(503698),
     h = n(513272),
     m = n(798505),
     A = n(670455),
-    p = n(381941),
-    g = n(985018),
+    g = n(381941),
+    p = n(985018),
     f = n(950067);
 
 function _(e) {
@@ -57,7 +57,7 @@ function _(e) {
                 children: [(0, i.jsx)(o.Text, {
                     variant: "text-xs/medium",
                     color: "interactive-text-default",
-                    children: g.intl.string(g.t["5ZsiE9"])
+                    children: p.intl.string(p.t["5ZsiE9"])
                 }), (0, i.jsx)(o.DUT, {
                     onClick: e => s(e, A.P0.GOOD),
                     children: (0, i.jsx)(u.A, {
@@ -107,7 +107,7 @@ function E(e) {
         className: s()(f.aK, m ? f.Ke : f.hO),
         contentClassName: m ? f.Ew : f.rD,
         isUnread: u,
-        id: u ? p.q4 : void 0,
+        id: u ? g.q4 : void 0,
         children: t
     }, `divider-${n.contentKey??n.unreadId??a}`)
 }

@@ -14,8 +14,8 @@ var i = n(627968),
     h = n(36491),
     m = n(209100),
     A = n(652215),
-    p = n(985018),
-    g = n(691292);
+    g = n(985018),
+    p = n(691292);
 
 function f(e) {
     let {
@@ -26,33 +26,33 @@ function f(e) {
         }), (0, d.C)((0, c.af)(n, f)))
     }, [n, f]);
     return (0, i.jsxs)("div", {
-        className: g.BQ,
+        className: p.BQ,
         children: [(0, i.jsx)(m.A, {}), (0, i.jsxs)("div", {
-            className: g.BB,
+            className: p.BB,
             children: [(0, i.jsx)(a.Text, {
                 variant: "text-md/semibold",
                 color: "text-strong",
-                children: p.intl.string(p.t["5uAO7d"])
+                children: g.intl.string(g.t["5uAO7d"])
             }), (0, i.jsx)(a.Text, {
                 variant: "text-sm/medium",
                 color: "text-default",
-                children: p.intl.format(p.t.WnfPV3, {
+                children: g.intl.format(g.t.WnfPV3, {
                     helpArticleUrl: u.A.getCreatorSupportArticleURL(A.MVz.MEDIA_CHANNEL)
                 })
             }), (0, i.jsx)(a.hKd, {
                 size: 4
             }), (0, i.jsx)(a.Button, {
-                text: p.intl.string(p.t.C5UQC9),
+                text: g.intl.string(g.t.C5UQC9),
                 variant: "primary",
                 icon: a.qYV,
                 onClick: _
             })]
         }), (0, i.jsx)(a.DUT, {
-            className: g.b,
+            className: p.b,
             onClick: () => {
                 (0, h.sF)(t)
             },
-            "aria-label": p.intl.string(p.t["0+xZH0"]),
+            "aria-label": g.intl.string(g.t["0+xZH0"]),
             children: (0, i.jsx)(a.PGe, {
                 color: "currentColor",
                 size: "xs"

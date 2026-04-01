@@ -17,8 +17,8 @@ var i = n(627968),
     p = n(218670),
     A = n(932128),
     x = n(479207),
-    E = n(393172),
-    f = n(968898),
+    f = n(393172),
+    E = n(968898),
     S = n(196295);
 n(392164);
 var I = n(652215),
@@ -45,11 +45,11 @@ let v = {
                 borderWidth: r
             }) : null
         },
-        renderTitle: () => (0, i.jsx)(f.Pl, {
+        renderTitle: () => (0, i.jsx)(E.Pl, {
             children: T.intl.string(T.t.UPvOia)
         }),
         renderButtons: e => (0, i.jsxs)(i.Fragment, {
-            children: [(0, i.jsx)(f.CS, {
+            children: [(0, i.jsx)(E.CS, {
                 onClick: t => {
                     (0, g.cv)(e) && (0, s.L3)(t, async () => {
                         let {
@@ -61,7 +61,7 @@ let v = {
                         })
                     })
                 }
-            }), (0, i.jsx)(f.O0, {
+            }), (0, i.jsx)(E.O0, {
                 id: e.id,
                 pinned: e.pinned
             })]
@@ -76,7 +76,7 @@ let v = {
                 locked: s,
                 showEmpty: l
             } = e;
-            return (0, g.ZO)(t) ? (0, i.jsx)(E.Ay, {
+            return (0, g.ZO)(t) ? (0, i.jsx)(f.Ay, {
                 anchorLeft: n,
                 id: t.id,
                 locked: s,
@@ -87,11 +87,11 @@ let v = {
                 showEmpty: l
             }) : null
         },
-        renderTitle: () => (0, i.jsx)(f.Pl, {
+        renderTitle: () => (0, i.jsx)(E.Pl, {
             children: T.intl.string(T.t.nFv3Gb)
         }),
         renderButtons: e => (0, i.jsxs)(i.Fragment, {
-            children: [(0, i.jsx)(f.CS, {
+            children: [(0, i.jsx)(E.CS, {
                 onClick: e => {
                     (0, s.L3)(e, async () => {
                         let {
@@ -102,7 +102,7 @@ let v = {
                         })
                     })
                 }
-            }), (0, i.jsx)(f.O0, {
+            }), (0, i.jsx)(E.O0, {
                 id: e.id,
                 pinned: e.pinned
             })]
@@ -120,11 +120,11 @@ let v = {
                 pinned: t.pinned
             })
         },
-        renderTitle: () => (0, i.jsx)(f.Pl, {
+        renderTitle: () => (0, i.jsx)(E.Pl, {
             children: "Click Zone Tester"
         }),
         renderButtons: e => (0, i.jsxs)(i.Fragment, {
-            children: [(0, i.jsx)(f.CS, {
+            children: [(0, i.jsx)(E.CS, {
                 onClick: e => {
                     (0, s.L3)(e, async () => {
                         let {
@@ -135,7 +135,7 @@ let v = {
                         })
                     })
                 }
-            }), (0, i.jsx)(f.O0, {
+            }), (0, i.jsx)(E.O0, {
                 id: e.id,
                 pinned: e.pinned
             })]
@@ -155,10 +155,10 @@ let v = {
                 pinned: t.pinned
             })
         },
-        renderTitle: () => (0, i.jsx)(f.Pl, {
+        renderTitle: () => (0, i.jsx)(E.Pl, {
             children: "Overlay Performance"
         }),
-        renderButtons: e => (0, i.jsx)(f.O0, {
+        renderButtons: e => (0, i.jsx)(E.O0, {
             id: e.id,
             pinned: e.pinned
         })
@@ -193,12 +193,12 @@ let v = {
                 showEmpty: o
             }) : null
         },
-        renderTitle: e => (0, i.jsx)(f.we, {
+        renderTitle: e => (0, i.jsx)(E.we, {
             widgetId: e.id,
             children: T.intl.string(T.t["386XRo"])
         }),
         renderButtons: e => (0, g.dO)(e) ? (0, i.jsxs)(i.Fragment, {
-            children: [(0, i.jsx)(f.CS, {
+            children: [(0, i.jsx)(E.CS, {
                 onClick: t => {
                     (0, g.dO)(e) && (0, s.L3)(t, async () => {
                         let {
@@ -210,10 +210,10 @@ let v = {
                         })
                     })
                 }
-            }), (0, i.jsx)(f.GQ, {
+            }), (0, i.jsx)(E.GQ, {
                 widgetId: e.id,
                 showAllStreams: e.meta.showAllStreams ?? !0
-            }), (0, i.jsx)(f.O0, {
+            }), (0, i.jsx)(E.O0, {
                 id: e.id,
                 pinned: e.pinned
             })]
@@ -243,11 +243,11 @@ let v = {
                 showEmpty: n
             })
         },
-        renderTitle: () => (0, i.jsx)(f.Pl, {
+        renderTitle: () => (0, i.jsx)(E.Pl, {
             children: T.intl.string(T.t.gnKWdS)
         }),
         renderButtons: e => (0, i.jsxs)(i.Fragment, {
-            children: [(0, i.jsx)(f.CS, {
+            children: [(0, i.jsx)(E.CS, {
                 onClick: e => {
                     (0, s.L3)(e, async () => {
                         let {
@@ -258,7 +258,7 @@ let v = {
                         })
                     })
                 }
-            }), (0, i.jsx)(f.O0, {
+            }), (0, i.jsx)(E.O0, {
                 id: e.id,
                 pinned: e.pinned
             })]
@@ -273,7 +273,7 @@ let v = {
                 locked: t
             })
         },
-        renderTitle: () => (0, i.jsx)(f.Pl, {
+        renderTitle: () => (0, i.jsx)(E.Pl, {
             children: T.intl.string(T.t["6gwSFY"])
         }),
         renderButtons: () => null,
@@ -288,7 +288,7 @@ let v = {
                 locked: t
             })
         },
-        renderTitle: () => (0, i.jsx)(f.Pl, {
+        renderTitle: () => (0, i.jsx)(E.Pl, {
             children: T.intl.string(T.t.TdEu5X)
         }),
         renderButtons: () => null,
@@ -307,7 +307,7 @@ let v = {
                 dragging: s
             })
         },
-        renderTitle: () => (0, i.jsx)(f.Pl, {
+        renderTitle: () => (0, i.jsx)(E.Pl, {
             children: T.intl.string(T.t["/VQax8"])
         }),
         renderButtons: () => null,

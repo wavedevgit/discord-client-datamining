@@ -1,19 +1,19 @@
 /** chunk id: 944993 params = (module,exports,require) **/
-i.d(t, {
+s.d(t, {
     _: () => l
 });
-var n = i(627968);
-i(64700);
-var a = i(397927);
+var n = s(627968);
+s(64700);
+var i = s(397927);
 
 function l(e) {
-    (0, a.mMO)(async () => {
+    (0, i.mMO)(async () => {
         let {
             default: t
-        } = await Promise.all([i.e("56423"), i.e("25280")]).then(i.bind(i, 987482));
-        return i => (0, n.jsx)(t, {
+        } = await Promise.all([s.e("56423"), s.e("25280")]).then(s.bind(s, 987482));
+        return s => (0, n.jsx)(t, {
             source: e,
-            ...i
+            ...s
         })
     })
 }

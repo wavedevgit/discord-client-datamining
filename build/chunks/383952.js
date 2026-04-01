@@ -9,20 +9,20 @@ var a = n(627968),
     r = n(158954),
     o = n(311907),
     d = n(827734),
-    c = n(342494),
-    u = n(397927),
-    m = n(793574),
-    h = n(688810),
-    x = n(993719),
-    p = n(14059),
-    g = n(362823),
-    _ = n(980923),
-    f = n(206018),
-    v = n(480890),
-    b = n(74848),
-    j = n(77735),
-    A = n(499156),
-    C = n(277342),
+    c = n(523875),
+    u = n(342494),
+    m = n(397927),
+    h = n(793574),
+    x = n(688810),
+    p = n(993719),
+    g = n(14059),
+    _ = n(362823),
+    f = n(980923),
+    v = n(206018),
+    b = n(480890),
+    j = n(74848),
+    A = n(77735),
+    C = n(499156),
     y = n(430452),
     S = n(383501),
     T = n(350535),
@@ -39,8 +39,8 @@ function D(e) {
             selfMute: n,
             serverMute: s,
             suppress: D,
-            awaitingRemote: P,
-            iconForeground: M,
+            awaitingRemote: M,
+            iconForeground: P,
             onMouseEnter: L,
             onMouseLeave: U,
             onClick: B,
@@ -54,27 +54,27 @@ function D(e) {
         } = e,
         {
             showPTTIconIndicator: $
-        } = A.A.useConfig({
+        } = C.A.useConfig({
             location: "MicrophoneButton"
         }),
         q = (0, o.bG)([y.Ay], () => y.Ay.getMode() === N.TB.PUSH_TO_TALK),
         Q = (0, o.bG)([y.Ay], () => y.Ay.getSettings().modeOptions.shortcut),
-        Y = (0, o.bG)([p.A], () => p.A.getIsTutorialActive(g.v.MUTE_TUTORIAL)),
+        Y = (0, o.bG)([g.A], () => g.A.getIsTutorialActive(_.v.MUTE_TUTORIAL)),
         J = (0, o.bG)([S.A], () => null != S.A.getChannelId()),
         {
             name: X
-        } = (0, b.x5)(N.oh.AUDIO_INPUT),
+        } = (0, j.x5)(N.oh.AUDIO_INPUT),
         {
             enabledInputProfiles: Z
-        } = (0, j.d)({
+        } = (0, A.d)({
             location: "MicrophoneButton"
         }),
         ee = i.useRef(null),
         et = n || D || s,
-        en = (0, C.q)(et),
+        en = (0, c.L)(et ? "unmute" : "mute"),
         {
             analyticsLocations: ea
-        } = (0, h.Ay)(m.A.AUDIO_INPUT_BUTTON),
+        } = (0, x.Ay)(h.A.AUDIO_INPUT_BUTTON),
         {
             Component: ei,
             events: es,
@@ -82,7 +82,7 @@ function D(e) {
         } = en,
         er = s || D ? r.O1p : ei;
     i.useEffect(() => () => el(), [et, el]);
-    let eo = (0, _.A)(n, s, D, P);
+    let eo = (0, f.A)(n, s, D, M);
     t = F ? {
         tooltipType: "green_void_do_not_use",
         tooltipText: I.intl.string(I.t["29gnR4"]),
@@ -99,20 +99,20 @@ function D(e) {
     let ed = $ && q && J,
         ec = et ? d.A.colors.ICON_VOICE_MUTED : "currentColor",
         eu = i.useCallback(() => {
-            B(), Y && x.N(g.v.MUTE_TUTORIAL)
+            B(), Y && p.N(_.v.MUTE_TUTORIAL)
         }, [B, Y]);
-    return (0, a.jsxs)(h.f5, {
+    return (0, a.jsxs)(x.f5, {
         value: ea,
-        children: [(0, a.jsx)(u.YNO, {
+        children: [(0, a.jsx)(m.YNO, {
             targetElementRef: ee,
             renderPopout: e => {
                 let {
                     closePopout: t
                 } = e;
-                return K(), (0, a.jsx)(h.f5, {
+                return K(), (0, a.jsx)(x.f5, {
                     value: ea,
-                    children: (0, a.jsx)(f.A, {
-                        onInteraction: (0, v.s)("AudioDeviceMenu", m.A.ACCOUNT),
+                    children: (0, a.jsx)(v.A, {
+                        onInteraction: (0, b.s)("AudioDeviceMenu", h.A.ACCOUNT),
                         onClose: t,
                         maybeRenderPTTCheckbox: !0,
                         renderInputProfiles: Z.length > 0,
@@ -125,7 +125,7 @@ function D(e) {
             },
             position: "top",
             align: "left",
-            animation: u.YNO.Animation.FADE,
+            animation: m.YNO.Animation.FADE,
             spacing: 4,
             children: (e, n) => {
                 let {
@@ -143,13 +143,13 @@ function D(e) {
                         "aria-checked": et,
                         "aria-label": I.intl.string(I.t.w4m945),
                         className: O.eT,
-                        disabled: P,
+                        disabled: M,
                         icon: (0, a.jsx)(er, {
                             size: "custom",
                             width: 20,
                             height: 20,
                             color: ec,
-                            className: M
+                            className: P
                         }),
                         onClick: eu,
                         onContextMenu: i,
@@ -175,7 +175,7 @@ function D(e) {
                         className: l()(O.UT, {
                             [O.q6]: s
                         }),
-                        disabled: P,
+                        disabled: M,
                         icon: (0, a.jsx)(o, {
                             className: O.$$,
                             size: "custom",
@@ -201,7 +201,7 @@ function D(e) {
                     })]
                 })
             }
-        }), (0, a.jsx)(c.AM, {
+        }), (0, a.jsx)(u.AM, {
             targetElementRef: ee,
             shouldShow: Y,
             graphic: {
@@ -209,7 +209,7 @@ function D(e) {
                 src: w.A
             },
             onRequestClose: () => {
-                x.N(g.v.MUTE_TUTORIAL)
+                p.N(_.v.MUTE_TUTORIAL)
             },
             position: "top",
             title: I.intl.string(k.default.VG4zAf),

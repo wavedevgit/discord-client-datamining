@@ -22,10 +22,10 @@ function m(e) {
     } = e, a = (0, o.bG)([u.A], () => u.A.getSelectedConversation(n.id)), m = (0, o.bG)([u.A], () => u.A.getSelectedConversationColor(n.id));
     if (null == a) return null;
     let A = null != t.content,
-        p = null != m ? s()(m).alpha(1).css() : void 0;
+        g = null != m ? s()(m).alpha(1).css() : void 0;
     return (0, i.jsx)("div", {
-        style: null != p ? {
-            "--conversation-color": p
+        style: null != g ? {
+            "--conversation-color": g
         } : void 0,
         children: (0, i.jsx)(d.A, {
             className: r()(h.yF, A ? h.AC : h.xR),

@@ -3,13 +3,13 @@ s.d(e, {
     q: () => o,
     r: () => n
 });
-var i = s(128377),
-    r = s(978862);
+var r = s(128377),
+    i = s(978862);
 
 function n() {
-    return (0, r.B)("defaultCurrentScope", () => new i.H)
+    return (0, i.B)("defaultCurrentScope", () => new r.H)
 }
 
 function o() {
-    return (0, r.B)("defaultIsolationScope", () => new i.H)
+    return (0, i.B)("defaultIsolationScope", () => new r.H)
 }

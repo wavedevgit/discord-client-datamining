@@ -15,20 +15,20 @@ var i = n(627968),
     h = n(447031),
     m = n(878549),
     A = n(969151),
-    p = n(550151),
-    g = n(902439),
+    g = n(550151),
+    p = n(902439),
     f = n(283488),
     _ = n(732637),
     E = n(315206),
-    x = n(104171),
-    C = n(594007),
+    C = n(104171),
+    x = n(594007),
     S = n(227042),
     I = n(793574),
     T = n(688810),
-    v = n(698141),
-    N = n(429913),
+    N = n(698141),
+    b = n(429913),
     y = n(87001),
-    b = n(961350),
+    v = n(961350),
     j = n(186111),
     R = n(287809),
     M = n(403362),
@@ -44,13 +44,13 @@ function w(e) {
         channelId: l,
         users: s
     } = e, a = t ?? c._3J.SIZE_32, r = (0, c.FT9)(a);
-    return (0, i.jsx)(x.Ay, {
+    return (0, i.jsx)(C.Ay, {
         size: r,
         guildId: n,
         users: s,
         max: 4,
         renderUser: e => {
-            if (null == e || e === x.mt) return null;
+            if (null == e || e === C.mt) return null;
             let t = D.Ay.getName(n, l, e);
             return (0, i.jsx)(o.m_, {
                 text: t,
@@ -70,26 +70,26 @@ function k(e) {
         application: n,
         channel: s,
         width: o
-    } = e, A = o > 400 ? 2 : +(o > 300), [g] = o > 400 ? [c._3J.SIZE_56, 56] : o > 300 ? [c._3J.SIZE_32, 32] : [c._3J.SIZE_24, 24], f = (0, r.yK)([R.default, b.default], () => Array.from(t).map(e => (0, m.S)(e, b.default) ? null : R.default.getUser(e.userId)).filter(M.Vq)), _ = (0, r.bG)([u.Ay], () => u.Ay.getEmbeddedActivitiesForChannel(s.id).find(e => e.applicationId === n.id) ?? u.Ay.getEmbeddedActivitiesForStartingChannel(s.id).find(e => e.applicationId === n.id)), {
+    } = e, A = o > 400 ? 2 : +(o > 300), [p] = o > 400 ? [c._3J.SIZE_56, 56] : o > 300 ? [c._3J.SIZE_32, 32] : [c._3J.SIZE_24, 24], f = (0, r.yK)([R.default, v.default], () => Array.from(t).map(e => (0, m.S)(e, v.default) ? null : R.default.getUser(e.userId)).filter(M.Vq)), _ = (0, r.bG)([u.Ay], () => u.Ay.getEmbeddedActivitiesForChannel(s.id).find(e => e.applicationId === n.id) ?? u.Ay.getEmbeddedActivitiesForStartingChannel(s.id).find(e => e.applicationId === n.id)), {
         analyticsLocations: E
-    } = (0, T.Ay)(), x = (0, d.p)(), C = D.Ay.getName(s.getGuildId(), s.id, f?.[0]), S = (0, p.vG)({
+    } = (0, T.Ay)(), C = (0, d.p)(), x = D.Ay.getName(s.getGuildId(), s.id, f?.[0]), S = (0, g.vG)({
         userId: R.default.getCurrentUser()?.id,
         channelId: s.id,
         application: n
-    }) === p.Gy.CAN_JOIN, I = s.getGuildId() ?? void 0, N = l.useId(), y = n.id, j = l.useMemo(() => ({
+    }) === g.Gy.CAN_JOIN, I = s.getGuildId() ?? void 0, b = l.useId(), y = n.id, j = l.useMemo(() => ({
         channel: s,
         type: "channel"
     }), [s]), {
         submitting: P
-    } = (0, v.A)({
+    } = (0, N.A)({
         applicationId: y,
         context: j,
-        launchingComponentId: N
+        launchingComponentId: b
     });
     return (0, i.jsxs)("div", {
         className: L.Yi,
         children: [(0, i.jsx)(w, {
-            avatarSize: g,
+            avatarSize: p,
             guildId: I,
             channelId: s.id,
             users: f
@@ -100,10 +100,10 @@ function k(e) {
             }),
             variant: "text-sm/normal",
             children: f.length > 1 ? O.intl.formatToPlainString(O.t.cpe6CK, {
-                username: C,
+                username: x,
                 count: f.length - 1
             }) : O.intl.formatToPlainString(O.t["7Uuia2"], {
-                username: C
+                username: x
             })
         }), (0, i.jsx)(c.Text, {
             className: a()(L.wx, {
@@ -120,9 +120,9 @@ function k(e) {
                     e.stopPropagation(), null != _ && (0, h.A)({
                         applicationId: _.applicationId,
                         activityChannelId: s.id,
-                        locationObject: x.location,
+                        locationObject: C.location,
                         analyticsLocations: E,
-                        componentId: N
+                        componentId: b
                     })
                 },
                 loading: P,
@@ -144,38 +144,38 @@ function U(e) {
         analyticsLocations: c
     } = (0, T.Ay)(I.A.ACTIVITY_TILE), {
         applicationId: d
-    } = t, u = (0, g.A)(), h = null != u && (0, A.H)(u.location) === o.id && u.applicationId === d, [m] = (0, N.A)([d]), {
-        url: p
+    } = t, u = (0, p.A)(), h = null != u && (0, A.H)(u.location) === o.id && u.applicationId === d, [m] = (0, b.A)([d]), {
+        url: g
     } = (0, f.A)({
         applicationId: d,
         names: P,
         size: 1024
-    }), x = !s && h, v = !h, b = !h && !s, R = (0, r.bG)([j.A, y.A], () => (0, S.A)({
+    }), C = !s && h, N = !h, v = !h && !s, R = (0, r.bG)([j.A, y.A], () => (0, S.A)({
         LayerStore: j.A,
         PopoutWindowStore: y.A
     }));
     return l.useEffect(() => {
-        if (x && null != u && !R) {
-            let e = (0, C.A)(u.location.id, u.applicationId);
+        if (C && null != u && !R) {
+            let e = (0, x.A)(u.location.id, u.applicationId);
             (0, E.cK)(e)
         }
-    }, [x, u, R]), (0, i.jsx)(T.f5, {
+    }, [C, u, R]), (0, i.jsx)(T.f5, {
         value: c,
         children: (0, i.jsxs)("div", {
             className: L.kL,
-            children: [x && null != u && (0, i.jsx)(_.A, {
+            children: [C && null != u && (0, i.jsx)(_.A, {
                 className: L.pU,
-                embedId: (0, C.A)(u.location.id, d)
-            }), v && null != m && null != p && "" !== p ? (0, i.jsx)("img", {
+                embedId: (0, x.A)(u.location.id, d)
+            }), N && null != m && null != g && "" !== g ? (0, i.jsx)("img", {
                 className: L.j0,
                 alt: m.name,
-                src: p
-            }) : null, b && null != m && (0, i.jsx)(k, {
+                src: g
+            }) : null, v && null != m && (0, i.jsx)(k, {
                 width: n,
                 channel: o,
                 participants: t.participants,
                 application: m
-            }), a || v ? null : (0, i.jsx)("div", {
+            }), a || N ? null : (0, i.jsx)("div", {
                 className: L.OB
             })]
         })

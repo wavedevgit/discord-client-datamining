@@ -14,8 +14,8 @@ var i = n(627968),
     u = n(47167),
     h = n(742589),
     p = n(353428),
-    _ = n(95701),
-    f = n(470710),
+    f = n(95701),
+    _ = n(470710),
     A = n(734057),
     g = n(71393),
     m = n(994500),
@@ -74,7 +74,7 @@ class C extends s.Component {
             userIsInChannelCall: s,
             isBlocked: a
         } = this.props;
-        if (!(0, _.Gw)(t.type)) return null;
+        if (!(0, f.Gw)(t.type)) return null;
         let l = o._jp,
             r = !1;
         return n ? s ? (e = v.intl.string(v.t["4ry6yi"]), l = o.zWQ) : e = v.intl.string(v.t["0D/6Rz"]) : a ? (e = v.intl.string(v.t.PHzjvX), r = !0) : e = v.intl.string(v.t.focH1t), (0, i.jsx)(h.A.Icon, {
@@ -114,11 +114,11 @@ class C extends s.Component {
             onMouseDown: d,
             onContextMenu: c,
             isPreviewingInGame: u,
-            disableDragIndicator: _
+            disableDragIndicator: f
         } = this.props, {
-            showOpacitySlider: f
+            showOpacitySlider: _
         } = this.state;
-        return f && !n ? (0, i.jsxs)(y.Ay.Bar, {
+        return _ && !n ? (0, i.jsxs)(y.Ay.Bar, {
             className: S.dl,
             children: [(0, i.jsx)(E.A, {}), (0, i.jsx)(h.A.Icon, {
                 icon: o.PGe,
@@ -136,7 +136,7 @@ class C extends s.Component {
                     channelId: s.id,
                     toolbar: this.renderWidgetButtons(),
                     transparent: !0,
-                    children: [u || n || _ ? null : (0, i.jsx)(o.WP0, {
+                    children: [u || n || f ? null : (0, i.jsx)(o.WP0, {
                         size: "custom",
                         color: "currentColor",
                         className: l()(S.co, t),
@@ -159,7 +159,7 @@ function I(e) {
     } = e, s = (0, r.bG)([x.A, A.A], () => {
         let e = x.A.getVoiceChannelId();
         return A.A.getChannel(e)
-    }), a = (0, r.bG)([g.A], () => g.A.getGuild(t.guild_id)), l = (0, r.bG)([f.A], () => f.A.isCallActive(t.id)), o = (0, u.Ay)(t), d = (0, r.bG)([m.A], () => !!t.isDM() && null != t.getRecipientId() && m.A.isBlocked(t.getRecipientId()));
+    }), a = (0, r.bG)([g.A], () => g.A.getGuild(t.guild_id)), l = (0, r.bG)([_.A], () => _.A.isCallActive(t.id)), o = (0, u.Ay)(t), d = (0, r.bG)([m.A], () => !!t.isDM() && null != t.getRecipientId() && m.A.isBlocked(t.getRecipientId()));
     return (0, i.jsx)(C, {
         channel: t,
         channelName: o,

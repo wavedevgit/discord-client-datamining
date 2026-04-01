@@ -18,7 +18,7 @@ var i = n(627968),
     A = n(276e3);
 
 function x(e) {
-    let t, n, x, E, f, S, {
+    let t, n, x, f, E, S, {
             selectedChannelId: I
         } = e,
         T = (0, l.bG)([d.A], () => d.A.getChannel(I), [I]),
@@ -28,7 +28,7 @@ function x(e) {
             let n = e.getGuildId();
             return null == n ? null : t.getGuild(n) ?? null
         })(T, u.A), [T]);
-    return (t = T?.id ?? null, n = s.useRef(new Set), x = (0, l.bG)([c.A], () => null != t ? c.A.getMessages(t) : null, [t]), E = (0, l.bG)([h.A], () => h.A.can(p.xBc.READ_MESSAGE_HISTORY, T), [T]), f = x?.first() ?? null, S = null != T && null == f && null != x && !x.loadingMore && !x.ready && !x.hasFetched && E, s.useEffect(() => {
+    return (t = T?.id ?? null, n = s.useRef(new Set), x = (0, l.bG)([c.A], () => null != t ? c.A.getMessages(t) : null, [t]), f = (0, l.bG)([h.A], () => h.A.can(p.xBc.READ_MESSAGE_HISTORY, T), [T]), E = x?.first() ?? null, S = null != T && null == E && null != x && !x.loadingMore && !x.ready && !x.hasFetched && f, s.useEffect(() => {
         null == t || !n.current.has(t) && S && (n.current.add(t), r.A.fetchMessages({
             channelId: t,
             limit: 50
