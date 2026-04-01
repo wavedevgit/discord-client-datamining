@@ -9,17 +9,17 @@ var n = s(627968),
     l = s.n(r),
     i = s(397927),
     o = s(328006),
-    c = s(334840),
-    d = s(48736),
+    d = s(334840),
+    c = s(48736),
     u = s(610042),
-    _ = s(29086),
-    m = s(203656),
+    m = s(29086),
+    _ = s(203656),
     x = s(525104),
     g = s(176201),
     b = s(178758),
     f = s(652215),
-    p = s(743981),
-    h = s(985018),
+    h = s(743981),
+    p = s(985018),
     j = s(429817),
     k = s(28578);
 
@@ -44,14 +44,14 @@ function C() {
         className: j.kL,
         children: [(0, n.jsx)("div", {
             className: j.zC,
-            children: (0, n.jsx)(_.V, {
+            children: (0, n.jsx)(m.V, {
                 avatar: o.A,
                 username: "Cherry",
                 usernameStyle: s,
                 usernameClassName: l()(r, k.q),
-                message: h.intl.string(h.t["6OSasb"])
+                message: p.intl.string(p.t["6OSasb"])
             })
-        }), (0, n.jsx)(d.default, {
+        }), (0, n.jsx)(c.default, {
             defaultColor: f.TGz,
             colors: b.Oz,
             value: e.primary_color,
@@ -73,7 +73,7 @@ function C() {
 function v(e) {
     let {
         guildId: t
-    } = e, [s, r] = a.useState(p.bl.HEART), l = (0, x.A)(), i = a.useMemo(() => ({
+    } = e, [s, r] = a.useState(h.bl.HEART), l = (0, x.A)(), i = a.useMemo(() => ({
         unlockedBadges: l.unlockedBadges.slice(0, 10),
         lockedBadges: []
     }), [l]);
@@ -81,14 +81,14 @@ function v(e) {
         className: j.kL,
         children: [(0, n.jsx)("div", {
             className: j.zC,
-            children: (0, n.jsx)(_.V, {
-                avatar: c.A,
+            children: (0, n.jsx)(m.V, {
+                avatar: d.A,
                 username: "Roka",
                 usernameStyle: {
                     color: "var(--brand-400)"
                 },
-                message: h.intl.string(h.t["6OSasb"]),
-                decorations: (0, n.jsx)(m.M, {
+                message: p.intl.string(p.t["6OSasb"]),
+                decorations: (0, n.jsx)(_.M, {
                     guildId: t,
                     tag: "GGEZ",
                     badge: s

@@ -769,8 +769,8 @@ let eB = e => {
                         shouldCheckoutWithOrbs: v,
                         tab: j,
                         activeBundleSlide: Y,
-                        giftRecipient: C,
-                        giftingOrigin: N
+                        giftRecipient: C?.id !== I.id ? C : void 0,
+                        giftingOrigin: C?.id !== I.id ? N : void 0
                     }), (0, r.jsxs)("div", {
                         className: s()(eL.i1, y.skuId === u.j.PREMIUM_TIER_2_3_DAY ? eL.bF : y.type === d.R.AVATAR_DECORATION ? eL.Jq : eL.eF),
                         style: {
