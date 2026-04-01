@@ -19,9 +19,9 @@ let _ = function(e) {
         hasAppliedGuildBoosts: t,
         hasBoostPerk: n,
         hasGuildAffinitiesOrInGuild: _,
-        subscriptionIsPausedOrPausePending: A
+        subscriptionIsPausedOrPausePending: x
     } = e, {
-        subtitle: x,
+        subtitle: A,
         flavor: h
     } = function(e) {
         let {
@@ -46,25 +46,25 @@ let _ = function(e) {
         };
         let g = u.hd[u.gD.PREMIUM_MONTH_GUILD],
             _ = a.Ay.getDefaultPrice(g.id, n),
-            A = (0, r.CE)((0, r.$g)(_.amount, _.currency), g.interval, g.intervalCount);
+            x = (0, r.CE)((0, r.$g)(_.amount, _.currency), g.interval, g.intervalCount);
         return {
             subtitle: n ? m.intl.string(m.t.bhPzXR) : m.intl.string(m.t.Zs9h9Z),
             flavor: m.intl.formatToPlainString(m.t.PGgTdA, {
-                monthlyGuildBoostPrice: A
+                monthlyGuildBoostPrice: x
             })
         }
     }({
         hasAppliedGuildBoosts: t,
         hasBoostPerk: n,
         hasGuildAffinitiesOrInGuild: _,
-        subscriptionIsPausedOrPausePending: A
+        subscriptionIsPausedOrPausePending: x
     });
     return (0, i.jsxs)("div", {
         className: g.i,
         children: [(0, i.jsx)(s.Heading, {
             variant: "heading-lg/bold",
             className: g.V,
-            children: x
+            children: A
         }), null != h && (0, i.jsx)(s.Text, {
             variant: "text-sm/normal",
             children: h

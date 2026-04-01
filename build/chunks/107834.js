@@ -15,20 +15,20 @@ var s = n(503698),
     m = n(742589),
     g = n(65470),
     _ = n(400669),
-    A = n(909536),
-    x = n(287809),
+    x = n(909536),
+    A = n(287809),
     h = n(927578),
     p = n(652215),
     T = n(788868),
     f = n(985018),
     S = n(670324);
-let E = a.Ay.connectStores([x.default], () => ({
-    user: x.default.getCurrentUser()
+let E = a.Ay.connectStores([A.default], () => ({
+    user: A.default.getCurrentUser()
 }))((0, c.A)(e => {
     let {
         isAuthenticated: t,
         user: n
-    } = e, s = (0, h.TW)(n, T.PremiumTypes.TIER_2), a = (0, u.Ay)(), c = (0, A.Gh)("nitro_home_header");
+    } = e, s = (0, h.TW)(n, T.PremiumTypes.TIER_2), a = (0, u.Ay)(), c = (0, x.Gh)("nitro_home_header");
     return (0, i.jsx)(d.A, {
         section: p.JJy.NAVIGATION,
         children: (0, i.jsx)(o.NPJ, {

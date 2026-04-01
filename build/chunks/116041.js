@@ -14,8 +14,8 @@ var i = n(627968),
     m = n(624826),
     g = n(253932),
     _ = n(127870),
-    A = n(828578),
-    x = n(985018);
+    x = n(828578),
+    A = n(985018);
 
 function h() {
     let {
@@ -24,7 +24,7 @@ function h() {
     } = (0, l.cf)([u.A], () => ({
         canSubmit: u.A.canSubmit(),
         errors: u.A.getErrors()
-    })), [n, h] = s.useState(!1), p = s.useMemo(() => Object.keys(t ?? {}).length > 0 ? x.intl.string(x.t["84MExs"]) : null, [t]), T = s.useCallback(async () => {
+    })), [n, h] = s.useState(!1), p = s.useMemo(() => Object.keys(t ?? {}).length > 0 ? A.intl.string(A.t["84MExs"]) : null, [t]), T = s.useCallback(async () => {
         h(!0);
         let e = u.A.getPendingChanges(),
             t = (0, d.Sk)(e),
@@ -40,7 +40,7 @@ function h() {
                     avatarId: t.avatarId,
                     avatarAssetOrigin: e.pendingAvatar?.assetOrigin
                 }), (0, r.pZ)()
-            } else n?.body?.username != null && (0, A.E)()
+            } else n?.body?.username != null && (0, x.E)()
         }
         if (Object.keys(n).length > 0) {
             let e = await (0, c.gi)(n);

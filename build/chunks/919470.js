@@ -9,8 +9,8 @@ var a = l(627968),
     o = l(397927),
     s = l(301679),
     u = l(149757),
-    c = l(788868),
-    d = l(985018);
+    d = l(788868),
+    c = l(985018);
 let p = {
         bronze: {
             type: "custom",
@@ -63,30 +63,30 @@ let p = {
             showProgress: x,
             progressCircleText: b,
             progressCirclePercent: y,
-            progressCircleUrgency: f,
-            delay: g,
+            progressCircleUrgency: g,
+            delay: f,
             size: v,
-            gradientColor: E,
-            estimatedTooltipHeight: _
+            gradientColor: _,
+            estimatedTooltipHeight: E
         } = e, C = n.useRef(null), j = n.useRef(null), S = n.useMemo(() => ({
-            bronze: c.Ac.PREMIUM_TENURE_1_MONTH,
-            silver: c.Ac.PREMIUM_TENURE_3_MONTH,
-            gold: c.Ac.PREMIUM_TENURE_6_MONTH,
-            platinum: c.Ac.PREMIUM_TENURE_12_MONTH,
-            diamond: c.Ac.PREMIUM_TENURE_24_MONTH,
-            emerald: c.Ac.PREMIUM_TENURE_36_MONTH,
-            ruby: c.Ac.PREMIUM_TENURE_60_MONTH,
-            opal: c.Ac.PREMIUM_TENURE_72_MONTH
+            bronze: d.Ac.PREMIUM_TENURE_1_MONTH,
+            silver: d.Ac.PREMIUM_TENURE_3_MONTH,
+            gold: d.Ac.PREMIUM_TENURE_6_MONTH,
+            platinum: d.Ac.PREMIUM_TENURE_12_MONTH,
+            diamond: d.Ac.PREMIUM_TENURE_24_MONTH,
+            emerald: d.Ac.PREMIUM_TENURE_36_MONTH,
+            ruby: d.Ac.PREMIUM_TENURE_60_MONTH,
+            opal: d.Ac.PREMIUM_TENURE_72_MONTH
         })[h], [h]), T = null != S ? (0, u.I)(S).standard : null, A = n.useMemo(() => {
             if (null == S) return "";
-            let e = c.VD[S];
-            return (d.intl.string(d.t.lG6a5x) + " " + d.intl.string(e.nameUnformatted)).toLocaleUpperCase()
+            let e = d.VD[S];
+            return (c.intl.string(c.t.lG6a5x) + " " + c.intl.string(e.nameUnformatted)).toLocaleUpperCase()
         }, [S]), P = n.useMemo(() => {
             if (!r || null == T) return;
             let e = x ? {
                 progressCircleText: b,
                 progressCirclePercent: y,
-                progressCircleUrgency: f
+                progressCircleUrgency: g
             } : {};
             return {
                 type: "dynamic",
@@ -98,7 +98,7 @@ let p = {
                     ...e
                 }
             }
-        }, [r, T, A, x, b, y, f]), k = {
+        }, [r, T, A, x, b, y, g]), k = {
             title: t,
             body: l,
             graphic: P,
@@ -108,10 +108,10 @@ let p = {
                     variant: "primary"
                 }]
             }, [m]),
-            delay: g,
+            delay: f,
             size: v,
-            gradientColor: n.useMemo(() => "string" == typeof E && E in p ? p[E] : E, [E]),
-            estimatedTooltipHeight: _
+            gradientColor: n.useMemo(() => "string" == typeof _ && _ in p ? p[_] : _, [_]),
+            estimatedTooltipHeight: E
         };
         return (0, a.jsxs)("div", {
             children: [(0, a.jsx)(o.Text, {

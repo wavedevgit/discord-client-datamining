@@ -14,8 +14,8 @@ var i = n(627968),
     m = n(227542),
     g = n(264124),
     _ = n(850060),
-    A = n(886854),
-    x = n(729770),
+    x = n(886854),
+    A = n(729770),
     h = n(274835),
     p = n(505112),
     T = n(163944),
@@ -25,14 +25,14 @@ var i = n(627968),
     b = n(413336),
     C = n(985018);
 let N = (0, o.t_)(c.X.DISPLAY_PANEL, {
-        initialize: A.du,
+        initialize: x.du,
         useTitle: () => C.intl.string(C.t.DVatCa),
         buildLayout: () => [E.K, T.S, f.X, p.S, S.f, (0, b.$)(!0), h.J]
     }),
-    v = [...A.j0, {
+    v = [...x.j0, {
         badgeType: d.Xi.STRONGLY_DISCOURAGED_CUSTOM,
         dismissibleContent: a.M.FAVORITES_GUILD_NEW_BADGE,
-        StronglyDiscouragedCustomComponent: x.L
+        StronglyDiscouragedCustomComponent: A.L
     }],
     I = (0, o.i4)(c.X.DISPLAY_SIDEBAR_ITEM, {
         useTitle: () => C.intl.string(C.t.DVatCa),

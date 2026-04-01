@@ -19,8 +19,8 @@ function A(e) {
         onClose: t
     } = e, {
         analyticsLocations: A
-    } = (0, a.Ay)(), p = (0, o.j)("UserProfileGiftButton"), {
-        openGiftModal: x
+    } = (0, a.Ay)(), x = (0, o.j)("UserProfileGiftButton"), {
+        openGiftModal: p
     } = (0, r.$)({
         giftRecipient: l,
         analyticsLocations: A,
@@ -32,9 +32,9 @@ function A(e) {
         },
         location: "user-profile-gift-button"
     }), g = n.useCallback(() => {
-        x(), t?.()
-    }, [x, t]);
-    return p ? (0, i.jsx)(d.q3, {
+        p(), t?.()
+    }, [p, t]);
+    return x ? (0, i.jsx)(d.q3, {
         action: c.pt.GIFT,
         icon: s.okO,
         tooltipText: m.intl.string(m.t.PEjaCx),

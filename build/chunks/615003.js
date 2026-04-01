@@ -4,8 +4,8 @@ n.d(t, {
     o: () => X
 }), n(321073), n(323874), n(14289), n(35956);
 var i = n(627968),
-    l = n(64700),
-    a = n(837381),
+    a = n(64700),
+    l = n(837381),
     r = n(877624),
     s = n(311907),
     o = n(554146),
@@ -53,7 +53,7 @@ var i = n(627968),
 let Q = e => {
         let {
             selected: t
-        } = e, n = (0, s.bG)([E.default], () => E.default.getCurrentUser()), i = (0, s.bG)([I.A], () => I.A.getPremiumTypeSubscription()), l = (0, P.V)(), a = (0, R.O)(), r = (0, N.cg)(), o = (0, F.H)(), d = (0, C.Of)(n, i), c = (0, s.bG)([T.A], () => T.A.getCreatedAtOverride()), u = t || null != l || null != a || r || null != o || d, A = null != c ? c : n?.createdAt;
+        } = e, n = (0, s.bG)([E.default], () => E.default.getCurrentUser()), i = (0, s.bG)([I.A], () => I.A.getPremiumTypeSubscription()), a = (0, P.V)(), l = (0, R.O)(), r = (0, N.cg)(), o = (0, F.H)(), d = (0, C.Of)(n, i), c = (0, s.bG)([T.A], () => T.A.getCreatedAtOverride()), u = t || null != a || null != l || r || null != o || d, A = null != c ? c : n?.createdAt;
         return u || null != n && null != A && Date.now() - A.getTime() > 12096e5
     },
     X = e => {
@@ -67,8 +67,8 @@ let Q = e => {
             et = (0, s.bG)([E.default], () => E.default.getCurrentUser()),
             en = (0, s.bG)([I.A], () => I.A.getPremiumTypeSubscription()),
             ei = (0, C.Of)(et, en),
-            el = (0, C.YE)(et, K.PremiumTypes.TIER_2),
-            ea = (0, a.rm)("nitro"),
+            ea = (0, C.YE)(et, K.PremiumTypes.TIER_2),
+            el = (0, l.rm)("nitro"),
             er = (0, P.V)(),
             es = (0, R.O)(),
             eo = (0, L.p)(),
@@ -102,15 +102,15 @@ let Q = e => {
             ev = eg?.last_granted_reward,
             eb = eg?.last_granted_reward_amount,
             ey = (0, _.mB)(o.M.PREMIUM_ORBS_REWARDS_INTRO_POPOVER),
-            eO = el && eE && null != ev && null != eb && !ey,
-            eL = el && eE && !eO && null != eg,
+            eO = ea && eE && null != ev && null != eb && !ey,
+            eL = ea && eE && !eO && null != eg,
             eR = null != eo && null != en && en.status === q.Dmq.CANCELED,
             {
                 marketingEnabled: eP
             } = (0, M.YS)({
                 location: "NitroTabButton"
             }),
-            eD = eP && el,
+            eD = eP && ea,
             eM = eP && eS,
             {
                 fractionalState: ej,
@@ -130,7 +130,7 @@ let Q = e => {
         let [eF, eY] = (0, m.kn)(eB, void 0, !0);
         eR && eH.push(o.M.CHURN_DISCOUNT_PREMIUM_TAB_COACHMARK), eA && (eT ? eH.push(o.M.PREMIUM_GROUP_POPOVER_UPSELL_V2) : eH.push(o.M.PREMIUM_GROUP_POPOVER)), ex && eH.push(o.M.PREMIUM_ORBS_UPSELL_POPOVER), eL && eH.push(o.M.PREMIUM_ORBS_REWARDS_INTRO_POPOVER), eD && eH.push(o.M.L_3PP_NITRO_TOOLTIP), eM && eH.push(o.M.L_3PP_NON_NITRO_POPOVER);
         let [eW, eK] = (0, m.kn)(eH, void 0, !0), eq = (0, D.c)(r.C.PREMIUM_TAB), ez = (0, D.c)(r.C.PREMIUM_TAB_TOOLTIP), e$ = (0, D.c)(r.C.PREMIUM_TAB_POPOVER), [eQ, eX] = (0, m.Cc)(null != eq && "premiumTab" === eq.properties.properties.oneofKind ? o.M.PREMIUM_TAB_MARKETING_MOMENT_OFFER_BADGE : null, eq?.promotionId ?? "", void 0, !0), [eZ, eJ] = (0, m.Cc)(null != e$ && "premiumTabPopover" === e$.properties.properties.oneofKind ? o.M.PREMIUM_MARKETING_MOMENT_REMINDER_UPSELL : null, e$?.promotionId ?? "", void 0, !0), [e0, e1] = (0, m.Cc)(eO ? o.M.PREMIUM_ORBS_REWARDS_DROP_POPOVER : null, ev ?? "", void 0, !0), e7 = null != ez && "premiumTabTooltip" === ez.properties.properties.oneofKind && eQ === o.M.PREMIUM_TAB_MARKETING_MOMENT_OFFER_BADGE, e6 = eD && eW === o.M.L_3PP_NITRO_TOOLTIP, e9 = eM && eW === o.M.L_3PP_NON_NITRO_POPOVER;
-        if (l.useEffect(() => {
+        if (a.useEffect(() => {
                 !0 === T && (null != eF && eY(z.i.AUTO_DISMISS), null != eW && eK(z.i.AUTO_DISMISS), null != eQ && eX(z.i.AUTO_DISMISS), null != e0 && e1(z.i.AUTO_DISMISS), null != eZ && eJ(z.i.AUTO_DISMISS))
             }, [eY, T, eF, eK, eW, eQ, eX, e0, e1, eZ, eJ]), !Q({
                 selected: T
@@ -223,7 +223,7 @@ let Q = e => {
             route: Z,
             icon: c.tvc,
             text: (0, i.jsx)(d.A, {
-                children: el ? $.intl.string($.t["4gwVVn"]) : $.intl.string($.t.Ipxkog)
+                children: ea ? $.intl.string($.t["4gwVVn"]) : $.intl.string($.t.Ipxkog)
             }),
             locationState: J,
             onClick: () => {
@@ -236,7 +236,7 @@ let Q = e => {
                 e5()
             },
             ...ee,
-            ...ea,
+            ...el,
             children: t
         });
         return (0, i.jsx)(Y.H, {

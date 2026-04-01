@@ -14,8 +14,8 @@ var i = n(627968),
     m = n(128450),
     g = n(652215),
     _ = n(985018),
-    A = n(304119);
-let x = (0, d.Ld)(),
+    x = n(304119);
+let A = (0, d.Ld)(),
     h = (0, u.createChannelRecord)({
         id: "1",
         type: g.rbe.DM
@@ -42,15 +42,15 @@ function T(e) {
         void 0 !== u || E === f || I.current || (b(f), N((0, r.x7)(f)))
     }, [u, f, E]), (0, i.jsxs)(m.A, {
         title: t,
-        titleId: x,
+        titleId: A,
         description: _.intl.string(_.t.Bbw6Ac),
         errors: n,
         disabled: S,
         children: [(0, i.jsx)(o.Ay, {
             "aria-describedby": p,
-            "aria-labelledby": x,
-            className: A.i,
-            innerClassName: A.Z,
+            "aria-labelledby": A,
+            className: x.i,
+            innerClassName: x.Z,
             maxCharacterCount: g.NA2,
             onChange: function(e, t, n) {
                 t !== E && (b(t), N(n), d(t))

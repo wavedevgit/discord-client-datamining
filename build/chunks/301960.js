@@ -185,11 +185,11 @@ function H(e) {
             messageId: n.id,
             interactionData: n.interactionData
         })), [a, n.id, n.interactionData]),
-        w = (0, f.Am)(n),
-        B = w?.type === A.G4.APPLICATION_COMMAND && null != w.target_user ? new p.A(w.target_user) : null,
-        V = w?.type === A.G4.APPLICATION_COMMAND && null != n.messageReference && null != e.renderTargetMessage,
+        B = (0, f.Am)(n),
+        w = B?.type === A.G4.APPLICATION_COMMAND && null != B.target_user ? new p.A(B.target_user) : null,
+        V = B?.type === A.G4.APPLICATION_COMMAND && null != n.messageReference && null != e.renderTargetMessage,
         X = (0, M.d8)(n.interaction?.user, a),
-        q = (0, M.d8)(B, a),
+        q = (0, M.d8)(w, a),
         K = l.useMemo(() => e.compact ? (0, U.A)((0, O.i$)(d()(), "LT")) : null, [e.compact]),
         Y = (0, m.Gp)(a.id),
         W = n.interaction;
@@ -278,11 +278,11 @@ function H(e) {
         }
     }), V && null != e.renderTargetMessage ? t = (0, i.jsxs)(i.Fragment, {
         children: [t, (0, i.jsx)(G, {}), e.renderTargetMessage()]
-    }) : null != B && (t = (0, i.jsxs)(i.Fragment, {
+    }) : null != w && (t = (0, i.jsxs)(i.Fragment, {
         children: [t, (0, i.jsx)(G, {}), (0, i.jsx)(() => {
-            if (null == B) return null;
-            let t = k(e, B, 1, q, e => H(e, B, [T.A.AVATAR]), D),
-                n = b(e, B, 1, q, e => H(e, B));
+            if (null == w) return null;
+            let t = k(e, w, 1, q, e => H(e, w, [T.A.AVATAR]), D),
+                n = b(e, w, 1, q, e => H(e, w));
             return (0, i.jsxs)(l.Fragment, {
                 children: [t, n]
             }, "target")

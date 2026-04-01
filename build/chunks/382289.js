@@ -1,8 +1,8 @@
 /** chunk id: 382289 params = (module,exports,require) **/
 n(321073);
 var i = n(735438),
-    l = n.n(i),
-    a = n(311907),
+    a = n.n(i),
+    l = n(311907),
     r = n(73153),
     s = n(734057),
     o = n(967198),
@@ -17,19 +17,19 @@ function m(e) {
     let t = A[e];
     if (null == t) return;
     let n = d.default.fromTimestamp(Date.now() - 9e5),
-        i = l().findIndex(t, e => d.default.compare(e.id, n) > 0);
+        i = a().findIndex(t, e => d.default.compare(e.id, n) > 0);
     if (-1 === i) A[e] = [];
     else {
         let n = Math.max(i, t.length - 26);
-        A[e] = l().slice(t, n)
+        A[e] = a().slice(t, n)
     }
     h[e] = Date.now()
 }
 
 function p(e, t, n, i) {
     u[e].add(t);
-    let l = h[t];
-    (null == l || l + 3e5 > Date.now()) && m(t), null == A[t] && (A[t] = []), A[t].push({
+    let a = h[t];
+    (null == a || a + 3e5 > Date.now()) && m(t), null == A[t] && (A[t] = []), A[t].push({
         id: n,
         userId: i
     })
@@ -41,7 +41,7 @@ function g(e) {
     } = e;
     delete A[t.id], delete h[t.id]
 }
-class E extends a.Ay.Store {
+class E extends l.Ay.Store {
     initialize() {
         this.waitFor(s.A, o.A)
     }
@@ -71,20 +71,20 @@ new E(r.h, {
         i.forEach(e => {
             m(e), A[e]?.length === 0 && delete A[e]
         });
-        let a = l().chain(Array.from(i)).filter(e => e in A).sortBy(e => -(A[e]?.length ?? 0)).value();
-        u[n] = new Set(a)
+        let l = a().chain(Array.from(i)).filter(e => e in A).sortBy(e => -(A[e]?.length ?? 0)).value();
+        u[n] = new Set(l)
     },
     MESSAGE_CREATE: function(e) {
         let {
             channelId: t,
             message: n,
             optimistic: i,
-            isPushNotification: l
+            isPushNotification: a
         } = e;
-        if (i || l) return !1;
-        let a = s.A.getChannel(t);
-        if (null == a) return !1;
-        let r = a.guild_id;
+        if (i || a) return !1;
+        let l = s.A.getChannel(t);
+        if (null == l) return !1;
+        let r = l.guild_id;
         if (null == r || null == u[r]) return !1;
         p(r, t, n.id, n.author?.id)
     },

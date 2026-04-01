@@ -1,7 +1,7 @@
 /** chunk id: 362442 params = (module,exports,require) **/
 var i = n(311907),
-    l = n(506774),
-    a = n(451988),
+    a = n(506774),
+    l = n(451988),
     r = n(73153),
     s = n(308368),
     o = n(973522),
@@ -18,7 +18,7 @@ var i = n(311907),
 let I = "ActivityTrackingStore",
     f = 30 * u.A.Millis.MINUTE,
     C = 5 * u.A.Millis.MINUTE,
-    T = l.w.get(I) ?? {},
+    T = a.w.get(I) ?? {},
     N = {},
     S = !1;
 
@@ -26,7 +26,7 @@ function x(e) {
     let t = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1];
     t && v(e, !0);
     let n = N[e.applicationId];
-    null != n && (n.stop(), delete N[e.applicationId]), delete T[e.applicationId], l.w.set(I, T)
+    null != n && (n.stop(), delete N[e.applicationId]), delete T[e.applicationId], a.w.set(I, T)
 }
 
 function v(e) {
@@ -51,7 +51,7 @@ function v(e) {
         mediaSessionId: c
     }), e.updatedAt = n;
     let u = N[e.applicationId];
-    null == u && (u = N[e.applicationId] = new a.IX).start(f, () => v(e)), t || (T[e.applicationId] = e, l.w.set(I, T))
+    null == u && (u = N[e.applicationId] = new l.IX).start(f, () => v(e)), t || (T[e.applicationId] = e, a.w.set(I, T))
 }
 
 function b() {
@@ -103,13 +103,13 @@ new O(r.h, {
             token: n
         } = e, i = T[t];
         if (null == i) return !1;
-        i.token = n, l.w.set(I, T)
+        i.token = n, a.w.set(I, T)
     },
     ACTIVITY_UPDATE_FAIL: function(e) {
         let {
             applicationId: t
         } = e, n = T[t];
         if (null == n) return !1;
-        n.token = null, n.updatedAt = null, l.w.set(I, T)
+        n.token = null, n.updatedAt = null, a.w.set(I, T)
     }
 })

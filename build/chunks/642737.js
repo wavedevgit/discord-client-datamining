@@ -1,6 +1,6 @@
 /** chunk id: 642737 params = (module,exports,require) **/
 t.d(l, {
-    A: () => p
+    A: () => x
 }), t(667532);
 var i = t(627968),
     n = t(64700),
@@ -14,13 +14,13 @@ var i = t(627968),
     m = t(401736);
 let A = "MAIN_PROFILE";
 
-function p(e) {
+function x(e) {
     let {
         selectedGuildId: l,
         onChange: t
-    } = e, p = (0, s.bG)([d.Ay], () => d.Ay.getFlattenedGuildIds()), x = (0, s.bG)([o.A], () => o.A.getGuilds()), g = n.useMemo(() => {
-        let e = p.map(e => {
-            let l = x[e];
+    } = e, x = (0, s.bG)([d.Ay], () => d.Ay.getFlattenedGuildIds()), p = (0, s.bG)([o.A], () => o.A.getGuilds()), g = n.useMemo(() => {
+        let e = x.map(e => {
+            let l = p[e];
             return null == l ? null : {
                 id: l.id,
                 label: l.name,
@@ -43,7 +43,7 @@ function p(e) {
                 "aria-hidden": !0
             })
         }), e
-    }, [p, x]), f = n.useCallback(e => {
+    }, [x, p]), f = n.useCallback(e => {
         t(e === A ? null : e)
     }, [t]);
     return (0, i.jsx)(a.ZiE, {

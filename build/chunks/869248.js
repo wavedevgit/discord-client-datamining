@@ -3,8 +3,8 @@ n.d(t, {
     A: () => N
 });
 var i = n(627968),
-    l = n(64700),
-    a = n(311907),
+    a = n(64700),
+    l = n(311907),
     r = n(397927),
     s = n(355622),
     o = n(58736),
@@ -27,9 +27,9 @@ function N(e) {
     let {
         channel: t,
         baseChannelId: n
-    } = e, N = (0, E.Ay)(t), S = (0, A.k)(), x = (0, A.r)(), v = (0, a.bG)([c.A], () => c.A.isMessageRequest(t.id)), b = (0, a.bG)([u.A], () => u.A.isSpam(t.id)), y = (0, _.D)(t.id, t.getRecipientId()), O = l.useCallback(() => {
+    } = e, N = (0, E.Ay)(t), S = (0, A.k)(), x = (0, A.r)(), v = (0, l.bG)([c.A], () => c.A.isMessageRequest(t.id)), b = (0, l.bG)([u.A], () => u.A.isSpam(t.id)), y = (0, _.D)(t.id, t.getRecipientId()), O = a.useCallback(() => {
         p.A.closeChannelSidebar(g.fe), v && S && (0, m.iN)(t.id), b && x && (0, m.iN)(t.id)
-    }, [t.id, b, x, v, S]), L = l.useCallback(() => {
+    }, [t.id, b, x, v, S]), L = a.useCallback(() => {
         (0, r.showToast)((0, r.createToast)(f.intl.string(f.t.pIQ3h4), r.ToastType.FAILURE))
     }, []), {
         markAsNotSpam: R

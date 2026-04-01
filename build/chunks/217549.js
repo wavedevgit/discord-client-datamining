@@ -3,8 +3,8 @@ n.d(t, {
     A: () => y
 }), n(321073);
 var i = n(627968),
-    l = n(64700),
-    a = n(311907),
+    a = n(64700),
+    l = n(311907),
     r = n(397927),
     s = n(308368),
     o = n(956793),
@@ -34,12 +34,12 @@ function y(e) {
     } = e, n = t.length > 1, y = function(e) {
         let {
             currentActivities: t
-        } = e, n = (0, a.bG)([E.A], () => E.A.getAccounts().some(e => e.type === d.A.get(x.fg2.XBOX).type)), l = t.filter(e => {
+        } = e, n = (0, l.bG)([E.A], () => E.A.getAccounts().some(e => e.type === d.A.get(x.fg2.XBOX).type)), a = t.filter(e => {
             let {
                 activity: t
             } = e;
             return (0, h.A)(t)
-        }), s = l.length > 0, o = l.some(e => {
+        }), s = a.length > 0, o = a.some(e => {
             let {
                 activity: t
             } = e;
@@ -55,15 +55,15 @@ function y(e) {
     }(e), O = function(e) {
         let {
             currentActivities: t
-        } = e, n = l.useContext(T.AnalyticsContext);
-        return (0, a.yK)([_.Ay, f.A, m.A, C.A, I.A], () => t.filter(e => !(0, A.A)(e.activity)).map(e => {
+        } = e, n = a.useContext(T.AnalyticsContext);
+        return (0, l.yK)([_.Ay, f.A, m.A, C.A, I.A], () => t.filter(e => !(0, A.A)(e.activity)).map(e => {
             let {
                 activity: t,
                 game: i
-            } = e, l = f.A.getActiveLibraryApplication(i.id);
+            } = e, a = f.A.getActiveLibraryApplication(i.id);
             return {
                 ...e,
-                libraryApplication: l,
+                libraryApplication: a,
                 canJoin: null != t && (0, c.A)(t, x.jUm.JOIN) && t.type === x.$pd.PLAYING,
                 canPlay: (0, N.A)({
                     LibraryApplicationStore: f.A,
@@ -71,7 +71,7 @@ function y(e) {
                     DispatchApplicationStore: C.A,
                     ConnectedAppsStore: I.A,
                     applicationId: i.id,
-                    branchId: null != l ? l.branchId : null
+                    branchId: null != a ? a.branchId : null
                 }),
                 isLaunching: m.A.launchingGames.has(i.id),
                 isRunning: _.Ay.getRunningVerifiedApplicationIds().includes(i.id),
@@ -86,32 +86,32 @@ function y(e) {
         null != t && null != t.type && L.push(function(e, t) {
             let {
                 canJoin: n,
-                activity: l,
-                activityUser: a
+                activity: a,
+                activityUser: l
             } = e;
-            if (!n || null == l) return null;
+            if (!n || null == a) return null;
             async function d() {
-                if (null == l) return;
+                if (null == a) return;
                 let e = await s.A.sendActivityInviteUser({
                     type: x.xL.JOIN_REQUEST,
-                    userId: a.id,
-                    activity: l,
+                    userId: l.id,
+                    activity: a,
                     location: x.ThZ.USER_ACTIVITY_ACTIONS
                 });
                 null != e && o.default.selectPrivateChannel(e.id)
             }
             return (0, i.jsx)(r.Drp, {
-                id: `join-${l.session_id}`,
+                id: `join-${a.session_id}`,
                 label: t ? v.intl.formatToPlainString(v.t.wFAvxM, {
-                    name: a.toString()
+                    name: l.toString()
                 }) : v.intl.string(v.t.OKsSCR),
                 action: d
             })
         }(e, n), function(e, t) {
             let {
                 activity: n,
-                game: l,
-                libraryApplication: a,
+                game: a,
+                libraryApplication: l,
                 location: s,
                 canPlay: o,
                 isRunning: d,
@@ -119,14 +119,14 @@ function y(e) {
             } = e;
             if (!o || null == n) return null;
             let u = d ? v.intl.formatToPlainString(v.t["gBme/4"], {
-                name: l.name
+                name: a.name
             }) : c ? v.intl.formatToPlainString(v.t.WtSQwG, {
-                name: l.name
+                name: a.name
             }) : void 0;
             return (0, i.jsx)(r.Drp, {
                 id: `play-${n.session_id}`,
                 action: function() {
-                    (0, S.playApplication)(l.id, a, {
+                    (0, S.playApplication)(a.id, l, {
                         analyticsParams: {
                             location: {
                                 ...s,
@@ -136,7 +136,7 @@ function y(e) {
                     })
                 },
                 label: t ? v.intl.formatToPlainString(v.t.ZDZEJN, {
-                    name: l.name
+                    name: a.name
                 }) : v.intl.string(v.t.XKUw8m),
                 subtext: u
             })

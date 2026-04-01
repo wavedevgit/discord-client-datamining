@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var l = n(158954),
-    a = n(827734),
+var a = n(158954),
+    l = n(827734),
     r = n(198488);
 
 function s(e) {
@@ -25,9 +25,9 @@ function s(e) {
             className: r.gm,
             children: (0, i.jsx)("div", {
                 className: r.WA,
-                children: (0, i.jsx)(l.j96, {
+                children: (0, i.jsx)(a.j96, {
                     size: "sm",
-                    color: a.A.colors.TEXT_BRAND
+                    color: l.A.colors.TEXT_BRAND
                 })
             })
         })]

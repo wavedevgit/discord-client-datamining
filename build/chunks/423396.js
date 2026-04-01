@@ -1,6 +1,6 @@
 /** chunk id: 423396 params = (module,exports,require) **/
 l.d(t, {
-    Gu: () => _
+    Gu: () => E
 });
 var a = l(627968),
     n = l(64700),
@@ -9,15 +9,15 @@ var a = l(627968),
     o = l(231018),
     s = l(685944),
     u = l(623020),
-    c = l(927578),
-    d = l(412463),
+    d = l(927578),
+    c = l(412463),
     p = l(492518),
     m = l(689614),
     h = l(652215),
     x = l(788868),
     b = l(985018),
     y = l(895375);
-let f = [{
+let g = [{
         key: i.pn.REVIEW,
         renderStep: e => (0, a.jsx)(u._, {
             ...e
@@ -27,7 +27,7 @@ let f = [{
         }
     }, {
         key: i.pn.ADD_PAYMENT_STEPS,
-        renderStep: e => (0, a.jsx)(d.eO, {
+        renderStep: e => (0, a.jsx)(c.eO, {
             ...e,
             originStep: i.pn.REVIEW,
             text: "Add Payment Steps Placeholder"
@@ -37,7 +37,7 @@ let f = [{
         }
     }, {
         key: i.pn.CONFIRM,
-        renderStep: e => (0, a.jsx)(d.eO, {
+        renderStep: e => (0, a.jsx)(c.eO, {
             ...e,
             originStep: i.pn.REVIEW,
             text: "Confirm Step Placeholder"
@@ -47,7 +47,7 @@ let f = [{
         }
     }, {
         key: i.pn.PLAN_SELECT,
-        renderStep: e => (0, a.jsx)(d.eO, {
+        renderStep: e => (0, a.jsx)(c.eO, {
             ...e,
             originStep: i.pn.REVIEW,
             text: "Plan Select Step Placeholder"
@@ -62,7 +62,7 @@ let f = [{
             }
         }
     }],
-    g = () => (0, a.jsx)(r.Text, {
+    f = () => (0, a.jsx)(r.Text, {
         variant: "text-sm/normal",
         children: "Purchase button is disabled for this story"
     }),
@@ -78,8 +78,8 @@ let f = [{
             defaultValue: !0
         }
     },
-    E = (0, m.R)(),
-    _ = {
+    _ = (0, m.R)(),
+    E = {
         title: "Checkout Review Step",
         stories: [{
             name: "Collectibles Review Step",
@@ -96,15 +96,15 @@ let f = [{
                     handleComplete: m,
                     isFetching: x,
                     sku: b
-                } = (0, d.ud)({
+                } = (0, c.ud)({
                     skuId: t,
                     isGift: l,
                     applicationId: h.FYj
-                }), v = c.Ay.isPremiumSku(t);
+                }), v = d.Ay.isPremiumSku(t);
                 return x || null == b || v ? (0, a.jsx)(p.k, {}) : (0, a.jsxs)("div", {
                     className: y.Cd,
-                    children: [(0, a.jsx)(d.dL, {
-                        stepConfigs: f,
+                    children: [(0, a.jsx)(c.dL, {
+                        stepConfigs: g,
                         analyticsLocations: r,
                         applicationId: h.FYj,
                         initialPlanId: void 0,
@@ -123,15 +123,15 @@ let f = [{
                         }),
                         onClose: u,
                         onComplete: m
-                    }), (0, a.jsx)(g, {})]
+                    }), (0, a.jsx)(f, {})]
                 })
             },
             controls: {
                 skuId: {
                     label: "SKU ID",
                     type: "select",
-                    options: E.options,
-                    defaultValue: E.defaultValue
+                    options: _.options,
+                    defaultValue: _.defaultValue
                 },
                 ...v
             }
@@ -150,27 +150,27 @@ let f = [{
                     handleComplete: u,
                     isFetching: m,
                     sku: b
-                } = (0, d.ud)({
+                } = (0, c.ud)({
                     skuId: t,
                     isGift: l,
                     applicationId: x.tv
-                }), v = c.Ay.isPremiumSku(t), E = v ? x.zE[t] : void 0, [_, C] = n.useState(E), j = n.useRef(!1);
+                }), v = d.Ay.isPremiumSku(t), _ = v ? x.zE[t] : void 0, [E, C] = n.useState(_), j = n.useRef(!1);
                 n.useEffect(() => {
-                    j.current || null == E || (j.current = !0, C(E))
-                }, [E, _]);
+                    j.current || null == _ || (j.current = !0, C(_))
+                }, [_, E]);
                 let {
                     isLoadedForPremiumSKUs: S,
                     selectedPlan: T
-                } = (0, d.n1)({
-                    subscriptionPlanId: _
+                } = (0, c.n1)({
+                    subscriptionPlanId: E
                 });
                 return !m && null != b && S && v && null != T ? (0, a.jsxs)("div", {
                     className: y.Cd,
-                    children: [(0, a.jsx)(d.dL, {
-                        stepConfigs: f,
+                    children: [(0, a.jsx)(c.dL, {
+                        stepConfigs: g,
                         analyticsLocations: i,
                         applicationId: x.tv,
-                        initialPlanId: E,
+                        initialPlanId: _,
                         skuId: t,
                         isGift: l,
                         hideErrors: r,
@@ -183,7 +183,7 @@ let f = [{
                             selectedPlan: T,
                             setSelectedPlanId: C
                         }
-                    }), (0, a.jsx)(g, {})]
+                    }), (0, a.jsx)(f, {})]
                 }) : (0, a.jsx)(p.k, {})
             },
             controls: {

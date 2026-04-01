@@ -3,8 +3,8 @@ n.d(t, {
     g: () => _
 });
 var i = n(627968),
-    l = n(64700),
-    a = n(554146),
+    a = n(64700),
+    l = n(554146),
     r = n(932001),
     s = n(866945),
     o = n(780964),
@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(945771);
 
 function _() {
-    let [e, t] = (0, r.kn)([a.M.RESTRICTED_ACCOUNTS_SETTING_NOTICE]);
-    return l.useMemo(() => e === a.M.RESTRICTED_ACCOUNTS_SETTING_NOTICE, [e]) ? (0, i.jsx)(s.e, {
+    let [e, t] = (0, r.kn)([l.M.RESTRICTED_ACCOUNTS_SETTING_NOTICE]);
+    return a.useMemo(() => e === l.M.RESTRICTED_ACCOUNTS_SETTING_NOTICE, [e]) ? (0, i.jsx)(s.e, {
         label: A.t.zqv4nV,
         labelHook: () => {
             (0, d.openUserSettings)(o.X.CONTENT_AND_SOCIAL_RESTRICTED_USERS_CATEGORY)

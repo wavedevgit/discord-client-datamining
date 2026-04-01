@@ -14,8 +14,8 @@ var i = n(627968),
     m = n(206885),
     g = n(833551),
     _ = n(663677),
-    A = n(847521),
-    x = n(9302),
+    x = n(847521),
+    A = n(9302),
     h = n(505136),
     p = n(370365),
     T = n(686533),
@@ -26,7 +26,7 @@ function E() {
     let [e, t] = s.useState(!1), {
         oopEnabled: n,
         legacyEnabled: E
-    } = (0, l.cf)([g.default], () => g.default.getGlobalEnabledStatus()), b = !(0, x.supportsOutOfProcess)(), C = (0, l.yK)([c.Ay], () => c.Ay.getGamesSeen(!0)).filter(e => !(0, A.n1)(e)), N = (0, d.A)(C.map(e => e.id)), v = e => {
+    } = (0, l.cf)([g.default], () => g.default.getGlobalEnabledStatus()), b = !(0, A.supportsOutOfProcess)(), C = (0, l.yK)([c.Ay], () => c.Ay.getGamesSeen(!0)).filter(e => !(0, x.n1)(e)), N = (0, d.A)(C.map(e => e.id)), v = e => {
         let t = !e && n;
         o.A.setEnabled(E, e);
         let i = c.Ay.getCurrentGameForAnalytics()?.id ?? null;

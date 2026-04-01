@@ -18,10 +18,10 @@ let u = () => {
             })
         }, [t, l, e]),
         {
-            handleResetStatusClick: c
+            handleResetStatusClick: d
         } = (0, o.j$)(s.Fw);
     return {
         resetOnboardingExperience: u,
-        resetQuestStatus: c
+        resetQuestStatus: d
     }
 }

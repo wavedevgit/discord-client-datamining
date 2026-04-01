@@ -15,8 +15,8 @@ var s = n(503698),
     m = n(864310),
     g = n(71393),
     _ = n(473145),
-    A = n(652215),
-    x = n(985018),
+    x = n(652215),
+    A = n(985018),
     h = n(576);
 let p = function(e) {
     let {
@@ -30,7 +30,7 @@ let p = function(e) {
             className: h.$g,
             children: (0, i.jsx)(o.Text, {
                 variant: "text-lg/bold",
-                children: x.intl.string(x.t["6Kwwuo"])
+                children: A.intl.string(A.t["6Kwwuo"])
             })
         })
     }) : (0, i.jsxs)("div", {
@@ -52,7 +52,7 @@ let p = function(e) {
                 }), (0, i.jsx)(o.Text, {
                     variant: "text-sm/bold",
                     color: "text-muted",
-                    children: x.intl.format(x.t["pob/cL"], {
+                    children: A.intl.format(A.t["pob/cL"], {
                         subscriptions: T
                     })
                 }), (0, i.jsx)("div", {
@@ -68,23 +68,23 @@ let p = function(e) {
         }), s ? (0, i.jsx)(u.A, {
             guild: p,
             analyticsLocation: {
-                page: A.liQ.GUILD_BOOSTING_USER_SETTINGS,
-                section: A.JJy.GUILD_BOOSTING_RECOMMENDED_SERVER_BOOST_THIS_SERVER_CTA,
-                object: A.ZSU.BUTTON_CTA,
-                objectType: A.AnalyticsObjectTypes.BUY
+                page: x.liQ.GUILD_BOOSTING_USER_SETTINGS,
+                section: x.JJy.GUILD_BOOSTING_RECOMMENDED_SERVER_BOOST_THIS_SERVER_CTA,
+                object: x.ZSU.BUTTON_CTA,
+                objectType: x.AnalyticsObjectTypes.BUY
             },
             pauseAnimation: !0,
             size: r.$n.Sizes.MEDIUM,
             color: r.$n.Colors.PRIMARY,
-            buttonText: x.intl.string(x.t.aBHecF)
+            buttonText: A.intl.string(A.t.aBHecF)
         }) : (0, i.jsx)(o.Button, {
             variant: "secondary",
-            text: x.intl.string(x.t.KLOhbO),
+            text: A.intl.string(A.t.KLOhbO),
             onClick: () => {
                 (0, c.K4)({
                     guildId: p.id,
                     location: {
-                        section: A.JJy.GUILD_BOOSTING_RECOMMENDED_SERVER_GO_TO_SERVER_CTA
+                        section: x.JJy.GUILD_BOOSTING_RECOMMENDED_SERVER_GO_TO_SERVER_CTA
                     }
                 })
             }

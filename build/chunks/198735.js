@@ -14,8 +14,8 @@ var i = n(627968),
     m = n(793574),
     g = n(688810),
     _ = n(726649),
-    A = n(611924),
-    x = n(649032),
+    x = n(611924),
+    A = n(649032),
     h = n(26508),
     p = n(166403),
     T = n(954571),
@@ -40,7 +40,7 @@ var i = n(627968),
     U = n(352989);
 let w = () => {
     let e = (0, r.zy)();
-    (0, A.P)(_.b);
+    (0, x.P)(_.b);
     let t = s.useRef(null),
         n = s.useRef(null),
         l = s.useRef(null),
@@ -62,7 +62,7 @@ let w = () => {
     s.useEffect(() => {
         Z(!0)
     }, []);
-    let en = (0, h.DK)(x.W.NITRO, "PremiumMarketingHome"),
+    let en = (0, h.DK)(A.W.NITRO, "PremiumMarketingHome"),
         ei = s.useMemo(() => !!en && "orbs" === new URLSearchParams(e.search).get("section"), [e.search, en]);
     (0, E.z)(P.NI.ORB_REWARDS, ei);
     let es = [v.k.HOME, v.k.WHATS_NEW, v.k.BEST_OF_NITRO, v.k.PLANS, v.k.COMPARE],

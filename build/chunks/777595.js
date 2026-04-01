@@ -9,8 +9,8 @@ var a = l(627968),
     o = l(688810),
     s = l(166532),
     u = l(735305),
-    c = l(412463),
-    d = l(652215);
+    d = l(412463),
+    c = l(652215);
 let p = [{
         key: s.pn.ADD_PAYMENT_STEPS,
         renderStep: e => (0, a.jsx)(u.x, {
@@ -23,7 +23,7 @@ let p = [{
         }
     }, {
         key: s.pn.REVIEW,
-        renderStep: e => (0, a.jsx)(c.eO, {
+        renderStep: e => (0, a.jsx)(d.eO, {
             ...e,
             originStep: s.pn.ADD_PAYMENT_STEPS,
             text: "Review Step Placeholder"
@@ -41,16 +41,16 @@ let p = [{
                 } = e, {
                     analyticsLocations: l
                 } = (0, o.Ay)(i.A.PAYMENT_FLOW_TEST_PAGE), s = n.useMemo(() => (0, r.A)(), []), u = n.useCallback(() => {}, []);
-                return (0, a.jsx)(c.dL, {
+                return (0, a.jsx)(d.dL, {
                     stepConfigs: p,
                     analyticsLocations: l,
-                    applicationId: d.FYj,
+                    applicationId: c.FYj,
                     initialPlanId: void 0,
                     skuId: null,
                     isGift: !1,
                     hideErrors: !1,
                     loadId: s,
-                    purchaseType: d.VVm.ONE_TIME,
+                    purchaseType: c.VVm.ONE_TIME,
                     disablePurchases: !0,
                     excludeSubscriptionPlansBySKU: !0,
                     renderHeader: () => null,

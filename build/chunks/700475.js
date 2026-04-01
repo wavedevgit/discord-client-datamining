@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var l = n(397927),
-    a = n(587895),
+var a = n(397927),
+    l = n(587895),
     r = n(851907);
 
 function s(e) {
@@ -15,11 +15,11 @@ function s(e) {
         linkId: o,
         message: d,
         onShare: c
-    } = e, u = a.A.getApplication(t);
+    } = e, u = l.A.getApplication(t);
     if (null == u) return void c(!1, !1);
     let A = null != (0, r.LU)({
             applicationId: u.id
-        }) ? l.KX8 : l.SYi,
+        }) ? a.KX8 : a.SYi,
         h = !1;
 
     function _(e) {
@@ -28,7 +28,7 @@ function s(e) {
 
     function m() {
         h = !0
-    }(0, l.mMO)(async () => {
+    }(0, a.mMO)(async () => {
         let {
             default: e
         } = await n.e("48587").then(n.bind(n, 824774));

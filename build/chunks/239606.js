@@ -13,8 +13,8 @@ var i = t(627968),
     u = t(80682),
     m = t(793574),
     A = t(688810),
-    p = t(351966),
-    x = t(361628),
+    x = t(351966),
+    p = t(361628),
     g = t(744808),
     f = t(915089),
     h = t(713517),
@@ -67,8 +67,8 @@ var i = t(627968),
     eu = t(878210),
     em = t(515054),
     eA = t(513265),
-    ep = t(160983),
-    ex = t(518477),
+    ex = t(160983),
+    ep = t(518477),
     eg = t(652215),
     ef = t(996988),
     eh = t(985018),
@@ -92,7 +92,7 @@ function ev(e) {
         channelId: u,
         displayProfile: m,
         nickname: A,
-        hasEntered: x,
+        hasEntered: p,
         customStatusPrompt: g,
         onClose: f
     } = e, y = l.id === t.id, C = n.useRef(null), b = (0, h.M)(C), [P, O] = n.useState(), S = n.useCallback(e => {
@@ -144,7 +144,7 @@ function ev(e) {
                 guildId: s,
                 channelId: u,
                 themeType: ef.d.MODAL_V2,
-                hasEntered: x,
+                hasEntered: p,
                 prompt: y ? L : null
             })]
         }), (0, i.jsxs)(d.HOs, {
@@ -239,7 +239,7 @@ function ev(e) {
                 children: (0, i.jsx)(J.A, {
                     userId: l.id,
                     guildId: m?.guildId,
-                    tooltipDelay: ex.In
+                    tooltipDelay: ep.In
                 })
             }), m?.guildId != null && (0, i.jsx)(et.A, {
                 userId: l.id,
@@ -249,7 +249,7 @@ function ev(e) {
                 headingColor: "currentColor"
             }), es.length > 0 && (0, i.jsx)(ec.A, {
                 heading: eh.intl.string(eh.t["3fe7U5"]),
-                scrollTargetId: ex.bk.CONNECTIONS,
+                scrollTargetId: ep.bk.CONNECTIONS,
                 children: (0, i.jsx)(ea.A, {
                     connections: es,
                     userId: l.id,
@@ -257,7 +257,7 @@ function ev(e) {
                 })
             }), er.length > 0 && (0, i.jsx)(ec.A, {
                 heading: eh.intl.string(eh.t.PHjkRE),
-                scrollTargetId: ex.bk.APPS,
+                scrollTargetId: ep.bk.APPS,
                 children: (0, i.jsx)(ei.A, {
                     applicationRoleConnections: er,
                     onClose: f,
@@ -266,7 +266,7 @@ function ev(e) {
             }), (0, i.jsx)(ed.A, {
                 userId: l.id
             })]
-        }), m?.profileEffect != null && (0, i.jsx)(p.A, {
+        }), m?.profileEffect != null && (0, i.jsx)(x.A, {
             skuId: m?.profileEffect.skuId,
             isHovering: b
         })]
@@ -307,7 +307,7 @@ function ey(e) {
         currentUser: t,
         guildId: s,
         originGuildId: c,
-        channelId: p,
+        channelId: x,
         messageId: h,
         roleId: j,
         sessionId: I,
@@ -330,7 +330,7 @@ function ey(e) {
     } : {}, [D, l.id]);
     (0, u.Eq)(B, "UserProfileModalV2");
     let z = (0, S.Ay)(l.id, D),
-        W = (0, x.A)(z?.profileFrame?.skuId, "UserProfileModalV2"),
+        W = (0, p.A)(z?.profileFrame?.skuId, "UserProfileModalV2"),
         K = (0, O.X)("UserProfileModalV2"),
         $ = U && K,
         [H, Z] = n.useState(!0),
@@ -355,7 +355,7 @@ function ey(e) {
             canAnimate: !1,
             size: 1024
         }),
-        et = (0, ep.A)({
+        et = (0, ex.A)({
             user: l,
             currentUser: t
         }),
@@ -367,11 +367,11 @@ function ey(e) {
             userId: l.id,
             sourceSessionId: I,
             guildId: D,
-            channelId: p,
+            channelId: x,
             messageId: h,
             roleId: j
         }),
-        ea = C.Ay.useName(z?.guildId, p, l),
+        ea = C.Ay.useName(z?.guildId, x, l),
         ed = (0, f.GV)(),
         ec = eh.intl.format(eh.t.KRe1Fk, {
             name: ea
@@ -444,7 +444,7 @@ function ey(e) {
                                             user: l,
                                             currentUser: t,
                                             guildId: D,
-                                            channelId: p,
+                                            channelId: x,
                                             displayProfile: z,
                                             nickname: ea,
                                             originGuildId: c,
@@ -456,7 +456,7 @@ function ey(e) {
                                             currentUser: t,
                                             displayProfile: z,
                                             guildId: D,
-                                            channelId: p,
+                                            channelId: x,
                                             items: et,
                                             initialSection: v,
                                             onClose: _

@@ -3,8 +3,8 @@ n.d(t, {
     A: () => O
 });
 var i = n(627968),
-    l = n(64700),
-    a = n(607399),
+    a = n(64700),
+    l = n(607399),
     r = n(311907),
     s = n(397927),
     o = n(384904),
@@ -38,13 +38,13 @@ function y(e) {
     (0, c.HU)({
         subsection: v.intl.string(v.t["KzCF/6"]),
         location: n?.name
-    }), (0, d.A)(a.Fr ? "role-subscriptions-overview" : void 0);
+    }), (0, d.A)(l.Fr ? "role-subscriptions-overview" : void 0);
     let w = y && (null == n || !(O || L) || D && !M);
-    if (l.useEffect(() => {
+    if (a.useEffect(() => {
             o.hP()
-        }, []), l.useEffect(() => {
-            w && !a.Fr && (0, u.B)(t, x.VV.ROLE_SUBSCRIPTIONS)
-        }, [t, w]), a.Fr && w) {
+        }, []), a.useEffect(() => {
+            w && !l.Fr && (0, u.B)(t, x.VV.ROLE_SUBSCRIPTIONS)
+        }, [t, w]), l.Fr && w) {
         let e = null == n ? T.b.NOT_GUILD_MEMBER : T.b.GUILD_NOT_ELIGIBLE;
         return (0, i.jsx)(T.k, {
             errorType: e
@@ -53,7 +53,7 @@ function y(e) {
     return (0, i.jsxs)("div", {
         className: b.kL,
         children: [(0, i.jsxs)(m.A, {
-            toolbar: (0, i.jsx)(l.Fragment, {}),
+            toolbar: (0, i.jsx)(a.Fragment, {}),
             className: b.jr,
             children: [(0, i.jsx)(m.A.Icon, {
                 icon: (0, s.kHD)(f.A),

@@ -9,16 +9,16 @@ var a = l(627968),
     o = l(397927),
     s = l(942340),
     u = l(211528),
-    c = l(626584),
-    d = l(166532),
+    d = l(626584),
+    c = l(166532),
     p = l(87952),
     m = l(646443),
     h = l(785205),
     x = l(652215),
     b = l(962017),
     y = l(895375);
-let f = new c.A("PaymentElement.web.stories"),
-    g = () => {
+let g = new d.A("PaymentElement.web.stories"),
+    f = () => {
         let {
             elementsAppearanceOptions: e
         } = (0, s.E)();
@@ -43,18 +43,18 @@ let f = new c.A("PaymentElement.web.stories"),
             theme: t,
             colorText: l,
             colorBackground: r,
-            inputBackgroundColor: c,
+            inputBackgroundColor: d,
             tabBackgroundColor: m,
             storyType: v
-        } = e, E = (0, p.A)(), {
-            stripePaymentElementProps: _,
+        } = e, _ = (0, p.A)(), {
+            stripePaymentElementProps: E,
             stripeAddressElementProps: C
         } = (0, u.Lw)({
-            step: d.pn.PAYMENT_ELEMENT,
+            step: c.pn.PAYMENT_ELEMENT,
             handleStepChange: x.tEg,
             onBillingAddressChange: x.tEg,
             paymentElementsEnabled: !0,
-            logger: f,
+            logger: g,
             shouldLogOnChangeEvents: !0,
             continueSessionToInitialStep: void 0
         }), {
@@ -64,17 +64,17 @@ let f = new c.A("PaymentElement.web.stories"),
             customPaymentMethodIdsToSourceTypes: A
         } = (0, s.p)({
             onSetupError: e => {
-                f.info("Stripe Payment Element options setup error: ", e)
+                g.info("Stripe Payment Element options setup error: ", e)
             },
             elementsAppearanceOptions: {
                 theme: t,
                 colorText: l,
                 colorBackground: r,
-                inputBackgroundColor: c,
+                inputBackgroundColor: d,
                 tabBackgroundColor: m
             }
         });
-        return S || null != T || null == E ? (0, a.jsx)(u.eR, {}) : (0, a.jsxs)("div", {
+        return S || null != T || null == _ ? (0, a.jsx)(u.eR, {}) : (0, a.jsxs)("div", {
             children: [(0, a.jsx)("div", {
                 style: {
                     marginBottom: 16
@@ -87,7 +87,7 @@ let f = new c.A("PaymentElement.web.stories"),
                 className: b.ny,
                 children: [(0, a.jsx)(h.p, {
                     stepConfigs: [{
-                        key: d.pn.ADD_PAYMENT_STEPS,
+                        key: c.pn.ADD_PAYMENT_STEPS,
                         renderStep: () => (0, a.jsx)("div", {}),
                         options: {
                             renderHeader: !1,
@@ -99,21 +99,21 @@ let f = new c.A("PaymentElement.web.stories"),
                             [b.X1]: "joined-payment-address-elements" === v
                         }),
                         children: (0, a.jsxs)(n.Elements, {
-                            stripe: E,
+                            stripe: _,
                             options: {
                                 ...j
                             },
                             children: ["stripe-address-element" === v ? (0, a.jsx)("div", {
                                 className: y.R,
                                 children: (0, a.jsx)(u.Wf, {
-                                    ..._,
+                                    ...E,
                                     customPaymentMethodIdsToSourceTypes: A,
-                                    step: d.pn.PAYMENT_ELEMENT
+                                    step: c.pn.PAYMENT_ELEMENT
                                 })
                             }) : (0, a.jsx)(u.Wf, {
-                                ..._,
+                                ...E,
                                 customPaymentMethodIdsToSourceTypes: A,
-                                step: d.pn.PAYMENT_ELEMENT
+                                step: c.pn.PAYMENT_ELEMENT
                             }), ("joined-payment-address-elements" === v || "stripe-address-element" === v) && (0, a.jsx)(u.KS, {
                                 ...C,
                                 billingAddressInfo: {
@@ -129,11 +129,11 @@ let f = new c.A("PaymentElement.web.stories"),
                             })]
                         })
                     })
-                }), (0, a.jsx)(g, {})]
+                }), (0, a.jsx)(f, {})]
             })]
         })
     },
-    E = {
+    _ = {
         theme: {
             label: "Theme",
             type: "select",
@@ -164,7 +164,7 @@ let f = new c.A("PaymentElement.web.stories"),
             defaultValue: "#00000014"
         }
     },
-    _ = {
+    E = {
         name: "Joined Payment + Address",
         id: "joined-payment-address-elements",
         component: e => (0, a.jsx)(v, {
@@ -172,7 +172,7 @@ let f = new c.A("PaymentElement.web.stories"),
             storyType: "joined-payment-address-elements"
         }),
         controls: {
-            ...E
+            ..._
         }
     },
     C = {
@@ -185,7 +185,7 @@ let f = new c.A("PaymentElement.web.stories"),
                 storyType: "stripe-payment-element"
             }),
             controls: {
-                ...E
+                ..._
             }
         }, {
             name: "Stripe Address Element",
@@ -195,7 +195,7 @@ let f = new c.A("PaymentElement.web.stories"),
                 storyType: "stripe-address-element"
             }),
             controls: {
-                ...E
+                ..._
             }
-        }, _]
+        }, E]
     }

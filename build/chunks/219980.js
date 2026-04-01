@@ -21,19 +21,19 @@ function s(e) {
     })), u = (0, a.jsx)(o.Gy, {
         ref: t,
         ...l
-    }), c = (0, a.jsx)(o.Gy, {
+    }), d = (0, a.jsx)(o.Gy, {
         ...l,
         isInModalOverlay: !0,
         disabled: !0
-    }), d = null != t.current ? t.current.offsetHeight : 36;
+    }), c = null != t.current ? t.current.offsetHeight : 36;
     return (0, a.jsx)(r.YNO, {
         fixed: !0,
         autoInvert: !1,
-        renderPopout: () => c,
+        renderPopout: () => d,
         position: "bottom",
         align: "right",
         shouldShow: s,
-        spacing: -d,
+        spacing: -c,
         animation: r.YNO.Animation.NONE,
         targetElementRef: t,
         positionKey: `${l.balance}-${s}`,

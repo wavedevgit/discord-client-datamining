@@ -1,6 +1,6 @@
 /** chunk id: 480254 params = (module,exports,require) **/
 r.d(t, {
-    m: () => I
+    m: () => f
 });
 var o = r(627968),
     n = r(64700),
@@ -20,62 +20,62 @@ var o = r(627968),
     x = r(652215),
     g = r(985018),
     S = r(938822);
-let I = e => {
+let f = e => {
     let {
         analyticsLocations: t,
         onClose: r,
-        transitionState: I,
-        premiumSubscription: f,
+        transitionState: f,
+        premiumSubscription: I,
         currentInvoicePreview: y,
-        renewalInvoicePreview: T,
-        fractionalPremiumInfo: v,
-        setStep: w
-    } = e, F = (0, i.bG)([c.default], () => c.default.locale), E = new Date(T.subscriptionPeriodStart);
-    f.isBoostOnly || (E = u.Ay.extendDateWithUnconsumedFractionalPremium(E, v.unactivatedUnits));
-    let P = (0, i.bG)([d.A], () => d.A.getForApplication(h.tv)),
-        A = (0, m.$g)(y.total, y.currency),
-        [j, M] = (0, n.useState)(!1),
+        renewalInvoicePreview: v,
+        fractionalPremiumInfo: T,
+        setStep: A
+    } = e, F = (0, i.bG)([c.default], () => c.default.locale), w = new Date(v.subscriptionPeriodStart);
+    I.isBoostOnly || (w = u.Ay.extendDateWithUnconsumedFractionalPremium(w, T.unactivatedUnits));
+    let j = (0, i.bG)([d.A], () => d.A.getForApplication(h.tv)),
+        E = (0, m.$g)(y.total, y.currency),
+        [P, M] = (0, n.useState)(!1),
         [R, U] = (0, n.useState)(!1),
-        k = E.toLocaleDateString(F, {
+        k = w.toLocaleDateString(F, {
             month: "long",
             day: "numeric",
             year: "numeric"
         }),
-        B = n.useMemo(() => (0, l.A)(), []);
+        O = n.useMemo(() => (0, l.A)(), []);
     n.useEffect(() => {
         p.default.track(x.HAw.PREMIUM_RESUBSCRIBE_FLOW_STARTED, {
             location_stack: t,
-            load_id: B,
-            ...(0, b.j)(f)
+            load_id: O,
+            ...(0, b.j)(I)
         })
-    }, [t, f, B]);
-    let L = async () => {
+    }, [t, I, O]);
+    let B = async () => {
         M(!0), U(!1);
         try {
-            await s.Ir(f, t), w(C.g.SUCCESS)
+            await s.Ir(I, t), A(C.g.SUCCESS)
         } catch (e) {
             U(!0), M(!1)
         }
-    }, O = [{
+    }, L = [{
         text: g.intl.string(g.t["cY+Oob"]),
-        onClick: () => L(),
+        onClick: () => B(),
         variant: "primary",
-        loading: j,
-        disabled: j
+        loading: P,
+        disabled: P
     }], D = g.intl.format(g.t.dbGGui, {
-        price: A,
+        price: E,
         date: k
-    }), G = f.premiumPlanIdFromItems;
-    if (u.Ay.hasUnconsumedGiftForSubscriptionPlan(P, G)) {
-        let e = (0, m.$g)(T.total, T.currency),
-            t = u.Ay.getIntervalForInvoice(T),
+    }), G = I.premiumPlanIdFromItems;
+    if (u.Ay.hasUnconsumedGiftForSubscriptionPlan(j, G)) {
+        let e = (0, m.$g)(v.total, v.currency),
+            t = u.Ay.getIntervalForInvoice(v),
             r = {
                 discountedPrice: e,
-                regularPrice: A,
+                regularPrice: E,
                 date: k,
                 billingPeriod: u.Ay.getIntervalStringAsNoun(t.intervalType)
             };
-        D = T.taxInclusive ? g.intl.format(g.t.G8IxyE, r) : g.intl.format(g.t.kXtIIn, r)
+        D = v.taxInclusive ? g.intl.format(g.t.G8IxyE, r) : g.intl.format(g.t.kXtIIn, r)
     }
     return (0, o.jsxs)(a.ExpressiveModal, {
         graphic: {
@@ -83,9 +83,9 @@ let I = e => {
             src: S.A
         },
         gradientColor: "nitro-pink",
-        transitionState: I,
+        transitionState: f,
         title: g.intl.string(g.t.fYEWlq),
-        actions: O,
+        actions: L,
         onClose: async () => r(),
         children: [(0, o.jsxs)(_.Text, {
             variant: "text-md/normal",

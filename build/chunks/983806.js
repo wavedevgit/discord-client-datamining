@@ -14,8 +14,8 @@ var i = n(627968),
     m = n(834981),
     g = n(343906),
     _ = n(191627),
-    A = n(842130),
-    x = n(985018),
+    x = n(842130),
+    A = n(985018),
     h = n(967629);
 let p = () => {
         let e = (0, m.vx)(),
@@ -68,14 +68,14 @@ let p = () => {
             children: [(0, i.jsxs)(o.DUT, {
                 className: h.Gv,
                 onClick: n,
-                "aria-label": x.intl.string(x.t.ybUZql),
+                "aria-label": A.intl.string(A.t.ybUZql),
                 children: [(0, i.jsx)(o.Zge, {
                     size: "sm",
                     color: o.LU0.colors.INTERACTIVE_TEXT_DEFAULT
                 }), (0, i.jsx)(o.Text, {
                     variant: "eyebrow",
                     color: "text-default",
-                    children: x.intl.string(x.t["13/7kX"])
+                    children: A.intl.string(A.t["13/7kX"])
                 })]
             }), (0, i.jsxs)(o.BJc, {
                 direction: "horizontal",
@@ -87,11 +87,11 @@ let p = () => {
                     children: [(0, i.jsx)(o.Text, {
                         variant: "text-sm/medium",
                         color: "text-subtle",
-                        children: x.intl.string(A.default.RZqaJn)
+                        children: A.intl.string(x.default.RZqaJn)
                     }), (0, i.jsx)(o.Heading, {
                         variant: "heading-xl/semibold",
                         color: "text-strong",
-                        children: x.intl.string(e === _.u9.CONTENT_AND_SOCIAL ? x.t["+o1pDZ"] : x.t.OAuOHD)
+                        children: A.intl.string(e === _.u9.CONTENT_AND_SOCIAL ? A.t["+o1pDZ"] : A.t.OAuOHD)
                     })]
                 }), (0, i.jsx)(p, {})]
             })]

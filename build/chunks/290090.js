@@ -20,13 +20,13 @@ function m(e) {
     } = e, {
         analyticsLocations: m,
         newestAnalyticsLocation: A
-    } = (0, a.Ay)(), p = (0, n.bG)([d.A], () => d.A.hasUnsavedChanges());
+    } = (0, a.Ay)(), x = (0, n.bG)([d.A], () => d.A.hasUnsavedChanges());
     return (0, i.jsx)(c.q3, {
         action: "VISIT_SHOP",
         icon: s.U1X,
         tooltipText: u.intl.string(u.t.b2d0N0),
         onClick: () => {
-            p ? o.A.notifyUnsavedWidgets() : ((0, r.Cz)({
+            x ? o.A.notifyUnsavedWidgets() : ((0, r.Cz)({
                 analyticsLocations: m,
                 analyticsSource: A
             }), l?.())

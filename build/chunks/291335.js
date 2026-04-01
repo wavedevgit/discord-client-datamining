@@ -14,8 +14,8 @@ var n = t(503698),
     u = t(310419),
     m = t(773669),
     A = t(427157),
-    p = t(967198),
-    x = t(183555),
+    x = t(967198),
+    p = t(183555),
     g = t(488995),
     f = t(985018),
     h = t(622376);
@@ -84,7 +84,7 @@ function I(e) {
         onClose: n
     } = e, {
         trackUserProfileAction: r
-    } = (0, x.NJ)(), o = (0, a.bG)([m.default], () => m.default.locale), d = (0, a.bG)([p.A], () => p.A.getGuildId());
+    } = (0, p.NJ)(), o = (0, a.bG)([m.default], () => m.default.locale), d = (0, a.bG)([x.A], () => x.A.getGuildId());
     return 0 === l.length ? null : (0, i.jsx)("ul", {
         className: s()(h.kL, t),
         children: l.map((e, l) => (0, i.jsx)("li", {

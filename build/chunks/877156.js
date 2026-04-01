@@ -30,8 +30,8 @@ function g(e) {
         analyticsLocations: f
     } = (0, u.Ay)(), j = a._3J.SIZE_32, {
         product: R,
-        isFetching: C
-    } = (0, c.q)(n), [M, N] = l.useState(!1), O = R?.items[0], {
+        isFetching: M
+    } = (0, c.q)(n), [C, N] = l.useState(!1), O = R?.items[0], {
         isNameplateReward: y,
         nameplateData: v,
         rewardAvatarDecorationSrc: b
@@ -76,7 +76,7 @@ function g(e) {
                         nameplateData: v,
                         showPlaceholderUser: !0,
                         nameplatePreviewSize: "xsmall",
-                        isHighlighted: M
+                        isHighlighted: C
                     })
                 }) : (0, i.jsx)(a.JsQ, {
                     "aria-label": g?.username,
@@ -86,7 +86,7 @@ function g(e) {
                 }), (0, i.jsx)(s.$nd, {
                     variant: "primary",
                     text: I.intl.string(I.t.kMYVwv),
-                    loading: C,
+                    loading: M,
                     onClick: () => {
                         null != R && (t(), (0, S.A)({
                             product: R,

@@ -1,6 +1,6 @@
 /** chunk id: 526838 params = (module,exports,require) **/
 l.d(t, {
-    Z: () => c
+    Z: () => d
 });
 var a = l(627968);
 l(64700);
@@ -13,7 +13,7 @@ let u = {
         none: void 0,
         nitroWheel: n.tvc
     },
-    c = {
+    d = {
         title: "Marketing Home",
         stories: [{
             name: "Bento Box",
@@ -21,24 +21,24 @@ let u = {
                 let {
                     title: t,
                     description: l,
-                    ctaMode: c,
-                    descriptionCtaText: d,
+                    ctaMode: d,
+                    descriptionCtaText: c,
                     action1Text: p,
                     action1Variant: m,
                     action2Text: h,
                     action2Variant: x,
                     icon: b,
                     iconPosition: y,
-                    index: f,
-                    size: g,
+                    index: g,
+                    size: f,
                     badgeText: v,
-                    badgeVariant: E,
-                    isReducedMotion: _,
+                    badgeVariant: _,
+                    isReducedMotion: E,
                     previewImageStyle: C
-                } = e, j = () => (0, n.showToast)((0, n.createToast)("CTA clicked!", n.ToastType.SUCCESS)), S = u[b], T = "descriptionCta" === c ? {
-                    descriptionCta: d,
+                } = e, j = () => (0, n.showToast)((0, n.createToast)("CTA clicked!", n.ToastType.SUCCESS)), S = u[b], T = "descriptionCta" === d ? {
+                    descriptionCta: c,
                     onClick: j
-                } : "actions" === c ? {
+                } : "actions" === d ? {
                     actions: [{
                         text: p,
                         variant: m,
@@ -61,11 +61,11 @@ let u = {
                         previewImage: o.A,
                         videoUrl: s.A,
                         shouldLoadVideo: !0,
-                        index: f,
-                        size: g,
+                        index: g,
+                        size: f,
                         badgeText: v.length > 0 ? v : void 0,
-                        badgeVariant: E,
-                        isReducedMotion: _,
+                        badgeVariant: _,
+                        isReducedMotion: E,
                         previewImageStyle: C,
                         ...T
                     })

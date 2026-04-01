@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var l = n(397927),
-    a = n(587895),
+var a = n(397927),
+    l = n(587895),
     r = n(851907);
 
 function s(e) {
@@ -13,11 +13,11 @@ function s(e) {
         applicationId: t,
         channelId: s,
         mediaUrl: o
-    } = e, d = a.A.getApplication(t), c = null != (0, r.Ay)({
+    } = e, d = l.A.getApplication(t), c = null != (0, r.Ay)({
         application: d,
         channelId: s
-    }) ? l.KX8 : l.SYi;
-    (0, l.mMO)(async () => {
+    }) ? a.KX8 : a.SYi;
+    (0, a.mMO)(async () => {
         let {
             default: e
         } = await Promise.all([n.e("21743"), n.e("63225")]).then(n.bind(n, 190930));

@@ -14,8 +14,8 @@ var i = n(627968),
     m = n(800172),
     g = n(953143),
     _ = n(954571),
-    A = n(52167),
-    x = n(652215),
+    x = n(52167),
+    A = n(652215),
     h = n(985018),
     p = n(504734);
 let T = e => {
@@ -46,19 +46,19 @@ let T = e => {
             imageClassName: r,
             titleBadge: d,
             isNew: _ = !1,
-            isEarlyAccess: A = !1
+            isEarlyAccess: x = !1
         } = e, {
-            analyticsLocations: x
+            analyticsLocations: A
         } = (0, u.Ay)(c.A.PREMIUM_MARKETING_PERK_CARD);
         return (0, i.jsx)(u.f5, {
-            value: x,
+            value: A,
             children: (0, i.jsxs)("div", {
                 className: a()(p.perkCard, s),
                 children: [_ ? (0, i.jsx)(g.A, {
                     className: p.perkCardNewBadge,
                     shouldInheritBackgroundColor: !0,
                     shouldInheritTextColor: !0
-                }) : null, A ? (0, i.jsx)(m.A, {
+                }) : null, x ? (0, i.jsx)(m.A, {
                     className: p.perkCardEarlyAccessBadge
                 }) : null, (0, i.jsx)("img", {
                     src: l,
@@ -72,7 +72,7 @@ let T = e => {
                     }), (0, i.jsx)(o.Text, {
                         variant: "text-sm/normal",
                         className: p.perkCardDescription,
-                        children: "function" == typeof n ? n(x) : n
+                        children: "function" == typeof n ? n(A) : n
                     })]
                 })]
             })
@@ -82,7 +82,7 @@ let T = e => {
         let {
             className: t,
             isSubscriberNitroHome: n = !1
-        } = e, [l, c] = s.useState(!1), m = (0, A.d)({
+        } = e, [l, c] = s.useState(!1), m = (0, x.d)({
             styles: p
         }), g = (0, r.bG)([d.A], () => d.A.useReducedMotion), {
             analyticsLocations: S
@@ -112,7 +112,7 @@ let T = e => {
                     }),
                     children: (0, i.jsx)(T, {
                         onClick: () => {
-                            _.default.track(x.HAw.PREMIUM_MARKETING_PERKS_SEE_ALL_CLICKED, {
+                            _.default.track(A.HAw.PREMIUM_MARKETING_PERKS_SEE_ALL_CLICKED, {
                                 location_stack: S,
                                 was_expanded: l
                             }), c(!l)

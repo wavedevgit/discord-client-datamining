@@ -3,8 +3,8 @@ n.d(t, {
     A: () => u
 });
 var i = n(179771),
-    l = n(73153),
-    a = n(859703),
+    a = n(73153),
+    l = n(859703),
     r = n(792620),
     s = n(954571),
     o = n(636401),
@@ -22,15 +22,15 @@ let u = {
             } = e;
             (0, d.lG)(t.transport);
             let i = (0, d.D2)(t.application),
-                l = a.A.getQuest(n),
-                s = (0, r.TP)(l);
-            if (null == l || null == s || s !== i) throw new o.A({
+                a = l.A.getQuest(n),
+                s = (0, r.TP)(a);
+            if (null == a || null == s || s !== i) throw new o.A({
                 errorCode: c.Lw6.INVALID_COMMAND
             }, `Quest not found: ${n}`);
             return {
                 quest_id: n,
-                is_enrolled: l.userStatus?.enrolledAt != null,
-                enrolled_at: l.userStatus?.enrolledAt ?? null
+                is_enrolled: a.userStatus?.enrolledAt != null,
+                enrolled_at: a.userStatus?.enrolledAt ?? null
             }
         }
     },
@@ -45,7 +45,7 @@ let u = {
             } = e;
             (0, d.lG)(t.transport);
             let i = (0, d.D2)(t.application),
-                u = a.A.getQuest(n),
+                u = l.A.getQuest(n),
                 A = (0, r.vS)(u);
             if (null == u || null == A || A !== i) throw new o.A({
                 errorCode: c.Lw6.INVALID_COMMAND
@@ -56,7 +56,7 @@ let u = {
             return s.default.track(c.HAw.RPC_QUEST_START_TIMER_CALLED, {
                 application_id: i,
                 quest_id: n
-            }), l.h.dispatch({
+            }), a.h.dispatch({
                 type: "QUEST_APPLICATION_START_TIMER",
                 questId: n,
                 applicationId: i

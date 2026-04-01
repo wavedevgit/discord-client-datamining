@@ -14,8 +14,8 @@ var n = t(630054),
     u = t(853397),
     m = t(290090),
     A = t(697250),
-    p = t(102951),
-    x = t(652215);
+    x = t(102951),
+    p = t(652215);
 
 function g(e) {
     let {
@@ -39,10 +39,10 @@ function g(e) {
         gameFriends: T,
         hasOutgoingPendingGameFriends: C,
         hasIncomingPendingGameFriends: _
-    } = (0, p.J)({
+    } = (0, x.J)({
         userId: l.id
     }), b = T.length > 0 || C || _;
-    return I === x.eA$.BLOCKED ? null : l.id === t.id ? N ? (0, i.jsxs)(i.Fragment, {
+    return I === p.eA$.BLOCKED ? null : l.id === t.id ? N ? (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(c.e, {
             userId: l.id,
             variant: "primary",
@@ -76,7 +76,7 @@ function g(e) {
             guildId: g,
             viewProfileItem: E
         })]
-    }) : I === x.eA$.PENDING_INCOMING ? (0, i.jsxs)(i.Fragment, {
+    }) : I === p.eA$.PENDING_INCOMING ? (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(c.e, {
             userId: l.id,
             onClose: n.A.popAll,
@@ -87,7 +87,7 @@ function g(e) {
             user: l,
             guildId: g
         })]
-    }) : I === x.eA$.FRIEND || I === x.eA$.PENDING_OUTGOING ? (0, i.jsxs)(i.Fragment, {
+    }) : I === p.eA$.FRIEND || I === p.eA$.PENDING_OUTGOING ? (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(c.e, {
             userId: l.id,
             onClose: n.A.popAll,
@@ -103,7 +103,7 @@ function g(e) {
             guildId: g,
             viewProfileItem: E
         })]
-    }) : I === x.eA$.NONE && b ? (0, i.jsxs)(i.Fragment, {
+    }) : I === p.eA$.NONE && b ? (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(c.e, {
             userId: l.id,
             onClose: n.A.popAll,

@@ -1,6 +1,6 @@
 /** chunk id: 641819 params = (module,exports,require) **/
 t.d(n, {
-    j: () => h
+    j: () => g
 });
 var i = t(627968),
     l = t(64700),
@@ -18,44 +18,44 @@ var i = t(627968),
     S = t(156312),
     x = t(166532),
     P = t(482132),
-    T = t(985018),
-    I = t(706360);
+    T = t(615310),
+    I = t(985018),
+    h = t(706360);
 
-function h(e) {
+function g(e) {
     let {
         handleStepChange: n
     } = e, {
         selectedPlan: t,
-        selectedSkuId: r,
-        step: h
-    } = (0, S.P5)(), {
-        setSelectedGiftingPromotionReward: g,
-        selectedGiftingPromotionReward: A,
-        claimableRewards: f
-    } = (0, _.Pv)(), j = (0, a.bG)([E.default], () => E.default.getCurrentUser()), R = (0, a.yK)([p.A], () => p.A.getGiftPromotionRewardSkuIds()), C = (0, c.U)(f, A), [M, N] = l.useState(C), [O, y] = l.useState(!1);
+        selectedSkuId: r
+    } = (0, S.P5)(), g = (0, T.bB)(), {
+        setSelectedGiftingPromotionReward: A,
+        selectedGiftingPromotionReward: f,
+        claimableRewards: j
+    } = (0, _.Pv)(), R = (0, a.bG)([E.default], () => E.default.getCurrentUser()), M = (0, a.yK)([p.A], () => p.A.getGiftPromotionRewardSkuIds()), C = (0, c.U)(j, f), [N, O] = l.useState(C), [y, v] = l.useState(!1);
     l.useEffect(() => {
-        O || null != A || null == C || (g(C), N(C))
-    }, [C, O, A, g]), s()(null != t, "Expected plan to selected"), s()(null != r, "Expected selectedSkuId"), s()(null != h, "Step should be set");
-    let v = l.useMemo(() => null != M && (f ?? []).includes(M), [M, f]),
-        b = l.useMemo(() => 0 === R.length || null == M || !v, [R, M, v]);
+        y || null != f || null == C || (A(C), O(C))
+    }, [C, y, f, A]), s()(null != t, "Expected plan to selected"), s()(null != r, "Expected selectedSkuId"), s()(null != g, "Step should be set");
+    let b = l.useMemo(() => null != N && (j ?? []).includes(N), [N, j]),
+        k = l.useMemo(() => 0 === M.length || null == N || !b, [M, N, b]);
     l.useEffect(() => {
-        if (0 === R.length) {
-            N(void 0), g(void 0);
+        if (0 === M.length) {
+            O(void 0), A(void 0);
             return
         }
-        null != M && v && R.includes(M) || null == M || (N(void 0), g(void 0))
-    }, [R, v, M, g]);
-    let k = e => {
-            g(e), N(e), y(!0)
+        null != N && b && M.includes(N) || null == N || (O(void 0), A(void 0))
+    }, [M, b, N, A]);
+    let U = e => {
+            A(e), O(e), v(!0)
         },
-        U = R.map(e => (0, i.jsx)(d.k, {
+        w = M.map(e => (0, i.jsx)(d.k, {
             skuId: e,
-            claimed: null != f && !f.includes(e),
-            user: j,
-            onSelect: k,
-            selectedSkuId: M
+            claimed: null != j && !j.includes(e),
+            user: R,
+            onSelect: U,
+            selectedSkuId: N
         }, e)),
-        w = (0, i.jsx)(P.UX, {
+        D = (0, i.jsx)(P.UX, {
             children: (0, i.jsx)(m.Z, {
                 onStepChange: n,
                 onBackClick: () => n(x.pn.PLAN_SELECT),
@@ -63,24 +63,24 @@ function h(e) {
                 showBackButton: !0,
                 planOptions: [t.id],
                 selectedPlanId: t.id,
-                isNextDisabled: b
+                isNextDisabled: k
             })
         });
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(o.rQ0, {
             titleTextVariant: "heading-lg/semibold",
-            title: T.intl.string(T.t.OEtqpm),
-            subtitle: T.intl.string(T.t.h2nMp0)
+            title: I.intl.string(I.t.OEtqpm),
+            subtitle: I.intl.string(I.t.h2nMp0)
         }), (0, i.jsx)(o.cwr, {
             children: (0, i.jsx)(u.BJc, {
                 direction: "vertical",
                 justify: "center",
                 align: "center",
                 children: (0, i.jsx)("div", {
-                    className: I.Dq,
-                    children: U
+                    className: h.Dq,
+                    children: w
                 })
             })
-        }), w]
+        }), D]
     })
 }

@@ -1,6 +1,6 @@
 /** chunk id: 626031 params = (module,exports,require) **/
 l.d(t, {
-    A: () => g
+    A: () => f
 });
 var a = l(627968),
     n = l(64700),
@@ -9,22 +9,22 @@ var a = l(627968),
     o = l(773690),
     s = l(397927),
     u = l(475743),
-    c = l(626584),
-    d = l(572009),
+    d = l(626584),
+    c = l(572009),
     p = l(14115),
     m = l(115093),
     h = l(132182);
-let x = new c.A("BalanceCounter"),
-    b = (0, d._$)(void 0) === m.B.PRODUCTION,
+let x = new d.A("BalanceCounter"),
+    b = (0, c._$)(void 0) === m.B.PRODUCTION,
     y = e => null == e ? 0 : `${e.toFixed(0)}`.length,
-    f = e => {
+    g = e => {
         let {
             value: t,
             onSetDigitCount: l,
             onValueChange: r,
             onValueReached: i,
             targetTotalCounterTime: u = 3e3
-        } = e, [c, d] = (0, n.useState)(0), m = (0, n.useRef)(null), h = (0, n.useRef)(null);
+        } = e, [d, c] = (0, n.useState)(0), m = (0, n.useRef)(null), h = (0, n.useRef)(null);
         (0, n.useEffect)(() => {
             if (null === t) return;
             if (null === m.current) {
@@ -37,54 +37,54 @@ let x = new c.A("BalanceCounter"),
                 totalDelta: Math.abs(e)
             }
         }, [t, r]);
-        let f = t ?? 0,
-            g = m.current ?? f,
+        let g = t ?? 0,
+            f = m.current ?? g,
             {
                 duration: v,
-                delay: E
-            } = (0, p.Y)(f - g, u),
+                delay: _
+            } = (0, p.Y)(g - f, u),
             {
-                number: _
+                number: E
             } = (0, s.zhh)({
                 from: {
-                    number: m.current ?? f
+                    number: m.current ?? g
                 },
-                number: f,
+                number: g,
                 config: {
                     mass: 1,
                     tension: 20,
                     friction: 10,
                     duration: v
                 },
-                delay: E,
+                delay: _,
                 onStart: () => {
-                    l(y(g))
+                    l(y(f))
                 },
                 onRest: () => {
-                    if (d(c + 1), i(), !b && null !== h.current && null !== m.current) {
+                    if (c(d + 1), i(), !b && null !== h.current && null !== m.current) {
                         let e = Date.now();
                         x.log("Balance Counter finished updating: ", {
                             time: e - h.current.lastChangedAt,
-                            delta: f - m.current
+                            delta: g - m.current
                         })
                     }
-                    l(y(f)), m.current = f
+                    l(y(g)), m.current = g
                 }
             }),
-            C = y(Math.max(t ?? 0, _.get()));
+            C = y(Math.max(t ?? 0, E.get()));
         return (0, a.jsx)(o.animated.div, {
             style: {
                 width: `calc(${C}ch)`
             },
-            children: _.to(e => `${e.toFixed(0)}`)
+            children: E.to(e => `${e.toFixed(0)}`)
         })
     },
-    g = e => {
+    f = e => {
         let {
             value: t,
             className: l,
             ...r
-        } = e, o = null === t, [c, d] = (0, n.useState)(null), p = (0, n.useMemo)(() => y(t), [t]), m = (0, u.A)(p) ?? 0, x = (0, n.useMemo)(() => null === c ? Math.max(m, p) : Math.max(p, c), [m, p, c]), b = `${o?0:x}ch`;
+        } = e, o = null === t, [d, c] = (0, n.useState)(null), p = (0, n.useMemo)(() => y(t), [t]), m = (0, u.A)(p) ?? 0, x = (0, n.useMemo)(() => null === d ? Math.max(m, p) : Math.max(p, d), [m, p, d]), b = `${o?0:x}ch`;
         return (0, a.jsx)(s.Text, {
             variant: "text-md/semibold",
             className: i()(h.S, o ? void 0 : h.r, l),
@@ -92,9 +92,9 @@ let x = new c.A("BalanceCounter"),
                 width: b,
                 opacity: o ? "0" : 1
             },
-            children: o ? null : (0, a.jsx)(f, {
+            children: o ? null : (0, a.jsx)(g, {
                 onSetDigitCount: e => {
-                    e !== c && d(e)
+                    e !== d && c(e)
                 },
                 value: t,
                 ...r

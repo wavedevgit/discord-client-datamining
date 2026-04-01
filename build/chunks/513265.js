@@ -13,8 +13,8 @@ var i = t(627968),
     u = t(606758),
     m = t(518477),
     A = t(985018),
-    p = t(439510),
-    x = t(886981);
+    x = t(439510),
+    p = t(886981);
 let g = {
         [m.jM.WIDGET_ADDED]: {
             message: A.intl.string(A.t.fFP1Uy),
@@ -58,10 +58,10 @@ let g = {
             type: n
         } = e;
         return (0, i.jsxs)("div", {
-            className: a()(x.oR, p.oR),
+            className: a()(p.oR, x.oR),
             "data-type": n,
             children: [(0, i.jsx)("div", {
-                className: p.RC,
+                className: x.RC,
                 children: t
             }), (0, i.jsx)(d.Text, {
                 color: "text-strong",
@@ -73,7 +73,7 @@ let g = {
     h = e => {
         let {
             className: l
-        } = e, t = (0, u.fu)(), s = (0, o.bG)([c.A], () => c.A.useReducedMotion), [m, A] = n.useState(!1), [x, h] = n.useState(null);
+        } = e, t = (0, u.fu)(), s = (0, o.bG)([c.A], () => c.A.useReducedMotion), [m, A] = n.useState(!1), [p, h] = n.useState(null);
         n.useEffect(() => {
             null !== t ? (A(!0), h(g[t]), d.ORC.announce(g[t].message)) : A(!1)
         }, [t]);
@@ -105,11 +105,11 @@ let g = {
                 return () => clearTimeout(e)
             }
         }, [m]), (0, i.jsx)(i.Fragment, {
-            children: j((e, t) => t && null !== x && (0, i.jsx)(r.animated.div, {
-                className: a()(l, p.Jt),
+            children: j((e, t) => t && null !== p && (0, i.jsx)(r.animated.div, {
+                className: a()(l, x.Jt),
                 style: e,
                 children: (0, i.jsx)(f, {
-                    ...x
+                    ...p
                 })
             }))
         })

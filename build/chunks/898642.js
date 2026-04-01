@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var l = n(311907),
-    a = n(827734),
+var a = n(311907),
+    l = n(827734),
     r = n(397927),
     s = n(189252),
     o = n(287809),
@@ -18,13 +18,13 @@ var l = n(311907),
 function _(e) {
     let {
         focusSectionProps: t
-    } = e, n = (0, l.bG)([o.default], () => o.default.getCurrentUser()), _ = (0, u.mv)(n);
+    } = e, n = (0, a.bG)([o.default], () => o.default.getCurrentUser()), _ = (0, u.mv)(n);
     return (0, i.jsx)(r.MzZ, {
         href: c.C,
         target: "_blank",
         tabIndex: -1,
         children: (0, i.jsx)(s.A, {
-            color: _ ? a.A.unsafe_rawColors.GREEN_360.css : "currentColor",
+            color: _ ? l.A.unsafe_rawColors.GREEN_360.css : "currentColor",
             onClick: () => d.default.track(A.HAw.HELP_CLICKED, {
                 highlighted: _
             }),

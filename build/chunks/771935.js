@@ -38,7 +38,6 @@ function p() {
                 color: "text-strong",
                 children: h.intl.string(h.t.UKgg5N)
             }), (0, i.jsx)(g.I, {
-                guildId: t?.id,
                 canManageGuild: p,
                 premiumProgressBarEnabled: t.premiumProgressBarEnabled
             }), (0, i.jsx)("div", {

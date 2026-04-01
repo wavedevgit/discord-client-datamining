@@ -3,9 +3,9 @@ n.d(t, {
     L: () => S
 });
 var i = n(627968),
-    l = n(64700),
-    a = n(503698),
-    r = n.n(a),
+    a = n(64700),
+    l = n(503698),
+    r = n.n(l),
     s = n(158954),
     o = n(51264),
     d = n(820284),
@@ -40,8 +40,8 @@ function N(e) {
         })
     })
 }
-let S = l.memo(function() {
-    let e = l.useRef(null);
+let S = a.memo(function() {
+    let e = a.useRef(null);
     (0, c.i4)(e, e => {
         let {
             height: t

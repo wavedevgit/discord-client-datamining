@@ -14,8 +14,8 @@ var i = n(627968),
     m = n(915089),
     g = n(250253),
     _ = n(2242),
-    A = n(985018),
-    x = n(15581);
+    x = n(985018),
+    A = n(15581);
 let h = e => {
         let {
             transitionState: t,
@@ -46,7 +46,7 @@ let h = e => {
             }
         })(f), C = async () => {
             await S(h.id) && p()
-        }, N = l.role_benefits.benefits.filter(e => e.ref_type === _.bN.CHANNEL), v = l.role_benefits.benefits.filter(e => e.ref_type === _.bN.INTANGIBLE), I = a()(h.currentPeriodEnd).format("MMMM Do, YYYY"), j = A.intl.formatToPlainString(A.t.KsMRP5, {
+        }, N = l.role_benefits.benefits.filter(e => e.ref_type === _.bN.CHANNEL), v = l.role_benefits.benefits.filter(e => e.ref_type === _.bN.INTANGIBLE), I = a()(h.currentPeriodEnd).format("MMMM Do, YYYY"), j = x.intl.formatToPlainString(x.t.KsMRP5, {
             numChannels: N.length,
             numAdditionalBenefits: v.length,
             subscriptionEndDate: I
@@ -55,16 +55,16 @@ let h = e => {
             transitionState: t,
             "aria-labelledby": T,
             actions: [{
-                text: A.intl.string(A.t.EP6EPb),
+                text: x.intl.string(x.t.EP6EPb),
                 variant: "secondary",
                 onClick: p
             }, {
                 variant: "critical-primary",
-                text: A.intl.string(A.t.F6lUDF),
+                text: x.intl.string(x.t.F6lUDF),
                 onClick: C,
                 loading: b
             }],
-            title: A.intl.string(A.t.O6l5tM),
+            title: x.intl.string(x.t.O6l5tM),
             subtitle: j,
             onClose: p,
             children: (0, i.jsxs)(o.BJc, {
@@ -75,7 +75,7 @@ let h = e => {
                 }) : null, (0, i.jsx)(g.x, {
                     listingId: l.id,
                     guildId: n.guild_id,
-                    className: x.P
+                    className: A.P
                 })]
             })
         })

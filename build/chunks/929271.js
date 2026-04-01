@@ -1,9 +1,9 @@
 /** chunk id: 929271 params = (module,exports,require) **/
 n.d(t, {
-    c: () => a
+    c: () => l
 });
 var i = n(627968),
-    l = n(836972);
-let a = () => (0, i.jsx)("div", {
-    className: l.y
+    a = n(836972);
+let l = () => (0, i.jsx)("div", {
+    className: a.y
 })

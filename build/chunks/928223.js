@@ -4,8 +4,8 @@ t.d(n, {
 });
 var i = t(627968);
 t(64700);
-var s = t(347805),
-    a = t(183555),
+var a = t(347805),
+    s = t(183555),
     l = t(716804),
     r = t(900179),
     o = t(518477),
@@ -17,11 +17,11 @@ function u(e) {
         userId: n
     } = e, t = (0, l.g)(), {
         trackUserProfileAction: u
-    } = (0, a.NJ)();
+    } = (0, s.NJ)();
     return (0, i.jsx)(r.A, {
         heading: d.intl.string(d.t["mQKv+v"]),
         scrollTargetId: o.bk.NOTE,
-        children: (0, i.jsx)(s.A, {
+        children: (0, i.jsx)(a.A, {
             userId: n,
             className: c.N,
             autoFocus: t === o.bk.NOTE,

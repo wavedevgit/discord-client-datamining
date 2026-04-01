@@ -1,6 +1,6 @@
 /** chunk id: 868018 params = (module,exports,require) **/
 n.d(t, {
-    O: () => x
+    O: () => A
 });
 var i = n(627968),
     s = n(311907),
@@ -51,7 +51,7 @@ let _ = {
             }
         }
     },
-    A = (0, a.AK)(u.X.PROFILE_PRIVACY_TO_ACTIVITY_PRIVACY_NAVIGATOR, {
+    x = (0, a.AK)(u.X.PROFILE_PRIVACY_TO_ACTIVITY_PRIVACY_NAVIGATOR, {
         useSubtitle: function() {
             let e = g();
             if (0 === e.length) return m.intl.format(m.t.QJIJ5p, {});
@@ -70,6 +70,6 @@ let _ = {
         },
         destinationKey: u.X.ACTIVITY_PRIVACY_PANEL
     }),
-    x = (0, a.gN)(u.X.PROFILE_PRIVACY_RELATED_SETTINGS, {
-        buildLayout: () => [A]
+    A = (0, a.gN)(u.X.PROFILE_PRIVACY_RELATED_SETTINGS, {
+        buildLayout: () => [x]
     })

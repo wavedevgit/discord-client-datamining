@@ -14,8 +14,8 @@ var i = n(627968),
     m = n(128450),
     g = n(597551),
     _ = n(287809),
-    A = n(581781),
-    x = n(743981),
+    x = n(581781),
+    A = n(743981),
     h = n(355097),
     p = n(985018),
     T = n(591470);
@@ -33,7 +33,7 @@ let f = (0, o.Ld)(),
             let t = S.get(e.value);
             if (null == t) return null;
             let n = t.profile?.tag;
-            return null == n ? null : (0, i.jsx)(A.A, {
+            return null == n ? null : (0, i.jsx)(x.A, {
                 guildTag: n,
                 guildBadge: t.profile?.badge ?? void 0,
                 guildId: t.id,
@@ -60,7 +60,7 @@ let f = (0, o.Ld)(),
                 guildId: t.id,
                 guildTag: n,
                 guildBadge: t.profile?.badge ?? void 0,
-                badgeSize: x.Sl.SIZE_16,
+                badgeSize: A.Sl.SIZE_16,
                 textColor: "interactive-text-default",
                 textVariant: "text-sm/semibold"
             })

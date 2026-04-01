@@ -15,11 +15,11 @@ var i = n(627968),
     m = n(652215),
     g = n(842130),
     _ = n(985018),
-    A = n(75262);
-let x = [18, 18, 16, 16, 14, 12, 10];
+    x = n(75262);
+let A = [18, 18, 16, 16, 14, 12, 10];
 
 function h(e) {
-    return x[e.length - 1] ?? x[x.length - 1]
+    return A[e.length - 1] ?? A[A.length - 1]
 }
 let p = s.memo(e => {
     let {
@@ -28,23 +28,23 @@ let p = s.memo(e => {
         customSubtext: s
     } = e, l = (0, r.bG)([c.A], () => c.A.getGuild(t));
     if (void 0 === l) return null;
-    let x = l.features.has(m.GuildFeatures.VERIFIED) || l.features.has(m.GuildFeatures.PARTNERED),
+    let A = l.features.has(m.GuildFeatures.VERIFIED) || l.features.has(m.GuildFeatures.PARTNERED),
         {
             name: h
         } = l;
     return (0, i.jsxs)("div", {
-        className: a()(A.kL, n),
+        className: a()(x.kL, n),
         children: [(0, i.jsx)(u.A, {
             guildId: t
         }), (0, i.jsxs)("div", {
-            className: A.$z,
+            className: x.$z,
             children: [(0, i.jsxs)("div", {
-                className: A.wx,
-                children: [x ? (0, i.jsx)(d.A, {
+                className: x.wx,
+                children: [A ? (0, i.jsx)(d.A, {
                     guild: l,
                     tooltipPosition: "bottom",
                     tooltipColor: o.STz.Colors.PRIMARY,
-                    className: A.n2
+                    className: x.n2
                 }) : null, (0, i.jsx)(o.Text, {
                     variant: "text-md/semibold",
                     children: h

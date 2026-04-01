@@ -1,6 +1,6 @@
 /** chunk id: 911726 params = (module,exports,require) **/
 n.d(t, {
-    Ay: () => w
+    Ay: () => B
 });
 var i, l = n(627968),
     a = n(64700),
@@ -385,7 +385,7 @@ function F(e) {
     })
 }
 
-function w(e) {
+function B(e) {
     let {
         message: t,
         compact: n,

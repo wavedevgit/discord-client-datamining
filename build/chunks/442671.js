@@ -18,17 +18,17 @@ let g = e => {
         children: n,
         isLast: l,
         className: g
-    } = e, [_, A] = s.useState(!1), {
-        analyticsLocations: x
+    } = e, [_, x] = s.useState(!1), {
+        analyticsLocations: A
     } = (0, c.Ay)(), h = s.useCallback(() => {
         (0, u.openUserProfileModal)({
             userId: t,
-            sourceAnalyticsLocations: x
+            sourceAnalyticsLocations: A
         })
-    }, [t, x]), p = () => {
-        A(!0)
+    }, [t, A]), p = () => {
+        x(!0)
     }, T = () => {
-        A(!1)
+        x(!1)
     };
     return (0, i.jsx)(o.tG, {
         id: t,

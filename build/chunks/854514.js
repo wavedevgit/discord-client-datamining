@@ -5,9 +5,9 @@ n.d(t, {
     Hk: () => O
 });
 var i = n(627968),
-    l = n(64700),
-    a = n(503698),
-    r = n.n(a),
+    a = n(64700),
+    l = n(503698),
+    r = n.n(l),
     s = n(323889),
     o = n(311907),
     d = n(397927),
@@ -38,9 +38,9 @@ function b(e) {
     let {
         assetImage: t,
         assetVideo: n
-    } = e, a = l.useRef(null);
-    (0, E.A)(a, C.rE.QUEST_HOME_DESKTOP);
-    let s = l.useMemo(() => (null != n ? (0, h.WV)(n.url) : null) ?? t.url, [n, t]);
+    } = e, l = a.useRef(null);
+    (0, E.A)(l, C.rE.QUEST_HOME_DESKTOP);
+    let s = a.useMemo(() => (null != n ? (0, h.WV)(n.url) : null) ?? t.url, [n, t]);
     return null == n ? (0, i.jsxs)("div", {
         className: S.Tv,
         children: [(0, i.jsx)(v, {}), (0, i.jsx)("div", {
@@ -72,7 +72,7 @@ function b(e) {
             children: (0, i.jsx)(p.N, {
                 showImage: !1,
                 showVideo: !0,
-                assetRef: a,
+                assetRef: l,
                 imageAsset: {
                     alt: n.altText,
                     className: S.LY,
@@ -102,13 +102,13 @@ function y(e) {
     let {
         config: t,
         onQuestCtaClick: n
-    } = e, a = (0, o.bG)([u.A], () => u.A.quests), {
+    } = e, l = (0, o.bG)([u.A], () => u.A.quests), {
         dismissQuestHomeHeroContent: r
     } = (0, f.I)();
-    l.useEffect(() => {
+    a.useEffect(() => {
         r(T.i.INDIRECT_ACTION)
     }, [r]);
-    let h = l.useMemo(() => t.ctaQuests.find(e => a.has(e.questId)), [a, t.ctaQuests]);
+    let h = a.useMemo(() => t.ctaQuests.find(e => l.has(e.questId)), [l, t.ctaQuests]);
     return (0, i.jsx)(g.R, {
         adContentId: t.campaignId,
         adCreativeType: s.p.QUEST_HOME_HERO,

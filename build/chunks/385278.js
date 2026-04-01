@@ -3,8 +3,8 @@ n.d(t, {
     G: () => s
 });
 var i = n(627968),
-    l = n(64700),
-    a = n(744682);
+    a = n(64700),
+    l = n(744682);
 let r = {
         disable: {
             name: "disable",
@@ -28,23 +28,23 @@ let r = {
         }
     },
     s = e => {
-        let t = l.useRef(null),
-            s = l.useRef(e);
+        let t = a.useRef(null),
+            s = a.useRef(e);
         s.current = e;
-        let o = l.useMemo(() => () => {
+        let o = a.useMemo(() => () => {
                 null != t.current && t.current.play(e)
             }, [e]),
-            d = l.useCallback(() => {
+            d = a.useCallback(() => {
                 if (null == t.current) return;
                 let n = "enable" === e ? "hover_disabled" : "hover_enabled";
                 t.current.play(n)
             }, [e]),
-            c = l.useCallback(() => {
+            c = a.useCallback(() => {
                 if (null == t.current) return;
                 let n = "enable" === e ? "hover_disabled" : "hover_enabled";
                 t.current.stopIfPlaying(n)
             }, [e]),
-            u = l.useCallback(e => (0, i.jsx)(a.P, {
+            u = a.useCallback(e => (0, i.jsx)(l.P, {
                 ...e,
                 src: () => n.e("24596").then(n.t.bind(n, 941983, 19)),
                 ref: t,
@@ -58,8 +58,8 @@ let r = {
                 onMouseLeave: c
             },
             play: o,
-            getDuration: l.useCallback(() => t.current?.getDuration(), []),
-            getCurrentFrame: l.useCallback(() => t.current?.getCurrentFrame() ?? null, []),
+            getDuration: a.useCallback(() => t.current?.getDuration(), []),
+            getCurrentFrame: a.useCallback(() => t.current?.getCurrentFrame() ?? null, []),
             Component: u
         }
     }

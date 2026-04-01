@@ -36,24 +36,24 @@ let x = e => {
         } = (0, u.A)(f),
         R = !P && j,
         {
-            product: C
+            product: M
         } = (0, d.q)(r);
-    if (null == C) return null;
-    let M = C.items[0];
-    return null == M ? null : ((0, c.T)(M) ? (t = a.R.AVATAR_DECORATION, n = (0, i.jsx)(m.i, {
-        item: M,
+    if (null == M) return null;
+    let C = M.items[0];
+    return null == C ? null : ((0, c.T)(C) ? (t = a.R.AVATAR_DECORATION, n = (0, i.jsx)(m.i, {
+        item: C,
         user: x,
         isHighlighted: R,
         avatarSize: o._3J.SIZE_96
-    })) : (0, p.F)(M) && (t = a.R.NAMEPLATE, n = (0, i.jsx)(E.A, {
-        nameplate: M,
+    })) : (0, p.F)(C) && (t = a.R.NAMEPLATE, n = (0, i.jsx)(E.A, {
+        nameplate: C,
         user: x,
         isHighlighted: R,
         size: "small"
     })), (0, i.jsx)(o.vN3, {
         children: (0, i.jsxs)(o.sqX, {
             ref: A,
-            "aria-label": C.name ?? "",
+            "aria-label": M.name ?? "",
             onClick: () => {
                 null == r || null == T || P || T(r)
             },
@@ -85,7 +85,7 @@ let x = e => {
                 className: S.tZ,
                 children: [(0, i.jsx)(o.Heading, {
                     variant: "heading-md/extrabold",
-                    children: C.name
+                    children: M.name
                 }), (0, i.jsx)(o.Text, {
                     variant: "text-sm/normal",
                     children: P ? _.intl.string(_.t["6cfuDj"]) : _.intl.string(_.t.QQsaCc)

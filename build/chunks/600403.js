@@ -3,8 +3,8 @@ n.d(t, {
     A: () => o
 }), n(142703);
 var i = n(954571),
-    l = n(636401),
-    a = n(722306),
+    a = n(636401),
+    l = n(722306),
     r = n(105130),
     s = n(652215);
 let o = {
@@ -16,10 +16,10 @@ let o = {
                 evt: o,
                 args: d
             } = e, c = t.events[o];
-            if (null == c) throw new l.A({
+            if (null == c) throw new a.A({
                 errorCode: s.Lw6.INVALID_EVENT
             }, `Invalid event: ${o}`);
-            if (!(0, a.A)(n.authorization.scopes, c.scope)) throw new l.A({
+            if (!(0, l.A)(n.authorization.scopes, c.scope)) throw new a.A({
                 errorCode: s.Lw6.INVALID_PERMISSIONS
             }, "Not authenticated or invalid scope");
             if (i.default.track(s.HAw.RPC_SUBSCRIPTION_REQUESTED, {
@@ -31,7 +31,7 @@ let o = {
                 let e = await t.getJoi();
                 if (null != e.validate(d, c.validation(e), {
                         convert: !1
-                    }).error) throw new l.A({
+                    }).error) throw new a.A({
                     errorCode: s.Lw6.INVALID_PAYLOAD
                 }, "Invalid subscription parameters provided")
             }
@@ -55,12 +55,12 @@ let o = {
                 server: t,
                 socket: n,
                 evt: i,
-                args: a
+                args: l
             } = e;
-            if (null == t.events[i]) throw new l.A({
+            if (null == t.events[i]) throw new a.A({
                 errorCode: s.Lw6.INVALID_EVENT
             }, `Invalid event: ${i}`);
-            return t.removeSubscription(n, i, a), {
+            return t.removeSubscription(n, i, l), {
                 evt: i
             }
         }

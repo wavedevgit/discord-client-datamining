@@ -14,8 +14,8 @@ var i = n(627968),
     m = n(49463),
     g = n(386976),
     _ = n(257433),
-    A = n(32523),
-    x = n(961350),
+    x = n(32523),
+    A = n(961350),
     h = n(71393),
     p = n(957565),
     T = n(222735),
@@ -29,7 +29,7 @@ function E() {
     } = (0, g.op)(), {
         experiments: n,
         overridesInfo: l
-    } = (0, A.hI)(), a = s.useMemo(() => ({
+    } = (0, x.hI)(), a = s.useMemo(() => ({
         ...n,
         ...e
     }), [n, e]), r = s.useMemo(() => ({
@@ -67,9 +67,9 @@ function b(e) {
         experimentId: n,
         overrideInfo: l,
         defaultOpen: g
-    } = e, [A, h] = s.useState(g), [T, E] = s.useState(!1), b = s.useCallback(() => {
+    } = e, [x, h] = s.useState(g), [T, E] = s.useState(!1), b = s.useCallback(() => {
         h(e => !e)
-    }, []), C = (0, r.bG)([x.default], () => x.default.getId()), N = (0, _.iN)(t, C), v = (0, _.Fm)(t, C), I = (0, r.yK)([m.A], () => a().sortBy(m.A.getRecentExposures(f.Vh.USER, n), e => {
+    }, []), C = (0, r.bG)([A.default], () => A.default.getId()), N = (0, _.iN)(t, C), v = (0, _.Fm)(t, C), I = (0, r.yK)([m.A], () => a().sortBy(m.A.getRecentExposures(f.Vh.USER, n), e => {
         let [t, n] = e;
         return -n
     }).map(e => {
@@ -111,7 +111,7 @@ function b(e) {
             })]
         })
     });
-    if (!A) return (0, i.jsx)("div", {
+    if (!x) return (0, i.jsx)("div", {
         className: S.Os,
         children: y
     });
@@ -177,9 +177,9 @@ function C(e) {
         experiment: t,
         experimentId: n,
         overrideInfo: l
-    } = e, [d, c] = s.useState(null != l), [g, _] = s.useState(!1), A = s.useCallback(() => {
+    } = e, [d, c] = s.useState(null != l), [g, _] = s.useState(!1), x = s.useCallback(() => {
         c(e => !e)
-    }, []), x = (0, r.bG)([m.A], () => m.A.getLoadedGuildExperiment(n)), p = (0, r.yK)([m.A], () => a().sortBy(m.A.getRecentExposures(f.Vh.GUILD, n), e => {
+    }, []), A = (0, r.bG)([m.A], () => m.A.getLoadedGuildExperiment(n)), p = (0, r.yK)([m.A], () => a().sortBy(m.A.getRecentExposures(f.Vh.GUILD, n), e => {
         let [t, n] = e;
         return -n
     }).map(e => {
@@ -197,7 +197,7 @@ function C(e) {
         let s = a()(t).keys().map(Number).sort().map(e => `${t[e]} guilds in bucket ${e}`).join(", ");
         return [i.join("\n"), s]
     }), b = (0, i.jsx)(o.DUT, {
-        onClick: A,
+        onClick: x,
         children: (0, i.jsxs)(o.Text, {
             variant: "text-md/medium",
             className: S.DD,
@@ -225,7 +225,7 @@ function C(e) {
             overrideInfo: l
         }), (0, i.jsx)("div", {
             className: S.h_,
-            children: null == x ? (0, i.jsx)(o.Text, {
+            children: null == A ? (0, i.jsx)(o.Text, {
                 variant: "text-sm/normal",
                 color: "text-subtle",
                 children: 'Warning: Server did not send any experiment config. You may need to check the "Send to Client" box in the admin UI.'
@@ -246,7 +246,7 @@ function C(e) {
             }), (0, i.jsx)(o.Text, {
                 variant: "code",
                 className: S.AS,
-                children: null == x ? "None" : JSON.stringify(x, void 0, 2)
+                children: null == A ? "None" : JSON.stringify(A, void 0, 2)
             }), (0, i.jsx)(o.Text, {
                 variant: "text-lg/medium",
                 className: S.id,

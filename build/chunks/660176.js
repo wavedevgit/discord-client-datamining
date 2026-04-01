@@ -56,7 +56,7 @@ function k(e) {
                 compact: n
             });
         case c.W.MENTION_RAID:
-            return (0, i.jsx)(w, {
+            return (0, i.jsx)(B, {
                 message: t,
                 compact: n
             });
@@ -80,7 +80,7 @@ function b(e) {
     let {
         compact: t
     } = e;
-    return (0, i.jsx)(B, {
+    return (0, i.jsx)(w, {
         compact: t,
         header: (0, i.jsxs)(l.Fragment, {
             children: [(0, i.jsx)(A.EpV, {
@@ -104,7 +104,7 @@ function G(e) {
     let {
         compact: t
     } = e;
-    return (0, i.jsx)(B, {
+    return (0, i.jsx)(w, {
         compact: t,
         header: (0, i.jsxs)(l.Fragment, {
             children: [(0, i.jsx)(A.EpV, {
@@ -137,7 +137,7 @@ function H(e) {
         guildId: r,
         size: 12
     }), m = l.useRef(null);
-    return (0, i.jsx)(B, {
+    return (0, i.jsx)(w, {
         compact: n,
         header: (0, i.jsxs)(l.Fragment, {
             children: [(0, i.jsx)(A.Hnu, {
@@ -216,7 +216,7 @@ function F(e) {
         let e = g?.guild_id;
         null != e && (0, N.is)(t.id, e)
     }, [t.id, g]), x = c === d.p.DM_RAID, R = x ? A.EpV : A.EF8;
-    return (0, i.jsx)(B, {
+    return (0, i.jsx)(w, {
         compact: n,
         header: (0, i.jsxs)(l.Fragment, {
             children: [(0, i.jsx)(R, {
@@ -288,7 +288,7 @@ function F(e) {
     })
 }
 
-function w(e) {
+function B(e) {
     let {
         message: t,
         compact: n
@@ -297,7 +297,7 @@ function w(e) {
         decisionId: s,
         suspiciousMentionActivityUntil: c
     } = (0, I.Bk)(t);
-    return (0, i.jsx)(B, {
+    return (0, i.jsx)(w, {
         compact: n,
         header: (0, i.jsxs)(l.Fragment, {
             children: [(0, i.jsx)(A.EpV, {
@@ -353,7 +353,7 @@ function w(e) {
     })
 }
 
-function B(e) {
+function w(e) {
     let {
         compact: t,
         header: n,

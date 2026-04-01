@@ -3,9 +3,9 @@ n.d(t, {
     A: () => v
 });
 var i = n(627968),
-    l = n(64700),
-    a = n(503698),
-    r = n.n(a),
+    a = n(64700),
+    l = n(503698),
+    r = n.n(l),
     s = n(877227),
     o = n(311907),
     d = n(397927),
@@ -29,21 +29,21 @@ let v = (0, u.A)(function(e) {
     let {
         width: t
     } = e, n = (0, g.c)("ICYMIPage", !1);
-    l.useEffect(() => {
+    a.useEffect(() => {
         n || (0, s.pX)(T.BVt.ME)
-    }, [n]), l.useLayoutEffect(() => {
+    }, [n]), a.useLayoutEffect(() => {
         n && c.I(T.BVt.ICYMI)
     }, [n]), (0, A.Ay)(() => {
         n && (0, m.d)("icymi")
     });
-    let a = (0, o.bG)([p.A], () => p.A.theme),
+    let l = (0, o.bG)([p.A], () => p.A.theme),
         u = (0, o.bG)([E.A], () => E.A.isRefreshing()),
-        v = l.useRef(null);
+        v = a.useRef(null);
     (0, h.HU)({
         location: N.intl.string(N.t["jnXV/V"])
     });
-    let [b, y] = l.useState(!1);
-    l.useEffect(() => {
+    let [b, y] = a.useState(!1);
+    a.useEffect(() => {
         let e = e => {
                 e.metaKey && y(!0)
             },
@@ -61,14 +61,14 @@ let v = (0, u.A)(function(e) {
         L = g.f8.useConfig({
             location: "icymi page"
         }).enabled,
-        R = l.useCallback(async e => {
+        R = a.useCallback(async e => {
             e.metaKey && L ? await (0, I.be)(T.ZSU.ACK_GRAVITY_REGENERATE_FEED_AND_CLEAR_READ_STATES_BUTTON) : await O()
         }, [O, L]),
         P = b && L ? N.intl.string(N.t.YplSn2) : N.intl.string(N.t.wzzjk9);
     return n ? (0, i.jsxs)("div", {
         className: r()(x.TE, S.kL),
         children: [(0, i.jsx)(d.NPJ, {
-            theme: a,
+            theme: l,
             children: e => (0, i.jsxs)(_.A, {
                 className: e,
                 toolbar: (0, i.jsx)(_.A.Icon, {

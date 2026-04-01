@@ -3,8 +3,8 @@ n.d(t, {
     A: () => A
 });
 var i = n(627968),
-    l = n(64700),
-    a = n(342494),
+    a = n(64700),
+    l = n(342494),
     r = n(793574),
     s = n(688810),
     o = n(979286),
@@ -18,10 +18,10 @@ let A = e => {
         onClick: A
     } = e, {
         analyticsLocations: h
-    } = (0, s.Ay)(r.A.HOME_PAGE_SHOP_TAB), _ = l.useRef(n);
-    return _.current = n, l.useEffect(() => () => {
+    } = (0, s.Ay)(r.A.HOME_PAGE_SHOP_TAB), _ = a.useRef(n);
+    return _.current = n, a.useEffect(() => () => {
         _.current?.()
-    }, []), (0, i.jsx)(a.AM, {
+    }, []), (0, i.jsx)(l.AM, {
         targetElementRef: t,
         position: "right",
         size: "md",

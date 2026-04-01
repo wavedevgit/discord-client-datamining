@@ -9,8 +9,8 @@ var a = l(627968),
     o = l(397927),
     s = l(398590),
     u = l(920050),
-    c = l(744064),
-    d = l(976860),
+    d = l(744064),
+    c = l(976860),
     p = l(652215);
 let m = {
     title: "Perks",
@@ -25,7 +25,7 @@ let m = {
                     maxWidth: "100%",
                     width: t.featured ? 752 : 364
                 },
-                children: [(0, a.jsx)(c.S, {
+                children: [(0, a.jsx)(d.S, {
                     ...t,
                     id: "test-id",
                     progress: null != t.progress && t.progress > 0 ? t.progress : void 0,
@@ -115,7 +115,7 @@ function h() {
             variant: "primary",
             size: "sm",
             onClick: () => {
-                (0, s.jH)(), (0, d.pX)(p.BVt.ME), setTimeout(() => (0, d.pX)(l), 200)
+                (0, s.jH)(), (0, c.pX)(p.BVt.ME), setTimeout(() => (0, c.pX)(l), 200)
             }
         }), (0, a.jsxs)(o.Text, {
             variant: "text-xs/normal",

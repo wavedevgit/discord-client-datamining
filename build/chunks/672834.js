@@ -40,8 +40,8 @@ var i = n(627968),
     G = n(71393),
     H = n(576705),
     F = n(290863),
-    w = n(309010),
-    B = n(287809),
+    B = n(309010),
+    w = n(287809),
     V = n(977997),
     X = n(203982),
     q = n(562153),
@@ -148,7 +148,7 @@ let ej = Object.freeze({
                 compact: l
             } = e, {
                 author: r
-            } = t, s = t.getChannelId(), o = (0, a.bG)([B.default], () => B.default.getUser(t.mentions[0]), [t]), c = q.Ay.getName(null, s, o), d = (0, Z.P)({
+            } = t, s = t.getChannelId(), o = (0, a.bG)([w.default], () => w.default.getUser(t.mentions[0]), [t]), c = q.Ay.getName(null, s, o), d = (0, Z.P)({
                 user: r,
                 channelId: s,
                 guildId: n.guild_id,
@@ -181,7 +181,7 @@ let ej = Object.freeze({
                 compact: l
             } = e, {
                 author: r
-            } = t, s = t.getChannelId(), o = (0, a.bG)([B.default], () => B.default.getUser(t.mentions[0]), [t]), c = (0, Z.P)({
+            } = t, s = t.getChannelId(), o = (0, a.bG)([w.default], () => w.default.getUser(t.mentions[0]), [t]), c = (0, Z.P)({
                 user: r,
                 channelId: s,
                 guildId: n.guild_id,
@@ -283,7 +283,7 @@ let ej = Object.freeze({
             } = e, {
                 author: r
             } = t, s = t.getChannelId(), o = l.useCallback(() => {
-                if (w.A.getChannelId() !== s) {
+                if (B.A.getChannelId() !== s) {
                     let e = b.A.getChannel(s);
                     null != e && (0, M.uh)(e.guild_id, e.id)
                 }
@@ -655,7 +655,7 @@ let ej = Object.freeze({
             let {
                 message: t,
                 channel: n
-            } = e, l = t.giftingPrompt, r = (0, a.bG)([B.default], () => B.default.getUser(l?.recipientUserId));
+            } = e, l = t.giftingPrompt, r = (0, a.bG)([w.default], () => w.default.getUser(l?.recipientUserId));
             return null == l || null == r ? null : (0, i.jsx)(J.A, {
                 giftIntentType: l.giftIntentType,
                 recipientUser: r,

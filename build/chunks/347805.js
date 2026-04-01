@@ -18,16 +18,16 @@ function A(e) {
         autoFocus: l = !1,
         className: t,
         userId: A,
-        onUpdate: p
-    } = e, x = (0, s.bG)([d.A], () => d.A.hidePersonalInformation), {
+        onUpdate: x
+    } = e, p = (0, s.bG)([d.A], () => d.A.hidePersonalInformation), {
         loading: g,
         note: f
     } = (0, o.A)(A), h = n.useRef(null);
     return (n.useEffect(() => {
-        if (!l || x) return;
+        if (!l || p) return;
         let e = h.current;
         e?.selectionStart != null && (e.focus(), e.setSelection(e.value.length, e.value.length))
-    }, [l, x]), x) ? null : (0, i.jsx)("div", {
+    }, [l, p]), p) ? null : (0, i.jsx)("div", {
         className: t,
         children: (0, i.jsx)(a.d4u, {
             ref: h,
@@ -37,7 +37,7 @@ function A(e) {
             "aria-label": u.intl.string(u.t.PbMNh2),
             onBlur: e => {
                 let l = e.currentTarget.value;
-                (f ?? "") !== l && (p?.(), r.A.updateNote(A, l))
+                (f ?? "") !== l && (x?.(), r.A.updateNote(A, l))
             },
             onKeyPress: e => {
                 13 === e.which ? e.shiftKey ? (e.currentTarget.value.match(/\n/g) ?? []).length >= 5 && e.preventDefault() : (e.preventDefault(), e.currentTarget.blur()) : e.which === c.Ks6.SPACE && e.stopPropagation()

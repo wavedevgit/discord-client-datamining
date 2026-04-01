@@ -14,8 +14,8 @@ var i = n(627968),
     m = n(115063),
     g = n(104954),
     _ = n(975648),
-    A = n(106148),
-    x = n(652215),
+    x = n(106148),
+    A = n(652215),
     h = n(985018),
     p = n(850605);
 
@@ -31,22 +31,22 @@ function T() {
         [T, f] = s.useState(!1);
     if (null == e) return null;
     let S = (0, m.Oj)(t, e) || l,
-        E = null != t && a()().diff(a()(t.created_at), "days") < x.n83,
+        E = null != t && a()().diff(a()(t.created_at), "days") < A.n83,
         b = S && E,
         C = e.isStaff(),
         N = !e.verified;
-    return (0, i.jsxs)(A.h, {
-        children: [(0, i.jsx)(A._, {
+    return (0, i.jsxs)(x.h, {
+        children: [(0, i.jsx)(x._, {
             header: h.intl.string(h.t.XAHCgJ),
             description: h.intl.format(h.t.P3kNfr, {
-                helpdeskArticle: u.A.getArticleURL(x.MVz.GDPR_REQUEST_DATA)
+                helpdeskArticle: u.A.getArticleURL(A.MVz.GDPR_REQUEST_DATA)
             })
         }), b ? (0, i.jsx)(o.ZpM, {
             className: p.N,
             children: (0, i.jsx)(o.Text, {
                 variant: "text-md/normal",
                 children: h.intl.format(h.t.RNDlV9, {
-                    date: a()(t.created_at).add(x.n83, "days").format("MMMM Do YYYY")
+                    date: a()(t.created_at).add(A.n83, "days").format("MMMM Do YYYY")
                 })
             })
         }) : C ? (0, i.jsx)(o.ZpM, {

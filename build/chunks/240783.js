@@ -1,10 +1,10 @@
 /** chunk id: 240783 params = (module,exports,require) **/
 t.d(n, {
-    A: () => h
+    A: () => b
 });
 var i = t(627968),
-    s = t(64700),
-    a = t(311907),
+    a = t(64700),
+    s = t(311907),
     l = t(397927),
     r = t(351906),
     o = t(183555),
@@ -15,23 +15,23 @@ var i = t(627968),
     A = t(86404),
     x = t(738759),
     p = t(518477),
-    m = t(985018),
-    g = t(643146),
+    g = t(985018),
+    m = t(643146),
     I = t(843796);
 
 function f(e) {
     let {
         section: n,
         user: t,
-        currentUser: s,
-        displayProfile: a,
+        currentUser: a,
+        displayProfile: s,
         guildId: l,
         channelId: r,
         onClose: o
     } = e;
     return n === p.RP.ACTIVITY ? (0, i.jsx)(u.A, {
         user: t,
-        currentUser: s,
+        currentUser: a,
         guildId: l,
         onClose: o
     }) : n === p.RP.MUTUAL_FRIENDS ? (0, i.jsx)(A.A, {
@@ -46,17 +46,17 @@ function f(e) {
         user: t
     }) : n === p.RP.BOT_INFO ? (0, i.jsx)(c.A, {
         user: t,
-        displayProfile: a,
+        displayProfile: s,
         guildId: l,
         onClose: o
     }) : (0, i.jsx)(_.A, {
         user: t,
-        displayProfile: a,
+        displayProfile: s,
         onClose: o
     })
 }
 
-function h(e) {
+function b(e) {
     let {
         user: n,
         currentUser: t,
@@ -67,30 +67,30 @@ function h(e) {
         onClose: A
     } = e, {
         trackUserProfileAction: x
-    } = (0, o.NJ)(), h = (0, a.bG)([r.A], () => r.A.hidePersonalInformation), [b, j] = s.useState(() => u.find(e => {
+    } = (0, o.NJ)(), b = (0, s.bG)([r.A], () => r.A.hidePersonalInformation), [h, j] = a.useState(() => u.find(e => {
         let {
             section: n
         } = e;
         return n === _
     })?.section ?? u[0]?.section);
-    s.useEffect(() => {
-        null == u.find(e => e.section === b) && j(u[0].section)
-    }, [u, b]);
-    let v = s.useCallback(e => {
+    a.useEffect(() => {
+        null == u.find(e => e.section === h) && j(u[0].section)
+    }, [u, h]);
+    let v = a.useCallback(e => {
         x({
             action: "PRESS_SECTION",
             section: e
         }), j(e)
     }, [x]);
-    return h ? (0, i.jsx)("div", {
+    return b ? (0, i.jsx)("div", {
         className: I.kL,
         children: (0, i.jsxs)("div", {
-            className: g.Ie,
+            className: m.Ie,
             children: [(0, i.jsx)("div", {
-                className: g.hB
+                className: m.hB
             }), (0, i.jsx)("div", {
-                className: g.BI,
-                children: m.intl.string(m.t.Br1ls3)
+                className: m.BI,
+                children: g.intl.string(g.t.Br1ls3)
             })]
         })
     }) : (0, i.jsxs)("div", {
@@ -98,7 +98,7 @@ function h(e) {
         children: [(0, i.jsx)(l.VQ0, {
             className: I.$H,
             type: "top",
-            selectedItem: b,
+            selectedItem: h,
             onItemSelect: v,
             children: u.map(e => {
                 let {
@@ -117,7 +117,7 @@ function h(e) {
             })
         }), (0, i.jsx)(f, {
             items: u,
-            section: b,
+            section: h,
             user: n,
             currentUser: t,
             displayProfile: d,

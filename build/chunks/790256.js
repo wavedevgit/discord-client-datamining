@@ -14,8 +14,8 @@ var i = n(627968),
     m = n(339048),
     g = n(736653),
     _ = n(46054),
-    A = n(807055),
-    x = n(264779),
+    x = n(807055),
+    A = n(264779),
     h = n(35587),
     p = n(982311),
     T = n(725807),
@@ -45,9 +45,9 @@ function D(e) {
         [m, h] = s.useState(!1),
         T = () => u(e => !e),
         f = (0, g.Ay)(),
-        S = (0, x.WD)(n.id, f),
+        S = (0, A.WD)(n.id, f),
         E = null != l,
-        b = (0, A.A)(n, E);
+        b = (0, x.A)(n, E);
     E && d ? t = P.intl.format(P.t.pkxVx6, {
         endDate: b,
         onClickDetails: T
@@ -129,20 +129,20 @@ let G = function() {
         l = (0, d.bG)([E.default], () => N.Ay.isPremiumExactly(E.default.getCurrentUser(), R.PremiumTypes.TIER_2)),
         r = (0, d.bG)([E.default], () => !N.Ay.isPremium(E.default.getCurrentUser())),
         g = o().groupBy(t, e => (0, C.Kx)(e.skuId, e.subscriptionPlanId, e.giftStyle)),
-        [_, A] = s.useState(!1);
+        [_, x] = s.useState(!1);
     s.useEffect(() => {
         u.h.wait(() => {
-            (0, m.XJ)().then(() => A(!0))
+            (0, m.XJ)().then(() => x(!0))
         })
     }, []);
     let {
-        promotionsLoaded: x,
+        promotionsLoaded: A,
         activeOutboundPromotions: p,
         claimedEndedOutboundPromotions: G,
         claimedOutboundPromotionCodeMap: M,
         addClaimedOutboundPromotionCode: k
     } = (0, h.y7)(), U = p.length + G.length > 0, w = r && U;
-    return _ && x ? (0, i.jsxs)(i.Fragment, {
+    return _ && A ? (0, i.jsxs)(i.Fragment, {
         children: [function() {
             let e = n.find(e => e.giftCodeBatchId === R.FB && !e.consumed),
                 t = n.filter(e => e.giftCodeBatchId === R.Bu && !e.consumed) ?? [],

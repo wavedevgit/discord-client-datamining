@@ -4,8 +4,8 @@ n.d(t, {
     default: () => _
 });
 var i = n(627968),
-    l = n(64700),
-    a = n(158954),
+    a = n(64700),
+    l = n(158954),
     r = n(397927),
     s = n(817281),
     o = n(429913),
@@ -20,8 +20,8 @@ function _(e) {
         applicationId: t,
         transitionState: n,
         onClose: _
-    } = e, [m, p] = l.useState(!1), [g] = (0, o.A)([t]), E = g?.name ?? "This Activity";
-    l.useEffect(() => {
+    } = e, [m, p] = a.useState(!1), [g] = (0, o.A)([t]), E = g?.name ?? "This Activity";
+    a.useEffect(() => {
         d.default.track(u.HAw.OPEN_MODAL, {
             type: h
         })
@@ -39,7 +39,7 @@ function _(e) {
             application_id: t
         }), c.Ay.setEnableHardwareAcceleration(!0), await I()
     };
-    return (0, i.jsx)(a.Modal, {
+    return (0, i.jsx)(l.Modal, {
         size: "md",
         transitionState: n,
         onClose: I,

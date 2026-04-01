@@ -4,16 +4,16 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var l = n(485947),
-    a = n(919778);
+var a = n(485947),
+    l = n(919778);
 
 function r(e) {
     let {
         title: t,
         id: n
     } = e;
-    return (0, i.jsx)(l.A, {
-        className: a.D,
+    return (0, i.jsx)(a.A, {
+        className: l.D,
         id: n,
         children: t
     })

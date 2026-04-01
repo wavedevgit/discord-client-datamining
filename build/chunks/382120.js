@@ -4,8 +4,8 @@ t.d(n, {
 });
 var i = t(627968);
 t(64700);
-var s = t(158954),
-    a = t(311907),
+var a = t(158954),
+    s = t(311907),
     l = t(397927),
     r = t(973925),
     o = t(622543),
@@ -16,7 +16,7 @@ function u(e) {
     let {
         icon: n,
         title: t,
-        description: s
+        description: a
     } = e;
     return (0, i.jsxs)("div", {
         className: c.nM,
@@ -35,7 +35,7 @@ function u(e) {
                 children: t
             }), (0, i.jsx)(l.Text, {
                 variant: "text-sm/normal",
-                children: s
+                children: a
             })]
         })]
     })
@@ -44,12 +44,12 @@ function u(e) {
 function _(e) {
     let {
         user: n
-    } = e, t = (0, a.bG)([o.A], () => o.A.getUserProfile(n.id)?.application), {
+    } = e, t = (0, s.bG)([o.A], () => o.A.getUserProfile(n.id)?.application), {
         hasMessageContent: _,
         hasGuildPresences: A,
         hasGuildMembers: x
     } = (0, r.Z)(t);
-    return (0, i.jsxs)(s.IpV, {
+    return (0, i.jsxs)(a.IpV, {
         fade: !0,
         className: c.XG,
         children: [_ && (0, i.jsx)(u, {

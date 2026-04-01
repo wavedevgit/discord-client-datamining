@@ -22,9 +22,9 @@ let g = s.memo(function(e) {
         useTitle: n,
         layout: g,
         useCollapsedSubtitle: _
-    } = t, [A, x] = s.useState(!0), [h, p] = s.useState(() => m(t)), T = s.useRef(h), f = s.useRef(m(t) ? "navigation" : null);
+    } = t, [x, A] = s.useState(!0), [h, p] = s.useState(() => m(t)), T = s.useRef(h), f = s.useRef(m(t) ? "navigation" : null);
     s.useEffect(() => r.A.subscribe(e => e.requestAccordionOpenKey, e => {
-        e === t.key && (T.current ? o.A.notifyAccordionExpanded(t.key) : (f.current = "navigation", x(!1), p(!0)))
+        e === t.key && (T.current ? o.A.notifyAccordionExpanded(t.key) : (f.current = "navigation", A(!1), p(!0)))
     }, {
         equalityFn: (e, t) => e === t,
         fireImmediately: !0
@@ -32,7 +32,7 @@ let g = s.memo(function(e) {
     let S = s.useCallback(e => {
             if (null != e.target && h !== T.current && (T.current = h, T.current)) switch (f.current) {
                 case "navigation":
-                    x(!0), o.A.notifyAccordionExpanded(t.key);
+                    A(!0), o.A.notifyAccordionExpanded(t.key);
                     break;
                 case "user":
                     o.A.navigate(t.key, {
@@ -54,7 +54,7 @@ let g = s.memo(function(e) {
         onExpandedChange: e => {
             f.current = "user", v(), p(e)
         },
-        animate: A,
+        animate: x,
         children: g.map(e => (0, i.jsx)(d.A, {
             node: e
         }, e.key))

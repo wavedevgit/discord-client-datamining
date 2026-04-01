@@ -3,19 +3,19 @@ n.d(t, {
     A: () => A
 });
 var i = n(627968),
-    l = n(64700),
-    a = n(503698),
-    r = n.n(a),
+    a = n(64700),
+    l = n(503698),
+    r = n.n(l),
     s = n(319354),
     o = n(435371),
     d = n(397927),
     c = n(573435),
     u = n(173457);
-let A = l.forwardRef(function(e, t) {
+let A = a.forwardRef(function(e, t) {
     let {
         icon: n,
-        onClick: l,
-        selected: a = !1,
+        onClick: a,
+        selected: l = !1,
         showBadge: A = !1,
         disabled: h = !1,
         color: _,
@@ -37,9 +37,9 @@ let A = l.forwardRef(function(e, t) {
         children: (0, i.jsx)(d.DUT, {
             innerRef: t,
             tag: "div",
-            onClick: h ? void 0 : l,
+            onClick: h ? void 0 : a,
             className: r()(u.vk, {
-                [u.wH]: a,
+                [u.wH]: l,
                 [u.r9]: h
             }),
             role: "button",

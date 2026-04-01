@@ -20,14 +20,14 @@ let _ = function(e) {
         subscriptionTier: n,
         isApplicationHome: s,
         isEligibleForBogoPromotion: _
-    } = e, A = (0, o.zhh)({
+    } = e, x = (0, o.zhh)({
         transform: t ? "translateY(-100%)" : "translateY(0%)",
         opacity: +!!t,
         config: {
             tension: 120,
             friction: 12
         }
-    }), x = {
+    }), A = {
         section: m.JJy.MARKETING_FLOATING_CTA
     }, h = (0, d.Ay)(), p = (0, o.Mwr)(h);
     return (0, i.jsx)(a.animated.div, {
@@ -35,7 +35,7 @@ let _ = function(e) {
             [g.H8]: s,
             [g.q4]: !t
         }),
-        style: A,
+        style: x,
         children: (0, i.jsxs)("div", {
             className: s ? g.zW : g.iJ,
             children: [(0, i.jsx)(u.A, {
@@ -44,13 +44,13 @@ let _ = function(e) {
                     [g.Ph]: p
                 }),
                 subscriptionTier: n,
-                premiumModalAnalyticsLocation: x,
+                premiumModalAnalyticsLocation: A,
                 isPersistentCTA: !0,
                 hasActivePromotion: _,
                 shinyButtonClassName: p ? void 0 : g.PJ
             }), (0, i.jsx)(c.A, {
                 className: g.x6,
-                premiumModalAnalyticsLocation: x
+                premiumModalAnalyticsLocation: A
             })]
         })
     })

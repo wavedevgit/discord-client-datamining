@@ -10,8 +10,8 @@ var n = l(397927),
     o = l(919470),
     s = l(624716),
     u = l(872725),
-    c = l(985018);
-let d = {
+    d = l(985018);
+let c = {
         name: "Expressive Progress",
         component: i.A,
         id: "expressive-progress",
@@ -146,7 +146,7 @@ let d = {
             component: () => (0, a.jsx)(r.o, {}),
             id: "cancellation-flow",
             controls: {}
-        }, d, {
+        }, c, {
             name: "Premium Tooltip",
             component: o.A,
             id: "premium-tooltip",
@@ -154,7 +154,7 @@ let d = {
                 title: {
                     label: "Title",
                     type: "text",
-                    defaultValue: c.intl.string(c.t.lG6a5x).toUpperCase()
+                    defaultValue: d.intl.string(d.t.lG6a5x).toUpperCase()
                 },
                 body: {
                     label: "Body",

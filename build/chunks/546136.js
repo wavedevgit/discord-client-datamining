@@ -1,31 +1,32 @@
 /** chunk id: 546136 params = (module,exports,require) **/
 t.d(l, {
-    Ay: () => g,
+    Ay: () => f,
     _T: () => p,
-    oA: () => A
+    oA: () => x
 });
 var i = t(627968);
 t(64700);
 var n = t(503698),
     s = t.n(n),
     a = t(397927),
-    r = t(230635),
-    o = t(642737),
-    d = t(985018),
-    c = t(266603);
-let u = "profile-modal-editing-panel",
-    m = "profile-modal-editing-panel-heading";
+    r = t(487233),
+    o = t(230635),
+    d = t(642737),
+    c = t(985018),
+    u = t(266603);
+let m = "profile-modal-editing-panel",
+    A = "profile-modal-editing-panel-heading";
 
-function A(e) {
+function x(e) {
     let {
         onClick: l,
         className: t
     } = e;
     return (0, i.jsx)(a.DUT, {
-        "aria-label": d.intl.string(d.t.N8XQDE),
+        "aria-label": c.intl.string(c.t.N8XQDE),
         "aria-expanded": !1,
-        "aria-controls": u,
-        className: s()(c.eg, t),
+        "aria-controls": m,
+        className: s()(u.eg, t),
         onClick: l,
         children: (0, i.jsx)(a.NDp, {
             size: "sm",
@@ -42,9 +43,9 @@ function p(e) {
     return (0, i.jsx)("div", {
         className: t,
         children: (0, i.jsx)(a.K0, {
-            "aria-label": d.intl.string(d.t.N8XQDE),
+            "aria-label": c.intl.string(c.t.N8XQDE),
             "aria-expanded": !1,
-            "aria-controls": u,
+            "aria-controls": m,
             icon: a.NDp,
             onClick: l,
             variant: "secondary",
@@ -53,15 +54,15 @@ function p(e) {
     })
 }
 
-function x(e) {
+function g(e) {
     let {
         onClick: l
     } = e;
     return (0, i.jsxs)(a.DUT, {
-        className: c.cS,
-        "aria-label": d.intl.string(d.t.X6NklS),
+        className: u.cS,
+        "aria-label": c.intl.string(c.t.X6NklS),
         onClick: l,
-        "aria-controls": u,
+        "aria-controls": m,
         "aria-expanded": !0,
         children: [(0, i.jsx)(a._BQ, {
             size: "md",
@@ -73,35 +74,46 @@ function x(e) {
     })
 }
 
-function g(e) {
+function f(e) {
     let {
         selectedGuildId: l,
         onSelectGuildId: t,
         onClose: n,
-        className: A
+        className: x
     } = e;
     return (0, i.jsxs)("aside", {
-        id: u,
-        "aria-labelledby": m,
-        className: s()(c.nd, A),
+        id: m,
+        "aria-labelledby": A,
+        className: s()(u.nd, x),
         children: [(0, i.jsx)(a.AC4, {
             children: (0, i.jsx)(a.H, {
-                id: m,
-                children: d.intl.string(d.t["L+ch00"])
+                id: A,
+                children: c.intl.string(c.t["L+ch00"])
             })
         }), (0, i.jsxs)("div", {
-            className: c.wx,
-            children: [(0, i.jsx)(o.A, {
+            className: u.wx,
+            children: [(0, i.jsx)(d.A, {
                 selectedGuildId: l ?? null,
                 onChange: t
-            }), (0, i.jsx)(x, {
+            }), (0, i.jsx)(g, {
                 onClick: n
             })]
-        }), (0, i.jsx)(a.HOs, {
-            className: c.XG,
-            fade: !0,
-            children: (0, i.jsx)(r.W, {
-                guildId: l
+        }), (0, i.jsx)(a.Fmo, {
+            children: (0, i.jsx)(a.HOs, {
+                className: u.XG,
+                fade: !0,
+                children: (0, i.jsxs)("div", {
+                    className: u.Os,
+                    children: [(0, i.jsx)(a.Heading, {
+                        variant: "text-sm/medium",
+                        className: u.AM,
+                        children: c.intl.string(c.t.lqaIxI)
+                    }), (0, i.jsx)(r.m, {
+                        guildId: l
+                    }), (0, i.jsx)(o.W, {
+                        guildId: l
+                    })]
+                })
             })
         })]
     })

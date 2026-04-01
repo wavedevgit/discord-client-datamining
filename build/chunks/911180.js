@@ -1,6 +1,6 @@
 /** chunk id: 911180 params = (module,exports,require) **/
 n.d(t, {
-    A: () => x
+    A: () => A
 });
 var i = n(627968),
     s = n(64700),
@@ -14,14 +14,14 @@ var i = n(627968),
     m = n(385612),
     g = n(652215),
     _ = n(985018),
-    A = n(149255);
+    x = n(149255);
 
-function x(e) {
+function A(e) {
     let {
         onChange: t,
         onClose: n,
         color: l,
-        suggestedColors: x,
+        suggestedColors: A,
         disabled: h,
         label: p,
         colorPickerMiddle: T,
@@ -37,7 +37,7 @@ function x(e) {
             ...e,
             value: l,
             onChange: t,
-            suggestedColors: x,
+            suggestedColors: A,
             middle: T,
             footer: f,
             showEyeDropper: S
@@ -50,8 +50,8 @@ function x(e) {
             } = e;
             return (0, i.jsxs)("div", {
                 ref: E,
-                className: a()(A.oP, {
-                    [A.r9]: h
+                className: a()(x.oP, {
+                    [x.r9]: h
                 }),
                 children: [(0, i.jsx)(c.DUT, {
                     ...n,
@@ -61,14 +61,14 @@ function x(e) {
                         backgroundColor: v,
                         borderColor: I
                     },
-                    className: A.nf,
+                    className: x.nf,
                     "aria-label": _.intl.string(_.t.Qp04hK),
                     focusProps: {
                         ringTarget: E
                     },
                     children: (0, i.jsx)(c.R2l, {
                         size: "custom",
-                        className: A.BW,
+                        className: x.BW,
                         width: 14,
                         height: 14,
                         color: j

@@ -17,8 +17,8 @@ var i = n(627968),
     m = n(688810),
     g = n(47671),
     _ = n(959443),
-    A = n(692798),
-    x = n(793943),
+    x = n(692798),
+    A = n(793943),
     h = n(826673),
     p = n(422936),
     T = n(234419),
@@ -39,7 +39,7 @@ let L = () => {
     (0, h.Dr)(a.M.CLIENT_THEMES_SPARKLE_PREVIEW, {
         dismissAction: y.i.PRIMARY,
         forceTrack: !0
-    }), (0, x.nf)(x.HP.CLIENT_THEMES), (0, I.default)()
+    }), (0, A.nf)(A.HP.CLIENT_THEMES), (0, I.default)()
 };
 
 function D() {
@@ -109,12 +109,12 @@ function k() {
     }) : null
 }
 let U = () => (0, i.jsx)("div", {
-    children: (0, i.jsxs)(A.Ay, {
-        type: A.v0.SETTINGS,
-        children: [(0, i.jsx)(A.Ay.Basic, {
+    children: (0, i.jsxs)(x.Ay, {
+        type: x.v0.SETTINGS,
+        children: [(0, i.jsx)(x.Ay.Basic, {
             className: P.a6
         }), (0, i.jsx)(w, {}), (0, i.jsx)(_.A, {}), (0, i.jsxs)(M, {
-            children: [(0, i.jsx)(A.Ay.Gradient, {
+            children: [(0, i.jsx)(x.Ay.Gradient, {
                 disabled: !1,
                 renderCTAButtons: () => (0, i.jsx)(G, {})
             }), (0, i.jsx)(k, {})]
@@ -157,10 +157,10 @@ function B(e) {
     let {
         size: t
     } = e;
-    return (0, i.jsx)(A.Ay, {
-        type: A.v0.SETTINGS,
+    return (0, i.jsx)(x.Ay, {
+        type: x.v0.SETTINGS,
         children: (0, i.jsxs)(M, {
-            children: [(0, i.jsx)(A.ew, {
+            children: [(0, i.jsx)(x.ew, {
                 isCoachmark: !1,
                 renderCTAButtons: () => (0, i.jsx)(G, {}),
                 headingClassName: P.EK,
@@ -174,7 +174,7 @@ function B(e) {
                 padding: {
                     top: 24
                 },
-                children: (0, i.jsx)(A.Zg, {
+                children: (0, i.jsx)(x.Zg, {
                     disabled: !1,
                     size: t
                 })

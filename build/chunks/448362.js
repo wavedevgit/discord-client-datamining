@@ -11,10 +11,10 @@ var a = l(627968),
 l(14115);
 var s = l(305003),
     u = l(626031),
-    c = l(339763),
-    d = l(210951);
+    d = l(339763),
+    c = l(210951);
 let p = () => (0, a.jsx)("img", {
-        className: d.V8,
+        className: c.V8,
         src: l(324292),
         alt: ""
     }),
@@ -27,9 +27,9 @@ let p = () => (0, a.jsx)("img", {
             onClick: x,
             onMouseDown: b,
             disabled: y,
-            isInModalOverlay: f,
-            className: g
-        } = e, [v, E] = (0, n.useState)(!1), _ = (0, n.useMemo)(() => m === s.k.SELECTED ? d.wH : v ? d.mr : d.Ay, [m, v]), [C, j] = (0, n.useState)(!1), [S, T] = (0, n.useState)(!1), [A, P] = (0, n.useState)(2700), k = null === r;
+            isInModalOverlay: g,
+            className: f
+        } = e, [v, _] = (0, n.useState)(!1), E = (0, n.useMemo)(() => m === s.k.SELECTED ? c.wH : v ? c.mr : c.Ay, [m, v]), [C, j] = (0, n.useState)(!1), [S, T] = (0, n.useState)(!1), [A, P] = (0, n.useState)(2700), k = null === r;
         (0, n.useEffect)(() => {
             k && !C && (j(!0), setTimeout(() => {
                 T(!0)
@@ -37,8 +37,8 @@ let p = () => (0, a.jsx)("img", {
         }, [k, j, C]), (0, n.useEffect)(() => {
             S && !k && j(!1)
         }, [k, S]);
-        let R = k || C,
-            I = C ? null : r,
+        let I = k || C,
+            R = C ? null : r,
             [N, D] = (0, n.useState)(null),
             M = (0, n.useRef)(null),
             O = (0, n.useCallback)(() => {
@@ -49,34 +49,34 @@ let p = () => (0, a.jsx)("img", {
                 e > 0 && ("earn" !== N || !t) && D("earn")
             }, [D, N]);
         return (0, a.jsx)(o.DUT, {
-            onClick: R ? void 0 : x,
-            className: i()(d.vk, {
-                [d.r9]: y
+            onClick: I ? void 0 : x,
+            className: i()(c.vk, {
+                [c.r9]: y
             }),
             id: l ?? "balance-widget-pill",
             children: (0, a.jsxs)("span", {
                 onMouseDown: b,
-                onMouseEnter: y ? void 0 : () => E(!0),
-                onMouseLeave: y ? void 0 : () => E(!1),
+                onMouseEnter: y ? void 0 : () => _(!0),
+                onMouseLeave: y ? void 0 : () => _(!1),
                 ref: t,
-                className: i()(d.kL, _, g, {
-                    [d.En]: R,
-                    [d.dA]: f,
-                    [d.r9]: y
+                className: i()(c.kL, E, f, {
+                    [c.En]: I,
+                    [c.dA]: g,
+                    [c.r9]: y
                 }),
                 children: [(0, a.jsx)("div", {
-                    className: i()(d.hr, R ? d.nr : void 0),
-                    children: (0, a.jsx)(c.Ay, {
+                    className: i()(c.hr, I ? c.nr : void 0),
+                    children: (0, a.jsx)(d.Ay, {
                         currentAnimationType: N,
                         animationTypeRef: M,
                         onSetAnimationDurationMS: P
                     })
                 }), (0, a.jsx)(u.A, {
-                    value: I,
+                    value: R,
                     onValueChange: L,
                     onValueReached: O,
                     targetTotalCounterTime: A,
-                    className: R ? d.F : void 0
+                    className: I ? c.F : void 0
                 }), h && (0, a.jsx)(p, {})]
             })
         })

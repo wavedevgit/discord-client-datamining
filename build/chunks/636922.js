@@ -44,8 +44,8 @@ let M = l.memo(function(e) {
         ...k
     } = e, b = t.type === R.lAJ.POLL_RESULT || (e.disableInteraction ?? !1), G = t.isFirstMessageInForumPost(L), H = (0, d.S)((t.editedTimestamp ?? t.timestamp).valueOf()), {
         content: F,
-        hasSpoilerEmbeds: w,
-        hasBailedAst: B
+        hasSpoilerEmbeds: B,
+        hasBailedAst: w
     } = (0, N.A)(t, {
         hideSimpleEmbedContent: D,
         allowList: G || H,
@@ -75,7 +75,7 @@ let M = l.memo(function(e) {
             author: K,
             roleIcon: W
         }),
-        childrenAccessories: e.hideAccessories ? void 0 : (0, f.J)(e, w, B),
+        childrenAccessories: e.hideAccessories ? void 0 : (0, f.J)(e, B, w),
         childrenMessageContent: (0, C.A)(e, F),
         childrenSystemMessage: (0, p.A)({
             ...e,

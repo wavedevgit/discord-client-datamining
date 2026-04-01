@@ -3,8 +3,8 @@ n.d(t, {
     A: () => _
 });
 var i = n(73153),
-    l = n(827343),
-    a = n(401843),
+    a = n(827343),
+    l = n(401843),
     r = n(272355),
     s = n(652896),
     o = n(616356),
@@ -29,10 +29,10 @@ class h extends r.A {
     };
     handleStopStream = e => {
         let t = o.A.getActiveStreamForUser(e.userId, e.guildId);
-        null != t && (0, a.vN)((0, s._z)(t), !1)
+        null != t && (0, l.vN)((0, s._z)(t), !1)
     };
     handleStopUserVideo = () => {
-        u.Ay.isVideoEnabled() && l.A.setVideoEnabled(!1)
+        u.Ay.isVideoEnabled() && a.A.setVideoEnabled(!1)
     }
 }
 let _ = new h

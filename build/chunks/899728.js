@@ -18,7 +18,7 @@ let g = (e, t) => {
             useCachedData: !0,
             fetch: g
         }),
-        A = (0, i.bG)([a.A], () => a.A.getPremiumGroupSubscription());
+        x = (0, i.bG)([a.A], () => a.A.getPremiumGroupSubscription());
     return e === s.qT.UNSPECIFIED ? null : {
         subheaderString: null == (n = e === s.qT.PRIMARY ? (e => {
             if (null == e) return null;
@@ -31,7 +31,7 @@ let g = (e, t) => {
                 a = n.interval,
                 d = n.intervalCount;
             return (0, o.CE)(s, a, d)
-        })(A) : null == _ ? null : m.intl.format(u.default.Nu9LNm, {
+        })(x) : null == _ ? null : m.intl.format(u.default.Nu9LNm, {
             primaryName: _,
             premiumGroupProductName: (0, c.DP)()
         })) ? "..." : n,

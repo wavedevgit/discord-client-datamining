@@ -14,8 +14,8 @@ var i = n(627968),
     m = n(711014),
     g = n(287809),
     _ = n(178368),
-    A = n(609405),
-    x = n(343557),
+    x = n(609405),
+    A = n(343557),
     h = n(242694),
     p = n(149524),
     T = n(501486),
@@ -36,10 +36,10 @@ function C(e) {
         className: b.GO,
         children: [(0, i.jsx)(r.kb, {
             className: b.ek
-        }), (0, i.jsx)(f.A, {}), P && (0, i.jsx)(d.A, {}), !j && (0, i.jsx)(x.A, {}), t?.isPaused && R !== E.xc.FP_SUB_PAUSED ? (0, i.jsx)(A.N, {
+        }), (0, i.jsx)(f.A, {}), P && (0, i.jsx)(d.A, {}), !j && (0, i.jsx)(A.A, {}), t?.isPaused && R !== E.xc.FP_SUB_PAUSED ? (0, i.jsx)(x.N, {
             appliedGuildBoosts: O,
             premiumSubscription: t
-        }) : (0, i.jsx)(A.A, {
+        }) : (0, i.jsx)(x.A, {
             guildBoostSlots: n,
             premiumSubscription: t
         }), (0, i.jsx)(h.A, {

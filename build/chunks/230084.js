@@ -1,6 +1,6 @@
 /** chunk id: 230084 params = (module,exports,require) **/
 n.d(t, {
-    A: () => x
+    A: () => A
 });
 var i = n(627968),
     s = n(64700),
@@ -14,17 +14,17 @@ var i = n(627968),
     m = n(339984),
     g = n(985018),
     _ = n(383309);
-let A = [{
+let x = [{
     name: "gif",
     extensions: ["gif"]
 }];
 
-function x(e) {
+function A(e) {
     let {
         showRemoveAvatarButton: t,
         errors: n,
         onAvatarChange: l,
-        sectionTitle: x,
+        sectionTitle: A,
         changeAvatarButtonText: h,
         guildId: p,
         className: T,
@@ -38,14 +38,14 @@ function x(e) {
         (0, c.XD)({
             uploadType: m.HL.AVATAR,
             analyticsSource: C,
-            filters: S ? A : void 0,
+            filters: S ? x : void 0,
             guildId: p,
             isTryItOut: S
         })
     }, [p, C, S]);
     return (0, i.jsx)(u.A, {
         className: T,
-        title: x,
+        title: A,
         errors: n,
         disabled: f,
         forcedDivider: E,

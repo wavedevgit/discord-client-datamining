@@ -9,13 +9,13 @@ var a = l(627968),
     o = l(156312),
     s = l(19311),
     u = l(869177),
-    c = l(252561),
-    d = l(985018);
+    d = l(252561),
+    c = l(985018);
 
 function p(e) {
     let t = n.useRef(null),
         l = {
-            paymentLabel: d.intl.string(d.t.ZURqX0),
+            paymentLabel: c.intl.string(c.t.ZURqX0),
             paymentRequestRef: t,
             onStripePaymentMethodReceived: () => {},
             onPaymentRequestFailure: () => {},
@@ -44,10 +44,10 @@ function m(e) {
     let {
         paymentRequestWallet: t
     } = e, l = n.useRef(null), [r, i] = n.useState(!1);
-    return (0, a.jsx)(c.e_, {
+    return (0, a.jsx)(d.e_, {
         footer: (0, a.jsx)(s.Ay, {
             primaryCTA: s.Ay.CTAType.CONTINUE,
-            primaryText: d.intl.string("applePay" === t ? d.t.WoXvJL : d.t.wnVVr0),
+            primaryText: c.intl.string("applePay" === t ? c.t.WoXvJL : c.t.wnVVr0),
             primaryDisabled: !r,
             onPrimary: () => void(null != l.current && l.current.show()),
             onBack: () => {}
@@ -71,22 +71,22 @@ let h = {
             stepConfigs: [],
             skuIDs: [],
             activeSubscription: null,
-            children: (0, a.jsxs)(c.wn, {
+            children: (0, a.jsxs)(d.wn, {
                 children: [(0, a.jsx)(r.Heading, {
                     variant: "heading-xl/semibold",
                     children: "Payment Request"
-                }), (0, a.jsx)(c.Hq, {
+                }), (0, a.jsx)(d.Hq, {
                     label: "Default View",
                     children: (0, a.jsx)(p, {
                         paymentRequestWallet: t
                     })
-                }), (0, a.jsx)(c.Hq, {
+                }), (0, a.jsx)(d.Hq, {
                     label: "Connector View",
                     children: (0, a.jsx)(p, {
                         paymentRequestWallet: t,
                         renderConnectorView: !0
                     })
-                }), (0, a.jsx)(c.Hq, {
+                }), (0, a.jsx)(d.Hq, {
                     label: "Add Payment Step Body Connector View",
                     children: (0, a.jsx)(m, {
                         paymentRequestWallet: t

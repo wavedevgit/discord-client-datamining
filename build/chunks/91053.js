@@ -1,6 +1,6 @@
 /** chunk id: 91053 params = (module,exports,require) **/
 t.d(n, {
-    Z: () => _
+    Z: () => S
 });
 var i = t(627968),
     l = t(64700),
@@ -9,13 +9,14 @@ var i = t(627968),
     a = t(937008),
     o = t(156312),
     u = t(166532),
-    d = t(166403),
-    c = t(810498),
-    p = t(683433),
-    m = t(344159),
-    E = t(985018);
+    d = t(615310),
+    c = t(166403),
+    p = t(810498),
+    m = t(683433),
+    E = t(344159),
+    _ = t(985018);
 
-function _(e) {
+function S(e) {
     let {
         onStepChange: n,
         selectedPlanId: t,
@@ -23,9 +24,9 @@ function _(e) {
         onBackClick: u,
         showBackButton: d,
         planOptions: c,
-        shouldRenderUpdatedPaymentModal: m = !1,
-        isTrial: _,
-        isNextDisabled: x = !1
+        shouldRenderUpdatedPaymentModal: p = !1,
+        isTrial: E,
+        isNextDisabled: S = !1
     } = e, {
         paymentSources: P,
         selectedPlan: T
@@ -39,15 +40,15 @@ function _(e) {
         text: A,
         onClick: f,
         disabled: j
-    } = S({
+    } = x({
         onStepChange: n,
         selectedPlanId: t = t ?? T?.id,
         isGift: I,
         claimableRewards: h,
         paymentSources: r,
-        shouldRenderUpdatedPaymentModal: m,
-        isTrial: _,
-        isNextDisabled: x
+        shouldRenderUpdatedPaymentModal: p,
+        isTrial: E,
+        isNextDisabled: S
     }), R = l.useMemo(() => null != t && c.includes(t) ? [{
         variant: g,
         text: A,
@@ -55,17 +56,17 @@ function _(e) {
         disabled: j
     }] : [{
         variant: "primary",
-        text: E.intl.string(E.t.XqMe3N),
+        text: _.intl.string(_.t.XqMe3N),
         disabled: !0
     }], [g, A, f, j, t, c]);
     return (0, i.jsx)(s.H7u, {
-        leading: d && null != u ? (0, i.jsx)(p.A, {
+        leading: d && null != u ? (0, i.jsx)(m.A, {
             onClick: u
         }) : void 0,
         actions: R
     })
 }
-let S = e => {
+let x = e => {
     let {
         onStepChange: n,
         selectedPlanId: t,
@@ -73,20 +74,19 @@ let S = e => {
         claimableRewards: l,
         paymentSources: s,
         shouldRenderUpdatedPaymentModal: a,
-        isTrial: p,
-        isNextDisabled: _ = !1
-    } = e, S = (0, r.bG)([d.A], () => d.A.getPremiumTypeSubscription()), {
-        step: x,
+        isTrial: m,
+        isNextDisabled: S = !1
+    } = e, x = (0, r.bG)([c.A], () => c.A.getPremiumTypeSubscription()), {
         selectedPlan: P
-    } = (0, o.P5)(), {
-        hasEntitlements: T
-    } = (0, m.X)(t, i), I = null != S && null != S.paymentSourceId || Object.keys(s).length > 0 || T && !p;
-    var h = a ? E.intl.string(E.t.PDTjLN) : E.intl.string(E.t.XqMe3N),
-        g = u.pn.ADD_PAYMENT_STEPS;
-    return I && (g = u.pn.REVIEW), (0, c.px)(P, i, l) && x !== u.pn.SELECT_FREE_SKU && (g = u.pn.SELECT_FREE_SKU), {
+    } = (0, o.P5)(), T = (0, d.bB)(), {
+        hasEntitlements: I
+    } = (0, E.X)(t, i), h = null != x && null != x.paymentSourceId || Object.keys(s).length > 0 || I && !m;
+    var g = a ? _.intl.string(_.t.PDTjLN) : _.intl.string(_.t.XqMe3N),
+        A = u.pn.ADD_PAYMENT_STEPS;
+    return h && (A = u.pn.REVIEW), (0, p.px)(P, i, l) && T !== u.pn.SELECT_FREE_SKU && (A = u.pn.SELECT_FREE_SKU), {
         variant: "primary",
-        text: h,
-        onClick: () => n(g),
-        disabled: _
+        text: g,
+        onClick: () => n(A),
+        disabled: S
     }
 }
