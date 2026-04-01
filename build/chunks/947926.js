@@ -30,8 +30,8 @@ var a = n(627968),
     E = n(963713),
     N = n(717695),
     I = n(899592),
-    O = n(546350),
-    k = n(922532),
+    k = n(546350),
+    O = n(922532),
     R = n(20732),
     w = n(654487);
 n(272111);
@@ -79,7 +79,7 @@ function L(e) {
         expansionSpring: ee,
         visibilitySpring: et,
         springConfig: en
-    } = (0, O.w)({
+    } = (0, k.w)({
         isQuestAccepted: W,
         isQuestCompleted: K,
         isQuestBarVisible: q
@@ -93,7 +93,7 @@ function L(e) {
         handleBlur: ed,
         handleMouseEnter: ec,
         handleMouseLeave: eu
-    } = (0, k.m)({
+    } = (0, O.m)({
         quest: t,
         isExpanded: Q,
         setIsExpanded: Y,

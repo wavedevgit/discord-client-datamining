@@ -43,13 +43,14 @@ function U() {
 function P(e) {
     let {
         className: t,
-        animate: n
+        imageClassName: n,
+        animate: i
     } = e;
     return (0, l.jsx)("div", {
         className: t,
         children: (0, l.jsx)("img", {
-            className: O.V_,
-            src: n ? M.A : D.A,
+            className: n ?? O.V_,
+            src: i ? M.A : D.A,
             alt: "",
             "aria-hidden": !0
         })
@@ -66,10 +67,12 @@ function v(e) {
         className: s()(O.Qs, t),
         children: [(0, l.jsx)(d.Text, {
             variant: "text-md/semibold",
+            scaleFontToUserSetting: !0,
             className: O.DD,
             children: n
         }), (0, l.jsx)(d.Text, {
             variant: "text-md/normal",
+            scaleFontToUserSetting: !0,
             className: O.rf,
             children: i
         })]
@@ -119,10 +122,12 @@ function y(e) {
         className: O.fi,
         children: [(0, l.jsx)(d.Text, {
             variant: "text-md/semibold",
+            scaleFontToUserSetting: !0,
             className: O.DD,
             children: t
         }), (0, l.jsx)(d.Text, {
             variant: "text-sm/medium",
+            scaleFontToUserSetting: !0,
             className: O.rf,
             children: n
         })]
@@ -182,6 +187,7 @@ function G(e) {
             forceReducedMotion: !a
         }), (0, l.jsx)(P, {
             className: O.S8,
+            imageClassName: O.ar,
             animate: a
         }), (0, l.jsx)(y, {
             title: o ? R.intl.format(R.t["/1IQGD"], {
@@ -290,6 +296,7 @@ function w(e) {
         className: O.Kk
     });
     return (0, l.jsx)(S.A, {
+        contentClassName: O.$O,
         iconNode: s,
         iconContainerClassName: O.zc,
         children: t
