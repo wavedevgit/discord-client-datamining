@@ -14,16 +14,16 @@ var r = n(627968),
     p = n(742589),
     _ = n(976860),
     m = n(488803),
-    f = n(14081),
-    A = n(843095),
+    A = n(14081),
+    f = n(843095),
     g = n(645619),
     x = n(489306),
     v = n(363487),
     h = n(884928),
     E = n(884684),
     I = n(182859),
-    b = n(983398),
-    j = n(194867),
+    j = n(983398),
+    b = n(194867),
     S = n(149854),
     C = n(864450),
     w = n(697865),
@@ -35,9 +35,9 @@ var r = n(627968),
     T = n(568065),
     P = n(652215),
     O = n(49999),
-    G = n(136708),
+    G = n(333354),
     D = n(985018),
-    U = n(539696);
+    U = n(453165);
 
 function V(e) {
     let {
@@ -81,7 +81,7 @@ function V(e) {
                         return
                     }
                     if ("gameServer" === n.type && l === R.W5) {
-                        (0, A.A)({
+                        (0, f.A)({
                             guildId: t,
                             analyticsLocation: d.A.GUILD_POWERUPS_OVERVIEW
                         }), B.current = !0;
@@ -164,7 +164,7 @@ function V(e) {
                             children: i.map((e, n) => {
                                 switch (e.type) {
                                     case "singleLevel":
-                                        return (0, r.jsx)(b.A, {
+                                        return (0, r.jsx)(j.A, {
                                             guildId: t,
                                             index: n,
                                             powerup: e.powerup,
@@ -177,13 +177,13 @@ function V(e) {
                                             badge: e.badge
                                         }, `powerup-${e.powerup.skuId}`);
                                     case "multiPerk":
-                                        return (0, r.jsx)(j.A, {
+                                        return (0, r.jsx)(b.A, {
                                             guildId: t,
                                             group: e.group,
                                             powerups: e.powerups
                                         }, `powerup-group-${e.group}`);
                                     case "gameServer":
-                                        return (0, r.jsx)(f.A, {
+                                        return (0, r.jsx)(A.A, {
                                             guildId: t
                                         }, "powerup-game-server")
                                 }

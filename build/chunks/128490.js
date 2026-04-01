@@ -13,11 +13,11 @@ var a = t(311907),
     c = t(389996),
     u = t(743987),
     _ = t(900179),
-    p = t(280645),
-    x = t(928223),
-    A = t(518477),
+    A = t(280645),
+    p = t(928223),
+    x = t(518477),
     f = t(985018),
-    m = t(47049);
+    m = t(824860);
 
 function g(e) {
     let {
@@ -38,7 +38,7 @@ function g(e) {
             channel: b,
             guildId: g,
             onClick: I
-        }), t?.guildId != null && (0, i.jsx)(p.A, {
+        }), t?.guildId != null && (0, i.jsx)(A.A, {
             userId: n.id,
             guildId: t.guildId
         }), (0, i.jsx)(_.A, {
@@ -46,9 +46,9 @@ function g(e) {
             children: (0, i.jsx)(u.A, {
                 userId: n.id,
                 guildId: g,
-                tooltipDelay: A.In
+                tooltipDelay: x.In
             })
-        }), (0, i.jsx)(x.A, {
+        }), (0, i.jsx)(p.A, {
             userId: n.id
         })]
     })

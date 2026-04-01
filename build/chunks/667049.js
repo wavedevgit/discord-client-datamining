@@ -3,19 +3,19 @@ n.d(t, {
     A: () => r
 });
 var i = n(311907),
-    a = n(961350),
-    l = n(622543),
+    l = n(961350),
+    a = n(622543),
     s = n(61881);
 
 function r(e) {
-    let t = (0, i.bG)([a.default], () => {
-            let t = a.default.getId();
+    let t = (0, i.bG)([l.default], () => {
+            let t = l.default.getId();
             return null != e && t === e
         }, [e]),
         n = (0, i.bG)([s.A], () => s.A.getPendingWidgets()),
-        r = (0, i.yK)([l.A], () => {
+        r = (0, i.yK)([a.A], () => {
             if (null == e) return [];
-            let t = l.A.getUserProfile(e);
+            let t = a.A.getUserProfile(e);
             return t?.widgets ?? []
         }, [e]);
     return t && null !== n ? n : r

@@ -1,21 +1,22 @@
 /** chunk id: 955437 params = (module,exports,require) **/
-a.d(t, {
-    $2: () => d,
-    Xv: () => _,
-    n7: () => c
+"use strict";
+n.d(t, {
+    $2: () => u,
+    Xv: () => c,
+    n7: () => d
 });
-var n = a(562465),
-    s = a(73153),
-    i = a(569717),
-    l = a(954571),
-    r = a(204925),
-    o = a(652215);
+var i = n(562465),
+    s = n(73153),
+    r = n(569717),
+    l = n(954571),
+    a = n(204925),
+    o = n(652215);
 
-function c(e, t) {
-    return (0, i.A)(e, t), l.default.track(o.HAw.AGE_GATE_ACTION, {
+function d(e, t) {
+    return (0, r.A)(e, t), l.default.track(o.HAw.AGE_GATE_ACTION, {
         source: t,
-        action: r.AM.AGE_GATE_SUBMITTED
-    }), n.Bo.patch({
+        action: a.AM.AGE_GATE_SUBMITTED
+    }), i.Bo.patch({
         url: o.Rsh.ME,
         oldFormErrors: !0,
         body: {
@@ -23,31 +24,31 @@ function c(e, t) {
         },
         rejectWithError: !1
     }).then(e => {
-        let a = e.body;
+        let n = e.body;
         s.h.dispatch({
             type: "CURRENT_USER_UPDATE",
-            user: a
+            user: n
         }), l.default.track(o.HAw.AGE_GATE_ACTION, {
             source: t,
-            action: r.AM.AGE_GATE_SUCCESS
+            action: a.AM.AGE_GATE_SUCCESS
         })
     })
 }
 
-function _(e) {
+function c(e) {
     s.h.dispatch({
         type: "AGE_GATE_PREVENT_UNDERAGE_REGISTRATION"
     }), l.default.track(o.HAw.AGE_GATE_ACTION, {
         source: e,
-        action: r.AM.AGE_GATE_PREVENT_UNDERAGE_REGISTRATION
+        action: a.AM.AGE_GATE_PREVENT_UNDERAGE_REGISTRATION
     })
 }
 
-function d(e) {
+function u(e) {
     s.h.dispatch({
         type: "AGE_GATE_LOGOUT_UNDERAGE_NEW_USER"
     }), l.default.track(o.HAw.AGE_GATE_ACTION, {
         source: e,
-        action: r.AM.AGE_GATE_LOGOUT_UNDERAGE_NEW_USER
+        action: a.AM.AGE_GATE_LOGOUT_UNDERAGE_NEW_USER
     })
 }

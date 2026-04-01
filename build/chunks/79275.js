@@ -1,6 +1,6 @@
 /** chunk id: 79275 params = (module,exports,require) **/
 n.d(t, {
-    A: () => A
+    A: () => f
 }), n(321073);
 var r = n(627968),
     i = n(64700),
@@ -13,26 +13,26 @@ var r = n(627968),
     c = n(186111),
     p = n(89305),
     _ = n(49999),
-    m = n(136708),
-    f = n(985018);
+    m = n(333354),
+    A = n(985018);
 
-function A(e) {
+function f(e) {
     let {
         powerup: t,
         targetRef: n,
-        isCardVisible: A
+        isCardVisible: f
     } = e, g = (0, s.bG)([c.A], () => c.A.hasLayers()), x = (0, a.useHasAnyModalOpen)(), v = t.skuId === l.FB ? {
-        title: f.intl.string(m.default.YWo6VL),
-        body: f.intl.string(m.default.gXVvKc),
+        title: A.intl.string(m.default.YWo6VL),
+        body: A.intl.string(m.default.gXVvKc),
         dismissibleContentType: o.M.VANITY_URL_POWERUP_EDUCATIONAL_POPOVER
     } : null, h = [];
-    null == v || g || !A || x || h.push(v.dismissibleContentType);
-    let [E, I] = (0, d.kn)(h), b = i.useCallback(() => {
+    null == v || g || !f || x || h.push(v.dismissibleContentType);
+    let [E, I] = (0, d.kn)(h), j = i.useCallback(() => {
         I(_.i.INDIRECT_ACTION)
     }, [I]);
     return ((0, p.A)({
         targetRef: n,
-        onShouldClose: b,
+        onShouldClose: j,
         enabled: null != E
     }), null == v || null == E) ? null : (0, r.jsx)(u.AM, {
         targetElementRef: n,

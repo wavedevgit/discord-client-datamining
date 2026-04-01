@@ -1,21 +1,20 @@
 /** chunk id: 514661 params = (module,exports,require) **/
-"use strict";
-n.d(t, {
-    A: () => o
+t.d(n, {
+    A: () => _
 });
-var i = n(64700),
-    r = n(933725),
-    a = n(849841);
+var o = t(64700),
+    r = t(933725),
+    i = t(849841);
 
-function o(e, t) {
-    let [n, o] = i.useState(!1), s = i.useCallback(async () => {
-        null != e && (o(!0), await (0, r.m)(e, !0), o(!1)), t?.()
-    }, [e, t]), l = (0, a.A)(e);
+function _(e, n) {
+    let [t, _] = o.useState(!1), l = o.useCallback(async () => {
+        null != e && (_(!0), await (0, r.m)(e, !0), _(!1)), n?.()
+    }, [e, n]), a = (0, i.A)(e);
     return {
-        isAdopting: n,
-        onAdoptTag: s,
-        onEditProfile: i.useCallback(() => {
-            t?.(), l()
-        }, [l, t])
+        isAdopting: t,
+        onAdoptTag: l,
+        onEditProfile: o.useCallback(() => {
+            n?.(), a()
+        }, [a, n])
     }
 }

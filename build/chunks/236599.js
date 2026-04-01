@@ -1,25 +1,25 @@
 /** chunk id: 236599 params = (module,exports,require) **/
 n.d(t, {
-    A: () => g
+    A: () => m
 });
 var i = n(627968),
-    a = n(64700),
-    l = n(503698),
-    s = n.n(l),
+    l = n(64700),
+    a = n(503698),
+    s = n.n(a),
     r = n(311907),
     o = n(397927),
-    c = n(773669),
-    d = n(183555),
+    d = n(773669),
+    c = n(183555),
     u = n(985018),
-    m = n(697737);
+    g = n(454980);
 
-function g(e) {
+function m(e) {
     let {
         className: t
-    } = e, l = ["en-US", "en-GB"].includes((0, r.bG)([c.default], () => c.default.locale)) ? u.intl.string(u.t.OYlggR) : u.intl.string(u.t.Y55Tua), {
-        trackUserProfileEditAction: g
-    } = (0, d.NJ)(), p = a.useCallback(() => {
-        g({
+    } = e, a = ["en-US", "en-GB"].includes((0, r.bG)([d.default], () => d.default.locale)) ? u.intl.string(u.t.OYlggR) : u.intl.string(u.t.Y55Tua), {
+        trackUserProfileEditAction: m
+    } = (0, c.NJ)(), x = l.useCallback(() => {
+        m({
             action: "PRESS_ADD_WIDGET"
         }), (0, o.mMO)(async () => {
             let {
@@ -27,24 +27,24 @@ function g(e) {
             } = await n.e("87591").then(n.bind(n, 333114));
             return t => (0, i.jsx)(e, {
                 ...t,
-                trackUserProfileEditAction: g
+                trackUserProfileEditAction: m
             })
         }, {
             stackingBehavior: "stack"
         })
-    }, [g]);
+    }, [m]);
     return (0, i.jsxs)("div", {
-        className: s()(m.w, t),
+        className: s()(g.w, t),
         children: [(0, i.jsx)(o.Text, {
             variant: "text-xs/semibold",
             color: "text-subtle",
-            children: l
+            children: a
         }), (0, i.jsx)(o.Button, {
             icon: o.j96,
             text: u.intl.string(u.t["lBG2s/"]),
             size: "sm",
             variant: "secondary",
-            onClick: p
+            onClick: x
         })]
     })
 }

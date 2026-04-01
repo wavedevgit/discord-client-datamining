@@ -31,7 +31,7 @@ function m(e, t) {
     return r
 }
 
-function w(e) {
+function A(e) {
     for (var t = 1; t < arguments.length; t++) {
         var r = null != arguments[t] ? arguments[t] : {};
         t % 2 ? m(Object(r), !0).forEach(function(t) {
@@ -43,7 +43,7 @@ function w(e) {
     return e
 }
 
-function A(e) {
+function w(e) {
     return {
         expanded: !e.isCircular && e.shouldExpandNode(e.keyPath, e.data, e.level)
     }
@@ -69,13 +69,13 @@ var O = function(e) {
             t.props.expandable && t.setState({
                 expanded: !t.state.expanded
             })
-        }), t.state = A(e), t
+        }), t.state = w(e), t
     }
     return (0, n.A)(d, [{
         key: "UNSAFE_componentWillReceiveProps",
         value: function(e) {
-            var t = A(e);
-            A(this.props).expanded !== t.expanded && this.setState(t)
+            var t = w(e);
+            w(this.props).expanded !== t.expanded && this.setState(t)
         }
     }, {
         key: "shouldComponentUpdate",
@@ -101,7 +101,7 @@ var O = function(e) {
                 d = e.labelRenderer,
                 h = e.expandable,
                 m = this.state.expanded,
-                A = m || o && 0 === this.props.level ? function e(t, r, a) {
+                w = m || o && 0 === this.props.level ? function e(t, r, a) {
                     var n = t.nodeType,
                         o = t.data,
                         s = t.collectionLimit,
@@ -133,12 +133,12 @@ var O = function(e) {
                             })))
                         }
                     }), h
-                }(w(w({}, this.props), {}, {
+                }(A(A({}, this.props), {}, {
                     level: this.props.level + 1
                 })) : null,
                 O = t(a, n, f.createElement("span", i("nestedNodeItemType", m), r), s(n, c), l),
                 k = [l, a, m, h];
-            return o ? f.createElement("li", i.apply(void 0, ["rootNode"].concat(k)), f.createElement("ul", i.apply(void 0, ["rootNodeChildren"].concat(k)), A)) : f.createElement("li", i.apply(void 0, ["nestedNode"].concat(k)), h && f.createElement(p.A, {
+            return o ? f.createElement("li", i.apply(void 0, ["rootNode"].concat(k)), f.createElement("ul", i.apply(void 0, ["rootNodeChildren"].concat(k)), w)) : f.createElement("li", i.apply(void 0, ["nestedNode"].concat(k)), h && f.createElement(p.A, {
                 styling: i,
                 nodeType: a,
                 expanded: m,
@@ -149,7 +149,7 @@ var O = function(e) {
                 onClick: this.handleClick
             }), d.apply(void 0, k)), f.createElement("span", (0, b.A)({}, i.apply(void 0, ["nestedNodeItemString"].concat(k)), {
                 onClick: this.handleClick
-            }), O), f.createElement("ul", i.apply(void 0, ["nestedNodeChildren"].concat(k)), A))
+            }), O), f.createElement("ul", i.apply(void 0, ["nestedNodeChildren"].concat(k)), w))
         }
     }]), d
 }(f.Component);

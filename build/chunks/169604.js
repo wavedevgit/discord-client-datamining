@@ -1,9 +1,9 @@
 /** chunk id: 169604 params = (module,exports,require) **/
-n.d(e, {
+n.d(t, {
     A: () => l
 });
 var i = n(73153);
-let l = 21552 == n.j ? {
+let l = {
     clearRemoteDisconnectVoiceChannelId() {
         i.h.dispatch({
             type: "CLEAR_REMOTE_DISCONNECT_VOICE_CHANNEL_ID"
@@ -14,4 +14,4 @@ let l = 21552 == n.j ? {
             type: "CLEAR_LAST_SESSION_VOICE_CHANNEL_ID"
         })
     }
-} : null
+}

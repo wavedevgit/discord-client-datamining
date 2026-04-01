@@ -12,14 +12,14 @@ var r = n(627968),
     d = n(890942),
     c = n(744201),
     p = n(271484),
-    _ = n(254029);
+    _ = n(526652);
 
 function m(e) {
     let {
         guildId: t,
         group: n,
         powerups: m
-    } = e, [f, A] = i.useState(!1), g = (0, l.bG)([a.A], () => a.A.useReducedMotion), x = (0, p.A)(n, t), v = !g && f ? x?.image?.animatedUrl : x?.image?.staticUrl, h = (0, u.A)({
+    } = e, [A, f] = i.useState(!1), g = (0, l.bG)([a.A], () => a.A.useReducedMotion), x = (0, p.A)(n, t), v = !g && A ? x?.image?.animatedUrl : x?.image?.staticUrl, h = (0, u.A)({
         guildId: t,
         powerups: m
     }), {
@@ -28,8 +28,8 @@ function m(e) {
     if (null == h || null == x) return null;
     let {
         status: I,
-        cost: b,
-        costDecorator: j
+        cost: j,
+        costDecorator: b
     } = h;
     return (0, r.jsxs)(d.NI, {
         label: x.title,
@@ -37,8 +37,8 @@ function m(e) {
         isWarning: I?.type === "expiring",
         badge: x.badge,
         onClick: () => x.openModal(m),
-        onMouseOver: () => A(!0),
-        onMouseLeave: () => A(!1),
+        onMouseOver: () => f(!0),
+        onMouseLeave: () => f(!1),
         children: [(0, r.jsx)("img", {
             alt: "",
             src: v,
@@ -48,8 +48,8 @@ function m(e) {
             textColor: E,
             footer: (0, r.jsx)(d.$L, {
                 status: I,
-                cost: b,
-                costDecorator: j
+                cost: j,
+                costDecorator: b
             }),
             children: (0, r.jsx)(o.Text, {
                 className: _.h,

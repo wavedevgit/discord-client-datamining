@@ -3,63 +3,63 @@ n.d(t, {
     A: () => I
 });
 var i = n(627968),
-    a = n(64700),
-    l = n(503698),
-    s = n.n(l),
+    l = n(64700),
+    a = n(503698),
+    s = n.n(a),
     r = n(158954),
     o = n(311907),
-    c = n(554146),
-    d = n(932001),
+    d = n(554146),
+    c = n(932001),
     u = n(178213),
-    m = n(770983),
-    g = n(927813),
-    p = n(622543),
-    x = n(49999),
+    g = n(770983),
+    m = n(927813),
+    x = n(622543),
+    p = n(49999),
     f = n(985018),
-    _ = n(465472);
-let h = 90 * g.A.Millis.DAY,
-    A = 90 * g.A.Millis.DAY;
+    h = n(970901);
+let _ = 90 * m.A.Millis.DAY,
+    A = 90 * m.A.Millis.DAY;
 
 function I(e) {
     let {
         user: t,
         wishlist: n,
-        hasFetchedWishlist: l = !1,
-        analyticsLocations: g,
+        hasFetchedWishlist: a = !1,
+        analyticsLocations: m,
         className: I,
-        applicationIds: v
-    } = e, j = (0, u.GG)("social_layer_wishlist_recommendations_on_profile"), E = (n?.items.length ?? 0) > 0, [T, N] = a.useState(!1);
-    !l || E || T || N(!0);
-    let C = (0, o.bG)([p.A], () => null != n ? new Date(p.A.getWishlistSettings(t.id, n.id)?.updated_at ?? 0).valueOf() : 0),
-        [b, S] = (0, d.Wl)(c.M.USER_PROFILE_WISHLIST_RECOMMENDATIONS, {
+        applicationIds: j
+    } = e, v = (0, u.GG)("social_layer_wishlist_recommendations_on_profile"), T = (n?.items.length ?? 0) > 0, [E, b] = l.useState(!1);
+    !a || T || E || b(!0);
+    let C = (0, o.bG)([x.A], () => null != n ? new Date(x.A.getWishlistSettings(t.id, n.id)?.updated_at ?? 0).valueOf() : 0),
+        [S, N] = (0, c.Wl)(d.M.USER_PROFILE_WISHLIST_RECOMMENDATIONS, {
             showAfterTimestamp: C + A,
-            cooldownDurationMs: h
+            cooldownDurationMs: _
         }, void 0, !0),
-        y = b === c.M.USER_PROFILE_WISHLIST_RECOMMENDATIONS;
-    return l && (!E || y || T) ? (0, i.jsxs)("div", {
-        className: s()(_.kL, I),
+        y = S === d.M.USER_PROFILE_WISHLIST_RECOMMENDATIONS;
+    return a && (!T || y || E) ? (0, i.jsxs)("div", {
+        className: s()(h.kL, I),
         children: [(0, i.jsxs)("div", {
-            className: _.wx,
+            className: h.wx,
             children: [(0, i.jsx)(r.EYj, {
                 variant: "text-xs/normal",
                 color: "text-subtle",
                 children: f.intl.string(f.t["+GB8Kt"])
-            }), E && (0, i.jsx)(r.JnF, {
+            }), T && (0, i.jsx)(r.JnF, {
                 size: "xs",
                 onClick: () => {
-                    N(!1), S(x.i.USER_DISMISS)
+                    b(!1), N(p.i.USER_DISMISS)
                 }
             })]
-        }), (0, i.jsx)(m.A, {
+        }), (0, i.jsx)(g.A, {
             userId: t.id,
-            applicationIds: v,
+            applicationIds: j,
             wishlist: n,
-            className: s()(_.Vg, {
-                [_.e6]: j
+            className: s()(h.Vg, {
+                [h.e6]: v
             }),
-            analyticsLocations: g,
+            analyticsLocations: m,
             numWishlistItemsToRecommend: 15,
-            maxWishlistItemsToShow: j ? 8 : 6
+            maxWishlistItemsToShow: v ? 8 : 6
         })]
     }) : null
 }

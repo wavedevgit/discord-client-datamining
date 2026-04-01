@@ -1,7 +1,7 @@
 /** chunk id: 930349 params = (module,exports,require) **/
 t.d(n, {
-    N: () => A,
-    k: () => x
+    N: () => x,
+    k: () => p
 });
 var i = t(627968);
 t(64700);
@@ -11,7 +11,7 @@ var a = t(503698),
     l = t(990078),
     o = t(397927),
     d = t(985018),
-    c = t(730499);
+    c = t(967024);
 
 function u() {
     return (0, i.jsx)("div", {
@@ -38,7 +38,7 @@ function _(e) {
     })
 }
 
-function p(e) {
+function A(e) {
     let {
         onClick: n,
         type: t,
@@ -57,7 +57,7 @@ function p(e) {
     })
 }
 
-function x(e) {
+function p(e) {
     let {
         variant: n,
         onClick: t,
@@ -81,7 +81,7 @@ function x(e) {
     })
 }
 
-function A(e) {
+function x(e) {
     let {
         variant: n,
         onClick: t,
@@ -102,7 +102,7 @@ function A(e) {
             }), o && (0, i.jsx)(u, {})]
         }), null != d && (0, i.jsx)("div", {
             className: c.deleteButtonWrapper,
-            children: (0, i.jsx)(p, {
+            children: (0, i.jsx)(A, {
                 ...d
             })
         })]

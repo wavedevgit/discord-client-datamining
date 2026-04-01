@@ -14,11 +14,11 @@ var r = n(627968),
     p = n(180185),
     _ = n(629721),
     m = n(269032),
-    f = n(652215),
-    A = n(49999),
-    g = n(136708),
+    A = n(652215),
+    f = n(49999),
+    g = n(333354),
     x = n(985018),
-    v = n(896148);
+    v = n(319733);
 
 function h(e) {
     let {
@@ -36,7 +36,7 @@ function h(e) {
 function E(e) {
     let {
         guildId: t
-    } = e, n = (0, u.A)(t), E = (0, o.A)(t), I = (0, a.A)(t), b = [l.M.GUILD_POWERUPS_OVERVIEW_SIDEBAR_VIDEO_CARD], [j, S] = (0, s.kn)(b), C = j === l.M.GUILD_POWERUPS_OVERVIEW_SIDEBAR_VIDEO_CARD, w = (0, m.A)(E.shouldShow || I.shouldShow || C);
+    } = e, n = (0, u.A)(t), E = (0, o.A)(t), I = (0, a.A)(t), j = [l.M.GUILD_POWERUPS_OVERVIEW_SIDEBAR_VIDEO_CARD], [b, S] = (0, s.kn)(j), C = b === l.M.GUILD_POWERUPS_OVERVIEW_SIDEBAR_VIDEO_CARD, w = (0, m.A)(E.shouldShow || I.shouldShow || C);
     return n.shouldShow || E.shouldShow || I.shouldShow || w.shouldShow || C ? (0, r.jsxs)("div", {
         className: v.kL,
         children: [(0, r.jsx)(i.EYj, {
@@ -57,11 +57,11 @@ function E(e) {
         }), C && (0, r.jsx)(d.A, {
             guildId: t,
             analyticsLocation: {
-                page: f.liQ.GUILD_POWERUPS_OVERVIEW,
-                section: f.JJy.GUILD_POWERUPS_OVERVIEW_SIDEBAR,
-                object: f.ZSU.CARD
+                page: A.liQ.GUILD_POWERUPS_OVERVIEW,
+                section: A.JJy.GUILD_POWERUPS_OVERVIEW_SIDEBAR,
+                object: A.ZSU.CARD
             },
-            onDismiss: () => S(A.i.USER_DISMISS)
+            onDismiss: () => S(f.i.USER_DISMISS)
         })]
     }) : null
 }

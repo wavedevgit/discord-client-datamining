@@ -27,7 +27,7 @@ var n = t(627968),
     A = t(652215),
     O = t(788868),
     x = t(985018),
-    y = t(313248);
+    y = t(367625);
 let v = O.vQ.DM_CHANNEL_WISHLIST,
     G = k.Z.SIZE_133;
 

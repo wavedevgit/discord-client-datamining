@@ -18,7 +18,7 @@ function _(e) {
     let {
         guildId: t,
         powerupListingId: n
-    } = e, _ = (0, l.bG)([d.A], () => d.A.getGuild(t)), m = (0, l.bG)([a.A], () => a.A.hasLoadedExperiments), f = (0, c.A)(t), A = (0, u.PR)(), g = !m || null == f || null == _, x = (0, s.Ay)(null != A ? A : []);
+    } = e, _ = (0, l.bG)([d.A], () => d.A.getGuild(t)), m = (0, l.bG)([a.A], () => a.A.hasLoadedExperiments), A = (0, c.A)(t), f = (0, u.PR)(), g = !m || null == A || null == _, x = (0, s.Ay)(null != f ? f : []);
     return ((0, o.A)({
         type: i.ImpressionTypes.VIEW,
         name: i.ImpressionNames.BOOST_SHOP_OPENED,

@@ -32,10 +32,10 @@ function p(e, t) {
         } : {}
     }, [e, _]);
     (0, s.Eq)(m, "GuildPowerupsRecentActivity");
-    let f = (0, i.bG)([d.A], () => d.A.getGuild(e)?.premiumSubscriberCount);
+    let A = (0, i.bG)([d.A], () => d.A.getGuild(e)?.premiumSubscriberCount);
     return r.useEffect(() => {
-        f !== n.length && (0, l.VU)(e)
-    }, [e, f, n.length]), p
+        A !== n.length && (0, l.VU)(e)
+    }, [e, A, n.length]), p
 }
 
 function _(e) {

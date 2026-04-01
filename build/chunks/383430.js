@@ -3,28 +3,28 @@ n.d(t, {
     A: () => u
 });
 var i = n(627968),
-    a = n(64700),
-    l = n(397927),
+    l = n(64700),
+    a = n(397927),
     s = n(429913),
     r = n(486020),
     o = n(403362),
-    c = n(985018),
-    d = n(508246);
+    d = n(985018),
+    c = n(688369);
 
 function u(e) {
     let {
         title: t,
         variant: n = "secondary",
         handleOpenCollectiblesShop: u,
-        handleOpenGameShop: m,
-        handleAddNitroToWishlist: g,
-        socialLayerStorefrontApplicationIds: p
-    } = e, x = a.useRef(null), [f, _] = a.useState(!1), h = function(e) {
+        handleOpenGameShop: g,
+        handleAddNitroToWishlist: m,
+        socialLayerStorefrontApplicationIds: x
+    } = e, p = l.useRef(null), [f, h] = l.useState(!1), _ = function(e) {
         let {
             applications: t,
             handleOpenGameShop: n
         } = e;
-        return a.useMemo(() => t.filter(o.Vq).map(e => {
+        return l.useMemo(() => t.filter(o.Vq).map(e => {
             let t = r.Ay.getApplicationIconURL({
                 id: e.id,
                 icon: e.icon,
@@ -32,86 +32,86 @@ function u(e) {
             });
             return {
                 id: `browse-social-layer-storefront-${e.id}`,
-                label: c.intl.formatToPlainString(c.t["HDT/rg"], {
+                label: d.intl.formatToPlainString(d.t["HDT/rg"], {
                     applicationName: e.name
                 }),
                 iconLeft: null != t ? () => (0, i.jsx)("img", {
-                    className: d.I,
+                    className: c.I,
                     src: t,
                     alt: ""
-                }) : l.U1X,
+                }) : a.U1X,
                 leadingAccessory: null != t ? {
                     type: "image",
                     src: t
                 } : {
                     type: "icon",
-                    icon: l.U1X
+                    icon: a.U1X
                 },
                 action: () => n?.(e.id)
             }
         }), [t, n])
     }({
-        applications: (0, s.A)(p),
-        handleOpenGameShop: m
-    }), A = a.useMemo(() => (0, i.jsxs)(l.rXV, {
-        children: [null != u && (0, i.jsx)(l.Drp, {
+        applications: (0, s.A)(x),
+        handleOpenGameShop: g
+    }), A = l.useMemo(() => (0, i.jsxs)(a.rXV, {
+        children: [null != u && (0, i.jsx)(a.Drp, {
             id: "browse-collectibles-shop",
-            label: c.intl.string(c.t["5upuqx"]),
-            iconLeft: l.U1X,
+            label: d.intl.string(d.t["5upuqx"]),
+            iconLeft: a.U1X,
             leadingAccessory: {
                 type: "icon",
-                icon: l.U1X
+                icon: a.U1X
             },
             action: u
-        }), null != m && h.map(e => {
+        }), null != g && _.map(e => {
             let {
                 id: t,
                 label: n,
-                iconLeft: a,
+                iconLeft: l,
                 leadingAccessory: s,
                 action: r
             } = e;
-            return (0, i.jsx)(l.Drp, {
+            return (0, i.jsx)(a.Drp, {
                 id: t,
                 label: n,
-                iconLeft: a,
+                iconLeft: l,
                 leadingAccessory: s,
                 action: r
             }, t)
-        }), null != g && (0, i.jsx)(l.Drp, {
+        }), null != m && (0, i.jsx)(a.Drp, {
             id: "add-nitro-to-wishlist",
-            label: c.intl.string(c.t.lG6a5x),
-            iconLeft: l.tvc,
+            label: d.intl.string(d.t.lG6a5x),
+            iconLeft: a.tvc,
             leadingAccessory: {
                 type: "icon",
-                icon: l.tvc
+                icon: a.tvc
             },
-            action: g
+            action: m
         })]
-    }), [u, m, g, h]);
-    return (0, i.jsx)(l.YNO, {
-        targetElementRef: x,
+    }), [u, g, m, _]);
+    return (0, i.jsx)(a.YNO, {
+        targetElementRef: p,
         position: "bottom",
-        onRequestOpen: () => _(!0),
-        onRequestClose: () => _(!1),
+        onRequestOpen: () => h(!0),
+        onRequestClose: () => h(!1),
         renderPopout: e => {
             let {
                 closePopout: t
             } = e;
-            return (0, i.jsx)(l.W1t, {
+            return (0, i.jsx)(a.W1t, {
                 "data-menu-migrated": !0,
                 navId: "wishlist-overflow-menu",
                 onSelect: void 0,
                 onClose: t,
-                "aria-label": c.intl.string(c.t.GdNkvG),
+                "aria-label": d.intl.string(d.t.GdNkvG),
                 children: A
             })
         },
-        children: e => (0, i.jsx)(l.Button, {
-            buttonRef: x,
+        children: e => (0, i.jsx)(a.Button, {
+            buttonRef: p,
             variant: n,
             size: "sm",
-            icon: f ? l.PGe : l.abt,
+            icon: f ? a.PGe : a.abt,
             iconPosition: "end",
             text: t,
             ...e

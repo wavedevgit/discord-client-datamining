@@ -4,10 +4,10 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var a = n(503698),
-    l = n.n(a),
+var l = n(503698),
+    a = n.n(l),
     s = n(900179),
-    r = n(499387);
+    r = n(126854);
 
 function o(e) {
     let {
@@ -15,7 +15,7 @@ function o(e) {
         ...n
     } = e;
     return (0, i.jsx)(s.A, {
-        className: l()(r.u, t),
+        className: a()(r.u, t),
         headingVariant: "text-xs/medium",
         headingColor: "currentColor",
         ...n

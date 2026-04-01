@@ -30,7 +30,7 @@ let {
     ro: () => n.e("3253").then(n.t.bind(n, 589652, 19)),
     ru: () => n.e("33479").then(n.t.bind(n, 245338, 19)),
     "sv-SE": () => n.e("79704").then(n.t.bind(n, 634795, 19)),
-    th: () => n.e("58008").then(n.t.bind(n, 632459, 19)),
+    th: () => n.e("58008").then(n.t.bind(n, 854840, 19)),
     tr: () => n.e("94794").then(n.t.bind(n, 381457, 19)),
     uk: () => n.e("76296").then(n.t.bind(n, 354395, 19)),
     vi: () => n.e("35375").then(n.t.bind(n, 897330, 19)),

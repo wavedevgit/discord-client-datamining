@@ -113,12 +113,12 @@ var f = n(483270),
     e9 = n(652215),
     e7 = n(5867),
     e6 = n(806931),
-    e2 = n(49999),
-    e5 = n(165610),
+    e5 = n(49999),
+    e2 = n(165610),
     e3 = n(957173),
     e8 = n(516607),
     e4 = n(985018),
-    te = n(513544);
+    te = n(358943);
 let tt = (0, P.Fe)({
     createPromise: () => n.e("46875").then(n.bind(n, 625846)),
     webpackId: 625846,
@@ -221,7 +221,7 @@ class tn extends l.PureComponent {
         o()(null != l, "Missing user in Channel.openDMContextMenu"), (0, p.L3)(e, async () => {
             let {
                 default: e
-            } = await Promise.all([n.e("97262"), n.e("42128"), n.e("39778"), n.e("22283")]).then(n.bind(n, 385913));
+            } = await Promise.all([n.e("97262"), n.e("42128"), n.e("39778"), n.e("34408")]).then(n.bind(n, 385913));
             return n => (0, i.jsx)(e, {
                 ...n,
                 user: l,
@@ -797,7 +797,7 @@ let ti = (0, E.A)(tn),
             H = (0, h.bG)([ez.A], () => null != m && m.isVocalThread() && !c().isEmpty(ez.A.getVoiceStatesForChannel(m.id)), [m]),
             W = null != m && m.isPrivate() && !w && v,
             Y = m?.isGuildVocal() || W || H,
-            z = (0, h.bG)([F.A], () => F.A.getFrameLayoutMode() === e5.y.FOCUSED),
+            z = (0, h.bG)([F.A], () => F.A.getFrameLayoutMode() === e2.y.FOCUSED),
             {
                 welcomeModalChannelId: q
             } = (0, u.zy)(),
@@ -855,7 +855,7 @@ let ti = (0, E.A)(tn),
             let e = eI && !eE,
                 t = eI && eE && m?.id !== eC;
             (e || t) && (0, B.Dr)(A.M.ACTIVITY_GDM_CALL_TOOLTIP, {
-                dismissAction: e2.i.AUTO
+                dismissAction: e5.i.AUTO
             })
         }, [m?.id, eC, eE, eI]);
         let eT = (0, _.useHasAnyModalOpen)();

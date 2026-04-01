@@ -1,920 +1,920 @@
 /** chunk id: 916768 params = (module,exports,require) **/
-n.d(e, {
-    A: () => tk,
-    w: () => tD
+n.d(t, {
+    A: () => eD,
+    w: () => eL
 });
 var i = n(627968),
     l = n(64700),
-    r = n(989349),
-    s = n.n(r);
-if (21552 == n.j) var a = n(936504);
-var o = n(299855),
-    c = n.n(o),
-    d = n(311907),
+    s = n(989349),
+    a = n.n(s),
+    r = n(936504),
+    o = n(299855),
+    d = n.n(o),
+    c = n(311907),
     u = n(582754),
-    E = n(397927),
-    _ = n(157559),
-    T = n(827343),
-    A = n(830215),
-    I = n(503703),
-    N = n(912851),
-    R = n(169604),
-    p = n(956793),
-    h = n(785796),
-    C = n(55619),
-    m = n(246605),
-    g = n(271866),
-    O = n(736653),
+    h = n(397927),
+    A = n(157559),
+    _ = n(827343),
+    m = n(830215),
+    g = n(503703),
+    p = n(912851),
+    f = n(169604),
+    x = n(956793),
+    E = n(785796),
+    I = n(55619),
+    C = n(246605),
+    N = n(271866),
+    T = n(736653),
     S = n(77729),
-    y = n(573648),
-    x = n(793574),
-    U = n(688810),
-    P = n(587895),
-    M = n(315982),
-    j = n(235986),
-    D = n(420216),
-    f = n(984870),
-    k = n(403881),
-    L = n(813803),
+    b = n(573648),
+    y = n(793574),
+    v = n(688810),
+    j = n(587895),
+    R = n(315982),
+    O = n(235986),
+    L = n(420216),
+    M = n(984870),
+    D = n(626262),
+    U = n(813803),
     G = n(487329),
-    v = n(102609),
-    B = n(49463),
-    b = n(322223),
-    w = n(137207),
-    q = n(619029),
-    $ = n(202384),
-    X = n(51758),
-    V = n(571139),
-    H = n(527012),
-    W = n(997509),
-    F = n(475723),
-    K = n(598733),
-    J = n(801644),
-    Y = n(74848),
-    z = n(4630),
-    Q = n(532794),
+    P = n(102609),
+    k = n(49463),
+    w = n(322223),
+    B = n(137207),
+    V = n(619029),
+    H = n(202384),
+    F = n(51758),
+    K = n(571139),
+    W = n(527012),
+    Y = n(997509),
+    z = n(475723),
+    q = n(598733),
+    X = n(801644),
+    J = n(74848),
+    Q = n(4630),
+    $ = n(532794),
     Z = n(234419),
-    tt = n(814249),
-    te = n(829219),
-    tn = n(601730),
-    ti = n(722255),
-    tl = n(613491),
-    tr = n(464473),
-    ts = n(780964),
-    ta = n(840065),
-    to = n(459321),
-    tc = n(594609),
-    td = n(734057),
-    tu = n(430452),
-    tE = n(383501),
-    t_ = n(967198),
-    tT = n(287809),
-    tA = n(67480),
-    tI = n(147964),
-    tN = n(519057),
-    tR = n(954571),
-    tp = n(975571),
-    th = n(723702),
-    tC = n(652215),
-    tm = n(502075),
-    tg = n(788868),
-    tO = n(831502),
-    tS = n(731854),
-    ty = n(985018),
-    tx = n(571655);
-let tU = t => {
+    ee = n(814249),
+    et = n(829219),
+    en = n(601730),
+    ei = n(722255),
+    el = n(613491),
+    es = n(464473),
+    ea = n(780964),
+    er = n(840065),
+    eo = n(459321),
+    ed = n(594609),
+    ec = n(734057),
+    eu = n(430452),
+    eh = n(383501),
+    eA = n(967198),
+    e_ = n(287809),
+    em = n(67480),
+    eg = n(147964),
+    ep = n(519057),
+    ef = n(954571),
+    ex = n(975571),
+    eE = n(723702),
+    eI = n(652215),
+    eC = n(502075),
+    eN = n(788868),
+    eT = n(831502),
+    eS = n(731854),
+    eb = n(985018),
+    ey = n(381703);
+let ev = e => {
         let {
-            error: e,
+            error: t,
             allowClick: n = !1
-        } = t, l = (0, G.B1)(e)?.errorCode, r = ty.intl.formatToPlainString(ty.t.ejOT95, {
+        } = e, l = (0, G.B1)(t)?.errorCode, s = eb.intl.formatToPlainString(eb.t.ejOT95, {
             errorCode: l
-        }), s = (0, i.jsx)(E.Text, {
+        }), a = (0, i.jsx)(h.Text, {
             variant: "text-sm/bold",
             color: "currentColor",
             tag: "span",
-            className: tx.fU,
+            className: ey.fU,
             selectable: !0,
-            children: r
-        });
-        return n ? (0, i.jsx)(E.DUT, {
-            tag: "span",
-            className: tx.wz,
-            onClick: () => open(tp.A.getArticleURL(tC.MVz.AV_ERROR_CODES)),
             children: s
-        }) : s
+        });
+        return n ? (0, i.jsx)(h.DUT, {
+            tag: "span",
+            className: ey.wz,
+            onClick: () => open(ex.A.getArticleURL(eI.MVz.AV_ERROR_CODES)),
+            children: a
+        }) : a
     },
-    tP = t => {
+    ej = e => {
         let {
-            noticeType: e
-        } = t;
-        return (0, i.jsxs)(E.$Td, {
-            color: E.Hv$.DANGER,
-            children: [(0, i.jsx)(E.PMB, {
-                noticeType: e,
+            noticeType: t
+        } = e;
+        return (0, i.jsxs)(h.$Td, {
+            color: h.Hv$.DANGER,
+            children: [(0, i.jsx)(h.PMB, {
+                noticeType: t,
                 onClick: () => {
-                    tD()
+                    eL()
                 }
-            }), ty.intl.string(ty.t.o3zuYz), (0, i.jsx)(tU, {
+            }), eb.intl.string(eb.t.o3zuYz), (0, i.jsx)(ev, {
                 error: G.iy.NO_INPUT_DEVICES
-            }), (0, i.jsx)(E.eCN, {
-                href: tp.A.getArticleURL(tC.MVz.NO_INPUT_DETECTED),
-                noticeType: e,
-                children: ty.intl.string(ty.t.RYKKox)
+            }), (0, i.jsx)(h.eCN, {
+                href: ex.A.getArticleURL(eI.MVz.NO_INPUT_DETECTED),
+                noticeType: t,
+                children: eb.intl.string(eb.t.RYKKox)
             })]
         })
     };
 
-function tM(t) {
-    return (0, th.isWindows)() && c().satisfies(S.A?.os.release, tm.PH) ? `ms-settings:sound-properties?endpointId=${t}` : "ms-settings:sound"
+function eR(e) {
+    return (0, eE.isWindows)() && d().satisfies(S.A?.os.release, eC.PH) ? `ms-settings:sound-properties?endpointId=${e}` : "ms-settings:sound"
 }
 
-function tj(t) {
-    let e, n, {
+function eO(e) {
+    let t, n, {
             noticeType: l
-        } = t,
-        r = (0, Y.x5)(tS.oh.AUDIO_INPUT),
-        s = r?.guid ?? "",
+        } = e,
+        s = (0, J.x5)(eS.oh.AUDIO_INPUT),
+        a = s?.guid ?? "",
         {
-            inputDeviceOSMuted: a,
+            inputDeviceOSMuted: r,
             inputDeviceOSVolume: o
-        } = (0, d.cf)([tu.Ay], () => ({
-            inputDeviceOSMuted: tu.Ay.getInputDeviceOSMuted(),
-            inputDeviceOSVolume: tu.Ay.getInputDeviceOSVolume()
+        } = (0, c.cf)([eu.Ay], () => ({
+            inputDeviceOSMuted: eu.Ay.getInputDeviceOSMuted(),
+            inputDeviceOSVolume: eu.Ay.getInputDeviceOSVolume()
         })),
-        c = !1;
-    return !0 === a ? (e = ty.intl.string(ty.t.ppW3ri), n = (0, i.jsx)(E.eCN, {
-        href: tM(s),
+        d = !1;
+    return !0 === r ? (t = eb.intl.string(eb.t.ppW3ri), n = (0, i.jsx)(h.eCN, {
+        href: eR(a),
         noticeType: l,
-        children: ty.intl.string(ty.t.QghSIq)
-    })) : 0 === o ? (e = ty.intl.string(ty.t.j4gGA4), n = (0, i.jsx)(E.eCN, {
-        href: tM(s),
+        children: eb.intl.string(eb.t.QghSIq)
+    })) : 0 === o ? (t = eb.intl.string(eb.t.j4gGA4), n = (0, i.jsx)(h.eCN, {
+        href: eR(a),
         noticeType: l,
-        children: ty.intl.string(ty.t.QghSIq)
-    })) : tu.Ay.supports(tS.O5.LOOPBACK) ? (e = ty.intl.string(ty.t.dNAJ18), c = !0, n = (0, i.jsx)(E.zr9, {
+        children: eb.intl.string(eb.t.QghSIq)
+    })) : eu.Ay.supports(eS.O5.LOOPBACK) ? (t = eb.intl.string(eb.t.dNAJ18), d = !0, n = (0, i.jsx)(h.zr9, {
         onClick: () => {
-            (0, ta.openUserSettings)(ts.X.VOICE_AND_VIDEO_PANEL)
+            (0, er.openUserSettings)(ea.X.VOICE_AND_VIDEO_PANEL)
         },
-        children: ty.intl.string(ty.t.I6YlB4)
-    })) : (e = ty.intl.string(ty.t.nCO9bI), n = (0, i.jsx)(E.eCN, {
-        href: tp.A.getArticleURL(tC.MVz.NO_INPUT_DETECTED),
+        children: eb.intl.string(eb.t.I6YlB4)
+    })) : (t = eb.intl.string(eb.t.nCO9bI), n = (0, i.jsx)(h.eCN, {
+        href: ex.A.getArticleURL(eI.MVz.NO_INPUT_DETECTED),
         noticeType: l,
-        children: ty.intl.string(ty.t.RYKKox)
-    })), (0, i.jsxs)(E.$Td, {
-        color: E.Hv$.DANGER,
-        children: [(0, i.jsx)(E.PMB, {
+        children: eb.intl.string(eb.t.RYKKox)
+    })), (0, i.jsxs)(h.$Td, {
+        color: h.Hv$.DANGER,
+        children: [(0, i.jsx)(h.PMB, {
             noticeType: l,
             onClick: () => {
-                tD(), (0, tc.h)()
+                eL(), (0, ed.h)()
             }
-        }), e, (0, i.jsx)(tU, {
-            allowClick: c,
+        }), t, (0, i.jsx)(ev, {
+            allowClick: d,
             error: G.iy.NO_AUDIO_INPUT_DETECTED
         }), n]
     })
 }
 
-function tD(t) {
-    N.A.dismiss(null != t ? {
-        untilAtLeast: s()(t)
+function eL(e) {
+    p.A.dismiss(null != e ? {
+        untilAtLeast: a()(e)
     } : void 0)
 }
-let tf = 21552 == n.j ? l.memo(function() {
-    let t = (0, d.bG)([tT.default], () => tT.default.getCurrentUser()),
-        e = (0, d.bG)([t_.A], () => t_.A.getGuildId()),
-        r = (0, d.bG)([tN.Ay], () => tN.Ay.getNotice()),
+let eM = l.memo(function() {
+    let e = (0, c.bG)([e_.default], () => e_.default.getCurrentUser()),
+        t = (0, c.bG)([eA.A], () => eA.A.getGuildId()),
+        s = (0, c.bG)([ep.Ay], () => ep.Ay.getNotice()),
         {
-            analyticsLocations: s
-        } = (0, U.Ay)(),
-        o = (0, O.Ay)(),
-        c = (0, X.H)(e),
-        N = (0, Z.V)();
+            analyticsLocations: a
+        } = (0, v.Ay)(),
+        o = (0, T.Ay)(),
+        d = (0, F.H)(t),
+        p = (0, Z.V)();
     if (l.useEffect(() => {
-            if (r?.type != null) {
-                let t;
-                if (null == N && (r.type === tC.kqX.PREMIUM_TIER_2_TRIAL_ENDING || r.type === tC.kqX.PREMIUM_TIER_0_TRIAL_ENDING)) return;
+            if (s?.type != null) {
+                let e;
+                if (null == p && (s.type === eI.kqX.PREMIUM_TIER_2_TRIAL_ENDING || s.type === eI.kqX.PREMIUM_TIER_0_TRIAL_ENDING)) return;
                 let n = {};
-                null != e && (n.guild_id = e), N?.trial_id != null && (n.trial_id = N.trial_id), t = {
-                    notice_type: r.type,
+                null != t && (n.guild_id = t), p?.trial_id != null && (n.trial_id = p.trial_id), e = {
+                    notice_type: s.type,
                     ...n
-                }, tR.default.track(tC.HAw.APP_NOTICE_VIEWED, t)
+                }, ef.default.track(eI.HAw.APP_NOTICE_VIEWED, e)
             }
-        }, [r?.type, e, N]), l.useEffect(() => {
-            if (null != r && r.type === tC.kqX.SURVEY && null != r.metadata) {
+        }, [s?.type, t, p]), l.useEffect(() => {
+            if (null != s && s.type === eI.kqX.SURVEY && null != s.metadata) {
                 let {
-                    metadata: t
-                } = r, e = B.A.getUserExperimentDescriptor(t.id);
-                null != e && (0, v.LQ)(t.id, e), (async () => {
-                    r.metadata?.id != null && await (0, m.oX)(r.metadata?.id)
+                    metadata: e
+                } = s, t = k.A.getUserExperimentDescriptor(e.id);
+                null != t && (0, P.LQ)(e.id, t), (async () => {
+                    s.metadata?.id != null && await (0, C.oX)(s.metadata?.id)
                 })()
             }
-        }, [r]), null == r) return null;
-    let S = null != r.type ? tN.Re[r.type] : null,
-        x = null != r.type ? tN.k3[r.type] : null,
-        G = null != r.type ? tN.f7[r.type] : null,
-        Y = tN.pe[r.type];
-    if (null != S) return (0, i.jsx)(k.$, {
+        }, [s]), null == s) return null;
+    let S = null != s.type ? ep.Re[s.type] : null,
+        y = null != s.type ? ep.k3[s.type] : null,
+        G = null != s.type ? ep.f7[s.type] : null,
+        J = ep.pe[s.type];
+    if (null != S) return (0, i.jsx)(D.$, {
         dismissibleContent: S,
-        noticeType: r.type
+        noticeType: s.type
     });
-    if (null != x) return (0, i.jsx)(L._, {
-        dismissibleContent: x,
-        noticeType: r.type
+    if (null != y) return (0, i.jsx)(U._, {
+        dismissibleContent: y,
+        noticeType: s.type
     });
-    if (null != G) return (0, i.jsx)(f.T, {
+    if (null != G) return (0, i.jsx)(M.T, {
         dismissibleContent: G
     });
-    if (null != Y) return (0, i.jsx)(D.r, {
-        dismissibleContent: Y,
-        noticeType: r.type
+    if (null != J) return (0, i.jsx)(L.r, {
+        dismissibleContent: J,
+        noticeType: s.type
     });
-    let tc = r.metadata?.premiumType;
-    switch (r.type) {
-        case tC.kqX.PTT_NO_KEYBIND_WARNING:
-            return (0, i.jsx)(to.A, {});
-        case tC.kqX.LURKING_GUILD:
+    let ed = s.metadata?.premiumType;
+    switch (s.type) {
+        case eI.kqX.PTT_NO_KEYBIND_WARNING:
+            return (0, i.jsx)(eo.A, {});
+        case eI.kqX.LURKING_GUILD:
+            return (0, i.jsx)(q.A, {});
+        case eI.kqX.PENDING_MEMBER:
             return (0, i.jsx)(K.A, {});
-        case tC.kqX.PENDING_MEMBER:
-            return (0, i.jsx)(V.A, {});
-        case tC.kqX.INVITED_TO_SPEAK:
-            return (0, i.jsx)(tl.A, {});
-        case tC.kqX.GUILD_RAID_NOTIFICATION:
+        case eI.kqX.INVITED_TO_SPEAK:
+            return (0, i.jsx)(el.A, {});
+        case eI.kqX.GUILD_RAID_NOTIFICATION:
             let {
-                dismissUntil: tu
-            } = r.metadata;
-            return (0, i.jsx)(b.A, {
-                onDismiss: () => tD(tu)
+                dismissUntil: eu
+            } = s.metadata;
+            return (0, i.jsx)(w.A, {
+                onDismiss: () => eL(eu)
             });
-        case tC.kqX.WIN32_DEPRECATED_MESSAGE:
+        case eI.kqX.WIN32_DEPRECATED_MESSAGE:
             let {
-                dismissUntil: tm
-            } = r.metadata;
-            return (0, i.jsxs)(E.$Td, {
-                color: E.Hv$.WARNING,
-                children: [(0, i.jsx)(E.PMB, {
-                    onClick: () => tD(tm),
-                    noticeType: r.type
-                }), ty.intl.format(ty.t["08KQ1P"], {
-                    helpCenterLink: tp.A.getArticleURL(tC.MVz.WIN32_DEPRECATE)
+                dismissUntil: eC
+            } = s.metadata;
+            return (0, i.jsxs)(h.$Td, {
+                color: h.Hv$.WARNING,
+                children: [(0, i.jsx)(h.PMB, {
+                    onClick: () => eL(eC),
+                    noticeType: s.type
+                }), eb.intl.format(eb.t["08KQ1P"], {
+                    helpCenterLink: ex.A.getArticleURL(eI.MVz.WIN32_DEPRECATE)
                 })]
             });
-        case tC.kqX.WIN7_8_DEPRECATED_MESSAGE:
+        case eI.kqX.WIN7_8_DEPRECATED_MESSAGE:
             let {
-                dismissUntil: tS
-            } = r.metadata;
-            return (0, i.jsxs)(E.$Td, {
-                color: E.Hv$.WARNING,
-                children: [(0, i.jsx)(E.PMB, {
-                    onClick: () => tD(tS),
-                    noticeType: r.type
-                }), ty.intl.format(ty.t["8Je+dX"], {
-                    helpCenterLink: tp.A.getArticleURL(tC.MVz.WIN7_8_DEPRECATE)
+                dismissUntil: eS
+            } = s.metadata;
+            return (0, i.jsxs)(h.$Td, {
+                color: h.Hv$.WARNING,
+                children: [(0, i.jsx)(h.PMB, {
+                    onClick: () => eL(eS),
+                    noticeType: s.type
+                }), eb.intl.format(eb.t["8Je+dX"], {
+                    helpCenterLink: ex.A.getArticleURL(eI.MVz.WIN7_8_DEPRECATE)
                 })]
             });
-        case tC.kqX.WIN_COMPAT_MODE_MESSAGE:
+        case eI.kqX.WIN_COMPAT_MODE_MESSAGE:
             let {
-                dismissUntil: tU
-            } = r.metadata;
-            return (0, i.jsxs)(E.$Td, {
-                color: E.Hv$.WARNING,
-                children: [(0, i.jsx)(E.PMB, {
-                    onClick: () => tD(tU),
-                    noticeType: r.type
-                }), ty.intl.string(ty.t["9DJgOg"])]
+                dismissUntil: ev
+            } = s.metadata;
+            return (0, i.jsxs)(h.$Td, {
+                color: h.Hv$.WARNING,
+                children: [(0, i.jsx)(h.PMB, {
+                    onClick: () => eL(ev),
+                    noticeType: s.type
+                }), eb.intl.string(eb.t["9DJgOg"])]
             });
-        case tC.kqX.MACOS_19_DEPRECATED_MESSAGE:
+        case eI.kqX.MACOS_19_DEPRECATED_MESSAGE:
             let {
-                dismissUntil: tM
-            } = r.metadata;
-            return (0, i.jsxs)(E.$Td, {
-                color: E.Hv$.WARNING,
-                children: [(0, i.jsx)(E.PMB, {
-                    onClick: () => tD(tM),
-                    noticeType: r.type
-                }), ty.intl.format(ty.t.q8VPLo, {
-                    helpCenterLink: tp.A.getArticleURL(tC.MVz.MACOS_19_DEPRECATE)
+                dismissUntil: eR
+            } = s.metadata;
+            return (0, i.jsxs)(h.$Td, {
+                color: h.Hv$.WARNING,
+                children: [(0, i.jsx)(h.PMB, {
+                    onClick: () => eL(eR),
+                    noticeType: s.type
+                }), eb.intl.format(eb.t.q8VPLo, {
+                    helpCenterLink: ex.A.getArticleURL(eI.MVz.MACOS_19_DEPRECATE)
                 })]
             });
-        case tC.kqX.E2EE_UPDATE_REQUIRED:
+        case eI.kqX.E2EE_UPDATE_REQUIRED:
             let {
-                dismissUntil: tf
-            } = r.metadata;
-            return (0, i.jsxs)(E.$Td, {
-                color: E.Hv$.WARNING,
-                children: [(0, i.jsx)(E.PMB, {
-                    onClick: () => tD(tf),
-                    noticeType: r.type
-                }), ty.intl.format(th.isPlatformEmbedded ? ty.t.J232TI : ty.t.vceuiL, {
-                    helpCenterLink: tp.A.getArticleURL(tC.MVz.END_TO_END_ENCRYPTION)
+                dismissUntil: eM
+            } = s.metadata;
+            return (0, i.jsxs)(h.$Td, {
+                color: h.Hv$.WARNING,
+                children: [(0, i.jsx)(h.PMB, {
+                    onClick: () => eL(eM),
+                    noticeType: s.type
+                }), eb.intl.format(eE.isPlatformEmbedded ? eb.t.J232TI : eb.t.vceuiL, {
+                    helpCenterLink: ex.A.getArticleURL(eI.MVz.END_TO_END_ENCRYPTION)
                 })]
             });
-        case tC.kqX.WINDOWS_MEDIA_PACK_REQUIRED:
-            return (0, i.jsxs)(E.$Td, {
-                color: E.Hv$.WARNING,
-                children: [(0, i.jsx)(E.PMB, {
-                    onClick: () => tD(),
-                    noticeType: r.type
-                }), ty.intl.string(ty.t.iW0fcQ), (0, i.jsx)(E.eCN, {
-                    href: tp.A.getArticleURL(tC.MVz.WINDOWS_MEDIA_PACK),
+        case eI.kqX.WINDOWS_MEDIA_PACK_REQUIRED:
+            return (0, i.jsxs)(h.$Td, {
+                color: h.Hv$.WARNING,
+                children: [(0, i.jsx)(h.PMB, {
+                    onClick: () => eL(),
+                    noticeType: s.type
+                }), eb.intl.string(eb.t.iW0fcQ), (0, i.jsx)(h.eCN, {
+                    href: ex.A.getArticleURL(eI.MVz.WINDOWS_MEDIA_PACK),
                     target: "_blank",
-                    noticeType: r.type,
-                    children: ty.intl.string(ty.t.LQG5j6)
+                    noticeType: s.type,
+                    children: eb.intl.string(eb.t.LQG5j6)
                 })]
             });
-        case tC.kqX.GENERIC:
-            return (0, i.jsxs)(E.$Td, {
-                color: E.Hv$.DEFAULT,
-                children: [(0, i.jsx)(E.PMB, {
-                    onClick: () => tD(),
-                    noticeType: r.type
-                }), r.message, null != r.buttonText ? (0, i.jsx)(E.Z_L, {
-                    onClick: r.callback,
-                    noticeType: r.type,
-                    children: r.buttonText
+        case eI.kqX.GENERIC:
+            return (0, i.jsxs)(h.$Td, {
+                color: h.Hv$.DEFAULT,
+                children: [(0, i.jsx)(h.PMB, {
+                    onClick: () => eL(),
+                    noticeType: s.type
+                }), s.message, null != s.buttonText ? (0, i.jsx)(h.Z_L, {
+                    onClick: s.callback,
+                    noticeType: s.type,
+                    children: s.buttonText
                 }) : null]
             });
-        case tC.kqX.LAUNCH_GAME_FAILURE:
-            return (0, i.jsxs)(E.$Td, {
-                color: E.Hv$.DANGER,
-                children: [(0, i.jsx)(E.PMB, {
-                    onClick: () => tD(),
-                    noticeType: r.type
-                }), r.message, null != r.buttonText ? (0, i.jsx)(E.Z_L, {
-                    onClick: r.callback,
-                    noticeType: r.type,
-                    children: r.buttonText
+        case eI.kqX.LAUNCH_GAME_FAILURE:
+            return (0, i.jsxs)(h.$Td, {
+                color: h.Hv$.DANGER,
+                children: [(0, i.jsx)(h.PMB, {
+                    onClick: () => eL(),
+                    noticeType: s.type
+                }), s.message, null != s.buttonText ? (0, i.jsx)(h.Z_L, {
+                    onClick: s.callback,
+                    noticeType: s.type,
+                    children: s.buttonText
                 }) : null]
             });
-        case tC.kqX.VOICE_DISABLED:
-            return (0, i.jsxs)(E.$Td, {
-                color: E.Hv$.WARNING,
-                children: [(0, i.jsx)(E.PMB, {
+        case eI.kqX.VOICE_DISABLED:
+            return (0, i.jsxs)(h.$Td, {
+                color: h.Hv$.WARNING,
+                children: [(0, i.jsx)(h.PMB, {
                     onClick: () => {
-                        R.A.clearRemoteDisconnectVoiceChannelId(), tD()
+                        f.A.clearRemoteDisconnectVoiceChannelId(), eL()
                     },
-                    noticeType: r.type
-                }), ty.intl.string(ty.t.bOQ3jV), (0, i.jsx)(E.Z_L, {
+                    noticeType: s.type
+                }), eb.intl.string(eb.t.bOQ3jV), (0, i.jsx)(h.Z_L, {
                     onClick: () => {
-                        let t = tE.A.getRemoteDisconnectVoiceChannelId();
-                        null != t && null != td.A.getChannel(t) && p.default.selectVoiceChannel(t)
+                        let e = eh.A.getRemoteDisconnectVoiceChannelId();
+                        null != e && null != ec.A.getChannel(e) && x.default.selectVoiceChannel(e)
                     },
-                    noticeType: r.type,
-                    children: ty.intl.string(ty.t.vD60Pv)
+                    noticeType: s.type,
+                    children: eb.intl.string(eb.t.vD60Pv)
                 })]
             });
-        case tC.kqX.VOICE_CONNECTED_LAST_SESSION:
-            return (0, i.jsxs)(E.$Td, {
-                color: E.Hv$.DEFAULT,
-                children: [(0, i.jsx)(E.PMB, {
+        case eI.kqX.VOICE_CONNECTED_LAST_SESSION:
+            return (0, i.jsxs)(h.$Td, {
+                color: h.Hv$.DEFAULT,
+                children: [(0, i.jsx)(h.PMB, {
                     onClick: () => {
-                        R.A.clearLastSessionVoiceChannelId(), tD()
+                        f.A.clearLastSessionVoiceChannelId(), eL()
                     },
-                    noticeType: r.type
-                }), ty.intl.string(ty.t.jY2lUA), (0, i.jsx)(E.Z_L, {
+                    noticeType: s.type
+                }), eb.intl.string(eb.t.jY2lUA), (0, i.jsx)(h.Z_L, {
                     onClick: () => {
-                        let t = tE.A.getLastSessionVoiceChannelId();
-                        null != t && null != td.A.getChannel(t) && p.default.selectVoiceChannel(t)
+                        let e = eh.A.getLastSessionVoiceChannelId();
+                        null != e && null != ec.A.getChannel(e) && x.default.selectVoiceChannel(e)
                     },
-                    noticeType: r.type,
-                    children: ty.intl.string(ty.t.vD60Pv)
+                    noticeType: s.type,
+                    children: eb.intl.string(eb.t.vD60Pv)
                 })]
             });
-        case tC.kqX.SPOTIFY_AUTO_PAUSED:
-            let tk = y.A.get(tC.fg2.SPOTIFY);
-            return (0, i.jsxs)(E.$Td, {
-                color: E.Hv$.DANGER,
-                children: [(0, i.jsx)(E.PMB, {
-                    onClick: () => tD(),
-                    noticeType: r.type
+        case eI.kqX.SPOTIFY_AUTO_PAUSED:
+            let eD = b.A.get(eI.fg2.SPOTIFY);
+            return (0, i.jsxs)(h.$Td, {
+                color: h.Hv$.DANGER,
+                children: [(0, i.jsx)(h.PMB, {
+                    onClick: () => eL(),
+                    noticeType: s.type
                 }), (0, i.jsx)("img", {
                     alt: "",
-                    className: tx.tV,
-                    src: (0, u.qB)(o) ? tk.icon.darkSVG : tk.icon.whiteSVG
-                }), ty.intl.string(ty.t.D8Cp76), (0, i.jsx)(E.Z_L, {
-                    onClick: () => (0, ta.openUserSettings)(ts.X.VOICE_AND_VIDEO_PANEL),
-                    noticeType: r.type,
-                    children: ty.intl.string(ty.t.NiTd0e)
-                }), (0, i.jsx)(E.MzZ, {
-                    className: tx.uD,
-                    href: tp.A.getArticleURL(tC.MVz.SPOTIFY_AUTO_PAUSED),
+                    className: ey.tV,
+                    src: (0, u.qB)(o) ? eD.icon.darkSVG : eD.icon.whiteSVG
+                }), eb.intl.string(eb.t.D8Cp76), (0, i.jsx)(h.Z_L, {
+                    onClick: () => (0, er.openUserSettings)(ea.X.VOICE_AND_VIDEO_PANEL),
+                    noticeType: s.type,
+                    children: eb.intl.string(eb.t.NiTd0e)
+                }), (0, i.jsx)(h.MzZ, {
+                    className: ey.uD,
+                    href: ex.A.getArticleURL(eI.MVz.SPOTIFY_AUTO_PAUSED),
                     target: "_blank",
-                    children: ty.intl.string(ty.t.CiqAIU)
+                    children: eb.intl.string(eb.t.CiqAIU)
                 })]
             });
-        case tC.kqX.UNCLAIMED_ACCOUNT:
-            return (0, i.jsxs)(E.$Td, {
-                color: E.Hv$.DEFAULT,
-                children: [ty.intl.string(ty.t["f+Zaol"]), (0, i.jsx)(E.Z_L, {
-                    noticeType: r.type,
-                    onClick: () => c && null != e ? (0, $.Ze)(e) : M.R(),
-                    children: ty.intl.string(ty.t.fiNVin)
+        case eI.kqX.UNCLAIMED_ACCOUNT:
+            return (0, i.jsxs)(h.$Td, {
+                color: h.Hv$.DEFAULT,
+                children: [eb.intl.string(eb.t["f+Zaol"]), (0, i.jsx)(h.Z_L, {
+                    noticeType: s.type,
+                    onClick: () => d && null != t ? (0, H.Ze)(t) : R.R(),
+                    children: eb.intl.string(eb.t.fiNVin)
                 })]
             });
-        case tC.kqX.UNVERIFIED_ACCOUNT:
-            return (0, i.jsxs)(E.$Td, {
-                color: E.Hv$.DEFAULT,
-                children: [ty.intl.string(ty.t["3sWbf3"]), (0, i.jsx)(E.Z_L, {
-                    noticeType: r.type,
+        case eI.kqX.UNVERIFIED_ACCOUNT:
+            return (0, i.jsxs)(h.$Td, {
+                color: h.Hv$.DEFAULT,
+                children: [eb.intl.string(eb.t["3sWbf3"]), (0, i.jsx)(h.Z_L, {
+                    noticeType: s.type,
                     onClick: () => {
-                        A.A.verifyResend(), _.A.show({
-                            title: ty.intl.string(ty.t.LykQYk),
-                            body: ty.intl.format(ty.t.azKEPy, {
-                                email: t?.email
+                        m.A.verifyResend(), A.A.show({
+                            title: eb.intl.string(eb.t.LykQYk),
+                            body: eb.intl.format(eb.t.azKEPy, {
+                                email: e?.email
                             }),
-                            cancelText: ty.intl.string(ty.t.Vm8akB),
-                            onCancel: M.R
+                            cancelText: eb.intl.string(eb.t.Vm8akB),
+                            onCancel: R.R
                         })
                     },
-                    children: ty.intl.string(ty.t.WnX4J2)
+                    children: eb.intl.string(eb.t.WnX4J2)
                 })]
             });
-        case tC.kqX.SCHEDULED_MAINTENANCE:
-            if (null == r.metadata) return null;
-            return (0, i.jsxs)(E.$Td, {
-                color: E.Hv$.DEFAULT,
-                children: [(0, i.jsx)(E.PMB, {
-                    onClick: () => h.A.ackScheduledMaintenance(),
-                    noticeType: r.type
-                }), ty.intl.format(ty.t["yb96S+"], r.metadata), (0, i.jsx)(E.eCN, {
-                    href: `${tC.qF7.STATUS}/incidents/${r.metadata.id}`,
-                    noticeType: r.type,
-                    children: ty.intl.string(ty.t.hvVgAZ)
+        case eI.kqX.SCHEDULED_MAINTENANCE:
+            if (null == s.metadata) return null;
+            return (0, i.jsxs)(h.$Td, {
+                color: h.Hv$.DEFAULT,
+                children: [(0, i.jsx)(h.PMB, {
+                    onClick: () => E.A.ackScheduledMaintenance(),
+                    noticeType: s.type
+                }), eb.intl.format(eb.t["yb96S+"], s.metadata), (0, i.jsx)(h.eCN, {
+                    href: `${eI.qF7.STATUS}/incidents/${s.metadata.id}`,
+                    noticeType: s.type,
+                    children: eb.intl.string(eb.t.hvVgAZ)
                 })]
             });
-        case tC.kqX.NO_INPUT_DETECTED:
-            return (0, i.jsx)(tj, {
-                noticeType: r.type
+        case eI.kqX.NO_INPUT_DETECTED:
+            return (0, i.jsx)(eO, {
+                noticeType: s.type
             });
-        case tC.kqX.NO_INPUT_DEVICES_DETECTED:
-            return (0, i.jsx)(tP, {
-                noticeType: r.type
+        case eI.kqX.NO_INPUT_DEVICES_DETECTED:
+            return (0, i.jsx)(ej, {
+                noticeType: s.type
             });
-        case tC.kqX.HARDWARE_MUTE:
-            if (null != r.metadata) {
+        case eI.kqX.HARDWARE_MUTE:
+            if (null != s.metadata) {
                 let {
-                    vendor: t,
-                    model: e
-                } = r.metadata;
-                return (0, i.jsxs)(E.$Td, {
-                    color: E.Hv$.DANGER,
-                    children: [ty.intl.format(ty.t.qoDex7, {
-                        vendorName: t.name,
-                        modelName: e.name
-                    }), (0, i.jsx)(E.PMB, {
-                        noticeType: r.type,
+                    vendor: e,
+                    model: t
+                } = s.metadata;
+                return (0, i.jsxs)(h.$Td, {
+                    color: h.Hv$.DANGER,
+                    children: [eb.intl.format(eb.t.qoDex7, {
+                        vendorName: e.name,
+                        modelName: t.name
+                    }), (0, i.jsx)(h.PMB, {
+                        noticeType: s.type,
                         onClick: () => {
-                            T.A.setEnableHardwareMuteNotice(!1), tD()
+                            _.A.setEnableHardwareMuteNotice(!1), eL()
                         }
-                    }), (0, i.jsx)(E.eCN, {
-                        href: e.url,
+                    }), (0, i.jsx)(h.eCN, {
+                        href: t.url,
                         target: "_blank",
                         rel: "noreferrer noopener",
-                        noticeType: r.type,
-                        children: ty.intl.string(ty.t["Yl/Riu"])
+                        noticeType: s.type,
+                        children: eb.intl.string(eb.t["Yl/Riu"])
                     })]
                 })
             }
-            if (J.A.getConfig({
+            if (X.A.getConfig({
                     location: "Notice.AudioIssueNoticeHardwareMute"
-                }).enableHardwareSilenceWarning) return (0, i.jsxs)(E.$Td, {
-                color: E.Hv$.INFO,
-                children: [ty.intl.format(ty.t.QMw8Fd, {}), (0, i.jsx)(E.PMB, {
-                    noticeType: r.type,
+                }).enableHardwareSilenceWarning) return (0, i.jsxs)(h.$Td, {
+                color: h.Hv$.INFO,
+                children: [eb.intl.format(eb.t.QMw8Fd, {}), (0, i.jsx)(h.PMB, {
+                    noticeType: s.type,
                     onClick: () => {
-                        T.A.setEnableHardwareMuteNotice(!1), tD()
+                        _.A.setEnableHardwareMuteNotice(!1), eL()
                     }
                 })]
             });
             return null;
-        case tC.kqX.STREAMER_MODE:
-            return (0, i.jsxs)(E.$Td, {
-                color: E.Hv$.STREAMER_MODE,
-                children: [(0, i.jsx)(E.PMB, {
-                    onClick: () => tD(),
-                    noticeType: tC.kqX.STREAMER_MODE
-                }), ty.intl.string(ty.t.iEgBXp), (0, i.jsx)(E.Z_L, {
-                    onClick: () => C.A.setEnabled(!1),
-                    noticeType: tC.kqX.STREAMER_MODE,
-                    children: ty.intl.string(ty.t.R9GHya)
+        case eI.kqX.STREAMER_MODE:
+            return (0, i.jsxs)(h.$Td, {
+                color: h.Hv$.STREAMER_MODE,
+                children: [(0, i.jsx)(h.PMB, {
+                    onClick: () => eL(),
+                    noticeType: eI.kqX.STREAMER_MODE
+                }), eb.intl.string(eb.t.iEgBXp), (0, i.jsx)(h.Z_L, {
+                    onClick: () => I.A.setEnabled(!1),
+                    noticeType: eI.kqX.STREAMER_MODE,
+                    children: eb.intl.string(eb.t.R9GHya)
                 })]
             });
-        case tC.kqX.DETECTED_OFF_PLATFORM_PREMIUM_PERK:
-            if (null == r.metadata) return null;
+        case eI.kqX.DETECTED_OFF_PLATFORM_PREMIUM_PERK:
+            if (null == s.metadata) return null;
             let {
-                skuId: tL, applicationId: tG
-            } = r.metadata, tv = tA.A.get(tL), tB = P.A.getApplication(tG);
-            if (null == tv || null == tB) return null;
-            let tb = {
-                page: tC.liQ.IN_APP
+                skuId: eU, applicationId: eG
+            } = s.metadata, eP = em.A.get(eU), ek = j.A.getApplication(eG);
+            if (null == eP || null == ek) return null;
+            let ew = {
+                page: eI.liQ.IN_APP
             };
-            return (0, i.jsxs)(E.$Td, {
-                color: E.Hv$.PREMIUM_TIER_1,
-                children: [(0, i.jsx)(E.PMB, {
-                    onClick: () => I.X(tv.id),
-                    noticeType: tC.kqX.DETECTED_OFF_PLATFORM_PREMIUM_PERK
-                }), (0, i.jsx)(E.tvc, {
+            return (0, i.jsxs)(h.$Td, {
+                color: h.Hv$.PREMIUM_TIER_1,
+                children: [(0, i.jsx)(h.PMB, {
+                    onClick: () => g.X(eP.id),
+                    noticeType: eI.kqX.DETECTED_OFF_PLATFORM_PREMIUM_PERK
+                }), (0, i.jsx)(h.tvc, {
                     size: "md",
                     color: "currentColor",
-                    className: tx.PC
-                }), ty.intl.format(ty.t["g3MU/+"], {
-                    applicationName: tB.name,
-                    skuName: tv.name
-                }), (0, i.jsx)(E.Z_L, {
-                    noticeType: tC.kqX.DETECTED_OFF_PLATFORM_PREMIUM_PERK,
-                    onClick: () => (0, z.j)({
-                        applicationId: tB.id,
-                        skuId: tv.id,
+                    className: ey.PC
+                }), eb.intl.format(eb.t["g3MU/+"], {
+                    applicationName: ek.name,
+                    skuName: eP.name
+                }), (0, i.jsx)(h.Z_L, {
+                    noticeType: eI.kqX.DETECTED_OFF_PLATFORM_PREMIUM_PERK,
+                    onClick: () => (0, Q.j)({
+                        applicationId: ek.id,
+                        skuId: eP.id,
                         openPremiumPaymentModal: () => {
-                            (0, Q.A)({
+                            (0, $.A)({
                                 initialPlanId: null,
-                                subscriptionTier: tg.pe.TIER_2,
-                                analyticsLocations: s,
-                                analyticsObject: tb
+                                subscriptionTier: eN.pe.TIER_2,
+                                analyticsLocations: a,
+                                analyticsObject: ew
                             })
                         },
-                        analyticsLocations: s,
-                        analyticsLocationObject: tb,
-                        context: __OVERLAY__ ? tC.BRT.OVERLAY : tC.BRT.APP
-                    }).then(() => I.X(tv.id)),
-                    children: ty.intl.string(ty.t.KEwPYx)
+                        analyticsLocations: a,
+                        analyticsLocationObject: ew,
+                        context: __OVERLAY__ ? eI.BRT.OVERLAY : eI.BRT.APP
+                    }).then(() => g.X(eP.id)),
+                    children: eb.intl.string(eb.t.KEwPYx)
                 })]
             });
-        case tC.kqX.DETECTED_OFF_PLATFORM_PREMIUM_PERK_UPSELL: {
-            if (null == r.metadata) return null;
+        case eI.kqX.DETECTED_OFF_PLATFORM_PREMIUM_PERK_UPSELL: {
+            if (null == s.metadata) return null;
             let {
-                skuId: t,
-                applicationId: e
-            } = r.metadata, n = tA.A.get(t), l = P.A.getApplication(e);
+                skuId: e,
+                applicationId: t
+            } = s.metadata, n = em.A.get(e), l = j.A.getApplication(t);
             if (null == n || null == l) return null;
-            return (0, i.jsxs)(E.$Td, {
-                color: E.Hv$.PREMIUM_TIER_1,
-                children: [(0, i.jsx)(E.PMB, {
-                    onClick: () => tD(),
-                    noticeType: tC.kqX.DETECTED_OFF_PLATFORM_PREMIUM_PERK_UPSELL
-                }), (0, i.jsx)(E.tvc, {
+            return (0, i.jsxs)(h.$Td, {
+                color: h.Hv$.PREMIUM_TIER_1,
+                children: [(0, i.jsx)(h.PMB, {
+                    onClick: () => eL(),
+                    noticeType: eI.kqX.DETECTED_OFF_PLATFORM_PREMIUM_PERK_UPSELL
+                }), (0, i.jsx)(h.tvc, {
                     size: "md",
                     color: "currentColor",
-                    className: tx.PC
-                }), ty.intl.format(ty.t.LquIKC, {
+                    className: ey.PC
+                }), eb.intl.format(eb.t.LquIKC, {
                     applicationName: l.name,
                     skuName: n.name
-                }), (0, i.jsx)(E.zr9, {
-                    children: (0, i.jsx)(a.N_, {
-                        onClick: () => tD(),
+                }), (0, i.jsx)(h.zr9, {
+                    children: (0, i.jsx)(r.N_, {
+                        onClick: () => eL(),
                         to: {
-                            pathname: tC.BVt.APPLICATION_STORE_LISTING_SKU(n.id),
+                            pathname: eI.BVt.APPLICATION_STORE_LISTING_SKU(n.id),
                             state: {
                                 scrollRestoration: !1
                             }
                         },
-                        children: ty.intl.string(ty.t.hvVgAZ)
+                        children: eb.intl.string(eb.t.hvVgAZ)
                     })
                 })]
             })
         }
-        case tC.kqX.SURVEY: {
-            let t = r.metadata;
-            if (null == t) return null;
+        case eI.kqX.SURVEY: {
+            let e = s.metadata;
+            if (null == e) return null;
             let {
-                key: e,
+                key: t,
                 prompt: n,
                 cta: l,
-                url: s,
-                embedded: a,
+                url: a,
+                embedded: r,
                 id: o
-            } = t;
-            return (0, i.jsxs)(E.$Td, {
-                color: E.Hv$.CUSTOM,
-                children: [(0, i.jsx)(E.PMB, {
-                    noticeType: tC.kqX.SURVEY,
+            } = e;
+            return (0, i.jsxs)(h.$Td, {
+                color: h.Hv$.CUSTOM,
+                children: [(0, i.jsx)(h.PMB, {
+                    noticeType: eI.kqX.SURVEY,
                     onClick: () => {
-                        (0, m.pX)(e, !0)
+                        (0, C.pX)(t, !0)
                     }
-                }), n, (0, i.jsx)(E.Z_L, {
-                    noticeType: tC.kqX.SURVEY,
+                }), n, (0, i.jsx)(h.Z_L, {
+                    noticeType: eI.kqX.SURVEY,
                     onClick: () => {
-                        a ? (0, tt.K)(o) : window.open(s, "_blank"), (0, m.pX)(e, !1)
+                        r ? (0, ee.K)(o) : window.open(a, "_blank"), (0, C.pX)(t, !1)
                     },
                     children: l
                 })]
             })
         }
-        case tC.kqX.CORRUPT_INSTALLATION:
-            return (0, i.jsxs)(E.$Td, {
-                color: E.Hv$.DANGER,
-                children: [ty.intl.string(ty.t["ugxmk/"]), (0, i.jsx)(E.eCN, {
-                    href: tp.A.getArticleURL(tC.MVz.CORRUPT_INSTALLATION),
+        case eI.kqX.CORRUPT_INSTALLATION:
+            return (0, i.jsxs)(h.$Td, {
+                color: h.Hv$.DANGER,
+                children: [eb.intl.string(eb.t["ugxmk/"]), (0, i.jsx)(h.eCN, {
+                    href: ex.A.getArticleURL(eI.MVz.CORRUPT_INSTALLATION),
                     target: "_blank",
-                    noticeType: r.type,
-                    children: ty.intl.string(ty.t["6ik4Xk"])
+                    noticeType: s.type,
+                    children: eb.intl.string(eb.t["6ik4Xk"])
                 })]
             });
-        case tC.kqX.VIDEO_UNSUPPORTED_BROWSER:
-            return (0, i.jsxs)(E.$Td, {
-                color: E.Hv$.WARNING,
-                children: [(0, i.jsx)(E.PMB, {
-                    onClick: () => tD(),
-                    noticeType: tC.kqX.VIDEO_UNSUPPORTED_BROWSER
-                }), ty.intl.string(ty.t.wVjKGi), (0, i.jsx)(E.Z_L, {
-                    noticeType: tC.kqX.VIDEO_UNSUPPORTED_BROWSER,
+        case eI.kqX.VIDEO_UNSUPPORTED_BROWSER:
+            return (0, i.jsxs)(h.$Td, {
+                color: h.Hv$.WARNING,
+                children: [(0, i.jsx)(h.PMB, {
+                    onClick: () => eL(),
+                    noticeType: eI.kqX.VIDEO_UNSUPPORTED_BROWSER
+                }), eb.intl.string(eb.t.wVjKGi), (0, i.jsx)(h.Z_L, {
+                    noticeType: eI.kqX.VIDEO_UNSUPPORTED_BROWSER,
                     onClick: () => {
-                        (0, E.mMO)(async () => {
+                        (0, h.mMO)(async () => {
                             let {
-                                default: t
+                                default: e
                             } = await Promise.all([n.e("56423"), n.e("25280")]).then(n.bind(n, 987482));
-                            return e => (0, i.jsx)(t, {
+                            return t => (0, i.jsx)(e, {
                                 source: "Video unsupported browser",
-                                ...e
+                                ...t
                             })
                         })
                     },
-                    children: ty.intl.string(ty.t["1WjMbC"])
+                    children: eb.intl.string(eb.t["1WjMbC"])
                 })]
             });
-        case tC.kqX.DISPATCH_ERROR:
-            if (null == r.metadata) return null;
+        case eI.kqX.DISPATCH_ERROR:
+            if (null == s.metadata) return null;
             let {
-                error: tw
-            } = r.metadata;
-            return (0, i.jsxs)(E.$Td, {
-                color: E.Hv$.DANGER,
-                children: [(0, i.jsx)(E.PMB, {
-                    onClick: () => tD(),
-                    noticeType: tC.kqX.DISPATCH_ERROR
-                }), tw?.displayMessage, (0, i.jsx)(E.Z_L, {
-                    noticeType: tC.kqX.DISPATCH_ERROR,
-                    onClick: () => (0, E.mMO)(async () => {
+                error: eB
+            } = s.metadata;
+            return (0, i.jsxs)(h.$Td, {
+                color: h.Hv$.DANGER,
+                children: [(0, i.jsx)(h.PMB, {
+                    onClick: () => eL(),
+                    noticeType: eI.kqX.DISPATCH_ERROR
+                }), eB?.displayMessage, (0, i.jsx)(h.Z_L, {
+                    noticeType: eI.kqX.DISPATCH_ERROR,
+                    onClick: () => (0, h.mMO)(async () => {
                         let {
-                            default: t
+                            default: e
                         } = await n.e("88014").then(n.bind(n, 627261));
-                        return e => (0, i.jsx)(t, {
-                            ...e
+                        return t => (0, i.jsx)(e, {
+                            ...t
                         })
                     }),
-                    children: ty.intl.string(ty.t.hvVgAZ)
+                    children: eb.intl.string(eb.t.hvVgAZ)
                 })]
             });
-        case tC.kqX.DISPATCH_INSTALL_SCRIPT_PROGRESS:
-            if (null == r.metadata) return null;
+        case eI.kqX.DISPATCH_INSTALL_SCRIPT_PROGRESS:
+            if (null == s.metadata) return null;
             let {
-                progress: tq, total: t$, name: tX
-            } = r.metadata;
-            return (0, i.jsxs)(E.$Td, {
-                color: E.Hv$.DEFAULT,
-                children: [(0, i.jsx)(E.PMB, {
-                    onClick: () => tD(),
-                    noticeType: tC.kqX.DISPATCH_INSTALL_SCRIPT_PROGRESS
-                }), (0, i.jsxs)(j.A, {
-                    justify: j.A.Justify.CENTER,
-                    children: [null != tX ? ty.intl.formatToPlainString(ty.t["pHj+z4"], {
-                        name: `${tX}`,
-                        progress: tq,
-                        total: t$
-                    }) : ty.intl.formatToPlainString(ty.t["lHZn+A"], {
-                        progress: tq,
-                        total: t$
-                    }), (0, i.jsx)(E.y$y, {
-                        type: E.y$y.Type.PULSING_ELLIPSIS,
-                        className: tx.gO
+                progress: eV, total: eH, name: eF
+            } = s.metadata;
+            return (0, i.jsxs)(h.$Td, {
+                color: h.Hv$.DEFAULT,
+                children: [(0, i.jsx)(h.PMB, {
+                    onClick: () => eL(),
+                    noticeType: eI.kqX.DISPATCH_INSTALL_SCRIPT_PROGRESS
+                }), (0, i.jsxs)(O.A, {
+                    justify: O.A.Justify.CENTER,
+                    children: [null != eF ? eb.intl.formatToPlainString(eb.t["pHj+z4"], {
+                        name: `${eF}`,
+                        progress: eV,
+                        total: eH
+                    }) : eb.intl.formatToPlainString(eb.t["lHZn+A"], {
+                        progress: eV,
+                        total: eH
+                    }), (0, i.jsx)(h.y$y, {
+                        type: h.y$y.Type.PULSING_ELLIPSIS,
+                        className: ey.gO
                     })]
                 })]
             });
-        case tC.kqX.APPLICATION_TEST_MODE:
-            if (null == r.metadata) return null;
-            if (null != tI.A.testModeEmbeddedApplicationId) return (0, i.jsx)(E.$Td, {
-                color: E.Hv$.WARNING,
-                children: (0, i.jsxs)(j.A, {
-                    justify: j.A.Justify.CENTER,
-                    align: j.A.Align.CENTER,
+        case eI.kqX.APPLICATION_TEST_MODE:
+            if (null == s.metadata) return null;
+            if (null != eg.A.testModeEmbeddedApplicationId) return (0, i.jsx)(h.$Td, {
+                color: h.Hv$.WARNING,
+                children: (0, i.jsxs)(O.A, {
+                    justify: O.A.Justify.CENTER,
+                    align: O.A.Align.CENTER,
                     children: [(0, i.jsx)("div", {
-                        children: ty.intl.format(ty.t["1qxVe4"], {
-                            applicationName: r.metadata.applicationName
+                        children: eb.intl.format(eb.t["1qxVe4"], {
+                            applicationName: s.metadata.applicationName
                         })
-                    }), (0, i.jsx)(E.PMB, {
-                        onClick: g.cL,
-                        noticeType: tC.kqX.APPLICATION_TEST_MODE
+                    }), (0, i.jsx)(h.PMB, {
+                        onClick: N.cL,
+                        noticeType: eI.kqX.APPLICATION_TEST_MODE
                     })]
                 })
             });
-            return (0, i.jsx)(E.$Td, {
-                color: E.Hv$.WARNING,
-                children: (0, i.jsxs)(j.A, {
-                    justify: j.A.Justify.CENTER,
-                    align: j.A.Align.CENTER,
+            return (0, i.jsx)(h.$Td, {
+                color: h.Hv$.WARNING,
+                children: (0, i.jsxs)(O.A, {
+                    justify: O.A.Justify.CENTER,
+                    align: O.A.Align.CENTER,
                     children: [(0, i.jsx)("div", {
-                        children: ty.intl.format(ty.t.Fv5HrE, {
-                            applicationName: r.metadata.applicationName
+                        children: eb.intl.format(eb.t.Fv5HrE, {
+                            applicationName: s.metadata.applicationName
                         })
-                    }), (0, i.jsx)(E.PMB, {
-                        onClick: g.cL,
-                        noticeType: tC.kqX.APPLICATION_TEST_MODE
+                    }), (0, i.jsx)(h.PMB, {
+                        onClick: N.cL,
+                        noticeType: eI.kqX.APPLICATION_TEST_MODE
                     })]
                 })
             });
-        case tC.kqX.VIEWING_ROLES:
-            return (0, i.jsx)(F.A, {});
-        case tC.kqX.PREMIUM_UNCANCEL:
-            return (0, i.jsxs)(E.$Td, {
-                color: tc === tg.PremiumTypes.TIER_1 ? E.Hv$.PREMIUM_TIER_1 : tc === tg.PremiumTypes.TIER_0 ? E.Hv$.PREMIUM_TIER_0 : E.Hv$.PREMIUM_TIER_2,
-                children: [(0, i.jsx)(E.PMB, {
-                    noticeType: tC.kqX.PREMIUM_UNCANCEL,
+        case eI.kqX.VIEWING_ROLES:
+            return (0, i.jsx)(z.A, {});
+        case eI.kqX.PREMIUM_UNCANCEL:
+            return (0, i.jsxs)(h.$Td, {
+                color: ed === eN.PremiumTypes.TIER_1 ? h.Hv$.PREMIUM_TIER_1 : ed === eN.PremiumTypes.TIER_0 ? h.Hv$.PREMIUM_TIER_0 : h.Hv$.PREMIUM_TIER_2,
+                children: [(0, i.jsx)(h.PMB, {
+                    noticeType: eI.kqX.PREMIUM_UNCANCEL,
                     onClick: () => {
-                        tD(r.metadata?.premiumSubscription?.currentPeriodEnd)
+                        eL(s.metadata?.premiumSubscription?.currentPeriodEnd)
                     }
-                }), (0, i.jsx)(E.tvc, {
+                }), (0, i.jsx)(h.tvc, {
                     size: "md",
                     color: "currentColor",
-                    className: tx.PC
-                }), tc === tg.PremiumTypes.TIER_1 ? ty.intl.formatToPlainString(ty.t.fXv4wm, {
-                    daysLeft: r.metadata.daysLeft
-                }) : tc === tg.PremiumTypes.TIER_0 ? ty.intl.formatToPlainString(ty.t.ZOHZMr, {
-                    daysLeft: r.metadata.daysLeft
-                }) : ty.intl.formatToPlainString(ty.t.outyHh, {
-                    daysLeft: r.metadata.daysLeft
-                }), (0, i.jsx)(E.Z_L, {
-                    noticeType: tC.kqX.PREMIUM_UNCANCEL,
+                    className: ey.PC
+                }), ed === eN.PremiumTypes.TIER_1 ? eb.intl.formatToPlainString(eb.t.fXv4wm, {
+                    daysLeft: s.metadata.daysLeft
+                }) : ed === eN.PremiumTypes.TIER_0 ? eb.intl.formatToPlainString(eb.t.ZOHZMr, {
+                    daysLeft: s.metadata.daysLeft
+                }) : eb.intl.formatToPlainString(eb.t.outyHh, {
+                    daysLeft: s.metadata.daysLeft
+                }), (0, i.jsx)(h.Z_L, {
+                    noticeType: eI.kqX.PREMIUM_UNCANCEL,
                     onClick: () => {
-                        tD(r.metadata?.premiumSubscription?.currentPeriodEnd), (0, E.mMO)(async () => {
+                        eL(s.metadata?.premiumSubscription?.currentPeriodEnd), (0, h.mMO)(async () => {
                             let {
-                                default: t
-                            } = await Promise.all([n.e("41353"), n.e("62175"), n.e("14704"), n.e("99590")]).then(n.bind(n, 174705));
-                            return e => (0, i.jsx)(t, {
-                                ...e,
-                                daysLeft: r.metadata.daysLeft,
-                                premiumType: tc,
+                                default: e
+                            } = await Promise.all([n.e("41353"), n.e("62175"), n.e("14704"), n.e("2550")]).then(n.bind(n, 174705));
+                            return t => (0, i.jsx)(e, {
+                                ...t,
+                                daysLeft: s.metadata.daysLeft,
+                                premiumType: ed,
                                 analyticsSource: "Nag Bar",
-                                premiumSubscription: r.metadata.premiumSubscription
+                                premiumSubscription: s.metadata.premiumSubscription
                             })
                         })
                     },
-                    children: tc === tg.PremiumTypes.TIER_1 ? ty.intl.string(ty.t.BkbUPM) : tc === tg.PremiumTypes.TIER_0 ? ty.intl.string(ty.t.Px978X) : ty.intl.string(ty.t.LW5tCE)
+                    children: ed === eN.PremiumTypes.TIER_1 ? eb.intl.string(eb.t.BkbUPM) : ed === eN.PremiumTypes.TIER_0 ? eb.intl.string(eb.t.Px978X) : eb.intl.string(eb.t.LW5tCE)
                 })]
             });
-        case tC.kqX.PREMIUM_PAST_DUE_ONE_TIME_PAYMENT:
+        case eI.kqX.PREMIUM_PAST_DUE_ONE_TIME_PAYMENT:
             let {
-                daysPastDue: tV, dismissUntil: tH
-            } = r.metadata;
-            return (0, i.jsxs)(E.$Td, {
-                color: E.Hv$.WARNING,
-                children: [(0, i.jsx)(E.PMB, {
-                    noticeType: r.type,
+                daysPastDue: eK, dismissUntil: eW
+            } = s.metadata;
+            return (0, i.jsxs)(h.$Td, {
+                color: h.Hv$.WARNING,
+                children: [(0, i.jsx)(h.PMB, {
+                    noticeType: s.type,
                     onClick: () => {
-                        tD(tH)
+                        eL(eW)
                     }
-                }), ty.intl.format(ty.t.zxU0Kp, {
-                    daysPastDue: tV
-                }), (0, i.jsx)(E.Z_L, {
-                    noticeType: tC.kqX.PREMIUM_PAST_DUE_ONE_TIME_PAYMENT,
+                }), eb.intl.format(eb.t.zxU0Kp, {
+                    daysPastDue: eK
+                }), (0, i.jsx)(h.Z_L, {
+                    noticeType: eI.kqX.PREMIUM_PAST_DUE_ONE_TIME_PAYMENT,
                     onClick: () => {
-                        tD(tH), (0, ta.openUserSettings)(ts.X.SUBSCRIPTIONS_PANEL)
+                        eL(eW), (0, er.openUserSettings)(ea.X.SUBSCRIPTIONS_PANEL)
                     },
-                    children: ty.intl.string(ty.t.q8rxeS)
+                    children: eb.intl.string(eb.t.q8rxeS)
                 })]
             });
-        case tC.kqX.PREMIUM_PAST_DUE_INVALID_PAYMENT:
-            return (0, i.jsxs)(E.$Td, {
-                color: E.Hv$.DANGER,
-                children: [(0, i.jsx)(E.PMB, {
-                    noticeType: tC.kqX.PREMIUM_PAST_DUE_INVALID_PAYMENT,
+        case eI.kqX.PREMIUM_PAST_DUE_INVALID_PAYMENT:
+            return (0, i.jsxs)(h.$Td, {
+                color: h.Hv$.DANGER,
+                children: [(0, i.jsx)(h.PMB, {
+                    noticeType: eI.kqX.PREMIUM_PAST_DUE_INVALID_PAYMENT,
                     onClick: () => {
-                        tD(r.metadata?.premiumSubscription?.currentPeriodEnd)
+                        eL(s.metadata?.premiumSubscription?.currentPeriodEnd)
                     }
-                }), ty.intl.string(ty.t.LlZaoX), (0, i.jsx)(E.Z_L, {
-                    noticeType: tC.kqX.PREMIUM_PAST_DUE_INVALID_PAYMENT,
+                }), eb.intl.string(eb.t.LlZaoX), (0, i.jsx)(h.Z_L, {
+                    noticeType: eI.kqX.PREMIUM_PAST_DUE_INVALID_PAYMENT,
                     onClick: () => {
-                        tD(r.metadata?.premiumSubscription?.currentPeriodEnd), (0, ta.openUserSettings)(ts.X.SUBSCRIPTIONS_PANEL)
+                        eL(s.metadata?.premiumSubscription?.currentPeriodEnd), (0, er.openUserSettings)(ea.X.SUBSCRIPTIONS_PANEL)
                     },
-                    children: ty.intl.string(ty.t["Zpd+Yq"])
+                    children: eb.intl.string(eb.t["Zpd+Yq"])
                 })]
             });
-        case tC.kqX.PREMIUM_PAST_DUE_MISSING_PAYMENT:
-            return (0, i.jsxs)(E.$Td, {
-                color: E.Hv$.WARNING,
-                children: [(0, i.jsx)(E.PMB, {
-                    noticeType: tC.kqX.PREMIUM_PAST_DUE_MISSING_PAYMENT,
+        case eI.kqX.PREMIUM_PAST_DUE_MISSING_PAYMENT:
+            return (0, i.jsxs)(h.$Td, {
+                color: h.Hv$.WARNING,
+                children: [(0, i.jsx)(h.PMB, {
+                    noticeType: eI.kqX.PREMIUM_PAST_DUE_MISSING_PAYMENT,
                     onClick: () => {
-                        tD(r.metadata?.premiumSubscription?.currentPeriodEnd)
+                        eL(s.metadata?.premiumSubscription?.currentPeriodEnd)
                     }
-                }), ty.intl.string(ty.t["30YfCr"]), (0, i.jsx)(E.Z_L, {
-                    noticeType: tC.kqX.PREMIUM_PAST_DUE_MISSING_PAYMENT,
+                }), eb.intl.string(eb.t["30YfCr"]), (0, i.jsx)(h.Z_L, {
+                    noticeType: eI.kqX.PREMIUM_PAST_DUE_MISSING_PAYMENT,
                     onClick: () => {
-                        tD(r.metadata?.premiumSubscription?.currentPeriodEnd), (0, ta.openUserSettings)(ts.X.SUBSCRIPTIONS_PANEL)
+                        eL(s.metadata?.premiumSubscription?.currentPeriodEnd), (0, er.openUserSettings)(ea.X.SUBSCRIPTIONS_PANEL)
                     },
-                    children: ty.intl.string(ty.t.U5pKWA)
+                    children: eb.intl.string(eb.t.U5pKWA)
                 })]
             });
-        case tC.kqX.PREMIUM_MISSING_PAYMENT:
-            return (0, i.jsxs)(E.$Td, {
-                color: E.Hv$.WARNING,
-                children: [(0, i.jsx)(E.PMB, {
-                    noticeType: tC.kqX.PREMIUM_MISSING_PAYMENT,
+        case eI.kqX.PREMIUM_MISSING_PAYMENT:
+            return (0, i.jsxs)(h.$Td, {
+                color: h.Hv$.WARNING,
+                children: [(0, i.jsx)(h.PMB, {
+                    noticeType: eI.kqX.PREMIUM_MISSING_PAYMENT,
                     onClick: () => {
-                        tD(r.metadata?.premiumSubscription?.currentPeriodEnd)
+                        eL(s.metadata?.premiumSubscription?.currentPeriodEnd)
                     }
-                }), tc === tg.PremiumTypes.TIER_1 ? ty.intl.formatToPlainString(ty.t.b6QUvf, {
-                    daysLeft: r.metadata.daysLeft
-                }) : tc === tg.PremiumTypes.TIER_0 ? ty.intl.formatToPlainString(ty.t["tURZ/M"], {
-                    daysLeft: r.metadata.daysLeft
-                }) : ty.intl.formatToPlainString(ty.t.AyC74I, {
-                    daysLeft: r.metadata.daysLeft
-                }), (0, i.jsx)(E.Z_L, {
-                    noticeType: tC.kqX.PREMIUM_MISSING_PAYMENT,
+                }), ed === eN.PremiumTypes.TIER_1 ? eb.intl.formatToPlainString(eb.t.b6QUvf, {
+                    daysLeft: s.metadata.daysLeft
+                }) : ed === eN.PremiumTypes.TIER_0 ? eb.intl.formatToPlainString(eb.t["tURZ/M"], {
+                    daysLeft: s.metadata.daysLeft
+                }) : eb.intl.formatToPlainString(eb.t.AyC74I, {
+                    daysLeft: s.metadata.daysLeft
+                }), (0, i.jsx)(h.Z_L, {
+                    noticeType: eI.kqX.PREMIUM_MISSING_PAYMENT,
                     onClick: () => {
-                        tD(r.metadata?.premiumSubscription?.currentPeriodEnd), (0, ta.openUserSettings)(ts.X.SUBSCRIPTIONS_PANEL)
+                        eL(s.metadata?.premiumSubscription?.currentPeriodEnd), (0, er.openUserSettings)(ea.X.SUBSCRIPTIONS_PANEL)
                     },
-                    children: tc === tg.PremiumTypes.TIER_1 ? ty.intl.string(ty.t.lboF5O) : tc === tg.PremiumTypes.TIER_0 ? ty.intl.string(ty.t["4UPwOq"]) : ty.intl.string(ty.t["P/VvGb"])
+                    children: ed === eN.PremiumTypes.TIER_1 ? eb.intl.string(eb.t.lboF5O) : ed === eN.PremiumTypes.TIER_0 ? eb.intl.string(eb.t["4UPwOq"]) : eb.intl.string(eb.t["P/VvGb"])
                 })]
             });
-        case tC.kqX.BACK_TO_PREVIOUS_SCREEN:
-            return (0, i.jsx)(H.y, {
-                buttonText: r.buttonText ?? ty.intl.string(ty.t["/g10LC"]),
-                onGoBack: r.callback,
-                onDismiss: () => tD(),
+        case eI.kqX.BACK_TO_PREVIOUS_SCREEN:
+            return (0, i.jsx)(W.y, {
+                buttonText: s.buttonText ?? eb.intl.string(eb.t["/g10LC"]),
+                onGoBack: s.callback,
+                onDismiss: () => eL(),
                 showCloseButton: !0
             });
-        case tC.kqX.AUTOMOD_QUARANTINED_USER_PROFILE:
-            return (0, i.jsx)(q.A, {
-                guildId: e,
-                analyticsLocations: s
+        case eI.kqX.AUTOMOD_QUARANTINED_USER_PROFILE:
+            return (0, i.jsx)(V.A, {
+                guildId: t,
+                analyticsLocations: a
             });
-        case tC.kqX.QUARANTINED:
-            return (0, i.jsxs)(E.$Td, {
-                color: E.Hv$.DANGER,
-                children: [ty.intl.string(ty.t.DVFJYf), (0, i.jsx)(E.eCN, {
-                    href: tO.q,
+        case eI.kqX.QUARANTINED:
+            return (0, i.jsxs)(h.$Td, {
+                color: h.Hv$.DANGER,
+                children: [eb.intl.string(eb.t.DVFJYf), (0, i.jsx)(h.eCN, {
+                    href: eT.q,
                     target: "_blank",
-                    noticeType: r.type,
-                    children: ty.intl.string(ty.t.kvHdFN)
-                }), (0, i.jsx)(E.MzZ, {
-                    href: tp.A.getArticleURL(tC.MVz.QUARANTINE),
+                    noticeType: s.type,
+                    children: eb.intl.string(eb.t.kvHdFN)
+                }), (0, i.jsx)(h.MzZ, {
+                    href: ex.A.getArticleURL(eI.MVz.QUARANTINE),
                     target: "_blank",
-                    className: tx.yw,
-                    children: ty.intl.string(ty.t.hvVgAZ)
+                    className: ey.yw,
+                    children: eb.intl.string(eb.t.hvVgAZ)
                 })]
             });
-        case tC.kqX.AUTO_MODERATION_MENTION_RAID_DETECTION:
+        case eI.kqX.AUTO_MODERATION_MENTION_RAID_DETECTION:
             let {
-                dismissUntil: tW, decisionId: tF
-            } = r.metadata;
-            return (0, i.jsxs)(E.$Td, {
-                color: E.Hv$.WARNING,
-                children: [(0, i.jsx)(E.PMB, {
-                    noticeType: tC.kqX.AUTO_MODERATION_MENTION_RAID_DETECTION,
+                dismissUntil: eY, decisionId: ez
+            } = s.metadata;
+            return (0, i.jsxs)(h.$Td, {
+                color: h.Hv$.WARNING,
+                children: [(0, i.jsx)(h.PMB, {
+                    noticeType: eI.kqX.AUTO_MODERATION_MENTION_RAID_DETECTION,
                     onClick: () => {
-                        null != e && (0, w.wu)(e), tD(tW)
+                        null != t && (0, B.wu)(t), eL(eY)
                     }
-                }), ty.intl.string(ty.t.B8ruyY), (0, i.jsx)(E.zr9, {
+                }), eb.intl.string(eb.t.B8ruyY), (0, i.jsx)(h.zr9, {
                     onClick: () => {
-                        null != e && (0, w.W5)(e, tF, () => {
-                            tD(tW), (0, w.wu)(e)
+                        null != t && (0, B.W5)(t, ez, () => {
+                            eL(eY), (0, B.wu)(t)
                         })
                     },
-                    children: ty.intl.string(ty.t.oX14El)
-                }), null != e ? (0, i.jsx)(E.zr9, {
-                    onClick: () => W.A.open(e, tC.BEX.GUILD_AUTOMOD, void 0, tC.nd0.AUTOMOD_MENTION_SPAM),
-                    children: ty.intl.string(ty.t["1R7QIx"])
+                    children: eb.intl.string(eb.t.oX14El)
+                }), null != t ? (0, i.jsx)(h.zr9, {
+                    onClick: () => Y.A.open(t, eI.BEX.GUILD_AUTOMOD, void 0, eI.nd0.AUTOMOD_MENTION_SPAM),
+                    children: eb.intl.string(eb.t["1R7QIx"])
                 }) : null]
             });
-        case tC.kqX.QUESTS_PROGRESS_INTERRUPTION:
-            return (0, i.jsxs)(E.$Td, {
-                color: E.Hv$.DANGER,
-                children: [(0, i.jsx)(E.PMB, {
-                    noticeType: tC.kqX.QUESTS_PROGRESS_INTERRUPTION,
+        case eI.kqX.QUESTS_PROGRESS_INTERRUPTION:
+            return (0, i.jsxs)(h.$Td, {
+                color: h.Hv$.DANGER,
+                children: [(0, i.jsx)(h.PMB, {
+                    noticeType: eI.kqX.QUESTS_PROGRESS_INTERRUPTION,
                     onClick: () => {
-                        r.metadata?.streamKey != null && (0, te.lk)(r.metadata.streamKey)
+                        s.metadata?.streamKey != null && (0, et.lk)(s.metadata.streamKey)
                     }
-                }), ty.intl.string(ty.t.rOx44m)]
+                }), eb.intl.string(eb.t.rOx44m)]
             });
-        case tC.kqX.BLOCK_USER_FEEDBACK_NAGBAR:
-            return (0, i.jsxs)(E.$Td, {
-                color: E.Hv$.BRAND,
-                children: [(0, i.jsx)(E.PMB, {
+        case eI.kqX.BLOCK_USER_FEEDBACK_NAGBAR:
+            return (0, i.jsxs)(h.$Td, {
+                color: h.Hv$.BRAND,
+                children: [(0, i.jsx)(h.PMB, {
                     onClick: () => {
-                        tD(r.metadata?.dismissUntil)
+                        eL(s.metadata?.dismissUntil)
                     },
-                    noticeType: tC.kqX.BLOCK_USER_FEEDBACK_NAGBAR
-                }), ty.intl.string(ty.t["0klLS7"]), (0, i.jsx)(E.Z_L, {
+                    noticeType: eI.kqX.BLOCK_USER_FEEDBACK_NAGBAR
+                }), eb.intl.string(eb.t["0klLS7"]), (0, i.jsx)(h.Z_L, {
                     onClick: () => {
-                        (0, ti.$)(), tD(r.metadata?.dismissUntil)
+                        (0, ei.$)(), eL(s.metadata?.dismissUntil)
                     },
-                    noticeType: tC.kqX.BLOCK_USER_FEEDBACK_NAGBAR,
-                    children: ty.intl.string(ty.t.e4y2VM)
+                    noticeType: eI.kqX.BLOCK_USER_FEEDBACK_NAGBAR,
+                    children: eb.intl.string(eb.t.e4y2VM)
                 })]
             });
-        case tC.kqX.IGNORE_USER_FEEDBACK_NAGBAR:
-            return (0, i.jsx)(tn.A, {});
-        case tC.kqX.SYSTEM_SERVICE_WARNING:
-            return (0, i.jsx)(tr.A, {});
+        case eI.kqX.IGNORE_USER_FEEDBACK_NAGBAR:
+            return (0, i.jsx)(en.A, {});
+        case eI.kqX.SYSTEM_SERVICE_WARNING:
+            return (0, i.jsx)(es.A, {});
         default:
             return null
     }
-}) : null;
+});
 
-function tk() {
+function eD() {
     let {
-        analyticsLocations: t
-    } = (0, U.Ay)(x.A.NOTICE);
-    return (0, i.jsx)(U.f5, {
-        value: t,
-        children: (0, i.jsx)(tf, {})
+        analyticsLocations: e
+    } = (0, v.Ay)(y.A.NOTICE);
+    return (0, i.jsx)(v.f5, {
+        value: e,
+        children: (0, i.jsx)(eM, {})
     })
 }

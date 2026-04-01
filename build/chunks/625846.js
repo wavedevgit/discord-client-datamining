@@ -72,7 +72,7 @@ var l = n(627968),
     eg = n(652215),
     ef = n(37411),
     e_ = n(985018),
-    ep = n(127558);
+    ep = n(985757);
 
 function ej(e) {
     let {
@@ -447,12 +447,12 @@ function eS(e) {
         isShowingSearchResult: eA
     }), e0 = i.useRef(null), {
         updateMasonryListScrollerRef: e3,
-        getItemKey: e1,
-        renderGridSection: e9,
+        getItemKey: e9,
+        renderGridSection: e1,
         renderGridItem: e6,
         getGridSectionHeight: e8,
-        getSectionProps: e4,
-        handleGridFocus: e7
+        getSectionProps: e7,
+        handleGridFocus: e4
     } = function(e) {
         let {
             masonryListScrollerRef: t,
@@ -606,7 +606,7 @@ function eS(e) {
         tt = (0, eh.Ay)({
             id: "forum-grid-view",
             isEnabled: eu && e5 && !te,
-            setFocus: e7
+            setFocus: e4
         }),
         tn = (0, ex.A)({
             listRef: eo,
@@ -657,12 +657,12 @@ function eS(e) {
                         className: ep.grid,
                         columns: ek,
                         sections: eG,
-                        getItemKey: e1,
+                        getItemKey: e9,
                         getSectionHeight: e8,
                         getItemHeight: tl,
-                        renderSection: e9,
+                        renderSection: e1,
                         renderItem: e6,
-                        getSectionProps: e4,
+                        getSectionProps: e7,
                         onScroll: A ? e2 : void 0,
                         chunkSize: 350,
                         ...ts,

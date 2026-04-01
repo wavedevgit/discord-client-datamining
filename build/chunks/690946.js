@@ -1,6 +1,6 @@
 /** chunk id: 690946 params = (module,exports,require) **/
 n.d(t, {
-    X: () => a
+    X: () => l
 });
 let i = (0, n(945810).mj)({
     name: "2026-01-social-layer-storefront-recommendations-on-profile-modal",
@@ -18,7 +18,7 @@ let i = (0, n(945810).mj)({
     }
 });
 
-function a(e) {
+function l(e) {
     let {
         location: t
     } = e;

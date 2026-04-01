@@ -13,9 +13,9 @@ var a = t(311907),
     c = t(919395),
     u = t(71393),
     _ = t(287809),
-    p = t(84540),
-    x = t(930349),
-    A = t(985018);
+    A = t(84540),
+    p = t(930349),
+    x = t(985018);
 
 function f(e) {
     let {
@@ -55,10 +55,10 @@ function m(e) {
         guild: o ?? void 0,
         stackingBehavior: "stack"
     });
-    if (null == h) return (0, i.jsx)(x.k, {
+    if (null == h) return (0, i.jsx)(p.k, {
         variant: "square",
         onClick: j,
-        accessibleLabel: A.intl.string(A.t.HykynS),
+        accessibleLabel: x.intl.string(x.t.HykynS),
         children: (0, i.jsx)(f, {
             user: n,
             guildId: t,
@@ -67,17 +67,17 @@ function m(e) {
     });
     let v = _ && null != m,
         C = (b ? null != I : null != g) ? {
-            onClick: () => (0, p.p)({
+            onClick: () => (0, A.p)({
                 guildId: t ?? void 0,
                 avatarDecoration: null
             }),
             type: v ? "reset" : "remove",
-            accessibleLabel: A.intl.string(v ? A.t.GaEG4t : A.t["2A+piL"])
+            accessibleLabel: x.intl.string(v ? x.t.GaEG4t : x.t["2A+piL"])
         } : void 0;
-    return (0, i.jsx)(x.N, {
+    return (0, i.jsx)(p.N, {
         variant: "square",
         onClick: j,
-        accessibleLabel: A.intl.string(A.t.HykynS),
+        accessibleLabel: x.intl.string(x.t.HykynS),
         deleteButtonConfig: C,
         children: (0, i.jsx)(f, {
             user: n,

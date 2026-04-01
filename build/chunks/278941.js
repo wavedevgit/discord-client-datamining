@@ -1,29 +1,29 @@
 /** chunk id: 278941 params = (module,exports,require) **/
 i.d(e, {
-    e: () => p
+    e: () => m
 }), i(775443);
 var s = i(927813),
-    n = i(349435),
+    _ = i(349435),
     l = i(557279),
-    r = i(338510),
-    a = i(168447),
-    _ = i(151119);
-let o = +s.A.Millis.HOUR,
-    u = 12 * s.A.Millis.HOUR;
+    n = i(338510),
+    r = i(168447),
+    o = i(151119);
+let a = +s.A.Millis.HOUR,
+    p = 12 * s.A.Millis.HOUR;
 
-function p(t) {
-    let e = (0, r.u)(t),
-        i = (0, a.Y)(t),
-        s = (0, _.S)(t);
+function m(t) {
+    let e = (0, n.u)(t),
+        i = (0, r.Y)(t),
+        s = (0, o.S)(t);
     if (null == e || s || (0, l.S)(i)) return;
-    let p = i.some(t => t.type === n._j.INAPPROPRIATE_CONVERSATION_TIER_1),
-        d = i.filter(t => null != t.dismiss_timestamp).sort((t, e) => e.dismiss_timestamp < t.dismiss_timestamp ? -1 : 1);
-    if (d.length < 1 || ! function(t) {
+    let m = i.some(t => t.type === _._j.INAPPROPRIATE_CONVERSATION_TIER_1),
+        u = i.filter(t => null != t.dismiss_timestamp).sort((t, e) => e.dismiss_timestamp < t.dismiss_timestamp ? -1 : 1);
+    if (u.length < 1 || ! function(t) {
             let e = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
             if (null == t) return !0;
-            let i = new Date(t).getTime() + (e ? o : u);
+            let i = new Date(t).getTime() + (e ? a : p);
             return new Date().getTime() >= i
-        }(d[0].dismiss_timestamp, p)) return;
-    let c = i.filter(t => null == t.dismiss_timestamp);
-    return c.findLast(t => t.type === n._j.INAPPROPRIATE_CONVERSATION_TIER_1) ?? c.findLast(t => t.type === n._j.INAPPROPRIATE_CONVERSATION_TIER_2)
+        }(u[0].dismiss_timestamp, m)) return;
+    let d = i.filter(t => null == t.dismiss_timestamp);
+    return d.findLast(t => t.type === _._j.INAPPROPRIATE_CONVERSATION_TIER_1) ?? d.findLast(t => t.type === _._j.INAPPROPRIATE_CONVERSATION_TIER_2)
 }

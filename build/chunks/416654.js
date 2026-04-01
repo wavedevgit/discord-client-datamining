@@ -1,17 +1,17 @@
 /** chunk id: 416654 params = (module,exports,require) **/
 n.d(t, {
-    v: () => o
+    v: () => i
 });
 var r = n(311907),
-    i = n(439174),
+    a = n(439174),
     l = n(622543);
 
-function o(e) {
+function i(e) {
     return (0, r.bG)([l.A], () => {
         let t, n = null != e ? l.A.getUserProfile(e) : null,
             r = n?.premiumSince;
         return null == n || null == r ? null : (n?.badges?.forEach(e => {
-            let n = (0, i.cZ)(e.id);
+            let n = (0, a.cZ)(e.id);
             null != n && (t = n)
         }), t)
     })

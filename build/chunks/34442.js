@@ -1,82 +1,82 @@
 /** chunk id: 34442 params = (module,exports,require) **/
 n.d(t, {
-    IU: () => p,
-    dE: () => x
+    IU: () => x,
+    dE: () => p
 });
 var i = n(627968),
-    a = n(64700),
-    l = n(896170),
+    l = n(64700),
+    a = n(896170),
     s = n(397927),
     r = n(383329),
     o = n(183555),
-    c = n(735321),
-    d = n(958338),
+    d = n(735321),
+    c = n(958338),
     u = n(985018),
-    m = n(230146);
+    g = n(201669);
 
-function g(e) {
+function m(e) {
     let {
         widgetType: t,
         widget: n,
-        onAddGame: g,
-        children: p,
-        ...x
-    } = e, f = a.useMemo(() => new Set(n.games.map(e => e.applicationId)), [n.games]), {
-        trackUserProfileEditAction: _
-    } = (0, o.NJ)(), [h, A] = a.useState(""), I = a.useRef(""), {
-        options: v,
-        matchSorterOptions: j
+        onAddGame: m,
+        children: x,
+        ...p
+    } = e, f = l.useMemo(() => new Set(n.games.map(e => e.applicationId)), [n.games]), {
+        trackUserProfileEditAction: h
+    } = (0, o.NJ)(), [_, A] = l.useState(""), I = l.useRef(""), {
+        options: j,
+        matchSorterOptions: v
     } = (0, r.R)(), {
-        applicationIds: E,
-        onAddGame: T
-    } = (0, d.S)(t), N = a.useCallback(e => {
-        (0, c.ew)({
+        applicationIds: T,
+        onAddGame: E
+    } = (0, c.S)(t), b = l.useCallback(e => {
+        (0, d.ew)({
             widgetType: t,
             game: {
                 applicationId: e
             }
-        }), s.ORC.announce(u.intl.string(u.t.q0U3DE)), _({
+        }), s.ORC.announce(u.intl.string(u.t.q0U3DE)), h({
             action: "GAME_ADDED",
             gameId: e,
             widgetEdited: t
-        }), E.includes(e) && T(e), g?.()
-    }, [t, _, g, E, T]), C = a.useMemo(() => {
-        let e = new Map(v.map(e => [String(e.value), {
+        }), T.includes(e) && E(e), m?.()
+    }, [t, h, m, T, E]), C = l.useMemo(() => {
+        let e = new Map(j.map(e => [String(e.value), {
                 id: String(e.value),
                 value: String(e.value),
                 label: e.label,
                 disabled: f.has(e.value)
             }])),
-            t = E.map(t => e.get(t)).filter(e => null != e && !e.disabled),
+            t = T.map(t => e.get(t)).filter(e => null != e && !e.disabled),
             n = [...e.values()].filter(e => !t.includes(e));
         return [...t, ...n]
-    }, [v, f, E]), b = a.useMemo(() => ({
-        ...j,
-        threshold: l.Ht.rankings.CONTAINS,
+    }, [j, f, T]), S = l.useMemo(() => ({
+        ...v,
+        threshold: a.Ht.rankings.CONTAINS,
         keys: ["label"]
-    }), [j]), S = a.useCallback(e => "" === e.trim() ? C.length : (0, l.Ht)(C, e, b).length, [C, b]), y = a.useCallback(e => {
+    }), [v]), N = l.useCallback(e => "" === e.trim() ? C.length : (0, a.Ht)(C, e, S).length, [C, S]), y = l.useCallback(e => {
         let n = e.target.value;
-        "" === h.trim() && "" !== n.trim() && _({
+        "" === _.trim() && "" !== n.trim() && h({
             action: "GAME_SEARCH_SESSION_STARTED",
             widgetEdited: t,
             numCharacters: n.trim().length,
-            numResults: S(n)
+            numResults: N(n)
         }), A(n), I.current = n
-    }, [h, _, t, S]);
+    }, [_, h, t, N]);
     return (0, i.jsx)(s.YNO, {
-        ...x,
+        ...p,
         onRequestOpen: () => {
-            _({
+            h({
                 action: "PRESS_ADD_GAME",
                 widgetEdited: t
             }), A(""), I.current = ""
         },
         onRequestClose: () => {
-            _({
+            h({
                 action: "GAME_SEARCH_SESSION_ENDED",
                 widgetEdited: t,
                 numCharacters: I.current.trim().length,
-                numResults: S(I.current)
+                numResults: N(I.current)
             })
         },
         renderPopout: e => {
@@ -84,16 +84,16 @@ function g(e) {
                 closePopout: t
             } = e;
             return (0, i.jsx)(s.lGe, {
-                className: m.C,
+                className: g.C,
                 "aria-label": u.intl.string(u.t.uqw8wK),
                 children: (0, i.jsxs)(s.iS7, {
                     selectionMode: "single",
                     value: null,
                     onSelectionChange: e => {
-                        null != e && (N(e), t())
+                        null != e && (b(e), t())
                     },
                     options: C,
-                    matchSorterOptions: b,
+                    matchSorterOptions: S,
                     children: [(0, i.jsx)(s.a32, {
                         label: u.intl.string(u.t["5h0QOP"]),
                         hideLabel: !0,
@@ -106,22 +106,22 @@ function g(e) {
                 })
             })
         },
-        children: e => p(e)
+        children: e => x(e)
     })
 }
 
-function p(e) {
+function x(e) {
     let {
         disabled: t,
         ...n
-    } = e, l = a.useRef(null);
-    return (0, i.jsx)(g, {
-        targetElementRef: l,
+    } = e, a = l.useRef(null);
+    return (0, i.jsx)(m, {
+        targetElementRef: a,
         position: "bottom",
         align: "center",
         ...n,
         children: e => (0, i.jsx)(s.Button, {
-            buttonRef: l,
+            buttonRef: a,
             variant: "secondary",
             size: "sm",
             icon: s.j96,
@@ -132,16 +132,16 @@ function p(e) {
     })
 }
 
-function x(e) {
-    let t = a.useRef(null);
-    return (0, i.jsx)(g, {
+function p(e) {
+    let t = l.useRef(null);
+    return (0, i.jsx)(m, {
         targetElementRef: t,
         position: "right",
         align: "top",
         ...e,
         children: e => (0, i.jsx)(s.DUT, {
             innerRef: t,
-            className: m.c,
+            className: g.c,
             "aria-label": u.intl.string(u.t.SgTOtX),
             ...e,
             children: (0, i.jsx)(s.pa$, {

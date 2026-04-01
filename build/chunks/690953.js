@@ -1,63 +1,63 @@
 /** chunk id: 690953 params = (module,exports,require) **/
 n.d(t, {
-    A: () => _
+    A: () => g
 });
 var i = n(627968);
 n(64700);
 var l = n(417597),
-    r = n(397927),
+    s = n(397927),
     a = n(882997),
-    u = n(731474),
-    d = n(383501),
-    s = n(977997),
-    o = n(458829),
-    c = n(857253),
-    A = n(694967),
-    f = n(431516),
-    E = n(652215),
-    h = n(985018);
+    r = n(731474),
+    o = n(383501),
+    d = n(977997),
+    c = n(458829),
+    u = n(857253),
+    h = n(694967),
+    A = n(431516),
+    _ = n(652215),
+    m = n(985018);
 
-function _(e) {
-    let t = (0, l.bG)([d.A], () => d.A.getChannelId() === e.id),
-        _ = (0, c.A)(),
-        g = _?.channelId === e.id,
-        I = (0, u.J)(e) && !e.isPrivate(),
-        v = (0, u.A)(e),
-        C = !(0, l.bG)([s.A], () => s.A.isInChannel(e.id)) && v || I,
-        p = (0, A.A)();
-    if (!g && 0 === p.length) return null;
-    let N = (0, f.A)(void 0);
-    return g ? (0, i.jsx)(r.Drp, {
-        label: h.intl.string(h.t.PlwgdU),
+function g(e) {
+    let t = (0, l.bG)([o.A], () => o.A.getChannelId() === e.id),
+        g = (0, u.A)(),
+        p = g?.channelId === e.id,
+        f = (0, r.J)(e) && !e.isPrivate(),
+        x = (0, r.A)(e),
+        E = !(0, l.bG)([d.A], () => d.A.isInChannel(e.id)) && x || f,
+        I = (0, h.A)();
+    if (!p && 0 === I.length) return null;
+    let C = (0, A.A)(void 0);
+    return p ? (0, i.jsx)(s.Drp, {
+        label: m.intl.string(m.t.PlwgdU),
         id: "handoff",
         action: () => {
-            (0, o.x)(_)
+            (0, c.x)(g)
         },
-        icon: N,
+        icon: C,
         leadingAccessory: {
             type: "icon",
-            icon: N
+            icon: C
         },
-        disabled: C
-    }) : p.map(l => {
-        var u, d;
-        let s = (0, f.A)(l.type);
-        return (0, i.jsx)(r.Drp, {
+        disabled: E
+    }) : I.map(l => {
+        var r, o;
+        let d = (0, A.A)(l.type);
+        return (0, i.jsx)(s.Drp, {
             id: `transfer-${l.type}-${l.id}`,
-            label: (u = l.type, d = t, u === E.fg2.XBOX ? d ? h.intl.string(h.t["qVE/VF"]) : h.intl.string(h.t.E8euSk) : u === E.fg2.PLAYSTATION ? d ? h.intl.string(h.t.vzfxmY) : h.intl.string(h.t.QxEYDj) : u === E.fg2.PLAYSTATION_STAGING ? d ? h.intl.string(h.t.BDiXtV) : h.intl.string(h.t["bhdB9+"]) : void 0),
+            label: (r = l.type, o = t, r === _.fg2.XBOX ? o ? m.intl.string(m.t["qVE/VF"]) : m.intl.string(m.t.E8euSk) : r === _.fg2.PLAYSTATION ? o ? m.intl.string(m.t.vzfxmY) : m.intl.string(m.t.QxEYDj) : r === _.fg2.PLAYSTATION_STAGING ? o ? m.intl.string(m.t.BDiXtV) : m.intl.string(m.t["bhdB9+"]) : void 0),
             action: () => {
                 !l.twoWayLink || l.revoked ? (0, a.A)({
                     platformType: l.type,
                     location: "Console Transfer Item"
-                }) : l.type === E.fg2.XBOX ? (0, r.mMO)(async () => {
+                }) : l.type === _.fg2.XBOX ? (0, s.mMO)(async () => {
                     let {
                         default: t
-                    } = await Promise.all([n.e("94201"), n.e("67670")]).then(n.bind(n, 188072));
+                    } = await Promise.all([n.e("8407"), n.e("67670")]).then(n.bind(n, 188072));
                     return n => (0, i.jsx)(t, {
                         ...n,
                         channel: e
                     })
-                }) : (l.type === E.fg2.PLAYSTATION || l.type === E.fg2.PLAYSTATION_STAGING) && (0, r.mMO)(async () => {
+                }) : (l.type === _.fg2.PLAYSTATION || l.type === _.fg2.PLAYSTATION_STAGING) && (0, s.mMO)(async () => {
                     let {
                         default: t
                     } = await n.e("71282").then(n.bind(n, 315337));
@@ -68,12 +68,12 @@ function _(e) {
                     })
                 })
             },
-            icon: s,
+            icon: d,
             leadingAccessory: {
                 type: "icon",
-                icon: s
+                icon: d
             },
-            disabled: C
+            disabled: E
         }, l.id)
     })
 }

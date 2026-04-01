@@ -1,30 +1,30 @@
 /** chunk id: 531913 params = (module,exports,require) **/
 n.d(t, {
-    A: () => m
+    A: () => g
 });
 var i = n(64700),
-    a = n(485584),
-    l = n(311907),
+    l = n(485584),
+    a = n(311907),
     s = n(201718),
     r = n(339580),
     o = n(773669),
-    c = n(188951);
-let d = [],
+    d = n(188951);
+let c = [],
     u = [];
 
-function m(e, t) {
+function g(e, t) {
     (0, s.P)(e);
-    let n = (0, l.bG)([r.A], () => r.A.getUserIdentityByApplication(e, t)),
-        m = (0, l.bG)([o.default], () => o.default.locale),
-        g = i.useMemo(() => [t], [t]),
-        [p] = (0, c.A)(g),
-        x = i.useMemo(() => (0, a.VG)(n?.profile ?? void 0), [n?.profile]),
-        f = (0, l.bG)([r.A], () => r.A.getFetchState(e) !== r.e.FETCHED);
+    let n = (0, a.bG)([r.A], () => r.A.getUserIdentityByApplication(e, t)),
+        g = (0, a.bG)([o.default], () => o.default.locale),
+        m = i.useMemo(() => [t], [t]),
+        [x] = (0, d.A)(m),
+        p = i.useMemo(() => (0, l.VG)(n?.profile ?? void 0), [n?.profile]),
+        f = (0, a.bG)([r.A], () => r.A.getFetchState(e) !== r.e.FETCHED);
     return {
-        data: x,
-        locale: m,
-        surfaceConfigs: p?.surfaces ?? {},
-        applicationAssets: d,
+        data: p,
+        locale: g,
+        surfaceConfigs: x?.surfaces ?? {},
+        applicationAssets: c,
         localizedStrings: u,
         isLoading: f,
         hasIdentity: null != n

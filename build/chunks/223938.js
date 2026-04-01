@@ -8,7 +8,7 @@ var i = n(627968),
     a = n.n(s),
     r = n(284009),
     o = n.n(r),
-    c = n(382222),
+    c = n(773690),
     d = n(835245),
     u = n(311907),
     h = n(827734),
@@ -49,8 +49,8 @@ var i = n(627968),
 n(827669), n(294920);
 var Y = n(478644),
     q = n(985018),
-    J = n(207722),
-    $ = n(526636);
+    J = n(287303),
+    $ = n(351671);
 
 function Z(e, t, n) {
     let i = e.startsWith("attachment://"),
@@ -206,7 +206,7 @@ let X = l.memo(l.forwardRef(function(e, t) {
         handleOuterClick: e1
     } = (0, V.MD)(b, eT, y.id), {
         handleAutocompleteVisibilityChange: e2
-    } = (0, V.uW)(b, y.id), e7 = (0, V.NO)(eT), e3 = (0, V.Vu)(eB, b, eT), e5 = (0, V.HG)(eT), e9 = (0, V.C)({
+    } = (0, V.uW)(b, y.id), e3 = (0, V.NO)(eT), e7 = (0, V.Vu)(eB, b, eT), e5 = (0, V.HG)(eT), e9 = (0, V.C)({
         editorRef: eT,
         disabled: eR,
         textValue: s,
@@ -435,8 +435,8 @@ let X = l.memo(l.forwardRef(function(e, t) {
             }), e0 ? null : (0, i.jsx)(N.A, {
                 positionTargetRef: eS,
                 type: b,
-                onSelectGIF: e3,
-                onSelectEmoji: e7,
+                onSelectGIF: e7,
+                onSelectEmoji: e3,
                 onSelectKaomoji: e5,
                 onSelectSticker: e9,
                 channel: y,

@@ -1,87 +1,90 @@
 /** chunk id: 133583 params = (module,exports,require) **/
 n.d(t, {
-    A: () => B
+    A: () => z
 });
 var i = n(627968),
-    a = n(64700),
-    l = n(503698),
-    s = n.n(l),
+    l = n(64700),
+    a = n(503698),
+    s = n.n(a),
     r = n(777480),
     o = n(311907),
-    c = n(192308),
-    d = n(397927),
+    d = n(192308),
+    c = n(397927),
     u = n(793574),
-    m = n(688810),
-    g = n(429913),
-    p = n(979286),
-    x = n(832163),
-    f = n(690946),
-    _ = n(898616),
-    h = n(44724),
-    A = n(808247),
-    I = n(178213),
-    v = n(909536),
-    j = n(594832),
-    E = n(287809),
-    T = n(183555),
+    g = n(688810),
+    m = n(429913),
+    x = n(979286),
+    p = n(895360),
+    f = n(574499),
+    h = n(400669),
+    _ = n(832163),
+    A = n(690946),
+    I = n(898616),
+    j = n(44724),
+    v = n(808247),
+    T = n(178213),
+    E = n(909536),
+    b = n(594832),
+    C = n(287809),
+    S = n(183555),
     N = n(622543),
-    C = n(600761),
-    b = n(535089),
-    S = n(128988),
-    y = n(515054),
-    R = n(203647),
-    O = n(376932),
-    w = n(383430),
-    k = n(300131),
-    L = n(518477),
-    D = n(788868),
-    P = n(985018),
-    G = n(262657);
+    y = n(600761),
+    R = n(535089),
+    k = n(128988),
+    O = n(515054),
+    w = n(203647),
+    L = n(376932),
+    P = n(383430),
+    D = n(300131),
+    G = n(518477),
+    M = n(788868),
+    U = n(985018),
+    F = n(426158);
 
-function U(e) {
+function W(e) {
     let {
         socialLayerStorefrontApplicationIds: t,
         handleOpenShop: n,
-        handleOpenGameShop: a
+        handleOpenGameShop: l
     } = e;
-    return t.length > 0 ? (0, i.jsx)(w.A, {
-        title: P.intl.string(P.t["i/yzHs"]),
+    return t.length > 0 ? (0, i.jsx)(P.A, {
+        title: U.intl.string(U.t["i/yzHs"]),
         handleOpenCollectiblesShop: n,
-        handleOpenGameShop: a,
+        handleOpenGameShop: l,
         socialLayerStorefrontApplicationIds: t
-    }) : (0, i.jsx)(d.Button, {
+    }) : (0, i.jsx)(c.Button, {
         variant: "secondary",
         size: "sm",
-        icon: d.U1X,
-        text: P.intl.string(P.t["i/yzHs"]),
+        icon: c.U1X,
+        text: U.intl.string(U.t["i/yzHs"]),
         onClick: n
     })
 }
 
-function F(e) {
+function H(e) {
     let {
         socialLayerStorefrontApplicationIds: t,
         isWishlistPublic: n,
-        handleOpenShop: a,
-        handleOpenGameShop: l,
+        handleOpenShop: l,
+        handleOpenGameShop: a,
         handleAddNitroToWishlist: s,
         handleToggleWishlistVisibility: r
     } = e;
     return (0, i.jsxs)("div", {
-        className: G.$s,
-        children: [t.length > 0 || null != s ? (0, i.jsx)(w.A, {
-            title: P.intl.string(P.t.SDUwM0),
-            handleOpenCollectiblesShop: a,
-            handleOpenGameShop: t.length > 0 ? l : void 0,
+        className: F.$s,
+        children: [t.length > 0 || null != s ? (0, i.jsx)(P.A, {
+            title: U.intl.string(U.t.SDUwM0),
+            handleOpenCollectiblesShop: l,
+            handleOpenGameShop: t.length > 0 ? a : void 0,
             handleAddNitroToWishlist: s,
             socialLayerStorefrontApplicationIds: t
-        }) : (0, i.jsx)(d.Button, {
+        }) : (0, i.jsx)(c.Button, {
             variant: "secondary",
             size: "sm",
-            icon: d.j96,
-            text: P.intl.string(P.t.SDUwM0),
-            onClick: a
-        }), (0, i.jsx)(k.A, {
+            icon: c.j96,
+            text: U.intl.string(U.t.SDUwM0),
+            onClick: l
+        }), (0, i.jsx)(D.A, {
             isOwner: !0,
             isWishlistPublic: n,
             onToggleVisibility: r
@@ -89,21 +92,21 @@ function F(e) {
     })
 }
 
-function M(e) {
+function B(e) {
     let {
         application: t,
         handleOpenGameShop: n,
-        handleOpenGameShopMouseDown: l
-    } = e, s = a.useCallback(() => {
+        handleOpenGameShopMouseDown: a
+    } = e, s = l.useCallback(() => {
         n(t.id)
-    }, [t, n]), r = a.useCallback(() => {
-        l(t.id)
-    }, [t, l]);
-    return (0, i.jsx)(d.Button, {
+    }, [t, n]), r = l.useCallback(() => {
+        a(t.id)
+    }, [t, a]);
+    return (0, i.jsx)(c.Button, {
         variant: "primary",
         size: "sm",
-        icon: d.U1X,
-        text: P.intl.formatToPlainString(P.t["HDT/rg"], {
+        icon: c.U1X,
+        text: U.intl.formatToPlainString(U.t["HDT/rg"], {
             applicationName: t.name
         }),
         onClick: s,
@@ -111,234 +114,236 @@ function M(e) {
     })
 }
 
-function W(e) {
+function X(e) {
     let {
         isOwner: t,
         socialLayerStorefrontApplicationIds: n,
-        handleOpenShop: l,
+        handleOpenShop: a,
         handleOpenGameShop: s,
         handleOpenGameShopMouseDown: r
-    } = e, o = (0, g.A)(n), c = a.useMemo(() => {
+    } = e, o = (0, m.A)(n), d = l.useMemo(() => {
         if (0 === n.length) return null;
         let e = o.reduce((e, t) => (null == t || (e[t.id] = t), e), {});
         if (1 === n.length) {
             let t = e[n[0]];
-            return null == t ? null : (0, i.jsx)(M, {
+            return null == t ? null : (0, i.jsx)(B, {
                 application: t,
                 handleOpenGameShop: s,
                 handleOpenGameShopMouseDown: r
             })
         }
-        return (0, i.jsx)(w.A, {
-            title: P.intl.string(P.t.FkjcWY),
+        return (0, i.jsx)(P.A, {
+            title: U.intl.string(U.t.FkjcWY),
             variant: "primary",
             handleOpenGameShop: s,
             socialLayerStorefrontApplicationIds: n
         })
     }, [n, s, o, r]);
     return (0, i.jsxs)("div", {
-        className: G.y7,
+        className: F.y7,
         children: [(0, i.jsxs)("div", {
-            className: G.q6,
-            children: [(0, i.jsx)(d.Heading, {
+            className: F.q6,
+            children: [(0, i.jsx)(c.Heading, {
                 variant: "heading-md/medium",
                 color: "text-strong",
-                children: P.intl.string(P.t.HGnLLT)
-            }), (0, i.jsx)(d.Text, {
+                children: U.intl.string(U.t.HGnLLT)
+            }), (0, i.jsx)(c.Text, {
                 variant: "text-sm/normal",
                 color: "text-default",
-                children: P.intl.string(P.t["/X1ny6"])
+                children: U.intl.string(U.t["/X1ny6"])
             })]
-        }), (0, i.jsxs)(d.ButtonGroup, {
+        }), (0, i.jsxs)(c.ButtonGroup, {
             size: "sm",
-            children: [t && (0, i.jsx)(d.Button, {
+            children: [t && (0, i.jsx)(c.Button, {
                 variant: "primary",
                 size: "sm",
-                icon: d.U1X,
-                text: P.intl.string(P.t.ZbS4QB),
-                onClick: l
-            }), c]
+                icon: c.U1X,
+                text: U.intl.string(U.t.ZbS4QB),
+                onClick: a
+            }), d]
         })]
     })
 }
 
-function H(e) {
+function V(e) {
     let {
         isOwner: t,
         profileOwner: n,
-        wishlist: l,
+        wishlist: a,
         socialLayerStorefrontApplicationIds: s,
-        handleOpenShop: c,
+        handleOpenShop: d,
         handleOpenGameShop: u,
-        handleAddNitroToWishlist: m
-    } = e, g = l.id, p = (0, o.bG)([N.A], () => N.A.getWishlistSettings(n.id, g)), {
-        trackUserProfileWishlistAction: x
-    } = (0, T.NJ)(), f = !1 === n.nsfwAllowed, [_, h] = a.useState(!0);
-    a.useEffect(() => {
-        p?.visibility != null && h(p.visibility === r.a.PUBLIC)
-    }, [p?.visibility]);
-    let I = a.useCallback(e => {
+        handleAddNitroToWishlist: g
+    } = e, m = a.id, x = (0, o.bG)([N.A], () => N.A.getWishlistSettings(n.id, m)), {
+        trackUserProfileWishlistAction: p
+    } = (0, S.NJ)(), f = !1 === n.nsfwAllowed, [h, _] = l.useState(!0);
+    l.useEffect(() => {
+        x?.visibility != null && _(x.visibility === r.a.PUBLIC)
+    }, [x?.visibility]);
+    let A = l.useCallback(e => {
             let {
                 wishlistId: t,
                 action: n,
                 productLines: i
             } = e;
-            null != t && x({
+            null != t && p({
                 wishlistId: t,
                 action: n,
                 productLines: i
             })
-        }, [x]),
-        v = (0, b.A)({
-            wishlistId: g,
-            onAction: I,
-            productLines: l?.getProductLines() ?? null
+        }, [p]),
+        I = (0, R.A)({
+            wishlistId: m,
+            onAction: A,
+            productLines: a?.getProductLines() ?? null
         }),
-        j = a.useCallback(() => {
-            if (null == g) return;
-            let e = _ ? r.a.PRIVATE : r.a.PUBLIC;
-            h(!_), A.A.updateWishlistVisibility(g, e), x({
-                wishlistId: g,
-                action: _ ? L.Mq.WISHLIST_TOGGLE_PRIVATE : L.Mq.WISHLIST_TOGGLE_PUBLIC,
-                productLines: l?.getProductLines()
+        j = l.useCallback(() => {
+            if (null == m) return;
+            let e = h ? r.a.PRIVATE : r.a.PUBLIC;
+            _(!h), v.A.updateWishlistVisibility(m, e), p({
+                wishlistId: m,
+                action: h ? G.Mq.WISHLIST_TOGGLE_PRIVATE : G.Mq.WISHLIST_TOGGLE_PUBLIC,
+                productLines: a?.getProductLines()
             })
-        }, [g, _, x, l]);
+        }, [m, h, p, a]);
     return (0, i.jsxs)(i.Fragment, {
-        children: [!_ && (0, i.jsxs)("div", {
-            className: G.lm,
-            children: [(0, i.jsx)(d.G3N, {
+        children: [!h && (0, i.jsxs)("div", {
+            className: F.lm,
+            children: [(0, i.jsx)(c.G3N, {
                 size: "custom",
                 width: 16,
                 height: 16
-            }), (0, i.jsx)(d.Text, {
+            }), (0, i.jsx)(c.Text, {
                 variant: "text-xs/normal",
                 color: "text-subtle",
-                children: P.intl.string(P.t.RX7D9h)
+                children: U.intl.string(U.t.RX7D9h)
             })]
-        }), _ && f && (0, i.jsxs)("div", {
-            className: G.lm,
-            children: [(0, i.jsx)(d.mir, {
+        }), h && f && (0, i.jsxs)("div", {
+            className: F.lm,
+            children: [(0, i.jsx)(c.mir, {
                 size: "custom",
                 width: 16,
                 height: 16
-            }), (0, i.jsx)(d.Text, {
+            }), (0, i.jsx)(c.Text, {
                 variant: "text-xs/normal",
                 color: "text-subtle",
-                children: P.intl.string(P.t.d78ChW)
+                children: U.intl.string(U.t.d78ChW)
             })]
         }), (0, i.jsxs)("div", {
-            ref: v,
-            className: G.U1,
-            children: [(0, i.jsx)(d.Text, {
+            ref: I,
+            className: F.U1,
+            children: [(0, i.jsx)(c.Text, {
                 variant: "text-xs/semibold",
                 color: "text-subtle",
-                children: P.intl.format(P.t.r6Y1Lg, {
-                    count: l.items.length
+                children: U.intl.format(U.t.r6Y1Lg, {
+                    count: a.items.length
                 })
-            }), t ? (0, i.jsx)(F, {
+            }), t ? (0, i.jsx)(H, {
                 socialLayerStorefrontApplicationIds: s,
-                isWishlistPublic: _,
-                handleOpenShop: c,
+                isWishlistPublic: h,
+                handleOpenShop: d,
                 handleOpenGameShop: u,
-                handleAddNitroToWishlist: m,
+                handleAddNitroToWishlist: g,
                 handleToggleWishlistVisibility: j
-            }) : (0, i.jsx)(U, {
+            }) : (0, i.jsx)(W, {
                 socialLayerStorefrontApplicationIds: s,
-                handleOpenShop: c,
+                handleOpenShop: d,
                 handleOpenGameShop: u
             })]
         })]
     })
 }
 
-function B(e) {
+function z(e) {
     let {
         profileOwner: t
-    } = e, n = a.useRef(null);
-    (0, C.i)({
+    } = e, n = l.useRef(null);
+    (0, y.i)({
         containerRef: n,
         itemType: "WISHLIST_ITEM"
     });
     let {
-        wishlistId: l,
+        wishlistId: a,
         currentUser: r
-    } = (0, o.cf)([N.A, E.default], () => ({
+    } = (0, o.cf)([N.A, C.default], () => ({
         wishlistId: N.A.getFirstWishlistId(t.id),
-        currentUser: E.default.getCurrentUser()
+        currentUser: C.default.getCurrentUser()
     })), {
-        analyticsLocations: g
-    } = (0, m.Ay)(), T = r?.id === t.id, {
-        wishlist: b,
-        wasFetched: w,
-        error: k
-    } = (0, j.fw)({
-        wishlistId: l,
+        analyticsLocations: c
+    } = (0, g.Ay)(), m = r?.id === t.id, {
+        wishlist: v,
+        wasFetched: S,
+        error: R
+    } = (0, b.fw)({
+        wishlistId: a,
         userId: t.id
-    }), L = (0, _.A)({
-        wishlist: b,
+    }), P = (0, I.A)({
+        wishlist: v,
         profileOwner: t,
         currentUser: r
-    }), U = (0, f.X)({
+    }), D = (0, A.X)({
         location: "user-profile-modal-v2-wishlist"
-    }), F = (0, I.GG)("user-profile-modal-v2-wishlist"), M = (0, v.Gh)("user-profile-modal-v2-wishlist"), B = T && (U && L.length > 0 || F), X = a.useCallback(() => {
-        (0, c.closeAllModals)(), (0, p.Cz)({
-            analyticsLocations: g,
+    }), G = (0, T.GG)("user-profile-modal-v2-wishlist"), U = (0, E.Gh)("user-profile-modal-v2-wishlist"), W = m && (D && P.length > 0 || G), H = l.useCallback(() => {
+        (0, d.closeAllModals)(), (0, x.Cz)({
+            analyticsLocations: c,
             analyticsSource: u.A.USER_PROFILE_WISHLIST
         })
-    }, [g]), V = a.useCallback(e => {
-        let t = x.A.getGuildIdFromApplicationId(e);
-        null != t && (0, h.X)({
+    }, [c]), B = l.useCallback(e => {
+        let t = _.A.getGuildIdFromApplicationId(e);
+        null != t && (0, j.X)({
             guildId: t
         })
-    }, []), z = a.useCallback(e => {
-        let t = x.A.getGuildIdFromApplicationId(e);
-        null != t && ((0, c.closeAllModals)(), (0, h.default)({
+    }, []), z = l.useCallback(e => {
+        let t = _.A.getGuildIdFromApplicationId(e);
+        null != t && ((0, d.closeAllModals)(), (0, j.default)({
             guildId: t
         }))
-    }, []), Y = a.useCallback(async () => {
-        try {
-            await A.A.addSkuToWishlist(D.pe.TIER_2, g)
-        } catch {
-            (0, d.showToast)((0, d.createToast)(P.intl.string(P.t.F8FvUy), d.ToastType.FAILURE)), d.ORC.announce(P.intl.string(P.t.F8FvUy))
-        }
-    }, [g]), K = b?.items ?? [];
-    if (null != k) return null;
-    let q = null == b || 0 === K.length;
-    return (0, i.jsxs)(y.K, {
+    }, []), {
+        handleToggle: Y
+    } = (0, f.c)({
+        userId: r?.id,
+        skuId: M.pe.TIER_2,
+        nuxGraphic: U ? h.g : void 0,
+        onNuxShow: p.D,
+        location: u.A.USER_PROFILE_WISHLIST
+    }), K = v?.items ?? [];
+    if (null == r || null != R) return null;
+    let q = null == v || 0 === K.length;
+    return (0, i.jsxs)(O.K, {
         scrollerRef: n,
         className: s()({
-            [G.XG]: !q
+            [F.XG]: !q
         }),
         fade: !0,
-        children: [q ? (0, i.jsx)(W, {
-            isOwner: T,
-            socialLayerStorefrontApplicationIds: L,
-            handleOpenShop: X,
+        children: [q ? (0, i.jsx)(X, {
+            isOwner: m,
+            socialLayerStorefrontApplicationIds: P,
+            handleOpenShop: H,
             handleOpenGameShop: z,
-            handleOpenGameShopMouseDown: V
+            handleOpenGameShopMouseDown: B
         }) : (0, i.jsxs)(i.Fragment, {
-            children: [(0, i.jsx)(S.A, {
+            children: [(0, i.jsx)(k.A, {
                 scrollerRef: n
-            }), (0, i.jsx)(H, {
-                isOwner: T,
+            }), (0, i.jsx)(V, {
+                isOwner: m,
                 profileOwner: t,
-                wishlist: b,
-                socialLayerStorefrontApplicationIds: L,
-                handleOpenShop: X,
+                wishlist: v,
+                socialLayerStorefrontApplicationIds: P,
+                handleOpenShop: H,
                 handleOpenGameShop: z,
-                handleAddNitroToWishlist: M && !b.hasSkuId(D.pe.TIER_2) ? Y : void 0
-            }), (0, i.jsx)(R.A, {
+                handleAddNitroToWishlist: U && !v.hasSkuId(M.pe.TIER_2) ? Y : void 0
+            }), (0, i.jsx)(w.A, {
                 items: K,
                 profileOwner: t,
-                isOwner: T
+                isOwner: m
             })]
-        }), B && (0, i.jsx)(O.A, {
+        }), W && (0, i.jsx)(L.A, {
             user: t,
-            wishlist: b,
-            applicationIds: L,
-            hasFetchedWishlist: w,
-            analyticsLocations: g,
-            className: q ? G._E : G.HZ
+            wishlist: v,
+            applicationIds: P,
+            hasFetchedWishlist: S,
+            analyticsLocations: c,
+            className: q ? F._E : F.HZ
         })]
     })
 }

@@ -12,7 +12,7 @@ var s = i(627968),
     d = i(942156),
     c = i(338764),
     u = i(852431),
-    p = i(678739);
+    p = i(119010);
 let m = (0, o.xI)(l.A.WAVE_SPLASH_RESPONSIVE_WIDTH_MOBILE);
 
 function v(t, e) {

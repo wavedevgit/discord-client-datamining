@@ -1,6 +1,6 @@
 /** chunk id: 149854 params = (module,exports,require) **/
 n.d(t, {
-    A: () => f
+    A: () => A
 });
 var r = n(627968),
     i = n(64700),
@@ -13,15 +13,15 @@ var r = n(627968),
     c = n(744201),
     p = n(867060),
     _ = n(568065),
-    m = n(242030);
+    m = n(849289);
 
-function f(e) {
+function A(e) {
     let {
         guildId: t,
         powerup: n,
-        badge: f
-    } = e, [A, g] = i.useState(void 0);
-    (0, p.A)(A);
+        badge: A
+    } = e, [f, g] = i.useState(void 0);
+    (0, p.A)(f);
     let [x, v] = i.useState(!1), h = (0, s.Ay)(t, n).type !== _.b_.INACTIVE, {
         textColor: E
     } = (0, c.A)(h);
@@ -29,7 +29,7 @@ function f(e) {
         onHover: e => v(e),
         guildId: t,
         powerup: n,
-        badge: f,
+        badge: A,
         children: [(0, r.jsx)(u.l, {
             className: m.Sl,
             powerup: n,

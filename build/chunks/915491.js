@@ -10,9 +10,9 @@ var i = n(158954),
     o = n(449859),
     a = n(777347),
     u = n(967144),
-    d = n(136708),
+    d = n(333354),
     c = n(985018),
-    p = n(271453);
+    p = n(915666);
 
 function _(e) {
     let {
@@ -21,8 +21,8 @@ function _(e) {
         timestamp: n,
         username: _,
         roleColor: m,
-        roleColorStrings: f
-    } = (0, a.U)(t), A = (0, u.gn)(t.guildId, t.userId, f ?? null);
+        roleColorStrings: A
+    } = (0, a.U)(t), f = (0, u.gn)(t.guildId, t.userId, A ?? null);
     return (0, r.jsxs)("div", {
         className: p.og,
         children: [(0, r.jsx)(s._Jp, {
@@ -45,7 +45,7 @@ function _(e) {
                         variant: "text-md/semibold",
                         name: _,
                         colorString: m ?? null,
-                        colorStrings: A
+                        colorStrings: f
                     })
                 }), c.intl.string(d.default.plwH8d)]
             })

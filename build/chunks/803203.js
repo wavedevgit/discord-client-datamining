@@ -13,8 +13,8 @@ var n = i(627968),
     c = i(297494),
     h = i(211180),
     m = i(60317),
-    p = i(707493),
-    g = i(785833);
+    p = i(236870),
+    g = i(829216);
 let A = l.memo(function(e) {
     let {
         channelId: t,

@@ -20,7 +20,7 @@ function s(e) {
     (0, l.mMO)(async () => {
         let {
             default: e
-        } = await Promise.all([n.e("21743"), n.e("50628")]).then(n.bind(n, 190930));
+        } = await Promise.all([n.e("21743"), n.e("63225")]).then(n.bind(n, 190930));
         return n => (0, i.jsx)(e, {
             applicationId: t,
             mediaUrl: o,

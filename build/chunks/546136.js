@@ -12,7 +12,7 @@ var n = t(503698),
     r = t(230635),
     o = t(642737),
     d = t(985018),
-    c = t(475276);
+    c = t(266603);
 let u = "profile-modal-editing-panel",
     m = "profile-modal-editing-panel-heading";
 

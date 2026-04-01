@@ -1,52 +1,52 @@
 /** chunk id: 415043 params = (module,exports,require) **/
 n.d(t, {
     A: () => u,
-    H: () => m
+    H: () => g
 });
 var i = n(627968);
 n(64700);
-var a = n(503698),
-    l = n.n(a),
+var l = n(503698),
+    a = n.n(l),
     s = n(342952),
     r = n(435371),
     o = n(397927),
-    c = n(915089),
-    d = n(577373);
+    d = n(915089),
+    c = n(20342);
 
 function u(e) {
     let {
         label: t,
         className: n,
-        size: a = o._3J.SIZE_16,
+        size: l = o._3J.SIZE_16,
         maxUsers: r = 4,
         ...u
-    } = e, m = (0, c.GV)();
+    } = e, g = (0, d.GV)();
     return (0, i.jsxs)("div", {
-        className: l()(n, d.k),
+        className: a()(n, c.k),
         children: [(0, i.jsx)(s.I, {
-            "aria-labelledby": m,
-            overflowCountClassName: d.j,
-            size: a,
+            "aria-labelledby": g,
+            overflowCountClassName: c.j,
+            size: l,
             maxUsers: r,
             ...u
         }), (0, i.jsx)(o.Text, {
             variant: "text-xs/normal",
             color: "text-subtle",
-            id: m,
+            id: g,
             children: t
         })]
     })
 }
 
-function m(e) {
+function g(e) {
     let {
         label: t,
         className: n,
-        overflowCountClassName: a,
-        size: c = o._3J.SIZE_16,
+        overflowCountClassName: l,
+        size: d = o._3J.SIZE_16,
         maxUsers: u = 4,
-        onClick: m,
-        ...g
+        onClick: g,
+        ...m
     } = e;
     return (0, i.jsx)("div", {
         className: n,
@@ -55,14 +55,14 @@ function m(e) {
             asContainer: !0,
             ariaHidden: !0,
             children: (0, i.jsx)(o.DUT, {
-                onClick: m,
+                onClick: g,
                 "aria-label": t,
                 children: (0, i.jsx)(s.I, {
-                    size: c,
+                    size: d,
                     maxUsers: u,
-                    overflowCountClassName: l()(d.j, a),
+                    overflowCountClassName: a()(c.j, l),
                     "aria-hidden": !0,
-                    ...g
+                    ...m
                 })
             })
         })

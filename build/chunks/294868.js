@@ -1,72 +1,72 @@
 /** chunk id: 294868 params = (module,exports,require) **/
 n.d(t, {
-    A: () => p
+    A: () => x
 });
 var i = n(627968);
 n(64700);
-var a = n(311907),
-    l = n(961350),
+var l = n(311907),
+    a = n(961350),
     s = n(823016),
     r = n(750492),
     o = n(253798),
-    c = n(622249),
-    d = n(742710),
+    d = n(622249),
+    c = n(742710),
     u = n(192),
-    m = n(23024);
+    g = n(899149);
 
-function g(e) {
+function m(e) {
     let {
         games: t,
         user: n,
-        widgetType: a,
-        ...l
+        widgetType: l,
+        ...a
     } = e, {
         registerItemRef: r,
         manageFocusOnDelete: o
     } = (0, s.r)();
     return (0, i.jsx)("ul", {
-        className: m.h,
+        className: g.h,
         children: t.map((e, t) => (0, i.jsx)("li", {
-            children: (0, i.jsx)(d.A, {
+            children: (0, i.jsx)(c.A, {
                 index: t,
                 user: n,
                 game: e,
-                widgetType: a,
+                widgetType: l,
                 coverRef: r(e.applicationId),
                 onRemoveGame: o,
-                ...l
+                ...a
             })
         }, e.applicationId))
     })
 }
 
-function p(e) {
+function x(e) {
     let {
         user: t,
         widgetType: n,
-        disableInteraction: d,
-        games: m
-    } = e, p = (0, a.bG)([l.default], () => l.default.getId() === t.id), {
-        getManageButtonForWidget: x
-    } = (0, u.r)(), f = x(n), {
-        expanded: _,
-        setExpanded: h
-    } = (0, o.B)(), A = _ ? m : m.slice(0, 2), I = m.length > 2, v = (0, i.jsxs)(i.Fragment, {
-        children: [(0, i.jsx)(g, {
+        disableInteraction: c,
+        games: g
+    } = e, x = (0, l.bG)([a.default], () => a.default.getId() === t.id), {
+        getManageButtonForWidget: p
+    } = (0, u.r)(), f = p(n), {
+        expanded: h,
+        setExpanded: _
+    } = (0, o.B)(), A = h ? g : g.slice(0, 2), I = g.length > 2, j = (0, i.jsxs)(i.Fragment, {
+        children: [(0, i.jsx)(m, {
             ...e,
             games: A
-        }), I && (0, i.jsx)(c.A, {
-            expanded: _,
-            onClick: () => h(e => !e)
+        }), I && (0, i.jsx)(d.A, {
+            expanded: h,
+            onClick: () => _(e => !e)
         })]
     });
-    return p && !d ? (0, i.jsxs)(i.Fragment, {
+    return x && !c ? (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(r.A, {
             widgetType: n,
-            gameCount: m.length
+            gameCount: g.length
         }), (0, i.jsx)(s.B, {
             emptyListFallbackRef: f,
-            children: v
+            children: j
         })]
-    }) : v
+    }) : j
 }

@@ -11,7 +11,7 @@ var a = t(397927),
     o = t(913453),
     d = t(51943),
     c = t(985018),
-    u = t(272823);
+    u = t(643146);
 
 function _(e) {
     let {
@@ -20,16 +20,16 @@ function _(e) {
     } = e, {
         trackUserProfileAction: _
     } = (0, l.NJ)(), {
-        mutualGuilds: p,
-        isFetching: x
+        mutualGuilds: A,
+        isFetching: p
     } = (0, o.A)(n);
     return (0, i.jsx)(a.IpV, {
         className: u.DK,
         fade: !0,
-        children: null == p && x ? (0, i.jsx)("div", {
+        children: null == A && p ? (0, i.jsx)("div", {
             className: u.Ie,
             children: (0, i.jsx)(a.y$y, {})
-        }) : (null != p || x) && p?.length !== 0 ? p?.map(e => {
+        }) : (null != A || p) && A?.length !== 0 ? A?.map(e => {
             let {
                 guild: a,
                 nick: l

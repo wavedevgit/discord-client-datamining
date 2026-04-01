@@ -13,7 +13,7 @@ var s = n(311907),
     d = n(309010),
     c = n(427603),
     u = n(980504),
-    h = n(546299);
+    h = n(931374);
 
 function p() {
     let [e, t] = (0, s.yK)([a.A], () => [a.A.enabled, a.A.keepOpen]), n = (0, s.bG)([d.A], () => d.A.getVoiceChannelId()), p = (0, s.bG)([o.A], () => o.A.getChannel(n), [n]), _ = p?.getGuildId();

@@ -1,14 +1,14 @@
 /** chunk id: 194362 params = (module,exports,require) **/
-r.d(t, {
-    a: () => s
+n.d(t, {
+    a: () => i
 });
-var i = r(104798),
-    a = r(652215);
-async function s(e) {
-    let t = i.A.generateNonce();
+var a = n(104798),
+    l = n(652215);
+async function i(e) {
+    let t = a.A.generateNonce();
     try {
-        let r = await i.A.createHandoffToken(t);
-        return a.X7G.DEVELOPER_PORTAL_LOGIN_HANDOFF(t, r, e)
+        let n = await a.A.createHandoffToken(t);
+        return l.X7G.DEVELOPER_PORTAL_LOGIN_HANDOFF(t, n, e)
     } catch {
         return `//${window.GLOBAL_ENV.DEVELOPERS_ENDPOINT}/${e}`
     }

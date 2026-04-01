@@ -129,7 +129,7 @@ var h = s.default,
             return r[a] = g(e[a], t[a]), r
         }, {})
     },
-    w = function(e, t) {
+    A = function(e, t) {
         for (var r = arguments.length, n = Array(r > 2 ? r - 2 : 0), o = 2; o < r; o++) n[o - 2] = arguments[o];
         if (null === t) return e;
         Array.isArray(t) || (t = [t]);
@@ -143,7 +143,7 @@ var h = s.default,
         });
         return s.className || delete s.className, 0 === Object.keys(s.style).length && delete s.style, s
     },
-    A = function(e) {
+    w = function(e) {
         return Object.keys(e).reduce(function(t, r) {
             return t[r] = /^base/.test(r) ? y(e[r]) : "scheme" === r ? e[r] + ":inverted" : e[r], t
         }, {})
@@ -161,7 +161,7 @@ var h = s.default,
             }, {}), c = m(Object.keys(r).reduce(function(e, t) {
                 return -1 === p.indexOf(t) && (e[t] = r[t]), e
             }, {}), e(i)), l = arguments.length, b = Array(l > 3 ? l - 3 : 0), f = 3; f < l; f++) b[f - 3] = arguments[f];
-        return u()(w, 2).apply(void 0, [c].concat(b))
+        return u()(A, 2).apply(void 0, [c].concat(b))
     }, 3),
     k = function(e) {
         return !!e.extend
@@ -172,7 +172,7 @@ var h = s.default,
                 a = (0, o.A)(r, 2),
                 n = a[0],
                 i = a[1];
-            e = t ? t[n] : s[n], "inverted" === i && (e = A(e))
+            e = t ? t[n] : s[n], "inverted" === i && (e = w(e))
         }
         return e && Object.prototype.hasOwnProperty.call(e, "base00") ? e : void 0
     },
@@ -180,6 +180,6 @@ var h = s.default,
         return "string" == typeof e ? "".concat(e, ":inverted") : e && k(e) && e.extend ? "string" == typeof e.extend ? d(d({}, e), {}, {
             extend: "".concat(e.extend, ":inverted")
         }) : d(d({}, e), {}, {
-            extend: A(e.extend)
-        }) : e ? A(e) : e
+            extend: w(e.extend)
+        }) : e ? w(e) : e
     }

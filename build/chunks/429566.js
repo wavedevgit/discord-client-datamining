@@ -1,4 +1,5 @@
 /** chunk id: 429566 params = (module,exports,require) **/
+"use strict";
 e.exports = {
     $P: "search_c322aa",
     ON: "searchBar_c322aa",

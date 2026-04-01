@@ -1,7 +1,7 @@
 /** chunk id: 634925 params = (module,exports,require) **/
 n.d(t, {
     A: () => m,
-    h: () => f
+    h: () => A
 });
 var r = n(627968),
     i = n(64700),
@@ -28,15 +28,15 @@ function m(e) {
     })
 }
 
-function f(e) {
+function A(e) {
     let {
         guildId: t,
         powerup: n,
         badge: u,
         className: m,
-        onHover: f,
-        children: A
-    } = e, g = (0, o.A)(t), x = (0, a.Ay)(t, n), v = x.type !== _.b_.INACTIVE, h = x.sourceEntitlement?.ends_at != null, E = (0, s.A)(t, n, "GuildPowerupCard"), I = i.useRef(null), b = (0, p.A)(t, n), [j, S] = i.useState(!1), C = (0, l.K)(S, 1);
+        onHover: A,
+        children: f
+    } = e, g = (0, o.A)(t), x = (0, a.Ay)(t, n), v = x.type !== _.b_.INACTIVE, h = x.sourceEntitlement?.ends_at != null, E = (0, s.A)(t, n, "GuildPowerupCard"), I = i.useRef(null), j = (0, p.A)(t, n), [b, S] = i.useState(!1), C = (0, l.K)(S, 1);
     return (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(d.NI, {
             label: n.title,
@@ -44,18 +44,18 @@ function f(e) {
             isWarning: h,
             badge: u,
             canRollback: E,
-            onClick: b,
-            onMouseOver: () => f?.(!0),
-            onMouseLeave: () => f?.(!1),
+            onClick: j,
+            onMouseOver: () => A?.(!0),
+            onMouseLeave: () => A?.(!1),
             className: m,
             ref: e => {
                 I.current = e, C.current = e
             },
-            children: A
+            children: f
         }), !E && g && (0, r.jsx)(c.A, {
             powerup: n,
             targetRef: I,
-            isCardVisible: j
+            isCardVisible: b
         })]
     })
 }

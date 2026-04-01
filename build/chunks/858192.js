@@ -9,7 +9,7 @@ function i(e) {
     return (0, s.mMO)(async () => {
         let {
             default: t
-        } = await n.e("55724").then(n.bind(n, 23874));
+        } = await n.e("49695").then(n.bind(n, 23874));
         return n => (0, a.jsx)(t, {
             ...n,
             ...e

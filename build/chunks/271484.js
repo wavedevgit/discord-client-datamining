@@ -14,9 +14,9 @@ var r = n(627968),
     c = n(915667),
     p = n(568065),
     _ = n(652215),
-    m = n(136708),
-    f = n(985018),
-    A = n(870166),
+    m = n(333354),
+    A = n(985018),
+    f = n(870166),
     g = n(849630);
 
 function x(e, t) {
@@ -30,7 +30,7 @@ function x(e, t) {
                     canUseBoosts: i,
                     allPowerups: s,
                     unlockedPowerups: u
-                } = e, d = f.intl.string(m.default.KC9HRW), x = f.intl.string(m.default.GJiSmP), v = s?.[l.SL], h = u?.[l.SL] != null, E = f.intl.string(m.default["/egwJA"]), I = h ? void 0 : f.intl.string(m.default.W6Vwn3), b = h ? void 0 : f.intl.string(m.default.lvk1Gc), j = h ? f.intl.string(m.default["9CfkLO"]) : f.intl.string(f.t["+7XY31"]), S = h ? "secondary" : "expressive", C = i ? () => {
+                } = e, d = A.intl.string(m.default.KC9HRW), x = A.intl.string(m.default.GJiSmP), v = s?.[l.SL], h = u?.[l.SL] != null, E = A.intl.string(m.default["/egwJA"]), I = h ? void 0 : A.intl.string(m.default.W6Vwn3), j = h ? void 0 : A.intl.string(m.default.lvk1Gc), b = h ? A.intl.string(m.default["9CfkLO"]) : A.intl.string(A.t["+7XY31"]), S = h ? "secondary" : "expressive", C = i ? () => {
                     h ? a.A.open(t, _.BEX.TAG, _.JJy.GUILD_POWERUPS_OVERVIEW_CARD) : null != v && (0, c.A)(t, v), (0, o.s7G)()
                 } : void 0, w = p.m_;
                 return {
@@ -45,14 +45,14 @@ function x(e, t) {
                             return n => (0, r.jsx)(l, {
                                 guildId: t,
                                 title: d,
-                                description: f.intl.string(m.default.BBRFRd),
+                                description: A.intl.string(m.default.BBRFRd),
                                 powerups: e,
                                 newPowerupSkuIdSet: w,
                                 forceStaticImages: !0,
-                                footerInfoText: b,
-                                footerAction: i && null != C && null != j ? {
+                                footerInfoText: j,
+                                footerAction: i && null != C && null != b ? {
                                     variant: S,
-                                    text: j,
+                                    text: b,
                                     icon: "expressive" === S ? o._Jp : void 0,
                                     onClick: C
                                 } : void 0,
@@ -68,7 +68,7 @@ function x(e, t) {
                     newPowerupSkuIdSet: w,
                     image: {
                         staticUrl: g.A,
-                        animatedUrl: A.A
+                        animatedUrl: f.A
                     },
                     forceStaticImages: !0
                 }

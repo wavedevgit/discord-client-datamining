@@ -1,7 +1,6 @@
 /** chunk id: 894374 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
-    A: () => r
+    A: () => l
 });
 let i = (0, n(945810).mj)({
     name: "2026-02-referral-reminder-dc",
@@ -16,7 +15,7 @@ let i = (0, n(945810).mj)({
     }
 });
 
-function r(e) {
+function l(e) {
     let {
         location: t
     } = e;

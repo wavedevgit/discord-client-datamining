@@ -9,7 +9,7 @@ var i = n(716970),
     l = n(397927),
     r = n(979286),
     o = n(295811),
-    d = n(315844);
+    d = n(680167);
 let c = () => {
     let e = (0, s.bG)([o.A], () => o.A.getShopHomeConfigOverride()),
         t = [{

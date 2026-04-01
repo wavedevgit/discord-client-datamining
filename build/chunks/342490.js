@@ -1,23 +1,24 @@
 /** chunk id: 342490 params = (module,exports,require) **/
-s.d(t, {
-    u: () => l
+"use strict";
+n.d(t, {
+    u: () => r
 });
-var n = s(627968);
-s(64700);
-var a = s(397927),
-    r = s(985018);
+var i = n(627968);
+n(64700);
+var s = n(397927),
+    l = n(985018);
 
-function l(e) {
+function r(e) {
     let {
         onClick: t,
-        size: s
+        size: n
     } = e;
-    return (0, n.jsx)(a.Button, {
+    return (0, i.jsx)(s.Button, {
         variant: "expressive",
         onClick: t,
-        icon: a.dH6,
+        icon: s.dH6,
         iconPosition: "start",
-        size: s,
-        text: r.intl.string(r.t["+7XY31"])
+        size: n,
+        text: l.intl.string(l.t["+7XY31"])
     })
 }

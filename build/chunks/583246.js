@@ -1,58 +1,58 @@
 /** chunk id: 583246 params = (module,exports,require) **/
 n.d(t, {
-    A: () => g
+    A: () => m
 });
 var i = n(627968);
 n(64700);
-var a = n(398590),
-    l = n(114212),
+var l = n(398590),
+    a = n(114212),
     s = n(345942),
     r = n(183555),
     o = n(913453),
-    c = n(51943),
-    d = n(782505),
+    d = n(51943),
+    c = n(782505),
     u = n(515054),
-    m = n(913329);
+    g = n(499044);
 
-function g(e) {
+function m(e) {
     let {
         user: t,
         onClose: n
     } = e, {
-        trackUserProfileAction: g
+        trackUserProfileAction: m
     } = (0, r.NJ)(), {
-        mutualGuilds: p,
-        isFetching: x
+        mutualGuilds: x,
+        isFetching: p
     } = (0, o.A)(t);
     return (0, i.jsx)(u.K, {
-        className: m.XG,
+        className: g.XG,
         fade: !0,
-        children: null == p && x ? Array.from({
+        children: null == x && p ? Array.from({
             length: 10
         }).map((e, t) => (0, i.jsxs)("div", {
-            className: m.Y7,
-            children: [(0, i.jsx)(l.FQ, {
+            className: g.Y7,
+            children: [(0, i.jsx)(a.FQ, {
                 width: 40,
                 opacity: .08
-            }), (0, i.jsx)(l.FQ, {
+            }), (0, i.jsx)(a.FQ, {
                 width: 135,
                 opacity: .08
             })]
-        }, t)) : (null != p || x) && p?.length !== 0 ? p?.map(e => {
+        }, t)) : (null != x || p) && x?.length !== 0 ? x?.map(e => {
             let {
-                guild: l,
+                guild: a,
                 nick: r
             } = e;
-            return (0, i.jsx)(c.A, {
+            return (0, i.jsx)(d.A, {
                 user: t,
-                guild: l,
+                guild: a,
                 nick: r,
                 onSelect: () => {
-                    g({
+                    m({
                         action: "PRESS_MUTUAL_GUILD"
-                    }), (0, s.u)(l.id), n(), (0, a.jH)()
+                    }), (0, s.u)(a.id), n(), (0, l.jH)()
                 }
-            }, l.id)
-        }) : (0, i.jsx)(d.jB, {})
+            }, a.id)
+        }) : (0, i.jsx)(c.jB, {})
     })
 }

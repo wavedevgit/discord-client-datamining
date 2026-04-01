@@ -10,7 +10,7 @@ var a = t(158954),
     l = t(973925),
     o = t(622543),
     d = t(985018),
-    c = t(533164);
+    c = t(763683);
 
 function u(e) {
     let {
@@ -46,8 +46,8 @@ function _(e) {
         user: n
     } = e, t = (0, s.bG)([o.A], () => o.A.getUserProfile(n.id)?.application), {
         hasMessageContent: _,
-        hasGuildPresences: p,
-        hasGuildMembers: x
+        hasGuildPresences: A,
+        hasGuildMembers: p
     } = (0, l.Z)(t);
     return (0, i.jsxs)(a.IpV, {
         fade: !0,
@@ -56,11 +56,11 @@ function _(e) {
             icon: r.oyn,
             title: d.intl.string(d.t["7Tmhfu"]),
             description: d.intl.string(d.t.eu5x7z)
-        }), p && (0, i.jsx)(u, {
+        }), A && (0, i.jsx)(u, {
             icon: r._xR,
             title: d.intl.string(d.t.awYSsM),
             description: d.intl.string(d.t.TpsXoC)
-        }), x && (0, i.jsx)(u, {
+        }), p && (0, i.jsx)(u, {
             icon: r.nFg,
             title: d.intl.string(d.t.WuKeSJ),
             description: d.intl.string(d.t.wOBmtV)

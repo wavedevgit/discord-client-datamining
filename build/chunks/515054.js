@@ -1,36 +1,36 @@
 /** chunk id: 515054 params = (module,exports,require) **/
 n.d(t, {
     A: () => I,
-    K: () => h
+    K: () => _
 });
 var i = n(627968),
-    a = n(64700),
-    l = n(503698),
-    s = n.n(l),
+    l = n(64700),
+    a = n(503698),
+    s = n.n(a),
     r = n(397927),
     o = n(183555),
-    c = n(958805),
-    d = n(61881),
+    d = n(958805),
+    c = n(61881),
     u = n(790417),
-    m = n(113763),
-    g = n(583246),
-    p = n(463259),
-    x = n(133583),
+    g = n(113763),
+    m = n(583246),
+    x = n(463259),
+    p = n(133583),
     f = n(518477),
-    _ = n(828622);
+    h = n(527573);
 
-function h(e) {
+function _(e) {
     let {
         children: t,
         className: n,
-        scrollerRef: a,
-        ...l
+        scrollerRef: l,
+        ...a
     } = e;
     return (0, i.jsx)(r.HOs, {
-        ref: a,
-        className: s()(_.gN, n),
+        ref: l,
+        className: s()(h.gN, n),
         fade: !0,
-        ...l,
+        ...a,
         children: t
     })
 }
@@ -39,32 +39,32 @@ function A(e) {
     let {
         user: t,
         currentUser: n,
-        section: a,
-        displayProfile: l,
+        section: l,
+        displayProfile: a,
         guildId: s,
         channelId: r,
         onClose: o
     } = e;
-    return a === f.RP.ACTIVITY ? (0, i.jsx)(u.A, {
+    return l === f.RP.ACTIVITY ? (0, i.jsx)(u.A, {
         user: t,
         currentUser: n,
-        displayProfile: l,
+        displayProfile: a,
         guildId: s,
         channelId: r,
         onClose: o
-    }) : a === f.RP.MUTUAL_FRIENDS ? (0, i.jsx)(m.A, {
+    }) : l === f.RP.MUTUAL_FRIENDS ? (0, i.jsx)(g.A, {
         user: t,
         guildId: s,
         channelId: r,
         onClose: o
-    }) : a === f.RP.MUTUAL_GUILDS ? (0, i.jsx)(g.A, {
+    }) : l === f.RP.MUTUAL_GUILDS ? (0, i.jsx)(m.A, {
         user: t,
         onClose: o
-    }) : a === f.RP.WIDGETS ? (0, i.jsx)(p.A, {
+    }) : l === f.RP.WIDGETS ? (0, i.jsx)(x.A, {
         user: t,
         guildId: s,
         channelId: r
-    }) : a === f.RP.WISHLIST ? (0, i.jsx)(x.A, {
+    }) : l === f.RP.WISHLIST ? (0, i.jsx)(p.A, {
         profileOwner: t
     }) : null
 }
@@ -73,51 +73,51 @@ function I(e) {
     let {
         user: t,
         currentUser: n,
-        displayProfile: l,
+        displayProfile: a,
         guildId: s,
         channelId: u,
-        items: m,
-        initialSection: g,
-        onClose: p
+        items: g,
+        initialSection: m,
+        onClose: x
     } = e, {
-        trackUserProfileAction: x
+        trackUserProfileAction: p
     } = (0, o.NJ)(), [{
-        section: h,
+        section: _,
         text: I
-    }, v] = a.useState(m.find(e => {
+    }, j] = l.useState(g.find(e => {
         let {
             section: t
         } = e;
-        return t === g
-    }) ?? m[0]);
+        return t === m
+    }) ?? g[0]);
     return (0, i.jsxs)("div", {
-        className: _.kL,
+        className: h.kL,
         children: [(0, i.jsx)(r.HOs, {
             orientation: "horizontal",
-            className: _.gU,
+            className: h.gU,
             fade: !0,
             paddingFix: !1,
             children: (0, i.jsx)(r.VQ0, {
                 type: "top",
                 look: "custom",
-                selectedItem: h,
+                selectedItem: _,
                 onItemSelect: e => {
-                    d.A.hasUnsavedChanges() && h === f.RP.WIDGETS ? c.A.notifyUnsavedWidgets() : (x({
+                    c.A.hasUnsavedChanges() && _ === f.RP.WIDGETS ? d.A.notifyUnsavedWidgets() : (p({
                         action: "PRESS_SECTION",
                         section: e
-                    }), v(t => m.find(t => t.section === e) ?? t))
+                    }), j(t => g.find(t => t.section === e) ?? t))
                 },
-                children: m.map(e => (0, i.jsx)(r.VQ0.Item, {
-                    className: _.YU,
+                children: g.map(e => (0, i.jsx)(r.VQ0.Item, {
+                    className: h.YU,
                     id: e.section,
                     "aria-label": e.text,
                     children: e.text
                 }, e.section))
             })
         }), (0, i.jsx)(r.VQ0.Panel, {
-            id: h,
+            id: _,
             "aria-label": I,
-            className: _.NM,
+            className: h.NM,
             children: (0, i.jsx)(r.Fmo, {
                 component: (0, i.jsx)(r.AC4, {
                     children: (0, i.jsx)(r.H, {
@@ -127,11 +127,11 @@ function I(e) {
                 children: (0, i.jsx)(A, {
                     user: t,
                     currentUser: n,
-                    displayProfile: l,
+                    displayProfile: a,
                     guildId: s,
                     channelId: u,
-                    section: h,
-                    onClose: p
+                    section: _,
+                    onClose: x
                 })
             })
         })]

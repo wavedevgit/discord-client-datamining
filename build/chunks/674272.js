@@ -1,26 +1,26 @@
 /** chunk id: 674272 params = (module,exports,require) **/
-i.d(e, {
-    A: () => l
+n.d(t, {
+    A: () => r
 });
-var s = i(627968);
-i(64700);
-var n = i(397927);
+var i = n(627968);
+n(64700);
+var l = n(397927);
 
-function l(t) {
+function r(e) {
     let {
-        source: e,
-        onClose: l
-    } = t;
-    (0, n.mMO)(async () => {
+        source: t,
+        onClose: r
+    } = e;
+    (0, l.mMO)(async () => {
         let {
-            default: t
-        } = await i.e("61376").then(i.bind(i, 999235));
-        return i => (0, s.jsx)(t, {
-            ...i,
-            source: e
+            default: e
+        } = await n.e("61376").then(n.bind(n, 999235));
+        return n => (0, i.jsx)(e, {
+            ...n,
+            source: t
         })
     }, {
-        onCloseCallback: l,
-        backdropStyle: n.F2Z.BLUR
+        onCloseCallback: r,
+        backdropStyle: l.F2Z.BLUR
     })
 }
