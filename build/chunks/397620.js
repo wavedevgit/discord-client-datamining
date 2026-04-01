@@ -20,7 +20,7 @@ let d = function(e) {
     s.useEffect(() => {
         _(m)
     }, [m]);
-    let x = s.useMemo(() => {
+    let A = s.useMemo(() => {
         let e = g.component;
         return (0, i.jsx)(e, {})
     }, [g]);
@@ -54,7 +54,7 @@ let d = function(e) {
             className: a()(o.NM, n, {
                 [o.Vd]: "vertical" === u
             }),
-            children: x
+            children: A
         })]
     })
 }

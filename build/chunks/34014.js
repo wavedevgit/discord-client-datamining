@@ -1,6 +1,6 @@
 /** chunk id: 34014 params = (module,exports,require) **/
 n.d(t, {
-    r: () => x
+    r: () => A
 });
 var i = n(311907),
     s = n(964486),
@@ -17,7 +17,7 @@ let _ = (0, l.D)(() => ({
         syncEnabled: null,
         updateTimeout: null
     })),
-    x = (0, d.zD)(u.X.SYNC_FORCED_COLORS, {
+    A = (0, d.zD)(u.X.SYNC_FORCED_COLORS, {
         useTitle: () => g.intl.string(g.t.cguiec),
         useSubtitle: () => g.intl.format(g.t.GwEVE2, {
             learnMoreLink: c.A.getArticleURL(m.MVz.FORCED_COLORS)

@@ -14,14 +14,14 @@ var i = n(934551),
     m = n(611478),
     g = n(402089),
     _ = n(281225),
-    x = n(935185),
-    A = n(652215),
+    A = n(935185),
+    x = n(652215),
     h = n(985018);
 let p = (0, a.dT)(c.X.ACCOUNT_STANDING_TAB, {
         getTitle: () => h.intl.string(h.t["Vov/9o"]),
         onItemSelect: () => {
-            d.default.track(A.HAw.MY_ACCOUNT_PAGE_TAB_NAVIGATE, {
-                target_tab_name: x.D.STANDING
+            d.default.track(x.HAw.MY_ACCOUNT_PAGE_TAB_NAVIGATE, {
+                target_tab_name: A.D.STANDING
             })
         },
         buildLayout: () => [_.Q]
@@ -29,8 +29,8 @@ let p = (0, a.dT)(c.X.ACCOUNT_STANDING_TAB, {
     T = (0, a.dT)(c.X.ACCOUNT_SECURITY_TAB, {
         getTitle: () => h.intl.string(h.t.Am9YHi),
         onItemSelect: () => {
-            d.default.track(A.HAw.MY_ACCOUNT_PAGE_TAB_NAVIGATE, {
-                target_tab_name: x.D.SECURITY
+            d.default.track(x.HAw.MY_ACCOUNT_PAGE_TAB_NAVIGATE, {
+                target_tab_name: A.D.SECURITY
             })
         },
         buildLayout: () => [m.P, u.o, g.s]

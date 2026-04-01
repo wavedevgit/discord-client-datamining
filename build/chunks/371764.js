@@ -15,8 +15,8 @@ var s = n(110259),
     m = n(688810),
     g = n(139286),
     _ = n(975571),
-    x = n(498470),
-    A = n(637706),
+    A = n(498470),
+    x = n(637706),
     h = n(985018),
     p = n(308785);
 let T = e => {
@@ -34,12 +34,12 @@ let T = e => {
             component_id: t
         }
     });
-    let S = (0, x.h)({
+    let S = (0, A.h)({
             buttonAction: n.button?.buttonAction ?? o.dz.OPEN_TIER_2_PAYMENT_MODAL,
             analyticsLocations: T,
             analyticsLocation: f.location
         }),
-        E = (0, A.a)(n.body);
+        E = (0, x.a)(n.body);
     return (0, i.jsxs)("div", {
         className: p.kL,
         children: [(0, i.jsx)("div", {

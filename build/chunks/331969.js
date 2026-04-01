@@ -14,13 +14,13 @@ var i = n(627968),
     m = n(734057),
     g = n(808728),
     _ = n(71393),
-    x = n(967198),
-    A = n(926140),
+    A = n(967198),
+    x = n(926140),
     h = n(985018),
     p = n(730040);
 
 function T() {}
-let f = [A.rD.VOICE_CHANNEL];
+let f = [x.rD.VOICE_CHANNEL];
 
 function S(e) {
     e.setOptions({
@@ -102,8 +102,8 @@ function C(e) {
             autocompleterResultTypes: f,
             autocompleterBeforeCreateSearchContext: S
         }),
-        j = (t = "" !== N, n = (0, a.yK)([g.Ay, m.A, x.A], () => {
-            let e = x.A.getGuildId();
+        j = (t = "" !== N, n = (0, a.yK)([g.Ay, m.A, A.A], () => {
+            let e = A.A.getGuildId();
             if (t || null == e) return [];
             let n = [];
             for (let t of g.Ay.getVocalChannelIds(e)) {
@@ -137,7 +137,7 @@ function C(e) {
         P = (() => {
             if (null != j) return j[y]?.id;
             let e = I[y];
-            if (e?.type === A.rD.VOICE_CHANNEL) return e.record.id
+            if (e?.type === x.rD.VOICE_CHANNEL) return e.record.id
         })(),
         L = R > 0 || "" === N ? {
             innerId: b,
@@ -151,7 +151,7 @@ function C(e) {
                 } = e, n = (() => {
                     if (null != j) return j[t];
                     let e = I[t];
-                    if (e?.type === A.rD.VOICE_CHANNEL) return e.record
+                    if (e?.type === x.rD.VOICE_CHANNEL) return e.record
                 })();
                 if (null == n) return null;
                 let s = null != n.parent_id ? m.A.getChannel(n.parent_id) : void 0,
@@ -199,7 +199,7 @@ function C(e) {
                         let e = (() => {
                             if (null != j) return j[y];
                             let e = I[y];
-                            if (e?.type === A.rD.VOICE_CHANNEL) return e.record
+                            if (e?.type === x.rD.VOICE_CHANNEL) return e.record
                         })();
                         null == e ? T(void 0) : T(e.id), c();
                         break

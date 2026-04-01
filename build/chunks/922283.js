@@ -16,9 +16,9 @@ var a = n(627968),
     h = n(778591),
     g = n(465736),
     f = n(985018),
-    _ = n(928976);
+    p = n(928976);
 
-function p(e) {
+function _(e) {
     let {
         detectedGame: t,
         url: n,
@@ -28,18 +28,18 @@ function p(e) {
     } = t, h = m?.steam ?? {
         rating: void 0,
         ratingCount: void 0
-    }, g = (0, x.A)(), p = (0, o.j)(h.rating, h.ratingCount), v = (0, u.y)(p), A = l.useCallback(() => {
+    }, g = (0, x.A)(), _ = (0, o.j)(h.rating, h.ratingCount), v = (0, u.y)(_), A = l.useCallback(() => {
         i(d.Ws.SteamReviews), g(n)
     }, [g, i, n]);
     return (0, a.jsx)(s.DUT, {
         onClick: A,
-        className: _.nf,
+        className: p.nf,
         role: "link",
         "aria-label": f.intl.string(f.t.YNC5Di),
         children: (0, a.jsxs)("div", {
-            className: _.U6,
+            className: p.U6,
             children: [(0, a.jsxs)("div", {
-                className: _.tN,
+                className: p.tN,
                 children: [(0, a.jsx)(s.NXQ, {
                     size: "sm",
                     color: s.LU0.colors.ICON_STRONG.css
@@ -49,17 +49,17 @@ function p(e) {
                     children: f.intl.string(f.t.whmopT)
                 })]
             }), (0, a.jsx)(r.m, {
-                text: p === c.vI.NO_USER_REVIEWS ? f.intl.string(f.t.CLMt8J) : f.intl.format(f.t["lzANJ/"], {
+                text: _ === c.vI.NO_USER_REVIEWS ? f.intl.string(f.t.CLMt8J) : f.intl.format(f.t["lzANJ/"], {
                     rating: h.rating,
                     rating_count: h.ratingCount?.toLocaleString()
                 }).toString(),
                 children: (0, a.jsxs)("div", {
-                    className: _.Z0,
+                    className: p.Z0,
                     children: [(0, a.jsx)(s.Text, {
                         variant: "text-xs/medium",
                         color: v,
-                        children: (0, u.a)(p)
-                    }), null != h.ratingCount && p !== c.vI.NO_USER_REVIEWS && (0, a.jsx)(s.Text, {
+                        children: (0, u.a)(_)
+                    }), null != h.ratingCount && _ !== c.vI.NO_USER_REVIEWS && (0, a.jsx)(s.Text, {
                         variant: "text-xs/medium",
                         color: "text-subtle",
                         children: f.intl.format(f.t.sgIoin, {
@@ -83,28 +83,28 @@ function v(e) {
         topCriticRating: void 0,
         topCriticRatingCount: void 0,
         tier: void 0
-    }, m = o.tier, h = o.topCriticRating ?? -1, g = o.topCriticRatingCount ?? -1, p = (h <= 0 || g <= 0) && null == m, v = (0, x.A)(), E = l.useCallback(() => {
+    }, m = o.tier, h = o.topCriticRating ?? -1, g = o.topCriticRatingCount ?? -1, _ = (h <= 0 || g <= 0) && null == m, v = (0, x.A)(), E = l.useCallback(() => {
         i(d.Ws.OpenCriticReviews), v(n)
     }, [v, i, n]);
     return (0, a.jsx)(s.DUT, {
         onClick: E,
-        className: _.nf,
+        className: p.nf,
         role: "link",
         "aria-label": f.intl.string(f.t.aLNBAw),
         children: (0, a.jsxs)("div", {
-            className: _.Ur,
+            className: p.Ur,
             children: [(0, a.jsx)(s.Heading, {
                 variant: "heading-sm/medium",
                 color: "text-strong",
                 children: f.intl.string(f.t["UxvER+"])
             }), (0, a.jsxs)("div", {
-                className: _.WA,
+                className: p.WA,
                 children: [null != m ? (0, a.jsx)(A, {
                     tier: m
                 }) : null, null != m && h > 0 && g > 0 ? (0, a.jsx)(j, {
                     rating: h,
                     tier: m
-                }) : null, p ? (0, a.jsx)(s.Text, {
+                }) : null, _ ? (0, a.jsx)(s.Text, {
                     variant: "text-xs/medium",
                     color: (0, u.y)(c.vI.NO_USER_REVIEWS),
                     children: f.intl.string(f.t["0xYzpO"])
@@ -121,7 +121,7 @@ function A(e) {
     return (0, a.jsx)(r.m, {
         text: n,
         children: (0, a.jsx)("div", {
-            className: _.TE,
+            className: p.TE,
             children: (0, a.jsx)("img", {
                 src: l,
                 alt: n,
@@ -144,7 +144,7 @@ function j(e) {
     return (0, a.jsx)(r.m, {
         text: f.intl.string(f.t.Ub4YR1),
         children: (0, a.jsxs)("div", {
-            className: _.TE,
+            className: p.TE,
             style: {
                 backgroundColor: i
             },
@@ -154,7 +154,7 @@ function j(e) {
             }), (0, a.jsx)(s.Text, {
                 variant: "text-xs/bold",
                 color: "always-white",
-                className: _.ti,
+                className: p.ti,
                 children: Math.floor(t)
             })]
         })
@@ -168,25 +168,25 @@ let E = function(e) {
         applicationId: l
     } = t, r = (0, h.I)(l), c = t.opencriticUrl, o = t.steamReleaseStatus !== i.Y.RETIRED_ABANDONED && null != r, d = t.reviews?.opencritic != null && null != c;
     return o || d ? (0, a.jsxs)("div", {
-        className: _.uW,
+        className: p.uW,
         children: [(0, a.jsx)("div", {
-            className: _.Gf,
+            className: p.Gf,
             children: (0, a.jsx)(s.Heading, {
                 variant: "heading-sm/semibold",
                 color: "text-strong",
                 children: f.intl.string(f.t.GaAQXP)
             })
         }), (0, a.jsxs)("div", {
-            className: _.kL,
+            className: p.kL,
             children: [o ? (0, a.jsx)("div", {
-                className: _.WH,
-                children: (0, a.jsx)(p, {
+                className: p.WH,
+                children: (0, a.jsx)(_, {
                     detectedGame: t,
                     url: r,
                     trackAction: n
                 })
             }) : null, d ? (0, a.jsx)("div", {
-                className: _.WH,
+                className: p.WH,
                 children: (0, a.jsx)(v, {
                     detectedGame: t,
                     url: c,

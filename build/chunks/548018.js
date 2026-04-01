@@ -1,6 +1,6 @@
 /** chunk id: 548018 params = (module,exports,require) **/
 n.d(t, {
-    c: () => x,
+    c: () => A,
     f: () => _
 }), n(321073);
 var i = n(627968),
@@ -21,7 +21,7 @@ function _() {
         return null != e && e.mfaEnabled
     })
 }
-let x = (0, l.E2)(d.X.ACCOUNT_AUTHENTICATOR_APP_SETTING, {
+let A = (0, l.E2)(d.X.ACCOUNT_AUTHENTICATOR_APP_SETTING, {
     useSearchTerms: function() {
         let e = (0, s.bG)([a.default], () => a.default.hasTOTPEnabled()),
             t = [g.intl.string(g.t.m0FidJ), g.intl.string(g.t.xZEzbu)];

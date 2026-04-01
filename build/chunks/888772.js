@@ -14,8 +14,8 @@ var i = n(627968),
     m = n(294433),
     g = n(426190),
     _ = n(438732),
-    x = n(834981),
-    A = n(469696),
+    A = n(834981),
+    x = n(469696),
     h = n(796497),
     p = n(148131),
     T = n(845197),
@@ -104,7 +104,7 @@ function O() {
 }
 
 function R() {
-    let e = (0, x.xr)();
+    let e = (0, A.xr)();
     return (0, i.jsxs)("div", {
         className: a()(v.aP, N.a, v.dO),
         children: [(0, i.jsxs)("div", {
@@ -190,7 +190,7 @@ function P(e) {
 }
 let L = () => {
         let e = (0, _.A)(),
-            t = (0, x.GR)(),
+            t = (0, A.GR)(),
             n = e ? S.Y7 : S.kp,
             s = {
                 count: t.length,
@@ -210,14 +210,14 @@ let L = () => {
                 children: l
             }), (0, i.jsx)("div", {
                 className: v.aP,
-                children: (0, i.jsx)(A.A, {
+                children: (0, i.jsx)(x.A, {
                     text: C.intl.string(b.default.C4ScLD)
                 })
             })]
         })
     },
     D = () => {
-        let e = (0, x.xr)(),
+        let e = (0, A.xr)(),
             t = (0, _.A)() ? S.Y7 : S.kp,
             n = (0, m.y)(C.intl.formatToPlainString(b.default["1/PzIj"], {
                 maxConnections: t
@@ -264,7 +264,7 @@ let L = () => {
         })
     },
     M = () => {
-        let e = (0, x.xk)(S.Ef.PENDING),
+        let e = (0, A.xk)(S.Ef.PENDING),
             t = (0, m.y)(C.intl.formatToPlainString(b.default.IkAgkG, {
                 count: e.length
             }), C.intl.formatToPlainString(b.default.Q8XnAa, {

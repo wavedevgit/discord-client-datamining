@@ -14,8 +14,8 @@ var i = n(627968),
     m = n(688810),
     g = n(512213),
     _ = n(919395),
-    x = n(884546),
-    A = n(287070),
+    A = n(884546),
+    x = n(287070),
     h = n(101058),
     p = n(836602),
     T = n(622543),
@@ -82,7 +82,7 @@ function L(e) {
             children: [(0, i.jsx)(j.A, {
                 guildId: t.id,
                 onChange: n
-            }), (0, i.jsx)(x.A, {
+            }), (0, i.jsx)(A.A, {
                 profilePreviewTitle: (0, i.jsx)(o.Heading, {
                     variant: "heading-md/medium",
                     className: R.Y,
@@ -90,7 +90,7 @@ function L(e) {
                         guildName: t?.name
                     })
                 }),
-                profilePreview: (0, i.jsx)(A.A, {
+                profilePreview: (0, i.jsx)(x.A, {
                     ...w,
                     pendingAvatar: V,
                     pendingDisplayNameStyles: F,

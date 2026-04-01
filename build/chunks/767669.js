@@ -25,7 +25,7 @@ function g(e) {
         }), {
             stackingBehavior: "stack"
         })
-    }, []), x = s.useCallback(() => {
+    }, []), A = s.useCallback(() => {
         (0, l.qfG)(e => (0, i.jsx)(c.default, {
             ...e,
             handleSubmit: e => a.A.sendMFABackupCodesVerificationKeyEmail(e).then(() => {
@@ -34,7 +34,7 @@ function g(e) {
             title: m.intl.string(m.t.PsQmzU),
             actionText: m.intl.string(m.t.ajkYcF)
         }))
-    }, [_]), A = s.useCallback(() => {
+    }, [_]), x = s.useCallback(() => {
         let e = t.map(e => {
                 let {
                     consumed: t,
@@ -49,7 +49,7 @@ function g(e) {
 \r
 ${e}`
     }, [t, g.email]), h = s.useMemo(() => t.length > 0 ? (0, i.jsx)(o.A, {
-        fileContents: A,
+        fileContents: x,
         contentType: "text/plain",
         fileName: "discord_backup_codes.txt",
         children: (0, i.jsx)(l.Button, {
@@ -61,8 +61,8 @@ ${e}`
         variant: "primary",
         size: "sm",
         text: m.intl.string(m.t.xZEzbu),
-        onClick: x
-    }), [t.length, A, x]), p = s.useCallback(() => {
+        onClick: A
+    }), [t.length, x, A]), p = s.useCallback(() => {
         r.A.show({
             title: m.intl.string(m.t["D+aE7g"]),
             body: m.intl.string(m.t.EA4ZEk),

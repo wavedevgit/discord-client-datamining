@@ -25,16 +25,16 @@ let c = {
 };
 
 function u() {
-    let [e, t] = (0, s.useState)(""), [n, i] = (0, s.useState)("server-order"), d = (0, l.bG)([o.Ay], () => o.Ay.getFlattenedGuildIds()), u = (0, l.bG)([r.A], () => r.A.getGuilds()), m = d.map(e => u[e]), g = a.Pw.useSetting(), [_, x] = (0, s.useState)(g);
+    let [e, t] = (0, s.useState)(""), [n, i] = (0, s.useState)("server-order"), d = (0, l.bG)([o.Ay], () => o.Ay.getFlattenedGuildIds()), u = (0, l.bG)([r.A], () => r.A.getGuilds()), m = d.map(e => u[e]), g = a.Pw.useSetting(), [_, A] = (0, s.useState)(g);
     (0, s.useEffect)(() => {
-        x(g)
+        A(g)
     }, [g]);
-    let A = async e => {
-        x(e);
+    let x = async e => {
+        A(e);
         try {
             await a.Pw.updateSetting(e)
         } catch (e) {
-            x(g)
+            A(g)
         }
     }, h = 0 !== _.length, [p, T] = (0, s.useState)(() => c[n](m, g)), f = p.map(e => u[e.id]).filter(Boolean);
     return {
@@ -50,12 +50,12 @@ function u() {
                 checked: t,
                 guildId: n
             } = e, i = new Set(_);
-            t ? i.delete(n) : i.add(n), A([...i])
+            t ? i.delete(n) : i.add(n), x([...i])
         },
         isActivityRestricted: e => _.includes(e),
         hasActivityRestrictedGuilds: h,
         onToggleAllActivityRestrictedGuilds: () => {
-            h ? A([]) : A(d)
+            h ? x([]) : x(d)
         },
         numTotalGuilds: d.length,
         numActivityRestrictedGuilds: _.length

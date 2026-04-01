@@ -15,8 +15,8 @@ var s = n(284009),
     m = n(124064),
     g = n(200790),
     _ = n(230084),
-    x = n(180020),
-    A = n(431982),
+    A = n(180020),
+    x = n(431982),
     h = n(730588),
     p = n(164599),
     T = n(63675),
@@ -115,10 +115,10 @@ function M() {
                 }),
                 user: e,
                 guild: n
-            }, "decoration"), !t && (0, i.jsx)(x.A, {
+            }, "decoration"), !t && (0, i.jsx)(A.A, {
                 user: e,
                 guildId: n.id
-            }), (0, i.jsx)(A.A, {
+            }), (0, i.jsx)(x.A, {
                 user: e,
                 guild: n,
                 titleIcon: (0, i.jsx)(r.m, {

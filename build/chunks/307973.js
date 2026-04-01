@@ -19,8 +19,8 @@ let g = e => {
         boltContainerClassName: s,
         carContainerClassName: g,
         hammerContainerClassName: _,
-        keyContainerClassName: x,
-        starContainerClassName: A,
+        keyContainerClassName: A,
+        starContainerClassName: x,
         boltAssetClassName: h,
         carAssetClassName: p,
         hammerAssetClassName: T,
@@ -108,8 +108,8 @@ let g = e => {
                     alt: ""
                 })
             })
-        }), null != x && (0, i.jsx)("div", {
-            className: l()(r.FV, x),
+        }), null != A && (0, i.jsx)("div", {
+            className: l()(r.FV, A),
             children: (0, i.jsx)(a.Ay, {
                 blurAnimationData: {
                     startBlurRadius: 5,
@@ -141,8 +141,8 @@ let g = e => {
                     alt: ""
                 })
             })
-        }), null != A && (0, i.jsx)("div", {
-            className: l()(r.E1, A),
+        }), null != x && (0, i.jsx)("div", {
+            className: l()(r.E1, x),
             children: (0, i.jsx)(a.Ay, {
                 blurAnimationData: {
                     startBlurRadius: 0,

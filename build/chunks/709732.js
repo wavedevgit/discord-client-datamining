@@ -14,8 +14,8 @@ var i = n(627968),
     m = n(397927),
     g = n(869038),
     _ = n(786144),
-    x = n(587895),
-    A = n(235986),
+    A = n(587895),
+    x = n(235986),
     h = n(769015),
     p = n(75825),
     T = n(871123),
@@ -75,8 +75,8 @@ class L extends s.PureComponent {
         } = this.props, {
             copyMode: n
         } = this.state;
-        return (0, i.jsxs)(A.A, {
-            direction: A.A.Direction.VERTICAL,
+        return (0, i.jsxs)(x.A, {
+            direction: x.A.Direction.VERTICAL,
             className: P.Gj,
             children: [(0, i.jsx)(m.e2O, {
                 className: P.ph,
@@ -199,9 +199,9 @@ class D extends s.PureComponent {
         })
     }
     renderGenerateGiftCodeRow() {
-        return (0, i.jsxs)(A.A, {
-            justify: A.A.Justify.BETWEEN,
-            align: A.A.Align.CENTER,
+        return (0, i.jsxs)(x.A, {
+            justify: x.A.Justify.BETWEEN,
+            align: x.A.Align.CENTER,
             className: P.pe,
             children: [(0, i.jsx)(m.Text, {
                 variant: "text-md/normal",
@@ -243,8 +243,8 @@ class D extends s.PureComponent {
                     splashArtURL: t.getSplashURL(512),
                     children: (0, i.jsxs)("div", {
                         className: P.MY,
-                        children: [(0, i.jsxs)(A.A, {
-                            align: A.A.Align.CENTER,
+                        children: [(0, i.jsxs)(x.A, {
+                            align: x.A.Align.CENTER,
                             children: [this.renderGiftIcon(), (0, i.jsxs)("div", {
                                 className: P.TK,
                                 children: [this.renderTitle(), this.renderSubtitle()]
@@ -269,7 +269,7 @@ class D extends s.PureComponent {
         })
     }
 }
-let G = d.Ay.connectStores([N.A, b.A, E.A, x.A, C.A, S.default], e => {
+let G = d.Ay.connectStores([N.A, b.A, E.A, A.A, C.A, S.default], e => {
     let {
         skuId: t,
         subscriptionPlanId: n,
@@ -282,7 +282,7 @@ let G = d.Ay.connectStores([N.A, b.A, E.A, x.A, C.A, S.default], e => {
         hideCodes: b.A.enabled,
         isFetching: E.A.getUserGiftCodesFetchingForSKUAndPlan(t, n),
         loadedAt: E.A.getUserGiftCodesLoadedAtForSKUAndPlan(t, n),
-        application: x.A.getApplication(s.applicationId),
+        application: A.A.getApplication(s.applicationId),
         subscriptionPlan: null != n ? (0, y.c9)(n) : null,
         giftCodes: l
     }

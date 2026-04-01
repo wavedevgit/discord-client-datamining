@@ -14,8 +14,8 @@ var i = n(627968),
     m = n(400492),
     g = n(841329),
     _ = n(12901),
-    x = n(115063),
-    A = n(414736),
+    A = n(115063),
+    x = n(414736),
     h = n(927018),
     p = n(928830),
     T = n(3137),
@@ -86,7 +86,7 @@ function L(e) {
         description: b.intl.string(b.t.KuYbWN),
         checked: t,
         onChange: e => {
-            e || (0, A._)(h.sn.DISABLE_POGGERMODE), e && (!n || l) ? (0, o.A)({
+            e || (0, x._)(h.sn.DISABLE_POGGERMODE), e && (!n || l) ? (0, o.A)({
                 title: l ? b.intl.string(b.t["FxT+p0"]) : b.intl.string(b.t.TAZ4F9),
                 subtitle: l ? b.intl.string(b.t.gmixrx) : b.intl.string(b.t.jN3t3K),
                 confirmText: b.intl.string(b.t.JFfins),
@@ -281,7 +281,7 @@ function M(e) {
                     var t;
                     null != (t = {
                         shakeIntensity: e
-                    }).shakeIntensity && t.shakeIntensity > s && (0, A._)(h.sn.MORE), r(t, 1)
+                    }).shakeIntensity && t.shakeIntensity > s && (0, x._)(h.sn.MORE), r(t, 1)
                 },
                 onMarkerRender: e => e === I[I.length - 1] ? b.intl.string(b.t["4rbMWc"]) : `${100*e}%`
             })]
@@ -385,16 +385,16 @@ function V(e) {
         y: 0
     }), c = (0, S.A)(), u = (e, t) => {
         var i, s, a, o, d, u, g, _;
-        if (e.enabled && !1 === l.enabled && (n(!0), (0, m.Ak)("poggermode_enabled"), (0, x.fO)({
+        if (e.enabled && !1 === l.enabled && (n(!0), (0, m.Ak)("poggermode_enabled"), (0, A.fO)({
                 duration: 2e3,
                 intensity: e.shakeIntensity ?? l.shakeIntensity
             })), (0, p.O9)(e), null == t) return;
-        let A = (i = l.confettiEnabled, s = e.confettiEnabled, a = l.enabled, o = e.enabled, (s ?? i) && (o ?? a));
-        0 === t && A && c.fire(r.x, r.y, {
+        let x = (i = l.confettiEnabled, s = e.confettiEnabled, a = l.enabled, o = e.enabled, (s ?? i) && (o ?? a));
+        0 === t && x && c.fire(r.x, r.y, {
             settings: e
         });
         let h = (d = l.screenshakeEnabled, u = e.screenshakeEnabled, g = l.enabled, _ = e.enabled, (u ?? d) && (_ ?? g));
-        1 === t && h && (0, x.fO)({
+        1 === t && h && (0, A.fO)({
             duration: 1e3,
             intensity: e.shakeIntensity ?? l.shakeIntensity
         })
@@ -437,7 +437,7 @@ function F() {
     }, [e]), s.useEffect(() => {
         (0, g._)(O[e])
     }, [e]), s.useEffect(() => {
-        Math.random() > .99 && (0, A._)(h.sn.VISITOR_100)
+        Math.random() > .99 && (0, x._)(h.sn.VISITOR_100)
     }, []), (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(u.A, {
             className: C.l3,

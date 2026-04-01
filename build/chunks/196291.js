@@ -14,8 +14,8 @@ var i = n(627968),
     m = n(535646),
     g = n(511484),
     _ = n(202639),
-    x = n(811611),
-    A = n(407217),
+    A = n(811611),
+    x = n(407217),
     h = n(101058),
     p = n(207803),
     T = n(84540),
@@ -177,7 +177,7 @@ function U(e) {
                 showUpsell: !0,
                 text: M.intl.format(M.t.TmfgI2, {
                     onClick: () => {
-                        (0, A.K)({
+                        (0, x.K)({
                             analyticsSource: q,
                             onSubscribeFinish: J
                         })
@@ -190,7 +190,7 @@ function U(e) {
             }), $ && (0, i.jsxs)("div", {
                 children: [(0, i.jsx)("div", {
                     className: k.BU
-                }), (0, i.jsx)(x.Ay, {
+                }), (0, i.jsx)(A.Ay, {
                     type: D.e.CUSTOM_PROFILE_TRY_OUT_UPSELL,
                     subscriptionTier: D.pe.TIER_2
                 })]

@@ -1,6 +1,6 @@
 /** chunk id: 168917 params = (module,exports,require) **/
 n.d(t, {
-    A: () => x
+    A: () => A
 });
 var i = n(627968),
     s = n(311907),
@@ -15,12 +15,12 @@ var i = n(627968),
     g = n(985018),
     _ = n(116726);
 
-function x(e) {
+function A(e) {
     let {
         errors: t,
         pendingNick: n,
-        currentNick: x,
-        username: A,
+        currentNick: A,
+        username: x,
         user: h,
         guild: p
     } = e, T = (0, s.bG)([c.A], () => c.A.can(u.xBc.CHANGE_NICKNAME, p) || c.A.can(u.xBc.MANAGE_NICKNAMES, p)), f = (0, a.L)(m.PremiumTypes.TIER_2);
@@ -28,8 +28,8 @@ function x(e) {
         title: g.intl.string(g.t.me1lRk),
         errors: t,
         children: [(0, i.jsx)(l.ksK, {
-            value: n ?? x ?? "",
-            placeholder: A,
+            value: n ?? A ?? "",
+            placeholder: x,
             maxLength: u.d0r,
             onChange: function(e) {
                 (0, d.p)({

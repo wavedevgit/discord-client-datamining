@@ -15,8 +15,8 @@ var i = n(627968),
     m = n(71393),
     g = n(473145),
     _ = n(927578),
-    x = n(661191),
-    A = n(311092),
+    A = n(661191),
+    x = n(311092),
     h = n(233413),
     p = n(400297),
     T = n(652215),
@@ -39,7 +39,7 @@ function b(e) {
                 date: e
             })
         }
-        let e = null != n.premiumGuildSubscription ? x.default.extractTimestamp(n.premiumGuildSubscription.id) : 0;
+        let e = null != n.premiumGuildSubscription ? A.default.extractTimestamp(n.premiumGuildSubscription.id) : 0;
         return S.intl.formatToPlainString(S.t.lY2Bur, {
             date: new Date(e)
         })
@@ -103,7 +103,7 @@ function C(e) {
         hasCancelableGuildBoostSlot: u,
         showAltText: m,
         isLastGuildBoostSlot: _
-    } = e, x = (0, a.bG)([o.A], () => o.A.useReducedMotion), p = s.useMemo(() => null != n.cooldownEndsAt ? new Date(n.cooldownEndsAt) : null, [n]), T = s.useMemo(() => null != p && p > new Date, [p]), f = (0, g.I5)(n), C = (0, d.A)(), N = s.useRef(null);
+    } = e, A = (0, a.bG)([o.A], () => o.A.useReducedMotion), p = s.useMemo(() => null != n.cooldownEndsAt ? new Date(n.cooldownEndsAt) : null, [n]), T = s.useMemo(() => null != p && p > new Date, [p]), f = (0, g.I5)(n), C = (0, d.A)(), N = s.useRef(null);
     return (0, i.jsxs)("div", {
         className: E.PW,
         children: [(0, i.jsxs)("div", {
@@ -111,10 +111,10 @@ function C(e) {
             children: [(0, i.jsx)(h.A, {
                 isCanceled: f,
                 hasCooldown: T,
-                useReducedMotion: x
+                useReducedMotion: A
             }), (0, i.jsx)("div", {
                 className: E.vh,
-                children: null != p && T && !f ? (0, i.jsx)(A.A, {
+                children: null != p && T && !f ? (0, i.jsx)(x.A, {
                     className: E.xm,
                     cooldown: p.getTime()
                 }) : (0, i.jsx)(b, {
@@ -187,12 +187,12 @@ function v(e) {
         guildId: t,
         appliedGuildBoosts: n,
         premiumSubscription: s
-    } = e, l = (0, a.bG)([m.A], () => m.A.getGuild(t), [t]), r = x.default.fromTimestamp(Date.now());
+    } = e, l = (0, a.bG)([m.A], () => m.A.getGuild(t), [t]), r = A.default.fromTimestamp(Date.now());
     if (n.forEach(e => {
-            (null == r || 0 > x.default.compare(e.id, r)) && (r = e.id)
+            (null == r || 0 > A.default.compare(e.id, r)) && (r = e.id)
         }), null == r) return null;
     let o = u.A.createFromServer({
-        id: x.default.fromTimestamp(Date.now()),
+        id: A.default.fromTimestamp(Date.now()),
         subscription_id: s.id,
         canceled: !1,
         premium_guild_subscription: {
@@ -232,7 +232,7 @@ function I(e) {
         className: E.iE,
         children: [(0, i.jsx)("div", {
             className: E.kL,
-            children: x.default.keys(l).map(e => (0, i.jsx)(v, {
+            children: A.default.keys(l).map(e => (0, i.jsx)(v, {
                 guildId: e,
                 premiumSubscription: n,
                 appliedGuildBoosts: l[e]
@@ -279,7 +279,7 @@ function j(e) {
         className: E.iE,
         children: [(0, i.jsx)("div", {
             className: E.kL,
-            children: x.default.keys(r).map(e => (0, i.jsx)(N, {
+            children: A.default.keys(r).map(e => (0, i.jsx)(N, {
                 guildId: e,
                 guildBoostSlotRecords: r[e],
                 premiumSubscription: n,

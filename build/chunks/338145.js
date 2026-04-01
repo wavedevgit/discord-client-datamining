@@ -14,8 +14,8 @@ var i = n(627968),
     m = n(544028),
     g = n(780964),
     _ = n(652215),
-    x = n(985018);
-let A = n(993830),
+    A = n(985018);
+let x = n(993830),
     h = n(413142),
     p = {
         page: _.liQ.USER_SETTINGS,
@@ -25,14 +25,14 @@ let A = n(993830),
 function T() {
     let e = (0, a.bG)([m.A], () => (0, l.qB1)(m.A.theme));
     return (0, i.jsx)("img", {
-        src: e ? A : h,
+        src: e ? x : h,
         width: 48,
         height: 32,
         alt: ""
     })
 }
 let f = (0, d.E2)(g.X.VOICE_NOISE_SUPPRESSION_SETTING, {
-    useSearchTerms: () => [x.intl.string(x.t.t8Qhib), x.intl.string(x.t.hmfkCi)],
+    useSearchTerms: () => [A.intl.string(A.t.t8Qhib), A.intl.string(A.t.hmfkCi)],
     usePredicate: function() {
         return (0, a.bG)([c.Ay], () => c.Ay.isInputProfileCustom() && c.Ay.isNoiseSuppressionSupported())
     },
@@ -55,27 +55,27 @@ let f = (0, d.E2)(g.X.VOICE_NOISE_SUPPRESSION_SETTING, {
                 let e = [];
                 return m && e.push({
                     id: "krisp",
-                    label: x.intl.string(x.t.rdoNzt),
+                    label: A.intl.string(A.t.rdoNzt),
                     value: "KRISP"
                 }), d && e.push({
                     id: "standard",
-                    label: x.intl.string(x.t.qXeYHw),
+                    label: A.intl.string(A.t.qXeYHw),
                     value: "STANDARD"
                 }), e.push({
                     id: "disabled",
-                    label: x.intl.string(x.t.wkYAlz),
+                    label: A.intl.string(A.t.wkYAlz),
                     value: "NONE"
                 }), e
             }, [m, d]),
-            A = m ? x.intl.format(x.t["1q5aTp"], {
+            x = m ? A.intl.format(A.t["1q5aTp"], {
                 helpArticle: u.A.getArticleURL(_.MVz.NOISE_SUPPRESSION)
-            }) : x.intl.string(x.t.OWKjw5);
+            }) : A.intl.string(A.t.OWKjw5);
         return (0, i.jsxs)(l.BJc, {
             direction: "vertical",
             gap: 0,
             children: [(0, i.jsx)(r.l6P, {
-                label: x.intl.string(x.t.t8Qhib),
-                description: A,
+                label: A.intl.string(A.t.t8Qhib),
+                description: x,
                 layout: "horizontal",
                 value: t ? "KRISP" : n ? "STANDARD" : "NONE",
                 onSelectionChange: e,

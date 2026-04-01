@@ -14,8 +14,8 @@ var i = n(627968),
     m = n(77729),
     g = n(839214),
     _ = n(98919),
-    x = n(487329),
-    A = n(419954),
+    A = n(487329),
+    x = n(419954),
     h = n(430452),
     p = n(353835),
     T = n(780964),
@@ -58,7 +58,7 @@ async function v(e) {
     } catch (a) {
         var s;
         let e, t, n, l;
-        s = a.displayMessage, e = E.intl.string(E.t.QZg0J7), t = s ?? E.intl.string(E.t.VzHcSm), n = (0, x.B1)(x.iy.DEBUG_LOG_UPLOAD_FAILED)?.errorCode, l = E.intl.formatToPlainString(E.t.ejOT95, {
+        s = a.displayMessage, e = E.intl.string(E.t.QZg0J7), t = s ?? E.intl.string(E.t.VzHcSm), n = (0, A.B1)(A.iy.DEBUG_LOG_UPLOAD_FAILED)?.errorCode, l = E.intl.formatToPlainString(E.t.ejOT95, {
             errorCode: n
         }), (0, c.qfG)(n => (0, i.jsx)(c.VoidConfirmModal, {
             header: e,
@@ -99,7 +99,7 @@ async function I() {
         })
     })
 }
-let j = (0, A.E2)(T.X.VOICE_AND_VIDEO_DEBUG_LOGGING, {
+let j = (0, x.E2)(T.X.VOICE_AND_VIDEO_DEBUG_LOGGING, {
     useSearchTerms: () => [E.intl.string(E.t["726JHL"]), E.intl.string(E.t.EbwFfR), E.intl.string(E.t.nuPtYi)],
     usePredicate: function() {
         let e = (0, a.bG)([h.Ay], () => h.Ay.supports(S.O5.DEBUG_LOGGING));

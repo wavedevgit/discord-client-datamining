@@ -1,6 +1,6 @@
 /** chunk id: 550649 params = (module,exports,require) **/
 n.d(t, {
-    z: () => x
+    z: () => A
 });
 var i = n(934551),
     s = n(554146),
@@ -25,7 +25,7 @@ let u = [{
         hideInStreamerMode: !0,
         buildLayout: () => [m, g]
     }),
-    x = (0, l.i4)(r.X.CONNECTIONS_SIDEBAR_ITEM, {
+    A = (0, l.i4)(r.X.CONNECTIONS_SIDEBAR_ITEM, {
         useTitle: () => c.intl.string(c.t["3fe7U5"]),
         icon: i.LinkIcon,
         getDismissibleBadges: () => u,

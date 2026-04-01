@@ -1,6 +1,6 @@
 /** chunk id: 431040 params = (module,exports,require) **/
 n.d(t, {
-    A: () => _
+    A: () => p
 });
 var a = n(627968),
     l = n(64700),
@@ -23,12 +23,12 @@ function f() {
         children: h.intl.string(h.t.GruYxV)
     })
 }
-let _ = function(e) {
+let p = function(e) {
     let {
         application: t,
         detectedGame: n,
-        trackAction: _
-    } = e, p = l.useMemo(() => n.genres.map(r.du).join(", "), [n]), v = n.publishers.join(", "), A = n.developers.join(", "), j = n.firstReleaseDate, E = (0, o.A)(n), C = (0, c.Y)(n), I = !(0, s.uJ)(p), N = !(0, s.uJ)(v), b = !(0, s.uJ)(A), S = !(0, s.uJ)(j), T = E.length > 0, y = C.length > 0 && !C.every(e => (0, s.uJ)(e.url));
+        trackAction: p
+    } = e, _ = l.useMemo(() => n.genres.map(r.du).join(", "), [n]), v = n.publishers.join(", "), A = n.developers.join(", "), j = n.firstReleaseDate, E = (0, o.A)(n), C = (0, c.Y)(n), I = !(0, s.uJ)(_), b = !(0, s.uJ)(v), N = !(0, s.uJ)(A), S = !(0, s.uJ)(j), T = E.length > 0, y = C.length > 0 && !C.every(e => (0, s.uJ)(e.url));
     return (0, a.jsxs)("div", {
         className: g.uW,
         children: [(0, a.jsx)("div", {
@@ -50,7 +50,7 @@ let _ = function(e) {
                     variant: "text-sm/normal",
                     color: "text-subtle",
                     className: g.Gu,
-                    children: p
+                    children: _
                 }) : (0, a.jsx)(f, {})]
             }), (0, a.jsxs)("div", {
                 className: g.J1,
@@ -58,7 +58,7 @@ let _ = function(e) {
                     variant: "text-sm/normal",
                     color: "text-subtle",
                     children: 1 !== n.publishers.length ? h.intl.string(h.t.Hc7Enk) : h.intl.string(h.t["4Byy/G"])
-                }), N ? (0, a.jsx)(i.Text, {
+                }), b ? (0, a.jsx)(i.Text, {
                     variant: "text-sm/normal",
                     color: "text-subtle",
                     className: g.Gu,
@@ -70,7 +70,7 @@ let _ = function(e) {
                     variant: "text-sm/normal",
                     color: "text-subtle",
                     children: 1 !== n.developers.length ? h.intl.string(h.t.KATEJB) : h.intl.string(h.t.na3PT0)
-                }), b ? (0, a.jsx)(i.Text, {
+                }), N ? (0, a.jsx)(i.Text, {
                     variant: "text-sm/normal",
                     color: "text-subtle",
                     className: g.Gu,
@@ -114,7 +114,7 @@ let _ = function(e) {
                     className: g.Gu,
                     children: C.map(e => (0, a.jsx)(u.K, {
                         website: e,
-                        trackAction: _
+                        trackAction: p
                     }, e.url))
                 }) : (0, a.jsx)(f, {})]
             }), (0, a.jsxs)("div", {
@@ -136,7 +136,7 @@ let _ = function(e) {
             className: g.OQ,
             children: (0, a.jsx)(d.A, {
                 application: t,
-                trackAction: _
+                trackAction: p
             })
         })]
     })

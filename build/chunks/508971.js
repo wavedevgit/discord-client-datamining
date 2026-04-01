@@ -24,19 +24,19 @@ function g(e) {
         {
             name: g,
             description: _,
-            hideDescriptionUntilUnlock: x,
-            onAction: A
+            hideDescriptionUntilUnlock: A,
+            onAction: x
         } = s,
-        h = x && !a,
+        h = A && !a,
         p = a ? "text-strong" : "text-muted",
         T = a ? "text-default" : "text-muted",
         f = r()(n),
-        S = null != A && a,
+        S = null != x && a,
         E = S ? o.DUT : "div";
     return (0, i.jsxs)(E, {
         className: l()(m.kL, S && m.b),
         onClick: () => {
-            S && A()
+            S && x()
         },
         children: [(0, i.jsx)("div", {
             className: m.zc,

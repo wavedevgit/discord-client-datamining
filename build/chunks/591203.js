@@ -14,8 +14,8 @@ var i = n(627968),
     m = n(796774),
     g = n(209932),
     _ = n(536432),
-    x = n(984813),
-    A = n(595953),
+    A = n(984813),
+    x = n(595953),
     h = n(975571),
     p = n(780964),
     T = n(617617),
@@ -66,7 +66,7 @@ let N = (0, u.E2)(p.X.ENTRANCE_SOUNDS_SETTING, {
     Component: function() {
         let {
             analyticsLocations: e
-        } = (0, o.Ay)(), [t, n] = s.useState("0"), r = (0, x.mz)(t), u = b(r), p = r?.type === x.PP.GLOBAL, T = (0, l.bG)([g.A], () => g.A.hasFetchedAllSounds()) && null != r && null == u;
+        } = (0, o.Ay)(), [t, n] = s.useState("0"), r = (0, A.mz)(t), u = b(r), p = r?.type === A.PP.GLOBAL, T = (0, l.bG)([g.A], () => g.A.hasFetchedAllSounds()) && null != r && null == u;
         s.useEffect(() => {
             T && (0, _.ND)({
                 location: e
@@ -107,7 +107,7 @@ let N = (0, u.E2)(p.X.ENTRANCE_SOUNDS_SETTING, {
                         className: E.ax
                     })
                 }),
-                children: [(0, i.jsx)(A.A, {
+                children: [(0, i.jsx)(x.A, {
                     sound: u,
                     isGlobal: p,
                     onSelect: n => {

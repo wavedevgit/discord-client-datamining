@@ -1,7 +1,7 @@
 /** chunk id: 313843 params = (module,exports,require) **/
 n.d(t, {
     A: () => v,
-    Q: () => p
+    Q: () => _
 });
 var a = n(627968),
     l = n(64700),
@@ -53,7 +53,7 @@ function f(e) {
         children: l
     })
 }
-let _ = e => {
+let p = e => {
     let {
         rank: t
     } = e;
@@ -73,7 +73,7 @@ let _ = e => {
     })
 };
 
-function p(e) {
+function _(e) {
     let {
         game: t,
         application: n,
@@ -98,9 +98,9 @@ let v = function(e) {
         onScrollStateChange: o
     } = e, {
         isTwoColumn: x
-    } = (0, m.c)(), p = l.useRef(null), v = l.useRef(null), [A, j] = l.useState(!1);
+    } = (0, m.c)(), _ = l.useRef(null), v = l.useRef(null), [A, j] = l.useState(!1);
     l.useEffect(() => {
-        let e = p.current;
+        let e = _.current;
         if (null == e) return;
         let t = e.parentElement;
         for (; null != t;) {
@@ -134,7 +134,7 @@ let v = function(e) {
         children: [(0, a.jsx)(g, {
             game: t
         }), (0, a.jsxs)("div", {
-            ref: p,
+            ref: _,
             className: r()(h.f3, A && h.XP),
             children: [(0, a.jsx)("div", {
                 className: h.OC
@@ -151,7 +151,7 @@ let v = function(e) {
                         variant: "heading-md/semibold",
                         lineClamp: 1,
                         children: C
-                    }), null != t.l30Rank && (0, a.jsx)(_, {
+                    }), null != t.l30Rank && (0, a.jsx)(p, {
                         rank: t.l30Rank
                     })]
                 })]
@@ -173,7 +173,7 @@ let v = function(e) {
                 })
             }), (0, a.jsxs)("div", {
                 className: h.lu,
-                children: [null != t.l30Rank && (0, a.jsx)(_, {
+                children: [null != t.l30Rank && (0, a.jsx)(p, {
                     rank: t.l30Rank
                 }), (0, a.jsx)(s.DZT, {
                     ref: v,

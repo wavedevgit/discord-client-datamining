@@ -14,8 +14,8 @@ var i = n(627968),
     m = n(580630),
     g = n(422936),
     _ = n(234419),
-    x = n(511484),
-    A = n(795269),
+    A = n(511484),
+    x = n(795269),
     h = n(121304),
     p = n(788868),
     T = n(985018),
@@ -180,8 +180,8 @@ let b = e => {
             b = (0, _.V)(),
             C = b?.subscription_trial?.sku_id,
             v = (0, g.O)(),
-            j = null != v && (0, x.U9)(v, p.pe.TIER_2),
-            y = (0, x.N1)(p.gD.PREMIUM_MONTH_TIER_2),
+            j = null != v && (0, A.U9)(v, p.pe.TIER_2),
+            y = (0, A.N1)(p.gD.PREMIUM_MONTH_TIER_2),
             O = `${y}/${(0,u.FJ)(p.WT.MONTH)}`,
             R = (0, u.JM)(p.gD.PREMIUM_MONTH_TIER_0),
             P = (0, u.JM)(p.gD.PREMIUM_MONTH_TIER_2),
@@ -189,7 +189,7 @@ let b = e => {
         if (l) t = null;
         else {
             let e = null != b ? T.intl.string(T.t.IBYG5U) : T.intl.string(T.t.TR2B4T);
-            t = (0, i.jsx)(A.R, {
+            t = (0, i.jsx)(x.R, {
                 className: a()(f.Io, f.SP),
                 text: e
             })

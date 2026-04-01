@@ -21,8 +21,8 @@ let c = "collectibles shop product details modal",
             tab: h,
             giftRecipient: g,
             giftingOrigin: f,
-            cardId: _,
-            sessionId: p,
+            cardId: p,
+            sessionId: _,
             tilePosition: v
         } = e;
         if (t.isCategoryReward) {
@@ -36,8 +36,8 @@ let c = "collectibles shop product details modal",
             } = await Promise.all([n.e("57174"), n.e("91757"), n.e("49924"), n.e("8555"), n.e("91652"), n.e("40396"), n.e("90365"), n.e("28936"), n.e("68859"), n.e("48330"), n.e("92414"), n.e("94857"), n.e("48840"), n.e("49559"), n.e("42006"), n.e("37372"), n.e("41514"), n.e("53662"), n.e("21957"), n.e("85018")]).then(n.bind(n, 929400));
             return n => (0, a.jsx)(i.R9, {
                 newValue: {
-                    cardId: _,
-                    sessionId: p,
+                    cardId: p,
+                    sessionId: _,
                     tilePosition: v
                 },
                 children: (0, a.jsx)(e, {

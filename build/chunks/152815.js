@@ -16,8 +16,8 @@ var s = n(158954),
     m = n(125877),
     g = n(653624),
     _ = n(985018),
-    x = n(276478);
-let A = {
+    A = n(276478);
+let x = {
         Logitech30P: {
             title: g.default.jkdhZq,
             titleParams: {
@@ -56,7 +56,7 @@ let A = {
         }
     },
     p = (e, t) => {
-        let n = A[e.outboundTitle];
+        let n = x[e.outboundTitle];
         return {
             id: e.id,
             partnerId: e.partnerId ?? "",
@@ -73,7 +73,7 @@ let A = {
             partnerId: t,
             transitionState: n,
             onClose: a
-        } = e, r = h[t], [u, A] = (0, l.yK)([d.A], () => {
+        } = e, r = h[t], [u, x] = (0, l.yK)([d.A], () => {
             let {
                 recurring: e,
                 oneTime: n
@@ -93,14 +93,14 @@ let A = {
             transitionState: n,
             onClose: a,
             children: (0, i.jsxs)("div", {
-                className: x.kL,
+                className: A.kL,
                 children: [u.length > 0 && (0, i.jsxs)(i.Fragment, {
                     children: [(0, i.jsx)(s.EYj, {
                         variant: "text-md/medium",
                         color: "text-subtle",
                         children: _.intl.string(g.default["9Y2p6p"])
                     }), (0, i.jsx)("div", {
-                        className: x.kR,
+                        className: A.kR,
                         children: u.map(e => (0, i.jsx)(c.wx, {
                             recurrence: {
                                 ...p(e, f[e.id] ?? null),
@@ -110,15 +110,15 @@ let A = {
                             displayCTAInDedicatedFooter: !0
                         }, e.id))
                     })]
-                }), A.length > 0 && (0, i.jsxs)("div", {
-                    className: x.E7,
+                }), x.length > 0 && (0, i.jsxs)("div", {
+                    className: A.E7,
                     children: [(0, i.jsx)(s.EYj, {
                         variant: "text-md/medium",
                         color: "text-subtle",
                         children: _.intl.string(g.default.Wm58LR)
                     }), (0, i.jsx)("div", {
-                        className: x.kR,
-                        children: A.map(e => (0, i.jsx)(m.$, {
+                        className: A.kR,
+                        children: x.map(e => (0, i.jsx)(m.$, {
                             promotion: p(e, f[e.id] ?? null)
                         }, e.id))
                     })]

@@ -1,6 +1,6 @@
 /** chunk id: 901125 params = (module,exports,require) **/
 n.d(t, {
-    A: () => A
+    A: () => x
 });
 var i = n(627968);
 n(64700);
@@ -15,11 +15,11 @@ var s = n(503698),
     m = n(788868),
     g = n(652215),
     _ = n(985018),
-    x = n(354568);
-let A = e => {
+    A = n(354568);
+let x = e => {
     let t, n, {
             premiumSubscription: s,
-            className: A,
+            className: x,
             textColor: h
         } = e,
         p = (0, u.ar)();
@@ -29,8 +29,8 @@ let A = e => {
     let f = () => (0, o.openUserSettings)(r.X.SUBSCRIPTIONS_PANEL),
         S = (null != T ? c.Ay.getSkuIdForPlan(T.planId) : null) === m.pe.TIER_1;
     return n = null != h ? h : p ? "always-white" : "text-default", (0, i.jsxs)(a.ZpM, {
-        className: l()(x.kL, A, {
-            [x.He]: p
+        className: l()(A.kL, x, {
+            [A.He]: p
         }),
         type: a.ZpM.Types.CUSTOM,
         children: [(0, i.jsx)(a.EpV, {
@@ -38,8 +38,8 @@ let A = e => {
             width: 20,
             height: 20,
             color: "currentColor",
-            className: l()(x.Kk, {
-                [x.Pt]: p
+            className: l()(A.Kk, {
+                [A.Pt]: p
             })
         }), (0, i.jsx)(a.Text, {
             variant: "text-sm/medium",

@@ -14,8 +14,8 @@ var i = n(627968),
     m = n(339048),
     g = n(73825),
     _ = n(974544),
-    x = n(531260),
-    A = n(262077),
+    A = n(531260),
+    x = n(262077),
     h = n(160946),
     p = n(235986),
     T = n(769015),
@@ -90,7 +90,7 @@ function Z() {
 let q = function() {
     var e;
     let t = (0, r.bG)([O.A], () => O.A.getPremiumTypeSubscription()),
-        n = (0, A.A)({
+        n = (0, x.A)({
             subscriptionFilter: e => w.Hy.has(e.status)
         }),
         l = (0, r.bG)([I.default], () => I.default.getCurrentUser()),
@@ -105,7 +105,7 @@ let q = function() {
     }, [k]);
     let K = (0, r.bG)([O.A], () => O.A.getActiveApplicationSubscriptions()?.length ?? 0),
         q = (0, r.bG)([O.A], () => Object.values(O.A.getSubscriptions() ?? {}).filter(e => e.type === F.rzx.GUILD).filter(e => e.status !== F.Dmq.ENDED).length),
-        Q = (0, x.A)({
+        Q = (0, A.A)({
             forceFetch: !0
         }),
         J = (0, G.ds)(),

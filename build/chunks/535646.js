@@ -20,7 +20,7 @@ function m(e) {
         useReducedMotion: m
     }), {
         name: _,
-        header: x
+        header: A
     } = s.useMemo(() => {
         let e = (0, d.Wt)(t);
         return {
@@ -46,7 +46,7 @@ function m(e) {
             children: [(0, i.jsx)("img", {
                 alt: "",
                 "aria-hidden": !0,
-                src: x,
+                src: A,
                 className: u.L_
             }), (0, i.jsx)(a.Text, {
                 className: u._e,

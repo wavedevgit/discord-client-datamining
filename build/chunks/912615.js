@@ -14,8 +14,8 @@ var i = n(627968),
     m = n(147964),
     g = n(985018),
     _ = n(710702),
-    x = n(885106);
-let A = /^\d+$|^$/;
+    A = n(885106);
+let x = /^\d+$|^$/;
 
 function h(e) {
     let {
@@ -29,7 +29,7 @@ function h(e) {
         authorizedApplicationId: m.A.testModeApplicationId,
         authorizationError: m.A.error,
         authorizing: m.A.isFetchingAuthorization
-    })), [f, S] = s.useState(h ?? ""), [E, b] = s.useState("8080"), [C, N] = s.useState("localhost"), v = A.test(f);
+    })), [f, S] = s.useState(h ?? ""), [E, b] = s.useState("8080"), [C, N] = s.useState("localhost"), v = x.test(f);
     async function I() {
         d.SH();
         let e = function(e, t, n) {
@@ -62,7 +62,7 @@ function h(e) {
         onClose: t,
         transitionState: n,
         children: [null == p ? null : (0, i.jsx)("div", {
-            className: x.SX,
+            className: A.SX,
             children: (0, i.jsx)(r.wx6, {
                 type: "critical",
                 children: p

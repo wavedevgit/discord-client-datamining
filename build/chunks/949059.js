@@ -1,6 +1,6 @@
 /** chunk id: 949059 params = (module,exports,require) **/
 n.d(t, {
-    p: () => A
+    p: () => x
 });
 var i = n(311907),
     s = n(506774),
@@ -14,10 +14,10 @@ var i = n(311907),
     m = n(652215),
     g = n(406535),
     _ = n(790782),
-    x = n(985018);
-let A = (0, a.zD)(u.X.EXPERIMENTAL_UNREADS, {
-    useTitle: () => x.intl.string(x.t["k6m/si"]),
-    useSubtitle: () => x.intl.string(x.t.LGynPs),
+    A = n(985018);
+let x = (0, a.zD)(u.X.EXPERIMENTAL_UNREADS, {
+    useTitle: () => A.intl.string(A.t["k6m/si"]),
+    useSubtitle: () => A.intl.string(A.t.LGynPs),
     useValue: () => (0, i.bG)([o.Ay], () => o.Ay.useNewNotifications),
     setValue: function(e) {
         l.A.setAccountFlag(g.i.USE_NEW_NOTIFICATIONS, e), e || (s.w.set("turnedOffNewNotifications", !0), c.default.track(m.HAw.NOTIFICATION_MIGRATION_OPTOUT, {

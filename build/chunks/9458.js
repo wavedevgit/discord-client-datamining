@@ -14,8 +14,8 @@ var i = n(64700),
     m = n(30084),
     g = n(920050),
     _ = n(788868),
-    x = n(985018),
-    A = n(593009),
+    A = n(985018),
+    x = n(593009),
     h = n(714206);
 
 function p(e) {
@@ -24,23 +24,23 @@ function p(e) {
     } = (0, a.A)(), n = t === _.xc.FP_ONLY, s = (0, d.$F)(), p = (0, d.Xb)(), T = s?.status === d.Wo.UPCOMING || n, f = (0, u.N)(s?.id), S = (0, r.z)(), E = (0, c.t)();
     return (0, i.useMemo)(() => {
         let t, i = null != E && E.days <= 30;
-        return null != s ? s.status === d.Wo.UPCOMING ? t = x.intl.formatToPlainString(x.t.a1eKDi, {
+        return null != s ? s.status === d.Wo.UPCOMING ? t = A.intl.formatToPlainString(A.t.a1eKDi, {
             days: E?.days ?? 0
         }) : t = (0, o.T)(s.id, s.tenureReqNumMonths) ?? void 0 : n && (t = (0, o.T)(_.Ac.PREMIUM_TENURE_1_MONTH, 1) ?? void 0), {
             id: g.TENURE_BADGE_CARD_ID,
-            title: null != s ? x.intl.string(s.nameUnformattedNitro) : n ? x.intl.string(x.t.tx9Fvw) : "",
-            pillText: x.intl.string(x.t["jyYgZ+"]),
+            title: null != s ? A.intl.string(s.nameUnformattedNitro) : n ? A.intl.string(A.t.tx9Fvw) : "",
+            pillText: A.intl.string(A.t["jyYgZ+"]),
             primaryAsset: null != f ? T ? f.standard : f.ambientLarge : n ? h : null,
-            primaryAssetClassName: l()(A.p, {
-                [A.n]: T
+            primaryAssetClassName: l()(x.p, {
+                [x.n]: T
             }),
-            caption: null != p ? x.intl.formatToPlainString(x.t.Hu4jfi, {
+            caption: null != p ? A.intl.formatToPlainString(A.t.Hu4jfi, {
                 date: new Date(p)
             }) : void 0,
             description: t,
             subscriptionRequired: !0,
             progress: S ?? void 0,
-            ctaText: x.intl.string(x.t.jVcuVY),
+            ctaText: A.intl.string(A.t.jVcuVY),
             onCtaClick: () => (0, m.D)({
                 analyticsLocations: e
             })

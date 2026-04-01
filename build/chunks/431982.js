@@ -20,8 +20,8 @@ function g(e) {
         titleIcon: g
     } = e, {
         analyticsLocations: _
-    } = (0, a.Ay)(), x = null != n, {
-        userNameplate: A,
+    } = (0, a.Ay)(), A = null != n, {
+        userNameplate: x,
         guildNameplate: h,
         pendingNameplate: p,
         pendingErrors: T
@@ -47,10 +47,10 @@ function g(e) {
                 size: "sm",
                 text: u.intl.string(u.t.BwdeM1),
                 onClick: f
-            }), (void 0 === p ? (x ? h : A) != null : null != p) && (0, i.jsx)(l.Button, {
+            }), (void 0 === p ? (A ? h : x) != null : null != p) && (0, i.jsx)(l.Button, {
                 variant: "secondary",
                 size: "sm",
-                text: x ? u.intl.string(u.t.CHf9iJ) : u.intl.string(u.t["9zwziY"]),
+                text: A ? u.intl.string(u.t.CHf9iJ) : u.intl.string(u.t["9zwziY"]),
                 onClick: S
             })]
         })

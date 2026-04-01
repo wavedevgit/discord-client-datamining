@@ -18,8 +18,8 @@ var i = n(627968),
     m = n(963852),
     g = n(763754),
     _ = n(20851),
-    x = n(544028),
-    A = n(253932),
+    A = n(544028),
+    x = n(253932),
     h = n(780964),
     p = n(840065),
     T = n(123857),
@@ -97,14 +97,14 @@ let N = {
         }
     }),
     R = () => {
-        let e = A.hH.useSetting(),
-            t = A.hD.useSetting(),
-            n = A.rs.useSetting(),
+        let e = x.hH.useSetting(),
+            t = x.hD.useSetting(),
+            n = x.rs.useSetting(),
             {
                 theme: l,
                 messageGroupSpacing: u
-            } = (0, r.cf)([x.A, c.A], () => ({
-                theme: x.A.theme,
+            } = (0, r.cf)([A.A, c.A], () => ({
+                theme: A.A.theme,
                 messageGroupSpacing: c.A.messageGroupSpacing
             })),
             [m] = s.useState(() => I(f.NJ8.DARK)),

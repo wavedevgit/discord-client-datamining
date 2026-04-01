@@ -14,8 +14,8 @@ var i = n(627968),
     m = n(166403),
     g = n(473145),
     _ = n(927578),
-    x = n(311092),
-    A = n(652215),
+    A = n(311092),
+    x = n(652215),
     h = n(788868),
     p = n(985018),
     T = n(143753),
@@ -27,7 +27,7 @@ function S(e) {
         fractionalPremiumState: l
     } = e, d = (0, r.bG)([m.A], () => m.A.getPremiumTypeSubscription()), {
         unappliedSlots: c,
-        numActiveSlots: x
+        numActiveSlots: A
     } = s.useMemo(() => {
         let e = [],
             n = 0;
@@ -36,7 +36,7 @@ function S(e) {
             unappliedSlots: e,
             numActiveSlots: n
         }
-    }, [t]), S = x > (null != d ? _.Ay.getNumIncludedPremiumGuildSubscriptionSlots(d.planId) : 0), b = d?.isPausedOrPausePending === !0 && l === h.xc.NONE;
+    }, [t]), S = A > (null != d ? _.Ay.getNumIncludedPremiumGuildSubscriptionSlots(d.planId) : 0), b = d?.isPausedOrPausePending === !0 && l === h.xc.NONE;
     return 0 === c.length ? null : (0, i.jsxs)("div", {
         className: T.Nr,
         children: [(0, i.jsxs)("div", {
@@ -90,10 +90,10 @@ function S(e) {
                                 t.onClose(), (0, u.g)({
                                     analyticsLocations: [],
                                     analyticsLocation: {
-                                        page: A.liQ.GUILD_BOOSTING_USER_SETTINGS,
-                                        section: A.JJy.SETTINGS_PREMIUM,
-                                        object: A.ZSU.BUTTON_CTA,
-                                        objectType: A.AnalyticsObjectTypes.BUY
+                                        page: x.liQ.GUILD_BOOSTING_USER_SETTINGS,
+                                        section: x.JJy.SETTINGS_PREMIUM,
+                                        object: x.ZSU.BUTTON_CTA,
+                                        objectType: x.AnalyticsObjectTypes.BUY
                                     },
                                     guild: e
                                 })
@@ -123,15 +123,15 @@ function E(e) {
             modificationsDisabled: g
         } = e,
         _ = s.useRef(null),
-        A = s.useMemo(() => null != n.cooldownEndsAt ? new Date(n.cooldownEndsAt) : null, [n.cooldownEndsAt]);
+        x = s.useMemo(() => null != n.cooldownEndsAt ? new Date(n.cooldownEndsAt) : null, [n.cooldownEndsAt]);
     t = u && null != m ? (0, i.jsx)(o.Text, {
         variant: "text-sm/medium",
         color: "text-subtle",
         children: p.intl.format(p.t.Z4ULRD, {
             date: m.currentPeriodEnd
         })
-    }) : n.isOnCooldown() && null != A ? (0, i.jsx)(x.A, {
-        cooldown: A.getTime()
+    }) : n.isOnCooldown() && null != x ? (0, i.jsx)(A.A, {
+        cooldown: x.getTime()
     }) : (0, i.jsx)(o.Text, {
         variant: "text-sm/medium",
         color: "text-subtle",

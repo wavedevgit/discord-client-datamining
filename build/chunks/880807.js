@@ -16,7 +16,7 @@ let g = function(e) {
     let {
         canAddBoosts: t,
         canApplyBoosts: n
-    } = e, g = (0, l.bG)([r.A], () => r.A.affinities), _ = (0, l.bG)([o.Ay], () => o.Ay.getFlattenedGuildIds()), x = s.useMemo(() => {
+    } = e, g = (0, l.bG)([r.A], () => r.A.affinities), _ = (0, l.bG)([o.Ay], () => o.Ay.getFlattenedGuildIds()), A = s.useMemo(() => {
         let e = g.slice(0, 3).map(e => e.guildId);
         for (let t = 0; t < _.length && !(e.length >= 3); t++) {
             let n = _[t];
@@ -24,13 +24,13 @@ let g = function(e) {
         }
         return e
     }, [g, _]);
-    return 0 === x.length ? null : (0, i.jsxs)("div", {
+    return 0 === A.length ? null : (0, i.jsxs)("div", {
         className: m.iE,
         children: [t && (0, i.jsx)(a.Heading, {
             variant: "heading-lg/semibold",
             className: m.wx,
             children: u.intl.string(u.t.r90Wgo)
-        }), x.map(e => (0, i.jsx)(c.A, {
+        }), A.map(e => (0, i.jsx)(c.A, {
             className: m.ZS,
             guildId: e,
             boostingVariant: !0

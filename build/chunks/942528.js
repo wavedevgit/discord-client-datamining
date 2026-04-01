@@ -16,8 +16,8 @@ var a = n(627968),
     h = n(322789),
     g = n(506326),
     f = n(985018),
-    _ = n(504225),
-    p = n(282063);
+    p = n(504225),
+    _ = n(282063);
 let v = e => {
     let {
         entry: t,
@@ -28,17 +28,17 @@ let v = e => {
         customCTA: j,
         popoutClassname: E,
         popoutPosition: C = "right"
-    } = e, I = l.useRef(null), N = (0, s.bG)([d.A, o.A], () => o.A.getChannel(d.A.getChannelId())), b = (0, s.bG)([u.default], () => u.default.getUser(t.author_id)), {
+    } = e, I = l.useRef(null), b = (0, s.bG)([d.A, o.A], () => o.A.getChannel(d.A.getChannelId())), N = (0, s.bG)([u.default], () => u.default.getUser(t.author_id)), {
         nick: S,
         avatar: T
     } = l.useMemo(() => {
-        let e = b?.getAvatarURL(N?.guild_id, 48, !1);
+        let e = N?.getAvatarURL(b?.guild_id, 48, !1);
         return {
-            nick: m.Ay.getName(N?.guild_id, N?.id, b),
+            nick: m.Ay.getName(b?.guild_id, b?.id, N),
             avatar: e
         }
-    }, [b, N]);
-    return null == b ? null : (0, a.jsx)(c.YNO, {
+    }, [N, b]);
+    return null == N ? null : (0, a.jsx)(c.YNO, {
         targetElementRef: I,
         position: C,
         renderPopout: e => {
@@ -68,7 +68,7 @@ let v = e => {
         children: e => (0, a.jsx)(c.DUT, {
             innerRef: I,
             ...e,
-            className: _.GA,
+            className: p.GA,
             children: (0, a.jsx)(c.vN3, {
                 offset: {
                     top: 4,
@@ -78,15 +78,15 @@ let v = e => {
                 },
                 children: (0, a.jsxs)(a.Fragment, {
                     children: [(0, a.jsx)("img", {
-                        className: _.my,
+                        className: p.my,
                         src: T,
                         alt: f.intl.formatToPlainString(f.t.IzVXxY, {
                             userName: S
                         })
                     }), (0, a.jsx)("div", {
-                        className: _.Su,
+                        className: p.Su,
                         children: (0, a.jsxs)("div", {
-                            className: r()(p.fi, p.Kt),
+                            className: r()(_.fi, _.Kt),
                             children: [(0, a.jsx)(c.Text, {
                                 variant: "text-md/medium",
                                 color: "text-strong",
@@ -100,7 +100,7 @@ let v = e => {
                             })]
                         })
                     }), null != j ? j : (0, a.jsx)("div", {
-                        className: _.Br,
+                        className: p.Br,
                         children: (0, a.jsx)(c.W4J, {
                             size: "sm"
                         })

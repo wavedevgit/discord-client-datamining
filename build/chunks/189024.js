@@ -14,8 +14,8 @@ var i = n(627968),
     m = n(793574),
     g = n(688810),
     _ = n(562819),
-    x = n(793943),
-    A = n(259065),
+    A = n(793943),
+    x = n(259065),
     h = n(95035),
     p = n(532794),
     T = n(829219),
@@ -71,7 +71,7 @@ function ei() {
     } = (0, E.zW)(ec), eg = (0, s.useCallback)(() => {
         (0, j.openUserSettings)(v.X.PROFILE_PANEL, {
             analyticsLocations: e
-        }, () => (0, A.L)({
+        }, () => (0, x.L)({
             analyticsLocations: e
         }))
     }, [e]), e_ = (0, s.useCallback)(() => {
@@ -80,10 +80,10 @@ function ei() {
         }, () => (0, _.L)({
             analyticsLocations: e
         }))
-    }, [e]), ex = (0, s.useCallback)(() => {
+    }, [e]), eA = (0, s.useCallback)(() => {
         let e = (0, I.Ci)("openCustomAppSettings") ? v.X.DISPLAY_IN_APP_ICON_CATEGORY : v.X.APPEARANCE_IN_APP_ICON;
         (0, j.openUserSettings)(e)
-    }, []), eA = (0, s.useCallback)(() => {
+    }, []), ex = (0, s.useCallback)(() => {
         null != ec && (ec.userStatus?.enrolledAt == null ? (0, T.Oy)(ec.id, {
             questContent: S.uF.NITRO_HOME_PERK_CARD,
             questContentCTA: b.Cy.START_QUEST,
@@ -152,7 +152,7 @@ function ei() {
                 pillText: Y.intl.string(z.default["3rpSiP"]),
                 primaryAsset: (0, r.Mw)(ei) ? et.A : ee.A,
                 ctaText: Y.intl.string(e ? z.default.QBfwzW : z.default["1Ng1ci"]),
-                onCtaClick: eA
+                onCtaClick: ex
             }
         }
         let s = [n, el ? {
@@ -233,7 +233,7 @@ function ei() {
                 primaryAsset: en.A,
                 ctaText: Y.intl.string(Y.t.jVcuVY),
                 onCtaClick: () => {
-                    (0, x.nf)(x.HP.CUSTOM_THEME)
+                    (0, A.nf)(A.HP.CUSTOM_THEME)
                 }
             }, {
                 id: k.PERMADECOS_CARD_ID,
@@ -251,10 +251,10 @@ function ei() {
                 description: Y.intl.string(Y.t["1uPk1Z"]),
                 primaryAsset: q.A,
                 ctaText: Y.intl.string(Y.t.y9TxXV),
-                onCtaClick: ex
+                onCtaClick: eA
             }],
             a = (s = s.filter(e => null != e))[0].featured,
             d = a ? 5 : 6;
         return s.splice(+!!a, 0, eT), s.length > d && s.splice(d, s.length - d), s
-    }, [eT, ec, ei, eA, es, ea, er, eS, ef, e, eg, ex, e_, ep, eu, t, el])
+    }, [eT, ec, ei, ex, es, ea, er, eS, ef, e, eg, eA, e_, ep, eu, t, el])
 }

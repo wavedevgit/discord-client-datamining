@@ -14,8 +14,8 @@ var i = n(627968),
     m = n(287809),
     g = n(975571),
     _ = n(474090),
-    x = n(181079),
-    A = n(422258),
+    A = n(181079),
+    x = n(422258),
     h = n(668267),
     p = n(93055),
     T = n(652215),
@@ -57,14 +57,14 @@ function C() {
 }
 
 function N() {
-    let e = (0, l.bG)([x.A], () => x.A.favoriteGuildEnabled),
+    let e = (0, l.bG)([A.A], () => A.A.favoriteGuildEnabled),
         t = (0, l.bG)([m.default], () => {
             let e = m.default.getCurrentUser();
             return null != e && _.Ay.isPremiumExactly(e, f.PremiumTypes.TIER_2)
         }),
         n = (0, p.DZ)(),
         r = s.useCallback(e => {
-            (0, A.tV)(e, "settings_page"), !e && n && (0, c.pX)(T.BVt.ME)
+            (0, x.tV)(e, "settings_page"), !e && n && (0, c.pX)(T.BVt.ME)
         }, [n]);
     return t ? (0, i.jsx)(a.dOG, {
         checked: e,

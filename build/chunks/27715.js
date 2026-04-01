@@ -17,9 +17,9 @@ var c = n(780964),
 n(505653), n(106148), n(650832);
 var g = n(652215),
     _ = n(985018),
-    x = n(252272);
+    A = n(252272);
 
-function A(e) {
+function x(e) {
     let {
         applications: t
     } = e, n = s.useMemo(() => t.sort((e, t) => d.default.compare(t.id, e.id)), [t]), o = s.useMemo(() => {
@@ -60,13 +60,13 @@ function A(e) {
                 children: (0, i.jsx)("img", {
                     src: c,
                     "aria-label": o,
-                    className: x.Kk
+                    className: A.Kk
                 })
             }, d))
         }
         let t = n.length - 3;
         return t > 0 && e.push((0, i.jsx)("div", {
-            className: x.lK,
+            className: A.lK,
             children: (0, i.jsx)(a.Text, {
                 variant: "text-xs/medium",
                 color: "text-default",
@@ -75,9 +75,9 @@ function A(e) {
         }, "omitted")), e
     }, [n]);
     return (0, i.jsxs)("div", {
-        className: x.wx,
+        className: A.wx,
         children: [(0, i.jsxs)("div", {
-            className: x.kX,
+            className: A.kX,
             children: [(0, i.jsx)(a.Text, {
                 variant: "text-md/normal",
                 color: "text-strong",
@@ -86,7 +86,7 @@ function A(e) {
                 onClick: () => {
                     (0, m.openUserSettings)(c.X.AUTHORIZED_APPS_PANEL)
                 },
-                className: x.bJ,
+                className: A.bJ,
                 children: [(0, i.jsx)(a.Text, {
                     variant: "text-xs/normal",
                     color: "interactive-text-default",
@@ -94,13 +94,13 @@ function A(e) {
                 }), (0, i.jsx)(a._BQ, {
                     size: "xxs",
                     color: a.LU0.colors.INTERACTIVE_TEXT_DEFAULT,
-                    className: x.g7
+                    className: A.g7
                 })]
             })]
         }), (0, i.jsx)("div", {
-            className: x.yF
+            className: A.yF
         }), (0, i.jsx)("div", {
-            className: x.lJ,
+            className: A.lJ,
             children: u
         })]
     })
@@ -108,11 +108,11 @@ function A(e) {
 
 function h() {
     return (0, i.jsxs)("div", {
-        className: x.do,
+        className: A.do,
         children: [(0, i.jsx)(a.Text, {
             variant: "text-md/medium",
             color: "text-strong",
-            className: x.xV,
+            className: A.xV,
             children: _.intl.string(_.t["+0U77d"])
         }), (0, i.jsx)(a.Text, {
             variant: "text-sm/normal",
@@ -128,7 +128,7 @@ function p(e) {
     let {
         applications: t
     } = e;
-    return t.length > 0 ? (0, i.jsx)(A, {
+    return t.length > 0 ? (0, i.jsx)(x, {
         applications: t
     }) : (0, i.jsx)(h, {})
 }

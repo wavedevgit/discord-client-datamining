@@ -15,8 +15,8 @@ var i = n(627968),
     m = n(793574),
     g = n(688810),
     _ = n(726649),
-    x = n(611924),
-    A = n(961250),
+    A = n(611924),
+    x = n(961250),
     h = n(320118),
     p = n(622543),
     T = n(576622),
@@ -46,12 +46,12 @@ let w = "perk",
         } = e, n = (0, E.ds)(), l = (0, r.zy)();
         s.useEffect(() => {
             u.h.wait(async () => {
-                let e = [(0, A.Ay)()];
+                let e = [(0, x.Ay)()];
                 null != t && e.push((0, T.A)(t)), await Promise.all(e)
             })
         }, [t]), s.useEffect(() => {
             Q(!0)
-        }, []), (0, C.j)(), (0, x.P)(_.b);
+        }, []), (0, C.j)(), (0, A.P)(_.b);
         let V = s.useRef(null),
             B = s.useRef(null),
             F = (0, o.bG)([f.A], () => f.A.getPremiumTypeSubscription()),

@@ -15,8 +15,8 @@ var s = n(311907),
     m = n(852218),
     g = n(783420),
     _ = n(811611),
-    x = n(788868),
-    A = n(652215),
+    A = n(788868),
+    x = n(652215),
     h = n(755157),
     p = n(985018),
     T = n(239500),
@@ -62,12 +62,12 @@ function S() {
                     variant: "text-sm/medium",
                     children: p.intl.format(null != S ? h.default["PyQY5+"] : h.default.SvqMnV, {
                         date: n.endDate,
-                        helpCenterLink: c.A.getArticleURL(A.MVz.NITRO_CONTROL_CAMPAIGN)
+                        helpCenterLink: c.A.getArticleURL(x.MVz.NITRO_CONTROL_CAMPAIGN)
                     })
                 }), (0, i.jsx)("div", {
                     className: T.lO,
                     children: (0, i.jsx)(g.A, {
-                        subscriptionTier: x.pe.TIER_2,
+                        subscriptionTier: A.pe.TIER_2,
                         children: e => {
                             let {
                                 onClick: t

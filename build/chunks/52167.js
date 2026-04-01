@@ -15,8 +15,8 @@ var i = n(417597),
 n(652215);
 var g = n(355097),
     _ = n(985018),
-    x = n(420643),
-    A = n(755165),
+    A = n(420643),
+    x = n(755165),
     h = n(542838),
     p = n(9523),
     T = n(416999),
@@ -58,7 +58,7 @@ let U = (e, t, n) => (0, s.Mw)(e) ? t : n,
             badgeAlt: {
                 title: _.intl.string(_.t["5cYMu0"]),
                 description: _.intl.string(_.t.vxk9va),
-                imageSource: U(s, x, A),
+                imageSource: U(s, A, x),
                 imageClassName: t.badgeNewImage
             },
             clientThemes: {

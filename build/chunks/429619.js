@@ -1,6 +1,6 @@
 /** chunk id: 429619 params = (module,exports,require) **/
 n.d(t, {
-    A: () => A
+    A: () => x
 });
 var i = n(627968),
     s = n(64700),
@@ -14,13 +14,13 @@ var i = n(627968),
     m = n(652215),
     g = n(788868),
     _ = n(985018),
-    x = n(378926);
-let A = () => {
+    A = n(378926);
+let x = () => {
     let {
         analyticsLocations: e
     } = (0, r.Ay)(a.A.COLLECTIBLES_PROFILE_SETTINGS_UPSELL), t = s.useRef(null), {
         asset: n,
-        popoutAsset: A,
+        popoutAsset: x,
         title: h,
         body: p,
         version: T,
@@ -34,25 +34,25 @@ let A = () => {
         })
     }, [e, T]), (0, i.jsxs)("div", {
         ref: t,
-        className: x.kL,
+        className: A.kL,
         style: {
             backgroundImage: `url(${n})`
         },
         children: [(0, i.jsx)("div", {
-            className: x.JS,
+            className: A.JS,
             "aria-hidden": !0,
             role: "presentation",
             children: (0, i.jsx)("img", {
-                src: A,
-                className: x.Qw,
+                src: x,
+                className: A.Qw,
                 alt: ""
             })
         }), (0, i.jsxs)("div", {
-            className: x.Em,
+            className: A.Em,
             children: [(0, i.jsx)(l.Heading, {
                 variant: "heading-lg/extrabold",
                 color: f ? "text-overlay-dark" : "currentColor",
-                className: x.DD,
+                className: A.DD,
                 children: h
             }), (0, i.jsx)(l.Text, {
                 variant: "text-sm/normal",

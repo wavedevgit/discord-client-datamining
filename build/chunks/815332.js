@@ -22,8 +22,8 @@ function g(e) {
         analyticsLocations: g
     } = (0, d.Ay)(o.A.PENDING_PLAN_CHANGE_NOTICE), {
         resetRenewalMutation: _,
-        submitting: x,
-        error: A
+        submitting: A,
+        error: x
     } = (e => {
         let [t, n] = s.useState(!1), [i, l] = s.useState(null);
         return {
@@ -65,9 +65,9 @@ function g(e) {
             nextListing: T.name,
             changeDate: f
         }),
-        error: A?.message,
+        error: x?.message,
         onClick: () => _(n),
-        submitting: x,
+        submitting: A,
         ctaMessage: m.intl.string(m.t.De4wI8),
         className: l
     })

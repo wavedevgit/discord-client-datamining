@@ -1,6 +1,6 @@
 /** chunk id: 612714 params = (module,exports,require) **/
 n.d(t, {
-    A: () => x
+    A: () => A
 });
 var i = n(627968),
     s = n(64700),
@@ -15,10 +15,10 @@ var i = n(627968),
     g = n(985018),
     _ = n(27671);
 
-function x(e) {
+function A(e) {
     let t, n, {
-            currentUser: x,
-            togglingSMS: A
+            currentUser: A,
+            togglingSMS: x
         } = e,
         [h, p] = s.useState(!1),
         T = s.useCallback(e => {
@@ -38,10 +38,10 @@ function x(e) {
             f()
         }, [f]),
         E = s.useCallback(() => {
-            null == x.phone ? f({
+            null == A.phone ? f({
                 onAddedPhone: a.A.enableSMS
             }) : a.A.enableSMS()
-        }, [x, f]),
+        }, [A, f]),
         b = s.useCallback(() => {
             (0, l.qfG)(e => (0, i.jsx)(o.default, {
                 ...e,
@@ -51,10 +51,10 @@ function x(e) {
             }))
         }, []),
         C = s.useCallback(e => null == e ? "" : `${"*".repeat(e.length-4)}${e.slice(-4)}`, []),
-        N = null != x.phone,
-        v = x.hasFlag(u.nhx.MFA_SMS);
+        N = null != A.phone,
+        v = A.hasFlag(u.nhx.MFA_SMS);
     if (N || v) {
-        let e = h ? x.phone : C(x.phone);
+        let e = h ? A.phone : C(A.phone);
         n = (0, i.jsxs)(l.Text, {
             variant: "text-sm/normal",
             children: [g.intl.format(g.t.PXVoEO, {
@@ -70,11 +70,11 @@ function x(e) {
         variant: "critical-secondary",
         size: "sm",
         text: g.intl.string(g.t.KLWnit),
-        loading: A,
+        loading: x,
         onClick: b
     });
     else {
-        let e = (0, c.B)(x);
+        let e = (0, c.B)(A);
         t = (0, i.jsxs)(l.ButtonGroup, {
             size: "sm",
             children: [(0, i.jsx)(l.Button, {
@@ -82,7 +82,7 @@ function x(e) {
                 size: "sm",
                 text: e ?? g.intl.string(g.t.DZQe23),
                 onClick: E,
-                loading: A,
+                loading: x,
                 disabled: null != e
             }), N ? (0, i.jsx)(l.Button, {
                 variant: "secondary",

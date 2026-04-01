@@ -17,8 +17,8 @@ var a = n(627968),
     h = n(486020),
     g = n(240248),
     f = n(409626),
-    _ = n(305080),
-    p = n(652215),
+    p = n(305080),
+    _ = n(652215),
     v = n(985018),
     A = n(282063),
     j = n(682209),
@@ -30,7 +30,7 @@ function C(e) {
         trackAction: n,
         onInviteResolved: i,
         closeModal: g
-    } = e, [_, E] = l.useState(), C = (0, c.bG)([x.A], () => _?.guild?.id != null && x.A.isMember(_?.guild?.id)), I = l.useMemo(() => t.websites?.find(e => {
+    } = e, [p, E] = l.useState(), C = (0, c.bG)([x.A], () => p?.guild?.id != null && x.A.isMember(p?.guild?.id)), I = l.useMemo(() => t.websites?.find(e => {
         let {
             category: t
         } = e;
@@ -40,25 +40,25 @@ function C(e) {
         let e = async e => {
             let t = e.split("/").pop();
             if (null != t) {
-                if (null != _ && _.code.toLowerCase() === t.toLowerCase()) return;
+                if (null != p && p.code.toLowerCase() === t.toLowerCase()) return;
                 let e = await (0, m.A)(t);
                 !0 !== e.banned && (E(e.invite), null != e.invite && i?.(e.invite))
             }
         };
         null != I && e(I.url)
-    }, [I, i, _]);
-    let N = l.useCallback(() => {
-        null != _ && (n(f.Ws.JoinOfficialServer), g(), d.h.dispatch({
+    }, [I, i, p]);
+    let b = l.useCallback(() => {
+        null != p && (n(f.Ws.JoinOfficialServer), g(), d.h.dispatch({
             type: "INVITE_MODAL_OPEN",
-            invite: _,
-            code: _.code,
-            context: p.BRT.APP
+            invite: p,
+            code: p.code,
+            context: _.BRT.APP
         }))
-    }, [_, n, g]);
-    if (null == _ || null == _.guild || !_.guild.features.includes(p.GuildFeatures.VERIFIED)) return null;
-    let b = h.Ay.getGuildIconURL({
-        id: _.guild.id,
-        icon: _.guild.icon,
+    }, [p, n, g]);
+    if (null == p || null == p.guild || !p.guild.features.includes(_.GuildFeatures.VERIFIED)) return null;
+    let N = h.Ay.getGuildIconURL({
+        id: p.guild.id,
+        icon: p.guild.icon,
         size: 32
     });
     return (0, a.jsxs)("div", {
@@ -72,9 +72,9 @@ function C(e) {
             className: r()(A.nM, A.mX),
             children: [(0, a.jsx)("img", {
                 className: j.$f,
-                src: b,
+                src: N,
                 alt: v.intl.formatToPlainString(v.t.xm6W9D, {
-                    guildName: _.guild.name
+                    guildName: p.guild.name
                 })
             }), (0, a.jsxs)("div", {
                 className: j.U5,
@@ -82,23 +82,23 @@ function C(e) {
                     className: j.YS,
                     children: [(0, a.jsx)(o.Text, {
                         variant: "text-sm/semibold",
-                        children: _.guild.name
+                        children: p.guild.name
                     }), (0, a.jsx)(u.A, {
-                        guild: _.guild,
+                        guild: p.guild,
                         size: 16
                     })]
-                }), null != _.approximate_member_count && (0, a.jsx)(o.Text, {
+                }), null != p.approximate_member_count && (0, a.jsx)(o.Text, {
                     variant: "text-xxs/normal",
                     color: "text-muted",
                     children: v.intl.format(v.t.zRl6XR, {
-                        count: _.approximate_member_count
+                        count: p.approximate_member_count
                     })
                 })]
             })]
         }), (0, a.jsx)(o.Button, {
             variant: "secondary",
             text: C ? v.intl.string(v.t.cEnaWx) : v.intl.string(v.t.XpeFYr),
-            onClick: N,
+            onClick: b,
             fullWidth: !0
         })]
     })
@@ -113,15 +113,15 @@ function I(e) {
         hasAlreadyLinked: r,
         officialInvite: s,
         isMember: c
-    } = (0, _.c)(), m = l.useCallback(() => {
+    } = (0, p.c)(), m = l.useCallback(() => {
         null != s && (t(f.Ws.JoinOfficialServer), n(), d.h.dispatch({
             type: "INVITE_MODAL_OPEN",
             invite: s,
             code: s.code,
-            context: p.BRT.APP
+            context: _.BRT.APP
         }))
     }, [s, t, n]);
-    if (null == s || null == s.guild || !s.guild.features.includes(p.GuildFeatures.VERIFIED)) return null;
+    if (null == s || null == s.guild || !s.guild.features.includes(_.GuildFeatures.VERIFIED)) return null;
     let x = h.Ay.getGuildIconURL({
             id: s.guild.id,
             icon: s.guild.icon,
@@ -141,7 +141,7 @@ function I(e) {
             draggable: !1
         }),
         I = j ? E.To : E.Kt,
-        N = j ? E.yj : E.FS;
+        b = j ? E.yj : E.FS;
     return (0, a.jsxs)("div", {
         className: E.uW,
         children: [(0, a.jsx)(o.Heading, {
@@ -167,7 +167,7 @@ function I(e) {
                             children: C
                         })
                     }), (0, a.jsxs)("div", {
-                        className: N,
+                        className: b,
                         children: [(0, a.jsxs)("div", {
                             className: E.YS,
                             children: [(0, a.jsx)(u.A, {

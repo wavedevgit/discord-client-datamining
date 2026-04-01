@@ -12,17 +12,17 @@ var i = n(735438),
     c = n(350535),
     u = n(652215),
     m = n(672396);
-let g = x(null);
+let g = A(null);
 
 function _() {
     var e;
-    let t = x(g);
+    let t = A(g);
     e = g, s().isEqual(s().omit(t, "old_enabled"), s().omit(e, "old_enabled")) || (d.default.track(u.HAw.OVERLAY_SETTINGS_UPDATED, {
         ...t
     }), g = t)
 }
 
-function x(e) {
+function A(e) {
     let t = o.default.getNotificationPositionMode(),
         n = t !== u.G6Q.DISABLED,
         i = a.Ay.getOverlayKeybind(),

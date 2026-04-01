@@ -14,8 +14,8 @@ var i = n(627968),
     m = n(53719),
     g = n(390370),
     _ = n(191627),
-    x = n(842130),
-    A = n(985018),
+    A = n(842130),
+    x = n(985018),
     h = n(967082);
 
 function p(e) {
@@ -67,16 +67,16 @@ function p(e) {
             className: h.o1,
             children: l ? (0, i.jsx)(m.A, {
                 icon: o.PGe,
-                tooltip: A.intl.string(x.default.e5iHmZ),
+                tooltip: x.intl.string(A.default.e5iHmZ),
                 onClick: E
             }) : (0, i.jsxs)(i.Fragment, {
                 children: [p ? null : (0, i.jsx)(m.A, {
                     icon: o.A9s,
-                    tooltip: A.intl.string(x.default.krWQZK),
+                    tooltip: x.intl.string(A.default.krWQZK),
                     onClick: f
                 }), (0, i.jsx)(m.A, {
                     icon: o.PGe,
-                    tooltip: A.intl.string(x.default.bBDeNI),
+                    tooltip: x.intl.string(A.default.bBDeNI),
                     onClick: S
                 })]
             })

@@ -1,6 +1,6 @@
 /** chunk id: 540237 params = (module,exports,require) **/
 n.d(t, {
-    A: () => x
+    A: () => A
 });
 var i = n(627968),
     s = n(64700),
@@ -15,7 +15,7 @@ var i = n(627968),
     g = n(584916),
     _ = n(513653);
 
-function x() {
+function A() {
     let e = c.hH.useSetting(),
         [t] = s.useState(() => {
             let e = (0, a.rh)({

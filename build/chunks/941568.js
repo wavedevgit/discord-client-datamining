@@ -16,8 +16,8 @@ var a = n(627968),
     h = n(21091),
     g = n(385064),
     f = n(305080),
-    _ = n(954506),
-    p = n(985018),
+    p = n(954506),
+    _ = n(985018),
     v = n(95225),
     A = n(782691);
 
@@ -36,12 +36,12 @@ function E(e) {
         message: n,
         channelId: i,
         onCardClick: o
-    } = e, [u, m] = l.useState(!1), x = null != n.mediaUrl, h = "video" === n.mediaType, g = "main" === t, f = l.useCallback(() => m(!0), []), _ = l.useCallback(e => {
+    } = e, [u, m] = l.useState(!1), x = null != n.mediaUrl, h = "video" === n.mediaType, g = "main" === t, f = l.useCallback(() => m(!0), []), p = l.useCallback(e => {
         if (!((0, s.vq)(e.target, HTMLAnchorElement) || (0, s.vq)(e.target, HTMLSpanElement) && (0, s.vq)(e.target.parentElement, HTMLAnchorElement))) return o(n.id)
     }, [o, n.id]);
     return (0, a.jsxs)(c.DUT, {
         className: g ? v.cG : v.IU,
-        onClick: _,
+        onClick: p,
         children: [x && (0, a.jsxs)("div", {
             className: g ? v._v : v.eZ,
             children: [h ? (0, a.jsx)(d.A, {
@@ -121,9 +121,9 @@ function C(e) {
     if (null == m || 0 === c.length) return null;
     let C = 2 !== c.length,
         I = C ? c[0] : null,
-        N = C ? c.slice(1) : c;
-    return (0, a.jsx)(_.A, {
-        title: p.intl.string(p.t.B0BV3Y),
+        b = C ? c.slice(1) : c;
+    return (0, a.jsx)(p.A, {
+        title: _.intl.string(_.t.B0BV3Y),
         onClickViewAll: A,
         children: (0, a.jsxs)("div", {
             className: v.f3,
@@ -132,9 +132,9 @@ function C(e) {
                 message: I,
                 channelId: m,
                 onCardClick: j
-            }), N.length > 0 && (0, a.jsx)(u.A, {
+            }), b.length > 0 && (0, a.jsx)(u.A, {
                 gap: 16,
-                children: N.map(e => (0, a.jsx)(E, {
+                children: b.map(e => (0, a.jsx)(E, {
                     variant: "small",
                     message: e,
                     channelId: m,

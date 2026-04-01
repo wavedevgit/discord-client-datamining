@@ -1,6 +1,6 @@
 /** chunk id: 570874 params = (module,exports,require) **/
 n.d(t, {
-    q: () => x
+    q: () => A
 });
 var i = n(419954),
     s = n(780964),
@@ -14,7 +14,7 @@ var i = n(419954),
     m = n(794145),
     g = n(404096),
     _ = n(985018);
-let x = (0, i.zZ)(s.X.CONTENT_AND_SOCIAL_PERMISSIONS_CATEGORY, {
+let A = (0, i.zZ)(s.X.CONTENT_AND_SOCIAL_PERMISSIONS_CATEGORY, {
     useTitle: () => _.intl.string(_.t.eYaT7L),
     useInlineNotice: function() {
         let e = (0, o.I)(),

@@ -1,7 +1,7 @@
 /** chunk id: 608416 params = (module,exports,require) **/
 n.d(t, {
     $G: () => c,
-    Ay: () => x,
+    Ay: () => A,
     MN: () => _,
     Mp: () => u,
     XN: () => m,
@@ -17,7 +17,7 @@ let c = 3e3,
     m = 6e3;
 var g = ((i = {}).SINE = "sine", i.COSINE = "cosine", i),
     _ = ((s = {}).UP = "up", s.DOWN = "down", s);
-let x = e => {
+let A = e => {
     let {
         blurAnimationData: t,
         scaleAnimationData: n,
@@ -40,12 +40,12 @@ let x = e => {
         loop: !0
     } : {
         y: 0
-    }), x = i?.path === "sine" ? Math.sin : Math.cos, [A, h] = (0, a.useState)(1), p = (0, o.zhh)(null != n ? {
+    }), A = i?.path === "sine" ? Math.sin : Math.cos, [x, h] = (0, a.useState)(1), p = (0, o.zhh)(null != n ? {
         from: {
-            scale: A > 0 ? n.startScale : n.endScale
+            scale: x > 0 ? n.startScale : n.endScale
         },
         to: {
-            scale: A > 0 ? n.endScale : n.startScale
+            scale: x > 0 ? n.endScale : n.startScale
         },
         config: {
             duration: n.duration * m
@@ -80,7 +80,7 @@ let x = e => {
         style: {
             transform: _.y?.to(e => {
                 if (null == i) return "translateY(0px)";
-                let t = x(e * Math.PI * 2) * i.range,
+                let t = A(e * Math.PI * 2) * i.range,
                     n = 0;
                 if (null != s) {
                     let e = s.range * (1 - s.containerVisibilityPercentage);

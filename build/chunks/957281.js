@@ -1,6 +1,6 @@
 /** chunk id: 957281 params = (module,exports,require) **/
 n.d(t, {
-    c: () => x
+    c: () => A
 });
 var i = n(627968),
     s = n(503698),
@@ -29,7 +29,7 @@ function _() {
         })
     })
 }
-let x = () => {
+let A = () => {
     let {
         robloxSubgameHistory: e,
         overrideExePaths: t

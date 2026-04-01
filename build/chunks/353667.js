@@ -14,8 +14,8 @@ var i = n(627968),
     m = n(823092),
     g = n(963935),
     _ = n(894858),
-    x = n(272053),
-    A = n(397274),
+    A = n(272053),
+    x = n(397274),
     h = n(641324),
     p = n(46373),
     T = n(32145);
@@ -80,7 +80,7 @@ function E(e) {
         children: (0, i.jsx)(d.GtU, {
             className: T.XG,
             ref: e => {
-                A.A.setPanelScrollerRef(e)
+                x.A.setPanelScrollerRef(e)
             },
             children: (0, i.jsx)("div", {
                 className: T.nd,
@@ -141,7 +141,7 @@ function C(e) {
             className: T.$H,
             selectedItem: r,
             onItemSelect: e => {
-                x.A.navigate(e, {
+                A.A.navigate(e, {
                     onTransitionStart: () => {
                         let t = n.find(t => t.key === e);
                         t?.onItemSelect?.()

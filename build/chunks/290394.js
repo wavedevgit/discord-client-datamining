@@ -1,6 +1,6 @@
 /** chunk id: 290394 params = (module,exports,require) **/
 n.d(t, {
-    A: () => x
+    A: () => A
 });
 var i = n(627968),
     s = n(64700),
@@ -17,7 +17,7 @@ let _ = a().debounce(e => {
     (0, c.zU)(e)
 }, 250);
 
-function x() {
+function A() {
     let e = (0, o.bG)([u.A], () => u.A.speechRate);
     return (0, i.jsxs)(d.BJc, {
         gap: 16,
@@ -43,11 +43,11 @@ function x() {
                 color: "text-feedback-positive",
                 children: "x1.0"
             }) : e % 1 == 0 ? "" : void 0
-        }), (0, i.jsx)(A, {})]
+        }), (0, i.jsx)(x, {})]
     })
 }
 
-function A() {
+function x() {
     let [e, t] = s.useState(!1);
     return (0, r.l0)(() => (0, c.pr)()), (0, i.jsx)(d.Button, {
         text: g.intl.string(g.t.SKNnqq),
