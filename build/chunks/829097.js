@@ -1,10 +1,8 @@
 /** chunk id: 829097 params = (module,exports,require) **/
 n.d(t, {
-    _: () => a
+    _: () => i
 });
-var r = n(945810),
-    i = n(332628);
-let s = (0, r.mj)({
+let r = (0, n(945810).mj)({
     name: "2025-09-video-qoe-metrics-tracking",
     kind: "user",
     defaultConfig: {
@@ -20,19 +18,11 @@ let s = (0, r.mj)({
     }
 });
 
-function a(e) {
+function i(e) {
     let {
         location: t
-    } = e, {
-        isInHoldout: n
-    } = i.i.getCurrentConfig({
-        location: t
-    }, {
-        autoTrackExposure: !0
-    });
-    return n ? {
-        externalAnalyticsEnabled: !1
-    } : s.getConfig({
+    } = e;
+    return r.getConfig({
         location: t
     })
 }

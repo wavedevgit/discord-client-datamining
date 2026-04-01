@@ -1,7 +1,7 @@
 /** chunk id: 396787 params = (module,exports,require) **/
 n.d(e, {
     F5: () => h,
-    XA: () => p,
+    XA: () => m,
     jv: () => _
 });
 var l = n(627968);
@@ -32,10 +32,10 @@ let h = (t, e) => (0, a.mMO)(async () => {
     }),
     _ = (t, e) => {
         h(n => {
-            r.A.setIcon(t, n.imageUri, e).catch(p)
+            r.A.setIcon(t, n.imageUri, e).catch(m)
         }, [e])
     },
-    p = t => {
+    m = t => {
         if (t?.body?.retry_after != null) {
             let e = (0, i.A)(new Date, t.body.retry_after);
             s.A.show({

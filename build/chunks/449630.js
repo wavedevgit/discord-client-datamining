@@ -29,8 +29,8 @@ var a = n(627968),
     E = n(31432),
     N = n(915614),
     I = n(223330),
-    O = n(559506),
-    k = n(646986),
+    k = n(559506),
+    O = n(646986),
     R = n(379654),
     w = n(946356),
     D = n(810396),
@@ -106,7 +106,7 @@ function ea(e) {
             eI(!1)
         }, 500)
     }, []);
-    let eO = e => {
+    let ek = e => {
             n?.(), (0, S.openUserProfileModal)({
                 customStatusPrompt: eE,
                 sourceAnalyticsLocations: eo,
@@ -114,7 +114,7 @@ function ea(e) {
                 ...e
             })
         },
-        ek = el?.widgets != null && el.widgets.length > 0,
+        eO = el?.widgets != null && el.widgets.length > 0,
         eR = i.useCallback(() => {
             n()
         }, [n]),
@@ -155,7 +155,7 @@ function ea(e) {
                 }), (0, a.jsxs)(c.Fmo, {
                     children: [(0, a.jsx)(Q.A, {
                         displayProfile: el,
-                        handleOpenUserProfileModal: eO,
+                        handleOpenUserProfileModal: ek,
                         height: eu
                     }), (0, a.jsxs)(w.A, {
                         className: et.BK,
@@ -172,7 +172,7 @@ function ea(e) {
                                 user: t,
                                 displayProfile: el,
                                 themeType: Z.d.POPOUT,
-                                onOpenProfile: es ? void 0 : eO
+                                onOpenProfile: es ? void 0 : ek
                             }), (0, a.jsx)(M.A, {
                                 ref: ey,
                                 user: t,
@@ -185,13 +185,13 @@ function ea(e) {
                             style: {
                                 pointerEvents: eN ? "none" : void 0
                             },
-                            children: [(0, a.jsx)(O.A, {
+                            children: [(0, a.jsx)(k.A, {
                                 userId: t.id
                             }), (0, a.jsx)(D.A, {
                                 user: t,
                                 className: et.Xh,
                                 nickname: V.Ay.getName(void 0, null, t),
-                                onOpenProfile: es ? void 0 : eO,
+                                onOpenProfile: es ? void 0 : ek,
                                 pronouns: el?.pronouns,
                                 tags: (0, a.jsx)(E.A, {
                                     displayProfile: el,
@@ -209,17 +209,17 @@ function ea(e) {
                                 bio: el?.bio,
                                 hidePersonalInformation: e_,
                                 onClose: n
-                            }), ek && (0, a.jsx)(R.A, {
+                            }), eO && (0, a.jsx)(R.A, {
                                 user: t,
                                 widgets: el?.widgets,
-                                onOpenUserProfileModal: eO
+                                onOpenUserProfileModal: ek
                             }), (0, a.jsx)(I.A, {
                                 isPremiumUser: eC,
                                 onInteraction: n
-                            }), (0, a.jsx)(k.A, {
+                            }), (0, a.jsx)(O.A, {
                                 user: t,
                                 currentUser: t,
-                                onOpenUserProfileModal: eO,
+                                onOpenUserProfileModal: ek,
                                 onClose: n
                             }), (0, a.jsxs)("div", {
                                 className: et.T_,

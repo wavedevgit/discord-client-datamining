@@ -16,8 +16,8 @@ var i = n(627968),
     A = n(373963),
     m = n(115184),
     p = n(777933),
-    f = n(826308),
-    h = n(51512),
+    h = n(826308),
+    f = n(51512),
     y = n(773699),
     E = n(954571),
     _ = n(363398),
@@ -59,10 +59,10 @@ function z(e) {
             mediaItem: A,
             shouldHideMediaOptions: m,
             onSelect: p,
-            onHeightUpdate: f
+            onHeightUpdate: h
         } = e,
         {
-            analyticsLocations: h
+            analyticsLocations: f
         } = (0, c.Ay)([d.A.MESSAGE_CONTEXT_MENU]),
         y = g,
         E = g.getAttribute("data-type"),
@@ -74,7 +74,7 @@ function z(e) {
             (0, a.vq)(y);)(0, a.vq)(y, HTMLImageElement) && null != y.src && (n = y.src), (0, a.vq)(y, HTMLAnchorElement) && null != y.href && (t = y.href, r = y.textContent, null == n && "img" === y.getAttribute("data-role") && (n = t, y.hasAttribute("data-safe-src") && "" !== y.getAttribute("data-safe-src") && (l = y.getAttribute("data-safe-src")))), y = y.parentNode;
     let b = document.getSelection()?.toString() ?? "";
     return (0, i.jsx)(c.f5, {
-        value: h,
+        value: f,
         children: Z({
             message: u,
             channel: o,
@@ -88,7 +88,7 @@ function z(e) {
             itemSafeSrc: l,
             itemTextContent: r,
             canReport: !0,
-            onHeightUpdate: f,
+            onHeightUpdate: h,
             onSelect: p,
             onClose: s.Z_,
             navId: "message",
@@ -153,11 +153,11 @@ function Z(e) {
         }),
         eu = (0, R.A)(t, n),
         eg = (0, A.A)(s),
-        eA = (0, f.A)(s),
+        eA = (0, h.A)(s),
         em = (0, b.A)(t, n),
         ep = (0, D.A)(t, n),
-        ef = (0, P.A)(t, n),
-        eh = (0, C.A)(t, n),
+        eh = (0, P.A)(t, n),
+        ef = (0, C.A)(t, n),
         ey = (0, X.A)(t, n),
         eE = (0, I.A)(t),
         e_ = (0, V.A)(t, n),
@@ -178,7 +178,7 @@ function Z(e) {
         eD = (0, B.A)(t, n),
         eM = (0, k.A)(t, n),
         eC = (0, G.A)(t),
-        eO = (0, h.A)(t),
+        eO = (0, f.A)(t),
         eN = (0, K.A)(t),
         eR = (0, w.A)(t, n),
         eG = (0, L.A)(t, n),
@@ -235,7 +235,7 @@ function Z(e) {
         }), (0, i.jsxs)(r.rXV, {
             children: ["" === s ? eu : null, em, eC]
         }), (0, i.jsxs)(r.rXV, {
-            children: [ep, ef, eh, ey]
+            children: [ep, eh, ef, ey]
         }), (0, i.jsxs)(r.rXV, {
             children: [eE, e_, eS, eb, ev, eT, eI, ex, ej, eD, eM, eO, eN]
         }), (0, i.jsxs)(r.rXV, {

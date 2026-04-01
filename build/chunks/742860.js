@@ -29,8 +29,8 @@ var a = n(627968),
     E = n(792620),
     N = n(814793),
     I = n(895253),
-    O = n(241124),
-    k = n(212614),
+    k = n(241124),
+    O = n(212614),
     R = n(79545),
     w = n(646764),
     D = n(398025),
@@ -95,7 +95,7 @@ function X(e) {
         onMouseLeave: () => {
             s && r && o(!1)
         },
-        children: [null != x && (0, a.jsx)(O.Sn, {
+        children: [null != x && (0, a.jsx)(k.Sn, {
             id: "QuestBarContentExpanded_videoThumbnail",
             children: e => (0, a.jsx)("img", {
                 ref: e,
@@ -103,7 +103,7 @@ function X(e) {
                 src: x.url,
                 className: Y.Ue
             })
-        }), null != h ? (0, a.jsx)(O.Sn, {
+        }), null != h ? (0, a.jsx)(k.Sn, {
             id: "QuestBarContentExpanded_video",
             children: e => (0, a.jsx)(J, {
                 ref: e,
@@ -212,7 +212,7 @@ function ee(e) {
                             variant: "secondary",
                             text: z,
                             onClick: K
-                        }), U.enabled && G === R.UA.UNENROLLED && U.enabledQuestStates.has(R.UA.UNENROLLED) ? (0, a.jsx)(k.A, {
+                        }), U.enabled && G === R.UA.UNENROLLED && U.enabledQuestStates.has(R.UA.UNENROLLED) ? (0, a.jsx)(O.A, {
                             quest: o,
                             surface: R.V3.QUEST_BAR_FOOTER,
                             size: "sm",
@@ -250,7 +250,7 @@ function ee(e) {
                 backdropFilter: (0, D.Q)(p.to([0, 1], [5, 0]).to(e => `blur(${e}px)`)),
                 filter: (0, D.Q)(p.to([0, 1], [.8, 1]).to(e => `brightness(${e})`))
             },
-            children: [E.isAnimated ? (0, a.jsx)(O.Sn, {
+            children: [E.isAnimated ? (0, a.jsx)(k.Sn, {
                 id: "QuestBarContentExpanded_heroAnimated",
                 children: e => (0, a.jsx)(J, {
                     ref: e,
@@ -258,7 +258,7 @@ function ee(e) {
                     asset: E,
                     className: Y.LO
                 })
-            }) : (0, a.jsx)(O.Sn, {
+            }) : (0, a.jsx)(k.Sn, {
                 id: "QuestBarContentExpanded_heroStatic",
                 children: e => (0, a.jsx)("img", {
                     ref: e,

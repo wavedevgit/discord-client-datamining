@@ -14,14 +14,14 @@ var l = n(627968),
     u = n(964486),
     h = n(793574),
     _ = n(688810),
-    p = n(571694),
-    m = n(47167),
+    m = n(571694),
+    p = n(47167),
     v = n(734057),
     f = n(954571),
     x = n(396787),
     A = n(652215),
-    y = n(985018),
-    g = n(514693);
+    g = n(985018),
+    y = n(514693);
 
 function D(t) {
     let {
@@ -33,23 +33,23 @@ function D(t) {
         petite: o = !1,
         className: d,
         allowRemovingIcon: u = !0
-    } = t, m = void 0 !== n ? n : e?.icon != null ? (0, p.Y)(e, 120) : null, {
+    } = t, p = void 0 !== n ? n : e?.icon != null ? (0, m.Y)(e, 120) : null, {
         analyticsLocations: v
     } = (0, _.Ay)(r, h.A.GROUP_DM_ICON_EDITOR), f = o ? 32 : 64;
     return (0, l.jsxs)("div", {
-        className: s()(g.r2, d),
+        className: s()(y.r2, d),
         children: [(0, l.jsxs)(c.DUT, {
-            className: s()(g.zc, {
-                [g.ud]: o
+            className: s()(y.zc, {
+                [y.ud]: o
             }),
-            "aria-label": y.intl.string(y.t["0qPSMV"]),
+            "aria-label": g.intl.string(g.t["0qPSMV"]),
             onClick: () => (0, x.F5)(i, v),
-            children: [null != m ? (0, l.jsx)("img", {
-                src: m,
+            children: [null != p ? (0, l.jsx)("img", {
+                src: p,
                 alt: "",
-                className: g.Dp
+                className: y.Dp
             }) : (0, l.jsx)("div", {
-                className: g.Pz,
+                className: y.Pz,
                 children: (0, l.jsx)(c.nFg, {
                     size: "custom",
                     width: f,
@@ -57,17 +57,17 @@ function D(t) {
                     color: "currentColor"
                 })
             }), (0, l.jsx)("div", {
-                className: g.qc,
+                className: y.qc,
                 children: (0, l.jsx)(c.R2l, {
                     color: "currentColor",
                     size: o ? "xs" : "refresh_sm"
                 })
             })]
-        }), null != m && u ? (0, l.jsx)(c.QWc, {
+        }), null != p && u ? (0, l.jsx)(c.QWc, {
             variant: "critical",
             onClick: a,
-            "aria-label": y.intl.string(y.t["uY+Nk/"]),
-            text: y.intl.string(y.t["uY+Nk/"]),
+            "aria-label": g.intl.string(g.t["uY+Nk/"]),
+            text: g.intl.string(g.t["uY+Nk/"]),
             textVariant: "text-sm/medium",
             size: "sm",
             role: "button",
@@ -81,9 +81,9 @@ let j = function(t) {
         onClose: n,
         transitionState: a,
         setHasPendingChanges: s,
-        closeOrShowDiscardChangesAlert: p,
+        closeOrShowDiscardChangesAlert: m,
         location: j
-    } = t, C = (0, o.bG)([v.A], () => v.A.getChannel(e)), I = C?.name, w = (0, m.e5)(C), [E, T] = i.useState(I ?? ""), [b, R] = i.useState(void 0), k = void 0 !== b, {
+    } = t, C = (0, o.bG)([v.A], () => v.A.getChannel(e)), I = C?.name, w = (0, p.e5)(C), [E, T] = i.useState(I ?? ""), [b, R] = i.useState(void 0), k = void 0 !== b, {
         analyticsLocations: N
     } = (0, _.Ay)(j, h.A.GROUP_DM_EDIT_MODAL), P = {
         channel_id: e,
@@ -124,21 +124,21 @@ let j = function(t) {
                 n()
             },
             children: (0, l.jsx)(r.Modal, {
-                title: y.intl.string(y.t["5Q9+/L"]),
+                title: g.intl.string(g.t["5Q9+/L"]),
                 actions: [{
-                    text: y.intl.string(y.t["ETE/oC"]),
+                    text: g.intl.string(g.t["ETE/oC"]),
                     variant: "secondary",
-                    onClick: p
+                    onClick: m
                 }, {
-                    text: y.intl.string(y.t["R3BPH+"]),
+                    text: g.intl.string(g.t["R3BPH+"]),
                     variant: "primary",
                     type: "submit",
                     disabled: E === I && !k
                 }],
-                onClose: () => Promise.resolve(p()),
+                onClose: () => Promise.resolve(m()),
                 transitionState: a,
                 children: (0, l.jsxs)("div", {
-                    className: g.jE,
+                    className: y.jE,
                     children: [(0, l.jsx)(D, {
                         channel: C,
                         previewIcon: b,
@@ -146,8 +146,9 @@ let j = function(t) {
                         onIconRemove: () => R(null),
                         analyticsLocations: N
                     }), (0, l.jsx)(c.ksK, {
-                        "aria-label": y.intl.string(y.t.GEGW3P),
+                        "aria-label": g.intl.string(g.t.GEGW3P),
                         placeholder: w ?? "",
+                        maxLength: A.Ign,
                         value: E,
                         onChange: T,
                         autoFocus: !0

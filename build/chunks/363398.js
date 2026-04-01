@@ -15,10 +15,10 @@ var i = n(627968),
     A = n(264349),
     m = n(997509),
     p = n(652215),
-    f = n(411335),
-    h = n(985018),
+    h = n(411335),
+    f = n(985018),
     y = n(383799);
-let E = f.uh.KEYWORD;
+let E = h.uh.KEYWORD;
 
 function _(e, t) {
     let {
@@ -37,7 +37,7 @@ function _(e, t) {
     let R = e.split(" "),
         G = R.length;
     try {
-        (0, s.wk)(R, f.bV)
+        (0, s.wk)(R, h.bV)
     } catch (e) {
         return null
     }
@@ -61,15 +61,15 @@ function _(e, t) {
                     keywordFilter: [...t.triggerMetadata?.keywordFilter ?? [], e]
                 }
             };
-            await S(n, C), M(n), null != b ? (0, a.showToast)((0, a.createToast)(h.intl.string(h.t.wH6L0r), a.ToastType.FAILURE)) : (0, a.showToast)((0, a.createToast)(h.intl.string(h.t["0rdYm2"]), a.ToastType.SUCCESS))
+            await S(n, C), M(n), null != b ? (0, a.showToast)((0, a.createToast)(f.intl.string(f.t.wH6L0r), a.ToastType.FAILURE)) : (0, a.showToast)((0, a.createToast)(f.intl.string(f.t["0rdYm2"]), a.ToastType.SUCCESS))
         }, P = (0, i.jsx)(a.Drp, {
             id: "automod-rules-loading",
-            label: h.intl.string(h.t.ZTNur7)
+            label: f.intl.string(f.t.ZTNur7)
         });
     return x || (P = (0, i.jsxs)(i.Fragment, {
         children: [O && (0, i.jsx)(a.Drp, {
             id: "add-first-rule",
-            label: h.intl.string(h.t.f72Zqb),
+            label: f.intl.string(f.t.f72Zqb),
             action: L,
             disabled: _
         }), C.map(e => {
@@ -101,14 +101,14 @@ function _(e, t) {
         }), N && (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)(a.bXX, {}), (0, i.jsx)(a.Drp, {
                 id: "add-another-rule",
-                label: h.intl.string(h.t["0K5jDE"]),
+                label: f.intl.string(f.t["0K5jDE"]),
                 action: L,
                 disabled: _
             })]
         })]
     })), (0, i.jsx)(a.Drp, {
         id: "guild-automod-add-selection",
-        label: h.intl.formatToPlainString(h.t.Kkjv1m, {
+        label: f.intl.formatToPlainString(f.t.Kkjv1m, {
             keywordCount: G
         }),
         leadingAccessory: {

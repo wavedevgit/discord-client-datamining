@@ -18,15 +18,15 @@ var l = n(311907),
     A = n(715757),
     m = n(967198),
     p = n(287809),
-    f = n(628691),
-    h = n(49999),
+    h = n(628691),
+    f = n(49999),
     y = n(985018),
     E = n(641131);
 
 function _(e) {
     let t = (0, l.bG)([m.A], () => m.A.getGuildId()),
         n = (0, A.Qo)(t);
-    return (0, f.ul)(e) ? (0, i.jsx)(r.Drp, {
+    return (0, h.ul)(e) ? (0, i.jsx)(r.Drp, {
         id: "report",
         label: n ? y.intl.string(y.t.n5EBAJ) : y.intl.string(y.t.GwbdGe),
         action: () => (0, c.V2)(e, "web_message_context_menu"),
@@ -45,12 +45,12 @@ function S(e) {
         o = n ? [a.M.REPORT_TO_MOD_NEW_TAG] : [],
         [A, m] = (0, d.kn)(o);
     return ((0, s.l0)(() => {
-        n && m(h.i.AUTO_DISMISS)
+        n && m(f.i.AUTO_DISMISS)
     }), n) ? (0, i.jsx)(r.Drp, {
         id: "report-to-mod",
         label: t ? y.intl.string(E.default["8wsdng"]) : y.intl.string(E.default["1D+vqy"]),
         action: () => {
-            m(h.i.USER_DISMISS), (0, c.dy)(e)
+            m(f.i.USER_DISMISS), (0, c.dy)(e)
         },
         icon: r.iFK,
         disabled: t,
@@ -66,7 +66,7 @@ function S(e) {
 function b(e) {
     let t = (0, l.bG)([o.Ay], () => o.Ay.get("iar_testing")),
         n = (0, l.bG)([p.default], () => p.default.getCurrentUser());
-    return (0, f.ul)(e) && null != n && n.isStaff() && t ? (0, i.jsx)(r.Drp, {
+    return (0, h.ul)(e) && null != n && n.isStaff() && t ? (0, i.jsx)(r.Drp, {
         id: "staff-test-message-report",
         label: "[STAFF] Test Message Report",
         action: () => (0, c.Rj)(e, "web_message_context_menu"),

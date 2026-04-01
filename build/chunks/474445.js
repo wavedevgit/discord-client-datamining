@@ -17,8 +17,8 @@ let m = new Map;
 
 function p(e, t) {
     let p, {
-            handleTranslate: f,
-            handleRevertTranslation: h,
+            handleTranslate: h,
+            handleRevertTranslation: f,
             isTranslating: y,
             isTranslated: E
         } = function(e) {
@@ -89,10 +89,10 @@ function p(e, t) {
                     type: "image",
                     src: t
                 },
-                action: () => f(e.value, e.name),
+                action: () => h(e.value, e.name),
                 disabled: y
             }, e.value)
-        }), [f, y, p])),
+        }), [h, y, p])),
         S = (0, d.b)();
     return null != e.content && "" !== e.content.trim() && S ? E ? (0, i.jsx)(s.Drp, {
         id: "revert-translation",
@@ -102,12 +102,12 @@ function p(e, t) {
             icon: s.UaP
         },
         icon: s.UaP,
-        action: h,
+        action: f,
         disabled: y
     }) : (0, i.jsx)(s.Drp, {
         id: "translate",
         label: y ? g.intl.string(g.t.SVKIdU) : g.intl.string(g.t["6epDlR"]),
-        action: () => f(),
+        action: () => h(),
         leadingAccessory: {
             type: "icon",
             icon: s.UaP

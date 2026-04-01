@@ -49,7 +49,7 @@ let d = [{
                 isSelected: e => {
                     var t;
                     let n, a, s, l, r;
-                    return e === (t = c.tasks, n = i.n.PLAY_ON_PLAYSTATION in t || i.n.PLAY_ON_XBOX in t, a = i.n.PLAY_ON_DESKTOP in t || i.n.PLAY_ON_DESKTOP_V2 in t, s = i.n.STREAM_ON_DESKTOP in t, l = i.n.WATCH_VIDEO in t, r = i.n.PLAY_ACTIVITY in t, n && a ? 4 : n ? 3 : a ? 0 : s ? 1 : l ? 2 : r ? 5 : void 0)
+                    return e === (t = c.tasks, n = i.n.PLAY_ON_PLAYSTATION in t || i.n.PLAY_ON_XBOX in t, a = i.n.PLAY_ON_DESKTOP in t, s = i.n.STREAM_ON_DESKTOP in t, l = i.n.WATCH_VIDEO in t, r = i.n.PLAY_ACTIVITY in t, n && a ? 4 : n ? 3 : a ? 0 : s ? 1 : l ? 2 : r ? 5 : void 0)
                 },
                 select: e => {
                     t({

@@ -35,7 +35,7 @@ function I(e) {
         questContent: n,
         isHovering: s,
         contentPosition: I,
-        rowIndex: k,
+        rowIndex: O,
         isVisibleInViewport: R,
         onReceiveErrorHints: w,
         sourceQuestContent: D
@@ -56,7 +56,7 @@ function I(e) {
         completedRatio: Y,
         completedRatioDisplay: J
     } = (0, p.O9)(t), X = (0, x.gj)(t, D, m.Ob.QuestHome, P), Z = i.useMemo(() => $ && q ? T.intl.format(T.t["8Op4c4"], {
-        balanceHook: () => (0, a.jsxs)(O, {
+        balanceHook: () => (0, a.jsxs)(k, {
             questId: t.id,
             children: [(0, a.jsx)(h.A, {
                 shouldUseThemeColor: !0,
@@ -64,11 +64,11 @@ function I(e) {
                 customSize: 14
             }), Q]
         }, t.id)
-    }) : $ ? (0, a.jsx)(O, {
+    }) : $ ? (0, a.jsx)(k, {
         questId: t.id,
         children: U
     }) : q ? T.intl.format(T.t.ro1sze, {
-        balanceHook: () => (0, a.jsxs)(O, {
+        balanceHook: () => (0, a.jsxs)(k, {
             questId: t.id,
             children: [(0, a.jsx)(h.A, {
                 shouldUseThemeColor: !0,
@@ -77,7 +77,7 @@ function I(e) {
             }), Q]
         }, t.id)
     }) : T.intl.format(T.t["0IUT4Y"], {
-        rewardWithArticleHook: () => (0, a.jsx)(O, {
+        rewardWithArticleHook: () => (0, a.jsx)(k, {
             questId: t.id,
             children: B
         }, t.id)
@@ -168,13 +168,13 @@ function I(e) {
             quest: t,
             questContent: n,
             contentPosition: I,
-            rowIndex: k,
+            rowIndex: O,
             onReceiveErrorHints: w,
             sourceQuestContent: D
         })]
     })
 }
-let O = i.memo(function(e) {
+let k = i.memo(function(e) {
     let {
         questId: t,
         children: n

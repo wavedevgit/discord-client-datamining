@@ -25,9 +25,9 @@ function u(e) {
         autoTrackExposure: !1
     }), p = l.useCallback(() => {
         (0, d.C)(t)
-    }, [t]), f = l.useCallback(() => {
+    }, [t]), h = l.useCallback(() => {
         null != n && (0, d.C)(n)
-    }, [n]), h = l.useCallback(() => {
+    }, [n]), f = l.useCallback(() => {
         null != g && (0, d.C)(g)
     }, [g]), y = l.useCallback(() => {
         null != g && (0, r.A)(g)
@@ -54,7 +54,7 @@ function u(e) {
         }), (0, i.jsx)(a.Drp, {
             id: "copy-item-id",
             label: _,
-            action: f,
+            action: h,
             leadingAccessory: {
                 type: "icon",
                 icon: a.L9S
@@ -63,7 +63,7 @@ function u(e) {
             children: [(0, i.jsx)(a.Drp, {
                 id: "copy-image-link",
                 label: S,
-                action: h,
+                action: f,
                 leadingAccessory: {
                     type: "icon",
                     icon: a.qYV

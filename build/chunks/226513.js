@@ -36,8 +36,8 @@ function A(e) {
         Component: N,
         play: I,
         events: {
-            onMouseEnter: O,
-            onMouseLeave: k
+            onMouseEnter: k,
+            onMouseLeave: O
         }
     } = (0, d.I)(E ? "undeafen" : "deafen"), R = n ? r.TJE : N, {
         name: w
@@ -97,8 +97,8 @@ function A(e) {
                         }),
                         onClick: A,
                         onContextMenu: i,
-                        onMouseEnter: O,
-                        onMouseLeave: k,
+                        onMouseEnter: k,
+                        onMouseLeave: O,
                         plated: null != y,
                         redGlow: E,
                         role: "switch",

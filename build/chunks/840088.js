@@ -15,8 +15,8 @@ var i = n(627968),
     A = n(253932),
     m = n(576705),
     p = n(486020),
-    f = n(203982),
-    h = n(690521),
+    h = n(203982),
+    f = n(690521),
     y = n(652215),
     E = n(307731),
     _ = n(985018),
@@ -27,7 +27,7 @@ function b(e, t) {
         reducedMotion: n
     } = l.useContext(o.CZY), a = (0, g.Id)(t), r = (0, s.bG)([m.A], () => (t.isPrivate() || m.A.can(y.xBc.ADD_REACTIONS, t)) && a, [t, a]), p = (0, d.D6)(t.getGuildId());
     if (!A.jW.getSetting() || !r) return null;
-    let S = p.filter(e => !h.Ay.isEmojiFilteredOrLocked({
+    let S = p.filter(e => !f.Ay.isEmojiFilteredOrLocked({
         emoji: e,
         channel: t,
         intention: E.b_.REACTION
@@ -43,7 +43,7 @@ function b(e, t) {
         leadingAccessory: {
             type: "emoji",
             emojiId: l.id,
-            src: null == l.id ? h.Ay.getURL(l.optionallyDiverseSequence ?? "") : void 0,
+            src: null == l.id ? f.Ay.getURL(l.optionallyDiverseSequence ?? "") : void 0,
             animated: l.animated
         },
         action: () => {
@@ -59,7 +59,7 @@ function b(e, t) {
             icon: o.nm2
         },
         action: () => {
-            f._.dispatchKeyed(y.zOV.TOGGLE_REACTION_POPOUT, e.id, {
+            h._.dispatchKeyed(y.zOV.TOGGLE_REACTION_POPOUT, e.id, {
                 emojiPicker: !0
             })
         },
@@ -75,7 +75,7 @@ function b(e, t) {
                     icon: o.ShF
                 },
                 action: () => {
-                    f._.dispatchKeyed(y.zOV.TOGGLE_REACTION_POPOUT, e.id, {
+                    h._.dispatchKeyed(y.zOV.TOGGLE_REACTION_POPOUT, e.id, {
                         emojiPicker: !0
                     })
                 }
@@ -97,7 +97,7 @@ function v(e) {
             id: t.id,
             animated: t.animated && (!n || a),
             size: 18
-        }) : h.Ay.getURL(t.optionallyDiverseSequence ?? ""),
+        }) : f.Ay.getURL(t.optionallyDiverseSequence ?? ""),
         alt: ""
     })
 }

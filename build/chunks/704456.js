@@ -2,8 +2,8 @@
 n.d(t, {
     Ce: () => p,
     kh: () => m,
-    le: () => h,
-    vr: () => f
+    le: () => f,
+    vr: () => h
 });
 var i, l = n(64700),
     a = n(989349),
@@ -38,7 +38,7 @@ function p(e) {
     }
 }
 
-function f(e) {
+function h(e) {
     let t = (0, s.bG)([u.A], () => u.A.getChannel(e.saveData.channelId));
     return l.useMemo(() => null != t ? t : null != e.message ? new c.jb({
         id: e.saveData.channelId,
@@ -47,7 +47,7 @@ function f(e) {
         name: A.intl.string(A.t.J90oLW)
     }) : void 0, [t, e])
 }
-async function h(e, t) {
+async function f(e, t) {
     if (t?.type === g.rbe.UNKNOWN && null == e.saveData.guildId) try {
         let t = await o.A.fetchChannel(e.saveData.channelId);
         if (null == t.recipients || t.recipients.length > 1) return;

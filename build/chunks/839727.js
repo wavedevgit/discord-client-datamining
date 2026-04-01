@@ -74,7 +74,7 @@ function Y(e) {
         targetRef: eu
     } = (0, v.O7)(), [ec, ed] = i.useState(!0 === s ? O.Q6.PLAYING : O.Q6.PAUSED), [em, eE] = i.useState(!1), [e_, ep] = i.useState(!1), ef = (0, y.Yh)(W), [ev, eS] = i.useState(ef.percentComplete), eh = i.useCallback(e => {
         eU(null), eS(e)
-    }, []), [eg, eA] = i.useState(!1), [eC, eT] = i.useState(!0), [eb, ex] = i.useState(!1), [eD, ey] = i.useState([]), [eI, eL] = i.useState(S.A.getEffectiveConnectionSpeed()), [eN, eR] = i.useState(0), [eO, ek] = i.useState(0), [eM, ew] = i.useState(!1), [eP, ej] = i.useState(!1), [eV, eU] = i.useState(null), eQ = i.useRef(!0), eB = i.useRef(null), eF = i.useRef(null), eK = (0, T.Kr)(e => e.videoProgress[W.id] ?? T.yc, u.x), eY = (0, T.Kr)(e => e.setVideoProgress), eH = (0, T.Kr)(e => e.muted), e$ = (0, T.Kr)(e => e.volume), eG = (0, c.bG)([p.A], () => p.A.useReducedMotion), eq = (0, i.useRef)(null), eW = (0, i.useRef)(null), ez = i.useRef(!0), eJ = W.userStatus?.completedAt != null, eX = i.useMemo(() => W.config.features.includes(U.Li.FULL_EPISODE_VIDEO_QUEST), [W.config.features]), eZ = i.useRef(!1), [e0, e1] = i.useState(null), [e6, e7] = i.useState(!1), [e4, e9] = i.useState(!1), [e3, e5] = i.useState(!1), [e8, e2] = i.useState(null), te = eJ ? eq.current?.duration ?? 0 : Math.max(eK.maxTimestampSec, ef.progressSeconds), tt = i.useMemo(() => (0, D.L)({
+    }, []), [eg, eA] = i.useState(!1), [eC, eT] = i.useState(!0), [eb, ex] = i.useState(!1), [eD, ey] = i.useState([]), [eI, eL] = i.useState(S.A.getEffectiveConnectionSpeed()), [eN, eR] = i.useState(0), [eO, ek] = i.useState(0), [eM, ew] = i.useState(!1), [eP, ej] = i.useState(!1), [eV, eU] = i.useState(null), eQ = i.useRef(!0), eB = i.useRef(null), eF = i.useRef(null), eK = (0, T.Kr)(e => e.videoProgress[W.id] ?? T.yc, u.x), eY = (0, T.Kr)(e => e.setVideoProgress), eH = (0, T.Kr)(e => e.muted), e$ = (0, T.Kr)(e => e.volume), eG = (0, c.bG)([p.A], () => p.A.useReducedMotion), eq = (0, i.useRef)(null), eW = (0, i.useRef)(null), ez = i.useRef(!0), eJ = W.userStatus?.completedAt != null, eX = i.useMemo(() => W.config.features.includes(U.Li.FULL_EPISODE_VIDEO_QUEST), [W.config.features]), eZ = i.useRef(!1), [e0, e1] = i.useState(null), [e6, e7] = i.useState(!1), [e4, e9] = i.useState(!1), [e5, e3] = i.useState(!1), [e8, e2] = i.useState(null), te = eJ ? eq.current?.duration ?? 0 : Math.max(eK.maxTimestampSec, ef.progressSeconds), tt = i.useMemo(() => (0, D.L)({
         quest: W,
         location: U.rE.VIDEO_MODAL
     }), [W]), tn = (0, m.g)(eJ, eK, ef.progressSeconds), [tr, ti] = i.useState(O.oA.MD), ts = {
@@ -123,8 +123,8 @@ function Y(e) {
     });
     let tb = i.useRef(null),
         tx = i.useCallback(() => {
-            clearTimeout(tb.current), e5(!0), tb.current = setTimeout(() => {
-                e5(!1)
+            clearTimeout(tb.current), e3(!0), tb.current = setTimeout(() => {
+                e3(!1)
             }, 1e3)
         }, []);
     i.useEffect(() => () => {
@@ -313,7 +313,7 @@ function Y(e) {
         t7 = i.useMemo(() => null === (0, b.tW)(W, b.fY.VIDEO_PLAYER_TRANSCRIPT, void 0, !1), [W]),
         t4 = ee ? 20 : 12,
         t9 = 20 * !!ee,
-        t3 = eJ && eP;
+        t5 = eJ && eP;
     return (0, r.jsx)(E.DUT, {
         className: F.W6,
         "data-fullscreen": X,
@@ -512,7 +512,7 @@ function Y(e) {
                         output: [0, 1]
                     })], e => `${e}`)
                 }
-            }), e3 && (0, r.jsx)("div", {
+            }), e5 && (0, r.jsx)("div", {
                 className: a()(F.yf, {
                     [F.ZH]: ec === O.Q6.PLAYING,
                     [F.v7]: ec === O.Q6.PAUSED
@@ -559,14 +559,14 @@ function Y(e) {
                     children: (0, r.jsx)(j.A, {
                         percent: null != eV ? eV : ev,
                         animate: !0 !== ez.current && !eg,
-                        interactionEnabled: t3,
+                        interactionEnabled: t5,
                         playerState: ec,
                         preloadedBuffers: tP ? eD : void 0,
                         durationSec: eq.current?.duration ?? 1,
                         isFullyVisible: tP && eP,
                         maxSeekableTime: tP && eP ? te : void 0,
                         onClick: e => {
-                            t3 && (tQ(e), ec === O.Q6.ENDED && tI(O.Q6.PLAYING))
+                            t5 && (tQ(e), ec === O.Q6.ENDED && tI(O.Q6.PLAYING))
                         },
                         onScrubBack: tV,
                         onScrubForward: tU,

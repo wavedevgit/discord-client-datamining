@@ -30,8 +30,8 @@ var o = n(118517),
     A = n(954571),
     m = n(147036),
     p = n(957565),
-    f = n(203982),
-    h = n(661191),
+    h = n(203982),
+    f = n(661191),
     y = n(965407),
     E = n(439147),
     _ = n(249700),
@@ -86,7 +86,7 @@ function N(e, t, n) {
         message: t,
         shouldMention: !n.shiftKey && !l,
         showMentionToggle: !i && !l
-    }), f._.dispatch(b.jej.FOCUS_CHANNEL_TEXT_AREA, {
+    }), h._.dispatch(b.jej.FOCUS_CHANNEL_TEXT_AREA, {
         channelId: e.id
     })
 }
@@ -96,7 +96,7 @@ function R(e, t) {
 }
 
 function G(e, t) {
-    let n = g.A.getChannel(h.default.castMessageIdAsChannelId(t.id));
+    let n = g.A.getChannel(f.default.castMessageIdAsChannelId(t.id));
     null != n && (0, c.JA)(n)
 }
 
