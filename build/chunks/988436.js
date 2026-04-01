@@ -35,7 +35,7 @@ function E(e) {
         transitionState: s,
         onClose: A,
         sourceQuestContent: E
-    } = e, [I, k] = (0, i.useState)(n), O = (0, p.UX)(), R = (0, _.Ut)(), w = (0, v.vU)()?.getId(), D = (0, o.bG)([m.A], () => m.A.useReducedMotion), P = (0, C.Xf)({
+    } = e, [I, O] = (0, i.useState)(n), k = (0, p.UX)(), R = (0, _.Ut)(), w = (0, v.vU)()?.getId(), D = (0, o.bG)([m.A], () => m.A.useReducedMotion), P = (0, C.Xf)({
         useReducedMotion: D,
         className: T.Zf
     }), M = I.filter(e => ["xbox", "playstation"].includes(e.connected_account_type)), L = (0, j.YL)(t), U = (0, o.bG)([h.A], () => h.A.getState().theme), B = (0, c.Mw)(U) ? y.NJ.DARK : y.NJ.LIGHT, {
@@ -52,14 +52,14 @@ function E(e) {
             })
         },
         afterRequest: e => {
-            P.stopAnimation(), k(e)
+            P.stopAnimation(), O(e)
         }
     });
     return (0, a.jsx)(r.Modal, {
         transitionState: s,
         onClose: A,
         title: S.intl.string(S.t.W5lmKt),
-        subtitle: O.message,
+        subtitle: k.message,
         actions: [{
             variant: "secondary",
             onClick: () => void(A(), (0, b.b6)({

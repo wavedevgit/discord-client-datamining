@@ -22,7 +22,7 @@ function h(e) {
     let {
         targetElementRef: t,
         markMenuItemPopoverAsDismissed: n
-    } = e, [h, T] = s.useState("top"), x = s.useRef(null), _ = s.useRef(null), {
+    } = e, [h, x] = s.useState("top"), T = s.useRef(null), _ = s.useRef(null), {
         hasAccess: N
     } = (0, m.TW)("FavoritesOnboardingMenuItemPopover"), {
         analyticsLocations: g
@@ -34,8 +34,8 @@ function h(e) {
                 _.current = null, (() => {
                     let e = t.current?.getBoundingClientRect();
                     if (null == e) return;
-                    let n = x.current?.getBoundingClientRect().height ?? 0;
-                    T(window.innerHeight - e.top < n ? "bottom" : "top")
+                    let n = T.current?.getBoundingClientRect().height ?? 0;
+                    x(window.innerHeight - e.top < n ? "bottom" : "top")
                 })()
             }))
         };
@@ -59,7 +59,7 @@ function h(e) {
         caretConfig: {
             align: "top" === h ? "start" : "end"
         },
-        popoverRef: x,
+        popoverRef: T,
         badge: {
             type: "beta",
             variant: "expressive"

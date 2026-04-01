@@ -47,7 +47,7 @@ function C(e) {
         };
         null != I && e(I.url)
     }, [I, i, _]);
-    let b = l.useCallback(() => {
+    let N = l.useCallback(() => {
         null != _ && (n(f.Ws.JoinOfficialServer), g(), d.h.dispatch({
             type: "INVITE_MODAL_OPEN",
             invite: _,
@@ -56,7 +56,7 @@ function C(e) {
         }))
     }, [_, n, g]);
     if (null == _ || null == _.guild || !_.guild.features.includes(p.GuildFeatures.VERIFIED)) return null;
-    let N = h.Ay.getGuildIconURL({
+    let b = h.Ay.getGuildIconURL({
         id: _.guild.id,
         icon: _.guild.icon,
         size: 32
@@ -72,7 +72,7 @@ function C(e) {
             className: r()(A.nM, A.mX),
             children: [(0, a.jsx)("img", {
                 className: j.$f,
-                src: N,
+                src: b,
                 alt: v.intl.formatToPlainString(v.t.xm6W9D, {
                     guildName: _.guild.name
                 })
@@ -98,7 +98,7 @@ function C(e) {
         }), (0, a.jsx)(o.Button, {
             variant: "secondary",
             text: C ? v.intl.string(v.t.cEnaWx) : v.intl.string(v.t.XpeFYr),
-            onClick: b,
+            onClick: N,
             fullWidth: !0
         })]
     })
@@ -141,7 +141,7 @@ function I(e) {
             draggable: !1
         }),
         I = j ? E.To : E.Kt,
-        b = j ? E.yj : E.FS;
+        N = j ? E.yj : E.FS;
     return (0, a.jsxs)("div", {
         className: E.uW,
         children: [(0, a.jsx)(o.Heading, {
@@ -167,7 +167,7 @@ function I(e) {
                             children: C
                         })
                     }), (0, a.jsxs)("div", {
-                        className: b,
+                        className: N,
                         children: [(0, a.jsxs)("div", {
                             className: E.YS,
                             children: [(0, a.jsx)(u.A, {

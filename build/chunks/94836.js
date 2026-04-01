@@ -1,7 +1,7 @@
 /** chunk id: 94836 params = (module,exports,require) **/
 n.d(t, {
     A: () => E,
-    a: () => b
+    a: () => N
 });
 var a = n(627968),
     l = n(64700),
@@ -182,11 +182,11 @@ let C = l.memo(function(e) {
         })
     });
 
-function b(e) {
+function N(e) {
     let {
         detectedGame: t,
         trackAction: n
-    } = e, [i, r] = l.useState(0), [c, m] = l.useState(null), [h, _] = l.useState(t.artwork), [v, A] = l.useState(t.screenshots), E = l.useRef(null), b = l.useRef(null), N = (0, s.bG)([d.A], () => d.A.useReducedMotion);
+    } = e, [i, r] = l.useState(0), [c, m] = l.useState(null), [h, _] = l.useState(t.artwork), [v, A] = l.useState(t.screenshots), E = l.useRef(null), N = l.useRef(null), b = (0, s.bG)([d.A], () => d.A.useReducedMotion);
     (h !== t.artwork || v !== t.screenshots) && (_(t.artwork), A(t.screenshots), r(0));
     let S = l.useMemo(() => {
             let e = (t.trailers ?? []).map(e => {
@@ -210,8 +210,8 @@ function b(e) {
             })), ...n]
         }, [t.trailers, t.artwork, t.screenshots]),
         T = S.length > 0 ? Math.min(i, S.length - 1) : 0,
-        k = S[T],
-        y = k?.type === "VIDEO",
+        y = S[T],
+        k = y?.type === "VIDEO",
         L = l.useCallback(e => {
             let t = S[T],
                 n = S[e];
@@ -220,7 +220,7 @@ function b(e) {
         [O, R] = l.useState(!1),
         G = l.useRef(null),
         M = l.useCallback(() => {
-            n(y ? f.Ws.ClickTrailer : f.Ws.ClickImage);
+            n(k ? f.Ws.ClickTrailer : f.Ws.ClickImage);
             let e = E.current,
                 t = G.current,
                 a = null != e && !e.paused,
@@ -235,7 +235,7 @@ function b(e) {
                         autoPlay: !!n && a,
                         autoMute: !n || l,
                         initialTimeSec: n ? i : void 0,
-                        videoRef: b
+                        videoRef: N
                     }
                 }
                 return e
@@ -247,13 +247,13 @@ function b(e) {
                 location: "GameProfileMedia",
                 onIndexChange: r,
                 onClose: () => {
-                    let e = b.current,
+                    let e = N.current,
                         t = G.current,
                         n = null != e ? !e.paused : a;
                     e?.pause(), null != t && null != e ? (t.setTime(e.currentTime, !1), n && t.setPlay(!0), t.setMuted(e.muted)) : n && t?.setPlay(!0), R(n)
                 }
             })
-        }, [n, S, T, y]),
+        }, [n, S, T, k]),
         P = l.useCallback(() => R(!0), []),
         w = l.useCallback(() => R(!1), []),
         V = l.useCallback(() => m(null), []),
@@ -262,20 +262,20 @@ function b(e) {
         }, [M]);
     return 0 === S.length ? null : (0, a.jsxs)("div", {
         className: j.kL,
-        children: [y ? (0, a.jsx)("div", {
+        children: [k ? (0, a.jsx)("div", {
             className: j.ND,
             children: (0, a.jsx)(I, {
-                item: k,
-                reducedMotion: N,
+                item: y,
+                reducedMotion: b,
                 videoRef: E,
                 mediaPlayerRef: G,
                 onPlay: P,
                 onPause: w,
                 onFullscreenChange: D
-            }, `${T}-${k.url}`)
+            }, `${T}-${y.url}`)
         }) : (0, a.jsxs)("div", {
             className: j.wp,
-            children: [null != c && !N && (0, a.jsx)("div", {
+            children: [null != c && !b && (0, a.jsx)("div", {
                 className: j.Jy,
                 onAnimationEnd: V,
                 children: (0, a.jsx)("img", {
@@ -287,12 +287,12 @@ function b(e) {
                 className: j.gv,
                 onClick: M,
                 children: (0, a.jsx)("img", {
-                    src: k.url,
+                    src: y.url,
                     className: j.c8,
                     alt: p.intl.formatToPlainString(p.t.COYYrn, {
                         game: t.name
                     })
-                }, k.url)
+                }, y.url)
             })]
         }), (0, a.jsx)(u.A, {
             gap: "xs",

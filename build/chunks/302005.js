@@ -21,9 +21,9 @@ function m(e) {
         isPopoverAllowed: A = !0
     } = e, E = (0, a.JZ)(s.M.FAVORITES_SERVER_ONBOARDING_INTRO), {
         isExperimentEnabled: p
-    } = (0, o.TW)(t), f = (0, l.bG)([u.A], () => null != u.A.getVoiceChannelId()), S = (0, i.useHasAnyModalOpen)(), h = p && c && n && d.has(m) && A && !f && !S, [T, x] = (0, r.kn)(h && E ? [s.M.FAVORITES_SERVER_ONBOARDING_MENU_ITEM] : []);
+    } = (0, o.TW)(t), f = (0, l.bG)([u.A], () => null != u.A.getVoiceChannelId()), S = (0, i.useHasAnyModalOpen)(), h = p && c && n && d.has(m) && A && !f && !S, [x, T] = (0, r.kn)(h && E ? [s.M.FAVORITES_SERVER_ONBOARDING_MENU_ITEM] : []);
     return {
-        showMenuItemPopover: T === s.M.FAVORITES_SERVER_ONBOARDING_MENU_ITEM,
-        markMenuItemPopoverAsDismissed: x
+        showMenuItemPopover: x === s.M.FAVORITES_SERVER_ONBOARDING_MENU_ITEM,
+        markMenuItemPopoverAsDismissed: T
     }
 }

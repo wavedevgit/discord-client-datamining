@@ -121,7 +121,7 @@ function C(e) {
     if (null == m || 0 === c.length) return null;
     let C = 2 !== c.length,
         I = C ? c[0] : null,
-        b = C ? c.slice(1) : c;
+        N = C ? c.slice(1) : c;
     return (0, a.jsx)(_.A, {
         title: p.intl.string(p.t.B0BV3Y),
         onClickViewAll: A,
@@ -132,9 +132,9 @@ function C(e) {
                 message: I,
                 channelId: m,
                 onCardClick: j
-            }), b.length > 0 && (0, a.jsx)(u.A, {
+            }), N.length > 0 && (0, a.jsx)(u.A, {
                 gap: 16,
-                children: b.map(e => (0, a.jsx)(E, {
+                children: N.map(e => (0, a.jsx)(E, {
                     variant: "small",
                     message: e,
                     channelId: m,

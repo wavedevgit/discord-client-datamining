@@ -1,63 +1,63 @@
 /** chunk id: 521489 params = (module,exports,require) **/
-a.d(l, {
-    N: () => m
+n.d(t, {
+    N: () => h
 });
-var t = a(627968),
-    o = a(64700),
-    n = a(503698),
-    i = a.n(n),
-    s = a(773690),
-    r = a(110259),
-    d = a(158954),
-    u = a(397927),
-    c = a(97469),
-    b = a(783842),
-    p = a(110992);
+var a = n(627968),
+    l = n(64700),
+    i = n(503698),
+    r = n.n(i),
+    s = n(773690),
+    c = n(110259),
+    o = n(158954),
+    d = n(397927),
+    u = n(97469),
+    m = n(783842),
+    x = n(110992);
 
-function m(e) {
+function h(e) {
     let {
-        transitionState: l,
-        animationVariant: a = "default",
-        returnRef: n,
-        "aria-label": m,
-        onClose: x,
-        trackingProps: h,
-        children: v
-    } = e, y = o.useId(), f = o.useMemo(() => ({
-        id: y,
-        headingId: `heading-${y}`,
-        onClose: x,
+        transitionState: t,
+        animationVariant: n = "default",
+        returnRef: i,
+        "aria-label": h,
+        onClose: g,
+        trackingProps: f,
+        children: _
+    } = e, p = l.useId(), v = l.useMemo(() => ({
+        id: p,
+        headingId: `heading-${p}`,
+        onClose: g,
         dismissable: !0
-    }), [y, x]), g = (0, c.NC)(), {
-        theme: V
-    } = (0, u.wRf)(), C = (0, d.kSI)(l, a);
-    return (0, t.jsx)(d.Vs9.Provider, {
-        value: f,
-        children: (0, t.jsx)(u.lGe, {
-            id: y,
+    }), [p, g]), A = (0, u.NC)(), {
+        theme: j
+    } = (0, d.wRf)(), E = (0, o.kSI)(t, n);
+    return (0, a.jsx)(o.Vs9.Provider, {
+        value: v,
+        children: (0, a.jsx)(d.lGe, {
+            id: p,
             role: "dialog",
-            "aria-label": m,
-            "aria-labelledby": null != m ? void 0 : f.headingId,
-            returnRef: n,
-            ...h,
-            impressionType: h?.impressionType ?? r.ImpressionTypes.MODAL,
-            children: (0, t.jsx)(d.Fmo, {
+            "aria-label": h,
+            "aria-labelledby": null != h ? void 0 : v.headingId,
+            returnRef: i,
+            ...f,
+            impressionType: f?.impressionType ?? c.ImpressionTypes.MODAL,
+            children: (0, a.jsx)(o.Fmo, {
                 forceLevel: 1,
-                children: (0, t.jsx)("div", {
-                    className: b.nw,
-                    children: (0, t.jsx)(u.NPJ, {
-                        theme: g,
-                        children: e => (0, t.jsx)(s.animated.div, {
+                children: (0, a.jsx)("div", {
+                    className: m.nw,
+                    children: (0, a.jsx)(d.NPJ, {
+                        theme: A,
+                        children: e => (0, a.jsx)(s.animated.div, {
                             "data-mana-component": "layer-modal",
-                            className: i()(p.container, b.yl, e),
-                            style: C,
-                            children: (0, t.jsx)("div", {
-                                className: b.jE,
-                                children: (0, t.jsx)(u.NPJ, {
-                                    theme: V,
-                                    children: e => (0, t.jsx)("div", {
-                                        className: i()(e, b.h_),
-                                        children: v
+                            className: r()(x.container, m.yl, e),
+                            style: E,
+                            children: (0, a.jsx)("div", {
+                                className: m.jE,
+                                children: (0, a.jsx)(d.NPJ, {
+                                    theme: j,
+                                    children: e => (0, a.jsx)("div", {
+                                        className: r()(e, m.h_),
+                                        children: _
                                     })
                                 })
                             })

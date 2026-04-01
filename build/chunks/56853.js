@@ -29,8 +29,8 @@ var a = n(627968),
     E = n(57718),
     N = n(398025),
     I = n(545986),
-    k = n(516226),
-    O = n(720875),
+    O = n(516226),
+    k = n(720875),
     R = n(654487),
     w = n(419367),
     D = n(652215),
@@ -134,7 +134,7 @@ function B(e) {
         day: "numeric"
     }), $ = t.userStatus?.enrolledAt != null, q = t.userStatus?.completedAt != null, {
         onAssetLoadComplete: Q
-    } = i.useContext(k.M), Y = W ? "text-muted" : "always-white", J = i.useCallback(() => {
+    } = i.useContext(O.M), Y = W ? "text-muted" : "always-white", J = i.useCallback(() => {
         F && (0, I.d5)({
             quest: t,
             questContent: _.uF.QUEST_HOME_DESKTOP,
@@ -225,7 +225,7 @@ function B(e) {
                             })
                         })
                     })]
-                }), (0, a.jsx)(O.A, {
+                }), (0, a.jsx)(k.A, {
                     showPlaceholder: !r,
                     width: 100,
                     height: 30,

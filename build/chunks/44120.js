@@ -29,14 +29,14 @@ function v(e) {
             giftMessage: E,
             giftingOrigin: C,
             giftRecipient: I,
-            onClose: b,
-            onComplete: N
+            onClose: N,
+            onComplete: b
         } = e,
         S = !1,
         T = (0, l.A)(),
-        k = j ? "gift-payment-modal" : "payment-modal",
-        y = x.default.getCurrentUser();
-    y?.verified ? (r.h.wait(() => {
+        y = j ? "gift-payment-modal" : "payment-modal",
+        k = x.default.getCurrentUser();
+    k?.verified ? (r.h.wait(() => {
         r.h.dispatch({
             type: "PAYMENT_MODAL_OPEN"
         })
@@ -47,12 +47,12 @@ function v(e) {
         onStepChange: e => {
             t = e
         },
-        modalKey: k,
+        modalKey: y,
         isGift: j,
         giftMessage: E,
         giftingOrigin: C,
         giftRecipient: I,
-        onClose: b,
+        onClose: N,
         onCloseCallback: () => {
             if ((0, f.S)({
                     checkoutSucceeded: S
@@ -71,13 +71,13 @@ function v(e) {
                     checkout_design: e ? u.rS.UNIFIED : u.rS.LEGACY,
                     checkout_flow: o.C.COLLECTIBLES_CHECKOUT
                 })
-            }(0, s.ET)(), (0, c.z)(), b?.(S), S && (0, m.gB)()
+            }(0, s.ET)(), (0, c.z)(), N?.(S), S && (0, m.gB)()
         },
         onCloseRequest: () => {
-            null != t && p.has(t) && (0, i.OoC)(k)
+            null != t && p.has(t) && (0, i.OoC)(y)
         },
         onComplete: () => {
-            S = !0, N?.()
+            S = !0, b?.()
         }
     })) : (0, i.mMO)(async () => {
         let {
@@ -91,7 +91,7 @@ function v(e) {
             return (0, a.jsx)(e, {
                 ...l,
                 onClose: () => {
-                    n(), b?.(!1)
+                    n(), N?.(!1)
                 }
             })
         }

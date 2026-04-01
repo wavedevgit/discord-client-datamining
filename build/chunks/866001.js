@@ -32,7 +32,7 @@ var a = n(627968),
 function I(e) {
     return parseFloat(e.toFixed(3))
 }
-let k = [{
+let O = [{
     key: "store",
     cellClassName: E.lA,
     render(e) {
@@ -52,7 +52,7 @@ let k = [{
     }
 }];
 
-function O(e) {
+function k(e) {
     let {
         actionLog: t
     } = e, n = i.useMemo(() => t.traces.map(e => ({
@@ -61,7 +61,7 @@ function O(e) {
     })), [t]);
     return (0, a.jsx)(h.IpV, {
         children: (0, a.jsx)(y.A, {
-            columns: k,
+            columns: O,
             data: n
         })
     })
@@ -104,7 +104,7 @@ let R = [{
         let {
             actionLog: t
         } = e;
-        return (0, a.jsx)(O, {
+        return (0, a.jsx)(k, {
             actionLog: t
         })
     }

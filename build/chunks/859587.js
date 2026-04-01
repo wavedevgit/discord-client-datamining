@@ -14,14 +14,14 @@ function o(e, t) {
         o = (0, s.Q)(t),
         c = n.useRef(!1),
         d = n.useRef(r),
-        h = n.useRef(t),
-        m = n.useRef(o);
+        m = n.useRef(t),
+        h = n.useRef(o);
     n.useEffect(() => {
         d.current = r
     }, [r]), n.useEffect(() => {
-        h.current = t
+        m.current = t
     }, [t]), n.useEffect(() => {
-        m.current = o
+        h.current = o
     }, [o]), n.useEffect(() => {
         if (!e) {
             c.current = !1;
@@ -30,11 +30,11 @@ function o(e, t) {
         if (c.current) return;
         let t = setTimeout(() => {
             let e = d.current,
-                t = h.current,
+                t = m.current,
                 r = (0, a.B1)(t);
             l.default.track(u.HAw.SHOP_CARD_HOVERED, {
                 shop_session_id: e?.sessionId,
-                sku_id: r ? t.variants[m.current]?.skuId ?? t.skuId : t.skuId,
+                sku_id: r ? t.variants[h.current]?.skuId ?? t.skuId : t.skuId,
                 position_in_section: e?.tilePosition,
                 card_id: e?.cardId,
                 card_contents: r ? t.variants.map(e => e.skuId) : [t.skuId]
