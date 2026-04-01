@@ -26,8 +26,8 @@ var i = n(627968),
     T = n(74114),
     N = n(221059),
     b = n(513272),
-    y = n(881020),
-    v = n(637384),
+    v = n(881020),
+    y = n(637384),
     j = n(383233),
     R = n(222823),
     M = n(309010),
@@ -139,15 +139,15 @@ function en(e) {
         eN = (0, E.W1)(l);
     (0, Y.A)();
     let eb = null,
-        ey = [],
-        ev = el.map((e, t) => {
+        ev = [],
+        ey = el.map((e, t) => {
             if (e.type === Z.TZK.DIVIDER) {
                 let n = null != e.unreadId;
                 return null != eo ? null : e.isConversationDivider ? (0, i.jsx)(A.A, {
                     index: t,
                     item: e,
                     channel: l
-                }, `conv-divider-${e.contentKey??t}`) : e.isSummaryDivider ? (0, i.jsx)(v.A, {
+                }, `conv-divider-${e.contentKey??t}`) : e.isSummaryDivider ? (0, i.jsx)(y.A, {
                     index: t,
                     item: e,
                     channel: l,
@@ -192,14 +192,14 @@ function en(e) {
                 renderContentOnly: eT || s
             }, e.content.id)
         });
-    ey.push(...ev);
+    ev.push(...ey);
     let ej = el[el.length - 1];
     if (null != eh && es.forEach((e, t) => {
             let n = 0 === t && (0, U.l)(l, ej, new j.Ay({
                 type: Z.lAJ.DEFAULT,
                 author: eh
             }));
-            ey.push((0, i.jsx)(et, {
+            ev.push((0, i.jsx)(et, {
                 file: e,
                 channel: l,
                 user: eh,
@@ -207,7 +207,7 @@ function en(e) {
                 compact: ei
             }, `upload-${e.id}`))
         }), m.hasMoreBefore && null == eo) {
-        m.length > 0 && ey.unshift((0, i.jsx)("div", {
+        m.length > 0 && ev.unshift((0, i.jsx)("div", {
             style: {
                 height: $.N0,
                 flex: "0 0 auto"
@@ -216,18 +216,18 @@ function en(e) {
         let {
             useReducedMotion: e
         } = c.A;
-        (e && em() || !e) && ey.unshift((0, i.jsx)(z.Ay, {
+        (e && em() || !e) && ev.unshift((0, i.jsx)(z.Ay, {
             compact: ei,
             ...er
         }, "has-more"))
     }
-    if (m.hasMoreBefore && null == eo || ey.unshift((0, i.jsx)(g.A, {
+    if (m.hasMoreBefore && null == eo || ev.unshift((0, i.jsx)(g.A, {
             channel: l,
             showingBanner: ec
-        }, "empty-message")), m.hasMoreAfter && ey.push((0, i.jsx)(z.Ay, {
+        }, "empty-message")), m.hasMoreAfter && ev.push((0, i.jsx)(z.Ay, {
             compact: ei,
             ...er
-        }, "has-more-after")), !ec && eA && em() && ey.push((0, i.jsx)(q.A, {
+        }, "has-more-after")), !ec && eA && em() && ev.push((0, i.jsx)(q.A, {
             channel: l
         })), H > 0 && en && em()) {
         let e, n, s = R.Ay.getOldestUnreadTimestamp(l.id),
@@ -235,7 +235,7 @@ function en(e) {
             c = (0, O.ro)(new Date, new Date(r));
         if (R.Ay.isEstimated(l.id) ? (e = c ? Q.t.wvtbbG : Q.t.tHqbtg, n = Q.t.vaPWFe) : (e = c ? Q.t["BctFH/"] : Q.t["3wXb9P"], n = Q.t["4H8ldG"]), ep && (0, o.Kc)(l) && ex.includes(J.i.SUMMARIES)) {
             let s = R.Ay.ackMessageId(l.id),
-                c = (0, y.L)(l.id, R.Ay.getOldestUnreadMessageId(l.id));
+                c = (0, v.L)(l.id, R.Ay.getOldestUnreadMessageId(l.id));
             if ((0, d.zV)(Z.HAw.SUMMARIES_UNREAD_BAR_VIEWED, {
                     num_unread_summaries: c,
                     num_unread_messages: H,
@@ -369,7 +369,7 @@ function en(e) {
         })
     }
     return {
-        channelStreamMarkup: ey,
+        channelStreamMarkup: ev,
         newMessagesBar: t,
         jumpToPresentBar: n,
         forumPostActionBar: eI,

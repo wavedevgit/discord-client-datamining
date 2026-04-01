@@ -26,8 +26,8 @@ var i = n(627968),
     T = n(287809),
     N = n(486020),
     b = n(302975),
-    y = n(652215),
-    v = n(518477),
+    v = n(652215),
+    y = n(518477),
     j = n(985018),
     R = n(342659);
 let M = e => {
@@ -70,7 +70,7 @@ let M = e => {
                     (0, x.openUserProfileModal)({
                         userId: t,
                         channelId: n,
-                        tabSection: v.RP.MUTUAL_GUILDS,
+                        tabSection: y.RP.MUTUAL_GUILDS,
                         sourceAnalyticsLocations: [u.A.DM_CHANNEL]
                     })
                 },
@@ -94,7 +94,7 @@ let M = e => {
             variant: "secondary",
             onClick: () => {
                 d.A.blockUser(n, {
-                    location: y.liQ.DM_CHANNEL
+                    location: v.liQ.DM_CHANNEL
                 })
             },
             text: j.intl.string(j.t.l4Emac)
@@ -104,10 +104,10 @@ let M = e => {
             userId: n,
             applicationId: u,
             isGameRelationship: !1,
-            location: y.liQ.DM_CHANNEL
+            location: v.liQ.DM_CHANNEL
         });
         switch (t) {
-            case y.eA$.NONE:
+            case v.eA$.NONE:
                 return (0, i.jsxs)(i.Fragment, {
                     children: [!s && !l && (0, i.jsx)(c.Button, {
                         size: "sm",
@@ -116,38 +116,38 @@ let M = e => {
                             d.A.addRelationship({
                                 userId: n,
                                 context: {
-                                    location: y.liQ.DM_CHANNEL
+                                    location: v.liQ.DM_CHANNEL
                                 }
                             })
                         },
                         text: r
                     }), a]
                 });
-            case y.eA$.FRIEND:
+            case v.eA$.FRIEND:
                 return (0, i.jsxs)(i.Fragment, {
                     children: [(0, i.jsx)(c.Button, {
                         size: "sm",
                         variant: "secondary",
                         onClick: () => {
                             d.A.removeFriend(n, {
-                                location: y.liQ.DM_CHANNEL
+                                location: v.liQ.DM_CHANNEL
                             })
                         },
                         text: j.intl.string(j.t.cvSt1J)
                     }), a]
                 });
-            case y.eA$.BLOCKED:
+            case v.eA$.BLOCKED:
                 return (0, i.jsx)(c.Button, {
                     size: "sm",
                     variant: "secondary",
                     onClick: () => {
                         d.A.unblockUser(n, {
-                            location: y.liQ.DM_CHANNEL
+                            location: v.liQ.DM_CHANNEL
                         })
                     },
                     text: j.intl.string(j.t.XyHpKH)
                 });
-            case y.eA$.PENDING_INCOMING:
+            case v.eA$.PENDING_INCOMING:
                 return (0, i.jsxs)(i.Fragment, {
                     children: [(0, i.jsx)(c.Button, {
                         size: "sm",
@@ -159,13 +159,13 @@ let M = e => {
                         variant: "secondary",
                         onClick: () => {
                             d.A.cancelFriendRequest(n, {
-                                location: y.liQ.DM_CHANNEL
+                                location: v.liQ.DM_CHANNEL
                             })
                         },
                         text: j.intl.string(j.t.rQSndv)
                     }), a]
                 });
-            case y.eA$.PENDING_OUTGOING:
+            case v.eA$.PENDING_OUTGOING:
                 return (0, i.jsxs)(i.Fragment, {
                     children: [(0, i.jsx)(c.Button, {
                         size: "sm",
@@ -245,7 +245,7 @@ let M = e => {
                 channel: n,
                 navigateAwayOnReportSuccess: m
             })]
-        }), E = u !== y.eA$.PENDING_INCOMING || d || h ? null : (0, i.jsx)(c.Text, {
+        }), E = u !== v.eA$.PENDING_INCOMING || d || h ? null : (0, i.jsx)(c.Text, {
             color: "text-default",
             variant: "text-sm/normal",
             children: j.intl.string(j.t.c2v5nO)

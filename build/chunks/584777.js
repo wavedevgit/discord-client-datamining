@@ -26,8 +26,8 @@ let I = !1,
     T = "",
     N = 0,
     b = 0,
-    y = [],
-    v = !1,
+    v = [],
+    y = !1,
     j = new Set,
     R = null,
     M = new a.J(function(e) {
@@ -40,7 +40,7 @@ let I = !1,
     D = new Set;
 
 function O() {
-    T = "", N = 0, b = 0, y = [], j = new Set, I = !1, R = null, M.clear()
+    T = "", N = 0, b = 0, v = [], j = new Set, I = !1, R = null, M.clear()
 }
 
 function L(e) {
@@ -50,7 +50,7 @@ function L(e) {
 function P() {
     if (!I) return !1;
     let e = g.A.getChannel(R);
-    if (0 === T.trim().length) return null != i && i.clearQuery(), y = function(e) {
+    if (0 === T.trim().length) return null != i && i.clearQuery(), v = function(e) {
         let t = E.A.getFriendIDs(),
             n = d.A.getConfig({
                 location: "PrivateChannelRecipientsInviteStore"
@@ -110,8 +110,8 @@ function P() {
 
 function w() {
     if (!I) return !1;
-    let e = v;
-    return (v = E.A.getFriendCount() > 0) !== e
+    let e = y;
+    return (y = E.A.getFriendCount() > 0) !== e
 }
 
 function k(e, t) {
@@ -143,7 +143,7 @@ function U(e) {
             comparator: i
         }))
     }
-    y = n, K.emitChange()
+    v = n, K.emitChange()
 }
 
 function G() {
@@ -169,10 +169,10 @@ class V extends s.Ay.Store {
         this.waitFor(g.A, p.A, c.A, f.A, E.A, u.A, C.default, _.Ay), this.syncWith([C.default, g.A], P), this.syncWith([E.A], w)
     }
     getResults() {
-        return y
+        return v
     }
     hasFriends() {
-        return v
+        return y
     }
     getSelectedUsers() {
         return j
@@ -186,8 +186,8 @@ class V extends s.Ay.Store {
             selectedRow: b,
             selectedSection: N,
             selectedUsers: j,
-            results: y,
-            hasFriends: v
+            results: v,
+            hasFriends: y
         }
     }
     getSections() {

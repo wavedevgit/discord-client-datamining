@@ -4,7 +4,7 @@ n.d(t, {
 });
 var i = n(627968),
     l = n(64700),
-    s = n(773690),
+    s = n(687498),
     a = n(311907),
     r = n(582754),
     o = n(397927),
@@ -42,7 +42,7 @@ function C(e) {
     l.useEffect(() => () => {
         (0, u.MI)(I)
     }, [I]);
-    let y = e => {
+    let v = e => {
             if (n !== c.N.NO_POPOUT) return p;
             let t = S?.getBoundingClientRect();
             if (b.current = t, e.timestamp !== T || null == t) return p;
@@ -57,10 +57,10 @@ function C(e) {
                 width: 268
             }
         },
-        v = (0, l.useRef)(null),
+        y = (0, l.useRef)(null),
         j = (0, o.pnh)(N, {
             keys: e => e.timestamp,
-            ref: v,
+            ref: y,
             from: {
                 opacity: .2
             },
@@ -77,7 +77,7 @@ function C(e) {
                 position: "fixed",
                 visibility: "hidden",
                 opacity: 1,
-                ...C.enabled ? y(e) : (() => {
+                ...C.enabled ? v(e) : (() => {
                     if (n !== c.N.NO_POPOUT) return p;
                     let e = x.current?.getBoundingClientRect();
                     return null == e ? p : {
@@ -91,7 +91,7 @@ function C(e) {
             enter: e => [{
                 opacity: 1,
                 visibility: "visible",
-                ...y(e)
+                ...v(e)
             }],
             leave: {
                 opacity: 0,
@@ -111,7 +111,7 @@ function C(e) {
                 null != t.item && null != N.find(e => e.timestamp === t.item.timestamp) && (0, u.MI)(I, t.item.timestamp)
             }
         }, "animate-always");
-    return (0, s.useChain)([v, R], [0, .1], 3e3), (0, i.jsxs)(i.Fragment, {
+    return (0, s.useChain)([y, R], [0, .1], 3e3), (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)("div", {
             className: g.R,
             ref: x

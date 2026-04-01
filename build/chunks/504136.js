@@ -46,13 +46,13 @@ function h(e) {
                 }
             }
         }
-        let y = (0, a.i$)(e.timestamp, "LL");
-        y !== t && null == I && (C.push({
+        let v = (0, a.i$)(e.timestamp, "LL");
+        v !== t && null == I && (C.push({
             type: u.TZK.DIVIDER,
-            content: y,
-            contentKey: y
-        }), t = y);
-        let v = C[C.length - 1],
+            content: v,
+            contentKey: v
+        }), t = v);
+        let y = C[C.length - 1],
             j = null,
             R = (0, c.kf)(e);
         x = x || R;
@@ -64,11 +64,11 @@ function h(e) {
             else if ((0, c.iJ)(e) && n) return u.TZK.MESSAGE_GROUP_SPAMMER;
             return null
         }(m, e, R && p);
-        (null !== M && ([j, v] = (b = s = v, null == s || s.type !== M ? (N = {
+        (null !== M && ([j, y] = (b = s = y, null == s || s.type !== M ? (N = {
             type: M,
             content: [],
             key: e.id
-        }, C.push(N)) : b = (N = s).content[N.content.length - 1], [N, b])), g === e.id && null != S) ? (null != v && v.type === u.TZK.DIVIDER ? v.unreadId = e.id : null !== j ? (T = j, e.isFirstMessageInForumPost(m) || T.content.push({
+        }, C.push(N)) : b = (N = s).content[N.content.length - 1], [N, b])), g === e.id && null != S) ? (null != y && y.type === u.TZK.DIVIDER ? y.unreadId = e.id : null !== j ? (T = j, e.isFirstMessageInForumPost(m) || T.content.push({
             type: u.TZK.DIVIDER,
             unreadId: e.id
         }), T.hasUnread = !0) : e.isFirstMessageInForumPost(m) || C.push({
@@ -84,7 +84,7 @@ function h(e) {
             content: D.message,
             groupId: D.message.id
         });
-        let O = v?.type === u.TZK.MESSAGE ? h : v;
+        let O = y?.type === u.TZK.MESSAGE ? h : y;
         (0, o.l)(m, O, e) && (n = e.id);
         let L = {
             type: e.type === u.lAJ.THREAD_STARTER_MESSAGE ? u.TZK.THREAD_STARTER_MESSAGE : u.TZK.MESSAGE,

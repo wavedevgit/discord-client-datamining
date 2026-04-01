@@ -22,10 +22,10 @@ let p = e => {
         className: f,
         iconButtonSize: x,
         "aria-label": g
-    } = e, v = l.useId(), A = l.useRef(0), C = l.useRef(0), I = l.useRef(0), k = l.useRef(!1), b = l.useRef(!1), y = l.useRef(null), E = (0, u.bG)([d.A], () => d.A.keyboardModeEnabled), j = (0, u.bG)([d.A], () => d.A.useReducedMotion), _ = l.useMemo(() => l.Children.map(t, e => l.isValidElement(e) ? null != e && "object" == typeof e && e.$$typeof === Symbol.for("react.portal") ? e : l.cloneElement(e, {
+    } = e, v = l.useId(), C = l.useRef(0), A = l.useRef(0), I = l.useRef(0), k = l.useRef(!1), b = l.useRef(!1), y = l.useRef(null), E = (0, u.bG)([d.A], () => d.A.keyboardModeEnabled), j = (0, u.bG)([d.A], () => d.A.useReducedMotion), _ = l.useMemo(() => l.Children.map(t, e => l.isValidElement(e) ? null != e && "object" == typeof e && e.$$typeof === Symbol.for("react.portal") ? e : l.cloneElement(e, {
         tabIndex: -1
     }) : e), [t]), [R, T] = l.useState(!1), [L, P] = l.useState(!1), [S, O] = l.useState(!0), V = () => {
-        T(C.current > A.current)
+        T(A.current > C.current)
     }, N = l.useCallback(() => {
         if (b.current) return;
         let e = H.current;
@@ -48,13 +48,13 @@ let p = e => {
         let {
             contentRect: t
         } = e;
-        A.current = t.width, null != H.current && (I.current = H.current?.scrollLeft), V(), w(), M()
+        C.current = t.width, null != H.current && (I.current = H.current?.scrollLeft), V(), w(), M()
     }), H = l.useRef(null);
     l.useEffect(() => {
         let e = H.current;
         if (null == e) return;
         let t = new ResizeObserver(() => {
-            C.current = e.scrollWidth, e.scrollLeft !== I.current && (e.scrollLeft = I.current), V(), w()
+            A.current = e.scrollWidth, e.scrollLeft !== I.current && (e.scrollLeft = I.current), V(), w()
         });
         Array.from(e.children).forEach(e => {
             t.observe(e)
@@ -75,27 +75,27 @@ let p = e => {
             if (null == e) return;
             let {
                 scrollLeft: t
-            } = e, r = Math.max(0, t - A.current);
+            } = e, r = Math.max(0, t - C.current);
             I.current = r, k.current = !0, e.scrollTo({
                 left: r,
                 behavior: j ? "auto" : "smooth"
             }), e.addEventListener("scrollend", () => k.current = !1, {
                 once: !0
             }), w()
-        }, 200), [A, w, j]),
+        }, 200), [C, w, j]),
         U = l.useMemo(() => (0, a.throttle)(() => {
             let e = H.current;
             if (null == e) return;
             let {
                 scrollLeft: t
-            } = e, r = t + A.current;
+            } = e, r = t + C.current;
             I.current = r, k.current = !0, e.scrollTo({
                 left: r,
                 behavior: j ? "auto" : "smooth"
             }), e.addEventListener("scrollend", () => k.current = !1, {
                 once: !0
             }), w()
-        }, 200), [A, w, j]),
+        }, 200), [C, w, j]),
         D = l.useCallback(() => {
             let e = H.current;
             if (null == e) return !1;
@@ -174,7 +174,7 @@ let p = e => {
             onFocus: e => {
                 let t = H.current;
                 if (null != t) {
-                    if (e.preventDefault(), N(), -1 !== t.tabIndex) {
+                    if (e.preventDefault(), (null == y.current || y.current >= t.childElementCount) && N(), -1 !== t.tabIndex) {
                         let e = y?.current ?? 0,
                             r = t.children[e];
                         null != r && (r.focus(), r.setAttribute("tabIndex", "0"), y.current = e, M())

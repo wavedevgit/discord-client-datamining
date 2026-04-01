@@ -28,8 +28,8 @@ var i = n(627968),
     T = n(571694),
     N = n(47167),
     b = n(915089),
-    y = n(66442),
-    v = n(279208),
+    v = n(66442),
+    y = n(279208),
     j = n(267102),
     R = n(976860),
     M = n(219271),
@@ -577,7 +577,7 @@ class er extends l.PureComponent {
             copied: l
         } = this.state;
         if (null == e || !e.isMultiUserDM() || this.isPartyFull()) return null;
-        let s = null != t ? (0, v.A)(t.code) : "",
+        let s = null != t ? (0, y.A)(t.code) : "",
             a = s.length > 0;
         return (0, i.jsx)(u.D0$, {
             label: en.intl.string(en.t.t3O2BR),
@@ -586,7 +586,7 @@ class er extends l.PureComponent {
             }) : void 0,
             children: (0, i.jsx)(u.e2O, {
                 supportsCopy: K.p5,
-                placeholder: (0, v.A)(en.intl.string(en.t.lPVBqP)),
+                placeholder: (0, y.A)(en.intl.string(en.t.lPVBqP)),
                 value: a ? n ? en.intl.string(en.t["6HzNgZ"]) : s : "",
                 buttonColor: d.$n.Colors.BRAND,
                 text: a ? l ? en.intl.string(en.t.q30c5i) : en.intl.string(en.t.OpuAlK) : en.intl.string(en.t.qzxqUf),
@@ -911,7 +911,7 @@ function eo(e) {
     } = (0, I.Ay)(x.A.NEW_GROUP_DM_INVITE_MODAL), c = (0, N.Jo)(Array.from(t), B.default, F.A);
     return (0, i.jsxs)("div", {
         className: ei.zj,
-        children: [(0, i.jsx)(y.X, {
+        children: [(0, i.jsx)(v.X, {
             className: ei.r9,
             channel: null,
             previewIcon: l,

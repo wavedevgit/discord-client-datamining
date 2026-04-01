@@ -91,11 +91,11 @@ function f(e, t) {
                     b[t] = n
                 }
             }
-            let y = b.filter(c.Vq);
-            E.current = (0, s.keyBy)((0, s.range)(y.length), e => y[e].id);
-            let v = [...T, ...y];
-            return null != _ && (h && v.length >= x ? v[Math.max(0, v.length - 1)] = _ : v.push(_)), {
-                visibleParticipants: v,
+            let v = b.filter(c.Vq);
+            E.current = (0, s.keyBy)((0, s.range)(v.length), e => v[e].id);
+            let y = [...T, ...v];
+            return null != _ && (h && y.length >= x ? y[Math.max(0, y.length - 1)] = _ : y.push(_)), {
+                visibleParticipants: y,
                 participantTileWidth: S
             }
         }, [e, t, f, m, h, d, o, r, i]);

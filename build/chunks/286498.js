@@ -105,8 +105,8 @@ function b(e) {
             disabled: C = !1,
             onClick: S,
             onMessageClick: b,
-            onMouseEnter: y,
-            "aria-setsize": v,
+            onMouseEnter: v,
+            "aria-setsize": y,
             "aria-posinset": j,
             handleTrackAction: R,
             inImprovedDMExperiment: M,
@@ -147,13 +147,13 @@ function b(e) {
             R(l, s, "select"), S?.(n.id)
         } : void 0,
         onMouseEnter: () => {
-            y?.(l, s)
+            v?.(l, s)
         },
         ...P,
         role: "option",
         "aria-selected": f,
         "aria-disabled": C,
-        "aria-setsize": v,
+        "aria-setsize": y,
         "aria-posinset": j,
         children: (0, i.jsxs)(g.A, {
             align: g.A.Align.CENTER,

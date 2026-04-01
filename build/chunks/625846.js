@@ -451,8 +451,8 @@ function eS(e) {
         renderGridSection: e1,
         renderGridItem: e6,
         getGridSectionHeight: e8,
-        getSectionProps: e7,
-        handleGridFocus: e4
+        getSectionProps: e4,
+        handleGridFocus: e7
     } = function(e) {
         let {
             masonryListScrollerRef: t,
@@ -606,7 +606,7 @@ function eS(e) {
         tt = (0, eh.Ay)({
             id: "forum-grid-view",
             isEnabled: eu && e5 && !te,
-            setFocus: e4
+            setFocus: e7
         }),
         tn = (0, ex.A)({
             listRef: eo,
@@ -662,7 +662,7 @@ function eS(e) {
                         getItemHeight: tl,
                         renderSection: e1,
                         renderItem: e6,
-                        getSectionProps: e7,
+                        getSectionProps: e4,
                         onScroll: A ? e2 : void 0,
                         chunkSize: 350,
                         ...ts,

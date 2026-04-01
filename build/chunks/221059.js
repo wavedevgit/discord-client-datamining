@@ -88,7 +88,7 @@ function x(e) {
             name: s.K.SAFETY_WARNING_VIEW
         })
     }, [t, x, S]);
-    let y = () => {
+    let v = () => {
             (0, r.mMO)(async () => {
                 let {
                     default: e
@@ -121,7 +121,7 @@ function x(e) {
                                 buttonText: E.intl.string(E.t["5QYPO2"]),
                                 buttonVariant: "critical-primary",
                                 onButtonPress: () => {
-                                    s(), v(g.Wm.USER_MODAL_BLOCK_CONFIRM, g.Wm.USER_MODAL_BLOCK_CANCEL, y)
+                                    s(), y(g.Wm.USER_MODAL_BLOCK_CONFIRM, g.Wm.USER_MODAL_BLOCK_CANCEL, v)
                                 }
                             }, "block-button")]
                         })
@@ -129,7 +129,7 @@ function x(e) {
                 }
             })
         },
-        v = (e, l, s) => {
+        y = (e, l, s) => {
             (0, r.mMO)(async () => {
                 let {
                     default: a
@@ -162,7 +162,7 @@ function x(e) {
             text: E.intl.string(E.t["Qk/c48"]),
             variant: "primary",
             onClick: () => {
-                y(), (0, g._$)({
+                v(), (0, g._$)({
                     channelId: t,
                     warningId: x,
                     senderId: S,
@@ -173,7 +173,7 @@ function x(e) {
         }, ...I ? [] : [{
             text: E.intl.string(E.t.ie0QdN),
             variant: "critical-primary",
-            onClick: () => v(g.Wm.USER_BANNER_BLOCK_CONFIRM, g.Wm.USER_BANNER_BLOCK_CANCEL)
+            onClick: () => y(g.Wm.USER_BANNER_BLOCK_CONFIRM, g.Wm.USER_BANNER_BLOCK_CANCEL)
         }]]
     })
 }

@@ -19,8 +19,8 @@ var l = r(417597),
     x = r(298072),
     g = r(993408),
     v = r(450481),
-    A = r(740076),
-    C = r(466459),
+    C = r(740076),
+    A = r(466459),
     I = r(623373),
     k = r(561769),
     b = r(766172),
@@ -220,9 +220,9 @@ let P = e => {
         } = e, p = (0, l.bG)([m.default], () => m.default.getCurrentUser()), x = h.Ay.canUseCollectibles(p), {
             isPurchased: I,
             isPartiallyOwnedBundle: b
-        } = (0, C.h)(t), j = (0, g.G0)(t), _ = (0, g.tt)(t), {
+        } = (0, A.h)(t), j = (0, g.G0)(t), _ = (0, g.tt)(t), {
             isDisabled: R
-        } = (0, A.I)(t.skuId), T = (0, g.Zu)({
+        } = (0, C.I)(t.skuId), T = (0, g.Zu)({
             product: t,
             isPartiallyOwnedBundle: b,
             isPurchased: I

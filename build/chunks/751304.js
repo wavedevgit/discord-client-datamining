@@ -18,8 +18,8 @@ var n = r(627968),
     x = r(161918),
     g = r(597783),
     v = r(859587),
-    A = r(918838),
-    C = r(536572),
+    C = r(918838),
+    A = r(536572),
     I = r(268959),
     k = r(387945),
     b = r(638006),
@@ -61,9 +61,9 @@ let O = l.memo(function(e) {
             previewingVariantIndex: Z,
             handleEntering: $,
             handleLeaving: J
-        } = (0, L.f)(t), ee = (0, _.gZ)() ?? X, et = (0, x.Mk)(), er = et?.tab, en = (0, f.uM)(), el = l.useMemo(() => (0, _.UU)(t, er, en), [t, er, en]), ei = (0, C.s7)(t), es = l.useRef(null), {
+        } = (0, L.f)(t), ee = (0, _.gZ)() ?? X, et = (0, x.Mk)(), er = et?.tab, en = (0, f.uM)(), el = l.useMemo(() => (0, _.UU)(t, er, en), [t, er, en]), ei = (0, A.s7)(t), es = l.useRef(null), {
             isHoveringOrFocusing: ea
-        } = (0, p.A)(es), eu = (0, A.U)(t), eo = (0, u.A)(es, eu), {
+        } = (0, p.A)(es), eu = (0, C.U)(t), eo = (0, u.A)(es, eu), {
             handleCardVisibilityChange: ec
         } = (0, g.Z)(t.skuId, er === P.G2.CATALOG ? "full" : er), ed = (0, _.ql)(t, h.A.COLLECTIBLES_SHOP_CARD, el);
         (0, v.x)(ea, t);

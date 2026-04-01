@@ -28,9 +28,9 @@ var i = n(627968),
     T = n(636922),
     N = n(652215),
     b = n(985018),
-    y = n(284362);
+    v = n(284362);
 
-function v(e) {
+function y(e) {
     e.stopPropagation()
 }
 let j = e => {
@@ -41,9 +41,9 @@ let j = e => {
             className: s
         } = e;
         return (0, i.jsxs)("div", {
-            className: a()(s, y.wx),
+            className: a()(s, v.wx),
             children: [(0, i.jsxs)("div", {
-                className: y.gn,
+                className: v.gn,
                 children: [null != n ? (0, i.jsx)(n, {
                     color: u.LU0.colors.INTERACTIVE_TEXT_DEFAULT
                 }) : null, null != t ? (0, i.jsx)(u.Text, {
@@ -60,14 +60,14 @@ let j = e => {
             image: n
         } = e;
         return (0, i.jsxs)("div", {
-            className: y.zC,
+            className: v.zC,
             children: [(0, i.jsx)("div", {
-                className: y.Sl,
+                className: v.Sl,
                 style: {
                     backgroundImage: `url(${n})`
                 }
             }), (0, i.jsx)("div", {
-                className: y.rf,
+                className: v.rf,
                 children: t
             })]
         })
@@ -92,7 +92,7 @@ class M extends l.PureComponent {
             jumping: e
         } = this.props;
         return (0, i.jsx)("div", {
-            className: y.UD,
+            className: v.UD,
             children: (0, i.jsx)(u.Button, {
                 variant: "secondary",
                 size: "sm",
@@ -111,7 +111,7 @@ class M extends l.PureComponent {
             closeAriaLabel: s
         } = this.props;
         return null != e && (t || n || null != l && l.isPrivate()) ? (0, i.jsx)("div", {
-            className: y.UD,
+            className: v.UD,
             children: (0, i.jsx)(u.K0, {
                 icon: u.PGe,
                 size: "sm",
@@ -123,7 +123,7 @@ class M extends l.PureComponent {
     }
     render() {
         return (0, i.jsxs)("div", {
-            className: y.uu,
+            className: v.uu,
             children: [this.renderJumpButton(), this.renderCloseButton()]
         })
     }
@@ -179,7 +179,7 @@ function O(e) {
         P = [],
         w = !0;
     null == n || r && 0 === n.length ? P = [(0, i.jsx)("div", {
-        className: a()(y.zC, y.k$),
+        className: a()(v.zC, v.k$),
         children: (0, i.jsx)(u.y$y, {})
     }, "spinner")] : 0 === n.length ? P.push((0, i.jsx)(l.Fragment, {
         children: p()
@@ -188,10 +188,10 @@ function O(e) {
     }));
     let k = null;
     null != n && n.length > 0 && null != h && (k = r ? (0, i.jsx)("div", {
-        className: y.sw,
+        className: v.sw,
         children: (0, i.jsx)(u.y$y, {})
     }, "loading-more-after") : s ? (0, i.jsx)("div", {
-        className: y.u9,
+        className: v.u9,
         children: (0, i.jsx)(u.Button, {
             variant: "secondary",
             size: "sm",
@@ -200,12 +200,12 @@ function O(e) {
             onClick: h
         })
     }) : (0, i.jsx)("div", {
-        className: y.lJ,
+        className: v.lJ,
         children: p()
     }));
     let U = _?.(),
         G = w && null != U ? (0, i.jsx)("div", {
-            className: y.qr,
+            className: v.qr,
             children: (0, i.jsx)(A.A, {
                 style: {
                     width: "100%",
@@ -221,15 +221,15 @@ function O(e) {
     D && (F.maxHeight -= 40);
     let H = null != h && s;
     return (0, i.jsx)("div", {
-        className: a()(y.KQ, T ?? y.G6),
+        className: a()(v.KQ, T ?? v.G6),
         style: F,
-        onClick: v,
-        onDoubleClick: v,
+        onClick: y,
+        onDoubleClick: y,
         "aria-label": e["aria-label"],
         children: (0, i.jsxs)(u.Fmo, {
             component: g(),
             children: [(0, i.jsxs)(u.T7Y, {
-                className: I ?? y.m4,
+                className: I ?? v.m4,
                 onScroll: H ? L : void 0,
                 ref: R,
                 children: [(0, i.jsx)(c.hD, {
@@ -271,7 +271,7 @@ function L(e) {
         scrollerClassName: x,
         className: S,
         onCloseMessage: b,
-        listName: v,
+        listName: y,
         closeAriaLabel: j
     } = e, R = (0, d.bG)([f.A], () => {
         let e = null != s ? f.A.getMessages(s.id) : null;
@@ -315,9 +315,9 @@ function L(e) {
             if (null != E) return E(t, e => M(t, e));
             let l = [];
             return null == n ? [] : (l.push((0, i.jsxs)("div", {
-                className: y.Uc,
+                className: v.Uc,
                 children: [(0, i.jsx)(T.A, {
-                    className: y.i0,
+                    className: v.i0,
                     message: t,
                     channel: n
                 }), (0, i.jsx)(D, {
@@ -331,7 +331,7 @@ function L(e) {
                 })]
             }, t.id)), l)
         },
-        listName: v,
+        listName: y,
         "aria-label": e["aria-label"]
     })
 }

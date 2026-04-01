@@ -26,8 +26,8 @@ var i = n(627968),
     T = n(989837),
     N = n(500049),
     b = n(721768),
-    y = n(258363),
-    v = n(842209),
+    v = n(258363),
+    y = n(842209),
     j = n(861382),
     R = n(392054),
     M = n(168186),
@@ -80,8 +80,8 @@ var i = n(627968),
     eT = n(580745),
     eN = n(696451),
     eb = n(320501),
-    ey = n(576705),
-    ev = n(309010),
+    ev = n(576705),
+    ey = n(309010),
     ej = n(522602),
     eR = n(287809),
     eM = n(954571),
@@ -218,7 +218,7 @@ class e0 extends l.PureComponent {
         } = (0, M.Ez)(e.interactionData), {
             command: l,
             application: s
-        } = v.EW({
+        } = y.EW({
             channel: t,
             type: "channel"
         }, n);
@@ -235,7 +235,7 @@ class e0 extends l.PureComponent {
                 command: l,
                 section: e,
                 location: R.Oh.RECALL,
-                initialValues: (0, y.getInitialValuesFromInteractionOptions)(l, i ?? []),
+                initialValues: (0, v.getInitialValuesFromInteractionOptions)(l, i ?? []),
                 commandOrigin: R.iw.CHAT
             })
         }
@@ -573,7 +573,7 @@ class e1 extends l.PureComponent {
             currentChannelId: i
         } = t;
         return n.id !== i ? {
-            textAreaFocused: null != n && !c.Fr && ey.A.can(ez.xBc.SEND_MESSAGES, n),
+            textAreaFocused: null != n && !c.Fr && ev.A.can(ez.xBc.SEND_MESSAGES, n),
             currentChannelId: n.id
         } : null
     }
@@ -631,7 +631,7 @@ class e1 extends l.PureComponent {
         if (t) switch (e.which) {
             case ez.Ks6.ARROW_LEFT:
                 n === L.oU.SIDEBAR && eL._.dispatch(ez.jej.FOCUS_CHANNEL_TEXT_AREA, {
-                    channelId: ev.A.getChannelId()
+                    channelId: ey.A.getChannelId()
                 });
                 return;
             case ez.Ks6.ARROW_RIGHT:
@@ -667,7 +667,7 @@ class e1 extends l.PureComponent {
         } = e;
         return t.type === ez.rbe.DM && n ? (0, i.jsx)(ec.A, {}) : t.isModeratorReportChannel() && t.isArchivedThread() ? (0, i.jsx)(eh.A, {
             channelId: t.id
-        }) : null != s && (0, z.n)(s) && null != l && !ey.A.can(ez.xBc.ADMINISTRATOR, l) ? (0, i.jsx)(Y.j, {
+        }) : null != s && (0, z.n)(s) && null != l && !ev.A.can(ez.xBc.ADMINISTRATOR, l) ? (0, i.jsx)(Y.j, {
             guild: l,
             disabledUntil: s
         }) : a ? (0, i.jsx)(K.u, {
@@ -698,8 +698,8 @@ class e1 extends l.PureComponent {
                 announcementComposerEnabled: b
             } = this.props,
             {
-                textAreaFocused: y,
-                textAreaHighlighted: v
+                textAreaFocused: v,
+                textAreaHighlighted: y
             } = this.state,
             j = c === L.oU.SIDEBAR;
         e = j && t.type === ez.rbe.GUILD_VOICE ? eY.t.pnnyFZ : j && t.type === ez.rbe.GUILD_STAGE_VOICE ? eY.t.YInSkq : d.k.THREADS.has(t.type) ? eY.t["OkzL+Q"] : eY.t.UbNmGc;
@@ -717,8 +717,8 @@ class e1 extends l.PureComponent {
                     children: (0, i.jsx)(eQ, {
                         ref: this.refToChannelTextAreaFormComponent,
                         refInstance: this.containerDomRef,
-                        focused: y,
-                        highlighted: v,
+                        focused: v,
+                        highlighted: y,
                         channel: t,
                         guild: n,
                         keyboardModeEnabled: l,
@@ -831,7 +831,7 @@ let e2 = l.memo(function(e) {
         channel: t
     }), o = (0, ec.L)(eR.default.getCurrentUser(), t), [c] = (0, q.c)(n?.id), d = (0, V.uZ)(n?.id), u = (0, h.bG)([eR.default], () => eR.default.getCurrentUser()), A = (0, h.bG)([eN.Ay], () => null != u && (eN.Ay.getMember(n?.id ?? ez.dJq, u?.id)?.isPending ?? !1)), g = (0, h.bG)([es.A], () => es.A.isEnabled()), p = (0, eo.A)(t.id), f = (0, J.A)(t.id), E = (0, eA.D)(t.id), C = (0, h.bG)([e_.A], () => e_.A.getAlsoSendToChannel(t.id)), S = (0, h.bG)([ea.Ay, ex.default], () => ea.Ay.getUserCombo(ex.default.getId(), t.id)), I = (0, _.rj)(t), T = (0, _.aW)(t), N = I.length > 0 || t.rateLimitPerUser > 0 || null != S || null != T, {
         showLinkedLobbyApplicationLoadingIndicator: b
-    } = (0, eG.A)(t.linkedLobby), y = (0, H.A)("ChannelChat");
+    } = (0, eG.A)(t.linkedLobby), v = (0, H.A)("ChannelChat");
     return (0, W.A)(t), (0, i.jsx)(e1, {
         channel: t,
         isEditing: null != (0, h.bG)([eT.A], () => eT.A.getEditingMessageId(t.id)),
@@ -853,6 +853,6 @@ let e2 = l.memo(function(e) {
         pendingScheduledMessage: E,
         messagesTypingGradient: N,
         showLinkedLobbyApplicationLoadingIndicator: b,
-        announcementComposerEnabled: y
+        announcementComposerEnabled: v
     })
 })

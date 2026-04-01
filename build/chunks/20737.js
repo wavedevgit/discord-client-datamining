@@ -26,8 +26,8 @@ var i = n(627968),
     T = n(629016),
     N = n(186111),
     b = n(576705),
-    y = n(461213),
-    v = n(203982),
+    v = n(461213),
+    y = n(203982),
     j = n(723702),
     R = n(518960),
     M = n(545428),
@@ -45,7 +45,7 @@ let U = l.memo(function(e) {
         editorTextContent: G,
         setValue: F,
         canOnlyUseTextCommands: H
-    } = e, B = (0, _.Us)(), V = l.useRef(null), K = l.useRef(null), W = (0, r.bG)([y.A], () => y.A.getActivities()), z = (0, A.Et)(), q = (0, r.bG)([m.A], () => m.A.getLastClipsSession()), Y = (0, r.yK)([m.A], () => m.A.getNewClipIds()), J = (0, r.bG)([I.Ay], () => null == I.Ay.getCurrentSidebarChannelId(s.id)), $ = (0, r.yK)([T.A], () => s.type === L.rbe.DM ? W.filter(e => !T.A.getParty(e.party?.id)?.has(s.getRecipientId())) : W, [W, s]), {
+    } = e, B = (0, _.Us)(), V = l.useRef(null), K = l.useRef(null), W = (0, r.bG)([v.A], () => v.A.getActivities()), z = (0, A.Et)(), q = (0, r.bG)([m.A], () => m.A.getLastClipsSession()), Y = (0, r.yK)([m.A], () => m.A.getNewClipIds()), J = (0, r.bG)([I.Ay], () => null == I.Ay.getCurrentSidebarChannelId(s.id)), $ = (0, r.yK)([T.A], () => s.type === L.rbe.DM ? W.filter(e => !T.A.getParty(e.party?.id)?.has(s.getRecipientId())) : W, [W, s]), {
         showClipsHeaderEntrypoint: Z
     } = h.L_.useConfig({
         location: "ChannelAttachButton"
@@ -76,8 +76,8 @@ let U = l.memo(function(e) {
             } = e;
             t === s.id && V.current?.activateUploadDialogue()
         };
-        return v._.subscribe(L.jej.UPLOAD_FILE, e), () => {
-            v._.unsubscribe(L.jej.UPLOAD_FILE, e)
+        return y._.subscribe(L.jej.UPLOAD_FILE, e), () => {
+            y._.unsubscribe(L.jej.UPLOAD_FILE, e)
         }
     });
     let ed = (0, x.n)(s),
@@ -166,7 +166,7 @@ let U = l.memo(function(e) {
                     t = e.currentTarget.files, null != (n = e.currentTarget.err) && "ETOOLARGE" === n.code ? (0, R.V)(s, []) : (0, R.R)(t, s, U, {
                         requireConfirm: !0,
                         origin: "file_picker"
-                    }), v._.dispatchToLastSubscribed(L.jej.TEXTAREA_FOCUS), e.currentTarget.value = ""
+                    }), y._.dispatchToLastSubscribed(L.jej.TEXTAREA_FOCUS), e.currentTarget.value = ""
                 },
                 multiple: s.rateLimitPerUser <= 0,
                 tabIndex: -1,

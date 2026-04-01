@@ -6,7 +6,7 @@ var i = n(627968),
     l = n(64700),
     s = n(503698),
     a = n.n(s),
-    r = n(773690),
+    r = n(687498),
     o = n(311907),
     c = n(397927),
     d = n(765671),
@@ -134,21 +134,21 @@ let S = l.memo(function(e) {
                 pointerEvents: "none",
                 config: r.config.stiff
             }),
-            y = l.useMemo(() => T ?? {
+            v = l.useMemo(() => T ?? {
                 value: 0,
                 multiplier: 1
             }, [T]),
-            v = l.useRef(y);
+            y = l.useRef(v);
         l.useEffect(() => {
-            (y.multiplier > 1 || y.value > 0) && (v.current = y)
-        }, [y]);
+            (v.multiplier > 1 || v.value > 0) && (y.current = v)
+        }, [v]);
         let {
             multiplier: j,
             value: R
         } = l.useMemo(() => ({
-            value: N ? y.value : v.current.value,
-            multiplier: N ? y.multiplier : v.current.multiplier
-        }), [N, y, v]);
+            value: N ? v.value : y.current.value,
+            multiplier: N ? v.multiplier : y.current.multiplier
+        }), [N, v, y]);
         return (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)(S, {
                 channelId: t,

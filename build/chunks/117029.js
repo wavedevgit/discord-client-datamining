@@ -39,8 +39,8 @@ let C = l.memo(function(e) {
         zoomLevel: T,
         minZoom: N,
         maxZoom: b,
-        isDragging: y,
-        isWheeling: v,
+        isDragging: v,
+        isWheeling: y,
         isSlidering: j,
         setIsSlidering: R,
         doZoom: M,
@@ -95,9 +95,9 @@ let C = l.memo(function(e) {
             "--custom-zoom-indicator-top": `${100*(0,r.clamp)(s-i/2,0,1-i)}%`,
             "--custom-zoom-indicator-width": `${100*n}%`,
             "--custom-zoom-indicator-height": `${100*i}%`,
-            "--custom-zoom-indicator-transition": y || U || v || j ? "none" : "top 0.1s ease-out, left 0.1s ease-out, width 0.1s ease-out, height 0.1s ease-out"
+            "--custom-zoom-indicator-transition": v || U || y || j ? "none" : "top 0.1s ease-out, left 0.1s ease-out, width 0.1s ease-out, height 0.1s ease-out"
         }
-    }, [y, U, v, j, P, T, L]), Z = l.useCallback(e => {
+    }, [v, U, y, j, P, T, L]), Z = l.useCallback(e => {
         e.preventDefault(), e.stopPropagation(), M(T - .25, A.qd, "button")
     }, [M, T]), X = l.useCallback(e => {
         e.preventDefault(), e.stopPropagation(), M(T + .25, A.qd, "button")

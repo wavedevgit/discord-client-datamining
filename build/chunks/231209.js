@@ -184,8 +184,8 @@ let B = e => {
                                 skuIds: e.skuIds,
                                 endTime: e.endTime,
                                 tab: c
-                            }, d)
-                        })
+                            })
+                        }, d)
                     }
                     default:
                         return null
@@ -197,8 +197,8 @@ let B = e => {
                             [R.J1]: 0 === d || g
                         }),
                         children: _
-                    }, d)
-                })
+                    })
+                }, d)
             })(e, r > 0 ? D[r - 1] : null, r))
         })
     },

@@ -6,7 +6,7 @@ var r = n(627968),
     l = n(64700),
     a = n(503698),
     i = n.n(a),
-    s = n(773690),
+    s = n(687498),
     o = n(311907),
     u = n(876230),
     c = n(649658),
@@ -93,7 +93,7 @@ let R = {
             initialTimeSec: M,
             onError: e6,
             onHlsInstance: q
-        }), [e4, e7] = l.useState(!1), [e9, e8] = l.useState(null), [e3, e5] = l.useState(0), te = B ?? eJ.current?.duration ?? 0, [tt, tn] = l.useState(u.oA.MD), tr = {
+        }), [e4, e8] = l.useState(!1), [e7, e9] = l.useState(null), [e3, e5] = l.useState(0), te = B ?? eJ.current?.duration ?? 0, [tt, tn] = l.useState(u.oA.MD), tr = {
             [u.oA.MD]: 50,
             [u.oA.LG]: 58
         };
@@ -172,7 +172,7 @@ let R = {
                 let t = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1];
                 if (null == eJ.current) return;
                 let n = eJ.current.currentTime;
-                eS(e / (eJ.current.duration ?? 1) * 100), eN(!0), e7(!1), eJ.current.currentTime = e, t && V?.(n, e)
+                eS(e / (eJ.current.duration ?? 1) * 100), eN(!0), e8(!1), eJ.current.currentTime = e, t && V?.(n, e)
             }, [V]),
             tx = () => {
                 if (null != eJ.current) switch (ep) {
@@ -187,10 +187,10 @@ let R = {
                 }
             },
             tE = e => {
-                e8(e)
+                e9(e)
             },
             tv = e => {
-                e8(t => t?.id === e.id ? null : t)
+                e9(t => t?.id === e.id ? null : t)
             },
             tg = l.useCallback(() => {
                 if (null == eJ.current || 0 === eJ.current.textTracks.length) return;
@@ -246,11 +246,11 @@ let R = {
             config: R
         }));
         l.useEffect(() => (tN({
-            captionHeightSpring: ez && null != e9 ? tC.current?.clientHeight ?? 0 : 0,
+            captionHeightSpring: ez && null != e7 ? tC.current?.clientHeight ?? 0 : 0,
             immediate: eV
         }), () => {
             tA.stop()
-        }), [ez, tN, eV, e9, tA]), l.useEffect(() => (tS({
+        }), [ez, tN, eV, e7, tA]), l.useEffect(() => (tS({
             controlBarAnimSpring: td || eM ? 1 : 0,
             immediate: eV
         }), () => {
@@ -351,7 +351,7 @@ let R = {
                     onCanPlay: tb,
                     onCanPlayThrough: tb,
                     onSeeked: () => {
-                        e7(!0)
+                        e8(!0)
                     },
                     onAbort: () => e6(u.SB.ABORT),
                     onError: () => e6(u.SB.ERROR),
@@ -454,7 +454,7 @@ let R = {
                     }) : (0, r.jsx)(d.E$n, {
                         className: T.PK
                     })
-                }, ep), ez && null != e9 && !tT && (0, r.jsx)(s.animated.div, {
+                }, ep), ez && null != e7 && !tT && (0, r.jsx)(s.animated.div, {
                     className: T.o$,
                     ref: tC,
                     "data-testid": "discord-web-video-player-captions",
@@ -468,7 +468,7 @@ let R = {
                         variant: "text-lg/semibold",
                         color: "always-white",
                         className: T.qh,
-                        children: e9.text
+                        children: e7.text
                     })
                 }), (0, r.jsxs)(s.animated.div, {
                     className: T.r8,

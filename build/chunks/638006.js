@@ -18,8 +18,8 @@ var n = r(627968),
     x = r(846957),
     g = r(929283),
     v = r(245068),
-    A = r(761365),
-    C = r(550674),
+    C = r(761365),
+    A = r(550674),
     I = r(797877);
 let k = e => {
         let {
@@ -48,7 +48,7 @@ let k = e => {
         let {
             product: t,
             isCardHovered: r
-        } = e, l = (0, u.bG)([c.default], () => c.default.getCurrentUser()), i = (0, p.YW)(t), a = (0, C.D)(t);
+        } = e, l = (0, u.bG)([c.default], () => c.default.getCurrentUser()), i = (0, p.YW)(t), a = (0, A.D)(t);
         switch (i) {
             case s.R.PROFILE_EFFECT:
                 return (0, n.jsx)(h.A, {
@@ -65,7 +65,7 @@ let k = e => {
                     avatarSize: o._3J.SIZE_120
                 });
             case s.R.NAMEPLATE:
-                return (0, n.jsx)(A.A, {
+                return (0, n.jsx)(C.A, {
                     nameplate: a,
                     user: l,
                     isHighlighted: r

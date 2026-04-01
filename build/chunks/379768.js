@@ -26,8 +26,8 @@ var i = n(627968),
     T = n(287809),
     N = n(488926),
     b = n(427262),
-    y = n(314307),
-    v = n(234567),
+    v = n(314307),
+    y = n(234567),
     j = n(652215),
     R = n(985018),
     M = n(650373),
@@ -63,16 +63,16 @@ function O(e) {
             return n || l
         }).value()
     }, [t, P]), G = I.A.can(j.xBc.MANAGE_CHANNELS, t) || I.A.can(j.xBc.MANAGE_ROLES, t), F = l.useCallback(() => s(!1), []);
-    return (0, i.jsxs)(y.Ay, {
+    return (0, i.jsxs)(v.Ay, {
         channelId: t.id,
-        children: [(0, i.jsx)(y.WK, {
+        children: [(0, i.jsx)(v.WK, {
             locked: !0,
             channelType: t.type
-        }), (0, i.jsx)(y.cr, {
+        }), (0, i.jsx)(v.cr, {
             children: R.intl.format(R.t.I3R7Vn, {
                 channelName: r
             })
-        }), (0, i.jsx)(y.j1, {
+        }), (0, i.jsx)(v.j1, {
             className: D.PT,
             children: R.intl.format(R.t.QuwqjG, {
                 channelName: r,
@@ -129,7 +129,7 @@ function O(e) {
             }(), k.map((e, n) => {
                 let l = e.colorString ?? j.TpD,
                     s = e.tags?.guild_connections !== void 0;
-                return G ? (0, i.jsx)(v.A, {
+                return G ? (0, i.jsx)(y.A, {
                     className: a()(M.JC, {
                         [M.HV]: n === k.length - 1
                     }),

@@ -29,7 +29,7 @@ let m = l.memo(function(e) {
     } = (0, s.cf)([c.A], () => ({
         isInteractionUserBlocked: c.A.isBlockedForMessage(t),
         isInteractionUserIgnored: c.A.isIgnoredForMessage(t)
-    }), [t]), S = (0, s.bG)([o.A], () => o.A.getMessageByReference(t?.messageReference)), I = (0, u.r4)(t.interaction?.user.id, n.id), T = (0, u.T0)(t.interaction, n, A, E), N = (0, u.Yq)(g, E), b = (0, r.Am)(t), y = b?.type === a.G4.APPLICATION_COMMAND ? b.target_user?.id : void 0, v = (0, u.r4)(y, n.id), j = (0, u.I)(y, n, f, E), R = (0, u.Ge)(_, E), M = (0, u.U_)(p, E), D = l.useCallback(() => {
+    }), [t]), S = (0, s.bG)([o.A], () => o.A.getMessageByReference(t?.messageReference)), I = (0, u.r4)(t.interaction?.user.id, n.id), T = (0, u.T0)(t.interaction, n, A, E), N = (0, u.Yq)(g, E), b = (0, r.Am)(t), v = b?.type === a.G4.APPLICATION_COMMAND ? b.target_user?.id : void 0, y = (0, u.r4)(v, n.id), j = (0, u.I)(v, n, f, E), R = (0, u.Ge)(_, E), M = (0, u.U_)(p, E), D = l.useCallback(() => {
         E({
             interactionUsernameProfile: !1,
             interactionAvatarProfile: !1,
@@ -66,7 +66,7 @@ let m = l.memo(function(e) {
         onUserContextMenu: I,
         onClickTargetAvatar: R,
         onClickTargetUsername: j,
-        onTargetUserContextMenu: v,
+        onTargetUserContextMenu: y,
         onPopoutRequestClose: D,
         renderTargetMessage: O
     })

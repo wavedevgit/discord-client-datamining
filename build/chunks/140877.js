@@ -18,15 +18,15 @@ var n = r(627968),
     x = r(525723),
     g = r(57020),
     v = r(985018),
-    A = r(413908);
-let C = e => {
+    C = r(413908);
+let A = e => {
         let {
             product: t,
             prioritizedCurrency: r
         } = e, o = (0, i.bG)([a.default], () => a.default.getCurrentUser()), h = u.Ay.canUseCollectibles(o), {
             isDisabled: f
         } = (0, d.I)(t.skuId), {
-            isPurchased: C,
+            isPurchased: A,
             isPartiallyOwnedBundle: I
         } = (0, m.h)(t), k = (0, c.G0)(t), b = (0, c.tt)(t), y = l.useMemo(() => (0, c.fT)(t, h), [t, h]), E = (0, x.V_)(t), {
             checkoutEligiblePrices: j,
@@ -48,7 +48,7 @@ let C = e => {
             color: "text-muted",
             lineClamp: 1,
             children: v.intl.string(v.t.BEjTij)
-        }) : C && !T ? (0, n.jsx)(s.Text, {
+        }) : A && !T ? (0, n.jsx)(s.Text, {
             variant: "text-md/medium",
             color: "text-muted",
             lineClamp: 1,
@@ -70,7 +70,7 @@ let C = e => {
             nitroIconType: h ? "default" : void 0,
             nitroIconSize: "sm",
             discountOfferAmount: E,
-            className: R && !_ ? A.c : void 0,
+            className: R && !_ ? C.c : void 0,
             variant: "text-md/bold"
         })
     },
@@ -81,7 +81,7 @@ let C = e => {
         } = e, l = (0, f.Vm)(t), i = (0, o.Q)(l);
         if (null == l) return null;
         let s = (0, h.rb)(l, i);
-        return (0, n.jsx)(C, {
+        return (0, n.jsx)(A, {
             product: s,
             prioritizedCurrency: r
         })

@@ -30,8 +30,8 @@ let S = l.memo(function(e) {
         referencedUsernameProfile: T,
         referencedAvatarProfile: N,
         setPopout: b,
-        isReplySpineClickable: y,
-        showReplySpine: v
+        isReplySpineClickable: v,
+        showReplySpine: y
     } = e, j = n.state === h.a.LOADED ? n.message : void 0, R = (0, p.X4)(j), M = (0, c.S)((t.editedTimestamp ?? t.timestamp).valueOf()), D = l.useMemo(() => {
         if (null == j) return null;
         let e = (0, r.A)(j);
@@ -105,8 +105,8 @@ let S = l.memo(function(e) {
         onClickReply: w,
         onContextMenu: P,
         onPopoutRequestClose: G,
-        isReplySpineClickable: y,
-        showReplySpine: v
+        isReplySpineClickable: v,
+        showReplySpine: y
     })
 });
 

@@ -27,8 +27,8 @@ var i = n(627968),
     T = n(723702),
     N = n(661191),
     b = n(314307),
-    y = n(652215),
-    v = n(936649),
+    v = n(652215),
+    y = n(936649),
     j = n(985018),
     R = n(103935);
 
@@ -75,7 +75,7 @@ function D(e) {
             channel: L
         } = e,
         P = (0, o.bG)([E.A], () => null != L ? E.A.getGuild(L.getGuildId()) : null, [L]),
-        w = null != P && N.default.extractTimestamp(P.id) < Date.now() - y.NOr,
+        w = null != P && N.default.extractTimestamp(P.id) < Date.now() - v.NOr,
         k = (0, o.bG)([_.default], () => P?.ownerId === _.default.getId(), [P]),
         {
             canInvite: U,
@@ -95,9 +95,9 @@ function D(e) {
             handleDownload: Y,
             handleAddApplication: J
         } = (t = l.useCallback(() => {
-            m.Ay.trackWithMetadata(y.HAw.SERVER_SETUP_CTA_CLICKED, {
-                setup_type: v.XT.CHANNEL_WELCOME,
-                action: v.AG.INVITE
+            m.Ay.trackWithMetadata(v.HAw.SERVER_SETUP_CTA_CLICKED, {
+                setup_type: y.XT.CHANNEL_WELCOME,
+                action: y.AG.INVITE
             }), null != P && (0, d.mMO)(async () => {
                 let {
                     default: e
@@ -105,49 +105,49 @@ function D(e) {
                 return t => (0, i.jsx)(e, {
                     ...t,
                     guild: P,
-                    source: y.PE1.CHANNEL_WELCOME,
+                    source: v.PE1.CHANNEL_WELCOME,
                     analyticsLocation: {
-                        section: y.JJy.CHANNEL_WELCOME_CTA
+                        section: v.JJy.CHANNEL_WELCOME_CTA
                     }
                 })
             })
         }, [P]), s = l.useCallback(() => {
-            m.Ay.trackWithMetadata(y.HAw.SERVER_SETUP_CTA_CLICKED, {
-                setup_type: v.XT.CHANNEL_WELCOME,
-                action: v.AG.SEND_MESSAGE
-            }), S._.dispatch(y.jej.TEXTAREA_FOCUS, {
+            m.Ay.trackWithMetadata(v.HAw.SERVER_SETUP_CTA_CLICKED, {
+                setup_type: y.XT.CHANNEL_WELCOME,
+                action: y.AG.SEND_MESSAGE
+            }), S._.dispatch(v.jej.TEXTAREA_FOCUS, {
                 highlight: !0,
-                channelId: y.dJq
+                channelId: v.dJq
             })
         }, []), h = l.useCallback(() => {
-            m.Ay.trackWithMetadata(y.HAw.SERVER_SETUP_CTA_CLICKED, {
-                setup_type: v.XT.CHANNEL_WELCOME,
-                action: v.AG.PERSONALIZE_SERVER
+            m.Ay.trackWithMetadata(v.HAw.SERVER_SETUP_CTA_CLICKED, {
+                setup_type: y.XT.CHANNEL_WELCOME,
+                action: y.AG.PERSONALIZE_SERVER
             }), null != P && g.A.open(P.id, (0, f.x)(), {
-                section: y.JJy.CHANNEL_WELCOME_CTA
+                section: v.JJy.CHANNEL_WELCOME_CTA
             })
         }, [P]), {
             handleInvite: t,
             handleMessage: s,
             handlePersonalize: h,
             handleDownload: l.useCallback(() => {
-                m.Ay.trackWithMetadata(y.HAw.SERVER_SETUP_CTA_CLICKED, {
-                    setup_type: v.XT.CHANNEL_WELCOME,
-                    action: v.AG.DOWNLOAD
+                m.Ay.trackWithMetadata(v.HAw.SERVER_SETUP_CTA_CLICKED, {
+                    setup_type: y.XT.CHANNEL_WELCOME,
+                    action: y.AG.DOWNLOAD
                 }), (0, d.mMO)(async () => {
                     let {
                         default: e
                     } = await Promise.all([n.e("56423"), n.e("25280")]).then(n.bind(n, 987482));
                     return t => (0, i.jsx)(e, {
-                        source: y.JJy.CHANNEL_WELCOME_CTA,
+                        source: v.JJy.CHANNEL_WELCOME_CTA,
                         ...t
                     })
                 })
             }, []),
             handleAddApplication: l.useCallback(() => {
-                null != P && (m.Ay.trackWithMetadata(y.HAw.SERVER_SETUP_CTA_CLICKED, {
-                    setup_type: v.XT.CHANNEL_WELCOME,
-                    action: v.AG.ADD_APP
+                null != P && (m.Ay.trackWithMetadata(v.HAw.SERVER_SETUP_CTA_CLICKED, {
+                    setup_type: y.XT.CHANNEL_WELCOME,
+                    action: y.AG.ADD_APP
                 }), (0, d.mMO)(async () => {
                     let {
                         default: e
@@ -201,7 +201,7 @@ function D(e) {
     if (l.useEffect(() => {
             (async () => {
                 try {
-                    let e = await (0, p.c)(P?.id ?? y.dJq);
+                    let e = await (0, p.c)(P?.id ?? v.dJq);
                     ee(e.map(e => e.id))
                 } catch {}
             })()
@@ -265,7 +265,7 @@ function D(e) {
     }, "addapp")));
     let ei = k ? j.intl.string(j.t["1ach9C"]) : j.intl.string(j.t["ezm+/j"]);
     w && (ei = j.intl.string(j.t["gwyU/J"]));
-    let el = `${I.A.getArticleURL(y.MVz.GUILD_GETTING_STARTED)}?utm_source=discord&utm_medium=blog&utm_campaign=2020-06_help-new-user&utm_content=--t%3Apm`;
+    let el = `${I.A.getArticleURL(v.MVz.GUILD_GETTING_STARTED)}?utm_source=discord&utm_medium=blog&utm_campaign=2020-06_help-new-user&utm_content=--t%3Apm`;
     return (0, i.jsx)(b.Ay, {
         channelId: L.id,
         children: (0, i.jsx)("div", {

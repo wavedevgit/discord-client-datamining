@@ -30,8 +30,8 @@ function b(e) {
     let {
         channel: t,
         options: b,
-        onFileUpload: y,
-        onClose: v,
+        onFileUpload: v,
+        onClose: y,
         onSelect: j,
         draftType: R,
         editorTextContent: M,
@@ -92,7 +92,7 @@ function b(e) {
         "data-menu-migrated": !0,
         onSelect: j,
         navId: "channel-attach",
-        onClose: v,
+        onClose: y,
         "aria-label": T.intl.string(T.t.Xm41aV),
         children: b.map(function(e) {
             switch (e.type) {
@@ -105,7 +105,7 @@ function b(e) {
                             type: "icon",
                             icon: e.icon
                         },
-                        action: y
+                        action: v
                     }, "upload-file");
                 case C.v.UPLOAD_TEXT_AS_FILE:
                     if ("" === M) return null;
