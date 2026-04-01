@@ -17,7 +17,7 @@ var i = n(627968),
 let m = function(e) {
     let {
         channel: t
-    } = e, n = (0, o.vL)(t), [m, g] = l.useState(!1), p = (0, s.bG)([c.Ay], () => c.Ay.hasUnreadPins(t.id), [t]), f = (0, d.aL)(), x = l.useRef(null), E = l.useCallback(() => {
+    } = e, n = (0, o.ni)(t), [m, g] = l.useState(!1), p = (0, s.bG)([c.Ay], () => c.Ay.hasUnreadPins(t.id), [t]), f = (0, d.aL)(), x = l.useRef(null), E = l.useCallback(() => {
         n || g(e => !e)
     }, [n]);
 

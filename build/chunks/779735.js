@@ -30,7 +30,7 @@ let h = e => {
         root_node_id: j,
         success_node_id: I,
         fail_node_id: N
-    } = n, [S, y] = a.useState(j), [k, E] = a.useState(void 0), [M, R] = a.useState(void 0), [w, O] = a.useState([]), [G, L] = a.useState(void 0), [D, B] = a.useState(void 0), [P, U] = a.useState(void 0);
+    } = n, [S, y] = a.useState(j), [k, E] = a.useState(void 0), [M, R] = a.useState(void 0), [w, O] = a.useState([]), [G, L] = a.useState(void 0), [D, B] = a.useState(void 0), [U, P] = a.useState(void 0);
     (0, s.Ay)(() => {
         (0, u.VE)()
     });
@@ -93,11 +93,11 @@ let h = e => {
                     t = w[l];
                 R(t?.textInput), E(t?.multiSelect?.state), O(e)
             } else O([]), R(void 0), E(void 0);
-            U(t), y(n.id)
+            P(t), y(n.id)
         }, [C, w]);
     a.useEffect(() => {
-        null != P && U(void 0)
-    }, [P]);
+        null != U && P(void 0)
+    }, [U]);
     let z = a.useMemo(() => {
         let e = [],
             t = [];
@@ -145,7 +145,7 @@ let h = e => {
                         onSubmit: V,
                         reportId: G,
                         nodeMap: C,
-                        initialErrorMessage: e.id === S ? P : void 0
+                        initialErrorMessage: e.id === S ? U : void 0
                     })
                 })
             }, e.id))

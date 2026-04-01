@@ -35,8 +35,8 @@ var a = n(627968),
     R = n(661191),
     G = n(240248),
     M = n(409626),
-    P = n(880405),
-    w = n(422069),
+    w = n(880405),
+    P = n(422069),
     V = n(476464),
     D = n(205184),
     F = n(939764),
@@ -453,7 +453,7 @@ function eE(e) {
         clientThemesClassName: u
     } = (0, I.Ay)(), m = (0, x.bG)([L.default], () => L.default.locale), {
         analyticsLocations: h
-    } = (0, A.Ay)(v.A.GAME_PROFILE), g = l.useMemo(() => (0, M.u9)(), []), _ = (0, x.yK)([w.A], () => (w.A.getSimilarGames(t) ?? []).slice(0, 25)), [j, E] = l.useState(null), T = (0, D.s)(t), [y, k] = l.useState(null), O = (0, C.h)(t), {
+    } = (0, A.Ay)(v.A.GAME_PROFILE), g = l.useMemo(() => (0, M.u9)(), []), _ = (0, x.yK)([P.A], () => (P.A.getSimilarGames(t) ?? []).slice(0, 25)), [j, E] = l.useState(null), T = (0, D.s)(t), [y, k] = l.useState(null), O = (0, C.h)(t), {
         data: R,
         refetch: G
     } = (0, S.k)(t), V = R?.supplementalData ?? null, F = V?.name ?? O?.name, W = (e, a) => {
@@ -483,7 +483,7 @@ function eE(e) {
             if (0 === _.length) {
                 E(null);
                 try {
-                    await (0, P.NP)(t)
+                    await (0, w.NP)(t)
                 } catch (e) {
                     E(e)
                 }
@@ -570,9 +570,9 @@ function eC(e) {
         clientThemesClassName: T
     } = (0, I.Ay)(), k = (0, x.bG)([L.default], () => L.default.locale), O = l.useMemo(() => (0, M.u9)(), []), {
         analyticsLocations: R
-    } = (0, A.Ay)(v.A.GAME_PROFILE), G = (0, C.h)(t), P = (0, D.s)(t), {
-        data: w
-    } = (0, S.k)(t), V = w?.supplementalData ?? null, U = V?.name ?? w?.name ?? G?.name ?? "", {
+    } = (0, A.Ay)(v.A.GAME_PROFILE), G = (0, C.h)(t), w = (0, D.s)(t), {
+        data: P
+    } = (0, S.k)(t), V = P?.supplementalData ?? null, U = V?.name ?? P?.name ?? G?.name ?? "", {
         hasAlreadyLinked: Y,
         canStartAuthorization: H,
         fetched: z,
@@ -605,7 +605,7 @@ function eC(e) {
         }), (0, N.He)()
     }), (0, p.Ay)(() => () => {
         let e = Date.now(),
-            n = P.map(t => {
+            n = w.map(t => {
                 let n = (0, b.JM)(t) ? (0, b.W6)(t, e) : (0, b.aJ)(t, k);
                 return JSON.stringify({
                     item_id: t.id,
@@ -617,7 +617,7 @@ function eC(e) {
             viewId: O,
             applicationId: t,
             gameName: U,
-            playedFriendIds: P.map(e => e.author_id),
+            playedFriendIds: w.map(e => e.author_id),
             playedFriendsData: n,
             similarGames: [],
             officialGuildId: _?.guild?.id
@@ -649,7 +649,7 @@ function eC(e) {
             c(), (0, y.closeUserProfileModal)()
         }, [c]),
         [ei, er] = l.useState(!1);
-    return null == w || null == V || null == G ? null : (0, a.jsx)(A.f5, {
+    return null == P || null == V || null == G ? null : (0, a.jsx)(A.f5, {
         value: R,
         children: (0, a.jsx)(g.N, {
             transitionState: s,
@@ -664,7 +664,7 @@ function eC(e) {
                     }), (0, a.jsxs)(f.HOs, {
                         orientation: "auto",
                         children: [(0, a.jsx)(Z.A, {
-                            game: w,
+                            game: P,
                             application: G,
                             onClose: c,
                             trackAction: q,
@@ -673,11 +673,11 @@ function eC(e) {
                             children: m ? (0, a.jsxs)("div", {
                                 className: em.jC,
                                 children: [(0, a.jsx)(ef, {
-                                    game: w,
+                                    game: P,
                                     closeModal: el,
                                     trackAction: q
                                 }), (0, a.jsx)(ej, {
-                                    game: w,
+                                    game: P,
                                     application: G,
                                     appContext: o,
                                     source: n,
@@ -688,7 +688,7 @@ function eC(e) {
                             }) : (0, a.jsx)("div", {
                                 className: em.b9,
                                 children: (0, a.jsx)(ep, {
-                                    game: w,
+                                    game: P,
                                     application: G,
                                     trackAction: q,
                                     analyticsLocations: R

@@ -1,12 +1,11 @@
 /** chunk id: 561769 params = (module,exports,require) **/
 n.d(t, {
-    AW: () => j,
-    Hi: () => E,
-    UU: () => C,
-    Vm: () => N,
-    gZ: () => A,
-    nY: () => v,
-    ql: () => I,
+    AW: () => A,
+    Hi: () => j,
+    UU: () => E,
+    Vm: () => I,
+    gZ: () => v,
+    ql: () => C,
     v3: () => _
 });
 var a, l, i = n(64700),
@@ -29,15 +28,11 @@ let _ = i.createContext({
 });
 
 function v() {
-    return i.useContext(_).flattenProductVariants
-}
-
-function A() {
     return i.useContext(_).prioritizedCurrency
 }
-var j = ((a = {}).NONE = "none", a.NEW = "new", a.ORBS_EXCLUSIVE = "orbs_exclusive", a.LIMITED_TIME = "limited_time", a.NITRO_EXCLUSIVE = "nitro_exclusive", a),
-    E = ((l = {}).FIAT = "fiat", l.ORBS = "orbs", l);
-let C = (e, t, n) => a => {
+var A = ((a = {}).NONE = "none", a.NEW = "new", a.ORBS_EXCLUSIVE = "orbs_exclusive", a.LIMITED_TIME = "limited_time", a.NITRO_EXCLUSIVE = "nitro_exclusive", a),
+    j = ((l = {}).FIAT = "fiat", l.ORBS = "orbs", l);
+let E = (e, t, n) => a => {
         d.default.track(p.HAw.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
             collectibles_shop_session_id: n?.sessionId,
             sku_id: e.skuId,
@@ -51,7 +46,7 @@ let C = (e, t, n) => a => {
             cta_name: a
         })
     },
-    I = (e, t, n) => {
+    C = (e, t, n) => {
         let a = (0, x.Mk)(),
             l = a?.tab,
             r = (0, u.uM)(),
@@ -79,7 +74,7 @@ let C = (e, t, n) => a => {
             })
         }, [e, l, f, d, n, r?.cardId, r?.sessionId, r?.tilePosition])(t)
     },
-    N = e => {
+    I = e => {
         let {
             flattenProductVariants: t,
             productOverride: n

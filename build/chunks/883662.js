@@ -1,7 +1,7 @@
 /** chunk id: 883662 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => m
+    A: () => f
 });
 var r = n(627968),
     i = n(64700),
@@ -14,12 +14,12 @@ var r = n(627968),
     d = n(418829),
     h = n(652215);
 
-function m(e) {
+function f(e) {
     let {
         partialRoot: t,
         target: n,
-        defaultTarget: m,
-        onViewChange: f,
+        defaultTarget: f,
+        onViewChange: m,
         sidebarFooter: p,
         emptyState: _,
         searchQuery: v,
@@ -47,8 +47,8 @@ function m(e) {
                 onClose: x.onClose,
                 partialRoot: t,
                 target: n,
-                defaultTarget: m,
-                onViewChange: f,
+                defaultTarget: f,
+                onViewChange: m,
                 emptyState: _,
                 sidebarFooter: p,
                 searchQuery: v,

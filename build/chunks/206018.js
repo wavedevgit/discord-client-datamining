@@ -34,8 +34,8 @@ function y(e) {
         onInteraction: n,
         onSelect: y,
         onClose: O,
-        maybeRenderPTTCheckbox: P = !1,
-        renderDeafenCheckbox: M = !1,
+        maybeRenderPTTCheckbox: M = !1,
+        renderDeafenCheckbox: P = !1,
         renderInputProfiles: N = !1,
         renderOutputDevices: U = !1,
         renderOutputVolume: D = !1,
@@ -106,7 +106,7 @@ function y(e) {
                     })
                 }), D && F]
             }), (0, r.jsxs)(s.rXV, {
-                children: [P && C.isPlatformEmbedded && z ? (0, r.jsx)(s.sLh, {
+                children: [M && C.isPlatformEmbedded && z ? (0, r.jsx)(s.sLh, {
                     checked: Y === v.TBI.PUSH_TO_TALK,
                     id: "input-mode",
                     label: x.intl.string(x.t.Q8gkVL),
@@ -114,7 +114,7 @@ function y(e) {
                         analyticsLocations: R
                     }),
                     disabled: H === S.m.STUDIO
-                }) : null, M && (0, r.jsx)(s.sLh, {
+                }) : null, P && (0, r.jsx)(s.sLh, {
                     id: "deafen",
                     label: x.intl.string(x.t.wjcRFX),
                     action: () => o.A.toggleSelfDeaf({

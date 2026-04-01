@@ -16,12 +16,12 @@ var l = n(627968),
     g = n(47167),
     m = n(713654),
     x = n(414618),
-    A = n(526132),
-    p = n(97469),
+    p = n(526132),
+    A = n(97469),
     f = n(406704),
     b = n(544028),
-    j = n(95701),
-    C = n(291731),
+    C = n(95701),
+    j = n(291731),
     N = n(176360),
     v = n(863036),
     _ = n(734057),
@@ -36,9 +36,9 @@ var l = n(627968),
     w = n(159495),
     O = n(652215),
     G = n(985018),
-    D = n(305020);
+    k = n(305020);
 
-function k(e) {
+function D(e) {
     let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : null,
         n = arguments.length > 2 ? arguments[2] : void 0;
     h.Ay.trackWithMetadata(O.HAw.SETTINGS_PANE_VIEWED, {
@@ -50,7 +50,7 @@ function k(e) {
 }
 class B extends i.PureComponent {
     componentDidMount() {
-        k(this.props.section, null, this.props.analyticsLocation)
+        D(this.props.section, null, this.props.analyticsLocation)
     }
     componentWillUnmount() {
         r.h.wait(() => (0, o.VN)())
@@ -67,7 +67,7 @@ class B extends i.PureComponent {
             canManageWebhooks: r,
             canUnlinkChannel: o
         } = this.props;
-        (a || s || r || o) && (l !== O.XlH.CLOSED || l === t) && (s || i !== O.p_A.PERMISSIONS) && (r || o || i !== O.p_A.INTEGRATIONS) ? i !== n && k(i, n): (0, d.jH)()
+        (a || s || r || o) && (l !== O.XlH.CLOSED || l === t) && (s || i !== O.p_A.PERMISSIONS) && (r || o || i !== O.p_A.INTEGRATIONS) ? i !== n && D(i, n): (0, d.jH)()
     }
     render() {
         let {
@@ -78,8 +78,8 @@ class B extends i.PureComponent {
             category: s,
             canManageRoles: r,
             canManageChannels: h,
-            canDeleteChannels: A,
-            canManageWebhooks: p,
+            canDeleteChannels: p,
+            canManageWebhooks: A,
             canUnlinkChannel: f
         } = this.props;
         return null == i ? null : (0, l.jsx)(c.Ay, {
@@ -97,22 +97,22 @@ class B extends i.PureComponent {
                     canDeleteChannels: r,
                     canManageWebhooks: c,
                     canUnlinkChannel: h
-                } = e, A = (0, m.gU)(t), {
-                    GUILD_CATEGORY: p
-                } = O.rbe, f = j.Le.has(t.type), b = t.type === p ? G.intl.string(G.t.ifbXnL) : f ? t.isForumPost() ? G.intl.string(G.t.nEOg1N) : G.intl.string(G.t.H7vTe2) : G.intl.string(G.t["8D8Rsb"]);
+                } = e, p = (0, m.gU)(t), {
+                    GUILD_CATEGORY: A
+                } = O.rbe, f = C.Le.has(t.type), b = t.type === A ? G.intl.string(G.t.ifbXnL) : f ? t.isForumPost() ? G.intl.string(G.t.nEOg1N) : G.intl.string(G.t.H7vTe2) : G.intl.string(G.t["8D8Rsb"]);
                 return [{
                     section: u.Fq.HEADER,
                     label: null != t ? (0, l.jsxs)(l.Fragment, {
-                        children: [null != A ? (0, l.jsx)(A, {
+                        children: [null != p ? (0, l.jsx)(p, {
                             size: "xxs",
                             color: "currentColor",
-                            className: D.p
+                            className: k.p
                         }) : null, (0, g.m1)(t, E.default, S.A), null != n ? (0, l.jsx)(a.Text, {
                             tag: "span",
                             variant: "text-xs/semibold",
                             color: "text-default",
                             lineClamp: 1,
-                            className: D.L,
+                            className: k.L,
                             children: (0, g.m1)(n, E.default, S.A)
                         }) : null]
                     }) : G.intl.string(G.t.XPDhcc)
@@ -140,17 +140,17 @@ class B extends i.PureComponent {
                     label: G.intl.string(G.t["9F90ic"]),
                     element: R.A,
                     type: u.Py.CUSTOM,
-                    predicate: () => t.type !== p && s && !f && !t.isModeratorReportChannel()
+                    predicate: () => t.type !== A && s && !f && !t.isModeratorReportChannel()
                 }, {
                     section: O.p_A.INTEGRATIONS,
                     label: G.intl.string(G.t.s69NLF),
                     ariaLabel: G.intl.string(G.t.s69NLF),
                     element: I.A,
                     notice: {
-                        stores: [C.A],
+                        stores: [j.A],
                         element: I.q
                     },
-                    predicate: () => !(!c && !h || t.isModeratorReportChannel()) && j.oH.has(t.type)
+                    predicate: () => !(!c && !h || t.isModeratorReportChannel()) && C.oH.has(t.type)
                 }, {
                     section: u.Fq.DIVIDER
                 }, {
@@ -176,8 +176,8 @@ class B extends i.PureComponent {
                 category: s,
                 canManageRoles: r,
                 canManageChannels: h,
-                canDeleteChannels: A,
-                canManageWebhooks: p,
+                canDeleteChannels: p,
+                canManageWebhooks: A,
                 canUnlinkChannel: f
             })
         })
@@ -188,7 +188,7 @@ function P() {
     let {
         channel: e,
         analyticsLocation: t
-    } = (0, s.cf)([v.A], () => v.A.getProps()), n = (0, s.bG)([v.A], () => v.A.getFormState()), i = (0, s.bG)([v.A], () => v.A.getSection()), a = (0, s.bG)([b.A], () => b.A.theme), r = (0, p.NC)(), o = (0, f.NI)(e), d = (0, f.H_)(e), {
+    } = (0, s.cf)([v.A], () => v.A.getProps()), n = (0, s.bG)([v.A], () => v.A.getFormState()), i = (0, s.bG)([v.A], () => v.A.getSection()), a = (0, s.bG)([b.A], () => b.A.theme), r = (0, A.NC)(), o = (0, f.NI)(e), d = (0, f.H_)(e), {
         canManageChannels: c,
         canManageRoles: u,
         canManageWebhooks: h,
@@ -197,7 +197,7 @@ function P() {
         canManageChannels: y.A.can(O.xBc.MANAGE_CHANNELS, e),
         canManageRoles: null != e && y.A.can(O.xBc.MANAGE_ROLES, e),
         canManageWebhooks: null != e && y.A.can(O.xBc.MANAGE_WEBHOOKS, e),
-        canUnlinkChannel: (0, A.n)(e, y.A)
+        canUnlinkChannel: (0, p.n)(e, y.A)
     })), m = (0, s.bG)([_.A], () => _.A.getChannel(e?.parent_id));
     return (0, l.jsx)(B, {
         channel: e,

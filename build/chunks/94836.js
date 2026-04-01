@@ -254,8 +254,8 @@ function N(e) {
                 }
             })
         }, [n, S, T, L]),
-        P = l.useCallback(() => R(!0), []),
-        w = l.useCallback(() => R(!1), []),
+        w = l.useCallback(() => R(!0), []),
+        P = l.useCallback(() => R(!1), []),
         V = l.useCallback(() => m(null), []),
         D = l.useCallback(e => {
             e && M()
@@ -269,8 +269,8 @@ function N(e) {
                 reducedMotion: b,
                 videoRef: E,
                 mediaPlayerRef: G,
-                onPlay: P,
-                onPause: w,
+                onPlay: w,
+                onPause: P,
                 onFullscreenChange: D
             }, `${T}-${y.url}`)
         }) : (0, a.jsxs)("div", {

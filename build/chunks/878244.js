@@ -15,8 +15,8 @@ var n = t(627968),
     p = t(317560),
     I = t(533406),
     f = t(954571),
-    C = t(661492),
-    _ = t(594832),
+    _ = t(661492),
+    C = t(594832),
     g = t(146423),
     T = t(121700),
     E = t(460442),
@@ -58,19 +58,19 @@ function m(i) {
         numMoreItems: v
     } = i, [w, m] = s.useState(!1), R = null != v && v > 0, M = s.useCallback(() => {
         if (R) return void l();
-        let i = u === _.uS.WISHLIST ? "wishlist" : "shop";
+        let i = u === C.uS.WISHLIST ? "wishlist" : "shop";
         f.default.track(A.HAw.GIFTING_ITEM_CLICKED, {
             sku_id: e.id,
             item_source: i,
-            wishlist_id: u === _.uS.WISHLIST ? c : null,
+            wishlist_id: u === C.uS.WISHLIST ? c : null,
             product_line: e.productLine
         }), t?.()
     }, [t, c, u, e.id, e.productLine, l, R]), P = s.useCallback(() => {
-        let i = u === _.uS.WISHLIST ? "wishlist" : "shop";
+        let i = u === C.uS.WISHLIST ? "wishlist" : "shop";
         f.default.track(A.HAw.GIFTING_ITEM_CLICKED, {
             sku_id: e.id,
             item_source: i,
-            wishlist_id: u === _.uS.WISHLIST ? c : null,
+            wishlist_id: u === C.uS.WISHLIST ? c : null,
             product_line: e.productLine
         }), r?.()
     }, [r, e.id, e.productLine, u, c]), {
@@ -92,7 +92,7 @@ function m(i) {
         "aria-label": R ? x.intl.formatToPlainString(x.t["8uYD+I"], {
             username: a.username
         }) : x.intl.formatToPlainString(x.t.ZBB4Ty, {
-            productName: (0, C.TC)(e)
+            productName: (0, _.TC)(e)
         }),
         onHoverOrFocusChange: m,
         children: [(0, n.jsx)(T.A, {
@@ -100,7 +100,7 @@ function m(i) {
             sku: e,
             isCardHovered: w && !R,
             location: "DMGiftingModalWishlistItemCardBase",
-            replacedElement: d && u === _.uS.WISHLIST ? (0, n.jsx)(L.X, {
+            replacedElement: d && u === C.uS.WISHLIST ? (0, n.jsx)(L.X, {
                 spec: h,
                 users: [a],
                 guildId: k ?? void 0,
@@ -127,8 +127,8 @@ function R(i) {
         hasMultipleSources: l,
         source: d,
         ...f
-    } = i, C = (0, a.bG)([u.A], () => u.A.getApplication(e.applicationId)), _ = s.useCallback(() => {
-        o?.(), null != C && null != C.guildId && (0, p.R)({
+    } = i, _ = (0, a.bG)([u.A], () => u.A.getApplication(e.applicationId)), C = s.useCallback(() => {
+        o?.(), null != _ && null != _.guildId && (0, p.R)({
             skuId: e.id,
             applicationId: e.applicationId,
             isStorefront: !1,
@@ -136,7 +136,7 @@ function R(i) {
             giftingOrigin: v,
             analyticsLocations: r ?? []
         })
-    }, [r, C, o, e.applicationId, e.id, t]), g = s.useCallback(() => {
+    }, [r, _, o, e.applicationId, e.id, t]), g = s.useCallback(() => {
         o?.(), (0, I.a)(e, {
             isGift: !0,
             giftRecipient: t,
@@ -149,7 +149,7 @@ function R(i) {
         sku: e,
         wishlistOwner: t,
         analyticsLocations: r,
-        onDetailsClick: _,
+        onDetailsClick: C,
         onPurchaseClick: g,
         hasMultipleSources: l,
         source: d,
@@ -179,14 +179,14 @@ function M(i) {
             analyticsLocations: r ?? [],
             giftRecipient: t
         })
-    }, [a, e.id, r, t]), C = s.useCallback(() => {
+    }, [a, e.id, r, t]), _ = s.useCallback(() => {
         a?.(), I()
     }, [a, I]);
     return (0, n.jsx)(m, {
         sku: e,
         wishlistOwner: t,
         analyticsLocations: r,
-        onDetailsClick: C,
+        onDetailsClick: _,
         onPurchaseClick: f,
         hasMultipleSources: c,
         source: u,

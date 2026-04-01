@@ -53,8 +53,8 @@ let O = l.memo(function(e) {
             primaryCTAText: F,
             secondaryCTAIcon: z,
             productNameClassName: K,
-            badgeClassName: Y,
-            cardClassName: Q,
+            badgeClassName: Q,
+            cardClassName: Y,
             prioritizedCurrency: X,
             aspectRatio: q
         } = e, {
@@ -84,7 +84,7 @@ let O = l.memo(function(e) {
                 ref: eo,
                 onClick: M ?? ed,
                 "aria-label": ei,
-                className: s()(Q, S.ty, {
+                className: s()(Y, S.ty, {
                     [S.yo]: ea
                 }),
                 onFocus: () => D?.(t.skuId),
@@ -110,7 +110,7 @@ let O = l.memo(function(e) {
                         children: [(0, n.jsx)(I.A, {
                             skuId: t.skuId,
                             badgeOverride: N,
-                            className: Y,
+                            className: Q,
                             prioritizedCurrency: ee,
                             skipLimitedTimeCheck: w
                         }), !r && (0, n.jsx)(T.A, {

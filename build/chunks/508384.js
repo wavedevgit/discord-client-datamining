@@ -1,7 +1,7 @@
 /** chunk id: 508384 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => A
+    A: () => p
 });
 var l = n(627968),
     i = n(64700),
@@ -48,7 +48,7 @@ function x(e) {
     }) : null
 }
 
-function A(e) {
+function p(e) {
     let {
         color: t,
         id: i,
@@ -56,12 +56,12 @@ function A(e) {
         guild: a,
         children: c,
         isDragging: u,
-        selectedItem: A,
-        onItemSelect: p,
+        selectedItem: p,
+        onItemSelect: A,
         itemType: f,
         locked: b,
-        lockTooltip: j,
-        showContextMenu: C,
+        lockTooltip: C,
+        showContextMenu: j,
         theme: N,
         roleStyle: v,
         onContextMenu: _,
@@ -72,10 +72,10 @@ function A(e) {
     }) : (0, l.jsx)(d.VQ0.Item, {
         className: m.JC,
         id: i,
-        selectedItem: A,
-        onItemSelect: p,
+        selectedItem: p,
+        onItemSelect: A,
         itemType: f,
-        "aria-label": null != j ? `${y}, ${j}` : y,
+        "aria-label": null != C ? `${y}, ${C}` : y,
         onContextMenu: _,
         children: (0, l.jsxs)("div", {
             className: m.yl,
@@ -93,7 +93,7 @@ function A(e) {
                 if (!b) return null;
                 let e = (0, o.Mw)(N) ? n(454554) : n(470474);
                 return (0, l.jsx)(r.m, {
-                    text: j,
+                    text: C,
                     children: (0, l.jsx)(h.A, {
                         className: m.s2,
                         src: e
@@ -102,7 +102,7 @@ function A(e) {
             }(), (0, l.jsx)("div", {
                 className: m.dD,
                 children: c
-            }), C && null != s ? (0, l.jsx)(x, {
+            }), j && null != s ? (0, l.jsx)(x, {
                 guild: a,
                 role: s
             }) : null]

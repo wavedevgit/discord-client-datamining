@@ -1,36 +1,38 @@
 /** chunk id: 867624 params = (module,exports,require) **/
 n.d(t, {
-    A: () => A
+    A: () => _
 });
 var i = n(627968);
 n(64700);
 var l = n(311907),
     s = n(397927),
-    a = n(863922),
-    r = n(513272),
-    o = n(954571),
-    d = n(58736),
-    c = n(652215),
-    u = n(521732),
-    h = n(985018);
+    a = n(323073),
+    r = n(863922),
+    o = n(513272),
+    d = n(954571),
+    c = n(58736),
+    u = n(652215),
+    h = n(521732),
+    A = n(985018);
 
-function A(e) {
+function _(e) {
     let {
         channel: t
-    } = e, n = (0, l.bG)([r.A], () => r.A.shouldShowTopicsBar());
-    return (0, i.jsx)(d.Ay.Icon, {
+    } = e, n = (0, a.ni)(t), _ = (0, l.bG)([o.A], () => o.A.shouldShowTopicsBar());
+    return (0, i.jsx)(c.Ay.Icon, {
         icon: s.Kck,
         onClick: () => {
-            o.default.track(c.HAw.SUMMARIES_SIDEBAR_TOGGLED, {
-                summaries_sidebar_open: !n,
-                source: u.er.TOOLBAR_BUTTON,
+            d.default.track(u.HAw.SUMMARIES_SIDEBAR_TOGGLED, {
+                summaries_sidebar_open: !_,
+                source: h.er.TOOLBAR_BUTTON,
                 guild_id: t.guild_id,
                 channel_id: t.id,
                 channel_type: t.type
-            }), (0, a.Oz)()
+            }), (0, r.Oz)()
         },
-        tooltip: n ? h.intl.string(h.t.nGs3kO) : h.intl.string(h.t.bIm2sF),
-        selected: n,
-        "aria-expanded": n
+        tooltip: _ ? A.intl.string(A.t.nGs3kO) : A.intl.string(A.t.bIm2sF),
+        selected: _,
+        "aria-expanded": _,
+        disabled: n
     })
 }

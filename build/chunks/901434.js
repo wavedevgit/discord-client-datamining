@@ -1,29 +1,29 @@
 /** chunk id: 901434 params = (module,exports,require) **/
-n.d(t, {
+t.d(n, {
     A: () => a
-}), n(321073);
-var l = n(64700),
-    i = n(417597),
-    s = n(591552);
+}), t(321073);
+var l = t(64700),
+    i = t(417597),
+    s = t(591552);
 
 function a(e) {
-    let t = (0, i.yK)([s.A], () => s.A.getEnabledOnboardingPrompts(e));
+    let n = (0, i.yK)([s.A], () => s.A.getEnabledOnboardingPrompts(e));
     return l.useMemo(() => {
         let e = 0,
-            n = [],
+            t = [],
             l = [],
             i = [],
             s = [];
-        for (var a = 0; a < t.length; a++) {
-            let r = t[a];
-            r.isNew ? n.push(r) : r.hasNewAnswers ? (l.push(r), e += r.options.filter(e => e.isUnseen).length) : r.inOnboarding ? s.push(r) : i.push(r)
+        for (var a = 0; a < n.length; a++) {
+            let r = n[a];
+            r.isNew ? t.push(r) : r.hasNewAnswers ? (l.push(r), e += r.options.filter(e => e.isUnseen).length) : r.inOnboarding ? s.push(r) : i.push(r)
         }
         return {
-            onboardingPromptsRaw: t,
-            newOnboardingPrompts: n,
+            onboardingPromptsRaw: n,
+            newOnboardingPrompts: t,
             onboardingPromptsWithNewAnswers: l,
             newAnswersCount: e,
             onboardingPrompts: i.concat(s)
         }
-    }, [t])
+    }, [n])
 }

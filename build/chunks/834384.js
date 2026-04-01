@@ -238,8 +238,8 @@ let P = e => {
         }), {
             analyticsLocations: G
         } = (0, a.Ay)(s.A.COLLECTIBLES_SHOP_CARD), F = (0, k.ql)(t, s.A.COLLECTIBLES_SHOP_CARD_PREVIEW_BUTTON, d), [z, K] = (0, l.yK)([f.A], () => [f.A.isClaiming === t.skuId, null != f.A.isClaiming && f.A.isClaiming !== t.skuId]), {
-            handleUseNow: Y,
-            isApplying: Q
+            handleUseNow: Q,
+            isApplying: Y
         } = (0, v.p)({
             product: t
         });
@@ -257,8 +257,8 @@ let P = e => {
             text: o
         });
         if (I) return (0, n.jsx)(V, {
-            handleUseNow: Y,
-            isApplying: Q,
+            handleUseNow: Q,
+            isApplying: Y,
             text: o
         });
         if (j) return (0, n.jsx)(w, {

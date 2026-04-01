@@ -19,14 +19,14 @@ function u(e) {
         hideLabel: u,
         channel: h,
         onChange: g
-    } = e, [m, x] = i.useState(null), A = h.rateLimitPerUser, p = i.useMemo(() => {
+    } = e, [m, x] = i.useState(null), p = h.rateLimitPerUser, A = i.useMemo(() => {
         let e = [...m ?? o.s_7];
-        return e.includes(A) || e.unshift(A), e.map(e => ({
+        return e.includes(p) || e.unshift(p), e.map(e => ({
             id: e.toString(),
             label: (0, r.$)(e, !1),
             value: e
         }))
-    }, [m, A]), f = i.useCallback(e => {
+    }, [m, p]), f = i.useCallback(e => {
         g(e), x(null)
     }, [g]), b = i.useCallback(e => {
         if ("" === e) return void x(null);
@@ -38,7 +38,7 @@ function u(e) {
         l <= o.WA1 && t.push(l);
         let i = n * a.A.Seconds.HOUR;
         i <= o.WA1 && t.push(i), x(t)
-    }, []), j = i.useCallback(() => {
+    }, []), C = i.useCallback(() => {
         x(null)
     }, []);
     return (0, l.jsx)("div", {
@@ -48,11 +48,11 @@ function u(e) {
             label: t,
             hideLabel: u,
             helperText: n,
-            value: A,
+            value: p,
             onSelectionChange: f,
             onQueryChange: e => b(e.target.value),
-            options: p,
-            onBlur: j,
+            options: A,
+            onBlur: C,
             placeholder: d.intl.string(d.t.dBqQu4)
         })
     })

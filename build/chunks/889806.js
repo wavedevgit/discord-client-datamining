@@ -281,7 +281,7 @@ function H(e) {
     }), C = (0, o.bG)([I.A], () => I.A.shouldIndicateNewChannel(n.id, t.id)), {
         needSubscriptionToAccess: b,
         isSubscriptionGated: O
-    } = (0, E.A)(t.id), L = (0, o.bG)([R.Ay], () => R.Ay.isFavorite(n.id, t.id)), M = (0, m.vL)(t), U = (0, A.Gp)(t.id), G = (0, D.A)({
+    } = (0, E.A)(t.id), L = (0, o.bG)([R.Ay], () => R.Ay.isFavorite(n.id, t.id)), M = (0, m.ni)(t), U = (0, A.Gp)(t.id), G = (0, D.A)({
         channel: t,
         isChannelCollapsed: !1,
         isChannelSelected: c,

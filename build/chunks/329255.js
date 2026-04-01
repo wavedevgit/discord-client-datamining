@@ -1,16 +1,16 @@
 /** chunk id: 329255 params = (module,exports,require) **/
-n.d(t, {
+t.d(n, {
     A: () => h
 });
-var l = n(64700),
-    i = n(311907),
-    s = n(73153),
-    a = n(914430),
-    r = n(924985),
-    d = n(543465),
-    c = n(816662),
-    o = n(234053),
-    u = n(652215);
+var l = t(64700),
+    i = t(311907),
+    s = t(73153),
+    a = t(914430),
+    r = t(924985),
+    d = t(543465),
+    c = t(816662),
+    o = t(234053),
+    u = t(652215);
 
 function _(e) {
     s.h.dispatch({
@@ -20,18 +20,18 @@ function _(e) {
 }
 
 function h(e) {
-    let t = (0, i.bG)([d.Ay], () => d.Ay.getPendingChannelUpdates(e));
+    let n = (0, i.bG)([d.Ay], () => d.Ay.getPendingChannelUpdates(e));
     return l.useEffect(() => (_(e), () => _(e)), [e]), l.useEffect(() => {
-        null != t && (0, c.hp)(e, t)
-    }, [e, t]), {
-        onChannelClick: l.useCallback((e, t, n) => {
-            let l = d.Ay.isChannelOptedIn(e, t),
-                i = t === n;
-            !l && r.A.isCollapsed(n) && null != n && (0, a.fh)(n), (0, o.cE)(e) ? i ? (0, o.le)(e, {
-                include: new Set([t])
+        null != n && (0, c.hp)(e, n)
+    }, [e, n]), {
+        onChannelClick: l.useCallback((e, n, t) => {
+            let l = d.Ay.isChannelOptedIn(e, n),
+                i = n === t;
+            !l && r.A.isCollapsed(t) && null != t && (0, a.fh)(t), (0, o.cE)(e) ? i ? (0, o.le)(e, {
+                include: new Set([n])
             }) : (0, o.le)(e, {
-                exclude: new Set([t])
-            }) : (0, c.zk)(e, t, !l, {
+                exclude: new Set([n])
+            }) : (0, c.zk)(e, n, !l, {
                 section: u.JJy.CHANNEL_BROWSER
             })
         }, [])

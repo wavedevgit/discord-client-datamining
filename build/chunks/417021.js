@@ -33,8 +33,8 @@ function j(e) {
         onHide: E,
         sourceAnalyticsLocations: y = []
     } = e, T = t === I.ME ? void 0 : t, L = (0, s.bG)([d.A], () => d.A.isBlocked(n.id)), {
-        analyticsLocations: P
-    } = (0, r.Ay)([...y, L ? l.A.BLOCKED_PROFILE_MODAL : l.A.IGNORED_PROFILE_MODAL]), O = (0, u.pb)({
+        analyticsLocations: O
+    } = (0, r.Ay)([...y, L ? l.A.BLOCKED_PROFILE_MODAL : l.A.IGNORED_PROFILE_MODAL]), P = (0, u.pb)({
         layout: "MODAL_V2",
         userId: n.id,
         guildId: T,
@@ -51,9 +51,9 @@ function j(e) {
         name: k
     });
     return (0, i.jsx)(r.f5, {
-        value: P,
+        value: O,
         children: (0, i.jsx)(u.of, {
-            value: O,
+            value: P,
             isLoaded: R?.isLoaded,
             children: (0, i.jsx)(a.EOs, {
                 "data-migration-pending": !0,
@@ -107,8 +107,8 @@ function j(e) {
                                 onClick: () => {
                                     E(), (0, _.Wn)({
                                         action: L ? "VIEW_BLOCKED_PROFILE" : "VIEW_IGNORED_PROFILE",
-                                        analyticsLocations: P,
-                                        ...O
+                                        analyticsLocations: O,
+                                        ...P
                                     })
                                 }
                             }), (0, i.jsx)(m.A, {
@@ -116,8 +116,8 @@ function j(e) {
                                 onClick: () => {
                                     E(), (0, _.Wn)({
                                         action: "DONT_SHOW_AGAIN_IGNORED_PROFILE",
-                                        analyticsLocations: P,
-                                        ...O
+                                        analyticsLocations: O,
+                                        ...P
                                     })
                                 }
                             })]

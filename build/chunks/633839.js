@@ -17,8 +17,8 @@ var l = n(627968),
     m = n(376310);
 n(253913);
 var x = n(652215),
-    A = n(985018),
-    p = n(316783);
+    p = n(985018),
+    A = n(316783);
 
 function f(e) {
     let {
@@ -35,7 +35,7 @@ function f(e) {
                 guildId: t.guild_id
             })
         })
-    }, [t, s]), j = i.useCallback(e => {
+    }, [t, s]), C = i.useCallback(e => {
         s && (0, d.mMO)(async () => {
             let {
                 default: i
@@ -48,7 +48,7 @@ function f(e) {
             })
         })
     }, [s, t]), {
-        handleDragStart: C,
+        handleDragStart: j,
         handleDragReset: N,
         handleDragComplete: v
     } = (0, h.A)(t.availableTags, e => {
@@ -57,30 +57,30 @@ function f(e) {
         })
     });
     return (0, l.jsxs)("div", {
-        className: p._A,
+        className: A._A,
         children: [m ? t.availableTags.map(e => (0, l.jsx)(b, {
             tag: e,
             availableTags: t.availableTags,
             canManageChannels: s,
-            onTagClick: j,
+            onTagClick: C,
             onDragComplete: v,
             onDragReset: N,
-            onDragStart: C
+            onDragStart: j
         }, e.id)) : null, m ? (0, l.jsx)(d.DUT, {
             onClick: f,
-            className: a()(p.JE, {
-                [p.r9]: !s || u
+            className: a()(A.JE, {
+                [A.r9]: !s || u
             }),
             children: (0, l.jsx)(d.j96, {
                 size: "custom",
-                "aria-label": A.intl.string(A.t["/jubeD"]),
+                "aria-label": p.intl.string(p.t["/jubeD"]),
                 color: o.A.unsafe_rawColors.WHITE.css,
                 width: 20,
                 height: 20
             })
         }) : (0, l.jsx)(d.Button, {
             variant: "primary",
-            text: A.intl.string(A.t["/jubeD"]),
+            text: p.intl.string(p.t["/jubeD"]),
             disabled: !s,
             onClick: f
         })]
@@ -110,9 +110,9 @@ function b(e) {
         onDragReset: d
     });
     return (0, l.jsx)("div", {
-        className: a()(p.kL, {
-            [p.A]: null != g && c < g,
-            [p.Ze]: null != g && c > g
+        className: a()(A.kL, {
+            [A.A]: null != g && c < g,
+            [A.Ze]: null != g && c > g
         }),
         ref: e => {
             h(x(e))
@@ -122,7 +122,7 @@ function b(e) {
         children: (0, l.jsx)(m.A, {
             tag: t,
             disabled: !i,
-            ariaLabel: A.intl.formatToPlainString(A.t.jhSvB9, {
+            ariaLabel: p.intl.formatToPlainString(p.t.jhSvB9, {
                 name: t.name
             }),
             onClick: i ? () => s(t) : void 0

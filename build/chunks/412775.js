@@ -34,7 +34,7 @@ function C(e) {
         trackUserProfileAction: N
     } = (0, u.NJ)(), E = (0, s.bG)([d.A], () => d.A.getGuildId()), y = (0, l.q)({
         userId: n.id
-    }), T = (0, s.bG)([c.A], () => c.A.hidePersonalInformation), L = (0, s.bG)([o.default], () => o.default.locale), P = (0, A.A)(n.id), O = (0, _.A)(n.id);
+    }), T = (0, s.bG)([c.A], () => c.A.hidePersonalInformation), L = (0, s.bG)([o.default], () => o.default.locale), O = (0, A.A)(n.id), P = (0, _.A)(n.id);
     return (0, i.jsxs)(a.IpV, {
         fade: !0,
         className: v.XG,
@@ -66,18 +66,18 @@ function C(e) {
                 guildId: t?.guildId,
                 tooltipDelay: b.In
             })
-        }), P.length > 0 && (0, i.jsx)(I.A, {
+        }), O.length > 0 && (0, i.jsx)(I.A, {
             heading: j.intl.string(j.t["3fe7U5"]),
             scrollTargetId: b.bk.CONNECTIONS,
             children: (0, i.jsx)(p.Ay, {
-                connectedAccounts: P,
+                connectedAccounts: O,
                 className: v.oQ,
                 userId: n.id,
                 locale: L
             })
-        }), O.length > 0 && (0, i.jsx)(I.A, {
+        }), P.length > 0 && (0, i.jsx)(I.A, {
             heading: j.intl.string(j.t.PHjkRE),
-            children: O.map(e => (0, i.jsx)(p.Wc, {
+            children: P.map(e => (0, i.jsx)(p.Wc, {
                 className: v.MI,
                 applicationRoleConnection: e,
                 locale: L,

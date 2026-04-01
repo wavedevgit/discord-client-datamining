@@ -38,8 +38,8 @@ var l = n(627968),
     L = n(12613),
     D = n(842012),
     B = n(666580),
-    P = n(588684),
-    U = n(316862),
+    U = n(588684),
+    P = n(316862),
     H = n(563218),
     V = n(617071),
     F = n(883471),
@@ -48,8 +48,8 @@ var l = n(627968),
     K = n(908675),
     $ = n(503985),
     Q = n(145996),
-    Y = n(964448),
-    q = n(652215),
+    q = n(964448),
+    Y = n(652215),
     Z = n(985018),
     J = n(641131),
     X = n(687404);
@@ -110,12 +110,12 @@ let el = e => {
     }, {
         textInput: ew,
         multiSelect: eM
-    }), [eg, eh, eA, ev, em, eT, ew, eM]), eP = a.useCallback((e, t) => {
+    }), [eg, eh, eA, ev, em, eT, ew, eM]), eU = a.useCallback((e, t) => {
         let n = {
             ...eM
         };
         e in eM ? delete n[e] : n[e] = t, eR(n)
-    }, [eM]), eU = a.useCallback(function(e, t) {
+    }, [eM]), eP = a.useCallback(function(e, t) {
         let n = !(arguments.length > 2) || void 0 === arguments[2] || arguments[2],
             l = arguments.length > 3 ? arguments[3] : void 0,
             a = arguments.length > 4 ? arguments[4] : void 0,
@@ -159,15 +159,15 @@ let el = e => {
     }, [em]);
     let eV = a.useCallback(e => {
             switch (e) {
-                case q.t02.UNKNOWN_TIDA_CONTENT: {
+                case Y.t02.UNKNOWN_TIDA_CONTENT: {
                     let e = Z.intl.string(Z.t["2EPoxE"]);
                     eE(e), ed?.("MEDIA_TAKEDOWN_CONTENT_DETAILS", e);
                     break
                 }
-                case q.t02.INVALID_SIGNATURE_MISMATCH:
+                case Y.t02.INVALID_SIGNATURE_MISMATCH:
                     eE(Z.intl.string(Z.t.kXrnQM));
                     break;
-                case q.t02.INVALID_FORM_BODY:
+                case Y.t02.INVALID_FORM_BODY:
                     eE(Z.intl.string(Z.t.VjAAuP));
                     break;
                 default:
@@ -206,8 +206,8 @@ let el = e => {
     let eK = (0, u.fY)(el),
         e$ = null != et(t, "ignore_users") && ("message" === n.name || "first_dm" === n.name || "user" === n.name),
         eQ = (0, c.Z)(),
-        eY = (0, o.GR)(),
-        eq = eQ && eY.length > 0 && null != et(t, "share_with_parents");
+        eq = (0, o.GR)(),
+        eY = eQ && eq.length > 0 && null != et(t, "share_with_parents");
     return (0, l.jsxs)("div", {
         className: X.kL,
         onKeyDown: ez,
@@ -265,15 +265,15 @@ let el = e => {
                     let {
                         type: t
                     } = e;
-                    return Y.T.includes(t)
+                    return q.T.includes(t)
                 })
-            }(t) && (0, l.jsxs)(P.A, {
+            }(t) && (0, l.jsxs)(U.A, {
                 children: [e$ && (0, l.jsx)(M.A, {
                     user: "user" === n.name ? n.record : n.record.author,
                     channelId: eL,
                     reportId: ec
-                }), eq && (0, l.jsx)(V.A, {
-                    parents: eY
+                }), eY && (0, l.jsx)(V.A, {
+                    parents: eq
                 }), null != et(t, "block_users") && ("message" === n.name || "first_dm" === n.name || "user" === n.name || "report_to_mod_message" === n.name || "application" === n.name && null != n.record.bot) && (0, l.jsx)(g.A, {
                     user: "application" === n.name ? n.record.bot : "user" === n.name ? n.record : n.record.author,
                     channelId: eL,
@@ -292,7 +292,7 @@ let el = e => {
                 }), null != et(t, "deauthorize_app") && "application" === n.name && (0, l.jsx)(f.A, {
                     application: n.record,
                     reportId: ec
-                }), null != et(t, "deauthorize_app") && "application" === n.name && (0, l.jsx)(U.A, {
+                }), null != et(t, "deauthorize_app") && "application" === n.name && (0, l.jsx)(P.A, {
                     application: n.record,
                     reportId: ec
                 })]
@@ -315,21 +315,21 @@ let el = e => {
                 entry: n.record
             }), null != em && (0, l.jsx)(L.A, {
                 element: em,
-                onChange: eP,
+                onChange: eU,
                 state: eM
             }), ee.includes(n.name) && null != eT && (0, l.jsx)(b.A, {
                 element: eT,
-                onChange: eU,
+                onChange: eP,
                 state: ew
             }), ee.includes(n.name) && null != eh && eh.length > 0 && (0, l.jsx)("div", {
                 children: (0, l.jsx)(C.A, {
                     elements: eh,
-                    onChange: eU,
+                    onChange: eP,
                     state: ew
                 })
             }), ev.map(e => (0, l.jsx)(B.A, {
                 element: e,
-                onChange: eU,
+                onChange: eP,
                 state: ew
             }, e.name)), null != eb && function(e, t, n) {
                 let {
@@ -347,11 +347,11 @@ let el = e => {
                 element: eb
             }), null != eA && (0, l.jsx)(v.A, {
                 element: eA,
-                onChange: eU,
+                onChange: eP,
                 state: ew
             }), ee.includes(n.name) && null != eg && eg.length > 0 && (0, l.jsx)(I.A, {
                 elements: eg,
-                onChange: eU,
+                onChange: eP,
                 state: ew
             }), (null != t.children && t.children.length > 0 || null != ep && ep.length > 0) && (0, l.jsxs)("div", {
                 className: X.qI,

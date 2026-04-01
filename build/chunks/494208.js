@@ -15,7 +15,7 @@ var i = n(627968),
 function h(e) {
     let {
         channel: t
-    } = e, [n, h] = l.useState(!1), A = l.useRef(null), _ = (0, a.vL)(t), m = l.useCallback(() => {
+    } = e, [n, h] = l.useState(!1), A = l.useRef(null), _ = (0, a.ni)(t), m = l.useCallback(() => {
         h(!1)
     }, []), g = l.useCallback(() => {
         n || (0, o.D3)("Popout"), h(!n)

@@ -1,24 +1,24 @@
 /** chunk id: 693263 params = (module,exports,require) **/
-n.d(t, {
+t.d(n, {
     A: () => f,
     C: () => C
 });
-var l = n(627968);
-n(64700);
-var i = n(503698),
-    s = n.n(i),
-    a = n(554146),
-    r = n(397927),
-    d = n(826673),
-    c = n(367727),
-    o = n(997509),
-    u = n(307879),
-    _ = n(395504),
-    h = n(652215),
-    x = n(49999),
-    m = n(985018),
-    g = n(199699),
-    A = n(529732);
+var l = t(627968);
+t(64700);
+var i = t(503698),
+    s = t.n(i),
+    a = t(554146),
+    r = t(397927),
+    d = t(826673),
+    c = t(367727),
+    o = t(997509),
+    u = t(307879),
+    _ = t(395504),
+    h = t(652215),
+    x = t(49999),
+    m = t(985018),
+    g = t(199699),
+    A = t(529732);
 
 function C(e) {
     return (0, _.Xn)(e) ? 250 : 152
@@ -26,10 +26,10 @@ function C(e) {
 
 function f(e) {
     let {
-        guild: t
-    } = e, n = (0, _.Xn)(t.id), i = (0, d.JZ)(a.M.GUILD_HEADER_COMMUNITY_ONBOARDING_ADMIN_UPSELL), C = n && !i ? a.M.GUILD_HEADER_COMMUNITY_ONBOARDING_ADMIN_UPSELL : a.M.CHANNEL_BROWSER_NUX;
+        guild: n
+    } = e, t = (0, _.Xn)(n.id), i = (0, d.JZ)(a.M.GUILD_HEADER_COMMUNITY_ONBOARDING_ADMIN_UPSELL), C = t && !i ? a.M.GUILD_HEADER_COMMUNITY_ONBOARDING_ADMIN_UPSELL : a.M.CHANNEL_BROWSER_NUX;
     (0, c.Vh)(C);
-    let f = n ? (0, l.jsxs)(l.Fragment, {
+    let f = t ? (0, l.jsxs)(l.Fragment, {
         children: [(0, l.jsxs)("div", {
             children: [(0, l.jsx)(r.Heading, {
                 className: g.R_,
@@ -44,7 +44,7 @@ function f(e) {
             }), (0, l.jsx)(r.Button, {
                 variant: "overlay-primary",
                 onClick: () => {
-                    o.A.open(t.id, h.BEX.ONBOARDING), (0, d.Dr)(C, {
+                    o.A.open(n.id, h.BEX.ONBOARDING), (0, d.Dr)(C, {
                         dismissAction: x.i.PRIMARY
                     })
                 },
@@ -81,7 +81,7 @@ function f(e) {
     });
     return (0, l.jsxs)("div", {
         className: s()(g.kL, {
-            [g.xY]: n
+            [g.xY]: t
         }),
         children: [(0, l.jsx)(r.DUT, {
             className: g.b,

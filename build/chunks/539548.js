@@ -40,11 +40,11 @@ function v(e) {
     } = (0, _.A)({
         userId: n.id,
         guildId: v
-    }), P = (0, s.bG)([l.A], () => l.A.isFetchingUserOutbox(n.id)), O = n.id === t.id, S = (0, s.bG)([o.A, r.A], () => {
-        let e = O ? o.A.getStatus() : r.A.getStatus(n.id);
+    }), O = (0, s.bG)([l.A], () => l.A.isFetchingUserOutbox(n.id)), P = n.id === t.id, S = (0, s.bG)([o.A, r.A], () => {
+        let e = P ? o.A.getStatus() : r.A.getStatus(n.id);
         return e === a.clD.OFFLINE || e === a.clD.INVISIBLE
     }), R = (0, s.bG)([c.A], () => c.A.getUserProfile(n.id)?.private === !0), k = N.length > 0 || null != y, B = !R && null == y && null == L && null != T, M = !S && (k || B), D = E.length > 0;
-    return M || D || !P ? (0, i.jsxs)(a.IpV, {
+    return M || D || !O ? (0, i.jsxs)(a.IpV, {
         className: b.XG,
         fade: !0,
         children: [M ? (0, i.jsx)(A.A, {
@@ -76,7 +76,7 @@ function v(e) {
             })
         }) : null, D ? (0, i.jsx)(A.A, {
             heading: h.intl.string(h.t.M0zgnT),
-            introText: O ? h.intl.format(h.t["4bk9Ak"], {
+            introText: P ? h.intl.format(h.t["4bk9Ak"], {
                 learnMoreHook: (e, n) => (0, i.jsx)(a.MzZ, {
                     href: d.A.getArticleURL(f.MVz.ACTIVITY_STATUS_SETTINGS),
                     children: e

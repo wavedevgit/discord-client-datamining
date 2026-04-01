@@ -11,12 +11,12 @@ let a = e => {
     let {
         skuId: t,
         className: r
-    } = e, a = (0, s.nY)(), u = (0, s.Vm)(t), o = a ? (0, i.VG)(u) : (0, i.sE)(u);
+    } = e, a = (0, s.Vm)(t), u = (0, i.VG)(a);
     return (0, n.jsx)(l.Heading, {
         variant: "heading-md/medium",
         color: "text-strong",
         className: r,
         lineClamp: 1,
-        children: o
+        children: u
     })
 }
