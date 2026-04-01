@@ -55,7 +55,8 @@ function x(e) {
         "aria-hidden": !0
     }) : t.isGroupDM() ? (0, i.jsx)(h.A, {
         channel: t,
-        size: d._3J.SIZE_24
+        size: d._3J.SIZE_24,
+        "aria-hidden": !0
     }) : (0, i.jsx)("div", {
         className: s()(g.Kk, g.ro),
         children: (0, i.jsx)(a.ChatIcon, {
