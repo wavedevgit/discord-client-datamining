@@ -134,11 +134,11 @@ function f(e) {
     } = v.current ?? {
         x: 0,
         y: 0
-    }, C = _.x - E - 60 * !!I, S = _.y - b;
+    }, C = _.x - E - 60 * !!I, N = _.y - b;
     return (0, i.jsx)("div", {
         className: p.kL,
         style: {
-            transform: `translate3d(${C}px, ${S}px, 0)`
+            transform: `translate3d(${C}px, ${N}px, 0)`
         },
         children: j
     })

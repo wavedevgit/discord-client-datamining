@@ -26,8 +26,8 @@ var i = n(627968),
     E = n(909536),
     b = n(594832),
     C = n(287809),
-    S = n(183555),
-    N = n(622543),
+    N = n(183555),
+    S = n(622543),
     y = n(600761),
     R = n(535089),
     k = n(128988),
@@ -174,9 +174,9 @@ function V(e) {
         handleOpenShop: d,
         handleOpenGameShop: u,
         handleAddNitroToWishlist: g
-    } = e, m = a.id, x = (0, o.bG)([N.A], () => N.A.getWishlistSettings(n.id, m)), {
+    } = e, m = a.id, x = (0, o.bG)([S.A], () => S.A.getWishlistSettings(n.id, m)), {
         trackUserProfileWishlistAction: p
-    } = (0, S.NJ)(), f = !1 === n.nsfwAllowed, [h, _] = l.useState(!0);
+    } = (0, N.NJ)(), f = !1 === n.nsfwAllowed, [h, _] = l.useState(!0);
     l.useEffect(() => {
         x?.visibility != null && _(x.visibility === r.a.PUBLIC)
     }, [x?.visibility]);
@@ -265,14 +265,14 @@ function z(e) {
     let {
         wishlistId: a,
         currentUser: r
-    } = (0, o.cf)([N.A, C.default], () => ({
-        wishlistId: N.A.getFirstWishlistId(t.id),
+    } = (0, o.cf)([S.A, C.default], () => ({
+        wishlistId: S.A.getFirstWishlistId(t.id),
         currentUser: C.default.getCurrentUser()
     })), {
         analyticsLocations: c
     } = (0, g.Ay)(), m = r?.id === t.id, {
         wishlist: v,
-        wasFetched: S,
+        wasFetched: N,
         error: R
     } = (0, b.fw)({
         wishlistId: a,
@@ -341,7 +341,7 @@ function z(e) {
             user: t,
             wishlist: v,
             applicationIds: P,
-            hasFetchedWishlist: S,
+            hasFetchedWishlist: N,
             analyticsLocations: c,
             className: q ? F._E : F.HZ
         })]

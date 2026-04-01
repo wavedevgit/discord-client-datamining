@@ -39,8 +39,8 @@ function M(e) {
         onBeforeDelete: O,
         onAfterDelete: T,
         actionsDisabled: B = !1,
-        showShareAndEdit: P = !1
-    } = e, j = t[0], k = t.length > 1, {
+        showShareAndEdit: j = !1
+    } = e, k = t[0], P = t.length > 1, {
         analyticsLocations: U
     } = (0, s.Ay)(), N = (0, a.bG)([h.Ay, p.A, g.default, d.A], () => h.Ay.getFlattenedGuildIds().some(e => {
         let t = d.A.getGuild(e);
@@ -49,13 +49,13 @@ function M(e) {
     async function Z() {
         (0, l.Z_)();
         let e = f.A.getChannel(M);
-        (0, x.H1)([j.id]);
+        (0, x.H1)([k.id]);
         try {
-            let t = await (0, x.VO)(j);
+            let t = await (0, x.VO)(k);
             (0, r.mMO)(async () => {
                 let {
                     default: a
-                } = await Promise.all([n.e("40556"), n.e("45893")]).then(n.bind(n, 6503)), r = e?.guild_id != null ? d.A.getGuild(e.guild_id) : null, l = null != r && (0, c.ie)(r, p.A, g.default).canCreateExpressions, o = null == j.name || "" === j.name ? (0, v.cM)(b.default.extractTimestamp(j.id)) : j.name, s = o.slice(0, 32);
+                } = await Promise.all([n.e("40556"), n.e("45893")]).then(n.bind(n, 6503)), r = e?.guild_id != null ? d.A.getGuild(e.guild_id) : null, l = null != r && (0, c.ie)(r, p.A, g.default).canCreateExpressions, o = null == k.name || "" === k.name ? (0, v.cM)(b.default.extractTimestamp(k.id)) : k.name, s = o.slice(0, 32);
                 return n => (0, i.jsx)(a, {
                     ...n,
                     showGuildPicker: !0,
@@ -75,11 +75,11 @@ function M(e) {
         }
     }
     async function G() {
-        (0, l.Z_)(), (0, x.H1)([j.id]);
+        (0, l.Z_)(), (0, x.H1)([k.id]);
         try {
-            let e = await (0, x.VO)(j),
+            let e = await (0, x.VO)(k),
                 t = await e.arrayBuffer(),
-                n = (0, _.A)((0, m.uk)(j.filepath));
+                n = (0, _.A)((0, m.uk)(k.filepath));
             await o.A.fileManager.saveWithDialog(D.from(t), n)
         } catch (e) {
             v.nx.error("Error exporting clip to file", e)
@@ -102,12 +102,12 @@ function M(e) {
         R?.()
     }
     async function I() {
-        (0, l.Z_)(), (0, x.H1)([j.id]);
+        (0, l.Z_)(), (0, x.H1)([k.id]);
         try {
-            let e = await (0, x.VO)(j),
+            let e = await (0, x.VO)(k),
                 t = await (0, u.R_)(e),
                 n = await t.arrayBuffer(),
-                i = (0, _.A)((0, m.kh)(j.filepath)) + ".ogg";
+                i = (0, _.A)((0, m.kh)(k.filepath)) + ".ogg";
             await o.A.fileManager.saveWithDialog(D.from(n), i)
         } catch (e) {
             v.nx.error("Error exporting clip to sound file", e)
@@ -133,7 +133,7 @@ function M(e) {
             action: function() {
                 (0, l.Z_)(), t.forEach(e => (0, x.w7)(e.id))
             }
-        }), P && (0, i.jsxs)(i.Fragment, {
+        }), j && (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)(r.Drp, {
                 id: "share",
                 label: S.intl.string(S.t.RDE0Sc),
@@ -144,7 +144,7 @@ function M(e) {
                 },
                 disabled: B && !H,
                 action: q
-            }), !k && (0, i.jsx)(r.Drp, {
+            }), !P && (0, i.jsx)(r.Drp, {
                 id: "edit",
                 label: S.intl.string(S.t.bt75uw),
                 icon: y.A,
@@ -154,14 +154,14 @@ function M(e) {
                 },
                 disabled: B,
                 action: function() {
-                    (0, l.Z_)(), k || (0, r.mMO)(async () => {
+                    (0, l.Z_)(), P || (0, r.mMO)(async () => {
                         let {
                             default: e
-                        } = await Promise.all([n.e("19632"), n.e("73994")]).then(n.bind(n, 723028));
+                        } = await n.e("29621").then(n.bind(n, 723028));
                         return t => (0, i.jsx)(e, {
                             ...t,
                             channelId: M,
-                            clip: j
+                            clip: k
                         })
                     }, {
                         modalKey: v.DQ,
@@ -171,17 +171,17 @@ function M(e) {
             })]
         }), (0, i.jsx)(r.Drp, {
             id: "favorite",
-            label: j.isFavorite ? S.intl.string(S.t.wDnlod) : S.intl.string(S.t.nPywqO),
-            icon: j.isFavorite ? r.C3E : r.yhu,
+            label: k.isFavorite ? S.intl.string(S.t.wDnlod) : S.intl.string(S.t.nPywqO),
+            icon: k.isFavorite ? r.C3E : r.yhu,
             leadingAccessory: {
                 type: "icon",
-                icon: j.isFavorite ? r.C3E : r.yhu
+                icon: k.isFavorite ? r.C3E : r.yhu
             },
             disabled: B,
             action: function() {
                 (0, l.Z_)(), t.forEach(e => (0, x.XK)(e))
             }
-        }), !k && (0, i.jsxs)(r.Drp, {
+        }), !P && (0, i.jsxs)(r.Drp, {
             id: "clips-export-group",
             label: S.intl.string(S.t["WH/V85"]),
             children: [null != o.A.clipboard.copyFile && (0, i.jsx)(r.Drp, {
@@ -193,9 +193,9 @@ function M(e) {
                 id: "clips-copy-video",
                 label: S.intl.string(S.t["7NOhjN"]),
                 action: function() {
-                    (0, l.Z_)(), o.A.clipboard.copyFile(j.filepath), (0, r.showToast)((0, r.createToast)(S.intl.string(S.t.mGZ66D), r.ToastType.SUCCESS))
+                    (0, l.Z_)(), o.A.clipboard.copyFile(k.filepath), (0, r.showToast)((0, r.createToast)(S.intl.string(S.t.mGZ66D), r.ToastType.SUCCESS))
                 }
-            }), N && j.type !== A.nQ.SCREENSHOT ? (0, i.jsx)(r.Drp, {
+            }), N && k.type !== A.nQ.SCREENSHOT ? (0, i.jsx)(r.Drp, {
                 icon: r.JMI,
                 leadingAccessory: {
                     type: "icon",
@@ -211,9 +211,9 @@ function M(e) {
                     icon: r.s3U
                 },
                 id: "clips-export-file",
-                label: j.type === A.nQ.SCREENSHOT ? S.intl.string(S.t.y5FgMk) : S.intl.string(S.t.sFgmNy),
+                label: k.type === A.nQ.SCREENSHOT ? S.intl.string(S.t.y5FgMk) : S.intl.string(S.t.sFgmNy),
                 action: G
-            }), j.type !== A.nQ.SCREENSHOT && (0, i.jsx)(r.Drp, {
+            }), k.type !== A.nQ.SCREENSHOT && (0, i.jsx)(r.Drp, {
                 icon: r.s3U,
                 leadingAccessory: {
                     type: "icon",

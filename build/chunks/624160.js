@@ -74,8 +74,8 @@ function b(e) {
         } = e,
         {
             placeholder: C,
-            getAriaLabel: S,
-            icon: N
+            getAriaLabel: N,
+            icon: S
         } = E[n.type],
         y = n.type === r.x.APPLICATION,
         R = y ? n.applicationId : void 0,
@@ -108,7 +108,7 @@ function b(e) {
                 }), (0, _.XA)(j.jM.WIDGET_ADDED), a?.()
             }
         }, [f, G, D, n, b, a, L, P]),
-        U = N?.(n),
+        U = S?.(n),
         F = G ? o.qYV : o.U1e;
     return (0, i.jsxs)("div", {
         className: T.LG,
@@ -117,7 +117,7 @@ function b(e) {
             onClick: M,
             "aria-label": G && null != k ? v.intl.formatToPlainString(v.t.ATS0FK, {
                 applicationName: k.name
-            }) : S(n),
+            }) : N(n),
             "aria-busy": f,
             children: [(() => {
                 let e = C(n);

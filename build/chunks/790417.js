@@ -32,9 +32,9 @@ function E(e) {
         displayProfile: E,
         guildId: b,
         channelId: C,
-        onClose: S
+        onClose: N
     } = e, {
-        live: N,
+        live: S,
         recent: y,
         stream: R
     } = (0, u.A)(t.id), {
@@ -46,7 +46,7 @@ function E(e) {
     }), w = (0, l.bG)([s.A], () => s.A.isFetchingUserOutbox(t.id)), L = t.id === n.id, P = (0, l.bG)([d.A, o.A], () => {
         let e = L ? d.A.getStatus() : o.A.getStatus(t.id);
         return e === a.clD.OFFLINE || e === a.clD.INVISIBLE
-    }), D = N.length > 0 || null != R, G = E?.private !== !0 && null == R && null == O && null != k, M = !P && (D || G), U = y.length > 0;
+    }), D = S.length > 0 || null != R, G = E?.private !== !0 && null == R && null == O && null != k, M = !P && (D || G), U = y.length > 0;
     return M || U || !w ? M || U || w ? (0, i.jsxs)(A.K, {
         className: T.XG,
         fade: !0,
@@ -59,21 +59,21 @@ function E(e) {
                         user: t,
                         currentUser: n,
                         stream: R,
-                        onClose: S
+                        onClose: N
                     })
-                }), N.map((e, l) => (0, i.jsx)("li", {
+                }), S.map((e, l) => (0, i.jsx)("li", {
                     children: (0, i.jsx)(m.A, {
                         user: t,
                         currentUser: n,
                         activity: e,
-                        onClose: S
+                        onClose: N
                     })
                 }, `live-${l}`)), G && (0, i.jsx)("li", {
                     children: (0, i.jsx)(f.A, {
                         user: t,
                         currentUser: n,
                         voiceChannel: k,
-                        onClose: S
+                        onClose: N
                     })
                 })]
             })
@@ -92,18 +92,18 @@ function E(e) {
                     children: (0, i.jsx)(x.A, {
                         user: t,
                         entry: e,
-                        onClose: S
+                        onClose: N
                     })
                 }, e.id))
             })
         }) : null]
     }) : L ? (0, i.jsx)(h.qv, {
-        onClose: S
+        onClose: N
     }) : (0, i.jsx)(h.zf, {
         user: t,
         guildId: E?.guildId ?? b,
         channelId: C,
-        onClose: S
+        onClose: N
     }) : (0, i.jsx)("div", {
         className: T.kR,
         children: Array.from({

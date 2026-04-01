@@ -50,19 +50,19 @@ function m(e) {
             t = T.map(t => e.get(t)).filter(e => null != e && !e.disabled),
             n = [...e.values()].filter(e => !t.includes(e));
         return [...t, ...n]
-    }, [j, f, T]), S = l.useMemo(() => ({
+    }, [j, f, T]), N = l.useMemo(() => ({
         ...v,
         threshold: a.Ht.rankings.CONTAINS,
         keys: ["label"]
-    }), [v]), N = l.useCallback(e => "" === e.trim() ? C.length : (0, a.Ht)(C, e, S).length, [C, S]), y = l.useCallback(e => {
+    }), [v]), S = l.useCallback(e => "" === e.trim() ? C.length : (0, a.Ht)(C, e, N).length, [C, N]), y = l.useCallback(e => {
         let n = e.target.value;
         "" === _.trim() && "" !== n.trim() && h({
             action: "GAME_SEARCH_SESSION_STARTED",
             widgetEdited: t,
             numCharacters: n.trim().length,
-            numResults: N(n)
+            numResults: S(n)
         }), A(n), I.current = n
-    }, [_, h, t, N]);
+    }, [_, h, t, S]);
     return (0, i.jsx)(s.YNO, {
         ...p,
         onRequestOpen: () => {
@@ -76,7 +76,7 @@ function m(e) {
                 action: "GAME_SEARCH_SESSION_ENDED",
                 widgetEdited: t,
                 numCharacters: I.current.trim().length,
-                numResults: N(I.current)
+                numResults: S(I.current)
             })
         },
         renderPopout: e => {
@@ -93,7 +93,7 @@ function m(e) {
                         null != e && (b(e), t())
                     },
                     options: C,
-                    matchSorterOptions: S,
+                    matchSorterOptions: N,
                     children: [(0, i.jsx)(s.a32, {
                         label: u.intl.string(u.t["5h0QOP"]),
                         hideLabel: !0,

@@ -66,17 +66,17 @@ function I(e) {
         }
     } [t], {
         analyticsLocations: j
-    } = (0, m.Ay)(), D = (0, r.bG)([_.A], () => _.A.theme), U = P(l), O = (0, g.tR)(t), {
+    } = (0, m.Ay)(), D = (0, r.bG)([_.A], () => _.A.theme), O = P(l), U = (0, g.tR)(t), {
         id: R
     } = (0, g.x5)(t), M = (0, r.bG)([A.Ay], () => b(A.Ay)), w = (0, n.jsx)(d.po8, {
         messageType: d.YCn.WARNING,
         children: L()
     }), V = a.useCallback(e => {
         (T?.(e) ?? !0) && x(e, {
-            location: U,
+            location: O,
             analyticsLocations: j
         })
-    }, [U, j, T, x]);
+    }, [O, j, T, x]);
 
     function G(e) {
         let t, a, {
@@ -131,7 +131,7 @@ function I(e) {
             label: E,
             value: I ?? R,
             onChange: V,
-            options: O.map(e => {
+            options: U.map(e => {
                 let {
                     id: t,
                     name: i

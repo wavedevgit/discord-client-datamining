@@ -26,15 +26,15 @@ var i = n(627968),
     E = n(121700),
     b = n(460442),
     C = n(662349),
-    S = n(479026),
-    N = n(699976),
+    N = n(479026),
+    S = n(699976),
     y = n(652215),
     R = n(788868),
     k = n(518477),
     O = n(985018),
     w = n(649197),
     L = n(913110);
-let P = N.Z.SIZE_133;
+let P = S.Z.SIZE_133;
 
 function D(e) {
     let {
@@ -53,14 +53,14 @@ function D(e) {
         wishlistId: A,
         isItemOwned: I,
         cardBackdrop: v
-    } = e, S = l.useRef(null), N = l.useRef(x);
+    } = e, N = l.useRef(null), S = l.useRef(x);
     l.useEffect(() => {
-        N.current = x
+        S.current = x
     }, [x]), l.useEffect(() => {
-        let e = S.current;
+        let e = N.current;
         if (null == e) return;
         let t = () => {
-            N.current(!1)
+            S.current(!1)
         };
         return e.addEventListener("focusin", t), () => {
             e.removeEventListener("focusin", t)
@@ -85,7 +85,7 @@ function D(e) {
     }, [f, t.sku, A, y]), D = l.useCallback(() => {
         (0, _.XA)(k.jM.SOMETHING_WENT_WRONG), o.ORC.announce(O.intl.string(O.t.F8FvUy))
     }, []), G = null != c ? (0, i.jsx)("div", {
-        ref: S,
+        ref: N,
         className: w.BU,
         children: c
     }) : null, {
@@ -183,7 +183,7 @@ function M(e) {
         currentUser: d,
         isHoveringOrFocusing: c,
         ...u
-    } = e, m = (0, S.e)({
+    } = e, m = (0, N.e)({
         sku: t.sku,
         giftRecipient: n,
         giftingOrigin: R.vQ.USER_PROFILE_WISHLIST,

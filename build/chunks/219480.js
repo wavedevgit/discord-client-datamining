@@ -112,7 +112,7 @@ function A(e) {
             (0, r.mMO)(async () => {
                 let {
                     default: s
-                } = await Promise.all([l.e("19632"), l.e("42643")]).then(l.bind(l, 723028));
+                } = await l.e("29621").then(l.bind(l, 723028));
                 return l => (0, i.jsx)(s, {
                     ...l,
                     channelId: t,

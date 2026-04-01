@@ -91,7 +91,7 @@ function T(e) {
         headerActionButtons: E,
         headerClassName: b,
         additionalManageWidgetMenuItems: C
-    } = e, S = (0, d.GV)(), N = l.useRef(null), y = (0, o.bG)([c.default], () => c.default.getId() === t), R = (0, f.g)(), {
+    } = e, N = (0, d.GV)(), S = l.useRef(null), y = (0, o.bG)([c.default], () => c.default.getId() === t), R = (0, f.g)(), {
         trackUserProfileAction: k
     } = (0, u.NJ)(), O = (0, x.A)({
         widget: n,
@@ -100,11 +100,11 @@ function T(e) {
     (0, m.A)(O, w);
     let L = y && null != h && !g,
         P = () => (0, i.jsxs)("div", {
-            ref: N,
+            ref: S,
             className: s()(j.kL, p),
             children: [(0, i.jsx)(_.A, {
                 userId: t,
-                headingId: S,
+                headingId: N,
                 title: I,
                 subtitle: T,
                 actionButtons: E,
@@ -117,11 +117,11 @@ function T(e) {
         });
     return (0, i.jsx)("section", {
         ref: O,
-        "aria-labelledby": S,
+        "aria-labelledby": N,
         children: L ? (0, i.jsx)(v, {
             index: h ?? 0,
             widget: n,
-            getWidth: () => N.current?.offsetWidth,
+            getWidth: () => S.current?.offsetWidth,
             additionalManageWidgetMenuItems: C,
             children: P()
         }) : P()

@@ -3,14 +3,20 @@ n.d(t, {
     A: () => function e(t, n, s) {
         let l = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : {};
         if (!n.has(t.key)) return null;
-        if (!(0, i.nW)(t)) return s.register({
-            node: t,
-            parentSidebarItemKey: l.sidebarItem,
-            parentPanelKey: l.panel?.key,
-            parentTabKey: l.tab?.key,
-            parentCategoryKey: l.category?.key,
-            parentAccordionKey: l.accordion?.key
-        }), t;
+        if (!(0, i.nW)(t)) {
+            let {
+                usePredicate: e,
+                ...n
+            } = t;
+            return s.register({
+                node: n,
+                parentSidebarItemKey: l.sidebarItem,
+                parentPanelKey: l.panel?.key,
+                parentTabKey: l.tab?.key,
+                parentCategoryKey: l.category?.key,
+                parentAccordionKey: l.accordion?.key
+            }), n
+        }
         let a = l;
         t.type === i.Z6.SIDEBAR_ITEM && (a = {
             sidebarItem: t.key,
@@ -33,18 +39,21 @@ n.d(t, {
         });
         let r = t.layout.map(t => e(t, n, s, a)).filter(e => null != e);
         if (0 === r.length && !("StronglyDiscouragedCustomComponent" in t || t.type === i.Z6.SIDEBAR_ITEM && "onClick" in t)) return null;
-        let o = {
-            ...t,
+        let {
+            usePredicate: o,
+            ...d
+        } = t, c = {
+            ...d,
             layout: r
         };
         return s.register({
-            node: o,
+            node: c,
             parentSidebarItemKey: a.sidebarItem,
             parentPanelKey: a.panel?.key,
             parentTabKey: a.tab?.key,
             parentCategoryKey: a.category?.key,
             parentAccordionKey: a.accordion?.key
-        }), o
+        }), c
     }
 });
 var i = n(963935)

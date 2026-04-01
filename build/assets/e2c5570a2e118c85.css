@@ -1,0 +1,30 @@
+.modalContainer__312e3.two__312e3 div[data-mana-component=modal] {
+    border: none;
+    padding: 0
+}
+
+.container__312e3 {
+    background-color: #fff;
+    min-width: 400px;
+    position: relative
+}
+
+.border__312e3 {
+    height: 100%;
+    margin-top: -8px;
+    padding: 16px 24px
+}
+
+.footer__0cc07 {
+    display: flex;
+    gap: 8px;
+    justify-content: flex-end;
+    margin-top: var(--space-16)
+}
+
+.button__0cc07 {
+    font-size: 32px;
+    line-height: 16px
+}
+
+/*# sourceMappingURL=e2c5570a2e118c85.css.map*/

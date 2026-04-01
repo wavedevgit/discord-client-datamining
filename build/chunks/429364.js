@@ -1,94 +1,94 @@
 /** chunk id: 429364 params = (module,exports,require) **/
-l.d(t, {
+a.d(t, {
     T: () => h,
     p: () => m
-}), l(323874), l(14289), l(35956), l(321073);
-var a = l(627968),
-    n = l(64700),
-    s = l(735438),
-    i = l(194498),
-    r = l(77729),
-    o = l(372684),
-    u = l(399925),
-    c = l(956050);
+}), a(323874), a(14289), a(35956), a(321073);
+var l = a(627968),
+    n = a(64700),
+    i = a(735438),
+    s = a(194498),
+    r = a(77729),
+    o = a(372684),
+    u = a(399925),
+    c = a(956050);
 let d = n.createContext(null);
 
 function m(e) {
     var t, m, h;
     let p, f, g, v, x, b, j, {
-            children: C,
-            clip: N
+            children: _,
+            clip: C
         } = e,
-        k = N.type === o.nQ.SCREENSHOT,
+        k = C.type === o.nQ.SCREENSHOT,
         {
-            initialDuration: y,
-            initialCropStart: E,
-            initialCropEnd: A,
-            initialCurrentTime: S
-        } = (p = N.length / 1e3, f = N.editMetadata?.start ?? 0, g = N.editMetadata?.end ?? 0, v = 0 !== f || 0 !== g && g !== p, {
+            initialDuration: N,
+            initialCropStart: y,
+            initialCropEnd: E,
+            initialCurrentTime: A
+        } = (p = C.length / 1e3, f = C.editMetadata?.start ?? 0, g = C.editMetadata?.end ?? 0, v = 0 !== f || 0 !== g && g !== p, {
             initialDuration: p,
             initialCropStart: f,
             initialCropEnd: g,
             isCropped: v,
             initialCurrentTime: v ? f : p / 2
         }),
-        I = n.useMemo(() => null == r.A.clips.getClipProtocolURLFromPath ? null : r.A.clips.getClipProtocolURLFromPath(N.filepath), [N.filepath]),
-        [w, T] = n.useState({
-            clipName: N.name,
-            isTemporary: N.isTemporary ?? !1,
-            cropStart: E,
-            cropEnd: 0 === A ? y : A,
-            voiceAudioEnabled: N.editMetadata?.voiceAudio ?? !0,
-            applicationAudioEnabled: N.editMetadata?.applicationAudio ?? !0,
-            soundboardAudioEnabled: N.editMetadata?.soundboardAudio ?? !0
+        S = n.useMemo(() => null == r.A.clips.getClipProtocolURLFromPath ? null : r.A.clips.getClipProtocolURLFromPath(C.filepath), [C.filepath]),
+        [w, I] = n.useState({
+            clipName: C.name,
+            isTemporary: C.isTemporary ?? !1,
+            cropStart: y,
+            cropEnd: 0 === E ? N : E,
+            voiceAudioEnabled: C.editMetadata?.voiceAudio ?? !0,
+            applicationAudioEnabled: C.editMetadata?.applicationAudio ?? !0,
+            soundboardAudioEnabled: C.editMetadata?.soundboardAudio ?? !0
         }),
         {
-            clipName: L,
-            isTemporary: R,
-            cropStart: M,
-            cropEnd: O,
-            voiceAudioEnabled: U,
-            applicationAudioEnabled: D,
-            soundboardAudioEnabled: $
+            clipName: T,
+            isTemporary: L,
+            cropStart: R,
+            cropEnd: M,
+            voiceAudioEnabled: O,
+            applicationAudioEnabled: U,
+            soundboardAudioEnabled: D
         } = w,
         P = n.useRef(null),
-        z = n.useRef(S),
-        [G, B] = n.useState(y),
-        [_, K] = n.useState(!1),
-        [V, F] = n.useState(!1),
-        W = n.useRef(new Set),
-        H = n.useRef(!1),
+        z = n.useRef(A),
+        [$, G] = n.useState(N),
+        [B, V] = n.useState(!1),
+        [F, K] = n.useState(!1),
+        H = n.useRef(new Set),
+        W = n.useRef(!1),
         [J, X] = n.useState(null),
         [q, Q] = n.useState(null),
         [Y, Z] = n.useState(null),
         [ee, et] = n.useState([]),
-        [el, ea] = n.useState(!1),
+        [ea, el] = n.useState(!1),
         en = n.useCallback(() => ({
-            ...N,
-            name: L,
+            ...C,
+            name: T,
             editMetadata: {
-                start: M,
-                end: O,
-                applicationAudio: D,
-                voiceAudio: U,
-                soundboardAudio: $
+                start: R,
+                end: M,
+                applicationAudio: U,
+                voiceAudio: O,
+                soundboardAudio: D
             }
-        }), [N, L, M, O, D, U, $]),
-        es = n.useCallback(e => {
+        }), [C, T, R, M, U, O, D]),
+        ei = n.useCallback(e => {
             P.current = e, X(e.videoElement)
         }, []),
-        ei = n.useCallback((e, t, l) => {
-            Q(e), et(t), Z(l)
+        es = n.useCallback((e, t, a) => {
+            Q(e), et(t), Z(a)
         }, []),
         er = n.useCallback(() => {
-            ea(!0)
+            el(!0)
         }, []);
-    t = N.filepath, n.useEffect(() => {
-        let e = new Worker(new URL("/assets/" + l.u("91363"), l.b));
+    t = C.filepath, n.useEffect(() => {
+        let e = new Worker(new URL("/assets/" + a.u("91363"), a.b));
         return async function() {
-            let l;
+            let a;
             try {
-                l = await r.A.clips.loadClip(t)
+                a = await r.A.clips.loadClip(t)
             } catch {
                 er();
                 return
@@ -96,51 +96,51 @@ function m(e) {
             e.onmessage = e => {
                 let {
                     videoBuffer: t,
-                    audioTracks: l,
-                    audioBuffer: a
+                    audioTracks: a,
+                    audioBuffer: l
                 } = e.data, n = URL.createObjectURL(new Blob([t], {
                     type: "video/mp4"
-                })), s = [];
-                for (let e of l) {
+                })), i = [];
+                for (let e of a) {
                     let t = URL.createObjectURL(new Blob([e.buffer], {
                         type: "audio/mp4"
                     }));
-                    s.push({
+                    i.push({
                         arrayBuffer: e.buffer,
                         url: t,
                         trackName: e.trackName
                     })
                 }
-                ei(n, s, URL.createObjectURL(new Blob([a], {
+                es(n, i, URL.createObjectURL(new Blob([l], {
                     type: "audio/mp4"
                 })))
             }, e.postMessage({
-                videoBuffer: l.data.buffer
-            }, [l.data.buffer])
+                videoBuffer: a.data.buffer
+            }, [a.data.buffer])
         }(), () => {
             e.terminate()
         }
-    }, [t, ei, er]), n.useEffect(() => () => {
+    }, [t, es, er]), n.useEffect(() => () => {
         null != q && URL.revokeObjectURL(q)
     }, [q]), n.useEffect(() => () => {
         for (let e of ee) URL.revokeObjectURL(e.url)
     }, [ee]), n.useEffect(() => () => {
         null != Y && URL.revokeObjectURL(Y)
-    }, [Y]), m = N.id, h = {
-        name: L,
+    }, [Y]), m = C.id, h = {
+        name: T,
         editMetadata: {
-            start: M,
-            end: O,
-            voiceAudio: U,
-            applicationAudio: D,
-            soundboardAudio: $
+            start: R,
+            end: M,
+            voiceAudio: O,
+            applicationAudio: U,
+            soundboardAudio: D
         }
     }, (x = n.useRef(h)).current = h, n.useEffect(() => {
         async function e() {
             let e = {},
                 t = x.current;
-            k || null == I || (e = {
-                thumbnail: await (0, c.m)(I, t.editMetadata.start)
+            k || null == S || (e = {
+                thumbnail: await (0, c.m)(S, t.editMetadata.start)
             }), (0, u.Yy)(m, {
                 ...t,
                 ...e
@@ -149,42 +149,42 @@ function m(e) {
         return () => {
             e()
         }
-    }, [m, I, k, x]), n.useEffect(() => {
-        G > 0 && O <= 0 && y <= 0 && T(e => ({
+    }, [m, S, k, x]), n.useEffect(() => {
+        $ > 0 && M <= 0 && N <= 0 && I(e => ({
             ...e,
-            cropEnd: G
+            cropEnd: $
         }))
-    }, [G, O, y]);
-    let eo = n.useMemo(() => O - M, [M, O]),
-        eu = n.useCallback(e => (W.current.add(e), () => {
-            W.current.delete(e)
-        }), [W]),
+    }, [$, M, N]);
+    let eo = n.useMemo(() => M - R, [R, M]),
+        eu = n.useCallback(e => (H.current.add(e), () => {
+            H.current.delete(e)
+        }), [H]),
         {
             setCropStart: ec,
             setCropEnd: ed,
             setCrop: em
         } = (b = n.useCallback(e => {
-            let t = (0, s.clamp)(e, 0, O - 1);
-            T(e => ({
+            let t = (0, i.clamp)(e, 0, M - 1);
+            I(e => ({
                 ...e,
                 cropStart: t
             })), P?.current?.seek(t)
-        }, [O, T, P]), {
+        }, [M, I, P]), {
             setCropStart: b,
             setCropEnd: n.useCallback(e => {
-                let t = (0, s.clamp)(e, M + 1, G);
-                T(e => ({
+                let t = (0, i.clamp)(e, R + 1, $);
+                I(e => ({
                     ...e,
                     cropEnd: t
                 })), P?.current?.seek(t)
-            }, [M, G, T, P]),
+            }, [R, $, I, P]),
             setCrop: n.useCallback((e, t) => {
-                T(l => ({
-                    ...l,
+                I(a => ({
+                    ...a,
                     cropStart: e,
                     cropEnd: t
                 }))
-            }, [T])
+            }, [I])
         }),
         {
             play: eh,
@@ -201,63 +201,63 @@ function m(e) {
                 P?.current?.seek(e)
             }, [P])
         });
-    (0, i.A)(() => {
+    (0, s.A)(() => {
         let e = P.current?.videoElement;
-        if (null == e || !H.current) return;
+        if (null == e || !W.current) return;
         let t = e.currentTime;
-        z.current !== t && (z.current = t, W.current.forEach(e => e.onTimeUpdate?.(t)))
+        z.current !== t && (z.current = t, H.current.forEach(e => e.onTimeUpdate?.(t)))
     }), n.useEffect(() => {
         if (null == J) return;
         let e = () => {
-                K(!0), W.current.forEach(e => e.onPlay?.())
+                V(!0), H.current.forEach(e => e.onPlay?.())
             },
             t = () => {
-                K(!1), W.current.forEach(e => e.onPause?.())
-            },
-            l = () => {
-                B(J.duration)
+                V(!1), H.current.forEach(e => e.onPause?.())
             },
             a = () => {
-                F(!0), B(J.duration), P?.current?.seek(S)
+                G(J.duration)
+            },
+            l = () => {
+                K(!0), G(J.duration), P?.current?.seek(A)
             },
             n = () => {
-                H.current = !0
+                W.current = !0
             };
-        return J.addEventListener("play", e), J.addEventListener("pause", t), J.addEventListener("durationchange", l), J.addEventListener("loadedmetadata", a), J.addEventListener("seeked", n), J.duration > 0 && B(J.duration), J.readyState >= 1 && (F(!0), P?.current?.seek(S)), K(!J.paused), () => {
-            J.removeEventListener("play", e), J.removeEventListener("pause", t), J.removeEventListener("durationchange", l), J.removeEventListener("loadedmetadata", a), J.removeEventListener("seeked", n)
+        return J.addEventListener("play", e), J.addEventListener("pause", t), J.addEventListener("durationchange", a), J.addEventListener("loadedmetadata", l), J.addEventListener("seeked", n), J.duration > 0 && G(J.duration), J.readyState >= 1 && (K(!0), P?.current?.seek(A)), V(!J.paused), () => {
+            J.removeEventListener("play", e), J.removeEventListener("pause", t), J.removeEventListener("durationchange", a), J.removeEventListener("loadedmetadata", l), J.removeEventListener("seeked", n)
         }
-    }, [J, S, P, W, K, F, B, H]);
+    }, [J, A, P, H, V, K, G, W]);
     let eg = n.useCallback(e => {
-            T(t => ({
+            I(t => ({
                 ...t,
                 clipName: e
             }))
         }, []),
         ev = n.useCallback(e => {
-            T(t => ({
+            I(t => ({
                 ...t,
                 isTemporary: e
             }))
         }, []),
         ex = n.useCallback(e => {
-            T(t => ({
+            I(t => ({
                 ...t,
                 applicationAudioEnabled: e
             }))
         }, []),
         eb = n.useCallback(e => {
-            T(t => ({
+            I(t => ({
                 ...t,
                 voiceAudioEnabled: e
             }))
         }, []),
         ej = n.useCallback(e => {
-            T(t => ({
+            I(t => ({
                 ...t,
                 soundboardAudioEnabled: e
             }))
         }, []),
-        eC = n.useMemo(() => function() {
+        e_ = n.useMemo(() => function() {
             let [e, t] = n.useState(z.current);
             return n.useEffect(() => {
                 let e = {
@@ -265,18 +265,18 @@ function m(e) {
                         t(e)
                     }
                 };
-                return W.current.add(e), () => {
-                    W.current.delete(e)
+                return H.current.add(e), () => {
+                    H.current.delete(e)
                 }
             }, []), e
-        }, [z, W]),
-        eN = n.useMemo(() => ({
-            useCurrentTime: eC,
-            duration: G,
-            isPlaying: _,
-            isLoaded: V,
-            cropStart: M,
-            cropEnd: O,
+        }, [z, H]),
+        eC = n.useMemo(() => ({
+            useCurrentTime: e_,
+            duration: $,
+            isPlaying: B,
+            isLoaded: F,
+            cropStart: R,
+            cropEnd: M,
             cropDuration: eo,
             setCropStart: ec,
             setCropEnd: ed,
@@ -285,27 +285,27 @@ function m(e) {
             pause: ep,
             seek: ef,
             subscribe: eu,
-            setVideoPlayerRef: es,
+            setVideoPlayerRef: ei,
             videoPlayerRef: P,
             videoURL: q,
             audioTracks: ee,
-            hasError: el,
-            applicationAudioEnabled: D,
+            hasError: ea,
+            applicationAudioEnabled: U,
             setApplicationAudioEnabled: ex,
-            voiceAudioEnabled: U,
+            voiceAudioEnabled: O,
             setVoiceAudioEnabled: eb,
-            soundboardAudioEnabled: $,
+            soundboardAudioEnabled: D,
             setSoundboardAudioEnabled: ej,
             getEditedClip: en,
-            clipName: L,
+            clipName: T,
             setClipName: eg,
-            isTemporary: R,
+            isTemporary: L,
             audioURL: Y,
             setIsTemporary: ev
-        }), [eC, G, _, V, M, O, eo, ec, ed, em, eh, ep, ef, Y, eu, es, q, ee, el, D, ex, U, eb, $, ej, en, L, eg, R, ev]);
-    return (0, a.jsx)(d.Provider, {
-        value: eN,
-        children: C
+        }), [e_, $, B, F, R, M, eo, ec, ed, em, eh, ep, ef, Y, eu, ei, q, ee, ea, U, ex, O, eb, D, ej, en, T, eg, L, ev]);
+    return (0, l.jsx)(d.Provider, {
+        value: eC,
+        children: _
     })
 }
 

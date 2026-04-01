@@ -1,0 +1,90 @@
+.modalContainer__312e3.two__312e3 div[data-mana-component=modal] {
+    border: none;
+    padding: 0
+}
+
+.container__312e3 {
+    background-color: #fff;
+    min-width: 400px;
+    position: relative
+}
+
+.border__312e3 {
+    height: 100%;
+    margin-top: -8px;
+    padding: 16px 24px
+}
+
+.title__41b81 {
+    paint-order: stroke fill;
+    position: absolute;
+    top: -30px;
+    -webkit-text-stroke: 4px #fff
+}
+
+.settings__41b81 {
+    gap: 16px;
+    margin-top: 20px
+}
+
+.settings__41b81,
+.sliderGroup__41b81 {
+    display: flex;
+    flex-direction: column
+}
+
+.sliderGroup__41b81 {
+    gap: 4px
+}
+
+.sliderHeader__41b81 {
+    align-items: center;
+    display: flex;
+    justify-content: space-between
+}
+
+.sectionHeading__41b81 {
+    position: relative
+}
+
+.rules__41b81 {
+    display: flex;
+    flex-direction: column;
+    gap: 32px
+}
+
+.footer__41b81 {
+    display: flex;
+    gap: 8px
+}
+
+.iconButton__41b81 {
+    height: 36px;
+    width: 36px
+}
+
+.changeClassButton__41b81 {
+    position: relative
+}
+
+.footerText__41b81 {
+    align-self: flex-end;
+    flex: 1;
+    text-align: end
+}
+
+@keyframes spin__41b81 {
+    0% {
+        transform: rotate(0deg)
+    }
+
+    to {
+        transform: rotate(1turn)
+    }
+}
+
+.full-motion .changeClassLoading__41b81 {
+    animation: spin__41b81 2s linear infinite
+}
+
+/*# sourceMappingURL=9dc143110556e7bc.css.map*/

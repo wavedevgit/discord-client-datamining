@@ -26,8 +26,8 @@ var i = n(627968),
     E = n(692969),
     b = n(207963),
     C = n(953756),
-    S = n(647901),
-    N = n(371068),
+    N = n(647901),
+    S = n(371068),
     y = n(61266),
     R = n(731068),
     k = n(619517),
@@ -61,15 +61,15 @@ function W(e) {
         startAuthorization: b,
         token: C
     } = (0, h.RD)(d), {
-        analyticsLocations: S
-    } = (0, f.Ay)(p.A.USER_PROFILE_APPLICATION_WIDGET), N = l.useCallback(() => {
+        analyticsLocations: N
+    } = (0, f.Ay)(p.A.USER_PROFILE_APPLICATION_WIDGET), S = l.useCallback(() => {
         j && (t({
             action: I ? "PRESS_APPLICATION_WIDGET_LINKED_RECONNECT" : "PRESS_APPLICATION_WIDGET_UNLINKED_CONNECT",
             applicationId: a.applicationId
         }), b({
-            analyticsLocations: S
+            analyticsLocations: N
         }))
-    }, [j, I, b, t, a.applicationId, S]), y = null == r && A && !I && j, R = null == r && A && I && j && null != C && !C.scopes.includes(c.F.APPLICATION_IDENTITIES_WRITE) && !C.scopes.includes(c.F.SDK_SOCIAL_LAYER) && !C.scopes.includes(c.F.SDK_SOCIAL_LAYER_PRESENCE), k = (0, i.jsxs)(i.Fragment, {
+    }, [j, I, b, t, a.applicationId, N]), y = null == r && A && !I && j, R = null == r && A && I && j && null != C && !C.scopes.includes(c.F.APPLICATION_IDENTITIES_WRITE) && !C.scopes.includes(c.F.SDK_SOCIAL_LAYER) && !C.scopes.includes(c.F.SDK_SOCIAL_LAYER_PRESENCE), k = (0, i.jsxs)(i.Fragment, {
         children: [null != u ? (0, i.jsx)("img", {
             className: F.Z2,
             src: u,
@@ -96,7 +96,7 @@ function W(e) {
         isCurrentUser: o,
         game: x,
         openGameProfileModal: _,
-        handleConnect: N,
+        handleConnect: S,
         showConnectCta: y,
         showReconnectCta: R,
         headerTitle: O
@@ -425,7 +425,7 @@ function q(e) {
                 children: null != t ? t : (0, i.jsx)("div", {
                     className: F.jC
                 })
-            }), (0, i.jsx)(S.x, {
+            }), (0, i.jsx)(N.x, {
                 color: "muted",
                 children: n
             })]
@@ -475,7 +475,7 @@ function Z(e) {
 function Q(e) {
     let {
         content: t
-    } = e, n = l.useId(), a = (0, S.X)();
+    } = e, n = l.useId(), a = (0, N.X)();
     return null != t ? (0, i.jsx)(y.A, {
         type: x.I5.TEXT_DISPLAY,
         id: n,
@@ -491,7 +491,7 @@ function $(e) {
         content: t,
         image: n,
         imagePosition: l
-    } = e, a = (0, S.X)(), r = (0, j.c)(n) ? (0, i.jsx)("div", {
+    } = e, a = (0, N.X)(), r = (0, j.c)(n) ? (0, i.jsx)("div", {
         className: s()(F.Sl, a.className),
         "data-position": l,
         children: (0, i.jsx)(k.Ay, {
@@ -521,7 +521,7 @@ function ee(e) {
         size: t = "small",
         divider: n = !1
     } = e, a = l.useId();
-    return (0, i.jsx)(N.A, {
+    return (0, i.jsx)(S.A, {
         type: x.I5.SEPARATOR,
         id: a,
         divider: n,
@@ -564,7 +564,7 @@ function ei(e) {
         containerInnerWidth: 396,
         children: (0, i.jsx)(b.f5, {
             applicationWidget: n,
-            children: (0, i.jsx)(S.x, {
+            children: (0, i.jsx)(N.x, {
                 size: "reduced",
                 weight: "reduced",
                 children: (0, i.jsx)("div", {

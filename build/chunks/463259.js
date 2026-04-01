@@ -27,8 +27,8 @@ var i = n(627968),
     E = n(357541),
     b = n(236599),
     C = n(192),
-    S = n(128988),
-    N = n(795755),
+    N = n(128988),
+    S = n(795755),
     y = n(53977),
     R = n(982599),
     k = n(515054),
@@ -44,7 +44,7 @@ function P(e) {
     return t instanceof _.R ? (0, i.jsx)(T.A, {
         widget: t,
         ...n
-    }) : t instanceof A.Yy ? (0, i.jsx)(N.A, {
+    }) : t instanceof A.Yy ? (0, i.jsx)(S.A, {
         widget: t,
         ...n
     }) : null
@@ -113,7 +113,7 @@ function M(e) {
             s.current && (s.current = !1, a())
         }, [a])
     })(t.id, E);
-    let S = () => (0, i.jsxs)(i.Fragment, {
+    let N = () => (0, i.jsxs)(i.Fragment, {
         children: [o && (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)(b.A, {
                 className: L.cG
@@ -130,8 +130,8 @@ function M(e) {
         if (m) return (0, i.jsx)(y.A, {});
         else return (0, i.jsx)(O.A, {});
     return o ? (0, i.jsx)(C.D, {
-        children: S()
-    }) : S()
+        children: N()
+    }) : N()
 }
 
 function U(e) {
@@ -150,7 +150,7 @@ function U(e) {
             [L.az]: r
         }),
         fade: !0,
-        children: [(0, i.jsx)(S.A, {
+        children: [(0, i.jsx)(N.A, {
             scrollerRef: a
         }), (0, i.jsx)(M, {
             user: t,

@@ -32,8 +32,8 @@ var n, a = i(627968),
     P = i(139675),
     j = i(486020),
     D = i(821589),
-    U = i(682261),
-    O = i(672979),
+    O = i(682261),
+    U = i(672979),
     R = i(90644),
     M = i(61330),
     w = i(960076),
@@ -272,7 +272,7 @@ class J extends l.PureComponent {
             application: n,
             activityGuild: l
         } = this.props;
-        return null != e.assets || (0, U.A)(e) || e.type !== F.$pd.PLAYING || "ActivityFeed" === i || t.bot ? null : null == n && null != l ? (0, a.jsx)("div", {
+        return null != e.assets || (0, O.A)(e) || e.type !== F.$pd.PLAYING || "ActivityFeed" === i || t.bot ? null : null == n && null != l ? (0, a.jsx)("div", {
             className: r()(W.gameIcon, W.screenshareIcon)
         }) : (0, a.jsx)(v.A, {
             className: W.gameIcon,
@@ -291,7 +291,7 @@ class J extends l.PureComponent {
             type: s
         } = e;
         if (s === F.$pd.CUSTOM_STATUS) return null;
-        let o = (0, O.A)(e),
+        let o = (0, U.A)(e),
             c = e.name,
             d = c;
         return (s === F.$pd.HANG_STATUS ? d = (0, E.Au)(t.id, e) : o && null != i ? d = (0, a.jsx)("span", {
@@ -324,7 +324,7 @@ class J extends l.PureComponent {
         }), t = () => {
             (0, N.u)(l.id)
         };
-        else if (!(0, O.A)(e))
+        else if (!(0, U.A)(e))
             if (s = n, r = n, (0, R.A)(e) && null != n) {
                 let t = (t, i) => (0, a.jsx)(b.A, {
                     artists: n,
@@ -386,11 +386,11 @@ class J extends l.PureComponent {
         let {
             activityGuild: t
         } = this.props;
-        if (!(0, O.A)(e) || (0, R.A)(e)) return null;
+        if (!(0, U.A)(e) || (0, R.A)(e)) return null;
         let {
             timestamps: i
         } = e;
-        return null == i ? null : (0, U.A)(e) ? (0, a.jsx)(z, {
+        return null == i ? null : (0, O.A)(e) ? (0, a.jsx)(z, {
             timestamps: i
         }) : (0, a.jsx)(x.Ay, {
             start: i.start,
@@ -424,7 +424,7 @@ class J extends l.PureComponent {
             } = e,
             r = n,
             o = n;
-        if (!(0, O.A)(e) && (r = s?.large_text, o = s?.large_text, (0, R.A)(e) && null != r)) {
+        if (!(0, U.A)(e) && (r = s?.large_text, o = s?.large_text, (0, R.A)(e) && null != r)) {
             let t = (t, i) => null != e.sync_id && null != o ? (0, a.jsx)(_.MzZ, {
                 className: W.bodyLink,
                 onClick: this.handleOpenSpotifyAlbum,

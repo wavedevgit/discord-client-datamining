@@ -71,7 +71,7 @@ let D = function(e) {
         (0, p.L3)(e, async () => {
             let {
                 default: e
-            } = await Promise.all([l.e("80628"), l.e("80559")]).then(l.bind(l, 183903));
+            } = await l.e("80628").then(l.bind(l, 183903));
             return t => (0, i.jsx)(e, {
                 ...t,
                 clips: s,

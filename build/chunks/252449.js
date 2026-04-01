@@ -1,21 +1,21 @@
 /** chunk id: 252449 params = (module,exports,require) **/
-l.d(t, {
+a.d(t, {
     E: () => b
 });
-var a = l(627968),
-    n = l(64700),
-    s = l(735438),
-    i = l.n(s),
-    r = l(311907),
-    o = l(118356),
-    u = l(397927),
-    c = l(287809),
-    d = l(690521),
-    m = l(562153),
-    h = l(372684),
-    p = l(429364),
-    f = l(731854),
-    g = l(314212);
+var l = a(627968),
+    n = a(64700),
+    i = a(735438),
+    s = a.n(i),
+    r = a(311907),
+    o = a(118356),
+    u = a(397927),
+    c = a(287809),
+    d = a(690521),
+    m = a(562153),
+    h = a(372684),
+    p = a(429364),
+    f = a(731854),
+    g = a(314212);
 let v = new o.Vy("ClipsSpeakingOverlay");
 class x {
     timeline;
@@ -33,15 +33,15 @@ class x {
     }
     processSoundboardEvent(e) {
         let t = this.getSoundboardKey(e.soundboardId, e.userId),
-            l = this.soundboardPlayCounts.get(t) ?? 0;
-        if (0 === l && !e.playing && (this.soundboardPlayCounts.set(t, 1), this.activeSoundboards.set(t, {
+            a = this.soundboardPlayCounts.get(t) ?? 0;
+        if (0 === a && !e.playing && (this.soundboardPlayCounts.set(t, 1), this.activeSoundboards.set(t, {
                 soundboardId: e.soundboardId,
                 name: e.name,
                 userId: e.userId,
                 emojiId: e.emojiId,
                 emojiName: e.emojiName,
                 emojiAnimated: e.emojiAnimated
-            }), this.timeline.has(0) || this.timeline.set(0, this.getCurrentSnapshot())), e.playing) this.soundboardPlayCounts.set(t, l + 1), this.activeSoundboards.set(t, {
+            }), this.timeline.has(0) || this.timeline.set(0, this.getCurrentSnapshot())), e.playing) this.soundboardPlayCounts.set(t, a + 1), this.activeSoundboards.set(t, {
             soundboardId: e.soundboardId,
             name: e.name,
             userId: e.userId,
@@ -50,17 +50,17 @@ class x {
             emojiAnimated: e.emojiAnimated
         });
         else {
-            let e = Math.max(0, l - 1);
+            let e = Math.max(0, a - 1);
             this.soundboardPlayCounts.set(t, e), 0 === e && this.activeSoundboards.delete(t)
         }
     }
     getCurrentSnapshot() {
         return {
             speakingUserIds: Array.from(this.userSpeakingStates.entries()).filter(e => {
-                let [t, l] = e;
-                return l
+                let [t, a] = e;
+                return a
             }).map(e => {
-                let [t, l] = e;
+                let [t, a] = e;
                 return t
             }),
             activeSoundboards: Array.from(this.activeSoundboards.values())
@@ -68,12 +68,12 @@ class x {
     }
     getEventsAtTimestamp(e) {
         let t = Array.from(this.timeline.keys()).sort((e, t) => e - t),
-            l = 0,
-            a = t.length - 1,
+            a = 0,
+            l = t.length - 1,
             n = -1;
-        for (; l <= a;) {
-            let s = Math.floor((l + a) / 2);
-            t[s] <= e ? (n = s, l = s + 1) : a = s - 1
+        for (; a <= l;) {
+            let i = Math.floor((a + l) / 2);
+            t[i] <= e ? (n = i, a = i + 1) : l = i - 1
         }
         return -1 === n ? {
             speakingUserIds: [],
@@ -88,55 +88,55 @@ class x {
 function b(e) {
     let {
         clip: t,
-        soundboardAudioEnabled: l,
-        voiceAudioEnabled: s
+        soundboardAudioEnabled: a,
+        voiceAudioEnabled: i
     } = e, {
         useCurrentTime: o,
         subscribe: h
-    } = (0, p.T)(), f = o(), b = t.decision?.timestamp ?? 0, [j] = n.useState(() => new x(t.timeline ?? [])), C = b - t.length, N = n.useCallback(e => {
-        let t = 1e3 * i().round(e, 3),
-            l = j.getEventsAtTimestamp(C + t);
+    } = (0, p.T)(), f = o(), b = t.decision?.timestamp ?? 0, [j] = n.useState(() => new x(t.timeline ?? [])), _ = b - t.length, C = n.useCallback(e => {
+        let t = 1e3 * s().round(e, 3),
+            a = j.getEventsAtTimestamp(_ + t);
         return {
-            speakingUserIds: i().sortBy(l.speakingUserIds),
-            activeSoundboards: i().sortBy(l.activeSoundboards, "soundboardId")
+            speakingUserIds: s().sortBy(a.speakingUserIds),
+            activeSoundboards: s().sortBy(a.activeSoundboards, "soundboardId")
         }
-    }, [j, C]), [k, y] = n.useState(() => N(f)), E = (0, r.cf)([c.default], () => i().pick(c.default.getUsers(), t.users));
+    }, [j, _]), [k, N] = n.useState(() => C(f)), y = (0, r.cf)([c.default], () => s().pick(c.default.getUsers(), t.users));
     return (n.useEffect(() => h({
         onTimeUpdate: e => {
-            let t = N(e);
-            y(e => i().isEqual(t, e) ? e : (v.info("Event snapshot changed", {
+            let t = C(e);
+            N(e => s().isEqual(t, e) ? e : (v.info("Event snapshot changed", {
                 newEventSnapshot: t,
                 currentEventSnapshot: e
             }), t))
         }
-    }), [h, N]), null == b) ? null : (0, a.jsxs)("div", {
+    }), [h, C]), null == b) ? null : (0, l.jsxs)("div", {
         className: g.h8,
-        children: [s && k.speakingUserIds.map(e => {
-            let l = E[e];
-            if (null == l) return null;
-            let n = (0, m.mG)(t.guildId, t.channelId, l);
-            return (0, a.jsxs)("div", {
+        children: [i && k.speakingUserIds.map(e => {
+            let a = y[e];
+            if (null == a) return null;
+            let n = (0, m.mG)(t.guildId, t.channelId, a);
+            return (0, l.jsxs)("div", {
                 className: g.q7,
-                children: [(0, a.jsx)(u.euF, {
+                children: [(0, l.jsx)(u.euF, {
                     "aria-label": n,
                     size: u._3J.SIZE_24,
-                    src: l.getAvatarURL(null, 24, !1)
-                }), (0, a.jsx)(u.Text, {
+                    src: a.getAvatarURL(null, 24, !1)
+                }), (0, l.jsx)(u.Text, {
                     className: g.Xh,
                     color: "always-white",
                     variant: "text-sm/normal",
                     children: n
                 })]
             }, e)
-        }), l && k.activeSoundboards.map(e => {
-            let t = E[e.userId];
-            return null == t ? null : (0, a.jsxs)("div", {
+        }), a && k.activeSoundboards.map(e => {
+            let t = y[e.userId];
+            return null == t ? null : (0, l.jsxs)("div", {
                 className: g.q7,
-                children: [(0, a.jsx)(u.euF, {
+                children: [(0, l.jsx)(u.euF, {
                     "aria-label": t.username,
                     size: u._3J.SIZE_24,
                     src: t.getAvatarURL(null, 24, !1)
-                }), null != e.emojiId || null != e.emojiName ? (0, a.jsx)("img", {
+                }), null != e.emojiId || null != e.emojiName ? (0, l.jsx)("img", {
                     alt: e.name,
                     className: g.g8,
                     src: (0, d.Ez)({
@@ -144,7 +144,7 @@ function b(e) {
                         name: e.emojiName ?? "",
                         animated: e.emojiAnimated ?? !1
                     }, 24)
-                }) : null, (0, a.jsx)(u.Text, {
+                }) : null, (0, l.jsx)(u.Text, {
                     className: g.Xh,
                     color: "always-white",
                     variant: "text-sm/normal",

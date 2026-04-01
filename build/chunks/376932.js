@@ -31,11 +31,11 @@ function I(e) {
     } = e, v = (0, u.GG)("social_layer_wishlist_recommendations_on_profile"), T = (n?.items.length ?? 0) > 0, [E, b] = l.useState(!1);
     !a || T || E || b(!0);
     let C = (0, o.bG)([x.A], () => null != n ? new Date(x.A.getWishlistSettings(t.id, n.id)?.updated_at ?? 0).valueOf() : 0),
-        [S, N] = (0, c.Wl)(d.M.USER_PROFILE_WISHLIST_RECOMMENDATIONS, {
+        [N, S] = (0, c.Wl)(d.M.USER_PROFILE_WISHLIST_RECOMMENDATIONS, {
             showAfterTimestamp: C + A,
             cooldownDurationMs: _
         }, void 0, !0),
-        y = S === d.M.USER_PROFILE_WISHLIST_RECOMMENDATIONS;
+        y = N === d.M.USER_PROFILE_WISHLIST_RECOMMENDATIONS;
     return a && (!T || y || E) ? (0, i.jsxs)("div", {
         className: s()(h.kL, I),
         children: [(0, i.jsxs)("div", {
@@ -47,7 +47,7 @@ function I(e) {
             }), T && (0, i.jsx)(r.JnF, {
                 size: "xs",
                 onClick: () => {
-                    b(!1), N(p.i.USER_DISMISS)
+                    b(!1), S(p.i.USER_DISMISS)
                 }
             })]
         }), (0, i.jsx)(g.A, {

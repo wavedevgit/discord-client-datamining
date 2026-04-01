@@ -60,7 +60,7 @@ function C(e) {
     })
 }
 
-function S(e) {
+function N(e) {
     let {
         applicationId: t,
         userId: n,
@@ -86,7 +86,7 @@ function S(e) {
     })
 }
 
-function N(e) {
+function S(e) {
     let {
         user: t,
         guildId: n,
@@ -128,7 +128,7 @@ function R(e) {
             size: "xxs",
             color: r.LU0.colors.ICON_MUTED,
             className: b.Ls
-        }), (0, i.jsx)(N, {
+        }), (0, i.jsx)(S, {
             user: n,
             guildId: l,
             channelId: a,
@@ -149,7 +149,7 @@ function k(e) {
         applicationId: u
     } = e, g = (0, o.GV)(), m = (0, o.GV)(), {
         trackUserProfileEditAction: f
-    } = (0, x.NJ)(), [h, _] = l.useState("idle"), [A, I] = l.useState(t ?? ""), j = l.useRef(null), v = l.useRef(null), E = T.intl.string(T.t.xKSfBT), C = null != t && "" !== t.trim(), S = l.useCallback(() => {
+    } = (0, x.NJ)(), [h, _] = l.useState("idle"), [A, I] = l.useState(t ?? ""), j = l.useRef(null), v = l.useRef(null), E = T.intl.string(T.t.xKSfBT), C = null != t && "" !== t.trim(), N = l.useCallback(() => {
         f({
             action: "PRESS_ADD_COMMENTARY",
             widgetEdited: c
@@ -192,13 +192,13 @@ function k(e) {
         ref: v,
         role: "group",
         "aria-labelledby": m,
-        onClick: S,
+        onClick: N,
         className: b.Vg,
         children: [(0, i.jsx)(r.R2l, {
             size: "xxs",
             color: r.LU0.colors.ICON_MUTED,
             className: b.Ls
-        }), (0, i.jsx)(N, {
+        }), (0, i.jsx)(S, {
             user: n,
             guildId: a,
             channelId: d,
@@ -210,7 +210,7 @@ function k(e) {
             innerRef: j,
             "aria-label": T.intl.string(T.t.ppb9MJ),
             onClick: e => {
-                e.stopPropagation(), S()
+                e.stopPropagation(), N()
             },
             focusProps: {
                 ringTarget: v
@@ -230,7 +230,7 @@ function O(e) {
         index: m,
         onRemoveGame: x,
         coverRef: T,
-        className: N
+        className: S
     } = e, y = l.useRef(null), {
         applicationId: O,
         comment: w,
@@ -258,7 +258,7 @@ function O(e) {
         }),
         Y = () => (0, i.jsxs)("div", {
             ref: y,
-            className: s()(b.Nr, N),
+            className: s()(b.Nr, S),
             children: [X ? (0, i.jsxs)("div", {
                 className: b.An,
                 children: [z(), (0, i.jsx)(f.jV, {
@@ -270,7 +270,7 @@ function O(e) {
                 children: [u ? (0, i.jsx)(r.Heading, {
                     ...M,
                     children: D
-                }) : (0, i.jsx)(S, {
+                }) : (0, i.jsx)(N, {
                     applicationId: O,
                     userId: t.id,
                     gameName: D,

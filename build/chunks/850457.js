@@ -216,9 +216,9 @@ function O(e) {
         className: b.kL,
         onMouseEnter: a,
         onMouseLeave: o,
-        children: [(0, i.jsx)(R, {
+        children: ["voice_channel" === n ? (0, i.jsx)(R, {
             channel: t
-        }), (0, i.jsx)(r.HOs, {
+        }) : null, (0, i.jsx)(r.HOs, {
             children: (0, i.jsxs)("div", {
                 className: b.PI,
                 children: [(0, i.jsx)("div", {
