@@ -29,8 +29,8 @@ let C = e => {
         videoUrl: R,
         shouldLoadVideo: v,
         index: E,
-        customVideoStyle: j,
-        isReducedMotion: N,
+        customVideoStyle: N,
+        isReducedMotion: j,
         onClick: I,
         badgeText: y,
         badgeVariant: P = "gradient",
@@ -43,10 +43,10 @@ let C = e => {
             box_type: (0, l.snakeCase)(t)
         })
     }, 800), [t]), Y = () => {
-        null == M.current || N || (M.current.currentTime = U.current, M.current.play())
+        null == M.current || j || (M.current.currentTime = U.current, M.current.play())
     }, W = () => {
-        null == M.current || N || (U.current = M.current.currentTime, M.current.pause())
-    }, K = S === h.A0.LARGE ? "heading-xxl/bold" : "heading-xl/bold", Z = () => {
+        null == M.current || j || (U.current = M.current.currentTime, M.current.pause())
+    }, K = S === h.A0.LARGE ? "heading-xxl/bold" : "heading-xl/bold", z = () => {
         let e = null != C && null != I,
             t = null != O && O.length > 0;
         if (!e && !t) return null;
@@ -72,7 +72,7 @@ let C = e => {
                 })
             })
         })
-    }, z = () => (0, a.jsxs)("div", {
+    }, Z = () => (0, a.jsxs)("div", {
         className: i()(g.textBox, g[`${S}`], V && g.overlayTextBox),
         children: [(0, a.jsxs)("div", {
             children: [null == y ? null : "gradient" === P ? (0, a.jsx)("div", {
@@ -104,7 +104,7 @@ let C = e => {
             color: "text-strong",
             className: g.description,
             children: s
-        }), (0, a.jsx)(Z, {})]
+        }), (0, a.jsx)(z, {})]
     }), X = () => (0, a.jsx)("div", {
         className: i()(g.boxArtContainer, g[`${S}`]),
         children: (0, a.jsx)(_.A, {
@@ -114,7 +114,7 @@ let C = e => {
             poster: A,
             loop: !0,
             className: i()(V ? g.overlayImage : g.boxVideo, {
-                [j]: null != j
+                [N]: null != N
             }),
             ref: M,
             children: (0, a.jsx)("source", {
@@ -148,9 +148,9 @@ let C = e => {
                     src: T
                 })
             }), (0, a.jsx)(() => $ ? (0, a.jsxs)(a.Fragment, {
-                children: [(0, a.jsx)(z, {}), (0, a.jsx)(X, {})]
+                children: [(0, a.jsx)(Z, {}), (0, a.jsx)(X, {})]
             }) : (0, a.jsxs)(a.Fragment, {
-                children: [(0, a.jsx)(X, {}), (0, a.jsx)(z, {})]
+                children: [(0, a.jsx)(X, {}), (0, a.jsx)(Z, {})]
             }), {})]
         })
     })

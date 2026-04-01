@@ -28,8 +28,8 @@ let v = e => {
         title: r,
         description: s,
         caption: v,
-        pillText: j,
-        primaryAsset: N,
+        pillText: N,
+        primaryAsset: j,
         primaryAssetClassName: I,
         backgroundAssetUrl: y,
         progress: P,
@@ -67,12 +67,12 @@ let v = e => {
             }))
         }, [O, r]),
         K = D && H === g.xc.FP_ONLY,
-        Z = !(0, l.isEmpty)(y),
-        z = Z && (0, c.q)(F),
+        z = !(0, l.isEmpty)(y),
+        Z = z && (0, c.q)(F),
         X = (0, u.rdh)(u.LU0.colors.BACKGROUND_BASE_LOW).hex(),
         $ = K || !(0, l.isEmpty)(w);
     return (0, a.jsx)(d.NPJ, {
-        theme: z ? C.NJ8.DARKER : void 0,
+        theme: Z ? C.NJ8.DARKER : void 0,
         children: e => (0, a.jsxs)(b.A, {
             id: t,
             tabIndex: G,
@@ -83,34 +83,34 @@ let v = e => {
             glowAmount: (0, c.M)(F) ? 2 : 8,
             blurAmount: 10,
             className: i()(R.Ui, k, {
-                [R.Tn]: Z
+                [R.Tn]: z
             }),
             cardClassName: i()(R.Nr, e, B, {
                 [R.j8]: L
             }),
             cardStyle: {
-                backgroundImage: Z ? `url(${y})` : void 0,
+                backgroundImage: z ? `url(${y})` : void 0,
                 backgroundSize: "cover",
                 backgroundPosition: "center",
                 backgroundOrigin: "padding-box",
                 backgroundClip: "padding-box"
             },
-            children: [!(0, l.isEmpty)(j) && (0, a.jsx)(u.Text, {
+            children: [!(0, l.isEmpty)(N) && (0, a.jsx)(u.Text, {
                 variant: "text-xs/bold",
                 color: "badge-expressive-text-default",
                 className: R.Io,
-                children: j
+                children: N
             }), (0, a.jsxs)("div", {
                 className: R.qh,
                 children: [L && (0, a.jsx)("div", {
                     className: R.gW,
                     "aria-hidden": "true",
                     children: (0, a.jsx)(E, {
-                        asset: N,
+                        asset: j,
                         className: I
                     })
                 }), (0, a.jsx)(E, {
-                    asset: N,
+                    asset: j,
                     className: I
                 })]
             }), (0, a.jsxs)("div", {
@@ -177,7 +177,7 @@ let v = e => {
                         icon: S,
                         iconPosition: T,
                         text: w,
-                        variant: !Z && (0, c.q)(F) ? "primary" : "overlay-primary",
+                        variant: !z && (0, c.q)(F) ? "primary" : "overlay-primary",
                         onClick: W
                     })]
                 })]

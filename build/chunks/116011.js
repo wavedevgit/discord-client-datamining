@@ -1,6 +1,6 @@
 /** chunk id: 116011 params = (module,exports,require) **/
 r.d(t, {
-    oL: () => j,
+    oL: () => N,
     wx: () => S
 });
 var a = r(627968),
@@ -25,7 +25,7 @@ var a = r(627968),
     R = r(870378),
     v = r(208556),
     E = r(8496);
-let j = {
+let N = {
         [f.XY]: {
             title: g.default.LsJ9hj,
             titleParams: {
@@ -63,7 +63,7 @@ let j = {
             asset: R.A
         }
     },
-    N = () => {
+    j = () => {
         let e = (0, c.N5)(),
             t = (0, c.P6)();
         return (0, a.jsxs)("div", {
@@ -181,7 +181,7 @@ let j = {
             } = e,
             [g, R] = n.useState(c.code),
             [v, E] = n.useState(!1),
-            S = (t = c.partnerId, r = (0, i.bG)([o.A], () => (0, s.Mwr)(o.A.theme)), null == (d = j[t]) ? null : r ? d.logos.dark : d.logos.light),
+            S = (t = c.partnerId, r = (0, i.bG)([o.A], () => (0, s.Mwr)(o.A.theme)), null == (d = N[t]) ? null : r ? d.logos.dark : d.logos.light),
             T = null == g;
         return (0, a.jsxs)("div", {
             className: A.lA,
@@ -222,7 +222,7 @@ let j = {
                         zoomable: !1
                     })
                 })]
-            }), b && (0, a.jsx)(N, {}), null != g && (0, a.jsx)(y, {
+            }), b && (0, a.jsx)(j, {}), null != g && (0, a.jsx)(y, {
                 recurrence: {
                     ...c,
                     code: g
