@@ -17,7 +17,7 @@ var i = n(119966),
 let m = {
     [_.e$.INVITE_USER_EMBEDDED]: (0, s.T)(_.e$.INVITE_USER_EMBEDDED, {
         scope: {
-            [A.sm.ANY]: [r.F.RELATIONSHIPS_READ]
+            [A.sm.ANY]: [r.F.DM_CHANNELS_MESSAGES_WRITE, r.F.ACTIVITIES_INVITES_WRITE]
         },
         async handler(e) {
             let t, {

@@ -24,13 +24,13 @@ var a = n(627968),
     E = n(362490),
     C = n(429913),
     I = n(590703),
-    b = n(708197),
-    N = n(583846),
+    N = n(708197),
+    b = n(583846),
     S = n(885151),
     T = n(928550),
     y = n(657331),
-    k = n(773669),
-    L = n(486020),
+    L = n(773669),
+    k = n(486020),
     O = n(541830),
     R = n(661191),
     G = n(240248),
@@ -98,12 +98,12 @@ function eh(e) {
             return n[e]
         }
         return ""
-    }, [t, d]), x = (0, G.uJ)(t.iconHash) ? n?.getIconURL(160, L.QB ? "webp" : "png") : L.Ay.getGameAssetURL({
+    }, [t, d]), x = (0, G.uJ)(t.iconHash) ? n?.getIconURL(160, k.QB ? "webp" : "png") : k.Ay.getGameAssetURL({
         id: t.applicationId,
         hash: t.iconHash,
         size: 160,
-        format: L.QB ? "webp" : "png"
-    }), h = R.default.extractTimestamp(n.id), g = 7 >= c()().diff(c()(h), "days"), p = i.some(e => (0, N.CZ)(e) === m.m.GLOBAL), _ = t.name ?? n?.name;
+        format: k.QB ? "webp" : "png"
+    }), h = R.default.extractTimestamp(n.id), g = 7 >= c()().diff(c()(h), "days"), p = i.some(e => (0, b.CZ)(e) === m.m.GLOBAL), _ = t.name ?? n?.name;
     return (0, a.jsxs)(a.Fragment, {
         children: [(0, a.jsx)("div", {
             className: eu.is,
@@ -451,9 +451,9 @@ function eE(e) {
         trackExternalAction: d
     } = e, {
         clientThemesClassName: u
-    } = (0, I.Ay)(), m = (0, x.bG)([k.default], () => k.default.locale), {
+    } = (0, I.Ay)(), m = (0, x.bG)([L.default], () => L.default.locale), {
         analyticsLocations: h
-    } = (0, A.Ay)(v.A.GAME_PROFILE), g = l.useMemo(() => (0, M.u9)(), []), _ = (0, x.yK)([w.A], () => (w.A.getSimilarGames(t) ?? []).slice(0, 25)), [j, E] = l.useState(null), T = (0, D.s)(t), [y, L] = l.useState(null), O = (0, C.h)(t), {
+    } = (0, A.Ay)(v.A.GAME_PROFILE), g = l.useMemo(() => (0, M.u9)(), []), _ = (0, x.yK)([w.A], () => (w.A.getSimilarGames(t) ?? []).slice(0, 25)), [j, E] = l.useState(null), T = (0, D.s)(t), [y, k] = l.useState(null), O = (0, C.h)(t), {
         data: R,
         refetch: G
     } = (0, S.k)(t), V = R?.supplementalData ?? null, F = V?.name ?? O?.name, W = (e, a) => {
@@ -475,7 +475,7 @@ function eE(e) {
             gameName: F ?? "",
             authorId: i,
             profileType: M.HV.FullProfile
-        }), (0, b.He)()
+        }), (0, N.He)()
     }), (0, C.A)(_), l.useEffect(() => {
         m.startsWith("en") || V?.summaryLocalized != null || G()
     }, [t, V?.summaryLocalized, m, G]), l.useEffect(() => {
@@ -492,7 +492,7 @@ function eE(e) {
     }, [t, _]), (0, p.Ay)(() => () => {
         let e = Date.now(),
             n = T.map(t => {
-                let n = (0, N.JM)(t) ? (0, N.W6)(t, e) : (0, N.aJ)(t, m);
+                let n = (0, b.JM)(t) ? (0, b.W6)(t, e) : (0, b.aJ)(t, m);
                 return JSON.stringify({
                     item_id: t.id,
                     trait: t.traits,
@@ -539,7 +539,7 @@ function eE(e) {
                                 trackAction: W
                             }), (0, a.jsx)(eA, {
                                 detectedGame: V,
-                                onSetOfficialGuildInvite: L,
+                                onSetOfficialGuildInvite: k,
                                 officialGuildInvite: y,
                                 onClose: c,
                                 appContext: o,
@@ -568,7 +568,7 @@ function eC(e) {
         trackExternalAction: u
     } = e, [m, h] = l.useState(!0), [_, j] = l.useState(null), {
         clientThemesClassName: T
-    } = (0, I.Ay)(), L = (0, x.bG)([k.default], () => k.default.locale), O = l.useMemo(() => (0, M.u9)(), []), {
+    } = (0, I.Ay)(), k = (0, x.bG)([L.default], () => L.default.locale), O = l.useMemo(() => (0, M.u9)(), []), {
         analyticsLocations: R
     } = (0, A.Ay)(v.A.GAME_PROFILE), G = (0, C.h)(t), P = (0, D.s)(t), {
         data: w
@@ -602,11 +602,11 @@ function eC(e) {
             gameName: U,
             authorId: i,
             profileType: M.HV.FullProfile
-        }), (0, b.He)()
+        }), (0, N.He)()
     }), (0, p.Ay)(() => () => {
         let e = Date.now(),
             n = P.map(t => {
-                let n = (0, N.JM)(t) ? (0, N.W6)(t, e) : (0, N.aJ)(t, L);
+                let n = (0, b.JM)(t) ? (0, b.W6)(t, e) : (0, b.aJ)(t, k);
                 return JSON.stringify({
                     item_id: t.id,
                     trait: t.traits,

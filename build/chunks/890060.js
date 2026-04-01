@@ -50,14 +50,17 @@ function o(e) {
                 body: -1 === t ? "" : d.slice(t + 1).trimStart()
             } : {
                 body: d
-            };
+            },
+            h = e.reactions?.reduce((e, t) => e + t.count, 0) ?? 0;
         return {
             id: o.id,
             mediaUrl: u?.url,
             mediaType: u?.type,
             title: m,
             body: x,
-            content: d
+            content: d,
+            timestamp: e.timestamp,
+            reactionCount: h
         }
     })
 }
