@@ -32,10 +32,15 @@ function E(e) {
         disabled: o
     } = e;
     return (0, i.jsx)("div", {
+        role: "meter",
         className: a()(T.$I, n),
         id: s,
         "aria-describedby": l,
         "aria-labelledby": r,
+        "aria-valuenow": t && !o ? 100 : 0,
+        "aria-valuemin": 0,
+        "aria-valuemax": 100,
+        "aria-valuetext": t && !o ? p.intl.string(p.t.haLKZ0) : p.intl.string(p.t.X2hJL7),
         children: (0, i.jsx)("div", {
             className: a()(T.Jx, T.NU, {
                 [T.zY]: t && !o,
