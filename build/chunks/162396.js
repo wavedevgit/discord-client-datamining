@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(627968),
     i = n(64700),
-    a = n(503698),
-    l = n.n(a),
+    l = n(503698),
+    a = n.n(l),
     s = n(397927),
     o = n(975807),
     c = n(212031),
@@ -91,7 +91,7 @@ function _() {
                     ...t,
                     ref: e,
                     useDefaultUnderlineStyles: !1,
-                    className: l()(f.Mj, {
+                    className: a()(f.Mj, {
                         [f.vu]: n.isShown
                     }),
                     children: (0, r.jsx)(s.Text, {

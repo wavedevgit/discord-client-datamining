@@ -1,32 +1,32 @@
 /** chunk id: 890690 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    u: () => l
+    u: () => a
 }), n(321073);
 var r = n(64700),
     i = n(894858),
-    a = n(397274);
+    l = n(397274);
 
-function l(e) {
+function a(e) {
     let t = r.useRef(null),
         n = r.useRef(new Set);
     r.useEffect(() => {
-        let e = a.A.getPanelScrollerNode();
+        let e = l.A.getPanelScrollerNode();
         if (null == e) return;
         let r = Array.from(e.querySelectorAll("[data-settings-category-key]")).filter(e => null != e.getAttribute("data-settings-category-key")),
-            l = new Map,
+            a = new Map,
             s = [];
         return r.forEach(e => {
             let t = e.getAttribute("data-settings-category-key");
-            null != t && (l.set(e, t), s.push(t))
+            null != t && (a.set(e, t), s.push(t))
         }), t.current = new IntersectionObserver(e => {
             if (e.forEach(e => {
                     let {
                         isIntersecting: t,
                         target: r
-                    } = e, i = l.get(r);
+                    } = e, i = a.get(r);
                     null != i && (t ? n.current.add(i) : n.current.delete(i))
-                }), !a.A.getIsSidebarCategoryAutoSelectEnabled()) return;
+                }), !l.A.getIsSidebarCategoryAutoSelectEnabled()) return;
             let t = [];
             if (s.forEach(e => {
                     n.current.has(e) && t.push(e)

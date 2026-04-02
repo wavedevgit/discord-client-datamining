@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(627968),
     i = n(64700),
-    a = n(503698),
-    l = n.n(a),
+    l = n(503698),
+    a = n.n(l),
     s = n(607399),
     o = n(732955),
     c = n(397927),
@@ -40,7 +40,7 @@ function v(e) {
     return (0, r.jsx)(c.NPJ, {
         theme: i,
         children: e => (0, r.jsxs)("div", {
-            className: l()(p.$Q, e),
+            className: a()(p.$Q, e),
             children: [(0, r.jsxs)(c.BJc, {
                 direction: "horizontal",
                 align: "center",
@@ -68,7 +68,7 @@ let y = i.memo(function(e) {
         setting: n
     } = e, i = d.A.useField("showNavigationMobile");
     return (0, r.jsxs)("div", {
-        className: l()(p.Qs, {
+        className: a()(p.Qs, {
             [p.Hw]: s.Fr,
             [p.n7]: i
         }),
