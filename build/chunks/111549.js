@@ -24,10 +24,10 @@ var i = n(627968),
     I = n(10088),
     N = n(921037),
     v = n(21599),
-    j = n(942614),
-    S = n(976860),
-    T = n(210714),
-    C = n(961350),
+    C = n(942614),
+    j = n(976860),
+    S = n(210714),
+    T = n(961350),
     y = n(650048),
     b = n(71393),
     R = n(299091),
@@ -64,16 +64,16 @@ class Q extends s.PureComponent {
             isUnderage: e,
             login: t,
             inviteKey: n
-        } = this.props, i = C.default.getAnalyticsToken();
+        } = this.props, i = T.default.getAnalyticsToken();
         if (null != i && _.h.dispatch({
                 type: "SET_ANALYTICS_TOKEN",
                 analyticsToken: i,
-                userId: C.default.getId()
+                userId: T.default.getId()
             }), O.default.track(B.HAw.INVITE_VIEWED, {
                 invite_code: n
             }, {
                 flush: !0
-            }), (0, T.d)("invite"), !M.VP) {
+            }), (0, S.d)("invite"), !M.VP) {
             let e = this.getInviteKey();
             k.A.launch("discord://" + B.BVt.INVITE(e), () => void 0)
         }
@@ -82,7 +82,7 @@ class Q extends s.PureComponent {
                 {
                     baseCode: t
                 } = (0, v.y$)(e);
-            (0, S.bG)(B.BVt.INVITE_LOGIN(t))
+            (0, j.bG)(B.BVt.INVITE_LOGIN(t))
         }
     }
     componentDidUpdate(e) {
@@ -97,7 +97,7 @@ class Q extends s.PureComponent {
         });
         else if (t.state === B.elq.APP_NOT_OPENED) this.handleContinue();
         else if (this.getMode() === K && i !== e.authenticated && i) {
-            let e = C.default.getFingerprint();
+            let e = T.default.getFingerprint();
             if (null != e) {
                 let n = (0, d.d)(e);
                 O.default.track(B.HAw.INVITE_LOGIN_SUCCESSFUL, {
@@ -128,7 +128,7 @@ class Q extends s.PureComponent {
                 channel: e
             } = t;
             if (null != e)
-                if ((0, j.C)(F.zY.INVITE_UNCLAIMED), null != t.guild) {
+                if ((0, C.C)(F.zY.INVITE_UNCLAIMED), null != t.guild) {
                     let e = (0, o.Lt)(t.flags ?? 0, a.Q.IS_APPLICATION_BYPASS),
                         n = t.guild.features?.includes(B.GuildFeatures.MEMBER_VERIFICATION_GATE_ENABLED) && t.guild.features?.includes(B.GuildFeatures.MEMBER_VERIFICATION_MANUAL_APPROVAL);
                     s(!e && n ? B.BVt.GUILD_MEMBER_VERIFICATION(t.guild.id) : B.BVt.APP_WITH_INVITE_AND_GUILD_ONBOARDING(t.code))
@@ -390,14 +390,14 @@ class Q extends s.PureComponent {
         }
     }
 }
-let q = c.Ay.connectStores([R.A, y.A, C.default, I.A, m.A], e => {
+let q = c.Ay.connectStores([R.A, y.A, T.default, I.A, m.A], e => {
     let {
         inviteKey: t
     } = e;
     return {
         invite: R.A.getInvite(t) ?? {},
         nativeAppState: I.A.getState(t),
-        authenticated: C.default.isAuthenticated(),
+        authenticated: T.default.isAuthenticated(),
         defaultRoute: y.A.defaultRoute,
         isUnderage: m.A.isUnderageAnonymous()
     }

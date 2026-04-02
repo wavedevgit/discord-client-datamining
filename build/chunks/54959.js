@@ -1,88 +1,88 @@
 /** chunk id: 54959 params = (module,exports,require) **/
-i.d(t, {
-    A: () => j
+t.d(i, {
+    A: () => E
 });
-var l = i(627968),
-    n = i(64700),
-    a = i(311907),
-    s = i(397927),
-    r = i(966327),
-    d = i(972387),
-    o = i(539895),
-    c = i(233761),
-    u = i(960736),
-    m = i(398884),
-    x = i(287809),
-    g = i(954571),
-    h = i(939903),
-    _ = i(652215),
-    p = i(985018),
-    A = i(639325);
+var l = t(627968),
+    s = t(64700),
+    a = t(311907),
+    n = t(397927),
+    r = t(966327),
+    o = t(972387),
+    d = t(539895),
+    c = t(233761),
+    u = t(960736),
+    m = t(398884),
+    _ = t(287809),
+    h = t(954571),
+    x = t(939903),
+    g = t(652215),
+    p = t(985018),
+    A = t(639325);
 
-function j(e) {
+function E(e) {
     let {
-        invite: t,
-        guild: i,
-        className: j
-    } = e, E = (0, a.bG)([x.default], () => x.default.getCurrentUser()), {
+        invite: i,
+        guild: t,
+        className: E
+    } = e, j = (0, a.bG)([_.default], () => _.default.getCurrentUser()), {
         submitting: v,
         error: I,
         invite_instance_id: f
-    } = (0, a.cf)([o.A], () => o.A.getProps()), T = n.useCallback(() => {
-        d.A.acceptInvite(t, f)
-    }, [t, f]), C = (0, u.uE)(), N = "" !== C ? p.intl.format(p.t["9sWQNT"], {
-        usernameHook: (e, t) => (0, l.jsx)("span", {
+    } = (0, a.cf)([d.A], () => d.A.getProps()), T = s.useCallback(() => {
+        o.A.acceptInvite(i, f)
+    }, [i, f]), C = (0, u.uE)(), y = "" !== C ? p.intl.format(p.t["9sWQNT"], {
+        usernameHook: (e, i) => (0, l.jsx)("span", {
             children: C
-        }, t)
-    }) : p.intl.string(p.t["e/6Ogt"]), y = n.useRef(null), [D, S] = n.useState(!1), L = n.useCallback(() => {
-        D || g.default.track(_.HAw.INVITE_ACCEPT_JOIN_SETTINGS_EXPANDED, {
-            guild_id: i.id,
-            invite_code: t.code,
+        }, i)
+    }) : p.intl.string(p.t["e/6Ogt"]), D = s.useRef(null), [N, b] = s.useState(!1), L = s.useCallback(() => {
+        N || h.default.track(g.HAw.INVITE_ACCEPT_JOIN_SETTINGS_EXPANDED, {
+            guild_id: t.id,
+            invite_code: i.code,
             location: "accept_invite_modal_redesign"
-        }), S(!D)
-    }, [i.id, t.code, D]), b = (0, m.Sn)();
+        }), b(!N)
+    }, [t.id, i.code, N]), S = (0, m.Sn)();
     return (0, l.jsxs)("div", {
-        className: j,
+        className: E,
         children: [null != I ? (0, l.jsx)("div", {
             className: A.Un,
-            children: (0, l.jsx)(s.wx6, {
+            children: (0, l.jsx)(n.wx6, {
                 type: "critical",
                 children: I
             })
-        }) : null, b ? (0, l.jsx)(c.A, {
+        }) : null, S ? (0, l.jsx)(c.A, {
             className: A.sX
-        }) : null, (0, l.jsxs)(s.ButtonGroup, {
+        }) : null, (0, l.jsxs)(n.ButtonGroup, {
             fullWidthContainer: !0,
             fullWidth: !0,
             direction: "horizontal",
-            children: [(0, l.jsx)(s.Button, {
+            children: [(0, l.jsx)(n.Button, {
                 onClick: T,
                 loading: v,
                 variant: "primary",
-                disabled: b,
-                text: b ? p.intl.string(p.t.ZNCziL) : N,
-                icon: b || null == E ? void 0 : () => (0, l.jsx)(r.A, {
+                disabled: S,
+                text: S ? p.intl.string(p.t.ZNCziL) : y,
+                icon: S || null == j ? void 0 : () => (0, l.jsx)(r.A, {
                     "aria-hidden": !0,
-                    size: s._3J.SIZE_16,
-                    user: E
+                    size: n._3J.SIZE_16,
+                    user: j
                 })
-            }), b ? null : (0, l.jsx)(s.YNO, {
-                targetElementRef: y,
-                animation: s.YNO.Animation.NONE,
+            }), S ? null : (0, l.jsx)(n.YNO, {
+                targetElementRef: D,
+                animation: n.YNO.Animation.NONE,
                 position: "top",
                 align: "right",
-                shouldShow: D,
+                shouldShow: N,
                 autoInvert: !1,
-                onRequestClose: () => S(!1),
-                renderPopout: e => (0, l.jsx)(h.A, {
-                    invite: t,
+                onRequestClose: () => b(!1),
+                renderPopout: e => (0, l.jsx)(x.A, {
+                    invite: i,
                     ...e
                 }),
                 children: e => (0, l.jsx)("div", {
-                    ref: y,
-                    children: (0, l.jsx)(s.K0, {
+                    ref: D,
+                    children: (0, l.jsx)(n.K0, {
                         ...e,
-                        icon: s.Zes,
+                        icon: n.Zes,
                         "aria-label": p.intl.string(p.t["3D5yo/"]),
                         variant: "secondary",
                         onClick: L

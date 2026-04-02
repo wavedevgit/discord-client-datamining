@@ -24,16 +24,16 @@ var i = n(627968),
     I = n(985018),
     N = n(406319),
     v = n(153335);
-let j = n(906118);
+let C = n(906118);
 
-function S(e) {
+function j(e) {
     let {
         text: t = ""
     } = e, [n, r] = s.useState(!1);
     return s.useEffect(() => {
         let e = new Image;
-        e.src = j, e.onload = () => r(!0), e.onerror = () => r(!0)
-    }, [j]), s.useEffect(() => {
+        e.src = C, e.onload = () => r(!0), e.onerror = () => r(!0)
+    }, [C]), s.useEffect(() => {
         n && l.ORC.announce(I.intl.string(I.t.j2p125))
     }, [n]), (0, i.jsx)("div", {
         className: N.Ac,
@@ -45,7 +45,7 @@ function S(e) {
             }), (0, i.jsx)("div", {
                 className: N.R6,
                 children: (0, i.jsx)("img", {
-                    src: j,
+                    src: C,
                     alt: ""
                 })
             })]
@@ -61,7 +61,7 @@ function S(e) {
         })
     })
 }
-let T = e => {
+let S = e => {
     let {
         className: t,
         children: n
@@ -74,7 +74,7 @@ let T = e => {
     })
 };
 
-function C(e) {
+function T(e) {
     let {
         state: t,
         cancel: n,
@@ -86,12 +86,12 @@ function C(e) {
         case h.b.INITIALIZING:
         case h.b.PENDING_REMOTE_INIT:
             return (0, i.jsxs)(i.Fragment, {
-                children: [(0, i.jsx)(S, {
+                children: [(0, i.jsx)(j, {
                     text: t.step === h.b.PENDING_REMOTE_INIT ? `https://discord.com/ra/${t.fingerprint}` : ""
                 }), (0, i.jsx)(c.hE, {
                     className: v.QB,
                     children: I.intl.string(I.t.UPiHaL)
-                }), null != s ? (0, i.jsx)(T, {
+                }), null != s ? (0, i.jsx)(S, {
                     children: s
                 }) : (0, i.jsx)(c.tK, {
                     children: I.intl.format(I.t["Qq+A6i"], {})
@@ -176,7 +176,7 @@ function y(e) {
             steps: [0, 1],
             children: (0, i.jsx)("div", {
                 className: N.vP,
-                children: (0, i.jsx)(C, {
+                children: (0, i.jsx)(T, {
                     state: o,
                     cancel: c,
                     conditionalMediationAbortController: n,

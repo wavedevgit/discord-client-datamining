@@ -24,10 +24,10 @@ var i = n(627968),
     I = n(961350),
     N = n(650048),
     v = n(877062),
-    j = n(129851),
-    S = n(538796),
-    T = n(229),
-    C = n(652215),
+    C = n(129851),
+    j = n(538796),
+    S = n(229),
+    T = n(652215),
     y = n(401755),
     b = n(771016),
     R = n(315290),
@@ -38,7 +38,7 @@ var i = n(627968),
 d.Ay.initialize();
 class D extends s.PureComponent {
     componentDidMount() {
-        (0, E.d)("guildTemplate"), O.VP || v.A.launch("discord://" + C.BVt.GUILD_TEMPLATE(this.props.code), () => void 0)
+        (0, E.d)("guildTemplate"), O.VP || v.A.launch("discord://" + T.BVt.GUILD_TEMPLATE(this.props.code), () => void 0)
     }
     componentDidUpdate(e) {
         this.props.code !== e.code && g.A.resolveGuildTemplate(this.props.code)
@@ -118,19 +118,19 @@ class D extends s.PureComponent {
             location: r
         } = this.props;
         if (null == e) return this.renderSpinner(L.intl.string(L.t.ZTNur7));
-        if (t === C.fAW.OPEN) return this.renderAppOpened();
-        if (t === C.fAW.OPENING) return this.renderSpinner(L.intl.string(L.t["Z+hCVU"]));
+        if (t === T.fAW.OPEN) return this.renderAppOpened();
+        if (t === T.fAW.OPENING) return this.renderSpinner(L.intl.string(L.t["Z+hCVU"]));
         switch (e.state) {
             case y.QB.RESOLVING:
                 return this.renderSpinner(L.intl.string(L.t["Z+hCVU"]));
             case y.QB.RESOLVED:
                 if (n || !O.VP) return this.renderAuthenticatedOrDownload();
-                if (this.props.login) return (0, i.jsx)(j.A, {
+                if (this.props.login) return (0, i.jsx)(C.A, {
                     guildTemplate: e,
                     transitionTo: s,
                     location: r
                 });
-                return (0, i.jsx)(T.A, {
+                return (0, i.jsx)(S.A, {
                     guildTemplate: e,
                     transitionTo: s,
                     location: r,
@@ -180,7 +180,7 @@ function P(e) {
             })
         })]
     });
-    return (0, i.jsx)(S.A, {
+    return (0, i.jsx)(j.A, {
         className: w.sL,
         children: () => [(0, i.jsx)(m.A, {
             guildTemplate: t

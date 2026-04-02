@@ -24,10 +24,10 @@ var i = n(627968),
     I = n(189081),
     N = n(67480),
     v = n(45938),
-    j = n(975571),
-    S = n(427262),
-    T = n(161928),
-    C = n(129851),
+    C = n(975571),
+    j = n(427262),
+    S = n(161928),
+    T = n(129851),
     y = n(229),
     b = n(652215),
     R = n(985018),
@@ -166,7 +166,7 @@ class L extends s.PureComponent {
             }), (0, i.jsx)(o.QWc, {
                 text: R.intl.string(R.t["/CjuXF"]),
                 textVariant: "text-sm/normal",
-                onClick: () => window.open(j.A.getArticleURL(b.MVz.GIFTING), "_blank")
+                onClick: () => window.open(C.A.getArticleURL(b.MVz.GIFTING), "_blank")
             })]
         })
     }
@@ -231,7 +231,7 @@ class L extends s.PureComponent {
             giftCodeCode: e.code,
             transitionTo: s,
             children: (0, i.jsxs)(p.Ay, {
-                children: [(0, i.jsx)(T.A, {
+                children: [(0, i.jsx)(S.A, {
                     giftCode: e
                 }), (0, i.jsx)("div", {
                     className: O.eT,
@@ -247,7 +247,7 @@ class L extends s.PureComponent {
                 }) : (0, i.jsx)(p.ME, {
                     className: O.QX,
                     children: R.intl.format(R.t.NYM08s, {
-                        userTag: S.Ay.getUserTag(t),
+                        userTag: j.Ay.getUserTag(t),
                         onLogoutClick: this.handleLogout
                     })
                 })]
@@ -277,7 +277,7 @@ class L extends s.PureComponent {
                 let e = this.state.currentUser;
                 return d || null == e ? this.renderSpinner(R.intl.string(R.t.bYb2nS)) : this.requiresVerification && null != e ? this.renderVerification(e) : this.renderAuthenticated(s, e, t)
             }
-            return "login" === this.getMode() ? (0, i.jsx)(C.A, {
+            return "login" === this.getMode() ? (0, i.jsx)(T.A, {
                 giftCodeSKU: t,
                 giftCode: s,
                 transitionTo: a,

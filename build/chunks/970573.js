@@ -1,8 +1,8 @@
 /** chunk id: 970573 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => T,
-    X: () => j
+    A: () => S,
+    X: () => C
 });
 var i, s = n(627968),
     r = n(64700),
@@ -24,9 +24,9 @@ var i, s = n(627968),
     I = n(652215),
     N = n(985018),
     v = n(795859),
-    j = ((i = {})[i.LOGIN_REQUIRED = 0] = "LOGIN_REQUIRED", i[i.SWITCHED = 1] = "SWITCHED", i[i.REMOVED = 2] = "REMOVED", i);
+    C = ((i = {})[i.LOGIN_REQUIRED = 0] = "LOGIN_REQUIRED", i[i.SWITCHED = 1] = "SWITCHED", i[i.REMOVED = 2] = "REMOVED", i);
 
-function S(e) {
+function j(e) {
     let {
         actionText: t,
         user: n,
@@ -39,13 +39,13 @@ function S(e) {
         currentUser: g.default.getCurrentUser(),
         hidePrivateData: p.A.hidePersonalInformation,
         isAuthenticated: _.default.isAuthenticated()
-    })), j = new h.A(n), S = x && r?.id === j.id, T = n.tokenStatus === E.U.INVALID, C = l || j.hasUniqueUsername() ? null : `#${j.discriminator}`, y = null;
-    return S ? y = (0, s.jsx)(d.Text, {
+    })), C = new h.A(n), j = x && r?.id === C.id, S = n.tokenStatus === E.U.INVALID, T = l || C.hasUniqueUsername() ? null : `#${C.discriminator}`, y = null;
+    return j ? y = (0, s.jsx)(d.Text, {
         variant: "text-sm/semibold",
         className: v.dx,
         color: "text-feedback-positive",
         children: N.intl.string(N.t.seV8yt)
-    }) : T && (y = (0, s.jsx)(d.Text, {
+    }) : S && (y = (0, s.jsx)(d.Text, {
         variant: "text-sm/semibold",
         className: v.dx,
         color: "text-feedback-critical",
@@ -55,12 +55,12 @@ function S(e) {
         children: (0, s.jsxs)("div", {
             className: v.yS,
             children: [(0, s.jsx)(d.euF, {
-                src: j.getAvatarURL(void 0, 40),
+                src: C.getAvatarURL(void 0, 40),
                 size: d._3J.SIZE_40,
                 "aria-label": n.username
             }), (0, s.jsxs)("div", {
                 className: a()(v.K_, {
-                    [v.zU]: !S
+                    [v.zU]: !j
                 }),
                 children: [(0, s.jsxs)("div", {
                     className: v.Xh,
@@ -68,23 +68,23 @@ function S(e) {
                         variant: "text-md/semibold",
                         color: "text-strong",
                         lineClamp: 1,
-                        children: A.Ay.getUserTag(j, {
+                        children: A.Ay.getUserTag(C, {
                             mode: "username",
                             identifiable: l ? "never" : "always"
                         })
                     }), (0, s.jsx)(d.Text, {
                         color: "text-default",
                         variant: "text-sm/normal",
-                        children: C
+                        children: T
                     })]
                 }), y]
             }), (0, s.jsxs)("div", {
                 className: v.Xp,
-                children: [!S && (0, s.jsx)(d.Button, {
+                children: [!j && (0, s.jsx)(d.Button, {
                     variant: "secondary",
-                    text: T ? N.intl.string(N.t["DSN+hw"]) : t,
+                    text: S ? N.intl.string(N.t["DSN+hw"]) : t,
                     onClick: function() {
-                        T ? i(0, n.id) : (m.default.track(I.HAw.MULTI_ACCOUNT_SWITCH_ATTEMPT, {
+                        S ? i(0, n.id) : (m.default.track(I.HAw.MULTI_ACCOUNT_SWITCH_ATTEMPT, {
                             location: {
                                 section: I.JJy.MANAGE_ACCOUNTS_MODAL
                             }
@@ -127,7 +127,7 @@ function S(e) {
     })
 }
 
-function T(e) {
+function S(e) {
     let {
         actionText: t,
         onAction: n
@@ -140,7 +140,7 @@ function T(e) {
         children: i ? (0, s.jsx)(d.y$y, {
             className: v.u1
         }) : l.map((e, i) => (0, s.jsxs)(r.Fragment, {
-            children: [(0, s.jsx)(S, {
+            children: [(0, s.jsx)(j, {
                 user: e,
                 actionText: t,
                 onAction: n

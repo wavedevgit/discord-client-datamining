@@ -24,11 +24,11 @@ var i = n(627968),
     I = n(15552),
     N = n(906564),
     v = n(854378),
-    j = n(359438),
-    S = n(442184),
-    T = n(383302);
+    C = n(359438),
+    j = n(442184),
+    S = n(383302);
 n(829926);
-var C = n(491509),
+var T = n(491509),
     y = n(895600),
     b = n(274303),
     R = n(942614),
@@ -51,9 +51,9 @@ var C = n(491509),
     Q = n(890698),
     q = n(538796),
     Y = n(652215),
-    J = n(68729);
+    X = n(68729);
 n(436317);
-var X = n(771016);
+var J = n(771016);
 n(45723);
 var $ = n(985018),
     Z = n(788907),
@@ -127,7 +127,7 @@ class ei extends s.PureComponent {
         V.default.track(Y.HAw.REGISTER_VIEWED, {
             location: null != t ? "Invite Register Page" : "Non-Invite Register Page",
             registration_source: this.registrationSource,
-            ...null != e ? (0, C.A)(e, !1, !1) : {}
+            ...null != e ? (0, T.A)(e, !1, !1) : {}
         }, {
             flush: !0
         }), null == this.props.consentRequired && p.A.getLocationMetadata(), (0, w.d)("register")
@@ -163,9 +163,9 @@ class ei extends s.PureComponent {
             this.setState({
                 isRateLimited: !1
             })
-        }))), n && !e.authenticated && ((0, R.C)(X.zY.ORGANIC_REGISTERED), this.redirectIfAuthenticated());
-        let a = J.ju.FULL;
-        i || this.hasError("date_of_birth") ? a = J.ju.AGE_GATE : this.inGuildOrChannelInviteFlow() && (a = J.ju.INVITE), s(a)
+        }))), n && !e.authenticated && ((0, R.C)(J.zY.ORGANIC_REGISTERED), this.redirectIfAuthenticated());
+        let a = X.ju.FULL;
+        i || this.hasError("date_of_birth") ? a = X.ju.AGE_GATE : this.inGuildOrChannelInviteFlow() && (a = X.ju.INVITE), s(a)
     }
     inGuildOrChannelInviteFlow() {
         return null != this.props.invite && (null != this.props.invite.guild || null != this.props.invite.channel)
@@ -374,7 +374,7 @@ class ei extends s.PureComponent {
         let {
             invite: e
         } = this.props;
-        return e?.guild_scheduled_event != null ? (0, i.jsx)(j.X, {
+        return e?.guild_scheduled_event != null ? (0, i.jsx)(C.X, {
             channel: e.channel,
             guildScheduledEvent: e.guild_scheduled_event
         }) : (0, i.jsx)("div", {
@@ -473,7 +473,7 @@ class ei extends s.PureComponent {
                 })]
             }), null != e && c ? (0, i.jsx)(v.Ay, {
                 className: ee.QX,
-                children: (0, i.jsx)(T.N, {
+                children: (0, i.jsx)(S.N, {
                     guild: e.guild,
                     onlineCount: e.approximate_presence_count
                 })
@@ -536,15 +536,15 @@ class ei extends s.PureComponent {
                 email: x,
                 username: I,
                 global_name: N,
-                password: j,
-                date_of_birth: T
+                password: C,
+                date_of_birth: S
             } = {}
         } = this.state, {
-            consentRequired: C,
+            consentRequired: T,
             authBoxClassName: y,
             hasLoggedInAccounts: b
         } = this.props, R = this.renderErrorMessage(), O = (0, i.jsx)(h.m, {
-            text: !d && C ? $.intl.string($.t.AY4IVA) : null,
+            text: !d && T ? $.intl.string($.t.AY4IVA) : null,
             children: (0, i.jsx)("div", {
                 className: ee.QX,
                 children: (0, i.jsx)(_.Button, {
@@ -652,7 +652,7 @@ class ei extends s.PureComponent {
                     password: e,
                     passwordClientError: 0 === e.length ? $.intl.string($.t.EkokLy) : null
                 }),
-                error: m ?? en(j),
+                error: m ?? en(C),
                 type: "password",
                 autoComplete: "new-password",
                 setRef: e => {
@@ -667,12 +667,12 @@ class ei extends s.PureComponent {
                 name: "date_of_birth",
                 onChange: this.handleBirthdayChange,
                 ref: this.dateOfBirthRef,
-                error: A ?? en(T),
+                error: A ?? en(S),
                 value: c,
                 required: !0,
                 onFocus: this.trackInputFocus,
                 onBlur: this.trackInputBlur
-            }), (0, i.jsx)(S.A, {}), this.renderConsentComponent(), O, R, (0, i.jsx)("div", {
+            }), (0, i.jsx)(j.A, {}), this.renderConsentComponent(), O, R, (0, i.jsx)("div", {
                 className: ee.QX,
                 children: (0, i.jsx)(_.QWc, {
                     text: $.intl.string($.t["1lWxux"]),
@@ -741,7 +741,7 @@ function es(e) {
             hasLoggedInAccounts: b.A.getHasLoggedInAccounts()
         })),
         n = (0, c.bG)([D.A], () => D.A.registrationUsernameSuggestion()),
-        [r, l] = s.useState(J.ju.FULL);
+        [r, l] = s.useState(X.ju.FULL);
     return (0, E.A)({
         type: d.ImpressionTypes.VIEW,
         name: d.ImpressionNames.USER_REGISTRATION,

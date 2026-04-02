@@ -31,12 +31,12 @@ let M = e => {
         displayProfile: a
     } = e, {
         analyticsLocations: M
-    } = (0, c.Ay)(d.A.TIERED_TENURE_BADGES_MODAL), R = (0, m.GV)(), j = Object.values(A.VD), v = (0, T.p3)(a?.userId), I = (0, T.$F)(), U = (0, x.t)(), P = E.default.getCurrentUser(), S = (0, T.rG)(a?.userId ?? P?.id) ?? new Date, O = (0, _.CC)(P?.premiumType, A.PremiumTypes.TIER_2), D = j.map(e => {
+    } = (0, c.Ay)(d.A.TIERED_TENURE_BADGES_MODAL), j = (0, m.GV)(), v = Object.values(A.VD), R = (0, T.p3)(a?.userId), I = (0, T.$F)(), P = (0, x.t)(), U = E.default.getCurrentUser(), S = (0, T.rG)(a?.userId ?? U?.id) ?? new Date, O = (0, _.CC)(U?.premiumType, A.PremiumTypes.TIER_2), D = v.map(e => {
         let {
             id: t,
             nameUnformatted: n,
             tenureReqNumMonths: s
-        } = e, u = f.intl.string(n), d = (0, g.I)(t).standard, c = (0, N.T)(t, s), m = null == a, o = m && I?.id === t, E = !m && v?.id === t, _ = o && I?.status === T.Wo.EARNED, p = o && I?.status === T.Wo.UPCOMING, x = E || _;
+        } = e, u = f.intl.string(n), d = (0, g.I)(t).standard, c = (0, N.T)(t, s), m = null == a, o = m && I?.id === t, E = !m && R?.id === t, _ = o && I?.status === T.Wo.EARNED, p = o && I?.status === T.Wo.UPCOMING, x = E || _;
         return (0, r.jsxs)("div", {
             className: l()(b.qS, {
                 [b.Ny]: x || p
@@ -61,12 +61,12 @@ let M = e => {
                     children: f.intl.formatToPlainString(f.t.Hu4jfi, {
                         date: S
                     })
-                }), p && null != U && (0, r.jsx)(i.EYj, {
+                }), p && null != P && (0, r.jsx)(i.EYj, {
                     variant: "text-xs/normal",
                     color: "text-muted",
                     className: b.h8,
                     children: f.intl.formatToPlainString(f.t.PPL1Il, {
-                        days: U.days
+                        days: P.days
                     })
                 })]
             })]
@@ -80,7 +80,7 @@ let M = e => {
     return (0, r.jsxs)(u.EOs, {
         "data-migration-pending": !0,
         transitionState: t,
-        "aria-labelledby": R,
+        "aria-labelledby": j,
         className: l()(b.kL, "theme-dark"),
         parentComponent: "EvolvingTenureBadgeModal",
         children: [(0, r.jsx)(u.s_y, {
@@ -102,7 +102,7 @@ let M = e => {
                 }), (0, r.jsx)("div", {
                     className: b.C_,
                     children: D
-                }), null != a && a.userId !== P?.id && (0, r.jsx)(u.wLn, {
+                }), null != a && a.userId !== U?.id && (0, r.jsx)(u.wLn, {
                     "data-migration-pending": !0,
                     className: b.AJ,
                     onClick: y,

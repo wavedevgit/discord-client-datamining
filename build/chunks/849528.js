@@ -4,23 +4,19 @@ n.d(t, {
 });
 var i = n(989349),
     s = n.n(i),
-    l = n(112848),
-    a = n(788868);
+    l = n(655752),
+    a = n(112848);
 
 function r() {
-    let e, t, n = (0, l.$F)(),
-        i = (0, l.Xb)();
-    if (null == n || null == i) return null;
-    let r = s()(),
-        o = s()(i);
-    if (n.status === l.Wo.UPCOMING) e = 0, t = n.tenureReqNumMonths;
-    else {
-        let i = a.sp.indexOf(n.id),
-            s = a.sp[i + 1];
-        if (null == s || -1 === i) return null;
-        e = n.tenureReqNumMonths, t = a.VD[s].tenureReqNumMonths
-    }
-    let d = o.clone().add(e, "months"),
-        c = o.clone().add(t, "months").diff(d);
-    return Math.max(0, Math.min(1, (r.diff(d) - 864e5) / c))
+    let e = (0, a.$F)(),
+        t = (0, l.P)(),
+        n = (0, a.Xb)();
+    if (null == e || null == t || null == n) return null;
+    let i = s()(),
+        r = s()(n),
+        o = e.status === a.Wo.UPCOMING ? 0 : e.tenureReqNumMonths,
+        d = t.tenureReqNumMonths,
+        c = r.clone().add(o, "months"),
+        u = r.clone().add(d, "months").diff(c);
+    return Math.max(0, Math.min(1, (i.diff(c) - 864e5) / u))
 }

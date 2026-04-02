@@ -1,49 +1,61 @@
 /** chunk id: 9458 params = (module,exports,require) **/
 n.d(t, {
-    A: () => p
+    A: () => T
 });
 var i = n(64700),
     s = n(503698),
     l = n.n(s),
     a = n(531260),
-    r = n(849528),
-    o = n(764231),
-    d = n(112848),
-    c = n(627380),
-    u = n(149757),
-    m = n(30084),
-    g = n(920050),
-    _ = n(788868),
-    x = n(985018),
-    A = n(102682),
-    h = n(714206);
+    r = n(655752),
+    o = n(849528),
+    d = n(764231),
+    c = n(112848),
+    u = n(627380),
+    m = n(149757),
+    g = n(30084),
+    _ = n(920050),
+    x = n(788868),
+    A = n(985018),
+    h = n(102682),
+    p = n(714206);
 
-function p(e) {
+function T(e) {
     let {
         fractionalState: t
-    } = (0, a.A)(), n = t === _.xc.FP_ONLY, s = (0, d.$F)(), p = (0, d.Xb)(), T = s?.status === d.Wo.UPCOMING || n, f = (0, u.N)(s?.id), S = (0, r.z)(), E = (0, c.t)();
+    } = (0, a.A)(), n = t === x.xc.FP_ONLY, s = (0, c.$F)(), T = (0, c.Xb)(), f = s?.status === c.Wo.UPCOMING || n, S = (0, m.N)(s?.id), E = (0, o.z)(), b = (0, u.t)(), C = (0, r.P)();
     return (0, i.useMemo)(() => {
-        let t, i = null != E && E.days <= 30;
-        return null != s ? s.status === d.Wo.UPCOMING ? t = x.intl.formatToPlainString(x.t.a1eKDi, {
-            days: E?.days ?? 0
-        }) : t = (0, o.T)(s.id, s.tenureReqNumMonths) ?? void 0 : n && (t = (0, o.T)(_.Ac.PREMIUM_TENURE_1_MONTH, 1) ?? void 0), {
-            id: g.TENURE_BADGE_CARD_ID,
-            title: null != s ? x.intl.string(s.nameUnformattedNitro) : n ? x.intl.string(x.t.tx9Fvw) : "",
-            pillText: x.intl.string(x.t["jyYgZ+"]),
-            primaryAsset: null != f ? T ? f.standard : f.ambientLarge : n ? h : null,
-            primaryAssetClassName: l()(A.p, {
-                [A.n]: T
+        let t, i = null != C ? A.intl.string(C.nameUnformattedNitro) : void 0;
+        return null == s ? n && (t = (0, d.T)(x.Ac.PREMIUM_TENURE_1_MONTH, 1) ?? void 0) : t = s.status === c.Wo.UPCOMING ? A.intl.formatToPlainString(A.t.a1eKDi, {
+            days: b?.days ?? 0
+        }) : function(e, t) {
+            if (null != e && null != t) {
+                if (e.days <= 30) return A.intl.formatToPlainString(A.t.NEXoaI, {
+                    days: e.days,
+                    nextBadgeName: t
+                });
+                if (e.months <= 3) return A.intl.formatToPlainString(A.t.KDV8oD, {
+                    months: e.months,
+                    nextBadgeName: t
+                })
+            }
+        }(b, i) ?? (0, d.T)(s.id, s.tenureReqNumMonths) ?? void 0, {
+            id: _.TENURE_BADGE_CARD_ID,
+            title: null != s ? A.intl.string(s.nameUnformattedNitro) : n ? A.intl.string(A.t.tx9Fvw) : "",
+            pillText: A.intl.string(A.t["jyYgZ+"]),
+            primaryAsset: null != S ? f ? S.standard : S.ambientLarge : n ? p : null,
+            primaryAssetClassName: l()(h.p, {
+                [h.n]: f
             }),
-            caption: null != p ? x.intl.formatToPlainString(x.t.Hu4jfi, {
-                date: new Date(p)
+            caption: null != T ? A.intl.formatToPlainString(A.t.Hu4jfi, {
+                date: new Date(T)
             }) : void 0,
             description: t,
             subscriptionRequired: !0,
-            progress: S ?? void 0,
-            ctaText: x.intl.string(x.t.jVcuVY),
-            onCtaClick: () => (0, m.D)({
+            progress: E ?? void 0,
+            ctaText: A.intl.string(A.t.jVcuVY),
+            onCtaClick: () => (0, g.D)({
                 analyticsLocations: e
             })
         }
-    }, [s, f, T, p, S, n, E, e])
+    }, [s, S, f, T, E, n, b, C, e])
 }

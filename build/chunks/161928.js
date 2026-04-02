@@ -1,7 +1,7 @@
 /** chunk id: 161928 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => j
+    A: () => C
 });
 var i = n(627968),
     s = n(64700),
@@ -24,7 +24,7 @@ var i = n(627968),
     I = n(488956),
     N = n(287638),
     v = n(153335);
-let j = a.Ay.connectStores([m.A, d.A, g.A, p.default], e => {
+let C = a.Ay.connectStores([m.A, d.A, g.A, p.default], e => {
     let {
         giftCode: t
     } = e, n = m.A.get(t.skuId), {

@@ -48,7 +48,7 @@ let E = e => {
         let {
             match: t,
             location: a
-        } = e, x = (0, r.parse)(a.search).token, [I, N] = s.useState("loading"), v = s.useRef(!1), j = s.useCallback(async e => {
+        } = e, x = (0, r.parse)(a.search).token, [I, N] = s.useState("loading"), v = s.useRef(!1), C = s.useCallback(async e => {
             try {
                 h.default.track(m.HAw.ONE_TIME_LOGIN_ATTEMPTED, {
                     source: "web_page"
@@ -64,7 +64,7 @@ let E = e => {
                     error_message: e
                 }), N("error")
             }
-        }, []), S = s.useCallback(e => {
+        }, []), j = s.useCallback(e => {
             let t = u.default.getFingerprint() ?? u.default.getId(),
                 n = `discord://login/one-time?token=${encodeURIComponent(e)}`;
             p.A.launch(n, e => {
@@ -75,7 +75,7 @@ let E = e => {
                     fingerprint: t
                 }), N("app_launched")) : N("app_launch_not_supported")
             })
-        }, []), T = s.useCallback(e => {
+        }, []), S = s.useCallback(e => {
             let t = u.default.getFingerprint() ?? u.default.getId(),
                 i = u.default.getInstallationForTracking();
             Promise.resolve().then(n.bind(n, 129014)).then(n => {
@@ -95,12 +95,12 @@ let E = e => {
                         destination: "one_time_login_modal",
                         deep_link_provider: "rpc",
                         fingerprint: t
-                    }), N("app_launched")) : S(e)
+                    }), N("app_launched")) : j(e)
                 }).catch(() => {
-                    S(e)
+                    j(e)
                 }).then(() => s.disconnect())
             })
-        }, [S]);
+        }, [j]);
         if (s.useEffect(() => {
                 let e = null != x && "string" == typeof x,
                     t = l.Fr ? "mobile" : l.v1 ? "tablet" : (0, _.isDesktop)() ? "desktop_app" : "web";
@@ -116,8 +116,8 @@ let E = e => {
                         platform: e
                     });
                     return
-                }(0, _.isDesktop)() ? j(x): v.current || (v.current = !0, N("rpc_attempting"), T(x))
-            }, [x, a, j, T]), l.Fr || l.v1) {
+                }(0, _.isDesktop)() ? C(x): v.current || (v.current = !0, N("rpc_attempting"), S(x))
+            }, [x, a, C, S]), l.Fr || l.v1) {
             let e = null == x || "string" != typeof x ? "missing_token" : "invalid_token";
             return (0, i.jsx)(g.W, {
                 token: x,
@@ -133,14 +133,14 @@ let E = e => {
             buttonOnClick: () => {
                 h.default.track(m.HAw.ONE_TIME_LOGIN_CONTINUE_IN_BROWSER_CLICKED, {
                     previous_status: I
-                }), j(x)
+                }), C(x)
             }
         });
         if ("app_launch_not_supported" === I) return (0, i.jsx)(E, {
             title: f.intl.string(f.t.qq4tjT),
             subtitle: f.intl.string(f.t.CVxYRo),
             buttonText: f.intl.string(f.t["2ixEBi"]),
-            buttonOnClick: () => j(x)
+            buttonOnClick: () => C(x)
         });
         if ("error" === I) {
             let e = null == x || "string" != typeof x ? "missing_token" : "invalid_token";

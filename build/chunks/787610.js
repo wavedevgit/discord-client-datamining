@@ -43,25 +43,25 @@ function m(e, t) {
             m = null,
             A = null,
             f = null,
-            j = !0;
+            C = !0;
 
-        function S() {
+        function j() {
             if (null != o) return o;
             throw Error("No key pair set")
         }
-        let T = () => {
-                j ? (j = !1, a.send(JSON.stringify({
+        let S = () => {
+                C ? (C = !1, a.send(JSON.stringify({
                     op: "heartbeat"
                 }))) : (i("heartbeat timeout, reconnecting."), a.close(), v())
             },
-            C = async t => {
+            T = async t => {
                 let {
                     data: s
                 } = t, o = JSON.parse(s);
                 switch (o.op) {
                     case "nonce_proof": {
                         let e = o.encrypted_nonce,
-                            t = await u.A.decryptNonce(S(), e);
+                            t = await u.A.decryptNonce(j(), e);
                         i("computed nonce proof"), a.send(JSON.stringify({
                             op: "nonce_proof",
                             nonce: t
@@ -70,7 +70,7 @@ function m(e, t) {
                     }
                     case "pending_remote_init": {
                         I.succeed(), c._.dispatch(p.jej.WAVE_EMPHASIZE);
-                        let e = await u.A.publicKeyFingerprint(S());
+                        let e = await u.A.publicKeyFingerprint(j());
                         if (e !== o.fingerprint) throw Error(`bad fingerprint ${e} !== ${o.fingerprint}`);
                         i("handshake complete awaiting remote auth."), E({
                             step: _.b.PENDING_REMOTE_INIT,
@@ -102,7 +102,7 @@ function m(e, t) {
                     case "pending_ticket": {
                         c._.dispatch(p.jej.WAVE_EMPHASIZE), i("remote auth handshake started, awaiting ticket/cancel.");
                         let e = o.encrypted_user_payload,
-                            t = await (0, h.n7)(S(), e);
+                            t = await (0, h.n7)(j(), e);
                         E({
                             step: _.b.PENDING_TICKET,
                             user: t
@@ -116,12 +116,12 @@ function m(e, t) {
                         i(`got hello, auth timeout=${o.timeout_ms}ms`);
                         let e = o.heartbeat_interval;
                         f = setTimeout(() => {
-                            f = null, T(), A = setInterval(T, e)
+                            f = null, S(), A = setInterval(S, e)
                         }, Math.floor(e * Math.random()));
                         return
                     }
                     case "heartbeat_ack":
-                        j = !0;
+                        C = !0;
                         return;
                     default:
                         g.warn(n("received unsupported message"))
@@ -138,8 +138,8 @@ function m(e, t) {
             }, R = e => {
                 i(`disconnected, error: ${JSON.stringify(e)}`), v()
             };
-        return a.addEventListener("open", y), a.addEventListener("message", C), a.addEventListener("close", b), a.addEventListener("error", R), () => {
-            i("cleaning up"), a.removeEventListener("open", y), a.removeEventListener("message", C), a.removeEventListener("close", b), a.removeEventListener("error", R), a.close(1e3), I.cancel(), u.A.release(), null != f && clearTimeout(f), null != A && clearInterval(A)
+        return a.addEventListener("open", y), a.addEventListener("message", T), a.addEventListener("close", b), a.addEventListener("error", R), () => {
+            i("cleaning up"), a.removeEventListener("open", y), a.removeEventListener("message", T), a.removeEventListener("close", b), a.removeEventListener("error", R), a.close(1e3), I.cancel(), u.A.release(), null != f && clearTimeout(f), null != A && clearInterval(A)
         }
     }, [N, e, n, I, v]), {
         state: f,

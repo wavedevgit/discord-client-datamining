@@ -9,8 +9,8 @@ var r = n(627968),
     a = n.n(l),
     s = n(607399),
     o = n(732955),
-    u = n(397927),
-    c = n(97469),
+    c = n(397927),
+    u = n(97469),
     d = n(894858),
     h = n(641324),
     f = n(82186),
@@ -36,17 +36,17 @@ function v(e) {
     let {
         setting: t,
         onClose: n
-    } = e, i = (0, c.NC)();
-    return (0, r.jsx)(u.NPJ, {
+    } = e, i = (0, u.NC)();
+    return (0, r.jsx)(c.NPJ, {
         theme: i,
         children: e => (0, r.jsxs)("div", {
             className: a()(p.$Q, e),
-            children: [(0, r.jsxs)(u.BJc, {
+            children: [(0, r.jsxs)(c.BJc, {
                 direction: "horizontal",
                 align: "center",
                 className: p.y9,
                 children: [s.Fr && (0, r.jsx)(_, {
-                    icon: u.fEi,
+                    icon: c.fEi,
                     onClick: () => d.A.setState({
                         showNavigationMobile: !0
                     }),
@@ -55,7 +55,7 @@ function v(e) {
                     node: t
                 })]
             }), (0, r.jsx)(_, {
-                icon: u.d$L,
+                icon: c.d$L,
                 onClick: n,
                 label: m.intl.string(m.t.cpT0Cq)
             })]

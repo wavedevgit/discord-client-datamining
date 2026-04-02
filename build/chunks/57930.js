@@ -1,60 +1,60 @@
 /** chunk id: 57930 params = (module,exports,require) **/
-i.d(t, {
-    A: () => x
+l.d(t, {
+    A: () => g
 });
-var l = i(627968),
-    n = i(64700),
-    a = i(503698),
-    s = i.n(a),
-    r = i(241524),
-    d = i(573435),
-    o = i(263063),
-    c = i(260509),
-    u = i(486020),
-    m = i(639325);
+var n = l(627968),
+    i = l(64700),
+    a = l(503698),
+    s = l.n(a),
+    r = l(241524),
+    c = l(573435),
+    u = l(263063),
+    d = l(260509),
+    o = l(486020),
+    m = l(639325);
 
-function x(e) {
+function g(e) {
     let {
         guild: t,
-        outline: i
-    } = e, a = (0, r.A)("(max-width: 600px), (max-height: 600px)") ? o.DN.LARGER : o.DN.XLARGE, x = o.iu[a], g = o.s[a], h = n.useMemo(() => u.Ay.getGuildIconURL({
+        outline: l
+    } = e, a = (0, r.A)("(max-width: 600px), (max-height: 600px)") ? u.DN.LARGER : u.DN.XLARGE, g = u.iu[a], x = u.s[a], h = i.useMemo(() => o.Ay.getGuildIconURL({
         id: t.id,
         icon: t.icon,
-        size: x
-    }), [t.icon, t.id, x]), _ = (0, c.Rb)(t), p = null != h ? (0, l.jsx)("img", {
+        size: g
+    }), [t.icon, t.id, g]), j = (0, d.Rb)(t), A = null != h ? (0, n.jsx)("img", {
         src: h,
         alt: "",
         className: m.OV
-    }) : (0, l.jsx)("div", {
+    }) : (0, n.jsx)("div", {
         className: m.ef,
         style: {
-            fontSize: g[_.length] ?? g[g.length - 1]
+            fontSize: x[j.length] ?? x[x.length - 1]
         },
-        children: _
+        children: j
     });
-    return i ? (0, l.jsx)("div", {
+    return l ? (0, n.jsx)("div", {
         className: s()(m._C, m.AY),
-        children: (0, l.jsx)(d.Ay, {
-            mask: d.Ay.Masks.SQUIRCLE,
-            width: x + 8,
-            height: x + 8,
-            children: (0, l.jsx)("div", {
+        children: (0, n.jsx)(c.Ay, {
+            mask: c.Ay.Masks.SQUIRCLE,
+            width: g + 8,
+            height: g + 8,
+            children: (0, n.jsx)("div", {
                 className: m.$d,
-                children: (0, l.jsx)(d.Ay, {
-                    mask: d.Ay.Masks.SQUIRCLE,
-                    width: x,
-                    height: x,
-                    children: p
+                children: (0, n.jsx)(c.Ay, {
+                    mask: c.Ay.Masks.SQUIRCLE,
+                    width: g,
+                    height: g,
+                    children: A
                 })
             })
         })
-    }) : (0, l.jsx)("div", {
+    }) : (0, n.jsx)("div", {
         className: m._C,
-        children: (0, l.jsx)(d.Ay, {
-            mask: d.Ay.Masks.SQUIRCLE,
-            width: x,
-            height: x,
-            children: p
+        children: (0, n.jsx)(c.Ay, {
+            mask: c.Ay.Masks.SQUIRCLE,
+            width: g,
+            height: g,
+            children: A
         })
     })
 }

@@ -1,237 +1,183 @@
 /** chunk id: 616755 params = (module,exports,require) **/
-i.d(t, {
-    A: () => S,
+t.d(i, {
+    A: () => b,
     H: () => L
 });
-var l = i(627968),
-    n = i(64700),
-    a = i(503698),
-    s = i.n(a),
-    r = i(110259),
-    d = i(158954),
-    o = i(397927),
-    c = i(241524),
-    u = i(260451),
-    m = i(444316),
-    x = i(460760),
-    g = i(115703),
-    h = i(63342),
-    _ = i(438842),
-    p = i(879472),
-    A = i(649640),
-    j = i(954571),
-    E = i(54959),
-    v = i(473644),
-    I = i(57930),
-    f = i(450382),
-    T = i(652215),
-    C = i(639325);
+var l = t(627968),
+    s = t(64700),
+    a = t(503698),
+    n = t.n(a),
+    r = t(110259),
+    o = t(158954),
+    d = t(397927),
+    c = t(241524),
+    u = t(260451),
+    m = t(444316),
+    _ = t(460760),
+    h = t(115703),
+    x = t(63342),
+    g = t(438842),
+    p = t(879472),
+    A = t(649640),
+    E = t(954571),
+    j = t(54959),
+    v = t(473644),
+    I = t(57930),
+    f = t(450382),
+    T = t(652215),
+    C = t(639325);
 
-function N(e) {
+function y(e) {
     let {
-        className: t,
-        splashURL: i,
-        backgroundColor: n,
+        className: i,
+        splashURL: t,
+        backgroundColor: s,
         expanded: a
     } = e, r = (0, A.b2)();
-    return null == i ? (0, l.jsx)("div", {
-        className: s()(t, C.D7),
+    return null == t ? (0, l.jsx)("div", {
+        className: n()(i, C.D7),
         style: {
-            background: (0, A.n6)(n ?? r.hex())
+            background: (0, A.n6)(s ?? r.hex())
         }
     }) : (0, l.jsx)("div", {
-        className: t,
+        className: i,
         style: {
-            backgroundImage: `url(${i})`
+            backgroundImage: `url(${t})`
         },
         "aria-hidden": !0,
         "data-expanded": a
     })
 }
 
-function y(e) {
+function D(e) {
     let {
-        invite: t,
-        guild: i,
+        invite: i,
+        guild: t,
         splashURL: a,
         friendMemberIds: r,
-        discoveryGuild: d
-    } = e, c = null != r && r.length > 0, [u, x] = n.useState(!1), g = n.useCallback(e => {
-        x(e), j.default.track(T.HAw.INVITE_ACCEPT_DETAILS_VIEWED, {
-            guild_id: i.id,
-            invite_code: t.code,
+        discoveryGuild: o
+    } = e, c = null != r && r.length > 0, [u, _] = s.useState(!1), h = s.useCallback(e => {
+        _(e), E.default.track(T.HAw.INVITE_ACCEPT_DETAILS_VIEWED, {
+            guild_id: t.id,
+            invite_code: i.code,
             action: e ? "expanded" : "collapsed"
         })
-    }, [i.id, t.code]);
+    }, [t.id, i.code]);
     return (0, l.jsxs)(l.Fragment, {
         children: [(0, l.jsxs)("div", {
             className: C.g3,
             id: "invite-details",
-            children: [(0, l.jsx)(N, {
+            children: [(0, l.jsx)(y, {
                 className: C.se,
                 splashURL: a,
                 expanded: u
             }), (0, l.jsxs)("div", {
-                className: s()(C.qm, {
+                className: n()(C.qm, {
                     [C.rd]: u
                 }),
                 children: [(0, l.jsx)(I.A, {
-                    guild: i,
+                    guild: t,
                     outline: !0
-                }), (0, l.jsxs)(o.BJc, {
+                }), (0, l.jsxs)(d.BJc, {
                     direction: "vertical",
                     gap: 16,
                     children: [(0, l.jsx)(v.A, {
-                        guild: i,
-                        invite: t,
-                        discoveryGuild: d
+                        guild: t,
+                        invite: i,
+                        discoveryGuild: o
                     }), c && (0, l.jsx)(m.A, {
                         friendMemberIds: r,
                         className: C.QS,
-                        avatarSize: o._3J.SIZE_24
+                        avatarSize: d._3J.SIZE_24
                     })]
                 }), (0, l.jsx)(f.A, {
-                    invite: t,
-                    guild: i,
-                    discoveryGuild: d,
+                    invite: i,
+                    guild: t,
+                    discoveryGuild: o,
                     expanded: u,
-                    setExpanded: g,
+                    setExpanded: h,
                     scrollableSectionClassName: C.kw
                 })]
             })]
-        }), (0, l.jsx)(E.A, {
-            invite: t,
-            guild: i,
+        }), (0, l.jsx)(j.A, {
+            invite: i,
+            guild: t,
             className: C.i
         })]
     })
 }
 
-function D(e) {
+function N(e) {
     let {
-        invite: t,
-        guild: i,
-        splashURL: n,
+        invite: i,
+        guild: t,
+        splashURL: s,
         friendMemberIds: a,
-        discoveryGuild: s
+        discoveryGuild: n
     } = e, r = null != a && a.length > 0;
     return (0, l.jsxs)("div", {
         className: C.$5,
         id: "invite-details",
-        children: [(0, l.jsx)(N, {
+        children: [(0, l.jsx)(y, {
             className: C.je,
-            splashURL: n
+            splashURL: s
         }), (0, l.jsxs)("div", {
             className: C.x6,
             children: [(0, l.jsx)(I.A, {
-                guild: i
-            }), (0, l.jsxs)(o.BJc, {
+                guild: t
+            }), (0, l.jsxs)(d.BJc, {
                 direction: "vertical",
                 gap: 16,
                 children: [(0, l.jsx)(v.A, {
-                    guild: i,
-                    invite: t,
-                    discoveryGuild: s
+                    guild: t,
+                    invite: i,
+                    discoveryGuild: n
                 }), r && (0, l.jsx)(m.A, {
                     friendMemberIds: a,
                     className: C.QS,
-                    avatarSize: o._3J.SIZE_24
+                    avatarSize: d._3J.SIZE_24
                 })]
             }), (0, l.jsx)("div", {
                 className: C.Sd,
                 children: (0, l.jsx)(f.A, {
-                    invite: t,
-                    guild: i,
-                    discoveryGuild: s,
+                    invite: i,
+                    guild: t,
+                    discoveryGuild: n,
                     scrollableSectionClassName: C.r_
                 })
-            }), (0, l.jsx)(E.A, {
-                invite: t,
-                guild: i,
+            }), (0, l.jsx)(j.A, {
+                invite: i,
+                guild: t,
                 className: C.pU
             })]
         })]
     })
 }
 
-function S(e) {
+function b(e) {
     let {
-        guild: t,
-        invite: i,
+        guild: i,
+        invite: t,
         discoveryGuild: a,
-        transitionState: s,
+        transitionState: n,
         headerId: m,
-        channel: g,
-        onClose: h
+        channel: h,
+        onClose: x
     } = e;
-    n.useEffect(() => {
-        (0, x.Mu)()
+    s.useEffect(() => {
+        (0, _.Mu)()
     }, []);
     let {
-        treatment: _
+        treatment: g
     } = u.zQ.useConfig({
         location: "AcceptInviteModalRedesign"
-    }), p = (0, c.A)("(max-width: 600px)"), A = "v1" === _ || p, j = n.useMemo(() => A ? y : D, [A]);
-    return (0, l.jsxs)(o.dWK, {
+    }), p = (0, c.A)("(max-width: 600px)"), A = "v1" === g || p, E = s.useMemo(() => A ? D : N, [A]);
+    return (0, l.jsxs)(d.dWK, {
         size: A ? "md" : "xxl",
         "aria-labelledby": m,
-        "aria-label": t?.name ?? g?.name ?? "",
-        transitionState: s,
-        onClose: () => (h(), Promise.resolve()),
-        trackingProps: {
-            impression: {
-                impressionName: r.ImpressionNames.INVITE_ACCEPT,
-                impressionProperties: {
-                    guild_id: t?.id,
-                    invite_code: i.code
-                }
-            }
-        },
-        children: [(0, l.jsx)("div", {
-            className: C.cG,
-            children: (0, l.jsx)(d.s_y, {
-                shouldColorMix: !0
-            })
-        }), (0, l.jsx)(j, {
-            ...e,
-            discoveryGuild: a
-        })]
-    })
-}
-
-function L(e) {
-    let {
-        invite: t,
-        guild: i,
-        splashURL: a,
-        friendMemberIds: s,
-        profile: c,
-        transitionState: x,
-        headerId: f,
-        channel: y,
-        onClose: D
-    } = e, {
-        treatment: S
-    } = u.SH.useConfig({
-        location: "AcceptInviteModalRedesign"
-    }), L = null != s && s.length > 0, {
-        gamesToDisplay: b,
-        lastGameToDisplay: R,
-        remainingGames: O
-    } = (0, g.A)(c), U = n.useMemo(() => c.traits.map((e, t) => ({
-        key: `trait-${t}`,
-        ...e
-    })).filter(e => e.label.length > 0), [c]), G = (0, A.b2)(), k = (0, A.aG)({
-        profile: c,
-        defaultColor: G.hex(),
-        forceDefaultColor: null != c.brandColorPrimary
-    }), M = c.brandColorPrimary ?? k;
-    return (0, l.jsxs)(o.dWK, {
-        size: "md",
-        "aria-labelledby": f,
-        "aria-label": i?.name ?? y?.name ?? "",
-        transitionState: x,
-        onClose: () => (D(), Promise.resolve()),
+        "aria-label": i?.name ?? h?.name ?? "",
+        transitionState: n,
+        onClose: () => (x(), Promise.resolve()),
         trackingProps: {
             impression: {
                 impressionName: r.ImpressionNames.INVITE_ACCEPT,
@@ -243,66 +189,120 @@ function L(e) {
         },
         children: [(0, l.jsx)("div", {
             className: C.cG,
-            children: (0, l.jsx)(d.s_y, {
+            children: (0, l.jsx)(o.s_y, {
+                shouldColorMix: !0
+            })
+        }), (0, l.jsx)(E, {
+            ...e,
+            discoveryGuild: a
+        })]
+    })
+}
+
+function L(e) {
+    let {
+        invite: i,
+        guild: t,
+        splashURL: a,
+        friendMemberIds: n,
+        profile: c,
+        transitionState: _,
+        headerId: f,
+        channel: D,
+        onClose: N
+    } = e, {
+        treatment: b
+    } = u.SH.useConfig({
+        location: "AcceptInviteModalRedesign"
+    }), L = null != n && n.length > 0, {
+        gamesToDisplay: S,
+        lastGameToDisplay: U,
+        remainingGames: R
+    } = (0, h.A)(c), G = s.useMemo(() => c.traits.map((e, i) => ({
+        key: `trait-${i}`,
+        ...e
+    })).filter(e => e.label.length > 0), [c]), O = (0, A.b2)(), k = (0, A.aG)({
+        profile: c,
+        defaultColor: O.hex(),
+        forceDefaultColor: null != c.brandColorPrimary
+    }), P = c.brandColorPrimary ?? k;
+    return (0, l.jsxs)(d.dWK, {
+        size: "md",
+        "aria-labelledby": f,
+        "aria-label": t?.name ?? D?.name ?? "",
+        transitionState: _,
+        onClose: () => (N(), Promise.resolve()),
+        trackingProps: {
+            impression: {
+                impressionName: r.ImpressionNames.INVITE_ACCEPT,
+                impressionProperties: {
+                    guild_id: t?.id,
+                    invite_code: i.code
+                }
+            }
+        },
+        children: [(0, l.jsx)("div", {
+            className: C.cG,
+            children: (0, l.jsx)(o.s_y, {
                 shouldColorMix: !0
             })
         }), (0, l.jsxs)("div", {
             className: C.g3,
             id: "invite-details",
-            children: [(0, l.jsx)(N, {
+            children: [(0, l.jsx)(y, {
                 className: C.se,
                 splashURL: a,
-                backgroundColor: M
+                backgroundColor: P
             }), (0, l.jsxs)("div", {
                 className: C.qm,
                 children: [(0, l.jsx)(I.A, {
-                    guild: i,
+                    guild: t,
                     outline: !0
-                }), (0, l.jsxs)(o.BJc, {
+                }), (0, l.jsxs)(d.BJc, {
                     direction: "vertical",
                     gap: 16,
                     children: [(0, l.jsx)(v.A, {
-                        guild: i,
-                        invite: t,
+                        guild: t,
+                        invite: i,
                         showGuildTag: !0
                     }), L && (0, l.jsx)(m.A, {
-                        friendMemberIds: s,
+                        friendMemberIds: n,
                         className: C.QS,
-                        avatarSize: o._3J.SIZE_24
-                    }), null != i.description && "" !== i.description && (0, l.jsx)(o.Text, {
+                        avatarSize: d._3J.SIZE_24
+                    }), null != t.description && "" !== t.description && (0, l.jsx)(d.Text, {
                         variant: "text-sm/normal",
                         color: "text-default",
-                        children: i.description
-                    }), 0 === b.length ? null : "v1" === S ? (0, l.jsx)(_.A, {
-                        gamesToDisplay: b,
-                        lastGameToDisplay: R,
-                        remainingGames: O,
+                        children: t.description
+                    }), 0 === S.length ? null : "v1" === b ? (0, l.jsx)(g.A, {
+                        gamesToDisplay: S,
+                        lastGameToDisplay: U,
+                        remainingGames: R,
                         activity: c.gameActivity
-                    }) : "v2" === S ? (0, l.jsx)(o.BJc, {
+                    }) : "v2" === b ? (0, l.jsx)(d.BJc, {
                         direction: "vertical",
                         gap: 8,
-                        children: (0, l.jsx)(h.A, {
-                            gamesToDisplay: b,
-                            lastGameToDisplay: R,
-                            remainingGames: O,
+                        children: (0, l.jsx)(x.A, {
+                            gamesToDisplay: S,
+                            lastGameToDisplay: U,
+                            remainingGames: R,
                             activity: c.gameActivity,
                             onExpandClick: () => {
-                                j.default.track(T.HAw.INVITE_ACCEPT_DETAILS_VIEWED, {
-                                    guild_id: i.id,
-                                    invite_code: t.code,
+                                E.default.track(T.HAw.INVITE_ACCEPT_DETAILS_VIEWED, {
+                                    guild_id: t.id,
+                                    invite_code: i.code,
                                     action: "games_expanded"
                                 })
                             }
                         })
                     }) : null, (0, l.jsx)(p.w, {
-                        items: U,
+                        items: G,
                         traitColor: "text-subtle"
                     })]
                 })]
             })]
-        }), (0, l.jsx)(E.A, {
-            invite: t,
-            guild: i,
+        }), (0, l.jsx)(j.A, {
+            invite: i,
+            guild: t,
             className: C.i
         })]
     })

@@ -1,59 +1,59 @@
 /** chunk id: 233761 params = (module,exports,require) **/
-i.d(t, {
+t.d(i, {
     A: () => p
 });
-var l = i(627968),
-    n = i(64700),
-    a = i(503698),
-    s = i.n(a),
-    r = i(397927),
-    d = i(793574),
-    o = i(688810),
-    c = i(404374),
-    u = i(772366),
-    m = i(954571),
-    x = i(652215),
-    g = i(788868),
-    h = i(985018),
-    _ = i(344078);
+var l = t(627968),
+    s = t(64700),
+    a = t(503698),
+    n = t.n(a),
+    r = t(397927),
+    o = t(793574),
+    d = t(688810),
+    c = t(404374),
+    u = t(772366),
+    m = t(954571),
+    _ = t(652215),
+    h = t(788868),
+    x = t(985018),
+    g = t(344078);
 
 function p(e) {
     let {
-        className: t
+        className: i
     } = e, {
-        analyticsLocations: i,
+        analyticsLocations: t,
         sourceAnalyticsLocations: a
-    } = (0, o.Ay)(d.A.PREMIUM_UPSELL_TOOLTIP);
-    return n.useEffect(() => {
-        m.default.track(x.HAw.PREMIUM_UPSELL_VIEWED, {
-            type: g.e.GUILD_CAP_INLINE_INVITE_MODAL,
+    } = (0, d.Ay)(o.A.PREMIUM_UPSELL_TOOLTIP);
+    return s.useEffect(() => {
+        m.default.track(_.HAw.PREMIUM_UPSELL_VIEWED, {
+            type: h.e.GUILD_CAP_INLINE_INVITE_MODAL,
             location: {
-                page: x.liQ.NATIVE_INVITE_MODAL
+                page: _.liQ.NATIVE_INVITE_MODAL
             },
             location_stack: a
         })
     }, [a]), (0, l.jsxs)(r.DUT, {
         onClick: () => (0, u.A)({
             analyticsSource: {
-                page: x.ThZ.EXTERNAL_INVITE_LINK_MODAL
+                page: _.ThZ.EXTERNAL_INVITE_LINK_MODAL
             },
             analyticsLocation: {
-                page: x.ThZ.EXTERNAL_INVITE_LINK_MODAL,
-                section: x.JJy.GUILD_CAP_UPSELL_MODAL
+                page: _.ThZ.EXTERNAL_INVITE_LINK_MODAL,
+                section: _.JJy.GUILD_CAP_UPSELL_MODAL
             },
-            analyticsLocations: i
+            analyticsLocations: t
         }),
-        className: s()(_.fA, t),
+        className: n()(g.fA, i),
         children: [(0, l.jsx)(r.tvc, {
             size: "md",
-            className: _.Y2,
+            className: g.Y2,
             color: c.k0.PREMIUM_TIER_2
         }), (0, l.jsx)("span", {
-            className: _.Cq,
-            children: h.intl.string(h.t["4/W4Pz"])
+            className: g.Cq,
+            children: x.intl.string(x.t["4/W4Pz"])
         }), (0, l.jsx)("span", {
-            className: _.MY,
-            children: h.intl.string(h.t.b6KOkI)
+            className: g.MY,
+            children: x.intl.string(x.t.b6KOkI)
         })]
     })
 }

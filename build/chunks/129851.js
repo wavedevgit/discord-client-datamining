@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
     A: () => $,
-    Z: () => J
+    Z: () => X
 });
 var i = n(627968),
     s = n(64700),
@@ -25,10 +25,10 @@ var i = n(627968),
     I = n(235986),
     N = n(491509),
     v = n(895600),
-    j = n(720353),
-    S = n(559568),
-    T = n(274303),
-    C = n(13437),
+    C = n(720353),
+    j = n(559568),
+    S = n(274303),
+    T = n(13437),
     y = n(557722),
     b = n(148864),
     R = n(146571),
@@ -52,12 +52,12 @@ var i = n(627968),
     q = n(141573),
     Y = n(153335);
 
-function J() {
+function X() {
     return (0, i.jsx)(E.Ay, {
         children: (0, i.jsx)(h.y$y, {})
     })
 }
-class X extends s.PureComponent {
+class J extends s.PureComponent {
     static defaultProps = {
         transitionTo: e => n.g.location.assign(e)
     };
@@ -458,7 +458,7 @@ class X extends s.PureComponent {
                 className: e,
                 expanded: !0,
                 children: this.renderDefaultForm(!0)
-            }), t && (0, i.jsx)(S.A, {})]
+            }), t && (0, i.jsx)(j.A, {})]
         })
     }
     renderGuildTemplate(e) {
@@ -480,7 +480,7 @@ class X extends s.PureComponent {
             style: {
                 padding: 0
             },
-            children: (0, i.jsx)(j.t, {
+            children: (0, i.jsx)(C.t, {
                 mfaFinish: this.handleTokenSubmitMFA,
                 mfaChallenge: e,
                 onEarlyClose: () => {
@@ -539,7 +539,7 @@ class X extends s.PureComponent {
                 dismissedChooseAccount: !0
             }))
         };
-        return (0, i.jsx)(C.A, {
+        return (0, i.jsx)(T.A, {
             onDismiss: e
         })
     }
@@ -553,7 +553,7 @@ class X extends s.PureComponent {
             checkingHandoff: r,
             redirecting: l
         } = this.state;
-        if (l || r) return (0, i.jsx)(J, {});
+        if (l || r) return (0, i.jsx)(X, {});
         if (s) return this.renderHandOffAvailable();
         switch (n) {
             case K.aUe.LOGGING_IN_MFA_SMS:
@@ -737,7 +737,7 @@ class X extends s.PureComponent {
 }
 let $ = function(e) {
     (0, L.K)();
-    let t = (0, c.cf)([U.A, P.A, D.default, T.A, b.A], () => ({
+    let t = (0, c.cf)([U.A, P.A, D.default, S.A, b.A], () => ({
         authenticated: D.default.isAuthenticated(),
         handoffAvailable: U.A.isHandoffAvailable(),
         user: U.A.user,
@@ -746,9 +746,9 @@ let $ = function(e) {
         mfaMethods: D.default.getMFAMethods(),
         defaultRoute: P.A.defaultRoute,
         country: b.A.getCountryCode(),
-        hasLoggedInAccounts: T.A.getHasLoggedInAccounts()
+        hasLoggedInAccounts: S.A.getHasLoggedInAccounts()
     }));
-    return (0, i.jsx)(X, {
+    return (0, i.jsx)(J, {
         ...e,
         ...t
     })

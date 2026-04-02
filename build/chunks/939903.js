@@ -1,48 +1,48 @@
 /** chunk id: 939903 params = (module,exports,require) **/
-i.d(t, {
-    A: () => o
+t.d(i, {
+    A: () => d
 });
-var l = i(627968);
-i(64700);
-var n = i(397927),
-    a = i(960736),
-    s = i(253932),
-    r = i(652215),
-    d = i(985018);
+var l = t(627968);
+t(64700);
+var s = t(397927),
+    a = t(960736),
+    n = t(253932),
+    r = t(652215),
+    o = t(985018);
 
-function o(e) {
+function d(e) {
     let {
-        invite: t,
-        closePopout: i
-    } = e, o = s.tz.useSetting(), {
+        invite: i,
+        closePopout: t
+    } = e, d = n.tz.useSetting(), {
         nickname: c,
         dmsAllowed: u,
         showActivity: m,
-        setNickname: x,
-        setDmsAllowed: g,
-        setShowActivity: h
-    } = (0, a.lD)(), _ = t.is_nickname_changeable;
-    return (0, l.jsxs)(n.W1t, {
+        setNickname: _,
+        setDmsAllowed: h,
+        setShowActivity: x
+    } = (0, a.lD)(), g = i.is_nickname_changeable;
+    return (0, l.jsxs)(s.W1t, {
         navId: "accept-invite-modal-settings-menu",
-        onClose: i,
-        "aria-label": d.intl.string(d.t["3D5yo/"]),
+        onClose: t,
+        "aria-label": o.intl.string(o.t["3D5yo/"]),
         onSelect: () => {},
-        children: [_ ? (0, l.jsx)(n.YnB, {
+        children: [g ? (0, l.jsx)(s.YnB, {
             id: "accept-invite-modal-settings-nickname",
-            label: d.intl.string(d.t.me1lRk),
+            label: o.intl.string(o.t.me1lRk),
             value: c,
-            onChange: x,
-            placeholder: d.intl.string(d.t["09Q8yp"]),
+            onChange: _,
+            placeholder: o.intl.string(o.t["09Q8yp"]),
             maxLength: r.d0r
-        }) : null, (0, l.jsx)(n.fPC, {
+        }) : null, (0, l.jsx)(s.fPC, {
             id: "accept-invite-modal-settings-dms",
-            label: d.intl.string(d.t["/2ed37"]),
-            action: g,
-            checked: u
-        }), o ? (0, l.jsx)(n.fPC, {
-            id: "accept-invite-modal-settings-activity",
-            label: d.intl.string(d.t.bN4m1G),
+            label: o.intl.string(o.t["/2ed37"]),
             action: h,
+            checked: u
+        }), d ? (0, l.jsx)(s.fPC, {
+            id: "accept-invite-modal-settings-activity",
+            label: o.intl.string(o.t.bN4m1G),
+            action: x,
             checked: m
         }) : null]
     })
