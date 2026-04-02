@@ -3,8 +3,8 @@ n.d(t, {
     A: () => A
 });
 var i = n(627968),
-    a = n(64700),
-    l = n(397927),
+    l = n(64700),
+    a = n(397927),
     r = n(308528),
     s = n(58149),
     o = n(231608),
@@ -18,7 +18,7 @@ function A(e) {
             priorityMembers: n,
             partiedMembers: A
         } = e,
-        h = a.useContext(d.AnalyticsContext),
+        h = l.useContext(d.AnalyticsContext),
         _ = n.map(e => {
             let {
                 user: t
@@ -27,7 +27,7 @@ function A(e) {
         }),
         m = 1 === A.length && 1 === n.length,
         p = n.length - A.length > 0;
-    return (m || t) && !p && 0 !== _.length ? (0, i.jsx)(l.Drp, {
+    return (m || t) && !p && 0 !== _.length ? (0, i.jsx)(a.Drp, {
         id: "message",
         action: function() {
             r.A.openPrivateChannel({

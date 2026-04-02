@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var a = n(503698),
-    l = n.n(a),
+var l = n(503698),
+    a = n.n(l),
     r = n(397927),
     s = n(441490),
     o = n(907500);
@@ -14,19 +14,19 @@ function d(e) {
     let {
         copy: t,
         showStars: n = !0,
-        className: a
+        className: l
     } = e;
     return (0, i.jsxs)("div", {
-        className: l()(o.fC, a),
+        className: a()(o.fC, l),
         children: [n && (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)("span", {
-                className: l()(o.d4, o.Cm),
+                className: a()(o.d4, o.Cm),
                 children: (0, i.jsx)(s.A, {
                     width: "10",
                     height: "10"
                 })
             }), (0, i.jsx)("span", {
-                className: l()(o.d4, o.nv),
+                className: a()(o.d4, o.nv),
                 children: (0, i.jsx)(s.A, {
                     width: "14",
                     height: "14"

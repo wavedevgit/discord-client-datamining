@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var a = n(397927),
-    l = n(189252),
+var l = n(397927),
+    a = n(189252),
     r = n(851580),
     s = n(44022),
     o = n(985018);
@@ -21,11 +21,11 @@ function d(e) {
         popoutPosition: "bottom",
         popoutAlign: "right",
         children: (e, t, n, s, d) => (0, i.jsxs)(i.Fragment, {
-            children: [(0, i.jsx)(l.A, {
+            children: [(0, i.jsx)(a.A, {
                 ...n,
                 ref: d,
                 onClick: e,
-                icon: a.cFy,
+                icon: l.cFy,
                 tooltip: o.intl.string(o.t["2pAkDA"]),
                 selected: t,
                 showBadge: s

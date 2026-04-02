@@ -704,7 +704,8 @@ function eC(e) {
     })
 }
 let eI = function(e) {
-    return (0, V._)("GameProfileModal") ? (0, a.jsx)(eC, {
+    let t = (0, V._)("GameProfileModal");
+    return e.forceV2 || t ? (0, a.jsx)(eC, {
         ...e
     }) : (0, a.jsx)(eE, {
         ...e

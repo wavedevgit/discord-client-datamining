@@ -3,8 +3,8 @@ n.d(t, {
     A: () => I
 });
 var i = n(627968),
-    a = n(64700),
-    l = n(311907),
+    l = n(64700),
+    a = n(311907),
     r = n(451988),
     s = n(990078),
     o = n(397927),
@@ -25,7 +25,7 @@ let _ = (0, o.kHD)(c.A),
         [A.VX0.CONFLICT]: _,
         [A.VX0.ERROR]: _
     });
-class E extends a.PureComponent {
+class E extends l.PureComponent {
     _doneTimer = new r.Ep;
     componentDidMount() {
         this.getIsRecentlySynced() && this.setRecentlySyncedTimeout()
@@ -85,20 +85,20 @@ class E extends a.PureComponent {
             cloudSyncState: e,
             libraryApplication: t,
             className: n
-        } = this.props, a = null == e ? {
+        } = this.props, l = null == e ? {
             type: A.VX0.DONE
-        } : e, l = this.getIsRecentlySynced();
-        (p.has(a.type) || l) && (t.id, this.getStop(a, l));
-        let r = l ? m : g[a.type];
+        } : e, a = this.getIsRecentlySynced();
+        (p.has(l.type) || a) && (t.id, this.getStop(l, a));
+        let r = a ? m : g[l.type];
         return (0, i.jsx)(s.m, {
-            text: this.getTooltip(a, l),
+            text: this.getTooltip(l, a),
             children: (0, i.jsx)(r, {
                 className: n
             })
         })
     }
 }
-let I = l.Ay.connectStores([d.A], e => {
+let I = a.Ay.connectStores([d.A], e => {
     let {
         libraryApplication: t
     } = e;

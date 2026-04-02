@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var a = n(397927),
-    l = n(964486),
+var l = n(397927),
+    a = n(964486),
     r = n(954571),
     s = n(217549),
     o = n(70856),
@@ -22,23 +22,23 @@ function m(e) {
         close: n,
         onSelect: m
     } = e, p = (0, d.A)(t), g = (0, A.A)(t), E = (0, u.A)(t), I = (0, c.A)(t), f = (0, s.A)(t), C = (0, o.A)(t);
-    return (0, l.Ay)(() => {
+    return (0, a.Ay)(() => {
         let e = t.currentActivities.filter(e => e.game?.name != null && (0, r.isGameApplicationType)(e.game?.type)).map(e => e.game.name);
         r.default.track(h.HAw.OPEN_POPOUT, {
             type: "Now Playing Card Popout",
             games_detected: e
         })
-    }), (0, i.jsxs)(a.W1t, {
+    }), (0, i.jsxs)(l.W1t, {
         "data-menu-migrated": !0,
         navId: "now-playing-menu",
         onClose: n,
         "aria-label": _.intl.string(_.t.ogxXGq),
         onSelect: m,
-        children: [p, (0, i.jsxs)(a.rXV, {
+        children: [p, (0, i.jsxs)(l.rXV, {
             children: [g, E]
-        }), (0, i.jsx)(a.rXV, {
+        }), (0, i.jsx)(l.rXV, {
             children: I
-        }), (0, i.jsx)(a.rXV, {
+        }), (0, i.jsx)(l.rXV, {
             children: f
         }), C]
     })

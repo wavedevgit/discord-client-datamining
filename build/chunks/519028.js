@@ -1,13 +1,13 @@
 /** chunk id: 519028 params = (module,exports,require) **/
 n.d(t, {
-    A: () => l
+    A: () => a
 });
 var i = n(311907),
-    a = n(883344);
+    l = n(883344);
 
-function l() {
+function a() {
     return {
         value: 0,
-        showDot: (0, i.bG)([a.A], () => a.A.hasNewContent(), [])
+        showDot: (0, i.bG)([l.A], () => l.A.hasNewContent(), [])
     }
 }

@@ -3,8 +3,8 @@ n.d(t, {
     A: () => _
 });
 var i = n(627968),
-    a = n(64700),
-    l = n(311907),
+    l = n(64700),
+    a = n(311907),
     r = n(883344),
     s = n(859524),
     o = n(567061),
@@ -16,9 +16,9 @@ var i = n(627968),
 let _ = function(e) {
     let {
         scrollContainerRef: t
-    } = e, n = (0, l.bG)([r.A], () => r.A.notificationItem(), []), {
+    } = e, n = (0, a.bG)([r.A], () => r.A.notificationItem(), []), {
         showDot: _
-    } = (0, d.A)(), m = a.useRef(null), [p, g] = a.useState(!1), {
+    } = (0, d.A)(), m = l.useRef(null), [p, g] = l.useState(!1), {
         data: E,
         loading: I,
         isRefreshing: f,
@@ -28,17 +28,17 @@ let _ = function(e) {
         showDot: _,
         notificationItem: n
     }), N = (0, o.E)();
-    a.useEffect(() => () => {
+    l.useEffect(() => () => {
         N()
     }, [N]);
-    let S = (0, l.bG)([r.A], () => r.A.hasNewContent(), []),
-        x = (0, l.bG)([r.A], () => r.A.isHydrating(), []),
-        v = a.useMemo(() => T[0].onViewableItemsChanged, [T]),
+    let S = (0, a.bG)([r.A], () => r.A.hasNewContent(), []),
+        x = (0, a.bG)([r.A], () => r.A.isHydrating(), []),
+        v = l.useMemo(() => T[0].onViewableItemsChanged, [T]),
         {
             registerItemRef: b
         } = (0, A.N)(E, v, t),
-        y = a.useMemo(() => E.some(e => "end" === e.data.kind), [E]),
-        O = a.useCallback(() => {
+        y = l.useMemo(() => E.some(e => "end" === e.data.kind), [E]),
+        O = l.useCallback(() => {
             if (y) return;
             let e = t.current;
             null == e || !(e.scrollHeight - e.scrollTop - e.clientHeight < 300) || p || I || x || (g(!0), (0, s._x)().finally(() => {
@@ -47,22 +47,22 @@ let _ = function(e) {
                 }, 300)
             }))
         }, [I, p, x, y, t]);
-    a.useEffect(() => {
+    l.useEffect(() => {
         let e = t.current;
         if (null != e) return e.addEventListener("scroll", O), () => {
             e.removeEventListener("scroll", O)
         }
     }, [O, t]);
-    let L = a.useCallback(() => {
+    let L = l.useCallback(() => {
             t.current?.scrollTo({
                 top: 0,
                 behavior: "smooth"
             })
         }, [t]),
-        R = a.useCallback(() => {
+        R = l.useCallback(() => {
             C(), L()
         }, [C, L]),
-        P = a.useCallback(e => "loading" === e.data.kind ? (0, i.jsx)("div", {
+        P = l.useCallback(e => "loading" === e.data.kind ? (0, i.jsx)("div", {
             style: {
                 padding: "32px",
                 textAlign: "center"

@@ -3,8 +3,8 @@ n.d(t, {
     A: () => h
 });
 var i = n(627968),
-    a = n(64700),
-    l = n(311907),
+    l = n(64700),
+    a = n(311907),
     r = n(73153),
     s = n(31728),
     o = n(203982),
@@ -23,27 +23,27 @@ function h(e) {
         className: n,
         style: r,
         currentWindow: s
-    } = e, h = (0, l.bG)([d.A], () => d.A.getConnectedFrame()), _ = (0, l.bG)([d.A], () => d.A.getFrameLayoutMode()), m = null != h && _ === c.y.FOCUSED ? window : s ?? window, p = a.useRef(null), g = a.useCallback(() => {
+    } = e, h = (0, a.bG)([d.A], () => d.A.getConnectedFrame()), _ = (0, a.bG)([d.A], () => d.A.getFrameLayoutMode()), m = null != h && _ === c.y.FOCUSED ? window : s ?? window, p = l.useRef(null), g = l.useCallback(() => {
         null == p.current || A(t, p.current.getBoundingClientRect())
     }, [t]);
-    a.useLayoutEffect(() => {
+    l.useLayoutEffect(() => {
         g()
     });
-    let E = a.useMemo(() => new ResizeObserver(() => {
+    let E = l.useMemo(() => new ResizeObserver(() => {
         g()
     }), [g]);
-    return a.useLayoutEffect(() => {
+    return l.useLayoutEffect(() => {
         let e = p.current;
         if (null != e) return E.observe(e), () => E.unobserve(e)
-    }, [E]), a.useLayoutEffect(() => {
+    }, [E]), l.useLayoutEffect(() => {
         let e = () => g(),
             t = () => g();
         return m.addEventListener("scroll", e, !0), m.addEventListener("resize", t), () => {
             m.removeEventListener("scroll", e, !0), m.removeEventListener("resize", t)
         }
-    }, [g, m]), a.useLayoutEffect(() => (o._.subscribe(u.jej.MANUAL_IFRAME_RESIZING, g), () => {
+    }, [g, m]), l.useLayoutEffect(() => (o._.subscribe(u.jej.MANUAL_IFRAME_RESIZING, g), () => {
         o._.unsubscribe(u.jej.MANUAL_IFRAME_RESIZING, g)
-    }), [g]), a.useLayoutEffect(() => () => {
+    }), [g]), l.useLayoutEffect(() => () => {
         A(t, null)
     }, [t]), (0, i.jsx)("div", {
         ref: p,

@@ -3,8 +3,8 @@ n.d(t, {
     A: () => d
 });
 var i = n(449054),
-    a = n(417426),
-    l = n(823448),
+    l = n(417426),
+    a = n(823448),
     r = n(351022),
     s = n(282026);
 class o {}
@@ -13,23 +13,23 @@ let d = new class extends o {
         let {
             query: t,
             categoryId: n,
-            languageCode: l,
+            languageCode: a,
             offset: s
         } = e;
         r.A.getIsFetching({
             query: t,
             categoryId: n,
-            languageCode: l
+            languageCode: a
         }) || r.A.getIsInitialFetchComplete({
             query: t,
             categoryId: n,
-            languageCode: l
+            languageCode: a
         }) && (i.br({
             withCounts: !1,
             offset: s
-        }), await a.A.fetchSearchResults(t, {
+        }), await l.A.fetchSearchResults(t, {
             categoryId: n,
-            languageCode: l,
+            languageCode: a,
             offset: s,
             limit: 12,
             withCounts: !1
@@ -39,22 +39,22 @@ let d = new class extends o {
         let {
             query: t,
             categoryId: n,
-            languageCode: l
+            languageCode: a
         } = e, s = r.A.getIsFetching({
             query: t,
             categoryId: n,
-            languageCode: l
+            languageCode: a
         }), o = r.A.getIsInitialFetchComplete({
             query: t,
             categoryId: n,
-            languageCode: l
+            languageCode: a
         });
         s || o || (i.br({
             withCounts: !1,
             offset: 0
-        }), await a.A.fetchSearchResults(t, {
+        }), await l.A.fetchSearchResults(t, {
             categoryId: n,
-            languageCode: l,
+            languageCode: a,
             offset: 0,
             limit: 12,
             withCounts: !1
@@ -68,15 +68,15 @@ let d = new class extends o {
             languageCode: o
         } = e;
         if ("" === t.trim()) return;
-        let d = l.A.getIsFetchingCounts(t),
-            c = l.A.getIsFetchingCounts(t);
+        let d = a.A.getIsFetchingCounts(t),
+            c = a.A.getIsFetchingCounts(t);
         d || c || (s.A.setState({
             fetchedQuery: t,
             resultsQuery: ""
         }), i.fd(n, r), i.br({
             withCounts: !0,
             offset: 0
-        }), await a.A.fetchSearchResults(t, {
+        }), await l.A.fetchSearchResults(t, {
             categoryId: r,
             languageCode: o,
             offset: 0,

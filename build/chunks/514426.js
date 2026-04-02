@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var a = n(311907),
-    l = n(397927),
+var l = n(311907),
+    a = n(397927),
     r = n(544028),
     s = n(687599),
     o = n(985018),
@@ -16,16 +16,16 @@ var a = n(311907),
 function A(e) {
     let {
         section: t
-    } = e, n = (0, a.bG)([r.A], () => r.A.theme);
-    return (0, i.jsxs)(l.ppr, {
+    } = e, n = (0, l.bG)([r.A], () => r.A.theme);
+    return (0, i.jsxs)(a.ppr, {
         theme: n,
         className: d.y,
-        children: [(0, i.jsx)(l.G8R, {
+        children: [(0, i.jsx)(a.G8R, {
             width: 415,
             height: 200,
             lightSrc: u,
             darkSrc: c
-        }), (0, i.jsx)(l.SGT, {
+        }), (0, i.jsx)(a.SGT, {
             note: t === s.zz.SPAM ? o.intl.string(o.t.hasFPQ) : o.intl.string(o.t.SXrqTf)
         })]
     })

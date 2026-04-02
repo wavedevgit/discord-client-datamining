@@ -3,8 +3,8 @@ n.d(t, {
     s: () => g
 });
 var i = n(827343),
-    a = n(168943),
-    l = n(63995),
+    l = n(168943),
+    a = n(63995),
     r = n(69407),
     s = n(96566),
     o = n(405018),
@@ -18,7 +18,7 @@ var i = n(827343),
     p = n(731854);
 
 function g() {
-    if (!(0, a.L)()) return;
+    if (!(0, l.L)()) return;
     let e = A.Ay.isVideoEnabled(),
         t = Object.values(A.Ay.getVideoDevices())[0],
         n = t?.disabled ?? !0,
@@ -31,7 +31,7 @@ function g() {
     } = (0, o.M)(E);
     if (!f) {
         if (E.isGuildStageVoice()) {
-            let e = l.A.getMutableParticipants(E.id, r.ip.SPEAKER),
+            let e = a.A.getMutableParticipants(E.id, r.ip.SPEAKER),
                 t = e?.find(e => {
                     let {
                         user: t

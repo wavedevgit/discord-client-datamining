@@ -3,8 +3,8 @@ let i;
 n.d(t, {
     A: () => x
 });
-var a = n(73153),
-    l = n(31728),
+var l = n(73153),
+    a = n(31728),
     r = n(272355),
     s = n(933958),
     o = n(313961),
@@ -25,7 +25,7 @@ var a = n(73153),
 function T() {
     let e = i;
     if (null == e || !m.A.isOpen(e)) return !1;
-    a.h.wait(() => l.VN(e)), p.A.getRTCConnection()?.setPipOpen(!1), i = null
+    l.h.wait(() => a.VN(e)), p.A.getRTCConnection()?.setPipOpen(!1), i = null
 }
 
 function N() {
@@ -47,7 +47,7 @@ function N() {
         }()) return T();
     if (t || T(), null == e) return !1;
     let n = A.A.getChannel(e);
-    return !(null == n || m.A.isOpen(e)) && (a.h.wait(() => l.ho(n.id, f.o1q.VIDEO, {
+    return !(null == n || m.A.isOpen(e)) && (l.h.wait(() => a.ho(n.id, f.o1q.VIDEO, {
         channel: n
     })), p.A.getRTCConnection()?.setPipOpen(!0), void(i = e))
 }

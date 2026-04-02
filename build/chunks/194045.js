@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var a = n(397927),
-    l = n(73153),
+var l = n(397927),
+    a = n(73153),
     r = n(626584),
     s = n(450510),
     o = n(891540),
@@ -28,10 +28,10 @@ let S = new r.A("SoundboardManager");
 class x extends _.A {
     playingSoundsWeb = new Map;
     _initialize() {
-        super._initialize(), __OVERLAY__ || (l.h.subscribe("OVERLAY_SOUNDBOARD_SOUNDS_FETCH_REQUEST", this._handleOverlaySoundboardSoundsFetchRequest), l.h.subscribe("RTC_CONNECTION_STATE", this._handleRTCConnectionState))
+        super._initialize(), __OVERLAY__ || (a.h.subscribe("OVERLAY_SOUNDBOARD_SOUNDS_FETCH_REQUEST", this._handleOverlaySoundboardSoundsFetchRequest), a.h.subscribe("RTC_CONNECTION_STATE", this._handleRTCConnectionState))
     }
     _terminate() {
-        super._terminate(), __OVERLAY__ || (l.h.unsubscribe("OVERLAY_SOUNDBOARD_SOUNDS_FETCH_REQUEST", this._handleOverlaySoundboardSoundsFetchRequest), l.h.unsubscribe("RTC_CONNECTION_STATE", this._handleRTCConnectionState))
+        super._terminate(), __OVERLAY__ || (a.h.unsubscribe("OVERLAY_SOUNDBOARD_SOUNDS_FETCH_REQUEST", this._handleOverlaySoundboardSoundsFetchRequest), a.h.unsubscribe("RTC_CONNECTION_STATE", this._handleRTCConnectionState))
     }
     _stopAndClearSounds = () => {
         u.Ay.supports(N.O5.SAMPLE_PLAYBACK) && u.Ay.getMediaEngine().eachConnection(e => {
@@ -45,16 +45,16 @@ class x extends _.A {
         return async function(t) {
             let n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 1,
                 i = arguments.length > 2 ? arguments[2] : void 0,
-                a = arguments.length > 3 ? arguments[3] : void 0,
-                l = null != a && A.A.getVoiceChannelId() === a;
-            if ((null == a || l) && !u.Ay.isDeaf() && !p.A.isLocalSoundboardMuted(i)) try {
-                let a = {
+                l = arguments.length > 3 ? arguments[3] : void 0,
+                a = null != l && A.A.getVoiceChannelId() === l;
+            if ((null == l || a) && !u.Ay.isDeaf() && !p.A.isLocalSoundboardMuted(i)) try {
+                let l = {
                     soundKey: `${i}-${t}`,
                     soundURL: (0, I.A)(t),
                     soundVolume: (0, f.A)(n),
                     reportSoundStartedPlaying: () => (0, m.dZ)(t, i)
                 };
-                u.Ay.supports(N.O5.SAMPLE_PLAYBACK) ? await (0, C.o)(a) : await (0, C.G)(a, e.playingSoundsWeb)
+                u.Ay.supports(N.O5.SAMPLE_PLAYBACK) ? await (0, C.o)(l) : await (0, C.G)(l, e.playingSoundsWeb)
             } catch (e) {
                 S.warn(`Error playing soundboard sound: ${e.message}`)
             } finally {
@@ -75,9 +75,9 @@ class x extends _.A {
     };
     _handleOpenEducationModal = (e, t) => {
         if (null == e) return;
-        let l = c.A.getChannel(t),
+        let a = c.A.getChannel(t),
             r = h.Ay.getKeybindForAction(T.hCu.SOUNDBOARD_HOLD);
-        null != l && (0, g.Ay)(l) && null != r && o.A.hasHotspot(s._2.SOUNDBOARD_WHEEL_EDUCATION_MODAL) && (0, a.mMO)(async () => {
+        null != a && (0, g.Ay)(a) && null != r && o.A.hasHotspot(s._2.SOUNDBOARD_WHEEL_EDUCATION_MODAL) && (0, l.mMO)(async () => {
             let {
                 default: t
             } = await n.e("51143").then(n.bind(n, 888762));
@@ -85,7 +85,7 @@ class x extends _.A {
                 ...n,
                 guildId: e,
                 keybind: r,
-                channel: l
+                channel: a
             })
         })
     }

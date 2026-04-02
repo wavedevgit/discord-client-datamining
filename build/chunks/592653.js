@@ -5,8 +5,8 @@ n.d(t, {
     t$: () => _
 });
 var i = n(735438),
-    a = n.n(i),
-    l = n(933958),
+    l = n.n(i),
+    a = n(933958),
     r = n(969151),
     s = n(287809),
     o = n(403362),
@@ -15,7 +15,7 @@ var i = n(735438),
     u = n(613057);
 
 function A() {
-    let e = l.Ay.getCurrentEmbeddedActivity();
+    let e = a.Ay.getCurrentEmbeddedActivity();
     if (null == e) return {
         participants: []
     };
@@ -25,10 +25,10 @@ function A() {
         participants: Array.from(e.userIds, e => {
             let i = s.default.getUser(e);
             if (null == i) return;
-            let a = (0, d.tJ)(t, n, i);
+            let l = (0, d.tJ)(t, n, i);
             return {
                 ...(0, c.A)(i),
-                nickname: a ?? void 0
+                nickname: l ?? void 0
             }
         }).filter(o.Vq)
     }
@@ -43,6 +43,6 @@ let h = {
                 prevState: t,
                 dispatch: n
             } = e, i = A();
-            return a().isEqual(i, t) || n(i), i
+            return l().isEqual(i, t) || n(i), i
         }
     }

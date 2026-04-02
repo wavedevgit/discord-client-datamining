@@ -1,6 +1,6 @@
 /** chunk id: 287344 params = (module,exports,require) **/
 n.d(t, {
-    f: () => a
+    f: () => l
 });
 let i = (0, n(945810).mj)({
         name: "2026-01-cms-layouts",
@@ -17,6 +17,6 @@ let i = (0, n(945810).mj)({
             }
         }
     }),
-    a = e => i.useConfig({
+    l = e => i.useConfig({
         location: e
     }).enabled

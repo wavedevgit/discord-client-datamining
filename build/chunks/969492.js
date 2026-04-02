@@ -3,9 +3,9 @@ n.d(t, {
     H: () => I,
     L: () => E
 });
-var i, a = n(627968);
+var i, l = n(627968);
 n(64700);
-var l = n(192308),
+var a = n(192308),
     r = n(333639),
     s = n(236697),
     o = n(768569),
@@ -35,10 +35,10 @@ function I(e) {
         dismissMarketingPopover: x,
         fpEndsAt: v
     } = e;
-    if ((0, l.useHasAnyModalOpen)()) return t;
+    if ((0, a.useHasAnyModalOpen)()) return t;
     switch (n) {
         case "churn_discount":
-            if (null != E && null != I) return (0, a.jsx)(_.A, {
+            if (null != E && null != I) return (0, l.jsx)(_.A, {
                 targetElementRef: i,
                 discountOffer: E,
                 premiumSubscription: I,
@@ -47,36 +47,36 @@ function I(e) {
             });
             break;
         case "premium_group":
-            return (0, a.jsx)(o.p, {
+            return (0, l.jsx)(o.p, {
                 targetElementRef: i,
                 dismissPopover: N,
                 children: t
             });
         case "premium_group_tooltip":
-            return (0, a.jsx)(d.A, {
+            return (0, l.jsx)(d.A, {
                 targetElementRef: i,
                 children: t
             });
         case "orbs_upsell":
-            if (f) return (0, a.jsx)(h.A, {
+            if (f) return (0, l.jsx)(h.A, {
                 targetElementRef: i,
                 dismissPopover: N,
                 numOrbs: C,
                 children: t
             });
-            return (0, a.jsx)(A.A, {
+            return (0, l.jsx)(A.A, {
                 targetElementRef: i,
                 dismissPopover: N,
                 children: t
             });
         case "orbs_intro":
-            return (0, a.jsx)(c.A, {
+            return (0, l.jsx)(c.A, {
                 targetElementRef: i,
                 dismissPopover: N,
                 children: t
             });
         case "orbs_drop":
-            if (null != T) return (0, a.jsx)(u.A, {
+            if (null != T) return (0, l.jsx)(u.A, {
                 targetElementRef: i,
                 dismissPopover: S,
                 lastGrantedRewardAmount: T,
@@ -84,27 +84,27 @@ function I(e) {
             });
             break;
         case "reverse_trial":
-            if (null != v) return (0, a.jsx)(g.A, {
+            if (null != v) return (0, l.jsx)(g.A, {
                 endsAt: v,
                 children: t
             });
             break;
         case "tooltip":
-            return (0, a.jsx)(p.A, {
+            return (0, l.jsx)(p.A, {
                 children: t
             });
         case "marketing_moment_popover":
-            return (0, a.jsx)(m.A, {
+            return (0, l.jsx)(m.A, {
                 targetElementRef: i,
                 dismissPopover: x,
                 children: t
             });
         case "l_premium_sub_tooltip":
-            return (0, a.jsx)(r.e, {
+            return (0, l.jsx)(r.e, {
                 children: t
             });
         case "l_upsell":
-            return (0, a.jsx)(s.u, {
+            return (0, l.jsx)(s.u, {
                 targetElementRef: i,
                 dismissPopover: N,
                 children: t

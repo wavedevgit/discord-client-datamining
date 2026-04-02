@@ -3,13 +3,13 @@ n.d(t, {
     A: () => A
 });
 var i = n(735438),
-    a = n.n(i),
-    l = n(626584),
+    l = n.n(i),
+    a = n(626584),
     r = n(617617),
     s = n(961350),
     o = n(723176),
     d = n(989950);
-let c = new l.A("UserSettingsProto");
+let c = new a.A("UserSettingsProto");
 class u {
     actions = {
         CONNECTION_OPEN: () => this.throttledOnChange(),
@@ -22,9 +22,9 @@ class u {
             n = await o.A.userSettings(e).getMany(),
             i = performance.now();
         c.verbose(`loaded in ${i-t}ms (settings: ${n.length})`);
-        let a = {};
-        for (let e of n) a[e.id] = e.value;
-        return a
+        let l = {};
+        for (let e of n) l[e.id] = e.value;
+        return l
     }
     handleUserSettingsProtoChange = () => {
         let e = s.default.getId(),
@@ -43,7 +43,7 @@ class u {
             })
         }, "handleUserSettingsProtoChange")
     };
-    throttledOnChange = a().debounce(this.handleUserSettingsProtoChange, 0);
+    throttledOnChange = l().debounce(this.handleUserSettingsProtoChange, 0);
     resetInMemoryState() {}
 }
 let A = new u

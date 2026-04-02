@@ -3,9 +3,9 @@ n.d(t, {
     A: () => w
 });
 var i = n(627968),
-    a = n(64700),
-    l = n(503698),
-    r = n.n(l),
+    l = n(64700),
+    a = n(503698),
+    r = n.n(a),
     s = n(311907),
     o = n(397927),
     d = n(409626),
@@ -37,7 +37,7 @@ var i = n(627968),
 function M(e) {
     let {
         quest: t
-    } = e, n = (0, p.S5)(t.config.expiresAt), a = (0, p.S5)(t.config.rewardsConfig.rewardsExpireAt), l = (0, s.bG)([c.A], () => c.A.getState().theme), r = (0, o.Mwr)(l) ? R.NJ8.DARK : R.NJ8.LIGHT, d = t.userStatus?.completedAt != null;
+    } = e, n = (0, p.S5)(t.config.expiresAt), l = (0, p.S5)(t.config.rewardsConfig.rewardsExpireAt), a = (0, s.bG)([c.A], () => c.A.getState().theme), r = (0, o.Mwr)(a) ? R.NJ8.DARK : R.NJ8.LIGHT, d = t.userStatus?.completedAt != null;
     return (0, i.jsxs)("div", {
         className: D.R_,
         children: [(0, i.jsx)("img", {
@@ -56,7 +56,7 @@ function M(e) {
                 variant: "text-xs/normal",
                 color: "text-default",
                 children: d ? P.intl.formatToPlainString(P.t.APddvF, {
-                    expirationDate: a
+                    expirationDate: l
                 }) : P.intl.formatToPlainString(P.t["pX+fmn"], {
                     expirationDate: n
                 })
@@ -69,20 +69,20 @@ function j(e) {
     let {
         nodeRef: t,
         quest: n
-    } = e, l = (0, E.Ut)(), c = (0, s.bG)([A.A], () => A.A.isEnrolling(n.id), [n]), [g, T] = a.useState(!1), R = a.useCallback(() => T(!0), []), j = a.useCallback(() => T(!1), []), {
+    } = e, a = (0, E.Ut)(), c = (0, s.bG)([A.A], () => A.A.isEnrolling(n.id), [n]), [g, T] = l.useState(!1), R = l.useCallback(() => T(!0), []), j = l.useCallback(() => T(!1), []), {
         launchInGameActivity: w
     } = (0, p.zW)(n), U = _.t.useConfig({
         location: L.rE.ACTIVITY_PANEL
-    }), G = (0, v.Pd)(n), k = a.useCallback(e => {
+    }), G = (0, v.Pd)(n), k = l.useCallback(e => {
         e.stopPropagation()
-    }, []), V = a.useCallback(() => {
+    }, []), V = l.useCallback(() => {
         (0, u.Oy)(n.id, {
             questContent: h.uF.ACTIVITY_PANEL,
             questContentCTA: I.Cy.ACCEPT_QUEST,
             sourceQuestContent: h.uF.ACTIVITY_PANEL
         }), (0, C.vA)(n) && w()
-    }, [n, w]), B = a.useCallback(() => {
-        null != n && (l({
+    }, [n, w]), B = l.useCallback(() => {
+        null != n && (a({
             questId: n.id,
             questContent: h.uF.ACTIVITY_PANEL,
             questContentCTA: I.Cy.TRACK_PROGRESS,
@@ -91,8 +91,8 @@ function j(e) {
             fromContent: h.uF.ACTIVITY_PANEL,
             questId: n.id
         }))
-    }, [n, l]), H = a.useCallback(() => {
-        l({
+    }, [n, a]), H = l.useCallback(() => {
+        a({
             questId: n.id,
             questContent: h.uF.ACTIVITY_PANEL,
             questContentCTA: I.Cy.LEARN_MORE,
@@ -101,7 +101,7 @@ function j(e) {
             fromContent: h.uF.ACTIVITY_PANEL,
             questId: n.id
         })
-    }, [n.id, l]), F = (0, S.ix)({
+    }, [n.id, a]), F = (0, S.ix)({
         quest: n,
         questContent: h.uF.ACTIVITY_PANEL,
         sourceQuestContent: h.uF.ACTIVITY_PANEL
