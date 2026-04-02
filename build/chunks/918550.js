@@ -1,6 +1,6 @@
 /** chunk id: 918550 params = (module,exports,require) **/
 n.d(t, {
-    A: () => E
+    A: () => T
 }), n(321073), n(323874), n(14289), n(35956);
 var a = n(627968),
     i = n(64700),
@@ -18,7 +18,7 @@ var a = n(627968),
     g = n(816866),
     _ = n(87558),
     f = n(643084),
-    v = n(525221),
+    v = n(291554),
     b = n(778765),
     j = n(73269);
 let A = {
@@ -70,7 +70,7 @@ let A = {
             })
         })
     },
-    T = e => {
+    E = e => {
         let {
             type: t,
             frame: n,
@@ -120,12 +120,12 @@ let A = {
             })]
         })
     },
-    E = e => {
+    T = e => {
         let {
             effect: t
         } = e, {
             upsertConfig: n
-        } = (0, g.wu)(), s = (0, o.bG)([p.default], () => p.default.getCurrentUser()), [d, j] = i.useState(!0), y = i.useRef({}), [S, E] = i.useState(!1), [N, I] = i.useState(!1), [k, O] = i.useState(8), [R, w] = i.useState([]), [D, M] = i.useState(A), P = i.useRef([]), [L, U] = i.useState(t.name), B = L.toLowerCase().replace(/\s+/g, "_"), G = i.useMemo(() => ({
+        } = (0, g.wu)(), s = (0, o.bG)([p.default], () => p.default.getCurrentUser()), [d, j] = i.useState(!0), y = i.useRef({}), [S, T] = i.useState(!1), [N, I] = i.useState(!1), [O, R] = i.useState(8), [k, w] = i.useState([]), [D, M] = i.useState(A), P = i.useRef([]), [L, U] = i.useState(t.name), B = L.toLowerCase().replace(/\s+/g, "_"), G = i.useMemo(() => ({
             id: C,
             skuId: C,
             title: C,
@@ -133,9 +133,9 @@ let A = {
             accessibilityLabel: C,
             reducedMotionSrc: "",
             thumbnailPreviewSrc: "",
-            effects: R,
+            effects: k,
             animationType: r.l.ANIMATION_TYPE_UNSPECIFIED
-        }), [R]), F = S ? c.LU0.themes.DARKER : c.LU0.themes.LIGHT, V = e => {
+        }), [k]), F = S ? c.LU0.themes.DARKER : c.LU0.themes.LIGHT, V = e => {
             let t = e.currentTarget.files;
             return null == t ? null : t[0]
         }, W = (e, t) => {
@@ -185,11 +185,11 @@ let A = {
                 skuId: e.skuId,
                 name: L,
                 config: {
-                    effects: R,
+                    effects: k,
                     stillFrames: D
                 }
             })
-        }, [R, D, L]), i.useEffect(() => () => {
+        }, [k, D, L]), i.useEffect(() => () => {
             P.current.forEach(e => {
                 URL.revokeObjectURL(e)
             }), P.current = []
@@ -206,7 +206,7 @@ let A = {
                     onChange: e => {
                         let t = V(e);
                         null != t && (0, _.Mz)(t, async e => {
-                            let n = await (0, _.Ay)(e, t, R.length);
+                            let n = await (0, _.Ay)(e, t, k.length);
                             w(e => [...e, n])
                         })
                     },
@@ -255,7 +255,7 @@ let A = {
                         checked: S,
                         className: v.OO,
                         onChange: () => {
-                            E(!S)
+                            T(!S)
                         }
                     }), (0, a.jsx)(c.Text, {
                         variant: "text-md/normal",
@@ -278,16 +278,16 @@ let A = {
                         min: 4,
                         max: 24,
                         step: 2,
-                        value: k,
-                        onChange: e => O(+e.target.value)
+                        value: O,
+                        onChange: e => R(+e.target.value)
                     }), (0, a.jsxs)(c.Text, {
                         variant: "text-sm/normal",
-                        children: [k, "px"]
+                        children: [O, "px"]
                     })]
                 }), (0, a.jsxs)("div", {
                     className: l()(v.nz, v.VH),
                     style: {
-                        borderRadius: k
+                        borderRadius: O
                     },
                     children: [N ? (0, a.jsx)("div", {
                         className: v.jq,
@@ -318,7 +318,7 @@ let A = {
                     children: N && (0, a.jsxs)("div", {
                         className: l()(v.f5, v.VH),
                         style: {
-                            borderRadius: k
+                            borderRadius: O
                         },
                         children: [(0, a.jsx)(h.A, {
                             user: s,
@@ -381,7 +381,7 @@ let A = {
                         }), (0, a.jsxs)("div", {
                             className: v.nM,
                             children: [(0, a.jsx)(u.A, {
-                                fileContents: () => (0, _.rs)(R),
+                                fileContents: () => (0, _.rs)(k),
                                 contentType: "text/plain",
                                 fileName: `${B}_timing_config.txt`,
                                 children: (0, a.jsx)(c.Button, {
@@ -396,7 +396,7 @@ let A = {
                                     readonly: !1,
                                     config: {
                                         ...t.config,
-                                        effects: R,
+                                        effects: k,
                                         stillFrames: D
                                     }
                                 }),
@@ -418,7 +418,7 @@ let A = {
                             className: v.mv,
                             children: Object.entries(D).map(e => {
                                 let [t, n] = e;
-                                return (0, a.jsx)(T, {
+                                return (0, a.jsx)(E, {
                                     type: t,
                                     frame: n,
                                     theme: F,
@@ -431,7 +431,7 @@ let A = {
                                 }, t)
                             })
                         })]
-                    }), R.some(e => (e.randomizedSources ?? []).length > 0) && (0, a.jsxs)("div", {
+                    }), k.some(e => (e.randomizedSources ?? []).length > 0) && (0, a.jsxs)("div", {
                         className: l()(v.uW, v.l7),
                         children: [(0, a.jsx)(c.Text, {
                             variant: "text-md/bold",
@@ -459,7 +459,7 @@ let A = {
                                 w([]), M(A)
                             }
                         })
-                    }), R.map((e, t) => (0, a.jsxs)("div", {
+                    }), k.map((e, t) => (0, a.jsxs)("div", {
                         className: v.ec,
                         children: [(0, a.jsxs)("div", {
                             className: v.D1,

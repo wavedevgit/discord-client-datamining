@@ -29,8 +29,8 @@ function y(e) {
         targetElementRef: t,
         onClose: n
     } = e, [y, S] = i.useState(!1), {
-        trackUserProfileEditAction: T
-    } = (0, h.NJ)(), E = (0, s.bG)([v.default], () => v.default.getId()), N = function() {
+        trackUserProfileEditAction: E
+    } = (0, h.NJ)(), T = (0, s.bG)([v.default], () => v.default.getId()), N = function() {
         let e, t, n = (0, s.bG)([v.default], () => v.default.getId()),
             a = (0, g.A)(n),
             l = i.useMemo(() => a.filter(e => e instanceof x.R), [a]),
@@ -82,7 +82,7 @@ function y(e) {
             if (null == r) return null;
             let o = "linked" === r.type,
                 d = () => (0, _.openUserProfileModal)({
-                    userId: E,
+                    userId: T,
                     tabSection: A.RP.WIDGETS
                 }).then(() => {
                     s(j.i.TAKE_ACTION), n()
@@ -107,7 +107,7 @@ function y(e) {
                             let e;
                             return e = new x.R({
                                 applicationId: r.application.id
-                            }), void((0, p.Y5)(e), T({
+                            }), void((0, p.Y5)(e), E({
                                 action: "WIDGET_ADDED",
                                 ...e.getProfileEditAnalyticsOptions()
                             }), (0, f.XA)(A.jM.WIDGET_ADDED))

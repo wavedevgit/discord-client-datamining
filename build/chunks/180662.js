@@ -1,7 +1,7 @@
 /** chunk id: 180662 params = (module,exports,require) **/
 n.d(t, {
     A: () => F,
-    e: () => M
+    e: () => D
 });
 var i = n(284009),
     a = n.n(i),
@@ -23,8 +23,8 @@ var i = n(284009),
     C = n(961350),
     I = n(734057),
     E = n(31717),
-    b = n(834942),
-    v = n(320501),
+    v = n(834942),
+    b = n(320501),
     T = n(522602),
     S = n(491037),
     y = n(335759),
@@ -67,7 +67,7 @@ function w(e) {
     })
 }
 
-function M(e) {
+function D(e) {
     let {
         channelId: t,
         messageId: n,
@@ -79,7 +79,7 @@ function M(e) {
         title: R.intl.string(R.t["7LpysO"]),
         body: R.intl.string(R.t["5sHHoy"])
     });
-    let r = v.A.getMessage(t, n);
+    let r = b.A.getMessage(t, n);
     if (null == r || null == r.poll || 0 === r.poll.answers.length) return;
     let l = i ?? String(r.poll.answers[0].answer_id);
     S.W({
@@ -88,7 +88,7 @@ function M(e) {
     })
 }
 
-function D(e) {
+function M(e) {
     let {
         channelId: t,
         messageId: n,
@@ -107,7 +107,7 @@ function k(e) {
     let {
         channelId: t,
         messageId: n
-    } = e, i = v.A.getMessage(t, n);
+    } = e, i = b.A.getMessage(t, n);
     return null == i ? [] : i.reactions.flatMap(e => !0 === e.me_vote ? e.emoji.name : [])
 }
 async function O(e) {
@@ -157,7 +157,7 @@ async function U(e) {
         title: R.intl.string(R.t.Qic1FD),
         body: R.intl.string(R.t["5sHHoy"])
     });
-    if (!b.A.canChatInGuild(i.guild_id)) return void u.A.show({
+    if (!v.A.canChatInGuild(i.guild_id)) return void u.A.show({
         title: R.intl.string(R.t.p245wu),
         body: R.intl.string(R.t["U/uodt"])
     });
@@ -239,7 +239,7 @@ async function G(e) {
             });
             break;
         case "cancel":
-            D({
+            M({
                 channelId: t,
                 messageId: n,
                 isEditing: !1
@@ -253,7 +253,7 @@ async function G(e) {
                 } = e;
                 (0, N.A2)(t, n, e => {
                     let i = null == e || !e.showResults,
-                        a = v.A.getMessage(t, n),
+                        a = b.A.getMessage(t, n),
                         r = null != a ? a.reactions.reduce((e, t) => e + (t.count_details?.vote ?? 0), 0) : 0;
                     return p.Ay.trackWithMetadata(L.HAw.POLL_SHOW_RESULTS_CLICKED, {
                         channel_id: t,
@@ -274,7 +274,7 @@ async function G(e) {
             });
             break;
         case "showVoterDetails":
-            M({
+            D({
                 channelId: t,
                 messageId: n
             });
@@ -296,7 +296,7 @@ let F = {
             let {
                 channelId: t,
                 messageId: n
-            } = e, i = v.A.getMessage(t, n);
+            } = e, i = b.A.getMessage(t, n);
             if (null != i) return {
                 message: i,
                 channelId: t,
@@ -312,7 +312,7 @@ let F = {
         }(n), {
             tapShouldOpenVotersModal: s
         } = (0, j.j8)(l) ?? {};
-        if (!0 === s) return void M({
+        if (!0 === s) return void D({
             channelId: i,
             messageId: r,
             answerId: t
@@ -365,7 +365,7 @@ let F = {
         })
     },
     handlePollSubmitVote: U,
-    handleUpdateVoteEditingState: D,
+    handleUpdateVoteEditingState: M,
     handlePollActionTapped: G,
     createPoll: async function(e) {
         let {

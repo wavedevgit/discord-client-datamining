@@ -29,8 +29,8 @@ function A(e, t) {
             rawMediaPostEmbedData: C,
             guild: I,
             parentChannel: E,
-            user: b,
-            selectedGuildId: v,
+            user: v,
+            selectedGuildId: b,
             canAccess: T
         } = (0, a.cf)([h.A, c.A, o.A, _.default, u.A], () => {
             let e = h.A.getMediaPostEmbed(n?.threadId)?.media,
@@ -53,15 +53,15 @@ function A(e, t) {
                 mediaPostEmbedData: C,
                 guild: I,
                 parentChannel: E,
-                user: b,
-                selectedGuildId: v,
+                user: v,
+                selectedGuildId: b,
                 canAccess: T
             });
             return null == e ? null : {
                 ...e,
-                user: b
+                user: v
             }
-        }, [C, I, E, b, v, T]);
+        }, [C, I, E, v, b, T]);
     return i.useEffect(() => {
         n?.threadId != null && (h.A.getEmbedFetchState(n.threadId) !== h.e.NOT_FETCHED || A && !1 === x || !A && f || (0, m.O0)(n?.threadId))
     }, [n, A, x, f]), S

@@ -25,17 +25,17 @@ var a = n(627968),
     C = n(814793),
     y = n(988436),
     S = n(918338),
-    T = n(270045),
-    E = n(57718),
+    E = n(270045),
+    T = n(57718),
     N = n(398025),
     I = n(545986),
-    k = n(516226),
-    O = n(720875),
-    R = n(654487),
+    O = n(516226),
+    R = n(720875),
+    k = n(654487),
     w = n(419367),
     D = n(652215),
     M = n(985018),
-    P = n(389846);
+    P = n(180715);
 
 function L(e) {
     let {
@@ -134,7 +134,7 @@ function B(e) {
         day: "numeric"
     }), $ = t.userStatus?.enrolledAt != null, q = t.userStatus?.completedAt != null, {
         onAssetLoadComplete: Q
-    } = i.useContext(k.M), Y = W ? "text-muted" : "always-white", J = i.useCallback(() => {
+    } = i.useContext(O.M), Y = W ? "text-muted" : "always-white", J = i.useCallback(() => {
         F && (0, I.d5)({
             quest: t,
             questContent: _.uF.QUEST_HOME_DESKTOP,
@@ -142,7 +142,7 @@ function B(e) {
             sourceQuestContentCTA: b.Cy.QUEST_HOME_TILE_HEADER_WATCH_VIDEO
         })
     }, [F, t, w]), X = (0, o.bG)([g.A], () => g.A.getQuestHomeHeroConfig()), Z = i.useMemo(() => null != X && (0, C.I0)(X, t.id), [X, t.id]), ee = f.s5.useConfig({
-        location: R.rE.QUESTS_CARD
+        location: k.rE.QUESTS_CARD
     }), et = ee.enabled && ee.variant === f.tL.INFO_ICON, en = (0, v.do)({
         quest: t,
         content: _.uF.QUEST_HOME_DESKTOP,
@@ -204,7 +204,7 @@ function B(e) {
                                 className: P.A9
                             })
                         })
-                    }), (0, a.jsx)(T.C, {
+                    }), (0, a.jsx)(E.C, {
                         onOpen: y,
                         onClose: m,
                         onSelect: N,
@@ -225,16 +225,16 @@ function B(e) {
                             })
                         })
                     })]
-                }), (0, a.jsx)(O.A, {
+                }), (0, a.jsx)(R.A, {
                     showPlaceholder: !r,
                     width: 100,
                     height: 30,
                     className: P.Iu,
-                    children: (0, a.jsx)(E.Ay, {
+                    children: (0, a.jsx)(T.Ay, {
                         className: P.Iu,
                         logotypeClassName: P.ND,
                         quest: t,
-                        separatorSpacing: E.C8.MEDIUM,
+                        separatorSpacing: T.C8.MEDIUM,
                         withGameTile: !1,
                         onLoadComplete: Q
                     })

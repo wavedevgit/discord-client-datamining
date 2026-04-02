@@ -16,15 +16,15 @@ var i = n(627968),
     h = n(212534),
     p = n(652215),
     g = n(985018),
-    A = n(746717);
+    A = n(540452);
 
 function x(e) {
     let {
         code: t,
         message: n
-    } = e, [x, f, C] = (0, s.yK)([h.A], () => [h.A.getApplication(t), h.A.isInvalidApplication(t), h.A.getApplicationFetchState(t)], [t]), I = (0, s.bG)([u.A], () => u.A.getGuildId() ?? void 0), [E, b] = a.useState(!1), v = a.useCallback(e => {
-        e && b(!0)
-    }, []), T = (0, r.K)(v), S = a.useCallback(() => {
+    } = e, [x, f, C] = (0, s.yK)([h.A], () => [h.A.getApplication(t), h.A.isInvalidApplication(t), h.A.getApplicationFetchState(t)], [t]), I = (0, s.bG)([u.A], () => u.A.getGuildId() ?? void 0), [E, v] = a.useState(!1), b = a.useCallback(e => {
+        e && v(!0)
+    }, []), T = (0, r.K)(b), S = a.useCallback(() => {
         _.default.track(p.HAw.APP_DIRECTORY_PROFILE_EMBED_VIEWED, {
             application_id: t,
             device_platform: l.Fr ? "mobile_web" : "desktop_web",

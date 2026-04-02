@@ -1,6 +1,6 @@
 /** chunk id: 795982 params = (module,exports,require) **/
 n.d(t, {
-    A: () => M
+    A: () => D
 });
 var i = n(627968),
     a = n(64700),
@@ -22,13 +22,13 @@ var i = n(627968),
     C = n(71393),
     I = n(576705),
     E = n(994500),
-    b = n(287809),
-    v = n(862804),
+    v = n(287809),
+    b = n(862804),
     T = n(627950),
     S = n(387408),
     y = n(427209),
     N = n(985018),
-    j = n(460135);
+    j = n(929694);
 
 function L() {
     return (0, i.jsxs)("div", {
@@ -51,7 +51,7 @@ function R(e) {
         message: t,
         snapshot: n,
         index: c
-    } = e, _ = a.useMemo(() => new v.j(t, n, c), [t, n, c]), m = (0, l.bG)([x.A, b.default, E.A, I.A, C.A, u.A], () => _.getForwardInfo(x.A, b.default, E.A, I.A, C.A, u.A).footerInfo, [_], s.A), h = (0, l.bG)([x.A], () => x.A.getChannel(t.messageReference?.channel_id)), p = a.useCallback(() => {
+    } = e, _ = a.useMemo(() => new b.j(t, n, c), [t, n, c]), m = (0, l.bG)([x.A, v.default, E.A, I.A, C.A, u.A], () => _.getForwardInfo(x.A, v.default, E.A, I.A, C.A, u.A).footerInfo, [_], s.A), h = (0, l.bG)([x.A], () => x.A.getChannel(t.messageReference?.channel_id)), p = a.useCallback(() => {
         (0, T.A)(t)
     }, [t]);
     return null == m ? null : (0, i.jsxs)(d.DUT, {
@@ -107,7 +107,7 @@ function w(e) {
         allowLinks: !0,
         allowDevLinks: c,
         previewLinkTarget: !0
-    }), E = (0, l.bG)([x.A], () => x.A.getChannel(t.channel_id)), b = A.hH.useSetting();
+    }), E = (0, l.bG)([x.A], () => x.A.getChannel(t.channel_id)), v = A.hH.useSetting();
     return null == E ? null : (0, i.jsxs)("div", {
         className: j.kL,
         children: [(0, i.jsx)("div", {
@@ -117,12 +117,12 @@ function w(e) {
             children: [(0, i.jsx)(L, {}), (0, i.jsx)(m.Ay, {
                 message: s,
                 content: g,
-                compact: b
+                compact: v
             }), (0, p.A)({
                 channelMessageProps: {
                     message: s,
                     channel: E,
-                    compact: b
+                    compact: v
                 },
                 hasSpoilerEmbeds: C,
                 hasBailedAst: I,
@@ -138,7 +138,7 @@ function w(e) {
     }, r)
 }
 
-function M(e) {
+function D(e) {
     let {
         message: t
     } = e;

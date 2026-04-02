@@ -1,6 +1,6 @@
 /** chunk id: 285433 params = (module,exports,require) **/
 n.d(t, {
-    A: () => b
+    A: () => v
 });
 var i = n(627968),
     a = n(64700),
@@ -22,24 +22,24 @@ var i = n(627968),
 n(433745);
 var C = n(818348),
     I = n(985018),
-    E = n(798324);
-let b = e => {
+    E = n(851383);
+let v = e => {
     let {
         isQuestExpired: t,
         quest: n,
         location: r,
-        size: b,
-        expansionSpring: v,
+        size: v,
+        expansionSpring: b,
         isAnimating: T,
         isExpanded: S,
         isInteracting: y,
         contentPosition: N,
         toggleExpanded: j,
         sourceQuestContent: L
-    } = e, [R, P] = a.useState(null), [w, M] = a.useState(null), D = (0, _.A)(e => {
+    } = e, [R, P] = a.useState(null), [w, D] = a.useState(null), M = (0, _.A)(e => {
         let t = e.target;
-        P(t.offsetWidth), M(t.scrollWidth)
-    }), k = (0, u.w)(D), O = r === m.uF.QUESTS_EMBED, U = n.userStatus?.completedAt != null, B = (0, h.S5)(n.config.expiresAt), G = (0, h.S5)(n.config.rewardsConfig.rewardsExpireAt), F = a.useMemo(() => null != n.config.cosponsorMetadata, [n]), H = (0, i.jsx)(A.Ay, {
+        P(t.offsetWidth), D(t.scrollWidth)
+    }), k = (0, u.w)(M), O = r === m.uF.QUESTS_EMBED, U = n.userStatus?.completedAt != null, B = (0, h.S5)(n.config.expiresAt), G = (0, h.S5)(n.config.rewardsConfig.rewardsExpireAt), F = a.useMemo(() => null != n.config.cosponsorMetadata, [n]), H = (0, i.jsx)(A.Ay, {
         className: E.Iu,
         logotypeClassName: F ? E.qN : void 0,
         gameTileSize: A.LU.MEDIUM,
@@ -51,7 +51,7 @@ let b = e => {
     return (0, i.jsxs)("div", {
         className: l()(E.nw, {
             [E.Gg]: O,
-            [E.e5]: "xs" === b
+            [E.e5]: "xs" === v
         }),
         "aria-label": I.intl.string(I.t.dcl9MQ),
         children: [(0, i.jsx)(p.A, {
@@ -75,7 +75,7 @@ let b = e => {
                         [E.Gg]: O
                     }),
                     style: {
-                        opacity: (0, f.a)(v.to({
+                        opacity: (0, f.a)(b.to({
                             range: [0, 1],
                             output: [0, 1]
                         })),
@@ -96,7 +96,7 @@ let b = e => {
                                 shouldShow: null != R && null != w && R < w,
                                 children: (0, i.jsx)(c.Heading, {
                                     ref: k,
-                                    variant: "lg" === b ? "heading-xxl/bold" : "sm" === b ? "heading-xl/bold" : "heading-lg/bold",
+                                    variant: "lg" === v ? "heading-xxl/bold" : "sm" === v ? "heading-xl/bold" : "heading-lg/bold",
                                     className: E.R_,
                                     color: "always-white",
                                     children: I.intl.format(I.t.EAYZAr, {
@@ -131,7 +131,7 @@ let b = e => {
                     sourceQuestContent: L,
                     children: e => (0, i.jsx)(s.animated.div, {
                         style: {
-                            opacity: (0, f.a)(v),
+                            opacity: (0, f.a)(b),
                             visibility: T || S ? "inherit" : "hidden"
                         },
                         "aria-hidden": !T && !S,

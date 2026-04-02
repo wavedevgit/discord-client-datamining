@@ -34,7 +34,7 @@ var i = n(627968),
     L = n(652215),
     M = n(670455),
     D = n(985018),
-    U = n(448006);
+    U = n(694053);
 class G extends l.Component {
     componentDidMount() {
         this.autoAnalytics()

@@ -1,22 +1,22 @@
 /** chunk id: 608226 params = (module,exports,require) **/
-i.d(n, {
-    O: () => l
+e.d(t, {
+    O: () => a
 });
-var e = i(627968);
-i(64700);
-var r = i(397927);
+var i = e(627968);
+e(64700);
+var l = e(397927);
 
-function l(t, n) {
-    return (0, r.mMO)(async () => {
+function a(n, t) {
+    return (0, l.mMO)(async () => {
         let {
-            default: r
-        } = await i.e("33372").then(i.bind(i, 58935));
-        return i => (0, e.jsx)(r, {
-            ...i,
+            default: l
+        } = await e.e("33372").then(e.bind(e, 58935));
+        return e => (0, i.jsx)(l, {
+            ...e,
             onConfirm: () => {
-                i.onClose(), n()
+                e.onClose(), t()
             },
-            channel: t
+            channel: n
         })
     })
 }

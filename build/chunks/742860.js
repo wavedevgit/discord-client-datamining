@@ -25,13 +25,13 @@ var a = n(627968),
     C = n(579473),
     y = n(590202),
     S = n(651892),
-    T = n(901406),
-    E = n(792620),
+    E = n(901406),
+    T = n(792620),
     N = n(814793),
     I = n(895253),
-    k = n(241124),
-    O = n(442734),
-    R = n(212614),
+    O = n(241124),
+    R = n(442734),
+    k = n(212614),
     w = n(79545),
     D = n(646764),
     M = n(398025),
@@ -50,7 +50,7 @@ var a = n(627968),
     q = n(654487),
     Q = n(272111),
     Y = n(985018),
-    J = n(833931);
+    J = n(198472);
 let X = i.forwardRef(function(e, t) {
     let {
         isHovered: n,
@@ -96,7 +96,7 @@ function Z(e) {
         onMouseLeave: () => {
             s && r && o(!1)
         },
-        children: [null != x && (0, a.jsx)(k.Sn, {
+        children: [null != x && (0, a.jsx)(O.Sn, {
             id: "QuestBarContentExpanded_videoThumbnail",
             children: e => (0, a.jsx)("img", {
                 ref: e,
@@ -104,7 +104,7 @@ function Z(e) {
                 src: x.url,
                 className: J.Ue
             })
-        }), null != h ? (0, a.jsx)(k.Sn, {
+        }), null != h ? (0, a.jsx)(O.Sn, {
             id: "QuestBarContentExpanded_video",
             children: e => (0, a.jsx)(X, {
                 ref: e,
@@ -154,7 +154,7 @@ function et(e) {
         taskDetails: h
     } = i.useContext(W.T), {
         expansionSpring: p
-    } = i.useContext(U.PW), f = i.useRef(null), T = (0, d.bG)([g.A], () => g.A.isEnrolling(o.id), [o]), E = i.useMemo(() => (0, C.tW)(o, C.fY.QUEST_BAR_HERO), [o]), N = (0, j.NA)({
+    } = i.useContext(U.PW), f = i.useRef(null), E = (0, d.bG)([g.A], () => g.A.isEnrolling(o.id), [o]), T = i.useMemo(() => (0, C.tW)(o, C.fY.QUEST_BAR_HERO), [o]), N = (0, j.NA)({
         quest: o
     }), D = i.useMemo(() => (0, C.tW)(o, C.fY.HERO_IMAGE), [o]), L = i.useMemo(() => null == D ? {} : {
         backgroundImage: `url(${D.url})`
@@ -203,7 +203,7 @@ function et(e) {
                             className: J.h_,
                             variant: "text-xs/normal",
                             children: G
-                        }), Q && (0, a.jsx)(O.e, {
+                        }), Q && (0, a.jsx)(R.e, {
                             questId: o.id,
                             canUseQuestOrbMultiplier: Z
                         })]
@@ -219,7 +219,7 @@ function et(e) {
                             variant: "secondary",
                             text: $,
                             onClick: z
-                        }), B.enabled && F === w.UA.UNENROLLED && B.enabledQuestStates.has(w.UA.UNENROLLED) ? (0, a.jsx)(R.A, {
+                        }), B.enabled && F === w.UA.UNENROLLED && B.enabledQuestStates.has(w.UA.UNENROLLED) ? (0, a.jsx)(k.A, {
                             quest: o,
                             surface: w.V3.QUEST_BAR_FOOTER,
                             size: "sm",
@@ -229,7 +229,7 @@ function et(e) {
                         }) : (0, a.jsx)(u.Button, {
                             variant: V,
                             onClick: t ? s : void 0,
-                            loading: T,
+                            loading: E,
                             text: N,
                             size: "sm",
                             icon: (0, P.Oz)(o),
@@ -257,21 +257,21 @@ function et(e) {
                 backdropFilter: (0, M.Q)(p.to([0, 1], [5, 0]).to(e => `blur(${e}px)`)),
                 filter: (0, M.Q)(p.to([0, 1], [.8, 1]).to(e => `brightness(${e})`))
             },
-            children: [E.isAnimated ? (0, a.jsx)(k.Sn, {
+            children: [T.isAnimated ? (0, a.jsx)(O.Sn, {
                 id: "QuestBarContentExpanded_heroAnimated",
                 children: e => (0, a.jsx)(X, {
                     ref: e,
                     autoPlay: !0,
-                    asset: E,
+                    asset: T,
                     className: J.LO
                 })
-            }) : (0, a.jsx)(k.Sn, {
+            }) : (0, a.jsx)(O.Sn, {
                 id: "QuestBarContentExpanded_heroStatic",
                 children: e => (0, a.jsx)("img", {
                     ref: e,
                     alt: "",
                     className: J.LO,
-                    src: E.url
+                    src: T.url
                 })
             }), (0, a.jsx)("div", {
                 className: J.tV
@@ -291,7 +291,7 @@ function en(e) {
         expansionSpring: c
     } = i.useContext(U.PW), u = s.userStatus?.completedAt != null, m = d.percentComplete > 0, h = (0, A.Vn)(s), [x, p, g] = (0, A.Qo)(s, d), f = i.useRef(null), v = i.useRef(null), b = (0, A.RR)({
         quest: s
-    }), j = (0, E.vv)(s), C = (0, A.I3)(s), S = i.useCallback(() => {
+    }), j = (0, T.vv)(s), C = (0, A.I3)(s), S = i.useCallback(() => {
         (0, P.d5)({
             quest: s,
             questContent: _.uF.QUEST_BAR_V2,
@@ -328,7 +328,7 @@ function en(e) {
                 activeScreen: x,
                 popoutTargetElementRef: v
             }), (0, a.jsx)(V.T, {
-                children: !u && !(0, T.W1)(s) && (0, o.YW)(x).with(_.X0.SELECT, () => (0, a.jsx)($.A, {
+                children: !u && !(0, E.W1)(s) && (0, o.YW)(x).with(_.X0.SELECT, () => (0, a.jsx)($.A, {
                     onConsole: () => g(q.fO.CONSOLE),
                     onDesktop: () => g(q.fO.DESKTOP)
                 })).with(_.X0.DESKTOP, () => (0, a.jsx)(H.A, {
@@ -359,7 +359,7 @@ function en(e) {
     })
 }
 async function ea(e, t, n, a) {
-    (0, E.vv)(e) ? await (0, P.e0)(e, {
+    (0, T.vv)(e) ? await (0, P.e0)(e, {
         questContent: t,
         questContentCTA: n,
         sourceQuestContent: a,

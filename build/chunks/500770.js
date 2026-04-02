@@ -12,7 +12,7 @@ var a = n(503698),
     d = n(724609),
     c = n(411342),
     u = n(985018),
-    _ = n(632531);
+    _ = n(576666);
 
 function m(e) {
     let {
@@ -84,8 +84,8 @@ function p(e) {
         onTapCard: C,
         actionMenu: I,
         showOpaqueBackground: E = !1,
-        hideRoleTag: b = !1,
-        lineClamp: v = 1,
+        hideRoleTag: v = !1,
+        lineClamp: b = 1,
         cardWidth: T = 332,
         cardHeight: S,
         thumbnailHeight: y = 187,
@@ -117,13 +117,13 @@ function p(e) {
                     children: (0, i.jsx)(o.A, {
                         variant: N,
                         color: "text-muted",
-                        lineClamp: v,
+                        lineClamp: b,
                         text: a
                     })
                 }), A && (0, i.jsx)(h, {
                     onShowFullDescription: x,
                     variant: N
-                }), b || null == p || "" === p.name ? null : (0, i.jsxs)(i.Fragment, {
+                }), v || null == p || "" === p.name ? null : (0, i.jsxs)(i.Fragment, {
                     children: [(0, i.jsx)(l.hKd, {
                         size: 16
                     }), (0, i.jsx)(c.A, {

@@ -4,13 +4,13 @@ r.d(t, {
     fh: () => m,
     qP: () => u
 });
-var a, n, s = r(627968),
-    i = r(64700),
+var a, n, i = r(627968),
+    s = r(64700),
     l = r(503698),
     o = r.n(l);
 r(284009);
 var d = r(736653),
-    c = r(751323),
+    c = r(557714),
     u = ((a = {}).UNSET = "unset", a.BLUE = "blue", a.ORANGE = "orange", a),
     m = ((n = {}).LIGHT = "light", n.MEDIUM = "medium", n);
 let _ = e => {
@@ -23,7 +23,7 @@ let _ = e => {
         override: u,
         glowing: m = !0,
         labelledBy: _
-    } = e, p = null != u && "unset" === l, f = (0, d.Ay)(), h = u?.[f] ?? u?.default, b = i.useMemo(() => (t - r) / (a - r) * 100, [t, r, a]), g = t === r, x = {
+    } = e, p = null != u && "unset" === l, f = (0, d.Ay)(), h = u?.[f] ?? u?.default, b = s.useMemo(() => (t - r) / (a - r) * 100, [t, r, a]), g = t === r, x = {
         ...p ? {
             "--custom-background": h?.background,
             "--custom-gradient-start": h?.gradientStart,
@@ -34,10 +34,10 @@ let _ = e => {
             "--custom-gradient-glow": "transparent"
         }
     };
-    return (0, s.jsx)("div", {
+    return (0, i.jsx)("div", {
         className: o()(c.progressContainer, c[n], c[l]),
         style: x,
-        children: (0, s.jsxs)("div", {
+        children: (0, i.jsxs)("div", {
             className: o()(c.progress, {
                 [c.empty]: g
             }),
@@ -49,11 +49,11 @@ let _ = e => {
             "aria-valuemin": r,
             "aria-valuemax": a,
             "aria-labelledby": _,
-            children: [(0, s.jsx)("div", {
+            children: [(0, i.jsx)("div", {
                 className: o()(c.glow, {
                     [c.empty]: g
                 })
-            }), (0, s.jsx)("div", {
+            }), (0, i.jsx)("div", {
                 className: o()(c.bar, c[l], {
                     [c.empty]: g
                 })

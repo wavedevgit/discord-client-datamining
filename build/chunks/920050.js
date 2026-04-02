@@ -2,8 +2,8 @@
 r.r(t), r.d(t, {
     BADGE_CARD_ID: () => a,
     CLIENT_THEMES_CARD_ID: () => n,
-    CUSTOM_APP_ICONS_CARD_ID: () => s,
-    CUSTOM_SOUNDS_CARD_ID: () => i,
+    CUSTOM_APP_ICONS_CARD_ID: () => i,
+    CUSTOM_SOUNDS_CARD_ID: () => s,
     DISPLAY_NAME_STYLES_CARD_ID: () => l,
     EARLY_ACCESS_CARD_ID: () => o,
     ENTRANCE_SOUNDS_CARD_ID: () => d,
@@ -25,8 +25,8 @@ r.r(t), r.d(t, {
 });
 let a = "badge",
     n = "clientThemes",
-    s = "customAppIcons",
-    i = "customSounds",
+    i = "customAppIcons",
+    s = "customSounds",
     l = "displayNameStyles",
     o = "earlyAccess",
     d = "entranceSounds",

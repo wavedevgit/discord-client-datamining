@@ -1,4 +1,4 @@
 /** chunk id: 991107 params = (module,exports,require) **/
-t.exports = {
+e.exports = {
     M: "flagIcon__45b6e"
 }

@@ -20,15 +20,15 @@ var i = n(627968),
     x = n(168428),
     f = n(652215),
     C = n(985018),
-    I = n(366228);
+    I = n(147673);
 
 function E(e) {
     let t, {
             invite: n,
             message: r,
             currentUserId: E,
-            onTransitionToInviteChannel: b,
-            onAcceptInstantInvite: v
+            onTransitionToInviteChannel: v,
+            onAcceptInstantInvite: b
         } = e,
         T = E === r.author.id,
         S = n.state === f.elq.ACCEPTING,
@@ -38,14 +38,14 @@ function E(e) {
         analyticsLocations: N
     } = (0, u.Ay)(c.A.INVITE_EMBED), j = null != y, L = a.useCallback(() => {
         let e = "noop";
-        j ? (b(), e = "transition") : (v(), e = "accept"), (0, d.he)({
+        j ? (v(), e = "transition") : (b(), e = "accept"), (0, d.he)({
             invite: n,
             action: e,
             inviter_id: r.author.id,
             invite_message_id: r.id,
             invite_instance_id: (0, _._U)(n.code, r.id)
         }, N)
-    }, [n, r, N, j, b, v]);
+    }, [n, r, N, j, v, b]);
     if (null == y) {
         if (null == n.channel) return (0, i.jsx)(x.A, {});
         y = (0, h.OY)(n.channel), t = null != n.channel && null != n.channel.recipients ? n.channel.recipients : []
@@ -62,10 +62,10 @@ function E(e) {
     let P = C.intl.string(C.t.XpeFYr),
         w = "active";
     j && (P = C.intl.string(C.t.cEnaWx), w = "secondary");
-    let M = C.intl.string(C.t["3p3/BK"]);
-    return T && (M = C.intl.string(C.t.qmtuXE)), (0, i.jsxs)(m.A, {
+    let D = C.intl.string(C.t["3p3/BK"]);
+    return T && (D = C.intl.string(C.t.qmtuXE)), (0, i.jsxs)(m.A, {
         children: [(0, i.jsx)(m.A.Header, {
-            text: M
+            text: D
         }), (0, i.jsxs)(m.A.Body, {
             children: [(0, i.jsxs)("div", {
                 className: I.iH,

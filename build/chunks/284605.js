@@ -28,21 +28,21 @@ function I(e) {
         guildId: n,
         location: I,
         shouldShowFullDescriptionButton: E = !0,
-        hideRoleTag: b = !1,
-        lineClamp: v = 1,
+        hideRoleTag: v = !1,
+        lineClamp: b = 1,
         cardWidth: T,
         cardHeight: S,
         thumbnailHeight: y,
         descriptionTextVariant: N = "text-sm/normal",
         showOpaqueBackground: j = !1
-    } = e, L = (0, a.bG)([c.A], () => c.A.getGuild(n), [n]), R = (0, a.bG)([d.A], () => d.A.getRole(n, t?.role_id ?? C.dJq)), P = (0, l.R)(t, 600), w = (0, g.z)(t), M = (0, _.BB)(L), {
-        shouldHideGuildPurchaseEntryPoints: D
+    } = e, L = (0, a.bG)([c.A], () => c.A.getGuild(n), [n]), R = (0, a.bG)([d.A], () => d.A.getRole(n, t?.role_id ?? C.dJq)), P = (0, l.R)(t, 600), w = (0, g.z)(t), D = (0, _.BB)(L), {
+        shouldHideGuildPurchaseEntryPoints: M
     } = (0, o.MH)(n), k = (0, g.X)(t), O = (0, x.A)({
         guildId: n,
         guildProductListingId: t.id,
         sourceAnalyticsLocations: I
     });
-    if (null == L || D) return null;
+    if (null == L || M) return null;
     let U = () => (0, f.M)({
             guildId: n,
             guildProductListingId: t.id,
@@ -51,13 +51,13 @@ function I(e) {
         B = (0, i.jsx)(A.i, {
             product: t,
             guildId: n,
-            showEditProduct: M,
+            showEditProduct: D,
             showUnpublishProduct: !1,
             showCopyLink: !0,
             showTestDownload: !1,
             showDeleteProduct: !1,
             showReportProduct: !0,
-            onEditProduct: M ? () => {
+            onEditProduct: D ? () => {
                 h.q(L.id, t.id)
             } : () => {},
             onUnpublishProduct: () => {},
@@ -87,8 +87,8 @@ function I(e) {
         onTapCard: U,
         actionMenu: B,
         showOpaqueBackground: j,
-        hideRoleTag: b,
-        lineClamp: v,
+        hideRoleTag: v,
+        lineClamp: b,
         cardWidth: T,
         cardHeight: S,
         thumbnailHeight: y,

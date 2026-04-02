@@ -22,8 +22,8 @@ var i = n(627968),
     C = n(651892),
     I = n(710969),
     E = n(792620),
-    b = n(814793),
-    v = n(201805),
+    v = n(814793),
+    b = n(201805),
     T = n(545986),
     S = n(654487),
     y = n(652215),
@@ -37,10 +37,10 @@ function L(e) {
         L = (0, A.Ut)(),
         R = (0, f.go)(),
         P = (0, C.wr)(e.quest),
-        w = !0 === e.showShareLink && (0, b.E0)(e.quest.config),
+        w = !0 === e.showShareLink && (0, v.E0)(e.quest.config),
         {
-            handleComplete: M,
-            handleProgress: D,
+            handleComplete: D,
+            handleProgress: M,
             handleResetDismissibilityClick: k,
             handleResetStatusClick: O,
             handleOverrideDeliveryClick: U
@@ -51,7 +51,7 @@ function L(e) {
             ctaContent: x.Cy.CONTEXT_MENU_OPEN_GAME_LINK,
             sourceQuestContent: e.sourceQuestContent
         }),
-        G = (0, v.Lk)({
+        G = (0, b.Lk)({
             isShareable: w,
             questId: e.quest.id,
             trackingCtx: a.useMemo(() => ({
@@ -167,12 +167,12 @@ function L(e) {
                 id: "progress",
                 label: j.intl.string(j.t.cKSLr4),
                 action: () => {
-                    D(.9 * Math.random() + .03)
+                    M(.9 * Math.random() + .03)
                 }
             }), (0, i.jsx)(l.Drp, {
                 id: "complete",
                 label: j.intl.string(j.t.jQEfRT),
-                action: M
+                action: D
             }), (0, E.g5)(e.quest) && (0, i.jsxs)(l.Drp, {
                 id: "console",
                 label: "Console Heartbeat",

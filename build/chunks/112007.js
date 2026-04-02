@@ -22,9 +22,9 @@ var i = n(627968),
     C = n(860689),
     I = n(505417),
     E = n(168428),
-    b = n(652215),
-    v = n(985018),
-    T = n(366228);
+    v = n(652215),
+    b = n(985018),
+    T = n(147673);
 
 function S(e) {
     let t, S, y, {
@@ -35,20 +35,20 @@ function S(e) {
             message: P,
             currentUserId: w
         } = e,
-        M = w === P.author.id,
+        D = w === P.author.id,
         {
-            channel: D,
+            channel: M,
             approximate_member_count: k,
             approximate_presence_count: O
         } = R,
-        U = R.state === b.elq.ACCEPTING,
-        B = null != D ? (0, x.OY)(D) : null,
+        U = R.state === v.elq.ACCEPTING,
+        B = null != M ? (0, x.OY)(M) : null,
         G = null != L,
         F = null != B,
         H = null != B && B.isGuildStageVoice(),
         V = (0, l.Lt)(R.flags ?? 0, r.Q.IS_GUEST_INVITE),
         q = B?.isGuildVoiceOrThread() ?? !1,
-        W = L?.features.has(b.GuildFeatures.HUB) ?? !1,
+        W = L?.features.has(v.GuildFeatures.HUB) ?? !1,
         z = L?.id,
         {
             analyticsLocations: Y
@@ -72,11 +72,11 @@ function S(e) {
         }, [R, P, Y, G, N, j]);
     if (null == L) {
         if (null == R.guild) return (0, i.jsx)(E.A, {});
-        (L = C.DY(R.guild)).premiumTier = R.guild.premium_tier ?? b.TVA.NONE
+        (L = C.DY(R.guild)).premiumTier = R.guild.premium_tier ?? v.TVA.NONE
     }
     let et = (0, I.l)({
         isVoiceChannel: q,
-        isOwnInvite: M,
+        isOwnInvite: D,
         isGuest: V,
         isHubGuild: W,
         isStage: H,
@@ -104,7 +104,7 @@ function S(e) {
         })]
     }), V && (y = (0, i.jsx)(o.m, {
         asContainer: !0,
-        text: v.intl.string(v.t["/FeTK6"]),
+        text: b.intl.string(b.t["/FeTK6"]),
         children: (0, i.jsx)(d.mir, {
             size: "md",
             color: "currentColor",
@@ -114,7 +114,7 @@ function S(e) {
         channel: B
     }), t = (0, i.jsxs)("span", {
         className: T.FA,
-        children: [v.intl.format(v.t["2wimj5"], {
+        children: [b.intl.format(b.t["2wimj5"], {
             guildName: L.name
         }), (0, i.jsx)("span", {
             className: T.E3,
@@ -153,16 +153,16 @@ function S(e) {
                     variant: "active",
                     fullWidth: q,
                     disabled: !Z,
-                    text: q ? H ? v.intl.string(v.t["7vb2cc"]) : v.intl.string(v.t.gpqgah) : G ? v.intl.string(v.t.cEnaWx) : v.intl.string(v.t.XpeFYr)
+                    text: q ? H ? b.intl.string(b.t["7vb2cc"]) : b.intl.string(b.t.gpqgah) : G ? b.intl.string(b.t.cEnaWx) : b.intl.string(b.t.XpeFYr)
                 })
             })]
-        }), L.features.has(b.GuildFeatures.HUB) && (0, i.jsxs)(i.Fragment, {
+        }), L.features.has(v.GuildFeatures.HUB) && (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)("div", {
                 className: T.me
             }), (0, i.jsx)(d.Text, {
                 variant: "text-sm/normal",
                 color: "text-default",
-                children: v.intl.format(v.t["/o1IfA"], {
+                children: b.intl.format(b.t["/o1IfA"], {
                     onClick: () => (0, d.mMO)(async () => {
                         let {
                             default: e

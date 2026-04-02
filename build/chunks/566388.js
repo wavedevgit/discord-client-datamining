@@ -55,7 +55,7 @@ var i = n(627968),
     $ = n(652215),
     Z = n(806931),
     ee = n(985018),
-    et = n(323167);
+    et = n(368512);
 let en = "HasBeenInStageChannel",
     ei = e => {
         (0, E.X)(_.A.VOICE_CONTROL_TRAY, E.O.STAY_ON_TOP, e), C.setAlwaysOnTop($.MLl.CHANNEL_CALL_POPOUT, e)

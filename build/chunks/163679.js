@@ -17,9 +17,9 @@ var a = n(627968),
     p = n(686267),
     g = n(231723),
     _ = n(818348),
-    f = n(646284),
+    f = n(774630),
     v = n(985018),
-    b = n(474716);
+    b = n(914161);
 let j = n(843020);
 
 function A(e) {
@@ -45,7 +45,7 @@ let C = function(e) {
     let {
         transitionState: t,
         onClose: n
-    } = e, [u, x] = i.useState(null), [p, C] = i.useState(!0), [y, S] = i.useState(null), [T, E] = i.useState(!1), N = i.useCallback(async () => {
+    } = e, [u, x] = i.useState(null), [p, C] = i.useState(!0), [y, S] = i.useState(null), [E, T] = i.useState(!1), N = i.useCallback(async () => {
         C(!0), S(null);
         try {
             let e = await (0, c.$R)();
@@ -72,7 +72,7 @@ let C = function(e) {
         }
     }, [n]), I = i.useCallback(async e => {
         if (null !== u) {
-            E(!0);
+            T(!0);
             try {
                 let t = {
                     task_id: u.task_id,
@@ -83,21 +83,21 @@ let C = function(e) {
             } catch (e) {
                 S(v.intl.string(f.default["+QRSxc"]))
             } finally {
-                E(!1)
+                T(!1)
             }
         }
     }, [u, N]);
     (0, l.Ay)(() => {
         N()
     });
-    let k = i.useMemo(() => u?.task_type === m.wP.AGE_VERIFICATION, [u]);
+    let O = i.useMemo(() => u?.task_type === m.wP.AGE_VERIFICATION, [u]);
     return (0, a.jsxs)("div", {
         className: b.Tp,
         children: [(0, a.jsx)("img", {
             className: b.xX,
             src: j,
             alt: ""
-        }), k ? (0, a.jsx)(o.default, {
+        }), O ? (0, a.jsx)(o.default, {
             transitionState: t ?? g.ip.ENTERED,
             entryPoint: r.q1.SAFETY_FLOWS,
             onClose: _.tE,
@@ -156,7 +156,7 @@ let C = function(e) {
                     }), null === y && null != u && (0, a.jsx)(A, {
                         task: u,
                         handleSubmit: I,
-                        disabled: T
+                        disabled: E
                     })]
                 })
             })

@@ -24,7 +24,7 @@ var n = s(627968),
     C = s(652215),
     A = s(188275),
     S = s(985018),
-    v = s(666925);
+    v = s(954522);
 let I = {
         pageSection: "marvel-rivals-promotional-banner"
     },

@@ -19,7 +19,7 @@ var i = n(627968),
     A = n(270045),
     x = n(57718),
     f = n(985018),
-    C = n(389846);
+    C = n(180715);
 
 function I(e) {
     let {
@@ -46,7 +46,7 @@ function E(e) {
         isInteracting: n,
         location: r,
         sourceQuestContent: l
-    } = e, E = (0, h.Ic)(t), b = t.userStatus?.claimedAt != null, v = (0, m.S5)(t.config.expiresAt, {
+    } = e, E = (0, h.Ic)(t), v = t.userStatus?.claimedAt != null, b = (0, m.S5)(t.config.expiresAt, {
         month: "numeric",
         day: "numeric"
     }), T = (0, o.bG)([_.A], () => _.A.getQuestHomeHeroConfig()), S = a.useMemo(() => null != T && (0, p.I0)(T, t.id), [T, t.id]), y = (0, c.Ay)(), N = (0, s.Mwr)(y) ? "text-muted" : "always-white";
@@ -131,11 +131,11 @@ function E(e) {
                             color: "always-white",
                             children: t.config.cosponsorMetadata?.name ?? t.config.messages.gamePublisher
                         })]
-                    }), E || b ? null : (0, i.jsx)(s.EYj, {
+                    }), E || v ? null : (0, i.jsx)(s.EYj, {
                         variant: "text-sm/medium",
                         color: N,
                         children: f.intl.format(f.t["7D8r4F"], {
-                            expiryDate: v
+                            expiryDate: b
                         })
                     })]
                 })]

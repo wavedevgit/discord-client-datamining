@@ -23,13 +23,13 @@ var i = n(627968),
     C = n(954571),
     I = n(957565),
     E = n(943775),
-    b = n(997997),
-    v = n(658575),
+    v = n(997997),
+    b = n(658575),
     T = n(376374),
     S = n(652215),
     y = n(435220),
     N = n(985018),
-    j = n(518435);
+    j = n(252330);
 let L = (0, s.UT)([x.A, f.A, g.A], {
         getQueryId: S.fic.SKU,
         get: e => {
@@ -60,7 +60,7 @@ function P(e) {
     let {
         appId: t,
         message: r
-    } = e, l = (0, v.G)(t), {
+    } = e, l = (0, b.G)(t), {
         data: c
     } = (0, u.YY)(t), [m, h, g, x] = (0, s.yK)([_.A, A.A, p.A], () => {
         let e = _.A.getApplication(t),
@@ -86,7 +86,7 @@ function P(e) {
         (0, o.mMO)(async () => {
             let {
                 default: e
-            } = await Promise.all([n.e("33563"), n.e("7194")]).then(n.bind(n, 719847));
+            } = await Promise.all([n.e("33563"), n.e("88596")]).then(n.bind(n, 719847));
             return n => (0, i.jsx)(e, {
                 transitionState: n.transitionState,
                 onClose: n.onClose,
@@ -95,7 +95,7 @@ function P(e) {
             })
         })
     };
-    return (0, i.jsx)(M, {
+    return (0, i.jsx)(D, {
         appName: c.name,
         title: N.intl.formatToPlainString(N.t.XDRjs5, {
             appName: c.name
@@ -103,7 +103,7 @@ function P(e) {
         description: T,
         link: `${location.protocol}//${location.host}${S.BVt.GLOBAL_DISCOVERY_APPS_PROFILE_SECTION(c.id,y.GlobalDiscoveryAppsSections.STORE)}`,
         onLinkCopy: () => {
-            (0, b.K)(t, b.C.STORE_EMBED)
+            (0, v.K)(t, v.C.STORE_EMBED)
         },
         iconSrc: x,
         onIconClick: () => {
@@ -151,7 +151,7 @@ function w(e) {
         }
     }(r, t), {
         data: A
-    } = (0, u.YY)(c?.applicationId), x = (0, s.bG)([p.A], () => p.A.getBasicChannel(l.channel_id)?.guild_id, [l]), f = a.useMemo(() => null != A ? (0, E.A)(A, 45) : void 0, [A]), I = (0, v.G)(A?.id ?? ""), {
+    } = (0, u.YY)(c?.applicationId), x = (0, s.bG)([p.A], () => p.A.getBasicChannel(l.channel_id)?.guild_id, [l]), f = a.useMemo(() => null != A ? (0, E.A)(A, 45) : void 0, [A]), I = (0, b.G)(A?.id ?? ""), {
         openModal: P,
         subscriptionPurchaseButtonState: w
     } = (0, h.A)({
@@ -159,13 +159,13 @@ function w(e) {
         initialSubscribeForGuild: x
     });
     if (!I || null == A || null == c) return null;
-    let D = c.type === S.Puh.SUBSCRIPTION,
-        k = !!D && (0, m.bg)(c.flags),
+    let M = c.type === S.Puh.SUBSCRIPTION,
+        k = !!M && (0, m.bg)(c.flags),
         O = () => {
             (0, o.mMO)(async () => {
                 let {
                     default: e
-                } = await Promise.all([n.e("33563"), n.e("7194")]).then(n.bind(n, 719847));
+                } = await Promise.all([n.e("33563"), n.e("88596")]).then(n.bind(n, 719847));
                 return t => (0, i.jsx)(e, {
                     transitionState: t.transitionState,
                     onClose: t.onClose,
@@ -176,8 +176,8 @@ function w(e) {
         },
         U = () => {
             (0, o.mMO)(async () => {
-                let e = D ? (await Promise.resolve().then(n.bind(n, 168393))).SubscriptionDetailsModal : null,
-                    t = D ? null : (await Promise.resolve().then(n.bind(n, 963179))).ItemDetailsModal;
+                let e = M ? (await Promise.resolve().then(n.bind(n, 168393))).SubscriptionDetailsModal : null,
+                    t = M ? null : (await Promise.resolve().then(n.bind(n, 963179))).ItemDetailsModal;
                 return n => {
                     let a = () => {
                         n.onClose(), O()
@@ -200,7 +200,7 @@ function w(e) {
                 }
             })
         },
-        B = D ? k ? (0, i.jsxs)(i.Fragment, {
+        B = M ? k ? (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)(o.nys, {
                 size: "custom",
                 width: 12,
@@ -221,13 +221,13 @@ function w(e) {
             area: "purchase_button"
         })
     };
-    return (0, i.jsx)(M, {
+    return (0, i.jsx)(D, {
         appName: A.name,
         title: c.name,
         description: B,
         link: `${location.protocol}//${location.host}${S.BVt.GLOBAL_DISCOVERY_APPS_PROFILE_SECTION(A.id,y.GlobalDiscoveryAppsSections.STORE)}`,
         onLinkCopy: () => {
-            (0, b.K)(A.id, b.C.SKU_EMBED, r)
+            (0, v.K)(A.id, v.C.SKU_EMBED, r)
         },
         iconSrc: f,
         onIconClick: () => {
@@ -249,7 +249,7 @@ function w(e) {
                     })
                 },
                 text: N.intl.string(N.t.DXYfjO)
-            }), D ? null != _ ? (0, i.jsx)(T.rc, {
+            }), M ? null != _ ? (0, i.jsx)(T.rc, {
                 onClick: P,
                 appId: A.id,
                 subscriptionType: k ? "user" : "guild",
@@ -272,7 +272,7 @@ function w(e) {
     })
 }
 
-function M(e) {
+function D(e) {
     let {
         appName: t,
         title: n,

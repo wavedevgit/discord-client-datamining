@@ -17,9 +17,9 @@ var s = n(311907),
     _ = n(811611),
     x = n(788868),
     A = n(652215),
-    h = n(755157),
+    h = n(103659),
     p = n(985018),
-    T = n(239500),
+    T = n(223093),
     f = n(386271);
 
 function S() {
@@ -43,7 +43,7 @@ function S() {
                 color: t ? "white" : "black"
             }), (0, i.jsx)(a.Text, {
                 variant: "text-sm/medium",
-                color: "text-subtle",
+                color: t ? "text-subtle" : "text-default",
                 children: (0, _.ux)(n.endDate.toISOString())
             })]
         }), (0, i.jsx)(a.cGx, {

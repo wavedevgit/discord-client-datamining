@@ -12,9 +12,9 @@ var i = n(627968),
     c = n(114166),
     u = n(891734),
     _ = n(505527),
-    m = n(483202),
-    h = n(486025),
-    p = n(108277);
+    m = n(260821),
+    h = n(767474),
+    p = n(449014);
 let g = a.memo(function(e) {
         let t, n, {
                 useChatFontScaling: a,
@@ -27,8 +27,8 @@ let g = a.memo(function(e) {
                 burst_count: C,
                 burst_colors: I,
                 readOnly: E,
-                isLurking: b,
-                isPendingMember: v,
+                isLurking: v,
+                isPendingMember: b,
                 type: T,
                 emojiSize: S
             } = e,
@@ -47,7 +47,7 @@ let g = a.memo(function(e) {
             } = j, r = (0, o.xp)(i ?? "", a) ?? "";
             N && (w.borderColor = i), w.background = r, t = e, n = e
         }
-        let M = {
+        let D = {
             minWidth: P,
             color: t,
             borderColor: n
@@ -55,7 +55,7 @@ let g = a.memo(function(e) {
         return (0, i.jsxs)("div", {
             className: l()(L.reaction, L.reactionInner, g, {
                 [L.reactionMe]: N,
-                [L.reactionReadOnly]: E && !b && !v
+                [L.reactionReadOnly]: E && !v && !b
             }),
             style: w,
             children: [(0, i.jsx)(d.A, {
@@ -68,7 +68,7 @@ let g = a.memo(function(e) {
                 animated: y && s.animated
             }), (0, i.jsx)("div", {
                 className: L.reactionCount,
-                style: M,
+                style: D,
                 children: R
             })]
         })

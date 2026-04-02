@@ -17,8 +17,8 @@ var i = n(503698),
     x = n(967198),
     p = n(558393),
     g = n(737045),
-    _ = n(150921),
-    f = n(310086);
+    _ = n(501586),
+    f = n(793877);
 
 function v(e) {
     let {
@@ -62,7 +62,7 @@ function b() {
                 can: i
             }, t)
         }),
-        T = Object.values(y ?? {}).map(e => {
+        E = Object.values(y ?? {}).map(e => {
             let {
                 title: t,
                 flag: n
@@ -87,7 +87,7 @@ function b() {
                 children: [(0, a.jsx)(o.Heading, {
                     variant: "heading-md/semibold",
                     children: null != i ? `Permissions in ${i.name}` : "No guild selected"
-                }), T]
+                }), E]
             })]
         })
     })

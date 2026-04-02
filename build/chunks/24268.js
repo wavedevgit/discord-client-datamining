@@ -16,8 +16,8 @@ var a = n(627968),
     x = n(760716),
     p = n(652215),
     g = n(115093),
-    _ = n(310086),
-    f = n(521807);
+    _ = n(793877),
+    f = n(620352);
 let v = window.GLOBAL_ENV.RELEASE_CHANNEL === g.B.STAGING ? "1438571444891025408" : "1346069614634864772";
 
 function b() {
@@ -34,26 +34,26 @@ function b() {
         }, [n, t]),
         y = (0, x.i)(e => e.showSelfActivity),
         S = (0, x.i)(e => e.setShowSelfActivity),
-        T = (0, x.i)(e => e.recommendationApplicationIds),
-        E = (0, x.i)(e => e.setRecommendationApplicationIds),
+        E = (0, x.i)(e => e.recommendationApplicationIds),
+        T = (0, x.i)(e => e.setRecommendationApplicationIds),
         N = i.useCallback(e => {
-            e ? E(b) : E(null)
-        }, [b, E]),
+            e ? T(b) : T(null)
+        }, [b, T]),
         I = (0, r.bG)([h.A], () => null != h.A.testModeApplicationId),
-        k = i.useCallback(e => {
+        O = i.useCallback(e => {
             e ? (0, o.qfG)(e => (0, a.jsx)(m.A, {
                 ...e
             })) : d.cL()
         }, []),
-        O = (0, u.A)({
+        R = (0, u.A)({
             location: "DevToolsSlayerStorefrontPanel",
             applicationId: s,
             source: c.Ob.Embed,
             trackEntryPointImpression: !0
         }),
-        R = i.useCallback(e => {
-            O?.(e)
-        }, [O]);
+        k = i.useCallback(e => {
+            R?.(e)
+        }, [R]);
     return (0, a.jsx)("div", {
         className: l()(_.nd, f.n),
         children: (0, a.jsxs)("div", {
@@ -76,10 +76,10 @@ function b() {
             }), (0, a.jsx)(o.dOG, {
                 label: "Enable application test mode",
                 checked: I,
-                onChange: k
+                onChange: O
             }), (0, a.jsx)(o.Button, {
                 text: "Open Game Profile Modal",
-                onClick: R
+                onClick: k
             }), (0, a.jsx)(o.Heading, {
                 variant: "heading-lg/normal",
                 children: "Wishlists"
@@ -87,10 +87,10 @@ function b() {
                 label: "Recommendation application IDs",
                 value: b,
                 onChange: j,
-                disabled: null == T
+                disabled: null == E
             }), (0, a.jsx)(o.dOG, {
                 label: "Enable recommendation application IDs override",
-                checked: null != T,
+                checked: null != E,
                 onChange: N
             })]
         })

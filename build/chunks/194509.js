@@ -6,15 +6,15 @@ r.d(t, {
 var a = r(627968);
 r(64700);
 var n = r(503698),
-    s = r.n(n),
-    i = r(582754),
+    i = r.n(n),
+    s = r(582754),
     l = r(421380),
     o = r(397927),
     d = r(736653),
     c = r(783420),
     u = r(788868),
     m = r(985018),
-    _ = r(620508);
+    _ = r(844131);
 let p = e => e === u.pe.TIER_0 ? m.intl.string(m.t.rk4Uu8) : m.intl.string(m.t.Ve9Ge6),
     f = e => {
         let {
@@ -41,16 +41,16 @@ let p = e => e === u.pe.TIER_0 ? m.intl.string(m.t.rk4Uu8) : m.intl.string(m.t.V
                 return (0, a.jsxs)(l.$n, {
                     "data-migration-pending": !0,
                     innerClassName: _.Nq,
-                    color: n ?? ((0, i.Mw)(x) ? l.XD.WHITE : l.XD.BRAND),
+                    color: n ?? ((0, s.Mw)(x) ? l.XD.WHITE : l.XD.BRAND),
                     look: u ?? l.pR.OUTLINED,
-                    className: s()(t, _.xP),
+                    className: i()(t, _.xP),
                     onClick: d,
                     children: [!m && (0, a.jsx)(o.okO, {
                         size: "md",
                         color: "currentColor",
                         className: _.ez
                     }), (0, a.jsx)("span", {
-                        className: s()(_._d, r?.textClassName),
+                        className: i()(_._d, r?.textClassName),
                         children: r?.textOverride ?? C
                     })]
                 })

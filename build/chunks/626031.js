@@ -13,7 +13,7 @@ var a = l(627968),
     c = l(572009),
     p = l(14115),
     m = l(115093),
-    h = l(132182);
+    h = l(379393);
 let x = new d.A("BalanceCounter"),
     b = (0, c._$)(void 0) === m.B.PRODUCTION,
     f = e => null == e ? 0 : `${e.toFixed(0)}`.length,

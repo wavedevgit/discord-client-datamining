@@ -1,6 +1,6 @@
 /** chunk id: 767379 params = (module,exports,require) **/
 n.d(t, {
-    default: () => E
+    default: () => T
 });
 var a = n(627968),
     i = n(64700),
@@ -21,12 +21,12 @@ var a = n(627968),
     v = n(807734),
     b = n(652215),
     j = n(239093),
-    A = n(536242),
+    A = n(949268),
     C = n(985018),
-    y = n(774992),
+    y = n(325901),
     S = n(700129);
 
-function T(e) {
+function E(e) {
     let {
         modalSessionId: t,
         entryPoint: n
@@ -47,18 +47,18 @@ function T(e) {
         }
     }) : null
 }
-let E = function(e) {
+let T = function(e) {
     let {
         transitionState: t,
         entryPoint: n,
         onClose: u,
         onComplete: j,
-        dismissable: E,
+        dismissable: T,
         classificationId: N
-    } = e, [I, k] = i.useState(r.M.AGE_VERIFICATION_SURVEY_MODAL_GET_STARTED), O = i.useRef(I), [R, w] = (0, d.kn)([I], void 0, !0), D = i.useMemo(() => (0, s.A)(), []), M = i.useRef(!1), P = (0, m.W$)();
+    } = e, [I, O] = i.useState(r.M.AGE_VERIFICATION_SURVEY_MODAL_GET_STARTED), R = i.useRef(I), [k, w] = (0, d.kn)([I], void 0, !0), D = i.useMemo(() => (0, s.A)(), []), M = i.useRef(!1), P = (0, m.W$)();
     i.useEffect(() => {
-        O.current = R
-    }, [R]);
+        R.current = k
+    }, [k]);
     let {
         loading: L,
         ageVerificationMethods: U
@@ -67,13 +67,13 @@ let E = function(e) {
             j?.(), u()
         },
         onMethodClick: () => {
-            k(r.M.AGE_VERIFICATION_SURVEY_MODAL_CLOSE)
+            O(r.M.AGE_VERIFICATION_SURVEY_MODAL_CLOSE)
         },
         classificationId: N
     });
     return i.useLayoutEffect(() => () => {
         if (M.current) return;
-        let e = O.current;
+        let e = R.current;
         null != e && (M.current = !0, h.A.maybeOpenAgeVerificationUserFeedback({
             location: "age_verification_get_started_modal",
             visibleContent: e
@@ -84,7 +84,7 @@ let E = function(e) {
         transitionState: t,
         onClose: u,
         gradientColor: "blue",
-        dismissable: E,
+        dismissable: T,
         graphic: {
             type: "image",
             src: S.A
@@ -93,7 +93,7 @@ let E = function(e) {
         subtitle: (0, f.mK)(n, () => {
             p.A.openUrl(x.A.getArticleURL(b.MVz.TIGGER_PAWTECT_LEARN_MORE)), (0, g.St)(D, g.WU.EXPRESSIVE_PRIMARY, g._7.LEARN_MORE)
         }, P),
-        actionBarInput: (0, a.jsx)(T, {
+        actionBarInput: (0, a.jsx)(E, {
             modalSessionId: D,
             entryPoint: n
         }),

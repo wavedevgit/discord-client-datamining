@@ -23,7 +23,7 @@ var i, s = n(627968),
     x = n(994125),
     I = n(652215),
     N = n(985018),
-    v = n(608106),
+    v = n(795859),
     j = ((i = {})[i.LOGIN_REQUIRED = 0] = "LOGIN_REQUIRED", i[i.SWITCHED = 1] = "SWITCHED", i[i.REMOVED = 2] = "REMOVED", i);
 
 function S(e) {

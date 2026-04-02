@@ -24,9 +24,9 @@ var a = n(627968),
     A = n(134861),
     C = n(157257),
     y = n(985018),
-    S = n(271469),
-    T = n(310086),
-    E = n(521807);
+    S = n(221303),
+    E = n(793877),
+    T = n(620352);
 let N = [{
     id: "unset",
     label: "Unset",
@@ -52,9 +52,9 @@ function I() {
             analyticsLocations: o
         } = (0, m.Ay)(u.A.DEV_TOOLS),
         I = b.TA.useSetting(),
-        [k, O] = i.useState(""),
-        R = (0, r.bG)([f.Ay, C.A], () => (0, v.A)(f.Ay, C.A)),
-        w = (0, _.h)(k),
+        [O, R] = i.useState(""),
+        k = (0, r.bG)([f.Ay, C.A], () => (0, v.A)(f.Ay, C.A)),
+        w = (0, _.h)(O),
         D = (0, h.g)(w),
         M = (0, r.yK)([g.A], () => w?.linkedGames?.map(e => g.A.getApplication(e.id)).filter(e => null != e) ?? []),
         P = (0, x.RD)(w, {
@@ -80,9 +80,9 @@ function I() {
         });
     return (0, a.jsxs)("div", {
         ref: s,
-        className: l()(T.nd, E.n),
+        className: l()(E.nd, T.n),
         children: [(0, a.jsxs)("div", {
-            className: E.k,
+            className: T.k,
             children: [(0, a.jsx)(d.Heading, {
                 variant: "heading-lg/normal",
                 children: "Settings"
@@ -95,18 +95,18 @@ function I() {
                 fullWidth: !0
             })]
         }), (0, a.jsxs)("div", {
-            className: E.k,
+            className: T.k,
             children: [(0, a.jsx)(d.Heading, {
                 variant: "heading-lg/normal",
                 children: "Application"
             }), (0, a.jsx)(d.ksK, {
                 label: "Application ID",
-                value: k,
-                onChange: O
-            }), null != R && null != R.id ? (0, a.jsx)(d.Button, {
-                onClick: () => O(R.id),
+                value: O,
+                onChange: R
+            }), null != k && null != k.id ? (0, a.jsx)(d.Button, {
+                onClick: () => R(k.id),
                 variant: "primary",
-                text: `Use detected game: ${R.name} (${R.id})`
+                text: `Use detected game: ${k.name} (${k.id})`
             }) : null, (0, a.jsxs)(d.Text, {
                 variant: "text-md/normal",
                 children: ["Application Name: ", null != w ? w.name : "N/A"]
@@ -115,7 +115,7 @@ function I() {
                 children: ["Linked Games:", " ", M.length > 0 ? M.map(e => (0, h.t)(w)?.id === e.id ? `${e.name}*` : e.name).join(", ") : "N/A"]
             })]
         }), (0, a.jsxs)("div", {
-            className: E.k,
+            className: T.k,
             children: [(0, a.jsx)(d.Heading, {
                 variant: "heading-lg/normal",
                 children: "Authorization"

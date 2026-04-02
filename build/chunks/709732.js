@@ -31,7 +31,7 @@ var i = n(627968),
     y = n(615396),
     O = n(788868),
     R = n(985018),
-    P = n(275385);
+    P = n(508816);
 class L extends s.PureComponent {
     _copyModeTimeout = new c.Ep;
     state = {

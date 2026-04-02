@@ -25,11 +25,11 @@ var a = n(627968),
     C = n(303054),
     y = n(231643),
     S = n(985018),
-    T = n(380649),
-    E = n(310086);
+    E = n(683426),
+    T = n(793877);
 let N = [{
     key: "event",
-    cellClassName: T.Hz,
+    cellClassName: E.Hz,
     render(e) {
         let {
             event: t
@@ -38,7 +38,7 @@ let N = [{
     }
 }, {
     key: "location",
-    cellClassName: T.QN,
+    cellClassName: E.QN,
     render(e) {
         let {
             properties: t
@@ -52,14 +52,14 @@ function I(e) {
         children: t
     } = e;
     return (0, a.jsx)(u.IpV, {
-        className: T._D,
+        className: E._D,
         children: (0, a.jsx)("dl", {
             children: t
         })
     })
 }
 
-function k(e) {
+function O(e) {
     let {
         name: t,
         children: n,
@@ -71,15 +71,15 @@ function k(e) {
             return () => clearTimeout(e)
         }
     }, [l]), (0, a.jsxs)("div", {
-        className: T.fY,
+        className: E.fY,
         children: [(0, a.jsx)("dt", {
-            className: T.m2,
+            className: E.m2,
             children: t
         }), (0, a.jsx)("dd", {
             children: n
         }), (0, a.jsx)(u.DUT, {
             tag: "span",
-            className: T.nH,
+            className: E.nH,
             onClick: () => (0, _.C)(JSON.stringify(s), () => r(!0)),
             children: l ? (0, a.jsx)(u.Uzd, {
                 color: "currentColor",
@@ -91,8 +91,8 @@ function k(e) {
         })]
     })
 }
-let O = new Set(["client_performance_cpu", "client_performance_memory"]),
-    R = [{
+let R = new Set(["client_performance_cpu", "client_performance_memory"]),
+    k = [{
         id: "details",
         name: "Details",
         group: y.fu.NONE,
@@ -110,15 +110,15 @@ let O = new Set(["client_performance_cpu", "client_performance_memory"]),
             return (0, a.jsxs)("div", {
                 "data-mtctest-ignore": "true",
                 children: [(0, a.jsxs)(h.Ay, {
-                    className: l()(E.jr, T.nZ),
+                    className: l()(T.jr, E.nZ),
                     children: [(0, a.jsx)(h.Ay.Icon, {
                         icon: u.Uy2,
                         tooltip: t
                     }), (0, a.jsxs)(h.Ay.Title, {
-                        wrapperClassName: T.qd,
+                        wrapperClassName: E.qd,
                         children: [t, (0, a.jsx)(u.DUT, {
                             tag: "span",
-                            className: T.KE,
+                            className: E.KE,
                             onClick: () => (0, _.C)(t),
                             children: (0, a.jsx)(u.TdU, {
                                 color: "currentColor",
@@ -143,7 +143,7 @@ let O = new Set(["client_performance_cpu", "client_performance_memory"]),
                         onClick: r
                     })]
                 }), (0, a.jsxs)(j.OA, {
-                    className: T.ZK,
+                    className: E.ZK,
                     children: [(0, a.jsx)(j.mA, {
                         name: "Timestamp (local)",
                         copyValue: i.toISOString(),
@@ -167,7 +167,7 @@ let O = new Set(["client_performance_cpu", "client_performance_memory"]),
                     })]
                 }), (0, a.jsx)(I, {
                     children: Object.entries(n).map(e => {
-                        let [n, i] = e, s = O.has(n) ? ((e, t, n) => {
+                        let [n, i] = e, s = R.has(n) ? ((e, t, n) => {
                             let a = e.filter(e => e.event === t);
                             if (0 === a.length) return {
                                 average: null,
@@ -185,7 +185,7 @@ let O = new Set(["client_performance_cpu", "client_performance_memory"]),
                             }
                         })(d, t, n) : null;
                         return (0, a.jsxs)("div", {
-                            children: [(0, a.jsx)(k, {
+                            children: [(0, a.jsx)(O, {
                                 name: `${n}:`,
                                 copyValue: {
                                     [n]: i || null
@@ -193,10 +193,10 @@ let O = new Set(["client_performance_cpu", "client_performance_memory"]),
                                 children: null != i ? (0, a.jsx)("code", {
                                     children: JSON.stringify(i)
                                 }) : (0, a.jsx)("code", {
-                                    className: T.HO,
+                                    className: E.HO,
                                     children: "null"
                                 })
-                            }, n), null !== s && null !== s.average && (0, a.jsx)(k, {
+                            }, n), null !== s && null !== s.average && (0, a.jsx)(O, {
                                 name: `${n}_avg:`,
                                 copyValue: {
                                     [n]: i || null
@@ -268,17 +268,17 @@ function M() {
         j = g.find(e => e.key === _),
         {
             TabBar: I,
-            renderSelectedTab: k
+            renderSelectedTab: O
         } = (0, y.Ay)({
-            tabs: R
+            tabs: k
         }, []);
     return (0, a.jsxs)("div", {
         ref: e,
-        className: l()(E.nd, T.nd),
+        className: l()(T.nd, E.nd),
         children: [(0, a.jsxs)("div", {
-            className: T.rh,
+            className: E.rh,
             children: [(0, a.jsx)(c.$n, {
-                className: T.Q$,
+                className: E.Q$,
                 look: c.$n.Looks.BLANK,
                 size: c.$n.Sizes.ICON,
                 onClick: b.eY,
@@ -291,13 +291,13 @@ function M() {
                     })
                 })
             }), (0, a.jsx)("div", {
-                className: T.Bi
+                className: E.Bi
             }), (0, a.jsx)("div", {
-                className: T.uW,
+                className: E.uW,
                 children: Object.entries(w).map(e => {
                     let [t, n] = e;
                     return (0, a.jsx)(u.DUT, {
-                        className: l()(T.pb, r.includes(t) && T.bx),
+                        className: l()(E.pb, r.includes(t) && E.bx),
                         onClick: () => {
                             o(e => e.includes(t) ? e.filter(e => e !== t) : [...e, t])
                         },
@@ -306,7 +306,7 @@ function M() {
                 })
             })]
         }), (0, a.jsx)("div", {
-            className: T.rh,
+            className: E.rh,
             children: (0, a.jsx)(u.IWV, {
                 size: "sm",
                 query: t,
@@ -320,10 +320,10 @@ function M() {
             selectedRowKey: _,
             onClickRow: e => f(e.key)
         }), null != j && (0, a.jsxs)(A.A, {
-            className: T.rf,
+            className: E.rf,
             minHeight: 100,
             initialHeight: null != e.current ? e.current.clientHeight / 2 : 300,
-            children: [(0, a.jsx)(I, {}), k({
+            children: [(0, a.jsx)(I, {}), O({
                 loggedEvent: j,
                 onClose: () => f(void 0),
                 filteredEvents: g

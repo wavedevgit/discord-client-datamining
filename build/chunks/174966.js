@@ -23,7 +23,7 @@ function c(t, e, c) {
             null != A && (0, r.mMO)(async () => {
                 let {
                     default: t
-                } = await Promise.all([n.e("77223"), n.e("92622")]).then(n.bind(n, 199226));
+                } = await Promise.all([n.e("77223"), n.e("12919")]).then(n.bind(n, 199226));
                 return e => (0, l.jsx)(t, {
                     ...e,
                     event: A

@@ -22,8 +22,8 @@ var i = n(627968),
     C = n(688810),
     I = n(139286),
     E = n(713517),
-    b = n(450149),
-    v = n(290331),
+    v = n(450149),
+    b = n(290331),
     T = n(21599),
     S = n(281489),
     y = n(378570),
@@ -33,8 +33,8 @@ var i = n(627968),
     R = n(696451),
     P = n(71393),
     w = n(576705),
-    M = n(607567),
-    D = n(954571),
+    D = n(607567),
+    M = n(954571),
     k = n(860689),
     O = n(422844),
     U = n(72951),
@@ -44,7 +44,7 @@ var i = n(627968),
     H = n(341678),
     V = n(652215),
     q = n(985018),
-    W = n(682524);
+    W = n(826235);
 
 function z(e) {
     let {
@@ -54,7 +54,7 @@ function z(e) {
         guild: s,
         onTransitionToInviteChannel: d,
         onAcceptInstantInvite: E
-    } = e, b = (0, O.xR)("VoiceInviteEmbed"), S = a.useRef(null), G = s ?? null;
+    } = e, v = (0, O.xR)("VoiceInviteEmbed"), S = a.useRef(null), G = s ?? null;
     null == G && null != t.guild && (G = k.DY(t.guild));
     let z = null != t.channel ? (0, j.OY)(t.channel) : null;
     o()(null != G, "Voice Invite Embed must be used in context of a guild."), o()(null != z, "Voice Invite Embed must be able to resolve an invite channel.");
@@ -62,7 +62,7 @@ function z(e) {
             let e = L.A.getChannel(z.id);
             return null == e || w.A.canBasicChannel(V.hVb.VIEW_CHANNEL, e)
         }, [z.id]),
-        J = (0, _.bG)([M.Ay], () => Q ? M.Ay.getVoiceStatesForChannelAlt(z.id, G.id) : [], [z.id, G.id, Q]),
+        J = (0, _.bG)([D.Ay], () => Q ? D.Ay.getVoiceStatesForChannelAlt(z.id, G.id) : [], [z.id, G.id, Q]),
         {
             label: X,
             sublabel: Z
@@ -88,7 +88,7 @@ function z(e) {
             voiceStates: J
         }),
         $ = (0, _.bG)([P.A], () => null != P.A.getGuild(G.id), [G.id]),
-        ee = (0, _.bG)([R.Ay], () => v.A.canAcceptInvite([R.Ay], t), [t]),
+        ee = (0, _.bG)([R.Ay], () => b.A.canAcceptInvite([R.Ay], t), [t]),
         et = t.state === V.elq.ACCEPTING,
         {
             analyticsLocations: en
@@ -107,7 +107,7 @@ function z(e) {
         er = a.useCallback(() => {
             $ ? (0, y.iN)(z.id) : E({
                 autoJoin: !1
-            }), D.default.track(V.HAw.VOICE_INVITE_EMBED_BREADCRUMB_CLICKED, {
+            }), M.default.track(V.HAw.VOICE_INVITE_EMBED_BREADCRUMB_CLICKED, {
                 invite_code: t.code,
                 invite_guild_id: G.id,
                 invite_channel_id: z.id,
@@ -123,7 +123,7 @@ function z(e) {
             guildId: G.id,
             channelId: z.id
         }),
-        es = b.activityPreviewEnabled && null != el;
+        es = v.activityPreviewEnabled && null != el;
     (0, I.A)({
         name: u.ImpressionNames.VOICE_INVITE_EMBED,
         type: u.ImpressionTypes.VIEW,
@@ -329,7 +329,7 @@ function K(e) {
     } = e, {
         previewUrl: a,
         isLoading: r
-    } = (0, b.A)(n.guildId, n.channelId, n.ownerId), s = null != a && !r;
+    } = (0, v.A)(n.guildId, n.channelId, n.ownerId), s = null != a && !r;
     return (0, i.jsx)("div", {
         className: l()(t, W.rr, {
             [W.pc]: !s

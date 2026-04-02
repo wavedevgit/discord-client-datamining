@@ -7,7 +7,7 @@ n(64700);
 var s = n(503698),
     a = n.n(s),
     r = n(953727),
-    o = n(149166),
+    o = n(265105),
     d = ((i = {}).LEFT = "LEFT", i.RIGHT = "RIGHT", i.UP = "UP", i.DOWN = "DOWN", i.UP_LEFT = "UP_LEFT", i.DOWN_RIGHT = "DOWN_RIGHT", i);
 let c = e => {
     let {

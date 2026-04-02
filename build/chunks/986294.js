@@ -25,12 +25,12 @@ var a = n(627968),
     C = n(435738),
     y = n(99753),
     S = n(868068),
-    T = n(476398),
-    E = n(405311),
+    E = n(476398),
+    T = n(405311),
     N = n(424994),
-    I = n(913351),
-    k = n(310086);
-let O = [{
+    I = n(519382),
+    O = n(793877);
+let R = [{
     key: "type",
     cellClassName: l()(I.Hn, I.T$),
     render(e) {
@@ -63,13 +63,13 @@ let O = [{
         let {
             type: t
         } = e;
-        return (0, a.jsx)(R, {
+        return (0, a.jsx)(k, {
             type: t
         })
     }
 }];
 
-function R(e) {
+function k(e) {
     let {
         type: t
     } = e, n = (0, u.bG)([y.A], () => y.A.getFilters()), i = n?.types?.has(t) ?? !1;
@@ -103,8 +103,8 @@ function w() {
             }
         })),
         d = (0, u.bG)([y.A], () => y.A.getFeedState(N.X1.GLOBAL_FEED)?.loading === !0),
-        [R, w] = i.useState(""),
-        M = (0, u.bG)([b.A, p.A], () => parseInt(R) > 0 ? R : b.A.searchGamesByName(R)[0] ?? p.A.getApplicationByName(R)?.id, [R]),
+        [k, w] = i.useState(""),
+        M = (0, u.bG)([b.A, p.A], () => parseInt(k) > 0 ? k : b.A.searchGamesByName(k)[0] ?? p.A.getApplicationByName(k)?.id, [k]),
         P = (0, v.A)({
             applicationId: M,
             location: "DevToolsContentInventory",
@@ -120,7 +120,7 @@ function w() {
         U = (0, g.A)(L).filter(j.Vq),
         B = (0, u.bG)([A.A], () => A.A.getFakeGameToShow());
     return (0, a.jsx)("div", {
-        className: k.nd,
+        className: O.nd,
         children: (0, a.jsxs)(h.IpV, {
             className: I.Qs,
             children: [(0, a.jsxs)(h.BJc, {
@@ -129,9 +129,9 @@ function w() {
                     variant: "text-md/semibold",
                     children: "Inventory"
                 }), r.length > 0 && (0, a.jsx)(_.A, {
-                    columns: O,
+                    columns: R,
                     data: r
-                }), (0, a.jsx)(E.A, {}), (0, a.jsx)(h.Button, {
+                }), (0, a.jsx)(T.A, {}), (0, a.jsx)(h.Button, {
                     variant: "primary",
                     text: "Refresh Now",
                     fullWidth: !0,
@@ -186,7 +186,7 @@ function w() {
                         })
                     }
                 })]
-            }), !1, (0, a.jsx)(T.A, {}), (0, a.jsxs)(h.BJc, {
+            }), !1, (0, a.jsx)(E.A, {}), (0, a.jsxs)(h.BJc, {
                 gap: 8,
                 children: [(0, a.jsx)(h.Text, {
                     variant: "text-md/semibold",
@@ -195,9 +195,9 @@ function w() {
                     placeholder: "App ID or full name",
                     onChange: e => (0 === e.length || e.length >= 18) && w(e),
                     onKeyDown: e => {
-                        "Enter" === e.key && (R === e.currentTarget.value ? P?.(e) : w(e.currentTarget.value))
+                        "Enter" === e.key && (k === e.currentTarget.value ? P?.(e) : w(e.currentTarget.value))
                     },
-                    error: R.length > 0 && null == P ? `No game profile for ${M??R+" - try by id"}.` : void 0,
+                    error: k.length > 0 && null == P ? `No game profile for ${M??k+" - try by id"}.` : void 0,
                     helperText: null != P ? "Game profile found" : void 0
                 }), (0, a.jsx)("ul", {
                     children: U.map(e => (0, a.jsx)("li", {

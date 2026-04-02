@@ -1,9 +1,10 @@
 /** chunk id: 55619 params = (module,exports,require) **/
+"use strict";
 n.d(t, {
-    A: () => l
+    A: () => r
 });
 var i = n(73153);
-let l = {
+let r = {
     setEnabled(e) {
         this.update({
             enabled: e

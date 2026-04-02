@@ -34,23 +34,23 @@ function _(e) {
             m._.unsubscribe(x.jej.PREMIUM_GROUP_PURCHASE_FLOW_COMPLETED, e)
         }
     });
-    let T = i.useCallback(() => {
+    let E = i.useCallback(() => {
         S(!1), f()
     }, [f]);
     t = null != _ ? g.intl.formatToPlainString(g.t.Gzh6ZP, {
         webBuildOverride: _.id
     }) : g.intl.string(g.t.cduTBL);
-    let E = o.Zes,
+    let T = o.Zes,
         N = (0, r.w)();
-    return E = null != _ ? o.Hnu : N.Component, (0, a.jsxs)(a.Fragment, {
+    return T = null != _ ? o.Hnu : N.Component, (0, a.jsxs)(a.Fragment, {
         children: [(0, a.jsx)(h.A, {
             ref: C,
             tooltipText: t,
             tooltipPositionKey: n,
-            onClick: T,
+            onClick: E,
             onContextMenu: v,
             "aria-label": g.intl.string(g.t.cduTBL),
-            icon: (0, a.jsx)(E, {
+            icon: (0, a.jsx)(T, {
                 size: "refresh_sm",
                 color: "currentColor",
                 className: j

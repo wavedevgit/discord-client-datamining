@@ -25,13 +25,13 @@ var a = n(627968),
     C = n(532794),
     y = n(216678),
     S = n(194509),
-    T = n(761705),
-    E = n(448362),
+    E = n(761705),
+    T = n(448362),
     N = n(71393),
     I = n(166403),
-    k = n(652215),
-    O = n(788868),
-    R = n(318296);
+    O = n(652215),
+    R = n(788868),
+    k = n(19897);
 
 function w(e) {
     let {
@@ -46,28 +46,28 @@ function w(e) {
     }) : null
 }
 let D = function() {
-    let [e, t] = i.useState(O.pe.TIER_2), [n, v] = i.useState(null), b = (0, r.yK)([N.A], () => N.A.getGuildsArray()), [D] = (0, r.yK)([I.A], () => [I.A.getPremiumSubscription()]), M = b.map(e => ({
+    let [e, t] = i.useState(R.pe.TIER_2), [n, v] = i.useState(null), b = (0, r.yK)([N.A], () => N.A.getGuildsArray()), [D] = (0, r.yK)([I.A], () => [I.A.getPremiumSubscription()]), M = b.map(e => ({
         id: e.id,
         value: e,
         label: e.name
     })), [P, L] = i.useState(M.length > 0 ? M[0].value : null), [U, B] = i.useState(""), [G, F] = i.useState({
-        plan_id: O.gD.PREMIUM_MONTH_TIER_2,
+        plan_id: R.gD.PREMIUM_MONTH_TIER_2,
         gift: "true"
     }), V = "true" !== G.gift && null != D, [W, H] = i.useState(M.length > 0 ? M[0].value : null), {
         analyticsLocations: K
-    } = (0, x.Ay)(h.A.PAYMENT_FLOW_TEST_PAGE), [z, $] = i.useState(""), [q, Q] = i.useState(k.dJq), {
+    } = (0, x.Ay)(h.A.PAYMENT_FLOW_TEST_PAGE), [z, $] = i.useState(""), [q, Q] = i.useState(O.dJq), {
         balance: Y,
         isFetching: J,
         error: X
-    } = (0, T.W)(), {
+    } = (0, E.W)(), {
         isSubmitting: Z,
         responseMessage: ee,
         redeemVirtualCurrency: et
-    } = (0, T.Q)(), [en, ea] = i.useState(k.dJq), [ei, es] = i.useState(""), [el, er] = i.useState(k.dJq), [eo, ed] = i.useState(k.dJq);
+    } = (0, E.Q)(), [en, ea] = i.useState(O.dJq), [ei, es] = i.useState(""), [el, er] = i.useState(O.dJq), [eo, ed] = i.useState(O.dJq);
     return (0, a.jsx)(x.f5, {
         value: K,
         children: (0, a.jsx)(c.IpV, {
-            className: R.XG,
+            className: k.XG,
             children: (0, a.jsxs)(c.BJc, {
                 direction: "vertical",
                 gap: 24,
@@ -80,15 +80,15 @@ let D = function() {
                         value: e,
                         options: [{
                             id: "tier_2",
-                            value: O.pe.TIER_2,
+                            value: R.pe.TIER_2,
                             label: "Nitro"
                         }, {
                             id: "tier_1",
-                            value: O.pe.TIER_1,
+                            value: R.pe.TIER_1,
                             label: "Nitro Classic"
                         }, {
                             id: "tier_0",
-                            value: O.pe.TIER_0,
+                            value: R.pe.TIER_0,
                             label: "Nitro Basic"
                         }, {
                             id: "none",
@@ -113,15 +113,15 @@ let D = function() {
                         value: n,
                         options: [{
                             id: "tier_2",
-                            value: O.pe.TIER_2,
+                            value: R.pe.TIER_2,
                             label: "Nitro"
                         }, {
                             id: "tier_1",
-                            value: O.pe.TIER_1,
+                            value: R.pe.TIER_1,
                             label: "Nitro Classic"
                         }, {
                             id: "tier_0",
-                            value: O.pe.TIER_0,
+                            value: R.pe.TIER_0,
                             label: "Nitro Basic"
                         }, {
                             id: "none",
@@ -178,7 +178,7 @@ let D = function() {
                                 text: "Open Link",
                                 disabled: U.length < 1,
                                 onClick: () => {
-                                    window.open(k.BVt.BILLING_PROMOTION_REDEMPTION(U))
+                                    window.open(O.BVt.BILLING_PROMOTION_REDEMPTION(U))
                                 }
                             })
                         })]
@@ -190,15 +190,15 @@ let D = function() {
                         value: G.plan_id,
                         options: [{
                             id: "tier_2",
-                            value: O.gD.PREMIUM_MONTH_TIER_2,
+                            value: R.gD.PREMIUM_MONTH_TIER_2,
                             label: "Nitro"
                         }, {
                             id: "tier_1",
-                            value: O.gD.PREMIUM_MONTH_TIER_1,
+                            value: R.gD.PREMIUM_MONTH_TIER_1,
                             label: "Nitro Classic"
                         }, {
                             id: "tier_0",
-                            value: O.gD.PREMIUM_MONTH_TIER_0,
+                            value: R.gD.PREMIUM_MONTH_TIER_0,
                             label: "Nitro Basic"
                         }],
                         onSelectionChange: e => {
@@ -238,7 +238,7 @@ let D = function() {
                         text: "Open Link",
                         disabled: V,
                         onClick: () => {
-                            window.open(k.BVt.BILLING_PREMIUM_SUBSCRIBE + "?" + s.stringify({
+                            window.open(O.BVt.BILLING_PREMIUM_SUBSCRIBE + "?" + s.stringify({
                                 ...G
                             }))
                         }
@@ -253,18 +253,18 @@ let D = function() {
                             variant: "text-sm/normal",
                             children: "Virtual Currency Balance:"
                         }), J ? (0, a.jsx)("div", {
-                            className: R.wG,
+                            className: k.wG,
                             children: (0, a.jsx)(c.y$y, {
                                 type: c.tVU.SPINNING_CIRCLE
                             })
                         }) : (0, a.jsxs)("div", {
-                            className: R.dB,
+                            className: k.dB,
                             children: [null !== X && (0, a.jsxs)(c.Text, {
                                 variant: "text-sm/normal",
                                 children: ["Error fetching Virtual Currency Balance: ", X.message]
-                            }), (0, a.jsx)(E.Gy, {
+                            }), (0, a.jsx)(T.Gy, {
                                 balance: Y ?? 0,
-                                balanceWidgetMode: E.k7.SELECTED
+                                balanceWidgetMode: T.k7.SELECTED
                             })]
                         })]
                     }), (0, a.jsx)(c.ksK, {
@@ -321,9 +321,9 @@ let D = function() {
                             openPremiumPaymentModal: () => !0,
                             analyticsLocations: [],
                             analyticsLocationObject: {
-                                page: k.liQ.IN_APP
+                                page: O.liQ.IN_APP
                             },
-                            context: k.BRT.APP
+                            context: O.BRT.APP
                         })
                     })]
                 }), (0, a.jsx)(c.cGx, {}), (0, a.jsx)(c.BJc, {

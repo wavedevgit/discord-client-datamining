@@ -1,12 +1,12 @@
 /** chunk id: 558001 params = (module,exports,require) **/
-n.d(e, {
-    N: () => l
+n.d(t, {
+    N: () => a
 });
 var i = n(954571),
-    r = n(652215);
-let l = (t, e) => {
-    i.default.track(r.HAw.SAFETY_SETTINGS_NOTICE_ACTION, {
-        notice_type: t,
-        action: e
+    l = n(652215);
+let a = (e, t) => {
+    i.default.track(l.HAw.SAFETY_SETTINGS_NOTICE_ACTION, {
+        notice_type: e,
+        action: t
     })
 }

@@ -4,13 +4,13 @@ r.d(t, {
 });
 var a = r(627968),
     n = r(64700),
-    s = r(503698),
-    i = r.n(s),
+    i = r(503698),
+    s = r.n(i),
     l = r(397927),
     o = r(453771),
     d = r(450232),
     c = r(212168),
-    u = r(312085);
+    u = r(522954);
 
 function m(e) {
     let {
@@ -32,7 +32,7 @@ let _ = n.forwardRef(function(e, t) {
     let {
         title: r,
         titleIcon: n,
-        titleId: s,
+        titleId: i,
         description: o,
         children: _,
         className: p,
@@ -46,7 +46,7 @@ let _ = n.forwardRef(function(e, t) {
         showPremiumIcon: R = !1
     } = e;
     return (0, a.jsx)("div", {
-        className: i()(u.fz, p, {
+        className: s()(u.fz, p, {
             [u.r9]: h,
             [u.Ai]: b,
             [u.Ac]: g,
@@ -61,7 +61,7 @@ let _ = n.forwardRef(function(e, t) {
             hasBackground: C,
             children: [(0, a.jsxs)(l.zEo, {
                 className: u.DD,
-                id: s,
+                id: i,
                 "data-migration-pending": !0,
                 children: [r, R && (0, a.jsx)(d.A, {
                     size: "xs"

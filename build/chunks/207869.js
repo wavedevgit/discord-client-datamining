@@ -25,8 +25,8 @@ var a = n(627968),
     C = n(194267),
     y = n(963713),
     S = n(758836),
-    T = n(985018),
-    E = n(384100);
+    E = n(985018),
+    T = n(753219);
 
 function N(e) {
     let {
@@ -67,7 +67,7 @@ let I = e => {
             text: l
         })
     },
-    k = e => {
+    O = e => {
         let {
             quest: t,
             sourceQuestContent: n
@@ -83,10 +83,10 @@ let I = e => {
                 sourceQuestContent: n
             }),
             size: "sm",
-            text: T.intl.string(T.t.csptqV)
+            text: E.intl.string(E.t.csptqV)
         })
     },
-    O = e => {
+    R = e => {
         let {
             quest: t
         } = e, n = (0, u.NA)({
@@ -103,7 +103,7 @@ let I = e => {
             text: n
         }) : null
     },
-    R = e => {
+    k = e => {
         let {
             quest: t,
             sourceQuestContent: n,
@@ -125,7 +125,7 @@ let I = e => {
                 variant: "secondary",
                 fullWidth: !0,
                 size: "sm",
-                text: T.intl.string(T.t["93PTEs"]),
+                text: E.intl.string(E.t["93PTEs"]),
                 ...e
             })
         })
@@ -152,7 +152,7 @@ let I = e => {
         return (0, a.jsx)(s.$nd, {
             fullWidth: !0,
             onClick: p,
-            text: n ?? T.intl.string(T.t.cfY4PE),
+            text: n ?? E.intl.string(E.t.cfY4PE),
             ...h,
             size: h.size === l.$n.Sizes.MEDIUM ? "md" : "sm"
         })
@@ -178,12 +178,12 @@ let I = e => {
             quest: d,
             sourceQuestContent: t,
             taskDetails: h
-        }) : (0, v.vA)(d) ? _ = (0, a.jsx)(O, {
+        }) : (0, v.vA)(d) ? _ = (0, a.jsx)(R, {
             quest: d
-        }) : r === c.X0.CONSOLE && n ? _ = (0, a.jsx)(k, {
+        }) : r === c.X0.CONSOLE && n ? _ = (0, a.jsx)(O, {
             quest: d,
             sourceQuestContent: t
-        }) : g && (0, v.ui)(d) ? _ = (0, a.jsx)(R, {
+        }) : g && (0, v.ui)(d) ? _ = (0, a.jsx)(k, {
             quest: d,
             sourceQuestContent: t,
             taskDetails: h,
@@ -194,7 +194,7 @@ let I = e => {
             quest: d,
             sourceQuestContent: t
         })), null == _ ? null : (0, a.jsx)("div", {
-            className: E.lO,
+            className: T.lO,
             children: _
         })
     };
@@ -202,11 +202,11 @@ let I = e => {
 function M(e) {
     let t = i.useRef(null);
     return (0, a.jsxs)("div", {
-        className: E.oG,
+        className: T.oG,
         ref: t,
         children: [e.showBackButton && (0, a.jsx)(s.K0, {
             size: "sm",
-            "aria-label": T.intl.string(T.t["13/7kX"]),
+            "aria-label": E.intl.string(E.t["13/7kX"]),
             onClick: e.onBack,
             icon: r.n2b,
             variant: "secondary"

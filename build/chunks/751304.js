@@ -31,7 +31,7 @@ var n = r(627968),
     T = r(666839),
     L = r(935094),
     P = r(758836),
-    S = r(551497);
+    S = r(235852);
 let O = l.memo(function(e) {
         let {
             product: t,

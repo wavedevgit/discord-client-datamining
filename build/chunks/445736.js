@@ -15,8 +15,8 @@ var a = l(627968),
     m = l(646443),
     h = l(785205),
     x = l(652215),
-    b = l(962017),
-    f = l(895375);
+    b = l(245260),
+    f = l(681588);
 let y = new d.A("PaymentElement.web.stories"),
     g = () => {
         let {

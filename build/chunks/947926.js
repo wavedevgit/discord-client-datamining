@@ -26,16 +26,16 @@ var a = n(627968),
     C = n(568329),
     y = n(818276),
     S = n(742860),
-    T = n(783569),
-    E = n(963713),
+    E = n(783569),
+    T = n(963713),
     N = n(717695),
     I = n(899592),
-    k = n(546350),
-    O = n(922532),
-    R = n(20732),
+    O = n(546350),
+    R = n(922532),
+    k = n(20732),
     w = n(654487);
 n(272111);
-var D = n(57291);
+var D = n(407974);
 
 function M(e) {
     let {
@@ -79,7 +79,7 @@ function L(e) {
         expansionSpring: ee,
         visibilitySpring: et,
         springConfig: en
-    } = (0, k.w)({
+    } = (0, O.w)({
         isQuestAccepted: W,
         isQuestCompleted: K,
         isQuestBarVisible: q
@@ -93,7 +93,7 @@ function L(e) {
         handleBlur: ed,
         handleMouseEnter: ec,
         handleMouseLeave: eu
-    } = (0, O.m)({
+    } = (0, R.m)({
         quest: t,
         isExpanded: Q,
         setIsExpanded: Y,
@@ -103,7 +103,7 @@ function L(e) {
         prevIsQuestAccepted: H,
         impressionRef: G
     });
-    (0, R.S)({
+    (0, k.S)({
         quest: t,
         hasAssetsError: z,
         isEligibleForQuests: s,
@@ -158,14 +158,14 @@ function L(e) {
                         [D.E$]: Q,
                         [D.KA]: W
                     }),
-                    children: (0, a.jsx)(T.R, {
+                    children: (0, a.jsx)(E.R, {
                         springConfig: en,
                         isExpanded: Q,
                         children: (0, a.jsx)(C.oK, {
                             expandedContentRef: em,
                             collapsedContentRef: eh,
                             expansionSpring: ee,
-                            children: (0, a.jsxs)(E.C, {
+                            children: (0, a.jsxs)(T.C, {
                                 quest: t,
                                 taskDetails: ep,
                                 isExpanded: Q,

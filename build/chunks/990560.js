@@ -22,8 +22,8 @@ var i = n(627968),
     C = n(62350),
     I = n(882072),
     E = n(58262),
-    b = n(309818),
-    v = n(112007),
+    v = n(309818),
+    b = n(112007),
     T = n(877695),
     S = n(242907),
     y = n(168428),
@@ -39,16 +39,16 @@ function P(e) {
         getAcceptInviteContext: P
     } = e, {
         invite: w,
-        inviteError: M
+        inviteError: D
     } = (0, r.cf)([x.A], () => ({
         invite: x.A.getInvite(t),
         inviteError: x.A.getInviteError(t)
-    }), [t]), D = null == w, k = (0, _._U)(t, n.id);
+    }), [t]), M = null == w, k = (0, _._U)(t, n.id);
     a.useEffect(() => {
-        D && l.Ay.resolveInvite(t, void 0, {
+        M && l.Ay.resolveInvite(t, void 0, {
             inviteInstanceId: k
         })
-    }, [t, D, k]);
+    }, [t, M, k]);
     let O = w ?? {
             state: R.elq.RESOLVING,
             code: ""
@@ -76,7 +76,7 @@ function P(e) {
                 autoJoin: e
             })
         },
-        q = (0, i.jsx)(v.A, {
+        q = (0, i.jsx)(b.A, {
             onTransitionToInviteChannel: H,
             onAcceptInstantInvite: V,
             currentUserId: G,
@@ -99,13 +99,13 @@ function P(e) {
         case R.elq.ERROR:
             q = (0, i.jsx)(I.A, {
                 author: n.author,
-                inviteError: M
+                inviteError: D
             });
             break;
         default:
             switch ((0, m.On)(O)) {
                 case m.Xd.GROUP_DM:
-                    q = (0, i.jsx)(b.A, {
+                    q = (0, i.jsx)(v.A, {
                         onTransitionToInviteChannel: H,
                         onAcceptInstantInvite: V,
                         currentUserId: G,

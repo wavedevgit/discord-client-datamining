@@ -13,7 +13,7 @@ var a = n(627968),
     u = n(841702),
     m = n(751304),
     h = n(61750),
-    x = n(380298);
+    x = n(813049);
 let p = e => {
         let [t, n] = i.useState(0);
         return i.useLayoutEffect(() => {
@@ -46,15 +46,15 @@ let p = e => {
             b = g || !_ && v.size > 0,
             [j, A] = i.useState(""),
             [C, y] = i.useState(null),
-            [S, T] = i.useState(null);
+            [S, E] = i.useState(null);
         return (i.useEffect(() => {
             if ("" === j.trim() || !b) {
-                y(null), T(null);
+                y(null), E(null);
                 return
             }
             let e = d.A.getProduct(j),
                 t = d.A.getCategoryForProduct(j);
-            null != e && null != t ? (y(e), T(t)) : (y(null), T(null))
+            null != e && null != t ? (y(e), E(t)) : (y(null), E(null))
         }, [j, b]), _) ? (0, a.jsx)(l.Text, {
             variant: "text-md/normal",
             children: "Loading categories and collectibles..."

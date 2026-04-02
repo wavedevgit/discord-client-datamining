@@ -1,5 +1,4 @@
 /** chunk id: 497766 params = (module,exports,require) **/
-"use strict";
 e.exports = {
     kL: "container__16eb0",
     Wl: "datePickerContainer__16eb0",

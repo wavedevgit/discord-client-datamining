@@ -22,8 +22,8 @@ var i = n(627968),
     C = n(112758),
     I = n(754459),
     E = n(538355),
-    b = n(699352),
-    v = n(378570),
+    v = n(699352),
+    b = n(378570),
     T = n(138298),
     S = n(253932),
     y = n(761640),
@@ -33,19 +33,19 @@ var i = n(627968),
     R = n(576705),
     P = n(994500),
     w = n(309010),
-    M = n(287809),
-    D = n(954571),
+    D = n(287809),
+    M = n(954571),
     k = n(709634),
     O = n(652215),
     U = n(381941),
-    B = n(379604);
+    B = n(818825);
 
 function G(e) {
     let {
         message: t,
         snapshot: n,
         index: c
-    } = e, _ = a.useMemo(() => new u.j(t, n, c), [t, n, c]), h = (0, l.bG)([N.A, M.default, P.A, R.A, L.A, m.A], () => _.getForwardInfo(N.A, M.default, P.A, R.A, L.A, m.A).footerInfo, [_], s.A), p = a.useCallback(() => {
+    } = e, _ = a.useMemo(() => new u.j(t, n, c), [t, n, c]), h = (0, l.bG)([N.A, D.default, P.A, R.A, L.A, m.A], () => _.getForwardInfo(N.A, D.default, P.A, R.A, L.A, m.A).footerInfo, [_], s.A), p = a.useCallback(() => {
         let e = N.A.getChannel(t.channel_id),
             n = L.A.getGuild(e?.guild_id),
             i = t.messageReference?.channel_id,
@@ -56,7 +56,7 @@ function G(e) {
             channelId: e.id,
             baseChannelId: i,
             guildId: e.guild_id
-        }), (0, v.iN)(i), D.default.track(O.HAw.MODERATOR_REPORT_ORIGINAL_MESSAGE_LINK_CLICKED, {
+        }), (0, b.iN)(i), M.default.track(O.HAw.MODERATOR_REPORT_ORIGINAL_MESSAGE_LINK_CLICKED, {
             moderator_report_id: t.channel_id,
             destination_channel_id: i,
             destination_message_id: t.id
@@ -195,7 +195,7 @@ function H(e) {
                 channel: C,
                 reportingUserId: n?.moderatorReport?.reporting_user_id,
                 reportedTimestamp: t.timestamp
-            }), (0, b.A)({
+            }), (0, v.A)({
                 channelMessageProps: {
                     message: d,
                     channel: C,

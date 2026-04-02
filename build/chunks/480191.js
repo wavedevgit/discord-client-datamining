@@ -1,6 +1,6 @@
 /** chunk id: 480191 params = (module,exports,require) **/
 n.d(t, {
-    A: () => D
+    A: () => M
 });
 var i = n(627968),
     a = n(64700),
@@ -22,8 +22,8 @@ var i = n(627968),
     C = n(967144),
     I = n(342296),
     E = n(253932),
-    b = n(696451),
-    v = n(287809),
+    v = n(696451),
+    b = n(287809),
     T = n(486020),
     S = n(449054),
     y = n(218394),
@@ -32,17 +32,17 @@ var i = n(627968),
     L = n(652215),
     R = n(381941),
     P = n(985018),
-    w = n(960240),
-    M = n(278664);
+    w = n(864705),
+    D = n(278664);
 
-function D(e) {
+function M(e) {
     let {
         embedUrl: t,
         message: n,
         channel: r
-    } = e, D = a.useRef(null), k = a.useRef(null), O = (0, j.D)(t, n), {
+    } = e, M = a.useRef(null), k = a.useRef(null), O = (0, j.D)(t, n), {
         setPopout: U
-    } = (0, f.A)(n.id, R.Fd), B = (0, x.VL)(n, r, U, !0), G = E.kt.useSetting(), F = (0, y.j)(), [H, V] = a.useState(!1), [q, W] = a.useState(O?.coverImage == null), z = (0, o.bG)([b.Ay, v.default], () => b.Ay.isMember(O?.guildId, v.default.getCurrentUser()?.id), [O]), Y = (0, o.bG)([b.Ay], () => O?.authorId != null ? b.Ay.getMember(O.guildId, O.authorId) : null), Q = (0, m.A)(Y?.avatarDecoration != null ? Y?.avatarDecoration : O?.user?.avatarDecoration), [K, J, X] = a.useMemo(() => [Y?.colorString ?? "inherit", Y?.colorStrings ?? null, Y?.colorRoleId], [Y]), Z = (0, C.gn)(Y?.guildId, O?.authorId ?? void 0, J), {
+    } = (0, f.A)(n.id, R.Fd), B = (0, x.VL)(n, r, U, !0), G = E.kt.useSetting(), F = (0, y.j)(), [H, V] = a.useState(!1), [q, W] = a.useState(O?.coverImage == null), z = (0, o.bG)([v.Ay, b.default], () => v.Ay.isMember(O?.guildId, b.default.getCurrentUser()?.id), [O]), Y = (0, o.bG)([v.Ay], () => O?.authorId != null ? v.Ay.getMember(O.guildId, O.authorId) : null), Q = (0, m.A)(Y?.avatarDecoration != null ? Y?.avatarDecoration : O?.user?.avatarDecoration), [K, J, X] = a.useMemo(() => [Y?.colorString ?? "inherit", Y?.colorStrings ?? null, Y?.colorRoleId], [Y]), Z = (0, C.gn)(Y?.guildId, O?.authorId ?? void 0, J), {
         reducedMotion: $
     } = a.useContext(c.CZY), [ee, et] = a.useState(!1), en = a.useCallback(() => {
         V(!0)
@@ -77,7 +77,7 @@ function D(e) {
             onMouseEnter: en,
             onMouseLeave: ei,
             children: [!q && (!0 === O.shouldShowBlurredThumbnailImage ? (0, i.jsx)("img", {
-                src: M,
+                src: D,
                 alt: P.intl.string(P.t.rIbh8H),
                 className: l()(w.xn, {
                     [w.p6]: O.shouldSpoiler
@@ -179,7 +179,7 @@ function D(e) {
                                 colorStrings: Z,
                                 className: w.fh
                             }) : (0, i.jsx)(I.A, {
-                                targetElementRef: D,
+                                targetElementRef: M,
                                 userId: O.authorId,
                                 guildId: O.guildId,
                                 channelId: r.id,
@@ -189,7 +189,7 @@ function D(e) {
                                 newAnalyticsLocations: [u.A.USERNAME],
                                 children: e => (0, i.jsx)(c.V30, {
                                     ...e,
-                                    ref: D,
+                                    ref: M,
                                     name: O.authorName,
                                     colorString: K,
                                     colorStrings: Z,

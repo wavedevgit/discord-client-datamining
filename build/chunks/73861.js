@@ -34,13 +34,13 @@ function c(e) {
         className: g,
         hover: x,
         innerClassName: f
-    }, I = (0, a.bG)([r.A], () => r.A.getActiveLibraryApplication(t.id)), E = null != I ? I.sku.id : null, b = null != E ? E : t.primarySkuId, v = (0, a.bG)([l.A], () => null != b && !l.A.didFetchingSkuFail(b));
+    }, I = (0, a.bG)([r.A], () => r.A.getActiveLibraryApplication(t.id)), E = null != I ? I.sku.id : null, v = null != E ? E : t.primarySkuId, b = (0, a.bG)([l.A], () => null != v && !l.A.didFetchingSkuFail(v));
     return null != I && (0, s.XZ)(I) ? (0, i.jsx)(d.A, {
         ...C,
         playButtonVariant: u,
         libraryApplication: I,
         source: A
-    }) : v ? (0, i.jsx)("div", {
+    }) : b ? (0, i.jsx)("div", {
         children: "deprecated!"
     }) : (0, i.jsx)(o.A, {
         ...C,

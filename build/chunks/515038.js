@@ -1,6 +1,6 @@
 /** chunk id: 515038 params = (module,exports,require) **/
 n.d(t, {
-    A: () => k
+    A: () => O
 });
 var a = n(627968),
     i = n(64700),
@@ -25,18 +25,18 @@ var a = n(627968),
     C = n(516226),
     y = n(720875),
     S = n(713457),
-    T = n(419367),
-    E = n(985018),
-    N = n(582251);
+    E = n(419367),
+    T = n(985018),
+    N = n(652254);
 let I = async () => await n.e("40119").then(n.t.bind(n, 718698, 19));
 
-function k(e) {
+function O(e) {
     let {
         quest: t,
         questContent: n,
         isHovering: s,
-        contentPosition: k,
-        rowIndex: R,
+        contentPosition: O,
+        rowIndex: k,
         isVisibleInViewport: w,
         onReceiveErrorHints: D,
         sourceQuestContent: M
@@ -50,14 +50,14 @@ function k(e) {
     } = (0, d.zhh)({
         expansionSpring: +!!s,
         config: {
-            ...T.N,
+            ...E.N,
             clamp: !0
         }
     }), q = t.userStatus?.completedAt != null, Q = t.userStatus?.claimedAt != null, Y = (0, _.ks)(t.config), J = (0, _._Z)(t.config), {
         completedRatio: X,
         completedRatioDisplay: Z
-    } = (0, p.O9)(t), ee = (0, x.gj)(t, M, m.Ob.QuestHome, P), et = i.useMemo(() => Q && Y ? E.intl.format(E.t["8Op4c4"], {
-        balanceHook: () => (0, a.jsxs)(O, {
+    } = (0, p.O9)(t), ee = (0, x.gj)(t, M, m.Ob.QuestHome, P), et = i.useMemo(() => Q && Y ? T.intl.format(T.t["8Op4c4"], {
+        balanceHook: () => (0, a.jsxs)(R, {
             questId: t.id,
             children: [(0, a.jsx)(h.A, {
                 shouldUseThemeColor: !0,
@@ -65,11 +65,11 @@ function k(e) {
                 customSize: 14
             }), J]
         }, t.id)
-    }) : Q ? (0, a.jsx)(O, {
+    }) : Q ? (0, a.jsx)(R, {
         questId: t.id,
         children: G
-    }) : Y ? E.intl.format(E.t.ro1sze, {
-        balanceHook: () => (0, a.jsxs)(O, {
+    }) : Y ? T.intl.format(T.t.ro1sze, {
+        balanceHook: () => (0, a.jsxs)(R, {
             questId: t.id,
             children: [(0, a.jsx)(h.A, {
                 shouldUseThemeColor: !0,
@@ -77,8 +77,8 @@ function k(e) {
                 customSize: 14
             }), J]
         }, t.id)
-    }) : E.intl.format(E.t["0IUT4Y"], {
-        rewardWithArticleHook: () => (0, a.jsx)(O, {
+    }) : T.intl.format(T.t["0IUT4Y"], {
+        rewardWithArticleHook: () => (0, a.jsx)(R, {
             questId: t.id,
             children: F
         }, t.id)
@@ -150,7 +150,7 @@ function k(e) {
                     variant: "eyebrow",
                     color: "text-brand",
                     className: N.G$,
-                    children: E.intl.format(E.t.EAYZAr, {
+                    children: T.intl.format(T.t.EAYZAr, {
                         questName: t.config.messages.questName
                     })
                 }), U ? (0, a.jsxs)("div", {
@@ -179,14 +179,14 @@ function k(e) {
         }), (0, a.jsx)(S.A, {
             quest: t,
             questContent: n,
-            contentPosition: k,
-            rowIndex: R,
+            contentPosition: O,
+            rowIndex: k,
             onReceiveErrorHints: D,
             sourceQuestContent: M
         })]
     })
 }
-let O = i.memo(function(e) {
+let R = i.memo(function(e) {
     let {
         questId: t,
         children: n

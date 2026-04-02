@@ -1,6 +1,6 @@
 /** chunk id: 99072 params = (module,exports,require) **/
 n.d(t, {
-    A: () => v
+    A: () => b
 });
 var i = n(627968);
 n(64700);
@@ -22,13 +22,13 @@ var a = n(311907),
     f = n(661191),
     C = n(820672),
     I = n(768349),
-    E = n(426127),
-    b = n(985018);
+    E = n(55705),
+    v = n(985018);
 
-function v(e) {
+function b(e) {
     let {
         currentUserId: t,
-        message: v,
+        message: b,
         application: T,
         channel: S,
         analyticsLocations: y,
@@ -47,20 +47,20 @@ function v(e) {
         if (t === T.id) return !0;
         let n = p.A.getGameByApplication(T);
         return null != n && t === n.id
-    })), M = (0, a.bG)([h.A], () => h.A.getCurrentUserActiveStream()), D = (0, a.bG)([g.A], () => g.A.getChannelId()), k = f.default.extractTimestamp(v.id) + C.M < Date.now(), O = (0, i.jsx)(i.Fragment, {
-        children: (0, l.Wf)(v, S, t)
+    })), D = (0, a.bG)([h.A], () => h.A.getCurrentUserActiveStream()), M = (0, a.bG)([g.A], () => g.A.getChannelId()), k = f.default.extractTimestamp(b.id) + C.M < Date.now(), O = (0, i.jsx)(i.Fragment, {
+        children: (0, l.Wf)(b, S, t)
     }), {
         analyticsLocations: U
-    } = (0, o.Ay)(y, s.A.REQUEST_TO_STREAM_INVITE_EMBED), B = b.intl.string(E.default["5+172e"]), G = !1;
-    return k ? (B = b.intl.string(E.default.u4QmWl), G = !0) : null != M ? (B = b.intl.string(E.default.P0wwmM), G = !0) : D !== S.id ? (B = b.intl.string(E.default.qRXats), G = !0) : null == w && (B = b.intl.string(E.default["43zohO"]), G = !0), (0, i.jsx)(d.h, {
-        header: b.intl.string(E.default.nAyuPp),
+    } = (0, o.Ay)(y, s.A.REQUEST_TO_STREAM_INVITE_EMBED), B = v.intl.string(E.default["5+172e"]), G = !1;
+    return k ? (B = v.intl.string(E.default.u4QmWl), G = !0) : null != D ? (B = v.intl.string(E.default.P0wwmM), G = !0) : M !== S.id ? (B = v.intl.string(E.default.qRXats), G = !0) : null == w && (B = v.intl.string(E.default["43zohO"]), G = !0), (0, i.jsx)(d.h, {
+        header: v.intl.string(E.default.nAyuPp),
         title: T.name,
         staticBannerSrc: j,
         videoBannerSrc: L,
         bannerAspectRatio: R,
         iconSrc: P ?? void 0,
         info: O,
-        actions: v.author.id === t ? [] : [{
+        actions: b.author.id === t ? [] : [{
             label: B,
             trackingArea: c.kY.STREAM,
             disabled: G,
@@ -81,7 +81,7 @@ function v(e) {
             linkType: I.J.REQUEST_TO_STREAM,
             guildId: S.guild_id,
             channelId: S.id,
-            messageId: v.id,
+            messageId: b.id,
             onView: N,
             isDeadEnd: k
         }

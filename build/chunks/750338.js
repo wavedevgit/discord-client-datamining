@@ -4,8 +4,8 @@ r.d(t, {
 });
 var a = r(627968),
     n = r(64700),
-    s = r(503698),
-    i = r.n(s),
+    i = r(503698),
+    s = r.n(i),
     l = r(735438),
     o = r(230109),
     d = r(732955),
@@ -18,12 +18,12 @@ var a = r(627968),
     h = r(23003),
     b = r(652215),
     g = r(693591),
-    x = r(992284);
+    x = r(797487);
 let C = e => {
     let {
         name: t,
         title: r,
-        description: s,
+        description: i,
         descriptionCta: C,
         previewImage: A,
         videoUrl: R,
@@ -73,7 +73,7 @@ let C = e => {
             })
         })
     }, Z = () => (0, a.jsxs)("div", {
-        className: i()(x.textBox, x[`${S}`], V && x.overlayTextBox),
+        className: s()(x.textBox, x[`${S}`], V && x.overlayTextBox),
         children: [(0, a.jsxs)("div", {
             children: [null == I ? null : "gradient" === P ? (0, a.jsx)("div", {
                 className: x.badgeContainer,
@@ -103,17 +103,17 @@ let C = e => {
             variant: "text-md/medium",
             color: "text-strong",
             className: x.description,
-            children: s
+            children: i
         }), (0, a.jsx)(z, {})]
     }), X = () => (0, a.jsx)("div", {
-        className: i()(x.boxArtContainer, x[`${S}`]),
+        className: s()(x.boxArtContainer, x[`${S}`]),
         children: (0, a.jsx)(_.A, {
             playsInline: !0,
             preload: v ? "auto" : "none",
             muted: !0,
             poster: A,
             loop: !0,
-            className: i()(V ? x.overlayImage : x.boxVideo, {
+            className: s()(V ? x.overlayImage : x.boxVideo, {
                 [N]: null != N
             }),
             ref: M,
@@ -134,7 +134,7 @@ let C = e => {
         children: (0, a.jsxs)(c.hLv, {
             ref: L,
             id: t,
-            className: i()(x.backgroundColor, x.boxContainer, x[`${S}`], x.gradientBackground, G && x.overlayImageMode, V && x.overlayMode),
+            className: s()(x.backgroundColor, x.boxContainer, x[`${S}`], x.gradientBackground, G && x.overlayImageMode, V && x.overlayMode),
             onMouseEnter: Y,
             onFocus: Y,
             onBlur: W,

@@ -1,20 +1,20 @@
 /** chunk id: 249581 params = (module,exports,require) **/
-n.d(e, {
-    A: () => _
+n.d(t, {
+    A: () => h
 });
 var i = n(627968),
-    r = n(64700),
-    l = n(503698),
-    a = n.n(l),
+    l = n(64700),
+    a = n(503698),
+    r = n.n(a),
     s = n(397927),
     o = n(927018),
-    u = n(64585),
+    d = n(64585),
     c = n(906688),
-    d = n(263244);
-let h = t => {
+    u = n(210323);
+let A = e => {
     let {
-        color: e
-    } = t;
+        color: t
+    } = e;
     return (0, i.jsxs)("svg", {
         width: "48",
         height: "28",
@@ -27,92 +27,92 @@ let h = t => {
             width: "14.4203",
             height: "14.4203",
             transform: "rotate(45 10.1968 7)",
-            className: d.__invalid_toastBG
+            className: u.__invalid_toastBG
         }), (0, i.jsx)("rect", {
             x: "27.3936",
             y: "0.59021",
             width: "23.4851",
             height: "23.4851",
             transform: "rotate(45 27.3936 0.59021)",
-            className: d.__invalid_toastBG
+            className: u.__invalid_toastBG
         }), (0, i.jsx)("rect", {
             x: "44.5903",
             y: "7",
             width: "14.4203",
             height: "14.4203",
             transform: "rotate(45 44.5903 7)",
-            className: d.__invalid_toastBG
+            className: u.__invalid_toastBG
         }), (0, i.jsx)("rect", {
             x: "10.1968",
             y: "13",
             width: "6",
             height: "6",
             transform: "rotate(45 10.1968 13)",
-            fill: e
+            fill: t
         }), (0, i.jsx)("path", {
             d: "M27.3936 4.39355L34.1233 16.2873L27.3936 28.1811L20.6638 16.2873L27.3936 4.39355Z",
-            fill: e
+            fill: t
         }), (0, i.jsx)("rect", {
             x: "44.5903",
             y: "13",
             width: "6",
             height: "6",
             transform: "rotate(45 44.5903 13)",
-            fill: e
+            fill: t
         })]
     })
 };
 
-function _(t) {
+function h(e) {
     let {
-        achievement: e,
+        achievement: t,
         unlocked: n
-    } = t, {
-        name: l,
-        description: _,
-        rarity: E,
-        hideDescriptionUntilUnlock: A,
-        onAction: C
     } = e, {
-        color: T
-    } = (0, o.ag)(E);
-    r.useEffect(() => {
-        let t = setTimeout(() => {
-            u.A.playAchievementUnlockSound()
+        name: a,
+        description: h,
+        rarity: _,
+        hideDescriptionUntilUnlock: m,
+        onAction: p
+    } = t, {
+        color: g
+    } = (0, o.ag)(_);
+    l.useEffect(() => {
+        let e = setTimeout(() => {
+            d.A.playAchievementUnlockSound()
         }, 50);
         return () => {
-            clearTimeout(t)
+            clearTimeout(e)
         }
     }, []);
-    let g = null != C && n,
-        f = g ? s.DUT : "div";
-    return (0, i.jsxs)(f, {
-        className: a()(d.kL, g && d.b),
+    let E = null != p && n,
+        I = E ? s.DUT : "div";
+    return (0, i.jsxs)(I, {
+        className: r()(u.kL, E && u.b),
         onClick: () => {
-            g && C()
+            E && p()
         },
         children: [(0, i.jsx)("div", {
-            className: d.zc,
+            className: u.zc,
             children: (0, i.jsx)(c.A, {
-                achievementId: e.id,
+                achievementId: t.id,
                 size: c.A.Sizes.SIZE_40,
                 unlocked: n
             })
         }), (0, i.jsxs)("div", {
-            className: d.__invalid_nameContainer,
+            className: u.__invalid_nameContainer,
             children: [(0, i.jsx)(s.Text, {
                 variant: "text-md/semibold",
                 color: "text-strong",
-                children: l()
+                children: a()
             }), (0, i.jsx)(s.Text, {
                 variant: "text-xs/medium",
                 color: "text-default",
-                children: A && !n ? "?????" : _()
+                children: m && !n ? "?????" : h()
             })]
         }), (0, i.jsx)("div", {
-            className: d.Db,
-            children: (0, i.jsx)(h, {
-                color: T
+            className: u.Db,
+            children: (0, i.jsx)(A, {
+                color: g
             })
         })]
     })

@@ -5,8 +5,8 @@ r.d(t, {
 }), r(667532);
 var a = r(627968),
     n = r(64700),
-    s = r(503698),
-    i = r.n(s),
+    i = r(503698),
+    s = r.n(i),
     l = r(311907),
     o = r(444550),
     d = r(263063),
@@ -16,21 +16,21 @@ var a = r(627968),
     _ = r(711014),
     p = r(403362),
     f = r(985018),
-    h = r(263928);
+    h = r(220147);
 
 function b(e) {
     let {
         guildId: t,
         className: r,
         globalOption: n,
-        hideDivider: s = !1,
+        hideDivider: i = !1,
         onChange: l,
         renderOptionSuffix: o
     } = e;
     return (0, a.jsx)(c.A, {
-        className: i()(h.u, r),
+        className: s()(h.u, r),
         title: f.intl.string(f.t.ref7Ki),
-        hideDivider: s,
+        hideDivider: i,
         forcedDivider: !0,
         children: (0, a.jsx)(g, {
             guildId: t,
@@ -45,8 +45,8 @@ function g(e) {
     let {
         guildId: t,
         globalOption: r,
-        onChange: s,
-        renderOptionSuffix: i
+        onChange: i,
+        renderOptionSuffix: s
     } = e, c = (0, l.bG)([u.A], () => u.A.showNotice()), b = (0, l.bG)([_.Ay], () => _.Ay.getFlattenedGuildIds()), g = (0, l.bG)([m.A], () => m.A.getGuilds()), x = n.useMemo(() => {
         let e = b.map(e => {
             let t = g[e];
@@ -68,14 +68,14 @@ function g(e) {
     return (0, a.jsx)(o.p, {
         isDisabled: c,
         onChange: e => {
-            if ("" === e || e === r?.value) return void s(null);
+            if ("" === e || e === r?.value) return void i(null);
             let t = g[e];
-            null != t && s(t)
+            null != t && i(t)
         },
         value: t,
         options: x,
         renderOptionPrefix: C,
-        renderOptionSuffix: i,
+        renderOptionSuffix: s,
         placeholder: f.intl.string(f.t["kMgj+e"]),
         "data-migration-pending": !0
     })

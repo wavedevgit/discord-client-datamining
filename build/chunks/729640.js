@@ -1,25 +1,25 @@
 /** chunk id: 729640 params = (module,exports,require) **/
 r.d(t, {
-    P: () => i
+    P: () => s
 });
 var a = r(627968);
 r(64700);
 var n = r(934204),
-    s = r(276478);
-let i = e => {
+    i = r(616825);
+let s = e => {
     let {
         percentage: t
     } = e;
     return (0, a.jsxs)("div", {
-        className: s.hr,
+        className: i.hr,
         children: [t > 0 && t < 100 && (0, a.jsx)(() => (0, a.jsx)("div", {
-            className: s.ML,
+            className: i.ML,
             style: {
                 left: `calc(${t}% - 5px)`
             },
             children: (0, a.jsx)(n.z, {})
         }), {}), (0, a.jsx)("div", {
-            className: s.SX,
+            className: i.SX,
             style: {
                 width: `${t}%`
             }

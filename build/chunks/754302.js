@@ -1,79 +1,79 @@
 /** chunk id: 754302 params = (module,exports,require) **/
 n.d(t, {
-    B: () => _,
+    B: () => c,
     q: () => o
 });
-var r = n(627968);
+var i = n(627968);
 n(64700);
-var a = n(503698),
-    i = n.n(a),
-    l = n(397927),
-    s = n(348953);
+var l = n(503698),
+    s = n.n(l),
+    a = n(397927),
+    r = n(295806);
 
 function o(e) {
     let {
         children: t
     } = e;
-    return (0, r.jsx)("div", {
-        className: s.MD,
-        children: (0, r.jsx)("div", {
-            className: s.Qs,
+    return (0, i.jsx)("div", {
+        className: r.MD,
+        children: (0, i.jsx)("div", {
+            className: r.Qs,
             children: t
         })
     })
 }
 
-function _(e) {
+function c(e) {
     let {
         icon: t,
         title: n,
-        description: a,
+        description: l,
         iconClassName: o,
-        color: _,
-        listType: u = "icon",
-        completed: c = !1,
-        index: d
+        color: c,
+        listType: d = "icon",
+        completed: u = !1,
+        index: h
     } = e;
-    return (0, r.jsxs)("div", {
-        className: s.Hn,
+    return (0, i.jsxs)("div", {
+        className: r.Hn,
         children: [(() => {
-            if ("numbered" === u && null != d)
-                if (c) return (0, r.jsx)("div", {
-                    className: s.ai,
-                    children: (0, r.jsx)(l.rOg, {
+            if ("numbered" === d && null != h)
+                if (u) return (0, i.jsx)("div", {
+                    className: r.ai,
+                    children: (0, i.jsx)(a.rOg, {
                         color: "green",
-                        className: i()(s.Kk, o)
+                        className: s()(r.Kk, o)
                     })
                 });
-                else return (0, r.jsx)(l.Heading, {
+                else return (0, i.jsx)(a.Heading, {
                     variant: "heading-md/semibold",
                     color: "text-brand",
-                    className: s.ai,
-                    children: d + 1
+                    className: r.ai,
+                    children: h + 1
                 });
-            if (null != t) return (0, r.jsx)("div", {
-                className: s.zc,
-                children: (0, r.jsx)(t, {
-                    color: _ ?? "currentColor",
-                    className: i()(s.Kk, o)
+            if (null != t) return (0, i.jsx)("div", {
+                className: r.zc,
+                children: (0, i.jsx)(t, {
+                    color: c ?? "currentColor",
+                    className: s()(r.Kk, o)
                 })
             })
-        })(), (0, r.jsxs)("div", {
-            className: s.FS,
-            children: [(0, r.jsx)(l.Text, {
+        })(), (0, i.jsxs)("div", {
+            className: r.FS,
+            children: [(0, i.jsx)(a.Text, {
                 variant: "text-md/semibold",
                 color: "text-strong",
-                className: i()({
-                    [s.VA]: c
+                className: s()({
+                    [r.VA]: u
                 }),
                 children: n
-            }), null != a && (0, r.jsx)(l.Text, {
+            }), null != l && (0, i.jsx)(a.Text, {
                 variant: "text-xs/medium",
                 color: "text-subtle",
-                className: i()({
-                    [s.VA]: c
+                className: s()({
+                    [r.VA]: u
                 }),
-                children: a
+                children: l
             })]
         })]
     })

@@ -1,72 +1,72 @@
 /** chunk id: 755584 params = (module,exports,require) **/
-t.d(r, {
+r.d(t, {
     A: () => h
 });
-var n = t(110259),
-    i = t(933681),
-    _ = t(73153),
-    o = t(568185),
-    a = t(543465),
-    d = t(477427),
-    c = t(499785),
-    l = t(832712),
-    p = t(652215),
-    s = t(355097);
+var n = r(110259),
+    i = r(933681),
+    l = r(73153),
+    a = r(568185),
+    s = r(543465),
+    o = r(477427),
+    d = r(499785),
+    u = r(832712),
+    c = r(652215),
+    E = r(355097);
 let h = {
     createChannel(e) {
         let {
-            guildId: r,
-            type: t,
+            guildId: t,
+            type: r,
             name: h,
-            permissionOverwrites: A = [],
-            bitrate: b,
-            userLimit: E,
-            parentId: C,
-            skuId: N,
-            branchId: y
+            permissionOverwrites: p = [],
+            bitrate: _,
+            userLimit: S,
+            parentId: A,
+            skuId: f,
+            branchId: C
         } = e;
-        _.h.dispatch({
+        l.h.dispatch({
             type: "CREATE_CHANNEL_MODAL_SUBMIT",
-            guildId: r,
-            channelType: t
+            guildId: t,
+            channelType: r
         });
-        let u = {
-            type: t,
+        let g = {
+            type: r,
             name: h,
-            permission_overwrites: A
+            permission_overwrites: p
         };
-        if (null != b && b !== p.gp3 && (u.bitrate = b), null != E && E > 0 && (u.user_limit = E), null != C && (u.parent_id = C), t === p.rbe.GUILD_STORE) {
-            if (null == N) throw Error("Unexpected missing SKU");
-            u.sku_id = N, u.branch_id = y
+        if (null != _ && _ !== c.gp3 && (g.bitrate = _), null != S && S > 0 && (g.user_limit = S), null != A && (g.parent_id = A), r === c.rbe.GUILD_STORE) {
+            if (null == f) throw Error("Unexpected missing SKU");
+            g.sku_id = f, g.branch_id = C
         }
-        return c.A.post({
-            url: p.Rsh.GUILD_CHANNELS(r),
-            body: u,
+        return d.A.post({
+            url: c.Rsh.GUILD_CHANNELS(t),
+            body: g,
             oldFormErrors: !0,
             trackedActionData: {
                 event: n.NetworkActionNames.CHANNEL_CREATE,
                 properties: e => (0, i.e0)({
-                    is_private: A.length > 0,
+                    is_private: p.length > 0,
                     channel_id: e?.body?.id,
                     channel_type: e?.body?.type
                 })
             },
             rejectWithError: !1
-        }).then(e => (a.Ay.isOptInEnabled(r) && l.A.updateChannelOverrideSettings(r, e.body.id, {
-            flags: s.vv.OPT_IN_ENABLED
-        }, d.fd.OptedIn), o.A.checkGuildTemplateDirty(r), e), e => {
-            throw _.h.dispatch({
+        }).then(e => (s.Ay.isOptInEnabled(t) && u.A.updateChannelOverrideSettings(t, e.body.id, {
+            flags: E.vv.OPT_IN_ENABLED
+        }, o.fd.OptedIn), a.A.checkGuildTemplateDirty(t), e), e => {
+            throw l.h.dispatch({
                 type: "CREATE_CHANNEL_MODAL_SUBMIT_FAILURE",
                 errors: e.body
             }), e
         })
     },
-    createRoleSubscriptionTemplateChannel: (e, r, t, _) => c.A.post({
-        url: p.Rsh.GUILD_CHANNELS(e),
+    createRoleSubscriptionTemplateChannel: (e, t, r, l) => d.A.post({
+        url: c.Rsh.GUILD_CHANNELS(e),
         body: {
-            name: r,
-            type: t,
-            topic: _
+            name: t,
+            type: r,
+            topic: l
         },
         oldFormErrors: !0,
         trackedActionData: {

@@ -23,9 +23,9 @@ var a = n(627968),
     j = n(303054),
     A = n(231643),
     C = n(985018),
-    y = n(380649),
-    S = n(310086);
-let T = [{
+    y = n(683426),
+    S = n(793877);
+let E = [{
         key: "id",
         cellClassName: y.Hz,
         render(e) {
@@ -53,7 +53,7 @@ let T = [{
             return t.toLocaleString()
         }
     }],
-    E = [{
+    T = [{
         id: "details",
         name: "Details",
         group: A.fu.NONE,
@@ -138,25 +138,25 @@ function N() {
         TabBar: g,
         renderSelectedTab: v
     } = (0, A.Ay)({
-        tabs: E
+        tabs: T
     }, []), N = (0, u.bG)([_.A], () => _.A.trackTriggers), I = i.useCallback(e => {
         x.h.dispatch({
             type: "SET_TRACK_TRIGGERS",
             enabled: e
         })
-    }, []), k = N ? "Stop Tracking" : "Start Tracking";
+    }, []), O = N ? "Stop Tracking" : "Start Tracking";
     return (0, a.jsxs)("div", {
         ref: n,
         className: l()(S.nd, y.nd),
         children: [(0, a.jsxs)("div", {
             className: y.rh,
             children: [(0, a.jsx)(m.m_, {
-                text: k,
+                text: O,
                 children: (0, a.jsx)(h.K0, {
                     size: "sm",
                     variant: N ? "active" : "primary",
                     icon: N ? h.E$n : h.udU,
-                    "aria-label": k,
+                    "aria-label": O,
                     onClick: () => I(!N)
                 })
             }), (0, a.jsx)(h.IWV, {
@@ -173,7 +173,7 @@ function N() {
                 onClick: f.eY
             })]
         }), (0, a.jsx)(j.A, {
-            columns: T,
+            columns: E,
             data: r,
             selectedRowKey: d,
             onClickRow: e => c(e.key)

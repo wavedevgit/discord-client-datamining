@@ -16,7 +16,7 @@ var a = n(158954),
     m = n(427262),
     h = n(652215),
     p = n(985018),
-    g = n(366228);
+    g = n(147673);
 
 function A(e) {
     let t, n, A, {
@@ -26,8 +26,8 @@ function A(e) {
         } = e,
         I = (0, r.bG)([d.default], () => d.default.getId()),
         E = m.Ay.useName(x),
-        b = I === x.id,
-        v = (0, r.bG)([c.A, u.A], () => {
+        v = I === x.id,
+        b = (0, r.bG)([c.A, u.A], () => {
             let e = c.A.getChannel(C);
             if (null == e) return !1;
             if (e.isPrivate()) return !0;
@@ -38,7 +38,7 @@ function A(e) {
             }
             return u.A.can(h.xBc.SEND_MESSAGES, e)
         });
-    return b ? (t = p.intl.string(p.t["F/OLvL"]), A = p.intl.string(p.t.C89OLE)) : (A = p.intl.string(p.t.YVub5y), f ? t = p.intl.string(p.t["57nBty"]) : null != E && v ? (t = p.intl.formatToPlainString(p.t["9Akp1s"], {
+    return v ? (t = p.intl.string(p.t["F/OLvL"]), A = p.intl.string(p.t.C89OLE)) : (A = p.intl.string(p.t.YVub5y), f ? t = p.intl.string(p.t["57nBty"]) : null != E && b ? (t = p.intl.formatToPlainString(p.t["9Akp1s"], {
         username: E
     }), n = (0, i.jsx)(a.$nd, {
         onClick: function() {

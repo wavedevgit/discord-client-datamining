@@ -21,11 +21,11 @@ var i, a = n(627968),
     C = n(674378),
     I = n(723702),
     E = n(541830),
-    b = n(715671),
-    v = n(598429),
+    v = n(715671),
+    b = n(598429),
     T = n(652215),
     S = n(985018),
-    y = n(162533),
+    y = n(54720),
     N = ((i = N || {}).PLAY = "play", i.NOW_PLAYING = "now_playing", i.INSTALL = "install", i.UPDATE = "update", i.PAUSED = "paused", i.LOCATE = "locate", i.UNINSTALLING = "uninstalling", i.QUEUED = "queued", i.DOWNLOADING = "downloading", i.UNSUPPORTED_OS = "unsupported_os", i.ADD_TO_LIBRARY = "add_to_library", i.PREORDER_WAIT = "preorder_wait", i);
 let j = Object.freeze({
     [T.Hf6.PLAY]: "play",
@@ -91,13 +91,13 @@ class L extends r.Component {
             libraryApplication: e,
             source: t
         } = this.props;
-        b.installApplication(e.id, e.branchId, t)
+        v.installApplication(e.id, e.branchId, t)
     };
     handleUpdate = () => {
         let {
             libraryApplication: e
         } = this.props;
-        b.updateApplication(e.id, e.branchId)
+        v.updateApplication(e.id, e.branchId)
     };
     onClickHandlers = {
         add_to_library: this.handleAddToLibrary,
@@ -133,7 +133,7 @@ class L extends r.Component {
             analyticsListSort: o,
             analyticsListIndex: d
         } = this.props;
-        return (0, a.jsx)(v.A, {
+        return (0, a.jsx)(b.A, {
             applicationId: e.id,
             libraryApplication: e,
             fullWidth: t,

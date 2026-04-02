@@ -22,8 +22,8 @@ var i = n(627968),
     C = n(760751),
     I = n(320501),
     E = n(139675),
-    b = n(486020),
-    v = n(456060),
+    v = n(486020),
+    b = n(456060),
     T = n(659051),
     S = n(837197),
     y = n(359549),
@@ -35,8 +35,8 @@ var i = n(627968),
 
 function w(e) {
     var t, n;
-    let w, M, {
-            analyticsLocations: D,
+    let w, D, {
+            analyticsLocations: M,
             application: k,
             channel: O,
             currentUserId: U,
@@ -56,7 +56,7 @@ function w(e) {
                 bot: n
             } = t;
             return {
-                iconSrc: (e.activity?.icon_override != null ? (0, E.uD)(t.id, e.activity?.icon_override) : null) ?? b.Ay.getApplicationIconURL({
+                iconSrc: (e.activity?.icon_override != null ? (0, E.uD)(t.id, e.activity?.icon_override) : null) ?? v.Ay.getApplicationIconURL({
                     id: t.id,
                     icon: t.icon,
                     bot: n
@@ -72,13 +72,13 @@ function w(e) {
         {
             openGameProfileModal: K,
             launchableAppId: J
-        } = (t = k.id, n = F.author.id, w = (0, f.d)(t), M = (0, r.bG)([m.A, C.A], () => {
+        } = (t = k.id, n = F.author.id, w = (0, f.d)(t), D = (0, r.bG)([m.A, C.A], () => {
             let e = m.A.getApplication(t);
             return null != e ? C.A.getGameByApplication(e) : null
         }, [t]), {
             openGameProfileModal: (0, x.A)({
                 location: "Rich Presence Activity Invite Embed",
-                applicationId: M?.id ?? void 0,
+                applicationId: D?.id ?? void 0,
                 source: A.Ob.Embed,
                 trackEntryPointImpression: !0,
                 sourceUserId: n
@@ -87,7 +87,7 @@ function w(e) {
         }),
         X = (0, y.A)({
             application: k,
-            analyticsLocations: D
+            analyticsLocations: M
         }),
         Z = a.useMemo(() => {
             if (null != X) return {
@@ -109,7 +109,7 @@ function w(e) {
         } = (0, _.RD)(k),
         er = (0, u.z)(ea, ei),
         el = !(0, T.A)(q, F, k.id),
-        es = (0, v.n$)(Y, F.activity?.type, el),
+        es = (0, b.n$)(Y, F.activity?.type, el),
         eo = a.useRef(null),
         ed = (0, r.bG)([I.A], () => I.A.getMessages(O.id)),
         ec = () => {
@@ -159,7 +159,7 @@ function w(e) {
         iconSrc: z,
         onView: H,
         presenceActivity: q,
-        analyticsLocations: D,
+        analyticsLocations: M,
         showAuthButton: en && !ei && et.enabled,
         startAuthorization: er,
         accountLinkButtonRef: eo,
@@ -182,7 +182,7 @@ function w(e) {
         currentUserPresenceActivity: B,
         hideParty: G,
         partyStatusElement: V,
-        analyticsLocations: D,
+        analyticsLocations: M,
         showAuthButton: en && !ei && et.enabled,
         canPromptAuth: en && !ei,
         startAuthorization: er,

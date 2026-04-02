@@ -1,5 +1,5 @@
 /** chunk id: 962877 params = (module,exports,require) **/
-i.r(e.exports = {
+n.r(e.exports = {
     ellipsis: "ellipsis__2ef49",
     headerContainer: "headerContainer__2ef49",
     headerText: "headerText__2ef49",

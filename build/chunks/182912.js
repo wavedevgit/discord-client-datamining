@@ -14,7 +14,7 @@ var i = n(627968),
     _ = n(486020),
     m = n(562153),
     h = n(836629),
-    p = n(754521);
+    p = n(795924);
 let g = {
     mass: 1,
     tension: 170,
@@ -29,7 +29,7 @@ function A(e) {
         members: c,
         ref: h,
         motion: A
-    } = e, f = c.length > 4, C = f ? c.slice(0, 3) : c, I = f ? c.length - 4 + 1 : 0, E = Math.min(f ? C.length + 1 : C.length, 4), b = (A?.percentX ?? 0) * 6, v = (A?.percentY ?? 0) * 6, T = 1 + (A?.proximity ?? 0) / 2 * .08, [S, y] = (0, d.zhh)(() => ({
+    } = e, f = c.length > 4, C = f ? c.slice(0, 3) : c, I = f ? c.length - 4 + 1 : 0, E = Math.min(f ? C.length + 1 : C.length, 4), v = (A?.percentX ?? 0) * 6, b = (A?.percentY ?? 0) * 6, T = 1 + (A?.proximity ?? 0) / 2 * .08, [S, y] = (0, d.zhh)(() => ({
         x: 0,
         y: 0,
         scale: 1,
@@ -37,11 +37,11 @@ function A(e) {
     }));
     return a.useEffect(() => {
         y({
-            x: b,
-            y: v,
+            x: v,
+            y: b,
             scale: T
         })
-    }, [b, v, T, y]), (0, i.jsxs)(s.animated.div, {
+    }, [v, b, T, y]), (0, i.jsxs)(s.animated.div, {
         ref: h,
         className: l()(p.gg, t),
         "data-count": E,

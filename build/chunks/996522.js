@@ -19,7 +19,7 @@ var a = n(503698),
     g = n(747926),
     A = n(652215),
     x = n(985018),
-    f = n(208503);
+    f = n(944450);
 
 function C(e) {
     let {
@@ -41,7 +41,7 @@ function I(e) {
             isSystemMessage: I
         } = e,
         E = (0, l.bG)([m.A], () => m.A.getCount(u.id)),
-        b = (t = u, a = (0, l.bG)([m.A], () => m.A.getMostRecentMessage(t.id)), d = (0, l.bG)([m.A], () => m.A.getCount(t.id)), c = (0, h.JO)(t), t.threadMetadata?.archived ? x.intl.string(x.t.ZTo4HS) : null == d || 0 === d ? x.intl.string(x.t.HYtNyE) : null == a ? (0, i.jsxs)(i.Fragment, {
+        v = (t = u, a = (0, l.bG)([m.A], () => m.A.getMostRecentMessage(t.id)), d = (0, l.bG)([m.A], () => m.A.getCount(t.id)), c = (0, h.JO)(t), t.threadMetadata?.archived ? x.intl.string(x.t.ZTo4HS) : null == d || 0 === d ? x.intl.string(x.t.HYtNyE) : null == a ? (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)("span", {
                 children: x.intl.string(x.t.ZTo4HS)
             }), (0, i.jsx)("span", {
@@ -57,7 +57,7 @@ function I(e) {
                 children: (0, h.aK)(c)
             })]
         })),
-        v = null != E && E > 0;
+        b = null != E && E > 0;
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)("div", {
             className: r()(f.GI, {
@@ -99,7 +99,7 @@ function I(e) {
                         children: u.name
                     }), (0, i.jsx)("span", {
                         className: f.lO,
-                        "aria-hidden": !v,
+                        "aria-hidden": !b,
                         children: (0, _.ub)(E, u.id)
                     })]
                 }), (0, i.jsx)(s.Text, {
@@ -108,7 +108,7 @@ function I(e) {
                     lineClamp: 1,
                     color: "text-default",
                     className: f.sb,
-                    children: b
+                    children: v
                 })]
             })
         })]

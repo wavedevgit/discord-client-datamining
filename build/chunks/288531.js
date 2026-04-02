@@ -1,6 +1,6 @@
 /** chunk id: 288531 params = (module,exports,require) **/
 n.d(t, {
-    A: () => D
+    A: () => M
 });
 var i = n(627968);
 n(64700);
@@ -23,8 +23,8 @@ var a = n(503698),
     C = n(92246),
     I = n(792620),
     E = n(895253),
-    b = n(201805),
-    v = n(442734),
+    v = n(201805),
+    b = n(442734),
     T = n(212614),
     S = n(79545),
     y = n(646764),
@@ -32,7 +32,7 @@ var a = n(503698),
     j = n(654487),
     L = n(652215),
     R = n(985018),
-    P = n(488818);
+    P = n(364237);
 
 function w(e) {
     let {
@@ -60,14 +60,14 @@ function w(e) {
     })
 }
 
-function M(e) {
+function D(e) {
     let {
         quest: t,
         progressState: n,
         questContent: a,
         questContentPosition: r,
         sourceQuestContent: l
-    } = e, c = (0, s.bG)([h.A], () => h.A.isEnrolling(t.id)), u = (0, I.vv)(t), _ = (0, I.Cr)(t), m = (0, b._c)({
+    } = e, c = (0, s.bG)([h.A], () => h.A.isEnrolling(t.id)), u = (0, I.vv)(t), _ = (0, I.Cr)(t), m = (0, v._c)({
         progressState: n,
         quest: t,
         questContent: a,
@@ -89,13 +89,13 @@ function M(e) {
         })
     }, m.tooltipText)
 }
-let D = e => {
+let M = e => {
     let {
         quest: t,
         location: n,
         size: a,
-        isFocused: b,
-        isQuestExpired: D,
+        isFocused: v,
+        isQuestExpired: M,
         isExpanded: k,
         isAnimating: O,
         contentPosition: U,
@@ -113,7 +113,7 @@ let D = e => {
         gameProfileSource: c.Ob.QuestEmbed
     }), Q = (0, s.bG)([h.A], () => null != h.A.questEnrollmentBlockedUntil, []), K = p.t.useConfig({
         location: j.rE.QUEST_HOME_DESKTOP
-    }), J = (0, S.Pd)(t), X = (0, s.bG)([u.default], () => u.default.locale), Z = (0, A.Oq)(), $ = (0, A.SD)(t), ee = Z && $, et = D && !H, en = (0, I.vv)(t);
+    }), J = (0, S.Pd)(t), X = (0, s.bG)([u.default], () => u.default.locale), Z = (0, A.Oq)(), $ = (0, A.SD)(t), ee = Z && $, et = M && !H, en = (0, I.vv)(t);
     return (0, i.jsx)("div", {
         className: P.zr,
         children: (0, i.jsx)("div", {
@@ -134,13 +134,13 @@ let D = e => {
                     shouldShow: et,
                     children: (0, i.jsxs)("div", {
                         className: P.D9,
-                        children: [D && (0, i.jsx)("div", {
+                        children: [M && (0, i.jsx)("div", {
                             className: P.FL,
                             children: (0, i.jsx)(d.EpV, {
                                 color: d.LU0.colors.WHITE
                             })
                         }), (0, i.jsx)(y.A, {
-                            autoplay: b,
+                            autoplay: v,
                             className: r()({
                                 [P.Lu]: "lg" === a,
                                 [P.je]: "sm" === a,
@@ -160,10 +160,10 @@ let D = e => {
                         children: [(0, i.jsx)(d.Text, {
                             variant: "lg" === a ? "text-md/medium" : "sm" === a ? "text-sm/medium" : "text-xs/medium",
                             className: P.$p,
-                            children: D ? R.intl.formatToPlainString(R.t["ge+AJp"], {
+                            children: M ? R.intl.formatToPlainString(R.t["ge+AJp"], {
                                 questName: t.config.messages.questName
                             }) : q
-                        }), $ && (0, i.jsx)(v.e, {
+                        }), $ && (0, i.jsx)(b.e, {
                             questId: t.id,
                             canUseQuestOrbMultiplier: Z
                         })]
@@ -216,11 +216,11 @@ let D = e => {
                             }({
                                 quest: t,
                                 locale: X,
-                                isQuestExpired: D,
+                                isQuestExpired: M,
                                 collectibleQuestRewardDescription: Y,
                                 formattedCompletionDate: F
                             })
-                        }), en && $ && (0, i.jsx)(v.e, {
+                        }), en && $ && (0, i.jsx)(b.e, {
                             questId: t.id,
                             canUseQuestOrbMultiplier: Z
                         })]
@@ -264,7 +264,7 @@ let D = e => {
                         analyticsCtxQuestContent: n,
                         analyticsCtxSourceQuestContent: B,
                         analyticsCtxQuestContentPosition: U
-                    }) : (0, i.jsx)(M, {
+                    }) : (0, i.jsx)(D, {
                         quest: t,
                         progressState: G,
                         questContent: n,

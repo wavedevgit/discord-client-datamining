@@ -4,8 +4,8 @@ r.d(t, {
 });
 var a = r(627968),
     n = r(64700),
-    s = r(503698),
-    i = r.n(s),
+    i = r(503698),
+    s = r.n(i),
     l = r(735438),
     o = r(110259),
     d = r(732955),
@@ -21,12 +21,12 @@ var a = r(627968),
     x = r(788868),
     C = r(652215),
     A = r(985018),
-    R = r(547807);
+    R = r(600708);
 let v = e => {
     let {
         id: t,
         title: r,
-        description: s,
+        description: i,
         caption: v,
         pillText: N,
         primaryAsset: j,
@@ -82,10 +82,10 @@ let v = e => {
             hueRotate: 25,
             glowAmount: (0, c.M)(F) ? 2 : 8,
             blurAmount: 10,
-            className: i()(R.Ui, k, {
+            className: s()(R.Ui, k, {
                 [R.Tn]: z
             }),
-            cardClassName: i()(R.Nr, e, B, {
+            cardClassName: s()(R.Nr, e, B, {
                 [R.j8]: L
             }),
             cardStyle: {
@@ -143,19 +143,19 @@ let v = e => {
                     }), (0, a.jsx)(u.Heading, {
                         variant: "heading-lg/semibold",
                         children: r
-                    }), !(0, l.isEmpty)(s) && (0, a.jsxs)("div", {
+                    }), !(0, l.isEmpty)(i) && (0, a.jsxs)("div", {
                         className: R.Wi,
                         children: [(0, a.jsx)(u.Text, {
                             variant: "text-sm/normal",
                             color: "text-default",
                             className: R.h_,
-                            children: s
+                            children: i
                         }), (0, a.jsx)(u.Text, {
                             variant: "text-sm/normal",
                             color: "text-default",
                             className: R.XV,
                             inert: !0,
-                            children: s
+                            children: i
                         })]
                     }), null != P && (0, a.jsx)("div", {
                         className: R.oU,
@@ -194,7 +194,7 @@ function E(e) {
     return null == t || "" === t ? null : "string" == typeof t ? (0, a.jsx)("img", {
         src: t,
         alt: "",
-        className: i()(R.eq, r),
+        className: s()(R.eq, r),
         draggable: "false"
     }) : t
 }

@@ -22,8 +22,8 @@ var i = n(627968),
     C = n(403362),
     I = n(456060),
     E = n(131724),
-    b = n(987709),
-    v = n(850670),
+    v = n(987709),
+    b = n(850670),
     T = n(206589),
     S = n(154297),
     y = n(467078),
@@ -33,9 +33,9 @@ var i = n(627968),
     R = n(877044),
     P = n(878831),
     w = n(652215),
-    M = n(768349),
-    D = n(985018),
-    k = n(772234);
+    D = n(768349),
+    M = n(985018),
+    k = n(71747);
 
 function O(e) {
     let {
@@ -89,7 +89,7 @@ function O(e) {
         }
     }).filter(C.Vq), [o]);
     if (!(null != n || c.length > 0)) return null;
-    let u = null != n ? (0, S.C)(n) : D.intl.string(D.t["4dGUP0"]);
+    let u = null != n ? (0, S.C)(n) : M.intl.string(M.t["4dGUP0"]);
     return (0, i.jsxs)("div", {
         className: k.qr,
         children: [(0, i.jsx)("div", {
@@ -146,11 +146,11 @@ function U(e) {
             textTabularNumbers: !1,
             textFontCode: !1
         })]
-    }) : null, [$, V?.timestamps?.end]), et = (0, v.v)(t), en = (0, x.s)(n.id), ei = a.useMemo(() => en.some(e => (0, g.CZ)(e) === r.m.GLOBAL) ? (0, i.jsxs)(i.Fragment, {
+    }) : null, [$, V?.timestamps?.end]), et = (0, b.v)(t), en = (0, x.s)(n.id), ei = a.useMemo(() => en.some(e => (0, g.CZ)(e) === r.m.GLOBAL) ? (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(d.Y3C, {
             size: "xxs",
             color: "currentColor"
-        }), D.intl.string(D.t.TsWCdW)]
+        }), M.intl.string(M.t.TsWCdW)]
     }) : null, [en]), ea = a.useMemo(() => (0, i.jsxs)(d.Text, {
         variant: "text-xs/normal",
         className: k.dS,
@@ -172,7 +172,7 @@ function U(e) {
         isEmbeddedApplication: R,
         isFrameApplication: es,
         isGameLaunchable: el
-    }), ec = (0, E.M)(V, q, t, n), eu = (0, b.E)(V, t, n, S), e_ = (0, T.w)(q, V), em = (0, y.L)(V), eh = (0, o.bG)([f.A], () => null != V && null != V.application_id && f.A.getState(V.application_id, w.xL.JOIN) === w.eAD.LOADING), {
+    }), ec = (0, E.M)(V, q, t, n), eu = (0, v.E)(V, t, n, S), e_ = (0, T.w)(q, V), em = (0, y.L)(V), eh = (0, o.bG)([f.A], () => null != V && null != V.application_id && f.A.getState(V.application_id, w.xL.JOIN) === w.eAD.LOADING), {
         actions: ep,
         hasAccountLinkButton: eg
     } = a.useMemo(() => {
@@ -180,7 +180,7 @@ function U(e) {
             n = !0,
             i = !1;
         eo ? e = {
-            label: D.intl.string(D.t.VJlc0S),
+            label: M.intl.string(M.t.VJlc0S),
             trackingArea: h.kY.JOIN,
             submitting: eh,
             onClick: () => {
@@ -208,7 +208,7 @@ function U(e) {
                 })
             }
         } : em && K ? (e = {
-            label: D.intl.string(D.t.lw71Nf),
+            label: M.intl.string(M.t.lw71Nf),
             trackingArea: h.kY.CONNECT_ACCOUNT,
             onClick: () => {
                 J({
@@ -216,13 +216,13 @@ function U(e) {
                 })
             }
         }, n = !1) : ec ? (e = {
-            label: D.intl.string(D.t.VJlc0S),
+            label: M.intl.string(M.t.VJlc0S),
             trackingArea: h.kY.SYNC,
             onClick: () => {
                 null != V && _.OH(V, t.author.id)
             }
         }, n = !1) : eu ? e = {
-            label: D.intl.string(D.t["hC/Zey"]),
+            label: M.intl.string(M.t["hC/Zey"]),
             trackingArea: h.kY.INVITE,
             onClick: () => {
                 null != V && c.A.sendActivityInvite({
@@ -233,16 +233,16 @@ function U(e) {
                 })
             },
             disabled: t.author.id === S,
-            disabledReason: t.author.id === S ? D.intl.string(D.t.IBl8ID) : void 0
+            disabledReason: t.author.id === S ? M.intl.string(M.t.IBl8ID) : void 0
         } : e_ ? e = {
-            label: D.intl.string(D.t.KC26NR),
+            label: M.intl.string(M.t.KC26NR),
             trackingArea: h.kY.PLAY,
             onClick: () => {},
             disabled: !0
         } : null != U && (e = U, n = !1);
         let a = [];
         return null != e && (a.push(e), Q && n && (a.push({
-            label: D.intl.string(D.t.lw71Nf),
+            label: M.intl.string(M.t.lw71Nf),
             trackingArea: h.kY.CONNECT_ACCOUNT,
             onClick: () => {
                 J({
@@ -277,7 +277,7 @@ function U(e) {
             onClickContent: G,
             trackingConfig: {
                 id: n.id,
-                linkType: M.J.RICH_PRESENCE_INVITE,
+                linkType: D.J.RICH_PRESENCE_INVITE,
                 onView: H,
                 referrerId: t.author.id,
                 guildId: s.guild_id,

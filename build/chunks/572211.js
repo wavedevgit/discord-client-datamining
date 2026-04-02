@@ -18,7 +18,7 @@ var i, a = n(627968),
     g = n(354287),
     A = n(768349),
     x = n(838541),
-    f = n(498272),
+    f = n(401821),
     C = ((i = {})[i.BOT = 0] = "BOT", i[i.ACTIVITY = 1] = "ACTIVITY", i);
 
 function I(e) {
@@ -47,8 +47,8 @@ function E(e) {
         footer: l,
         info: C,
         staticBannerSrc: E,
-        videoBannerSrc: b,
-        bannerAspectRatio: v = 0,
+        videoBannerSrc: v,
+        bannerAspectRatio: b = 0,
         iconSrc: T,
         actions: S = [],
         primaryActionFirst: y = !1,
@@ -71,8 +71,8 @@ function E(e) {
     let {
         primaryColor: R,
         secondaryColor: P
-    } = (0, h.A)(T ?? E), w = `linear-gradient(45deg, ${R}, ${P})`, M = (0, u.bG)([m.A], () => m.A.useReducedMotion), D = r.useRef(!1), k = (0, d.K)(e => {
-        !1 === D.current && e && (N?.onView?.(), (0, g.wV)({
+    } = (0, h.A)(T ?? E), w = `linear-gradient(45deg, ${R}, ${P})`, D = (0, u.bG)([m.A], () => m.A.useReducedMotion), M = r.useRef(!1), k = (0, d.K)(e => {
+        !1 === M.current && e && (N?.onView?.(), (0, g.wV)({
             appId: N.id,
             linkType: N.linkType,
             referrerId: N.referrerId,
@@ -80,11 +80,11 @@ function E(e) {
             guildId: N.guildId,
             channelId: N.channelId,
             messageId: N.messageId
-        }), D.current = !0)
-    }, void 0), O = null != E, U = null != b && !1 === M, B = O || U, G = 0 === v ? f.pv : f.$g, F = r.useRef(null), H = r.useCallback(() => {
+        }), M.current = !0)
+    }, void 0), O = null != E, U = null != v && !1 === D, B = O || U, G = 0 === b ? f.pv : f.$g, F = r.useRef(null), H = r.useCallback(() => {
         let e = F.current;
         null == e || ("hidden" === getComputedStyle(e).visibility ? e.pause() : e.play())
-    }, []), V = r.useMemo(() => !!U && new URL(b).pathname.endsWith(".gif"), [U, b]), q = r.useMemo(() => {
+    }, []), V = r.useMemo(() => !!U && new URL(v).pathname.endsWith(".gif"), [U, v]), q = r.useMemo(() => {
         if (null != j) return e => {
             j(e), (0, g.gx)({
                 applicationId: N.id,
@@ -118,11 +118,11 @@ function E(e) {
             children: [U && (V ? (0, a.jsx)("div", {
                 className: f.O9,
                 style: {
-                    backgroundImage: `url(${b})`
+                    backgroundImage: `url(${v})`
                 }
             }) : (0, a.jsx)(o.A, {
                 ref: F,
-                src: b,
+                src: v,
                 mediaLayoutType: x.dG.MOSAIC,
                 loop: !0,
                 muted: !0,

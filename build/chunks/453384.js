@@ -10,7 +10,7 @@ var i = n(627968),
     o = n(397927),
     d = n(398025),
     c = n(419367),
-    u = n(293225);
+    u = n(44556);
 let _ = "var(--background-mod-strong)",
     m = a.forwardRef((e, t) => {
         let {
@@ -30,7 +30,7 @@ let _ = "var(--background-mod-strong)",
             strokeDasharray: `${C} ${C}`,
             strokeDashoffset: I
         }), [C, I]), {
-            progressTextAnimation: b
+            progressTextAnimation: v
         } = (0, o.zhh)({
             progressTextAnimation: +(null != h && 1 !== n),
             config: c.N
@@ -47,7 +47,7 @@ let _ = "var(--background-mod-strong)",
                 className: u.vW,
                 children: [g, (0, i.jsxs)(s.animated.div, {
                     style: {
-                        opacity: (0, d.a)(b),
+                        opacity: (0, d.a)(v),
                         inset: A
                     },
                     className: l()(u.rD, u.qk),

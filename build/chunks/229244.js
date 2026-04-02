@@ -25,14 +25,14 @@ var a = n(627968),
     C = n(223344),
     y = n(589939),
     S = n(443960),
-    T = n(899860),
-    E = n(633581),
+    E = n(899860),
+    T = n(633581),
     N = n(508575),
     I = n(847807),
-    k = n(364329),
-    O = n(545986),
-    R = n(927813),
-    w = n(163459);
+    O = n(364329),
+    R = n(545986),
+    k = n(927813),
+    w = n(549592);
 let D = ["png", "gif", "webp"],
     M = [...D, "jpg", "jpeg"],
     P = Array.from(new Set([...M, "gif", "mp4", "webm"]));
@@ -138,7 +138,7 @@ function G() {
             ...e,
             preview: !0
         })
-    }, []), [u, U] = i.useState(k.b.UNENROLLED), [G, F] = i.useState(!1), [V, W] = i.useState(!1), [H, K] = i.useState(null), z = (e = t.config, (0, r.YW)(e).with({
+    }, []), [u, U] = i.useState(O.b.UNENROLLED), [G, F] = i.useState(!1), [V, W] = i.useState(!1), [H, K] = i.useState(null), z = (e = t.config, (0, r.YW)(e).with({
         configVersion: 2
     }, e => e.rewardsConfig.rewards).exhaustive());
 
@@ -267,12 +267,12 @@ function G() {
     }
 
     function X() {
-        (0, x.tU)(t.config) && (0, O.hJ)(t, h.uF.GIFT_INVENTORY_FOR_YOU, h.uF.INTERNAL_PREVIEW_TOOL, !0)
+        (0, x.tU)(t.config) && (0, R.hJ)(t, h.uF.GIFT_INVENTORY_FOR_YOU, h.uF.INTERNAL_PREVIEW_TOOL, !0)
     }
     let Z = i.useMemo(() => {
             for (let [e, n] of Object.entries(t.config.taskConfigV2.tasks))
                 if (null != n.target) return n.target;
-            return 10 * R.A.Seconds.MINUTE
+            return 10 * k.A.Seconds.MINUTE
         }, [t.config.taskConfigV2.tasks]),
         ee = i.useMemo(() => o.n.WATCH_VIDEO in t.config.taskConfigV2.tasks, [t.config.taskConfigV2.tasks]);
     l()(!1 !== t.preview && null != t.preview, "Preview config must have property preview: true");
@@ -285,16 +285,16 @@ function G() {
             children: "Quest Preview Tool"
         }), (0, a.jsx)("div", {
             className: w.OA,
-            children: (0, a.jsx)(E.A, {
+            children: (0, a.jsx)(T.A, {
                 onSelect: function(e) {
                     K(e), null == e || (U(function(e) {
-                        if (null == e.userStatus) return k.b.UNENROLLED;
-                        if (null != e.userStatus.claimedAt) return k.b.CLAIMED;
-                        if (null != e.userStatus.completedAt) return k.b.COMPLETED_100;
+                        if (null == e.userStatus) return O.b.UNENROLLED;
+                        if (null != e.userStatus.claimedAt) return O.b.CLAIMED;
+                        if (null != e.userStatus.completedAt) return O.b.COMPLETED_100;
                         let t = (0, p.Yh)(e),
                             n = t.progressSeconds,
                             a = t.targetSeconds;
-                        return n / a >= 1 ? k.b.COMPLETED_100 : n / a >= .75 ? k.b.COMPLETED_75 : n / a >= .5 ? k.b.COMPLETED_50 : n / a >= .25 ? k.b.COMPLETED_25 : k.b.ENROLLED
+                        return n / a >= 1 ? O.b.COMPLETED_100 : n / a >= .75 ? O.b.COMPLETED_75 : n / a >= .5 ? O.b.COMPLETED_50 : n / a >= .25 ? O.b.COMPLETED_25 : O.b.ENROLLED
                     }(e)), c(e))
                 },
                 quest: H
@@ -324,22 +324,22 @@ function G() {
             children: "Messages"
         }), (0, a.jsxs)("div", {
             className: w.OA,
-            children: [(0, a.jsx)(T.A, {
+            children: [(0, a.jsx)(E.A, {
                 title: "Quest Name",
                 assetKey: "questName",
                 onMessageChange: Q,
                 initialValue: t.config.messages.questName
-            }), (0, a.jsx)(T.A, {
+            }), (0, a.jsx)(E.A, {
                 title: "Game Title",
                 assetKey: "gameTitle",
                 onMessageChange: Q,
                 initialValue: t.config.messages.gameTitle
-            }), (0, a.jsx)(T.A, {
+            }), (0, a.jsx)(E.A, {
                 title: "Game Publisher",
                 assetKey: "gamePublisher",
                 onMessageChange: Q,
                 initialValue: t.config.messages.gamePublisher
-            }), ee && (0, a.jsx)(T.A, {
+            }), ee && (0, a.jsx)(E.A, {
                 title: "Video Title",
                 assetKey: "videoTitle",
                 onMessageChange: function(e, n) {
@@ -439,12 +439,12 @@ function G() {
                 children: ["Reward #", n + 1]
             }), (0, a.jsxs)("div", {
                 className: w.OA,
-                children: [(0, a.jsx)(T.A, {
+                children: [(0, a.jsx)(E.A, {
                     title: "Name",
                     assetKey: "name",
                     onMessageChange: (e, t) => Y(e, t, n),
                     initialValue: e.messages.name
-                }), (0, a.jsx)(T.A, {
+                }), (0, a.jsx)(E.A, {
                     title: "Name With Article",
                     assetKey: "nameWithArticle",
                     onMessageChange: (e, t) => Y(e, t, n),
@@ -513,16 +513,16 @@ function G() {
             }), (0, a.jsx)("div", {
                 className: w.OA,
                 children: (0, a.jsx)(I.A, {})
-            }), (0, a.jsx)(k.A, {
+            }), (0, a.jsx)(O.A, {
                 onChange: function(e) {
                     switch (U(e), e) {
-                        case k.b.UNENROLLED:
+                        case O.b.UNENROLLED:
                             c({
                                 ...t,
                                 userStatus: null
                             });
                             break;
-                        case k.b.ENROLLED:
+                        case O.b.ENROLLED:
                             c({
                                 ...t,
                                 userStatus: L({
@@ -530,7 +530,7 @@ function G() {
                                 })
                             });
                             break;
-                        case k.b.COMPLETED_25:
+                        case O.b.COMPLETED_25:
                             c({
                                 ...t,
                                 userStatus: L({
@@ -539,7 +539,7 @@ function G() {
                                 })
                             });
                             break;
-                        case k.b.COMPLETED_50:
+                        case O.b.COMPLETED_50:
                             c({
                                 ...t,
                                 userStatus: L({
@@ -548,7 +548,7 @@ function G() {
                                 })
                             });
                             break;
-                        case k.b.COMPLETED_75:
+                        case O.b.COMPLETED_75:
                             c({
                                 ...t,
                                 userStatus: L({
@@ -557,7 +557,7 @@ function G() {
                                 })
                             });
                             break;
-                        case k.b.COMPLETED_100:
+                        case O.b.COMPLETED_100:
                             c({
                                 ...t,
                                 userStatus: L({
@@ -567,7 +567,7 @@ function G() {
                                 })
                             });
                             break;
-                        case k.b.CLAIMED:
+                        case O.b.CLAIMED:
                             c({
                                 ...t,
                                 userStatus: L({
@@ -696,7 +696,7 @@ function G() {
                         (0, m.mMO)(async () => {
                             let {
                                 default: e
-                            } = await Promise.all([n.e("92868"), n.e("29636"), n.e("7634"), n.e("5501")]).then(n.bind(n, 201257));
+                            } = await Promise.all([n.e("92868"), n.e("29636"), n.e("7634"), n.e("36855")]).then(n.bind(n, 201257));
                             return n => (0, a.jsx)(e, {
                                 ...n,
                                 openStartClockTime: performance.now(),

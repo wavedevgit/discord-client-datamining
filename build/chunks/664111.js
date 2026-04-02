@@ -25,7 +25,7 @@ var r = n(627968),
     C = n(652215),
     A = n(838541),
     N = n(985018),
-    R = n(246878);
+    R = n(256181);
 let T = {
         tension: 250,
         friction: 5,
@@ -93,7 +93,7 @@ let T = {
             initialTimeSec: D,
             onError: e6,
             onHlsInstance: q
-        }), [e4, e8] = l.useState(!1), [e9, e7] = l.useState(null), [e3, e5] = l.useState(0), te = B ?? eJ.current?.duration ?? 0, [tt, tn] = l.useState(u.oA.MD), tr = {
+        }), [e4, e9] = l.useState(!1), [e8, e7] = l.useState(null), [e3, e5] = l.useState(0), te = B ?? eJ.current?.duration ?? 0, [tt, tn] = l.useState(u.oA.MD), tr = {
             [u.oA.MD]: 50,
             [u.oA.LG]: 58
         };
@@ -172,7 +172,7 @@ let T = {
                 let t = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1];
                 if (null == eJ.current) return;
                 let n = eJ.current.currentTime;
-                eS(e / (eJ.current.duration ?? 1) * 100), eN(!0), e8(!1), eJ.current.currentTime = e, t && H?.(n, e)
+                eS(e / (eJ.current.duration ?? 1) * 100), eN(!0), e9(!1), eJ.current.currentTime = e, t && H?.(n, e)
             }, [H]),
             tx = () => {
                 if (null != eJ.current) switch (ep) {
@@ -246,11 +246,11 @@ let T = {
             config: T
         }));
         l.useEffect(() => (tN({
-            captionHeightSpring: ez && null != e9 ? tC.current?.clientHeight ?? 0 : 0,
+            captionHeightSpring: ez && null != e8 ? tC.current?.clientHeight ?? 0 : 0,
             immediate: eH
         }), () => {
             tA.stop()
-        }), [ez, tN, eH, e9, tA]), l.useEffect(() => (tS({
+        }), [ez, tN, eH, e8, tA]), l.useEffect(() => (tS({
             controlBarAnimSpring: td || eD ? 1 : 0,
             immediate: eH
         }), () => {
@@ -351,7 +351,7 @@ let T = {
                     onCanPlay: tb,
                     onCanPlayThrough: tb,
                     onSeeked: () => {
-                        e8(!0)
+                        e9(!0)
                     },
                     onAbort: () => e6(u.SB.ABORT),
                     onError: () => e6(u.SB.ERROR),
@@ -454,7 +454,7 @@ let T = {
                     }) : (0, r.jsx)(d.E$n, {
                         className: R.PK
                     })
-                }, ep), ez && null != e9 && !tR && (0, r.jsx)(s.animated.div, {
+                }, ep), ez && null != e8 && !tR && (0, r.jsx)(s.animated.div, {
                     className: R.o$,
                     ref: tC,
                     "data-testid": "discord-web-video-player-captions",
@@ -468,7 +468,7 @@ let T = {
                         variant: "text-lg/semibold",
                         color: "always-white",
                         className: R.qh,
-                        children: e9.text
+                        children: e8.text
                     })
                 }), (0, r.jsxs)(s.animated.div, {
                     className: R.r8,

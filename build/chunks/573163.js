@@ -12,10 +12,10 @@ var i = n(627968),
     c = n(960538),
     u = n(860227),
     _ = n(866630),
-    m = n(483202),
+    m = n(260821),
     h = n(985018),
-    p = n(486025),
-    g = n(108277);
+    p = n(767474),
+    g = n(449014);
 let A = (e, t) => null == e && null == t || e === t;
 class x extends a.PureComponent {
     state = {
@@ -46,8 +46,8 @@ class x extends a.PureComponent {
             reactionClassName: C,
             useChatFontScaling: I,
             forceHideReactionCreates: E,
-            remainingReactions: b,
-            combinedReactions: v,
+            remainingReactions: v,
+            combinedReactions: b,
             visibleReactionsCount: T
         } = this.props, {
             disableTransitionAppear: S
@@ -68,7 +68,7 @@ class x extends a.PureComponent {
                 isHovered: !1
             }),
             children: [(0, i.jsx)(_.A, {
-                reactions: v,
+                reactions: b,
                 message: e,
                 readOnly: n,
                 isLurking: a,
@@ -76,7 +76,7 @@ class x extends a.PureComponent {
                 isForumToolbar: d,
                 useChatFontScaling: I,
                 className: C
-            }), b > 0 && (0, i.jsx)(o.DUT, {
+            }), v > 0 && (0, i.jsx)(o.DUT, {
                 onClick: t => {
                     t.stopPropagation(), (0, m.$l)(A, e)
                 },
@@ -85,7 +85,7 @@ class x extends a.PureComponent {
                 children: (0, i.jsxs)(o.Text, {
                     className: y.reactionInner,
                     variant: "text-sm/normal",
-                    children: ["+", b]
+                    children: ["+", v]
                 })
             }), !t && !E && (0, i.jsx)(c.t, {
                 tabIndex: j || this.state.isHovered ? 0 : -1,

@@ -17,7 +17,7 @@ var i = n(311907),
     x = n(287809),
     p = n(850730),
     g = n(385803),
-    _ = n(37760);
+    _ = n(749929);
 
 function f() {
     (0, u.Bf)();
@@ -32,11 +32,11 @@ function f() {
         C = e?.collectibles?.nameplate?.skuId,
         y = null != A ? b.find(e => e.skuId === A) ?? null : null,
         S = null != C ? j.find(e => e.skuId === C) ?? null : null,
-        T = (0, i.bG)([o.A], () => o.A.getProduct(y?.skuId)),
-        E = (0, i.bG)([o.A], () => o.A.getProduct(S?.skuId)),
+        E = (0, i.bG)([o.A], () => o.A.getProduct(y?.skuId)),
+        T = (0, i.bG)([o.A], () => o.A.getProduct(S?.skuId)),
         N = (0, i.bG)([r.A], () => r.A.fontSize),
         I = (0, i.bG)([r.A], () => r.A.messageGroupSpacing),
-        k = h.Xi.useSetting();
+        O = h.Xi.useSetting();
     return (0, p.DB)(), (0, a.jsxs)("div", {
         className: _.kL,
         children: [(0, a.jsxs)("div", {
@@ -74,10 +74,10 @@ function f() {
                 children: ["Client Theme ID:", " ", null != f ? g.ag[f]?.getName() : "None"]
             }), (0, a.jsxs)(l.Text, {
                 variant: "text-md/normal",
-                children: ["Avatar Decoration: ", T?.name ?? "None"]
+                children: ["Avatar Decoration: ", E?.name ?? "None"]
             }), (0, a.jsxs)(l.Text, {
                 variant: "text-md/normal",
-                children: ["Nameplate: ", E?.name ?? "None"]
+                children: ["Nameplate: ", T?.name ?? "None"]
             }), (0, a.jsxs)(l.Text, {
                 variant: "text-md/normal",
                 children: ["Font Size: ", N, "px"]
@@ -86,7 +86,7 @@ function f() {
                 children: ["Message Spacing: ", I]
             }), (0, a.jsxs)(l.Text, {
                 variant: "text-md/normal",
-                children: ["UI Density: ", k, " (", function(e) {
+                children: ["UI Density: ", O, " (", function(e) {
                     switch (e) {
                         case s.NS.COMPACT:
                             return "Compact";
@@ -99,7 +99,7 @@ function f() {
                         default:
                             return "Unknown"
                     }
-                }(k), ")"]
+                }(O), ")"]
             })]
         })]
     })

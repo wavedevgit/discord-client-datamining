@@ -15,7 +15,7 @@ var i = n(627968),
     m = n(607407),
     h = n(616356),
     p = n(734057),
-    g = n(682524);
+    g = n(826235);
 
 function A(e) {
     let {
@@ -32,7 +32,7 @@ function A(e) {
     }), [t], s.A), {
         previewUrl: C,
         isLoading: I
-    } = (0, c.A)(t.guildId, t.channelId, t.ownerId), [E, b] = (0, u.zP)(f);
+    } = (0, c.A)(t.guildId, t.channelId, t.ownerId), [E, v] = (0, u.zP)(f);
     return (0, i.jsxs)(o.DUT, {
         onClick: E ? A : void 0,
         className: r()(g.Um, {
@@ -57,7 +57,7 @@ function A(e) {
                 variant: "overlay-secondary",
                 size: "sm",
                 icon: o.Fzq,
-                text: (0, _.A)(t, x, n, b)
+                text: (0, _.A)(t, x, n, v)
             })]
         }) : null]
     })
