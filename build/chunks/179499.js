@@ -3,10 +3,10 @@ n.d(t, {
     A: () => _
 });
 var i = n(64700),
-    a = n(284009),
-    r = n.n(a),
-    l = n(417597),
-    s = n(397927),
+    l = n(284009),
+    s = n.n(l),
+    r = n(417597),
+    a = n(397927),
     o = n(871109),
     d = n(666171),
     c = n(960427),
@@ -16,26 +16,26 @@ function _(e) {
     let {
         guildId: t,
         productId: n
-    } = e, a = (0, l.bG)([o.A], () => o.A.getGuildProduct(n)), {
+    } = e, l = (0, r.bG)([o.A], () => o.A.getGuildProduct(n)), {
         isLoading: _,
         downloadAttachment: m
     } = (0, d.A)(t, n), h = i.useCallback(() => {
-        let e = a?.attachments?.[0]?.id;
-        r()(null != e, "No attachment"), m(e)
-    }, [m, a?.attachments]), p = i.useCallback(() => c.A.open({
+        let e = l?.attachments?.[0]?.id;
+        s()(null != e, "No attachment"), m(e)
+    }, [m, l?.attachments]), p = i.useCallback(() => c.A.open({
         guildId: t,
         productId: n
     }), [t, n]);
-    return (a?.attachments?.length ?? 0) > 1 ? {
+    return (l?.attachments?.length ?? 0) > 1 ? {
         variant: "primary",
         text: u.intl.string(u.t.UyuiUE),
-        icon: s.KS6,
+        icon: a.KS6,
         iconPosition: "end",
         onClick: p
     } : {
         variant: "primary",
         text: u.intl.string(u.t.t9bE9b),
-        icon: s.s3U,
+        icon: a.s3U,
         iconPosition: "end",
         loading: _,
         onClick: h

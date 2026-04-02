@@ -3,10 +3,10 @@ n.d(t, {
     A: () => d
 });
 var i = n(627968),
-    a = n(64700),
-    r = n(397927),
-    l = n(123791),
-    s = n(627363),
+    l = n(64700),
+    s = n(397927),
+    r = n(123791),
+    a = n(627363),
     o = n(985018);
 
 function d(e) {
@@ -14,10 +14,10 @@ function d(e) {
         applicationId: t,
         guildId: n
     } = e, {
-        data: a
-    } = (0, s.YY)(t);
-    return null == a ? null : (0, i.jsx)(c, {
-        app: a,
+        data: l
+    } = (0, a.YY)(t);
+    return null == l ? null : (0, i.jsx)(c, {
+        app: l,
         guildId: n
     })
 }
@@ -25,25 +25,25 @@ function d(e) {
 function c(e) {
     let {
         app: t,
-        guildId: s
+        guildId: a
     } = e;
-    (0, l.C)(t.id);
-    let d = a.useCallback(() => {
-        (0, r.mMO)(async () => {
+    (0, r.C)(t.id);
+    let d = l.useCallback(() => {
+        (0, s.mMO)(async () => {
             let {
                 default: e
-            } = await Promise.all([n.e("33563"), n.e("88596")]).then(n.bind(n, 719847));
+            } = await Promise.all([n.e("33563"), n.e("7194")]).then(n.bind(n, 719847));
             return n => (0, i.jsx)(e, {
                 appId: t.id,
-                guildId: s,
+                guildId: a,
                 ...n
             })
         })
-    }, [t, s]);
-    return (0, i.jsx)(r.Button, {
+    }, [t, a]);
+    return (0, i.jsx)(s.Button, {
         size: "sm",
         onClick: d,
-        icon: r.Uzv,
+        icon: s.Uzv,
         text: o.intl.format(o.t.XDRjs5, {
             appName: t.name
         })

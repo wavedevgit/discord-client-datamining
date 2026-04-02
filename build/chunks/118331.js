@@ -1,17 +1,17 @@
 /** chunk id: 118331 params = (module,exports,require) **/
 n.d(t, {
-    d: () => l
+    d: () => r
 });
 var i = n(681154),
-    a = n(155718);
-let r = new Set([i.ContentInventoryEntryType.TOP_ARTIST, i.ContentInventoryEntryType.TOP_GAME, i.ContentInventoryEntryType.PLAYED_GAME, i.ContentInventoryEntryType.WATCHED_MEDIA, i.ContentInventoryEntryType.LISTENED_SESSION, i.ContentInventoryEntryType.LAUNCHED_ACTIVITY]);
+    l = n(155718);
+let s = new Set([i.ContentInventoryEntryType.TOP_ARTIST, i.ContentInventoryEntryType.TOP_GAME, i.ContentInventoryEntryType.PLAYED_GAME, i.ContentInventoryEntryType.WATCHED_MEDIA, i.ContentInventoryEntryType.LISTENED_SESSION, i.ContentInventoryEntryType.LAUNCHED_ACTIVITY]);
 
-function l(e) {
-    let t = (e.components ?? []).filter(e => e.type === a.I5.CONTENT_INVENTORY_ENTRY);
+function r(e) {
+    let t = (e.components ?? []).filter(e => e.type === l.I5.CONTENT_INVENTORY_ENTRY);
     return 0 === t.length || t.some(e => {
         let {
             contentInventoryEntry: t
         } = e;
-        return !r.has(t.content_type)
+        return !s.has(t.content_type)
     })
 }

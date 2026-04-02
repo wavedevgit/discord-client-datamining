@@ -3,10 +3,10 @@ n.d(t, {
     A: () => x
 });
 var i = n(627968),
-    a = n(64700),
-    r = n(172218),
-    l = n(607399),
-    s = n(417597),
+    l = n(64700),
+    s = n(172218),
+    r = n(607399),
+    a = n(417597),
     o = n(485724),
     d = n(529200),
     c = n(611010),
@@ -16,35 +16,35 @@ var i = n(627968),
     h = n(212534),
     p = n(652215),
     g = n(985018),
-    A = n(540452);
+    A = n(746717);
 
 function x(e) {
     let {
         code: t,
         message: n
-    } = e, [x, f, C] = (0, s.yK)([h.A], () => [h.A.getApplication(t), h.A.isInvalidApplication(t), h.A.getApplicationFetchState(t)], [t]), I = (0, s.bG)([u.A], () => u.A.getGuildId() ?? void 0), [E, b] = a.useState(!1), v = a.useCallback(e => {
-        e && b(!0)
-    }, []), T = (0, r.K)(v), S = a.useCallback(() => {
+    } = e, [x, f, C] = (0, a.yK)([h.A], () => [h.A.getApplication(t), h.A.isInvalidApplication(t), h.A.getApplicationFetchState(t)], [t]), E = (0, a.bG)([u.A], () => u.A.getGuildId() ?? void 0), [I, v] = l.useState(!1), b = l.useCallback(e => {
+        e && v(!0)
+    }, []), T = (0, s.K)(b), N = l.useCallback(() => {
         _.default.track(p.HAw.APP_DIRECTORY_PROFILE_EMBED_VIEWED, {
             application_id: t,
-            device_platform: l.Fr ? "mobile_web" : "desktop_web",
+            device_platform: r.Fr ? "mobile_web" : "desktop_web",
             sender_user_id: n.author.id,
-            guild_id: I,
+            guild_id: E,
             channel_id: n.channel_id
         })
-    }, [t, I, n.author.id, n.channel_id]);
-    return (a.useEffect(() => {
+    }, [t, E, n.author.id, n.channel_id]);
+    return (l.useEffect(() => {
         (0, m.eP)(t)
-    }, [t]), a.useEffect(() => {
-        E && C === h.e.FETCHED && S()
-    }, [E, C, S]), a.useEffect(() => {
-        E && f && _.default.track(p.HAw.APP_DIRECTORY_PROFILE_INVALID_EMBED_VIEWED, {
-            device_platform: l.Fr ? "mobile_web" : "desktop_web",
+    }, [t]), l.useEffect(() => {
+        I && C === h.e.FETCHED && N()
+    }, [I, C, N]), l.useEffect(() => {
+        I && f && _.default.track(p.HAw.APP_DIRECTORY_PROFILE_INVALID_EMBED_VIEWED, {
+            device_platform: r.Fr ? "mobile_web" : "desktop_web",
             sender_user_id: n.author.id,
-            guild_id: I,
+            guild_id: E,
             channel_id: n.channel_id
         })
-    }, [E, I, f, n.author.id, n.channel_id]), f) ? (0, i.jsxs)(d.A, {
+    }, [I, E, f, n.author.id, n.channel_id]), f) ? (0, i.jsxs)(d.A, {
         containerRef: T,
         children: [(0, i.jsx)(d.A.Header, {
             text: g.intl.string(g.t.j4KtLa)
@@ -70,7 +70,7 @@ function x(e) {
     }) : (0, i.jsx)(o.W, {
         app: c.Ay.createFromServer(x),
         linkType: o.J.APP_DISCOVERY,
-        onView: S,
+        onView: N,
         message: n
     })
 }

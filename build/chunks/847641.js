@@ -4,23 +4,23 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var a = n(503698),
-    r = n.n(a),
-    l = n(582754),
-    s = n(397927),
+var l = n(503698),
+    s = n.n(l),
+    r = n(582754),
+    a = n(397927),
     o = n(736653),
     d = n(985018),
-    c = n(514535);
+    c = n(927504);
 let u = function(e) {
     let {
         className: t,
         color: n = "text-strong",
-        textOpacity: a = .9
-    } = e, u = (0, o.DP)(), _ = (0, l.Mw)(u);
-    return (0, i.jsxs)(s.Text, {
+        textOpacity: l = .9
+    } = e, u = (0, o.DP)(), _ = (0, r.Mw)(u);
+    return (0, i.jsxs)(a.Text, {
         variant: "text-xxs/medium",
         color: n,
-        className: r()(c.P, t),
+        className: s()(c.P, t),
         children: [(0, i.jsx)("span", {
             className: c.r,
             style: {
@@ -28,7 +28,7 @@ let u = function(e) {
             }
         }), (0, i.jsx)("span", {
             style: {
-                opacity: a
+                opacity: l
             },
             children: d.intl.string(d.t.o6FLcF)
         })]

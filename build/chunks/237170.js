@@ -12,7 +12,7 @@ var i, r = n(627968),
     d = n(120340),
     E = n(196645),
     u = n(985018),
-    _ = n(875786),
+    _ = n(885083),
     A = ((i = {})[i.INTRO = 0] = "INTRO", i[i.SAFETY_TIPS = 1] = "SAFETY_TIPS", i[i.TAKE_ACTION = 2] = "TAKE_ACTION", i);
 let h = t => {
     let {

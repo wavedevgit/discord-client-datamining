@@ -4,11 +4,11 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var a = n(397927),
-    r = n(29352),
-    l = n(652215),
-    s = n(985018),
-    o = n(185823);
+var l = n(397927),
+    s = n(29352),
+    r = n(652215),
+    a = n(985018),
+    o = n(596340);
 
 function d(e) {
     let t, {
@@ -19,17 +19,17 @@ function d(e) {
         u = n.interactionMetadata?.ephemerality_reason,
         _ = () => d(n, !0);
     if (null != u) {
-        let e = (0, r.R)(u);
+        let e = (0, s.R)(u);
         t = (0, i.jsx)("div", {
             className: o.rd,
-            children: s.intl.format(s.t.wx1tLQ, {
+            children: a.intl.format(a.t.wx1tLQ, {
                 handleDelete: _,
                 reason: e
             })
         })
-    } else t = n.type === l.lAJ.STAGE_RAISE_HAND ? s.intl.format(s.t["qDAX++"], {
+    } else t = n.type === r.lAJ.STAGE_RAISE_HAND ? a.intl.format(a.t["qDAX++"], {
         handleDelete: _
-    }) : s.intl.format(s.t.uX3ecL, {
+    }) : a.intl.format(a.t.uX3ecL, {
         count: 1,
         countMessages: 1,
         handleDelete: _
@@ -37,7 +37,7 @@ function d(e) {
     return (0, i.jsxs)("div", {
         className: o.XO,
         onClick: e => e.stopPropagation(),
-        children: [(0, i.jsx)(a.bMW, {
+        children: [(0, i.jsx)(l.bMW, {
             size: "xs",
             color: "currentColor",
             className: o.Kk

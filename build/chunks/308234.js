@@ -3,33 +3,33 @@ n.d(t, {
     A: () => u
 });
 var i = n(627968),
-    a = n(64700),
-    r = n(503698),
-    l = n.n(r),
-    s = n(397927),
+    l = n(64700),
+    s = n(503698),
+    r = n.n(s),
+    a = n(397927),
     o = n(415350),
-    d = n(995282),
-    c = n(830684);
+    d = n(726169),
+    c = n(782691);
 
 function u(e) {
     let {
         color: t,
         className: n,
-        variant: r,
+        variant: s,
         text: u,
         lineClamp: _
-    } = e, m = (0, s.$Il)(), h = a.useMemo(() => null == u ? null : (0, o.A)(u, !0, {
+    } = e, m = (0, a.$Il)(), h = l.useMemo(() => null == u ? null : (0, o.A)(u, !0, {
         allowHeading: null == _,
         allowList: null == _,
         initialHeaderLevel: m
     }), [u, _, m]);
-    return (0, i.jsx)(s.Text, {
-        className: l()(n, c.PT, {
+    return (0, i.jsx)(a.Text, {
+        className: r()(n, c.PT, {
             [d.E]: null != _ && _ > 1,
             [d.D]: 1 === _
         }),
         color: t,
-        variant: r,
+        variant: s,
         lineClamp: _,
         children: h
     })

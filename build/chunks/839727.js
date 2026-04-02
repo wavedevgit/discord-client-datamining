@@ -40,7 +40,7 @@ var r = n(627968),
     j = n(654487),
     Q = n(838541),
     U = n(985018),
-    B = n(256181);
+    B = n(246878);
 let F = {
     tension: 250,
     friction: 5,
@@ -73,7 +73,7 @@ function Y(e) {
         targetRef: eo
     } = (0, S.O7)(), [eu, ec] = s.useState(!0 === i ? L.Q6.PLAYING : L.Q6.PAUSED), [ed, em] = s.useState(!1), [eE, e_] = s.useState(!1), ef = (0, y.Yh)(q), [ep, eS] = s.useState(ef.percentComplete), ev = s.useCallback(e => {
         ej(null), eS(e)
-    }, []), [eh, eg] = s.useState(!1), [eA, eC] = s.useState(!0), [ex, eT] = s.useState(!1), [eD, eI] = s.useState([]), [ey, eR] = s.useState(v.A.getEffectiveConnectionSpeed()), [eN, eO] = s.useState(0), [eb, eL] = s.useState(0), [eM, ek] = s.useState(!1), [eP, ew] = s.useState(!1), [eV, ej] = s.useState(null), eQ = s.useRef(!0), eU = s.useRef(null), eB = s.useRef(null), eF = (0, x.Kr)(e => e.videoProgress[q.id] ?? x.yc, u.x), eY = (0, x.Kr)(e => e.setVideoProgress), eH = (0, x.Kr)(e => e.muted), eG = (0, x.Kr)(e => e.setMuted), e$ = (0, x.Kr)(e => e.volume), eK = (0, x.Kr)(e => e.setVolume), eq = (0, c.bG)([f.A], () => f.A.useReducedMotion), eW = (0, s.useRef)(null), ez = (0, s.useRef)(null), eZ = (0, s.useRef)(null), eX = s.useRef(!0), eJ = q.userStatus?.completedAt != null, e0 = s.useMemo(() => q.config.features.includes(j.Li.FULL_EPISODE_VIDEO_QUEST), [q.config.features]), e1 = s.useRef(!1), [e6, e7] = s.useState(null), [e4, e5] = s.useState(!1), [e9, e8] = s.useState(!1), [e2, e3] = s.useState(!1), [te, tt] = s.useState(null), tn = eJ ? eW.current?.duration ?? 0 : Math.max(eF.maxTimestampSec, ef.progressSeconds), tr = s.useMemo(() => (0, I.L)({
+    }, []), [eh, eg] = s.useState(!1), [eA, eC] = s.useState(!0), [ex, eT] = s.useState(!1), [eD, eI] = s.useState([]), [ey, eR] = s.useState(v.A.getEffectiveConnectionSpeed()), [eN, eO] = s.useState(0), [eb, eL] = s.useState(0), [eM, ek] = s.useState(!1), [eP, ew] = s.useState(!1), [eV, ej] = s.useState(null), eQ = s.useRef(!0), eU = s.useRef(null), eB = s.useRef(null), eF = (0, x.Kr)(e => e.videoProgress[q.id] ?? x.yc, u.x), eY = (0, x.Kr)(e => e.setVideoProgress), eH = (0, x.Kr)(e => e.muted), eG = (0, x.Kr)(e => e.setMuted), e$ = (0, x.Kr)(e => e.volume), eK = (0, x.Kr)(e => e.setVolume), eq = (0, c.bG)([f.A], () => f.A.useReducedMotion), eW = (0, s.useRef)(null), ez = (0, s.useRef)(null), eZ = (0, s.useRef)(null), eX = s.useRef(!0), eJ = q.userStatus?.completedAt != null, e0 = s.useMemo(() => q.config.features.includes(j.Li.FULL_EPISODE_VIDEO_QUEST), [q.config.features]), e1 = s.useRef(!1), [e6, e7] = s.useState(null), [e4, e9] = s.useState(!1), [e5, e8] = s.useState(!1), [e3, e2] = s.useState(!1), [te, tt] = s.useState(null), tn = eJ ? eW.current?.duration ?? 0 : Math.max(eF.maxTimestampSec, ef.progressSeconds), tr = s.useMemo(() => (0, I.L)({
         quest: q,
         location: j.rE.VIDEO_MODAL
     }), [q]), ts = (0, m.g)(eJ, eF, ef.progressSeconds), [ti, ta] = s.useState(L.oA.MD), tl = {
@@ -122,8 +122,8 @@ function Y(e) {
     });
     let tI = s.useRef(null),
         ty = s.useCallback(() => {
-            clearTimeout(tI.current), e3(!0), tI.current = setTimeout(() => {
-                e3(!1)
+            clearTimeout(tI.current), e2(!0), tI.current = setTimeout(() => {
+                e2(!1)
             }, 1e3)
         }, []);
     s.useEffect(() => () => {
@@ -136,7 +136,7 @@ function Y(e) {
             getCurrentVideoTime: tR,
             isPlaying: eu === L.Q6.PLAYING,
             isMetadataLoaded: e4,
-            isInitialSeekComplete: e9,
+            isInitialSeekComplete: e5,
             onAnalytics: tA,
             emitIntervalMs: S.KI,
             minSegmentDurationMs: S._4
@@ -194,7 +194,7 @@ function Y(e) {
             tr.info(`[QV] | handleSeekBackIncrement | newTime: ${e}`), tH(e), eu === L.Q6.ENDED && tO(L.Q6.PAUSED), tv(C.uF.VIDEO_MODAL, D.Cy.SEEK_BACKWARD)
         },
         tB = () => {
-            if (null == eW.current || !t9) return;
+            if (null == eW.current || !t5) return;
             let e = Math.min(eW.current.currentTime + 10, tn);
             tr.info(`[QV] | handleSeekForwardIncrement | newTime: ${e}`), tH(e), eu !== L.Q6.ENDED && e >= eW.current.duration && tO(L.Q6.ENDED), tv(C.uF.VIDEO_MODAL, D.Cy.SEEK_FORWARD)
         };
@@ -316,11 +316,11 @@ function Y(e) {
     }), [tj, tJ, eq, eM, tX]);
     let t7 = eu === L.Q6.ENDED,
         t4 = s.useMemo(() => (0, T.tW)(q, T.fY.VIDEO_PLAYER_THUMBNAIL, void 0, !1), [q]),
-        t5 = s.useMemo(() => (0, T.tW)(q, T.fY.VIDEO_PLAYER_CAPTION, void 0, !1), [q]),
-        t9 = eJ || eF.maxTimestampSec >= (eW.current?.currentTime ?? 0) + 1,
+        t9 = s.useMemo(() => (0, T.tW)(q, T.fY.VIDEO_PLAYER_CAPTION, void 0, !1), [q]),
+        t5 = eJ || eF.maxTimestampSec >= (eW.current?.currentTime ?? 0) + 1,
         t8 = s.useMemo(() => null === (0, T.tW)(q, T.fY.VIDEO_PLAYER_TRANSCRIPT, void 0, !1), [q]),
-        t2 = J ? 20 : 12,
-        t3 = 20 * !!J,
+        t3 = J ? 20 : 12,
+        t2 = 20 * !!J,
         ne = eJ && eP;
     return (0, r.jsx)(E.DUT, {
         className: B.W6,
@@ -378,7 +378,7 @@ function Y(e) {
                     tr.info(`[QV] | handleLoadedData: loadingFirstChunk: ${eA}`), eA && (tE(null != eU.current ? performance.now() - eU.current : null), eC(!1), td())
                 },
                 onLoadedMetadata: e => {
-                    null != eW.current && (tr.info(`[QV] | handleLoadedMetadata | videoAssetId: ${tu}`), e5(!0), tu !== T.fY.VIDEO_PLAYER_VIDEO_HLS && tH(ts), eH ? eW.current.volume = 0 : eW.current.volume = e$)
+                    null != eW.current && (tr.info(`[QV] | handleLoadedMetadata | videoAssetId: ${tu}`), e9(!0), tu !== T.fY.VIDEO_PLAYER_VIDEO_HLS && tH(ts), eH ? eW.current.volume = 0 : eW.current.volume = e$)
                 },
                 onLoadStart: () => {
                     eU.current = performance.now(), tm(ey), tr.info(`[QV] | handleLoadStart | loadingStartTime: ${eU.current}`)
@@ -418,9 +418,9 @@ function Y(e) {
                     tr.info("[QV] | handleVideoClick"), tG()
                 },
                 crossOrigin: "anonymous",
-                children: [null != t5 && (0, r.jsx)("track", {
+                children: [null != t9 && (0, r.jsx)("track", {
                     ref: ez,
-                    src: t5.url,
+                    src: t9.url,
                     label: "English",
                     kind: "captions",
                     srcLang: "en",
@@ -520,7 +520,7 @@ function Y(e) {
                         output: [0, 1]
                     })], e => `${e}`)
                 }
-            }), e2 && (0, r.jsx)("div", {
+            }), e3 && (0, r.jsx)("div", {
                 className: a()(B.yf, {
                     [B.ZH]: eu === L.Q6.PLAYING,
                     [B.v7]: eu === L.Q6.PAUSED
@@ -540,7 +540,7 @@ function Y(e) {
                 style: {
                     translateY: (0, o.to)([tX.to({
                         range: [0, 1],
-                        output: [-t3, -tl[ti]]
+                        output: [-t2, -tl[ti]]
                     })], e => `${e}px`)
                 },
                 children: (0, r.jsx)(E.Text, {
@@ -562,7 +562,7 @@ function Y(e) {
                         transform: (0, o.to)([tX.to({
                             range: [1, 0],
                             output: [0, 1]
-                        })], e => `translateY(-${e*t3}px)`)
+                        })], e => `translateY(-${e*t2}px)`)
                     },
                     children: (0, r.jsx)(w.A, {
                         percent: null != eV ? eV : ep,
@@ -589,7 +589,7 @@ function Y(e) {
                         paddingTop: (0, o.to)([tX.to({
                             range: [0, 1],
                             output: [0, 1]
-                        })], e => `${e*e*t2}px`),
+                        })], e => `${e*e*t3}px`),
                         paddingBottom: (0, o.to)([tX.to({
                             range: [0, 1],
                             output: [0, 1]
@@ -606,8 +606,8 @@ function Y(e) {
                         playerState: eu,
                         animSpring: tX,
                         visible: tj,
-                        seekForwardEnabled: t9,
-                        hideCaptionBtn: null == t5,
+                        seekForwardEnabled: t5,
+                        hideCaptionBtn: null == t9,
                         hideTranscriptBtn: t8,
                         hideSkipButtons: "portrait" === G,
                         size: ti,

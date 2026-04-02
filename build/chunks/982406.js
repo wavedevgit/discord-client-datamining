@@ -1,33 +1,33 @@
 /** chunk id: 982406 params = (module,exports,require) **/
 a.d(t, {
-    A: () => u
+    A: () => p
 });
 var n = a(627968),
-    r = a(64700),
-    o = a(503698),
-    i = a.n(o),
+    o = a(64700),
+    r = a(503698),
+    i = a.n(r),
     c = a(776231),
-    l = a(664111),
-    s = a(67281),
-    _ = a(838541),
-    d = a(525078);
+    _ = a(664111),
+    l = a(67281),
+    s = a(838541),
+    d = a(878159);
 
-function u(e) {
+function p(e) {
     let {
         attachment: t,
         posterUrl: a,
-        guildId: o,
-        className: u
-    } = e, m = t.width ?? 0, p = t.height ?? 0, b = m >= p ? "landscape" : "portrait", C = (0, c.AE)({
+        guildId: r,
+        className: p
+    } = e, m = t.width ?? 0, u = t.height ?? 0, b = m >= u ? "landscape" : "portrait", f = (0, c.AE)({
         src: a,
         width: m,
-        height: p
-    }), f = r.useCallback(e => {
+        height: u
+    }), C = o.useCallback(e => {
         let {
             playerState: a,
-            isControlBarExpanded: r
+            isControlBarExpanded: o
         } = e;
-        return (0, n.jsx)(s.A, {
+        return (0, n.jsx)(l.A, {
             createdAt: null != t.clip_created_at ? Date.parse(t.clip_created_at) : void 0,
             participantIds: t.clip_participants?.map(e => {
                 let {
@@ -37,27 +37,27 @@ function u(e) {
             }) ?? [],
             applicationId: t.application?.id,
             title: t.title,
-            guildId: o,
+            guildId: r,
             playerState: a,
-            isControlBarExpanded: r
+            isControlBarExpanded: o
         })
-    }, [t, o]);
+    }, [t, r]);
     return (0, n.jsx)("div", {
-        className: i()(d.k, u),
+        className: i()(d.k, p),
         style: {
-            aspectRatio: `${m} / ${p}`,
-            maxHeight: _.Rk
+            aspectRatio: `${m} / ${u}`,
+            maxHeight: s.Rk
         },
-        children: (0, n.jsx)(l.A, {
+        children: (0, n.jsx)(_.A, {
             src: t.url,
             downloadUrl: t.url,
             downloadContentType: t.content_type,
-            poster: C,
+            poster: f,
             posterPlaceholder: t.placeholder,
             posterPlaceholderVersion: t.placeholder_version,
             active: !1,
             orientation: b,
-            renderPersistentOverlay: f,
+            renderPersistentOverlay: C,
             targetTimeSec: 1 / 0,
             parentTransitionState: null,
             onOptimisticProgressUpdate: () => {},

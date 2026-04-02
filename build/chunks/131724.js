@@ -4,10 +4,10 @@ n.d(t, {
     M: () => h
 });
 var i = n(723702),
-    a = n(850670),
-    r = n(206589),
-    l = n(125017),
-    s = n(625248),
+    l = n(850670),
+    s = n(206589),
+    r = n(125017),
+    a = n(625248),
     o = n(833349),
     d = n(287613),
     c = n(659051),
@@ -29,8 +29,8 @@ function m(e) {
         canJoin: !1,
         remoteJoinPlatform: null
     };
-    let x = (0, l._)(t);
-    if (!(0, d.A)(x) || (0, u.U)(x) || (0, r.w)(n, t) || (0, a.v)(m)) return {
+    let x = (0, r._)(t);
+    if (!(0, d.A)(x) || (0, u.U)(x) || (0, s.w)(n, t) || (0, l.v)(m)) return {
         canJoin: !1,
         remoteJoinPlatform: null
     };
@@ -39,7 +39,7 @@ function m(e) {
         remoteJoinPlatform: null
     };
     if (m.activity?.type === _.xL.JOIN && null != t) {
-        let e = (0, s.l)(t);
+        let e = (0, a.l)(t);
         if (null != e) return {
             canJoin: !0,
             remoteJoinPlatform: e
@@ -54,6 +54,6 @@ function m(e) {
     }
 }
 
-function h(e, t, n, a) {
-    return !(null == e || !(0, c.A)(e, n, a.id) || !(0, o.A)(e, _.jUm.SYNC) || !i.isPlatformEmbedded || (0, r.w)(t, e))
+function h(e, t, n, l) {
+    return !(null == e || !(0, c.A)(e, n, l.id) || !(0, o.A)(e, _.jUm.SYNC) || !i.isPlatformEmbedded || (0, s.w)(t, e))
 }

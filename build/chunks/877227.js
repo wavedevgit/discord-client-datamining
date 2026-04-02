@@ -1,27 +1,27 @@
 /** chunk id: 877227 params = (module,exports,require) **/
-let a;
+let i;
 n.d(t, {
-    JK: () => c,
-    dI: () => o,
+    JK: () => o,
+    dI: () => d,
     pX: () => s
 }), n(321073);
-var l = n(830845),
-    i = n(353719),
-    r = n.n(i);
+var a = n(830845),
+    l = n(353719),
+    r = n.n(l);
 
 function s(e) {
-    a.push(e)
+    i.push(e)
 }
 
-function c() {
-    return a
+function o() {
+    return i
 }
 
-function o(e) {
+function d(e) {
     return t => {
         if (null != e) return null != r()(t, {
             end: !1
         }).exec(e.history.location.pathname)
     }
 }
-a = (0, l.zR)()
+i = (0, a.zR)()

@@ -1,23 +1,23 @@
 /** chunk id: 645034 params = (module,exports,require) **/
 t.d(n, {
-    A: () => d
+    A: () => r
 });
-var i = t(64700),
-    l = t(198982);
+var a = t(64700),
+    i = t(198982);
 
-function d(e, n) {
-    let [t, d] = i.useState(!1), [r, s] = i.useState(null);
+function r(e, n) {
+    let [t, r] = a.useState(!1), [c, l] = a.useState(null);
     return [async () => {
-        d(!0), s(null);
+        r(!0), l(null);
         try {
             let n = await e();
-            return d(!1), s(null), n
+            return r(!1), l(null), n
         } catch (t) {
-            let e = new l.LG(t);
-            return n?.(e), s(e), d(!1), null
+            let e = new i.LG(t);
+            return n?.(e), l(e), r(!1), null
         }
     }, {
         loading: t,
-        error: r
+        error: c
     }]
 }

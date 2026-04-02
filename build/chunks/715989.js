@@ -4,7 +4,7 @@ n.d(t, {
 });
 var i = n(627968),
     l = n(837921),
-    s = n(426827);
+    s = n(328034);
 let a = l.Ay.getEnableHardwareAcceleration() ? function() {
     return (0, i.jsx)("div", {
         children: (0, i.jsxs)("div", {

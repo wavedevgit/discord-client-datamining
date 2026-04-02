@@ -4,10 +4,10 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var a = n(503698),
-    r = n.n(a),
-    l = n(311907),
-    s = n(397927),
+var l = n(503698),
+    s = n.n(l),
+    r = n(311907),
+    a = n(397927),
     o = n(442433),
     d = n(143413),
     c = n(734057),
@@ -19,29 +19,29 @@ var a = n(503698),
     g = n(747926),
     A = n(652215),
     x = n(985018),
-    f = n(944450);
+    f = n(208503);
 
 function C(e) {
     let {
         message: t,
         compact: n
-    } = e, a = (0, l.bG)([c.A], () => c.A.getChannel(u.default.castMessageIdAsChannelId(t.id)));
-    return null == a ? null : (0, i.jsx)(I, {
-        channel: a,
+    } = e, l = (0, r.bG)([c.A], () => c.A.getChannel(u.default.castMessageIdAsChannelId(t.id)));
+    return null == l ? null : (0, i.jsx)(E, {
+        channel: l,
         compact: n,
         isSystemMessage: (0, d.A)(t)
     })
 }
 
-function I(e) {
+function E(e) {
     var t;
-    let a, d, c, {
+    let l, d, c, {
             channel: u,
             compact: C,
-            isSystemMessage: I
+            isSystemMessage: E
         } = e,
-        E = (0, l.bG)([m.A], () => m.A.getCount(u.id)),
-        b = (t = u, a = (0, l.bG)([m.A], () => m.A.getMostRecentMessage(t.id)), d = (0, l.bG)([m.A], () => m.A.getCount(t.id)), c = (0, h.JO)(t), t.threadMetadata?.archived ? x.intl.string(x.t.ZTo4HS) : null == d || 0 === d ? x.intl.string(x.t.HYtNyE) : null == a ? (0, i.jsxs)(i.Fragment, {
+        I = (0, r.bG)([m.A], () => m.A.getCount(u.id)),
+        v = (t = u, l = (0, r.bG)([m.A], () => m.A.getMostRecentMessage(t.id)), d = (0, r.bG)([m.A], () => m.A.getCount(t.id)), c = (0, h.JO)(t), t.threadMetadata?.archived ? x.intl.string(x.t.ZTo4HS) : null == d || 0 === d ? x.intl.string(x.t.HYtNyE) : null == l ? (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)("span", {
                 children: x.intl.string(x.t.ZTo4HS)
             }), (0, i.jsx)("span", {
@@ -50,21 +50,21 @@ function I(e) {
             })]
         }) : (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)(p.A, {
-                message: a,
+                message: l,
                 channel: t
             }), (0, i.jsx)("span", {
                 className: f.vE,
                 children: (0, h.aK)(c)
             })]
         })),
-        v = null != E && E > 0;
+        b = null != I && I > 0;
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)("div", {
-            className: r()(f.GI, {
+            className: s()(f.GI, {
                 [f.E]: !C,
-                [f.E_]: I
+                [f.E_]: E
             })
-        }), (0, i.jsx)(s.DUT, {
+        }), (0, i.jsx)(a.DUT, {
             onClick: function(e) {
                 e.stopPropagation(), (0, g.JA)(u, e.shiftKey)
             },
@@ -86,29 +86,29 @@ function I(e) {
                 })
             },
             "aria-roledescription": x.intl.string(x.t["8ipxiY"]),
-            className: r()(f.kL, {
-                [f.og]: I
+            className: s()(f.kL, {
+                [f.og]: E
             }),
-            children: (0, i.jsxs)(s.RDc, {
+            children: (0, i.jsxs)(a.RDc, {
                 children: [(0, i.jsxs)("div", {
                     className: f.kq,
-                    children: [(0, i.jsx)(s.AC4, {
+                    children: [(0, i.jsx)(a.AC4, {
                         children: x.intl.string(x.t["7Xm5QI"])
                     }), (0, i.jsx)("span", {
                         className: f.UU,
                         children: u.name
                     }), (0, i.jsx)("span", {
                         className: f.lO,
-                        "aria-hidden": !v,
-                        children: (0, _.ub)(E, u.id)
+                        "aria-hidden": !b,
+                        children: (0, _.ub)(I, u.id)
                     })]
-                }), (0, i.jsx)(s.Text, {
+                }), (0, i.jsx)(a.Text, {
                     variant: "text-sm/normal",
                     "aria-hidden": !0,
                     lineClamp: 1,
                     color: "text-default",
                     className: f.sb,
-                    children: b
+                    children: v
                 })]
             })
         })]

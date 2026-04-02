@@ -3,15 +3,15 @@ n.d(t, {
     A: () => m
 });
 var i = n(627968),
-    a = n(64700),
-    r = n(311907),
-    l = n(80682),
-    s = n(465364),
+    l = n(64700),
+    s = n(311907),
+    r = n(80682),
+    a = n(465364),
     o = n(448368),
     d = n(943220),
     c = n(994500),
     u = n(838541),
-    _ = n(812782);
+    _ = n(767283);
 
 function m(e) {
     let {
@@ -20,14 +20,14 @@ function m(e) {
     } = e, {
         isBlocked: m,
         isIgnored: h
-    } = (0, r.cf)([c.A], () => ({
+    } = (0, s.cf)([c.A], () => ({
         isBlocked: c.A.isBlockedForMessage(t),
         isIgnored: c.A.isIgnoredForMessage(t)
-    }), [t]), p = a.useMemo(() => ({
+    }), [t]), p = l.useMemo(() => ({
         [n.guild_id]: [t.author.id]
     }), [n.guild_id, t.author.id]);
-    (0, l.Eq)(p, "ThreadMessageAccessoryMessage");
-    let g = a.useMemo(() => null != t.content && "" !== t.content ? (0, s.Ay)(t, {
+    (0, r.Eq)(p, "ThreadMessageAccessoryMessage");
+    let g = l.useMemo(() => null != t.content && "" !== t.content ? (0, a.Ay)(t, {
         formatInline: !0
     }).content : null, [t]);
     return (0, i.jsxs)("div", {
@@ -42,21 +42,21 @@ function m(e) {
             compact: !0
         }), (0, i.jsx)("div", {
             className: _.Au,
-            children: function(e, t, n, a) {
+            children: function(e, t, n, l) {
                 let {
-                    contentPlaceholder: r,
-                    renderedContent: l,
-                    leadingIcon: s,
+                    contentPlaceholder: s,
+                    renderedContent: r,
+                    leadingIcon: a,
                     trailingIcon: d
-                } = (0, o.o)(e, t, n, a, _.tP, {
+                } = (0, o.o)(e, t, n, l, _.tP, {
                     trailingIconClass: _._v,
                     leadingIconClass: _.a5,
                     iconSize: u.eJ
                 });
                 return (0, i.jsxs)(i.Fragment, {
-                    children: [s, l ?? (0, i.jsx)("span", {
+                    children: [a, r ?? (0, i.jsx)("span", {
                         className: _.dp,
-                        children: r
+                        children: s
                     }), d]
                 })
             }(t, g, m, h)

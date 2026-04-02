@@ -1,12 +1,12 @@
 /** chunk id: 867461 params = (module,exports,require) **/
 n.d(t, {
-    l: () => E
+    l: () => I
 });
 var i = n(627968),
-    a = n(64700),
-    r = n(503698),
-    l = n.n(r),
-    s = n(158954),
+    l = n(64700),
+    s = n(503698),
+    r = n.n(s),
+    a = n(158954),
     o = n(311907),
     d = n(827734),
     c = n(736653),
@@ -19,19 +19,19 @@ var i = n(627968),
     A = n(270045),
     x = n(57718),
     f = n(985018),
-    C = n(180715);
+    C = n(389846);
 
-function I(e) {
+function E(e) {
     let {
         children: t,
         variant: n = "default"
     } = e;
     return (0, i.jsx)("div", {
-        className: l()(C.Io, {
+        className: r()(C.Io, {
             [C.tV]: "brand" === n,
             "theme-light": "default" === n
         }),
-        children: (0, i.jsx)(s.EYj, {
+        children: (0, i.jsx)(a.EYj, {
             variant: "eyebrow",
             color: "brand" === n ? "always-white" : "text-default",
             className: C.Xi,
@@ -40,16 +40,16 @@ function I(e) {
     })
 }
 
-function E(e) {
+function I(e) {
     let {
         quest: t,
         isInteracting: n,
-        location: r,
-        sourceQuestContent: l
-    } = e, E = (0, h.Ic)(t), b = t.userStatus?.claimedAt != null, v = (0, m.S5)(t.config.expiresAt, {
+        location: s,
+        sourceQuestContent: r
+    } = e, I = (0, h.Ic)(t), v = t.userStatus?.claimedAt != null, b = (0, m.S5)(t.config.expiresAt, {
         month: "numeric",
         day: "numeric"
-    }), T = (0, o.bG)([_.A], () => _.A.getQuestHomeHeroConfig()), S = a.useMemo(() => null != T && (0, p.I0)(T, t.id), [T, t.id]), y = (0, c.Ay)(), N = (0, s.Mwr)(y) ? "text-muted" : "always-white";
+    }), T = (0, o.bG)([_.A], () => _.A.getQuestHomeHeroConfig()), N = l.useMemo(() => null != T && (0, p.I0)(T, t.id), [T, t.id]), S = (0, c.Ay)(), y = (0, a.Mwr)(S) ? "text-muted" : "always-white";
     return (0, i.jsxs)("div", {
         className: C.kL,
         children: [(0, i.jsx)("div", {
@@ -72,29 +72,29 @@ function E(e) {
                 className: C.PG,
                 children: [(0, i.jsxs)("div", {
                     className: C.mY,
-                    children: [(S || t.preview) && (0, i.jsxs)(s.BJc, {
+                    children: [(N || t.preview) && (0, i.jsxs)(a.BJc, {
                         className: C.Bv,
                         direction: "horizontal",
                         fullWidth: !1,
                         gap: 8,
-                        children: [S && !E && (0, i.jsx)(I, {
+                        children: [N && !I && (0, i.jsx)(E, {
                             children: f.intl.string(f.t.Jt6u7B)
-                        }), t.preview && (0, i.jsx)(I, {
+                        }), t.preview && (0, i.jsx)(E, {
                             variant: "brand",
                             children: f.intl.string(f.t.SKNnqq)
                         })]
                     }), (0, i.jsx)(A.C, {
-                        questContent: r,
+                        questContent: s,
                         quest: t,
                         hideLearnMore: !0,
                         shouldShowDisclosure: !0,
                         showShareLink: !0,
-                        sourceQuestContent: l,
-                        children: e => (0, i.jsx)(s.DUT, {
+                        sourceQuestContent: r,
+                        children: e => (0, i.jsx)(a.DUT, {
                             ...e,
                             className: C.iI,
                             "aria-label": f.intl.string(f.t.DEoVWZ),
-                            children: (0, i.jsx)(s.jNK, {
+                            children: (0, i.jsx)(a.jNK, {
                                 size: "md",
                                 color: "currentColor",
                                 className: C.A9
@@ -111,31 +111,31 @@ function E(e) {
                     className: C.E_,
                     children: [(0, i.jsxs)("span", {
                         className: C.O,
-                        children: [(0, i.jsx)(s.EYj, {
+                        children: [(0, i.jsx)(a.EYj, {
                             variant: "text-sm/medium",
-                            color: N,
+                            color: y,
                             children: f.intl.string(f.t.VAbKhK)
                         }), (0, i.jsx)(u.A, {
                             className: C.w$,
                             size: 16,
                             color: d.A.unsafe_rawColors.GREEN_360.css,
                             allowFullSizedIcon: !0,
-                            children: (0, i.jsx)(s.BNr, {
+                            children: (0, i.jsx)(a.BNr, {
                                 color: d.A.unsafe_rawColors.WHITE.css,
                                 size: "custom",
                                 width: 13,
                                 height: 13
                             })
-                        }), (0, i.jsx)(s.EYj, {
+                        }), (0, i.jsx)(a.EYj, {
                             variant: "text-sm/medium",
                             color: "always-white",
                             children: t.config.cosponsorMetadata?.name ?? t.config.messages.gamePublisher
                         })]
-                    }), E || b ? null : (0, i.jsx)(s.EYj, {
+                    }), I || v ? null : (0, i.jsx)(a.EYj, {
                         variant: "text-sm/medium",
-                        color: N,
+                        color: y,
                         children: f.intl.format(f.t["7D8r4F"], {
-                            expiryDate: v
+                            expiryDate: b
                         })
                     })]
                 })]

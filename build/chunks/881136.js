@@ -113,7 +113,7 @@ function A(e) {
         action: () => (0, s.mMO)(async () => {
             let {
                 default: t
-            } = await Promise.all([i.e("64992"), i.e("97184")]).then(i.bind(i, 401539));
+            } = await Promise.all([i.e("64992"), i.e("94278")]).then(i.bind(i, 401539));
             return i => (0, n.jsx)(t, {
                 ...i,
                 guildId: e.id

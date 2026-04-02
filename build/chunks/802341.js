@@ -16,7 +16,7 @@ var l = n(627968),
     m = n(576705),
     g = n(874026),
     h = n(652215),
-    A = n(110347);
+    A = n(366e3);
 
 function f(e) {
     let {
@@ -79,7 +79,7 @@ function p(e) {
     }), r = (0, s.bG)([d.A], () => d.A.getChannel(n.channel_id)?.isVocal()), g = (0, s.bG)([m.A], () => {
         if (null == a) return !1;
         let e = (0, u.r9)() && (0, u.UK)(a.id);
-        return (a.isPrivate() || m.A.can(h.xBc.CONNECT, a)) && !e
+        return (a.isPrivate() || m.A.can(h.xBc.VIEW_CHANNEL, a) && m.A.can(h.xBc.CONNECT, a)) && !e
     });
     return null != i && null != a && a.isGuildVocal() && g && !r ? (0, l.jsx)(f, {
         channel: a,

@@ -1,33 +1,33 @@
 /** chunk id: 561393 params = (module,exports,require) **/
 n.d(t, {
-    A: () => s
+    A: () => a
 });
 var i = n(627968),
-    a = n(792620),
-    r = n(96146),
-    l = n(836261);
-let s = function(e) {
+    l = n(792620),
+    s = n(96146),
+    r = n(836261);
+let a = function(e) {
     let {
         quest: t,
         taskType: n,
-        surface: s,
+        surface: a,
         analyticsCtxQuestContent: o,
         analyticsCtxSourceQuestContent: d,
         analyticsCtxQuestContentPosition: c,
         analyticsCtxQuestContentRowIndex: u,
         size: _
     } = e;
-    return (0, a.t)({
+    return (0, l.t)({
         quest: t
-    }) || (0, a.g5)(t) ? (0, i.jsx)(l.A, {
+    }) || (0, l.g5)(t) ? (0, i.jsx)(r.A, {
         quest: t,
-        surface: s,
+        surface: a,
         size: _,
         analyticsCtxQuestContent: o,
         analyticsCtxSourceQuestContent: d,
         analyticsCtxQuestContentPosition: c,
         analyticsCtxQuestContentRowIndex: u
-    }) : (0, i.jsx)(r.Ay, {
+    }) : (0, i.jsx)(s.Ay, {
         quest: t,
         taskType: n,
         size: _,

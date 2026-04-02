@@ -31,7 +31,7 @@ var a = n(627968),
     S = n(339984),
     b = n(693591),
     F = n(985018),
-    H = n(466256);
+    H = n(254875);
 let U = [{
     gif: n(203736),
     png: n(775788)
@@ -256,7 +256,7 @@ function P(e) {
         (0, u.mMO)(async () => {
             let {
                 default: l
-            } = await Promise.all([n.e("35929"), n.e("74571"), n.e("3142")]).then(n.bind(n, 142630));
+            } = await Promise.all([n.e("35929"), n.e("74571"), n.e("29077")]).then(n.bind(n, 142630));
             return n => (0, a.jsx)(l, {
                 imageUri: e,
                 file: t,

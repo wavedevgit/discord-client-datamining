@@ -1,23 +1,23 @@
 /** chunk id: 579970 params = (module,exports,require) **/
 n.d(t, {
-    q: () => l
+    q: () => r
 });
 var i = n(627968);
 n(64700);
-var a = n(397927),
-    r = n(500208);
+var l = n(397927),
+    s = n(500208);
 
-function l(e, t) {
-    (0, a.mMO)(async () => {
+function r(e, t) {
+    (0, l.mMO)(async () => {
         let {
-            default: a
+            default: l
         } = await Promise.all([n.e("49862"), n.e("67096")]).then(n.bind(n, 559947));
-        return n => (0, i.jsx)(a, {
+        return n => (0, i.jsx)(l, {
             guildId: e,
             productId: t,
             ...n
         })
     }, {
-        modalKey: r.DG
+        modalKey: s.DG
     })
 }

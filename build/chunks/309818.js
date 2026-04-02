@@ -1,12 +1,12 @@
 /** chunk id: 309818 params = (module,exports,require) **/
 n.d(t, {
-    A: () => E
+    A: () => I
 }), n(321073);
 var i = n(627968),
-    a = n(64700),
-    r = n(284009),
-    l = n.n(r),
-    s = n(158954),
+    l = n(64700),
+    s = n(284009),
+    r = n.n(s),
+    a = n(158954),
     o = n(311907),
     d = n(846293),
     c = n(793574),
@@ -20,57 +20,57 @@ var i = n(627968),
     x = n(168428),
     f = n(652215),
     C = n(985018),
-    I = n(147673);
+    E = n(366228);
 
-function E(e) {
+function I(e) {
     let t, {
             invite: n,
-            message: r,
-            currentUserId: E,
-            onTransitionToInviteChannel: b,
-            onAcceptInstantInvite: v
+            message: s,
+            currentUserId: I,
+            onTransitionToInviteChannel: v,
+            onAcceptInstantInvite: b
         } = e,
-        T = E === r.author.id,
-        S = n.state === f.elq.ACCEPTING,
-        y = (0, o.bG)([p.A], () => null != n.channel ? p.A.getChannel(n.channel.id) : null, [n]);
-    l()(null == y || y.isPrivate(), "must be a private channel");
+        T = I === s.author.id,
+        N = n.state === f.elq.ACCEPTING,
+        S = (0, o.bG)([p.A], () => null != n.channel ? p.A.getChannel(n.channel.id) : null, [n]);
+    r()(null == S || S.isPrivate(), "must be a private channel");
     let {
-        analyticsLocations: N
-    } = (0, u.Ay)(c.A.INVITE_EMBED), j = null != y, L = a.useCallback(() => {
+        analyticsLocations: y
+    } = (0, u.Ay)(c.A.INVITE_EMBED), j = null != S, L = l.useCallback(() => {
         let e = "noop";
-        j ? (b(), e = "transition") : (v(), e = "accept"), (0, d.he)({
+        j ? (v(), e = "transition") : (b(), e = "accept"), (0, d.he)({
             invite: n,
             action: e,
-            inviter_id: r.author.id,
-            invite_message_id: r.id,
-            invite_instance_id: (0, _._U)(n.code, r.id)
-        }, N)
-    }, [n, r, N, j, b, v]);
-    if (null == y) {
+            inviter_id: s.author.id,
+            invite_message_id: s.id,
+            invite_instance_id: (0, _._U)(n.code, s.id)
+        }, y)
+    }, [n, s, y, j, v, b]);
+    if (null == S) {
         if (null == n.channel) return (0, i.jsx)(x.A, {});
-        y = (0, h.OY)(n.channel), t = null != n.channel && null != n.channel.recipients ? n.channel.recipients : []
+        S = (0, h.OY)(n.channel), t = null != n.channel && null != n.channel.recipients ? n.channel.recipients : []
     } else {
-        t = y.recipients.reduce((e, t) => {
+        t = S.recipients.reduce((e, t) => {
             let n = g.default.getUser(t);
             return null != n && e.push(n), e
         }, []);
         let e = g.default.getCurrentUser();
         j && null != e && t.push(e)
     }
-    let R = y.name;
+    let R = S.name;
     (null == R || "" === R) && (R = t.length > 0 ? t.filter(A.Vq).map(e => e.username).join(", ") : C.intl.string(C.t.LJpTRF));
     let P = C.intl.string(C.t.XpeFYr),
-        w = "active";
-    j && (P = C.intl.string(C.t.cEnaWx), w = "secondary");
-    let D = C.intl.string(C.t["3p3/BK"]);
-    return T && (D = C.intl.string(C.t.qmtuXE)), (0, i.jsxs)(m.A, {
+        D = "active";
+    j && (P = C.intl.string(C.t.cEnaWx), D = "secondary");
+    let M = C.intl.string(C.t["3p3/BK"]);
+    return T && (M = C.intl.string(C.t.qmtuXE)), (0, i.jsxs)(m.A, {
         children: [(0, i.jsx)(m.A.Header, {
-            text: D
+            text: M
         }), (0, i.jsxs)(m.A.Body, {
             children: [(0, i.jsxs)("div", {
-                className: I.iH,
+                className: E.iH,
                 children: [(0, i.jsx)(m.A.Icon, {
-                    channel: y,
+                    channel: S,
                     onClick: j ? L : void 0
                 }), (0, i.jsx)(m.A.Info, {
                     title: R,
@@ -79,11 +79,11 @@ function E(e) {
                         members: t.length
                     })
                 })]
-            }), (0, i.jsx)(s.$nd, {
+            }), (0, i.jsx)(a.$nd, {
                 onClick: L,
-                loading: S,
+                loading: N,
                 disabled: j,
-                variant: w,
+                variant: D,
                 text: P,
                 fullWidth: !0
             })]

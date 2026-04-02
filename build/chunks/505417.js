@@ -1,27 +1,27 @@
 /** chunk id: 505417 params = (module,exports,require) **/
 n.d(t, {
-    l: () => a
+    l: () => l
 });
 var i = n(985018);
 
-function a(e) {
+function l(e) {
     let {
         isVoiceChannel: t,
         isHubGuild: n,
-        isOwnInvite: a,
-        isGuest: r,
-        isStage: l,
-        isStream: s
+        isOwnInvite: l,
+        isGuest: s,
+        isStage: r,
+        isStream: a
     } = e;
     if (t)
-        if (a)
-            if (s) return i.intl.string(i.t.N85DCl);
-            else if (l) return i.intl.string(i.t.TJQcNv);
-    else if (r) return i.intl.string(i.t.mJyBir);
+        if (l)
+            if (a) return i.intl.string(i.t.N85DCl);
+            else if (r) return i.intl.string(i.t.TJQcNv);
+    else if (s) return i.intl.string(i.t.mJyBir);
     else return i.intl.string(i.t.lxTgP9);
-    else if (s) return i.intl.string(i.t.Mnvc3C);
-    else if (l) return i.intl.string(i.t.FdPNr5);
-    else if (r) return i.intl.string(i.t.f4gmrf);
+    else if (a) return i.intl.string(i.t.Mnvc3C);
+    else if (r) return i.intl.string(i.t.FdPNr5);
+    else if (s) return i.intl.string(i.t.f4gmrf);
     else return i.intl.string(i.t.H39rEY);
-    return n ? a ? i.intl.string(i.t.UxmnHx) : i.intl.string(i.t.sigPEf) : a ? i.intl.string(i.t["oU/lsl"]) : i.intl.string(i.t.BoQUFf)
+    return n ? l ? i.intl.string(i.t.UxmnHx) : i.intl.string(i.t.sigPEf) : l ? i.intl.string(i.t["oU/lsl"]) : i.intl.string(i.t.BoQUFf)
 }

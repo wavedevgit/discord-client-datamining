@@ -3,13 +3,13 @@ n.d(t, {
     A: () => u
 });
 var i = n(627968),
-    a = n(64700),
-    r = n(397927),
-    l = n(572211),
-    s = n(443795),
+    l = n(64700),
+    s = n(397927),
+    r = n(572211),
+    a = n(443795),
     o = n(768349),
     d = n(985018),
-    c = n(71747);
+    c = n(772234);
 
 function u(e) {
     let {
@@ -19,17 +19,17 @@ function u(e) {
         onClickContent: _,
         onView: m,
         guildId: h
-    } = e, p = a.useMemo(() => (0, i.jsx)(r.Text, {
+    } = e, p = l.useMemo(() => (0, i.jsx)(s.Text, {
         variant: "text-xs/medium",
         className: c.h_,
         color: "none",
         lineClamp: 1,
         children: d.intl.string(d.t["84qx9r"])
     }), []);
-    return (0, i.jsx)(l.h, {
+    return (0, i.jsx)(r.h, {
         header: u,
         title: t.name,
-        iconSrc: s.HT.getWhiteIconURL(),
+        iconSrc: a.HT.getWhiteIconURL(),
         info: p,
         onClickContent: _,
         trackingConfig: {

@@ -1,23 +1,23 @@
 /** chunk id: 754459 params = (module,exports,require) **/
 n.d(t, {
-    A: () => s
+    A: () => a
 });
 var i = n(64700),
-    a = n(203982),
-    r = n(652215);
+    l = n(203982),
+    s = n(652215);
 
-function l(e) {
+function r(e) {
     return Object.keys(e).some(t => e[t])
 }
 
-function s(e, t) {
-    let [n, s] = i.useState(t), [o, d] = i.useState(l(n)), c = i.useRef(o), u = i.useRef(null), _ = i.useCallback(e => {
-        s(t => {
+function a(e, t) {
+    let [n, a] = i.useState(t), [o, d] = i.useState(r(n)), c = i.useRef(o), u = i.useRef(null), _ = i.useCallback(e => {
+        a(t => {
             let n = {
                     ...t,
                     ...e
                 },
-                i = l(n);
+                i = r(n);
             return i !== c.current && (c.current = i, null != u.current && (cancelAnimationFrame(u.current), u.current = null), i ? d(!0) : u.current = requestAnimationFrame(() => d(!1))), n
         })
     }, []);
@@ -32,7 +32,7 @@ function s(e, t) {
                 emojiBurstPicker: n
             })
         };
-        return a._.subscribeKeyed(r.zOV.TOGGLE_REACTION_POPOUT, e, t), () => void a._.unsubscribeKeyed(r.zOV.TOGGLE_REACTION_POPOUT, e, t)
+        return l._.subscribeKeyed(s.zOV.TOGGLE_REACTION_POPOUT, e, t), () => void l._.unsubscribeKeyed(s.zOV.TOGGLE_REACTION_POPOUT, e, t)
     }, [e, _]), {
         popouts: n,
         setPopout: _,

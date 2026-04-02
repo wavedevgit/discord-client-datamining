@@ -1,12 +1,12 @@
 /** chunk id: 510790 params = (module,exports,require) **/
 n.d(t, {
-    f: () => S
+    f: () => N
 });
 var i = n(627968),
-    a = n(64700),
-    r = n(735438),
-    l = n(110259),
-    s = n(239947),
+    l = n(64700),
+    s = n(735438),
+    r = n(110259),
+    a = n(239947),
     o = n(934551),
     d = n(97808),
     c = n(732955),
@@ -20,31 +20,31 @@ var i = n(627968),
     x = n(467135),
     f = n(644235),
     C = n(153469),
-    I = n(652215),
-    E = n(674547),
-    b = n(985018),
-    v = n(574854);
+    E = n(652215),
+    I = n(520650),
+    v = n(985018),
+    b = n(954313);
 let T = e => e.map(e => `#${e}`),
-    S = e => {
+    N = e => {
         let {
             message: t
         } = e, {
             sharedClientTheme: n
         } = t, {
-            setAll: a
+            setAll: l
         } = (0, x.ko)();
         return void 0 === n ? null : (0, i.jsxs)("div", {
-            className: v.kL,
-            children: [(0, i.jsx)(y, {
+            className: b.kL,
+            children: [(0, i.jsx)(S, {
                 message: t
             }), (0, i.jsx)(c.$nd, {
-                text: b.intl.string(b.t.SKNnqq),
+                text: v.intl.string(v.t.SKNnqq),
                 fullWidth: !0,
                 variant: "primary",
                 onClick: () => {
-                    A.default.track(I.HAw.CUSTOM_THEME_SHARE_PREVIEWED, {}), (0, h.nf)(h.HP.CUSTOM_THEME, {
+                    A.default.track(E.HAw.CUSTOM_THEME_SHARE_PREVIEWED, {}), (0, h.nf)(h.HP.CUSTOM_THEME, {
                         from: h.xv.SHARE_MESSAGE
-                    }), a({
+                    }), l({
                         colors: T(n.colors),
                         chassisMixAmount: n.base_mix,
                         gradientAngle: n.gradient_angle
@@ -53,7 +53,7 @@ let T = e => e.map(e => `#${e}`),
             })]
         })
     },
-    y = e => {
+    S = e => {
         let t, n, c, {
                 message: h
             } = e,
@@ -61,10 +61,10 @@ let T = e => e.map(e => `#${e}`),
                 sharedClientTheme: g
             } = h,
             A = (0, p.Ay)(h),
-            x = a.useMemo(() => (0, r.once)(() => {
+            x = l.useMemo(() => (0, s.once)(() => {
                 (0, _.x)({
-                    type: l.ImpressionTypes.VIEW,
-                    name: s.I.CUSTOM_THEME_SHARE,
+                    type: r.ImpressionTypes.VIEW,
+                    name: a.I.CUSTOM_THEME_SHARE,
                     properties: {}
                 })
             }), []),
@@ -75,29 +75,29 @@ let T = e => e.map(e => `#${e}`),
                 threshold: 1,
                 minTimeVisibleMs: 200
             }),
-            I = a.useMemo(() => void 0 === g ? "" : (0, C.V9)(T(g.colors), g.gradient_angle ?? 0), [g]);
+            E = l.useMemo(() => void 0 === g ? "" : (0, C.V9)(T(g.colors), g.gradient_angle ?? 0), [g]);
         return void 0 === g ? null : (0, i.jsxs)("div", {
-            className: v.pS,
+            className: b.pS,
             ref: f,
             children: [(0, i.jsx)("div", {
-                className: v.sl,
+                className: b.sl,
                 style: {
-                    background: `${I}`
+                    background: `${E}`
                 }
             }), (0, i.jsxs)("div", {
-                className: v.Ix,
+                className: b.Ix,
                 children: [(0, i.jsxs)(u.Heading, {
                     variant: "heading-md/semibold",
-                    className: v.qP,
-                    children: [b.intl.string(E.default.KSBBpC), " ", (0, i.jsx)(o.NitroWheelIcon, {})]
+                    className: b.qP,
+                    children: [v.intl.string(I.default.KSBBpC), " ", (0, i.jsx)(o.NitroWheelIcon, {})]
                 }), (0, i.jsx)(u.Text, {
                     variant: "text-sm/medium",
                     color: "text-subtle",
-                    className: v.Tb,
-                    children: (t = `${b.intl.format(E.default.fQPSEf,{username:"__USERNAME__"})}`, n = h.author, c = A.nick, t.split(" ").map((e, t) => "__USERNAME__" !== e ? (0, i.jsxs)(a.Fragment, {
+                    className: b.Tb,
+                    children: (t = `${v.intl.format(I.default.fQPSEf,{username:"__USERNAME__"})}`, n = h.author, c = A.nick, t.split(" ").map((e, t) => "__USERNAME__" !== e ? (0, i.jsxs)(l.Fragment, {
                         children: [e, " "]
                     }, t) : (0, i.jsxs)("span", {
-                        className: v.H,
+                        className: b.H,
                         children: [(0, i.jsx)(d.eu, {
                             "aria-label": c,
                             src: n.getAvatarURL(null, 20),

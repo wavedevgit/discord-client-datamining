@@ -4,10 +4,10 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var a = n(503698),
-    r = n.n(a),
-    l = n(835245),
-    s = n(397927),
+var l = n(503698),
+    s = n.n(l),
+    r = n(835245),
+    a = n(397927),
     o = n(954571),
     d = n(18437),
     c = n(590202),
@@ -15,26 +15,26 @@ var a = n(503698),
     _ = n(394900),
     m = n(652215),
     h = n(985018),
-    p = n(341948),
+    p = n(254885),
     g = n(956324);
 
 function A(e) {
     let {
         questId: t,
         questContent: n,
-        fullWidth: a
+        fullWidth: l
     } = e;
     return (0, i.jsx)("div", {
         className: p.UD,
-        children: (0, i.jsx)(s.Button, {
-            fullWidth: a,
+        children: (0, i.jsx)(a.Button, {
+            fullWidth: l,
             variant: "primary",
             onClick: () => {
                 (0, u.navigateToQuestHome)({
                     fromContent: n
                 }), o.default.track(m.HAw.QUEST_CONTENT_CLICKED, {
                     quest_id: t,
-                    click_id: (0, l.A)(),
+                    click_id: (0, r.A)(),
                     cta_name: c.Cy.VIEW_QUESTS,
                     is_targeted: !1,
                     ...(0, c.fF)(n)
@@ -49,8 +49,8 @@ function x(e) {
     let {
         questId: t,
         fallbackReason: n,
-        bodyText: a,
-        questContent: l
+        bodyText: l,
+        questContent: r
     } = e, {
         containerRef: o,
         size: c
@@ -59,24 +59,24 @@ function x(e) {
         ref: e => {
             o.current = e
         },
-        className: r()(p.kL, {
+        className: s()(p.kL, {
             [p.U]: "lg" === c,
             [p.SP]: "lg" !== c
         }),
         children: [(0, i.jsxs)("div", {
             className: p.hQ,
-            children: [(0, i.jsx)(s.Heading, {
+            children: [(0, i.jsx)(a.Heading, {
                 variant: "lg" === c ? "heading-xl/bold" : "heading-lg/bold",
                 color: "text-strong",
                 children: h.intl.string(h.t.vnP31W)
-            }), (0, i.jsx)(s.Text, {
+            }), (0, i.jsx)(a.Text, {
                 variant: "lg" === c ? "text-sm/medium" : "text-xs/medium",
                 color: "text-default",
                 className: p.__invalid_mobileWebCopy,
-                children: a
+                children: l
             }), (0, i.jsx)(A, {
                 questId: t,
-                questContent: l,
+                questContent: r,
                 fullWidth: "lg" !== c
             })]
         }), (0, i.jsx)("div", {

@@ -19,7 +19,7 @@ var i = n(627968),
     h = n(518477),
     _ = n(652215),
     A = n(985018),
-    I = n(471138);
+    I = n(440693);
 let j = "user-profile-save-reset-toolbar-label";
 
 function v(e) {

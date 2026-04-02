@@ -1,12 +1,12 @@
 /** chunk id: 443642 params = (module,exports,require) **/
 n.d(t, {
-    A: () => I
+    A: () => E
 });
 var i = n(627968),
-    a = n(64700),
-    r = n(990078),
-    l = n(319060),
-    s = n(397927),
+    l = n(64700),
+    s = n(990078),
+    r = n(319060),
+    a = n(397927),
     o = n(793574),
     d = n(58149),
     c = n(688810),
@@ -18,49 +18,49 @@ var i = n(627968),
     g = n(552117),
     A = n(652215),
     x = n(788868),
-    f = n(974850);
-let C = (0, _.xI)(l.A.STICKERS_CONSTANTS_STICKER_DIMENSION),
-    I = e => {
+    f = n(911697);
+let C = (0, _.xI)(r.A.STICKERS_CONSTANTS_STICKER_DIMENSION),
+    E = e => {
         let {
             renderableSticker: t,
             channel: n,
-            isInteracting: l
-        } = e, _ = a.useRef(null), [I, E] = a.useState(!0), [b, v] = a.useState(String(Date.now())), [T] = (0, m.Zq)(t, l), {
-            analyticsLocations: S
-        } = (0, c.Ay)(o.A.STICKER_MESSAGE), y = (0, i.jsxs)("span", {
+            isInteracting: r
+        } = e, _ = l.useRef(null), [E, I] = l.useState(!0), [v, b] = l.useState(String(Date.now())), [T] = (0, m.Zq)(t, r), {
+            analyticsLocations: N
+        } = (0, c.Ay)(o.A.STICKER_MESSAGE), S = (0, i.jsxs)("span", {
             className: f.Zl,
-            children: [(0, i.jsx)(s.s2T, {
+            children: [(0, i.jsx)(a.s2T, {
                 size: "xs",
                 color: "currentColor",
                 className: f.lA
             }), (T ?? t).name]
         });
         return (0, i.jsx)(c.f5, {
-            value: S,
+            value: N,
             children: (0, i.jsx)("div", {
                 className: f.be,
-                children: (0, i.jsx)(s.YNO, {
+                children: (0, i.jsx)(a.YNO, {
                     align: "center",
-                    animation: s.YNO.Animation.TRANSLATE,
-                    positionKey: b,
+                    animation: a.YNO.Animation.TRANSLATE,
+                    positionKey: v,
                     onRequestClose: () => {
-                        E(!0)
+                        I(!0)
                     },
                     renderPopout: e => (0, i.jsx)(g.A, {
                         ...e,
                         renderableSticker: t,
                         channel: n,
-                        refreshPositionKey: () => v(String(Date.now()))
+                        refreshPositionKey: () => b(String(Date.now()))
                     }),
                     targetElementRef: _,
                     children: e => {
                         let {
                             onClick: n
                         } = e;
-                        return (0, i.jsx)(r.m, {
+                        return (0, i.jsx)(s.m, {
                             ...u.Uk,
-                            shouldShow: I,
-                            __unsupportedReactNodeAsText: (0, u.yR)(y),
+                            shouldShow: E,
+                            __unsupportedReactNodeAsText: (0, u.yR)(S),
                             "aria-label": !1,
                             onTooltipShow: () => {
                                 var e;
@@ -72,15 +72,15 @@ let C = (0, _.xI)(l.A.STICKERS_CONSTANTS_STICKER_DIMENSION),
                                     is_custom: (0, h.zN)(e.type)
                                 })
                             },
-                            children: (0, i.jsx)(s.DUT, {
+                            children: (0, i.jsx)(a.DUT, {
                                 innerRef: _,
                                 className: f.q7,
                                 onClick: e => {
-                                    E(!I), n(e)
+                                    I(!E), n(e)
                                 },
                                 tag: "span",
                                 children: (0, i.jsx)(p.A, {
-                                    isInteracting: l,
+                                    isInteracting: r,
                                     size: C,
                                     sticker: T ?? t
                                 })

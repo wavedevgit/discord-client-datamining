@@ -3,10 +3,10 @@ n.d(t, {
     A: () => h
 });
 var i = n(627968),
-    a = n(64700),
-    r = n(110259),
-    l = n(417597),
-    s = n(793574),
+    l = n(64700),
+    s = n(110259),
+    r = n(417597),
+    a = n(793574),
     o = n(688810),
     d = n(139286),
     c = n(627363),
@@ -18,15 +18,15 @@ function h(e) {
     let {
         applicationId: t,
         message: n
-    } = e, [r, s, o] = (0, l.yK)([u.A], () => [u.A.getApplication(t), u.A.isFetchingApplication(t), u.A.didFetchingApplicationFail(t)], [t]);
-    return (a.useEffect(() => {
-        null != r || s || o || c.Ay.fetchApplication(t)
-    }, [r, s, o, t]), null != r && (0, m.Ie)({
-        customInstallUrl: r.customInstallUrl,
-        installParams: r.installParams,
-        integrationTypesConfig: r.integrationTypesConfig
+    } = e, [s, a, o] = (0, r.yK)([u.A], () => [u.A.getApplication(t), u.A.isFetchingApplication(t), u.A.didFetchingApplicationFail(t)], [t]);
+    return (l.useEffect(() => {
+        null != s || a || o || c.Ay.fetchApplication(t)
+    }, [s, a, o, t]), null != s && (0, m.Ie)({
+        customInstallUrl: s.customInstallUrl,
+        installParams: s.installParams,
+        integrationTypesConfig: s.integrationTypesConfig
     })) ? (0, i.jsx)(p, {
-        application: r,
+        application: s,
         message: n
     }) : null
 }
@@ -35,23 +35,23 @@ function p(e) {
     let {
         application: t,
         message: n
-    } = e, l = a.useCallback(() => {
+    } = e, r = l.useCallback(() => {
         (0, d.x)({
-            type: r.ImpressionTypes.VIEW,
-            name: r.ImpressionNames.APP_OAUTH2_LINK_EMBED,
+            type: s.ImpressionTypes.VIEW,
+            name: s.ImpressionNames.APP_OAUTH2_LINK_EMBED,
             properties: {
                 application_id: t.id
             }
         })
     }, [t.id]), {
         analyticsLocations: c
-    } = (0, o.Ay)(s.A.APP_OAUTH2_LINK_EMBED);
+    } = (0, o.Ay)(a.A.APP_OAUTH2_LINK_EMBED);
     return (0, i.jsx)(o.f5, {
         value: c,
         children: (0, i.jsx)(_.W, {
             app: t,
             linkType: _.J.OAUTH,
-            onView: l,
+            onView: r,
             message: n
         })
     })

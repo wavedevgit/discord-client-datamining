@@ -3,9 +3,9 @@ let i;
 n.d(t, {
     A: () => L
 });
-var l = n(627968);
+var a = n(627968);
 n(64700);
-var a = n(397927),
+var l = n(397927),
     r = n(73153),
     s = n(272355),
     o = n(323073),
@@ -31,7 +31,7 @@ n(436317);
 var b = n(315290);
 
 function y() {
-    null != i && (0, a.OoC)(i)
+    null != i && (0, l.OoC)(i)
 }
 class O extends s.A {
     _initialize() {
@@ -94,11 +94,11 @@ class O extends s.A {
                             f.xb(e)
                     }
                 };
-                i = await (0, a.mMO)(async () => {
+                i = await (0, l.mMO)(async () => {
                     let {
                         default: e
                     } = await Promise.all([n.e("86746"), n.e("31922")]).then(n.bind(n, 218318));
-                    return n => (0, l.jsx)(e, {
+                    return n => (0, a.jsx)(e, {
                         ...n,
                         onSlideChange: t
                     })
@@ -123,11 +123,11 @@ class O extends s.A {
             predicate: () => s && !I.default.getCurrentUser()?.isClaimed() && !0
         }, {
             key: "Guild Welcome Modal",
-            open: e => (0, a.mMO)(async () => {
+            open: e => (0, l.mMO)(async () => {
                 let {
                     default: e
                 } = await n.e("98063").then(n.bind(n, 143154));
-                return t => (0, l.jsx)(e, {
+                return t => (0, a.jsx)(e, {
                     ...t,
                     guildId: y
                 })

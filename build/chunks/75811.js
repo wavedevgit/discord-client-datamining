@@ -1,34 +1,34 @@
 /** chunk id: 75811 params = (module,exports,require) **/
-n.d(t, {
-    j: () => c
+s.d(t, {
+    j: () => o
 });
-var i = n(627968),
-    l = n(64700),
-    s = n(503698),
-    a = n.n(s),
-    r = n(397927),
-    o = n(940925);
+var r = s(627968),
+    l = s(64700),
+    n = s(503698),
+    a = s.n(n),
+    c = s(397927),
+    i = s(261812);
 
-function c(e) {
+function o(e) {
     let {
         chunks: t,
-        columns: n,
-        className: s
-    } = e, c = l.useMemo(() => ({
-        "--secure-frames-columns": n
-    }), [n]);
-    return null == t ? (0, i.jsx)("div", {
-        className: o.Lq,
-        children: (0, i.jsx)(r.y$y, {})
-    }) : (0, i.jsx)("div", {
-        style: c,
-        className: a()(o.aY, s),
-        children: t.map((e, t) => (0, i.jsx)("div", {
-            className: a()(o.iv, {
-                [o.yF]: t > n - 1
+        columns: s,
+        className: n
+    } = e, o = l.useMemo(() => ({
+        "--secure-frames-columns": s
+    }), [s]);
+    return null == t ? (0, r.jsx)("div", {
+        className: i.Lq,
+        children: (0, r.jsx)(c.y$y, {})
+    }) : (0, r.jsx)("div", {
+        style: o,
+        className: a()(i.aY, n),
+        children: t.map((e, t) => (0, r.jsx)("div", {
+            className: a()(i.iv, {
+                [i.yF]: t > s - 1
             }),
-            children: (0, i.jsx)(r.Text, {
-                className: o.ph,
+            children: (0, r.jsx)(c.Text, {
+                className: i.ph,
                 variant: "code",
                 color: "text-default",
                 children: e

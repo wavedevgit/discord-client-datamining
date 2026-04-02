@@ -3,10 +3,10 @@ n.d(t, {
     A: () => C
 }), n(801541);
 var i = n(627968),
-    a = n(64700),
-    r = n(503698),
-    l = n.n(r),
-    s = n(889137),
+    l = n(64700),
+    s = n(503698),
+    r = n.n(s),
+    a = n(889137),
     o = n(966974),
     d = n(397927),
     c = n(180662),
@@ -14,7 +14,7 @@ var i = n(627968),
     _ = n(290794),
     m = n(789646),
     h = n(431174),
-    p = n(640486);
+    p = n(764573);
 
 function g(e) {
     let {
@@ -32,15 +32,15 @@ function A(e) {
     let {
         buttonLabel: t,
         secondaryLabel: n,
-        handleClick: a,
-        isInteractive: r,
-        className: s
+        handleClick: l,
+        isInteractive: s,
+        className: a
     } = e;
     return (0, i.jsxs)("div", {
-        className: l()(p.ez, s),
-        children: [r ? (0, i.jsx)(d.QWc, {
+        className: r()(p.ez, a),
+        children: [s ? (0, i.jsx)(d.QWc, {
             text: t,
-            onClick: a,
+            onClick: l,
             variant: "secondary",
             textVariant: "text-sm/medium"
         }) : (0, i.jsx)(d.Text, {
@@ -61,19 +61,19 @@ function x(e) {
     let {
         action: t,
         channelId: n,
-        messageId: r,
-        isInteractive: l,
-        className: s
+        messageId: s,
+        isInteractive: r,
+        className: a
     } = e, {
         actionButtonRef: o,
         manageFocusOnAction: u
-    } = (0, m.Mg)(), _ = a.useCallback(async () => {
+    } = (0, m.Mg)(), _ = l.useCallback(async () => {
         t?.type != null && (await c.A.handlePollActionTapped({
             channelId: n,
-            messageId: r,
+            messageId: s,
             type: t.type
         }), u(t.type))
-    }, [t?.type, n, r, u]);
+    }, [t?.type, n, s, u]);
     return null == t ? null : "button" === t.presentation || "secondaryButton" === t.presentation ? (0, i.jsx)(d.Button, {
         buttonRef: o,
         onClick: _,
@@ -91,63 +91,63 @@ function x(e) {
         buttonLabel: t.label,
         secondaryLabel: t.secondaryLabel,
         handleClick: _,
-        isInteractive: l,
-        className: s
+        isInteractive: r,
+        className: a
     })
 }
 
 function f(e) {
     let t, {
             message: n,
-            poll: a,
-            className: r
+            poll: l,
+            className: s
         } = e,
-        c = (0, _.hd)(a.containerStyle),
+        c = (0, _.hd)(l.containerStyle),
         m = (t = {
-            answers: a.answers,
-            answersInteraction: a.answersInteraction,
-            answerTapAccessibilityLabel: a.answerTapAccessibilityLabel,
-            isExpired: a.isExpired,
-            canTapAnswers: a.canTapAnswers,
-            hasSelectedAnyAnswer: a.hasSelectedAnswer,
-            myAvatarUrl: a.myAvatarUrl,
-            canShowVoteCounts: a.canShowVoteCounts
-        }, (0, s.YW)(a.layoutType).with(o.Z.DEFAULT, () => (0, i.jsx)(h.j, {
+            answers: l.answers,
+            answersInteraction: l.answersInteraction,
+            answerTapAccessibilityLabel: l.answerTapAccessibilityLabel,
+            isExpired: l.isExpired,
+            canTapAnswers: l.canTapAnswers,
+            hasSelectedAnyAnswer: l.hasSelectedAnswer,
+            myAvatarUrl: l.myAvatarUrl,
+            canShowVoteCounts: l.canShowVoteCounts
+        }, (0, a.YW)(l.layoutType).with(o.Z.DEFAULT, () => (0, i.jsx)(h.j, {
             ...t
         })).with(o.Z.IMAGE_ONLY_ANSWERS, () => (0, i.jsx)(u.A, {
             ...t
         })).otherwise(() => null));
     return null == m ? null : (0, i.jsx)("div", {
-        className: l()(p.kL, c, r),
+        className: r()(p.kL, c, s),
         children: (0, i.jsxs)(d.Fmo, {
             children: [(0, i.jsxs)("div", {
                 className: p.wx,
                 children: [(0, i.jsx)(g, {
-                    media: a.question
-                }), null != a.promptLabel && (0, i.jsx)(d.Text, {
+                    media: l.question
+                }), null != l.promptLabel && (0, i.jsx)(d.Text, {
                     variant: "text-sm/normal",
                     color: "text-muted",
                     className: p.J1,
                     scaleFontToUserSetting: !0,
-                    children: a.promptLabel
+                    children: l.promptLabel
                 })]
             }), m, (0, i.jsxs)("div", {
                 className: p.pR,
                 children: [(0, i.jsx)(x, {
                     channelId: n.getChannelId(),
                     messageId: n.id,
-                    action: a.secondaryAction,
+                    action: l.secondaryAction,
                     className: p.Dc,
-                    isInteractive: a.isInteractive
+                    isInteractive: l.isInteractive
                 }), (0, i.jsx)(x, {
                     channelId: n.getChannelId(),
                     messageId: n.id,
-                    action: a.tertiaryAction,
+                    action: l.tertiaryAction,
                     className: p.vD
                 }), (0, i.jsx)(x, {
                     channelId: n.getChannelId(),
                     messageId: n.id,
-                    action: a.primaryAction
+                    action: l.primaryAction
                 })]
             })]
         })
@@ -158,7 +158,7 @@ function C(e) {
     let {
         message: t,
         poll: n,
-        className: a
+        className: l
     } = e;
     return (0, i.jsx)(_.y5, {
         message: t,
@@ -167,7 +167,7 @@ function C(e) {
             children: (0, i.jsx)(f, {
                 message: t,
                 poll: n,
-                className: a
+                className: l
             })
         })
     })

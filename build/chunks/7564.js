@@ -9,12 +9,12 @@ var r = n(627968),
     a = n.n(l),
     s = n(397927),
     o = n(975807),
-    u = n(212031),
-    c = n(975571),
+    c = n(212031),
+    u = n(975571),
     d = n(228093),
     h = n(652215),
     f = n(985018),
-    m = n(583800);
+    m = n(901875);
 
 function p(e) {
     let {
@@ -30,7 +30,7 @@ function p(e) {
             children: [(0, r.jsx)(s.Drp, {
                 id: "changelog",
                 label: f.intl.string(f.t.LRmNAl),
-                action: () => (0, u.j)(!0)
+                action: () => (0, c.j)(!0)
             }), (0, r.jsx)(s.Drp, {
                 id: "acknowledgements",
                 label: f.intl.string(f.t["0nUKy3"]),
@@ -38,7 +38,7 @@ function p(e) {
             }), (0, r.jsx)(s.Drp, {
                 id: "support",
                 label: f.intl.string(f.t["Yl/Riu"]),
-                action: () => (0, o.A)(c.C)
+                action: () => (0, o.A)(u.C)
             })]
         })
     })

@@ -1,13 +1,13 @@
 /** chunk id: 43136 params = (module,exports,require) **/
 n.d(t, {
-    A: () => N,
-    C: () => y
+    A: () => y,
+    C: () => S
 });
 var i = n(627968),
-    a = n(64700),
-    r = n(284009),
-    l = n.n(r),
-    s = n(311907),
+    l = n(64700),
+    s = n(284009),
+    r = n.n(s),
+    a = n(311907),
     o = n(397927),
     d = n(241524),
     c = n(289397),
@@ -21,13 +21,13 @@ var i = n(627968),
     x = n(427262),
     f = n(218394),
     C = n(386952),
-    I = n(381969),
-    E = n(920814),
-    b = n(235665),
-    v = n(985018),
-    T = n(66996);
+    E = n(381969),
+    I = n(920814),
+    v = n(235665),
+    b = n(985018),
+    T = n(915047);
 
-function S(e) {
+function N(e) {
     let {
         onClick: t
     } = e;
@@ -37,7 +37,7 @@ function S(e) {
         children: [(0, i.jsx)(o.Text, {
             variant: "text-sm/medium",
             color: "text-strong",
-            children: v.intl.string(v.t.J4cw1q)
+            children: b.intl.string(b.t.J4cw1q)
         }), (0, i.jsx)(o.hKd, {
             size: 4,
             horizontal: !0
@@ -48,11 +48,11 @@ function S(e) {
     })
 }
 
-function y(e) {
+function S(e) {
     let {
         coverImageAsset: t,
         isPreview: n = !1
-    } = e, a = h.kt.useSetting(), r = (0, f.j)() && a, [l, s] = (0, m.A)(t, r), o = r ? (0, i.jsx)(u.A, {
+    } = e, l = h.kt.useSetting(), s = (0, f.j)() && l, [r, a] = (0, m.A)(t, s), o = s ? (0, i.jsx)(u.A, {
         autoPlay: !0,
         loop: !0,
         className: T.N4,
@@ -65,40 +65,40 @@ function y(e) {
         className: T.N4
     });
     return (0, i.jsx)("div", {
-        ref: l,
+        ref: r,
         className: T.El,
-        children: null == s || n ? o : (0, i.jsx)("img", {
-            src: s,
+        children: null == a || n ? o : (0, i.jsx)("img", {
+            src: a,
             alt: "",
             className: T.N4
         })
     })
 }
 
-function N(e) {
+function y(e) {
     let {
         guild: t,
         subscriptionsSettings: n
-    } = e, r = t.id, {
+    } = e, s = t.id, {
         nickname: u,
         nickcolor: m
-    } = (0, s.cf)([p.Ay, g.default], () => {
+    } = (0, a.cf)([p.Ay, g.default], () => {
         let e = g.default.getCurrentUser();
-        l()(null != e, "user cannot be null");
-        let t = p.Ay.getMember(r, e.id);
+        r()(null != e, "user cannot be null");
+        let t = p.Ay.getMember(s, e.id);
         return {
             nickname: t?.nick ?? x.Ay.getName(e),
             nickcolor: t?.colorString ?? void 0
         }
-    }, [r]), {
+    }, [s]), {
         isTruncated: h,
         ExpandableTextContainer: A
-    } = (0, C.e)(), f = (n?.description?.trim().length ?? 0) > 0, [N, j] = a.useState(1), L = (0, d.A)("(max-width: 1439px)"), {
+    } = (0, C.e)(), f = (n?.description?.trim().length ?? 0) > 0, [y, j] = l.useState(1), L = (0, d.A)("(max-width: 1439px)"), {
         selectedTab: R,
         isPhantomPreview: P
-    } = (0, I.k)(), w = R === E.B.GUILD_PRODUCTS_PREVIEW ? v.intl.string(v.t["LvXy/H"]) : v.intl.string(v.t.XyqKh8), D = f ? (0, i.jsxs)(i.Fragment, {
+    } = (0, E.k)(), D = R === I.B.GUILD_PRODUCTS_PREVIEW ? b.intl.string(b.t["LvXy/H"]) : b.intl.string(b.t.XyqKh8), M = f ? (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(A, {
-            lineClamp: L || 2 === N ? 2 : 3,
+            lineClamp: L || 2 === y ? 2 : 3,
             children: (0, i.jsx)(o.Text, {
                 variant: "text-sm/normal",
                 color: "text-default",
@@ -107,16 +107,16 @@ function N(e) {
         }), h && (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)(o.hKd, {
                 size: 4
-            }), (0, i.jsx)(S, {
-                onClick: () => (0, b.A)({
-                    guildId: r
+            }), (0, i.jsx)(N, {
+                onClick: () => (0, v.A)({
+                    guildId: s
                 })
             })]
         })]
     }) : (0, i.jsx)(o.Text, {
         variant: "text-sm/normal",
         color: "text-default",
-        children: P ? w : v.intl.string(v.t["NY/FIW"])
+        children: P ? D : b.intl.string(b.t["NY/FIW"])
     });
     return (0, i.jsxs)("div", {
         className: T.kL,
@@ -140,7 +140,7 @@ function N(e) {
                         variant: "heading-xl/semibold",
                         color: "text-strong",
                         lineClamp: 2,
-                        children: P ? v.intl.string(v.t.rtgp7q) : v.intl.formatToPlainString(v.t.NZeik9, {
+                        children: P ? b.intl.string(b.t.rtgp7q) : b.intl.formatToPlainString(b.t.NZeik9, {
                             guildName: t.name
                         })
                     })
@@ -149,7 +149,7 @@ function N(e) {
                 }), (0, i.jsx)(o.Text, {
                     variant: "text-md/normal",
                     color: "text-default",
-                    children: v.intl.format(v.t["7JwrlH"], {
+                    children: b.intl.format(b.t["7JwrlH"], {
                         username: u,
                         usernameHook: function(e, t) {
                             return (0, i.jsx)("span", {
@@ -162,9 +162,9 @@ function N(e) {
                     })
                 }), (0, i.jsx)(o.hKd, {
                     size: 9
-                }), D]
+                }), M]
             })]
-        }), (0, i.jsx)(y, {
+        }), (0, i.jsx)(S, {
             coverImageAsset: n?.cover_image_asset,
             isPreview: P
         })]

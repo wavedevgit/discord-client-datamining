@@ -22,7 +22,7 @@ var i = n(627968),
     x = n(505806),
     E = n(652215),
     I = n(985018),
-    C = n(618965);
+    C = n(832954);
 let N = {
     [E.WTw.INSTALLING]: {
         [_.pJ.NONE]: (e, t) => I.intl.formatToPlainString(I.t["p+2sE+"], {

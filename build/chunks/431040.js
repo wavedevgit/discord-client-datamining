@@ -14,7 +14,7 @@ var a = n(627968),
     m = n(936636),
     x = n(424994),
     h = n(985018),
-    g = n(12388);
+    g = n(706445);
 
 function f() {
     return (0, a.jsx)(i.Text, {

@@ -4,10 +4,10 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var a = n(835245),
-    r = n(397927),
-    l = n(391048),
-    s = n(636099),
+var l = n(835245),
+    s = n(397927),
+    r = n(391048),
+    a = n(636099),
     o = n(120700),
     d = n(742810),
     c = n(954571),
@@ -18,10 +18,10 @@ function _(e) {
         guildProductListing: t,
         guildId: _,
         sourceAnalyticsLocations: m
-    } = e, h = !1, p = (0, a.A)(), g = t.id, A = () => {
+    } = e, h = !1, p = (0, l.A)(), g = t.id, A = () => {
         h = !0
     };
-    (0, r.mMO)(async () => {
+    (0, s.mMO)(async () => {
         let {
             default: e
         } = await n.e("41469").then(n.bind(n, 35052));
@@ -53,7 +53,7 @@ function _(e) {
                     checkout_design: e ? d.rS.UNIFIED : d.rS.LEGACY,
                     checkout_flow: o.C.GUILD_PRODUCT_CHECKOUT
                 })
-            }(0, l.ET)(), (0, s.z)()
+            }(0, r.ET)(), (0, a.z)()
         },
         onCloseRequest: u.tEg
     })

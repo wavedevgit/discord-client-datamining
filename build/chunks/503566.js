@@ -1,74 +1,74 @@
 /** chunk id: 503566 params = (module,exports,require) **/
-a.d(t, {
-    _: () => A
+n.d(t, {
+    _: () => g
 });
-var n = a(627968);
-a(64700);
-var i = a(397927),
-    s = a(551262),
-    l = a(986268),
-    r = a(473145),
-    o = a(631305),
-    c = a(874864),
-    d = a(652215),
-    u = a(985018),
-    p = a(512638);
+var a = n(627968);
+n(64700);
+var i = n(397927),
+    r = n(551262),
+    o = n(986268),
+    s = n(473145),
+    l = n(631305),
+    c = n(874864),
+    _ = n(652215),
+    d = n(985018),
+    A = n(454097);
 
-function _(e) {
+function u(e) {
     let {
         guild: t,
-        banner: a
+        banner: n
     } = e;
-    return (0, n.jsx)("div", {
-        className: p.C1,
+    return (0, a.jsx)("div", {
+        className: A.C1,
         style: {
-            backgroundImage: `url(${a}`
+            backgroundImage: `url(${n}`
         },
-        children: (0, n.jsxs)("div", {
-            className: p.F,
-            children: [(0, n.jsx)(l.A, {
+        children: (0, a.jsxs)("div", {
+            className: A.F,
+            children: [(0, a.jsx)(o.A, {
                 guild: t,
                 isBannerVisible: !0
-            }), (0, n.jsx)(i.Heading, {
-                className: p.J5,
+            }), (0, a.jsx)(i.Heading, {
+                className: A.J5,
                 variant: "heading-md/semibold",
                 children: t.name
-            }), (0, n.jsx)(s.A, {
-                className: p.Wm,
+            }), (0, a.jsx)(r.A, {
+                className: A.Wm,
                 open: !1
             })]
         })
     })
 }
 
-function A(e) {
+function g(e) {
     let {
         analyticsLocations: t,
-        analyticsLocation: a,
+        analyticsLocation: n,
         guild: i,
-        isGIF: s,
-        banner: l
-    } = e, p = s ? (0, r.Ys)(d.GuildFeatures.ANIMATED_BANNER) : (0, r.Ys)(d.GuildFeatures.BANNER);
-    if (null != p) {
+        isGIF: r,
+        banner: o
+    } = e, A = r ? (0, s.Ys)(_.GuildFeatures.ANIMATED_BANNER) : (0, s.Ys)(_.GuildFeatures.BANNER);
+    if (null != A) {
         let e;
-        (0, o.A)({
+        (0, l.A)({
             analyticsLocations: t,
-            analyticsSourceLocation: a,
+            analyticsSourceLocation: n,
             guild: i,
             headerProps: {
-                title: u.intl.string(u.t["rv2H+1"]),
-                subtitle: (e = (0, r.gb)(p), s ? u.intl.formatToPlainString(u.t["TR/Uyt"], {
+                title: d.intl.string(d.t["rv2H+1"]),
+                subtitle: (e = (0, s.gb)(A), r ? d.intl.formatToPlainString(d.t["TR/Uyt"], {
                     targetLevelOrPlan: e
-                }) : u.intl.formatToPlainString(u.t.B253V6, {
+                }) : d.intl.formatToPlainString(d.t.B253V6, {
                     targetLevelOrPlan: e
                 })),
-                image: (0, n.jsx)(_, {
+                image: (0, a.jsx)(u, {
                     guild: i,
-                    banner: l
+                    banner: o
                 })
             },
-            perkIntro: u.intl.string(u.t.ZuItcI),
-            perks: s ? (0, c.Pf)() : (0, c.QR)()
+            perkIntro: d.intl.string(d.t.ZuItcI),
+            perks: r ? (0, c.Pf)() : (0, c.QR)()
         })
     }
 }

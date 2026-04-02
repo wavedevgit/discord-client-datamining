@@ -1,232 +1,233 @@
 /** chunk id: 241499 params = (module,exports,require) **/
-l.d(t, {
-    _: () => T
+"use strict";
+n.d(t, {
+    _: () => I
 });
-var n = l(627968),
-    i = l(64700),
-    a = l(503698),
-    r = l.n(a),
-    s = l(296489),
-    o = l.n(s),
-    u = l(131346),
-    c = l(522437),
-    d = l(311907),
-    x = l(397927),
-    p = l(355622),
-    g = l(408018),
-    _ = l(133343),
-    h = l(734057),
-    f = l(808728),
-    C = l(557420),
-    m = l(596484),
-    b = l(260197),
-    v = l(652215),
-    k = l(985018),
-    j = l(545205);
-let y = "RULE";
+var i = n(627968),
+    s = n(64700),
+    l = n(503698),
+    r = n.n(l),
+    a = n(296489),
+    o = n.n(a),
+    d = n(131346),
+    c = n(522437),
+    u = n(311907),
+    m = n(397927),
+    g = n(355622),
+    x = n(408018),
+    h = n(133343),
+    _ = n(734057),
+    p = n(808728),
+    A = n(557420),
+    f = n(596484),
+    j = n(260197),
+    N = n(652215),
+    E = n(985018),
+    b = n(631982);
+let C = "RULE";
 
-function I(e) {
+function T(e) {
     let {
         rule: t,
-        rulesChannel: l,
-        index: a,
-        onChange: s,
+        rulesChannel: n,
+        index: l,
+        onChange: a,
         onKeyDown: o,
-        onClear: d,
-        onRuleReorder: h,
-        isDropHovered: f,
-        focused: C,
-        onFocus: m,
-        previewEnabled: v,
-        isDragEnabled: I,
-        disabled: T
-    } = e, E = i.useRef(null), R = i.useRef(null), [{
-        textValue: N,
-        richValue: A
-    }, D] = i.useState((0, g.ur)(t.value)), [, S, w] = (0, u.i)({
-        type: y,
+        onClear: u,
+        onRuleReorder: _,
+        isDropHovered: p,
+        focused: A,
+        onFocus: f,
+        previewEnabled: N,
+        isDragEnabled: T,
+        disabled: I
+    } = e, v = s.useRef(null), S = s.useRef(null), [{
+        textValue: y,
+        richValue: R
+    }, O] = s.useState((0, x.ur)(t.value)), [, L, G] = (0, d.i)({
+        type: C,
         item: {
             rule: t,
-            index: a
+            index: l
         },
         end: (e, t) => {
-            null == e || t.didDrop() || h(e.rule, null, !0)
+            null == e || t.didDrop() || _(e.rule, null, !0)
         }
-    }), [, B] = (0, c.H)({
-        accept: y,
+    }), [, D] = (0, c.H)({
+        accept: C,
         hover: (e, t) => {
             let {
-                index: l
-            } = e, n = E.current?.getBoundingClientRect(), i = t.getClientOffset();
-            if (null == n || null == i) return;
-            let r = (n.bottom - n.top) / 2,
-                s = i.y - n.top;
-            l < a && s < r || l > a && s > r || h(e.rule, a, !1)
+                index: n
+            } = e, i = v.current?.getBoundingClientRect(), s = t.getClientOffset();
+            if (null == i || null == s) return;
+            let r = (i.bottom - i.top) / 2,
+                a = s.y - i.top;
+            n < l && a < r || n > l && a > r || _(e.rule, l, !1)
         },
         drop: e => {
-            h(e.rule, a, !0)
+            _(e.rule, l, !0)
         }
     });
-    if (i.useLayoutEffect(() => (S(R), w(B(E)), () => {
-            S(null), B(null)
-        }), [S, B, w]), i.useEffect(() => {
-            "" !== t.value && "" === N && D((0, g.ur)(t.value))
-        }, [t.value, N]), null == l) return null;
-    let L = "" !== t.value ? t.value : t.id;
-    return (0, n.jsx)("div", {
-        ref: E,
-        className: r()(j.XQ, {
-            [j.cB]: f
+    if (s.useLayoutEffect(() => (L(S), G(D(v)), () => {
+            L(null), D(null)
+        }), [L, D, G]), s.useEffect(() => {
+            "" !== t.value && "" === y && O((0, x.ur)(t.value))
+        }, [t.value, y]), null == n) return null;
+    let M = "" !== t.value ? t.value : t.id;
+    return (0, i.jsx)("div", {
+        ref: v,
+        className: r()(b.XQ, {
+            [b.cB]: p
         }),
-        "data-dnd-name": L,
-        children: (0, n.jsxs)("div", {
-            className: j.I6,
-            children: [(0, n.jsx)(x.DUT, {
-                onMouseDown: () => m(a),
-                children: (0, n.jsx)(_.Ay, {
-                    innerClassName: j.oQ,
-                    type: p.oU.RULES_INPUT,
-                    textValue: N,
-                    richValue: A,
-                    channel: l,
-                    placeholder: k.intl.string(k.t.BRkD41),
-                    focused: C,
-                    onChange: (e, l, n) => {
-                        let i = T ? t.value : l;
-                        i.length > b.pc && (i = i.slice(0, b.pc)), l !== i && (l = i, n = (0, g.x7)(i)), s(l), D({
-                            textValue: l,
-                            richValue: n
+        "data-dnd-name": M,
+        children: (0, i.jsxs)("div", {
+            className: b.I6,
+            children: [(0, i.jsx)(m.DUT, {
+                onMouseDown: () => f(l),
+                children: (0, i.jsx)(h.Ay, {
+                    innerClassName: b.oQ,
+                    type: g.oU.RULES_INPUT,
+                    textValue: y,
+                    richValue: R,
+                    channel: n,
+                    placeholder: E.intl.string(E.t.BRkD41),
+                    focused: A,
+                    onChange: (e, n, i) => {
+                        let s = I ? t.value : n;
+                        s.length > j.pc && (s = s.slice(0, j.pc)), n !== s && (n = s, i = (0, x.x7)(s)), a(n), O({
+                            textValue: n,
+                            richValue: i
                         })
                     },
                     onKeyDown: o,
-                    canMentionChannels: v,
-                    canMentionRoles: v,
-                    maxCharacterCount: b.pc,
+                    canMentionChannels: N,
+                    canMentionRoles: N,
+                    maxCharacterCount: j.pc,
                     onSubmit: () => Promise.resolve({
                         shouldClear: !1,
                         shouldRefocus: !0
                     })
                 })
-            }), (0, n.jsx)("div", {
-                className: j.mt,
-                children: (0, n.jsx)(x.K0, {
+            }), (0, i.jsx)("div", {
+                className: b.mt,
+                children: (0, i.jsx)(m.K0, {
                     size: "sm",
                     variant: "icon-only",
-                    icon: x.aXh,
-                    "aria-label": k.intl.string(k.t.VkKicb),
-                    onClick: d
+                    icon: m.aXh,
+                    "aria-label": E.intl.string(E.t.VkKicb),
+                    onClick: u
                 })
-            }), (0, n.jsx)("div", {
-                ref: R,
-                className: j.cK,
-                "data-dnd-name": L,
-                children: I && (0, n.jsx)(x.WP0, {
+            }), (0, i.jsx)("div", {
+                ref: S,
+                className: b.cK,
+                "data-dnd-name": M,
+                children: T && (0, i.jsx)(m.WP0, {
                     size: "xs",
                     color: "currentColor",
-                    className: j.co
+                    className: b.co
                 })
             })]
         })
     })
 }
 
-function T(e) {
+function I(e) {
     let {
         rules: t,
-        setRules: l,
-        guild: a,
+        setRules: n,
+        guild: l,
         disabled: r
-    } = e, s = a.rulesChannelId, u = a.features.has(v.GuildFeatures.PREVIEW_ENABLED), c = (0, d.bG)([h.A], () => null != s ? h.A.getChannel(s) : null), p = (0, d.bG)([f.Ay], () => f.Ay.getDefaultChannel(a.id)), [g, _] = i.useState(null), [y, T] = i.useState(null), E = i.useCallback(e => {
-        if (!r && t.length !== b.yN)
+    } = e, a = l.rulesChannelId, d = l.features.has(N.GuildFeatures.PREVIEW_ENABLED), c = (0, u.bG)([_.A], () => null != a ? _.A.getChannel(a) : null), g = (0, u.bG)([p.Ay], () => p.Ay.getDefaultChannel(l.id)), [x, h] = s.useState(null), [C, I] = s.useState(null), v = s.useCallback(e => {
+        if (!r && t.length !== j.yN)
             if (null != e && "" === t[t.length - 1].value) {
-                let n = [...t];
-                n[t.length - 1] = {
-                    ...n[t.length - 1],
+                let i = [...t];
+                i[t.length - 1] = {
+                    ...i[t.length - 1],
                     value: e
-                }, l(n), T(n.length - 1)
-            } else l([...t, {
+                }, n(i), I(i.length - 1)
+            } else n([...t, {
                 id: o()(),
                 value: e ?? ""
-            }]), T(t.length)
-    }, [r, t, l]), R = i.useCallback(() => {
-        r || E(void 0)
-    }, [E, r]), N = i.useCallback((e, n) => {
+            }]), I(t.length)
+    }, [r, t, n]), S = s.useCallback(() => {
+        r || v(void 0)
+    }, [v, r]), y = s.useCallback((e, i) => {
         if (r) return;
-        let i = [...t];
-        i[n] = {
-            ...i[n],
+        let s = [...t];
+        s[i] = {
+            ...s[i],
             value: e
-        }, l(i)
-    }, [r, t, l]), A = i.useCallback((e, n, i) => {
+        }, n(s)
+    }, [r, t, n]), R = s.useCallback((e, i, s) => {
         if (r || null == t) return;
-        let a = t.indexOf(e);
-        if (null != n && n !== a) {
-            let i = [...t];
-            i.splice(a, 1), i.splice(n, 0, e), l(i)
+        let l = t.indexOf(e);
+        if (null != i && i !== l) {
+            let s = [...t];
+            s.splice(l, 1), s.splice(i, 0, e), n(s)
         }
-        i ? null !== g && _(null) : n !== g && _(n)
-    }, [r, g, t, l]), D = t.length === b.yN, S = i.useMemo(() => {
-        let e = D ? k.intl.formatToPlainString(k.t.tU718E, {
-            number: b.yN
+        s ? null !== x && h(null) : i !== x && h(i)
+    }, [r, x, t, n]), O = t.length === j.yN, L = s.useMemo(() => {
+        let e = O ? E.intl.formatToPlainString(E.t.tU718E, {
+            number: j.yN
         }) : void 0;
         return [{
-            text: k.intl.string(k.t.DXq2od),
-            onClick: () => E(k.intl.string(k.t.XudkSq)),
-            disabled: D || r,
+            text: E.intl.string(E.t.DXq2od),
+            onClick: () => v(E.intl.string(E.t.XudkSq)),
+            disabled: O || r,
             tooltipText: e
         }, {
-            text: k.intl.string(k.t.nSqTjM),
-            onClick: () => E(k.intl.string(k.t.np91jA)),
-            disabled: D || r,
+            text: E.intl.string(E.t.nSqTjM),
+            onClick: () => v(E.intl.string(E.t.np91jA)),
+            disabled: O || r,
             tooltipText: e
         }, {
-            text: k.intl.string(k.t.AtRxsO),
-            onClick: () => E(k.intl.string(k.t.PNIDDJ)),
-            disabled: D || r,
+            text: E.intl.string(E.t.AtRxsO),
+            onClick: () => v(E.intl.string(E.t.PNIDDJ)),
+            disabled: O || r,
             tooltipText: e
         }, {
-            text: k.intl.string(k.t["0K5NJt"]),
-            onClick: () => E(k.intl.string(k.t.HolIDy)),
-            disabled: D || r,
+            text: E.intl.string(E.t["0K5NJt"]),
+            onClick: () => v(E.intl.string(E.t.HolIDy)),
+            disabled: O || r,
             tooltipText: e
         }]
-    }, [E, r, D]);
-    return (0, n.jsxs)(n.Fragment, {
-        children: [(0, n.jsx)("div", {
-            className: j.$W,
-            children: t.map((e, i) => (0, n.jsx)(I, {
-                rulesChannel: c ?? p,
+    }, [v, r, O]);
+    return (0, i.jsxs)(i.Fragment, {
+        children: [(0, i.jsx)("div", {
+            className: b.$W,
+            children: t.map((e, s) => (0, i.jsx)(T, {
+                rulesChannel: c ?? g,
                 rule: e,
-                index: i,
-                onChange: e => N(e, i),
+                index: s,
+                onChange: e => y(e, s),
                 onClear: () => (e => {
                     if (r) return;
-                    let n = [...t.slice(0, e), ...t.slice(e + 1)];
-                    l(0 === n.length ? [{
+                    let i = [...t.slice(0, e), ...t.slice(e + 1)];
+                    n(0 === i.length ? [{
                         id: o()(),
                         value: ""
-                    }] : n)
-                })(i),
-                onRuleReorder: A,
-                isDropHovered: i === g,
-                focused: i === y,
-                onFocus: T,
-                previewEnabled: u ?? !0,
+                    }] : i)
+                })(s),
+                onRuleReorder: R,
+                isDropHovered: s === x,
+                focused: s === C,
+                onFocus: I,
+                previewEnabled: d ?? !0,
                 isDragEnabled: !r && t.length > 1,
                 disabled: r
             }, e.id))
-        }), !D && (0, n.jsx)(C.d, {
-            text: k.intl.string(k.t.Cq5JuR),
-            onClick: R,
+        }), !O && (0, i.jsx)(A.d, {
+            text: E.intl.string(E.t.Cq5JuR),
+            onClick: S,
             disabled: r
-        }), (0, n.jsx)(x.Heading, {
+        }), (0, i.jsx)(m.Heading, {
             variant: "text-xs/bold",
             color: "text-muted",
-            className: j.V7,
-            children: k.intl.string(k.t.XHWj8W)
-        }), (0, n.jsx)(m.z, {
-            pills: S,
-            pillClassName: j.Io
+            className: b.V7,
+            children: E.intl.string(E.t.XHWj8W)
+        }), (0, i.jsx)(f.z, {
+            pills: L,
+            pillClassName: b.Io
         })]
     })
 }

@@ -4,30 +4,30 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var a = n(503698),
-    r = n.n(a),
-    l = n(126031),
-    s = n(397927),
+var l = n(503698),
+    s = n.n(l),
+    r = n(126031),
+    a = n(397927),
     o = n(438437),
     d = n(306417),
     c = n(985018),
-    u = n(841870);
+    u = n(673287);
 
 function _(e) {
     let {
         didSelfVote: t,
         label: n,
-        percentage: a
+        percentage: l
     } = e;
     return (0, i.jsxs)("div", {
         className: u.AA,
-        children: [t && (0, i.jsx)(l.s, {
+        children: [t && (0, i.jsx)(r.s, {
             children: c.intl.string(c.t["8DAM+5"])
-        }), (0, i.jsxs)(s.Text, {
+        }), (0, i.jsxs)(a.Text, {
             variant: "text-md/semibold",
             color: "none",
-            children: [a, "%"]
-        }), (0, i.jsx)(s.Text, {
+            children: [l, "%"]
+        }), (0, i.jsx)(a.Text, {
             variant: "text-xs/semibold",
             color: "none",
             children: n
@@ -39,30 +39,30 @@ function m(e) {
     let {
         answer: t,
         isExpired: n,
-        myAvatarUrl: a,
-        canShowVoteCounts: l
-    } = e, s = !0 === t.isSelected, o = !0 === t.didSelfVote, c = !0 === t.isVictor;
+        myAvatarUrl: l,
+        canShowVoteCounts: r
+    } = e, a = !0 === t.isSelected, o = !0 === t.didSelfVote, c = !0 === t.isVictor;
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(d.Dt, {
-            attachmentClassName: r()(u.oh, {
-                [u.Wx]: l
+            attachmentClassName: s()(u.oh, {
+                [u.Wx]: r
             }),
             emojiClassName: u.Zg,
             media: t.pollMedia,
             fallback: (0, i.jsx)("div", {
-                className: r()(u.oh, u.nb)
+                className: s()(u.oh, u.nb)
             })
-        }), s && (0, i.jsx)(d.Vx, {
+        }), a && (0, i.jsx)(d.Vx, {
             size: 40,
             isVictor: c,
             isExpired: n,
             className: u.Dt
-        }), l && (0, i.jsxs)(i.Fragment, {
+        }), r && (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)(_, {
                 didSelfVote: o,
                 percentage: t.votesPercentage,
                 label: t.votes,
-                myAvatarUrl: o ? a : void 0
+                myAvatarUrl: o ? l : void 0
             }), (!n && o || c) && (0, i.jsx)(d.Vx, {
                 size: 18,
                 isVictor: c,
@@ -77,24 +77,24 @@ function h(e) {
     let {
         isExpired: t,
         myAvatarUrl: n,
-        answersInteraction: a,
-        canShowVoteCounts: l,
-        ...s
+        answersInteraction: l,
+        canShowVoteCounts: r,
+        ...a
     } = e;
     return (0, i.jsx)(d.Fh, {
         className: u.ry,
-        answerClassName: r()(u.ZF, {
-            [u.EK]: a !== o.CQ.LIST
+        answerClassName: s()(u.ZF, {
+            [u.EK]: l !== o.CQ.LIST
         }),
         myAvatarUrl: n,
-        answersInteraction: a,
+        answersInteraction: l,
         renderAnswerContent: e => (0, i.jsx)(m, {
             answer: e,
             isExpired: t,
             myAvatarUrl: n,
-            answersInteraction: a,
-            canShowVoteCounts: l
+            answersInteraction: l,
+            canShowVoteCounts: r
         }),
-        ...s
+        ...a
     })
 }

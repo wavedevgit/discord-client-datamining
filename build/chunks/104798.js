@@ -1,21 +1,22 @@
 /** chunk id: 104798 params = (module,exports,require) **/
+"use strict";
 n.d(t, {
-    A: () => r
+    A: () => l
 });
-var a = n(835245),
-    l = n(562465),
-    i = n(652215);
-let r = {
+var i = n(835245),
+    s = n(562465),
+    r = n(652215);
+let l = {
     generateNonce: function() {
-        return (0, a.A)()
+        return (0, i.A)()
     },
     createHandoffToken: async function(e) {
         let {
             body: {
                 handoff_token: t
             }
-        } = await l.Bo.post({
-            url: i.Rsh.HANDOFF,
+        } = await s.Bo.post({
+            url: r.Rsh.HANDOFF,
             body: {
                 key: e
             },

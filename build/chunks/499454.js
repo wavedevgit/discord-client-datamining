@@ -4,10 +4,10 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var a = n(397927),
-    r = n(287809),
-    l = n(166403),
-    s = n(203982),
+var l = n(397927),
+    s = n(287809),
+    r = n(166403),
+    a = n(203982),
     o = n(927578),
     d = n(598653),
     c = n(788868),
@@ -19,11 +19,11 @@ function _(e) {
         channelContext: _,
         customGiftMessage: m,
         giftInfo: h
-    } = e, p = !1, g = null, A = r.default.getCurrentUser(), x = (0, o.CC)(A?.premiumType, c.PremiumTypes.TIER_0);
-    (0, a.mMO)(async () => {
+    } = e, p = !1, g = null, A = s.default.getCurrentUser(), x = (0, o.CC)(A?.premiumType, c.PremiumTypes.TIER_0);
+    (0, l.mMO)(async () => {
         let {
             default: e
-        } = await n.e("36820").then(n.bind(n, 67327));
+        } = await n.e("14439").then(n.bind(n, 67327));
         return n => (0, i.jsx)(e, {
             code: t,
             channelContext: _,
@@ -31,13 +31,13 @@ function _(e) {
             emojiName: h?.emoji?.name,
             soundId: h?.sound?.id,
             onComplete: (e, t) => {
-                g = e, t && (p = t, e.isSubscription && null == l.A.getPremiumSubscription(!1) && (0, d.o)(!0))
+                g = e, t && (p = t, e.isSubscription && null == r.A.getPremiumSubscription(!1) && (0, d.o)(!0))
             },
             ...n
         })
     }, {
         onCloseCallback: () => {
-            p && null != g && !x && g.isSubscription && g?.subscriptionPlan?.premiumSubscriptionType === c.PremiumTypes.TIER_2 && s._.dispatch(u.jej.PREMIUM_SUBSCRIPTION_CREATED)
+            p && null != g && !x && g.isSubscription && g?.subscriptionPlan?.premiumSubscriptionType === c.PremiumTypes.TIER_2 && a._.dispatch(u.jej.PREMIUM_SUBSCRIPTION_CREATED)
         }
     })
 }

@@ -1,24 +1,24 @@
 /** chunk id: 780207 params = (module,exports,require) **/
 n.d(t, {
-    A: () => a
+    A: () => l
 });
-var i = n(627968);
+var r = n(627968);
 n(64700);
-var s = n(397927),
-    l = n(652215);
+var i = n(397927),
+    s = n(652215);
 
-function a() {
-    (0, s.mMO)(async () => {
+function l() {
+    (0, i.mMO)(async () => {
         let {
             default: e
-        } = await Promise.all([n.e("14138"), n.e("49924"), n.e("57748")]).then(n.bind(n, 861177));
-        return t => (0, i.jsx)(e, {
+        } = await Promise.all([n.e("91757"), n.e("49924"), n.e("89905")]).then(n.bind(n, 861177));
+        return t => (0, r.jsx)(e, {
             ...t,
             source: {
-                page: l.liQ.USER_SETTINGS,
-                section: l.JJy.SETTINGS_CUSTOMIZE_PROFILE,
-                object: l.ZSU.BUTTON_CTA,
-                type: l.AnalyticsObjectTypes.BUY
+                page: s.liQ.USER_SETTINGS,
+                section: s.JJy.SETTINGS_CUSTOMIZE_PROFILE,
+                object: s.ZSU.BUTTON_CTA,
+                type: s.AnalyticsObjectTypes.BUY
             }
         })
     })

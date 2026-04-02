@@ -3,10 +3,10 @@ n.d(t, {
     A: () => A
 });
 var i = n(627968),
-    a = n(503698),
-    r = n.n(a),
-    l = n(311907),
-    s = n(52133),
+    l = n(503698),
+    s = n.n(l),
+    r = n(311907),
+    a = n(52133),
     o = n(397927),
     d = n(402216),
     c = n(450149),
@@ -15,30 +15,30 @@ var i = n(627968),
     m = n(607407),
     h = n(616356),
     p = n(734057),
-    g = n(826235);
+    g = n(682524);
 
 function A(e) {
     let {
         stream: t,
         currentUserId: n,
-        className: a,
+        className: l,
         onClick: A
     } = e, {
         activeStream: x,
         channel: f
-    } = (0, l.bG)([h.A, p.A], () => ({
+    } = (0, r.bG)([h.A, p.A], () => ({
         activeStream: h.A.getActiveStreamForApplicationStream(t),
         channel: p.A.getChannel(t.channelId)
-    }), [t], s.A), {
+    }), [t], a.A), {
         previewUrl: C,
-        isLoading: I
-    } = (0, c.A)(t.guildId, t.channelId, t.ownerId), [E, b] = (0, u.zP)(f);
+        isLoading: E
+    } = (0, c.A)(t.guildId, t.channelId, t.ownerId), [I, v] = (0, u.zP)(f);
     return (0, i.jsxs)(o.DUT, {
-        onClick: E ? A : void 0,
-        className: r()(g.Um, {
-            [g.qf]: null == C && !I,
-            [g.vk]: E
-        }, a),
+        onClick: I ? A : void 0,
+        className: s()(g.Um, {
+            [g.qf]: null == C && !E,
+            [g.vk]: I
+        }, l),
         children: [(0, i.jsx)("div", {
             className: g.rB,
             children: (0, i.jsx)(m.A, {
@@ -49,7 +49,7 @@ function A(e) {
         }), (0, i.jsx)(d.Ay, {
             className: g.Ok,
             size: d.ed.SMALL
-        }), E ? (0, i.jsxs)("div", {
+        }), I ? (0, i.jsxs)("div", {
             className: g.H_,
             children: [(0, i.jsx)("div", {
                 className: g.bF
@@ -57,7 +57,7 @@ function A(e) {
                 variant: "overlay-secondary",
                 size: "sm",
                 icon: o.Fzq,
-                text: (0, _.A)(t, x, n, b)
+                text: (0, _.A)(t, x, n, v)
             })]
         }) : null]
     })

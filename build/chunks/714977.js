@@ -20,8 +20,8 @@ var i = n(627968),
     g = n(672396),
     m = n(652215),
     x = n(985018),
-    E = n(720847),
-    y = n(153335);
+    E = n(571944),
+    y = n(885106);
 
 function v() {
     let e = h.default.getNotificationPositionMode(),

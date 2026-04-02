@@ -1,12 +1,12 @@
 /** chunk id: 285433 params = (module,exports,require) **/
 n.d(t, {
-    A: () => b
+    A: () => v
 });
 var i = n(627968),
-    a = n(64700),
-    r = n(503698),
-    l = n.n(r),
-    s = n(687498),
+    l = n(64700),
+    s = n(503698),
+    r = n.n(s),
+    a = n(687498),
     o = n(827734),
     d = n(990078),
     c = n(397927),
@@ -21,124 +21,124 @@ var i = n(627968),
     f = n(398025);
 n(433745);
 var C = n(818348),
-    I = n(985018),
-    E = n(851383);
-let b = e => {
+    E = n(985018),
+    I = n(798324);
+let v = e => {
     let {
         isQuestExpired: t,
         quest: n,
-        location: r,
-        size: b,
-        expansionSpring: v,
+        location: s,
+        size: v,
+        expansionSpring: b,
         isAnimating: T,
-        isExpanded: S,
-        isInteracting: y,
-        contentPosition: N,
+        isExpanded: N,
+        isInteracting: S,
+        contentPosition: y,
         toggleExpanded: j,
         sourceQuestContent: L
-    } = e, [R, P] = a.useState(null), [w, D] = a.useState(null), M = (0, _.A)(e => {
+    } = e, [R, P] = l.useState(null), [D, M] = l.useState(null), w = (0, _.A)(e => {
         let t = e.target;
-        P(t.offsetWidth), D(t.scrollWidth)
-    }), k = (0, u.w)(M), O = r === m.uF.QUESTS_EMBED, U = n.userStatus?.completedAt != null, B = (0, h.S5)(n.config.expiresAt), G = (0, h.S5)(n.config.rewardsConfig.rewardsExpireAt), F = a.useMemo(() => null != n.config.cosponsorMetadata, [n]), H = (0, i.jsx)(A.Ay, {
-        className: E.Iu,
-        logotypeClassName: F ? E.qN : void 0,
+        P(t.offsetWidth), M(t.scrollWidth)
+    }), O = (0, u.w)(w), k = s === m.uF.QUESTS_EMBED, U = n.userStatus?.completedAt != null, B = (0, h.S5)(n.config.expiresAt), G = (0, h.S5)(n.config.rewardsConfig.rewardsExpireAt), F = l.useMemo(() => null != n.config.cosponsorMetadata, [n]), H = (0, i.jsx)(A.Ay, {
+        className: I.Iu,
+        logotypeClassName: F ? I.qN : void 0,
         gameTileSize: A.LU.MEDIUM,
         quest: n,
         separatorSpacing: A.C8.MEDIUM,
         theme: C.NJ.DARK,
-        withGameTile: !O || null == n.config.cosponsorMetadata
+        withGameTile: !k || null == n.config.cosponsorMetadata
     });
     return (0, i.jsxs)("div", {
-        className: l()(E.nw, {
-            [E.Gg]: O,
-            [E.e5]: "xs" === b
+        className: r()(I.nw, {
+            [I.Gg]: k,
+            [I.e5]: "xs" === v
         }),
-        "aria-label": I.intl.string(I.t.dcl9MQ),
+        "aria-label": E.intl.string(E.t.dcl9MQ),
         children: [(0, i.jsx)(p.A, {
             quest: n,
-            isInteracting: y,
-            containerClassName: E.v7,
+            isInteracting: S,
+            containerClassName: I.v7,
             imageSize: {
                 width: 660,
                 height: 185
             },
-            imageClassName: E.Z5
+            imageClassName: I.Z5
         }), (0, i.jsxs)("div", {
-            className: E.wx,
-            "aria-expanded": S,
-            children: [(0, i.jsx)(s.animated.div, {
-                className: l()(E.VW, {
-                    [E.eX]: O
+            className: I.wx,
+            "aria-expanded": N,
+            children: [(0, i.jsx)(a.animated.div, {
+                className: r()(I.VW, {
+                    [I.eX]: k
                 }),
-                children: (0, i.jsx)(s.animated.div, {
-                    className: l()(E.Yu, {
-                        [E.Gg]: O
+                children: (0, i.jsx)(a.animated.div, {
+                    className: r()(I.Yu, {
+                        [I.Gg]: k
                     }),
                     style: {
-                        opacity: (0, f.a)(v.to({
+                        opacity: (0, f.a)(b.to({
                             range: [0, 1],
                             output: [0, 1]
                         })),
-                        visibility: T || S ? "inherit" : "hidden"
+                        visibility: T || N ? "inherit" : "hidden"
                     },
-                    "aria-hidden": !T && !S,
+                    "aria-hidden": !T && !N,
                     children: (0, i.jsxs)("div", {
-                        className: E.uA,
+                        className: I.uA,
                         children: [(0, i.jsxs)("div", {
-                            className: E._V,
-                            children: [H, O ? null : (0, i.jsx)(x.A, {
+                            className: I._V,
+                            children: [H, k ? null : (0, i.jsx)(x.A, {
                                 color: "always-white"
                             })]
                         }), (0, i.jsxs)("div", {
-                            className: E.P9,
+                            className: I.P9,
                             children: [(0, i.jsx)(d.m, {
                                 __unsupportedReactNodeAsText: n.config.messages.questName,
-                                shouldShow: null != R && null != w && R < w,
+                                shouldShow: null != R && null != D && R < D,
                                 children: (0, i.jsx)(c.Heading, {
-                                    ref: k,
-                                    variant: "lg" === b ? "heading-xxl/bold" : "sm" === b ? "heading-xl/bold" : "heading-lg/bold",
-                                    className: E.R_,
+                                    ref: O,
+                                    variant: "lg" === v ? "heading-xxl/bold" : "sm" === v ? "heading-xl/bold" : "heading-lg/bold",
+                                    className: I.R_,
                                     color: "always-white",
-                                    children: I.intl.format(I.t.EAYZAr, {
+                                    children: E.intl.format(E.t.EAYZAr, {
                                         questName: n.config.messages.questName
                                     })
                                 })
                             }), (0, i.jsx)(c.Text, {
                                 variant: "text-xs/normal",
                                 color: "always-white",
-                                children: U ? I.intl.formatToPlainString(I.t.APddvF, {
+                                children: U ? E.intl.formatToPlainString(E.t.APddvF, {
                                     expirationDate: G
-                                }) : t ? I.intl.formatToPlainString(I.t.v7xMw7, {
+                                }) : t ? E.intl.formatToPlainString(E.t.v7xMw7, {
                                     expirationDate: B
-                                }) : I.intl.formatToPlainString(I.t["pX+fmn"], {
+                                }) : E.intl.formatToPlainString(E.t["pX+fmn"], {
                                     expirationDate: B
                                 })
                             })]
                         })]
                     })
                 })
-            }), (0, i.jsx)(s.animated.div, {
-                className: E._q,
+            }), (0, i.jsx)(a.animated.div, {
+                className: I._q,
                 style: {
                     top: 20
                 },
                 children: (0, i.jsx)(g.C, {
-                    questContent: r,
+                    questContent: s,
                     quest: n,
-                    questContentPosition: N,
+                    questContentPosition: y,
                     shouldShowDisclosure: !0,
-                    showShareLink: !t && O,
+                    showShareLink: !t && k,
                     sourceQuestContent: L,
-                    children: e => (0, i.jsx)(s.animated.div, {
+                    children: e => (0, i.jsx)(a.animated.div, {
                         style: {
-                            opacity: (0, f.a)(v),
-                            visibility: T || S ? "inherit" : "hidden"
+                            opacity: (0, f.a)(b),
+                            visibility: T || N ? "inherit" : "hidden"
                         },
-                        "aria-hidden": !T && !S,
+                        "aria-hidden": !T && !N,
                         children: (0, i.jsx)(c.DUT, {
                             ...e,
-                            className: E.P0,
-                            "aria-label": I.intl.string(I.t.DEoVWZ),
+                            className: I.P0,
+                            "aria-label": E.intl.string(E.t.DEoVWZ),
                             children: (0, i.jsx)(c.jNK, {
                                 size: "md",
                                 color: o.A.colors.WHITE

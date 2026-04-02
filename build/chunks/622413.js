@@ -4,39 +4,39 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var a = n(503698),
-    r = n.n(a),
-    l = n(397927),
-    s = n(70435);
+var l = n(503698),
+    s = n.n(l),
+    r = n(397927),
+    a = n(348542);
 let o = e => {
     let {
         renderTitle: t,
         renderTagline: n,
-        renderActions: a,
+        renderActions: l,
         renderMedia: o,
         className: d,
         isHorizontal: c = !1
     } = e;
     return (0, i.jsxs)("div", {
-        className: r()(s.Vs, {
-            [s.ZQ]: c
+        className: s()(a.Vs, {
+            [a.ZQ]: c
         }, d),
         children: [null != o && (0, i.jsx)("div", {
-            className: r()(s.$_, {
-                [s.rO]: c
+            className: s()(a.$_, {
+                [a.rO]: c
             }),
             children: o?.()
         }), (0, i.jsxs)("div", {
-            className: s.h_,
-            children: [(0, i.jsx)(l.H, {
-                className: s.DD,
+            className: a.h_,
+            children: [(0, i.jsx)(r.H, {
+                className: a.DD,
                 children: t?.()
             }), (0, i.jsx)("div", {
-                className: s.dS,
+                className: a.dS,
                 children: n?.()
             }), (0, i.jsx)("div", {
-                className: s.o1,
-                children: a?.()
+                className: a.o1,
+                children: l?.()
             })]
         })]
     })

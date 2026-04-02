@@ -4,10 +4,10 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var a = n(110259),
-    r = n(417597),
-    l = n(793574),
-    s = n(139286),
+var l = n(110259),
+    s = n(417597),
+    r = n(793574),
+    a = n(139286),
     o = n(967198),
     d = n(250627),
     c = n(284605),
@@ -16,10 +16,10 @@ var a = n(110259),
 function _(e) {
     let {
         code: t
-    } = e, [n, _] = t.split("-"), m = (0, d.Qi)(n, _), h = (0, r.bG)([o.A], () => o.A.getGuildId());
-    return ((0, s.A)({
+    } = e, [n, _] = t.split("-"), m = (0, d.Qi)(n, _), h = (0, s.bG)([o.A], () => o.A.getGuildId());
+    return ((0, a.A)({
         type: u.z.VIEW,
-        name: a.ImpressionNames.GUILD_PRODUCT_LISTING_EMBED,
+        name: l.ImpressionNames.GUILD_PRODUCT_LISTING_EMBED,
         properties: {
             guild_product_listing_id: _,
             has_entitlement: m?.has_entitlement === !0
@@ -29,7 +29,7 @@ function _(e) {
     }), null == m || h !== n) ? null : (0, i.jsx)(c.i, {
         guildProductListing: m,
         guildId: n,
-        location: l.A.GUILD_PRODUCT_EMBED_CARD,
+        location: r.A.GUILD_PRODUCT_EMBED_CARD,
         cardWidth: 390,
         thumbnailHeight: 219
     })

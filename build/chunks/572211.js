@@ -1,12 +1,12 @@
 /** chunk id: 572211 params = (module,exports,require) **/
 n.d(t, {
-    h: () => E,
+    h: () => I,
     u: () => C
 }), n(323874), n(14289), n(35956);
-var i, a = n(627968),
-    r = n(64700),
-    l = n(503698),
-    s = n.n(l),
+var i, l = n(627968),
+    s = n(64700),
+    r = n(503698),
+    a = n.n(r),
     o = n(299619),
     d = n(172218),
     c = n(158954),
@@ -18,45 +18,45 @@ var i, a = n(627968),
     g = n(354287),
     A = n(768349),
     x = n(838541),
-    f = n(401821),
+    f = n(498272),
     C = ((i = {})[i.BOT = 0] = "BOT", i[i.ACTIVITY = 1] = "ACTIVITY", i);
 
-function I(e) {
+function E(e) {
     let {
         onClick: t,
         children: n,
         className: i
     } = e;
-    return null != t ? (0, a.jsx)(c.DUT, {
+    return null != t ? (0, l.jsx)(c.DUT, {
         onClick: t,
-        className: s()({
+        className: a()({
             [f.or]: null != t
         }, i),
         children: n
-    }) : (0, a.jsx)("div", {
+    }) : (0, l.jsx)("div", {
         className: i,
         children: n
     })
 }
 
-function E(e) {
+function I(e) {
     var t;
     let {
         title: n,
         header: i,
-        footer: l,
+        footer: r,
         info: C,
-        staticBannerSrc: E,
-        videoBannerSrc: b,
-        bannerAspectRatio: v = 0,
+        staticBannerSrc: I,
+        videoBannerSrc: v,
+        bannerAspectRatio: b = 0,
         iconSrc: T,
-        actions: S = [],
-        primaryActionFirst: y = !1,
-        trackingConfig: N,
+        actions: N = [],
+        primaryActionFirst: S = !1,
+        trackingConfig: y,
         onClickContent: j,
         onClickBanner: L
     } = e;
-    t = N, N = {
+    t = y, y = {
         id: t?.id ?? "0",
         linkType: t?.linkType ?? A.J.UNKNOWN,
         referrerId: t?.referrerId ?? p.default.getId(),
@@ -71,169 +71,169 @@ function E(e) {
     let {
         primaryColor: R,
         secondaryColor: P
-    } = (0, h.A)(T ?? E), w = `linear-gradient(45deg, ${R}, ${P})`, D = (0, u.bG)([m.A], () => m.A.useReducedMotion), M = r.useRef(!1), k = (0, d.K)(e => {
-        !1 === M.current && e && (N?.onView?.(), (0, g.wV)({
-            appId: N.id,
-            linkType: N.linkType,
-            referrerId: N.referrerId,
-            customId: N.activityCustomId,
-            guildId: N.guildId,
-            channelId: N.channelId,
-            messageId: N.messageId
-        }), M.current = !0)
-    }, void 0), O = null != E, U = null != b && !1 === D, B = O || U, G = 0 === v ? f.pv : f.$g, F = r.useRef(null), H = r.useCallback(() => {
+    } = (0, h.A)(T ?? I), D = `linear-gradient(45deg, ${R}, ${P})`, M = (0, u.bG)([m.A], () => m.A.useReducedMotion), w = s.useRef(!1), O = (0, d.K)(e => {
+        !1 === w.current && e && (y?.onView?.(), (0, g.wV)({
+            appId: y.id,
+            linkType: y.linkType,
+            referrerId: y.referrerId,
+            customId: y.activityCustomId,
+            guildId: y.guildId,
+            channelId: y.channelId,
+            messageId: y.messageId
+        }), w.current = !0)
+    }, void 0), k = null != I, U = null != v && !1 === M, B = k || U, G = 0 === b ? f.pv : f.$g, F = s.useRef(null), H = s.useCallback(() => {
         let e = F.current;
         null == e || ("hidden" === getComputedStyle(e).visibility ? e.pause() : e.play())
-    }, []), V = r.useMemo(() => !!U && new URL(b).pathname.endsWith(".gif"), [U, b]), q = r.useMemo(() => {
+    }, []), V = s.useMemo(() => !!U && new URL(v).pathname.endsWith(".gif"), [U, v]), q = s.useMemo(() => {
         if (null != j) return e => {
             j(e), (0, g.gx)({
-                applicationId: N.id,
-                linkType: N.linkType,
+                applicationId: y.id,
+                linkType: y.linkType,
                 area: g.kY.CONTENT,
-                referrerId: N.referrerId,
-                customId: N.activityCustomId,
-                isDeadEnd: N.isDeadEnd
+                referrerId: y.referrerId,
+                customId: y.activityCustomId,
+                isDeadEnd: y.isDeadEnd
             })
         }
-    }, [j, N]), W = r.useMemo(() => {
+    }, [j, y]), W = s.useMemo(() => {
         if (null != L) return e => {
             L(e), (0, g.gx)({
-                applicationId: N.id,
-                linkType: N.linkType,
+                applicationId: y.id,
+                linkType: y.linkType,
                 area: g.kY.BANNER,
-                referrerId: N.referrerId,
-                customId: N.activityCustomId,
-                isDeadEnd: N.isDeadEnd
+                referrerId: y.referrerId,
+                customId: y.activityCustomId,
+                isDeadEnd: y.isDeadEnd
             })
         }
-    }, [L, N]);
-    return (0, a.jsxs)("div", {
-        ref: k,
+    }, [L, y]);
+    return (0, l.jsxs)("div", {
+        ref: O,
         className: f.E6,
-        children: [B && (0, a.jsxs)(I, {
+        children: [B && (0, l.jsxs)(E, {
             onClick: W,
-            className: s()(f.cy, G, {
+            className: a()(f.cy, G, {
                 [f.wk]: U
             }),
-            children: [U && (V ? (0, a.jsx)("div", {
+            children: [U && (V ? (0, l.jsx)("div", {
                 className: f.O9,
                 style: {
-                    backgroundImage: `url(${b})`
+                    backgroundImage: `url(${v})`
                 }
-            }) : (0, a.jsx)(o.A, {
+            }) : (0, l.jsx)(o.A, {
                 ref: F,
-                src: b,
+                src: v,
                 mediaLayoutType: x.dG.MOSAIC,
                 loop: !0,
                 muted: !0,
                 className: f.O9
-            })), O && (0, a.jsx)("div", {
+            })), k && (0, l.jsx)("div", {
                 className: f.LR,
                 style: {
-                    backgroundImage: `url(${E})`
+                    backgroundImage: `url(${I})`
                 },
                 onTransitionEnd: H
             })]
-        }), (0, a.jsxs)("div", {
+        }), (0, l.jsxs)("div", {
             style: {
-                background: w
+                background: D
             },
-            children: [(0, a.jsxs)("div", {
+            children: [(0, l.jsxs)("div", {
                 className: f.hQ,
-                children: [null != i && (0, a.jsx)(c.EYj, {
+                children: [null != i && (0, l.jsx)(c.EYj, {
                     variant: "text-sm/semibold",
                     color: "none",
                     className: f.wx,
                     children: i
-                }), (0, a.jsxs)(I, {
+                }), (0, l.jsxs)(E, {
                     onClick: q,
-                    className: s()(f.FG, {
+                    className: a()(f.FG, {
                         [f.ry]: null != q
                     }),
-                    children: [null != T && (0, a.jsx)("div", {
+                    children: [null != T && (0, l.jsx)("div", {
                         className: f._8,
                         style: {
                             backgroundImage: `url(${T})`
                         }
-                    }), (0, a.jsxs)("div", {
+                    }), (0, l.jsxs)("div", {
                         className: f.Qs,
-                        children: [(0, a.jsx)(c.EYj, {
+                        children: [(0, l.jsx)(c.EYj, {
                             variant: "text-md/semibold",
                             color: "none",
                             lineClamp: 1,
                             className: f.eu,
                             children: n
-                        }), (0, a.jsx)("div", {
+                        }), (0, l.jsx)("div", {
                             className: f.rj,
                             children: C
                         })]
                     })]
-                }), S.length > 0 && (0, a.jsx)("div", {
-                    className: s()(f.AC, y ? f.ad : null),
-                    children: S.map((e, t) => {
+                }), N.length > 0 && (0, l.jsx)("div", {
+                    className: a()(f.AC, S ? f.ad : null),
+                    children: N.map((e, t) => {
                         let {
                             label: n,
                             icon: i,
-                            onClick: r,
-                            disabled: l,
-                            disabledReason: s,
+                            onClick: s,
+                            disabled: r,
+                            disabledReason: a,
                             submitting: o,
                             trackingArea: d,
                             isDeadEnd: u,
                             iconButton: m,
                             buttonRef: h
                         } = e, p = 0 === t;
-                        return m ? (0, a.jsx)(_.m_, {
+                        return m ? (0, l.jsx)(_.m_, {
                             text: n,
                             targetElementRef: h,
-                            children: (0, a.jsx)(c.K0, {
+                            children: (0, l.jsx)(c.K0, {
                                 variant: p ? "overlay-primary" : "overlay-secondary",
-                                disabled: l || null != s,
+                                disabled: r || null != a,
                                 loading: o,
                                 icon: i,
                                 "aria-label": n,
                                 buttonRef: h,
                                 onClick: e => {
-                                    r(e), (0, g.gx)({
-                                        applicationId: N.id,
-                                        linkType: N.linkType,
+                                    s(e), (0, g.gx)({
+                                        applicationId: y.id,
+                                        linkType: y.linkType,
                                         area: d,
-                                        referrerId: N.referrerId,
-                                        customId: N.activityCustomId,
+                                        referrerId: y.referrerId,
+                                        customId: y.activityCustomId,
                                         isDeadEnd: u
                                     })
                                 }
                             })
-                        }, n) : (0, a.jsxs)("div", {
+                        }, n) : (0, l.jsxs)("div", {
                             className: f.uc,
-                            children: [(0, a.jsx)(c.$nd, {
+                            children: [(0, l.jsx)(c.$nd, {
                                 variant: p ? "overlay-primary" : "overlay-secondary",
-                                disabled: l || null != s,
+                                disabled: r || null != a,
                                 loading: o,
                                 icon: i,
                                 text: n,
                                 buttonRef: h,
                                 onClick: e => {
-                                    r(e), (0, g.gx)({
-                                        applicationId: N.id,
-                                        linkType: N.linkType,
+                                    s(e), (0, g.gx)({
+                                        applicationId: y.id,
+                                        linkType: y.linkType,
                                         area: d,
-                                        referrerId: N.referrerId,
-                                        customId: N.activityCustomId,
+                                        referrerId: y.referrerId,
+                                        customId: y.activityCustomId,
                                         isDeadEnd: u
                                     })
                                 },
                                 fullWidth: !0
-                            }), null != s && (0, a.jsx)(c.EYj, {
+                            }), null != a && (0, l.jsx)(c.EYj, {
                                 variant: "text-xs/medium",
                                 color: "none",
                                 className: f.H$,
-                                children: s
+                                children: a
                             })]
                         }, n)
                     })
                 })]
-            }), null != l && l]
+            }), null != r && r]
         })]
     })
 }

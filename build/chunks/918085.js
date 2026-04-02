@@ -3,10 +3,10 @@ n.d(t, {
     A: () => C
 });
 var i = n(627968),
-    a = n(64700),
-    r = n(503698),
-    l = n.n(r),
-    s = n(714384),
+    l = n(64700),
+    s = n(503698),
+    r = n.n(s),
+    a = n(714384),
     o = n(740916),
     d = n(191931),
     c = n(886352),
@@ -17,8 +17,8 @@ var i = n(627968),
     p = n(863574),
     g = n(622413),
     A = n(652215),
-    x = n(853867);
-class f extends a.PureComponent {
+    x = n(297064);
+class f extends l.PureComponent {
     static defaultProps = {
         showMediaPlaceholder: !1,
         isMouseOver: !1,
@@ -31,20 +31,20 @@ class f extends a.PureComponent {
             inLibrary: e,
             sku: t,
             renderCustomActions: n,
-            isMouseOver: a,
-            showBuyInline: r
-        } = this.props, l = (r || !t.requiresPayment) && !e;
+            isMouseOver: l,
+            showBuyInline: s
+        } = this.props, r = (s || !t.requiresPayment) && !e;
         return null != n ? n() : (0, i.jsxs)("div", {
             className: x.ED,
             children: [(0, i.jsx)(o.A, {
                 type: o.A.Types.DIRECTORY_TILE,
                 sku: t,
                 inLibrary: e,
-                className: l && a ? x.ae : x.Ek
-            }), (0, i.jsx)(s.E, {
+                className: r && l ? x.ae : x.Ek
+            }), (0, i.jsx)(a.E, {
                 systems: [A.uje.WINDOWS],
                 className: x.iD
-            }), l ? (0, i.jsx)("div", {
+            }), r ? (0, i.jsx)("div", {
                 children: "deprecated!"
             }) : null]
         })
@@ -54,37 +54,37 @@ class f extends a.PureComponent {
             playing: e,
             muted: t,
             showMediaPlaceholder: n,
-            onToggleMute: r,
-            sku: s,
+            onToggleMute: s,
+            sku: a,
             isHorizontal: o,
             storeListing: p
         } = this.props;
-        return (0, _.bF)(s) ? (0, i.jsx)(m.e, {
-            sku: s,
+        return (0, _.bF)(a) ? (0, i.jsx)(m.e, {
+            sku: a,
             shape: "custom",
             containerClassName: x.A$,
             backgroundImageClassName: x.iZ,
             foregroundImageClassName: x.O7
-        }) : (0, i.jsxs)(a.Fragment, {
+        }) : (0, i.jsxs)(l.Fragment, {
             children: [(0, i.jsx)(u.A, {
-                className: l()(x.H1, {
+                className: r()(x.H1, {
                     [x.ZC]: o
                 }),
-                video: null != p.previewVideo ? (0, h.YE)(s.applicationId, p.previewVideo) : void 0,
-                image: null != p.thumbnail ? (0, h.YE)(s.applicationId, p.thumbnail, 600) : void 0,
-                title: s.name,
+                video: null != p.previewVideo ? (0, h.YE)(a.applicationId, p.previewVideo) : void 0,
+                image: null != p.thumbnail ? (0, h.YE)(a.applicationId, p.thumbnail, 600) : void 0,
+                title: a.name,
                 playing: e,
                 muted: t,
                 placeholder: n,
-                onToggleMute: r,
+                onToggleMute: s,
                 splashClassName: x.ZI,
                 splashPlaceholderClassName: x.NB
-            }), s.exclusive ? (0, i.jsx)(c.A, {
-                className: l()(x.LJ, {
+            }), a.exclusive ? (0, i.jsx)(c.A, {
+                className: r()(x.LJ, {
                     [x.V9]: e
                 })
-            }) : s.isTheGameAwardsWinner ? (0, i.jsx)(d.A, {
-                className: l()(x.LJ, {
+            }) : a.isTheGameAwardsWinner ? (0, i.jsx)(d.A, {
+                className: r()(x.LJ, {
                     [x.V9]: e
                 })
             }) : null]
@@ -95,17 +95,17 @@ class f extends a.PureComponent {
             sku: e,
             storeListing: t,
             isHorizontal: n,
-            className: a,
-            renderCustomTagline: r,
-            renderCustomTitle: l,
-            renderCustomMedia: s,
+            className: l,
+            renderCustomTagline: s,
+            renderCustomTitle: r,
+            renderCustomMedia: a,
             isEmbed: o
         } = this.props, d = o ? p.ug : g.A;
         return (0, i.jsx)(d, {
-            className: a,
-            renderMedia: null != s ? s : this.renderMedia,
-            renderTitle: null != l ? l : () => e.name,
-            renderTagline: null != r ? r : () => t.tagline,
+            className: l,
+            renderMedia: null != a ? a : this.renderMedia,
+            renderTitle: null != r ? r : () => e.name,
+            renderTagline: null != s ? s : () => t.tagline,
             renderActions: this.renderActions,
             isHorizontal: n
         })

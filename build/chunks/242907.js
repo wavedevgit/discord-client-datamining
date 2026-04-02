@@ -4,10 +4,10 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var a = n(158954),
-    r = n(311907),
-    l = n(414798),
-    s = n(529200),
+var l = n(158954),
+    s = n(311907),
+    r = n(414798),
+    a = n(529200),
     o = n(406704),
     d = n(961350),
     c = n(734057),
@@ -16,7 +16,7 @@ var a = n(158954),
     m = n(427262),
     h = n(652215),
     p = n(985018),
-    g = n(147673);
+    g = n(366228);
 
 function A(e) {
     let t, n, A, {
@@ -24,10 +24,10 @@ function A(e) {
             banned: f,
             channelId: C
         } = e,
-        I = (0, r.bG)([d.default], () => d.default.getId()),
-        E = m.Ay.useName(x),
-        b = I === x.id,
-        v = (0, r.bG)([c.A, u.A], () => {
+        E = (0, s.bG)([d.default], () => d.default.getId()),
+        I = m.Ay.useName(x),
+        v = E === x.id,
+        b = (0, s.bG)([c.A, u.A], () => {
             let e = c.A.getChannel(C);
             if (null == e) return !1;
             if (e.isPrivate()) return !0;
@@ -38,9 +38,9 @@ function A(e) {
             }
             return u.A.can(h.xBc.SEND_MESSAGES, e)
         });
-    return b ? (t = p.intl.string(p.t["F/OLvL"]), A = p.intl.string(p.t.C89OLE)) : (A = p.intl.string(p.t.YVub5y), f ? t = p.intl.string(p.t["57nBty"]) : null != E && v ? (t = p.intl.formatToPlainString(p.t["9Akp1s"], {
-        username: E
-    }), n = (0, i.jsx)(a.$nd, {
+    return v ? (t = p.intl.string(p.t["F/OLvL"]), A = p.intl.string(p.t.C89OLE)) : (A = p.intl.string(p.t.YVub5y), f ? t = p.intl.string(p.t["57nBty"]) : null != I && b ? (t = p.intl.formatToPlainString(p.t["9Akp1s"], {
+        username: I
+    }), n = (0, i.jsx)(l.$nd, {
         onClick: function() {
             let {
                 id: e
@@ -48,18 +48,18 @@ function A(e) {
             _._.dispatchToLastSubscribed(h.jej.INSERT_TEXT, {
                 plainText: t,
                 rawText: n
-            }), null != C && l.A.startTyping(C)
+            }), null != C && r.A.startTyping(C)
         },
         text: p.intl.string(p.t.P8tvKG)
-    })) : t = p.intl.string(p.t["SMJr+a"])), (0, i.jsxs)(s.A, {
-        children: [(0, i.jsx)(s.A.Header, {
+    })) : t = p.intl.string(p.t["SMJr+a"])), (0, i.jsxs)(a.A, {
+        children: [(0, i.jsx)(a.A.Header, {
             text: A
-        }), (0, i.jsxs)(s.A.Body, {
+        }), (0, i.jsxs)(a.A.Body, {
             children: [(0, i.jsxs)("div", {
                 className: g.iH,
-                children: [(0, i.jsx)(s.A.Icon, {
+                children: [(0, i.jsx)(a.A.Icon, {
                     expired: !0
-                }), (0, i.jsx)(s.A.Info, {
+                }), (0, i.jsx)(a.A.Info, {
                     expired: !0,
                     title: p.intl.string(p.t["Jhx/ud"]),
                     children: t

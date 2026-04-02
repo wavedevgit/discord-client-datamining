@@ -1,12 +1,12 @@
 /** chunk id: 13403 params = (module,exports,require) **/
 n.d(t, {
-    A: () => w
+    A: () => D
 }), n(321073);
 var i = n(627968),
-    a = n(64700),
-    r = n(311907),
-    l = n(554146),
-    s = n(342494),
+    l = n(64700),
+    s = n(311907),
+    r = n(554146),
+    a = n(342494),
     o = n(397927),
     d = n(735991),
     c = n(690456),
@@ -20,25 +20,25 @@ var i = n(627968),
     x = n(692969),
     f = n(928550),
     C = n(760751),
-    I = n(320501),
-    E = n(139675),
-    b = n(486020),
-    v = n(456060),
+    E = n(320501),
+    I = n(139675),
+    v = n(486020),
+    b = n(456060),
     T = n(659051),
-    S = n(837197),
-    y = n(359549),
-    N = n(537643),
+    N = n(837197),
+    S = n(359549),
+    y = n(537643),
     j = n(444901),
     L = n(842157),
     R = n(49999),
     P = n(985018);
 
-function w(e) {
+function D(e) {
     var t, n;
-    let w, D, {
-            analyticsLocations: M,
-            application: k,
-            channel: O,
+    let D, M, {
+            analyticsLocations: w,
+            application: O,
+            channel: k,
             currentUserId: U,
             currentUserPresenceActivity: B,
             hideParty: G,
@@ -47,49 +47,49 @@ function w(e) {
             partyStatusElement: V,
             presenceActivity: q
         } = e,
-        W = (0, d.Ag)(k),
+        W = (0, d.Ag)(O),
         {
-            iconSrc: z,
-            name: Y
+            iconSrc: Y,
+            name: z
         } = function(e, t) {
             let {
                 bot: n
             } = t;
             return {
-                iconSrc: (e.activity?.icon_override != null ? (0, E.uD)(t.id, e.activity?.icon_override) : null) ?? b.Ay.getApplicationIconURL({
+                iconSrc: (e.activity?.icon_override != null ? (0, I.uD)(t.id, e.activity?.icon_override) : null) ?? v.Ay.getApplicationIconURL({
                     id: t.id,
                     icon: t.icon,
                     bot: n
                 }),
                 name: e.activity?.name_override ?? t.name
             }
-        }(F, k),
-        Q = (0, N.I)({
+        }(F, O),
+        Q = (0, y.I)({
             messageId: F.id,
             presenceActivity: q,
-            application: k
+            application: O
         }) ?? void 0,
         {
             openGameProfileModal: K,
             launchableAppId: J
-        } = (t = k.id, n = F.author.id, w = (0, f.d)(t), D = (0, r.bG)([m.A, C.A], () => {
+        } = (t = O.id, n = F.author.id, D = (0, f.d)(t), M = (0, s.bG)([m.A, C.A], () => {
             let e = m.A.getApplication(t);
             return null != e ? C.A.getGameByApplication(e) : null
         }, [t]), {
             openGameProfileModal: (0, x.A)({
                 location: "Rich Presence Activity Invite Embed",
-                applicationId: D?.id ?? void 0,
+                applicationId: M?.id ?? void 0,
                 source: A.Ob.Embed,
                 trackEntryPointImpression: !0,
                 sourceUserId: n
             }),
-            launchableAppId: w
+            launchableAppId: D
         }),
-        X = (0, y.A)({
-            application: k,
-            analyticsLocations: M
+        X = (0, S.A)({
+            application: O,
+            analyticsLocations: w
         }),
-        Z = a.useMemo(() => {
+        Z = l.useMemo(() => {
             if (null != X) return {
                 label: P.intl.string(P.t["jaYS/h"]),
                 icon: o.hpF,
@@ -97,40 +97,40 @@ function w(e) {
                 onClick: X
             }
         }, [X]),
-        $ = (0, p.F)(k),
-        ee = a.useMemo(() => null != K ? K : null != $ && W ? $ : void 0, [W, K, $]),
+        $ = (0, p.F)(O),
+        ee = l.useMemo(() => null != K ? K : null != $ && W ? $ : void 0, [W, K, $]),
         et = c.A.useConfig({
             location: "RichPresenceGameActivityInviteEmbed"
         }),
         {
             canStartAuthorization: en,
             hasAlreadyLinked: ei,
-            startAuthorization: ea
-        } = (0, _.RD)(k),
-        er = (0, u.z)(ea, ei),
-        el = !(0, T.A)(q, F, k.id),
-        es = (0, v.n$)(Y, F.activity?.type, el),
-        eo = a.useRef(null),
-        ed = (0, r.bG)([I.A], () => I.A.getMessages(O.id)),
+            startAuthorization: el
+        } = (0, _.RD)(O),
+        es = (0, u.z)(el, ei),
+        er = !(0, T.A)(q, F, O.id),
+        ea = (0, b.n$)(z, F.activity?.type, er),
+        eo = l.useRef(null),
+        ed = (0, s.bG)([E.A], () => E.A.getMessages(k.id)),
         ec = () => {
             let e = [];
-            return (0, S.G)(F.id, ed) && en && !ei && et.enabled && e.push(l.M.GAME_INVITE_ACCOUNT_LINK_UPSELL), (0, i.jsx)(g.Ay, {
+            return (0, N.G)(F.id, ed) && en && !ei && et.enabled && e.push(r.M.GAME_INVITE_ACCOUNT_LINK_UPSELL), (0, i.jsx)(g.Ay, {
                 contentTypes: e,
                 children: e => {
                     let {
                         visibleContent: t,
                         markAsDismissed: n
                     } = e;
-                    if (t === l.M.GAME_INVITE_ACCOUNT_LINK_UPSELL) return (0, i.jsx)(s.AM, {
+                    if (t === r.M.GAME_INVITE_ACCOUNT_LINK_UPSELL) return (0, i.jsx)(a.AM, {
                         graphic: {
                             type: "dynamic",
                             component: o.Z86.ACCOUNT_LINK_DISPLAY,
                             props: {
-                                application: k
+                                application: O
                             }
                         },
                         title: P.intl.formatToPlainString(P.t["lo6H6+"], {
-                            gameName: k.name
+                            gameName: O.name
                         }),
                         body: P.intl.string(P.t.qYAzOp),
                         targetElementRef: eo,
@@ -144,48 +144,48 @@ function w(e) {
                 }
             })
         };
-    return el ? (0, i.jsx)(j.A, {
+    return er ? (0, i.jsx)(j.A, {
         message: F,
-        application: k,
-        applicationName: Y,
-        channel: O,
-        header: es,
+        application: O,
+        applicationName: z,
+        channel: k,
+        header: ea,
         currentUserId: U,
         launchableAppId: J,
         isEmbeddedApplication: W,
         tryWithGdnAction: Z,
         staticBannerSrc: Q,
         onClickContent: ee,
-        iconSrc: z,
+        iconSrc: Y,
         onView: H,
         presenceActivity: q,
-        analyticsLocations: M,
+        analyticsLocations: w,
         showAuthButton: en && !ei && et.enabled,
-        startAuthorization: er,
+        startAuthorization: es,
         accountLinkButtonRef: eo,
         renderAccountLinkUpsell: ec
     }) : (0, i.jsx)(L.A, {
         message: F,
-        application: k,
-        applicationName: Y,
-        channel: O,
-        header: es,
+        application: O,
+        applicationName: z,
+        channel: k,
+        header: ea,
         currentUserId: U,
         launchableAppId: J,
         isEmbeddedApplication: W,
         tryWithGdnAction: Z,
         staticBannerSrc: Q,
         onClickContent: ee,
-        iconSrc: z,
+        iconSrc: Y,
         onView: H,
         presenceActivity: q,
         currentUserPresenceActivity: B,
         hideParty: G,
         partyStatusElement: V,
-        analyticsLocations: M,
+        analyticsLocations: w,
         showAuthButton: en && !ei && et.enabled,
         canPromptAuth: en && !ei,
-        startAuthorization: er,
+        startAuthorization: es,
         accountLinkButtonRef: eo,
         renderAccountLinkUpsell: ec
     })

@@ -1,13 +1,13 @@
 /** chunk id: 10979 params = (module,exports,require) **/
 n.d(t, {
-    M: () => r
+    M: () => s
 });
 var i = n(627968);
 n(64700);
-var a = n(397927);
+var l = n(397927);
 
-function r(e) {
-    (0, a.mMO)(async () => {
+function s(e) {
+    (0, l.mMO)(async () => {
         let {
             default: t
         } = await n.e("69079").then(n.bind(n, 519146));

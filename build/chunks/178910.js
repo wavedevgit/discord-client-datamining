@@ -5,29 +5,29 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var a = n(397927),
-    r = n(104171),
-    l = n(652215),
-    s = n(985018),
-    o = n(657379);
+var l = n(397927),
+    s = n(104171),
+    r = n(652215),
+    a = n(985018),
+    o = n(582056);
 
 function d(e) {
     let {
         activityUsers: t,
         guildId: n,
-        activityText: l
+        activityText: r
     } = e;
     return (0, i.jsxs)("div", {
         className: o.i,
-        children: [(0, i.jsx)(r.Ay, {
+        children: [(0, i.jsx)(s.Ay, {
             guildId: n,
             users: t,
             max: 6,
-            size: r.DN.SIZE_16
-        }), (0, i.jsx)(a.Text, {
+            size: s.DN.SIZE_16
+        }), (0, i.jsx)(l.Text, {
             variant: "text-xs/normal",
             color: "none",
-            children: l
+            children: r
         })]
     })
 }
@@ -38,23 +38,23 @@ function c(e) {
         activityUsersCount: n
     } = e;
     switch (t?.type) {
-        case l.$pd.STREAMING:
+        case r.$pd.STREAMING:
             return {
-                text: s.intl.formatToPlainString(s.t.tyCw2q, {
+                text: a.intl.formatToPlainString(a.t.tyCw2q, {
                     count: n
-                }), Icon: a.ofK
+                }), Icon: l.ofK
             };
-        case l.$pd.LISTENING:
+        case r.$pd.LISTENING:
             return {
-                text: s.intl.formatToPlainString(s.t["2l8yka"], {
+                text: a.intl.formatToPlainString(a.t["2l8yka"], {
                     count: n
-                }), Icon: a.T7G
+                }), Icon: l.T7G
             };
         default:
             return {
-                text: s.intl.formatToPlainString(s.t.yJj035, {
+                text: a.intl.formatToPlainString(a.t.yJj035, {
                     count: n
-                }), Icon: a._xR
+                }), Icon: l._xR
             }
     }
 }

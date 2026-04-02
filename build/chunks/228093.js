@@ -10,27 +10,27 @@ var i = n(503698),
     a = n(481613),
     s = n.n(a),
     o = n(397927),
-    u = n(77729),
-    c = n(521502),
+    c = n(77729),
+    u = n(521502),
     d = n(915089),
     h = n(206845),
     f = n(837921),
     m = n(985018),
-    p = n(417891);
+    p = n(738532);
 
 function _() {
     let e = (0, d.GV)(),
         t = window.GLOBAL_ENV.RELEASE_CHANNEL,
-        n = "522264",
-        i = "aa766033f453f665d41bd10485cf05b4317471c4".substring(0, 7),
-        a = u.A?.app.getVersion(),
-        _ = u.A?.app.getBuildNumber(),
-        v = u.A?.app.getAppArch(),
-        y = c.A.getCurrentBuildOverride().overrides?.discord_web,
+        n = "522332",
+        i = "8cd6a1a35129bf45d7b0322a8c6c790d36d25142".substring(0, 7),
+        a = c.A?.app.getVersion(),
+        _ = c.A?.app.getBuildNumber(),
+        v = c.A?.app.getAppArch(),
+        y = u.A.getCurrentBuildOverride().overrides?.discord_web,
         g = function() {
             let e = s()?.os?.toString();
-            if (null == e || null == u.A) return null;
-            let t = u.A.os.release,
+            if (null == e || null == c.A) return null;
+            let t = c.A.os.release,
                 [n, r, i] = f.Ay.parsedOSRelease;
             return e.includes("Windows 10") && void 0 !== i && i >= 22e3 && (e = e.replace("Windows 10", "Windows 11")), e.includes("OS X 10.15.7") && void 0 !== n && n >= 20 && (e = `macOS ${n>=25?n+1:n-9}`), `${e} (${t})`
         }(),

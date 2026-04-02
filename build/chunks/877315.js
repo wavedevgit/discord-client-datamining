@@ -1,12 +1,12 @@
 /** chunk id: 877315 params = (module,exports,require) **/
 n.d(t, {
-    A: () => s
+    A: () => a
 });
 var i = n(652896),
-    a = n(279250),
-    r = n(652215),
-    l = n(985018);
+    l = n(279250),
+    s = n(652215),
+    r = n(985018);
 
-function s(e, t, n, s) {
-    return null == t || t.state === r.XYD.ENDED || (0, i._z)(t) !== (0, i._z)(e) ? (0, a.CT)(s) : t.ownerId === n ? l.intl.string(l.t.XvBdeT) : l.intl.string(l.t["JH1SJ+"])
+function a(e, t, n, a) {
+    return null == t || t.state === s.XYD.ENDED || (0, i._z)(t) !== (0, i._z)(e) ? (0, l.CT)(a) : t.ownerId === n ? r.intl.string(r.t.XvBdeT) : r.intl.string(r.t["JH1SJ+"])
 }

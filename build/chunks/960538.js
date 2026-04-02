@@ -1,13 +1,13 @@
 /** chunk id: 960538 params = (module,exports,require) **/
 n.d(t, {
-    t: () => b
+    t: () => v
 }), n(938796);
 var i = n(627968),
-    a = n(64700),
-    r = n(503698),
-    l = n.n(r),
-    s = n(111956),
-    o = n.n(s),
+    l = n(64700),
+    s = n(503698),
+    r = n.n(s),
+    a = n(111956),
+    o = n.n(a),
     d = n(665260),
     c = n(305866),
     u = n(435371),
@@ -20,21 +20,21 @@ var i = n(627968),
     x = n(652215),
     f = n(307731),
     C = n(985018),
-    I = n(767474),
-    E = n(449014);
-class b extends a.Component {
+    E = n(486025),
+    I = n(108277);
+class v extends l.Component {
     state = {
         isReactionPickerActive: !1
     };
-    ref = a.createRef();
+    ref = l.createRef();
     onAddReaction = (e, t) => {
         if (null == e) return;
         let {
             channel: n,
             message: i,
-            isForumToolbar: a
+            isForumToolbar: l
         } = this.props;
-        (0, p.BB)(n.id, i.id, (0, g.jq)(e), a ? p.qN.FORUM_TOOLBAR : p.qN.MESSAGE_INLINE_BUTTON, {
+        (0, p.BB)(n.id, i.id, (0, g.jq)(e), l ? p.qN.FORUM_TOOLBAR : p.qN.MESSAGE_INLINE_BUTTON, {
             burst: t
         })
     };
@@ -51,22 +51,22 @@ class b extends a.Component {
             closePopout: t
         } = e, {
             channel: n,
-            message: a
-        } = this.props, r = (0, i.jsx)(A.C, {
+            message: l
+        } = this.props, s = (0, i.jsx)(A.C, {
             closePopout: t,
             channel: n,
             onSelectEmoji: e => {
                 let {
                     emoji: n,
                     willClose: i,
-                    isBurst: a
+                    isBurst: l
                 } = e;
-                this.onAddReaction(n, a), i && (a ? o()(t, 150)() : t())
+                this.onAddReaction(n, l), i && (l ? o()(t, 150)() : t())
             },
             analyticsOverride: {
                 openPopoutType: "message_reaction_emoji_picker"
             },
-            messageId: a.id
+            messageId: l.id
         });
         return (0, i.jsx)(c.M.Consumer, {
             children: e => {
@@ -75,8 +75,8 @@ class b extends a.Component {
                 } = e;
                 return t ? (0, i.jsx)(_.lGe, {
                     "aria-label": C.intl.string(C.t["7Xqzdj"]),
-                    children: r
-                }) : r
+                    children: s
+                }) : s
             }
         })
     };
@@ -85,13 +85,13 @@ class b extends a.Component {
             message: e,
             className: t,
             children: n,
-            useChatFontScaling: a,
-            tabIndex: r = 0
+            useChatFontScaling: l,
+            tabIndex: s = 0
         } = this.props, {
-            isReactionPickerActive: s
+            isReactionPickerActive: a
         } = this.state;
         if (e.state === x.cmJ.SENDING || (0, d.Lt)(e.flags, x.pr7.EPHEMERAL)) return null;
-        let o = a ? E : I,
+        let o = l ? I : E,
             c = {
                 size: "sm",
                 color: "currentColor",
@@ -99,31 +99,31 @@ class b extends a.Component {
             };
         return e.type === x.lAJ.EMOJI_ADDED && 0 === e.reactions.length ? (0, i.jsx)(h._x, {
             message: e,
-            className: l()(o.reactionBtn, t)
+            className: r()(o.reactionBtn, t)
         }) : (0, i.jsx)(_.YNO, {
             targetElementRef: this.ref,
-            shouldShow: s,
+            shouldShow: a,
             onRequestClose: this.handleReactionPickerToggle,
             renderPopout: this.renderReactionPopout,
             position: "right",
-            children: (e, a) => {
+            children: (e, l) => {
                 let {
-                    isShown: s
-                } = a;
+                    isShown: a
+                } = l;
                 return (0, i.jsx)(u.m_, {
                     asContainer: !0,
                     text: C.intl.string(C.t.lfIHs4),
                     children: (0, i.jsxs)(_.DUT, {
                         ...e,
                         innerRef: this.ref,
-                        tabIndex: r,
+                        tabIndex: s,
                         onClick: e => {
                             this.handleAddReactionClick(e)
                         },
                         onMouseEnter: () => (0, m.K)(f.Vl.AddReactionPopoutMouseEntered),
                         onFocus: () => (0, m.K)(f.Vl.AddReactionPopoutFocused),
-                        className: l()(o.reactionBtn, {
-                            [o.active]: s
+                        className: r()(o.reactionBtn, {
+                            [o.active]: a
                         }, t),
                         children: [(0, i.jsx)(_.nm2, {
                             ...c

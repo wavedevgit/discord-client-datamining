@@ -1,12 +1,12 @@
 /** chunk id: 96440 params = (module,exports,require) **/
 n.d(t, {
-    W: () => v
+    W: () => b
 }), n(321073);
 var i = n(627968),
-    a = n(311907),
-    r = n(793574),
-    l = n(688810),
-    s = n(522305),
+    l = n(311907),
+    s = n(793574),
+    r = n(688810),
+    a = n(522305),
     o = n(735991),
     d = n(361926),
     c = n(485724),
@@ -20,60 +20,60 @@ var i = n(627968),
     x = n(486020),
     f = n(795816),
     C = n(933958),
-    I = n(574152),
-    E = n(782091),
-    b = n(985018);
+    E = n(574152),
+    I = n(782091),
+    v = n(985018);
 
-function v(e) {
+function b(e) {
     let {
         application: t,
         customId: n,
-        customLink: v,
+        customLink: b,
         referrerId: T,
-        message: S
-    } = e, y = t?.bot?.id, N = (0, d.Vr)({
+        message: N
+    } = e, S = t?.bot?.id, y = (0, d.Vr)({
         context: {
             type: "contextless"
         },
         applicationId: t.id,
         botUserId: t?.bot?.id
-    }), j = null != t && (0, o.Ag)(t), L = null != y && j && N, {
+    }), j = null != t && (0, o.Ag)(t), L = null != S && j && y, {
         analyticsLocations: R
-    } = (0, l.Ay)(r.A.ACTIVITY_CUSTOM_LINK), P = (0, a.bG)([A.A], () => A.A.getChannelId()), w = (0, E.et)(P), D = (0, a.bG)([C.Ay], () => {
+    } = (0, r.Ay)(s.A.ACTIVITY_CUSTOM_LINK), P = (0, l.bG)([A.A], () => A.A.getChannelId()), D = (0, I.et)(P), M = (0, l.bG)([C.Ay], () => {
         if (null == P) return;
         let e = C.Ay.getEmbeddedActivitiesForChannel(P).filter(e => e.applicationId === t.id);
         return e.length > 0 ? e[0].compositeInstanceId : void 0
-    }), M = (0, a.bG)([C.Ay], () => C.Ay.getCurrentEmbeddedActivity()), k = (0, I.A)(), O = w === E.xy.CAN_LAUNCH, U = null != D && M?.compositeInstanceId === D, B = null != n ? n : v.customId, G = (0, p.e)(t), F = [];
+    }), w = (0, l.bG)([C.Ay], () => C.Ay.getCurrentEmbeddedActivity()), O = (0, E.A)(), k = D === I.xy.CAN_LAUNCH, U = null != M && w?.compositeInstanceId === M, B = null != n ? n : b.customId, G = (0, p.e)(t), F = [];
     G ? F.push({
-        label: b.intl.string(b.t.RscU7I),
+        label: v.intl.string(v.t.RscU7I),
         trackingArea: _.kY.PLAY,
         onClick() {
             h.A.launchFrame({
                 applicationId: t.id
             })
         }
-    }) : (O && F.push({
-        label: null == D ? b.intl.string(b.t.RscU7I) : U ? b.intl.string(b.t.DPfdsq) : b.intl.string(b.t.sqe0hj),
+    }) : (k && F.push({
+        label: null == M ? v.intl.string(v.t.RscU7I) : U ? v.intl.string(v.t.DPfdsq) : v.intl.string(v.t.sqe0hj),
         trackingArea: _.kY.PLAY,
         onClick() {
             (0, f.su)({
                 channelId: P ?? void 0,
                 applicationId: t.id,
-                isStart: null == D,
-                embeddedActivitiesManager: k,
+                isStart: null == M,
+                embeddedActivitiesManager: O,
                 customId: B,
                 referrerId: T,
                 analyticsLocations: R
             })
         },
         disabled: U
-    }), L && !O && F.push({
-        label: b.intl.string(b.t.JeK1Wg),
+    }), L && !k && F.push({
+        label: v.intl.string(v.t.JeK1Wg),
         trackingArea: _.kY.PLAY,
         onClick() {
-            (0, s.Q)({
+            (0, a.Q)({
                 appId: t.id,
-                botId: y,
+                botId: S,
                 analyticsLocations: R,
                 customId: B,
                 referrerId: T
@@ -91,18 +91,18 @@ function v(e) {
             bot: t.bot
         }),
         info: (0, i.jsx)("div", {
-            children: v.description
+            children: b.description
         }),
-        staticBannerSrc: v.getAssetURL(),
-        title: v.title,
+        staticBannerSrc: b.getAssetURL(),
+        title: b.title,
         trackingConfig: {
             id: t.id,
             linkType: c.J.CUSTOM_ACTIVITY_LINK,
             referrerId: T,
             activityCustomId: B,
-            guildId: g.A.getChannel(S.channel_id)?.guild_id,
-            channelId: S.channel_id,
-            messageId: S.id
+            guildId: g.A.getChannel(N.channel_id)?.guild_id,
+            channelId: N.channel_id,
+            messageId: N.id
         }
     })
 }

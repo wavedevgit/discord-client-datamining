@@ -1,13 +1,13 @@
 /** chunk id: 755420 params = (module,exports,require) **/
 n.d(t, {
-    FL: () => l,
+    FL: () => r,
     z4: () => o
 }), n(321073);
-var i, a = n(64700),
-    r = n(652215),
-    l = ((i = {}).DESKTOP = "desktop", i.MOBILE = "mobile", i.ANDROID = "android", i.IOS = "ios", i.PLAYSTATION = "playstation", i.XBOX = "xbox", i.VR = "vr", i);
-r.yTV.DESKTOP, r.yTV.ANDROID, r.yTV.IOS, r.yTV.XBOX, r.yTV.PS4, r.yTV.PS5, r.yTV.SAMSUNG, r.yTV.EMBEDDED, r.yTV.META_QUEST;
-let s = [];
+var i, l = n(64700),
+    s = n(652215),
+    r = ((i = {}).DESKTOP = "desktop", i.MOBILE = "mobile", i.ANDROID = "android", i.IOS = "ios", i.PLAYSTATION = "playstation", i.XBOX = "xbox", i.VR = "vr", i);
+s.yTV.DESKTOP, s.yTV.ANDROID, s.yTV.IOS, s.yTV.XBOX, s.yTV.PS4, s.yTV.PS5, s.yTV.SAMSUNG, s.yTV.EMBEDDED, s.yTV.META_QUEST;
+let a = [];
 
 function o(e) {
     let {
@@ -15,13 +15,13 @@ function o(e) {
         currentPlatform: n,
         isGameLaunchable: i
     } = e;
-    return a.useMemo(() => (function(e) {
+    return l.useMemo(() => (function(e) {
         let {
             platforms: t,
             currentPlatform: n,
             isGameLaunchable: i
-        } = e, a = new Set(t), l = [];
-        return null == t || 0 === t.length || null != n && a.has(n) && i ? s : (a.has(r.yTV.ANDROID) && a.has(r.yTV.IOS) ? l.push("mobile") : a.has(r.yTV.ANDROID) ? l.push("android") : a.has(r.yTV.IOS) && l.push("ios"), (a.has(r.yTV.PS4) || a.has(r.yTV.PS5)) && l.push("playstation"), a.has(r.yTV.XBOX) && l.push("xbox"), a.has(r.yTV.DESKTOP) && l.push("desktop"), a.has(r.yTV.META_QUEST) && l.push("vr"), l)
+        } = e, l = new Set(t), r = [];
+        return null == t || 0 === t.length || null != n && l.has(n) && i ? a : (l.has(s.yTV.ANDROID) && l.has(s.yTV.IOS) ? r.push("mobile") : l.has(s.yTV.ANDROID) ? r.push("android") : l.has(s.yTV.IOS) && r.push("ios"), (l.has(s.yTV.PS4) || l.has(s.yTV.PS5)) && r.push("playstation"), l.has(s.yTV.XBOX) && r.push("xbox"), l.has(s.yTV.DESKTOP) && r.push("desktop"), l.has(s.yTV.META_QUEST) && r.push("vr"), r)
     })({
         platforms: t,
         currentPlatform: n,

@@ -1,20 +1,20 @@
 /** chunk id: 704400 params = (module,exports,require) **/
 n.d(t, {
-    A: () => s
+    A: () => a
 });
 var i = n(627968);
 n(64700);
-var a = n(397927),
-    r = n(985018),
-    l = n(887428);
+var l = n(397927),
+    s = n(985018),
+    r = n(366957);
 
-function s(e) {
+function a(e) {
     let {
         message: t
     } = e;
-    return (0, i.jsxs)(a.DUT, {
+    return (0, i.jsxs)(l.DUT, {
         onClick: () => {
-            (0, a.mMO)(async () => {
+            (0, l.mMO)(async () => {
                 let {
                     default: e
                 } = await n.e("35270").then(n.bind(n, 743461));
@@ -25,14 +25,14 @@ function s(e) {
                 })
             })
         },
-        className: l.L,
-        children: [(0, i.jsx)(a.mir, {
+        className: r.L,
+        children: [(0, i.jsx)(l.mir, {
             size: "xs",
             color: "currentColor"
-        }), (0, i.jsx)(a.Text, {
+        }), (0, i.jsx)(l.Text, {
             variant: "text-xs/normal",
-            className: l.m,
-            children: r.intl.string(r.t["2aXnfa"])
+            className: r.m,
+            children: s.intl.string(s.t["2aXnfa"])
         })]
     })
 }

@@ -1,12 +1,12 @@
 /** chunk id: 175335 params = (module,exports,require) **/
 n.d(t, {
-    A: () => S
+    A: () => N
 });
 var i = n(627968),
-    a = n(64700),
-    r = n(503698),
-    l = n.n(r),
-    s = n(110259),
+    l = n(64700),
+    s = n(503698),
+    r = n.n(s),
+    a = n(110259),
     o = n(311907),
     d = n(827734),
     c = n(732955),
@@ -20,46 +20,46 @@ var i = n(627968),
     x = n(71393),
     f = n(954571),
     C = n(722888),
-    I = n(43136),
-    E = n(575926),
-    b = n(652215),
-    v = n(985018),
-    T = n(848873);
+    E = n(43136),
+    I = n(575926),
+    v = n(652215),
+    b = n(985018),
+    T = n(952372);
 
-function S(e) {
+function N(e) {
     let {
         guildId: t
     } = e, n = (0, o.bG)([x.A], () => x.A.getGuild(t)), {
-        loading: r,
-        subscriptionsSettings: S
+        loading: s,
+        subscriptionsSettings: N
     } = (0, C.G)(t), {
-        listingsLoaded: y
-    } = (0, p.bb)(t), N = (0, p.fZ)(t, {
+        listingsLoaded: S
+    } = (0, p.bb)(t), y = (0, p.fZ)(t, {
         publishedOnly: !0
-    }), j = a.useCallback(async () => {
-        f.default.track(b.HAw.GUILD_SHOP_EMBED_CLICKED, {
+    }), j = l.useCallback(async () => {
+        f.default.track(v.HAw.GUILD_SHOP_EMBED_CLICKED, {
             ...(0, _.H$)(t)
-        }), await (0, g.A)(b.BVt.SERVER_SHOP(t))
+        }), await (0, g.A)(v.BVt.SERVER_SHOP(t))
     }, [t]);
     (0, m.A)({
-        type: s.ImpressionTypes.VIEW,
-        name: s.ImpressionNames.GUILD_SHOP_EMBED
+        type: a.ImpressionTypes.VIEW,
+        name: a.ImpressionNames.GUILD_SHOP_EMBED
     }, {
         disableTrack: null == n
     });
-    let L = N.length > 0 ? new Date(Math.min(...N.map(e => Date.parse(e.published_at)))) : void 0;
-    return r || !y ? (0, i.jsx)("div", {
-        className: l()(T.lm, T.dc),
+    let L = y.length > 0 ? new Date(Math.min(...y.map(e => Date.parse(e.published_at)))) : void 0;
+    return s || !S ? (0, i.jsx)("div", {
+        className: r()(T.lm, T.dc),
         children: (0, i.jsx)(u.y$y, {})
-    }) : null == n || null == S ? null : (0, i.jsxs)("div", {
+    }) : null == n || null == N ? null : (0, i.jsxs)("div", {
         className: T.lm,
-        children: [(0, i.jsx)(I.C, {
-            coverImageAsset: S.cover_image_asset ?? null
+        children: [(0, i.jsx)(E.C, {
+            coverImageAsset: N.cover_image_asset ?? null
         }), (0, i.jsx)(u.hKd, {
             size: 16
         }), (0, i.jsxs)("div", {
             className: T.qs,
-            children: [(0, i.jsx)(E.h, {
+            children: [(0, i.jsx)(I.h, {
                 height: "16px",
                 width: "16px",
                 color: d.A.colors.INTERACTIVE_TEXT_DEFAULT.css
@@ -67,14 +67,14 @@ function S(e) {
                 variant: "heading-sm/semibold",
                 color: "interactive-text-default",
                 className: T.Nl,
-                children: v.intl.string(v.t.al5EXL)
+                children: b.intl.string(b.t.al5EXL)
             })]
         }), (0, i.jsx)(u.hKd, {
             size: 16
         }), (0, i.jsx)(u.Heading, {
             variant: "heading-md/semibold",
             color: "text-default",
-            children: v.intl.format(v.t.NZeik9, {
+            children: b.intl.format(b.t.NZeik9, {
                 guildName: n.name
             })
         }), (0, i.jsx)(u.hKd, {
@@ -83,7 +83,7 @@ function S(e) {
             variant: "text-sm/normal",
             color: "text-muted",
             lineClamp: 2,
-            children: S.description
+            children: N.description
         }), (0, i.jsx)(u.hKd, {
             size: 16
         }), (0, i.jsx)(A.A, {}), (0, i.jsx)(u.hKd, {
@@ -98,15 +98,15 @@ function S(e) {
                     children: (0, i.jsx)(u.Text, {
                         variant: "text-sm/normal",
                         color: "text-muted",
-                        children: v.intl.format(v.t.tKZNlb, {
-                            listingCount: N.length
+                        children: b.intl.format(b.t.tKZNlb, {
+                            listingCount: y.length
                         })
                     })
                 }), null != L && (0, i.jsx)("li", {
                     children: (0, i.jsx)(u.Text, {
                         variant: "text-sm/normal",
                         color: "text-muted",
-                        children: v.intl.format(v.t["kXr8+b"], {
+                        children: b.intl.format(b.t["kXr8+b"], {
                             createdYear: L.getFullYear()
                         })
                     })
@@ -115,8 +115,8 @@ function S(e) {
                 className: T.$h,
                 children: (0, i.jsx)(c.$nd, {
                     onClick: j,
-                    icon: E.A,
-                    text: v.intl.string(v.t.jXx1CC)
+                    icon: I.A,
+                    text: b.intl.string(b.t.jXx1CC)
                 })
             })]
         })]

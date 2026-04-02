@@ -6,9 +6,9 @@ n.d(t, {
 var i = n(64700),
     r = n(735438),
     a = n.n(r),
-    l = n(311907),
-    o = n(735321),
-    s = n(760751),
+    o = n(311907),
+    s = n(735321),
+    l = n(760751),
     c = n(282435);
 
 function _(e) {
@@ -16,8 +16,8 @@ function _(e) {
 }
 
 function u() {
-    let e = (0, l.bG)([s.A], () => s.A.games),
-        t = i.useMemo(() => a()(e).filter(e => (0, o.XX)(e)).map(e => ({
+    let e = (0, o.bG)([l.A], () => l.A.games),
+        t = i.useMemo(() => a()(e).filter(e => (0, s.XX)(e)).map(e => ({
             id: e.id,
             value: e.id,
             label: e.name

@@ -1,13 +1,13 @@
 /** chunk id: 709634 params = (module,exports,require) **/
 n.d(t, {
-    A: () => I
+    A: () => E
 });
 var i = n(627968),
-    a = n(64700),
-    r = n(503698),
-    l = n.n(r),
-    s = n(989349),
-    o = n.n(s),
+    l = n(64700),
+    s = n(503698),
+    r = n.n(s),
+    a = n(989349),
+    o = n.n(a),
     d = n(397927),
     c = n(763754),
     u = n(449859),
@@ -15,32 +15,32 @@ var i = n(627968),
     m = n(447215),
     h = n(287809),
     p = n(405269),
-    g = n(733045),
+    g = n(641131),
     A = n(985018),
-    x = n(137770),
-    f = n(812782),
+    x = n(990387),
+    f = n(767283),
     C = n(513653);
-let I = e => {
+let E = e => {
     let {
         reportingUserId: t,
         guildId: n,
-        compact: r,
-        channel: s,
-        messageId: I,
-        reportedTimestamp: E
-    } = e, b = h.default.getUser(t), v = a.useMemo(() => r ? (0, _.A)((0, p.i$)(o()(), "LT")) : null, [r]), T = (0, m.P)({
-        user: b,
-        channelId: s.id,
+        compact: s,
+        channel: a,
+        messageId: E,
+        reportedTimestamp: I
+    } = e, v = h.default.getUser(t), b = l.useMemo(() => s ? (0, _.A)((0, p.i$)(o()(), "LT")) : null, [s]), T = (0, m.P)({
+        user: v,
+        channelId: a.id,
         guildId: n,
-        messageId: I
-    })((0, c.m2)(b, s)), S = null != b ? b.getAvatarURL(n, (0, d.FT9)(d._3J.SIZE_16)) : C, y = null != b ? A.intl.format(g.default["+zqXZs"], {
-        username: b.username,
+        messageId: E
+    })((0, c.m2)(v, a)), N = null != v ? v.getAvatarURL(n, (0, d.FT9)(d._3J.SIZE_16)) : C, S = null != v ? A.intl.format(g.default["+zqXZs"], {
+        username: v.username,
         onUserClick: T
     }) : A.intl.string(g.default.xpRjfS);
     return (0, i.jsxs)("div", {
-        className: l()(f.NB, f.JZ, v),
+        className: r()(f.NB, f.JZ, b),
         children: [(0, i.jsx)(d.euF, {
-            src: S,
+            src: N,
             size: d._3J.SIZE_16,
             className: x.my,
             "aria-label": ""
@@ -48,7 +48,7 @@ let I = e => {
             variant: "text-sm/medium",
             color: "text-subtle",
             className: x.Xh,
-            children: y
+            children: S
         }), (0, i.jsxs)(d.Text, {
             variant: "text-sm/medium",
             color: "text-subtle",
@@ -56,7 +56,7 @@ let I = e => {
                 className: x.Ek,
                 children: "•"
             }), (0, i.jsx)(u.A, {
-                timestamp: E,
+                timestamp: I,
                 className: x.vE
             })]
         })]
