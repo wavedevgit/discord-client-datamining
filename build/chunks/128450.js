@@ -39,8 +39,8 @@ let _ = n.forwardRef(function(e, t) {
         errors: f,
         disabled: h = !1,
         hideDivider: b = !1,
-        showBorder: x = !1,
-        borderType: g,
+        showBorder: g = !1,
+        borderType: x,
         hasBackground: C = !1,
         forcedDivider: A = !1,
         showPremiumIcon: R = !1
@@ -49,15 +49,15 @@ let _ = n.forwardRef(function(e, t) {
         className: i()(u.fz, p, {
             [u.r9]: h,
             [u.Ai]: b,
-            [u.Ac]: x,
+            [u.Ac]: g,
             [u.Cx]: A
         }),
         ref: t,
         children: (0, a.jsxs)(c.A, {
             className: u.D6,
             backgroundClassName: u.fr,
-            isShown: x,
-            type: g,
+            isShown: g,
+            type: x,
             hasBackground: C,
             children: [(0, a.jsxs)(l.zEo, {
                 className: u.DD,

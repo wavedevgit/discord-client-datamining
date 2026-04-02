@@ -1,6 +1,6 @@
 /** chunk id: 240783 params = (module,exports,require) **/
 t.d(n, {
-    A: () => b
+    A: () => h
 });
 var i = t(627968),
     a = t(64700),
@@ -16,8 +16,8 @@ var i = t(627968),
     x = t(738759),
     p = t(518477),
     g = t(985018),
-    m = t(643146),
-    I = t(843796);
+    I = t(643146),
+    m = t(843796);
 
 function f(e) {
     let {
@@ -56,7 +56,7 @@ function f(e) {
     })
 }
 
-function b(e) {
+function h(e) {
     let {
         user: n,
         currentUser: t,
@@ -67,38 +67,38 @@ function b(e) {
         onClose: A
     } = e, {
         trackUserProfileAction: x
-    } = (0, o.NJ)(), b = (0, s.bG)([r.A], () => r.A.hidePersonalInformation), [h, j] = a.useState(() => u.find(e => {
+    } = (0, o.NJ)(), h = (0, s.bG)([r.A], () => r.A.hidePersonalInformation), [b, j] = a.useState(() => u.find(e => {
         let {
             section: n
         } = e;
         return n === _
     })?.section ?? u[0]?.section);
     a.useEffect(() => {
-        null == u.find(e => e.section === h) && j(u[0].section)
-    }, [u, h]);
+        null == u.find(e => e.section === b) && j(u[0].section)
+    }, [u, b]);
     let v = a.useCallback(e => {
         x({
             action: "PRESS_SECTION",
             section: e
         }), j(e)
     }, [x]);
-    return b ? (0, i.jsx)("div", {
-        className: I.kL,
+    return h ? (0, i.jsx)("div", {
+        className: m.kL,
         children: (0, i.jsxs)("div", {
-            className: m.Ie,
+            className: I.Ie,
             children: [(0, i.jsx)("div", {
-                className: m.hB
+                className: I.hB
             }), (0, i.jsx)("div", {
-                className: m.BI,
+                className: I.BI,
                 children: g.intl.string(g.t.Br1ls3)
             })]
         })
     }) : (0, i.jsxs)("div", {
-        className: I.kL,
+        className: m.kL,
         children: [(0, i.jsx)(l.VQ0, {
-            className: I.$H,
+            className: m.$H,
             type: "top",
-            selectedItem: h,
+            selectedItem: b,
             onItemSelect: v,
             children: u.map(e => {
                 let {
@@ -106,7 +106,7 @@ function b(e) {
                     text: t
                 } = e;
                 return (0, i.jsx)(l.VQ0.Item, {
-                    className: I.YU,
+                    className: m.YU,
                     id: n,
                     "aria-label": t,
                     children: (0, i.jsx)(l.Text, {
@@ -117,7 +117,7 @@ function b(e) {
             })
         }), (0, i.jsx)(f, {
             items: u,
-            section: h,
+            section: b,
             user: n,
             currentUser: t,
             displayProfile: d,

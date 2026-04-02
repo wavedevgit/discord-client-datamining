@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(64700),
     i = n(826673),
-    l = n(894858),
-    a = n(49999);
+    a = n(894858),
+    l = n(49999);
 
 function s(e) {
     let {
@@ -26,12 +26,12 @@ function s(e) {
                 let t = c.get(e.sidebarItemKey);
                 null != t && t.forEach(e => {
                     (0, i.Dr)(e, {
-                        dismissAction: a.i.AUTO,
+                        dismissAction: l.i.AUTO,
                         forceTrack: !0
                     })
                 })
             },
-            r = l.A.subscribe(e => {
+            r = a.A.subscribe(e => {
                 let {
                     currentPanelKey: t
                 } = e;

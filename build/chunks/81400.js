@@ -1,71 +1,71 @@
 /** chunk id: 81400 params = (module,exports,require) **/
 i.d(e, {
-    EC: () => b,
-    j8: () => M,
+    EC: () => M,
+    j8: () => U,
     uZ: () => O
 }), i(938796);
-var n = i(64700),
-    l = i(417597),
+var l = i(64700),
+    n = i(417597),
     u = i(159001),
     r = i(507553),
-    a = i(591179),
-    d = i(780964),
-    A = i(961350),
+    A = i(591179),
+    a = i(780964),
+    d = i(961350),
     o = i(696451),
     s = i(71393),
     f = i(576705),
-    g = i(967198),
-    c = i(229527),
-    E = i(652215),
-    _ = i(340837),
+    E = i(967198),
+    _ = i(229527),
+    c = i(652215),
+    g = i(340837),
     I = i(355097),
     N = i(985018);
 
 function O(t) {
-    return (0, l.bG)([A.default, o.Ay], () => {
+    return (0, n.bG)([d.default, o.Ay], () => {
         if (null == t) return !1;
-        let e = A.default.getId();
-        return (0, c.TR)(o.Ay.getMember(t, e))
-    }, [t])
-}
-
-function b(t) {
-    return (0, l.cf)([A.default, o.Ay, g.A, s.A], () => {
-        let e = {
-                nick: void 0,
-                bio: void 0
-            },
-            i = g.A.getGuildId(),
-            n = t ?? i,
-            l = s.A.getGuild(n);
-        if (null == l || null == n) return e;
-        let u = A.default.getId(),
-            r = o.Ay.getMember(n, u),
-            a = (0, c.wR)(r?.flags);
-        return 0 === a.size || (a.has(_.D.AUTOMOD_QUARANTINED_USERNAME_OR_GUILD_NICKNAME) && (null == t ? e.nick = [N.intl.formatToPlainString(N.t.WBUh3O, {
-            guildName: l.name ?? ""
-        })] : e.nick = [N.intl.string(N.t.EPZCrM)]), a.has(_.D.AUTOMOD_QUARANTINED_BIO) && (e.bio = [N.intl.string(N.t.dZh1vz)])), e
+        let e = d.default.getId();
+        return (0, _.TR)(o.Ay.getMember(t, e))
     }, [t])
 }
 
 function M(t) {
+    return (0, n.cf)([d.default, o.Ay, E.A, s.A], () => {
+        let e = {
+                nick: void 0,
+                bio: void 0
+            },
+            i = E.A.getGuildId(),
+            l = t ?? i,
+            n = s.A.getGuild(l);
+        if (null == n || null == l) return e;
+        let u = d.default.getId(),
+            r = o.Ay.getMember(l, u),
+            A = (0, _.wR)(r?.flags);
+        return 0 === A.size || (A.has(g.D.AUTOMOD_QUARANTINED_USERNAME_OR_GUILD_NICKNAME) && (null == t ? e.nick = [N.intl.formatToPlainString(N.t.WBUh3O, {
+            guildName: n.name ?? ""
+        })] : e.nick = [N.intl.string(N.t.EPZCrM)]), A.has(g.D.AUTOMOD_QUARANTINED_BIO) && (e.bio = [N.intl.string(N.t.dZh1vz)])), e
+    }, [t])
+}
+
+function U(t) {
     let {
         guildId: e,
         scrollPosition: o,
-        analyticsLocations: g
-    } = t, c = (0, l.bG)([s.A], () => s.A.getGuild(e), [e]), _ = (0, l.bG)([f.A], () => null != c && f.A.can(E.xBc.CHANGE_NICKNAME, c), [c]), N = (0, a.X)("AutomodQuarantineUtils");
-    return [n.useCallback(() => {
-        if (null == c) return;
-        E.nc_.PROFILE_CUSTOMIZATION;
+        analyticsLocations: E
+    } = t, _ = (0, n.bG)([s.A], () => s.A.getGuild(e), [e]), g = (0, n.bG)([f.A], () => null != _ && f.A.can(c.xBc.CHANGE_NICKNAME, _), [_]), N = (0, A.X)("AutomodQuarantineUtils");
+    return [l.useCallback(() => {
+        if (null == _) return;
+        c.nc_.PROFILE_CUSTOMIZATION;
         let t = I.Eq.GUILD;
-        if (_ ? (0, u.V2)(c.id) : t = I.Eq.USER_PROFILE, N) {
+        if (g ? (0, u.V2)(_.id) : t = I.Eq.USER_PROFILE, N) {
             let {
                 openUserProfileModal: t
             } = i(657331);
             t({
-                userId: A.default.getId(),
-                guildId: c.id,
-                sourceAnalyticsLocations: g
+                userId: d.default.getId(),
+                guildId: _.id,
+                sourceAnalyticsLocations: E
             })
         } else {
             let {
@@ -74,9 +74,9 @@ function M(t) {
             r.A.setState({
                 subsection: t,
                 scrollPosition: o
-            }), e(d.X.PROFILE_PANEL, {
-                analyticsLocations: g
+            }), e(a.X.PROFILE_PANEL, {
+                analyticsLocations: E
             })
         }
-    }, [_, o, g, c, N]), _]
+    }, [g, o, E, _, N]), g]
 }

@@ -86,7 +86,9 @@ function M() {
                 analyticsLocations: D
             })
         }, [D]),
-        B = (0, A.A)(),
+        B = (0, A.A)({
+            analyticsLocations: D
+        }),
         F = (0, l.useCallback)(() => {
             (0, T.openUserSettings)(h.X.PROFILE_PANEL, {
                 analyticsLocations: D

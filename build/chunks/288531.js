@@ -258,7 +258,7 @@ let D = e => {
                             })
                         },
                         text: R.intl.string(R.t.LLLLPD)
-                    }), !et && (K.enabled && (J === S.UA.UNENROLLED || J === S.UA.ENROLLED) && K.enabledQuestStates.has(J) ? (0, i.jsx)(T.A, {
+                    }), !et && (K.enabled && (J === S.UA.UNENROLLED || J === S.UA.ENROLLED || J === S.UA.INCOMPLETE) && K.enabledQuestStates.has(J) ? (0, i.jsx)(T.A, {
                         quest: t,
                         surface: S.V3.QUEST_EMBED,
                         analyticsCtxQuestContent: n,

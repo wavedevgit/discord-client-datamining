@@ -18,8 +18,8 @@ var a = r(627968),
     f = r(852218),
     h = r(699443),
     b = r(729640),
-    x = r(652215),
-    g = r(653624),
+    g = r(652215),
+    x = r(653624),
     C = r(985018),
     A = r(276478),
     R = r(870378),
@@ -27,12 +27,12 @@ var a = r(627968),
     E = r(8496);
 let N = {
         [f.XY]: {
-            title: g.default.LsJ9hj,
+            title: x.default.LsJ9hj,
             titleParams: {
                 discountPercent: _.aW
             },
-            body: g.default.Yl5ww1,
-            bodyWithExpiration: g.default["6KjkUa"],
+            body: x.default.Yl5ww1,
+            bodyWithExpiration: x.default["6KjkUa"],
             redemptionURL: "https://www.logitech.com/",
             logos: {
                 dark: (0, a.jsx)(n.Fragment, {}, "logitech-logo-dark"),
@@ -72,7 +72,7 @@ let N = {
                 variant: "text-sm/normal",
                 color: "text-muted",
                 className: A.kT,
-                children: C.intl.format(g.default["65EEvD"], {
+                children: C.intl.format(x.default["65EEvD"], {
                     days: t
                 })
             }), (0, a.jsx)(b.P, {
@@ -80,7 +80,7 @@ let N = {
             })]
         })
     },
-    I = e => {
+    y = e => {
         let {
             children: t
         } = e;
@@ -92,7 +92,7 @@ let N = {
             })
         })
     },
-    y = e => {
+    I = e => {
         let {
             recurrence: t
         } = e, r = (0, a.jsx)(s.rOg, {
@@ -125,7 +125,7 @@ let N = {
                         redemptionURL: t.redemptionURL
                     }),
                     onClick: () => {
-                        window.open(t.redemptionURL, "_blank"), d.default.track(x.HAw.RECURRING_PROMOTION_CLAIMED)
+                        window.open(t.redemptionURL, "_blank"), d.default.track(g.HAw.RECURRING_PROMOTION_CLAIMED)
                     }
                 })]
             })
@@ -179,10 +179,10 @@ let N = {
                 titleVariant: h = "primary",
                 displayCTAInDedicatedFooter: b = !1
             } = e,
-            [g, R] = n.useState(c.code),
+            [x, R] = n.useState(c.code),
             [v, E] = n.useState(!1),
             S = (t = c.partnerId, r = (0, i.bG)([o.A], () => (0, s.Mwr)(o.A.theme)), null == (d = N[t]) ? null : r ? d.logos.dark : d.logos.light),
-            T = null == g;
+            T = null == x;
         return (0, a.jsxs)("div", {
             className: A.lA,
             children: [(0, a.jsxs)("div", {
@@ -199,7 +199,7 @@ let N = {
                             variant: "heading-sm/medium",
                             color: "text-subtle",
                             children: v ? C.intl.format(C.t.i2EuFO, {
-                                helpdeskArticle: u.A.getArticleURL(x.MVz.RECURRING_PROMOTION)
+                                helpdeskArticle: u.A.getArticleURL(g.MVz.RECURRING_PROMOTION)
                             }) : T ? c.body : null != c.bodyWithExpiration ? C.intl.format(c.bodyWithExpiration, {
                                 date: c.endDate
                             }) : c.body
@@ -222,12 +222,12 @@ let N = {
                         zoomable: !1
                     })
                 })]
-            }), b && (0, a.jsx)(j, {}), null != g && (0, a.jsx)(y, {
+            }), b && (0, a.jsx)(j, {}), null != x && (0, a.jsx)(I, {
                 recurrence: {
                     ...c,
-                    code: g
+                    code: x
                 }
-            }), b && null == g && (0, a.jsx)(I, {
+            }), b && null == x && (0, a.jsx)(y, {
                 children: (0, a.jsx)(P, {
                     recurrence: c,
                     canBeClaimed: T,

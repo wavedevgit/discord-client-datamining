@@ -1,10 +1,10 @@
 /** chunk id: 839785 params = (module,exports,require) **/
 i.d(e, {
-    default: () => y
+    default: () => m
 });
-var n = i(627968),
-    s = i(64700),
-    r = i(158954),
+var s = i(627968),
+    r = i(64700),
+    n = i(158954),
     l = i(311907),
     o = i(397927),
     a = i(708197),
@@ -12,39 +12,39 @@ var n = i(627968),
     c = i(517164),
     u = i(780964),
     C = i(840065),
-    f = i(961350),
-    E = i(591179),
-    x = i(657331),
-    _ = i(558628),
-    b = i(754495),
-    g = i(939075),
-    m = i(985018),
-    p = i(46386);
+    E = i(961350),
+    x = i(591179),
+    _ = i(657331),
+    f = i(558628),
+    h = i(754495),
+    p = i(939075),
+    A = i(985018),
+    b = i(46386);
 
-function y(t) {
+function m(t) {
     let {
         user: e,
         entry: i,
-        transitionState: y,
-        onAction: h,
-        onClose: A,
+        transitionState: m,
+        onAction: y,
+        onClose: I,
         onOpenGameSettings: k
-    } = t, [I, L] = (0, l.yK)([c.A], () => [c.A.isDeletingEntryHistory, c.A.deleteOutboxEntryError]), R = (0, E.X)("UserProfileActivityDeleteHistoryModal");
-    return s.useEffect(() => a.fq, []), (0, n.jsxs)(r.Modal, {
-        title: (0, b.W)(i),
-        subtitle: m.intl.format(m.t.KV72oe, {
+    } = t, [L, R] = (0, l.yK)([c.A], () => [c.A.isDeletingEntryHistory, c.A.deleteOutboxEntryError]), S = (0, x.X)("UserProfileActivityDeleteHistoryModal");
+    return r.useEffect(() => a.fq, []), (0, s.jsxs)(n.Modal, {
+        title: (0, h.W)(i),
+        subtitle: A.intl.format(A.t.KV72oe, {
             settingsHook: (t, e) => {
-                let s = (0, g.y)({
+                let r = (0, p.y)({
                     entry: i,
                     onOpenGameSettings: k
                 });
-                return (0, n.jsx)(o.MzZ, {
+                return (0, s.jsx)(o.MzZ, {
                     onClick: () => {
-                        h?.({
+                        y?.({
                             action: "PRESS_CLEAR_HISTORY_DISCLAIMER"
-                        }), null != s ? s() : R ? (0, x.openUserProfileModal)({
-                            userId: f.default.getId()
-                        }) : (0, C.openUserSettings)(u.X.PROFILE_PANEL), A()
+                        }), null != r ? r() : S ? (0, _.openUserProfileModal)({
+                            userId: E.default.getId()
+                        }) : (0, C.openUserSettings)(u.X.PROFILE_PANEL), I()
                     },
                     children: t
                 }, e)
@@ -52,35 +52,35 @@ function y(t) {
         }),
         size: "sm",
         actions: [{
-            text: m.intl.string(m.t["ETE/oC"]),
-            onClick: A,
+            text: A.intl.string(A.t["ETE/oC"]),
+            onClick: I,
             variant: "secondary",
             size: "sm"
         }, {
-            text: null != L ? m.intl.string(m.t["5911Lb"]) : m.intl.string(m.t.VkKicb),
+            text: null != R ? A.intl.string(A.t["5911Lb"]) : A.intl.string(A.t.VkKicb),
             onClick: () => {
-                h?.({
+                y?.({
                     action: "PRESS_CLEAR_HISTORY_BUTTON"
-                }), (0, d.FO)(i, e.id, A)
+                }), (0, d.FO)(i, e.id, I)
             },
-            disabled: I,
+            disabled: L,
             variant: "critical-primary",
             size: "sm"
         }],
-        onClose: A,
-        transitionState: y,
-        children: [null != L ? (0, n.jsxs)("div", {
-            className: p.z3,
-            children: [(0, n.jsx)(o.aXh, {
+        onClose: I,
+        transitionState: m,
+        children: [null != R ? (0, s.jsxs)("div", {
+            className: b.z3,
+            children: [(0, s.jsx)(o.aXh, {
                 color: o.LU0.colors.ICON_FEEDBACK_CRITICAL
-            }), (0, n.jsx)(o.Text, {
+            }), (0, s.jsx)(o.Text, {
                 variant: "text-sm/medium",
-                children: m.intl.string(m.t.FMbL3s)
+                children: A.intl.string(A.t.FMbL3s)
             })]
-        }) : null, (0, n.jsx)(_.A, {
+        }) : null, (0, s.jsx)(f.A, {
             user: e,
             entry: i,
-            className: p.Nr,
+            className: b.Nr,
             hideContextMenu: !0
         })]
     })

@@ -35,8 +35,8 @@ let _ = {
             className: f,
             cardClassName: h,
             cardStyle: b = p,
-            cardType: x,
-            artboard: g = "BaseGlowRemapped",
+            cardType: g,
+            artboard: x = "BaseGlowRemapped",
             fit: C = "layout",
             glowing: A = !1,
             glowAmount: R = 8,
@@ -44,7 +44,7 @@ let _ = {
             hueRotate: E = 0,
             isReducedMotion: N,
             onMouseEnter: j
-        } = e, I = n.useRef(null), y = n.useRef(null), {
+        } = e, y = n.useRef(null), I = n.useRef(null), {
             status: P,
             buffer: S
         } = (0, c.CE)(A ? l.A : null), T = n.useContext(o.C), w = N ?? T.reducedMotion.enabled, O = {
@@ -55,22 +55,22 @@ let _ = {
         };
         return (0, a.jsxs)("div", {
             id: r,
-            ref: I,
+            ref: y,
             tabIndex: s,
             className: i()(m.k, f),
             style: O,
             onMouseEnter: j,
             children: [A && P !== c.BW.Loading && (0, a.jsx)(d.w, {
                 buffer: S,
-                artboard: g,
+                artboard: x,
                 artboardProperties: _,
-                eventTargetRef: I,
+                eventTargetRef: y,
                 className: m.Q,
-                ref: y,
+                ref: I,
                 fit: C,
                 withReducedMotion: w ? "halt" : "play"
             }), (0, a.jsx)(u.ZpM, {
-                type: x ?? u.sl2.CUSTOM,
+                type: g ?? u.sl2.CUSTOM,
                 className: h,
                 style: b,
                 children: t

@@ -193,7 +193,7 @@ function D(e) {
                     text: R.intl.string(R.t.LLLLPD),
                     fullWidth: !0,
                     onClick: ea
-                }), el.enabled && (ee === S.UA.UNENROLLED || ee === S.UA.ENROLLED) && el.enabledQuestStates.has(ee) ? (0, i.jsx)(T.A, {
+                }), el.enabled && (ee === S.UA.UNENROLLED || ee === S.UA.ENROLLED || ee === S.UA.INCOMPLETE) && el.enabledQuestStates.has(ee) ? (0, i.jsx)(T.A, {
                     quest: t,
                     surface: S.V3.QUEST_EMBED,
                     analyticsCtxQuestContent: n,

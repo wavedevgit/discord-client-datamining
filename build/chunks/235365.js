@@ -1,6 +1,6 @@
 /** chunk id: 235365 params = (module,exports,require) **/
 r.d(t, {
-    A: () => x,
+    A: () => g,
     L: () => b
 });
 var a = r(627968),
@@ -18,13 +18,13 @@ var a = r(627968),
     f = r(985018),
     h = r(18738);
 let b = "orbs",
-    x = e => {
+    g = e => {
         let {
             className: t,
             location: r
         } = e, {
             analyticsLocations: s
-        } = (0, d.Ay)(r), x = n.useRef(null), g = n.useRef(!1), {
+        } = (0, d.Ay)(r), g = n.useRef(null), x = n.useRef(!1), {
             passesGeneralUIInvariant: C,
             programReward: A
         } = (0, c.F)({
@@ -33,15 +33,15 @@ let b = "orbs",
         return C ? (0, a.jsx)(d.f5, {
             value: s,
             children: (0, a.jsx)(l.L, {
-                innerRef: x,
+                innerRef: g,
                 onChange: e => {
-                    e && !g.current && (g.current = !0, u.default.track(_.HAw.PREMIUM_TENURE_REWARDS_ORBS_SECTION_IMPRESSION, {
+                    e && !x.current && (x.current = !0, u.default.track(_.HAw.PREMIUM_TENURE_REWARDS_ORBS_SECTION_IMPRESSION, {
                         program_state: A?.program_current_state
                     }))
                 },
                 threshold: .5,
                 children: (0, a.jsxs)("div", {
-                    ref: x,
+                    ref: g,
                     id: b,
                     className: i()(h.uW, h.Uv, h.qr, t),
                     children: [(0, a.jsx)(o.DZT, {

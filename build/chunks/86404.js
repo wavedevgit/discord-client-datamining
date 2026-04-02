@@ -22,22 +22,22 @@ function p(e) {
         channelId: p,
         onClose: g
     } = e, {
-        mutualFriends: m
+        mutualFriends: I
     } = (0, d.A)(n), {
-        analyticsLocations: I
+        analyticsLocations: m
     } = (0, r.Ay)(), {
         context: f,
-        trackUserProfileAction: b
-    } = (0, o.NJ)(), h = (0, l.A)();
+        trackUserProfileAction: h
+    } = (0, o.NJ)(), b = (0, l.A)();
     return a.useEffect(() => {
-        (0, c.A)(n.id, h)
-    }, [n.id, h]), (0, i.jsx)(s.IpV, {
+        (0, c.A)(n.id, b)
+    }, [n.id, b]), (0, i.jsx)(s.IpV, {
         className: x.DK,
         fade: !0,
-        children: null == m ? (0, i.jsx)("div", {
+        children: null == I ? (0, i.jsx)("div", {
             className: x.Ie,
             children: (0, i.jsx)(s.y$y, {})
-        }) : 0 === m.length ? (0, i.jsxs)("div", {
+        }) : 0 === I.length ? (0, i.jsxs)("div", {
             className: x.Ie,
             children: [(0, i.jsx)("div", {
                 className: x.on
@@ -45,7 +45,7 @@ function p(e) {
                 className: x.BI,
                 children: A.intl.string(A.t["/5p4gx"])
             })]
-        }) : m.map(e => {
+        }) : I.map(e => {
             let {
                 key: n,
                 user: a,
@@ -58,12 +58,12 @@ function p(e) {
                 channelId: p,
                 onSelect: () => {
                     var e;
-                    g?.(), b({
+                    g?.(), h({
                         action: "PRESS_MUTUAL_FRIEND"
                     }), e = a.id, (0, u.openUserProfileModal)({
                         ...f,
                         userId: e,
-                        sourceAnalyticsLocations: I
+                        sourceAnalyticsLocations: m
                     })
                 }
             }, n)

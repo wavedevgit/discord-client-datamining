@@ -17,11 +17,11 @@ var a = t(397927),
     x = t(718019),
     p = t(31432),
     g = t(915614),
-    m = t(559506),
-    I = t(946356),
+    I = t(559506),
+    m = t(946356),
     f = t(810396),
-    b = t(570314),
-    h = t(490752),
+    h = t(570314),
+    b = t(490752),
     j = t(571077),
     v = t(587168),
     C = t(982985),
@@ -89,12 +89,12 @@ function k(e) {
                                 })
                             })
                         }),
-                        children: (0, i.jsxs)(I.A, {
+                        children: (0, i.jsxs)(m.A, {
                             user: n,
                             displayProfile: w,
                             themeType: O.d.MODAL,
                             children: [(0, i.jsx)(v.A, {
-                                children: (0, i.jsx)(h.A, {
+                                children: (0, i.jsx)(b.A, {
                                     user: n,
                                     guildId: z,
                                     viewProfileItem: q
@@ -137,12 +137,12 @@ function k(e) {
                                         }), (0, i.jsx)(j.A, {
                                             user: n,
                                             guildId: z
-                                        }), (0, i.jsx)(b.A, {
+                                        }), (0, i.jsx)(h.A, {
                                             user: n
                                         })]
                                     })]
                                 })]
-                            }), (0, i.jsx)(m.A, {
+                            }), (0, i.jsx)(I.A, {
                                 userId: n.id,
                                 className: P.Fd
                             }), (0, i.jsxs)("div", {

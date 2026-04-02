@@ -66,7 +66,9 @@ function ei() {
         location: "PremiumWhatsNewSection"
     }), er = R.A.useExperiment({
         location: "PremiumWhatsNewSection"
-    }).enabled, eo = (0, a.bG)([y.A], () => y.A.getPremiumTypeSubscription()), ed = eo?.hasActiveTrial ?? !1, ec = (0, a.bG)([f.A], () => [...f.A.quests.values()].find(e => e.config.features.includes(B.Li.NITRO_CONTROL_CTA)) ?? null), eu = (0, N.A)(), {
+    }).enabled, eo = (0, a.bG)([y.A], () => y.A.getPremiumTypeSubscription()), ed = eo?.hasActiveTrial ?? !1, ec = (0, a.bG)([f.A], () => [...f.A.quests.values()].find(e => e.config.features.includes(B.Li.NITRO_CONTROL_CTA)) ?? null), eu = (0, N.A)({
+        analyticsLocations: e
+    }), {
         launchInGameActivity: em
     } = (0, E.zW)(ec), eg = (0, s.useCallback)(() => {
         (0, j.openUserSettings)(v.X.PROFILE_PANEL, {

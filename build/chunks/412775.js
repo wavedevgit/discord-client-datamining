@@ -17,11 +17,11 @@ var a = t(311907),
     x = t(389996),
     p = t(46937),
     g = t(361311),
-    m = t(743987),
-    I = t(900179),
+    I = t(743987),
+    m = t(900179),
     f = t(280645),
-    b = t(928223),
-    h = t(518477),
+    h = t(928223),
+    b = t(518477),
     j = t(985018),
     v = t(824860);
 
@@ -44,7 +44,7 @@ function C(e) {
         }), t?.guildId != null && (0, i.jsx)(f.A, {
             userId: n.id,
             guildId: t.guildId
-        }), n.isProvisional && (0, i.jsx)(I.A, {
+        }), n.isProvisional && (0, i.jsx)(m.A, {
             heading: j.intl.string(j.t.Iyka0U),
             headingIcon: (0, i.jsx)(s.EpV, {
                 size: "xxs",
@@ -54,28 +54,28 @@ function C(e) {
             children: (0, i.jsx)(r.T, {
                 userId: n.id
             })
-        }), E.length > 0 && (0, i.jsx)(I.A, {
+        }), E.length > 0 && (0, i.jsx)(m.A, {
             heading: j.intl.string(j.t["Uv/eTx"]),
             children: (0, i.jsx)(g.A, {
                 applicationIds: E
             })
-        }), (0, i.jsx)(I.A, {
+        }), (0, i.jsx)(m.A, {
             heading: j.intl.string(j.t.a6XYD9),
-            children: (0, i.jsx)(m.A, {
+            children: (0, i.jsx)(I.A, {
                 userId: n.id,
                 guildId: t?.guildId,
-                tooltipDelay: h.In
+                tooltipDelay: b.In
             })
-        }), O.length > 0 && (0, i.jsx)(I.A, {
+        }), O.length > 0 && (0, i.jsx)(m.A, {
             heading: j.intl.string(j.t["3fe7U5"]),
-            scrollTargetId: h.bk.CONNECTIONS,
+            scrollTargetId: b.bk.CONNECTIONS,
             children: (0, i.jsx)(p.Ay, {
                 connectedAccounts: O,
                 className: v.oQ,
                 userId: n.id,
                 locale: L
             })
-        }), S.length > 0 && (0, i.jsx)(I.A, {
+        }), S.length > 0 && (0, i.jsx)(m.A, {
             heading: j.intl.string(j.t.PHjkRE),
             children: S.map(e => (0, i.jsx)(p.Wc, {
                 className: v.MI,
@@ -88,7 +88,7 @@ function C(e) {
                 },
                 selectedGuildId: y ?? void 0
             }, e.application.id))
-        }), (0, i.jsx)(b.A, {
+        }), (0, i.jsx)(h.A, {
             userId: n.id
         })]
     })

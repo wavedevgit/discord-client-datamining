@@ -17,11 +17,11 @@ var a = t(311907),
     x = t(837924),
     p = t(558628),
     g = t(842241),
-    m = t(282797),
-    I = t(518477),
+    I = t(282797),
+    m = t(518477),
     f = t(652215),
-    b = t(985018),
-    h = t(575877),
+    h = t(985018),
+    b = t(575877),
     j = t(643146);
 
 function v(e) {
@@ -45,12 +45,12 @@ function v(e) {
         return e === s.clD.OFFLINE || e === s.clD.INVISIBLE
     }), k = (0, a.bG)([c.A], () => c.A.getUserProfile(n.id)?.private === !0), R = N.length > 0 || null != E, B = !k && null == E && null == L && null != T, M = !P && (R || B), G = y.length > 0;
     return M || G || !O ? (0, i.jsxs)(s.IpV, {
-        className: h.XG,
+        className: b.XG,
         fade: !0,
         children: [M ? (0, i.jsx)(A.A, {
-            "aria-label": b.intl.string(b.t.J6STd9),
+            "aria-label": h.intl.string(h.t.J6STd9),
             children: (0, i.jsxs)("ul", {
-                className: h.Ci,
+                className: b.Ci,
                 children: [null != E && (0, i.jsx)("li", {
                     children: (0, i.jsx)(g.A, {
                         user: n,
@@ -66,7 +66,7 @@ function v(e) {
                         onClose: C
                     })
                 }, `live-${a}`)), B && (0, i.jsx)("li", {
-                    children: (0, i.jsx)(m.A, {
+                    children: (0, i.jsx)(I.A, {
                         user: n,
                         currentUser: t,
                         voiceChannel: T,
@@ -75,16 +75,16 @@ function v(e) {
                 })]
             })
         }) : null, G ? (0, i.jsx)(A.A, {
-            heading: b.intl.string(b.t.M0zgnT),
-            introText: S ? b.intl.format(b.t["4bk9Ak"], {
+            heading: h.intl.string(h.t.M0zgnT),
+            introText: S ? h.intl.format(h.t["4bk9Ak"], {
                 learnMoreHook: (e, n) => (0, i.jsx)(s.MzZ, {
                     href: d.A.getArticleURL(f.MVz.ACTIVITY_STATUS_SETTINGS),
                     children: e
                 }, n)
             }) : void 0,
-            scrollTargetId: I.bk.RECENT_ACTIVITY,
+            scrollTargetId: m.bk.RECENT_ACTIVITY,
             children: (0, i.jsx)("ul", {
-                className: h.Ci,
+                className: b.Ci,
                 children: y.map(e => (0, i.jsx)("li", {
                     children: (0, i.jsx)(p.A, {
                         user: n,

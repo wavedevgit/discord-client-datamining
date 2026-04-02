@@ -16,11 +16,11 @@ var i = t(627968),
     x = t(249790),
     p = t(946356),
     g = t(254828),
-    m = t(783123),
-    I = t(652215),
+    I = t(783123),
+    m = t(652215),
     f = t(996988),
-    b = t(985018),
-    h = t(255412);
+    h = t(985018),
+    b = t(255412);
 
 function j(e) {
     let {
@@ -32,7 +32,7 @@ function j(e) {
         transitionState: N,
         onHide: y,
         sourceAnalyticsLocations: E = []
-    } = e, T = t === I.ME ? void 0 : t, L = (0, a.bG)([d.A], () => d.A.isBlocked(n.id)), {
+    } = e, T = t === m.ME ? void 0 : t, L = (0, a.bG)([d.A], () => d.A.isBlocked(n.id)), {
         analyticsLocations: O
     } = (0, r.Ay)([...E, L ? l.A.BLOCKED_PROFILE_MODAL : l.A.IGNORED_PROFILE_MODAL]), S = (0, u.pb)({
         layout: "MODAL_V2",
@@ -43,11 +43,11 @@ function j(e) {
         roleId: C
     }), P = [{
         icon: s.yr3,
-        description: b.intl.string(b.t.kcuWva)
+        description: h.intl.string(h.t.kcuWva)
     }, {
         icon: s.yr3,
-        description: b.intl.string(L ? b.t.QxrDY1 : b.t.W6fjkS)
-    }], k = (0, A.Ay)(n.id, T), R = c.Ay.getName(k?.guildId, j, n), B = b.intl.formatToPlainString(b.t.KRe1Fk, {
+        description: h.intl.string(L ? h.t.QxrDY1 : h.t.W6fjkS)
+    }], k = (0, A.Ay)(n.id, T), R = c.Ay.getName(k?.guildId, j, n), B = h.intl.formatToPlainString(h.t.KRe1Fk, {
         name: R
     });
     return (0, i.jsx)(r.f5, {
@@ -58,7 +58,7 @@ function j(e) {
             children: (0, i.jsx)(s.EOs, {
                 "data-migration-pending": !0,
                 transitionState: N,
-                className: h.zr,
+                className: b.zr,
                 "aria-label": B,
                 parentComponent: "RestrictedUserProfileModalV2",
                 children: (0, i.jsxs)(p.A, {
@@ -66,27 +66,27 @@ function j(e) {
                     displayProfile: k,
                     themeType: f.d.MODAL_V2,
                     children: [(0, i.jsx)("div", {
-                        className: h.Tp
+                        className: b.Tp
                     }), (0, i.jsxs)("div", {
-                        className: h.Qs,
+                        className: b.Qs,
                         children: [(0, i.jsx)(x.A, {
                             user: n,
                             guildId: T
                         }), (0, i.jsxs)("div", {
-                            className: h.FS,
+                            className: b.FS,
                             children: [(0, i.jsx)(s.Heading, {
                                 variant: "heading-xl/bold",
                                 color: "text-default",
-                                children: b.intl.string(b.t.b33pLD)
+                                children: h.intl.string(h.t.b33pLD)
                             }), (0, i.jsx)(s.Text, {
                                 variant: "text-md/medium",
                                 color: "text-default",
-                                children: b.intl.format(L ? b.t.T7QiLn : b.t.MnEowy, {
+                                children: h.intl.format(L ? h.t.T7QiLn : h.t.MnEowy, {
                                     username: R
                                 })
                             })]
                         }), (0, i.jsx)("div", {
-                            className: h.vb,
+                            className: b.vb,
                             children: P.map((e, n) => {
                                 let {
                                     icon: t,
@@ -101,7 +101,7 @@ function j(e) {
                             })
                         }), (0, i.jsxs)(s.BJc, {
                             align: "center",
-                            children: [(0, i.jsx)(m.A, {
+                            children: [(0, i.jsx)(I.A, {
                                 size: "md",
                                 isBlocked: L,
                                 onClick: () => {

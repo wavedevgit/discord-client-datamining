@@ -17,8 +17,8 @@ var a = r(627968),
     f = r(914410),
     h = r(954571),
     b = r(872725),
-    x = r(465794),
-    g = r(788868),
+    g = r(465794),
+    x = r(788868),
     C = r(652215),
     A = r(985018),
     R = r(547807);
@@ -30,8 +30,8 @@ let v = e => {
         caption: v,
         pillText: N,
         primaryAsset: j,
-        primaryAssetClassName: I,
-        backgroundAssetUrl: y,
+        primaryAssetClassName: y,
+        backgroundAssetUrl: I,
         progress: P,
         ctaIcon: S,
         ctaIconPosition: T,
@@ -66,8 +66,8 @@ let v = e => {
                 function_name: (0, l.snakeCase)(O.name)
             }))
         }, [O, r]),
-        K = D && H === g.xc.FP_ONLY,
-        z = !(0, l.isEmpty)(y),
+        K = D && H === x.xc.FP_ONLY,
+        z = !(0, l.isEmpty)(I),
         Z = z && (0, c.q)(F),
         X = (0, u.rdh)(u.LU0.colors.BACKGROUND_BASE_LOW).hex(),
         $ = K || !(0, l.isEmpty)(w);
@@ -89,7 +89,7 @@ let v = e => {
                 [R.j8]: L
             }),
             cardStyle: {
-                backgroundImage: z ? `url(${y})` : void 0,
+                backgroundImage: z ? `url(${I})` : void 0,
                 backgroundSize: "cover",
                 backgroundPosition: "center",
                 backgroundOrigin: "padding-box",
@@ -107,11 +107,11 @@ let v = e => {
                     "aria-hidden": "true",
                     children: (0, a.jsx)(E, {
                         asset: j,
-                        className: I
+                        className: y
                     })
                 }), (0, a.jsx)(E, {
                     asset: j,
-                    className: I
+                    className: y
                 })]
             }), (0, a.jsxs)("div", {
                 className: R.hQ,
@@ -170,7 +170,7 @@ let v = e => {
                     })]
                 }), $ && (0, a.jsxs)("div", {
                     className: R.yk,
-                    children: [K && (0, a.jsx)(x.A, {
+                    children: [K && (0, a.jsx)(g.A, {
                         fullWidth: !0,
                         defaultTextOverride: A.intl.string(A.t.sEAnVH)
                     }), !K && (0, a.jsx)(d.$nd, {

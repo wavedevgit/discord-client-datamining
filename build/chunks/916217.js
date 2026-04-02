@@ -16,11 +16,11 @@ var i = t(627968),
     x = t(718019),
     p = t(31432),
     g = t(915614),
-    m = t(389996),
-    I = t(743987),
+    I = t(389996),
+    m = t(743987),
     f = t(900179),
-    b = t(946356),
-    h = t(810396),
+    h = t(946356),
+    b = t(810396),
     j = t(35241),
     v = t(587168),
     C = t(518477),
@@ -74,7 +74,7 @@ function S(e) {
                             })
                         })
                     }),
-                    children: (0, i.jsxs)(b.A, {
+                    children: (0, i.jsxs)(h.A, {
                         user: n,
                         displayProfile: U,
                         themeType: y.d.MODAL,
@@ -100,7 +100,7 @@ function S(e) {
                             })]
                         }), (0, i.jsxs)("div", {
                             className: T.rf,
-                            children: [(0, i.jsx)(h.A, {
+                            children: [(0, i.jsx)(b.A, {
                                 className: T.Xh,
                                 user: n,
                                 guildId: D,
@@ -131,13 +131,13 @@ function S(e) {
                                 }), (0, i.jsxs)(s.IpV, {
                                     fade: !0,
                                     className: L.XG,
-                                    children: [(0, i.jsx)(m.E, {
+                                    children: [(0, i.jsx)(I.E, {
                                         userId: n.id,
                                         userBio: U?.bio,
                                         setLineClamp: !1
                                     }), (0, i.jsx)(f.A, {
                                         heading: E.intl.string(E.t["A//N4k"]),
-                                        children: (0, i.jsx)(I.A, {
+                                        children: (0, i.jsx)(m.A, {
                                             userId: n.id,
                                             guildId: D,
                                             tooltipDelay: C.In
