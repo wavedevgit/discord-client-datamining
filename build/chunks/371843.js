@@ -3,22 +3,22 @@ t.d(n, {
     A: () => r
 });
 var i = t(913453),
-    a = t(186272),
-    s = t(518477),
-    l = t(985018);
+    l = t(186272),
+    a = t(518477),
+    s = t(985018);
 
 function r(e) {
     let {
         mutualGuilds: n
     } = (0, i.A)(e), t = n?.length;
     return [{
-        section: s.RP.BOT_INFO,
-        text: l.intl.string(l.t.ZzAR2Y)
+        section: a.RP.BOT_INFO,
+        text: s.intl.string(s.t.ZzAR2Y)
     }, {
-        section: s.RP.MUTUAL_GUILDS,
-        text: (0, a.A)(t)
+        section: a.RP.MUTUAL_GUILDS,
+        text: (0, l.A)(t)
     }, {
-        section: s.RP.BOT_DATA_ACCESS,
-        text: l.intl.string(l.t.WstFb0)
+        section: a.RP.BOT_DATA_ACCESS,
+        text: s.intl.string(s.t.WstFb0)
     }]
 }

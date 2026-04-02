@@ -28,29 +28,29 @@ let u = {
                     action2Text: h,
                     action2Variant: x,
                     icon: b,
-                    iconPosition: y,
-                    index: f,
+                    iconPosition: f,
+                    index: y,
                     size: g,
                     badgeText: v,
                     badgeVariant: E,
                     isReducedMotion: _,
                     previewImageStyle: C
-                } = e, S = () => (0, n.showToast)((0, n.createToast)("CTA clicked!", n.ToastType.SUCCESS)), j = u[b], T = "descriptionCta" === d ? {
+                } = e, j = () => (0, n.showToast)((0, n.createToast)("CTA clicked!", n.ToastType.SUCCESS)), S = u[b], T = "descriptionCta" === d ? {
                     descriptionCta: c,
-                    onClick: S
+                    onClick: j
                 } : "actions" === d ? {
                     actions: [{
                         text: p,
                         variant: m,
-                        onClick: S,
-                        ...null != j ? {
-                            icon: j,
-                            iconPosition: y
+                        onClick: j,
+                        ...null != S ? {
+                            icon: S,
+                            iconPosition: f
                         } : {}
                     }, ...h.length > 0 ? [{
                         text: h,
                         variant: x,
-                        onClick: S
+                        onClick: j
                     }] : []]
                 } : {};
                 return (0, a.jsx)("div", {
@@ -61,7 +61,7 @@ let u = {
                         previewImage: o.A,
                         videoUrl: s.A,
                         shouldLoadVideo: !0,
-                        index: f,
+                        index: y,
                         size: g,
                         badgeText: v.length > 0 ? v : void 0,
                         badgeVariant: E,

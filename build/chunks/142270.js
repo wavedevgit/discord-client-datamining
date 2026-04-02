@@ -17,8 +17,8 @@ var a = l(627968),
     h = l(305003),
     x = l(162097),
     b = l(219980),
-    y = l(652215),
-    f = l(985018),
+    f = l(652215),
+    y = l(985018),
     g = l(810079);
 let v = {
         START: g.Vl,
@@ -30,55 +30,55 @@ let v = {
             ctaText: l,
             ctaOnClick: r,
             analyticsPage: E,
-            linkText: _ = f.intl.string(f.t.XRdyjz),
+            linkText: _ = y.intl.string(y.t.XRdyjz),
             cardAlignment: C = v.START,
-            className: S
+            className: j
         } = e, {
-            balance: j
-        } = (0, m.W)(), T = (0, c.DK)(d.W.NITRO, "BalanceWidgetMenu"), [A, P] = n.useState(h.k.DEFAULT), [k, I] = n.useState(!1), [R, N] = n.useState(!1), D = n.useRef(null);
+            balance: S
+        } = (0, m.W)(), T = (0, c.DK)(d.W.NITRO, "BalanceWidgetMenu"), [A, P] = n.useState(h.k.DEFAULT), [k, I] = n.useState(!1), [R, N] = n.useState(!1), M = n.useRef(null);
         (0, s.j)(!k);
-        let M = n.useCallback(() => {
+        let D = n.useCallback(() => {
                 let e = !k;
                 e && null != E && (0, p.Y)({
                     pageType: E,
-                    sectionType: y.JJy.ORBS_BALANCE_MENU,
-                    ctaObject: y.ZSU.OPEN_ORB_BALANCE_MENU_FROM_PILL
+                    sectionType: f.JJy.ORBS_BALANCE_MENU,
+                    ctaObject: f.ZSU.OPEN_ORB_BALANCE_MENU_FROM_PILL
                 }), P(e ? h.k.SELECTED : h.k.DEFAULT), I(e)
             }, [k, E]),
             O = n.useCallback(() => {
-                k && M()
-            }, [k, M]),
+                k && D()
+            }, [k, D]),
             L = (0, o.A)(null, O),
             B = n.useMemo(() => (0, a.jsx)(x.b, {
                 analyticsPage: E,
                 ctaText: l,
                 ctaOnClick: () => {
-                    M(), r()
+                    D(), r()
                 },
                 linkText: _
-            }), [E, l, _, M, r]),
+            }), [E, l, _, D, r]),
             w = n.useMemo(() => (0, a.jsx)(u.A, {
-                targetElementRef: D,
+                targetElementRef: M,
                 shouldShow: k,
-                onRequestClose: M,
+                onRequestClose: D,
                 ctaText: l,
                 ctaOnClick: () => {
-                    M(), r()
+                    D(), r()
                 }
-            }), [k, M, l, r]);
+            }), [k, D, l, r]);
         return (0, a.jsxs)("div", {
-            className: i()(g.kL, S, {
+            className: i()(g.kL, j, {
                 [g.R]: R,
                 [g.RK]: !R
             }),
             children: [(0, a.jsx)(b.J, {
-                pillRef: D,
-                balance: j,
+                pillRef: M,
+                balance: S,
                 balanceWidgetMode: A,
                 onMouseDown: e => {
                     e.stopPropagation()
                 },
-                onClick: M,
+                onClick: D,
                 showNotificationBadge: t
             }), T ? w : k && (0, a.jsx)("div", {
                 className: i()(g.Ui, C, {

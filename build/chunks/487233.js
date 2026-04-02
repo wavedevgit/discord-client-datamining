@@ -17,15 +17,15 @@ var n = l(311907),
     h = l(854627),
     x = l(930349),
     b = l(339984),
-    y = l(985018);
+    f = l(985018);
 
-function f(e) {
+function y(e) {
     let {
         user: t,
         guildId: l
     } = e, {
         newestAnalyticsLocation: c
-    } = (0, i.Ay)(), f = null != l, g = (0, n.bG)([d.Ay], () => null != l ? d.Ay.getMember(l, t.id) : null), v = (0, n.bG)([m.A], () => m.A.getPendingChanges(l ?? void 0).pendingAvatar), E = (0, u.V7)({
+    } = (0, i.Ay)(), y = null != l, g = (0, n.bG)([d.Ay], () => null != l ? d.Ay.getMember(l, t.id) : null), v = (0, n.bG)([m.A], () => m.A.getPendingChanges(l ?? void 0).pendingAvatar), E = (0, u.V7)({
         userId: t.id,
         image: v
     }), {
@@ -35,23 +35,23 @@ function f(e) {
         guildId: l,
         avatarOverride: E,
         size: r._3J.SIZE_56
-    }), C = f ? g?.avatar : t.avatar, S = null != t.avatar, j = f && g?.avatar != null, T = null != v, A = null === v, P = (0, o.z5)(v, C), k = () => (0, s.XD)({
+    }), C = y ? g?.avatar : t.avatar, j = null != t.avatar, S = y && g?.avatar != null, T = null != v, A = null === v, P = (0, o.z5)(v, C), k = () => (0, s.XD)({
         uploadType: b.HL.AVATAR,
         analyticsSource: c,
         guildId: l ?? void 0,
         stackingBehavior: "stack"
     });
-    if (!(A ? f && S : T || j || S)) return (0, a.jsx)(x.k, {
+    if (!(A ? y && j : T || S || j)) return (0, a.jsx)(x.k, {
         variant: "square",
         onClick: k,
-        accessibleLabel: y.intl.string(y.t["4OynCD"]),
+        accessibleLabel: f.intl.string(f.t["4OynCD"]),
         children: (0, a.jsx)(r.euF, {
             src: _,
             size: r._3J.SIZE_56,
             "aria-hidden": !0
         })
     });
-    let I = f && S,
+    let I = y && j,
         R = P ? {
             onClick: () => {
                 (0, p.p)({
@@ -60,12 +60,12 @@ function f(e) {
                 }), (0, o.WU)(null)
             },
             type: I ? "reset" : "remove",
-            accessibleLabel: y.intl.string(I ? y.t.GaEG4t : y.t["2A+piL"])
+            accessibleLabel: f.intl.string(I ? f.t.GaEG4t : f.t["2A+piL"])
         } : void 0;
     return (0, a.jsx)(x.N, {
         variant: "square",
         onClick: k,
-        accessibleLabel: y.intl.string(y.t["4OynCD"]),
+        accessibleLabel: f.intl.string(f.t["4OynCD"]),
         deleteButtonConfig: R,
         children: (0, a.jsx)(r.euF, {
             src: _,
@@ -79,7 +79,7 @@ function g(e) {
     let {
         guildId: t
     } = e, l = (0, n.bG)([c.default], () => c.default.getCurrentUser());
-    return null == l ? null : (0, a.jsx)(f, {
+    return null == l ? null : (0, a.jsx)(y, {
         user: l,
         guildId: t
     })

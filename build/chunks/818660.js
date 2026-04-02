@@ -25,8 +25,8 @@ var i = n(627968),
     b = n(975571),
     C = n(723702),
     N = n(350535),
-    v = n(392111),
-    I = n(331969),
+    v = n(331969),
+    I = n(173332),
     j = n(652215),
     y = n(650583),
     O = n(985018),
@@ -137,7 +137,7 @@ class D extends s.PureComponent {
         let {
             action: e
         } = this.props.keybind;
-        return e === j.hCu.SWITCH_TO_VOICE_CHANNEL ? (0, i.jsx)(I.A, {
+        return e === j.hCu.SWITCH_TO_VOICE_CHANNEL ? (0, i.jsx)(v.A, {
             keybind: this.props.keybind
         }) : void 0
     }
@@ -286,7 +286,7 @@ class G extends s.PureComponent {
             enableScreenshotKeybind: t
         } = this.props, n = a()(this.props.keybinds).reject(e => e.managed && ![j.hCu.OVERLAY_ACTIVATE_REGION_TEXT_WIDGET, j.hCu.SAVE_CLIP, j.hCu.SAVE_SCREENSHOT].includes(e.action)).reject(t => !e && (t.action === j.hCu.SAVE_CLIP || t.action === j.hCu.SAVE_SCREENSHOT)).reject(e => !t && e.action === j.hCu.SAVE_SCREENSHOT).reject(e => !this.props.allowSoundboard && (e.action === j.hCu.SOUNDBOARD || e.action === j.hCu.SOUNDBOARD_HOLD)).sortBy(e => e.id).sortBy(e => !0 === e.managed ? -1 : 0).value(), l = a()((0, _.Bx)()).filter(e => e.description !== O.intl.string(O.t.HnNtEI)).groupBy(e => e.group).value();
         return (0, i.jsxs)(i.Fragment, {
-            children: [(0, i.jsx)(v.A, {
+            children: [(0, i.jsx)(I.A, {
                 className: P.IE,
                 children: C.isPlatformEmbedded ? (0, i.jsxs)(i.Fragment, {
                     children: [(0, i.jsxs)("div", {

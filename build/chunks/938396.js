@@ -16,15 +16,15 @@ var a = l(627968),
     h = l(976860),
     x = l(309954),
     b = l(287809),
-    y = l(975571),
-    f = l(474090),
+    f = l(975571),
+    y = l(474090),
     g = l(94264),
     v = l(235365),
     E = l(566119),
     _ = l(788868),
     C = l(652215),
-    S = l(901123),
-    j = l(49370),
+    j = l(901123),
+    S = l(49370),
     T = l(985018),
     A = l(182393),
     P = l(268920),
@@ -40,15 +40,15 @@ let R = () => (0, a.jsx)("div", {
 });
 
 function N() {
-    (0, E.RQ)(), (0, h.pX)(`${S.BV.NITRO_HOME}?section=${v.L}`)
-}
-
-function D() {
-    (0, E.gP)(), (0, h.pX)(`${S.BV.NITRO_HOME}?section=${v.L}`)
+    (0, E.RQ)(), (0, h.pX)(`${j.BV.NITRO_HOME}?section=${v.L}`)
 }
 
 function M() {
-    (0, E.b)(), window.open(y.A.getArticleURL(C.MVz.ORBS_FAQ), "_blank")
+    (0, E.gP)(), (0, h.pX)(`${j.BV.NITRO_HOME}?section=${v.L}`)
+}
+
+function D() {
+    (0, E.b)(), window.open(f.A.getArticleURL(C.MVz.ORBS_FAQ), "_blank")
 }
 
 function O(e) {
@@ -57,16 +57,16 @@ function O(e) {
         shouldShow: l,
         onRequestClose: r,
         ctaText: h,
-        ctaOnClick: y
+        ctaOnClick: f
     } = e, {
         passesGeneralUIInvariant: v,
         programReward: E
     } = (0, m.F)({
         location: "PremiumTenureRewardsOrbsBalancePopover"
-    }), S = (0, s.bG)([b.default], () => b.default.getCurrentUser()), {
+    }), j = (0, s.bG)([b.default], () => b.default.getCurrentUser()), {
         balance: P
-    } = (0, x.W)(), k = !(0, f.ki)(S), O = n.useMemo(() => {
-        let e = (0, f.YE)(S, _.PremiumTypes.TIER_2);
+    } = (0, x.W)(), k = !(0, y.ki)(j), O = n.useMemo(() => {
+        let e = (0, y.YE)(j, _.PremiumTypes.TIER_2);
         if (!v || k) return null;
         if (e && null != E) {
             let e = (0, o.default)(new Date(E.next_reward_date), new Date);
@@ -74,7 +74,7 @@ function O(e) {
                 children: [(0, a.jsx)(c.EYj, {
                     variant: "text-xs/normal",
                     color: "text-default",
-                    children: T.intl.format(j.default["AvL/At"], {
+                    children: T.intl.format(S.default["AvL/At"], {
                         days: Math.max(1, e),
                         deepLinkToNitroOrbs: N
                     })
@@ -82,7 +82,7 @@ function O(e) {
             })
         }
         return null
-    }, [S, k, E, v]), L = (P ?? 0) >= 4100;
+    }, [j, k, E, v]), L = (P ?? 0) >= 4100;
     return (0, a.jsx)(u.x, {
         targetElementRef: t,
         shouldShow: l,
@@ -115,23 +115,23 @@ function O(e) {
                                 }), (0, a.jsx)(c.EYj, {
                                     variant: "text-xs/normal",
                                     color: "text-muted",
-                                    children: T.intl.string(j.default.KclK9z)
+                                    children: T.intl.string(S.default.KclK9z)
                                 })]
                             }), O]
                         }), (0, a.jsx)(c.$nd, {
                             text: h,
                             variant: "primary",
                             size: "sm",
-                            onClick: y,
+                            onClick: f,
                             fullWidth: !0
                         }), (0, a.jsx)(c.EYj, {
                             variant: "text-xs/normal",
                             color: k ? "text-default" : "text-muted",
                             className: A.CU,
-                            children: k ? T.intl.format(j.default.juvXqj, {
-                                deepLinkToNitroOrbs: D
-                            }) : T.intl.format(j.default.fhAVek, {
-                                helpdeskArticle: M
+                            children: k ? T.intl.format(S.default.juvXqj, {
+                                deepLinkToNitroOrbs: M
+                            }) : T.intl.format(S.default.fhAVek, {
+                                helpdeskArticle: D
                             })
                         })]
                     })]

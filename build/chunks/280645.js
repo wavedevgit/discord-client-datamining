@@ -13,8 +13,8 @@ var n = t(311907),
     c = t(1659),
     u = t(166005),
     m = t(900179),
-    A = t(518477),
-    x = t(652215),
+    x = t(518477),
+    A = t(652215),
     p = t(985018);
 
 function g(e) {
@@ -24,12 +24,12 @@ function g(e) {
         ...g
     } = e, {
         trackUserProfileAction: f
-    } = (0, d.NJ)(), h = (0, n.bG)([r.A], () => r.A.getGuild(t)), j = (0, n.bG)([s.Ay], () => s.Ay.getMember(t, l)), I = j?.roles, v = (0, n.yK)([a.A], () => a.A.getManyRoles(t, I ?? []).sort(c.m), [I, t]), [N] = (0, n.yK)([o.A], () => [o.A.can(x.xBc.MANAGE_ROLES, h), o.A.getGuildVersion(t)]);
+    } = (0, d.NJ)(), h = (0, n.bG)([r.A], () => r.A.getGuild(t)), j = (0, n.bG)([s.Ay], () => s.Ay.getMember(t, l)), I = j?.roles, v = (0, n.yK)([a.A], () => a.A.getManyRoles(t, I ?? []).sort(c.m), [I, t]), [N] = (0, n.yK)([o.A], () => [o.A.can(A.xBc.MANAGE_ROLES, h), o.A.getGuildVersion(t)]);
     if (null == h) return null;
     let y = N && null != j;
     return 0 !== v.length || y ? (0, i.jsx)(m.A, {
         heading: p.intl.string(p.t["LPJmL/"]),
-        scrollTargetId: A.bk.ROLES,
+        scrollTargetId: x.bk.ROLES,
         ...g,
         children: (0, i.jsx)(u.YR, {
             userId: l,

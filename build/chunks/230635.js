@@ -1,6 +1,6 @@
 /** chunk id: 230635 params = (module,exports,require) **/
 l.d(t, {
-    W: () => f
+    W: () => y
 });
 var a = l(627968);
 l(64700);
@@ -32,22 +32,22 @@ function b(e) {
     })
 }
 
-function y(e) {
+function f(e) {
     let {
         user: t,
         guildId: l
     } = e, {
         analyticsLocations: r
-    } = (0, i.Ay)(), s = (0, n.bG)([c.A], () => null != l ? c.A.getGuild(l) : null), p = null != l, y = (0, d.a4)({
+    } = (0, i.Ay)(), s = (0, n.bG)([c.A], () => null != l ? c.A.getGuild(l) : null), p = null != l, f = (0, d.a4)({
         user: t
-    }), f = (0, d.a4)({
+    }), y = (0, d.a4)({
         user: t,
         guildId: l ?? void 0
     }), {
         pendingAvatarDecoration: g
     } = (0, d.CP)(l ?? void 0), v = (0, o.A)((0, d.lw)({
-        userValue: y,
-        guildValue: f,
+        userValue: f,
+        guildValue: y,
         pendingValue: g,
         guildId: l
     })), E = void 0 !== g, _ = () => (0, u.L)({
@@ -65,8 +65,8 @@ function y(e) {
             avatarDecorationOverride: E ? v : void 0
         })
     });
-    let C = p && null != y,
-        S = (E ? null != g : null != f) ? {
+    let C = p && null != f,
+        j = (E ? null != g : null != y) ? {
             onClick: () => (0, m.p)({
                 guildId: l ?? void 0,
                 avatarDecoration: null
@@ -78,7 +78,7 @@ function y(e) {
         variant: "square",
         onClick: _,
         accessibleLabel: x.intl.string(x.t.HykynS),
-        deleteButtonConfig: S,
+        deleteButtonConfig: j,
         children: (0, a.jsx)(b, {
             user: t,
             guildId: l,
@@ -87,11 +87,11 @@ function y(e) {
     })
 }
 
-function f(e) {
+function y(e) {
     let {
         guildId: t
     } = e, l = (0, n.bG)([p.default], () => p.default.getCurrentUser());
-    return null == l ? null : (0, a.jsx)(y, {
+    return null == l ? null : (0, a.jsx)(f, {
         user: l,
         guildId: t
     })

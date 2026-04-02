@@ -13,8 +13,8 @@ var n = t(503698),
     c = t(58149),
     u = t(681819),
     m = t(370480),
-    A = t(169869),
-    x = t(773669),
+    x = t(169869),
+    A = t(773669),
     p = t(307600),
     g = t(652215),
     f = t(783419),
@@ -28,7 +28,7 @@ function I(e) {
             userId: s
         } = e,
         a = t.metadata ?? {},
-        x = (0, m.An)(a[f.pK.CREATED_AT], n),
+        A = (0, m.An)(a[f.pK.CREATED_AT], n),
         I = d.A.get((0, u.ML)(t.type));
     return (0, i.jsxs)("li", {
         className: j.FI,
@@ -84,15 +84,15 @@ function I(e) {
                             color: "currentColor"
                         })]
                     })
-                }), null != x && (0, i.jsx)(o.Text, {
+                }), null != A && (0, i.jsx)(o.Text, {
                     variant: "text-xs/normal",
                     children: h.intl.format(h.t["9rfonh"], {
-                        date: x
+                        date: A
                     })
                 })]
             }), (0, i.jsx)("div", {
                 className: j.yu,
-                children: t.type === g.fg2.REDDIT ? (0, A.xE)(a) : t.type === g.fg2.STEAM ? (0, A.dy)(a) : t.type === g.fg2.BLUESKY || t.type === g.fg2.MASTODON || t.type === g.fg2.TWITTER ? (0, A.ED)(a) : t.type === g.fg2.PAYPAL ? (0, A.gZ)(a) : t.type === g.fg2.EBAY ? (0, A.ub)(a) : t.type === g.fg2.TIKTOK ? (0, A.HU)(a) : null
+                children: t.type === g.fg2.REDDIT ? (0, x.xE)(a) : t.type === g.fg2.STEAM ? (0, x.dy)(a) : t.type === g.fg2.BLUESKY || t.type === g.fg2.MASTODON || t.type === g.fg2.TWITTER ? (0, x.ED)(a) : t.type === g.fg2.PAYPAL ? (0, x.gZ)(a) : t.type === g.fg2.EBAY ? (0, x.ub)(a) : t.type === g.fg2.TIKTOK ? (0, x.HU)(a) : null
             })]
         })]
     })
@@ -103,7 +103,7 @@ function v(e) {
         connections: l,
         userId: t,
         className: n
-    } = e, r = (0, a.bG)([x.default], () => x.default.locale);
+    } = e, r = (0, a.bG)([A.default], () => A.default.locale);
     return 0 === l.length ? null : (0, i.jsx)("ul", {
         className: s()(j.kL, n),
         children: l.map(e => (0, i.jsx)(I, {

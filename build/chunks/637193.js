@@ -9,7 +9,8 @@ let a = t => {
     let {
         analyticsLocations: e,
         guildId: a,
-        initialSelectedNameplate: l
+        initialSelectedNameplate: l,
+        stackingBehavior: s
     } = t;
     (0, r.mMO)(async () => {
         let {
@@ -21,5 +22,7 @@ let a = t => {
             analyticsLocations: e,
             initialSelectedNameplate: l
         })
+    }, {
+        stackingBehavior: s
     })
 }

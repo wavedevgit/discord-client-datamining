@@ -22,7 +22,7 @@ function d(e) {
     return (0, i.jsx)("div", {
         className: s()(c.qk, c.tP),
         children: (0, i.jsx)(l, {
-            color: a.LU0.colors.WHITE,
+            color: a.LU0.colors.ICON_STRONG,
             size: "custom",
             width: 42,
             height: 42

@@ -4,7 +4,7 @@ n.d(t, {
     C5: () => o,
     Sk: () => s,
     yX: () => a,
-    yg: () => c
+    yg: () => u
 }), n(321073);
 var r = n(575593),
     i = n(392107),
@@ -68,7 +68,7 @@ function o(e) {
     return void 0 !== e.pendingNickname && (t.nick = e.pendingNickname ?? ""), void 0 !== e.pendingAvatarDecoration && (t.avatarDecoration = e.pendingAvatarDecoration), void 0 !== e.pendingNameplate && (t.nameplate = e.pendingNameplate), void 0 !== e.pendingDisplayNameStyles && (t.displayNameStyles = e.pendingDisplayNameStyles), t
 }
 
-function c(e) {
+function u(e) {
     let t = {};
     return void 0 !== e.pendingPrimaryGuildId && (t.primaryGuildId = e.pendingPrimaryGuildId), t
 }

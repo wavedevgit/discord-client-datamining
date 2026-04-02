@@ -25,8 +25,8 @@ let x = e => {
             renewalInvoice: p,
             renewalInvoiceDetails: m,
             errorOnCancel: x,
-            errorOnRedeem: y,
-            setActiveStep: f,
+            errorOnRedeem: f,
+            setActiveStep: y,
             activeStep: g
         } = e, {
             analyticsLocations: v
@@ -35,7 +35,7 @@ let x = e => {
             _(b(g))
         }, [g]), (0, a.jsx)(c.CancellationContext.Provider, {
             value: {
-                setStep: f,
+                setStep: y,
                 premiumType: s,
                 onClose: l,
                 transitionState: t,
@@ -58,7 +58,7 @@ let x = e => {
                 }),
                 applyOffer: () => new Promise((e, t) => {
                     setTimeout(() => {
-                        y ? t() : e()
+                        f ? t() : e()
                     }, 1e3)
                 }),
                 pauseDuration: null,

@@ -13,8 +13,8 @@ var n = t(630054),
     c = t(982985),
     u = t(853397),
     m = t(290090),
-    A = t(697250),
-    x = t(102951),
+    x = t(697250),
+    A = t(102951),
     p = t(652215);
 
 function g(e) {
@@ -36,12 +36,12 @@ function g(e) {
         displayProfile: j,
         onClose: v
     }), {
-        gameFriends: T,
-        hasOutgoingPendingGameFriends: C,
+        gameFriends: C,
+        hasOutgoingPendingGameFriends: T,
         hasIncomingPendingGameFriends: _
-    } = (0, x.J)({
+    } = (0, A.J)({
         userId: l.id
-    }), b = T.length > 0 || C || _;
+    }), b = C.length > 0 || T || _;
     return I === p.eA$.BLOCKED ? null : l.id === t.id ? N ? (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(c.e, {
             userId: l.id,
@@ -92,7 +92,7 @@ function g(e) {
             userId: l.id,
             onClose: n.A.popAll,
             autoFocus: !0
-        }), (0, i.jsx)(A.Ef, {
+        }), (0, i.jsx)(x.Ef, {
             user: l,
             relationshipType: I,
             analyticsLocation: y
@@ -108,14 +108,14 @@ function g(e) {
             userId: l.id,
             onClose: n.A.popAll,
             autoFocus: !0
-        }), (0, i.jsx)(A.ES, {
+        }), (0, i.jsx)(x.ES, {
             user: l,
             analyticsLocation: y,
-            gameFriends: T,
+            gameFriends: C,
             tooltipPosition: "top",
             tooltipAlign: "center",
             hasIncomingPendingGameFriends: _,
-            hasOutgoingPendingGameFriends: C
+            hasOutgoingPendingGameFriends: T
         }), (0, i.jsx)(d.A, {
             user: l
         }), (0, i.jsx)(u.Zt, {
@@ -124,7 +124,7 @@ function g(e) {
             viewProfileItem: E
         })]
     }) : (0, i.jsxs)(i.Fragment, {
-        children: [(0, i.jsx)(A.cO, {
+        children: [(0, i.jsx)(x.cO, {
             variant: "primary",
             userId: l.id,
             analyticsLocation: y,

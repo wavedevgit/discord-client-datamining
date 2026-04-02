@@ -6,11 +6,11 @@ l.d(t, {
     LF: () => m,
     NA: () => x,
     Z1: () => h,
-    lz: () => S,
+    lz: () => j,
     mi: () => A,
     t$: () => p,
     yJ: () => C,
-    yi: () => j,
+    yi: () => S,
     z_: () => E
 });
 var a = l(627968),
@@ -133,7 +133,7 @@ function b() {
         })
     })
 }
-let y = [{
+let f = [{
         id: "avatar_decoration",
         label: "Avatar Decoration",
         value: c.e.AVATAR_DECORATION_MODAL_UPSELL
@@ -146,7 +146,7 @@ let y = [{
         label: "Nameplate",
         value: c.e.NAMEPLATE_MODAL_UPSELL
     }],
-    f = {
+    y = {
         [c.e.AVATAR_DECORATION_MODAL_UPSELL]: {
             title: "Express Yourself with Avatar Decorations",
             body: "Stand out with unique avatar decorations exclusive to Nitro subscribers.",
@@ -170,7 +170,7 @@ function g() {
             title: t,
             body: n,
             glowUp: r
-        } = f[e];
+        } = y[e];
         (0, i.mMO)(async () => {
             let {
                 default: i
@@ -193,7 +193,7 @@ function g() {
                 placeholder: "Select type",
                 onSelectionChange: e => t(e),
                 value: e,
-                options: y,
+                options: f,
                 selectionMode: "single",
                 fullWidth: !0
             })
@@ -294,7 +294,7 @@ function C() {
     })
 }
 
-function S() {
+function j() {
     let e = (0, r.bG)([s.default], () => s.default.getCurrentUser()),
         t = n.useCallback(() => {
             null != e && (0, i.mMO)(async () => {
@@ -319,7 +319,7 @@ function S() {
     })
 }
 
-function j() {
+function S() {
     let e = n.useCallback(() => {
         (0, i.mMO)(async () => {
             let {

@@ -1,6 +1,6 @@
 /** chunk id: 722868 params = (module,exports,require) **/
 t.d(l, {
-    A: () => x
+    A: () => A
 });
 var i = t(627968),
     n = t(311907),
@@ -12,13 +12,13 @@ var i = t(627968),
     c = t(591179),
     u = t(657331),
     m = t(950191),
-    A = t(985018);
+    x = t(985018);
 
-function x(e) {
+function A(e) {
     let {
         user: l,
         guildId: t,
-        channelId: x,
+        channelId: A,
         displayProfile: p,
         onClose: g
     } = e, {
@@ -30,9 +30,9 @@ function x(e) {
     } = (0, d.NJ)(), v = (0, m.Ay)(l.id, t), N = (0, n.bG)([r.default], () => r.default.getCurrentUser()?.id === l.id), y = (0, c.X)("useViewUserProfileModalItem");
     return N && y || v?.guildId == null ? null : p?.guildId == null || p?.private ? p?.guildId != null ? null : (0, i.jsx)(s.Drp, {
         id: "view-server-profile",
-        label: A.intl.string(A.t.DisZzB),
-        subtext: A.intl.formatToPlainString(A.t["mn/nW2"], {
-            displayName: o.Ay.getName(t, x, l)
+        label: x.intl.string(x.t.DisZzB),
+        subtext: x.intl.formatToPlainString(x.t["mn/nW2"], {
+            displayName: o.Ay.getName(t, A, l)
         }),
         action: () => {
             g?.(), (0, u.openUserProfileModal)({
@@ -48,8 +48,8 @@ function x(e) {
         }
     }) : (0, i.jsx)(s.Drp, {
         id: "view-main-profile",
-        label: A.intl.string(A.t.GISTta),
-        subtext: A.intl.formatToPlainString(A.t["mn/nW2"], {
+        label: x.intl.string(x.t.GISTta),
+        subtext: x.intl.formatToPlainString(x.t["mn/nW2"], {
             displayName: o.Ay.getName(void 0, void 0, l)
         }),
         action: () => {

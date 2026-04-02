@@ -1,8 +1,8 @@
 /** chunk id: 546136 params = (module,exports,require) **/
 t.d(l, {
-    Ay: () => f,
-    _T: () => p,
-    oA: () => x
+    Ay: () => h,
+    _T: () => g,
+    oA: () => p
 });
 var i = t(627968);
 t(64700);
@@ -11,22 +11,23 @@ var n = t(503698),
     a = t(397927),
     r = t(487233),
     o = t(230635),
-    d = t(642737),
-    c = t(985018),
-    u = t(266603);
-let m = "profile-modal-editing-panel",
+    d = t(473219),
+    c = t(642737),
+    u = t(985018),
+    m = t(266603);
+let x = "profile-modal-editing-panel",
     A = "profile-modal-editing-panel-heading";
 
-function x(e) {
+function p(e) {
     let {
         onClick: l,
         className: t
     } = e;
     return (0, i.jsx)(a.DUT, {
-        "aria-label": c.intl.string(c.t.N8XQDE),
+        "aria-label": u.intl.string(u.t.N8XQDE),
         "aria-expanded": !1,
-        "aria-controls": m,
-        className: s()(u.eg, t),
+        "aria-controls": x,
+        className: s()(m.eg, t),
         onClick: l,
         children: (0, i.jsx)(a.NDp, {
             size: "sm",
@@ -35,7 +36,7 @@ function x(e) {
     })
 }
 
-function p(e) {
+function g(e) {
     let {
         onClick: l,
         className: t
@@ -43,9 +44,9 @@ function p(e) {
     return (0, i.jsx)("div", {
         className: t,
         children: (0, i.jsx)(a.K0, {
-            "aria-label": c.intl.string(c.t.N8XQDE),
+            "aria-label": u.intl.string(u.t.N8XQDE),
             "aria-expanded": !1,
-            "aria-controls": m,
+            "aria-controls": x,
             icon: a.NDp,
             onClick: l,
             variant: "secondary",
@@ -54,15 +55,15 @@ function p(e) {
     })
 }
 
-function g(e) {
+function f(e) {
     let {
         onClick: l
     } = e;
     return (0, i.jsxs)(a.DUT, {
-        className: u.cS,
-        "aria-label": c.intl.string(c.t.X6NklS),
+        className: m.cS,
+        "aria-label": u.intl.string(u.t.X6NklS),
         onClick: l,
-        "aria-controls": m,
+        "aria-controls": x,
         "aria-expanded": !0,
         children: [(0, i.jsx)(a._BQ, {
             size: "md",
@@ -74,46 +75,55 @@ function g(e) {
     })
 }
 
-function f(e) {
+function h(e) {
     let {
         selectedGuildId: l,
         onSelectGuildId: t,
         onClose: n,
-        className: x
+        className: p
     } = e;
     return (0, i.jsxs)("aside", {
-        id: m,
+        id: x,
         "aria-labelledby": A,
-        className: s()(u.nd, x),
+        className: s()(m.nd, p),
         children: [(0, i.jsx)(a.AC4, {
             children: (0, i.jsx)(a.H, {
                 id: A,
-                children: c.intl.string(c.t["L+ch00"])
+                children: u.intl.string(u.t["L+ch00"])
             })
         }), (0, i.jsxs)("div", {
-            className: u.wx,
-            children: [(0, i.jsx)(d.A, {
+            className: m.wx,
+            children: [(0, i.jsx)(c.A, {
                 selectedGuildId: l ?? null,
                 onChange: t
-            }), (0, i.jsx)(g, {
+            }), (0, i.jsx)(f, {
                 onClick: n
             })]
         }), (0, i.jsx)(a.Fmo, {
-            children: (0, i.jsx)(a.HOs, {
-                className: u.XG,
+            children: (0, i.jsxs)(a.HOs, {
+                className: m.XG,
                 fade: !0,
-                children: (0, i.jsxs)("div", {
-                    className: u.Os,
+                children: [(0, i.jsxs)("div", {
+                    className: m.Os,
                     children: [(0, i.jsx)(a.Heading, {
                         variant: "text-sm/medium",
-                        className: u.AM,
-                        children: c.intl.string(c.t.lqaIxI)
+                        className: m.AM,
+                        children: u.intl.string(u.t.x5CoXR)
+                    }), (0, i.jsx)(d.W, {
+                        guildId: l
+                    })]
+                }), (0, i.jsxs)("div", {
+                    className: m.Os,
+                    children: [(0, i.jsx)(a.Heading, {
+                        variant: "text-sm/medium",
+                        className: m.AM,
+                        children: u.intl.string(u.t.lqaIxI)
                     }), (0, i.jsx)(r.m, {
                         guildId: l
                     }), (0, i.jsx)(o.W, {
                         guildId: l
                     })]
-                })
+                })]
             })
         })]
     })

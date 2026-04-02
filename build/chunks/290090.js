@@ -19,16 +19,16 @@ function m(e) {
         ...t
     } = e, {
         analyticsLocations: m,
-        newestAnalyticsLocation: A
-    } = (0, a.Ay)(), x = (0, n.bG)([d.A], () => d.A.hasUnsavedChanges());
+        newestAnalyticsLocation: x
+    } = (0, a.Ay)(), A = (0, n.bG)([d.A], () => d.A.hasUnsavedChanges());
     return (0, i.jsx)(c.q3, {
         action: "VISIT_SHOP",
         icon: s.U1X,
         tooltipText: u.intl.string(u.t.b2d0N0),
         onClick: () => {
-            x ? o.A.notifyUnsavedWidgets() : ((0, r.Cz)({
+            A ? o.A.notifyUnsavedWidgets() : ((0, r.Cz)({
                 analyticsLocations: m,
-                analyticsSource: A
+                analyticsSource: x
             }), l?.())
         },
         ...t

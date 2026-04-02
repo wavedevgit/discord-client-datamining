@@ -1,6 +1,6 @@
 /** chunk id: 347805 params = (module,exports,require) **/
 t.d(l, {
-    A: () => A
+    A: () => x
 });
 var i = t(627968),
     n = t(64700),
@@ -13,16 +13,16 @@ var i = t(627968),
     u = t(985018),
     m = t(828950);
 
-function A(e) {
+function x(e) {
     let {
         autoFocus: l = !1,
         className: t,
-        userId: A,
-        onUpdate: x
+        userId: x,
+        onUpdate: A
     } = e, p = (0, s.bG)([d.A], () => d.A.hidePersonalInformation), {
         loading: g,
         note: f
-    } = (0, o.A)(A), h = n.useRef(null);
+    } = (0, o.A)(x), h = n.useRef(null);
     return (n.useEffect(() => {
         if (!l || p) return;
         let e = h.current;
@@ -37,7 +37,7 @@ function A(e) {
             "aria-label": u.intl.string(u.t.PbMNh2),
             onBlur: e => {
                 let l = e.currentTarget.value;
-                (f ?? "") !== l && (x?.(), r.A.updateNote(A, l))
+                (f ?? "") !== l && (A?.(), r.A.updateNote(x, l))
             },
             onKeyPress: e => {
                 13 === e.which ? e.shiftKey ? (e.currentTarget.value.match(/\n/g) ?? []).length >= 5 && e.preventDefault() : (e.preventDefault(), e.currentTarget.blur()) : e.which === c.Ks6.SPACE && e.stopPropagation()

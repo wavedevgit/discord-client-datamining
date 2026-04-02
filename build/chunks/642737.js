@@ -1,6 +1,6 @@
 /** chunk id: 642737 params = (module,exports,require) **/
 t.d(l, {
-    A: () => x
+    A: () => A
 }), t(667532);
 var i = t(627968),
     n = t(64700),
@@ -12,14 +12,14 @@ var i = t(627968),
     c = t(403362),
     u = t(985018),
     m = t(401736);
-let A = "MAIN_PROFILE";
+let x = "MAIN_PROFILE";
 
-function x(e) {
+function A(e) {
     let {
         selectedGuildId: l,
         onChange: t
-    } = e, x = (0, s.bG)([d.Ay], () => d.Ay.getFlattenedGuildIds()), p = (0, s.bG)([o.A], () => o.A.getGuilds()), g = n.useMemo(() => {
-        let e = x.map(e => {
+    } = e, A = (0, s.bG)([d.Ay], () => d.Ay.getFlattenedGuildIds()), p = (0, s.bG)([o.A], () => o.A.getGuilds()), g = n.useMemo(() => {
+        let e = A.map(e => {
             let l = p[e];
             return null == l ? null : {
                 id: l.id,
@@ -34,24 +34,24 @@ function x(e) {
             }
         }).filter(c.Vq);
         return e.unshift({
-            id: A,
+            id: x,
             label: u.intl.string(u.t["2p07FR"]),
-            value: A,
+            value: x,
             leading: (0, i.jsx)(a.pVd, {
                 size: "sm",
                 color: a.LU0.colors.ICON_DEFAULT,
                 "aria-hidden": !0
             })
         }), e
-    }, [x, p]), f = n.useCallback(e => {
-        t(e === A ? null : e)
+    }, [A, p]), f = n.useCallback(e => {
+        t(e === x ? null : e)
     }, [t]);
     return (0, i.jsx)(a.ZiE, {
         label: u.intl.string(u.t.rki38K),
         hideLabel: !0,
         selectionMode: "single",
         onSelectionChange: f,
-        value: l ?? A,
+        value: l ?? x,
         options: g
     })
 }

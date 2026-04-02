@@ -1,6 +1,6 @@
 /** chunk id: 832696 params = (module,exports,require) **/
 t.d(l, {
-    A: () => A
+    A: () => x
 });
 var i = t(627968),
     n = t(64700),
@@ -13,17 +13,17 @@ var i = t(627968),
     u = t(652215),
     m = t(985018);
 
-function A(e) {
+function x(e) {
     let {
         user: l,
         onClose: t
     } = e, {
-        analyticsLocations: A
-    } = (0, a.Ay)(), x = (0, o.j)("UserProfileGiftButton"), {
+        analyticsLocations: x
+    } = (0, a.Ay)(), A = (0, o.j)("UserProfileGiftButton"), {
         openGiftModal: p
     } = (0, r.$)({
         giftRecipient: l,
-        analyticsLocations: A,
+        analyticsLocations: x,
         analyticsObject: {
             page: u.liQ.USER_PROFILE,
             section: u.JJy.USER_PROFILE,
@@ -34,7 +34,7 @@ function A(e) {
     }), g = n.useCallback(() => {
         p(), t?.()
     }, [p, t]);
-    return x ? (0, i.jsx)(d.q3, {
+    return A ? (0, i.jsx)(d.q3, {
         action: c.pt.GIFT,
         icon: s.okO,
         tooltipText: m.intl.string(m.t.PEjaCx),
