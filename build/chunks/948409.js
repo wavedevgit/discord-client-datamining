@@ -1,6 +1,6 @@
 /** chunk id: 948409 params = (module,exports,require) **/
 l.d(t, {
-    F: () => S
+    F: () => j
 });
 var a = l(627968),
     n = l(64700),
@@ -16,25 +16,25 @@ var a = l(627968),
     h = l(71532),
     x = l(252561),
     b = l(689614),
-    f = l(652215),
-    y = l(818348),
+    y = l(652215),
+    f = l(818348),
     g = l(176959);
 let v = (0, b.R)();
 async function E(e) {
     return (await i.Bo.post({
-        url: f.Rsh.ORDER_SIGN(e),
+        url: y.Rsh.ORDER_SIGN(e),
         rejectWithError: !0
     })).body
 }
 async function _(e) {
     return (await i.Bo.get({
-        url: f.Rsh.ORDER_UPDATE(e),
+        url: y.Rsh.ORDER_UPDATE(e),
         rejectWithError: !0
     })).body
 }
 async function C(e, t) {
     await i.Bo.patch({
-        url: f.Rsh.ORDER_UPDATE(e),
+        url: y.Rsh.ORDER_UPDATE(e),
         body: {
             billing_facet: {
                 payment_source_id: t
@@ -44,8 +44,8 @@ async function C(e, t) {
     })
 }
 
-function j() {
-    let [e, t] = n.useState(!1), [l, i] = n.useState(!1), [c, b] = n.useState(null), [j, S] = n.useState(null), [T, A] = n.useState(v.defaultValue), [P, k] = n.useState(null), I = (0, r.bG)([m.A], () => m.A.paymentSources), R = (0, r.bG)([m.A], () => m.A.hasFetchedPaymentSources), N = (0, r.bG)([m.A], () => m.A.defaultPaymentSourceId);
+function S() {
+    let [e, t] = n.useState(!1), [l, i] = n.useState(!1), [c, b] = n.useState(null), [S, j] = n.useState(null), [T, A] = n.useState(v.defaultValue), [P, k] = n.useState(null), I = (0, r.bG)([m.A], () => m.A.paymentSources), R = (0, r.bG)([m.A], () => m.A.hasFetchedPaymentSources), N = (0, r.bG)([m.A], () => m.A.defaultPaymentSourceId);
     n.useEffect(() => {
         R || (0, u.$o)()
     }, [R]), n.useEffect(() => {
@@ -53,7 +53,7 @@ function j() {
     }, [N, P]);
     let D = n.useRef(null);
     n.useEffect(() => {
-        if (null == j || "" === j) {
+        if (null == S || "" === S) {
             D.current = P;
             return
         }
@@ -62,20 +62,20 @@ function j() {
                 D.current = P;
                 return
             }
-            C(j, P).then(() => {
+            C(S, P).then(() => {
                 b(`Order updated successfully!
-Order ID: ${j}
+Order ID: ${S}
 Payment source changed.`)
             }).catch(e => {
                 let t = e instanceof Error ? e.message : String(e);
                 b(`Failed to update order: ${t}`)
             }), D.current = P
         }
-    }, [j, P]);
+    }, [S, P]);
     let M = n.useMemo(() => Object.values(I).map(e => {
             var t;
             let l, a = (t = e.type, null != (l = p.w[t]) ? l() : String(t));
-            if (e.type === y.he.CARD && "last4" in e) {
+            if (e.type === f.he.CARD && "last4" in e) {
                 let t = e.last4 ?? "",
                     l = e.brand ?? "Unknown";
                 a += ` - ****${t} (${l})`
@@ -88,8 +88,8 @@ Payment source changed.`)
         }), [I]),
         O = async () => {
             if (null == P || "" === P) return void b("Please select a payment source first.");
-            if (null == T || "" === T || T === f.dJq) return void b("Please select a SKU ID.");
-            t(!0), b(null), S(null);
+            if (null == T || "" === T || T === y.dJq) return void b("Please select a SKU ID.");
+            t(!0), b(null), j(null);
             try {
                 let e = await (0, d.Aj)(T, P, "US", !1, {
                     gift_style: null,
@@ -100,7 +100,7 @@ Payment source changed.`)
                     sound_id: void 0,
                     reward_sku_ids: void 0
                 });
-                S(e), b(`Order created successfully! Order ID: ${e}`)
+                j(e), b(`Order created successfully! Order ID: ${e}`)
             } catch (t) {
                 let e = t instanceof Error ? t.message : String(t);
                 b(`Failed to create order: ${e}`)
@@ -108,17 +108,17 @@ Payment source changed.`)
                 t(!1)
             }
         }, L = async () => {
-            if (null == j || "" === j) return void b("No order ID available. Please create an order first.");
+            if (null == S || "" === S) return void b("No order ID available. Please create an order first.");
             i(!0);
             try {
-                let e = await E(j);
+                let e = await E(S);
                 if (null == e.errors) {
-                    b(`Order signed successfully! Order ID: ${j}`), S(null);
+                    b(`Order signed successfully! Order ID: ${S}`), j(null);
                     return
                 }
                 let t = e.errors[0];
                 if (1e3 === t) b(`Order signing in progress!
-Order ID: ${j}
+Order ID: ${S}
 This order requires additional authentication (3DS).`), (async () => {
                     try {
                         let t = e.billing_facet;
@@ -139,12 +139,12 @@ This order requires additional authentication (3DS).`), (async () => {
                         });
                         if (null != i) throw Error(`3DS authentication failed: ${i.message}`);
                         if (null == o) throw Error("No payment intent returned from 3DS authentication");
-                        let s = e.id ?? j ?? "Unknown";
-                        S(null), b(`3DS authentication completed successfully!
+                        let s = e.id ?? S ?? "Unknown";
+                        j(null), b(`3DS authentication completed successfully!
 Order ID: ${s}`)
                     } catch (a) {
                         let t = a instanceof Error ? a.message : String(a),
-                            l = e.id ?? j ?? "Unknown";
+                            l = e.id ?? S ?? "Unknown";
                         b(`Failed to complete 3DS!
 Order ID: ${l}
 Error: ${t}`)
@@ -153,7 +153,7 @@ Error: ${t}`)
                 else if (1001 === t) {
                     let t, l, a, n, r, i, o, s;
                     b(`Order signing in progress!
-Order ID: ${j}
+Order ID: ${S}
 This order requires redirection to complete the payment.
 Polling order status...`), t = e.billing_facet, l = t?.order_signing_deferral_context?.payment_redirect_context, a = l?.redirect_url, null != a && window.open(a), n = Date.now(), r = null, i = () => {
                         let e = Date.now() - n,
@@ -162,7 +162,7 @@ Polling order status...`), t = e.billing_facet, l = t?.order_signing_deferral_co
                             s().catch(e => {
                                 let t = e instanceof Error ? e.message : String(e);
                                 b(`Failed to poll order status!
-Order ID: ${j}
+Order ID: ${S}
 Error: ${t}`)
                             })
                         }, t))
@@ -173,46 +173,46 @@ Error: ${t}`)
                         if (e >= 3e4) {
                             try {
                                 var t;
-                                t = (await _(j)).status, b(`Order signing timed out.
-Order ID: ${j}
+                                t = (await _(S)).status, b(`Order signing timed out.
+Order ID: ${S}
 Status: ${t??"unknown"}
 Please check the order status manually.`), o()
                             } catch (t) {
                                 let e = t instanceof Error ? t.message : String(t);
                                 b(`Order signing timed out.
-Order ID: ${j}
+Order ID: ${S}
 Error: ${e}`), o()
                             }
                             return
                         }
                         try {
-                            let e = (await _(j)).status;
+                            let e = (await _(S)).status;
                             if (2 === e) {
                                 b(`Order signed successfully!
-Order ID: ${j}
-Payment redirect completed.`), S(null), o();
+Order ID: ${S}
+Payment redirect completed.`), j(null), o();
                                 return
                             }
                             if (1 === e) {
                                 b(`Order signed unsuccessfully
-Order ID: ${j}`), o();
+Order ID: ${S}`), o();
                                 return
                             }
                             i()
                         } catch (l) {
                             let t = l instanceof Error ? l.message : String(l);
                             e < 3e4 ? i() : (b(`Order signing timed out.
-Order ID: ${j}
+Order ID: ${S}
 Error: ${t}`), o())
                         }
                     })().catch(e => {
                         let t = e instanceof Error ? e.message : String(e);
                         b(`Failed to start polling order status!
-Order ID: ${j}
+Order ID: ${S}
 Error: ${t}`)
                     })
                 } else b(`Order signing failed
-Order ID: ${j}
+Order ID: ${S}
 Error: ${t}`)
             } catch (t) {
                 let e = t instanceof Error ? t.message : String(t);
@@ -290,13 +290,13 @@ Error: ${t}`)
                     size: "sm",
                     text: e ? "Creating Order..." : "Create Order",
                     onClick: O,
-                    disabled: e || null == P || "" === P || null == T || "" === T || T === f.dJq
+                    disabled: e || null == P || "" === P || null == T || "" === T || T === y.dJq
                 }), (0, a.jsx)(o.$nd, {
                     variant: "secondary",
                     size: "sm",
                     text: l ? "Signing Order..." : "Sign Order",
                     onClick: L,
-                    disabled: l || null == j || "" === j
+                    disabled: l || null == S || "" === S
                 })]
             }), null != c && (0, a.jsx)("div", {
                 className: g.cW,
@@ -312,14 +312,14 @@ Error: ${t}`)
         })]
     })
 }
-let S = {
+let j = {
     name: "Order SKU",
     component: function() {
         return (0, a.jsx)(c.PaymentContextProvider, {
             stepConfigs: [],
             skuIDs: [],
             activeSubscription: null,
-            children: (0, a.jsx)(j, {})
+            children: (0, a.jsx)(S, {})
         })
     },
     id: "order-sku-test",

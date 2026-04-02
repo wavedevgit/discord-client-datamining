@@ -5,9 +5,9 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var s = n(397927),
-    l = n(502060),
-    a = n(772927),
-    r = n(983806),
+    l = n(983806),
+    a = n(804643),
+    r = n(677428),
     o = n(683167),
     d = n(351104),
     c = n(46184),
@@ -15,16 +15,16 @@ var s = n(397927),
     m = n(985018);
 let g = () => (0, i.jsxs)(s.BJc, {
     gap: 32,
-    children: [(0, i.jsx)(r.b, {}), (0, i.jsxs)("div", {
-        children: [(0, i.jsx)(l.A, {
+    children: [(0, i.jsx)(l.b, {}), (0, i.jsxs)("div", {
+        children: [(0, i.jsx)(a.A, {
             title: m.intl.string(m.t.xVRG4P),
             children: (0, i.jsx)(u.f, {})
-        }), (0, i.jsx)(l.A, {
+        }), (0, i.jsx)(a.A, {
             title: m.intl.string(m.t["y62Z/d"]),
-            children: (0, i.jsxs)(a.A, {
+            children: (0, i.jsxs)(r.A, {
                 children: [(0, i.jsx)(o.A, {}), (0, i.jsx)(d.Z, {})]
             })
-        }), (0, i.jsx)(l.A, {
+        }), (0, i.jsx)(a.A, {
             title: m.intl.string(m.t["1Qn8iV"]),
             children: (0, i.jsx)(c.A, {})
         })]

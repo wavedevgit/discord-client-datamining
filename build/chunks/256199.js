@@ -5,7 +5,7 @@ n.d(t, {
 var i = n(627968),
     s = n(419954),
     l = n(780964),
-    a = n(801264),
+    a = n(513089),
     r = n(985018);
 let o = (0, s.E2)(l.X.CLIPS_QUALITY_INFOBOX, {
     useSearchTerms: () => [r.intl.string(r.t["Z+MfqT"])],

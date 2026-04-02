@@ -33,7 +33,7 @@ function p(t) {
                 {
                     let {
                         openUserSettings: t
-                    } = n(840065);
+                    } = n(858897);
                     t(_.X.KEYBINDS_PANEL)
                 }
             }

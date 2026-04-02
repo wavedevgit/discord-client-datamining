@@ -27,6 +27,7 @@ function c(e) {
             variant: "primary",
             onClick: A
         }],
+        alignmentStrategy: "edge",
         align: "top",
         body: o.intl.string(o.t.o4NGXc),
         caretConfig: {

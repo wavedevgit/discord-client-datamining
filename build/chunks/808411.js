@@ -9,14 +9,14 @@ var a = l(627968),
     o = l(914410),
     s = l(252561);
 let u = () => {
-    let [e, t] = n.useState(0), [l, u] = n.useState(4), [d, c] = n.useState(2), [p, m] = n.useState(o.fh.LIGHT), [h, x] = n.useState(o.qP.BLUE), [b, f] = n.useState("darkslategray"), [y, g] = n.useState("blanchedalmond"), [v, E] = n.useState("pink"), [_, C] = n.useState(!0), j = n.useMemo(() => Object.entries(o.fh).map(e => {
+    let [e, t] = n.useState(0), [l, u] = n.useState(4), [d, c] = n.useState(2), [p, m] = n.useState(o.fh.LIGHT), [h, x] = n.useState(o.qP.BLUE), [b, y] = n.useState("darkslategray"), [f, g] = n.useState("blanchedalmond"), [v, E] = n.useState("pink"), [_, C] = n.useState(!0), S = n.useMemo(() => Object.entries(o.fh).map(e => {
         let [t, l] = e;
         return {
             id: l,
             label: t,
             value: l
         }
-    }), []), S = n.useMemo(() => Object.entries(o.qP).map(e => {
+    }), []), j = n.useMemo(() => Object.entries(o.qP).map(e => {
         let [t, l] = e;
         return {
             id: l,
@@ -34,7 +34,7 @@ let u = () => {
             override: {
                 default: {
                     background: b,
-                    gradientStart: y,
+                    gradientStart: f,
                     gradientEnd: v
                 }
             },
@@ -75,7 +75,7 @@ let u = () => {
                     null !== e && x(e)
                 },
                 value: h,
-                options: S,
+                options: j,
                 selectionMode: "single",
                 fullWidth: !0
             })
@@ -88,7 +88,7 @@ let u = () => {
                     null !== e && m(e)
                 },
                 value: p,
-                options: j
+                options: S
             })
         }), (0, a.jsx)(s.MG, {
             children: (0, a.jsx)(i.Checkbox, {
@@ -109,13 +109,13 @@ let u = () => {
             children: (0, a.jsx)(i.ksK, {
                 value: b,
                 onChange: e => {
-                    f(e)
+                    y(e)
                 },
                 label: "Background (optional)"
             })
         }), (0, a.jsx)(s.MG, {
             children: (0, a.jsx)(i.ksK, {
-                value: y,
+                value: f,
                 onChange: e => {
                     g(e)
                 },

@@ -292,6 +292,7 @@ function K(e) {
     r.useLayoutEffect(() => {
         if (E) return;
         if ("number" != typeof C) throw Error("Unexpected null width");
+        if (0 === C) return;
         let e = 0,
             t = 0,
             l = C - 30 - 4;

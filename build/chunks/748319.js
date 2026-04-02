@@ -52,8 +52,8 @@ var a = n(627968),
     Q = n(454719),
     Y = n(342296),
     J = n(780964),
-    X = n(77735),
-    Z = n(840065),
+    X = n(858897),
+    Z = n(533488),
     ee = n(167579),
     et = n(173660),
     en = n(41580),
@@ -267,7 +267,7 @@ class eU extends i.PureComponent {
         (0, N.A)(e, eN.JJy.ACCOUNT_PANEL), (0, O.X)(C.A.ACCOUNT, O.O.DEAFEN, !t)
     };
     handleOpenAccountSettings = () => {
-        this.dismissTooltips(), ec.A.isConnected() ? (0, Z.openUserSettings)(J.X.VOICE_AND_VIDEO_PANEL) : (0, Z.openUserSettings)()
+        this.dismissTooltips(), ec.A.isConnected() ? (0, X.openUserSettings)(J.X.VOICE_AND_VIDEO_PANEL) : (0, X.openUserSettings)()
     };
     handleOpenSettingsContextMenu = e => {
         let {
@@ -293,7 +293,7 @@ class eU extends i.PureComponent {
             return () => {
                 let {
                     enabledInputProfiles: n
-                } = (0, X.d)({
+                } = (0, Z.d)({
                     location: "Account"
                 });
                 return (0, a.jsx)(y.f5, {

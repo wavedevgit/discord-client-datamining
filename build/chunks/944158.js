@@ -8,7 +8,7 @@ var a = n(627968),
     l = n(397927),
     r = n(839214),
     o = n(780964),
-    d = n(840065);
+    d = n(858897);
 let c = (0, r.D)(() => ({
     setting: o.X.ACCOUNT_PANEL
 }));

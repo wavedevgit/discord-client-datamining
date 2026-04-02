@@ -360,7 +360,7 @@ function D(t, e, i) {
                         {
                             let {
                                 openUserSettings: t
-                            } = r(840065);
+                            } = r(858897);
                             t(s.X.KEYBINDS_PANEL)
                         }
                     }

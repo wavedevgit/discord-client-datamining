@@ -5,7 +5,7 @@ n.d(t, {
 var i = n(419954),
     s = n(253932),
     l = n(780964),
-    a = n(840065),
+    a = n(858897),
     r = n(985018);
 let o = (0, i.zD)(l.X.TEXT_TO_SPEECH_COMMAND, {
     useTitle: () => r.intl.string(r.t["btbS+Z"]),

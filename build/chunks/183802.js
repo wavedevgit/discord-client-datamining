@@ -35,8 +35,8 @@ var r, s = n(627968),
     k = n(310962),
     v = n(44724),
     B = n(345938),
-    y = n(533406),
-    j = n(971146),
+    j = n(533406),
+    y = n(971146),
     U = n(665711),
     G = n(366523),
     w = n(300182),
@@ -168,11 +168,12 @@ function tt(t) {
         } = i.useMemo(() => (0, h.Cv)(P, P?.applicationId), [P]),
         tS = (0, _.bG)([p.A], () => null != $ ? p.A.getStorefrontState($)?.activePage ?? 0 : 0),
         tC = i.useMemo(() => {
-            if (P?.tenantMetadata?.socialLayer?.expiresAt == null) return null;
-            let t = d()(),
-                e = Math.max(d()(P.tenantMetadata.socialLayer.expiresAt).diff(t, "days"), 1);
-            return e <= 3 ? z.intl.format(z.t.PWw4Vp, {
-                days: e
+            let t = P?.tenantMetadata?.socialLayer?.expiresAt;
+            if (null == t) return null;
+            let e = d()(),
+                n = Math.max(d()(t).diff(e, "days"), 1);
+            return n <= 3 ? z.intl.format(z.t.PWw4Vp, {
+                days: n
             }) : null
         }, [P?.tenantMetadata?.socialLayer?.expiresAt]),
         tH = (0, h.xf)(P),
@@ -296,7 +297,7 @@ function tt(t) {
                             }),
                             children: [tk && (0, s.jsx)("div", {
                                 className: q.S1,
-                                children: (0, s.jsx)(j.V, {
+                                children: (0, s.jsx)(y.V, {
                                     application: tt,
                                     textColor: "always-white"
                                 })
@@ -345,7 +346,7 @@ function tt(t) {
                                 variant: "primary",
                                 onMouseDown: tM,
                                 onClick: t => {
-                                    t.stopPropagation(), tR(W.bB.BUY_BUTTON), (0, y.a)(P, {
+                                    t.stopPropagation(), tR(W.bB.BUY_BUTTON), (0, j.a)(P, {
                                         isGift: !1
                                     }, {
                                         analyticsLocations: [...tl, f.A.SLAYER_STOREFRONT_CARD_PURCHASE_BUTTON],
@@ -368,7 +369,7 @@ function tt(t) {
                                 })
                             }), (0, s.jsx)(w.A, {
                                 onGift: t => {
-                                    t.stopPropagation(), tR(W.bB.GIFT_BUTTON), (0, y.a)(P, {
+                                    t.stopPropagation(), tR(W.bB.GIFT_BUTTON), (0, j.a)(P, {
                                         isGift: !0
                                     }, {
                                         analyticsLocations: [...tl, f.A.SLAYER_STOREFRONT_CARD_GIFT_BUTTON]

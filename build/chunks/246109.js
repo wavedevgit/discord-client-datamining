@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var s = n(397927),
-    l = n(502060),
-    a = n(983806),
+    l = n(983806),
+    a = n(804643),
     r = n(218359),
     o = n(445343),
     d = n(696616),
@@ -14,8 +14,8 @@ var s = n(397927),
     u = n(985018);
 let m = () => (0, i.jsxs)(s.BJc, {
     gap: 32,
-    children: [(0, i.jsx)(a.b, {}), (0, i.jsx)("div", {
-        children: (0, i.jsxs)(l.A, {
+    children: [(0, i.jsx)(l.b, {}), (0, i.jsx)("div", {
+        children: (0, i.jsxs)(a.A, {
             title: u.intl.string(u.t.SRZyHg),
             children: [(0, i.jsx)(c.A, {}), (0, i.jsx)(d.A, {}), (0, i.jsx)(o.A, {}), (0, i.jsx)(r.A, {})]
         })

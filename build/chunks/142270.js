@@ -17,8 +17,8 @@ var a = l(627968),
     h = l(305003),
     x = l(162097),
     b = l(219980),
-    f = l(652215),
-    y = l(985018),
+    y = l(652215),
+    f = l(985018),
     g = l(717630);
 let v = {
         START: g.Vl,
@@ -30,19 +30,19 @@ let v = {
             ctaText: l,
             ctaOnClick: r,
             analyticsPage: E,
-            linkText: _ = y.intl.string(y.t.XRdyjz),
+            linkText: _ = f.intl.string(f.t.XRdyjz),
             cardAlignment: C = v.START,
-            className: j
+            className: S
         } = e, {
-            balance: S
+            balance: j
         } = (0, m.W)(), T = (0, c.DK)(d.W.NITRO, "BalanceWidgetMenu"), [A, P] = n.useState(h.k.DEFAULT), [k, I] = n.useState(!1), [R, N] = n.useState(!1), D = n.useRef(null);
         (0, s.j)(!k);
         let M = n.useCallback(() => {
                 let e = !k;
                 e && null != E && (0, p.Y)({
                     pageType: E,
-                    sectionType: f.JJy.ORBS_BALANCE_MENU,
-                    ctaObject: f.ZSU.OPEN_ORB_BALANCE_MENU_FROM_PILL
+                    sectionType: y.JJy.ORBS_BALANCE_MENU,
+                    ctaObject: y.ZSU.OPEN_ORB_BALANCE_MENU_FROM_PILL
                 }), P(e ? h.k.SELECTED : h.k.DEFAULT), I(e)
             }, [k, E]),
             O = n.useCallback(() => {
@@ -67,13 +67,13 @@ let v = {
                 }
             }), [k, M, l, r]);
         return (0, a.jsxs)("div", {
-            className: i()(g.kL, j, {
+            className: i()(g.kL, S, {
                 [g.R]: R,
                 [g.RK]: !R
             }),
             children: [(0, a.jsx)(b.J, {
                 pillRef: D,
-                balance: S,
+                balance: j,
                 balanceWidgetMode: A,
                 onMouseDown: e => {
                     e.stopPropagation()

@@ -26,17 +26,17 @@ let p = () => (0, a.jsx)("img", {
             showNotificationBadge: h,
             onClick: x,
             onMouseDown: b,
-            disabled: f,
-            isInModalOverlay: y,
+            disabled: y,
+            isInModalOverlay: f,
             className: g
-        } = e, [v, E] = (0, n.useState)(!1), _ = (0, n.useMemo)(() => m === s.k.SELECTED ? c.wH : v ? c.mr : c.Ay, [m, v]), [C, j] = (0, n.useState)(!1), [S, T] = (0, n.useState)(!1), [A, P] = (0, n.useState)(2700), k = null === r;
+        } = e, [v, E] = (0, n.useState)(!1), _ = (0, n.useMemo)(() => m === s.k.SELECTED ? c.wH : v ? c.mr : c.Ay, [m, v]), [C, S] = (0, n.useState)(!1), [j, T] = (0, n.useState)(!1), [A, P] = (0, n.useState)(2700), k = null === r;
         (0, n.useEffect)(() => {
-            k && !C && (j(!0), setTimeout(() => {
+            k && !C && (S(!0), setTimeout(() => {
                 T(!0)
             }, 500))
-        }, [k, j, C]), (0, n.useEffect)(() => {
-            S && !k && j(!1)
-        }, [k, S]);
+        }, [k, S, C]), (0, n.useEffect)(() => {
+            j && !k && S(!1)
+        }, [k, j]);
         let I = k || C,
             R = C ? null : r,
             [N, D] = (0, n.useState)(null),
@@ -51,18 +51,18 @@ let p = () => (0, a.jsx)("img", {
         return (0, a.jsx)(o.DUT, {
             onClick: I ? void 0 : x,
             className: i()(c.vk, {
-                [c.r9]: f
+                [c.r9]: y
             }),
             id: l ?? "balance-widget-pill",
             children: (0, a.jsxs)("span", {
                 onMouseDown: b,
-                onMouseEnter: f ? void 0 : () => E(!0),
-                onMouseLeave: f ? void 0 : () => E(!1),
+                onMouseEnter: y ? void 0 : () => E(!0),
+                onMouseLeave: y ? void 0 : () => E(!1),
                 ref: t,
                 className: i()(c.kL, _, g, {
                     [c.En]: I,
-                    [c.dA]: y,
-                    [c.r9]: f
+                    [c.dA]: f,
+                    [c.r9]: y
                 }),
                 children: [(0, a.jsx)("div", {
                     className: i()(c.hr, I ? c.nr : void 0),

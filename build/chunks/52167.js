@@ -92,7 +92,7 @@ let U = (e, t, n) => (0, s.Mw)(e) ? t : n,
                         {
                             let {
                                 openUserSettings: t
-                            } = n(840065);
+                            } = n(858897);
                             a.A.setState({
                                 scrollPosition: g._F.TRY_IT_OUT
                             }), t(o.X.PROFILE_PANEL, {

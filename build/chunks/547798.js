@@ -19,8 +19,8 @@ var a = n(627968),
     _ = n(349435),
     f = n(674272),
     v = n(253932),
-    b = n(559248),
-    j = n(179690),
+    b = n(407186),
+    j = n(543924),
     A = n(309010),
     C = n(837921),
     y = n(652215),
@@ -39,7 +39,7 @@ function O() {
     return t ? {} : (0, a.jsxs)(c.HOs, {
         children: [(0, a.jsx)("div", {
             className: l()(T.N, N.SX),
-            children: (0, a.jsx)(b.M, {})
+            children: (0, a.jsx)(j.M, {})
         }), (0, a.jsx)("div", {
             className: l()(T.N, N.QB),
             children: (0, a.jsx)(c.Button, {
@@ -161,7 +161,7 @@ function O() {
                 variant: "primary",
                 size: "sm",
                 text: "Show TOTP Success",
-                onClick: () => (0, j.sy)(!0)
+                onClick: () => (0, b.sy)(!0)
             }), (0, a.jsx)(c.Button, {
                 variant: "primary",
                 size: "sm",

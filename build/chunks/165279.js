@@ -4,7 +4,7 @@ n.d(t, {
 });
 var i = n(419954),
     s = n(780964),
-    l = n(840065),
+    l = n(858897),
     a = n(985018);
 let r = (0, i.v_)(s.X.DATA_USAGE_DISCLAIMER_SETTING, {
     useTitle: () => a.intl.string(a.t.D60Gfj),

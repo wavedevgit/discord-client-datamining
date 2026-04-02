@@ -1,16 +1,16 @@
 /** chunk id: 362205 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => S
+    A: () => b
 });
 var r = n(627968),
     i = n(64700),
-    a = n(503698),
-    l = n.n(a),
+    l = n(503698),
+    a = n.n(l),
     s = n(284009),
     o = n.n(s),
-    c = n(687498),
-    u = n(942381),
+    u = n(687498),
+    c = n(942381),
     d = n(837381),
     h = n(319354),
     f = n(397927),
@@ -24,38 +24,38 @@ var r = n(627968),
     E = n(890690),
     A = n(422419);
 
-function b(e) {
+function S(e) {
     let {
         category: t,
         onClick: n,
         active: i,
-        dismissibleBadge: a
+        dismissibleBadge: l
     } = e, {
         useTitle: s,
-        useSubnavLabel: c,
-        key: u
-    } = t, h = s?.(), m = c?.() ?? h;
+        useSubnavLabel: u,
+        key: c
+    } = t, h = s?.(), m = u?.() ?? h;
     return o()(null != m, "[SettingsSubnavigationCategory] Category must have a title"), (0, r.jsx)(d.tG, {
-        id: u,
+        id: c,
         children: e => (0, r.jsxs)(f.DUT, {
             onClick: n,
-            className: l()(A.AS, {
+            className: a()(A.AS, {
                 [A.vu]: i
             }),
             ...e,
-            children: [m, null != a && !i && (0, r.jsx)(g.A, {
-                badge: a
+            children: [m, null != l && !i && (0, r.jsx)(g.A, {
+                badge: l
             })]
-        }, u)
+        }, c)
     })
 }
 
-function S(e) {
+function b(e) {
     let {
         categories: t,
         visibleContent: n,
-        dismissibleBadges: a
-    } = e, [l, s] = i.useState(() => {
+        dismissibleBadges: l
+    } = e, [a, s] = i.useState(() => {
         let e = _.A.getField("currentCategoryKey"),
             n = t.find(t => t.key === e);
         return n?.key ?? t[0].key
@@ -69,22 +69,22 @@ function S(e) {
         let n = t.find(t => t.key === e);
         null != n && s(n.key)
     }, {
-        equalityFn: u.x
+        equalityFn: c.x
     }), [t]);
-    let o = i.useMemo(() => Math.max(t.findIndex(e => e.key === l), 0), [t, l]),
+    let o = i.useMemo(() => Math.max(t.findIndex(e => e.key === a), 0), [t, a]),
         {
             thumbRef: d,
             trackRef: g,
-            thumbAnchorRef: S,
+            thumbAnchorRef: b,
             springs: N
         } = function(e) {
             let t = p.Xi.useSetting(),
                 n = i.useRef(null),
                 r = i.useRef(null),
-                a = i.useRef(null),
-                l = i.useRef(!0),
+                l = i.useRef(null),
+                a = i.useRef(!0),
                 s = i.useRef(t),
-                [o, c] = (0, f.zhh)(() => ({
+                [o, u] = (0, f.zhh)(() => ({
                     y: 0,
                     height: 0,
                     config: {
@@ -96,23 +96,23 @@ function S(e) {
             return i.useLayoutEffect(() => {
                 let e = s.current !== t,
                     i = () => {
-                        if (null == n.current || null == r.current || null == a.current) return;
-                        let [i, u] = [n.current.getBoundingClientRect(), a.current.getBoundingClientRect()], d = i.width / 2, h = (u.y - i.y) / d, f = u.height / d;
-                        l.current || e || m.A.useReducedMotion ? (o.y.set(h), o.height.set(f)) : c({
+                        if (null == n.current || null == r.current || null == l.current) return;
+                        let [i, c] = [n.current.getBoundingClientRect(), l.current.getBoundingClientRect()], d = i.width / 2, h = (c.y - i.y) / d, f = c.height / d;
+                        a.current || e || m.A.useReducedMotion ? (o.y.set(h), o.height.set(f)) : u({
                             y: h,
                             height: f
-                        }), l.current = !1, s.current = t
+                        }), a.current = !1, s.current = t
                     },
-                    u = null;
-                return e ? u = requestAnimationFrame(() => {
-                    u = null, i()
+                    c = null;
+                return e ? c = requestAnimationFrame(() => {
+                    c = null, i()
                 }) : i(), () => {
-                    null != u && cancelAnimationFrame(u)
+                    null != c && cancelAnimationFrame(c)
                 }
-            }, [e, c, o.y, o.height, t]), {
+            }, [e, u, o.y, o.height, t]), {
                 thumbRef: r,
                 trackRef: n,
-                thumbAnchorRef: a,
+                thumbAnchorRef: l,
                 springs: o
             }
         }(o);
@@ -129,7 +129,7 @@ function S(e) {
             className: A.u4,
             "aria-hidden": "true",
             ref: g,
-            children: (0, r.jsx)(c.animated.div, {
+            children: (0, r.jsx)(u.animated.div, {
                 className: A.FF,
                 style: N,
                 ref: d
@@ -137,17 +137,17 @@ function S(e) {
         }), (0, r.jsx)("div", {
             className: A.gu,
             "aria-hidden": "true",
-            ref: S
+            ref: b
         }), t.map(e => {
-            let t = (0, y.H)(e.key, n, a);
-            return (0, r.jsx)(b, {
+            let t = (0, y.H)(e.key, n, l);
+            return (0, r.jsx)(S, {
                 onClick: () => {
                     var t;
                     return t = e.key, void v.A.navigate(t, {
                         showNavigationMobile: !1
                     })
                 },
-                active: e.key === l,
+                active: e.key === a,
                 category: e,
                 dismissibleBadge: t
             }, e.key)

@@ -16,8 +16,8 @@ var a = l(627968),
     h = l(652215),
     x = l(788868),
     b = l(985018),
-    f = l(681588);
-let y = [{
+    y = l(681588);
+let f = [{
         key: i.pn.REVIEW,
         renderStep: e => (0, a.jsx)(u._, {
             ...e
@@ -102,9 +102,9 @@ let y = [{
                     applicationId: h.FYj
                 }), v = d.Ay.isPremiumSku(t);
                 return x || null == b || v ? (0, a.jsx)(p.k, {}) : (0, a.jsxs)("div", {
-                    className: f.Cd,
+                    className: y.Cd,
                     children: [(0, a.jsx)(c.dL, {
-                        stepConfigs: y,
+                        stepConfigs: f,
                         analyticsLocations: r,
                         applicationId: h.FYj,
                         initialPlanId: void 0,
@@ -154,20 +154,20 @@ let y = [{
                     skuId: t,
                     isGift: l,
                     applicationId: x.tv
-                }), v = d.Ay.isPremiumSku(t), E = v ? x.zE[t] : void 0, [_, C] = n.useState(E), j = n.useRef(!1);
+                }), v = d.Ay.isPremiumSku(t), E = v ? x.zE[t] : void 0, [_, C] = n.useState(E), S = n.useRef(!1);
                 n.useEffect(() => {
-                    j.current || null == E || (j.current = !0, C(E))
+                    S.current || null == E || (S.current = !0, C(E))
                 }, [E, _]);
                 let {
-                    isLoadedForPremiumSKUs: S,
+                    isLoadedForPremiumSKUs: j,
                     selectedPlan: T
                 } = (0, c.n1)({
                     subscriptionPlanId: _
                 });
-                return !m && null != b && S && v && null != T ? (0, a.jsxs)("div", {
-                    className: f.Cd,
+                return !m && null != b && j && v && null != T ? (0, a.jsxs)("div", {
+                    className: y.Cd,
                     children: [(0, a.jsx)(c.dL, {
-                        stepConfigs: y,
+                        stepConfigs: f,
                         analyticsLocations: i,
                         applicationId: x.tv,
                         initialPlanId: E,

@@ -39,8 +39,7 @@ let A = {
             title: g.default.ogcfac,
             titleParams: {
                 discountPercent: u.K2
-            },
-            body: g.default.Yl5ww1
+            }
         }
     },
     h = {
@@ -61,7 +60,7 @@ let A = {
             id: e.id,
             partnerId: e.partnerId ?? "",
             title: null != n ? _.intl.formatToPlainString(n.title, n.titleParams ?? {}) : "",
-            body: null != n ? _.intl.formatToPlainString(n.body, n.bodyParams ?? {}) : "",
+            body: null != n && null != n.body ? _.intl.formatToPlainString(n.body, n.bodyParams ?? {}) : "",
             startDate: e.startDate,
             endDate: e.endDate,
             redemptionURL: e.outboundRedemptionPageLink,

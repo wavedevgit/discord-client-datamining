@@ -27,7 +27,7 @@ var i = n(627968),
     N = n(462463),
     v = n(780964),
     I = n(358776),
-    j = n(840065),
+    j = n(858897),
     y = n(166403),
     O = n(730784),
     R = n(398523),
@@ -162,7 +162,7 @@ function ei() {
                 title: Y.intl.string(F.default.OlObRa),
                 description: Y.intl.format(F.default["/UNTlE"], {
                     discountPercent: P.aW,
-                    termsUrl: "https://logitech.com"
+                    termsUrl: "https://www.logitech.com/terms"
                 }),
                 subscriptionRequired: !0,
                 progress: ef.getDate() / eS,

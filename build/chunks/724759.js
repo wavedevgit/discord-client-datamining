@@ -3,7 +3,7 @@ n.d(t, {
     B: () => l
 });
 let i = (0, n(945810).mj)({
-    name: "2025-12-social-layer-storefront-vc-gifting-panel",
+    name: "2026-04-social-layer-storefront-vc-gifting-panel",
     kind: "user",
     defaultConfig: {
         enabled: !1

@@ -19,7 +19,7 @@ var a, n, i, s = r(627968),
     b = r(462463),
     g = r(780964),
     x = r(358776),
-    C = r(840065),
+    C = r(858897),
     A = r(676279),
     R = r(975571),
     v = r(852218),
@@ -227,7 +227,7 @@ let e_ = () => {
                     let t = (0, x.Ci)("openClientThemes"),
                         {
                             openUserSettings: a
-                        } = r(840065);
+                        } = r(858897);
                     a(t ? g.X.DISPLAY_THEME_CATEGORY : g.X.APPEARANCE_PANEL, {
                         analyticsLocations: e
                     })

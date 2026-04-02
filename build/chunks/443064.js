@@ -35,8 +35,8 @@ var i = n(627968),
     L = n(837921),
     D = n(253932),
     G = n(780964),
-    M = n(192501),
-    k = n(840065),
+    M = n(858897),
+    k = n(980429),
     U = n(652215),
     w = n(53516),
     V = n(985018),
@@ -49,7 +49,7 @@ function z(e) {
     return s.useCallback(() => {
         t ? (0, v.openUserProfileModal)({
             userId: e
-        }) : (0, k.openUserSettings)(G.X.PROFILE_PANEL)
+        }) : (0, M.openUserSettings)(G.X.PROFILE_PANEL)
     }, [t, e])
 }
 
@@ -227,7 +227,7 @@ function W(e) {
                 buttonAriaLabel: V.intl.string(V.t["8peUT0"]),
                 valueMessage: (0, i.jsx)(K, {
                     text: e,
-                    censor: M.B,
+                    censor: k.B,
                     revealLabel: V.intl.string(V.t["Zvx+yV"]),
                     hideLabel: V.intl.string(V.t.nqTD4d)
                 }),
@@ -291,7 +291,7 @@ function Z(e) {
     } = l, d = null != r;
     return t = d ? (0, i.jsx)(K, {
         text: r,
-        censor: M.D,
+        censor: k.D,
         revealLabel: V.intl.string(V.t.eY3xlT),
         hideLabel: V.intl.string(V.t["jllbv+"])
     }) : V.intl.string(V.t.I5kDqj), (0, i.jsxs)("div", {

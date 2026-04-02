@@ -16,8 +16,8 @@ var a = l(627968),
     h = l(785205),
     x = l(652215),
     b = l(245260),
-    f = l(681588);
-let y = new d.A("PaymentElement.web.stories"),
+    y = l(681588);
+let f = new d.A("PaymentElement.web.stories"),
     g = () => {
         let {
             elementsAppearanceOptions: e
@@ -25,7 +25,7 @@ let y = new d.A("PaymentElement.web.stories"),
         return (0, a.jsxs)("div", {
             children: [(0, a.jsx)(o.Heading, {
                 variant: "heading-lg/semibold",
-                className: f.tm,
+                className: y.tm,
                 children: "Default Options"
             }), (0, a.jsx)("div", {
                 children: Object.entries(e).map(e => {
@@ -54,17 +54,17 @@ let y = new d.A("PaymentElement.web.stories"),
             handleStepChange: x.tEg,
             onBillingAddressChange: x.tEg,
             paymentElementsEnabled: !0,
-            logger: y,
+            logger: f,
             shouldLogOnChangeEvents: !0,
             continueSessionToInitialStep: void 0
         }), {
-            elementsOptions: j,
-            isLoading: S,
+            elementsOptions: S,
+            isLoading: j,
             setupError: T,
             customPaymentMethodIdsToSourceTypes: A
         } = (0, s.p)({
             onSetupError: e => {
-                y.info("Stripe Payment Element options setup error: ", e)
+                f.info("Stripe Payment Element options setup error: ", e)
             },
             elementsAppearanceOptions: {
                 theme: t,
@@ -74,7 +74,7 @@ let y = new d.A("PaymentElement.web.stories"),
                 tabBackgroundColor: m
             }
         });
-        return S || null != T || null == E ? (0, a.jsx)(u.eR, {}) : (0, a.jsxs)("div", {
+        return j || null != T || null == E ? (0, a.jsx)(u.eR, {}) : (0, a.jsxs)("div", {
             children: [(0, a.jsx)("div", {
                 style: {
                     marginBottom: 16
@@ -101,10 +101,10 @@ let y = new d.A("PaymentElement.web.stories"),
                         children: (0, a.jsxs)(n.Elements, {
                             stripe: E,
                             options: {
-                                ...j
+                                ...S
                             },
                             children: ["stripe-address-element" === v ? (0, a.jsx)("div", {
-                                className: f.R,
+                                className: y.R,
                                 children: (0, a.jsx)(u.Wf, {
                                     ..._,
                                     customPaymentMethodIdsToSourceTypes: A,

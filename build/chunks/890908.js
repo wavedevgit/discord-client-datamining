@@ -3,9 +3,9 @@ l.r(t), l.d(t, {
     RevenuePlaygroundCollectionId: () => _,
     identityCollection: () => A,
     nitroCollection: () => T,
-    paymentsCollection: () => j,
+    paymentsCollection: () => S,
     playgroundConfig: () => P,
-    virtualCurrencyCollection: () => S
+    virtualCurrencyCollection: () => j
 });
 var a, n = l(397927),
     r = l(777595),
@@ -20,24 +20,24 @@ var a, n = l(397927),
     h = l(526838),
     x = l(886532),
     b = l(358172),
-    f = l(931433),
-    y = l(391622),
+    y = l(931433),
+    f = l(391622),
     g = l(203484),
     v = l(445736),
     E = l(504312),
     _ = ((a = {}).PAYMENTS = "payments", a.VIRTUAL_CURRENCY = "virtual-currency", a.NITRO = "nitro", a.IDENTITY = "identity", a);
 let C = ["Revenue Storybook", "Revenue Playground"],
-    j = {
+    S = {
         id: "payments",
         name: "Payments",
         groups: [s._, E.Y, p.U, v.Wo, r.v, u.Gu, g.O],
         tags: C,
         IconComponent: n.d2Y
     },
-    S = {
+    j = {
         id: "virtual-currency",
         name: "Virtual Currency",
-        groups: [o.h2, i.c$, f.V, y.e],
+        groups: [o.h2, i.c$, y.V, f.e],
         tags: C,
         IconComponent: n.Cp8
     },
@@ -57,5 +57,5 @@ let C = ["Revenue Storybook", "Revenue Playground"],
     },
     P = {
         playgroundBaseUrl: "revenue",
-        collections: [j, S, T, A]
+        collections: [S, j, T, A]
     }

@@ -62,13 +62,13 @@ let p = {
             badgeId: h,
             showProgress: x,
             progressCircleText: b,
-            progressCirclePercent: f,
-            progressCircleUrgency: y,
+            progressCirclePercent: y,
+            progressCircleUrgency: f,
             delay: g,
             size: v,
             gradientColor: E,
             estimatedTooltipHeight: _
-        } = e, C = n.useRef(null), j = n.useRef(null), S = n.useMemo(() => ({
+        } = e, C = n.useRef(null), S = n.useRef(null), j = n.useMemo(() => ({
             bronze: d.Ac.PREMIUM_TENURE_1_MONTH,
             silver: d.Ac.PREMIUM_TENURE_3_MONTH,
             gold: d.Ac.PREMIUM_TENURE_6_MONTH,
@@ -77,16 +77,16 @@ let p = {
             emerald: d.Ac.PREMIUM_TENURE_36_MONTH,
             ruby: d.Ac.PREMIUM_TENURE_60_MONTH,
             opal: d.Ac.PREMIUM_TENURE_72_MONTH
-        })[h], [h]), T = null != S ? (0, u.I)(S).standard : null, A = n.useMemo(() => {
-            if (null == S) return "";
-            let e = d.VD[S];
+        })[h], [h]), T = null != j ? (0, u.I)(j).standard : null, A = n.useMemo(() => {
+            if (null == j) return "";
+            let e = d.VD[j];
             return (c.intl.string(c.t.lG6a5x) + " " + c.intl.string(e.nameUnformatted)).toLocaleUpperCase()
-        }, [S]), P = n.useMemo(() => {
+        }, [j]), P = n.useMemo(() => {
             if (!r || null == T) return;
             let e = x ? {
                 progressCircleText: b,
-                progressCirclePercent: f,
-                progressCircleUrgency: y
+                progressCirclePercent: y,
+                progressCircleUrgency: f
             } : {};
             return {
                 type: "dynamic",
@@ -98,7 +98,7 @@ let p = {
                     ...e
                 }
             }
-        }, [r, T, A, x, b, f, y]), k = {
+        }, [r, T, A, x, b, y, f]), k = {
             title: t,
             body: l,
             graphic: P,
@@ -136,10 +136,10 @@ let p = {
                         text: "Left"
                     })
                 }), (0, a.jsx)(s.L, {
-                    targetElementRef: j,
+                    targetElementRef: S,
                     ...k,
                     children: (0, a.jsx)(o.Button, {
-                        buttonRef: j,
+                        buttonRef: S,
                         variant: "primary",
                         text: "Right"
                     })

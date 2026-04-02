@@ -177,7 +177,8 @@ let V = function() {
         {
             onTabsAvailableWidthChange: ed,
             onCollapsedSearchBarClick: eu,
-            onSearchBarBlur: em
+            onSearchBarBlur: em,
+            tabsClassName: eh
         } = (0, u.p)({
             isSearchBarVisible: !0,
             isSearchBarEmpty: "" === el.trim(),
@@ -186,17 +187,17 @@ let V = function() {
                 searchBarState: e
             })
         }),
-        eh = i.useCallback(e => {
+        ep = i.useCallback(e => {
             Q(e), ei && er(), l()
         }, [ei, er, Q, l]),
-        ep = i.useCallback(e => (0, T.YR)({
+        e_ = i.useCallback(e => (0, T.YR)({
             applicationId: e
         }), []),
-        e_ = en || ei,
-        eg = i.useCallback(() => {
+        eg = en || ei,
+        ex = i.useCallback(() => {
             null != (0, y.Bn)() ? (0, g.aX)() : (0, T.eM)()
         }, []),
-        ex = i.useMemo(() => (0, r.debounce)(e => {
+        eA = i.useMemo(() => (0, r.debounce)(e => {
             let {
                 scrollTop: t,
                 offsetHeight: a,
@@ -208,14 +209,14 @@ let V = function() {
                 current_page: i
             })
         }, 200), []),
-        eA = i.useCallback((e, a) => {
-            t(e), ex({
+        ef = i.useCallback((e, a) => {
+            t(e), eA({
                 scrollTop: e.currentTarget.scrollTop,
                 offsetHeight: e.currentTarget.offsetHeight,
                 scrollHeight: e.currentTarget.scrollHeight,
                 location: a
             })
-        }, [ex, t]);
+        }, [eA, t]);
     return (0, n.jsxs)("div", {
         className: s()(U.nw, {
             [U.Yz]: e
@@ -223,17 +224,17 @@ let V = function() {
         children: [e ? (0, n.jsx)(H, {}) : null, (0, n.jsxs)("div", {
             className: U.WH,
             children: [(0, n.jsxs)(m.Ay, {
-                variant: e_ ? m.Z5.RELATIVE : m.Z5.OVERLAY,
-                children: [!e_ && (0, n.jsx)(m.ns, {
+                variant: eg ? m.Z5.RELATIVE : m.Z5.OVERLAY,
+                children: [!eg && (0, n.jsx)(m.ns, {
                     scrollPosition: a
                 }), en ? (0, n.jsx)(w, {
                     applicationId: B,
                     hideDetailHeaderButtons: J,
-                    onClickBack: eg
+                    onClickBack: ex
                 }) : (0, n.jsxs)(n.Fragment, {
                     children: [ei ? (0, n.jsx)(m.XQ, {
                         icon: c.Zge,
-                        onClick: eg
+                        onClick: ex
                     }) : (0, n.jsx)(m.T4, {
                         icon: c.k9F
                     }), ei ? (0, n.jsx)(c.Heading, {
@@ -246,9 +247,10 @@ let V = function() {
                             categoryName: K?.name ?? M.intl.string(M.t.E407b7)
                         })
                     }) : (0, n.jsx)(h.A, {
+                        className: eh,
                         tabs: Z,
                         selectedTab: $,
-                        onTabSelect: eh,
+                        onTabSelect: ep,
                         onAvailableWidthChange: ed
                     }), (0, n.jsx)(p.A, {
                         query: el,
@@ -262,21 +264,21 @@ let V = function() {
                     })]
                 })]
             }), en ? (0, n.jsx)(P.A, {
-                onScroll: e => eA(e, y.ev.APPLICATION),
-                onSelectApplication: ep,
+                onScroll: e => ef(e, y.ev.APPLICATION),
+                onSelectApplication: e_,
                 applicationId: B,
                 initialTab: F,
                 onButtonsVisibilityChange: q
             }) : ei ? (0, n.jsx)(O.A, {
-                onSelectApplication: ep,
-                onScroll: e => eA(e, y.ev.SEARCH)
+                onSelectApplication: e_,
+                onScroll: e => ef(e, y.ev.SEARCH)
             }) : $ === k.GLOBAL_DISCOVERY_APPS_FEATURED_CATEGORY_ID.toString() ? (0, n.jsx)(D.A, {
-                onScroll: e => eA(e, y.ev.HOME),
-                onSelectApplication: ep
+                onScroll: e => ef(e, y.ev.HOME),
+                onSelectApplication: e_
             }) : (0, n.jsx)(R.A, {
                 tabId: Number($),
-                onScroll: e => eA(e, y.ev.CATEGORY),
-                onSelectApplication: ep
+                onScroll: e => ef(e, y.ev.CATEGORY),
+                onSelectApplication: e_
             })]
         })]
     })

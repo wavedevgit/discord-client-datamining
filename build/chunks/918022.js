@@ -26,7 +26,7 @@ function i(e) {
     } : {
         dropdownPaymentSources: t,
         giftCardWallet: null
-    }, [t, u]), [p, m] = a.useState(void 0), [h, x] = a.useState(void 0), b = a.useMemo(() => void 0 !== p ? p : null != c && (null == s || s === c.id), [p, s, c]), f = a.useMemo(() => {
+    }, [t, u]), [p, m] = a.useState(void 0), [h, x] = a.useState(void 0), b = a.useMemo(() => void 0 !== p ? p : null != c && (null == s || s === c.id), [p, s, c]), y = a.useMemo(() => {
         if (void 0 !== h) return h;
         if (0 === d.length) return null;
         let e = d.find(e => e.enabled)?.id ?? null;
@@ -35,13 +35,13 @@ function i(e) {
             if (null != e && e.enabled) return s
         }
         return e
-    }, [h, d, s]), y = a.useMemo(() => null != c && b ? c.id : f ?? null, [c, b, f]);
+    }, [h, d, s]), f = a.useMemo(() => null != c && b ? c.id : y ?? null, [c, b, y]);
     return a.useEffect(() => {
-        o && 0 !== t.length && l(y)
-    }, [o, t, l, y]), {
+        o && 0 !== t.length && l(f)
+    }, [o, t, l, f]), {
         giftCardsEnabled: u,
         dropdownPaymentSources: d,
-        dropdownPaymentSourceId: f,
+        dropdownPaymentSourceId: y,
         giftCardWallet: c,
         isGiftCardCreditsChecked: b,
         handleGiftCardCreditsToggle: a.useCallback(e => {

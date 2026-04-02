@@ -1,22 +1,23 @@
 /** chunk id: 383329 params = (module,exports,require) **/
+"use strict";
 n.d(t, {
     R: () => u
 });
 var i = n(64700),
-    a = n(735438),
-    l = n.n(a),
-    s = n(311907),
-    r = n(735321),
-    o = n(760751),
+    r = n(735438),
+    a = n.n(r),
+    l = n(311907),
+    o = n(735321),
+    s = n(760751),
     c = n(282435);
 
-function d(e) {
+function _(e) {
     return c.Bf.get(e) ?? 0
 }
 
 function u() {
-    let e = (0, s.bG)([o.A], () => o.A.games),
-        t = i.useMemo(() => l()(e).filter(e => (0, r.XX)(e)).map(e => ({
+    let e = (0, l.bG)([s.A], () => s.A.games),
+        t = i.useMemo(() => a()(e).filter(e => (0, o.XX)(e)).map(e => ({
             id: e.id,
             value: e.id,
             label: e.name
@@ -24,9 +25,9 @@ function u() {
             let {
                 value: t
             } = e;
-            return d(t)
+            return _(t)
         }).reverse().value(), [e]),
-        n = i.useCallback((e, t) => d(t.item.value) - d(e.item.value), []);
+        n = i.useCallback((e, t) => _(t.item.value) - _(e.item.value), []);
     return {
         options: t,
         matchSorterOptions: i.useMemo(() => ({

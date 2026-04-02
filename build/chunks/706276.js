@@ -15,10 +15,10 @@ var a = l(627968),
     m = l(788868),
     h = l(818348);
 let x = () => {
-        let [e, t] = n.useState(m.PremiumTypes.TIER_0), [l, x] = n.useState(o.g.WHAT_YOU_LOSE), [f, y] = n.useState(null), [g, v] = n.useState(m.gD.PREMIUM_MONTH_TIER_0), [E, _] = n.useState([]), [C, j] = n.useState(() => {
+        let [e, t] = n.useState(m.PremiumTypes.TIER_0), [l, x] = n.useState(o.g.WHAT_YOU_LOSE), [y, f] = n.useState(null), [g, v] = n.useState(m.gD.PREMIUM_MONTH_TIER_0), [E, _] = n.useState([]), [C, S] = n.useState(() => {
             let e = new Date;
             return e.setMonth(e.getMonth() + 1), e
-        }), [S, T] = n.useState(null), [A, P] = n.useState(!1), [k, I] = n.useState(!1), [R, N] = n.useState(!1);
+        }), [j, T] = n.useState(null), [A, P] = n.useState(!1), [k, I] = n.useState(!1), [R, N] = n.useState(!1);
         (0, n.useEffect)(() => {
             (0, i.zS)()
         }, []), (0, n.useEffect)(() => {
@@ -34,7 +34,7 @@ let x = () => {
                 case m.gD.PREMIUM_YEAR_TIER_2:
                     e.setFullYear(e.getFullYear() + 1)
             }
-            j(e)
+            S(e)
         }, [g]), (0, n.useEffect)(() => {
             switch (e) {
                 case m.PremiumTypes.TIER_0:
@@ -65,7 +65,7 @@ let x = () => {
                     }]), v(m.gD.PREMIUM_MONTH_TIER_2)
             }
         }, [e]), (0, n.useEffect)(() => {
-            [o.g.CONFIRM_DISCOUNT, o.g.DISCOUNT_APPLIED].includes(l) && null === f && y(b()), l === o.g.PREVIEW && null === S && T(new u.A({
+            [o.g.CONFIRM_DISCOUNT, o.g.DISCOUNT_APPLIED].includes(l) && null === y && f(b()), l === o.g.PREVIEW && null === j && T(new u.A({
                 id: "",
                 invoiceItems: [{
                     id: "",
@@ -89,8 +89,8 @@ let x = () => {
                 subscriptionPeriodStart: new Date,
                 subscriptionPeriodEnd: C,
                 status: c.lT7.PAID
-            })), l !== o.g.PREVIEW && null !== S && T(null)
-        }, [l, f, C, g, S]);
+            })), l !== o.g.PREVIEW && null !== j && T(null)
+        }, [l, y, C, g, j]);
         let D = n.useCallback(async () => {
             N(!0), await (0, r.mMO)(async () => t => (0, a.jsx)(d.m, {
                 ...t,
@@ -98,9 +98,9 @@ let x = () => {
                     t.onClose(), N(!1)
                 },
                 premiumType: e,
-                churnDiscount: f,
+                churnDiscount: y,
                 planId: g,
-                renewalInvoice: S,
+                renewalInvoice: j,
                 renewalInvoiceDetails: {
                     intervalType: m.WT.MONTH,
                     intervalCount: 1
@@ -134,7 +134,7 @@ let x = () => {
                     pauseReason: p.qf.UNKNOWN
                 }
             }))
-        }, [e, f, g, S, A, k, l, C]);
+        }, [e, y, g, j, A, k, l, C]);
         return (0, n.useEffect)(() => {
             R && D()
         }, [l, R, D]), (0, a.jsxs)(s.LB, {
@@ -213,9 +213,9 @@ let x = () => {
                 })
             }), (0, a.jsx)(s.MG, {
                 children: (0, a.jsx)(r.Checkbox, {
-                    checked: null !== f,
+                    checked: null !== y,
                     onChange: () => {
-                        null === f ? y(b()) : y(null)
+                        null === y ? f(b()) : f(null)
                     },
                     label: "Churn Discount"
                 })
