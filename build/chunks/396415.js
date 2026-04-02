@@ -1,10 +1,10 @@
 /** chunk id: 396415 params = (module,exports,require) **/
 n.d(t, {
-    A: () => l
+    A: () => a
 });
 var i = n(627968);
 
-function l(e) {
+function a(e) {
     let {
         color: t = "currentColor",
         ...n

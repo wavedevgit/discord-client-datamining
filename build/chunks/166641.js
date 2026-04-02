@@ -3,8 +3,8 @@ n.d(t, {
     A: () => g
 });
 var i = n(627968),
-    l = n(64700),
-    a = n(397927),
+    a = n(64700),
+    l = n(397927),
     r = n(686956),
     s = n(292455),
     o = n(701508),
@@ -19,7 +19,7 @@ var i = n(627968),
 let g = function(e) {
     let {
         onScroll: t
-    } = e, n = (0, A.A)(), g = l.useMemo(() => n.map(e => ({
+    } = e, n = (0, A.A)(), g = a.useMemo(() => n.map(e => ({
         ...e,
         presenceCount: void 0,
         memberCount: void 0,
@@ -34,7 +34,7 @@ let g = function(e) {
             children: (0, i.jsx)(s.A, {})
         }), (0, i.jsxs)(d.A, {
             children: [n.length > 0 ? (0, i.jsxs)(i.Fragment, {
-                children: [(0, i.jsx)(a.Heading, {
+                children: [(0, i.jsx)(l.Heading, {
                     className: m.G,
                     variant: "heading-lg/semibold",
                     color: "text-strong",
@@ -57,12 +57,12 @@ let g = function(e) {
                 className: p.yF
             }), (0, i.jsxs)("div", {
                 className: p.ed,
-                children: [(0, i.jsxs)(a.Text, {
+                children: [(0, i.jsxs)(l.Text, {
                     className: p.Qq,
                     variant: "text-sm/medium",
                     color: "text-default",
                     children: [_.intl.string(_.t.O1k9XX), " "]
-                }), (0, i.jsx)(a.Text, {
+                }), (0, i.jsx)(l.Text, {
                     className: p.Qq,
                     variant: "text-sm/medium",
                     color: "text-default",

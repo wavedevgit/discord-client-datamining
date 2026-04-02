@@ -3,8 +3,8 @@ n.d(t, {
     A: () => S
 });
 var i = n(627968),
-    l = n(64700),
-    a = n(397927),
+    a = n(64700),
+    l = n(397927),
     r = n(178629),
     s = n(770472),
     o = n(737823),
@@ -25,7 +25,7 @@ var i = n(627968),
     N = n(579528);
 
 function S() {
-    let e = l.useRef((0, h.YP)()),
+    let e = a.useRef((0, h.YP)()),
         {
             onScroll: t,
             scrollPosition: n,
@@ -62,16 +62,16 @@ function S() {
             })
         }),
         V = u.A.useField("fetchedQuery"),
-        B = l.useCallback(e => {
+        B = a.useCallback(e => {
             b(e), M && P()
         }, [M, P, b]),
-        H = l.useMemo(() => M ? x.filter(e => {
+        H = a.useMemo(() => M ? x.filter(e => {
             let {
                 id: t
             } = e;
             return !f.R0.has(t)
         }) : x, [x, M]),
-        F = l.useRef(new A.A(y)),
+        F = a.useRef(new A.A(y)),
         {
             onGuildCardSeen: Y,
             onGuildCardClick: W
@@ -79,11 +79,11 @@ function S() {
             guildDiscoveryCardSeenManager: F.current,
             loadId: e.current
         });
-    return l.useEffect(() => {
+    return a.useEffect(() => {
         F.current.flushSeenGuilds(e.current)
-    }, [y]), l.useEffect(() => {
+    }, [y]), a.useEffect(() => {
         S()
-    }, [v, S]), l.useEffect(() => {
+    }, [v, S]), a.useEffect(() => {
         M || u.A.setState({
             scrollPosition: null
         })
@@ -94,17 +94,17 @@ function S() {
             children: [!M && (0, i.jsx)(o.ns, {
                 scrollPosition: n
             }), M ? (0, i.jsx)(o.XQ, {
-                icon: a.Zge,
+                icon: l.Zge,
                 onClick: P
             }) : (0, i.jsx)(o.T4, {
-                icon: a.RR9
+                icon: l.RR9
             }), !M && (0, i.jsx)(d.A, {
                 className: k,
                 tabs: H,
                 selectedTab: v,
                 onTabSelect: B,
                 onAvailableWidthChange: w
-            }), M && (0, i.jsx)(a.Heading, {
+            }), M && (0, i.jsx)(l.Heading, {
                 variant: "heading-lg/semibold",
                 color: "text-strong",
                 className: N.ov,

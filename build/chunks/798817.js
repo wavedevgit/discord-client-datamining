@@ -3,8 +3,8 @@ n.d(t, {
     A: () => A
 });
 var i = n(627968),
-    l = n(64700),
-    a = n(311907),
+    a = n(64700),
+    l = n(311907),
     r = n(342494),
     s = n(274372),
     o = n(372684),
@@ -17,10 +17,10 @@ function A(e) {
         onOpenClipsGallery: t,
         clipIconRef: n,
         lastClipsSession: A
-    } = e, h = (0, a.bG)([s.A], () => {
+    } = e, h = (0, l.bG)([s.A], () => {
         let e = s.A.getLastClipsSession()?.newClipIds;
         return null == e ? null : s.A.getClips().filter(t => e.includes(t.id))[0]
-    }), _ = (0, c.j)(h), m = l.useCallback(() => {
+    }), _ = (0, c.j)(h), m = a.useCallback(() => {
         (0, d.jA)()
     }, []);
     return null == h ? null : h.type !== o.nQ.SCREENSHOT && h.type !== o.nQ.VOICE_CLIP && null != _ ? (0, i.jsx)(r.HZ, {

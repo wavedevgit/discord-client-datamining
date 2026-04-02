@@ -3,19 +3,19 @@ n.d(t, {
     A: () => o
 });
 var i = n(311907),
-    l = n(73153);
-let a = "UPDATE_NOT_AVAILABLE";
+    a = n(73153);
+let l = "UPDATE_NOT_AVAILABLE";
 
 function r(e) {
-    a = e.type
+    l = e.type
 }
 class s extends i.Ay.Store {
     static displayName = "AutoUpdateStore";
     getState() {
-        return a
+        return l
     }
 }
-let o = new s(l.h, {
+let o = new s(a.h, {
     CHECKING_FOR_UPDATES: r,
     UPDATE_NOT_AVAILABLE: r,
     UPDATE_AVAILABLE: r,

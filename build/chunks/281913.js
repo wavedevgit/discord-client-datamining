@@ -3,15 +3,15 @@ n.d(t, {
     A: () => o
 });
 var i = n(139033),
-    l = n(73153),
-    a = n(272355),
+    a = n(73153),
+    l = n(272355),
     r = n(985018);
-class s extends a.A {
+class s extends l.A {
     _initialize() {
-        l.h.subscribe("POGGERMODE_TEMPORARILY_DISABLED", this.handlePoggermodeTemporarilyDisabled)
+        a.h.subscribe("POGGERMODE_TEMPORARILY_DISABLED", this.handlePoggermodeTemporarilyDisabled)
     }
     _terminate() {
-        l.h.unsubscribe("POGGERMODE_TEMPORARILY_DISABLED", this.handlePoggermodeTemporarilyDisabled)
+        a.h.unsubscribe("POGGERMODE_TEMPORARILY_DISABLED", this.handlePoggermodeTemporarilyDisabled)
     }
     handlePoggermodeTemporarilyDisabled() {
         (0, i.A)({

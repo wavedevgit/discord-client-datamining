@@ -3,16 +3,16 @@ n.d(t, {
     E: () => r
 });
 var i = n(64700),
-    l = n(4106),
-    a = n(105971);
+    a = n(4106),
+    l = n(105971);
 
 function r(e) {
     return i.useCallback(async () => {
-        a.k.trackFeedShown({
+        l.k.trackFeedShown({
             variant: e ? "DotShown" : "NoDotShown",
             homeSessionId: "gravity_refresh"
-        }), await l.A.fetchDehydrated({
+        }), await a.A.fetchDehydrated({
             isReloading: !0
-        }), await l.A.reloadICYMITab(), await l.A.getGuildChannelScores(), l.A.getRecommendedGuilds()
+        }), await a.A.reloadICYMITab(), await a.A.getGuildChannelScores(), a.A.getRecommendedGuilds()
     }, [e])
 }

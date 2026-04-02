@@ -1,19 +1,19 @@
 /** chunk id: 420970 params = (module,exports,require) **/
 n.d(t, {
-    T: () => a
+    T: () => l
 });
 var i = n(355443),
-    l = n(672162);
+    a = n(672162);
 
-function a(e, t) {
+function l(e, t) {
     let {
         scope: n,
-        handler: a
+        handler: l
     } = t, r = {
         scope: n,
-        handler: a
+        handler: l
     }, s = i.H[e]?.request, o = null;
     return null != s && (r.validation = function(e) {
-        return null == o && (o = (0, l.k5)(e.object(s(e)))), o
+        return null == o && (o = (0, a.k5)(e.object(s(e)))), o
     }), r
 }

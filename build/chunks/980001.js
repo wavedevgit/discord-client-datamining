@@ -3,11 +3,11 @@ n.d(t, {
     A: () => d
 });
 var i = n(735438),
-    l = n.n(i),
-    a = n(626584),
+    a = n.n(i),
+    l = n(626584),
     r = n(543465),
     s = n(723176);
-let o = new a.A("ReadStates"),
+let o = new l.A("ReadStates"),
     d = new class {
         async getAll(e) {
             let t = performance.now(),
@@ -24,7 +24,7 @@ let o = new a.A("ReadStates"),
             e.userGuildSettings.partial || s.A.userGuildSettingsTransaction(t).delete(), this.write(e.userGuildSettings.entries, e.userGuildSettings.version, t)
         }
         handleUserGuildSettingsUpdate(e, t) {
-            let n = l().max(e.userGuildSettings.map(e => e.version ?? -1));
+            let n = a().max(e.userGuildSettings.map(e => e.version ?? -1));
             null != n && this.write(e.userGuildSettings, n, t)
         }
         write(e, t, n) {

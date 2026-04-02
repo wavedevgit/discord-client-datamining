@@ -3,8 +3,8 @@ n.d(t, {
     k: () => c
 }), n(321073);
 var i = n(681154),
-    l = n(954571),
-    a = n(883344),
+    a = n(954571),
+    l = n(883344),
     r = n(596720),
     s = n(652215);
 let o = e => {
@@ -48,13 +48,13 @@ let o = e => {
     },
     c = {
         trackItemInteraction(e) {
-            l.default.track(s.HAw.FEED_ITEM_INTERACTED, {
-                load_id: a.A.getLoadId(),
+            a.default.track(s.HAw.FEED_ITEM_INTERACTED, {
+                load_id: l.A.getLoadId(),
                 feed_item_type: e.type,
                 feed_item_id: e.id,
                 home_session_id: "gravity",
                 action_type: e.actionType,
-                feed_item_index: a.A.getIndexInHydratedFeed(e.id),
+                feed_item_index: l.A.getIndexInHydratedFeed(e.id),
                 icymi_session_id: e.icymiSessionId,
                 impression_id: e.impressionId,
                 ux_variation: e.uxVariation,
@@ -62,8 +62,8 @@ let o = e => {
             })
         },
         trackItemShortImpression(e, t, n) {
-            l.default.track(s.HAw.FEED_ITEM_SEEN_BATCH, {
-                load_id: a.A.getLoadId(),
+            a.default.track(s.HAw.FEED_ITEM_SEEN_BATCH, {
+                load_id: l.A.getLoadId(),
                 home_session_id: "gravity",
                 feed_item_ids: e.map(e => e.item.id),
                 feed_item_types: e.map(e => o(e.item)),
@@ -77,8 +77,8 @@ let o = e => {
             })
         },
         trackItemLongImpression(e, t, n) {
-            l.default.track(s.HAw.FEED_ITEM_SEEN_LONG, {
-                load_id: a.A.getLoadId(),
+            a.default.track(s.HAw.FEED_ITEM_SEEN_LONG, {
+                load_id: l.A.getLoadId(),
                 home_session_id: "gravity",
                 feed_item_ids: e.map(e => e.item.id),
                 feed_item_types: e.map(e => o(e.item)),
@@ -95,85 +95,85 @@ let o = e => {
             let t = [],
                 n = [],
                 i = [],
-                a = [];
+                l = [];
             e.unreadFeedItems.forEach(e => {
                 t.push(e.id), i.push(d(e))
             }), e.readFeedItems.forEach(e => {
-                n.push(e.id), a.push(d(e))
-            }), l.default.track(s.HAw.FEED_LOADED, {
+                n.push(e.id), l.push(d(e))
+            }), a.default.track(s.HAw.FEED_LOADED, {
                 ...e.newTrackingProps,
                 home_session_id: e.homeSessionId,
                 tab_badged: e.hasNewContent,
                 unread_feed_item_ids: t,
                 read_feed_item_ids: n,
                 unread_feed_item_types: i,
-                read_feed_item_types: a
+                read_feed_item_types: l
             })
         },
         trackFeedShown(e) {
-            l.default.track(s.HAw.FEED_SHOWN, {
-                load_id: a.A.getLoadId(),
+            a.default.track(s.HAw.FEED_SHOWN, {
+                load_id: l.A.getLoadId(),
                 home_session_id: e.homeSessionId,
                 variant: e.variant
             })
         },
         trackFeedFirstScrollStarted() {
-            l.default.track(s.HAw.HOME_FIRST_SCROLL_STARTED, {
-                load_id: a.A.getLoadId(),
+            a.default.track(s.HAw.HOME_FIRST_SCROLL_STARTED, {
+                load_id: l.A.getLoadId(),
                 home_session_id: "gravity"
             })
         },
         trackFeedFeedbackPromptViewed() {
-            l.default.track(s.HAw.HOME_FEEDBACK_PROMPT_VIEWED)
+            a.default.track(s.HAw.HOME_FEEDBACK_PROMPT_VIEWED)
         },
         trackFeedFeedbackSubmitted(e) {
-            l.default.track(s.HAw.HOME_FEEDBACK_SUBMITTED, {
-                load_id: a.A.getLoadId(),
+            a.default.track(s.HAw.HOME_FEEDBACK_SUBMITTED, {
+                load_id: l.A.getLoadId(),
                 home_session_id: "gravity",
                 ...e
             })
         },
         trackFeedOnboardingScreenSkipped(e) {
-            l.default.track(s.HAw.ICYMI_ONBOARDING_SCREEN_SKIPPED, {
+            a.default.track(s.HAw.ICYMI_ONBOARDING_SCREEN_SKIPPED, {
                 location: e.location
             })
         },
         trackFeedOnboardingGuildToggled(e) {
-            l.default.track(s.HAw.ICYMI_ONBOARDING_GUILD_TOGGLED, {
+            a.default.track(s.HAw.ICYMI_ONBOARDING_GUILD_TOGGLED, {
                 guild_id: e.guildId,
                 toggled: e.toggled
             })
         },
         trackFeedOnboardingCategoryToggled(e) {
-            l.default.track(s.HAw.ICYMI_ONBOARDING_CATEGORY_TOGGLED, {
+            a.default.track(s.HAw.ICYMI_ONBOARDING_CATEGORY_TOGGLED, {
                 category_id: e.categoryId,
                 toggled: e.toggled
             })
         },
         trackFeedEmptyLoadingSeen() {
-            l.default.track(s.HAw.ICYMI_FEED_EMPTY_LOADING_SEEN, {
-                load_id: a.A.getLoadId(),
-                version: a.A.getVersion()
+            a.default.track(s.HAw.ICYMI_FEED_EMPTY_LOADING_SEEN, {
+                load_id: l.A.getLoadId(),
+                version: l.A.getVersion()
             })
         },
         trackFeedEmptyLoadingComplete(e) {
-            l.default.track(s.HAw.ICYMI_FEED_EMPTY_LOADING_COMPLETE, {
-                load_id: a.A.getLoadId(),
+            a.default.track(s.HAw.ICYMI_FEED_EMPTY_LOADING_COMPLETE, {
+                load_id: l.A.getLoadId(),
                 dwell_time_ms: e.dwellTimeMs,
-                version: a.A.getVersion()
+                version: l.A.getVersion()
             })
         },
         trackFeedEmptyLoadingAbandoned(e) {
-            l.default.track(s.HAw.ICYMI_FEED_EMPTY_LOADING_ABANDONED, {
-                load_id: a.A.getLoadId(),
+            a.default.track(s.HAw.ICYMI_FEED_EMPTY_LOADING_ABANDONED, {
+                load_id: l.A.getLoadId(),
                 dwell_time_ms: e.dwellTimeMs,
-                version: a.A.getVersion()
+                version: l.A.getVersion()
             })
         },
         trackFeedSessionStarted(e) {
-            l.default.track(s.HAw.FEED_SESSION_STARTED, {
-                load_id: a.A.getLoadId(),
-                version: a.A.getVersion(),
+            a.default.track(s.HAw.FEED_SESSION_STARTED, {
+                load_id: l.A.getLoadId(),
+                version: l.A.getVersion(),
                 session_start_time_ms: e.sessionStartTimeMs,
                 icymi_session_id: e.icymiSessionId,
                 previous_icymi_session_count: e.previousIcymiSessionCount,
@@ -181,9 +181,9 @@ let o = e => {
             })
         },
         trackFeedSessionCompleted(e) {
-            l.default.track(s.HAw.FEED_SESSION_COMPLETED, {
-                load_id: a.A.getLoadId(),
-                version: a.A.getVersion(),
+            a.default.track(s.HAw.FEED_SESSION_COMPLETED, {
+                load_id: l.A.getLoadId(),
+                version: l.A.getVersion(),
                 session_duration_ms: e.sessionDurationMs,
                 session_start_time_ms: e.sessionStartTimeMs,
                 session_end_time_ms: e.sessionEndTimeMs,
@@ -203,9 +203,9 @@ let o = e => {
             })
         },
         trackFeedItemDwell1s(e) {
-            l.default.track(s.HAw.FEED_ITEM_1S_DWELLED, {
-                load_id: a.A.getLoadId(),
-                version: a.A.getVersion(),
+            a.default.track(s.HAw.FEED_ITEM_1S_DWELLED, {
+                load_id: l.A.getLoadId(),
+                version: l.A.getVersion(),
                 impression_id: e.impressionId,
                 item_id: e.itemId,
                 item_type: e.itemType,
@@ -226,9 +226,9 @@ let o = e => {
             })
         },
         trackFeedItemDwelled(e) {
-            l.default.track(s.HAw.FEED_ITEM_DWELLED, {
-                load_id: a.A.getLoadId(),
-                version: a.A.getVersion(),
+            a.default.track(s.HAw.FEED_ITEM_DWELLED, {
+                load_id: l.A.getLoadId(),
+                version: l.A.getVersion(),
                 impression_id: e.impressionId,
                 dwell_time_ms: e.dwellTimeMs,
                 item_id: e.itemId,
@@ -250,11 +250,11 @@ let o = e => {
             })
         },
         trackFeedItemActioned(e) {
-            l.default.track(s.HAw.FEED_ITEM_ACTIONED, {
-                load_id: a.A.getLoadId(),
+            a.default.track(s.HAw.FEED_ITEM_ACTIONED, {
+                load_id: l.A.getLoadId(),
                 icymi_session_id: e.icymiSessionId,
                 ux_variation: e.uxVariation,
-                version: a.A.getVersion(),
+                version: l.A.getVersion(),
                 session_action_index: e.sessionActionIndex,
                 item_id: e.itemId,
                 item_type: e.itemType,
@@ -266,11 +266,11 @@ let o = e => {
             })
         },
         trackFeedFilterActioned(e) {
-            l.default.track(s.HAw.FEED_FILTER_ACTIONED, {
-                load_id: a.A.getLoadId(),
+            a.default.track(s.HAw.FEED_FILTER_ACTIONED, {
+                load_id: l.A.getLoadId(),
                 icymi_session_id: e.icymiSessionId,
                 ux_variation: e.uxVariation,
-                version: a.A.getVersion(),
+                version: l.A.getVersion(),
                 session_action_index: e.sessionActionIndex,
                 filter_setting_context: e.filterParameters.filterSettingContext,
                 filter_target_type: e.filterParameters.filterTargetType,
@@ -286,11 +286,11 @@ let o = e => {
             })
         },
         trackFeedPageActioned(e) {
-            l.default.track(s.HAw.FEED_PAGE_ACTIONED, {
-                load_id: a.A.getLoadId(),
+            a.default.track(s.HAw.FEED_PAGE_ACTIONED, {
+                load_id: l.A.getLoadId(),
                 icymi_session_id: e.icymiSessionId,
                 ux_variation: e.uxVariation,
-                version: a.A.getVersion(),
+                version: l.A.getVersion(),
                 session_action_index: e.sessionActionIndex,
                 action_gesture_type: e.actionParameters.actionGestureType,
                 action_target_element: e.actionParameters.actionTargetElement,

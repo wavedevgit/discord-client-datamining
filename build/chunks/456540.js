@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var l = n(397927),
-    a = n(790284),
+var a = n(397927),
+    l = n(790284),
     r = n(780964),
     s = n(858897),
     o = n(322092),
@@ -18,13 +18,13 @@ function A(e) {
         subscription: t
     } = e;
     return null == t ? null : t.status === d.Dmq.PAST_DUE ? (0, i.jsxs)(i.Fragment, {
-        children: [(0, i.jsx)(l.hKd, {
+        children: [(0, i.jsx)(a.hKd, {
             size: 16
         }), (0, i.jsx)(o.A, {
             message: u.intl.string(u.t.eSuJE2),
             ctaMessage: u.intl.string(u.t.RXsxqb),
             onClick: () => {
-                a.A.setState({
+                l.A.setState({
                     subsection: c.nR
                 }), (0, s.openUserSettings)(r.X.SUBSCRIPTIONS_PANEL)
             }

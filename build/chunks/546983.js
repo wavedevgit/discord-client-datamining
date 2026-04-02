@@ -7,8 +7,8 @@ n.d(t, {
     l6: () => p
 });
 var i = n(684013),
-    l = n(833551),
-    a = n(395011),
+    a = n(833551),
+    l = n(395011),
     r = n(837921),
     s = n(350535),
     o = n(636401),
@@ -18,7 +18,7 @@ var i = n(684013),
 let A = ["207646673902501888"];
 
 function h(e) {
-    return null != e && !!l.default.isOverlayOOPEnabledForPid(e) && a.A.isReady(e)
+    return null != e && !!a.default.isOverlayOOPEnabledForPid(e) && l.A.isReady(e)
 }
 
 function _(e) {

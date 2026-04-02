@@ -3,8 +3,8 @@ n.d(t, {
     A: () => A
 });
 var i = n(627968),
-    l = n(64700),
-    a = n(311907),
+    a = n(64700),
+    l = n(311907),
     r = n(734057),
     s = n(71393),
     o = n(320501),
@@ -19,7 +19,7 @@ function A(e) {
         channelId: n,
         messageIds: A,
         title: h
-    } = l.useMemo(() => {
+    } = a.useMemo(() => {
         switch (t.data.kind) {
             case "message":
                 return {
@@ -34,7 +34,7 @@ function A(e) {
                     channelId: void 0, messageIds: [], title: void 0
                 }
         }
-    }, [t]), _ = (0, a.bG)([r.A], () => null != n ? r.A.getChannel(n) : null, [n]), m = (0, a.bG)([s.A], () => _?.guild_id != null ? s.A.getGuild(_.guild_id) : null, [_]), p = (0, a.yK)([d.A, o.A], () => null == n ? [] : A.map(e => d.A.getMessage(e) ?? o.A.getMessage(n, e)).filter(e => null != e), [n, A]);
+    }, [t]), _ = (0, l.bG)([r.A], () => null != n ? r.A.getChannel(n) : null, [n]), m = (0, l.bG)([s.A], () => _?.guild_id != null ? s.A.getGuild(_.guild_id) : null, [_]), p = (0, l.yK)([d.A, o.A], () => null == n ? [] : A.map(e => d.A.getMessage(e) ?? o.A.getMessage(n, e)).filter(e => null != e), [n, A]);
     return null == _ || null == m || 0 === p.length ? null : (0, i.jsxs)("div", {
         className: u.kL,
         children: [null != h ? (0, i.jsx)("div", {

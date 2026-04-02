@@ -3,8 +3,8 @@ n.d(t, {
     A: () => g
 });
 var i = n(73153),
-    l = n(77468),
-    a = n(573648),
+    a = n(77468),
+    l = n(573648),
     r = n(882997),
     s = n(962173),
     o = n(203982),
@@ -35,7 +35,7 @@ let p = new Set([_.AM, _.eK]),
                 } = e;
                 (0, c.lG)(t.transport);
                 let A = (0, c.D2)(t.application),
-                    _ = a.A.get(n);
+                    _ = l.A.get(n);
                 if (null == _) throw new d.A({
                     errorCode: m.Lw.INVALID_PROVIDER
                 }, `Platform not found for provider "${n}"`);
@@ -47,8 +47,8 @@ let p = new Set([_.AM, _.eK]),
                     errorCode: m.Lw.UNAUTHORIZED_FOR_APPLICATION
                 }, "Command not available for this application");
                 return new Promise(async (e, t) => {
-                    let a = s.A.getAccount(null, n);
-                    if (null == a) {
+                    let l = s.A.getAccount(null, n);
+                    if (null == l) {
                         function c(t) {
                             if (null == _) return;
                             let n = (t.accounts ?? []).find(e => e.type === _.type);
@@ -72,7 +72,7 @@ let p = new Set([_.AM, _.eK]),
                             successRedirect: u
                         })
                     } else try {
-                        let t = await l.A.refreshAccessToken(_.type, a.id);
+                        let t = await a.A.refreshAccessToken(_.type, l.id);
                         if (null == t) throw new d.A({
                             errorCode: m.Lw.OAUTH2_ERROR
                         }, "Refreshing access token did not return a new access token");
@@ -101,7 +101,7 @@ let p = new Set([_.AM, _.eK]),
                 } = e;
                 (0, c.lG)(t.transport);
                 let i = (0, c.D2)(t.application),
-                    r = a.A.get(n);
+                    r = l.A.get(n);
                 if (null == r) throw new d.A({
                     errorCode: m.Lw.INVALID_PROVIDER
                 }, `Platform not found for provider "${n}"`);
@@ -116,7 +116,7 @@ let p = new Set([_.AM, _.eK]),
                 if (null == o) throw new d.A({
                     errorCode: m.Lw.NO_CONNECTION_FOUND
                 }, "No connection found");
-                let u = await l.A.refreshAccessToken(r.type, o.id);
+                let u = await a.A.refreshAccessToken(r.type, o.id);
                 if (null == u) throw new d.A({
                     errorCode: m.Lw.OAUTH2_ERROR
                 }, "Refreshing access token did not return a new access token");

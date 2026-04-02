@@ -3,8 +3,8 @@ n.d(t, {
     j: () => o
 }), n(989349);
 var i = n(311907),
-    l = n(707539),
-    a = n(222823),
+    a = n(707539),
+    l = n(222823),
     r = n(661191),
     s = n(978914);
 
@@ -18,8 +18,8 @@ function o(e) {
             } = e;
             return i && null != n ? r.default.extractTimestamp(n.id) : null != t ? r.default.extractTimestamp(t) : null
         }({
-            lastMessageId: (0, i.bG)([a.Ay], () => a.Ay.lastMessageId(e.id)),
+            lastMessageId: (0, i.bG)([l.Ay], () => l.Ay.lastMessageId(e.id)),
             ...t
         });
-    return null == n ? "" : (0, l.aK)(n)
+    return null == n ? "" : (0, a.aK)(n)
 }

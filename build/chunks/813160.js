@@ -3,16 +3,16 @@ n.d(t, {
     A: () => o
 });
 var i = n(607399),
-    l = n(311907),
-    a = n(73153);
+    a = n(311907),
+    l = n(73153);
 let r = !1;
-class s extends l.Ay.Store {
+class s extends a.Ay.Store {
     static displayName = "MobileWebSidebarStore";
     getIsOpen() {
         return !i.Fr || r
     }
 }
-let o = new s(a.h, {
+let o = new s(l.h, {
     MOBILE_WEB_SIDEBAR_OPEN: function() {
         r = !0
     },

@@ -121,7 +121,6 @@ let k = t => {
                 }
                 if (ti.length > 0) return (0, n.jsx)(b.A, {
                     distributorCTAConfigs: ti,
-                    gameName: e?.name ?? "",
                     buttonVariant: "overlay-primary"
                 });
                 if (K) {

@@ -3,9 +3,9 @@ n.d(t, {
     A: () => C
 });
 var i = n(627968),
-    l = n(64700),
-    a = n(503698),
-    r = n.n(a),
+    a = n(64700),
+    l = n(503698),
+    r = n.n(l),
     s = n(311907),
     o = n(397927),
     d = n(765671),
@@ -26,15 +26,15 @@ function C(e) {
         guildId: t,
         channelId: n
     } = e, {
-        ref: a,
+        ref: l,
         width: C,
         height: T
-    } = (0, d.Ay)(), N = l.useCallback(() => {
+    } = (0, d.Ay)(), N = a.useCallback(() => {
         null != t && null != n && ((0, p.sy)(t), (0, g.default)({
             guildId: t,
             returnChannelId: n
         }))
-    }, [t, n]), S = (0, s.bG)([h.A], () => h.A.getGuild(t)), x = l.useMemo(() => null == S ? null : _.Ay.getGuildSplashURL({
+    }, [t, n]), S = (0, s.bG)([h.A], () => h.A.getGuild(t)), x = a.useMemo(() => null == S ? null : _.Ay.getGuildSplashURL({
         id: S.id,
         splash: S.splash
     }), [S]), v = (0, u.S)(x);
@@ -42,7 +42,7 @@ function C(e) {
         className: r()(I.kf, f.iW, {
             [f.Me]: null == x
         }),
-        ref: a,
+        ref: l,
         children: [null != x ? (0, i.jsx)(c.A, {
             className: f.xX,
             src: x,

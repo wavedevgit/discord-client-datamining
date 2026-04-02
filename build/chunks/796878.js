@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var l = n(877624),
-    a = n(990078),
+var a = n(877624),
+    l = n(990078),
     r = n(397927),
     s = n(549996),
     o = n(807098),
@@ -14,7 +14,7 @@ var l = n(877624),
 function c(e) {
     let {
         children: t
-    } = e, n = (0, s.c)(l.C.PREMIUM_TAB_TOOLTIP), c = null != n && "premiumTabTooltip" === n.properties.properties.oneofKind ? n.properties.properties.premiumTabTooltip : null, u = (0, o.T)(c?.asset);
+    } = e, n = (0, s.c)(a.C.PREMIUM_TAB_TOOLTIP), c = null != n && "premiumTabTooltip" === n.properties.properties.oneofKind ? n.properties.properties.premiumTabTooltip : null, u = (0, o.T)(c?.asset);
     if (null == c) return t;
     let A = (0, i.jsxs)("div", {
         className: d.$e,
@@ -35,7 +35,7 @@ function c(e) {
             })]
         })]
     });
-    return (0, i.jsx)(a.m, {
+    return (0, i.jsx)(l.m, {
         __unsupportedReactNodeAsText: A,
         position: "right",
         "aria-label": c.header,

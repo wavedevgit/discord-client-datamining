@@ -1,12 +1,12 @@
 /** chunk id: 194894 params = (module,exports,require) **/
 n.d(t, {
-    n9: () => a,
+    n9: () => l,
     pU: () => r,
-    vt: () => l
+    vt: () => a
 });
 var i = n(73153);
 
-function l(e, t) {
+function a(e, t) {
     i.h.dispatch({
         type: "LIBRARY_TABLE_SORT_UPDATE",
         key: e,
@@ -14,7 +14,7 @@ function l(e, t) {
     })
 }
 
-function a(e) {
+function l(e) {
     i.h.dispatch({
         type: "LIBRARY_APPLICATION_FILTER_UPDATE",
         query: e
