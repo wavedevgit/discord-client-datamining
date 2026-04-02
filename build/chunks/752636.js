@@ -1,37 +1,37 @@
 /** chunk id: 752636 params = (module,exports,require) **/
-n.d(t, {
-    A: () => o
+a.d(t, {
+    A: () => l
 });
-var i = n(627968),
-    a = n(64700),
-    r = n(143413),
-    l = n(643204);
-let s = a.memo(l.Ay);
+var n = a(627968),
+    r = a(64700),
+    o = a(143413),
+    i = a(643204);
+let c = r.memo(i.Ay);
 
-function o(e) {
+function l(e) {
     let {
         message: t,
-        channel: n,
-        author: a,
-        compact: l,
-        animateAvatar: o,
-        guildId: d,
-        isGroupStart: c = !0,
-        roleIcon: u,
-        hideTimestamp: _,
+        channel: a,
+        author: r,
+        compact: i,
+        animateAvatar: l,
+        guildId: s,
+        isGroupStart: _ = !0,
+        roleIcon: d,
+        hideTimestamp: u,
         hideGuildTag: m,
-        preview: h
+        preview: p
     } = e;
-    return !(0, r.A)(t) && (c || l) ? (0, i.jsx)(s, {
+    return !(0, o.A)(t) && (_ || i) ? (0, n.jsx)(c, {
         message: t,
-        channel: n,
-        author: a,
-        guildId: d,
-        compact: l,
-        animate: o,
-        roleIcon: u,
-        hideTimestamp: _,
+        channel: a,
+        author: r,
+        guildId: s,
+        compact: i,
+        animate: l,
+        roleIcon: d,
+        hideTimestamp: u,
         hideGuildTag: m,
-        preview: h
+        preview: p
     }) : void 0
 }

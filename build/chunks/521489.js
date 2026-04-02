@@ -22,19 +22,19 @@ function h(e) {
         "aria-label": h,
         onClose: g,
         trackingProps: f,
-        children: p
-    } = e, _ = l.useId(), v = l.useMemo(() => ({
-        id: _,
-        headingId: `heading-${_}`,
+        children: _
+    } = e, p = l.useId(), v = l.useMemo(() => ({
+        id: p,
+        headingId: `heading-${p}`,
         onClose: g,
         dismissable: !0
-    }), [_, g]), A = (0, u.NC)(), {
+    }), [p, g]), A = (0, u.NC)(), {
         theme: j
     } = (0, d.wRf)(), E = (0, o.kSI)(t, n);
     return (0, a.jsx)(o.Vs9.Provider, {
         value: v,
         children: (0, a.jsx)(d.lGe, {
-            id: _,
+            id: p,
             role: "dialog",
             "aria-label": h,
             "aria-labelledby": null != h ? void 0 : v.headingId,
@@ -57,7 +57,7 @@ function h(e) {
                                     theme: j,
                                     children: e => (0, a.jsx)("div", {
                                         className: r()(e, m.h_),
-                                        children: p
+                                        children: _
                                     })
                                 })
                             })

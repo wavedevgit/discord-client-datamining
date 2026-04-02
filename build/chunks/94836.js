@@ -17,8 +17,8 @@ var a = n(627968),
     h = n(652176),
     g = n(371794),
     f = n(409626),
-    p = n(368546),
-    _ = n(985018),
+    _ = n(368546),
+    p = n(985018),
     v = n(325952),
     A = n(894704),
     j = n(240892);
@@ -51,7 +51,7 @@ function E(e) {
             className: v.bV,
             variant: "text-md/semibold",
             color: "text-strong",
-            children: _.intl.string(_.t.bNdK5x)
+            children: p.intl.string(p.t.bNdK5x)
         }), (0, a.jsxs)("div", {
             className: s ? A.DA : A.pZ,
             children: [(0, a.jsx)(o.zCo, {
@@ -75,7 +75,7 @@ function E(e) {
                     children: (0, a.jsx)("img", {
                         src: e.url,
                         className: A.Zm,
-                        alt: _.intl.formatToPlainString(_.t.COYYrn, {
+                        alt: p.intl.formatToPlainString(p.t.COYYrn, {
                             game: name
                         })
                     })
@@ -122,7 +122,7 @@ let C = l.memo(function(e) {
                 children: [(0, a.jsx)("img", {
                     src: "VIDEO" === t.type ? t.poster ?? t.url : t.url,
                     className: j.xn,
-                    alt: _.intl.formatToPlainString(_.t.COYYrn, {
+                    alt: p.intl.formatToPlainString(p.t.COYYrn, {
                         game: u
                     }),
                     draggable: !1
@@ -146,7 +146,7 @@ let C = l.memo(function(e) {
             onPause: c,
             onFullscreenChange: o
         } = e, d = l.useRef(null);
-        return (0, p.A)({
+        return (0, _.A)({
             videoRef: i,
             canvasRef: d,
             enabled: !n
@@ -186,8 +186,8 @@ function b(e) {
     let {
         detectedGame: t,
         trackAction: n
-    } = e, [i, r] = l.useState(0), [c, m] = l.useState(null), [h, p] = l.useState(t.artwork), [v, A] = l.useState(t.screenshots), E = l.useRef(null), b = l.useRef(null), N = (0, s.bG)([d.A], () => d.A.useReducedMotion);
-    (h !== t.artwork || v !== t.screenshots) && (p(t.artwork), A(t.screenshots), r(0));
+    } = e, [i, r] = l.useState(0), [c, m] = l.useState(null), [h, _] = l.useState(t.artwork), [v, A] = l.useState(t.screenshots), E = l.useRef(null), b = l.useRef(null), N = (0, s.bG)([d.A], () => d.A.useReducedMotion);
+    (h !== t.artwork || v !== t.screenshots) && (_(t.artwork), A(t.screenshots), r(0));
     let S = l.useMemo(() => {
             let e = (t.trailers ?? []).map(e => {
                     let t = (0, g.YE)(e.application_id, e.id, e.width, "mp4");
@@ -291,7 +291,7 @@ function b(e) {
                 children: (0, a.jsx)("img", {
                     src: k.url,
                     className: j.c8,
-                    alt: _.intl.formatToPlainString(_.t.COYYrn, {
+                    alt: p.intl.formatToPlainString(p.t.COYYrn, {
                         game: t.name
                     })
                 }, k.url)

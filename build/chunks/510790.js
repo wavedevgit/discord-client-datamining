@@ -22,8 +22,8 @@ var i = n(627968),
     C = n(153469),
     I = n(652215),
     E = n(674547),
-    v = n(985018),
-    b = n(574854);
+    b = n(985018),
+    v = n(574854);
 let T = e => e.map(e => `#${e}`),
     S = e => {
         let {
@@ -34,11 +34,11 @@ let T = e => e.map(e => `#${e}`),
             setAll: a
         } = (0, x.ko)();
         return void 0 === n ? null : (0, i.jsxs)("div", {
-            className: b.kL,
+            className: v.kL,
             children: [(0, i.jsx)(y, {
                 message: t
             }), (0, i.jsx)(c.$nd, {
-                text: v.intl.string(v.t.SKNnqq),
+                text: b.intl.string(b.t.SKNnqq),
                 fullWidth: !0,
                 variant: "primary",
                 onClick: () => {
@@ -77,27 +77,27 @@ let T = e => e.map(e => `#${e}`),
             }),
             I = a.useMemo(() => void 0 === g ? "" : (0, C.V9)(T(g.colors), g.gradient_angle ?? 0), [g]);
         return void 0 === g ? null : (0, i.jsxs)("div", {
-            className: b.pS,
+            className: v.pS,
             ref: f,
             children: [(0, i.jsx)("div", {
-                className: b.sl,
+                className: v.sl,
                 style: {
                     background: `${I}`
                 }
             }), (0, i.jsxs)("div", {
-                className: b.Ix,
+                className: v.Ix,
                 children: [(0, i.jsxs)(u.Heading, {
                     variant: "heading-md/semibold",
-                    className: b.qP,
-                    children: [v.intl.string(E.default.KSBBpC), " ", (0, i.jsx)(o.NitroWheelIcon, {})]
+                    className: v.qP,
+                    children: [b.intl.string(E.default.KSBBpC), " ", (0, i.jsx)(o.NitroWheelIcon, {})]
                 }), (0, i.jsx)(u.Text, {
                     variant: "text-sm/medium",
                     color: "text-subtle",
-                    className: b.Tb,
-                    children: (t = `${v.intl.format(E.default.fQPSEf,{username:"__USERNAME__"})}`, n = h.author, c = A.nick, t.split(" ").map((e, t) => "__USERNAME__" !== e ? (0, i.jsxs)(a.Fragment, {
+                    className: v.Tb,
+                    children: (t = `${b.intl.format(E.default.fQPSEf,{username:"__USERNAME__"})}`, n = h.author, c = A.nick, t.split(" ").map((e, t) => "__USERNAME__" !== e ? (0, i.jsxs)(a.Fragment, {
                         children: [e, " "]
                     }, t) : (0, i.jsxs)("span", {
-                        className: b.H,
+                        className: v.H,
                         children: [(0, i.jsx)(d.eu, {
                             "aria-label": c,
                             src: n.getAvatarURL(null, 20),

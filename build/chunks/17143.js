@@ -1,6 +1,6 @@
 /** chunk id: 17143 params = (module,exports,require) **/
 i.d(e, {
-    A: () => I,
+    A: () => _,
     V: () => g.V
 });
 var n = i(627968),
@@ -143,9 +143,9 @@ class y extends l.PureComponent {
             isMicTesting: T,
             volume: E,
             isDetectingInput: y
-        } = this.state, I = t && !T ? C.intl.string(C.t["9viE2A"]) : null;
+        } = this.state, _ = t && !T ? C.intl.string(C.t["9viE2A"]) : null;
         T && t && !u && this._micTestStop();
-        let _ = a.length >= r.length ? a : r;
+        let I = a.length >= r.length ? a : r;
         return (0, n.jsxs)("div", {
             className: s()(v.kL, f),
             children: [(0, n.jsx)(m.D0$, {
@@ -165,10 +165,10 @@ class y extends l.PureComponent {
                                 buttonRef: A,
                                 size: d,
                                 variant: o,
-                                text: _
+                                text: I
                             })
                         }), (0, n.jsx)(p.m, {
-                            text: I,
+                            text: _,
                             children: (0, n.jsx)("div", {
                                 style: null != c ? {
                                     minWidth: c
@@ -203,7 +203,7 @@ class y extends l.PureComponent {
     }
 }
 
-function I(t) {
+function _(t) {
     let {
         inputDevice: e,
         outputDevice: i,

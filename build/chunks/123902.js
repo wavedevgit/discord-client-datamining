@@ -43,7 +43,7 @@ function g(t) {
         return {
             transform: `translateX(${t}px)`
         }
-    }, [i, v]), I = r.useMemo(() => ({
+    }, [i, v]), _ = r.useMemo(() => ({
         width: `${v}px`,
         background: i <= 0 ? "none" : `linear-gradient(to right, ${s}, ${p})`
     }), [p, s, i, v]);
@@ -55,7 +55,7 @@ function g(t) {
         },
         children: [(0, l.jsxs)("div", {
             className: a()(c.kL, g),
-            style: I,
+            style: _,
             children: [(0, l.jsx)("div", {
                 className: c.qB,
                 style: y

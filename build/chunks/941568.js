@@ -16,8 +16,8 @@ var a = n(627968),
     h = n(890060),
     g = n(409626),
     f = n(21091),
-    p = n(385064),
-    _ = n(305080),
+    _ = n(385064),
+    p = n(305080),
     v = n(954506),
     A = n(652215),
     j = n(985018),
@@ -39,17 +39,17 @@ function b(e) {
         message: n,
         channelId: i,
         onCardClick: d
-    } = e, [u, m] = l.useState(!1), g = "main" === t, f = l.useCallback(() => m(!0), []), p = l.useCallback(e => {
+    } = e, [u, m] = l.useState(!1), g = "main" === t, f = l.useCallback(() => m(!0), []), _ = l.useCallback(e => {
         if (!((0, s.vq)(e.target, HTMLAnchorElement) || (0, s.vq)(e.target, HTMLSpanElement) && (0, s.vq)(e.target.parentElement, HTMLAnchorElement))) return d(n.id)
-    }, [d, n.id]), _ = n.media?.width != null && n.media?.height != null ? n.media.width / n.media.height : 16 / 9, v = n.media?.proxyUrl ?? n.media?.url, b = (null != v ? (0, h.V)(v) : null) ?? v;
+    }, [d, n.id]), p = n.media?.width != null && n.media?.height != null ? n.media.width / n.media.height : 16 / 9, v = n.media?.proxyUrl ?? n.media?.url, b = (null != v ? (0, h.V)(v) : null) ?? v;
     return (0, a.jsxs)(o.DUT, {
         className: g ? E.cG : E.IU,
-        onClick: p,
+        onClick: _,
         children: [null != n.media && null != b && (0, a.jsx)("div", {
             className: g ? E._v : E.eZ,
             children: (0, a.jsx)(c.y, {
                 readyState: u ? A.Rv1.READY : A.Rv1.LOADING,
-                aspectRatio: _,
+                aspectRatio: p,
                 placeholder: n.media.placeholder,
                 placeholderVersion: n.media.placeholderVersion,
                 placeholderStyle: {
@@ -106,13 +106,13 @@ function N(e) {
     } = (0, d.Ay)(), {
         officialInvite: r,
         closeModal: s
-    } = (0, _.c)(), {
+    } = (0, p.c)(), {
         messages: c,
         guildId: o,
         channelId: m
     } = (0, f.A)(t), x = l.useCallback(() => {
         let e = r?.guild?.id ?? o;
-        null != e && (n(g.Ws.Announcements), s(), (0, p.A)({
+        null != e && (n(g.Ws.Announcements), s(), (0, _.A)({
             invite: r,
             guildId: e,
             channelId: m,
@@ -120,7 +120,7 @@ function N(e) {
         }))
     }, [n, s, r, o, m, i]), h = l.useCallback(e => {
         let t = r?.guild?.id ?? o;
-        null != t && (n(g.Ws.AnnouncementsItem), s(), (0, p.A)({
+        null != t && (n(g.Ws.AnnouncementsItem), s(), (0, _.A)({
             invite: r,
             guildId: t,
             channelId: m,

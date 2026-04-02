@@ -32,8 +32,8 @@ function E(t) {
         currentUserId: C,
         canWatch: v,
         unavailableReason: y,
-        onWatchStream: I,
-        onAction: _,
+        onWatchStream: _,
+        onAction: I,
         showHeader: N = !1,
         hideTip: x = !1,
         className: j
@@ -56,8 +56,8 @@ function E(t) {
                 color: "currentColor",
                 children: L
             })]
-        }), null != I ? (0, n.jsxs)(a.DUT, {
-            onClick: I,
+        }), null != _ ? (0, n.jsxs)(a.DUT, {
+            onClick: _,
             className: S.i1,
             children: [(0, n.jsx)(h.A, {
                 className: S.oz,
@@ -100,7 +100,7 @@ function E(t) {
                         section: g.JJy.STREAM_VIEWER_POPOUT
                     }
                 },
-                onAction: _
+                onAction: I
             }) : (0, n.jsx)(d.A, {
                 type: o.M.STREAM_PREVIEW,
                 applicationStream: e,
@@ -108,7 +108,7 @@ function E(t) {
                 guildId: e.guildId,
                 channelId: e.channelId,
                 className: S.lx,
-                onAction: _
+                onAction: I
             }), !x && (0, n.jsx)(p.A, {
                 type: p.A.Types.INLINE,
                 className: S.PP,

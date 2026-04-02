@@ -22,15 +22,15 @@ function h(e) {
         fetchedAuthorization: h,
         hasAlreadyLinked: g,
         canStartAuthorization: f,
-        startAuthorization: p,
-        connectionApp: _,
+        startAuthorization: _,
+        connectionApp: p,
         officialInvite: v
     } = (0, u.c)(), A = (0, i.bG)([c.default], () => c.default.getCurrentUser()), j = l.useCallback(() => {
-        t(d.Ws.LinkAccount), p({
+        t(d.Ws.LinkAccount), _({
             analyticsLocations: n
         })
-    }, [t, p, n]);
-    if (!h || null == _ || !f || g || null == A) return null;
+    }, [t, _, n]);
+    if (!h || null == p || !f || g || null == A) return null;
     let E = v?.guild != null ? o.Ay.getGuildSplashURL({
         id: v.guild.id,
         splash: v.guild.splash
@@ -52,7 +52,7 @@ function h(e) {
             }) : (0, a.jsx)("div", {
                 className: x.sB,
                 children: (0, a.jsx)(s.default, {
-                    application: _
+                    application: p
                 })
             }), (0, a.jsxs)("div", {
                 className: x.hQ,
@@ -62,7 +62,7 @@ function h(e) {
                         variant: "heading-md/semibold",
                         color: "text-default",
                         children: m.intl.formatToPlainString(m.t.hUbQT2, {
-                            gameName: _.name
+                            gameName: p.name
                         })
                     }), (0, a.jsx)(r.Text, {
                         variant: "text-sm/medium",

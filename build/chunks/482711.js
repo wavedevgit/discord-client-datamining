@@ -173,7 +173,7 @@ function x(e) {
         onCopyProductLink: f,
         onTestDownload: C,
         disabled: I = !1
-    } = e, E = (0, d.R)(t, 600), v = null !== t.price_tier ? (0, c.$g)(t.price_tier, m.Yr.USD) : void 0, b = (0, u.z)(t);
+    } = e, E = (0, d.R)(t, 600), b = null !== t.price_tier ? (0, c.$g)(t.price_tier, m.Yr.USD) : void 0, v = (0, u.z)(t);
     return (0, i.jsxs)(s.sqX, {
         tag: "article",
         className: l()(p.gc, p.Um, {
@@ -223,14 +223,14 @@ function x(e) {
                     children: [(0, i.jsx)(s.Text, {
                         variant: "text-md/normal",
                         color: "text-default",
-                        children: v
-                    }), null != b ? (0, i.jsxs)(i.Fragment, {
+                        children: b
+                    }), null != v ? (0, i.jsxs)(i.Fragment, {
                         children: [(0, i.jsx)("div", {
                             className: p.zk
                         }), (0, i.jsx)(s.Text, {
                             variant: "text-md/normal",
                             color: "text-default",
-                            children: b
+                            children: v
                         })]
                     }) : null]
                 }), (0, i.jsx)(s.hKd, {

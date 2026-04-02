@@ -23,8 +23,8 @@ var i = n(627968),
     C = n(954571),
     I = n(957565),
     E = n(943775),
-    v = n(997997),
-    b = n(658575),
+    b = n(997997),
+    v = n(658575),
     T = n(376374),
     S = n(652215),
     y = n(435220),
@@ -60,7 +60,7 @@ function P(e) {
     let {
         appId: t,
         message: r
-    } = e, l = (0, b.G)(t), {
+    } = e, l = (0, v.G)(t), {
         data: c
     } = (0, u.YY)(t), [m, h, g, x] = (0, s.yK)([_.A, A.A, p.A], () => {
         let e = _.A.getApplication(t),
@@ -103,7 +103,7 @@ function P(e) {
         description: T,
         link: `${location.protocol}//${location.host}${S.BVt.GLOBAL_DISCOVERY_APPS_PROFILE_SECTION(c.id,y.GlobalDiscoveryAppsSections.STORE)}`,
         onLinkCopy: () => {
-            (0, v.K)(t, v.C.STORE_EMBED)
+            (0, b.K)(t, b.C.STORE_EMBED)
         },
         iconSrc: x,
         onIconClick: () => {
@@ -151,7 +151,7 @@ function w(e) {
         }
     }(r, t), {
         data: A
-    } = (0, u.YY)(c?.applicationId), x = (0, s.bG)([p.A], () => p.A.getBasicChannel(l.channel_id)?.guild_id, [l]), f = a.useMemo(() => null != A ? (0, E.A)(A, 45) : void 0, [A]), I = (0, b.G)(A?.id ?? ""), {
+    } = (0, u.YY)(c?.applicationId), x = (0, s.bG)([p.A], () => p.A.getBasicChannel(l.channel_id)?.guild_id, [l]), f = a.useMemo(() => null != A ? (0, E.A)(A, 45) : void 0, [A]), I = (0, v.G)(A?.id ?? ""), {
         openModal: P,
         subscriptionPurchaseButtonState: w
     } = (0, h.A)({
@@ -227,7 +227,7 @@ function w(e) {
         description: B,
         link: `${location.protocol}//${location.host}${S.BVt.GLOBAL_DISCOVERY_APPS_PROFILE_SECTION(A.id,y.GlobalDiscoveryAppsSections.STORE)}`,
         onLinkCopy: () => {
-            (0, v.K)(A.id, v.C.SKU_EMBED, r)
+            (0, b.K)(A.id, b.C.SKU_EMBED, r)
         },
         iconSrc: f,
         onIconClick: () => {

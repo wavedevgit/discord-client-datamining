@@ -26,7 +26,7 @@ function I(e) {
         invite: t,
         message: n,
         getAcceptInviteContext: I
-    } = e, E = (0, l.bG)([h.default], () => h.default.getId()), v = t.inviter?.id === E, b = t.state === x.elq.ACCEPTING, {
+    } = e, E = (0, l.bG)([h.default], () => h.default.getId()), b = t.inviter?.id === E, v = t.state === x.elq.ACCEPTING, {
         analyticsLocations: T
     } = (0, c.Ay)(d.A.INVITE_EMBED), S = (0, l.bG)([g.A], () => null != t.inviter && g.A.isFriend(t.inviter?.id)), y = a.useCallback(() => {
         let e = "noop";
@@ -57,8 +57,8 @@ function I(e) {
     let j = S ? y : N,
         L = f.intl.string(f.t.ib7Ng1),
         R = "active";
-    S ? (L = f.intl.string(f.t.xhxnPn), R = "secondary") : v && (L = f.intl.string(f.t.ib7Ng1), R = "secondary");
-    let P = v ? f.intl.string(f.t.eQyu1F) : f.intl.string(f.t.PYJHW6),
+    S ? (L = f.intl.string(f.t.xhxnPn), R = "secondary") : b && (L = f.intl.string(f.t.ib7Ng1), R = "secondary");
+    let P = b ? f.intl.string(f.t.eQyu1F) : f.intl.string(f.t.PYJHW6),
         w = null != t.inviter ? `${t.inviter.username}` : "",
         D = null != t.inviter ? A.Ay.getUserTag(t.inviter) : "";
     return (0, i.jsxs)(_.A, {
@@ -78,8 +78,8 @@ function I(e) {
             }), (0, i.jsx)(r.$nd, {
                 onClick: j,
                 text: L,
-                loading: b,
-                disabled: v,
+                loading: v,
+                disabled: b,
                 variant: R
             })]
         })]

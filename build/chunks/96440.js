@@ -1,6 +1,6 @@
 /** chunk id: 96440 params = (module,exports,require) **/
 n.d(t, {
-    W: () => b
+    W: () => v
 }), n(321073);
 var i = n(627968),
     a = n(311907),
@@ -22,13 +22,13 @@ var i = n(627968),
     C = n(933958),
     I = n(574152),
     E = n(782091),
-    v = n(985018);
+    b = n(985018);
 
-function b(e) {
+function v(e) {
     let {
         application: t,
         customId: n,
-        customLink: b,
+        customLink: v,
         referrerId: T,
         message: S
     } = e, y = t?.bot?.id, N = (0, d.Vr)({
@@ -43,9 +43,9 @@ function b(e) {
         if (null == P) return;
         let e = C.Ay.getEmbeddedActivitiesForChannel(P).filter(e => e.applicationId === t.id);
         return e.length > 0 ? e[0].compositeInstanceId : void 0
-    }), M = (0, a.bG)([C.Ay], () => C.Ay.getCurrentEmbeddedActivity()), k = (0, I.A)(), O = w === E.xy.CAN_LAUNCH, U = null != D && M?.compositeInstanceId === D, B = null != n ? n : b.customId, G = (0, p.e)(t), F = [];
+    }), M = (0, a.bG)([C.Ay], () => C.Ay.getCurrentEmbeddedActivity()), k = (0, I.A)(), O = w === E.xy.CAN_LAUNCH, U = null != D && M?.compositeInstanceId === D, B = null != n ? n : v.customId, G = (0, p.e)(t), F = [];
     G ? F.push({
-        label: v.intl.string(v.t.RscU7I),
+        label: b.intl.string(b.t.RscU7I),
         trackingArea: _.kY.PLAY,
         onClick() {
             h.A.launchFrame({
@@ -53,7 +53,7 @@ function b(e) {
             })
         }
     }) : (O && F.push({
-        label: null == D ? v.intl.string(v.t.RscU7I) : U ? v.intl.string(v.t.DPfdsq) : v.intl.string(v.t.sqe0hj),
+        label: null == D ? b.intl.string(b.t.RscU7I) : U ? b.intl.string(b.t.DPfdsq) : b.intl.string(b.t.sqe0hj),
         trackingArea: _.kY.PLAY,
         onClick() {
             (0, f.su)({
@@ -68,7 +68,7 @@ function b(e) {
         },
         disabled: U
     }), L && !O && F.push({
-        label: v.intl.string(v.t.JeK1Wg),
+        label: b.intl.string(b.t.JeK1Wg),
         trackingArea: _.kY.PLAY,
         onClick() {
             (0, s.Q)({
@@ -91,10 +91,10 @@ function b(e) {
             bot: t.bot
         }),
         info: (0, i.jsx)("div", {
-            children: b.description
+            children: v.description
         }),
-        staticBannerSrc: b.getAssetURL(),
-        title: b.title,
+        staticBannerSrc: v.getAssetURL(),
+        title: v.title,
         trackingConfig: {
             id: t.id,
             linkType: c.J.CUSTOM_ACTIVITY_LINK,

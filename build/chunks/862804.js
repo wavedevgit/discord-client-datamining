@@ -81,12 +81,12 @@ class h {
         if (null == E) return {
             snapshotIndex: g
         };
-        let v = h.getGuild(E) ?? p.getGuild(E);
-        return null == v ? {
+        let b = h.getGuild(E) ?? p.getGuild(E);
+        return null == b ? {
             snapshotIndex: g
         } : {
             snapshotIndex: g,
-            footerInfo: m(v, f)
+            footerInfo: m(b, f)
         }
     }
 }

@@ -1,5 +1,5 @@
 /** chunk id: 421351 params = (module,exports,require) **/
-r.r(e.exports = {
+a.r(e.exports = {
     grid: "grid__1b670",
     pagination: "pagination__1b670",
     pageNumbers: "pageNumbers__1b670",

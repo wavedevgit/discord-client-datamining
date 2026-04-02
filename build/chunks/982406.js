@@ -1,33 +1,33 @@
 /** chunk id: 982406 params = (module,exports,require) **/
-n.d(t, {
-    A: () => _
+a.d(t, {
+    A: () => u
 });
-var i = n(627968),
-    a = n(64700),
-    r = n(503698),
-    l = n.n(r),
-    s = n(776231),
-    o = n(664111),
-    d = n(67281),
-    c = n(838541),
-    u = n(525078);
+var n = a(627968),
+    r = a(64700),
+    o = a(503698),
+    i = a.n(o),
+    c = a(776231),
+    l = a(664111),
+    s = a(67281),
+    _ = a(838541),
+    d = a(525078);
 
-function _(e) {
+function u(e) {
     let {
         attachment: t,
-        posterUrl: n,
-        guildId: r,
-        className: _
-    } = e, m = t.width ?? 0, h = t.height ?? 0, p = m >= h ? "landscape" : "portrait", g = (0, s.AE)({
-        src: n,
+        posterUrl: a,
+        guildId: o,
+        className: u
+    } = e, m = t.width ?? 0, p = t.height ?? 0, b = m >= p ? "landscape" : "portrait", C = (0, c.AE)({
+        src: a,
         width: m,
-        height: h
-    }), A = a.useCallback(e => {
+        height: p
+    }), f = r.useCallback(e => {
         let {
-            playerState: n,
-            isControlBarExpanded: a
+            playerState: a,
+            isControlBarExpanded: r
         } = e;
-        return (0, i.jsx)(d.A, {
+        return (0, n.jsx)(s.A, {
             createdAt: null != t.clip_created_at ? Date.parse(t.clip_created_at) : void 0,
             participantIds: t.clip_participants?.map(e => {
                 let {
@@ -37,27 +37,27 @@ function _(e) {
             }) ?? [],
             applicationId: t.application?.id,
             title: t.title,
-            guildId: r,
-            playerState: n,
-            isControlBarExpanded: a
+            guildId: o,
+            playerState: a,
+            isControlBarExpanded: r
         })
-    }, [t, r]);
-    return (0, i.jsx)("div", {
-        className: l()(u.k, _),
+    }, [t, o]);
+    return (0, n.jsx)("div", {
+        className: i()(d.k, u),
         style: {
-            aspectRatio: `${m} / ${h}`,
-            maxHeight: c.Rk
+            aspectRatio: `${m} / ${p}`,
+            maxHeight: _.Rk
         },
-        children: (0, i.jsx)(o.A, {
+        children: (0, n.jsx)(l.A, {
             src: t.url,
             downloadUrl: t.url,
             downloadContentType: t.content_type,
-            poster: g,
+            poster: C,
             posterPlaceholder: t.placeholder,
             posterPlaceholderVersion: t.placeholder_version,
             active: !1,
-            orientation: p,
-            renderPersistentOverlay: A,
+            orientation: b,
+            renderPersistentOverlay: f,
             targetTimeSec: 1 / 0,
             parentTransitionState: null,
             onOptimisticProgressUpdate: () => {},

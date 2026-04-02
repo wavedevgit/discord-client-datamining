@@ -1,6 +1,6 @@
 /** chunk id: 448894 params = (module,exports,require) **/
 n.d(t, {
-    A: () => b
+    A: () => v
 });
 var i = n(627968),
     a = n(64700),
@@ -22,18 +22,18 @@ var i = n(627968),
     C = n(652215),
     I = n(172799),
     E = n(985018),
-    v = n(147673);
+    b = n(147673);
 
-function b(e) {
+function v(e) {
     let t, {
             invite: n,
             currentUserId: r,
-            guild: b,
+            guild: v,
             message: T,
             onTransitionToInviteChannel: S,
             onAcceptInstantInvite: y
         } = e,
-        N = b?.id,
+        N = v?.id,
         j = (0, o.bG)([g.A], () => g.A.getGuildId()),
         L = (0, o.bG)([p.A], () => null != n && null != n.target_user ? p.A.getActiveStreamForUser(n.target_user.id, N) : null, [n, N]),
         R = (0, o.bG)([p.A], () => null != n && null != n.target_user ? p.A.getStreamForUser(n.target_user.id, N) : null, [n, N]),
@@ -60,10 +60,10 @@ function b(e) {
                 invite_instance_id: (0, _._U)(n.code, T.id)
             }, P)
         }, [n, T, P, w, S, y]),
-        G = null != b;
-    if (null == b) {
+        G = null != v;
+    if (null == v) {
         if (null == n.guild) return (0, i.jsx)(f.A, {});
-        b = (0, A.DY)(n.guild)
+        v = (0, A.DY)(n.guild)
     }
     let F = null != n.channel ? (0, h.OY)(n.channel) : null,
         H = x.Ay.getName(k),
@@ -75,19 +75,19 @@ function b(e) {
     }), q = E.intl.string(E.t.Wdi5E1)) : (W = "active", w && (q = E.intl.string(E.t.Q1W99y), W = "secondary"), t = O ? E.intl.string(E.t["4hyaHu"]) : E.intl.formatToPlainString(E.t.QmlLEq, {
         name: H
     }));
-    let z = j === b.id && null != F ? (0, i.jsx)(m.A.Channel, {
+    let z = j === v.id && null != F ? (0, i.jsx)(m.A.Channel, {
         channel: F
     }) : E.intl.formatToPlainString(E.t.u0vaDE, {
-        guildName: b.name
+        guildName: v.name
     });
     return (0, i.jsxs)(m.A, {
         children: [(0, i.jsx)(m.A.Header, {
             text: E.intl.string(E.t["wS+5Wb"])
         }), (0, i.jsxs)(m.A.Body, {
             children: [(0, i.jsxs)("div", {
-                className: v.iH,
+                className: b.iH,
                 children: [(0, i.jsx)(m.A.Icon, {
-                    guild: b,
+                    guild: v,
                     onClick: G && D ? B : void 0
                 }), (0, i.jsx)(m.A.Info, {
                     title: t,

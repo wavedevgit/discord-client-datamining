@@ -1,6 +1,6 @@
 /** chunk id: 431040 params = (module,exports,require) **/
 n.d(t, {
-    A: () => p
+    A: () => _
 });
 var a = n(627968),
     l = n(64700),
@@ -23,12 +23,12 @@ function f() {
         children: h.intl.string(h.t.GruYxV)
     })
 }
-let p = function(e) {
+let _ = function(e) {
     let {
         application: t,
         detectedGame: n,
-        trackAction: p
-    } = e, _ = l.useMemo(() => n.genres.map(r.du).join(", "), [n]), v = n.publishers.join(", "), A = n.developers.join(", "), j = n.firstReleaseDate, E = (0, o.A)(n), C = (0, c.Y)(n), I = !(0, s.uJ)(_), b = !(0, s.uJ)(v), N = !(0, s.uJ)(A), S = !(0, s.uJ)(j), T = E.length > 0, k = C.length > 0 && !C.every(e => (0, s.uJ)(e.url));
+        trackAction: _
+    } = e, p = l.useMemo(() => n.genres.map(r.du).join(", "), [n]), v = n.publishers.join(", "), A = n.developers.join(", "), j = n.firstReleaseDate, E = (0, o.A)(n), C = (0, c.Y)(n), I = !(0, s.uJ)(p), b = !(0, s.uJ)(v), N = !(0, s.uJ)(A), S = !(0, s.uJ)(j), T = E.length > 0, k = C.length > 0 && !C.every(e => (0, s.uJ)(e.url));
     return (0, a.jsxs)("div", {
         className: g.uW,
         children: [(0, a.jsx)("div", {
@@ -50,7 +50,7 @@ let p = function(e) {
                     variant: "text-sm/normal",
                     color: "text-subtle",
                     className: g.Gu,
-                    children: _
+                    children: p
                 }) : (0, a.jsx)(f, {})]
             }), (0, a.jsxs)("div", {
                 className: g.J1,
@@ -114,7 +114,7 @@ let p = function(e) {
                     className: g.Gu,
                     children: C.map(e => (0, a.jsx)(u.K, {
                         website: e,
-                        trackAction: p
+                        trackAction: _
                     }, e.url))
                 }) : (0, a.jsx)(f, {})]
             }), (0, a.jsxs)("div", {
@@ -136,7 +136,7 @@ let p = function(e) {
             className: g.OQ,
             children: (0, a.jsx)(d.A, {
                 application: t,
-                trackAction: p
+                trackAction: _
             })
         })]
     })

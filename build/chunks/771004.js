@@ -1,7 +1,7 @@
 /** chunk id: 771004 params = (module,exports,require) **/
 n.d(t, {
     A: () => v,
-    h: () => _
+    h: () => p
 });
 var a = n(627968),
     l = n(64700),
@@ -17,20 +17,20 @@ var a = n(627968),
     h = n(936636),
     g = n(985018),
     f = n(325952),
-    p = n(679080);
+    _ = n(679080);
 
-function _(e) {
+function p(e) {
     let {
         detectedGame: t,
         trackAction: n
-    } = e, [i, x] = l.useState(t?.summaryLocalized != null), [_, v] = l.useState(!0), [A, j] = l.useState(!1), E = l.useRef(null), {
+    } = e, [i, x] = l.useState(t?.summaryLocalized != null), [p, v] = l.useState(!0), [A, j] = l.useState(!1), E = l.useRef(null), {
         width: C,
         height: I
     } = (0, u.A)();
     return (l.useEffect(() => {
         let e = E.current;
-        null != e && j(e.scrollHeight - e.clientHeight > 1 || !_)
-    }, [E, C, I, _]), null == t.summary) ? null : (0, a.jsxs)("div", {
+        null != e && j(e.scrollHeight - e.clientHeight > 1 || !p)
+    }, [E, C, I, p]), null == t.summary) ? null : (0, a.jsxs)("div", {
         className: r()(f.fi, f.mX),
         children: [null != t.summaryLocalized && (0, a.jsxs)("div", {
             className: r()(f.nM, f.Lc),
@@ -48,20 +48,20 @@ function _(e) {
             })]
         }), (0, a.jsx)(c.EYj, {
             ref: E,
-            lineClamp: _ ? 8 : void 0,
+            lineClamp: p ? 8 : void 0,
             variant: "text-sm/normal",
             children: i ? t.summaryLocalized : t.summary
         }), A && (0, a.jsx)(d.DUT, {
             className: f.vk,
             onClick: () => {
-                n(_ ? m.Ws.ShowMore : m.Ws.ShowLess), v(!_)
+                n(p ? m.Ws.ShowMore : m.Ws.ShowLess), v(!p)
             },
             children: (0, a.jsx)(c.EYj, {
                 variant: "text-sm/semibold",
-                children: _ ? g.intl.string(g.t.lBeKY2) : g.intl.string(g.t["6MwJo/"])
+                children: p ? g.intl.string(g.t.lBeKY2) : g.intl.string(g.t["6MwJo/"])
             })
         }), (0, a.jsx)(h.A, {
-            className: p.B,
+            className: _.B,
             detectedGame: t
         })]
     })
@@ -98,7 +98,7 @@ function v(e) {
         isTwoColumn: u
     } = (0, x.c)(), h = l.useMemo(() => u ? 8 : 5, [u]);
     if (null == t.summary) return null;
-    let p = s ? g.intl.string(g.t["6MwJo/"]) : g.intl.string(g.t.lBeKY2);
+    let _ = s ? g.intl.string(g.t["6MwJo/"]) : g.intl.string(g.t.lBeKY2);
     return (0, a.jsxs)("div", {
         className: r()(f.fi, f.mX),
         children: [(0, a.jsx)(c.EYj, {
@@ -108,7 +108,7 @@ function v(e) {
             children: t.summary
         }), o && (0, a.jsx)(c.QWc, {
             onClick: d,
-            text: p
+            text: _
         })]
     })
 }

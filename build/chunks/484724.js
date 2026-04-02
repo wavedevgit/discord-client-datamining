@@ -25,9 +25,9 @@ function I(e) {
     let {
         code: t
     } = e, [n, I, E] = t.split("-"), {
-        analyticsLocations: v
+        analyticsLocations: b
     } = (0, s.Ay)(), {
-        guildScheduledEvent: b,
+        guildScheduledEvent: v,
         guild: T,
         channel: S,
         isMember: y
@@ -43,17 +43,17 @@ function I(e) {
         }
     }, [n, I]);
     return a.useEffect(() => {
-        b?.id == null && x.A.fetchGuildEvent(n, I), g.A.getGuildEventUserCounts(n, I, null != E ? [E] : []), g.A.getGuildEventsForCurrentUser(n)
-    }, [I, n, b?.id, E]), (0, i.jsx)(f.Ay, {
+        v?.id == null && x.A.fetchGuildEvent(n, I), g.A.getGuildEventUserCounts(n, I, null != E ? [E] : []), g.A.getGuildEventsForCurrentUser(n)
+    }, [I, n, v?.id, E]), (0, i.jsx)(f.Ay, {
         guild: T,
         channel: S,
-        guildScheduledEvent: b,
+        guildScheduledEvent: v,
         isMember: y,
         onAcceptInstantInvite: () => {
             if ((0, c.g)({
                     guild: T,
                     isMember: y,
-                    analyticsLocations: v
+                    analyticsLocations: b
                 }) === c.W.PROCEED) {
                 if ((0, d.V)(n)) return void(0, o.Ze)(n);
                 l.A.joinGuild(n, {

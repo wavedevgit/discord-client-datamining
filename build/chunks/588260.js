@@ -16,11 +16,11 @@ var a = n(627968),
     h = n(758836),
     g = n(985018),
     f = n(829968);
-let p = l.createContext({
+let _ = l.createContext({
         closeModal: () => {},
         trackAction: () => {}
     }),
-    _ = e => {
+    p = e => {
         let {
             skuId: t,
             aspectRatio: n
@@ -29,7 +29,7 @@ let p = l.createContext({
         } = (0, s.q)(t, !0), m = l.useContext(o.v3), {
             closeModal: x,
             trackAction: g
-        } = l.useContext(p), _ = l.useCallback(() => {
+        } = l.useContext(_), p = l.useCallback(() => {
             g(u.Ws.DiscordCollectiblesShopItem), x(), (0, r.Cz)({
                 analyticsLocations: [i.A.GAME_PROFILE],
                 analyticsSource: i.A.GAME_PROFILE,
@@ -51,7 +51,7 @@ let p = l.createContext({
                 skuId: t,
                 aspectRatio: n,
                 cardClassName: f.N,
-                onClickCard: _,
+                onClickCard: p,
                 hideWishlistButton: !0,
                 hidePrice: !0,
                 hidePrimaryCTA: !0,
@@ -75,14 +75,14 @@ function v(e) {
         closeModal: n,
         trackAction: s
     }), [n, s]);
-    return 0 === o.length ? null : (0, a.jsx)(p.Provider, {
+    return 0 === o.length ? null : (0, a.jsx)(_.Provider, {
         value: v,
         children: (0, a.jsx)(x.A, {
             title: g.intl.string(g.t["5DYPT8"]),
             onClickViewAll: f,
             children: (0, a.jsx)(d.A, {
                 gap: "md",
-                children: o.map(e => (0, a.jsx)(_, {
+                children: o.map(e => (0, a.jsx)(p, {
                     skuId: e
                 }, e))
             })

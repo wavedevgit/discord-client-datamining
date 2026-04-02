@@ -22,8 +22,8 @@ var i = n(627968),
     C = n(760751),
     I = n(320501),
     E = n(139675),
-    v = n(486020),
-    b = n(456060),
+    b = n(486020),
+    v = n(456060),
     T = n(659051),
     S = n(837197),
     y = n(359549),
@@ -56,7 +56,7 @@ function w(e) {
                 bot: n
             } = t;
             return {
-                iconSrc: (e.activity?.icon_override != null ? (0, E.uD)(t.id, e.activity?.icon_override) : null) ?? v.Ay.getApplicationIconURL({
+                iconSrc: (e.activity?.icon_override != null ? (0, E.uD)(t.id, e.activity?.icon_override) : null) ?? b.Ay.getApplicationIconURL({
                     id: t.id,
                     icon: t.icon,
                     bot: n
@@ -109,7 +109,7 @@ function w(e) {
         } = (0, _.RD)(k),
         er = (0, u.z)(ea, ei),
         el = !(0, T.A)(q, F, k.id),
-        es = (0, b.n$)(Y, F.activity?.type, el),
+        es = (0, v.n$)(Y, F.activity?.type, el),
         eo = a.useRef(null),
         ed = (0, r.bG)([I.A], () => I.A.getMessages(O.id)),
         ec = () => {

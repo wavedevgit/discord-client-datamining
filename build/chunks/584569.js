@@ -1,6 +1,6 @@
 /** chunk id: 584569 params = (module,exports,require) **/
 i.d(e, {
-    A: () => _
+    A: () => I
 });
 var n = i(311907),
     l = i(205693),
@@ -68,7 +68,7 @@ function v() {
 function y() {
     f.clear(), S.clear(), T.clear()
 }
-class I extends n.Ay.Store {
+class _ extends n.Ay.Store {
     static displayName = "RTCConnectionDesyncStore";
     initialize() {
         this.waitFor(m.A, p.default, u.A, c.A), this.syncWith([p.default], v)
@@ -86,7 +86,7 @@ class I extends n.Ay.Store {
         return S.values()
     }
 }
-let _ = new I(r.h, {
+let I = new _(r.h, {
     CONNECTION_OPEN: function() {
         y()
     },

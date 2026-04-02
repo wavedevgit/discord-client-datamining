@@ -37,9 +37,9 @@ var i = n(627968),
     C = n(841549),
     I = n(439147),
     E = n(81437),
-    v = n(652215);
+    b = n(652215);
 
-function b(e, t, n) {
+function v(e, t, n) {
     return a.useCallback(() => {
         n({
             [e]: !t
@@ -54,7 +54,7 @@ function T(e, t, n) {
         if (i.preventDefault(), i.stopPropagation(), !i.shiftKey) return void n();
         let r = `@${f.Ay.getUserTag(a,{decoration:"never"})}`,
             l = `<@${e}>`;
-        A._.dispatchToLastSubscribed(v.jej.INSERT_TEXT, {
+        A._.dispatchToLastSubscribed(b.jej.INSERT_TEXT, {
             plainText: r,
             rawText: l
         }), d.A.startTyping(t)
@@ -62,22 +62,22 @@ function T(e, t, n) {
 }
 
 function S(e, t, n, i) {
-    let a = b("usernameProfile", n, i);
+    let a = v("usernameProfile", n, i);
     return T(e.author.id, t.id, a)
 }
 
 function y(e, t, n, i) {
-    let a = b("referencedUsernameProfile", n, i);
+    let a = v("referencedUsernameProfile", n, i);
     return T(e?.author.id, t.id, a)
 }
 
 function N(e, t, n, i) {
-    let a = b("interactionUsernameProfile", n, i);
+    let a = v("interactionUsernameProfile", n, i);
     return T(e?.user.id, t.id, a)
 }
 
 function j(e, t, n, i) {
-    let a = b("referencedUsernameProfile", n, i);
+    let a = v("referencedUsernameProfile", n, i);
     return T(e, t.id, a)
 }
 
@@ -88,15 +88,15 @@ function L(e) {
 }
 
 function R(e, t) {
-    return L(b("avatarProfile", e, t))
+    return L(v("avatarProfile", e, t))
 }
 
 function P(e, t) {
-    return L(b("referencedAvatarProfile", e, t))
+    return L(v("referencedAvatarProfile", e, t))
 }
 
 function w(e, t) {
-    return L(b("interactionAvatarProfile", e, t))
+    return L(v("interactionAvatarProfile", e, t))
 }
 
 function D(e, t, r, o) {
@@ -105,7 +105,7 @@ function D(e, t, r, o) {
     } = t, {
         id: u,
         flags: p
-    } = e, A = (0, l.Lt)(p, v.pr7.EPHEMERAL), f = (0, c.Us)();
+    } = e, A = (0, l.Lt)(p, b.pr7.EPHEMERAL), f = (0, c.Us)();
     return a.useCallback((e, t) => {
         if (A) return;
         if (!x.isPlatformEmbedded) {
@@ -117,7 +117,7 @@ function D(e, t, r, o) {
         let a = _.A.getChannel(d),
             l = h.A.getMessage(d, u),
             c = m.A.isEditing(d, u);
-        null == a || null == l || c || (g.default.track(v.HAw.MESSAGE_POPOUT_MENU_OPENED_DESKTOP, {
+        null == a || null == l || c || (g.default.track(b.HAw.MESSAGE_POPOUT_MENU_OPENED_DESKTOP, {
             message_id: u,
             channel: d,
             location: "right_click"
@@ -190,10 +190,10 @@ function B(e) {
     } = e, r = n.author.id, l = `${t}:${r}`, s = a.useRef(i), [o, d] = a.useState(i);
     s.current = o || s.current;
     let c = a.useCallback(() => {
-            (0, u.cE)(), o || (A._.dispatchKeyed(v.zOV.ANIMATE_CHAT_AVATAR, l, !0), d(!0))
+            (0, u.cE)(), o || (A._.dispatchKeyed(b.zOV.ANIMATE_CHAT_AVATAR, l, !0), d(!0))
         }, [o, l]),
         _ = a.useCallback(() => {
-            A._.dispatchKeyed(v.zOV.ANIMATE_CHAT_AVATAR, l, !1), d(!1)
+            A._.dispatchKeyed(b.zOV.ANIMATE_CHAT_AVATAR, l, !1), d(!1)
         }, [l]);
     return {
         hasHovered: s.current,
@@ -236,7 +236,7 @@ function F(e, t) {
 }
 
 function H(e, t) {
-    let n = b("interactionData", e, t);
+    let n = v("interactionData", e, t);
     return a.useCallback(e => {
         e.preventDefault(), e.stopPropagation(), n()
     }, [n])

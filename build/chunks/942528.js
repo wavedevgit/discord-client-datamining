@@ -16,8 +16,8 @@ var a = n(627968),
     h = n(322789),
     g = n(506326),
     f = n(985018),
-    p = n(930676),
-    _ = n(325952);
+    _ = n(930676),
+    p = n(325952);
 let v = e => {
     let {
         entry: t,
@@ -68,7 +68,7 @@ let v = e => {
         children: e => (0, a.jsx)(c.DUT, {
             innerRef: I,
             ...e,
-            className: p.GA,
+            className: _.GA,
             children: (0, a.jsx)(c.vN3, {
                 offset: {
                     top: 4,
@@ -78,15 +78,15 @@ let v = e => {
                 },
                 children: (0, a.jsxs)(a.Fragment, {
                     children: [(0, a.jsx)("img", {
-                        className: p.my,
+                        className: _.my,
                         src: T,
                         alt: f.intl.formatToPlainString(f.t.IzVXxY, {
                             userName: S
                         })
                     }), (0, a.jsx)("div", {
-                        className: p.Su,
+                        className: _.Su,
                         children: (0, a.jsxs)("div", {
-                            className: r()(_.fi, _.Kt),
+                            className: r()(p.fi, p.Kt),
                             children: [(0, a.jsx)(c.Text, {
                                 variant: "text-md/medium",
                                 color: "text-strong",
@@ -100,7 +100,7 @@ let v = e => {
                             })]
                         })
                     }), null != j ? j : (0, a.jsx)("div", {
-                        className: p.Br,
+                        className: _.Br,
                         children: (0, a.jsx)(c.W4J, {
                             size: "sm"
                         })

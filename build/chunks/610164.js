@@ -1,36 +1,36 @@
 /** chunk id: 610164 params = (module,exports,require) **/
-t.d(s, {
-    default: () => o
+s.d(e, {
+    default: () => x
 });
-var n = t(627968),
-    i = t(192480),
-    l = t(178090),
-    a = t(602425),
-    r = t(350601),
-    c = t(985018),
-    d = t(386912);
+var n = s(627968),
+    i = s(192480),
+    l = s(178090),
+    a = s(602425),
+    c = s(350601),
+    r = s(985018),
+    o = s(386912);
 
-function o(e) {
+function x(t) {
     let {
-        onConfirm: s,
-        ...t
-    } = e;
+        onConfirm: e,
+        ...s
+    } = t;
     return (0, n.jsxs)(i.A, {
-        ...t,
+        ...s,
         children: [(0, n.jsx)(l.A, {
             variant: "heading-xl/normal",
-            children: c.intl.string(r.default.pMePCC)
+            children: r.intl.string(c.default.pMePCC)
         }), (0, n.jsxs)("div", {
-            className: d.q,
+            className: o.q,
             children: [(0, n.jsx)(a.A, {
-                textClassName: d.x,
-                text: c.intl.string(c.t["ETE/oC"]),
-                onClick: t.onClose
+                textClassName: o.x,
+                text: r.intl.string(r.t["ETE/oC"]),
+                onClick: s.onClose
             }), (0, n.jsx)(a.A, {
-                textClassName: d.x,
-                text: c.intl.string(r.default.UV91ck),
+                textClassName: o.x,
+                text: r.intl.string(c.default.UV91ck),
                 onClick: () => {
-                    t.onClose(), s()
+                    s.onClose(), e()
                 }
             })]
         })]

@@ -22,8 +22,8 @@ var i = n(627968),
     C = n(651892),
     I = n(710969),
     E = n(792620),
-    v = n(814793),
-    b = n(201805),
+    b = n(814793),
+    v = n(201805),
     T = n(545986),
     S = n(654487),
     y = n(652215),
@@ -37,7 +37,7 @@ function L(e) {
         L = (0, A.Ut)(),
         R = (0, f.go)(),
         P = (0, C.wr)(e.quest),
-        w = !0 === e.showShareLink && (0, v.E0)(e.quest.config),
+        w = !0 === e.showShareLink && (0, b.E0)(e.quest.config),
         {
             handleComplete: D,
             handleProgress: M,
@@ -51,7 +51,7 @@ function L(e) {
             ctaContent: x.Cy.CONTEXT_MENU_OPEN_GAME_LINK,
             sourceQuestContent: e.sourceQuestContent
         }),
-        G = (0, b.Lk)({
+        G = (0, v.Lk)({
             isShareable: w,
             questId: e.quest.id,
             trackingCtx: a.useMemo(() => ({

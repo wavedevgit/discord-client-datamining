@@ -23,8 +23,8 @@ var i = n(627968),
     C = n(386952),
     I = n(381969),
     E = n(920814),
-    v = n(235665),
-    b = n(985018),
+    b = n(235665),
+    v = n(985018),
     T = n(66996);
 
 function S(e) {
@@ -37,7 +37,7 @@ function S(e) {
         children: [(0, i.jsx)(o.Text, {
             variant: "text-sm/medium",
             color: "text-strong",
-            children: b.intl.string(b.t.J4cw1q)
+            children: v.intl.string(v.t.J4cw1q)
         }), (0, i.jsx)(o.hKd, {
             size: 4,
             horizontal: !0
@@ -96,7 +96,7 @@ function N(e) {
     } = (0, C.e)(), f = (n?.description?.trim().length ?? 0) > 0, [N, j] = a.useState(1), L = (0, d.A)("(max-width: 1439px)"), {
         selectedTab: R,
         isPhantomPreview: P
-    } = (0, I.k)(), w = R === E.B.GUILD_PRODUCTS_PREVIEW ? b.intl.string(b.t["LvXy/H"]) : b.intl.string(b.t.XyqKh8), D = f ? (0, i.jsxs)(i.Fragment, {
+    } = (0, I.k)(), w = R === E.B.GUILD_PRODUCTS_PREVIEW ? v.intl.string(v.t["LvXy/H"]) : v.intl.string(v.t.XyqKh8), D = f ? (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(A, {
             lineClamp: L || 2 === N ? 2 : 3,
             children: (0, i.jsx)(o.Text, {
@@ -108,7 +108,7 @@ function N(e) {
             children: [(0, i.jsx)(o.hKd, {
                 size: 4
             }), (0, i.jsx)(S, {
-                onClick: () => (0, v.A)({
+                onClick: () => (0, b.A)({
                     guildId: r
                 })
             })]
@@ -116,7 +116,7 @@ function N(e) {
     }) : (0, i.jsx)(o.Text, {
         variant: "text-sm/normal",
         color: "text-default",
-        children: P ? w : b.intl.string(b.t["NY/FIW"])
+        children: P ? w : v.intl.string(v.t["NY/FIW"])
     });
     return (0, i.jsxs)("div", {
         className: T.kL,
@@ -140,7 +140,7 @@ function N(e) {
                         variant: "heading-xl/semibold",
                         color: "text-strong",
                         lineClamp: 2,
-                        children: P ? b.intl.string(b.t.rtgp7q) : b.intl.formatToPlainString(b.t.NZeik9, {
+                        children: P ? v.intl.string(v.t.rtgp7q) : v.intl.formatToPlainString(v.t.NZeik9, {
                             guildName: t.name
                         })
                     })
@@ -149,7 +149,7 @@ function N(e) {
                 }), (0, i.jsx)(o.Text, {
                     variant: "text-md/normal",
                     color: "text-default",
-                    children: b.intl.format(b.t["7JwrlH"], {
+                    children: v.intl.format(v.t["7JwrlH"], {
                         username: u,
                         usernameHook: function(e, t) {
                             return (0, i.jsx)("span", {

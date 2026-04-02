@@ -22,8 +22,8 @@ var i = n(627968),
     C = n(574660),
     I = n(429913),
     E = n(713654),
-    v = n(21599),
-    b = n(734057),
+    b = n(21599),
+    v = n(734057),
     T = n(71393),
     S = n(576705),
     y = n(287809),
@@ -146,7 +146,7 @@ function B(e) {
             } = e;
             return A.id === t
         })),
-        w = b.A.getChannel(r.channel?.id),
+        w = v.A.getChannel(r.channel?.id),
         k = (0, d.bG)([S.A], () => null != w && S.A.can(P.xBc.USE_EMBEDDED_ACTIVITIES, w), [w]),
         {
             analyticsLocations: O
@@ -159,7 +159,7 @@ function B(e) {
                 action: "accept",
                 inviter_id: l.author.id,
                 invite_message_id: l.id,
-                invite_instance_id: (0, v._U)(r.code, l.id)
+                invite_instance_id: (0, b._U)(r.code, l.id)
             }, O), _.Ay.acceptInviteAndTransitionToInviteChannel({
                 inviteKey: r.code,
                 context: s("Invite Button Embed", r.code),
@@ -214,12 +214,12 @@ function G(e) {
         handleAcceptInvite: I,
         onView: E
     } = e, {
-        bot: v,
-        icon: b
+        bot: b,
+        icon: v
     } = t, T = j.Ay.getApplicationIconURL({
         id: t.id,
-        icon: b,
-        bot: v
+        icon: v,
+        bot: b
     }), S = (0, C.F)(t), y = (0, f.f)(t), N = n.length, L = a.useMemo(() => [{
         label: m,
         trackingArea: r ? x.kY.PLAY : x.kY.JOIN_SERVER,

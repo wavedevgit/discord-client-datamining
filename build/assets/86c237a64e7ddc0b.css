@@ -1,0 +1,13 @@
+.footer_e2cc0b {
+    display: flex;
+    gap: 8px;
+    justify-content: flex-end;
+    margin-top: var(--space-16)
+}
+
+.button_e2cc0b {
+    font-size: 32px;
+    line-height: 16px
+}
+
+/*# sourceMappingURL=86c237a64e7ddc0b.css.map*/

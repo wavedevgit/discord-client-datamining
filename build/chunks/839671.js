@@ -19,12 +19,12 @@ let g = [s.V.OFFICIAL, s.V.TWITTER, s.V.YOUTUBE],
     f = {
         colorClass: h.wP
     },
-    p = {
+    _ = {
         size: "xs",
         colorClass: h.wP
     };
 
-function _(e, t) {
+function p(e, t) {
     switch (e.category) {
         case s.V.OFFICIAL:
             return {
@@ -87,7 +87,7 @@ function v(e) {
         action: i,
         icon: r,
         title: s
-    } = _(t, f), d = l.useCallback(() => {
+    } = p(t, f), d = l.useCallback(() => {
         n(i)
     }, [i, n]);
     return (0, a.jsx)(c.m, {
@@ -138,7 +138,7 @@ function j(e) {
         action: r,
         icon: s,
         title: d
-    } = _(t, p), m = l.useCallback(() => {
+    } = p(t, _), m = l.useCallback(() => {
         n(r), i(t.url)
     }, [r, i, n, t.url]);
     return (0, a.jsx)(c.m, {

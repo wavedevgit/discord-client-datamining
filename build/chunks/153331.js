@@ -23,8 +23,8 @@ var n, l = i(627968),
     C = i(692969),
     v = i(263063),
     y = i(804630),
-    I = i(886019),
-    _ = i(559405),
+    _ = i(886019),
+    I = i(559405),
     N = i(290987),
     x = i(345942),
     j = i(763758),
@@ -171,7 +171,7 @@ class J extends r.PureComponent {
         } = this.props;
         if (t.type === F.$pd.HANG_STATUS) return (0, l.jsx)("div", {
             className: W.assets,
-            children: (0, l.jsx)(_.A, {
+            children: (0, l.jsx)(I.A, {
                 userId: n.id,
                 hangStatusActivity: t,
                 size: 40,
@@ -294,7 +294,7 @@ class J extends r.PureComponent {
         let o = (0, D.A)(t),
             d = t.name,
             u = d;
-        return (s === F.$pd.HANG_STATUS ? u = (0, I.Au)(e.id, t) : o && null != i ? u = (0, l.jsx)("span", {
+        return (s === F.$pd.HANG_STATUS ? u = (0, _.Au)(e.id, t) : o && null != i ? u = (0, l.jsx)("span", {
             className: this.props.enableUserHoverActivities ? W.activityNameUserActivityHover : W.activityName,
             children: u
         }) : !o && (d = r, u = r, (0, b.A)(t) && null != t.sync_id && null != r ? u = (0, l.jsx)(m.MzZ, {

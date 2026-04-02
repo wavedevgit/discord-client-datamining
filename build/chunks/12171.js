@@ -1479,8 +1479,6 @@ function I() {
         children: [(0, a.jsx)(N, {
             experimentName: c.W2.definition.name
         }), (0, a.jsx)(N, {
-            experimentName: c.uD.definition.name
-        }), (0, a.jsx)(N, {
             experimentName: c.nG.definition.name
         })]
     })

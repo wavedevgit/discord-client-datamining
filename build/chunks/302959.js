@@ -56,19 +56,19 @@ let v = a.A.Types,
             hideHeader: E = !1,
             showChannelDetails: v = !1,
             ...y
-        } = t, I = (0, r.bG)([g.A, A.A], () => A.A.getChannel(g.A.getVoiceStateForUser(i.id)?.channelId)), _ = (0, c.v)("UserActivityContainer", I), N = (0, r.bG)([m.A], () => o ? m.A.getAnyStreamForUser(i.id) : null), x = e?.type === T.$pd.HANG_STATUS && _ ? I : null, j = (0, r.bG)([h.A, g.A, A.A], () => (0, s.A)(e, T.jUm.EMBEDDED) ? h.A.getGuild(A.A.getChannel(g.A.getVoiceStateForSession(i.id, e?.session_id)?.channelId)?.getGuildId()) : null != x ? h.A.getGuild(x.getGuildId()) : null), P = (0, r.bG)([h.A], () => null != N ? h.A.getGuild(N.guildId) : null), L = (0, r.bG)([d.A], () => {
+        } = t, _ = (0, r.bG)([g.A, A.A], () => A.A.getChannel(g.A.getVoiceStateForUser(i.id)?.channelId)), I = (0, c.v)("UserActivityContainer", _), N = (0, r.bG)([m.A], () => o ? m.A.getAnyStreamForUser(i.id) : null), x = e?.type === T.$pd.HANG_STATUS && I ? _ : null, j = (0, r.bG)([h.A, g.A, A.A], () => (0, s.A)(e, T.jUm.EMBEDDED) ? h.A.getGuild(A.A.getChannel(g.A.getVoiceStateForSession(i.id, e?.session_id)?.channelId)?.getGuildId()) : null != x ? h.A.getGuild(x.getGuildId()) : null), P = (0, r.bG)([h.A], () => null != N ? h.A.getGuild(N.guildId) : null), L = (0, r.bG)([d.A], () => {
             if (null != e)
                 if (null != e.application_id) return d.A.getApplication(e.application_id);
                 else return d.A.getApplicationByName(e.name);
             return null
         });
         return (l.useEffect(() => {
-            e?.type === T.$pd.HANG_STATUS && _ && f.default.track(T.HAw.VIEW_HANG_STATUS, {
+            e?.type === T.$pd.HANG_STATUS && I && f.default.track(T.HAw.VIEW_HANG_STATUS, {
                 source: "UserActivity",
                 other_user_id: i.id,
                 ...(0, u.A)(x?.id)
             })
-        }, [e?.type, _, x, i.id]), e?.type !== T.$pd.HANG_STATUS || _) ? (0, n.jsx)(a.A, {
+        }, [e?.type, I, x, i.id]), e?.type !== T.$pd.HANG_STATUS || I) ? (0, n.jsx)(a.A, {
             ...y,
             activity: e,
             user: i,
@@ -76,7 +76,7 @@ let v = a.A.Types,
             hideHeader: E,
             activityGuild: j ?? P,
             showChannelDetails: v,
-            channel: v ? I : void 0,
+            channel: v ? _ : void 0,
             enableUserHoverActivities: y.enableUserHoverActivities,
             renderActions: S ? () => (0, n.jsx)(C, {
                 ...y,
