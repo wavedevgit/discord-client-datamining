@@ -1,14 +1,14 @@
 /** chunk id: 345938 params = (module,exports,require) **/
 n.d(t, {
-    d: () => i
+    d: () => s
 });
 var a = n(627968),
     l = n(397927),
-    s = n(294454);
-let i = e => {
+    i = n(294454);
+let s = e => {
     let {
         sku: t,
-        guildId: i,
+        guildId: s,
         source: r,
         analyticsLocations: o,
         analyticsContext: d
@@ -20,13 +20,13 @@ let i = e => {
         return n => (0, a.jsx)(e, {
             ...n,
             sku: t,
-            guildId: i,
+            guildId: s,
             source: r,
             analyticsLocations: o,
             analyticsContext: d
         })
     }, {
         stackingBehavior: "stack",
-        modalKey: s.aU
+        modalKey: i.aU
     })
 }

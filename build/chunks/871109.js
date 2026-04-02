@@ -11,8 +11,8 @@ var i, l = n(311907),
     d = ((i = {})[i.NOT_FETCHED = 0] = "NOT_FETCHED", i[i.FETCHING = 1] = "FETCHING", i[i.FETCHED = 2] = "FETCHED", i);
 let c = {},
     u = {},
-    _ = {},
-    m = 10 * a.A.Millis.MINUTE;
+    m = {},
+    _ = 10 * a.A.Millis.MINUTE;
 
 function h(e) {
     return `guild:${e}`
@@ -47,12 +47,12 @@ class x extends l.Ay.Store {
         return u[e] ?? 0
     }
     isGuildProductsCacheExpired(e) {
-        return Date.now() - (_[e] ?? 0) > m
+        return Date.now() - (m[e] ?? 0) > _
     }
 }
 let f = new x(r.h, {
     CONNECTION_OPEN: function() {
-        g.clear(), c = {}, u = {}, _ = {}
+        g.clear(), c = {}, u = {}, m = {}
     },
     GUILD_PRODUCTS_FETCH: function(e) {
         let {
@@ -67,7 +67,7 @@ let f = new x(r.h, {
             guildId: t,
             products: n
         } = e;
-        c[t] = 2, _[t] = Date.now(), n.forEach(e => {
+        c[t] = 2, m[t] = Date.now(), n.forEach(e => {
             g.set(e.id, e), u[e.id] = 2
         })
     },

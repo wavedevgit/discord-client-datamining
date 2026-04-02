@@ -12,8 +12,8 @@ var l = n(503698),
     d = n(18437),
     c = n(590202),
     u = n(545986),
-    _ = n(394900),
-    m = n(652215),
+    m = n(394900),
+    _ = n(652215),
     h = n(985018),
     p = n(254885),
     g = n(956324);
@@ -32,7 +32,7 @@ function A(e) {
             onClick: () => {
                 (0, u.navigateToQuestHome)({
                     fromContent: n
-                }), o.default.track(m.HAw.QUEST_CONTENT_CLICKED, {
+                }), o.default.track(_.HAw.QUEST_CONTENT_CLICKED, {
                     quest_id: t,
                     click_id: (0, r.A)(),
                     cta_name: c.Cy.VIEW_QUESTS,
@@ -54,7 +54,7 @@ function x(e) {
     } = e, {
         containerRef: o,
         size: c
-    } = (0, _.L)();
+    } = (0, m.L)();
     return (0, d.Ii)(n, t), (0, i.jsxs)("div", {
         ref: e => {
             o.current = e

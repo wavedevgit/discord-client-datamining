@@ -12,9 +12,9 @@ var i = n(47167),
     c = n(486020),
     u = n(405269);
 n(427930);
-var _ = n(985018);
+var m = n(985018);
 
-function m(e, t) {
+function _(e, t) {
     return {
         originLabel: e.name,
         originIconUrl: c.Ay.getGuildIconURL({
@@ -24,7 +24,7 @@ function m(e, t) {
             canAnimate: !1
         }),
         timestampLabel: t,
-        accessibilityLabel: _.intl.formatToPlainString(_.t["+l04BN"], {
+        accessibilityLabel: m.intl.formatToPlainString(m.t["+l04BN"], {
             origin: e.name,
             timestamp: t
         })
@@ -60,7 +60,7 @@ class h {
                     snapshotIndex: g
                 } : {
                     snapshotIndex: g,
-                    footerInfo: m(e, f)
+                    footerInfo: _(e, f)
                 }
             }
             return c.can(l.accessPermissions, l) ? {
@@ -68,7 +68,7 @@ class h {
                 footerInfo: {
                     originLabel: E = (0, i.m1)(l, t, n, !0),
                     timestampLabel: f,
-                    accessibilityLabel: _.intl.formatToPlainString(_.t["+l04BN"], {
+                    accessibilityLabel: m.intl.formatToPlainString(m.t["+l04BN"], {
                         origin: E,
                         timestamp: f
                     })
@@ -86,7 +86,7 @@ class h {
             snapshotIndex: g
         } : {
             snapshotIndex: g,
-            footerInfo: m(v, f)
+            footerInfo: _(v, f)
         }
     }
 }

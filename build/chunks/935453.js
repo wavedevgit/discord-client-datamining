@@ -1,6 +1,6 @@
 /** chunk id: 935453 params = (module,exports,require) **/
 n.d(t, {
-    N: () => _
+    N: () => m
 });
 var i = n(627968);
 n(64700);
@@ -13,11 +13,11 @@ var l = n(835245),
     c = n(954571),
     u = n(652215);
 
-function _(e) {
+function m(e) {
     let {
         guildProductListing: t,
-        guildId: _,
-        sourceAnalyticsLocations: m
+        guildId: m,
+        sourceAnalyticsLocations: _
     } = e, h = !1, p = (0, l.A)(), g = t.id, A = () => {
         h = !0
     };
@@ -29,10 +29,10 @@ function _(e) {
             ...n,
             applicationId: t.application_id,
             skuId: g,
-            sourceAnalyticsLocations: m,
+            sourceAnalyticsLocations: _,
             guildProductContext: {
                 guildProductListingId: t.id,
-                guildId: _
+                guildId: m
             },
             loadId: p,
             onComplete: A
@@ -49,7 +49,7 @@ function _(e) {
                     payment_type: u.frM[u.VVm.ONE_TIME],
                     is_gift: !1,
                     sku_id: g,
-                    location_stack: Array.isArray(m) ? m : [m],
+                    location_stack: Array.isArray(_) ? _ : [_],
                     checkout_design: e ? d.rS.UNIFIED : d.rS.LEGACY,
                     checkout_flow: o.C.GUILD_PRODUCT_CHECKOUT
                 })

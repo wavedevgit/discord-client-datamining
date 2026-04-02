@@ -11,8 +11,8 @@ var i = n(627968),
     d = n(889137),
     c = n(615300),
     u = n(990078),
-    _ = n(397927),
-    m = n(915089),
+    m = n(397927),
+    _ = n(915089),
     h = n(956703),
     p = n(180662),
     g = n(969632),
@@ -28,7 +28,7 @@ function I(e) {
         label: n,
         canShowVoterDetails: s,
         answerId: r
-    } = e, o = (0, m.GV)(), {
+    } = e, o = (0, _.GV)(), {
         channelId: d,
         messageId: c
     } = (0, f.Tu)(), [A, x] = l.useState(""), [C, I] = l.useState(!1), v = "" !== A && C, b = l.useCallback(() => {
@@ -52,7 +52,7 @@ function I(e) {
         className: E.AA,
         children: [s ? (0, i.jsxs)(i.Fragment, {
             children: ["" !== A ? (0, i.jsx)(u.m, {
-                __unsupportedReactNodeAsText: (0, i.jsx)(_.Text, {
+                __unsupportedReactNodeAsText: (0, i.jsx)(m.Text, {
                     variant: "text-sm/normal",
                     color: "text-muted",
                     scaleFontToUserSetting: !0,
@@ -60,7 +60,7 @@ function I(e) {
                 }),
                 forceOpen: v,
                 "aria-label": !1,
-                children: (0, i.jsx)(_.QWc, {
+                children: (0, i.jsx)(m.QWc, {
                     onMouseEnter: T,
                     onMouseLeave: N,
                     onFocus: T,
@@ -71,7 +71,7 @@ function I(e) {
                     variant: "secondary",
                     textVariant: "text-xs/semibold"
                 })
-            }) : (0, i.jsx)(_.QWc, {
+            }) : (0, i.jsx)(m.QWc, {
                 onMouseEnter: T,
                 onMouseLeave: N,
                 onFocus: T,
@@ -84,12 +84,12 @@ function I(e) {
                 id: o,
                 children: A
             })]
-        }) : (0, i.jsx)(_.Text, {
+        }) : (0, i.jsx)(m.Text, {
             variant: "text-xs/semibold",
             color: "none",
             scaleFontToUserSetting: !0,
             children: n
-        }), (0, i.jsxs)(_.Text, {
+        }), (0, i.jsxs)(m.Text, {
             variant: "text-md/bold",
             color: "none",
             scaleFontToUserSetting: !0,
@@ -102,7 +102,7 @@ function v(e) {
     let {
         percentage: t,
         shouldAnimate: n
-    } = e, l = (0, _.zhh)({
+    } = e, l = (0, m.zhh)({
         from: {
             width: n ? "0%" : `${t}%`
         },
@@ -163,7 +163,7 @@ function T(e) {
         answersInteraction: l,
         canShowVoteCounts: s,
         canShowVoterDetails: o
-    } = e, d = !0 === t.isSelected, c = !0 === t.didSelfVote, u = !0 === t.isVictor, m = t.shouldAnimateTransition;
+    } = e, d = !0 === t.isSelected, c = !0 === t.didSelfVote, u = !0 === t.isVictor, _ = t.shouldAnimateTransition;
     return (0, i.jsxs)("div", {
         className: r()(E.Fk, {
             [E.EK]: l !== A.CQ.LIST,
@@ -171,11 +171,11 @@ function T(e) {
         }),
         children: [s ? (0, i.jsx)(v, {
             percentage: t.votesPercentage,
-            shouldAnimate: m
+            shouldAnimate: _
         }) : null, null != t.pollMedia.emoji && (0, i.jsx)(x.Fb, {
             className: E.Zg,
             emoji: t.pollMedia.emoji
-        }), (0, i.jsx)(_.Text, {
+        }), (0, i.jsx)(m.Text, {
             className: E.Pf,
             variant: "text-sm/semibold",
             color: "none",

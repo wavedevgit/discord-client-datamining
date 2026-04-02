@@ -11,8 +11,8 @@ var i = n(627968),
     d = n(397927),
     c = n(212245),
     u = n(775602),
-    _ = n(933958),
-    m = n(447031),
+    m = n(933958),
+    _ = n(447031),
     h = n(956549),
     p = n(550151),
     g = n(793574),
@@ -69,10 +69,10 @@ let F = l.memo(function(e) {
             embeddedActivity: V,
             currentEmbeddedActivity: q,
             activityLaunchState: W
-        } = (0, a.cf)([_.Ay], () => ({
-            embeddedActivity: _.Ay.getEmbeddedActivitiesForChannel(F ?? "").find(e => e.applicationId === n.id),
-            currentEmbeddedActivity: _.Ay.getCurrentEmbeddedActivity(),
-            activityLaunchState: _.Ay.getLaunchState(n.id, F ?? void 0)
+        } = (0, a.cf)([m.Ay], () => ({
+            embeddedActivity: m.Ay.getEmbeddedActivitiesForChannel(F ?? "").find(e => e.applicationId === n.id),
+            currentEmbeddedActivity: m.Ay.getCurrentEmbeddedActivity(),
+            activityLaunchState: m.Ay.getLaunchState(n.id, F ?? void 0)
         }), [F, n.id]),
         Y = V?.userIds,
         z = (0, a.yK)([y.default], () => Array.from(Y ?? []).map(e => y.default.getUser(e)).filter(P.Vq), [Y]),
@@ -117,7 +117,7 @@ let F = l.memo(function(e) {
                 analyticsLocations: v,
                 componentId: ee,
                 commandOrigin: x.iw.ACTIVITY_INSTANCE_EMBED
-            }) : await (0, m.A)({
+            }) : await (0, _.A)({
                 applicationId: V.applicationId,
                 activityChannelId: s,
                 locationObject: R.location,

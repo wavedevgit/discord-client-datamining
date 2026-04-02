@@ -11,8 +11,8 @@ var i = n(627968),
     d = n(565645),
     c = n(114166),
     u = n(891734),
-    _ = n(505527),
-    m = n(483202),
+    m = n(505527),
+    _ = n(483202),
     h = n(486025),
     p = n(108277);
 let g = l.memo(function(e) {
@@ -32,12 +32,12 @@ let g = l.memo(function(e) {
                 type: T,
                 emojiSize: N
             } = e,
-            S = T === _.v.BURST,
-            y = (0, m.IN)(x, f, T),
+            S = T === m.v.BURST,
+            y = (0, _.IN)(x, f, T),
             j = (0, u.g)(S && null != E ? E : []),
             L = l ? p : h,
             R = S ? C : A,
-            P = (0, c.x)(R, m.$Z),
+            P = (0, c.x)(R, _.$Z),
             D = {};
         if (S && null != j) {
             let {
@@ -82,7 +82,7 @@ let g = l.memo(function(e) {
             !e || r || d || c(() => {
                 o(!0)
             })
-        }, [r, d]), h = (0, a.K)(u), p = r && !d || t ? m.qT : g;
+        }, [r, d]), h = (0, a.K)(u), p = r && !d || t ? _.qT : g;
         return (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)("div", {
                 ref: h
@@ -90,6 +90,6 @@ let g = l.memo(function(e) {
                 ...s,
                 ...e,
                 emojiSize: "reaction"
-            }, `${e.type===_.v.BURST?"burst:":""}${e.emoji.id??0}:${e.emoji.name}`))]
+            }, `${e.type===m.v.BURST?"burst:":""}${e.emoji.id??0}:${e.emoji.name}`))]
         })
     })

@@ -11,8 +11,8 @@ var i = n(627968),
     d = n(890687),
     c = n(590202),
     u = n(792620),
-    _ = n(545986),
-    m = n(654487),
+    m = n(545986),
+    _ = n(654487),
     h = n(985018);
 
 function p(e) {
@@ -47,12 +47,12 @@ let g = function(e) {
         isEnrolling: T
     } = (0, s.cf)([o.A], () => ({
         isEnrolling: o.A.isEnrolling(b)
-    }), [b]), N = (0, _.Oz)(n), S = function(e, t) {
+    }), [b]), N = (0, m.Oz)(n), S = function(e, t) {
         let {
             launchInGameActivity: n
         } = (0, d.zW)(t);
         if ((0, u.K$)(t)) return () => {
-            (0, _.Fy)(t)
+            (0, m.Fy)(t)
         };
         switch (e) {
             case l.n.ACHIEVEMENT_IN_ACTIVITY:
@@ -75,13 +75,13 @@ let g = function(e) {
             case l.n.ACHIEVEMENT_IN_ACTIVITY:
                 return h.intl.string(h.t["hRIVy+"]);
             case l.n.PLAY_ACTIVITY:
-                if (n.includes(m.Li.CLOUD_GAMING_ACTIVITY)) return h.intl.string(h.t["+qoymD"]);
+                if (n.includes(_.Li.CLOUD_GAMING_ACTIVITY)) return h.intl.string(h.t["+qoymD"]);
                 return h.intl.string(h.t["Ie9++s"]);
             default:
                 return h.intl.string(h.t.kUQLMJ)
         }
     }(c, n), j = (t = S ?? void 0, c === l.n.WATCH_VIDEO ? async () => {
-        await (0, _.e0)(n, {
+        await (0, m.e0)(n, {
             questContent: v.questContent,
             questContentCTA: v.questContentCTA,
             sourceQuestContent: v.sourceQuestContent,

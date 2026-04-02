@@ -5,8 +5,8 @@ n.d(t, {
 var a = n(627968);
 n(64700);
 var l = n(397927),
-    s = n(665711),
-    i = n(985018),
+    i = n(665711),
+    s = n(985018),
     r = n(349599);
 
 function o(e) {
@@ -16,13 +16,13 @@ function o(e) {
     } = e;
     return (0, a.jsxs)("div", {
         className: r.k,
-        children: [(0, a.jsx)(s.W, {
+        children: [(0, a.jsx)(i.W, {
             application: t,
             iconSize: 16
         }), (0, a.jsx)(l.Text, {
             variant: "text-sm/medium",
             color: n,
-            children: i.intl.string(i.t.V91tvy)
+            children: s.intl.string(s.t.V91tvy)
         })]
     })
 }

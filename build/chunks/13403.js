@@ -11,8 +11,8 @@ var i = n(627968),
     d = n(735991),
     c = n(690456),
     u = n(359800),
-    _ = n(362490),
-    m = n(587895),
+    m = n(362490),
+    _ = n(587895),
     h = n(354287),
     p = n(574660),
     g = n(379848),
@@ -72,8 +72,8 @@ function D(e) {
         {
             openGameProfileModal: K,
             launchableAppId: J
-        } = (t = O.id, n = F.author.id, D = (0, f.d)(t), M = (0, s.bG)([m.A, C.A], () => {
-            let e = m.A.getApplication(t);
+        } = (t = O.id, n = F.author.id, D = (0, f.d)(t), M = (0, s.bG)([_.A, C.A], () => {
+            let e = _.A.getApplication(t);
             return null != e ? C.A.getGameByApplication(e) : null
         }, [t]), {
             openGameProfileModal: (0, x.A)({
@@ -106,7 +106,7 @@ function D(e) {
             canStartAuthorization: en,
             hasAlreadyLinked: ei,
             startAuthorization: el
-        } = (0, _.RD)(O),
+        } = (0, m.RD)(O),
         es = (0, u.z)(el, ei),
         er = !(0, T.A)(q, F, O.id),
         ea = (0, b.n$)(z, F.activity?.type, er),

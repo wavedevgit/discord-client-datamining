@@ -11,8 +11,8 @@ var i = n(627968),
     d = n(846293),
     c = n(793574),
     u = n(688810),
-    _ = n(21599),
-    m = n(529200),
+    m = n(21599),
+    _ = n(529200),
     h = n(95701),
     p = n(616356),
     g = n(967198),
@@ -57,7 +57,7 @@ function b(e) {
                 action: e,
                 inviter_id: T.author.id,
                 invite_message_id: T.id,
-                invite_instance_id: (0, _._U)(n.code, T.id)
+                invite_instance_id: (0, m._U)(n.code, T.id)
             }, P)
         }, [n, T, P, D, N, S]),
         G = null != b;
@@ -75,21 +75,21 @@ function b(e) {
     }), q = I.intl.string(I.t.Wdi5E1)) : (W = "active", D && (q = I.intl.string(I.t.Q1W99y), W = "secondary"), t = k ? I.intl.string(I.t["4hyaHu"]) : I.intl.formatToPlainString(I.t.QmlLEq, {
         name: H
     }));
-    let Y = j === b.id && null != F ? (0, i.jsx)(m.A.Channel, {
+    let Y = j === b.id && null != F ? (0, i.jsx)(_.A.Channel, {
         channel: F
     }) : I.intl.formatToPlainString(I.t.u0vaDE, {
         guildName: b.name
     });
-    return (0, i.jsxs)(m.A, {
-        children: [(0, i.jsx)(m.A.Header, {
+    return (0, i.jsxs)(_.A, {
+        children: [(0, i.jsx)(_.A.Header, {
             text: I.intl.string(I.t["wS+5Wb"])
-        }), (0, i.jsxs)(m.A.Body, {
+        }), (0, i.jsxs)(_.A.Body, {
             children: [(0, i.jsxs)("div", {
                 className: v.iH,
-                children: [(0, i.jsx)(m.A.Icon, {
+                children: [(0, i.jsx)(_.A.Icon, {
                     guild: b,
                     onClick: G && M ? B : void 0
-                }), (0, i.jsx)(m.A.Info, {
+                }), (0, i.jsx)(_.A.Info, {
                     title: t,
                     onClick: G && M ? B : void 0,
                     children: Y

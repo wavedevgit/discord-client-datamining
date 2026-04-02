@@ -13,15 +13,15 @@ var i = n(627968),
 function c(e) {
     let {
         channelId: t
-    } = e, n = (0, o.b8)(), c = (0, o.i2)(), u = d.intl.string(d.t["9KiIz6"]), _ = d.intl.string(d.t["/nicWo"]), m = l.useCallback(() => {
+    } = e, n = (0, o.b8)(), c = (0, o.i2)(), u = d.intl.string(d.t["9KiIz6"]), m = d.intl.string(d.t["/nicWo"]), _ = l.useCallback(() => {
         r.A.showAgeVerificationGetStartedModal({
             entryPoint: a.q1.SYSTEM_DM_RETRY_BUTTON
         }), (0, a.UT)(a.Im.RETRY, t)
     }, [t]);
     return (0, i.jsx)(s.Button, {
         variant: "primary",
-        text: n ? u : _,
-        onClick: m,
+        text: n ? u : m,
+        onClick: _,
         disabled: !c
     })
 }

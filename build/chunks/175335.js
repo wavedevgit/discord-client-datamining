@@ -11,8 +11,8 @@ var i = n(627968),
     d = n(827734),
     c = n(732955),
     u = n(397927),
-    _ = n(58149),
-    m = n(139286),
+    m = n(58149),
+    _ = n(139286),
     h = n(263063),
     p = n(250627),
     g = n(22007),
@@ -38,10 +38,10 @@ function N(e) {
         publishedOnly: !0
     }), j = l.useCallback(async () => {
         f.default.track(v.HAw.GUILD_SHOP_EMBED_CLICKED, {
-            ...(0, _.H$)(t)
+            ...(0, m.H$)(t)
         }), await (0, g.A)(v.BVt.SERVER_SHOP(t))
     }, [t]);
-    (0, m.A)({
+    (0, _.A)({
         type: a.ImpressionTypes.VIEW,
         name: a.ImpressionNames.GUILD_SHOP_EMBED
     }, {

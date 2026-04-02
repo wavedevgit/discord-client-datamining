@@ -1,6 +1,6 @@
 /** chunk id: 212614 params = (module,exports,require) **/
 n.d(t, {
-    A: () => _
+    A: () => m
 });
 var i = n(627968),
     l = n(732955),
@@ -33,12 +33,12 @@ function u(e) {
         text: d.intl.string(d.t.P84bAD)
     })
 }
-let _ = function(e) {
+let m = function(e) {
     let {
         quest: t,
         surface: n,
-        preClickCallback: _,
-        analyticsCtxQuestContent: m,
+        preClickCallback: m,
+        analyticsCtxQuestContent: _,
         analyticsCtxSourceQuestContent: h,
         analyticsCtxQuestContentPosition: p,
         analyticsCtxQuestContentRowIndex: g,
@@ -59,8 +59,8 @@ let _ = function(e) {
                 quest: t,
                 taskType: C.type,
                 size: A,
-                preClickCallback: _,
-                analyticsCtxQuestContent: m,
+                preClickCallback: m,
+                analyticsCtxQuestContent: _,
                 analyticsCtxSourceQuestContent: h,
                 analyticsCtxQuestContentPosition: p,
                 analyticsCtxQuestContentRowIndex: g
@@ -70,7 +70,7 @@ let _ = function(e) {
                 quest: t,
                 taskType: C.type,
                 size: A,
-                analyticsCtxQuestContent: m,
+                analyticsCtxQuestContent: _,
                 analyticsCtxSourceQuestContent: h,
                 analyticsCtxQuestContentPosition: p,
                 analyticsCtxQuestContentRowIndex: g,
@@ -81,7 +81,7 @@ let _ = function(e) {
                 quest: t,
                 taskType: C.type,
                 size: A,
-                analyticsCtxQuestContent: m,
+                analyticsCtxQuestContent: _,
                 analyticsCtxSourceQuestContent: h,
                 analyticsCtxQuestContentPosition: p,
                 analyticsCtxQuestContentRowIndex: g,

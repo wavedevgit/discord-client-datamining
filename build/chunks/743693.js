@@ -4,8 +4,8 @@ n.d(t, {
 });
 var a = n(627968),
     l = n(311907),
-    s = n(139146),
-    i = n(961350),
+    i = n(139146),
+    s = n(961350),
     r = n(471505);
 
 function o(e) {
@@ -15,7 +15,7 @@ function o(e) {
         isCardHovered: o = !0,
         trackButtonClick: d,
         ...c
-    } = e, u = (0, l.bG)([i.default], () => i.default.getId()), {
+    } = e, u = (0, l.bG)([s.default], () => s.default.getId()), {
         isWishlisted: _,
         isBusy: m,
         isFirstTimeWishlister: h,
@@ -26,7 +26,7 @@ function o(e) {
         location: n,
         trackButtonClick: d
     });
-    return o || _ ? (0, a.jsx)(s._, {
+    return o || _ ? (0, a.jsx)(i._, {
         skuId: t.id,
         productName: t.name,
         isWishlisted: _,

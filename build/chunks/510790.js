@@ -11,8 +11,8 @@ var i = n(627968),
     d = n(97808),
     c = n(732955),
     u = n(397927),
-    _ = n(139286),
-    m = n(520117),
+    m = n(139286),
+    _ = n(520117),
     h = n(793943),
     p = n(763754),
     g = n(973654),
@@ -62,13 +62,13 @@ let T = e => e.map(e => `#${e}`),
             } = h,
             A = (0, p.Ay)(h),
             x = l.useMemo(() => (0, s.once)(() => {
-                (0, _.x)({
+                (0, m.x)({
                     type: r.ImpressionTypes.VIEW,
                     name: a.I.CUSTOM_THEME_SHARE,
                     properties: {}
                 })
             }), []),
-            f = (0, m.A)({
+            f = (0, _.A)({
                 onVisible: () => {
                     x()
                 },

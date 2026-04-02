@@ -1,6 +1,6 @@
 /** chunk id: 438038 params = (module,exports,require) **/
 n.d(t, {
-    R: () => m
+    R: () => _
 });
 var i = n(627968),
     l = n(64700),
@@ -13,13 +13,13 @@ var r = n(341915),
     c = n(285433),
     u = n(394900);
 n(433745);
-var _ = n(915689);
+var m = n(915689);
 
-function m(e) {
+function _(e) {
     let {
         quest: t,
         location: n,
-        contentPosition: m,
+        contentPosition: _,
         sourceQuestContent: h
     } = e, p = (0, a.LS)(t), {
         containerRef: g,
@@ -36,7 +36,7 @@ function m(e) {
     return (0, i.jsx)(o.R, {
         questOrQuests: t,
         questContent: n,
-        questContentPosition: m,
+        questContentPosition: _,
         trackGuildAndChannelMetadata: n === r.uF.QUESTS_EMBED,
         sourceQuestContent: h,
         children: e => (0, i.jsx)(s.animated.div, {
@@ -46,7 +46,7 @@ function m(e) {
                     output: [100, S]
                 })
             },
-            className: _.i,
+            className: m.i,
             onMouseEnter: T,
             onMouseLeave: N,
             onFocus: T,
@@ -64,7 +64,7 @@ function m(e) {
                     isInteracting: v,
                     isAnimating: C,
                     isExpanded: E,
-                    contentPosition: m,
+                    contentPosition: _,
                     toggleExpanded: I,
                     sourceQuestContent: h
                 }), (0, i.jsx)(d.A, {
@@ -75,7 +75,7 @@ function m(e) {
                     isFocused: v,
                     isExpanded: E,
                     isAnimating: C,
-                    contentPosition: m,
+                    contentPosition: _,
                     sourceQuestContent: h
                 })]
             })

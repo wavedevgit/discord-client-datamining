@@ -11,8 +11,8 @@ var i = n(627968),
     d = n(990078),
     c = n(421380),
     u = n(397927),
-    _ = n(686956),
-    m = n(964486),
+    m = n(686956),
+    _ = n(964486),
     h = n(58149),
     p = n(235986),
     g = n(624793),
@@ -75,7 +75,7 @@ let U = e => {
             sticker: n,
             channel: s,
             refreshPositionKey: r
-        } = e, [o, d, c] = (0, a.yK)([S.A], () => [S.A.getStickerPack(n.pack_id), !S.A.hasLoadedStickerPacks, S.A.isPremiumPack(n.pack_id)], [n]), _ = (e => {
+        } = e, [o, d, c] = (0, a.yK)([S.A], () => [S.A.getStickerPack(n.pack_id), !S.A.hasLoadedStickerPacks, S.A.isPremiumPack(n.pack_id)], [n]), m = (e => {
             let {
                 sticker: t,
                 stickerPack: n
@@ -86,7 +86,7 @@ let U = e => {
             stickerPack: o
         });
         (0, N.Sr)(n.pack_id);
-        let m = (0, N.pD)(s),
+        let _ = (0, N.pD)(s),
             p = {
                 refreshPositionKey: r,
                 channel: s
@@ -125,7 +125,7 @@ let U = e => {
                 })
             }), (0, i.jsx)("ul", {
                 className: M.pQ,
-                children: _.map(e => (0, i.jsx)(j.A, {
+                children: m.map(e => (0, i.jsx)(j.A, {
                     isInteracting: !0,
                     size: 80,
                     sticker: e
@@ -139,7 +139,7 @@ let U = e => {
                     onClick: () => {
                         c && (0, L.a)({
                             stickerPack: o,
-                            stickerPickerCategories: m
+                            stickerPickerCategories: _
                         }), t()
                     }
                 }, "view-sticker-pack")
@@ -201,7 +201,7 @@ let U = e => {
                     refreshPositionKey: e
                 } = K.current;
                 e()
-            }, [y, N]), (0, m.Ay)(() => {
+            }, [y, N]), (0, _.Ay)(() => {
                 b.default.track(R.HAw.OPEN_POPOUT, {
                     type: $,
                     ...z
@@ -218,7 +218,7 @@ let U = e => {
                     o();
                     let e = N.id;
                     try {
-                        await _.A.joinGuild(e), _.A.transitionToGuildSync(e)
+                        await m.A.joinGuild(e), m.A.transitionToGuildSync(e)
                     } catch {}
                 }, (0, i.jsxs)("div", {
                     className: w.gH,

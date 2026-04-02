@@ -17,11 +17,11 @@ function u(e) {
         channel: n,
         guild: l,
         onClick: u
-    } = e, _ = (0, d.gU)(n, l), m = (0, o.Ay)(n);
+    } = e, m = (0, d.gU)(n, l), _ = (0, o.Ay)(n);
     return (0, i.jsxs)(a.DUT, {
         onClick: u,
         className: s()(c.UP, t),
-        children: [null != _ && (0, i.jsx)(_, {
+        children: [null != m && (0, i.jsx)(m, {
             className: c.p,
             color: "currentColor",
             size: "custom",
@@ -32,7 +32,7 @@ function u(e) {
             lineClamp: 1,
             color: "currentColor",
             children: (0, i.jsxs)(r.A, {
-                children: [l.name, " / ", m]
+                children: [l.name, " / ", _]
             })
         }), (0, i.jsx)(a._BQ, {
             className: c.t4,

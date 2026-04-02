@@ -11,8 +11,8 @@ var i = n(627968),
     d = n(846293),
     c = n(793574),
     u = n(688810),
-    _ = n(21599),
-    m = n(529200),
+    m = n(21599),
+    _ = n(529200),
     h = n(95701),
     p = n(734057),
     g = n(287809),
@@ -43,7 +43,7 @@ function I(e) {
             action: e,
             inviter_id: s.author.id,
             invite_message_id: s.id,
-            invite_instance_id: (0, _._U)(n.code, s.id)
+            invite_instance_id: (0, m._U)(n.code, s.id)
         }, y)
     }, [n, s, y, j, v, b]);
     if (null == S) {
@@ -63,19 +63,19 @@ function I(e) {
         D = "active";
     j && (P = C.intl.string(C.t.cEnaWx), D = "secondary");
     let M = C.intl.string(C.t["3p3/BK"]);
-    return T && (M = C.intl.string(C.t.qmtuXE)), (0, i.jsxs)(m.A, {
-        children: [(0, i.jsx)(m.A.Header, {
+    return T && (M = C.intl.string(C.t.qmtuXE)), (0, i.jsxs)(_.A, {
+        children: [(0, i.jsx)(_.A.Header, {
             text: M
-        }), (0, i.jsxs)(m.A.Body, {
+        }), (0, i.jsxs)(_.A.Body, {
             children: [(0, i.jsxs)("div", {
                 className: E.iH,
-                children: [(0, i.jsx)(m.A.Icon, {
+                children: [(0, i.jsx)(_.A.Icon, {
                     channel: S,
                     onClick: j ? L : void 0
-                }), (0, i.jsx)(m.A.Info, {
+                }), (0, i.jsx)(_.A.Info, {
                     title: R,
                     onClick: j ? L : void 0,
-                    children: (0, i.jsx)(m.A.Data, {
+                    children: (0, i.jsx)(_.A.Data, {
                         members: t.length
                     })
                 })]

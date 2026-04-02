@@ -12,8 +12,8 @@ var i = n(627968),
     d = n(795816),
     c = n(574152),
     u = n(793574),
-    _ = n(688810),
-    m = n(522305),
+    m = n(688810),
+    _ = n(522305),
     h = n(735991),
     p = n(361926),
     g = n(583846),
@@ -60,7 +60,7 @@ function U(e) {
         bannerAspectRatio: w
     } = (0, D.f)(t), k = (0, a.bG)([E.default], () => r ?? E.default.getId(), [r]), {
         analyticsLocations: U
-    } = (0, _.Ay)(u.A.APP_MESSAGE_EMBED), {
+    } = (0, m.Ay)(u.A.APP_MESSAGE_EMBED), {
         currentChannelId: F,
         instanceId: H,
         isCurrentlyInInstance: V,
@@ -100,7 +100,7 @@ function U(e) {
             label: O.intl.string(O.t.JeK1Wg),
             trackingArea: R.kY.PLAY,
             onClick() {
-                (0, m.Q)({
+                (0, _.Q)({
                     appId: t.id,
                     botId: v,
                     analyticsLocations: U,
@@ -189,7 +189,7 @@ function G(e) {
             null != i && l && e.push(i)
         }
         return e
-    }, [c]), _ = l.useMemo(() => {
+    }, [c]), m = l.useMemo(() => {
         if (u.length > 0) return (0, i.jsx)(L.$, {
             activityUsers: u,
             guildId: d,
@@ -228,7 +228,7 @@ function G(e) {
             className: k.dS,
             color: "none",
             lineClamp: 1,
-            children: _
+            children: m
         })]
     })
 }

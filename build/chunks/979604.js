@@ -10,8 +10,8 @@ var i, l = n(627968),
     d = n(990078),
     c = n(397927),
     u = n(59636),
-    _ = n(212245),
-    m = n(626584),
+    m = n(212245),
+    _ = n(626584),
     h = n(976860),
     p = n(568004),
     g = n(227841),
@@ -83,7 +83,7 @@ class L extends s.Component {
             } = this.props;
             await u.V(e.id, e.branchId, e.getFlags() & ~T.hM6.HIDDEN), (0, h.pX)(T.BVt.APPLICATION_LIBRARY)
         } catch (e) {
-            new m.A("LibraryApplicationButton").error(e)
+            new _.A("LibraryApplicationButton").error(e)
         }
     };
     handleInstall = () => {
@@ -233,7 +233,7 @@ class L extends s.Component {
 function R(e) {
     let {
         libraryApplication: t
-    } = e, n = (0, _.p)(), [i, s] = (0, a.yK)([x.A, f.A], () => [(0, g.F)(t, x.A, f.A), x.A.getState(t.id, t.branchId)], [t]), r = (0, a.bG)([A.A], () => A.A.isSyncing(t.id, t.branchId), [t]), o = (0, a.bG)([p.A], () => p.A.hasNoBuild(t.id, t.branchId), [t]);
+    } = e, n = (0, m.p)(), [i, s] = (0, a.yK)([x.A, f.A], () => [(0, g.F)(t, x.A, f.A), x.A.getState(t.id, t.branchId)], [t]), r = (0, a.bG)([A.A], () => A.A.isSyncing(t.id, t.branchId), [t]), o = (0, a.bG)([p.A], () => p.A.hasNoBuild(t.id, t.branchId), [t]);
     return (0, l.jsx)(L, {
         ...e,
         analyticsContext: n,

@@ -11,8 +11,8 @@ var i = n(627968),
     d = n(505527),
     c = n(960538),
     u = n(860227),
-    _ = n(866630),
-    m = n(483202),
+    m = n(866630),
+    _ = n(483202),
     h = n(985018),
     p = n(486025),
     g = n(108277);
@@ -67,7 +67,7 @@ class x extends l.PureComponent {
             onMouseLeave: () => this.setState({
                 isHovered: !1
             }),
-            children: [(0, i.jsx)(_.A, {
+            children: [(0, i.jsx)(m.A, {
                 reactions: b,
                 message: e,
                 readOnly: n,
@@ -78,7 +78,7 @@ class x extends l.PureComponent {
                 className: C
             }), v > 0 && (0, i.jsx)(o.DUT, {
                 onClick: t => {
-                    t.stopPropagation(), (0, m.$l)(A, e)
+                    t.stopPropagation(), (0, _.$l)(A, e)
                 },
                 className: r()(S.reaction, C, S.remainingReactions),
                 "aria-label": h.intl.string(h.t.lfIHs4),

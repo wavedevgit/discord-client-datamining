@@ -17,22 +17,22 @@ function d(e) {
             children: c
         } = e,
         u = n.interactionMetadata?.ephemerality_reason,
-        _ = () => d(n, !0);
+        m = () => d(n, !0);
     if (null != u) {
         let e = (0, s.R)(u);
         t = (0, i.jsx)("div", {
             className: o.rd,
             children: a.intl.format(a.t.wx1tLQ, {
-                handleDelete: _,
+                handleDelete: m,
                 reason: e
             })
         })
     } else t = n.type === r.lAJ.STAGE_RAISE_HAND ? a.intl.format(a.t["qDAX++"], {
-        handleDelete: _
+        handleDelete: m
     }) : a.intl.format(a.t.uX3ecL, {
         count: 1,
         countMessages: 1,
-        handleDelete: _
+        handleDelete: m
     });
     return (0, i.jsxs)("div", {
         className: o.XO,

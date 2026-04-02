@@ -11,8 +11,8 @@ var i = n(627968),
     d = n(735438),
     c = n.n(d),
     u = n(110259),
-    _ = n(311907),
-    m = n(3026),
+    m = n(311907),
+    _ = n(3026),
     h = n(397927),
     p = n(846293),
     g = n(956793),
@@ -58,11 +58,11 @@ function Y(e) {
     null == G && null != t.guild && (G = O.DY(t.guild));
     let Y = null != t.channel ? (0, j.OY)(t.channel) : null;
     o()(null != G, "Voice Invite Embed must be used in context of a guild."), o()(null != Y, "Voice Invite Embed must be able to resolve an invite channel.");
-    let Q = (0, _.bG)([D.A, L.A], () => {
+    let Q = (0, m.bG)([D.A, L.A], () => {
             let e = L.A.getChannel(Y.id);
             return null == e || D.A.canBasicChannel(V.hVb.VIEW_CHANNEL, e)
         }, [Y.id]),
-        J = (0, _.bG)([M.Ay], () => Q ? M.Ay.getVoiceStatesForChannelAlt(Y.id, G.id) : [], [Y.id, G.id, Q]),
+        J = (0, m.bG)([M.Ay], () => Q ? M.Ay.getVoiceStatesForChannelAlt(Y.id, G.id) : [], [Y.id, G.id, Q]),
         {
             label: X,
             sublabel: Z
@@ -87,8 +87,8 @@ function Y(e) {
             author: s.author,
             voiceStates: J
         }),
-        $ = (0, _.bG)([P.A], () => null != P.A.getGuild(G.id), [G.id]),
-        ee = (0, _.bG)([R.Ay], () => b.A.canAcceptInvite([R.Ay], t), [t]),
+        $ = (0, m.bG)([P.A], () => null != P.A.getGuild(G.id), [G.id]),
+        ee = (0, m.bG)([R.Ay], () => b.A.canAcceptInvite([R.Ay], t), [t]),
         et = t.state === V.elq.ACCEPTING,
         {
             analyticsLocations: en
@@ -145,14 +145,14 @@ function Y(e) {
                 invite_instance_id: ei
             }, [...en, f.A.VOICE_INVITE_STREAM_PREVIEW]))
         }, [er, $, t, s, en, ei, I]),
-        ed = (0, _.bG)([x.A], () => x.A.useReducedMotion),
+        ed = (0, m.bG)([x.A], () => x.A.useReducedMotion),
         ec = l.useRef(null),
-        [eu, e_] = l.useState({
+        [eu, em] = l.useState({
             percentX: 0,
             percentY: 0,
             proximity: 0
         }),
-        em = (0, _.bG)([y.A], () => {
+        e_ = (0, m.bG)([y.A], () => {
             let e = J.map(e => e.user),
                 t = e.find(e => e.id === s.author.id),
                 n = e.filter(e => e.id !== s.author.id).sort((e, t) => {
@@ -161,7 +161,7 @@ function Y(e) {
                 });
             return null != t ? [t, ...n] : n
         }, [J, s.author.id]),
-        eh = l.useMemo(() => c().throttle(e_, 20), [e_]);
+        eh = l.useMemo(() => c().throttle(em, 20), [em]);
     l.useEffect(() => () => eh.cancel(), [eh]);
     let ep = l.useCallback(e => {
             if (ed) return;
@@ -185,7 +185,7 @@ function Y(e) {
             })
         }, [ed, eh]),
         eg = l.useCallback(() => {
-            eh.cancel(), e_({
+            eh.cancel(), em({
                 percentX: 0,
                 percentY: 0,
                 proximity: 0
@@ -221,17 +221,17 @@ function Y(e) {
                     children: [ea ? (0, i.jsx)(z, {
                         guildId: G.id,
                         channelId: Y.id,
-                        members: em
+                        members: e_
                     }) : null, (0, i.jsx)(h.Text, {
                         variant: "text-md/medium",
-                        children: (0, i.jsx)(m.A, {
+                        children: (0, i.jsx)(_.A, {
                             lineClamp: ea ? 1 : 3,
                             children: X
                         })
                     }), null != Z ? (0, i.jsx)(h.Text, {
                         variant: "text-sm/normal",
                         className: W.$B,
-                        children: (0, i.jsx)(m.A, {
+                        children: (0, i.jsx)(_.A, {
                             children: Z
                         })
                     }) : null]
@@ -247,7 +247,7 @@ function Y(e) {
                     ref: N,
                     guildId: G.id,
                     channelId: Y.id,
-                    members: em,
+                    members: e_,
                     motion: eu
                 })
             })]

@@ -11,8 +11,8 @@ var i = n(627968),
     d = n(311907),
     c = n(397927),
     u = n(863574),
-    _ = n(707606),
-    m = n(456412),
+    m = n(707606),
+    _ = n(456412),
     h = n(793574),
     p = n(429913),
     g = n(993408),
@@ -368,7 +368,7 @@ class q extends l.Component {
         }) : this.renderEmbed()
     }
 }
-let W = (0, m.A)((0, _.A)(q)),
+let W = (0, _.A)((0, m.A)(q)),
     Y = function(e) {
         let {
             code: t,
@@ -384,7 +384,7 @@ let W = (0, m.A)((0, _.A)(q)),
                 resolved: S.A.getIsResolved(t),
                 resolveErrorCode: e?.code ?? null
             }
-        }), a = (0, d.bG)([j.default], () => null != l && null != l.userId ? j.default.getUser(l.userId) : null), o = (0, d.bG)([L.A], () => null != l ? L.A.get(l.skuId) : null), c = (0, d.bG)([y.A], () => null != o && l?.entitlementBranches != null ? D.YI(l.entitlementBranches, o, y.A) : null), u = (0, p.h)(o?.applicationId), _ = (0, w.zz)(l?.subscriptionPlanId), m = (0, d.bG)([N.default], () => null != l ? N.default.getId() === l.userId : N.default.getId() === n.id);
+        }), a = (0, d.bG)([j.default], () => null != l && null != l.userId ? j.default.getUser(l.userId) : null), o = (0, d.bG)([L.A], () => null != l ? L.A.get(l.skuId) : null), c = (0, d.bG)([y.A], () => null != o && l?.entitlementBranches != null ? D.YI(l.entitlementBranches, o, y.A) : null), u = (0, p.h)(o?.applicationId), m = (0, w.zz)(l?.subscriptionPlanId), _ = (0, d.bG)([N.default], () => null != l ? N.default.getId() === l.userId : N.default.getId() === n.id);
         return (0, i.jsx)(W, {
             ...e,
             skuApplication: u,
@@ -393,8 +393,8 @@ let W = (0, m.A)((0, _.A)(q)),
             resolveErrorCode: r,
             gifter: a,
             libraryApplication: c,
-            subscriptionPlan: _,
+            subscriptionPlan: m,
             sku: o,
-            isSelfGift: m
+            isSelfGift: _
         })
     }

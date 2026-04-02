@@ -11,8 +11,8 @@ var i = n(627968),
     d = n(397927),
     c = n(846293),
     u = n(793574),
-    _ = n(688810),
-    m = n(290331),
+    m = n(688810),
+    _ = n(290331),
     h = n(517905),
     p = n(986268),
     g = n(21599),
@@ -52,11 +52,11 @@ function N(e) {
         Y = L?.id,
         {
             analyticsLocations: z
-        } = (0, _.Ay)(u.A.INVITE_EMBED),
+        } = (0, m.Ay)(u.A.INVITE_EMBED),
         [Q, K] = l.useState(!1),
         J = l.useCallback(() => K(!1), []),
         X = l.useRef(null),
-        Z = (0, a.bG)([f.Ay], () => m.A.canAcceptInvite([f.Ay], R)),
+        Z = (0, a.bG)([f.Ay], () => _.A.canAcceptInvite([f.Ay], R)),
         $ = l.useCallback(() => {
             K(!0), (0, c.Pq)(Y, "show profile", z)
         }, [Y, z]),

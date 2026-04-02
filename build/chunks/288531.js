@@ -12,8 +12,8 @@ var l = n(503698),
     d = n(397927),
     c = n(409626),
     u = n(773669),
-    _ = n(975571),
-    m = n(252424),
+    m = n(975571),
+    _ = n(252424),
     h = n(859703),
     p = n(112142),
     g = n(714510),
@@ -67,27 +67,27 @@ function M(e) {
         questContent: l,
         questContentPosition: s,
         sourceQuestContent: r
-    } = e, c = (0, a.bG)([h.A], () => h.A.isEnrolling(t.id)), u = (0, E.vv)(t), _ = (0, E.Cr)(t), m = (0, v._c)({
+    } = e, c = (0, a.bG)([h.A], () => h.A.isEnrolling(t.id)), u = (0, E.vv)(t), m = (0, E.Cr)(t), _ = (0, v._c)({
         progressState: n,
         quest: t,
         questContent: l,
         questContentPosition: s,
         inGiftInventory: !1,
         isVideoQuest: u,
-        inGameQuest: _,
+        inGameQuest: m,
         sourceQuestContent: r
     });
     return (0, i.jsx)(o.m_, {
-        text: m.tooltipText,
+        text: _.tooltipText,
         children: (0, i.jsx)(d.Button, {
             fullWidth: !0,
             variant: "primary",
-            disabled: null == m.onClick,
+            disabled: null == _.onClick,
             loading: c,
-            onClick: m.onClick ?? void 0,
-            text: m.text
+            onClick: _.onClick ?? void 0,
+            text: _.text
         })
-    }, m.tooltipText)
+    }, _.tooltipText)
 }
 let w = e => {
     let {
@@ -210,8 +210,8 @@ let w = e => {
                                     reward: c?.messages.nameWithArticle ?? d
                                 }) : null != c && null != c.approximateCount ? R.intl.format(R.t["4bMK1z"], {
                                     maxReward: c.messages.nameWithArticle,
-                                    maxRewardCount: (0, m.tg)(c.approximateCount, n),
-                                    helpCenterLink: _.A.getArticleURL(L.MVz.QUESTS_LEARN_MORE)
+                                    maxRewardCount: (0, _.tg)(c.approximateCount, n),
+                                    helpCenterLink: m.A.getArticleURL(L.MVz.QUESTS_LEARN_MORE)
                                 }) : l
                             }({
                                 quest: t,

@@ -1,15 +1,15 @@
 /** chunk id: 294454 params = (module,exports,require) **/
 n.d(t, {
     Be: () => o,
-    aU: () => i,
+    aU: () => s,
     fO: () => r,
     vK: () => d
 });
 var a = n(627968);
 n(64700);
 var l = n(397927),
-    s = n(530912);
-let i = "forward-modal";
+    i = n(530912);
+let s = "forward-modal";
 
 function r(e) {
     let {
@@ -20,7 +20,7 @@ function r(e) {
         onRequestSent: c,
         customSendHandler: u
     } = e;
-    (0, s.pp)(t.channel_id, t.id, r), (0, l.mMO)(async () => {
+    (0, i.pp)(t.channel_id, t.id, r), (0, l.mMO)(async () => {
         let {
             ForwardModal: e
         } = await Promise.all([n.e("96758"), n.e("43622"), n.e("3482")]).then(n.bind(n, 911269));
@@ -34,19 +34,19 @@ function r(e) {
             source: r
         })
     }, {
-        modalKey: i
+        modalKey: s
     })
 }
 
 function o() {
-    (0, l.OoC)(i)
+    (0, l.OoC)(s)
 }
 
 function d(e) {
     let {
         message: t,
-        failedDestinations: s,
-        forwardOptions: i
+        failedDestinations: i,
+        forwardOptions: s
     } = e;
     (0, l.mMO)(async () => {
         let {
@@ -55,8 +55,8 @@ function d(e) {
         return n => (0, a.jsx)(e, {
             ...n,
             message: t,
-            failedDestinations: s,
-            forwardOptions: i
+            failedDestinations: i,
+            forwardOptions: s
         })
     })
 }

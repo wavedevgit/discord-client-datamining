@@ -12,8 +12,8 @@ var l = n(311907),
     d = n(572211),
     c = n(354287),
     u = n(112150),
-    _ = n(15285),
-    m = n(72432),
+    m = n(15285),
+    _ = n(72432),
     h = n(616356),
     p = n(760751),
     g = n(383501),
@@ -40,7 +40,7 @@ function b(e) {
     } = (0, u.f)(T), P = A.Ay.getApplicationIconURL({
         id: T.id,
         icon: T.icon
-    }), D = (0, l.bG)([_.Ay, p.A], () => _.Ay.getVisibleRunningGames().find(e => {
+    }), D = (0, l.bG)([m.Ay, p.A], () => m.Ay.getVisibleRunningGames().find(e => {
         let {
             id: t
         } = e;
@@ -65,7 +65,7 @@ function b(e) {
             trackingArea: c.kY.STREAM,
             disabled: G,
             onClick: () => {
-                null != D && ((0, x.isWindows)() ? (0, m.A)(D.pid) : (0, s.mMO)(async () => {
+                null != D && ((0, x.isWindows)() ? (0, _.A)(D.pid) : (0, s.mMO)(async () => {
                     let {
                         default: e
                     } = await Promise.all([n.e("96811"), n.e("48697")]).then(n.bind(n, 648230));

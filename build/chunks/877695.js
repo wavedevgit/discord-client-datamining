@@ -11,8 +11,8 @@ var i = n(627968),
     d = n(846293),
     c = n(775602),
     u = n(793574),
-    _ = n(688810),
-    m = n(9994),
+    m = n(688810),
+    _ = n(9994),
     h = n(461888),
     p = n(179283),
     g = n(123213),
@@ -33,19 +33,19 @@ function N(e) {
         message: s,
         onTransitionToInviteChannel: d,
         onAcceptInstantInvite: u
-    } = e, _ = l.useRef(null), [h, g] = l.useState(!0), [f, N] = l.useState(!1), y = t.state === v.elq.ACCEPTING, j = (0, a.bG)([c.A], () => c.A.useReducedMotion);
+    } = e, m = l.useRef(null), [h, g] = l.useState(!0), [f, N] = l.useState(!1), y = t.state === v.elq.ACCEPTING, j = (0, a.bG)([c.A], () => c.A.useReducedMotion);
     l.useLayoutEffect(() => {
-        N((_.current?.clientHeight ?? 0) > 292)
+        N((m.current?.clientHeight ?? 0) > 292)
     }, [N]);
-    let L = (0, m.oO)(t),
+    let L = (0, _.oO)(t),
         R = l.useCallback(() => {
             !f || h && g(!1)
         }, [h, f]),
         P = l.useCallback(() => {
             !f || h || g(!0)
         }, [h, f]),
-        D = l.useMemo(() => f && _.current?.clientHeight != null ? {
-            height: h ? 292 : _.current.clientHeight + 36 + 48,
+        D = l.useMemo(() => f && m.current?.clientHeight != null ? {
+            height: h ? 292 : m.current.clientHeight + 36 + 48,
             transition: j ? void 0 : "height 0.2s ease"
         } : {}, [h, f, j]);
     return null == L ? (0, i.jsx)(I.A, {}) : (0, i.jsxs)(o.sqX, {
@@ -57,7 +57,7 @@ function N(e) {
         "aria-label": b.intl.string(b.t.dcl9MQ),
         children: [(0, i.jsxs)("div", {
             className: T.uY,
-            ref: _,
+            ref: m,
             children: [(0, i.jsx)(x.J$, {
                 profile: L,
                 className: T.vK
@@ -119,11 +119,11 @@ function S(e) {
         onTransitionToInviteChannel: o,
         onAcceptInstantInvite: c
     } = e, {
-        guildId: m,
+        guildId: _,
         ctaType: p
     } = (0, h.Ay)(n, h.cn.INVITE, t.code), {
         analyticsLocations: A
-    } = (0, _.Ay)(u.A.INVITE_EMBED), x = l.useCallback(() => {
+    } = (0, m.Ay)(u.A.INVITE_EMBED), x = l.useCallback(() => {
         let e = s ? "transition" : "accept";
         (0, d.he)({
             invite: t,
@@ -134,7 +134,7 @@ function S(e) {
         }, A)
     }, [t, r, A, s]);
     return null == p ? null : (0, i.jsx)(g.Y, {
-        guildId: m,
+        guildId: _,
         ctaType: p,
         submitting: a,
         onGoToGuild: o,

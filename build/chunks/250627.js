@@ -1,9 +1,9 @@
 /** chunk id: 250627 params = (module,exports,require) **/
 n.d(t, {
     BB: () => g,
-    Qi: () => m,
+    Qi: () => _,
     az: () => p,
-    bb: () => _,
+    bb: () => m,
     fZ: () => h
 });
 var i = n(64700),
@@ -16,7 +16,7 @@ var s = n(142120),
     d = n(912702),
     c = n(871109),
     u = n(652215);
-let _ = e => {
+let m = e => {
         let t = (0, l.bG)([c.A], () => null != e ? c.A.getGuildProductsForGuildFetchState(e) : c.e.FETCHED, [e]),
             n = (0, l.bG)([s.A], () => s.A.isConnected()),
             [r, a] = i.useState(!0);
@@ -26,7 +26,7 @@ let _ = e => {
             listingsLoaded: t === c.e.FETCHED && !r
         }
     },
-    m = function(e, t) {
+    _ = function(e, t) {
         let {
             requireCurrentGuild: n
         } = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {

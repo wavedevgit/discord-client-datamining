@@ -12,8 +12,8 @@ var i = n(284009),
     d = n(582754),
     c = n(73153),
     u = n(157559),
-    _ = n(686956),
-    m = n(843472),
+    m = n(686956),
+    _ = n(843472),
     h = n(198982),
     p = n(58149),
     g = n(857071),
@@ -60,7 +60,7 @@ function D(e) {
         confirmText: R.intl.string(R.t["9VLmlZ"]),
         cancelText: R.intl.string(R.t["2m+Sqk"]),
         onConfirm: () => {
-            _.A.joinGuild(t, {
+            m.A.joinGuild(t, {
                 source: L.Q4z.POLL_ALERT
             })
         }
@@ -124,7 +124,7 @@ async function k(e) {
     })), ...a.map(e => ({
         type: "MESSAGE_REACTION_ADD",
         id: e
-    }))], _ = o.Ay.Emitter.batched(() => {
+    }))], m = o.Ay.Emitter.batched(() => {
         let e;
         for (let {
                 id: i,
@@ -144,7 +144,7 @@ async function k(e) {
         });
         return e
     });
-    null != _ && await _
+    null != m && await m
 }
 async function U(e) {
     let {
@@ -401,7 +401,7 @@ let F = {
             layout_type: r
         };
         try {
-            await m.A.sendPollMessage(t.id, u, {
+            await _.A.sendPollMessage(t.id, u, {
                 attachmentsToUpload: d,
                 onAttachmentUploadError: (e, n, i) => {
                     (0, A.k)({

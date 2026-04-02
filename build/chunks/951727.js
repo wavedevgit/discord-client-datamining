@@ -14,8 +14,8 @@ var i = n(889137),
     d = n(316031),
     c = n(734057),
     u = n(696451),
-    _ = n(320501),
-    m = n(287809),
+    m = n(320501),
+    _ = n(287809),
     h = n(486020),
     p = n(690521),
     g = n(723702),
@@ -41,7 +41,7 @@ function N(e, t) {
 }
 
 function S(e) {
-    return null == e.poll || _.A.getMessage(e.channel_id, e.id) === e
+    return null == e.poll || m.A.getMessage(e.channel_id, e.id) === e
 }
 
 function y(e, t) {
@@ -56,14 +56,14 @@ function y(e, t) {
         r = null == s && l,
         {
             selectedAnswerIds: a,
-            submitting: m,
+            submitting: _,
             editing: h,
             showResults: p
         } = t ?? (0, A.xt)(e.getChannelId(), e.id) ?? T,
         g = e.reactions,
         x = !0;
     if (!S(e)) {
-        let t = _.A.getMessage(e.channel_id, e.id);
+        let t = m.A.getMessage(e.channel_id, e.id);
         x = !e.isSearchHit && null != t, g = t?.reactions ?? g
     }
     let f = a.size > 0,
@@ -75,7 +75,7 @@ function y(e, t) {
         j = null != y ? u.Ay.getSelfMember(y) : null,
         L = (0, o.TR)(j),
         R = (0, d.Z)(j),
-        P = !m && f && !E && l && !L && !R;
+        P = !_ && f && !E && l && !L && !R;
     return {
         poll: i,
         canTapAnswers: N,
@@ -92,7 +92,7 @@ function y(e, t) {
         isSent: l,
         reactions: g,
         selectedAnswerIds: a,
-        submitting: m,
+        submitting: _,
         tapShouldOpenVotersModal: b,
         showResults: p
     }
@@ -107,11 +107,11 @@ function j(e, t) {
         poll: u
     } = e;
     if (null == u) return;
-    let _ = m.default.getCurrentUser();
-    if (null == _) return;
+    let m = _.default.getCurrentUser();
+    if (null == m) return;
     let A = s.A.useReducedMotion,
         I = c.A.getChannel(e.getChannelId())?.getGuildId?.(),
-        v = (0, C.T)(_, I),
+        v = (0, C.T)(m, I),
         T = u.answers,
         S = u.layout_type,
         j = y(e, t, {
@@ -145,14 +145,14 @@ function j(e, t) {
             d = o?.count_details?.vote ?? 0,
             c = 0 === W ? 0 : d / W,
             u = F.has(s),
-            _ = d >= z && 0 !== d,
-            m = O && (o?.me_vote ?? !1),
+            m = d >= z && 0 !== d,
+            _ = O && (o?.me_vote ?? !1),
             g = (t = {
-                didSelfVote: m,
+                didSelfVote: _,
                 hasVoted: O,
                 isExpired: U,
                 isSelected: u,
-                isLeader: _,
+                isLeader: m,
                 showResults: q
             }, (0, i.YW)(t).with({
                 isExpired: !0,
@@ -210,8 +210,8 @@ function j(e, t) {
                 attachmentIds: e.poll_media.attachment_ids
             },
             isSelected: u,
-            isVictor: U && _,
-            didSelfVote: m,
+            isVictor: U && m,
+            didSelfVote: _,
             style: g,
             shouldAnimateTransition: H && !A,
             votesPercentage: Math.round(100 * c),

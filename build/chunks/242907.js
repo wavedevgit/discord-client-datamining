@@ -12,8 +12,8 @@ var l = n(158954),
     d = n(961350),
     c = n(734057),
     u = n(576705),
-    _ = n(203982),
-    m = n(427262),
+    m = n(203982),
+    _ = n(427262),
     h = n(652215),
     p = n(985018),
     g = n(366228);
@@ -25,7 +25,7 @@ function A(e) {
             channelId: C
         } = e,
         E = (0, s.bG)([d.default], () => d.default.getId()),
-        I = m.Ay.useName(x),
+        I = _.Ay.useName(x),
         v = E === x.id,
         b = (0, s.bG)([c.A, u.A], () => {
             let e = c.A.getChannel(C);
@@ -44,8 +44,8 @@ function A(e) {
         onClick: function() {
             let {
                 id: e
-            } = x, t = `@${m.Ay.getUserTag(x,{decoration:"never"})}`, n = `<@${e}>`;
-            _._.dispatchToLastSubscribed(h.jej.INSERT_TEXT, {
+            } = x, t = `@${_.Ay.getUserTag(x,{decoration:"never"})}`, n = `<@${e}>`;
+            m._.dispatchToLastSubscribed(h.jej.INSERT_TEXT, {
                 plainText: t,
                 rawText: n
             }), null != C && r.A.startTyping(C)

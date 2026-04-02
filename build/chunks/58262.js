@@ -11,8 +11,8 @@ var i = n(627968),
     d = n(793574),
     c = n(688810),
     u = n(21599),
-    _ = n(529200),
-    m = n(427157),
+    m = n(529200),
+    _ = n(427157),
     h = n(961350),
     p = n(734057),
     g = n(994500),
@@ -61,16 +61,16 @@ function E(e) {
     let P = v ? f.intl.string(f.t.eQyu1F) : f.intl.string(f.t.PYJHW6),
         D = null != t.inviter ? `${t.inviter.username}` : "",
         M = null != t.inviter ? A.Ay.getUserTag(t.inviter) : "";
-    return (0, i.jsxs)(_.A, {
-        children: [(0, i.jsx)(_.A.Header, {
+    return (0, i.jsxs)(m.A, {
+        children: [(0, i.jsx)(m.A.Header, {
             text: P
-        }), (0, i.jsxs)(_.A.Body, {
+        }), (0, i.jsxs)(m.A.Body, {
             children: [(0, i.jsxs)("div", {
                 className: C.iH,
-                children: [(0, i.jsx)(_.A.Icon, {
-                    user: new m.A(t.inviter),
+                children: [(0, i.jsx)(m.A.Icon, {
+                    user: new _.A(t.inviter),
                     onClick: N ? j : void 0
-                }), (0, i.jsx)(_.A.Info, {
+                }), (0, i.jsx)(m.A.Info, {
                     title: D,
                     onClick: N ? j : void 0,
                     children: M

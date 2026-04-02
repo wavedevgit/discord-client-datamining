@@ -16,8 +16,8 @@ var i = n(627968),
     d = n(421380),
     c = n(397927),
     u = n(565645),
-    _ = n(619517),
-    m = n(253932),
+    m = n(619517),
+    _ = n(253932),
     h = n(44234),
     p = n(282054),
     g = n(218394),
@@ -127,7 +127,7 @@ function j(e) {
         renderAnswerContent: c
     } = e, {
         ContainerComponent: u,
-        answerElementType: _
+        answerElementType: m
     } = (0, a.YW)({
         canTapAnswers: s,
         answersInteraction: n
@@ -157,7 +157,7 @@ function j(e) {
             className: d,
             answer: e,
             isFirstAnswer: 0 === t,
-            elementType: _,
+            elementType: m,
             answerTapAccessibilityLabel: l,
             hasSelectedAnyAnswer: r,
             children: c(e)
@@ -176,7 +176,7 @@ function L(e) {
     } = e, {
         channelId: c,
         messageId: u
-    } = (0, C.Tu)(), _ = (0, C.hd)(n.style), m = !0 === n.isSelected, h = l.useCallback(() => {
+    } = (0, C.Tu)(), m = (0, C.hd)(n.style), _ = !0 === n.isSelected, h = l.useCallback(() => {
         A.A.handlePollAnswerTapped({
             channelId: c,
             messageId: u,
@@ -187,23 +187,23 @@ function L(e) {
         case 0:
         case 3:
             return (0, i.jsx)("li", {
-                className: r()(t, _),
+                className: r()(t, m),
                 children: s
             });
         case 1:
             return (0, i.jsx)(y, {
-                className: r()(t, _),
+                className: r()(t, m),
                 onClick: h,
-                isSelected: m,
+                isSelected: _,
                 hasSelectedAnyAnswer: a,
                 isFirstAnswer: o,
                 children: s
             });
         case 2:
             return (0, i.jsx)(S, {
-                className: r()(t, _),
+                className: r()(t, m),
                 onClick: h,
-                isSelected: m,
+                isSelected: _,
                 isFirstAnswer: o,
                 children: s
             })
@@ -214,8 +214,8 @@ function R(e) {
     let {
         attachment: t,
         className: n
-    } = e, l = (0, g.j)(), s = m.kt.useSetting();
-    return (0, i.jsx)(_.Ay, {
+    } = e, l = (0, g.j)(), s = _.kt.useSetting();
+    return (0, i.jsx)(m.Ay, {
         className: n,
         imageClassName: v.Bw,
         src: null != t.proxy_url && "" !== t.proxy_url ? t.proxy_url : t.url,

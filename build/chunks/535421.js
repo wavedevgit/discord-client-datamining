@@ -1,6 +1,6 @@
 /** chunk id: 535421 params = (module,exports,require) **/
 n.d(t, {
-    A: () => m
+    A: () => _
 });
 var i = n(627968);
 n(64700);
@@ -12,11 +12,11 @@ var l = n(284009),
     d = n(589022),
     c = n(734057),
     u = n(287809),
-    _ = n(943667);
+    m = n(943667);
 
-function m(e, t) {
+function _(e, t) {
     if ((0, a.MZ)(t)) return (0, i.jsx)(o.A, {});
-    if ((0, _.A)(t)) {
+    if ((0, m.A)(t)) {
         let n = (t?.author?.username ?? "").split(" ").slice(0, -1).join(" "),
             {
                 guild_id: l
@@ -32,12 +32,12 @@ function m(e, t) {
     s()(null != n, "renderUserGuildPopout: user should never be null");
     let l = u.default.getCurrentUser();
     s()(null != l, "renderUserGuildPopout: currentUser should never be null");
-    let m = c.A.getChannel(t.channel_id);
-    return s()(null != m, "renderUserGuildPopout: channel should never be null"), (0, i.jsx)(d.A, {
+    let _ = c.A.getChannel(t.channel_id);
+    return s()(null != _, "renderUserGuildPopout: channel should never be null"), (0, i.jsx)(d.A, {
         ...e,
         user: n,
         currentUser: l,
-        guildId: m.guild_id,
+        guildId: _.guild_id,
         channelId: t.channel_id,
         messageId: t.id
     })

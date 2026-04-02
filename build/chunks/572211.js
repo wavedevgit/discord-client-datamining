@@ -11,8 +11,8 @@ var i, l = n(627968),
     d = n(172218),
     c = n(158954),
     u = n(311907),
-    _ = n(435371),
-    m = n(775602),
+    m = n(435371),
+    _ = n(775602),
     h = n(176563),
     p = n(961350),
     g = n(354287),
@@ -71,7 +71,7 @@ function I(e) {
     let {
         primaryColor: R,
         secondaryColor: P
-    } = (0, h.A)(T ?? I), D = `linear-gradient(45deg, ${R}, ${P})`, M = (0, u.bG)([m.A], () => m.A.useReducedMotion), w = s.useRef(!1), O = (0, d.K)(e => {
+    } = (0, h.A)(T ?? I), D = `linear-gradient(45deg, ${R}, ${P})`, M = (0, u.bG)([_.A], () => _.A.useReducedMotion), w = s.useRef(!1), O = (0, d.K)(e => {
         !1 === w.current && e && (y?.onView?.(), (0, g.wV)({
             appId: y.id,
             linkType: y.linkType,
@@ -180,10 +180,10 @@ function I(e) {
                             submitting: o,
                             trackingArea: d,
                             isDeadEnd: u,
-                            iconButton: m,
+                            iconButton: _,
                             buttonRef: h
                         } = e, p = 0 === t;
-                        return m ? (0, l.jsx)(_.m_, {
+                        return _ ? (0, l.jsx)(m.m_, {
                             text: n,
                             targetElementRef: h,
                             children: (0, l.jsx)(c.K0, {

@@ -12,8 +12,8 @@ var r = n(503698),
     d = n(827734),
     c = n(582754),
     u = n(397927),
-    _ = n(890687),
-    m = n(579473),
+    m = n(890687),
+    _ = n(579473),
     h = n(241124),
     p = n(652215),
     g = n(260821),
@@ -31,7 +31,7 @@ let f = function(e) {
         withGameTile: f = !0,
         logotypeStyle: C,
         onLoadComplete: E
-    } = e, I = (0, c.Mw)(A) ? p.NJ8.DARK : p.NJ8.LIGHT, v = (0, _.a5)(l.id, I), b = x && null != l.config.cosponsorMetadata && null != v;
+    } = e, I = (0, c.Mw)(A) ? p.NJ8.DARK : p.NJ8.LIGHT, v = (0, m.a5)(l.id, I), b = x && null != l.config.cosponsorMetadata && null != v;
     return (0, s.jsxs)("div", {
         className: a()(g.Iu, t),
         children: [f && (0, s.jsx)(h.Sn, {
@@ -40,7 +40,7 @@ let f = function(e) {
                 ref: e,
                 className: g._Y,
                 alt: "",
-                src: (0, m.tW)(l, m.fY.GAME_TILE, I).url,
+                src: (0, _.tW)(l, _.fY.GAME_TILE, I).url,
                 style: {
                     borderRadius: function(e) {
                         switch (e) {
@@ -64,7 +64,7 @@ let f = function(e) {
                 }),
                 style: C,
                 alt: l.config.messages.gameTitle,
-                src: (0, m.tW)(l, m.fY.LOGO_TYPE, I).url,
+                src: (0, _.tW)(l, _.fY.LOGO_TYPE, I).url,
                 onLoad: E
             })
         }), b && (0, s.jsxs)(s.Fragment, {

@@ -11,8 +11,8 @@ var i = n(627968),
     d = n(158954),
     c = n(311907),
     u = n(775602),
-    _ = n(409626),
-    m = n(106799),
+    m = n(409626),
+    _ = n(106799),
     h = n(859703),
     p = n(112142),
     g = n(714510),
@@ -57,10 +57,10 @@ function w(e) {
     }), H = (0, C.Ic)(t), V = (0, A.In)(t), q = (0, E.mq)(t.config), W = (0, E.mH)(t.config), Y = t.userStatus?.enrolledAt != null, z = t.userStatus?.completedAt != null, Q = t.userStatus?.claimedAt != null, K = (0, E.ks)(t.config), J = (0, E._Z)(t.config), {
         completedRatio: X,
         completedRatioDisplay: Z
-    } = (0, A.O9)(t), $ = (0, g.gj)(t, b, _.Ob.QuestEmbed, w), ee = (0, N.Pd)(t), et = l.useMemo(() => Q && K ? R.intl.format(R.t["8Op4c4"], {
+    } = (0, A.O9)(t), $ = (0, g.gj)(t, b, m.Ob.QuestEmbed, w), ee = (0, N.Pd)(t), et = l.useMemo(() => Q && K ? R.intl.format(R.t["8Op4c4"], {
         balanceHook: () => (0, i.jsxs)(O, {
             questId: t.id,
-            children: [(0, i.jsx)(m.A, {
+            children: [(0, i.jsx)(_.A, {
                 shouldUseThemeColor: !0,
                 className: D.Kq,
                 customSize: 14
@@ -72,7 +72,7 @@ function w(e) {
     }) : K ? R.intl.format(R.t.ro1sze, {
         balanceHook: () => (0, i.jsxs)(O, {
             questId: t.id,
-            children: [(0, i.jsx)(m.A, {
+            children: [(0, i.jsx)(_.A, {
                 shouldUseThemeColor: !0,
                 className: D.Kq,
                 customSize: 14
@@ -231,7 +231,7 @@ function k(e) {
         questContent: l,
         questContentPosition: s,
         sourceQuestContent: r
-    } = e, a = (0, c.bG)([h.A], () => h.A.isEnrolling(t.id)), o = (0, I.vv)(t), u = (0, I.Cr)(t), _ = (0, C.Ic)(t), m = (0, b._c)({
+    } = e, a = (0, c.bG)([h.A], () => h.A.isEnrolling(t.id)), o = (0, I.vv)(t), u = (0, I.Cr)(t), m = (0, C.Ic)(t), _ = (0, b._c)({
         progressState: n,
         quest: t,
         questContent: l,
@@ -244,7 +244,7 @@ function k(e) {
         month: "numeric",
         day: "numeric"
     });
-    return _ ? (0, i.jsx)(d.$nd, {
+    return m ? (0, i.jsx)(d.$nd, {
         variant: "secondary",
         disabled: !0,
         text: R.intl.format(R.t["14o6QY"], {
@@ -254,9 +254,9 @@ function k(e) {
     }) : (0, i.jsx)(d.$nd, {
         fullWidth: !0,
         variant: "primary",
-        disabled: null == m.onClick,
+        disabled: null == _.onClick,
         loading: a,
-        onClick: m.onClick ?? void 0,
-        text: m.text
+        onClick: _.onClick ?? void 0,
+        text: _.text
     })
 }

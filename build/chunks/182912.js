@@ -11,8 +11,8 @@ var i = n(627968),
     d = n(397927),
     c = n(713517),
     u = n(696451),
-    _ = n(486020),
-    m = n(562153),
+    m = n(486020),
+    _ = n(562153),
     h = n(836629),
     p = n(754521);
 let g = {
@@ -52,12 +52,12 @@ function A(e) {
         children: [C.map((e, t) => (0, i.jsx)("div", {
             className: p.my,
             children: (0, i.jsx)(o.m_, {
-                text: m.Ay.getName(n, s, e),
+                text: _.Ay.getName(n, s, e),
                 children: (0, i.jsx)(d.euF, {
                     src: function(e, t, n) {
                         let i = u.Ay.getMember(t, e.id);
                         if (null != i) {
-                            let e = (0, _.xT)(i);
+                            let e = (0, m.xT)(i);
                             if (null != e) return e
                         }
                         return e.getAvatarURL(t, n)

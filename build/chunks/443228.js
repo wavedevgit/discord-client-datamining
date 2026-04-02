@@ -14,9 +14,9 @@ function d(e) {
     let {
         code: t,
         message: n
-    } = e, [d, c] = t.split("/"), u = l.A.getChannel(c), _ = s.A.getGuild(d);
-    return null != u && u.isGuildVocal() && null != _ && r.A.can(o.xBc.VIEW_CHANNEL, u) && r.A.can(o.xBc.CONNECT, u) ? (0, i.jsx)(a.A, {
-        guild: _,
+    } = e, [d, c] = t.split("/"), u = l.A.getChannel(c), m = s.A.getGuild(d);
+    return null != u && u.isGuildVocal() && null != m && r.A.can(o.xBc.VIEW_CHANNEL, u) && r.A.can(o.xBc.CONNECT, u) ? (0, i.jsx)(a.A, {
+        guild: m,
         channel: u,
         message: n
     }) : null

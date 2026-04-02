@@ -26,8 +26,8 @@ var i = n(627968),
     d = n(414798),
     c = n(267102),
     u = n(594061),
-    _ = n(734057),
-    m = n(580745),
+    m = n(734057),
+    _ = n(580745),
     h = n(320501),
     p = n(287809),
     g = n(954571),
@@ -114,9 +114,9 @@ function M(e, t, s, o) {
             let n = window.getSelection();
             if (null != n && !n.isCollapsed && (n.focusNode === e.target || t.contains(n.focusNode))) return
         }
-        let l = _.A.getChannel(d),
+        let l = m.A.getChannel(d),
             r = h.A.getMessage(d, u),
-            c = m.A.isEditing(d, u);
+            c = _.A.isEditing(d, u);
         null == l || null == r || c || (g.default.track(v.HAw.MESSAGE_POPOUT_MENU_OPENED_DESKTOP, {
             message_id: u,
             channel: d,
@@ -146,7 +146,7 @@ function M(e, t, s, o) {
 function w(e, t) {
     return l.useCallback(n => {
         let i = p.default.getUser(e),
-            l = _.A.getChannel(t);
+            l = m.A.getChannel(t);
         null != i && null != l && (n.stopPropagation(), (0, C.wQ)(n, i, l))
     }, [e, t])
 }
@@ -154,7 +154,7 @@ function w(e, t) {
 function O(e, t, n) {
     return l.useCallback(i => {
         let l = p.default.getUser(e),
-            s = _.A.getChannel(t);
+            s = m.A.getChannel(t);
         null != l && null != s && (i.stopPropagation(), (0, C.B8)(i, {
             user: l,
             channel: s,
@@ -166,7 +166,7 @@ function O(e, t, n) {
 function k(e, t) {
     return l.useCallback(n => {
         let i = p.default.getUser(e),
-            l = _.A.getChannel(t);
+            l = m.A.getChannel(t);
         null != i && null != l && (n.stopPropagation(), (0, C.pB)(n, i, l.guild_id))
     }, [e, t])
 }
@@ -192,14 +192,14 @@ function B(e) {
     let c = l.useCallback(() => {
             (0, u.cE)(), o || (A._.dispatchKeyed(v.zOV.ANIMATE_CHAT_AVATAR, r, !0), d(!0))
         }, [o, r]),
-        _ = l.useCallback(() => {
+        m = l.useCallback(() => {
             A._.dispatchKeyed(v.zOV.ANIMATE_CHAT_AVATAR, r, !1), d(!1)
         }, [r]);
     return {
         hasHovered: a.current,
         isHovered: o,
         handleMouseEnter: c,
-        handleMouseLeave: _
+        handleMouseLeave: m
     }
 }
 

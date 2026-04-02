@@ -11,8 +11,8 @@ var i = n(627968),
     d = n(397927),
     c = n(803306),
     u = n(862804),
-    _ = n(387408),
-    m = n(958340),
+    m = n(387408),
+    _ = n(958340),
     h = n(384231),
     p = n(763754),
     g = n(491182),
@@ -45,7 +45,7 @@ function G(e) {
         message: t,
         snapshot: n,
         index: c
-    } = e, _ = l.useMemo(() => new u.j(t, n, c), [t, n, c]), h = (0, r.bG)([y.A, M.default, P.A, R.A, L.A, m.A], () => _.getForwardInfo(y.A, M.default, P.A, R.A, L.A, m.A).footerInfo, [_], a.A), p = l.useCallback(() => {
+    } = e, m = l.useMemo(() => new u.j(t, n, c), [t, n, c]), h = (0, r.bG)([y.A, M.default, P.A, R.A, L.A, _.A], () => m.getForwardInfo(y.A, M.default, P.A, R.A, L.A, _.A).footerInfo, [m], a.A), p = l.useCallback(() => {
         let e = y.A.getChannel(t.channel_id),
             n = L.A.getGuild(e?.guild_id),
             i = t.messageReference?.channel_id,
@@ -93,8 +93,8 @@ function F(e) {
         onClickUsername: d,
         onClickAvatar: c,
         onPopoutRequestClose: u,
-        showUsernamePopout: _,
-        showAvatarPopout: m
+        showUsernamePopout: m,
+        showAvatarPopout: _
     } = function(e, t) {
         let {
             popouts: n,
@@ -133,8 +133,8 @@ function F(e) {
             onClickUsername: d,
             onClickAvatar: c,
             onPopoutRequestClose: u,
-            showUsernamePopout: _,
-            showAvatarPopout: m,
+            showUsernamePopout: m,
+            showAvatarPopout: _,
             renderPopout: f.A,
             compact: !1,
             displayCompactAvatars: !1
@@ -163,11 +163,11 @@ function H(e) {
         }).catch(() => {})
     }, [n?.moderatorReport?.reported_user_id]);
     let d = l.useMemo(() => {
-            let e = (0, _.A)(t, n);
+            let e = (0, m.A)(t, n);
             return null != a && n?.moderatorReport?.reported_user_id != null ? e.set("author", a) : e
         }, [t, n, a]),
         u = N.hD.useSetting(),
-        m = N.rs.useSetting(),
+        _ = N.rs.useSetting(),
         p = (0, r.bG)([j.A], () => j.A.isDeveloper),
         g = (0, h.S)((d.editedTimestamp ?? d.timestamp).valueOf()),
         {
@@ -175,7 +175,7 @@ function H(e) {
             hasSpoilerEmbeds: x,
             hasBailedAst: f
         } = (0, I.A)(d, {
-            hideSimpleEmbedContent: u && m,
+            hideSimpleEmbedContent: u && _,
             isInteracting: !1,
             formatInline: !1,
             allowList: g,

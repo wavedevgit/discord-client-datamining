@@ -11,8 +11,8 @@ var i = n(627968),
     d = n(341915),
     c = n(890687),
     u = n(18437),
-    _ = n(590202),
-    m = n(971649),
+    m = n(590202),
+    _ = n(971649),
     h = n(901406),
     p = n(792620),
     g = n(201805),
@@ -26,7 +26,7 @@ function C(e) {
         analyticsCtxQuestContent: n,
         analyticsCtxSourceQuestContent: r,
         analyticsCtxQuestContentPosition: d,
-        analyticsCtxQuestContentRowIndex: m
+        analyticsCtxQuestContentRowIndex: _
     } = e, h = (0, u.Ut)(), p = (0, l.bG)([a.A], () => a.A.useReducedMotion), A = (0, g.Xf)({
         useReducedMotion: p
     }), C = (0, o.O)(e => e.setErrorHints), {
@@ -38,9 +38,9 @@ function C(e) {
             A.startAnimation(), h({
                 questId: t.id,
                 questContent: n,
-                questContentCTA: _.Cy.DEFIBRILLATOR,
+                questContentCTA: m.Cy.DEFIBRILLATOR,
                 questContentPosition: d,
-                questContentRowIndex: m,
+                questContentRowIndex: _,
                 sourceQuestContent: r
             })
         },
@@ -72,7 +72,7 @@ function E(e) {
         size: u
     } = e, p = (0, c.RR)({
         quest: t
-    }), g = (0, m.vU)()?.getId(), f = (0, c.Vn)(t), E = (0, c.fc)(t), [I, v, b] = (0, c.Qo)(t, E);
+    }), g = (0, _.vU)()?.getId(), f = (0, c.Vn)(t), E = (0, c.fc)(t), [I, v, b] = (0, c.Qo)(t, E);
     return f || I === d.X0.DESKTOP ? (0, i.jsx)(r.Button, {
         variant: "secondary",
         size: u,
@@ -87,7 +87,7 @@ function E(e) {
                 quest: t
             }, {
                 content: l,
-                ctaContent: _.Cy.CONNECT_CONSOLE,
+                ctaContent: m.Cy.CONNECT_CONSOLE,
                 position: a,
                 rowIndex: o,
                 impressionId: g,

@@ -11,8 +11,8 @@ var i = n(627968),
     d = n(361926),
     c = n(485724),
     u = n(572211),
-    _ = n(354287),
-    m = n(574660),
+    m = n(354287),
+    _ = n(574660),
     h = n(625180),
     p = n(207371),
     g = n(734057),
@@ -46,7 +46,7 @@ function b(e) {
     }), w = (0, l.bG)([C.Ay], () => C.Ay.getCurrentEmbeddedActivity()), O = (0, E.A)(), k = D === I.xy.CAN_LAUNCH, U = null != M && w?.compositeInstanceId === M, B = null != n ? n : b.customId, G = (0, p.e)(t), F = [];
     G ? F.push({
         label: v.intl.string(v.t.RscU7I),
-        trackingArea: _.kY.PLAY,
+        trackingArea: m.kY.PLAY,
         onClick() {
             h.A.launchFrame({
                 applicationId: t.id
@@ -54,7 +54,7 @@ function b(e) {
         }
     }) : (k && F.push({
         label: null == M ? v.intl.string(v.t.RscU7I) : U ? v.intl.string(v.t.DPfdsq) : v.intl.string(v.t.sqe0hj),
-        trackingArea: _.kY.PLAY,
+        trackingArea: m.kY.PLAY,
         onClick() {
             (0, f.su)({
                 channelId: P ?? void 0,
@@ -69,7 +69,7 @@ function b(e) {
         disabled: U
     }), L && !k && F.push({
         label: v.intl.string(v.t.JeK1Wg),
-        trackingArea: _.kY.PLAY,
+        trackingArea: m.kY.PLAY,
         onClick() {
             (0, a.Q)({
                 appId: t.id,
@@ -80,7 +80,7 @@ function b(e) {
             })
         }
     }));
-    let H = (0, m.F)(t);
+    let H = (0, _.F)(t);
     return (0, i.jsx)(u.h, {
         actions: F,
         onClickContent: H,

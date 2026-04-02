@@ -11,8 +11,8 @@ var i = n(627968),
     d = n(311907),
     c = n(3026),
     u = n(397927),
-    _ = n(846293),
-    m = n(933958),
+    m = n(846293),
+    _ = n(933958),
     h = n(793574),
     p = n(688810),
     g = n(572211),
@@ -139,8 +139,8 @@ function B(e) {
         }, [s.inviter?.id, A.id]),
         f = (0, d.bG)([T.A], () => null != s.guild ? T.A.getGuild(s.guild.id) : null, [s]),
         C = (0, E.A)([A.id])[0],
-        I = (0, d.bG)([m.Ay], () => s?.channel != null && m.Ay.getSelfEmbeddedActivityForChannel(s.channel.id)?.applicationId === A.id),
-        j = (0, d.bG)([m.Ay], () => (s.channel?.id != null ? m.Ay.getEmbeddedActivitiesForChannel(s.channel.id) : []).some(e => {
+        I = (0, d.bG)([_.Ay], () => s?.channel != null && _.Ay.getSelfEmbeddedActivityForChannel(s.channel.id)?.applicationId === A.id),
+        j = (0, d.bG)([_.Ay], () => (s.channel?.id != null ? _.Ay.getEmbeddedActivitiesForChannel(s.channel.id) : []).some(e => {
             let {
                 applicationId: t
             } = e;
@@ -151,16 +151,16 @@ function B(e) {
         {
             analyticsLocations: k
         } = (0, p.Ay)(h.A.INVITE_EMBED),
-        U = (0, d.yK)([m.Ay], () => null != D ? m.Ay.getEmbeddedActivitiesForChannel(D.id).filter(e => e.applicationId === A.id).flatMap(e => Array.from(e.userIds)) : [], [D, A.id]),
+        U = (0, d.yK)([_.Ay], () => null != D ? _.Ay.getEmbeddedActivitiesForChannel(D.id).filter(e => e.applicationId === A.id).flatMap(e => Array.from(e.userIds)) : [], [D, A.id]),
         B = (0, d.yK)([S.default], () => U.map(e => S.default.getUser(e)).filter(e => null != e), [U]),
         F = l.useCallback(() => {
-            (0, _.he)({
+            (0, m.he)({
                 invite: s,
                 action: "accept",
                 inviter_id: r.author.id,
                 invite_message_id: r.id,
                 invite_instance_id: (0, v._U)(s.code, r.id)
-            }, k), _.Ay.acceptInviteAndTransitionToInviteChannel({
+            }, k), m.Ay.acceptInviteAndTransitionToInviteChannel({
                 inviteKey: s.code,
                 context: a("Invite Button Embed", s.code),
                 analyticsLocations: k
@@ -207,8 +207,8 @@ function G(e) {
         members: d,
         membersOnline: c,
         isActivityActive: u,
-        submitting: _,
-        buttonLabel: m,
+        submitting: m,
+        buttonLabel: _,
         disabled: h,
         disabledReason: p,
         handleAcceptInvite: E,
@@ -221,13 +221,13 @@ function G(e) {
         icon: b,
         bot: v
     }), N = (0, C.F)(t), S = (0, f.f)(t), y = n.length, L = l.useMemo(() => [{
-        label: m,
+        label: _,
         trackingArea: s ? x.kY.PLAY : x.kY.JOIN_SERVER,
-        submitting: _,
+        submitting: m,
         disabled: h,
         disabledReason: h && null != p ? p : void 0,
         onClick: E
-    }], [m, s, _, h, p, E]);
+    }], [_, s, m, h, p, E]);
     return (0, i.jsx)(g.h, {
         header: t.name,
         title: w.intl.string(w.t["7vb6nw"]),
