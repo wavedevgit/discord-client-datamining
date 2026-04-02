@@ -1,6 +1,6 @@
 /** chunk id: 558593 params = (module,exports,require) **/
 n.d(t, {
-    q: () => a
+    q: () => l
 });
 let i = (0, n(600975).C)({
     kind: "guild",
@@ -18,7 +18,7 @@ let i = (0, n(600975).C)({
     }]
 });
 
-function a(e, t) {
+function l(e, t) {
     return i.useExperiment({
         guildId: e,
         location: t

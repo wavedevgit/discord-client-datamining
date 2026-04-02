@@ -29,6 +29,7 @@ let _ = e => {
                 },
                 children: (0, n.jsx)(c.S, {
                     subblock: e,
+                    enablePreview: 0 === s,
                     badgeText: (0, o.HF)(e.unpublishedAt) ? d.intl.string(d.t["h/uBCR"]) : void 0,
                     handleTransition: t
                 }, e.categoryStoreListingId)
@@ -53,6 +54,7 @@ let _ = e => {
                 },
                 children: [null != r && (0, n.jsx)(c.S, {
                     category: r,
+                    enablePreview: !0,
                     badgeText: (0, o.HF)(r.unpublishedAt) ? d.intl.string(d.t["h/uBCR"]) : void 0,
                     handleTransition: t
                 }), null != a && (0, n.jsx)(c.S, {

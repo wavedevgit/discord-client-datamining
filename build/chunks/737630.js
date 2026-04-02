@@ -35,11 +35,11 @@ var n = s(627968),
     y = s(120286),
     R = s(870308),
     B = s(938191),
-    M = s(758836),
-    P = s(652215),
+    P = s(758836),
+    M = s(652215),
     D = s(650583),
-    H = s(985018),
-    w = s(229781);
+    w = s(985018),
+    H = s(229781);
 let F = e => {
         let {
             children: t,
@@ -56,7 +56,7 @@ let F = e => {
     },
     G = function(e) {
         let {
-            tab: t = M.G2.HOME
+            tab: t = P.G2.HOME
         } = e;
         (0, p.P)(h.a), (0, I.g)();
         let s = (0, _.A)((0, i.A)()),
@@ -70,7 +70,7 @@ let F = e => {
                 currentTab: G,
                 hasFilters: U
             } = (0, j.v)(),
-            V = r.useMemo(() => t === M.G2.HOME && null != G && U() ? G : t, [t, G, U]),
+            V = r.useMemo(() => t === P.G2.HOME && null != G && U() ? G : t, [t, G, U]),
             {
                 categories: K,
                 refreshCategories: W
@@ -94,7 +94,7 @@ let F = e => {
                 transitionToTab: et
             } = (0, L.o)(V);
         (0, m.HU)({
-            location: H.intl.string(H.t.pWG4ze)
+            location: w.intl.string(w.t.pWG4ze)
         }), (0, A.uS)(s, Q, Z, ee, q), (0, A.N0)(Q, l);
         let {
             dismissShopButtonDC: es
@@ -102,7 +102,7 @@ let F = e => {
         r.useEffect(() => {
             es()
         }, [es]), r.useEffect(() => {
-            (0, u.I)(P.BVt.COLLECTIBLES_SHOP)
+            (0, u.I)(M.BVt.COLLECTIBLES_SHOP)
         }, []);
         let en = r.useRef(null),
             er = r.useRef(null);
@@ -118,7 +118,7 @@ let F = e => {
                 newValue: {
                     sessionId: s,
                     pageCategory: Z,
-                    pageSize: M.l5
+                    pageSize: P.l5
                 },
                 children: (0, n.jsx)(C.iM, {
                     tab: Q,
@@ -126,7 +126,7 @@ let F = e => {
                         onClose: D,
                         shouldAddEventListener: !1,
                         children: (0, n.jsxs)("div", {
-                            className: a()(w.bx, {
+                            className: a()(H.bx, {
                                 [B.jP]: c
                             }),
                             ref: er,
@@ -136,14 +136,14 @@ let F = e => {
                                 selectedTab: Q
                             }), null != ea && ea.type === S.Z.COUNTDOWN && (0, n.jsx)(y.k, {
                                 message: ea.message,
-                                onClick: () => et(M.G2.HOME),
+                                onClick: () => et(P.G2.HOME),
                                 variant: "pink",
                                 countdownEndDate: ea.countdownEndDate
                             }), (0, n.jsx)("div", {
-                                className: a()(w.td, {
-                                    [w.RK]: ee === M.Pf.VISIBLE,
-                                    [w.in]: ee === M.Pf.IN,
-                                    [w.FD]: ee === M.Pf.OUT
+                                className: a()(H.td, {
+                                    [H.RK]: ee === P.Pf.VISIBLE,
+                                    [H.in]: ee === P.Pf.IN,
+                                    [H.FD]: ee === P.Pf.OUT
                                 }),
                                 children: (0, n.jsx)(k.A, {
                                     tab: Q,

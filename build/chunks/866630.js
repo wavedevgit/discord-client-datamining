@@ -27,19 +27,19 @@ let g = a.memo(function(e) {
                 burst_count: C,
                 burst_colors: I,
                 readOnly: E,
-                isLurking: v,
-                isPendingMember: b,
+                isLurking: b,
+                isPendingMember: v,
                 type: T,
-                emojiSize: y
+                emojiSize: S
             } = e,
-            S = T === _.v.BURST,
+            y = T === _.v.BURST,
             N = (0, m.IN)(x, f, T),
-            j = (0, u.g)(S && null != I ? I : []),
+            j = (0, u.g)(y && null != I ? I : []),
             L = a ? p : h,
-            R = S ? C : A,
+            R = y ? C : A,
             P = (0, c.x)(R, m.$Z),
             w = {};
-        if (S && null != j) {
+        if (y && null != j) {
             let {
                 accentColor: e,
                 backgroundColor: i,
@@ -55,7 +55,7 @@ let g = a.memo(function(e) {
         return (0, i.jsxs)("div", {
             className: l()(L.reaction, L.reactionInner, g, {
                 [L.reactionMe]: N,
-                [L.reactionReadOnly]: E && !v && !b
+                [L.reactionReadOnly]: E && !b && !v
             }),
             style: w,
             children: [(0, i.jsx)(d.A, {
@@ -64,8 +64,8 @@ let g = a.memo(function(e) {
                 }),
                 emojiId: s.id,
                 emojiName: s.name,
-                size: y,
-                animated: S && s.animated
+                size: S,
+                animated: y && s.animated
             }), (0, i.jsx)("div", {
                 className: L.reactionCount,
                 style: M,

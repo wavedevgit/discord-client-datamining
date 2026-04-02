@@ -22,11 +22,11 @@ var i = n(627968),
     C = n(178910),
     I = n(354287),
     E = n(574660),
-    v = n(853390),
-    b = n(611010),
+    b = n(853390),
+    v = n(611010),
     T = n(961350),
-    y = n(734057),
-    S = n(290863),
+    S = n(734057),
+    y = n(290863),
     N = n(287809),
     j = n(954571),
     L = n(486020),
@@ -48,7 +48,7 @@ let G = a.memo(e => {
         return e.start(d ? 15 * R.A.Millis.SECOND : R.A.Millis.SECOND, () => {
             i((new Date().getTime() - t) / R.A.Millis.SECOND)
         }), () => e.stop()
-    }, [d, t]), (0, v.fU)(n)
+    }, [d, t]), (0, b.fU)(n)
 });
 G.displayName = "ActivityRuntimeCounter";
 let F = a.memo(function(e) {
@@ -59,10 +59,10 @@ let F = a.memo(function(e) {
             message: u
         } = e,
         {
-            analyticsLocations: v
+            analyticsLocations: b
         } = (0, A.Ay)(g.A.ACTIVITY_INSTANCE_EMBED),
         R = (0, c.p)(),
-        w = (0, s.bG)([y.A], () => y.A.getChannel(r), [r]),
+        w = (0, s.bG)([S.A], () => S.A.getChannel(r), [r]),
         F = w?.isThread?.() ? w?.parent_id : r,
         H = (0, s.bG)([T.default], () => T.default.getId()),
         {
@@ -76,17 +76,17 @@ let F = a.memo(function(e) {
         }), [F, n.id]),
         z = V?.userIds,
         Y = (0, s.yK)([N.default], () => Array.from(z ?? []).map(e => N.default.getUser(e)).filter(P.Vq), [z]),
-        Q = (0, s.bG)([S.A], () => {
+        Q = (0, s.bG)([y.A], () => {
             if (null == z) return null;
             for (let e of z) {
-                let t = S.A.findActivity(e, e => e.application_id === n.id);
+                let t = y.A.findActivity(e, e => e.application_id === n.id);
                 if (null != t) return t
             }
             return null
         }, [n.id, z]),
         K = Q?.details,
         J = a.useMemo(() => {
-            let e = new b.Ay(n);
+            let e = new v.Ay(n);
             return null == e.embeddedActivityConfig && (e.embeddedActivityConfig = k.Gl), e
         }, [n]),
         X = (0, p.vG)({
@@ -114,14 +114,14 @@ let F = a.memo(function(e) {
                 targetApplicationId: n.id,
                 channelId: r,
                 locationObject: R.location,
-                analyticsLocations: v,
+                analyticsLocations: b,
                 componentId: ee,
                 commandOrigin: x.iw.ACTIVITY_INSTANCE_EMBED
             }) : await (0, m.A)({
                 applicationId: V.applicationId,
                 activityChannelId: r,
                 locationObject: R.location,
-                analyticsLocations: v,
+                analyticsLocations: b,
                 componentId: ee
             })
         }, ei = $.disabled ? U.intl.string(U.t.JBnc7N) : U.intl.string(U.t.cX9uLZ), ea = (0, E.F)(J, () => {

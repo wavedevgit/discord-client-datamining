@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var a = n(397927),
-    l = n(675704),
+var l = n(397927),
+    a = n(675704),
     r = n(793322),
     s = n(64983),
     o = n(652215),
@@ -14,8 +14,8 @@ var a = n(397927),
     u = n(436965),
     A = n(208907);
 let h = e => {
-    let t = (0, i.jsx)(a.e7I, {
-        shortcut: l.R.binds["0"],
+    let t = (0, i.jsx)(l.e7I, {
+        shortcut: a.R.binds["0"],
         keyClassName: u.Eb
     });
     return (0, i.jsx)(s.A, {

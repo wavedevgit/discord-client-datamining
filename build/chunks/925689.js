@@ -1,5 +1,4 @@
 /** chunk id: 925689 params = (module,exports,require) **/
-"use strict";
 e.exports = {
     Ix: "inviteDetailsContainer_da5e8d",
     vk: "clickable_da5e8d",

@@ -1,6 +1,6 @@
 /** chunk id: 159329 params = (module,exports,require) **/
 n.d(t, {
-    P3: () => a
+    P3: () => l
 });
 let i = (0, n(600975).C)({
     id: "2025-05_safety_flows",
@@ -18,7 +18,7 @@ let i = (0, n(600975).C)({
     }]
 });
 
-function a(e) {
+function l(e) {
     let {
         location: t
     } = e;

@@ -1,6 +1,6 @@
 /** chunk id: 877695 params = (module,exports,require) **/
 n.d(t, {
-    A: () => y
+    A: () => S
 });
 var i = n(627968),
     a = n(64700),
@@ -22,21 +22,21 @@ var i = n(627968),
     C = n(860689),
     I = n(897288),
     E = n(168428),
-    v = n(652215),
-    b = n(985018),
+    b = n(652215),
+    v = n(985018),
     T = n(105544);
 
-function y(e) {
+function S(e) {
     let {
         invite: t,
         isMemberOfGuild: n,
         message: r,
         onTransitionToInviteChannel: d,
         onAcceptInstantInvite: u
-    } = e, _ = a.useRef(null), [h, g] = a.useState(!0), [f, y] = a.useState(!1), N = t.state === v.elq.ACCEPTING, j = (0, s.bG)([c.A], () => c.A.useReducedMotion);
+    } = e, _ = a.useRef(null), [h, g] = a.useState(!0), [f, S] = a.useState(!1), N = t.state === b.elq.ACCEPTING, j = (0, s.bG)([c.A], () => c.A.useReducedMotion);
     a.useLayoutEffect(() => {
-        y((_.current?.clientHeight ?? 0) > 292)
-    }, [y]);
+        S((_.current?.clientHeight ?? 0) > 292)
+    }, [S]);
     let L = (0, m.oO)(t),
         R = a.useCallback(() => {
             !f || h && g(!1)
@@ -54,7 +54,7 @@ function y(e) {
         }),
         onClick: R,
         style: w,
-        "aria-label": b.intl.string(b.t.dcl9MQ),
+        "aria-label": v.intl.string(v.t.dcl9MQ),
         children: [(0, i.jsxs)("div", {
             className: T.uY,
             ref: _,
@@ -80,7 +80,7 @@ function y(e) {
                 variant: "secondary",
                 size: "sm",
                 onClick: P,
-                text: b.intl.string(b.t.xdCLeM)
+                text: v.intl.string(v.t.xdCLeM)
             })
         }) : null, (0, i.jsxs)("div", {
             className: l()(T.qr, {
@@ -94,7 +94,7 @@ function y(e) {
                 }),
                 children: (0, i.jsx)("div", {
                     className: T.UD,
-                    children: (0, i.jsx)(S, {
+                    children: (0, i.jsx)(y, {
                         invite: t,
                         profile: L,
                         isMemberOfGuild: n,
@@ -109,7 +109,7 @@ function y(e) {
     })
 }
 
-function S(e) {
+function y(e) {
     let {
         invite: t,
         profile: n,

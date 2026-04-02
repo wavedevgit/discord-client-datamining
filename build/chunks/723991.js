@@ -1,6 +1,6 @@
 /** chunk id: 723991 params = (module,exports,require) **/
 n.d(t, {
-    q: () => a
+    q: () => l
 });
 let i = (0, n(600975).C)({
     kind: "user",
@@ -24,7 +24,7 @@ let i = (0, n(600975).C)({
     }]
 });
 
-function a() {
+function l() {
     let {
         enabled: e
     } = i.getCurrentConfig({

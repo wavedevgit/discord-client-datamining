@@ -23,15 +23,15 @@ var i = n(627968),
     C = n(954571),
     I = n(957565),
     E = n(943775),
-    v = n(997997),
-    b = n(658575),
+    b = n(997997),
+    v = n(658575),
     T = n(376374),
-    y = n(652215),
-    S = n(435220),
+    S = n(652215),
+    y = n(435220),
     N = n(985018),
     j = n(518435);
 let L = (0, s.UT)([x.A, f.A, g.A], {
-        getQueryId: y.fic.SKU,
+        getQueryId: S.fic.SKU,
         get: e => {
             if (null == e) return;
             let t = x.A.get(e),
@@ -49,7 +49,7 @@ let L = (0, s.UT)([x.A, f.A, g.A], {
         }
     }),
     R = (0, s.UT)([x.A], {
-        getQueryId: y.fic.__DO_NOT_USE__STOREFRONT_MESSAGE_EMBED_PARENT_SKU,
+        getQueryId: S.fic.__DO_NOT_USE__STOREFRONT_MESSAGE_EMBED_PARENT_SKU,
         get: e => null == e ? null : x.A.getParentSKU(e) ?? null,
         load: async (e, t) => {
             l()(null != e && null != t, "appId is null"), await (0, c.JI)(t)
@@ -60,7 +60,7 @@ function P(e) {
     let {
         appId: t,
         message: r
-    } = e, l = (0, b.G)(t), {
+    } = e, l = (0, v.G)(t), {
         data: c
     } = (0, u.YY)(t), [m, h, g, x] = (0, s.yK)([_.A, A.A, p.A], () => {
         let e = _.A.getApplication(t),
@@ -101,13 +101,13 @@ function P(e) {
             appName: c.name
         }),
         description: T,
-        link: `${location.protocol}//${location.host}${y.BVt.GLOBAL_DISCOVERY_APPS_PROFILE_SECTION(c.id,S.GlobalDiscoveryAppsSections.STORE)}`,
+        link: `${location.protocol}//${location.host}${S.BVt.GLOBAL_DISCOVERY_APPS_PROFILE_SECTION(c.id,y.GlobalDiscoveryAppsSections.STORE)}`,
         onLinkCopy: () => {
-            (0, v.K)(t, v.C.STORE_EMBED)
+            (0, b.K)(t, b.C.STORE_EMBED)
         },
         iconSrc: x,
         onIconClick: () => {
-            L(), C.default.track(y.HAw.STOREFRONT_STORE_MESSAGE_EMBED_CLICKED, {
+            L(), C.default.track(S.HAw.STOREFRONT_STORE_MESSAGE_EMBED_CLICKED, {
                 application_id: t,
                 area: "app_icon"
             })
@@ -116,7 +116,7 @@ function P(e) {
             className: j.mZ,
             children: (0, i.jsx)(o.Button, {
                 onClick: () => {
-                    L(), C.default.track(y.HAw.STOREFRONT_STORE_MESSAGE_EMBED_CLICKED, {
+                    L(), C.default.track(S.HAw.STOREFRONT_STORE_MESSAGE_EMBED_CLICKED, {
                         application_id: t,
                         area: "open_store_button"
                     })
@@ -151,7 +151,7 @@ function w(e) {
         }
     }(r, t), {
         data: A
-    } = (0, u.YY)(c?.applicationId), x = (0, s.bG)([p.A], () => p.A.getBasicChannel(l.channel_id)?.guild_id, [l]), f = a.useMemo(() => null != A ? (0, E.A)(A, 45) : void 0, [A]), I = (0, b.G)(A?.id ?? ""), {
+    } = (0, u.YY)(c?.applicationId), x = (0, s.bG)([p.A], () => p.A.getBasicChannel(l.channel_id)?.guild_id, [l]), f = a.useMemo(() => null != A ? (0, E.A)(A, 45) : void 0, [A]), I = (0, v.G)(A?.id ?? ""), {
         openModal: P,
         subscriptionPurchaseButtonState: w
     } = (0, h.A)({
@@ -159,7 +159,7 @@ function w(e) {
         initialSubscribeForGuild: x
     });
     if (!I || null == A || null == c) return null;
-    let D = c.type === y.Puh.SUBSCRIPTION,
+    let D = c.type === S.Puh.SUBSCRIPTION,
         k = !!D && (0, m.bg)(c.flags),
         O = () => {
             (0, o.mMO)(async () => {
@@ -215,7 +215,7 @@ function w(e) {
         }) : g?.description?.trim();
     "" === B && (B = void 0);
     let G = () => {
-        C.default.track(y.HAw.STOREFRONT_SKU_MESSAGE_EMBED_CLICKED, {
+        C.default.track(S.HAw.STOREFRONT_SKU_MESSAGE_EMBED_CLICKED, {
             application_id: A.id,
             sku_id: c.id,
             area: "purchase_button"
@@ -225,13 +225,13 @@ function w(e) {
         appName: A.name,
         title: c.name,
         description: B,
-        link: `${location.protocol}//${location.host}${y.BVt.GLOBAL_DISCOVERY_APPS_PROFILE_SECTION(A.id,S.GlobalDiscoveryAppsSections.STORE)}`,
+        link: `${location.protocol}//${location.host}${S.BVt.GLOBAL_DISCOVERY_APPS_PROFILE_SECTION(A.id,y.GlobalDiscoveryAppsSections.STORE)}`,
         onLinkCopy: () => {
-            (0, v.K)(A.id, v.C.SKU_EMBED, r)
+            (0, b.K)(A.id, b.C.SKU_EMBED, r)
         },
         iconSrc: f,
         onIconClick: () => {
-            O(), C.default.track(y.HAw.STOREFRONT_SKU_MESSAGE_EMBED_CLICKED, {
+            O(), C.default.track(S.HAw.STOREFRONT_SKU_MESSAGE_EMBED_CLICKED, {
                 application_id: A.id,
                 sku_id: c.id,
                 area: "app_icon"
@@ -242,7 +242,7 @@ function w(e) {
             children: [(0, i.jsx)(o.Button, {
                 variant: "secondary",
                 onClick: () => {
-                    U(), C.default.track(y.HAw.STOREFRONT_SKU_MESSAGE_EMBED_CLICKED, {
+                    U(), C.default.track(S.HAw.STOREFRONT_SKU_MESSAGE_EMBED_CLICKED, {
                         application_id: A.id,
                         sku_id: c.id,
                         area: "view_details"

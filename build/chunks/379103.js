@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var a = n(947270),
-    l = n(953727);
+var l = n(947270),
+    a = n(953727);
 
 function r(e) {
     return `CloudDone-${e}`
@@ -20,12 +20,12 @@ function s(e) {
         gradientConfig: d,
         ...c
     } = e, u = null;
-    return null != d && (u = (0, i.jsx)(a.A, {
+    return null != d && (u = (0, i.jsx)(l.A, {
         ...d,
         color: s,
         id: r(d.id)
     })), (0, i.jsxs)("svg", {
-        ...(0, l.A)(c),
+        ...(0, a.A)(c),
         width: t,
         height: n,
         viewBox: "0 0 24 24",

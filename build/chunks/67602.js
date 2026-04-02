@@ -3,8 +3,8 @@ n.d(t, {
     A: () => p
 });
 var i = n(627968),
-    a = n(311907),
-    l = n(397927),
+    l = n(311907),
+    a = n(397927),
     r = n(975807),
     s = n(64983),
     o = n(152621),
@@ -20,7 +20,7 @@ function p(e) {
     let {
         guild: t,
         markAsDismissed: n
-    } = e, p = ((0, a.bG)([c.A], () => c.A.getUnclaimedGameIdsForGuild(t.id), [t.id]) ?? [])[0] ?? null, {
+    } = e, p = ((0, l.bG)([c.A], () => c.A.getUnclaimedGameIdsForGuild(t.id), [t.id]) ?? [])[0] ?? null, {
         coverImageUrl: g,
         gameName: E
     } = (0, o.A)(p, _.intl.string(_.t.VQq92a));
@@ -35,7 +35,7 @@ function p(e) {
         message: I,
         cta: (0, i.jsxs)("span", {
             className: m.m,
-            children: [_.intl.string(_.t["2u6ZlY"]), (0, i.jsx)(l.I9m, {
+            children: [_.intl.string(_.t["2u6ZlY"]), (0, i.jsx)(a.I9m, {
                 size: "xs",
                 color: "currentColor"
             })]

@@ -23,8 +23,8 @@ var i = n(627968),
     C = n(328968),
     I = n(652215),
     E = n(985018),
-    v = n(657881);
-class b extends a.Component {
+    b = n(657881);
+class v extends a.Component {
     static defaultProps = {
         renderFallback: I.tEg
     };
@@ -78,7 +78,7 @@ class b extends a.Component {
     };
     renderViewInStoreButton() {
         return (0, i.jsx)("div", {
-            className: v.h,
+            className: b.h,
             children: (0, i.jsx)(l.$nd, {
                 role: "link",
                 variant: "active",
@@ -125,19 +125,19 @@ class b extends a.Component {
             renderCustomActions: l
         } = this.props;
         if (null != l) return (0, i.jsx)("div", {
-            className: v.i,
+            className: b.i,
             children: l()
         });
         if (null == n) return null;
         let s = null != n && n.primarySkuId === a,
             o = null != r && r.hasFlag(I.hM6.HIDDEN);
         return (0, i.jsxs)("div", {
-            className: v.i,
+            className: b.i,
             children: [!s || o ? this.renderViewInStoreButton() : (0, i.jsx)(c.A, {
                 application: n,
                 disabledVariant: "primary",
                 size: "sm",
-                className: v.h,
+                className: b.h,
                 source: I.ThZ.MESSAGE_EMBED,
                 onClick: this.handleActionButtonClick
             }), t && !o || e.premium ? null : (0, i.jsx)(u.A, {
@@ -174,7 +174,7 @@ class b extends a.Component {
 }
 let T = [f.A, x.A, C.A];
 
-function y(e) {
+function S(e) {
     let {
         skuId: t
     } = e, n = f.A.get(t), i = null != n ? g.A.getApplication(n.applicationId) : null;
@@ -187,6 +187,6 @@ function y(e) {
         libraryApplication: null != n ? x.A.getLibraryApplication(n.applicationId, n.applicationId, !0) : null
     }
 }
-let S = (0, p.A)((0, h.A)(b)),
-    N = s.Ay.connectStores(T, y)(S),
-    j = (0, h.A)(s.Ay.connectStores(T, y)(b))
+let y = (0, p.A)((0, h.A)(v)),
+    N = s.Ay.connectStores(T, S)(y),
+    j = (0, h.A)(s.Ay.connectStores(T, S)(v))

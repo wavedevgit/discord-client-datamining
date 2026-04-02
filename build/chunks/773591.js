@@ -40,10 +40,10 @@ function B(e) {
         isFetchingCategories: t,
         scrollerRef: s,
         tab: B
-    } = e, M = (0, _.uM)(), P = M?.sessionId ?? "", {
+    } = e, P = (0, _.uM)(), M = P?.sessionId ?? "", {
         noCache: D,
-        includeUnpublished: H
-    } = (0, C.A)(), w = (0, m.W)("CollectiblesFilterableShop"), F = (0, a.bG)([d.default], () => d.default.getCurrentUser()), G = (0, a.bG)([g.A], () => g.A.productsWithVariantsAsGroup), [U, V] = r.useState(1), K = (0, c.DP)(), W = (0, i.qB)(K), [z, Y, $] = r.useMemo(() => {
+        includeUnpublished: w
+    } = (0, C.A)(), H = (0, m.W)("CollectiblesFilterableShop"), F = (0, a.bG)([d.default], () => d.default.getCurrentUser()), G = (0, a.bG)([g.A], () => g.A.productsWithVariantsAsGroup), [U, V] = r.useState(1), K = (0, c.DP)(), W = (0, i.qB)(K), [z, Y, $] = r.useMemo(() => {
         switch (B) {
             case A.G2.AVATAR_DECORATIONS:
                 return [v.intl.string(v.t.dRZYNE), W ? T.A : k.A, l.R.AVATAR_DECORATION];
@@ -62,21 +62,21 @@ function B(e) {
     }))), [G, $, Z]), X = (0, p.X)(q);
     return (r.useEffect(() => {
         (0, f.z)({
-            sessionId: P,
+            sessionId: M,
             checkpoint: f.t.SHOP_MOUNTED,
             tab: B,
-            unpublishedCategoriesShown: H,
+            unpublishedCategoriesShown: w,
             cacheDisabled: D
         })
     }, []), r.useEffect(() => {
         t || (0, f.z)({
-            sessionId: P,
+            sessionId: M,
             checkpoint: f.t.SHOP_RENDERED,
             tab: B,
-            unpublishedCategoriesShown: H,
+            unpublishedCategoriesShown: w,
             cacheDisabled: D
         })
-    }, [P, H, D, t, B]), t || null == F) ? (0, n.jsx)(x.A, {}) : (0, n.jsxs)(n.Fragment, {
+    }, [M, w, D, t, B]), t || null == F) ? (0, n.jsx)(x.A, {}) : (0, n.jsxs)(n.Fragment, {
         children: [(0, n.jsx)("div", {
             style: {
                 backgroundImage: `url(${Y})`
@@ -94,7 +94,7 @@ function B(e) {
                 },
                 children: (0, n.jsx)(E.A, {
                     skuId: e.skuId,
-                    prioritizedCurrency: w ? b.Hi.FIAT : void 0
+                    prioritizedCurrency: H ? b.Hi.FIAT : void 0
                 }, e.skuId)
             }, e.skuId))
         }), X.length > 40 && (0, n.jsx)("div", {
@@ -106,9 +106,9 @@ function B(e) {
                     pageSize: 40,
                     onPageChange: e => {
                         u.default.track(S.HAw.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
-                            collectibles_shop_session_id: M?.sessionId,
-                            page_section: M?.pageSection,
-                            page_category: M?.pageCategory,
+                            collectibles_shop_session_id: P?.sessionId,
+                            page_section: P?.pageSection,
+                            page_category: P?.pageCategory,
                             page_index: e,
                             page_size: 40,
                             cta_name: `${B} page ${e}`,

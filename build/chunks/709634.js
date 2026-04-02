@@ -28,19 +28,19 @@ let I = e => {
         channel: s,
         messageId: I,
         reportedTimestamp: E
-    } = e, v = h.default.getUser(t), b = a.useMemo(() => r ? (0, _.A)((0, p.i$)(o()(), "LT")) : null, [r]), T = (0, m.P)({
-        user: v,
+    } = e, b = h.default.getUser(t), v = a.useMemo(() => r ? (0, _.A)((0, p.i$)(o()(), "LT")) : null, [r]), T = (0, m.P)({
+        user: b,
         channelId: s.id,
         guildId: n,
         messageId: I
-    })((0, c.m2)(v, s)), y = null != v ? v.getAvatarURL(n, (0, d.FT9)(d._3J.SIZE_16)) : C, S = null != v ? A.intl.format(g.default["+zqXZs"], {
-        username: v.username,
+    })((0, c.m2)(b, s)), S = null != b ? b.getAvatarURL(n, (0, d.FT9)(d._3J.SIZE_16)) : C, y = null != b ? A.intl.format(g.default["+zqXZs"], {
+        username: b.username,
         onUserClick: T
     }) : A.intl.string(g.default.xpRjfS);
     return (0, i.jsxs)("div", {
-        className: l()(f.NB, f.JZ, b),
+        className: l()(f.NB, f.JZ, v),
         children: [(0, i.jsx)(d.euF, {
-            src: y,
+            src: S,
             size: d._3J.SIZE_16,
             className: x.my,
             "aria-label": ""
@@ -48,7 +48,7 @@ let I = e => {
             variant: "text-sm/medium",
             color: "text-subtle",
             className: x.Xh,
-            children: S
+            children: y
         }), (0, i.jsxs)(d.Text, {
             variant: "text-sm/medium",
             color: "text-subtle",

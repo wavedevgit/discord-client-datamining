@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var a = n(503698),
-    l = n.n(a),
+var l = n(503698),
+    a = n.n(l),
     r = n(397927),
     s = n(290595),
     o = n(755395),
@@ -22,7 +22,7 @@ function m(e) {
         markAsDismissed: n
     } = e;
     return (0, i.jsxs)(o.A, {
-        className: l()(_.Nr, t),
+        className: a()(_.Nr, t),
         children: [(0, i.jsx)(r.Heading, {
             variant: "heading-md/semibold",
             className: _.wx,

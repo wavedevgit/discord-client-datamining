@@ -46,18 +46,18 @@ class x extends a.PureComponent {
             reactionClassName: C,
             useChatFontScaling: I,
             forceHideReactionCreates: E,
-            remainingReactions: v,
-            combinedReactions: b,
+            remainingReactions: b,
+            combinedReactions: v,
             visibleReactionsCount: T
         } = this.props, {
-            disableTransitionAppear: y
-        } = this.state, S = I ? g : p, N = T > 0;
+            disableTransitionAppear: S
+        } = this.state, y = I ? g : p, N = T > 0;
         if (!N && !f) return null;
         let j = f || N;
         return (0, i.jsxs)(s.F, {
             component: "div",
-            className: l()(S.reactions, x),
-            transitionAppear: !y,
+            className: l()(y.reactions, x),
+            transitionAppear: !S,
             role: "group",
             transitionLeave: !1,
             id: (0, u.JH)(e),
@@ -68,7 +68,7 @@ class x extends a.PureComponent {
                 isHovered: !1
             }),
             children: [(0, i.jsx)(_.A, {
-                reactions: b,
+                reactions: v,
                 message: e,
                 readOnly: n,
                 isLurking: a,
@@ -76,16 +76,16 @@ class x extends a.PureComponent {
                 isForumToolbar: d,
                 useChatFontScaling: I,
                 className: C
-            }), v > 0 && (0, i.jsx)(o.DUT, {
+            }), b > 0 && (0, i.jsx)(o.DUT, {
                 onClick: t => {
                     t.stopPropagation(), (0, m.$l)(A, e)
                 },
-                className: l()(S.reaction, C, S.remainingReactions),
+                className: l()(y.reaction, C, y.remainingReactions),
                 "aria-label": h.intl.string(h.t.lfIHs4),
                 children: (0, i.jsxs)(o.Text, {
-                    className: S.reactionInner,
+                    className: y.reactionInner,
                     variant: "text-sm/normal",
-                    children: ["+", v]
+                    children: ["+", b]
                 })
             }), !t && !E && (0, i.jsx)(c.t, {
                 tabIndex: j || this.state.isHovered ? 0 : -1,
@@ -94,7 +94,7 @@ class x extends a.PureComponent {
                 useChatFontScaling: I,
                 isHovered: this.state.isHovered,
                 className: l()({
-                    [S.forceShow]: j
+                    [y.forceShow]: j
                 })
             })]
         })

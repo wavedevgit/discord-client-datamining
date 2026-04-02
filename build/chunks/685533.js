@@ -41,17 +41,17 @@ function L(e) {
         skus: y,
         currentPage: R,
         totalCount: B,
-        isFetchingResults: M
-    } = (0, p.S)(), P = (0, i.yK)([_.A], () => _.A.getProductsBySkus(y)), D = r.useCallback(() => {
+        isFetchingResults: P
+    } = (0, p.S)(), M = (0, i.yK)([_.A], () => _.A.getProductsBySkus(y)), D = r.useCallback(() => {
         s?.current?.scrollToTop({
             animate: !0
         })
-    }, [s]), H = y?.join("");
+    }, [s]), w = y?.join("");
     r.useEffect(() => {
         D()
-    }, [H, D]);
-    let w = (0, m.p)(),
-        F = r.useMemo(() => w(P), [w, P]);
+    }, [w, D]);
+    let H = (0, m.p)(),
+        F = r.useMemo(() => H(M), [H, M]);
     r.useEffect(() => {
         t || (0, f.z)({
             sessionId: j,
@@ -68,7 +68,7 @@ function L(e) {
             queryPageSize: K
         } = (0, h.v)(),
         [W, z] = r.useState(!1),
-        Y = t || M || null == N;
+        Y = t || P || null == N;
     r.useEffect(() => {
         Y ? z(!1) : F.length > 0 && z(!0)
     }, [Y, F.length]);

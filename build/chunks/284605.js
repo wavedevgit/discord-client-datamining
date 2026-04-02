@@ -28,11 +28,11 @@ function I(e) {
         guildId: n,
         location: I,
         shouldShowFullDescriptionButton: E = !0,
-        hideRoleTag: v = !1,
-        lineClamp: b = 1,
+        hideRoleTag: b = !1,
+        lineClamp: v = 1,
         cardWidth: T,
-        cardHeight: y,
-        thumbnailHeight: S,
+        cardHeight: S,
+        thumbnailHeight: y,
         descriptionTextVariant: N = "text-sm/normal",
         showOpaqueBackground: j = !1
     } = e, L = (0, a.bG)([c.A], () => c.A.getGuild(n), [n]), R = (0, a.bG)([d.A], () => d.A.getRole(n, t?.role_id ?? C.dJq)), P = (0, l.R)(t, 600), w = (0, g.z)(t), M = (0, _.BB)(L), {
@@ -87,11 +87,11 @@ function I(e) {
         onTapCard: U,
         actionMenu: B,
         showOpaqueBackground: j,
-        hideRoleTag: v,
-        lineClamp: b,
+        hideRoleTag: b,
+        lineClamp: v,
         cardWidth: T,
-        cardHeight: y,
-        thumbnailHeight: S,
+        cardHeight: S,
+        thumbnailHeight: y,
         descriptionTextVariant: N,
         isDraft: !t.published
     }, t.id)

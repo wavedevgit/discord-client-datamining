@@ -46,10 +46,10 @@ function E(e) {
         isInteracting: n,
         location: r,
         sourceQuestContent: l
-    } = e, E = (0, h.Ic)(t), v = t.userStatus?.claimedAt != null, b = (0, m.S5)(t.config.expiresAt, {
+    } = e, E = (0, h.Ic)(t), b = t.userStatus?.claimedAt != null, v = (0, m.S5)(t.config.expiresAt, {
         month: "numeric",
         day: "numeric"
-    }), T = (0, o.bG)([_.A], () => _.A.getQuestHomeHeroConfig()), y = a.useMemo(() => null != T && (0, p.I0)(T, t.id), [T, t.id]), S = (0, c.Ay)(), N = (0, s.Mwr)(S) ? "text-muted" : "always-white";
+    }), T = (0, o.bG)([_.A], () => _.A.getQuestHomeHeroConfig()), S = a.useMemo(() => null != T && (0, p.I0)(T, t.id), [T, t.id]), y = (0, c.Ay)(), N = (0, s.Mwr)(y) ? "text-muted" : "always-white";
     return (0, i.jsxs)("div", {
         className: C.kL,
         children: [(0, i.jsx)("div", {
@@ -72,12 +72,12 @@ function E(e) {
                 className: C.PG,
                 children: [(0, i.jsxs)("div", {
                     className: C.mY,
-                    children: [(y || t.preview) && (0, i.jsxs)(s.BJc, {
+                    children: [(S || t.preview) && (0, i.jsxs)(s.BJc, {
                         className: C.Bv,
                         direction: "horizontal",
                         fullWidth: !1,
                         gap: 8,
-                        children: [y && !E && (0, i.jsx)(I, {
+                        children: [S && !E && (0, i.jsx)(I, {
                             children: f.intl.string(f.t.Jt6u7B)
                         }), t.preview && (0, i.jsx)(I, {
                             variant: "brand",
@@ -131,11 +131,11 @@ function E(e) {
                             color: "always-white",
                             children: t.config.cosponsorMetadata?.name ?? t.config.messages.gamePublisher
                         })]
-                    }), E || v ? null : (0, i.jsx)(s.EYj, {
+                    }), E || b ? null : (0, i.jsx)(s.EYj, {
                         variant: "text-sm/medium",
                         color: N,
                         children: f.intl.format(f.t["7D8r4F"], {
-                            expiryDate: b
+                            expiryDate: v
                         })
                     })]
                 })]

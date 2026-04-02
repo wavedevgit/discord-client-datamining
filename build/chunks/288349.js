@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var a = n(503698),
-    l = n.n(a),
+var l = n(503698),
+    a = n.n(l),
     r = n(554146),
     s = n(366999),
     o = n(160761),
@@ -19,8 +19,8 @@ function _(e) {
     let {
         width: t = 14,
         height: n = 15,
-        color: a = "white",
-        foreground: l,
+        color: l = "white",
+        foreground: a,
         ...r
     } = e;
     return (0, i.jsxs)("svg", {
@@ -31,7 +31,7 @@ function _(e) {
         width: t,
         height: n,
         viewBox: "0 0 14 15",
-        className: l,
+        className: a,
         xmlns: "http://www.w3.org/2000/svg",
         children: [(0, i.jsx)("defs", {
             children: (0, i.jsxs)("linearGradient", {
@@ -69,7 +69,7 @@ function _(e) {
             })]
         }), (0, i.jsx)("path", {
             d: "M8.59403 1.52779C8.04647 0.0480288 5.95353 0.0480288 5.40597 1.52779L4.56476 3.8011C4.36219 4.34854 3.93057 4.78016 3.38313 4.98273L1.10982 5.82394C-0.36994 6.3715 -0.36994 8.46444 1.10982 9.012L3.38313 9.8532C3.93057 10.0558 4.36219 10.4874 4.56476 11.0348L5.40597 13.3081C5.95353 14.7879 8.04647 14.7879 8.59403 13.3081L9.43524 11.0348C9.63781 10.4874 10.0694 10.0558 10.6169 9.8532L12.8902 9.012C14.3699 8.46444 14.3699 6.3715 12.8902 5.82394L10.6169 4.98273C10.0694 4.78016 9.63781 4.34854 9.43524 3.8011L8.59403 1.52779Z",
-            fill: a
+            fill: l
         })]
     })
 }
@@ -78,16 +78,16 @@ function m(e) {
     let {
         className: t,
         startsAt: n,
-        endsAt: a,
+        endsAt: l,
         messageStyle: d,
         upperCase: m,
         showSparkles: p
     } = e, [g] = (0, o.Bo)(r.M.FRACTIONAL_NITRO_DURATION_LEFT_PILL, {
         showAfterTimestamp: n.valueOf(),
         cooldownDurationMs: 0
-    }), E = (0, s.Ay)(a, d);
+    }), E = (0, s.Ay)(l, d);
     return "" === E ? null : (m && (E = E.toUpperCase()), (0, i.jsxs)("div", {
-        className: l()(t, u.Iv),
+        className: a()(t, u.Iv),
         children: [p ? (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)(_, {
                 foreground: u.QX,

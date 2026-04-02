@@ -22,11 +22,11 @@ var i = n(627968),
     C = n(967144),
     I = n(342296),
     E = n(253932),
-    v = n(696451),
-    b = n(287809),
+    b = n(696451),
+    v = n(287809),
     T = n(486020),
-    y = n(449054),
-    S = n(218394),
+    S = n(449054),
+    y = n(218394),
     N = n(19178),
     j = n(650724),
     L = n(652215),
@@ -42,7 +42,7 @@ function D(e) {
         channel: r
     } = e, D = a.useRef(null), k = a.useRef(null), O = (0, j.D)(t, n), {
         setPopout: U
-    } = (0, f.A)(n.id, R.Fd), B = (0, x.VL)(n, r, U, !0), G = E.kt.useSetting(), F = (0, S.j)(), [H, V] = a.useState(!1), [q, W] = a.useState(O?.coverImage == null), z = (0, o.bG)([v.Ay, b.default], () => v.Ay.isMember(O?.guildId, b.default.getCurrentUser()?.id), [O]), Y = (0, o.bG)([v.Ay], () => O?.authorId != null ? v.Ay.getMember(O.guildId, O.authorId) : null), Q = (0, m.A)(Y?.avatarDecoration != null ? Y?.avatarDecoration : O?.user?.avatarDecoration), [K, J, X] = a.useMemo(() => [Y?.colorString ?? "inherit", Y?.colorStrings ?? null, Y?.colorRoleId], [Y]), Z = (0, C.gn)(Y?.guildId, O?.authorId ?? void 0, J), {
+    } = (0, f.A)(n.id, R.Fd), B = (0, x.VL)(n, r, U, !0), G = E.kt.useSetting(), F = (0, y.j)(), [H, V] = a.useState(!1), [q, W] = a.useState(O?.coverImage == null), z = (0, o.bG)([b.Ay, v.default], () => b.Ay.isMember(O?.guildId, v.default.getCurrentUser()?.id), [O]), Y = (0, o.bG)([b.Ay], () => O?.authorId != null ? b.Ay.getMember(O.guildId, O.authorId) : null), Q = (0, m.A)(Y?.avatarDecoration != null ? Y?.avatarDecoration : O?.user?.avatarDecoration), [K, J, X] = a.useMemo(() => [Y?.colorString ?? "inherit", Y?.colorStrings ?? null, Y?.colorRoleId], [Y]), Z = (0, C.gn)(Y?.guildId, O?.authorId ?? void 0, J), {
         reducedMotion: $
     } = a.useContext(c.CZY), [ee, et] = a.useState(!1), en = a.useCallback(() => {
         V(!0)
@@ -54,7 +54,7 @@ function D(e) {
             channel_id: r.id,
             can_access: O.canAccess,
             is_member: z
-        }), O.canAccess ? (0, g.A)(L.BVt.CHANNEL(O.guildId, O.threadId, O.messageId)) : z ? (0, g.A)(L.BVt.CHANNEL(O.guildId, O.parentChannelId)) : await y.Z2(O.guildId, {}, {
+        }), O.canAccess ? (0, g.A)(L.BVt.CHANNEL(O.guildId, O.threadId, O.messageId)) : z ? (0, g.A)(L.BVt.CHANNEL(O.guildId, O.parentChannelId)) : await S.Z2(O.guildId, {}, {
             channelId: O.parentChannelId
         }))
     }, [O, r, z]);

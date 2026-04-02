@@ -1,6 +1,6 @@
 /** chunk id: 960538 params = (module,exports,require) **/
 n.d(t, {
-    t: () => v
+    t: () => b
 }), n(938796);
 var i = n(627968),
     a = n(64700),
@@ -22,7 +22,7 @@ var i = n(627968),
     C = n(985018),
     I = n(486025),
     E = n(108277);
-class v extends a.Component {
+class b extends a.Component {
     state = {
         isReactionPickerActive: !1
     };

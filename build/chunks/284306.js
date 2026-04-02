@@ -3,20 +3,20 @@ n.d(t, {
     A: () => d
 });
 var i = n(64700),
-    a = n(311907),
-    l = n(734057),
+    l = n(311907),
+    a = n(734057),
     r = n(287809),
     s = n(180232),
     o = n(157550);
 
 function d() {
-    let e = (0, a.bG)([l.A], () => l.A.getPrivateChannelsVersion()),
-        t = (0, a.yK)([l.A, o.A], () => {
-            let e = l.A.getMutablePrivateChannels(),
+    let e = (0, l.bG)([a.A], () => a.A.getPrivateChannelsVersion()),
+        t = (0, l.yK)([a.A, o.A], () => {
+            let e = a.A.getMutablePrivateChannels(),
                 t = Array.from(o.A.getSpamChannelIds()).map(t => e[t]).filter(e => null != e);
             return (0, s.g)(t)
         }, [e]),
-        n = (0, a.cf)([r.default], () => {
+        n = (0, l.cf)([r.default], () => {
             let e = {};
             return t.forEach(t => {
                 let n = r.default.getUser(t.recipients[0]);

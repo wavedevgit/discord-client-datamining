@@ -72,7 +72,7 @@ function I(e) {
         size: u
     } = e, p = (0, c.RR)({
         quest: t
-    }), g = (0, m.vU)()?.getId(), f = (0, c.Vn)(t), I = (0, c.fc)(t), [E, v, b] = (0, c.Qo)(t, I);
+    }), g = (0, m.vU)()?.getId(), f = (0, c.Vn)(t), I = (0, c.fc)(t), [E, b, v] = (0, c.Qo)(t, I);
     return f || E === d.X0.DESKTOP ? (0, i.jsx)(l.Button, {
         variant: "secondary",
         size: u,

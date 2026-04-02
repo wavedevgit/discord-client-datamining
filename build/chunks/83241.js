@@ -1,6 +1,6 @@
 /** chunk id: 83241 params = (module,exports,require) **/
 n.d(t, {
-    P: () => a
+    P: () => l
 });
 let i = (0, n(600975).C)({
     kind: "user",
@@ -34,7 +34,7 @@ let i = (0, n(600975).C)({
     }]
 });
 
-function a() {
+function l() {
     let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0],
         {
             showRedesignedChannelNotice: t,

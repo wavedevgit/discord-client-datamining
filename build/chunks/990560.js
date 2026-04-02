@@ -22,11 +22,11 @@ var i = n(627968),
     C = n(62350),
     I = n(882072),
     E = n(58262),
-    v = n(309818),
-    b = n(112007),
+    b = n(309818),
+    v = n(112007),
     T = n(877695),
-    y = n(242907),
-    S = n(168428),
+    S = n(242907),
+    y = n(168428),
     N = n(448894),
     j = n(818352),
     L = n(422844),
@@ -76,7 +76,7 @@ function P(e) {
                 autoJoin: e
             })
         },
-        q = (0, i.jsx)(b.A, {
+        q = (0, i.jsx)(v.A, {
             onTransitionToInviteChannel: H,
             onAcceptInstantInvite: V,
             currentUserId: G,
@@ -86,11 +86,11 @@ function P(e) {
         });
     switch (O.state) {
         case R.elq.RESOLVING:
-            q = (0, i.jsx)(S.A, {});
+            q = (0, i.jsx)(y.A, {});
             break;
         case R.elq.EXPIRED:
         case R.elq.BANNED:
-            q = (0, i.jsx)(y.A, {
+            q = (0, i.jsx)(S.A, {
                 banned: O.state === R.elq.BANNED,
                 author: n.author,
                 channelId: n.channel_id
@@ -105,7 +105,7 @@ function P(e) {
         default:
             switch ((0, m.On)(O)) {
                 case m.Xd.GROUP_DM:
-                    q = (0, i.jsx)(v.A, {
+                    q = (0, i.jsx)(b.A, {
                         onTransitionToInviteChannel: H,
                         onAcceptInstantInvite: V,
                         currentUserId: G,

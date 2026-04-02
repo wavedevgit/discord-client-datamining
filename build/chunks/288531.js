@@ -23,11 +23,11 @@ var a = n(503698),
     C = n(92246),
     I = n(792620),
     E = n(895253),
-    v = n(201805),
-    b = n(442734),
+    b = n(201805),
+    v = n(442734),
     T = n(212614),
-    y = n(79545),
-    S = n(646764),
+    S = n(79545),
+    y = n(646764),
     N = n(545986),
     j = n(654487),
     L = n(652215),
@@ -67,7 +67,7 @@ function M(e) {
         questContent: a,
         questContentPosition: r,
         sourceQuestContent: l
-    } = e, c = (0, s.bG)([h.A], () => h.A.isEnrolling(t.id)), u = (0, I.vv)(t), _ = (0, I.Cr)(t), m = (0, v._c)({
+    } = e, c = (0, s.bG)([h.A], () => h.A.isEnrolling(t.id)), u = (0, I.vv)(t), _ = (0, I.Cr)(t), m = (0, b._c)({
         progressState: n,
         quest: t,
         questContent: a,
@@ -94,7 +94,7 @@ let D = e => {
         quest: t,
         location: n,
         size: a,
-        isFocused: v,
+        isFocused: b,
         isQuestExpired: D,
         isExpanded: k,
         isAnimating: O,
@@ -113,7 +113,7 @@ let D = e => {
         gameProfileSource: c.Ob.QuestEmbed
     }), Q = (0, s.bG)([h.A], () => null != h.A.questEnrollmentBlockedUntil, []), K = p.t.useConfig({
         location: j.rE.QUEST_HOME_DESKTOP
-    }), J = (0, y.Pd)(t), X = (0, s.bG)([u.default], () => u.default.locale), Z = (0, A.Oq)(), $ = (0, A.SD)(t), ee = Z && $, et = D && !H, en = (0, I.vv)(t);
+    }), J = (0, S.Pd)(t), X = (0, s.bG)([u.default], () => u.default.locale), Z = (0, A.Oq)(), $ = (0, A.SD)(t), ee = Z && $, et = D && !H, en = (0, I.vv)(t);
     return (0, i.jsx)("div", {
         className: P.zr,
         children: (0, i.jsx)("div", {
@@ -139,8 +139,8 @@ let D = e => {
                             children: (0, i.jsx)(d.EpV, {
                                 color: d.LU0.colors.WHITE
                             })
-                        }), (0, i.jsx)(S.A, {
-                            autoplay: v,
+                        }), (0, i.jsx)(y.A, {
+                            autoplay: b,
                             className: r()({
                                 [P.Lu]: "lg" === a,
                                 [P.je]: "sm" === a,
@@ -163,7 +163,7 @@ let D = e => {
                             children: D ? R.intl.formatToPlainString(R.t["ge+AJp"], {
                                 questName: t.config.messages.questName
                             }) : q
-                        }), $ && (0, i.jsx)(b.e, {
+                        }), $ && (0, i.jsx)(v.e, {
                             questId: t.id,
                             canUseQuestOrbMultiplier: Z
                         })]
@@ -220,7 +220,7 @@ let D = e => {
                                 collectibleQuestRewardDescription: Y,
                                 formattedCompletionDate: F
                             })
-                        }), en && $ && (0, i.jsx)(b.e, {
+                        }), en && $ && (0, i.jsx)(v.e, {
                             questId: t.id,
                             canUseQuestOrbMultiplier: Z
                         })]
@@ -258,9 +258,9 @@ let D = e => {
                             })
                         },
                         text: R.intl.string(R.t.LLLLPD)
-                    }), !et && (K.enabled && (J === y.UA.UNENROLLED || J === y.UA.ENROLLED) && K.enabledQuestStates.has(J) ? (0, i.jsx)(T.A, {
+                    }), !et && (K.enabled && (J === S.UA.UNENROLLED || J === S.UA.ENROLLED) && K.enabledQuestStates.has(J) ? (0, i.jsx)(T.A, {
                         quest: t,
-                        surface: y.V3.QUEST_EMBED,
+                        surface: S.V3.QUEST_EMBED,
                         analyticsCtxQuestContent: n,
                         analyticsCtxSourceQuestContent: B,
                         analyticsCtxQuestContentPosition: U

@@ -1,7 +1,7 @@
 /** chunk id: 231209 params = (module,exports,require) **/
 "use strict";
 s.d(t, {
-    A: () => M
+    A: () => P
 });
 var n = s(627968),
     r = s(64700),
@@ -54,10 +54,10 @@ let B = e => {
             })
         }, [c]);
         let {
-            isFetchingShopHome: M,
-            fetchShopHomeError: P,
+            isFetchingShopHome: P,
+            fetchShopHomeError: M,
             shopBlocks: D,
-            refreshShopHome: H
+            refreshShopHome: w
         } = (0, h.y)(c, {
             noCache: d,
             includeUnpublished: _,
@@ -65,33 +65,33 @@ let B = e => {
         }, {
             sessionId: B,
             tab: c
-        }), w = r.useCallback(() => {
-            H()
-        }, [H]);
+        }), H = r.useCallback(() => {
+            w()
+        }, [w]);
         return (r.useEffect(() => {
-            null != P || M || 0 === D.length || (0, p.z)({
+            null != M || P || 0 === D.length || (0, p.z)({
                 sessionId: B,
                 checkpoint: p.t.SHOP_RENDERED,
                 tab: c,
                 unpublishedCategoriesShown: _,
                 cacheDisabled: d
             })
-        }, [P, M, D.length, _, d, B, c]), null != P) ? (0, n.jsx)(f.h, {
-            onRetry: w,
+        }, [M, P, D.length, _, d, B, c]), null != M) ? (0, n.jsx)(f.h, {
+            onRetry: H,
             errorOrigin: f.A.SHOP_PAGE,
-            errorMessage: P.message
-        }) : M || 0 === D.length ? (0, n.jsxs)("div", {
+            errorMessage: M.message
+        }) : P || 0 === D.length ? (0, n.jsxs)("div", {
             className: a()(R.g4, R.Of),
             children: [(0, n.jsx)(S.A, {
-                isLoading: M,
+                isLoading: P,
                 handleTransition: t,
                 tab: c
             }), (0, n.jsx)(C.A, {
-                isLoading: M,
+                isLoading: P,
                 handleTransition: t,
                 categories: []
             }), (0, n.jsx)(A.A, {
-                isLoading: M,
+                isLoading: P,
                 title: c === O.G2.ORBS ? y.intl.string(y.t.dFgeuZ) : y.intl.string(y.t.NSv5KV),
                 numVisibleItems: s,
                 tab: c
@@ -104,7 +104,7 @@ let B = e => {
                 switch (e.type) {
                     case i.g.HERO:
                         _ = (0, n.jsx)(S.A, {
-                            isLoading: M,
+                            isLoading: P,
                             handleTransition: t,
                             heroBlock: e,
                             tab: c
@@ -112,7 +112,7 @@ let B = e => {
                         break;
                     case i.g.FEATURED:
                         _ = (0, n.jsx)(C.A, {
-                            isLoading: M,
+                            isLoading: P,
                             handleTransition: t,
                             featuredBlockRecord: e
                         }, d);
@@ -164,7 +164,7 @@ let B = e => {
                         break;
                     case i.g.REWARD_HERO:
                         _ = (0, n.jsx)(L.A, {
-                            isLoading: M,
+                            isLoading: P,
                             handleTransition: t,
                             heroBlock: e,
                             tab: c
@@ -202,7 +202,7 @@ let B = e => {
             })(e, r > 0 ? D[r - 1] : null, r))
         })
     },
-    M = e => {
+    P = e => {
         let {
             handleTransition: t,
             tab: s,

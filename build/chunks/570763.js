@@ -3,9 +3,9 @@ n.d(t, {
     A: () => eE
 }), n(323874), n(14289), n(35956);
 var i = n(627968),
-    a = n(64700),
-    l = n(503698),
-    r = n.n(l),
+    l = n(64700),
+    a = n(503698),
+    r = n.n(a),
     s = n(873263),
     o = n(835245),
     d = n(110259),
@@ -57,8 +57,8 @@ var i = n(627968),
     et = n(475529),
     en = n(654487),
     ei = n(652215),
-    ea = n(758836),
-    el = n(613057),
+    el = n(758836),
+    ea = n(613057),
     er = n(985018),
     es = n(749504),
     eo = n(92872),
@@ -67,23 +67,23 @@ var i = n(627968),
     eu = n(595411),
     eA = n(602557),
     eh = n(850493);
-let e_ = a.createContext({});
+let e_ = l.createContext({});
 
 function em(e) {
     let {
         onLoadComplete: t,
         className: n
     } = e, {
-        enabled: l
+        enabled: a
     } = (0, R.Z)({
         location: en.rE.QUEST_HOME_DESKTOP
     }), r = (0, c.bG)([_.A], () => _.A.useReducedMotion), s = (0, c.bG)([D.A], () => D.A.isFocused()), {
         ref: o,
         inViewport: d
-    } = (0, q.p)(), u = a.useRef(null);
-    if (a.useEffect(() => {
+    } = (0, q.p)(), u = l.useRef(null);
+    if (l.useEffect(() => {
             u?.current != null && (u.current.paused || s && d && !r ? u.current.paused && !r && d && s && u.current.play() : u.current.pause())
-        }, [r, d, s]), l) {
+        }, [r, d, s]), a) {
         let e = (0, j.TM)();
         return (0, i.jsx)(C.A, {
             ref: e => {
@@ -136,7 +136,7 @@ function eg(e) {
     let {
         renderBanner: t,
         children: n,
-        header: l,
+        header: a,
         withQuestsGrid: s = !0
     } = e, {
         isInDiscoverQuestHomeTab: o,
@@ -144,7 +144,7 @@ function eg(e) {
         onSelectTab: c,
         scrollerRef: u,
         selectedTab: A
-    } = a.useContext(e_), {
+    } = l.useContext(e_), {
         questHomeHero: h,
         isLoading: _
     } = (0, F.vG)(), {
@@ -155,14 +155,14 @@ function eg(e) {
         enabled: p
     } = B.sn.useConfig({
         location: en.rE.QUEST_HOME_DESKTOP
-    }), g = a.useRef(null), E = a.useCallback(e => {
+    }), g = l.useRef(null), E = l.useCallback(e => {
         g.current?.resetSortingFiltering(), requestAnimationFrame(() => {
             g.current?.scrollToQuest(e)
         })
     }, []);
     return (0, i.jsxs)(ee.X.Provider, {
         value: u,
-        children: [l, (0, i.jsxs)(y.A, {
+        children: [a, (0, i.jsxs)(y.A, {
             onScroll: d,
             ref: u,
             children: [function() {
@@ -193,24 +193,24 @@ function eg(e) {
 let eE = function(e) {
     let {
         topLevelRoute: t
-    } = e, n = (0, s.zy)(), l = (0, s.W6)(), _ = a.useMemo(() => (0, O.B)(n.pathname, ei.BVt.QUEST_HOME_DEPRECATED)?.isExact === !0, [n.pathname]), C = (0, c.bG)([E.A], () => E.A.getState("quests")), {
+    } = e, n = (0, s.zy)(), a = (0, s.W6)(), _ = l.useMemo(() => (0, O.B)(n.pathname, ei.BVt.QUEST_HOME_DEPRECATED)?.isExact === !0, [n.pathname]), C = (0, c.bG)([E.A], () => E.A.getState("quests")), {
         selectedTab: v,
         onSelectTab: y,
         tabs: D
     } = (0, et.J)({
         withClaimedQuestsTab: !_
     });
-    a.useLayoutEffect(() => {
+    l.useLayoutEffect(() => {
         _ && v === F.NC.CLAIMED && k.A.setState({
             tab: F.NC.ALL
         })
     }, [_, v]);
     let {
         onScroll: j
-    } = (0, S.G)(), B = V.A.getState().getUtmCurrentContext(), W = (0, Q.W)(e => e.registerAssetLoad), q = a.useRef(B);
-    a.useEffect(() => {
+    } = (0, S.G)(), B = V.A.getState().getUtmCurrentContext(), W = (0, Q.W)(e => e.registerAssetLoad), q = l.useRef(B);
+    l.useEffect(() => {
         q.current = B
-    }), a.useEffect(() => {
+    }), l.useEffect(() => {
         let {
             current: e
         } = q;
@@ -230,7 +230,7 @@ let eE = function(e) {
         enabled: z
     } = (0, R.Z)({
         location: en.rE.QUEST_HOME_DESKTOP
-    }), $ = a.useCallback(() => {
+    }), $ = l.useCallback(() => {
         z ? window.open(ei.X7G.PAID_TERMS_ORBS) : window.open(w.A.getArticleURL(ei.MVz.QUESTS_LEARN_MORE))
     }, [z]);
     (0, f.HU)({
@@ -238,34 +238,34 @@ let eE = function(e) {
     });
     let ee = z ? er.intl.format(er.t.BCBIlp, {}) : er.intl.format(er.t.lmMBfy, {}),
         eo = z ? er.intl.format(er.t.U9FY0J, {}) : er.intl.string(er.t.oWCrBq),
-        ed = a.useRef(null),
-        ec = a.useCallback(() => {
+        ed = l.useRef(null),
+        ec = l.useCallback(() => {
             (0, L.Y)({
                 pageType: ei.liQ.GLOBAL_DISCOVERY_QUESTS,
                 sectionType: ei.JJy.ORBS_BALANCE_MENU,
                 ctaObject: ei.ZSU.CTA_TO_ORBS_SHOP
             }), (0, I.Cz)({
-                tab: ea.G2.ORBS,
+                tab: el.G2.ORBS,
                 analyticsLocations: [],
                 analyticsSource: m.A.ORBS_BALANCE_MENU
             })
         }, []);
-    a.useEffect(() => {
+    l.useEffect(() => {
         (0, h.I)(ei.BVt.QUEST_HOME)
-    }, []), a.useEffect(() => {
+    }, []), l.useEffect(() => {
         N.g.trigger()
     }, []);
     let eu = (0, H.U)({
         location: en.rE.QUEST_PREVIEW_TOOL_2
     });
-    a.useEffect(() => {
+    l.useEffect(() => {
         if (null != C) return;
         let e = new URLSearchParams(n.search),
             i = e.get(F.L1.TAB);
         if (eu && i === F.NC.PREVIEW_TOOL) {
             let t = e.get(F.L1.QUEST_ID);
             g.A.openNativeAppModal("quests", ei.e$_.DEEP_LINK, {
-                type: el.XK.QUEST_PREVIEW_TOOL,
+                type: ea.XK.QUEST_PREVIEW_TOOL,
                 params: {
                     questId: t,
                     tab: i
@@ -273,25 +273,25 @@ let eE = function(e) {
             });
             return
         }
-        let a = performance.getEntriesByType("navigation")[0];
-        if ("POP" === l.action && a?.type === "navigate" && t && i !== F.NC.PREVIEW_TOOL) {
+        let l = performance.getEntriesByType("navigation")[0];
+        if ("POP" === a.action && l?.type === "navigate" && t && i !== F.NC.PREVIEW_TOOL) {
             let t = (0, U.uJ)(n.hash) ? null : n.hash.substring(1),
-                a = e.get(F.L1.SORT),
-                l = e.get(F.L1.FILTER);
+                l = e.get(F.L1.SORT),
+                a = e.get(F.L1.FILTER);
             g.A.openNativeAppModal("quests", ei.e$_.DEEP_LINK, {
-                type: el.XK.QUEST_HOME,
+                type: ea.XK.QUEST_HOME,
                 params: {
                     questId: (0, U.uJ)(t) ? void 0 : t,
-                    sort: a,
-                    filter: l,
+                    sort: l,
+                    filter: a,
                     tab: i
                 }
             })
         }
-    }, [n.search, C, eu, l.action, n.hash, t]), a.useEffect(() => {
+    }, [n.search, C, eu, a.action, n.hash, t]), l.useEffect(() => {
         t && (0, T.Dr)(u.M.QUEST_HOME_ENTRYPOINT_ONBOARDING)
     }, [t]);
-    let eA = a.useCallback(() => {
+    let eA = l.useCallback(() => {
             (0, K.navigateToQuestHome)({
                 fromContent: G.uF.QUEST_HOME_MOVE_CALLOUT_DISCOVER
             }), M.default.track(ei.HAw.QUEST_CONTENT_CLICKED, {
@@ -301,20 +301,20 @@ let eE = function(e) {
                 ...(0, Y.fF)(G.uF.QUEST_HOME_MOVE_CALLOUT_DISCOVER)
             })
         }, []),
-        eh = a.useCallback(e => {
-            l.replace({
-                ...l.location,
+        eh = l.useCallback(e => {
+            a.replace({
+                ...a.location,
                 hash: void 0
             }), ed.current?.scrollToTop({
                 animate: !1
             }), y(e)
-        }, [l, y]);
+        }, [a, y]);
     return (0, i.jsx)(X.M.Provider, {
         value: {
             onAssetLoadComplete: W
         },
         children: (0, i.jsx)(e_.Provider, {
-            value: a.useMemo(() => ({
+            value: l.useMemo(() => ({
                 isInDiscoverQuestHomeTab: _,
                 onScroll: j,
                 onSelectTab: eh,
@@ -371,7 +371,7 @@ let eE = function(e) {
                                 variant: "overlay-primary",
                                 text: er.intl.string(er.t["1Wm127"]),
                                 onClick: () => (0, I.Cz)({
-                                    tab: ea.G2.ORBS,
+                                    tab: el.G2.ORBS,
                                     analyticsLocations: [],
                                     analyticsSource: m.A.INTRO_TO_ORBS_QUEST_BANNER
                                 })

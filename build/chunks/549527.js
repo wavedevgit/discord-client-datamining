@@ -22,11 +22,11 @@ var i = n(627968),
     C = n(112758),
     I = n(754459),
     E = n(538355),
-    v = n(699352),
-    b = n(378570),
+    b = n(699352),
+    v = n(378570),
     T = n(138298),
-    y = n(253932),
-    S = n(761640),
+    S = n(253932),
+    y = n(761640),
     N = n(734057),
     j = n(540999),
     L = n(71393),
@@ -50,13 +50,13 @@ function G(e) {
             n = L.A.getGuild(e?.guild_id),
             i = t.messageReference?.channel_id,
             a = w.A.getCurrentlySelectedChannelId(),
-            r = S.Ay.getCurrentSidebarChannelId(t.messageReference?.channel_id),
+            r = y.Ay.getCurrentSidebarChannelId(t.messageReference?.channel_id),
             l = a === i && r === e?.id;
         null == e || null == n || l || null == i || (T.A.openModReportAsSidebar({
             channelId: e.id,
             baseChannelId: i,
             guildId: e.guild_id
-        }), (0, b.iN)(i), D.default.track(O.HAw.MODERATOR_REPORT_ORIGINAL_MESSAGE_LINK_CLICKED, {
+        }), (0, v.iN)(i), D.default.track(O.HAw.MODERATOR_REPORT_ORIGINAL_MESSAGE_LINK_CLICKED, {
             moderator_report_id: t.channel_id,
             destination_channel_id: i,
             destination_message_id: t.id
@@ -166,8 +166,8 @@ function H(e) {
             let e = (0, _.A)(t, n);
             return null != s && n?.moderatorReport?.reported_user_id != null ? e.set("author", s) : e
         }, [t, n, s]),
-        u = y.hD.useSetting(),
-        m = y.rs.useSetting(),
+        u = S.hD.useSetting(),
+        m = S.rs.useSetting(),
         p = (0, l.bG)([j.A], () => j.A.isDeveloper),
         g = (0, h.S)((d.editedTimestamp ?? d.timestamp).valueOf()),
         {
@@ -195,7 +195,7 @@ function H(e) {
                 channel: C,
                 reportingUserId: n?.moderatorReport?.reporting_user_id,
                 reportedTimestamp: t.timestamp
-            }), (0, v.A)({
+            }), (0, b.A)({
                 channelMessageProps: {
                     message: d,
                     channel: C,

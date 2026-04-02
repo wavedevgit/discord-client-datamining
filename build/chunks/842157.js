@@ -22,11 +22,11 @@ var i = n(627968),
     C = n(403362),
     I = n(456060),
     E = n(131724),
-    v = n(987709),
-    b = n(850670),
+    b = n(987709),
+    v = n(850670),
     T = n(206589),
-    y = n(154297),
-    S = n(467078),
+    S = n(154297),
+    y = n(467078),
     N = n(833349),
     j = n(946255),
     L = n(755420),
@@ -89,7 +89,7 @@ function O(e) {
         }
     }).filter(C.Vq), [o]);
     if (!(null != n || c.length > 0)) return null;
-    let u = null != n ? (0, y.C)(n) : D.intl.string(D.t["4dGUP0"]);
+    let u = null != n ? (0, S.C)(n) : D.intl.string(D.t["4dGUP0"]);
     return (0, i.jsxs)("div", {
         className: k.qr,
         children: [(0, i.jsx)("div", {
@@ -114,7 +114,7 @@ function U(e) {
         applicationName: l,
         channel: s,
         header: C,
-        currentUserId: y,
+        currentUserId: S,
         launchableAppId: L,
         isEmbeddedApplication: R,
         tryWithGdnAction: U,
@@ -146,7 +146,7 @@ function U(e) {
             textTabularNumbers: !1,
             textFontCode: !1
         })]
-    }) : null, [$, V?.timestamps?.end]), et = (0, b.v)(t), en = (0, x.s)(n.id), ei = a.useMemo(() => en.some(e => (0, g.CZ)(e) === r.m.GLOBAL) ? (0, i.jsxs)(i.Fragment, {
+    }) : null, [$, V?.timestamps?.end]), et = (0, v.v)(t), en = (0, x.s)(n.id), ei = a.useMemo(() => en.some(e => (0, g.CZ)(e) === r.m.GLOBAL) ? (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(d.Y3C, {
             size: "xxs",
             color: "currentColor"
@@ -156,8 +156,8 @@ function U(e) {
         className: k.dS,
         color: "none",
         lineClamp: 2,
-        children: [et ? (0, I.YC)(t, l, s, y, !1) : ee, et ? null : ei]
-    }), [et, t, l, s, y, ee, ei]), er = a.useMemo(() => (0, i.jsxs)("div", {
+        children: [et ? (0, I.YC)(t, l, s, S, !1) : ee, et ? null : ei]
+    }), [et, t, l, s, S, ee, ei]), er = a.useMemo(() => (0, i.jsxs)("div", {
         className: k.pq,
         children: [ea, W || et ? null : z]
     }), [ea, W, et, z]), el = !!L, es = (0, A.e)(n), {
@@ -166,13 +166,13 @@ function U(e) {
     } = (0, E.D)({
         presenceActivity: V,
         currentUserPresenceActivity: q,
-        currentUserId: y,
+        currentUserId: S,
         message: t,
         application: n,
         isEmbeddedApplication: R,
         isFrameApplication: es,
         isGameLaunchable: el
-    }), ec = (0, E.M)(V, q, t, n), eu = (0, v.E)(V, t, n, y), e_ = (0, T.w)(q, V), em = (0, S.L)(V), eh = (0, o.bG)([f.A], () => null != V && null != V.application_id && f.A.getState(V.application_id, w.xL.JOIN) === w.eAD.LOADING), {
+    }), ec = (0, E.M)(V, q, t, n), eu = (0, b.E)(V, t, n, S), e_ = (0, T.w)(q, V), em = (0, y.L)(V), eh = (0, o.bG)([f.A], () => null != V && null != V.application_id && f.A.getState(V.application_id, w.xL.JOIN) === w.eAD.LOADING), {
         actions: ep,
         hasAccountLinkButton: eg
     } = a.useMemo(() => {
@@ -232,8 +232,8 @@ function U(e) {
                     location: w.ThZ.MESSAGE_EMBED
                 })
             },
-            disabled: t.author.id === y,
-            disabledReason: t.author.id === y ? D.intl.string(D.t.IBl8ID) : void 0
+            disabled: t.author.id === S,
+            disabledReason: t.author.id === S ? D.intl.string(D.t.IBl8ID) : void 0
         } : e_ ? e = {
             label: D.intl.string(D.t.KC26NR),
             trackingArea: h.kY.PLAY,
@@ -256,7 +256,7 @@ function U(e) {
             actions: a,
             hasAccountLinkButton: i
         }
-    }, [eo, ec, eu, e_, U, t.author.id, t.id, V, s.id, s.guild_id, Y, ed, y, eh, Q, J, X, K, em]), eA = ep.some(e => e.trackingArea === h.kY.CLOUD_PLAY);
+    }, [eo, ec, eu, e_, U, t.author.id, t.id, V, s.id, s.guild_id, Y, ed, S, eh, Q, J, X, K, em]), eA = ep.some(e => e.trackingArea === h.kY.CLOUD_PLAY);
     (0, P.A)(eA, Y);
     let ex = a.useMemo(() => e_ ? null : (0, i.jsx)(O, {
         presenceActivity: V,

@@ -1,6 +1,6 @@
 /** chunk id: 285433 params = (module,exports,require) **/
 n.d(t, {
-    A: () => v
+    A: () => b
 });
 var i = n(627968),
     a = n(64700),
@@ -23,16 +23,16 @@ n(433745);
 var C = n(818348),
     I = n(985018),
     E = n(798324);
-let v = e => {
+let b = e => {
     let {
         isQuestExpired: t,
         quest: n,
         location: r,
-        size: v,
-        expansionSpring: b,
+        size: b,
+        expansionSpring: v,
         isAnimating: T,
-        isExpanded: y,
-        isInteracting: S,
+        isExpanded: S,
+        isInteracting: y,
         contentPosition: N,
         toggleExpanded: j,
         sourceQuestContent: L
@@ -51,12 +51,12 @@ let v = e => {
     return (0, i.jsxs)("div", {
         className: l()(E.nw, {
             [E.Gg]: O,
-            [E.e5]: "xs" === v
+            [E.e5]: "xs" === b
         }),
         "aria-label": I.intl.string(I.t.dcl9MQ),
         children: [(0, i.jsx)(p.A, {
             quest: n,
-            isInteracting: S,
+            isInteracting: y,
             containerClassName: E.v7,
             imageSize: {
                 width: 660,
@@ -65,7 +65,7 @@ let v = e => {
             imageClassName: E.Z5
         }), (0, i.jsxs)("div", {
             className: E.wx,
-            "aria-expanded": y,
+            "aria-expanded": S,
             children: [(0, i.jsx)(s.animated.div, {
                 className: l()(E.VW, {
                     [E.eX]: O
@@ -75,13 +75,13 @@ let v = e => {
                         [E.Gg]: O
                     }),
                     style: {
-                        opacity: (0, f.a)(b.to({
+                        opacity: (0, f.a)(v.to({
                             range: [0, 1],
                             output: [0, 1]
                         })),
-                        visibility: T || y ? "inherit" : "hidden"
+                        visibility: T || S ? "inherit" : "hidden"
                     },
-                    "aria-hidden": !T && !y,
+                    "aria-hidden": !T && !S,
                     children: (0, i.jsxs)("div", {
                         className: E.uA,
                         children: [(0, i.jsxs)("div", {
@@ -96,7 +96,7 @@ let v = e => {
                                 shouldShow: null != R && null != w && R < w,
                                 children: (0, i.jsx)(c.Heading, {
                                     ref: k,
-                                    variant: "lg" === v ? "heading-xxl/bold" : "sm" === v ? "heading-xl/bold" : "heading-lg/bold",
+                                    variant: "lg" === b ? "heading-xxl/bold" : "sm" === b ? "heading-xl/bold" : "heading-lg/bold",
                                     className: E.R_,
                                     color: "always-white",
                                     children: I.intl.format(I.t.EAYZAr, {
@@ -131,10 +131,10 @@ let v = e => {
                     sourceQuestContent: L,
                     children: e => (0, i.jsx)(s.animated.div, {
                         style: {
-                            opacity: (0, f.a)(b),
-                            visibility: T || y ? "inherit" : "hidden"
+                            opacity: (0, f.a)(v),
+                            visibility: T || S ? "inherit" : "hidden"
                         },
-                        "aria-hidden": !T && !y,
+                        "aria-hidden": !T && !S,
                         children: (0, i.jsx)(c.DUT, {
                             ...e,
                             className: E.P0,

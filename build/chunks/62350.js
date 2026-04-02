@@ -22,11 +22,11 @@ var i = n(627968),
     C = n(574660),
     I = n(429913),
     E = n(713654),
-    v = n(21599),
-    b = n(734057),
+    b = n(21599),
+    v = n(734057),
     T = n(71393),
-    y = n(576705),
-    S = n(287809),
+    S = n(576705),
+    y = n(287809),
     N = n(954571),
     j = n(486020),
     L = n(860689),
@@ -146,20 +146,20 @@ function B(e) {
             } = e;
             return A.id === t
         })),
-        w = b.A.getChannel(r.channel?.id),
-        k = (0, d.bG)([y.A], () => null != w && y.A.can(P.xBc.USE_EMBEDDED_ACTIVITIES, w), [w]),
+        w = v.A.getChannel(r.channel?.id),
+        k = (0, d.bG)([S.A], () => null != w && S.A.can(P.xBc.USE_EMBEDDED_ACTIVITIES, w), [w]),
         {
             analyticsLocations: O
         } = (0, p.Ay)(h.A.INVITE_EMBED),
         U = (0, d.yK)([m.Ay], () => null != w ? m.Ay.getEmbeddedActivitiesForChannel(w.id).filter(e => e.applicationId === A.id).flatMap(e => Array.from(e.userIds)) : [], [w, A.id]),
-        B = (0, d.yK)([S.default], () => U.map(e => S.default.getUser(e)).filter(e => null != e), [U]),
+        B = (0, d.yK)([y.default], () => U.map(e => y.default.getUser(e)).filter(e => null != e), [U]),
         F = a.useCallback(() => {
             (0, _.he)({
                 invite: r,
                 action: "accept",
                 inviter_id: l.author.id,
                 invite_message_id: l.id,
-                invite_instance_id: (0, v._U)(r.code, l.id)
+                invite_instance_id: (0, b._U)(r.code, l.id)
             }, O), _.Ay.acceptInviteAndTransitionToInviteChannel({
                 inviteKey: r.code,
                 context: s("Invite Button Embed", r.code),
@@ -214,13 +214,13 @@ function G(e) {
         handleAcceptInvite: I,
         onView: E
     } = e, {
-        bot: v,
-        icon: b
+        bot: b,
+        icon: v
     } = t, T = j.Ay.getApplicationIconURL({
         id: t.id,
-        icon: b,
-        bot: v
-    }), y = (0, C.F)(t), S = (0, f.f)(t), N = n.length, L = a.useMemo(() => [{
+        icon: v,
+        bot: b
+    }), S = (0, C.F)(t), y = (0, f.f)(t), N = n.length, L = a.useMemo(() => [{
         label: m,
         trackingArea: r ? x.kY.PLAY : x.kY.JOIN_SERVER,
         submitting: _,
@@ -232,8 +232,8 @@ function G(e) {
         header: t.name,
         title: D.intl.string(D.t["7vb6nw"]),
         iconSrc: T,
-        ...S,
-        onClickBanner: y,
+        ...y,
+        onClickBanner: S,
         info: (0, i.jsxs)("div", {
             className: k.QR,
             children: [(0, i.jsx)(U, {
@@ -254,7 +254,7 @@ function G(e) {
             })]
         }),
         actions: L,
-        onClickContent: y,
+        onClickContent: S,
         trackingConfig: {
             id: t.id,
             linkType: w.J.ACTIVITY_INVITE,

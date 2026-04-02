@@ -22,11 +22,11 @@ var i = n(627968),
     C = n(651892),
     I = n(710969),
     E = n(792620),
-    v = n(814793),
-    b = n(201805),
+    b = n(814793),
+    v = n(201805),
     T = n(545986),
-    y = n(654487),
-    S = n(652215),
+    S = n(654487),
+    y = n(652215),
     N = n(818348),
     j = n(985018);
 
@@ -37,7 +37,7 @@ function L(e) {
         L = (0, A.Ut)(),
         R = (0, f.go)(),
         P = (0, C.wr)(e.quest),
-        w = !0 === e.showShareLink && (0, v.E0)(e.quest.config),
+        w = !0 === e.showShareLink && (0, b.E0)(e.quest.config),
         {
             handleComplete: M,
             handleProgress: D,
@@ -51,7 +51,7 @@ function L(e) {
             ctaContent: x.Cy.CONTEXT_MENU_OPEN_GAME_LINK,
             sourceQuestContent: e.sourceQuestContent
         }),
-        G = (0, b.Lk)({
+        G = (0, v.Lk)({
             isShareable: w,
             questId: e.quest.id,
             trackingCtx: a.useMemo(() => ({
@@ -72,9 +72,9 @@ function L(e) {
             action: U
         }), [U, e.quest.id, t?.id]),
         W = a.useCallback(() => {
-            (0, d.pX)(S.BVt.QUEST_PREVIEW_TOOL_2(e.quest.id))
+            (0, d.pX)(y.BVt.QUEST_PREVIEW_TOOL_2(e.quest.id))
         }, [e.quest.id]),
-        z = e.shouldShowDisclosure && e.quest.id !== y.Fw;
+        z = e.shouldShowDisclosure && e.quest.id !== S.Fw;
     return (0, i.jsxs)(l.W1t, {
         "data-menu-migrated": !0,
         variant: "fixed",
@@ -196,7 +196,7 @@ function L(e) {
                     (0, u.C)(e.quest.id)
                 }
             }), (0, p.U)({
-                location: y.rE.QUEST_PREVIEW_TOOL_2
+                location: S.rE.QUEST_PREVIEW_TOOL_2
             }) && (0, i.jsx)(l.Drp, {
                 id: "preview",
                 label: j.intl.string(j.t.tx5Ax5),

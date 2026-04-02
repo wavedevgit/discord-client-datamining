@@ -1,6 +1,6 @@
 /** chunk id: 112007 params = (module,exports,require) **/
 n.d(t, {
-    A: () => y
+    A: () => S
 }), n(938796);
 var i = n(627968),
     a = n(64700),
@@ -22,12 +22,12 @@ var i = n(627968),
     C = n(860689),
     I = n(505417),
     E = n(168428),
-    v = n(652215),
-    b = n(985018),
+    b = n(652215),
+    v = n(985018),
     T = n(366228);
 
-function y(e) {
-    let t, y, S, {
+function S(e) {
+    let t, S, y, {
             onTransitionToInviteChannel: N,
             onAcceptInstantInvite: j,
             guild: L,
@@ -41,14 +41,14 @@ function y(e) {
             approximate_member_count: k,
             approximate_presence_count: O
         } = R,
-        U = R.state === v.elq.ACCEPTING,
+        U = R.state === b.elq.ACCEPTING,
         B = null != D ? (0, x.OY)(D) : null,
         G = null != L,
         F = null != B,
         H = null != B && B.isGuildStageVoice(),
         V = (0, l.Lt)(R.flags ?? 0, r.Q.IS_GUEST_INVITE),
         q = B?.isGuildVoiceOrThread() ?? !1,
-        W = L?.features.has(v.GuildFeatures.HUB) ?? !1,
+        W = L?.features.has(b.GuildFeatures.HUB) ?? !1,
         z = L?.id,
         {
             analyticsLocations: Y
@@ -72,7 +72,7 @@ function y(e) {
         }, [R, P, Y, G, N, j]);
     if (null == L) {
         if (null == R.guild) return (0, i.jsx)(E.A, {});
-        (L = C.DY(R.guild)).premiumTier = R.guild.premium_tier ?? v.TVA.NONE
+        (L = C.DY(R.guild)).premiumTier = R.guild.premium_tier ?? b.TVA.NONE
     }
     let et = (0, I.l)({
         isVoiceChannel: q,
@@ -82,7 +82,7 @@ function y(e) {
         isStage: H,
         isStream: !1
     });
-    return y = (0, i.jsxs)("span", {
+    return S = (0, i.jsxs)("span", {
         className: T.FA,
         children: [(0, i.jsx)(h.A, {
             guildId: L.id,
@@ -102,19 +102,19 @@ function y(e) {
                 disableBoostClick: !0
             })
         })]
-    }), V && (S = (0, i.jsx)(o.m, {
+    }), V && (y = (0, i.jsx)(o.m, {
         asContainer: !0,
-        text: b.intl.string(b.t["/FeTK6"]),
+        text: v.intl.string(v.t["/FeTK6"]),
         children: (0, i.jsx)(d.mir, {
             size: "md",
             color: "currentColor",
             className: T.G
         })
-    })), q ? (y = (0, i.jsx)(A.A.Channel, {
+    })), q ? (S = (0, i.jsx)(A.A.Channel, {
         channel: B
     }), t = (0, i.jsxs)("span", {
         className: T.FA,
-        children: [b.intl.format(b.t["2wimj5"], {
+        children: [v.intl.format(v.t["2wimj5"], {
             guildName: L.name
         }), (0, i.jsx)("span", {
             className: T.E3,
@@ -134,14 +134,14 @@ function y(e) {
             guild: L
         }), (0, i.jsx)(A.A.Header, {
             text: et,
-            extra: S
+            extra: y
         }), (0, i.jsxs)(A.A.Body, {
             children: [(0, i.jsxs)("div", {
                 className: T.iH,
                 children: [(0, i.jsx)(A.A.Icon, {
                     guild: L
                 }), (0, i.jsx)(A.A.Info, {
-                    title: y,
+                    title: S,
                     onClick: $,
                     children: t
                 })]
@@ -153,16 +153,16 @@ function y(e) {
                     variant: "active",
                     fullWidth: q,
                     disabled: !Z,
-                    text: q ? H ? b.intl.string(b.t["7vb2cc"]) : b.intl.string(b.t.gpqgah) : G ? b.intl.string(b.t.cEnaWx) : b.intl.string(b.t.XpeFYr)
+                    text: q ? H ? v.intl.string(v.t["7vb2cc"]) : v.intl.string(v.t.gpqgah) : G ? v.intl.string(v.t.cEnaWx) : v.intl.string(v.t.XpeFYr)
                 })
             })]
-        }), L.features.has(v.GuildFeatures.HUB) && (0, i.jsxs)(i.Fragment, {
+        }), L.features.has(b.GuildFeatures.HUB) && (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)("div", {
                 className: T.me
             }), (0, i.jsx)(d.Text, {
                 variant: "text-sm/normal",
                 color: "text-default",
-                children: b.intl.format(b.t["/o1IfA"], {
+                children: v.intl.format(v.t["/o1IfA"], {
                     onClick: () => (0, d.mMO)(async () => {
                         let {
                             default: e

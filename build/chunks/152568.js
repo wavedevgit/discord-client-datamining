@@ -48,11 +48,11 @@ let I = e => {
         {
             bannerURL: B
         } = (0, x.w$)(t),
-        M = s === E.G2.ORBS,
-        P = null != t.ctaRoute && "" !== t.ctaRoute,
-        D = !0 !== t.disableCta && (null != t.ctaText && "" !== t.ctaText || P),
-        H = null != t.logoURL && "" !== t.logoURL,
-        w = r.useCallback(() => {
+        P = s === E.G2.ORBS,
+        M = null != t.ctaRoute && "" !== t.ctaRoute,
+        D = !0 !== t.disableCta && (null != t.ctaText && "" !== t.ctaText || M),
+        w = null != t.logoURL && "" !== t.logoURL,
+        H = r.useCallback(() => {
             if (O(!0), t.isDismissible) {
                 let e = t.dismissibleContentVersion ?? 0;
                 (0, d.$l)(i.M.COLLECTIBLES_SHOP_WIDE_BANNER, e, {
@@ -91,8 +91,8 @@ let I = e => {
         }, [t.ctaRoute, F]);
     if (null == B || T) return null;
     let U = a()(v.nM, v.Tq, v.TS, v.YB, {
-            [v._1]: M,
-            [v.vb]: P
+            [v._1]: P,
+            [v.vb]: M
         }),
         V = (0, n.jsxs)(n.Fragment, {
             children: [t.isDismissible && (0, n.jsx)("div", {
@@ -100,13 +100,13 @@ let I = e => {
                 children: (0, n.jsx)(c.JnF, {
                     size: "sm",
                     onClick: e => {
-                        e.stopPropagation(), w()
+                        e.stopPropagation(), H()
                     },
                     "aria-label": S.intl.string(S.t.WAI6xu)
                 })
             }), (0, n.jsx)("div", {
                 className: a()(v.zK, {
-                    [v._1]: M
+                    [v._1]: P
                 }),
                 style: null != j ? {
                     height: `${j}px`
@@ -116,7 +116,7 @@ let I = e => {
                     src: B,
                     alt: t.title,
                     className: a()(v.LN, {
-                        [v.d5]: M
+                        [v.d5]: P
                     })
                 })
             }), (0, n.jsx)("div", {
@@ -132,7 +132,7 @@ let I = e => {
                         style: {
                             color: t.bannerTextColor ?? "var(--text-strong)"
                         },
-                        className: M ? v.O2 : void 0,
+                        className: P ? v.O2 : void 0,
                         variant: "heading-xl/bold",
                         children: t.title
                     }), (0, n.jsx)(c.Text, {
@@ -140,8 +140,8 @@ let I = e => {
                             color: "var(--text-muted)"
                         },
                         lineClamp: 2,
-                        variant: M ? "text-md/medium" : "text-sm/medium",
-                        children: M ? S.intl.format(S.t.SFFP7K, {
+                        variant: P ? "text-md/medium" : "text-sm/medium",
+                        children: P ? S.intl.format(S.t.SFFP7K, {
                             helpdeskArticle: m.A.getArticleURL(b.MVz.VIRTUAL_CURRENCY_LEARN_MORE)
                         }) : t.body
                     }), D && (0, n.jsxs)("div", {
@@ -152,7 +152,7 @@ let I = e => {
                                 e.stopPropagation(), G(t.ctaText ?? S.intl.string(S.t.jVcuVY))
                             },
                             text: t.ctaText ?? S.intl.string(S.t.jVcuVY)
-                        }), H && (0, n.jsx)("img", {
+                        }), w && (0, n.jsx)("img", {
                             src: t.logoURL,
                             alt: "",
                             className: v.bU
@@ -162,12 +162,12 @@ let I = e => {
             })]
         });
     return (0, n.jsx)(c.NPJ, {
-        theme: M ? void 0 : A.NJ.DARK,
+        theme: P ? void 0 : A.NJ.DARK,
         children: e => (0, n.jsx)(o.L, {
             innerRef: I,
             onChange: y,
             threshold: 0,
-            children: P ? (0, n.jsx)(c.DUT, {
+            children: M ? (0, n.jsx)(c.DUT, {
                 innerRef: I,
                 onClick: () => G(null),
                 className: a()(e, U),

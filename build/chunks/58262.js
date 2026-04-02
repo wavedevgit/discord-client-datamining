@@ -26,9 +26,9 @@ function I(e) {
         invite: t,
         message: n,
         getAcceptInviteContext: I
-    } = e, E = (0, l.bG)([h.default], () => h.default.getId()), v = t.inviter?.id === E, b = t.state === x.elq.ACCEPTING, {
+    } = e, E = (0, l.bG)([h.default], () => h.default.getId()), b = t.inviter?.id === E, v = t.state === x.elq.ACCEPTING, {
         analyticsLocations: T
-    } = (0, c.Ay)(d.A.INVITE_EMBED), y = (0, l.bG)([g.A], () => null != t.inviter && g.A.isFriend(t.inviter?.id)), S = a.useCallback(() => {
+    } = (0, c.Ay)(d.A.INVITE_EMBED), S = (0, l.bG)([g.A], () => null != t.inviter && g.A.isFriend(t.inviter?.id)), y = a.useCallback(() => {
         let e = "noop";
         null != t.inviter && null != p.A.getDMFromUserId(t.inviter.id) && (e = "transition", s.A.openPrivateChannel({
             recipientIds: [t.inviter.id]
@@ -54,11 +54,11 @@ function I(e) {
         })
     }, [t, n, T, I]);
     if (null == t.inviter) return null;
-    let j = y ? S : N,
+    let j = S ? y : N,
         L = f.intl.string(f.t.ib7Ng1),
         R = "active";
-    y ? (L = f.intl.string(f.t.xhxnPn), R = "secondary") : v && (L = f.intl.string(f.t.ib7Ng1), R = "secondary");
-    let P = v ? f.intl.string(f.t.eQyu1F) : f.intl.string(f.t.PYJHW6),
+    S ? (L = f.intl.string(f.t.xhxnPn), R = "secondary") : b && (L = f.intl.string(f.t.ib7Ng1), R = "secondary");
+    let P = b ? f.intl.string(f.t.eQyu1F) : f.intl.string(f.t.PYJHW6),
         w = null != t.inviter ? `${t.inviter.username}` : "",
         M = null != t.inviter ? A.Ay.getUserTag(t.inviter) : "";
     return (0, i.jsxs)(_.A, {
@@ -69,17 +69,17 @@ function I(e) {
                 className: C.iH,
                 children: [(0, i.jsx)(_.A.Icon, {
                     user: new m.A(t.inviter),
-                    onClick: y ? j : void 0
+                    onClick: S ? j : void 0
                 }), (0, i.jsx)(_.A.Info, {
                     title: w,
-                    onClick: y ? j : void 0,
+                    onClick: S ? j : void 0,
                     children: M
                 })]
             }), (0, i.jsx)(r.$nd, {
                 onClick: j,
                 text: L,
-                loading: b,
-                disabled: v,
+                loading: v,
+                disabled: b,
                 variant: R
             })]
         })]

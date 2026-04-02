@@ -22,11 +22,11 @@ var i = n(627968),
     C = n(75825),
     I = n(976860),
     E = n(871123),
-    v = n(317560),
-    b = n(780964),
+    b = n(317560),
+    v = n(780964),
     T = n(840065),
-    y = n(961350),
-    S = n(30793),
+    S = n(961350),
+    y = n(30793),
     N = n(189081),
     j = n(287809),
     L = n(67480),
@@ -67,7 +67,7 @@ class V extends a.PureComponent {
         return e >= u.Tm
     }
     handleViewInventory() {
-        (0, T.openUserSettings)(b.X.GIFT_PANEL)
+        (0, T.openUserSettings)(v.X.GIFT_PANEL)
     }
     renderTitle = () => this.props.isSelfGift ? G.intl.string(G.t.mT9B49) : G.intl.string(G.t.Vo5yHw);renderActions = () => this.props.isSelfGift ? (0, i.jsx)(c.Button, {
         variant: "primary",
@@ -110,7 +110,7 @@ class q extends a.Component {
             }
         })
     };handleVerificationClick = e => {
-        e.stopPropagation(), e.preventDefault(), (0, T.openUserSettings)(b.X.ACCOUNT_PANEL)
+        e.stopPropagation(), e.preventDefault(), (0, T.openUserSettings)(v.X.ACCOUNT_PANEL)
     };handleAccept = e => {
         let {
             channelId: t,
@@ -139,12 +139,12 @@ class q extends a.Component {
             sku: n,
             skuApplication: i
         } = this.props;
-        null != n && (0, E.bF)(n) && null != i && null != i.guildId ? (e.preventDefault(), (0, v.R)({
+        null != n && (0, E.bF)(n) && null != i && null != i.guildId ? (e.preventDefault(), (0, b.R)({
             skuId: n.id,
             applicationId: i.id,
             isStorefront: !1,
             analyticsLocations: [h.A.GIFT_CODE_EMBED]
-        })) : null != t && t.isSubscription && (e.preventDefault(), (0, T.openUserSettings)(b.X.NITRO_PANEL))
+        })) : null != t && t.isSubscription && (e.preventDefault(), (0, T.openUserSettings)(v.X.NITRO_PANEL))
     };handleClaimPromotion = e => {
         e.stopPropagation(), e.preventDefault();
         let t = this.props.giftCode?.code;
@@ -371,10 +371,10 @@ let W = (0, m.A)((0, _.A)(q)),
         } = e, {
             giftCode: a,
             resolved: r
-        } = (0, d.cf)([S.A], () => ({
-            giftCode: S.A.get(t),
-            resolved: S.A.getIsResolved(t)
-        })), l = (0, d.bG)([j.default], () => null != a && null != a.userId ? j.default.getUser(a.userId) : null), s = (0, d.bG)([L.A], () => null != a ? L.A.get(a.skuId) : null), o = (0, d.bG)([N.A], () => null != s && a?.entitlementBranches != null ? w.YI(a.entitlementBranches, s, N.A) : null), c = (0, p.h)(s?.applicationId), u = (0, D.zz)(a?.subscriptionPlanId), _ = (0, d.bG)([y.default], () => null != a ? y.default.getId() === a.userId : y.default.getId() === n.id);
+        } = (0, d.cf)([y.A], () => ({
+            giftCode: y.A.get(t),
+            resolved: y.A.getIsResolved(t)
+        })), l = (0, d.bG)([j.default], () => null != a && null != a.userId ? j.default.getUser(a.userId) : null), s = (0, d.bG)([L.A], () => null != a ? L.A.get(a.skuId) : null), o = (0, d.bG)([N.A], () => null != s && a?.entitlementBranches != null ? w.YI(a.entitlementBranches, s, N.A) : null), c = (0, p.h)(s?.applicationId), u = (0, D.zz)(a?.subscriptionPlanId), _ = (0, d.bG)([S.default], () => null != a ? S.default.getId() === a.userId : S.default.getId() === n.id);
         return (0, i.jsx)(W, {
             ...e,
             skuApplication: c,

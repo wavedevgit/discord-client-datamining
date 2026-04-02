@@ -25,9 +25,9 @@ let C = (0, _.xI)(l.A.STICKERS_CONSTANTS_STICKER_DIMENSION),
             renderableSticker: t,
             channel: n,
             isInteracting: l
-        } = e, _ = a.useRef(null), [I, E] = a.useState(!0), [v, b] = a.useState(String(Date.now())), [T] = (0, m.Zq)(t, l), {
-            analyticsLocations: y
-        } = (0, c.Ay)(o.A.STICKER_MESSAGE), S = (0, i.jsxs)("span", {
+        } = e, _ = a.useRef(null), [I, E] = a.useState(!0), [b, v] = a.useState(String(Date.now())), [T] = (0, m.Zq)(t, l), {
+            analyticsLocations: S
+        } = (0, c.Ay)(o.A.STICKER_MESSAGE), y = (0, i.jsxs)("span", {
             className: f.Zl,
             children: [(0, i.jsx)(s.s2T, {
                 size: "xs",
@@ -36,13 +36,13 @@ let C = (0, _.xI)(l.A.STICKERS_CONSTANTS_STICKER_DIMENSION),
             }), (T ?? t).name]
         });
         return (0, i.jsx)(c.f5, {
-            value: y,
+            value: S,
             children: (0, i.jsx)("div", {
                 className: f.be,
                 children: (0, i.jsx)(s.YNO, {
                     align: "center",
                     animation: s.YNO.Animation.TRANSLATE,
-                    positionKey: v,
+                    positionKey: b,
                     onRequestClose: () => {
                         E(!0)
                     },
@@ -50,7 +50,7 @@ let C = (0, _.xI)(l.A.STICKERS_CONSTANTS_STICKER_DIMENSION),
                         ...e,
                         renderableSticker: t,
                         channel: n,
-                        refreshPositionKey: () => b(String(Date.now()))
+                        refreshPositionKey: () => v(String(Date.now()))
                     }),
                     targetElementRef: _,
                     children: e => {
@@ -60,7 +60,7 @@ let C = (0, _.xI)(l.A.STICKERS_CONSTANTS_STICKER_DIMENSION),
                         return (0, i.jsx)(r.m, {
                             ...u.Uk,
                             shouldShow: I,
-                            __unsupportedReactNodeAsText: (0, u.yR)(S),
+                            __unsupportedReactNodeAsText: (0, u.yR)(y),
                             "aria-label": !1,
                             onTooltipShow: () => {
                                 var e;

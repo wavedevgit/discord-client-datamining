@@ -1,72 +1,82 @@
 /** chunk id: 212407 params = (module,exports,require) **/
 n.d(t, {
-    Kk: () => l,
-    MV: () => c,
-    U1: () => d,
-    bv: () => u,
-    qY: () => m,
-    s4: () => o,
-    w$: () => p
+    Kk: () => o,
+    MV: () => d,
+    U1: () => u,
+    bv: () => m,
+    qY: () => p,
+    s4: () => c,
+    w$: () => h
 });
 var r = n(64700),
     a = n(488430),
-    i = n(940622),
-    s = n(559474);
-let l = e => {
-        let t = (0, i.mb)(s.RN.HERO_LOGO),
-            n = (0, i.mb)(s.RN.HERO_BANNER_STATIC),
-            a = (0, i.mb)(s.RN.HERO_BANNER_ANIMATED),
-            l = (0, i.mb)(s.RN.HERO_BANNER_RIVE);
+    i = n(719986),
+    s = n(940622),
+    l = n(559474);
+let o = e => {
+        let t = (0, s.mb)(l.RN.HERO_LOGO),
+            n = (0, s.mb)(l.RN.HERO_BANNER_STATIC),
+            a = (0, s.mb)(l.RN.HERO_BANNER_ANIMATED),
+            o = (0, s.mb)(l.RN.HERO_BANNER_RIVE),
+            c = (0, s.JE)(e => e.heroLogoMaxHeight),
+            d = (0, s.JE)(e => e.heroResponsive);
         return r.useMemo(() => {
-            let r = null != n || null != a || null != l || null != t,
-                i = null != n && null == a;
-            return {
-                bannerDisplayConfig: r ? void 0 : e.bannerDisplayConfig,
-                logoDisplayConfig: r ? void 0 : e.logoDisplayConfig,
+            let r, s = null != n || null != a || null != o || null != t,
+                l = null != n && null == a;
+            return r = s ? null != t && null != c ? i.M.fromServer({
+                desktop_max_height: c
+            }) : void 0 : e.logoDisplayConfig, {
+                bannerDisplayConfig: s ? d ? i.M.fromServer({
+                    responsive: !0
+                }) : void 0 : e.bannerDisplayConfig,
+                logoDisplayConfig: r,
                 heroLogo: t ?? e.heroLogoUrl,
                 heroBannerStatic: n ?? e.heroBannerUrl,
-                heroBannerAnimated: i ? void 0 : a ?? e.heroBannerAnimatedUrl,
-                heroBannerRive: l ?? e.heroRiveUrl
+                heroBannerAnimated: l ? void 0 : a ?? e.heroBannerAnimatedUrl,
+                heroBannerRive: o ?? e.heroRiveUrl
             }
-        }, [t, n, a, l, e])
+        }, [t, n, a, o, e, c, d])
     },
-    o = (e, t) => (0, i.mb)(s.RN.FEATURED_BLOCK) ?? t?.assetUrl ?? e?.featuredBlockUrl,
-    c = e => {
-        let t = (0, i.mb)(s.RN.CATALOG_BANNER_STATIC),
-            n = (0, i.mb)(s.RN.CATALOG_BANNER_ANIMATED),
-            r = (0, i.mb)(s.RN.CATALOG_BANNER_RIVE);
+    c = (e, t, n) => {
+        let r = (0, s.mb)(l.RN.FEATURED_BLOCK);
+        return (n ? r : null) ?? t?.assetUrl ?? e?.featuredBlockUrl
+    },
+    d = e => {
+        let t = (0, s.mb)(l.RN.CATALOG_BANNER_STATIC),
+            n = (0, s.mb)(l.RN.CATALOG_BANNER_ANIMATED),
+            r = (0, s.mb)(l.RN.CATALOG_BANNER_RIVE);
         return {
             catalogBannerStatic: t ?? e.catalogBannerUrl,
             catalogBannerAnimated: n ?? e.catalogBannerAnimatedUrl,
             catalogBannerRive: r ?? e.catalogBannerRiveUrl
         }
     },
-    d = e => (0, i.mb)(s.RN.PDP_BACKGROUND) ?? e.pdpBgUrl,
-    u = e => {
-        let t = (0, i.mb)(s.RN.SHOP_BUTTON_BG_HOVER),
-            n = (0, i.mb)(s.RN.SHOP_BUTTON_BG_HOVER_DARK),
-            l = (0, i.mb)(s.RN.SHOP_BUTTON_BG_HOVER_LIGHT),
-            o = (0, i.mb)(s.RN.SHOP_BUTTON_BG_RESTING),
-            c = (0, i.mb)(s.RN.SHOP_BUTTON_BG_RESTING_DARK),
-            d = (0, i.mb)(s.RN.SHOP_BUTTON_BG_RESTING_LIGHT);
+    u = e => (0, s.mb)(l.RN.PDP_BACKGROUND) ?? e.pdpBgUrl,
+    m = e => {
+        let t = (0, s.mb)(l.RN.SHOP_BUTTON_BG_HOVER),
+            n = (0, s.mb)(l.RN.SHOP_BUTTON_BG_HOVER_DARK),
+            i = (0, s.mb)(l.RN.SHOP_BUTTON_BG_HOVER_LIGHT),
+            o = (0, s.mb)(l.RN.SHOP_BUTTON_BG_RESTING),
+            c = (0, s.mb)(l.RN.SHOP_BUTTON_BG_RESTING_DARK),
+            d = (0, s.mb)(l.RN.SHOP_BUTTON_BG_RESTING_LIGHT);
         return r.useMemo(() => {
             if (e?.type === a.G.COACHMARK) return {};
             let r = e?.refTargetBackground?.asset,
-                i = r?.resting,
-                s = r?.hovered;
+                s = r?.resting,
+                l = r?.hovered;
             return {
-                buttonBGHoverDark: n ?? t ?? s?.dark,
-                buttonBGHoverLight: l ?? t ?? s?.light,
-                buttonBGRestingDark: c ?? o ?? i?.dark,
-                buttonBGRestingLight: d ?? o ?? i?.light
+                buttonBGHoverDark: n ?? t ?? l?.dark,
+                buttonBGHoverLight: i ?? t ?? l?.light,
+                buttonBGRestingDark: c ?? o ?? s?.dark,
+                buttonBGRestingLight: d ?? o ?? s?.light
             }
-        }, [t, n, l, o, c, d, e])
+        }, [t, n, i, o, c, d, e])
     },
-    m = e => ({
+    p = e => ({
         bannerUrl: e.bannerUrl,
         bannerAnimatedUrl: e.bannerAnimatedUrl
     }),
-    p = e => ({
+    h = e => ({
         bannerURL: e.bannerURL,
         bannerAnimatedURL: e.bannerAnimatedURL
     })

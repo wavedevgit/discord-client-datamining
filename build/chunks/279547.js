@@ -1,30 +1,30 @@
 /** chunk id: 279547 params = (module,exports,require) **/
-n.d(e, {
-    d: () => s
+n.d(t, {
+    d: () => r
 });
 var i = n(64700),
     a = n(198982);
 
-function s(t) {
+function r(e) {
     let {
-        onError: e,
+        onError: t,
         onSuccess: n,
-        report: s
-    } = t, [l, r] = i.useState(!1);
+        report: r
+    } = e, [l, s] = i.useState(!1);
     return {
         reportFalsePositive: i.useCallback(async () => {
             if (!l) {
-                r(!0);
+                s(!0);
                 try {
-                    await s(), n?.()
+                    await r(), n?.()
                 } catch (n) {
-                    let t = new a.LG(n);
-                    e?.(t)
+                    let e = new a.LG(n);
+                    t?.(e)
                 } finally {
-                    r(!1)
+                    s(!1)
                 }
             }
-        }, [l, e, n, s]),
+        }, [l, t, n, r]),
         isReportFalsePositiveLoading: l
     }
 }

@@ -27,37 +27,37 @@ function E(e) {
             invite: n,
             message: r,
             currentUserId: E,
-            onTransitionToInviteChannel: v,
-            onAcceptInstantInvite: b
+            onTransitionToInviteChannel: b,
+            onAcceptInstantInvite: v
         } = e,
         T = E === r.author.id,
-        y = n.state === f.elq.ACCEPTING,
-        S = (0, o.bG)([p.A], () => null != n.channel ? p.A.getChannel(n.channel.id) : null, [n]);
-    l()(null == S || S.isPrivate(), "must be a private channel");
+        S = n.state === f.elq.ACCEPTING,
+        y = (0, o.bG)([p.A], () => null != n.channel ? p.A.getChannel(n.channel.id) : null, [n]);
+    l()(null == y || y.isPrivate(), "must be a private channel");
     let {
         analyticsLocations: N
-    } = (0, u.Ay)(c.A.INVITE_EMBED), j = null != S, L = a.useCallback(() => {
+    } = (0, u.Ay)(c.A.INVITE_EMBED), j = null != y, L = a.useCallback(() => {
         let e = "noop";
-        j ? (v(), e = "transition") : (b(), e = "accept"), (0, d.he)({
+        j ? (b(), e = "transition") : (v(), e = "accept"), (0, d.he)({
             invite: n,
             action: e,
             inviter_id: r.author.id,
             invite_message_id: r.id,
             invite_instance_id: (0, _._U)(n.code, r.id)
         }, N)
-    }, [n, r, N, j, v, b]);
-    if (null == S) {
+    }, [n, r, N, j, b, v]);
+    if (null == y) {
         if (null == n.channel) return (0, i.jsx)(x.A, {});
-        S = (0, h.OY)(n.channel), t = null != n.channel && null != n.channel.recipients ? n.channel.recipients : []
+        y = (0, h.OY)(n.channel), t = null != n.channel && null != n.channel.recipients ? n.channel.recipients : []
     } else {
-        t = S.recipients.reduce((e, t) => {
+        t = y.recipients.reduce((e, t) => {
             let n = g.default.getUser(t);
             return null != n && e.push(n), e
         }, []);
         let e = g.default.getCurrentUser();
         j && null != e && t.push(e)
     }
-    let R = S.name;
+    let R = y.name;
     (null == R || "" === R) && (R = t.length > 0 ? t.filter(A.Vq).map(e => e.username).join(", ") : C.intl.string(C.t.LJpTRF));
     let P = C.intl.string(C.t.XpeFYr),
         w = "active";
@@ -70,7 +70,7 @@ function E(e) {
             children: [(0, i.jsxs)("div", {
                 className: I.iH,
                 children: [(0, i.jsx)(m.A.Icon, {
-                    channel: S,
+                    channel: y,
                     onClick: j ? L : void 0
                 }), (0, i.jsx)(m.A.Info, {
                     title: R,
@@ -81,7 +81,7 @@ function E(e) {
                 })]
             }), (0, i.jsx)(s.$nd, {
                 onClick: L,
-                loading: y,
+                loading: S,
                 disabled: j,
                 variant: w,
                 text: P,

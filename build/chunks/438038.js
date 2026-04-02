@@ -32,7 +32,7 @@ function m(e) {
         toggleExpanded: E
     } = (0, u.s)({
         initiallyExpanded: !0
-    }), [v, b] = a.useState(!1), T = () => b(!0), y = () => b(!1), S = x ?? 1e3;
+    }), [b, v] = a.useState(!1), T = () => v(!0), S = () => v(!1), y = x ?? 1e3;
     return (0, i.jsx)(o.R, {
         questOrQuests: t,
         questContent: n,
@@ -43,14 +43,14 @@ function m(e) {
             style: {
                 maxHeight: n === l.uF.QUESTS_EMBED ? void 0 : f.to({
                     range: [0, 1],
-                    output: [100, S]
+                    output: [100, y]
                 })
             },
             className: _.i,
             onMouseEnter: T,
-            onMouseLeave: y,
+            onMouseLeave: S,
             onFocus: T,
-            onBlur: y,
+            onBlur: S,
             children: (0, i.jsxs)("div", {
                 ref: t => {
                     e.current = t, g.current = t
@@ -61,7 +61,7 @@ function m(e) {
                     quest: t,
                     size: A,
                     expansionSpring: f,
-                    isInteracting: v,
+                    isInteracting: b,
                     isAnimating: C,
                     isExpanded: I,
                     contentPosition: m,
@@ -72,7 +72,7 @@ function m(e) {
                     isQuestExpired: p,
                     location: n,
                     size: A,
-                    isFocused: v,
+                    isFocused: b,
                     isExpanded: I,
                     isAnimating: C,
                     contentPosition: m,

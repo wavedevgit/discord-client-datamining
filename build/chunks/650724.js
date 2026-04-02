@@ -29,8 +29,8 @@ function A(e, t) {
             rawMediaPostEmbedData: C,
             guild: I,
             parentChannel: E,
-            user: v,
-            selectedGuildId: b,
+            user: b,
+            selectedGuildId: v,
             canAccess: T
         } = (0, a.cf)([h.A, c.A, o.A, _.default, u.A], () => {
             let e = h.A.getMediaPostEmbed(n?.threadId)?.media,
@@ -48,21 +48,21 @@ function A(e, t) {
                 canAccess: s
             }
         }, [n]),
-        y = i.useMemo(() => {
+        S = i.useMemo(() => {
             let e = (0, p.tU)({
                 mediaPostEmbedData: C,
                 guild: I,
                 parentChannel: E,
-                user: v,
-                selectedGuildId: b,
+                user: b,
+                selectedGuildId: v,
                 canAccess: T
             });
             return null == e ? null : {
                 ...e,
-                user: v
+                user: b
             }
-        }, [C, I, E, v, b, T]);
+        }, [C, I, E, b, v, T]);
     return i.useEffect(() => {
         n?.threadId != null && (h.A.getEmbedFetchState(n.threadId) !== h.e.NOT_FETCHED || A && !1 === x || !A && f || (0, m.O0)(n?.threadId))
-    }, [n, A, x, f]), y
+    }, [n, A, x, f]), S
 }

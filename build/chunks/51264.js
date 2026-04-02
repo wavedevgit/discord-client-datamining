@@ -3,9 +3,9 @@ n.d(t, {
     A: () => p
 });
 var i = n(627968),
-    a = n(64700),
-    l = n(503698),
-    r = n.n(l),
+    l = n(64700),
+    a = n(503698),
+    r = n.n(a),
     s = n(311907),
     o = n(506774),
     d = n(397927),
@@ -16,13 +16,13 @@ var i = n(627968),
     _ = n(85497);
 let m = "isHideDevBanner",
     p = () => {
-        let [e, t] = (0, a.useState)(o.w.get(m, "false")?.toString() === "true"), n = (0, s.bG)([c.A], () => (0, u.kK)() ? c.A.getCurrentBuildOverride().overrides?.discord_web : null);
+        let [e, t] = (0, l.useState)(o.w.get(m, "false")?.toString() === "true"), n = (0, s.bG)([c.A], () => (0, u.kK)() ? c.A.getCurrentBuildOverride().overrides?.discord_web : null);
         if (e) return null;
-        let l = () => {
+        let a = () => {
                 o.w.set(m, !0), t(!0)
             },
             p = () => (0, i.jsx)(d.DUT, {
-                onClick: l,
+                onClick: a,
                 className: _.b,
                 "aria-label": h.intl.string(h.t.WAI6xu),
                 children: (0, i.jsx)(d.PGe, {
@@ -41,7 +41,7 @@ let m = "isHideDevBanner",
             children: [(0, i.jsx)(A.A, {
                 className: _.Kk
             }), h.intl.format(h.t.uyrfYF, {
-                buildNumber: "521858"
+                buildNumber: "521904"
             }), (0, i.jsx)(p, {})]
         }) : null
     }

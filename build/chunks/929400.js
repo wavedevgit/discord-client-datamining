@@ -30,8 +30,8 @@ var r = n(627968),
     E = n(287070),
     y = n(101058),
     P = n(84540),
-    O = n(836602),
-    k = n(576622),
+    k = n(836602),
+    O = n(576622),
     S = n(270051),
     w = n(652165),
     L = n(287809),
@@ -47,8 +47,8 @@ var r = n(627968),
     W = n(940980),
     $ = n(495565),
     q = n(740076),
-    K = n(466459),
-    J = n(442759),
+    J = n(466459),
+    K = n(442759),
     Y = n(780898),
     Z = n(512213),
     X = n(139136),
@@ -84,8 +84,8 @@ var r = n(627968),
     eE = n(57020),
     ey = n(61750),
     eP = n(758836),
-    eO = n(652215),
-    ek = n(788868),
+    ek = n(652215),
+    eO = n(788868),
     eS = n(818348),
     ew = n(985018),
     eL = n(316069);
@@ -96,7 +96,7 @@ let eB = e => {
             user: i
         } = e, s = a.useRef(null), l = (0, z.aw)(n), {
             firstAvatarDecoration: o
-        } = (0, J.f5)(n);
+        } = (0, K.f5)(n);
         return t.type === d.R.AVATAR_DECORATION ? (0, r.jsx)("div", {
             className: l ? eL.X2 : eL.h1,
             children: (0, r.jsx)(eC.i, {
@@ -187,7 +187,7 @@ let eB = e => {
             variant: "text-sm/normal",
             className: eL.CU,
             children: ew.intl.format(ew.t.Q1scdE, {
-                helpdeskArticle: M.A.getArticleURL(eO.MVz.FRACTIONAL_PREMIUM_ABOUT)
+                helpdeskArticle: M.A.getArticleURL(ek.MVz.FRACTIONAL_PREMIUM_ABOUT)
             })
         }) : null
     },
@@ -211,17 +211,17 @@ let eB = e => {
             cardId: b,
             sessionId: E,
             tilePosition: y
-        } = (0, G.uM)() ?? {}, O = U.Ay.canUseCollectibles(n), {
-            previewingVariantIndex: k,
+        } = (0, G.uM)() ?? {}, k = U.Ay.canUseCollectibles(n), {
+            previewingVariantIndex: O,
             handleEntering: L,
             handleLeaving: B
-        } = g, M = (0, eN.q)(t, k), F = (0, Q.rb)(t, A);
+        } = g, M = (0, eN.q)(t, O), F = (0, Q.rb)(t, A);
         o()(null != F, "Selected product should not be null");
-        let Y = (0, K.h)(t),
+        let Y = (0, J.h)(t),
             {
                 isPurchased: Z,
                 isPartiallyOwnedBundle: X
-            } = (0, K.h)(F),
+            } = (0, J.h)(F),
             {
                 isDisabled: ee,
                 disabledReason: en
@@ -235,12 +235,12 @@ let eB = e => {
             es = (0, f.Ay)(),
             eh = (0, h.Mw)(es),
             ex = (0, z.G0)(F),
-            e_ = (0, z.yt)(F, eO.lid.DEFAULT),
+            e_ = (0, z.yt)(F, ek.lid.DEFAULT),
             ej = e_?.amount === 0,
             {
                 firstAvatarDecoration: eC
-            } = (0, J.f5)(M ?? F),
-            eb = a.useMemo(() => (0, z.fT)(F, O), [F, O]),
+            } = (0, K.f5)(M ?? F),
+            eb = a.useMemo(() => (0, z.fT)(F, k), [F, k]),
             eT = (0, et.VG)(t),
             eB = (0, eR.X)(F),
             {
@@ -257,14 +257,14 @@ let eB = e => {
             {
                 checkoutEligiblePrices: e$,
                 isOrbExclusive: eq,
-                hasSufficientOrbs: eK
+                hasSufficientOrbs: eJ
             } = (0, eE.F)({
                 product: F,
-                isPremiumUser: O,
+                isPremiumUser: k,
                 hasDiscountOffer: eH,
                 prioritizedCurrency: eW
             }),
-            eJ = a.useCallback(() => (0, R.A)({
+            eK = a.useCallback(() => (0, R.A)({
                 skuId: F.skuId,
                 analyticsLocations: I,
                 onClose: e => e ? u() : (0, eS.tE)()
@@ -312,9 +312,9 @@ let eB = e => {
                     }) : eM ? (0, r.jsx)(eA.B, {
                         prices: e$,
                         product: F,
-                        isPremiumUser: O,
+                        isPremiumUser: k,
                         discount: eb,
-                        hasSufficientOrbs: eK,
+                        hasSufficientOrbs: eJ,
                         isProductDisabled: ee,
                         discountOfferAmount: eG
                     }) : (0, r.jsxs)("div", {
@@ -322,12 +322,12 @@ let eB = e => {
                         children: [(0, r.jsx)(ed.A, {
                             product: F,
                             discount: eb,
-                            isPremiumUser: O,
-                            hideStrikethroughPrice: !O || eH,
+                            isPremiumUser: k,
+                            hideStrikethroughPrice: !k || eH,
                             nitroIconType: "tooltip",
                             nitroIconSize: "xs",
                             discountOfferAmount: eG
-                        }), O || eH ? null : (0, r.jsx)(eu.A, {
+                        }), k || eH ? null : (0, r.jsx)(eu.A, {
                             product: F
                         })]
                     })]
@@ -338,7 +338,7 @@ let eB = e => {
                         }),
                         children: [eF && (0, r.jsx)(ev.A, {
                             skuId: t.skuId,
-                            overrideVariantIndex: k,
+                            overrideVariantIndex: O,
                             className: eL.L$
                         }), (0, r.jsx)(eg.A, {
                             skuId: t.skuId,
@@ -347,7 +347,7 @@ let eB = e => {
                             wrap: !0
                         }), !eF && (0, r.jsx)(ev.A, {
                             skuId: t.skuId,
-                            overrideVariantIndex: k,
+                            overrideVariantIndex: O,
                             className: eL.L$
                         })]
                     })
@@ -359,10 +359,10 @@ let eB = e => {
                     direction: "vertical",
                     gap: 8,
                     children: (() => {
-                        if (ex && !O && !ej) {
+                        if (ex && !k && !ej) {
                             let e;
                             return e = ew.intl.string(ew.t.sEAnVH), (0, r.jsx)(T.A, {
-                                subscriptionTier: ek.pe.TIER_2,
+                                subscriptionTier: eO.pe.TIER_2,
                                 fullWidth: !0,
                                 textOptions: {
                                     textOverride: e
@@ -419,7 +419,7 @@ let eB = e => {
                                 let n, a = 0 === t;
                                 if (e.currency === eS.Yr.DISCORD_ORB) {
                                     let t, n, i, s;
-                                    return t = ee ? ew.intl.string(ew.t.cTdr3x) : ew.intl.string(ew.t.zqh7ZM), n = !eK || ee, i = ew.intl.formatToPlainString(ew.t.yi41qQ, {
+                                    return t = ee ? ew.intl.string(ew.t.cTdr3x) : ew.intl.string(ew.t.zqh7ZM), n = !eJ || ee, i = ew.intl.formatToPlainString(ew.t.yi41qQ, {
                                         orbPrice: e.amount
                                     }), s = n ? `${i}, ${t}` : i, (0, r.jsx)(p.m, {
                                         position: "top",
@@ -468,7 +468,7 @@ let eB = e => {
                                     fullWidth: !0,
                                     children: [(0, r.jsx)(x.Button, {
                                         variant: a ? "primary" : "secondary",
-                                        onClick: eJ,
+                                        onClick: eK,
                                         text: n,
                                         fullWidth: !0
                                     }), eB && (0, r.jsx)(ec.A, {
@@ -575,14 +575,14 @@ let eB = e => {
         } = e, l = (0, m.bG)([v.A], () => v.A.useReducedMotion), o = U.Ay.canUsePremiumProfileCustomization(n), {
             pendingAvatar: c,
             ...u
-        } = (0, m.cf)([O.A], () => O.A.getPendingChanges()), p = (0, y.V7)({
+        } = (0, m.cf)([k.A], () => k.A.getPendingChanges()), p = (0, y.V7)({
             userId: n.id,
             image: c
         }), h = t.type === d.R.AVATAR_DECORATION, [x] = t.items, {
             firstAvatarDecoration: f,
             firstProfileEffect: g,
             firstNameplate: _
-        } = (0, J.f5)(t), A = null != g, j = () => (0, r.jsxs)(r.Fragment, {
+        } = (0, K.f5)(t), A = null != g, j = () => (0, r.jsxs)(r.Fragment, {
             children: [(0, r.jsx)(E.A, {
                 ...u,
                 pendingAvatar: p,
@@ -647,7 +647,7 @@ let eB = e => {
                     channelId: "1337",
                     content: ew.intl.string(ew.t.d5YwK5)
                 }),
-                state: eO.cmJ.SENT,
+                state: ek.cmJ.SENT,
                 id: "0"
             })
         })({
@@ -702,14 +702,14 @@ let eB = e => {
             analyticsLocations: P
         } = (0, _.Ay)([...f, g.A.COLLECTIBLES_SHOP_DETAILS_MODAL]);
         (0, es.Yr)(y.skuId);
-        let O = (0, eb.U1)(l);
+        let k = (0, eb.U1)(l);
         a.useEffect(() => {
-            null != I && (0, k.A)(I.id, I.getAvatarURL(void 0, 80))
+            null != I && (0, O.A)(I.id, I.getAvatarURL(void 0, 80))
         }, [I]);
         let S = a.useMemo(() => (0, z.V6)(i.type, i.skuId), [i.type, i.skuId]);
         a.useEffect(() => {
-            B.default.track(eO.HAw.OPEN_MODAL, {
-                type: eO.JJy.COLLECTIBLES_SHOP_DETAILS_MODAL,
+            B.default.track(ek.HAw.OPEN_MODAL, {
+                type: ek.JJy.COLLECTIBLES_SHOP_DETAILS_MODAL,
                 source: h,
                 location_stack: P,
                 sku_id: y.skuId,
@@ -737,13 +737,13 @@ let eB = e => {
             W = t === x.ip4.EXITING,
             $ = (0, eI.$R)(i),
             q = $?.amount,
-            K = null != q && ($?.discountId === ek.eR || $?.discountId === ek.Qz),
-            J = a.useMemo(() => (0, z.aw)(y) ? y.items.length : 0, [y]),
+            J = null != q && ($?.discountId === eO.eR || $?.discountId === eO.Qz),
+            K = a.useMemo(() => (0, z.aw)(y) ? y.items.length : 0, [y]),
             {
                 activeSlide: Y,
                 isTransitioning: Z
             } = (0, en.X)({
-                slideCount: J,
+                slideCount: K,
                 intervalMs: 5e3
             });
         return null == I ? null : (0, r.jsx)(_.f5, {
@@ -774,7 +774,7 @@ let eB = e => {
                     }), (0, r.jsxs)("div", {
                         className: s()(eL.i1, y.skuId === u.j.PREMIUM_TIER_2_3_DAY ? eL.bF : y.type === d.R.AVATAR_DECORATION ? eL.Jq : eL.eF),
                         style: {
-                            backgroundImage: `url(${O})`
+                            backgroundImage: `url(${k})`
                         },
                         children: [(0, eP.pQ)(i.skuId) ? i.skuId === eP.Dp.ORB_PROFILE_BADGE ? H || W ? null : (0, r.jsx)(ex.z, {
                             user: I
@@ -805,7 +805,7 @@ let eB = e => {
                             })]
                         })]
                     })]
-                }), K && (0, r.jsx)(r.Fragment, {
+                }), J && (0, r.jsx)(r.Fragment, {
                     children: (0, r.jsxs)(x.jlY, {
                         "data-migration-pending": !0,
                         className: eL.Hx,

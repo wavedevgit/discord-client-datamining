@@ -23,11 +23,11 @@ var i = n(284009),
     C = n(961350),
     I = n(734057),
     E = n(31717),
-    v = n(834942),
-    b = n(320501),
+    b = n(834942),
+    v = n(320501),
     T = n(522602),
-    y = n(491037),
-    S = n(335759),
+    S = n(491037),
+    y = n(335759),
     N = n(862780),
     j = n(951727),
     L = n(652215),
@@ -79,10 +79,10 @@ function M(e) {
         title: R.intl.string(R.t["7LpysO"]),
         body: R.intl.string(R.t["5sHHoy"])
     });
-    let r = b.A.getMessage(t, n);
+    let r = v.A.getMessage(t, n);
     if (null == r || null == r.poll || 0 === r.poll.answers.length) return;
     let l = i ?? String(r.poll.answers[0].answer_id);
-    y.W({
+    S.W({
         message: r,
         initialAnswerId: l
     })
@@ -107,7 +107,7 @@ function k(e) {
     let {
         channelId: t,
         messageId: n
-    } = e, i = b.A.getMessage(t, n);
+    } = e, i = v.A.getMessage(t, n);
     return null == i ? [] : i.reactions.flatMap(e => !0 === e.me_vote ? e.emoji.name : [])
 }
 async function O(e) {
@@ -157,7 +157,7 @@ async function U(e) {
         title: R.intl.string(R.t.Qic1FD),
         body: R.intl.string(R.t["5sHHoy"])
     });
-    if (!v.A.canChatInGuild(i.guild_id)) return void u.A.show({
+    if (!b.A.canChatInGuild(i.guild_id)) return void u.A.show({
         title: R.intl.string(R.t.p245wu),
         body: R.intl.string(R.t["U/uodt"])
     });
@@ -177,7 +177,7 @@ async function U(e) {
             channelId: t,
             messageId: n,
             answerIds: e
-        }), await S.Q({
+        }), await y.Q({
             channelId: t,
             messageId: n,
             answerIds: e
@@ -253,7 +253,7 @@ async function G(e) {
                 } = e;
                 (0, N.A2)(t, n, e => {
                     let i = null == e || !e.showResults,
-                        a = b.A.getMessage(t, n),
+                        a = v.A.getMessage(t, n),
                         r = null != a ? a.reactions.reduce((e, t) => e + (t.count_details?.vote ?? 0), 0) : 0;
                     return p.Ay.trackWithMetadata(L.HAw.POLL_SHOW_RESULTS_CLICKED, {
                         channel_id: t,
@@ -296,7 +296,7 @@ let F = {
             let {
                 channelId: t,
                 messageId: n
-            } = e, i = b.A.getMessage(t, n);
+            } = e, i = v.A.getMessage(t, n);
             if (null != i) return {
                 message: i,
                 channelId: t,
@@ -429,7 +429,7 @@ let F = {
         await u.A.confirm({
             title: R.intl.string(R.t["+rfkTK"]),
             body: R.intl.string(R.t.H2I1gL)
-        }) && await S.w({
+        }) && await y.w({
             channelId: t,
             messageId: n
         })

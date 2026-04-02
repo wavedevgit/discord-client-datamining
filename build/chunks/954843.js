@@ -3,8 +3,8 @@ n.d(t, {
     W: () => c
 });
 var i = n(91242),
-    a = n(855687),
-    l = n(71393),
+    l = n(855687),
+    a = n(71393),
     r = n(576705),
     s = n(636401),
     o = n(569475),
@@ -21,11 +21,11 @@ function c() {
     if (null == t) throw new s.A({
         errorCode: d.Lw6.INVALID_CHANNEL
     }, "Invalid channel");
-    let n = l.A.getGuild(t.getGuildId());
+    let n = a.A.getGuild(t.getGuildId());
     if (null == n) throw new s.A({
         errorCode: d.Lw6.INVALID_CHANNEL
     }, `Invalid guild ${t.getGuildId()}`);
-    if (!(0, a.K)(r.A, n, t)) throw new s.A({
+    if (!(0, l.K)(r.A, n, t)) throw new s.A({
         errorCode: d.Lw6.INVALID_PERMISSIONS
     }, `No invite permissions for ${t.id}`);
     return {

@@ -22,9 +22,9 @@ function x(e) {
     let {
         code: t,
         message: n
-    } = e, [x, f, C] = (0, s.yK)([h.A], () => [h.A.getApplication(t), h.A.isInvalidApplication(t), h.A.getApplicationFetchState(t)], [t]), I = (0, s.bG)([u.A], () => u.A.getGuildId() ?? void 0), [E, v] = a.useState(!1), b = a.useCallback(e => {
-        e && v(!0)
-    }, []), T = (0, r.K)(b), y = a.useCallback(() => {
+    } = e, [x, f, C] = (0, s.yK)([h.A], () => [h.A.getApplication(t), h.A.isInvalidApplication(t), h.A.getApplicationFetchState(t)], [t]), I = (0, s.bG)([u.A], () => u.A.getGuildId() ?? void 0), [E, b] = a.useState(!1), v = a.useCallback(e => {
+        e && b(!0)
+    }, []), T = (0, r.K)(v), S = a.useCallback(() => {
         _.default.track(p.HAw.APP_DIRECTORY_PROFILE_EMBED_VIEWED, {
             application_id: t,
             device_platform: l.Fr ? "mobile_web" : "desktop_web",
@@ -36,8 +36,8 @@ function x(e) {
     return (a.useEffect(() => {
         (0, m.eP)(t)
     }, [t]), a.useEffect(() => {
-        E && C === h.e.FETCHED && y()
-    }, [E, C, y]), a.useEffect(() => {
+        E && C === h.e.FETCHED && S()
+    }, [E, C, S]), a.useEffect(() => {
         E && f && _.default.track(p.HAw.APP_DIRECTORY_PROFILE_INVALID_EMBED_VIEWED, {
             device_platform: l.Fr ? "mobile_web" : "desktop_web",
             sender_user_id: n.author.id,
@@ -70,7 +70,7 @@ function x(e) {
     }) : (0, i.jsx)(o.W, {
         app: c.Ay.createFromServer(x),
         linkType: o.J.APP_DISCOVERY,
-        onView: y,
+        onView: S,
         message: n
     })
 }

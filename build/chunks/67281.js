@@ -27,7 +27,7 @@ let x = function(e) {
         guildId: x,
         playerState: f = d.Q6.PAUSED,
         isControlBarExpanded: C = !0
-    } = e, I = (0, _.h)(a), E = (0, o.yK)([m.default], () => n.map(e => m.default.getUser(e)).filter(p.Vq) ?? []), v = null != t ? (0, h.Fe)(new Date(t)) : null, b = s()([I?.name, v]);
+    } = e, I = (0, _.h)(a), E = (0, o.yK)([m.default], () => n.map(e => m.default.getUser(e)).filter(p.Vq) ?? []), b = null != t ? (0, h.Fe)(new Date(t)) : null, v = s()([I?.name, b]);
     return (0, i.jsxs)("div", {
         className: r()(A.oK, {
             [A.pd]: f === d.Q6.PLAYING && !C
@@ -50,11 +50,11 @@ let x = function(e) {
                         color: "always-white",
                         children: null != l && l.length > 0 ? l : g.intl.string(g.t.Cyxddp)
                     })]
-                }), b.length > 0 && (0, i.jsx)(u.Text, {
+                }), v.length > 0 && (0, i.jsx)(u.Text, {
                     className: A.yu,
                     variant: "text-sm/normal",
                     color: "always-white",
-                    children: b.join(" \xb7 ")
+                    children: v.join(" \xb7 ")
                 })]
             }), E.length > 0 && (0, i.jsx)("div", {
                 className: A.HD,

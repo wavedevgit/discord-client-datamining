@@ -62,7 +62,7 @@ let I = {
                     days: t
                 })
             }, [L]),
-            M = r.useCallback((e, t) => {
+            P = r.useCallback((e, t) => {
                 E.default.track(C.HAw.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
                     collectibles_shop_session_id: T?.sessionId,
                     page_type: j,
@@ -75,31 +75,31 @@ let I = {
                     } : void 0
                 })
             }, [T?.sessionId, T?.pageCategory, T?.pageSection, j]),
-            P = r.useCallback(() => {
+            M = r.useCallback(() => {
                 (0, h.X)({
                     guildId: A.Kf
                 })
             }, []),
             D = r.useCallback(() => {
-                M("go_to_game_shop"), (0, h.default)({
+                P("go_to_game_shop"), (0, h.default)({
                     guildId: A.Kf
                 })
-            }, [M]),
-            H = r.useCallback((e, t) => {
+            }, [P]),
+            w = r.useCallback((e, t) => {
                 let {
                     skuId: s,
                     applicationId: n
                 } = t;
-                M("card_click", s), (0, p.R)({
+                P("card_click", s), (0, p.R)({
                     skuId: s,
                     applicationId: n,
                     isStorefront: !1,
                     analyticsLocations: O
                 })
-            }, [M, O]),
-            w = r.useCallback(() => {
-                M("dismiss"), s()
-            }, [M, s]),
+            }, [P, O]),
+            H = r.useCallback(() => {
+                P("dismiss"), s()
+            }, [P, s]),
             F = r.useCallback(e => {
                 y.current || (e ? null === R.current && (R.current = setTimeout(() => {
                     y.current = !0, R.current = null, E.default.track(C.HAw.COLLECTIBLES_TILE_IMPRESSION, {
@@ -127,7 +127,7 @@ let I = {
                         children: (0, n.jsx)(i.JnF, {
                             size: "sm",
                             variant: "icon-only",
-                            onClick: w
+                            onClick: H
                         })
                     }), (0, n.jsxs)("div", {
                         className: v.xf,
@@ -150,7 +150,7 @@ let I = {
                                 icon: i.I9m,
                                 iconPosition: "end",
                                 text: S.intl.string(S.t["kq/75v"]),
-                                onMouseDown: P,
+                                onMouseDown: M,
                                 onClick: D
                             })]
                         })]
@@ -161,7 +161,7 @@ let I = {
                             children: k.map((e, t) => (0, n.jsx)(f.A, {
                                 skuId: e,
                                 positionInSection: t,
-                                onClick: H
+                                onClick: w
                             }, e))
                         })
                     })]

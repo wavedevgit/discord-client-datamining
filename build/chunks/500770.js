@@ -84,11 +84,11 @@ function p(e) {
         onTapCard: C,
         actionMenu: I,
         showOpaqueBackground: E = !1,
-        hideRoleTag: v = !1,
-        lineClamp: b = 1,
+        hideRoleTag: b = !1,
+        lineClamp: v = 1,
         cardWidth: T = 332,
-        cardHeight: y,
-        thumbnailHeight: S = 187,
+        cardHeight: S,
+        thumbnailHeight: y = 187,
         descriptionTextVariant: N = "text-sm/normal",
         isDraft: j = !1
     } = e, L = (0, s.Ld)(), R = (0, i.jsxs)(i.Fragment, {
@@ -100,7 +100,7 @@ function p(e) {
                 src: t,
                 className: _.K_,
                 style: {
-                    height: S
+                    height: y
                 }
             })
         }), (0, i.jsxs)("div", {
@@ -117,13 +117,13 @@ function p(e) {
                     children: (0, i.jsx)(o.A, {
                         variant: N,
                         color: "text-muted",
-                        lineClamp: b,
+                        lineClamp: v,
                         text: a
                     })
                 }), A && (0, i.jsx)(h, {
                     onShowFullDescription: x,
                     variant: N
-                }), v || null == p || "" === p.name ? null : (0, i.jsxs)(i.Fragment, {
+                }), b || null == p || "" === p.name ? null : (0, i.jsxs)(i.Fragment, {
                     children: [(0, i.jsx)(l.hKd, {
                         size: 16
                     }), (0, i.jsx)(c.A, {
@@ -159,7 +159,7 @@ function p(e) {
     }) : (0, i.jsx)("div", {
         style: {
             width: T,
-            height: y
+            height: S
         },
         children: (0, i.jsx)(l.sqX, {
             tag: "article",

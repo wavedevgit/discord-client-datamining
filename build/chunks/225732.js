@@ -42,8 +42,8 @@ var a = n(627968),
     F = n(939764),
     W = n(277089),
     U = n(611656),
-    Y = n(459746),
-    B = n(503364),
+    B = n(459746),
+    Y = n(503364),
     H = n(305080),
     z = n(941568),
     K = n(814698),
@@ -116,13 +116,13 @@ function eh(e) {
                 className: eu.xx,
                 children: [(0, a.jsx)("div", {
                     className: eu.bb,
-                    children: (0, a.jsx)(Y.A, {
+                    children: (0, a.jsx)(B.A, {
                         game: t,
                         application: n,
                         className: eu.wm,
-                        size: Y.w.LARGE
+                        size: B.w.LARGE
                     })
-                }), (0, a.jsx)(B.A, {
+                }), (0, a.jsx)(Y.A, {
                     applicationId: n.id,
                     className: eu.Gg,
                     trackAction: s
@@ -575,8 +575,8 @@ function eC(e) {
     } = (0, A.Ay)(v.A.GAME_PROFILE), G = (0, C.h)(t), w = (0, D.s)(t), {
         data: P
     } = (0, S.k)(t), V = P?.supplementalData ?? null, U = V?.name ?? P?.name ?? G?.name ?? "", {
-        hasAlreadyLinked: Y,
-        canStartAuthorization: B,
+        hasAlreadyLinked: B,
+        canStartAuthorization: Y,
         fetched: z,
         startAuthorization: K,
         connectionApp: J
@@ -637,8 +637,8 @@ function eC(e) {
         ea = l.useMemo(() => ({
             application: G,
             isTwoColumn: m,
-            canStartAuthorization: B,
-            hasAlreadyLinked: Y,
+            canStartAuthorization: Y,
+            hasAlreadyLinked: B,
             fetchedAuthorization: z,
             startAuthorization: K,
             connectionApp: J,
@@ -646,7 +646,7 @@ function eC(e) {
             isMember: $,
             socialLayerStorefrontRecommendationsData: Q,
             closeModal: en
-        }), [G, m, B, Y, z, K, J, X, $, Q, en]),
+        }), [G, m, Y, B, z, K, J, X, $, Q, en]),
         el = l.useCallback(() => {
             c(), (0, k.closeUserProfileModal)()
         }, [c]),

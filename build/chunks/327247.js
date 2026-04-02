@@ -22,11 +22,11 @@ var i = n(627968),
     C = n(710969),
     I = n(92246),
     E = n(792620),
-    v = n(453384),
-    b = n(201805),
+    b = n(453384),
+    v = n(201805),
     T = n(212614),
-    y = n(79545),
-    S = n(646764),
+    S = n(79545),
+    y = n(646764),
     N = n(398025),
     j = n(545986),
     L = n(654487),
@@ -41,7 +41,7 @@ function D(e) {
         location: n,
         isInteracting: r,
         contentPosition: E,
-        sourceQuestContent: b
+        sourceQuestContent: v
     } = e, D = a.useRef(null), {
         ref: U,
         scrollHeight: B
@@ -57,7 +57,7 @@ function D(e) {
     }), H = (0, C.Ic)(t), V = (0, A.In)(t), q = (0, I.mq)(t.config), W = (0, I.mH)(t.config), z = t.userStatus?.enrolledAt != null, Y = t.userStatus?.completedAt != null, Q = t.userStatus?.claimedAt != null, K = (0, I.ks)(t.config), J = (0, I._Z)(t.config), {
         completedRatio: X,
         completedRatioDisplay: Z
-    } = (0, A.O9)(t), $ = (0, g.gj)(t, b, _.Ob.QuestEmbed, D), ee = (0, y.Pd)(t), et = a.useMemo(() => Q && K ? R.intl.format(R.t["8Op4c4"], {
+    } = (0, A.O9)(t), $ = (0, g.gj)(t, v, _.Ob.QuestEmbed, D), ee = (0, S.Pd)(t), et = a.useMemo(() => Q && K ? R.intl.format(R.t["8Op4c4"], {
         balanceHook: () => (0, i.jsxs)(k, {
             questId: t.id,
             children: [(0, i.jsx)(m.A, {
@@ -99,9 +99,9 @@ function D(e) {
             questContent: n,
             questContentPosition: E,
             questContentCTA: f.Cy.LEARN_MORE,
-            sourceQuestContent: b
+            sourceQuestContent: v
         })
-    }, [t.id, n, E, b]), er = (0, c.bG)([h.A], () => null != h.A.questEnrollmentBlockedUntil, []), el = p.t.useConfig({
+    }, [t.id, n, E, v]), er = (0, c.bG)([h.A], () => null != h.A.questEnrollmentBlockedUntil, []), el = p.t.useConfig({
         location: L.rE.EMBED_DESKTOP
     });
     return (0, i.jsxs)("div", {
@@ -124,26 +124,26 @@ function D(e) {
                         loop: !1,
                         autoplay: !1,
                         shouldAnimate: !ei
-                    }), (0, i.jsx)(v.A, {
+                    }), (0, i.jsx)(b.A, {
                         size: 76,
                         percentComplete: X,
                         percentCompleteText: r && !H ? Z : void 0,
-                        children: (0, i.jsx)(S.A, {
+                        children: (0, i.jsx)(y.A, {
                             quest: t,
                             questContent: n,
                             autoplay: r,
                             lazyLoad: !0,
                             fullWidth: !0,
-                            sourceQuestContent: b
+                            sourceQuestContent: v
                         })
                     })]
-                }) : (0, i.jsx)(S.A, {
+                }) : (0, i.jsx)(y.A, {
                     quest: t,
                     autoplay: r,
                     questContent: n,
                     className: w.eB,
                     lazyLoad: !0,
-                    sourceQuestContent: b
+                    sourceQuestContent: v
                 })]
             }), (0, i.jsxs)("div", {
                 ref: U,
@@ -181,7 +181,7 @@ function D(e) {
                     text: R.intl.string(R.t.V293qn)
                 }), (0, i.jsx)(d.$nd, {
                     variant: "primary",
-                    onClick: () => (0, j.m6)(t, n, b),
+                    onClick: () => (0, j.m6)(t, n, v),
                     text: R.intl.string(R.t.vY9GgG)
                 })]
             }) : (0, i.jsxs)(d.e2v, {
@@ -193,17 +193,17 @@ function D(e) {
                     text: R.intl.string(R.t.LLLLPD),
                     fullWidth: !0,
                     onClick: ea
-                }), el.enabled && (ee === y.UA.UNENROLLED || ee === y.UA.ENROLLED) && el.enabledQuestStates.has(ee) ? (0, i.jsx)(T.A, {
+                }), el.enabled && (ee === S.UA.UNENROLLED || ee === S.UA.ENROLLED) && el.enabledQuestStates.has(ee) ? (0, i.jsx)(T.A, {
                     quest: t,
-                    surface: y.V3.QUEST_EMBED,
+                    surface: S.V3.QUEST_EMBED,
                     analyticsCtxQuestContent: n,
-                    analyticsCtxSourceQuestContent: b,
+                    analyticsCtxSourceQuestContent: v,
                     analyticsCtxQuestContentPosition: E
                 }) : (0, i.jsx)(O, {
                     quest: t,
                     progressState: V,
                     questContent: n,
-                    sourceQuestContent: b,
+                    sourceQuestContent: v,
                     questContentPosition: E
                 })]
             })
@@ -231,7 +231,7 @@ function O(e) {
         questContent: a,
         questContentPosition: r,
         sourceQuestContent: l
-    } = e, s = (0, c.bG)([h.A], () => h.A.isEnrolling(t.id)), o = (0, E.vv)(t), u = (0, E.Cr)(t), _ = (0, C.Ic)(t), m = (0, b._c)({
+    } = e, s = (0, c.bG)([h.A], () => h.A.isEnrolling(t.id)), o = (0, E.vv)(t), u = (0, E.Cr)(t), _ = (0, C.Ic)(t), m = (0, v._c)({
         progressState: n,
         quest: t,
         questContent: a,
