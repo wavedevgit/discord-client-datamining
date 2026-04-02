@@ -23,8 +23,8 @@ var i = n(627968),
     C = n(773669),
     I = n(961350),
     E = n(734057),
-    b = n(994500),
-    v = n(967198),
+    v = n(994500),
+    b = n(967198),
     T = n(287809),
     y = n(486020),
     S = n(204776),
@@ -50,7 +50,7 @@ function U(e) {
     } = e, {
         name: f,
         bot: C
-    } = t = (0, P.b)(t), b = C?.id, v = (0, h.Ag)(t), T = y.Ay.getApplicationIconURL({
+    } = t = (0, P.b)(t), v = C?.id, b = (0, h.Ag)(t), T = y.Ay.getApplicationIconURL({
         id: t.id,
         icon: t.icon,
         bot: C
@@ -71,9 +71,9 @@ function U(e) {
         },
         applicationId: t.id,
         botUserId: C?.id
-    }), Y = null != b && v && z, Q = q && v, K = (0, x.e)(t), J = (0, M.F)(t), X = (0, M.t)(t), Z = a.useMemo(() => {
+    }), Y = null != v && b && z, Q = q && b, K = (0, x.e)(t), J = (0, M.F)(t), X = (0, M.t)(t), Z = a.useMemo(() => {
         let e = [];
-        return v ? K ? e.push({
+        return b ? K ? e.push({
             label: k.intl.string(k.t.RscU7I),
             trackingArea: R.kY.PLAY,
             onClick() {
@@ -102,14 +102,14 @@ function U(e) {
             onClick() {
                 (0, m.Q)({
                     appId: t.id,
-                    botId: b,
+                    botId: v,
                     analyticsLocations: U,
                     customId: r,
                     referrerId: O
                 })
             }
         })) : null != X && e.push(X), e
-    }, [v, X, K, t.id, Q, Y, H, V, F, W, r, O, U, b]), $ = v ? (0, i.jsx)(G, {
+    }, [b, X, K, t.id, Q, Y, H, V, F, W, r, O, U, v]), $ = b ? (0, i.jsx)(G, {
         app: t
     }) : (0, i.jsx)(B, {
         app: t
@@ -180,12 +180,12 @@ function G(e) {
     } = e, {
         tags: n,
         maxParticipants: r = 0
-    } = t, d = (0, s.bG)([v.A], () => v.A.getGuildId() ?? void 0, []), c = (0, f.s)(t.id), u = (0, s.yK)([T.default, b.A], () => {
+    } = t, d = (0, s.bG)([b.A], () => b.A.getGuildId() ?? void 0, []), c = (0, f.s)(t.id), u = (0, s.yK)([T.default, v.A], () => {
         let e = [];
         for (let [t, n] of c.entries()) {
             if (t >= 5) break;
             let i = T.default.getUser(n.author_id),
-                a = b.A.isFriend(n.author_id);
+                a = v.A.isFriend(n.author_id);
             null != i && a && e.push(i)
         }
         return e

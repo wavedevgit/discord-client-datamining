@@ -86,7 +86,7 @@ let y = s.memo(s.forwardRef((e, t) => {
                                 size: "md",
                                 fullWidth: V,
                                 hasActivePromotion: !!l,
-                                subscriptionTier: w ? v.pe.NONE : s,
+                                subscriptionTier: w && null == s ? v.pe.NONE : s,
                                 buttonTextOverride: w ? I.intl.string(I.t["2pG5Ga"]) : void 0
                             }), !V && (0, i.jsx)(T.A, {
                                 variant: "secondary",

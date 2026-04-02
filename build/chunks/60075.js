@@ -1,6 +1,6 @@
 /** chunk id: 60075 params = (module,exports,require) **/
 l.d(t, {
-    D5: () => f,
+    D5: () => g,
     Ec: () => b,
     KF: () => T,
     LF: () => m,
@@ -11,7 +11,7 @@ l.d(t, {
     t$: () => p,
     yJ: () => C,
     yi: () => S,
-    z_: () => _
+    z_: () => E
 });
 var a = l(627968),
     n = l(64700),
@@ -133,7 +133,7 @@ function b() {
         })
     })
 }
-let y = [{
+let f = [{
         id: "avatar_decoration",
         label: "Avatar Decoration",
         value: c.e.AVATAR_DECORATION_MODAL_UPSELL
@@ -146,7 +146,7 @@ let y = [{
         label: "Nameplate",
         value: c.e.NAMEPLATE_MODAL_UPSELL
     }],
-    g = {
+    y = {
         [c.e.AVATAR_DECORATION_MODAL_UPSELL]: {
             title: "Express Yourself with Avatar Decorations",
             body: "Stand out with unique avatar decorations exclusive to Nitro subscribers.",
@@ -164,13 +164,13 @@ let y = [{
         }
     };
 
-function f() {
+function g() {
     let [e, t] = n.useState(c.e.AVATAR_DECORATION_MODAL_UPSELL), r = n.useCallback(() => {
         let {
             title: t,
             body: n,
             glowUp: r
-        } = g[e];
+        } = y[e];
         (0, i.mMO)(async () => {
             let {
                 default: i
@@ -193,7 +193,7 @@ function f() {
                 placeholder: "Select type",
                 onSelectionChange: e => t(e),
                 value: e,
-                options: y,
+                options: f,
                 selectionMode: "single",
                 fullWidth: !0
             })
@@ -215,7 +215,7 @@ let v = [{
     value: u.qlD
 }];
 
-function _() {
+function E() {
     let [e, t] = n.useState(100), r = n.useCallback(() => {
         (0, i.mMO)(async () => {
             let {
@@ -249,7 +249,7 @@ function _() {
         })]
     })
 }
-let E = [{
+let _ = [{
     id: "avatar",
     label: "Avatar",
     value: d.HL.AVATAR
@@ -281,7 +281,7 @@ function C() {
                 placeholder: "Select type",
                 onSelectionChange: e => t(e),
                 value: e,
-                options: E,
+                options: _,
                 selectionMode: "single",
                 fullWidth: !0
             })

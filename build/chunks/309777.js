@@ -9,8 +9,8 @@ var l = a(627968),
     r = a(397927),
     o = a(442433),
     u = a(429913),
-    c = a(713654),
-    d = a(769015),
+    d = a(713654),
+    c = a(769015),
     m = a(145497),
     h = a(734057),
     p = a(540999),
@@ -23,8 +23,8 @@ var l = a(627968),
     _ = a(372684),
     C = a(399925),
     k = a(718812),
-    N = a(794905),
-    y = a(429364),
+    y = a(794905),
+    N = a(429364),
     E = a(696016),
     A = a(985018),
     S = a(233442);
@@ -42,25 +42,25 @@ function w(e) {
         setApplicationAudioEnabled: U,
         soundboardAudioEnabled: D,
         setSoundboardAudioEnabled: P,
-        pause: z,
-        clipName: $,
+        pause: $,
+        clipName: z,
         setClipName: G,
         isTemporary: B,
         setIsTemporary: V
-    } = (0, y.T)(), F = (0, u.h)(t.applicationId), K = (0, i.bG)([j.A], () => j.A.isClipExporting(t.id)), {
+    } = (0, N.T)(), F = (0, u.h)(t.applicationId), K = (0, i.bG)([j.A], () => j.A.isClipExporting(t.id)), {
         onShareClick: H
-    } = (0, N.A)(w), W = (0, i.bG)([p.A], () => p.A.isDeveloper), J = (0, k.h)(t), X = n.useCallback(async () => {
+    } = (0, y.A)(w), W = (0, i.bG)([p.A], () => p.A.isDeveloper), J = (0, k.h)(t), X = n.useCallback(async () => {
         await (0, C.w7)(t.id), V(!1)
-    }, [t.id, V]), q = (0, i.yK)([g.default], () => t.users.map(g.default.getUser).filter(x.Vq)), Q = n.useMemo(() => new Date(b.default.extractTimestamp(t.id)), [t.id]), Y = (0, i.bG)([f.A], () => t.version >= 3 && null != t.guildId ? f.A.getGuild(t.guildId) : null), Z = (0, i.bG)([h.A], () => t.version >= 3 && null != t.channelId ? h.A.getChannel(t.channelId) : null), ee = null != Z ? (0, c.gU)(Z, Y) : null;
+    }, [t.id, V]), q = (0, i.yK)([g.default], () => t.users.map(g.default.getUser).filter(x.Vq)), Q = n.useMemo(() => new Date(b.default.extractTimestamp(t.id)), [t.id]), Y = (0, i.bG)([f.A], () => t.version >= 3 && null != t.guildId ? f.A.getGuild(t.guildId) : null), Z = (0, i.bG)([h.A], () => t.version >= 3 && null != t.channelId ? h.A.getChannel(t.channelId) : null), ee = null != Z ? (0, d.gU)(Z, Y) : null;
     return (0, l.jsxs)("div", {
         className: S.XV,
         children: [(0, l.jsxs)("div", {
             className: S.eW,
             children: [(0, l.jsxs)("div", {
                 className: S.VW,
-                children: [(0, l.jsx)(d.A, {
+                children: [(0, l.jsx)(c.A, {
                     game: F,
-                    size: d.M.XSMALL
+                    size: c.M.XSMALL
                 }), (0, l.jsx)(r.Heading, {
                     variant: "heading-md/medium",
                     color: "text-default",
@@ -117,7 +117,7 @@ function w(e) {
                     onChange: e => {
                         "" === e ? G(void 0) : G(e)
                     },
-                    value: $,
+                    value: z,
                     minLength: E.U_,
                     maxLength: E.mk,
                     placeholder: J
@@ -211,7 +211,7 @@ function w(e) {
                     disabled: K,
                     variant: "secondary",
                     onClick: function(e) {
-                        z(), (0, o.L3)(e, async () => {
+                        $(), (0, o.L3)(e, async () => {
                             let {
                                 default: e
                             } = await a.e("80628").then(a.bind(a, 183903));

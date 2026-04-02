@@ -26,10 +26,10 @@ let p = () => (0, a.jsx)("img", {
             showNotificationBadge: h,
             onClick: x,
             onMouseDown: b,
-            disabled: y,
-            isInModalOverlay: g,
-            className: f
-        } = e, [v, _] = (0, n.useState)(!1), E = (0, n.useMemo)(() => m === s.k.SELECTED ? c.wH : v ? c.mr : c.Ay, [m, v]), [C, j] = (0, n.useState)(!1), [S, T] = (0, n.useState)(!1), [A, P] = (0, n.useState)(2700), k = null === r;
+            disabled: f,
+            isInModalOverlay: y,
+            className: g
+        } = e, [v, E] = (0, n.useState)(!1), _ = (0, n.useMemo)(() => m === s.k.SELECTED ? c.wH : v ? c.mr : c.Ay, [m, v]), [C, j] = (0, n.useState)(!1), [S, T] = (0, n.useState)(!1), [A, P] = (0, n.useState)(2700), k = null === r;
         (0, n.useEffect)(() => {
             k && !C && (j(!0), setTimeout(() => {
                 T(!0)
@@ -51,18 +51,18 @@ let p = () => (0, a.jsx)("img", {
         return (0, a.jsx)(o.DUT, {
             onClick: I ? void 0 : x,
             className: i()(c.vk, {
-                [c.r9]: y
+                [c.r9]: f
             }),
             id: l ?? "balance-widget-pill",
             children: (0, a.jsxs)("span", {
                 onMouseDown: b,
-                onMouseEnter: y ? void 0 : () => _(!0),
-                onMouseLeave: y ? void 0 : () => _(!1),
+                onMouseEnter: f ? void 0 : () => E(!0),
+                onMouseLeave: f ? void 0 : () => E(!1),
                 ref: t,
-                className: i()(c.kL, E, f, {
+                className: i()(c.kL, _, g, {
                     [c.En]: I,
-                    [c.dA]: g,
-                    [c.r9]: y
+                    [c.dA]: y,
+                    [c.r9]: f
                 }),
                 children: [(0, a.jsx)("div", {
                     className: i()(c.hr, I ? c.nr : void 0),

@@ -9,8 +9,8 @@ var l = a(627968),
     r = a(372684),
     o = a(563076),
     u = a(516094),
-    c = a(584794),
-    d = a(429364),
+    d = a(584794),
+    c = a(429364),
     m = a(14363);
 
 function h(e) {
@@ -26,7 +26,7 @@ function h(e) {
         videoPlayerRef: x,
         videoURL: b,
         audioTracks: j
-    } = (0, d.T)(), _ = a.type === r.nQ.SCREENSHOT;
+    } = (0, c.T)(), _ = a.type === r.nQ.SCREENSHOT;
     n.useEffect(() => {
         if (!_) return document.addEventListener("keydown", e), () => document.removeEventListener("keydown", e);
 
@@ -36,7 +36,7 @@ function h(e) {
             if (null == t) return;
             let a = x.current?.videoElement;
             if (null == a) return;
-            let l = (0, c.A)(a.duration, e.shiftKey),
+            let l = (0, d.A)(a.duration, e.shiftKey),
                 n = !1;
             switch (e.key) {
                 case " ":
@@ -82,10 +82,10 @@ function h(e) {
             })
         })
     });
-    let N = null == b || t !== i.ip4.ENTERED;
+    let y = null == b || t !== i.ip4.ENTERED;
     return (0, l.jsx)("div", {
         className: m.OJ,
-        children: N ? (0, l.jsx)("div", {
+        children: y ? (0, l.jsx)("div", {
             className: m.dc,
             children: (0, l.jsx)(i.y$y, {})
         }) : (0, l.jsxs)("div", {

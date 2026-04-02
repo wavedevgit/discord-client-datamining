@@ -1,7 +1,7 @@
 /** chunk id: 94836 params = (module,exports,require) **/
 n.d(t, {
     A: () => E,
-    a: () => N
+    a: () => b
 });
 var a = n(627968),
     l = n(64700),
@@ -182,11 +182,11 @@ let C = l.memo(function(e) {
         })
     });
 
-function N(e) {
+function b(e) {
     let {
         detectedGame: t,
         trackAction: n
-    } = e, [i, r] = l.useState(0), [c, m] = l.useState(null), [h, p] = l.useState(t.artwork), [v, A] = l.useState(t.screenshots), E = l.useRef(null), N = l.useRef(null), b = (0, s.bG)([d.A], () => d.A.useReducedMotion);
+    } = e, [i, r] = l.useState(0), [c, m] = l.useState(null), [h, p] = l.useState(t.artwork), [v, A] = l.useState(t.screenshots), E = l.useRef(null), b = l.useRef(null), N = (0, s.bG)([d.A], () => d.A.useReducedMotion);
     (h !== t.artwork || v !== t.screenshots) && (p(t.artwork), A(t.screenshots), r(0));
     let S = l.useMemo(() => {
             let e = (t.trailers ?? []).map(e => {
@@ -210,9 +210,9 @@ function N(e) {
             })), ...n]
         }, [t.trailers, t.artwork, t.screenshots]),
         T = S.length > 0 ? Math.min(i, S.length - 1) : 0,
-        y = S[T],
-        L = y?.type === "VIDEO",
-        k = l.useCallback(e => {
+        k = S[T],
+        L = k?.type === "VIDEO",
+        y = l.useCallback(e => {
             let t = S[T],
                 n = S[e];
             t?.type === "IMAGE" && n?.type === "IMAGE" && t.url !== n.url ? m(t.url) : m(null), r(e)
@@ -235,7 +235,7 @@ function N(e) {
                         autoPlay: !!n && a,
                         autoMute: !n || l,
                         initialTimeSec: n ? i : void 0,
-                        videoRef: N
+                        videoRef: b
                     }
                 }
                 return e
@@ -247,7 +247,7 @@ function N(e) {
                 location: "GameProfileMedia",
                 onIndexChange: r,
                 onClose: () => {
-                    let e = N.current,
+                    let e = b.current,
                         t = G.current,
                         n = null != e ? !e.paused : a;
                     e?.pause(), null != t && null != e ? (t.setTime(e.currentTime, !1), n && t.setPlay(!0), t.setMuted(e.muted)) : n && t?.setPlay(!0), R(n)
@@ -265,17 +265,17 @@ function N(e) {
         children: [L ? (0, a.jsx)("div", {
             className: j.ND,
             children: (0, a.jsx)(I, {
-                item: y,
-                reducedMotion: b,
+                item: k,
+                reducedMotion: N,
                 videoRef: E,
                 mediaPlayerRef: G,
                 onPlay: w,
                 onPause: P,
                 onFullscreenChange: D
-            }, `${T}-${y.url}`)
+            }, `${T}-${k.url}`)
         }) : (0, a.jsxs)("div", {
             className: j.wp,
-            children: [null != c && !b && (0, a.jsx)("div", {
+            children: [null != c && !N && (0, a.jsx)("div", {
                 className: j.Jy,
                 onAnimationEnd: V,
                 children: (0, a.jsx)("img", {
@@ -283,16 +283,18 @@ function N(e) {
                     className: j.Db,
                     alt: ""
                 })
-            }, c), (0, a.jsx)(o.DUT, {
+            }, c), (0, a.jsx)("div", {
+                className: j.QN
+            }), (0, a.jsx)(o.DUT, {
                 className: j.gv,
                 onClick: M,
                 children: (0, a.jsx)("img", {
-                    src: y.url,
+                    src: k.url,
                     className: j.c8,
                     alt: _.intl.formatToPlainString(_.t.COYYrn, {
                         game: t.name
                     })
-                }, y.url)
+                }, k.url)
             })]
         }), (0, a.jsx)(u.A, {
             gap: "xs",
@@ -302,7 +304,7 @@ function N(e) {
                 index: n,
                 isPlaying: O,
                 isSelected: n === T,
-                onSelect: k,
+                onSelect: y,
                 gameName: t.name
             }, `${n}-${e.url}`))
         })]

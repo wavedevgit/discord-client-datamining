@@ -1,6 +1,6 @@
 /** chunk id: 890908 params = (module,exports,require) **/
 l.r(t), l.d(t, {
-    RevenuePlaygroundCollectionId: () => E,
+    RevenuePlaygroundCollectionId: () => _,
     identityCollection: () => A,
     nitroCollection: () => T,
     paymentsCollection: () => j,
@@ -20,24 +20,24 @@ var a, n = l(397927),
     h = l(526838),
     x = l(886532),
     b = l(358172),
-    y = l(931433),
-    g = l(391622),
-    f = l(203484),
+    f = l(931433),
+    y = l(391622),
+    g = l(203484),
     v = l(445736),
-    _ = l(504312),
-    E = ((a = {}).PAYMENTS = "payments", a.VIRTUAL_CURRENCY = "virtual-currency", a.NITRO = "nitro", a.IDENTITY = "identity", a);
+    E = l(504312),
+    _ = ((a = {}).PAYMENTS = "payments", a.VIRTUAL_CURRENCY = "virtual-currency", a.NITRO = "nitro", a.IDENTITY = "identity", a);
 let C = ["Revenue Storybook", "Revenue Playground"],
     j = {
         id: "payments",
         name: "Payments",
-        groups: [s._, _.Y, p.U, v.Wo, r.v, u.Gu, f.O],
+        groups: [s._, E.Y, p.U, v.Wo, r.v, u.Gu, g.O],
         tags: C,
         IconComponent: n.d2Y
     },
     S = {
         id: "virtual-currency",
         name: "Virtual Currency",
-        groups: [o.h2, i.c$, y.V, g.e],
+        groups: [o.h2, i.c$, f.V, y.e],
         tags: C,
         IconComponent: n.Cp8
     },

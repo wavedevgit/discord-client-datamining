@@ -4,8 +4,8 @@ a.d(t, {
 }), a(321073);
 var i = a(626584),
     l = a(430452),
-    s = a(723702),
-    o = a(837921),
+    o = a(723702),
+    s = a(837921),
     n = a(274372),
     d = a(572164),
     r = a(846126),
@@ -46,7 +46,7 @@ class f {
     }
     async maybeSetupMLModulePrefetchModels() {
         if (!(this.isNativeModuleLoaded() || this.isNativeModuleLoading()) && !__OVERLAY__) {
-            if (!((0, s.isWindows)() || (0, s.isMac)())) {
+            if (!((0, o.isWindows)() || (0, o.isMac)())) {
                 this.state.nativeMLModuleState = r.Q.UNSUPPORTED;
                 return
             }
@@ -59,8 +59,8 @@ class f {
     }
     async loadMLNativeModule() {
         try {
-            await o.Ay.ensureModule("discord_ml");
-            let e = o.Ay.requireModule("discord_ml");
+            await s.Ay.ensureModule("discord_ml");
+            let e = s.Ay.requireModule("discord_ml");
             await e.setupResources(), await e.setMLResultCallback(e => {
                 let t;
                 try {
@@ -80,9 +80,10 @@ class f {
                 emotionClassifier: !0,
                 wakeWordDetector: !0,
                 yellDetector: !0,
-                whisperTranscription: !0
+                whisperTranscription: !0,
+                laughterDetector: !0
             };
-            t.setClipsMLPipelineTypeEnabled("emotion_classifier", a.emotionClassifier), t.setClipsMLPipelineTypeEnabled("wake_word_detector", a.wakeWordDetector), t.setClipsMLPipelineTypeEnabled("yell_detector", a.yellDetector), t.setClipsMLPipelineTypeEnabled("whisper_transcription", a.whisperTranscription), h.info("ML native module loaded successfully")
+            t.setClipsMLPipelineTypeEnabled("emotion_classifier", a.emotionClassifier), t.setClipsMLPipelineTypeEnabled("wake_word_detector", a.wakeWordDetector), t.setClipsMLPipelineTypeEnabled("yell_detector", a.yellDetector), t.setClipsMLPipelineTypeEnabled("whisper_transcription", a.whisperTranscription), t.setClipsMLPipelineTypeEnabled("laughter_shouting", a.laughterDetector), h.info("ML native module loaded successfully")
         } catch (e) {
             h.warn(`Failed to load Clips ML module: ${e.message}`), this.state.nativeMLModuleState = r.Q.FAILED
         }
@@ -110,7 +111,7 @@ class f {
         return h.info("Loaded mock ML catalog with models:", Object.keys(e.models)), Promise.resolve(e)
     }
     async scanModelState(e) {
-        if (!o.Ay.canCheckMLModelFilesExist()) return;
+        if (!s.Ay.canCheckMLModelFilesExist()) return;
         let t = Object.keys(e.models).map(e => ({
             id: e,
             fileName: e
@@ -119,7 +120,7 @@ class f {
                 id: e,
                 exists: a
             }
-            of(await o.Ay.checkMLModelFilesExist(t))) this.state.modelState[e] = {
+            of(await s.Ay.checkMLModelFilesExist(t))) this.state.modelState[e] = {
             status: a ? r.D.DOWNLOADED : r.D.MISSING
         }
     }
@@ -142,15 +143,15 @@ class f {
             url: t,
             modelId: a,
             fileName: i
-        } = e, l = this.state.modelState[a], s = this.activeDownloads.get(a);
-        if (null != s) return s;
+        } = e, l = this.state.modelState[a], o = this.activeDownloads.get(a);
+        if (null != o) return o;
         if (l?.status === r.D.DOWNLOADED) return Promise.resolve();
         if (l?.status === r.D.DOWNLOADING) return Promise.reject(Error("ML model is downloading but not in active downloads map"));
         this.state.modelState[a] = {
             status: r.D.DOWNLOADING,
             downloadedBytes: 0
         };
-        let n = o.Ay.downloadMLModelFile(t, i, e => {
+        let n = s.Ay.downloadMLModelFile(t, i, e => {
             let {
                 downloadedBytes: t,
                 totalBytes: i

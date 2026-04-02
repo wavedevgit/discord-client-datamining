@@ -75,7 +75,7 @@ function _(e) {
             },
             sourceQuestContent: p
         })
-    }, [v, t, f, _, n, C, p]), b = r.useCallback(() => {
+    }, [v, t, f, _, n, C, p]), N = r.useCallback(() => {
         null != t.current && C({
             questId: v,
             event: m.HAw.QUEST_VIDEO_PROGRESSED,
@@ -88,7 +88,7 @@ function _(e) {
             },
             sourceQuestContent: p
         })
-    }, [v, t, _, n, C, f, p]), N = r.useCallback(e => {
+    }, [v, t, _, n, C, f, p]), O = r.useCallback(e => {
         null != t.current && C({
             questId: v,
             event: m.HAw.QUEST_VIDEO_RESUMED,
@@ -101,7 +101,7 @@ function _(e) {
             },
             sourceQuestContent: p
         })
-    }, [v, t, _, n, C, f, p]), O = r.useCallback(e => {
+    }, [v, t, _, n, C, f, p]), b = r.useCallback(e => {
         null != t.current && null != e && C({
             questId: v,
             event: m.HAw.QUEST_VIDEO_PAUSED,
@@ -237,7 +237,7 @@ function _(e) {
             e.off(s.Ay.Events.ERROR, t)
         }
     }, [A, n, S, V]);
-    let Q = r.useCallback(e => {
+    let j = r.useCallback(e => {
             null != t.current && C({
                 questId: v,
                 event: e ? m.HAw.QUEST_VIDEO_FULLSCREEN_ENTERED : m.HAw.QUEST_VIDEO_FULLSCREEN_EXITED,
@@ -249,7 +249,7 @@ function _(e) {
                 sourceQuestContent: p
             })
         }, [v, t, _, n, C, f, p]),
-        j = r.useCallback(e => {
+        Q = r.useCallback(e => {
             null != t.current && C({
                 questId: v,
                 event: m.HAw.QUEST_VIDEO_VOLUME_CHANGED,
@@ -266,16 +266,16 @@ function _(e) {
         trackQuestVideoLoadingStarted: I,
         trackQuestVideoLoadingEnded: y,
         trackQuestVideoTimeToFirstFrame: R,
-        trackQuestVideoProgressed: b,
-        trackQuestVideoResumed: N,
-        trackQuestVideoPaused: O,
+        trackQuestVideoProgressed: N,
+        trackQuestVideoResumed: O,
+        trackQuestVideoPaused: b,
         trackQuestVideoFocusChange: L,
         trackQuestContentClick: P,
         trackQuestVideoBufferingStarted: M,
         trackQuestVideoBufferingEnded: k,
         trackQuestVideoSegmentWatched: w,
-        trackQuestVideoFullscreenChanged: Q,
+        trackQuestVideoFullscreenChanged: j,
         trackQuestVideoError: V,
-        trackQuestVideoVolumeChanged: j
+        trackQuestVideoVolumeChanged: Q
     }
 }

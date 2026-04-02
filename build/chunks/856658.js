@@ -36,16 +36,16 @@ let f = {
             index: I
         } = n, {
             completedRatio: y
-        } = (0, d.O9)(p), [R, b] = s.useState(!1), N = T - E.Ue, O = t >= N ? Math.min(1, (t - N) / (D - N)) : 0, L = 0 === I && y < 1, {
+        } = (0, d.O9)(p), [R, N] = s.useState(!1), O = T - E.Ue, b = t >= O ? Math.min(1, (t - O) / (D - O)) : 0, L = 0 === I && y < 1, {
             fill: M
         } = (0, o.zhh)({
-            fill: 100 * O,
+            fill: 100 * b,
             config: f,
             onRest: () => {
-                O <= 0 && b(!1)
+                b <= 0 && N(!1)
             },
             onStart: () => {
-                b(!0)
+                N(!0)
             }
         });
         return (0, r.jsxs)(l.animated.div, {

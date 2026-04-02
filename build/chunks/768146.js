@@ -17,8 +17,8 @@ var r = n(627968),
     d = n(435371),
     m = n(397927),
     p = n(985018),
-    h = n(246878);
-let f = "-:--",
+    f = n(246878);
+let h = "-:--",
     x = 1500,
     E = {
         [u.Q6.PLAYING]: {
@@ -47,21 +47,21 @@ function b(e) {
     let {
         current: t,
         duration: n
-    } = e, l = null != t ? (0, c.rB)(t) : f, a = null != n ? (0, c.rB)(n) : f;
+    } = e, l = null != t ? (0, c.rB)(t) : h, a = null != n ? (0, c.rB)(n) : h;
     return (0, r.jsxs)("div", {
-        className: i()(h.d$, h.jk),
+        className: i()(f.d$, f.jk),
         "data-testid": "discord-web-video-player-duration",
         children: [(0, r.jsx)(m.Text, {
             variant: "text-xs/normal",
-            className: h.Ue,
+            className: f.Ue,
             children: l
         }), (0, r.jsx)(m.Text, {
             variant: "text-xs/normal",
-            className: h.zO,
+            className: f.zO,
             children: "/"
         }), (0, r.jsx)(m.Text, {
             variant: "text-xs/normal",
-            className: h.Ue,
+            className: f.Ue,
             children: a
         })]
     })
@@ -73,7 +73,7 @@ let y = l.forwardRef(function(e, t) {
         visible: a,
         ariaLabel: c,
         active: p,
-        disabled: f,
+        disabled: h,
         tooltipLabel: E,
         tooltipDelayMs: v = x,
         shortcut: b,
@@ -82,16 +82,16 @@ let y = l.forwardRef(function(e, t) {
         "data-testid": C
     } = e, A = e => (0, r.jsx)(m.DUT, {
         ...e,
-        onClick: !0 === f ? void 0 : y,
-        className: i()(h.K5, {
-            [h.Iy]: f
+        onClick: !0 === h ? void 0 : y,
+        className: i()(f.K5, {
+            [f.Iy]: h
         }),
         "aria-label": c,
-        "aria-disabled": f,
+        "aria-disabled": h,
         "data-testid": C,
         innerRef: t,
         children: (0, r.jsx)(s.animated.div, {
-            className: h.K5,
+            className: f.K5,
             style: {
                 opacity: (0, s.to)([l.to({
                     range: [0, 1],
@@ -104,10 +104,10 @@ let y = l.forwardRef(function(e, t) {
             },
             children: (0, r.jsx)(n, {
                 size: g[S],
-                color: !0 !== f ? o.A.colors.WHITE : o.A.colors.TEXT_MUTED,
-                className: i()(h.jk, {
-                    [h.x2]: p,
-                    [h.Wr]: !f
+                color: !0 !== h ? o.A.colors.WHITE : o.A.colors.TEXT_MUTED,
+                className: i()(f.jk, {
+                    [f.x2]: p,
+                    [f.Wr]: !h
                 })
             })
         })

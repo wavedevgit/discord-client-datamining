@@ -9,8 +9,8 @@ var l = a(627968),
     r = a(311907),
     o = a(118356),
     u = a(397927),
-    c = a(287809),
-    d = a(690521),
+    d = a(287809),
+    c = a(690521),
     m = a(562153),
     h = a(372684),
     p = a(429364),
@@ -100,11 +100,11 @@ function b(e) {
             speakingUserIds: s().sortBy(a.speakingUserIds),
             activeSoundboards: s().sortBy(a.activeSoundboards, "soundboardId")
         }
-    }, [j, _]), [k, N] = n.useState(() => C(f)), y = (0, r.cf)([c.default], () => s().pick(c.default.getUsers(), t.users));
+    }, [j, _]), [k, y] = n.useState(() => C(f)), N = (0, r.cf)([d.default], () => s().pick(d.default.getUsers(), t.users));
     return (n.useEffect(() => h({
         onTimeUpdate: e => {
             let t = C(e);
-            N(e => s().isEqual(t, e) ? e : (v.info("Event snapshot changed", {
+            y(e => s().isEqual(t, e) ? e : (v.info("Event snapshot changed", {
                 newEventSnapshot: t,
                 currentEventSnapshot: e
             }), t))
@@ -112,7 +112,7 @@ function b(e) {
     }), [h, C]), null == b) ? null : (0, l.jsxs)("div", {
         className: g.h8,
         children: [i && k.speakingUserIds.map(e => {
-            let a = y[e];
+            let a = N[e];
             if (null == a) return null;
             let n = (0, m.mG)(t.guildId, t.channelId, a);
             return (0, l.jsxs)("div", {
@@ -129,7 +129,7 @@ function b(e) {
                 })]
             }, e)
         }), a && k.activeSoundboards.map(e => {
-            let t = y[e.userId];
+            let t = N[e.userId];
             return null == t ? null : (0, l.jsxs)("div", {
                 className: g.q7,
                 children: [(0, l.jsx)(u.euF, {
@@ -139,7 +139,7 @@ function b(e) {
                 }), null != e.emojiId || null != e.emojiName ? (0, l.jsx)("img", {
                     alt: e.name,
                     className: g.g8,
-                    src: (0, d.Ez)({
+                    src: (0, c.Ez)({
                         id: e.emojiId,
                         name: e.emojiName ?? "",
                         animated: e.emojiAnimated ?? !1

@@ -1,6 +1,6 @@
 /** chunk id: 256467 params = (module,exports,require) **/
 i.r(e), i.d(e, {
-    default: () => O
+    default: () => B
 });
 var s = i(627968),
     r = i(64700),
@@ -124,7 +124,7 @@ function H(t) {
     })
 }
 
-function O(t) {
+function B(t) {
     let {
         guildId: e,
         productId: i,

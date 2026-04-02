@@ -27,9 +27,9 @@ var i = n(627968),
     C = n(290794),
     I = n(789646),
     E = n(985018),
-    b = n(707906);
+    v = n(707906);
 
-function v(e) {
+function b(e) {
     let {
         className: t,
         children: n
@@ -85,7 +85,7 @@ function S(e) {
     } = (0, I.Mg)();
     return (0, i.jsx)(c.DUT, {
         role: "checkbox",
-        className: l()(t, b.Sn),
+        className: l()(t, v.Sn),
         onClick: n,
         "aria-checked": a,
         ref: r ? o : void 0,
@@ -106,7 +106,7 @@ function N(e) {
     } = (0, I.Mg)();
     return (0, i.jsx)(c.DUT, {
         role: "radio",
-        className: l()(t, b.Sn),
+        className: l()(t, v.Sn),
         onClick: a,
         "aria-checked": r,
         tabIndex: s ? r ? 0 : -1 : o ? 0 : -1,
@@ -145,10 +145,10 @@ function j(e) {
         canTapAnswers: !0,
         answersInteraction: f.CQ.LIST
     }, () => ({
-        ContainerComponent: v,
+        ContainerComponent: b,
         answerElementType: 3
     })).otherwise(() => ({
-        ContainerComponent: v,
+        ContainerComponent: b,
         answerElementType: 0
     }));
     return (0, i.jsx)(u, {
@@ -217,7 +217,7 @@ function R(e) {
     } = e, a = (0, g.j)(), r = m.kt.useSetting();
     return (0, i.jsx)(_.Ay, {
         className: n,
-        imageClassName: b.Bw,
+        imageClassName: v.Bw,
         src: null != t.proxy_url && "" !== t.proxy_url ? t.proxy_url : t.url,
         alt: t.description ?? (0, x.Kj)(t.filename),
         responsive: !0,
@@ -319,12 +319,12 @@ function k(e) {
     } = e, r = {
         width: n,
         height: n,
-        background: b.So,
+        background: v.So,
         "aria-hidden": !0
     };
     return t ? (0, i.jsx)(p.A, {
         ...r,
-        foreground: b.dY,
+        foreground: v.dY,
         className: a
     }) : (0, i.jsx)(h.A, {
         ...r,
@@ -339,8 +339,8 @@ function O(e) {
         className: a
     } = e, r = .85 * n;
     return (0, i.jsx)("div", {
-        className: l()(b.kv, {
-            [b.H7]: t
+        className: l()(v.kv, {
+            [v.H7]: t
         }, a),
         style: {
             width: n,

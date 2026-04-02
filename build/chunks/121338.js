@@ -22,8 +22,8 @@ function p(e) {
         transitionState: p
     } = e, {
         components: f,
-        applicationIconURL: h,
-        applicationName: E,
+        applicationIconURL: E,
+        applicationName: h,
         submissionState: I,
         error: T,
         validators: g,
@@ -43,9 +43,9 @@ function p(e) {
             onClose: n,
             children: [(0, r.jsx)(i.rQ0, {
                 leading: (0, r.jsx)(a.euF, {
-                    src: h,
+                    src: E,
                     size: a._3J.SIZE_24,
-                    "aria-label": E,
+                    "aria-label": h,
                     className: m.In
                 }),
                 title: t,
@@ -59,7 +59,7 @@ function p(e) {
                     messageType: a.YCn.WARNING,
                     className: m.$Q,
                     children: u.intl.format(u.t["dSTy/w"], {
-                        applicationName: E
+                        applicationName: h
                     })
                 }), (0, r.jsx)("div", {
                     className: m.dK,

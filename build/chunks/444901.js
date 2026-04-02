@@ -22,9 +22,9 @@ var i = n(627968),
     C = n(768349),
     I = n(985018),
     E = n(772234),
-    b = n(155626);
+    v = n(155626);
 
-function v(e) {
+function b(e) {
     let {
         message: t,
         applicationName: n,
@@ -51,7 +51,7 @@ function v(e) {
                     children: [(0, i.jsx)("img", {
                         alt: I.intl.string(I.t["2B/phM"]),
                         src: a,
-                        className: l()(b.Gt, _.M.XSMALL)
+                        className: l()(v.Gt, _.M.XSMALL)
                     }), (0, i.jsx)(o.Text, {
                         variant: "text-sm/semibold",
                         color: "text-muted",
@@ -73,7 +73,7 @@ function T(e) {
         currentUserId: m,
         launchableAppId: h,
         isEmbeddedApplication: p,
-        tryWithGdnAction: b,
+        tryWithGdnAction: v,
         staticBannerSrc: T,
         onClickContent: y,
         iconSrc: S,
@@ -101,7 +101,7 @@ function T(e) {
                         embedded: p
                     })
                 }
-            }] : null != b && (e = [b], i = !1), e.length > 0)
+            }] : null != v && (e = [v], i = !1), e.length > 0)
             if (!(0, x.p)(t.id, D, n.id, j)) return {
                 actions: [],
                 hasAccountLinkButton: !1
@@ -122,7 +122,7 @@ function T(e) {
             actions: e,
             hasAccountLinkButton: a
         }
-    }, [p, h, b, D, j, n.id, t.id, R, P, L, w]), U = k.some(e => e.trackingArea === u.kY.CLOUD_PLAY);
+    }, [p, h, v, D, j, n.id, t.id, R, P, L, w]), U = k.some(e => e.trackingArea === u.kY.CLOUD_PLAY);
     (0, f.A)(U, L);
     let B = k.length > 0,
         G = a.useMemo(() => (0, i.jsx)(o.Text, {
@@ -132,7 +132,7 @@ function T(e) {
             lineClamp: 3,
             children: (0, A.BE)(t, r, l, m, B)
         }), [t, r, l, m, B]);
-    return 0 === k.length ? (0, i.jsx)(v, {
+    return 0 === k.length ? (0, i.jsx)(b, {
         message: t,
         applicationName: r,
         iconSrc: S,

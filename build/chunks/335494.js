@@ -9,8 +9,8 @@ var l = a(627968),
     r = a(827734),
     o = a(397927),
     u = a(765671),
-    c = a(602674),
-    d = a(696016),
+    d = a(602674),
+    c = a(696016),
     m = a(335416),
     h = a(665083);
 let p = new Map,
@@ -40,13 +40,13 @@ let p = new Map,
                         waveform: a,
                         error: l
                     } = t.data;
-                    null != l ? d.nx.error("Failed to load waveform:", l) : (p.set(e, {
+                    null != l ? c.nx.error("Failed to load waveform:", l) : (p.set(e, {
                         waveform: a
                     }), C(a))
                 };
             return l.addEventListener("message", s), (async () => {
                 try {
-                    let e = (0, c.v)();
+                    let e = (0, d.v)();
                     if (null == e) throw Error("Failed to create audio context");
                     let t = await Promise.all(i.map(t => e.decodeAudioData(t.arrayBuffer.slice(0))));
                     if (n) return;
@@ -65,7 +65,7 @@ let p = new Map,
                         width: b
                     }, s)
                 } catch (e) {
-                    n || d.nx.error("Failed to decode audio:", e)
+                    n || c.nx.error("Failed to decode audio:", e)
                 }
             })(), () => {
                 n = !0, l.removeEventListener("message", s)

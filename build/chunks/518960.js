@@ -16,8 +16,8 @@ var r = n(367513),
     m = n(287809),
     p = n(954571),
     f = n(453771),
-    h = n(927578),
-    E = n(382287),
+    E = n(927578),
+    h = n(382287),
     I = n(652215),
     T = n(381941),
     g = n(788868),
@@ -47,8 +47,8 @@ function x(e, t, n) {
             post_compression_aggregate_file_size: t
         }), (0, o.openUploadError)({
             title: C.intl.string(C.t["/tGlcj"]),
-            help: (0, E.WQ)(r, i),
-            showPremiumUpsell: !(0, h.YE)(r, g.PremiumTypes.TIER_2),
+            help: (0, h.WQ)(r, i),
+            showPremiumUpsell: !(0, E.YE)(r, g.PremiumTypes.TIER_2),
             fileSize: d
         });
         return
@@ -64,7 +64,7 @@ async function O(e, t, n) {
         filesMetadata: s,
         requireConfirm: m = !0,
         isThumbnail: f = !1,
-        origin: h
+        origin: E
     } = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : {};
     if (e.length < 1) return;
     if (null != s && s.length !== e.length) throw Error("Unexpected mismatch between files and file metadata");
@@ -74,7 +74,7 @@ async function O(e, t, n) {
             originalContentType: e.type,
             preCompressionSize: e.size
         }));
-    if (await Promise.resolve(), (0, E.fJ)(O, g)) return void x(t, O);
+    if (await Promise.resolve(), (0, h.fJ)(O, g)) return void x(t, O);
     if (u.A.getUploadCount(t.id, n) + O.length > I.XgB) {
         (0, o.openUploadError)({
             title: C.intl.string(C.t.wOr6hB),
@@ -92,7 +92,7 @@ async function O(e, t, n) {
             file: e,
             platform: _.xz.WEB,
             isThumbnail: f,
-            origin: h,
+            origin: E,
             compressionMetadata: A[t],
             ...s?.[t]
         }));
@@ -108,7 +108,7 @@ async function O(e, t, n) {
                 file: e,
                 platform: _.xz.WEB,
                 isThumbnail: f,
-                origin: h,
+                origin: E,
                 compressionMetadata: A[n],
                 ...r
             }, t.id)

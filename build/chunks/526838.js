@@ -28,12 +28,12 @@ let u = {
                     action2Text: h,
                     action2Variant: x,
                     icon: b,
-                    iconPosition: y,
-                    index: g,
-                    size: f,
+                    iconPosition: f,
+                    index: y,
+                    size: g,
                     badgeText: v,
-                    badgeVariant: _,
-                    isReducedMotion: E,
+                    badgeVariant: E,
+                    isReducedMotion: _,
                     previewImageStyle: C
                 } = e, j = () => (0, n.showToast)((0, n.createToast)("CTA clicked!", n.ToastType.SUCCESS)), S = u[b], T = "descriptionCta" === d ? {
                     descriptionCta: c,
@@ -45,7 +45,7 @@ let u = {
                         onClick: j,
                         ...null != S ? {
                             icon: S,
-                            iconPosition: y
+                            iconPosition: f
                         } : {}
                     }, ...h.length > 0 ? [{
                         text: h,
@@ -61,11 +61,11 @@ let u = {
                         previewImage: o.A,
                         videoUrl: s.A,
                         shouldLoadVideo: !0,
-                        index: g,
-                        size: f,
+                        index: y,
+                        size: g,
                         badgeText: v.length > 0 ? v : void 0,
-                        badgeVariant: _,
-                        isReducedMotion: E,
+                        badgeVariant: E,
+                        isReducedMotion: _,
                         previewImageStyle: C,
                         ...T
                     })

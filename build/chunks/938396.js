@@ -16,12 +16,12 @@ var a = l(627968),
     h = l(976860),
     x = l(309954),
     b = l(287809),
-    y = l(975571),
-    g = l(474090),
-    f = l(94264),
+    f = l(975571),
+    y = l(474090),
+    g = l(94264),
     v = l(235365),
-    _ = l(566119),
-    E = l(788868),
+    E = l(566119),
+    _ = l(788868),
     C = l(652215),
     j = l(901123),
     S = l(49370),
@@ -40,15 +40,15 @@ let R = () => (0, a.jsx)("div", {
 });
 
 function N() {
-    (0, _.RQ)(), (0, h.pX)(`${j.BV.NITRO_HOME}?section=${v.L}`)
+    (0, E.RQ)(), (0, h.pX)(`${j.BV.NITRO_HOME}?section=${v.L}`)
 }
 
 function D() {
-    (0, _.gP)(), (0, h.pX)(`${j.BV.NITRO_HOME}?section=${v.L}`)
+    (0, E.gP)(), (0, h.pX)(`${j.BV.NITRO_HOME}?section=${v.L}`)
 }
 
 function M() {
-    (0, _.b)(), window.open(y.A.getArticleURL(C.MVz.ORBS_FAQ), "_blank")
+    (0, E.b)(), window.open(f.A.getArticleURL(C.MVz.ORBS_FAQ), "_blank")
 }
 
 function O(e) {
@@ -57,19 +57,19 @@ function O(e) {
         shouldShow: l,
         onRequestClose: r,
         ctaText: h,
-        ctaOnClick: y
+        ctaOnClick: f
     } = e, {
         passesGeneralUIInvariant: v,
-        programReward: _
+        programReward: E
     } = (0, m.F)({
         location: "PremiumTenureRewardsOrbsBalancePopover"
     }), j = (0, s.bG)([b.default], () => b.default.getCurrentUser()), {
         balance: P
-    } = (0, x.W)(), k = !(0, g.ki)(j), O = n.useMemo(() => {
-        let e = (0, g.YE)(j, E.PremiumTypes.TIER_2);
+    } = (0, x.W)(), k = !(0, y.ki)(j), O = n.useMemo(() => {
+        let e = (0, y.YE)(j, _.PremiumTypes.TIER_2);
         if (!v || k) return null;
-        if (e && null != _) {
-            let e = (0, o.default)(new Date(_.next_reward_date), new Date);
+        if (e && null != E) {
+            let e = (0, o.default)(new Date(E.next_reward_date), new Date);
             return (0, a.jsxs)(a.Fragment, {
                 children: [(0, a.jsx)(c.EYj, {
                     variant: "text-xs/normal",
@@ -78,11 +78,11 @@ function O(e) {
                         days: Math.max(1, e),
                         deepLinkToNitroOrbs: N
                     })
-                }), (0, a.jsx)(f.A, {})]
+                }), (0, a.jsx)(g.A, {})]
             })
         }
         return null
-    }, [j, k, _, v]), L = (P ?? 0) >= 4100;
+    }, [j, k, E, v]), L = (P ?? 0) >= 4100;
     return (0, a.jsx)(u.x, {
         targetElementRef: t,
         shouldShow: l,
@@ -122,7 +122,7 @@ function O(e) {
                             text: h,
                             variant: "primary",
                             size: "sm",
-                            onClick: y,
+                            onClick: f,
                             fullWidth: !0
                         }), (0, a.jsx)(c.EYj, {
                             variant: "text-xs/normal",

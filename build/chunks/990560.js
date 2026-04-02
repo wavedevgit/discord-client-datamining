@@ -22,8 +22,8 @@ var i = n(627968),
     C = n(62350),
     I = n(882072),
     E = n(58262),
-    b = n(309818),
-    v = n(112007),
+    v = n(309818),
+    b = n(112007),
     T = n(877695),
     y = n(242907),
     S = n(168428),
@@ -76,7 +76,7 @@ function P(e) {
                 autoJoin: e
             })
         },
-        q = (0, i.jsx)(v.A, {
+        q = (0, i.jsx)(b.A, {
             onTransitionToInviteChannel: H,
             onAcceptInstantInvite: V,
             currentUserId: G,
@@ -105,7 +105,7 @@ function P(e) {
         default:
             switch ((0, m.On)(O)) {
                 case m.Xd.GROUP_DM:
-                    q = (0, i.jsx)(b.A, {
+                    q = (0, i.jsx)(v.A, {
                         onTransitionToInviteChannel: H,
                         onAcceptInstantInvite: V,
                         currentUserId: G,

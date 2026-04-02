@@ -10,8 +10,8 @@ var l = a(627968),
     r = a(77729),
     o = a(372684),
     u = a(399925),
-    c = a(956050);
-let d = n.createContext(null);
+    d = a(956050);
+let c = n.createContext(null);
 
 function m(e) {
     var t, m, h;
@@ -21,8 +21,8 @@ function m(e) {
         } = e,
         k = C.type === o.nQ.SCREENSHOT,
         {
-            initialDuration: N,
-            initialCropStart: y,
+            initialDuration: y,
+            initialCropStart: N,
             initialCropEnd: E,
             initialCurrentTime: A
         } = (p = C.length / 1e3, f = C.editMetadata?.start ?? 0, g = C.editMetadata?.end ?? 0, v = 0 !== f || 0 !== g && g !== p, {
@@ -36,8 +36,8 @@ function m(e) {
         [w, I] = n.useState({
             clipName: C.name,
             isTemporary: C.isTemporary ?? !1,
-            cropStart: y,
-            cropEnd: 0 === E ? N : E,
+            cropStart: N,
+            cropEnd: 0 === E ? y : E,
             voiceAudioEnabled: C.editMetadata?.voiceAudio ?? !0,
             applicationAudioEnabled: C.editMetadata?.applicationAudio ?? !0,
             soundboardAudioEnabled: C.editMetadata?.soundboardAudio ?? !0
@@ -52,8 +52,8 @@ function m(e) {
             soundboardAudioEnabled: D
         } = w,
         P = n.useRef(null),
-        z = n.useRef(A),
-        [$, G] = n.useState(N),
+        $ = n.useRef(A),
+        [z, G] = n.useState(y),
         [B, V] = n.useState(!1),
         [F, K] = n.useState(!1),
         H = n.useRef(new Set),
@@ -140,7 +140,7 @@ function m(e) {
             let e = {},
                 t = x.current;
             k || null == S || (e = {
-                thumbnail: await (0, c.m)(S, t.editMetadata.start)
+                thumbnail: await (0, d.m)(S, t.editMetadata.start)
             }), (0, u.Yy)(m, {
                 ...t,
                 ...e
@@ -150,18 +150,18 @@ function m(e) {
             e()
         }
     }, [m, S, k, x]), n.useEffect(() => {
-        $ > 0 && M <= 0 && N <= 0 && I(e => ({
+        z > 0 && M <= 0 && y <= 0 && I(e => ({
             ...e,
-            cropEnd: $
+            cropEnd: z
         }))
-    }, [$, M, N]);
+    }, [z, M, y]);
     let eo = n.useMemo(() => M - R, [R, M]),
         eu = n.useCallback(e => (H.current.add(e), () => {
             H.current.delete(e)
         }), [H]),
         {
-            setCropStart: ec,
-            setCropEnd: ed,
+            setCropStart: ed,
+            setCropEnd: ec,
             setCrop: em
         } = (b = n.useCallback(e => {
             let t = (0, i.clamp)(e, 0, M - 1);
@@ -172,12 +172,12 @@ function m(e) {
         }, [M, I, P]), {
             setCropStart: b,
             setCropEnd: n.useCallback(e => {
-                let t = (0, i.clamp)(e, R + 1, $);
+                let t = (0, i.clamp)(e, R + 1, z);
                 I(e => ({
                     ...e,
                     cropEnd: t
                 })), P?.current?.seek(t)
-            }, [R, $, I, P]),
+            }, [R, z, I, P]),
             setCrop: n.useCallback((e, t) => {
                 I(a => ({
                     ...a,
@@ -205,7 +205,7 @@ function m(e) {
         let e = P.current?.videoElement;
         if (null == e || !W.current) return;
         let t = e.currentTime;
-        z.current !== t && (z.current = t, H.current.forEach(e => e.onTimeUpdate?.(t)))
+        $.current !== t && ($.current = t, H.current.forEach(e => e.onTimeUpdate?.(t)))
     }), n.useEffect(() => {
         if (null == J) return;
         let e = () => {
@@ -258,7 +258,7 @@ function m(e) {
             }))
         }, []),
         e_ = n.useMemo(() => function() {
-            let [e, t] = n.useState(z.current);
+            let [e, t] = n.useState($.current);
             return n.useEffect(() => {
                 let e = {
                     onTimeUpdate: e => {
@@ -269,17 +269,17 @@ function m(e) {
                     H.current.delete(e)
                 }
             }, []), e
-        }, [z, H]),
+        }, [$, H]),
         eC = n.useMemo(() => ({
             useCurrentTime: e_,
-            duration: $,
+            duration: z,
             isPlaying: B,
             isLoaded: F,
             cropStart: R,
             cropEnd: M,
             cropDuration: eo,
-            setCropStart: ec,
-            setCropEnd: ed,
+            setCropStart: ed,
+            setCropEnd: ec,
             setCrop: em,
             play: eh,
             pause: ep,
@@ -302,15 +302,15 @@ function m(e) {
             isTemporary: L,
             audioURL: Y,
             setIsTemporary: ev
-        }), [e_, $, B, F, R, M, eo, ec, ed, em, eh, ep, ef, Y, eu, ei, q, ee, ea, U, ex, O, eb, D, ej, en, T, eg, L, ev]);
-    return (0, l.jsx)(d.Provider, {
+        }), [e_, z, B, F, R, M, eo, ed, ec, em, eh, ep, ef, Y, eu, ei, q, ee, ea, U, ex, O, eb, D, ej, en, T, eg, L, ev]);
+    return (0, l.jsx)(c.Provider, {
         value: eC,
         children: _
     })
 }
 
 function h() {
-    let e = n.useContext(d);
+    let e = n.useContext(c);
     if (null == e) throw Error("useClipContext must be used within a ClipContextProvider");
     return e
 }

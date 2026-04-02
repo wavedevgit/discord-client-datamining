@@ -1,7 +1,7 @@
 /** chunk id: 594808 params = (module,exports,require) **/
 n.d(t, {
     Ay: () => T,
-    PS: () => E,
+    PS: () => h,
     S0: () => I
 });
 var r = n(627968),
@@ -18,7 +18,7 @@ var r = n(627968),
     p = n(985018),
     f = n(747825);
 
-function h(e) {
+function E(e) {
     return {
         text: e,
         icon: (0, r.jsx)(s.nvX, {
@@ -29,7 +29,7 @@ function h(e) {
     }
 }
 
-function E(e) {
+function h(e) {
     return {
         text: e ?? p.intl.string(p.t.VCsUJu),
         color: "text-feedback-critical",
@@ -78,20 +78,20 @@ let T = i.memo(function(e) {
     if (null == a) f = function(e, t) {
         switch ((0, u.fK)(t, e)) {
             case u.h0.SENDING:
-                return h(p.intl.string(p.t.RiLfBY));
+                return E(p.intl.string(p.t.RiLfBY));
             case u.h0.CREATED:
-                return h(p.intl.formatToPlainString(p.t["7ePV4t"], {
+                return E(p.intl.formatToPlainString(p.t["7ePV4t"], {
                     applicationName: t.author.username
                 }));
             case u.h0.TIMED_OUT:
-                return E(p.intl.string(p.t.h8hzPd));
+                return h(p.intl.string(p.t.h8hzPd));
             case u.h0.FAILED:
-                return E(t.interactionError)
+                return h(t.interactionError)
         }
     }(s, t);
     else {
         let e = (0, c.zv)(s, t, a);
-        null != e && (f = E(e))
+        null != e && (f = h(e))
     }
     if (null == f) return null;
     let {

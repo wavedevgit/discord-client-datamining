@@ -27,18 +27,18 @@ function p(e) {
         onClickContent: C,
         onView: I,
         guildId: E
-    } = e, b = (0, u.w)(f, g), v = (0, d.Gq)(g, n.author, "Invite Embed"), T = a.useMemo(() => {
+    } = e, v = (0, u.w)(f, g), b = (0, d.Gq)(g, n.author, "Invite Embed"), T = a.useMemo(() => {
         let e = [];
-        return b || e.push({
-            label: v.label ?? m.intl.string(m.t.VJlc0S),
+        return v || e.push({
+            label: b.label ?? m.intl.string(m.t.VJlc0S),
             trackingArea: s.kY.SYNC,
             onClick: () => {
-                v.onClick()
+                b.onClick()
             },
-            disabled: v.disabled,
-            disabledReason: v.disabled ? v.tooltip : void 0
+            disabled: b.disabled,
+            disabledReason: b.disabled ? b.tooltip : void 0
         }), e
-    }, [b, v]), y = null != g && null != g.details && null != g.state ? m.intl.formatToPlainString(m.t.JCvHtx, {
+    }, [v, b]), y = null != g && null != g.details && null != g.state ? m.intl.formatToPlainString(m.t.JCvHtx, {
         track: g.details,
         artist: g.state
     }) : t.name, S = g?.timestamps?.start ?? g?.created_at, N = a.useMemo(() => null != S ? (0, i.jsxs)("div", {

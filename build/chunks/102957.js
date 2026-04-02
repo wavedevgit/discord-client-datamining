@@ -1,6 +1,6 @@
 /** chunk id: 102957 params = (module,exports,require) **/
 l.d(t, {
-    r: () => g
+    r: () => y
 });
 var a = l(627968),
     n = l(64700),
@@ -60,8 +60,8 @@ let p = {
     },
     b = e => void 0 !== e ? JSON.stringify(e, null, 2) : "undefined";
 
-function y() {
-    let [e, t] = n.useState(b(h)), [l, u] = n.useState(h), [m, y] = n.useState(b(x)), [g, f] = n.useState(x), [v, _] = n.useState(null), [E, C] = n.useState((0, a.jsx)(d.a8, {
+function f() {
+    let [e, t] = n.useState(b(h)), [l, u] = n.useState(h), [m, f] = n.useState(b(x)), [y, g] = n.useState(x), [v, E] = n.useState(null), [_, C] = n.useState((0, a.jsx)(d.a8, {
         errorLabel: p.CONFIGURABLE,
         elementOptions: h,
         children: (0, a.jsx)(r.ExpressCheckoutElement, {
@@ -109,7 +109,7 @@ function y() {
                 placeholder: "Stripe Express Checkout Element Options",
                 showCharacterCount: !0,
                 value: m,
-                onChange: y,
+                onChange: f,
                 rows: 7
             })
         }), null != v && (0, a.jsx)(o.Text, {
@@ -142,9 +142,9 @@ function y() {
                                     options: l
                                 })
                             })]
-                        })), u(t), f(l), _(null)
+                        })), u(t), g(l), E(null)
                     } catch (e) {
-                        console.error("ConfigurableStripeExpressCheckoutElement - error parsing JSON: ", e), _("Error parsing JSON. Check console for more information.")
+                        console.error("ConfigurableStripeExpressCheckoutElement - error parsing JSON: ", e), E("Error parsing JSON. Check console for more information.")
                     }
                 }
             })
@@ -166,12 +166,12 @@ function y() {
             variant: "text-md/normal",
             children: (0, a.jsx)(s.A, {
                 className: c.wD,
-                children: `\`\` ${b(g)} \`\``
+                children: `\`\` ${b(y)} \`\``
             })
-        }), E]
+        }), _]
     })
 }
-let g = {
+let y = {
     name: "Stripe Components",
     id: "stripe-components",
     component: function() {
@@ -224,7 +224,7 @@ let g = {
                     }, e)
                 }), (0, a.jsx)(d.Hq, {
                     label: p.CONFIGURABLE,
-                    children: (0, a.jsx)(y, {})
+                    children: (0, a.jsx)(f, {})
                 })]
             })
         })

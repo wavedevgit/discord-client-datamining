@@ -66,6 +66,20 @@ function c() {
                             type: o.Gy.YELLING,
                             userId: "123"
                         })
+                    }), (0, a.jsx)(l.Button, {
+                        text: "Laughter",
+                        onClick: () => d.Ts({
+                            type: o.Gy.LAUGHTER,
+                            label: "laughter",
+                            confidence: 1
+                        })
+                    }), (0, a.jsx)(l.Button, {
+                        text: "Shouting",
+                        onClick: () => d.Ts({
+                            type: o.Gy.LAUGHTER,
+                            label: "shouting",
+                            confidence: 1
+                        })
                     })]
                 })
             }), (0, a.jsxs)(l.nVY, {
@@ -189,6 +203,13 @@ function c() {
                     onChange: t => d.dR({
                         ...e,
                         whisperTranscription: t
+                    })
+                }), (0, a.jsx)(l.dOG, {
+                    label: "Laughter / Shouting Detector (V3)",
+                    checked: e.laughterDetector,
+                    onChange: t => d.dR({
+                        ...e,
+                        laughterDetector: t
                     })
                 })]
             }), (0, a.jsxs)(l.nVY, {

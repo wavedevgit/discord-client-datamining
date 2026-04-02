@@ -25,7 +25,7 @@ let C = (0, _.xI)(l.A.STICKERS_CONSTANTS_STICKER_DIMENSION),
             renderableSticker: t,
             channel: n,
             isInteracting: l
-        } = e, _ = a.useRef(null), [I, E] = a.useState(!0), [b, v] = a.useState(String(Date.now())), [T] = (0, m.Zq)(t, l), {
+        } = e, _ = a.useRef(null), [I, E] = a.useState(!0), [v, b] = a.useState(String(Date.now())), [T] = (0, m.Zq)(t, l), {
             analyticsLocations: y
         } = (0, c.Ay)(o.A.STICKER_MESSAGE), S = (0, i.jsxs)("span", {
             className: f.Zl,
@@ -42,7 +42,7 @@ let C = (0, _.xI)(l.A.STICKERS_CONSTANTS_STICKER_DIMENSION),
                 children: (0, i.jsx)(s.YNO, {
                     align: "center",
                     animation: s.YNO.Animation.TRANSLATE,
-                    positionKey: b,
+                    positionKey: v,
                     onRequestClose: () => {
                         E(!0)
                     },
@@ -50,7 +50,7 @@ let C = (0, _.xI)(l.A.STICKERS_CONSTANTS_STICKER_DIMENSION),
                         ...e,
                         renderableSticker: t,
                         channel: n,
-                        refreshPositionKey: () => v(String(Date.now()))
+                        refreshPositionKey: () => b(String(Date.now()))
                     }),
                     targetElementRef: _,
                     children: e => {

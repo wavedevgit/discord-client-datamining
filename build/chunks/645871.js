@@ -18,8 +18,8 @@ let u = e => {
         timelineWidth: d,
         preloadedBuffers: m,
         maxSeekableX: p,
-        interactionEnabled: h,
-        segmentBorderRadius: f = 99,
+        interactionEnabled: f,
+        segmentBorderRadius: h = 99,
         showGlow: x,
         glowClassName: E,
         progressFillClassName: v
@@ -28,9 +28,9 @@ let u = e => {
         endPx: b,
         leftIndicatorIndex: y,
         rightIndicatorIndex: S
-    } = t, C = b - g, A = u.to(e => Math.min(Math.max(0, e - g), C)), N = null != n && null != c && y === n, T = !N && null != n && null != c && S === n, R = N || T, w = T ? (0, s.to)([A, c], (e, t) => `translateX(-${Math.max(0,C-t-e)}px)`) : A.to(e => `translateX(-${C-e}px)`), j = R ? (0, s.to)([A, c], (e, t) => N ? Math.max(0, e - t) : Math.min(e, C - t)) : A, P = Math.max(0, (p ?? 0) - g), D = {
-        borderRadius: `${f}px`
-    }, M = l.useMemo(() => m?.map(e => ({
+    } = t, C = b - g, A = u.to(e => Math.min(Math.max(0, e - g), C)), N = null != n && null != c && y === n, R = !N && null != n && null != c && S === n, T = N || R, w = R ? (0, s.to)([A, c], (e, t) => `translateX(-${Math.max(0,C-t-e)}px)`) : A.to(e => `translateX(-${C-e}px)`), j = T ? (0, s.to)([A, c], (e, t) => N ? Math.max(0, e - t) : Math.min(e, C - t)) : A, L = Math.max(0, (p ?? 0) - g), P = {
+        borderRadius: `${h}px`
+    }, D = l.useMemo(() => m?.map(e => ({
         startPx: e.start * d,
         endPx: (e.start + e.size) * d
     })).filter(e => e.endPx >= g && e.startPx <= b), [m, g, b, d]);
@@ -38,7 +38,7 @@ let u = e => {
         className: o.$v,
         style: {
             left: N ? c.to(e => g + e) : g,
-            width: R ? c.to(e => C - e) : C,
+            width: T ? c.to(e => C - e) : C,
             "--custom-segment-bg": null != a ? a : void 0,
             "--custom-r-left": u.to(e => 0 === g || e >= g ? "99px" : "0px"),
             "--custom-r-right": u.to(e => b >= d || e >= b ? "99px" : "0px"),
@@ -51,19 +51,19 @@ let u = e => {
                 style: {
                     left: N ? c.to(e => -(g + e)) : -g
                 },
-                children: [M?.map(e => (0, r.jsx)("div", {
+                children: [D?.map(e => (0, r.jsx)("div", {
                     className: o.r,
                     style: {
                         width: `${e.endPx-e.startPx}px`,
                         left: `${e.startPx}px`,
-                        ...D
+                        ...P
                     }
-                }, `${e.startPx}:${e.endPx}`)), !h && P > 0 && (0, r.jsx)("div", {
+                }, `${e.startPx}:${e.endPx}`)), !f && L > 0 && (0, r.jsx)("div", {
                     className: o.YK,
                     style: {
-                        width: `${P}px`,
+                        width: `${L}px`,
                         opacity: 1,
-                        ...D
+                        ...P
                     }
                 })]
             }), (0, r.jsx)(s.animated.div, {

@@ -20,12 +20,12 @@ function u(e, t) {
         onHlsInstance: d
     } = t, m = r.useRef(null), p = r.useRef(u);
     p.current = u;
-    let h = r.useRef(c),
-        f = r.useRef(d);
+    let f = r.useRef(c),
+        h = r.useRef(d);
     r.useEffect(() => {
-        h.current = c
+        f.current = c
     }, [c]), r.useEffect(() => {
-        f.current = d
+        h.current = d
     }, [d]);
     let x = null != n && n.split("?")[0].endsWith(".m3u8") && l.Ay.isSupported();
     return r.useEffect(() => {
@@ -38,7 +38,7 @@ function u(e, t) {
                 startFragPrefetch: !0,
                 startLevel: -1
             });
-        m.current = r, f.current?.(r);
+        m.current = r, h.current?.(r);
         let u = 0,
             c = () => {
                 r.mainForwardBufferInfo?.len === 0 && r.trigger(l.Ay.Events.BUFFER_FLUSHING, {
@@ -50,7 +50,7 @@ function u(e, t) {
         return r.on(l.Ay.Events.FRAG_LOADING, () => {
             r.config.minAutoBitrate !== i && (r.config.minAutoBitrate = i)
         }), r.on(l.Ay.Events.ERROR, (e, t) => {
-            if (h.current?.(function(e) {
+            if (f.current?.(function(e) {
                     switch (e) {
                         case l.Ay.ErrorTypes.NETWORK_ERROR:
                             return a.SB.HLS_NETWORK_ERROR;
@@ -68,7 +68,7 @@ function u(e, t) {
                     fatal: t.fatal
                 }), t.fatal) {
                 if (u >= 3) {
-                    r.destroy(), m.current = null, f.current?.(null);
+                    r.destroy(), m.current = null, h.current?.(null);
                     return
                 }
                 switch (u++, t.type) {
@@ -79,11 +79,11 @@ function u(e, t) {
                         r.recoverMediaError();
                         break;
                     default:
-                        r.destroy(), m.current = null, f.current?.(null)
+                        r.destroy(), m.current = null, h.current?.(null)
                 }
             }
         }), t.addEventListener("seeking", c), r.loadSource(n), r.attachMedia(t), () => {
-            t.removeEventListener("seeking", c), m.current === r && (r.destroy(), m.current = null, f.current?.(null)), t.removeAttribute("src"), t.load()
+            t.removeEventListener("seeking", c), m.current === r && (r.destroy(), m.current = null, h.current?.(null)), t.removeAttribute("src"), t.load()
         }
     }, [x, n, e]), {
         isHlsActive: x,

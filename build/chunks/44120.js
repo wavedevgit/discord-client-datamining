@@ -29,12 +29,12 @@ function v(e) {
             giftMessage: E,
             giftingOrigin: C,
             giftRecipient: I,
-            onClose: N,
-            onComplete: b
+            onClose: b,
+            onComplete: N
         } = e,
         S = !1,
         T = (0, l.A)(),
-        y = j ? "gift-payment-modal" : "payment-modal",
+        k = j ? "gift-payment-modal" : "payment-modal",
         L = x.default.getCurrentUser();
     L?.verified ? (r.h.wait(() => {
         r.h.dispatch({
@@ -47,12 +47,12 @@ function v(e) {
         onStepChange: e => {
             t = e
         },
-        modalKey: y,
+        modalKey: k,
         isGift: j,
         giftMessage: E,
         giftingOrigin: C,
         giftRecipient: I,
-        onClose: N,
+        onClose: b,
         onCloseCallback: () => {
             if ((0, f.S)({
                     checkoutSucceeded: S
@@ -71,13 +71,13 @@ function v(e) {
                     checkout_design: e ? u.rS.UNIFIED : u.rS.LEGACY,
                     checkout_flow: o.C.COLLECTIBLES_CHECKOUT
                 })
-            }(0, s.ET)(), (0, c.z)(), N?.(S), S && (0, m.gB)()
+            }(0, s.ET)(), (0, c.z)(), b?.(S), S && (0, m.gB)()
         },
         onCloseRequest: () => {
-            null != t && _.has(t) && (0, i.OoC)(y)
+            null != t && _.has(t) && (0, i.OoC)(k)
         },
         onComplete: () => {
-            S = !0, b?.()
+            S = !0, N?.()
         }
     })) : (0, i.mMO)(async () => {
         let {
@@ -91,7 +91,7 @@ function v(e) {
             return (0, a.jsx)(e, {
                 ...l,
                 onClose: () => {
-                    n(), N?.(!1)
+                    n(), b?.(!1)
                 }
             })
         }

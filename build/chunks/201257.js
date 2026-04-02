@@ -91,6 +91,7 @@ function P(e) {
                     [k.VX]: "landscape" === w,
                     [k.Zy]: "portrait" === w
                 }),
+                fullscreenOnMobile: !1,
                 parentComponent: "Modal",
                 children: [!B && (0, n.jsx)("div", {
                     className: k.z6,

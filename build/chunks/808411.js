@@ -9,7 +9,7 @@ var a = l(627968),
     o = l(914410),
     s = l(252561);
 let u = () => {
-    let [e, t] = n.useState(0), [l, u] = n.useState(4), [d, c] = n.useState(2), [p, m] = n.useState(o.fh.LIGHT), [h, x] = n.useState(o.qP.BLUE), [b, y] = n.useState("darkslategray"), [g, f] = n.useState("blanchedalmond"), [v, _] = n.useState("pink"), [E, C] = n.useState(!0), j = n.useMemo(() => Object.entries(o.fh).map(e => {
+    let [e, t] = n.useState(0), [l, u] = n.useState(4), [d, c] = n.useState(2), [p, m] = n.useState(o.fh.LIGHT), [h, x] = n.useState(o.qP.BLUE), [b, f] = n.useState("darkslategray"), [y, g] = n.useState("blanchedalmond"), [v, E] = n.useState("pink"), [_, C] = n.useState(!0), j = n.useMemo(() => Object.entries(o.fh).map(e => {
         let [t, l] = e;
         return {
             id: l,
@@ -34,11 +34,11 @@ let u = () => {
             override: {
                 default: {
                     background: b,
-                    gradientStart: g,
+                    gradientStart: y,
                     gradientEnd: v
                 }
             },
-            glowing: E
+            glowing: _
         }), (0, a.jsx)(s.nB, {}), (0, a.jsx)(s.MG, {
             children: (0, a.jsx)(i.ksK, {
                 type: "number",
@@ -93,7 +93,7 @@ let u = () => {
         }), (0, a.jsx)(s.MG, {
             children: (0, a.jsx)(i.Checkbox, {
                 label: "Glowing",
-                checked: E,
+                checked: _,
                 onChange: e => {
                     C(e)
                 }
@@ -109,15 +109,15 @@ let u = () => {
             children: (0, a.jsx)(i.ksK, {
                 value: b,
                 onChange: e => {
-                    y(e)
+                    f(e)
                 },
                 label: "Background (optional)"
             })
         }), (0, a.jsx)(s.MG, {
             children: (0, a.jsx)(i.ksK, {
-                value: g,
+                value: y,
                 onChange: e => {
-                    f(e)
+                    g(e)
                 },
                 label: "Gradient Start"
             })
@@ -125,7 +125,7 @@ let u = () => {
             children: (0, a.jsx)(i.ksK, {
                 value: v,
                 onChange: e => {
-                    _(e)
+                    E(e)
                 },
                 label: "Gradient End"
             })

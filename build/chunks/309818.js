@@ -27,8 +27,8 @@ function E(e) {
             invite: n,
             message: r,
             currentUserId: E,
-            onTransitionToInviteChannel: b,
-            onAcceptInstantInvite: v
+            onTransitionToInviteChannel: v,
+            onAcceptInstantInvite: b
         } = e,
         T = E === r.author.id,
         y = n.state === f.elq.ACCEPTING,
@@ -38,14 +38,14 @@ function E(e) {
         analyticsLocations: N
     } = (0, u.Ay)(c.A.INVITE_EMBED), j = null != S, L = a.useCallback(() => {
         let e = "noop";
-        j ? (b(), e = "transition") : (v(), e = "accept"), (0, d.he)({
+        j ? (v(), e = "transition") : (b(), e = "accept"), (0, d.he)({
             invite: n,
             action: e,
             inviter_id: r.author.id,
             invite_message_id: r.id,
             invite_instance_id: (0, _._U)(n.code, r.id)
         }, N)
-    }, [n, r, N, j, b, v]);
+    }, [n, r, N, j, v, b]);
     if (null == S) {
         if (null == n.channel) return (0, i.jsx)(x.A, {});
         S = (0, h.OY)(n.channel), t = null != n.channel && null != n.channel.recipients ? n.channel.recipients : []

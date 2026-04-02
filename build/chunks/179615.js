@@ -43,17 +43,17 @@ function A(e) {
         }
         n(e, d.Cy.LEARN_MORE), y(e, d.Cy.OPEN_GAME_LINK)
     }, [D, t, y, n]), {
-        title: b,
-        subtitle: N
+        title: N,
+        subtitle: O
     } = {
         title: (0, E.wr)(T),
         subtitle: T.config.ctaConfig.subtitle ?? h.intl.string(h.t.mxaHfx)
     }, {
-        enabled: O
+        enabled: b
     } = u.uK.useConfig({
         location: v.rE.VIDEO_MODAL
     }), L = s.useMemo(() => (0, c.tW)(T, c.fY.VIDEO_PLAYER_THUMBNAIL, void 0, !1)?.url ?? null, [T]);
-    return O ? (0, r.jsxs)(r.Fragment, {
+    return b ? (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(a.nY, {
             url: L
         }), (0, r.jsx)(a.KP, {}), (0, r.jsxs)(a.zj, {
@@ -70,8 +70,8 @@ function A(e) {
                     orientation: A
                 })
             }), (0, r.jsx)(a.lx, {
-                title: b,
-                subtitle: N,
+                title: N,
+                subtitle: O,
                 ctaBtnLabel: T.config.ctaConfig.buttonLabel,
                 ctaIcon: i.KS6,
                 onCTAClick: () => R(o.uF.VIDEO_MODAL),
@@ -93,8 +93,8 @@ function A(e) {
             className: g.MT,
             "data-testid": "discord-web-video-player-end-screen"
         }), (0, r.jsx)(a.OH, {
-            title: b,
-            subtitle: N,
+            title: N,
+            subtitle: O,
             icon: i.KS6,
             className: g.mT,
             onClick: () => R(o.uF.VIDEO_MODAL),

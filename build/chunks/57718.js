@@ -31,7 +31,7 @@ let f = function(e) {
         withGameTile: f = !0,
         logotypeStyle: C,
         onLoadComplete: I
-    } = e, E = (0, c.Mw)(A) ? p.NJ8.DARK : p.NJ8.LIGHT, b = (0, _.a5)(a.id, E), v = x && null != a.config.cosponsorMetadata && null != b;
+    } = e, E = (0, c.Mw)(A) ? p.NJ8.DARK : p.NJ8.LIGHT, v = (0, _.a5)(a.id, E), b = x && null != a.config.cosponsorMetadata && null != v;
     return (0, r.jsxs)("div", {
         className: s()(g.Iu, t),
         children: [f && (0, r.jsx)(h.Sn, {
@@ -60,14 +60,14 @@ let f = function(e) {
             children: e => (0, r.jsx)(o.animated.img, {
                 ref: e,
                 className: s()(g.lW, n, {
-                    [g.TO]: v
+                    [g.TO]: b
                 }),
                 style: C,
                 alt: a.config.messages.gameTitle,
                 src: (0, m.tW)(a, m.fY.LOGO_TYPE, E).url,
                 onLoad: I
             })
-        }), v && (0, r.jsxs)(r.Fragment, {
+        }), b && (0, r.jsxs)(r.Fragment, {
             children: [(0, r.jsx)("div", {
                 className: g.ub,
                 style: {
@@ -84,7 +84,7 @@ let f = function(e) {
                     className: s()(g.lW, g.TO, n),
                     style: C,
                     alt: a.config.cosponsorMetadata?.name ?? "",
-                    src: b.url,
+                    src: v.url,
                     onLoad: I
                 })
             })]

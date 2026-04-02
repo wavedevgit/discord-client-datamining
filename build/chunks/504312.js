@@ -1,22 +1,27 @@
 /** chunk id: 504312 params = (module,exports,require) **/
 l.d(t, {
-    Y: () => C
+    Y: () => P
 }), l(321073);
 var a = l(627968),
     n = l(64700),
     r = l(735438),
     i = l(96337),
     o = l(997101),
-    s = l(397927),
-    u = l(169797),
-    d = l(93159),
-    c = l(812745),
-    p = l(71393),
-    m = l(287809),
-    h = l(652215),
-    x = l(788868),
-    b = l(895375);
-let y = {
+    s = l(417597),
+    u = l(397927),
+    d = l(384904),
+    c = l(918022),
+    p = l(169797),
+    m = l(93159),
+    h = l(826469),
+    x = l(812745),
+    b = l(71393),
+    f = l(287809),
+    y = l(295405),
+    g = l(652215),
+    v = l(788868),
+    E = l(895375);
+let _ = {
         name: "Primitive: Nitro Plan Select",
         id: "unified-checkout-nitro-plan-select",
         component: e => {
@@ -26,48 +31,48 @@ let y = {
                 leftPrimaryText: r,
                 leftSubtext: i,
                 leftShowSubtext: o,
-                leftSubtextStrikethrough: u,
-                rightTitleDescriber: c,
-                rightPrimaryText: p,
-                rightSubtext: m,
+                leftSubtextStrikethrough: s,
+                rightTitleDescriber: d,
+                rightPrimaryText: c,
+                rightSubtext: p,
                 rightShowSubtext: h,
                 rightSubtextStrikethrough: x
-            } = e, [y, g] = n.useState(0);
+            } = e, [b, f] = n.useState(0);
             return (0, a.jsxs)("div", {
-                className: b.Cd,
-                children: [(0, a.jsx)(d.q7, {
-                    selection: y,
-                    onChange: g,
+                className: E.Cd,
+                children: [(0, a.jsx)(m.q7, {
+                    selection: b,
+                    onChange: f,
                     planOptions: [{
                         id: 0,
-                        title: (0, a.jsx)(d.ec, {
+                        title: (0, a.jsx)(m.ec, {
                             size: "sm",
                             color: "text-strong",
                             premiumType: t
                         }),
                         titleDescriber: l,
                         primaryText: r,
-                        subtext: o ? (0, a.jsx)(d.Lo, {
-                            strikethrough: u,
+                        subtext: o ? (0, a.jsx)(m.Lo, {
+                            strikethrough: s,
                             price: i
                         }) : void 0
                     }, {
                         id: 1,
-                        title: (0, a.jsx)(d.ec, {
+                        title: (0, a.jsx)(m.ec, {
                             size: "sm",
                             color: "text-strong",
                             premiumType: t
                         }),
-                        titleDescriber: c,
-                        primaryText: p,
-                        subtext: h ? (0, a.jsx)(d.Lo, {
+                        titleDescriber: d,
+                        primaryText: c,
+                        subtext: h ? (0, a.jsx)(m.Lo, {
                             strikethrough: x,
-                            price: m
+                            price: p
                         }) : void 0
                     }]
-                }), (0, a.jsxs)(s.Text, {
+                }), (0, a.jsxs)(u.Text, {
                     variant: "text-sm/normal",
-                    children: ["Selected plan index: ", y]
+                    children: ["Selected plan index: ", b]
                 })]
             })
         },
@@ -75,13 +80,13 @@ let y = {
             variant: {
                 label: "Nitro Variant",
                 type: "select",
-                defaultValue: x.PremiumTypes.TIER_2,
+                defaultValue: v.PremiumTypes.TIER_2,
                 options: [{
                     label: "Nitro",
-                    value: x.PremiumTypes.TIER_2
+                    value: v.PremiumTypes.TIER_2
                 }, {
                     label: "Nitro Basic",
-                    value: x.PremiumTypes.TIER_0
+                    value: v.PremiumTypes.TIER_0
                 }]
             },
             leftTitleDescriber: {
@@ -136,17 +141,17 @@ let y = {
             }
         }
     },
-    g = {
-        "nitro-wheel": s.tvc,
-        gift: s.okO,
-        orbs: s.Cp8
+    C = {
+        "nitro-wheel": u.tvc,
+        gift: u.okO,
+        orbs: u.Cp8
     },
-    f = i.A.map(e => ({
+    j = i.A.map(e => ({
         id: e.alpha2,
         value: e.alpha2,
         label: e.name
     })),
-    v = {
+    S = {
         name: "Modal: Unified Checkout Stateless Modal",
         id: "unified-checkout-stateless-modal",
         component: function(e) {
@@ -155,17 +160,17 @@ let y = {
                 primaryButtonIcon: l,
                 headerBadgeHasIcon: n,
                 ...r
-            } = e, i = n ? s.gqV : void 0;
-            return (0, a.jsxs)(s.BJc, {
+            } = e, i = n ? u.gqV : void 0;
+            return (0, a.jsxs)(u.BJc, {
                 gap: 16,
                 align: "center",
-                children: [(0, a.jsx)(s.Text, {
+                children: [(0, a.jsx)(u.Text, {
                     variant: "text-md/normal",
                     children: "Click the button below to open the Unified Checkout modal"
-                }), (0, a.jsx)(s.Button, {
+                }), (0, a.jsx)(u.Button, {
                     variant: "primary",
                     text: "Open Unified Checkout Modal",
-                    onClick: () => (0, s.qfG)(e => (0, a.jsx)(u.oH, {
+                    onClick: () => (0, u.qfG)(e => (0, a.jsx)(p.oH, {
                         ...e,
                         ...r,
                         title: r.title,
@@ -173,10 +178,10 @@ let y = {
                         primaryButtonProps: {
                             onClick: e.onClose,
                             text: t,
-                            icon: "none" !== l ? g[l] : void 0
+                            icon: "none" !== l ? C[l] : void 0
                         },
                         onBackClick: e.onClose,
-                        children: (0, a.jsx)(s.BJc, {
+                        children: (0, a.jsx)(u.BJc, {
                             gap: 16,
                             children: (0, a.jsx)("div", {
                                 style: {
@@ -225,7 +230,7 @@ let y = {
                 label: "Country Code",
                 type: "select",
                 defaultValue: o.d.US,
-                options: f
+                options: j
             },
             headerBadgeText: {
                 label: "Header Pill Text",
@@ -262,49 +267,49 @@ let y = {
             }
         }
     },
-    _ = {
+    T = {
         purchaseButtonText: "Subscribe",
         totalDue: 999,
         renewalPrice: 1099,
-        currency: h.Yri.USD,
-        interval: x.WT.MONTH,
+        currency: g.Yri.USD,
+        interval: v.WT.MONTH,
         intervalCount: 1,
         startDate: new Date
     },
-    E = {
-        [d.I0.Subscription]: {
-            type: d.I0.Subscription,
-            ..._
+    A = {
+        [m.I0.Subscription]: {
+            type: m.I0.Subscription,
+            ...T
         },
-        [d.I0.SubscriptionTrial]: {
-            type: d.I0.SubscriptionTrial,
-            ..._
+        [m.I0.SubscriptionTrial]: {
+            type: m.I0.SubscriptionTrial,
+            ...T
         },
-        [d.I0.OrbsRedemption]: {
-            type: d.I0.OrbsRedemption,
+        [m.I0.OrbsRedemption]: {
+            type: m.I0.OrbsRedemption,
             purchaseButtonText: "Redeem"
         },
-        [d.I0.Shop]: {
-            type: d.I0.Shop,
+        [m.I0.Shop]: {
+            type: m.I0.Shop,
             purchaseButtonText: "Purchase"
         },
-        [d.I0.GiftNitro]: {
-            type: d.I0.GiftNitro,
+        [m.I0.GiftNitro]: {
+            type: m.I0.GiftNitro,
             purchaseButtonText: "Buy Gift"
         },
-        [d.I0.GiftShop]: {
-            type: d.I0.GiftShop,
+        [m.I0.GiftShop]: {
+            type: m.I0.GiftShop,
             purchaseButtonText: "Buy Gift"
         },
-        [d.I0.GiftGameShop]: {
-            type: d.I0.GiftGameShop,
+        [m.I0.GiftGameShop]: {
+            type: m.I0.GiftGameShop,
             purchaseButtonText: "Buy Gift",
             applicationName: "Marvel Rivals"
         }
     },
-    C = {
+    P = {
         title: "Unified Checkout",
-        stories: [v, {
+        stories: [S, {
             name: "Primitive: Order Summary Accordion",
             id: "unified-checkout-order-summary",
             component: e => {
@@ -326,11 +331,11 @@ let y = {
                     label: "Discount Applied",
                     amount: -100
                 }), (0, a.jsx)("div", {
-                    className: b.SG,
-                    children: (0, a.jsx)(d.Vm, {
+                    className: E.SG,
+                    children: (0, a.jsx)(m.Vm, {
                         label: t,
                         lineItems: r,
-                        currency: h.Yri.USD
+                        currency: g.Yri.USD
                     })
                 })
             },
@@ -351,7 +356,7 @@ let y = {
                     defaultValue: !0
                 }
             }
-        }, y, {
+        }, _, {
             name: "Primitive: Subscription Details Accordion",
             id: "unified-checkout-subscription-details",
             component: e => {
@@ -367,18 +372,18 @@ let y = {
                     id: 2,
                     label: "Server Boost",
                     amount: 499,
-                    icon: (0, a.jsx)(s.tvc, {
+                    icon: (0, a.jsx)(u.tvc, {
                         size: "xs"
                     })
                 }] : [];
                 return (0, a.jsx)("div", {
-                    className: b.SG,
-                    children: (0, a.jsx)(d._D, {
+                    className: E.SG,
+                    children: (0, a.jsx)(m._D, {
                         label: t,
                         lineItems: n,
-                        intervalType: x.WT.MONTH,
+                        intervalType: v.WT.MONTH,
                         intervalCount: 1,
-                        currency: h.Yri.USD
+                        currency: g.Yri.USD
                     })
                 })
             },
@@ -405,36 +410,36 @@ let y = {
                     description: r,
                     price: i,
                     hasPriceIcon: o,
-                    hasStrikethroughPrice: u,
-                    strikethroughPrice: c,
-                    targetType: h
+                    hasStrikethroughPrice: s,
+                    strikethroughPrice: d,
+                    targetType: c
                 } = e;
 
-                function x(e, x) {
-                    let b = m.default.getCurrentUser(),
-                        y = p.A.getGuildsArray()[0];
-                    return (0, a.jsx)(d.f7, {
+                function p(e, p) {
+                    let h = f.default.getCurrentUser(),
+                        x = b.A.getGuildsArray()[0];
+                    return (0, a.jsx)(m.f7, {
                         header: l ? t : void 0,
                         headerIconSrc: "https://cdn.discordapp.com/embed/avatars/1.png",
-                        label: `${n} ${x}`,
+                        label: `${n} ${p}`,
                         description: r,
                         price: i,
-                        PriceIcon: o ? s.tvc : void 0,
-                        priceSubText: u ? c : void 0,
-                        priceSubTextHasStrikethrough: u,
+                        PriceIcon: o ? u.tvc : void 0,
+                        priceSubText: s ? d : void 0,
+                        priceSubTextHasStrikethrough: s,
                         graphic: (0, a.jsx)(e, {}),
-                        target: "gift" === h ? {
+                        target: "gift" === c ? {
                             type: "gift",
-                            user: b
-                        } : "guildSubscription" === h ? {
+                            user: h
+                        } : "guildSubscription" === c ? {
                             type: "guildSubscription",
-                            guild: y
+                            guild: x
                         } : void 0
                     })
                 }
                 return (0, a.jsxs)("div", {
-                    className: b.SG,
-                    children: [x(d.JW, "Nitro"), x(d.DH, "Nitro Basic"), x(d.a6, "Boost"), x(d.jw, "App"), x(d.oo, "Nitro Credit")]
+                    className: E.SG,
+                    children: [p(m.JW, "Nitro"), p(m.DH, "Nitro Basic"), p(m.a6, "Boost"), p(m.jw, "App"), p(m.oo, "Nitro Credit")]
                 })
             },
             controls: {
@@ -503,35 +508,35 @@ let y = {
                     disabled: l,
                     error: i,
                     errorMessage: o
-                } = e, u = [{
+                } = e, s = [{
                     id: "visa-1234",
                     label: "Visa ending in 1234",
-                    icon: c.Be.VISA
+                    icon: x.Be.VISA
                 }, {
                     id: "mastercard-5678",
                     label: "Mastercard ending in 5678",
-                    icon: c.Be.MASTERCARD
+                    icon: x.Be.MASTERCARD
                 }, {
                     id: "paypal",
                     label: "user@example.com",
-                    icon: c.Be.PAYPAL
+                    icon: x.Be.PAYPAL
                 }, {
                     id: "amex-9012",
                     label: "Amex ending in 9012",
-                    icon: c.Be.AMEX
-                }], [p, m] = n.useState(u[0].id);
+                    icon: x.Be.AMEX
+                }], [d, c] = n.useState(s[0].id);
                 return (0, a.jsxs)("div", {
-                    children: [(0, a.jsx)(d.v7, {
+                    children: [(0, a.jsx)(m.v7, {
                         label: t,
-                        value: p,
-                        options: u,
-                        onChange: m,
+                        value: d,
+                        options: s,
+                        onChange: c,
                         onNew: r.noop,
                         disabled: l,
                         error: i ? o : void 0
-                    }), (0, a.jsxs)(s.Text, {
+                    }), (0, a.jsxs)(u.Text, {
                         variant: "text-sm/normal",
-                        children: ["Selected payment: ", p ?? "None"]
+                        children: ["Selected payment: ", d ?? "None"]
                     })]
                 })
             },
@@ -558,6 +563,76 @@ let y = {
                 }
             }
         }, {
+            name: "Primitive: Payment Source Selector",
+            id: "unified-checkout-payment-source-selector",
+            component: e => {
+                let {
+                    label: t,
+                    giftCardsEnabled: l,
+                    disabled: r,
+                    hidePersonalInformation: i
+                } = e, o = (0, s.bG)([y.A], () => Object.values(y.A.paymentSources)), [p, x] = n.useState(void 0);
+                n.useEffect(() => {
+                    (0, d.$o)()
+                }, []);
+                let b = n.useMemo(() => o.map(e => new h.A(e, !0, [])), [o]),
+                    {
+                        dropdownPaymentSources: f,
+                        dropdownPaymentSourceId: g,
+                        giftCardWallet: v,
+                        isGiftCardCreditsChecked: E,
+                        handleGiftCardCreditsToggle: _,
+                        handleDropdownPaymentSourceChange: C
+                    } = (0, c.Y)({
+                        checkoutPaymentSources: b,
+                        setPaymentSourceId: x,
+                        location: "revenue_playground"
+                    });
+                return (0, a.jsxs)("div", {
+                    children: [(0, a.jsx)(m.nL, {
+                        label: t,
+                        giftCardsEnabled: l,
+                        giftCardCheckboxProps: null != v ? {
+                            giftCardWallet: v,
+                            checked: E,
+                            onChange: _
+                        } : null,
+                        paymentSourceDropdownProps: {
+                            selectedPaymentSourceId: g,
+                            paymentSources: f,
+                            hidePersonalInformation: i,
+                            onChange: C
+                        },
+                        disabled: r
+                    }), (0, a.jsxs)(u.Text, {
+                        variant: "text-sm/normal",
+                        children: ["Effective payment source: ", p ?? "None"]
+                    })]
+                })
+            },
+            controls: {
+                label: {
+                    label: "Label",
+                    type: "text",
+                    defaultValue: "Payment Method"
+                },
+                giftCardsEnabled: {
+                    label: "Gift Cards Enabled",
+                    type: "boolean",
+                    defaultValue: !0
+                },
+                disabled: {
+                    label: "Disabled",
+                    type: "boolean",
+                    defaultValue: !1
+                },
+                hidePersonalInformation: {
+                    label: "Hide Personal Information",
+                    type: "boolean",
+                    defaultValue: !1
+                }
+            }
+        }, {
             name: "Primitive: Legal Copy",
             id: "unified-checkout-legal-copy",
             component: function(e) {
@@ -566,41 +641,41 @@ let y = {
                     immediateDelivery: l,
                     paysafecard: r
                 } = e, [i, o] = n.useState(!1);
-                return (0, a.jsx)(d._P, {
-                    variant: E[t],
+                return (0, a.jsx)(m._P, {
+                    variant: A[t],
                     immediateDelivery: l ? {
                         value: i,
                         onChange: o
                     } : void 0,
-                    paymentSourceType: r ? h.hes.PAYSAFE_CARD : h.hes.CARD
+                    paymentSourceType: r ? g.hes.PAYSAFE_CARD : g.hes.CARD
                 })
             },
             controls: {
                 type: {
                     label: "Type",
                     type: "select",
-                    defaultValue: d.I0.Subscription,
+                    defaultValue: m.I0.Subscription,
                     options: [{
                         label: "Subscription",
-                        value: d.I0.Subscription
+                        value: m.I0.Subscription
                     }, {
                         label: "Subscription Trial",
-                        value: d.I0.SubscriptionTrial
+                        value: m.I0.SubscriptionTrial
                     }, {
                         label: "Orbs Redemption",
-                        value: d.I0.OrbsRedemption
+                        value: m.I0.OrbsRedemption
                     }, {
                         label: "Shop",
-                        value: d.I0.Shop
+                        value: m.I0.Shop
                     }, {
                         label: "Nitro Gift",
-                        value: d.I0.GiftNitro
+                        value: m.I0.GiftNitro
                     }, {
                         label: "Shop Gift",
-                        value: d.I0.GiftShop
+                        value: m.I0.GiftShop
                     }, {
                         label: "Game Shop Gift",
-                        value: d.I0.GiftGameShop
+                        value: m.I0.GiftGameShop
                     }]
                 },
                 immediateDelivery: {
@@ -619,16 +694,16 @@ let y = {
             id: "unified-checkout-gift-redemption-link",
             component: function() {
                 return (0, a.jsxs)("div", {
-                    children: [(0, a.jsx)(s.Text, {
+                    children: [(0, a.jsx)(u.Text, {
                         variant: "text-sm/normal",
                         children: "Stateless Component:"
-                    }), (0, a.jsx)(d.y, {
-                        onClick: h.tEg
-                    }), (0, a.jsx)("br", {}), (0, a.jsx)(s.Text, {
+                    }), (0, a.jsx)(m.y, {
+                        onClick: g.tEg
+                    }), (0, a.jsx)("br", {}), (0, a.jsx)(u.Text, {
                         variant: "text-sm/normal",
                         children: "Link with Modal:"
-                    }), (0, a.jsx)(d.Z4, {
-                        onComplete: h.tEg
+                    }), (0, a.jsx)(m.Z4, {
+                        onComplete: g.tEg
                     })]
                 })
             }
@@ -638,11 +713,11 @@ let y = {
             component: function() {
                 let [e, t] = n.useState("yearly");
                 return (0, a.jsx)("div", {
-                    children: (0, a.jsx)(d.me, {
-                        headingComponent: (0, a.jsx)(d.ec, {
+                    children: (0, a.jsx)(m.me, {
+                        headingComponent: (0, a.jsx)(m.ec, {
                             size: "sm",
                             color: "text-strong",
-                            premiumType: x.PremiumTypes.TIER_2
+                            premiumType: v.PremiumTypes.TIER_2
                         }),
                         planRadioOptions: [{
                             primaryText: "Yearly",
@@ -666,7 +741,7 @@ let y = {
                 let {
                     storeCountry: t
                 } = e;
-                return (0, a.jsx)(d.s7, {
+                return (0, a.jsx)(m.s7, {
                     storeCountry: t
                 })
             },
@@ -675,7 +750,7 @@ let y = {
                     label: "Store Country",
                     type: "select",
                     defaultValue: o.d.US,
-                    options: f
+                    options: j
                 }
             }
         }]

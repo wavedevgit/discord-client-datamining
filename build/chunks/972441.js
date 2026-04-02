@@ -18,7 +18,7 @@ function u(e) {
         durationSec: d,
         onClick: m,
         percent: p
-    } = e, [h, f] = r.useState(null), [x, E] = r.useState(null), [v, g] = r.useState(!1), {
+    } = e, [f, h] = r.useState(null), [x, E] = r.useState(null), [v, g] = r.useState(!1), {
         i18n: b
     } = (0, l.G98)(), y = r.useMemo(() => {
         let e = {
@@ -26,14 +26,14 @@ function u(e) {
             "aria-label": "Progress Bar"
         };
         return null != p && "number" == typeof p && (e["aria-valuenow"] = p, e["aria-valuemin"] = 0, e["aria-valuemax"] = 100, e["aria-label"] = b.PERCENT_COMPLETE(Math.round(p))), e
-    }, [p, b]), S = r.useMemo(() => null == h || null == u ? null : (0, a.DX)(u, d, h), [h, u, d]), C = (0, s.A)(e => {
-        f(e.contentRect)
+    }, [p, b]), S = r.useMemo(() => null == f || null == u ? null : (0, a.DX)(u, d, f), [f, u, d]), C = (0, s.A)(e => {
+        h(e.contentRect)
     }), A = (0, i.w)(C), N = e => {
         null != A.current && E(e.clientX - A.current.getBoundingClientRect().left)
     };
     return {
         contRef: A,
-        boundingRect: h,
+        boundingRect: f,
         handleMouseEnter: e => {
             c && (g(!0), N(e))
         },

@@ -62,12 +62,12 @@ let p = {
             badgeId: h,
             showProgress: x,
             progressCircleText: b,
-            progressCirclePercent: y,
-            progressCircleUrgency: g,
-            delay: f,
+            progressCirclePercent: f,
+            progressCircleUrgency: y,
+            delay: g,
             size: v,
-            gradientColor: _,
-            estimatedTooltipHeight: E
+            gradientColor: E,
+            estimatedTooltipHeight: _
         } = e, C = n.useRef(null), j = n.useRef(null), S = n.useMemo(() => ({
             bronze: d.Ac.PREMIUM_TENURE_1_MONTH,
             silver: d.Ac.PREMIUM_TENURE_3_MONTH,
@@ -85,8 +85,8 @@ let p = {
             if (!r || null == T) return;
             let e = x ? {
                 progressCircleText: b,
-                progressCirclePercent: y,
-                progressCircleUrgency: g
+                progressCirclePercent: f,
+                progressCircleUrgency: y
             } : {};
             return {
                 type: "dynamic",
@@ -98,7 +98,7 @@ let p = {
                     ...e
                 }
             }
-        }, [r, T, A, x, b, y, g]), k = {
+        }, [r, T, A, x, b, f, y]), k = {
             title: t,
             body: l,
             graphic: P,
@@ -108,10 +108,10 @@ let p = {
                     variant: "primary"
                 }]
             }, [m]),
-            delay: f,
+            delay: g,
             size: v,
-            gradientColor: n.useMemo(() => "string" == typeof _ && _ in p ? p[_] : _, [_]),
-            estimatedTooltipHeight: E
+            gradientColor: n.useMemo(() => "string" == typeof E && E in p ? p[E] : E, [E]),
+            estimatedTooltipHeight: _
         };
         return (0, a.jsxs)("div", {
             children: [(0, a.jsx)(o.Text, {

@@ -47,7 +47,6 @@ function _(t) {
     } = t;
     return (0, s.jsx)(r.H, {
         guildId: e,
-        refetchOnMount: !0,
         children: (0, s.jsx)(h, {
             guildId: e
         })

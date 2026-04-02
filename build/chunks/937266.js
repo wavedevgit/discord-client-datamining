@@ -23,8 +23,8 @@ var i = n(627968),
     C = n(328968),
     I = n(652215),
     E = n(985018),
-    b = n(657881);
-class v extends a.Component {
+    v = n(657881);
+class b extends a.Component {
     static defaultProps = {
         renderFallback: I.tEg
     };
@@ -78,7 +78,7 @@ class v extends a.Component {
     };
     renderViewInStoreButton() {
         return (0, i.jsx)("div", {
-            className: b.h,
+            className: v.h,
             children: (0, i.jsx)(l.$nd, {
                 role: "link",
                 variant: "active",
@@ -125,19 +125,19 @@ class v extends a.Component {
             renderCustomActions: l
         } = this.props;
         if (null != l) return (0, i.jsx)("div", {
-            className: b.i,
+            className: v.i,
             children: l()
         });
         if (null == n) return null;
         let s = null != n && n.primarySkuId === a,
             o = null != r && r.hasFlag(I.hM6.HIDDEN);
         return (0, i.jsxs)("div", {
-            className: b.i,
+            className: v.i,
             children: [!s || o ? this.renderViewInStoreButton() : (0, i.jsx)(c.A, {
                 application: n,
                 disabledVariant: "primary",
                 size: "sm",
-                className: b.h,
+                className: v.h,
                 source: I.ThZ.MESSAGE_EMBED,
                 onClick: this.handleActionButtonClick
             }), t && !o || e.premium ? null : (0, i.jsx)(u.A, {
@@ -187,6 +187,6 @@ function y(e) {
         libraryApplication: null != n ? x.A.getLibraryApplication(n.applicationId, n.applicationId, !0) : null
     }
 }
-let S = (0, p.A)((0, h.A)(v)),
+let S = (0, p.A)((0, h.A)(b)),
     N = s.Ay.connectStores(T, y)(S),
-    j = (0, h.A)(s.Ay.connectStores(T, y)(v))
+    j = (0, h.A)(s.Ay.connectStores(T, y)(b))

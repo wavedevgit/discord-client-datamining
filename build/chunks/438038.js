@@ -32,7 +32,7 @@ function m(e) {
         toggleExpanded: E
     } = (0, u.s)({
         initiallyExpanded: !0
-    }), [b, v] = a.useState(!1), T = () => v(!0), y = () => v(!1), S = x ?? 1e3;
+    }), [v, b] = a.useState(!1), T = () => b(!0), y = () => b(!1), S = x ?? 1e3;
     return (0, i.jsx)(o.R, {
         questOrQuests: t,
         questContent: n,
@@ -61,7 +61,7 @@ function m(e) {
                     quest: t,
                     size: A,
                     expansionSpring: f,
-                    isInteracting: b,
+                    isInteracting: v,
                     isAnimating: C,
                     isExpanded: I,
                     contentPosition: m,
@@ -72,7 +72,7 @@ function m(e) {
                     isQuestExpired: p,
                     location: n,
                     size: A,
-                    isFocused: b,
+                    isFocused: v,
                     isExpanded: I,
                     isAnimating: C,
                     contentPosition: m,

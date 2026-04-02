@@ -22,8 +22,8 @@ var i = n(627968),
     C = n(13403),
     I = n(536189),
     E = n(652215),
-    b = n(272984),
-    v = n(772234);
+    v = n(272984),
+    b = n(772234);
 
 function T(e) {
     let {
@@ -40,7 +40,7 @@ function T(e) {
     for (; c.length < n && c.length < 8;) c.push(f.mt);
     for (; c.length < a && c.length < 8;) c.push(null);
     return (0, i.jsxs)("div", {
-        className: v.UF,
+        className: b.UF,
         children: [c.length > 0 && (0, i.jsx)(f.Ay, {
             guildId: r,
             users: c,
@@ -61,7 +61,7 @@ function y(e) {
         app: n,
         channel: l,
         message: g,
-        hideParty: v,
+        hideParty: b,
         onView: y
     } = e, S = (0, s.b)(n), N = (0, r.bG)([c.default], () => c.default.getId()), j = (0, r.bG)([m.A], () => {
         if (null == g.application) return m.A.findActivity(g.author.id, e => e.type === E.$pd.LISTENING);
@@ -82,10 +82,10 @@ function y(e) {
         guildId: l.guild_id,
         activityActionType: g.activity?.type
     }), [M, P, w, l.guild_id, g.activity?.type]);
-    return (0, b.pH)(j?.party?.id) || S.id === d.HT.id ? (0, i.jsx)(I.A, {
+    return (0, v.pH)(j?.party?.id) || S.id === d.HT.id ? (0, i.jsx)(I.A, {
         application: S,
         currentUserPresenceActivity: L,
-        hideParty: v,
+        hideParty: b,
         message: g,
         onView: y,
         partyStatusElement: D,
@@ -103,7 +103,7 @@ function y(e) {
         channel: l,
         currentUserId: N,
         currentUserPresenceActivity: L,
-        hideParty: v,
+        hideParty: b,
         message: g,
         onView: y,
         partyStatusElement: D,

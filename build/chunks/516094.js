@@ -1,6 +1,6 @@
 /** chunk id: 516094 params = (module,exports,require) **/
 a.d(t, {
-    A: () => I
+    A: () => T
 }), a(321073);
 var l = a(627968),
     n = a(64700),
@@ -9,8 +9,8 @@ var l = a(627968),
     r = a(735438),
     o = a(417597),
     u = a(459192),
-    c = a(990078),
-    d = a(397927),
+    d = a(990078),
+    c = a(397927),
     m = a(565645),
     h = a(765671),
     p = a(607470),
@@ -23,9 +23,10 @@ var l = a(627968),
     _ = a(429364),
     C = a(696016),
     k = a(985018),
+    y = a(961432),
     N = a(236911);
 
-function y(e) {
+function E(e) {
     let {
         eventType: t,
         importance: a,
@@ -35,74 +36,74 @@ function y(e) {
     } = e, o = n.useMemo(() => 0 === a ? 16 : .5 === a ? 20 : 1 === a ? 24 : 16, [a]), m = n.useMemo(() => {
         switch (t) {
             case x.rb.KILL:
-                return (0, l.jsx)(d.gXB, {
+                return (0, l.jsx)(c.gXB, {
                     size: "custom",
                     width: o,
                     height: o,
-                    color: d.LU0.colors.ICON_STRONG
+                    color: c.LU0.colors.ICON_STRONG
                 });
             case x.rb.MULTIKILL:
-                return (0, l.jsx)(d.Gg5, {
+                return (0, l.jsx)(c.Gg5, {
                     size: "custom",
                     width: o,
                     height: o,
-                    color: d.LU0.colors.ICON_STRONG
+                    color: c.LU0.colors.ICON_STRONG
                 });
             case x.rb.DEATH:
-                return (0, l.jsx)(d.VPb, {
+                return (0, l.jsx)(c.VPb, {
                     size: "custom",
                     width: o,
                     height: o,
-                    color: d.LU0.colors.ICON_STRONG
+                    color: c.LU0.colors.ICON_STRONG
                 });
             case x.rb.ASSIST:
-                return (0, l.jsx)(d.E7M, {
+                return (0, l.jsx)(c.E7M, {
                     size: "custom",
                     width: o,
                     height: o,
-                    color: d.LU0.colors.ICON_STRONG
+                    color: c.LU0.colors.ICON_STRONG
                 });
             case x.rb.ITEM:
-                return (0, l.jsx)(d.Gg5, {
+                return (0, l.jsx)(c.Gg5, {
                     size: "custom",
                     width: o,
                     height: o,
-                    color: d.LU0.colors.ICON_STRONG
+                    color: c.LU0.colors.ICON_STRONG
                 });
             case x.rb.VICTORY:
-                return (0, l.jsx)(d.OR, {
+                return (0, l.jsx)(c.OR, {
                     size: "custom",
                     width: o,
                     height: o,
-                    color: d.LU0.colors.ICON_STRONG
+                    color: c.LU0.colors.ICON_STRONG
                 });
             case x.rb.DEFEAT:
-                return (0, l.jsx)(d.iFK, {
+                return (0, l.jsx)(c.iFK, {
                     size: "custom",
                     width: o,
                     height: o,
-                    color: d.LU0.colors.ICON_STRONG
+                    color: c.LU0.colors.ICON_STRONG
                 });
             case x.rb.LEVEL_UP:
-                return (0, l.jsx)(d.TIR, {
+                return (0, l.jsx)(c.TIR, {
                     size: "custom",
                     width: o,
                     height: o,
-                    color: d.LU0.colors.ICON_STRONG
+                    color: c.LU0.colors.ICON_STRONG
                 });
             case x.rb.TREASURE:
-                return (0, l.jsx)(d.BZI, {
+                return (0, l.jsx)(c.BZI, {
                     size: "custom",
                     width: o,
                     height: o,
-                    color: d.LU0.colors.ICON_STRONG
+                    color: c.LU0.colors.ICON_STRONG
                 });
             case x.rb.OBJECTIVE_KILL:
-                return (0, l.jsx)(d.wI0, {
+                return (0, l.jsx)(c.wI0, {
                     size: "custom",
                     width: o,
                     height: o,
-                    color: d.LU0.colors.ICON_STRONG
+                    color: c.LU0.colors.ICON_STRONG
                 });
             default:
                 return null
@@ -114,7 +115,7 @@ function y(e) {
         style: i,
         children: m
     });
-    return null != s || null != r ? null == s || null == r ? (0, l.jsx)(c.m, {
+    return null != s || null != r ? null == s || null == r ? (0, l.jsx)(d.m, {
         text: s ?? r,
         position: "top",
         children: h
@@ -126,7 +127,7 @@ function y(e) {
     }) : h
 }
 
-function E(e) {
+function A(e) {
     let {
         videoLength: t,
         clip: a,
@@ -186,19 +187,19 @@ function E(e) {
                 },
                 children: [(0, l.jsx)("div", {
                     className: N.d9
-                }), (0, l.jsxs)(d.Text, {
+                }), (0, l.jsxs)(c.Text, {
                     variant: "text-xxs/normal",
                     color: "text-muted",
                     className: N.Mz,
                     children: [Math.round(e.time), "s"]
                 })]
-            }, t)), (0, l.jsx)(A, {
-                clip: a,
-                videoLength: t
-            }), (0, l.jsx)(S, {
+            }, t)), (0, l.jsx)(S, {
                 clip: a,
                 videoLength: t
             }), (0, l.jsx)(w, {
+                clip: a,
+                videoLength: t
+            }), (0, l.jsx)(I, {
                 clip: a,
                 videoLength: t
             })]
@@ -206,7 +207,7 @@ function E(e) {
     })
 }
 
-function A(e) {
+function S(e) {
     let {
         clip: t,
         videoLength: a
@@ -218,7 +219,7 @@ function A(e) {
     return (0, l.jsx)(l.Fragment, {
         children: i.map((e, t) => {
             let a = s(e.timestamp);
-            return null == a ? null : (0, l.jsx)(y, {
+            return null == a ? null : (0, l.jsx)(E, {
                 eventType: e.signal.eventType,
                 importance: e.signal.importance ?? 0,
                 title: e.signal.title,
@@ -231,7 +232,7 @@ function A(e) {
     })
 }
 
-function S(e) {
+function w(e) {
     let {
         clip: t,
         videoLength: a
@@ -267,7 +268,7 @@ function S(e) {
     })
 }
 
-function w(e) {
+function I(e) {
     let {
         clip: t,
         videoLength: a
@@ -288,141 +289,141 @@ function w(e) {
                     style: {
                         left: `${a}%`
                     },
-                    children: (0, l.jsx)(d.oyn, {
+                    children: (0, l.jsx)(c.oyn, {
                         size: "custom",
                         width: 20,
                         height: 20,
-                        color: d.LU0.colors.ICON_STRONG
+                        color: c.LU0.colors.ICON_STRONG
                     })
                 })
             }, `${e.timestamp}-${t}`)
         })
     })
 }
-let I = function(e) {
+let T = function(e) {
     let {
         sourceURL: t,
         clip: a,
         voiceAudioTracks: i
     } = e, {
         useCurrentTime: u,
-        duration: c,
+        duration: d,
         isPlaying: m,
         cropStart: f,
         cropEnd: v,
         cropDuration: x,
-        setCropStart: y,
-        setCropEnd: A,
-        play: S,
-        pause: w,
-        subscribe: I,
-        seek: R
-    } = (0, _.T)(), M = u(), O = n.useRef(null), [U, D] = n.useState(!1), [P, z] = n.useState(null), $ = n.useRef(null), G = n.useRef(null), [B, V] = n.useState(!1), [F, K] = n.useState(null);
-    n.useEffect(() => I({
+        setCropStart: E,
+        setCropEnd: S,
+        play: w,
+        pause: I,
+        subscribe: T,
+        seek: M
+    } = (0, _.T)(), O = u(), U = n.useRef(null), [D, P] = n.useState(!1), [$, z] = n.useState(null), G = n.useRef(null), B = n.useRef(null), [V, F] = n.useState(!1), [K, H] = n.useState(null);
+    n.useEffect(() => T({
         onPlay: () => {
-            z(null), V(!1)
+            z(null), F(!1)
         }
-    }), [I]);
+    }), [T]);
     let {
-        ref: H,
-        width: W = 0,
-        height: J = 0
-    } = (0, h.Ay)(), X = (0, o.bG)([g.A], () => g.A.windowSize());
+        ref: W,
+        width: J = 0,
+        height: X = 0
+    } = (0, h.Ay)(), q = (0, o.bG)([g.A], () => g.A.windowSize());
     n.useMemo(() => {
-        X.width, X.height;
-        let e = H.current;
-        null != e && K(e.getBoundingClientRect())
-    }, [X.width, X.height, W, H]);
-    let q = n.useRef(null),
-        Q = n.useRef({}),
-        Y = n.useCallback((e, t) => {
-            if (null == c) return;
-            if (null == F) return null;
-            let a = ((0, r.clamp)(e, F.left, F.right) - F.left) / F.width * c,
-                l = (0, r.clamp)(a, 0, c),
-                n = P;
-            null == n && t && (n = l <= f ? "start" : l >= v ? "end" : "playhead", m && (w(), V(!0)), z(n)), "start" === n ? y(l) : "end" === n ? A(l) : "playhead" === n && R((0, r.clamp)(l, f, v))
-        }, [c, F, P, f, v, m, w, y, A, R]),
-        Z = n.useCallback(e => {
-            if (null == c) return;
-            let t = (0, j.A)(c, e.shiftKey),
-                a = !1;
-            switch (e.key) {
-                case "ArrowLeft":
-                    a = !0, y(f - t);
-                    break;
-                case "ArrowRight":
-                    a = !0, y(f + t)
-            }
-            a && (e.stopPropagation(), e.preventDefault())
-        }, [c, y, f]),
+        q.width, q.height;
+        let e = W.current;
+        null != e && H(e.getBoundingClientRect())
+    }, [q.width, q.height, J, W]);
+    let Q = n.useRef(null),
+        Y = n.useRef({}),
+        Z = n.useCallback((e, t) => {
+            if (null == d) return;
+            if (null == K) return null;
+            let a = ((0, r.clamp)(e, K.left, K.right) - K.left) / K.width * d,
+                l = (0, r.clamp)(a, 0, d),
+                n = $;
+            null == n && t && (n = l <= f ? "start" : l >= v ? "end" : "playhead", m && (I(), F(!0)), z(n)), "start" === n ? E(l) : "end" === n ? S(l) : "playhead" === n && M((0, r.clamp)(l, f, v))
+        }, [d, K, $, f, v, m, I, E, S, M]),
         ee = n.useCallback(e => {
-            if (null == c) return;
-            let t = (0, j.A)(c, e.shiftKey),
+            if (null == d) return;
+            let t = (0, j.A)(d, e.shiftKey),
                 a = !1;
             switch (e.key) {
                 case "ArrowLeft":
-                    a = !0, A(v - t);
+                    a = !0, E(f - t);
                     break;
                 case "ArrowRight":
-                    a = !0, A(v + t)
+                    a = !0, E(f + t)
             }
             a && (e.stopPropagation(), e.preventDefault())
-        }, [c, A, v]),
+        }, [d, E, f]),
         et = n.useCallback(e => {
-            Y(e.clientX, !0)
-        }, [Y]),
+            if (null == d) return;
+            let t = (0, j.A)(d, e.shiftKey),
+                a = !1;
+            switch (e.key) {
+                case "ArrowLeft":
+                    a = !0, S(v - t);
+                    break;
+                case "ArrowRight":
+                    a = !0, S(v + t)
+            }
+            a && (e.stopPropagation(), e.preventDefault())
+        }, [d, S, v]),
         ea = n.useCallback(e => {
-            Y(e.clientX, !1)
-        }, [Y]),
-        el = n.useCallback(() => {
-            B && S(), V(!1), z(null)
-        }, [B, S]);
-    n.useEffect(() => (document.addEventListener("mousemove", ea), document.addEventListener("mouseup", el), () => {
-        document.removeEventListener("mousemove", ea), document.removeEventListener("mouseup", el)
-    }), [ea, el]), n.useEffect(() => {
+            Z(e.clientX, !0)
+        }, [Z]),
+        el = n.useCallback(e => {
+            Z(e.clientX, !1)
+        }, [Z]),
+        en = n.useCallback(() => {
+            V && w(), F(!1), z(null)
+        }, [V, w]);
+    n.useEffect(() => (document.addEventListener("mousemove", el), document.addEventListener("mouseup", en), () => {
+        document.removeEventListener("mousemove", el), document.removeEventListener("mouseup", en)
+    }), [el, en]), n.useEffect(() => {
         !async function() {
-            let e = H.current,
-                t = O.current;
-            if (null == e || null == t || !U) return;
-            e.height = J, e.width = W;
+            let e = W.current,
+                t = U.current;
+            if (null == e || null == t || !D) return;
+            e.height = X, e.width = J;
             let a = e.getContext("2d");
             if (null == a) return;
-            a.fillStyle = "#000", a.fillRect(0, 0, W, J);
-            let l = Math.ceil(J * (t.videoWidth / t.videoHeight)),
-                n = Math.ceil(W / l),
-                i = q.current;
+            a.fillStyle = "#000", a.fillRect(0, 0, J, X);
+            let l = Math.ceil(X * (t.videoWidth / t.videoHeight)),
+                n = Math.ceil(J / l),
+                i = Q.current;
             if (null == i) return;
-            i.width = l, i.height = J;
+            i.width = l, i.height = X;
             let s = i?.getContext("2d", {
                 willReadFrequently: !0
             });
             if (null == s) return;
-            let r = Q.current;
+            let r = Y.current;
             if (r[n]?.length === n) {
                 for (let e = 0; e < n; e++) a.putImageData(r[n][e], l * e, 0);
                 return
             }
             for (let e = 0; e < n; e++) await new Promise(i => {
                 t.onseeked = () => {
-                    a.drawImage(t, l * e, 0, l, J), s.drawImage(t, 0, 0, l, J);
-                    let o = s.getImageData(0, 0, l, J);
+                    a.drawImage(t, l * e, 0, l, X), s.drawImage(t, 0, 0, l, X);
+                    let o = s.getImageData(0, 0, l, X);
                     null == r[n] && (r[n] = []), r[n][e] = o, i()
-                }, t.currentTime = l / W * c * e
+                }, t.currentTime = l / J * d * e
             })
         }()
-    }, [W, J, H, c, q, U]);
-    let en = M - f,
-        ei = n.useCallback(() => {
-            R(Math.max(f, M - 10))
-        }, [f, M, R]),
+    }, [J, X, W, d, Q, D]);
+    let ei = O - f,
         es = n.useCallback(() => {
-            R(Math.min(v, M + 10))
-        }, [v, M, R]),
+            M(Math.max(f, O - 10))
+        }, [f, O, M]),
         er = n.useCallback(() => {
-            m ? w() : S()
-        }, [m, S, w]),
-        eo = n.useCallback(() => D(!0), []);
+            M(Math.min(v, O + 10))
+        }, [v, O, M]),
+        eo = n.useCallback(() => {
+            m ? I() : w()
+        }, [m, w, I]),
+        eu = n.useCallback(() => P(!0), []);
     return (0, l.jsx)("div", {
         className: N.f4,
         children: (0, l.jsxs)("div", {
@@ -432,114 +433,114 @@ let I = function(e) {
                 children: [(0, l.jsx)("div", {
                     className: N.k2,
                     children: (0, l.jsx)("div", {
-                        ref: G,
+                        ref: B,
                         className: N.re,
-                        children: (0, l.jsxs)(d.Text, {
+                        children: (0, l.jsxs)(c.Text, {
                             variant: "text-sm/normal",
                             className: N.g7,
                             color: "text-muted",
-                            children: [T(en), (0, l.jsx)("span", {
+                            children: [L(ei), (0, l.jsx)("span", {
                                 className: N.xW,
                                 children: " / "
-                            }), T(x)]
+                            }), L(x)]
                         })
                     })
                 }), (0, l.jsxs)("div", {
                     className: N.s2,
-                    children: [(0, l.jsx)(d.K0, {
+                    children: [(0, l.jsx)(c.K0, {
                         size: "md",
                         variant: "secondary",
-                        icon: d.qN$,
-                        onClick: ei,
-                        "aria-label": k.intl.string(k.t.r9s3Uv)
-                    }), (0, l.jsx)(d.K0, {
-                        size: "md",
-                        icon: m ? d.E$n : d.udU,
-                        onClick: er,
-                        "aria-label": k.intl.string(m ? k.t.ZcgDJX : k.t.RscU7I)
-                    }), (0, l.jsx)(d.K0, {
-                        size: "md",
-                        variant: "secondary",
-                        icon: d.i76,
+                        icon: c.qN$,
                         onClick: es,
-                        "aria-label": k.intl.string(k.t.zWDcNP)
+                        "aria-label": k.intl.string(y.default["dRVF+Z"])
+                    }), (0, l.jsx)(c.K0, {
+                        size: "md",
+                        icon: m ? c.E$n : c.udU,
+                        onClick: eo,
+                        "aria-label": k.intl.string(m ? k.t.ZcgDJX : k.t.RscU7I)
+                    }), (0, l.jsx)(c.K0, {
+                        size: "md",
+                        variant: "secondary",
+                        icon: c.i76,
+                        onClick: er,
+                        "aria-label": k.intl.string(y.default.yV2FLL)
                     })]
                 })]
             }), (0, l.jsx)(b.A, {
-                onMouseDown: et,
+                onMouseDown: ea,
                 voiceAudioTracks: i,
                 clipId: a.id,
                 className: N.ou
-            }), (0, l.jsx)(E, {
-                onMouseDown: et,
-                videoLength: c,
+            }), (0, l.jsx)(A, {
+                onMouseDown: ea,
+                videoLength: d,
                 clip: a
             }), (0, l.jsx)("div", {
                 className: N.PH,
                 children: (0, l.jsxs)("div", {
                     className: s()(N.IO, {
-                        [N.Dg]: null != P
+                        [N.Dg]: null != $
                     }),
-                    onMouseDown: et,
+                    onMouseDown: ea,
                     children: [(0, l.jsx)("canvas", {
                         className: N.zj,
-                        ref: q
+                        ref: Q
                     }), (0, l.jsx)("canvas", {
                         className: N.Ay,
-                        ref: H
-                    }), (0, l.jsx)(d.vN3, {
+                        ref: W
+                    }), (0, l.jsx)(c.vN3, {
                         children: (0, l.jsx)("div", {
                             tabIndex: 0,
-                            ref: $,
+                            ref: G,
                             className: N.lG,
                             style: {
-                                left: null != c && c > 0 ? `${M/c*100}%` : 0
+                                left: null != d && d > 0 ? `${O/d*100}%` : 0
                             }
                         })
                     }), (0, l.jsx)(p.A, {
                         preload: "auto",
                         className: N.Fi,
-                        ref: O,
+                        ref: U,
                         src: t,
                         muted: !0,
-                        onLoadedMetadata: eo
+                        onLoadedMetadata: eu
                     }), (0, l.jsxs)("div", {
                         className: N.Ws,
                         style: {
-                            left: null != c ? `${f/c*100}%` : "0",
-                            right: null != c ? `${(c-v)/c*100}%` : "0"
+                            left: null != d ? `${f/d*100}%` : "0",
+                            right: null != d ? `${(d-v)/d*100}%` : "0"
                         },
-                        children: [(0, l.jsx)(d.vN3, {
+                        children: [(0, l.jsx)(c.vN3, {
                             children: (0, l.jsx)("button", {
                                 className: s()(N.uI, {
-                                    [N.cB]: "start" === P
+                                    [N.cB]: "start" === $
                                 }),
-                                onMouseDown: et,
-                                onKeyDown: Z,
+                                onMouseDown: ea,
+                                onKeyDown: ee,
                                 role: "slider",
                                 tabIndex: 0,
                                 "aria-valuemin": 0,
                                 "aria-valuenow": f,
-                                "aria-valuetext": L(f),
+                                "aria-valuetext": R(f),
                                 "aria-valuemax": v - C.zj,
                                 "aria-label": k.intl.string(k.t["+BTvw8"]),
                                 children: (0, l.jsx)("div", {
                                     className: N.FV
                                 })
                             })
-                        }), (0, l.jsx)(d.vN3, {
+                        }), (0, l.jsx)(c.vN3, {
                             children: (0, l.jsx)("button", {
                                 className: s()(N.H1, {
-                                    [N.cB]: "end" === P
+                                    [N.cB]: "end" === $
                                 }),
-                                onMouseDown: et,
-                                onKeyDown: ee,
+                                onMouseDown: ea,
+                                onKeyDown: et,
                                 role: "slider",
                                 tabIndex: 0,
                                 "aria-valuemin": f + C.zj,
                                 "aria-valuenow": v,
-                                "aria-valuetext": L(v),
-                                "aria-valuemax": c,
+                                "aria-valuetext": R(v),
+                                "aria-valuemax": d,
                                 "aria-label": k.intl.string(k.t.bBgBYo),
                                 children: (0, l.jsx)("div", {
                                     className: N.kn
@@ -553,7 +554,7 @@ let I = function(e) {
     })
 };
 
-function T(e) {
+function L(e) {
     ((e = Math.round(100 * e) / 100) < 0 || .01 > Math.abs(e)) && (e = 0);
     let t = Math.floor(e / 60),
         a = Math.floor(e % 60),
@@ -561,7 +562,7 @@ function T(e) {
     return t = t < 10 ? "0" + t : t, a = a < 10 ? "0" + a : a, l = l < 10 ? "0" + l : l, `${t}:${a}.${l}`
 }
 
-function L(e) {
+function R(e) {
     let t = Math.floor(e / 60),
         a = k.intl.formatToPlainString(k.t.iXLF9W, {
             minutes: t

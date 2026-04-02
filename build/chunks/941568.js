@@ -1,28 +1,30 @@
 /** chunk id: 941568 params = (module,exports,require) **/
 n.d(t, {
-    A: () => I
-}), n(323874), n(14289), n(35956);
+    A: () => N
+});
 var a = n(627968),
     l = n(64700),
     i = n(503698),
     r = n.n(i),
     s = n(621466),
-    c = n(397927),
-    o = n(688810),
-    d = n(607470),
+    c = n(649658),
+    o = n(397927),
+    d = n(688810),
     u = n(951707),
     m = n(46054),
     x = n(405269),
-    h = n(409626),
-    g = n(21091),
-    f = n(385064),
-    p = n(305080),
-    _ = n(954506),
-    v = n(985018),
-    A = n(95225),
-    j = n(782691);
+    h = n(890060),
+    g = n(409626),
+    f = n(21091),
+    p = n(385064),
+    _ = n(305080),
+    v = n(954506),
+    A = n(652215),
+    j = n(985018),
+    E = n(95225),
+    C = n(782691);
 
-function E(e, t) {
+function I(e, t) {
     return m.A.parse(e, !0, {
         allowHeading: !0,
         allowList: !0,
@@ -31,73 +33,63 @@ function E(e, t) {
     })
 }
 
-function C(e) {
+function b(e) {
     let {
         variant: t,
         message: n,
         channelId: i,
-        onCardClick: o
-    } = e, [u, m] = l.useState(!1), h = null != n.mediaUrl, g = "video" === n.mediaType, f = "main" === t, p = l.useCallback(() => m(!0), []), _ = l.useCallback(e => {
-        if (!((0, s.vq)(e.target, HTMLAnchorElement) || (0, s.vq)(e.target, HTMLSpanElement) && (0, s.vq)(e.target.parentElement, HTMLAnchorElement))) return o(n.id)
-    }, [o, n.id]);
-    return (0, a.jsxs)(c.DUT, {
-        className: f ? A.cG : A.IU,
-        onClick: _,
-        children: [h && (0, a.jsxs)("div", {
-            className: f ? A._v : A.eZ,
-            children: [g ? (0, a.jsx)(d.A, {
-                src: n.mediaUrl,
-                poster: function(e) {
-                    try {
-                        let t = new URL(e);
-                        return t.searchParams.append("format", "webp"), t.toString()
-                    } catch {
-                        return
-                    }
-                }(n.mediaUrl),
-                className: r()(f ? A.fk : A.v, u ? A.RT : A.YC),
-                muted: !0,
-                preload: "metadata",
-                playsInline: !0,
-                onLoadedData: p
-            }) : (0, a.jsx)("img", {
-                src: n.mediaUrl,
-                className: r()(f ? A.fk : A.v, u ? A.RT : A.YC),
-                alt: "",
-                onLoad: p,
-                draggable: !1
-            }), !u && (0, a.jsx)("div", {
-                className: A.ns,
-                children: (0, a.jsx)(c.y$y, {
-                    type: c.tVU.SPINNING_CIRCLE,
-                    className: A.u1
+        onCardClick: d
+    } = e, [u, m] = l.useState(!1), g = "main" === t, f = l.useCallback(() => m(!0), []), p = l.useCallback(e => {
+        if (!((0, s.vq)(e.target, HTMLAnchorElement) || (0, s.vq)(e.target, HTMLSpanElement) && (0, s.vq)(e.target.parentElement, HTMLAnchorElement))) return d(n.id)
+    }, [d, n.id]), _ = n.media?.width != null && n.media?.height != null ? n.media.width / n.media.height : 16 / 9, v = n.media?.proxyUrl ?? n.media?.url, b = (null != v ? (0, h.V)(v) : null) ?? v;
+    return (0, a.jsxs)(o.DUT, {
+        className: g ? E.cG : E.IU,
+        onClick: p,
+        children: [null != n.media && null != b && (0, a.jsx)("div", {
+            className: g ? E._v : E.eZ,
+            children: (0, a.jsx)(c.y, {
+                readyState: u ? A.Rv1.READY : A.Rv1.LOADING,
+                aspectRatio: _,
+                placeholder: n.media.placeholder,
+                placeholderVersion: n.media.placeholderVersion,
+                placeholderStyle: {
+                    width: "100%",
+                    height: "100%",
+                    objectFit: "cover"
+                },
+                children: (0, a.jsx)("img", {
+                    src: b,
+                    className: g ? E.fk : E.v,
+                    alt: "",
+                    draggable: !1,
+                    onLoad: f
                 })
-            })]
+            })
         }), (0, a.jsxs)("div", {
-            className: f ? A.GT : A.s4,
-            children: [null != n.title && (0, a.jsx)(c.Heading, {
+            className: g ? E.GT : E.s4,
+            children: [null != n.title && (0, a.jsx)(o.Heading, {
                 variant: "heading-md/bold",
                 color: "text-strong",
-                className: f ? A.KX : A._N,
-                children: E(n.title, i)
+                className: g ? E.KX : E._N,
+                children: I(n.title, i)
             }), n.body.length > 0 && (0, a.jsx)("div", {
-                className: r()(A.h_, f ? A.My : A.Gd, j.PT),
-                children: E(n.body, i)
+                className: r()(E.h_, g ? E.My : E.Gd, C.PT),
+                children: I(n.body, i)
             }), (0, a.jsxs)("div", {
-                className: A.ov,
-                children: [(0, a.jsx)(c.Text, {
+                className: E.ov,
+                children: [(0, a.jsx)(o.Text, {
                     variant: "text-xs/medium",
                     color: "text-muted",
                     children: (0, x.i$)(new Date(n.timestamp), "LL")
                 }), n.reactionCount > 0 && (0, a.jsxs)("div", {
-                    className: A.a5,
-                    children: [(0, a.jsx)(c.nm2, {
+                    className: E.a5,
+                    children: [(0, a.jsx)(o.nm2, {
                         size: "xs",
                         color: "currentColor"
-                    }), (0, a.jsx)(c.Text, {
+                    }), (0, a.jsx)(o.Text, {
                         variant: "text-xs/medium",
                         color: "text-muted",
-                        children: new Intl.NumberFormat(v.intl.currentLocale).format(n.reactionCount)
+                        children: new Intl.NumberFormat(j.intl.currentLocale).format(n.reactionCount)
                     })]
                 })]
             })]
@@ -105,58 +97,58 @@ function C(e) {
     })
 }
 
-function I(e) {
+function N(e) {
     let {
         gameId: t,
         trackAction: n
     } = e, {
         analyticsLocations: i
-    } = (0, o.Ay)(), {
+    } = (0, d.Ay)(), {
         officialInvite: r,
         closeModal: s
-    } = (0, p.c)(), {
+    } = (0, _.c)(), {
         messages: c,
-        guildId: d,
+        guildId: o,
         channelId: m
-    } = (0, g.A)(t), x = l.useCallback(() => {
-        let e = r?.guild?.id ?? d;
-        null != e && (n(h.Ws.Announcements), s(), (0, f.A)({
+    } = (0, f.A)(t), x = l.useCallback(() => {
+        let e = r?.guild?.id ?? o;
+        null != e && (n(g.Ws.Announcements), s(), (0, p.A)({
             invite: r,
             guildId: e,
             channelId: m,
             analyticsLocationStack: i
         }))
-    }, [n, s, r, d, m, i]), j = l.useCallback(e => {
-        let t = r?.guild?.id ?? d;
-        null != t && (n(h.Ws.AnnouncementsItem), s(), (0, f.A)({
+    }, [n, s, r, o, m, i]), h = l.useCallback(e => {
+        let t = r?.guild?.id ?? o;
+        null != t && (n(g.Ws.AnnouncementsItem), s(), (0, p.A)({
             invite: r,
             guildId: t,
             channelId: m,
             messageId: e,
             analyticsLocationStack: i
         }))
-    }, [n, s, r, d, m, i]);
+    }, [n, s, r, o, m, i]);
     if (null == m || 0 === c.length) return null;
-    let E = 2 !== c.length,
-        I = E ? c[0] : null,
-        N = E ? c.slice(1) : c;
-    return (0, a.jsx)(_.A, {
-        title: v.intl.string(v.t.B0BV3Y),
+    let A = 2 !== c.length,
+        C = A ? c[0] : null,
+        I = A ? c.slice(1) : c;
+    return (0, a.jsx)(v.A, {
+        title: j.intl.string(j.t.B0BV3Y),
         onClickViewAll: x,
         children: (0, a.jsxs)("div", {
-            className: A.f3,
-            children: [null != I && (0, a.jsx)(C, {
+            className: E.f3,
+            children: [null != C && (0, a.jsx)(b, {
                 variant: "main",
-                message: I,
+                message: C,
                 channelId: m,
-                onCardClick: j
-            }), N.length > 0 && (0, a.jsx)(u.A, {
+                onCardClick: h
+            }), I.length > 0 && (0, a.jsx)(u.A, {
                 gap: 16,
-                children: N.map(e => (0, a.jsx)(C, {
+                children: I.map(e => (0, a.jsx)(b, {
                     variant: "small",
                     message: e,
                     channelId: m,
-                    onCardClick: j
+                    onCardClick: h
                 }, e.id))
             })]
         })

@@ -23,8 +23,8 @@ var a = n(503698),
     C = n(92246),
     I = n(792620),
     E = n(895253),
-    b = n(201805),
-    v = n(442734),
+    v = n(201805),
+    b = n(442734),
     T = n(212614),
     y = n(79545),
     S = n(646764),
@@ -67,7 +67,7 @@ function M(e) {
         questContent: a,
         questContentPosition: r,
         sourceQuestContent: l
-    } = e, c = (0, s.bG)([h.A], () => h.A.isEnrolling(t.id)), u = (0, I.vv)(t), _ = (0, I.Cr)(t), m = (0, b._c)({
+    } = e, c = (0, s.bG)([h.A], () => h.A.isEnrolling(t.id)), u = (0, I.vv)(t), _ = (0, I.Cr)(t), m = (0, v._c)({
         progressState: n,
         quest: t,
         questContent: a,
@@ -94,7 +94,7 @@ let D = e => {
         quest: t,
         location: n,
         size: a,
-        isFocused: b,
+        isFocused: v,
         isQuestExpired: D,
         isExpanded: k,
         isAnimating: O,
@@ -140,7 +140,7 @@ let D = e => {
                                 color: d.LU0.colors.WHITE
                             })
                         }), (0, i.jsx)(S.A, {
-                            autoplay: b,
+                            autoplay: v,
                             className: r()({
                                 [P.Lu]: "lg" === a,
                                 [P.je]: "sm" === a,
@@ -163,7 +163,7 @@ let D = e => {
                             children: D ? R.intl.formatToPlainString(R.t["ge+AJp"], {
                                 questName: t.config.messages.questName
                             }) : q
-                        }), $ && (0, i.jsx)(v.e, {
+                        }), $ && (0, i.jsx)(b.e, {
                             questId: t.id,
                             canUseQuestOrbMultiplier: Z
                         })]
@@ -220,7 +220,7 @@ let D = e => {
                                 collectibleQuestRewardDescription: Y,
                                 formattedCompletionDate: F
                             })
-                        }), en && $ && (0, i.jsx)(v.e, {
+                        }), en && $ && (0, i.jsx)(b.e, {
                             questId: t.id,
                             canUseQuestOrbMultiplier: Z
                         })]

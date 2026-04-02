@@ -1,6 +1,6 @@
 /** chunk id: 664111 params = (module,exports,require) **/
 n.d(t, {
-    A: () => P
+    A: () => L
 }), n(321073);
 var r = n(627968),
     l = n(64700),
@@ -13,8 +13,8 @@ var r = n(627968),
     d = n(397927),
     m = n(964486),
     p = n(775602),
-    h = n(607470),
-    f = n(475815),
+    f = n(607470),
+    h = n(475815),
     x = n(662903),
     E = n(337953),
     v = n(183494),
@@ -25,8 +25,8 @@ var r = n(627968),
     C = n(652215),
     A = n(838541),
     N = n(985018),
-    T = n(246878);
-let R = {
+    R = n(246878);
+let T = {
         tension: 250,
         friction: 5,
         clamp: !0
@@ -40,27 +40,27 @@ let R = {
             performanceClockStartTime: N = 0,
             orientation: w = "landscape",
             videoUrlOverride: j,
-            src: P,
-            poster: D,
-            initialTimeSec: M = 0,
-            onProgressUpdate: L,
+            src: L,
+            poster: P,
+            initialTimeSec: D = 0,
+            onProgressUpdate: M,
             onEnded: k,
             onError: I,
             maxSeekableTimeSec: B,
             captionTrackUrl: U,
-            transcriptText: O,
-            renderEndScreen: K,
+            transcriptText: G,
+            renderEndScreen: O,
             onPlayerStateChange: _,
-            onFullscreenChange: G,
-            onVolumeChange: Q,
-            onLoadStart: $,
-            onLoadEnd: F,
+            onFullscreenChange: Q,
+            onVolumeChange: K,
+            onLoadStart: F,
+            onLoadEnd: $,
             onFirstFrame: Y,
             onBufferingStart: z,
             onBufferingEnd: X,
-            onFocusChange: W,
-            onVisibilityChange: H,
-            onSeek: V,
+            onFocusChange: V,
+            onVisibilityChange: W,
+            onSeek: H,
             renderOverlay: J,
             renderPersistentOverlay: Z,
             onHlsInstance: q,
@@ -71,29 +71,29 @@ let R = {
             pauseOnLostVisibility: el = !1,
             autoFocus: ea = !1,
             timelineIndicatorConfig: ei
-        } = e, es = j ?? P, {
+        } = e, es = j ?? L, {
             focused: eo,
             focusedChanged: eu
         } = (0, y.A7)(), {
             visible: ec,
             visibleChanged: ed,
             targetRef: em
-        } = (0, y.O7)(), [ep, eh] = l.useState(C ? u.Q6.PLAYING : u.Q6.PAUSED), [ef, ex] = l.useState(!1), [eE, ev] = l.useState(!1), [eg, eb] = l.useState(0), [ey, eS] = l.useState(null), eC = l.useCallback(e => {
+        } = (0, y.O7)(), [ep, ef] = l.useState(C ? u.Q6.PLAYING : u.Q6.PAUSED), [eh, ex] = l.useState(!1), [eE, ev] = l.useState(!1), [eg, eb] = l.useState(0), [ey, eS] = l.useState(null), eC = l.useCallback(e => {
             eS(null), eb(e)
-        }, []), [eA, eN] = l.useState(!1), [eT, eR] = l.useState(!0), [ew, ej] = l.useState(!1), [eP, eD] = l.useState([]), [eM, eL] = l.useState(!1), [ek, eI] = l.useState(!1), eB = l.useRef(!0), eU = l.useRef(null), eO = l.useRef(null), eK = l.useRef(0);
+        }, []), [eA, eN] = l.useState(!1), [eR, eT] = l.useState(!0), [ew, ej] = l.useState(!1), [eL, eP] = l.useState([]), [eD, eM] = l.useState(!1), [ek, eI] = l.useState(!1), eB = l.useRef(!0), eU = l.useRef(null), eG = l.useRef(null), eO = l.useRef(0);
         l.useLayoutEffect(() => {
-            eK.current = performance.now()
+            eO.current = performance.now()
         }, []);
-        let [e_, eG] = l.useState(.3), [eQ, e$] = l.useState(!1), [eF, eY] = l.useState(!1), [ez, eX] = l.useState(!1), [eW, eH] = l.useState(!1), eV = (0, o.bG)([p.A], () => p.A.useReducedMotion), eJ = (0, l.useRef)(null), eZ = (0, l.useRef)(null), eq = l.useRef(!0), [e0, e1] = l.useState(null), e6 = l.useCallback((e, t) => {
+        let [e_, eQ] = l.useState(.3), [eK, eF] = l.useState(!1), [e$, eY] = l.useState(!1), [ez, eX] = l.useState(!1), [eV, eW] = l.useState(!1), eH = (0, o.bG)([p.A], () => p.A.useReducedMotion), eJ = (0, l.useRef)(null), eZ = (0, l.useRef)(null), eq = l.useRef(!0), [e0, e1] = l.useState(null), e6 = l.useCallback((e, t) => {
             I?.(e, t)
         }, [I]), {
             isHlsActive: e2
         } = (0, x.Ay)(eJ, {
             src: es,
-            initialTimeSec: M,
+            initialTimeSec: D,
             onError: e6,
             onHlsInstance: q
-        }), [e4, e8] = l.useState(!1), [e7, e9] = l.useState(null), [e3, e5] = l.useState(0), te = B ?? eJ.current?.duration ?? 0, [tt, tn] = l.useState(u.oA.MD), tr = {
+        }), [e4, e8] = l.useState(!1), [e9, e7] = l.useState(null), [e3, e5] = l.useState(0), te = B ?? eJ.current?.duration ?? 0, [tt, tn] = l.useState(u.oA.MD), tr = {
             [u.oA.MD]: 50,
             [u.oA.LG]: 58
         };
@@ -102,7 +102,7 @@ let R = {
         });
         let tl = l.useCallback(function(e) {
             let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : null;
-            if (eh(e), _?.(e, t), null != eJ.current) switch (e) {
+            if (ef(e), _?.(e, t), null != eJ.current) switch (e) {
                 case u.Q6.PLAYING:
                     e1(null), eJ.current.play();
                     break;
@@ -123,10 +123,10 @@ let R = {
                 e1(n), tl(u.Q6.PAUSED, n)
             }
         }, [el, a, eo, eu, ec, ed, ep, tl]), l.useEffect(() => {
-            eu && W?.(eo, ep)
-        }, [eo, eu, ep, W]), l.useEffect(() => {
-            ed && H?.(ec, ep)
-        }, [ec, ed, ep, H]);
+            eu && V?.(eo, ep)
+        }, [eo, eu, ep, V]), l.useEffect(() => {
+            ed && W?.(ec, ep)
+        }, [ec, ed, ep, W]);
         let [ta, ti] = l.useState(!1), ts = l.useRef(null), to = l.useRef(0);
         l.useLayoutEffect(() => {
             to.current = performance.now()
@@ -148,36 +148,36 @@ let R = {
                 null != ts.current && clearTimeout(ts.current)
             }
         }, [ep, tu]);
-        let td = !ta && (eE || ef || ep === u.Q6.ENDED),
+        let td = !ta && (eE || eh || ep === u.Q6.ENDED),
             tm = l.useCallback(() => {
-                let e = (0, f.qf)(eJ.current?.parentNode, eJ.current);
-                null == e || (0, f._U)(e) || (e.removeEventListener(f.Wb, tm), eH(!1), G?.(!1), tn(u.oA.MD))
-            }, [G]),
+                let e = (0, h.qf)(eJ.current?.parentNode, eJ.current);
+                null == e || (0, h._U)(e) || (e.removeEventListener(h.Wb, tm), eW(!1), Q?.(!1), tn(u.oA.MD))
+            }, [Q]),
             tp = () => {
-                null == eJ.current || (tf(Math.max(eJ.current.currentTime - 10, 0)), ep === u.Q6.ENDED && tl(u.Q6.PAUSED, u.KB.SEEK))
+                null == eJ.current || (th(Math.max(eJ.current.currentTime - 10, 0)), ep === u.Q6.ENDED && tl(u.Q6.PAUSED, u.KB.SEEK))
             },
-            th = () => {
+            tf = () => {
                 if (null == eJ.current) return;
                 let e = Math.min(eJ.current.currentTime + 10, te);
-                tf(e), ep !== u.Q6.ENDED && e >= eJ.current.duration && tl(u.Q6.ENDED, u.KB.SEEK)
+                th(e), ep !== u.Q6.ENDED && e >= eJ.current.duration && tl(u.Q6.ENDED, u.KB.SEEK)
             };
         l.useEffect(() => {
             let e = eJ.current;
             return () => {
-                let t = (0, f.qf)(e?.parentNode, e);
-                null != t && t.removeEventListener(f.Wb, tm)
+                let t = (0, h.qf)(e?.parentNode, e);
+                null != t && t.removeEventListener(h.Wb, tm)
             }
         }, [tm]);
-        let tf = l.useCallback(function(e) {
+        let th = l.useCallback(function(e) {
                 let t = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1];
                 if (null == eJ.current) return;
                 let n = eJ.current.currentTime;
-                eS(e / (eJ.current.duration ?? 1) * 100), eN(!0), e8(!1), eJ.current.currentTime = e, t && V?.(n, e)
-            }, [V]),
+                eS(e / (eJ.current.duration ?? 1) * 100), eN(!0), e8(!1), eJ.current.currentTime = e, t && H?.(n, e)
+            }, [H]),
             tx = () => {
                 if (null != eJ.current) switch (ep) {
                     case u.Q6.ENDED:
-                        tf(0), tl(u.Q6.PLAYING, u.KB.USER);
+                        th(0), tl(u.Q6.PLAYING, u.KB.USER);
                         break;
                     case u.Q6.PLAYING:
                         e1(u.KB.USER), tl(u.Q6.PAUSED, u.KB.USER);
@@ -187,10 +187,10 @@ let R = {
                 }
             },
             tE = e => {
-                e9(e)
+                e7(e)
             },
             tv = e => {
-                e9(t => t?.id === e.id ? null : t)
+                e7(t => t?.id === e.id ? null : t)
             },
             tg = l.useCallback(() => {
                 if (null == eJ.current || 0 === eJ.current.textTracks.length) return;
@@ -210,8 +210,8 @@ let R = {
         }, [tg]);
         let tb = e => {
             if (null != eJ.current && ep === u.Q6.PLAYING) {
-                if (eT && eR(!1), ew) {
-                    let e = null != eO.current ? performance.now() - eO.current : null;
+                if (eR && eT(!1), ew) {
+                    let e = null != eG.current ? performance.now() - eG.current : null;
                     X?.(e), ej(!1)
                 }
                 tl(u.Q6.PLAYING, u.KB.BUFFERING_RECOVERY)
@@ -230,7 +230,7 @@ let R = {
             from: {
                 controlBarAnimSpring: 0
             },
-            config: R,
+            config: T,
             onStart: () => {
                 eI(!1)
             },
@@ -243,31 +243,31 @@ let R = {
             from: {
                 captionHeightSpring: 0
             },
-            config: R
+            config: T
         }));
         l.useEffect(() => (tN({
-            captionHeightSpring: ez && null != e7 ? tC.current?.clientHeight ?? 0 : 0,
-            immediate: eV
+            captionHeightSpring: ez && null != e9 ? tC.current?.clientHeight ?? 0 : 0,
+            immediate: eH
         }), () => {
             tA.stop()
-        }), [ez, tN, eV, e7, tA]), l.useEffect(() => (tS({
-            controlBarAnimSpring: td || eM ? 1 : 0,
-            immediate: eV
+        }), [ez, tN, eH, e9, tA]), l.useEffect(() => (tS({
+            controlBarAnimSpring: td || eD ? 1 : 0,
+            immediate: eH
         }), () => {
             ty.stop()
-        }), [td, tS, eV, eM, ty]);
-        let tT = ep === u.Q6.ENDED && null != K,
-            tR = l.useCallback(function() {
+        }), [td, tS, eH, eD, ty]);
+        let tR = ep === u.Q6.ENDED && null != O,
+            tT = l.useCallback(function() {
                 let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : u.KB.USER;
-                null != eJ.current && (tf(0), tl(u.Q6.PLAYING, e))
-            }, [tf, tl]),
+                null != eJ.current && (th(0), tl(u.Q6.PLAYING, e))
+            }, [th, tl]),
             tw = l.useRef(null),
             tj = l.useCallback(e => {
                 tc(), tw.current?.(e.nativeEvent)
             }, [tc]);
         return (0, r.jsx)(d.DUT, {
-            className: T.W6,
-            "data-fullscreen": eW,
+            className: R.W6,
+            "data-fullscreen": eV,
             "data-testid": "discord-web-video-player-container",
             tabIndex: -1,
             onMouseEnter: () => {
@@ -279,61 +279,61 @@ let R = {
             onMouseMove: tc,
             onKeyDown: tj,
             children: (0, r.jsxs)("div", {
-                className: i()(T.NS, {
-                    [T.DO]: "portrait" === w,
-                    [T.r7]: "landscape" === w
+                className: i()(R.NS, {
+                    [R.DO]: "portrait" === w,
+                    [R.r7]: "landscape" === w
                 }),
                 style: {
                     "--custom-footer-horizontal-padding": "20px",
                     "--custom-footer-bottom": "4px"
                 },
-                children: [tT && K?.({
-                    replay: tR
-                }), (0, r.jsxs)(h.A, {
+                children: [tR && O?.({
+                    replay: tT
+                }), (0, r.jsxs)(f.A, {
                     ref: e => {
                         eJ.current = e, em.current = e, "function" == typeof t ? t(e) : null != t && (t.current = e)
                     },
                     autoPlay: C,
                     playsInline: !0,
-                    mediaLayoutType: eW ? A.dG.STATIC : A.dG.RESPONSIVE,
+                    mediaLayoutType: eV ? A.dG.STATIC : A.dG.RESPONSIVE,
                     className: i()({
-                        [T.R]: tT,
-                        [T.IR]: !0
+                        [R.R]: tR,
+                        [R.IR]: !0
                     }),
                     controls: !1,
-                    poster: D,
+                    poster: P,
                     preload: ee,
                     disablePictureInPicture: !0,
                     "data-testid": "discord-web-video-player-video",
                     onTimeUpdate: e => {
-                        null != eJ.current && (L?.(eJ.current.currentTime, eJ.current.duration), eC(eJ.current.currentTime / eJ.current.duration * 100))
+                        null != eJ.current && (M?.(eJ.current.currentTime, eJ.current.duration), eC(eJ.current.currentTime / eJ.current.duration * 100))
                     },
                     onEnded: e => {
                         tl(u.Q6.ENDED, u.KB.PLAYBACK_COMPLETE), ej(!1), k?.()
                     },
                     onLoadedData: e => {
-                        if (eT) {
+                        if (eR) {
                             let e = null != eU.current ? performance.now() - eU.current : null;
-                            F?.(e), eR(!1)
+                            $?.(e), eT(!1)
                         }
                     },
                     onLoadedMetadata: e => {
                         if (null == eJ.current) return;
-                        M > 0 && tf(M, !1), eQ ? eJ.current.volume = 0 : eJ.current.volume = e_;
+                        D > 0 && th(D, !1), eK ? eJ.current.volume = 0 : eJ.current.volume = e_;
                         let t = eJ.current.duration;
                         t > 0 && isFinite(t) && e5(t)
                     },
                     onLoadStart: () => {
-                        eU.current = performance.now(), $?.()
+                        eU.current = performance.now(), F?.()
                     },
                     onPlaying: () => {
                         if (!eB.current) return;
-                        let e = 0 !== N ? N : eK.current,
+                        let e = 0 !== N ? N : eO.current,
                             t = performance.now() - e;
                         Y?.(t), eB.current = !1
                     },
                     onWaiting: e => {
-                        eO.current = performance.now(), z?.(), ej(!0)
+                        eG.current = performance.now(), z?.(), ej(!0)
                     },
                     onProgress: e => {
                         if (null == eJ.current) return;
@@ -346,7 +346,7 @@ let R = {
                                 size: (r - n) / eJ.current.duration
                             })
                         }
-                        eD(t)
+                        eP(t)
                     },
                     onCanPlay: tb,
                     onCanPlayThrough: tb,
@@ -373,8 +373,8 @@ let R = {
                         src: es,
                         type: "video/mp4"
                     })]
-                }), (eT || ew) && ep === u.Q6.PLAYING && null != es && (0, r.jsx)("span", {
-                    className: T.S,
+                }), (eR || ew) && ep === u.Q6.PLAYING && null != es && (0, r.jsx)("span", {
+                    className: R.S,
                     "data-testid": "discord-web-video-player-loading-spinner",
                     children: (0, r.jsx)(d.y$y, {
                         type: d.y$y.Type.WANDERING_CUBES
@@ -387,7 +387,7 @@ let R = {
                     }),
                     showOverlay: null == es
                 }), null != J && (0, r.jsx)(s.animated.div, {
-                    className: T.MU,
+                    className: R.MU,
                     style: {
                         opacity: (0, s.to)([ty.to({
                             range: [0, 1],
@@ -404,37 +404,37 @@ let R = {
                     },
                     children: J()
                 }), null != Z && (0, r.jsx)("div", {
-                    className: T.MU,
+                    className: R.MU,
                     children: Z({
                         playerState: ep,
                         isControlBarExpanded: td
                     })
-                }), eF && ep !== u.Q6.ENDED && null != O && (0, r.jsxs)(r.Fragment, {
+                }), e$ && ep !== u.Q6.ENDED && null != G && (0, r.jsxs)(r.Fragment, {
                     children: [(0, r.jsx)(d.DUT, {
                         onClick: () => {
                             ep === u.Q6.PAUSED && tl(u.Q6.PLAYING, u.KB.USER), eY(!1)
                         },
                         tabIndex: -1,
                         children: (0, r.jsx)("div", {
-                            className: T.BG
+                            className: R.BG
                         })
                     }), (0, r.jsx)(s.animated.div, {
-                        className: i()(T.xr, {
-                            [T.MZ]: "portrait" === w
+                        className: i()(R.xr, {
+                            [R.MZ]: "portrait" === w
                         }),
                         "data-testid": "discord-web-video-player-transcript",
                         style: {
                             marginBottom: (0, s.to)([ty, tA], (e, t) => `${e*tr[tt]+t}px`)
                         },
                         children: (0, r.jsx)(g.X, {
-                            text: O,
+                            text: G,
                             onClose: () => {
                                 eY(!1)
                             }
                         })
                     })]
                 }), (0, r.jsx)(s.animated.div, {
-                    className: T.Jp,
+                    className: R.Jp,
                     style: {
                         opacity: (0, s.to)([ty.to({
                             range: [0, 1],
@@ -442,20 +442,20 @@ let R = {
                         })], e => `${e}`)
                     }
                 }), (0, r.jsx)("div", {
-                    className: i()(T.yf, {
-                        [T.ZH]: ep === u.Q6.PLAYING,
-                        [T.v7]: ep === u.Q6.PAUSED
+                    className: i()(R.yf, {
+                        [R.ZH]: ep === u.Q6.PLAYING,
+                        [R.v7]: ep === u.Q6.PAUSED
                     }),
                     style: {
                         "--custom-play-pause-pop-ms": "1000ms"
                     },
                     children: ep === u.Q6.PLAYING ? (0, r.jsx)(d.udU, {
-                        className: T.PK
+                        className: R.PK
                     }) : (0, r.jsx)(d.E$n, {
-                        className: T.PK
+                        className: R.PK
                     })
-                }, ep), ez && null != e7 && !tT && (0, r.jsx)(s.animated.div, {
-                    className: T.o$,
+                }, ep), ez && null != e9 && !tR && (0, r.jsx)(s.animated.div, {
+                    className: R.o$,
                     ref: tC,
                     "data-testid": "discord-web-video-player-captions",
                     style: {
@@ -467,11 +467,11 @@ let R = {
                     children: (0, r.jsx)(d.Text, {
                         variant: "text-lg/semibold",
                         color: "always-white",
-                        className: T.qh,
-                        children: e7.text
+                        className: R.qh,
+                        children: e9.text
                     })
                 }), (0, r.jsxs)(s.animated.div, {
-                    className: T.r8,
+                    className: R.r8,
                     style: {
                         height: (0, s.to)([ty.to({
                             range: [0, 1],
@@ -491,21 +491,21 @@ let R = {
                             interactionEnabled: ek && te > 0,
                             backgroundColor: td ? void 0 : "rgba(0, 0, 0, 0.0)",
                             playerState: ep,
-                            preloadedBuffers: td ? eP : void 0,
+                            preloadedBuffers: td ? eL : void 0,
                             durationSec: e3 > 0 ? e3 : 1,
                             isFullyVisible: td && ek,
                             maxSeekableTime: te > 0 ? te : void 0,
                             progressGlow: er,
                             onClick: e => {
-                                tf(e), ep === u.Q6.ENDED && tl(u.Q6.PLAYING, u.KB.USER)
+                                th(e), ep === u.Q6.ENDED && tl(u.Q6.PLAYING, u.KB.USER)
                             },
                             onScrubBack: tp,
-                            onScrubForward: th,
+                            onScrubForward: tf,
                             indicatorConfig: ei,
                             "data-testid": "discord-web-video-player-timeline"
                         })
                     }), (0, r.jsx)(s.animated.div, {
-                        className: T.uN,
+                        className: R.uN,
                         "data-testid": "discord-web-video-player-controls",
                         style: {
                             paddingTop: (0, s.to)([ty.to({
@@ -530,7 +530,7 @@ let R = {
                             visible: td,
                             seekForwardEnabled: null == B || (eJ.current?.currentTime ?? 0) + 1 < te,
                             hideCaptionBtn: null == U,
-                            hideTranscriptBtn: null == O,
+                            hideTranscriptBtn: null == G,
                             hideSkipButtons: "portrait" === w,
                             size: tt,
                             downloadUrl: et,
@@ -538,30 +538,30 @@ let R = {
                             autoFocus: ea,
                             keyDownHandlerRef: tw,
                             volume: e_,
-                            muted: eQ,
-                            transcriptEnabled: eF,
+                            muted: eK,
+                            transcriptEnabled: e$,
                             captionEnabled: ez,
-                            fullScreenEnabled: eW,
+                            fullScreenEnabled: eV,
                             handlePlaybackBtnClick: tx,
                             handleTranscriptBtnClick: () => {
-                                eY(!eF)
+                                eY(!e$)
                             },
                             handleCaptionBtnClick: () => {
                                 eX(!ez)
                             },
                             handleFullScreenBtnClick: () => {
-                                let e = !eW,
-                                    t = (0, f.qf)(eJ.current?.parentNode, eJ.current);
-                                e && null != t ? ((0, f.tl)(t), t.addEventListener(f.Wb, tm), G?.(!0), tn(u.oA.LG)) : e || null == t || (t.removeEventListener(f.Wb, tm), G?.(!1), (0, f.sP)(t), tn(u.oA.MD)), eH(e)
+                                let e = !eV,
+                                    t = (0, h.qf)(eJ.current?.parentNode, eJ.current);
+                                e && null != t ? ((0, h.tl)(t), t.addEventListener(h.Wb, tm), Q?.(!0), tn(u.oA.LG)) : e || null == t || (t.removeEventListener(h.Wb, tm), Q?.(!1), (0, h.sP)(t), tn(u.oA.MD)), eW(e)
                             },
                             handleSeekBackBtnClick: tp,
-                            handleSeekForwardBtnClick: th,
-                            handleControlBarPendingInteraction: eL,
+                            handleSeekForwardBtnClick: tf,
+                            handleControlBarPendingInteraction: eM,
                             onVolumeChange: e => {
-                                eG(e), Q?.(e)
+                                eQ(e), K?.(e)
                             },
                             onMutedChange: e => {
-                                e$(e)
+                                eF(e)
                             }
                         })
                     })]
@@ -590,13 +590,13 @@ function j(e) {
         disableSpinner: !0,
         children: (0, r.jsx)("img", {
             src: t,
-            className: T.zH,
+            className: R.zH,
             alt: "",
             onLoad: u
         })
     })
 }
-let P = l.forwardRef(function(e, t) {
+let L = l.forwardRef(function(e, t) {
     let {
         active: n = !0,
         ...a
@@ -606,8 +606,8 @@ let P = l.forwardRef(function(e, t) {
         orientation: c = "landscape",
         posterPlaceholder: m,
         posterPlaceholderVersion: p,
-        renderOverlay: h,
-        renderPersistentOverlay: f
+        renderOverlay: f,
+        renderPersistentOverlay: h
     } = a, [x, E] = l.useState(!1), v = l.useCallback(() => {
         E(!0)
     }, []), g = l.useRef(null);
@@ -616,7 +616,7 @@ let P = l.forwardRef(function(e, t) {
         autoplay: s || x,
         ref: t
     }) : (0, r.jsx)(d.DUT, {
-        className: T.W6,
+        className: R.W6,
         "data-testid": "discord-web-video-player-container",
         tabIndex: 0,
         onClick: v,
@@ -625,31 +625,31 @@ let P = l.forwardRef(function(e, t) {
             ringTarget: g
         },
         children: (0, r.jsxs)("div", {
-            className: i()(T.NS, {
-                [T.DO]: "portrait" === c,
-                [T.r7]: "landscape" === c
+            className: i()(R.NS, {
+                [R.DO]: "portrait" === c,
+                [R.r7]: "landscape" === c
             }),
             children: [(0, r.jsx)(j, {
                 poster: o,
                 posterPlaceholder: m,
                 posterPlaceholderVersion: p,
                 orientation: c
-            }), null != h && (0, r.jsx)("div", {
-                className: T.MU,
-                children: h()
             }), null != f && (0, r.jsx)("div", {
-                className: T.MU,
-                children: f({
+                className: R.MU,
+                children: f()
+            }), null != h && (0, r.jsx)("div", {
+                className: R.MU,
+                children: h({
                     playerState: u.Q6.PAUSED,
                     isControlBarExpanded: !0
                 })
             }), (0, r.jsx)("div", {
-                className: T.mF,
+                className: R.mF,
                 ref: g,
                 children: (0, r.jsx)(d.udU, {
                     size: "xs",
                     color: "currentColor",
-                    className: T.z_
+                    className: R.z_
                 })
             })]
         })

@@ -22,8 +22,8 @@ var i = n(627968),
     C = n(832163),
     I = n(317560),
     E = n(533406),
-    b = n(300182),
-    v = n(183802),
+    v = n(300182),
+    b = n(183802),
     T = n(652215),
     y = n(985018),
     S = n(23542);
@@ -78,10 +78,10 @@ function N(e) {
         })
     }) : null != L && null != M && (0, _.A)(M) && M.guildId === t ? (0, i.jsxs)("div", {
         className: S.kL,
-        children: [(0, i.jsx)(v.A, {
+        children: [(0, i.jsx)(b.A, {
             className: S.Nr,
             skuId: n,
-            variant: v.s.EMBEDDED,
+            variant: b.s.EMBEDDED,
             onClick: G,
             analyticsLocations: D
         }), (0, i.jsxs)("div", {
@@ -138,7 +138,7 @@ function N(e) {
                         price: (0, x.p3)(L, T.lid.DEFAULT)
                     }),
                     fullWidth: !0
-                }), (0, i.jsx)(b.A, {
+                }), (0, i.jsx)(v.A, {
                     onGift: H
                 })]
             })]

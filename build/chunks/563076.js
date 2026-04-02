@@ -9,8 +9,8 @@ var l = a(627968),
     r = a(607470),
     o = a(372684),
     u = a(226421),
-    c = a(252449),
-    d = a(429364),
+    d = a(252449),
+    c = a(429364),
     m = a(696016),
     h = a(14363),
     p = a(695241);
@@ -62,14 +62,14 @@ let v = n.forwardRef(function(e, t) {
         cropEnd: _,
         setVideoPlayerRef: C,
         videoURL: k,
-        audioURL: N
-    } = (0, d.T)(), y = n.useRef({}), E = n.useRef(!1), [A, S] = n.useState([]), w = n.useCallback(() => {
-        let e = y.current.main;
+        audioURL: y
+    } = (0, c.T)(), N = n.useRef({}), E = n.useRef(!1), [A, S] = n.useState([]), w = n.useCallback(() => {
+        let e = N.current.main;
         if (null == e) return;
         let t = (0, i.round)(e.currentTime, 3),
             a = (0, i.round)(j, 3);
         if (t >= (null != _ ? (0, i.round)(_, 3) : (0, i.round)(e.duration, 3)) || t < a) {
-            for (let e of Object.values(y.current)) null != e && (e.currentTime = j);
+            for (let e of Object.values(N.current)) null != e && (e.currentTime = j);
             return !0
         }
     }, [j, _]), I = n.useCallback(e => {
@@ -81,29 +81,29 @@ let v = n.forwardRef(function(e, t) {
         E.current && w() && T()
     });
     let T = n.useCallback(() => {
-            for (let e of (E.current = !0, w(), Object.values(y.current))) null != e && e.play()
+            for (let e of (E.current = !0, w(), Object.values(N.current))) null != e && e.play()
         }, [w]),
         L = n.useCallback(() => {
-            for (let e of Object.values(y.current)) null != e && e.pause()
+            for (let e of Object.values(N.current)) null != e && e.pause()
         }, []),
         R = n.useCallback(e => {
-            for (let t of (y.current.main?.paused && (E.current = !1), Object.values(y.current))) null != t && (t.currentTime = e)
+            for (let t of (N.current.main?.paused && (E.current = !1), Object.values(N.current))) null != t && (t.currentTime = e)
         }, []),
         M = n.useCallback(() => {
-            y.current.main?.paused ? T() : L()
+            N.current.main?.paused ? T() : L()
         }, [T, L]),
         O = n.useCallback(e => {
-            y.current.main = e
+            N.current.main = e
         }, []),
         U = n.useCallback((e, t) => {
-            y.current[t] = e
+            N.current[t] = e
         }, []);
     n.useImperativeHandle(t, () => {
         let e = {
             play: T,
             seek: R,
             pause: L,
-            videoElement: y.current.main
+            videoElement: N.current.main
         };
         return C(e), e
     }, [T, R, L, C]);
@@ -136,13 +136,13 @@ let v = n.forwardRef(function(e, t) {
             }),
             preload: "auto",
             onLoadedData: D
-        }), (0, l.jsx)(c.E, {
+        }), (0, l.jsx)(d.E, {
             soundboardAudioEnabled: b,
             voiceAudioEnabled: x,
             clip: a
         }), (0, l.jsx)("audio", {
             id: "ClipsPlayerAudioTrack:application",
-            src: N ?? void 0,
+            src: y ?? void 0,
             muted: f(":application", {
                 applicationAudioEnabled: v,
                 voiceAudioEnabled: x,
@@ -156,7 +156,7 @@ let v = n.forwardRef(function(e, t) {
         }), A.map(e => (0, l.jsx)(g, {
             setRef: U,
             audioTrackLabel: e,
-            src: N,
+            src: y,
             muted: f(e, {
                 applicationAudioEnabled: v,
                 voiceAudioEnabled: x,
