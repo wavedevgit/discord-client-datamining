@@ -3,9 +3,9 @@ n.d(t, {
     A: () => A
 });
 var i = n(627968),
-    l = n(64700),
-    a = n(503698),
-    r = n.n(a),
+    a = n(64700),
+    l = n(503698),
+    r = n.n(l),
     s = n(615300),
     o = n(837381),
     d = n(397927),
@@ -15,7 +15,7 @@ var u = n(376506);
 let A = function(e) {
     let {
         index: t,
-        children: a,
+        children: l,
         user: A,
         channel: h,
         onClick: _,
@@ -23,7 +23,7 @@ let A = function(e) {
         isActive: p,
         onOtherHover: g,
         className: E
-    } = e, [I, f] = l.useState(!1), [C, T] = l.useState(!1), N = () => {
+    } = e, [I, f] = a.useState(!1), [C, T] = a.useState(!1), N = () => {
         f(!0), !m || p || C || g?.()
     }, S = () => {
         f(!1)
@@ -63,7 +63,7 @@ let A = function(e) {
                     opacity: 1
                 },
                 ...e,
-                children: a(I || p || C)
+                children: l(I || p || C)
             })
         })
     })

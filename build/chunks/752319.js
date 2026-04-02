@@ -1,14 +1,14 @@
 /** chunk id: 752319 params = (module,exports,require) **/
 var i = n(311907),
-    l = n(73153),
-    a = n(287809),
+    a = n(73153),
+    l = n(287809),
     r = n(652215);
 let s = r.XlH.CLOSED,
     o = {},
     d = null;
 
 function c() {
-    let e = a.default.getCurrentUser();
+    let e = l.default.getCurrentUser();
     if (null == e) return u();
     s = r.XlH.OPEN, o = {}, d = {
         ...{
@@ -34,7 +34,7 @@ function A() {
 class h extends i.Ay.Store {
     static displayName = "UserSettingsAccountStore";
     initialize() {
-        this.waitFor(a.default)
+        this.waitFor(l.default)
     }
     getErrors() {
         return o
@@ -46,7 +46,7 @@ class h extends i.Ay.Store {
         return d
     }
 }
-new h(l.h, {
+new h(a.h, {
     USER_SETTINGS_MODAL_OPEN: function() {
         c()
     },
@@ -71,7 +71,7 @@ new h(l.h, {
     },
     USER_SETTINGS_MODAL_SUBMIT_COMPLETE: A,
     USER_SETTINGS_MODAL_RESET: function() {
-        let e = a.default.getCurrentUser();
+        let e = l.default.getCurrentUser();
         A(), null != e && (d = {
             ...{
                 userId: e.id,

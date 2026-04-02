@@ -1,9 +1,9 @@
 /** chunk id: 282026 params = (module,exports,require) **/
 n.d(t, {
-    A: () => a
+    A: () => l
 });
 var i = n(839214);
-let l = Object.freeze({
+let a = Object.freeze({
         query: "",
         languageCode: null,
         categoryId: n(324580).Iq,
@@ -12,4 +12,4 @@ let l = Object.freeze({
         resultsInitialCategoryId: null,
         scrollPosition: null
     }),
-    a = (0, i.D)(() => l)
+    l = (0, i.D)(() => a)

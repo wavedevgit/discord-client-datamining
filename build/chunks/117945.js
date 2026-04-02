@@ -7,5 +7,5 @@ var i = t(607399),
     r = t(788868);
 
 function s(e, n) {
-    return !e && n === r.pe.TIER_2 && !i.Ct && !i.KY && !(0, l.u6)()
+    return !e && n === r.pe.TIER_2 && !i.Ct && !i.KY && null == (0, l.uM)()
 }

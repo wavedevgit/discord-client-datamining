@@ -3,16 +3,16 @@ n.d(t, {
     A: () => d
 });
 var i = n(397927),
-    l = n(73153),
-    a = n(272355),
+    a = n(73153),
+    l = n(272355),
     r = n(480900),
     s = n(293260);
-class o extends a.A {
+class o extends l.A {
     _initialize() {
-        l.h.subscribe("GUILD_ROLE_CONNECTIONS_MODAL_SHOW", this.handleShow)
+        a.h.subscribe("GUILD_ROLE_CONNECTIONS_MODAL_SHOW", this.handleShow)
     }
     _terminate() {
-        l.h.unsubscribe("GUILD_ROLE_CONNECTIONS_MODAL_SHOW", this.handleShow)
+        a.h.unsubscribe("GUILD_ROLE_CONNECTIONS_MODAL_SHOW", this.handleShow)
     }
     handleShow(e) {
         let {

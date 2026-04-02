@@ -3,8 +3,8 @@ n.d(t, {
     A: () => o
 });
 var i = n(73153),
-    l = n(272355),
-    a = n(422258);
+    a = n(272355),
+    l = n(422258);
 
 function r(e) {
     let {
@@ -12,11 +12,11 @@ function r(e) {
             id: t
         }
     } = e;
-    (0, a.i_)(t, {
+    (0, l.i_)(t, {
         trackAnalytics: !1
     })
 }
-class s extends l.A {
+class s extends a.A {
     _initialize() {
         i.h.subscribe("CHANNEL_DELETE", r)
     }

@@ -1,8 +1,8 @@
 /** chunk id: 802061 params = (module,exports,require) **/
 n(321073);
 var i = n(311907),
-    l = n(73153),
-    a = n(961350),
+    a = n(73153),
+    l = n(961350),
     r = n(734057),
     s = n(71393),
     o = n(661191),
@@ -17,7 +17,7 @@ class A extends i.Ay.PersistedStore {
     static displayName = "GuildProgressStore";
     static persistKey = "GuildProgressStore";
     initialize(e) {
-        this.waitFor(a.default, r.A, s.A), c = {}, null != e && o.default.keys(e).forEach(t => {
+        this.waitFor(l.default, r.A, s.A), c = {}, null != e && o.default.keys(e).forEach(t => {
             let n = e[t];
             null != n && "function" == typeof n[Symbol.iterator] && (c[t] = new Set(n))
         })
@@ -33,7 +33,7 @@ class A extends i.Ay.PersistedStore {
         return c
     }
 }
-new A(l.h, {
+new A(a.h, {
     CONNECTION_OPEN: function() {
         let e = [];
         o.default.keys(c).forEach(t => {
@@ -67,7 +67,7 @@ new A(l.h, {
             }
         } = e, i = s.A.getGuild(t);
         if (null == i) return !1;
-        i.ownerId === a.default.getId() && null != c[i.id] && (null != i.icon && c[i.id].add(d.gj.AVATAR), n > 1 && c[i.id].add(d.gj.INVITE))
+        i.ownerId === l.default.getId() && null != c[i.id] && (null != i.icon && c[i.id].add(d.gj.AVATAR), n > 1 && c[i.id].add(d.gj.INVITE))
     },
     CHANNEL_CREATE: function(e) {
         let {
@@ -93,7 +93,7 @@ new A(l.h, {
             channelId: t,
             message: n
         } = e, i = r.A.getChannel(t);
-        return n.author?.id === a.default.getId() && null != i && null != c[i.guild_id] && u(i.guild_id, d.gj.MESSAGE)
+        return n.author?.id === l.default.getId() && null != i && null != c[i.guild_id] && u(i.guild_id, d.gj.MESSAGE)
     },
     GUILD_MEMBER_LIST_UPDATE: function(e) {
         let {

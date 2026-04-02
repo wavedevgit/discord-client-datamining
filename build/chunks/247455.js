@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var l = n(503698),
-    a = n.n(l),
+var a = n(503698),
+    l = n.n(a),
     r = n(303136),
     s = n(751089),
     o = n(181713);
@@ -13,10 +13,10 @@ let d = e => {
     let {
         className: t,
         isAnimated: n = !1,
-        questName: l
+        questName: a
     } = e, d = n ? o.A : o.A + "?format=webp";
     return (0, i.jsx)("div", {
-        className: a()(s.k, t),
+        className: l()(s.k, t),
         children: n ? (0, i.jsx)(r.A, {
             preload: "auto",
             className: s.L,
@@ -27,7 +27,7 @@ let d = e => {
         }) : (0, i.jsx)("img", {
             className: s.L,
             src: d,
-            alt: l
+            alt: a
         })
     })
 }

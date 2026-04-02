@@ -3,9 +3,9 @@ n.d(t, {
     A: () => y
 });
 var i = n(627968),
-    l = n(64700),
-    a = n(503698),
-    r = n.n(a),
+    a = n(64700),
+    l = n(503698),
+    r = n.n(l),
     s = n(575593),
     o = n(440703),
     d = n(311907),
@@ -27,10 +27,10 @@ var i = n(627968),
     x = n(652215),
     v = n(985018),
     b = n(598766);
-let y = (0, l.memo)(function(e) {
+let y = (0, a.memo)(function(e) {
     let {
         quest: t
-    } = e, [n, a] = (0, l.useState)(!1), [y, O] = (0, l.useState)(24), [L, R] = (0, l.useState)(!1), P = (0, l.useRef)(null), D = (0, l.useRef)(null), M = (0, l.useRef)(null), j = (0, d.bG)([p.default], () => p.default.getCurrentUser()), {
+    } = e, [n, l] = (0, a.useState)(!1), [y, O] = (0, a.useState)(24), [L, R] = (0, a.useState)(!1), P = (0, a.useRef)(null), D = (0, a.useRef)(null), M = (0, a.useRef)(null), j = (0, d.bG)([p.default], () => p.default.getCurrentUser()), {
         ref: w,
         height: U = 0
     } = (0, A.Ay)(), G = (0, h.Ay)(), k = (0, I.S5)(t.userStatus?.claimedAt, {
@@ -44,12 +44,12 @@ let y = (0, l.memo)(function(e) {
         if (!F || null == t || null == D.current || null == P.current || null == M.current) return;
         let n = P.current.getBoundingClientRect(),
             i = D.current.getBoundingClientRect(),
-            l = M.current.getBoundingClientRect();
-        O((i.top - n.top - l.height) / 2)
+            a = M.current.getBoundingClientRect();
+        O((i.top - n.top - a.height) / 2)
     });
     let q = (0, c.Mw)(G),
-        z = (0, l.useMemo)(() => null != t.config.cosponsorMetadata, [t]),
-        $ = (0, l.useMemo)(() => (0, f.tW)(t, f.fY.REWARD), [t]),
+        z = (0, a.useMemo)(() => null != t.config.cosponsorMetadata, [t]),
+        $ = (0, a.useMemo)(() => (0, f.tW)(t, f.fY.REWARD), [t]),
         Q = n ? U + 8 : 0,
         {
             content_position: X,
@@ -57,13 +57,13 @@ let y = (0, l.memo)(function(e) {
             ...J
         } = (0, C.fF)(E.uF.TROPHY_CASE_CARD),
         ee = () => {
-            a(!0), g.default.track(x.HAw.QUEST_HOVER, {
+            l(!0), g.default.track(x.HAw.QUEST_HOVER, {
                 quest_id: t.id,
                 ...J
             })
         },
         et = () => {
-            a(!1)
+            l(!1)
         },
         en = e => {
             R(!0), g.default.track(x.HAw.QUEST_ASSET_LOADING_FAILURE, {

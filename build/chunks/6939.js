@@ -3,8 +3,8 @@ n.d(t, {
     A: () => d
 });
 var i = n(627968),
-    l = n(64700),
-    a = n(397927),
+    a = n(64700),
+    l = n(397927),
     r = n(51271),
     s = n(985018),
     o = n(714001);
@@ -13,30 +13,30 @@ let d = function(e) {
         onWithdrawApplication: t,
         guild: n = null
     } = e, d = n?.id;
-    return l.useEffect(() => {
+    return a.useEffect(() => {
         null != d && (0, r.NC)(d)
     }, [d]), (0, i.jsxs)("div", {
         className: o.EL,
         children: [(0, i.jsx)("div", {
             className: o.P0,
-            children: (0, i.jsx)(a.Qfk, {
+            children: (0, i.jsx)(l.Qfk, {
                 size: "md",
-                color: a.LU0.colors.INTERACTIVE_TEXT_ACTIVE
+                color: l.LU0.colors.INTERACTIVE_TEXT_ACTIVE
             })
         }), (0, i.jsxs)("div", {
             className: o.bc,
-            children: [(0, i.jsx)(a.Heading, {
+            children: [(0, i.jsx)(l.Heading, {
                 variant: "heading-lg/semibold",
                 color: "text-strong",
                 children: n?.name != null ? s.intl.formatToPlainString(s.t["0Qlu/6"], {
                     guildName: n.name
                 }) : s.intl.string(s.t["5iLvSx"])
-            }), (0, i.jsx)(a.Text, {
+            }), (0, i.jsx)(l.Text, {
                 variant: "text-md/medium",
                 color: "text-default",
                 children: s.intl.string(s.t.FdsK4h)
             })]
-        }), (0, i.jsx)(a.Button, {
+        }), (0, i.jsx)(l.Button, {
             fullWidth: !0,
             onClick: t,
             variant: "critical-primary",

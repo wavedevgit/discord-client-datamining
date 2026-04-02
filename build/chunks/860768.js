@@ -3,8 +3,8 @@ n.d(t, {
     A: () => _
 });
 var i = n(627968),
-    l = n(64700),
-    a = n(397927),
+    a = n(64700),
+    l = n(397927),
     r = n(843472),
     s = n(309010),
     o = n(64983),
@@ -12,12 +12,12 @@ var i = n(627968),
     c = n(49999),
     u = n(985018),
     A = n(988726);
-class h extends l.PureComponent {
+class h extends a.PureComponent {
     handleInvite = () => {
         let {
             guild: e
         } = this.props;
-        (0, a.mMO)(async () => {
+        (0, l.mMO)(async () => {
             let {
                 default: t
             } = await Promise.all([n.e("43600"), n.e("55221")]).then(n.bind(n, 234355));

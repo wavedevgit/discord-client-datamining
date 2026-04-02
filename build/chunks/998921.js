@@ -3,9 +3,9 @@ n.d(t, {
     A: () => T
 });
 var i = n(264572),
-    l = n(143236),
-    a = n(735438),
-    r = n.n(a),
+    a = n(143236),
+    l = n(735438),
+    r = n.n(l),
     s = n(626584),
     o = n(837921),
     d = n(84002),
@@ -44,7 +44,7 @@ function E(e) {
                 })), e.destroy()
             }
         });
-        let l = () => {
+        let a = () => {
                 try {
                     e.end(I(m.CLOSE, {
                         code: A.YI$.CLOSE_NORMAL,
@@ -52,24 +52,24 @@ function E(e) {
                     })), e.destroy()
                 } catch (e) {}
             },
-            a = Promise.race([new Promise(t => e.on("error", () => t())), new Promise((t, n) => {
+            l = Promise.race([new Promise(t => e.on("error", () => t())), new Promise((t, n) => {
                 e.on("pong", () => n(Error("socket responded with pong")))
             }), new Promise((e, t) => {
                 setTimeout(() => t(Error("socket alive timeout")), 1e3)
             })]).then(() => {
-                l()
+                a()
             }, e => {
-                throw l(), e
+                throw a(), e
             });
-        return e.write(I(m.PING, r().uniqueId())), a.then(t, n)
+        return e.write(I(m.PING, r().uniqueId())), l.then(t, n)
     })
 }
 
 function I(e, t) {
     t = JSON.stringify(t);
     let n = i.Buffer.byteLength(t),
-        l = i.Buffer.alloc(8 + n);
-    return l.writeInt32LE(e, 0), l.writeInt32LE(n, 4), l.write(t, 8, n), l.buffer.slice(l.byteOffset, l.byteOffset + l.byteLength)
+        a = i.Buffer.alloc(8 + n);
+    return a.writeInt32LE(e, 0), a.writeInt32LE(n, 4), a.write(t, 8, n), a.buffer.slice(a.byteOffset, a.byteOffset + a.byteLength)
 }
 class f extends c.A {
     messageBuffer = i.Buffer.alloc(0);
@@ -81,8 +81,8 @@ class f extends c.A {
         super("ipc", A.dL4, t), this.socket = e, p(e, !1)
     }
     copyBuffer(e, t, n) {
-        let l = i.Buffer.allocUnsafe(n - t);
-        return e.copy(l, 0, t, n), l
+        let a = i.Buffer.allocUnsafe(n - t);
+        return e.copy(a, 0, t, n), a
     }
     send(e) {
         _.info(`Socket Emit: ${this.id}`, (0, d.A)(e)), this.socket.write(I(m.FRAME, e))
@@ -142,7 +142,7 @@ class f extends c.A {
         this.clientId = t.client_id, this.checkRpcVersion(+t.v), p(e, !0)
     }
 }
-class C extends l.EventEmitter {
+class C extends a.EventEmitter {
     activeConnections = 0;
     MAX_CONNECTIONS = 100;
     constructor() {
@@ -184,9 +184,9 @@ class C extends l.EventEmitter {
         e.on("readable", () => {
             let n = e.read();
             null != n && t.read(i.Buffer.from(n))
-        }), e.on("data", l => {
+        }), e.on("data", a => {
             try {
-                t.read(i.Buffer.from(l))
+                t.read(i.Buffer.from(a))
             } catch (t) {
                 clearTimeout(n), _.error(`Socket Error: ${t.message}`), e.end(I(m.CLOSE, {
                     code: A.YI$.CLOSE_UNSUPPORTED,

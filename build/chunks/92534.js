@@ -3,8 +3,8 @@ n.d(t, {
     B: () => g
 });
 var i = n(627968),
-    l = n(64700),
-    a = n(308368),
+    a = n(64700),
+    l = n(308368),
     r = n(308528),
     s = n(442433),
     o = n(49229),
@@ -19,7 +19,7 @@ var i = n(627968),
 
 function g(e) {
     return {
-        handlePrimaryAction: l.useCallback(t => {
+        handlePrimaryAction: a.useCallback(t => {
             switch (t.type) {
                 case u.c.OPEN_DIRECT_MESSAGE:
                     if (null == t.userId) return;
@@ -85,7 +85,7 @@ function g(e) {
                     break;
                 case u.c.SEND_ACTIVITY_INVITE:
                     if (null == t.userId || null == t.activity) return;
-                    a.A.sendActivityInviteUser({
+                    l.A.sendActivityInviteUser({
                         type: _.xL.JOIN,
                         userId: t.userId,
                         activity: t.activity,
@@ -94,7 +94,7 @@ function g(e) {
                     break;
                 case u.c.ASK_TO_JOIN:
                     if (null == t.userId || null == t.activity) return;
-                    a.A.sendActivityInviteUser({
+                    l.A.sendActivityInviteUser({
                         type: _.xL.JOIN_REQUEST,
                         userId: t.userId,
                         activity: t.activity,
@@ -140,7 +140,7 @@ function g(e) {
                     t.type
             }
         }, [e]),
-        handleContextMenu: l.useCallback(e => {
+        handleContextMenu: a.useCallback(e => {
             switch (e.type) {
                 case u.K.FRIEND_ROW:
                     if (null == e.user) return;
@@ -228,9 +228,9 @@ function g(e) {
                     let t = e.guild?.id ?? null;
                     (0, s.L3)(e.event, async () => {
                         let {
-                            default: l
+                            default: a
                         } = await Promise.all([n.e("97262"), n.e("32418"), n.e("84821")]).then(n.bind(n, 668569));
-                        return n => (0, i.jsx)(l, {
+                        return n => (0, i.jsx)(a, {
                             ...n,
                             user: e.user,
                             guildId: t ?? void 0,

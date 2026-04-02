@@ -9,8 +9,8 @@ var r = n(627968),
     a = n.n(l),
     s = n(284009),
     o = n.n(s),
-    c = n(687498),
-    u = n(942381),
+    u = n(687498),
+    c = n(942381),
     d = n(837381),
     h = n(319354),
     f = n(397927),
@@ -32,11 +32,11 @@ function S(e) {
         dismissibleBadge: l
     } = e, {
         useTitle: s,
-        useSubnavLabel: c,
-        key: u
-    } = t, h = s?.(), m = c?.() ?? h;
+        useSubnavLabel: u,
+        key: c
+    } = t, h = s?.(), m = u?.() ?? h;
     return o()(null != m, "[SettingsSubnavigationCategory] Category must have a title"), (0, r.jsx)(d.tG, {
-        id: u,
+        id: c,
         children: e => (0, r.jsxs)(f.DUT, {
             onClick: n,
             className: a()(A.AS, {
@@ -46,7 +46,7 @@ function S(e) {
             children: [m, null != l && !i && (0, r.jsx)(g.A, {
                 badge: l
             })]
-        }, u)
+        }, c)
     })
 }
 
@@ -69,7 +69,7 @@ function b(e) {
         let n = t.find(t => t.key === e);
         null != n && s(n.key)
     }, {
-        equalityFn: u.x
+        equalityFn: c.x
     }), [t]);
     let o = i.useMemo(() => Math.max(t.findIndex(e => e.key === a), 0), [t, a]),
         {
@@ -84,7 +84,7 @@ function b(e) {
                 l = i.useRef(null),
                 a = i.useRef(!0),
                 s = i.useRef(t),
-                [o, c] = (0, f.zhh)(() => ({
+                [o, u] = (0, f.zhh)(() => ({
                     y: 0,
                     height: 0,
                     config: {
@@ -97,19 +97,19 @@ function b(e) {
                 let e = s.current !== t,
                     i = () => {
                         if (null == n.current || null == r.current || null == l.current) return;
-                        let [i, u] = [n.current.getBoundingClientRect(), l.current.getBoundingClientRect()], d = i.width / 2, h = (u.y - i.y) / d, f = u.height / d;
-                        a.current || e || m.A.useReducedMotion ? (o.y.set(h), o.height.set(f)) : c({
+                        let [i, c] = [n.current.getBoundingClientRect(), l.current.getBoundingClientRect()], d = i.width / 2, h = (c.y - i.y) / d, f = c.height / d;
+                        a.current || e || m.A.useReducedMotion ? (o.y.set(h), o.height.set(f)) : u({
                             y: h,
                             height: f
                         }), a.current = !1, s.current = t
                     },
-                    u = null;
-                return e ? u = requestAnimationFrame(() => {
-                    u = null, i()
+                    c = null;
+                return e ? c = requestAnimationFrame(() => {
+                    c = null, i()
                 }) : i(), () => {
-                    null != u && cancelAnimationFrame(u)
+                    null != c && cancelAnimationFrame(c)
                 }
-            }, [e, c, o.y, o.height, t]), {
+            }, [e, u, o.y, o.height, t]), {
                 thumbRef: r,
                 trackRef: n,
                 thumbAnchorRef: l,
@@ -129,7 +129,7 @@ function b(e) {
             className: A.u4,
             "aria-hidden": "true",
             ref: g,
-            children: (0, r.jsx)(c.animated.div, {
+            children: (0, r.jsx)(u.animated.div, {
                 className: A.FF,
                 style: N,
                 ref: d

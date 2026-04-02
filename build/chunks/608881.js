@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var l = n(503698),
-    a = n.n(l),
+var a = n(503698),
+    l = n.n(a),
     r = n(311907),
     s = n(554146),
     o = n(397927),
@@ -30,7 +30,7 @@ function f() {
         children: (0, i.jsx)(d.A, {
             section: g.JJy.ACTIVE_NOW_COLUMN,
             children: (0, i.jsx)("aside", {
-                className: a()(I.kL, "refresh-active-now"),
+                className: l()(I.kL, "refresh-active-now"),
                 "aria-labelledby": n,
                 children: (0, i.jsx)(o.HOs, {
                     className: I.XG,

@@ -3,8 +3,8 @@ n.d(t, {
     A: () => o
 });
 var i = n(311907),
-    l = n(73153),
-    a = n(596720);
+    a = n(73153),
+    l = n(596720);
 let r = {};
 class s extends i.Ay.DeviceSettingsStore {
     static displayName = "ICYMIFiltersStore";
@@ -16,7 +16,7 @@ class s extends i.Ay.DeviceSettingsStore {
         return !0 === r.filterStaffContent
     }
     getDoubleTapBehavior() {
-        return r.doubleTapBehavior ?? a.Ai.DEFAULT
+        return r.doubleTapBehavior ?? l.Ai.DEFAULT
     }
     getState() {
         return r
@@ -25,7 +25,7 @@ class s extends i.Ay.DeviceSettingsStore {
         return r
     }
 }
-let o = new s(l.h, {
+let o = new s(a.h, {
     SET_ICYMI_FILTERS: function(e) {
         r = e.filters
     }

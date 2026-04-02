@@ -3,8 +3,8 @@ n.d(t, {
     A: () => x
 }), n(321073);
 var i = n(73153),
-    l = n(272355),
-    a = n(400492),
+    a = n(272355),
+    l = n(400492),
     r = n(312671),
     s = n(961350),
     o = n(383501),
@@ -13,7 +13,7 @@ var i = n(73153),
     u = n(3137),
     A = n(559908),
     h = n(652215);
-let _ = (0, a.aN)("poggermode_applause", r.A.getSoundpack()),
+let _ = (0, l.aN)("poggermode_applause", r.A.getSoundpack()),
     m = !1,
     p = !1,
     g = [],
@@ -30,7 +30,7 @@ let _ = (0, a.aN)("poggermode_applause", r.A.getSoundpack()),
         if (0 === g.length || !f() || p) return;
         p = !0;
         let [e, t] = g[g.length - 1];
-        (0, a.Ak)(e, t), E = setTimeout(T, 1e3)
+        (0, l.Ak)(e, t), E = setTimeout(T, 1e3)
     },
     T = () => {
         g.pop(), p = !1, C()
@@ -40,7 +40,7 @@ let _ = (0, a.aN)("poggermode_applause", r.A.getSoundpack()),
             n = o.A.isConnected();
         g.push([e, t * (n ? .1 : 1)]), C()
     };
-class S extends l.A {
+class S extends a.A {
     _initialize() {
         A.Ay.addChangeListener(this.startAudio), i.h.subscribe("RTC_CONNECTION_STATE", this.setVolume), i.h.subscribe("TYPING_STOP", this.stopAudio), i.h.subscribe("TYPING_STOP_LOCAL", this.stopAudio), i.h.subscribe("CHANNEL_SELECT", this.stopAudio), i.h.subscribe("POGGERMODE_SETTINGS_UPDATE", this.stopAudio)
     }
@@ -69,8 +69,8 @@ class S extends l.A {
         let t = s.default.getId(),
             n = c.A.isTyping(e, t),
             i = A.Ay.getUserCombo(t, e),
-            l = i?.multiplier ?? 1;
-        n && l >= 7 ? m || (_.loop(), m = !0) : I()
+            a = i?.multiplier ?? 1;
+        n && a >= 7 ? m || (_.loop(), m = !0) : I()
     }
     playAchievementUnlockSound() {
         f() && N("poggermode_achievement_unlock")

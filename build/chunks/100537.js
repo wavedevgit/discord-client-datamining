@@ -3,9 +3,9 @@ n.d(t, {
     A: () => M
 });
 var i = n(627968),
-    l = n(64700),
-    a = n(503698),
-    r = n.n(a),
+    a = n(64700),
+    l = n(503698),
+    r = n.n(l),
     s = n(311907),
     o = n(827734),
     d = n(421380),
@@ -40,26 +40,26 @@ let D = {
 function M(e) {
     let {
         frame: t
-    } = e, n = (0, g.h)(t.applicationId), a = (0, u.A)(), {
+    } = e, n = (0, g.h)(t.applicationId), l = (0, u.A)(), {
         selectedChannelId: M,
         selectedVoiceChannelId: j
     } = (0, s.cf)([S.A], () => ({
         selectedChannelId: S.A.getChannelId(),
         selectedVoiceChannelId: S.A.getVoiceChannelId()
-    })), w = (0, s.bG)([E.A], () => null != j && M === j && E.A.getChatOpen(j), [M, j]), U = (0, s.bG)([f.Ay], () => f.Ay.callChatSidebarWidth), G = (0, c.rdh)(o.A.modules.chat.RESIZE_HANDLE_WIDTH), k = l.useRef(null), V = l.useRef(null), [B, H] = l.useState({
+    })), w = (0, s.bG)([E.A], () => null != j && M === j && E.A.getChatOpen(j), [M, j]), U = (0, s.bG)([f.Ay], () => f.Ay.callChatSidebarWidth), G = (0, c.rdh)(o.A.modules.chat.RESIZE_HANDLE_WIDTH), k = a.useRef(null), V = a.useRef(null), [B, H] = a.useState({
         width: 0,
         height: 0
-    }), F = l.useCallback(() => {
+    }), F = a.useCallback(() => {
         x.A.updateFrameLayoutMode({
             applicationId: t.applicationId,
             layoutMode: y.y.PIP
         })
-    }, [t.applicationId]), Y = l.useCallback(() => {
+    }, [t.applicationId]), Y = a.useCallback(() => {
         x.A.stopFrame({
             applicationId: t.applicationId
         })
     }, [t.applicationId]);
-    l.useLayoutEffect(() => {
+    a.useLayoutEffect(() => {
         if (null == V.current) return;
         let e = new ResizeObserver(() => {
             H({
@@ -68,9 +68,9 @@ function M(e) {
             })
         });
         return e.observe(V.current), () => e.disconnect()
-    }, []), l.useEffect(() => {
+    }, []), a.useEffect(() => {
         let e = e => {
-            null == k.current || (0, c.HG$)(k.current, e.target) || a || x.A.updateFrameLayoutMode({
+            null == k.current || (0, c.HG$)(k.current, e.target) || l || x.A.updateFrameLayoutMode({
                 applicationId: t.applicationId,
                 layoutMode: y.y.PIP
             })
@@ -78,7 +78,7 @@ function M(e) {
         return document.addEventListener("mousedown", e), () => {
             document.removeEventListener("mousedown", e)
         }
-    }, [t.applicationId, a]);
+    }, [t.applicationId, l]);
     let W = B.width / Math.max(B.height, 1) < L.B5,
         K = 0,
         q = 0,

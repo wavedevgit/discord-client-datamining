@@ -3,8 +3,8 @@ n.d(t, {
     A: () => I
 }), n(938796);
 var i = n(735438),
-    l = n.n(i),
-    a = n(179771),
+    a = n.n(i),
+    l = n(179771),
     r = n(599026),
     s = n(73153),
     o = n(182892),
@@ -21,7 +21,7 @@ let E = ["1402418171662569542"],
     I = {
         [g.e$_.SET_ACTIVITY]: {
             scope: {
-                [p.sm.ANY]: [a.F.RPC, a.F.RPC_ACTIVITIES_WRITE, p.hj]
+                [p.sm.ANY]: [l.F.RPC, l.F.RPC_ACTIVITIES_WRITE, p.hj]
             },
             validation: e => (0, m.A)(e).required().keys({
                 pid: e.number().min(0),
@@ -69,7 +69,7 @@ let E = ["1402418171662569542"],
                     socket: n,
                     args: {
                         pid: i,
-                        activity: a
+                        activity: l
                     },
                     isSocketConnected: r
                 } = e;
@@ -79,24 +79,24 @@ let E = ["1402418171662569542"],
                 if (null == i && p.z4.IPC === n.transport) throw new _.A({
                     errorCode: g.Lw6.INVALID_COMMAND
                 }, "nonzero pid required");
-                if (null == a) return s.h.dispatch({
+                if (null == l) return s.h.dispatch({
                     type: "LOCAL_ACTIVITY_UPDATE",
                     socketId: n.id,
                     pid: i,
-                    activity: a
-                }), Promise.resolve(a);
+                    activity: l
+                }), Promise.resolve(l);
                 let m = {};
-                a.name || (a.name = n.application.name);
+                l.name || (l.name = n.application.name);
                 let I = n.application.id;
-                a.application_id = I;
+                l.application_id = I;
                 let f = n.transport === p.z4.POST_MESSAGE;
-                a.platform = f ? g.yTV.EMBEDDED : g.yTV.DESKTOP;
+                l.platform = f ? g.yTV.EMBEDDED : g.yTV.DESKTOP;
                 let C = d.A.getApplication(I ?? void 0),
-                    T = a.instance ?? !1,
-                    N = a.party?.privacy;
-                delete a.instance, delete a.party?.privacy;
-                let S = (0, o.E)(a, T, f, null != C && (0, c.x)(C) && f, N);
-                S > 0 && (a.flags = S);
+                    T = l.instance ?? !1,
+                    N = l.party?.privacy;
+                delete l.instance, delete l.party?.privacy;
+                let S = (0, o.E)(l, T, f, null != C && (0, c.x)(C) && f, N);
+                S > 0 && (l.flags = S);
                 let {
                     assets: x,
                     party: v,
@@ -104,20 +104,20 @@ let E = ["1402418171662569542"],
                     timestamps: y,
                     buttons: O,
                     type: L
-                } = a;
-                if (null == L && (a.type = g.$pd.PLAYING), null != b) {
-                    let e = l().values(b).filter(e => !!e);
-                    if (null != v && l().intersection(e, [v.id]).length > 0 && !E.includes(n.application.id)) throw new _.A({
+                } = l;
+                if (null == L && (l.type = g.$pd.PLAYING), null != b) {
+                    let e = a().values(b).filter(e => !!e);
+                    if (null != v && a().intersection(e, [v.id]).length > 0 && !E.includes(n.application.id)) throw new _.A({
                         errorCode: g.Lw6.INVALID_ACTIVITY_SECRET
                     }, "secrets cannot match the party id");
-                    if (l().uniq(e).length < e.length) throw new _.A({
+                    if (a().uniq(e).length < e.length) throw new _.A({
                         errorCode: g.Lw6.INVALID_ACTIVITY_SECRET
                     }, "secrets must be unique");
                     if (null != O) throw new _.A({
                         errorCode: g.Lw6.INVALID_ACTIVITY_SECRET
                     }, "secrets cannot currently be sent with buttons")
                 }
-                if (null != O && (m.button_urls = O.map(e => e.url), a.buttons = O.map(e => e.label)), a.metadata = m, null != y)
+                if (null != O && (m.button_urls = O.map(e => e.url), l.buttons = O.map(e => e.label)), l.metadata = m, null != y)
                     for (let e of Object.keys(y)) Date.now().toString().length - y[e].toString().length > 2 && (y[e] = Math.floor(y[e] * h.A.Millis.SECOND));
                 if (null == x) t = Promise.resolve([]);
                 else {
@@ -125,28 +125,28 @@ let E = ["1402418171662569542"],
                     t = (0, A.RG)(n.application.id, [x.large_image, x.small_image, x.invite_cover_image])
                 }
                 return t.then(e => {
-                    let [t, l, o] = e;
-                    if (null != x && (null != t ? x.large_image = t : delete x.large_image, null != l ? x.small_image = l : delete x.small_image, null != o ? x.invite_cover_image = o : delete x.invite_cover_image), !r()) return;
+                    let [t, a, o] = e;
+                    if (null != x && (null != t ? x.large_image = t : delete x.large_image, null != a ? x.small_image = a : delete x.small_image, null != o ? x.invite_cover_image = o : delete x.invite_cover_image), !r()) return;
                     s.h.dispatch({
                         type: "LOCAL_ACTIVITY_UPDATE",
                         socketId: n.id,
                         pid: i,
-                        activity: a,
+                        activity: l,
                         partyPrivacy: N
                     });
                     let {
                         secrets: d,
                         party: c
-                    } = a, A = {
+                    } = l, A = {
                         application_id: n.application.id,
-                        type: a.type,
-                        name: a.name,
-                        status_display_type: a.status_display_type,
-                        details: a.details ?? "",
-                        state: a.state ?? "",
-                        has_urls: null != a.state_url || null != a.details_url || a.assets?.large_url != null || a.assets?.small_url != null
+                        type: l.type,
+                        name: l.name,
+                        status_display_type: l.status_display_type,
+                        details: l.details ?? "",
+                        state: l.state ?? "",
+                        has_urls: null != l.state_url || null != l.details_url || l.assets?.large_url != null || l.assets?.small_url != null
                     };
-                    return null != d && (A.has_match_secret = !!d.match, A.has_join_secret = !!d.join), null != x && (A.has_images = !!(x.large_image || x.small_image || x.invite_cover_image)), null != c && (A.party_max = null != c.size && c.size[1] > 0 ? c.size[1] : void 0, A.party_id = c.id), u.default.track(g.HAw.ACTIVITY_UPDATED, A), a
+                    return null != d && (A.has_match_secret = !!d.match, A.has_join_secret = !!d.join), null != x && (A.has_images = !!(x.large_image || x.small_image || x.invite_cover_image)), null != c && (A.party_max = null != c.size && c.size[1] > 0 ? c.size[1] : void 0, A.party_id = c.id), u.default.track(g.HAw.ACTIVITY_UPDATED, A), l
                 })
             }
         }

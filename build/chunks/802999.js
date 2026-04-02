@@ -3,9 +3,9 @@ n.d(t, {
     A: () => C
 });
 var i = n(627968),
-    l = n(64700),
-    a = n(503698),
-    r = n.n(a),
+    a = n(64700),
+    l = n(503698),
+    r = n.n(l),
     s = n(397927),
     o = n(73153),
     d = n(944791),
@@ -20,8 +20,8 @@ var i = n(627968),
     E = n(652215),
     I = n(613057),
     f = n(529529);
-class C extends l.PureComponent {
-    _scrollerRef = l.createRef();
+class C extends a.PureComponent {
+    _scrollerRef = a.createRef();
     _scrollToOnMount;
     _scrollToPadding = 0;
     state = {
@@ -56,7 +56,7 @@ class C extends l.PureComponent {
                 })
             })
         });
-        return (0, i.jsxs)(l.Fragment, {
+        return (0, i.jsxs)(a.Fragment, {
             children: [(0, i.jsx)(m.A, {
                 currentRoute: E.BVt.APPLICATION_LIBRARY,
                 renderToolbar: this.renderToolbar

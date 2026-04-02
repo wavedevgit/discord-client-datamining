@@ -3,9 +3,9 @@ n.d(t, {
     A: () => p
 });
 var i = n(627968),
-    l = n(64700),
-    a = n(503698),
-    r = n.n(a),
+    a = n(64700),
+    l = n(503698),
+    r = n.n(l),
     s = n(735438),
     o = n(421380),
     d = n(397927),
@@ -19,7 +19,7 @@ let m = (0, s.debounce)(c.Ay.trackWithMetadata, 500),
         let {
             guild: t,
             title: n,
-            message: a,
+            message: l,
             image: s,
             type: p,
             imageStyles: g,
@@ -34,7 +34,7 @@ let m = (0, s.debounce)(c.Ay.trackWithMetadata, 500),
             centerText: v,
             className: b
         } = e;
-        l.useEffect(() => {
+        a.useEffect(() => {
             m(A.HAw.CHANNEL_NOTICE_VIEWED, {
                 notice_type: p,
                 guild_id: t.id
@@ -68,13 +68,13 @@ let m = (0, s.debounce)(c.Ay.trackWithMetadata, 500),
             children: n
         }));
         let L = null;
-        "function" == typeof a ? L = a() : null != a && (L = (0, i.jsx)(d.Text, {
+        "function" == typeof l ? L = l() : null != l && (L = (0, i.jsx)(d.Text, {
             className: r()({
                 [_.gX]: v
             }),
             variant: "text-sm/normal",
             color: "text-muted",
-            children: a
+            children: l
         }));
         let R = null != E ? `${E}px` : "16px";
         return (0, i.jsxs)("div", {

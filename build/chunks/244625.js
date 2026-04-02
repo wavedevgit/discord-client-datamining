@@ -3,8 +3,8 @@ n.d(t, {
     A: () => E
 });
 var i = n(627968),
-    l = n(64700),
-    a = n(681154),
+    a = n(64700),
+    l = n(681154),
     r = n(311907),
     s = n(713654),
     o = n(263063),
@@ -21,7 +21,7 @@ var i = n(627968),
 function E(e) {
     let {
         item: t
-    } = e, n = l.useMemo(() => {
+    } = e, n = a.useMemo(() => {
         switch (t.data.kind) {
             case "message":
             case "guildEvent":
@@ -32,7 +32,7 @@ function E(e) {
             default:
                 return "unknown"
         }
-    }, [t]), E = l.useMemo(() => {
+    }, [t]), E = a.useMemo(() => {
         switch (t.data.kind) {
             case "message":
                 return t.data.message.channel_id;
@@ -41,14 +41,14 @@ function E(e) {
             default:
                 return
         }
-    }, [t]), I = l.useMemo(() => {
+    }, [t]), I = a.useMemo(() => {
         if ("guildEvent" === t.data.kind) {
             let e = d.Ay.getGuildScheduledEvent(t.data.eventId);
             return e?.guild_id
         }
-    }, [t]), f = l.useMemo(() => {
+    }, [t]), f = a.useMemo(() => {
         if ("contentInventory" === t.data.kind) return t.data.content.author_id
-    }, [t]), C = l.useMemo(() => {
+    }, [t]), C = a.useMemo(() => {
         switch (t.data.kind) {
             case "message":
             case "forumThread":
@@ -112,10 +112,10 @@ function E(e) {
                                 return p.intl.string(p.t.bYNuVx);
                             case "contentInventory":
                                 switch (t.data.content.content_type) {
-                                    case a.ContentInventoryEntryType.CUSTOM_STATUS:
+                                    case l.ContentInventoryEntryType.CUSTOM_STATUS:
                                         return p.intl.string(p.t.fxOLPR);
-                                    case a.ContentInventoryEntryType.TOP_GAME:
-                                    case a.ContentInventoryEntryType.PLAYED_GAME:
+                                    case l.ContentInventoryEntryType.TOP_GAME:
+                                    case l.ContentInventoryEntryType.PLAYED_GAME:
                                         return p.intl.string(p.t.ktOTRQ);
                                     default:
                                         return `${t.data.content.content_type}`

@@ -3,13 +3,13 @@ n.d(t, {
     A: () => o
 });
 var i = n(626584),
-    l = n(90924),
-    a = n(629471),
+    a = n(90924),
+    l = n(629471),
     r = n(652215);
 let s = new i.A(r.meB),
     o = {
         [r.e$_.CAPTURE_LOG]: {
-            validation: e => (0, a.A)(e).required().keys({
+            validation: e => (0, l.A)(e).required().keys({
                 level: e.string().max(10).required(),
                 message: e.string().max(1e3).required()
             }),
@@ -21,9 +21,9 @@ let s = new i.A(r.meB),
                         message: i
                     }
                 } = e;
-                (0, l.lG)(t.transport);
-                let a = t.application.id,
-                    r = `${a} - ${i}`;
+                (0, a.lG)(t.transport);
+                let l = t.application.id,
+                    r = `${l} - ${i}`;
                 switch (n) {
                     case "log":
                         s.log(r);

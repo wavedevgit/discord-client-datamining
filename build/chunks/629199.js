@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var l = n(311907),
-    a = n(692617),
+var a = n(311907),
+    l = n(692617),
     r = n(397927),
     s = n(297413),
     o = n(775602),
@@ -33,7 +33,7 @@ let T = e => {
             children: f.intl.string(f.t.jpY0X5)
         }) : (0, i.jsxs)("div", {
             className: C.I9,
-            children: [(0, i.jsx)(a.A, {
+            children: [(0, i.jsx)(l.A, {
                 guilds: n,
                 maxGuilds: 3,
                 size: c.$v.Sizes.SMOL,
@@ -54,8 +54,8 @@ function S(e) {
     let {
         channel: t,
         otherUser: n,
-        active: a
-    } = e, c = (0, l.bG)([o.A], () => o.A.useReducedMotion), p = (0, l.bG)([_.A], () => null == n ? null : _.A.getNickname(n.id)), E = !c && a, S = (0, g.j)(t), {
+        active: l
+    } = e, c = (0, a.bG)([o.A], () => o.A.useReducedMotion), p = (0, a.bG)([_.A], () => null == n ? null : _.A.getNickname(n.id)), E = !c && l, S = (0, g.j)(t), {
         avatarDecorationSrc: x
     } = (0, h.A)({
         user: n,
@@ -90,7 +90,7 @@ function S(e) {
                 hoverText: (0, i.jsx)(I.A, {
                     channel: t
                 }),
-                forceHover: a,
+                forceHover: l,
                 children: (0, i.jsx)(T, {
                     userId: n.id
                 })

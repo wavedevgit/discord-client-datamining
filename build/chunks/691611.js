@@ -3,9 +3,9 @@ n.d(t, {
     A: () => v
 });
 var i = n(627968),
-    l = n(64700),
-    a = n(503698),
-    r = n.n(a),
+    a = n(64700),
+    l = n(503698),
+    r = n.n(l),
     s = n(837381),
     o = n(311907),
     d = n(201275),
@@ -25,12 +25,12 @@ var i = n(627968),
     N = n(652215),
     S = n(155109),
     x = n(10029);
-let v = l.memo(function(e) {
+let v = a.memo(function(e) {
     let {
         message: t,
         className: n,
-        onContextMenu: l,
-        onClick: a,
+        onContextMenu: a,
+        onClick: l,
         hideSimpleEmbedContent: v = !0,
         channel: b,
         isGroupStart: y,
@@ -78,8 +78,8 @@ let v = l.memo(function(e) {
             ...e,
             disableInteraction: D
         }),
-        onContextMenu: l,
-        onClick: a,
+        onContextMenu: a,
+        onClick: l,
         hasThread: R && null != B && t.hasFlag(N.pr7.HAS_THREAD),
         hasReply: !1,
         "aria-labelledby": F,

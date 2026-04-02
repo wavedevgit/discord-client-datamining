@@ -3,8 +3,8 @@ n.d(t, {
     A: () => _
 });
 var i = n(627968),
-    l = n(64700),
-    a = n(311907),
+    a = n(64700),
+    l = n(311907),
     r = n(397927),
     s = n(747550),
     o = n(282026),
@@ -16,7 +16,7 @@ var i = n(627968),
 let _ = function(e) {
     let {
         loadId: t
-    } = e, n = o.A.useField("categoryId"), _ = (0, a.bG)([d.A], () => d.A.getCategoryName(n)), m = l.useCallback(() => {
+    } = e, n = o.A.useField("categoryId"), _ = (0, l.bG)([d.A], () => d.A.getCategoryName(n)), m = a.useCallback(() => {
         o.A.setState({
             categoryId: c.Iq
         }), s.A.loadCategoryResults({

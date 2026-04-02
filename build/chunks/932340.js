@@ -3,8 +3,8 @@ n.d(t, {
     A: () => E
 });
 var i = n(627968),
-    l = n(64700),
-    a = n(311907),
+    a = n(64700),
+    l = n(311907),
     r = n(397927),
     s = n(966871),
     o = n(447404),
@@ -30,12 +30,12 @@ function E(e) {
         lastClipsSession: C,
         remindersEnabled: T,
         hasAnyClipAnimations: N
-    } = (0, a.cf)([A.A], () => ({
+    } = (0, l.cf)([A.A], () => ({
         hasNewClips: A.A.getNewClipIds().length > 0,
         lastClipsSession: A.A.getLastClipsSession(),
         remindersEnabled: A.A.getSettings().remindersEnabled,
         hasAnyClipAnimations: A.A.hasAnyClipAnimations()
-    })), S = null != C && C.newClipIds.length > 0, x = (0, _.K)(e => e.clipsButtonRef), v = (0, _.K)(e => e.setClipsButtonRef), b = (0, a.bG)([d.A], () => d.A.hasLayers()), {
+    })), S = null != C && C.newClipIds.length > 0, x = (0, _.K)(e => e.clipsButtonRef), v = (0, _.K)(e => e.setClipsButtonRef), b = (0, l.bG)([d.A], () => d.A.hasLayers()), {
         preventIdle: y,
         allowIdle: O
     } = (0, o.o)("animation");
@@ -52,7 +52,7 @@ function E(e) {
             modalKey: p.nm
         })
     }
-    return (l.useEffect(() => (N ? y() : O(), () => O()), [N, y, O]), I && E) ? (0, i.jsxs)(i.Fragment, {
+    return (a.useEffect(() => (N ? y() : O(), () => O()), [N, y, O]), I && E) ? (0, i.jsxs)(i.Fragment, {
         children: [null != x && t && T && S && !(0, r.ueM)() && !b && (0, i.jsx)(m.A, {
             clipIconRef: x,
             lastClipsSession: C,

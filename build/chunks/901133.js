@@ -3,9 +3,9 @@ n.d(t, {
     A: () => C
 });
 var i = n(627968),
-    l = n(64700),
-    a = n(503698),
-    r = n.n(a),
+    a = n(64700),
+    l = n(503698),
+    r = n.n(l),
     s = n(990078),
     o = n(397927),
     d = n(793574),
@@ -19,9 +19,9 @@ var i = n(627968),
     g = n(652215),
     E = n(985018),
     I = n(697523);
-class f extends l.PureComponent {
-    partyMemberAvatarRef = l.createRef();
-    partyMemberOverflowRef = l.createRef();
+class f extends a.PureComponent {
+    partyMemberAvatarRef = a.createRef();
+    partyMemberOverflowRef = a.createRef();
     isHost() {
         let {
             currentUser: e,
@@ -54,20 +54,20 @@ class f extends l.PureComponent {
         let n;
         if (null == e) return null;
         let {
-            host: a,
+            host: l,
             onUserContextMenu: c
         } = this.props;
-        return n = a?.id === e.id ? E.intl.string(E.t["N9bqD+"]) : E.intl.string(E.t.Z2Y4c9), (0, i.jsx)(u.A, {
+        return n = l?.id === e.id ? E.intl.string(E.t["N9bqD+"]) : E.intl.string(E.t.Z2Y4c9), (0, i.jsx)(u.A, {
             targetElementRef: this.partyMemberAvatarRef,
             user: e,
             newAnalyticsLocations: [d.A.AVATAR],
             position: "top",
             align: "center",
             clickTrap: !0,
-            children: a => (0, i.jsx)(s.m, {
+            children: l => (0, i.jsx)(s.m, {
                 text: n,
-                children: (0, l.createElement)(o.euF, {
-                    ...a,
+                children: (0, a.createElement)(o.euF, {
+                    ...l,
                     key: e.id,
                     src: e.getAvatarURL(void 0, 24),
                     size: o._3J.SIZE_24,
@@ -81,10 +81,10 @@ class f extends l.PureComponent {
     };
     renderPartyMemberOverflow = (e, t, n) => {
         let {
-            renderOverflowPopout: l
+            renderOverflowPopout: a
         } = this.props;
         return (0, i.jsx)(o.YNO, {
-            renderPopout: l,
+            renderPopout: a,
             targetElementRef: this.partyMemberOverflowRef,
             children: n => (0, i.jsx)(s.m, {
                 text: E.intl.string(E.t.Zf4NPe),

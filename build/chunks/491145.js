@@ -72,7 +72,7 @@ function j(t, e, n) {
         onClickCta: y
     } : O && null != R && R > new Date ? {
         title: A.intl.string(p.default.E0XZQW),
-        subtitle: A.intl.format(p.default["Ri/ZGz"], {
+        subtitle: A.intl.format(E ? p.default["PyQY5+"] : p.default["Ri/ZGz"], {
             date: R,
             helpCenterLink: m.A.getArticleURL(N.MVz.NITRO_CONTROL_CAMPAIGN)
         }),

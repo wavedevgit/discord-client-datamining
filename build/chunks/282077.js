@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var l = n(503698),
-    a = n.n(l),
+var a = n(503698),
+    l = n.n(a),
     r = n(110259),
     s = n(877624),
     o = n(397927),
@@ -16,7 +16,7 @@ function u(e) {
     let {
         componentId: t,
         badgeCopy: n,
-        acknowledgedBadgeCopy: l,
+        acknowledgedBadgeCopy: a,
         isDismissed: u
     } = e;
     return ((0, d.A)({
@@ -27,7 +27,7 @@ function u(e) {
             component_id: t
         }
     }), u) ? (0, i.jsxs)("div", {
-        className: a()(c.BE, c.ZA),
+        className: l()(c.BE, c.ZA),
         children: [(0, i.jsx)(o.O4, {
             size: "custom",
             width: 10,
@@ -37,10 +37,10 @@ function u(e) {
         }), (0, i.jsx)(o.Text, {
             variant: "eyebrow",
             color: "text-subtle",
-            children: l
+            children: a
         })]
     }) : (0, i.jsx)("div", {
-        className: a()(c.BE, c.CU),
+        className: l()(c.BE, c.CU),
         children: (0, i.jsx)(o.Text, {
             variant: "eyebrow",
             className: c.lI,

@@ -10,8 +10,8 @@ var r = n(627968),
     a = n.n(l),
     s = n(837381),
     o = n(397927),
-    c = n(199966),
-    u = n(963935),
+    u = n(199966),
+    c = n(963935),
     d = n(894858),
     h = n(272053),
     f = n(189857),
@@ -27,8 +27,8 @@ function g(e) {
         onClick: n,
         active: l,
         node: s,
-        dismissibleBadge: c,
-        panelKey: u,
+        dismissibleBadge: u,
+        panelKey: c,
         listItemProps: d,
         children: h
     } = e, {
@@ -51,13 +51,13 @@ function g(e) {
             case "destructive":
                 return o.LU0.colors.ICON_FEEDBACK_CRITICAL
         }
-    }(E), N = g?.(l), j = i.useMemo(() => null != c ? l ? null : (0, r.jsx)(m.A, {
-        badge: c
+    }(E), N = g?.(l), j = i.useMemo(() => null != u ? l ? null : (0, r.jsx)(m.A, {
+        badge: u
     }) : null != N ? (0, r.jsx)(p.A, {
         badge: N
-    }) : void 0, [l, c, N]);
+    }) : void 0, [l, u, N]);
     return (0, r.jsxs)(t, {
-        "data-settings-sidebar-item": u,
+        "data-settings-sidebar-item": c,
         className: v.DB,
         children: [(0, r.jsxs)(o.DUT, {
             ...d,
@@ -90,13 +90,13 @@ function x(e) {
         hoisted: a = !1
     } = e, o = i.useMemo(() => t.layout[0], [t]), m = d.A.useField("currentPanelKey"), {
         accessibleDirectory: p
-    } = (0, c._)(), v = i.useMemo(() => {
+    } = (0, u._)(), v = i.useMemo(() => {
         if (null == m) return !1;
         let e = p.entry(m);
         return e?.parentSidebarItemKey === t.key
     }, [m, t.key, p]), y = i.useMemo(() => {
-        if (null == o || !(0, u.Iu)(o.layout)) return null;
-        let e = o.layout.filter(u.bJ);
+        if (null == o || !(0, c.Iu)(o.layout)) return null;
+        let e = o.layout.filter(c.bJ);
         return e.length > 1 ? e : null
     }, [o]), x = null != o ? () => {
         let e = m === o.key && null != y ? y[0].key : o.key;

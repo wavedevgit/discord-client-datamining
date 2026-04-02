@@ -4,9 +4,9 @@ n.d(t, {
     j: () => _
 });
 var i = n(627968),
-    l = n(64700),
-    a = n(503698),
-    r = n.n(a),
+    a = n(64700),
+    l = n(503698),
+    r = n.n(l),
     s = n(397927),
     o = n(773669),
     d = n(747550),
@@ -34,13 +34,13 @@ function m(e) {
     let {
         loadId: t,
         categoryId: n,
-        count: a
-    } = e, d = l.useCallback(() => {
+        count: l
+    } = e, d = a.useCallback(() => {
         _({
             categoryId: n,
             loadId: t
         })
-    }, [n, t]), A = c.A.useField("categoryId") === n, m = a.toLocaleString(o.default.locale), p = (0, u.r)({
+    }, [n, t]), A = c.A.useField("categoryId") === n, m = l.toLocaleString(o.default.locale), p = (0, u.r)({
         categoryId: n
     });
     return (0, i.jsxs)(s.DUT, {
@@ -68,11 +68,11 @@ let p = function(e) {
     return null == n ? null : (0, i.jsx)("div", {
         className: h.LZ,
         children: n.map(e => {
-            let [n, l] = e;
+            let [n, a] = e;
             return (0, i.jsx)(m, {
                 loadId: t,
                 categoryId: n,
-                count: l
+                count: a
             }, n)
         })
     })

@@ -3,9 +3,9 @@ n.d(t, {
     A: () => tr
 });
 var i = n(627968),
-    l = n(64700),
-    a = n(503698),
-    r = n.n(a),
+    a = n(64700),
+    l = n(503698),
+    r = n.n(l),
     s = n(492462),
     o = n(873263),
     d = n(110259),
@@ -57,8 +57,8 @@ var i = n(627968),
     et = n(939846),
     en = n(862658),
     ei = n(813160),
-    el = n(916768),
-    ea = n(851109),
+    ea = n(916768),
+    el = n(851109),
     er = n(667429),
     es = n(480680),
     eo = n(767060),
@@ -157,7 +157,7 @@ let ek = (0, c.Fe)({
     eQ = e => {
         let {
             match: t
-        } = e, n = (0, N.o)(), a = (0, A.bG)([eN.A, eb.A], () => {
+        } = e, n = (0, N.o)(), l = (0, A.bG)([eN.A, eb.A], () => {
             let e = eb.A.getChannelId();
             return eN.A.getChannel(e)
         }), {
@@ -185,12 +185,12 @@ let ek = (0, c.Fe)({
                 }
             }),
             C = (0, A.bG)([U.A], () => (0, em.C$)(u) && (0, em.C$)(c), [u, c]);
-        l.useEffect(() => {
+        a.useEffect(() => {
             C || (null != h && (0, eC.pX)(eD.BVt.CHANNEL(h.id, (0, ep.A)(h))), (0, ee.E)())
         }, [C, h]);
         let T = null != h,
-            S = l.useRef(null);
-        l.useEffect(() => {
+            S = a.useRef(null);
+        a.useEffect(() => {
             T || null == r || S.current === r || (S.current = r, m.A.joinGuild(r, {
                 lurker: !0,
                 autoNavigate: !1
@@ -266,28 +266,28 @@ let ek = (0, c.Fe)({
             guildId: r,
             channelId: u
         });
-        if (a?.type === eD.rbe.GUILD_STORE) {
+        if (l?.type === eD.rbe.GUILD_STORE) {
             let e = eR.default.cast(t.params.messageId);
             return (0, i.jsx)(g.A, {
-                channel: a,
+                channel: l,
                 inputSkuId: e
-            }, a.id)
+            }, l.id)
         }
         return (0, i.jsx)(y.A, {})
     },
-    eX = l.memo(function() {
+    eX = a.memo(function() {
         let {
             guildId: e,
             channelId: t
         } = (0, eg.A)(), {
             notificationCenterVariant: n
-        } = (0, ea.X8)({
+        } = (0, el.X8)({
             location: "Sidebar"
-        }), l = (0, A.bG)([eb.A], () => t ?? eb.A.getChannelId(e));
+        }), a = (0, A.bG)([eb.A], () => t ?? eb.A.getChannelId(e));
         return window.location.pathname.startsWith(eD.BVt.CHANNEL(eD.gNP)) ? ("sidebar" !== n && (0, eC.bG)(eS.A.defaultRoute), (0, i.jsx)(es.A, {
             includePanelSpacing: !0
         })) : window.location.pathname.startsWith(eD.BVt.GLOBAL_DISCOVERY) || window.location.pathname.startsWith(eD.BVt.GUILD_DISCOVERY) || (0, eh.r$)() ? (0, i.jsx)(B.A, {}) : null != e ? (0, i.jsx)(z.A, {
-            selectedChannelId: l,
+            selectedChannelId: a,
             guildId: e
         }, e) : (0, i.jsx)(eA.A, {})
     }),
@@ -303,7 +303,7 @@ let ek = (0, c.Fe)({
             channelId: t,
             messageId: n
         } = e.match.params;
-        return (l.useEffect(() => {
+        return (a.useEffect(() => {
             null != t && null != n && p.A.jumpToMessage({
                 channelId: t,
                 messageId: n,
@@ -425,9 +425,9 @@ let e4 = e => (0, i.jsx)(x.A, {
                             to: eD.BVt.SETTINGS("content-and-social", "connected-games")
                         });
                     case "boost":
-                        let l = t.params.guildId;
+                        let a = t.params.guildId;
                         return (0, i.jsx)(o.rd, {
-                            to: eD.BVt.POWERUP_STORE(l)
+                            to: eD.BVt.POWERUP_STORE(a)
                         });
                     case "boost-settings":
                         return (0, i.jsx)(o.rd, {
@@ -442,22 +442,22 @@ let e4 = e => (0, i.jsx)(x.A, {
         })
     };
 
-function tl(e) {
+function ta(e) {
     document.body.style.setProperty("--custom-guild-sidebar-width", `${e}px`)
 }
 
-function ta(e) {
+function tl(e) {
     let {
         hasNotice: t,
         sidebarTheme: n,
-        hideSidebar: a,
+        hideSidebar: l,
         hideChannelList: s,
         isSidebarOpen: o
     } = e, d = (0, A.bG)([b.A], () => b.A.isFullscreenInContext()), c = (0, j.D)("ChannelSidebar"), m = (0, D.useAppSidebarState)(e => !e.isOpen) && c;
-    l.useLayoutEffect(() => {
+    a.useLayoutEffect(() => {
         if (c) {
             let e = parseInt(h.w.get(E.o) ?? "");
-            Number.isNaN(e) && (e = 375), tl(e = Math.min(Math.max(e, 264), 432));
+            Number.isNaN(e) && (e = 375), ta(e = Math.min(Math.max(e, 264), 432));
             let t = e => {
                 e.metaKey && "b" === e.key && D.useAppSidebarState.setState(e => ({
                     isOpen: !e.isOpen
@@ -467,27 +467,27 @@ function ta(e) {
                 document.removeEventListener("keydown", t)
             }
         }
-    }, [c]), l.useLayoutEffect(() => {
-        if (m) tl(76);
+    }, [c]), a.useLayoutEffect(() => {
+        if (m) ta(76);
         else {
             let e = parseInt(h.w.get(E.o) ?? "");
-            Number.isNaN(e) && (e = 375), tl(e)
+            Number.isNaN(e) && (e = 375), ta(e)
         }
     }, [m]);
-    let p = l.useRef(null),
-        g = l.useCallback((e, t) => {
-            tl(e);
+    let p = a.useRef(null),
+        g = a.useCallback((e, t) => {
+            ta(e);
             let n = t < 88;
             t <= 264 ? document.body.classList.add(eG._A) : document.body.classList.remove(eG._A), t >= 432 ? document.body.classList.add(eG.uN) : document.body.classList.remove(eG.uN);
             let i = t - e;
             p.current?.style.setProperty("--custom-overdrag", `${1+Math.min(Math.abs(i/76),.25)}`), c && (D.useAppSidebarState.setState({
                 isOpen: !n
-            }), n && tl(76))
+            }), n && ta(76))
         }, [c]),
-        I = l.useCallback(() => {
+        I = a.useCallback(() => {
             document.body.classList.add(eG.cB)
         }, []),
-        f = l.useCallback(e => {
+        f = a.useCallback(e => {
             document.body.classList.remove(eG.cB), document.body.classList.remove(eG._A), document.body.classList.remove(eG.uN), document.body.classList.remove(eG.l4), p.current?.style.setProperty("--custom-overdrag", "0px"), h.w.set(E.o, e), eO.default.track(eD.HAw.CHANNEL_SIDEBAR_RESIZED, {
                 width: e
             })
@@ -502,14 +502,14 @@ function ta(e) {
             orientation: T.R.HORIZONTAL_RIGHT,
             throttleDuration: 0
         }),
-        N = l.useCallback(() => {
+        N = a.useCallback(() => {
             D.useAppSidebarState.setState(e => ({
                 isOpen: !e.isOpen
             }))
         }, []);
-    if (l.useLayoutEffect(() => {
-            m && tl(76)
-        }, [m]), a) return null;
+    if (a.useLayoutEffect(() => {
+            m && ta(76)
+        }, [m]), l) return null;
     let S = {
         className: r()(eG.th, {
             [eG.Qd]: !t
@@ -546,9 +546,9 @@ function ta(e) {
 function tr() {
     let e, t = (0, A.bG)([ey.Ay], () => ey.Ay.hasNotice()),
         n = (0, eT.NC)(),
-        a = function() {
-            let [e, t] = l.useState(() => window.location.pathname.startsWith(eD.BVt.GUILD_MEMBER_VERIFICATION("")));
-            return l.useEffect(() => eE.A.addRouteChangeListener(e => {
+        l = function() {
+            let [e, t] = a.useState(() => window.location.pathname.startsWith(eD.BVt.GUILD_MEMBER_VERIFICATION("")));
+            return a.useEffect(() => eE.A.addRouteChangeListener(e => {
                 t(e.pathname.startsWith(eD.BVt.GUILD_MEMBER_VERIFICATION("")))
             }), []), e
         }(),
@@ -556,7 +556,7 @@ function tr() {
         s = (0, A.bG)([ei.A], () => ei.A.getIsOpen()),
         {
             notificationCenterVariant: c
-        } = (0, ea.X8)({
+        } = (0, el.X8)({
             location: "Sidebar"
         }),
         h = (0, w.f)("AppView"),
@@ -564,7 +564,7 @@ function tr() {
             optional: !0
         }), ":messageId?")]),
         m = _?.params?.channelId === eM.VV.GUILD_ONBOARDING,
-        p = l.useCallback(() => en.A.openSidebar(), []),
+        p = a.useCallback(() => en.A.openSidebar(), []),
         g = (0, j.D)("AppView"),
         E = (0, D.useAppSidebarState)(e => !e.isOpen),
         I = (0, A.bG)([b.A], () => b.A.isFullscreenInContext()),
@@ -576,13 +576,13 @@ function tr() {
             children: (0, i.jsxs)("div", {
                 className: eG.E3,
                 "data-fullscreen": I,
-                children: [!I && (0, i.jsx)(ek, {}), u.Fr ? null : (0, i.jsx)(el.A, {}), (0, i.jsxs)("div", {
+                children: [!I && (0, i.jsx)(ek, {}), u.Fr ? null : (0, i.jsx)(ea.A, {}), (0, i.jsxs)("div", {
                     className: eG.Qs,
-                    children: [(0, i.jsx)(O.A, {}), (0, i.jsx)(ta, {
+                    children: [(0, i.jsx)(O.A, {}), (0, i.jsx)(tl, {
                         isSidebarOpen: s,
                         hasNotice: t,
                         sidebarTheme: n,
-                        hideChannelList: a || r || m,
+                        hideChannelList: l || r || m,
                         hideSidebar: !s
                     }), (0, i.jsx)("div", {
                         className: eG.MY,
@@ -629,12 +629,12 @@ function tr() {
                                             match: t,
                                             ...n
                                         } = e, {
-                                            layoutId: l
+                                            layoutId: a
                                         } = t.params;
-                                        return null == l || "" === l ? (0, i.jsx)(R.A, {
+                                        return null == a || "" === a ? (0, i.jsx)(R.A, {
                                             ...n
                                         }) : (0, i.jsx)(P.A, {
-                                            layoutId: l,
+                                            layoutId: a,
                                             ...n
                                         })
                                     },
@@ -646,12 +646,12 @@ function tr() {
                                             match: t,
                                             ...n
                                         } = e, {
-                                            collectionId: l
+                                            collectionId: a
                                         } = t.params;
-                                        return null == l || "" === l ? (0, i.jsx)(R.A, {
+                                        return null == a || "" === a ? (0, i.jsx)(R.A, {
                                             ...n
                                         }) : (0, i.jsx)(L.A, {
-                                            collectionId: l,
+                                            collectionId: a,
                                             ...n
                                         })
                                     },
@@ -682,7 +682,7 @@ function tr() {
                                     render: e8,
                                     impressionName: d.ImpressionNames.FRIENDS,
                                     disableTrack: !0
-                                }), c === ea.U5.SIDEBAR && (0, i.jsx)(v.A, {
+                                }), c === el.U5.SIDEBAR && (0, i.jsx)(v.A, {
                                     path: eD.BVt.CHANNEL(eD.gNP, eI.pv.channelId({
                                         optional: !0
                                     }), ":messageId?"),
