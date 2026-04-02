@@ -40,13 +40,13 @@ function j(e, t, n, i) {
     let l = E.A.getGuild(n),
         r = e.replace(M, O.intl.string(O.t["F+x38C"])).replace(/<@!?(\d+)>/g, (e, t) => {
             let i = S.default.getUser(t);
-            return null == i ? e : p.Ay.getNick(n, i.id) ?? x.Ay.getName(i)
+            return null == i ? O.intl.string(O.t.sKdZ6U) : p.Ay.getNick(n, i.id) ?? x.Ay.getName(i)
         }).replace(/<@&?(\d+)>/g, (e, t) => {
             let n = null != l ? g.A.getRole(l.id, t) : null;
-            return null != n && null != n.name ? n.name : O.intl.string(O.t.dRcLA2)
+            return null != n && null != n.name ? n.name : O.intl.string(O.t["YV4F/n"])
         }).replace(/<#(\d+)>/g, (e, t) => {
             let n = m.A.getChannel(t);
-            return null == n ? e : (0, o.m1)(n, S.default, C.A)
+            return null == n ? O.intl.string(O.t.J90oLW) : (0, o.m1)(n, S.default, C.A)
         }).replace(/<a?:(\w+):(\d+)>/g, (e, t) => `${O.intl.string(O.t.sMOuuS)} ${t}`).replace(/<\/([^\s]+?):(\d+)>/g, (e, t) => `/${t}`).replace(/<t:(\d+):([A-Z]|[a-z])>/g, (e, t, n) => {
             let i = d.kx[n],
                 l = 1e3 * parseInt(t, 10),

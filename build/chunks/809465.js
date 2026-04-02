@@ -6,9 +6,9 @@ n.d(t, {
 var r = n(627968);
 n(64700);
 var i = n(503698),
-    l = n.n(i),
-    a = n(481613),
-    s = n.n(a),
+    a = n.n(i),
+    l = n(481613),
+    s = n.n(l),
     o = n(397927),
     c = n(77729),
     u = n(521502),
@@ -21,9 +21,9 @@ var i = n(503698),
 function _() {
     let e = (0, d.GV)(),
         t = window.GLOBAL_ENV.RELEASE_CHANNEL,
-        n = "521827",
-        i = "1718e7ffed954b0eab83333f360c0738b642bd73".substring(0, 7),
-        a = c.A?.app.getVersion(),
+        n = "521834",
+        i = "55d9a3d8947b6010c8d2d49993cc49530ea8a568".substring(0, 7),
+        l = c.A?.app.getVersion(),
         _ = c.A?.app.getBuildNumber(),
         v = c.A?.app.getAppArch(),
         y = u.A.getCurrentBuildOverride().overrides?.discord_web,
@@ -35,7 +35,7 @@ function _() {
             return e.includes("Windows 10") && void 0 !== i && i >= 22e3 && (e = e.replace("Windows 10", "Windows 11")), e.includes("OS X 10.15.7") && void 0 !== n && n >= 20 && (e = `macOS ${n>=25?n+1:n-9}`), `${e} (${t})`
         }(),
         x = [t, n, `(${i})`];
-    return null != a && (x.push(`Host ${a}`), null != v && x.push(v.toLowerCase()), null != _ && x.push(`(${_})`)), x.push(`Build Override: ${null!=y?y.id:"N/A"}`), null != g && x.push(g), (0, r.jsxs)(r.Fragment, {
+    return null != l && (x.push(`Host ${l}`), null != v && x.push(v.toLowerCase()), null != _ && x.push(`(${_})`)), x.push(`Build Override: ${null!=y?y.id:"N/A"}`), null != g && x.push(g), (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(h.A, {
             copyValue: x.join(" "),
             text: f.intl.string(f.t["9Al4Qd"]),
@@ -44,7 +44,7 @@ function _() {
             children: s => (0, r.jsxs)(o.DUT, {
                 ...s,
                 "aria-describedby": e,
-                className: l()(p.vk, p.oE),
+                className: a()(p.vk, p.oE),
                 children: [(0, r.jsxs)("div", {
                     className: p.Cr,
                     "data-mtctest-ignore": "true",
@@ -56,11 +56,11 @@ function _() {
                             className: p.Pc,
                             children: ["(", i, ")"]
                         })]
-                    }), null != a && (0, r.jsxs)(o.Text, {
+                    }), null != l && (0, r.jsxs)(o.Text, {
                         tag: "span",
                         variant: "text-xxs/normal",
                         color: "text-muted",
-                        children: [a, null != v && (0, r.jsxs)("span", {
+                        children: [l, null != v && (0, r.jsxs)("span", {
                             className: p.GI,
                             children: [" ", v.toLowerCase()]
                         }), null != _ && (0, r.jsxs)("span", {
