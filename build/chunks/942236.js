@@ -16,8 +16,8 @@ var s = n(684013),
     h = n(837921),
     p = n(9302),
     f = n(684748),
-    _ = n(652215),
-    A = n(672396),
+    A = n(652215),
+    _ = n(672396),
     g = n(985018);
 
 function m(e, t, n, m) {
@@ -28,8 +28,8 @@ function m(e, t, n, m) {
     } = (0, a.TB)(e, t, n), {
         trackView: v,
         trackClick: S
-    } = (0, f.Y)(A.KS.TextChat, {
-        notif_type: A.KS.TextChat,
+    } = (0, f.Y)(_.KS.TextChat, {
+        notif_type: _.KS.TextChat,
         notif_user_id: t.author?.id,
         message_id: t.id,
         message_type: t.type,
@@ -54,8 +54,8 @@ function m(e, t, n, m) {
         onNotificationClick: () => {
             if (l.default.isOverlayOOPEnabledForPid((0, p.getPID)())) {
                 let n = (0, p.getPID)();
-                c.default.isInstanceLocked() ? (S("unlock"), s.A.setInputLocked(!1, n)) : (S("jump"), (0, r.pX)(_.BVt.CHANNEL(e.guild_id, e.id, t.id)), u.isPlatformEmbedded && h.Ay.focus())
-            } else(0, r.pX)(_.BVt.CHANNEL(e.guild_id, e.id)), S("jump"), c.default.isInstanceLocked() && s.A.setInstanceLocked(!1)
+                c.default.isInstanceLocked() ? (S("unlock"), s.A.setInputLocked(!1, n)) : (S("jump"), (0, r.pX)(A.BVt.CHANNEL(e.guild_id, e.id, t.id)), u.isPlatformEmbedded && h.Ay.focus())
+            } else(0, r.pX)(A.BVt.CHANNEL(e.guild_id, e.id)), S("jump"), c.default.isInstanceLocked() && s.A.setInstanceLocked(!1)
         },
         onDismissClick: () => {
             S("dismiss")

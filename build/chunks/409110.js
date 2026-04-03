@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(531685),
     p = n(5463),
     f = n(9302),
-    _ = n(328913),
-    A = n(131575),
+    A = n(328913),
+    _ = n(131575),
     g = n(799808),
     m = n(407195),
     x = n(61714),
@@ -44,7 +44,7 @@ let y = {
             dragStart: n,
             className: s
         } = e;
-        return (0, i.jsx)(_.A, {
+        return (0, i.jsx)(A.A, {
             dragStart: n,
             locked: t,
             className: s
@@ -74,7 +74,7 @@ let y = {
             dragStart: s,
             className: a
         } = e;
-        return (0, i.jsx)(A.A, {
+        return (0, i.jsx)(_.A, {
             dragStart: s,
             dragging: t,
             locked: n,
@@ -111,7 +111,7 @@ class v extends s.PureComponent {
             size: u
         });
         let h = e === d.P.MOVE,
-            _ = (0, p.Ly)(n, a.width, a.height, s.width, s.height);
+            A = (0, p.Ly)(n, a.width, a.height, s.width, s.height);
         this.setState({
             lastLayoutUpdate: {
                 was_resized: null != r && r.was_resized || !h,
@@ -121,8 +121,8 @@ class v extends s.PureComponent {
                 window_height: a.height,
                 widget_width: s.width,
                 widget_height: s.height,
-                widget_left: _.left,
-                widget_top: _.top
+                widget_left: A.left,
+                widget_top: A.top
             }
         })
     };
@@ -186,7 +186,7 @@ class v extends s.PureComponent {
             size: u,
             anchor: h,
             minSize: f
-        } = e, _ = (0, p.fd)(u, n), A = (0, p.Nv)(h, n), {
+        } = e, A = (0, p.fd)(u, n), _ = (0, p.Nv)(h, n), {
             resizeX: m,
             resizeY: x,
             dragAnywhere: E
@@ -199,11 +199,11 @@ class v extends s.PureComponent {
             minY: 0,
             maxX: n.width,
             maxY: n.height
-        }, S = this.renderWidget(e, A, _);
+        }, S = this.renderWidget(e, _, A);
         return null == S ? null : (0, i.jsx)(d.A, {
             id: r,
-            size: _,
-            anchor: A,
+            size: A,
+            anchor: _,
             container: v,
             minSize: f,
             hidden: !y,

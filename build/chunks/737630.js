@@ -6,8 +6,8 @@ s.r(t), s.d(t, {
 var n = s(627968),
     r = s(64700),
     l = s(503698),
-    a = s.n(l),
-    i = s(835245),
+    i = s.n(l),
+    a = s(835245),
     o = s(417597),
     c = s(192308),
     d = s(397927),
@@ -31,12 +31,12 @@ var n = s(627968),
     k = s(530971),
     T = s(177366),
     O = s(155486),
-    N = s(278576),
-    y = s(120286),
+    y = s(278576),
+    N = s(120286),
     R = s(870308),
     B = s(938191),
-    P = s(758836),
-    M = s(652215),
+    M = s(758836),
+    P = s(652215),
     D = s(650583),
     w = s(985018),
     H = s(229781);
@@ -56,31 +56,31 @@ let F = e => {
     },
     G = function(e) {
         let {
-            tab: t = P.G2.HOME
+            tab: t = M.G2.HOME
         } = e;
         (0, p.P)(h.a), (0, I.g)();
-        let s = (0, _.A)((0, i.A)()),
+        let s = (0, _.A)((0, a.A)()),
             l = (0, o.bG)([x.default], () => x.default.getCurrentUser());
         (0, f.pE)();
         let c = (0, B.yB)("CollectiblesShop"),
             {
                 onClose: D
-            } = (0, N.tR)(),
+            } = (0, y.tR)(),
             {
                 currentTab: G,
                 hasFilters: U
             } = (0, j.v)(),
-            V = r.useMemo(() => t === P.G2.HOME && null != G && U() ? G : t, [t, G, U]),
+            V = r.useMemo(() => t === M.G2.HOME && null != G && U() ? G : t, [t, G, U]),
             {
-                categories: K,
-                refreshCategories: W
+                categories: W,
+                refreshCategories: z
             } = (0, v.Ay)({
                 logPerf: !0
             }, {
                 sessionId: s,
                 tab: V
             }),
-            z = r.useMemo(() => [...K.values()], [K]),
+            K = r.useMemo(() => [...W.values()], [W]),
             [Y, $] = r.useState(),
             Z = (0, o.bG)([b.A], () => b.A.getCategory(Y)?.name),
             [q, X] = r.useState();
@@ -102,7 +102,7 @@ let F = e => {
         r.useEffect(() => {
             es()
         }, [es]), r.useEffect(() => {
-            (0, u.I)(M.BVt.COLLECTIBLES_SHOP)
+            (0, u.I)(P.BVt.COLLECTIBLES_SHOP)
         }, []);
         let en = r.useRef(null),
             er = r.useRef(null);
@@ -111,14 +111,14 @@ let F = e => {
         }, []), (0, B.gB)();
         let {
             analyticsLocations: el
-        } = (0, A.lC)(Q), ea = (0, S.V)(Q, "collectibles_shop");
+        } = (0, A.lC)(Q), ei = (0, S.V)(Q, "collectibles_shop");
         return (0, n.jsx)(g.f5, {
             value: el,
             children: (0, n.jsx)(E.R9, {
                 newValue: {
                     sessionId: s,
                     pageCategory: Z,
-                    pageSize: P.l5
+                    pageSize: M.l5
                 },
                 children: (0, n.jsx)(C.iM, {
                     tab: Q,
@@ -126,7 +126,7 @@ let F = e => {
                         onClose: D,
                         shouldAddEventListener: !1,
                         children: (0, n.jsxs)("div", {
-                            className: a()(H.bx, {
+                            className: i()(H.bx, {
                                 [B.jP]: c
                             }),
                             ref: er,
@@ -134,23 +134,23 @@ let F = e => {
                             children: [(0, n.jsx)(O.G, {
                                 handleTransition: et,
                                 selectedTab: Q
-                            }), null != ea && ea.type === S.Z.COUNTDOWN && (0, n.jsx)(y.k, {
-                                message: ea.message,
-                                onClick: () => et(P.G2.HOME),
+                            }), null != ei && ei.type === S.Z.COUNTDOWN && (0, n.jsx)(N.k, {
+                                message: ei.message,
+                                onClick: () => et(M.G2.HOME),
                                 variant: "pink",
-                                countdownEndDate: ea.countdownEndDate
+                                countdownEndDate: ei.countdownEndDate
                             }), (0, n.jsx)("div", {
-                                className: a()(H.td, {
-                                    [H.RK]: ee === P.Pf.VISIBLE,
-                                    [H.in]: ee === P.Pf.IN,
-                                    [H.FD]: ee === P.Pf.OUT
+                                className: i()(H.td, {
+                                    [H.RK]: ee === M.Pf.VISIBLE,
+                                    [H.in]: ee === M.Pf.IN,
+                                    [H.FD]: ee === M.Pf.OUT
                                 }),
                                 children: (0, n.jsx)(k.A, {
                                     tab: Q,
-                                    refreshCategories: W,
+                                    refreshCategories: z,
                                     transitionToTab: et,
                                     transitionState: ee,
-                                    categories: z,
+                                    categories: K,
                                     updateAnalyticsState: J
                                 })
                             })]

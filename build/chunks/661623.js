@@ -6,8 +6,8 @@ s.d(t, {
 var n = s(627968),
     r = s(64700),
     l = s(503698),
-    a = s.n(l),
-    i = s(158954),
+    i = s.n(l),
+    a = s(158954),
     o = s(311907),
     c = s(230109),
     d = s(990078),
@@ -38,14 +38,14 @@ let L = r.memo(function(e) {
         readyToClaim: k,
         collectibleProductSkuIds: T,
         collectedSkuIds: O
-    } = (0, E.K)(t, s), N = (0, o.bG)([p.A], () => p.A.isClaiming === s);
+    } = (0, E.K)(t, s), y = (0, o.bG)([p.A], () => p.A.isClaiming === s);
     return (0, n.jsx)(c.L, {
         onChange: l,
         threshold: 0,
         innerRef: L,
         children: (0, n.jsx)("div", {
             ref: L,
-            className: a()(C.ty, A.Q3, {
+            className: i()(C.ty, A.Q3, {
                 [C.yo]: j
             }),
             "aria-label": b.intl.formatToPlainString(b.t.Ez6aHE, {
@@ -88,7 +88,7 @@ let L = r.memo(function(e) {
                                 position: "top",
                                 children: (0, n.jsx)("span", {
                                     className: A.ZB,
-                                    children: (0, n.jsx)(i.cBN, {
+                                    children: (0, n.jsx)(a.cBN, {
                                         size: "xs"
                                     })
                                 })
@@ -103,13 +103,13 @@ let L = r.memo(function(e) {
                                     progress: O.length,
                                     maximum: T.length
                                 }), (0, n.jsxs)("div", {
-                                    className: a()(A.__, {
+                                    className: i()(A.__, {
                                         [A.gF]: k
                                     }),
-                                    children: [k ? (0, n.jsx)(i.Uzd, {
+                                    children: [k ? (0, n.jsx)(a.Uzd, {
                                         size: "xs",
                                         color: "currentColor"
-                                    }) : null, (0, n.jsx)(i.EYj, {
+                                    }) : null, (0, n.jsx)(a.EYj, {
                                         variant: "text-xs/medium",
                                         color: "currentColor",
                                         children: b.intl.formatToPlainString(b.t["5TwASM"], {
@@ -122,11 +122,11 @@ let L = r.memo(function(e) {
                         })]
                     }), (0, n.jsx)("div", {
                         className: C.Vs,
-                        children: (0, n.jsx)(i.e2v, {
+                        children: (0, n.jsx)(a.e2v, {
                             wrap: !1,
                             className: C.Ld,
                             fullWidth: !0,
-                            children: (0, n.jsx)(i.$nd, {
+                            children: (0, n.jsx)(a.$nd, {
                                 variant: "primary",
                                 onClick: e => {
                                     e.stopPropagation(), k && (0, m.BX)(t.skuId, s).then(() => {
@@ -144,7 +144,7 @@ let L = r.memo(function(e) {
                                             }
                                         })
                                     }).catch(() => {
-                                        (0, u.mMO)(() => Promise.resolve(e => (0, n.jsx)(i.Modal, {
+                                        (0, u.mMO)(() => Promise.resolve(e => (0, n.jsx)(a.Modal, {
                                             transitionState: e.transitionState,
                                             onClose: e.onClose,
                                             size: "sm",
@@ -163,7 +163,7 @@ let L = r.memo(function(e) {
                                 text: b.intl.string(b.t.VnVTNc),
                                 fullWidth: !0,
                                 disabled: !k,
-                                loading: N
+                                loading: y
                             })
                         })
                     })]

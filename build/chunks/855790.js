@@ -16,23 +16,23 @@ var i = n(627968),
     h = n(644943);
 let p = u.UVF.DEFAULT,
     f = 1,
-    _ = s.createContext({
+    A = s.createContext({
         type: p,
         opacity: f
     }),
-    A = s.createContext(void 0),
+    _ = s.createContext(void 0),
     g = e => {
         let {
             children: t,
             className: n,
             ...s
         } = e;
-        return (0, i.jsx)(_.Consumer, {
+        return (0, i.jsx)(A.Consumer, {
             children: e => {
                 let {
                     type: a
                 } = e;
-                return (0, i.jsx)(A.Consumer, {
+                return (0, i.jsx)(_.Consumer, {
                     children: e => (0, i.jsx)("div", {
                         className: l()(h.bar, h[o()(a)], n),
                         style: e,
@@ -53,8 +53,8 @@ class m extends s.PureComponent {
             children: t,
             className: n
         } = this.props;
-        return (0, i.jsx)(A.Consumer, {
-            children: s => (0, i.jsx)(_.Consumer, {
+        return (0, i.jsx)(_.Consumer, {
+            children: s => (0, i.jsx)(A.Consumer, {
                 children: a => {
                     let r = l()(h.body, h[o()(a.type)], n);
                     return e ? (0, i.jsx)("div", {
@@ -81,7 +81,7 @@ let x = e => {
             opacity: d = f,
             onClick: c
         } = e;
-        return (0, i.jsx)(_.Provider, {
+        return (0, i.jsx)(A.Provider, {
             value: {
                 type: t,
                 opacity: d
@@ -103,7 +103,7 @@ let x = e => {
             className: n,
             dynamicSize: s = !1
         } = e;
-        return (0, i.jsx)(A.Consumer, {
+        return (0, i.jsx)(_.Consumer, {
             children: e => (0, i.jsx)("div", {
                 className: l()(h.content, {
                     [h.staticSize]: !s
@@ -120,7 +120,7 @@ x.Background = e => {
     } = e;
     if (null == t) return null;
     let a = [g, m, E];
-    return (0, i.jsx)(_.Consumer, {
+    return (0, i.jsx)(A.Consumer, {
         children: e => {
             let {
                 opacity: l
@@ -131,7 +131,7 @@ x.Background = e => {
                 style: r
             });
             {
-                if (a.includes(t.type)) return (0, i.jsx)(A.Provider, {
+                if (a.includes(t.type)) return (0, i.jsx)(_.Provider, {
                     value: r,
                     children: t
                 });

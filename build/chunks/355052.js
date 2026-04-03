@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(118356),
     p = n(397927),
     f = n(684013),
-    _ = n(996308),
-    A = n(831062),
+    A = n(996308),
+    _ = n(831062),
     g = n(471024),
     m = n(976860),
     x = n(144400),
@@ -36,7 +36,7 @@ let j = 10 * E.A.Millis.SECOND,
 function R() {
     let e = (0, y.getPID)(),
         t = (0, y.getRPCAuthToken)();
-    (0, _.tN)({
+    (0, A.tN)({
         type: T.kGV.DISPATCH,
         pid: e,
         token: t,
@@ -140,7 +140,7 @@ class L extends s.PureComponent {
     }
 }
 let w = o().throttle(() => {
-    A.A.increment({
+    _.A.increment({
         name: u.K.APP_CRASHED,
         tags: [`reason:${d.J.UNHANDLED_JS_ERROR}`, `level:${c.k.FATAL}`]
     }, !0)
@@ -163,7 +163,7 @@ class k extends s.PureComponent {
         });
         let i = (0, y.getPID)(),
             s = (0, y.getRPCAuthToken)();
-        (0, _.tN)({
+        (0, A.tN)({
             type: T.kGV.DISPATCH,
             pid: (0, y.getPID)(),
             token: s,

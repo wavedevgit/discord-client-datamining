@@ -1,7 +1,7 @@
 /** chunk id: 729843 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => A
+    A: () => _
 });
 var i = n(387755),
     s = n(684013),
@@ -15,12 +15,12 @@ var i = n(387755),
     h = n(684748),
     p = n(652215),
     f = n(672396),
-    _ = n(985018);
+    A = n(985018);
 
-function A(e) {
+function _(e) {
     let t = (0, r.m1)(e, u.default, c.A),
-        n = _.intl.string(_.t.ssrVzG),
-        A = (0, l.Y)(e),
+        n = A.intl.string(A.t.ssrVzG),
+        _ = (0, l.Y)(e),
         g = (0, d.A)(e),
         {
             trackView: m,
@@ -33,12 +33,12 @@ function A(e) {
             channel_type: e.type
         });
     return {
-        icon: A,
+        icon: _,
         title: t,
         body: n,
-        hint: e => (0, o.sI)(e, (0, h.J)(), _.t.Odi54y),
-        confirmText: _.intl.string(_.t["0D/6Rz"]),
-        cancelText: _.intl.string(_.t.BVN4pL),
+        hint: e => (0, o.sI)(e, (0, h.J)(), A.t.Odi54y),
+        confirmText: A.intl.string(A.t["0D/6Rz"]),
+        cancelText: A.intl.string(A.t.BVN4pL),
         onNotificationShow: () => {
             m()
         },

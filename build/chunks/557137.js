@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var a = n(503698),
-    l = n.n(a),
+var l = n(503698),
+    a = n.n(l),
     s = n(311907),
     r = n(397927),
     o = n(961350),
@@ -16,7 +16,7 @@ function u(e) {
     let {
         userId: t,
         headingId: n,
-        widget: a,
+        widget: l,
         disableInteraction: s = !1,
         title: o,
         subtitle: c,
@@ -24,7 +24,7 @@ function u(e) {
         className: m
     } = e;
     return (0, i.jsxs)("div", {
-        className: l()(d.U1, m),
+        className: a()(d.U1, m),
         children: [(0, i.jsxs)("div", {
             className: d.DD,
             children: [(0, i.jsx)(r.Heading, {
@@ -38,7 +38,7 @@ function u(e) {
                 children: c
             })]
         }), (0, i.jsx)(g, {
-            widget: a,
+            widget: l,
             actionButtons: u,
             disabledInteraction: s,
             userId: t
@@ -50,17 +50,17 @@ function g(e) {
     let {
         widget: t,
         actionButtons: n,
-        disabledInteraction: a,
-        userId: l
+        disabledInteraction: l,
+        userId: a
     } = e, r = (0, s.bG)([o.default], () => o.default.getId());
-    return a ? null : null != n && n.length > 0 ? (0, i.jsx)("div", {
+    return l ? null : null != n && n.length > 0 ? (0, i.jsx)("div", {
         className: d.o1,
         children: n
-    }) : r !== l ? (0, i.jsx)("div", {
+    }) : r !== a ? (0, i.jsx)("div", {
         className: d.o1,
         children: (0, i.jsx)(c.A, {
             widget: t,
-            userId: l,
+            userId: a,
             className: d.AQ
         })
     }) : null

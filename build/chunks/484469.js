@@ -7,22 +7,22 @@ var n = s(627968);
 s(64700);
 var r = s(503698),
     l = s.n(r),
-    a = s(551497),
-    i = s(523298);
+    i = s(551497),
+    a = s(523298);
 let o = e => {
     let {
         skipPulseAnimation: t = !1
     } = e;
     return (0, n.jsx)("div", {
-        className: l()(a.ty, i.SQ, {
-            [i.aE]: !t
+        className: l()(i.ty, a.SQ, {
+            [a.aE]: !t
         }),
         children: (0, n.jsxs)("div", {
-            className: l()(a.qt, i.yw),
+            className: l()(i.qt, a.yw),
             children: [(0, n.jsx)("div", {
-                className: i.Jr
+                className: a.Jr
             }), (0, n.jsx)("div", {
-                className: i.N9
+                className: a.N9
             })]
         })
     })

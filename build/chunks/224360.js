@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var a = n(503698),
-    l = n.n(a),
+var l = n(503698),
+    a = n.n(l),
     s = n(311907),
     r = n(990078),
     o = n(397927),
@@ -21,9 +21,9 @@ function f(e) {
     let {
         applicationId: t,
         userId: n,
-        onClick: a
+        onClick: l
     } = e, {
-        coverImageUrl: l,
+        coverImageUrl: a,
         gameName: c,
         isLoading: f
     } = (0, d.A)(t), h = (0, s.bG)([u.A], () => u.A.suggestedFetchIsLoading), _ = m.intl.formatToPlainString(m.t["3mb1s5"], {
@@ -36,11 +36,11 @@ function f(e) {
         ariaHidden: !0,
         children: (0, i.jsxs)(o.DUT, {
             className: p.c9,
-            onClick: a,
+            onClick: l,
             "aria-label": _,
             children: [(0, i.jsx)(g.A, {
                 className: p.Iv,
-                imageSrc: l,
+                imageSrc: a,
                 gameName: c,
                 applicationId: t,
                 userId: n,
@@ -58,19 +58,19 @@ function h(e) {
     let {
         userId: t,
         games: n,
-        onDismiss: a,
+        onDismiss: l,
         onClick: s,
         className: r
     } = e, d = (0, c.GV)();
     return (0, i.jsxs)("aside", {
-        className: l()(p.kL, r),
+        className: a()(p.kL, r),
         "aria-labelledby": d,
         children: [(0, i.jsxs)("div", {
             className: p.wx,
             children: [(0, i.jsx)(o.DUT, {
                 className: p.r,
                 "aria-label": m.intl.string(m.t["pUR+3g"]),
-                onClick: a,
+                onClick: l,
                 children: (0, i.jsx)(o.PGe, {
                     size: "sm",
                     color: "currentColor"

@@ -6,8 +6,8 @@ s.d(t, {
 var n = s(627968),
     r = s(64700),
     l = s(503698),
-    a = s.n(l),
-    i = s(687498),
+    i = s.n(l),
+    a = s(687498),
     o = s(607399),
     c = s(946015),
     d = s(397927),
@@ -25,8 +25,8 @@ let g = r.memo(function(e) {
             friction: 12
         }
     });
-    return (0, n.jsxs)(i.animated.div, {
-        className: a()([_.lP, o.Fr && _.yJ]),
+    return (0, n.jsxs)(a.animated.div, {
+        className: i()([_.lP, o.Fr && _.yJ]),
         role: "status",
         style: {
             ...r,

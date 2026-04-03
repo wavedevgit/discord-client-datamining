@@ -6,8 +6,8 @@ n.d(t, {
     zf: () => E
 });
 var i = n(627968),
-    a = n(64700),
-    l = n(735438),
+    l = n(64700),
+    a = n(735438),
     s = n(397927),
     r = n(308528),
     o = n(736653),
@@ -30,7 +30,7 @@ function j(e) {
     let {
         heading: t,
         bodyText: n,
-        children: a
+        children: l
     } = e;
     return (0, i.jsxs)("div", {
         className: f.Ie,
@@ -45,13 +45,13 @@ function j(e) {
                 color: "text-default",
                 children: n
             })]
-        }), a]
+        }), l]
     })
 }
 
 function v() {
     let e = p.intl.string(p.t.RnD2yZ),
-        [t] = a.useState(() => ((0, l.sample)(h) ?? h[0])());
+        [t] = l.useState(() => ((0, a.sample)(h) ?? h[0])());
     return (0, i.jsx)(j, {
         heading: e,
         bodyText: t
@@ -60,7 +60,7 @@ function v() {
 
 function T() {
     let e = p.intl.string(p.t.bFgqYJ),
-        [t] = a.useState(() => ((0, l.sample)(_) ?? _[0])());
+        [t] = l.useState(() => ((0, a.sample)(_) ?? _[0])());
     return (0, i.jsx)(j, {
         heading: e,
         bodyText: t
@@ -75,7 +75,7 @@ function E(e) {
         onClose: c
     } = e, d = g.Ay.getName(n, o, t), u = p.intl.formatToPlainString(p.t.sjSitP, {
         name: d
-    }), [x] = a.useState(() => ((0, l.sample)(A) ?? A[0])(d)), h = a.useCallback(() => {
+    }), [x] = l.useState(() => ((0, a.sample)(A) ?? A[0])(d)), h = l.useCallback(() => {
         r.A.openPrivateChannel({
             recipientIds: t.id
         }), c?.()
@@ -99,12 +99,12 @@ function b() {
     return (0, i.jsx)("div", {
         className: f.HU,
         children: I.map((t, n) => {
-            let a = c.A.get(t);
-            if (null == a) return null;
-            let l = (0, s.Mwr)(e) ? a.icon.darkPNG : a.icon.lightPNG;
+            let l = c.A.get(t);
+            if (null == l) return null;
+            let a = (0, s.Mwr)(e) ? l.icon.darkPNG : l.icon.lightPNG;
             return (0, i.jsx)("img", {
-                src: l,
-                alt: a.name,
+                src: a,
+                alt: l.name,
                 className: f.gj
             }, n)
         })
@@ -114,9 +114,9 @@ function b() {
 function C(e) {
     let {
         onClose: t
-    } = e, n = a.useCallback(() => {
+    } = e, n = l.useCallback(() => {
         t?.(), (0, u.openUserSettings)(d.X.CONNECTIONS_PANEL)
-    }, [t]), l = a.useCallback(() => {
+    }, [t]), a = l.useCallback(() => {
         t?.(), (0, u.openUserSettings)(d.X.CONTENT_AND_SOCIAL_CONNECTED_GAMES_TAB)
     }, [t]);
     return (0, i.jsxs)(j, {
@@ -129,7 +129,7 @@ function C(e) {
                 onClick: n
             }), (0, i.jsx)(m.FD, {
                 text: p.intl.string(p.t.GTCx0p),
-                onClick: l
+                onClick: a
             })]
         })]
     })

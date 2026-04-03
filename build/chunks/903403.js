@@ -6,8 +6,8 @@ s.d(t, {
 var n = s(627968),
     r = s(64700),
     l = s(503698),
-    a = s.n(l),
-    i = s(417597),
+    i = s.n(l),
+    a = s(417597),
     o = s(653887),
     c = s(775602),
     d = s(607470),
@@ -21,14 +21,14 @@ var n = s(627968),
 function f(e) {
     let {
         category: t
-    } = e, s = (0, i.bG)([c.A], () => c.A.useReducedMotion), l = (0, i.bG)([u.A], () => u.A.isFocused()), {
+    } = e, s = (0, a.bG)([c.A], () => c.A.useReducedMotion), l = (0, a.bG)([u.A], () => u.A.isFocused()), {
         catalogBannerStatic: _,
         catalogBannerAnimated: f,
         catalogBannerRive: x
     } = (0, m.MV)(t), E = r.useRef(null), b = null != x;
     return (0, n.jsxs)("div", {
         ref: E,
-        className: a()(p.sW, {
+        className: i()(p.sW, {
             [p.by]: b
         }),
         children: [b ? (0, n.jsx)(o._, {

@@ -4,9 +4,9 @@ n.d(t, {
     R: () => b
 });
 var i = n(627968),
-    a = n(64700),
-    l = n(503698),
-    s = n.n(l),
+    l = n(64700),
+    a = n(503698),
+    s = n.n(a),
     r = n(485584),
     o = n(598748),
     c = n(158954),
@@ -27,7 +27,7 @@ function v(e) {
     let {
         applicationId: t,
         size: n = "default"
-    } = e, a = (0, d.bG)([A.A], () => A.A.getApplicationWidgetConfig(t));
+    } = e, l = (0, d.bG)([A.A], () => A.A.getApplicationWidgetConfig(t));
     return (0, i.jsxs)("div", {
         className: s()(j.kL, {
             [j.PG]: "small" === n
@@ -56,8 +56,8 @@ function v(e) {
             })]
         }), (0, i.jsx)("div", {
             className: j.ZS,
-            children: a?.miniPreviewImage != null ? (0, i.jsx)("img", {
-                src: a.miniPreviewImage,
+            children: l?.miniPreviewImage != null ? (0, i.jsx)("img", {
+                src: l.miniPreviewImage,
                 alt: "",
                 className: j.oz
             }) : (0, i.jsx)("div", {
@@ -71,14 +71,14 @@ function T(e) {
     let {
         applicationId: t,
         size: n = "default",
-        userId: a
-    } = e, l = (0, p.A)(a, t), c = l.surfaceConfigs[o.m.ADD_WIDGET_PREVIEW];
+        userId: l
+    } = e, a = (0, p.A)(l, t), c = a.surfaceConfigs[o.m.ADD_WIDGET_PREVIEW];
     return null == c ? null : (0, i.jsx)("div", {
         className: s()(j.iW, {
             [j.PG]: "small" === n
         }),
         children: (0, i.jsx)(r.kH, {
-            ...l,
+            ...a,
             surface: o.m.ADD_WIDGET_PREVIEW,
             surfaceConfig: c,
             layoutProps: {
@@ -108,7 +108,7 @@ function b(e) {
         applicationId: t,
         size: n = "default"
     } = e, {
-        trackUserProfileAction: l
+        trackUserProfileAction: a
     } = (0, _.NJ)(), s = (0, f.h)(t), {
         hasAlreadyLinked: r,
         canStartAuthorization: o,
@@ -116,14 +116,14 @@ function b(e) {
         fetched: x
     } = (0, m.RD)(s), {
         analyticsLocations: p
-    } = (0, g.Ay)(u.A.USER_PROFILE_APPLICATION_WIDGET), h = a.useCallback(() => {
-        o && (l({
+    } = (0, g.Ay)(u.A.USER_PROFILE_APPLICATION_WIDGET), h = l.useCallback(() => {
+        o && (a({
             action: "PRESS_APPLICATION_WIDGET_PLACEHOLDER_CONNECT",
             applicationId: t
         }), d({
             analyticsLocations: p
         }))
-    }, [o, l, t, d, p]);
+    }, [o, a, t, d, p]);
     return "default" !== n || null == s ? null : (0, i.jsxs)("div", {
         className: j.qr,
         children: [(0, i.jsx)(c.A5T, {

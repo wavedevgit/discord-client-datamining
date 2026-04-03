@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(335022),
     p = n(714977),
     f = n(266244),
-    _ = n(439817),
-    A = n(985018),
+    A = n(439817),
+    _ = n(985018),
     g = n(156052);
 
 function m(e) {
@@ -46,8 +46,8 @@ class x extends s.PureComponent {
         } = this.props, a = null != e ? (0, i.jsx)(h.A, {
             guildId: e,
             onDragStart: this.onDragStart
-        }, e) : (0, i.jsx)(_.A, {
-            title: A.intl.string(A.t.YUU0RF),
+        }, e) : (0, i.jsx)(A.A, {
+            title: _.intl.string(_.t.YUU0RF),
             renderSettings: m,
             onDragStart: this.onDragStart,
             children: (0, i.jsx)(f.A, {})

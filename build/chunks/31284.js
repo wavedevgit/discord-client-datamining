@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(956793),
     p = n(47167),
     f = n(235986),
-    _ = n(42473),
-    A = n(994314),
+    A = n(42473),
+    _ = n(994314),
     g = n(241847),
     m = n(178442),
     x = n(71393),
@@ -72,7 +72,7 @@ class j extends s.PureComponent {
             onClick: t => {
                 t.stopPropagation(), u.A.channelListScrollTo(a, e.id)
             },
-            children: (0, i.jsx)(A.A, {
+            children: (0, i.jsx)(_.A, {
                 className: O.Ix,
                 children: s
             })
@@ -120,17 +120,17 @@ class j extends s.PureComponent {
                     })
                 }), (0, i.jsxs)(f.A, {
                     grow: 0,
-                    children: [(0, i.jsx)(_.A, {
+                    children: [(0, i.jsx)(A.A, {
                         tooltipText: p ? T.intl.string(T.t.YqAjXy) : T.intl.string(T.t.w4m945),
                         icon: p ? d.z0P : d.cNw,
                         iconForeground: p ? b.of : null,
                         onClick: this.handleToggleSelfMute
-                    }), (0, i.jsx)(_.A, {
+                    }), (0, i.jsx)(A.A, {
                         tooltipText: h ? T.intl.string(T.t["2US872"]) : T.intl.string(T.t.wjcRFX),
                         icon: h ? d.cQT : d.LoC,
                         onClick: this.handleToggleSelfDeaf,
                         iconForeground: h ? b.of : null
-                    }), null == s && (0, i.jsx)(_.A, {
+                    }), null == s && (0, i.jsx)(A.A, {
                         tooltipText: T.intl.string(T.t["6vrfgt"]),
                         onClick: this.handleDisconnect,
                         icon: d.zWQ

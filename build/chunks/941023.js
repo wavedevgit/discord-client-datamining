@@ -18,23 +18,23 @@ let f = {
         x: 0,
         y: 0
     },
-    _ = !1;
+    A = !1;
 
-function A(e) {
+function _(e) {
     let {
         clientX: t,
         clientY: n
     } = e;
-    _ = !0, f.x = t, f.y = n
+    A = !0, f.x = t, f.y = n
 }
 let g = new Map;
 
 function m(e, t) {
-    if (null == t) g.delete(e), 0 === g.size && (window.removeEventListener("mousemove", A), _ = !1);
+    if (null == t) g.delete(e), 0 === g.size && (window.removeEventListener("mousemove", _), A = !1);
     else {
         let n = g.get(e);
         if (null != n && (0, r.A)(n.zone, t.zone)) return;
-        0 === g.size && window.addEventListener("mousemove", A), g.set(e, t)
+        0 === g.size && window.addEventListener("mousemove", _), g.set(e, t)
     }
     if (p.isPlatformEmbedded)
         if (c.default.isCurrentPidOutOfProcess()) {
@@ -65,7 +65,7 @@ function m(e, t) {
                 })
             }), n = e, x || (n.setClickZoneCallback((e, t, n) => {
                 let i = g.get(e);
-                null != i && (_ || (f.x = t, f.y = n), i.instance.click())
+                null != i && (A || (f.x = t, f.y = n), i.instance.click())
             }), x = !0)
         }
 }

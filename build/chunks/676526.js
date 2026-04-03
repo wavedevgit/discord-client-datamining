@@ -3,9 +3,9 @@ n.d(t, {
     h: () => j
 });
 var i = n(627968),
-    a = n(64700),
-    l = n(503698),
-    s = n.n(l),
+    l = n(64700),
+    a = n(503698),
+    s = n.n(a),
     r = n(688807),
     o = n(152621),
     c = n(287809),
@@ -24,16 +24,16 @@ function I(e) {
     let {
         index: t,
         widgetType: n,
-        game: l,
+        game: a,
         coverImageUrl: s,
         gameName: r,
         children: o
     } = e, {
         manageFocusOnReorder: c
-    } = (0, g.r)(), m = a.useRef(null);
+    } = (0, g.r)(), m = l.useRef(null);
     return (0, i.jsx)(u.mG, {
         index: t,
-        itemId: l.applicationId,
+        itemId: a.applicationId,
         listType: n,
         itemType: "GAME_COVER",
         itemPreviewProps: {
@@ -45,7 +45,7 @@ function I(e) {
             positionNumber: t + 1
         }),
         onReorder: (e, t) => (0, d.Un)(n, e, t),
-        onEnd: () => c(l.applicationId),
+        onEnd: () => c(a.applicationId),
         className: A.kL,
         dropBeforeClassName: A.A,
         dropAfterClassName: A.Ze,
@@ -62,8 +62,8 @@ function j(e) {
     let {
         game: t,
         userId: n,
-        widgetType: a,
-        guildId: l,
+        widgetType: l,
+        guildId: a,
         channelId: d,
         disableInteraction: h = !1,
         index: j,
@@ -74,8 +74,8 @@ function j(e) {
         gameName: b,
         isLoading: C
     } = (0, o.A)(t.applicationId), {
-        registerDragHandleRef: N
-    } = (0, g.r)(), S = (0, f.A)(t.applicationId).length > 0, y = c.default.getCurrentUser(), R = y?.id === n, k = !h && R, {
+        registerDragHandleRef: S
+    } = (0, g.r)(), N = (0, f.A)(t.applicationId).length > 0, y = c.default.getCurrentUser(), R = y?.id === n, k = !h && R, {
         isDragging: w
     } = (0, r.V)(e => ({
         isDragging: e.isDragging()
@@ -86,21 +86,21 @@ function j(e) {
             applicationId: t.applicationId,
             userId: n,
             disableInteraction: h,
-            className: s()(S ? A.kO : void 0, null == E || h ? void 0 : _.iL),
+            className: s()(N ? A.kO : void 0, null == E || h ? void 0 : _.iL),
             hideTooltip: w,
             coverRef: T
         }), k && (0, i.jsx)(u.jV, {
-            buttonRef: N(t.applicationId),
+            buttonRef: S(t.applicationId),
             className: A.BU
         }), !h && (0, i.jsx)(p.d, {
             userId: n,
             applicationId: t.applicationId,
-            guildId: l,
+            guildId: a,
             channelId: d,
             className: A.Ez
         }), k && (0, i.jsx)(x.A, {
             game: t,
-            widgetType: a,
+            widgetType: l,
             className: A.vS,
             iconSize: "xs",
             onRemove: () => v?.(t.applicationId)
@@ -109,7 +109,7 @@ function j(e) {
     return C ? (0, i.jsx)("div", {
         className: _.mD
     }) : k ? (0, i.jsx)(I, {
-        widgetType: a,
+        widgetType: l,
         index: j ?? 0,
         game: t,
         coverImageUrl: E,

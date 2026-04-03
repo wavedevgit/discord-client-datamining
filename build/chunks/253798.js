@@ -4,24 +4,24 @@ n.d(t, {
     M: () => c
 });
 var i = n(627968),
-    a = n(64700),
-    l = n(311907),
+    l = n(64700),
+    a = n(311907),
     s = n(61881),
     r = n(735321);
-let o = a.createContext(null);
+let o = l.createContext(null);
 
 function c(e) {
     let {
         widgetType: t,
         children: n
-    } = e, c = (0, l.bG)([s.A], () => {
+    } = e, c = (0, a.bG)([s.A], () => {
         let e = s.A.getPendingWidgets();
         if (null == e) return !1;
         let n = e.find(e => e.type === t);
         if (null == n) return !1;
         let i = (0, r.cv)(t);
         return n.games.length > i
-    }), [d, u] = a.useState(c);
+    }), [d, u] = l.useState(c);
     return (0, i.jsx)(o.Provider, {
         value: {
             expanded: d,
@@ -32,7 +32,7 @@ function c(e) {
 }
 
 function d() {
-    let e = a.useContext(o);
+    let e = l.useContext(o);
     if (null == e) throw Error("useGameWidgetExpandCollapse must be used within a GameWidgetExpandCollapseContextProvider");
     return e
 }

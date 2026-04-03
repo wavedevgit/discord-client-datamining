@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var a = n(398590),
-    l = n(114212),
+var l = n(398590),
+    a = n(114212),
     s = n(345942),
     r = n(183555),
     o = n(913453),
@@ -31,28 +31,28 @@ function m(e) {
             length: 10
         }).map((e, t) => (0, i.jsxs)("div", {
             className: g.Y7,
-            children: [(0, i.jsx)(l.FQ, {
+            children: [(0, i.jsx)(a.FQ, {
                 width: 40,
                 opacity: .08
-            }), (0, i.jsx)(l.FQ, {
+            }), (0, i.jsx)(a.FQ, {
                 width: 135,
                 opacity: .08
             })]
         }, t)) : (null != x || p) && x?.length !== 0 ? x?.map(e => {
             let {
-                guild: l,
+                guild: a,
                 nick: r
             } = e;
             return (0, i.jsx)(c.A, {
                 user: t,
-                guild: l,
+                guild: a,
                 nick: r,
                 onSelect: () => {
                     m({
                         action: "PRESS_MUTUAL_GUILD"
-                    }), (0, s.u)(l.id), n(), (0, a.jH)()
+                    }), (0, s.u)(a.id), n(), (0, l.jH)()
                 }
-            }, l.id)
+            }, a.id)
         }) : (0, i.jsx)(d.jB, {})
     })
 }

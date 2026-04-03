@@ -1,7 +1,7 @@
 /** chunk id: 499820 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => A
+    A: () => _
 });
 var i = n(627968),
     s = n(64700),
@@ -29,11 +29,11 @@ let h = 0,
     },
     f = [o.G6Q.DISABLED, o.G6Q.TOP_LEFT, o.G6Q.TOP_RIGHT, o.G6Q.BOTTOM_LEFT, o.G6Q.BOTTOM_RIGHT];
 
-function _(e) {
+function A(e) {
     let {
         position: t,
         onChange: n
-    } = e, [a] = s.useState(() => `notification-position-selector-${h++}`), _ = t === o.G6Q.DISABLED ? d.intl.string(d.t.R6LxVf) : d.intl.formatToPlainString(d.t["XXHDM/"], {
+    } = e, [a] = s.useState(() => `notification-position-selector-${h++}`), A = t === o.G6Q.DISABLED ? d.intl.string(d.t.R6LxVf) : d.intl.formatToPlainString(d.t["XXHDM/"], {
         position: p(t)
     });
     return (0, i.jsxs)("div", {
@@ -69,9 +69,9 @@ function _(e) {
         }), (0, i.jsx)(r.Text, {
             variant: "text-sm/normal",
             className: u.Ot,
-            children: _
+            children: A
         })]
     })
 }
-_.Positions = o.G6Q;
-let A = _
+A.Positions = o.G6Q;
+let _ = A

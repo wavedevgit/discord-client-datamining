@@ -19,9 +19,9 @@ function h(e, t, n, h) {
             username: "",
             game: n.name
         }),
-        _ = t.getAvatarURL(e.guild_id, 80),
+        A = t.getAvatarURL(e.guild_id, 80),
         {
-            trackView: A,
+            trackView: _,
             trackClick: g
         } = (0, o.Y)(c.KS.ActivityInvite, {
             notif_type: c.KS.ActivityInvite,
@@ -30,14 +30,14 @@ function h(e, t, n, h) {
             activity_name: n.name
         });
     return {
-        icon: _,
+        icon: A,
         title: p,
         body: f,
         hint: e => (0, l.sI)(e, (0, o.J)(), u.t.Odi54y),
         confirmText: u.intl.string(u.t["fgP/wX"]),
         cancelText: u.intl.string(u.t["tpXzJ+"]),
         onNotificationShow: () => {
-            A()
+            _()
         },
         onConfirmClick: (t, n) => {
             i.A.sendActivityInvite({

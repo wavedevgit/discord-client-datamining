@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var a = n(311907),
-    l = n(397927),
+var l = n(311907),
+    a = n(397927),
     s = n(517164),
     r = n(114212),
     o = n(290863),
@@ -32,9 +32,9 @@ function E(e) {
         displayProfile: E,
         guildId: b,
         channelId: C,
-        onClose: N
+        onClose: S
     } = e, {
-        live: S,
+        live: N,
         recent: y,
         stream: R
     } = (0, u.A)(t.id), {
@@ -43,10 +43,10 @@ function E(e) {
     } = (0, g.A)({
         userId: t.id,
         guildId: b
-    }), O = (0, a.bG)([s.A], () => s.A.isFetchingUserOutbox(t.id)), L = t.id === n.id, P = (0, a.bG)([c.A, o.A], () => {
+    }), O = (0, l.bG)([s.A], () => s.A.isFetchingUserOutbox(t.id)), L = t.id === n.id, P = (0, l.bG)([c.A, o.A], () => {
         let e = L ? c.A.getStatus() : o.A.getStatus(t.id);
-        return e === l.clD.OFFLINE || e === l.clD.INVISIBLE
-    }), D = S.length > 0 || null != R, G = E?.private !== !0 && null == R && null == w && null != k, M = !P && (D || G), U = y.length > 0;
+        return e === a.clD.OFFLINE || e === a.clD.INVISIBLE
+    }), D = N.length > 0 || null != R, G = E?.private !== !0 && null == R && null == w && null != k, M = !P && (D || G), U = y.length > 0;
     return M || U || !O ? M || U || O ? (0, i.jsxs)(A.K, {
         className: T.XG,
         fade: !0,
@@ -59,28 +59,28 @@ function E(e) {
                         user: t,
                         currentUser: n,
                         stream: R,
-                        onClose: N
+                        onClose: S
                     })
-                }), S.map((e, a) => (0, i.jsx)("li", {
+                }), N.map((e, l) => (0, i.jsx)("li", {
                     children: (0, i.jsx)(m.A, {
                         user: t,
                         currentUser: n,
                         activity: e,
-                        onClose: N
+                        onClose: S
                     })
-                }, `live-${a}`)), G && (0, i.jsx)("li", {
+                }, `live-${l}`)), G && (0, i.jsx)("li", {
                     children: (0, i.jsx)(f.A, {
                         user: t,
                         currentUser: n,
                         voiceChannel: k,
-                        onClose: N
+                        onClose: S
                     })
                 })]
             })
         }) : null, U ? (0, i.jsx)(_.A, {
             heading: v.intl.string(v.t.jzgEoL),
             introText: L ? v.intl.format(v.t["4bk9Ak"], {
-                learnMoreHook: (e, t) => (0, i.jsx)(l.MzZ, {
+                learnMoreHook: (e, t) => (0, i.jsx)(a.MzZ, {
                     href: d.A.getArticleURL(j.MVz.ACTIVITY_STATUS_SETTINGS),
                     children: e
                 }, t)
@@ -92,18 +92,18 @@ function E(e) {
                     children: (0, i.jsx)(x.A, {
                         user: t,
                         entry: e,
-                        onClose: N
+                        onClose: S
                     })
                 }, e.id))
             })
         }) : null]
     }) : L ? (0, i.jsx)(h.qv, {
-        onClose: N
+        onClose: S
     }) : (0, i.jsx)(h.zf, {
         user: t,
         guildId: E?.guildId ?? b,
         channelId: C,
-        onClose: N
+        onClose: S
     }) : (0, i.jsx)("div", {
         className: T.kR,
         children: Array.from({

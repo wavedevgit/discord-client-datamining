@@ -3,9 +3,9 @@ n.d(t, {
     A: () => v
 });
 var i = n(627968),
-    a = n(64700),
-    l = n(503698),
-    s = n.n(l),
+    l = n(64700),
+    a = n(503698),
+    s = n.n(a),
     r = n(687498),
     o = n(311907),
     c = n(397927),
@@ -27,7 +27,7 @@ function v(e) {
         className: t
     } = e, {
         trackUserProfileEditSaved: n
-    } = (0, g.NJ)(), [l, v] = a.useState(!1), T = (0, o.yK)([p.A], () => p.A.getSaveablePendingWidgets() ?? []), E = (0, o.yK)([p.A], () => p.A.getChangedWidgets()), b = (0, o.yK)([p.A], () => p.A.getRemovedWidgets()), C = (0, o.bG)([p.A], () => p.A.hasUnsavedChanges()), N = (0, o.bG)([p.A], () => p.A.canSaveChanges()), S = (0, o.bG)([p.A], () => p.A.isSubmitting), y = (0, o.bG)([d.A], () => d.A.useReducedMotion), R = (0, c.pnh)(C, {
+    } = (0, g.NJ)(), [a, v] = l.useState(!1), T = (0, o.yK)([p.A], () => p.A.getSaveablePendingWidgets() ?? []), E = (0, o.yK)([p.A], () => p.A.getChangedWidgets()), b = (0, o.yK)([p.A], () => p.A.getRemovedWidgets()), C = (0, o.bG)([p.A], () => p.A.hasUnsavedChanges()), S = (0, o.bG)([p.A], () => p.A.canSaveChanges()), N = (0, o.bG)([p.A], () => p.A.isSubmitting), y = (0, o.bG)([d.A], () => d.A.useReducedMotion), R = (0, c.pnh)(C, {
         from: {
             opacity: 0,
             y: 80 * !y
@@ -41,7 +41,7 @@ function v(e) {
             y: 80 * !y
         }
     });
-    a.useEffect(() => {
+    l.useEffect(() => {
         let e = null;
 
         function t() {
@@ -50,10 +50,10 @@ function v(e) {
         return u._.subscribe(_.jej.EMPHASIZE_NOTICE, t), () => {
             u._.unsubscribe(_.jej.EMPHASIZE_NOTICE, t), null !== e && clearTimeout(e)
         }
-    }, []), a.useEffect(() => {
+    }, []), l.useEffect(() => {
         C && c.ORC.announce(A.intl.string(A.t["0Y/qkL"]))
     }, [C]);
-    let k = a.useCallback(async () => {
+    let k = l.useCallback(async () => {
             if (p.A.canSaveChanges()) {
                 try {
                     await x.A.savePendingWidgets(T)
@@ -74,7 +74,7 @@ function v(e) {
                 })
             }
         }, [T, E, b, n]),
-        w = a.useCallback(() => {
+        w = l.useCallback(() => {
             x.A.clearPendingWidgets()
         }, []);
     return R((e, n) => n ? (0, i.jsx)(r.animated.div, {
@@ -82,7 +82,7 @@ function v(e) {
         style: e,
         children: (0, i.jsxs)("footer", {
             className: s()(I.Qs, {
-                [I.hO]: l
+                [I.hO]: a
             }),
             "aria-labelledby": j,
             children: [(0, i.jsx)(c.Text, {
@@ -98,14 +98,14 @@ function v(e) {
                     variant: "secondary",
                     text: A.intl.string(A.t.yBZMsQ),
                     onClick: w,
-                    disabled: !C || S
+                    disabled: !C || N
                 }), (0, i.jsx)(c.Button, {
                     size: "sm",
                     variant: "primary",
                     text: A.intl.string(A.t["R3BPH+"]),
                     onClick: k,
-                    loading: S,
-                    disabled: !N || !C || S
+                    loading: N,
+                    disabled: !S || !C || N
                 })]
             })]
         })

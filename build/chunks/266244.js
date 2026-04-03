@@ -1,7 +1,7 @@
 /** chunk id: 266244 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => A
+    A: () => _
 });
 var i = n(627968),
     s = n(64700),
@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(652215),
     p = n(985018),
     f = n(686947);
-let _ = () => (0, o.WU)("DM_SEARCH"),
-    A = s.memo(function() {
+let A = () => (0, o.WU)("DM_SEARCH"),
+    _ = s.memo(function() {
         let e = (0, a.bG)([c.default], () => c.default.isLocked((0, u.getPID)()) ? "true" : "false"),
             t = (0, d.A)(e => {
                 let {
@@ -31,7 +31,7 @@ let _ = () => (0, o.WU)("DM_SEARCH"),
                 children: (0, i.jsx)("button", {
                     type: "button",
                     className: f.lU,
-                    onClick: _,
+                    onClick: A,
                     children: p.intl.string(p.t.LzcpeZ)
                 })
             }), (0, i.jsx)(l.A, {

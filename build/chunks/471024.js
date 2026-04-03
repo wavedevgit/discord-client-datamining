@@ -2,8 +2,8 @@
 "use strict";
 n.d(t, {
     Ay: () => m,
-    de: () => A,
-    sI: () => _
+    de: () => _,
+    sI: () => A
 });
 var i = n(627968),
     s = n(64700),
@@ -24,7 +24,7 @@ let h = e => e.stopPropagation(),
     f = () => (0, i.jsx)("div", {
         className: c.yF
     }),
-    _ = (e, t, n) => (0, i.jsx)("div", {
+    A = (e, t, n) => (0, i.jsx)("div", {
         className: c.qD,
         children: d.intl.format(n, {
             keybind: t,
@@ -34,7 +34,7 @@ let h = e => e.stopPropagation(),
             }, n)
         })
     }),
-    A = (e, t) => (0, i.jsx)("div", {
+    _ = (e, t) => (0, i.jsx)("div", {
         className: c.g2,
         children: t
     });

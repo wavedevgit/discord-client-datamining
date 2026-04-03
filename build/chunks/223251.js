@@ -15,8 +15,8 @@ var i = n(64700),
     h = n(696451),
     p = n(71393),
     f = n(576705),
-    _ = n(309010),
-    A = n(967198),
+    A = n(309010),
+    _ = n(967198),
     g = n(287809),
     m = n(256415),
     x = n(9302),
@@ -50,9 +50,9 @@ class y extends i.Component {
         return null
     }
 }
-let v = a.Ay.connectStores([A.A, _.A, p.A, g.default, m.default, u.Ay, f.A, h.Ay], () => {
-    let e = A.A.getGuildId(),
-        t = _.A.getChannelId(e),
+let v = a.Ay.connectStores([_.A, A.A, p.A, g.default, m.default, u.Ay, f.A, h.Ay], () => {
+    let e = _.A.getGuildId(),
+        t = A.A.getChannelId(e),
         n = p.A.getGuild(e),
         i = g.default.getCurrentUser(),
         a = u.Ay.getChannels(n?.id)[u.I6] ?? [],

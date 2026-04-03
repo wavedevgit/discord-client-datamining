@@ -4,8 +4,8 @@ n.d(t, {
     Y: () => u
 });
 var i = n(64700),
-    a = n(311907),
-    l = n(136086),
+    l = n(311907),
+    a = n(136086),
     s = n(885151),
     r = n(958805),
     o = n(61881),
@@ -23,14 +23,14 @@ function d(e) {
             peekedGameIds: n
         } = (0, c.s)(), r = i.useMemo(() => n[e] ?? [], [n, e]);
         (0, s.W)(r);
-        let o = (0, a.yK)([l.A], () => r.map(e => l.A.isFetching(e)));
+        let o = (0, l.yK)([a.A], () => r.map(e => a.A.isFetching(e)));
         i.useEffect(() => {
             for (let n of r) {
-                let i = l.A.didFetchingFail(n),
-                    a = l.A.hasNoData(n),
-                    s = !!l.A.getGame(n),
-                    r = null != l.A.getCoverImageUrl(n);
-                (i || a || s && !r) && t(n, e)
+                let i = a.A.didFetchingFail(n),
+                    l = a.A.hasNoData(n),
+                    s = !!a.A.getGame(n),
+                    r = null != a.A.getCoverImageUrl(n);
+                (i || l || s && !r) && t(n, e)
             }
         }, [r, t, e, o])
     }(e);
@@ -38,14 +38,14 @@ function d(e) {
         d = i.useCallback(n => {
             t(n, e)
         }, [t, e]),
-        u = (0, a.yK)([l.A], () => o.map(e => l.A.isFetching(e)));
+        u = (0, l.yK)([a.A], () => o.map(e => a.A.isFetching(e)));
     i.useEffect(() => {
         let t = o.filter(e => {
-            let t = l.A.didFetchingFail(e),
-                n = l.A.hasNoData(e),
-                i = !!l.A.getGame(e),
-                a = null != l.A.getCoverImageUrl(e);
-            return t || n || i && !a
+            let t = a.A.didFetchingFail(e),
+                n = a.A.hasNoData(e),
+                i = !!a.A.getGame(e),
+                l = null != a.A.getCoverImageUrl(e);
+            return t || n || i && !l
         });
         t.length > 0 && n(t, e)
     }, [o, e, n, u]);
@@ -60,7 +60,7 @@ function d(e) {
 }
 
 function u(e, t) {
-    let [n, l, s, d] = (0, a.yK)([o.A], () => [o.A.suggestedFetchAttempted, o.A.suggestedFetchError, o.A.suggestedGameIds, o.A.suggestedFetchIsLoading]), {
+    let [n, a, s, d] = (0, l.yK)([o.A], () => [o.A.suggestedFetchAttempted, o.A.suggestedFetchError, o.A.suggestedGameIds, o.A.suggestedFetchIsLoading]), {
         onLoad: u
     } = (0, c.s)();
     i.useEffect(() => {
@@ -70,6 +70,6 @@ function u(e, t) {
     i.useEffect(() => {
         if (!g) return;
         let e = t.map(e => e.games).flat();
-        l || u(s.suggestedGamesIds ?? [], s.suggestedWishlistGamesIds ?? [], e)
+        a || u(s.suggestedGamesIds ?? [], s.suggestedWishlistGamesIds ?? [], e)
     }, [g])
 }

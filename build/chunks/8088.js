@@ -15,8 +15,8 @@ var s = n(627968),
     h = n(33851),
     p = n.n(h),
     f = n(311907),
-    _ = n(397927),
-    A = n(442433),
+    A = n(397927),
+    _ = n(442433),
     g = n(684013),
     m = n(684136),
     x = n(34968),
@@ -40,13 +40,13 @@ var I = n(15285),
     M = n(70142),
     P = n(157257),
     G = n(712687),
-    V = n(532624),
-    U = n(242286),
+    U = n(532624),
+    V = n(242286),
     z = n(899699),
     H = n(256415),
     W = n(531685),
-    B = n(927813),
-    K = n(723702),
+    K = n(927813),
+    B = n(723702),
     F = n(837921),
     Y = n(316501),
     Z = n(350535),
@@ -72,7 +72,7 @@ function ed(e) {
 }
 
 function ec(e) {
-    (0, A.L3)(e, async () => {
+    (0, _.L3)(e, async () => {
         let {
             default: e
         } = await n.e("92843").then(n.bind(n, 254790));
@@ -82,14 +82,14 @@ function ec(e) {
         })
     })
 }
-K.isPlatformEmbedded;
+B.isPlatformEmbedded;
 let eu = e => {
         let {
             keybind: t,
             onClick: n,
             isPreviewingInGame: i,
             locked: a
-        } = e, l = a ? _.DUT : "div";
+        } = e, l = a ? A.DUT : "div";
         return (0, s.jsx)(l, {
             className: r()(er.LK, {
                 [er.Zo]: !a,
@@ -139,7 +139,7 @@ class ep extends a.Component {
         E.A.setLayout(t ? x.dY : x.CJ), t && E.A.enable()
     }
     handleLock() {
-        (0, _.ueM)() || G.A.isOpen() || g.A.setInputLocked(!0, (0, X.getPID)())
+        (0, A.ueM)() || G.A.isOpen() || g.A.setInputLocked(!0, (0, X.getPID)())
     }
     handleDeactivate() {
         g.A.deactivateAllRegions()
@@ -148,7 +148,7 @@ class ep extends a.Component {
         this.forceUpdate()
     }, 500);
     handleWindowResize = () => {
-        U.default.isFocusedPidOutOfProcess() ? this.forceUpdate() : this.debouncedForceUpdate()
+        V.default.isFocusedPidOutOfProcess() ? this.forceUpdate() : this.debouncedForceUpdate()
     };
     componentDidMount() {
         g.A.startSession(), b.A.initialize(), y.A.initialize(), O.A.initialize()
@@ -206,16 +206,16 @@ class ep extends a.Component {
                 game: d
             }), setTimeout(async () => {
                 await (0, Y.pF)(), null != e ? g.A.overlayMounted(e) : g.A.overlayMounted()
-            }, 128), window.addEventListener("resize", this.handleWindowResize), i && window.addEventListener("contextmenu", ed, !1), K.isPlatformEmbedded) {
+            }, 128), window.addEventListener("resize", this.handleWindowResize), i && window.addEventListener("contextmenu", ed, !1), B.isPlatformEmbedded) {
             let e = (0, z.m)();
             if (null == e) return;
             void 0 !== e.setPerfInfoCallback && (e.setPerfInfoCallback(e => {
                 g.A.track(ea.HAw.OVERLAY_PERF_INFO, e)
             }), e.broadcastCommand?.({
                 message: "set_perf_report_interval",
-                interval: 15 * B.A.Millis.MINUTE
+                interval: 15 * K.A.Millis.MINUTE
             })), F.Ay.on("REQUEST_OPEN_EXTERNAL_URL", (e, t) => {
-                H.default.getDisableExternalLinkAlert() || t === M.A.getLastURL() ? F.Ay.send("OPEN_EXTERNAL_URL", t) : (0, _.mMO)(async () => {
+                H.default.getDisableExternalLinkAlert() || t === M.A.getLastURL() ? F.Ay.send("OPEN_EXTERNAL_URL", t) : (0, A.mMO)(async () => {
                     let {
                         default: e
                     } = await n.e("30582").then(n.bind(n, 613429));
@@ -314,13 +314,13 @@ function ef() {
         incompatibleApp: H.default.incompatibleApp,
         activeRegions: H.default.getActiveRegions(),
         isPreviewingInGame: H.default.isPreviewingInGame()
-    })), r = (0, f.bG)([W.A], () => W.A.windowSize()), o = (0, f.bG)([V.Ay], () => V.Ay.getOverlayKeybind()), d = (0, f.bG)([k.A], () => k.A.getVoiceChannelId()), c = (0, f.bG)([D.A], () => D.A.getChannel(d)), u = (0, f.bG)([R.A], () => null != c ? R.A.getGuild(c.guild_id) : null), h = (0, f.bG)([I.Ay, P.A], () => (0, T.A)(I.Ay, P.A)), p = (0, f.bG)([w.Ay], () => (0, N.A)(w.Ay)), _ = (0, f.bG)([j.A], () => null != j.A.getCurrentUserActiveStream()), {
-        analyticsLocations: A
+    })), r = (0, f.bG)([W.A], () => W.A.windowSize()), o = (0, f.bG)([U.Ay], () => U.Ay.getOverlayKeybind()), d = (0, f.bG)([k.A], () => k.A.getVoiceChannelId()), c = (0, f.bG)([D.A], () => D.A.getChannel(d)), u = (0, f.bG)([R.A], () => null != c ? R.A.getGuild(c.guild_id) : null), h = (0, f.bG)([I.Ay, P.A], () => (0, T.A)(I.Ay, P.A)), p = (0, f.bG)([w.Ay], () => (0, N.A)(w.Ay)), A = (0, f.bG)([j.A], () => null != j.A.getCurrentUserActiveStream()), {
+        analyticsLocations: _
     } = (0, S.Ay)(v.A.OVERLAY);
     return a.useEffect(() => {
         t && (0, Q.E)()
     }, [t]), (0, s.jsx)(S.f5, {
-        value: A,
+        value: _,
         children: (0, s.jsx)(ep, {
             locked: e,
             initialized: t,
@@ -335,7 +335,7 @@ function ef() {
             voiceGuild: u,
             game: h,
             canGoLive: p,
-            isStreaming: _
+            isStreaming: A
         })
     })
 }

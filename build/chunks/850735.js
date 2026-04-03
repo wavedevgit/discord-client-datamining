@@ -6,8 +6,8 @@ s.d(t, {
 var n = s(627968),
     r = s(64700),
     l = s(503698),
-    a = s.n(l),
-    i = s(572944),
+    i = s.n(l),
+    a = s(572944),
     o = s(311907),
     c = s(397927),
     d = s(564322),
@@ -32,8 +32,8 @@ let S = e => {
                 tab: t
             })
         }, [d, t]), null == s) ? null : (0, n.jsxs)(n.Fragment, {
-            children: [t === i.g.ORBS && (0, n.jsx)(f.A, {}), (0, n.jsx)("div", {
-                className: a()(A.YB, A.GS),
+            children: [t === a.g.ORBS && (0, n.jsx)(f.A, {}), (0, n.jsx)("div", {
+                className: i()(A.YB, A.GS),
                 children: (0, n.jsx)(u.Qs, {
                     tenantId: b.FYj,
                     layoutId: s
@@ -56,7 +56,7 @@ let S = e => {
                 }
             })()
         }, [t]), null == s) ? null : (0, n.jsx)("div", {
-            className: a()(A.YB, A.GS),
+            className: i()(A.YB, A.GS),
             children: (0, n.jsx)(u.Ay, {
                 layout: s
             })
@@ -67,7 +67,7 @@ let S = e => {
             handleTransition: t,
             tab: s,
             transitionState: l
-        } = e, a = (0, m.uM)(), u = (0, o.bG)([h.A], () => h.A.getShopLayoutUrlOverride()), g = r.useRef(null), {
+        } = e, i = (0, m.uM)(), u = (0, o.bG)([h.A], () => h.A.getShopLayoutUrlOverride()), g = r.useRef(null), {
             handleScroll: p
         } = (0, d.X)(g, s), [f, I] = r.useState(E.md), [L, j] = r.useState(!1);
         return r.useEffect(() => {
@@ -94,7 +94,7 @@ let S = e => {
                         url: u
                     }) : (0, n.jsx)(S, {
                         tab: s
-                    }), s !== i.g.CATALOG && f >= 36 && (0, n.jsxs)("div", {
+                    }), s !== a.g.CATALOG && f >= 36 && (0, n.jsxs)("div", {
                         className: A.R$,
                         children: [(0, n.jsx)(c.Heading, {
                             variant: "heading-md/semibold",
@@ -107,9 +107,9 @@ let S = e => {
                                     sourceButton: "shop all button",
                                     shouldAnimate: !0
                                 }), _.default.track(b.HAw.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
-                                    collectibles_shop_session_id: a?.sessionId,
+                                    collectibles_shop_session_id: i?.sessionId,
                                     page_type: s,
-                                    page_category: s === i.g.HOME ? void 0 : a?.pageCategory,
+                                    page_category: s === a.g.HOME ? void 0 : i?.pageCategory,
                                     cta_name: "browse the shop button"
                                 })
                             },

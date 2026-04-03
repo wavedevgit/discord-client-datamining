@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(87664),
     p = n(290863),
     f = n(939496),
-    _ = n(652215),
-    A = n(996988),
+    A = n(652215),
+    _ = n(996988),
     g = n(816223);
 let m = l._3J.SIZE_40,
     x = (0, l.FT9)(m);
@@ -44,7 +44,7 @@ function E(e) {
         guildId: y
     });
     return (0, i.jsxs)(l.DUT, {
-        focusProps: I === A.d.MODAL_V2 ? {
+        focusProps: I === _.d.MODAL_V2 ? {
             offset: {
                 top: 4,
                 right: 4,
@@ -72,7 +72,7 @@ function E(e) {
             src: t.getAvatarURL(y, x),
             "aria-label": t.username,
             size: m,
-            status: N ? _.clD.UNKNOWN : E,
+            status: N ? A.clD.UNKNOWN : E,
             statusBackdropColor: N ? void 0 : (0, l.C$5)(C),
             isMobile: b,
             className: g.my

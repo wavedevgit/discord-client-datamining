@@ -5,8 +5,8 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var a = n(503698),
-    l = n.n(a),
+var l = n(503698),
+    a = n.n(l),
     s = n(311907),
     r = n(397927),
     o = n(961350),
@@ -25,9 +25,9 @@ function m(e) {
     let {
         userId: t,
         className: n
-    } = e, a = (0, s.bG)([o.default], () => o.default.getId() === t), c = (0, r.VUy)();
-    return a ? (0, i.jsx)("div", {
-        className: l()(u.kL, n),
+    } = e, l = (0, s.bG)([o.default], () => o.default.getId() === t), c = (0, r.VUy)();
+    return l ? (0, i.jsx)("div", {
+        className: a()(u.kL, n),
         children: c ? (0, i.jsx)(r.Smm, {
             className: u.Wg
         }) : (0, i.jsx)(d.A, {

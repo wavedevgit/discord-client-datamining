@@ -3,9 +3,9 @@ n.d(t, {
     A: () => b
 });
 var i = n(627968),
-    a = n(64700),
-    l = n(503698),
-    s = n.n(l),
+    l = n(64700),
+    a = n(503698),
+    s = n.n(a),
     r = n(540185),
     o = n(397927),
     c = n(793574),
@@ -67,15 +67,15 @@ let E = {
 function b(e) {
     let t, {
             widget: n,
-            onAddWidget: l,
+            onAddWidget: a,
             size: m = "default",
             loading: f = !1,
             trackUserProfileEditAction: b
         } = e,
         {
             placeholder: C,
-            getAriaLabel: N,
-            icon: S
+            getAriaLabel: S,
+            icon: N
         } = E[n.type],
         y = n.type === r.x.APPLICATION,
         R = y ? n.applicationId : void 0,
@@ -92,23 +92,23 @@ function b(e) {
             location: "UserProfileWidgetOptionAddButton"
         }),
         G = y && !w && O && D.enabled,
-        M = a.useCallback(() => {
+        M = l.useCallback(() => {
             if (!f) {
                 if (G) {
                     D.autoAdd && ((0, h.Y5)(n), b({
                         action: "WIDGET_ADDED",
                         ...n.getProfileEditAnalyticsOptions()
-                    }), (0, _.XA)(j.jM.WIDGET_ADDED), l?.()), L({
+                    }), (0, _.XA)(j.jM.WIDGET_ADDED), a?.()), L({
                         analyticsLocations: P
                     });
                     return
                 }(0, h.Y5)(n), b({
                     action: "WIDGET_ADDED",
                     ...n.getProfileEditAnalyticsOptions()
-                }), (0, _.XA)(j.jM.WIDGET_ADDED), l?.()
+                }), (0, _.XA)(j.jM.WIDGET_ADDED), a?.()
             }
-        }, [f, G, D, n, b, l, L, P]),
-        U = S?.(n),
+        }, [f, G, D, n, b, a, L, P]),
+        U = N?.(n),
         F = G ? o.qYV : o.U1e;
     return (0, i.jsxs)("div", {
         className: T.LG,
@@ -117,7 +117,7 @@ function b(e) {
             onClick: M,
             "aria-label": G && null != k ? v.intl.formatToPlainString(v.t.ATS0FK, {
                 applicationName: k.name
-            }) : N(n),
+            }) : S(n),
             "aria-busy": f,
             children: [(() => {
                 let e = C(n);

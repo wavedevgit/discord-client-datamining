@@ -3,8 +3,8 @@ n.d(t, {
     A: () => m
 });
 var i = n(64700),
-    a = n(311907),
-    l = n(704824),
+    l = n(311907),
+    a = n(704824),
     s = n(429913),
     r = n(633075),
     o = n(667049),
@@ -18,12 +18,12 @@ function m(e) {
         enabled: t
     } = u.A.useConfig({
         location: e.location
-    }), n = (0, a.bG)([c.default], () => c.default.getCurrentUser()), m = (0, g.w$)({
+    }), n = (0, l.bG)([c.default], () => c.default.getCurrentUser()), m = (0, g.w$)({
         location: e.location
     }), x = i.useMemo(() => m?.filter(e => e.isEligibleForSuggestions()), [m]), p = i.useMemo(() => x?.map(e => e.applicationId) ?? [], [x]), f = (0, s.A)(p), {
         tokens: h,
         fetched: _
-    } = (0, l.j)(p), A = (0, o.A)(n?.id), I = null == n || null == x || null == h || !_;
+    } = (0, a.j)(p), A = (0, o.A)(n?.id), I = null == n || null == x || null == h || !_;
     return i.useMemo(() => I ? {
         isLoading: I
     } : t ? {

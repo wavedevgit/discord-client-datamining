@@ -3,8 +3,8 @@ n.d(t, {
     A: () => d
 });
 var i = n(627968),
-    a = n(64700),
-    l = n(183555),
+    l = n(64700),
+    a = n(183555),
     s = n(735321),
     r = n(958338),
     o = n(253798),
@@ -21,7 +21,7 @@ function d(e) {
         setExpanded: g
     } = (0, o.B)(), {
         trackUserProfileEditAction: m
-    } = (0, l.NJ)(), x = a.useCallback(e => {
+    } = (0, a.NJ)(), x = l.useCallback(e => {
         u(e), g(!0), (0, s.ew)({
             widgetType: t,
             game: {

@@ -20,7 +20,7 @@ let h = function(e) {
             renderSettings: p,
             onDragStart: f
         } = e,
-        _ = s.useRef(null);
+        A = s.useRef(null);
     return t = null != n ? (0, i.jsxs)(o.Ay.Bar, {
         className: l()(u.wx, u.bl),
         onMouseDown: f,
@@ -30,7 +30,7 @@ let h = function(e) {
             children: n
         }), (0, i.jsx)(o.Ay.Content, {
             children: (0, i.jsx)(r.YNO, {
-                targetElementRef: _,
+                targetElementRef: A,
                 position: "right",
                 renderPopout: p ?? d.tEg,
                 autoInvert: !1,
@@ -38,7 +38,7 @@ let h = function(e) {
                     ...e,
                     icon: r.Zes,
                     label: c.intl.string(c.t["3D5yo/"]),
-                    ref: _
+                    ref: A
                 })
             })
         })]

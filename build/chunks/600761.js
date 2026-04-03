@@ -3,8 +3,8 @@ n.d(t, {
     i: () => s
 });
 var i = n(64700),
-    a = n(688807),
-    l = n(397927);
+    l = n(688807),
+    a = n(397927);
 
 function s(e) {
     let {
@@ -24,11 +24,11 @@ function s(e) {
         isDragging: x,
         clientOffset: p,
         item: f
-    } = (0, a.V)(m);
+    } = (0, l.V)(m);
     (0, i.useEffect)(() => {
         g.current = p
     }, [p]);
-    let h = (0, l.VUy)();
+    let h = (0, a.VUy)();
     (0, i.useEffect)(() => {
         let e = t.current;
         if (null == e) return;
@@ -47,14 +47,14 @@ function s(e) {
                 d.current = n;
                 return
             }
-            let a = Math.min(32, 0 !== d.current ? n - d.current : 16) / 1e3;
+            let l = Math.min(32, 0 !== d.current ? n - d.current : 16) / 1e3;
             d.current = n;
             let {
-                top: l,
+                top: a,
                 bottom: m
-            } = u.current, x = i.y, p = x - l, f = m - x, h = 0;
+            } = u.current, x = i.y, p = x - a, f = m - x, h = 0;
             if (p >= 0 && p < s ? h = -r * Math.pow(1 - p / s, o) : f >= 0 && f < s && (h = r * Math.pow(1 - f / s, o)), 0 !== h) {
-                let t = h * a;
+                let t = h * l;
                 Math.abs(t) >= 1 && (e.scrollTop += Math.round(t))
             }
         }), () => {

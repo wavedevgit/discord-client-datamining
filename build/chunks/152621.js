@@ -3,8 +3,8 @@ n.d(t, {
     A: () => o
 });
 var i = n(417597),
-    a = n(760751),
-    l = n(486020),
+    l = n(760751),
+    a = n(486020),
     s = n(885151),
     r = n(985018);
 
@@ -12,9 +12,9 @@ function o(e, t) {
     let {
         data: n,
         isLoading: o
-    } = (0, s.k)(e), c = (0, i.bG)([a.A], () => a.A.getDetectableGame(e));
+    } = (0, s.k)(e), c = (0, i.bG)([l.A], () => l.A.getDetectableGame(e));
     return {
-        coverImageUrl: null != e ? n?.supplementalData?.coverImageUrl ?? l.Ay.getGameAssetURL({
+        coverImageUrl: null != e ? n?.supplementalData?.coverImageUrl ?? a.Ay.getGameAssetURL({
             id: e,
             hash: c?.cover_image_hash,
             keepAspectRatio: !0

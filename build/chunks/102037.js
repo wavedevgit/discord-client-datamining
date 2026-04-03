@@ -22,8 +22,8 @@ function p(e) {
     } = e, {
         icon: p,
         title: f,
-        body: _,
-        hint: A,
+        body: A,
+        hint: _,
         notifType: g
     } = (t = {
         icon: n(513653),
@@ -46,8 +46,8 @@ function p(e) {
     return {
         icon: p,
         title: f,
-        body: _,
-        hint: A,
+        body: A,
+        hint: _,
         renderFooter: () => (0, i.jsx)("div", {
             style: {
                 textAlign: "center",

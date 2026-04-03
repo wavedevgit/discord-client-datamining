@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(465532),
     p = n(843472),
     f = n(684013),
-    _ = n(414798),
-    A = n(147192),
+    A = n(414798),
+    _ = n(147192),
     g = n(480870),
     m = n(264140),
     x = n(387462),
@@ -39,13 +39,13 @@ var i = n(627968),
     M = n(517019),
     P = n(71393),
     G = n(320501),
-    V = n(309010),
-    U = n(967198),
+    U = n(309010),
+    V = n(967198),
     z = n(287809),
     H = n(532624),
     W = n(256415),
-    B = n(203982),
-    K = n(460350),
+    K = n(203982),
+    B = n(460350),
     F = n(350535),
     Y = n(401955),
     Z = n(799808),
@@ -66,7 +66,7 @@ class ei extends s.Component {
             ...(0, S.ur)(t),
             focused: !1,
             contentWarningProps: null
-        }, B._.subscribe(q.jej.TEXTAREA_FOCUS, this.focusInput), B._.subscribe(q.jej.TEXTAREA_BLUR, this.blurInput)
+        }, K._.subscribe(q.jej.TEXTAREA_FOCUS, this.focusInput), K._.subscribe(q.jej.TEXTAREA_BLUR, this.blurInput)
     }
     componentDidUpdate(e) {
         e.channel.id !== this.props.channel.id && this.draftDidChange(this.props), (this.props.channel !== e.channel || this.props.isTemporarilyActive && !e.isTemporarilyActive) && this.setState({
@@ -74,7 +74,7 @@ class ei extends s.Component {
         })
     }
     componentWillUnmount() {
-        k.A.removeChangeListener(this.draftDidChange), B._.unsubscribe(q.jej.TEXTAREA_FOCUS, this.focusInput), B._.unsubscribe(q.jej.TEXTAREA_BLUR, this.blurInput)
+        k.A.removeChangeListener(this.draftDidChange), K._.unsubscribe(q.jej.TEXTAREA_FOCUS, this.focusInput), K._.unsubscribe(q.jej.TEXTAREA_BLUR, this.blurInput)
     }
     draftDidChange = (() => {
         var e = this;
@@ -102,7 +102,7 @@ class ei extends s.Component {
                 id: i
             }
         } = this.props;
-        h.A.changeDraft(i, this.state.textValue, k.C.ChannelMessage), "" !== t ? _.A.startTyping(i) : _.A.stopTyping(i), this.setState({
+        h.A.changeDraft(i, this.state.textValue, k.C.ChannelMessage), "" !== t ? A.A.startTyping(i) : A.A.stopTyping(i), this.setState({
             textValue: t,
             richValue: n
         })
@@ -118,7 +118,7 @@ class ei extends s.Component {
         return 0 === t.length ? Promise.resolve({
             shouldClear: !1,
             shouldRefocus: !0
-        }) : (0, K.i)({
+        }) : (0, B.i)({
             openWarningPopout: e => this.setState({
                 contentWarningProps: e
             }),
@@ -130,7 +130,7 @@ class ei extends s.Component {
                 valid: a,
                 failureReason: l
             } = e;
-            if (!a) return l === q.X8x.SLOWMODE_COOLDOWN ? (B._.dispatch(q.jej.EMPHASIZE_SLOWMODE_COOLDOWN), {
+            if (!a) return l === q.X8x.SLOWMODE_COOLDOWN ? (K._.dispatch(q.jej.EMPHASIZE_SLOWMODE_COOLDOWN), {
                 shouldClear: !1,
                 shouldRefocus: !0
             }) : {
@@ -275,9 +275,9 @@ class es extends s.PureComponent {
             pendingReply: f
         } = this.props;
         if (null == t) return null;
-        let _ = o || h,
+        let A = o || h,
             g = !a && null != t && t.isNSFW(),
-            m = !_ || d;
+            m = !A || d;
         return e = g && null != r ? (0, i.jsx)(L.A, {
             guild: r,
             channelId: t.id
@@ -285,13 +285,13 @@ class es extends s.PureComponent {
             channel: t,
             className: et.Wk,
             forceCompact: u,
-            showNewMessagesBar: !_,
+            showNewMessagesBar: !A,
             scrollerClassName: u ? et.XG : void 0,
             showingQuarantineBanner: !1
         }, t.id), (0, i.jsx)(N.Y.Provider, {
             value: {
                 disableInteractions: u && o && !d,
-                disableAnimations: u && _ && !d
+                disableAnimations: u && A && !d
             },
             children: (0, i.jsxs)(s.Fragment, {
                 children: [!o && !h && (0, i.jsx)(x.A, {
@@ -318,7 +318,7 @@ class es extends s.PureComponent {
                                 pendingReply: f
                             }), (0, i.jsx)("div", {
                                 className: et.V_,
-                                children: (0, i.jsx)(A.Ay, {
+                                children: (0, i.jsx)(_.Ay, {
                                     channel: t,
                                     className: et.IW,
                                     isInTextChannel: !0
@@ -447,7 +447,7 @@ function ea(e) {
     let {
         contained: t = !1,
         ...n
-    } = e, s = (0, d.bG)([U.A], () => U.A.getGuildId()), a = (0, d.bG)([V.A], () => V.A.getChannelId(s)), l = (0, d.bG)([w.A], () => w.A.getChannel(a)), r = (0, d.bG)([H.Ay], () => H.Ay.getOverlayChatKeybind()), o = null != r ? (0, F.dI)(r.shortcut, !0) : "]", [c, u, h] = (0, d.yK)([W.default], () => [W.default.getTextWidgetOpacity(), W.default.getActiveRegions(), !t && W.default.isPreviewingInGame()]), p = (0, d.bG)([P.A], () => P.A.getGuild(s)), f = (0, d.bG)([M.A], () => null != s && M.A.didAgree(s)), _ = null != l && l.isPrivate() ? l.getRecipientId() : null, A = (0, d.bG)([R.A], () => null != a ? R.A.getPendingReply(a) : void 0), x = (0, d.bG)([z.default], () => null != _ ? z.default.getUser(_) : null), {
+    } = e, s = (0, d.bG)([V.A], () => V.A.getGuildId()), a = (0, d.bG)([U.A], () => U.A.getChannelId(s)), l = (0, d.bG)([w.A], () => w.A.getChannel(a)), r = (0, d.bG)([H.Ay], () => H.Ay.getOverlayChatKeybind()), o = null != r ? (0, F.dI)(r.shortcut, !0) : "]", [c, u, h] = (0, d.yK)([W.default], () => [W.default.getTextWidgetOpacity(), W.default.getActiveRegions(), !t && W.default.isPreviewingInGame()]), p = (0, d.bG)([P.A], () => P.A.getGuild(s)), f = (0, d.bG)([M.A], () => null != s && M.A.didAgree(s)), A = null != l && l.isPrivate() ? l.getRecipientId() : null, _ = (0, d.bG)([R.A], () => null != a ? R.A.getPendingReply(a) : void 0), x = (0, d.bG)([z.default], () => null != A ? z.default.getUser(A) : null), {
         placeholder: E
     } = (0, g.A)({
         channel: l
@@ -461,7 +461,7 @@ function ea(e) {
         chatKeybind: o,
         activated: u.has(q.ajI.TEXT_WIDGET),
         isPreviewingInGame: h,
-        pendingReply: A,
+        pendingReply: _,
         contained: t,
         placeholder: E,
         widget: q.uss.TEXT,

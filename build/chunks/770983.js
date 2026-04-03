@@ -1,11 +1,11 @@
 /** chunk id: 770983 params = (module,exports,require) **/
 n.d(t, {
-    A: () => S
+    A: () => N
 });
 var i = n(627968),
-    a = n(64700),
-    l = n(503698),
-    s = n.n(l),
+    l = n(64700),
+    a = n(503698),
+    s = n.n(a),
     r = n(158954),
     o = n(311907),
     c = n(435371),
@@ -30,17 +30,17 @@ function C(e) {
     let {
         application: t,
         sku: n,
-        handleOpenUserProfileModal: l,
+        handleOpenUserProfileModal: a,
         analyticsLocations: s
-    } = e, o = a.useRef(null), {
+    } = e, o = l.useRef(null), {
         analyticsLocations: g
     } = (0, u.Ay)(s ?? []), {
         isHoveringOrFocusing: h
-    } = (0, x.A)(o), [A, j] = a.useState(!1), v = a.useCallback(async e => {
+    } = (0, x.A)(o), [A, j] = l.useState(!1), v = l.useCallback(async e => {
         if (e.stopPropagation(), !A) {
             j(!0);
             try {
-                await _.A.addSkuToWishlist(n.id, g), l?.({
+                await _.A.addSkuToWishlist(n.id, g), a?.({
                     tabSection: T.RP.WISHLIST
                 })
             } catch (e) {
@@ -49,7 +49,7 @@ function C(e) {
                 j(!1)
             }
         }
-    }, [n.id, g, l, A]);
+    }, [n.id, g, a, A]);
     return (0, i.jsx)(c.un, {
         title: E.intl.string(E.t["8DkMEQ"]),
         body: n.name,
@@ -83,18 +83,18 @@ function C(e) {
     })
 }
 
-function N(e) {
+function S(e) {
     let {
         wishlist: t,
         handleOpenUserProfileModal: n,
-        analyticsLocations: l,
+        analyticsLocations: a,
         numWishlistItemsToRecommend: r,
         maxWishlistItemsToShow: c = r,
         className: d,
         isLoading: u,
         recommendations: m,
         applicationIds: x
-    } = e, f = (0, g.A)(x), _ = (0, o.bG)([h.default], () => h.default.getUser(t?.userId)), I = (0, A.GG)("add_to_wishlist_grid"), j = a.useMemo(() => f.reduce((e, t) => (null == t || (e[t.id] = t), e), {}), [f]), T = a.useMemo(() => new Set(t?.items.map(e => e.skuId) ?? []), [t]), E = m.filter(e => !T.has(e.id)).slice(0, c);
+    } = e, f = (0, g.A)(x), _ = (0, o.bG)([h.default], () => h.default.getUser(t?.userId)), I = (0, A.GG)("add_to_wishlist_grid"), j = l.useMemo(() => f.reduce((e, t) => (null == t || (e[t.id] = t), e), {}), [f]), T = l.useMemo(() => new Set(t?.items.map(e => e.skuId) ?? []), [t]), E = m.filter(e => !T.has(e.id)).slice(0, c);
     return u ? (0, i.jsx)("div", {
         className: b.g4,
         children: (0, i.jsx)(p.k, {})
@@ -105,33 +105,33 @@ function N(e) {
             wishlistId: t?.id,
             wishlistOwner: _,
             handleOpenUserProfileModal: n,
-            analyticsLocations: l
+            analyticsLocations: a
         }, e.id) : null == e.applicationId || null == j[e.applicationId] ? null : (0, i.jsx)(C, {
             application: j[e.applicationId],
             sku: e,
             handleOpenUserProfileModal: n,
-            analyticsLocations: l
+            analyticsLocations: a
         }, e.id))
     })
 }
 
-function S(e) {
+function N(e) {
     let {
         userId: t,
         numWishlistItemsToRecommend: n,
-        ...a
+        ...l
     } = e, {
-        recommendations: l,
+        recommendations: a,
         status: s
     } = (0, j.Ul)({
         userId: t,
         numItems: n,
         source: I.B5.USER_PROFILE
     });
-    return (0, i.jsx)(N, {
+    return (0, i.jsx)(S, {
         isLoading: "loading" === s,
-        recommendations: l,
+        recommendations: a,
         numWishlistItemsToRecommend: n,
-        ...a
+        ...l
     })
 }

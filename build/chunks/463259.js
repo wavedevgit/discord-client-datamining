@@ -4,9 +4,9 @@ n.d(t, {
     u: () => P
 });
 var i = n(627968),
-    a = n(64700),
-    l = n(503698),
-    s = n.n(l),
+    l = n(64700),
+    a = n(503698),
+    s = n.n(a),
     r = n(311907),
     o = n(397927),
     c = n(384904),
@@ -27,8 +27,8 @@ var i = n(627968),
     E = n(357541),
     b = n(236599),
     C = n(192),
-    N = n(128988),
-    S = n(795755),
+    S = n(128988),
+    N = n(795755),
     y = n(53977),
     R = n(982599),
     k = n(515054),
@@ -44,7 +44,7 @@ function P(e) {
     return t instanceof _.R ? (0, i.jsx)(T.A, {
         widget: t,
         ...n
-    }) : t instanceof A.Yy ? (0, i.jsx)(S.A, {
+    }) : t instanceof A.Yy ? (0, i.jsx)(N.A, {
         widget: t,
         ...n
     }) : null
@@ -77,13 +77,13 @@ function G() {
         bypassAutoDismiss: !0,
         children: e => {
             let {
-                visibleContent: a,
-                markAsDismissed: l
-            } = e, s = t.find(e => e.dismissibleContent === a);
+                visibleContent: l,
+                markAsDismissed: a
+            } = e, s = t.find(e => e.dismissibleContent === l);
             return null == s ? null : (0, i.jsx)(E.A, {
                 user: n,
                 application: s.application,
-                onDismiss: l
+                onDismiss: a
             })
         }
     })
@@ -93,65 +93,65 @@ function M(e) {
     let {
         user: t,
         guildId: n,
-        channelId: l
+        channelId: a
     } = e, s = (0, v.A)(t.id), o = (0, r.bG)([f.default], () => f.default.getId() === t.id), u = (() => {
         let [e, t] = (0, r.yK)([h.A], () => [h.A.ipCountryCode, h.A.ipCountryCodeRequest]), n = (0, x.Z)();
-        return a.useEffect(() => {
+        return l.useEffect(() => {
             null == e && null == t && n && (0, c.xe)()
         }, [e, t, n]), "GB" === e && n
     })(), m = (0, d.QR)({
         location: "UserProfileModalV2Widgets"
-    }), j = 0 === s.length && o, T = a.useMemo(() => s.filter(A.fu), [s]), E = a.useMemo(() => s.filter(e => e instanceof _.R), [s]);
+    }), j = 0 === s.length && o, T = l.useMemo(() => s.filter(A.fu), [s]), E = l.useMemo(() => s.filter(e => e instanceof _.R), [s]);
     (0, I.Y)(o, T), ((e, t) => {
-        let n = a.useMemo(() => t.map(e => e.applicationId), [t]);
+        let n = l.useMemo(() => t.map(e => e.applicationId), [t]);
         (0, g.A)(n);
         let {
             data: i,
-            refetch: l
-        } = (0, p.P)(e), s = a.useRef(null !== i);
-        a.useEffect(() => {
-            s.current && (s.current = !1, l())
-        }, [l])
+            refetch: a
+        } = (0, p.P)(e), s = l.useRef(null !== i);
+        l.useEffect(() => {
+            s.current && (s.current = !1, a())
+        }, [a])
     })(t.id, E);
-    let N = () => (0, i.jsxs)(i.Fragment, {
+    let S = () => (0, i.jsxs)(i.Fragment, {
         children: [o && (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)(b.A, {
                 className: L.cG
             }), u && (0, i.jsx)(D, {}), m && (0, i.jsx)(G, {})]
-        }), s.map((e, a) => (0, i.jsx)(P, {
+        }), s.map((e, l) => (0, i.jsx)(P, {
             widget: e,
             user: t,
             guildId: n,
-            channelId: l,
-            index: a
+            channelId: a,
+            index: l
         }, e.getUniqueKey()))]
     });
     if (j)
         if (m) return (0, i.jsx)(y.A, {});
         else return (0, i.jsx)(w.A, {});
     return o ? (0, i.jsx)(C.D, {
-        children: N()
-    }) : N()
+        children: S()
+    }) : S()
 }
 
 function U(e) {
     let {
         user: t,
         ...n
-    } = e, l = a.useRef(null);
+    } = e, a = l.useRef(null);
     (0, j.i)({
-        containerRef: l
+        containerRef: a
     });
     let r = (0, R.k)(t.id);
     return (0, i.jsxs)(k.K, {
         "data-scroller": !0,
-        scrollerRef: l,
+        scrollerRef: a,
         className: s()(L.XG, {
             [L.az]: r
         }),
         fade: !0,
-        children: [(0, i.jsx)(N.A, {
-            scrollerRef: l
+        children: [(0, i.jsx)(S.A, {
+            scrollerRef: a
         }), (0, i.jsx)(M, {
             user: t,
             ...n

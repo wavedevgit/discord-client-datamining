@@ -18,8 +18,8 @@ function c(e, t, n, c, u) {
     if (null == p) return null;
     let {
         icon: f,
-        title: _,
-        body: A
+        title: A,
+        body: _
     } = (0, a.TB)(e, t, n), {
         trackView: g,
         trackClick: m
@@ -36,8 +36,8 @@ function c(e, t, n, c, u) {
     });
     return {
         icon: f,
-        title: _,
-        body: A,
+        title: A,
+        body: _,
         hint: e => (0, l.sI)(e, (0, r.J)(), d.t.aB5xLy),
         onNotificationShow: () => {
             g()

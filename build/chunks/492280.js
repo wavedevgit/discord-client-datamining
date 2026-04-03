@@ -5,8 +5,8 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var a = n(503698),
-    l = n.n(a),
+var l = n(503698),
+    a = n.n(l),
     s = n(885151),
     r = n(788593),
     o = n(522500),
@@ -17,14 +17,14 @@ function d(e) {
         applicationId: t
     } = e, {
         data: n
-    } = (0, s.k)(t), a = n?.supplementalData?.coverImageUrl;
-    return null != a && "" !== a ? (0, i.jsx)("div", {
-        className: l()(o.PY, c.LH),
+    } = (0, s.k)(t), l = n?.supplementalData?.coverImageUrl;
+    return null != l && "" !== l ? (0, i.jsx)("div", {
+        className: a()(o.PY, c.LH),
         children: (0, i.jsx)(r.R, {
-            imageSrc: a
+            imageSrc: l
         })
     }) : (0, i.jsx)("div", {
-        className: l()(o.mD, c.LH)
+        className: a()(o.mD, c.LH)
     })
 }
 
@@ -32,13 +32,13 @@ function u(e) {
     let {
         applicationId: t,
         className: n,
-        gridClassName: a
+        gridClassName: l
     } = e;
     return (0, i.jsx)("div", {
-        className: l()(c.kL, n),
+        className: a()(c.kL, n),
         "aria-hidden": !0,
         children: (0, i.jsxs)("div", {
-            className: l()(c.Yi, a),
+            className: a()(c.Yi, l),
             children: [null != t ? (0, i.jsx)(d, {
                 applicationId: t
             }) : (0, i.jsx)("div", {
@@ -59,13 +59,13 @@ function g(e) {
     let {
         applicationIds: t,
         className: n,
-        gridClassName: a
+        gridClassName: l
     } = e;
     return (0, i.jsx)("div", {
-        className: l()(c.kL, n),
+        className: a()(c.kL, n),
         "aria-hidden": !0,
         children: (0, i.jsx)("div", {
-            className: l()(c.Nu, a),
+            className: a()(c.Nu, l),
             children: t.slice(0, 4).map((e, t) => (0, i.jsx)(d, {
                 applicationId: e
             }, t))

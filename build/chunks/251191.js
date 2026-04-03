@@ -6,8 +6,8 @@ s.d(t, {
 var n = s(627968),
     r = s(64700),
     l = s(503698),
-    a = s.n(l),
-    i = s(311907),
+    i = s.n(l),
+    a = s(311907),
     o = s(397927),
     c = s(951707),
     d = s(287809),
@@ -26,9 +26,9 @@ let C = e => {
         shelf: t,
         handleTransition: s,
         tab: l
-    } = e, C = (0, i.bG)([d.default], () => d.default.getCurrentUser()), A = (0, g.W)("ShelfBlock"), S = (0, i.bG)([_.A], () => _.A.getCategory(t.categorySkuId)), v = (0, m.A)(), I = r.useMemo(() => v(t.rankedSkuIds), [t.rankedSkuIds, v]), L = (0, h.X)(I);
+    } = e, C = (0, a.bG)([d.default], () => d.default.getCurrentUser()), A = (0, g.W)("ShelfBlock"), S = (0, a.bG)([_.A], () => _.A.getCategory(t.categorySkuId)), v = (0, m.A)(), I = r.useMemo(() => v(t.rankedSkuIds), [t.rankedSkuIds, v]), L = (0, h.X)(I);
     return null == C ? null : (0, n.jsxs)("div", {
-        className: a()(b.Vp, b.YB),
+        className: i()(b.Vp, b.YB),
         children: [(0, n.jsxs)("div", {
             className: b.$6,
             children: [(0, n.jsx)(o.Heading, {

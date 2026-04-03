@@ -1,7 +1,7 @@
 /** chunk id: 242363 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => _
+    A: () => A
 });
 var i = n(627968);
 n(64700);
@@ -28,15 +28,15 @@ function f() {
     })
 }
 
-function _(e) {
+function A(e) {
     switch (e.type) {
         case u.Jr.GO_LIVE_VOICE: {
             let {
                 game: t,
                 voiceGuild: p
             } = e, {
-                trackView: _,
-                trackClick: A
+                trackView: A,
+                trackClick: _
             } = (0, c.Y)(u.KS.GoLiveNudge, {
                 notif_type: u.KS.GoLiveNudge
             });
@@ -50,10 +50,10 @@ function _(e) {
                 hint: () => (0, i.jsx)(f, {}),
                 renderFooter: () => (0, i.jsx)(f, {}),
                 onNotificationShow: () => {
-                    _()
+                    A()
                 },
                 onNotificationClick: (e, t) => {
-                    A("unlock");
+                    _("unlock");
                     let c = (0, d.getPID)();
                     a.A.updateNotificationStatus(t);
                     let u = r.default.isOverlayOOPEnabledForPid(c);
@@ -74,7 +74,7 @@ function _(e) {
                     }, h)
                 },
                 onDismissClick: () => {
-                    A("dismiss")
+                    _("dismiss")
                 }
             }
         }

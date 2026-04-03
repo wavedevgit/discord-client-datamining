@@ -15,20 +15,20 @@ var i = n(627968),
     h = n(404374),
     p = n(573435),
     f = n(750506),
-    _ = n(267102),
-    A = n(580960),
+    A = n(267102),
+    _ = n(580960),
     g = n(237631),
     m = n(355052),
     x = n(8088),
     E = n(652215);
 n(71071), n(939857), n(40876), n(851341), n(921955), l.Ay.initialize();
 let y = function() {
-    return s.useEffect(() => (A.A.initialize(), c.A.initialize(), g.A.init(), () => {
-        A.A.terminate(), c.A.terminate()
+    return s.useEffect(() => (_.A.initialize(), c.A.initialize(), g.A.init(), () => {
+        _.A.terminate(), c.A.terminate()
     }), []), (0, i.jsxs)(s.Fragment, {
         children: [(0, i.jsx)(u.A, {}), (0, i.jsx)(d.N, {
             children: (0, i.jsxs)(m.A, {
-                children: [(0, i.jsx)(p.Al, {}), (0, i.jsx)(h.Ay, {}), (0, i.jsx)(_.Wr, {
+                children: [(0, i.jsx)(p.Al, {}), (0, i.jsx)(h.Ay, {}), (0, i.jsx)(A.Wr, {
                     appContext: E.BRT.OVERLAY,
                     renderWindow: window,
                     children: (0, i.jsxs)(f.Yf, {

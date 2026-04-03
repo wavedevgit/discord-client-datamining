@@ -3,21 +3,21 @@ n.d(t, {
     A: () => g
 }), n(321073);
 var i = n(627968),
-    a = n(64700),
-    l = n(397927),
+    l = n(64700),
+    a = n(397927),
     s = n(183555),
     r = n(735321),
     o = n(394245),
     c = n(985018),
     d = n(802638);
-let u = a.memo(function(e) {
+let u = l.memo(function(e) {
     let {
         currentTags: t,
         onTagSelect: n,
-        onNoneSelect: a,
+        onNoneSelect: l,
         onClose: s
     } = e;
-    return (0, i.jsx)(l.W1t, {
+    return (0, i.jsx)(a.W1t, {
         "data-menu-migrated-auto": !0,
         navId: "widget-game-tags",
         "aria-label": c.intl.string(c.t.r6EJOu),
@@ -26,28 +26,28 @@ let u = a.memo(function(e) {
         className: d.VS,
         children: Object.entries(o.Pb).map(e => {
             let s, [r, d] = e,
-                u = (s = [], d.type === o.me.RADIO && s.push((0, i.jsx)(l.iDA, {
+                u = (s = [], d.type === o.me.RADIO && s.push((0, i.jsx)(a.iDA, {
                     id: `${r}-none`,
                     group: r,
                     label: c.intl.string(c.t.PoWNfe),
                     checked: !d.tags.some(e => t.includes(e)),
-                    action: () => a(d.tags)
+                    action: () => l(d.tags)
                 }, "none")), d.tags.forEach(e => {
-                    let a = o.PT[e];
-                    null != a && (d.type === o.me.RADIO ? s.push((0, i.jsx)(l.iDA, {
+                    let l = o.PT[e];
+                    null != l && (d.type === o.me.RADIO ? s.push((0, i.jsx)(a.iDA, {
                         id: e,
                         group: r,
-                        label: a.getText(),
+                        label: l.getText(),
                         checked: t.includes(e),
                         action: () => n(e, !0)
-                    }, e)) : s.push((0, i.jsx)(l.sLh, {
+                    }, e)) : s.push((0, i.jsx)(a.sLh, {
                         id: e,
-                        label: a.getText(),
+                        label: l.getText(),
                         checked: t.includes(e),
                         action: () => n(e, !1)
                     }, e)))
                 }), s);
-            return (0, i.jsx)(l.rXV, {
+            return (0, i.jsx)(a.rXV, {
                 label: d.getLabel(),
                 children: u
             }, r)
@@ -61,9 +61,9 @@ function g(e) {
         widgetType: n,
         applicationId: g,
         ref: m
-    } = e, x = (0, a.useRef)(null), {
+    } = e, x = (0, l.useRef)(null), {
         trackUserProfileEditAction: p
-    } = (0, s.NJ)(), f = (0, a.useMemo)(() => null != t ? t : [], [t]), h = (0, a.useCallback)(function(e) {
+    } = (0, s.NJ)(), f = (0, l.useMemo)(() => null != t ? t : [], [t]), h = (0, l.useCallback)(function(e) {
         let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
             i = new Set(f);
         if (t) {
@@ -85,7 +85,7 @@ function g(e) {
             gameId: g
         }));
         (0, r.s1)(n, g, Array.from(i))
-    }, [f, p, n, g]), _ = (0, a.useCallback)(e => {
+    }, [f, p, n, g]), _ = (0, l.useCallback)(e => {
         let t = new Set(f);
         e.forEach(e => {
             t.delete(e)
@@ -95,7 +95,7 @@ function g(e) {
             gameId: g
         }), (0, r.s1)(n, g, Array.from(t))
     }, [f, p, n, g]);
-    return (0, i.jsx)(l.YNO, {
+    return (0, i.jsx)(a.YNO, {
         targetElementRef: x,
         position: "right",
         align: "top",
@@ -120,11 +120,11 @@ function g(e) {
             ref: e => (null != e && (x.current = e, m.current = e), () => {
                 x.current = null, m.current = null
             }),
-            children: (0, i.jsx)(l.DUT, {
+            children: (0, i.jsx)(a.DUT, {
                 ...e,
                 className: d.c9,
                 "aria-label": c.intl.string(c.t.r6EJOu),
-                children: (0, i.jsx)(l.Text, {
+                children: (0, i.jsx)(a.Text, {
                     variant: "text-xxs/medium",
                     color: "none",
                     children: c.intl.string(c.t.fZSejy)

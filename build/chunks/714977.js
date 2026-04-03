@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(256415),
     p = n(837921),
     f = n(350535),
-    _ = n(93465),
-    A = n(592598),
+    A = n(93465),
+    _ = n(592598),
     g = n(672396),
     m = n(652215),
     x = n(985018),
@@ -32,7 +32,7 @@ function v() {
         enabled: !0,
         notifications_enabled: t,
         notifications_position: t ? e : null,
-        text_notifications_mode: A.A.isNotificationDisabled(g.KS.TextChat) ? "DISABLED" : "ENABLED",
+        text_notifications_mode: _.A.isNotificationDisabled(g.KS.TextChat) ? "DISABLED" : "ENABLED",
         text_opacity_slider: h.default.getTextWidgetOpacity(),
         hotkey: null != n ? (0, f.dI)(n.shortcut) : null,
         text_activation_hotkey: null != i ? (0, f.dI)(i.shortcut) : null
@@ -55,11 +55,11 @@ class S extends s.PureComponent {
         })
     };
     handleToggleTextChatNotifications = () => {
-        r.A.setNotificationDisabledSetting(_.M.TEXT_CHAT, !this.props.textChatDisabled), v()
+        r.A.setNotificationDisabledSetting(A.M.TEXT_CHAT, !this.props.textChatDisabled), v()
     };
     handleToggleInviteNotification = () => {
         let e = this.props.shouldShowInviteNotification;
-        r.A.setNotificationDisabledSetting(_.M.GAME_ACTIVITY, !e)
+        r.A.setNotificationDisabledSetting(A.M.GAME_ACTIVITY, !e)
     };
     handleChangeNotificationPositionMode(e, t) {
         r.A.setNotificationPositionMode(t), v()
@@ -153,7 +153,7 @@ class S extends s.PureComponent {
         let {
             notificationPositionMode: e,
             shouldShowInviteNotification: t
-        } = this.props, n = !A.A.isNotificationDisabled(g.KS.TextChat), s = e !== m.G6Q.DISABLED;
+        } = this.props, n = !_.A.isNotificationDisabled(g.KS.TextChat), s = e !== m.G6Q.DISABLED;
         return (0, i.jsxs)(l.nVY, {
             children: [(0, i.jsx)(l.D0$, {
                 label: x.intl.string(x.t.IQv8Eo),
@@ -283,13 +283,13 @@ function C(e) {
         notificationPositionMode: r,
         textChatDisabled: o,
         shouldShowInviteNotification: d
-    } = (0, a.cf)([h.default, A.A], () => ({
+    } = (0, a.cf)([h.default, _.A], () => ({
         avatarSizeMode: h.default.getAvatarSizeMode(),
         displayNameMode: h.default.getDisplayNameMode(),
         displayUserMode: h.default.getDisplayUserMode(),
         notificationPositionMode: h.default.getNotificationPositionMode(),
-        textChatDisabled: A.A.isNotificationDisabled(g.KS.TextChat),
-        shouldShowInviteNotification: !A.A.isNotificationDisabled(g.KS.ActivityInvite)
+        textChatDisabled: _.A.isNotificationDisabled(g.KS.TextChat),
+        shouldShowInviteNotification: !_.A.isNotificationDisabled(g.KS.ActivityInvite)
     }));
     return (0, i.jsx)(S, {
         onClose: t,

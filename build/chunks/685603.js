@@ -26,7 +26,7 @@ function f(e, t, n) {
     }
 }
 
-function _(e) {
+function A(e) {
     let {
         top: t,
         left: n,
@@ -41,7 +41,7 @@ function _(e) {
     }
 }
 
-function A(e) {
+function _(e) {
     return "auto" === e || null == e ? "auto" : `${e}px`
 }
 
@@ -122,13 +122,13 @@ class x extends a.Component {
         operationStarted: !1
     };
     constructor(e) {
-        super(e), this.anchor = _(e.anchor), this.size = f(e.size, e.minSize.width, e.minSize.height)
+        super(e), this.anchor = A(e.anchor), this.size = f(e.size, e.minSize.width, e.minSize.height)
     }
     shouldComponentUpdate(e, t) {
         return !(0, o.A)(t, this.state) || !(0, o.A)(e, this.props, ["anchor", "size", "minSize", "container"]) || !(0, o.A)(e.anchor, this.props.anchor) || !(0, o.A)(e.size, this.props.size) || !(0, o.A)(e.minSize, this.props.minSize) || !(0, o.A)(e.container, this.props.container)
     }
     componentDidUpdate(e, t) {
-        null == t.operation && ((0, o.A)(this.props.anchor, e.anchor) || this.setDOMPositions(_(this.props.anchor)), (0, o.A)(this.props.size, e.size) || this.setDOMSize(f(this.props.size, this.props.minSize.width, this.props.minSize.height)))
+        null == t.operation && ((0, o.A)(this.props.anchor, e.anchor) || this.setDOMPositions(A(this.props.anchor)), (0, o.A)(this.props.size, e.size) || this.setDOMSize(f(this.props.size, this.props.minSize.width, this.props.minSize.height)))
     }
     componentWillUnmount() {
         this.handleOperationEnd()
@@ -251,14 +251,14 @@ class x extends a.Component {
         if (null == n) return null;
         e = Math.max(Math.min(s, e), l), t = Math.max(Math.min(a, t), r);
         let {
-            width: _,
-            height: A
+            width: A,
+            height: _
         } = g(n, this.size), x = t - p, E = e - h, y = (0, d.fh)((0, d.Ly)({
             top: x,
             left: E,
             bottom: void 0,
             right: void 0
-        }, s, a, _, A)), v = u ? (0, d.h1)(y) : m("RESIZE_SOUTH_EAST", y);
+        }, s, a, A, _)), v = u ? (0, d.h1)(y) : m("RESIZE_SOUTH_EAST", y);
         this.setDOMPositions(v), f || (null != o && o(), this.setState({
             operationStarted: !0
         })), null != c && c(i, "MOVE", this.anchor, this.size)
@@ -285,19 +285,19 @@ class x extends a.Component {
             startX: h,
             startY: p,
             offsetWidth: f,
-            offsetHeight: _
-        } = this.dragState, A = 0, g = 0;
+            offsetHeight: A
+        } = this.dragState, _ = 0, g = 0;
         if (null != c) {
             switch (e = Math.max(Math.min(s, e), l), t = Math.max(Math.min(a, t), r), c) {
                 case "RESIZE_EAST":
                 case "RESIZE_SOUTH_EAST":
                 case "RESIZE_NORTH_EAST":
-                    A -= h - e;
+                    _ -= h - e;
                     break;
                 case "RESIZE_WEST":
                 case "RESIZE_SOUTH_WEST":
                 case "RESIZE_NORTH_WEST":
-                    A += h - e
+                    _ += h - e
             }
             switch (c) {
                 case "RESIZE_SOUTH":
@@ -310,9 +310,9 @@ class x extends a.Component {
                 case "RESIZE_NORTH_EAST":
                     g += p - t
             }
-            f = Math.max(f + A, i.width), _ = Math.max(_ + g, i.height), this.setDOMSize({
+            f = Math.max(f + _, i.width), A = Math.max(A + g, i.height), this.setDOMSize({
                 width: f,
-                height: _
+                height: A
             }), u || (null != o && o(), this.setState({
                 operationStarted: !0
             })), null != d && d(n, c, this.anchor, this.size)
@@ -366,7 +366,7 @@ class x extends a.Component {
             left: n,
             bottom: i,
             right: s
-        }, null != a && (a.style.top = A(t), a.style.bottom = A(i), a.style.left = A(n), a.style.right = A(s))
+        }, null != a && (a.style.top = _(t), a.style.bottom = _(i), a.style.left = _(n), a.style.right = _(s))
     }
     setDOMSize(e) {
         let {
@@ -378,7 +378,7 @@ class x extends a.Component {
         t = "auto" === this.size.width ? "auto" : t, n = "auto" === this.size.height ? "auto" : n, this.size = {
             width: t,
             height: n
-        }, null != i && (i.style.width = A(t), i.style.height = A(n))
+        }, null != i && (i.style.width = _(t), i.style.height = _(n))
     }
     renderResizeHandles() {
         let {

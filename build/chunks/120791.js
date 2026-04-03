@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var a = n(311907),
-    l = n(961350),
+var l = n(311907),
+    a = n(961350),
     s = n(823016),
     r = n(507247),
     o = n(750492),
@@ -19,16 +19,16 @@ function m(e) {
         games: t,
         ...n
     } = e, {
-        registerItemRef: a,
-        manageFocusOnDelete: l
+        registerItemRef: l,
+        manageFocusOnDelete: a
     } = (0, s.r)();
     return (0, i.jsx)(r.A, {
         games: t,
         renderGame: (e, t) => (0, i.jsx)(u.h, {
             index: t,
             game: e,
-            coverRef: a(e.applicationId),
-            onRemoveGame: l,
+            coverRef: l(e.applicationId),
+            onRemoveGame: a,
             ...n
         })
     })
@@ -40,7 +40,7 @@ function x(e) {
         widgetType: n,
         disableInteraction: r,
         games: u
-    } = e, x = (0, a.bG)([l.default], () => l.default.getId() === t), {
+    } = e, x = (0, l.bG)([a.default], () => a.default.getId() === t), {
         getManageButtonForWidget: p
     } = (0, g.r)(), f = p(n), {
         expanded: h,

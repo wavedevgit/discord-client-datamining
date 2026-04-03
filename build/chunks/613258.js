@@ -6,8 +6,8 @@ s.d(t, {
 var n = s(627968),
     r = s(64700),
     l = s(503698),
-    a = s.n(l),
-    i = s(575593),
+    i = s.n(l),
+    a = s(575593),
     o = s(770178),
     c = s(590180),
     d = s(929283),
@@ -19,7 +19,7 @@ let g = ["1212569433839636530", "1144308439720394944", "1228251144065777765", "1
             config: t,
             baseLeft: s,
             transitioning: r
-        } = e, l = window.innerHeight, a = c.A.getProduct(t.skuId), o = a?.items[0], u = a?.type, g = s + t.horizontalJitter;
+        } = e, l = window.innerHeight, i = c.A.getProduct(t.skuId), o = i?.items[0], u = i?.type, g = s + t.horizontalJitter;
         return (0, n.jsx)("div", {
             className: _.LY,
             style: {
@@ -31,7 +31,7 @@ let g = ["1212569433839636530", "1144308439720394944", "1228251144065777765", "1
                 transitionDelay: t.transitionDelay,
                 transitionDuration: t.transitionDuration
             },
-            children: null != o && u === i.R.AVATAR_DECORATION && (0, n.jsx)(d.i, {
+            children: null != o && u === a.R.AVATAR_DECORATION && (0, n.jsx)(d.i, {
                 item: o
             })
         })
@@ -41,7 +41,7 @@ let g = ["1212569433839636530", "1144308439720394944", "1228251144065777765", "1
             peaking: t,
             transitioning: s,
             parentWidth: l
-        } = e, [i, o] = r.useState(!1), [c, d] = r.useState([]), [h] = r.useState(() => [...g].sort(() => Math.random() - .5).map(e => ({
+        } = e, [a, o] = r.useState(!1), [c, d] = r.useState([]), [h] = r.useState(() => [...g].sort(() => Math.random() - .5).map(e => ({
             skuId: e,
             top: 0 + 48 * Math.random(),
             rotation: -32 + 64 * Math.random(),
@@ -64,9 +64,9 @@ let g = ["1212569433839636530", "1144308439720394944", "1228251144065777765", "1
         }, [l, h]), r.useEffect(() => {
             s && setTimeout(() => o(!0), u.H1)
         }, [s]), (0, n.jsx)("div", {
-            className: a()(_.rA, {
+            className: i()(_.rA, {
                 [_.Kb]: t,
-                [_.pp]: i
+                [_.pp]: a
             }),
             children: c.map((e, t) => {
                 let {
@@ -85,8 +85,8 @@ let g = ["1212569433839636530", "1144308439720394944", "1228251144065777765", "1
         let {
             peaking: t,
             transitioning: s
-        } = e, l = r.useRef(null), [a, i] = r.useState(0), c = r.useCallback(() => {
-            null != l.current && i(l.current.offsetWidth)
+        } = e, l = r.useRef(null), [i, a] = r.useState(0), c = r.useCallback(() => {
+            null != l.current && a(l.current.offsetWidth)
         }, []);
         return (0, o.g)(l, c), (0, n.jsx)("div", {
             ref: l,
@@ -94,7 +94,7 @@ let g = ["1212569433839636530", "1144308439720394944", "1228251144065777765", "1
             children: (0, n.jsx)(h, {
                 peaking: t,
                 transitioning: s,
-                parentWidth: a
+                parentWidth: i
             })
         })
     }

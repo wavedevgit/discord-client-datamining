@@ -6,8 +6,8 @@ s.d(t, {
 var n = s(627968),
     r = s(64700),
     l = s(311907),
-    a = s(951707),
-    i = s(440938),
+    i = s(951707),
+    a = s(440938),
     o = s(590180),
     c = s(4227),
     d = s(940980),
@@ -39,13 +39,13 @@ let b = e => {
         {
             readyToClaim: O
         } = (0, x.K)(I, A.rewardSkuId),
-        N = null == L && null != A.rewardSkuId && null != I;
-    return (0, n.jsx)(a.A, {
+        y = null == L && null != A.rewardSkuId && null != I;
+    return (0, n.jsx)(i.A, {
         gap: "xl",
         children: T ? (0, n.jsx)(n.Fragment, {
             children: [void 0, void 0, void 0, void 0, void 0].map((e, t) => (0, n.jsx)(p.A, {}, t))
         }) : (0, n.jsxs)(n.Fragment, {
-            children: [N && O && (0, n.jsx)(i.R9, {
+            children: [y && O && (0, n.jsx)(a.R9, {
                 newValue: {
                     tilePosition: 0,
                     pageSection: "top 4",
@@ -57,7 +57,7 @@ let b = e => {
                 })
             }, A.rewardSkuId), j.map((e, t) => {
                 let s = o.A.getCategoryForProduct(e.skuId);
-                return null == e || null == s ? null : (0, n.jsx)(i.R9, {
+                return null == e || null == s ? null : (0, n.jsx)(a.R9, {
                     newValue: {
                         tilePosition: t,
                         pageSection: "top 4",

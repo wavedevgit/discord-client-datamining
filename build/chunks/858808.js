@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var a = n(503698),
-    l = n.n(a),
+var l = n(503698),
+    a = n.n(l),
     s = n(990078),
     r = n(397927),
     o = n(183555),
@@ -17,7 +17,7 @@ function g(e) {
     let {
         game: t,
         widgetType: n,
-        iconSize: a = "refresh_sm",
+        iconSize: l = "refresh_sm",
         className: g,
         buttonRef: m,
         onRemove: x
@@ -37,9 +37,9 @@ function g(e) {
                 }), x?.()
             },
             "aria-label": d.intl.string(d.t.HUvyDc),
-            className: l()(g, u.v),
+            className: a()(g, u.v),
             children: (0, i.jsx)(r.ucK, {
-                size: a,
+                size: l,
                 className: u.K,
                 color: r.LU0.colors.ICON_FEEDBACK_CRITICAL
             })

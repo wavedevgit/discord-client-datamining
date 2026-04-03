@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(742589),
     p = n(353428),
     f = n(95701),
-    _ = n(470710),
-    A = n(734057),
+    A = n(470710),
+    _ = n(734057),
     g = n(71393),
     m = n(994500),
     x = n(309010),
@@ -116,9 +116,9 @@ class C extends s.Component {
             isPreviewingInGame: u,
             disableDragIndicator: f
         } = this.props, {
-            showOpacitySlider: _
+            showOpacitySlider: A
         } = this.state;
-        return _ && !n ? (0, i.jsxs)(y.Ay.Bar, {
+        return A && !n ? (0, i.jsxs)(y.Ay.Bar, {
             className: S.dl,
             children: [(0, i.jsx)(E.A, {}), (0, i.jsx)(h.A.Icon, {
                 icon: o.PGe,
@@ -156,10 +156,10 @@ function I(e) {
     let {
         channel: t,
         ...n
-    } = e, s = (0, r.bG)([x.A, A.A], () => {
+    } = e, s = (0, r.bG)([x.A, _.A], () => {
         let e = x.A.getVoiceChannelId();
-        return A.A.getChannel(e)
-    }), a = (0, r.bG)([g.A], () => g.A.getGuild(t.guild_id)), l = (0, r.bG)([_.A], () => _.A.isCallActive(t.id)), o = (0, u.Ay)(t), d = (0, r.bG)([m.A], () => !!t.isDM() && null != t.getRecipientId() && m.A.isBlocked(t.getRecipientId()));
+        return _.A.getChannel(e)
+    }), a = (0, r.bG)([g.A], () => g.A.getGuild(t.guild_id)), l = (0, r.bG)([A.A], () => A.A.isCallActive(t.id)), o = (0, u.Ay)(t), d = (0, r.bG)([m.A], () => !!t.isDM() && null != t.getRecipientId() && m.A.isBlocked(t.getRecipientId()));
     return (0, i.jsx)(C, {
         channel: t,
         channelName: o,
