@@ -36,7 +36,7 @@ function S(e) {
             unappliedSlots: e,
             numActiveSlots: n
         }
-    }, [t]), S = x > (null != d ? _.Ay.getNumIncludedPremiumGuildSubscriptionSlots(d.planId) : 0), b = d?.isPausedOrPausePending === !0 && l === h.xc.NONE;
+    }, [t]), S = x > (null != d ? _.Ay.getNumIncludedPremiumGuildSubscriptionSlots(d.planId) : 0), E = d?.isPausedOrPausePending === !0 && l === h.xc.NONE;
     return 0 === c.length ? null : (0, i.jsxs)("div", {
         className: T.Nr,
         children: [(0, i.jsxs)("div", {
@@ -78,7 +78,7 @@ function S(e) {
                 size: "sm",
                 icon: o._Jp,
                 text: p.intl.string(p.t.BMx1iy),
-                disabled: b,
+                disabled: E,
                 onClick: () => {
                     (0, o.mMO)(async () => {
                         let {
@@ -102,18 +102,18 @@ function S(e) {
                     })
                 }
             })]
-        }), c.map((e, t) => (0, i.jsx)(E, {
+        }), c.map((e, t) => (0, i.jsx)(b, {
             slot: e,
             isLast: t === c.length - 1,
             isCancelable: S && !(0, g.I5)(e),
             isCanceled: (0, g.I5)(e),
             premiumSubscription: d,
-            modificationsDisabled: b
+            modificationsDisabled: E
         }, e.id))]
     })
 }
 
-function E(e) {
+function b(e) {
     let t, {
             slot: n,
             isLast: l,

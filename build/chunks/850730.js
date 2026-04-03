@@ -1,9 +1,9 @@
 /** chunk id: 850730 params = (module,exports,require) **/
 n.d(t, {
     DB: () => N,
-    ZL: () => E,
+    ZL: () => S,
     ln: () => T,
-    t0: () => S
+    t0: () => E
 });
 var a = n(64700),
     i = n(873298),
@@ -19,8 +19,8 @@ var a = n(64700),
     x = n(544028),
     p = n(253932),
     g = n(594061),
-    _ = n(287809),
-    f = n(927578),
+    f = n(287809),
+    _ = n(927578),
     v = n(652215),
     b = n(385803),
     j = n(381941);
@@ -30,8 +30,8 @@ let A = [v.NJ8.DARK, v.NJ8.LIGHT, v.NJ8.DARKER, v.NJ8.MIDNIGHT],
 function y(e) {
     return e[Math.floor(Math.random() * e.length)]
 }
-async function S() {
-    let e, t = (e = _.default.getCurrentUser(), f.Ay.canUseClientThemes(e) ? Object.keys(b.ag).map(e => Number(e)) : []),
+async function E() {
+    let e, t = (e = f.default.getCurrentUser(), _.Ay.canUseClientThemes(e) ? Object.keys(b.ag).map(e => Number(e)) : []),
         n = t.length > 0 && Math.random() > .7;
     try {
         if (n) {
@@ -56,7 +56,7 @@ async function S() {
         }
     } catch (e) {}
 }
-async function E() {
+async function S() {
     let e = d.A.purchases,
         t = (0, c.x9)(e),
         n = (0, c.$W)(e),
@@ -84,24 +84,24 @@ function T() {
 
 function N() {
     a.useEffect(() => {
-        let e = _.default.getCurrentUser(),
+        let e = f.default.getCurrentUser(),
             t = p.eh.getSetting(),
             n = d.A.purchases,
             a = (0, c.x9)(n),
             i = (0, c.$W)(n),
-            f = x.A.theme,
+            _ = x.A.theme,
             v = t.backgroundGradientPresetId,
             b = e?.avatarDecoration?.skuId,
             j = e?.collectibles?.nameplate?.skuId,
             A = null != b ? a.find(e => e.skuId === b) ?? null : null,
             C = null != j ? i.find(e => e.skuId === j) ?? null : null,
             y = o.A.fontSize,
-            S = o.A.messageGroupSpacing,
-            E = p.Xi.getSetting();
+            E = o.A.messageGroupSpacing,
+            S = p.Xi.getSetting();
         return () => {
             try {
                 l.u_({
-                    theme: f,
+                    theme: _,
                     backgroundGradientPresetId: v ?? void 0,
                     customUserThemeSettings: void 0
                 }, g.Sb.INFREQUENT_USER_ACTION), (0, m.p)({
@@ -110,7 +110,7 @@ function N() {
                 });
                 let e = h.A.getPendingChanges(),
                     t = (0, u.Sk)(e);
-                (0, s._L)(t).finally(s.pZ), (0, r.XS)(y), (0, r.AC)(S), p.Xi.updateSetting(E)
+                (0, s._L)(t).finally(s.pZ), (0, r.XS)(y), (0, r.AC)(E), p.Xi.updateSetting(S)
             } catch (e) {}
         }
     }, [])

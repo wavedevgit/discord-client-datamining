@@ -16,8 +16,8 @@ var a = n(627968),
     x = n(203879),
     p = n(321503),
     g = n(56853),
-    _ = n(515038),
-    f = n(652215),
+    f = n(515038),
+    _ = n(652215),
     v = n(917332);
 
 function b(e) {
@@ -29,10 +29,10 @@ function b(e) {
         rowIndex: m,
         impressionRef: b,
         sourceQuestContent: j
-    } = e, [A, C] = i.useState(!1), [y, S] = i.useState([]), E = (0, o.aC)(t), T = i.useMemo(() => (0, u.vv)(t), [t]), N = (0, d.u0)(), I = i.useCallback(() => {
+    } = e, [A, C] = i.useState(!1), [y, E] = i.useState([]), S = (0, o.aC)(t), T = i.useMemo(() => (0, u.vv)(t), [t]), N = (0, d.u0)(), I = i.useCallback(() => {
         C(!0), N({
             questId: t.id,
-            event: f.HAw.QUEST_HOVER,
+            event: _.HAw.QUEST_HOVER,
             properties: {
                 content_id: s,
                 content_name: (0, c.jO)(s),
@@ -43,7 +43,7 @@ function b(e) {
     }, [N, t.id, s, T, j, r]), O = i.useCallback(() => {
         C(!1), N({
             questId: t.id,
-            event: f.HAw.QUEST_HOVER_OFF,
+            event: _.HAw.QUEST_HOVER_OFF,
             properties: {
                 content_id: s,
                 content_name: (0, c.jO)(s),
@@ -81,16 +81,16 @@ function b(e) {
             quest: t,
             isHovering: A,
             errorHints: y,
-            warningHints: E,
+            warningHints: S,
             isVisibleInViewport: w,
             sourceQuestContent: j
-        }), (0, a.jsx)(_.A, {
+        }), (0, a.jsx)(f.A, {
             quest: t,
             questContent: s,
             isHovering: A,
             contentPosition: r,
             rowIndex: m,
-            onReceiveErrorHints: S,
+            onReceiveErrorHints: E,
             isVisibleInViewport: w,
             sourceQuestContent: j
         })]

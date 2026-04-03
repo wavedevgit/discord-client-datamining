@@ -1,15 +1,15 @@
 /** chunk id: 674272 params = (module,exports,require) **/
 n.d(t, {
-    A: () => s
+    A: () => a
 });
 var i = n(627968);
 n(64700);
 var r = n(397927);
 
-function s(e) {
+function a(e) {
     let {
         source: t,
-        onClose: s
+        onClose: a
     } = e;
     (0, r.mMO)(async () => {
         let {
@@ -20,7 +20,7 @@ function s(e) {
             source: t
         })
     }, {
-        onCloseCallback: s,
+        onCloseCallback: a,
         backdropStyle: r.F2Z.BLUR
     })
 }

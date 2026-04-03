@@ -62,14 +62,14 @@ function _(e) {
         handleDismissSuggestions: x
     } = (0, o.q)(t), _ = (0, a.bG)([s.default], () => s.default.getId() === n.id), A = _ && !l && m, I = (0, r.L)(t), j = (0, r.FM)(t, {
         isCurrentUser: _
-    }), v = (0, r.uA)(t), T = 1 === (0, r.cv)(t.type);
+    }), v = (0, r.uA)(t), E = 1 === (0, r.cv)(t.type);
     return (0, i.jsx)(h, {
         widget: t,
         user: n,
         disableInteraction: l,
         headerTitle: I,
         headerSubtitle: j,
-        headerActionButtons: _ && !T ? [(0, i.jsx)(c.IU, {
+        headerActionButtons: _ && !E ? [(0, i.jsx)(c.IU, {
             disabled: v,
             widgetType: t.type,
             widget: t,

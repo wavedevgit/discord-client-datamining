@@ -1,6 +1,6 @@
 /** chunk id: 603047 params = (module,exports,require) **/
 n.d(t, {
-    A: () => u
+    A: () => o
 });
 var l = n(311907),
     s = n(73153),
@@ -15,7 +15,7 @@ class r extends l.Ay.Store {
         return i.O[a]
     }
 }
-let u = new r(s.h, {
+let o = new r(s.h, {
     CONTENT_INVENTORY_FORCE_SHOW_GAME_SHARING: function(e) {
         let {
             gameToShow: t

@@ -1,6 +1,6 @@
 /** chunk id: 461489 params = (module,exports,require) **/
 n.d(t, {
-    A: () => E
+    A: () => b
 }), n(321073);
 var i = n(627968),
     s = n(64700),
@@ -22,7 +22,7 @@ var i = n(627968),
     f = n(688151),
     S = n(385818);
 
-function E() {
+function b() {
     let {
         experiments: e,
         overridesInfo: t
@@ -44,7 +44,7 @@ function E() {
             onChange: c,
             onClear: () => c("")
         }), u.length > 0 ? u.map(e => {
-            let t = "guild" === e.experiment.kind ? C : b;
+            let t = "guild" === e.experiment.kind ? C : E;
             return (0, i.jsx)(t, {
                 experiment: e.experiment,
                 experimentId: e.id,
@@ -61,13 +61,13 @@ function E() {
     })
 }
 
-function b(e) {
+function E(e) {
     let {
         experiment: t,
         experimentId: n,
         overrideInfo: l,
         defaultOpen: g
-    } = e, [x, h] = s.useState(g), [T, E] = s.useState(!1), b = s.useCallback(() => {
+    } = e, [x, h] = s.useState(g), [T, b] = s.useState(!1), E = s.useCallback(() => {
         h(e => !e)
     }, []), C = (0, r.bG)([A.default], () => A.default.getId()), N = (0, _.iN)(t, C), v = (0, _.Fm)(t, C), I = (0, r.yK)([m.A], () => a().sortBy(m.A.getRecentExposures(f.Vh.USER, n), e => {
         let [t, n] = e;
@@ -85,7 +85,7 @@ function b(e) {
         })
     }, [n]), y = (0, i.jsx)(o.sqX, {
         "aria-label": "Toggle visibility",
-        onClick: b,
+        onClick: E,
         children: (0, i.jsxs)(o.Text, {
             variant: "text-md/medium",
             className: S.DD,
@@ -164,7 +164,7 @@ function b(e) {
             children: (0, i.jsx)(o.QWc, {
                 variant: "secondary",
                 text: "More Details \xbb",
-                onClick: () => E(!0)
+                onClick: () => b(!0)
             })
         }), (0, i.jsx)(o.cGx, {
             className: S.yF
@@ -185,7 +185,7 @@ function C(e) {
     }).map(e => {
         let [t, n] = e;
         return `${new Date(n).toLocaleString()} (${t})`
-    })), [T, E] = (0, r.yK)([h.A, m.A], () => {
+    })), [T, b] = (0, r.yK)([h.A, m.A], () => {
         let e = a().sortBy(h.A.getGuildsArray(), e => e.name.toLowerCase()),
             t = {},
             i = [];
@@ -196,7 +196,7 @@ function C(e) {
         }
         let s = a()(t).keys().map(Number).sort().map(e => `${t[e]} guilds in bucket ${e}`).join(", ");
         return [i.join("\n"), s]
-    }), b = (0, i.jsx)(o.DUT, {
+    }), E = (0, i.jsx)(o.DUT, {
         onClick: x,
         children: (0, i.jsxs)(o.Text, {
             variant: "text-md/medium",
@@ -217,9 +217,9 @@ function C(e) {
     });
     return d ? (0, i.jsxs)("div", {
         className: S.Os,
-        children: [b, (0, i.jsx)(u.g, {
+        children: [E, (0, i.jsx)(u.g, {
             label: "Bucket Override",
-            description: `Current Assignments: ${E}`,
+            description: `Current Assignments: ${b}`,
             experiment: t,
             experimentId: n,
             overrideInfo: l
@@ -276,6 +276,6 @@ function C(e) {
         })]
     }) : (0, i.jsx)("div", {
         className: S.Os,
-        children: b
+        children: E
     })
 }

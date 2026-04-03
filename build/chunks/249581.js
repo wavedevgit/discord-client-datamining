@@ -5,11 +5,11 @@ n.d(e, {
 var i = n(627968),
     r = n(64700),
     l = n(503698),
-    a = n.n(l),
-    s = n(397927),
+    s = n.n(l),
+    a = n(397927),
     o = n(927018),
-    u = n(64585),
-    c = n(906688),
+    c = n(64585),
+    u = n(906688),
     d = n(263244);
 let h = t => {
     let {
@@ -71,43 +71,43 @@ function _(t) {
         name: l,
         description: _,
         rarity: E,
-        hideDescriptionUntilUnlock: A,
-        onAction: C
+        hideDescriptionUntilUnlock: C,
+        onAction: A
     } = e, {
         color: T
     } = (0, o.ag)(E);
     r.useEffect(() => {
         let t = setTimeout(() => {
-            u.A.playAchievementUnlockSound()
+            c.A.playAchievementUnlockSound()
         }, 50);
         return () => {
             clearTimeout(t)
         }
     }, []);
-    let g = null != C && n,
-        f = g ? s.DUT : "div";
-    return (0, i.jsxs)(f, {
-        className: a()(d.kL, g && d.b),
+    let g = null != A && n,
+        L = g ? a.DUT : "div";
+    return (0, i.jsxs)(L, {
+        className: s()(d.kL, g && d.b),
         onClick: () => {
-            g && C()
+            g && A()
         },
         children: [(0, i.jsx)("div", {
             className: d.zc,
-            children: (0, i.jsx)(c.A, {
+            children: (0, i.jsx)(u.A, {
                 achievementId: e.id,
-                size: c.A.Sizes.SIZE_40,
+                size: u.A.Sizes.SIZE_40,
                 unlocked: n
             })
         }), (0, i.jsxs)("div", {
             className: d.__invalid_nameContainer,
-            children: [(0, i.jsx)(s.Text, {
+            children: [(0, i.jsx)(a.Text, {
                 variant: "text-md/semibold",
                 color: "text-strong",
                 children: l()
-            }), (0, i.jsx)(s.Text, {
+            }), (0, i.jsx)(a.Text, {
                 variant: "text-xs/medium",
                 color: "text-default",
-                children: A && !n ? "?????" : _()
+                children: C && !n ? "?????" : _()
             })]
         }), (0, i.jsx)("div", {
             className: d.Db,

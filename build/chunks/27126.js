@@ -17,9 +17,9 @@ var i = n(989349),
     x = n(617617),
     p = n(287809),
     g = n(789565),
-    _ = n(310086);
+    f = n(310086);
 
-function f(e) {
+function _(e) {
     let t = new Date(e);
     return t.toLocaleDateString("en-US", {
         month: "short",
@@ -57,7 +57,7 @@ function v() {
             return t?.dmProbability != null ? `${(100*t.dmProbability).toFixed(3)}%` : "N/A"
         };
     return (0, a.jsx)(o.IpV, {
-        className: _.nd,
+        className: f.nd,
         children: (0, a.jsxs)("div", {
             className: g.l$,
             children: [(0, a.jsx)(o.Text, {
@@ -206,7 +206,7 @@ function v() {
                         })]
                     }), (0, a.jsx)(o.Text, {
                         variant: "text-xs/normal",
-                        children: null != A ? `Dismissed at: ${f(A)}` : "Not dismissed"
+                        children: null != A ? `Dismissed at: ${_(A)}` : "Not dismissed"
                     })]
                 })
             }), (0, a.jsx)("div", {
@@ -238,7 +238,7 @@ function v() {
                             let [t, n] = e, i = p.default.getUser(t), s = i?.username ?? `Unknown User (${t})`;
                             return (0, a.jsxs)(o.Text, {
                                 variant: "text-xs/normal",
-                                children: [s, ": ", f(n)]
+                                children: [s, ": ", _(n)]
                             }, t)
                         })]
                     })]
@@ -270,7 +270,7 @@ function v() {
                             children: "Gift notification shown timestamps:"
                         }), n.map((e, t) => (0, a.jsx)(o.Text, {
                             variant: "text-xs/normal",
-                            children: f(e)
+                            children: _(e)
                         }, t))]
                     })]
                 })
@@ -331,7 +331,7 @@ function v() {
                             let [t, n] = e, i = p.default.getUser(t), s = i?.username ?? `Unknown User (${t})`;
                             return (0, a.jsxs)(o.Text, {
                                 variant: "text-xs/normal",
-                                children: [s, ": ", f(n)]
+                                children: [s, ": ", _(n)]
                             }, t)
                         })]
                     })]

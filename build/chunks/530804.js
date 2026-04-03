@@ -1,8 +1,8 @@
 /** chunk id: 530804 params = (module,exports,require) **/
 i.d(e, {
     $n: () => f,
-    uy: () => T,
-    vp: () => S
+    uy: () => S,
+    vp: () => E
 }), i(321073);
 var n = i(64700),
     l = i(735438),
@@ -55,7 +55,7 @@ function f(t, e) {
     })(i, e, f), [i, e, f])
 }
 
-function S(t, e) {
+function E(t, e) {
     let i = (0, r.bG)([p.A, m.A], () => t === m.A.getChannelId() ? p.A.getDesyncedParticipants() : null);
     return n.useMemo(() => (function(t, e) {
         if (null == t || 0 === t.length) return e;
@@ -66,7 +66,7 @@ function S(t, e) {
     })(i, e), [i, e])
 }
 
-function T(t, e) {
+function S(t, e) {
     let i = (0, r.bG)([d.default], () => d.default.getId() === e),
         l = (0, r.bG)([m.A], () => m.A.getChannelId()),
         s = n.useRef(null),

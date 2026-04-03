@@ -1,6 +1,6 @@
 /** chunk id: 526838 params = (module,exports,require) **/
 l.d(t, {
-    Z: () => d
+    Z: () => u
 });
 var a = l(627968);
 l(64700);
@@ -9,11 +9,11 @@ var n = l(397927),
     i = l(23003),
     o = l(576765),
     s = l(88433);
-let u = {
+let d = {
         none: void 0,
         nitroWheel: n.tvc
     },
-    d = {
+    u = {
         title: "Marketing Home",
         stories: [{
             name: "Bento Box",
@@ -21,31 +21,31 @@ let u = {
                 let {
                     title: t,
                     description: l,
-                    ctaMode: d,
+                    ctaMode: u,
                     descriptionCtaText: c,
                     action1Text: p,
                     action1Variant: m,
                     action2Text: h,
                     action2Variant: x,
                     icon: b,
-                    iconPosition: f,
-                    index: y,
+                    iconPosition: y,
+                    index: f,
                     size: g,
                     badgeText: v,
-                    badgeVariant: E,
-                    isReducedMotion: _,
+                    badgeVariant: _,
+                    isReducedMotion: E,
                     previewImageStyle: C
-                } = e, j = () => (0, n.showToast)((0, n.createToast)("CTA clicked!", n.ToastType.SUCCESS)), S = u[b], T = "descriptionCta" === d ? {
+                } = e, j = () => (0, n.showToast)((0, n.createToast)("CTA clicked!", n.ToastType.SUCCESS)), S = d[b], T = "descriptionCta" === u ? {
                     descriptionCta: c,
                     onClick: j
-                } : "actions" === d ? {
+                } : "actions" === u ? {
                     actions: [{
                         text: p,
                         variant: m,
                         onClick: j,
                         ...null != S ? {
                             icon: S,
-                            iconPosition: f
+                            iconPosition: y
                         } : {}
                     }, ...h.length > 0 ? [{
                         text: h,
@@ -61,11 +61,11 @@ let u = {
                         previewImage: o.A,
                         videoUrl: s.A,
                         shouldLoadVideo: !0,
-                        index: y,
+                        index: f,
                         size: g,
                         badgeText: v.length > 0 ? v : void 0,
-                        badgeVariant: E,
-                        isReducedMotion: _,
+                        badgeVariant: _,
+                        isReducedMotion: E,
                         previewImageStyle: C,
                         ...T
                     })

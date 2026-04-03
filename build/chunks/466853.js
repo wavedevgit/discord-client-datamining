@@ -1,6 +1,6 @@
 /** chunk id: 466853 params = (module,exports,require) **/
 n.d(t, {
-    A: () => T
+    A: () => E
 });
 var i = n(627968),
     l = n(64700),
@@ -55,13 +55,13 @@ function v(e) {
             onReorder: g.R_,
             onEnd: () => x(n.type)
         }),
-        T = null != v,
-        E = T && t < v,
-        b = T && t > v;
+        E = null != v,
+        T = E && t < v,
+        b = E && t > v;
     return (0, i.jsxs)("div", {
         ref: u,
         className: s()(j.wX, {
-            [j.A]: E,
+            [j.A]: T,
             [j.Ze]: b,
             [j.Id]: _
         }),
@@ -77,7 +77,7 @@ function v(e) {
     })
 }
 
-function T(e) {
+function E(e) {
     let {
         userId: t,
         widget: n,
@@ -87,8 +87,8 @@ function T(e) {
         index: h,
         trailingContent: A,
         headerTitle: I,
-        headerSubtitle: T,
-        headerActionButtons: E,
+        headerSubtitle: E,
+        headerActionButtons: T,
         headerClassName: b,
         additionalManageWidgetMenuItems: C
     } = e, S = (0, c.GV)(), N = l.useRef(null), y = (0, o.bG)([d.default], () => d.default.getId() === t), R = (0, f.g)(), {
@@ -106,8 +106,8 @@ function T(e) {
                 userId: t,
                 headingId: S,
                 title: I,
-                subtitle: T,
-                actionButtons: E,
+                subtitle: E,
+                actionButtons: T,
                 widget: n,
                 disableInteraction: g,
                 className: b

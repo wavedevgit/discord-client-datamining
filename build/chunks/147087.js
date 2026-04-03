@@ -1,9 +1,9 @@
 /** chunk id: 147087 params = (module,exports,require) **/
-n.d(t, {
+t.d(n, {
     b: () => l
 });
-var i = n(311907),
-    r = n(287809);
+var i = t(311907),
+    r = t(287809);
 
 function l() {
     return (0, i.bG)([r.default], () => r.default.getCurrentUser()?.isStaff() ?? !1)

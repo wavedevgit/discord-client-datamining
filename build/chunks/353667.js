@@ -69,7 +69,7 @@ function S(e) {
     })
 }
 
-function E(e) {
+function b(e) {
     let {
         panelKey: t,
         notice: n,
@@ -94,7 +94,7 @@ function E(e) {
     })
 }
 
-function b(e) {
+function E(e) {
     let {
         layout: t,
         decoration: n
@@ -134,7 +134,7 @@ function C(e) {
         })
     }, [n, t]);
     let o = n.find(e => e.key === r) ?? n[0];
-    return (0, i.jsxs)(E, {
+    return (0, i.jsxs)(b, {
         panelKey: t,
         notice: l,
         children: [(0, i.jsx)(d.VQ0, {
@@ -163,7 +163,7 @@ function C(e) {
             })
         }), (0, i.jsx)(d.VQ0.Panel, {
             id: r,
-            children: null != o.StronglyDiscouragedCustomComponent ? (0, i.jsx)(o.StronglyDiscouragedCustomComponent, {}) : (0, i.jsx)(b, {
+            children: null != o.StronglyDiscouragedCustomComponent ? (0, i.jsx)(o.StronglyDiscouragedCustomComponent, {}) : (0, i.jsx)(E, {
                 layout: o.layout,
                 decoration: a
             })
@@ -178,10 +178,10 @@ function N(e) {
         decoration: s,
         layout: l
     } = e;
-    return (0, i.jsx)(E, {
+    return (0, i.jsx)(b, {
         panelKey: t,
         notice: n,
-        children: (0, i.jsx)(b, {
+        children: (0, i.jsx)(E, {
             layout: l,
             decoration: s
         })

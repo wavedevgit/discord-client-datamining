@@ -43,7 +43,7 @@ class g extends l.Component {
         (0, d.L3)(e, async () => {
             let {
                 default: e
-            } = await Promise.all([n.e("70303"), n.e("17425"), n.e("40878")]).then(n.bind(n, 340968));
+            } = await Promise.all([n.e("17425"), n.e("88191")]).then(n.bind(n, 340968));
             return n => (0, i.jsx)(e, {
                 ...n,
                 channel: t,

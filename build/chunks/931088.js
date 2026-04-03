@@ -8,8 +8,8 @@ var a = l(627968),
     i = l(688810),
     o = l(95337),
     s = l(412314),
-    u = l(456459),
-    d = l(473702),
+    d = l(456459),
+    u = l(473702),
     c = l(916974),
     p = l(347378),
     m = l(606423),
@@ -20,22 +20,22 @@ let x = e => {
             onClose: l,
             premiumSubscription: o,
             premiumType: s,
-            churnDiscount: u,
-            planId: d,
+            churnDiscount: d,
+            planId: u,
             renewalInvoice: p,
             renewalInvoiceDetails: m,
             errorOnCancel: x,
-            errorOnRedeem: f,
-            setActiveStep: y,
+            errorOnRedeem: y,
+            setActiveStep: f,
             activeStep: g
         } = e, {
             analyticsLocations: v
-        } = (0, i.Ay)(r.A.USER_SETTINGS), [E, _] = n.useState(b(g));
+        } = (0, i.Ay)(r.A.USER_SETTINGS), [_, E] = n.useState(b(g));
         return (0, n.useEffect)(() => {
-            _(b(g))
+            E(b(g))
         }, [g]), (0, a.jsx)(c.CancellationContext.Provider, {
             value: {
-                setStep: y,
+                setStep: f,
                 premiumType: s,
                 onClose: l,
                 transitionState: t,
@@ -43,11 +43,11 @@ let x = e => {
                 analyticsLocations: v,
                 analyticsLocation: h.ThZ.USER_SETTINGS,
                 confettiCanvas: null,
-                churnUserDiscountOffer: u,
+                churnUserDiscountOffer: d,
                 isFetchingChurnDiscountOffer: !1,
                 fullPrice: "$9.99",
                 discountedPrice: "$4.99",
-                planId: d,
+                planId: u,
                 paymentsBlocked: !1,
                 renewalInvoice: p,
                 renewalInvoiceDetails: m,
@@ -58,26 +58,26 @@ let x = e => {
                 }),
                 applyOffer: () => new Promise((e, t) => {
                     setTimeout(() => {
-                        f ? t() : e()
+                        y ? t() : e()
                     }, 1e3)
                 }),
                 pauseDuration: null,
                 setPauseDuration: () => {}
             },
-            children: E
+            children: _
         })
     },
     b = e => {
         switch (e) {
-            case d.g.DISCOUNT_APPLIED:
-                return (0, a.jsx)(u.V, {});
-            case d.g.CONFIRM_DISCOUNT:
+            case u.g.DISCOUNT_APPLIED:
+                return (0, a.jsx)(d.V, {});
+            case u.g.CONFIRM_DISCOUNT:
                 return (0, a.jsx)(s.M, {});
-            case d.g.CONFIRM:
+            case u.g.CONFIRM:
                 return (0, a.jsx)(o.r, {});
-            case d.g.PREVIEW:
+            case u.g.PREVIEW:
                 return (0, a.jsx)(p.E, {});
-            case d.g.WHAT_YOU_LOSE:
+            case u.g.WHAT_YOU_LOSE:
             default:
                 return (0, a.jsx)(m.Z, {})
         }

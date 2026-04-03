@@ -23,8 +23,8 @@ var s = n(503698),
     T = n(97352),
     f = n(481354),
     S = n(85563),
-    E = n(739508),
-    b = n(203982),
+    b = n(739508),
+    E = n(203982),
     C = n(927578),
     N = n(83617),
     v = n(615396),
@@ -222,14 +222,14 @@ let X = function(e) {
                         currentInvoicePreview: s,
                         renewalInvoicePreview: a,
                         onClose: async () => {
-                            l || (l = !0, b._.dispatch(G.jej.WOW_MOMENT_CONFIRMATION_MODAL_CLOSED), y.A.isDisplayingWowMomentConfirmation && y.A.isAnimated ? setTimeout(() => {
+                            l || (l = !0, E._.dispatch(G.jej.WOW_MOMENT_CONFIRMATION_MODAL_CLOSED), y.A.isDisplayingWowMomentConfirmation && y.A.isAnimated ? setTimeout(() => {
                                 n.onClose()
                             }, A.K) : await n.onClose())
                         }
                     })
                 }, {
                     onCloseRequest: () => {
-                        l || (l = !0, b._.dispatch(G.jej.WOW_MOMENT_CONFIRMATION_MODAL_CLOSED), y.A.isDisplayingWowMomentConfirmation && y.A.isAnimated ? setTimeout(() => {
+                        l || (l = !0, E._.dispatch(G.jej.WOW_MOMENT_CONFIRMATION_MODAL_CLOSED), y.A.isDisplayingWowMomentConfirmation && y.A.isAnimated ? setTimeout(() => {
                             (0, c.OoC)(e)
                         }, A.K) : (0, c.OoC)(e))
                     },
@@ -245,7 +245,7 @@ let X = function(e) {
             analyticsObject: V,
             subscription: t,
             skipConfirm: !0
-        }) : u.U(t, X) : (0, E.pM)(Error("Invalid subscription to resume"), {
+        }) : u.U(t, X) : (0, b.pM)(Error("Invalid subscription to resume"), {
             extra: {
                 subscriptionId: t.id,
                 status: t.status,

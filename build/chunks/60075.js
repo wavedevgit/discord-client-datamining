@@ -11,7 +11,7 @@ l.d(t, {
     t$: () => p,
     yJ: () => C,
     yi: () => S,
-    z_: () => E
+    z_: () => _
 });
 var a = l(627968),
     n = l(64700),
@@ -19,8 +19,8 @@ var a = l(627968),
     i = l(397927),
     o = l(252561),
     s = l(287809),
-    u = l(652215),
-    d = l(339984),
+    d = l(652215),
+    u = l(339984),
     c = l(788868);
 
 function p() {
@@ -133,7 +133,7 @@ function b() {
         })
     })
 }
-let f = [{
+let y = [{
         id: "avatar_decoration",
         label: "Avatar Decoration",
         value: c.e.AVATAR_DECORATION_MODAL_UPSELL
@@ -146,7 +146,7 @@ let f = [{
         label: "Nameplate",
         value: c.e.NAMEPLATE_MODAL_UPSELL
     }],
-    y = {
+    f = {
         [c.e.AVATAR_DECORATION_MODAL_UPSELL]: {
             title: "Express Yourself with Avatar Decorations",
             body: "Stand out with unique avatar decorations exclusive to Nitro subscribers.",
@@ -170,7 +170,7 @@ function g() {
             title: t,
             body: n,
             glowUp: r
-        } = y[e];
+        } = f[e];
         (0, i.mMO)(async () => {
             let {
                 default: i
@@ -193,7 +193,7 @@ function g() {
                 placeholder: "Select type",
                 onSelectionChange: e => t(e),
                 value: e,
-                options: f,
+                options: y,
                 selectionMode: "single",
                 fullWidth: !0
             })
@@ -212,10 +212,10 @@ let v = [{
 }, {
     id: "at_limit",
     label: "At Limit (100 guilds)",
-    value: u.qlD
+    value: d.qlD
 }];
 
-function E() {
+function _() {
     let [e, t] = n.useState(100), r = n.useCallback(() => {
         (0, i.mMO)(async () => {
             let {
@@ -249,31 +249,31 @@ function E() {
         })]
     })
 }
-let _ = [{
+let E = [{
     id: "avatar",
     label: "Avatar",
-    value: d.HL.AVATAR
+    value: u.HL.AVATAR
 }, {
     id: "banner",
     label: "Banner",
-    value: d.HL.BANNER
+    value: u.HL.BANNER
 }];
 
 function C() {
-    let [e, t] = n.useState(d.HL.AVATAR), u = (0, r.bG)([s.default], () => s.default.getCurrentUser()), c = n.useCallback(() => {
-        null != u && (0, i.mMO)(async () => {
+    let [e, t] = n.useState(u.HL.AVATAR), d = (0, r.bG)([s.default], () => s.default.getCurrentUser()), c = n.useCallback(() => {
+        null != d && (0, i.mMO)(async () => {
             let {
                 default: t
             } = await Promise.all([l.e("59701"), l.e("79149")]).then(l.bind(l, 688796));
             return l => (0, a.jsx)(t, {
-                user: u,
+                user: d,
                 uploadType: e,
                 analyticsSource: {},
                 analyticsLocation: {},
                 ...l
             })
         })
-    }, [u, e]);
+    }, [d, e]);
     return (0, a.jsxs)(o.LB, {
         children: [(0, a.jsx)(o.MG, {
             children: (0, a.jsx)(i.l6P, {
@@ -281,7 +281,7 @@ function C() {
                 placeholder: "Select type",
                 onSelectionChange: e => t(e),
                 value: e,
-                options: _,
+                options: E,
                 selectionMode: "single",
                 fullWidth: !0
             })

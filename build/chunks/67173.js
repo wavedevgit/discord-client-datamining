@@ -143,6 +143,7 @@ let L = Math.ceil(Math.sqrt(115200)),
             ref: Q,
             style: ee,
             children: (0, i.jsxs)(m.z9, {
+                showHoverGradient: !1,
                 className: r()({
                     [O.VU]: X || et,
                     [O.jR]: X,

@@ -2,31 +2,31 @@
 a.d(t, {
     Cr: () => y,
     I1: () => S,
-    Nj: () => B,
+    Nj: () => A,
     R6: () => w,
-    SX: () => A,
-    UB: () => T,
-    YE: () => P
+    SX: () => B,
+    UB: () => P,
+    YE: () => T
 }), a(938796);
 var n = a(627968),
-    o = a(64700),
-    r = a(665260),
+    r = a(64700),
+    o = a(665260),
     i = a(311907),
     c = a(571356),
-    _ = a(990078),
-    l = a(397927),
+    l = a(990078),
+    _ = a(397927),
     s = a(672477),
     d = a(982406),
-    p = a(458517),
-    m = a(713021),
-    u = a(121489),
+    u = a(458517),
+    p = a(713021),
+    m = a(121489),
     b = a(734057),
     f = a(644447),
     C = a(998218),
     g = a(465856),
     h = a(652176),
-    I = a(652215),
-    v = a(985018),
+    v = a(652215),
+    I = a(985018),
     x = a(999169);
 
 function y(e) {
@@ -43,7 +43,7 @@ function y(e) {
         placeholderVersion: t.placeholder_version,
         contentType: t.content_type,
         originalContentType: t.original_content_type,
-        srcIsAnimated: (0, r.Lt)(t.flags ?? 0, I.sbO.IS_ANIMATED),
+        srcIsAnimated: (0, o.Lt)(t.flags ?? 0, v.sbO.IS_ANIMATED),
         sourceMetadata: {
             message: e.message,
             identifier: {
@@ -65,27 +65,27 @@ function S(e) {
         } = s.Q.useConfig({
             location: "VideoComponentForMessageAttachment"
         }),
-        p = (0, r.Lt)(t.flags ?? 0, I.sbO.IS_CLIP),
-        m = (0, i.bG)([b.A], () => b.A.getBasicChannel(e.message.channel_id)?.guild_id),
-        u = o.useCallback(() => !p || a ? null : (0, n.jsx)(_.m, {
-            text: v.intl.string(v.t["/fgfWh"]),
+        u = (0, o.Lt)(t.flags ?? 0, v.sbO.IS_CLIP),
+        p = (0, i.bG)([b.A], () => b.A.getBasicChannel(e.message.channel_id)?.guild_id),
+        m = r.useCallback(() => !u || a ? null : (0, n.jsx)(l.m, {
+            text: I.intl.string(I.t["/fgfWh"]),
             children: (0, n.jsxs)("div", {
                 className: x.M,
-                children: [(0, n.jsx)(l.xgA, {
+                children: [(0, n.jsx)(_.xgA, {
                     size: "xs",
                     color: "currentColor"
                 }), (0, n.jsx)(c.E, {
                     variant: "text-xs/semibold",
                     color: "always-white",
-                    children: v.intl.string(v.t.oA4afG)
+                    children: I.intl.string(I.t.oA4afG)
                 })]
             })
-        }), [p, a]),
+        }), [u, a]),
         f = C.A.toURLSafe(t.proxy_url);
-    return null == f ? null : (f.searchParams.append("format", "webp"), p && a) ? (0, n.jsx)(d.A, {
+    return null == f ? null : (f.searchParams.append("format", "webp"), u && a) ? (0, n.jsx)(d.A, {
         attachment: t,
         posterUrl: f.toString(),
-        guildId: m,
+        guildId: p,
         className: e.className
     }) : (0, h.$o)({
         ...e,
@@ -96,8 +96,8 @@ function S(e) {
         src: t.url,
         placeholder: t.placeholder,
         placeholderVersion: t.placeholder_version,
-        srcIsAnimated: (0, r.Lt)(t.flags ?? 0, I.sbO.IS_ANIMATED),
-        renderOverlayContent: u,
+        srcIsAnimated: (0, o.Lt)(t.flags ?? 0, v.sbO.IS_ANIMATED),
+        renderOverlayContent: m,
         sourceMetadata: {
             message: e.message,
             identifier: {
@@ -110,7 +110,7 @@ function S(e) {
     })
 }
 
-function B(e) {
+function A(e) {
     let t = e.item.originalItem;
     return (0, h.gL)({
         ...e,
@@ -120,16 +120,16 @@ function B(e) {
     })
 }
 
-function A(e) {
+function B(e) {
     let {
         message: t,
         item: a
-    } = e, n = a.originalItem, r = (0, m.dx)(m.k0.VOICE_MESSAGE, n.id), i = o.useCallback((e, a, o) => {
-        (0, u.wQ)(t.id, n.duration_secs ?? null, a, t.author.id)
-    }, [t, n.duration_secs]), c = o.useCallback((e, a) => {
-        (0, u.dP)(t.id, n.duration_secs ?? null, e, t.author.id, a)
-    }, [t, n.duration_secs]), _ = o.useCallback(e => {
-        (0, u._O)(t.id, e?.message ?? null)
+    } = e, n = a.originalItem, o = (0, p.dx)(p.k0.VOICE_MESSAGE, n.id), i = r.useCallback((e, a, r) => {
+        (0, m.wQ)(t.id, n.duration_secs ?? null, a, t.author.id)
+    }, [t, n.duration_secs]), c = r.useCallback((e, a) => {
+        (0, m.dP)(t.id, n.duration_secs ?? null, e, t.author.id, a)
+    }, [t, n.duration_secs]), l = r.useCallback(e => {
+        (0, m._O)(t.id, e?.message ?? null)
     }, [t]);
     return (0, h.P$)({
         ...e,
@@ -140,8 +140,8 @@ function A(e) {
         waveform: n.waveform,
         onPlay: i,
         onPause: c,
-        onError: _,
-        playbackCacheKey: r
+        onError: l,
+        playbackCacheKey: o
     })
 }
 
@@ -156,7 +156,7 @@ function w(e) {
     })
 }
 
-function T(e) {
+function P(e) {
     let t = e.item.originalItem;
     return (0, h.Dk)({
         ...e,
@@ -166,7 +166,7 @@ function T(e) {
     })
 }
 
-function P(e) {
+function T(e) {
     let {
         newEmbedUi: t
     } = s.Q.useConfig({
@@ -182,22 +182,22 @@ function M(e) {
     let {
         attachment: t,
         message: a
-    } = e, o = a.channel_id, r = (0, i.bG)([b.A], () => b.A.getBasicChannel(o)?.guild_id), {
+    } = e, r = a.channel_id, o = (0, i.bG)([b.A], () => b.A.getBasicChannel(r)?.guild_id), {
         clip_created_at: c,
-        clip_participants: _,
-        title: l,
+        clip_participants: l,
+        title: _,
         application: s
     } = t;
-    return (0, n.jsx)(p.A, {
+    return (0, n.jsx)(u.A, {
         createdAt: null != c ? Date.parse(c) : void 0,
-        participantIds: _?.map(e => {
+        participantIds: l?.map(e => {
             let {
                 id: t
             } = e;
             return t
         }) ?? [],
         applicationId: s?.id,
-        title: l,
-        guildId: r
+        title: _,
+        guildId: o
     })
 }

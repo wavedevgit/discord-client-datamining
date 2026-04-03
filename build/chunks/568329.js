@@ -33,12 +33,12 @@ let d = i.createContext({
             registerComponent: x,
             unregisterComponent: p,
             expansionSpring: g,
-            mountPoints: _
-        } = i.useContext(d), f = i.useRef(null), v = i.useRef(null), b = i.useRef(void 0);
+            mountPoints: f
+        } = i.useContext(d), _ = i.useRef(null), v = i.useRef(null), b = i.useRef(void 0);
         i.useEffect(() => {
             h()
         }, [h]), i.useLayoutEffect(() => {
-            let e = f.current;
+            let e = _.current;
             return null != e && x(e, c, u), () => {
                 null != e && p(c, u)
             }
@@ -49,8 +49,8 @@ let d = i.createContext({
             } = e;
             b.current !== t && (h(), b.current = t)
         }, [h]);
-        (0, r.i4)(f, j);
-        let A = _.get(c)?.current,
+        (0, r.i4)(_, j);
+        let A = f.get(c)?.current,
             C = null;
         return null == A ? C = null : m && null != g ? C = (0, a.jsxs)(a.Fragment, {
             children: ["collapsed" === u && (0, s.createPortal)((0, a.jsx)(l.animated.div, {
@@ -77,7 +77,7 @@ let d = i.createContext({
                 opacity: +(null == C && "collapsed" === u || null == A)
             },
             ref: t,
-            children: [n(f), C]
+            children: [n(_), C]
         })
     }),
     u = e => {

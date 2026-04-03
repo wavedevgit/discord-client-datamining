@@ -2,15 +2,15 @@
 n.d(t, {
     Fv: () => A,
     GY: () => E,
-    M$: () => g,
+    M$: () => I,
     Oc: () => u,
     kF: () => _
 });
 var i = n(949645),
     r = n(265422),
-    s = n(963169),
-    a = n(345942),
-    l = n(309010),
+    a = n(963169),
+    l = n(345942),
+    s = n(309010),
     o = n(967198),
     d = n(723702),
     c = n(652215);
@@ -32,18 +32,18 @@ let _ = {
             if (null != o.A.getGuildId()) e = c.ME;
             else {
                 let t = o.A.getLastSelectedGuildId();
-                null != t && (e = t, (0, r.i)(t, l.A.getChannelId(t)))
+                null != t && (e = t, (0, r.i)(t, s.A.getChannelId(t)))
             }
-            return null != e && (0, a.u)(e), !1
+            return null != e && (0, l.u)(e), !1
         }
     },
     E = {
         binds: (0, d.isMac)() || (0, d.isMacWeb)() ? ["mod+["] : ["alt+left"],
         comboKeysBindGlobal: !0,
-        action: () => ((0, s.OE)("keybind"), !1)
+        action: () => ((0, a.OE)("keybind"), !1)
     },
-    g = {
+    I = {
         binds: (0, d.isMac)() || (0, d.isMacWeb)() ? ["mod+]"] : ["alt+right"],
         comboKeysBindGlobal: !0,
-        action: () => ((0, s.Qb)("keybind"), !1)
+        action: () => ((0, a.Qb)("keybind"), !1)
     }

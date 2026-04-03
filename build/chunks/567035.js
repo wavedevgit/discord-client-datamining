@@ -4,9 +4,9 @@ n.d(t, {
 }), n(321073);
 var i = n(735438),
     r = n.n(i),
-    s = n(334738),
-    a = n(591552),
-    l = n(863005),
+    a = n(334738),
+    l = n(591552),
+    s = n(863005),
     o = n(808728),
     d = n(222823),
     c = n(954571),
@@ -18,7 +18,7 @@ function E(e, t, n) {
     let i = r().flatMap(e, e => {
         let t = o.Ay.getSelectableChannelIds(e),
             n = [...t, ...o.Ay.getVocalChannelIds(e)],
-            i = l.A.getActiveJoinedThreadsForGuild(e);
+            i = s.A.getActiveJoinedThreadsForGuild(e);
         for (let e of t) {
             let t = i[e] ?? {};
             for (let e in t) n.push(e)
@@ -37,10 +37,10 @@ function E(e, t, n) {
         }), i.push({
             channelId: _.default.cast(e),
             readStateType: A.P.GUILD_ONBOARDING_QUESTION,
-            messageId: a.A.ackIdForGuild(e)
+            messageId: l.A.ackIdForGuild(e)
         })
     }), c.default.track(u.HAw.MARK_AS_READ, {
         source: t,
         type: "guild"
-    }), (0, s.Uq)(i, n)
+    }), (0, a.Uq)(i, n)
 }

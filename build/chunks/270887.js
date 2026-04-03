@@ -4,9 +4,9 @@ n.d(t, {
 });
 var i = n(735438),
     r = n.n(i),
-    s = n(554146),
-    a = n(771781),
-    l = n(826673),
+    a = n(554146),
+    l = n(771781),
+    s = n(826673),
     o = n(181079),
     d = n(379587),
     c = n(832275),
@@ -14,8 +14,8 @@ var i = n(735438),
     u = n(309010),
     A = n(967198),
     E = n(711014),
-    g = n(287809),
-    I = n(619921),
+    I = n(287809),
+    g = n(619921),
     h = n(265422),
     C = n(652215);
 let p = r().throttle(function() {
@@ -26,8 +26,8 @@ let p = r().throttle(function() {
         } = d.o.getConfig({
             location: "navigateToServer"
         }),
-        i = (0, a.dD)(s.M.FAVORITES_SERVER_ONBOARDING_MENU_ITEM),
-        r = (0, l.k8)(s.M.FAVORITES_SERVER_ONBOARDING_INTRO),
+        i = (0, l.dD)(a.M.FAVORITES_SERVER_ONBOARDING_MENU_ITEM),
+        r = (0, s.k8)(a.M.FAVORITES_SERVER_ONBOARDING_INTRO),
         p = function(e) {
             let t = _.A.getState().guildId;
             if (null == t) return -2;
@@ -35,12 +35,12 @@ let p = r().throttle(function() {
             let n = e.indexOf(t);
             return -1 === n ? -2 : n
         }(t);
-    if (-1 !== (p += e) || (0, c.J)(o.A, g.default, A.A, {
+    if (-1 !== (p += e) || (0, c.J)(o.A, I.default, A.A, {
             favoritesGuildXPEnabled: n,
             isMenuItemDCSelected: i,
             isIntroDCDismissed: r
-        }) || (p += e), -3 === p && (p = t.length - 1), p >= t.length || -2 === p) return void(0, h.a)(I.A.getHomeLink());
-    let m = -1 === p ? C.YYv : t[p],
-        S = u.A.getChannelId(m);
-    (0, h.i)(m, S === m ? null : S, !1)
+        }) || (p += e), -3 === p && (p = t.length - 1), p >= t.length || -2 === p) return void(0, h.a)(g.A.getHomeLink());
+    let f = -1 === p ? C.YYv : t[p],
+        m = u.A.getChannelId(f);
+    (0, h.i)(f, m === f ? null : m, !1)
 }, C.ugG)

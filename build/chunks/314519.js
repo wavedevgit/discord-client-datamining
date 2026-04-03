@@ -1,15 +1,15 @@
 /** chunk id: 314519 params = (module,exports,require) **/
 n.d(t, {
-    s: () => a
+    s: () => l
 });
 var i = n(843472),
     r = n(222823),
-    s = n(309010);
-let a = {
+    a = n(309010);
+let l = {
     binds: ["shift+pageup"],
     comboKeysBindGlobal: !0,
     action() {
-        let e = s.A.getChannelId();
+        let e = a.A.getChannelId();
         if (null != e) {
             let t = r.Ay.ackMessageId(e);
             null != t && r.Ay.getOldestUnreadTimestamp(e) > 0 && i.A.jumpToMessage({

@@ -227,6 +227,8 @@ let X = e => {
             selected: N,
             route: J,
             icon: c.tvc,
+            showHoverGradient: !1,
+            nitroHoverGradient: !0,
             text: (0, i.jsx)(d.A, {
                 children: el ? Q.intl.string(Q.t["4gwVVn"]) : Q.intl.string(Q.t.Ipxkog)
             }),

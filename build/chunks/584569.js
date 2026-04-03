@@ -17,10 +17,10 @@ var n = i(311907),
     h = i(652215),
     g = i(806931);
 let f = new s.A,
-    S = new s.A,
-    T = new Set;
+    E = new s.A,
+    S = new Set;
 
-function E(t, e, i) {
+function T(t, e, i) {
     let n = new o.A({
             userId: t.id,
             channelId: i
@@ -43,13 +43,13 @@ function E(t, e, i) {
         localVideoDisabled: !1,
         isPoppedOut: !1
     };
-    S.set(t.id, r)
+    E.set(t.id, r)
 }
 
 function C(t) {
     let e = f.delete(t),
-        i = S.delete(t),
-        n = T.delete(t);
+        i = E.delete(t),
+        n = S.delete(t);
     return e || i || n
 }
 
@@ -58,17 +58,17 @@ function v() {
     if (null == t) return !1;
     let e = u.A.getChannel(t)?.getGuildId(),
         i = !1;
-    return T.forEach(n => {
-        if (null != m.A.getVoiceStateForChannel(t, n)) return void T.delete(n);
+    return S.forEach(n => {
+        if (null != m.A.getVoiceStateForChannel(t, n)) return void S.delete(n);
         let l = p.default.getUser(n);
-        null != l && (i = !0, T.delete(n), E(l, e, t))
+        null != l && (i = !0, S.delete(n), T(l, e, t))
     }), i
 }
 
-function y() {
-    f.clear(), S.clear(), T.clear()
+function _() {
+    f.clear(), E.clear(), S.clear()
 }
-class _ extends n.Ay.Store {
+class y extends n.Ay.Store {
     static displayName = "RTCConnectionDesyncStore";
     initialize() {
         this.waitFor(m.A, p.default, u.A, c.A), this.syncWith([p.default], v)
@@ -83,21 +83,21 @@ class _ extends n.Ay.Store {
         return f.values()
     }
     getDesyncedParticipants() {
-        return S.values()
+        return E.values()
     }
 }
-let I = new _(r.h, {
+let I = new y(r.h, {
     CONNECTION_OPEN: function() {
-        y()
+        _()
     },
-    VOICE_CHANNEL_SELECT: y,
+    VOICE_CHANNEL_SELECT: _,
     RTC_CONNECTION_STATE: function(t) {
         let {
             state: e,
             context: i
         } = t;
         if (i !== l.x.DEFAULT || e !== h.S7L.DISCONNECTED) return !1;
-        y()
+        _()
     },
     VOICE_STATE_UPDATES: function(t) {
         let {
@@ -121,7 +121,7 @@ let I = new _(r.h, {
         return r === l.x.DEFAULT && e.reduce((t, e) => {
             if (null != m.A.getVoiceStateForChannel(n, e)) return t;
             let l = p.default.getUser(e);
-            return null == l ? (T.add(e), t) : (E(l, i, n), !0)
+            return null == l ? (S.add(e), t) : (T(l, i, n), !0)
         }, !1)
     },
     RTC_CONNECTION_CLIENT_DISCONNECT: function(t) {

@@ -127,10 +127,10 @@ let o = {
                     showOverlay: l,
                     accessibleLabel: o,
                     deleteType: s,
-                    deleteAccessibleLabel: u
-                } = e, d = {
+                    deleteAccessibleLabel: d
+                } = e, u = {
                     type: s,
-                    accessibleLabel: u,
+                    accessibleLabel: d,
                     onClick: () => {}
                 };
                 return (0, a.jsxs)("div", {
@@ -144,14 +144,14 @@ let o = {
                         onClick: () => {},
                         accessibleLabel: o,
                         showOverlay: l,
-                        deleteButtonConfig: d,
+                        deleteButtonConfig: u,
                         children: (0, a.jsx)(r, {})
                     }), (0, a.jsx)(n.N, {
                         variant: t,
                         onClick: () => {},
                         accessibleLabel: o,
                         showOverlay: l,
-                        deleteButtonConfig: d,
+                        deleteButtonConfig: u,
                         children: (0, a.jsx)(i, {})
                     })]
                 })

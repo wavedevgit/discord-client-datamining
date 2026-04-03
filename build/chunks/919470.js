@@ -8,8 +8,8 @@ var a = l(627968),
     i = l(116833),
     o = l(397927),
     s = l(301679),
-    u = l(149757),
-    d = l(788868),
+    d = l(149757),
+    u = l(788868),
     c = l(985018);
 let p = {
         bronze: {
@@ -62,31 +62,31 @@ let p = {
             badgeId: h,
             showProgress: x,
             progressCircleText: b,
-            progressCirclePercent: f,
-            progressCircleUrgency: y,
+            progressCirclePercent: y,
+            progressCircleUrgency: f,
             delay: g,
             size: v,
-            gradientColor: E,
-            estimatedTooltipHeight: _
+            gradientColor: _,
+            estimatedTooltipHeight: E
         } = e, C = n.useRef(null), j = n.useRef(null), S = n.useMemo(() => ({
-            bronze: d.Ac.PREMIUM_TENURE_1_MONTH,
-            silver: d.Ac.PREMIUM_TENURE_3_MONTH,
-            gold: d.Ac.PREMIUM_TENURE_6_MONTH,
-            platinum: d.Ac.PREMIUM_TENURE_12_MONTH,
-            diamond: d.Ac.PREMIUM_TENURE_24_MONTH,
-            emerald: d.Ac.PREMIUM_TENURE_36_MONTH,
-            ruby: d.Ac.PREMIUM_TENURE_60_MONTH,
-            opal: d.Ac.PREMIUM_TENURE_72_MONTH
-        })[h], [h]), T = null != S ? (0, u.I)(S).standard : null, A = n.useMemo(() => {
+            bronze: u.Ac.PREMIUM_TENURE_1_MONTH,
+            silver: u.Ac.PREMIUM_TENURE_3_MONTH,
+            gold: u.Ac.PREMIUM_TENURE_6_MONTH,
+            platinum: u.Ac.PREMIUM_TENURE_12_MONTH,
+            diamond: u.Ac.PREMIUM_TENURE_24_MONTH,
+            emerald: u.Ac.PREMIUM_TENURE_36_MONTH,
+            ruby: u.Ac.PREMIUM_TENURE_60_MONTH,
+            opal: u.Ac.PREMIUM_TENURE_72_MONTH
+        })[h], [h]), T = null != S ? (0, d.I)(S).standard : null, A = n.useMemo(() => {
             if (null == S) return "";
-            let e = d.VD[S];
+            let e = u.VD[S];
             return (c.intl.string(c.t.lG6a5x) + " " + c.intl.string(e.nameUnformatted)).toLocaleUpperCase()
         }, [S]), P = n.useMemo(() => {
             if (!r || null == T) return;
             let e = x ? {
                 progressCircleText: b,
-                progressCirclePercent: f,
-                progressCircleUrgency: y
+                progressCirclePercent: y,
+                progressCircleUrgency: f
             } : {};
             return {
                 type: "dynamic",
@@ -98,7 +98,7 @@ let p = {
                     ...e
                 }
             }
-        }, [r, T, A, x, b, f, y]), k = {
+        }, [r, T, A, x, b, y, f]), k = {
             title: t,
             body: l,
             graphic: P,
@@ -110,8 +110,8 @@ let p = {
             }, [m]),
             delay: g,
             size: v,
-            gradientColor: n.useMemo(() => "string" == typeof E && E in p ? p[E] : E, [E]),
-            estimatedTooltipHeight: _
+            gradientColor: n.useMemo(() => "string" == typeof _ && _ in p ? p[_] : _, [_]),
+            estimatedTooltipHeight: E
         };
         return (0, a.jsxs)("div", {
             children: [(0, a.jsx)(o.Text, {

@@ -22,8 +22,8 @@ var i = n(627968),
     I = n(898616),
     j = n(44724),
     v = n(808247),
-    T = n(178213),
-    E = n(909536),
+    E = n(178213),
+    T = n(909536),
     b = n(673843),
     C = n(594832),
     S = n(287809),
@@ -288,8 +288,8 @@ function Y(e) {
         G = (0, A.X)({
             location: "user-profile-modal-v2-wishlist"
         }),
-        M = (0, T.GG)("user-profile-modal-v2-wishlist"),
-        F = (0, E.Gh)("user-profile-modal-v2-wishlist"),
+        M = (0, E.GG)("user-profile-modal-v2-wishlist"),
+        F = (0, T.Gh)("user-profile-modal-v2-wishlist"),
         H = m && (G && D.length > 0 || M),
         B = l.useCallback(() => {
             (0, c.closeAllModals)(), (0, x.Cz)({

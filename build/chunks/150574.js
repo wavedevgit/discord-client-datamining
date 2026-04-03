@@ -36,7 +36,9 @@ let y = (0, a.memo)(function(e) {
     } = (0, A.Ay)(), G = (0, h.Ay)(), k = (0, I.S5)(t.userStatus?.claimedAt, {
         month: "numeric",
         day: "numeric"
-    }), V = t.userStatus?.claimedTier ?? 0, B = t.config.rewards[V], H = B?.type === o.l.FRACTIONAL_PREMIUM, F = B?.type === o.l.COLLECTIBLE, Y = B?.type === o.l.VIRTUAL_CURRENCY, W = B?.collectibleProduct?.items?.[0], K = W?.type === s.R.AVATAR_DECORATION ? W : null;
+    }), V = t.userStatus?.claimedTier ?? 0, B = t.config.rewards[V], H = B?.type === o.l.FRACTIONAL_PREMIUM, F = B?.type === o.l.COLLECTIBLE, Y = B?.type === o.l.VIRTUAL_CURRENCY, W = B?.collectibleProduct?.items?.[0], K = W?.type === s.R.AVATAR_DECORATION ? W : null, q = a.useMemo(() => null == B ? null : !0 === Y && t.userStatus?.orbQuantityClaimed != null ? v.intl.format(v.t["nLXlh+"], {
+        orbAmount: t.userStatus.orbQuantityClaimed
+    }) : B.name, [B, Y, t]);
     (0, A.i4)(P, e => {
         let {
             height: t
@@ -47,25 +49,25 @@ let y = (0, a.memo)(function(e) {
             a = M.current.getBoundingClientRect();
         O((i.top - n.top - a.height) / 2)
     });
-    let q = (0, c.Mw)(G),
-        z = (0, a.useMemo)(() => null != t.config.cosponsorMetadata, [t]),
-        $ = (0, a.useMemo)(() => (0, f.tW)(t, f.fY.REWARD), [t]),
-        Q = n ? U + 8 : 0,
+    let z = (0, c.Mw)(G),
+        $ = a.useMemo(() => null != t.config.cosponsorMetadata, [t]),
+        Q = a.useMemo(() => (0, f.tW)(t, f.fY.REWARD), [t]),
+        X = n ? U + 8 : 0,
         {
-            content_position: X,
-            row_index: Z,
-            ...J
+            content_position: Z,
+            row_index: J,
+            ...ee
         } = (0, C.fF)(E.uF.TROPHY_CASE_CARD),
-        ee = () => {
+        et = () => {
             l(!0), g.default.track(x.HAw.QUEST_HOVER, {
                 quest_id: t.id,
-                ...J
+                ...ee
             })
         },
-        et = () => {
+        en = () => {
             l(!1)
         },
-        en = e => {
+        ei = e => {
             R(!0), g.default.track(x.HAw.QUEST_ASSET_LOADING_FAILURE, {
                 source: e,
                 asset_id: e,
@@ -76,10 +78,10 @@ let y = (0, a.memo)(function(e) {
         children: (0, i.jsxs)("div", {
             ref: P,
             tabIndex: 0,
-            onFocus: ee,
-            onBlur: et,
-            onMouseEnter: ee,
-            onMouseLeave: et,
+            onFocus: et,
+            onBlur: en,
+            onMouseEnter: et,
+            onMouseLeave: en,
             className: r()(b.kL, {
                 [b.yo]: n
             }),
@@ -101,33 +103,33 @@ let y = (0, a.memo)(function(e) {
                 className: b.Sl,
                 isAnimated: n,
                 questName: t.config.messages.questName
-            }) : $.isAnimated ? (0, i.jsx)(m.A, {
+            }) : Q.isAnimated ? (0, i.jsx)(m.A, {
                 className: b.JU,
                 autoPlay: !1,
                 children: (0, i.jsx)("source", {
-                    src: $.url,
-                    type: $.mimetype ?? void 0,
-                    onError: () => en($.url)
+                    src: Q.url,
+                    type: Q.mimetype ?? void 0,
+                    onError: () => ei(Q.url)
                 })
             }) : (0, i.jsx)("img", {
                 className: b.Sl,
-                src: $.url,
+                src: Q.url,
                 alt: t.config.messages.questName,
-                onError: () => en($.url)
+                onError: () => ei(Q.url)
             }), (0, i.jsx)("div", {
                 className: r()(b.Lw, {
-                    [b.en]: q,
-                    [b.So]: !q
+                    [b.en]: z,
+                    [b.So]: !z
                 })
             }), (0, i.jsx)("div", {
                 ref: D,
                 className: b.r$,
                 style: {
-                    transform: `translateY(-${Q}px)`
+                    transform: `translateY(-${X}px)`
                 },
                 children: (0, i.jsx)(S.Ay, {
                     logotypeClassName: r()(b.wm, {
-                        [b.A0]: z
+                        [b.A0]: $
                     }),
                     quest: t,
                     withGameTile: !1
@@ -144,12 +146,12 @@ let y = (0, a.memo)(function(e) {
                     })
                 }), (0, i.jsx)(u.Text, {
                     variant: "text-sm/medium",
-                    color: q ? "text-muted" : "always-white",
+                    color: z ? "text-muted" : "always-white",
                     style: {
-                        opacity: q ? 1 : .75
+                        opacity: z ? 1 : .75
                     },
                     children: v.intl.format(v.t["kXVcV+"], {
-                        reward: B.name,
+                        reward: q,
                         claimedDate: k
                     })
                 })]

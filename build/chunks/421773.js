@@ -1,25 +1,25 @@
 /** chunk id: 421773 params = (module,exports,require) **/
-n.d(t, {
-    A: () => s
+a.d(t, {
+    A: () => o
 });
-var i = n(64700),
-    l = n(451988);
+var n = a(64700),
+    r = a(451988);
 
-function s(e, t) {
-    let [n, s] = i.useState(!1), a = i.useRef(new l.J_(t, () => s(!1))), r = i.useRef(new l.J_(e, () => s(!0))), o = i.useCallback(() => {
-        a.current.cancel(), r.current.cancel()
+function o(e, t) {
+    let [a, o] = n.useState(!1), i = n.useRef(new r.J_(t, () => o(!1))), c = n.useRef(new r.J_(e, () => o(!0))), l = n.useCallback(() => {
+        i.current.cancel(), c.current.cancel()
     }, []);
-    i.useEffect(() => o, [o]);
-    let d = i.useCallback(() => {
-        o(), a.current.delay()
-    }, [o]);
+    n.useEffect(() => l, [l]);
+    let _ = n.useCallback(() => {
+        l(), i.current.delay()
+    }, [l]);
     return {
-        isHovered: n,
-        setIsHovered: s,
-        onMouseEnter: i.useCallback(() => {
-            o(), r.current.delay()
-        }, [o]),
-        onMouseLeave: d,
-        cancelTimers: o
+        isHovered: a,
+        setIsHovered: o,
+        onMouseEnter: n.useCallback(() => {
+            l(), c.current.delay()
+        }, [l]),
+        onMouseLeave: _,
+        cancelTimers: l
     }
 }

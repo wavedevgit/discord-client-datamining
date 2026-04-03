@@ -125,6 +125,7 @@ let e_ = e => {
                 b(!0)
             },
             R = () => (0, i.jsx)(C.z9, {
+                showHoverGradient: !1,
                 onClick: T,
                 interactiveClassName: I ? eh.hc : void 0,
                 selected: t,

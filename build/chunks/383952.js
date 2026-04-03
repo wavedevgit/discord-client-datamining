@@ -16,16 +16,16 @@ var a = n(627968),
     x = n(688810),
     p = n(993719),
     g = n(14059),
-    _ = n(362823),
-    f = n(980923),
+    f = n(362823),
+    _ = n(980923),
     v = n(206018),
     b = n(480890),
     j = n(74848),
     A = n(533488),
     C = n(499156),
     y = n(430452),
-    S = n(383501),
-    E = n(350535),
+    E = n(383501),
+    S = n(350535),
     T = n(42473),
     N = n(731854),
     I = n(985018),
@@ -58,9 +58,9 @@ function D(e) {
             location: "MicrophoneButton"
         }),
         q = (0, o.bG)([y.Ay], () => y.Ay.getMode() === N.TB.PUSH_TO_TALK),
-        Q = (0, o.bG)([y.Ay], () => y.Ay.getSettings().modeOptions.shortcut),
-        Y = (0, o.bG)([g.A], () => g.A.getIsTutorialActive(_.v.MUTE_TUTORIAL)),
-        J = (0, o.bG)([S.A], () => null != S.A.getChannelId()),
+        Y = (0, o.bG)([y.Ay], () => y.Ay.getSettings().modeOptions.shortcut),
+        Q = (0, o.bG)([g.A], () => g.A.getIsTutorialActive(f.v.MUTE_TUTORIAL)),
+        J = (0, o.bG)([E.A], () => null != E.A.getChannelId()),
         {
             name: X
         } = (0, j.x5)(N.oh.AUDIO_INPUT),
@@ -82,7 +82,7 @@ function D(e) {
         } = en,
         er = s || D ? r.O1p : ei;
     i.useEffect(() => () => el(), [et, el]);
-    let eo = (0, f.A)(n, s, D, M);
+    let eo = (0, _.A)(n, s, D, M);
     t = F ? {
         tooltipType: "green_void_do_not_use",
         tooltipText: I.intl.string(I.t["29gnR4"]),
@@ -90,7 +90,7 @@ function D(e) {
     } : H || V ? {
         tooltipType: "green_void_do_not_use",
         tooltipText: I.intl.format(I.t.c1qUOQ, {
-            keybind: E.dI(Q).toLocaleUpperCase()
+            keybind: S.dI(Y).toLocaleUpperCase()
         }),
         tooltipForceOpen: !0
     } : {
@@ -99,8 +99,8 @@ function D(e) {
     let ed = $ && q && J,
         ec = et ? d.A.colors.ICON_VOICE_MUTED : "currentColor",
         eu = i.useCallback(() => {
-            B(), Y && p.N(_.v.MUTE_TUTORIAL)
-        }, [B, Y]);
+            B(), Q && p.N(f.v.MUTE_TUTORIAL)
+        }, [B, Q]);
     return (0, a.jsxs)(x.f5, {
         value: ea,
         children: [(0, a.jsx)(m.YNO, {
@@ -203,13 +203,13 @@ function D(e) {
             }
         }), (0, a.jsx)(u.AM, {
             targetElementRef: ee,
-            shouldShow: Y,
+            shouldShow: Q,
             graphic: {
                 type: "image",
                 src: w.A
             },
             onRequestClose: () => {
-                p.N(_.v.MUTE_TUTORIAL)
+                p.N(f.v.MUTE_TUTORIAL)
             },
             position: "top",
             title: I.intl.string(O.default.VG4zAf),

@@ -1,6 +1,6 @@
 /** chunk id: 524134 params = (module,exports,require) **/
 n.d(t, {
-    A: () => S
+    A: () => E
 });
 var a = n(627968),
     i = n(64700),
@@ -16,8 +16,8 @@ var a = n(627968),
     x = n(139286),
     p = n(80556),
     g = n(557722),
-    _ = n(544028),
-    f = n(870570),
+    f = n(544028),
+    _ = n(870570),
     v = n(446868),
     b = n(683589),
     j = n(87404),
@@ -25,22 +25,22 @@ var a = n(627968),
     C = n(53516),
     y = n(985018);
 
-function S() {
+function E() {
     let {
         action: e,
         theme: t
-    } = (0, l.cf)([f.A, _.A], () => ({
-        action: f.A.getAction(),
-        theme: _.A.theme
-    })), S = v.A.getVerificationTypes(e), [E, T] = i.useState(0), N = (0, m.A)(S);
+    } = (0, l.cf)([_.A, f.A], () => ({
+        action: _.A.getAction(),
+        theme: f.A.theme
+    })), E = v.A.getVerificationTypes(e), [S, T] = i.useState(0), N = (0, m.A)(E);
     (0, x.A)({
         type: s.ImpressionTypes.MODAL,
         name: s.ImpressionNames.USER_ACTION_REQUIRED,
         properties: {
-            verification_type: S[0],
-            verification_types: S
+            verification_type: E[0],
+            verification_types: E
         }
-    }, {}, [S.toString()]);
+    }, {}, [E.toString()]);
     let I = () => {
         (0, u.Cw)(), (0, o.mMO)(async () => {
             let {
@@ -57,7 +57,7 @@ function S() {
     return i.useEffect(() => (h.A.disable(), () => {
         h.A.enable()
     }), []), i.useEffect(() => {
-        N?.[0] === A.Fz7.PHONE && S?.[0] === A.Fz7.EMAIL && (0, o.mMO)(async () => {
+        N?.[0] === A.Fz7.PHONE && E?.[0] === A.Fz7.EMAIL && (0, o.mMO)(async () => {
             let {
                 default: e
             } = await n.e("10919").then(n.bind(n, 556506));
@@ -72,9 +72,9 @@ function S() {
             Layer: p.Ay,
             onCloseCallback: I
         })
-    }, [S, N]), (0, a.jsx)(b.A, {
-        types: S,
-        captchaKey: E,
+    }, [E, N]), (0, a.jsx)(b.A, {
+        types: E,
+        captchaKey: S,
         onCaptchaVerify: e => {
             r.Bo.post({
                 url: A.Rsh.CAPTCHA,

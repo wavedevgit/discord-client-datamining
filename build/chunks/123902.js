@@ -34,36 +34,36 @@ function g(t) {
         gradientEnd: p = o.A.unsafe_rawColors.GREEN_360.css,
         className: g,
         notchClassName: f,
-        children: S
-    } = t, T = A[n], {
-        ref: E,
+        children: E
+    } = t, S = A[n], {
+        ref: T,
         width: C
-    } = (0, d.Ay)(), v = r.useMemo(() => null != C ? h(C) : 0, [C]), y = r.useMemo(() => {
+    } = (0, d.Ay)(), v = r.useMemo(() => null != C ? h(C) : 0, [C]), _ = r.useMemo(() => {
         let t = Math.abs(h(v * (100 - Math.max(0, Math.min(100, i))) / 100) - v);
         return {
             transform: `translateX(${t}px)`
         }
-    }, [i, v]), _ = r.useMemo(() => ({
+    }, [i, v]), y = r.useMemo(() => ({
         width: `${v}px`,
         background: i <= 0 ? "none" : `linear-gradient(to right, ${s}, ${p})`
     }), [p, s, i, v]);
     return (0, l.jsxs)("div", {
         className: c.iE,
-        ref: E,
+        ref: T,
         style: {
-            height: T
+            height: S
         },
         children: [(0, l.jsxs)("div", {
             className: a()(c.kL, g),
-            style: _,
+            style: y,
             children: [(0, l.jsx)("div", {
                 className: c.qB,
-                style: y
+                style: _
             }), 0 !== v && (0, l.jsx)(u.A, {
                 width: v,
-                height: T,
+                height: S,
                 className: a()(c.DR, m[e], f)
             })]
-        }), S]
+        }), E]
     })
 }

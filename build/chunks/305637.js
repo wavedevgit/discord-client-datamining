@@ -24,8 +24,8 @@ function f(t) {
         applicationStream: i,
         onAction: f
     } = t, {
-        activeStream: S,
-        watchingOtherStream: T
+        activeStream: E,
+        watchingOtherStream: S
     } = (0, l.cf)([p.A], () => ({
         activeStream: p.A.getActiveStreamForApplicationStream(i),
         watchingOtherStream: null != i && p.A.getAllActiveStreamsForChannel(i.channelId).filter(t => {
@@ -34,23 +34,23 @@ function f(t) {
             } = t;
             return e !== i.ownerId
         }).length > 0
-    })), E = (0, l.bG)([m.A], () => m.A.getChannel(i?.channelId)), [C, v] = (0, u.zP)(E), y = (0, c.aL)(), _ = null != S && null != i && S.state !== h.XYD.ENDED && S.ownerId === i.ownerId, I = t => {
-        null != i && (f?.(), o.default.selectVoiceChannel(i.channelId), _ || (0, d.Nl)(i, {
+    })), T = (0, l.bG)([m.A], () => m.A.getChannel(i?.channelId)), [C, v] = (0, u.zP)(T), _ = (0, c.aL)(), y = null != E && null != i && E.state !== h.XYD.ENDED && E.ownerId === i.ownerId, I = t => {
+        null != i && (f?.(), o.default.selectVoiceChannel(i.channelId), y || (0, d.Nl)(i, {
             forceMultiple: t
-        }), y.dispatch(h.jej.POPOUT_CLOSE), A._.dispatch(h.jej.MODAL_CLOSE), a.A.popAll())
+        }), _.dispatch(h.jej.POPOUT_CLOSE), A._.dispatch(h.jej.MODAL_CLOSE), a.A.popAll())
     };
     if (null == i) return null;
     let N = (0, u.CT)(v);
-    return e ? N = g.intl.string(g.t.XvBdeT) : _ && (N = g.intl.string(g.t["JH1SJ+"])), (0, n.jsxs)(n.Fragment, {
+    return e ? N = g.intl.string(g.t.XvBdeT) : y && (N = g.intl.string(g.t["JH1SJ+"])), (0, n.jsxs)(n.Fragment, {
         children: [(0, n.jsx)(s.Button, {
             size: "sm",
-            variant: _ ? "secondary" : "active",
+            variant: y ? "secondary" : "active",
             icon: s.Fzq,
             text: N,
-            disabled: e || _ || !C,
+            disabled: e || y || !C,
             onClick: () => I(!1),
             fullWidth: !0
-        }), T && !_ ? (0, n.jsx)(r.m, {
+        }), S && !y ? (0, n.jsx)(r.m, {
             text: g.intl.string(g.t.wCrzut),
             children: (0, n.jsx)(s.K0, {
                 variant: "secondary",

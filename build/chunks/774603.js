@@ -1,18 +1,18 @@
 /** chunk id: 774603 params = (module,exports,require) **/
 n.d(t, {
-    OX: () => a,
-    Yo: () => s
+    OX: () => l,
+    Yo: () => a
 });
 var i = n(203982),
     r = n(652215);
-let s = {
+let a = {
         binds: ["mod+return"],
         comboKeysBindGlobal: !0,
         action() {
             if (i._.hasSubscribers(r.jej.CALL_ACCEPT)) return i._.dispatch(r.jej.CALL_ACCEPT), !1
         }
     },
-    a = {
+    l = {
         binds: ["ctrl+'", "ctrl+shift+'"],
         comboKeysBindGlobal: !0,
         action(e) {

@@ -8,20 +8,20 @@ var a = l(627968),
     i = l.n(r),
     o = l(892227),
     s = l(311907),
-    u = l(964892),
-    d = l(916845),
+    d = l(964892),
+    u = l(916845),
     c = l(732955),
     p = l(303136),
     m = l(320118),
     h = l(976860),
     x = l(309954),
     b = l(287809),
-    f = l(975571),
-    y = l(474090),
+    y = l(975571),
+    f = l(474090),
     g = l(94264),
     v = l(235365),
-    E = l(566119),
-    _ = l(788868),
+    _ = l(566119),
+    E = l(788868),
     C = l(652215),
     j = l(901123),
     S = l(49370),
@@ -40,15 +40,15 @@ let R = () => (0, a.jsx)("div", {
 });
 
 function N() {
-    (0, E.RQ)(), (0, h.pX)(`${j.BV.NITRO_HOME}?section=${v.L}`)
+    (0, _.RQ)(), (0, h.pX)(`${j.BV.NITRO_HOME}?section=${v.L}`)
 }
 
 function M() {
-    (0, E.gP)(), (0, h.pX)(`${j.BV.NITRO_HOME}?section=${v.L}`)
+    (0, _.gP)(), (0, h.pX)(`${j.BV.NITRO_HOME}?section=${v.L}`)
 }
 
 function D() {
-    (0, E.b)(), window.open(f.A.getArticleURL(C.MVz.ORBS_FAQ), "_blank")
+    (0, _.b)(), window.open(y.A.getArticleURL(C.MVz.ORBS_FAQ), "_blank")
 }
 
 function O(e) {
@@ -57,19 +57,19 @@ function O(e) {
         shouldShow: l,
         onRequestClose: r,
         ctaText: h,
-        ctaOnClick: f
+        ctaOnClick: y
     } = e, {
         passesGeneralUIInvariant: v,
-        programReward: E
+        programReward: _
     } = (0, m.F)({
         location: "PremiumTenureRewardsOrbsBalancePopover"
     }), j = (0, s.bG)([b.default], () => b.default.getCurrentUser()), {
         balance: P
-    } = (0, x.W)(), k = !(0, y.ki)(j), O = n.useMemo(() => {
-        let e = (0, y.YE)(j, _.PremiumTypes.TIER_2);
+    } = (0, x.W)(), k = !(0, f.ki)(j), O = n.useMemo(() => {
+        let e = (0, f.YE)(j, E.PremiumTypes.TIER_2);
         if (!v || k) return null;
-        if (e && null != E) {
-            let e = (0, o.default)(new Date(E.next_reward_date), new Date);
+        if (e && null != _) {
+            let e = (0, o.default)(new Date(_.next_reward_date), new Date);
             return (0, a.jsxs)(a.Fragment, {
                 children: [(0, a.jsx)(c.EYj, {
                     variant: "text-xs/normal",
@@ -82,8 +82,8 @@ function O(e) {
             })
         }
         return null
-    }, [j, k, E, v]), L = (P ?? 0) >= 4100;
-    return (0, a.jsx)(u.x, {
+    }, [j, k, _, v]), L = (P ?? 0) >= 4100;
+    return (0, a.jsx)(d.x, {
         targetElementRef: t,
         shouldShow: l,
         onRequestClose: r,
@@ -100,7 +100,7 @@ function O(e) {
                     className: A.yG
                 }), (0, a.jsxs)("div", {
                     className: A.Qs,
-                    children: [(0, a.jsx)(d.q, {
+                    children: [(0, a.jsx)(u.q, {
                         onClick: r
                     }), (0, a.jsxs)("div", {
                         className: A.hQ,
@@ -122,7 +122,7 @@ function O(e) {
                             text: h,
                             variant: "primary",
                             size: "sm",
-                            onClick: f,
+                            onClick: y,
                             fullWidth: !0
                         }), (0, a.jsx)(c.EYj, {
                             variant: "text-xs/normal",

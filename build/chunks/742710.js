@@ -23,8 +23,8 @@ var r = n(397927),
     I = n(946599),
     j = n(858808),
     v = n(685049),
-    T = n(985018),
-    E = n(522500),
+    E = n(985018),
+    T = n(522500),
     b = n(629475);
 
 function C(e) {
@@ -47,7 +47,7 @@ function C(e) {
             widgetType: n,
             getWidth: s
         },
-        "aria-label": T.intl.formatToPlainString(T.t["0dR3gw"], {
+        "aria-label": E.intl.formatToPlainString(E.t["0dR3gw"], {
             positionNumber: t + 1
         }),
         onReorder: (e, t) => (0, p.Un)(n, e, t),
@@ -95,7 +95,7 @@ function N(e) {
     } = e;
     return (0, i.jsx)(r.AC4, {
         id: a,
-        children: T.intl.format(T.t.TM0XDY, {
+        children: E.intl.format(E.t.TM0XDY, {
             name: m.Ay.getName(n, l, t)
         })
     })
@@ -149,7 +149,7 @@ function k(e) {
         applicationId: u
     } = e, g = (0, o.GV)(), m = (0, o.GV)(), {
         trackUserProfileEditAction: f
-    } = (0, x.NJ)(), [h, _] = l.useState("idle"), [A, I] = l.useState(t ?? ""), j = l.useRef(null), v = l.useRef(null), E = T.intl.string(T.t.xKSfBT), C = null != t && "" !== t.trim(), S = l.useCallback(() => {
+    } = (0, x.NJ)(), [h, _] = l.useState("idle"), [A, I] = l.useState(t ?? ""), j = l.useRef(null), v = l.useRef(null), T = E.intl.string(E.t.xKSfBT), C = null != t && "" !== t.trim(), S = l.useCallback(() => {
         f({
             action: "PRESS_ADD_COMMENTARY",
             widgetEdited: d
@@ -174,11 +174,11 @@ function k(e) {
         children: [(0, i.jsx)(r.AC4, {
             tag: "label",
             htmlFor: g,
-            children: T.intl.string(T.t.JxKXeT)
+            children: E.intl.string(E.t.JxKXeT)
         }), (0, i.jsx)(r.fs1, {
             id: g,
             value: A,
-            placeholder: E,
+            placeholder: T,
             onChange: k,
             onBlur: R,
             rows: 3,
@@ -204,11 +204,11 @@ function k(e) {
             channelId: c,
             id: m
         }), (0, i.jsx)(y, {
-            text: t ?? E,
+            text: t ?? T,
             className: s()(b.qC, !C && b.qf)
         }), (0, i.jsx)(r.DUT, {
             innerRef: j,
-            "aria-label": T.intl.string(T.t.ppb9MJ),
+            "aria-label": E.intl.string(E.t.ppb9MJ),
             onClick: e => {
                 e.stopPropagation(), S()
             },
@@ -229,7 +229,7 @@ function w(e) {
         disableInteraction: u = !1,
         index: m,
         onRemoveGame: x,
-        coverRef: T,
+        coverRef: E,
         className: N
     } = e, y = l.useRef(null), {
         applicationId: w,
@@ -247,8 +247,8 @@ function w(e) {
     } = (0, h.r)();
     if (G) return (0, i.jsx)(A.E, {});
     let z = () => (0, i.jsx)(_.A, {
-            coverRef: T,
-            className: null == P || u ? void 0 : E.iL,
+            coverRef: E,
+            className: null == P || u ? void 0 : T.iL,
             imageSrc: P,
             gameName: D,
             applicationId: w,

@@ -10,5 +10,7 @@ e.exports = {
     yu: "metadata__4774c",
     DD: "title__4774c",
     On: "clickableGameName__4774c",
-    HD: "avatars__4774c"
+    HD: "avatars__4774c",
+    RB: "participantAvatar__4774c",
+    sZ: "participantOverflow__4774c"
 }

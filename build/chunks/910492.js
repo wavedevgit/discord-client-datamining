@@ -5,9 +5,9 @@ n.d(t, {
 });
 var i = n(735438),
     r = n.n(i),
-    s = n(265422),
-    a = n(851109),
-    l = n(734057),
+    a = n(265422),
+    l = n(851109),
+    s = n(734057),
     o = n(186111),
     d = n(309010),
     c = n(203982),
@@ -18,13 +18,13 @@ let u = {
         action: () => !(o.A.getLayers().length > 0) && ((() => {
             let {
                 notificationCenterVariant: e
-            } = (0, a.GE)({
+            } = (0, l.GE)({
                 location: "TOGGLE_INBOX"
             });
             if ("sidebar" !== e) return;
             let t = d.A.getChannelId(),
-                n = l.A.getChannel(t);
-            return window.location.pathname.startsWith(_.BVt.CHANNEL(_.gNP)) && null != n ? (0, s.i)(n.guild_id, t) : (0, s.a)(_.BVt.CHANNEL(_.gNP, t ?? void 0))
+                n = s.A.getChannel(t);
+            return window.location.pathname.startsWith(_.BVt.CHANNEL(_.gNP)) && null != n ? (0, a.i)(n.guild_id, t) : (0, a.a)(_.BVt.CHANNEL(_.gNP, t ?? void 0))
         })(), c._.dispatch(_.jej.TOGGLE_INBOX), !1)
     },
     A = {

@@ -68,9 +68,9 @@ function j(e) {
         disableInteraction: h = !1,
         index: j,
         onRemoveGame: v,
-        coverRef: T
+        coverRef: E
     } = e, {
-        coverImageUrl: E,
+        coverImageUrl: T,
         gameName: b,
         isLoading: C
     } = (0, o.A)(t.applicationId), {
@@ -81,14 +81,14 @@ function j(e) {
         isDragging: e.isDragging()
     })), O = () => (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(m.A, {
-            imageSrc: E,
+            imageSrc: T,
             gameName: b,
             applicationId: t.applicationId,
             userId: n,
             disableInteraction: h,
-            className: s()(N ? A.kO : void 0, null == E || h ? void 0 : _.iL),
+            className: s()(N ? A.kO : void 0, null == T || h ? void 0 : _.iL),
             hideTooltip: w,
-            coverRef: T
+            coverRef: E
         }), k && (0, i.jsx)(u.jV, {
             buttonRef: S(t.applicationId),
             className: A.BU
@@ -112,7 +112,7 @@ function j(e) {
         widgetType: l,
         index: j ?? 0,
         game: t,
-        coverImageUrl: E,
+        coverImageUrl: T,
         gameName: b,
         children: O()
     }) : (0, i.jsx)("div", {

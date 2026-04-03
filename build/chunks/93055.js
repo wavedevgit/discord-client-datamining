@@ -1,18 +1,18 @@
 /** chunk id: 93055 params = (module,exports,require) **/
-n.d(t, {
+n.d(e, {
     Af: () => h,
-    CJ: () => p,
+    CJ: () => E,
     DZ: () => b,
-    Rm: () => v,
+    Rm: () => _,
     TW: () => A,
-    e4: () => g,
-    m_: () => _
+    e4: () => p,
+    m_: () => v
 }), n(321073);
 var i = n(311907),
-    r = n(873298);
+    l = n(873298);
 n(734057);
-var l = n(967198),
-    a = n(287809),
+var a = n(967198),
+    r = n(287809),
     d = n(474090);
 n(661191);
 var o = n(181079),
@@ -21,63 +21,63 @@ var o = n(181079),
     c = n(5180),
     f = n(788868);
 
-function A(e) {
+function A(t) {
     let {
-        enabled: t,
+        enabled: e,
         hasHigherPrivileges: n
     } = (0, u.m)({
-        location: e
-    }), r = (0, i.bG)([a.default], () => a.default.getCurrentUser()), l = d.Ay.isPremiumExactly(r, f.PremiumTypes.TIER_2);
+        location: t
+    }), l = (0, i.bG)([r.default], () => r.default.getCurrentUser()), a = d.Ay.isPremiumExactly(l, f.PremiumTypes.TIER_2);
     return {
-        hasAccess: t && l,
-        isExperimentEnabled: t,
+        hasAccess: e && a,
+        isExperimentEnabled: e,
         hasHigherPrivileges: n
     }
 }
 
-function h(e) {
-    return (0, i.bG)([o.A], () => o.A.getFavorite(e))
+function h(t) {
+    return (0, i.bG)([o.A], () => o.A.getFavorite(t))
 }
 
-function _() {
-    let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : o.A.getFavoriteChannels(),
-        t = [{
+function v() {
+    let t = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : o.A.getFavoriteChannels(),
+        e = [{
             id: null,
             name: ""
         }];
-    for (let n in e) {
-        let i = e[n];
-        i.type === r.Ip.CATEGORY && t.push({
+    for (let n in t) {
+        let i = t[n];
+        i.type === l.Ip.CATEGORY && e.push({
             id: i.id,
             name: i.nickname ?? ""
         })
     }
-    return t.sort((t, n) => (e[t.id]?.order ?? 0) - (e[n.id]?.order ?? 0)), t
+    return e.sort((e, n) => (t[e.id]?.order ?? 0) - (t[n.id]?.order ?? 0)), e
 }
 
-function v() {
-    return (0, i.bG)([o.A], () => _(o.A.getFavoriteChannels()))
+function _() {
+    return (0, i.bG)([o.A], () => v(o.A.getFavoriteChannels()))
 }
 
 function b() {
-    let e = (0, i.bG)([l.A], () => l.A.getGuildId());
-    return (0, c.ai)(e)
+    let t = (0, i.bG)([a.A], () => a.A.getGuildId());
+    return (0, c.ai)(t)
 }
 
-function g(e, t) {
+function p(t, e) {
     let n = b(),
         {
-            hasAccess: r
-        } = A(t),
-        l = (0, i.bG)([o.A], () => null != e && (o.A.isFavorite(e.id) || e.isThread() && o.A.isFavorite(e.parent_id)), [e]);
-    return n && (!r || !l || e?.isCategory()) ? null : e ?? null
+            hasAccess: l
+        } = A(e),
+        a = (0, i.bG)([o.A], () => null != t && (o.A.isFavorite(t.id) || t.isThread() && o.A.isFavorite(t.parent_id)), [t]);
+    return n && (!l || !a || t?.isCategory()) ? null : t ?? null
 }
 
-function p() {
-    let e = (0, s.J)(e => e.favoriteAdded);
+function E() {
+    let t = (0, s.J)(t => t.favoriteAdded);
     return {
-        favoriteAdded: e,
-        notifyFavoriteAdded: (0, s.J)(e => e.notifyFavoriteAdded),
-        clearFavoriteAdded: (0, s.J)(e => e.clearFavoriteAdded)
+        favoriteAdded: t,
+        notifyFavoriteAdded: (0, s.J)(t => t.notifyFavoriteAdded),
+        clearFavoriteAdded: (0, s.J)(t => t.clearFavoriteAdded)
     }
 }

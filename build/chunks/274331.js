@@ -16,13 +16,13 @@ function l(e, t) {
     if (null == e) this.model = "rgb", this.color = [0, 0, 0], this.valpha = 1;
     else if (e instanceof l) this.model = e.model, this.color = e.color.slice(), this.valpha = e.valpha;
     else if ("string" == typeof e) {
-        var r, u, b = a.get(e);
-        if (null === b) throw Error("Unable to parse color from string: " + e);
-        this.model = b.model, u = n[this.model].channels, this.color = b.value.slice(0, u), this.valpha = "number" == typeof b.value[u] ? b.value[u] : 1
+        var r, u, f = a.get(e);
+        if (null === f) throw Error("Unable to parse color from string: " + e);
+        this.model = f.model, u = n[this.model].channels, this.color = f.value.slice(0, u), this.valpha = "number" == typeof f.value[u] ? f.value[u] : 1
     } else if (e.length) {
         this.model = t || "rgb", u = n[this.model].channels;
         var d = o.call(e, 0, u);
-        this.color = f(d, u), this.valpha = "number" == typeof e[u] ? e[u] : 1
+        this.color = b(d, u), this.valpha = "number" == typeof e[u] ? e[u] : 1
     } else if ("number" == typeof e) e &= 0xffffff, this.model = "rgb", this.color = [e >> 16 & 255, e >> 8 & 255, 255 & e], this.valpha = 1;
     else {
         this.valpha = 1;
@@ -31,15 +31,15 @@ function l(e, t) {
         var p = h.sort().join("");
         if (!(p in i)) throw Error("Unable to parse color from object: " + JSON.stringify(e));
         this.model = i[p];
-        var y = n[this.model].labels,
-            v = [];
-        for (r = 0; r < y.length; r++) v.push(e[y[r]]);
-        this.color = f(v)
+        var m = n[this.model].labels,
+            g = [];
+        for (r = 0; r < m.length; r++) g.push(e[m[r]]);
+        this.color = b(g)
     }
     if (c[this.model])
         for (r = 0, u = n[this.model].channels; r < u; r++) {
-            var g = c[this.model][r];
-            g && (this.color[r] = g(this.color[r]))
+            var y = c[this.model][r];
+            y && (this.color[r] = y(this.color[r]))
         }
     this.valpha = Math.max(0, Math.min(1, this.valpha)), Object.freeze && Object.freeze(this)
 }
@@ -54,13 +54,13 @@ function u(e, t, r) {
         }
 }
 
-function b(e) {
+function f(e) {
     return function(t) {
         return Math.max(0, Math.min(e, t))
     }
 }
 
-function f(e, t) {
+function b(e, t) {
     for (var r = 0; r < t; r++) "number" != typeof e[r] && (e[r] = 0);
     return e
 }
@@ -105,28 +105,28 @@ l.prototype = {
     alpha: function(e) {
         return arguments.length ? new l(this.color.concat(Math.max(0, Math.min(1, e))), this.model) : this.valpha
     },
-    red: u("rgb", 0, b(255)),
-    green: u("rgb", 1, b(255)),
-    blue: u("rgb", 2, b(255)),
+    red: u("rgb", 0, f(255)),
+    green: u("rgb", 1, f(255)),
+    blue: u("rgb", 2, f(255)),
     hue: u(["hsl", "hsv", "hsl", "hwb", "hcg"], 0, function(e) {
         return (e % 360 + 360) % 360
     }),
-    saturationl: u("hsl", 1, b(100)),
-    lightness: u("hsl", 2, b(100)),
-    saturationv: u("hsv", 1, b(100)),
-    value: u("hsv", 2, b(100)),
-    chroma: u("hcg", 1, b(100)),
-    gray: u("hcg", 2, b(100)),
-    white: u("hwb", 1, b(100)),
-    wblack: u("hwb", 2, b(100)),
-    cyan: u("cmyk", 0, b(100)),
-    magenta: u("cmyk", 1, b(100)),
-    yellow: u("cmyk", 2, b(100)),
-    black: u("cmyk", 3, b(100)),
-    x: u("xyz", 0, b(100)),
-    y: u("xyz", 1, b(100)),
-    z: u("xyz", 2, b(100)),
-    l: u("lab", 0, b(100)),
+    saturationl: u("hsl", 1, f(100)),
+    lightness: u("hsl", 2, f(100)),
+    saturationv: u("hsv", 1, f(100)),
+    value: u("hsv", 2, f(100)),
+    chroma: u("hcg", 1, f(100)),
+    gray: u("hcg", 2, f(100)),
+    white: u("hwb", 1, f(100)),
+    wblack: u("hwb", 2, f(100)),
+    cyan: u("cmyk", 0, f(100)),
+    magenta: u("cmyk", 1, f(100)),
+    yellow: u("cmyk", 2, f(100)),
+    black: u("cmyk", 3, f(100)),
+    x: u("xyz", 0, f(100)),
+    y: u("xyz", 1, f(100)),
+    z: u("xyz", 2, f(100)),
+    l: u("lab", 0, f(100)),
     a: u("lab", 1),
     b: u("lab", 2),
     keyword: function(e) {
@@ -226,7 +226,7 @@ l.prototype = {
             var r, a = "number" == typeof arguments[t] ? t : this.valpha;
             return new l((Array.isArray(r = n[this.model][e].raw(this.color)) ? r : [r]).concat(a), e)
         }, l[e] = function(r) {
-            return "number" == typeof r && (r = f(o.call(arguments), t)), new l(r, e)
+            return "number" == typeof r && (r = b(o.call(arguments), t)), new l(r, e)
         }
     }
 }), e.exports = l

@@ -22,8 +22,8 @@ var i = n(627968),
     I = n(385771),
     j = n(789069),
     v = n(429913),
-    T = n(409626),
-    E = n(692969),
+    E = n(409626),
+    T = n(692969),
     b = n(207963),
     C = n(953756),
     S = n(647901),
@@ -48,10 +48,10 @@ function W(e) {
         user: n,
         widget: a,
         cta: r
-    } = e, o = (0, g.bG)([O.default], () => O.default.getId()) === n.id, c = (0, v.h)(a.applicationId), u = c?.getIconURL(16), x = (0, g.bG)([L.A], () => null != c ? L.A.getGameByApplication(c) : null), _ = (0, E.A)({
+    } = e, o = (0, g.bG)([O.default], () => O.default.getId()) === n.id, c = (0, v.h)(a.applicationId), u = c?.getIconURL(16), x = (0, g.bG)([L.A], () => null != c ? L.A.getGameByApplication(c) : null), _ = (0, T.A)({
         location: "UserProfileApplicationWidget",
         applicationId: x?.id,
-        source: T.Ob.UserProfile,
+        source: E.Ob.UserProfile,
         sourceUserId: n.id,
         trackEntryPointImpression: !0
     }), {

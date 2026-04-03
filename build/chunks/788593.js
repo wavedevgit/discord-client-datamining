@@ -56,8 +56,8 @@ function h(e) {
         source: d.Ob.UserProfile,
         sourceUserId: h,
         trackEntryPointImpression: !0
-    }), T = n ?? x.intl.string(x.t.GIWFlF), E = x.intl.formatToPlainString(x.t["8QLQB+"], {
-        gameName: T
+    }), E = n ?? x.intl.string(x.t.GIWFlF), T = x.intl.formatToPlainString(x.t["8QLQB+"], {
+        gameName: E
     }), b = l.useCallback(e => {
         if (j) {
             e.preventDefault(), e.stopPropagation(), g.A.notifyUnsavedWidgets();
@@ -65,7 +65,7 @@ function h(e) {
         }
         v?.(e)
     }, [j, v]), C = e => A ? e : (0, i.jsx)(o.m, {
-        text: T,
+        text: E,
         ariaHidden: !0,
         children: e
     });
@@ -82,7 +82,7 @@ function h(e) {
     }) : (0, i.jsx)(c.DUT, {
         innerRef: I,
         onClick: b,
-        "aria-label": E,
+        "aria-label": T,
         className: s()(p.vk, _),
         children: (0, i.jsx)(f, {
             imageSrc: t,

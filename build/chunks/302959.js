@@ -1,6 +1,6 @@
 /** chunk id: 302959 params = (module,exports,require) **/
 i.d(e, {
-    A: () => y,
+    A: () => _,
     M: () => v
 });
 var n = i(627968),
@@ -18,9 +18,9 @@ var n = i(627968),
     h = i(71393),
     g = i(977997),
     f = i(954571),
-    S = i(821589),
-    T = i(652215),
-    E = i(78016);
+    E = i(821589),
+    S = i(652215),
+    T = i(78016);
 
 function C(t) {
     let {
@@ -34,7 +34,7 @@ function C(t) {
         onAction: u
     } = t;
     return (0, n.jsx)(o.A, {
-        className: (0, S.t)(E, "actions", e),
+        className: (0, E.t)(T, "actions", e),
         type: e,
         source: i,
         activity: l,
@@ -47,39 +47,39 @@ function C(t) {
     })
 }
 let v = a.A.Types,
-    y = function(t) {
+    _ = function(t) {
         let {
             activity: e,
             user: i,
             useStoreStream: o = !0,
-            showActions: S = !0,
-            hideHeader: E = !1,
+            showActions: E = !0,
+            hideHeader: T = !1,
             showChannelDetails: v = !1,
-            ...y
-        } = t, _ = (0, r.bG)([g.A, A.A], () => A.A.getChannel(g.A.getVoiceStateForUser(i.id)?.channelId)), I = (0, c.v)("UserActivityContainer", _), N = (0, r.bG)([m.A], () => o ? m.A.getAnyStreamForUser(i.id) : null), x = e?.type === T.$pd.HANG_STATUS && I ? _ : null, j = (0, r.bG)([h.A, g.A, A.A], () => (0, s.A)(e, T.jUm.EMBEDDED) ? h.A.getGuild(A.A.getChannel(g.A.getVoiceStateForSession(i.id, e?.session_id)?.channelId)?.getGuildId()) : null != x ? h.A.getGuild(x.getGuildId()) : null), P = (0, r.bG)([h.A], () => null != N ? h.A.getGuild(N.guildId) : null), L = (0, r.bG)([d.A], () => {
+            ..._
+        } = t, y = (0, r.bG)([g.A, A.A], () => A.A.getChannel(g.A.getVoiceStateForUser(i.id)?.channelId)), I = (0, c.v)("UserActivityContainer", y), N = (0, r.bG)([m.A], () => o ? m.A.getAnyStreamForUser(i.id) : null), x = e?.type === S.$pd.HANG_STATUS && I ? y : null, j = (0, r.bG)([h.A, g.A, A.A], () => (0, s.A)(e, S.jUm.EMBEDDED) ? h.A.getGuild(A.A.getChannel(g.A.getVoiceStateForSession(i.id, e?.session_id)?.channelId)?.getGuildId()) : null != x ? h.A.getGuild(x.getGuildId()) : null), L = (0, r.bG)([h.A], () => null != N ? h.A.getGuild(N.guildId) : null), P = (0, r.bG)([d.A], () => {
             if (null != e)
                 if (null != e.application_id) return d.A.getApplication(e.application_id);
                 else return d.A.getApplicationByName(e.name);
             return null
         });
         return (l.useEffect(() => {
-            e?.type === T.$pd.HANG_STATUS && I && f.default.track(T.HAw.VIEW_HANG_STATUS, {
+            e?.type === S.$pd.HANG_STATUS && I && f.default.track(S.HAw.VIEW_HANG_STATUS, {
                 source: "UserActivity",
                 other_user_id: i.id,
                 ...(0, u.A)(x?.id)
             })
-        }, [e?.type, I, x, i.id]), e?.type !== T.$pd.HANG_STATUS || I) ? (0, n.jsx)(a.A, {
-            ...y,
+        }, [e?.type, I, x, i.id]), e?.type !== S.$pd.HANG_STATUS || I) ? (0, n.jsx)(a.A, {
+            ..._,
             activity: e,
             user: i,
-            application: L,
-            hideHeader: E,
-            activityGuild: j ?? P,
+            application: P,
+            hideHeader: T,
+            activityGuild: j ?? L,
             showChannelDetails: v,
-            channel: v ? _ : void 0,
-            enableUserHoverActivities: y.enableUserHoverActivities,
-            renderActions: S ? () => (0, n.jsx)(C, {
-                ...y,
+            channel: v ? y : void 0,
+            enableUserHoverActivities: _.enableUserHoverActivities,
+            renderActions: E ? () => (0, n.jsx)(C, {
+                ..._,
                 applicationStream: N,
                 activity: e,
                 user: i

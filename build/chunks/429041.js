@@ -40,15 +40,15 @@ function h() {
             value: s.TO.BLOCK,
             label: x.intl.string(x.t["D/157Y"])
         }],
-        E = [{
+        b = [{
             value: s.TO.BLUR,
             label: x.intl.string(x.t.S49Uad)
         }],
-        b = {
+        E = {
             value: s.TO.SHOW,
             label: x.intl.string(x.t["5k5OFp"])
         };
-    e && (S.unshift(b), E.unshift(b));
+    e && (S.unshift(E), b.unshift(E));
     let C = {
         isDisabled: n,
         tooltipText: t ? x.intl.string(A.default["6Af/cw"]) : void 0
@@ -79,7 +79,7 @@ function h() {
             }),
             isDisabled: !e || n,
             tooltipText: t ? x.intl.string(A.default["6Af/cw"]) : void 0,
-            options: E
+            options: b
         })]
     })
 }

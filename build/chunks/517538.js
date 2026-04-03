@@ -16,8 +16,8 @@ var a = n(627968),
     x = n(74848),
     p = n(430452),
     g = n(731854),
-    _ = n(4791),
-    f = n(310086);
+    f = n(4791),
+    _ = n(310086);
 
 function v(e) {
     let {
@@ -97,7 +97,7 @@ function b(e) {
 function j() {
     let {
         name: e
-    } = (0, x.x5)(g.oh.AUDIO_INPUT), [t, n] = i.useState(!1), [s, l] = i.useState([]), v = (0, r.bG)([p.Ay], () => p.Ay.getKrispSuppressionLevel()), [j, A] = i.useState(null), C = i.useRef(null), y = i.useRef(null), [S, E] = i.useState(.5), {
+    } = (0, x.x5)(g.oh.AUDIO_INPUT), [t, n] = i.useState(!1), [s, l] = i.useState([]), v = (0, r.bG)([p.Ay], () => p.Ay.getKrispSuppressionLevel()), [j, A] = i.useState(null), C = i.useRef(null), y = i.useRef(null), [E, S] = i.useState(.5), {
         krispModels: T,
         krispModelOverride: N,
         inputMode: I,
@@ -136,7 +136,7 @@ function j() {
     function H(e) {
         if (t && W(), V(), null == F) return;
         let n = F.createBufferSource();
-        n.buffer = e.audioBuffer, y.current = F.createGain(), y.current.gain.value = S, n.connect(y.current), y.current.connect(F.destination), n.loop = !0, n.start(), C.current = n, A(e)
+        n.buffer = e.audioBuffer, y.current = F.createGain(), y.current.gain.value = E, n.connect(y.current), y.current.connect(F.destination), n.loop = !0, n.start(), C.current = n, A(e)
     }
     i.useEffect(() => {
         V()
@@ -160,9 +160,9 @@ function j() {
         label: "Disabled",
         value: "NONE"
     }), (0, a.jsx)(d.IpV, {
-        className: f.nd,
+        className: _.nd,
         children: (0, a.jsxs)("div", {
-            className: _.l,
+            className: f.l,
             children: [(0, a.jsx)(d.Text, {
                 variant: "text-lg/bold",
                 children: "Krisp Tester"
@@ -273,9 +273,9 @@ function j() {
                 })]
             }), (0, a.jsx)(d.Apm, {
                 label: "Volume",
-                initialValue: S,
+                initialValue: E,
                 asValueChanges: function(e) {
-                    null != y.current && (y.current.gain.value = e, E(e))
+                    null != y.current && (y.current.gain.value = e, S(e))
                 },
                 minValue: 0,
                 maxValue: 1

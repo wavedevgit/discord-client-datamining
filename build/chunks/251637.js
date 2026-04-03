@@ -8,8 +8,8 @@ var s = n(503698),
     i = n.n(s),
     a = n(827734),
     r = n(397927),
-    u = n(890687),
-    o = n(191065),
+    o = n(890687),
+    u = n(191065),
     c = n(333028);
 let d = function(e) {
     let {
@@ -17,12 +17,12 @@ let d = function(e) {
         color: n = a.A.colors.WHITE,
         quest: s,
         isInventory: d
-    } = e, m = (0, u.aC)(e.quest), {
-        percentComplete: A,
+    } = e, A = (0, o.aC)(e.quest), {
+        percentComplete: m,
         completedRatioDisplay: E
-    } = (0, u.O9)(s);
-    return !d && m.length > 0 ? (0, l.jsx)(o.A, {
-        children: m.at(0)
+    } = (0, o.O9)(s);
+    return !d && A.length > 0 ? (0, l.jsx)(u.A, {
+        children: A.at(0)
     }) : (0, l.jsxs)("div", {
         className: i()(c.iE, t),
         style: {
@@ -38,22 +38,22 @@ let d = function(e) {
             }), (0, l.jsx)("div", {
                 className: c.Cj,
                 style: {
-                    width: `${100-A}%`
+                    width: `${100-m}%`
                 }
             })]
         }), (0, l.jsx)("div", {
             className: c.hr,
             role: "progressbar",
-            "aria-valuenow": A,
+            "aria-valuenow": m,
             children: (0, l.jsx)("div", {
                 className: c.SX,
                 style: {
-                    width: `${A}%`
+                    width: `${m}%`
                 }
             })
-        }), m.length > 0 && (0, l.jsx)(o.A, {
+        }), A.length > 0 && (0, l.jsx)(u.A, {
             isInventory: d,
-            children: m.at(0)
+            children: A.at(0)
         })]
     })
 }

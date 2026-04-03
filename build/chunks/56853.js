@@ -16,16 +16,16 @@ var a = n(627968),
     x = n(496885),
     p = n(178540),
     g = n(859703),
-    _ = n(341915),
-    f = n(12251),
+    f = n(341915),
+    _ = n(12251),
     v = n(890687),
     b = n(590202),
     j = n(710969),
     A = n(792620),
     C = n(814793),
     y = n(988436),
-    S = n(918338),
-    E = n(270045),
+    E = n(918338),
+    S = n(270045),
     T = n(57718),
     N = n(398025),
     I = n(545986),
@@ -81,15 +81,15 @@ function U(e) {
     } : {
         type: 2,
         hints: []
-    }, [n, h, x, s]), _ = 2 !== p, f = (0, u.zhh)({
-        opacity: +!!_,
-        height: _ ? c : 0,
+    }, [n, h, x, s]), f = 2 !== p, _ = (0, u.zhh)({
+        opacity: +!!f,
+        height: f ? c : 0,
         config: w.N
     }), b = 0 === p ? u.EpV : u.mir, j = u.LU0.unsafe_rawColors.RED_345.css, A = 0 === p ? j : l ? u.LU0.colors.TEXT_DEFAULT : u.LU0.colors.WHITE;
     return (0, a.jsx)(r.animated.div, {
         style: {
-            height: f.height,
-            opacity: (0, N.a)(f.opacity)
+            height: _.height,
+            opacity: (0, N.a)(_.opacity)
         },
         children: (0, a.jsxs)("div", {
             ref: d,
@@ -133,19 +133,19 @@ function B(e) {
         month: "numeric",
         day: "numeric"
     }), $ = t.userStatus?.enrolledAt != null, q = t.userStatus?.completedAt != null, {
-        onAssetLoadComplete: Q
-    } = i.useContext(O.M), Y = W ? "text-muted" : "always-white", J = i.useCallback(() => {
+        onAssetLoadComplete: Y
+    } = i.useContext(O.M), Q = W ? "text-muted" : "always-white", J = i.useCallback(() => {
         F && (0, I.d5)({
             quest: t,
-            questContent: _.uF.QUEST_HOME_DESKTOP,
+            questContent: f.uF.QUEST_HOME_DESKTOP,
             sourceQuestContent: w,
             sourceQuestContentCTA: b.Cy.QUEST_HOME_TILE_HEADER_WATCH_VIDEO
         })
-    }, [F, t, w]), X = (0, o.bG)([g.A], () => g.A.getQuestHomeHeroConfig()), Z = i.useMemo(() => null != X && (0, C.I0)(X, t.id), [X, t.id]), ee = f.s5.useConfig({
+    }, [F, t, w]), X = (0, o.bG)([g.A], () => g.A.getQuestHomeHeroConfig()), Z = i.useMemo(() => null != X && (0, C.I0)(X, t.id), [X, t.id]), ee = _.s5.useConfig({
         location: k.rE.QUESTS_CARD
-    }), et = ee.enabled && ee.variant === f.tL.INFO_ICON, en = (0, v.do)({
+    }), et = ee.enabled && ee.variant === _.tL.INFO_ICON, en = (0, v.do)({
         quest: t,
-        content: _.uF.QUEST_HOME_DESKTOP,
+        content: f.uF.QUEST_HOME_DESKTOP,
         ctaContent: b.Cy.LEARN_MORE_CTA_AND_EXPRESSIVE_BUTTON_TREATMENT_FOUR_OPEN_GAME_LINK,
         sourceQuestContent: w
     });
@@ -153,7 +153,7 @@ function B(e) {
         className: P.kL,
         children: [(0, a.jsx)("div", {
             className: P.IC,
-            children: (0, a.jsx)(S.A, {
+            children: (0, a.jsx)(E.A, {
                 quest: t,
                 isInteracting: n,
                 hideAssets: !r,
@@ -204,11 +204,11 @@ function B(e) {
                                 className: P.A9
                             })
                         })
-                    }), (0, a.jsx)(E.C, {
+                    }), (0, a.jsx)(S.C, {
                         onOpen: y,
                         onClose: m,
                         onSelect: N,
-                        questContent: _.uF.QUEST_HOME_DESKTOP,
+                        questContent: f.uF.QUEST_HOME_DESKTOP,
                         quest: t,
                         hideLearnMore: !0,
                         shouldShowDisclosure: !0,
@@ -236,7 +236,7 @@ function B(e) {
                         quest: t,
                         separatorSpacing: T.C8.MEDIUM,
                         withGameTile: !1,
-                        onLoadComplete: Q
+                        onLoadComplete: Y
                     })
                 }), (0, a.jsxs)("div", {
                     className: P.E_,
@@ -244,7 +244,7 @@ function B(e) {
                         className: P.O,
                         children: [(0, a.jsx)(u.Text, {
                             variant: "text-sm/medium",
-                            color: Y,
+                            color: Q,
                             children: M.intl.string(M.t.VAbKhK)
                         }), (0, a.jsx)(x.A, {
                             className: P.w$,
@@ -264,7 +264,7 @@ function B(e) {
                         })]
                     }), H || K ? null : (0, a.jsx)(u.Text, {
                         variant: "text-sm/medium",
-                        color: Y,
+                        color: Q,
                         children: M.intl.format(M.t["7D8r4F"], {
                             expiryDate: z
                         })

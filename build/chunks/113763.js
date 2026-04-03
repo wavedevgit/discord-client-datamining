@@ -30,10 +30,10 @@ function f(e) {
     } = (0, o.NJ)(), {
         mutualFriends: j,
         mutualFriendsCount: v
-    } = (0, c.A)(t), T = (0, a.A)();
+    } = (0, c.A)(t), E = (0, a.A)();
     return l.useEffect(() => {
-        (0, d.A)(t.id, T)
-    }, [t.id, T]), (0, i.jsx)(x.K, {
+        (0, d.A)(t.id, E)
+    }, [t.id, E]), (0, i.jsx)(x.K, {
         className: p.XG,
         children: null == j ? Array.from({
             length: v ?? 10

@@ -1,33 +1,33 @@
 /** chunk id: 982406 params = (module,exports,require) **/
 a.d(t, {
-    A: () => p
+    A: () => u
 });
 var n = a(627968),
-    o = a(64700),
-    r = a(503698),
-    i = a.n(r),
+    r = a(64700),
+    o = a(503698),
+    i = a.n(o),
     c = a(776231),
-    _ = a(664111),
-    l = a(67281),
+    l = a(664111),
+    _ = a(67281),
     s = a(838541),
     d = a(878159);
 
-function p(e) {
+function u(e) {
     let {
         attachment: t,
         posterUrl: a,
-        guildId: r,
-        className: p
-    } = e, m = t.width ?? 0, u = t.height ?? 0, b = m >= u ? "landscape" : "portrait", f = (0, c.AE)({
+        guildId: o,
+        className: u
+    } = e, p = t.width ?? 0, m = t.height ?? 0, b = p >= m ? "landscape" : "portrait", f = (0, c.AE)({
         src: a,
-        width: m,
-        height: u
-    }), C = o.useCallback(e => {
+        width: p,
+        height: m
+    }), C = r.useCallback(e => {
         let {
             playerState: a,
-            isControlBarExpanded: o
+            isControlBarExpanded: r
         } = e;
-        return (0, n.jsx)(l.A, {
+        return (0, n.jsx)(_.A, {
             createdAt: null != t.clip_created_at ? Date.parse(t.clip_created_at) : void 0,
             participantIds: t.clip_participants?.map(e => {
                 let {
@@ -37,18 +37,18 @@ function p(e) {
             }) ?? [],
             applicationId: t.application?.id,
             title: t.title,
-            guildId: r,
+            guildId: o,
             playerState: a,
-            isControlBarExpanded: o
+            isControlBarExpanded: r
         })
-    }, [t, r]);
+    }, [t, o]);
     return (0, n.jsx)("div", {
-        className: i()(d.k, p),
+        className: i()(d.k, u),
         style: {
-            aspectRatio: `${m} / ${u}`,
+            aspectRatio: `${p} / ${m}`,
             maxHeight: s.Rk
         },
-        children: (0, n.jsx)(_.A, {
+        children: (0, n.jsx)(l.A, {
             src: t.url,
             downloadUrl: t.url,
             downloadContentType: t.content_type,

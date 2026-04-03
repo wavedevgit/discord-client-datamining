@@ -16,16 +16,16 @@ var a = n(627968),
     x = n(714510),
     p = n(890687),
     g = n(710969),
-    _ = n(92246),
-    f = n(895253),
+    f = n(92246),
+    _ = n(895253),
     v = n(453384),
     b = n(442734),
     j = n(646764),
     A = n(398025),
     C = n(516226),
     y = n(720875),
-    S = n(713457),
-    E = n(419367),
+    E = n(713457),
+    S = n(419367),
     T = n(985018),
     N = n(582251);
 let I = async () => await n.e("40119").then(n.t.bind(n, 718698, 19));
@@ -40,7 +40,7 @@ function O(e) {
         isVisibleInViewport: w,
         onReceiveErrorHints: D,
         sourceQuestContent: M
-    } = e, P = i.useRef(null), L = (0, p.Oq)(), U = (0, p.SD)(t), B = L && U, G = (0, _.mq)(t.config), F = (0, _.mH)(t.config), V = t.userStatus?.enrolledAt != null, {
+    } = e, P = i.useRef(null), L = (0, p.Oq)(), U = (0, p.SD)(t), B = L && U, G = (0, f.mq)(t.config), F = (0, f.mH)(t.config), V = t.userStatus?.enrolledAt != null, {
         ref: W,
         scrollHeight: H
     } = (0, c.wR)(), K = 104 !== H, {
@@ -50,13 +50,13 @@ function O(e) {
     } = (0, d.zhh)({
         expansionSpring: +!!s,
         config: {
-            ...E.N,
+            ...S.N,
             clamp: !0
         }
-    }), q = t.userStatus?.completedAt != null, Q = t.userStatus?.claimedAt != null, Y = (0, _.ks)(t.config), J = (0, _._Z)(t.config), {
+    }), q = t.userStatus?.completedAt != null, Y = t.userStatus?.claimedAt != null, Q = (0, f.ks)(t.config), J = (0, f._Z)(t.config), {
         completedRatio: X,
         completedRatioDisplay: Z
-    } = (0, p.O9)(t), ee = (0, x.gj)(t, M, m.Ob.QuestHome, P), et = i.useMemo(() => Q && Y ? T.intl.format(T.t["8Op4c4"], {
+    } = (0, p.O9)(t), ee = (0, x.gj)(t, M, m.Ob.QuestHome, P), et = i.useMemo(() => Y && Q ? T.intl.format(T.t["8Op4c4"], {
         balanceHook: () => (0, a.jsxs)(R, {
             questId: t.id,
             children: [(0, a.jsx)(h.A, {
@@ -65,10 +65,10 @@ function O(e) {
                 customSize: 14
             }), J]
         }, t.id)
-    }) : Q ? (0, a.jsx)(R, {
+    }) : Y ? (0, a.jsx)(R, {
         questId: t.id,
         children: G
-    }) : Y ? T.intl.format(T.t.ro1sze, {
+    }) : Q ? T.intl.format(T.t.ro1sze, {
         balanceHook: () => (0, a.jsxs)(R, {
             questId: t.id,
             children: [(0, a.jsx)(h.A, {
@@ -82,7 +82,7 @@ function O(e) {
             questId: t.id,
             children: F
         }, t.id)
-    }), [G, Q, F, t.id, J, Y]), en = i.useMemo(() => {
+    }), [G, Y, F, t.id, J, Q]), en = i.useMemo(() => {
         if (null != ee) return (0, a.jsx)(d.Text, {
             variant: "text-sm/medium",
             color: "text-muted",
@@ -93,7 +93,7 @@ function O(e) {
     return (0, a.jsxs)("div", {
         className: N.kL,
         ref: P,
-        children: [(0, a.jsx)(f.A, {
+        children: [(0, a.jsx)(_.A, {
             visible: B,
             glow: !0
         }), (0, a.jsxs)(r.animated.div, {
@@ -107,7 +107,7 @@ function O(e) {
                 height: 80,
                 children: (0, a.jsxs)("div", {
                     className: N.c6,
-                    children: [!Q && q && (0, a.jsx)("div", {
+                    children: [!Y && q && (0, a.jsx)("div", {
                         className: N.Nz
                     }), V ? (0, a.jsxs)("div", {
                         className: N.Tr,
@@ -176,7 +176,7 @@ function O(e) {
                 },
                 className: N.hS
             })]
-        }), (0, a.jsx)(S.A, {
+        }), (0, a.jsx)(E.A, {
             quest: t,
             questContent: n,
             contentPosition: O,

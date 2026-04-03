@@ -21,8 +21,8 @@ var i = n(627968),
     T = n(84540),
     f = n(836602),
     S = n(954571),
-    E = n(515718),
-    b = n(927578),
+    b = n(515718),
+    E = n(927578),
     C = n(919395),
     N = n(884546),
     v = n(597551),
@@ -43,7 +43,7 @@ function U(e) {
         user: t,
         isVisible: n,
         shouldShow: U
-    } = e, w = b.Ay.isPremium(t), V = b.Ay.canUseAnimatedAvatar(t), {
+    } = e, w = E.Ay.isPremium(t), V = E.Ay.canUseAnimatedAvatar(t), {
         pendingAvatar: B,
         pendingThemeColors: F,
         tryItOutThemeColors: H,
@@ -68,7 +68,7 @@ function U(e) {
         newestAnalyticsLocation: q,
         sourceAnalyticsLocations: Q
     } = (0, o.Ay)(r.A.USER_SETTINGS_TRY_OUT_PREMIUM), J = e => {
-        e && (Y?.startsWith("https:") === !0 ? fetch(Y).then(e => e.blob()).then(e => (0, E.We)(e)).then(e => {
+        e && (Y?.startsWith("https:") === !0 ? fetch(Y).then(e => e.blob()).then(e => (0, b.We)(e)).then(e => {
             (0, T.p)({
                 avatar: z,
                 themeColors: H,

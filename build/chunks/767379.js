@@ -16,17 +16,17 @@ var a = n(627968),
     x = n(975571),
     p = n(935649),
     g = n(847599),
-    _ = n(295972),
-    f = n(36149),
+    f = n(295972),
+    _ = n(36149),
     v = n(807734),
     b = n(652215),
     j = n(239093),
     A = n(536242),
     C = n(985018),
     y = n(774992),
-    S = n(700129);
+    E = n(700129);
 
-function E(e) {
+function S(e) {
     let {
         modalSessionId: t,
         entryPoint: n
@@ -87,13 +87,13 @@ let T = function(e) {
         dismissable: T,
         graphic: {
             type: "image",
-            src: S.A
+            src: E.A
         },
-        title: (0, f.ST)(n),
-        subtitle: (0, f.mK)(n, () => {
+        title: (0, _.ST)(n),
+        subtitle: (0, _.mK)(n, () => {
             p.A.openUrl(x.A.getArticleURL(b.MVz.TIGGER_PAWTECT_LEARN_MORE)), (0, g.St)(D, g.WU.EXPRESSIVE_PRIMARY, g._7.LEARN_MORE)
         }, P),
-        actionBarInput: (0, a.jsx)(E, {
+        actionBarInput: (0, a.jsx)(S, {
             modalSessionId: D,
             entryPoint: n
         }),
@@ -133,7 +133,7 @@ let T = function(e) {
                     size: "sm",
                     text: C.intl.string(A.default.hDvmYP),
                     onClick: () => {
-                        (0, _.DJ)()
+                        (0, f.DJ)()
                     }
                 })]
             }) : (0, a.jsx)(o.BJc, {

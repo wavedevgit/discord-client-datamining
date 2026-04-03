@@ -4,18 +4,18 @@ n.d(t, {
 });
 var i = n(627968),
     r = n(397927),
-    s = n(573435),
-    a = n(260509),
-    l = n(229095);
+    a = n(573435),
+    l = n(260509),
+    s = n(229095);
 
 function o(e) {
     let {
         guild: t,
         size: n
-    } = e, o = (0, a.Iv)(t, n, !1, !0), d = (0, a.Rb)(t);
-    return (0, i.jsx)(s.Ay, {
-        className: l.z,
-        mask: s.Ay.Masks.SQUIRCLE,
+    } = e, o = (0, l.Iv)(t, n, !1, !0), d = (0, l.Rb)(t);
+    return (0, i.jsx)(a.Ay, {
+        className: s.z,
+        mask: a.Ay.Masks.SQUIRCLE,
         width: n,
         height: n,
         children: null != o ? (0, i.jsx)("img", {
@@ -24,7 +24,7 @@ function o(e) {
             height: n,
             width: n
         }) : (0, i.jsx)("div", {
-            className: l.F,
+            className: s.F,
             children: (0, i.jsx)(r.Text, {
                 color: "text-subtle",
                 variant: 48 === n ? "text-md/semibold" : "text-xxs/semibold",

@@ -8,14 +8,14 @@ var a = l(627968),
     i = l(73825),
     o = l(473702),
     s = l(252561),
-    u = l(654044),
-    d = l(931088),
+    d = l(654044),
+    u = l(931088),
     c = l(652215),
     p = l(601107),
     m = l(788868),
     h = l(818348);
 let x = () => {
-        let [e, t] = n.useState(m.PremiumTypes.TIER_0), [l, x] = n.useState(o.g.WHAT_YOU_LOSE), [f, y] = n.useState(null), [g, v] = n.useState(m.gD.PREMIUM_MONTH_TIER_0), [E, _] = n.useState([]), [C, j] = n.useState(() => {
+        let [e, t] = n.useState(m.PremiumTypes.TIER_0), [l, x] = n.useState(o.g.WHAT_YOU_LOSE), [y, f] = n.useState(null), [g, v] = n.useState(m.gD.PREMIUM_MONTH_TIER_0), [_, E] = n.useState([]), [C, j] = n.useState(() => {
             let e = new Date;
             return e.setMonth(e.getMonth() + 1), e
         }), [S, T] = n.useState(null), [A, P] = n.useState(!1), [k, I] = n.useState(!1), [R, N] = n.useState(!1);
@@ -38,7 +38,7 @@ let x = () => {
         }, [g]), (0, n.useEffect)(() => {
             switch (e) {
                 case m.PremiumTypes.TIER_0:
-                    _([{
+                    E([{
                         label: "Nitro Basic Monthly",
                         value: m.gD.PREMIUM_MONTH_TIER_0
                     }, {
@@ -47,7 +47,7 @@ let x = () => {
                     }]), v(m.gD.PREMIUM_MONTH_TIER_0);
                     break;
                 case m.PremiumTypes.TIER_1:
-                    _([{
+                    E([{
                         label: "Nitro Classic Monthly",
                         value: m.gD.PREMIUM_MONTH_TIER_1
                     }, {
@@ -56,7 +56,7 @@ let x = () => {
                     }]), v(m.gD.PREMIUM_MONTH_TIER_1);
                     break;
                 case m.PremiumTypes.TIER_2:
-                    _([{
+                    E([{
                         label: "Nitro Monthly",
                         value: m.gD.PREMIUM_MONTH_TIER_2
                     }, {
@@ -65,7 +65,7 @@ let x = () => {
                     }]), v(m.gD.PREMIUM_MONTH_TIER_2)
             }
         }, [e]), (0, n.useEffect)(() => {
-            [o.g.CONFIRM_DISCOUNT, o.g.DISCOUNT_APPLIED].includes(l) && null === f && y(b()), l === o.g.PREVIEW && null === S && T(new u.A({
+            [o.g.CONFIRM_DISCOUNT, o.g.DISCOUNT_APPLIED].includes(l) && null === y && f(b()), l === o.g.PREVIEW && null === S && T(new d.A({
                 id: "",
                 invoiceItems: [{
                     id: "",
@@ -90,15 +90,15 @@ let x = () => {
                 subscriptionPeriodEnd: C,
                 status: c.lT7.PAID
             })), l !== o.g.PREVIEW && null !== S && T(null)
-        }, [l, f, C, g, S]);
+        }, [l, y, C, g, S]);
         let M = n.useCallback(async () => {
-            N(!0), await (0, r.mMO)(async () => t => (0, a.jsx)(d.m, {
+            N(!0), await (0, r.mMO)(async () => t => (0, a.jsx)(u.m, {
                 ...t,
                 onClose: () => {
                     t.onClose(), N(!1)
                 },
                 premiumType: e,
-                churnDiscount: f,
+                churnDiscount: y,
                 planId: g,
                 renewalInvoice: S,
                 renewalInvoiceDetails: {
@@ -134,7 +134,7 @@ let x = () => {
                     pauseReason: p.qf.UNKNOWN
                 }
             }))
-        }, [e, f, g, S, A, k, l, C]);
+        }, [e, y, g, S, A, k, l, C]);
         return (0, n.useEffect)(() => {
             R && M()
         }, [l, R, M]), (0, a.jsxs)(s.LB, {
@@ -160,7 +160,7 @@ let x = () => {
                     selectionMode: "single",
                     fullWidth: !0
                 })
-            }), E.length > 0 && (0, a.jsx)(s.MG, {
+            }), _.length > 0 && (0, a.jsx)(s.MG, {
                 children: (0, a.jsx)(r.l6P, {
                     label: "Subscription Interval",
                     placeholder: "Premium Type",
@@ -177,7 +177,7 @@ let x = () => {
                         }
                     },
                     value: g,
-                    options: E,
+                    options: _,
                     selectionMode: "single",
                     fullWidth: !0
                 })
@@ -213,9 +213,9 @@ let x = () => {
                 })
             }), (0, a.jsx)(s.MG, {
                 children: (0, a.jsx)(r.Checkbox, {
-                    checked: null !== f,
+                    checked: null !== y,
                     onChange: () => {
-                        null === f ? y(b()) : y(null)
+                        null === y ? f(b()) : f(null)
                     },
                     label: "Churn Discount"
                 })

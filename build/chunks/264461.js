@@ -1,6 +1,6 @@
 /** chunk id: 264461 params = (module,exports,require) **/
 n.d(t, {
-    A: () => _
+    A: () => f
 });
 var a = n(627968),
     i = n(64700),
@@ -83,7 +83,7 @@ let g = e => {
             })]
         })
     },
-    _ = () => {
+    f = () => {
         let [e, t] = i.useState(0);
         return (0, a.jsxs)(r.IpV, {
             className: p.iE,

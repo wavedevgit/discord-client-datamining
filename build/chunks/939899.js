@@ -1,6 +1,6 @@
 /** chunk id: 939899 params = (module,exports,require) **/
 n.d(t, {
-    A: () => E,
+    A: () => T,
     R: () => b
 });
 var i = n(627968),
@@ -67,7 +67,7 @@ function v(e) {
     })
 }
 
-function T(e) {
+function E(e) {
     let {
         applicationId: t,
         size: n = "default",
@@ -88,14 +88,14 @@ function T(e) {
     })
 }
 
-function E(e) {
+function T(e) {
     let t = (0, d.bG)([h.default], () => h.default.getCurrentUser()),
         {
             enabled: n
         } = x.A.useConfig({
             location: "PlaceholderApplicationWidget"
         });
-    return n ? null == t ? null : (0, i.jsx)(T, {
+    return n ? null == t ? null : (0, i.jsx)(E, {
         ...e,
         userId: t.id
     }) : (0, i.jsx)(v, {

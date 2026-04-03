@@ -1,17 +1,17 @@
 /** chunk id: 191065 params = (module,exports,require) **/
 n.d(t, {
-    A: () => u
+    A: () => o
 });
 var l = n(627968),
     s = n(64700),
     i = n(827734),
     a = n(397927),
     r = n(764788);
-let u = s.forwardRef(function(e, t) {
+let o = s.forwardRef(function(e, t) {
     let {
         isInventory: n,
         style: s,
-        children: u
+        children: o
     } = e;
     return (0, l.jsxs)("div", {
         ref: t,
@@ -29,7 +29,7 @@ let u = s.forwardRef(function(e, t) {
         }), (0, l.jsx)(a.Text, {
             color: n ? "text-muted" : "always-white",
             variant: n ? "text-xs/normal" : "text-xxs/normal",
-            children: u
+            children: o
         })]
     })
 })

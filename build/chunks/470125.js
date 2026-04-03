@@ -90,10 +90,10 @@ for (var i in s)
         c = e[2] / 255,
         l = Math.max(s, i, c),
         u = l - Math.min(s, i, c),
-        b = function(e) {
+        f = function(e) {
             return (l - e) / 6 / u + .5
         };
-    return 0 === u ? n = o = 0 : (o = u / l, t = b(s), r = b(i), a = b(c), s === l ? n = a - r : i === l ? n = 1 / 3 + t - a : c === l && (n = 2 / 3 + r - t), n < 0 ? n += 1 : n > 1 && (n -= 1)), [360 * n, 100 * o, 100 * l]
+    return 0 === u ? n = o = 0 : (o = u / l, t = f(s), r = f(i), a = f(c), s === l ? n = a - r : i === l ? n = 1 / 3 + t - a : c === l && (n = 2 / 3 + r - t), n < 0 ? n += 1 : n > 1 && (n -= 1)), [360 * n, 100 * o, 100 * l]
 }, s.rgb.hwb = function(e) {
     var t = e[0],
         r = e[1],
@@ -175,8 +175,8 @@ for (var i in s)
     var t, r, a, n, o, s, i, c = e[0] / 360,
         l = e[1] / 100,
         u = e[2] / 100,
-        b = l + u;
-    switch (b > 1 && (l /= b, u /= b), t = Math.floor(6 * c), r = 1 - u, a = 6 * c - t, (1 & t) != 0 && (a = 1 - a), n = l + a * (r - l), t) {
+        f = l + u;
+    switch (f > 1 && (l /= f, u /= f), t = Math.floor(6 * c), r = 1 - u, a = 6 * c - t, (1 & t) != 0 && (a = 1 - a), n = l + a * (r - l), t) {
         default:
         case 6:
         case 0:

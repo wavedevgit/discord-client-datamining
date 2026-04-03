@@ -1,7 +1,7 @@
 /** chunk id: 902592 params = (module,exports,require) **/
 n.r(t), n.d(t, {
     default: () => O,
-    openDevToolsPopout: () => E
+    openDevToolsPopout: () => S
 });
 var a = n(627968),
     i = n(64700),
@@ -17,8 +17,8 @@ var a = n(627968),
     x = n(574172),
     p = n(147925),
     g = n(538064),
-    _ = n(265059),
-    f = n(867041),
+    f = n(265059),
+    _ = n(867041),
     v = n(641616),
     b = n(231643),
     j = n(652215),
@@ -26,13 +26,13 @@ var a = n(627968),
     C = n(670211),
     y = n(310086);
 
-function S(e) {
+function E(e) {
     let {
         resizableNode: t,
         onResize: n,
         onResizeEnd: i
     } = e, s = (0, c.A)({
-        minDimension: _.q,
+        minDimension: f.q,
         resizableDomNodeRef: t,
         onElementResize: n,
         onElementResizeEnd: i,
@@ -44,7 +44,7 @@ function S(e) {
     })
 }
 
-function E() {
+function S() {
     (0, x.open)(j.MLl.DEVTOOLS_POPOUT, () => (0, a.jsx)(h.A, {
         windowKey: j.MLl.DEVTOOLS_POPOUT,
         title: "DevTools",
@@ -68,7 +68,7 @@ function T(e) {
         selectedTabId: l
     } = (0, b.Ay)({
         tabs: n,
-        initialSelectedTabId: _.A.lastOpenTabId ?? void 0,
+        initialSelectedTabId: f.A.lastOpenTabId ?? void 0,
         onChangeTab: e => {
             (0, g.Jt)({
                 lastOpenTabId: e
@@ -81,14 +81,14 @@ function T(e) {
         properties: {
             panel: l
         }
-    }), (0, a.jsxs)(f.xG, {
+    }), (0, a.jsxs)(_.xG, {
         children: [(0, a.jsxs)(m.Ay, {
             className: y.jr,
             toolbar: t ? null : (0, a.jsxs)(a.Fragment, {
                 children: [(0, a.jsx)(m.Ay.Icon, {
                     icon: d.tfB,
                     tooltip: "Pop Out",
-                    onClick: E
+                    onClick: S
                 }), (0, a.jsx)(m.Ay.Icon, {
                     icon: d.PGe,
                     tooltip: A.intl.string(A.t.cpT0Cq),
@@ -101,7 +101,7 @@ function T(e) {
             }), (0, a.jsx)(m.Ay.Title, {
                 children: "DevTools"
             })]
-        }), (0, a.jsx)(i, {}), s(), (0, a.jsx)(f.jY, {
+        }), (0, a.jsx)(i, {}), s(), (0, a.jsx)(_.jY, {
             className: C.n7
         })]
     })
@@ -109,7 +109,7 @@ function T(e) {
 
 function N() {
     let e = i.useRef(null),
-        t = (0, o.bG)([_.A], () => _.A.sidebarWidth),
+        t = (0, o.bG)([f.A], () => f.A.sidebarWidth),
         [n, s] = i.useState(null),
         l = i.useCallback(e => (0, g.Jt)({
             sidebarWidth: e
@@ -120,11 +120,11 @@ function N() {
         ref: e,
         className: C.kL,
         style: {
-            minWidth: _.q,
+            minWidth: f.q,
             width: n
         },
         "data-app-right-panel": !0,
-        children: [(0, a.jsx)(S, {
+        children: [(0, a.jsx)(E, {
             resizableNode: e,
             onResize: s,
             onResizeEnd: l
@@ -136,7 +136,7 @@ function N() {
 }
 
 function I() {
-    return (0, o.bG)([_.A], () => _.A.displayTools) ? (0, a.jsx)("div", {
+    return (0, o.bG)([f.A], () => f.A.displayTools) ? (0, a.jsx)("div", {
         className: l()(C.kL, C.PQ),
         children: (0, a.jsx)("div", {
             className: C.wp,

@@ -45,7 +45,7 @@ let p = e => {
                     onClick: () => {
                         (0, u.U)(l, o.A.HEADER_BAR)
                     },
-                    onContextMenu: e => (0, r.L3)(e, () => Promise.all([n.e("97262"), n.e("70303"), n.e("60200"), n.e("29108")]).then(n.bind(n, 4027)).then(e => {
+                    onContextMenu: e => (0, r.L3)(e, () => Promise.all([n.e("97262"), n.e("60200"), n.e("21969")]).then(n.bind(n, 4027)).then(e => {
                         let {
                             default: n
                         } = e;

@@ -1,7 +1,7 @@
 /** chunk id: 431804 params = (module,exports,require) **/
 n.d(t, {
-    r: () => s,
-    y: () => a
+    r: () => a,
+    y: () => l
 });
-var i, r, s = ((i = {}).PLAY = "play", i.PAUSE = "pause", i.BACK_TO_CONVERSATION = "back_to_conversation", i),
-    a = ((r = {}).INAPPROPRIATE_CONVERSATION = "inappropriate_conversation", r.KEYBIND = "keybind", r)
+var i, r, a = ((i = {}).PLAY = "play", i.PAUSE = "pause", i.BACK_TO_CONVERSATION = "back_to_conversation", i),
+    l = ((r = {}).INAPPROPRIATE_CONVERSATION = "inappropriate_conversation", r.KEYBIND = "keybind", r)

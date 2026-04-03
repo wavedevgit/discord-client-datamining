@@ -1,6 +1,6 @@
 /** chunk id: 672564 params = (module,exports,require) **/
 n.d(t, {
-    J: () => C
+    J: () => N
 });
 var i = n(627968),
     l = n(64700),
@@ -19,10 +19,11 @@ var i = n(627968),
     h = n(652215),
     _ = n(518477),
     A = n(985018),
-    I = n(353787);
-let j = f.Z.SIZE_90;
+    I = n(353787),
+    j = n(913110);
+let v = f.Z.SIZE_90;
 
-function v(e) {
+function E(e) {
     let {
         sku: t,
         wishlistOwner: n,
@@ -46,7 +47,7 @@ function v(e) {
     return (0, i.jsx)(x.A, {
         sku: t,
         user: n,
-        spec: j,
+        spec: v,
         cardStyle: s()(I.Nr, a),
         skuPreviewStyle: s()(I.ev, r),
         onHoverOrFocusChange: o,
@@ -81,7 +82,7 @@ function T(e) {
     }, [t, n, x, r]), j = l.useMemo(() => s()({
         [I.zW]: a || x
     }, c), [a, x, c]);
-    return (0, i.jsx)(v, {
+    return (0, i.jsx)(E, {
         "aria-label": A.intl.formatToPlainString(A.t.xRjJBe, {
             productName: (0, g.TC)(t)
         }),
@@ -98,7 +99,7 @@ function T(e) {
     })
 }
 
-function E(e) {
+function b(e) {
     let {
         sku: t,
         analyticsLocations: n,
@@ -113,7 +114,7 @@ function E(e) {
     })
 }
 
-function b(e) {
+function C(e) {
     let {
         sku: t,
         ...n
@@ -135,21 +136,40 @@ function b(e) {
     })
 }
 
-function C(e) {
+function S(e) {
+    let {
+        sku: t,
+        ...n
+    } = e;
+    return (0, i.jsx)(T, {
+        sku: t,
+        skuPreviewStyle: j.MO,
+        ...n
+    })
+}
+
+function N(e) {
     let {
         sku: t,
         ...n
     } = e, [a, s] = l.useState(!1);
     switch (t.productLine) {
         case h.EZt.SOCIAL_LAYER_GAME_ITEM:
-            return (0, i.jsx)(E, {
+            return (0, i.jsx)(b, {
                 sku: t,
                 isHoveringOrFocusing: a,
                 setIsHoveringOrFocusing: s,
                 ...n
             });
         case h.EZt.COLLECTIBLES:
-            return (0, i.jsx)(b, {
+            return (0, i.jsx)(C, {
+                sku: t,
+                isHoveringOrFocusing: a,
+                setIsHoveringOrFocusing: s,
+                ...n
+            });
+        case h.EZt.PREMIUM:
+            return (0, i.jsx)(S, {
                 sku: t,
                 isHoveringOrFocusing: a,
                 setIsHoveringOrFocusing: s,

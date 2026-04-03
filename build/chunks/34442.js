@@ -27,8 +27,8 @@ function m(e) {
         options: j,
         matchSorterOptions: v
     } = (0, r.R)(), {
-        applicationIds: T,
-        onAddGame: E
+        applicationIds: E,
+        onAddGame: T
     } = (0, d.S)(t), b = l.useCallback(e => {
         (0, c.ew)({
             widgetType: t,
@@ -39,18 +39,18 @@ function m(e) {
             action: "GAME_ADDED",
             gameId: e,
             widgetEdited: t
-        }), T.includes(e) && E(e), m?.()
-    }, [t, h, m, T, E]), C = l.useMemo(() => {
+        }), E.includes(e) && T(e), m?.()
+    }, [t, h, m, E, T]), C = l.useMemo(() => {
         let e = new Map(j.map(e => [String(e.value), {
                 id: String(e.value),
                 value: String(e.value),
                 label: e.label,
                 disabled: f.has(e.value)
             }])),
-            t = T.map(t => e.get(t)).filter(e => null != e && !e.disabled),
+            t = E.map(t => e.get(t)).filter(e => null != e && !e.disabled),
             n = [...e.values()].filter(e => !t.includes(e));
         return [...t, ...n]
-    }, [j, f, T]), S = l.useMemo(() => ({
+    }, [j, f, E]), S = l.useMemo(() => ({
         ...v,
         threshold: a.Ht.rankings.CONTAINS,
         keys: ["label"]

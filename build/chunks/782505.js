@@ -1,9 +1,9 @@
 /** chunk id: 782505 params = (module,exports,require) **/
 n.d(t, {
     IA: () => v,
-    jB: () => T,
+    jB: () => E,
     qv: () => C,
-    zf: () => E
+    zf: () => T
 });
 var i = n(627968),
     l = n(64700),
@@ -58,7 +58,7 @@ function v() {
     })
 }
 
-function T() {
+function E() {
     let e = p.intl.string(p.t.bFgqYJ),
         [t] = l.useState(() => ((0, a.sample)(_) ?? _[0])());
     return (0, i.jsx)(j, {
@@ -67,7 +67,7 @@ function T() {
     })
 }
 
-function E(e) {
+function T(e) {
     let {
         user: t,
         guildId: n,

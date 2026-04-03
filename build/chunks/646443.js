@@ -1,6 +1,6 @@
 /** chunk id: 646443 params = (module,exports,require) **/
 l.d(t, {
-    l: () => u
+    l: () => d
 });
 var a = l(627968),
     n = l(934551),
@@ -8,7 +8,7 @@ var a = l(627968),
     i = l(397927),
     o = l(957565),
     s = l(64056);
-let u = e => {
+let d = e => {
     let {
         label: t,
         value: l

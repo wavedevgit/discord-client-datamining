@@ -27,8 +27,8 @@ function S(e) {
         guild: n,
         initialSelectedEffect: l,
         className: S,
-        sectionTitle: E,
-        forcedDivider: b = !1,
+        sectionTitle: b,
+        forcedDivider: E = !1,
         withTutorial: C = !1,
         showBorder: N = !1
     } = e, {
@@ -48,10 +48,10 @@ function S(e) {
     }, [I, v]);
     let R = C ? o.wLn : r.$n;
     return (0, i.jsx)(x.A, {
-        forcedDivider: b,
+        forcedDivider: E,
         borderType: A.i.PREMIUM,
         hasBackground: !0,
-        title: E,
+        title: b,
         showBorder: N,
         errors: O,
         className: S,

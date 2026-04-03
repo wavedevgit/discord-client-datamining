@@ -13,13 +13,13 @@ function o(e) {
         isQuestAccepted: t,
         isQuestCompleted: n,
         isQuestBarVisible: o
-    } = e, d = (0, i.bG)([l.A], () => l.A.useReducedMotion), [c, u] = a.useState(!1), [m, h] = a.useState(!0), [x, p] = a.useState(!0), g = a.useRef(o), _ = a.useCallback(e => {
+    } = e, d = (0, i.bG)([l.A], () => l.A.useReducedMotion), [c, u] = a.useState(!1), [m, h] = a.useState(!0), [x, p] = a.useState(!0), g = a.useRef(o), f = a.useCallback(e => {
         n || (h(!1), u(e))
-    }, [n]), f = a.useCallback(() => {
-        _(!0)
-    }, [_]), v = a.useCallback(() => {
-        _(!1)
-    }, [_]), b = t ? r.ZV : r.Ko, [{
+    }, [n]), _ = a.useCallback(() => {
+        f(!0)
+    }, [f]), v = a.useCallback(() => {
+        f(!1)
+    }, [f]), b = t ? r.ZV : r.Ko, [{
         expansionSpring: j
     }, A] = (0, s.zhh)(() => ({
         from: {
@@ -64,8 +64,8 @@ function o(e) {
         o !== g.current && p(!1), g.current = o
     }, [o]), {
         isExpanded: c,
-        setIsExpanded: _,
-        expandQuestBar: f,
+        setIsExpanded: f,
+        expandQuestBar: _,
         collapseQuestBar: v,
         isExpansionAnimationComplete: m,
         isVisibilityAnimationAtRest: x,

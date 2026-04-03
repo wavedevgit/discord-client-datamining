@@ -1,6 +1,6 @@
 /** chunk id: 808411 params = (module,exports,require) **/
 l.d(t, {
-    A: () => u
+    A: () => d
 });
 var a = l(627968),
     n = l(64700),
@@ -8,8 +8,8 @@ var a = l(627968),
     i = l(397927),
     o = l(914410),
     s = l(252561);
-let u = () => {
-    let [e, t] = n.useState(0), [l, u] = n.useState(4), [d, c] = n.useState(2), [p, m] = n.useState(o.fh.LIGHT), [h, x] = n.useState(o.qP.BLUE), [b, f] = n.useState("darkslategray"), [y, g] = n.useState("blanchedalmond"), [v, E] = n.useState("pink"), [_, C] = n.useState(!0), j = n.useMemo(() => Object.entries(o.fh).map(e => {
+let d = () => {
+    let [e, t] = n.useState(0), [l, d] = n.useState(4), [u, c] = n.useState(2), [p, m] = n.useState(o.fh.LIGHT), [h, x] = n.useState(o.qP.BLUE), [b, y] = n.useState("darkslategray"), [f, g] = n.useState("blanchedalmond"), [v, _] = n.useState("pink"), [E, C] = n.useState(!0), j = n.useMemo(() => Object.entries(o.fh).map(e => {
         let [t, l] = e;
         return {
             id: l,
@@ -26,7 +26,7 @@ let u = () => {
     }), []);
     return (0, a.jsxs)(s.LB, {
         children: [(0, a.jsx)(o.Ay, {
-            progress: d,
+            progress: u,
             minimum: e,
             maximum: l,
             weight: p,
@@ -34,15 +34,15 @@ let u = () => {
             override: {
                 default: {
                     background: b,
-                    gradientStart: y,
+                    gradientStart: f,
                     gradientEnd: v
                 }
             },
-            glowing: _
+            glowing: E
         }), (0, a.jsx)(s.nB, {}), (0, a.jsx)(s.MG, {
             children: (0, a.jsx)(i.ksK, {
                 type: "number",
-                value: d.toString(),
+                value: u.toString(),
                 onChange: t => {
                     c((0, r.clamp)(+t, e, l))
                 },
@@ -53,7 +53,7 @@ let u = () => {
                 type: "number",
                 value: e.toString(),
                 onChange: e => {
-                    0 > +e || +e >= l || (d < +e && c(+e), t(+e))
+                    0 > +e || +e >= l || (u < +e && c(+e), t(+e))
                 },
                 label: "Minimum Value"
             })
@@ -62,7 +62,7 @@ let u = () => {
                 type: "number",
                 value: l.toString(),
                 onChange: t => {
-                    +t <= e || 1 > +t || (d > +t && c(+t), u(+t))
+                    +t <= e || 1 > +t || (u > +t && c(+t), d(+t))
                 },
                 label: "Maximum Value"
             })
@@ -93,7 +93,7 @@ let u = () => {
         }), (0, a.jsx)(s.MG, {
             children: (0, a.jsx)(i.Checkbox, {
                 label: "Glowing",
-                checked: _,
+                checked: E,
                 onChange: e => {
                     C(e)
                 }
@@ -109,13 +109,13 @@ let u = () => {
             children: (0, a.jsx)(i.ksK, {
                 value: b,
                 onChange: e => {
-                    f(e)
+                    y(e)
                 },
                 label: "Background (optional)"
             })
         }), (0, a.jsx)(s.MG, {
             children: (0, a.jsx)(i.ksK, {
-                value: y,
+                value: f,
                 onChange: e => {
                     g(e)
                 },
@@ -125,7 +125,7 @@ let u = () => {
             children: (0, a.jsx)(i.ksK, {
                 value: v,
                 onChange: e => {
-                    E(e)
+                    _(e)
                 },
                 label: "Gradient End"
             })

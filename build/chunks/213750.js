@@ -84,6 +84,7 @@ let M = e => {
         }, [E, I, r, C, o]), S = L.BVt.COLLECTIBLES_SHOP;
         return (0, i.jsxs)(i.Fragment, {
             children: [f && (0, i.jsx)(j, {}), (0, i.jsx)(_.z9, {
+                showHoverGradient: !1,
                 selected: t,
                 route: S,
                 icon: l ?? A.U1X,

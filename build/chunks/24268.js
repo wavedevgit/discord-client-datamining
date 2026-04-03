@@ -16,8 +16,8 @@ var a = n(627968),
     x = n(760716),
     p = n(652215),
     g = n(115093),
-    _ = n(310086),
-    f = n(521807);
+    f = n(310086),
+    _ = n(521807);
 let v = window.GLOBAL_ENV.RELEASE_CHANNEL === g.B.STAGING ? "1438571444891025408" : "1346069614634864772";
 
 function b() {
@@ -33,8 +33,8 @@ function b() {
             g(e), n && t(e)
         }, [n, t]),
         y = (0, x.i)(e => e.showSelfActivity),
-        S = (0, x.i)(e => e.setShowSelfActivity),
-        E = (0, x.i)(e => e.recommendationApplicationIds),
+        E = (0, x.i)(e => e.setShowSelfActivity),
+        S = (0, x.i)(e => e.recommendationApplicationIds),
         T = (0, x.i)(e => e.setRecommendationApplicationIds),
         N = i.useCallback(e => {
             e ? T(b) : T(null)
@@ -55,9 +55,9 @@ function b() {
             R?.(e)
         }, [R]);
     return (0, a.jsx)("div", {
-        className: l()(_.nd, f.n),
+        className: l()(f.nd, _.n),
         children: (0, a.jsxs)("div", {
-            className: f.k,
+            className: _.k,
             children: [(0, a.jsx)(o.ksK, {
                 label: "Application ID",
                 value: s,
@@ -72,7 +72,7 @@ function b() {
             }), (0, a.jsx)(o.dOG, {
                 label: "Show own voice activity (bypass self check)",
                 checked: y,
-                onChange: S
+                onChange: E
             }), (0, a.jsx)(o.dOG, {
                 label: "Enable application test mode",
                 checked: I,
@@ -87,10 +87,10 @@ function b() {
                 label: "Recommendation application IDs",
                 value: b,
                 onChange: j,
-                disabled: null == E
+                disabled: null == S
             }), (0, a.jsx)(o.dOG, {
                 label: "Enable recommendation application IDs override",
-                checked: null != E,
+                checked: null != S,
                 onChange: N
             })]
         })

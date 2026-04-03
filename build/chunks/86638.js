@@ -22,8 +22,8 @@ var i = n(627968),
     I = n(474090),
     j = n(661492),
     v = n(111085),
-    T = n(146423),
-    E = n(121700),
+    E = n(146423),
+    T = n(121700),
     b = n(460442),
     C = n(662349),
     S = n(479026),
@@ -100,7 +100,7 @@ function D(e) {
     });
     return (0, i.jsxs)("div", {
         className: O.kL,
-        children: [(0, i.jsxs)(T.A, {
+        children: [(0, i.jsxs)(E.A, {
             sku: t.sku,
             user: n,
             spec: P,
@@ -123,7 +123,7 @@ function D(e) {
                 icon: U
             }), I && (0, i.jsx)(b.gS, {
                 isHoveringOrFocusing: m
-            }), n.id === a.id && null != A && (0, i.jsx)(E.A, {
+            }), n.id === a.id && null != A && (0, i.jsx)(T.A, {
                 sku: t.sku,
                 isCardHovered: m,
                 spec: P,

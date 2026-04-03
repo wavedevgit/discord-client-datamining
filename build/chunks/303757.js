@@ -1,16 +1,16 @@
 /** chunk id: 303757 params = (module,exports,require) **/
 n.d(t, {
-    $: () => a
+    $: () => l
 });
 var i = n(397927),
     r = n(272613),
-    s = n(819638);
-let a = {
+    a = n(819638);
+let l = {
     binds: ["mod+shift+n"],
     comboKeysBindGlobal: !0,
     action() {
-        (0, i.kBI)(s.fc) ? r.A.updateCreateGuildModal({
-            slide: s.oS.JOIN_GUILD,
+        (0, i.kBI)(a.fc) ? r.A.updateCreateGuildModal({
+            slide: a.oS.JOIN_GUILD,
             location: "Keyboard Shortcut"
         }): r.A.openCreateGuildModal({
             location: "Keyboard Shortcut"

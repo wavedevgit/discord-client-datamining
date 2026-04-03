@@ -20,7 +20,7 @@ function A(t) {
         guildId: i,
         userId: A,
         containerDimensions: h
-    } = t, g = (0, s.bG)([o.A], () => o.A.useReducedMotion), [f, S] = l.useState([]), T = f.length < 50;
+    } = t, g = (0, s.bG)([o.A], () => o.A.useReducedMotion), [f, E] = l.useState([]), S = f.length < 50;
     l.useEffect(() => {
         function t(t) {
             let {
@@ -32,7 +32,7 @@ function A(t) {
             } = t;
             if (null != A && A !== l) return;
             let c = null != s && null != a && null != o;
-            if (n === e && !g && T && c) {
+            if (n === e && !g && S && c) {
                 let t = (0, u.Br)(s),
                     n = null != s.id && !s.animated,
                     c = {
@@ -43,7 +43,7 @@ function A(t) {
                         url: t,
                         userId: l
                     };
-                S(t => [...t, c]), d.Ay.trackWithMetadata(p.HAw.VOICE_CHANNEL_EFFECT_VIEWED, {
+                E(t => [...t, c]), d.Ay.trackWithMetadata(p.HAw.VOICE_CHANNEL_EFFECT_VIEWED, {
                     channel_id: e,
                     guild_id: i
                 })
@@ -52,9 +52,9 @@ function A(t) {
         return a.h.subscribe("VOICE_CHANNEL_EFFECT_SEND", t), () => {
             a.h.unsubscribe("VOICE_CHANNEL_EFFECT_SEND", t)
         }
-    }, [e, i, A, g, T]);
-    let E = l.useCallback(t => {
-        S(e => {
+    }, [e, i, A, g, S]);
+    let T = l.useCallback(t => {
+        E(e => {
             let i = [...e],
                 n = i.findIndex(e => e.id === t);
             return i.splice(n, 1), i
@@ -70,7 +70,7 @@ function A(t) {
             children: f.map(t => (0, n.jsx)(c.A, {
                 containerDimensions: h,
                 effect: t,
-                onComplete: E
+                onComplete: T
             }, t.id))
         })
     })

@@ -22,8 +22,8 @@ var i = n(627968),
     I = n(939899),
     j = n(518477),
     v = n(985018),
-    T = n(360841);
-let E = {
+    E = n(360841);
+let T = {
     [r.x.FAVORITE_GAMES]: {
         placeholder: () => ({
             variant: "details",
@@ -76,7 +76,7 @@ function b(e) {
             placeholder: C,
             getAriaLabel: S,
             icon: N
-        } = E[n.type],
+        } = T[n.type],
         y = n.type === r.x.APPLICATION,
         R = y ? n.applicationId : void 0,
         k = (0, x.h)(R),
@@ -111,9 +111,9 @@ function b(e) {
         U = N?.(n),
         F = G ? o.qYV : o.U1e;
     return (0, i.jsxs)("div", {
-        className: T.LG,
+        className: E.LG,
         children: [(0, i.jsxs)(o.DUT, {
-            className: s()(T.PH, "small" === m && T.PG, f && T.Lq),
+            className: s()(E.PH, "small" === m && E.PG, f && E.Lq),
             onClick: M,
             "aria-label": G && null != k ? v.intl.formatToPlainString(v.t.ATS0FK, {
                 applicationName: k.name
@@ -124,14 +124,14 @@ function b(e) {
                 switch (e.variant) {
                     case "details":
                         return (0, i.jsx)(A.E, {
-                            className: T.l4,
-                            gridClassName: T.Qs,
+                            className: E.l4,
+                            gridClassName: E.Qs,
                             applicationId: e.applicationId
                         });
                     case "grid":
                         return (0, i.jsx)(A.l, {
-                            className: T.l4,
-                            gridClassName: T.Qs,
+                            className: E.l4,
+                            gridClassName: E.Qs,
                             applicationIds: e.applicationIds
                         });
                     case "application-widget":
@@ -143,13 +143,13 @@ function b(e) {
                         return (0, p.xb)(e)
                 }
             })(), (0, i.jsxs)("div", {
-                className: T.Lw,
+                className: E.Lw,
                 children: [(0, i.jsx)(F, {
                     size: "md",
                     color: "currentColor",
-                    className: T.c9
+                    className: E.c9
                 }), (0, i.jsxs)("div", {
-                    className: T.DD,
+                    className: E.DD,
                     children: [(0, i.jsx)(o.Text, {
                         variant: "text-md/medium",
                         color: "text-strong",
@@ -159,7 +159,7 @@ function b(e) {
                         alt: "",
                         width: 16,
                         height: 16,
-                        className: T.Kk
+                        className: E.Kk
                     }) : null]
                 })]
             })]

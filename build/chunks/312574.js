@@ -21,8 +21,8 @@ var i = n(627968),
     T = n(17460),
     f = n(202949),
     S = n(694202),
-    E = n(50847),
-    b = n(606275),
+    b = n(50847),
+    E = n(606275),
     C = n(879545),
     N = n(49999),
     v = n(985018),
@@ -85,7 +85,7 @@ let O = (0, m.t_)(p.X.OVERLAY_PANEL, {
                 })
             }
         },
-        buildLayout: () => [S.u, E.X, C.D, b.h]
+        buildLayout: () => [S.u, b.X, C.D, E.h]
     }),
     R = (0, m.i4)(p.X.OVERLAY_SIDEBAR_ITEM, {
         useTitle: () => v.intl.string(v.t["9cb1Uz"]),

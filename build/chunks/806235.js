@@ -25,7 +25,7 @@ function c() {
         emotion: window.__CLIPS_DEBUG__.emotion,
         yell: window.__CLIPS_DEBUG__.yell,
         whisper: window.__CLIPS_DEBUG__.whisper
-    })), [c, u] = i.useState(o.rb.KILL), [m, h] = i.useState(1), [x, p] = i.useState(""), [g, _] = i.useState(""), f = i.useCallback(e => {
+    })), [c, u] = i.useState(o.rb.KILL), [m, h] = i.useState(1), [x, p] = i.useState(""), [g, f] = i.useState(""), _ = i.useCallback(e => {
         let a = !t[e];
         void 0 === window.__CLIPS_DEBUG__ && (window.__CLIPS_DEBUG__ = {
             emotion: !1,
@@ -160,7 +160,7 @@ function c() {
                 }), (0, a.jsx)(l.ksK, {
                     label: "Description (optional)",
                     value: g,
-                    onChange: _,
+                    onChange: f,
                     placeholder: "e.g., Killed enemy ADC in bot lane"
                 }), (0, a.jsx)(l.Button, {
                     text: "Create Game Event",
@@ -218,22 +218,22 @@ function c() {
                     label: "Wake Word Debug",
                     description: "Log wake word detection events to console",
                     checked: t.wakeWord,
-                    onChange: () => f("wakeWord")
+                    onChange: () => _("wakeWord")
                 }), (0, a.jsx)(l.dOG, {
                     label: "Emotion Debug",
                     description: "Log emotion classification events to console",
                     checked: t.emotion,
-                    onChange: () => f("emotion")
+                    onChange: () => _("emotion")
                 }), (0, a.jsx)(l.dOG, {
                     label: "Yell Debug",
                     description: "Show yell classification events to console",
                     checked: t.yell,
-                    onChange: () => f("yell")
+                    onChange: () => _("yell")
                 }), (0, a.jsx)(l.dOG, {
                     label: "Whisper Debug",
                     description: "Log whisper transcription events to console",
                     checked: t.whisper,
-                    onChange: () => f("whisper")
+                    onChange: () => _("whisper")
                 })]
             })]
         })

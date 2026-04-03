@@ -1,6 +1,6 @@
 /** chunk id: 592182 params = (module,exports,require) **/
 i.d(e, {
-    A: () => Y
+    A: () => k
 });
 var n = i(627968);
 i(64700);
@@ -18,19 +18,19 @@ var l = i(503698),
     h = i(267102),
     g = i(159426),
     f = i(25528),
-    S = i(655724),
-    T = i(82149),
-    E = i(657331),
+    E = i(655724),
+    S = i(82149),
+    T = i(657331),
     C = i(734057),
     v = i(287809),
-    y = i(977997),
-    _ = i(874546),
+    _ = i(977997),
+    y = i(874546),
     I = i(90644),
     N = i(61330),
     x = i(709309),
     j = i(153331),
-    P = i(33852),
-    L = i(834425),
+    L = i(33852),
+    P = i(834425),
     O = i(284525),
     U = i(730430),
     R = i(443493),
@@ -44,27 +44,27 @@ var l = i(503698),
     F = i(346640),
     B = i(985018),
     W = i(540807);
-let k = t => {
+let Y = t => {
         let {
             user: e,
             buttonVariant: i,
             activity: l,
             onAction: r
         } = t, s = (0, h.aL)();
-        return (0, n.jsx)(L.A, {
+        return (0, n.jsx)(P.A, {
             user: e,
             variant: i,
             activity: l,
             onAction: () => {
                 m.s.getConfig({
                     location: "rich_presence"
-                }).enabled && (s.dispatch(w.jej.POPOUT_CLOSE), (0, E.closeUserProfileModal)(), (0, A.A)({
+                }).enabled && (s.dispatch(w.jej.POPOUT_CLOSE), (0, T.closeUserProfileModal)(), (0, A.A)({
                     source: "rich_presence"
                 }), r?.())
             }
         }, "custom-activity-button")
     },
-    Y = (0, u.A)(t => {
+    k = (0, u.A)(t => {
         let {
             activity: e,
             embeddedActivity: i,
@@ -74,13 +74,13 @@ let k = t => {
             guildId: m,
             channelId: A,
             source: h,
-            buttonVariant: E,
-            type: Y,
+            buttonVariant: T,
+            type: k,
             onAction: $
         } = t, z = (0, o.bG)([v.default], () => {
             let t = v.default.getCurrentUser();
             return a()(null != t, "UserActivityActions: currentUser cannot be undefined"), t
-        }), J = Y === j.O.STREAM_PREVIEW || null != s, K = (0, I.A)(e), Z = K || J ? p.A.Direction.HORIZONTAL : p.A.Direction.VERTICAL, q = e?.type === w.$pd.HANG_STATUS, X = (0, o.bG)([y.A, C.A], () => q ? C.A.getChannel(y.A.getVoiceStateForUser(l.id)?.channelId) : null), Q = (0, o.bG)([C.A], () => null != A ? C.A.getChannel(A) : null, [A]), {
+        }), J = k === j.O.STREAM_PREVIEW || null != s, K = (0, I.A)(e), Z = K || J ? p.A.Direction.HORIZONTAL : p.A.Direction.VERTICAL, X = e?.type === w.$pd.HANG_STATUS, q = (0, o.bG)([_.A, C.A], () => X ? C.A.getChannel(_.A.getVoiceStateForUser(l.id)?.channelId) : null), Q = (0, o.bG)([C.A], () => null != A ? C.A.getChannel(A) : null, [A]), {
             enableRequestToStream: tt
         } = g.m.useExperiment({
             guildId: m ?? Q?.guild_id,
@@ -91,9 +91,9 @@ let k = t => {
         if (e?.application_id === F.L8) return e = {
             ...e,
             buttons: [B.intl.string(B.t.E4kW5O)]
-        }, (0, n.jsx)(k, {
+        }, (0, n.jsx)(Y, {
             user: l,
-            buttonVariant: E,
+            buttonVariant: T,
             activity: e,
             onAction: $
         });
@@ -105,15 +105,15 @@ let k = t => {
             wrap: tn ? p.A.Wrap.WRAP : p.A.Wrap.NO_WRAP,
             className: r()(u, W.jx, tn ? W.Vd : W.xM),
             children: (() => {
-                if (!(0, _.A)(e)) {
-                    if ((0, N.A)(e)) return (0, n.jsx)(P.A, {
+                if (!(0, y.A)(e)) {
+                    if ((0, N.A)(e)) return (0, n.jsx)(L.A, {
                         platform: c.A.get(w.fg2.XBOX),
-                        variant: E,
+                        variant: T,
                         onAction: $,
                         icon: d.YWd
                     });
-                    if (e?.platform === w.yTV.PS4 || e?.platform === w.yTV.PS5) return (0, n.jsx)(P.A, {
-                        variant: E,
+                    if (e?.platform === w.yTV.PS4 || e?.platform === w.yTV.PS5) return (0, n.jsx)(L.A, {
+                        variant: T,
                         platform: c.A.get(w.fg2.PLAYSTATION),
                         onAction: $,
                         icon: d.Xj
@@ -144,12 +144,12 @@ let k = t => {
                         children: [i, t]
                     })
                 }
-                if ((0, T.Cy)(e)) {
-                    let t = (0, T.UW)(e);
+                if ((0, S.Cy)(e)) {
+                    let t = (0, S.UW)(e);
                     return null == t ? null : (0, n.jsx)(R.A, {
                         guildId: t.guildId,
                         channelId: t.channelId,
-                        variant: E,
+                        variant: T,
                         onAction: $
                     })
                 }
@@ -157,35 +157,35 @@ let k = t => {
                     isCurrentUser: z.id === l.id,
                     applicationStream: s,
                     onAction: $
-                }) : q && null != X ? (0, n.jsx)(U.A, {
+                }) : X && null != q ? (0, n.jsx)(U.A, {
                     userId: l.id,
-                    variant: E,
-                    hangStatusChannel: X,
+                    variant: T,
+                    hangStatusChannel: q,
                     onAction: $
                 }) : (0, n.jsxs)(n.Fragment, {
-                    children: [te && (0, n.jsx)(S.B, {
+                    children: [te && (0, n.jsx)(E.B, {
                         userId: l.id,
                         channel: Q,
                         onAction: $
                     }), (0, n.jsx)(V.A, {
                         activity: e,
-                        variant: te ? "secondary" : E,
+                        variant: te ? "secondary" : T,
                         onAction: $
                     }), (0, n.jsx)(O.A, {
                         activity: e,
                         embeddedActivity: i,
                         user: l,
-                        variant: te ? "secondary" : E,
+                        variant: te ? "secondary" : T,
                         onAction: $
                     }), (0, n.jsx)(D.A, {
                         activity: e,
                         user: l,
-                        variant: te ? "secondary" : E,
+                        variant: te ? "secondary" : T,
                         onAction: $
-                    }), (0, n.jsx)(L.A, {
+                    }), (0, n.jsx)(P.A, {
                         user: l,
                         activity: e,
-                        variant: te ? "secondary" : E,
+                        variant: te ? "secondary" : T,
                         onAction: $
                     })]
                 })

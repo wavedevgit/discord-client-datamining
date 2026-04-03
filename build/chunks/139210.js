@@ -16,8 +16,8 @@ var a = n(627968),
     x = n(57718),
     p = n(398025),
     g = n(545986),
-    _ = n(568329),
-    f = n(963713),
+    f = n(568329),
+    _ = n(963713),
     v = n(223352);
 n(272111);
 var b = n(985018),
@@ -27,30 +27,30 @@ let A = (0, r.animated)(x.Ay),
         let e = (0, u.go)(),
             {
                 expansionSpring: t
-            } = i.useContext(_.PW),
+            } = i.useContext(f.PW),
             {
                 onCtxMenuOpen: n,
                 onCtxMenuClose: s,
                 onCtxMenuSelect: x,
                 isExpanded: C,
                 isExpansionAnimationComplete: y,
-                quest: S
-            } = i.useContext(f.T),
-            E = i.useCallback(() => {
-                (0, g.Zc)(S, {
+                quest: E
+            } = i.useContext(_.T),
+            S = i.useCallback(() => {
+                (0, g.Zc)(E, {
                     content: d.uF.QUEST_BAR_V2,
                     ctaContent: c.Cy.OPEN_DISCLOSURE,
                     sourceQuestContent: d.uF.QUEST_BAR_V2
                 })
-            }, [S]),
+            }, [E]),
             T = i.useCallback(() => {
-                (0, m.pu)(S, {
+                (0, m.pu)(E, {
                     content: d.uF.QUEST_BAR_V2,
                     ctaContent: c.Cy.OPEN_GAME_LINK,
                     impressionId: e,
                     sourceQuestContent: d.uF.QUEST_BAR_V2
                 })
-            }, [e, S]),
+            }, [e, E]),
             N = C && y,
             I = (0, a.jsx)(o.DUT, {
                 onClick: T,
@@ -58,7 +58,7 @@ let A = (0, r.animated)(x.Ay),
                     [j.wm]: N
                 }),
                 children: (0, a.jsx)(A, {
-                    quest: S,
+                    quest: E,
                     withGameTile: !1,
                     logotypeClassName: j.Iu,
                     logotypeStyle: {
@@ -102,7 +102,7 @@ let A = (0, r.animated)(x.Ay),
                 },
                 children: [(0, a.jsxs)(o.DUT, {
                     className: j.y8,
-                    onClick: E,
+                    onClick: S,
                     children: [(0, a.jsx)(o.Text, {
                         color: "always-white",
                         variant: "text-xs/normal",
@@ -116,7 +116,7 @@ let A = (0, r.animated)(x.Ay),
                     onClose: s,
                     onSelect: x,
                     questContent: d.uF.QUEST_BAR_V2,
-                    quest: S,
+                    quest: E,
                     shouldShowDisclosure: !0,
                     showShareLink: !0,
                     sourceQuestContent: d.uF.QUEST_BAR_V2,
