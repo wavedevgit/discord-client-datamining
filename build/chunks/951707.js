@@ -9,8 +9,8 @@ var r = n(627968),
     a = n.n(l),
     s = n(735438),
     o = n(311907),
-    c = n(732955),
-    u = n(770178),
+    u = n(732955),
+    c = n(770178),
     d = n(775602),
     h = n(985018),
     f = n(669046);
@@ -23,7 +23,7 @@ let m = e => {
         className: p,
         iconButtonSize: _,
         "aria-label": v
-    } = e, y = i.useId(), g = i.useRef(0), x = i.useRef(0), E = i.useRef(0), A = i.useRef(!1), S = i.useRef(!1), b = i.useRef(null), N = (0, o.bG)([d.A], () => d.A.keyboardModeEnabled), j = (0, o.bG)([d.A], () => d.A.useReducedMotion), C = i.useMemo(() => i.Children.map(t, e => i.isValidElement(e) ? null != e && "object" == typeof e && e.$$typeof === Symbol.for("react.portal") ? e : i.cloneElement(e, {
+    } = e, y = i.useId(), g = i.useRef(0), x = i.useRef(0), E = i.useRef(0), A = i.useRef(!1), S = i.useRef(!1), b = i.useRef(null), N = (0, o.bG)([d.A], () => d.A.keyboardModeEnabled), C = (0, o.bG)([d.A], () => d.A.useReducedMotion), j = i.useMemo(() => i.Children.map(t, e => i.isValidElement(e) ? null != e && "object" == typeof e && e.$$typeof === Symbol.for("react.portal") ? e : i.cloneElement(e, {
         tabIndex: -1
     }) : e), [t]), [R, I] = i.useState(!1), [T, w] = i.useState(!1), [k, L] = i.useState(!0), O = () => {
         I(x.current > g.current)
@@ -45,7 +45,7 @@ let m = e => {
                 N && n !== t ? e.setAttribute("inert", "true") : e.removeAttribute("inert")
             })
         })
-    }, [N]), P = (0, u.w)(e => {
+    }, [N]), P = (0, c.w)(e => {
         let {
             contentRect: t
         } = e;
@@ -79,11 +79,11 @@ let m = e => {
             } = e, n = Math.max(0, t - g.current);
             E.current = n, A.current = !0, e.scrollTo({
                 left: n,
-                behavior: j ? "auto" : "smooth"
+                behavior: C ? "auto" : "smooth"
             }), e.addEventListener("scrollend", () => A.current = !1, {
                 once: !0
             }), M()
-        }, 200), [g, M, j]),
+        }, 200), [g, M, C]),
         B = i.useMemo(() => (0, s.throttle)(() => {
             let e = U.current;
             if (null == e) return;
@@ -92,11 +92,11 @@ let m = e => {
             } = e, n = t + g.current;
             E.current = n, A.current = !0, e.scrollTo({
                 left: n,
-                behavior: j ? "auto" : "smooth"
+                behavior: C ? "auto" : "smooth"
             }), e.addEventListener("scrollend", () => A.current = !1, {
                 once: !0
             }), M()
-        }, 200), [g, M, j]),
+        }, 200), [g, M, C]),
         K = i.useCallback(() => {
             let e = U.current;
             if (null == e) return !1;
@@ -134,8 +134,8 @@ let m = e => {
                 className: a()(f.x6, {
                     [f.r9]: !T && m
                 }),
-                children: (0, r.jsx)(c.K0, {
-                    icon: c.Zge,
+                children: (0, r.jsx)(u.K0, {
+                    icon: u.Zge,
                     size: _,
                     variant: "overlay-secondary",
                     onClick: G,
@@ -148,8 +148,8 @@ let m = e => {
                 className: a()(f.x6, {
                     [f.r9]: !k && m
                 }),
-                children: (0, r.jsx)(c.K0, {
-                    icon: c.KS6,
+                children: (0, r.jsx)(u.K0, {
+                    icon: u.KS6,
                     size: _,
                     variant: "overlay-secondary",
                     onClick: B,
@@ -159,7 +159,7 @@ let m = e => {
                     "aria-controls": y
                 })
             })]
-        }), (0, r.jsx)(c.BJc, {
+        }), (0, r.jsx)(u.BJc, {
             direction: "horizontal",
             gap: n,
             id: y,
@@ -204,7 +204,7 @@ let m = e => {
                             n = Math.max(0, Math.min(t.scrollWidth - t.clientWidth, e));
                         E.current = n, n !== t.scrollLeft && (A.current = !0, S.current = !0, t.scrollTo({
                             left: n,
-                            behavior: j ? "auto" : "smooth"
+                            behavior: C ? "auto" : "smooth"
                         }), t.addEventListener("scrollend", () => {
                             A.current = !1, S.current = !1
                         }, {
@@ -215,7 +215,7 @@ let m = e => {
             onScroll: e => {
                 A.current || (E.current = e.target.scrollLeft, M())
             },
-            children: C
+            children: j
         })]
     })
 }

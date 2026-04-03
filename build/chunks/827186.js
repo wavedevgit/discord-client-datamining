@@ -1,12 +1,12 @@
 /** chunk id: 827186 params = (module,exports,require) **/
 n.d(t, {
-    F: () => s
+    F: () => r
 });
 var i = n(627968);
 n(64700);
 var l = n(397927);
 
-function s(e) {
+function r(e) {
     let {
         listing: t
     } = e;

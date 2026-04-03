@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     l = n(64700),
-    s = n(503698),
-    r = n.n(s),
+    r = n(503698),
+    s = n.n(r),
     a = n(687498),
     o = n(435371),
     d = n(397927),
@@ -25,7 +25,7 @@ function A(e) {
     let {
         className: t,
         guildId: n,
-        channelId: s,
+        channelId: r,
         members: c,
         ref: h,
         motion: A
@@ -43,7 +43,7 @@ function A(e) {
         })
     }, [v, b, T, S]), (0, i.jsxs)(a.animated.div, {
         ref: h,
-        className: r()(p.gg, t),
+        className: s()(p.gg, t),
         "data-count": I,
         "aria-hidden": !0,
         style: {
@@ -52,7 +52,7 @@ function A(e) {
         children: [C.map((e, t) => (0, i.jsx)("div", {
             className: p.my,
             children: (0, i.jsx)(o.m_, {
-                text: _.Ay.getName(n, s, e),
+                text: _.Ay.getName(n, r, e),
                 children: (0, i.jsx)(d.euF, {
                     src: function(e, t, n) {
                         let i = u.Ay.getMember(t, e.id);
@@ -68,7 +68,7 @@ function A(e) {
             })
         }, e.id)), f && (0, i.jsx)(x, {
             guildId: n,
-            channelId: s,
+            channelId: r,
             members: c,
             count: E
         }, "overflow")]
@@ -79,7 +79,7 @@ function x(e) {
     let {
         guildId: t,
         channelId: n,
-        members: s,
+        members: r,
         count: a
     } = e, o = l.useRef(null), {
         isHoveringOrFocusing: u
@@ -88,10 +88,10 @@ function x(e) {
         targetElementRef: o,
         guildId: t,
         channelId: n,
-        users: s,
+        users: r,
         shouldShow: u,
         children: e => (0, i.jsx)("div", {
-            className: r()(p.my, p.k2),
+            className: s()(p.my, p.k2),
             ref: o,
             ...e,
             children: (0, i.jsx)(d.Text, {

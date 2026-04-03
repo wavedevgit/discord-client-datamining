@@ -27,7 +27,7 @@ var a = n(835245),
     S = n(807876),
     x = n(890687),
     v = n(976860),
-    b = n(849823),
+    b = n(718446),
     y = n(858897),
     O = n(962173),
     L = n(287809),
@@ -147,7 +147,7 @@ let B = {
                 case U.XK.USER_SETTINGS:
                     null != i && (0, E.B)(() => {
                         let e = G.BVt.SETTINGS(i.section, i.subsection),
-                            n = (0, b.default)({
+                            n = (0, b.parseSettingsUrl)({
                                 path: e,
                                 search: i.search
                             });

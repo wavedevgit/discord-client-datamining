@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     l = n(64700),
-    s = n(503698),
-    r = n.n(s),
+    r = n(503698),
+    s = n.n(r),
     a = n(714384),
     o = n(740916),
     d = n(191931),
@@ -32,19 +32,19 @@ class f extends l.PureComponent {
             sku: t,
             renderCustomActions: n,
             isMouseOver: l,
-            showBuyInline: s
-        } = this.props, r = (s || !t.requiresPayment) && !e;
+            showBuyInline: r
+        } = this.props, s = (r || !t.requiresPayment) && !e;
         return null != n ? n() : (0, i.jsxs)("div", {
             className: x.ED,
             children: [(0, i.jsx)(o.A, {
                 type: o.A.Types.DIRECTORY_TILE,
                 sku: t,
                 inLibrary: e,
-                className: r && l ? x.ae : x.Ek
+                className: s && l ? x.ae : x.Ek
             }), (0, i.jsx)(a.E, {
                 systems: [A.uje.WINDOWS],
                 className: x.iD
-            }), r ? (0, i.jsx)("div", {
+            }), s ? (0, i.jsx)("div", {
                 children: "deprecated!"
             }) : null]
         })
@@ -54,7 +54,7 @@ class f extends l.PureComponent {
             playing: e,
             muted: t,
             showMediaPlaceholder: n,
-            onToggleMute: s,
+            onToggleMute: r,
             sku: a,
             isHorizontal: o,
             storeListing: p
@@ -67,7 +67,7 @@ class f extends l.PureComponent {
             foregroundImageClassName: x.O7
         }) : (0, i.jsxs)(l.Fragment, {
             children: [(0, i.jsx)(u.A, {
-                className: r()(x.H1, {
+                className: s()(x.H1, {
                     [x.ZC]: o
                 }),
                 video: null != p.previewVideo ? (0, h.YE)(a.applicationId, p.previewVideo) : void 0,
@@ -76,15 +76,15 @@ class f extends l.PureComponent {
                 playing: e,
                 muted: t,
                 placeholder: n,
-                onToggleMute: s,
+                onToggleMute: r,
                 splashClassName: x.ZI,
                 splashPlaceholderClassName: x.NB
             }), a.exclusive ? (0, i.jsx)(c.A, {
-                className: r()(x.LJ, {
+                className: s()(x.LJ, {
                     [x.V9]: e
                 })
             }) : a.isTheGameAwardsWinner ? (0, i.jsx)(d.A, {
-                className: r()(x.LJ, {
+                className: s()(x.LJ, {
                     [x.V9]: e
                 })
             }) : null]
@@ -96,16 +96,16 @@ class f extends l.PureComponent {
             storeListing: t,
             isHorizontal: n,
             className: l,
-            renderCustomTagline: s,
-            renderCustomTitle: r,
+            renderCustomTagline: r,
+            renderCustomTitle: s,
             renderCustomMedia: a,
             isEmbed: o
         } = this.props, d = o ? p.ug : g.A;
         return (0, i.jsx)(d, {
             className: l,
             renderMedia: null != a ? a : this.renderMedia,
-            renderTitle: null != r ? r : () => e.name,
-            renderTagline: null != s ? s : () => t.tagline,
+            renderTitle: null != s ? s : () => e.name,
+            renderTagline: null != r ? r : () => t.tagline,
             renderActions: this.renderActions,
             isHorizontal: n
         })

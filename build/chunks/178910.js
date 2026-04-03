@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var l = n(397927),
-    s = n(104171),
-    r = n(652215),
+    r = n(104171),
+    s = n(652215),
     a = n(985018),
     o = n(582056);
 
@@ -15,19 +15,19 @@ function d(e) {
     let {
         activityUsers: t,
         guildId: n,
-        activityText: r
+        activityText: s
     } = e;
     return (0, i.jsxs)("div", {
         className: o.i,
-        children: [(0, i.jsx)(s.Ay, {
+        children: [(0, i.jsx)(r.Ay, {
             guildId: n,
             users: t,
             max: 6,
-            size: s.DN.SIZE_16
+            size: r.DN.SIZE_16
         }), (0, i.jsx)(l.Text, {
             variant: "text-xs/normal",
             color: "none",
-            children: r
+            children: s
         })]
     })
 }
@@ -38,13 +38,13 @@ function c(e) {
         activityUsersCount: n
     } = e;
     switch (t?.type) {
-        case r.$pd.STREAMING:
+        case s.$pd.STREAMING:
             return {
                 text: a.intl.formatToPlainString(a.t.tyCw2q, {
                     count: n
                 }), Icon: l.ofK
             };
-        case r.$pd.LISTENING:
+        case s.$pd.LISTENING:
             return {
                 text: a.intl.formatToPlainString(a.t["2l8yka"], {
                     count: n

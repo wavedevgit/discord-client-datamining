@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     l = n(64700),
-    s = n(503698),
-    r = n.n(s),
+    r = n(503698),
+    s = n.n(r),
     a = n(284009),
     o = n.n(a),
     d = n(735438),
@@ -50,7 +50,7 @@ function Y(e) {
     let {
         invite: t,
         currentUserId: n,
-        message: s,
+        message: r,
         guild: a,
         onTransitionToInviteChannel: d,
         onAcceptInstantInvite: I
@@ -71,12 +71,12 @@ function Y(e) {
                 currentUserId: t,
                 author: n,
                 voiceStates: i
-            } = e, l = n.id === t, s = i.length > 0, r = i.length;
-            return s ? {
+            } = e, l = n.id === t, r = i.length > 0, s = i.length;
+            return r ? {
                 label: l ? q.intl.format(q.t["2RWMFV"], {
-                    othersCount: r
+                    othersCount: s
                 }) : q.intl.format(q.t.Da7tZx, {
-                    othersCount: r
+                    othersCount: s
                 })
             } : {
                 label: l ? q.intl.string(q.t.DVDvCD) : q.intl.string(q.t.TY77rq),
@@ -84,7 +84,7 @@ function Y(e) {
             }
         }({
             currentUserId: n,
-            author: s.author,
+            author: r.author,
             voiceStates: J
         }),
         $ = (0, m.bG)([P.A], () => null != P.A.getGuild(G.id), [G.id]),
@@ -93,18 +93,18 @@ function Y(e) {
         {
             analyticsLocations: en
         } = (0, C.Ay)(f.A.INVITE_EMBED),
-        ei = (0, T._U)(t.code, s.id),
+        ei = (0, T._U)(t.code, r.id),
         el = l.useCallback(() => {
             let e = $ ? "transition" : "accept";
             $ ? d() : I(), (0, p.he)({
                 invite: t,
                 action: e,
-                inviter_id: s.author.id,
-                invite_message_id: s.id,
+                inviter_id: r.author.id,
+                invite_message_id: r.id,
                 invite_instance_id: ei
             }, en)
-        }, [t, s, en, ei, $, d, I]),
-        es = l.useCallback(() => {
+        }, [t, r, en, ei, $, d, I]),
+        er = l.useCallback(() => {
             $ ? (0, S.iN)(Y.id) : I({
                 autoJoin: !1
             }), w.default.track(V.HAw.VOICE_INVITE_EMBED_BREADCRUMB_CLICKED, {
@@ -116,14 +116,14 @@ function Y(e) {
                 location_stack: en
             })
         }, [Y.id, G.id, t.code, ei, $, en, I]),
-        er = (0, H.A)({
+        es = (0, H.A)({
             invite: t,
-            message: s,
+            message: r,
             voiceStates: J,
             guildId: G.id,
             channelId: Y.id
         }),
-        ea = v.activityPreviewEnabled && null != er;
+        ea = v.activityPreviewEnabled && null != es;
     (0, E.A)({
         name: u.ImpressionNames.VOICE_INVITE_EMBED,
         type: u.ImpressionTypes.VIEW,
@@ -137,14 +137,14 @@ function Y(e) {
         }
     });
     let eo = l.useCallback(() => {
-            null != er && ($ ? (g.default.selectVoiceChannel(er.channelId), (0, A.Nl)(er)) : I(), (0, p.he)({
+            null != es && ($ ? (g.default.selectVoiceChannel(es.channelId), (0, A.Nl)(es)) : I(), (0, p.he)({
                 invite: t,
                 action: $ ? "transition" : "accept",
-                inviter_id: s.author.id,
-                invite_message_id: s.id,
+                inviter_id: r.author.id,
+                invite_message_id: r.id,
                 invite_instance_id: ei
             }, [...en, f.A.VOICE_INVITE_STREAM_PREVIEW]))
-        }, [er, $, t, s, en, ei, I]),
+        }, [es, $, t, r, en, ei, I]),
         ed = (0, m.bG)([x.A], () => x.A.useReducedMotion),
         ec = l.useRef(null),
         [eu, em] = l.useState({
@@ -154,13 +154,13 @@ function Y(e) {
         }),
         e_ = (0, m.bG)([y.A], () => {
             let e = J.map(e => e.user),
-                t = e.find(e => e.id === s.author.id),
-                n = e.filter(e => e.id !== s.author.id).sort((e, t) => {
+                t = e.find(e => e.id === r.author.id),
+                n = e.filter(e => e.id !== r.author.id).sort((e, t) => {
                     let n = y.A.getUserAffinity(e.id)?.vcProbability ?? 0;
                     return (y.A.getUserAffinity(t.id)?.vcProbability ?? 0) - n
                 });
             return null != t ? [t, ...n] : n
-        }, [J, s.author.id]),
+        }, [J, r.author.id]),
         eh = l.useMemo(() => c().throttle(em, 20), [em]);
     l.useEffect(() => () => eh.cancel(), [eh]);
     let ep = l.useCallback(e => {
@@ -170,13 +170,13 @@ function Y(e) {
             let n = (e.clientX - t.left) / t.width * 2 - 1,
                 i = (e.clientY - t.top) / t.height * 2 - 1,
                 l = 0,
-                s = N.current?.getBoundingClientRect();
-            if (null != s) {
-                let n = s.left + s.width / 2,
-                    i = s.top + s.height / 2,
-                    r = e.clientX - n,
+                r = N.current?.getBoundingClientRect();
+            if (null != r) {
+                let n = r.left + r.width / 2,
+                    i = r.top + r.height / 2,
+                    s = e.clientX - n,
                     a = e.clientY - i;
-                l = 2 * Math.exp(-Math.sqrt(r * r + a * a) / (.2 * Math.sqrt(t.width ** 2 + t.height ** 2)))
+                l = 2 * Math.exp(-Math.sqrt(s * s + a * a) / (.2 * Math.sqrt(t.width ** 2 + t.height ** 2)))
             }
             eh({
                 percentX: n,
@@ -193,7 +193,7 @@ function Y(e) {
         }, [eh]);
     return (0, i.jsxs)("div", {
         ref: ec,
-        className: r()(W.kL, {
+        className: s()(W.kL, {
             [W.VD]: ea
         }),
         onMouseMove: ep,
@@ -207,7 +207,7 @@ function Y(e) {
             }
         }), ea ? (0, i.jsx)(K, {
             className: W.tB,
-            stream: er
+            stream: es
         }) : null, (0, i.jsxs)("div", {
             className: W.rf,
             children: [(0, i.jsxs)("div", {
@@ -215,7 +215,7 @@ function Y(e) {
                 children: [(0, i.jsx)(U.A, {
                     channel: Y,
                     guild: G,
-                    onClick: es
+                    onClick: er
                 }), (0, i.jsxs)("div", {
                     className: W.WD,
                     children: [ea ? (0, i.jsx)(z, {
@@ -237,7 +237,7 @@ function Y(e) {
                     }) : null]
                 })]
             }), ea ? (0, i.jsx)(B.A, {
-                stream: er,
+                stream: es,
                 currentUserId: n,
                 onClick: eo,
                 className: W.Rh
@@ -294,15 +294,15 @@ function Q(e) {
     let {
         guildId: t,
         channelId: n,
-        members: s
-    } = e, r = l.useRef(null), {
+        members: r
+    } = e, s = l.useRef(null), {
         isHoveringOrFocusing: a
-    } = (0, I.A)(r);
+    } = (0, I.A)(s);
     return (0, i.jsx)(G.$, {
         guildId: t,
         channelId: n,
-        users: s,
-        targetElementRef: r,
+        users: r,
+        targetElementRef: s,
         shouldShow: a,
         children: e => (0, i.jsx)("div", {
             className: W.WM,
@@ -310,13 +310,13 @@ function Q(e) {
             children: (0, i.jsx)(N.A, {
                 guildId: t,
                 partySize: {
-                    knownSize: s.length,
+                    knownSize: r.length,
                     unknownSize: 0,
-                    totalSize: s.length
+                    totalSize: r.length
                 },
                 maxAvatarsShown: 3,
-                members: s,
-                overflowRef: r
+                members: r,
+                overflowRef: s
             })
         })
     })
@@ -328,10 +328,10 @@ function K(e) {
         stream: n
     } = e, {
         previewUrl: l,
-        isLoading: s
-    } = (0, v.A)(n.guildId, n.channelId, n.ownerId), a = null != l && !s;
+        isLoading: r
+    } = (0, v.A)(n.guildId, n.channelId, n.ownerId), a = null != l && !r;
     return (0, i.jsx)("div", {
-        className: r()(t, W.rr, {
+        className: s()(t, W.rr, {
             [W.pc]: !a
         }),
         style: {

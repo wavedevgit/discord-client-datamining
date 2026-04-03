@@ -5,8 +5,8 @@ n.d(t, {
 }), n(321073), n(134528), n(947204);
 var i = n(627968),
     l = n(64700),
-    s = n(485845),
-    r = n(379834),
+    r = n(485845),
+    s = n(379834),
     a = n(311907),
     o = n(397927),
     d = n(795816),
@@ -43,8 +43,8 @@ function U(e) {
     let {
         app: t,
         linkType: n,
-        activityCustomId: s,
-        activityReferrerId: r,
+        activityCustomId: r,
+        activityReferrerId: s,
         message: o,
         onView: g
     } = e, {
@@ -58,7 +58,7 @@ function U(e) {
         staticBannerSrc: S,
         videoBannerSrc: L,
         bannerAspectRatio: w
-    } = (0, D.f)(t), k = (0, a.bG)([E.default], () => r ?? E.default.getId(), [r]), {
+    } = (0, D.f)(t), k = (0, a.bG)([E.default], () => s ?? E.default.getId(), [s]), {
         analyticsLocations: U
     } = (0, m.Ay)(u.A.APP_MESSAGE_EMBED), {
         currentChannelId: F,
@@ -90,7 +90,7 @@ function U(e) {
                     applicationId: t.id,
                     isStart: null == H,
                     embeddedActivitiesManager: W,
-                    customId: s,
+                    customId: r,
                     referrerId: k,
                     analyticsLocations: U
                 })
@@ -104,12 +104,12 @@ function U(e) {
                     appId: t.id,
                     botId: v,
                     analyticsLocations: U,
-                    customId: s,
+                    customId: r,
                     referrerId: k
                 })
             }
         })) : null != X && e.push(X), e
-    }, [b, X, K, t.id, Q, z, H, V, F, W, s, k, U, v]), $ = b ? (0, i.jsx)(G, {
+    }, [b, X, K, t.id, Q, z, H, V, F, W, r, k, U, v]), $ = b ? (0, i.jsx)(G, {
         app: t
     }) : (0, i.jsx)(B, {
         app: t
@@ -128,7 +128,7 @@ function U(e) {
             id: t.id,
             linkType: n,
             referrerId: k,
-            activityCustomId: s,
+            activityCustomId: r,
             onView: g,
             guildId: I.A.getChannel(o.channel_id)?.guild_id,
             channelId: o.channel_id,
@@ -144,9 +144,9 @@ function B(e) {
         customInstallUrl: t.customInstallUrl,
         installParams: t.installParams,
         integrationTypesConfig: t.integrationTypesConfig
-    }) && null != t.integrationTypesConfig && s.b.GUILD_INSTALL in t.integrationTypesConfig, r = (0, a.bG)([C.default], () => C.default.locale, []), d = l.useMemo(() => {
+    }) && null != t.integrationTypesConfig && r.b.GUILD_INSTALL in t.integrationTypesConfig, s = (0, a.bG)([C.default], () => C.default.locale, []), d = l.useMemo(() => {
         if (!n) return null;
-        let e = new Intl.NumberFormat(r, {
+        let e = new Intl.NumberFormat(s, {
                 notation: "compact",
                 compactDisplay: "short"
             }),
@@ -154,7 +154,7 @@ function B(e) {
         return 0 === i ? null : O.intl.format(O.t["6IW6Wi"], {
             guildCount: e.format(i)
         })
-    }, [t.directoryEntry?.guild_count, n, r]), c = t.categories?.at(0)?.name;
+    }, [t.directoryEntry?.guild_count, n, s]), c = t.categories?.at(0)?.name;
     return (0, i.jsxs)(i.Fragment, {
         children: [null != c && (0, i.jsx)(o.Text, {
             variant: "text-xs/medium",
@@ -179,7 +179,7 @@ function G(e) {
         app: t
     } = e, {
         tags: n,
-        maxParticipants: s = 0
+        maxParticipants: r = 0
     } = t, d = (0, a.bG)([b.A], () => b.A.getGuildId() ?? void 0, []), c = (0, f.s)(t.id), u = (0, a.yK)([T.default, v.A], () => {
         let e = [];
         for (let [t, n] of c.entries()) {
@@ -197,14 +197,14 @@ function G(e) {
                 count: u.length
             })
         });
-        if (c.some(e => (0, g.CZ)(e) === r.m.GLOBAL)) return (0, i.jsxs)(i.Fragment, {
+        if (c.some(e => (0, g.CZ)(e) === s.m.GLOBAL)) return (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)(o.Y3C, {
                 size: "xxs",
                 color: "currentColor"
             }), O.intl.string(O.t.TsWCdW)]
         });
-        let e = s > 0 ? O.intl.format(O.t.z8EAJW, {
-            count: s
+        let e = r > 0 ? O.intl.format(O.t.z8EAJW, {
+            count: r
         }) : O.intl.string(O.t.RjceQU);
         return (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)(o.nys, {
@@ -212,7 +212,7 @@ function G(e) {
                 color: "currentColor"
             }), e]
         })
-    }, [c, u, d, s]);
+    }, [c, u, d, r]);
     return (0, i.jsxs)(i.Fragment, {
         children: [n.length > 0 && (0, i.jsx)(o.Text, {
             variant: "text-xs/medium",

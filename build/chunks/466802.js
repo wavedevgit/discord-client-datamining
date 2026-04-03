@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     l = n(64700),
-    s = n(503698),
-    r = n.n(s),
+    r = n(503698),
+    s = n.n(r),
     a = n(989349),
     o = n.n(a),
     d = n(311907),
@@ -120,7 +120,7 @@ class q extends l.Component {
             code: n,
             content: i,
             type: l,
-            giftInfo: s
+            giftInfo: r
         } = this.props;
         e.preventDefault(), e.stopPropagation(), P.default.track(U.HAw.OPEN_MODAL, {
             type: "gift_accept",
@@ -129,12 +129,12 @@ class q extends l.Component {
                 object: U.ZSU.BUTTON_CTA
             }
         });
-        let r = l !== U.lAJ.CUSTOM_GIFT ? void 0 : i;
+        let s = l !== U.lAJ.CUSTOM_GIFT ? void 0 : i;
         (0, f.h)({
             processedCode: n,
             channelContext: t,
-            customGiftMessage: r,
-            giftInfo: s
+            customGiftMessage: s,
+            giftInfo: r
         })
     };handleEmbedClick = e => {
         let {
@@ -190,7 +190,7 @@ class q extends l.Component {
             libraryApplication: t,
             currentUser: n,
             isSelfGift: l
-        } = this.props, s = !e.isSubscription && null != t || !e.isSelfRedeemable && l || e.isExistingPremiumSubscriptionDisallowed && (0, M.TW)(n), r = e.redeemed || s || e.isClaimed || !n.verified, a = e.redeemed ? G.intl.string(G.t.BTihou) : null != e.giftStyle ? G.intl.string(G.t.TiZFqX) : G.intl.string(G.t.bUvv1f);
+        } = this.props, r = !e.isSubscription && null != t || !e.isSelfRedeemable && l || e.isExistingPremiumSubscriptionDisallowed && (0, M.TW)(n), s = e.redeemed || r || e.isClaimed || !n.verified, a = e.redeemed ? G.intl.string(G.t.BTihou) : null != e.giftStyle ? G.intl.string(G.t.TiZFqX) : G.intl.string(G.t.bUvv1f);
         return (0, i.jsx)("div", {
             className: (0, g.hU)(e) ? F.UQ : void 0,
             children: (0, i.jsx)(c.Button, {
@@ -198,7 +198,7 @@ class q extends l.Component {
                 size: "sm",
                 text: a,
                 onClick: this.handleAccept,
-                disabled: r
+                disabled: s
             })
         })
     }
@@ -224,8 +224,8 @@ class q extends l.Component {
             isSelfGift: n,
             sku: i,
             gifter: l,
-            subscriptionPlan: s,
-            currentUser: r
+            subscriptionPlan: r,
+            currentUser: s
         } = this.props;
         if (null == i) return G.intl.string(G.t.ZTNur7);
         if (!n && this.isCustomGiftMessage() && !e.redeemed) return (0, I.bF)(i) ? this.props.content : void 0;
@@ -241,7 +241,7 @@ class q extends l.Component {
             onViewInLibrary: this.handleViewLibrary
         });
         if (e.isClaimed) return G.intl.string(G.t.ARWFQX);
-        if (!r.verified) return G.intl.format(G.t.GQxl7v, {
+        if (!s.verified) return G.intl.format(G.t.GQxl7v, {
             onClick: this.handleVerificationClick
         });
         if (n) return e.isSelfRedeemable ? G.intl.string(G.t["lQI+cB"]) : G.intl.formatToPlainString(G.t["A+etHx"], {
@@ -264,19 +264,19 @@ class q extends l.Component {
             skuName: a
         });
         if (e.isSubscription) {
-            if (null == s) return G.intl.string(G.t.ZTNur7);
+            if (null == r) return G.intl.string(G.t.ZTNur7);
             if (null != l) {
-                let e = s.interval === B.WT.MONTH ? G.t["/RDIEA"] : G.t["3CX6Ev"];
+                let e = r.interval === B.WT.MONTH ? G.t["/RDIEA"] : G.t["3CX6Ev"];
                 return G.intl.format(e, {
                     username: O.Ay.getUserTag(l),
                     skuName: a,
-                    intervalCount: s.intervalCount
+                    intervalCount: r.intervalCount
                 })
             }
-            let e = s.interval === B.WT.MONTH ? G.t["2O4lo5"] : G.t["+XjmsR"];
+            let e = r.interval === B.WT.MONTH ? G.t["2O4lo5"] : G.t["+XjmsR"];
             return G.intl.format(e, {
                 skuName: a,
-                intervalCount: s.intervalCount
+                intervalCount: r.intervalCount
             })
         }
         return null != l ? G.intl.format(G.t["3HsdQ/"], {
@@ -289,11 +289,11 @@ class q extends l.Component {
         } = this.props;
         if (null == e || null == e.giftStyle) return null;
         let n = B.Wx.includes(e.giftStyle),
-            l = r()(F.gB, {
+            l = s()(F.gB, {
                 [F.El]: n,
                 [F.by]: t >= u.Tm
             }),
-            s = r()({
+            r = s()({
                 [F.gc]: n,
                 [F.Ei]: n && t >= u.Tm,
                 [F.ww]: !n,
@@ -306,7 +306,7 @@ class q extends l.Component {
             }), null != e.giftStyle && (0, i.jsx)(C.A, {
                 defaultAnimationState: e.redeemed ? x.oA.LOOP : x.oA.IDLE,
                 giftStyle: e.giftStyle,
-                className: s
+                className: r
             })]
         })
     };renderPromotionActions() {
@@ -342,7 +342,7 @@ class q extends l.Component {
             resolved: t,
             resolveErrorCode: n,
             width: l,
-            isSelfGift: s
+            isSelfGift: r
         } = this.props;
         if (null != e && null != e.promotion) return (0, i.jsx)(k.k, {
             skuId: e.skuId,
@@ -355,7 +355,7 @@ class q extends l.Component {
         });
         if (null == e || e.revoked)
             if (t) return (0, i.jsx)(V, {
-                isSelfGift: s,
+                isSelfGift: r,
                 width: l,
                 resolveErrorCode: n
             });
@@ -375,8 +375,8 @@ let W = (0, _.A)((0, m.A)(q)),
             author: n
         } = e, {
             giftCode: l,
-            resolved: s,
-            resolveErrorCode: r
+            resolved: r,
+            resolveErrorCode: s
         } = (0, d.cf)([S.A], () => {
             let e = S.A.getError(t);
             return {
@@ -389,8 +389,8 @@ let W = (0, _.A)((0, m.A)(q)),
             ...e,
             skuApplication: u,
             giftCode: l,
-            resolved: s,
-            resolveErrorCode: r,
+            resolved: r,
+            resolveErrorCode: s,
             gifter: a,
             libraryApplication: c,
             subscriptionPlan: m,

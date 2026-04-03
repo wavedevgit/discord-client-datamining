@@ -99,7 +99,7 @@ var i = n(627968),
     eF = n(791767),
     eY = n(780964),
     eW = n(452379),
-    eK = n(849823),
+    eK = n(718446),
     eq = n(858897),
     ez = n(32294),
     e$ = n(639823),
@@ -179,7 +179,7 @@ let ts = (0, p.z)(e => {
         return (0, Z.B)(() => {
             let e = R.A.getHighestState();
             if (e === tn.fAW.OPEN || e === tn.fAW.OPENING) return;
-            let n = (0, eK.default)({
+            let n = (0, eK.parseSettingsUrl)({
                 path: t.pathname,
                 search: t.search
             });

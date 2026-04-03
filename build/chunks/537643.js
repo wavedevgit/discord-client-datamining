@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(64700),
     l = n(311907),
-    s = n(139675),
-    r = n(835517),
+    r = n(139675),
+    s = n(835517),
     a = n(729394),
     o = n(216184);
 let d = e => {
@@ -28,8 +28,8 @@ let d = e => {
             cachedImageURL: null,
             imageURL: null
         };
-        let a = 600 * (0, r.A)(),
-            d = (n?.assets?.invite_cover_image != null ? (0, s.uD)(n.application_id, n.assets.invite_cover_image, a) : null) ?? l ?? i.getCoverImageURL(a) ?? null;
+        let a = 600 * (0, s.A)(),
+            d = (n?.assets?.invite_cover_image != null ? (0, r.uD)(n.application_id, n.assets.invite_cover_image, a) : null) ?? l ?? i.getCoverImageURL(a) ?? null;
         return {
             cachedImageURL: l,
             imageURL: d

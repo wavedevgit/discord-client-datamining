@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     l = n(64700),
-    s = n(158954),
-    r = n(311907),
+    r = n(158954),
+    s = n(311907),
     a = n(52133),
     o = n(827734),
     d = n(397927),
@@ -37,7 +37,7 @@ function L() {
             size: "xs",
             className: j.nr,
             color: o.A.colors.TEXT_MUTED
-        }), (0, i.jsx)(s.EYj, {
+        }), (0, i.jsx)(r.EYj, {
             className: j.TK,
             variant: "text-sm/semibold",
             color: "text-muted",
@@ -51,7 +51,7 @@ function R(e) {
         message: t,
         snapshot: n,
         index: c
-    } = e, m = l.useMemo(() => new b.j(t, n, c), [t, n, c]), _ = (0, r.bG)([x.A, v.default, I.A, E.A, C.A, u.A], () => m.getForwardInfo(x.A, v.default, I.A, E.A, C.A, u.A).footerInfo, [m], a.A), h = (0, r.bG)([x.A], () => x.A.getChannel(t.messageReference?.channel_id)), p = l.useCallback(() => {
+    } = e, m = l.useMemo(() => new b.j(t, n, c), [t, n, c]), _ = (0, s.bG)([x.A, v.default, I.A, E.A, C.A, u.A], () => m.getForwardInfo(x.A, v.default, I.A, E.A, C.A, u.A).footerInfo, [m], a.A), h = (0, s.bG)([x.A], () => x.A.getChannel(t.messageReference?.channel_id)), p = l.useCallback(() => {
         (0, T.A)(t)
     }, [t]);
     return null == _ ? null : (0, i.jsxs)(d.DUT, {
@@ -64,7 +64,7 @@ function R(e) {
             alt: ""
         }) : null, null == _.originIconUrl && h?.isThread() ? (0, i.jsx)(P, {
             channel: h
-        }) : null, (0, i.jsx)(s.EYj, {
+        }) : null, (0, i.jsx)(r.EYj, {
             className: j.PJ,
             variant: "text-sm/medium",
             color: "none",
@@ -81,8 +81,8 @@ function P(e) {
         channel: t
     } = e, n = (0, g.Vp)({
         location: "ForwardFooter"
-    }), s = l.useMemo(() => (0, c.gU)(t), [t]);
-    return n.enabled && null != s ? (0, i.jsx)(s, {
+    }), r = l.useMemo(() => (0, c.gU)(t), [t]);
+    return n.enabled && null != r ? (0, i.jsx)(r, {
         className: j.yl,
         size: "xs",
         color: "currentColor"
@@ -93,8 +93,8 @@ function D(e) {
     let {
         message: t,
         snapshot: n,
-        index: s
-    } = e, a = l.useMemo(() => (0, N.A)(t, n), [t, n]), o = A.hD.useSetting(), d = A.rs.useSetting(), c = (0, r.bG)([f.A], () => f.A.isDeveloper), u = (0, m.S)((a.editedTimestamp ?? a.timestamp).valueOf()), {
+        index: r
+    } = e, a = l.useMemo(() => (0, N.A)(t, n), [t, n]), o = A.hD.useSetting(), d = A.rs.useSetting(), c = (0, s.bG)([f.A], () => f.A.isDeveloper), u = (0, m.S)((a.editedTimestamp ?? a.timestamp).valueOf()), {
         content: g,
         hasSpoilerEmbeds: C,
         hasBailedAst: E
@@ -107,7 +107,7 @@ function D(e) {
         allowLinks: !0,
         allowDevLinks: c,
         previewLinkTarget: !0
-    }), I = (0, r.bG)([x.A], () => x.A.getChannel(t.channel_id)), v = A.hH.useSetting();
+    }), I = (0, s.bG)([x.A], () => x.A.getChannel(t.channel_id)), v = A.hH.useSetting();
     return null == I ? null : (0, i.jsxs)("div", {
         className: j.kL,
         children: [(0, i.jsx)("div", {
@@ -132,10 +132,10 @@ function D(e) {
             }), (0, i.jsx)(R, {
                 message: t,
                 snapshot: n,
-                index: s
+                index: r
             })]
         })]
-    }, s)
+    }, r)
 }
 
 function M(e) {

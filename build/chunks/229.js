@@ -37,9 +37,9 @@ var T = n(491509),
     w = n(210714),
     k = n(493527),
     D = n(544395),
-    B = n(546727),
+    P = n(546727),
     U = n(975169),
-    P = n(794696),
+    B = n(794696),
     G = n(961350),
     F = n(153488),
     M = n(650048),
@@ -565,7 +565,7 @@ class ei extends s.PureComponent {
                 username: e.toLocaleLowerCase(),
                 usernameClientError: 0 === e.length ? $.intl.string($.t.EkokLy) : null
             })
-        }, B = null != e ? (0, i.jsx)(s.Fragment, {
+        }, P = null != e ? (0, i.jsx)(s.Fragment, {
             children: e()
         }, "custom-header") : (0, i.jsx)(v.hE, {
             children: $.intl.string($.t.wC4TlR)
@@ -614,7 +614,7 @@ class ei extends s.PureComponent {
                         globalNameFocused: !1
                     }), this.trackInputBlur("global_name")
                 }
-            }), (0, i.jsx)(P.A, {
+            }), (0, i.jsx)(B.A, {
                 show: u,
                 top: -12,
                 bottom: 20,
@@ -685,7 +685,7 @@ class ei extends s.PureComponent {
             onSubmit: this.handleSubmit,
             tag: "form",
             className: l()(y, Z.Sy),
-            children: () => [B, (0, i.jsxs)("div", {
+            children: () => [P, (0, i.jsxs)("div", {
                 className: Z.Uu,
                 children: [(0, i.jsx)(v.hE, {
                     className: Z.lR,
@@ -705,7 +705,7 @@ class ei extends s.PureComponent {
                     icon: _.n2b,
                     iconPosition: "start"
                 })
-            }) : null, B, U]
+            }) : null, P, U]
         })
     }
     render() {
@@ -768,14 +768,14 @@ function er(e) {
         d = (0, U.i)(n, !0, !0),
         c = n.length > 0;
     return t = c ? (0, o.YW)(d).with({
-        type: B.q.ERROR,
+        type: P.q.ERROR,
         message: o.P.select()
     }, e => (0, i.jsx)(_.Text, {
         className: Z.vU,
         variant: "text-sm/normal",
         children: e
     })).with({
-        type: B.q.AVAILABLE,
+        type: P.q.AVAILABLE,
         message: o.P.select()
     }, e => (0, i.jsx)(_.Text, {
         className: Z.vq,
@@ -796,8 +796,8 @@ function er(e) {
         variant: "text-sm/normal",
         color: "text-default",
         children: $.intl.string($.t.z7c4bP)
-    }), (0, i.jsx)(P.A, {
-        show: c && d?.type === B.q.ERROR || l,
+    }), (0, i.jsx)(B.A, {
+        show: c && d?.type === P.q.ERROR || l,
         top: -12,
         bottom: 20,
         children: t

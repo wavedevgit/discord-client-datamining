@@ -1,42 +1,44 @@
 /** chunk id: 371158 params = (module,exports,require) **/
 i.d(e, {
-    default: () => h
+    default: () => k
 });
 var n = i(627968),
     a = i(64700),
     l = i(158954),
     r = i(397927),
-    c = i(181658),
-    s = i(976860),
+    s = i(181658),
+    c = i(976860),
     o = i(253932),
-    d = i(779733),
-    u = i(652215),
-    p = i(842130),
+    d = i(718446),
+    u = i(779733),
+    p = i(652215),
+    h = i(355097),
+    x = i(842130),
     f = i(985018);
 
-function h(t) {
+function k(t) {
     let {
         transitionState: e,
         onClose: i
-    } = t, [h, x] = a.useState(!1), [k, S] = a.useState(null), C = async () => {
-        S(null), x(!0);
+    } = t, [k, C] = a.useState(!1), [g, S] = a.useState(null), y = async () => {
+        S(null), C(!0);
         try {
-            await o.dm.updateSetting(!1), (0, s.pX)(u.BVt.FRIENDS), (0, d.default)(), i()
+            await o.dm.updateSetting(!1), (0, c.pX)(p.BVt.FRIENDS), (0, u.default)(), i()
         } catch (t) {
-            S(new c.A(t).getAnyErrorMessage())
+            S(new s.A(t).getAnyErrorMessage())
         } finally {
-            x(!1)
+            C(!1)
         }
-    }, g = () => {
-        (0, s.pX)(u.BVt.SETTINGS("family-center")), i()
+    }, E = () => {
+        (0, c.pX)((0, d.settingsPathToRoute)(h.od.FAMILY_CENTER)), i()
     };
     return (0, n.jsx)(l.Modal, {
         transitionState: e,
         onClose: i,
-        title: f.intl.string(p.default.VGB30H),
-        subtitle: f.intl.format(p.default["CrZZ+p"], {
+        title: f.intl.string(x.default.VGB30H),
+        subtitle: f.intl.format(x.default["CrZZ+p"], {
             openSettingsHook: (t, e) => (0, n.jsx)(r.MzZ, {
-                onClick: g,
+                onClick: E,
                 children: t
             }, e)
         }),
@@ -45,16 +47,16 @@ function h(t) {
             text: f.intl.string(f.t["ETE/oC"]),
             onClick: i
         }, {
-            text: f.intl.string(p.default.cSb7U0),
-            onClick: C,
-            loading: h,
+            text: f.intl.string(x.default.cSb7U0),
+            onClick: y,
+            loading: k,
             variant: "critical-primary"
         }],
         children: (0, n.jsx)("div", {
-            children: null != k && (0, n.jsx)(r.Text, {
+            children: null != g && (0, n.jsx)(r.Text, {
                 variant: "text-xs/normal",
                 color: "text-feedback-critical",
-                children: k
+                children: g
             })
         })
     })

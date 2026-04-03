@@ -2,26 +2,26 @@
 n.d(t, {
     EY: () => d,
     KW: () => c,
-    a: () => r,
+    a: () => s,
     ig: () => o,
     kt: () => a
 });
 var i = n(198982);
 n(576705);
 var l = n(652215),
-    s = n(985018);
-let r = "_role";
+    r = n(985018);
+let s = "_role";
 
 function a(e) {
     if (!(e >= 0)) switch (-e) {
         case l.t02.ENTITY_TOO_LARGE:
-            return s.intl.string(s.t.YbdEFK);
+            return r.intl.string(r.t.YbdEFK);
         case l.t02.INVALID_SKU_ATTACHMENT_NO_ARCHIVES:
-            return s.intl.string(s.t.ZaXBoD);
+            return r.intl.string(r.t.ZaXBoD);
         case 1:
-            return s.intl.string(s.t.R0RpRX);
+            return r.intl.string(r.t.R0RpRX);
         default:
-            return s.intl.formatToPlainString(s.t.cYwlp9, {
+            return r.intl.formatToPlainString(r.t.cYwlp9, {
                 code: -e
             })
     }
@@ -33,12 +33,12 @@ function o(e) {
     } = e;
     if (null != t && "" === t.name.trim()) {
         var n;
-        return n = s.intl.string(s.t["V0B/k6"]), new i.LG({
+        return n = r.intl.string(r.t["V0B/k6"]), new i.LG({
             status: 400,
             body: {
                 message: "Invalid form body",
                 errors: {
-                    [r]: {
+                    [s]: {
                         _errors: [{
                             code: "",
                             message: n
@@ -56,13 +56,13 @@ function d(e) {
         name: n,
         priceTier: i,
         description: l,
-        image: s,
-        imageName: r,
+        image: r,
+        imageName: s,
         isImageChanged: a,
         newRoleParams: o,
         hasUnsavedAttachmentChanges: d
     } = e, c = {};
-    t?.name !== n && "" !== n.trim() && (c.name = n), (t?.description ?? "") !== l && (c.description = l), t?.price_tier !== i && null != i && (c.priceTier = i), null != o && "" !== o.name.trim() ? c.createNewRole = !0 : null === o && (c.unlinkRole = !0), s.startsWith("data:") && (a || null == t && (Object.keys(c).length > 0 || d)) && (c.image = s, c.imageName = r);
+    t?.name !== n && "" !== n.trim() && (c.name = n), (t?.description ?? "") !== l && (c.description = l), t?.price_tier !== i && null != i && (c.priceTier = i), null != o && "" !== o.name.trim() ? c.createNewRole = !0 : null === o && (c.unlinkRole = !0), r.startsWith("data:") && (a || null == t && (Object.keys(c).length > 0 || d)) && (c.image = r, c.imageName = s);
     let u = Object.keys(c).length > 0 || d;
     return {
         changes: c,

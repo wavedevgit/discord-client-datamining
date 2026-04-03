@@ -7,8 +7,8 @@ n.d(t, {
 }), n(801541);
 var i = n(889137),
     l = n(966974),
-    s = n(775602),
-    r = n(508675),
+    r = n(775602),
+    s = n(508675),
     a = n(7584),
     o = n(229527),
     d = n(316031),
@@ -52,8 +52,8 @@ function y(e, t) {
     } = e;
     if (null == i) return;
     let l = e.state === v.cmJ.SENT,
-        s = l ? n ?? (0, I.J)(i.expiry) : "",
-        r = null == s && l,
+        r = l ? n ?? (0, I.J)(i.expiry) : "",
+        s = null == r && l,
         {
             selectedAnswerIds: a,
             submitting: _,
@@ -69,7 +69,7 @@ function y(e, t) {
     let f = a.size > 0,
         C = g.some(e => !0 === e.me_vote),
         E = !h && C,
-        b = E || r || p,
+        b = E || s || p,
         N = l && x && (!C || h || b),
         y = c.A.getChannel(e.getChannelId())?.getGuildId?.(),
         j = null != y ? u.Ay.getSelfMember(y) : null,
@@ -79,15 +79,15 @@ function y(e, t) {
     return {
         poll: i,
         canTapAnswers: N,
-        canRemoveVote: E && l && !r,
+        canRemoveVote: E && l && !s,
         canShowVoteCounts: b,
         canSubmitVote: P,
-        expirationLabel: s,
+        expirationLabel: r,
         hasSelectedAnswer: f,
         hasVoted: E,
         hasVoteRecorded: C,
         isEditingVote: h,
-        isExpired: r,
+        isExpired: s,
         isInteractive: x,
         isSent: l,
         reactions: g,
@@ -109,7 +109,7 @@ function j(e, t) {
     if (null == u) return;
     let m = _.default.getCurrentUser();
     if (null == m) return;
-    let A = s.A.useReducedMotion,
+    let A = r.A.useReducedMotion,
         I = c.A.getChannel(e.getChannelId())?.getGuildId?.(),
         v = (0, C.T)(m, I),
         T = u.answers,
@@ -140,11 +140,11 @@ function j(e, t) {
         let t = N(G, `${e.answer_id}`);
         return t?.count_details?.vote ?? 0
     })), Q = T.map(e => {
-        let t, s = `${e.answer_id}`,
-            o = N(G, s),
+        let t, r = `${e.answer_id}`,
+            o = N(G, r),
             d = o?.count_details?.vote ?? 0,
             c = 0 === W ? 0 : d / W,
-            u = F.has(s),
+            u = F.has(r),
             m = d >= z && 0 !== d,
             _ = O && (o?.me_vote ?? !1),
             g = (t = {
@@ -180,7 +180,7 @@ function j(e, t) {
                 showResults: !0
             }, () => "notVoted").otherwise(() => "normalVote"));
         return {
-            answerId: s,
+            answerId: r,
             pollMedia: {
                 text: e.poll_media.text,
                 emoji: function(e) {
@@ -190,7 +190,7 @@ function j(e, t) {
                     } = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
                     if (null == e) return;
                     let i = e.animated;
-                    null == i && null != e.id && (i = r.Ay.getCustomEmojiById(e.id)?.animated ?? !1);
+                    null == i && null != e.id && (i = s.Ay.getCustomEmojiById(e.id)?.animated ?? !1);
                     let l = t && (i ?? !1);
                     return {
                         id: null == e.id ? null : `${e.id}`,

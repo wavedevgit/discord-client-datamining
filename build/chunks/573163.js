@@ -4,8 +4,8 @@ n.d(t, {
 }), n(321073);
 var i = n(627968),
     l = n(64700),
-    s = n(503698),
-    r = n.n(s),
+    r = n(503698),
+    s = n.n(r),
     a = n(73939),
     o = n(397927),
     d = n(505527),
@@ -38,7 +38,7 @@ class x extends l.PureComponent {
             disableReactionCreates: t,
             disableReactionUpdates: n,
             isLurking: l,
-            isPendingMember: s,
+            isPendingMember: r,
             isForumToolbar: d,
             channel: A,
             className: x,
@@ -56,7 +56,7 @@ class x extends l.PureComponent {
         let j = f || y;
         return (0, i.jsxs)(a.F, {
             component: "div",
-            className: r()(S.reactions, x),
+            className: s()(S.reactions, x),
             transitionAppear: !N,
             role: "group",
             transitionLeave: !1,
@@ -72,7 +72,7 @@ class x extends l.PureComponent {
                 message: e,
                 readOnly: n,
                 isLurking: l,
-                isPendingMember: s,
+                isPendingMember: r,
                 isForumToolbar: d,
                 useChatFontScaling: E,
                 className: C
@@ -80,7 +80,7 @@ class x extends l.PureComponent {
                 onClick: t => {
                     t.stopPropagation(), (0, _.$l)(A, e)
                 },
-                className: r()(S.reaction, C, S.remainingReactions),
+                className: s()(S.reaction, C, S.remainingReactions),
                 "aria-label": h.intl.string(h.t.lfIHs4),
                 children: (0, i.jsxs)(o.Text, {
                     className: S.reactionInner,
@@ -93,7 +93,7 @@ class x extends l.PureComponent {
                 channel: A,
                 useChatFontScaling: E,
                 isHovered: this.state.isHovered,
-                className: r()({
+                className: s()({
                     [S.forceShow]: j
                 })
             })]
@@ -104,9 +104,9 @@ let f = e => {
     let {
         message: t,
         maxReactions: n,
-        hoistReaction: s
+        hoistReaction: r
     } = e, {
-        combinedReactions: r,
+        combinedReactions: s,
         remainingReactions: a,
         visibleReactionsCount: o
     } = l.useMemo(() => {
@@ -115,9 +115,9 @@ let f = e => {
                 if (null == t) return e;
                 let n = e.findIndex(e => A(e.emoji.id, t?.id) && A(e.emoji.name, t?.name));
                 return n < 0 ? e : [e[n], ...e.slice(0, n), ...e.slice(n + 1)]
-            })(t.reactions, s),
+            })(t.reactions, r),
             l = null != n && n < i.length ? i.slice(0, n) : i,
-            r = i.length - l.length,
+            s = i.length - l.length,
             a = i.length;
         return l.forEach(t => {
             t.burst_count > 0 && e.push({
@@ -130,13 +130,13 @@ let f = e => {
         }), {
             combinedReactions: e,
             visibleReactionsCount: a,
-            remainingReactions: r
+            remainingReactions: s
         }
-    }, [s, n, t.reactions]);
+    }, [r, n, t.reactions]);
     return (0, i.jsx)(x, {
         ...e,
         visibleReactionsCount: o,
-        combinedReactions: r,
+        combinedReactions: s,
         remainingReactions: a
     })
 }

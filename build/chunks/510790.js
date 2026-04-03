@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     l = n(64700),
-    s = n(735438),
-    r = n(110259),
+    r = n(735438),
+    s = n(110259),
     a = n(239947),
     o = n(934551),
     d = n(97808),
@@ -61,9 +61,9 @@ let T = e => e.map(e => `#${e}`),
                 sharedClientTheme: g
             } = h,
             A = (0, p.Ay)(h),
-            x = l.useMemo(() => (0, s.once)(() => {
+            x = l.useMemo(() => (0, r.once)(() => {
                 (0, m.x)({
-                    type: r.ImpressionTypes.VIEW,
+                    type: s.ImpressionTypes.VIEW,
                     name: a.I.CUSTOM_THEME_SHARE,
                     properties: {}
                 })

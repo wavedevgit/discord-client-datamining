@@ -3,9 +3,9 @@ n.d(t, {
     A: () => E
 });
 var i, l = n(627968),
-    s = n(64700),
-    r = n(503698),
-    a = n.n(r),
+    r = n(64700),
+    s = n(503698),
+    a = n.n(s),
     o = n(397927),
     d = n(360560),
     c = n(985018),
@@ -93,7 +93,7 @@ let _ = e => {
             children: c.intl.string(c.t.QQsaCc)
         })
     };
-class C extends s.PureComponent {
+class C extends r.PureComponent {
     static Types = m;
     getState() {
         let {
@@ -177,7 +177,7 @@ class C extends s.PureComponent {
                 t = (0, l.jsx)(f, {});
                 break;
             case 2:
-                t = (0, l.jsxs)(s.Fragment, {
+                t = (0, l.jsxs)(r.Fragment, {
                     children: [(0, l.jsxs)("div", {
                         className: u.nM,
                         children: [(0, l.jsx)(A, {

@@ -1,15 +1,15 @@
 /** chunk id: 290331 params = (module,exports,require) **/
 n.d(t, {
-    A: () => r
+    A: () => s
 }), n(938796);
 var i = n(821418),
     l = n(665260),
-    s = n(340837);
-let r = {
+    r = n(340837);
+let s = {
     canAcceptInvite: function(e, t) {
         let [n] = e, {
-            guild: r
+            guild: s
         } = t;
-        return !(null != r && (0, l.Lt)(n.getSelfMember(r.id)?.flags ?? 0, s.D.IS_GUEST)) || (0, l.Lt)(t.flags ?? 0, i.Q.IS_GUEST_INVITE)
+        return !(null != s && (0, l.Lt)(n.getSelfMember(s.id)?.flags ?? 0, r.D.IS_GUEST)) || (0, l.Lt)(t.flags ?? 0, i.Q.IS_GUEST_INVITE)
     }
 }

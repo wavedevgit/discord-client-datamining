@@ -37,9 +37,9 @@ var i = n(627968),
     w = n(210714),
     k = n(933924),
     D = n(961350),
-    B = n(115036),
+    P = n(115036),
     U = n(650048),
-    P = n(954571),
+    B = n(954571),
     G = n(203982),
     F = n(723702),
     M = n(161928),
@@ -99,7 +99,7 @@ class J extends s.PureComponent {
             invite: i,
             location: s
         } = this.props;
-        e && !t ? (0, g.ST)() : t && this.loginOrSSO(t, s, !0), P.default.track(K.HAw.LOGIN_VIEWED, {
+        e && !t ? (0, g.ST)() : t && this.loginOrSSO(t, s, !0), B.default.track(K.HAw.LOGIN_VIEWED, {
             location: null != i ? "Invite Login Page" : "Non-Invite Login Page",
             login_source: this.loginSource,
             authenticated: t,
@@ -160,7 +160,7 @@ class J extends s.PureComponent {
     handleAuthSuccess = e => {
         this.setState({
             errors: {}
-        }), P.default.track(K.HAw.LOGIN_SUCCESSFUL, {
+        }), B.default.track(K.HAw.LOGIN_SUCCESSFUL, {
             source: K.mdB.QR_CODE,
             login_source: this.loginSource,
             gift_code_sku_id: this.giftCodeSKUId,
@@ -737,10 +737,10 @@ class J extends s.PureComponent {
 }
 let $ = function(e) {
     (0, L.K)();
-    let t = (0, c.cf)([B.A, U.A, D.default, S.A, b.A], () => ({
+    let t = (0, c.cf)([P.A, U.A, D.default, S.A, b.A], () => ({
         authenticated: D.default.isAuthenticated(),
-        handoffAvailable: B.A.isHandoffAvailable(),
-        user: B.A.user,
+        handoffAvailable: P.A.isHandoffAvailable(),
+        user: P.A.user,
         loginStatus: D.default.getLoginStatus(),
         mfaTicket: D.default.getMFATicket(),
         mfaMethods: D.default.getMFAMethods(),

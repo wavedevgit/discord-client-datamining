@@ -115,15 +115,15 @@ let E = s.forwardRef(function(e, t) {
                 label: `${n-e-3}`
             }))
         }, [n]), r.current),
-        [D, B] = s.useState(I ? 0 : -1),
+        [D, P] = s.useState(I ? 0 : -1),
         U = s.useMemo(f, []),
-        P = {
+        B = {
             onPopulated: E,
             sortedInputs: U
         },
-        G = s.useRef(P);
+        G = s.useRef(B);
     s.useEffect(() => {
-        G.current = P
+        G.current = B
     }), s.useEffect(() => {
         let {
             onPopulated: e,
@@ -150,7 +150,7 @@ let E = s.forwardRef(function(e, t) {
                             options: p,
                             value: S,
                             onChange: t => {
-                                T(t), B(e + 1)
+                                T(t), P(e + 1)
                             },
                             maxVisibleItems: 6,
                             autoFocus: D === e,
@@ -174,7 +174,7 @@ let E = s.forwardRef(function(e, t) {
                             options: g,
                             value: y,
                             onChange: t => {
-                                b(t), B(e + 1)
+                                b(t), P(e + 1)
                             },
                             maxVisibleItems: 6,
                             autoFocus: D === e,
@@ -198,7 +198,7 @@ let E = s.forwardRef(function(e, t) {
                             options: k,
                             value: R,
                             onChange: t => {
-                                O(t), B(e + 1)
+                                O(t), P(e + 1)
                             },
                             maxVisibleItems: 6,
                             autoFocus: D === e,

@@ -1,11 +1,11 @@
 /** chunk id: 544199 params = (module,exports,require) **/
 n.d(t, {
-    F: () => s,
-    G: () => r
+    F: () => r,
+    G: () => s
 });
 var i = n(73153),
     l = n(881268);
-async function s(e, t) {
+async function r(e, t) {
     i.h.dispatch({
         type: "CREATOR_MONETIZATION_PRICE_TIERS_FETCH",
         guildId: e,
@@ -28,7 +28,7 @@ async function s(e, t) {
     }
 }
 
-function r(e) {
+function s(e) {
     i.h.dispatch({
         type: "CREATOR_MONETIZATION_SET_HAS_SEEN_ONBOARDING_FOR_GUILD",
         guildId: e

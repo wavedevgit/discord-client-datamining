@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     l = n(64700),
-    s = n(503698),
-    r = n.n(s),
+    r = n(503698),
+    s = n.n(r),
     a = n(687498),
     o = n(494012),
     d = n(158954),
@@ -39,7 +39,7 @@ function w(e) {
     let {
         quest: t,
         location: n,
-        isInteracting: s,
+        isInteracting: r,
         contentPosition: I,
         sourceQuestContent: b
     } = e, w = l.useRef(null), {
@@ -48,7 +48,7 @@ function w(e) {
     } = (0, o.wR)(), G = 104 !== B, {
         expansionSpring: F
     } = (0, d.zhh)({
-        expansionSpring: +!!s,
+        expansionSpring: +!!r,
         config: {
             tension: 250,
             friction: 20,
@@ -101,7 +101,7 @@ function w(e) {
             questContentCTA: f.Cy.LEARN_MORE,
             sourceQuestContent: b
         })
-    }, [t.id, n, I, b]), es = (0, c.bG)([h.A], () => null != h.A.questEnrollmentBlockedUntil, []), er = p.t.useConfig({
+    }, [t.id, n, I, b]), er = (0, c.bG)([h.A], () => null != h.A.questEnrollmentBlockedUntil, []), es = p.t.useConfig({
         location: L.rE.EMBED_DESKTOP
     });
     return (0, i.jsxs)("div", {
@@ -127,11 +127,11 @@ function w(e) {
                     }), (0, i.jsx)(v.A, {
                         size: 76,
                         percentComplete: X,
-                        percentCompleteText: s && !H ? Z : void 0,
+                        percentCompleteText: r && !H ? Z : void 0,
                         children: (0, i.jsx)(S.A, {
                             quest: t,
                             questContent: n,
-                            autoplay: s,
+                            autoplay: r,
                             lazyLoad: !0,
                             fullWidth: !0,
                             sourceQuestContent: b
@@ -139,7 +139,7 @@ function w(e) {
                     })]
                 }) : (0, i.jsx)(S.A, {
                     quest: t,
-                    autoplay: s,
+                    autoplay: r,
                     questContent: n,
                     className: D.eB,
                     lazyLoad: !0,
@@ -147,7 +147,7 @@ function w(e) {
                 })]
             }), (0, i.jsxs)("div", {
                 ref: U,
-                className: r()(D.FS, {
+                className: s()(D.FS, {
                     [D.wq]: !G
                 }),
                 children: [(0, i.jsx)(d.DZT, {
@@ -171,7 +171,7 @@ function w(e) {
             })]
         }), (0, i.jsx)("div", {
             className: P.kL,
-            children: es ? (0, i.jsxs)(d.e2v, {
+            children: er ? (0, i.jsxs)(d.e2v, {
                 direction: "horizontal",
                 fullWidth: !0,
                 wrap: !1,
@@ -193,7 +193,7 @@ function w(e) {
                     text: R.intl.string(R.t.LLLLPD),
                     fullWidth: !0,
                     onClick: el
-                }), er.enabled && (ee === N.UA.UNENROLLED || ee === N.UA.ENROLLED || ee === N.UA.INCOMPLETE) && er.enabledQuestStates.has(ee) ? (0, i.jsx)(T.A, {
+                }), es.enabled && (ee === N.UA.UNENROLLED || ee === N.UA.ENROLLED || ee === N.UA.INCOMPLETE) && es.enabledQuestStates.has(ee) ? (0, i.jsx)(T.A, {
                     quest: t,
                     surface: N.V3.QUEST_EMBED,
                     analyticsCtxQuestContent: n,
@@ -229,17 +229,17 @@ function k(e) {
         quest: t,
         progressState: n,
         questContent: l,
-        questContentPosition: s,
-        sourceQuestContent: r
+        questContentPosition: r,
+        sourceQuestContent: s
     } = e, a = (0, c.bG)([h.A], () => h.A.isEnrolling(t.id)), o = (0, I.vv)(t), u = (0, I.Cr)(t), m = (0, C.Ic)(t), _ = (0, b._c)({
         progressState: n,
         quest: t,
         questContent: l,
-        questContentPosition: s,
+        questContentPosition: r,
         inGiftInventory: !1,
         isVideoQuest: o,
         inGameQuest: u,
-        sourceQuestContent: r
+        sourceQuestContent: s
     }), p = (0, A.S5)(t.config.expiresAt, {
         month: "numeric",
         day: "numeric"

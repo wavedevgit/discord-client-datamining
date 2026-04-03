@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     l = n(64700),
-    s = n(311907),
-    r = n(686956),
+    r = n(311907),
+    s = n(686956),
     a = n(688810),
     o = n(202384),
     d = n(51758),
@@ -31,7 +31,7 @@ function E(e) {
         guild: T,
         channel: N,
         isMember: S
-    } = (0, s.cf)([A.Ay, h.A, m.A, _.Ay, p.default], () => {
+    } = (0, r.cf)([A.Ay, h.A, m.A, _.Ay, p.default], () => {
         let e = A.Ay.getGuildScheduledEvent(E) ?? void 0,
             t = h.A.getGuild(n),
             i = m.A.getChannel(e?.channel_id);
@@ -56,7 +56,7 @@ function E(e) {
                     analyticsLocations: v
                 }) === c.W.PROCEED) {
                 if ((0, d.V)(n)) return void(0, o.Ze)(n);
-                r.A.joinGuild(n, {
+                s.A.joinGuild(n, {
                     source: C.Q4z.GUILD_EVENT_EMBED
                 }).catch(() => {})
             }

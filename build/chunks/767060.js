@@ -1,16 +1,17 @@
 /** chunk id: 767060 params = (module,exports,require) **/
 n.d(t, {
-    A: () => o
+    A: () => d
 });
 var i = n(627968);
 n(64700);
 var a = n(873263),
-    l = n(33666),
-    r = n(793998),
-    s = n(652215);
+    l = n(718446),
+    r = n(33666),
+    s = n(793998),
+    o = n(355097);
 
-function o() {
-    return "teen" === (0, l.A)() ? (0, i.jsx)(a.rd, {
-        to: s.BVt.SETTINGS("family-center")
-    }) : (0, i.jsx)(r.A, {})
+function d() {
+    return "teen" === (0, r.A)() ? (0, i.jsx)(a.rd, {
+        to: (0, l.settingsPathToRoute)(o.od.FAMILY_CENTER)
+    }) : (0, i.jsx)(s.A, {})
 }

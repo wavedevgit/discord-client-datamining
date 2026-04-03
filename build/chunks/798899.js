@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     l = n(64700),
-    s = n(397927),
-    r = n(572211),
+    r = n(397927),
+    s = n(572211),
     a = n(443795),
     o = n(768349),
     d = n(985018),
@@ -19,14 +19,14 @@ function u(e) {
         onClickContent: m,
         onView: _,
         guildId: h
-    } = e, p = l.useMemo(() => (0, i.jsx)(s.Text, {
+    } = e, p = l.useMemo(() => (0, i.jsx)(r.Text, {
         variant: "text-xs/medium",
         className: c.h_,
         color: "none",
         lineClamp: 1,
         children: d.intl.string(d.t["84qx9r"])
     }), []);
-    return (0, i.jsx)(r.h, {
+    return (0, i.jsx)(s.h, {
         header: u,
         title: t.name,
         iconSrc: a.HT.getWhiteIconURL(),

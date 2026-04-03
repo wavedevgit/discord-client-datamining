@@ -80,7 +80,7 @@ function D(e) {
     })
 }
 
-function B(e) {
+function P(e) {
     let {
         children: t,
         cardChildren: n,
@@ -115,7 +115,7 @@ function U(e) {
     } = e;
     if (null == t || !(0, C.Fk)(t)) return null;
     let n = k(t);
-    return (0, i.jsx)(B, {
+    return (0, i.jsx)(P, {
         startAnimHeightPx: 0,
         sectionClassName: L.ui,
         children: 1 === n ? (0, i.jsx)(T.s, {
@@ -123,7 +123,7 @@ function U(e) {
         }) : null
     })
 }
-let P = {
+let B = {
     1: L._r,
     2: L.Gm,
     0: L.Kt
@@ -175,9 +175,9 @@ function G(e) {
             t = (0, i.jsx)(w, {})
     }
     let u = 1 === r && c ? L.c4 : L.qF;
-    return (0, i.jsx)(B, {
+    return (0, i.jsx)(P, {
         startAnimHeightPx: 200,
-        sectionClassName: P[r],
+        sectionClassName: B[r],
         inviteCardClassName: u,
         children: t
     })

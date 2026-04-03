@@ -1,23 +1,23 @@
 /** chunk id: 842901 params = (module,exports,require) **/
 n.d(t, {
-    E: () => r,
+    E: () => s,
     T: () => a
 }), n(801541);
 var i = n(889137),
     l = n(966974),
-    s = n(108234);
+    r = n(108234);
 
-function r(e, t) {
-    let n = (0, i.YW)(t).with(l.Z.IMAGE_ONLY_ANSWERS, () => s.EK).otherwise(() => s.fD);
+function s(e, t) {
+    let n = (0, i.YW)(t).with(l.Z.IMAGE_ONLY_ANSWERS, () => r.EK).otherwise(() => r.fD);
     return {
         styles: {
             loserSelected: n,
             normal: n,
             notVoted: n,
             selected: n,
-            voted: s.pq,
-            victorSelected: s.iu,
-            victorNotSelected: s.iu,
+            voted: r.pq,
+            victorSelected: r.iu,
+            victorNotSelected: r.iu,
             normalVote: n
         }
     }

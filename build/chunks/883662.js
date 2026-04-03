@@ -9,8 +9,8 @@ var r = n(627968),
     a = n(521489),
     s = n(397927),
     o = n(775602),
-    c = n(531685),
-    u = n(203982),
+    u = n(531685),
+    c = n(203982),
     d = n(418829),
     h = n(652215);
 
@@ -26,19 +26,19 @@ function f(e) {
         clearSearchQuery: y,
         searchBar: g,
         ...x
-    } = e, [E, A] = i.useState(!1), [S, b] = i.useState(1.4), N = i.useRef(null), j = (0, l.bG)([o.A], () => o.A.useReducedMotion), C = (0, l.bG)([c.A], () => c.A.isFocused());
+    } = e, [E, A] = i.useState(!1), [S, b] = i.useState(1.4), N = i.useRef(null), C = (0, l.bG)([o.A], () => o.A.useReducedMotion), j = (0, l.bG)([u.A], () => u.A.isFocused());
     return i.useEffect(() => {
         let e = e => {
             let {
                 intensity: t,
                 duration: n
             } = e;
-            !j && C && (A(!0), b(t ?? 1.4), clearTimeout(N.current), N.current = setTimeout(() => A(!1), n ?? 1e3))
+            !C && j && (A(!0), b(t ?? 1.4), clearTimeout(N.current), N.current = setTimeout(() => A(!1), n ?? 1e3))
         };
-        return u._.subscribe(h.jej.SHAKE_SETTINGS_MODAL, e), () => {
-            u._.unsubscribe(h.jej.SHAKE_SETTINGS_MODAL, e), clearTimeout(N.current)
+        return c._.subscribe(h.jej.SHAKE_SETTINGS_MODAL, e), () => {
+            c._.unsubscribe(h.jej.SHAKE_SETTINGS_MODAL, e), clearTimeout(N.current)
         }
-    }, [j, C]), (0, r.jsx)(s.bfh, {
+    }, [C, j]), (0, r.jsx)(s.bfh, {
         isShaking: E,
         intensity: S,
         children: (0, r.jsx)(a.N, {

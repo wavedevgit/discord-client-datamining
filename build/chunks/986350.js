@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var l = n(397927),
-    s = n(29352),
-    r = n(652215),
+    r = n(29352),
+    s = n(652215),
     a = n(985018),
     o = n(596340);
 
@@ -19,7 +19,7 @@ function d(e) {
         u = n.interactionMetadata?.ephemerality_reason,
         m = () => d(n, !0);
     if (null != u) {
-        let e = (0, s.R)(u);
+        let e = (0, r.R)(u);
         t = (0, i.jsx)("div", {
             className: o.rd,
             children: a.intl.format(a.t.wx1tLQ, {
@@ -27,7 +27,7 @@ function d(e) {
                 reason: e
             })
         })
-    } else t = n.type === r.lAJ.STAGE_RAISE_HAND ? a.intl.format(a.t["qDAX++"], {
+    } else t = n.type === s.lAJ.STAGE_RAISE_HAND ? a.intl.format(a.t["qDAX++"], {
         handleDelete: m
     }) : a.intl.format(a.t.uX3ecL, {
         count: 1,

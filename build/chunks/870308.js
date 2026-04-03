@@ -49,7 +49,8 @@ let _ = () => {
                     srcLight: e.buttonBGRestingLight,
                     srcDarkHovered: e.buttonBGHoverDark,
                     srcLightHovered: e.buttonBGHoverLight
-                }
+                },
+                hoverGradient: t.hoverGradient
             } : null
         })(m, e) : null,
         g = i.useCallback(() => {

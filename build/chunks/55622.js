@@ -9,8 +9,8 @@ var r = n(627968),
     a = n(397927),
     s = n(252452),
     o = n(139286),
-    c = n(507553),
-    u = n(324593),
+    u = n(507553),
+    c = n(324593),
     d = n(883662),
     h = n(961350),
     f = n(287809),
@@ -36,19 +36,19 @@ function N(e) {
     } = e, a = m.A.useField("query"), E = i.useCallback(() => {
         m.A.setState({
             query: ""
-        }), u.A.terminate()
+        }), c.A.terminate()
     }, []), [A, N] = i.useState(!1);
     return (i.useLayoutEffect(() => {
         let e = () => {
             null == f.default.getCurrentUser() && (N(!0), (0, x.default)())
         };
         return h.default.addChangeListener(e), () => {
-            h.default.removeChangeListener(e), y.A.resetState(), c.A.resetState(), s.A.close()
+            h.default.removeChangeListener(e), y.A.resetState(), u.A.resetState(), s.A.close()
         }
     }, []), A) ? null : (0, r.jsx)(d.A, {
         partialRoot: _.D,
-        searchBar: j,
-        emptyState: C,
+        searchBar: C,
+        emptyState: j,
         sidebarFooter: v.A,
         onViewChange: e => {
             S.has(e) || (0, g._)(e);
@@ -71,26 +71,26 @@ function N(e) {
     })
 }
 
-function j() {
+function C() {
     let e = m.A.useField("query"),
         t = i.useCallback(e => {
             m.A.setState({
                 query: e
-            }), u.A.maybeTrackQueryEntered()
+            }), c.A.maybeTrackQueryEntered()
         }, []),
         n = i.useCallback(() => {
-            u.A.isSessionActive() || u.A.initialize()
+            c.A.isSessionActive() || c.A.initialize()
         }, []),
         l = i.useCallback(() => {
-            0 === m.A.getField("query").trim().length && u.A.terminate()
+            0 === m.A.getField("query").trim().length && c.A.terminate()
         }, []),
         s = i.useCallback(() => {
             m.A.setState({
                 query: ""
-            }), u.A.terminate()
+            }), c.A.terminate()
         }, []);
     return i.useEffect(() => () => {
-        m.A.resetState(), u.A.terminate()
+        m.A.resetState(), c.A.terminate()
     }, []), (0, r.jsx)("div", {
         className: A.P,
         children: (0, r.jsx)(a.IWV, {
@@ -104,7 +104,7 @@ function j() {
     })
 }
 
-function C() {
+function j() {
     return (0, r.jsxs)("div", {
         className: A.t,
         children: [(0, r.jsx)(a.Text, {

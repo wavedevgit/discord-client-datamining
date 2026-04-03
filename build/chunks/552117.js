@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     l = n(64700),
-    s = n(503698),
-    r = n.n(s),
+    r = n(503698),
+    s = n.n(r),
     a = n(311907),
     o = n(3026),
     d = n(990078),
@@ -73,8 +73,8 @@ let U = e => {
         let {
             closePopout: t,
             sticker: n,
-            channel: s,
-            refreshPositionKey: r
+            channel: r,
+            refreshPositionKey: s
         } = e, [o, d, c] = (0, a.yK)([S.A], () => [S.A.getStickerPack(n.pack_id), !S.A.hasLoadedStickerPacks, S.A.isPremiumPack(n.pack_id)], [n]), m = (e => {
             let {
                 sticker: t,
@@ -86,10 +86,10 @@ let U = e => {
             stickerPack: o
         });
         (0, N.Sr)(n.pack_id);
-        let _ = (0, N.pD)(s),
+        let _ = (0, N.pD)(r),
             p = {
-                refreshPositionKey: r,
-                channel: s
+                refreshPositionKey: s,
+                channel: r
             },
             g = l.useRef(p);
         return (l.useEffect(() => {
@@ -149,7 +149,7 @@ let U = e => {
     B = e => {
         let t, {
                 sticker: n,
-                channel: s,
+                channel: r,
                 closePopout: o,
                 refreshPositionKey: C
             } = e,
@@ -162,14 +162,14 @@ let U = e => {
             [H, V] = l.useState(!1),
             [q, W] = l.useState(null),
             Y = l.useMemo(() => ({
-                page: null != s.guild_id ? R.liQ.GUILD_CHANNEL : R.liQ.DM_CHANNEL,
+                page: null != r.guild_id ? R.liQ.GUILD_CHANNEL : R.liQ.DM_CHANNEL,
                 section: R.JJy.STICKER_POPOUT
-            }), [s.guild_id]),
+            }), [r.guild_id]),
             {
                 current: z
             } = l.useRef({
-                guild_id: s.getGuildId(),
-                ...(0, h.dI)(s)
+                guild_id: r.getGuildId(),
+                ...(0, h.dI)(r)
             }),
             Q = {
                 stickerSourceGuild: G,
@@ -186,13 +186,13 @@ let U = e => {
                 (null == e || e.features.has(R.GuildFeatures.DISCOVERABLE)) && S(await (0, A.A)(n.id)), L(!0)
             })()
         }, [n.id, F]);
-        let J = n.guild_id === s.getGuildId(),
+        let J = n.guild_id === r.getGuildId(),
             X = null != N,
             Z = !1,
             $ = "Custom Sticker Popout";
         B ? t = F ? J ? D.intl.string(D.t.fZ0DiG) : D.intl.string(D.t["1f6D9m"]) : X ? D.intl.string(D.t.yHmoR9) : D.intl.string(D.t.vZaScH) : F ? (t = J ? D.intl.string(D.t.jNphpt) : D.intl.string(D.t.lyD5ZW), Z = !0, $ = "Custom Sticker Popout (Upsell)") : X ? (t = D.intl.string(D.t.IuXYch), Z = !0, $ = "Custom Sticker Popout (Upsell)") : (t = D.intl.format(D.t.hGWuxU, {
             openPremiumSettings: () => {
-                O(s), o()
+                O(r), o()
             }
         }), $ = "Custom Sticker Popout (Soft Upsell)");
         let ee = !Z && !F && X && B;
@@ -277,7 +277,7 @@ let U = e => {
                                     }), (0, i.jsx)(u.abt, {
                                         size: "md",
                                         color: "currentColor",
-                                        className: r()(w.ZB, {
+                                        className: s()(w.ZB, {
                                             [w.cP]: !H
                                         })
                                     })]
@@ -291,7 +291,7 @@ let U = e => {
                                     text: e.name,
                                     ...f.Uk,
                                     children: (0, i.jsx)("div", {
-                                        className: r()(w.Th, {
+                                        className: s()(w.Th, {
                                             [M.vT]: null != q && q !== e.id
                                         }),
                                         onMouseEnter: () => {
@@ -341,19 +341,19 @@ let F = e => {
         renderableSticker: t,
         channel: n,
         closePopout: l,
-        refreshPositionKey: s
-    } = e, [r, a] = (0, N.Zq)(t, !0);
-    return null != r && (0, y.FD)(r) ? (0, i.jsx)(U, {
-        sticker: r,
+        refreshPositionKey: r
+    } = e, [s, a] = (0, N.Zq)(t, !0);
+    return null != s && (0, y.FD)(s) ? (0, i.jsx)(U, {
+        sticker: s,
         closePopout: l,
         channel: n,
-        refreshPositionKey: s
-    }) : null != r && (0, y.Xw)(r) ? (0, i.jsx)(B, {
-        sticker: r,
+        refreshPositionKey: r
+    }) : null != s && (0, y.Xw)(s) ? (0, i.jsx)(B, {
+        sticker: s,
         channel: n,
         closePopout: l,
-        refreshPositionKey: s
-    }) : a ? null == r ? (0, i.jsx)(G, {
+        refreshPositionKey: r
+    }) : a ? null == s ? (0, i.jsx)(G, {
         channel: n,
         closePopout: l,
         sticker: t

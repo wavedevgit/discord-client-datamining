@@ -7,7 +7,7 @@ var a = n(627968),
     s = n(158954),
     l = n(397927),
     r = n(839214),
-    o = n(849823),
+    o = n(718446),
     d = n(858897),
     c = n(957565),
     u = n(652215),
@@ -31,7 +31,7 @@ function p() {
         if (null == e || "" === e) return void h.setState({
             error: "URL is required"
         });
-        let t = (0, o.default)({
+        let t = (0, o.parseSettingsUrl)({
             path: e
         });
         ((0, o.trackParseSettingsUrl)(t, "devtools"), null == t.target) ? h.setState({

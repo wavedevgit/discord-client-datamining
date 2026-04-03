@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var l = n(503698),
-    s = n.n(l),
-    r = n(397927),
+    r = n.n(l),
+    s = n(397927),
     a = n(207963),
     o = n(953756),
     d = n(520586),
@@ -47,10 +47,10 @@ function h(e) {
                         children: e => (0, i.jsxs)("div", {
                             ref: e,
                             "aria-hidden": f,
-                            className: s()(m.O0, _.k, _.z, {
+                            className: r()(m.O0, _.k, _.z, {
                                 [m.dK]: f
                             }),
-                            children: [null != x && (0, i.jsx)(r.DUT, {
+                            children: [null != x && (0, i.jsx)(s.DUT, {
                                 focusProps: {
                                     offset: {
                                         bottom: 4
@@ -59,7 +59,7 @@ function h(e) {
                                 className: m.PP,
                                 onClick: x,
                                 "aria-label": u.intl.string(u.t.GT3fNz),
-                                children: (0, i.jsx)(r.PGe, {
+                                children: (0, i.jsx)(s.PGe, {
                                     size: "xs",
                                     color: "currentColor"
                                 })

@@ -4,16 +4,16 @@ n.d(t, {
 });
 var i = n(850992),
     l = n(203982),
-    s = n(652215),
-    r = n(698279);
+    r = n(652215),
+    s = n(698279);
 
 function a(e) {
     let {
         stickerPack: t,
         stickerPickerCategories: n
     } = e;
-    l._.dispatchToLastSubscribed(s.jej.OPEN_EXPRESSION_PICKER, {
-        activeView: r.kx.STICKER
+    l._.dispatchToLastSubscribed(r.jej.OPEN_EXPRESSION_PICKER, {
+        activeView: s.kx.STICKER
     });
     let a = n.findIndex(e => e.id === t.id); - 1 !== a && i.bM.setActiveCategoryIndex(a)
 }

@@ -1,7 +1,7 @@
 /** chunk id: 126912 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => E
+    A: () => I
 });
 var i = n(627968),
     s = n(64700),
@@ -12,14 +12,16 @@ var i = n(627968),
     d = n(396681),
     c = n(854378),
     u = n(210714),
-    h = n(427157),
-    _ = n(650048),
-    p = n(652215),
-    g = n(431144),
-    m = n(985018),
-    A = n(885106);
+    h = n(718446),
+    _ = n(427157),
+    p = n(650048),
+    g = n(652215),
+    m = n(431144),
+    A = n(355097),
+    f = n(985018),
+    E = n(885106);
 l.Ay.initialize();
-class f extends s.PureComponent {
+class x extends s.PureComponent {
     static defaultProps = {
         transitionTo: e => n.g.location.assign(e)
     };
@@ -33,7 +35,7 @@ class f extends s.PureComponent {
         let e = (0, d.A)(this.props.location),
             t = (0, r.parse)(this.props.location.search);
         a.Bo.post({
-            url: p.Rsh.DISABLE_EMAIL_NOTIFICATIONS,
+            url: g.Rsh.DISABLE_EMAIL_NOTIFICATIONS,
             body: {
                 token: e,
                 pixel_uuid: t.hash,
@@ -47,7 +49,7 @@ class f extends s.PureComponent {
                 body: {
                     user: n
                 }
-            } = e, i = new h.A(n);
+            } = e, i = new _.A(n);
             this.setState({
                 success: !0,
                 busy: !1,
@@ -68,28 +70,28 @@ class f extends s.PureComponent {
         let {
             defaultRoute: n,
             transitionTo: s
-        } = this.props, r = m.intl.formatToPlainString(m.t.YDAohB, {
+        } = this.props, r = f.intl.formatToPlainString(f.t.YDAohB, {
             category: t
         });
         return (0, i.jsxs)(c.Ay, {
             children: [(0, i.jsx)(c.hE, {
-                className: A.QB,
-                children: m.intl.string(m.t.f6rdLg)
+                className: E.QB,
+                children: f.intl.string(f.t.f6rdLg)
             }), (0, i.jsx)(c.tK, {
                 children: r
             }), (0, i.jsx)("div", {
-                className: A.QX,
+                className: E.QX,
                 children: (0, i.jsx)(o.Button, {
-                    text: m.intl.string(m.t.fIv16B),
+                    text: f.intl.string(f.t.fIv16B),
                     fullWidth: !0,
                     onClick: () => s(n)
                 })
             }), (0, i.jsx)("div", {
-                className: A.Ot,
+                className: E.Ot,
                 children: (0, i.jsx)(o.QWc, {
-                    text: m.intl.string(m.t.YYTirT),
+                    text: f.intl.string(f.t.YYTirT),
                     textVariant: "text-sm/normal",
-                    onClick: () => s(p.BVt.SETTINGS("notifications", "emails"))
+                    onClick: () => s((0, h.settingsPathToRoute)(A.od.NOTIFICATIONS_EMAILS))
                 })
             })]
         })
@@ -103,23 +105,23 @@ class f extends s.PureComponent {
             category: s
         } = this.state;
         if (null != s) {
-            let e = g.px.find(e => e.category === s);
+            let e = m.px.find(e => e.category === s);
             if (null != e) return this.renderCategorySuccess(s, e.label())
         }
         return (0, i.jsxs)(c.Ay, {
             children: [(0, i.jsx)(c.eu, {
                 src: n?.getAvatarURL(void 0, 100),
                 size: o._3J.DEPRECATED_SIZE_100,
-                className: A.SX
+                className: E.SX
             }), (0, i.jsx)(c.hE, {
-                className: A.QB,
-                children: m.intl.string(m.t["6U6OMQ"])
+                className: E.QB,
+                children: f.intl.string(f.t["6U6OMQ"])
             }), (0, i.jsx)(c.tK, {
-                children: m.intl.string(m.t["yaDJ4/"])
+                children: f.intl.string(f.t["yaDJ4/"])
             }), (0, i.jsx)("div", {
-                className: A.eT,
+                className: E.eT,
                 children: (0, i.jsx)(o.Button, {
-                    text: m.intl.string(m.t.fIv16B),
+                    text: f.intl.string(f.t.fIv16B),
                     fullWidth: !0,
                     onClick: () => t(e)
                 })
@@ -134,16 +136,16 @@ class f extends s.PureComponent {
         return (0, i.jsxs)(c.Ay, {
             children: [(0, i.jsx)(c._V, {
                 src: n(37772),
-                className: A.SX
+                className: E.SX
             }), (0, i.jsx)(c.hE, {
-                className: A.QB,
-                children: m.intl.string(m.t.ox9hIS)
+                className: E.QB,
+                children: f.intl.string(f.t.ox9hIS)
             }), (0, i.jsx)(c.tK, {
-                children: m.intl.string(m.t["/dcuR5"])
+                children: f.intl.string(f.t["/dcuR5"])
             }), (0, i.jsx)("div", {
-                className: A.eT,
+                className: E.eT,
                 children: (0, i.jsx)(o.Button, {
-                    text: m.intl.string(m.t.fIv16B),
+                    text: f.intl.string(f.t.fIv16B),
                     fullWidth: !0,
                     onClick: () => t(e)
                 })
@@ -158,6 +160,6 @@ class f extends s.PureComponent {
         return e ? this.renderBusy() : t ? this.renderSuccess() : this.renderError()
     }
 }
-let E = l.Ay.connectStores([_.A], () => ({
-    defaultRoute: _.A.defaultRoute
-}))(f)
+let I = l.Ay.connectStores([p.A], () => ({
+    defaultRoute: p.A.defaultRoute
+}))(x)

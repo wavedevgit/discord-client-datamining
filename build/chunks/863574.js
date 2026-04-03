@@ -7,13 +7,13 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var l = n(503698),
-    s = n.n(l),
-    r = n(622413),
+    r = n.n(l),
+    s = n(622413),
     a = n(546529);
 let o = 660,
-    d = e => (0, i.jsx)(r.A, {
+    d = e => (0, i.jsx)(s.A, {
         ...e,
-        className: s()(e.className, {
+        className: r()(e.className, {
             [a.sN]: !e.isHorizontal,
             [a.wO]: e.isHorizontal
         })
@@ -27,7 +27,7 @@ let o = 660,
             media: () => (0, i.jsx)("div", {
                 className: a.FR,
                 children: (0, i.jsx)("div", {
-                    className: s()(a.Wv, {
+                    className: r()(a.Wv, {
                         [a._n]: t
                     }),
                     children: (0, i.jsx)("div", {
@@ -36,7 +36,7 @@ let o = 660,
                 })
             }),
             title: () => (0, i.jsx)("div", {
-                className: s()(a.GE, {
+                className: r()(a.GE, {
                     [a.E9]: t
                 })
             })

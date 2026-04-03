@@ -15,15 +15,15 @@ function s(e) {
         accessibleDirectory: s
     } = e, {
         dismissibleContentToNodeKeys: o,
-        nodeKeyToDismissibleContents: c
-    } = n, u = r.useRef(!1);
+        nodeKeyToDismissibleContents: u
+    } = n, c = r.useRef(!1);
     r.useEffect(() => {
-        if (u.current = !1, null == t || !o.has(t)) return;
+        if (c.current = !1, null == t || !o.has(t)) return;
         let e = o.get(t);
         if (null == e) return;
         let n = () => {
-                u.current = !1;
-                let t = c.get(e.sidebarItemKey);
+                c.current = !1;
+                let t = u.get(e.sidebarItemKey);
                 null != t && t.forEach(e => {
                     (0, i.Dr)(e, {
                         dismissAction: a.i.AUTO,
@@ -38,13 +38,13 @@ function s(e) {
                 return t
             }, t => {
                 let r = null != t && null != s ? s.entry(t)?.parentSidebarItemKey : null;
-                null != r && (r === e.sidebarItemKey ? u.current = !0 : u.current && n())
+                null != r && (r === e.sidebarItemKey ? c.current = !0 : c.current && n())
             }, {
                 equalityFn: (e, t) => e === t,
                 fireImmediately: !0
             });
         return () => {
-            r(), u.current && n()
+            r(), c.current && n()
         }
-    }, [t, o, s, c])
+    }, [t, o, s, u])
 }

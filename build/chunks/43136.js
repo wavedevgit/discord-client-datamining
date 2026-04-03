@@ -5,8 +5,8 @@ n.d(t, {
 });
 var i = n(627968),
     l = n(64700),
-    s = n(284009),
-    r = n.n(s),
+    r = n(284009),
+    s = n.n(r),
     a = n(311907),
     o = n(397927),
     d = n(241524),
@@ -52,7 +52,7 @@ function S(e) {
     let {
         coverImageAsset: t,
         isPreview: n = !1
-    } = e, l = h.kt.useSetting(), s = (0, f.j)() && l, [r, a] = (0, _.A)(t, s), o = s ? (0, i.jsx)(u.A, {
+    } = e, l = h.kt.useSetting(), r = (0, f.j)() && l, [s, a] = (0, _.A)(t, r), o = r ? (0, i.jsx)(u.A, {
         autoPlay: !0,
         loop: !0,
         className: T.N4,
@@ -65,7 +65,7 @@ function S(e) {
         className: T.N4
     });
     return (0, i.jsx)("div", {
-        ref: r,
+        ref: s,
         className: T.El,
         children: null == a || n ? o : (0, i.jsx)("img", {
             src: a,
@@ -79,18 +79,18 @@ function y(e) {
     let {
         guild: t,
         subscriptionsSettings: n
-    } = e, s = t.id, {
+    } = e, r = t.id, {
         nickname: u,
         nickcolor: _
     } = (0, a.cf)([p.Ay, g.default], () => {
         let e = g.default.getCurrentUser();
-        r()(null != e, "user cannot be null");
-        let t = p.Ay.getMember(s, e.id);
+        s()(null != e, "user cannot be null");
+        let t = p.Ay.getMember(r, e.id);
         return {
             nickname: t?.nick ?? x.Ay.getName(e),
             nickcolor: t?.colorString ?? void 0
         }
-    }, [s]), {
+    }, [r]), {
         isTruncated: h,
         ExpandableTextContainer: A
     } = (0, C.e)(), f = (n?.description?.trim().length ?? 0) > 0, [y, j] = l.useState(1), L = (0, d.A)("(max-width: 1439px)"), {
@@ -109,7 +109,7 @@ function y(e) {
                 size: 4
             }), (0, i.jsx)(N, {
                 onClick: () => (0, v.A)({
-                    guildId: s
+                    guildId: r
                 })
             })]
         })]

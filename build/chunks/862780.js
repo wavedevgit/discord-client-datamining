@@ -6,9 +6,9 @@ n.d(t, {
 });
 var i = n(265690),
     l = n(121894),
-    s = n(52133);
+    r = n(52133);
 n(661191);
-let r = {},
+let s = {},
     a = (0, i.h)(e => ({
         pollsByChannelId: {},
         pollsByMessageId: {},
@@ -35,7 +35,7 @@ let r = {},
     }));
 
 function o(e) {
-    return a(t => t.pollsByChannelId[e] ?? r, s.A)
+    return a(t => t.pollsByChannelId[e] ?? s, r.A)
 }
 
 function d(e, t, n) {

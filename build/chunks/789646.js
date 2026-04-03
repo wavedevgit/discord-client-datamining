@@ -5,11 +5,11 @@ n.d(t, {
 });
 var i = n(627968),
     l = n(64700),
-    s = n(403362);
-let r = l.createContext(void 0);
+    r = n(403362);
+let s = l.createContext(void 0);
 
 function a() {
-    let e = l.useContext(r);
+    let e = l.useContext(s);
     if (null == e) throw Error("No PollFocusContextProvider found");
     return e
 }
@@ -18,14 +18,14 @@ function o(e) {
     let {
         children: t,
         actionButtonRef: n,
-        pollAnswerRef: s,
+        pollAnswerRef: r,
         manageFocusOnAction: a
     } = e, o = l.useMemo(() => ({
         actionButtonRef: n,
-        pollAnswerRef: s,
+        pollAnswerRef: r,
         manageFocusOnAction: a
-    }), [n, s, a]);
-    return (0, i.jsx)(r.Provider, {
+    }), [n, r, a]);
+    return (0, i.jsx)(s.Provider, {
         value: o,
         children: t
     })
@@ -34,7 +34,7 @@ function o(e) {
 function d(e) {
     let {
         children: t
-    } = e, [n, r] = l.useState(), a = l.useRef(null), d = l.useRef(null);
+    } = e, [n, s] = l.useState(), a = l.useRef(null), d = l.useRef(null);
     return l.useEffect(() => {
         "POLL_ANSWERS" === n && null != d.current && d.current?.ref?.focus(), "ACTION_BUTTON" === n && null != a.current && a.current?.focus()
     }, [n]), (0, i.jsx)(o, {
@@ -44,16 +44,16 @@ function d(e) {
             switch (e) {
                 case "submit":
                 case "cancel":
-                    r("ACTION_BUTTON");
+                    s("ACTION_BUTTON");
                     break;
                 case "remove":
                 case "showVotes":
-                    r("POLL_ANSWERS");
+                    s("POLL_ANSWERS");
                     break;
                 case "showVoterDetails":
                     break;
                 default:
-                    (0, s.xb)(e)
+                    (0, r.xb)(e)
             }
         },
         children: t

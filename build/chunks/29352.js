@@ -1,11 +1,11 @@
 /** chunk id: 29352 params = (module,exports,require) **/
 n.d(t, {
-    R: () => s
+    R: () => r
 });
 var i = n(104331),
     l = n(985018);
 
-function s(e) {
+function r(e) {
     switch (e) {
         case i.L.FEATURE_LIMITED:
             return l.intl.string(l.t.WCvmrR);

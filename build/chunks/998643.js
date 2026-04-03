@@ -36,9 +36,9 @@ var i = n(627968),
     w = n(299091),
     k = n(954571),
     D = n(139675),
-    B = n(612181),
+    P = n(612181),
     U = n(486020),
-    P = n(952072),
+    B = n(952072),
     G = n(765624),
     F = n(603647),
     M = n(527567),
@@ -97,7 +97,7 @@ class eS extends s.PureComponent {
         } = t, l = (0, r.parse)(i.search).redirect_to ?? null;
         (null == l || "" === l || l.startsWith(ei.BVt.ME) || !(0, o.e)(l) && !(0, f.RZ)(l)) && (l = null);
         let a = null;
-        if (null == n) a = (0, B.u8)(l);
+        if (null == n) a = (0, P.u8)(l);
         else if (n?.state === ei.elq.RESOLVED) {
             let {
                 guild: e,
@@ -121,7 +121,7 @@ class eS extends s.PureComponent {
         } = this.props;
         null != e && (!t && n && u.A.getExperiments(!0), k.default.track(ei.HAw.INVITE_OPENED, {
             invite_code: (0, j.m0)(e),
-            load_time: P.A.getTimeSinceNavigationStart()
+            load_time: B.A.getTimeSinceNavigationStart()
         }, {
             flush: !0
         })), t && this.resolveInvite(), this.resolveGiftCode(), this.resolveGuildTemplate(), p.A.initialize(), (0, b.D)()
@@ -164,7 +164,7 @@ class eS extends s.PureComponent {
         } = this.props;
         null != e && (k.default.track(ei.HAw.GUILD_TEMPLATE_OPENED, {
             guild_template_code: e,
-            load_time: P.A.getTimeSinceNavigationStart()
+            load_time: B.A.getTimeSinceNavigationStart()
         }, {
             flush: !0
         }), v.A.resolveGuildTemplate(e), v.A.openNativeAppModal(e))

@@ -7,40 +7,41 @@ var r = n(64700),
     i = n(894858),
     l = n(397274);
 
-function a(e) {
-    let t = r.useRef(null),
-        n = r.useRef(new Set);
+function a(e, t) {
+    let n = r.useRef(null),
+        a = r.useRef(new Set);
     r.useEffect(() => {
+        if (!t) return;
         let e = l.A.getPanelScrollerNode();
         if (null == e) return;
         let r = Array.from(e.querySelectorAll("[data-settings-category-key]")).filter(e => null != e.getAttribute("data-settings-category-key")),
-            a = new Map,
-            s = [];
+            s = new Map,
+            o = [];
         return r.forEach(e => {
             let t = e.getAttribute("data-settings-category-key");
-            null != t && (a.set(e, t), s.push(t))
-        }), t.current = new IntersectionObserver(e => {
+            null != t && (s.set(e, t), o.push(t))
+        }), n.current = new IntersectionObserver(e => {
             if (e.forEach(e => {
                     let {
                         isIntersecting: t,
-                        target: r
-                    } = e, i = a.get(r);
-                    null != i && (t ? n.current.add(i) : n.current.delete(i))
+                        target: n
+                    } = e, r = s.get(n);
+                    null != r && (t ? a.current.add(r) : a.current.delete(r))
                 }), !l.A.getIsSidebarCategoryAutoSelectEnabled()) return;
             let t = [];
-            if (s.forEach(e => {
-                    n.current.has(e) && t.push(e)
+            if (o.forEach(e => {
+                    a.current.has(e) && t.push(e)
                 }), 0 === t.length) return;
-            let r = t[0];
-            i.A.getField("currentCategoryKey") !== r && i.A.setState({
-                currentCategoryKey: r
+            let n = t[0];
+            i.A.getField("currentCategoryKey") !== n && i.A.setState({
+                currentCategoryKey: n
             })
         }, {
             root: e,
             rootMargin: "0px 100000px 0px 100000px",
             threshold: 1
-        }), r.forEach(e => t.current?.observe(e)), () => {
-            r.forEach(e => t.current?.unobserve(e)), t.current?.disconnect(), t.current = null
+        }), r.forEach(e => n.current?.observe(e)), () => {
+            r.forEach(e => n.current?.unobserve(e)), n.current?.disconnect(), n.current = null
         }
-    }, [e])
+    }, [e, t])
 }
