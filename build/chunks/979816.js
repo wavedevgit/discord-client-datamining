@@ -1,19 +1,19 @@
 /** chunk id: 979816 params = (module,exports,require) **/
-n.d(i, {
+e.d(i, {
     XO: () => a,
     hX: () => o,
     iI: () => A,
     i_: () => S
 });
-var e = n(311907),
-    r = n(71393),
-    E = n(576705),
-    s = n(652215);
+var n = e(311907),
+    r = e(71393),
+    E = e(576705),
+    s = e(652215);
 let l = function(t) {
     let i = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : r.A,
-        n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : E.A,
-        e = i.getGuild(t);
-    return null != e && n.can(s.xBc.MANAGE_GUILD, e)
+        e = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : E.A,
+        n = i.getGuild(t);
+    return null != n && e.can(s.xBc.MANAGE_GUILD, n)
 };
 
 function S(t) {
@@ -25,11 +25,11 @@ function o(t) {
 }
 
 function A(t) {
-    return (0, e.bG)([r.A, E.A], () => l(t, r.A, E.A), [t])
+    return (0, n.bG)([r.A, E.A], () => l(t, r.A, E.A), [t])
 }
 
 function a(t) {
-    return (0, e.bG)([r.A], () => {
+    return (0, n.bG)([r.A], () => {
         let i = r.A.getGuild(t);
         return i?.features.has(s.GuildFeatures.COMMUNITY) || !1
     }, [t])

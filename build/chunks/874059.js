@@ -7,10 +7,10 @@ var i = n(73153),
     l = n(287809);
 class r extends a.A {
     _initialize() {
-        i.h.subscribe("POST_CONNECTION_OPEN", this._maybeStartDevSession), i.h.subscribe("LOGOUT", this._maybeStopDevSession)
+        i.h.subscribe("POST_CONNECTION_OPEN", this._maybeStartDevSession), i.h.subscribe("BILLING_STANDALONE_INITIALIZED", this._maybeStartDevSession), i.h.subscribe("LOGOUT", this._maybeStopDevSession)
     }
     _terminate() {
-        i.h.unsubscribe("POST_CONNECTION_OPEN", this._maybeStartDevSession), i.h.unsubscribe("LOGOUT", this._maybeStopDevSession)
+        i.h.unsubscribe("POST_CONNECTION_OPEN", this._maybeStartDevSession), i.h.unsubscribe("BILLING_STANDALONE_INITIALIZED", this._maybeStartDevSession), i.h.unsubscribe("LOGOUT", this._maybeStopDevSession)
     }
     _maybeStartDevSession() {
         if (null == window.DiscordDevSession || !0 !== window.__METICULOUS_ENABLED) return;

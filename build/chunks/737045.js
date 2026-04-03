@@ -1,9 +1,9 @@
 /** chunk id: 737045 params = (module,exports,require) **/
 r.d(e, {
-    $N: () => I,
+    $N: () => a,
     T6: () => l,
     mW: () => D,
-    oO: () => a,
+    oO: () => I,
     t0: () => G
 });
 var i, E, n = r(718574),
@@ -13,8 +13,8 @@ var i, E, n = r(718574),
     A = r(652215),
     _ = r(985018),
     l = ((i = {})[i.EMPTY_STATE = 0] = "EMPTY_STATE", i[i.ADMINISTRATOR = 1] = "ADMINISTRATOR", i[i.ROLE = 2] = "ROLE", i[i.OWNER = 3] = "OWNER", i[i.MEMBER = 4] = "MEMBER", i[i.USER = 5] = "USER", i[i.GUILD = 6] = "GUILD", i),
-    a = ((E = {})[E.ROLES = 0] = "ROLES", E[E.MEMBERS = 1] = "MEMBERS", E[E.USERS = 2] = "USERS", E[E.GUILDS = 3] = "GUILDS", E);
-let I = 20,
+    I = ((E = {})[E.ROLES = 0] = "ROLES", E[E.MEMBERS = 1] = "MEMBERS", E[E.USERS = 2] = "USERS", E[E.GUILDS = 3] = "GUILDS", E);
+let a = 20,
     G = "channelPermissionSettingsAdvancedModeOn";
 
 function D(t, e, i) {
@@ -172,6 +172,11 @@ function D(t, e, i) {
             title: _.intl.string(_.t.kqcjeV),
             description: E === A.rbe.GUILD_CATEGORY ? _.t.C4t1Xu : _.t.Ha1xbw,
             flag: A.xBc.BYPASS_SLOWMODE
+        },
+        [A.xBc.MANAGE_OFFICIAL_MESSAGES.toString()]: {
+            title: _.intl.string(_.t.Aj9ruN),
+            description: E === A.rbe.GUILD_CATEGORY ? _.t["Pf0e/Q"] : _.t.qEbw4W,
+            flag: A.xBc.MANAGE_OFFICIAL_MESSAGES
         },
         [A.xBc.READ_MESSAGE_HISTORY.toString()]: {
             title: A.kvI.GUILD_THREADS_ONLY.has(E) ? _.intl.string(_.t["0RQwtn"]) : _.intl.string(_.t.l9ufaR),

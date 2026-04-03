@@ -31,8 +31,8 @@ var x = n(173628),
     N = n(986789),
     I = n(821306),
     O = n(226936),
-    R = n(27126),
-    k = n(60781),
+    k = n(27126),
+    R = n(60781),
     w = n(498336),
     D = n(615112),
     M = n(501379),
@@ -180,7 +180,7 @@ function em() {
             name: "Tab Hover Gradient",
             group: ed.fu.UI,
             tags: ["accessibility", "contrast", "gradient", "wcag"],
-            render: () => (0, a.jsx)(k.A, {})
+            render: () => (0, a.jsx)(R.A, {})
         }), e.push({
             id: "lottie",
             name: "Lottie",
@@ -325,7 +325,7 @@ function em() {
             name: "Gifting Intent",
             group: ed.fu.PREMIUM,
             tags: ["friends", "anniversary"],
-            render: () => (0, a.jsx)(R.A, {})
+            render: () => (0, a.jsx)(k.A, {})
         }), e.push({
             id: "krisp_tester",
             name: "Krisp Tester",

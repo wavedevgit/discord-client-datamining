@@ -1282,7 +1282,7 @@ let b = [{
     };
 
 function S() {
-    let [e, t] = i.useState("US"), [n, d] = i.useState(null), [c, m] = i.useState(null), [h, x] = i.useState(null), [g, S] = i.useState(null), [T, N] = i.useState("pm_card_us"), [O, R] = i.useState(!1), D = Object.values((0, s.bG)([p.A], () => p.A.paymentSources)), M = j[e], P = async () => {
+    let [e, t] = i.useState("US"), [n, d] = i.useState(null), [c, m] = i.useState(null), [h, x] = i.useState(null), [g, S] = i.useState(null), [T, N] = i.useState("pm_card_us"), [O, k] = i.useState(!1), D = Object.values((0, s.bG)([p.A], () => p.A.paymentSources)), M = j[e], P = async () => {
         let t = T;
         "" === t && (t = "pm_card_us"), await l.Bo.post({
             url: "/debug/payment-source",
@@ -1338,7 +1338,7 @@ function S() {
                         }
                     }),
                     onSelectionChange: e => {
-                        t(e), N(j[e][0].value), R(1 === j[e].length)
+                        t(e), N(j[e][0].value), k(1 === j[e].length)
                     }
                 }), "US" === e && (0, a.jsx)(r.l6P, {
                     selectionMode: "single",
@@ -1419,7 +1419,7 @@ function S() {
                 },
                 variant: "text-lg/bold",
                 children: "Generate Gift Card PIN"
-            }), (0, a.jsx)(k, {}), (0, a.jsx)(r.Text, {
+            }), (0, a.jsx)(R, {}), (0, a.jsx)(r.Text, {
                 style: {
                     marginTop: "24px",
                     marginBottom: "16px"
@@ -1504,7 +1504,7 @@ let O = [{
         value: "DE",
         label: "Germany (EUR)"
     }],
-    R = {
+    k = {
         US: "usd",
         CA: "cad",
         FR: "eur",
@@ -1512,7 +1512,7 @@ let O = [{
         DE: "eur"
     };
 
-function k() {
+function R() {
     let [e, t] = i.useState("US"), [n, s] = i.useState("500"), [o, d] = i.useState(null), [c, u] = i.useState(!1), [m, h] = i.useState(!1), [x, p] = i.useState(null), g = parseInt(n, 10), f = !isNaN(g) && g >= 500 && g <= 5e3, _ = async () => {
         if (f) {
             u(!0), p(null), d(null), h(!1);
@@ -1521,7 +1521,7 @@ function k() {
                     url: "/billing/gift-card/create-on-demand-pin",
                     body: {
                         country: e,
-                        currency: R[e],
+                        currency: k[e],
                         amount: g
                     },
                     rejectWithError: !0

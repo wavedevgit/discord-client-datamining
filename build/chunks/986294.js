@@ -30,7 +30,7 @@ var a = n(627968),
     N = n(424994),
     I = n(913351),
     O = n(310086);
-let R = [{
+let k = [{
     key: "type",
     cellClassName: l()(I.Hn, I.T$),
     render(e) {
@@ -63,13 +63,13 @@ let R = [{
         let {
             type: t
         } = e;
-        return (0, a.jsx)(k, {
+        return (0, a.jsx)(R, {
             type: t
         })
     }
 }];
 
-function k(e) {
+function R(e) {
     let {
         type: t
     } = e, n = (0, u.bG)([y.A], () => y.A.getFilters()), i = n?.types?.has(t) ?? !1;
@@ -103,8 +103,8 @@ function w() {
             }
         })),
         d = (0, u.bG)([y.A], () => y.A.getFeedState(N.X1.GLOBAL_FEED)?.loading === !0),
-        [k, w] = i.useState(""),
-        M = (0, u.bG)([b.A, p.A], () => parseInt(k) > 0 ? k : b.A.searchGamesByName(k)[0] ?? p.A.getApplicationByName(k)?.id, [k]),
+        [R, w] = i.useState(""),
+        M = (0, u.bG)([b.A, p.A], () => parseInt(R) > 0 ? R : b.A.searchGamesByName(R)[0] ?? p.A.getApplicationByName(R)?.id, [R]),
         P = (0, v.A)({
             applicationId: M,
             location: "DevToolsContentInventory",
@@ -129,7 +129,7 @@ function w() {
                     variant: "text-md/semibold",
                     children: "Inventory"
                 }), r.length > 0 && (0, a.jsx)(f.A, {
-                    columns: R,
+                    columns: k,
                     data: r
                 }), (0, a.jsx)(T.A, {}), (0, a.jsx)(h.Button, {
                     variant: "primary",
@@ -195,9 +195,9 @@ function w() {
                     placeholder: "App ID or full name",
                     onChange: e => (0 === e.length || e.length >= 18) && w(e),
                     onKeyDown: e => {
-                        "Enter" === e.key && (k === e.currentTarget.value ? P?.(e) : w(e.currentTarget.value))
+                        "Enter" === e.key && (R === e.currentTarget.value ? P?.(e) : w(e.currentTarget.value))
                     },
-                    error: k.length > 0 && null == P ? `No game profile for ${M??k+" - try by id"}.` : void 0,
+                    error: R.length > 0 && null == P ? `No game profile for ${M??R+" - try by id"}.` : void 0,
                     helperText: null != P ? "Game profile found" : void 0
                 }), (0, a.jsx)("ul", {
                     children: U.map(e => (0, a.jsx)("li", {

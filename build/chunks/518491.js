@@ -22,8 +22,8 @@ var s = n(503698),
     T = n(166403),
     f = n(786300),
     S = n(975571),
-    E = n(927578),
-    b = n(40185),
+    b = n(927578),
+    E = n(40185),
     C = n(89366),
     N = n(881489),
     v = n(422936),
@@ -141,10 +141,10 @@ let ee = (e, t, s) => {
             buttonVisibilityRef: f
         } = er(), {
             analyticsLocations: S
-        } = (0, _.Ay)(g.A.PREMIUM_MARKETING_HERO_CTA), b = (0, j.c)(a.C.MARKETING_PAGE_BANNER), C = null;
-        null != b && "marketingPageBanner" === b.properties.properties.oneofKind ? C = (0, i.jsx)(y.x, {
-            componentId: b.id,
-            promotionBannerMarketingComponentFields: b.properties.properties.marketingPageBanner
+        } = (0, _.Ay)(g.A.PREMIUM_MARKETING_HERO_CTA), E = (0, j.c)(a.C.MARKETING_PAGE_BANNER), C = null;
+        null != E && "marketingPageBanner" === E.properties.properties.oneofKind ? C = (0, i.jsx)(y.x, {
+            componentId: E.id,
+            promotionBannerMarketingComponentFields: E.properties.properties.marketingPageBanner
         }) : n ? C = (0, i.jsx)(O.A, {
             variant: O.c.SUBSCRIBER_HOME
         }) : s ? C = (0, i.jsx)(F.A, {}) : r && (C = (0, i.jsx)(P.S, {}));
@@ -189,7 +189,7 @@ let ee = (e, t, s) => {
                         color: "text-strong",
                         children: Z.intl.format(Z.t["3Q4wCy"], {
                             discountedPrice: p,
-                            billingPeriod: (0, E.Ke)(h.discount.user_usage_limit_interval),
+                            billingPeriod: (0, b.Ke)(h.discount.user_usage_limit_interval),
                             numMonths: h.discount.user_usage_limit
                         })
                     })]
@@ -225,7 +225,7 @@ let ee = (e, t, s) => {
             buttonVisibilityRef: d
         } = er(), {
             analyticsLocations: m
-        } = (0, _.Ay)(g.A.PREMIUM_MARKETING_HERO_CTA), x = (0, o.bG)([T.A], () => T.A.getPremiumTypeSubscription()), h = null != x && x.status === W.Dmq.CANCELED && null != a, p = (0, I.V)(), f = (0, v.O)(), S = (0, k.U9)(f, K.pe.TIER_2) ? K.pe.TIER_2 : void 0, b = null != x && x.status !== W.Dmq.ACCOUNT_HOLD && x.hasAnyPremiumNitro, C = (0, A.A)().isFractionalPremiumActive && !b && !h;
+        } = (0, _.Ay)(g.A.PREMIUM_MARKETING_HERO_CTA), x = (0, o.bG)([T.A], () => T.A.getPremiumTypeSubscription()), h = null != x && x.status === W.Dmq.CANCELED && null != a, p = (0, I.V)(), f = (0, v.O)(), S = (0, k.U9)(f, K.pe.TIER_2) ? K.pe.TIER_2 : void 0, E = null != x && x.status !== W.Dmq.ACCOUNT_HOLD && x.hasAnyPremiumNitro, C = (0, A.A)().isFractionalPremiumActive && !E && !h;
         return (0, i.jsxs)("div", {
             className: l()(q.kL, t),
             "data-testid": "subscriber-nitro-home-hero-header",
@@ -252,7 +252,7 @@ let ee = (e, t, s) => {
                     color: "always-white",
                     children: Z.intl.format(Z.t["3Q4wCy"], {
                         discountedPrice: r,
-                        billingPeriod: (0, E.Ke)(a.discount.user_usage_limit_interval),
+                        billingPeriod: (0, b.Ke)(a.discount.user_usage_limit_interval),
                         numMonths: a.discount.user_usage_limit
                     })
                 }), (0, i.jsxs)("div", {
@@ -383,9 +383,9 @@ let ee = (e, t, s) => {
             discountedPrice: r
         } = e, {
             analyticsLocations: o
-        } = (0, _.Ay)(g.A.PREMIUM_MARKETING_HERO_CTA), c = (0, N.ds)(), m = (0, b.cg)(), h = (0, C.QQ)(), p = Z.intl.string(Z.t.qYKftX), T = (0, R.m)(), f = (0, i.jsx)(ei, {
+        } = (0, _.Ay)(g.A.PREMIUM_MARKETING_HERO_CTA), c = (0, N.ds)(), m = (0, E.cg)(), h = (0, C.QQ)(), p = Z.intl.string(Z.t.qYKftX), T = (0, R.m)(), f = (0, i.jsx)(ei, {
             className: t
-        }), E = Z.intl.string(Z.t.ifwQZb), {
+        }), b = Z.intl.string(Z.t.ifwQZb), {
             fractionalState: v,
             endsAt: I
         } = (0, A.A)(), j = (0, x.Ay)(I, x.yE.CREDITS_ENDS_IN);
@@ -445,7 +445,7 @@ let ee = (e, t, s) => {
             value: o,
             children: (0, i.jsx)(ea.Provider, {
                 value: {
-                    headingText: E,
+                    headingText: b,
                     headingTop: y,
                     showPill: h,
                     userDiscountOffer: a,

@@ -21,8 +21,8 @@ var i = n(627968),
     T = n(65470),
     f = n(792656),
     S = n(224850),
-    E = n(552554),
-    b = n(288351),
+    b = n(552554),
+    E = n(288351),
     C = n(103733),
     N = n(326180),
     v = n(788868),
@@ -35,7 +35,7 @@ let y = s.memo(s.forwardRef((e, t) => {
         isEligibleForBogoPromotion: l
     } = e, {
         analyticsLocations: y
-    } = (0, m.Ay)(u.A.PREMIUM_MARKETING_HERO_CTA), O = (0, E.N)(), R = (0, x.A)(), P = null != R, L = (0, o.bG)([c.A], () => c.A.useReducedMotion), {
+    } = (0, m.Ay)(u.A.PREMIUM_MARKETING_HERO_CTA), O = (0, b.N)(), R = (0, x.A)(), P = null != R, L = (0, o.bG)([c.A], () => c.A.useReducedMotion), {
         visibilityPercentageRef: D,
         visibilityPercentage: G
     } = (0, C.U)(!L), M = (0, o.bG)([g.A], () => g.A.affinities), k = !P && M.length > 0, U = (0, A.c)(r.C.MARKETING_PAGE_BANNER), w = null != U && "marketingPageBanner" === U.properties.properties.oneofKind, V = (0, _.ar)() && !w;
@@ -53,7 +53,7 @@ let y = s.memo(s.forwardRef((e, t) => {
                         containerVisibilityPercentage: G
                     }), V && (0, i.jsx)("div", {
                         className: j.XN,
-                        children: (0, i.jsx)(b.A, {
+                        children: (0, i.jsx)(E.A, {
                             enablePremiumBrandRefresh: !0
                         })
                     }), (0, i.jsx)("div", {

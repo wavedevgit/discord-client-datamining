@@ -39,7 +39,7 @@ let T = e => {
             analyticsLocations: T,
             analyticsLocation: f.location
         }),
-        E = (0, A.a)(n.body);
+        b = (0, A.a)(n.body);
     return (0, i.jsxs)("div", {
         className: p.kL,
         children: [(0, i.jsx)("div", {
@@ -59,7 +59,7 @@ let T = e => {
                 variant: "text-md/medium",
                 color: "text-subtle",
                 className: p.tb,
-                children: [E, "" !== n.helpArticleId && (0, i.jsxs)(i.Fragment, {
+                children: [b, "" !== n.helpArticleId && (0, i.jsxs)(i.Fragment, {
                     children: ["\xa0", (0, i.jsx)(c.MzZ, {
                         className: p.$T,
                         href: _.A.getArticleURL(n.helpArticleId),

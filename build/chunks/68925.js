@@ -21,16 +21,16 @@ var i = n(627968),
     T = n(788868),
     f = n(985018),
     S = n(279480),
-    E = n(410229);
+    b = n(410229);
 
-function b(e) {
+function E(e) {
     let {
         slot: t,
         guildTier: n,
         premiumSubscription: l,
         hasCancelableSlots: r,
         isLast: c
-    } = e, m = s.useRef(null), g = (0, _.I5)(t), x = s.useMemo(() => null != t.cooldownEndsAt ? new Date(t.cooldownEndsAt) : null, [t.cooldownEndsAt]), h = null != x && x > new Date, b = (0, d.A)(), C = s.useMemo(() => (function(e, t) {
+    } = e, m = s.useRef(null), g = (0, _.I5)(t), x = s.useMemo(() => null != t.cooldownEndsAt ? new Date(t.cooldownEndsAt) : null, [t.cooldownEndsAt]), h = null != x && x > new Date, E = (0, d.A)(), C = s.useMemo(() => (function(e, t) {
         if (null == e || e === p.TVA.NONE) return "";
         let n = [f.intl.formatToPlainString(f.t["dLlKX/"], {
             numEmojiSlots: T.TG[e].limits.emoji
@@ -61,7 +61,7 @@ function b(e) {
         return f.intl.formatToPlainString(f.t.lY2Bur, {
             date: new Date(e)
         })
-    }, [C, t.premiumGuildSubscription]), v = s.useMemo(() => g ? l.isPausedForFractionalPremium ? b.endsAt.toDate() : l.currentPeriodEnd : null, [g, l, b]);
+    }, [C, t.premiumGuildSubscription]), v = s.useMemo(() => g ? l.isPausedForFractionalPremium ? E.endsAt.toDate() : l.currentPeriodEnd : null, [g, l, E]);
     return (0, i.jsxs)("div", {
         className: a()(S.iq, {
             [S.Mt]: c
@@ -71,7 +71,7 @@ function b(e) {
             children: [(0, i.jsx)("img", {
                 alt: "",
                 className: S.bB,
-                src: E.A
+                src: b.A
             }), g && null != v ? (0, i.jsx)(o.Text, {
                 variant: "text-sm/medium",
                 color: "text-subtle",
@@ -116,7 +116,7 @@ function b(e) {
                     guildBoostSlot: t,
                     premiumSubscription: l,
                     hasCancelableGuildBoostSlot: r,
-                    fractionalState: b.fractionalState
+                    fractionalState: E.fractionalState
                 })
             },
             position: "right",
@@ -171,7 +171,7 @@ function C(e) {
                     children: f.intl.string(f.t["6Kwwuo"])
                 })
             })
-        }), n.map((e, t) => (0, i.jsx)(b, {
+        }), n.map((e, t) => (0, i.jsx)(E, {
             slot: e,
             guildTier: a?.premiumTier,
             premiumSubscription: s,

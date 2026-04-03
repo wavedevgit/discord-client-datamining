@@ -30,8 +30,8 @@ var a = n(627968),
     N = n(915614),
     I = n(223330),
     O = n(559506),
-    R = n(646986),
-    k = n(379654),
+    k = n(646986),
+    R = n(379654),
     w = n(946356),
     D = n(810396),
     M = n(376285),
@@ -114,13 +114,13 @@ function ea(e) {
                 ...e
             })
         },
-        eR = el?.widgets != null && el.widgets.length > 0,
-        ek = i.useCallback(() => {
+        ek = el?.widgets != null && el.widgets.length > 0,
+        eR = i.useCallback(() => {
             n()
         }, [n]),
         ew = i.useCallback(() => {
-            eA(), ek()
-        }, [eA, ek]),
+            eA(), eR()
+        }, [eA, eR]),
         eD = (0, x.QR)({
             location: "UserProfileAccountPopout"
         }),
@@ -200,14 +200,14 @@ function ea(e) {
                                 bio: el?.bio,
                                 hidePersonalInformation: ef,
                                 onClose: n
-                            }), eR && (0, a.jsx)(k.A, {
+                            }), ek && (0, a.jsx)(R.A, {
                                 user: t,
                                 widgets: el?.widgets,
                                 onOpenUserProfileModal: eO
                             }), (0, a.jsx)(I.A, {
                                 isPremiumUser: eC,
                                 onInteraction: n
-                            }), (0, a.jsx)(R.A, {
+                            }), (0, a.jsx)(k.A, {
                                 user: t,
                                 currentUser: t,
                                 onOpenUserProfileModal: eO,

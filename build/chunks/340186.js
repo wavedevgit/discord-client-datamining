@@ -21,11 +21,11 @@ var i = n(934551),
     T = n(222323),
     f = n(411476),
     S = n(985018);
-let E = (0, l.t_)(r.X.CHAT_PANEL, {
+let b = (0, l.t_)(r.X.CHAT_PANEL, {
         useTitle: () => S.intl.string(S.t["/VQax8"]),
         buildLayout: () => [_.M, u.f, m.z, p.J, A.n, T.p, f.U, x.W, h.o, g.c]
     }),
-    b = [{
+    E = [{
         badgeType: a.Xi.STRONGLY_DISCOURAGED_CUSTOM,
         dismissibleContent: s.M.FAVORITES_GUILD_NEW_BADGE,
         StronglyDiscouragedCustomComponent: c.L
@@ -35,6 +35,6 @@ let E = (0, l.t_)(r.X.CHAT_PANEL, {
         icon: i.ChatIcon,
         usePredicate: () => !(0, o.Ci)("ChatSidebarItem"),
         useMenu: d.A,
-        getDismissibleBadges: () => b,
-        buildLayout: () => [E]
+        getDismissibleBadges: () => E,
+        buildLayout: () => [b]
     })

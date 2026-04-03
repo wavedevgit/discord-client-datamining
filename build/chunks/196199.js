@@ -1,6 +1,6 @@
 /** chunk id: 196199 params = (module,exports,require) **/
 n.d(t, {
-    A: () => b
+    A: () => E
 });
 var i = n(627968),
     s = n(64700),
@@ -21,22 +21,22 @@ var i = n(627968),
     T = n(924699),
     f = n(184487),
     S = n(788868),
-    E = n(515145);
+    b = n(515145);
 
-function b(e) {
+function E(e) {
     let {
         premiumSubscription: t
-    } = e, n = (0, l.bG)([_.A], () => _.A.boostSlots), b = s.useMemo(() => Object.values(n), [n]), C = (0, l.bG)([g.default], () => g.default.getCurrentUser()), N = (0, l.bG)([u.A], () => u.A.affinities), v = (0, l.bG)([m.Ay], () => m.Ay.getFlattenedGuildIds()), I = N.length > 0 || v.length > 0, j = s.useMemo(() => b.filter(e => null != e.premiumGuildSubscription), [b]).length > 0, y = (0, l.bG)([c.A], () => c.A.getCurrentUserAppliedBoosts()), {
+    } = e, n = (0, l.bG)([_.A], () => _.A.boostSlots), E = s.useMemo(() => Object.values(n), [n]), C = (0, l.bG)([g.default], () => g.default.getCurrentUser()), N = (0, l.bG)([u.A], () => u.A.affinities), v = (0, l.bG)([m.Ay], () => m.Ay.getFlattenedGuildIds()), I = N.length > 0 || v.length > 0, j = s.useMemo(() => E.filter(e => null != e.premiumGuildSubscription), [E]).length > 0, y = (0, l.bG)([c.A], () => c.A.getCurrentUserAppliedBoosts()), {
         fractionalState: O
     } = (0, a.A)({
         forceFetch: !0
     }), R = C?.isPremiumGroupMember(), P = t?.isPausedOrPausePending !== !0 && O === S.xc.NONE && !R;
     return (0, i.jsxs)("div", {
-        className: E.GO,
+        className: b.GO,
         children: [(0, i.jsx)(r.kb, {
-            className: E.ek
+            className: b.ek
         }), (0, i.jsx)(T.A, {}), R && (0, i.jsx)(d.A, {}), !I && (0, i.jsx)(x.A, {}), (0, i.jsx)(A.A, {
-            guildBoostSlots: b,
+            guildBoostSlots: E,
             guildBoostSlotsByGuildId: n,
             premiumSubscription: t,
             pausedAppliedGuildBoosts: y,
@@ -44,7 +44,7 @@ function b(e) {
         }), (0, i.jsx)(f.A, {
             canAddBoosts: j && P
         }), (0, i.jsx)(o.A, {
-            className: E.Q,
+            className: b.Q,
             hideHeading: !0,
             hideTier0: !0
         }), (0, i.jsx)(h.A, {}), (0, i.jsx)(p.A, {})]

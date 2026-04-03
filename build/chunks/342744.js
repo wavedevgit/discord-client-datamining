@@ -30,7 +30,7 @@ async function S(e, t, n, i) {
     }, (0, p.UC)(s, e.currency, e.paymentSourceId), i)
 }
 
-function E(e) {
+function b(e) {
     let {
         errorMsg: t
     } = e;
@@ -48,7 +48,7 @@ function E(e) {
     })
 }
 
-function b() {
+function E() {
     return (0, i.jsxs)("div", {
         className: f.rf,
         children: [(0, i.jsx)("div", {
@@ -128,11 +128,11 @@ function C(e) {
                 if (null == f) return (0, i.jsx)(d.y$y, {});
                 switch (C) {
                     case 1:
-                        return (0, i.jsx)(E, {
+                        return (0, i.jsx)(b, {
                             errorMsg: j
                         });
                     case 2:
-                        return (0, i.jsx)(b, {});
+                        return (0, i.jsx)(E, {});
                     default:
                         throw Error(`Unexpected step: ${C}`)
                 }

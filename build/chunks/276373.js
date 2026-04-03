@@ -864,7 +864,9 @@ function $(e, t) {
         case p.xBc.PIN_MESSAGES:
             return F.intl.string(F.t.Y5BI39);
         case p.xBc.BYPASS_SLOWMODE:
-            return F.intl.string(F.t.kqcjeV)
+            return F.intl.string(F.t.kqcjeV);
+        case p.xBc.MANAGE_OFFICIAL_MESSAGES:
+            return F.intl.string(F.t.Aj9ruN)
     }
     return null
 }

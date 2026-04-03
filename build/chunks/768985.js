@@ -25,15 +25,15 @@ function f(e) {
         location: t,
         onMountEffect: n
     } = e, f = (0, x.A)(), S = (0, A.W1)(), {
-        familyCenterInitialized: E,
-        isLoading: b
+        familyCenterInitialized: b,
+        isLoading: E
     } = (0, l.cf)([m.A], () => ({
         familyCenterInitialized: m.A.getIsInitialized(),
         isLoading: m.A.isLoading()
     })), C = (0, _.k)(), {
         selectedTab: N,
         handleTabChange: v
-    } = (0, g.A)(), I = c.default.getCurrentUser(), j = null != f, y = E && null != I && !j;
+    } = (0, g.A)(), I = c.default.getCurrentUser(), j = null != f, y = b && null != I && !j;
     (0, a.Ay)(() => {
         (0, d.d)("family-center"), null != n && n()
     });
@@ -47,7 +47,7 @@ function f(e) {
     return i.useEffect(() => {
         R.current = O
     }), i.useEffect(() => {
-        if (E && j) {
+        if (b && j) {
             let {
                 isConsideredAdult: e,
                 numOfAcceptedRequests: n,
@@ -64,10 +64,10 @@ function f(e) {
                 name: s.K.FAMILY_CENTER_VIEW
             })
         }
-    }, [E, j, t]), i.useEffect(() => {
+    }, [b, j, t]), i.useEffect(() => {
         y && (0, r.yO)(T.w_.FAMILY_CENTER)
     }, [y]), {
-        isLoading: b,
+        isLoading: E,
         selectedTab: N,
         handleTabChange: v,
         showAgeGateModal: y

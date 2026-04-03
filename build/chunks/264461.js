@@ -1,6 +1,6 @@
 /** chunk id: 264461 params = (module,exports,require) **/
 n.d(t, {
-    A: () => f
+    A: () => _
 });
 var a = n(627968),
     i = n(64700),
@@ -12,21 +12,22 @@ var a = n(627968),
     c = n(869146),
     u = n(734340),
     m = n(550730),
-    h = n(439895),
-    x = n(652215),
-    p = n(751156);
-let g = e => {
+    h = n(903796),
+    x = n(439895),
+    p = n(652215),
+    g = n(751156);
+let f = e => {
         let {
             setTab: t
-        } = e, n = (0, o.bG)([c.A], () => c.A.getWindowOpen(x.MLl.DEVTOOLS_POPOUT));
+        } = e, n = (0, o.bG)([c.A], () => c.A.getWindowOpen(p.MLl.DEVTOOLS_POPOUT));
         return (0, a.jsxs)("div", {
-            className: p.Qs,
+            className: g.Qs,
             children: [(0, a.jsx)(r.DUT, {
                 onClick: () => {
                     t(1)
                 },
                 children: (0, a.jsx)("div", {
-                    className: l()(p.vK, p.Dg),
+                    className: l()(g.vK, g.Dg),
                     children: (0, a.jsx)(r.EYj, {
                         variant: "text-md/bold",
                         color: "always-white",
@@ -38,7 +39,7 @@ let g = e => {
                     t(2)
                 },
                 children: (0, a.jsx)("div", {
-                    className: l()(p.vK, p.st),
+                    className: l()(g.vK, g.st),
                     children: (0, a.jsx)(r.EYj, {
                         variant: "text-md/bold",
                         color: "always-white",
@@ -50,7 +51,19 @@ let g = e => {
                     t(3)
                 },
                 children: (0, a.jsx)("div", {
-                    className: l()(p.vK, p.IP),
+                    className: l()(g.vK, g.Dg),
+                    children: (0, a.jsx)(r.EYj, {
+                        variant: "text-md/bold",
+                        color: "always-white",
+                        children: "Profile Frames"
+                    })
+                })
+            }), (0, a.jsx)(r.DUT, {
+                onClick: () => {
+                    t(4)
+                },
+                children: (0, a.jsx)("div", {
+                    className: l()(g.vK, g.IP),
                     children: (0, a.jsx)(r.EYj, {
                         variant: "text-md/bold",
                         color: "always-white",
@@ -83,12 +96,12 @@ let g = e => {
             })]
         })
     },
-    f = () => {
+    _ = () => {
         let [e, t] = i.useState(0);
         return (0, a.jsxs)(r.IpV, {
-            className: p.iE,
+            className: g.iE,
             children: [(0, a.jsxs)("div", {
-                className: p.C$,
+                className: g.C$,
                 children: [(0, a.jsx)(r.DZT, {
                     variant: "heading-xxl/medium",
                     children: "Collectibles DevTools"
@@ -105,8 +118,10 @@ let g = e => {
                         return (0, a.jsx)(u.A, {});
                     case 3:
                         return (0, a.jsx)(h.A, {});
+                    case 4:
+                        return (0, a.jsx)(x.A, {});
                     default:
-                        return (0, a.jsx)(g, {
+                        return (0, a.jsx)(f, {
                             setTab: t
                         })
                 }

@@ -30,8 +30,8 @@ var a = n(627968),
     N = n(814793),
     I = n(895253),
     O = n(241124),
-    R = n(442734),
-    k = n(212614),
+    k = n(442734),
+    R = n(212614),
     w = n(79545),
     D = n(646764),
     M = n(398025),
@@ -203,7 +203,7 @@ function et(e) {
                             className: J.h_,
                             variant: "text-xs/normal",
                             children: G
-                        }), Y && (0, a.jsx)(R.e, {
+                        }), Y && (0, a.jsx)(k.e, {
                             questId: o.id,
                             canUseQuestOrbMultiplier: Z
                         })]
@@ -219,7 +219,7 @@ function et(e) {
                             variant: "secondary",
                             text: $,
                             onClick: z
-                        }), B.enabled && F === w.UA.UNENROLLED && B.enabledQuestStates.has(w.UA.UNENROLLED) ? (0, a.jsx)(k.A, {
+                        }), B.enabled && F === w.UA.UNENROLLED && B.enabledQuestStates.has(w.UA.UNENROLLED) ? (0, a.jsx)(R.A, {
                             quest: o,
                             surface: w.V3.QUEST_BAR_FOOTER,
                             size: "sm",

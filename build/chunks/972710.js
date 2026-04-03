@@ -21,8 +21,8 @@ var i = n(627968),
     T = n(287809),
     f = n(954571),
     S = n(927578),
-    E = n(866312),
-    b = n(327479),
+    b = n(866312),
+    E = n(327479),
     C = n(652215),
     N = n(601107),
     v = n(985018),
@@ -92,7 +92,7 @@ function O(e) {
         {
             analyticsLocations: O
         } = (0, x.Ay)(_.A.GUILD_BOOSTING_SUBSCRIPTION_HEADER),
-        R = (0, E.A)({
+        R = (0, b.A)({
             location: "GuildBoostingHeader"
         });
     if (0 === (0, S.bx)(n.additionalPlans)) return null;
@@ -151,7 +151,7 @@ function O(e) {
                         size: "sm",
                         text: v.intl.string(v.t["ETE/oC"])
                     })
-                }), (0, i.jsx)(b.A, {
+                }), (0, i.jsx)(E.A, {
                     onClick: () => (0, p.openUserSettings)(h.X.PREMIUM_GUILD_SUBSCRIPTIONS_PANEL),
                     text: v.intl.string(v.t["NQ5g/U"])
                 })]

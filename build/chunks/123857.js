@@ -24,8 +24,8 @@ var i = n(627968),
     T = n(234419),
     f = n(792656),
     S = n(511484),
-    E = n(811611),
-    b = n(97469),
+    b = n(811611),
+    E = n(97469),
     C = n(954571),
     N = n(544028),
     v = n(253932),
@@ -102,7 +102,7 @@ function k() {
             })
         }), (0, i.jsx)("div", {
             className: P.BU
-        }), (0, i.jsx)(E.Ay, {
+        }), (0, i.jsx)(b.Ay, {
             type: O.e.PREMIUM_CLIENT_THEME_SETTINGS_UPSELL,
             subscriptionTier: O.pe.TIER_2
         })]
@@ -123,7 +123,7 @@ let U = () => (0, i.jsx)("div", {
 });
 
 function w() {
-    let e = (0, b.qo)(),
+    let e = (0, E.qo)(),
         {
             theme: t,
             useForcedColors: n,

@@ -31,8 +31,8 @@ var a = n(627968),
     N = n(18235),
     I = n(183184),
     O = n(384059),
-    R = n(480890),
-    k = n(601255),
+    k = n(480890),
+    R = n(601255),
     w = n(562819),
     D = n(449582),
     M = n(351952),
@@ -85,8 +85,8 @@ var a = n(627968),
     eN = n(652215),
     eI = n(731854),
     eO = n(985018),
-    eR = n(64734);
-let ek = ej.Ay.getEnableHardwareAcceleration() ? h.JsQ : h.euF,
+    ek = n(64734);
+let eR = ej.Ay.getEnableHardwareAcceleration() ? h.JsQ : h.euF,
     ew = 2.5 * ef.A.Millis.SECOND,
     eD = 2 * ef.A.Millis.MINUTE,
     eM = 2 * ef.A.Millis.MINUTE,
@@ -162,7 +162,7 @@ function eL(e) {
                         t?.()
                     },
                     setPopoutRef: n,
-                    className: eR.dI
+                    className: ek.dI
                 })
             },
             position: "top",
@@ -189,8 +189,8 @@ function eL(e) {
                     onClick: t => {
                         e.onClick?.(t), c?.(t)
                     },
-                    className: l()(eR.Q9, {
-                        [eR.ZQ]: null != x
+                    className: l()(ek.Q9, {
+                        [ek.ZQ]: null != x
                     }),
                     children: [(0, a.jsx)(h.DUT, {
                         ...u,
@@ -201,19 +201,19 @@ function eL(e) {
                         focusProps: {
                             ringTarget: b
                         },
-                        className: eR.$n,
+                        className: ek.$n,
                         "data-jump-section": f
-                    }), (0, a.jsx)(ek, {
+                    }), (0, a.jsx)(eR, {
                         size: h._3J.SIZE_32,
                         src: o.getAvatarURL(void 0, 28, !1),
                         avatarDecoration: j,
                         status: r ? eN.clD.STREAMING : d,
                         isSpeaking: n,
                         voiceDb: s,
-                        className: eR.my,
+                        className: ek.my,
                         "aria-hidden": !0
                     }), (0, a.jsx)("div", {
-                        className: eR.oM,
+                        className: ek.oM,
                         children: m(A)
                     })]
                 })
@@ -280,11 +280,11 @@ class eU extends i.PureComponent {
             return t => (0, a.jsx)(e, {
                 ...t,
                 onClose: x.Z_,
-                onInteraction: (0, R.s)("UserSettingsMenu", C.A.ACCOUNT)
+                onInteraction: (0, k.s)("UserSettingsMenu", C.A.ACCOUNT)
             })
         })
     };
-    audioOnInteractionHandler = (0, R.s)("AudioDeviceMenu", C.A.ACCOUNT);
+    audioOnInteractionHandler = (0, k.s)("AudioDeviceMenu", C.A.ACCOUNT);
     handleInputAudioContextMenu = (e, t) => {
         this.dismissTooltips(), (0, x.L3)(e, async () => {
             let {
@@ -443,7 +443,7 @@ class eU extends i.PureComponent {
                 activities: t,
                 applicationStream: n,
                 voiceChannel: r,
-                textClassName: eR.XD,
+                textClassName: ek.XD,
                 hideTooltip: !0
             })]
         });
@@ -460,8 +460,8 @@ class eU extends i.PureComponent {
                 children: eb.Ay.humanizeStatus(s)
             }), (0, a.jsx)(U.A, {
                 activity: o,
-                emojiClassName: eR.Zg,
-                className: eR.WO
+                emojiClassName: ek.Zg,
+                className: ek.WO
             })]
         }) : null != s && s !== eN.clD.UNKNOWN && i.hasUniqueUsername() ? (0, a.jsx)(A.A, {
             hoverText: l,
@@ -478,10 +478,10 @@ class eU extends i.PureComponent {
         } = this.props;
         return null == t ? null : (0, a.jsxs)(a.Fragment, {
             children: [(0, a.jsx)("div", {
-                className: eR.eW,
+                className: ek.eW,
                 children: (0, a.jsx)(eC.A, {
                     className: l()({
-                        [eR.e8]: null != e
+                        [ek.e8]: null != e
                     }),
                     children: (0, a.jsx)(F.A, {
                         userName: n,
@@ -492,7 +492,7 @@ class eU extends i.PureComponent {
                     })
                 })
             }), (0, a.jsx)("div", {
-                className: eR.XP,
+                className: ek.XP,
                 children: (0, a.jsx)(eA.A, {
                     children: this.renderStatus()
                 })
@@ -530,10 +530,10 @@ class eU extends i.PureComponent {
             children: [(0, a.jsx)(h.skg, {
                 children: e => (0, a.jsxs)("div", {
                     ref: this.containerRef,
-                    className: l()(eR.kL, {
-                        [eR.UG]: null != n,
-                        [eR.bc]: !i,
-                        [eR.G5]: s
+                    className: l()(ek.kL, {
+                        [ek.UG]: null != n,
+                        [ek.bc]: !i,
+                        [ek.G5]: s
                     }),
                     onMouseEnter: this.handleMouseEnter,
                     onMouseLeave: this.handleMouseLeave,
@@ -589,7 +589,7 @@ function eB(e) {
         speaking: E
     } = e, S = (0, M.K)(b);
     return (0, a.jsxs)("div", {
-        className: eR.Uo,
+        className: ek.Uo,
         style: S,
         children: [(0, a.jsx)(eS.A, {
             accountContainerRef: j,
@@ -601,7 +601,7 @@ function eB(e) {
             onMouseLeave: m,
             onClick: x,
             onContextMenu: p,
-            iconForeground: null != b ? eR.t4 : void 0,
+            iconForeground: null != b ? ek.t4 : void 0,
             nameplate: b,
             shouldShowSpeakingWhileMutedTooltip: o,
             shouldShowInputDeviceChangedTooltip: !o && "input" === A,
@@ -615,7 +615,7 @@ function eB(e) {
             onClick: h,
             onContextMenu: g,
             awaitingRemote: i,
-            iconForeground: null != b ? eR.t4 : void 0,
+            iconForeground: null != b ? ek.t4 : void 0,
             nameplate: b,
             shouldShowOutputDeviceChangedTooltip: "output" === A,
             dismissTooltips: y
@@ -624,7 +624,7 @@ function eB(e) {
             onClick: f,
             onContextMenu: _,
             dismissibleContents: v.settings,
-            iconForeground: null != b ? eR.t4 : void 0,
+            iconForeground: null != b ? ek.t4 : void 0,
             nameplate: b
         })]
     })
@@ -696,11 +696,11 @@ function eF() {
         N = (0, c.bG)([ed.Ay], () => ed.Ay.getSpeakingWhileMuted()),
         I = (0, c.bG)([T.A], () => T.A.isFullscreenInContext()),
         O = (0, c.bG)([eo.A], () => eo.A.hasLayers()),
-        R = (0, h.red)(h.DXt) || O || ev.P.isDisallowPopupsSet() || I,
+        k = (0, h.red)(h.DXt) || O || ev.P.isDisallowPopupsSet() || I,
         w = (0, c.bG)([V.default], () => null != V.default.getAwaitingRemoteSessionInfo()),
         M = (0, c.bG)([eu.A], () => eu.A.getGuildId()),
         P = e?.avatarDecoration,
-        L = (0, k.A)(P),
+        L = (0, R.A)(P),
         U = eb.Ay.useName(e) ?? "",
         {
             analyticsLocations: B
@@ -723,7 +723,7 @@ function eF() {
             settings: []
         },
         K = (0, q.lX)("AccountCoachmark");
-    !R && (H.avatar.push(u.M.DISPLAY_NAME_STYLES_COACHMARK), K && H.settings.push(u.M.PRIVATE_PROFILE_COACHMARK));
+    !k && (H.avatar.push(u.M.DISPLAY_NAME_STYLES_COACHMARK), K && H.settings.push(u.M.PRIVATE_PROFILE_COACHMARK));
     let {
         shouldShowTooltip: Y,
         dismissTooltip: Q
@@ -752,7 +752,7 @@ function eF() {
             voiceChannel: p,
             dismissibleContents: H,
             userTag: x,
-            occluded: R,
+            occluded: k,
             selfDeaf: b,
             selfMute: _,
             serverDeaf: j,

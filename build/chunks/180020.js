@@ -26,18 +26,18 @@ function f(e) {
         guildId: n,
         className: f
     } = e, S = m.Ay.canUsePremiumProfileCustomization(t), {
-        analyticsLocations: E
+        analyticsLocations: b
     } = (0, r.Ay)(), {
-        userDisplayNameStyles: b,
+        userDisplayNameStyles: E,
         guildDisplayNameStyles: C,
         pendingDisplayNameStyles: N,
         pendingErrors: v
     } = (0, g.B0)(t, n), [I, j] = (0, o.kn)([l.M.DISPLAY_NAME_STYLES_NEW_BADGE_PROFILE_PAGE]), y = I === l.M.DISPLAY_NAME_STYLES_NEW_BADGE_PROFILE_PAGE, O = (0, s.useCallback)(() => {
         j(A.i.TAKE_ACTION), u.default.track(x.HAw.DISPLAY_NAME_STYLES_FROM_SETTINGS), (0, d.L)({
-            analyticsLocations: E,
+            analyticsLocations: b,
             guildId: n
         })
-    }, [E, j, n]), R = (0, s.useCallback)(() => {
+    }, [b, j, n]), R = (0, s.useCallback)(() => {
         (0, c.p)({
             displayNameStyles: null
         }), u.default.track(x.HAw.DISPLAY_NAME_STYLES_REMOVED)
@@ -46,7 +46,7 @@ function f(e) {
             guildId: n,
             displayNameStyles: null
         })
-    }, [n]), L = void 0 !== N || (null != n ? null != C : null != b);
+    }, [n]), L = void 0 !== N || (null != n ? null != C : null != E);
     return (0, i.jsx)(_.A, {
         title: h.intl.string(p.default["86GtGH"]),
         titleIcon: y ? (0, i.jsx)(a.LpS, {

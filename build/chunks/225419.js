@@ -1,8 +1,8 @@
 /** chunk id: 225419 params = (module,exports,require) **/
-n.d(i, {
+e.d(i, {
     BK: () => _,
     LZ: () => o,
-    Nk: () => p,
+    Nk: () => M,
     Si: () => N,
     eD: () => S,
     iG: () => g,
@@ -12,10 +12,10 @@ n.d(i, {
     od: () => x,
     qI: () => T,
     xd: () => d
-}), n(321073);
-var e = n(403362),
-    r = n(818348),
-    E = n(985018);
+}), e(321073);
+var n = e(403362),
+    r = e(818348),
+    E = e(985018);
 
 function s(t) {
     let i = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
@@ -163,6 +163,11 @@ function S(t) {
             description: E.t.S2ZE5c,
             flag: r.xB.BYPASS_SLOWMODE
         },
+        [r.xB.MANAGE_OFFICIAL_MESSAGES.toString()]: {
+            title: E.intl.string(E.t.Aj9ruN),
+            description: E.t.pfEgBm,
+            flag: r.xB.MANAGE_OFFICIAL_MESSAGES
+        },
         [r.xB.READ_MESSAGE_HISTORY.toString()]: {
             title: E.intl.string(E.t.l9ufaR),
             description: E.t.rmHPFR,
@@ -298,16 +303,16 @@ function S(t) {
 }
 
 function o(t) {
-    let i, n, e, o, A, a = S(t),
+    let i, e, n, o, A, a = S(t),
         _ = [(i = [r.xB.VIEW_CHANNEL, r.xB.MANAGE_CHANNELS, r.xB.MANAGE_ROLES, r.xB.CREATE_GUILD_EXPRESSIONS, r.xB.MANAGE_GUILD_EXPRESSIONS, r.xB.VIEW_AUDIT_LOG, r.xB.VIEW_GUILD_ANALYTICS], t.showCreatorMonetizationAnalyticsPermission && i.push(r.xB.VIEW_CREATOR_MONETIZATION_ANALYTICS), i.push(r.xB.MANAGE_WEBHOOKS), i.push(r.xB.MANAGE_GUILD), s({
             title: E.intl.string(E.t["mYck+B"]),
             permissions: l(i, a)
-        })), (n = [r.xB.CREATE_INSTANT_INVITE, r.xB.CHANGE_NICKNAME, r.xB.MANAGE_NICKNAMES, r.xB.KICK_MEMBERS, r.xB.BAN_MEMBERS, r.xB.MODERATE_MEMBERS], s({
+        })), (e = [r.xB.CREATE_INSTANT_INVITE, r.xB.CHANGE_NICKNAME, r.xB.MANAGE_NICKNAMES, r.xB.KICK_MEMBERS, r.xB.BAN_MEMBERS, r.xB.MODERATE_MEMBERS], s({
             title: E.intl.string(E.t.Ny49TN),
-            permissions: l(n, a)
-        })), (e = [r.xB.SEND_MESSAGES, r.xB.SEND_MESSAGES_IN_THREADS, r.xB.CREATE_PUBLIC_THREADS, r.xB.CREATE_PRIVATE_THREADS, r.xB.EMBED_LINKS, r.xB.ATTACH_FILES, r.xB.ADD_REACTIONS, r.xB.USE_EXTERNAL_EMOJIS, r.xB.USE_EXTERNAL_STICKERS, r.xB.USE_EXTERNAL_SOUNDS, r.xB.MENTION_EVERYONE, r.xB.MANAGE_MESSAGES, r.xB.PIN_MESSAGES, r.xB.BYPASS_SLOWMODE, r.xB.MANAGE_THREADS, r.xB.READ_MESSAGE_HISTORY, r.xB.SEND_TTS_MESSAGES, r.xB.SEND_VOICE_MESSAGES, r.xB.SEND_POLLS], t.inSoundmojiExperiment || (e = e.filter(t => t !== r.xB.USE_EXTERNAL_SOUNDS)), s({
-            title: E.intl.string(E.t.cKobO5),
             permissions: l(e, a)
+        })), (n = [r.xB.SEND_MESSAGES, r.xB.SEND_MESSAGES_IN_THREADS, r.xB.CREATE_PUBLIC_THREADS, r.xB.CREATE_PRIVATE_THREADS, r.xB.EMBED_LINKS, r.xB.ATTACH_FILES, r.xB.ADD_REACTIONS, r.xB.USE_EXTERNAL_EMOJIS, r.xB.USE_EXTERNAL_STICKERS, r.xB.USE_EXTERNAL_SOUNDS, r.xB.MENTION_EVERYONE, r.xB.MANAGE_MESSAGES, r.xB.PIN_MESSAGES, r.xB.MANAGE_OFFICIAL_MESSAGES, r.xB.BYPASS_SLOWMODE, r.xB.MANAGE_THREADS, r.xB.READ_MESSAGE_HISTORY, r.xB.SEND_TTS_MESSAGES, r.xB.SEND_VOICE_MESSAGES, r.xB.SEND_POLLS], t.inSoundmojiExperiment || (n = n.filter(t => t !== r.xB.USE_EXTERNAL_SOUNDS)), s({
+            title: E.intl.string(E.t.cKobO5),
+            permissions: l(n, a)
         })), (o = [r.xB.CONNECT, r.xB.SPEAK, r.xB.STREAM, r.xB.USE_SOUNDBOARD, r.xB.USE_EXTERNAL_SOUNDS, r.xB.USE_VAD, r.xB.PRIORITY_SPEAKER, r.xB.MUTE_MEMBERS, r.xB.DEAFEN_MEMBERS, r.xB.MOVE_MEMBERS, r.xB.SET_VOICE_CHANNEL_STATUS], s({
             title: E.intl.string(E.t["46Ra1b"]),
             permissions: l(o, a)
@@ -328,12 +333,12 @@ function o(t) {
 }
 
 function A(t, i) {
-    let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {
+    let e = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {
         showManageWebhooks: !0
     };
     return {
         title: i,
-        permissions: l(n?.showManageWebhooks ? [r.xB.VIEW_CHANNEL, r.xB.MANAGE_CHANNELS, r.xB.MANAGE_ROLES, r.xB.MANAGE_WEBHOOKS] : [r.xB.VIEW_CHANNEL, r.xB.MANAGE_CHANNELS, r.xB.MANAGE_ROLES], t)
+        permissions: l(e?.showManageWebhooks ? [r.xB.VIEW_CHANNEL, r.xB.MANAGE_CHANNELS, r.xB.MANAGE_ROLES, r.xB.MANAGE_WEBHOOKS] : [r.xB.VIEW_CHANNEL, r.xB.MANAGE_CHANNELS, r.xB.MANAGE_ROLES], t)
     }
 }
 
@@ -344,12 +349,12 @@ function a(t, i) {
     }
 }
 
-function _(t, i, n) {
-    let e = [r.xB.SEND_MESSAGES, r.xB.SEND_MESSAGES_IN_THREADS, r.xB.CREATE_PUBLIC_THREADS, r.xB.CREATE_PRIVATE_THREADS, r.xB.EMBED_LINKS, r.xB.ATTACH_FILES, r.xB.ADD_REACTIONS, r.xB.USE_EXTERNAL_EMOJIS, r.xB.USE_EXTERNAL_STICKERS, r.xB.USE_EXTERNAL_SOUNDS, r.xB.MENTION_EVERYONE, r.xB.MANAGE_MESSAGES, r.xB.PIN_MESSAGES, r.xB.BYPASS_SLOWMODE, r.xB.MANAGE_THREADS, r.xB.READ_MESSAGE_HISTORY, r.xB.SEND_TTS_MESSAGES, r.xB.SEND_VOICE_MESSAGES, r.xB.SEND_POLLS];
-    return n.inSoundmojiExperiment || (e = e.filter(t => t !== r.xB.USE_EXTERNAL_SOUNDS)), n.showPrivateThreads && n.showCreateThreads || (e = e.filter(t => t !== r.xB.CREATE_PRIVATE_THREADS)), n.showCreateThreads || (e = e.filter(t => t !== r.xB.CREATE_PUBLIC_THREADS)), {
+function _(t, i, e) {
+    let n = [r.xB.SEND_MESSAGES, r.xB.SEND_MESSAGES_IN_THREADS, r.xB.CREATE_PUBLIC_THREADS, r.xB.CREATE_PRIVATE_THREADS, r.xB.EMBED_LINKS, r.xB.ATTACH_FILES, r.xB.ADD_REACTIONS, r.xB.USE_EXTERNAL_EMOJIS, r.xB.USE_EXTERNAL_STICKERS, r.xB.USE_EXTERNAL_SOUNDS, r.xB.MENTION_EVERYONE, r.xB.MANAGE_MESSAGES, r.xB.PIN_MESSAGES, r.xB.MANAGE_OFFICIAL_MESSAGES, r.xB.BYPASS_SLOWMODE, r.xB.MANAGE_THREADS, r.xB.READ_MESSAGE_HISTORY, r.xB.SEND_TTS_MESSAGES, r.xB.SEND_VOICE_MESSAGES, r.xB.SEND_POLLS];
+    return e.inSoundmojiExperiment || (n = n.filter(t => t !== r.xB.USE_EXTERNAL_SOUNDS)), e.showPrivateThreads && e.showCreateThreads || (n = n.filter(t => t !== r.xB.CREATE_PRIVATE_THREADS)), e.showCreateThreads || (n = n.filter(t => t !== r.xB.CREATE_PUBLIC_THREADS)), {
         title: i,
-        description: n.sectionDescription,
-        permissions: l(e, t)
+        description: e.sectionDescription,
+        permissions: l(n, t)
     }
 }
 
@@ -360,29 +365,29 @@ function g(t, i) {
     }
 }
 
-function B(t, i, n) {
-    let e = [r.xB.SEND_MESSAGES, r.xB.EMBED_LINKS, r.xB.ATTACH_FILES, r.xB.ADD_REACTIONS, r.xB.USE_EXTERNAL_EMOJIS, r.xB.USE_EXTERNAL_STICKERS, r.xB.USE_EXTERNAL_SOUNDS, r.xB.MENTION_EVERYONE, r.xB.MANAGE_MESSAGES, r.xB.BYPASS_SLOWMODE, r.xB.READ_MESSAGE_HISTORY, r.xB.SEND_TTS_MESSAGES, r.xB.SEND_VOICE_MESSAGES, r.xB.SEND_POLLS];
-    return n.inSoundmojiExperiment || (e = e.filter(t => t !== r.xB.USE_EXTERNAL_SOUNDS)), {
+function B(t, i, e) {
+    let n = [r.xB.SEND_MESSAGES, r.xB.EMBED_LINKS, r.xB.ATTACH_FILES, r.xB.ADD_REACTIONS, r.xB.USE_EXTERNAL_EMOJIS, r.xB.USE_EXTERNAL_STICKERS, r.xB.USE_EXTERNAL_SOUNDS, r.xB.MENTION_EVERYONE, r.xB.MANAGE_MESSAGES, r.xB.BYPASS_SLOWMODE, r.xB.READ_MESSAGE_HISTORY, r.xB.SEND_TTS_MESSAGES, r.xB.SEND_VOICE_MESSAGES, r.xB.SEND_POLLS];
+    return e.inSoundmojiExperiment || (n = n.filter(t => t !== r.xB.USE_EXTERNAL_SOUNDS)), {
         title: i,
-        description: n.sectionDescription,
-        permissions: l(e, t)
+        description: e.sectionDescription,
+        permissions: l(n, t)
     }
 }
 
 function N(t, i) {
-    let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {
+    let e = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {
         showActivities: !0
     };
     return {
         title: i,
-        permissions: l([r.xB.USE_APPLICATION_COMMANDS, n.showActivities ? r.xB.USE_EMBEDDED_ACTIVITIES : null, r.xB.USE_EXTERNAL_APPS].filter(e.Vq), t)
+        permissions: l([r.xB.USE_APPLICATION_COMMANDS, e.showActivities ? r.xB.USE_EMBEDDED_ACTIVITIES : null, r.xB.USE_EXTERNAL_APPS].filter(n.Vq), t)
     }
 }
 
-function x(t, i, n) {
+function x(t, i, e) {
     return {
         title: i,
-        permissions: l(n ? [r.xB.CONNECT, r.xB.STREAM, r.xB.MUTE_MEMBERS, r.xB.MOVE_MEMBERS] : [r.xB.CONNECT, r.xB.MUTE_MEMBERS, r.xB.MOVE_MEMBERS], t)
+        permissions: l(e ? [r.xB.CONNECT, r.xB.STREAM, r.xB.MUTE_MEMBERS, r.xB.MOVE_MEMBERS] : [r.xB.CONNECT, r.xB.MUTE_MEMBERS, r.xB.MOVE_MEMBERS], t)
     }
 }
 
@@ -400,6 +405,6 @@ function d(t, i) {
     }
 }
 
-function p(t) {
+function M(t) {
     return null == t ? t : "string" == typeof t ? t.trim() : "function" == typeof t ? E.intl.format(t, {}) : t
 }

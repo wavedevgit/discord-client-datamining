@@ -99,30 +99,35 @@ let y = e => {
     },
     P = e => e.promotionType === C.pt.THIRD_PARTY_OUTBOUND_RECURRING ? e.partnerId?.toLowerCase() ?? null : e.outboundTitle.toLowerCase(),
     S = e => {
-        let t, r, l, o, {
-                transitionState: S,
-                onClose: T,
-                partnerIds: w
+        let t, r, {
+                transitionState: l,
+                onClose: o,
+                partnerIds: S
             } = e,
-            O = (t = _.A.useExperiment({
-                location: "Recurring3PModal"
-            }).enabled, r = (0, p.YS)({
-                location: "Recurring3PModal"
-            }).functionalityEnabled, a.useMemo(() => {
-                let e = [];
-                return t && e.push(C.KS, C.Cs), r && e.push(C.XY), null != w ? w.filter(t => e.includes(t)) : e
-            }, [t, r, w])),
+            T = (e => {
+                let {
+                    enabled: t
+                } = _.A.useConfig({
+                    location: "Recurring3PModal"
+                }), r = (0, p.YS)({
+                    location: "Recurring3PModal"
+                }).functionalityEnabled;
+                return a.useMemo(() => {
+                    let n = [];
+                    return t && n.push(C.KS, C.Cs), r && n.push(C.XY), null != e ? e.filter(e => n.includes(e)) : n
+                }, [t, r, e])
+            })(S),
             {
-                promotionsLoaded: D,
-                claimedOutboundPromotionCodeMap: M
+                promotionsLoaded: w,
+                claimedOutboundPromotionCodeMap: O
             } = (0, g.y7)(),
-            U = (0, s.yK)([x.A], () => x.A.outboundRecurringPromotions),
-            L = (0, s.bG)([d.default], () => d.default.getCurrentUser()),
-            B = !1 === m.Ay.isPremiumExactly(L, v.PremiumTypes.TIER_2),
-            k = L?.isFractionalPremiumWithNoStandardSub(),
-            G = null == L || B || k;
-        if (!1 === D) return (0, n.jsx)(i.y$y, {});
-        let V = (e => {
+            D = (0, s.yK)([x.A], () => x.A.outboundRecurringPromotions),
+            M = (0, s.bG)([d.default], () => d.default.getCurrentUser()),
+            U = !1 === m.Ay.isPremiumExactly(M, v.PremiumTypes.TIER_2),
+            L = M?.isFractionalPremiumWithNoStandardSub(),
+            B = null == M || U || L;
+        if (!1 === w) return (0, n.jsx)(i.y$y, {});
+        let k = (e => {
             let {
                 promotions: t,
                 codesByPromotion: r,
@@ -156,9 +161,9 @@ let y = e => {
                 a[t].push(s)
             }), a
         })({
-            promotions: U,
-            codesByPromotion: M,
-            partnerIds: O
+            promotions: D,
+            codesByPromotion: O,
+            partnerIds: T
         });
         return (0, n.jsx)(i.Modal, {
             title: j.intl.string(j.t["7ioAjs"]),
@@ -167,21 +172,21 @@ let y = e => {
             }),
             actions: [],
             preview: (() => {
-                if (!0 === G) return (0, n.jsx)(f.A, {
+                if (!0 === B) return (0, n.jsx)(f.A, {
                     subscriptionTier: v.pe.TIER_2,
                     fullWidth: !0,
                     onClick: () => {
-                        T()
+                        o()
                     },
                     onSubscribeModalClose: e => {
                         if (e) return b.Ay.fetchActivePromotions()
                     }
                 })
             })(),
-            transitionState: S,
-            onClose: T,
-            children: (l = (0, c.N5)(), o = (0, c.P6)(), G ? (0, n.jsx)(y, {
-                partnerIds: O
+            transitionState: l,
+            onClose: o,
+            children: (t = (0, c.N5)(), r = (0, c.P6)(), B ? (0, n.jsx)(y, {
+                partnerIds: T
             }) : (0, n.jsxs)("div", {
                 className: N.kL,
                 children: [(0, n.jsx)("div", {
@@ -190,17 +195,17 @@ let y = e => {
                         variant: "text-md/medium",
                         color: "text-subtle",
                         children: j.intl.format(j.t["43kZKL"], {
-                            days: o
+                            days: r
                         })
                     })
                 }), (0, n.jsx)("div", {
                     className: N.G9,
                     children: (0, n.jsx)(A.P, {
-                        percentage: l
+                        percentage: t
                     })
                 }), (0, n.jsx)("div", {
                     className: N.kR,
-                    children: Object.entries(V).sort((e, t) => {
+                    children: Object.entries(k).sort((e, t) => {
                         let [r] = e, [n] = t;
                         return n.localeCompare(r)
                     }).map(e => {

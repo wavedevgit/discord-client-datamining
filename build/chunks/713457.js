@@ -30,17 +30,17 @@ var a = n(627968),
     N = n(201805),
     I = n(212614),
     O = n(79545),
-    R = n(545986),
-    k = n(654487),
+    k = n(545986),
+    R = n(654487),
     w = n(985018),
     D = n(376936);
 let M = [{
-    value: k.fO.DESKTOP,
+    value: R.fO.DESKTOP,
     get label() {
         return w.intl.string(w.t["QXc01+"])
     }
 }, {
-    value: k.fO.CONSOLE,
+    value: R.fO.CONSOLE,
     get label() {
         return w.intl.string(w.t["8lAfuB"])
     }
@@ -51,10 +51,10 @@ function P(e) {
         value: i
     } = e;
     switch (i) {
-        case k.fO.DESKTOP:
+        case R.fO.DESKTOP:
             n = (0, a.jsx)(d.kN9, {}), t = w.intl.string(w.t["QXc01+"]);
             break;
-        case k.fO.CONSOLE:
+        case R.fO.CONSOLE:
             n = (0, a.jsx)(d._xR, {}), t = w.intl.string(w.t["8lAfuB"]);
             break;
         default:
@@ -69,12 +69,12 @@ function P(e) {
 function L(e) {
     if (0 === e.length) return null;
     switch (e[0].value) {
-        case k.fO.DESKTOP:
+        case R.fO.DESKTOP:
             return (0, a.jsxs)("span", {
                 className: D.FL,
                 children: [(0, a.jsx)(d.kN9, {}), w.intl.string(w.t.g6Dr44)]
             });
-        case k.fO.CONSOLE:
+        case R.fO.CONSOLE:
             return (0, a.jsxs)("span", {
                 className: D.FL,
                 children: [(0, a.jsx)(d._xR, {}), w.intl.string(w.t.iyNbj5)]
@@ -112,7 +112,7 @@ function B(e) {
     } = e, {
         enabled: o
     } = g.K.useConfig({
-        location: k.rE.QUEST_LEARN_MORE_CTA
+        location: R.rE.QUEST_LEARN_MORE_CTA
     }), {
         externalLinkCta: c,
         handleOpenExternalLink: u
@@ -142,7 +142,7 @@ function B(e) {
             icon: d.mqY,
             text: w.intl.string(w.t.YsCuyF),
             onClick: () => {
-                (0, R.d5)({
+                (0, k.d5)({
                     quest: t,
                     questContent: n,
                     sourceQuestContent: i,
@@ -166,7 +166,7 @@ function G(e) {
     } = e, {
         enabled: s
     } = g.K.useConfig({
-        location: k.rE.QUEST_LEARN_MORE_CTA
+        location: R.rE.QUEST_LEARN_MORE_CTA
     }), {
         externalLinkCta: l,
         handleOpenExternalLink: o
@@ -227,9 +227,9 @@ function F(e) {
         isEnrolling: h.A.isEnrolling(t.id),
         isQuestEnrollmentBlocked: null != h.A.questEnrollmentBlockedUntil
     })), Q = t.userStatus?.enrolledAt != null, J = t.userStatus?.completedAt != null, X = J && t.userStatus?.claimedAt == null, Z = (0, y.if)(t), ee = !(0, y.Ic)(t), et = (0, v.In)(t), en = (0, S.IO)(t), ea = (0, S.K$)(t), ei = (0, S.Cr)(t), es = (0, v.fc)(t), [el, er, eo] = (0, v.Qo)(t, es), ed = ee && et === v.F3.ACCEPTED, ec = ed && el === x.X0.SELECT, eu = ed && !ec && er.length > 1, em = f.t.useConfig({
-        location: k.rE.QUEST_HOME_DESKTOP
+        location: R.rE.QUEST_HOME_DESKTOP
     }), eh = (0, O.Pd)(t), ex = (0, m.O)(e => e.clearErrorHints), ep = i.useCallback(e => {
-        eo(e), e === k.fO.DESKTOP && (g([]), ex(t.id))
+        eo(e), e === R.fO.DESKTOP && (g([]), ex(t.id))
     }, [eo, g, ex, t.id]), {
         text: eg,
         onClick: ef
@@ -267,7 +267,7 @@ function F(e) {
         quest: t,
         shortText: !0
     }), eC = p.s5.useConfig({
-        location: k.rE.QUESTS_CARD
+        location: R.rE.QUESTS_CARD
     }), ey = eC.enabled && (eC.variant === p.tL.LEARN_MORE_CTA_ONLY || eC.variant === p.tL.COMBINE_LEARN_MORE_CTA_AND_EXPRESSIVE_BUTTON), eE = (0, v.do)({
         quest: t,
         content: n,
@@ -304,7 +304,7 @@ function F(e) {
         wrap: !1,
         children: [(0, a.jsx)(r.$nd, {
             variant: "secondary",
-            icon: t.config.features.includes(k.Li.CLOUD_GAMING_ACTIVITY) ? d.hpF : d._xR,
+            icon: t.config.features.includes(R.Li.CLOUD_GAMING_ACTIVITY) ? d.hpF : d._xR,
             text: eA,
             onClick: () => {
                 ej()
@@ -366,9 +366,9 @@ function F(e) {
         select: ep,
         serialize: e => {
             switch (e) {
-                case k.fO.DESKTOP:
+                case R.fO.DESKTOP:
                     return w.intl.string(w.t["QXc01+"]);
-                case k.fO.CONSOLE:
+                case R.fO.CONSOLE:
                     return w.intl.string(w.t["8lAfuB"]);
                 default:
                     return (0, u.xb)(e)
@@ -415,7 +415,7 @@ function F(e) {
         className: D.x6,
         children: (0, a.jsx)(r.$nd, {
             variant: "primary",
-            icon: (0, R.Oz)(t),
+            icon: (0, k.Oz)(t),
             onClick: ef ?? void 0,
             text: eg,
             fullWidth: !0
@@ -438,7 +438,7 @@ function F(e) {
             text: w.intl.string(w.t.V293qn)
         }), (0, a.jsx)(r.$nd, {
             variant: "primary",
-            onClick: () => (0, R.m6)(t, n, U),
+            onClick: () => (0, k.m6)(t, n, U),
             text: w.intl.string(w.t.vY9GgG)
         })]
     }) : (0, a.jsx)("div", {
@@ -458,7 +458,7 @@ function F(e) {
                 variant: "primary",
                 onClick: ef ?? void 0,
                 text: eg,
-                icon: (0, R.Oz)(t),
+                icon: (0, k.Oz)(t),
                 fullWidth: !0
             })]
         })
@@ -478,9 +478,9 @@ function F(e) {
                 isSelected: e => {
                     switch (el) {
                         case x.X0.DESKTOP:
-                            return e === k.fO.DESKTOP;
+                            return e === R.fO.DESKTOP;
                         case x.X0.CONSOLE:
-                            return e === k.fO.CONSOLE;
+                            return e === R.fO.CONSOLE;
                         default:
                             return !1
                     }
@@ -492,9 +492,9 @@ function F(e) {
                 select: ep,
                 serialize: e => {
                     switch (e) {
-                        case k.fO.DESKTOP:
+                        case R.fO.DESKTOP:
                             return w.intl.string(w.t["QXc01+"]);
-                        case k.fO.CONSOLE:
+                        case R.fO.CONSOLE:
                             return w.intl.string(w.t["8lAfuB"])
                     }
                 },

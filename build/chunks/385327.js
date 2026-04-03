@@ -10,9 +10,10 @@ let r = () => {
         (0, a.Dr)(i.M.RECURRING_3P_PROMOTION_POPOVER)
     },
     s = () => {
-        let e = l.A.useExperiment({
-                location: "useIsRecurring3PPopoverShowable"
-            }),
-            t = (0, a.k8)(i.M.RECURRING_3P_PROMOTION_POPOVER);
-        return e.enabled && !1 === t
+        let {
+            enabled: e
+        } = l.A.useConfig({
+            location: "useIsRecurring3PPopoverShowable"
+        }), t = (0, a.k8)(i.M.RECURRING_3P_PROMOTION_POPOVER);
+        return e && !1 === t
     }

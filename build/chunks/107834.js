@@ -21,8 +21,8 @@ var i = n(627968),
     T = n(927578),
     f = n(652215),
     S = n(788868),
-    E = n(985018),
-    b = n(670324);
+    b = n(985018),
+    E = n(670324);
 let C = r.Ay.connectStores([p.default], () => ({
     user: p.default.getCurrentUser()
 }))((0, u.A)(e => {
@@ -38,15 +38,15 @@ let C = r.Ay.connectStores([p.default], () => ({
                 children: [(0, i.jsxs)(g.A, {
                     isAuthenticated: t,
                     className: a()(e, {
-                        [b.xD]: !l && !(0, o.Mw)(r),
-                        [b.lO]: !l && (0, o.Mw)(r)
+                        [E.xD]: !l && !(0, o.Mw)(r),
+                        [E.lO]: !l && (0, o.Mw)(r)
                     }),
                     toolbar: u ? (0, i.jsxs)("div", {
-                        className: b.fI,
+                        className: E.fI,
                         children: [(0, i.jsx)(A.l, {
                             ref: p,
                             size: "sm",
-                            className: b.ij
+                            className: E.ij
                         }), (0, i.jsx)(x.A, {
                             variant: "secondary",
                             size: "sm"
@@ -58,7 +58,7 @@ let C = r.Ay.connectStores([p.default], () => ({
                         "aria-hidden": !0,
                         color: l ? void 0 : d.LU0.unsafe_rawColors.PREMIUM_TIER_2_PINK.css
                     }), (0, i.jsx)(g.A.Title, {
-                        children: E.intl.string(E.t.Ipxkog)
+                        children: b.intl.string(b.t.Ipxkog)
                     })]
                 }), u && (0, i.jsx)(_.O, {
                     targetElementRef: p

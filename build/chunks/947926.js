@@ -31,8 +31,8 @@ var a = n(627968),
     N = n(717695),
     I = n(899592),
     O = n(546350),
-    R = n(922532),
-    k = n(20732),
+    k = n(922532),
+    R = n(20732),
     w = n(654487);
 n(272111);
 var D = n(57291);
@@ -93,7 +93,7 @@ function L(e) {
         handleBlur: ed,
         handleMouseEnter: ec,
         handleMouseLeave: eu
-    } = (0, R.m)({
+    } = (0, k.m)({
         quest: t,
         isExpanded: Y,
         setIsExpanded: Q,
@@ -103,7 +103,7 @@ function L(e) {
         prevIsQuestAccepted: H,
         impressionRef: G
     });
-    (0, k.S)({
+    (0, R.S)({
         quest: t,
         hasAssetsError: z,
         isEligibleForQuests: s,

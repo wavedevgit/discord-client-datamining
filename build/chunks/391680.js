@@ -42,9 +42,9 @@ function g() {
         disableAppCollectionsCache: d.default.disableAppCollectionsCache
     })), {
         horizontalSpacing: S,
-        verticalSpacing: E
+        verticalSpacing: b
     } = (0, r.Or)(), {
-        setHorizontalSpacing: b,
+        setHorizontalSpacing: E,
         setVerticalSpacing: C
     } = r.Or.getState(), N = c.HZ.useSetting();
     return t ? [(0, i.jsxs)(l.Drp, {
@@ -174,7 +174,7 @@ function g() {
                     value: S,
                     minValue: 0,
                     maxValue: r.YR,
-                    onChange: e => b(e),
+                    onChange: e => E(e),
                     renderValue: e => `${Math.round(e)}px`,
                     "aria-label": "Horizontal Spacing"
                 })
@@ -184,7 +184,7 @@ function g() {
                 control: (e, t) => (0, i.jsx)(l.i42, {
                     ...e,
                     ref: t,
-                    value: E,
+                    value: b,
                     minValue: 0,
                     maxValue: r.YR,
                     onChange: e => C(e),

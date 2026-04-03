@@ -29,7 +29,7 @@ function h(e) {
         authorizedApplicationId: m.A.testModeApplicationId,
         authorizationError: m.A.error,
         authorizing: m.A.isFetchingAuthorization
-    })), [f, S] = s.useState(h ?? ""), [E, b] = s.useState("8080"), [C, N] = s.useState("localhost"), v = A.test(f);
+    })), [f, S] = s.useState(h ?? ""), [b, E] = s.useState("8080"), [C, N] = s.useState("localhost"), v = A.test(f);
     async function I() {
         d.SH();
         let e = function(e, t, n) {
@@ -40,7 +40,7 @@ function h(e) {
                 case "proxy":
                     return (0, c.Ay)(n)
             }
-        }(C, E, f);
+        }(C, b, f);
         null != await d.q1(f, e) && t()
     }
     s.useEffect(() => () => o.h.wait(() => d.SH()), []);
@@ -50,11 +50,11 @@ function h(e) {
         } : I,
         O = s.useMemo(() => [{
             loading: T,
-            disabled: !v || 0 === f.length || "localhost" === C && 0 === E.length,
+            disabled: !v || 0 === f.length || "localhost" === C && 0 === b.length,
             variant: j ? "critical-primary" : "active",
             text: j ? g.intl.string(g.t.d6TR3I) : g.intl.string(g.t.qwuK5I),
             onClick: y
-        }], [f.length, T, j, v, E.length, y, C]);
+        }], [f.length, T, j, v, b.length, y, C]);
     return (0, i.jsxs)(l.Modal, {
         title: g.intl.string(g.t.f8fzky),
         subtitle: g.intl.string(g.t.a6Vill),
@@ -109,9 +109,9 @@ function h(e) {
                 children: (0, i.jsx)(r.ksK, {
                     required: !0,
                     label: g.intl.string(g.t.fF4zxq),
-                    value: E,
+                    value: b,
                     maxLength: 5,
-                    onChange: e => b(e),
+                    onChange: e => E(e),
                     disabled: T
                 })
             })]

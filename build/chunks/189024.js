@@ -21,8 +21,8 @@ var i = n(627968),
     T = n(829219),
     f = n(859703),
     S = n(341915),
-    E = n(890687),
-    b = n(590202),
+    b = n(890687),
+    E = n(590202),
     C = n(591179),
     N = n(462463),
     v = n(780964),
@@ -64,13 +64,13 @@ function ei() {
         location: "useWhatsNewPerkCards"
     }).functionalityEnabled, ea = (0, O.R)({
         location: "PremiumWhatsNewSection"
-    }), er = R.A.useExperiment({
+    }), er = R.A.useConfig({
         location: "PremiumWhatsNewSection"
     }).enabled, eo = (0, a.bG)([y.A], () => y.A.getPremiumTypeSubscription()), ed = eo?.hasActiveTrial ?? !1, ec = (0, a.bG)([f.A], () => [...f.A.quests.values()].find(e => e.config.features.includes(B.Li.NITRO_CONTROL_CTA)) ?? null), eu = (0, N.A)({
         analyticsLocations: e
     }), {
         launchInGameActivity: em
-    } = (0, E.zW)(ec), eg = (0, s.useCallback)(() => {
+    } = (0, b.zW)(ec), eg = (0, s.useCallback)(() => {
         (0, j.openUserSettings)(v.X.PROFILE_PANEL, {
             analyticsLocations: e
         }, () => (0, A.L)({
@@ -88,7 +88,7 @@ function ei() {
     }, []), eA = (0, s.useCallback)(() => {
         null != ec && (ec.userStatus?.enrolledAt == null ? (0, T.Oy)(ec.id, {
             questContent: S.uF.NITRO_HOME_PERK_CARD,
-            questContentCTA: b.Cy.START_QUEST,
+            questContentCTA: E.Cy.START_QUEST,
             sourceQuestContent: S.uF.NITRO_HOME_PERK_CARD
         }).then(e => {
             switch (e.type) {

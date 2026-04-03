@@ -21,8 +21,8 @@ var i = n(627968),
     T = n(652215),
     f = n(788868),
     S = n(665606),
-    E = n(985018);
-let b = g.A.getArticleURL(T.MVz.FAVORITES_GUILD);
+    b = n(985018);
+let E = g.A.getArticleURL(T.MVz.FAVORITES_GUILD);
 
 function C() {
     let {
@@ -33,9 +33,9 @@ function C() {
     return (0, i.jsx)(o.f5, {
         value: e,
         children: (0, i.jsx)(a.D0$, {
-            label: E.intl.string(S.default.OT1NK5),
-            description: E.intl.format(S.default.GR2KOG, {
-                helpCenterLink: b
+            label: b.intl.string(S.default.OT1NK5),
+            description: b.intl.format(S.default.GR2KOG, {
+                helpCenterLink: E
             }),
             layout: "horizontal-responsive",
             badge: "beta",
@@ -45,11 +45,11 @@ function C() {
                 fullWidth: !1,
                 children: [(0, i.jsx)(a.Button, {
                     variant: "secondary",
-                    text: E.intl.string(S.default["7WwLnr"]),
+                    text: b.intl.string(S.default["7WwLnr"]),
                     onClick: t
                 }), (0, i.jsx)(d.A, {
                     subscriptionTier: f.pe.TIER_2,
-                    defaultTextOverride: E.intl.string(S.default["20sYUU"])
+                    defaultTextOverride: b.intl.string(S.default["20sYUU"])
                 })]
             })
         })
@@ -68,11 +68,11 @@ function N() {
         }, [n]);
     return t ? (0, i.jsx)(a.dOG, {
         checked: e,
-        description: E.intl.format(S.default.GR2KOG, {
-            helpCenterLink: b
+        description: b.intl.format(S.default.GR2KOG, {
+            helpCenterLink: E
         }),
         onChange: r,
-        label: E.intl.string(S.default.OT1NK5),
+        label: b.intl.string(S.default.OT1NK5),
         badge: "beta"
     }) : (0, i.jsx)(C, {})
 }
