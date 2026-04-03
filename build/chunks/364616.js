@@ -1,6 +1,6 @@
 /** chunk id: 364616 params = (module,exports,require) **/
 n.d(t, {
-    A: () => I
+    A: () => b
 });
 var r = n(627968),
     a = n(64700),
@@ -12,8 +12,8 @@ var r = n(627968),
     d = n(827734),
     u = n(990078),
     m = n(260762),
-    p = n(298072),
-    h = n(274590),
+    h = n(298072),
+    p = n(274590),
     x = n(466459),
     f = n(623373),
     v = n(561769),
@@ -27,7 +27,7 @@ let A = e => {
             isCollapsed: c,
             wrap: d,
             overflowProps: u
-        } = e, h = (0, p.Q)(t), {
+        } = e, p = (0, h.Q)(t), {
             shownVariants: x,
             totalVariants: v,
             hasOverflow: g
@@ -47,7 +47,7 @@ let A = e => {
                 hasOverflow: !1
             }
         }, [t, u?.maxVariantsToShow]), A = a.useCallback((e, n) => {
-            e.stopPropagation(), (0, p.n)(t, n)
+            e.stopPropagation(), (0, h.n)(t, n)
         }, [t]), C = (0, m.A)(`shop-variants-group-${t.storeListingId}`, o.Gl.HORIZONTAL);
         return 0 === x.length ? null : (0, r.jsx)(l.hD, {
             navigator: C,
@@ -68,14 +68,14 @@ let A = e => {
                         children: [x.map((e, t) => (0, r.jsx)(j, {
                             variant: e,
                             variantIndex: t,
-                            isSelected: t === h,
+                            isSelected: t === p,
                             onVariantEnter: () => n(t),
                             onVariantExit: i,
-                            zIndex: v - Math.abs(h - t),
+                            zIndex: v - Math.abs(p - t),
                             onVariantClick: A
                         }, e.variantValue)), null != u && g && (0, r.jsx)(N, {
-                            zIndex: h >= u.maxVariantsToShow - 1 ? v + 1 : 0,
-                            isSelected: h >= u.maxVariantsToShow - 1,
+                            zIndex: p >= u.maxVariantsToShow - 1 ? v + 1 : 0,
+                            isSelected: p >= u.maxVariantsToShow - 1,
                             onOverflowClick: u.onClick,
                             storeListingId: t.storeListingId
                         })]
@@ -92,15 +92,15 @@ let A = e => {
             onVariantClick: o,
             onVariantEnter: d,
             onVariantExit: m,
-            zIndex: p
+            zIndex: h
         } = e, {
-            onFocus: h,
+            onFocus: p,
             ...f
         } = (0, l.rm)(`shop-variants-group-${t.storeListingId}-${t.variantLabel}`), {
             isPurchased: v
         } = (0, x.h)(t), A = a.useCallback(e => {
-            o(e, n), h()
-        }, [o, h, n]);
+            o(e, n), p()
+        }, [o, p, n]);
         return (0, r.jsx)(u.m, {
             text: g.intl.string(g.t["6cfuDj"]),
             shouldShow: v,
@@ -116,7 +116,7 @@ let A = e => {
                 }),
                 style: {
                     backgroundColor: t.variantValue,
-                    zIndex: p
+                    zIndex: h
                 },
                 ...f,
                 children: v && (0, r.jsx)(C, {
@@ -128,7 +128,7 @@ let A = e => {
     C = e => {
         let {
             variant: t
-        } = e, n = (0, h.A)(t);
+        } = e, n = (0, p.A)(t);
         return (0, r.jsx)(c.BNr, {
             className: _.U,
             color: n ? d.A.colors.BLACK.css : d.A.colors.WHITE.css
@@ -162,7 +162,7 @@ let A = e => {
             })
         })
     },
-    I = e => {
+    b = e => {
         let {
             skuId: t,
             isCollapsed: n = !1,

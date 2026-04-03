@@ -12,8 +12,8 @@ var r = n(627968),
     d = n(954571),
     u = n(440938),
     m = n(238184),
-    p = n(766172),
-    h = n(652215),
+    h = n(766172),
+    p = n(652215),
     x = n(788868),
     f = n(985018);
 let v = e => {
@@ -28,9 +28,9 @@ let v = e => {
         giftRecipient: C,
         giftingOrigin: N = x.vQ.SHOP_PAGE
     } = e, {
-        analyticsLocations: I
-    } = (0, o.Ay)(), b = a.useRef(null), R = (0, u.uM)(), T = (0, m.A)(), E = e => {
-        e.stopPropagation(), d.default.track(h.HAw.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+        analyticsLocations: b
+    } = (0, o.Ay)(), I = a.useRef(null), R = (0, u.uM)(), E = (0, m.A)(), T = e => {
+        e.stopPropagation(), d.default.track(p.HAw.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
             collectibles_shop_session_id: R?.sessionId,
             sku_id: t.skuId,
             page_section: R?.pageSection,
@@ -38,16 +38,16 @@ let v = e => {
             tile_type: i.R[t.type],
             tile_position: String(R?.tilePosition),
             cta_name: "gift button",
-            page_type: T ?? "home"
+            page_type: E ?? "home"
         }), (0, c.A)({
-            skuId: (0, p.Y)({
+            skuId: (0, h.Y)({
                 product: t,
                 selectedVariantIndex: v
             }),
             isGift: !0,
             giftRecipient: C,
             giftingOrigin: N,
-            analyticsLocations: I,
+            analyticsLocations: b,
             returnRef: g,
             onClose: null != _ ? e => {
                 e && _()
@@ -57,7 +57,7 @@ let v = e => {
     return j ? (0, r.jsx)(l.Button, {
         variant: n ? "primary" : "secondary",
         icon: l.okO,
-        onClick: E,
+        onClick: T,
         text: f.intl.string(f.t.gmnzqM),
         fullWidth: !0
     }) : (0, r.jsx)(s.m, {
@@ -65,11 +65,11 @@ let v = e => {
         delay: A,
         children: (0, r.jsx)(l.K0, {
             "aria-label": f.intl.string(f.t["JCFN/y"]),
-            buttonRef: b,
+            buttonRef: I,
             variant: n ? "primary" : "secondary",
             icon: l.okO,
             size: "md",
-            onClick: E
+            onClick: T
         })
     })
 }

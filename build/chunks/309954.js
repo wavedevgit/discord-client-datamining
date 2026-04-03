@@ -1,27 +1,27 @@
 /** chunk id: 309954 params = (module,exports,require) **/
-a.d(t, {
-    W: () => r
+n.d(t, {
+    W: () => l
 });
-var n = a(64700),
-    s = a(311907),
-    o = a(786953),
-    c = a(505274);
+var r = n(64700),
+    a = n(311907),
+    i = n(786953),
+    s = n(505274);
 
-function r() {
+function l(e) {
     let {
-        balance: e,
-        isFetching: t,
-        error: a
-    } = (0, s.cf)([c.A], () => ({
-        balance: c.A.balance,
-        isFetching: c.A.isFetchingBalance,
-        error: c.A.fetchBalanceError
+        balance: t,
+        isFetching: n,
+        error: l
+    } = (0, a.cf)([s.A], () => ({
+        balance: s.A.balance,
+        isFetching: s.A.isFetchingBalance,
+        error: s.A.fetchBalanceError
     }));
-    return (0, n.useEffect)(() => {
-        null !== e || null !== a || t || (0, o.Bf)()
-    }, [e, a, t]), {
-        balance: e,
-        isFetching: t,
-        error: a
+    return (0, r.useEffect)(() => {
+        e?.disableFetch || null !== t || null !== l || s.A.isFetchingBalance || (0, i.Bf)()
+    }, [t, l, e?.disableFetch]), {
+        balance: t,
+        isFetching: n,
+        error: l
     }
 }

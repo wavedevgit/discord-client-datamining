@@ -14,8 +14,8 @@ var r = n(64700),
     d = n(870216),
     u = n(298072),
     m = n(238184),
-    p = n(572595),
-    h = n(159439),
+    h = n(572595),
+    p = n(159439),
     x = n(57020),
     f = n(652215);
 let v = "#itemSkuId=",
@@ -30,7 +30,7 @@ let v = "#itemSkuId=",
         }, [e, t.pathname])
     },
     j = e => {
-        let t = (0, h.U)(),
+        let t = (0, p.U)(),
             n = r.useRef(null),
             s = (0, a.zy)(),
             v = s.pathname === f.BVt.COLLECTIBLES_SHOP ? l.A.HOME_PAGE_SHOP_TAB : l.A.COLLECTIBLES_SHOP,
@@ -69,7 +69,7 @@ let v = "#itemSkuId=",
                                     let r = n.variants?.findIndex(e => e.skuId === t);
                                     null != r && r > -1 && (0, u.n)(n, r)
                                 }
-                            }(0, p.t)({
+                            }(0, h.t)({
                                 product: e,
                                 category: l,
                                 analyticsSource: r,

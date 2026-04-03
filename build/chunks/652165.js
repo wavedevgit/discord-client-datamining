@@ -21,22 +21,22 @@ let d = "orb-checkout-payment-modal-key",
             analyticsLocations: i = [],
             analyticsSourceLocation: s,
             onCloseCallback: u
-        } = e, m = (0, r.A)(), h = !1;
-        return p({
+        } = e, m = (0, r.A)(), p = !1;
+        return h({
             loadId: m,
             skuId: t,
             onCheckoutSuccess: e => {
-                h || n(e), h = !0
+                p || n(e), p = !0
             },
             analyticsLocations: i,
             analyticsSourceLocation: s,
             onCloseCallback: () => {
                 (0, l.S)({
-                    checkoutSucceeded: h
+                    checkoutSucceeded: p
                 }), u?.()
             },
             onCloseRequest: () => {
-                h || (0, o.g)(c.HAw.PAYMENT_FLOW_CANCELED, {
+                p || (0, o.g)(c.HAw.PAYMENT_FLOW_CANCELED, {
                     loadId: m,
                     skuId: t,
                     analyticsLocations: i,
@@ -45,7 +45,7 @@ let d = "orb-checkout-payment-modal-key",
             }
         })
     },
-    p = e => {
+    h = e => {
         let {
             loadId: t,
             skuId: n,

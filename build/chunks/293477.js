@@ -41,12 +41,12 @@ function m(e) {
         discount: a,
         product: c,
         hasSufficientOrbs: m,
-        isProductDisabled: p,
-        discountOfferAmount: h
-    } = e, x = null != h;
+        isProductDisabled: h,
+        discountOfferAmount: p
+    } = e, x = null != p;
     return 0 === t.length ? null : t[0].currency === o.Yr.DISCORD_ORB ? (0, r.jsx)(u, {
         orbPrice: t[0],
-        isProductDisabled: p,
+        isProductDisabled: h,
         hasSufficientOrbs: m
     }) : (0, r.jsxs)("div", {
         className: d.eg,
@@ -59,14 +59,14 @@ function m(e) {
                 hideStrikethroughPrice: !n || x,
                 nitroIconType: "tooltip",
                 nitroIconSize: "xs",
-                discountOfferAmount: h
+                discountOfferAmount: p
             }), n || x ? null : (0, r.jsx)(s.A, {
                 product: c
             })]
         }), t.length > 1 && t[1].currency === o.Yr.DISCORD_ORB && (0, r.jsx)(l.x, {
             priceAmount: t[1].amount,
             priceCurrency: t[1].currency,
-            className: p || !m ? d.r9 : void 0
+            className: h || !m ? d.r9 : void 0
         })]
     })
 }

@@ -12,8 +12,8 @@ var r = n(627968),
     d = n(538355),
     u = n(699352),
     m = n(715628),
-    p = n(752636),
-    h = n(480972);
+    h = n(752636),
+    p = n(480972);
 let x = a.memo(function(e) {
     let {
         message: t,
@@ -27,14 +27,14 @@ let x = a.memo(function(e) {
         preview: A,
         author: j
     } = e, C = _ ?? (0, o.U)(t), N = (0, l.S)((t.editedTimestamp ?? t.timestamp).valueOf()), {
-        content: I
+        content: b
     } = (0, d.A)(t, {
         hideSimpleEmbedContent: v,
         allowList: N,
         allowHeading: N,
         allowLinks: !0,
         previewLinkTarget: !0
-    }), b = a.useMemo(() => (0, p.A)({
+    }), I = a.useMemo(() => (0, h.A)({
         ...e,
         channel: n,
         guildId: C
@@ -42,12 +42,12 @@ let x = a.memo(function(e) {
     return (0, r.jsx)(c.A, {
         compact: i,
         className: s()(x, {
-            [h.iU]: !0,
-            [h.HJ]: !i,
-            [h._A]: f
+            [p.iU]: !0,
+            [p.HJ]: !i,
+            [p._A]: f
         }),
-        childrenHeader: b,
-        childrenMessageContent: (0, m.A)(e, I),
+        childrenHeader: I,
+        childrenMessageContent: (0, m.A)(e, b),
         childrenAccessories: null != n ? (0, u.J)({
             message: t,
             channel: n,

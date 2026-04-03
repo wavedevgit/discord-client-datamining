@@ -1,7 +1,7 @@
 /** chunk id: 114212 params = (module,exports,require) **/
 n.d(t, {
     Ay: () => _,
-    B5: () => h,
+    B5: () => p,
     BP: () => f,
     FQ: () => m,
     Uj: () => v,
@@ -48,14 +48,14 @@ function m(e) {
     })
 }
 
-function p(e) {
+function h(e) {
     let t, {
             groupStart: n = !1,
             compact: a = !1,
             attachmentSpecs: s,
             usernameWidth: d,
-            usernameOpacity: p,
-            className: h,
+            usernameOpacity: h,
+            className: p,
             style: x
         } = e,
         f = a ? 50 : l().random(40, 50);
@@ -64,7 +64,7 @@ function p(e) {
             className: c.wx,
             children: (0, r.jsx)(m, {
                 width: d,
-                opacity: p,
+                opacity: h,
                 className: c.__invalid_username
             })
         })]
@@ -79,12 +79,12 @@ function p(e) {
             className: c.wx,
             children: (0, r.jsx)(m, {
                 width: d,
-                opacity: p
+                opacity: h
             })
         })]
     })), (0, r.jsxs)("div", {
         "aria-hidden": !0,
-        className: i()(h, {
+        className: i()(p, {
             [c.iE]: !0,
             [c.oE]: a,
             [c.E]: !a
@@ -111,7 +111,7 @@ function p(e) {
         })]
     })
 }
-let h = 44,
+let p = 44,
     x = 22,
     f = 26,
     v = 26,
@@ -126,7 +126,7 @@ function _(e) {
         className: s
     } = e, o = null != i ? i.last ? t - 1 : l().random(0, t - 1) : -1, c = l().random(80, 120), u = l().random(.1, .2);
     return (0, r.jsx)(r.Fragment, {
-        children: Array(t).fill(null).map((e, t) => (0, r.jsx)(p, {
+        children: Array(t).fill(null).map((e, t) => (0, r.jsx)(h, {
             compact: a,
             className: s,
             usernameWidth: c,

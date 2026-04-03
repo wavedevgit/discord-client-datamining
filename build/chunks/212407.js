@@ -4,9 +4,9 @@ n.d(t, {
     MV: () => d,
     U1: () => u,
     bv: () => m,
-    qY: () => p,
+    qY: () => h,
     s4: () => c,
-    w$: () => h
+    w$: () => p
 });
 var r = n(64700),
     a = n(488430),
@@ -72,11 +72,11 @@ let o = e => {
             }
         }, [t, n, i, o, c, d, e])
     },
-    p = e => ({
+    h = e => ({
         bannerUrl: e.bannerUrl,
         bannerAnimatedUrl: e.bannerAnimatedUrl
     }),
-    h = e => ({
+    p = e => ({
         bannerURL: e.bannerURL,
         bannerAnimatedURL: e.bannerAnimatedURL
     })
