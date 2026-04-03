@@ -9,8 +9,8 @@ var r = n(627968),
     a = n(250703),
     s = n(877260),
     o = n(823092),
-    u = n(199966),
-    c = n(669550),
+    c = n(199966),
+    u = n(669550),
     d = n(894858),
     h = n(272053),
     f = n(397274),
@@ -32,48 +32,48 @@ function p(e) {
         node: b,
         visibleDirectory: N,
         accessibleDirectory: j
-    } = (0, c.Ay)(t, E ?? ""), C = null != n && N.entry(n)?.parentPanelKey != null ? n : p, R = i.useMemo(() => {
+    } = (0, u.Ay)(t, E ?? ""), C = null != n && N.entry(n)?.parentPanelKey != null ? n : p, R = i.useMemo(() => {
         let e = j.entry(S ?? C)?.parentPanelKey;
         if (null != e) return j.getPanelOrThrow(e)
     }, [S, j, C]), {
         navigateWithValidation: I
-    } = (0, o.L_)();
+    } = (0, o.L_)(), T = i.useMemo(() => () => I(_), [I, _]);
     i.useEffect(() => {
         h.A.init({
             accessibleDirectory: j,
             onViewChange: g,
             navigateWithValidation: (e, t) => {
                 null == N.entry(e) && A?.(), I(t)
-            }
+            },
+            closeWithValidation: T
         })
-    }, [j, I, g, A, N]);
-    let [T, w] = i.useState(!0);
+    }, [j, I, g, A, N, T]);
+    let [w, k] = i.useState(!0);
     (0, l.Ay)(() => (h.A.navigate(C, {
         animatePanelScroll: !1,
         animateSidebarScroll: !1,
         showNavigationMobile: null == n
-    }), w(!1), () => {
+    }), k(!1), () => {
         h.A.reset(), f.A.reset(), d.A.resetState()
     }));
-    let k = i.useMemo(() => ({
+    let L = i.useMemo(() => ({
             visibleDirectory: N,
             accessibleDirectory: j
         }), [N, j]),
-        L = i.useMemo(() => () => I(_), [I, _]),
         O = null != S ? N.get(S) : void 0;
-    return (0, r.jsx)(u.x.Provider, {
-        value: k,
+    return (0, r.jsx)(c.x.Provider, {
+        value: L,
         children: (0, r.jsxs)("div", {
             className: m.k,
             children: [(0, r.jsx)(s.L, {
                 root: b,
-                onClose: L,
+                onClose: T,
                 footer: v,
                 emptyState: x,
                 searchBar: y
             }), (0, r.jsx)(a.A, {
-                onClose: L,
-                setting: T ? void 0 : O ?? R
+                onClose: T,
+                setting: w ? void 0 : O ?? R
             })]
         })
     })

@@ -1,6 +1,6 @@
 /** chunk id: 945928 params = (module,exports,require) **/
 n.d(t, {
-    Q: () => E
+    Q: () => b
 });
 var i = n(64700),
     s = n(311907),
@@ -21,7 +21,7 @@ var i = n(64700),
     T = n(903427),
     f = n(509381),
     S = n(985018);
-let b = (0, r.Qx)(u.X.VOICE_INPUT_PROFILE_SETTING, {
+let E = (0, r.Qx)(u.X.VOICE_INPUT_PROFILE_SETTING, {
         useTitle: () => S.intl.string(S.t.LM3U3k),
         usePredicate: function() {
             let {
@@ -67,7 +67,7 @@ let b = (0, r.Qx)(u.X.VOICE_INPUT_PROFILE_SETTING, {
             })
         }
     }),
-    E = (0, r.zZ)(u.X.VOICE_INPUT_PROFILE_CATEGORY, {
+    b = (0, r.zZ)(u.X.VOICE_INPUT_PROFILE_CATEGORY, {
         useInlineNotice: function() {
             let e = (0, s.bG)([d.A, c.Ay], () => {
                 let e = c.Ay.getInputDeviceId();
@@ -81,5 +81,5 @@ let b = (0, r.Qx)(u.X.VOICE_INPUT_PROFILE_SETTING, {
                 }
             }, [e])
         },
-        buildLayout: () => [b, x.O, A.w, _.h, T.K, h.C, p.m, g.U]
+        buildLayout: () => [E, x.O, A.w, _.h, T.K, h.C, p.m, g.U]
     })

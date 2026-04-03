@@ -27,11 +27,11 @@ function A(e) {
         colorPickerMiddle: T,
         colorPickerFooter: f,
         showEyeDropper: S
-    } = e, b = s.useRef(null), E = (0, c.rdh)(d.A.colors.BACKGROUND_BASE_LOW).hex(), C = d.A.colors.BACKGROUND_MOD_MUTED.css, N = (0, m.sN)(l), v = (0, o.Hl)(l), I = v === E ? C : v, j = N ? d.A.unsafe_rawColors.WHITE.css : d.A.unsafe_rawColors.PRIMARY_530.css, y = (0, u.A)(T), O = (0, u.A)(f), [R, P] = s.useState((0, r.A)());
+    } = e, E = s.useRef(null), b = (0, c.rdh)(d.A.colors.BACKGROUND_BASE_LOW).hex(), C = d.A.colors.BACKGROUND_MOD_MUTED.css, N = (0, m.sN)(l), v = (0, o.Hl)(l), I = v === b ? C : v, j = N ? d.A.unsafe_rawColors.WHITE.css : d.A.unsafe_rawColors.PRIMARY_530.css, y = (0, u.A)(T), O = (0, u.A)(f), [R, P] = s.useState((0, r.A)());
     return s.useEffect(() => {
         (y !== T || O !== f) && P((0, r.A)())
     }, [f, T, O, y]), (0, i.jsx)(c.YNO, {
-        targetElementRef: b,
+        targetElementRef: E,
         positionKey: R,
         renderPopout: e => (0, i.jsx)(c.VNw, {
             ...e,
@@ -49,7 +49,7 @@ function A(e) {
                 ...n
             } = e;
             return (0, i.jsxs)("div", {
-                ref: b,
+                ref: E,
                 className: a()(x.oP, {
                     [x.r9]: h
                 }),
@@ -64,7 +64,7 @@ function A(e) {
                     className: x.nf,
                     "aria-label": _.intl.string(_.t.Qp04hK),
                     focusProps: {
-                        ringTarget: b
+                        ringTarget: E
                     },
                     children: (0, i.jsx)(c.R2l, {
                         size: "custom",

@@ -21,13 +21,13 @@ var i = n(934551),
     T = n(556710),
     f = n(305290),
     S = n(8187),
-    b = n(985018);
-let E = (0, s.t_)(a.X.ACCESSIBILITY_PANEL, {
-        useTitle: () => b.intl.string(b.t.G0neg7),
+    E = n(985018);
+let b = (0, s.t_)(a.X.ACCESSIBILITY_PANEL, {
+        useTitle: () => E.intl.string(E.t.G0neg7),
         buildLayout: () => [c.s, T._, A.b, p.T, _.V, h.G, u.v, m.T]
     }),
     C = (0, s.t_)(a.X.ACCESSIBILITY_PANEL, {
-        useTitle: () => b.intl.string(b.t.G0neg7),
+        useTitle: () => E.intl.string(E.t.G0neg7),
         buildLayout: () => [f.U, S.P, x.l, p.T, g.X],
         decoration: {
             type: l.t9.STRONGLY_DISCOURAGED_CUSTOM,
@@ -36,8 +36,8 @@ let E = (0, s.t_)(a.X.ACCESSIBILITY_PANEL, {
         }
     }),
     N = (0, s.i4)(a.X.ACCESSIBILITY_SIDEBAR_ITEM, {
-        useTitle: () => b.intl.string(b.t.G0neg7),
+        useTitle: () => E.intl.string(E.t.G0neg7),
         icon: i.AccessibilityIcon,
         useMenu: d.A,
-        buildLayout: () => (0, r.Ci)("AccessibilityPanel") ? [C] : [E]
+        buildLayout: () => (0, r.Ci)("AccessibilityPanel") ? [C] : [b]
     })

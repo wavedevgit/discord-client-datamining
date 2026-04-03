@@ -36,22 +36,18 @@ function p() {
                 label: "Dismissible Content Overrides",
                 children: [(0, a.jsxs)(r.BJc, {
                     gap: 4,
-                    children: [(0, a.jsxs)(r.BJc, {
-                        gap: 4,
-                        direction: "horizontal",
-                        children: [(0, a.jsx)(r.Button, {
-                            variant: "primary",
-                            text: "Reset Daily Cap",
-                            onClick: () => (0, o.Ab)()
-                        }), (0, a.jsx)(r.Button, {
-                            variant: "primary",
-                            text: "Undismiss All DCs",
-                            onClick: () => (0, h.nT)()
-                        }), (0, a.jsx)(r.Button, {
-                            variant: "primary",
-                            text: "Dismiss All DCs",
-                            onClick: () => (0, h.D1)()
-                        })]
+                    children: [(0, a.jsx)(r.Button, {
+                        variant: "primary",
+                        text: "Reset Daily Cap",
+                        onClick: () => (0, o.Ab)()
+                    }), (0, a.jsx)(r.Button, {
+                        variant: "primary",
+                        text: "Undismiss All DCs",
+                        onClick: () => (0, h.nT)()
+                    }), (0, a.jsx)(r.Button, {
+                        variant: "primary",
+                        text: "Dismiss All DCs",
+                        onClick: () => (0, h.D1)()
                     }), (0, a.jsx)(r.Text, {
                         variant: "text-sm/normal",
                         color: "text-subtle",

@@ -21,8 +21,8 @@ var i = n(627968),
     T = n(543767),
     f = n(420139),
     S = n(790284),
-    b = n(976860),
-    E = n(780964),
+    E = n(976860),
+    b = n(780964),
     C = n(779733),
     N = n(858897),
     v = n(295405),
@@ -256,10 +256,10 @@ let k = e => {
                         })
                     },
                     onChangePlanClick: () => {
-                        null != r && ((0, b.pX)(P.BVt.CHANNEL(r.id, L.VV.ROLE_SUBSCRIPTIONS)), (0, C.default)(), m.A.show(P.kqX.BACK_TO_PREVIOUS_SCREEN, void 0, G.intl.string(G.t.DvbaM4), () => {
+                        null != r && ((0, E.pX)(P.BVt.CHANNEL(r.id, L.VV.ROLE_SUBSCRIPTIONS)), (0, C.default)(), m.A.show(P.kqX.BACK_TO_PREVIOUS_SCREEN, void 0, G.intl.string(G.t.DvbaM4), () => {
                             S.A.setState({
                                 subsection: D.nR
-                            }), (0, N.openUserSettings)(E.X.SUBSCRIPTIONS_PANEL)
+                            }), (0, N.openUserSettings)(b.X.SUBSCRIPTIONS_PANEL)
                         }))
                     },
                     onResubscribeClick: z

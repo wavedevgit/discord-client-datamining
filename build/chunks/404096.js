@@ -22,8 +22,8 @@ var i = n(421380),
     T = n(542457),
     f = n(355097),
     S = n(652215),
-    b = n(985018);
-let E = (e, t) => {
+    E = n(985018);
+let b = (e, t) => {
     d.default.track(S.HAw.GUILD_DEFAULT_MESSAGE_REQUEST_UPDATED, {
         default_guilds_restricted: e,
         applied_to_existing_guilds: t
@@ -31,13 +31,13 @@ let E = (e, t) => {
 };
 
 function C() {
-    return b.intl.string(b.t["3o2ojh"])
+    return E.intl.string(E.t["3o2ojh"])
 }
 let N = (0, r.zD)(x.X.CONTENT_AND_SOCIAL_PERMISSIONS_MESSAGE_REQUESTS_SETTING, {
     useTitle: C,
-    useSubtitle: () => (0, h.q9)() ? b.intl.format(b.t.WpnWLc, {
+    useSubtitle: () => (0, h.q9)() ? E.intl.format(E.t.WpnWLc, {
         helpdeskArticle: c.A.getArticleURL(S.MVz.MESSAGE_REQUESTS)
-    }) : b.intl.format(b.t.wkm9a3, {
+    }) : E.intl.format(E.t.wkm9a3, {
         helpdeskArticle: c.A.getArticleURL(S.MVz.MESSAGE_REQUESTS)
     }),
     useValue: () => {
@@ -63,16 +63,16 @@ let N = (0, r.zD)(x.X.CONTENT_AND_SOCIAL_PERMISSIONS_MESSAGE_REQUESTS_SETTING, {
         if (t === A.YG) {
             var n;
             n = !e, (0, p.O)({
-                header: b.intl.string(b.t.yAfu1p),
-                body: b.intl.string(b.t.Ry2z74),
-                confirmText: b.intl.string(b.t.gm1Vej),
-                cancelText: b.intl.string(b.t.p89ACt),
+                header: E.intl.string(E.t.yAfu1p),
+                body: E.intl.string(E.t.Ry2z74),
+                confirmText: E.intl.string(E.t.gm1Vej),
+                cancelText: E.intl.string(E.t.p89ACt),
                 confirmButtonColor: i.$n.Colors.BRAND,
                 onConfirm: () => {
-                    _.YX.updateSetting(n), E(n, !1)
+                    _.YX.updateSetting(n), b(n, !1)
                 },
                 onCancel: () => {
-                    _.YX.updateSetting(n), _.Zr.updateSetting(n ? o.A.getGuildIds() : []), E(n, !0)
+                    _.YX.updateSetting(n), _.Zr.updateSetting(n ? o.A.getGuildIds() : []), b(n, !0)
                 }
             })
         } else {

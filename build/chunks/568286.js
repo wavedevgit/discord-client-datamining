@@ -27,8 +27,8 @@ let h = e => {
             analyticsLocations: f
         } = (0, u.Ay)(c.A.GUILD_ROLE_SUBSCRIPTION_CANCELLATION_MODAL), {
             cancelSubscription: S,
-            error: b,
-            submitting: E
+            error: E,
+            submitting: b
         } = (e => {
             let [t, n] = s.useState(!1), [i, l] = s.useState(null);
             return {
@@ -62,16 +62,16 @@ let h = e => {
                 variant: "critical-primary",
                 text: x.intl.string(x.t.F6lUDF),
                 onClick: C,
-                loading: E
+                loading: b
             }],
             title: x.intl.string(x.t.O6l5tM),
             subtitle: j,
             onClose: p,
             children: (0, i.jsxs)(o.BJc, {
                 gap: 8,
-                children: [null != b ? (0, i.jsx)(o.wx6, {
+                children: [null != E ? (0, i.jsx)(o.wx6, {
                     type: "critical",
-                    children: b.message
+                    children: E.message
                 }) : null, (0, i.jsx)(g.x, {
                     listingId: l.id,
                     guildId: n.guild_id,

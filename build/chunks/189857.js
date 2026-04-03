@@ -18,14 +18,14 @@ function l(e, t) {
         if (null == i) return;
         let o = t.entry(e.key);
         if (o?.parentSidebarItemKey == null) return;
-        let u = null;
+        let c = null;
         if (null != o.parentCategoryKey) {
             let e = t.get(o.parentCategoryKey);
-            e?.type === r.Z6.CATEGORY && (0, r.bJ)(e) && (u = o.parentCategoryKey)
+            e?.type === r.Z6.CATEGORY && (0, r.bJ)(e) && (c = o.parentCategoryKey)
         }
-        let c = {
+        let u = {
             sidebarItemKey: o.parentSidebarItemKey,
-            categoryKey: u
+            categoryKey: c
         };
         i.forEach(e => (function(e, t) {
             let {
@@ -37,7 +37,7 @@ function l(e, t) {
                 let e = a.get(t.categoryKey) ?? new Set;
                 e.add(r), a.set(t.categoryKey, e)
             }
-        })(e, c))
+        })(e, u))
     }), {
         allDismissibleContents: n,
         dismissibleContentToNodeKeys: l,

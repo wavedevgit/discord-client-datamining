@@ -21,8 +21,8 @@ var i = n(627968),
     T = n(954571),
     f = n(927578),
     S = n(40185),
-    b = n(994763),
-    E = n(130946),
+    E = n(994763),
+    b = n(130946),
     C = n(501007),
     N = n(817267),
     v = n(736455),
@@ -64,7 +64,7 @@ let w = () => {
     }, []);
     let en = (0, h.DK)(A.W.NITRO, "PremiumMarketingHome"),
         ei = s.useMemo(() => !!en && "orbs" === new URLSearchParams(e.search).get("section"), [e.search, en]);
-    (0, b.z)(P.NI.ORB_REWARDS, ei);
+    (0, E.z)(P.NI.ORB_REWARDS, ei);
     let es = [v.k.HOME, v.k.WHATS_NEW, v.k.BEST_OF_NITRO, v.k.PLANS, v.k.COMPARE],
         {
             navBarSections: el,
@@ -105,8 +105,8 @@ let w = () => {
                     })
                 }), ee && (0, i.jsx)("div", {
                     className: U.Hz,
-                    children: (0, i.jsx)(E.A, {
-                        variant: E.c.APPLICATION_NITRO_HOME
+                    children: (0, i.jsx)(b.A, {
+                        variant: b.c.APPLICATION_NITRO_HOME
                     })
                 }), (0, i.jsx)("div", {
                     className: U.So,

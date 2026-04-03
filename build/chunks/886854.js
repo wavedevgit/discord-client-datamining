@@ -2,7 +2,7 @@
 n.d(t, {
     du: () => T,
     j0: () => f,
-    yj: () => b
+    yj: () => E
 });
 var i = n(934551),
     s = n(554146),
@@ -41,7 +41,7 @@ let f = [{
         initialize: T,
         buildLayout: () => [A.S, g._, h.u, _.U, x.M, m.d]
     }),
-    b = (0, a.i4)(o.X.APPEARANCE_SIDEBAR_ITEM, {
+    E = (0, a.i4)(o.X.APPEARANCE_SIDEBAR_ITEM, {
         useTitle: () => p.intl.string(p.t["iHH+ky"]),
         icon: i.PaintPaletteIcon,
         usePredicate: () => !(0, d.bp)("AppearanceSidebarItem"),

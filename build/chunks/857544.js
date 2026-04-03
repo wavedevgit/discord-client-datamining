@@ -21,8 +21,8 @@ var i = n(627968),
     T = n(986238),
     f = n(909453),
     S = n(8350),
-    b = n(885106);
-let E = ["discord_web", "discord_marketing", "discord_developers", "discord_ios", "discord_android"],
+    E = n(885106);
+let b = ["discord_web", "discord_marketing", "discord_developers", "discord_ios", "discord_android"],
     C = [{
         id: "branch",
         value: "branch",
@@ -61,14 +61,14 @@ class v extends s.Component {
         } = this.props;
         return (0, i.jsxs)(A.A, {
             direction: A.A.Direction.VERTICAL,
-            className: a()(f.oS, b.SX, S.N, f.nM),
+            className: a()(f.oS, E.SX, S.N, f.nM),
             children: [(0, i.jsx)(m.A, {
                 className: a()(f.lL, {
                     [f.zi]: s
                 }),
                 onClick: s ? void 0 : this.handleRemoveBuildOverride
             }), (0, i.jsxs)(A.A, {
-                className: b.QB,
+                className: E.QB,
                 children: [(0, i.jsx)(A.A.Child, {
                     basis: "50%",
                     children: (0, i.jsx)(u.l6P, {
@@ -143,7 +143,7 @@ class I extends s.Component {
         } = this.state;
         if (null == e) return [];
         let t = Object.keys(e);
-        return o().without(E, ...t)
+        return o().without(b, ...t)
     }
     handleAddBuildOverride = e => {
         if (null == e) return;
@@ -229,7 +229,7 @@ class I extends s.Component {
     renderEmpty() {
         return (0, i.jsx)(u.ppr, {
             theme: h.A.theme,
-            className: a()(b.eT, b.SX),
+            className: a()(E.eT, E.SX),
             children: (0, i.jsx)(u.SGT, {
                 children: "You have no build overrides configured."
             })
@@ -300,7 +300,7 @@ class I extends s.Component {
             buildOverrides: s
         } = this.state;
         e = t ? (0, i.jsx)(u.y$y, {
-            className: b.QX
+            className: E.QX
         }) : null != s && 0 === Object.keys(s).length ? this.renderEmpty() : this.renderItems();
         let l = !n && !t && this.getAvailableProjects().length > 0,
             a = N(s ?? {}) && "stable" !== window.GLOBAL_ENV.RELEASE_CHANNEL ? (0, i.jsx)(u.Text, {
