@@ -33,8 +33,7 @@ function g(e) {
         children: c({})
     });
     let T = v >= p.length - 1,
-        w = T ? i.oMw.RED : i.oMw.GREEN,
-        V = k ? w : i.oMw.PRIMARY;
+        w = k ? i.oMw.GREEN : i.oMw.PRIMARY;
     return (0, l.jsx)(i.STz, {
         text: (() => {
             if (!k) return t;
@@ -48,7 +47,7 @@ function g(e) {
         delay: f,
         "aria-label": g,
         dataMeticulousIgnore: j,
-        color: V,
+        color: w,
         forceOpen: A,
         onAnimationRest: (e, t) => {
             !A && k && t.phase === u.lLE.LEAVE && _(!1)

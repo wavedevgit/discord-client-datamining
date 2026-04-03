@@ -1,7 +1,7 @@
 /** chunk id: 521489 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    N: () => f
+    N: () => m
 });
 var r = n(627968),
     i = n(64700),
@@ -13,14 +13,14 @@ var r = n(627968),
     u = n(397927),
     d = n(97469),
     h = n(783842),
-    m = n(110992);
+    f = n(110992);
 
-function f(e) {
+function m(e) {
     let {
         transitionState: t,
         animationVariant: n = "default",
         returnRef: l,
-        "aria-label": f,
+        "aria-label": m,
         onClose: p,
         trackingProps: _,
         children: v
@@ -37,8 +37,8 @@ function f(e) {
         children: (0, r.jsx)(u.lGe, {
             id: y,
             role: "dialog",
-            "aria-label": f,
-            "aria-labelledby": null != f ? void 0 : g.headingId,
+            "aria-label": m,
+            "aria-labelledby": null != m ? void 0 : g.headingId,
             returnRef: l,
             ..._,
             impressionType: _?.impressionType ?? o.ImpressionTypes.MODAL,
@@ -50,7 +50,7 @@ function f(e) {
                         theme: x,
                         children: e => (0, r.jsx)(s.animated.div, {
                             "data-mana-component": "layer-modal",
-                            className: a()(m.container, h.yl, e),
+                            className: a()(f.container, h.yl, e),
                             style: A,
                             children: (0, r.jsx)("div", {
                                 className: h.jE,

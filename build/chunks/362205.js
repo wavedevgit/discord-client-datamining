@@ -13,8 +13,8 @@ var r = n(627968),
     u = n(942381),
     d = n(837381),
     h = n(319354),
-    m = n(397927),
-    f = n(775602),
+    f = n(397927),
+    m = n(775602),
     p = n(253932),
     _ = n(894858),
     v = n(272053),
@@ -34,16 +34,16 @@ function S(e) {
         useTitle: s,
         useSubnavLabel: c,
         key: u
-    } = t, h = s?.(), f = c?.() ?? h;
-    return o()(null != f, "[SettingsSubnavigationCategory] Category must have a title"), (0, r.jsx)(d.tG, {
+    } = t, h = s?.(), m = c?.() ?? h;
+    return o()(null != m, "[SettingsSubnavigationCategory] Category must have a title"), (0, r.jsx)(d.tG, {
         id: u,
-        children: e => (0, r.jsxs)(m.DUT, {
+        children: e => (0, r.jsxs)(f.DUT, {
             onClick: n,
             className: a()(A.AS, {
                 [A.vu]: i
             }),
             ...e,
-            children: [f, null != l && !i && (0, r.jsx)(g.A, {
+            children: [m, null != l && !i && (0, r.jsx)(g.A, {
                 badge: l
             })]
         }, u)
@@ -84,7 +84,7 @@ function b(e) {
                 l = i.useRef(null),
                 a = i.useRef(!0),
                 s = i.useRef(t),
-                [o, c] = (0, m.zhh)(() => ({
+                [o, c] = (0, f.zhh)(() => ({
                     y: 0,
                     height: 0,
                     config: {
@@ -97,10 +97,10 @@ function b(e) {
                 let e = s.current !== t,
                     i = () => {
                         if (null == n.current || null == r.current || null == l.current) return;
-                        let [i, u] = [n.current.getBoundingClientRect(), l.current.getBoundingClientRect()], d = i.width / 2, h = (u.y - i.y) / d, m = u.height / d;
-                        a.current || e || f.A.useReducedMotion ? (o.y.set(h), o.height.set(m)) : c({
+                        let [i, u] = [n.current.getBoundingClientRect(), l.current.getBoundingClientRect()], d = i.width / 2, h = (u.y - i.y) / d, f = u.height / d;
+                        a.current || e || m.A.useReducedMotion ? (o.y.set(h), o.height.set(f)) : c({
                             y: h,
-                            height: m
+                            height: f
                         }), a.current = !1, s.current = t
                     },
                     u = null;
