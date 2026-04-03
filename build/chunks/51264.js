@@ -41,7 +41,7 @@ let m = "isHideDevBanner",
             children: [(0, i.jsx)(A.A, {
                 className: _.Kk
             }), h.intl.format(h.t.uyrfYF, {
-                buildNumber: "522750"
+                buildNumber: "522762"
             }), (0, i.jsx)(p, {})]
         }) : null
     }
