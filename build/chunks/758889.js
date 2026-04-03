@@ -18,37 +18,37 @@ function c(e) {
         fullEpisode: d,
         targetTimeSec: u,
         videoUrl: p
-    } = e, m = "portrait" === t, b = (0, i.DX)({
+    } = e, b = "portrait" === t, m = (0, i.DX)({
         url: p,
-        width: m ? 360 : 640,
-        height: m ? 640 : 360,
+        width: b ? 360 : 640,
+        height: b ? 640 : 360,
         target: u,
-        videoTitle: m ? "Test Portrait Video" : "Test Landscape Video",
+        videoTitle: b ? "Test Portrait Video" : "Test Landscape Video",
         transcript: "transcript.txt"
-    }), _ = (0, i.ec)(b);
+    }), _ = (0, i.ec)(m);
     d && (_.config.features = [s.Li.FULL_EPISODE_VIDEO_QUEST]);
     let S = c ? {
         ..._,
         userStatus: (0, i.kK)({
             enrolledAt: _.userStatus?.enrolledAt ?? null,
             completedAt: _.userStatus?.enrolledAt ?? null,
-            streamProgressSeconds: b.target
+            streamProgressSeconds: m.target
         })
     } : _;
     return (0, r.jsx)("div", {
         style: {
-            width: m ? "400px" : "100%",
-            maxWidth: m ? void 0 : "800px",
-            height: m ? "700px" : "500px",
+            width: b ? "400px" : "100%",
+            maxWidth: b ? void 0 : "800px",
+            height: b ? "700px" : "500px",
             backgroundColor: "#1e1f22",
             borderRadius: "8px",
             overflow: "hidden"
         },
         children: (0, r.jsx)(i.sn, {
             quest: S,
-            isPortrait: m,
+            isPortrait: b,
             children: (0, r.jsx)(o.A, {
-                targetTimeSec: b.target,
+                targetTimeSec: m.target,
                 parentTransitionState: a.ip4.ENTERED,
                 onOptimisticProgressUpdate: l.tEg,
                 autoplay: n,

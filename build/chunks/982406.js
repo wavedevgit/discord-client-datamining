@@ -57,6 +57,7 @@ function u(e) {
             posterPlaceholderVersion: t.placeholder_version,
             active: !1,
             orientation: b,
+            loadingSpinnerPosition: "center",
             renderPersistentOverlay: C,
             targetTimeSec: 1 / 0,
             parentTransitionState: null,

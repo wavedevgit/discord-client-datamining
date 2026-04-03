@@ -44,7 +44,7 @@ function p(e) {
         videoUrl: o,
         poster: l,
         showEndScreen: p,
-        active: m
+        active: b
     } = e;
     return (0, r.jsx)("div", {
         style: {
@@ -55,7 +55,7 @@ function p(e) {
         children: (0, r.jsx)(s.A, {
             src: o,
             poster: l,
-            active: m,
+            active: b,
             autoplay: n,
             orientation: t,
             maxSeekableTimeSec: a > 0 ? a : void 0,
@@ -77,10 +77,10 @@ function p(e) {
                     onReplay: n
                 })
             } : void 0
-        }, String(m))
+        }, String(b))
     })
 }
-let m = {
+let b = {
         orientation: {
             label: "Orientation",
             type: "select",
@@ -124,14 +124,14 @@ let m = {
             defaultValue: !0
         }
     },
-    b = {
+    m = {
         name: "Landscape Video (Generic)",
         id: "landscape-video-generic",
         component: p,
         controls: {
-            ...m,
+            ...b,
             orientation: {
-                ...m.orientation,
+                ...b.orientation,
                 defaultValue: "landscape"
             }
         }
@@ -141,9 +141,9 @@ let m = {
         id: "portrait-video-generic",
         component: p,
         controls: {
-            ...m,
+            ...b,
             orientation: {
-                ...m.orientation,
+                ...b.orientation,
                 defaultValue: "portrait"
             }
         }
@@ -153,13 +153,13 @@ let m = {
         id: "hls-video-generic",
         component: p,
         controls: {
-            ...m,
+            ...b,
             orientation: {
-                ...m.orientation,
+                ...b.orientation,
                 defaultValue: "landscape"
             },
             videoUrl: {
-                ...m.videoUrl,
+                ...b.videoUrl,
                 defaultValue: c.Im
             }
         }
@@ -171,7 +171,7 @@ let m = {
     },
     f = {
         title: "Discord Video Player (Generic)",
-        stories: [b, _, S, {
+        stories: [m, _, S, {
             name: "Timeline Indicators (Generic)",
             id: "timeline-indicators-generic",
             component: function(e) {
@@ -196,12 +196,12 @@ let m = {
                         })) : u({
                             expansion: 0
                         }), n(e)
-                    }, [u]), m = a.useMemo(() => [{
+                    }, [u]), b = a.useMemo(() => [{
                         index: 0,
                         timeSec: e,
                         widthPx: 32,
                         gapPx: 4
-                    }], [e]), b = a.useCallback((e, t) => {
+                    }], [e]), m = a.useCallback((e, t) => {
                         let n = s === e.index;
                         return (0, r.jsx)(o.animated.div, {
                             "data-testid": "timeline-indicator",
@@ -232,11 +232,11 @@ let m = {
                         }, `indicator-${e.index}`)
                     }, [p, s, d]);
                     return {
-                        indicators: m,
+                        indicators: b,
                         animatingIndex: s,
                         expansionSpring: d,
                         hoverExpansionPx: 4,
-                        renderIndicator: b
+                        renderIndicator: m
                     }
                 }(d);
                 return (0, r.jsx)("div", {
@@ -259,10 +259,10 @@ let m = {
                 })
             },
             controls: {
-                orientation: m.orientation,
-                autoplay: m.autoplay,
-                maxSeekableTimeSec: m.maxSeekableTimeSec,
-                videoUrl: m.videoUrl,
+                orientation: b.orientation,
+                autoplay: b.autoplay,
+                maxSeekableTimeSec: b.maxSeekableTimeSec,
+                videoUrl: b.videoUrl,
                 indicatorTimeSec: {
                     label: "Indicator Time (sec)",
                     type: "number",

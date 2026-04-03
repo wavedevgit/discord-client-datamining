@@ -17,8 +17,8 @@ var r = n(627968),
     d = n(341915),
     u = n(73473),
     p = n(839727),
-    m = n(795068),
-    b = n(654487),
+    b = n(795068),
+    m = n(654487),
     _ = n(652215),
     S = n(784018);
 
@@ -161,9 +161,9 @@ function h(e) {
         questOrQuests: t,
         questContent: d.uF.VIDEO_MODAL,
         sourceQuestContent: d.uF.INTERNAL_PREVIEW_TOOL,
-        children: (e, t) => (0, r.jsx)(m.l.Provider, {
+        children: (e, t) => (0, r.jsx)(b.l.Provider, {
             value: p,
-            children: (0, r.jsx)(m.a.Provider, {
+            children: (0, r.jsx)(b.a.Provider, {
                 value: c,
                 children: o
             })
@@ -180,7 +180,7 @@ function x(e) {
         targetTimeSec: s,
         useNewStyling: l,
         videoUrl: d
-    } = e, u = "portrait" === t, [m, S] = a.useState(!1), v = g({
+    } = e, u = "portrait" === t, [b, S] = a.useState(!1), v = g({
         url: d,
         width: u ? 360 : 640,
         height: u ? 640 : 360,
@@ -188,7 +188,7 @@ function x(e) {
         videoTitle: u ? "Test Portrait Video" : "Test Landscape Video",
         transcript: "transcript.txt"
     }), x = C(v);
-    i && (x.config.features = [b.Li.FULL_EPISODE_VIDEO_QUEST]);
+    i && (x.config.features = [m.Li.FULL_EPISODE_VIDEO_QUEST]);
     let y = o ? {
         ...x,
         userStatus: f({
@@ -210,7 +210,7 @@ function x(e) {
         children: (0, r.jsx)(h, {
             quest: y,
             isPortrait: u,
-            isFullscreenEnabled: m,
+            isFullscreenEnabled: b,
             setIsFullscreenEnabled: S,
             useNewStyling: l,
             children: (0, r.jsx)(p.A, {

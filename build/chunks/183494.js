@@ -52,8 +52,8 @@ function f(e) {
         hoveredAtX: O,
         maxSeekableX: _,
         isHovering: Q,
-        handleClick: K,
-        ariaProps: F
+        handleClick: F,
+        ariaProps: K
     } = (0, c.A)({
         onScrubBack: j,
         onScrubForward: L,
@@ -128,7 +128,7 @@ function f(e) {
                 [h.uc]: f
             }),
             ignoreKeyPress: !0,
-            onClick: K,
+            onClick: F,
             onMouseEnter: I,
             onMouseLeave: B,
             onMouseMove: U,
@@ -136,7 +136,7 @@ function f(e) {
             tabIndex: f ? void 0 : -1,
             children: [(0, r.jsx)("div", {
                 className: h.G9,
-                ...F,
+                ...K,
                 children: null != k && Z.map((e, t) => (0, r.jsx)(m.A, {
                     segment: e,
                     playbackPxSpring: z,

@@ -47,8 +47,8 @@ function C(e) {
         handleTranscriptBtnClick: O,
         handleCaptionBtnClick: _,
         handleFullScreenBtnClick: Q,
-        handleSeekBackBtnClick: K,
-        handleSeekForwardBtnClick: F,
+        handleSeekBackBtnClick: F,
+        handleSeekForwardBtnClick: K,
         handleControlBarPendingInteraction: $,
         onVolumeChange: Y,
         onMutedChange: z
@@ -91,10 +91,10 @@ function C(e) {
                 W || (e.preventDefault(), G());
                 break;
             case d.TJ.SEEK_BACK:
-                K();
+                F();
                 break;
             case d.TJ.SEEK_FORWARD:
-                F();
+                K();
                 break;
             case d.TJ.CAPTION:
                 _();
@@ -105,7 +105,7 @@ function C(e) {
             case d.TJ.MUTE:
                 ei()
         }
-    }, [_, Q, G, K, F, ei, W]);
+    }, [_, Q, G, F, K, ei, W]);
     l.useEffect(() => {
         P && null != er.current && er.current.focus()
     }, [P]), l.useEffect(() => (null != D && (D.current = eu), () => {
@@ -140,7 +140,7 @@ function C(e) {
                     iconComponent: b.q,
                     animationTime: a,
                     visible: C,
-                    onClick: K,
+                    onClick: F,
                     ariaLabel: y.intl.string(g.default["dRVF+Z"]),
                     tooltipLabel: y.intl.string(g.default["dRVF+Z"]),
                     shortcut: d.TJ.SEEK_BACK,
@@ -150,7 +150,7 @@ function C(e) {
                     iconComponent: E.i,
                     animationTime: a,
                     visible: C,
-                    onClick: F,
+                    onClick: K,
                     disabled: !A,
                     ariaLabel: A ? y.intl.string(g.default.yV2FLL) : y.intl.string(g.default.YWbiPw),
                     tooltipLabel: A ? y.intl.string(g.default.yV2FLL) : y.intl.string(g.default.YWbiPw),

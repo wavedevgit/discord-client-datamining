@@ -12,8 +12,8 @@ var r = n(627968),
     d = n(829219),
     u = n(341915),
     p = n(405670),
-    m = n(579473),
-    b = n(851936),
+    b = n(579473),
+    m = n(851936),
     _ = n(792620),
     S = n(753386),
     g = n(795068),
@@ -45,7 +45,7 @@ function P(e) {
         videoAssetType: q
     } = (0, C.A)(w, N, Q, k, !1), H = (0, a.useRef)(null), K = a.useCallback(e => {
         H.current = e
-    }, []), Y = a.useMemo(() => (0, b.L)({
+    }, []), Y = a.useMemo(() => (0, m.L)({
         quest: U,
         location: E.rE.VIDEO_MODAL
     }), [U]), z = (0, a.useRef)(0), $ = (0, a.useRef)(!1), {
@@ -88,7 +88,7 @@ function P(e) {
             sourceQuestContent: R,
             questConfig: U.config
         }),
-        [em, eb] = a.useState(!1),
+        [eb, em] = a.useState(!1),
         [e_, eS] = a.useState(!1),
         [eg, ef] = a.useState(!1),
         ev = a.useCallback(() => w.current?.currentTime ?? null, []),
@@ -96,7 +96,7 @@ function P(e) {
             forceSendCurrentSegment: eC
         } = (0, l.Yr)({
             getCurrentVideoTime: ev,
-            isPlaying: em,
+            isPlaying: eb,
             isMetadataLoaded: e_,
             isInitialSeekComplete: eg,
             onAnalytics: ed,
@@ -107,10 +107,10 @@ function P(e) {
         ex = a.useCallback((e, t) => {
             switch (e) {
                 case i.Q6.PLAYING:
-                    eb(!0), w.current?.paused === !0 && J(eh.current), eh.current = null;
+                    em(!0), w.current?.paused === !0 && J(eh.current), eh.current = null;
                     break;
                 case i.Q6.PAUSED:
-                    eb(!1), eC();
+                    em(!1), eC();
                     {
                         let e = function(e) {
                             switch (e) {
@@ -128,7 +128,7 @@ function P(e) {
                     }
                     break;
                 case i.Q6.ENDED:
-                    eb(!1)
+                    em(!1)
             }
         }, [J, ee, eC]),
         ey = a.useCallback(() => {
@@ -160,7 +160,7 @@ function P(e) {
         ek = a.useCallback((e, t) => {
             ei(e, t)
         }, [ei]),
-        eR = a.useMemo(() => (0, m.tW)(U, m.fY.VIDEO_PLAYER_CAPTION, void 0, !1), [U]),
+        eR = a.useMemo(() => (0, b.tW)(U, b.fY.VIDEO_PLAYER_CAPTION, void 0, !1), [U]),
         eU = a.useCallback(() => (0, r.jsx)(v.A, {}), []),
         eL = a.useCallback(() => (0, r.jsx)(f.A, {
             videoRef: w,
