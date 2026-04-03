@@ -31,10 +31,10 @@ function C(e) {
         displayProfile: t,
         onClose: C
     } = e, {
-        trackUserProfileAction: N
-    } = (0, u.NJ)(), y = (0, a.bG)([o.A], () => o.A.getGuildId()), E = (0, s.q)({
+        trackUserProfileAction: y
+    } = (0, u.NJ)(), N = (0, a.bG)([o.A], () => o.A.getGuildId()), E = (0, s.q)({
         userId: n.id
-    }), T = (0, a.bG)([c.A], () => c.A.hidePersonalInformation), L = (0, a.bG)([d.default], () => d.default.locale), O = (0, _.A)(n.id), S = (0, A.A)(n.id);
+    }), T = (0, a.bG)([c.A], () => c.A.hidePersonalInformation), L = (0, a.bG)([d.default], () => d.default.locale), O = (0, _.A)(n.id), P = (0, A.A)(n.id);
     return (0, i.jsxs)(l.IpV, {
         fade: !0,
         className: j.XG,
@@ -75,18 +75,18 @@ function C(e) {
                 userId: n.id,
                 locale: L
             })
-        }), S.length > 0 && (0, i.jsx)(I.A, {
+        }), P.length > 0 && (0, i.jsx)(I.A, {
             heading: v.intl.string(v.t.PHjkRE),
-            children: S.map(e => (0, i.jsx)(x.Wc, {
+            children: P.map(e => (0, i.jsx)(x.Wc, {
                 className: j.MI,
                 applicationRoleConnection: e,
                 locale: L,
                 onApplicationClicked: () => {
-                    N({
+                    y({
                         action: "PRESS_APP_CONNECTION"
                     }), C()
                 },
-                selectedGuildId: y ?? void 0
+                selectedGuildId: N ?? void 0
             }, e.application.id))
         }), (0, i.jsx)(b.A, {
             userId: n.id

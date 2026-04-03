@@ -28,9 +28,9 @@ var n = a(627968),
     L = a(985018),
     O = a(804860),
     R = a(627898),
-    w = a(341744),
-    E = a(484252),
-    T = a(460290),
+    E = a(341744),
+    T = a(484252),
+    w = a(460290),
     B = a(181713);
 
 function k(e) {
@@ -55,7 +55,7 @@ function N(e) {
     let {
         onVideoLoaded: t,
         isLoading: a
-    } = e, o = (0, r.bG)([i.A], () => i.A.useReducedMotion), [u, _] = s.useState(!o), p = (0, d.Ay)(), f = (0, l.qB1)(p), h = f ? w.A : R.A, m = f ? T.A : E.A, x = s.useRef(null), A = s.useRef(null), [C, g] = s.useState(!1), [y, j] = s.useState(!1), [S, v] = s.useState(!1);
+    } = e, o = (0, r.bG)([i.A], () => i.A.useReducedMotion), [u, _] = s.useState(!o), p = (0, d.Ay)(), f = (0, l.qB1)(p), h = f ? E.A : R.A, m = f ? w.A : T.A, x = s.useRef(null), A = s.useRef(null), [C, g] = s.useState(!1), [y, j] = s.useState(!1), [S, v] = s.useState(!1);
     s.useEffect(() => {
         C && y && S && t()
     }, [C, y, S, t]), s.useEffect(() => {
@@ -108,26 +108,15 @@ function N(e) {
 function P(e) {
     let {
         isLoading: t,
-        onClose: a,
-        orbsEarned: s,
-        orbsBalance: o,
-        onVideoLoaded: c
-    } = e, r = async () => {
-        (0, p.Y)({
-            pageType: S.liQ.GLOBAL_DISCOVERY_QUESTS,
-            sectionType: S.JJy.ORBS_REWARD_MODAL,
-            ctaObject: S.ZSU.CTA_TO_ORBS_SHOP
-        }), await a(), (0, _.Cz)({
-            tab: v.G2.ORBS,
-            analyticsLocations: [],
-            analyticsSource: u.A.QUEST_REWARD_MODAL
-        })
-    };
+        orbsEarned: a,
+        orbsBalance: s,
+        onVideoLoaded: o
+    } = e;
     return (0, n.jsxs)("div", {
         className: O.hQ,
         children: [(0, n.jsx)(N, {
             isLoading: t,
-            onVideoLoaded: c
+            onVideoLoaded: o
         }), (0, n.jsxs)("div", {
             className: O.dD,
             children: [(0, n.jsxs)("div", {
@@ -139,14 +128,14 @@ function P(e) {
                     variant: "heading-xl/semibold",
                     color: "text-strong",
                     children: L.intl.formatToPlainString(L.t.YMor7k, {
-                        count: s
+                        count: a
                     })
                 })]
-            }), null != o ? (0, n.jsx)(l.Text, {
+            }), null != s ? (0, n.jsx)(l.Text, {
                 variant: "text-sm/medium",
                 color: "text-subtle",
                 children: L.intl.format(L.t.g4t9aw, {
-                    orbsBalance: o,
+                    orbsBalance: s,
                     orbsBalanceHook: (e, t) => (0, n.jsx)(l.Text, {
                         variant: "text-sm/medium",
                         color: "text-strong",
@@ -159,7 +148,17 @@ function P(e) {
             variant: "secondary",
             size: "sm",
             text: L.intl.string(L.t.WYchde),
-            onClick: r,
+            onClick: () => {
+                (0, p.Y)({
+                    pageType: S.liQ.GLOBAL_DISCOVERY_QUESTS,
+                    sectionType: S.JJy.ORBS_REWARD_MODAL,
+                    ctaObject: S.ZSU.CTA_TO_ORBS_SHOP
+                }), (0, l.s7G)(), (0, _.Cz)({
+                    tab: v.G2.ORBS,
+                    analyticsLocations: [],
+                    analyticsSource: u.A.QUEST_REWARD_MODAL
+                })
+            },
             fullWidth: !0
         })]
     })
@@ -181,23 +180,22 @@ function D(e) {
     s.useEffect(() => {
         d || "loading" !== h || (0, m.Oq)(l.id, x.pY.CROSS_PLATFORM, r).then(() => S("success")).catch(() => S("error"))
     }, [l.id, d, h, r]);
-    let w = !v || "loading" === h || null == _ && null == b,
-        E = "error" === h || null == p || null == _ && null != b;
+    let E = !v || "loading" === h || null == _ && null == b,
+        T = "error" === h || null == p || null == _ && null != b;
     return (0, n.jsx)(y.A, {
         onClose: a,
         transitionState: o,
         quest: l,
         sourceQuestContent: c,
         location: j.rE.ORBS_REWARD_MODAL,
-        isRewardContentLoading: w,
-        rewardContentHasError: E,
-        rewardContent: E ? null : (0, n.jsx)(g.A, {
+        isRewardContentLoading: E,
+        rewardContentHasError: T,
+        rewardContent: T ? null : (0, n.jsx)(g.A, {
             rewardName: L.intl.string(L.t.Lmysvd),
             children: (0, n.jsx)(P, {
-                onClose: a,
                 orbsEarned: p,
                 orbsBalance: _,
-                isLoading: w,
+                isLoading: E,
                 onVideoLoaded: R
             })
         })

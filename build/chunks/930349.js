@@ -1,7 +1,7 @@
 /** chunk id: 930349 params = (module,exports,require) **/
 t.d(n, {
-    N: () => x,
-    k: () => p
+    N: () => p,
+    k: () => _
 });
 var i = t(627968);
 t(64700);
@@ -9,41 +9,40 @@ var a = t(503698),
     l = t.n(a),
     s = t(158954),
     r = t(990078),
-    d = t(397927),
-    o = t(985018),
-    c = t(967024);
+    d = t(985018),
+    o = t(967024);
 
-function u() {
+function c() {
     return (0, i.jsx)("div", {
-        className: c.overlay
+        className: o.overlay
     })
 }
 
-function A(e) {
+function u(e) {
     let {
         icon: n,
         iconAlignment: t
     } = e;
     return (0, i.jsx)("div", {
-        className: l()(c.iconContainer, {
-            [c.iconAlignCenter]: "center" === t,
-            [c.iconAlignRight]: "right" === t
+        className: l()(o.iconContainer, {
+            [o.iconAlignCenter]: "center" === t,
+            [o.iconAlignRight]: "right" === t
         }),
         children: (0, i.jsx)(n, {
-            size: "sm",
+            size: "md",
             color: "white",
             "aria-hidden": !0,
-            className: c.overlayIcon
+            className: o.overlayIcon
         })
     })
 }
 
-function _(e) {
+function A(e) {
     let {
         onClick: n,
         type: t,
         accessibleLabel: a
-    } = e, l = "remove" === t ? o.intl.string(o.t["2A+piL"]) : o.intl.string(o.t.GaEG4t);
+    } = e, l = "remove" === t ? d.intl.string(d.t["2A+piL"]) : d.intl.string(d.t.GaEG4t);
     return (0, i.jsx)(r.m, {
         text: l,
         ariaHidden: !0,
@@ -57,7 +56,7 @@ function _(e) {
     })
 }
 
-function p(e) {
+function _(e) {
     let {
         variant: n,
         onClick: t,
@@ -65,45 +64,45 @@ function p(e) {
         children: r
     } = e;
     return (0, i.jsx)("div", {
-        className: c.tileWrapper,
+        className: o.tileWrapper,
         children: (0, i.jsxs)(s.DUT, {
             "aria-label": a,
-            className: l()(c.base, c[n]),
+            className: l()(o.base, o[n]),
             onClick: t,
             children: [(0, i.jsx)("div", {
-                className: c.content,
+                className: o.content,
                 children: r
-            }), (0, i.jsx)(u, {}), (0, i.jsx)(A, {
-                icon: d.j96,
+            }), (0, i.jsx)(c, {}), (0, i.jsx)(u, {
+                icon: s.TIR,
                 iconAlignment: "bar" === n ? "right" : "center"
             })]
         })
     })
 }
 
-function x(e) {
+function p(e) {
     let {
         variant: n,
         onClick: t,
         accessibleLabel: a,
         children: r,
         showOverlay: d,
-        deleteButtonConfig: o
+        deleteButtonConfig: u
     } = e;
     return (0, i.jsxs)("div", {
-        className: c.tileWrapper,
+        className: o.tileWrapper,
         children: [(0, i.jsxs)(s.DUT, {
             "aria-label": a,
-            className: l()(c.base, c[n]),
+            className: l()(o.base, o[n]),
             onClick: t,
             children: [(0, i.jsx)("div", {
-                className: c.content,
+                className: o.content,
                 children: r
-            }), d && (0, i.jsx)(u, {})]
-        }), null != o && (0, i.jsx)("div", {
-            className: c.deleteButtonWrapper,
-            children: (0, i.jsx)(_, {
-                ...o
+            }), d && (0, i.jsx)(c, {})]
+        }), null != u && (0, i.jsx)("div", {
+            className: o.deleteButtonWrapper,
+            children: (0, i.jsx)(A, {
+                ...u
             })
         })]
     })

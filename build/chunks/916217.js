@@ -1,6 +1,6 @@
 /** chunk id: 916217 params = (module,exports,require) **/
 t.d(n, {
-    A: () => S
+    A: () => P
 });
 var i = t(627968),
     a = t(64700),
@@ -24,33 +24,33 @@ var i = t(627968),
     v = t(35241),
     j = t(587168),
     C = t(518477),
-    N = t(652215),
-    y = t(996988),
+    y = t(652215),
+    N = t(996988),
     E = t(985018),
     T = t(669924),
     L = t(824860),
     O = t(843796);
 
-function S(e) {
+function P(e) {
     let {
         user: n,
         guildId: t,
-        channelId: S,
-        messageId: P,
+        channelId: P,
+        messageId: S,
         roleId: k,
         sessionId: M,
-        transitionState: B,
-        onClose: R,
+        transitionState: R,
+        onClose: B,
         sourceAnalyticsLocations: G = []
-    } = e, D = t === N.ME ? void 0 : t, U = (0, _.Ay)(n.id, D), V = u.Ay.getName(D, S, n), F = (0, o.GV)(), {
+    } = e, D = t === y.ME ? void 0 : t, U = (0, _.Ay)(n.id, D), V = u.Ay.getName(D, P, n), F = (0, o.GV)(), {
         analyticsLocations: w
     } = (0, r.Ay)([...G, s.A.USER_PROFILE_MODAL]), W = (0, A.pb)({
         layout: "MODAL",
         userId: n.id,
         sourceSessionId: M,
         guildId: D,
-        channelId: S,
-        messageId: P,
+        channelId: P,
+        messageId: S,
         roleId: k
     }), H = a.useRef(null), z = (0, c.M)(H);
     return (0, i.jsx)(r.f5, {
@@ -60,7 +60,7 @@ function S(e) {
             isLoaded: U?.isLoaded,
             children: (0, i.jsxs)(l.EOs, {
                 "data-migration-pending": !0,
-                transitionState: B,
+                transitionState: R,
                 className: T.zr,
                 hideShadow: !0,
                 "aria-labelledby": F,
@@ -77,7 +77,7 @@ function S(e) {
                     children: (0, i.jsxs)(b.A, {
                         user: n,
                         displayProfile: U,
-                        themeType: y.d.MODAL,
+                        themeType: N.d.MODAL,
                         ref: U?.profileEffect != null ? H : void 0,
                         children: [(0, i.jsx)(j.A, {
                             children: (0, i.jsx)(v.A, {
@@ -87,15 +87,15 @@ function S(e) {
                             children: [(0, i.jsx)(g.A, {
                                 user: n,
                                 displayProfile: U,
-                                themeType: y.d.MODAL
+                                themeType: N.d.MODAL
                             }), (0, i.jsx)("div", {
                                 className: T.El,
                                 children: (0, i.jsx)(p.A, {
                                     user: n,
                                     displayProfile: U,
                                     guildId: D,
-                                    channelId: S,
-                                    themeType: y.d.MODAL
+                                    channelId: P,
+                                    themeType: N.d.MODAL
                                 })
                             })]
                         }), (0, i.jsxs)("div", {
@@ -109,8 +109,8 @@ function S(e) {
                                 nicknameVariant: "heading-xl/bold",
                                 tags: (0, i.jsx)(x.A, {
                                     displayProfile: U,
-                                    themeType: y.d.MODAL,
-                                    onClose: R
+                                    themeType: N.d.MODAL,
+                                    onClose: B
                                 })
                             }), (0, i.jsxs)("div", {
                                 className: O.kL,
@@ -118,7 +118,7 @@ function S(e) {
                                     className: O.$H,
                                     type: "top",
                                     selectedItem: C.RP.BOT_INFO,
-                                    onItemSelect: N.tEg,
+                                    onItemSelect: y.tEg,
                                     children: (0, i.jsx)(l.VQ0.Item, {
                                         className: O.YU,
                                         id: C.RP.BOT_INFO,

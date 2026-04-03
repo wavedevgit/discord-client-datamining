@@ -25,14 +25,14 @@ var a = t(397927),
     v = t(571077),
     j = t(587168),
     C = t(982985),
-    N = t(159218),
-    y = t(240783),
+    y = t(159218),
+    N = t(240783),
     E = t(371843),
     T = t(518477),
     L = t(652215),
     O = t(996988),
-    S = t(985018),
-    P = t(669924);
+    P = t(985018),
+    S = t(669924);
 
 function k(e) {
     let {
@@ -40,8 +40,8 @@ function k(e) {
         currentUser: t,
         guildId: k,
         originGuildId: M,
-        channelId: B,
-        messageId: R,
+        channelId: R,
+        messageId: B,
         roleId: G,
         sessionId: D,
         initialTabSection: U,
@@ -49,20 +49,20 @@ function k(e) {
         transitionState: F,
         onClose: w,
         sourceAnalyticsLocations: W = []
-    } = e, H = k === L.ME ? void 0 : k, z = (0, u.Ay)(n.id, H), Y = o.Ay.getName(H, B, n), X = (0, d.GV)(), {
+    } = e, H = k === L.ME ? void 0 : k, z = (0, u.Ay)(n.id, H), Y = o.Ay.getName(H, R, n), X = (0, d.GV)(), {
         analyticsLocations: K
     } = (0, r.Ay)([...W, s.A.USER_PROFILE_MODAL]), Q = (0, c.pb)({
         layout: "MODAL",
         userId: n.id,
         sourceSessionId: D,
         guildId: H,
-        channelId: B,
-        messageId: R,
+        channelId: R,
+        messageId: B,
         roleId: G
     }), J = (0, E.A)(n), q = (0, A.A)({
         user: n,
         guildId: M,
-        channelId: B,
+        channelId: R,
         displayProfile: z,
         onClose: w
     });
@@ -76,7 +76,7 @@ function k(e) {
                 children: (0, i.jsx)(a.EOs, {
                     "data-migration-pending": !0,
                     transitionState: F,
-                    className: P.zr,
+                    className: S.zr,
                     hideShadow: !0,
                     "aria-labelledby": X,
                     parentComponent: "BotUserProfileModal",
@@ -84,7 +84,7 @@ function k(e) {
                         component: (0, i.jsx)(a.AC4, {
                             children: (0, i.jsx)(a.H, {
                                 id: X,
-                                children: S.intl.format(S.t.KRe1Fk, {
+                                children: P.intl.format(P.t.KRe1Fk, {
                                     name: Y
                                 })
                             })
@@ -105,30 +105,30 @@ function k(e) {
                                     displayProfile: z,
                                     themeType: O.d.MODAL
                                 }), (0, i.jsxs)("div", {
-                                    className: P.El,
+                                    className: S.El,
                                     children: [(0, i.jsx)(p.A, {
                                         user: n,
                                         displayProfile: z,
                                         guildId: H,
-                                        channelId: B,
+                                        channelId: R,
                                         themeType: O.d.MODAL
-                                    }), (0, i.jsx)(N.A, {
+                                    }), (0, i.jsx)(y.A, {
                                         user: n,
                                         themeType: O.d.MODAL,
                                         hasEntered: F === a.ip4.ENTERED,
                                         onCloseProfile: w,
                                         disableToolbar: !0
                                     }), (0, i.jsxs)("div", {
-                                        className: P.Pz,
+                                        className: S.Pz,
                                         children: [(0, i.jsx)("div", {
-                                            className: P.jS,
+                                            className: S.jS,
                                             children: (0, i.jsx)(C.e, {
                                                 variant: "secondary",
                                                 userId: n.id,
                                                 onClose: l.A.popAll
                                             })
                                         }), (0, i.jsx)("div", {
-                                            className: P.pg,
+                                            className: S.pg,
                                             children: (0, i.jsx)(C.l, {
                                                 variant: "secondary",
                                                 userId: n.id,
@@ -144,11 +144,11 @@ function k(e) {
                                 })]
                             }), (0, i.jsx)(m.A, {
                                 userId: n.id,
-                                className: P.Fd
+                                className: S.Fd
                             }), (0, i.jsxs)("div", {
-                                className: P.rf,
+                                className: S.rf,
                                 children: [(0, i.jsx)(f.A, {
-                                    className: P.Xh,
+                                    className: S.Xh,
                                     user: n,
                                     guildId: H,
                                     nickname: Y,
@@ -159,7 +159,7 @@ function k(e) {
                                         themeType: O.d.MODAL,
                                         onClose: w
                                     })
-                                }), (0, i.jsx)(y.A, {
+                                }), (0, i.jsx)(N.A, {
                                     user: n,
                                     currentUser: t,
                                     displayProfile: z,

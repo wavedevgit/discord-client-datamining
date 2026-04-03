@@ -29,37 +29,37 @@ function v(e) {
         channelId: v,
         messageId: j,
         roleId: C,
-        transitionState: N,
-        onHide: y,
+        transitionState: y,
+        onHide: N,
         sourceAnalyticsLocations: E = []
     } = e, T = t === I.ME ? void 0 : t, L = (0, a.bG)([o.A], () => o.A.isBlocked(n.id)), {
         analyticsLocations: O
-    } = (0, r.Ay)([...E, L ? s.A.BLOCKED_PROFILE_MODAL : s.A.IGNORED_PROFILE_MODAL]), S = (0, u.pb)({
+    } = (0, r.Ay)([...E, L ? s.A.BLOCKED_PROFILE_MODAL : s.A.IGNORED_PROFILE_MODAL]), P = (0, u.pb)({
         layout: "MODAL_V2",
         userId: n.id,
         guildId: T,
         channelId: v,
         messageId: j,
         roleId: C
-    }), P = [{
+    }), S = [{
         icon: l.yr3,
         description: b.intl.string(b.t.kcuWva)
     }, {
         icon: l.yr3,
         description: b.intl.string(L ? b.t.QxrDY1 : b.t.W6fjkS)
-    }], k = (0, _.Ay)(n.id, T), M = c.Ay.getName(k?.guildId, v, n), B = b.intl.formatToPlainString(b.t.KRe1Fk, {
+    }], k = (0, _.Ay)(n.id, T), M = c.Ay.getName(k?.guildId, v, n), R = b.intl.formatToPlainString(b.t.KRe1Fk, {
         name: M
     });
     return (0, i.jsx)(r.f5, {
         value: O,
         children: (0, i.jsx)(u.of, {
-            value: S,
+            value: P,
             isLoaded: k?.isLoaded,
             children: (0, i.jsx)(l.EOs, {
                 "data-migration-pending": !0,
-                transitionState: N,
+                transitionState: y,
                 className: h.zr,
-                "aria-label": B,
+                "aria-label": R,
                 parentComponent: "RestrictedUserProfileModalV2",
                 children: (0, i.jsxs)(x.A, {
                     user: n,
@@ -87,7 +87,7 @@ function v(e) {
                             })]
                         }), (0, i.jsx)("div", {
                             className: h.vb,
-                            children: P.map((e, n) => {
+                            children: S.map((e, n) => {
                                 let {
                                     icon: t,
                                     description: a
@@ -105,19 +105,19 @@ function v(e) {
                                 size: "md",
                                 isBlocked: L,
                                 onClick: () => {
-                                    y(), (0, A.Wn)({
+                                    N(), (0, A.Wn)({
                                         action: L ? "VIEW_BLOCKED_PROFILE" : "VIEW_IGNORED_PROFILE",
                                         analyticsLocations: O,
-                                        ...S
+                                        ...P
                                     })
                                 }
                             }), (0, i.jsx)(g.A, {
                                 userId: n.id,
                                 onClick: () => {
-                                    y(), (0, A.Wn)({
+                                    N(), (0, A.Wn)({
                                         action: "DONT_SHOW_AGAIN_IGNORED_PROFILE",
                                         analyticsLocations: O,
-                                        ...S
+                                        ...P
                                     })
                                 }
                             })]

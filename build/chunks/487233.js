@@ -35,13 +35,13 @@ function I(e) {
         guildId: t,
         avatarOverride: h,
         size: l._3J.SIZE_56
-    }), j = I ? f?.avatar : n.avatar, C = null != n.avatar, N = I && f?.avatar != null, y = null != b, E = null === b, T = (0, r.z5)(b, j), L = () => (0, d.XD)({
+    }), j = I ? f?.avatar : n.avatar, C = null != n.avatar, y = I && f?.avatar != null, N = null != b, E = null === b, T = (0, r.z5)(b, j), L = () => (0, d.XD)({
         uploadType: g.HL.AVATAR,
         analyticsSource: u,
         guildId: t ?? void 0,
         stackingBehavior: "stack"
     });
-    if (!(E ? I && C : y || N || C)) return (0, i.jsx)(x.k, {
+    if (!(E ? I && C : N || y || C)) return (0, i.jsx)(x.k, {
         variant: "square",
         onClick: L,
         accessibleLabel: m.intl.string(m.t["4OynCD"]),
@@ -52,7 +52,7 @@ function I(e) {
         })
     });
     let O = I && C,
-        S = T ? {
+        P = T ? {
             onClick: () => {
                 (0, A.p)({
                     guildId: t ?? void 0,
@@ -66,7 +66,7 @@ function I(e) {
         variant: "square",
         onClick: L,
         accessibleLabel: m.intl.string(m.t["4OynCD"]),
-        deleteButtonConfig: S,
+        deleteButtonConfig: P,
         children: (0, i.jsx)(l.euF, {
             src: v,
             size: l._3J.SIZE_56,

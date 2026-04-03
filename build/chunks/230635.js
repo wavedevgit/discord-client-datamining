@@ -1,6 +1,6 @@
 /** chunk id: 230635 params = (module,exports,require) **/
 t.d(n, {
-    W: () => I
+    W: () => f
 });
 var i = t(627968);
 t(64700);
@@ -15,15 +15,18 @@ var a = t(311907),
     A = t(287809),
     _ = t(84540),
     p = t(930349),
-    x = t(985018);
+    x = t(985018),
+    g = t(987118);
 
-function g(e) {
+function m(e) {
     let {
         user: n,
         guildId: t,
-        avatarDecorationOverride: a
+        avatarDecorationOverride: a,
+        isEmpty: s
     } = e;
     return (0, i.jsx)(d.A, {
+        className: s ? g.y : void 0,
         user: n,
         guildId: t,
         avatarSize: l._3J.SIZE_56,
@@ -32,13 +35,13 @@ function g(e) {
     })
 }
 
-function m(e) {
+function I(e) {
     let {
         user: n,
         guildId: t
     } = e, {
         analyticsLocations: l
-    } = (0, s.Ay)(), d = (0, a.bG)([u.A], () => null != t ? u.A.getGuild(t) : null), A = null != t, m = (0, c.a4)({
+    } = (0, s.Ay)(), d = (0, a.bG)([u.A], () => null != t ? u.A.getGuild(t) : null), A = null != t, g = (0, c.a4)({
         user: n
     }), I = (0, c.a4)({
         user: n,
@@ -46,7 +49,7 @@ function m(e) {
     }), {
         pendingAvatarDecoration: f
     } = (0, c.CP)(t ?? void 0), b = (0, r.A)((0, c.lw)({
-        userValue: m,
+        userValue: g,
         guildValue: I,
         pendingValue: f,
         guildId: t
@@ -59,13 +62,14 @@ function m(e) {
         variant: "square",
         onClick: v,
         accessibleLabel: x.intl.string(x.t.HykynS),
-        children: (0, i.jsx)(g, {
+        children: (0, i.jsx)(m, {
+            isEmpty: !0,
             user: n,
             guildId: t,
             avatarDecorationOverride: h ? b : void 0
         })
     });
-    let j = A && null != m,
+    let j = A && null != g,
         C = (h ? null != f : null != I) ? {
             onClick: () => (0, _.p)({
                 guildId: t ?? void 0,
@@ -79,7 +83,7 @@ function m(e) {
         onClick: v,
         accessibleLabel: x.intl.string(x.t.HykynS),
         deleteButtonConfig: C,
-        children: (0, i.jsx)(g, {
+        children: (0, i.jsx)(m, {
             user: n,
             guildId: t,
             avatarDecorationOverride: h ? b : void 0
@@ -87,11 +91,11 @@ function m(e) {
     })
 }
 
-function I(e) {
+function f(e) {
     let {
         guildId: n
     } = e, t = (0, a.bG)([A.default], () => A.default.getCurrentUser());
-    return null == t ? null : (0, i.jsx)(m, {
+    return null == t ? null : (0, i.jsx)(I, {
         user: t,
         guildId: n
     })
