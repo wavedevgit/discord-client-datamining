@@ -4,23 +4,23 @@ n.d(t, {
 });
 var i = n(311907),
     a = n(73153),
-    l = n(808728),
-    r = n(287809),
+    r = n(808728),
+    l = n(287809),
     s = n(652215);
 let o = null;
 
 function d() {
-    let e = r.default.getCurrentUser();
+    let e = l.default.getCurrentUser();
     if (null == e || e.mfaEnabled === o) return !1;
     o = e.mfaEnabled
 }
 class c extends i.Ay.Store {
     static displayName = "GuildMFAWarningStore";
     initialize() {
-        this.waitFor(r.default, l.Ay), this.syncWith([r.default, l.Ay], d)
+        this.waitFor(l.default, r.Ay), this.syncWith([l.default, r.Ay], d)
     }
     isVisible(e) {
-        return null != e && e.mfaLevel === s.EkJ.ELEVATED && !1 === o && l.Ay.hasElevatedPermissions(e.id)
+        return null != e && e.mfaLevel === s.EkJ.ELEVATED && !1 === o && r.Ay.hasElevatedPermissions(e.id)
     }
 }
 let u = new c(a.h, {

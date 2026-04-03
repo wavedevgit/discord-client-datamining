@@ -1,11 +1,11 @@
 /** chunk id: 533560 params = (module,exports,require) **/
 n.d(t, {
-    L: () => l
+    L: () => r
 });
 var i = n(64700),
     a = n(73153);
 
-function l() {
+function r() {
     let e = i.useCallback(() => {
             if (null == window || !("navigation" in window)) return {
                 canGoBack: !1,

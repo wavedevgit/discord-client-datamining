@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     a = n(64700),
-    l = n(503698),
-    r = n.n(l),
+    r = n(503698),
+    l = n.n(r),
     s = n(990078),
     o = n(397927),
     d = n(793574),
@@ -54,24 +54,24 @@ class f extends a.PureComponent {
         let n;
         if (null == e) return null;
         let {
-            host: l,
+            host: r,
             onUserContextMenu: c
         } = this.props;
-        return n = l?.id === e.id ? E.intl.string(E.t["N9bqD+"]) : E.intl.string(E.t.Z2Y4c9), (0, i.jsx)(u.A, {
+        return n = r?.id === e.id ? E.intl.string(E.t["N9bqD+"]) : E.intl.string(E.t.Z2Y4c9), (0, i.jsx)(u.A, {
             targetElementRef: this.partyMemberAvatarRef,
             user: e,
             newAnalyticsLocations: [d.A.AVATAR],
             position: "top",
             align: "center",
             clickTrap: !0,
-            children: l => (0, i.jsx)(s.m, {
+            children: r => (0, i.jsx)(s.m, {
                 text: n,
                 children: (0, a.createElement)(o.euF, {
-                    ...l,
+                    ...r,
                     key: e.id,
                     src: e.getAvatarURL(void 0, 24),
                     size: o._3J.SIZE_24,
-                    className: r()(I.my, t),
+                    className: l()(I.my, t),
                     "aria-label": e.username,
                     onContextMenu: t => void(null != e && c?.(t, e)),
                     avatarContentRef: this.partyMemberAvatarRef
@@ -91,7 +91,7 @@ class f extends a.PureComponent {
                 children: (0, i.jsx)("div", {
                     ...n,
                     ref: this.partyMemberOverflowRef,
-                    className: r()(I.ju, t),
+                    className: l()(I.ju, t),
                     children: e
                 })
             })

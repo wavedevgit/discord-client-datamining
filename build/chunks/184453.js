@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     a = n(64700),
-    l = n(503698),
-    r = n.n(l),
+    r = n(503698),
+    l = n.n(r),
     s = n(696292),
     o = n(397927),
     d = n(881615),
@@ -27,7 +27,7 @@ var i = n(627968),
 function S(e) {
     let {
         tab: t
-    } = e, n = p.A.useField("selectedTab"), l = a.useMemo(() => (function(e) {
+    } = e, n = p.A.useField("selectedTab"), r = a.useMemo(() => (function(e) {
         switch (e) {
             case I.GlobalDiscoveryTab.SERVERS:
                 return (0, i.jsx)(o.RR9, {
@@ -80,12 +80,12 @@ function S(e) {
     }, [t, S]);
     return (0, i.jsxs)(o.DUT, {
         onClick: x,
-        className: r()(N.pc, {
+        className: l()(N.pc, {
             [N.wH]: S
         }),
         children: [(0, i.jsx)("div", {
             className: N.wz,
-            children: l
+            children: r
         }), (0, i.jsx)(o.Text, {
             variant: "text-md/medium",
             color: "none",

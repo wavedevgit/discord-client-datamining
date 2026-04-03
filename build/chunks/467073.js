@@ -21,7 +21,7 @@ function A(e) {
         E = (0, i.bG)([d.A], () => n && d.A.can(_.xBc.ADD_REACTIONS, e), [n, e]),
         T = (0, l.ix)(t),
         [, I] = (0, a.c)(t),
-        N = (0, s.Id)(e);
+        g = (0, s.Id)(e);
     return null == e ? {
         disableReactionReads: !0,
         disableReactionCreates: !0,
@@ -37,7 +37,7 @@ function A(e) {
             canAddNewReactions: E,
             isLurking: A,
             communicationDisabled: I,
-            isActiveChannelOrUnarchivableThread: N,
+            isActiveChannelOrUnarchivableThread: g,
             isAutomodQuarantined: T
         }),
         isLurking: A,

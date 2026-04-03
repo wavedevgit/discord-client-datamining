@@ -18,13 +18,13 @@ var i = n(735438),
     E = n(904813),
     T = n(652215),
     I = n(985018);
-let N = Object.freeze({
+let g = Object.freeze({
         editingRule: null,
         hasChanges: !1,
         isLoading: !1,
         errorMessage: null
     }),
-    g = (0, r.h)((e, t) => ({
+    N = (0, r.h)((e, t) => ({
         editingRule: null,
         hasChanges: !1,
         setEditingRule: n => {
@@ -54,12 +54,12 @@ let N = Object.freeze({
         errorMessage: null,
         cancelEditingRule: () => {
             (0, s.r)(() => e({
-                ...N
+                ...g
             }))
         },
         saveRule: async (t, n) => {
             if (null == t) return (0, s.r)(() => e({
-                ...N
+                ...g
             })), null;
             try {
                 (0, u.KU)(t) && (t.triggerMetadata.keywordFilter = (0, m.HR)((0, m.Uq)(t.triggerMetadata.keywordFilter ?? [])), t.triggerMetadata.allowList = (0, m.HR)((0, m.Uq)(t.triggerMetadata.allowList ?? []))), (0, u.ZG)(t) && (t.triggerMetadata.allowList = (0, m.HR)((0, m.Uq)(t.triggerMetadata.allowList ?? []))), (0, _.xG)(t, n), (0, u.uV)(t)
@@ -89,7 +89,7 @@ let N = Object.freeze({
                 });
                 let n = null;
                 return n = (0, u.wC)(t) && !(0, E.R)(t.id) ? await (0, A.Vj)(t) : await (0, A.G6)(t), (0, s.r)(() => e({
-                    ...N
+                    ...g
                 })), n
             } catch (n) {
                 let t = new o.LG(n);
@@ -112,7 +112,7 @@ let N = Object.freeze({
     }));
 
 function f() {
-    return g(e => ({
+    return N(e => ({
         hasChanges: e.hasChanges,
         editingRule: e.editingRule,
         isLoading: e.isLoading,
@@ -125,7 +125,7 @@ function f() {
 
 function C() {
     let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null,
-        t = g(e => ({
+        t = N(e => ({
             hasChanges: e.hasChanges,
             editingRule: e.editingRule,
             setEditingRule: e.setEditingRule,

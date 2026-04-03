@@ -1,6 +1,6 @@
 /** chunk id: 672834 params = (module,exports,require) **/
 n.d(t, {
-    A: () => ey
+    A: () => ek
 });
 var i = n(627968),
     l = n(64700),
@@ -17,8 +17,8 @@ var i = n(627968),
     E = n(509536),
     T = n(615179),
     I = n(120120),
-    N = n(379114),
-    g = n(698441),
+    g = n(379114),
+    N = n(698441),
     f = n(484724),
     C = n(997509),
     h = n(850131),
@@ -34,8 +34,8 @@ var i = n(627968),
     P = n(353202),
     v = n(747926),
     j = n(336589),
-    y = n(961350),
-    k = n(470710),
+    k = n(961350),
+    y = n(470710),
     b = n(734057),
     G = n(71393),
     H = n(576705),
@@ -71,8 +71,8 @@ var i = n(627968),
     eE = n(734771),
     eT = n(753073),
     eI = n(640289),
-    eN = n(293657),
-    eg = n(269802),
+    eg = n(293657),
+    eN = n(269802),
     ef = n(576471),
     eC = n(808821),
     eh = n(933762),
@@ -220,7 +220,7 @@ let ej = Object.freeze({
             } = e, {
                 id: s,
                 author: o
-            } = t, d = y.default.getId(), u = t.getChannelId(), _ = (0, a.bG)([k.A], () => k.A.isCallActive(u, s), [u, s]), A = (0, a.bG)([V.A], () => V.A.getVoiceState(eD.ME, d)), m = !_ && null != t.call && !t.call.participants.includes(d), E = _ && (null == A || A.channelId !== u), T = l.useCallback(() => c.default.selectVoiceChannel(u), [u]), I = (0, Z.P)({
+            } = t, d = k.default.getId(), u = t.getChannelId(), _ = (0, a.bG)([y.A], () => y.A.isCallActive(u, s), [u, s]), A = (0, a.bG)([V.A], () => V.A.getVoiceState(eD.ME, d)), m = !_ && null != t.call && !t.call.participants.includes(d), E = _ && (null == A || A.channelId !== u), T = l.useCallback(() => c.default.selectVoiceChannel(u), [u]), I = (0, Z.P)({
                 user: o,
                 channelId: u,
                 guildId: r.guild_id,
@@ -497,7 +497,7 @@ let ej = Object.freeze({
                 usernameHook: a
             })
         },
-        [eD.lAJ.ROLE_SUBSCRIPTION_PURCHASE]: N.A,
+        [eD.lAJ.ROLE_SUBSCRIPTION_PURCHASE]: g.A,
         [eD.lAJ.PURCHASE_NOTIFICATION]: function(e) {
             let {
                 message: t,
@@ -521,9 +521,9 @@ let ej = Object.freeze({
                 channelId: n.id,
                 guildId: n.guild_id,
                 messageId: t.id
-            }), s = (0, a.bG)([g.Ay], () => g.Ay.getActiveEventByChannel(n.id), [n.id]);
+            }), s = (0, a.bG)([N.Ay], () => N.Ay.getActiveEventByChannel(n.id), [n.id]);
             return (0, i.jsxs)(i.Fragment, {
-                children: [(0, i.jsx)(eg.A, {
+                children: [(0, i.jsx)(eN.A, {
                     message: t,
                     compact: l,
                     usernameHook: r
@@ -560,7 +560,7 @@ let ej = Object.freeze({
                 guildId: n.guild_id,
                 messageId: t.id
             });
-            return (0, i.jsx)(eN.A, {
+            return (0, i.jsx)(eg.A, {
                 message: t,
                 compact: l,
                 usernameHook: a
@@ -761,7 +761,7 @@ let ej = Object.freeze({
             })
         }
     }),
-    ey = l.memo(function(e) {
+    ek = l.memo(function(e) {
         let {
             message: t,
             channel: n,

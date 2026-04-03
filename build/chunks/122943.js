@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     a = n(64700),
-    l = n(503698),
-    r = n.n(l),
+    r = n(503698),
+    l = n.n(r),
     s = n(311907),
     o = n(397927),
     d = n(863439),
@@ -26,7 +26,7 @@ let T = a.memo(function(e) {
         channel: t
     } = e, {
         loaded: n,
-        error: l,
+        error: r,
         message: T
     } = (0, p.I)(t), {
         isBlocked: N,
@@ -42,7 +42,7 @@ let T = a.memo(function(e) {
     }) : {
         content: null
     }, [T]), y = null;
-    if (l) y = (0, i.jsx)(o.Text, {
+    if (r) y = (0, i.jsx)(o.Text, {
         className: f.G4,
         variant: "text-sm/normal",
         color: "text-muted",
@@ -65,7 +65,7 @@ let T = a.memo(function(e) {
         let {
             contentPlaceholder: e,
             renderedContent: t
-        } = (0, u.o)(T, b, N, S, r()(f.BK, C.tZ), {
+        } = (0, u.o)(T, b, N, S, l()(f.BK, C.tZ), {
             leadingIconClass: f.AF,
             trailingIconClass: f.AF,
             iconSize: E.eJ

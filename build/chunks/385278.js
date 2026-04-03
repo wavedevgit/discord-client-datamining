@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     a = n(64700),
-    l = n(744682);
-let r = {
+    r = n(744682);
+let l = {
         disable: {
             name: "disable",
             start: 0,
@@ -44,12 +44,12 @@ let r = {
                 let n = "enable" === e ? "hover_disabled" : "hover_enabled";
                 t.current.stopIfPlaying(n)
             }, [e]),
-            u = a.useCallback(e => (0, i.jsx)(l.P, {
+            u = a.useCallback(e => (0, i.jsx)(r.P, {
                 ...e,
                 src: () => n.e("24596").then(n.t.bind(n, 941983, 19)),
                 ref: t,
                 initialAnimation: s.current,
-                markers: r
+                markers: l
             }), []);
         return {
             events: {

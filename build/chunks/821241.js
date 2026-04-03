@@ -24,7 +24,7 @@ function I(e) {
         compact: n,
         usernameHook: l,
         channel: I
-    } = e, N = (0, r.bG)([c.A], () => c.A.getGuild(I.guild_id)), g = (0, d.Ay)(t), f = l(g), {
+    } = e, g = (0, r.bG)([c.A], () => c.A.getGuild(I.guild_id)), N = (0, d.Ay)(t), f = l(N), {
         avatarSrc: C,
         eventHandlers: {
             onMouseEnter: h,
@@ -73,9 +73,9 @@ function I(e) {
                         [T.oE]: n
                     }),
                     children: E.intl.format(E.t.W0UBI3, {
-                        username: g.nick,
+                        username: N.nick,
                         usernameHook: f,
-                        guildName: N?.name ?? ""
+                        guildName: g?.name ?? ""
                     })
                 })]
             })

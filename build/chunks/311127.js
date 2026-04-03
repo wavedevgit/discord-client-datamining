@@ -17,8 +17,8 @@ var i = n(627968),
     E = n(488926),
     T = n(661191),
     I = n(529942),
-    N = n(164956),
-    g = n(209700),
+    g = n(164956),
+    N = n(209700),
     f = n(652215),
     C = n(985018),
     h = n(698222);
@@ -29,10 +29,10 @@ function p(e) {
     } = e, n = (0, s.bG)([m.default], () => m.default.getCurrentUser()), p = (0, s.bG)([A.A], () => A.A.getGuild(t)), x = (0, s.bG)([_.A], () => _.A.getRolesSnapshot(t)), R = (0, s.bG)([_.A], () => _.A.getSortedRoles(t)), {
         impersonateType: O,
         viewingRoles: M
-    } = (0, s.cf)([N.A], () => ({
-        impersonateType: N.A.getImpersonateType(t),
-        viewingRoles: N.A.getViewingRoles(t)
-    })), D = O === g._.SERVER_SHOP, L = (0, s.bG)([u.Ay], () => null != n ? u.Ay.getTrueMember(t, n.id) : null), U = null != p ? x[(0, c.af)(p)] : null, [P, v] = l.useState(() => {
+    } = (0, s.cf)([g.A], () => ({
+        impersonateType: g.A.getImpersonateType(t),
+        viewingRoles: g.A.getViewingRoles(t)
+    })), D = O === N._.SERVER_SHOP, L = (0, s.bG)([u.Ay], () => null != n ? u.Ay.getTrueMember(t, n.id) : null), U = null != p ? x[(0, c.af)(p)] : null, [P, v] = l.useState(() => {
         let e = null == M ? [] : T.default.keys(M);
         return null != U && e.push(U.id), e
     }), j = l.useRef(p);
@@ -49,10 +49,10 @@ function p(e) {
             })
         }
     }, [P, O, x]);
-    let y = null != p && null != n && null != L ? R.find(e => L.roles.includes(e.id)) : void 0,
-        k = l.useMemo(() => null != p && null != n ? R.filter(e => !(0, d.Oy)(e)).filter(e => !D || e.tags?.subscription_listing_id != null).filter(e => y?.id === e.id || E.wO(p, n.id, y, e)) : [], [p, n, D, y, R]),
+    let k = null != p && null != n && null != L ? R.find(e => L.roles.includes(e.id)) : void 0,
+        y = l.useMemo(() => null != p && null != n ? R.filter(e => !(0, d.Oy)(e)).filter(e => !D || e.tags?.subscription_listing_id != null).filter(e => k?.id === e.id || E.wO(p, n.id, k, e)) : [], [p, n, D, k, R]),
         b = l.useMemo(() => {
-            let e = Array.from(k).map(e => ({
+            let e = Array.from(y).map(e => ({
                 leading: S(e),
                 value: e.id,
                 label: e.name,
@@ -66,7 +66,7 @@ function p(e) {
                 id: U.id.toString(),
                 disabled: !0
             }), e
-        }, [k, p, U]);
+        }, [y, p, U]);
     if (null == n || null == p || null == L) return null;
     let G = {};
     return (L.roles.forEach(e => {

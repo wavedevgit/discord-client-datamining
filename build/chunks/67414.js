@@ -17,8 +17,8 @@ var i = n(627968),
     E = n(242874),
     T = n(275759),
     I = n(51501),
-    N = n(233971),
-    g = n(788868),
+    g = n(233971),
+    N = n(788868),
     f = n(652215),
     C = n(778712),
     h = n(985018),
@@ -79,7 +79,7 @@ function O(e) {
         analyticsLocations: L
     } = (0, d.Ay)(c.A.PREMIUM_GIFT_INTENT_CARD), U = (0, r.bG)([T.Ay], () => T.Ay.getFriendAnniversaryYears(S.id)), P = (0, I.$)(t), {
         openGiftModal: v
-    } = (0, N.$)({
+    } = (0, g.$)({
         giftRecipient: S,
         analyticsLocations: L,
         analyticsLocation: P.chat,
@@ -101,7 +101,7 @@ function O(e) {
             }
         })
     }, [t]);
-    let j = () => t === g.np.FRIEND_ANNIVERSARY ? h.intl.string(h.t.ilhtIa) : (0, E.yE)(t);
+    let j = () => t === N.np.FRIEND_ANNIVERSARY ? h.intl.string(h.t.ilhtIa) : (0, E.yE)(t);
     return (0, i.jsx)("div", {
         ref: M,
         className: p.Qs,
@@ -127,7 +127,7 @@ function O(e) {
                         variant: "text-md/medium",
                         color: "text-strong",
                         lineClamp: 3,
-                        children: t === g.np.FRIEND_ANNIVERSARY ? h.intl.string(h.t.CeQIwZ) : (0, E.yE)(t)
+                        children: t === N.np.FRIEND_ANNIVERSARY ? h.intl.string(h.t.CeQIwZ) : (0, E.yE)(t)
                     }), (0, i.jsxs)("div", {
                         className: p.jA,
                         children: [(0, i.jsx)(s.$yI, {
@@ -137,7 +137,7 @@ function O(e) {
                             variant: "text-md/normal",
                             color: "text-subtle",
                             lineClamp: 1,
-                            children: t === g.np.FRIEND_ANNIVERSARY ? h.intl.formatToPlainString(h.t.PpG27s, {
+                            children: t === N.np.FRIEND_ANNIVERSARY ? h.intl.formatToPlainString(h.t.PpG27s, {
                                 numberOfYears: U
                             }) : (0, E.yE)(t)
                         })]

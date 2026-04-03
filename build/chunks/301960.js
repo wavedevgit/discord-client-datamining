@@ -17,8 +17,8 @@ var i = n(627968),
     E = n(795816),
     T = n(793574),
     I = n(688810),
-    N = n(735991),
-    g = n(975412),
+    g = n(735991),
+    N = n(975412),
     f = n(168186),
     C = n(597929),
     h = n(589022),
@@ -35,7 +35,7 @@ var i = n(627968),
     v = n(985018),
     j = n(767283);
 
-function y(e) {
+function k(e) {
     let {
         width: t = 6,
         height: n = 10,
@@ -58,7 +58,7 @@ function y(e) {
     })
 }
 
-function k(e, t, n, l, a, s) {
+function y(e, t, n, l, a, s) {
     let {
         message: o,
         compact: c,
@@ -69,14 +69,14 @@ function k(e, t, n, l, a, s) {
         showTargetAvatarPopout: E,
         onClickAvatar: T,
         onUserContextMenu: I,
-        onClickTargetAvatar: N,
-        onTargetUserContextMenu: g,
+        onClickTargetAvatar: g,
+        onTargetUserContextMenu: N,
         onPopoutRequestClose: f
     } = e;
     if (c && 1 === n) return null;
     if (c && null == o.activityInstance || u || A) return (0, i.jsx)("div", {
         className: j.Cz,
-        children: (0, i.jsx)(y, {
+        children: (0, i.jsx)(k, {
             className: j.Jx
         })
     });
@@ -111,8 +111,8 @@ function k(e, t, n, l, a, s) {
             user: t,
             guildId: d.guild_id,
             guildAvatar: C,
-            onClick: 1 === n ? N : T,
-            onContextMenu: 1 === n ? g : I,
+            onClick: 1 === n ? g : T,
+            onContextMenu: 1 === n ? N : I,
             ref: s
         }),
         p = 1 === n ? E : m;
@@ -169,7 +169,7 @@ function H(e) {
         } = (0, I.Ay)(T.A.EXECUTED_COMMAND),
         x = (0, u.bG)([S.default], () => S.default.getCurrentUser()),
         D = l.useRef(null),
-        y = l.useRef(null),
+        k = l.useRef(null),
         H = l.useMemo(() => (e, t, l) => (o()(null != t, "ExecutedCommand: user cannot be undefined"), o()(null != x, "ExecutedCommand: currentUser cannot be undefined"), o()(null != a, "ExecutedCommand: channel cannot be undefined"), (0, i.jsx)(h.A, {
             ...e,
             user: t,
@@ -195,7 +195,7 @@ function H(e) {
         W = n.interaction;
     if (null == W || null == X) return null;
     let J = () => {
-        let t = k(e, W.user, 0, X, e => H(e, W.user, [T.A.AVATAR]), D),
+        let t = y(e, W.user, 0, X, e => H(e, W.user, [T.A.AVATAR]), D),
             n = b(e, W.user, 0, X, e => H(e, W.user));
         return (0, i.jsxs)(l.Fragment, {
             children: [t, n]
@@ -247,7 +247,7 @@ function H(e) {
                             children: c
                         });
                         {
-                            let e = (0, N.kF)(c);
+                            let e = (0, g.kF)(c);
                             return (0, i.jsx)(_.DUT, {
                                 ...l,
                                 tag: "span",
@@ -271,7 +271,7 @@ function H(e) {
                         }
                     }
                 })
-            }(e, F, y);
+            }(e, F, k);
             return (0, i.jsx)(l.Fragment, {
                 children: t
             }, "command")
@@ -281,7 +281,7 @@ function H(e) {
     }) : null != w && (t = (0, i.jsxs)(i.Fragment, {
         children: [t, (0, i.jsx)(G, {}), (0, i.jsx)(() => {
             if (null == w) return null;
-            let t = k(e, w, 1, q, e => H(e, w, [T.A.AVATAR]), D),
+            let t = y(e, w, 1, q, e => H(e, w, [T.A.AVATAR]), D),
                 n = b(e, w, 1, q, e => H(e, w));
             return (0, i.jsxs)(l.Fragment, {
                 children: [t, n]
@@ -290,7 +290,7 @@ function H(e) {
     }));
     else {
         let e = () => {
-            (0, g.A)({
+            (0, N.A)({
                 context: null != a ? {
                     type: "channel",
                     channel: a

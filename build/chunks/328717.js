@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var a = n(265486),
-    l = n(397927),
-    r = n(793574),
+    r = n(397927),
+    l = n(793574),
     s = n(688810),
     o = n(927578),
     d = n(511484),
@@ -24,7 +24,7 @@ let m = e => {
         children: E
     } = e, {
         analyticsLocations: I
-    } = (0, s.Ay)(r.A.CHURN_DISCOUNT_POPOVER), f = (0, d.iU)(u.gD.PREMIUM_MONTH_TIER_2, m, p), C = (0, i.jsx)(a.h, {
+    } = (0, s.Ay)(l.A.CHURN_DISCOUNT_POPOVER), f = (0, d.iU)(u.gD.PREMIUM_MONTH_TIER_2, m, p), C = (0, i.jsx)(a.h, {
         targetElementRef: t,
         position: "right",
         align: "top",
@@ -49,7 +49,7 @@ let m = e => {
             text: h.intl.string(h.t.zrCzVB),
             variant: "expressive",
             onClick: () => {
-                g(A.i.TAKE_ACTION), (0, l.mMO)(async () => {
+                g(A.i.TAKE_ACTION), (0, r.mMO)(async () => {
                     let {
                         PremiumBrandRefreshSubscriptionCancellationModal: e
                     } = await n.e("72820").then(n.bind(n, 281439));
@@ -61,7 +61,7 @@ let m = e => {
                     })
                 })
             },
-            icon: l.tvc
+            icon: r.tvc
         }],
         onRequestClose: () => {
             g(A.i.USER_DISMISS)

@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     a = n(64700),
-    l = n(735438),
-    r = n.n(l),
+    r = n(735438),
+    l = n.n(r),
     s = n(421380),
     o = n(397927),
     d = n(58149),
@@ -15,13 +15,13 @@ var i = n(627968),
     h = n(652215),
     _ = n(985018),
     m = n(231632);
-let p = r().debounce(d.Ay.trackWithMetadata, 500),
+let p = l().debounce(d.Ay.trackWithMetadata, 500),
     g = e => {
         let {
             guild: t,
             title: n,
-            message: l,
-            image: r,
+            message: r,
+            image: l,
             type: u,
             imageMarginX: A,
             imageMarginTop: g,
@@ -70,18 +70,18 @@ let p = r().debounce(d.Ay.trackWithMetadata, 500),
                     color: "currentColor",
                     className: m.ut
                 })
-            }), null != r && (0, i.jsx)("div", {
+            }), null != l && (0, i.jsx)("div", {
                 className: m.ZS,
                 style: {
                     marginTop: `${g}px`,
                     marginLeft: x,
                     marginRight: x
                 },
-                children: "string" == typeof r ? (0, i.jsx)("img", {
+                children: "string" == typeof l ? (0, i.jsx)("img", {
                     className: m.Sl,
-                    src: r,
+                    src: l,
                     alt: ""
-                }) : r
+                }) : l
             }), (0, i.jsxs)("div", {
                 className: m.iU,
                 children: [null != n ? (0, i.jsx)(o.Heading, {
@@ -90,7 +90,7 @@ let p = r().debounce(d.Ay.trackWithMetadata, 500),
                     children: n
                 }) : null, (0, i.jsx)(o.Text, {
                     variant: "text-sm/normal",
-                    children: l
+                    children: r
                 }), S]
             })]
         })

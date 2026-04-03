@@ -17,8 +17,8 @@ var i = n(627968),
     E = n(888675),
     T = n(532794),
     I = n(287809),
-    N = n(166403),
-    g = n(954571),
+    g = n(166403),
+    N = n(954571),
     f = n(405269),
     C = n(975571),
     h = n(927578),
@@ -34,8 +34,8 @@ var i = n(627968),
     P = n(652215),
     v = n(985018),
     j = n(739636),
-    y = n(954457);
-class k extends l.Component {
+    k = n(954457);
+class y extends l.Component {
     trialOffer;
     referralsSent;
     currentUser;
@@ -206,7 +206,7 @@ class k extends l.Component {
                         analyticsLocations: t,
                         startingScreen: l
                     } = e;
-                    g.default.track(P.HAw.REFERRAL_PROGRAM_SHARE_MODAL_CTA_CLICKED, {
+                    N.default.track(P.HAw.REFERRAL_PROGRAM_SHARE_MODAL_CTA_CLICKED, {
                         location_stack: t
                     }), (0, u.mMO)(async () => {
                         let {
@@ -225,7 +225,7 @@ class k extends l.Component {
             }),
             a = this.isSender ? l : t,
             r = (0, i.jsx)(u._V3, {
-                src: y.A,
+                src: k.A,
                 height: 84,
                 width: 144,
                 className: j.ms
@@ -284,12 +284,12 @@ function b(e) {
         trialOffer: n ? S.A.getRelevantUserTrialOffer(t) : null,
         isResolving: !!n && S.A.isResolving(t),
         referralsSent: S.A.getRecipientStatus()
-    }), [n, t]), d = I.default.getCurrentUser(), u = (0, c.bG)([I.default], () => null != a && (0, h.TW)(void 0 !== d && a.user_id === d.id ? d : I.default.getUser(a.user_id))), E = (0, c.bG)([N.A], () => u ? N.A.getPremiumTypeSubscription()?.trialEndsAt : null), {
+    }), [n, t]), d = I.default.getCurrentUser(), u = (0, c.bG)([I.default], () => null != a && (0, h.TW)(void 0 !== d && a.user_id === d.id ? d : I.default.getUser(a.user_id))), E = (0, c.bG)([g.A], () => u ? g.A.getPremiumTypeSubscription()?.trialEndsAt : null), {
         analyticsLocations: T
     } = (0, m.Ay)(A.A.SHARE_NITRO_EMBED);
     return r ? (0, i.jsx)(_.Wb, {
         isHorizontal: !s.Fr
-    }) : n && null != a && void 0 !== d ? (0, i.jsx)(k, {
+    }) : n && null != a && void 0 !== d ? (0, i.jsx)(y, {
         trialOffer: a,
         referralsSent: o,
         currentUser: d,

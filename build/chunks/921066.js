@@ -16,8 +16,8 @@ var i, l = n(627968),
     E = n(881635),
     T = n(567771),
     I = n(363487),
-    N = n(828162),
-    g = n(168350),
+    g = n(828162),
+    N = n(168350),
     f = n(649963),
     C = n(734057),
     h = n(763754),
@@ -113,7 +113,7 @@ function j(e) {
     })
 }
 
-function y(e) {
+function k(e) {
     let {
         title: t,
         body: n
@@ -134,7 +134,7 @@ function y(e) {
     })
 }
 
-function k(e) {
+function y(e) {
     let {
         guild: t
     } = e;
@@ -162,7 +162,7 @@ function b(e) {
         role: "link",
         className: O.oT,
         onClick: () => {
-            null != t && (i ? (0, N.A)(t.id, _.A.GUILD_BOOSTING_SYSTEM_MESSAGE) : (0, A.K4)({
+            null != t && (i ? (0, g.A)(t.id, _.A.GUILD_BOOSTING_SYSTEM_MESSAGE) : (0, A.K4)({
                 guildId: t.id,
                 location: {
                     section: x.JJy.CHANNEL_TEXT_AREA,
@@ -182,14 +182,14 @@ function G(e) {
     } = e, a = U(), r = (0, h.Ay)(t), s = i(r), o = t.hasFlag(x.pr7.IS_FIRST_BOOSTER);
     return (0, l.jsxs)("div", {
         className: O.ds,
-        children: [(0, l.jsx)(g.A, {
+        children: [(0, l.jsx)(N.A, {
             className: O.M_,
             forceReducedMotion: !a
         }), (0, l.jsx)(P, {
             className: O.S8,
             imageClassName: O.ar,
             animate: a
-        }), (0, l.jsx)(y, {
+        }), (0, l.jsx)(k, {
             title: o ? R.intl.format(R.t["/1IQGD"], {
                 username: r.nick,
                 usernameHook: s
@@ -204,7 +204,7 @@ function G(e) {
                     children: e
                 })
             })
-        }), null != n && (0, l.jsx)(k, {
+        }), null != n && (0, l.jsx)(y, {
             guild: n
         })]
     })
@@ -218,7 +218,7 @@ function H(e) {
     } = e, a = U(), r = (0, h.Ay)(t), s = i(r), o = (0, T.A)(t);
     return (0, l.jsxs)("div", {
         className: O.kL,
-        children: [(0, l.jsx)(g.A, {
+        children: [(0, l.jsx)(N.A, {
             className: O.Tp,
             forceReducedMotion: !a
         }), (0, l.jsx)(P, {
@@ -251,7 +251,7 @@ function F(e) {
     } = e, a = U(), r = (0, h.Ay)(t), s = i(r);
     return (0, l.jsxs)("div", {
         className: O.kL,
-        children: [(0, l.jsx)(g.A, {
+        children: [(0, l.jsx)(N.A, {
             className: O.Tp,
             forceReducedMotion: !a
         }), (0, l.jsx)(P, {

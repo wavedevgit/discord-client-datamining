@@ -16,8 +16,8 @@ var i, l = n(627968),
     E = n(513609),
     T = n(928830),
     I = n(567771),
-    N = n(780964),
-    g = n(858897),
+    g = n(780964),
+    N = n(858897),
     f = n(473145),
     C = n(763754),
     h = n(888675),
@@ -113,9 +113,9 @@ let D = ["TOP_LEFT", "TOP_RIGHT"],
     }),
     v = "falling-leaf",
     j = ["#61D5B2"],
-    y = n(80705),
-    k = n(232460),
-    b = [y, k];
+    k = n(80705),
+    y = n(232460),
+    b = [k, y];
 
 function G() {
     return n.e("98150").then(n.t.bind(n, 633343, 19)).then(e => {
@@ -146,7 +146,7 @@ function H(e) {
     }()), {
         createMultipleConfettiAt: T,
         confettiCanvas: I
-    } = a.useContext(A.x), [N, g] = a.useState(null), f = (0, o.f9)(I, N), C = function(e, t) {
+    } = a.useContext(A.x), [g, N] = a.useState(null), f = (0, o.f9)(I, g), C = function(e, t) {
         if (null == e) return "enter";
         switch (e) {
             case "enter":
@@ -247,12 +247,12 @@ function H(e) {
                     }
                 }
             }, {
-                sprite: "TOP_LEFT" === E ? y : k
+                sprite: "TOP_LEFT" === E ? k : y
             })
         }
     }, [h, f, E, u]), (0, l.jsxs)(l.Fragment, {
         children: [(0, l.jsx)(o.K_, {
-            ref: g,
+            ref: N,
             sprites: b,
             colors: j,
             spriteWidth: 45,
@@ -340,17 +340,17 @@ function F(e) {
                     u(e.left + e.width / 2, e.top + e.height / 2)
                 } else O(!0)
         }, [u, D, p]),
-        y = a.useCallback(() => {
+        k = a.useCallback(() => {
             O(!1)
         }, []),
-        k = a.useCallback(() => {
+        y = a.useCallback(() => {
             (0, T.O9)({
                 settingsVisible: !0
-            }), (0, g.openUserSettings)(N.X.POGGERMODE_PANEL), O(!1)
+            }), (0, N.openUserSettings)(g.X.POGGERMODE_PANEL), O(!1)
         }, []),
         b = a.useCallback((e, t) => {
-            t?.id.startsWith(v) && k()
-        }, [k]);
+            t?.id.startsWith(v) && y()
+        }, [y]);
     a.useEffect(() => m(b));
     let G = a.useCallback(e => {
             e.target === e.currentTarget && o(e)
@@ -377,8 +377,8 @@ function F(e) {
             children: (0, l.jsx)("div", {
                 className: R.LK,
                 children: (0, l.jsx)(H, {
-                    onAnimationComplete: y,
-                    onClick: k
+                    onAnimationComplete: k,
+                    onClick: y
                 })
             })
         }) : null]

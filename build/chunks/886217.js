@@ -5,8 +5,8 @@ n.d(t, {
 });
 var i = n(627968),
     a = n(311907),
-    l = n(859703),
-    r = n(929271),
+    r = n(859703),
+    l = n(929271),
     s = n(392344),
     o = n(522043),
     d = n(214832),
@@ -40,34 +40,34 @@ let m = e => {
     let {
         questId: t,
         selectedSections: n
-    } = e, h = (0, a.bG)([l.A], () => l.A.getQuest(t));
-    if (null != (0, a.bG)([l.A], () => l.A.getFetchQuestPreviewError(t)) || null == h) return null;
+    } = e, h = (0, a.bG)([r.A], () => r.A.getQuest(t));
+    if (null != (0, a.bG)([r.A], () => r.A.getFetchQuestPreviewError(t)) || null == h) return null;
     let _ = e => null == n || 0 === n.length || n.includes(e);
     return (0, i.jsxs)(i.Fragment, {
         children: [_("quest_bar") && (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)(o.A, {
                 quest: h
-            }), (0, i.jsx)(r.c, {})]
+            }), (0, i.jsx)(l.c, {})]
         }), _("home_card") && (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)(u._, {
                 quest: h
-            }), (0, i.jsx)(r.c, {})]
+            }), (0, i.jsx)(l.c, {})]
         }), _("share_embed") && (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)(c.A, {
                 questId: h.id
-            }), (0, i.jsx)(r.c, {})]
+            }), (0, i.jsx)(l.c, {})]
         }), _("channel_call_header") && (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)(d.n, {
                 quest: h
-            }), (0, i.jsx)(r.c, {})]
+            }), (0, i.jsx)(l.c, {})]
         }), _("members_list") && (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)(A.A, {
                 quest: h
-            }), (0, i.jsx)(r.c, {})]
+            }), (0, i.jsx)(l.c, {})]
         }), _("activity_panel") && (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)(s.A, {
                 quest: h
-            }), (0, i.jsx)(r.c, {})]
+            }), (0, i.jsx)(l.c, {})]
         })]
     })
 }

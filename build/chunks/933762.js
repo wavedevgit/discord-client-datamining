@@ -20,7 +20,7 @@ function u(e) {
         onClickThread: _,
         onClickViewThreads: A,
         onContextMenuThread: m
-    } = e, E = (0, s.Ay)(t), T = u(E), I = (0, l.bG)([r.A], () => r.A.getChannel(t.messageReference?.channel_id)), N = c.intl.format(c.t.cZ9Uf2, {
+    } = e, E = (0, s.Ay)(t), T = u(E), I = (0, l.bG)([r.A], () => r.A.getChannel(t.messageReference?.channel_id)), g = c.intl.format(c.t.cZ9Uf2, {
         actorName: E.nick,
         actorHook: T,
         threadName: I?.name ?? t.content,
@@ -38,6 +38,6 @@ function u(e) {
         }),
         timestamp: t.timestamp,
         compact: n,
-        children: N
+        children: g
     })
 }

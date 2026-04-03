@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var a = n(397927),
-    l = n(73153),
-    r = n(361158),
+    r = n(73153),
+    l = n(361158),
     s = n(80556),
     o = n(159329),
     d = n(163679),
@@ -22,13 +22,13 @@ var a = n(397927),
     I = n(818348);
 let f = {
     init() {
-        l.h.subscribe("CONNECTION_OPEN", this.handleRequiredAction), l.h.subscribe("USER_REQUIRED_ACTION_UPDATE", this.handleRequiredAction), l.h.subscribe("CURRENT_USER_UPDATE", this.handleCurrentUserUpdate), A.default.addChangeListener(this.handleAuthenticationStoreChanged)
+        r.h.subscribe("CONNECTION_OPEN", this.handleRequiredAction), r.h.subscribe("USER_REQUIRED_ACTION_UPDATE", this.handleRequiredAction), r.h.subscribe("CURRENT_USER_UPDATE", this.handleCurrentUserUpdate), A.default.addChangeListener(this.handleAuthenticationStoreChanged)
     },
     handleRequiredAction(e) {
         let t = e.requiredAction;
         !_.P.isDisallowPopupsSet() && null != h.default.getCurrentUser() && (t === p.a3B.REQUIRE_CAPTCHA || t === p.a3B.REQUIRE_VERIFIED_EMAIL || t === p.a3B.REQUIRE_VERIFIED_PHONE || t === p.a3B.REQUIRE_REVERIFIED_PHONE || t === p.a3B.REQUIRE_VERIFIED_EMAIL_OR_VERIFIED_PHONE || t === p.a3B.REQUIRE_REVERIFIED_EMAIL_OR_REVERIFIED_PHONE || t === p.a3B.REQUIRE_VERIFIED_EMAIL_OR_REVERIFIED_PHONE || c.A.isEmailReverification(t) ? (0, o.P3)({
             location: "verification-legacy"
-        }) ? (0, r.B8)(e => {
+        }) ? (0, l.B8)(e => {
             let {
                 closeLayer: t
             } = e;
@@ -38,7 +38,7 @@ let f = {
         }, {
             layerKey: E._s,
             Layer: s.Ay
-        }) : (0, r.B8)(() => (0, i.jsx)(u.A, {}), {
+        }) : (0, l.B8)(() => (0, i.jsx)(u.A, {}), {
             layerKey: E._s,
             Layer: s.Ay
         }) : t === p.a3B.AGREEMENTS ? (0, a.qfG)(e => (0, i.jsx)(m.default, {
@@ -47,7 +47,7 @@ let f = {
             modalKey: E.i$,
             onCloseRequest: I.FX,
             dismissable: !1
-        }) : t === p.a3B.REQUIRE_SAFETY_FLOWS ? (0, r.B8)(e => {
+        }) : t === p.a3B.REQUIRE_SAFETY_FLOWS ? (0, l.B8)(e => {
             let {
                 closeLayer: t
             } = e;
@@ -57,10 +57,10 @@ let f = {
         }, {
             layerKey: E._s,
             Layer: s.Ay
-        }) : null == t && ((0, r.dF)(E._s), (0, a.kBI)(E.i$) && (0, a.OoC)(E.i$)))
+        }) : null == t && ((0, l.dF)(E._s), (0, a.kBI)(E.i$) && (0, a.OoC)(E.i$)))
     },
     handleAuthenticationStoreChanged() {
-        null == A.default.getId() && ((0, r.dF)(E._s), (0, a.OoC)(E.i$), (0, a.OoC)(E.Pr), (0, a.OoC)(E.H1), (0, a.OoC)(g.V))
+        null == A.default.getId() && ((0, l.dF)(E._s), (0, a.OoC)(E.i$), (0, a.OoC)(E.Pr), (0, a.OoC)(E.H1), (0, a.OoC)(g.V))
     },
     handleCurrentUserUpdate(e) {
         let {
