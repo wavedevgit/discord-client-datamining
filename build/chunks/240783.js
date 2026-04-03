@@ -3,8 +3,8 @@ t.d(n, {
     A: () => b
 });
 var i = t(627968),
-    l = t(64700),
-    a = t(311907),
+    a = t(64700),
+    l = t(311907),
     s = t(397927),
     r = t(351906),
     d = t(183555),
@@ -23,15 +23,15 @@ function f(e) {
     let {
         section: n,
         user: t,
-        currentUser: l,
-        displayProfile: a,
+        currentUser: a,
+        displayProfile: l,
         guildId: s,
         channelId: r,
         onClose: d
     } = e;
     return n === x.RP.ACTIVITY ? (0, i.jsx)(u.A, {
         user: t,
-        currentUser: l,
+        currentUser: a,
         guildId: s,
         onClose: d
     }) : n === x.RP.MUTUAL_FRIENDS ? (0, i.jsx)(_.A, {
@@ -46,12 +46,12 @@ function f(e) {
         user: t
     }) : n === x.RP.BOT_INFO ? (0, i.jsx)(c.A, {
         user: t,
-        displayProfile: a,
+        displayProfile: l,
         guildId: s,
         onClose: d
     }) : (0, i.jsx)(A.A, {
         user: t,
-        displayProfile: a,
+        displayProfile: l,
         onClose: d
     })
 }
@@ -67,20 +67,20 @@ function b(e) {
         onClose: _
     } = e, {
         trackUserProfileAction: p
-    } = (0, d.NJ)(), b = (0, a.bG)([r.A], () => r.A.hidePersonalInformation), [h, j] = l.useState(() => u.find(e => {
+    } = (0, d.NJ)(), b = (0, l.bG)([r.A], () => r.A.hidePersonalInformation), [h, v] = a.useState(() => u.find(e => {
         let {
             section: n
         } = e;
         return n === A
     })?.section ?? u[0]?.section);
-    l.useEffect(() => {
-        null == u.find(e => e.section === h) && j(u[0].section)
+    a.useEffect(() => {
+        null == u.find(e => e.section === h) && v(u[0].section)
     }, [u, h]);
-    let v = l.useCallback(e => {
+    let j = a.useCallback(e => {
         p({
             action: "PRESS_SECTION",
             section: e
-        }), j(e)
+        }), v(e)
     }, [p]);
     return b ? (0, i.jsx)("div", {
         className: I.kL,
@@ -99,7 +99,7 @@ function b(e) {
             className: I.$H,
             type: "top",
             selectedItem: h,
-            onItemSelect: v,
+            onItemSelect: j,
             children: u.map(e => {
                 let {
                     section: n,

@@ -2,11 +2,11 @@
 n.d(t, {
     A: () => i
 });
-var r = n(562465),
-    a = n(652215);
+var a = n(562465),
+    r = n(652215);
 let i = {
-    updatePrivateChannelRecipientFlags: (e, t) => r.Bo.patch({
-        url: a.Rsh.CHANNEL_RECIPIENT_ME(e),
+    updatePrivateChannelRecipientFlags: (e, t) => a.Bo.patch({
+        url: r.Rsh.CHANNEL_RECIPIENT_ME(e),
         body: {
             flags: t
         },

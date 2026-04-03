@@ -7,8 +7,8 @@ var a = n(627968),
     i = n(311907),
     r = n(397927),
     s = n(289363),
-    c = n(287809),
-    o = n(486020),
+    o = n(287809),
+    c = n(486020),
     d = n(409626),
     u = n(305080),
     m = n(985018),
@@ -20,18 +20,18 @@ function h(e) {
         analyticsLocations: n
     } = e, {
         fetchedAuthorization: h,
-        hasAlreadyLinked: g,
-        canStartAuthorization: f,
-        startAuthorization: _,
-        connectionApp: p,
+        hasAlreadyLinked: f,
+        canStartAuthorization: p,
+        startAuthorization: g,
+        connectionApp: _,
         officialInvite: v
-    } = (0, u.c)(), A = (0, i.bG)([c.default], () => c.default.getCurrentUser()), j = l.useCallback(() => {
-        t(d.Ws.LinkAccount), _({
+    } = (0, u.c)(), A = (0, i.bG)([o.default], () => o.default.getCurrentUser()), j = l.useCallback(() => {
+        t(d.Ws.LinkAccount), g({
             analyticsLocations: n
         })
-    }, [t, _, n]);
-    if (!h || null == p || !f || g || null == A) return null;
-    let E = v?.guild != null ? o.Ay.getGuildSplashURL({
+    }, [t, g, n]);
+    if (!h || null == _ || !p || f || null == A) return null;
+    let E = v?.guild != null ? c.Ay.getGuildSplashURL({
         id: v.guild.id,
         splash: v.guild.splash
     }) : null;
@@ -52,7 +52,7 @@ function h(e) {
             }) : (0, a.jsx)("div", {
                 className: x.sB,
                 children: (0, a.jsx)(s.default, {
-                    application: p
+                    application: _
                 })
             }), (0, a.jsxs)("div", {
                 className: x.hQ,
@@ -62,7 +62,7 @@ function h(e) {
                         variant: "heading-md/semibold",
                         color: "text-default",
                         children: m.intl.formatToPlainString(m.t.hUbQT2, {
-                            gameName: p.name
+                            gameName: _.name
                         })
                     }), (0, a.jsx)(r.Text, {
                         variant: "text-sm/medium",

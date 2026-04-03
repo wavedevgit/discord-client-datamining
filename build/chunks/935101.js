@@ -2,12 +2,12 @@
 n.d(t, {
     A: () => g
 });
-var r = n(64700),
-    a = n(311907),
+var a = n(64700),
+    r = n(311907),
     i = n(205693),
     l = n(451988),
-    s = n(430452),
-    o = n(383501),
+    o = n(430452),
+    s = n(383501),
     _ = n(485296),
     u = n(927813),
     c = n(499156),
@@ -20,25 +20,25 @@ function g() {
         showPTTSpeakingIndicator: e
     } = c.A.useConfig({
         location: "useSpeakingWhilePTT"
-    }), [t, n] = r.useState(!1), u = (0, a.bG)([s.Ay], () => s.Ay.getMode() === d.TB.PUSH_TO_TALK), g = (0, a.bG)([o.A], () => o.A.getRTCConnectionId()), f = (0, a.bG)([s.Ay], () => {
-        let e = s.Ay.getModeOptions().updatedAt;
+    }), [t, n] = a.useState(!1), u = (0, r.bG)([o.Ay], () => o.Ay.getMode() === d.TB.PUSH_TO_TALK), g = (0, r.bG)([s.A], () => s.A.getRTCConnectionId()), f = (0, r.bG)([o.Ay], () => {
+        let e = o.Ay.getModeOptions().updatedAt;
         return null != e && Date.now() - e < A
-    }), b = r.useRef(new l.Ep);
-    return r.useEffect(() => {
+    }), m = a.useRef(new l.Ep);
+    return a.useEffect(() => {
         n(!1)
-    }, [g]), r.useEffect(() => {
+    }, [g]), a.useEffect(() => {
         let t = 0,
-            r = b.current;
+            a = m.current;
 
-        function a(e, a) {
-            let i = (a & d.ME.VOICE) === d.ME.VOICE,
+        function r(e, r) {
+            let i = (r & d.ME.VOICE) === d.ME.VOICE,
                 l = _.A.isCurrentUserPTTActive();
-            i && !l ? ++t >= 6 && (n(!0), r.start(p, () => {
+            i && !l ? ++t >= 6 && (n(!0), a.start(p, () => {
                 n(!1)
             })) : t = 0
         }
-        return f && e && u && null != g && s.Ay.getMediaEngine().on(i.bg.VoiceActivity, a), () => {
-            s.Ay.getMediaEngine().removeListener(i.bg.VoiceActivity, a), r.stop()
+        return f && e && u && null != g && o.Ay.getMediaEngine().on(i.bg.VoiceActivity, r), () => {
+            o.Ay.getMediaEngine().removeListener(i.bg.VoiceActivity, r), a.stop()
         }
     }, [e, u, f, g]), t
 }

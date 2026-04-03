@@ -8,13 +8,13 @@ var a = n(155718),
     i = n(77350),
     r = n(141468),
     s = n(383233),
-    c = n(998218);
-let o = /^#{1,3}\s+(.+)$/;
+    o = n(998218);
+let c = /^#{1,3}\s+(.+)$/;
 
 function d(e) {
     return e.map(e => {
-        let t, n, c = (0, r.rh)(e),
-            d = (0, s._c)(c) ? c.components.filter(e => e.type === a.I5.TEXT_DISPLAY).map(e => e.content).join("\n") : c.content,
+        let t, n, o = (0, r.rh)(e),
+            d = (0, s._c)(o) ? o.components.filter(e => e.type === a.I5.TEXT_DISPLAY).map(e => e.content).join("\n") : o.content,
             u = function(e) {
                 if ((0, s._c)(e)) {
                     let t = e.components.find(e => e.type === a.I5.MEDIA_GALLERY),
@@ -42,11 +42,11 @@ function d(e) {
                         embedIndex: e.embeds.findIndex(e => e === r)
                     }
                 }, "IMAGE")
-            }(c),
+            }(o),
             {
                 title: m,
                 body: x
-            } = null != (n = (-1 === (t = d.indexOf("\n")) ? d : d.slice(0, t)).match(o)) ? {
+            } = null != (n = (-1 === (t = d.indexOf("\n")) ? d : d.slice(0, t)).match(c)) ? {
                 title: n[1].trim(),
                 body: -1 === t ? "" : d.slice(t + 1).trimStart()
             } : {
@@ -54,7 +54,7 @@ function d(e) {
             },
             h = e.reactions?.reduce((e, t) => e + t.count, 0) ?? 0;
         return {
-            id: c.id,
+            id: o.id,
             media: u,
             title: m,
             body: x,
@@ -66,6 +66,6 @@ function d(e) {
 }
 
 function u(e) {
-    let t = c.A.toURLSafe(e);
+    let t = o.A.toURLSafe(e);
     return null == t ? null : (t.searchParams.append("format", "webp"), t.toString())
 }

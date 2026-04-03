@@ -4,8 +4,8 @@ t.d(n, {
 });
 var i = t(627968);
 t(64700);
-var l = t(397927),
-    a = t(398590),
+var a = t(397927),
+    l = t(398590),
     s = t(345942),
     r = t(183555),
     d = t(913453),
@@ -23,28 +23,28 @@ function A(e) {
         mutualGuilds: _,
         isFetching: p
     } = (0, d.A)(n);
-    return (0, i.jsx)(l.IpV, {
+    return (0, i.jsx)(a.IpV, {
         className: u.DK,
         fade: !0,
         children: null == _ && p ? (0, i.jsx)("div", {
             className: u.Ie,
-            children: (0, i.jsx)(l.y$y, {})
+            children: (0, i.jsx)(a.y$y, {})
         }) : (null != _ || p) && _?.length !== 0 ? _?.map(e => {
             let {
-                guild: l,
+                guild: a,
                 nick: r
             } = e;
             return (0, i.jsx)(o.A, {
                 user: n,
-                guild: l,
+                guild: a,
                 nick: r,
                 onSelect: () => {
                     var e;
                     A({
                         action: "PRESS_MUTUAL_GUILD"
-                    }), e = l.id, (0, s.u)(e), t(), (0, a.jH)()
+                    }), e = a.id, (0, s.u)(e), t(), (0, l.jH)()
                 }
-            }, l.id)
+            }, a.id)
         }) : (0, i.jsxs)("div", {
             className: u.Ie,
             children: [(0, i.jsx)("div", {

@@ -7,8 +7,8 @@ var a = n(311907),
 let i = {},
     r = {},
     s = {},
-    c = {},
     o = {},
+    c = {},
     d = {},
     u = {},
     m = {};
@@ -24,10 +24,10 @@ class x extends a.Ay.Store {
         return s[e]
     }
     hasShopCollectionBeenFetched(e) {
-        return c[e] ?? !1
+        return o[e] ?? !1
     }
     isShopCollectionFetching(e) {
-        return o[e] ?? !1
+        return c[e] ?? !1
     }
     getAnnouncements(e) {
         return d[e]
@@ -58,20 +58,20 @@ let h = new x(l.h, {
         let {
             collectionId: t
         } = e;
-        o[t] = !0
+        c[t] = !0
     },
     GAME_PROFILE_GET_SHOP_COLLECTION_SUCCESS: function(e) {
         let {
             collectionId: t,
             skuIds: n
         } = e;
-        s[t] = n, c[t] = !0, o[t] = !1
+        s[t] = n, o[t] = !0, c[t] = !1
     },
     GAME_PROFILE_GET_SHOP_COLLECTION_ERROR: function(e) {
         let {
             collectionId: t
         } = e;
-        c[t] = !0, o[t] = !1
+        o[t] = !0, c[t] = !1
     },
     GAME_PROFILE_GET_ANNOUNCEMENTS_START: function(e) {
         let {

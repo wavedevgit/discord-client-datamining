@@ -7,8 +7,8 @@ var a = n(627968),
     i = n(397927),
     r = n(155718),
     s = n(975807),
-    c = n(602859),
-    o = n(194362),
+    o = n(602859),
+    c = n(194362),
     d = n(409626),
     u = n(652215),
     m = n(985018);
@@ -17,11 +17,11 @@ function x(e) {
     let {
         application: t,
         trackAction: n
-    } = e, x = (0, c.s)("GameProfile"), h = l.useCallback(async () => {
+    } = e, x = (0, o.s)("GameProfile"), h = l.useCallback(async () => {
         n(d.Ws.ClaimGame);
-        let e = await (0, o.a)(u.dSh.DEVELOPER_PORTAL_APPLICATIONS_GAME_IDENTITY);
+        let e = await (0, c.a)(u.dSh.DEVELOPER_PORTAL_APPLICATIONS_GAME_IDENTITY);
         (0, s.A)(e)
-    }, [n]), g = l.useCallback(e => (0, a.jsx)(i.MzZ, {
+    }, [n]), f = l.useCallback(e => (0, a.jsx)(i.MzZ, {
         onClick: h,
         children: e
     }), [h]);
@@ -29,7 +29,7 @@ function x(e) {
         variant: "text-xs/normal",
         color: "text-muted",
         children: m.intl.format(m.t.KAjfKl, {
-            claimLink: g
+            claimLink: f
         })
     })
 }

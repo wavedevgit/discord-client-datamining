@@ -7,11 +7,11 @@ var a = n(64700),
     i = n(429913),
     r = n(832163),
     s = n(594832),
-    c = n(631784),
-    o = n(287809);
+    o = n(631784),
+    c = n(287809);
 
 function d(e) {
-    let t = o.default.getCurrentUser()?.id,
+    let t = c.default.getCurrentUser()?.id,
         n = a.useMemo(() => null != t ? [t] : [], [t]),
         d = (0, l.bG)([r.A], () => null != e ? r.A.getApplicationIdFromDetectableId(e.id) : void 0),
         u = (0, i.h)(d),
@@ -19,7 +19,7 @@ function d(e) {
         {
             recommendations: x,
             status: h
-        } = (0, c.XQ)({
+        } = (0, o.XQ)({
             applicationIds: m,
             userIds: n,
             numItems: 6,

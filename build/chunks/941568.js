@@ -7,22 +7,22 @@ var a = n(627968),
     i = n(503698),
     r = n.n(i),
     s = n(621466),
-    c = n(649658),
-    o = n(397927),
+    o = n(649658),
+    c = n(397927),
     d = n(688810),
     u = n(951707),
     m = n(46054),
     x = n(405269),
     h = n(890060),
-    g = n(409626),
-    f = n(21091),
-    _ = n(385064),
-    p = n(305080),
+    f = n(409626),
+    p = n(21091),
+    g = n(385064),
+    _ = n(305080),
     v = n(954506),
     A = n(652215),
     j = n(985018),
     E = n(95225),
-    C = n(782691);
+    b = n(782691);
 
 function I(e, t) {
     return m.A.parse(e, !0, {
@@ -33,23 +33,23 @@ function I(e, t) {
     })
 }
 
-function b(e) {
+function C(e) {
     let {
         variant: t,
         message: n,
         channelId: i,
         onCardClick: d
-    } = e, [u, m] = l.useState(!1), g = "main" === t, f = l.useCallback(() => m(!0), []), _ = l.useCallback(e => {
+    } = e, [u, m] = l.useState(!1), f = "main" === t, p = l.useCallback(() => m(!0), []), g = l.useCallback(e => {
         if (!((0, s.vq)(e.target, HTMLAnchorElement) || (0, s.vq)(e.target, HTMLSpanElement) && (0, s.vq)(e.target.parentElement, HTMLAnchorElement))) return d(n.id)
-    }, [d, n.id]), p = n.media?.width != null && n.media?.height != null ? n.media.width / n.media.height : 16 / 9, v = n.media?.proxyUrl ?? n.media?.url, b = (null != v ? (0, h.V)(v) : null) ?? v;
-    return (0, a.jsxs)(o.DUT, {
-        className: g ? E.cG : E.IU,
-        onClick: _,
-        children: [null != n.media && null != b && (0, a.jsx)("div", {
-            className: g ? E._v : E.eZ,
-            children: (0, a.jsx)(c.y, {
+    }, [d, n.id]), _ = n.media?.width != null && n.media?.height != null ? n.media.width / n.media.height : 16 / 9, v = n.media?.proxyUrl ?? n.media?.url, C = (null != v ? (0, h.V)(v) : null) ?? v;
+    return (0, a.jsxs)(c.DUT, {
+        className: f ? E.cG : E.IU,
+        onClick: g,
+        children: [null != n.media && null != C && (0, a.jsx)("div", {
+            className: f ? E._v : E.eZ,
+            children: (0, a.jsx)(o.y, {
                 readyState: u ? A.Rv1.READY : A.Rv1.LOADING,
-                aspectRatio: p,
+                aspectRatio: _,
                 placeholder: n.media.placeholder,
                 placeholderVersion: n.media.placeholderVersion,
                 placeholderStyle: {
@@ -58,35 +58,35 @@ function b(e) {
                     objectFit: "cover"
                 },
                 children: (0, a.jsx)("img", {
-                    src: b,
-                    className: g ? E.fk : E.v,
+                    src: C,
+                    className: f ? E.fk : E.v,
                     alt: "",
                     draggable: !1,
-                    onLoad: f
+                    onLoad: p
                 })
             })
         }), (0, a.jsxs)("div", {
-            className: g ? E.GT : E.s4,
-            children: [null != n.title && (0, a.jsx)(o.Heading, {
+            className: f ? E.GT : E.s4,
+            children: [null != n.title && (0, a.jsx)(c.Heading, {
                 variant: "heading-md/bold",
                 color: "text-strong",
-                className: g ? E.KX : E._N,
+                className: f ? E.KX : E._N,
                 children: I(n.title, i)
             }), n.body.length > 0 && (0, a.jsx)("div", {
-                className: r()(E.h_, g ? E.My : E.Gd, C.PT),
+                className: r()(E.h_, f ? E.My : E.Gd, b.PT),
                 children: I(n.body, i)
             }), (0, a.jsxs)("div", {
                 className: E.ov,
-                children: [(0, a.jsx)(o.Text, {
+                children: [(0, a.jsx)(c.Text, {
                     variant: "text-xs/medium",
                     color: "text-muted",
                     children: (0, x.i$)(new Date(n.timestamp), "LL")
                 }), n.reactionCount > 0 && (0, a.jsxs)("div", {
                     className: E.a5,
-                    children: [(0, a.jsx)(o.nm2, {
+                    children: [(0, a.jsx)(c.nm2, {
                         size: "xs",
                         color: "currentColor"
-                    }), (0, a.jsx)(o.Text, {
+                    }), (0, a.jsx)(c.Text, {
                         variant: "text-xs/medium",
                         color: "text-muted",
                         children: new Intl.NumberFormat(j.intl.currentLocale).format(n.reactionCount)
@@ -106,45 +106,45 @@ function N(e) {
     } = (0, d.Ay)(), {
         officialInvite: r,
         closeModal: s
-    } = (0, p.c)(), {
-        messages: c,
-        guildId: o,
+    } = (0, _.c)(), {
+        messages: o,
+        guildId: c,
         channelId: m
-    } = (0, f.A)(t), x = l.useCallback(() => {
-        let e = r?.guild?.id ?? o;
-        null != e && (n(g.Ws.Announcements), s(), (0, _.A)({
+    } = (0, p.A)(t), x = l.useCallback(() => {
+        let e = r?.guild?.id ?? c;
+        null != e && (n(f.Ws.Announcements), s(), (0, g.A)({
             invite: r,
             guildId: e,
             channelId: m,
             analyticsLocationStack: i
         }))
-    }, [n, s, r, o, m, i]), h = l.useCallback(e => {
-        let t = r?.guild?.id ?? o;
-        null != t && (n(g.Ws.AnnouncementsItem), s(), (0, _.A)({
+    }, [n, s, r, c, m, i]), h = l.useCallback(e => {
+        let t = r?.guild?.id ?? c;
+        null != t && (n(f.Ws.AnnouncementsItem), s(), (0, g.A)({
             invite: r,
             guildId: t,
             channelId: m,
             messageId: e,
             analyticsLocationStack: i
         }))
-    }, [n, s, r, o, m, i]);
-    if (null == m || 0 === c.length) return null;
-    let A = 2 !== c.length,
-        C = A ? c[0] : null,
-        I = A ? c.slice(1) : c;
+    }, [n, s, r, c, m, i]);
+    if (null == m || 0 === o.length) return null;
+    let A = 2 !== o.length,
+        b = A ? o[0] : null,
+        I = A ? o.slice(1) : o;
     return (0, a.jsx)(v.A, {
         title: j.intl.string(j.t.B0BV3Y),
         onClickViewAll: x,
         children: (0, a.jsxs)("div", {
             className: E.f3,
-            children: [null != C && (0, a.jsx)(b, {
+            children: [null != b && (0, a.jsx)(C, {
                 variant: "main",
-                message: C,
+                message: b,
                 channelId: m,
                 onCardClick: h
             }), I.length > 0 && (0, a.jsx)(u.A, {
                 gap: 16,
-                children: I.map(e => (0, a.jsx)(b, {
+                children: I.map(e => (0, a.jsx)(C, {
                     variant: "small",
                     message: e,
                     channelId: m,

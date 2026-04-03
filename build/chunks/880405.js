@@ -9,8 +9,8 @@ var a = n(562465),
     i = n(198982),
     r = n(773669),
     s = n(371794),
-    c = n(890060),
-    o = n(652215);
+    o = n(890060),
+    c = n(652215);
 let d = async e => {
     l.h.dispatch({
         type: "GAME_PROFILE_GET_SHOP_COLLECTION_START",
@@ -18,7 +18,7 @@ let d = async e => {
     });
     try {
         let t = (await (0, s.aP)({
-            url: o.Rsh.STOREFRONT_COLLECTION_WITH_PRODUCTS(e),
+            url: c.Rsh.STOREFRONT_COLLECTION_WITH_PRODUCTS(e),
             query: {
                 locale: r.default.locale
             },
@@ -39,7 +39,7 @@ let d = async e => {
 }, u = async e => {
     try {
         let t = ((await a.Bo.get({
-            url: o.Rsh.SIMILAR_GAMES(e),
+            url: c.Rsh.SIMILAR_GAMES(e),
             rejectWithError: !1
         })).body.similar_games ?? []).filter(t => t !== e);
         l.h.dispatch({
@@ -59,14 +59,14 @@ let d = async e => {
         let n = {};
         t?.limit != null && (n.limit = t.limit);
         let i = (await a.Bo.get({
-            url: o.Rsh.GAME_ANNOUNCEMENTS(e),
+            url: c.Rsh.GAME_ANNOUNCEMENTS(e),
             query: n,
             rejectWithError: !1
         })).body;
         l.h.dispatch({
             type: "GAME_PROFILE_GET_ANNOUNCEMENTS_SUCCESS",
             gameId: e,
-            messages: (0, c.p)(i.messages),
+            messages: (0, o.p)(i.messages),
             channelId: i.channel_id ?? void 0,
             guildId: i.guild_id ?? void 0
         })

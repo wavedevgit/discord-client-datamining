@@ -1,26 +1,27 @@
 /** chunk id: 503364 params = (module,exports,require) **/
 n.d(t, {
-    A: () => u,
-    N: () => m
+    A: () => m,
+    N: () => x
 });
 var a = n(627968),
     l = n(64700),
     i = n(990078),
     r = n(397927),
     s = n(442433),
-    c = n(50268),
-    o = n(67518),
-    d = n(985018);
+    o = n(50268),
+    c = n(67518),
+    d = n(651864),
+    u = n(985018);
 
-function u(e) {
+function m(e) {
     let {
         applicationId: t,
         className: n,
-        trackAction: u
-    } = e, m = l.useRef(null), x = (0, c.A)({
+        trackAction: d
+    } = e, m = l.useRef(null), x = (0, o.A)({
         id: t,
-        label: d.intl.string(d.t["FfCL+6"])
-    }), h = (0, o.n)(t, u);
+        label: u.intl.string(u.t["FfCL+6"])
+    }), h = (0, c.n)(t, d);
     return null == x && null == h ? null : (0, a.jsx)(r.YNO, {
         targetElementRef: m,
         align: "top",
@@ -36,7 +37,7 @@ function u(e) {
                 onClose: () => {
                     (0, s.Z_)(), t()
                 },
-                "aria-label": d.intl.string(d.t.PNeFgW),
+                "aria-label": u.intl.string(u.t.PNeFgW),
                 onSelect: () => {},
                 children: (0, a.jsxs)(a.Fragment, {
                     children: [(0, a.jsx)(r.rXV, {
@@ -48,7 +49,7 @@ function u(e) {
             })
         },
         children: e => (0, a.jsx)(i.m, {
-            text: d.intl.string(d.t["UKOtz+"]),
+            text: u.intl.string(u.t["UKOtz+"]),
             children: (0, a.jsx)(r.DUT, {
                 innerRef: m,
                 className: n,
@@ -62,20 +63,51 @@ function u(e) {
     })
 }
 
-function m(e) {
+function x(e) {
     let {
-        applicationId: t,
+        game: t,
         onClose: n,
-        className: u,
-        trackAction: m
-    } = e, x = l.useRef(null), h = (0, c.A)({
-        id: t,
-        label: d.intl.string(d.t["FfCL+6"])
-    }), g = (0, o.n)(t, m);
+        className: m,
+        trackAction: x
+    } = e, h = l.useRef(null), f = l.useRef(null), p = (0, o.A)({
+        id: t.id,
+        label: u.intl.string(u.t["FfCL+6"])
+    }), g = (0, c.n)(t.id, x), _ = (0, d.A)(t);
     return (0, a.jsxs)("div", {
-        className: u,
-        children: [(null != h || null != g) && (0, a.jsx)(r.YNO, {
-            targetElementRef: x,
+        className: m,
+        children: [null != _ && (0, a.jsx)(r.YNO, {
+            targetElementRef: f,
+            align: "top",
+            position: "right",
+            disablePointerEvents: !1,
+            renderPopout: e => {
+                let {
+                    closePopout: t
+                } = e;
+                return (0, a.jsx)(r.W1t, {
+                    navId: "game-profile-add-to-profile",
+                    onClose: () => {
+                        (0, s.Z_)(), t()
+                    },
+                    "aria-label": u.intl.string(u.t.sidPSo),
+                    onSelect: () => {},
+                    children: (0, a.jsx)(r.rXV, {
+                        children: _
+                    })
+                })
+            },
+            children: e => (0, a.jsx)("div", {
+                ...e,
+                ref: f,
+                children: (0, a.jsx)(r.Button, {
+                    icon: r.pa$,
+                    variant: "overlay-secondary",
+                    size: "sm",
+                    text: u.intl.string(u.t.sidPSo)
+                })
+            })
+        }), (null != p || null != g) && (0, a.jsx)(r.YNO, {
+            targetElementRef: h,
             align: "top",
             position: "right",
             disablePointerEvents: !1,
@@ -88,27 +120,27 @@ function m(e) {
                     onClose: () => {
                         (0, s.Z_)(), t()
                     },
-                    "aria-label": d.intl.string(d.t.PNeFgW),
+                    "aria-label": u.intl.string(u.t.PNeFgW),
                     onSelect: () => {},
                     children: (0, a.jsxs)(a.Fragment, {
                         children: [(0, a.jsx)(r.rXV, {
                             children: g
                         }), (0, a.jsx)(r.rXV, {
-                            children: h
+                            children: p
                         })]
                     })
                 })
             },
             children: e => (0, a.jsx)(i.m, {
-                text: d.intl.string(d.t["UKOtz+"]),
+                text: u.intl.string(u.t["UKOtz+"]),
                 children: (0, a.jsx)("div", {
                     ...e,
-                    ref: x,
+                    ref: h,
                     children: (0, a.jsx)(r.K0, {
                         icon: r.jNK,
                         variant: "overlay-secondary",
                         size: "sm",
-                        "aria-label": d.intl.string(d.t["UKOtz+"])
+                        "aria-label": u.intl.string(u.t["UKOtz+"])
                     })
                 })
             })
@@ -117,7 +149,7 @@ function m(e) {
             variant: "overlay-secondary",
             size: "sm",
             onClick: n,
-            "aria-label": d.intl.string(d.t.cpT0Cq)
+            "aria-label": u.intl.string(u.t.cpT0Cq)
         })]
     })
 }

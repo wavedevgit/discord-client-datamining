@@ -3,8 +3,8 @@ t.d(n, {
     A: () => x
 });
 var i = t(627968),
-    l = t(64700),
-    a = t(397927),
+    a = t(64700),
+    l = t(397927),
     s = t(163126),
     r = t(688810),
     d = t(183555),
@@ -29,14 +29,14 @@ function x(e) {
         context: f,
         trackUserProfileAction: b
     } = (0, d.NJ)(), h = (0, s.A)();
-    return l.useEffect(() => {
+    return a.useEffect(() => {
         (0, c.A)(n.id, h)
-    }, [n.id, h]), (0, i.jsx)(a.IpV, {
+    }, [n.id, h]), (0, i.jsx)(l.IpV, {
         className: p.DK,
         fade: !0,
         children: null == m ? (0, i.jsx)("div", {
             className: p.Ie,
-            children: (0, i.jsx)(a.y$y, {})
+            children: (0, i.jsx)(l.y$y, {})
         }) : 0 === m.length ? (0, i.jsxs)("div", {
             className: p.Ie,
             children: [(0, i.jsx)("div", {
@@ -48,19 +48,19 @@ function x(e) {
         }) : m.map(e => {
             let {
                 key: n,
-                user: l,
-                status: a
+                user: a,
+                status: l
             } = e;
             return (0, i.jsx)(A.A, {
-                user: l,
-                status: a,
+                user: a,
+                status: l,
                 guildId: t,
                 channelId: x,
                 onSelect: () => {
                     var e;
                     g?.(), b({
                         action: "PRESS_MUTUAL_FRIEND"
-                    }), e = l.id, (0, u.openUserProfileModal)({
+                    }), e = a.id, (0, u.openUserProfileModal)({
                         ...f,
                         userId: e,
                         sourceAnalyticsLocations: I

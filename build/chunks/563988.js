@@ -1,6 +1,6 @@
 /** chunk id: 563988 params = (module,exports,require) **/
 n.d(t, {
-    R: () => c
+    R: () => o
 });
 var a = n(627968),
     l = n(64700),
@@ -8,20 +8,20 @@ var a = n(627968),
     r = n(183802),
     s = n(244459);
 
-function c(e) {
+function o(e) {
     let {
         skuIds: t,
         analyticsLocations: n,
-        onCardClick: c
-    } = e, o = l.useMemo(() => {
-        if (null != c) return (e, t) => {
+        onCardClick: o
+    } = e, c = l.useMemo(() => {
+        if (null != o) return (e, t) => {
             let {
                 skuId: n,
                 applicationId: a
             } = t;
-            e.preventDefault(), c(n, a)
+            e.preventDefault(), o(n, a)
         }
-    }, [c]);
+    }, [o]);
     return null == t || 0 === t.length ? null : (0, a.jsx)(i.A, {
         gap: "md",
         children: t.map((e, t) => (0, a.jsx)("div", {
@@ -31,7 +31,7 @@ function c(e) {
                 skuId: e,
                 variant: r.s.SMALL,
                 analyticsLocations: n,
-                onClick: o
+                onClick: c
             })
         }, `${e}-${t}`))
     })

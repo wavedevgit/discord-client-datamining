@@ -8,8 +8,8 @@ var a = n(627968),
     i = n(476464),
     r = n(357599),
     s = n(37948),
-    c = n(306897),
-    o = n(753756),
+    o = n(306897),
+    c = n(753756),
     d = n(301979),
     u = n(985018);
 
@@ -28,7 +28,7 @@ let x = function(e) {
     } = e, i = (0, s.A)(), {
         showsStoreLinks: r,
         storeWebsites: x
-    } = m(t), h = l.useMemo(() => x.map(c.A).filter(e => null != e), [x]);
+    } = m(t), h = l.useMemo(() => x.map(o.A).filter(e => null != e), [x]);
     if (!r) return null;
     if (1 === h.length) {
         let [e] = h;
@@ -44,7 +44,7 @@ let x = function(e) {
     return (0, a.jsx)(d.u, {
         text: u.intl.string(u.t["/hMurx"]),
         "aria-label": u.intl.string(u.t.nK60cc),
-        onClick: () => (0, o.N)({
+        onClick: () => (0, c.N)({
             detectedGame: t,
             websiteButtons: h,
             trackAction: n

@@ -7,51 +7,51 @@ var a = n(627968),
     i = n(793574),
     r = n(979286),
     s = n(674658),
-    c = n(751304),
-    o = n(561769),
+    o = n(751304),
+    c = n(561769),
     d = n(951707),
     u = n(409626),
     m = n(84904),
     x = n(954506),
     h = n(758836),
-    g = n(985018),
-    f = n(536083);
-let _ = l.createContext({
+    f = n(985018),
+    p = n(536083);
+let g = l.createContext({
         closeModal: () => {},
         trackAction: () => {}
     }),
-    p = e => {
+    _ = e => {
         let {
             skuId: t,
             aspectRatio: n
         } = e, {
             product: d
-        } = (0, s.q)(t, !0), m = l.useContext(o.v3), {
+        } = (0, s.q)(t, !0), m = l.useContext(c.v3), {
             closeModal: x,
-            trackAction: g
-        } = l.useContext(_), p = l.useCallback(() => {
-            g(u.Ws.DiscordCollectiblesShopItem), x(), (0, r.Cz)({
+            trackAction: f
+        } = l.useContext(g), _ = l.useCallback(() => {
+            f(u.Ws.DiscordCollectiblesShopItem), x(), (0, r.Cz)({
                 analyticsLocations: [i.A.GAME_PROFILE],
                 analyticsSource: i.A.GAME_PROFILE,
                 initialProductSkuId: t,
                 tab: h.G2.CATALOG
             })
-        }, [g, x, t]);
+        }, [f, x, t]);
         if (null == d) return null;
         let {
             flattenProductVariants: v,
             ...A
         } = m;
-        return (0, a.jsx)(o.v3.Provider, {
+        return (0, a.jsx)(c.v3.Provider, {
             value: {
                 flattenProductVariants: v ?? !0,
                 ...A
             },
-            children: (0, a.jsx)(c.A, {
+            children: (0, a.jsx)(o.A, {
                 skuId: t,
                 aspectRatio: n,
-                cardClassName: f.N,
-                onClickCard: p,
+                cardClassName: p.N,
+                onClickCard: _,
                 hideWishlistButton: !0,
                 hidePrice: !0,
                 hidePrimaryCTA: !0,
@@ -65,7 +65,7 @@ function v(e) {
         detectedGame: t,
         closeModal: n,
         trackAction: s
-    } = e, c = t.shopCollectionIds?.[0], o = (0, m.j)(c), f = l.useCallback(() => {
+    } = e, o = t.shopCollectionIds?.[0], c = (0, m.j)(o), p = l.useCallback(() => {
         s(u.Ws.DiscordCollectiblesShop), n(), (0, r.Cz)({
             analyticsLocations: [i.A.GAME_PROFILE],
             analyticsSource: i.A.GAME_PROFILE,
@@ -75,14 +75,14 @@ function v(e) {
         closeModal: n,
         trackAction: s
     }), [n, s]);
-    return 0 === o.length ? null : (0, a.jsx)(_.Provider, {
+    return 0 === c.length ? null : (0, a.jsx)(g.Provider, {
         value: v,
         children: (0, a.jsx)(x.A, {
-            title: g.intl.string(g.t["5DYPT8"]),
-            onClickViewAll: f,
+            title: f.intl.string(f.t["5DYPT8"]),
+            onClickViewAll: p,
             children: (0, a.jsx)(d.A, {
                 gap: "md",
-                children: o.map(e => (0, a.jsx)(p, {
+                children: c.map(e => (0, a.jsx)(_, {
                     skuId: e
                 }, e))
             })

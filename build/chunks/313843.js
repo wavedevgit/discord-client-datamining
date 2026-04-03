@@ -1,22 +1,22 @@
 /** chunk id: 313843 params = (module,exports,require) **/
 n.d(t, {
     A: () => v,
-    Q: () => p
+    Q: () => _
 });
 var a = n(627968),
     l = n(64700),
     i = n(503698),
     r = n.n(i),
     s = n(158954),
-    c = n(541830),
-    o = n(240248),
+    o = n(541830),
+    c = n(240248),
     d = n(459746),
     u = n(503364),
     m = n(305080),
     x = n(985018),
     h = n(605408);
 
-function g(e) {
+function f(e) {
     let {
         game: t
     } = e, n = t.supplementalData, [i] = l.useState(() => Math.random()), r = l.useMemo(() => {
@@ -35,7 +35,7 @@ function g(e) {
         }
         return ""
     }, [n, i]);
-    return (0, o.uJ)(r) ? null : (0, a.jsx)("div", {
+    return (0, c.uJ)(r) ? null : (0, a.jsx)("div", {
         className: h.y1,
         style: {
             backgroundImage: `url("${r}")`
@@ -43,17 +43,17 @@ function g(e) {
     })
 }
 
-function f(e) {
+function p(e) {
     let {
         game: t
-    } = e, n = t.supplementalData, l = (n?.genres ?? t.genres ?? []).map(c.du).join(", ");
-    return (0, o.uJ)(l) ? null : (0, a.jsx)(s.EYj, {
+    } = e, n = t.supplementalData, l = (n?.genres ?? t.genres ?? []).map(o.du).join(", ");
+    return (0, c.uJ)(l) ? null : (0, a.jsx)(s.EYj, {
         variant: "text-md/normal",
         color: "text-muted",
         children: l
     })
 }
-let _ = e => {
+let g = e => {
     let {
         rank: t
     } = e;
@@ -73,7 +73,7 @@ let _ = e => {
     })
 };
 
-function p(e) {
+function _(e) {
     let {
         game: t,
         application: n,
@@ -94,13 +94,13 @@ let v = function(e) {
         game: t,
         application: n,
         onClose: i,
-        trackAction: c,
-        onScrollStateChange: o
+        trackAction: o,
+        onScrollStateChange: c
     } = e, {
         isTwoColumn: x
-    } = (0, m.c)(), p = l.useRef(null), v = l.useRef(null), [A, j] = l.useState(!1);
+    } = (0, m.c)(), _ = l.useRef(null), v = l.useRef(null), [A, j] = l.useState(!1);
     l.useEffect(() => {
-        let e = p.current;
+        let e = _.current;
         if (null == e) return;
         let t = e.parentElement;
         for (; null != t;) {
@@ -125,16 +125,16 @@ let v = function(e) {
             passive: !0
         }), l(), () => t.removeEventListener("scroll", l)
     }, []), l.useEffect(() => {
-        o?.(A)
-    }, [A, o]);
+        c?.(A)
+    }, [A, c]);
     let E = t.supplementalData,
-        C = E?.name ?? t.name ?? n?.name,
+        b = E?.name ?? t.name ?? n?.name,
         I = n.getIconURL(80);
     return (0, a.jsxs)(a.Fragment, {
-        children: [(0, a.jsx)(g, {
+        children: [(0, a.jsx)(f, {
             game: t
         }), (0, a.jsxs)("div", {
-            ref: p,
+            ref: _,
             className: r()(h.f3, A && h.XP),
             children: [(0, a.jsx)("div", {
                 className: h.OC
@@ -150,16 +150,16 @@ let v = function(e) {
                     children: [(0, a.jsx)(s.DZT, {
                         variant: "heading-md/semibold",
                         lineClamp: 1,
-                        children: C
-                    }), null != t.l30Rank && (0, a.jsx)(_, {
+                        children: b
+                    }), null != t.l30Rank && (0, a.jsx)(g, {
                         rank: t.l30Rank
                     })]
                 })]
             }), (0, a.jsx)(u.N, {
-                applicationId: n.id,
+                game: t,
                 onClose: i,
                 className: h.HK,
-                trackAction: c
+                trackAction: o
             })]
         }), (0, a.jsxs)("div", {
             className: r()(h.ap, A && h.XP),
@@ -173,13 +173,13 @@ let v = function(e) {
                 })
             }), (0, a.jsxs)("div", {
                 className: h.lu,
-                children: [null != t.l30Rank && (0, a.jsx)(_, {
+                children: [null != t.l30Rank && (0, a.jsx)(g, {
                     rank: t.l30Rank
                 }), (0, a.jsx)(s.DZT, {
                     ref: v,
                     variant: "heading-xxl/semibold",
-                    children: C
-                }), (0, a.jsx)(f, {
+                    children: b
+                }), (0, a.jsx)(p, {
                     game: t
                 })]
             })]

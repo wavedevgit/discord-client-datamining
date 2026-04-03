@@ -4,8 +4,8 @@ t.d(n, {
 });
 var i = t(627968);
 t(64700);
-var l = t(397927),
-    a = t(630054),
+var a = t(397927),
+    l = t(630054),
     s = t(793574),
     r = t(688810),
     d = t(915089),
@@ -22,8 +22,8 @@ var l = t(397927),
     f = t(810396),
     b = t(570314),
     h = t(490752),
-    j = t(571077),
-    v = t(587168),
+    v = t(571077),
+    j = t(587168),
     C = t(982985),
     N = t(159218),
     y = t(240783),
@@ -39,32 +39,32 @@ function k(e) {
         user: n,
         currentUser: t,
         guildId: k,
-        originGuildId: B,
-        channelId: M,
+        originGuildId: M,
+        channelId: B,
         messageId: R,
         roleId: G,
         sessionId: D,
         initialTabSection: U,
         initialScrollTarget: V,
         transitionState: F,
-        onClose: W,
-        sourceAnalyticsLocations: w = []
-    } = e, H = k === L.ME ? void 0 : k, z = (0, u.Ay)(n.id, H), Y = o.Ay.getName(H, M, n), X = (0, d.GV)(), {
+        onClose: w,
+        sourceAnalyticsLocations: W = []
+    } = e, H = k === L.ME ? void 0 : k, z = (0, u.Ay)(n.id, H), Y = o.Ay.getName(H, B, n), X = (0, d.GV)(), {
         analyticsLocations: K
-    } = (0, r.Ay)([...w, s.A.USER_PROFILE_MODAL]), Q = (0, c.pb)({
+    } = (0, r.Ay)([...W, s.A.USER_PROFILE_MODAL]), Q = (0, c.pb)({
         layout: "MODAL",
         userId: n.id,
         sourceSessionId: D,
         guildId: H,
-        channelId: M,
+        channelId: B,
         messageId: R,
         roleId: G
     }), J = (0, E.A)(n), q = (0, A.A)({
         user: n,
-        guildId: B,
-        channelId: M,
+        guildId: M,
+        channelId: B,
         displayProfile: z,
-        onClose: W
+        onClose: w
     });
     return (0, i.jsx)(r.f5, {
         value: K,
@@ -73,16 +73,16 @@ function k(e) {
             isLoaded: z?.isLoaded,
             children: (0, i.jsx)(_.N, {
                 value: V,
-                children: (0, i.jsx)(l.EOs, {
+                children: (0, i.jsx)(a.EOs, {
                     "data-migration-pending": !0,
                     transitionState: F,
                     className: P.zr,
                     hideShadow: !0,
                     "aria-labelledby": X,
                     parentComponent: "BotUserProfileModal",
-                    children: (0, i.jsx)(l.Fmo, {
-                        component: (0, i.jsx)(l.AC4, {
-                            children: (0, i.jsx)(l.H, {
+                    children: (0, i.jsx)(a.Fmo, {
+                        component: (0, i.jsx)(a.AC4, {
+                            children: (0, i.jsx)(a.H, {
                                 id: X,
                                 children: S.intl.format(S.t.KRe1Fk, {
                                     name: Y
@@ -93,7 +93,7 @@ function k(e) {
                             user: n,
                             displayProfile: z,
                             themeType: O.d.MODAL,
-                            children: [(0, i.jsx)(v.A, {
+                            children: [(0, i.jsx)(j.A, {
                                 children: (0, i.jsx)(h.A, {
                                     user: n,
                                     guildId: H,
@@ -110,13 +110,13 @@ function k(e) {
                                         user: n,
                                         displayProfile: z,
                                         guildId: H,
-                                        channelId: M,
+                                        channelId: B,
                                         themeType: O.d.MODAL
                                     }), (0, i.jsx)(N.A, {
                                         user: n,
                                         themeType: O.d.MODAL,
-                                        hasEntered: F === l.ip4.ENTERED,
-                                        onCloseProfile: W,
+                                        hasEntered: F === a.ip4.ENTERED,
+                                        onCloseProfile: w,
                                         disableToolbar: !0
                                     }), (0, i.jsxs)("div", {
                                         className: P.Pz,
@@ -125,16 +125,16 @@ function k(e) {
                                             children: (0, i.jsx)(C.e, {
                                                 variant: "secondary",
                                                 userId: n.id,
-                                                onClose: a.A.popAll
+                                                onClose: l.A.popAll
                                             })
                                         }), (0, i.jsx)("div", {
                                             className: P.pg,
                                             children: (0, i.jsx)(C.l, {
                                                 variant: "secondary",
                                                 userId: n.id,
-                                                onClose: a.A.popAll
+                                                onClose: l.A.popAll
                                             })
-                                        }), (0, i.jsx)(j.A, {
+                                        }), (0, i.jsx)(v.A, {
                                             user: n,
                                             guildId: H
                                         }), (0, i.jsx)(b.A, {
@@ -157,7 +157,7 @@ function k(e) {
                                     tags: (0, i.jsx)(x.A, {
                                         displayProfile: z,
                                         themeType: O.d.MODAL,
-                                        onClose: W
+                                        onClose: w
                                     })
                                 }), (0, i.jsx)(y.A, {
                                     user: n,
@@ -166,7 +166,7 @@ function k(e) {
                                     guildId: H,
                                     items: J,
                                     initialSection: U ?? T.RP.BOT_INFO,
-                                    onClose: W
+                                    onClose: w
                                 })]
                             })]
                         })

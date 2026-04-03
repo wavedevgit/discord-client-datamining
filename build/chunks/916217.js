@@ -3,8 +3,8 @@ t.d(n, {
     A: () => S
 });
 var i = t(627968),
-    l = t(64700),
-    a = t(397927),
+    a = t(64700),
+    l = t(397927),
     s = t(793574),
     r = t(688810),
     d = t(351966),
@@ -21,8 +21,8 @@ var i = t(627968),
     f = t(900179),
     b = t(946356),
     h = t(810396),
-    j = t(35241),
-    v = t(587168),
+    v = t(35241),
+    j = t(587168),
     C = t(518477),
     N = t(652215),
     y = t(996988),
@@ -38,36 +38,36 @@ function S(e) {
         channelId: S,
         messageId: P,
         roleId: k,
-        sessionId: B,
-        transitionState: M,
+        sessionId: M,
+        transitionState: B,
         onClose: R,
         sourceAnalyticsLocations: G = []
     } = e, D = t === N.ME ? void 0 : t, U = (0, _.Ay)(n.id, D), V = u.Ay.getName(D, S, n), F = (0, o.GV)(), {
-        analyticsLocations: W
-    } = (0, r.Ay)([...G, s.A.USER_PROFILE_MODAL]), w = (0, A.pb)({
+        analyticsLocations: w
+    } = (0, r.Ay)([...G, s.A.USER_PROFILE_MODAL]), W = (0, A.pb)({
         layout: "MODAL",
         userId: n.id,
-        sourceSessionId: B,
+        sourceSessionId: M,
         guildId: D,
         channelId: S,
         messageId: P,
         roleId: k
-    }), H = l.useRef(null), z = (0, c.M)(H);
+    }), H = a.useRef(null), z = (0, c.M)(H);
     return (0, i.jsx)(r.f5, {
-        value: W,
+        value: w,
         children: (0, i.jsx)(A.of, {
-            value: w,
+            value: W,
             isLoaded: U?.isLoaded,
-            children: (0, i.jsxs)(a.EOs, {
+            children: (0, i.jsxs)(l.EOs, {
                 "data-migration-pending": !0,
-                transitionState: M,
+                transitionState: B,
                 className: T.zr,
                 hideShadow: !0,
                 "aria-labelledby": F,
                 parentComponent: "NonUserBotProfileModal",
-                children: [(0, i.jsx)(a.Fmo, {
-                    component: (0, i.jsx)(a.AC4, {
-                        children: (0, i.jsx)(a.H, {
+                children: [(0, i.jsx)(l.Fmo, {
+                    component: (0, i.jsx)(l.AC4, {
+                        children: (0, i.jsx)(l.H, {
                             id: F,
                             children: E.intl.format(E.t.KRe1Fk, {
                                 name: V
@@ -79,8 +79,8 @@ function S(e) {
                         displayProfile: U,
                         themeType: y.d.MODAL,
                         ref: U?.profileEffect != null ? H : void 0,
-                        children: [(0, i.jsx)(v.A, {
-                            children: (0, i.jsx)(j.A, {
+                        children: [(0, i.jsx)(j.A, {
+                            children: (0, i.jsx)(v.A, {
                                 user: n
                             })
                         }), (0, i.jsxs)("div", {
@@ -114,21 +114,21 @@ function S(e) {
                                 })
                             }), (0, i.jsxs)("div", {
                                 className: O.kL,
-                                children: [(0, i.jsx)(a.VQ0, {
+                                children: [(0, i.jsx)(l.VQ0, {
                                     className: O.$H,
                                     type: "top",
                                     selectedItem: C.RP.BOT_INFO,
                                     onItemSelect: N.tEg,
-                                    children: (0, i.jsx)(a.VQ0.Item, {
+                                    children: (0, i.jsx)(l.VQ0.Item, {
                                         className: O.YU,
                                         id: C.RP.BOT_INFO,
                                         "aria-label": E.intl.string(E.t.ZzAR2Y),
-                                        children: (0, i.jsx)(a.Text, {
+                                        children: (0, i.jsx)(l.Text, {
                                             variant: "text-sm/normal",
                                             children: E.intl.string(E.t.ZzAR2Y)
                                         })
                                     }, C.RP.BOT_INFO)
-                                }), (0, i.jsxs)(a.IpV, {
+                                }), (0, i.jsxs)(l.IpV, {
                                     fade: !0,
                                     className: L.XG,
                                     children: [(0, i.jsx)(m.E, {

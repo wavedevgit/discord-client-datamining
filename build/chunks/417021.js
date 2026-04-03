@@ -1,10 +1,10 @@
 /** chunk id: 417021 params = (module,exports,require) **/
 t.d(n, {
-    A: () => j
+    A: () => v
 });
 var i = t(627968),
-    l = t(311907),
-    a = t(397927),
+    a = t(311907),
+    l = t(397927),
     s = t(793574),
     r = t(688810),
     d = t(632738),
@@ -22,44 +22,44 @@ var i = t(627968),
     b = t(985018),
     h = t(255412);
 
-function j(e) {
+function v(e) {
     let {
         user: n,
         guildId: t,
-        channelId: j,
-        messageId: v,
+        channelId: v,
+        messageId: j,
         roleId: C,
         transitionState: N,
         onHide: y,
         sourceAnalyticsLocations: E = []
-    } = e, T = t === I.ME ? void 0 : t, L = (0, l.bG)([o.A], () => o.A.isBlocked(n.id)), {
+    } = e, T = t === I.ME ? void 0 : t, L = (0, a.bG)([o.A], () => o.A.isBlocked(n.id)), {
         analyticsLocations: O
     } = (0, r.Ay)([...E, L ? s.A.BLOCKED_PROFILE_MODAL : s.A.IGNORED_PROFILE_MODAL]), S = (0, u.pb)({
         layout: "MODAL_V2",
         userId: n.id,
         guildId: T,
-        channelId: j,
-        messageId: v,
+        channelId: v,
+        messageId: j,
         roleId: C
     }), P = [{
-        icon: a.yr3,
+        icon: l.yr3,
         description: b.intl.string(b.t.kcuWva)
     }, {
-        icon: a.yr3,
+        icon: l.yr3,
         description: b.intl.string(L ? b.t.QxrDY1 : b.t.W6fjkS)
-    }], k = (0, _.Ay)(n.id, T), B = c.Ay.getName(k?.guildId, j, n), M = b.intl.formatToPlainString(b.t.KRe1Fk, {
-        name: B
+    }], k = (0, _.Ay)(n.id, T), M = c.Ay.getName(k?.guildId, v, n), B = b.intl.formatToPlainString(b.t.KRe1Fk, {
+        name: M
     });
     return (0, i.jsx)(r.f5, {
         value: O,
         children: (0, i.jsx)(u.of, {
             value: S,
             isLoaded: k?.isLoaded,
-            children: (0, i.jsx)(a.EOs, {
+            children: (0, i.jsx)(l.EOs, {
                 "data-migration-pending": !0,
                 transitionState: N,
                 className: h.zr,
-                "aria-label": M,
+                "aria-label": B,
                 parentComponent: "RestrictedUserProfileModalV2",
                 children: (0, i.jsxs)(x.A, {
                     user: n,
@@ -74,15 +74,15 @@ function j(e) {
                             guildId: T
                         }), (0, i.jsxs)("div", {
                             className: h.FS,
-                            children: [(0, i.jsx)(a.Heading, {
+                            children: [(0, i.jsx)(l.Heading, {
                                 variant: "heading-xl/bold",
                                 color: "text-default",
                                 children: b.intl.string(b.t.b33pLD)
-                            }), (0, i.jsx)(a.Text, {
+                            }), (0, i.jsx)(l.Text, {
                                 variant: "text-md/medium",
                                 color: "text-default",
                                 children: b.intl.format(L ? b.t.T7QiLn : b.t.MnEowy, {
-                                    username: B
+                                    username: M
                                 })
                             })]
                         }), (0, i.jsx)("div", {
@@ -90,16 +90,16 @@ function j(e) {
                             children: P.map((e, n) => {
                                 let {
                                     icon: t,
-                                    description: l
+                                    description: a
                                 } = e;
                                 return (0, i.jsx)(d.PQ, {
                                     icon: t,
-                                    title: l,
+                                    title: a,
                                     titleVariant: "text-md/normal",
-                                    color: a.LU0.colors.TEXT_DEFAULT.css
+                                    color: l.LU0.colors.TEXT_DEFAULT.css
                                 }, n)
                             })
-                        }), (0, i.jsxs)(a.BJc, {
+                        }), (0, i.jsxs)(l.BJc, {
                             align: "center",
                             children: [(0, i.jsx)(m.A, {
                                 size: "md",
