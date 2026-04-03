@@ -28,12 +28,12 @@ function x(e) {
         setSelectedPlanId: _,
         priceOptions: S,
         defaultPlanId: x,
-        hasPaymentSources: T
+        hasPaymentSources: I
     } = (0, d.P5)(), {
-        isGift: I,
+        isGift: P,
         claimableRewards: h
-    } = (0, u.Pv)(), g = I && null != h && h.length > 0, A = (0, r.V)(t);
-    return (0, i.jsx)(P, {
+    } = (0, u.Pv)(), A = P && null != h && h.length > 0, g = (0, r.V)(t);
+    return (0, i.jsx)(T, {
         selectSku: e => (function(e) {
             let {
                 activeSubscription: n,
@@ -55,13 +55,13 @@ function x(e) {
                     isGift: r,
                     skuId: t
                 }),
-                P = (0, p.vT)({
+                T = (0, p.vT)({
                     isTrial: x,
                     isGift: r,
                     selectedSkuId: t,
                     startedPaymentFlowWithPaymentSources: u
                 });
-            _ !== c.pn.WHAT_YOU_LOSE && P && (_ = c.pn.REVIEW, a((0, p.xT)(t, n, d))), l(_, {
+            _ !== c.pn.WHAT_YOU_LOSE && T && (_ = c.pn.REVIEW, a((0, p.xT)(t, n, d))), l(_, {
                 analyticsDataOverride: {
                     sku_id: t
                 }
@@ -71,8 +71,8 @@ function x(e) {
             newSkuId: e,
             setSelectedSkuId: l,
             handleStepChange: n,
-            isGift: I,
-            userTrialOffer: A,
+            isGift: P,
+            userTrialOffer: g,
             startedPaymentFlowWithPaymentSources: a.current,
             setSelectedPlanId: _,
             defaultPlanId: x
@@ -92,16 +92,16 @@ function x(e) {
         })({
             setSelectedPlanId: _,
             handleStepChange: n,
-            hasPaymentSources: T,
+            hasPaymentSources: I,
             setSelectedSkuId: l
         }),
-        isGift: I,
+        isGift: P,
         priceOptions: S,
-        showPromotionalGiftBanner: g
+        showPromotionalGiftBanner: A
     })
 }
 
-function P(e) {
+function T(e) {
     let {
         selectSku: n,
         isGift: t,

@@ -20,13 +20,13 @@ let x = e => {
     let n, t, {
             skuId: r,
             user: x,
-            claimed: P,
-            onSelect: T,
-            selectedSkuId: I
+            claimed: T,
+            onSelect: I,
+            selectedSkuId: P
         } = e,
-        [h, g] = l.useState(null),
-        A = l.useCallback(e => {
-            g(e)
+        [h, A] = l.useState(null),
+        g = l.useCallback(e => {
+            A(e)
         }, []),
         f = l.useMemo(() => ({
             current: h
@@ -34,7 +34,7 @@ let x = e => {
         {
             isHoveringOrFocusing: j
         } = (0, u.A)(f),
-        R = !P && j,
+        R = !T && j,
         {
             product: M
         } = (0, d.q)(r);
@@ -52,15 +52,15 @@ let x = e => {
         size: "small"
     })), (0, i.jsx)(o.vN3, {
         children: (0, i.jsxs)(o.sqX, {
-            ref: A,
+            ref: g,
             "aria-label": M.name ?? "",
             onClick: () => {
-                null == r || null == T || P || T(r)
+                null == r || null == I || T || I(r)
             },
             className: s()(S._x, {
-                [S.Vp]: !P,
+                [S.Vp]: !T,
                 [S.mr]: R,
-                [S.md]: I === r
+                [S.md]: P === r
             }),
             children: [(0, i.jsx)("div", {
                 className: s()(S.VH, {
@@ -70,10 +70,10 @@ let x = e => {
                 children: null != n ? (0, i.jsxs)(i.Fragment, {
                     children: [(0, i.jsx)("div", {
                         className: s()(S.i1, {
-                            [S.Sf]: P
+                            [S.Sf]: T
                         }),
                         children: n
-                    }), P && (0, i.jsx)(o.rOg, {
+                    }), T && (0, i.jsx)(o.rOg, {
                         size: "custom",
                         width: 48,
                         height: 48,
@@ -88,7 +88,7 @@ let x = e => {
                     children: M.name
                 }), (0, i.jsx)(o.Text, {
                     variant: "text-sm/normal",
-                    children: P ? _.intl.string(_.t["6cfuDj"]) : _.intl.string(_.t.QQsaCc)
+                    children: T ? _.intl.string(_.t["6cfuDj"]) : _.intl.string(_.t.QQsaCc)
                 })]
             })]
         })

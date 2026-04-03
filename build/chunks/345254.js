@@ -4,23 +4,23 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var l = n(397927),
-    s = n(954571),
+var s = n(397927),
+    l = n(954571),
     r = n(957565),
     a = n(652215),
     o = n(985018);
 
 function c(e, t) {
-    return r.p5 ? (0, i.jsx)(l.Drp, {
+    return r.p5 ? (0, i.jsx)(s.Drp, {
         id: "copy-link",
         label: o.intl.string(o.t.Xrt5Po),
         leadingAccessory: {
             type: "icon",
-            icon: l.qYV
+            icon: s.qYV
         },
-        icon: l.qYV,
+        icon: s.qYV,
         action: () => {
-            (0, r.C)(`${location.protocol}//${location.host}${a.BVt.CHANNEL(t.guild_id,t.id,e.id)}`), s.default.track(a.HAw.MESSAGE_LINK_COPIED, {
+            (0, r.C)(`${location.protocol}//${location.host}${a.BVt.CHANNEL(t.guild_id,t.id,e.id)}`), l.default.track(a.HAw.MESSAGE_LINK_COPIED, {
                 message_id: e.id,
                 channel: e.channel_id
             })

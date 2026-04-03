@@ -1,6 +1,6 @@
 /** chunk id: 877156 params = (module,exports,require) **/
 t.d(n, {
-    A: () => g
+    A: () => A
 });
 var i = t(627968),
     l = t(64700),
@@ -17,16 +17,16 @@ var i = t(627968),
     _ = t(837015),
     S = t(61750),
     x = t(287809),
-    P = t(482132),
-    T = t(758836),
-    I = t(985018),
+    T = t(482132),
+    I = t(758836),
+    P = t(985018),
     h = t(527667);
 
-function g(e) {
+function A(e) {
     let {
         rewardSkuId: n,
         onClose: t
-    } = e, g = (0, r.bG)([x.default], () => x.default.getCurrentUser()), A = (0, r.bG)([o.A], () => o.A.useReducedMotion), {
+    } = e, A = (0, r.bG)([x.default], () => x.default.getCurrentUser()), g = (0, r.bG)([o.A], () => o.A.useReducedMotion), {
         analyticsLocations: f
     } = (0, u.Ay)(), j = a._3J.SIZE_32, {
         product: R,
@@ -55,14 +55,14 @@ function g(e) {
             legacyAssetId: O.asset,
             skuId: O.skuId,
             size: j,
-            canAnimate: !A
+            canAnimate: !g
         })
     } : {
         isNameplateReward: !1,
         nameplateData: null,
         rewardAvatarDecorationSrc: null
-    }, [O, j, A]);
-    return (0, i.jsx)(P.UX, {
+    }, [O, j, g]);
+    return (0, i.jsx)(T.UX, {
         children: (0, i.jsx)(s.jlY, {
             children: (0, i.jsxs)("div", {
                 className: h.W,
@@ -71,7 +71,7 @@ function g(e) {
                     onMouseEnter: () => N(!0),
                     onMouseLeave: () => N(!1),
                     children: (0, i.jsx)(m.a, {
-                        user: g,
+                        user: A,
                         nameplate: null,
                         nameplateData: v,
                         showPlaceholderUser: !0,
@@ -79,20 +79,20 @@ function g(e) {
                         isHighlighted: C
                     })
                 }) : (0, i.jsx)(a.JsQ, {
-                    "aria-label": g?.username,
+                    "aria-label": A?.username,
                     size: j,
-                    src: g?.getAvatarURL(void 0, (0, a.FT9)(j), !A),
+                    src: A?.getAvatarURL(void 0, (0, a.FT9)(j), !g),
                     avatarDecoration: b
                 }), (0, i.jsx)(s.$nd, {
                     variant: "primary",
-                    text: I.intl.string(I.t.kMYVwv),
+                    text: P.intl.string(P.t.kMYVwv),
                     loading: M,
                     onClick: () => {
                         null != R && (t(), (0, S.A)({
                             product: R,
                             shouldShowPromotionalExperience: !0,
                             analyticsLocations: f,
-                            purchaseType: T.gs.PROMOTIONAL
+                            purchaseType: I.gs.PROMOTIONAL
                         }))
                     }
                 })]

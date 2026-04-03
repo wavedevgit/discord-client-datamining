@@ -172,7 +172,7 @@ let b = [{
                         onClose: c,
                         onComplete: h,
                         paymentContextOverrides: {
-                            selectedPlan: T,
+                            selectedPlanId: E,
                             setSelectedPlanId: C
                         }
                     }), (0, a.jsx)(y, {})]

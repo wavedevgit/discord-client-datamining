@@ -2,10 +2,10 @@
 e.d(n, {
     default: () => c
 });
-var l = e(627968);
+var i = e(627968);
 e(64700);
-var i = e(397927),
-    a = e(442433),
+var a = e(397927),
+    l = e(442433),
     r = e(723702),
     o = e(777933),
     s = e(985018);
@@ -16,13 +16,13 @@ function c(t) {
         textContent: e,
         onSelect: c
     } = t, d = (0, o.A)(n, e);
-    return r.isPlatformEmbedded && null != d ? (0, l.jsx)(i.W1t, {
+    return r.isPlatformEmbedded && null != d ? (0, i.jsx)(a.W1t, {
         "data-menu-migrated-auto": !0,
         navId: "image-context",
-        onClose: a.Z_,
+        onClose: l.Z_,
         "aria-label": s.intl.string(s.t.Zow2V5),
         onSelect: c,
-        children: (0, l.jsx)(i.rXV, {
+        children: (0, i.jsx)(a.rXV, {
             children: d
         })
     }) : null

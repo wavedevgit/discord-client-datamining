@@ -26,17 +26,17 @@ function E(e) {
         startedPaymentFlowWithPaymentSourcesRef: S
     } = (0, d.P5)(), {
         isGift: x
-    } = (0, u.Pv)(), P = null != l ? (0, o.EL)(l) : null, T = null != P ? (0, o.RH)(P.planId) : null, I = null != P ? (0, o.m6)(P.planId) : null, h = (0, p.vT)({
+    } = (0, u.Pv)(), T = null != l ? (0, o.EL)(l) : null, I = null != T ? (0, o.RH)(T.planId) : null, P = null != T ? (0, o.m6)(T.planId) : null, h = (0, p.vT)({
         isTrial: !1,
         isGift: x,
         selectedSkuId: E,
         startedPaymentFlowWithPaymentSources: S.current
     });
-    return r()(null != I, "Expected premium type"), (0, i.jsx)(a.A, {
-        premiumType: I,
+    return r()(null != P, "Expected premium type"), (0, i.jsx)(a.A, {
+        premiumType: P,
         titleText: m.intl.string(m.t["7VcWW0"]),
         subtitleText: m.intl.format(m.t.Qk34Ik, {
-            subscriptionName: T
+            subscriptionName: I
         }),
         footer: (0, i.jsxs)(s.ButtonGroup, {
             direction: "horizontal-reverse",

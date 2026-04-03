@@ -1,36 +1,38 @@
 /** chunk id: 777933 params = (module,exports,require) **/
 n.d(e, {
     A: () => A
-}), n(321073);
+}), n(323874), n(14289), n(35956), n(321073);
 var a = n(627968);
 n(64700);
 var i = n(397927),
     l = n(803316),
-    o = n(207133),
-    r = n(155078),
+    r = n(207133),
+    o = n(155078),
     s = n(954571),
     c = n(307600),
     d = n(723702),
     p = n(837921),
     u = n(179581),
-    E = n(652215),
-    T = n(985018);
-let y = /^(tel|sms|mailto):([^?;]+)/;
+    g = n(652215),
+    E = n(985018);
+let h = /^(tel|sms|mailto):([^?;]+)/,
+    y = /\.(png|jpe?g|webp|avif|bmp|svg)(\?|$)/i,
+    T = /\.(png|jpe?g|webp|avif|bmp|svg|gif|mp4|webm|mov)(\?|$)/i;
 
 function A(t, e, n, A) {
-    let g = (0, o.A)(n?.getChannelId());
-    if (!d.isPlatformEmbedded || null == t || "" === t || g || A?.shouldHideMediaOptions === !0 || !(0, l.fW)(t)) return null;
-    let h = (0, r.E)(t),
-        _ = t => {
-            s.default.track(E.HAw.CONTEXT_MENU_LINK_COPIED, {
-                hostname: h,
+    let m = (0, r.A)(n?.getChannelId());
+    if (!d.isPlatformEmbedded || null == t || "" === t || m || A?.shouldHideMediaOptions === !0 || !(0, l.fW)(t)) return null;
+    let _ = (0, o.E)(t),
+        f = t => {
+            s.default.track(g.HAw.CONTEXT_MENU_LINK_COPIED, {
+                hostname: _,
                 ...(0, u.N)()
-            }), p.Ay.copy(t), (0, i.showToast)((0, i.createToast)(T.intl.string(T.t["L/PwZf"]), i.ToastType.SUCCESS))
+            }), p.Ay.copy(t), (0, i.showToast)((0, i.createToast)(E.intl.string(E.t["L/PwZf"]), i.ToastType.SUCCESS))
         },
-        C = (n, a) => {
+        v = (n, a) => {
             let i = !0 === a ? t.replace("tel:", "sms:") : t;
-            s.default.track(E.HAw.CONTEXT_MENU_LINK_OPENED, {
-                hostname: h,
+            s.default.track(g.HAw.CONTEXT_MENU_LINK_OPENED, {
+                hostname: _,
                 ...(0, u.N)()
             }), (0, c.h)({
                 href: i,
@@ -38,35 +40,52 @@ function A(t, e, n, A) {
                 shouldConfirm: !0
             }, n)
         },
-        f = [],
-        N = t.match(y);
+        C = [],
+        N = t.match(h);
     if (null != N) {
-        let t = T.intl.string("mailto" === N[1] ? T.t.ZYLVKo : T.t["3zozoR"]);
-        f.push((0, a.jsx)(i.Drp, {
+        let t = E.intl.string("mailto" === N[1] ? E.t.ZYLVKo : E.t["3zozoR"]);
+        C.push((0, a.jsx)(i.Drp, {
             id: "copy-native-contact",
             label: t,
             action: () => {
-                _(N[2])
+                f(N[2])
             }
-        }, "copy-native-contact")), "tel" === N[1] && f.push((0, a.jsx)(i.Drp, {
+        }, "copy-native-contact")), "tel" === N[1] && C.push((0, a.jsx)(i.Drp, {
             id: "native-send-sms",
-            label: T.intl.string(T.t["+wbjMW"]),
-            action: t => C(t, !0)
+            label: E.intl.string(E.t["+wbjMW"]),
+            action: t => v(t, !0)
         }, "native-send-sms"))
     }
+    let w = function(t) {
+            try {
+                let e = new URL(t);
+                return "cdn.discordapp.com" === e.hostname && y.test(e.pathname)
+            } catch {
+                return !1
+            }
+        }(t),
+        I = !w && function(t) {
+            try {
+                return T.test(new URL(t).pathname)
+            } catch {
+                return !1
+            }
+        }(t),
+        b = w ? E.t["8xHmxo"] : I ? E.t["92CPQ+"] : E.t.WqhZss,
+        x = w ? E.t.w8ldGK : I ? E.t.q5FbIB : E.t.wuRE8M;
     return [(0, a.jsx)(i.Drp, {
         id: "copy-native-link",
-        label: T.intl.string(T.t.WqhZss),
+        label: E.intl.string(b),
         leadingAccessory: {
             type: "icon",
             icon: i.qYV
         },
         action: () => {
-            _(t)
+            f(t)
         }
-    }, "copy-native-link"), ...f, (0, a.jsx)(i.Drp, {
+    }, "copy-native-link"), ...C, (0, a.jsx)(i.Drp, {
         id: "open-native-link",
-        label: T.intl.string(T.t.wuRE8M),
+        label: E.intl.string(x),
         leadingAccessory: {
             type: "icon",
             icon: i.WxK
@@ -75,6 +94,6 @@ function A(t, e, n, A) {
             type: "icon",
             icon: i.I9m
         },
-        action: t => C(t)
+        action: t => v(t)
     }, "open-native-link")]
 }
