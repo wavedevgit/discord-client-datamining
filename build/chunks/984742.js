@@ -1,6 +1,6 @@
 /** chunk id: 984742 params = (module,exports,require) **/
 n.d(t, {
-    A: () => A
+    A: () => j
 }), n(938796);
 var i = n(627968),
     l = n(64700),
@@ -15,75 +15,76 @@ var i = n(627968),
     p = n(19311),
     f = n(534479),
     x = n(482132),
-    g = n(921925),
-    h = n(376747),
-    b = n(985018);
+    g = n(987616),
+    h = n(921925),
+    b = n(376747),
+    A = n(985018);
 
-function A(e) {
+function j(e) {
     let t, n, {
-            showBenefits: A,
-            handleClose: j,
-            onSubscriptionConfirmation: S
+            showBenefits: j,
+            handleClose: S,
+            onSubscriptionConfirmation: v
         } = e,
         {
-            updatedSubscription: v,
-            readySlideId: C,
-            selectedSku: _,
+            updatedSubscription: C,
+            readySlideId: _,
             selectedStoreListing: y,
             application: N
         } = (0, u.P5)(),
-        E = (0, r.A)(h.Y),
+        E = (0, g.S3)(),
+        T = (0, r.A)(b.Y),
         {
-            createMultipleConfettiAt: T
+            createMultipleConfettiAt: P
         } = l.useContext(s.x),
-        P = _?.name ?? "",
-        I = () => {
-            j(), S?.()
+        I = E?.name ?? "",
+        k = () => {
+            S(), v?.()
         },
-        k = C === m.pn.CONFIRM,
-        w = (0, o.bg)(_?.flags ?? 0),
-        R = null != y && y.benefits.length > 0 ? b.intl.formatToPlainString(b.t["+IQQVM"], {
+        w = _ === m.pn.CONFIRM,
+        R = (0, o.bg)(E?.flags ?? 0),
+        D = null != y && y.benefits.length > 0 ? A.intl.formatToPlainString(A.t["+IQQVM"], {
             benefitCount: y.benefits.length
         }) : null;
-    return A ? E ? t = (0, i.jsx)(c.E, {
-        title: b.intl.format(b.t.ea6tZr, {
-            tierName: P
+    return j ? T ? t = (0, i.jsx)(c.E, {
+        title: A.intl.format(A.t.ea6tZr, {
+            tierName: I
         }),
-        subtitle: null != y && y.benefits.length > 0 ? b.intl.formatToPlainString(b.t.HNepft, {
-            benefits: R
+        subtitle: null != y && y.benefits.length > 0 ? A.intl.formatToPlainString(A.t.HNepft, {
+            benefits: D
         }) : null,
-        onConfirm: I,
-        confirmCta: b.intl.string(b.t.nlkywz)
+        onConfirm: k,
+        confirmCta: A.intl.string(A.t.nlkywz)
     }) : (t = null != y && null != N ? (0, i.jsx)(d.Uf, {
         icon: y.thumbnail,
         storeListingBenefits: y.benefits,
         application: N,
-        title: b.intl.format(b.t["Q+qktS"], {
-            tier: P
+        title: A.intl.format(A.t["Q+qktS"], {
+            tier: I
         }),
-        subtitle: b.intl.string(b.t.ECKxXU),
-        description: w ? b.intl.format(b.t["MAtQk/"], {
+        subtitle: A.intl.string(A.t.ECKxXU),
+        description: R ? A.intl.format(A.t["MAtQk/"], {
             applicationName: N?.name
-        }) : b.intl.format(b.t.vHkMF4, {
-            tier: P
+        }) : A.intl.format(A.t.vHkMF4, {
+            tier: I
         })
     }) : (0, i.jsx)(f.A, {}), n = (0, i.jsx)(p.Ay, {
-        onPrimary: I,
+        onPrimary: k,
         primaryCTA: p.ti.CONTINUE,
-        primaryText: b.intl.string(b.t["JtWl+a"])
-    })) : t = E ? (0, i.jsx)(c.v, {
-        tierName: P,
-        onConfirm: I,
-        subscription: v
+        primaryText: A.intl.string(A.t["JtWl+a"])
+    })) : t = T ? (0, i.jsx)(c.v, {
+        tierName: I,
+        onConfirm: k,
+        subscription: C
     }) : (0, i.jsx)(d.XG, {
-        tierName: P,
-        onConfirm: I,
-        subscription: v
+        tierName: I,
+        onConfirm: k,
+        subscription: C
     }), l.useEffect(() => {
-        a.A.useReducedMotion && k && T(window.innerWidth / 2, window.innerHeight / 2)
-    }, [T, k]), (0, i.jsxs)(i.Fragment, {
+        a.A.useReducedMotion && w && P(window.innerWidth / 2, window.innerHeight / 2)
+    }, [P, w]), (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsxs)(x.dZ, {
-            children: [(0, i.jsx)(g.A, {}), t]
+            children: [(0, i.jsx)(h.A, {}), t]
         }), null != n && (0, i.jsx)(x.UX, {
             children: n
         })]

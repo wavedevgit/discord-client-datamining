@@ -136,16 +136,7 @@ function ea(e) {
             children: (0, a.jsxs)(c.lGe, {
                 ref: ec,
                 "aria-labelledby": eP,
-                className: l()(et.jC, ei, {
-                    [et.lO]: null != er,
-                    [et.IW]: er?.layers.find(e => {
-                        let {
-                            type: t,
-                            anchor: n
-                        } = e;
-                        return "staple" === t && "bottom" === n
-                    }) !== void 0
-                }),
+                className: l()(et.jC, el?.profileFrame != null ? et.lO : void 0, ei),
                 "data-layer": "base",
                 children: [(0, a.jsx)(o.AC4, {
                     children: (0, a.jsx)(o.H, {
@@ -314,7 +305,8 @@ function ea(e) {
                                 })]
                             })]
                         }), null != er && (0, a.jsx)(f.A, {
-                            frame: er
+                            frame: er,
+                            layout: "ACCOUNT_POPOUT"
                         }), el?.profileEffect != null && !eS.current && (0, a.jsx)(p.A, {
                             skuId: el.profileEffect.skuId,
                             isHovering: eh

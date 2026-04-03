@@ -10,21 +10,21 @@ var i = n(158954),
     a = n(272053),
     s = n(215566),
     o = n(985018),
-    c = n(888203);
+    u = n(888203);
 
-function u(e) {
+function c(e) {
     let {
         node: t,
         isLast: n
-    } = e, l = t.useTitle(), o = t.usePersistentBadge?.(), u = (0, r.jsxs)(i.BJc, {
+    } = e, l = t.useTitle(), o = t.usePersistentBadge?.(), c = (0, r.jsxs)(i.BJc, {
         direction: "horizontal",
         align: "center",
         gap: "xs",
-        className: c.Ze,
+        className: u.Ze,
         children: [(0, r.jsx)(i.EYj, {
             variant: n ? "text-md/medium" : "text-md/normal",
             color: n ? "text-default" : void 0,
-            className: c.b,
+            className: u.b,
             children: l
         }), n && null != o && (0, r.jsx)(s.A, {
             badge: o
@@ -36,13 +36,13 @@ function u(e) {
     });
     return (0, r.jsx)("li", {
         "aria-current": n ? "page" : void 0,
-        className: c.QF,
-        children: n ? u : (0, r.jsx)(i.DUT, {
+        className: u.QF,
+        children: n ? c : (0, r.jsx)(i.DUT, {
             onClick: () => {
                 a.A.navigate(t.key)
             },
-            className: c.vk,
-            children: u
+            className: u.vk,
+            children: c
         })
     })
 }
@@ -57,12 +57,12 @@ function d(e) {
     }(t);
     return (0, r.jsx)("nav", {
         "aria-label": o.intl.string(o.t["bM+M/m"]),
-        className: c.m7,
+        className: u.m7,
         children: (0, r.jsx)(i.BJc, {
             direction: "horizontal",
             role: "list",
-            className: c.jD,
-            children: n.map((e, t) => (0, r.jsx)(u, {
+            className: u.jD,
+            children: n.map((e, t) => (0, r.jsx)(c, {
                 node: e,
                 isLast: t === n.length - 1
             }, e.key))

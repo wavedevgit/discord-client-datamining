@@ -5,7 +5,7 @@ t.d(n, {
 var r = t(284009),
     l = t.n(r),
     s = t(964486),
-    a = t(156312),
+    a = t(987616),
     i = t(881266),
     u = t(920241);
 
@@ -15,9 +15,7 @@ function c(e) {
     } = e, {
         guildProductListing: t,
         guildId: r
-    } = (0, u.S)(), {
-        selectedSkuPricePreview: c
-    } = (0, a.P5)();
+    } = (0, u.S)(), c = (0, a.Hf)();
     return (0, s.Ay)(() => {
         l()(null != c, "selectedSkuPricePreview cannot be null"), (0, i.U)({
             guildId: r,

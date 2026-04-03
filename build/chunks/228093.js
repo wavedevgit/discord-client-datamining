@@ -10,35 +10,35 @@ var i = n(503698),
     a = n(481613),
     s = n.n(a),
     o = n(397927),
-    c = n(77729),
-    u = n(521502),
+    u = n(77729),
+    c = n(521502),
     d = n(915089),
     h = n(206845),
-    m = n(837921),
-    f = n(985018),
+    f = n(837921),
+    m = n(985018),
     p = n(738532);
 
 function _() {
     let e = (0, d.GV)(),
         t = window.GLOBAL_ENV.RELEASE_CHANNEL,
-        n = "522870",
-        i = "c21c89402308614b0d100b3b347cb5713adce220".substring(0, 7),
-        a = c.A?.app.getVersion(),
-        _ = c.A?.app.getBuildNumber(),
-        v = c.A?.app.getAppArch(),
-        y = u.A.getCurrentBuildOverride().overrides?.discord_web,
+        n = "522908",
+        i = "1e1b6f313d275220581d0dbe3287ee959207b9d3".substring(0, 7),
+        a = u.A?.app.getVersion(),
+        _ = u.A?.app.getBuildNumber(),
+        v = u.A?.app.getAppArch(),
+        y = c.A.getCurrentBuildOverride().overrides?.discord_web,
         g = function() {
             let e = s()?.os?.toString();
-            if (null == e || null == c.A) return null;
-            let t = c.A.os.release,
-                [n, r, i] = m.Ay.parsedOSRelease;
+            if (null == e || null == u.A) return null;
+            let t = u.A.os.release,
+                [n, r, i] = f.Ay.parsedOSRelease;
             return e.includes("Windows 10") && void 0 !== i && i >= 22e3 && (e = e.replace("Windows 10", "Windows 11")), e.includes("OS X 10.15.7") && void 0 !== n && n >= 20 && (e = `macOS ${n>=25?n+1:n-9}`), `${e} (${t})`
         }(),
         x = [t, n, `(${i})`];
     return null != a && (x.push(`Host ${a}`), null != v && x.push(v.toLowerCase()), null != _ && x.push(`(${_})`)), x.push(`Build Override: ${null!=y?y.id:"N/A"}`), null != g && x.push(g), (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(h.A, {
             copyValue: x.join(" "),
-            text: f.intl.string(f.t["9Al4Qd"]),
+            text: m.intl.string(m.t["9Al4Qd"]),
             "aria-label": !1,
             dataMeticulousIgnore: "true",
             children: s => (0, r.jsxs)(o.DUT, {
@@ -79,7 +79,7 @@ function _() {
             })
         }), (0, r.jsx)(o.AC4, {
             id: e,
-            children: f.intl.string(f.t["9Al4Qd"])
+            children: m.intl.string(m.t["9Al4Qd"])
         })]
     })
 }

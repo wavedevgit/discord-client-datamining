@@ -163,7 +163,7 @@ function C(e) {
             })
         }), (0, i.jsx)(d.VQ0.Panel, {
             id: r,
-            children: null != o.StronglyDiscouragedCustomComponent ? (0, i.jsx)(o.StronglyDiscouragedCustomComponent, {}) : (0, i.jsx)(E, {
+            children: (0, i.jsx)(E, {
                 layout: o.layout,
                 decoration: a
             })

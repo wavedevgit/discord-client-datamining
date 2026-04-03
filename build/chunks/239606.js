@@ -461,7 +461,8 @@ function ey(e) {
                                             initialSection: v,
                                             onClose: _
                                         }), null != W && (0, i.jsx)(g.A, {
-                                            frame: W
+                                            frame: W,
+                                            layout: "MODAL_V2"
                                         })]
                                     })]
                                 })]

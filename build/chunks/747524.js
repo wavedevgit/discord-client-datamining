@@ -37,7 +37,8 @@ function d(e) {
     return null != d ? (0, i.jsxs)("div", {
         className: o.xQ,
         children: [(0, i.jsx)(s.A, {
-            frame: d
+            frame: d,
+            layout: "SIDEBAR"
         }), u]
     }) : u
 }
