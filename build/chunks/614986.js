@@ -80,7 +80,7 @@ function D(e) {
     })
 }
 
-function U(e) {
+function B(e) {
     let {
         children: t,
         cardChildren: n,
@@ -109,13 +109,13 @@ function U(e) {
     })
 }
 
-function P(e) {
+function U(e) {
     let {
         invite: t
     } = e;
     if (null == t || !(0, C.Fk)(t)) return null;
     let n = k(t);
-    return (0, i.jsx)(U, {
+    return (0, i.jsx)(B, {
         startAnimHeightPx: 0,
         sectionClassName: L.ui,
         children: 1 === n ? (0, i.jsx)(T.s, {
@@ -123,7 +123,7 @@ function P(e) {
         }) : null
     })
 }
-let B = {
+let P = {
     1: L._r,
     2: L.Gm,
     0: L.Kt
@@ -175,9 +175,9 @@ function G(e) {
             t = (0, i.jsx)(w, {})
     }
     let u = 1 === r && c ? L.c4 : L.qF;
-    return (0, i.jsx)(U, {
+    return (0, i.jsx)(B, {
         startAnimHeightPx: 200,
-        sectionClassName: B[r],
+        sectionClassName: P[r],
         inviteCardClassName: u,
         children: t
     })
@@ -205,7 +205,7 @@ function F(e) {
         children: [(0, i.jsx)(G, {
             ...e,
             onAcceptInvite: n
-        }), (0, i.jsx)(P, {
+        }), (0, i.jsx)(U, {
             ...e
         })]
     })

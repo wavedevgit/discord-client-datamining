@@ -115,15 +115,15 @@ let E = s.forwardRef(function(e, t) {
                 label: `${n-e-3}`
             }))
         }, [n]), r.current),
-        [D, U] = s.useState(I ? 0 : -1),
-        P = s.useMemo(f, []),
-        B = {
+        [D, B] = s.useState(I ? 0 : -1),
+        U = s.useMemo(f, []),
+        P = {
             onPopulated: E,
-            sortedInputs: P
+            sortedInputs: U
         },
-        G = s.useRef(B);
+        G = s.useRef(P);
     s.useEffect(() => {
-        G.current = B
+        G.current = P
     }), s.useEffect(() => {
         let {
             onPopulated: e,
@@ -135,7 +135,7 @@ let E = s.forwardRef(function(e, t) {
     for (let e = 0; e < 3; e++) {
         let {
             type: t
-        } = P[e];
+        } = U[e];
         switch (t) {
             case "day":
                 F.push({
@@ -150,7 +150,7 @@ let E = s.forwardRef(function(e, t) {
                             options: p,
                             value: S,
                             onChange: t => {
-                                T(t), U(e + 1)
+                                T(t), B(e + 1)
                             },
                             maxVisibleItems: 6,
                             autoFocus: D === e,
@@ -174,7 +174,7 @@ let E = s.forwardRef(function(e, t) {
                             options: g,
                             value: y,
                             onChange: t => {
-                                b(t), U(e + 1)
+                                b(t), B(e + 1)
                             },
                             maxVisibleItems: 6,
                             autoFocus: D === e,
@@ -198,7 +198,7 @@ let E = s.forwardRef(function(e, t) {
                             options: k,
                             value: R,
                             onChange: t => {
-                                O(t), U(e + 1)
+                                O(t), B(e + 1)
                             },
                             maxVisibleItems: 6,
                             autoFocus: D === e,

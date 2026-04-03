@@ -1,7 +1,7 @@
 /** chunk id: 187035 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => U
+    A: () => B
 });
 var i = n(627968),
     s = n(64700),
@@ -98,7 +98,7 @@ class D extends s.PureComponent {
             children: (0, i.jsx)(A.A, {
                 guildTemplate: e
             })
-        }) : (0, i.jsx)(P, {
+        }) : (0, i.jsx)(U, {
             guildTemplate: e
         })
     }
@@ -146,7 +146,7 @@ class D extends s.PureComponent {
     }
 }
 
-function U(e) {
+function B(e) {
     let t = {
         guildTemplate: (0, d.bG)([_.A], () => _.A.getGuildTemplate(e.code)),
         nativeAppState: (0, d.bG)([h.A], () => h.A.getState(e.code)),
@@ -159,7 +159,7 @@ function U(e) {
     })
 }
 
-function P(e) {
+function U(e) {
     let {
         guildTemplate: t
     } = e, {

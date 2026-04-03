@@ -43,7 +43,7 @@ function f(e) {
     })
 }
 
-function p(e) {
+function g(e) {
     let {
         game: t
     } = e, n = t.supplementalData, l = (n?.genres ?? t.genres ?? []).map(o.du).join(", ");
@@ -53,7 +53,7 @@ function p(e) {
         children: l
     })
 }
-let g = e => {
+let p = e => {
     let {
         rank: t
     } = e;
@@ -129,7 +129,7 @@ let v = function(e) {
     }, [A, c]);
     let E = t.supplementalData,
         b = E?.name ?? t.name ?? n?.name,
-        I = n.getIconURL(80);
+        C = n.getIconURL(80);
     return (0, a.jsxs)(a.Fragment, {
         children: [(0, a.jsx)(f, {
             game: t
@@ -140,8 +140,8 @@ let v = function(e) {
                 className: h.OC
             }), (0, a.jsxs)("div", {
                 className: h.dh,
-                children: [null != I && (0, a.jsx)("img", {
-                    src: I,
+                children: [null != C && (0, a.jsx)("img", {
+                    src: C,
                     alt: "",
                     className: h.V$,
                     draggable: !1
@@ -151,7 +151,7 @@ let v = function(e) {
                         variant: "heading-md/semibold",
                         lineClamp: 1,
                         children: b
-                    }), null != t.l30Rank && (0, a.jsx)(g, {
+                    }), null != t.l30Rank && (0, a.jsx)(p, {
                         rank: t.l30Rank
                     })]
                 })]
@@ -173,13 +173,13 @@ let v = function(e) {
                 })
             }), (0, a.jsxs)("div", {
                 className: h.lu,
-                children: [null != t.l30Rank && (0, a.jsx)(g, {
+                children: [null != t.l30Rank && (0, a.jsx)(p, {
                     rank: t.l30Rank
                 }), (0, a.jsx)(s.DZT, {
                     ref: v,
                     variant: "heading-xxl/semibold",
                     children: b
-                }), (0, a.jsx)(p, {
+                }), (0, a.jsx)(g, {
                     game: t
                 })]
             })]

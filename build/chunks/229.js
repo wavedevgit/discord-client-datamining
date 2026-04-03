@@ -37,9 +37,9 @@ var T = n(491509),
     w = n(210714),
     k = n(493527),
     D = n(544395),
-    U = n(546727),
-    P = n(975169),
-    B = n(794696),
+    B = n(546727),
+    U = n(975169),
+    P = n(794696),
     G = n(961350),
     F = n(153488),
     M = n(650048),
@@ -565,11 +565,11 @@ class ei extends s.PureComponent {
                 username: e.toLocaleLowerCase(),
                 usernameClientError: 0 === e.length ? $.intl.string($.t.EkokLy) : null
             })
-        }, U = null != e ? (0, i.jsx)(s.Fragment, {
+        }, B = null != e ? (0, i.jsx)(s.Fragment, {
             children: e()
         }, "custom-header") : (0, i.jsx)(v.hE, {
             children: $.intl.string($.t.wC4TlR)
-        }, "title"), P = (0, i.jsxs)(v.eB, {
+        }, "title"), U = (0, i.jsxs)(v.eB, {
             className: ee.QX,
             children: [(0, i.jsx)(v.pd, {
                 autoFocus: !0,
@@ -614,7 +614,7 @@ class ei extends s.PureComponent {
                         globalNameFocused: !1
                     }), this.trackInputBlur("global_name")
                 }
-            }), (0, i.jsx)(B.A, {
+            }), (0, i.jsx)(P.A, {
                 show: u,
                 top: -12,
                 bottom: 20,
@@ -685,12 +685,12 @@ class ei extends s.PureComponent {
             onSubmit: this.handleSubmit,
             tag: "form",
             className: l()(y, Z.Sy),
-            children: () => [U, (0, i.jsxs)("div", {
+            children: () => [B, (0, i.jsxs)("div", {
                 className: Z.Uu,
                 children: [(0, i.jsx)(v.hE, {
                     className: Z.lR,
                     children: $.intl.string($.t.wC4TlR)
-                }), P]
+                }), U]
             }, "register-title")]
         }) : (0, i.jsxs)(v.Ay, {
             onSubmit: this.handleSubmit,
@@ -705,7 +705,7 @@ class ei extends s.PureComponent {
                     icon: _.n2b,
                     iconPosition: "start"
                 })
-            }) : null, U, P]
+            }) : null, B, U]
         })
     }
     render() {
@@ -765,17 +765,17 @@ function er(e) {
             isUsernameFocused: l,
             onClickSuggestion: a
         } = e,
-        d = (0, P.i)(n, !0, !0),
+        d = (0, U.i)(n, !0, !0),
         c = n.length > 0;
     return t = c ? (0, o.YW)(d).with({
-        type: U.q.ERROR,
+        type: B.q.ERROR,
         message: o.P.select()
     }, e => (0, i.jsx)(_.Text, {
         className: Z.vU,
         variant: "text-sm/normal",
         children: e
     })).with({
-        type: U.q.AVAILABLE,
+        type: B.q.AVAILABLE,
         message: o.P.select()
     }, e => (0, i.jsx)(_.Text, {
         className: Z.vq,
@@ -796,8 +796,8 @@ function er(e) {
         variant: "text-sm/normal",
         color: "text-default",
         children: $.intl.string($.t.z7c4bP)
-    }), (0, i.jsx)(B.A, {
-        show: c && d?.type === U.q.ERROR || l,
+    }), (0, i.jsx)(P.A, {
+        show: c && d?.type === B.q.ERROR || l,
         top: -12,
         bottom: 20,
         children: t

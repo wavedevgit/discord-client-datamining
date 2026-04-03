@@ -1,6 +1,6 @@
 /** chunk id: 936636 params = (module,exports,require) **/
 n.d(t, {
-    A: () => p,
+    A: () => g,
     s: () => f
 });
 var a = n(627968);
@@ -90,7 +90,7 @@ function f(e) {
     }, t)
 }
 
-function p(e) {
+function g(e) {
     let {
         detectedGame: t,
         className: n

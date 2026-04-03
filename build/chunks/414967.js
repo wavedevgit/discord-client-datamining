@@ -1,6 +1,6 @@
 /** chunk id: 414967 params = (module,exports,require) **/
 n.d(t, {
-    A: () => f
+    A: () => C
 });
 var i = n(627968);
 n(64700);
@@ -17,14 +17,15 @@ var a = n(877624),
     _ = n(412260),
     m = n(852218),
     p = n(231265),
-    g = n(979080);
-let E = "PremiumServerDriveAnnouncementModal";
-class I extends s.A {
+    g = n(979080),
+    E = n(652215);
+let I = "PremiumServerDriveAnnouncementModal";
+class f extends s.A {
     _initialize() {
-        r.h.subscribe("PREMIUM_MARKETING_DATA_READY", this.mayShowAnnouncementModal), r.h.subscribe("PREMIUM_MARKETING_PREVIEW", this.handlePreview), r.h.subscribe("ACTIVE_PROMOTIONS_FETCH_SUCCESS", this.handleActivePromotionsFetchSuccess), r.h.subscribe("BILLING_USER_OFFER_FETCH_SUCCESS", this.handleUserOfferFetchSuccess)
+        r.h.subscribe("PREMIUM_MARKETING_DATA_READY", this.mayShowAnnouncementModal), r.h.subscribe("PREMIUM_MARKETING_PREVIEW", this.handlePreview), r.h.subscribe("ACTIVE_PROMOTIONS_FETCH_SUCCESS", this.handleActivePromotionsFetchSuccess), r.h.subscribe("BILLING_USER_OFFER_FETCH_SUCCESS", this.handleUserOfferFetchSuccess), r.h.subscribe("ENTITLEMENT_CREATE", this.handleEntitlementCreate)
     }
     _terminate() {
-        r.h.unsubscribe("PREMIUM_MARKETING_DATA_READY", this.mayShowAnnouncementModal), r.h.unsubscribe("PREMIUM_MARKETING_PREVIEW", this.handlePreview), r.h.unsubscribe("ACTIVE_PROMOTIONS_FETCH_SUCCESS", this.handleActivePromotionsFetchSuccess), r.h.unsubscribe("BILLING_USER_OFFER_FETCH_SUCCESS", this.handleUserOfferFetchSuccess)
+        r.h.unsubscribe("PREMIUM_MARKETING_DATA_READY", this.mayShowAnnouncementModal), r.h.unsubscribe("PREMIUM_MARKETING_PREVIEW", this.handlePreview), r.h.unsubscribe("ACTIVE_PROMOTIONS_FETCH_SUCCESS", this.handleActivePromotionsFetchSuccess), r.h.unsubscribe("BILLING_USER_OFFER_FETCH_SUCCESS", this.handleUserOfferFetchSuccess), r.h.unsubscribe("ENTITLEMENT_CREATE", this.handleEntitlementCreate)
     }
     maybeShowAnnouncementModalFromPromotions = e => {
         for (let t of e)
@@ -49,8 +50,14 @@ class I extends s.A {
         } = e;
         null != t && this.maybeShowAnnouncementModalFromPromotions(Object.values(_.A.promotionsByType[m.pt.MARKETING_MOMENT]))
     };
+    handleEntitlementCreate = e => {
+        let {
+            entitlement: t
+        } = e;
+        u.P.isDisallowPopupsSet() || t.source_type !== E.GD.REVERSE_TRIAL || (0, h.al)()
+    };
     maybeOpenServerDriveAnnouncementModal = async (e, t, a, r) => {
-        if ((0, l.kBI)(E)) return !1;
+        if ((0, l.kBI)(I)) return !1;
         let s = (0, g.H)({
             promotionId: t,
             content: a,
@@ -67,7 +74,7 @@ class I extends s.A {
                 properties: s
             })
         }, {
-            modalKey: E
+            modalKey: I
         }), !0);
         return !1
     };
@@ -80,7 +87,7 @@ class I extends s.A {
     mayShowAnnouncementModal = async () => {
         if (await (0, A.hb)(), u.P.isDisallowPopupsSet()) return;
         let e = d.default.getCurrentUser();
-        (null == e || e.verified) && (0, h.wK)()
+        (null == e || e.verified) && ((0, h.al)(), (0, h.QM)())
     }
 }
-let f = new I
+let C = new f

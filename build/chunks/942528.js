@@ -15,8 +15,8 @@ var a = n(627968),
     x = n(420706),
     h = n(322789),
     f = n(506326),
-    p = n(985018),
-    g = n(504225),
+    g = n(985018),
+    p = n(504225),
     _ = n(282063);
 let v = e => {
     let {
@@ -28,18 +28,18 @@ let v = e => {
         customCTA: j,
         popoutClassname: E,
         popoutPosition: b = "right"
-    } = e, I = l.useRef(null), C = (0, s.bG)([d.A, c.A], () => c.A.getChannel(d.A.getChannelId())), N = (0, s.bG)([u.default], () => u.default.getUser(t.author_id)), {
+    } = e, C = l.useRef(null), I = (0, s.bG)([d.A, c.A], () => c.A.getChannel(d.A.getChannelId())), N = (0, s.bG)([u.default], () => u.default.getUser(t.author_id)), {
         nick: S,
         avatar: T
     } = l.useMemo(() => {
-        let e = N?.getAvatarURL(C?.guild_id, 48, !1);
+        let e = N?.getAvatarURL(I?.guild_id, 48, !1);
         return {
-            nick: m.Ay.getName(C?.guild_id, C?.id, N),
+            nick: m.Ay.getName(I?.guild_id, I?.id, N),
             avatar: e
         }
-    }, [N, C]);
+    }, [N, I]);
     return null == N ? null : (0, a.jsx)(o.YNO, {
-        targetElementRef: I,
+        targetElementRef: C,
         position: b,
         renderPopout: e => {
             let {
@@ -66,9 +66,9 @@ let v = e => {
             v?.()
         },
         children: e => (0, a.jsx)(o.DUT, {
-            innerRef: I,
+            innerRef: C,
             ...e,
-            className: g.GA,
+            className: p.GA,
             children: (0, a.jsx)(o.vN3, {
                 offset: {
                     top: 4,
@@ -78,13 +78,13 @@ let v = e => {
                 },
                 children: (0, a.jsxs)(a.Fragment, {
                     children: [(0, a.jsx)("img", {
-                        className: g.my,
+                        className: p.my,
                         src: T,
-                        alt: p.intl.formatToPlainString(p.t.IzVXxY, {
+                        alt: g.intl.formatToPlainString(g.t.IzVXxY, {
                             userName: S
                         })
                     }), (0, a.jsx)("div", {
-                        className: g.Su,
+                        className: p.Su,
                         children: (0, a.jsxs)("div", {
                             className: r()(_.fi, _.Kt),
                             children: [(0, a.jsx)(o.Text, {
@@ -100,7 +100,7 @@ let v = e => {
                             })]
                         })
                     }), null != j ? j : (0, a.jsx)("div", {
-                        className: g.Br,
+                        className: p.Br,
                         children: (0, a.jsx)(o.W4J, {
                             size: "sm"
                         })

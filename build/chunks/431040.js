@@ -1,6 +1,6 @@
 /** chunk id: 431040 params = (module,exports,require) **/
 n.d(t, {
-    A: () => g
+    A: () => p
 });
 var a = n(627968),
     l = n(64700),
@@ -16,19 +16,19 @@ var a = n(627968),
     h = n(985018),
     f = n(706445);
 
-function p() {
+function g() {
     return (0, a.jsx)(i.Text, {
         variant: "text-sm/normal",
         color: "text-subtle",
         children: h.intl.string(h.t.GruYxV)
     })
 }
-let g = function(e) {
+let p = function(e) {
     let {
         application: t,
         detectedGame: n,
-        trackAction: g
-    } = e, _ = l.useMemo(() => n.genres.map(r.du).join(", "), [n]), v = n.publishers.join(", "), A = n.developers.join(", "), j = n.firstReleaseDate, E = (0, c.A)(n), b = (0, o.Y)(n), I = !(0, s.uJ)(_), C = !(0, s.uJ)(v), N = !(0, s.uJ)(A), S = !(0, s.uJ)(j), T = E.length > 0, y = b.length > 0 && !b.every(e => (0, s.uJ)(e.url));
+        trackAction: p
+    } = e, _ = l.useMemo(() => n.genres.map(r.du).join(", "), [n]), v = n.publishers.join(", "), A = n.developers.join(", "), j = n.firstReleaseDate, E = (0, c.A)(n), b = (0, o.Y)(n), C = !(0, s.uJ)(_), I = !(0, s.uJ)(v), N = !(0, s.uJ)(A), S = !(0, s.uJ)(j), T = E.length > 0, y = b.length > 0 && !b.every(e => (0, s.uJ)(e.url));
     return (0, a.jsxs)("div", {
         className: f.uW,
         children: [(0, a.jsx)("div", {
@@ -46,24 +46,24 @@ let g = function(e) {
                     variant: "text-sm/normal",
                     color: "text-subtle",
                     children: 1 !== n.genres.length ? h.intl.string(h.t.pDgwYB) : h.intl.string(h.t.mjFKqn)
-                }), I ? (0, a.jsx)(i.Text, {
+                }), C ? (0, a.jsx)(i.Text, {
                     variant: "text-sm/normal",
                     color: "text-subtle",
                     className: f.Gu,
                     children: _
-                }) : (0, a.jsx)(p, {})]
+                }) : (0, a.jsx)(g, {})]
             }), (0, a.jsxs)("div", {
                 className: f.J1,
                 children: [(0, a.jsx)(i.Text, {
                     variant: "text-sm/normal",
                     color: "text-subtle",
                     children: 1 !== n.publishers.length ? h.intl.string(h.t.Hc7Enk) : h.intl.string(h.t["4Byy/G"])
-                }), C ? (0, a.jsx)(i.Text, {
+                }), I ? (0, a.jsx)(i.Text, {
                     variant: "text-sm/normal",
                     color: "text-subtle",
                     className: f.Gu,
                     children: v
-                }) : (0, a.jsx)(p, {})]
+                }) : (0, a.jsx)(g, {})]
             }), (0, a.jsxs)("div", {
                 className: f.J1,
                 children: [(0, a.jsx)(i.Text, {
@@ -75,7 +75,7 @@ let g = function(e) {
                     color: "text-subtle",
                     className: f.Gu,
                     children: A
-                }) : (0, a.jsx)(p, {})]
+                }) : (0, a.jsx)(g, {})]
             }), (0, a.jsxs)("div", {
                 className: f.J1,
                 children: [(0, a.jsx)(i.Text, {
@@ -91,7 +91,7 @@ let g = function(e) {
                         month: "long",
                         day: "numeric"
                     })
-                }) : (0, a.jsx)(p, {})]
+                }) : (0, a.jsx)(g, {})]
             }), (0, a.jsxs)("div", {
                 className: f.J1,
                 children: [(0, a.jsx)(i.Text, {
@@ -103,7 +103,7 @@ let g = function(e) {
                     children: E.map(e => (0, a.jsx)(m.s, {
                         platform: e
                     }, e))
-                }) : (0, a.jsx)(p, {})]
+                }) : (0, a.jsx)(g, {})]
             }), (0, a.jsxs)("div", {
                 className: f.J1,
                 children: [(0, a.jsx)(i.Text, {
@@ -114,9 +114,9 @@ let g = function(e) {
                     className: f.Gu,
                     children: b.map(e => (0, a.jsx)(u.K, {
                         website: e,
-                        trackAction: g
+                        trackAction: p
                     }, e.url))
-                }) : (0, a.jsx)(p, {})]
+                }) : (0, a.jsx)(g, {})]
             }), (0, a.jsxs)("div", {
                 className: f.J1,
                 children: [(0, a.jsx)(i.Text, {
@@ -136,7 +136,7 @@ let g = function(e) {
             className: f.OQ,
             children: (0, a.jsx)(d.A, {
                 application: t,
-                trackAction: g
+                trackAction: p
             })
         })]
     })

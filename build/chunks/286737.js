@@ -21,16 +21,16 @@ function h(e) {
     } = e, {
         fetchedAuthorization: h,
         hasAlreadyLinked: f,
-        canStartAuthorization: p,
-        startAuthorization: g,
+        canStartAuthorization: g,
+        startAuthorization: p,
         connectionApp: _,
         officialInvite: v
     } = (0, u.c)(), A = (0, i.bG)([o.default], () => o.default.getCurrentUser()), j = l.useCallback(() => {
-        t(d.Ws.LinkAccount), g({
+        t(d.Ws.LinkAccount), p({
             analyticsLocations: n
         })
-    }, [t, g, n]);
-    if (!h || null == _ || !p || f || null == A) return null;
+    }, [t, p, n]);
+    if (!h || null == _ || !g || f || null == A) return null;
     let E = v?.guild != null ? c.Ay.getGuildSplashURL({
         id: v.guild.id,
         splash: v.guild.splash
