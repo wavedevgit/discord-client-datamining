@@ -1,7 +1,7 @@
 /** chunk id: 951707 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => m
+    A: () => f
 });
 var r = n(627968),
     i = n(64700),
@@ -9,17 +9,17 @@ var r = n(627968),
     a = n.n(l),
     s = n(735438),
     o = n(311907),
-    u = n(732955),
-    c = n(770178),
+    c = n(732955),
+    u = n(770178),
     d = n(775602),
     h = n(985018),
-    f = n(669046);
-let m = e => {
+    m = n(669046);
+let f = e => {
     let {
         children: t,
         gap: n = 24,
         edgeFade: l = "xl",
-        hideActionsWhenDisabled: m = !0,
+        hideActionsWhenDisabled: f = !0,
         className: p,
         iconButtonSize: _,
         "aria-label": v
@@ -45,7 +45,7 @@ let m = e => {
                 N && n !== t ? e.setAttribute("inert", "true") : e.removeAttribute("inert")
             })
         })
-    }, [N]), P = (0, c.w)(e => {
+    }, [N]), P = (0, u.w)(e => {
         let {
             contentRect: t
         } = e;
@@ -126,50 +126,50 @@ let m = e => {
         role: null != v ? "region" : void 0,
         "aria-label": v,
         style: W,
-        className: a()(f.kL, p),
+        className: a()(m.kL, p),
         children: [R && (0, r.jsxs)("div", {
-            className: f.o1,
+            className: m.o1,
             role: "group",
             children: [(0, r.jsx)("div", {
-                className: a()(f.x6, {
-                    [f.r9]: !T && m
+                className: a()(m.x6, {
+                    [m.r9]: !T && f
                 }),
-                children: (0, r.jsx)(u.K0, {
-                    icon: u.Zge,
+                children: (0, r.jsx)(c.K0, {
+                    icon: c.Zge,
                     size: _,
                     variant: "overlay-secondary",
                     onClick: G,
                     disabled: !T,
                     "aria-label": h.intl.string(h.t.FQx1Ru),
-                    "aria-hidden": !T && m,
+                    "aria-hidden": !T && f,
                     "aria-controls": y
                 })
             }), (0, r.jsx)("div", {
-                className: a()(f.x6, {
-                    [f.r9]: !k && m
+                className: a()(m.x6, {
+                    [m.r9]: !k && f
                 }),
-                children: (0, r.jsx)(u.K0, {
-                    icon: u.KS6,
+                children: (0, r.jsx)(c.K0, {
+                    icon: c.KS6,
                     size: _,
                     variant: "overlay-secondary",
                     onClick: B,
                     disabled: !k,
                     "aria-label": h.intl.string(h.t.H4hwjn),
-                    "aria-hidden": !k && m,
+                    "aria-hidden": !k && f,
                     "aria-controls": y
                 })
             })]
-        }), (0, r.jsx)(u.BJc, {
+        }), (0, r.jsx)(c.BJc, {
             direction: "horizontal",
             gap: n,
             id: y,
             "aria-label": v,
             ref: U,
-            className: a()(f.Y_, {
-                [f.jL]: T,
-                [f.w6]: k,
-                [f.XG]: T && k,
-                [f.DY]: N
+            className: a()(m.Y_, {
+                [m.jL]: T,
+                [m.w6]: k,
+                [m.XG]: T && k,
+                [m.DY]: N
             }),
             tabIndex: 0,
             onFocus: e => {
