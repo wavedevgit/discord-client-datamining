@@ -1,10 +1,10 @@
 /** chunk id: 768146 params = (module,exports,require) **/
 n.d(t, {
-    AU: () => v,
+    AU: () => E,
     Ey: () => y,
-    QF: () => b,
+    QF: () => g,
     do: () => x,
-    eC: () => E
+    eC: () => b
 });
 var r = n(627968),
     l = n(64700),
@@ -13,55 +13,55 @@ var r = n(627968),
     s = n(687498),
     o = n(827734),
     u = n(876230),
-    c = n(61491),
-    d = n(435371),
+    d = n(61491),
+    c = n(435371),
     m = n(397927),
-    p = n(985018),
-    f = n(246878);
-let h = "-:--",
+    h = n(985018),
+    p = n(246878);
+let f = "-:--",
     x = 1500,
-    E = {
+    b = {
         [u.Q6.PLAYING]: {
             icon: m.E$n,
-            label: p.intl.string(p.t.ZcgDJX)
+            label: h.intl.string(h.t.ZcgDJX)
         },
         [u.Q6.PAUSED]: {
             icon: m.udU,
-            label: p.intl.string(p.t.RscU7I)
+            label: h.intl.string(h.t.RscU7I)
         },
         [u.Q6.ENDED]: {
             icon: m.mqY,
-            label: p.intl.string(p.t.hsvh0i)
+            label: h.intl.string(h.t.hsvh0i)
         }
     },
-    v = {
+    E = {
         [u.oA.MD]: u.n4.MD,
         [u.oA.LG]: u.n4.LG
     },
-    g = {
+    v = {
         [u.n4.MD]: "md",
         [u.n4.LG]: "lg"
     };
 
-function b(e) {
+function g(e) {
     let {
         current: t,
         duration: n
-    } = e, l = null != t ? (0, c.rB)(t) : h, a = null != n ? (0, c.rB)(n) : h;
+    } = e, l = null != t ? (0, d.rB)(t) : f, a = null != n ? (0, d.rB)(n) : f;
     return (0, r.jsxs)("div", {
-        className: i()(f.d$, f.jk),
+        className: i()(p.d$, p.jk),
         "data-testid": "discord-web-video-player-duration",
         children: [(0, r.jsx)(m.Text, {
             variant: "text-xs/normal",
-            className: f.Ue,
+            className: p.Ue,
             children: l
         }), (0, r.jsx)(m.Text, {
             variant: "text-xs/normal",
-            className: f.zO,
+            className: p.zO,
             children: "/"
         }), (0, r.jsx)(m.Text, {
             variant: "text-xs/normal",
-            className: f.Ue,
+            className: p.Ue,
             children: a
         })]
     })
@@ -71,27 +71,27 @@ let y = l.forwardRef(function(e, t) {
         iconComponent: n,
         animationTime: l,
         visible: a,
-        ariaLabel: c,
-        active: p,
-        disabled: h,
-        tooltipLabel: E,
-        tooltipDelayMs: v = x,
-        shortcut: b,
+        ariaLabel: d,
+        active: h,
+        disabled: f,
+        tooltipLabel: b,
+        tooltipDelayMs: E = x,
+        shortcut: g,
         onClick: y,
         buttonSize: S = u.n4.MD,
         "data-testid": C
     } = e, A = e => (0, r.jsx)(m.DUT, {
         ...e,
-        onClick: !0 === h ? void 0 : y,
-        className: i()(f.K5, {
-            [f.Iy]: h
+        onClick: !0 === f ? void 0 : y,
+        className: i()(p.K5, {
+            [p.Iy]: f
         }),
-        "aria-label": c,
-        "aria-disabled": h,
+        "aria-label": d,
+        "aria-disabled": f,
         "data-testid": C,
         innerRef: t,
         children: (0, r.jsx)(s.animated.div, {
-            className: f.K5,
+            className: p.K5,
             style: {
                 opacity: (0, s.to)([l.to({
                     range: [0, 1],
@@ -103,19 +103,19 @@ let y = l.forwardRef(function(e, t) {
                 } [S]
             },
             children: (0, r.jsx)(n, {
-                size: g[S],
-                color: !0 !== h ? o.A.colors.WHITE : o.A.colors.TEXT_MUTED,
-                className: i()(f.jk, {
-                    [f.x2]: p,
-                    [f.Wr]: !h
+                size: v[S],
+                color: !0 !== f ? o.A.colors.WHITE : o.A.colors.TEXT_MUTED,
+                className: i()(p.jk, {
+                    [p.x2]: h,
+                    [p.Wr]: !f
                 })
             })
         })
     });
-    return null != E && a ? (0, r.jsx)(d.m_, {
-        text: E,
-        keyboardShortcut: "" !== (b ?? "").trim() ? b : void 0,
-        delay: v,
+    return null != b && a ? (0, r.jsx)(c.m_, {
+        text: b,
+        keyboardShortcut: "" !== (g ?? "").trim() ? g : void 0,
+        delay: E,
         children: A()
     }) : A()
 })

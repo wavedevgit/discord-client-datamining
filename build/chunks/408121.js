@@ -14,7 +14,7 @@ function u(e) {
         text: t,
         isLoading: n = !1,
         onClose: u
-    } = e, c = l.useMemo(() => (t ?? "").split("\n").map(e => e.trim()).filter(e => e.length > 0), [t]);
+    } = e, d = l.useMemo(() => (t ?? "").split("\n").map(e => e.trim()).filter(e => e.length > 0), [t]);
     return (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsxs)("div", {
             className: o.Mm,
@@ -44,7 +44,7 @@ function u(e) {
                     }) : (0, r.jsx)(a.Heading, {
                         variant: "heading-md/normal",
                         color: "text-muted",
-                        children: c.map((e, t) => (0, r.jsx)("p", {
+                        children: d.map((e, t) => (0, r.jsx)("p", {
                             children: e
                         }, t))
                     })

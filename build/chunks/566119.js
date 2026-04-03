@@ -1,19 +1,19 @@
 /** chunk id: 566119 params = (module,exports,require) **/
 r.d(t, {
     CC: () => l,
-    Jv: () => d,
+    Jv: () => o,
     RQ: () => m,
     WD: () => s,
     b: () => _,
     gP: () => u,
     o8: () => c,
-    ue: () => o
+    ue: () => d
 });
-var a = r(954571),
-    n = r(652215);
+var n = r(954571),
+    a = r(652215);
 
 function i(e, t) {
-    a.default.track(n.HAw.PREMIUM_TENURE_REWARDS_ORBS_CTA_CLICKED, {
+    n.default.track(a.HAw.PREMIUM_TENURE_REWARDS_ORBS_CTA_CLICKED, {
         cta_type: e,
         program_state: t
     })
@@ -24,10 +24,10 @@ let s = e => {
     l = e => {
         i("view_billing", e)
     },
-    o = e => {
+    d = e => {
         i("update_billing", e)
     },
-    d = e => {
+    o = e => {
         i("resubscribe", e)
     },
     c = e => {

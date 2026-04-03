@@ -1,15 +1,15 @@
 /** chunk id: 116011 params = (module,exports,require) **/
 r.d(t, {
-    oL: () => N,
+    oL: () => j,
     wx: () => S
 });
-var a = r(627968),
-    n = r(64700),
+var n = r(627968),
+    a = r(64700),
     i = r(158954),
     s = r(311907),
     l = r(397927),
-    o = r(914410),
-    d = r(544028),
+    d = r(914410),
+    o = r(544028),
     c = r(954571),
     u = r(405269),
     m = r(975571),
@@ -25,7 +25,7 @@ var a = r(627968),
     R = r(870378),
     v = r(208556),
     E = r(8496);
-let N = {
+let j = {
         [h.XY]: {
             title: x.default.LsJ9hj,
             titleParams: {
@@ -35,8 +35,8 @@ let N = {
             bodyWithExpiration: x.default["6KjkUa"],
             redemptionURL: "https://www.logitech.com/",
             logos: {
-                dark: (0, a.jsx)(n.Fragment, {}, "logitech-logo-dark"),
-                light: (0, a.jsx)(n.Fragment, {}, "logitech-logo-light")
+                dark: (0, n.jsx)(a.Fragment, {}, "logitech-logo-dark"),
+                light: (0, n.jsx)(a.Fragment, {}, "logitech-logo-light")
             },
             asset: v.A
         },
@@ -46,8 +46,8 @@ let N = {
             bodyWithExpiration: C.t.w8CXUl,
             redemptionURL: "https://steelseries.com/",
             logos: {
-                dark: (0, a.jsx)(b.a1, {}),
-                light: (0, a.jsx)(b.Gn, {})
+                dark: (0, n.jsx)(b.a1, {}),
+                light: (0, n.jsx)(b.Gn, {})
             },
             asset: E.A
         },
@@ -57,27 +57,27 @@ let N = {
             bodyWithExpiration: C.t.rqmpXc,
             redemptionURL: "https://www.kontrolfreek.com/",
             logos: {
-                dark: (0, a.jsx)(b.WF, {}),
-                light: (0, a.jsx)(b.s, {})
+                dark: (0, n.jsx)(b.WF, {}),
+                light: (0, n.jsx)(b.s, {})
             },
             asset: R.A
         }
     },
-    j = () => {
+    N = () => {
         let e = (0, u.N5)(),
             t = (0, u.P6)();
-        return (0, a.jsxs)("div", {
+        return (0, n.jsxs)("div", {
             className: `${A.G9} ${A.sQ}`,
-            children: [(0, a.jsx)(i.EYj, {
+            children: [(0, n.jsx)(i.EYj, {
                 variant: "text-sm/normal",
                 color: "text-muted",
                 className: A.kT,
                 children: C.intl.format(x.default["65EEvD"], {
                     days: t
                 })
-            }), (0, a.jsx)(o.Ay, {
+            }), (0, n.jsx)(d.Ay, {
                 progress: e,
-                variant: o.qP.UNSET,
+                variant: d.qP.UNSET,
                 override: {
                     default: {
                         gradientStart: "var(--illo-blue-70)",
@@ -91,9 +91,9 @@ let N = {
         let {
             children: t
         } = e;
-        return (0, a.jsx)("div", {
+        return (0, n.jsx)("div", {
             className: A.oP,
-            children: (0, a.jsx)("div", {
+            children: (0, n.jsx)("div", {
                 className: A.t0,
                 children: t
             })
@@ -102,30 +102,30 @@ let N = {
     I = e => {
         let {
             recurrence: t
-        } = e, r = (0, a.jsx)(i.rOg, {
+        } = e, r = (0, n.jsx)(i.rOg, {
             color: l.LU0.colors.CONTROL_CONNECTED_BACKGROUND_DEFAULT
-        }), s = (0, a.jsx)(i.K0, {
+        }), s = (0, n.jsx)(i.K0, {
             icon: i.TdU,
             size: "sm",
             variant: "secondary",
             "aria-label": "",
             color: "icon-feedback-positive",
             onClick: () => {
-                navigator.clipboard.writeText(t.code), d(r)
+                navigator.clipboard.writeText(t.code), o(r)
             }
-        }), [o, d] = n.useState(() => s);
-        if (null != t.code) return (0, a.jsx)("div", {
+        }), [d, o] = a.useState(() => s);
+        if (null != t.code) return (0, n.jsx)("div", {
             className: A.oP,
-            children: (0, a.jsxs)("div", {
+            children: (0, n.jsxs)("div", {
                 className: A.t0,
-                children: [(0, a.jsx)("div", {
+                children: [(0, n.jsx)("div", {
                     className: A.cD,
-                    children: (0, a.jsx)(i.EYj, {
+                    children: (0, n.jsx)(i.EYj, {
                         variant: "text-md/medium",
                         color: "text-strong",
                         children: t.code
                     })
-                }), o, (0, a.jsx)(i.$nd, {
+                }), d, (0, n.jsx)(i.$nd, {
                     variant: "overlay-primary",
                     size: "sm",
                     text: C.intl.formatToPlainString(C.t.DF68t7, {
@@ -142,23 +142,23 @@ let N = {
         let {
             recurrence: t,
             canBeClaimed: r,
-            hasClaimError: n,
+            hasClaimError: a,
             setCode: s,
             setHasClaimError: l,
-            className: o
+            className: d
         } = e;
-        return r ? n ? (0, a.jsx)("div", {
-            className: o,
-            children: (0, a.jsx)(i.$nd, {
+        return r ? a ? (0, n.jsx)("div", {
+            className: d,
+            children: (0, n.jsx)(i.$nd, {
                 icon: i.EpV,
                 variant: "critical-secondary",
                 size: "sm",
                 disabled: !0,
                 text: C.intl.string(C.t["8LKchl"])
             })
-        }) : (0, a.jsx)("div", {
-            className: o,
-            children: (0, a.jsx)(i.$nd, {
+        }) : (0, n.jsx)("div", {
+            className: d,
+            children: (0, n.jsx)(i.$nd, {
                 icon: i.XAi,
                 variant: "overlay-primary",
                 size: "sm",
@@ -178,7 +178,7 @@ let N = {
     },
     S = e => {
         var t;
-        let r, o, {
+        let r, d, {
                 recurrence: c,
                 titleClassName: u,
                 showPartnerLogo: _ = !1,
@@ -186,23 +186,23 @@ let N = {
                 titleVariant: f = "primary",
                 displayCTAInDedicatedFooter: b = !1
             } = e,
-            [x, R] = n.useState(c.code),
-            [v, E] = n.useState(!1),
-            S = (t = c.partnerId, r = (0, s.bG)([d.A], () => (0, i.Mwr)(d.A.theme)), null == (o = N[t]) ? null : r ? o.logos.dark : o.logos.light),
+            [x, R] = a.useState(c.code),
+            [v, E] = a.useState(!1),
+            S = (t = c.partnerId, r = (0, s.bG)([o.A], () => (0, i.Mwr)(o.A.theme)), null == (d = j[t]) ? null : r ? d.logos.dark : d.logos.light),
             T = null == x;
-        return (0, a.jsxs)("div", {
+        return (0, n.jsxs)("div", {
             className: A.lA,
-            children: [(0, a.jsxs)("div", {
+            children: [(0, n.jsxs)("div", {
                 className: A.LV,
-                children: [(0, a.jsxs)("div", {
+                children: [(0, n.jsxs)("div", {
                     className: A.JN,
-                    children: [_ && S, (0, a.jsxs)("div", {
+                    children: [_ && S, (0, n.jsxs)("div", {
                         className: null != u ? `${A.yO} ${u}` : A.yO,
-                        children: [(0, a.jsx)(i.DZT, {
+                        children: [(0, n.jsx)(i.DZT, {
                             variant: "secondary" === f ? "heading-md/semibold" : "heading-lg/semibold",
                             color: "text-strong",
                             children: c.title
-                        }), (0, a.jsx)(i.DZT, {
+                        }), (0, n.jsx)(i.DZT, {
                             variant: "heading-sm/medium",
                             color: "text-subtle",
                             children: v ? C.intl.format(C.t.i2EuFO, {
@@ -211,16 +211,16 @@ let N = {
                                 date: c.endDate
                             }) : c.body
                         })]
-                    }), !b && (0, a.jsx)(P, {
+                    }), !b && (0, n.jsx)(P, {
                         recurrence: c,
                         canBeClaimed: T,
                         hasClaimError: v,
                         setCode: R,
                         setHasClaimError: E
                     })]
-                }), p && (0, a.jsx)("div", {
+                }), p && (0, n.jsx)("div", {
                     className: A.R4,
-                    children: (0, a.jsx)(l._V3, {
+                    children: (0, n.jsx)(l._V3, {
                         src: c.asset ?? "",
                         className: A.Ys,
                         imageClassName: c.partnerId === h.XY ? A.Cy : void 0,
@@ -229,13 +229,13 @@ let N = {
                         zoomable: !1
                     })
                 })]
-            }), b && (0, a.jsx)(j, {}), null != x && (0, a.jsx)(I, {
+            }), b && (0, n.jsx)(N, {}), null != x && (0, n.jsx)(I, {
                 recurrence: {
                     ...c,
                     code: x
                 }
-            }), b && null == x && (0, a.jsx)(y, {
-                children: (0, a.jsx)(P, {
+            }), b && null == x && (0, n.jsx)(y, {
+                children: (0, n.jsx)(P, {
                     recurrence: c,
                     canBeClaimed: T,
                     hasClaimError: v,

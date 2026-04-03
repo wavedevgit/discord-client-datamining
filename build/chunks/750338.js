@@ -2,13 +2,13 @@
 r.d(t, {
     A: () => C
 });
-var a = r(627968),
-    n = r(64700),
+var n = r(627968),
+    a = r(64700),
     i = r(503698),
     s = r.n(i),
     l = r(735438),
-    o = r(230109),
-    d = r(732955),
+    d = r(230109),
+    o = r(732955),
     c = r(397927),
     u = r(241524),
     m = r(303136),
@@ -29,8 +29,8 @@ let C = e => {
         videoUrl: R,
         shouldLoadVideo: v,
         index: E,
-        customVideoStyle: N,
-        isReducedMotion: j,
+        customVideoStyle: j,
+        isReducedMotion: N,
         onClick: y,
         badgeText: I,
         badgeVariant: P = "gradient",
@@ -38,14 +38,14 @@ let C = e => {
         backgroundVideoUrl: T,
         previewImageStyle: w = h.Tb.CONTAINED,
         actions: O
-    } = e, D = (0, f.TM)(), M = n.useRef(null), U = n.useRef(0), L = n.useRef(null), B = n.useRef(!1), k = (0, u.A)("(min-width: 1140px)"), G = w === h.Tb.OVERLAY && (S !== h.A0.LARGE || !k), V = S === h.A0.LARGE && k && w === h.Tb.OVERLAY, F = null != T && k && S === h.A0.LARGE, H = n.useMemo(() => (0, l.debounce)(() => {
+    } = e, D = (0, f.TM)(), M = a.useRef(null), U = a.useRef(0), L = a.useRef(null), B = a.useRef(!1), k = (0, u.A)("(min-width: 1140px)"), G = w === h.Tb.OVERLAY && (S !== h.A0.LARGE || !k), V = S === h.A0.LARGE && k && w === h.Tb.OVERLAY, F = null != T && k && S === h.A0.LARGE, H = a.useMemo(() => (0, l.debounce)(() => {
         p.default.track(b.HAw.PREMIUM_WHATS_NEW_BOX_CTA_CLICKED, {
             box_type: (0, l.snakeCase)(t)
         })
     }, 800), [t]), Y = () => {
-        null == M.current || j || (M.current.currentTime = U.current, M.current.play())
+        null == M.current || N || (M.current.currentTime = U.current, M.current.play())
     }, W = () => {
-        null == M.current || j || (U.current = M.current.currentTime, M.current.pause())
+        null == M.current || N || (U.current = M.current.currentTime, M.current.pause())
     }, K = S === h.A0.LARGE ? "heading-xxl/bold" : "heading-xl/bold", z = () => {
         let e = null != C && null != y,
             t = null != O && O.length > 0;
@@ -55,16 +55,16 @@ let C = e => {
             onClick: y,
             text: C
         }] : O;
-        return (0, a.jsx)("div", {
+        return (0, n.jsx)("div", {
             className: x.bentoBoxButton,
-            children: (0, a.jsx)(c.ButtonGroup, {
+            children: (0, n.jsx)(c.ButtonGroup, {
                 children: r?.map((e, t) => {
                     let {
                         onClick: r,
-                        ...n
+                        ...a
                     } = e;
-                    return (0, a.jsx)(d.$nd, {
-                        ...n,
+                    return (0, n.jsx)(o.$nd, {
+                        ...a,
                         onClick: e => {
                             H(), r?.(e)
                         }
@@ -72,58 +72,58 @@ let C = e => {
                 })
             })
         })
-    }, Z = () => (0, a.jsxs)("div", {
+    }, Z = () => (0, n.jsxs)("div", {
         className: s()(x.textBox, x[`${S}`], V && x.overlayTextBox),
-        children: [(0, a.jsxs)("div", {
-            children: [null == I ? null : "gradient" === P ? (0, a.jsx)("div", {
+        children: [(0, n.jsxs)("div", {
+            children: [null == I ? null : "gradient" === P ? (0, n.jsx)("div", {
                 className: x.badgeContainer,
-                children: (0, a.jsx)("div", {
+                children: (0, n.jsx)("div", {
                     className: x.badge,
-                    children: (0, a.jsx)(c.Heading, {
+                    children: (0, n.jsx)(c.Heading, {
                         variant: "eyebrow",
                         color: "always-white",
                         children: I
                     })
                 })
-            }) : (0, a.jsx)("div", {
+            }) : (0, n.jsx)("div", {
                 className: x.badgeContainer,
-                children: (0, a.jsx)(d.Exy, {
+                children: (0, n.jsx)(o.Exy, {
                     type: {
                         text: I
                     },
                     variant: P
                 })
-            }), (0, a.jsx)(c.Heading, {
+            }), (0, n.jsx)(c.Heading, {
                 variant: K,
                 color: "text-strong",
                 className: x.header,
                 children: r
             })]
-        }), (0, a.jsx)(c.Text, {
+        }), (0, n.jsx)(c.Text, {
             variant: "text-md/medium",
             color: "text-strong",
             className: x.description,
             children: i
-        }), (0, a.jsx)(z, {})]
-    }), X = () => (0, a.jsx)("div", {
+        }), (0, n.jsx)(z, {})]
+    }), X = () => (0, n.jsx)("div", {
         className: s()(x.boxArtContainer, x[`${S}`]),
-        children: (0, a.jsx)(_.A, {
+        children: (0, n.jsx)(_.A, {
             playsInline: !0,
             preload: v ? "auto" : "none",
             muted: !0,
             poster: A,
             loop: !0,
             className: s()(V ? x.overlayImage : x.boxVideo, {
-                [N]: null != N
+                [j]: null != j
             }),
             ref: M,
-            children: (0, a.jsx)("source", {
+            children: (0, n.jsx)("source", {
                 src: R,
                 type: D ? g.a.MP4 : g.a.WEBM
             })
         }, R)
     }), $ = E % 2 != 0;
-    return (0, a.jsx)(o.L, {
+    return (0, n.jsx)(d.L, {
         innerRef: L,
         onChange: e => {
             e && !B.current && (B.current = !0, p.default.track(b.HAw.PREMIUM_MARKETING_BENTO_BOX_IMPRESSION, {
@@ -131,7 +131,7 @@ let C = e => {
             }))
         },
         threshold: .5,
-        children: (0, a.jsxs)(c.hLv, {
+        children: (0, n.jsxs)(c.hLv, {
             ref: L,
             id: t,
             className: s()(x.backgroundColor, x.boxContainer, x[`${S}`], x.gradientBackground, G && x.overlayImageMode, V && x.overlayMode),
@@ -140,17 +140,17 @@ let C = e => {
             onBlur: W,
             onMouseLeave: W,
             color: "purple",
-            children: [F && (0, a.jsx)("div", {
+            children: [F && (0, n.jsx)("div", {
                 className: x.backgroundVideoContainer,
-                children: (0, a.jsx)(m.A, {
+                children: (0, n.jsx)(m.A, {
                     preload: v ? "auto" : "none",
                     className: x.backgroundVideo,
                     src: T
                 })
-            }), (0, a.jsx)(() => $ ? (0, a.jsxs)(a.Fragment, {
-                children: [(0, a.jsx)(Z, {}), (0, a.jsx)(X, {})]
-            }) : (0, a.jsxs)(a.Fragment, {
-                children: [(0, a.jsx)(X, {}), (0, a.jsx)(Z, {})]
+            }), (0, n.jsx)(() => $ ? (0, n.jsxs)(n.Fragment, {
+                children: [(0, n.jsx)(Z, {}), (0, n.jsx)(X, {})]
+            }) : (0, n.jsxs)(n.Fragment, {
+                children: [(0, n.jsx)(X, {}), (0, n.jsx)(Z, {})]
             }), {})]
         })
     })

@@ -5,10 +5,10 @@ r.d(t, {
     NI: () => em,
     Tb: () => ec
 });
-var a, n, i, s = r(627968),
+var n, a, i, s = r(627968),
     l = r(64700),
-    o = r(192308),
-    d = r(397927),
+    d = r(192308),
+    o = r(397927),
     c = r(793574),
     u = r(688810),
     m = r(793943),
@@ -24,8 +24,8 @@ var a, n, i, s = r(627968),
     R = r(975571),
     v = r(852218),
     E = r(161319),
-    N = r(992315),
-    j = r(788868),
+    j = r(992315),
+    N = r(788868),
     y = r(88001),
     I = r(652215),
     P = r(355097),
@@ -56,22 +56,22 @@ var a, n, i, s = r(627968),
     ee = r(158178),
     et = r(199579),
     er = r(170467),
-    ea = r(909340),
-    en = r(455482),
+    en = r(909340),
+    ea = r(455482),
     ei = r(573573),
     es = r(233572),
     el = r(437466),
-    eo = r(23145),
-    ed = r(56582),
-    ec = ((a = {}).CONTAINED = "contained", a.OVERLAY = "overlay", a),
-    eu = ((n = {}).SMALL = "small", n.MEDIUM = "medium", n.LARGE = "large", n),
+    ed = r(23145),
+    eo = r(56582),
+    ec = ((n = {}).CONTAINED = "contained", n.OVERLAY = "overlay", n),
+    eu = ((a = {}).SMALL = "small", a.MEDIUM = "medium", a.LARGE = "large", a),
     em = ((i = {}).REFERRAL_PROGRAM = "referralProgram", i.SERVER_PROFILES = "serverProfiles", i.SHOW_YOUR_STYLE = "showYourStyle", i.YOUR_SPACE = "yourSpace", i.EMOJIS = "emojis", i.NO_LIMITS = "noLimits", i.CUSTOM_THEMES = "customThemes", i.DISPLAY_NAME_STYLES = "displayNameStyles", i.PREMIUM_GROUP = "premiumGroup", i.ORB_REWARDS = "orbRewards", i.THREE_P_PROMOTIONS = "threePPromotions", i);
 let e_ = () => {
     let {
         analyticsLocations: e
-    } = (0, u.Ay)(c.A.PREMIUM_MARKETING_BENTO_BOX), t = (0, h.X)("useBentoBoxes"), a = (0, b.A)({
+    } = (0, u.Ay)(c.A.PREMIUM_MARKETING_BENTO_BOX), t = (0, h.X)("useBentoBoxes"), n = (0, b.A)({
         analyticsLocations: e
-    }), n = (0, f.A)({
+    }), a = (0, f.A)({
         scrollPosition: P._F.TRY_IT_OUT,
         analyticsLocations: e
     }), i = (0, l.useCallback)(() => {
@@ -82,8 +82,8 @@ let e_ = () => {
         }))
     }, [e]), ec = (0, l.useCallback)(() => {
         (0, p.A)({
-            subscriptionTier: j.pe.TIER_2,
-            initialPlanId: j.gD.PREMIUM_GROUP_MONTH,
+            subscriptionTier: N.pe.TIER_2,
+            initialPlanId: N.gD.PREMIUM_GROUP_MONTH,
             analyticsLocations: e
         })
     }, [e]), eu = (0, A.TM)(), em = R.A.getArticleURL(I.MVz.REFERRAL_PROGRAM), e_ = {
@@ -93,7 +93,7 @@ let e_ = () => {
         },
         serverProfiles: {
             thumbnail: B,
-            assetUrl: eu ? eo.Ay : ed.Ay
+            assetUrl: eu ? ed.Ay : eo.Ay
         },
         customThemes: {
             thumbnail: es.A,
@@ -124,8 +124,8 @@ let e_ = () => {
             assetUrl: eu ? W.A : z.A
         },
         orbRewards: {
-            thumbnail: en.A,
-            assetUrl: ea.A
+            thumbnail: ea.A,
+            assetUrl: en.A
         },
         threePPromotions: {
             thumbnail: L,
@@ -137,7 +137,7 @@ let e_ = () => {
             title: O.intl.string(O.t.I9TYMg),
             description: O.intl.string(O.t.HMSHeH),
             descriptionCta: O.intl.string(O.t.jVcuVY),
-            onClick: t ? a : n,
+            onClick: t ? n : a,
             previewImage: e_.serverProfiles.thumbnail,
             videoUrl: e_.serverProfiles.assetUrl
         },
@@ -167,7 +167,7 @@ let e_ = () => {
             description: O.intl.string(M.default.MFNXZh),
             descriptionCta: O.intl.string(O.t.jVcuVY),
             previewImage: e_.displayNameStyles.thumbnail,
-            onClick: t ? a : i,
+            onClick: t ? n : i,
             badgeText: O.intl.string(O.t.y2b7CA).toLocaleUpperCase(),
             videoUrl: e_.displayNameStyles.assetUrl
         },
@@ -188,13 +188,13 @@ let e_ = () => {
                     premiumGroupProductName: (0, y.DP)()
                 }),
                 onClick: ec,
-                icon: d.tvc,
+                icon: o.tvc,
                 iconPosition: "start"
             }, {
                 variant: "secondary",
                 text: O.intl.string(O.t.hvVgAZ),
                 onClick: () => {
-                    (0, o.openModalLazy)(async () => {
+                    (0, d.openModalLazy)(async () => {
                         let {
                             default: e
                         } = await r.e("69595").then(r.bind(r, 526710));
@@ -213,7 +213,7 @@ let e_ = () => {
             description: O.intl.string(O.t.UsOUxY),
             descriptionCta: O.intl.string(O.t.jVcuVY),
             previewImage: e_.showYourStyle.thumbnail,
-            onClick: t ? a : n,
+            onClick: t ? n : a,
             videoUrl: e_.showYourStyle.assetUrl
         },
         yourSpace: {
@@ -226,9 +226,9 @@ let e_ = () => {
                 {
                     let t = (0, x.Ci)("openClientThemes"),
                         {
-                            openUserSettings: a
+                            openUserSettings: n
                         } = r(858897);
-                    a(t ? g.X.DISPLAY_THEME_CATEGORY : g.X.APPEARANCE_PANEL, {
+                    n(t ? g.X.DISPLAY_THEME_CATEGORY : g.X.APPEARANCE_PANEL, {
                         analyticsLocations: e
                     })
                 }
@@ -280,7 +280,7 @@ let e_ = () => {
         let t = ep[e];
         if (null == t) throw Error(`useBentoBoxes: missing bento config for ${e}`);
         return t
-    }, [eh, eb, eg] = (0, N.A)();
+    }, [eh, eb, eg] = (0, j.A)();
     return {
         whatsNewBoxes: [
             [ef(eh)],

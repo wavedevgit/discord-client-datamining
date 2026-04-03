@@ -3,14 +3,14 @@ r.d(t, {
     A: () => f,
     U: () => p
 });
-var a = r(627968);
+var n = r(627968);
 r(64700);
-var n = r(503698),
-    i = r.n(n),
+var a = r(503698),
+    i = r.n(a),
     s = r(582754),
     l = r(421380),
-    o = r(397927),
-    d = r(736653),
+    d = r(397927),
+    o = r(736653),
     c = r(783420),
     u = r(788868),
     m = r(985018),
@@ -20,15 +20,15 @@ let p = e => e === u.pe.TIER_0 ? m.intl.string(m.t.rk4Uu8) : m.intl.string(m.t.V
         let {
             className: t,
             textOptions: r,
-            color: n,
+            color: a,
             look: u,
             hideIcon: m,
             subscriptionTier: f,
             premiumModalAnalyticsLocation: h,
             giftMessage: b,
             onClick: g
-        } = e, x = (0, d.Ay)(), C = p(f);
-        return (0, a.jsx)(c.A, {
+        } = e, x = (0, o.Ay)(), C = p(f);
+        return (0, n.jsx)(c.A, {
             isGift: !0,
             subscriptionTier: f,
             premiumModalAnalyticsLocation: h,
@@ -36,20 +36,20 @@ let p = e => e === u.pe.TIER_0 ? m.intl.string(m.t.rk4Uu8) : m.intl.string(m.t.V
             onClick: g,
             children: e => {
                 let {
-                    onClick: d
+                    onClick: o
                 } = e;
-                return (0, a.jsxs)(l.$n, {
+                return (0, n.jsxs)(l.$n, {
                     "data-migration-pending": !0,
                     innerClassName: _.Nq,
-                    color: n ?? ((0, s.Mw)(x) ? l.XD.WHITE : l.XD.BRAND),
+                    color: a ?? ((0, s.Mw)(x) ? l.XD.WHITE : l.XD.BRAND),
                     look: u ?? l.pR.OUTLINED,
                     className: i()(t, _.xP),
-                    onClick: d,
-                    children: [!m && (0, a.jsx)(o.okO, {
+                    onClick: o,
+                    children: [!m && (0, n.jsx)(d.okO, {
                         size: "md",
                         color: "currentColor",
                         className: _.ez
-                    }), (0, a.jsx)("span", {
+                    }), (0, n.jsx)("span", {
                         className: i()(_._d, r?.textClassName),
                         children: r?.textOverride ?? C
                     })]

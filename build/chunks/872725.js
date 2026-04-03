@@ -2,13 +2,13 @@
 r.d(t, {
     A: () => f
 });
-var a = r(627968),
-    n = r(64700),
+var n = r(627968),
+    a = r(64700),
     i = r(503698),
     s = r.n(i),
     l = r(524007),
-    o = r(844222),
-    d = r(786558),
+    d = r(844222),
+    o = r(786558),
     c = r(799226),
     u = r(397927),
     m = r(190152);
@@ -42,25 +42,25 @@ let _ = {
             glowAmount: R = 8,
             blurAmount: v = 30,
             hueRotate: E = 0,
-            isReducedMotion: N,
-            onMouseEnter: j
-        } = e, y = n.useRef(null), I = n.useRef(null), {
+            isReducedMotion: j,
+            onMouseEnter: N
+        } = e, y = a.useRef(null), I = a.useRef(null), {
             status: P,
             buffer: S
-        } = (0, c.CE)(A ? l.A : null), T = n.useContext(o.C), w = N ?? T.reducedMotion.enabled, O = {
+        } = (0, c.CE)(A ? l.A : null), T = a.useContext(d.C), w = j ?? T.reducedMotion.enabled, O = {
             "--custom-glow-amount": `${R}px`,
             "--custom-blur-amount": `${v}px`,
             "--custom-hue-rotate": `${E}deg`,
             "--custom-glow-opacity": +(0 !== R)
         };
-        return (0, a.jsxs)("div", {
+        return (0, n.jsxs)("div", {
             id: r,
             ref: y,
             tabIndex: i,
             className: s()(m.k, f),
             style: O,
-            onMouseEnter: j,
-            children: [A && P !== c.BW.Loading && (0, a.jsx)(d.w, {
+            onMouseEnter: N,
+            children: [A && P !== c.BW.Loading && (0, n.jsx)(o.w, {
                 buffer: S,
                 artboard: x,
                 artboardProperties: _,
@@ -69,7 +69,7 @@ let _ = {
                 ref: I,
                 fit: C,
                 withReducedMotion: w ? "halt" : "play"
-            }), (0, a.jsx)(u.ZpM, {
+            }), (0, n.jsx)(u.ZpM, {
                 type: g ?? u.sl2.CUSTOM,
                 className: h,
                 style: b,

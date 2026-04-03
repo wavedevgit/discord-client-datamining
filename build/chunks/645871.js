@@ -14,42 +14,42 @@ let u = e => {
         animatingIndex: n,
         backgroundColor: a,
         playbackPxSpring: u,
-        expansionSpring: c,
-        timelineWidth: d,
+        expansionSpring: d,
+        timelineWidth: c,
         preloadedBuffers: m,
-        maxSeekableX: p,
-        interactionEnabled: f,
-        segmentBorderRadius: h = 99,
+        maxSeekableX: h,
+        interactionEnabled: p,
+        segmentBorderRadius: f = 99,
         showGlow: x,
-        glowClassName: E,
-        progressFillClassName: v
+        glowClassName: b,
+        progressFillClassName: E
     } = e, {
-        startPx: g,
-        endPx: b,
+        startPx: v,
+        endPx: g,
         leftIndicatorIndex: y,
         rightIndicatorIndex: S
-    } = t, C = b - g, A = u.to(e => Math.min(Math.max(0, e - g), C)), N = null != n && null != c && y === n, R = !N && null != n && null != c && S === n, T = N || R, w = R ? (0, s.to)([A, c], (e, t) => `translateX(-${Math.max(0,C-t-e)}px)`) : A.to(e => `translateX(-${C-e}px)`), j = T ? (0, s.to)([A, c], (e, t) => N ? Math.max(0, e - t) : Math.min(e, C - t)) : A, L = Math.max(0, (p ?? 0) - g), P = {
-        borderRadius: `${h}px`
+    } = t, C = g - v, A = u.to(e => Math.min(Math.max(0, e - v), C)), N = null != n && null != d && y === n, R = !N && null != n && null != d && S === n, T = N || R, w = R ? (0, s.to)([A, d], (e, t) => `translateX(-${Math.max(0,C-t-e)}px)`) : A.to(e => `translateX(-${C-e}px)`), j = T ? (0, s.to)([A, d], (e, t) => N ? Math.max(0, e - t) : Math.min(e, C - t)) : A, L = Math.max(0, (h ?? 0) - v), P = {
+        borderRadius: `${f}px`
     }, D = l.useMemo(() => m?.map(e => ({
-        startPx: e.start * d,
-        endPx: (e.start + e.size) * d
-    })).filter(e => e.endPx >= g && e.startPx <= b), [m, g, b, d]);
+        startPx: e.start * c,
+        endPx: (e.start + e.size) * c
+    })).filter(e => e.endPx >= v && e.startPx <= g), [m, v, g, c]);
     return (0, r.jsxs)(s.animated.div, {
         className: o.$v,
         style: {
-            left: N ? c.to(e => g + e) : g,
-            width: T ? c.to(e => C - e) : C,
+            left: N ? d.to(e => v + e) : v,
+            width: T ? d.to(e => C - e) : C,
             "--custom-segment-bg": null != a ? a : void 0,
-            "--custom-r-left": u.to(e => 0 === g || e >= g ? "99px" : "0px"),
-            "--custom-r-right": u.to(e => b >= d || e >= b ? "99px" : "0px"),
-            "--custom-timeline-width": `${d}px`
+            "--custom-r-left": u.to(e => 0 === v || e >= v ? "99px" : "0px"),
+            "--custom-r-right": u.to(e => g >= c || e >= g ? "99px" : "0px"),
+            "--custom-timeline-width": `${c}px`
         },
         children: [(0, r.jsxs)("div", {
             className: o.WJ,
             children: [(0, r.jsxs)(s.animated.div, {
                 className: o.Bw,
                 style: {
-                    left: N ? c.to(e => -(g + e)) : -g
+                    left: N ? d.to(e => -(v + e)) : -v
                 },
                 children: [D?.map(e => (0, r.jsx)("div", {
                     className: o.r,
@@ -58,7 +58,7 @@ let u = e => {
                         left: `${e.startPx}px`,
                         ...P
                     }
-                }, `${e.startPx}:${e.endPx}`)), !f && L > 0 && (0, r.jsx)("div", {
+                }, `${e.startPx}:${e.endPx}`)), !p && L > 0 && (0, r.jsx)("div", {
                     className: o.YK,
                     style: {
                         width: `${L}px`,
@@ -67,14 +67,14 @@ let u = e => {
                     }
                 })]
             }), (0, r.jsx)(s.animated.div, {
-                className: i()(o.TN, v),
+                className: i()(o.TN, E),
                 style: {
                     transform: w,
                     opacity: A.to(e => e <= 0 ? 0 : 1)
                 }
             })]
         }), x && (0, r.jsx)(s.animated.div, {
-            className: i()(o.DT, E),
+            className: i()(o.DT, b),
             style: {
                 width: j
             }

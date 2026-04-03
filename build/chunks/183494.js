@@ -1,6 +1,6 @@
 /** chunk id: 183494 params = (module,exports,require) **/
 n.d(t, {
-    Ay: () => h
+    Ay: () => f
 }), n(321073);
 var r = n(627968),
     l = n(64700),
@@ -9,27 +9,27 @@ var r = n(627968),
     s = n(687498),
     o = n(876230),
     u = n(61491),
-    c = n(397927),
-    d = n(972441),
+    d = n(397927),
+    c = n(972441),
     m = n(645871),
-    p = n(716277);
-let f = {
+    h = n(716277);
+let p = {
     tension: 300,
     friction: 30,
     clamp: !0
 };
 
-function h(e) {
+function f(e) {
     let {
         isFullyVisible: t,
         percent: n,
         animate: a,
-        interactionEnabled: h,
+        interactionEnabled: f,
         backgroundColor: x,
-        playerState: E,
-        preloadedBuffers: v,
-        durationSec: g,
-        maxSeekableTime: b,
+        playerState: b,
+        preloadedBuffers: E,
+        durationSec: v,
+        maxSeekableTime: g,
         progressGlow: y,
         progressFillClassName: S,
         glowClassName: C,
@@ -54,21 +54,21 @@ function h(e) {
         isHovering: Q,
         handleClick: K,
         ariaProps: F
-    } = (0, d.A)({
+    } = (0, c.A)({
         onScrubBack: j,
         onScrubForward: L,
-        maxSeekableTime: b,
-        interactionEnabled: h,
-        durationSec: g,
+        maxSeekableTime: g,
+        interactionEnabled: f,
+        durationSec: v,
         percent: n,
         onClick: w
-    }), $ = l.useMemo(() => null == O || null == k ? null : (0, u.rB)((0, u.hc)(O, k, g)), [O, k, g]), Y = l.useMemo(() => {
+    }), $ = l.useMemo(() => null == O || null == k ? null : (0, u.rB)((0, u.hc)(O, k, v)), [O, k, v]), Y = l.useMemo(() => {
         if (null != k) return (0, u.TO)(n, k)
     }, [n, k]), [{
         playbackPxSpring: z
-    }, X] = (0, c.zhh)(() => ({
+    }, X] = (0, d.zhh)(() => ({
         playbackPxSpring: 0,
-        config: f
+        config: p
     }));
     l.useEffect(() => {
         X({
@@ -76,13 +76,13 @@ function h(e) {
             immediate: !a
         })
     }, [Y, a, X]);
-    let V = k?.width != null && k?.width !== 0 ? k?.width : 1,
-        W = g > 1,
+    let W = k?.width != null && k?.width !== 0 ? k?.width : 1,
+        V = v > 1,
         H = P?.indicators,
         J = l.useMemo(() => {
             let e;
-            return null != H && null != k && W ? (e = k.width, H.map(t => {
-                let n = Math.max(0, Math.min((0, u.DX)(t.timeSec, g, k) - t.widthPx / 2, e - t.widthPx));
+            return null != H && null != k && V ? (e = k.width, H.map(t => {
+                let n = Math.max(0, Math.min((0, u.DX)(t.timeSec, v, k) - t.widthPx / 2, e - t.widthPx));
                 return {
                     leftPx: n,
                     rightPx: n + t.widthPx,
@@ -91,7 +91,7 @@ function h(e) {
                     source: t
                 }
             })) : void 0
-        }, [H, g, k, W]),
+        }, [H, v, k, V]),
         Z = l.useMemo(() => ((e, t) => {
             let n = [{
                 startPx: 0,
@@ -112,20 +112,20 @@ function h(e) {
                 })
             }
             return n
-        })(V, J), [V, J]),
+        })(W, J), [W, J]),
         q = P?.hoverExpansionPx ?? 0,
         ee = l.useCallback(e => null != e && null != J && J.some(t => e >= t.leftPx - t.gapPx - (P?.animatingIndex === t.index ? q : 0) && e <= t.rightPx + t.gapPx + (P?.animatingIndex === t.index ? q : 0)), [J, P?.animatingIndex, q]);
     return (0, r.jsx)("div", {
-        className: p.jD,
+        className: h.jD,
         ref: M,
         "data-testid": D,
         style: {
             "--custom-timeline-height": `${null!=R&&Q?R:A}px`,
             "--custom-initial-timeline-height": `${T}px`
         },
-        children: (0, r.jsxs)(c.DUT, {
-            className: i()(p.KF, {
-                [p.uc]: h
+        children: (0, r.jsxs)(d.DUT, {
+            className: i()(h.KF, {
+                [h.uc]: f
             }),
             ignoreKeyPress: !0,
             onClick: K,
@@ -133,9 +133,9 @@ function h(e) {
             onMouseLeave: B,
             onMouseMove: U,
             onKeyDown: G,
-            tabIndex: h ? void 0 : -1,
+            tabIndex: f ? void 0 : -1,
             children: [(0, r.jsx)("div", {
-                className: p.G9,
+                className: h.G9,
                 ...F,
                 children: null != k && Z.map((e, t) => (0, r.jsx)(m.A, {
                     segment: e,
@@ -143,25 +143,25 @@ function h(e) {
                     animatingIndex: P?.animatingIndex,
                     expansionSpring: P?.expansionSpring,
                     backgroundColor: x,
-                    timelineWidth: V,
-                    preloadedBuffers: v,
+                    timelineWidth: W,
+                    preloadedBuffers: E,
                     maxSeekableX: _,
-                    interactionEnabled: h,
+                    interactionEnabled: f,
                     segmentBorderRadius: N,
-                    progressFillClassName: S ?? p.UA,
-                    glowClassName: C ?? p.pN,
-                    showGlow: y && E !== o.Q6.ENDED && null != Y && Y > e.startPx
+                    progressFillClassName: S ?? h.UA,
+                    glowClassName: C ?? h.pN,
+                    showGlow: y && b !== o.Q6.ENDED && null != Y && Y > e.startPx
                 }, t))
-            }), null != k && J?.map(e => P?.renderIndicator(e, null != Y && !Number.isNaN(Y) ? Y : 0)), Q && null != $ && t && !ee(O) && (0, r.jsx)(c.Text, {
-                className: p.Ey,
+            }), null != k && J?.map(e => P?.renderIndicator(e, null != Y && !Number.isNaN(Y) ? Y : 0)), Q && null != $ && t && !ee(O) && (0, r.jsx)(d.Text, {
+                className: h.Ey,
                 variant: "text-xs/normal",
                 color: "always-white",
                 style: {
                     left: null != O ? `${O}px` : "auto"
                 },
                 children: $
-            }), Q && h && null != Y && !ee(Y) && (0, r.jsx)(s.animated.div, {
-                className: p.Ub,
+            }), Q && f && null != Y && !ee(Y) && (0, r.jsx)(s.animated.div, {
+                className: h.Ub,
                 style: {
                     left: z.to(e => `${e}px`)
                 }

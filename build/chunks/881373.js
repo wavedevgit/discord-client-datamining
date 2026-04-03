@@ -1,15 +1,15 @@
 /** chunk id: 881373 params = (module,exports,require) **/
 r.d(t, {
     K2: () => s,
-    YS: () => o,
-    aW: () => n,
+    YS: () => d,
+    aW: () => a,
     y$: () => i
 });
-var a = r(250105);
-let n = 30,
+var n = r(250105);
+let a = 30,
     i = 5,
     s = 5,
-    l = (0, a.Ay)({
+    l = (0, n.Ay)({
         kind: "user",
         name: "2026-03-l-3pp",
         defaultConfig: {
@@ -25,7 +25,7 @@ let n = 30,
         }
     });
 
-function o(e) {
+function d(e) {
     let {
         location: t
     } = e, {

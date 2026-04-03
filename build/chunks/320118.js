@@ -1,32 +1,32 @@
 /** chunk id: 320118 params = (module,exports,require) **/
 r.d(t, {
-    F: () => d
+    F: () => o
 });
-var a = r(311907),
-    n = r(895944),
+var n = r(311907),
+    a = r(895944),
     i = r(649032),
     s = r(26508),
     l = r(673608),
-    o = r(861495);
+    d = r(861495);
 
-function d(e) {
+function o(e) {
     let t = e?.location ?? "useNitroProgramReward",
         r = (0, s.DK)(i.W.NITRO, t),
         {
-            isReady: d,
+            isReady: o,
             programReward: c,
             totalDays: u
-        } = (0, a.cf)([n.A], () => ({
-            isReady: n.A.isReady(),
-            programReward: n.A.getRewardForProgram(i.W.NITRO),
-            totalDays: n.A.getTotalDaysInDuration(i.W.NITRO)
+        } = (0, n.cf)([a.A], () => ({
+            isReady: a.A.isReady(),
+            programReward: a.A.getRewardForProgram(i.W.NITRO),
+            totalDays: a.A.getTotalDaysInDuration(i.W.NITRO)
         })),
         m = (0, l.q)(),
-        _ = (0, o.Q)(c, r),
-        p = (0, o.Y)(c, u, r);
+        _ = (0, d.Q)(c, r),
+        p = (0, d.Y)(c, u, r);
     return {
         isEligible: r,
-        isReady: d,
+        isReady: o,
         passesGeneralUIInvariant: _,
         passesProgressBarInvariant: p,
         programReward: c,

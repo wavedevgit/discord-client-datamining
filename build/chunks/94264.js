@@ -2,14 +2,14 @@
 r.d(t, {
     A: () => p
 });
-var a = r(627968);
+var n = r(627968);
 r(64700);
-var n = r(503698),
-    i = r.n(n),
+var a = r(503698),
+    i = r.n(a),
     s = r(892227),
     l = r(827734),
-    o = r(732955),
-    d = r(914410),
+    d = r(732955),
+    o = r(914410),
     c = r(649032),
     u = r(320118),
     m = r(404613);
@@ -28,18 +28,18 @@ let _ = {
             className: t
         } = e, {
             passesProgressBarInvariant: r,
-            programReward: n,
+            programReward: a,
             totalDays: l
         } = (0, u.F)();
-        if (!r || null == n || null == l) return null;
-        let p = (0, s.default)(new Date(n.next_reward_date), new Date),
-            f = n.program_current_state === c.L.PREMIUM_CHURNING,
+        if (!r || null == a || null == l) return null;
+        let p = (0, s.default)(new Date(a.next_reward_date), new Date),
+            f = a.program_current_state === c.L.PREMIUM_CHURNING,
             h = f ? _.churning.start : _.active.start,
             b = f ? _.churning.end : _.active.end;
-        return (0, a.jsxs)("div", {
+        return (0, n.jsxs)("div", {
             className: i()(m.k, t),
-            children: [(0, a.jsx)(d.Ay, {
-                variant: d.qP.UNSET,
+            children: [(0, n.jsx)(o.Ay, {
+                variant: o.qP.UNSET,
                 progress: l - p,
                 maximum: l,
                 override: {
@@ -48,11 +48,11 @@ let _ = {
                         gradientEnd: b
                     }
                 }
-            }), f ? (0, a.jsx)(o.tvc, {
+            }), f ? (0, n.jsx)(d.tvc, {
                 size: "sm",
                 color: "currentColor",
                 className: m.K
-            }) : (0, a.jsx)(o.Cp8, {
+            }) : (0, n.jsx)(d.Cp8, {
                 size: "sm",
                 color: "currentColor",
                 className: m.K

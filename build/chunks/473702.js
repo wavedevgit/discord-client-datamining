@@ -1,9 +1,9 @@
 /** chunk id: 473702 params = (module,exports,require) **/
 r.d(t, {
     T: () => i,
-    g: () => n
+    g: () => a
 }), r(64700);
-var a, n = ((a = {})[a.WHAT_YOU_LOSE = 1] = "WHAT_YOU_LOSE", a[a.CONFIRM = 2] = "CONFIRM", a[a.PREVIEW = 3] = "PREVIEW", a[a.CONFIRM_DISCOUNT = 4] = "CONFIRM_DISCOUNT", a[a.DISCOUNT_APPLIED = 5] = "DISCOUNT_APPLIED", a[a.PAUSE_SELECT = 6] = "PAUSE_SELECT", a[a.PAUSE_CONFIRM = 7] = "PAUSE_CONFIRM", a);
+var n, a = ((n = {})[n.WHAT_YOU_LOSE = 1] = "WHAT_YOU_LOSE", n[n.CONFIRM = 2] = "CONFIRM", n[n.PREVIEW = 3] = "PREVIEW", n[n.CONFIRM_DISCOUNT = 4] = "CONFIRM_DISCOUNT", n[n.DISCOUNT_APPLIED = 5] = "DISCOUNT_APPLIED", n[n.PAUSE_SELECT = 6] = "PAUSE_SELECT", n[n.PAUSE_CONFIRM = 7] = "PAUSE_CONFIRM", n);
 let i = {
     1: "What You're Losing",
     2: "Confirm Cancellation",

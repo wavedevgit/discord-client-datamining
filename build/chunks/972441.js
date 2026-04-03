@@ -14,34 +14,34 @@ function u(e) {
         onScrubBack: t,
         onScrubForward: n,
         maxSeekableTime: u,
-        interactionEnabled: c,
-        durationSec: d,
+        interactionEnabled: d,
+        durationSec: c,
         onClick: m,
-        percent: p
-    } = e, [f, h] = r.useState(null), [x, E] = r.useState(null), [v, g] = r.useState(!1), {
-        i18n: b
+        percent: h
+    } = e, [p, f] = r.useState(null), [x, b] = r.useState(null), [E, v] = r.useState(!1), {
+        i18n: g
     } = (0, l.G98)(), y = r.useMemo(() => {
         let e = {
             role: "progressbar",
             "aria-label": "Progress Bar"
         };
-        return null != p && "number" == typeof p && (e["aria-valuenow"] = p, e["aria-valuemin"] = 0, e["aria-valuemax"] = 100, e["aria-label"] = b.PERCENT_COMPLETE(Math.round(p))), e
-    }, [p, b]), S = r.useMemo(() => null == f || null == u ? null : (0, a.DX)(u, d, f), [f, u, d]), C = (0, s.A)(e => {
-        h(e.contentRect)
+        return null != h && "number" == typeof h && (e["aria-valuenow"] = h, e["aria-valuemin"] = 0, e["aria-valuemax"] = 100, e["aria-label"] = g.PERCENT_COMPLETE(Math.round(h))), e
+    }, [h, g]), S = r.useMemo(() => null == p || null == u ? null : (0, a.DX)(u, c, p), [p, u, c]), C = (0, s.A)(e => {
+        f(e.contentRect)
     }), A = (0, i.w)(C), N = e => {
-        null != A.current && E(e.clientX - A.current.getBoundingClientRect().left)
+        null != A.current && b(e.clientX - A.current.getBoundingClientRect().left)
     };
     return {
         contRef: A,
-        boundingRect: f,
+        boundingRect: p,
         handleMouseEnter: e => {
-            c && (g(!0), N(e))
+            d && (v(!0), N(e))
         },
         handleMouseLeave: e => {
-            c && (g(!1), E(null))
+            d && (v(!1), b(null))
         },
         handleMouseMove: e => {
-            c && v && N(e)
+            d && E && N(e)
         },
         handleKeyDown: r.useCallback(e => {
             let {
@@ -51,12 +51,12 @@ function u(e) {
         }, [t, n]),
         hoveredAtX: x,
         maxSeekableX: S,
-        isHovering: v,
+        isHovering: E,
         handleClick: e => {
-            if (!c || null == m) return;
+            if (!d || null == m) return;
             let t = e.currentTarget.getBoundingClientRect(),
                 n = e.clientX - t.left,
-                r = (0, a.hc)(n, t, d);
+                r = (0, a.hc)(n, t, c);
             m(null != u ? Math.min(r, u) : r)
         },
         ariaProps: y

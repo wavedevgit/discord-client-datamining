@@ -1,6 +1,6 @@
 /** chunk id: 190012 params = (module,exports,require) **/
 n.d(t, {
-    BC: () => f
+    BC: () => E
 });
 var l = n(735438),
     i = n(448761),
@@ -8,22 +8,23 @@ var l = n(735438),
     s = n(931046),
     a = n(427930),
     u = n(77350),
-    o = n(763754),
-    d = n(961350),
-    c = n(994500),
-    h = n(287809),
-    g = n(638075),
-    I = n(652215),
-    A = n(985018);
+    o = n(944052),
+    d = n(763754),
+    c = n(961350),
+    h = n(994500),
+    g = n(287809),
+    I = n(638075),
+    A = n(652215),
+    f = n(985018);
 
-function f(e, t) {
+function E(e, t) {
     let {
         isBlocked: n,
-        isIgnored: f
-    } = (0, r.cf)([c.A], () => ({
-        isBlocked: c.A.isBlocked(e.author.id),
-        isIgnored: c.A.isIgnored(e.author.id)
-    }), [e.author.id]), E = (0, s.Ay)(t.id, e.id), m = (0, r.bG)([d.default], () => d.default.getId()), S = (0, o.Ay)(e).nick, _ = e.type !== i.l.USER_JOIN && e.author.id === m ? A.intl.string(A.t.LuZzxn) : S, p = (0, r.bG)([h.default], () => e.mentions.length > 0 ? h.default.getUser(e.mentions[0]) : void 0), N = (0, o.d8)(p, t).nick;
+        isIgnored: E
+    } = (0, r.cf)([h.A], () => ({
+        isBlocked: h.A.isBlocked(e.author.id),
+        isIgnored: h.A.isIgnored(e.author.id)
+    }), [e.author.id]), m = (0, s.Ay)(t.id, e.id), S = (0, r.bG)([c.default], () => c.default.getId()), _ = (0, d.Ay)(e).nick, p = e.type !== i.l.USER_JOIN && e.author.id === S ? f.intl.string(f.t.LuZzxn) : _, N = (0, r.bG)([g.default], () => e.mentions.length > 0 ? g.default.getUser(e.mentions[0]) : void 0), T = (0, d.d8)(N, t).nick;
     return function(e, t) {
         let {
             isBlocked: n,
@@ -32,11 +33,11 @@ function f(e, t) {
         } = t;
         if (n) return {
             type: "text",
-            text: A.intl.string(A.t.XAkOo2)
+            text: f.intl.string(f.t.XAkOo2)
         };
         if (r) return {
             type: "text",
-            text: A.intl.string(A.t["G7p6v/"])
+            text: f.intl.string(f.t["G7p6v/"])
         };
         if (function(e) {
                 switch (e.type) {
@@ -61,9 +62,9 @@ function f(e, t) {
                     type: "message",
                     message: e
                 };
-                if (e.hasFlag(I.pr7.IS_VOICE_MESSAGE)) return {
+                if (e.hasFlag(A.pr7.IS_VOICE_MESSAGE)) return {
                     type: "text",
-                    text: A.intl.string(A.t.slFYgi)
+                    text: f.intl.string(f.t.slFYgi)
                 };
                 if (e.attachments.length > 0) {
                     let t = e.attachments.every(e => (0, u.u)(e.filename)),
@@ -71,25 +72,25 @@ function f(e, t) {
                         l = !t && !n && e.attachments.every(e => (0, u.L8)(e.filename));
                     return t ? {
                         type: "text",
-                        text: A.intl.formatToPlainString(A.t.h4pFfU, {
+                        text: f.intl.formatToPlainString(f.t.h4pFfU, {
                             count: e.attachments.length
                         }),
                         trailingIcon: "image"
                     } : n ? {
                         type: "text",
-                        text: A.intl.formatToPlainString(A.t.SJ6pPX, {
+                        text: f.intl.formatToPlainString(f.t.SJ6pPX, {
                             count: e.attachments.length
                         }),
                         trailingIcon: "video"
                     } : l ? {
                         type: "text",
-                        text: A.intl.formatToPlainString(A.t.fnO3hK, {
+                        text: f.intl.formatToPlainString(f.t.fnO3hK, {
                             count: e.attachments.length
                         }),
                         trailingIcon: "audio"
                     } : {
                         type: "text",
-                        text: A.intl.formatToPlainString(A.t["89ihS8"], {
+                        text: f.intl.formatToPlainString(f.t["89ihS8"], {
                             count: e.attachments.length
                         }),
                         trailingIcon: "attachment"
@@ -101,21 +102,21 @@ function f(e, t) {
                         l = !t && !n && e.embeds.every(e => null != e.url && (0, u.L8)(e.url));
                     if (t) return {
                         type: "text",
-                        text: A.intl.formatToPlainString(A.t.h4pFfU, {
+                        text: f.intl.formatToPlainString(f.t.h4pFfU, {
                             count: e.embeds.length
                         }),
                         trailingIcon: "image"
                     };
                     if (n) return {
                         type: "text",
-                        text: A.intl.formatToPlainString(A.t.SJ6pPX, {
+                        text: f.intl.formatToPlainString(f.t.SJ6pPX, {
                             count: e.embeds.length
                         }),
                         trailingIcon: "video"
                     };
                     if (l) return {
                         type: "text",
-                        text: A.intl.formatToPlainString(A.t.fnO3hK, {
+                        text: f.intl.formatToPlainString(f.t.fnO3hK, {
                             count: e.embeds.length
                         }),
                         trailingIcon: "audio"
@@ -130,7 +131,7 @@ function f(e, t) {
                     };
                     else return {
                         type: "text",
-                        text: A.intl.formatToPlainString(A.t["9XuYjs"], {
+                        text: f.intl.formatToPlainString(f.t["9XuYjs"], {
                             count: e.embeds.length
                         }),
                         trailingIcon: "link"
@@ -142,12 +143,12 @@ function f(e, t) {
                     trailingIcon: "sticker"
                 } : e.isPoll() ? {
                     type: "text",
-                    text: A.intl.formatToPlainString(A.t.ImizdM, {
+                    text: f.intl.formatToPlainString(f.t.ImizdM, {
                         question: e.poll?.question.text
                     })
                 } : (0, a.A)(e) ? {
                     type: "text",
-                    text: A.intl.string(A.t["9ddYKt"])
+                    text: f.intl.string(f.t["9ddYKt"])
                 } : void 0
             }(e);
             if (null != t) return {
@@ -155,7 +156,7 @@ function f(e, t) {
                 authorLabel: s
             }
         }
-        let o = function(e, t) {
+        let d = function(e, t) {
             let {
                 currentUserId: n,
                 authorNick: r,
@@ -165,7 +166,7 @@ function f(e, t) {
             } = t;
             return e.type === i.l.RECIPIENT_ADD && null != a ? {
                 type: "text",
-                text: A.intl.formatToPlainString(A.t.MMN2Jq, {
+                text: f.intl.formatToPlainString(f.t.MMN2Jq, {
                     username: r,
                     usernameHook: l.identity,
                     otherUsername: a,
@@ -173,10 +174,10 @@ function f(e, t) {
                 })
             } : e.type === i.l.RECIPIENT_REMOVE && null != a ? {
                 type: "text",
-                text: e.author.id === s?.id ? A.intl.formatToPlainString(A.t["5v2xa8"], {
+                text: e.author.id === s?.id ? f.intl.formatToPlainString(f.t["5v2xa8"], {
                     username: r,
                     usernameHook: l.identity
-                }) : A.intl.formatToPlainString(A.t.L2FyVq, {
+                }) : f.intl.formatToPlainString(f.t.L2FyVq, {
                     username: r,
                     usernameHook: l.identity,
                     otherUsername: a,
@@ -184,37 +185,37 @@ function f(e, t) {
                 })
             } : e.type === i.l.CALL ? {
                 type: "text",
-                text: u ? A.intl.string(A.t["NGg/fm"]) : null == e.call || e.call.participants.includes(n) ? A.intl.string(A.t.v05Xd6) : A.intl.string(A.t["2CnhoI"]),
+                text: u ? f.intl.string(f.t["NGg/fm"]) : null == e.call || e.call.participants.includes(n) ? f.intl.string(f.t.v05Xd6) : f.intl.string(f.t["2CnhoI"]),
                 color: u ? "text-feedback-positive" : void 0,
                 trailingIcon: u ? "call-active" : "call-ended"
             } : e.type === i.l.CHANNEL_NAME_CHANGE ? {
                 type: "text",
-                text: A.intl.formatToPlainString(A.t.oItgEw, {
+                text: f.intl.formatToPlainString(f.t.oItgEw, {
                     username: r,
                     usernameHook: l.identity,
                     channelName: e.content
                 })
             } : e.type === i.l.CHANNEL_ICON_CHANGE ? {
                 type: "text",
-                text: A.intl.formatToPlainString(A.t.OEdU6X, {
+                text: f.intl.formatToPlainString(f.t.OEdU6X, {
                     username: r,
                     usernameHook: l.identity
                 })
             } : e.type === i.l.CHANNEL_PINNED_MESSAGE ? {
                 type: "text",
-                text: A.intl.formatToPlainString(A.t.vfkjqx, {
+                text: f.intl.formatToPlainString(f.t.vfkjqx, {
                     username: r,
                     usernameHook: l.identity
                 })
             } : e.type === i.l.USER_JOIN ? {
                 type: "text",
-                text: A.intl.formatToPlainString(g.A.getSystemMessageUserJoin(e.id), {
+                text: f.intl.formatToPlainString(I.A.getSystemMessageUserJoin(e.id), {
                     username: r,
                     usernameHook: l.identity
                 })
             } : e.type === i.l.THREAD_CREATED ? {
                 type: "text",
-                text: A.intl.formatToPlainString(A.t.SGaUAU, {
+                text: f.intl.formatToPlainString(f.t.SGaUAU, {
                     actorName: r,
                     actorHook: l.identity,
                     threadName: e.content,
@@ -222,21 +223,51 @@ function f(e, t) {
                 })
             } : e.type === i.l.PREMIUM_REFERRAL ? {
                 type: "text",
-                text: A.intl.formatToPlainString(A.t.lieTqU, {
+                text: f.intl.formatToPlainString(f.t.lieTqU, {
                     username: r
                 })
+            } : e.type === i.l.STAGE_START ? {
+                type: "text",
+                text: f.intl.formatToPlainString(f.t.aZtRW8, {
+                    username: r,
+                    usernameOnClick: l.identity,
+                    topic: e.content
+                })
+            } : e.type === i.l.STAGE_END ? {
+                type: "text",
+                text: f.intl.formatToPlainString(f.t.vMJhvG, {
+                    username: r,
+                    usernameOnClick: l.identity,
+                    topic: e.content
+                })
+            } : e.type === i.l.STAGE_SPEAKER ? {
+                type: "text",
+                text: f.intl.formatToPlainString(f.t.V4uCm4, {
+                    username: r,
+                    usernameOnClick: l.identity
+                })
+            } : e.type === i.l.STAGE_TOPIC ? {
+                type: "text",
+                text: f.intl.formatToPlainString(f.t.ro3RM0, {
+                    username: r,
+                    usernameOnClick: l.identity,
+                    topic: e.content
+                })
+            } : e.type === i.l.VOICE_SESSION ? {
+                type: "text",
+                text: (0, o.fn)(e)
             } : void 0
         }(e, t);
-        if (null != o) return o
+        if (null != d) return d
     }(e, {
         message: e,
         channel: t,
-        currentUserId: m,
-        authorNick: _,
-        otherUser: p,
-        otherUserNick: N,
+        currentUserId: S,
+        authorNick: p,
+        otherUser: N,
+        otherUserNick: T,
         isBlocked: n,
-        isIgnored: f,
-        isCallActive: E
+        isIgnored: E,
+        isCallActive: m
     })
 }

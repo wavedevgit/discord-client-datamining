@@ -14,13 +14,13 @@ let s = e => {
         height: s,
         color: o = l.A.colors.INTERACTIVE_TEXT_DEFAULT,
         colorClass: u = "",
-        ...c
-    } = e, d = (0, a.J)(t), m = d?.width ?? n, p = d?.height ?? s;
+        ...d
+    } = e, c = (0, a.J)(t), m = c?.width ?? n, h = c?.height ?? s;
     return (0, r.jsx)("svg", {
-        ...(0, i.A)(c),
+        ...(0, i.A)(d),
         xmlns: "http://www.w3.org/2000/svg",
         width: m,
-        height: p,
+        height: h,
         fill: "none",
         viewBox: "0 0 24 24",
         children: (0, r.jsx)("path", {

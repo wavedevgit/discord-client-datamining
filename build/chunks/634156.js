@@ -14,11 +14,11 @@ let s = e => {
         height: s,
         color: o = l.A.colors.INTERACTIVE_TEXT_DEFAULT,
         ...u
-    } = e, c = (0, a.J)(t), d = c?.width ?? n, m = c?.height ?? s;
+    } = e, d = (0, a.J)(t), c = d?.width ?? n, m = d?.height ?? s;
     return (0, r.jsxs)("svg", {
         ...(0, i.A)(u),
         xmlns: "http://www.w3.org/2000/svg",
-        width: d,
+        width: c,
         height: m,
         fill: "none",
         viewBox: "0 0 32 32",

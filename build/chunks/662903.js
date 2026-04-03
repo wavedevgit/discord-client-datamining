@@ -16,17 +16,17 @@ function u(e, t) {
     let {
         src: n,
         initialTimeSec: u = 0,
-        onError: c,
-        onHlsInstance: d
-    } = t, m = r.useRef(null), p = r.useRef(u);
-    p.current = u;
-    let f = r.useRef(c),
-        h = r.useRef(d);
+        onError: d,
+        onHlsInstance: c
+    } = t, m = r.useRef(null), h = r.useRef(u);
+    h.current = u;
+    let p = r.useRef(d),
+        f = r.useRef(c);
     r.useEffect(() => {
+        p.current = d
+    }, [d]), r.useEffect(() => {
         f.current = c
-    }, [c]), r.useEffect(() => {
-        h.current = d
-    }, [d]);
+    }, [c]);
     let x = null != n && n.split("?")[0].endsWith(".m3u8") && l.Ay.isSupported();
     return r.useEffect(() => {
         if (!x || null == n || null == e.current) return;
@@ -34,13 +34,13 @@ function u(e, t) {
             r = new l.Ay({
                 backBufferLength: s,
                 maxBufferLength: o,
-                startPosition: p.current,
+                startPosition: h.current,
                 startFragPrefetch: !0,
                 startLevel: -1
             });
-        m.current = r, h.current?.(r);
+        m.current = r, f.current?.(r);
         let u = 0,
-            c = () => {
+            d = () => {
                 r.mainForwardBufferInfo?.len === 0 && r.trigger(l.Ay.Events.BUFFER_FLUSHING, {
                     startOffset: t.currentTime,
                     endOffset: 1 / 0,
@@ -50,7 +50,7 @@ function u(e, t) {
         return r.on(l.Ay.Events.FRAG_LOADING, () => {
             r.config.minAutoBitrate !== i && (r.config.minAutoBitrate = i)
         }), r.on(l.Ay.Events.ERROR, (e, t) => {
-            if (f.current?.(function(e) {
+            if (p.current?.(function(e) {
                     switch (e) {
                         case l.Ay.ErrorTypes.NETWORK_ERROR:
                             return a.SB.HLS_NETWORK_ERROR;
@@ -68,7 +68,7 @@ function u(e, t) {
                     fatal: t.fatal
                 }), t.fatal) {
                 if (u >= 3) {
-                    r.destroy(), m.current = null, h.current?.(null);
+                    r.destroy(), m.current = null, f.current?.(null);
                     return
                 }
                 switch (u++, t.type) {
@@ -79,11 +79,11 @@ function u(e, t) {
                         r.recoverMediaError();
                         break;
                     default:
-                        r.destroy(), m.current = null, h.current?.(null)
+                        r.destroy(), m.current = null, f.current?.(null)
                 }
             }
-        }), t.addEventListener("seeking", c), r.loadSource(n), r.attachMedia(t), () => {
-            t.removeEventListener("seeking", c), m.current === r && (r.destroy(), m.current = null, h.current?.(null)), t.removeAttribute("src"), t.load()
+        }), t.addEventListener("seeking", d), r.loadSource(n), r.attachMedia(t), () => {
+            t.removeEventListener("seeking", d), m.current === r && (r.destroy(), m.current = null, f.current?.(null)), t.removeAttribute("src"), t.load()
         }
     }, [x, n, e]), {
         isHlsActive: x,

@@ -3,16 +3,16 @@ r.d(t, {
     Q: () => i,
     Y: () => s
 });
-var a = r(892227),
-    n = r(649032);
+var n = r(892227),
+    a = r(649032);
 
 function i(e, t) {
     if (!t || null == e) return !1;
     let r = e.next_reward_date,
-        a = e.program_current_state;
-    if (null == a) return !1;
+        n = e.program_current_state;
+    if (null == n) return !1;
     if (null == r || "" === r) {
-        if (![n.L.PAYMENT_PROCESSING, n.L.PAYMENT_ERROR].includes(a)) return !1
+        if (![a.L.PAYMENT_PROCESSING, a.L.PAYMENT_ERROR].includes(n)) return !1
     } else {
         let e = new Date(r).getTime();
         if (Number.isNaN(e) || e < Date.now()) return !1
@@ -22,8 +22,8 @@ function i(e, t) {
 
 function s(e, t, r) {
     if (!r || null == e || null == t) return !1;
-    let n = e.next_reward_date;
-    if (null == n || "" === n) return !1;
-    let i = new Date(n).getTime();
-    return !(Number.isNaN(i) || i <= Date.now() || (0, a.default)(new Date(n), new Date) > t)
+    let a = e.next_reward_date;
+    if (null == a || "" === a) return !1;
+    let i = new Date(a).getTime();
+    return !(Number.isNaN(i) || i <= Date.now() || (0, n.default)(new Date(a), new Date) > t)
 }
