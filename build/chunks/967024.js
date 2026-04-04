@@ -1,5 +1,5 @@
 /** chunk id: 967024 params = (module,exports,require) **/
-t.r(e.exports = {
+i.r(e.exports = {
     tileWrapper: "tileWrapper__4e9aa",
     overlay: "overlay__4e9aa",
     deleteButtonWrapper: "deleteButtonWrapper__4e9aa",

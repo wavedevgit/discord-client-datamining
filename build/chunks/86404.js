@@ -1,24 +1,24 @@
 /** chunk id: 86404 params = (module,exports,require) **/
-t.d(n, {
+i.d(n, {
     A: () => x
 });
-var i = t(627968),
-    a = t(64700),
-    l = t(397927),
-    s = t(163126),
-    r = t(688810),
-    d = t(183555),
-    o = t(913453),
-    c = t(229187),
-    u = t(657331),
-    A = t(503062),
-    _ = t(985018),
-    p = t(643146);
+var t = i(627968),
+    a = i(64700),
+    l = i(397927),
+    s = i(163126),
+    r = i(688810),
+    d = i(183555),
+    o = i(913453),
+    c = i(229187),
+    u = i(657331),
+    _ = i(503062),
+    A = i(985018),
+    p = i(643146);
 
 function x(e) {
     let {
         user: n,
-        guildId: t,
+        guildId: i,
         channelId: x,
         onClose: g
     } = e, {
@@ -31,19 +31,19 @@ function x(e) {
     } = (0, d.NJ)(), h = (0, s.A)();
     return a.useEffect(() => {
         (0, c.A)(n.id, h)
-    }, [n.id, h]), (0, i.jsx)(l.IpV, {
+    }, [n.id, h]), (0, t.jsx)(l.IpV, {
         className: p.DK,
         fade: !0,
-        children: null == m ? (0, i.jsx)("div", {
+        children: null == m ? (0, t.jsx)("div", {
             className: p.Ie,
-            children: (0, i.jsx)(l.y$y, {})
-        }) : 0 === m.length ? (0, i.jsxs)("div", {
+            children: (0, t.jsx)(l.y$y, {})
+        }) : 0 === m.length ? (0, t.jsxs)("div", {
             className: p.Ie,
-            children: [(0, i.jsx)("div", {
+            children: [(0, t.jsx)("div", {
                 className: p.on
-            }), (0, i.jsx)("div", {
+            }), (0, t.jsx)("div", {
                 className: p.BI,
-                children: _.intl.string(_.t["/5p4gx"])
+                children: A.intl.string(A.t["/5p4gx"])
             })]
         }) : m.map(e => {
             let {
@@ -51,10 +51,10 @@ function x(e) {
                 user: a,
                 status: l
             } = e;
-            return (0, i.jsx)(A.A, {
+            return (0, t.jsx)(_.A, {
                 user: a,
                 status: l,
-                guildId: t,
+                guildId: i,
                 channelId: x,
                 onSelect: () => {
                     var e;

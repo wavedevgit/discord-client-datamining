@@ -1,55 +1,55 @@
 /** chunk id: 738759 params = (module,exports,require) **/
-t.d(n, {
-    A: () => A
+i.d(n, {
+    A: () => _
 });
-var i = t(627968);
-t(64700);
-var a = t(397927),
-    l = t(398590),
-    s = t(345942),
-    r = t(183555),
-    d = t(913453),
-    o = t(51943),
-    c = t(985018),
-    u = t(643146);
+var t = i(627968);
+i(64700);
+var a = i(397927),
+    l = i(398590),
+    s = i(345942),
+    r = i(183555),
+    d = i(913453),
+    o = i(51943),
+    c = i(985018),
+    u = i(643146);
 
-function A(e) {
+function _(e) {
     let {
         user: n,
-        onClose: t
+        onClose: i
     } = e, {
-        trackUserProfileAction: A
+        trackUserProfileAction: _
     } = (0, r.NJ)(), {
-        mutualGuilds: _,
+        mutualGuilds: A,
         isFetching: p
     } = (0, d.A)(n);
-    return (0, i.jsx)(a.IpV, {
+    return (0, t.jsx)(a.IpV, {
         className: u.DK,
         fade: !0,
-        children: null == _ && p ? (0, i.jsx)("div", {
+        children: null == A && p ? (0, t.jsx)("div", {
             className: u.Ie,
-            children: (0, i.jsx)(a.y$y, {})
-        }) : (null != _ || p) && _?.length !== 0 ? _?.map(e => {
+            children: (0, t.jsx)(a.y$y, {})
+        }) : (null != A || p) && A?.length !== 0 ? A?.map(e => {
             let {
                 guild: a,
                 nick: r
             } = e;
-            return (0, i.jsx)(o.A, {
+            return (0, t.jsx)(o.A, {
                 user: n,
                 guild: a,
                 nick: r,
                 onSelect: () => {
                     var e;
-                    A({
+                    _({
                         action: "PRESS_MUTUAL_GUILD"
-                    }), e = a.id, (0, s.u)(e), t(), (0, l.jH)()
+                    }), e = a.id, (0, s.u)(e), i(), (0, l.jH)()
                 }
             }, a.id)
-        }) : (0, i.jsxs)("div", {
+        }) : (0, t.jsxs)("div", {
             className: u.Ie,
-            children: [(0, i.jsx)("div", {
+            children: [(0, t.jsx)("div", {
                 className: u.vC
-            }), (0, i.jsx)("div", {
+            }), (0, t.jsx)("div", {
                 className: u.BI,
                 children: c.intl.string(c.t.zjVh8h)
             })]

@@ -1,51 +1,51 @@
 /** chunk id: 473219 params = (module,exports,require) **/
-t.d(n, {
+i.d(n, {
     W: () => g
 });
-var i = t(627968),
-    a = t(64700),
-    l = t(311907),
-    s = t(688810),
-    r = t(512213),
-    d = t(637193),
-    o = t(919395),
-    c = t(287809),
-    u = t(84540),
-    A = t(930349),
-    _ = t(985018),
-    p = t(432856);
+var t = i(627968),
+    a = i(64700),
+    l = i(311907),
+    s = i(688810),
+    r = i(512213),
+    d = i(637193),
+    o = i(919395),
+    c = i(287809),
+    u = i(84540),
+    _ = i(930349),
+    A = i(985018),
+    p = i(432856);
 
 function x(e) {
     let {
         user: n,
-        guildId: t
+        guildId: i
     } = e, {
         analyticsLocations: l
-    } = (0, s.Ay)(), c = null != t, {
+    } = (0, s.Ay)(), c = null != i, {
         guildNameplate: x,
         pendingNameplate: g
-    } = (0, o.rv)(n, t ?? void 0), m = (0, o.lw)({
+    } = (0, o.rv)(n, i ?? void 0), m = (0, o.lw)({
         pendingValue: g,
         userValue: n.collectibles?.nameplate,
         guildValue: x,
-        guildId: t ?? void 0
+        guildId: i ?? void 0
     }), I = void 0 !== g, f = c ? x : n.collectibles?.nameplate, b = a.useCallback(() => {
         (0, d.p)({
             analyticsLocations: l,
-            guildId: t ?? void 0,
+            guildId: i ?? void 0,
             stackingBehavior: "stack"
         })
-    }, [l, t]);
-    if (null == m) return (0, i.jsx)(A.k, {
+    }, [l, i]);
+    if (null == m) return (0, t.jsx)(_.k, {
         variant: "bar",
         onClick: b,
-        accessibleLabel: _.intl.string(_.t.BwdeM1),
-        children: (0, i.jsx)("div", {
+        accessibleLabel: A.intl.string(A.t.BwdeM1),
+        children: (0, t.jsx)("div", {
             className: p.M,
             "aria-hidden": !0,
-            children: (0, i.jsx)(r.A, {
+            children: (0, t.jsx)(r.A, {
                 user: n,
-                guildId: t ?? void 0,
+                guildId: i ?? void 0,
                 nameplate: m
             })
         })
@@ -54,23 +54,23 @@ function x(e) {
         v = c && n.collectibles?.nameplate != null,
         j = h ? {
             onClick: () => (0, u.p)({
-                guildId: t ?? void 0,
+                guildId: i ?? void 0,
                 nameplate: null
             }),
             type: v ? "reset" : "remove",
-            accessibleLabel: _.intl.string(v ? _.t.GaEG4t : _.t["2A+piL"])
+            accessibleLabel: A.intl.string(v ? A.t.GaEG4t : A.t["2A+piL"])
         } : void 0;
-    return (0, i.jsx)(A.N, {
+    return (0, t.jsx)(_.N, {
         variant: "bar",
         onClick: b,
-        accessibleLabel: _.intl.string(_.t.BwdeM1),
+        accessibleLabel: A.intl.string(A.t.BwdeM1),
         deleteButtonConfig: j,
-        children: (0, i.jsx)("div", {
+        children: (0, t.jsx)("div", {
             className: p.M,
             "aria-hidden": !0,
-            children: (0, i.jsx)(r.A, {
+            children: (0, t.jsx)(r.A, {
                 user: n,
-                guildId: t ?? void 0,
+                guildId: i ?? void 0,
                 nameplate: m
             })
         })
@@ -80,9 +80,9 @@ function x(e) {
 function g(e) {
     let {
         guildId: n
-    } = e, t = (0, l.bG)([c.default], () => c.default.getCurrentUser());
-    return null == t ? null : (0, i.jsx)(x, {
-        user: t,
+    } = e, i = (0, l.bG)([c.default], () => c.default.getCurrentUser());
+    return null == i ? null : (0, t.jsx)(x, {
+        user: i,
         guildId: n
     })
 }
