@@ -13,8 +13,8 @@ var r = n(627968),
     c = n(669550),
     d = n(894858),
     h = n(272053),
-    m = n(397274),
-    f = n(776644);
+    f = n(397274),
+    m = n(776644);
 
 function p(e) {
     let {
@@ -54,7 +54,7 @@ function p(e) {
         animateSidebarScroll: !1,
         showNavigationMobile: null == n
     }), k(!1), () => {
-        h.A.reset(), m.A.reset(), d.A.resetState()
+        h.A.reset(), f.A.reset(), d.A.resetState()
     }));
     let L = i.useMemo(() => ({
             visibleDirectory: N,
@@ -64,7 +64,7 @@ function p(e) {
     return (0, r.jsx)(u.x.Provider, {
         value: L,
         children: (0, r.jsxs)("div", {
-            className: f.k,
+            className: m.k,
             children: [(0, r.jsx)(s.L, {
                 root: b,
                 onClose: T,

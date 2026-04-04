@@ -13,8 +13,8 @@ var r = n(627968),
     c = n(928039),
     d = n(932001),
     h = n(97469),
-    m = n(199966),
-    f = n(894858),
+    f = n(199966),
+    m = n(894858),
     p = n(397274),
     _ = n(189857),
     v = n(188180),
@@ -29,9 +29,9 @@ function E(e) {
         footer: l,
         emptyState: v,
         searchBar: E
-    } = e, S = f.A.useField("showNavigationMobile"), b = i.useRef(null), [N] = i.useState(t), {
+    } = e, S = m.A.useField("showNavigationMobile"), b = i.useRef(null), [N] = i.useState(t), {
         accessibleDirectory: C
-    } = (0, m._)(), j = i.useMemo(() => (0, _.Z)(N, C), [N, C]), [R] = (0, d.kn)(j.allDismissibleContents);
+    } = (0, f._)(), j = i.useMemo(() => (0, _.Z)(N, C), [N, C]), [R] = (0, d.kn)(j.allDismissibleContents);
     (0, y.B)({
         visibleContent: R,
         dismissibleBadges: j,
