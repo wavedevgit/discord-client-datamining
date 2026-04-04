@@ -1,6 +1,6 @@
 /** chunk id: 300093 params = (module,exports,require) **/
 n.d(t, {
-    A: () => b
+    A: () => E
 });
 var i = n(627968),
     s = n(64700),
@@ -22,13 +22,13 @@ var i = n(627968),
     f = n(985018),
     S = n(502040);
 
-function b() {
+function E() {
     let [e, t] = s.useState(!1), {
         oopEnabled: n,
-        legacyEnabled: b
-    } = (0, l.cf)([g.default], () => g.default.getGlobalEnabledStatus()), E = !(0, A.supportsOutOfProcess)(), C = (0, l.yK)([c.Ay], () => c.Ay.getGamesSeen(!0)).filter(e => !(0, x.n1)(e)), N = (0, d.A)(C.map(e => e.id)), v = e => {
+        legacyEnabled: E
+    } = (0, l.cf)([g.default], () => g.default.getGlobalEnabledStatus()), b = !(0, A.supportsOutOfProcess)(), C = (0, l.yK)([c.Ay], () => c.Ay.getGamesSeen(!0)).filter(e => !(0, x.n1)(e)), N = (0, d.A)(C.map(e => e.id)), v = e => {
         let t = !e && n;
-        o.A.setEnabled(b, e);
+        o.A.setEnabled(E, e);
         let i = c.Ay.getCurrentGameForAnalytics()?.id ?? null;
         (0, u.Q3)(e, u.OverlayToggledClientSettingType.OOP, i), t && (0, _.L)(u.OverlayToggledClientSettingType.OOP, i)
     }, I = (e, t, n) => {
@@ -36,7 +36,7 @@ function b() {
             enabledLegacy: i
         } = n;
         r.A.toggleOverlay(t, e, i)
-    }, j = s.useMemo(() => m.O ? E ? f.intl.string(f.t.C7bLTQ) : f.intl.string(f.t.ndgADE) : f.intl.string(f.t.m7X4az), [E]);
+    }, j = s.useMemo(() => m.O ? b ? f.intl.string(f.t.C7bLTQ) : f.intl.string(f.t.ndgADE) : f.intl.string(f.t.m7X4az), [b]);
     return 0 === C.length ? (0, i.jsx)(T.A, {
         title: f.intl.string(f.t["7BlVIs"]),
         description: j,
@@ -45,7 +45,7 @@ function b() {
         action: (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)(a.dOG, {
                 checked: n,
-                disabled: E,
+                disabled: b,
                 onChange: e => v(e)
             }), m.O && (0, i.jsx)("div", {
                 className: S.Kz
@@ -61,7 +61,7 @@ function b() {
             onClick: e => (0, T.$)(e),
             children: (0, i.jsx)(a.dOG, {
                 checked: n,
-                disabled: E,
+                disabled: b,
                 onChange: e => v(e)
             })
         }),
@@ -78,7 +78,7 @@ function b() {
                 rawGame: e,
                 clientSettingType: u.OverlayToggledClientSettingType.OOP_GAME,
                 gameApplication: N[t],
-                supportDisabled: E,
+                supportDisabled: b,
                 getEnabledFromStatus: e => {
                     let {
                         enabledOOP: t

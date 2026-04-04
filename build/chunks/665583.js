@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var a = n(681154),
-    r = n(900062),
-    l = n(470881),
+    l = n(900062),
+    r = n(470881),
     s = n(497302),
     o = n(670861);
 
@@ -27,12 +27,12 @@ function d(e) {
         case "contentInventory":
             switch (t.data.content.content_type) {
                 case a.ContentInventoryEntryType.CUSTOM_STATUS:
-                    return (0, i.jsx)(r.A, {
+                    return (0, i.jsx)(l.A, {
                         item: t
                     });
                 case a.ContentInventoryEntryType.PLAYED_GAME:
                 case a.ContentInventoryEntryType.TOP_GAME:
-                    return (0, i.jsx)(l.A, {
+                    return (0, i.jsx)(r.A, {
                         item: t
                     });
                 default:

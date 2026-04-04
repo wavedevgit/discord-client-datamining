@@ -42,7 +42,7 @@ function c() {
 }
 
 function u() {
-    let [e, t] = i.useState(null), [n, s] = i.useState(null), [r, o] = i.useState(null), [c, u] = i.useState([]), x = i.useRef(null), [p, g] = i.useState(400), [f, _] = i.useState(400), v = i.useCallback(() => {
+    let [e, t] = i.useState(null), [n, s] = i.useState(null), [r, o] = i.useState(null), [c, u] = i.useState([]), x = i.useRef(null), [p, g] = i.useState(400), [_, f] = i.useState(400), v = i.useCallback(() => {
         setTimeout(() => {
             o(x.current?.getProperties() ?? {}), u(x.current?.getArtboards() ?? []), s({})
         }, 1e3)
@@ -65,7 +65,7 @@ function u() {
         }), null != e && (0, a.jsx)("div", {
             style: {
                 width: p,
-                height: f
+                height: _
             },
             children: (0, a.jsx)(d._7m, {
                 src: e,
@@ -87,8 +87,8 @@ function u() {
                 }), (0, a.jsx)(d.ksK, {
                     type: "number",
                     label: "height",
-                    value: f.toString(),
-                    onChange: e => _(parseInt(e))
+                    value: _.toString(),
+                    onChange: e => f(parseInt(e))
                 })]
             }), (0, a.jsxs)(l.BJc, {
                 gap: 8,

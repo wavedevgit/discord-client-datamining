@@ -43,11 +43,11 @@ function j(e) {
     }), O = (0, a.bG)([s.A], () => s.A.isFetchingUserOutbox(n.id)), P = n.id === t.id, S = (0, a.bG)([d.A, r.A], () => {
         let e = P ? d.A.getStatus() : r.A.getStatus(n.id);
         return e === l.clD.OFFLINE || e === l.clD.INVISIBLE
-    }), k = (0, a.bG)([c.A], () => c.A.getUserProfile(n.id)?.private === !0), M = y.length > 0 || null != E, R = !k && null == E && null == L && null != T, B = !S && (M || R), G = N.length > 0;
-    return B || G || !O ? (0, i.jsxs)(l.IpV, {
+    }), k = (0, a.bG)([c.A], () => c.A.getUserProfile(n.id)?.private === !0), M = y.length > 0 || null != E, B = !k && null == E && null == L && null != T, R = !S && (M || B), G = N.length > 0;
+    return R || G || !O ? (0, i.jsxs)(l.IpV, {
         className: h.XG,
         fade: !0,
-        children: [B ? (0, i.jsx)(_.A, {
+        children: [R ? (0, i.jsx)(_.A, {
             "aria-label": b.intl.string(b.t.J6STd9),
             children: (0, i.jsxs)("ul", {
                 className: h.Ci,
@@ -65,7 +65,7 @@ function j(e) {
                         activity: e,
                         onClose: C
                     })
-                }, `live-${a}`)), R && (0, i.jsx)("li", {
+                }, `live-${a}`)), B && (0, i.jsx)("li", {
                     children: (0, i.jsx)(m.A, {
                         user: n,
                         currentUser: t,

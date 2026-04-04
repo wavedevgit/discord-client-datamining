@@ -1,9 +1,13 @@
 /** chunk id: 565702 params = (module,exports,require) **/
-"use strict";
-e.exports = {
-    nM: "row__89036",
-    my: "avatar__89036",
-    zH: "details__89036",
-    Tc: "tag__89036",
-    D2: "discriminator__89036"
-}
+n.d(t, {
+    F: () => o
+});
+var i = n(419954),
+    s = n(780964),
+    l = n(540508),
+    a = n(985018),
+    r = n(536482);
+let o = (0, i.E2)(s.X.ACTIVITY_PRIVACY_PER_GUILD_SETTING, {
+    useSearchTerms: () => [a.intl.string(r.default["/LHVbt"])],
+    Component: l.d
+})

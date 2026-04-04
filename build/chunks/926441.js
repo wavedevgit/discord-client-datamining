@@ -4,9 +4,9 @@ n.d(t, {
 });
 var i = n(64700),
     a = n(498419),
-    r = n.n(a),
-    l = n(481613),
-    s = n.n(l),
+    l = n.n(a),
+    r = n(481613),
+    s = n.n(r),
     o = n(311907),
     d = n(800828),
     c = n(912309),
@@ -23,7 +23,7 @@ let f = new Set(["Blink", "Gecko", "WebKit"]),
     C = E.tEg;
 if (m.isPlatformEmbedded) C = e => p.Ay.setBadge(e);
 else if (f.has(s().layout)) {
-    let e = new(r())({
+    let e = new(l())({
         animation: "none"
     });
     C = t => {

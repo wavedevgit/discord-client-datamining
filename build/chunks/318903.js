@@ -24,13 +24,13 @@ function u(e) {
         parentSidebarItemNode: h
     } = (0, a.x)(n), p = m?.(), T = A?.useTitle?.(), f = p ?? T, S = (0, r.q)(t);
     if (null == A || null == f) return null;
-    let b = null != h ? h.icon : void 0;
+    let E = null != h ? h.icon : void 0;
     return (0, i.jsx)(o.U, {
         title: f,
         description: x,
-        leadingElement: null != b && (0, i.jsx)("div", {
+        leadingElement: null != E && (0, i.jsx)("div", {
             className: c.z,
-            children: (0, i.jsx)(b, {
+            children: (0, i.jsx)(E, {
                 color: "currentColor"
             })
         }),

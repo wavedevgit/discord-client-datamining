@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     a = n(64700),
-    r = n(884362),
-    l = n(837381),
+    l = n(884362),
+    r = n(837381),
     s = n(311907),
     o = n(73939),
     d = n(397927),
@@ -21,7 +21,7 @@ let h = function(e) {
         sectionFilter: m,
         footer: p,
         renderSectionFooter: g
-    } = e, E = (0, s.bG)([c.A], () => c.A.keyboardModeEnabled), I = (0, s.bG)([c.A], () => c.A.useReducedMotion), f = (0, r.Ay)({
+    } = e, E = (0, s.bG)([c.A], () => c.A.keyboardModeEnabled), I = (0, s.bG)([c.A], () => c.A.useReducedMotion), f = (0, l.Ay)({
         id: "people",
         isEnabled: E,
         async scrollToStart() {},
@@ -33,9 +33,9 @@ let h = function(e) {
         component: "div",
         children: [h(t), e.map(e => n(e, t)), g?.(t)]
     }, t)), [n, h, g, t, T]);
-    return (0, i.jsx)(l.hD, {
+    return (0, i.jsx)(r.hD, {
         navigator: f,
-        children: (0, i.jsx)(l.PR, {
+        children: (0, i.jsx)(r.PR, {
             children: e => {
                 let {
                     ref: t,

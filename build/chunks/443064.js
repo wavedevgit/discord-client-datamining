@@ -21,8 +21,8 @@ var i = n(627968),
     T = n(557722),
     f = n(207560),
     S = n(836602),
-    b = n(591179),
-    E = n(262),
+    E = n(591179),
+    b = n(262),
     C = n(950191),
     N = n(854627),
     v = n(657331),
@@ -45,7 +45,7 @@ var i = n(627968),
 let H = L.Ay.getEnableHardwareAcceleration() ? c.JsQ : c.euF;
 
 function z(e) {
-    let t = (0, b.X)("UserSettingsAccountProfileCard");
+    let t = (0, E.X)("UserSettingsAccountProfileCard");
     return s.useCallback(() => {
         t ? (0, v.openUserProfileModal)({
             userId: e
@@ -458,7 +458,7 @@ function Q(e) {
 function J(e) {
     let {
         currentUser: t
-    } = e, n = z(t.id), s = (0, C.Ay)(t.id), l = (0, E.A)(s), a = D.jP.useSetting(), o = (0, r.bG)([S.A], () => S.A.getErrors()), d = o?.avatar?.[0], {
+    } = e, n = z(t.id), s = (0, C.Ay)(t.id), l = (0, b.A)(s), a = D.jP.useSetting(), o = (0, r.bG)([S.A], () => S.A.getErrors()), d = o?.avatar?.[0], {
         avatarSrc: m,
         avatarDecorationSrc: g
     } = (0, N.A)({

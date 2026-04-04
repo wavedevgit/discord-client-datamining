@@ -40,8 +40,8 @@ function k(e) {
         currentUser: t,
         guildId: k,
         originGuildId: M,
-        channelId: R,
-        messageId: B,
+        channelId: B,
+        messageId: R,
         roleId: G,
         sessionId: D,
         initialTabSection: U,
@@ -49,20 +49,20 @@ function k(e) {
         transitionState: F,
         onClose: w,
         sourceAnalyticsLocations: W = []
-    } = e, H = k === L.ME ? void 0 : k, z = (0, u.Ay)(n.id, H), Y = o.Ay.getName(H, R, n), X = (0, d.GV)(), {
+    } = e, H = k === L.ME ? void 0 : k, z = (0, u.Ay)(n.id, H), Y = o.Ay.getName(H, B, n), X = (0, d.GV)(), {
         analyticsLocations: K
     } = (0, r.Ay)([...W, s.A.USER_PROFILE_MODAL]), Q = (0, c.pb)({
         layout: "MODAL",
         userId: n.id,
         sourceSessionId: D,
         guildId: H,
-        channelId: R,
-        messageId: B,
+        channelId: B,
+        messageId: R,
         roleId: G
     }), J = (0, E.A)(n), q = (0, A.A)({
         user: n,
         guildId: M,
-        channelId: R,
+        channelId: B,
         displayProfile: z,
         onClose: w
     });
@@ -110,7 +110,7 @@ function k(e) {
                                         user: n,
                                         displayProfile: z,
                                         guildId: H,
-                                        channelId: R,
+                                        channelId: B,
                                         themeType: O.d.MODAL
                                     }), (0, i.jsx)(y.A, {
                                         user: n,

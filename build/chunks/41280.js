@@ -33,19 +33,19 @@ function p(e) {
         })
     }, 20), [n, s]);
     i.useEffect(() => (window.addEventListener("mousemove", g), () => window.removeEventListener("mousemove", g)), [g]);
-    let [f, _] = (0, u.zhh)(() => ({
+    let [_, f] = (0, u.zhh)(() => ({
         x: 0,
         y: 0,
         config: x
     }));
     return i.useEffect(() => {
-        _({
+        f({
             x: r.x,
             y: r.y
         })
-    }, [r.x, r.y, _]), (0, a.jsx)(d.animated.div, {
+    }, [r.x, r.y, f]), (0, a.jsx)(d.animated.div, {
         style: {
-            transform: (0, d.to)([f.x, f.y], (e, t) => `translate3d(${e}px, ${t}px, 0)`)
+            transform: (0, d.to)([_.x, _.y], (e, t) => `translate3d(${e}px, ${t}px, 0)`)
         },
         className: l()(h.T, t)
     })

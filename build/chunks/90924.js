@@ -20,8 +20,8 @@ n.d(t, {
 }), n(321073), n(938796), n(735438);
 var i = n(567243),
     a = n(179771),
-    r = n(562465),
-    l = n(898467),
+    l = n(562465),
+    r = n(898467),
     s = n(843472),
     o = n(956518),
     d = n(587895),
@@ -129,8 +129,8 @@ function V(e, t, n) {
     let {
         mute: i,
         deaf: a,
-        selfMute: r,
-        selfDeaf: l,
+        selfMute: l,
+        selfDeaf: r,
         suppress: s,
         userId: o
     } = n, d = f.default.getUser(o);
@@ -143,8 +143,8 @@ function V(e, t, n) {
         voice_state: {
             mute: i,
             deaf: a,
-            self_mute: r,
-            self_deaf: l,
+            self_mute: l,
+            self_deaf: r,
             suppress: s
         },
         user: (0, b.A)(d)
@@ -206,7 +206,7 @@ function K(e, t, n) {
 }
 
 function q(e) {
-    return r.Bo.get({
+    return l.Bo.get({
         url: O.Rsh.APPLICATION_RPC(e),
         oldFormErrors: !0,
         retries: 3,
@@ -238,22 +238,22 @@ async function z(e, t, n) {
         } null == i && (i = A.Ay.createFromServer(await q(t)));
     let {
         id: a,
-        name: r,
-        icon: l,
+        name: l,
+        icon: r,
         coverImage: s,
         flags: c
     } = i;
     e.application = {
         id: a,
-        name: r,
-        icon: l,
+        name: l,
+        icon: r,
         coverImage: s,
         flags: c
     }
 }
 async function $(e, t, n) {
     let i = M[e];
-    null == i && (i = new l.A(t ? 2 : 60, D), M[e] = i);
+    null == i && (i = new r.A(t ? 2 : 60, D), M[e] = i);
     try {
         await i.process(n)
     } catch (e) {

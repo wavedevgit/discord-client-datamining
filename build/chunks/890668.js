@@ -22,8 +22,8 @@ var s = n(284009),
     T = n(164599),
     f = n(63675),
     S = n(617514),
-    b = n(546849),
-    E = n(101058),
+    E = n(546849),
+    b = n(101058),
     C = n(84540),
     N = n(836602),
     v = n(622543),
@@ -58,7 +58,7 @@ function P() {
                 errors: t
             }
         }),
-        V = (0, E.V7)({
+        V = (0, b.V7)({
             userId: e.id,
             image: n
         }),
@@ -82,7 +82,7 @@ function P() {
                 globalName: e
             }),
             user: e
-        }), (0, i.jsx)(b.A, {
+        }), (0, i.jsx)(E.A, {
             sectionTitle: O.intl.string(O.t["+T3RI/"]),
             errors: w.pronouns,
             onPronounsChange: e => (0, C.p)({

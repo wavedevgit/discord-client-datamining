@@ -19,8 +19,8 @@ var a = n(627968),
 function g() {
     let e = (0, s.G98)(),
         [t, n] = i.useState(x.NJ8.DARK),
-        [g, f] = i.useState(h.D),
-        [_, v] = i.useState(["", "", ""]),
+        [g, _] = i.useState(h.D),
+        [f, v] = i.useState(["", "", ""]),
         [b, j] = i.useState([null, null, null]),
         [A, C] = i.useState(null),
         y = i.useMemo(() => Object.fromEntries(c.F$.map(e => {
@@ -31,7 +31,7 @@ function g() {
         })), [g]),
         E = y[t],
         S = i.useCallback(e => {
-            f(n => ({
+            _(n => ({
                 ...n,
                 [t]: e(n[t])
             }))
@@ -146,7 +146,7 @@ function g() {
                 }), (0, a.jsx)("div", {
                     className: p.G9,
                     children: c._V.map((e, t) => {
-                        let n = "" !== _[t];
+                        let n = "" !== f[t];
                         return (0, a.jsxs)(i.Fragment, {
                             children: [(0, a.jsx)(s.EYj, {
                                 variant: "text-md/medium",
@@ -190,7 +190,7 @@ function g() {
                             }), (0, a.jsx)(r.ksK, {
                                 label: `Hex${n&&null!=b[t]?` (dE: ${b[t]})`:""}`,
                                 name: `hex-${t}`,
-                                value: _[t],
+                                value: f[t],
                                 onChange: e => {
                                     v(n => (0, m._D)(n, t, e));
                                     let n = (0, m.xb)(e);

@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(735438),
     a = n.n(i),
-    r = n(189081),
-    l = n(242286),
+    l = n(189081),
+    r = n(242286),
     s = n(256415),
     o = n(636401),
     d = n(613057),
@@ -27,9 +27,9 @@ let u = {
                 let {
                     prevState: i,
                     dispatch: o
-                } = e, d = l.default.enabled, c = !0, u = n.application.id;
+                } = e, d = r.default.enabled, c = !0, u = n.application.id;
                 if (null != u) {
-                    let e = r.A.getActiveLibraryApplication(u);
+                    let e = l.A.getActiveLibraryApplication(u);
                     null != e && (d = d && e.isOverlayEnabled()), c = s.default.isLocked(t)
                 }
                 let A = {

@@ -21,8 +21,8 @@ var i = n(627968),
     T = n(711014),
     f = n(287809),
     S = n(203982),
-    b = n(115063),
-    E = n(507553),
+    E = n(115063),
+    b = n(507553),
     C = n(652215),
     N = n(355097),
     v = n(985018),
@@ -40,7 +40,7 @@ function y() {
         t = (0, r.bG)([h.A], () => h.A.getGuild(e)),
         n = (0, r.bG)([m.A], () => m.A.showNotice()),
         l = (0, r.bG)([f.default], () => f.default.getCurrentUser()),
-        y = E.A.useField("subsection");
+        y = b.A.useField("subsection");
     return s.useEffect(() => {
         (0, _._)(j[y])
     }, [y]), s.useEffect(() => {
@@ -56,13 +56,13 @@ function y() {
             onItemSelect: function(e) {
                 if (y !== e) {
                     if (n) {
-                        (0, b.fO)({
+                        (0, E.fO)({
                             duration: 300,
                             intensity: d.n3
                         }), S._.dispatch(C.jej.EMPHASIZE_NOTICE);
                         return
                     }
-                    e === N.Eq.GUILD && null != t && (0, c.V2)(t.id), E.A.setState({
+                    e === N.Eq.GUILD && null != t && (0, c.V2)(t.id), b.A.setState({
                         subsection: e
                     })
                 }
@@ -81,7 +81,7 @@ function y() {
             selectedGuild: t,
             onGuildChange: function(e) {
                 if (n) {
-                    (0, b.fO)({
+                    (0, E.fO)({
                         duration: 300,
                         intensity: d.n3
                     }), S._.dispatch(C.jej.EMPHASIZE_NOTICE);

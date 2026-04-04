@@ -41,7 +41,7 @@ let h = i.createContext({
             onCloseRequest: () => (0, s.OoC)(r.k)
         })
     },
-    f = () => {
+    _ = () => {
         (0, s.kBI)(r.g) ? (0, s.OoC)(r.g) : (0, s.mMO)(async () => {
             let {
                 ShopPFXPreviewInstructionModal: e
@@ -54,7 +54,7 @@ let h = i.createContext({
             onCloseRequest: () => (0, s.OoC)(r.g)
         })
     },
-    _ = () => {
+    f = () => {
         let e = (0, l.pF)(),
             {
                 previewProfileEffectSkuId: t,
@@ -77,7 +77,7 @@ let h = i.createContext({
                 }), (0, a.jsx)(s.K0, {
                     variant: "icon-only",
                     size: "sm",
-                    onClick: f,
+                    onClick: _,
                     icon: s.cBN,
                     "aria-label": "Open PFX preview instructions"
                 })]
@@ -134,15 +134,15 @@ let h = i.createContext({
         } = (0, o.JE)(), g = i.useMemo(() => Object.values(l).map(e => ({
             label: e.name,
             value: e.type
-        })), [l]), f = g.some(e => e.value === c.RN.HERO_LOGO), _ = g.some(e => b.has(e.value)), v = i.useCallback(e => r(e), [r]), j = i.useCallback(() => {
+        })), [l]), _ = g.some(e => e.value === c.RN.HERO_LOGO), f = g.some(e => b.has(e.value)), v = i.useCallback(e => r(e), [r]), j = i.useCallback(() => {
             d(), t(), n()
         }, [d, t, n]);
         return 0 === g.length ? null : (0, a.jsxs)(a.Fragment, {
             children: [(0, a.jsx)(s.hKd, {
                 size: 16
-            }), (f || _) && (0, a.jsxs)("div", {
+            }), (_ || f) && (0, a.jsxs)("div", {
                 className: m.v7,
-                children: [f && (0, a.jsxs)("div", {
+                children: [_ && (0, a.jsxs)("div", {
                     className: m.cj,
                     children: [(0, a.jsx)(s.Text, {
                         variant: "text-md/normal",
@@ -161,7 +161,7 @@ let h = i.createContext({
                         variant: "text-sm/normal",
                         children: `${u??90}px`
                     })]
-                }), _ && (0, a.jsxs)("div", {
+                }), f && (0, a.jsxs)("div", {
                     className: m.sy,
                     children: [(0, a.jsx)(s.dOG, {
                         checked: x,
@@ -362,7 +362,7 @@ let h = i.createContext({
                     icon: s.cBN,
                     "aria-label": "Open preview instructions"
                 })]
-            }), (0, a.jsx)(_, {}), (0, a.jsx)(v, {}), (0, a.jsx)(j, {
+            }), (0, a.jsx)(f, {}), (0, a.jsx)(v, {}), (0, a.jsx)(j, {
                 clearAssets: r,
                 clearIgnoredFiles: d
             }), (0, a.jsx)(A, {

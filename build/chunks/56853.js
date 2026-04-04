@@ -16,8 +16,8 @@ var a = n(627968),
     x = n(496885),
     p = n(178540),
     g = n(859703),
-    f = n(341915),
-    _ = n(12251),
+    _ = n(341915),
+    f = n(12251),
     v = n(890687),
     b = n(590202),
     j = n(710969),
@@ -81,15 +81,15 @@ function U(e) {
     } : {
         type: 2,
         hints: []
-    }, [n, h, x, s]), f = 2 !== p, _ = (0, u.zhh)({
-        opacity: +!!f,
-        height: f ? c : 0,
+    }, [n, h, x, s]), _ = 2 !== p, f = (0, u.zhh)({
+        opacity: +!!_,
+        height: _ ? c : 0,
         config: w.N
     }), b = 0 === p ? u.EpV : u.mir, j = u.LU0.unsafe_rawColors.RED_345.css, A = 0 === p ? j : l ? u.LU0.colors.TEXT_DEFAULT : u.LU0.colors.WHITE;
     return (0, a.jsx)(r.animated.div, {
         style: {
-            height: _.height,
-            opacity: (0, N.a)(_.opacity)
+            height: f.height,
+            opacity: (0, N.a)(f.opacity)
         },
         children: (0, a.jsxs)("div", {
             ref: d,
@@ -137,15 +137,15 @@ function B(e) {
     } = i.useContext(O.M), Q = W ? "text-muted" : "always-white", J = i.useCallback(() => {
         F && (0, I.d5)({
             quest: t,
-            questContent: f.uF.QUEST_HOME_DESKTOP,
+            questContent: _.uF.QUEST_HOME_DESKTOP,
             sourceQuestContent: w,
             sourceQuestContentCTA: b.Cy.QUEST_HOME_TILE_HEADER_WATCH_VIDEO
         })
-    }, [F, t, w]), X = (0, o.bG)([g.A], () => g.A.getQuestHomeHeroConfig()), Z = i.useMemo(() => null != X && (0, C.I0)(X, t.id), [X, t.id]), ee = _.s5.useConfig({
+    }, [F, t, w]), X = (0, o.bG)([g.A], () => g.A.getQuestHomeHeroConfig()), Z = i.useMemo(() => null != X && (0, C.I0)(X, t.id), [X, t.id]), ee = f.s5.useConfig({
         location: R.rE.QUESTS_CARD
-    }), et = ee.enabled && ee.variant === _.tL.INFO_ICON, en = (0, v.do)({
+    }), et = ee.enabled && ee.variant === f.tL.INFO_ICON, en = (0, v.do)({
         quest: t,
-        content: f.uF.QUEST_HOME_DESKTOP,
+        content: _.uF.QUEST_HOME_DESKTOP,
         ctaContent: b.Cy.LEARN_MORE_CTA_AND_EXPRESSIVE_BUTTON_TREATMENT_FOUR_OPEN_GAME_LINK,
         sourceQuestContent: w
     });
@@ -208,7 +208,7 @@ function B(e) {
                         onOpen: y,
                         onClose: m,
                         onSelect: N,
-                        questContent: f.uF.QUEST_HOME_DESKTOP,
+                        questContent: _.uF.QUEST_HOME_DESKTOP,
                         quest: t,
                         hideLearnMore: !0,
                         shouldShowDisclosure: !0,

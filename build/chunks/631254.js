@@ -35,7 +35,7 @@ function m() {
         };
         return window.addEventListener("keydown", e), () => window.removeEventListener("keydown", e)
     }, [p]);
-    let S = s.useCallback(e => {
+    let E = s.useCallback(e => {
         u.A.setState({
             query: e
         }), a.A.maybeTrackQueryEntered()
@@ -50,7 +50,7 @@ function m() {
             ref: m,
             query: e,
             onClear: n,
-            onChange: S,
+            onChange: E,
             onFocus: e => t(!0, e),
             onBlur: e => t(!1, e),
             placeholder: h.intl.string(h.t["5h0QOP"]),

@@ -1,6 +1,6 @@
 /** chunk id: 726532 params = (module,exports,require) **/
 n.d(t, {
-    i: () => E,
+    i: () => b,
     j: () => N
 });
 var i = n(627968),
@@ -38,7 +38,7 @@ let S = () => (0, i.jsxs)(a.BJc, {
             variant: "expressive"
         })]
     }),
-    b = e => {
+    E = e => {
         let {
             title: t,
             description: n,
@@ -64,7 +64,7 @@ let S = () => (0, i.jsxs)(a.BJc, {
             })]
         })
     },
-    E = e => {
+    b = e => {
         let {
             currentUser: t
         } = e, {
@@ -79,7 +79,7 @@ let S = () => (0, i.jsxs)(a.BJc, {
             u = s.currentPeriodEnd,
             {
                 primary: m,
-                members: E
+                members: b
             } = r,
             {
                 title: C,
@@ -125,7 +125,7 @@ let S = () => (0, i.jsxs)(a.BJc, {
             color: "nitro-pink",
             children: [(0, i.jsx)(S, {}), (0, i.jsxs)("div", {
                 className: f.wS,
-                children: [(0, i.jsx)(b, {
+                children: [(0, i.jsx)(E, {
                     title: C,
                     description: N,
                     button: (0, i.jsx)(a.Button, {
@@ -159,7 +159,7 @@ let S = () => (0, i.jsxs)(a.BJc, {
                     }), (0, i.jsx)(x.U4, {
                         user: m,
                         isOwnUser: !1
-                    }), E.map(e => (0, i.jsx)(x.YF, {
+                    }), b.map(e => (0, i.jsx)(x.YF, {
                         user: e,
                         isOwnUser: e.id === t?.id
                     }, e.id))]
@@ -238,7 +238,7 @@ let S = () => (0, i.jsxs)(a.BJc, {
             premiumGroupMembers: _,
             isLoading: x
         } = (0, g.A)(t.id), {
-            numAvailableInvites: E,
+            numAvailableInvites: b,
             numTotalSeats: N,
             numUsedSeats: v
         } = (0, l.cf)([m.A], () => ({
@@ -272,7 +272,7 @@ let S = () => (0, i.jsxs)(a.BJc, {
                     subscription: t
                 })
             })
-        }, L = s.useMemo(() => !A.BE.includes(t.status) && E > 0, [t.status, E]), {
+        }, L = s.useMemo(() => !A.BE.includes(t.status) && b > 0, [t.status, b]), {
             title: D,
             description: G
         } = (() => {
@@ -316,7 +316,7 @@ let S = () => (0, i.jsxs)(a.BJc, {
             color: "nitro-pink",
             children: [(0, i.jsx)(S, {}), (0, i.jsxs)("div", {
                 className: f.wS,
-                children: [(0, i.jsx)(b, {
+                children: [(0, i.jsx)(E, {
                     title: D,
                     description: G,
                     button: d.ki(t) ? (0, i.jsx)(a.Button, {
@@ -383,7 +383,7 @@ let S = () => (0, i.jsxs)(a.BJc, {
                     },
                     numTotalSeats: N,
                     numUsedSeats: v,
-                    numAvailableInvites: E
+                    numAvailableInvites: b
                 })]
             })]
         })

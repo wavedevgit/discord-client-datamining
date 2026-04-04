@@ -61,7 +61,7 @@ function p() {
                 dismissibleContent: n
             }
         }),
-        f = Array.from(t.keys()).map(e => ({
+        _ = Array.from(t.keys()).map(e => ({
             key: e.toString(),
             dismissibleContent: e
         }));
@@ -78,7 +78,7 @@ function p() {
             children: (0, a.jsx)(c.A, {
                 className: u.Th,
                 columns: x,
-                data: f
+                data: _
             })
         }), (0, a.jsx)("br", {}), (0, a.jsx)(c.A, {
             columns: h,

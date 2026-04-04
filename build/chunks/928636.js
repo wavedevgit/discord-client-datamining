@@ -3,9 +3,9 @@ n.d(t, {
     A: () => eN
 });
 var i, a = n(627968),
-    r = n(64700),
-    l = n(503698),
-    s = n.n(l),
+    l = n(64700),
+    r = n(503698),
+    s = n.n(r),
     o = n(110259),
     d = n(141628),
     c = n(311907),
@@ -57,8 +57,8 @@ var i, a = n(627968),
     en = n(139675),
     ei = n(403362),
     ea = n(427262),
-    er = n(281489),
-    el = n(652215),
+    el = n(281489),
+    er = n(652215),
     es = n(985018),
     eo = n(103781);
 let ed = [14, 14, 12, 12, 10, 8, 6],
@@ -139,13 +139,13 @@ let ed = [14, 14, 12, 12, 10, 8, 6],
             user: n,
             supportsAskToJoin: !1
         }), a = null != i, {
-            data: r
+            data: l
         } = (0, R.YY)(t.application_id), {
-            fetched: l,
+            fetched: r,
             hasAlreadyLinked: s,
             canStartAuthorization: o,
             startAuthorization: d
-        } = (0, L.RD)(r), c = !a && l && o && !s;
+        } = (0, L.RD)(l), c = !a && r && o && !s;
         return {
             isJoinActivityButtonShown: a,
             joinActivityButtonAction: i,
@@ -160,8 +160,8 @@ let ed = [14, 14, 12, 12, 10, 8, 6],
             user: n
         } = e, {
             joinActivityButtonAction: i,
-            isJoinActivityButtonShown: r,
-            isLinkAccountButtonShown: l,
+            isJoinActivityButtonShown: l,
+            isLinkAccountButtonShown: r,
             startAuthorization: s
         } = ep({
             activity: t,
@@ -169,23 +169,23 @@ let ed = [14, 14, 12, 12, 10, 8, 6],
         }), {
             newestAnalyticsLocation: o
         } = (0, y.Ay)();
-        if (r && null != i) {
+        if (l && null != i) {
             let {
                 isJoining: e,
                 handleJoinRequest: t,
                 buttonCTA: n,
-                tooltip: r,
-                isEnabled: l
+                tooltip: l,
+                isEnabled: r
             } = i;
             return (0, a.jsx)(h.m, {
-                text: r,
-                asContainer: !l,
+                text: l,
+                asContainer: !r,
                 children: (0, a.jsx)(_.Button, {
                     size: "sm",
                     variant: "secondary",
                     icon: _._xR,
                     text: n,
-                    disabled: !l,
+                    disabled: !r,
                     loading: e,
                     onClick: e => {
                         e.stopPropagation(), t()
@@ -193,7 +193,7 @@ let ed = [14, 14, 12, 12, 10, 8, 6],
                 })
             })
         }
-        return l ? (0, a.jsx)(_.Button, {
+        return r ? (0, a.jsx)(_.Button, {
             size: "sm",
             variant: "secondary",
             icon: d.A,
@@ -211,11 +211,11 @@ let ed = [14, 14, 12, 12, 10, 8, 6],
             analyticsLocations: n
         } = e, {
             application_id: i,
-            name: r
+            name: l
         } = t, {
-            data: l
+            data: r
         } = (0, R.YY)(i), s = (0, v.A)({
-            application: l,
+            application: r,
             analyticsLocations: n
         }), o = (0, G.JZ)(u.M.CLOUD_PLAY_NEW_BADGE), d = (0, W.L)(i);
         return null == s || d ? null : (0, a.jsxs)(a.Fragment, {
@@ -231,7 +231,7 @@ let ed = [14, 14, 12, 12, 10, 8, 6],
                     }), (0, a.jsx)(_.Text, {
                         variant: "text-xs/medium",
                         children: es.intl.formatToPlainString(es.t.RmiYF3, {
-                            gameName: r
+                            gameName: l
                         })
                     })]
                 }), (0, a.jsx)(em, {
@@ -246,7 +246,7 @@ let ef = e => {
     let t, {
         src: n,
         onClick: i,
-        onContextMenu: r
+        onContextMenu: l
     } = e;
     switch (n) {
         case "XBOX":
@@ -278,10 +278,10 @@ let ef = e => {
                 className: eo.nr
             })
     }
-    return null != i || null != r ? (0, a.jsx)(_.DUT, {
+    return null != i || null != l ? (0, a.jsx)(_.DUT, {
         onClick: i,
         className: s()(null != i ? eo.vk : ""),
-        onContextMenu: r,
+        onContextMenu: l,
         children: t
     }) : t
 };
@@ -291,8 +291,8 @@ let eC = e => {
         priorityUser: t,
         title: n,
         subtitle: i,
-        icon: r,
-        onSubtitleClick: l,
+        icon: l,
+        onSubtitleClick: r,
         onIconClick: o,
         onContextMenu: d,
         guildId: c,
@@ -304,7 +304,7 @@ let eC = e => {
         children: i
     });
     return (0, a.jsxs)("header", {
-        className: null != r ? eo.dI : eo.sk,
+        className: null != l ? eo.dI : eo.sk,
         children: [(0, a.jsx)(_.euF, {
             src: t.user.getAvatarURL(c, 32),
             "aria-label": t.user.username,
@@ -318,16 +318,16 @@ let eC = e => {
                 className: s()(eo.P_, u),
                 variant: "text-md/semibold",
                 children: n
-            }), null != l ? (0, a.jsx)(_.DUT, {
+            }), null != r ? (0, a.jsx)(_.DUT, {
                 className: eo.vk,
-                onClick: l,
+                onClick: r,
                 children: A
             }) : A]
-        }), null != r && null != o ? (0, a.jsx)(_.DUT, {
+        }), null != l && null != o ? (0, a.jsx)(_.DUT, {
             className: eo.vk,
             onClick: o,
-            children: r
-        }) : r]
+            children: l
+        }) : l]
     })
 };
 eC.Icon = ef;
@@ -362,9 +362,9 @@ eT.Header = eC, eT.Body = e => {
         guild: t,
         channel: n,
         partySize: i,
-        members: l,
+        members: r,
         onChannelContextMenu: o
-    } = e, d = r.useRef(null), c = (0, D.Ay)(n, !0), u = (0, Q.Iv)(t, 32), A = (0, Q.Rb)(t);
+    } = e, d = l.useRef(null), c = (0, D.Ay)(n, !0), u = (0, Q.Iv)(t, 32), A = (0, Q.Rb)(t);
     return (0, a.jsx)(eh, {
         children: (0, a.jsxs)("div", {
             className: eo.iO,
@@ -409,9 +409,9 @@ eT.Header = eC, eT.Body = e => {
                     className: eo.U6,
                     children: [ec(t.name, eo.BJ), eu(c, eo.BJ)]
                 })
-            }), (0, a.jsx)(er.A, {
+            }), (0, a.jsx)(el.A, {
                 partySize: i,
-                members: l,
+                members: r,
                 guildId: t.id
             })]
         })
@@ -421,8 +421,8 @@ eT.Header = eC, eT.Body = e => {
         icon: t,
         name: n,
         partySize: i,
-        members: r,
-        activity: l
+        members: l,
+        activity: r
     } = e, {
         analyticsLocations: s
     } = (0, y.Ay)(b.A.NOW_PLAYING_ITEM_GAME_SECTION);
@@ -437,12 +437,12 @@ eT.Header = eC, eT.Body = e => {
                 children: [ec(n), eu(es.intl.formatToPlainString(es.t.C4WXvc, {
                     memberCount: i.totalSize
                 }))]
-            }), (0, a.jsx)(er.A, {
+            }), (0, a.jsx)(el.A, {
                 partySize: i,
-                members: r
+                members: l
             })]
         }), (0, a.jsx)(eE, {
-            activity: l,
+            activity: r,
             analyticsLocations: s
         })]
     })
@@ -450,9 +450,9 @@ eT.Header = eC, eT.Body = e => {
     let {
         activity: t,
         getAssetImage: i,
-        user: r
+        user: l
     } = e, {
-        analyticsLocations: l
+        analyticsLocations: r
     } = (0, y.Ay)(b.A.NOW_PLAYING_ITEM_RICH_PRESENCE_SECTION), {
         data: o
     } = (0, R.YY)(t.application_id), {
@@ -464,10 +464,10 @@ eT.Header = eC, eT.Body = e => {
         hasButton: h
     } = ep({
         activity: t,
-        user: r
+        user: l
     }), _ = (0, j.C4)(o)?.src ?? n(960648), m = (0, v.A)({
         application: o,
-        analyticsLocations: l
+        analyticsLocations: r
     });
     return null != t.assets || (0, C.A)(t) || null != m ? (0, a.jsxs)(eh, {
         children: [(0, a.jsxs)("div", {
@@ -511,11 +511,11 @@ eT.Header = eC, eT.Body = e => {
                 })()]
             }), (0, a.jsx)(eg, {
                 activity: t,
-                user: r
+                user: l
             })]
         }), (0, a.jsx)(eE, {
             activity: t,
-            analyticsLocations: l
+            analyticsLocations: r
         })]
     }) : null
 }, eT.XboxSection = e => {
@@ -539,9 +539,9 @@ eT.Header = eC, eT.Body = e => {
             assets: t,
             details: n,
             state: i,
-            application_id: r
+            application_id: l
         },
-        partySize: l,
+        partySize: r,
         members: o,
         isSolo: d,
         getAssetImage: c
@@ -553,7 +553,7 @@ eT.Header = eC, eT.Body = e => {
                 className: eo.YY,
                 children: [(0, a.jsx)("img", {
                     alt: t.large_text ?? "",
-                    src: c(r, t.large_image, [160, 160]),
+                    src: c(l, t.large_image, [160, 160]),
                     className: s()(eo.nX, eo.Dy, {
                         [eo.p8]: null != t.small_image
                     })
@@ -563,9 +563,9 @@ eT.Header = eC, eT.Body = e => {
                 })]
             }) : (0, a.jsx)("div", {}), (0, a.jsxs)("div", {
                 children: [null != n ? ec(n) : null, null != i ? eu(i.replace(/; /g, ", ")) : null]
-            }), (0, a.jsx)(er.A, {
+            }), (0, a.jsx)(el.A, {
                 minAvatarsShown: d ? 2 : 1,
-                partySize: l,
+                partySize: r,
                 members: o
             })]
         })
@@ -573,8 +573,8 @@ eT.Header = eC, eT.Body = e => {
 }, eT.TwitchSection = e => {
     let t, {
             activity: i,
-            user: r,
-            getAssetImage: l,
+            user: l,
+            getAssetImage: r,
             guildId: o
         } = e,
         {
@@ -592,7 +592,7 @@ eT.Header = eC, eT.Body = e => {
             target: "_blank",
             children: [(0, a.jsx)("img", {
                 alt: u.large_text ?? "",
-                src: l(A, u.large_image, [900, 500]),
+                src: r(A, u.large_image, [900, 500]),
                 className: eo.ZB
             }), (0, a.jsx)("img", {
                 src: n(606621),
@@ -603,18 +603,18 @@ eT.Header = eC, eT.Body = e => {
     })), (0, a.jsxs)(eh, {
         children: [(0, a.jsxs)("div", {
             className: s()({
-                [eo.x5]: null == r,
-                [eo.Qh]: null != r
+                [eo.x5]: null == l,
+                [eo.Qh]: null != l
             }),
             children: [(0, a.jsx)("img", {
                 alt: "",
-                src: E.A.get(el.fg2.TWITCH).icon.lightSVG,
+                src: E.A.get(er.fg2.TWITCH).icon.lightSVG,
                 className: eo.Gq
             }), (0, a.jsxs)("div", {
                 children: [ec(d), null != c ? eu(c) : null]
-            }), null != r ? (0, a.jsx)(_.euF, {
-                src: r.getAvatarURL(o, 24),
-                "aria-label": r.username,
+            }), null != l ? (0, a.jsx)(_.euF, {
+                src: l.getAvatarURL(o, 24),
+                "aria-label": l.username,
                 className: eo.AZ,
                 size: _._3J.SIZE_24
             }) : null]
@@ -625,10 +625,10 @@ eT.Header = eC, eT.Body = e => {
         activity: t,
         user: n,
         applicationStream: i,
-        onPreviewClick: r,
-        guildId: l
+        onPreviewClick: l,
+        guildId: r
     } = e, s = (0, c.bG)([Z.A], () => Z.A.getChannel(i.channelId)), [o, d] = (0, H.zP)(s), u = (0, a.jsxs)(_.DUT, {
-        onClick: o ? r : void 0,
+        onClick: o ? l : void 0,
         className: eo.q_,
         children: [(0, a.jsx)(F.A, {
             stream: i,
@@ -641,7 +641,7 @@ eT.Header = eC, eT.Body = e => {
         })]
     }), A = (0, x.A)(t, i)?.activityText ?? es.intl.string(es.t.eXan7B), h = (0, k.A)({
         userId: n.id,
-        guildId: l
+        guildId: r
     }), m = (0, V.a)({
         displayNameStyles: h
     });
@@ -650,7 +650,7 @@ eT.Header = eC, eT.Body = e => {
             className: eo.ME,
             children: [(0, a.jsx)(_.euF, {
                 size: _._3J.SIZE_32,
-                src: n.getAvatarURL(l, 32),
+                src: n.getAvatarURL(r, 32),
                 "aria-label": n.username,
                 className: eo.OL
             }), (0, a.jsxs)("div", {
@@ -665,15 +665,15 @@ eT.Header = eC, eT.Body = e => {
         activity: t,
         channel: n,
         guildId: i,
-        participants: l
-    } = e, [s, o] = r.useState(null), d = t.application_id;
-    r.useEffect(() => {
+        participants: r
+    } = e, [s, o] = l.useState(null), d = t.application_id;
+    l.useEffect(() => {
         null != d && (0, en.RG)(d, ["embedded_background"]).then(e => {
             let [t] = e;
             return o(t)
         })
     }, [d]);
-    let u = (0, c.yK)([J.default, X.default], () => Array.from(l).map(e => X.default.getId() === e ? null : J.default.getUser(e)).filter(ei.Vq)),
+    let u = (0, c.yK)([J.default, X.default], () => Array.from(r).map(e => X.default.getId() === e ? null : J.default.getUser(e)).filter(ei.Vq)),
         A = (0, g.p)(),
         {
             analyticsLocations: h

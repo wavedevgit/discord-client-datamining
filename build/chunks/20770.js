@@ -29,14 +29,14 @@ function T(e) {
         navigateToHome: A,
         subscriptionGroup: T,
         renewalSkuId: S
-    } = e, b = (0, r.A)(t, 100), E = (0, g.PJ)(T.flags), C = E ? a.RR9 : a.nys, N = E ? h.intl.string(h.t["46YF2D"]) : h.intl.string(h.t.fFyGiA), v = n.metadata?.application_subscription_guild_id, I = (0, s.bG)([u.A], () => E && null != v ? u.A.getGuild(v) : void 0, [v, E]), j = (0, s.bG)([m.A], () => {
+    } = e, E = (0, r.A)(t, 100), b = (0, g.PJ)(T.flags), C = b ? a.RR9 : a.nys, N = b ? h.intl.string(h.t["46YF2D"]) : h.intl.string(h.t.fFyGiA), v = n.metadata?.application_subscription_guild_id, I = (0, s.bG)([u.A], () => b && null != v ? u.A.getGuild(v) : void 0, [v, b]), j = (0, s.bG)([m.A], () => {
         if (null != S) return m.A.get(S)
     }, [S]), y = (0, x.Y)(n.currentPeriodEnd);
     return (0, i.jsxs)("div", {
         children: [(0, i.jsxs)("div", {
             className: p.wx,
-            children: [null != b && (0, i.jsx)(a._V3, {
-                src: b.href,
+            children: [null != E && (0, i.jsx)(a._V3, {
+                src: E.href,
                 imageClassName: p.Z2,
                 width: 48,
                 height: 48

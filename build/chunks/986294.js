@@ -16,8 +16,8 @@ var a = n(627968),
     x = n(73153),
     p = n(587895),
     g = n(429913),
-    f = n(303054),
-    _ = n(409626),
+    _ = n(303054),
+    f = n(409626),
     v = n(692969),
     b = n(760751),
     j = n(403362),
@@ -108,7 +108,7 @@ function w() {
         P = (0, v.A)({
             applicationId: M,
             location: "DevToolsContentInventory",
-            source: _.Ob.DevTools
+            source: f.Ob.DevTools
         }),
         L = Object.entries(m.w.get("GameProfileModal") ?? {}).filter(e => {
             let [t, n] = e;
@@ -128,7 +128,7 @@ function w() {
                 children: [(0, a.jsx)(h.Text, {
                     variant: "text-md/semibold",
                     children: "Inventory"
-                }), r.length > 0 && (0, a.jsx)(f.A, {
+                }), r.length > 0 && (0, a.jsx)(_.A, {
                     columns: k,
                     data: r
                 }), (0, a.jsx)(T.A, {}), (0, a.jsx)(h.Button, {
@@ -238,7 +238,7 @@ let D = e => {
     } = e, n = (0, v.A)({
         applicationId: t.id,
         location: "DevToolsContentInventory",
-        source: _.Ob.DevTools
+        source: f.Ob.DevTools
     });
     return (0, a.jsx)(h.DUT, {
         onClick: n,

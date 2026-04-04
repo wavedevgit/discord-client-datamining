@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var a = n(397927),
-    r = n(49229),
-    l = n(688810),
+    l = n(49229),
+    r = n(688810),
     s = n(38910),
     o = n(657331),
     d = n(513297),
@@ -24,8 +24,8 @@ function m(e) {
         isFocused: p
     } = e, {
         analyticsLocations: g
-    } = (0, l.Ay)(), E = e => {
-        e?.stopPropagation(), r.A.addRelationship({
+    } = (0, r.Ay)(), E = e => {
+        e?.stopPropagation(), l.A.addRelationship({
             userId: t.id,
             context: {
                 location: "Friends"
@@ -44,7 +44,7 @@ function m(e) {
             sourceAnalyticsLocations: g
         }),
         children: e => {
-            let r = (0, i.jsxs)(i.Fragment, {
+            let l = (0, i.jsxs)(i.Fragment, {
                 children: [(0, i.jsx)(d.A, {
                     icon: a.A9s,
                     actionType: d.A.ActionTypes.ACCEPT,
@@ -69,7 +69,7 @@ function m(e) {
                     className: _.__invalid_userInfo
                 }), (0, i.jsx)("div", {
                     className: _.o,
-                    children: r
+                    children: l
                 })]
             })
         }

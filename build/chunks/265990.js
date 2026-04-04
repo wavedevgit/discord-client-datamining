@@ -4,8 +4,8 @@ n.d(t, {
 }), n(321073);
 var i = n(627968),
     a = n(64700),
-    r = n(735438),
-    l = n.n(r),
+    l = n(735438),
+    r = n.n(l),
     s = n(311907),
     o = n(397927),
     d = n(711950),
@@ -57,12 +57,12 @@ function U(e) {
     let {
         section: t,
         showSpamCta: n
-    } = e, r = a.useMemo(() => n ? w : t !== L.m3P.PENDING ? j : void 0, [n, t]);
+    } = e, l = a.useMemo(() => n ? w : t !== L.m3P.PENDING ? j : void 0, [n, t]);
     return (0, i.jsx)("div", {
         className: D.y7,
         children: (0, i.jsx)(S.A, {
             type: t,
-            onClick: r
+            onClick: l
         }, t)
     })
 }
@@ -72,7 +72,7 @@ let G = function(e) {
     } = e, {
         analyticsLocations: n
     } = (0, h.Ay)(A.A.FRIENDS_LIST), {
-        rows: r,
+        rows: l,
         section: d
     } = (0, s.cf)([f.Ay], () => f.Ay.getState()), j = (0, s.bG)([C.A], () => C.A.isFocused()), {
         relationshipCount: G,
@@ -138,10 +138,10 @@ let G = function(e) {
             ...Y,
             [d]: ""
         })
-    }, [Y, d]), Z = a.useMemo(() => d === L.m3P.PENDING && (r.filter(L.m3P.SPAM).length > 0 || r.filter(L.m3P.PENDING_IGNORED).length > 0), [r, d]), J = a.useMemo(() => {
-        let e = r.filter(d, Y[d]);
-        return V && d === L.m3P.PENDING && "" === Y[d] && (e = l()([...e, ...B]).uniqBy("key").sortBy(e => e.nickname?.toLowerCase() ?? e.user?.globalName?.toLowerCase() ?? e.usernameLower).value()), e
-    }, [B, V, r, Y, d]), ee = d === L.m3P.PENDING, et = a.useMemo(() => {
+    }, [Y, d]), Z = a.useMemo(() => d === L.m3P.PENDING && (l.filter(L.m3P.SPAM).length > 0 || l.filter(L.m3P.PENDING_IGNORED).length > 0), [l, d]), J = a.useMemo(() => {
+        let e = l.filter(d, Y[d]);
+        return V && d === L.m3P.PENDING && "" === Y[d] && (e = r()([...e, ...B]).uniqBy("key").sortBy(e => e.nickname?.toLowerCase() ?? e.user?.globalName?.toLowerCase() ?? e.usernameLower).value()), e
+    }, [B, V, l, Y, d]), ee = d === L.m3P.PENDING, et = a.useMemo(() => {
         if (!ee) return M;
         let e = [];
         return J.forEach(t => {
@@ -174,8 +174,8 @@ let G = function(e) {
             }
         }, [J, d, q, K]),
         ea = a.useMemo(() => J.filter(e => e.type === L.eA$.PENDING_INCOMING).length, [J]),
-        er = d === L.m3P.PENDING && ea > 0 && ea >= 5,
-        el = a.useCallback(e => {
+        el = d === L.m3P.PENDING && ea > 0 && ea >= 5,
+        er = a.useCallback(e => {
             e.stopPropagation(), c.A.confirmClearPendingRelationships(ea)
         }, [ea]),
         es = a.useCallback(() => {
@@ -218,11 +218,11 @@ let G = function(e) {
                 children: [(0, i.jsx)(y.A, {
                     id: t,
                     title: a
-                }), er && (0, i.jsx)("div", {
+                }), el && (0, i.jsx)("div", {
                     className: D.mt,
                     children: (0, i.jsx)(o.QWc, {
                         text: P.intl.string(P.t.O8k7O4),
-                        onClick: el,
+                        onClick: er,
                         "aria-label": P.intl.string(P.t.O8k7O4),
                         textVariant: "text-sm/medium"
                     })
@@ -234,7 +234,7 @@ let G = function(e) {
                     title: a
                 })
             }, a)
-        }, [ei, d, t, er, el]),
+        }, [ei, d, t, el, er]),
         ed = a.useCallback(e => d === L.m3P.ALL && 0 === e && K && en > g.ZD ? (0, i.jsx)("div", {
             className: D.Nf,
             children: (0, i.jsx)(o.Button, {

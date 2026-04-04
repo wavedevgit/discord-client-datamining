@@ -35,7 +35,7 @@ function p(e) {
         onEditProfile: g
     } = (0, u.A)(t?.id ?? null, () => n(m.i.TAKE_ACTION));
     if (null == t || !(0, c.q0)(t)) return x.error("GuildTagChangedCoachmark rendered without guildId for a guild with tags."), e.children;
-    let f = [{
+    let _ = [{
         text: h.intl.string(h.t.jwEaiX),
         loading: o,
         onClick: p,
@@ -62,7 +62,7 @@ function p(e) {
                 guildName: t.name
             }),
             body: h.intl.string(h.t.DrAXIr),
-            actions: f,
+            actions: _,
             size: "md",
             onRequestClose: () => n(m.i.USER_DISMISS)
         })]

@@ -17,8 +17,8 @@ n(283030);
 var x = n(173628),
     p = n(378230),
     g = n(374058),
-    f = n(601152),
-    _ = n(246993),
+    _ = n(601152),
+    f = n(246993),
     v = n(974857),
     b = n(358622),
     j = n(568834),
@@ -263,7 +263,7 @@ function em() {
             name: "Channel Affinity",
             group: ed.fu.USERS,
             tags: ["channels"],
-            render: () => (0, a.jsx)(_.A, {})
+            render: () => (0, a.jsx)(f.A, {})
         }), m.A.isDeveloper && (e.push({
             id: "content_inventory",
             name: "Content Inventory",
@@ -385,7 +385,7 @@ function em() {
             id: "application_widget",
             name: "Application Widget",
             group: ed.fu.USERS,
-            render: () => (0, a.jsx)(f.A, {})
+            render: () => (0, a.jsx)(_.A, {})
         }), e.push({
             id: "developer_portal",
             name: "Developer Portal",

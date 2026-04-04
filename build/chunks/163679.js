@@ -16,8 +16,8 @@ var a = n(627968),
     x = n(870341),
     p = n(686267),
     g = n(231723),
-    f = n(818348),
-    _ = n(646284),
+    _ = n(818348),
+    f = n(646284),
     v = n(985018),
     b = n(474716);
 let j = n(843020);
@@ -66,7 +66,7 @@ let C = function(e) {
                 }
             })
         } catch {
-            E(v.intl.string(_.default["/f++3g"]))
+            E(v.intl.string(f.default["/f++3g"]))
         } finally {
             C(!1)
         }
@@ -81,7 +81,7 @@ let C = function(e) {
                 };
                 await (0, c.Rt)(t), N()
             } catch (e) {
-                E(v.intl.string(_.default["+QRSxc"]))
+                E(v.intl.string(f.default["+QRSxc"]))
             } finally {
                 T(!1)
             }
@@ -100,7 +100,7 @@ let C = function(e) {
         }), O ? (0, a.jsx)(o.default, {
             transitionState: t ?? g.ip.ENTERED,
             entryPoint: r.q1.SAFETY_FLOWS,
-            onClose: f.tE,
+            onClose: _.tE,
             onComplete: async () => {
                 await I({
                     type: m.Ij.Empty

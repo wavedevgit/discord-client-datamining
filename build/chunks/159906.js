@@ -42,25 +42,25 @@ function h(e) {
         });
     if (null == f) return null;
     let S = f.subscriptionPlanId,
-        b = d.A.get(S);
-    l()(null != b, "Missing plan");
-    let E = (0, u.$g)(p.total, p.currency);
-    return b.interval === g.WT.YEAR ? t = x.intl.format(x.t["jPz/39"], {
-        price: E,
+        E = d.A.get(S);
+    l()(null != E, "Missing plan");
+    let b = (0, u.$g)(p.total, p.currency);
+    return E.interval === g.WT.YEAR ? t = x.intl.format(x.t["jPz/39"], {
+        price: b,
         termsUrl: _.X7G.TERMS,
         paidURL: _.X7G.PAID_TERMS,
         privacyUrl: _.X7G.PRIVACY
-    }) : b.interval === g.WT.MONTH && (t = 1 === b.intervalCount ? x.intl.format(x.t.m27GpI, {
-        price: E,
+    }) : E.interval === g.WT.MONTH && (t = 1 === E.intervalCount ? x.intl.format(x.t.m27GpI, {
+        price: b,
         termsUrl: _.X7G.TERMS,
         paidURL: _.X7G.PAID_TERMS,
         privacyUrl: _.X7G.PRIVACY
     }) : x.intl.format(x.t["9xf5Vx"], {
-        price: E,
+        price: b,
         termsUrl: _.X7G.TERMS,
         paidURL: _.X7G.PAID_TERMS,
         privacyUrl: _.X7G.PRIVACY,
-        intervalCount: b.intervalCount
+        intervalCount: E.intervalCount
     })), (0, i.jsx)(a.Text, {
         color: "text-muted",
         className: T,

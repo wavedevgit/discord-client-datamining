@@ -1,9 +1,9 @@
 /** chunk id: 704456 params = (module,exports,require) **/
 n.d(t, {
-    Ce: () => p,
-    kh: () => m,
-    le: () => f,
-    vr: () => h
+    Ce: () => m,
+    kh: () => p,
+    le: () => h,
+    vr: () => f
 });
 var i, l = n(64700),
     a = n(989349),
@@ -15,9 +15,9 @@ var i, l = n(64700),
     u = n(734057),
     g = n(652215),
     A = n(985018),
-    m = ((i = {})[i.LONG = 0] = "LONG", i[i.SHORT = 1] = "SHORT", i);
+    p = ((i = {})[i.LONG = 0] = "LONG", i[i.SHORT = 1] = "SHORT", i);
 
-function p(e) {
+function m(e) {
     let {
         dueAt: t,
         now: n,
@@ -38,7 +38,7 @@ function p(e) {
     }
 }
 
-function h(e) {
+function f(e) {
     let t = (0, s.bG)([u.A], () => u.A.getChannel(e.saveData.channelId));
     return l.useMemo(() => null != t ? t : null != e.message ? new c.jb({
         id: e.saveData.channelId,
@@ -47,7 +47,7 @@ function h(e) {
         name: A.intl.string(A.t.J90oLW)
     }) : void 0, [t, e])
 }
-async function f(e, t) {
+async function h(e, t) {
     if (t?.type === g.rbe.UNKNOWN && null == e.saveData.guildId) try {
         let t = await o.A.fetchChannel(e.saveData.channelId);
         if (null == t.recipients || t.recipients.length > 1) return;

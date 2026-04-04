@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     a = n(73153),
-    r = n(391973),
-    l = n(272355),
+    l = n(391973),
+    r = n(272355),
     s = n(958005),
     o = n(268218),
     d = n(555528),
@@ -38,7 +38,7 @@ let h = (0, o.Fe)({
         webpackId: 860051,
         name: "PopoutWindowActivity"
     });
-class E extends l.A {
+class E extends r.A {
     _observer = null;
     _initialize() {
         a.h.subscribe("CHANNEL_CALL_POPOUT_WINDOW_OPEN", this.handleOpenChannelCallPopout), a.h.subscribe("CALL_TILE_POPOUT_WINDOW_OPEN", this.handleOpenCallTilePopout), a.h.subscribe("RTC_DEBUG_POPOUT_WINDOW_OPEN", this.handleOpenRTCDebugPopout), a.h.subscribe("ACTIVITY_POPOUT_WINDOW_OPEN", this.handleOpenActivityPopout), this.initializeStyleSheetObserver()
@@ -102,7 +102,7 @@ class E extends l.A {
         })
     }
     handleOpenActivityPopout() {
-        (0, r.Vz)(A.G, d.A.getDefaultLayout(A.G, 4), 4), c.open(u.MLl.ACTIVITY_POPOUT, e => (0, i.jsx)(g, {
+        (0, l.Vz)(A.G, d.A.getDefaultLayout(A.G, 4), 4), c.open(u.MLl.ACTIVITY_POPOUT, e => (0, i.jsx)(g, {
             windowKey: e
         }), {
             defaultWidth: 854,

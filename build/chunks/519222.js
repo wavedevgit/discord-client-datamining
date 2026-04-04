@@ -1,12 +1,12 @@
 /** chunk id: 519222 params = (module,exports,require) **/
 n.d(t, {
     $b: () => N,
-    DT: () => T,
+    DT: () => I,
     Io: () => O,
     Le: () => C,
     Nw: () => R,
     RC: () => x,
-    S: () => I,
+    S: () => T,
     Z4: () => P,
     cl: () => D,
     mF: () => G,
@@ -28,10 +28,10 @@ var o = n(118517),
     u = n(961350),
     g = n(734057),
     A = n(954571),
-    m = n(147036),
-    p = n(957565),
-    h = n(203982),
-    f = n(661191),
+    p = n(147036),
+    m = n(957565),
+    f = n(203982),
+    h = n(661191),
     y = n(965407),
     E = n(439147),
     _ = n(249700),
@@ -43,15 +43,15 @@ function v(e) {
     null != t && s.A.open(t, b.BEX.ENGAGEMENT)
 }
 
-function T(e, t, n) {
-    (0, p.C)(n.shiftKey ? `${t.channel_id}-${t.id}` : t.id)
+function I(e, t, n) {
+    (0, m.C)(n.shiftKey ? `${t.channel_id}-${t.id}` : t.id)
 }
 
-function I(e, t) {
+function T(e, t) {
     A.default.track(b.HAw.MESSAGE_LINK_COPIED, {
         message_id: t.id,
         channel: t.channel_id
-    }), (0, p.C)((0, m.n)(e.guild_id, e.id, t.id))
+    }), (0, m.C)((0, p.n)(e.guild_id, e.id, t.id))
 }
 
 function x(e, t, n) {
@@ -86,7 +86,7 @@ function N(e, t, n) {
         message: t,
         shouldMention: !n.shiftKey && !l,
         showMentionToggle: !i && !l
-    }), h._.dispatch(b.jej.FOCUS_CHANNEL_TEXT_AREA, {
+    }), f._.dispatch(b.jej.FOCUS_CHANNEL_TEXT_AREA, {
         channelId: e.id
     })
 }
@@ -96,7 +96,7 @@ function R(e, t) {
 }
 
 function G(e, t) {
-    let n = g.A.getChannel(f.default.castMessageIdAsChannelId(t.id));
+    let n = g.A.getChannel(h.default.castMessageIdAsChannelId(t.id));
     null != n && (0, c.JA)(n)
 }
 

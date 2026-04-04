@@ -21,8 +21,8 @@ var i = n(627968),
     T = n(829219),
     f = n(859703),
     S = n(341915),
-    b = n(890687),
-    E = n(590202),
+    E = n(890687),
+    b = n(590202),
     C = n(591179),
     N = n(462463),
     v = n(780964),
@@ -70,7 +70,7 @@ function ei() {
         analyticsLocations: e
     }), {
         launchInGameActivity: em
-    } = (0, b.zW)(ec), eg = (0, s.useCallback)(() => {
+    } = (0, E.zW)(ec), eg = (0, s.useCallback)(() => {
         (0, j.openUserSettings)(v.X.PROFILE_PANEL, {
             analyticsLocations: e
         }, () => (0, A.L)({
@@ -88,7 +88,7 @@ function ei() {
     }, []), eA = (0, s.useCallback)(() => {
         null != ec && (ec.userStatus?.enrolledAt == null ? (0, T.Oy)(ec.id, {
             questContent: S.uF.NITRO_HOME_PERK_CARD,
-            questContentCTA: E.Cy.START_QUEST,
+            questContentCTA: b.Cy.START_QUEST,
             sourceQuestContent: S.uF.NITRO_HOME_PERK_CARD
         }).then(e => {
             switch (e.type) {

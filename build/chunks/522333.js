@@ -18,21 +18,21 @@ function u(e) {
         type: u,
         imageSrc: g
     } = e, A = o.Q_.useSetting(), {
-        tidaWebformEnabled: m
+        tidaWebformEnabled: p
     } = s.A.useExperiment({
         location: "useMessageDetailsItem"
     }, {
         autoTrackExposure: !1
-    }), p = l.useCallback(() => {
+    }), m = l.useCallback(() => {
         (0, d.C)(t)
-    }, [t]), h = l.useCallback(() => {
+    }, [t]), f = l.useCallback(() => {
         null != n && (0, d.C)(n)
-    }, [n]), f = l.useCallback(() => {
+    }, [n]), h = l.useCallback(() => {
         null != g && (0, d.C)(g)
     }, [g]), y = l.useCallback(() => {
         null != g && (0, r.A)(g)
     }, [g]), E = "sticker" === u;
-    if (!A || !d.p5 || !m || "emoji" !== u && !E || null == n) return null;
+    if (!A || !d.p5 || !p || "emoji" !== u && !E || null == n) return null;
     let _ = E ? c.intl.string(c.t.SJ3249) : c.intl.string(c.t.Ap2oVy),
         S = E ? c.intl.string(c.t.B1ubHx) : c.intl.string(c.t.cIoudn),
         b = E ? c.intl.string(c.t["qAEi+C"]) : c.intl.string(c.t.gDAM2n);
@@ -46,7 +46,7 @@ function u(e) {
         children: [(0, i.jsx)(a.Drp, {
             id: "copy-message-id",
             label: c.intl.string(c.t.zBoHlf),
-            action: p,
+            action: m,
             leadingAccessory: {
                 type: "icon",
                 icon: a.L9S
@@ -54,7 +54,7 @@ function u(e) {
         }), (0, i.jsx)(a.Drp, {
             id: "copy-item-id",
             label: _,
-            action: h,
+            action: f,
             leadingAccessory: {
                 type: "icon",
                 icon: a.L9S
@@ -63,7 +63,7 @@ function u(e) {
             children: [(0, i.jsx)(a.Drp, {
                 id: "copy-image-link",
                 label: S,
-                action: f,
+                action: h,
                 leadingAccessory: {
                     type: "icon",
                     icon: a.qYV

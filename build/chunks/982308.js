@@ -14,10 +14,10 @@ var l = n(503698),
     u = n(815807),
     g = n(406704),
     A = n(253932),
-    m = n(576705),
-    p = n(486020),
-    h = n(690521),
-    f = n(652215),
+    p = n(576705),
+    m = n(486020),
+    f = n(690521),
+    h = n(652215),
     y = n(307731),
     E = n(985018),
     _ = n(551623);
@@ -32,12 +32,12 @@ function b(e) {
         src: r,
         surrogates: o
     } = t;
-    return null == r && null != t.id ? r = p.Ay.getEmojiURL({
+    return null == r && null != t.id ? r = m.Ay.getEmojiURL({
         id: t.id,
         animated: !!l,
         size: 20
-    }) : null == r && (r = h.Ay.getURL(o)), (0, i.jsx)(s.m, {
-        text: (0, h.N)(t),
+    }) : null == r && (r = f.Ay.getURL(o)), (0, i.jsx)(s.m, {
+        text: (0, f.N)(t),
         hideOnClick: !0,
         spacing: 16,
         forceOpen: n,
@@ -61,7 +61,7 @@ function b(e) {
 }
 
 function v(e, t) {
-    let n = (0, d.D6)(t.guild_id).filter(e => !(e.useSpriteSheet && S.indexOf(e.uniqueName ?? "") >= 0) && !h.Ay.isEmojiPremiumLocked({
+    let n = (0, d.D6)(t.guild_id).filter(e => !(e.useSpriteSheet && S.indexOf(e.uniqueName ?? "") >= 0) && !f.Ay.isEmojiPremiumLocked({
         emoji: e,
         channel: t,
         intention: y.b_.REACTION
@@ -69,7 +69,7 @@ function v(e, t) {
     n.length > 4 && (n.length = 4);
     let l = A.jW.useSetting(),
         a = (0, g.Id)(t);
-    return (0, r.bG)([m.A], () => l && a && (t.isPrivate() || m.A.can(f.xBc.ADD_REACTIONS, t)), [t, a, l]) && n.length > 0 ? (0, i.jsx)(o.rXV, {
+    return (0, r.bG)([p.A], () => l && a && (t.isPrivate() || p.A.can(h.xBc.ADD_REACTIONS, t)), [t, a, l]) && n.length > 0 ? (0, i.jsx)(o.rXV, {
         className: _.iE,
         children: n.map((n, l) => (0, i.jsx)(o.Drp, {
             id: `quickreact-${n.id??l}`,

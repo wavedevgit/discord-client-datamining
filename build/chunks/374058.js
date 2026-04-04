@@ -16,8 +16,8 @@ var a = n(627968),
     x = n(379078),
     p = n(704554),
     g = n(287809),
-    f = n(957565),
-    _ = n(405269),
+    _ = n(957565),
+    f = n(405269),
     v = n(967954),
     b = n(538064),
     j = n(708403),
@@ -80,7 +80,7 @@ function O(e) {
         }), (0, a.jsx)(u.DUT, {
             tag: "span",
             className: S.nH,
-            onClick: () => (0, f.C)(JSON.stringify(s), () => r(!0)),
+            onClick: () => (0, _.C)(JSON.stringify(s), () => r(!0)),
             children: l ? (0, a.jsx)(u.Uzd, {
                 color: "currentColor",
                 size: "sm"
@@ -119,7 +119,7 @@ let k = new Set(["client_performance_cpu", "client_performance_memory"]),
                         children: [t, (0, a.jsx)(u.DUT, {
                             tag: "span",
                             className: S.KE,
-                            onClick: () => (0, f.C)(t),
+                            onClick: () => (0, _.C)(t),
                             children: (0, a.jsx)(u.TdU, {
                                 color: "currentColor",
                                 size: "sm"
@@ -129,7 +129,7 @@ let k = new Set(["client_performance_cpu", "client_performance_memory"]),
                         icon: u.TdU,
                         tooltip: "Copy all properties",
                         onClick: () => {
-                            (0, f.C)(JSON.stringify({
+                            (0, _.C)(JSON.stringify({
                                 event: t,
                                 timestamp: i,
                                 fingerprint: s,
@@ -149,8 +149,8 @@ let k = new Set(["client_performance_cpu", "client_performance_memory"]),
                         copyValue: i.toISOString(),
                         children: (0, a.jsxs)("time", {
                             dateTime: i.toISOString(),
-                            title: (0, _.i$)(x, "LLLL"),
-                            children: ["(", o().locale(), ") ", (0, _.mk)(x)]
+                            title: (0, f.i$)(x, "LLLL"),
+                            children: ["(", o().locale(), ") ", (0, f.mk)(x)]
                         })
                     }), null != c && (0, a.jsx)(j.mA, {
                         name: "User",
@@ -264,8 +264,8 @@ function M() {
                 if (w[t].filter(e)) return !0;
             return !1
         }),
-        [f, _] = i.useState(void 0),
-        j = g.find(e => e.key === f),
+        [_, f] = i.useState(void 0),
+        j = g.find(e => e.key === _),
         {
             TabBar: I,
             renderSelectedTab: O
@@ -317,15 +317,15 @@ function M() {
         }), (0, a.jsx)(C.A, {
             columns: N,
             data: g,
-            selectedRowKey: f,
-            onClickRow: e => _(e.key)
+            selectedRowKey: _,
+            onClickRow: e => f(e.key)
         }), null != j && (0, a.jsxs)(A.A, {
             className: S.rf,
             minHeight: 100,
             initialHeight: null != e.current ? e.current.clientHeight / 2 : 300,
             children: [(0, a.jsx)(I, {}), O({
                 loggedEvent: j,
-                onClose: () => _(void 0),
+                onClose: () => f(void 0),
                 filteredEvents: g
             })]
         })]

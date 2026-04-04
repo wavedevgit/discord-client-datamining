@@ -1,24 +1,56 @@
 /** chunk id: 297147 params = (module,exports,require) **/
-n.d(t, {
-    Q: () => c
+n.d(e, {
+    default: () => p
 });
-var i = n(311907),
-    s = n(419954),
-    l = n(100406),
-    a = n(878460),
-    r = n(780964),
-    o = n(431144),
+var r = n(627968),
+    i = n(64700),
+    a = n(158954),
+    l = n(311907),
+    u = n(397927),
+    s = n(545059),
+    o = n(870391),
     d = n(985018);
-let c = (0, s.Tf)(r.X.UNSUBSCRIBE_FROM_ALL_MARKETING_EMAILS, {
-    useTitle: () => d.intl.string(d.t.Ra9Pwk),
-    useSubtitle: () => d.intl.string(d.t.iYjQ8X),
-    useLabel: () => d.intl.string(d.t.KT1pBA),
-    useDisabled: () => {
-        let {
-            categories: e
-        } = (0, i.cf)([a.A], () => a.A.getEmailSettings());
-        return o.Zk.every(t => !e[t])
-    },
-    onClick: () => (0, l.NI)(),
-    useVariant: () => "critical-secondary"
-})
+
+function p(t) {
+    let {
+        onClose: e,
+        transitionState: n,
+        groupId: p,
+        initialUserIds: c
+    } = t, m = (0, l.bG)([o.A], () => null == p ? null : o.A.getGroup(p)), [C, h] = i.useState(m?.name ?? ""), k = null != p, G = i.useCallback(() => {
+        if ("" !== C.trim()) {
+            if (k && null != p) s.A.updateGroup(p, C.trim());
+            else {
+                let t = s.A.createGroup(C.trim());
+                null != c && c.length > 0 && s.A.addUsersToGroup(t, c)
+            }
+            e()
+        }
+    }, [C, k, p, c, e]), g = i.useCallback(t => {
+        "Enter" === t.key && "" !== C.trim() && G()
+    }, [C, G]);
+    return (0, r.jsx)(a.Modal, {
+        transitionState: n,
+        onClose: e,
+        size: "sm",
+        title: k ? "Edit Friend Group" : "Create Friend Group",
+        actions: [{
+            variant: "secondary",
+            text: d.intl.string(d.t["ETE/oC"]),
+            onClick: e
+        }, {
+            variant: "primary",
+            text: k ? d.intl.string(d.t["R3BPH+"]) : d.intl.string(d.t.CumH4u),
+            onClick: G,
+            disabled: "" === C.trim()
+        }],
+        children: (0, r.jsx)(u.ksK, {
+            value: C,
+            onChange: h,
+            placeholder: "Group Name",
+            maxLength: 100,
+            autoFocus: !0,
+            onKeyDown: g
+        })
+    })
+}

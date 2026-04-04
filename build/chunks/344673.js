@@ -16,8 +16,8 @@ var a = n(627968),
     x = n(73153),
     p = n(58736),
     g = n(405269),
-    f = n(967954),
-    _ = n(538064),
+    _ = n(967954),
+    f = n(538064),
     v = n(708403),
     b = n(260880),
     j = n(303054),
@@ -134,12 +134,12 @@ let S = [{
     }];
 
 function N() {
-    let [e, t] = i.useState(""), n = i.useRef(null), s = (0, u.yK)([f.A], () => f.A.loggedTriggers), r = i.useMemo(() => s.filter(t => 0 === e.length || o()(e, t.experimentId)).sort((e, t) => t.timestamp.getTime() - e.timestamp.getTime()), [s, e]), [d, c] = i.useState(void 0), p = r.find(e => e.key === d), {
+    let [e, t] = i.useState(""), n = i.useRef(null), s = (0, u.yK)([_.A], () => _.A.loggedTriggers), r = i.useMemo(() => s.filter(t => 0 === e.length || o()(e, t.experimentId)).sort((e, t) => t.timestamp.getTime() - e.timestamp.getTime()), [s, e]), [d, c] = i.useState(void 0), p = r.find(e => e.key === d), {
         TabBar: g,
         renderSelectedTab: v
     } = (0, A.Ay)({
         tabs: T
-    }, []), N = (0, u.bG)([f.A], () => f.A.trackTriggers), I = i.useCallback(e => {
+    }, []), N = (0, u.bG)([_.A], () => _.A.trackTriggers), I = i.useCallback(e => {
         x.h.dispatch({
             type: "SET_TRACK_TRIGGERS",
             enabled: e
@@ -170,7 +170,7 @@ function N() {
                 variant: "icon-only",
                 "aria-label": C.intl.string(C.t.VkKicb),
                 icon: h.ucK,
-                onClick: _.eY
+                onClick: f.eY
             })]
         }), (0, a.jsx)(j.A, {
             columns: S,

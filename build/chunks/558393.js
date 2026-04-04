@@ -6,8 +6,8 @@ var n = e(936555),
     r = e(853742),
     E = e(979816),
     s = e(997509),
-    l = e(472282),
-    S = e(225419),
+    S = e(472282),
+    l = e(225419),
     o = e(864145),
     A = e(96566),
     a = e(284738),
@@ -66,11 +66,11 @@ let D = {
                 location: "3ad37d_1"
             }).enabled && B.p6.has(i.type),
             u = (0, A.Bw)(t),
-            f = (0, E.i_)(t),
-            h = i.isMediaChannel(),
+            h = (0, E.i_)(t),
+            f = i.isMediaChannel(),
             C = new Set,
             L = N.A.getGuild(t);
-        L?.features.has(T.GuildFeatures.VERIFIED) && l.A.getCurrentConfig({
+        L?.features.has(T.GuildFeatures.VERIFIED) && S.A.getCurrentConfig({
             guildId: t,
             location: "generateChannelPermissionSpec"
         }).enabled || C.add(T.xBc.MANAGE_OFFICIAL_MESSAGES.toString());
@@ -79,71 +79,71 @@ let D = {
         } = O;
         switch (i.type) {
             case T.rbe.GUILD_CATEGORY:
-                D = [S.mL(c, M.intl.string(M.t["AkPxc+"])), S.m6(c, M.intl.string(M.t.Ny49TN)), S.BK(c, M.intl.string(M.t.cKobO5), {
+                D = [l.mL(c, M.intl.string(M.t["AkPxc+"])), l.m6(c, M.intl.string(M.t.Ny49TN)), l.BK(c, M.intl.string(M.t.cKobO5), {
                     showPrivateThreads: !0,
                     showCreateThreads: !0,
                     inSoundmojiExperiment: G
-                }), S.iG(c, M.intl.string(M.t["46Ra1b"])), S.Si(c, M.intl.string(M.t["rrh/W6"])), ...(o = O.showStageChannelPermissions, a = () => S.qI(c, M.intl.string(M.t.yniauk)), o ? [a()] : []), S.xd(c, M.intl.string(M.t.b8lplT))];
+                }), l.iG(c, M.intl.string(M.t["46Ra1b"])), l.Si(c, M.intl.string(M.t["rrh/W6"])), ...(o = O.showStageChannelPermissions, a = () => l.qI(c, M.intl.string(M.t.yniauk)), o ? [a()] : []), l.xd(c, M.intl.string(M.t.b8lplT))];
                 break;
             case T.rbe.GUILD_VOICE:
-                D = [S.mL(c, M.intl.string(M.t.ouHggI), {
+                D = [l.mL(c, M.intl.string(M.t.ouHggI), {
                     showManageWebhooks: !0
-                }), S.m6(c, M.intl.string(M.t.Ny49TN)), S.iG(c, M.intl.string(M.t["46Ra1b"])), S.k6(c, M.intl.string(M.t.iqlsnD), {
-                    sectionDescription: f ? M.intl.format(M.t["4Z9Fbb"], {
+                }), l.m6(c, M.intl.string(M.t.Ny49TN)), l.iG(c, M.intl.string(M.t["46Ra1b"])), l.k6(c, M.intl.string(M.t.iqlsnD), {
+                    sectionDescription: h ? M.intl.format(M.t["4Z9Fbb"], {
                         setUpAutomod: () => {
                             s.A.open(t, T.BEX.GUILD_AUTOMOD)
                         }
                     }) : void 0,
                     inSoundmojiExperiment: G
-                }), S.xd(c, M.intl.string(M.t.b8lplT)), S.Si(c, M.intl.string(M.t["rrh/W6"]))];
+                }), l.xd(c, M.intl.string(M.t.b8lplT)), l.Si(c, M.intl.string(M.t["rrh/W6"]))];
                 break;
             case T.rbe.GUILD_STAGE_VOICE:
-                D = [S.mL(c, M.intl.string(M.t.ouHggI), {
+                D = [l.mL(c, M.intl.string(M.t.ouHggI), {
                     showManageWebhooks: !1
-                }), S.m6(c, M.intl.string(M.t.Ny49TN)), S.od(c, M.intl.string(M.t["46Ra1b"]), u), S.qI(c, M.intl.string(M.t.yniauk)), S.xd(c, M.intl.string(M.t.b8lplT)), S.k6(c, M.intl.string(M.t.iqlsnD), {
-                    sectionDescription: f ? M.intl.format(M.t["4Z9Fbb"], {
+                }), l.m6(c, M.intl.string(M.t.Ny49TN)), l.od(c, M.intl.string(M.t["46Ra1b"]), u), l.qI(c, M.intl.string(M.t.yniauk)), l.xd(c, M.intl.string(M.t.b8lplT)), l.k6(c, M.intl.string(M.t.iqlsnD), {
+                    sectionDescription: h ? M.intl.format(M.t["4Z9Fbb"], {
                         setUpAutomod: () => {
                             s.A.open(t, T.BEX.GUILD_AUTOMOD)
                         }
                     }) : void 0,
                     inSoundmojiExperiment: G
-                }), S.Si(c, M.intl.string(M.t["rrh/W6"]), {
+                }), l.Si(c, M.intl.string(M.t["rrh/W6"]), {
                     showActivities: !1
                 })];
                 break;
             case T.rbe.GUILD_FORUM:
             case T.rbe.GUILD_MEDIA: {
-                let i = h ? M.intl.string(M.t.aSjPgw) : M.intl.string(M.t.TS7Cnb),
-                    e = h ? M.t.YjJTtH : M.t["1MTnqY"];
-                D = [S.mL(c, M.intl.string(M.t.ouHggI)), S.m6(c, M.intl.string(M.t.Ny49TN)), S.BK(c, i, {
+                let i = f ? M.intl.string(M.t.aSjPgw) : M.intl.string(M.t.TS7Cnb),
+                    e = f ? M.t.YjJTtH : M.t["1MTnqY"];
+                D = [l.mL(c, M.intl.string(M.t.ouHggI)), l.m6(c, M.intl.string(M.t.Ny49TN)), l.BK(c, i, {
                     showPrivateThreads: !1,
                     showCreateThreads: !1,
-                    sectionDescription: f ? M.intl.format(e, {
+                    sectionDescription: h ? M.intl.format(e, {
                         setUpAutomod: () => {
-                            h || (0, r.El)(), s.A.open(t, T.BEX.GUILD_AUTOMOD)
+                            f || (0, r.El)(), s.A.open(t, T.BEX.GUILD_AUTOMOD)
                         }
                     }) : void 0,
                     inSoundmojiExperiment: G
-                }), S.Si(c, M.intl.string(M.t["rrh/W6"])), ...(g = () => S.iG(c, M.intl.string(M.t["46Ra1b"])), R ? [g()] : [])];
+                }), l.Si(c, M.intl.string(M.t["rrh/W6"])), ...(g = () => l.iG(c, M.intl.string(M.t["46Ra1b"])), R ? [g()] : [])];
                 break
             }
             default:
-                D = [S.mL(c, M.intl.string(M.t.ouHggI)), S.m6(c, M.intl.string(M.t.Ny49TN)), S.BK(c, M.intl.string(M.t.cKobO5), {
+                D = [l.mL(c, M.intl.string(M.t.ouHggI)), l.m6(c, M.intl.string(M.t.Ny49TN)), l.BK(c, M.intl.string(M.t.cKobO5), {
                     showPrivateThreads: i.type !== T.rbe.GUILD_ANNOUNCEMENT,
                     showCreateThreads: !0,
                     inSoundmojiExperiment: G
-                }), S.Si(c, M.intl.string(M.t["rrh/W6"])), ...(x = () => S.iG(c, M.intl.string(M.t["46Ra1b"])), R ? [x()] : [])]
+                }), l.Si(c, M.intl.string(M.t["rrh/W6"])), ...(x = () => l.iG(c, M.intl.string(M.t["46Ra1b"])), R ? [x()] : [])]
         }
         return I(D, C)
     },
     generateGuildPermissionSpec: function(t) {
         let i = new Set;
-        return t.features.has(T.GuildFeatures.COMMUNITY) || i.add(T.xBc.VIEW_GUILD_ANALYTICS.toString()), t.features.has(T.GuildFeatures.VERIFIED) && l.A.getCurrentConfig({
+        return t.features.has(T.GuildFeatures.COMMUNITY) || i.add(T.xBc.VIEW_GUILD_ANALYTICS.toString()), t.features.has(T.GuildFeatures.VERIFIED) && S.A.getCurrentConfig({
             guildId: t.id,
             location: "generateGuildPermissionSpec"
-        }).enabled || i.add(T.xBc.MANAGE_OFFICIAL_MESSAGES.toString()), I(S.LZ(p(t.id)), i)
+        }).enabled || i.add(T.xBc.MANAGE_OFFICIAL_MESSAGES.toString()), I(l.LZ(p(t.id)), i)
     },
     getGuildPermissionSpecMap: function(t) {
-        return S.eD(p(t.id))
+        return l.eD(p(t.id))
     }
 }

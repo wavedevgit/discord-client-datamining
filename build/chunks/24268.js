@@ -16,8 +16,8 @@ var a = n(627968),
     x = n(760716),
     p = n(652215),
     g = n(115093),
-    f = n(310086),
-    _ = n(521807);
+    _ = n(310086),
+    f = n(521807);
 let v = window.GLOBAL_ENV.RELEASE_CHANNEL === g.B.STAGING ? "1438571444891025408" : "1346069614634864772";
 
 function b() {
@@ -55,9 +55,9 @@ function b() {
             k?.(e)
         }, [k]);
     return (0, a.jsx)("div", {
-        className: l()(f.nd, _.n),
+        className: l()(_.nd, f.n),
         children: (0, a.jsxs)("div", {
-            className: _.k,
+            className: f.k,
             children: [(0, a.jsx)(o.ksK, {
                 label: "Application ID",
                 value: s,

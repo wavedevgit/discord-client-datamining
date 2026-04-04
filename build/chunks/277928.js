@@ -21,16 +21,16 @@ let h = e => {
         activeScreen: p,
         popoutTargetElementRef: g
     } = e, {
-        quest: f,
-        onGameSheetOpen: _,
+        quest: _,
+        onGameSheetOpen: f,
         onGameSheetClose: v
-    } = i.useContext(u.T), b = (0, r.VX)(f), j = (0, r.tH)({
-        quest: f,
+    } = i.useContext(u.T), b = (0, r.VX)(_), j = (0, r.tH)({
+        quest: _,
         isExpanded: t,
         activeScreen: p,
         sourceQuestContent: l.uF.QUEST_BAR_V2,
         popoutTargetElementRef: g,
-        onGameSheetOpened: _,
+        onGameSheetOpened: f,
         onGameSheetClosed: v
     });
     return (0, a.jsxs)("div", {
@@ -46,7 +46,7 @@ let h = e => {
                 size: 42,
                 children: (0, a.jsx)(o.A, {
                     fullWidth: !0,
-                    quest: f,
+                    quest: _,
                     questContent: l.uF.QUEST_BAR_V2,
                     autoplay: !1,
                     sourceQuestContent: l.uF.QUEST_BAR_V2

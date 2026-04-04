@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(562465),
     a = n(10716),
-    r = n(458664),
-    l = n(587895),
+    l = n(458664),
+    r = n(587895),
     s = n(20015),
     o = n(147964),
     d = n(954571),
@@ -33,11 +33,11 @@ let p = {
             let a = t.application.id,
                 o = (0, h.A)(),
                 A = o?.getGuildId(),
-                _ = l.A.getApplication(a);
+                _ = r.A.getApplication(a);
             if (!(0, s.n)(_, m.gfo.EMBEDDED_FIRST_PARTY)) throw new c.A({
                 errorCode: m.Lw6.INVALID_COMMAND
             }, "This application cannot access this API");
-            let p = (0, r.D)(a),
+            let p = (0, l.D)(a),
                 g = {
                     activity_application_id: a,
                     activity_channel_type: o?.type,

@@ -22,11 +22,11 @@ var i = n(64700),
 function T(e) {
     let {
         fractionalState: t
-    } = (0, a.A)(), n = t === x.xc.FP_ONLY, s = (0, c.$F)(), T = (0, c.Xb)(), f = s?.status === c.Wo.UPCOMING || n, S = (0, m.N)(s?.id), b = (0, o.z)(), E = (0, u.t)(), C = (0, r.P)();
+    } = (0, a.A)(), n = t === x.xc.FP_ONLY, s = (0, c.$F)(), T = (0, c.Xb)(), f = s?.status === c.Wo.UPCOMING || n, S = (0, m.N)(s?.id), E = (0, o.z)(), b = (0, u.t)(), C = (0, r.P)();
     return (0, i.useMemo)(() => {
         let t, i = null != C ? A.intl.string(C.nameUnformattedNitro) : void 0;
         return null == s ? n && (t = (0, d.T)(x.Ac.PREMIUM_TENURE_1_MONTH, 1) ?? void 0) : t = s.status === c.Wo.UPCOMING ? A.intl.formatToPlainString(A.t.a1eKDi, {
-            days: E?.days ?? 0
+            days: b?.days ?? 0
         }) : function(e, t) {
             if (null != e && null != t) {
                 if (e.days <= 30) return A.intl.formatToPlainString(A.t.NEXoaI, {
@@ -38,7 +38,7 @@ function T(e) {
                     nextBadgeName: t
                 })
             }
-        }(E, i) ?? (0, d.T)(s.id, s.tenureReqNumMonths) ?? void 0, {
+        }(b, i) ?? (0, d.T)(s.id, s.tenureReqNumMonths) ?? void 0, {
             id: _.TENURE_BADGE_CARD_ID,
             title: null != s ? A.intl.string(s.nameUnformattedNitro) : n ? A.intl.string(A.t.tx9Fvw) : "",
             pillText: A.intl.string(A.t["jyYgZ+"]),
@@ -51,11 +51,11 @@ function T(e) {
             }) : void 0,
             description: t,
             subscriptionRequired: !0,
-            progress: b ?? void 0,
+            progress: E ?? void 0,
             ctaText: A.intl.string(A.t.jVcuVY),
             onCtaClick: () => (0, g.D)({
                 analyticsLocations: e
             })
         }
-    }, [s, S, f, T, b, n, E, C, e])
+    }, [s, S, f, T, E, n, b, C, e])
 }

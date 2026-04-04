@@ -16,8 +16,8 @@ var a = n(627968),
     x = n(652215),
     p = n(204925),
     g = n(985018),
-    f = n(786020),
-    _ = n(310086);
+    _ = n(786020),
+    f = n(310086);
 let v = {
     EmailEnterModal: async () => {
         let {
@@ -437,7 +437,7 @@ let v = {
         } = await Promise.resolve().then(n.bind(n, 200700)), d = await Promise.resolve().then(n.t.bind(n, 64700, 19)), c = "TestUser";
 
         function u(n) {
-            let [u, m] = d.useState(r.DURATION_60_SEC), [h, x] = d.useState(""), [p, g] = d.useState(!1), [f, _] = d.useState(!1), v = [{
+            let [u, m] = d.useState(r.DURATION_60_SEC), [h, x] = d.useState(""), [p, g] = d.useState(!1), [_, f] = d.useState(!1), v = [{
                 value: r.DURATION_60_SEC,
                 label: o(r.DURATION_60_SEC)
             }, {
@@ -460,9 +460,9 @@ let v = {
                     user: c,
                     duration: o(u),
                     reason: null != h ? h : "No reason provided",
-                    resolveFlag: f
+                    resolveFlag: _
                 }), await new Promise(e => setTimeout(e, 1e3)), g(!1), n.onClose()
-            }, [u, h, f, n]);
+            }, [u, h, _, n]);
             return (0, a.jsxs)("div", {
                 style: {
                     padding: "20px",
@@ -515,8 +515,8 @@ let v = {
                 }), (0, a.jsx)("div", {
                     className: "mb-4",
                     children: (0, a.jsx)(s, {
-                        checked: f,
-                        onChange: _,
+                        checked: _,
+                        onChange: f,
                         label: "Resolve associated mod report"
                     })
                 }), (0, a.jsxs)("div", {
@@ -1214,11 +1214,11 @@ function b() {
         })).sort((e, t) => e.label.localeCompare(t.label)), []),
         [t, n] = i.useState(null);
     return (0, a.jsx)(r.IpV, {
-        className: _.nd,
+        className: f.nd,
         children: (0, a.jsxs)("div", {
-            className: f.l$,
+            className: _.l$,
             children: [(0, a.jsx)("section", {
-                className: f.uW,
+                className: _.uW,
                 children: (0, a.jsxs)(r.BJc, {
                     direction: "horizontal",
                     gap: 8,
@@ -1238,12 +1238,12 @@ function b() {
                     })]
                 })
             }), (0, a.jsxs)("section", {
-                className: f.uW,
+                className: _.uW,
                 children: [(0, a.jsx)(r.Heading, {
                     variant: "heading-md/semibold",
                     children: "Wow moment"
                 }), (0, a.jsx)("div", {
-                    className: f.bd,
+                    className: _.bd,
                     children: (0, a.jsx)(r.Button, {
                         variant: "primary",
                         text: "Open",

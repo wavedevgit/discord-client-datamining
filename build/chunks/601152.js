@@ -1,6 +1,6 @@
 /** chunk id: 601152 params = (module,exports,require) **/
 n.d(t, {
-    A: () => f
+    A: () => _
 });
 var a = n(627968),
     i = n(64700),
@@ -214,7 +214,7 @@ function g(e) {
     })
 }
 
-function f() {
+function _() {
     let [e, t] = i.useState(null), n = Object.values((0, l.bG)([d.A], () => d.A.getAllConfigsByApplication())).flat(), r = null != e ? n.find(t => t.config_id === e) : null;
     return (0, a.jsx)(s.ArX, {
         children: (0, a.jsxs)(s.BJc, {

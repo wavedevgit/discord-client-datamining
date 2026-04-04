@@ -16,8 +16,8 @@ var a = n(627968),
     x = n(688810),
     p = n(993719),
     g = n(14059),
-    f = n(362823),
-    _ = n(980923),
+    _ = n(362823),
+    f = n(980923),
     v = n(206018),
     b = n(480890),
     j = n(74848),
@@ -59,7 +59,7 @@ function D(e) {
         }),
         q = (0, o.bG)([y.Ay], () => y.Ay.getMode() === N.TB.PUSH_TO_TALK),
         Y = (0, o.bG)([y.Ay], () => y.Ay.getSettings().modeOptions.shortcut),
-        Q = (0, o.bG)([g.A], () => g.A.getIsTutorialActive(f.v.MUTE_TUTORIAL)),
+        Q = (0, o.bG)([g.A], () => g.A.getIsTutorialActive(_.v.MUTE_TUTORIAL)),
         J = (0, o.bG)([E.A], () => null != E.A.getChannelId()),
         {
             name: X
@@ -82,7 +82,7 @@ function D(e) {
         } = en,
         er = s || D ? r.O1p : ei;
     i.useEffect(() => () => el(), [et, el]);
-    let eo = (0, _.A)(n, s, D, M);
+    let eo = (0, f.A)(n, s, D, M);
     t = F ? {
         tooltipType: "green_void_do_not_use",
         tooltipText: I.intl.string(I.t["29gnR4"]),
@@ -99,7 +99,7 @@ function D(e) {
     let ed = $ && q && J,
         ec = et ? d.A.colors.ICON_VOICE_MUTED : "currentColor",
         eu = i.useCallback(() => {
-            B(), Q && p.N(f.v.MUTE_TUTORIAL)
+            B(), Q && p.N(_.v.MUTE_TUTORIAL)
         }, [B, Q]);
     return (0, a.jsxs)(x.f5, {
         value: ea,
@@ -209,7 +209,7 @@ function D(e) {
                 src: w.A
             },
             onRequestClose: () => {
-                p.N(f.v.MUTE_TUTORIAL)
+                p.N(_.v.MUTE_TUTORIAL)
             },
             position: "top",
             title: I.intl.string(O.default.VG4zAf),

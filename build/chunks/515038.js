@@ -16,8 +16,8 @@ var a = n(627968),
     x = n(714510),
     p = n(890687),
     g = n(710969),
-    f = n(92246),
-    _ = n(895253),
+    _ = n(92246),
+    f = n(895253),
     v = n(453384),
     b = n(442734),
     j = n(646764),
@@ -40,7 +40,7 @@ function O(e) {
         isVisibleInViewport: w,
         onReceiveErrorHints: D,
         sourceQuestContent: M
-    } = e, P = i.useRef(null), L = (0, p.Oq)(), U = (0, p.SD)(t), B = L && U, G = (0, f.mq)(t.config), F = (0, f.mH)(t.config), V = t.userStatus?.enrolledAt != null, {
+    } = e, P = i.useRef(null), L = (0, p.Oq)(), U = (0, p.SD)(t), B = L && U, G = (0, _.mq)(t.config), F = (0, _.mH)(t.config), V = t.userStatus?.enrolledAt != null, {
         ref: W,
         scrollHeight: H
     } = (0, c.wR)(), K = 104 !== H, {
@@ -53,7 +53,7 @@ function O(e) {
             ...S.N,
             clamp: !0
         }
-    }), q = t.userStatus?.completedAt != null, Y = t.userStatus?.claimedAt != null, Q = (0, f.ks)(t.config), J = (0, f._Z)(t.config), {
+    }), q = t.userStatus?.completedAt != null, Y = t.userStatus?.claimedAt != null, Q = (0, _.ks)(t.config), J = (0, _._Z)(t.config), {
         completedRatio: X,
         completedRatioDisplay: Z
     } = (0, p.O9)(t), ee = (0, x.gj)(t, M, m.Ob.QuestHome, P), et = i.useMemo(() => Y && Q ? T.intl.format(T.t["8Op4c4"], {
@@ -93,7 +93,7 @@ function O(e) {
     return (0, a.jsxs)("div", {
         className: N.kL,
         ref: P,
-        children: [(0, a.jsx)(_.A, {
+        children: [(0, a.jsx)(f.A, {
             visible: B,
             glow: !0
         }), (0, a.jsxs)(r.animated.div, {

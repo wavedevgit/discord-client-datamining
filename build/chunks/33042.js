@@ -1,7 +1,7 @@
 /** chunk id: 33042 params = (module,exports,require) **/
 n.d(t, {
     Q: () => g,
-    T: () => f
+    T: () => _
 });
 var a = n(627968);
 n(64700);
@@ -98,7 +98,7 @@ function g(e) {
     })
 }
 
-function f(e) {
+function _(e) {
     let t = l.CY.useSetting(),
         n = (0, s.kB)(),
         r = l.Jr.useSetting(),
@@ -134,12 +134,12 @@ function f(e) {
             status: u.clD.ONLINE,
             currentStatus: e
         }),
-        f = p({
+        _ = p({
             status: u.clD.IDLE,
             currentStatus: e,
             description: o(u.clD.IDLE)
         }),
-        _ = p({
+        f = p({
             status: u.clD.DND,
             currentStatus: e,
             description: o(u.clD.DND)
@@ -150,7 +150,7 @@ function f(e) {
             description: o(u.clD.INVISIBLE)
         });
     return (0, a.jsxs)(a.Fragment, {
-        children: [c, (0, a.jsx)(i.bXX, {}, "menu-separator-statuses"), f, _, v, n ? (0, a.jsxs)(a.Fragment, {
+        children: [c, (0, a.jsx)(i.bXX, {}, "menu-separator-statuses"), _, f, v, n ? (0, a.jsxs)(a.Fragment, {
             children: [(0, a.jsx)(i.bXX, {}, "menu-separator-statuses"), (0, a.jsx)(i.Drp, {
                 id: "quiet-mode",
                 "aria-label": "focus mode",

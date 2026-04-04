@@ -17,8 +17,8 @@ var a = n(627968),
     x = n(442433),
     p = n(820284),
     g = n(717558),
-    f = n(964486),
-    _ = n(220839),
+    _ = n(964486),
+    f = n(220839),
     v = n(397244),
     b = n(729551),
     j = n(755039),
@@ -71,8 +71,8 @@ var a = n(627968),
     ex = n(287809),
     ep = n(486020),
     eg = n(203982),
-    ef = n(927813),
-    e_ = n(403362),
+    e_ = n(927813),
+    ef = n(403362),
     ev = n(536194),
     eb = n(427262),
     ej = n(837921),
@@ -87,10 +87,10 @@ var a = n(627968),
     eO = n(985018),
     ek = n(64734);
 let eR = ej.Ay.getEnableHardwareAcceleration() ? h.JsQ : h.euF,
-    ew = 2.5 * ef.A.Millis.SECOND,
-    eD = 2 * ef.A.Millis.MINUTE,
-    eM = 2 * ef.A.Millis.MINUTE,
-    eP = 5 * ef.A.Millis.SECOND;
+    ew = 2.5 * e_.A.Millis.SECOND,
+    eD = 2 * e_.A.Millis.MINUTE,
+    eM = 2 * e_.A.Millis.MINUTE,
+    eP = 5 * e_.A.Millis.SECOND;
 
 function eL(e) {
     let {
@@ -105,7 +105,7 @@ function eL(e) {
         renderNameTag: m,
         nameplate: x,
         avatarDecoration: g,
-        "data-jump-section": f
+        "data-jump-section": _
     } = e, v = i.useRef(null), b = t ?? v, j = (0, ep.F_)({
         avatarDecoration: g,
         size: (0, w.Te)(h._3J.SIZE_32)
@@ -122,7 +122,7 @@ function eL(e) {
             }, []),
             [n, a] = i.useState(),
             [s, l] = i.useState(!1);
-        return (0, _.A)(() => l(!0), 750), i.useEffect(() => {
+        return (0, f.A)(() => l(!0), 750), i.useEffect(() => {
             let t = t => {
                 let {
                     highlightBadge: n
@@ -202,7 +202,7 @@ function eL(e) {
                             ringTarget: b
                         },
                         className: ek.$n,
-                        "data-jump-section": f
+                        "data-jump-section": _
                     }), (0, a.jsx)(eR, {
                         size: h._3J.SIZE_32,
                         src: o.getAvatarURL(void 0, 28, !1),
@@ -578,8 +578,8 @@ function eB(e) {
         handleToggleSelfMute: x,
         handleInputAudioContextMenu: p,
         handleOutputAudioContextMenu: g,
-        handleOpenAccountSettings: f,
-        handleOpenSettingsContextMenu: _,
+        handleOpenAccountSettings: _,
+        handleOpenSettingsContextMenu: f,
         dismissibleContents: v,
         nameplate: b,
         accountContainerRef: j,
@@ -621,8 +621,8 @@ function eB(e) {
             dismissTooltips: y
         }), (0, a.jsx)(eT.A, {
             webBuildOverride: c,
-            onClick: f,
-            onContextMenu: _,
+            onClick: _,
+            onContextMenu: f,
             dismissibleContents: v.settings,
             iconForeground: null != b ? ek.t4 : void 0,
             nameplate: b
@@ -643,7 +643,7 @@ function eG(e) {
     let r = i.useCallback(() => {
         l(!1), a.current.stop()
     }, []);
-    return (0, f.l0)(() => {
+    return (0, _.l0)(() => {
         a.current.stop()
     }), {
         shouldShowTooltip: s,
@@ -684,8 +684,8 @@ function eF() {
             return null != e ? el.A.getChannel(e) : null
         }),
         {
-            mute: f,
-            selfMute: _,
+            mute: _,
+            selfMute: f,
             suppress: v
         } = (0, et.A)(p),
         {
@@ -716,7 +716,7 @@ function eF() {
             let e, t = $.A.getSyncingWith(),
                 n = $.A.getActivity(),
                 a = [];
-            return null != t ? e = t.partyId : null != n && null != n.party && null != n.party.id && (e = n.party.id), null != e && (a = o()(Array.from(er.A.getParty(e) ?? [])).map(e => ex.default.getUser(e)).filter(e_.Vq).value()), a.length > 1
+            return null != t ? e = t.partyId : null != n && null != n.party && null != n.party.id && (e = n.party.id), null != e && (a = o()(Array.from(er.A.getParty(e) ?? [])).map(e => ex.default.getUser(e)).filter(ef.Vq).value()), a.length > 1
         }),
         H = {
             avatar: [],
@@ -733,7 +733,7 @@ function eF() {
     } = eG(eI.oh.AUDIO_OUTPUT), {
         shouldShowTooltip: Z,
         dismissTooltip: ep
-    } = (0, en.A)(), eg = (0, ea.A)(), ef = i.useMemo(() => Y ? "input" : J ? "output" : void 0, [Y, J]), ej = i.useCallback(e => {
+    } = (0, en.A)(), eg = (0, ea.A)(), e_ = i.useMemo(() => Y ? "input" : J ? "output" : void 0, [Y, J]), ej = i.useCallback(e => {
         switch (e) {
             case "input":
                 Q();
@@ -754,9 +754,9 @@ function eF() {
             userTag: x,
             occluded: k,
             selfDeaf: b,
-            selfMute: _,
+            selfMute: f,
             serverDeaf: j,
-            serverMute: f,
+            serverMute: _,
             speaking: d,
             voiceDb: m,
             speakingWhileMuted: N,
@@ -771,8 +771,8 @@ function eF() {
             avatarDecoration: L,
             isQuestBarEmpty: F,
             isListenAlongVisible: W,
-            deviceChangedTooltipType: ef,
-            onDismissDeviceChangedTooltip: () => ej(ef),
+            deviceChangedTooltipType: e_,
+            onDismissDeviceChangedTooltip: () => ej(e_),
             shouldShowPTTJoinTooltip: Z,
             dismissPTTJoinTooltip: ep
         })

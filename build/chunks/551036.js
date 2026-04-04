@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     a = n(64700),
-    r = n(607399),
-    l = n(311907),
+    l = n(607399),
+    r = n(311907),
     s = n(397927),
     o = n(384904),
     d = n(9113),
@@ -31,20 +31,20 @@ var i = n(627968),
 function y(e) {
     let {
         guildId: t
-    } = e, n = (0, l.bG)([p.A], () => p.A.getGuild(t), [t]), y = (0, l.bG)([_.A], () => _.A.isConnected()), O = (0, A.A)(t), L = (0, I.A)(t), R = (0, l.bG)([g.A], () => g.A.isSubscriptionFetching), P = (0, E.X)(), {
+    } = e, n = (0, r.bG)([p.A], () => p.A.getGuild(t), [t]), y = (0, r.bG)([_.A], () => _.A.isConnected()), O = (0, A.A)(t), L = (0, I.A)(t), R = (0, r.bG)([g.A], () => g.A.isSubscriptionFetching), P = (0, E.X)(), {
         shouldHideGuildPurchaseEntryPoints: D,
         restrictionsLoading: M
     } = (0, h.MH)(t), j = null == n || !P || R || M;
     (0, c.HU)({
         subsection: v.intl.string(v.t["KzCF/6"]),
         location: n?.name
-    }), (0, d.A)(r.Fr ? "role-subscriptions-overview" : void 0);
+    }), (0, d.A)(l.Fr ? "role-subscriptions-overview" : void 0);
     let w = y && (null == n || !(O || L) || D && !M);
     if (a.useEffect(() => {
             o.hP()
         }, []), a.useEffect(() => {
-            w && !r.Fr && (0, u.B)(t, x.VV.ROLE_SUBSCRIPTIONS)
-        }, [t, w]), r.Fr && w) {
+            w && !l.Fr && (0, u.B)(t, x.VV.ROLE_SUBSCRIPTIONS)
+        }, [t, w]), l.Fr && w) {
         let e = null == n ? T.b.NOT_GUILD_MEMBER : T.b.GUILD_NOT_ELIGIBLE;
         return (0, i.jsx)(T.k, {
             errorType: e

@@ -1,6 +1,6 @@
 /** chunk id: 245750 params = (module,exports,require) **/
 n.d(t, {
-    A: () => f
+    A: () => _
 });
 var a = n(627968),
     i = n(64700),
@@ -17,10 +17,10 @@ var a = n(627968),
     p = n(49999),
     g = n(985018);
 
-function f(e) {
+function _(e) {
     let t, n, {
-            webBuildOverride: f,
-            onClick: _,
+            webBuildOverride: _,
+            onClick: f,
             onContextMenu: v,
             dismissibleContents: b,
             iconForeground: j,
@@ -35,14 +35,14 @@ function f(e) {
         }
     });
     let S = i.useCallback(() => {
-        E(!1), _()
-    }, [_]);
-    t = null != f ? g.intl.formatToPlainString(g.t.Gzh6ZP, {
-        webBuildOverride: f.id
+        E(!1), f()
+    }, [f]);
+    t = null != _ ? g.intl.formatToPlainString(g.t.Gzh6ZP, {
+        webBuildOverride: _.id
     }) : g.intl.string(g.t.cduTBL);
     let T = o.Zes,
         N = (0, r.w)();
-    return T = null != f ? o.Hnu : N.Component, (0, a.jsxs)(a.Fragment, {
+    return T = null != _ ? o.Hnu : N.Component, (0, a.jsxs)(a.Fragment, {
         children: [(0, a.jsx)(h.A, {
             ref: C,
             tooltipText: t,

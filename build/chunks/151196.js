@@ -1,6 +1,6 @@
 /** chunk id: 151196 params = (module,exports,require) **/
 n.d(t, {
-    $Y: () => f,
+    $Y: () => _,
     Dp: () => u,
     EP: () => S,
     F$: () => C,
@@ -8,7 +8,7 @@ n.d(t, {
     ID: () => p,
     KC: () => E,
     ME: () => d,
-    OT: () => _,
+    OT: () => f,
     QN: () => y,
     Sf: () => h,
     UH: () => j,
@@ -36,14 +36,14 @@ let d = [0, .5, 1],
     x = "TEXT_DEFAULT",
     p = "INTERACTIVE_BACKGROUND_HOVER",
     g = "BACKGROUND_BASE_LOWEST",
-    f = "ILLO_BLUE",
-    _ = "ILLO_BLUE_40",
+    _ = "ILLO_BLUE",
+    f = "ILLO_BLUE_40",
     v = Array.from({
         length: u
-    }, () => _),
+    }, () => f),
     b = Array.from({
         length: u
-    }, () => f),
+    }, () => _),
     j = ["1", "0.5", "0"],
     A = /^#?([0-9a-f]{3}|[0-9a-f]{6})$/i,
     C = [{

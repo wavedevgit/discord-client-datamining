@@ -84,9 +84,9 @@ let A = {
         } = (0, o.y7)();
         if (!T) return (0, i.jsx)(s.y$y, {});
         let S = r?.modalSubtitle != null ? _.intl.format(r.modalSubtitle.message, r.modalSubtitle.values) : void 0,
-            b = null == r ? t : _.intl.string(r.modalTitle);
+            E = null == r ? t : _.intl.string(r.modalTitle);
         return (0, i.jsx)(s.Modal, {
-            title: b,
+            title: E,
             subtitle: S,
             actions: [],
             transitionState: n,

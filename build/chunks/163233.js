@@ -16,8 +16,8 @@ var a = n(627968),
     x = n(633075),
     p = n(735321),
     g = n(667049),
-    f = n(657331),
-    _ = n(606758),
+    _ = n(657331),
+    f = n(606758),
     v = n(961350),
     b = n(403362),
     j = n(49999),
@@ -41,18 +41,18 @@ function y(e) {
             h = (t = (0, u.A)(m), i.useMemo(() => t.filter(b.Vq), [t])),
             {
                 tokens: p,
-                fetched: f
+                fetched: _
             } = (0, o.j)(m),
-            _ = (0, d.U9)(h);
+            f = (0, d.U9)(h);
         return i.useMemo(() => {
-            if (null == r || null == p || !f) return null;
+            if (null == r || null == p || !_) return null;
             let e = [],
                 t = [];
             for (let n of r) {
                 let a = p.find(e => e.application.id === n.applicationId),
                     i = l.find(e => e.applicationId === n.applicationId),
                     s = h.find(e => e.id === n.applicationId),
-                    r = _.find(e => e.context.application.id === n.applicationId);
+                    r = f.find(e => e.context.application.id === n.applicationId);
                 if (null == s) return null;
                 null != a && null == i ? e.push({
                     type: "linked",
@@ -68,7 +68,7 @@ function y(e) {
                 })
             }
             return [...e, ...t]
-        }, [r, p, f, l, h, _])
+        }, [r, p, _, l, h, f])
     }(), {
         analyticsLocations: I
     } = (0, r.Ay)();
@@ -81,7 +81,7 @@ function y(e) {
             } = e, r = N.find(e => e.dismissibleContent === i);
             if (null == r) return null;
             let o = "linked" === r.type,
-                d = () => (0, f.openUserProfileModal)({
+                d = () => (0, _.openUserProfileModal)({
                     userId: T,
                     tabSection: A.RP.WIDGETS
                 }).then(() => {
@@ -110,7 +110,7 @@ function y(e) {
                             }), void((0, p.Y5)(e), S({
                                 action: "WIDGET_ADDED",
                                 ...e.getProfileEditAnalyticsOptions()
-                            }), (0, _.XA)(A.jM.WIDGET_ADDED))
+                            }), (0, f.XA)(A.jM.WIDGET_ADDED))
                         }).finally(() => E(!1))
                     },
                     loading: y

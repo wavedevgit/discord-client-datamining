@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var a = n(397927),
-    r = n(790284),
-    l = n(780964),
+    l = n(790284),
+    r = n(780964),
     s = n(858897),
     o = n(322092),
     d = n(652215),
@@ -24,9 +24,9 @@ function A(e) {
             message: u.intl.string(u.t.eSuJE2),
             ctaMessage: u.intl.string(u.t.RXsxqb),
             onClick: () => {
-                r.A.setState({
+                l.A.setState({
                     subsection: c.nR
-                }), (0, s.openUserSettings)(l.X.SUBSCRIPTIONS_PANEL)
+                }), (0, s.openUserSettings)(r.X.SUBSCRIPTIONS_PANEL)
             }
         })]
     }) : null

@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var a = n(877624),
-    r = n(342494),
-    l = n(732955),
+    l = n(342494),
+    r = n(732955),
     s = n(975571),
     o = n(549996),
     d = n(498470),
@@ -28,12 +28,12 @@ function h(e) {
             buttonAction: m.button.buttonAction,
             onClose: () => h(u.i.USER_DISMISS)
         }),
-        icon: l.tvc
+        icon: r.tvc
     }] : void 0;
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)("div", {
             children: t
-        }), (0, i.jsx)(r.AM, {
+        }), (0, i.jsx)(l.AM, {
             targetElementRef: n,
             title: m.header,
             body: m.body,

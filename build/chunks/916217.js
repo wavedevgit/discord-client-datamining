@@ -39,8 +39,8 @@ function P(e) {
         messageId: S,
         roleId: k,
         sessionId: M,
-        transitionState: R,
-        onClose: B,
+        transitionState: B,
+        onClose: R,
         sourceAnalyticsLocations: G = []
     } = e, D = t === y.ME ? void 0 : t, U = (0, _.Ay)(n.id, D), V = u.Ay.getName(D, P, n), F = (0, o.GV)(), {
         analyticsLocations: w
@@ -60,7 +60,7 @@ function P(e) {
             isLoaded: U?.isLoaded,
             children: (0, i.jsxs)(l.EOs, {
                 "data-migration-pending": !0,
-                transitionState: R,
+                transitionState: B,
                 className: T.zr,
                 hideShadow: !0,
                 "aria-labelledby": F,
@@ -110,7 +110,7 @@ function P(e) {
                                 tags: (0, i.jsx)(x.A, {
                                     displayProfile: U,
                                     themeType: N.d.MODAL,
-                                    onClose: B
+                                    onClose: R
                                 })
                             }), (0, i.jsxs)("div", {
                                 className: O.kL,

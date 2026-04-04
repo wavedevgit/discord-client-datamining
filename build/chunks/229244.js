@@ -16,8 +16,8 @@ var a = n(627968),
     x = n(92246),
     p = n(792620),
     g = n(241124),
-    f = n(947926),
-    _ = n(717695),
+    _ = n(947926),
+    f = n(717695),
     v = n(164203),
     b = n(127219),
     j = n(438038),
@@ -604,8 +604,8 @@ function G() {
                             isPreview: !0,
                             source: "preview",
                             questId: "0",
-                            children: (0, a.jsx)(_.A, {
-                                children: (0, a.jsx)(f.Y, {
+                            children: (0, a.jsx)(f.A, {
+                                children: (0, a.jsx)(_.Y, {
                                     quest: t
                                 })
                             })

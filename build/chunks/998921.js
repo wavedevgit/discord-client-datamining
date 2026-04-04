@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(264572),
     a = n(143236),
-    r = n(735438),
-    l = n.n(r),
+    l = n(735438),
+    r = n.n(l),
     s = n(626584),
     o = n(837921),
     d = n(84002),
@@ -52,7 +52,7 @@ function E(e) {
                     })), e.destroy()
                 } catch (e) {}
             },
-            r = Promise.race([new Promise(t => e.on("error", () => t())), new Promise((t, n) => {
+            l = Promise.race([new Promise(t => e.on("error", () => t())), new Promise((t, n) => {
                 e.on("pong", () => n(Error("socket responded with pong")))
             }), new Promise((e, t) => {
                 setTimeout(() => t(Error("socket alive timeout")), 1e3)
@@ -61,7 +61,7 @@ function E(e) {
             }, e => {
                 throw a(), e
             });
-        return e.write(I(m.PING, l().uniqueId())), r.then(t, n)
+        return e.write(I(m.PING, r().uniqueId())), l.then(t, n)
     })
 }
 

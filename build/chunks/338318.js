@@ -21,8 +21,8 @@ var i = n(627968),
     T = n(407217),
     f = n(919395),
     S = n(884546),
-    b = n(287070),
-    E = n(196291),
+    E = n(287070),
+    b = n(196291),
     C = n(101058),
     N = n(836602),
     v = n(814390),
@@ -71,7 +71,7 @@ function M() {
     return t ? (0, i.jsx)(m.A, {}) : (0, i.jsxs)(_.f5, {
         value: H,
         children: [(0, i.jsx)(A.A, {}), (0, i.jsx)(S.A, {
-            profilePreview: (0, i.jsx)(b.A, {
+            profilePreview: (0, i.jsx)(E.A, {
                 user: e,
                 canUsePremiumCustomization: F,
                 onUpsellClick: P.A,
@@ -94,7 +94,7 @@ function M() {
             active: K,
             children: (0, i.jsx)("div", {
                 ref: W,
-                children: (0, i.jsx)(E.A, {
+                children: (0, i.jsx)(b.A, {
                     user: e,
                     shouldShow: K,
                     isVisible: Y

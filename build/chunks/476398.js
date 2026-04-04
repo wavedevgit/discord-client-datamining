@@ -1,6 +1,6 @@
 /** chunk id: 476398 params = (module,exports,require) **/
 n.d(t, {
-    A: () => f
+    A: () => _
 });
 var a = n(627968),
     i = n(311907),
@@ -35,7 +35,7 @@ function g(e) {
     })
 }
 
-function f() {
+function _() {
     let e = (0, i.bG)([u.A], () => u.A.getFeed(x.X1.GLOBAL_FEED)),
         t = (0, i.bG)([u.A], () => u.A.getFilters()),
         n = (0, i.cf)([d.A], () => {

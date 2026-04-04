@@ -1,6 +1,6 @@
 /** chunk id: 284738 params = (module,exports,require) **/
 e.d(i, {
-    R: () => l,
+    R: () => S,
     Y: () => s
 });
 var n = e(311907),
@@ -12,6 +12,6 @@ function s(t) {
     return !!i.getGuild(t)?.features.has(E.GuildFeatures.COMMUNITY)
 }
 
-function l(t) {
+function S(t) {
     return (0, n.bG)([r.A], () => s(t, [r.A]), [t])
 }

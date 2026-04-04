@@ -18,7 +18,7 @@ function i(e) {
         (0, u.mMO)(async () => {
             let {
                 default: e
-            } = await a.e("51080").then(a.bind(a, 519528));
+            } = await a.e("51080").then(a.bind(a, 297147));
             return a => (0, l.jsx)(e, {
                 ...a,
                 groupId: t

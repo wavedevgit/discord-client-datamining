@@ -17,8 +17,8 @@ var a = n(627968),
     x = n(890687),
     p = n(971276),
     g = n(851936),
-    f = n(792620),
-    _ = n(241124),
+    _ = n(792620),
+    f = n(241124),
     v = n(73473),
     b = n(201805),
     j = n(545986),
@@ -67,10 +67,10 @@ function L(e) {
         reason: U
     } = (0, b.TQ)({
         quest: t
-    }), B = (0, o.bG)([u.A], () => u.A.hasLayers()), G = i.useRef(null), F = i.useMemo(() => (0, f.vv)(t), [t]), V = t.id, W = t.userStatus?.enrolledAt != null, H = (0, d.A)(W), K = t.userStatus?.completedAt != null, {
+    }), B = (0, o.bG)([u.A], () => u.A.hasLayers()), G = i.useRef(null), F = i.useMemo(() => (0, _.vv)(t), [t]), V = t.id, W = t.userStatus?.enrolledAt != null, H = (0, d.A)(W), K = t.userStatus?.completedAt != null, {
         hasError: z,
         isLoading: $
-    } = (0, _.Gk)(), q = i.useContext(N.Z) || s && L && !$ && !c, {
+    } = (0, f.Gk)(), q = i.useContext(N.Z) || s && L && !$ && !c, {
         isExpanded: Y,
         setIsExpanded: Q,
         expandQuestBar: J,
@@ -123,7 +123,7 @@ function L(e) {
     if (i.useEffect(() => {
             F && (0, j.l9)()
         }, [F]), !s || !q && Z && !$ || z) return z ? n.log("Not rendered due to asset error") : s || n.log("Not rendered due to ineligibility"), null;
-    let ef = 70 + 78 * !!K;
+    let e_ = 70 + 78 * !!K;
     return (0, a.jsx)(v.R, {
         questOrQuests: t,
         questContent: h.uF.QUEST_BAR_V2,
@@ -150,7 +150,7 @@ function L(e) {
                 style: {
                     height: et.to({
                         range: [0, 1],
-                        output: [0, ef]
+                        output: [0, e_]
                     })
                 },
                 children: (0, a.jsx)(r.animated.div, {
@@ -175,7 +175,7 @@ function L(e) {
                                 onCtxMenuSelect: es,
                                 onGameSheetOpen: el,
                                 onGameSheetClose: er,
-                                collapsedHeight: ef,
+                                collapsedHeight: e_,
                                 children: [(0, a.jsx)(y.A, {
                                     ref: eh,
                                     className: D.Qs,
@@ -201,7 +201,7 @@ function L(e) {
 }
 let U = 21552 == n.j ? function() {
     let e = (0, b.dN)();
-    return null == e ? null : (0, a.jsx)(_.jY, {
+    return null == e ? null : (0, a.jsx)(f.jY, {
         source: w.rE.QUESTS_BAR,
         questId: e.id,
         children: (0, a.jsx)(L, {

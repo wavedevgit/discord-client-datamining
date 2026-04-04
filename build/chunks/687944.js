@@ -22,13 +22,13 @@ var s = n(990078),
     T = n(985018),
     f = n(81431),
     S = n(818724);
-let b = {
+let E = {
     page: p.liQ.USER_SETTINGS,
     section: p.JJy.SETTINGS_PREMIUM,
     object: p.ZSU.CARD
 };
 
-function E(e) {
+function b(e) {
     let {
         premiumSubscription: t,
         discountInfo: n,
@@ -153,7 +153,7 @@ let N = function(e) {
                         children: [null != j ? (0, i.jsx)(C, {
                             discountOffer: j,
                             premiumSubscription: g
-                        }) : (0, i.jsx)(E, {
+                        }) : (0, i.jsx)(b, {
                             premiumSubscription: g,
                             discountInfo: v ?? I,
                             invoicePreview: _,
@@ -182,7 +182,7 @@ let N = function(e) {
                                             (0, o.A)({
                                                 analyticsLocations: y,
                                                 analyticsLocation: N,
-                                                analyticsObject: b,
+                                                analyticsObject: E,
                                                 subscription: g
                                             })
                                         }

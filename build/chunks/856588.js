@@ -5,19 +5,19 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var a = n(397927),
-    r = n(73153);
-let l = !1,
+    l = n(73153);
+let r = !1,
     s = null,
     o = {
         init() {
-            r.h.subscribe("CONNECTION_OPEN", e => {
+            l.h.subscribe("CONNECTION_OPEN", e => {
                 let {
                     pendingPayments: t
                 } = e;
                 if (null != t && t.length > 0) {
-                    var r;
+                    var l;
                     if (s === t[0] || null == (s = t[0])) return;
-                    r = s, l || (l = !0, (0, a.mMO)(async () => {
+                    l = s, r || (r = !0, (0, a.mMO)(async () => {
                         let {
                             default: e
                         } = await n.e("56999").then(n.bind(n, 302810));
@@ -27,9 +27,9 @@ let l = !1,
                                 onClose: a
                             } = t;
                             return (0, i.jsx)(e, {
-                                pendingPayment: r,
+                                pendingPayment: l,
                                 transitionState: n,
-                                onClose: () => (l = !1, a())
+                                onClose: () => (r = !1, a())
                             })
                         }
                     }))

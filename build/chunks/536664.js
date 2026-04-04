@@ -21,8 +21,8 @@ var i = n(627968),
     T = n(41984),
     f = n(833551),
     S = n(663677),
-    b = n(824189),
-    E = n(760751),
+    E = n(824189),
+    b = n(760751),
     C = n(189081),
     N = n(9302),
     v = n(505136),
@@ -38,13 +38,13 @@ function R() {
     } = (0, x.A)(), n = e?.pid, l = (0, r.bG)([f.default], () => null == e || null == n ? null : f.default.getTrackedGameByPid(n), [e, n], a()), {
         enabledLegacy: R,
         enabledOOP: P
-    } = (0, r.cf)([E.A, C.A], () => null == e && null == l ? {
+    } = (0, r.cf)([b.A, C.A], () => null == e && null == l ? {
         enabledLegacy: !1,
         enabledOOP: !1
     } : null == e ? {
         enabledLegacy: l?.legacyEnabled ?? !1,
         enabledOOP: l?.oopEnabled ?? !1
-    } : (0, _.hw)(e, !1, [E.A, C.A]), [e, l]), L = (0, r.bG)([_.Ay, E.A, C.A], () => null == e ? null : (0, _.xU)(e, _.Ay, E.A, C.A), [e], a()), [D, G] = s.useState(P), [M, k] = s.useState(R), [U, w] = s.useState(!1);
+    } : (0, _.hw)(e, !1, [b.A, C.A]), [e, l]), L = (0, r.bG)([_.Ay, b.A, C.A], () => null == e ? null : (0, _.xU)(e, _.Ay, b.A, C.A), [e], a()), [D, G] = s.useState(P), [M, k] = s.useState(R), [U, w] = s.useState(!1);
     s.useEffect(() => {
         G(P), k(R)
     }, [P, R]);
@@ -245,7 +245,7 @@ function R() {
                 }
             })
         }),
-        warning: (0, i.jsx)(b.A, {
+        warning: (0, i.jsx)(E.A, {
             className: O.Hh,
             game: e
         }),

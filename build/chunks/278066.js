@@ -4,8 +4,8 @@ n.d(t, {
     a: () => h
 });
 var i, a = n(627968),
-    r = n(64700),
-    l = n(615300),
+    l = n(64700),
+    r = n(615300),
     s = n(311907),
     o = n(397927),
     d = n(544028),
@@ -19,7 +19,7 @@ let _ = Object.freeze({
             darkSrc: n(642269),
             width: 376,
             height: 162,
-            renderContent: e => (0, a.jsxs)(r.Fragment, {
+            renderContent: e => (0, a.jsxs)(l.Fragment, {
                 children: [(0, a.jsx)(o.SGT, {
                     note: u.intl.string(u.t.Y4vMY8)
                 }), (0, a.jsx)("div", {
@@ -98,18 +98,18 @@ let _ = Object.freeze({
             })
         })
     };
-class p extends r.PureComponent {
+class p extends l.PureComponent {
     state = {
-        opacity: new l.A.Value(1)
+        opacity: new r.A.Value(1)
     };
     componentWillEnter = e => {
-        this.state.opacity.setValue(0), l.A.timing(this.state.opacity, {
+        this.state.opacity.setValue(0), r.A.timing(this.state.opacity, {
             toValue: 1,
             duration: 250
         }).start(e)
     };
     componentWillLeave = e => {
-        l.A.timing(this.state.opacity, {
+        r.A.timing(this.state.opacity, {
             toValue: 0,
             duration: 250
         }).start(e)
@@ -121,7 +121,7 @@ class p extends r.PureComponent {
             theme: n
         } = this.props, i = {
             opacity: this.state.opacity
-        }, r = function(e) {
+        }, l = function(e) {
             switch (e) {
                 case c.m3P.ADD_FRIEND:
                 case c.m3P.ALL:
@@ -138,18 +138,18 @@ class p extends r.PureComponent {
                     throw Error("FriendsEmptyState: Invalid empty state")
             }
         }(e);
-        return e === c.m3P.ADD_FRIEND ? (0, a.jsx)(l.A.div, {
+        return e === c.m3P.ADD_FRIEND ? (0, a.jsx)(r.A.div, {
             className: A.VD,
             style: i,
             children: (0, a.jsx)(m, {
                 theme: n
             })
-        }) : (0, a.jsx)(l.A.div, {
+        }) : (0, a.jsx)(r.A.div, {
             className: A.VD,
             style: i,
             children: (0, a.jsx)(o.ppr, {
                 theme: n,
-                children: r.renderContent(t)
+                children: l.renderContent(t)
             })
         })
     }

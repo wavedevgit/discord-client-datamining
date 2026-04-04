@@ -4,46 +4,46 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var a = n(503698),
-    r = n.n(a),
+var s = n(503698),
+    r = n.n(s),
     l = n(110259),
-    s = n(877624),
-    o = n(397927),
-    d = n(139286),
-    c = n(996696);
+    o = n(877624),
+    a = n(397927),
+    c = n(139286),
+    d = n(996696);
 
 function u(e) {
     let {
         componentId: t,
         badgeCopy: n,
-        acknowledgedBadgeCopy: a,
+        acknowledgedBadgeCopy: s,
         isDismissed: u
     } = e;
-    return ((0, d.A)({
+    return ((0, c.A)({
         type: l.ImpressionTypes.VIEW,
         name: l.ImpressionNames.PREMIUM_MARKETING_COMPONENT,
         properties: {
-            component_type: s.C.PREMIUM_TAB,
+            component_type: o.C.PREMIUM_TAB,
             component_id: t
         }
     }), u) ? (0, i.jsxs)("div", {
-        className: r()(c.BE, c.ZA),
-        children: [(0, i.jsx)(o.O4, {
+        className: r()(d.BE, d.ZA),
+        children: [(0, i.jsx)(a.O4, {
             size: "custom",
             width: 10,
             height: 10,
             color: "currentColor",
-            className: c.P0
-        }), (0, i.jsx)(o.Text, {
+            className: d.P0
+        }), (0, i.jsx)(a.Text, {
             variant: "eyebrow",
             color: "text-subtle",
-            children: a
+            children: s
         })]
     }) : (0, i.jsx)("div", {
-        className: r()(c.BE, c.CU),
-        children: (0, i.jsx)(o.Text, {
+        className: r()(d.BE, d.CU),
+        children: (0, i.jsx)(a.Text, {
             variant: "eyebrow",
-            className: c.lI,
+            className: d.lI,
             children: n
         })
     })

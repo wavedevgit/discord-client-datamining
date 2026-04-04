@@ -16,8 +16,8 @@ var a = n(627968),
     x = n(207803),
     p = n(84540),
     g = n(836602),
-    f = n(950191),
-    _ = n(576622),
+    _ = n(950191),
+    f = n(576622),
     v = n(287809),
     b = n(993408),
     j = n(841702),
@@ -44,9 +44,9 @@ function N() {
 
 function I() {
     let e = (0, l.bG)([v.default], () => v.default.getCurrentUser()),
-        t = (0, f.Ay)(e?.id);
+        t = (0, _.Ay)(e?.id);
     i.useEffect(() => {
-        e?.id != null && (0, _.A)(e.id)
+        e?.id != null && (0, f.A)(e.id)
     }, [e?.id]);
     let {
         purchases: n,

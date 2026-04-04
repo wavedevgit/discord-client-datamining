@@ -395,7 +395,8 @@ function ey(e) {
                         children: [(0, i.jsx)(eu.A, {
                             children: (0, i.jsxs)("div", {
                                 className: a()(ej.layoutContainer, {
-                                    [ej.hasEditingPanel]: K && $
+                                    [ej.hasEditingPanel]: K && $,
+                                    [ej.hasPrivateBanner]: z?.private === !0
                                 }),
                                 children: [(0, i.jsxs)(eN, {
                                     user: l,

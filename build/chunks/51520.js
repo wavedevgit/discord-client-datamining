@@ -1,11 +1,11 @@
 /** chunk id: 51520 params = (module,exports,require) **/
 n.d(t, {
-    j: () => r
+    j: () => l
 });
 var i = n(397927),
     a = n(851907);
 
-function r(e) {
+function l(e) {
     let {
         application: t,
         channelId: n

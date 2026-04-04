@@ -16,8 +16,8 @@ var a = n(627968),
     x = n(963713),
     p = n(277928),
     g = n(783602),
-    f = n(272111),
-    _ = n(310765);
+    _ = n(272111),
+    f = n(310765);
 let v = i.forwardRef(function(e, t) {
     let {
         className: n,
@@ -38,24 +38,24 @@ let v = i.forwardRef(function(e, t) {
         }), (0, a.jsx)(r.animated.div, {
             ref: t,
             "aria-hidden": A && C,
-            className: l()(n, _.hR, {
-                [_.Ag]: A,
-                [_.s]: T
+            className: l()(n, f.hR, {
+                [f.Ag]: A,
+                [f.s]: T
             }),
             style: {
                 opacity: (0, c.a)(v.to({
                     range: [0, 1],
                     output: [1, 0]
                 })),
-                backgroundImage: y ? `linear-gradient(90deg, ${f.V1}, ${f.us})` : void 0
+                backgroundImage: y ? `linear-gradient(90deg, ${_.V1}, ${_.us})` : void 0
             },
             onMouseEnter: () => O(!0),
             onMouseLeave: () => O(!1),
             children: (0, a.jsxs)("div", {
-                className: _.o8,
+                className: f.o8,
                 children: [y && (0, a.jsxs)(a.Fragment, {
                     children: [(0, a.jsx)(g.A, {}), (0, a.jsx)("div", {
-                        className: _.yF
+                        className: f.yF
                     })]
                 }), T ? (0, a.jsx)(p.A, {
                     contentLocation: "collapsed",

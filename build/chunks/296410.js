@@ -1,6 +1,6 @@
 /** chunk id: 296410 params = (module,exports,require) **/
 n.d(t, {
-    A: () => b
+    A: () => E
 });
 var i = n(627968),
     s = n(64700),
@@ -22,12 +22,12 @@ var i = n(627968),
     f = n(985018),
     S = n(502040);
 
-function b() {
+function E() {
     let [e, t] = s.useState(!1), {
         legacyEnabled: n,
-        oopEnabled: b
-    } = (0, l.cf)([g.default], () => g.default.getGlobalEnabledStatus()), E = (0, l.yK)([c.Ay], () => c.Ay.getGamesSeen(!0)).filter(e => !(0, x.n1)(e)), C = (0, d.A)(E.map(e => e.id)), N = !(0, A.supportsLegacy)(), v = e => {
-        o.A.setEnabled(e, b);
+        oopEnabled: E
+    } = (0, l.cf)([g.default], () => g.default.getGlobalEnabledStatus()), b = (0, l.yK)([c.Ay], () => c.Ay.getGamesSeen(!0)).filter(e => !(0, x.n1)(e)), C = (0, d.A)(b.map(e => e.id)), N = !(0, A.supportsLegacy)(), v = e => {
+        o.A.setEnabled(e, E);
         let t = c.Ay.getCurrentGameForAnalytics()?.id ?? null;
         (0, u.Q3)(e, u.OverlayToggledClientSettingType.LEGACY, t), !e && n && (0, _.L)(u.OverlayToggledClientSettingType.LEGACY, t)
     }, I = (e, t, n) => {
@@ -36,7 +36,7 @@ function b() {
         } = n;
         r.A.toggleOverlay(t, e, i)
     }, j = s.useMemo(() => (0, A.supportsLegacy)() ? N ? f.intl.string(f.t.r9jEVw) : f.intl.string(f.t.OzInYk) : f.intl.string(f.t["8Ox6/E"]), [N]);
-    return 0 === E.length ? (0, i.jsx)(T.A, {
+    return 0 === b.length ? (0, i.jsx)(T.A, {
         title: f.intl.string(f.t.BfFpW1),
         description: j,
         "aria-label": f.intl.string(f.t.BfFpW1),
@@ -73,7 +73,7 @@ function b() {
             })
         }), (0, i.jsx)(a.IpV, {
             className: S.XG,
-            children: E.map((e, t) => (0, i.jsx)(p.A, {
+            children: b.map((e, t) => (0, i.jsx)(p.A, {
                 rawGame: e,
                 clientSettingType: u.OverlayToggledClientSettingType.LEGACY_GAME,
                 supportDisabled: N,

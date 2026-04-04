@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var a = n(65412),
-    r = n(554146),
-    l = n(287683),
+    l = n(554146),
+    r = n(287683),
     s = n(397927),
     o = n(212245),
     d = n(736653),
@@ -23,12 +23,12 @@ function p(e) {
         promotionId: t,
         content: n,
         isPreview: i
-    } = e, s = l.m.fromBinary((0, a.A)(n));
+    } = e, s = r.m.fromBinary((0, a.A)(n));
     if ("announcementModalVariant1" !== s.properties.oneofKind) return null;
     {
         let {
             isDismissed: e
-        } = (0, A.u$)(r.M.PREMIUM_MARKETING_MOMENT_ANNOUNCEMENT_UPSELL, t);
+        } = (0, A.u$)(l.M.PREMIUM_MARKETING_MOMENT_ANNOUNCEMENT_UPSELL, t);
         return !i && e ? null : (i && (s.properties.announcementModalVariant1.dismissKey = ""), s)
     }
 }
@@ -38,25 +38,25 @@ function g(e) {
         componentId: t,
         promotionId: n,
         renderModalProps: a,
-        properties: r
+        properties: l
     } = e, {
-        location: l
+        location: r
     } = (0, o.p)(), {
         analyticsLocations: A
     } = (0, u.Ay)(c.A.PREMIUM_MARKETING_ANNOUNCEMENT_MODAL), p = (0, d.Ay)(), g = (0, s.qB1)(p);
-    if ("announcementModalVariant1" === r.properties.oneofKind) {
+    if ("announcementModalVariant1" === l.properties.oneofKind) {
         let e = (0, _.t)({
             componentId: t,
             promotionId: n,
-            content: r.properties.announcementModalVariant1,
+            content: l.properties.announcementModalVariant1,
             renderModalProps: a,
             analyticsLocations: A,
-            analyticsLocation: l,
+            analyticsLocation: r,
             isLightTheme: g
         });
         return (0, i.jsx)(m.A, {
             ...e
         })
     }
-    return h.A.captureMessage(`Property type ${r.properties.oneofKind} is not supported to render ServerDriveAnnouncementModal`), null
+    return h.A.captureMessage(`Property type ${l.properties.oneofKind} is not supported to render ServerDriveAnnouncementModal`), null
 }

@@ -47,7 +47,7 @@ function v(e) {
     }, {
         icon: l.yr3,
         description: b.intl.string(L ? b.t.QxrDY1 : b.t.W6fjkS)
-    }], k = (0, _.Ay)(n.id, T), M = c.Ay.getName(k?.guildId, v, n), R = b.intl.formatToPlainString(b.t.KRe1Fk, {
+    }], k = (0, _.Ay)(n.id, T), M = c.Ay.getName(k?.guildId, v, n), B = b.intl.formatToPlainString(b.t.KRe1Fk, {
         name: M
     });
     return (0, i.jsx)(r.f5, {
@@ -59,7 +59,7 @@ function v(e) {
                 "data-migration-pending": !0,
                 transitionState: y,
                 className: h.zr,
-                "aria-label": R,
+                "aria-label": B,
                 parentComponent: "RestrictedUserProfileModalV2",
                 children: (0, i.jsxs)(x.A, {
                     user: n,

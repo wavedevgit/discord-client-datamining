@@ -4,7 +4,7 @@ e.d(i, {
     LZ: () => o,
     Nk: () => M,
     Si: () => N,
-    eD: () => S,
+    eD: () => l,
     iG: () => g,
     k6: () => B,
     m6: () => a,
@@ -27,11 +27,11 @@ function s(t) {
     })), t
 }
 
-function l(t, i) {
+function S(t, i) {
     return t.map(t => i[t.toString()])
 }
 
-function S(t) {
+function l(t) {
     return {
         [r.xB.VIEW_CHANNEL.toString()]: {
             title: E.intl.string(E.t.uV83yi),
@@ -303,32 +303,32 @@ function S(t) {
 }
 
 function o(t) {
-    let i, e, n, o, A, a = S(t),
+    let i, e, n, o, A, a = l(t),
         _ = [(i = [r.xB.VIEW_CHANNEL, r.xB.MANAGE_CHANNELS, r.xB.MANAGE_ROLES, r.xB.CREATE_GUILD_EXPRESSIONS, r.xB.MANAGE_GUILD_EXPRESSIONS, r.xB.VIEW_AUDIT_LOG, r.xB.VIEW_GUILD_ANALYTICS], t.showCreatorMonetizationAnalyticsPermission && i.push(r.xB.VIEW_CREATOR_MONETIZATION_ANALYTICS), i.push(r.xB.MANAGE_WEBHOOKS), i.push(r.xB.MANAGE_GUILD), s({
             title: E.intl.string(E.t["mYck+B"]),
-            permissions: l(i, a)
+            permissions: S(i, a)
         })), (e = [r.xB.CREATE_INSTANT_INVITE, r.xB.CHANGE_NICKNAME, r.xB.MANAGE_NICKNAMES, r.xB.KICK_MEMBERS, r.xB.BAN_MEMBERS, r.xB.MODERATE_MEMBERS], s({
             title: E.intl.string(E.t.Ny49TN),
-            permissions: l(e, a)
+            permissions: S(e, a)
         })), (n = [r.xB.SEND_MESSAGES, r.xB.SEND_MESSAGES_IN_THREADS, r.xB.CREATE_PUBLIC_THREADS, r.xB.CREATE_PRIVATE_THREADS, r.xB.EMBED_LINKS, r.xB.ATTACH_FILES, r.xB.ADD_REACTIONS, r.xB.USE_EXTERNAL_EMOJIS, r.xB.USE_EXTERNAL_STICKERS, r.xB.USE_EXTERNAL_SOUNDS, r.xB.MENTION_EVERYONE, r.xB.MANAGE_MESSAGES, r.xB.PIN_MESSAGES, r.xB.MANAGE_OFFICIAL_MESSAGES, r.xB.BYPASS_SLOWMODE, r.xB.MANAGE_THREADS, r.xB.READ_MESSAGE_HISTORY, r.xB.SEND_TTS_MESSAGES, r.xB.SEND_VOICE_MESSAGES, r.xB.SEND_POLLS], t.inSoundmojiExperiment || (n = n.filter(t => t !== r.xB.USE_EXTERNAL_SOUNDS)), s({
             title: E.intl.string(E.t.cKobO5),
-            permissions: l(n, a)
+            permissions: S(n, a)
         })), (o = [r.xB.CONNECT, r.xB.SPEAK, r.xB.STREAM, r.xB.USE_SOUNDBOARD, r.xB.USE_EXTERNAL_SOUNDS, r.xB.USE_VAD, r.xB.PRIORITY_SPEAKER, r.xB.MUTE_MEMBERS, r.xB.DEAFEN_MEMBERS, r.xB.MOVE_MEMBERS, r.xB.SET_VOICE_CHANNEL_STATUS], s({
             title: E.intl.string(E.t["46Ra1b"]),
-            permissions: l(o, a)
+            permissions: S(o, a)
         })), (A = [r.xB.USE_APPLICATION_COMMANDS, r.xB.USE_EMBEDDED_ACTIVITIES, r.xB.USE_EXTERNAL_APPS], s({
             title: E.intl.string(E.t["rrh/W6"]),
-            permissions: l(A, a)
+            permissions: S(A, a)
         }))];
     return t.showStageChannelPermissions && _.push(s({
         title: E.intl.string(E.t.yniauk),
-        permissions: l([r.xB.REQUEST_TO_SPEAK], a)
+        permissions: S([r.xB.REQUEST_TO_SPEAK], a)
     }, t.showExperimental)), _.push(s({
         title: E.intl.string(E.t.b8lplT),
-        permissions: l([r.xB.CREATE_EVENTS, r.xB.MANAGE_EVENTS], a)
+        permissions: S([r.xB.CREATE_EVENTS, r.xB.MANAGE_EVENTS], a)
     }, t.showExperimental)), _.push(s({
         title: E.intl.string(E.t["3uI5CX"]),
-        permissions: l([r.xB.ADMINISTRATOR], a)
+        permissions: S([r.xB.ADMINISTRATOR], a)
     })), _
 }
 
@@ -338,14 +338,14 @@ function A(t, i) {
     };
     return {
         title: i,
-        permissions: l(e?.showManageWebhooks ? [r.xB.VIEW_CHANNEL, r.xB.MANAGE_CHANNELS, r.xB.MANAGE_ROLES, r.xB.MANAGE_WEBHOOKS] : [r.xB.VIEW_CHANNEL, r.xB.MANAGE_CHANNELS, r.xB.MANAGE_ROLES], t)
+        permissions: S(e?.showManageWebhooks ? [r.xB.VIEW_CHANNEL, r.xB.MANAGE_CHANNELS, r.xB.MANAGE_ROLES, r.xB.MANAGE_WEBHOOKS] : [r.xB.VIEW_CHANNEL, r.xB.MANAGE_CHANNELS, r.xB.MANAGE_ROLES], t)
     }
 }
 
 function a(t, i) {
     return {
         title: i,
-        permissions: l([r.xB.CREATE_INSTANT_INVITE], t)
+        permissions: S([r.xB.CREATE_INSTANT_INVITE], t)
     }
 }
 
@@ -354,14 +354,14 @@ function _(t, i, e) {
     return e.inSoundmojiExperiment || (n = n.filter(t => t !== r.xB.USE_EXTERNAL_SOUNDS)), e.showPrivateThreads && e.showCreateThreads || (n = n.filter(t => t !== r.xB.CREATE_PRIVATE_THREADS)), e.showCreateThreads || (n = n.filter(t => t !== r.xB.CREATE_PUBLIC_THREADS)), {
         title: i,
         description: e.sectionDescription,
-        permissions: l(n, t)
+        permissions: S(n, t)
     }
 }
 
 function g(t, i) {
     return {
         title: i,
-        permissions: l([r.xB.CONNECT, r.xB.SPEAK, r.xB.STREAM, r.xB.USE_SOUNDBOARD, r.xB.USE_EXTERNAL_SOUNDS, r.xB.USE_VAD, r.xB.PRIORITY_SPEAKER, r.xB.MUTE_MEMBERS, r.xB.DEAFEN_MEMBERS, r.xB.MOVE_MEMBERS, r.xB.SET_VOICE_CHANNEL_STATUS], t)
+        permissions: S([r.xB.CONNECT, r.xB.SPEAK, r.xB.STREAM, r.xB.USE_SOUNDBOARD, r.xB.USE_EXTERNAL_SOUNDS, r.xB.USE_VAD, r.xB.PRIORITY_SPEAKER, r.xB.MUTE_MEMBERS, r.xB.DEAFEN_MEMBERS, r.xB.MOVE_MEMBERS, r.xB.SET_VOICE_CHANNEL_STATUS], t)
     }
 }
 
@@ -370,7 +370,7 @@ function B(t, i, e) {
     return e.inSoundmojiExperiment || (n = n.filter(t => t !== r.xB.USE_EXTERNAL_SOUNDS)), {
         title: i,
         description: e.sectionDescription,
-        permissions: l(n, t)
+        permissions: S(n, t)
     }
 }
 
@@ -380,28 +380,28 @@ function N(t, i) {
     };
     return {
         title: i,
-        permissions: l([r.xB.USE_APPLICATION_COMMANDS, e.showActivities ? r.xB.USE_EMBEDDED_ACTIVITIES : null, r.xB.USE_EXTERNAL_APPS].filter(n.Vq), t)
+        permissions: S([r.xB.USE_APPLICATION_COMMANDS, e.showActivities ? r.xB.USE_EMBEDDED_ACTIVITIES : null, r.xB.USE_EXTERNAL_APPS].filter(n.Vq), t)
     }
 }
 
 function x(t, i, e) {
     return {
         title: i,
-        permissions: l(e ? [r.xB.CONNECT, r.xB.STREAM, r.xB.MUTE_MEMBERS, r.xB.MOVE_MEMBERS] : [r.xB.CONNECT, r.xB.MUTE_MEMBERS, r.xB.MOVE_MEMBERS], t)
+        permissions: S(e ? [r.xB.CONNECT, r.xB.STREAM, r.xB.MUTE_MEMBERS, r.xB.MOVE_MEMBERS] : [r.xB.CONNECT, r.xB.MUTE_MEMBERS, r.xB.MOVE_MEMBERS], t)
     }
 }
 
 function T(t, i) {
     return {
         title: i,
-        permissions: l([r.xB.REQUEST_TO_SPEAK, r.xB.MENTION_EVERYONE], t)
+        permissions: S([r.xB.REQUEST_TO_SPEAK, r.xB.MENTION_EVERYONE], t)
     }
 }
 
 function d(t, i) {
     return {
         title: i,
-        permissions: l([r.xB.CREATE_EVENTS, r.xB.MANAGE_EVENTS], t)
+        permissions: S([r.xB.CREATE_EVENTS, r.xB.MANAGE_EVENTS], t)
     }
 }
 

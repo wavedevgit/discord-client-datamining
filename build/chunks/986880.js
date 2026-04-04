@@ -4,8 +4,8 @@ n.d(t, {
     Ay: () => N
 });
 var a = n(73153),
-    r = n(31728),
-    l = n(272355),
+    l = n(31728),
+    r = n(272355),
     s = n(87001),
     o = n(734057),
     d = n(186111),
@@ -28,7 +28,7 @@ function E() {
     if (!c.A.isOpen(t)) return !1;
     let n = c.A.pipHavenWindow;
     if (null == n || n.id !== t) return i = null, !1;
-    a.h.wait(() => r.VN(t)), i = null
+    a.h.wait(() => l.VN(t)), i = null
 }
 
 function I() {
@@ -37,21 +37,21 @@ function I() {
 
 function f() {
     let e, t, n = u.A.getChannelId(),
-        l = null != n ? o.A.getChannel(n) : null;
+        r = null != n ? o.A.getChannel(n) : null;
     if (e = u.A.getChannelId(), t = A.A.getChannelId(), null == e || !m.A.isUserConnected(e) || e === t || s.A.getWindowOpen(p.MLl.CHANNEL_CALL_POPOUT) || 0) return E();
-    if (null != l && m.A.isUserConnected(l.id)) {
-        if (i !== l.id) {
-            let e = g(l.id);
+    if (null != r && m.A.isUserConnected(r.id)) {
+        if (i !== r.id) {
+            let e = g(r.id);
             if (c.A.isOpen(e)) return !1;
             if (null != i) {
                 let e = i;
-                a.h.wait(() => r.VN(e))
+                a.h.wait(() => l.VN(e))
             }
             return a.h.wait(() => {
-                r.ho(e, p.o1q.HAVEN, {
-                    channel: l
-                }), I() && r.jD(e)
-            }), i = l.id, !0
+                l.ho(e, p.o1q.HAVEN, {
+                    channel: r
+                }), I() && l.jD(e)
+            }), i = r.id, !0
         }
         return !1
     }
@@ -63,15 +63,15 @@ function C() {
         let e = (void 0) ?? i;
         if (null == e) return;
         let t = g(e);
-        c.A.isOpen(t) && a.h.wait(() => r.jD(t));
+        c.A.isOpen(t) && a.h.wait(() => l.jD(t));
         return
     }
     let e = (void 0) ?? i;
     if (null == e) return;
     let t = g(e);
-    c.A.isOpen(t) && a.h.wait(() => r.WU(t))
+    c.A.isOpen(t) && a.h.wait(() => l.WU(t))
 }
-class T extends l.A {
+class T extends r.A {
     _initialize() {
         A.A.addChangeListener(f), h.A.addChangeListener(f), u.A.addChangeListener(f), _.A.addChangeListener(f), d.A.addChangeListener(C), m.A.addChangeListener(f), s.A.addChangeListener(f)
     }

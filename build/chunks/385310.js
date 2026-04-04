@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     a = n(64700),
-    r = n(311907),
-    l = n(990078),
+    l = n(311907),
+    r = n(990078),
     s = n(397927),
     o = n(624458),
     d = n(212455),
@@ -21,7 +21,7 @@ let h = e => {
         onWithdrawApplication: m,
         rejectionReason: p = null,
         guild: g = null
-    } = e, E = (0, r.bG)([d.A], () => d.A.getCooldown(g?.id ?? "0")), {
+    } = e, E = (0, l.bG)([d.A], () => d.A.getCooldown(g?.id ?? "0")), {
         canReapply: I,
         isLoading: f
     } = (0, c.f)(g?.id);
@@ -59,7 +59,7 @@ let h = e => {
             }) : null]
         }), (0, i.jsxs)("div", {
             className: A.Ow,
-            children: [I || f ? (0, i.jsx)(l.m, {
+            children: [I || f ? (0, i.jsx)(r.m, {
                 asContainer: !0,
                 text: C ? u.intl.formatToPlainString(u.t.A0f0P7, {
                     days: T

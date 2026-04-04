@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var a = n(64983),
-    r = n(975571),
-    l = n(652215),
+    l = n(975571),
+    r = n(652215),
     s = n(49999),
     o = n(985018),
     d = n(183292);
@@ -21,12 +21,12 @@ function c(e) {
         guild: t,
         onDismissed: () => n(s.i.UNKNOWN),
         onClick: () => {
-            open(r.A.getArticleURL(l.MVz.CONNECTION_DETAILS)), n(s.i.UNKNOWN)
+            open(l.A.getArticleURL(r.MVz.CONNECTION_DETAILS)), n(s.i.UNKNOWN)
         },
         title: o.intl.string(o.t.YMgaJt),
         message: o.intl.string(o.t["AV/9eW"]),
         cta: o.intl.string(o.t.hvVgAZ),
-        trackingSource: l.kZU.LINKED_ROLES_ADMIN_NUX,
-        type: l.n5X.LINKED_ROLES_ADMIN
+        trackingSource: r.kZU.LINKED_ROLES_ADMIN_NUX,
+        type: r.n5X.LINKED_ROLES_ADMIN
     })
 }

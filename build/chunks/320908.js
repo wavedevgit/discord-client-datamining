@@ -21,8 +21,8 @@ var i = n(627968),
     T = n(224850),
     f = n(552554),
     S = n(985018),
-    b = n(580373);
-let E = e => {
+    E = n(580373);
+let b = e => {
         let {
             inOfferExperience: t,
             subscriptionTier: n,
@@ -33,38 +33,38 @@ let E = e => {
             isEligibleForBogoPromotion: c
         } = e, u = c ? (0, i.jsx)(p.A, {
             color: d ? o.XD.BRAND_INVERTED : void 0,
-            className: a()(b.x6, b.Ph, l, {
-                [b.Sq]: t && r,
-                [b.MF]: r && !d
+            className: a()(E.x6, E.Ph, l, {
+                [E.Sq]: t && r,
+                [E.MF]: r && !d
             }),
-            shinyButtonClassName: d ? void 0 : b.PJ,
+            shinyButtonClassName: d ? void 0 : E.PJ,
             subscriptionTier: n,
             hasActivePromotion: !0
         }) : (0, i.jsx)(p.A, {
             color: d || !r ? o.XD.BRAND_INVERTED : void 0,
-            className: a()(b.x6, b.Ph, l, {
-                [b.Sq]: t && r,
-                [b.MF]: r && !d
+            className: a()(E.x6, E.Ph, l, {
+                [E.Sq]: t && r,
+                [E.MF]: r && !d
             }),
             subscriptionTier: n
         }), m = t && r ? null : (0, i.jsx)(h.A, {
-            className: a()(b.x6, l),
+            className: a()(E.x6, l),
             color: r ? void 0 : o.XD.WHITE
         });
         return (0, i.jsxs)("div", {
-            className: a()(b.UD, s),
+            className: a()(E.UD, s),
             children: [u, " ", m]
         })
     },
     C = () => (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(m.p, {
-            className: b.zd
+            className: E.zd
         }), (0, i.jsx)(m.p, {
-            className: b.G
+            className: E.G
         }), (0, i.jsx)(m.p, {
-            className: b.zy
+            className: E.zy
         }), (0, i.jsx)(m.p, {
-            className: b.GX
+            className: E.GX
         })]
     });
 
@@ -77,9 +77,9 @@ function N(e) {
     return (0, i.jsx)(d.Text, {
         variant: t,
         color: s ? "text-subtle" : "always-white",
-        className: a()(b.h_, {
-            [b.If]: n,
-            [b.jn]: s
+        className: a()(E.h_, {
+            [E.If]: n,
+            [E.jn]: s
         }),
         children: S.intl.format(S.t.kt9wxs, {
             cheapestMonthlyPrice: l
@@ -99,30 +99,30 @@ let v = s.forwardRef((e, t) => {
         value: p,
         children: (0, i.jsxs)("div", {
             ref: t,
-            className: a()(b.kL, n, {
-                [b.V1]: !v,
-                [b.Q4]: !v && j
+            className: a()(E.kL, n, {
+                [E.V1]: !v,
+                [E.Q4]: !v && j
             }),
             "data-testid": "v2-marketing-page-hero-header",
             children: [(0, i.jsxs)("div", {
-                className: v ? b.I6 : b.G1,
+                className: v ? E.I6 : E.G1,
                 children: [(0, i.jsx)(d.Heading, {
                     variant: v ? "display-lg" : "display-md",
                     color: "always-white",
                     children: y
                 }), j ? (0, i.jsx)("div", {
-                    className: b.DF,
+                    className: E.DF,
                     children: (0, i.jsx)(T.A, {
                         textColor: "always-white",
                         smallerText: !v
                     })
                 }) : (0, i.jsx)(N, {}), I || f ? (0, i.jsx)("div", {
-                    className: b.UD,
+                    className: E.UD,
                     children: (0, i.jsx)(h.A, {
-                        className: a()(b.x6, s),
+                        className: a()(E.x6, s),
                         color: o.XD.WHITE
                     })
-                }) : (0, i.jsx)(E, {
+                }) : (0, i.jsx)(b, {
                     subscriptionTier: l,
                     inOfferExperience: v,
                     buttonClassName: s,

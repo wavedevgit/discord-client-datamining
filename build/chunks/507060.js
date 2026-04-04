@@ -4,8 +4,8 @@ n.d(t, {
 }), n(321073);
 var i = n(627968),
     a = n(64700),
-    r = n(503698),
-    l = n.n(r),
+    l = n(503698),
+    r = n.n(l),
     s = n(615300),
     o = n(311907),
     d = n(73939),
@@ -161,9 +161,9 @@ class R extends a.PureComponent {
             name: t,
             mode: n,
             children: a,
-            baseLayer: r,
+            baseLayer: l,
             ...o
-        } = this.props, d = n === y, u = e || d ? this.getAnimatedStyle() : null, A = !d && !r, h = (0, i.jsx)(s.A.div, {
+        } = this.props, d = n === y, u = e || d ? this.getAnimatedStyle() : null, A = !d && !l, h = (0, i.jsx)(s.A.div, {
             ref: e => this.containerRef.current = null != e ? e.componentRef : void 0,
             "data-layer": t ?? "base",
             "aria-hidden": d,
@@ -181,8 +181,8 @@ class R extends a.PureComponent {
                 }
             }(t) : void 0,
             role: A ? "dialog" : void 0,
-            className: l()(C.qd, {
-                [C.n3]: r,
+            className: r()(C.qd, {
+                [C.n3]: l,
                 [C.bW]: e,
                 "stop-animations": n === y
             }),
@@ -190,7 +190,7 @@ class R extends a.PureComponent {
             ...o,
             children: a
         });
-        return r ? h : (0, i.jsx)(c.Oky, {
+        return l ? h : (0, i.jsx)(c.Oky, {
             containerRef: this.containerRef,
             children: h
         })
@@ -228,12 +228,12 @@ class P extends a.PureComponent {
             hasFullScreenLayer: n
         } = this.props, {
             length: a
-        } = t, r = [];
-        return r.push((0, i.jsx)(R, {
+        } = t, l = [];
+        return l.push((0, i.jsx)(R, {
             mode: 0 !== a || n ? y : b,
             baseLayer: !0,
             children: e
-        }, "layer-base")), t.forEach((e, t) => r.push(this.renderComponent(e, t, a))), r
+        }, "layer-base")), t.forEach((e, t) => l.push(this.renderComponent(e, t, a))), l
     }
     renderComponent(e, t, n) {
         let a;
@@ -247,7 +247,7 @@ class P extends a.PureComponent {
         return (0, i.jsx)(c.NPJ, {
             theme: this.props.sidebarTheme,
             children: e => (0, i.jsx)("div", {
-                className: l()(C.bg, e)
+                className: r()(C.bg, e)
             })
         })
     }
@@ -255,7 +255,7 @@ class P extends a.PureComponent {
         return (0, i.jsxs)(i.Fragment, {
             children: [this.renderArtisanalHack(), (0, i.jsx)(d.F, {
                 component: "div",
-                className: l()(C.ZF, this.props.className),
+                className: r()(C.ZF, this.props.className),
                 children: this.renderLayers()
             })]
         })

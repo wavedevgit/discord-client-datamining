@@ -16,12 +16,12 @@ var a = n(582754),
     x = n(935495),
     p = n(651714),
     g = n(416307),
-    f = n(497783),
-    _ = n(39579),
+    _ = n(497783),
+    f = n(39579),
     v = n(673554),
     b = n(719401),
     j = n(128640),
-    A = n(146925),
+    A = n(369306),
     C = n(789996);
 let y = {
         [r.Ac.PREMIUM_TENURE_1_MONTH]: {
@@ -64,11 +64,11 @@ let y = {
         },
         [r.Ac.PREMIUM_TENURE_3_MONTH]: {
             dark: d.A,
-            light: f.A
+            light: _.A
         },
         [r.Ac.PREMIUM_TENURE_6_MONTH]: {
             dark: c.A,
-            light: _.A
+            light: f.A
         },
         [r.Ac.PREMIUM_TENURE_12_MONTH]: {
             dark: u.A,

@@ -1,39 +1,33 @@
 /** chunk id: 821158 params = (module,exports,require) **/
 n.d(t, {
-    A: () => u
+    h: () => u
 });
-var i = n(627968);
-n(64700);
-var s = n(421380),
-    l = n(397927),
-    a = n(954571),
-    r = n(322631),
-    o = n(652215),
-    d = n(985018),
-    c = n(520089);
-let u = e => {
-    let {
-        setIsAllPerksVisible: t,
-        previousComponent: n
-    } = e;
-    return (0, i.jsx)(l.wLn, {
-        "data-migration-pending": !0,
-        color: s.XD.CUSTOM,
-        onlyShineOnHover: !0,
-        shineSize: l._Jd.SMALL,
-        className: c.Wg,
-        onClick: () => {
-            t(!0), a.default.track(o.HAw.NITRO_HOME_NAVIGATION, {
-                current_component: n,
-                next_component: r.A2.SEE_ALL,
-                interaction_component: "See All Button"
-            })
-        },
-        children: (0, i.jsxs)("div", {
-            className: c.zB,
-            children: [d.intl.string(d.t["37C26f"]), (0, i.jsx)(l._BQ, {
-                color: "currentColor"
-            })]
+var i = n(311907),
+    s = n(827343),
+    l = n(419954),
+    a = n(347481),
+    r = n(430452),
+    o = n(780964),
+    d = n(652215),
+    c = n(985018);
+let u = (0, l.zD)(o.X.VOICE_ECHO_CANCELLATION_SETTING, {
+    useTitle: () => c.intl.string(c.t.iWTwu6),
+    useValue: function() {
+        return (0, i.bG)([r.Ay], () => r.Ay.getEchoCancellation())
+    },
+    setValue: function(e) {
+        s.A.setEchoCancellation(e, {
+            page: d.liQ.USER_SETTINGS,
+            section: d.JJy.SETTINGS_VOICE_AND_VIDEO
         })
-    })
-}
+    },
+    useDisabled: function() {
+        return (0, i.bG)([r.Ay, a.A], () => {
+            let e = r.Ay.getInputDeviceId();
+            return a.A.hasEchoCancellation(e)
+        })
+    },
+    usePredicate: function() {
+        return (0, i.bG)([r.Ay], () => r.Ay.isInputProfileCustom())
+    }
+})

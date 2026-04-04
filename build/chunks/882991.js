@@ -5,25 +5,25 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var a = n(397927),
-    r = n(73153),
-    l = n(272355),
+    l = n(73153),
+    r = n(272355),
     s = n(961350),
     o = n(734057),
     d = n(528767),
     c = n(105530),
     u = n(652215);
 let A = "STAGE_INVITED_TO_SPEAK_MODAL";
-class h extends l.A {
+class h extends r.A {
     _initialize() {
-        r.h.subscribe("VOICE_STATE_UPDATES", this.handleVoiceStateUpdates)
+        l.h.subscribe("VOICE_STATE_UPDATES", this.handleVoiceStateUpdates)
     }
     _terminate() {
-        r.h.unsubscribe("VOICE_STATE_UPDATES", this.handleVoiceStateUpdates)
+        l.h.unsubscribe("VOICE_STATE_UPDATES", this.handleVoiceStateUpdates)
     }
     handleVoiceStateUpdates = e => {
         let {
             voiceStates: t
-        } = e, r = s.default.getId(), l = d.A.getSession()?.sessionId, h = t.find(e => e.userId === r && e.sessionId === l);
+        } = e, l = s.default.getId(), r = d.A.getSession()?.sessionId, h = t.find(e => e.userId === l && e.sessionId === r);
         if (null == h) return;
         let _ = h.channelId;
         if (null == _) {

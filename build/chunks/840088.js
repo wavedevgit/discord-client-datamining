@@ -13,10 +13,10 @@ var i = n(627968),
     u = n(815807),
     g = n(406704),
     A = n(253932),
-    m = n(576705),
-    p = n(486020),
-    h = n(203982),
-    f = n(690521),
+    p = n(576705),
+    m = n(486020),
+    f = n(203982),
+    h = n(690521),
     y = n(652215),
     E = n(307731),
     _ = n(985018),
@@ -25,9 +25,9 @@ var i = n(627968),
 function b(e, t) {
     let {
         reducedMotion: n
-    } = l.useContext(o.CZY), a = (0, g.Id)(t), r = (0, s.bG)([m.A], () => (t.isPrivate() || m.A.can(y.xBc.ADD_REACTIONS, t)) && a, [t, a]), p = (0, d.D6)(t.getGuildId());
+    } = l.useContext(o.CZY), a = (0, g.Id)(t), r = (0, s.bG)([p.A], () => (t.isPrivate() || p.A.can(y.xBc.ADD_REACTIONS, t)) && a, [t, a]), m = (0, d.D6)(t.getGuildId());
     if (!A.jW.getSetting() || !r) return null;
-    let S = p.filter(e => !f.Ay.isEmojiFilteredOrLocked({
+    let S = m.filter(e => !h.Ay.isEmojiFilteredOrLocked({
         emoji: e,
         channel: t,
         intention: E.b_.REACTION
@@ -43,7 +43,7 @@ function b(e, t) {
         leadingAccessory: {
             type: "emoji",
             emojiId: l.id,
-            src: null == l.id ? f.Ay.getURL(l.optionallyDiverseSequence ?? "") : void 0,
+            src: null == l.id ? h.Ay.getURL(l.optionallyDiverseSequence ?? "") : void 0,
             animated: l.animated
         },
         action: () => {
@@ -59,7 +59,7 @@ function b(e, t) {
             icon: o.nm2
         },
         action: () => {
-            h._.dispatchKeyed(y.zOV.TOGGLE_REACTION_POPOUT, e.id, {
+            f._.dispatchKeyed(y.zOV.TOGGLE_REACTION_POPOUT, e.id, {
                 emojiPicker: !0
             })
         },
@@ -75,7 +75,7 @@ function b(e, t) {
                     icon: o.ShF
                 },
                 action: () => {
-                    h._.dispatchKeyed(y.zOV.TOGGLE_REACTION_POPOUT, e.id, {
+                    f._.dispatchKeyed(y.zOV.TOGGLE_REACTION_POPOUT, e.id, {
                         emojiPicker: !0
                     })
                 }
@@ -93,11 +93,11 @@ function v(e) {
     } = e;
     return (0, i.jsx)("img", {
         className: r()(l, S.Z),
-        src: null != t.id ? p.Ay.getEmojiURL({
+        src: null != t.id ? m.Ay.getEmojiURL({
             id: t.id,
             animated: t.animated && (!n || a),
             size: 18
-        }) : f.Ay.getURL(t.optionallyDiverseSequence ?? ""),
+        }) : h.Ay.getURL(t.optionallyDiverseSequence ?? ""),
         alt: ""
     })
 }

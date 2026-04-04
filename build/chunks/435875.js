@@ -4,17 +4,17 @@ n.d(t, {
 });
 var i = n(73153),
     a = n(846293),
-    r = n(970163),
-    l = n(961350),
+    l = n(970163),
+    r = n(961350),
     s = n(696451),
     o = n(652215);
 async function d(e) {
     let {
         code: t
-    } = e, d = (await (0, r.A)(t)).invite;
+    } = e, d = (await (0, l.A)(t)).invite;
     if (null == d || null == d.guild) return;
     let c = d.guild.id,
-        u = s.Ay.getMember(c, l.default.getId()),
+        u = s.Ay.getMember(c, r.default.getId()),
         A = !1;
     if (null != u && null != d.roles && d.roles.length > 0) {
         let e = new Set(u.roles ?? []);

@@ -37,21 +37,21 @@ function h(e) {
         ref: x,
         height: p = null
     } = (0, o.Ay)(), g = (0, d.A)(p) ?? null, [{
-        height: f
-    }, _] = (0, r.zhh)(() => ({
+        height: _
+    }, f] = (0, r.zhh)(() => ({
         from: {
             height: 0
         },
         config: n
     }));
     return i.useLayoutEffect(() => {
-        null !== p && _({
+        null !== p && f({
             height: p,
             immediate: !m || h || null === g
         })
-    }, [p, _, m, h, g]), (0, a.jsx)(s.animated.div, {
+    }, [p, f, m, h, g]), (0, a.jsx)(s.animated.div, {
         style: {
-            height: null === g ? "auto" : f,
+            height: null === g ? "auto" : _,
             overflow: "hidden"
         },
         children: (0, a.jsx)("div", {

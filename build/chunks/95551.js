@@ -35,10 +35,10 @@ function u(e) {
         trailing: h,
         renderSubmenu: x,
         ref: p
-    } = e, g = null != n, f = (0, r.rE)({
+    } = e, g = null != n, _ = (0, r.rE)({
         action: t,
         onClick: n
-    }), [_, v] = i.useState(!1), b = i.useRef(null), j = p ?? b, A = null != x, C = A && g, y = {
+    }), [f, v] = i.useState(!1), b = i.useRef(null), j = p ?? b, A = null != x, C = A && g, y = {
         offset: {
             top: -8,
             left: -8,
@@ -76,7 +76,7 @@ function u(e) {
         return t = C ? (0, a.jsxs)(a.Fragment, {
             children: [(0, a.jsx)(l.DUT, {
                 className: d.ef,
-                onClick: f,
+                onClick: _,
                 focusProps: {
                     offset: {
                         ...y.offset,
@@ -109,7 +109,7 @@ function u(e) {
             })]
         }) : (0, a.jsx)(l.DUT, {
             className: d.ef,
-            onClick: f,
+            onClick: _,
             focusProps: y,
             children: T()
         }), (0, a.jsx)("div", {
@@ -126,7 +126,7 @@ function u(e) {
             targetElementRef: j,
             spacing: 0,
             renderPopout: x,
-            shouldShow: _,
+            shouldShow: f,
             onRequestClose: S,
             children: N
         })
