@@ -9,12 +9,12 @@ var r = n(627968),
     a = n.n(l),
     s = n(837381),
     o = n(607399),
-    u = n(397927),
-    c = n(928039),
+    c = n(397927),
+    u = n(928039),
     d = n(932001),
     h = n(97469),
-    m = n(199966),
-    f = n(894858),
+    f = n(199966),
+    m = n(894858),
     p = n(397274),
     _ = n(189857),
     v = n(188180),
@@ -29,9 +29,9 @@ function E(e) {
         footer: l,
         emptyState: v,
         searchBar: E
-    } = e, S = f.A.useField("showNavigationMobile"), b = i.useRef(null), [N] = i.useState(t), {
+    } = e, S = m.A.useField("showNavigationMobile"), b = i.useRef(null), [N] = i.useState(t), {
         accessibleDirectory: C
-    } = (0, m._)(), j = i.useMemo(() => (0, _.Z)(N, C), [N, C]), [R] = (0, d.kn)(j.allDismissibleContents);
+    } = (0, f._)(), j = i.useMemo(() => (0, _.Z)(N, C), [N, C]), [R] = (0, d.kn)(j.allDismissibleContents);
     (0, y.B)({
         visibleContent: R,
         dismissibleBadges: j,
@@ -43,8 +43,8 @@ function E(e) {
         return t.layout.forEach(t => {
             t.hoisted ? e.push(t) : n.push(t)
         }), [e, n]
-    }, [t.layout]), w = (0, h.NC)(), k = (0, c.A)("settings-sidebar", b);
-    return (0, r.jsx)(u.NPJ, {
+    }, [t.layout]), w = (0, h.NC)(), k = (0, u.A)("settings-sidebar", b);
+    return (0, r.jsx)(c.NPJ, {
         theme: w,
         children: e => (0, r.jsxs)("div", {
             className: a()(x.pz, e, {
@@ -55,8 +55,8 @@ function E(e) {
                 className: x.gM,
                 children: [o.Fr && (0, r.jsx)("div", {
                     className: x.hg,
-                    children: (0, r.jsx)(u.K0, {
-                        icon: u.d$L,
+                    children: (0, r.jsx)(c.K0, {
+                        icon: c.d$L,
                         onClick: n,
                         variant: "icon-only",
                         size: "sm",
@@ -78,7 +78,7 @@ function E(e) {
                             ref: t,
                             ...n
                         } = e;
-                        return (0, r.jsxs)(u.ChK, {
+                        return (0, r.jsxs)(c.ChK, {
                             ref: e => {
                                 b.current = e, p.A.setSidebarScrollerRef(e), t.current = e?.getScrollerNode() ?? null
                             },
@@ -113,7 +113,7 @@ function A(e) {
         "aria-label": a,
         children: [null != a && (0, r.jsx)("div", {
             className: x.a9,
-            children: (0, r.jsx)(u.Heading, {
+            children: (0, r.jsx)(c.Heading, {
                 className: x.Pf,
                 variant: "heading-sm/medium",
                 color: "text-muted",
