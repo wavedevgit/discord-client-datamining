@@ -9,8 +9,8 @@ var r = n(627968),
     a = n.n(l),
     s = n(284009),
     o = n.n(s),
-    c = n(687498),
-    u = n(942381),
+    u = n(687498),
+    c = n(942381),
     d = n(837381),
     h = n(935399),
     f = n(319354),
@@ -34,11 +34,11 @@ function N(e) {
         dismissibleBadge: l
     } = e, {
         useTitle: s,
-        useSubnavLabel: c,
-        key: u
-    } = t, h = s?.(), f = c?.() ?? h;
+        useSubnavLabel: u,
+        key: c
+    } = t, h = s?.(), f = u?.() ?? h;
     return o()(null != f, "[SettingsSubnavigationCategory] Category must have a title"), (0, r.jsx)(d.tG, {
-        id: u,
+        id: c,
         children: e => (0, r.jsxs)(m.DUT, {
             onClick: n,
             className: a()(b.AS, {
@@ -48,7 +48,7 @@ function N(e) {
             children: [f, null != l && !i && (0, r.jsx)(E.A, {
                 badge: l
             })]
-        }, u)
+        }, c)
     })
 }
 
@@ -62,7 +62,7 @@ function C(e) {
         let e = v.A.getField("currentCategoryKey"),
             t = n.find(t => t.key === e);
         return t?.key ?? n[0].key
-    }), [c, d] = i.useState(t);
+    }), [u, d] = i.useState(t);
     i.useEffect(() => v.A.subscribe(e => {
         let {
             currentCategoryKey: t
@@ -72,7 +72,7 @@ function C(e) {
         let r = t ? n.find(t => t.key === e) : null;
         null != r && (d(!0), o(r.key))
     }, {
-        equalityFn: u.x,
+        equalityFn: c.x,
         fireImmediately: !0
     }), [n, t]);
     let h = i.useMemo(() => Math.max(n.findIndex(e => e.key === s), 0), [n, s]);
@@ -93,7 +93,7 @@ function C(e) {
             opacity: +!!t
         },
         ref: f,
-        children: c && (0, r.jsx)(j, {
+        children: u && (0, r.jsx)(j, {
             index: h,
             activeKey: s,
             categories: n,
@@ -121,7 +121,7 @@ function j(e) {
         dismissibleBadges: s,
         onMount: o
     } = e, {
-        thumbRef: u,
+        thumbRef: c,
         trackRef: d,
         thumbAnchorRef: v,
         springs: g
@@ -132,7 +132,7 @@ function j(e) {
             l = i.useRef(null),
             a = i.useRef(!0),
             s = i.useRef(t),
-            [o, c] = (0, m.zhh)(() => ({
+            [o, u] = (0, m.zhh)(() => ({
                 y: 0,
                 height: 0,
                 config: {
@@ -145,19 +145,19 @@ function j(e) {
             let e = s.current !== t,
                 i = () => {
                     if (null == n.current || null == r.current || null == l.current) return;
-                    let [i, u] = [n.current.getBoundingClientRect(), l.current.getBoundingClientRect()], d = i.width / 2, h = (u.y - i.y) / d, f = u.height / d;
-                    a.current || e || p.A.useReducedMotion ? (o.y.set(h), o.height.set(f)) : c({
+                    let [i, c] = [n.current.getBoundingClientRect(), l.current.getBoundingClientRect()], d = i.width / 2, h = (c.y - i.y) / d, f = c.height / d;
+                    a.current || e || p.A.useReducedMotion ? (o.y.set(h), o.height.set(f)) : u({
                         y: h,
                         height: f
                     }), a.current = !1, s.current = t
                 },
-                u = null;
-            return e ? u = requestAnimationFrame(() => {
-                u = null, i()
+                c = null;
+            return e ? c = requestAnimationFrame(() => {
+                c = null, i()
             }) : i(), () => {
-                null != u && cancelAnimationFrame(u)
+                null != c && cancelAnimationFrame(c)
             }
-        }, [e, c, o.y, o.height, t]), {
+        }, [e, u, o.y, o.height, t]), {
             thumbRef: r,
             trackRef: n,
             thumbAnchorRef: l,
@@ -177,10 +177,10 @@ function j(e) {
             className: b.u4,
             "aria-hidden": "true",
             ref: d,
-            children: (0, r.jsx)(c.animated.div, {
+            children: (0, r.jsx)(u.animated.div, {
                 className: b.FF,
                 style: g,
-                ref: u
+                ref: c
             })
         }), (0, r.jsx)("div", {
             className: b.gu,
