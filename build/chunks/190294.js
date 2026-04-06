@@ -1,110 +1,62 @@
 /** chunk id: 190294 params = (module,exports,require) **/
 s.d(t, {
-    A: () => b
+    A: () => o
 });
-var r = s(627968),
-    l = s(64700),
-    a = s(641150),
-    n = s(397927),
-    o = s(365491),
-    i = s(758836),
-    c = s(985018);
-let u = [{
-        tab: i.G2.AVATAR_DECORATIONS,
-        labelKey: c.t.dRZYNE
-    }, {
-        tab: i.G2.PROFILE_EFFECTS,
-        labelKey: c.t["1cNjtx"]
-    }, {
-        tab: i.G2.NAMEPLATES,
-        labelKey: c.t.V68Fqz
-    }, {
-        tab: i.G2.BUNDLES,
-        labelKey: c.t.FYFpps
-    }, {
-        tab: i.G2.CATALOG,
-        labelKey: c.t.xFcotU
-    }],
-    d = {
-        [a.q.ALL]: i.G2.CATALOG,
-        [a.q.AVATAR_DECORATION]: i.G2.AVATAR_DECORATIONS,
-        [a.q.PROFILE_EFFECT]: i.G2.PROFILE_EFFECTS,
-        [a.q.NAMEPLATE]: i.G2.NAMEPLATES,
-        [a.q.BUNDLE]: i.G2.BUNDLES
-    };
+var r = s(627968);
+s(64700);
+var l = s(397927),
+    n = s(758836),
+    a = s(985018);
 
-function b(e) {
+function o(e) {
     let {
         tabs: t,
         selectedTab: s,
-        onTabSelect: a,
-        onClose: b,
-        showOrbRentalNewBadge: p
-    } = e, {
-        itemTypeFilters: S
-    } = (0, o.v)(), E = l.useMemo(() => {
-        if (s === i.G2.CATALOG && S.size > 0) {
-            let e = d[Array.from(S)[0]];
-            if (null != e) return e
-        }
-        return s
-    }, [s, S]);
-    return (0, r.jsx)(n.W1t, {
+        onTabSelect: o,
+        onClose: i,
+        showOrbRentalNewBadge: c
+    } = e;
+    return (0, r.jsx)(l.W1t, {
         "data-menu-migrated-auto": !0,
         navId: "collectibles-shop-tabs-overflow-menu",
-        "aria-label": c.intl.string(c.t["UKOtz+"]),
+        "aria-label": a.intl.string(a.t["UKOtz+"]),
         hideScroller: !0,
-        onClose: b,
-        onSelect: b,
-        children: (0, r.jsx)(n.rXV, {
+        onClose: i,
+        onSelect: i,
+        children: (0, r.jsx)(l.rXV, {
             children: t.map(e => {
                 let {
                     tab: t,
-                    label: l,
-                    hasSubmenu: o
+                    label: a,
+                    renderOverflowContent: u
                 } = e;
-                if (o && t === i.G2.CATALOG) {
+                if (null != u) {
                     let e = t === s;
-                    return (0, r.jsx)(n.Drp, {
+                    return (0, r.jsx)(l.Drp, {
                         id: t,
-                        label: l,
-                        icon: e ? n.yr3 : void 0,
+                        label: a,
+                        icon: e ? l.yr3 : void 0,
                         leadingAccessory: e ? {
                             type: "icon",
-                            icon: n.yr3
+                            icon: l.yr3
                         } : void 0,
                         hasSubmenu: !0,
-                        children: u.map(e => {
-                            let {
-                                tab: t,
-                                labelKey: s
-                            } = e, l = t === E;
-                            return (0, r.jsx)(n.Drp, {
-                                id: t,
-                                label: c.intl.string(s),
-                                icon: l ? n.yr3 : void 0,
-                                leadingAccessory: l ? {
-                                    type: "icon",
-                                    icon: n.yr3
-                                } : void 0,
-                                action: () => {
-                                    a(t), b()
-                                }
-                            }, t)
+                        children: u({
+                            onClose: i
                         })
                     }, t)
                 }
-                let d = t === i.G2.ORBS && p;
-                return (0, r.jsx)(n.Drp, {
+                let d = t === n.G2.ORBS && c;
+                return (0, r.jsx)(l.Drp, {
                     id: t,
-                    label: l,
-                    icon: t === s ? n.yr3 : void 0,
+                    label: a,
+                    icon: t === s ? l.yr3 : void 0,
                     leadingAccessory: t === s ? {
                         type: "icon",
-                        icon: n.yr3
+                        icon: l.yr3
                     } : void 0,
                     badge: d ? "new" : void 0,
-                    action: () => a(t)
+                    action: () => o(t)
                 }, t)
             })
         }, "overflow-tabs")

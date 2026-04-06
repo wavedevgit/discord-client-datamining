@@ -24,7 +24,7 @@ let h = l.memo(function(e) {
             author: g,
             repliedMessage: p,
             roleIcon: f
-        } = e, _ = (0, d.r4)(t.author.id, n.id), E = (0, d.m)(t, n, h, A), C = (0, d.Jo)(m, A), x = l.useCallback(() => {
+        } = e, _ = (0, d.r4)(t.author.id, n.id), E = (0, d.m)(t, n, h, A), x = (0, d.Jo)(m, A), C = l.useCallback(() => {
             A({
                 usernameProfile: !1,
                 avatarProfile: !1,
@@ -43,10 +43,10 @@ let h = l.memo(function(e) {
             renderPopout: c.A,
             showAvatarPopout: m,
             showUsernamePopout: h,
-            onClickAvatar: C,
+            onClickAvatar: x,
             onClickUsername: E,
             onContextMenu: _,
-            onPopoutRequestClose: x,
+            onPopoutRequestClose: C,
             roleIcon: f
         })
     }),

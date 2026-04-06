@@ -26,28 +26,28 @@ let A = s.memo(function(e) {
         streamPreviewURL: f,
         videoSpinnerContext: _,
         userId: E,
-        streamKey: C
-    } = e, [x, S] = s.useState(!0);
+        streamKey: x
+    } = e, [C, S] = s.useState(!0);
     (0, d.A)({
         location: "VideoStream",
         videoSpinnerContext: _,
         userId: E,
         streamId: t,
-        loading: x,
+        loading: C,
         paused: p
     });
     let {
-        onReady: I
+        onReady: T
     } = (0, c.A)({
         streamId: t,
         userId: E,
-        loading: x,
+        loading: C,
         videoSpinnerContext: _,
-        streamKey: C,
+        streamKey: x,
         paused: p
-    }), T = s.useCallback(() => {
-        S(!1), I()
-    }, [I]);
+    }), N = s.useCallback(() => {
+        S(!1), T()
+    }, [T]);
     return (0, l.jsxs)("div", {
         className: r()(h.wrapper, i),
         children: [null != t && (0, l.jsx)(a, {
@@ -56,13 +56,13 @@ let A = s.memo(function(e) {
             }, m),
             streamId: t,
             onResize: n,
-            onReady: T,
+            onReady: N,
             paused: p
         }), p ? null : (0, l.jsx)("div", {
             className: r()(h.previewWrapper, {
-                [h.loading]: x
+                [h.loading]: C
             }),
-            children: x && (0, l.jsxs)(s.Fragment, {
+            children: C && (0, l.jsxs)(s.Fragment, {
                 children: [null != f ? (0, l.jsx)("img", {
                     src: f,
                     alt: "",

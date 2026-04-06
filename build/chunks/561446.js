@@ -25,13 +25,13 @@ function E(e) {
         channelId: t,
         showProfile: n = !1,
         showTrailingDivider: E = !1
-    } = e, C = h.default.cast(t), {
-        joinRequest: x,
+    } = e, x = h.default.cast(t), {
+        joinRequest: C,
         isModmin: S,
-        guildId: I,
-        maxMembers: T
+        guildId: T,
+        maxMembers: N
     } = (0, l.cf)([m.A, d.A, u.A], () => {
-        let e = m.A.getRequest(C),
+        let e = m.A.getRequest(x),
             t = d.A.getGuild(e?.guildId);
         return {
             joinRequest: e,
@@ -39,35 +39,35 @@ function E(e) {
             guildId: t?.id,
             maxMembers: t?.maxMembers
         }
-    }), N = (0, l.bG)([c.A], () => null != I ? c.A.getMemberCount(I) : 0), b = null != T && (N ?? 0) >= T, {
-        approveRequest: v,
+    }), I = (0, l.bG)([c.A], () => null != T ? c.A.getMemberCount(T) : 0), v = null != N && (I ?? 0) >= N, {
+        approveRequest: b,
         rejectRequest: y,
         submitting: j
-    } = (0, g.W)(x?.guildId, x?.userId, x?.joinRequestId);
-    return null != x && x.applicationStatus === A.B5.SUBMITTED && S ? (0, i.jsxs)("div", {
+    } = (0, g.W)(C?.guildId, C?.userId, C?.joinRequestId);
+    return null != C && C.applicationStatus === A.B5.SUBMITTED && S ? (0, i.jsxs)("div", {
         className: _.U,
         children: [(0, i.jsx)(s.m, {
             text: f.intl.string(f.t.cdPGbE),
-            shouldShow: b,
+            shouldShow: v,
             children: (0, i.jsx)(a.Button, {
                 variant: "active",
                 size: "sm",
                 text: f.intl.string(f.t.BzjDQJ),
                 loading: j,
-                onClick: v,
-                disabled: b
+                onClick: b,
+                disabled: v
             })
         }), (0, i.jsx)(a.Button, {
             variant: "critical-primary",
             size: "sm",
             text: f.intl.string(f.t.hDtbsz),
             onClick: y,
-            disabled: j || x.applicationStatus !== A.B5.SUBMITTED
+            disabled: j || C.applicationStatus !== A.B5.SUBMITTED
         }), n && (0, i.jsx)(a.Button, {
             onClick: () => {
                 (0, o.openUserProfileModal)({
-                    userId: x.userId,
-                    guildId: x.guildId
+                    userId: C.userId,
+                    guildId: C.guildId
                 })
             },
             variant: "secondary",

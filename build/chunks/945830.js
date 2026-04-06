@@ -24,43 +24,43 @@ function _(e) {
         onJump: _
     } = e, {
         items: E,
-        state: C
+        state: x
     } = (0, s.cf)([A.A], () => {
         let e = A.A.getPins(t.id);
         return {
             items: e?.items ?? f,
             state: e?.state ?? A.e.LOADING
         }
-    }), x = l.useMemo(() => E.map(e => e.message), [E]), S = (0, s.bG)([g.Ay], () => g.Ay.hasUnreadPins(t.id));
+    }), C = l.useMemo(() => E.map(e => e.message), [E]), S = (0, s.bG)([g.Ay], () => g.Ay.hasUnreadPins(t.id));
     l.useEffect(() => {
         S && o.A.ackPins(t.id)
     }, [S, t.id]), (0, c.Ay)(() => {
-        x.some(d.$r) && o.A.fetchPins(t.id, {
+        C.some(d.$r) && o.A.fetchPins(t.id, {
             reset: !0
         })
     });
-    let I = l.useCallback(() => {
+    let T = l.useCallback(() => {
             o.A.fetchPins(t.id)
         }, [t.id]),
-        T = l.useCallback(() => {
+        N = l.useCallback(() => {
             o.A.fetchPins(t.id, {
                 before: E.at(-1)?.pinnedAt
             })
         }, [t.id, E]),
-        N = (0, s.bG)([m.A], () => (0, a.qB)(m.A.theme));
+        I = (0, s.bG)([m.A], () => (0, a.qB)(m.A.theme));
     return (0, i.jsx)(r.lGe, {
         "aria-label": p.intl.string(p.t["mp1N/2"]),
         children: (0, i.jsx)(h.Ay, {
             channel: t,
-            onFetch: I,
-            messages: x,
-            loading: C === A.e.LOADING,
-            hasMore: C === A.e.LOADED_HAS_MORE,
+            onFetch: T,
+            messages: C,
+            loading: x === A.e.LOADING,
+            hasMore: x === A.e.LOADED_HAS_MORE,
             analyticsName: "Channel Pins",
             renderEmptyState: function() {
                 if (E.length > 0) return;
                 let e = p.intl.string(t.isPrivate() ? p.t.rhqcbJ : p.t.fmyaWJ),
-                    l = N ? n(395236) : n(90367);
+                    l = I ? n(395236) : n(90367);
                 return (0, i.jsx)(h.u9, {
                     msg: e,
                     image: l
@@ -74,7 +74,7 @@ function _(e) {
                 null != e && (n.shiftKey ? o.A.unpinMessage(t, e.id) : u.A.confirmUnpin(t, e))
             },
             onJump: _,
-            loadMore: T,
+            loadMore: N,
             getProTip: function() {
                 return t.isPrivate() ? p.intl.string(p.t["3dLGAs"]) : p.intl.string(p.t.KTbRcg)
             },

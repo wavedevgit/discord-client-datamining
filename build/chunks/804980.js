@@ -1,7 +1,7 @@
 /** chunk id: 804980 params = (module,exports,require) **/
 n.d(t, {
     Ay: () => U,
-    LN: () => w
+    LN: () => k
 });
 var i = n(627968),
     l = n(64700),
@@ -20,14 +20,14 @@ var i = n(627968),
     f = n(283488),
     _ = n(732637),
     E = n(315206),
-    C = n(104171),
-    x = n(594007),
+    x = n(104171),
+    C = n(594007),
     S = n(227042),
-    I = n(793574),
-    T = n(688810),
-    N = n(698141),
-    b = n(429913),
-    v = n(87001),
+    T = n(793574),
+    N = n(688810),
+    I = n(698141),
+    v = n(429913),
+    b = n(87001),
     y = n(961350),
     j = n(186111),
     R = n(287809),
@@ -37,20 +37,20 @@ var i = n(627968),
     L = n(340009);
 let P = ["embedded_background"];
 
-function w(e) {
+function k(e) {
     let {
         avatarSize: t,
         guildId: n,
         channelId: l,
         users: s
     } = e, a = t ?? c._3J.SIZE_32, r = (0, c.FT9)(a);
-    return (0, i.jsx)(C.Ay, {
+    return (0, i.jsx)(x.Ay, {
         size: r,
         guildId: n,
         users: s,
         max: 4,
         renderUser: e => {
-            if (null == e || e === C.mt) return null;
+            if (null == e || e === x.mt) return null;
             let t = D.Ay.getName(n, l, e);
             return (0, i.jsx)(o.m_, {
                 text: t,
@@ -64,7 +64,7 @@ function w(e) {
     })
 }
 
-function k(e) {
+function w(e) {
     let {
         participants: t,
         application: n,
@@ -72,25 +72,25 @@ function k(e) {
         width: o
     } = e, A = o > 400 ? 2 : +(o > 300), [p] = o > 400 ? [c._3J.SIZE_56, 56] : o > 300 ? [c._3J.SIZE_32, 32] : [c._3J.SIZE_24, 24], f = (0, r.yK)([R.default, y.default], () => Array.from(t).map(e => (0, m.S)(e, y.default) ? null : R.default.getUser(e.userId)).filter(M.Vq)), _ = (0, r.bG)([u.Ay], () => u.Ay.getEmbeddedActivitiesForChannel(s.id).find(e => e.applicationId === n.id) ?? u.Ay.getEmbeddedActivitiesForStartingChannel(s.id).find(e => e.applicationId === n.id)), {
         analyticsLocations: E
-    } = (0, T.Ay)(), C = (0, d.p)(), x = D.Ay.getName(s.getGuildId(), s.id, f?.[0]), S = (0, g.vG)({
+    } = (0, N.Ay)(), x = (0, d.p)(), C = D.Ay.getName(s.getGuildId(), s.id, f?.[0]), S = (0, g.vG)({
         userId: R.default.getCurrentUser()?.id,
         channelId: s.id,
         application: n
-    }) === g.Gy.CAN_JOIN, I = s.getGuildId() ?? void 0, b = l.useId(), v = n.id, j = l.useMemo(() => ({
+    }) === g.Gy.CAN_JOIN, T = s.getGuildId() ?? void 0, v = l.useId(), b = n.id, j = l.useMemo(() => ({
         channel: s,
         type: "channel"
     }), [s]), {
         submitting: P
-    } = (0, N.A)({
-        applicationId: v,
+    } = (0, I.A)({
+        applicationId: b,
         context: j,
-        launchingComponentId: b
+        launchingComponentId: v
     });
     return (0, i.jsxs)("div", {
         className: L.Yi,
-        children: [(0, i.jsx)(w, {
+        children: [(0, i.jsx)(k, {
             avatarSize: p,
-            guildId: I,
+            guildId: T,
             channelId: s.id,
             users: f
         }), (0, i.jsx)(c.Text, {
@@ -100,10 +100,10 @@ function k(e) {
             }),
             variant: "text-sm/normal",
             children: f.length > 1 ? O.intl.formatToPlainString(O.t.cpe6CK, {
-                username: x,
+                username: C,
                 count: f.length - 1
             }) : O.intl.formatToPlainString(O.t["7Uuia2"], {
-                username: x
+                username: C
             })
         }), (0, i.jsx)(c.Text, {
             className: a()(L.wx, {
@@ -120,9 +120,9 @@ function k(e) {
                     e.stopPropagation(), null != _ && (0, h.A)({
                         applicationId: _.applicationId,
                         activityChannelId: s.id,
-                        locationObject: C.location,
+                        locationObject: x.location,
                         analyticsLocations: E,
-                        componentId: b
+                        componentId: v
                     })
                 },
                 loading: P,
@@ -142,40 +142,40 @@ function U(e) {
         channel: o
     } = e, {
         analyticsLocations: c
-    } = (0, T.Ay)(I.A.ACTIVITY_TILE), {
+    } = (0, N.Ay)(T.A.ACTIVITY_TILE), {
         applicationId: d
-    } = t, u = (0, p.A)(), h = null != u && (0, A.H)(u.location) === o.id && u.applicationId === d, [m] = (0, b.A)([d]), {
+    } = t, u = (0, p.A)(), h = null != u && (0, A.H)(u.location) === o.id && u.applicationId === d, [m] = (0, v.A)([d]), {
         url: g
     } = (0, f.A)({
         applicationId: d,
         names: P,
         size: 1024
-    }), C = !s && h, N = !h, y = !h && !s, R = (0, r.bG)([j.A, v.A], () => (0, S.A)({
+    }), x = !s && h, I = !h, y = !h && !s, R = (0, r.bG)([j.A, b.A], () => (0, S.A)({
         LayerStore: j.A,
-        PopoutWindowStore: v.A
+        PopoutWindowStore: b.A
     }));
     return l.useEffect(() => {
-        if (C && null != u && !R) {
-            let e = (0, x.A)(u.location.id, u.applicationId);
+        if (x && null != u && !R) {
+            let e = (0, C.A)(u.location.id, u.applicationId);
             (0, E.cK)(e)
         }
-    }, [C, u, R]), (0, i.jsx)(T.f5, {
+    }, [x, u, R]), (0, i.jsx)(N.f5, {
         value: c,
         children: (0, i.jsxs)("div", {
             className: L.kL,
-            children: [C && null != u && (0, i.jsx)(_.A, {
+            children: [x && null != u && (0, i.jsx)(_.A, {
                 className: L.pU,
-                embedId: (0, x.A)(u.location.id, d)
-            }), N && null != m && null != g && "" !== g ? (0, i.jsx)("img", {
+                embedId: (0, C.A)(u.location.id, d)
+            }), I && null != m && null != g && "" !== g ? (0, i.jsx)("img", {
                 className: L.j0,
                 alt: m.name,
                 src: g
-            }) : null, y && null != m && (0, i.jsx)(k, {
+            }) : null, y && null != m && (0, i.jsx)(w, {
                 width: n,
                 channel: o,
                 participants: t.participants,
                 application: m
-            }), a || N ? null : (0, i.jsx)("div", {
+            }), a || I ? null : (0, i.jsx)("div", {
                 className: L.OB
             })]
         })

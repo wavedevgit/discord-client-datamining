@@ -1,6 +1,6 @@
 /** chunk id: 454148 params = (module,exports,require) **/
 n.d(t, {
-    L: () => C
+    L: () => x
 });
 var i = n(627968),
     l = n(64700),
@@ -20,41 +20,41 @@ var i = n(627968),
     _ = n(652215),
     E = n(985018);
 
-function C(e) {
+function x(e) {
     let {
         channelId: t,
-        warningId: C,
-        senderId: x
-    } = e, S = (0, f.CW)(), I = l.useCallback(() => {
-        (0, h.xi)(t, [C])
-    }, [t, C]), T = e => {
+        warningId: x,
+        senderId: C
+    } = e, S = (0, f.CW)(), T = l.useCallback(() => {
+        (0, h.xi)(t, [x])
+    }, [t, x]), N = e => {
         r.A.updateChannelOverrideSettings(null, t, {
             muted: !0
-        }, p.fd.Muted), c.A.showMuteSuccessToast(x, t), (0, A._$)({
+        }, p.fd.Muted), c.A.showMuteSuccessToast(C, t), (0, A._$)({
             channelId: t,
-            warningId: C,
-            senderId: x,
+            warningId: x,
+            senderId: C,
             warningType: m._j.LIKELY_ATO,
             cta: e
-        }), I()
+        }), T()
     };
     return l.useEffect(() => {
         (0, A.mO)(_.HAw.SAFETY_WARNING_VIEWED, {
             channelId: t,
-            warningId: C,
-            senderId: x,
+            warningId: x,
+            senderId: C,
             warningType: m._j.LIKELY_ATO
         }), o.A.increment({
             name: s.K.SAFETY_WARNING_VIEW
         })
-    }, [t, C, x]), (0, i.jsx)(g.N, {
+    }, [t, x, C]), (0, i.jsx)(g.N, {
         channelId: t,
-        warningId: C,
-        senderId: x,
+        warningId: x,
+        senderId: C,
         warningType: m._j.LIKELY_ATO,
         header: E.intl.string(E.t.R8UsiI),
         description: E.intl.string(E.t.lI8nQl),
-        onDismiss: I,
+        onDismiss: T,
         buttons: [{
             text: E.intl.string(E.t.tC1pvL),
             variant: "primary",
@@ -72,8 +72,8 @@ function C(e) {
                             transitionState: l,
                             onClose: s,
                             channelId: t,
-                            warningId: C,
-                            senderId: x,
+                            warningId: x,
+                            senderId: C,
                             description: E.intl.string(E.t["/uid3p"]),
                             safetyTipRows: S.map((e, t) => (0, i.jsx)(d.B, {
                                 listType: "numbered",
@@ -86,14 +86,14 @@ function C(e) {
                                 description: E.intl.string(E.t.w2ve0t),
                                 buttonText: E.intl.string(E.t.ftIK2A),
                                 onButtonPress: () => {
-                                    T(A.Wm.USER_MODAL_MUTE), s()
+                                    N(A.Wm.USER_MODAL_MUTE), s()
                                 }
                             }, "likely-ato-mute")],
                             learnMore: (0, i.jsx)(a.DUT, {
                                 onClick: () => (0, A._$)({
                                     channelId: t,
-                                    warningId: C,
-                                    senderId: x,
+                                    warningId: x,
+                                    senderId: C,
                                     warningType: m._j.LIKELY_ATO,
                                     cta: A.Wm.USER_MODAL_LEARN_MORE
                                 }),
@@ -109,15 +109,15 @@ function C(e) {
                     }
                 }), (0, A._$)({
                     channelId: t,
-                    warningId: C,
-                    senderId: x,
+                    warningId: x,
+                    senderId: C,
                     warningType: m._j.LIKELY_ATO,
                     cta: A.Wm.OPEN_MORE_TIPS
                 })
             }
         }, {
             text: E.intl.string(E.t.ftIK2A),
-            onClick: () => T(A.Wm.USER_BANNER_MUTE)
+            onClick: () => N(A.Wm.USER_BANNER_MUTE)
         }]
     })
 }

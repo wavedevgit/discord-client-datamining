@@ -32,7 +32,7 @@ function m(e) {
             user: p,
             guild: f
         }),
-        C = [(0, d.A)({
+        x = [(0, d.A)({
             channel: t,
             message: n,
             user: p,
@@ -42,8 +42,8 @@ function m(e) {
             user: p,
             guild: f
         })].filter(e => null != e);
-    return t.isModeratorReportChannel() && 0 !== C.length ? (0, i.jsx)(i.Fragment, {
-        children: C.map((e, t) => (0, i.jsx)(l.Fragment, {
+    return t.isModeratorReportChannel() && 0 !== x.length ? (0, i.jsx)(i.Fragment, {
+        children: x.map((e, t) => (0, i.jsx)(l.Fragment, {
             children: e
         }, t))
     }) : null

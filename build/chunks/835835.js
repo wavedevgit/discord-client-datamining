@@ -21,14 +21,14 @@ var i = n(627968),
     f = n(320501),
     _ = n(576705),
     E = n(519057),
-    C = n(531685),
-    x = n(954571),
+    x = n(531685),
+    C = n(954571),
     S = n(203982),
-    I = n(81437),
-    T = n(636922),
-    N = n(652215),
-    b = n(985018),
-    v = n(284362);
+    T = n(81437),
+    N = n(636922),
+    I = n(652215),
+    v = n(985018),
+    b = n(284362);
 
 function y(e) {
     e.stopPropagation()
@@ -41,9 +41,9 @@ let j = e => {
             className: s
         } = e;
         return (0, i.jsxs)("div", {
-            className: a()(s, v.wx),
+            className: a()(s, b.wx),
             children: [(0, i.jsxs)("div", {
-                className: v.gn,
+                className: b.gn,
                 children: [null != n ? (0, i.jsx)(n, {
                     color: u.LU0.colors.INTERACTIVE_TEXT_DEFAULT
                 }) : null, null != t ? (0, i.jsx)(u.Text, {
@@ -60,14 +60,14 @@ let j = e => {
             image: n
         } = e;
         return (0, i.jsxs)("div", {
-            className: v.zC,
+            className: b.zC,
             children: [(0, i.jsx)("div", {
-                className: v.Sl,
+                className: b.Sl,
                 style: {
                     backgroundImage: `url(${n})`
                 }
             }), (0, i.jsx)("div", {
-                className: v.rf,
+                className: b.rf,
                 children: t
             })]
         })
@@ -92,11 +92,11 @@ class M extends l.PureComponent {
             jumping: e
         } = this.props;
         return (0, i.jsx)("div", {
-            className: v.UD,
+            className: b.UD,
             children: (0, i.jsx)(u.Button, {
                 variant: "secondary",
                 size: "sm",
-                text: b.intl.string(b.t.k5WiPf),
+                text: v.intl.string(v.t.k5WiPf),
                 onClick: this.handleClickJump,
                 loading: e
             })
@@ -111,19 +111,19 @@ class M extends l.PureComponent {
             closeAriaLabel: s
         } = this.props;
         return null != e && (t || n || null != l && l.isPrivate()) ? (0, i.jsx)("div", {
-            className: v.UD,
+            className: b.UD,
             children: (0, i.jsx)(u.K0, {
                 icon: u.PGe,
                 size: "sm",
                 variant: "secondary",
-                "aria-label": s ?? b.intl.string(b.t.cpT0Cq),
+                "aria-label": s ?? v.intl.string(v.t.cpT0Cq),
                 onClick: this.handleClickClose
             })
         }) : null
     }
     render() {
         return (0, i.jsxs)("div", {
-            className: v.uu,
+            className: b.uu,
             children: [this.renderJumpButton(), this.renderCloseButton()]
         })
     }
@@ -133,7 +133,7 @@ let D = d.Ay.connectStores([_.A], e => {
         channel: t
     } = e;
     return {
-        canManageMessages: null != t && _.A.can(N.xBc.MANAGE_MESSAGES, t)
+        canManageMessages: null != t && _.A.can(I.xBc.MANAGE_MESSAGES, t)
     }
 })(M);
 
@@ -148,12 +148,12 @@ function O(e) {
         renderEmptyState: p,
         renderItem: f,
         getProTip: _,
-        scrollerClassName: I,
-        className: T,
+        scrollerClassName: T,
+        className: N,
         listName: j
-    } = e, R = l.useRef(null), M = (0, m.A)(j, R), D = (0, d.bG)([E.Ay], () => E.Ay.hasNotice()), O = (0, d.bG)([C.A], () => C.A.windowSize());
+    } = e, R = l.useRef(null), M = (0, m.A)(j, R), D = (0, d.bG)([E.Ay], () => E.Ay.hasNotice()), O = (0, d.bG)([x.A], () => x.A.windowSize());
     l.useEffect(() => {
-        x.default.track(N.HAw.OPEN_POPOUT, {
+        C.default.track(I.HAw.OPEN_POPOUT, {
             type: t
         })
     }, [t]), l.useEffect(() => {
@@ -168,8 +168,8 @@ function O(e) {
                 animate: !0
             })
         }
-        return S._.subscribe(N.jej.SCROLL_PAGE_DOWN, t), S._.subscribe(N.jej.SCROLL_PAGE_UP, e), () => {
-            S._.unsubscribe(N.jej.SCROLL_PAGE_DOWN, t), S._.unsubscribe(N.jej.SCROLL_PAGE_UP, e)
+        return S._.subscribe(I.jej.SCROLL_PAGE_DOWN, t), S._.subscribe(I.jej.SCROLL_PAGE_UP, e), () => {
+            S._.unsubscribe(I.jej.SCROLL_PAGE_DOWN, t), S._.unsubscribe(I.jej.SCROLL_PAGE_UP, e)
         }
     }, []);
     let L = l.useCallback(() => {
@@ -177,35 +177,35 @@ function O(e) {
             null != e && e.scrollHeight - e.scrollTop - e.offsetHeight < 250 && s && !r && h?.()
         }, [s, h, r]),
         P = [],
-        w = !0;
+        k = !0;
     null == n || r && 0 === n.length ? P = [(0, i.jsx)("div", {
-        className: a()(v.zC, v.k$),
+        className: a()(b.zC, b.k$),
         children: (0, i.jsx)(u.y$y, {})
     }, "spinner")] : 0 === n.length ? P.push((0, i.jsx)(l.Fragment, {
         children: p()
-    }, "empty-state")) : (w = !1, P = [], o().each(n, e => {
+    }, "empty-state")) : (k = !1, P = [], o().each(n, e => {
         P.push(...f(e))
     }));
-    let k = null;
-    null != n && n.length > 0 && null != h && (k = r ? (0, i.jsx)("div", {
-        className: v.sw,
+    let w = null;
+    null != n && n.length > 0 && null != h && (w = r ? (0, i.jsx)("div", {
+        className: b.sw,
         children: (0, i.jsx)(u.y$y, {})
     }, "loading-more-after") : s ? (0, i.jsx)("div", {
-        className: v.u9,
+        className: b.u9,
         children: (0, i.jsx)(u.Button, {
             variant: "secondary",
             size: "sm",
             fullWidth: !0,
-            text: b.intl.string(b.t.XBlaiC),
+            text: v.intl.string(v.t.XBlaiC),
             onClick: h
         })
     }) : (0, i.jsx)("div", {
-        className: v.lJ,
+        className: b.lJ,
         children: p()
     }));
     let U = _?.(),
-        G = w && null != U ? (0, i.jsx)("div", {
-            className: v.qr,
+        G = k && null != U ? (0, i.jsx)("div", {
+            className: b.qr,
             children: (0, i.jsx)(A.A, {
                 style: {
                     width: "100%",
@@ -219,9 +219,9 @@ function O(e) {
             maxHeight: O.height - 43 - 25 - 48
         };
     D && (F.maxHeight -= 40);
-    let H = null != h && s;
+    let B = null != h && s;
     return (0, i.jsx)("div", {
-        className: a()(v.KQ, T ?? v.G6),
+        className: a()(b.KQ, N ?? b.G6),
         style: F,
         onClick: y,
         onDoubleClick: y,
@@ -229,8 +229,8 @@ function O(e) {
         children: (0, i.jsxs)(u.Fmo, {
             component: g(),
             children: [(0, i.jsxs)(u.T7Y, {
-                className: I ?? v.m4,
-                onScroll: H ? L : void 0,
+                className: T ?? b.m4,
+                onScroll: B ? L : void 0,
                 ref: R,
                 children: [(0, i.jsx)(c.hD, {
                     navigator: M,
@@ -247,7 +247,7 @@ function O(e) {
                             })
                         }
                     })
-                }), k]
+                }), w]
             }), G]
         })
     })
@@ -267,10 +267,10 @@ function L(e) {
         renderHeader: A,
         renderEmptyState: _,
         renderMessage: E,
-        getProTip: C,
-        scrollerClassName: x,
+        getProTip: x,
+        scrollerClassName: C,
         className: S,
-        onCloseMessage: b,
+        onCloseMessage: v,
         listName: y,
         closeAriaLabel: j
     } = e, R = (0, d.bG)([f.A], () => {
@@ -284,9 +284,9 @@ function L(e) {
                 id: i,
                 channel_id: l
             } = e, s = p.A.getChannel(l);
-            null != s && (h.A.trackJump(l, i, t), (0, g.pX)(N.BVt.CHANNEL(s.getGuildId(), l, i))), u?.(n)
+            null != s && (h.A.trackJump(l, i, t), (0, g.pX)(I.BVt.CHANNEL(s.getGuildId(), l, i))), u?.(n)
         };
-        (0, I.A)(e, i) && !R && i()
+        (0, T.A)(e, i) && !R && i()
     }
     l.useEffect(() => {
         n(s)
@@ -297,7 +297,7 @@ function L(e) {
     })), [a, s]);
     return (0, i.jsx)(O, {
         className: S,
-        scrollerClassName: x,
+        scrollerClassName: C,
         items: L,
         loading: o,
         analyticsName: t,
@@ -305,7 +305,7 @@ function L(e) {
         renderHeader: A,
         hasMore: r,
         loadMore: c,
-        getProTip: C,
+        getProTip: x,
         renderItem: function(e) {
             let {
                 message: t,
@@ -315,9 +315,9 @@ function L(e) {
             if (null != E) return E(t, e => M(t, e));
             let l = [];
             return null == n ? [] : (l.push((0, i.jsxs)("div", {
-                className: v.Uc,
-                children: [(0, i.jsx)(T.A, {
-                    className: v.i0,
+                className: b.Uc,
+                children: [(0, i.jsx)(N.A, {
+                    className: b.i0,
                     message: t,
                     channel: n
                 }), (0, i.jsx)(D, {
@@ -326,7 +326,7 @@ function L(e) {
                     jumping: R,
                     canCloseAllMessages: m,
                     jumpTo: M,
-                    onCloseMessage: b,
+                    onCloseMessage: v,
                     closeAriaLabel: j
                 })]
             }, t.id)), l)

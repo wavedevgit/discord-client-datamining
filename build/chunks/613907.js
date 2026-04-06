@@ -1,6 +1,6 @@
 /** chunk id: 613907 params = (module,exports,require) **/
 n.d(t, {
-    A: () => I
+    A: () => T
 });
 var i = n(627968),
     l = n(64700),
@@ -19,22 +19,22 @@ var i = n(627968),
     f = n(427262),
     _ = n(143413),
     E = n(652215),
-    C = n(985018),
-    x = n(867916);
+    x = n(985018),
+    C = n(867916);
 let S = "749054660769218631";
 
-function I(e) {
+function T(e) {
     let {
         channel: t
     } = e, [n, s] = l.useState("");
     l.useEffect(() => {
         (0, d.zk)("847199849233514549", !0)
     }, []);
-    let I = (0, r.bG)([A.A, m.default], () => !!a()(A.A.getMessages(t.id).toArray()).reverse().find(e => e.author.id !== m.default.getId() && e.state === E.cmJ.SENT && !(0, _.A)(e))),
-        T = (0, r.bG)([g.default], () => g.default.getUser(t.isPrivate() ? t.getRecipientId() : null)),
-        N = f.Ay.useName(T) ?? C.intl.string(C.t.y1Wu2f),
-        b = (0, r.bG)([u.A], () => u.A.getStickerById(S)),
-        v = l.useCallback(async () => {
+    let T = (0, r.bG)([A.A, m.default], () => !!a()(A.A.getMessages(t.id).toArray()).reverse().find(e => e.author.id !== m.default.getId() && e.state === E.cmJ.SENT && !(0, _.A)(e))),
+        N = (0, r.bG)([g.default], () => g.default.getUser(t.isPrivate() ? t.getRecipientId() : null)),
+        I = f.Ay.useName(N) ?? x.intl.string(x.t.y1Wu2f),
+        v = (0, r.bG)([u.A], () => u.A.getStickerById(S)),
+        b = l.useCallback(async () => {
             if (null == n || "" === n) try {
                 await c.A.sendGreetMessage(t.id, S), p.default.track(E.HAw.DM_EMPTY_ACTION, {
                     channel_id: t.id,
@@ -43,44 +43,44 @@ function I(e) {
                     type: "Send wave"
                 })
             } catch (e) {
-                e.ok || 429 !== e.status || s(C.intl.string(C.t.Whhv4w))
+                e.ok || 429 !== e.status || s(x.intl.string(x.t.Whhv4w))
             }
         }, [t.id, t.type, n]),
-        y = C.intl.formatToPlainString(C.t.m0zYbV, {
-            username: N
+        y = x.intl.formatToPlainString(x.t.m0zYbV, {
+            username: I
         }),
         j = null != n && "" !== n ? (0, i.jsx)(o.Text, {
-            className: x.z3,
+            className: C.z3,
             color: "text-feedback-critical",
             variant: "text-sm/normal",
             children: n
         }) : null;
-    return I ? (0, i.jsxs)("div", {
-        className: x.ft,
+    return T ? (0, i.jsxs)("div", {
+        className: C.ft,
         children: [(0, i.jsxs)(o.DUT, {
-            className: null != n && "" !== n ? x.AO : x.Iq,
-            "aria-label": C.intl.string(C.t.pJObYI),
-            onClick: v,
+            className: null != n && "" !== n ? C.AO : C.Iq,
+            "aria-label": x.intl.string(x.t.pJObYI),
+            onClick: b,
             children: [(0, i.jsx)(h.A, {
-                sticker: b,
+                sticker: v,
                 size: 24
             }), (0, i.jsx)(o.Text, {
-                className: x.Qq,
+                className: C.Qq,
                 variant: "text-md/medium",
                 children: y
             })]
         }), j]
     }) : (0, i.jsxs)("div", {
-        className: x.nj,
+        className: C.nj,
         children: [(0, i.jsx)(h.A, {
-            sticker: b,
+            sticker: v,
             size: 160,
-            className: x.Xr
+            className: C.Xr
         }), (0, i.jsx)(o.Button, {
             fullWidth: !0,
             variant: "primary",
             size: "md",
-            onClick: v,
+            onClick: b,
             disabled: !!n,
             text: y
         }), j]

@@ -31,29 +31,29 @@ function f(e) {
         _ = (0, m.A)(),
         E = (0, s.bG)([d.Ay], () => d.Ay.getActivityPanelMode());
     t = null == _ || (0, h.A)((0, u.H)(_.location)) || E !== A.Gd.PANEL ? f?.window ?? window : window;
-    let C = l.useRef(null),
-        x = l.useMemo(() => {
+    let x = l.useRef(null),
+        C = l.useMemo(() => {
             let e = null;
             return () => {
                 null == e && (e = t.requestAnimationFrame(() => {
-                    p(n, C.current?.getBoundingClientRect() ?? null), e = null
+                    p(n, x.current?.getBoundingClientRect() ?? null), e = null
                 }))
             }
         }, [n, t]);
-    return l.useEffect(() => (t.addEventListener("resize", x), c._.subscribe(g.jej.REMEASURE_TARGET, x), () => {
-        t.removeEventListener("resize", x), c._.unsubscribe(g.jej.REMEASURE_TARGET, x)
-    }), [x, t]), l.useLayoutEffect(() => {
-        let e = C.current;
+    return l.useEffect(() => (t.addEventListener("resize", C), c._.subscribe(g.jej.REMEASURE_TARGET, C), () => {
+        t.removeEventListener("resize", C), c._.unsubscribe(g.jej.REMEASURE_TARGET, C)
+    }), [C, t]), l.useLayoutEffect(() => {
+        let e = x.current;
         if (null == e) return;
         let t = e.ownerDocument.defaultView;
         if (null == t) return;
-        x();
-        let i = new t.ResizeObserver(x);
+        C();
+        let i = new t.ResizeObserver(C);
         return i.observe(e), () => {
             i.disconnect(), p(n, null)
         }
-    }, [n, x]), (0, i.jsx)("div", {
-        ref: C,
+    }, [n, C]), (0, i.jsx)("div", {
+        ref: x,
         style: r,
         className: a
     })

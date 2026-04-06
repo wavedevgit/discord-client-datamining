@@ -19,14 +19,14 @@ var i = n(627968),
     f = n(772659),
     _ = n(390848),
     E = n(138298),
-    C = n(622543),
-    x = n(657331),
+    x = n(622543),
+    C = n(657331),
     S = n(761640),
-    I = n(994500),
-    T = n(287809),
-    N = n(486020),
-    b = n(302975),
-    v = n(652215),
+    T = n(994500),
+    N = n(287809),
+    I = n(486020),
+    v = n(302975),
+    b = n(652215),
     y = n(518477),
     j = n(985018),
     R = n(342659);
@@ -34,10 +34,10 @@ let M = e => {
         let {
             userId: t,
             channelId: n
-        } = e, s = (0, o.bG)([C.A], () => C.A.getMutualGuilds(t), [t]), a = l.useMemo(() => null != s ? s.slice(0, 3).map((e, t) => {
+        } = e, s = (0, o.bG)([x.A], () => x.A.getMutualGuilds(t), [t]), a = l.useMemo(() => null != s ? s.slice(0, 3).map((e, t) => {
             let {
                 guild: n
-            } = e, l = null != n ? N.Ay.getGuildIconURL({
+            } = e, l = null != n ? I.Ay.getGuildIconURL({
                 id: n.id,
                 icon: n.icon,
                 size: 24
@@ -67,7 +67,7 @@ let M = e => {
                 children: a
             }), (0, i.jsx)(c.DUT, {
                 onClick: () => {
-                    (0, x.openUserProfileModal)({
+                    (0, C.openUserProfileModal)({
                         userId: t,
                         channelId: n,
                         tabSection: y.RP.MUTUAL_GUILDS,
@@ -89,25 +89,25 @@ let M = e => {
             relationshipType: t,
             userId: n,
             showingBanner: l
-        } = e, s = T.default.getUser(n)?.bot, a = (0, i.jsx)(c.Button, {
+        } = e, s = N.default.getUser(n)?.bot, a = (0, i.jsx)(c.Button, {
             size: "sm",
             variant: "secondary",
             onClick: () => {
                 d.A.blockUser(n, {
-                    location: v.liQ.DM_CHANNEL
+                    location: b.liQ.DM_CHANNEL
                 })
             },
             text: j.intl.string(j.t.l4Emac)
-        }), r = (0, m.D)(n), u = (0, o.bG)([I.A], () => I.A.getOriginApplicationId(n), [n]), {
+        }), r = (0, m.D)(n), u = (0, o.bG)([T.A], () => T.A.getOriginApplicationId(n), [n]), {
             acceptFriendRequest: h
         } = (0, _.I)({
             userId: n,
             applicationId: u,
             isGameRelationship: !1,
-            location: v.liQ.DM_CHANNEL
+            location: b.liQ.DM_CHANNEL
         });
         switch (t) {
-            case v.eA$.NONE:
+            case b.eA$.NONE:
                 return (0, i.jsxs)(i.Fragment, {
                     children: [!s && !l && (0, i.jsx)(c.Button, {
                         size: "sm",
@@ -116,38 +116,38 @@ let M = e => {
                             d.A.addRelationship({
                                 userId: n,
                                 context: {
-                                    location: v.liQ.DM_CHANNEL
+                                    location: b.liQ.DM_CHANNEL
                                 }
                             })
                         },
                         text: r
                     }), a]
                 });
-            case v.eA$.FRIEND:
+            case b.eA$.FRIEND:
                 return (0, i.jsxs)(i.Fragment, {
                     children: [(0, i.jsx)(c.Button, {
                         size: "sm",
                         variant: "secondary",
                         onClick: () => {
                             d.A.removeFriend(n, {
-                                location: v.liQ.DM_CHANNEL
+                                location: b.liQ.DM_CHANNEL
                             })
                         },
                         text: j.intl.string(j.t.cvSt1J)
                     }), a]
                 });
-            case v.eA$.BLOCKED:
+            case b.eA$.BLOCKED:
                 return (0, i.jsx)(c.Button, {
                     size: "sm",
                     variant: "secondary",
                     onClick: () => {
                         d.A.unblockUser(n, {
-                            location: v.liQ.DM_CHANNEL
+                            location: b.liQ.DM_CHANNEL
                         })
                     },
                     text: j.intl.string(j.t.XyHpKH)
                 });
-            case v.eA$.PENDING_INCOMING:
+            case b.eA$.PENDING_INCOMING:
                 return (0, i.jsxs)(i.Fragment, {
                     children: [(0, i.jsx)(c.Button, {
                         size: "sm",
@@ -159,13 +159,13 @@ let M = e => {
                         variant: "secondary",
                         onClick: () => {
                             d.A.cancelFriendRequest(n, {
-                                location: v.liQ.DM_CHANNEL
+                                location: b.liQ.DM_CHANNEL
                             })
                         },
                         text: j.intl.string(j.t.rQSndv)
                     }), a]
                 });
-            case v.eA$.PENDING_OUTGOING:
+            case b.eA$.PENDING_OUTGOING:
                 return (0, i.jsxs)(i.Fragment, {
                     children: [(0, i.jsx)(c.Button, {
                         size: "sm",
@@ -196,7 +196,7 @@ let M = e => {
             isOptimisticAccepted: m,
             isOptimisticRejected: A
         } = (0, g.t)({
-            user: T.default.getUser(n),
+            user: N.default.getUser(n),
             onError: s,
             onAcceptSuccess: r,
             onRejectSuccess: a
@@ -226,7 +226,7 @@ let M = e => {
             showingBanner: l
         } = e, {
             channelId: s
-        } = (0, p.N)(), d = (0, o.bG)([A.A], () => null != s && A.A.isSpam(s), [s]), u = (0, o.bG)([I.A], () => I.A.getRelationshipType(t), [t]), h = n.id === s, m = !r.Fr && !h, g = !!r.Fr || h || d, _ = d || h ? (0, i.jsxs)("div", {
+        } = (0, p.N)(), d = (0, o.bG)([A.A], () => null != s && A.A.isSpam(s), [s]), u = (0, o.bG)([T.A], () => T.A.getRelationshipType(t), [t]), h = n.id === s, m = !r.Fr && !h, g = !!r.Fr || h || d, _ = d || h ? (0, i.jsxs)("div", {
             className: R.mG,
             children: [(0, i.jsx)(O, {
                 channelId: n.id,
@@ -240,12 +240,12 @@ let M = e => {
                 relationshipType: u,
                 userId: t,
                 showingBanner: l
-            }), !l && (0, i.jsx)(b.A, {
+            }), !l && (0, i.jsx)(v.A, {
                 otherUserId: t,
                 channel: n,
                 navigateAwayOnReportSuccess: m
             })]
-        }), E = u !== v.eA$.PENDING_INCOMING || d || h ? null : (0, i.jsx)(c.Text, {
+        }), E = u !== b.eA$.PENDING_INCOMING || d || h ? null : (0, i.jsx)(c.Text, {
             color: "text-default",
             variant: "text-sm/normal",
             children: j.intl.string(j.t.c2v5nO)

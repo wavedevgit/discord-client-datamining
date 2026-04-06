@@ -21,9 +21,9 @@ function p(e) {
         channel: t,
         user: n,
         guild: p
-    } = e, f = (0, l.bG)([h.default, d.A, u.A], () => null != n && null != p && (0, r.b)(p.id, n.id, [h.default, d.A, u.A])), [_, E] = (0, o.Ay)(n?.id, t.guild_id), C = (0, l.bG)([c.Ay], () => null != p && null != n && null != c.Ay.getMember(p.id, n.id));
-    if (!f || !C) return null;
-    let x = `timeout-user-${n?.id}`;
+    } = e, f = (0, l.bG)([h.default, d.A, u.A], () => null != n && null != p && (0, r.b)(p.id, n.id, [h.default, d.A, u.A])), [_, E] = (0, o.Ay)(n?.id, t.guild_id), x = (0, l.bG)([c.Ay], () => null != p && null != n && null != c.Ay.getMember(p.id, n.id));
+    if (!f || !x) return null;
+    let C = `timeout-user-${n?.id}`;
     return (0, i.jsx)(m.A, {
         text: E ? g.intl.string(A.default["6uMZbv"]) : g.intl.string(A.default["Sgg/uI"]),
         icon: s.O4,
@@ -35,5 +35,5 @@ function p(e) {
             })
         },
         disabled: E
-    }, x)
+    }, C)
 }

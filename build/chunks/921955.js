@@ -1,7 +1,7 @@
 /** chunk id: 921955 params = (module,exports,require) **/
 let i;
 n.d(t, {
-    A: () => v
+    A: () => b
 }), n(321073);
 var l = n(311907),
     s = n(73153),
@@ -19,25 +19,25 @@ var l = n(311907),
 let f = [r.rD.TEXT_CHANNEL, r.rD.GROUP_DM, r.rD.USER],
     _ = null,
     E = null,
-    C = [],
-    x = [];
+    x = [],
+    C = [];
 
 function S(e) {
-    C = [...C, e], x = x.map(e => ({
+    x = [...x, e], C = C.map(e => ({
         ...e,
-        sent: C.includes(e.data.record.id)
-    })), b.emitChange()
-}
-
-function I() {
-    _ = null, null != i && (i.destroy(), i = null), null != E && E()
+        sent: x.includes(e.data.record.id)
+    })), v.emitChange()
 }
 
 function T() {
-    let e = null != _ && null != _.application_id ? u.A.getApplicationActivity(_.application_id) : null;
-    if (null != _ && (null == e || null == e.party || null == e.party.id)) return I()
+    _ = null, null != i && (i.destroy(), i = null), null != E && E()
 }
-class N extends l.Ay.Store {
+
+function N() {
+    let e = null != _ && null != _.application_id ? u.A.getApplicationActivity(_.application_id) : null;
+    if (null != _ && (null == e || null == e.party || null == e.party.id)) return T()
+}
+class I extends l.Ay.Store {
     static displayName = "ActivityInviteModalStore";
     initialize() {
         this.waitFor(c.A, d.A, u.A, h.A, g.default, A.default)
@@ -49,14 +49,14 @@ class N extends l.Ay.Store {
         return i?.query ?? ""
     }
     getResults() {
-        return x
+        return C
     }
 }
-let b = new N(s.h, {
+let v = new I(s.h, {
         ACTIVITY_INVITE_MODAL_OPEN: function(e) {
-            _ = e.activity, E = e.resolve, C = [], null == i && (i = new r.Ay((e, t) => {
+            _ = e.activity, E = e.resolve, x = [], null == i && (i = new r.Ay((e, t) => {
                 let n;
-                x = ("" === t.trim() ? (n = [], g.default.getPrivateChannelIds().forEach(e => {
+                C = ("" === t.trim() ? (n = [], g.default.getPrivateChannelIds().forEach(e => {
                     let t = c.A.getChannel(e);
                     if (null != t)
                         if (t.type === p.rbe.DM) {
@@ -80,7 +80,7 @@ let b = new N(s.h, {
                             } = e;
                             return {
                                 type: r.rD.USER,
-                                sent: C.includes(t.id),
+                                sent: x.includes(t.id),
                                 status: h.A.getStatus(t.id),
                                 data: e
                             }
@@ -91,7 +91,7 @@ let b = new N(s.h, {
                             } = e, n = c.A.getChannel(t.parent_id), i = d.A.getGuild(t.guild_id);
                             return {
                                 type: r.rD.TEXT_CHANNEL,
-                                sent: C.includes(t.id),
+                                sent: x.includes(t.id),
                                 categoryName: null != n ? (0, o.m1)(n, A.default, m.A) : "",
                                 guildName: i?.name ?? "",
                                 data: e
@@ -103,14 +103,14 @@ let b = new N(s.h, {
                             } = e;
                             return {
                                 type: r.rD.GROUP_DM,
-                                sent: C.includes(t.id),
+                                sent: x.includes(t.id),
                                 data: e
                             }
                         }
                         default:
                             return null
                     }
-                }).filter(e => null != e), b.emitChange()
+                }).filter(e => null != e), v.emitChange()
             }, f, 100)), i.search("")
         },
         ACTIVITY_INVITE_MODAL_QUERY: function(e) {
@@ -135,14 +135,14 @@ let b = new N(s.h, {
                 location: "Channel Text Area - Invite to Join Modal"
             }).then(() => S(n))
         },
-        ACTIVITY_INVITE_MODAL_CLOSE: I,
+        ACTIVITY_INVITE_MODAL_CLOSE: T,
         OVERLAY_SET_INPUT_LOCKED: function(e) {
             let {
                 locked: t
             } = e;
-            return !!t && null != _ && (I(), !0)
+            return !!t && null != _ && (T(), !0)
         },
-        LOCAL_ACTIVITY_UPDATE: T,
-        RPC_APP_DISCONNECTED: T
+        LOCAL_ACTIVITY_UPDATE: N,
+        RPC_APP_DISCONNECTED: N
     }),
-    v = 21552 == n.j ? b : null
+    b = 21552 == n.j ? v : null

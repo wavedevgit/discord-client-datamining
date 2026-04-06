@@ -1,6 +1,6 @@
 /** chunk id: 685374 params = (module,exports,require) **/
 n.d(t, {
-    default: () => x
+    default: () => C
 }), n(321073);
 var i = n(627968),
     l = n(64700),
@@ -19,9 +19,9 @@ var i = n(627968),
     f = n(737045),
     _ = n(652215),
     E = n(985018),
-    C = n(401443);
+    x = n(401443);
 
-function x(e) {
+function C(e) {
     let {
         channelId: t,
         ...n
@@ -45,7 +45,7 @@ function S(e) {
         newChannel: u,
         inSettings: h,
         ...m
-    } = e, [_, x] = l.useState(""), [S, I] = l.useState({}), [T, N] = l.useState(!1), [b, v] = l.useState(null), y = l.useRef(null), {
+    } = e, [_, C] = l.useState(""), [S, T] = l.useState({}), [N, I] = l.useState(!1), [v, b] = l.useState(null), y = l.useRef(null), {
         roles: j,
         members: R,
         getRichTag: M
@@ -55,7 +55,7 @@ function S(e) {
     }), O = u && 0 === Object.keys(S).length;
     async function L() {
         if (null == n || 0 === Object.keys(S).length) return void a();
-        N(!0);
+        I(!0);
         try {
             var e, t, i;
             let l;
@@ -64,19 +64,19 @@ function S(e) {
                     row: n
                 } = t;
                 null != n.id && "" !== n.id && (n.rowType === f.T6.ROLE ? l.push((0, A.we)(n.id, e.type)) : n.rowType === f.T6.MEMBER && l.push((0, A.n3)(n.id, e.type)))
-            }), (0, o.R$)(e.id, l, i)), a(), N(!1)
+            }), (0, o.R$)(e.id, l, i)), a(), I(!1)
         } catch (t) {
             let e = new c.LG(t);
-            N(!1), v(e)
+            I(!1), b(e)
         }
     }
     let P = (0, d.ke)(n.type) ? r.I$d : r.trU;
     return (0, i.jsx)(g.A.Provider, {
         listRef: y,
         query: _,
-        setQuery: x,
+        setQuery: C,
         pendingAdditions: S,
-        setPendingAdditions: I,
+        setPendingAdditions: T,
         roles: j,
         members: R,
         getRichTag: M,
@@ -86,30 +86,30 @@ function S(e) {
             onClose: a,
             input: (0, i.jsxs)("div", {
                 children: [(0, i.jsxs)(r.Text, {
-                    className: C.HA,
+                    className: x.HA,
                     variant: "text-lg/normal",
                     color: "text-default",
                     children: [(0, i.jsx)(P, {
-                        className: C.p,
+                        className: x.p,
                         size: "sm",
                         color: "currentColor"
                     }), n.name]
                 }), n.isGuildStageVoice() && (0, i.jsx)(r.Text, {
                     color: "text-default",
-                    className: C.h_,
+                    className: x.h_,
                     variant: "text-sm/normal",
                     children: E.intl.string(E.t.f7VbhF)
                 }), (0, i.jsx)(g.A.SearchBox, {
                     placeholderText: E.intl.string(E.t.iezLLn)
                 }), (0, i.jsx)(r.Text, {
-                    className: C.W$,
+                    className: x.W$,
                     variant: "text-xs/normal",
                     children: E.intl.string(E.t.rwFx85)
-                }), null != b ? (0, i.jsx)(r.Text, {
-                    className: C.W$,
+                }), null != v ? (0, i.jsx)(r.Text, {
+                    className: x.W$,
                     variant: "text-xs/normal",
                     color: "text-feedback-critical",
-                    children: b.getAnyErrorMessage()
+                    children: v.getAnyErrorMessage()
                 }) : null]
             }),
             listProps: {
@@ -132,7 +132,7 @@ function S(e) {
                 variant: "primary",
                 text: E.intl.string(E.t.i4jeWR),
                 onClick: L,
-                loading: T
+                loading: N
             }]
         })
     })

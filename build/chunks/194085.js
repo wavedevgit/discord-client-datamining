@@ -26,7 +26,7 @@ let d = l.forwardRef(function(e, t) {
         separator: f,
         buttonClassName: _,
         children: E,
-        ...C
+        ...x
     } = e;
     return (0, i.jsx)(r.m, {
         asContainer: !0,
@@ -44,7 +44,7 @@ let d = l.forwardRef(function(e, t) {
                 "aria-label": l ?? n,
                 disabled: g,
                 dangerous: p,
-                ...C,
+                ...x,
                 children: [null != d ? (0, i.jsx)(d, {
                     className: c.Kk,
                     color: "currentColor",

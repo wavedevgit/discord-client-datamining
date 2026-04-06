@@ -1,6 +1,6 @@
 /** chunk id: 286498 params = (module,exports,require) **/
 n.d(t, {
-    A: () => b
+    A: () => v
 });
 var i = n(627968),
     l = n(64700),
@@ -19,16 +19,16 @@ var i = n(627968),
     f = n(583311),
     _ = n(290863),
     E = n(584777),
-    C = n(994500),
-    x = n(427262),
+    x = n(994500),
+    C = n(427262),
     S = n(652215),
-    I = n(985018),
-    T = n(442921);
-let N = e => {
+    T = n(985018),
+    N = n(442921);
+let I = e => {
     let {
         user: t,
         handleTrackAction: n
-    } = e, s = (0, o.bG)([C.A], () => C.A.getRelationshipType(t.id)), [a, r] = l.useState(!1), h = (0, p.A)({
+    } = e, s = (0, o.bG)([x.A], () => x.A.getRelationshipType(t.id)), [a, r] = l.useState(!1), h = (0, p.A)({
         user: t,
         location: A.A.NEW_GROUP_DM_INVITE_MODAL,
         setLoading: r
@@ -50,14 +50,14 @@ let N = e => {
                 menuItems: [h],
                 children: e => (0, i.jsx)(c.m_, {
                     asContainer: !0,
-                    text: I.intl.string(I.t["6QQCQ+"]),
+                    text: T.intl.string(T.t["6QQCQ+"]),
                     ariaHidden: !0,
                     children: (0, i.jsx)(d.K0, {
                         ...e,
                         buttonRef: m,
                         size: "sm",
                         variant: "icon-only",
-                        "aria-label": I.intl.string(I.t["6QQCQ+"]),
+                        "aria-label": T.intl.string(T.t["6QQCQ+"]),
                         icon: d.lI8,
                         loading: a
                     })
@@ -66,12 +66,12 @@ let N = e => {
         case S.eA$.PENDING_OUTGOING:
             return (0, i.jsx)(c.m_, {
                 asContainer: !0,
-                text: I.intl.string(I.t["s/+byI"]),
+                text: T.intl.string(T.t["s/+byI"]),
                 ariaHidden: !0,
                 children: (0, i.jsx)(d.K0, {
                     size: "sm",
                     variant: "icon-only",
-                    "aria-label": I.intl.string(I.t["s/+byI"]),
+                    "aria-label": T.intl.string(T.t["s/+byI"]),
                     icon: d.lI8,
                     disabled: !0
                 })
@@ -79,13 +79,13 @@ let N = e => {
         default:
             return (0, i.jsx)(c.m_, {
                 asContainer: !0,
-                text: I.intl.string(I.t.w5uwoI),
+                text: T.intl.string(T.t.w5uwoI),
                 ariaHidden: !0,
                 children: (0, i.jsx)(d.K0, {
                     size: "sm",
                     onClick: g,
                     variant: "icon-only",
-                    "aria-label": I.intl.string(I.t.w5uwoI),
+                    "aria-label": T.intl.string(T.t.w5uwoI),
                     icon: d.Rvf,
                     loading: a
                 })
@@ -93,7 +93,7 @@ let N = e => {
     }
 };
 
-function b(e) {
+function v(e) {
     let t, {
             user: n,
             section: l,
@@ -102,10 +102,10 @@ function b(e) {
             comparator: A,
             selected: p,
             checked: f,
-            disabled: C = !1,
+            disabled: x = !1,
             onClick: S,
-            onMessageClick: b,
-            onMouseEnter: v,
+            onMessageClick: v,
+            onMouseEnter: b,
             "aria-setsize": y,
             "aria-posinset": j,
             handleTrackAction: R,
@@ -115,74 +115,74 @@ function b(e) {
         } = e,
         L = (0, o.bG)([_.A], () => _.A.getStatus(n.id));
     t = l === E.A.GUILD_MEMBERS ? O ? (0, i.jsx)("div", {
-        className: T.ch,
+        className: N.ch,
         children: (0, i.jsx)(d.P7L, {
             checked: f
         })
     }) : (0, i.jsx)(c.m_, {
         asContainer: !0,
-        text: C ? D : I.intl.string(I.t["6Urw1t"]),
+        text: x ? D : T.intl.string(T.t["6Urw1t"]),
         children: (0, i.jsx)(d.K0, {
             "aria-label": "",
             size: "sm",
             variant: "secondary",
             icon: d.ggM,
             onClick: () => {
-                R(l, s, "message"), b?.(n.id)
+                R(l, s, "message"), v?.(n.id)
             },
-            disabled: C
+            disabled: x
         })
     }) : (0, i.jsx)(d.P7L, {
         checked: f,
-        disabled: C
+        disabled: x
     });
     let P = (0, r.rm)(String(n.id)),
-        w = !C && l === E.A.FRIENDS || O;
+        k = !x && l === E.A.FRIENDS || O;
     return (0, i.jsx)(d.DUT, {
         id: `user-row-${s}`,
-        className: a()(T.Se, {
-            [T.r9]: !w
+        className: a()(N.Se, {
+            [N.r9]: !k
         }),
-        onClick: w ? () => {
+        onClick: k ? () => {
             R(l, s, "select"), S?.(n.id)
         } : void 0,
         onMouseEnter: () => {
-            v?.(l, s)
+            b?.(l, s)
         },
         ...P,
         role: "option",
         "aria-selected": f,
-        "aria-disabled": C,
+        "aria-disabled": x,
         "aria-setsize": y,
         "aria-posinset": j,
         children: (0, i.jsxs)(g.A, {
             align: g.A.Align.CENTER,
-            className: a()(T.Bc, {
-                [T.oz]: p
+            className: a()(N.Bc, {
+                [N.oz]: p
             }),
             children: [(0, i.jsx)(m.A, {
                 user: n,
                 status: L,
-                className: T.my
+                className: N.my
             }), (0, i.jsxs)("div", {
-                className: T.YW,
+                className: N.YW,
                 children: [(0, i.jsx)(d.Text, {
                     tag: "strong",
-                    className: T.$R,
+                    className: N.$R,
                     "aria-hidden": !0,
                     variant: "text-md/medium",
-                    children: null != A && A === n.tag ? x.Ay.getName(n) : null != A && "" !== A ? A : x.Ay.getName(n)
+                    children: null != A && A === n.tag ? C.Ay.getName(n) : null != A && "" !== A ? A : C.Ay.getName(n)
                 }), (0, i.jsx)(d.Text, {
                     variant: "text-xs/normal",
                     color: "text-muted",
                     children: (0, i.jsx)(h.A, {
                         user: n,
                         hideDiscriminator: u,
-                        className: T.xK,
+                        className: N.xK,
                         forceUsername: !0
                     })
                 })]
-            }), l !== E.A.FRIENDS && M ? (0, i.jsx)(N, {
+            }), l !== E.A.FRIENDS && M ? (0, i.jsx)(I, {
                 user: n,
                 handleTrackAction: () => R(l, s, "friend")
             }) : null, t]

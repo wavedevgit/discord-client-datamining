@@ -1,19 +1,27 @@
 /** chunk id: 92615 params = (module,exports,require) **/
 s.d(t, {
-    B: () => l
+    B: () => l,
+    X: () => n
 });
 let r = (0, s(945810).mj)({
     name: "2026-03-slayer-storefront-shop-tab",
     kind: "user",
     defaultConfig: {
-        enabled: !1
+        enabled: !1,
+        useGameShopsDropdown: !1
     },
     variations: {
         0: {
-            enabled: !1
+            enabled: !1,
+            useGameShopsDropdown: !1
         },
         1: {
-            enabled: !0
+            enabled: !0,
+            useGameShopsDropdown: !1
+        },
+        2: {
+            enabled: !0,
+            useGameShopsDropdown: !0
         }
     }
 });
@@ -21,8 +29,23 @@ let r = (0, s(945810).mj)({
 function l(e) {
     let {
         location: t
-    } = e;
-    return r.useConfig({
+    } = e, {
+        enabled: s,
+        useGameShopsDropdown: l
+    } = r.useConfig({
         location: t
-    }).enabled
+    });
+    return s && !l
+}
+
+function n(e) {
+    let {
+        location: t
+    } = e, {
+        enabled: s,
+        useGameShopsDropdown: l
+    } = r.useConfig({
+        location: t
+    });
+    return s && l
 }

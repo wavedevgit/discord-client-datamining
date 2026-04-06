@@ -23,16 +23,18 @@ function o(e) {
     }) : (0, r.jsx)("div", {
         style: o,
         className: a()(i.aY, n),
-        children: t.map((e, t) => (0, r.jsx)("div", {
-            className: a()(i.iv, {
-                [i.yF]: t > s - 1
-            }),
-            children: (0, r.jsx)(c.Text, {
-                className: i.ph,
-                variant: "code",
-                color: "text-default",
-                children: e
-            })
+        children: t.map((e, t) => (0, r.jsxs)(l.Fragment, {
+            children: [t > 0 && t % s == 0 && (0, r.jsx)("hr", {
+                className: i.yF
+            }), (0, r.jsx)("div", {
+                className: i.iv,
+                children: (0, r.jsx)(c.Text, {
+                    className: i.ph,
+                    variant: "code",
+                    color: "text-default",
+                    children: e
+                })
+            })]
         }, `${e}-${t}`))
     })
 }

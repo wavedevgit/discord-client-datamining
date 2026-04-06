@@ -1,6 +1,6 @@
 /** chunk id: 91624 params = (module,exports,require) **/
 n.d(t, {
-    A: () => N
+    A: () => I
 }), n(938796);
 var i = n(627968),
     l = n(64700),
@@ -19,9 +19,9 @@ var i = n(627968),
     f = n(145530),
     _ = n(291812),
     E = n(205120),
-    C = n(652215);
+    x = n(652215);
 n(294920);
-var x = n(480972);
+var C = n(480972);
 
 function S(e) {
     let {
@@ -37,7 +37,7 @@ function S(e) {
     })
 }
 
-function I(e) {
+function T(e) {
     let {
         channel: t,
         message: n
@@ -45,9 +45,9 @@ function I(e) {
         id: c
     } = t, {
         id: d
-    } = n, g = t.getGuildId(), p = (0, a.bG)([m.A], () => m.A.getGuild(g), [g]), _ = t.type === C.rbe.GUILD_ANNOUNCEMENT, I = null != p && p.features.has(C.GuildFeatures.NEWS), N = _ && I, {
-        editingMessage: b,
-        editingTextValue: v,
+    } = n, g = t.getGuildId(), p = (0, a.bG)([m.A], () => m.A.getGuild(g), [g]), _ = t.type === x.rbe.GUILD_ANNOUNCEMENT, T = null != p && p.features.has(x.GuildFeatures.NEWS), I = _ && T, {
+        editingMessage: v,
+        editingTextValue: b,
         editingRichValue: y
     } = (0, a.cf)([h.A], () => ({
         editingMessage: h.A.getEditingMessage(c),
@@ -56,11 +56,11 @@ function I(e) {
     }), [c]), j = (0, a.bG)([u.default], () => u.default.getId()), R = l.useCallback((e, i, l) => {
         let {
             content: a
-        } = l, c = A.A.can(C.xBc.MANAGE_MESSAGES, t), d = null != b && null != b.author ? b.author.id : null, u = N && (d === j || c), h = {
+        } = l, c = A.A.can(x.xBc.MANAGE_MESSAGES, t), d = null != v && null != v.author ? v.author.id : null, u = I && (d === j || c), h = {
             content: a,
             components: void 0
         };
-        if (n.hasFlag(C.pr7.IS_COMPONENTS_V2)) {
+        if (n.hasFlag(x.pr7.IS_COMPONENTS_V2)) {
             let e = n.components[0]?.type === o.I5.MEDIA_GALLERY,
                 t = n.components.filter(e => e.type !== o.I5.TEXT_DISPLAY);
             t.splice(+!!e, 0, {
@@ -69,17 +69,17 @@ function I(e) {
                 id: "82744"
             }), h.content = "", h.components = t
         }
-        return u && null != b && (0, s.Lt)(b.flags, C.pr7.CROSSPOSTED) ? f.A.confirmEdit(e, i, h) : r.A.editMessage(e, i, h), Promise.resolve()
-    }, [b, N, j, t, n]), M = l.useCallback(e => (0, l.createElement)(T, {
+        return u && null != v && (0, s.Lt)(v.flags, x.pr7.CROSSPOSTED) ? f.A.confirmEdit(e, i, h) : r.A.editMessage(e, i, h), Promise.resolve()
+    }, [v, I, j, t, n]), M = l.useCallback(e => (0, l.createElement)(N, {
         ...e,
-        className: x.gM,
+        className: C.gM,
         key: d
     }), [d]);
-    return null != v && null != y ? (0, i.jsx)(E.A, {
+    return null != b && null != y ? (0, i.jsx)(E.A, {
         ref: void 0,
         channel: t,
         message: n,
-        textValue: v,
+        textValue: b,
         richValue: y,
         onCancel: r.A.endEditMessage,
         onChange: r.A.updateEditMessage,
@@ -90,7 +90,7 @@ function I(e) {
     }) : null
 }
 
-function T(e) {
+function N(e) {
     let {
         textValue: t,
         richValue: n,
@@ -101,10 +101,10 @@ function T(e) {
         onKeyDown: u,
         renderLeftAccessories: h
     } = e, [m, A] = l.useState(!0), p = l.useCallback(() => A(!0), []), f = l.useCallback(() => A(!1), []);
-    return l.useEffect(() => (g._.subscribe(C.jej.TEXTAREA_FOCUS, p), g._.subscribe(C.jej.TEXTAREA_BLUR, f), () => {
-        g._.unsubscribe(C.jej.TEXTAREA_FOCUS, p), g._.unsubscribe(C.jej.TEXTAREA_BLUR, f)
+    return l.useEffect(() => (g._.subscribe(x.jej.TEXTAREA_FOCUS, p), g._.subscribe(x.jej.TEXTAREA_BLUR, f), () => {
+        g._.unsubscribe(x.jej.TEXTAREA_FOCUS, p), g._.unsubscribe(x.jej.TEXTAREA_BLUR, f)
     }), [p, f]), (0, i.jsx)(d.Ay, {
-        className: x.gM,
+        className: C.gM,
         textValue: t,
         richValue: n,
         channel: a,
@@ -124,13 +124,13 @@ function T(e) {
     }, s.id)
 }
 
-function N(e, t, n) {
+function I(e, t, n) {
     let {
         message: l,
         channel: s,
         compact: a
     } = e;
-    return n ? (0, i.jsx)(I, {
+    return n ? (0, i.jsx)(T, {
         channel: s,
         message: l
     }) : (0, i.jsx)(_.Ay, {

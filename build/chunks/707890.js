@@ -59,10 +59,10 @@ function R(e) {
     return r || n || l
 }
 
-function y() {
+function m() {
     A.clear(), _.clear(), S = !1
 }
-class m extends n.Ay.Store {
+class y extends n.Ay.Store {
     static displayName = "SecureFramesVerifiedStore";
     initialize() {
         this.waitFor(i.default, a.A, c.A, d.A, E.A)
@@ -77,14 +77,14 @@ class m extends n.Ay.Store {
         return A.get(e)
     }
 }
-let N = new m(u.h, {
-    CONNECTION_OPEN: y,
+let N = new y(u.h, {
+    CONNECTION_OPEN: m,
     VOICE_CHANNEL_SELECT: function(e) {
         let {
             channelId: t
         } = e;
         if (t === g) return !1;
-        g = t, y()
+        g = t, m()
     },
     RTC_CONNECTION_STATE: function(e) {
         let {
@@ -98,7 +98,7 @@ let N = new m(u.h, {
                 if (null == t) return !1;
                 return _.delete(t), C();
             case l.x.DEFAULT:
-                y()
+                m()
         }
     },
     RTC_CONNECTION_ROSTER_MAP_UPDATE: function(e) {

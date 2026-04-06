@@ -1,6 +1,6 @@
 /** chunk id: 178442 params = (module,exports,require) **/
 n.d(t, {
-    A: () => C
+    A: () => x
 });
 var i = n(627968),
     l = n(64700),
@@ -47,39 +47,39 @@ function E(e) {
     })
 }
 
-function C(e) {
+function x(e) {
     let {
         quality: t,
         lastPing: n,
         state: s,
         className: _,
-        children: C,
-        channelId: x,
+        children: x,
+        channelId: C,
         childrenAsSubtitle: S,
-        connectionStatusTextVariant: I,
-        hasVideo: T
-    } = e, N = l.useRef(null), b = s === A.S7L.RTC_CONNECTED, v = l.useCallback(e => (0, i.jsx)(h.A, {
+        connectionStatusTextVariant: T,
+        hasVideo: N
+    } = e, I = l.useRef(null), v = s === A.S7L.RTC_CONNECTED, b = l.useCallback(e => (0, i.jsx)(h.A, {
         ...e,
-        channelId: x
-    }), [x]), {
+        channelId: C
+    }), [C]), {
         connectionStatus: y,
         connectionStatusText: j
-    } = u.A.getStatus(s, T);
+    } = u.A.getStatus(s, N);
     return (0, i.jsxs)("div", {
         className: g.pe,
         children: [(0, i.jsx)("div", {
             className: a()(g.yH, f[t], _),
-            ref: N,
+            ref: I,
             children: (0, i.jsx)(o.YNO, {
-                targetElementRef: N,
-                renderPopout: v,
+                targetElementRef: I,
+                renderPopout: b,
                 position: "top",
                 children: e => {
                     let {
                         onClick: l
                     } = e;
                     return (0, i.jsxs)(i.Fragment, {
-                        children: [b && (0, i.jsx)(r.m, {
+                        children: [v && (0, i.jsx)(r.m, {
                             text: t !== A.bFR.UNKNOWN && null != n ? `${n.toFixed(0)} ms` : null,
                             children: (0, i.jsx)(o.DUT, {
                                 className: g.xr,
@@ -99,16 +99,16 @@ function C(e) {
                                 },
                                 children: (0, i.jsx)(m.A, {
                                     text: j,
-                                    textVariant: I,
-                                    hasVideo: T,
+                                    textVariant: T,
+                                    hasVideo: N,
                                     className: p[y],
-                                    hasConnectedChannel: null != x
+                                    hasConnectedChannel: null != C
                                 })
-                            }), S ? C : null]
+                            }), S ? x : null]
                         })]
                     })
                 }
             })
-        }), S ? null : C]
+        }), S ? null : x]
     })
 }

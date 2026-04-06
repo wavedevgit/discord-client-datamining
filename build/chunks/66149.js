@@ -84,13 +84,13 @@ let E = l.memo(function(e) {
         canUncollapse: d = !0
     } = e, {
         hasJumpTarget: m = !1
-    } = t, [g, E] = l.useState(m && d), C = l.useCallback(() => {
+    } = t, [g, E] = l.useState(m && d), x = l.useCallback(() => {
         d && E(e => !e)
     }, [d]);
     l.useEffect(() => {
         m && d && E(!0)
     }, [m, d]);
-    let x = t.hasUnread ? t.content.length - 1 : t.content.length;
+    let C = t.hasUnread ? t.content.length - 1 : t.content.length;
     return (0, i.jsxs)("div", {
         className: a()({
             [f._A]: !0,
@@ -100,10 +100,10 @@ let E = l.memo(function(e) {
             isUnread: !0,
             id: r
         }, "divider") : null, (0, i.jsx)(_, {
-            count: x,
+            count: C,
             compact: s,
             expanded: g,
-            onClick: C,
+            onClick: x,
             collapsedReason: o,
             canUncollapse: d
         }, "collapsed-message-item"), g ? t.content.map((e, l) => {

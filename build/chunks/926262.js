@@ -23,7 +23,7 @@ function g(e) {
         channel: f,
         analyticsType: _,
         popoutText: E,
-        animation: C
+        animation: x
     } = e;
     l.useEffect(() => {
         d.default.track(u.HAw.OPEN_POPOUT, {
@@ -31,22 +31,22 @@ function g(e) {
             ...(0, o.dI)(f)
         })
     }, [_, f]);
-    let x = l.useCallback(() => {
+    let C = l.useCallback(() => {
             g?.(), t()
         }, [g, t]),
         S = l.useCallback(() => {
             p?.(), t()
         }, [p, t]),
-        I = l.useRef(null);
+        T = l.useRef(null);
     return l.useEffect(() => {
         let e, t = c.A.theme,
             i = !1;
-        return null != C && (async () => {
+        return null != x && (async () => {
             let [{
                 default: l
-            }, s] = await Promise.all([Promise.resolve().then(n.t.bind(n, 883885, 23)), (0, a.Mw)(t) ? C.dark() : C.light()]);
-            i || null == I.current || (e = l.loadAnimation({
-                container: I.current,
+            }, s] = await Promise.all([Promise.resolve().then(n.t.bind(n, 883885, 23)), (0, a.Mw)(t) ? x.dark() : x.light()]);
+            i || null == T.current || (e = l.loadAnimation({
+                container: T.current,
                 renderer: "svg",
                 loop: !0,
                 autoplay: !0,
@@ -55,16 +55,16 @@ function g(e) {
         })(), () => {
             i = !0, null != e && (e.destroy(), e = void 0)
         }
-    }, [C]), (0, i.jsx)(r.lGe, {
+    }, [x]), (0, i.jsx)(r.lGe, {
         "aria-labelledby": "content-warning-popout-label",
         children: (0, i.jsxs)("form", {
             className: m.$,
-            onSubmit: x,
+            onSubmit: C,
             children: [(0, i.jsxs)("div", {
                 className: m.rf,
-                children: [null != C && (0, i.jsx)("div", {
+                children: [null != x && (0, i.jsx)("div", {
                     className: m.lY,
-                    ref: I
+                    ref: T
                 }), (0, i.jsxs)("div", {
                     className: m.Qs,
                     children: [(0, i.jsx)("div", {
@@ -97,7 +97,7 @@ function g(e) {
                                 className: m.x6,
                                 children: (0, i.jsx)(r.Button, {
                                     variant: "primary",
-                                    onClick: x,
+                                    onClick: C,
                                     text: h.intl.string(h.t.KJnHq3),
                                     autoFocus: !0
                                 })

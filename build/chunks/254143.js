@@ -21,14 +21,14 @@ function p(e) {
         channel: t,
         user: p,
         guild: f
-    } = e, _ = (0, s.bG)([h.A], () => null != p && h.A.isUserBanned(p.id)), E = null != p && null == _, [C, x] = l.useState(E), S = (0, s.bG)([u.A], () => null != p && null != f && (0, d.fJ)(p, f, [u.A]));
+    } = e, _ = (0, s.bG)([h.A], () => null != p && h.A.isUserBanned(p.id)), E = null != p && null == _, [x, C] = l.useState(E), S = (0, s.bG)([u.A], () => null != p && null != f && (0, d.fJ)(p, f, [u.A]));
     if ((0, c.Ay)(() => {
-            E && o.A.searchGuildBans(t.guild_id, void 0, [p?.id]).finally(() => x(!1))
+            E && o.A.searchGuildBans(t.guild_id, void 0, [p?.id]).finally(() => C(!1))
         }), !S) return null;
-    let I = !0 === _ ? g.intl.string(A.default.dpfwQ1) : g.intl.string(A.default.ASv23S),
-        T = `ban-user-${p?.id}`;
+    let T = !0 === _ ? g.intl.string(A.default.dpfwQ1) : g.intl.string(A.default.ASv23S),
+        N = `ban-user-${p?.id}`;
     return (0, i.jsx)(m.A, {
-        text: I,
+        text: T,
         icon: r.wI0,
         onClick: () => {
             null != p && (0, r.mMO)(async () => {
@@ -43,8 +43,8 @@ function p(e) {
                 })
             })
         },
-        disabled: !0 === _ || C,
-        submitting: C,
+        disabled: !0 === _ || x,
+        submitting: x,
         color: a.$n.Colors.RED
-    }, T)
+    }, N)
 }

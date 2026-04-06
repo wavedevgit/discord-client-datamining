@@ -19,14 +19,14 @@ var i = n(627968),
     f = n(17447),
     _ = n(736339),
     E = n(354328),
-    C = n(559149),
-    x = n(164956),
+    x = n(559149),
+    C = n(164956),
     S = n(302031),
-    I = n(513272),
-    T = n(253932),
-    N = n(617617),
-    b = n(961350),
-    v = n(72314),
+    T = n(513272),
+    N = n(253932),
+    I = n(617617),
+    v = n(961350),
+    b = n(72314),
     y = n(580745),
     j = n(834942),
     R = n(320501),
@@ -35,13 +35,13 @@ var i = n(627968),
     O = n(399263),
     L = n(287809),
     P = n(234320),
-    w = n(863439),
-    k = n(504136),
+    k = n(863439),
+    w = n(504136),
     U = n(326337),
     G = n(540385),
     F = n(830178),
-    H = n(722432),
-    B = n(258024),
+    B = n(722432),
+    H = n(258024),
     V = n(672341),
     K = n(652215),
     W = n(985018),
@@ -56,21 +56,21 @@ let q = (0, r.animated)(d.fKU),
                 channel: f,
                 messages: _,
                 unreadCount: E,
-                showNewMessagesBar: C,
+                showNewMessagesBar: x,
                 messageDisplayCompact: S,
-                channelStream: I,
-                uploads: T,
-                hasUnreads: b,
+                channelStream: T,
+                uploads: N,
+                hasUnreads: v,
                 editingMessageId: y,
                 fontSize: j,
                 keyboardModeEnabled: R,
                 filterAfterTimestamp: D,
                 showingQuarantineBanner: O,
                 hideSummaries: L = !1,
-                jumpBarClassName: w,
-                typingGradient: k
+                jumpBarClassName: k,
+                typingGradient: w
             } = e,
-            [F, Y] = l.useState(v.A.isAtBottom(f.id) ?? !1),
+            [F, Y] = l.useState(b.A.isAtBottom(f.id) ?? !1),
             J = (0, U.I)(S, j),
             $ = S ? J : Math.round(.87 * J),
             Z = Math.max(1, Math.round($ / 30 * 8)),
@@ -82,11 +82,11 @@ let q = (0, r.animated)(d.fKU),
                 fontSize: j,
                 groupSpacing: g
             }), [S, $, Z, j, g]),
-            Q = (0, B.Ay)({
+            Q = (0, H.Ay)({
                 messages: _,
                 channel: f,
                 compact: S,
-                hasUnreads: b,
+                hasUnreads: v,
                 focusId: y,
                 placeholderHeight: X.totalHeight,
                 canLoadMore: null == D,
@@ -94,13 +94,13 @@ let q = (0, r.animated)(d.fKU),
                 handleScrollFromBottom: l.useCallback(() => Y(!1), [Y]),
                 additionalMessagePadding: 48
             }),
-            ee = (0, H.A)({
+            ee = (0, B.A)({
                 scrollerRef: Q.ref,
                 isEditing: null != y,
                 keyboardModeEnabled: R,
                 hasMoreAfter: _.hasMoreAfter
             }),
-            et = (0, c.bG)([x.A], () => M.A.can(K.xBc.READ_MESSAGE_HISTORY, f) ? null : x.A.getViewingRolesTimestamp(f.getGuildId())),
+            et = (0, c.bG)([C.A], () => M.A.can(K.xBc.READ_MESSAGE_HISTORY, f) ? null : C.A.getViewingRolesTimestamp(f.getGuildId())),
             {
                 channelStreamMarkup: en,
                 newMessagesBar: ei,
@@ -111,10 +111,10 @@ let q = (0, r.animated)(d.fKU),
                 channel: f,
                 messages: _,
                 unreadCount: E,
-                showNewMessagesBar: C,
+                showNewMessagesBar: x,
                 messageDisplayCompact: S,
-                channelStream: I,
-                uploads: T,
+                channelStream: T,
+                uploads: N,
                 loadMore: Q.loadMore,
                 scrollManager: Q,
                 specs: X,
@@ -126,7 +126,7 @@ let q = (0, r.animated)(d.fKU),
                         animate: !A.A.useReducedMotion
                     }) : u.A.jumpToPresent(f.id, J)
                 },
-                jumpBarClassName: w
+                jumpBarClassName: k
             });
         t = Q.ref, n = l.useCallback(() => t.current?.scrollToBottom(), [t]), s = l.useCallback(() => t.current?.scrollPageUp({
             animate: !A.A.useReducedMotion
@@ -150,12 +150,12 @@ let q = (0, r.animated)(d.fKU),
             ed = (0, m.A)(e => {
                 Q.ref.current = e, eo.current = e?.getScrollerNode() ?? null
             }),
-            eu = (0, c.bG)([N.A], () => {
-                let e = N.A.settings.appearance?.clientThemeSettings;
+            eu = (0, c.bG)([I.A], () => {
+                let e = I.A.settings.appearance?.clientThemeSettings;
                 return e?.backgroundGradientPresetId != null || e?.customUserThemeSettings != null
             }),
-            eh = l.useMemo(() => k ? F ? z.gA : z.ru : z.Zd, [k, F]),
-            em = l.useMemo(() => k ? F ? z.cz : z.XF : z.U6, [k, F]);
+            eh = l.useMemo(() => w ? F ? z.gA : z.ru : z.Zd, [w, F]),
+            em = l.useMemo(() => w ? F ? z.cz : z.XF : z.U6, [w, F]);
         return (0, i.jsxs)(o.hD, {
             navigator: ee,
             children: [null != ea && ea, (0, i.jsxs)("div", {
@@ -211,7 +211,7 @@ let q = (0, r.animated)(d.fKU),
         } = e, {
             canManageMessages: u,
             permissionVersion: m,
-            canChat: x
+            canChat: C
         } = function(e) {
             let t = e.getGuildId(),
                 n = (0, c.bG)([j.A], () => null == t || j.A.canChatInGuild(t), [t]),
@@ -228,14 +228,14 @@ let q = (0, r.animated)(d.fKU),
                 canManageMessages: i
             }
         }(t), {
-            messageGroupSpacing: N,
-            fontSize: v,
+            messageGroupSpacing: I,
+            fontSize: b,
             messageDisplayCompact: P,
             renderSpoilers: U,
             keyboardModeEnabled: G
         } = function() {
-            let e = T.hH.useSetting(),
-                t = T.gs.useSetting(),
+            let e = N.hH.useSetting(),
+                t = N.gs.useSetting(),
                 {
                     messageGroupSpacing: n,
                     fontSize: i,
@@ -260,8 +260,8 @@ let q = (0, r.animated)(d.fKU),
                 keyboardModeEnabled: l
             }
         }(), {
-            messages: H,
-            channelStream: B,
+            messages: B,
+            channelStream: H,
             oldestUnreadMessageId: V,
             editingMessageId: W
         } = function(e) {
@@ -270,18 +270,18 @@ let q = (0, r.animated)(d.fKU),
                 s = (0, c.bG)([D.Ay], () => D.Ay.getOldestUnreadMessageId(e.id) ?? null, [e.id]),
                 {
                     enabled: a
-                } = C.A.useExperiment({
+                } = x.A.useExperiment({
                     location: "41de6d_1"
                 }, {
                     autoTrackExposure: !1
                 }),
-                r = L.default.getUser(b.default.getId())?.hasFlag(K.nhx.SPAMMER) ?? !1,
+                r = L.default.getUser(v.default.getId())?.hasFlag(K.nhx.SPAMMER) ?? !1,
                 o = (0, h.cI)(e),
                 d = (0, E.A)("use_topic_dividers_in_chat"),
-                u = (0, c.yK)([I.A], () => o && d ? I.A.summaries(e.id) ?? [] : [], [o, e.id, d]),
-                m = (0, c.bG)([I.A], () => o ? I.A.selectedSummary(e.id) : null, [o, e.id]),
+                u = (0, c.yK)([T.A], () => o && d ? T.A.summaries(e.id) ?? [] : [], [o, e.id, d]),
+                m = (0, c.bG)([T.A], () => o ? T.A.selectedSummary(e.id) : null, [o, e.id]),
                 A = (0, f.f)("message_stream"),
-                x = (0, c.bG)([_.A], () => A ? _.A.getSelectedConversation(e.id) : null, [A, e.id]),
+                C = (0, c.bG)([_.A], () => A ? _.A.getSelectedConversation(e.id) : null, [A, e.id]),
                 S = (t = i, n = l.useMemo(() => {
                     let e = new Set;
                     return t.forEach(t => {
@@ -289,40 +289,40 @@ let q = (0, r.animated)(d.fKU),
                     }), Array.from(e)
                 }, [t]), (0, p.A)(n));
             (0, g.A)(i, e);
-            let T = l.useMemo(() => (0, k.A)({
+            let N = l.useMemo(() => (0, w.A)({
                 channel: e,
                 messages: i,
                 oldestUnreadMessageId: s,
                 treatSpam: a && !r,
                 summaries: u,
                 selectedSummary: m,
-                selectedConversation: x
-            }), [i, e, s, a, u, m, x, S, r]);
+                selectedConversation: C
+            }), [i, e, s, a, u, m, C, S, r]);
             return {
                 messages: i,
-                channelStream: T,
+                channelStream: N,
                 oldestUnreadMessageId: s,
                 editingMessageId: (0, c.bG)([y.A], () => y.A.getEditingMessage(e.id)?.id)
             }
         }(t);
         return (0, i.jsx)(S.Bs.Provider, {
-            value: (0, w.A)(U, u),
+            value: (0, k.A)(U, u),
             children: (0, i.jsx)(F.t, {
                 children: (0, i.jsx)(Y, {
                     ...d,
-                    messageGroupSpacing: N,
+                    messageGroupSpacing: I,
                     showNewMessagesBar: !0,
                     channel: t,
                     messageDisplayCompact: !r && (a || P),
-                    messages: H,
-                    channelStream: B,
+                    messages: B,
+                    channelStream: H,
                     permissionVersion: m,
                     uploads: (0, c.bG)([O.A], () => O.A.getFiles(t.id), [t]),
                     unreadCount: (0, c.bG)([D.Ay], () => D.Ay.getUnreadCount(t.id), [t]),
                     hasUnreads: null != V,
-                    canChat: x,
+                    canChat: C,
                     editingMessageId: W,
-                    fontSize: v,
+                    fontSize: b,
                     keyboardModeEnabled: G,
                     showingQuarantineBanner: n,
                     hideSummaries: s,

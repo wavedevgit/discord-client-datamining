@@ -1,6 +1,6 @@
 /** chunk id: 162792 params = (module,exports,require) **/
 n.d(t, {
-    A: () => I
+    A: () => T
 });
 var i = n(627968),
     l = n(64700),
@@ -19,40 +19,40 @@ var i = n(627968),
     f = n(448368),
     _ = n(535421),
     E = n(112758),
-    C = n(652215),
-    x = n(985018);
+    x = n(652215),
+    C = n(985018);
 let S = l.memo(function(e) {
     let {
         baseMessage: t,
         referencedMessage: n,
         channel: S,
-        compact: I = !1,
-        referencedUsernameProfile: T,
-        referencedAvatarProfile: N,
-        setPopout: b,
-        isReplySpineClickable: v,
+        compact: T = !1,
+        referencedUsernameProfile: N,
+        referencedAvatarProfile: I,
+        setPopout: v,
+        isReplySpineClickable: b,
         showReplySpine: y
     } = e, j = n.state === h.a.LOADED ? n.message : void 0, R = (0, p.X4)(j), M = (0, c.S)((t.editedTimestamp ?? t.timestamp).valueOf()), D = l.useMemo(() => {
         if (null == j) return null;
         let e = (0, r.A)(j);
-        if (e.type === C.lAJ.USER_JOIN) return (0, a.$)(x.intl.formatToParts(A.A.getSystemMessageUserJoin(e.id), {
+        if (e.type === x.lAJ.USER_JOIN) return (0, a.$)(C.intl.formatToParts(A.A.getSystemMessageUserJoin(e.id), {
             username: null != R ? R.nick : e.author.username,
             usernameHook: e => e
         }));
-        if (e.type === C.lAJ.ROLE_SUBSCRIPTION_PURCHASE) return (0, a.$)((0, o.WC)({
+        if (e.type === x.lAJ.ROLE_SUBSCRIPTION_PURCHASE) return (0, a.$)((0, o.WC)({
             username: null != R ? R.nick : e.author.username,
             guildId: S?.guild_id,
             roleSubscriptionData: e.roleSubscriptionData
         }));
-        if (e.type === C.lAJ.GUILD_APPLICATION_PREMIUM_SUBSCRIPTION) return (0, a.$)((0, d.P)({
+        if (e.type === x.lAJ.GUILD_APPLICATION_PREMIUM_SUBSCRIPTION) return (0, a.$)((0, d.P)({
             application: e?.application,
             username: R?.nick
         }));
-        if (e.type === C.lAJ.PRIVATE_CHANNEL_INTEGRATION_ADDED) return (0, a.$)((0, u.g6)({
+        if (e.type === x.lAJ.PRIVATE_CHANNEL_INTEGRATION_ADDED) return (0, a.$)((0, u.g6)({
             application: e?.application,
             username: R?.nick
         }));
-        if (e.type === C.lAJ.PRIVATE_CHANNEL_INTEGRATION_REMOVED) return (0, a.$)((0, u.uk)({
+        if (e.type === x.lAJ.PRIVATE_CHANNEL_INTEGRATION_REMOVED) return (0, a.$)((0, u.uk)({
             application: e?.application,
             username: R?.nick
         }));
@@ -81,12 +81,12 @@ let S = l.memo(function(e) {
     } = (0, s.cf)([m.A], () => ({
         isReplyAuthorBlocked: null != j && m.A.isBlockedForMessage(j),
         isReplyAuthorIgnored: null != j && m.A.isIgnoredForMessage(j)
-    }), [j]), P = (0, E.r4)(j?.author.id, S.id), w = (0, E.Ck)(t, j), k = (0, E.H9)(j, S, T, b), U = (0, E.Ge)(N, b), G = l.useCallback(() => {
-        b({
+    }), [j]), P = (0, E.r4)(j?.author.id, S.id), k = (0, E.Ck)(t, j), w = (0, E.H9)(j, S, N, v), U = (0, E.Ge)(I, v), G = l.useCallback(() => {
+        v({
             referencedUsernameProfile: !1,
             referencedAvatarProfile: !1
         })
-    }, [b]), F = (0, p.X4)(t);
+    }, [v]), F = (0, p.X4)(t);
     return (0, i.jsx)(f.A, {
         repliedAuthor: R,
         baseMessage: t,
@@ -94,23 +94,23 @@ let S = l.memo(function(e) {
         baseAuthor: F,
         referencedMessage: n,
         content: D,
-        compact: I,
+        compact: T,
         isReplyAuthorBlocked: O,
         isReplyAuthorIgnored: L,
-        showAvatarPopout: N,
-        showUsernamePopout: T,
+        showAvatarPopout: I,
+        showUsernamePopout: N,
         renderPopout: _.A,
         onClickAvatar: U,
-        onClickUsername: k,
-        onClickReply: w,
+        onClickUsername: w,
+        onClickReply: k,
         onContextMenu: P,
         onPopoutRequestClose: G,
-        isReplySpineClickable: v,
+        isReplySpineClickable: b,
         showReplySpine: y
     })
 });
 
-function I(e) {
+function T(e) {
     let {
         message: t,
         channel: n,

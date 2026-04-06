@@ -19,14 +19,14 @@ var i = n(627968),
     f = n(608299),
     _ = n(147192),
     E = n(820284),
-    C = n(955572),
-    x = n(775602),
+    x = n(955572),
+    C = n(775602),
     S = n(58149),
-    I = n(211401),
-    T = n(989837),
-    N = n(500049),
-    b = n(721768),
-    v = n(258363),
+    T = n(211401),
+    N = n(989837),
+    I = n(500049),
+    v = n(721768),
+    b = n(258363),
     y = n(842209),
     j = n(861382),
     R = n(392054),
@@ -35,13 +35,13 @@ var i = n(627968),
     O = n(972995),
     L = n(355622),
     P = n(408018),
-    w = n(223938),
-    k = n(811501),
+    k = n(223938),
+    w = n(811501),
     U = n(20737),
     G = n(133343),
     F = n(35277),
-    H = n(595914),
-    B = n(151271),
+    B = n(595914),
+    H = n(151271),
     V = n(81400),
     K = n(870006),
     W = n(837024),
@@ -73,14 +73,14 @@ var i = n(627968),
     ef = n(252263),
     e_ = n(67259),
     eE = n(351488),
-    eC = n(728321),
-    ex = n(961350),
+    ex = n(728321),
+    eC = n(961350),
     eS = n(761640),
-    eI = n(31717),
-    eT = n(580745),
-    eN = n(696451),
-    eb = n(320501),
-    ev = n(576705),
+    eT = n(31717),
+    eN = n(580745),
+    eI = n(696451),
+    ev = n(320501),
+    eb = n(576705),
     ey = n(309010),
     ej = n(522602),
     eR = n(287809),
@@ -89,13 +89,13 @@ var i = n(627968),
     eO = n(234320),
     eL = n(203982),
     eP = n(661191),
-    ew = n(460350),
-    ek = n(518960),
+    ek = n(460350),
+    ew = n(518960),
     eU = n(382287),
     eG = n(137577),
     eF = n(480870),
-    eH = n(390756),
-    eB = n(387462),
+    eB = n(390756),
+    eH = n(387462),
     eV = n(582968),
     eK = n(667285),
     eW = n(920437),
@@ -133,14 +133,14 @@ class e0 extends l.PureComponent {
     isFirstChange = !0;
     editorRef = null;
     state = {
-        ...(0, P.ur)(eI.A.getDraft(this.props.channel.id, eI.C.ChannelMessage)),
+        ...(0, P.ur)(eT.A.getDraft(this.props.channel.id, eT.C.ChannelMessage)),
         contentWarningProps: null
     };
     componentDidMount() {
-        eI.A.addChangeListener(this.draftDidChange)
+        eT.A.addChangeListener(this.draftDidChange)
     }
     componentWillUnmount() {
-        eI.A.removeChangeListener(this.draftDidChange)
+        eT.A.removeChangeListener(this.draftDidChange)
     }
     componentDidUpdate(e, t) {
         let {
@@ -150,7 +150,7 @@ class e0 extends l.PureComponent {
         } = this.state;
         if (e.channel.id !== n.id) return void this.draftDidChange(this.props);
         if (e.hasModalOpen && !this.props.hasModalOpen) {
-            let e = eI.A.getDraft(n.id, eI.C.ChannelMessage);
+            let e = eT.A.getDraft(n.id, eT.C.ChannelMessage);
             e !== i && this.setState((0, P.ur)(e))
         }
         t.textValue.length < ez.uvi && i.length >= ez.uvi && eM.default.track(ez.HAw.MESSAGE_LENGTH_LIMIT_REACHED, {})
@@ -162,7 +162,7 @@ class e0 extends l.PureComponent {
                 {
                     textValue: n
                 } = e.state,
-                i = eI.A.getDraft(t.channel.id, eI.C.ChannelMessage);
+                i = eT.A.getDraft(t.channel.id, eT.C.ChannelMessage);
             n !== i && ("" === i || "" === n) && e.setState((0, P.ur)(i), () => {
                 if (n !== i) {
                     let {
@@ -185,20 +185,20 @@ class e0 extends l.PureComponent {
                 return void this.handleIncrementCombo("", 1);
             case ez.Ks6.ARROW_UP:
                 if (l || s) return;
-                if (e.preventDefault(), t) ej.A.getUploadCount(i.id, eI.C.ChannelMessage) > 0 ? eL._.dispatchToLastSubscribed(ez.jej.FOCUS_ATTACHMENT_AREA) : eL._.dispatchToLastSubscribed(ez.jej.FOCUS_MESSAGES, {
+                if (e.preventDefault(), t) ej.A.getUploadCount(i.id, eT.C.ChannelMessage) > 0 ? eL._.dispatchToLastSubscribed(ez.jej.FOCUS_ATTACHMENT_AREA) : eL._.dispatchToLastSubscribed(ez.jej.FOCUS_MESSAGES, {
                     atEnd: !0
                 });
                 else {
                     let {
                         channel: e
-                    } = this.props, t = eb.A.getLastChatCommandMessage(e.id), n = eb.A.getLastEditableMessage(e.id);
+                    } = this.props, t = ev.A.getLastChatCommandMessage(e.id), n = ev.A.getLastEditableMessage(e.id);
                     null != t && null != n ? eP.default.compare(n.id, t.id) > 0 ? this.handleEditLastMessage(n) : this.handleRecallLastCommand(t) : null != t ? this.handleRecallLastCommand(t) : null != n && this.handleEditLastMessage(n)
                 }
                 return;
             case ez.Ks6.ESCAPE:
                 if (l || e.target !== e.currentTarget) return;
-                if (e.preventDefault(), t) return void(0, C.Bm)();
-                if (ej.A.getUploadCount(i.id, eI.C.ChannelMessage) > 0) return void f.A.clearAll(i.id, eI.C.ChannelMessage)
+                if (e.preventDefault(), t) return void(0, x.Bm)();
+                if (ej.A.getUploadCount(i.id, eT.C.ChannelMessage) > 0) return void f.A.clearAll(i.id, eT.C.ChannelMessage)
         }
         n?.(e, s)
     };
@@ -230,12 +230,12 @@ class e0 extends l.PureComponent {
                 name: s?.bot?.username ?? s.name,
                 application: s
             } : null;
-            b.Gf({
+            v.Gf({
                 channelId: t.id,
                 command: l,
                 section: e,
                 location: R.Oh.RECALL,
-                initialValues: (0, v.getInitialValuesFromInteractionOptions)(l, i ?? []),
+                initialValues: (0, b.getInitialValuesFromInteractionOptions)(l, i ?? []),
                 commandOrigin: R.iw.CHAT
             })
         }
@@ -243,7 +243,7 @@ class e0 extends l.PureComponent {
     handleIncrementCombo = (e, t) => {
         if (!this.props.poggermodeEnabled) return;
         let n = this.props.channel.id,
-            i = ex.default.getId(),
+            i = eC.default.getId(),
             l = ea.Ay.getUserCombo(i, n),
             s = (l?.value ?? 0) + 1;
         (0, el.oG)({
@@ -260,10 +260,10 @@ class e0 extends l.PureComponent {
                 id: l
             }
         } = this.props;
-        A.A.changeDraft(l, t, eI.C.ChannelMessage);
+        A.A.changeDraft(l, t, eT.C.ChannelMessage);
         let s = "" !== t && n !== this.state.richValue,
             a = s && !eZ.test(t) && !t.startsWith("/") && (!this.isFirstChange || t !== this.state.textValue);
-        this.isFirstChange = !1, a && this.state.textValue.length < t.length && this.handleIncrementCombo(), a ? p.A.startTyping(l) : "" === t && p.A.stopTyping(l), s && i && (0, C.Bm)(), this.setState({
+        this.isFirstChange = !1, a && this.state.textValue.length < t.length && this.handleIncrementCombo(), a ? p.A.startTyping(l) : "" === t && p.A.stopTyping(l), s && i && (0, x.Bm)(), this.setState({
             textValue: t,
             richValue: n
         })
@@ -316,7 +316,7 @@ class e0 extends l.PureComponent {
                 let {
                     location: t,
                     sectionName: n
-                } = (0, eH.bV)(l) ?? {}, i = e === R.iw.APPLICATION_LAUNCHER ? T.A.lastShownEntrypoint() : N.s4.TEXT, {
+                } = (0, eB.bV)(l) ?? {}, i = e === R.iw.APPLICATION_LAUNCHER ? N.A.lastShownEntrypoint() : I.s4.TEXT, {
                     isAuthorized: s
                 } = await (0, O.q)({
                     applicationId: l.applicationId,
@@ -332,7 +332,7 @@ class e0 extends l.PureComponent {
                     shouldClear: !1,
                     shouldRefocus: !0
                 });
-                (0, eH.My)(l)
+                (0, eB.My)(l)
             }
             let n = await (0, D.A)({
                 command: l,
@@ -348,7 +348,7 @@ class e0 extends l.PureComponent {
             });
             null != n && (t = null != n.content && "" !== n.content ? n.content : t, E = !0 === n.tts)
         }
-        return (0, ew.i)({
+        return (0, ek.i)({
             openWarningPopout: e => this.setState({
                 contentWarningProps: e
             }),
@@ -360,10 +360,10 @@ class e0 extends l.PureComponent {
         }).then(async e => {
             let {
                 valid: s,
-                failureReason: C
+                failureReason: x
             } = e;
             if (!s)
-                if (C === ez.X8x.SLOWMODE_COOLDOWN) return eL._.dispatch(ez.jej.SHAKE_APP, {
+                if (x === ez.X8x.SLOWMODE_COOLDOWN) return eL._.dispatch(ez.jej.SHAKE_APP, {
                     duration: 200,
                     intensity: 2
                 }), eL._.dispatch(ez.jej.EMPHASIZE_SLOWMODE_COOLDOWN), {
@@ -374,14 +374,14 @@ class e0 extends l.PureComponent {
                     shouldClear: !1,
                     shouldRefocus: !1
                 };
-            let x = (0, Q.S)(t, {
+            let C = (0, Q.S)(t, {
                 channel: h,
                 isEdit: !1
             });
-            null != x && (null != x.content && (t = x.content), null != x.tts && (E = x.tts));
+            null != C && (null != C.content && (t = C.content), null != C.tts && (E = C.tts));
             let S = ee.Ay.parse(h, t);
             S.tts = S.tts || E, null != o && (S.content = "", S.components = o);
-            let I = {
+            let T = {
                 ...g.A.getSendMessageOptions({
                     content: t,
                     channelId: h.id,
@@ -395,7 +395,7 @@ class e0 extends l.PureComponent {
                 }),
                 location: eq.Hx.CHAT_INPUT
             };
-            if (null != c && (I.announcementSendOptions = c), null != r && (I.gifMetadata = r), null != o && (I.flags = (0, u.UI)(I.flags ?? 0, ez.pr7.IS_COMPONENTS_V2)), a) return g.A.sendMessage(h.id, S, void 0, I).then(() => {
+            if (null != c && (T.announcementSendOptions = c), null != r && (T.gifMetadata = r), null != o && (T.flags = (0, u.UI)(T.flags ?? 0, ez.pr7.IS_COMPONENTS_V2)), a) return g.A.sendMessage(h.id, S, void 0, T).then(() => {
                 _ && eE._(h.parent_id ?? void 0)
             }), (0, ed.Jx)(h.id), ef.B({
                 channelId: h.id,
@@ -406,45 +406,45 @@ class e0 extends l.PureComponent {
             };
             if (null != n && n.length > 0) {
                 let e = (0, eU.LJ)(n);
-                if ((0, eU.fJ)(e, d?.id)) return (0, ek.V)(h, e), {
+                if ((0, eU.fJ)(e, d?.id)) return (0, ew.V)(h, e), {
                     shouldClear: !1,
                     shouldRefocus: !1
                 };
-                I.eagerDispatch = !1, I.attachmentsToUpload = n, I.onAttachmentUploadError = (e, i, l) => {
+                T.eagerDispatch = !1, T.attachmentsToUpload = n, T.onAttachmentUploadError = (e, i, l) => {
                     (0, X.k)({
                         file: e,
                         guildId: h.getGuildId(),
                         analyticsLocations: [],
                         code: i,
                         reason: l
-                    }) && ("" !== t && "" === eI.A.getDraft(h.id, eI.C.ChannelMessage) && A.A.saveDraft(h.id, t, eI.C.ChannelMessage), 0 === ej.A.getUploadCount(h.id, eI.C.ChannelMessage) && f.A.setUploads({
+                    }) && ("" !== t && "" === eT.A.getDraft(h.id, eT.C.ChannelMessage) && A.A.saveDraft(h.id, t, eT.C.ChannelMessage), 0 === ej.A.getUploadCount(h.id, eT.C.ChannelMessage) && f.A.setUploads({
                         channelId: h.id,
                         uploads: n,
-                        draftType: eI.C.ChannelMessage
+                        draftType: eT.C.ChannelMessage
                     }))
-                }, f.A.clearAll(h.id, eI.C.ChannelMessage)
+                }, f.A.clearAll(h.id, eT.C.ChannelMessage)
             }
-            if (null != I.scheduledTimestamp) try {
+            if (null != T.scheduledTimestamp) try {
                 await (0, em.pr)({
                     channelId: h.id,
-                    scheduledTimestamp: I.scheduledTimestamp,
+                    scheduledTimestamp: T.scheduledTimestamp,
                     messageSendData: {
                         channelId: h.id,
                         content: t,
                         nonce: (0, et.m)(),
                         tts: E,
-                        message_reference: I.messageReference,
-                        allowed_mentions: I.allowedMentions,
-                        flags: I.flags
+                        message_reference: T.messageReference,
+                        allowed_mentions: T.allowedMentions,
+                        flags: T.flags
                     },
                     attachmentsToUpload: n
-                }), (0, eg.c_)(I.scheduledTimestamp)
+                }), (0, eg.c_)(T.scheduledTimestamp)
             } catch (e) {
                 return (0, eg.kM)(e.message), {
                     shouldClear: !1,
                     shouldRefocus: !1
                 }
-            } else g.A.sendMessage(h.id, S, void 0, I).then(() => {
+            } else g.A.sendMessage(h.id, S, void 0, T).then(() => {
                 _ && eE._(h.parent_id ?? void 0)
             });
             return this.setState((0, P.N3)()), (0, ed.Jx)(h.id), (0, ep.x5)(h.id, p.drafts.type), ef.B({
@@ -463,12 +463,12 @@ class e0 extends l.PureComponent {
     renderAttachButton = (e, t) => (0, i.jsx)(U.A, {
         className: t,
         channel: this.props.channel,
-        draftType: eI.C.ChannelMessage,
+        draftType: eT.C.ChannelMessage,
         editorTextContent: this.state.textValue,
         setValue: this.handleSetValue,
         canOnlyUseTextCommands: e
     });
-    renderApplicationCommandIcon = (e, t, n) => (0, i.jsx)(k.A, {
+    renderApplicationCommandIcon = (e, t, n) => (0, i.jsx)(w.A, {
         className: n,
         command: e,
         section: t,
@@ -492,7 +492,7 @@ class e0 extends l.PureComponent {
             announcementComposerEnabled: p
         } = this.props, {
             contentWarningProps: f
-        } = this.state, _ = e.type === ez.rbe.GUILD_ANNOUNCEMENT && p ? (0, i.jsx)(w.A, {
+        } = this.state, _ = e.type === ez.rbe.GUILD_ANNOUNCEMENT && p ? (0, i.jsx)(k.A, {
             ref: this.props.refInstance,
             textValue: this.state.textValue,
             richValue: this.state.richValue,
@@ -511,7 +511,7 @@ class e0 extends l.PureComponent {
             onKeyDown: this.handleKeyDown,
             renderAttachButton: this.renderAttachButton,
             renderApplicationCommandIcon: this.renderApplicationCommandIcon,
-            promptToUpload: ek.R,
+            promptToUpload: ew.R,
             highlighted: a,
             setEditorRef: e => this.editorRef = e
         }) : (0, i.jsx)(G.Ay, {
@@ -533,7 +533,7 @@ class e0 extends l.PureComponent {
             onKeyDown: this.handleKeyDown,
             renderAttachButton: this.renderAttachButton,
             renderApplicationCommandIcon: this.renderApplicationCommandIcon,
-            promptToUpload: ek.R,
+            promptToUpload: ew.R,
             highlighted: a,
             setEditorRef: e => this.editorRef = e,
             pendingScheduledMessage: g
@@ -573,7 +573,7 @@ class e1 extends l.PureComponent {
             currentChannelId: i
         } = t;
         return n.id !== i ? {
-            textAreaFocused: null != n && !c.Fr && ev.A.can(ez.xBc.SEND_MESSAGES, n),
+            textAreaFocused: null != n && !c.Fr && eb.A.can(ez.xBc.SEND_MESSAGES, n),
             currentChannelId: n.id
         } : null
     }
@@ -644,13 +644,13 @@ class e1 extends l.PureComponent {
         let {
             activeView: t
         } = e;
-        (0, B.bf)(t, this.props.chatInputType, this.props.channel.id)
+        (0, H.bf)(t, this.props.chatInputType, this.props.channel.id)
     };
     handleOpenAppLauncher = e => {
         let {
             applicationId: t
         } = e;
-        return I.R(N.s4.TEXT, this.props.chatInputType, {
+        return T.R(I.s4.TEXT, this.props.chatInputType, {
             applicationId: t
         }, this.props.channel.id)
     };
@@ -667,7 +667,7 @@ class e1 extends l.PureComponent {
         } = e;
         return t.type === ez.rbe.DM && n ? (0, i.jsx)(ec.A, {}) : t.isModeratorReportChannel() && t.isArchivedThread() ? (0, i.jsx)(eh.A, {
             channelId: t.id
-        }) : null != s && (0, z.n)(s) && null != l && !ev.A.can(ez.xBc.ADMINISTRATOR, l) ? (0, i.jsx)(Y.j, {
+        }) : null != s && (0, z.n)(s) && null != l && !eb.A.can(ez.xBc.ADMINISTRATOR, l) ? (0, i.jsx)(Y.j, {
             guild: l,
             disabledUntil: s
         }) : a ? (0, i.jsx)(K.u, {
@@ -689,16 +689,16 @@ class e1 extends l.PureComponent {
                 filterAfterTimestamp: g,
                 communicationDisabledUntil: p,
                 shakeIntensity: f,
-                poggermodeEnabled: C,
-                isSelectedResourceChannel: x,
+                poggermodeEnabled: x,
+                isSelectedResourceChannel: C,
                 showAutomodUserProfileChatBlocker: S,
-                pendingScheduledMessage: I,
-                messagesTypingGradient: T,
-                showLinkedLobbyApplicationLoadingIndicator: N,
-                announcementComposerEnabled: b
+                pendingScheduledMessage: T,
+                messagesTypingGradient: N,
+                showLinkedLobbyApplicationLoadingIndicator: I,
+                announcementComposerEnabled: v
             } = this.props,
             {
-                textAreaFocused: v,
+                textAreaFocused: b,
                 textAreaHighlighted: y
             } = this.state,
             j = c === L.oU.SIDEBAR;
@@ -709,7 +709,7 @@ class e1 extends l.PureComponent {
             }),
             M = (0, i.jsx)("div", {
                 className: eJ.li,
-                children: (0, i.jsx)(eC.A, {
+                children: (0, i.jsx)(ex.A, {
                     childRef: this.containerDomRef,
                     tutorialId: "writing-messages",
                     position: "left",
@@ -717,7 +717,7 @@ class e1 extends l.PureComponent {
                     children: (0, i.jsx)(eQ, {
                         ref: this.refToChannelTextAreaFormComponent,
                         refInstance: this.containerDomRef,
-                        focused: v,
+                        focused: b,
                         highlighted: y,
                         channel: t,
                         guild: n,
@@ -732,13 +732,13 @@ class e1 extends l.PureComponent {
                         placeholder: u,
                         accessibilityLabel: h,
                         shakeIntensity: f,
-                        poggermodeEnabled: C,
-                        pendingScheduledMessage: I,
-                        announcementComposerEnabled: b
+                        poggermodeEnabled: x,
+                        pendingScheduledMessage: T,
+                        announcementComposerEnabled: v
                     })
                 })
             }),
-            D = N ? R : M;
+            D = I ? R : M;
         return (0, i.jsx)(E.A, {
             page: (0, eD.DJ)(this.props.channel),
             children: (0, i.jsx)(Z.di, {
@@ -766,7 +766,7 @@ class e1 extends l.PureComponent {
                             onMouseDown: this.handleChatInteract,
                             onKeyDown: this.handleKeyDown,
                             onFocus: this.handleChatInteract,
-                            children: [(0, i.jsx)(eB.A, {
+                            children: [(0, i.jsx)(eH.A, {
                                 channel: t,
                                 guild: n,
                                 narrow: j
@@ -780,12 +780,12 @@ class e1 extends l.PureComponent {
                                 }),
                                 children: [(0, i.jsx)(ei.A, {
                                     channel: t,
-                                    forceCozy: x,
+                                    forceCozy: C,
                                     filterAfterTimestamp: g,
                                     showingQuarantineBanner: A,
-                                    typingGradient: T,
+                                    typingGradient: N,
                                     hideSummaries: c === L.oU.OVERLAY
-                                }), x ? null : this.renderMessageBanner({
+                                }), C ? null : this.renderMessageBanner({
                                     channel: t,
                                     showQuarantinedUserBanner: A,
                                     guild: n,
@@ -795,9 +795,9 @@ class e1 extends l.PureComponent {
                                     ref: this.inputFormRef,
                                     onSubmit: e$,
                                     className: a()(eJ.Zd, {
-                                        [eJ.Mf]: !N
+                                        [eJ.Mf]: !I
                                     }),
-                                    children: [C && (0, i.jsx)(er.A, {
+                                    children: [x && (0, i.jsx)(er.A, {
                                         channelId: t.id
                                     }), t.isPrivate() ? (0, i.jsx)(eK.A, {
                                         channel: t,
@@ -829,17 +829,17 @@ let e2 = l.memo(function(e) {
         accessibilityLabel: r
     } = (0, eF.A)({
         channel: t
-    }), o = (0, ec.L)(eR.default.getCurrentUser(), t), [c] = (0, q.c)(n?.id), d = (0, V.uZ)(n?.id), u = (0, h.bG)([eR.default], () => eR.default.getCurrentUser()), A = (0, h.bG)([eN.Ay], () => null != u && (eN.Ay.getMember(n?.id ?? ez.dJq, u?.id)?.isPending ?? !1)), g = (0, h.bG)([es.A], () => es.A.isEnabled()), p = (0, eo.A)(t.id), f = (0, J.A)(t.id), E = (0, eA.D)(t.id), C = (0, h.bG)([e_.A], () => e_.A.getAlsoSendToChannel(t.id)), S = (0, h.bG)([ea.Ay, ex.default], () => ea.Ay.getUserCombo(ex.default.getId(), t.id)), I = (0, _.rj)(t), T = (0, _.aW)(t), N = I.length > 0 || t.rateLimitPerUser > 0 || null != S || null != T, {
-        showLinkedLobbyApplicationLoadingIndicator: b
-    } = (0, eG.A)(t.linkedLobby), v = (0, H.A)("ChannelChat");
+    }), o = (0, ec.L)(eR.default.getCurrentUser(), t), [c] = (0, q.c)(n?.id), d = (0, V.uZ)(n?.id), u = (0, h.bG)([eR.default], () => eR.default.getCurrentUser()), A = (0, h.bG)([eI.Ay], () => null != u && (eI.Ay.getMember(n?.id ?? ez.dJq, u?.id)?.isPending ?? !1)), g = (0, h.bG)([es.A], () => es.A.isEnabled()), p = (0, eo.A)(t.id), f = (0, J.A)(t.id), E = (0, eA.D)(t.id), x = (0, h.bG)([e_.A], () => e_.A.getAlsoSendToChannel(t.id)), S = (0, h.bG)([ea.Ay, eC.default], () => ea.Ay.getUserCombo(eC.default.getId(), t.id)), T = (0, _.rj)(t), N = (0, _.aW)(t), I = T.length > 0 || t.rateLimitPerUser > 0 || null != S || null != N, {
+        showLinkedLobbyApplicationLoadingIndicator: v
+    } = (0, eG.A)(t.linkedLobby), b = (0, B.A)("ChannelChat");
     return (0, W.A)(t), (0, i.jsx)(e1, {
         channel: t,
-        isEditing: null != (0, h.bG)([eT.A], () => eT.A.getEditingMessageId(t.id)),
+        isEditing: null != (0, h.bG)([eN.A], () => eN.A.getEditingMessageId(t.id)),
         hasModalOpen: (0, m.red)(m.DXt),
         guild: n,
-        keyboardModeEnabled: (0, h.bG)([x.A], () => x.A.keyboardModeEnabled),
+        keyboardModeEnabled: (0, h.bG)([C.A], () => C.A.keyboardModeEnabled),
         pendingReply: (0, h.bG)([eu.A], () => eu.A.getPendingReply(t.id)),
-        threadsAlsoSendToChannel: C,
+        threadsAlsoSendToChannel: x,
         chatInputType: l,
         placeholder: a,
         accessibilityLabel: r,
@@ -851,8 +851,8 @@ let e2 = l.memo(function(e) {
         isSelectedResourceChannel: f,
         showAutomodUserProfileChatBlocker: d && !A,
         pendingScheduledMessage: E,
-        messagesTypingGradient: N,
-        showLinkedLobbyApplicationLoadingIndicator: b,
-        announcementComposerEnabled: v
+        messagesTypingGradient: I,
+        showLinkedLobbyApplicationLoadingIndicator: v,
+        announcementComposerEnabled: b
     })
 })

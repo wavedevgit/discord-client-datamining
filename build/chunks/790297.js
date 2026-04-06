@@ -38,6 +38,7 @@ let g = e => {
                 case d.G2.LAYOUT:
                     return l.A.COLLECTIBLES_SHOP;
                 case d.G2.RIVALS:
+                case d.G2.GAME_SHOPS:
                     return l.A.SLAYER_STOREFRONT_SHOP_TAB
             }
         })(e), {

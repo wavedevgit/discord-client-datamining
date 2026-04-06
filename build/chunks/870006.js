@@ -1,6 +1,6 @@
 /** chunk id: 870006 params = (module,exports,require) **/
 n.d(t, {
-    u: () => x
+    u: () => C
 });
 var i = n(627968);
 n(64700);
@@ -49,7 +49,7 @@ function E(e) {
     })
 }
 
-function C(e) {
+function x(e) {
     let {
         guild: t
     } = e, {
@@ -83,7 +83,7 @@ function C(e) {
     })
 }
 
-function x(e) {
+function C(e) {
     let {
         guild: t
     } = e, n = (0, l.bG)([d.default, u.Ay], () => {
@@ -91,11 +91,11 @@ function x(e) {
         let e = d.default.getId();
         return (0, h.wj)(u.Ay.getMember(t.id, e))
     }, [t]);
-    return n.has(g.D.AUTOMOD_QUARANTINED_USERNAME_OR_GUILD_NICKNAME) || n.has(g.D.AUTOMOD_QUARANTINED_BIO) ? (0, i.jsx)(C, {
+    return n.has(g.D.AUTOMOD_QUARANTINED_USERNAME_OR_GUILD_NICKNAME) || n.has(g.D.AUTOMOD_QUARANTINED_BIO) ? (0, i.jsx)(x, {
         guild: t
     }) : n.has(g.D.AUTOMOD_QUARANTINED_SERVER_TAG) ? (0, i.jsx)(E, {
         guild: t
-    }) : (0, i.jsx)(C, {
+    }) : (0, i.jsx)(x, {
         guild: t
     })
 }

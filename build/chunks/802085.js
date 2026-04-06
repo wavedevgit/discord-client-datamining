@@ -1,6 +1,6 @@
 /** chunk id: 802085 params = (module,exports,require) **/
 n.d(t, {
-    A: () => b
+    A: () => v
 });
 var i = n(627968),
     l = n(64700),
@@ -19,12 +19,12 @@ var i = n(627968),
     f = n(860227),
     _ = n(291812),
     E = n(449859),
-    C = n(652215),
-    x = n(985018),
+    x = n(652215),
+    C = n(985018),
     S = n(526724),
-    I = n(767283),
-    T = n(782691);
-let N = l.memo(function(e) {
+    T = n(767283),
+    N = n(782691);
+let I = l.memo(function(e) {
         let {
             message: t,
             notice: n,
@@ -63,15 +63,15 @@ let N = l.memo(function(e) {
                         color: "interactive-text-default",
                         tag: "span",
                         className: S.C2,
-                        children: x.intl.format(x.t["Nd3Gh+"], {
-                            helpUrl: A.A.getArticleURL(C.MVz.GUILD_AUTOMOD_BLOCKED_MESSAGE)
+                        children: C.intl.format(C.t["Nd3Gh+"], {
+                            helpUrl: A.A.getArticleURL(x.MVz.GUILD_AUTOMOD_BLOCKED_MESSAGE)
                         })
                     })
                 })
             })]
         })
     }),
-    b = l.memo(function(e) {
+    v = l.memo(function(e) {
         let {
             className: t,
             compact: n,
@@ -79,34 +79,34 @@ let N = l.memo(function(e) {
             children: r,
             content: d,
             onUpdate: A
-        } = e, g = s.editedTimestamp?.toString(), p = l.useRef(!1), C = (0, c.bG)([m.A], () => m.A.getMessage(s.id), [s.id]), b = l.useCallback(() => {
-            C?.isBlockedEdit ? (0, h.j)(s.id) : u.A.deleteMessage(s.channel_id, s.id, !0)
-        }, [s, C]);
+        } = e, g = s.editedTimestamp?.toString(), p = l.useRef(!1), x = (0, c.bG)([m.A], () => m.A.getMessage(s.id), [s.id]), v = l.useCallback(() => {
+            x?.isBlockedEdit ? (0, h.j)(s.id) : u.A.deleteMessage(s.channel_id, s.id, !0)
+        }, [s, x]);
         return l.useLayoutEffect(() => {
             p.current ? null != A && A() : p.current = !0
         }, [A, s.content, d, g, r]), (0, i.jsxs)("div", {
             id: (0, f.CJ)(s),
-            className: a()(t, T.PT, {
-                [I.BK]: !0,
-                [I.nB]: "rtl" === o()(s.content),
-                [S.Dy]: C?.isBlockedEdit,
-                [S.bv]: !C?.isBlockedEdit
+            className: a()(t, N.PT, {
+                [T.BK]: !0,
+                [T.nB]: "rtl" === o()(s.content),
+                [S.Dy]: x?.isBlockedEdit,
+                [S.bv]: !x?.isBlockedEdit
             }),
-            children: [r ?? (0, _._A)(s, d), C?.isBlockedEdit && null != s.timestamp && (0, i.jsxs)(i.Fragment, {
+            children: [r ?? (0, _._A)(s, d), x?.isBlockedEdit && null != s.timestamp && (0, i.jsxs)(i.Fragment, {
                 children: [" ", (0, i.jsx)(E.A, {
                     timestamp: s.timestamp,
                     isEdited: !0,
                     isInline: !1,
                     children: (0, i.jsxs)("span", {
-                        className: I.oh,
-                        children: ["(", x.intl.string(x.t.Z7eEx9), ")"]
+                        className: T.oh,
+                        children: ["(", C.intl.string(C.t.Z7eEx9), ")"]
                     })
                 })]
-            }), (0, i.jsx)(N, {
-                notice: C?.errorMessage ?? x.intl.string(x.t.zQ69pv),
+            }), (0, i.jsx)(I, {
+                notice: x?.errorMessage ?? C.intl.string(C.t.zQ69pv),
                 message: s,
                 compact: n,
-                onDismiss: b
+                onDismiss: v
             })]
         })
     }, _.sP)

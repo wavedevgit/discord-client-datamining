@@ -1,6 +1,6 @@
 /** chunk id: 38198 params = (module,exports,require) **/
 n.d(t, {
-    A: () => b
+    A: () => v
 });
 var i = n(627968),
     l = n(64700),
@@ -19,18 +19,18 @@ var i = n(627968),
     f = n(453771),
     _ = n(518960),
     E = n(408018),
-    C = n(447155),
-    x = n(652215),
+    x = n(447155),
+    C = n(652215),
     S = n(49999),
-    I = n(412136),
-    T = n(985018);
-let N = /(.*)```(\w+)\n(.*)```(.*)/s;
+    T = n(412136),
+    N = n(985018);
+let I = /(.*)```(\w+)\n(.*)```(.*)/s;
 
-function b(e) {
+function v(e) {
     let {
         channel: t,
-        options: b,
-        onFileUpload: v,
+        options: v,
+        onFileUpload: b,
         onClose: y,
         onSelect: j,
         draftType: R,
@@ -41,14 +41,14 @@ function b(e) {
         analyticsLocations: L
     } = (0, c.Ay)(), P = (0, u.s)({
         channel: t
-    }), w = (0, s.bG)([m.A], () => m.A.isInProgress());
+    }), k = (0, s.bG)([m.A], () => m.A.isInProgress());
 
-    function k() {
+    function w() {
         (0, A.Tv)(t, void 0, "Plus Button")
     }
 
     function U() {
-        g.default.track(x.HAw.CHANNEL_ATTACH_MENU_USE_APPS_CLICKED), D("/", (0, E.x7)("/"))
+        g.default.track(C.HAw.CHANNEL_ATTACH_MENU_USE_APPS_CLICKED), D("/", (0, E.x7)("/"))
     }
 
     function G() {
@@ -67,23 +67,23 @@ function b(e) {
                 channel: t
             })
         }, {
-            modalKey: I.sm
+            modalKey: T.sm
         })
     }
 
-    function H() {
+    function B() {
         let e = M,
             n = "txt",
             i = "",
-            l = M.match(N);
+            l = M.match(I);
         null != l && (i = l[1], n = l[2], e = l[3], i += l[4]), (0, _.R)([(0, f.VE)(new Blob([e], {
             type: "text/plain"
-        }), `message.${n}`, "text/plain")], t, R), p._.dispatchToLastSubscribed(x.jej.CLEAR_TEXT), "" !== i && p._.dispatchToLastSubscribed(x.jej.INSERT_TEXT, {
+        }), `message.${n}`, "text/plain")], t, R), p._.dispatchToLastSubscribed(C.jej.CLEAR_TEXT), "" !== i && p._.dispatchToLastSubscribed(C.jej.INSERT_TEXT, {
             plainText: i
         })
     }
     return l.useEffect(() => {
-        g.default.track(x.HAw.OPEN_POPOUT, {
+        g.default.track(C.HAw.OPEN_POPOUT, {
             type: "Send Attachment",
             channel_id: t.id,
             guild_id: t.guild_id
@@ -93,10 +93,10 @@ function b(e) {
         onSelect: j,
         navId: "channel-attach",
         onClose: y,
-        "aria-label": T.intl.string(T.t.Xm41aV),
-        children: b.map(function(e) {
+        "aria-label": N.intl.string(N.t.Xm41aV),
+        children: v.map(function(e) {
             switch (e.type) {
-                case C.v.UPLOAD_A_FILE:
+                case x.v.UPLOAD_A_FILE:
                     return (0, i.jsx)(r.Drp, {
                         id: "upload-file",
                         label: e.display,
@@ -105,9 +105,9 @@ function b(e) {
                             type: "icon",
                             icon: e.icon
                         },
-                        action: v
+                        action: b
                     }, "upload-file");
-                case C.v.UPLOAD_TEXT_AS_FILE:
+                case x.v.UPLOAD_TEXT_AS_FILE:
                     if ("" === M) return null;
                     return (0, i.jsx)(r.Drp, {
                         id: "upload-text-as-file",
@@ -117,9 +117,9 @@ function b(e) {
                             type: "icon",
                             icon: e.icon
                         },
-                        action: H
+                        action: B
                     }, "upload-text-as-file");
-                case C.v.CLIPS:
+                case x.v.CLIPS:
                     return (0, i.jsx)(r.Drp, {
                         id: "clips",
                         label: e.display,
@@ -133,7 +133,7 @@ function b(e) {
                         } : void 0,
                         action: G
                     }, "clips");
-                case C.v.POLL:
+                case x.v.POLL:
                     return (0, i.jsx)(r.Drp, {
                         id: "poll",
                         label: e.display,
@@ -144,7 +144,7 @@ function b(e) {
                         },
                         action: F
                     }, "poll");
-                case C.v.INVITE_TO_PLAY_GAME:
+                case x.v.INVITE_TO_PLAY_GAME:
                     return (0, i.jsx)(r.Drp, {
                         id: "play",
                         label: e.display,
@@ -157,13 +157,13 @@ function b(e) {
                             var n;
                             return n = e.activity, void o.A.sendActivityInvite({
                                 channelId: t.id,
-                                type: x.xL.JOIN,
+                                type: C.xL.JOIN,
                                 activity: n,
                                 location: L[L.length - 1]
                             })
                         }
                     }, "play");
-                case C.v.INVITE_TO_LISTEN:
+                case x.v.INVITE_TO_LISTEN:
                     return (0, i.jsx)(r.Drp, {
                         id: "listen",
                         label: e.display,
@@ -176,13 +176,13 @@ function b(e) {
                             var n;
                             return n = e.activity, void o.A.sendActivityInvite({
                                 channelId: t.id,
-                                type: x.xL.LISTEN,
+                                type: C.xL.LISTEN,
                                 activity: n,
                                 location: L[L.length - 1]
                             })
                         }
                     }, "listen");
-                case C.v.INVITE_TO_WATCH:
+                case x.v.INVITE_TO_WATCH:
                     return (0, i.jsx)(r.Drp, {
                         id: "watch",
                         label: e.display,
@@ -195,13 +195,13 @@ function b(e) {
                             var n;
                             return n = e.activity, void o.A.sendActivityInvite({
                                 channelId: t.id,
-                                type: x.xL.WATCH,
+                                type: C.xL.WATCH,
                                 activity: n,
                                 location: L[L.length - 1]
                             })
                         }
                     }, "watch");
-                case C.v.CREATE_THREAD:
+                case x.v.CREATE_THREAD:
                     return (0, i.jsx)(r.Drp, {
                         id: "THREAD",
                         label: e.display,
@@ -210,9 +210,9 @@ function b(e) {
                             type: "icon",
                             icon: e.icon
                         },
-                        action: k
+                        action: w
                     }, "THREAD");
-                case C.v.SLASH_COMMAND:
+                case x.v.SLASH_COMMAND:
                     return (0, i.jsx)(r.Drp, {
                         id: "SLASH_COMMAND",
                         label: e.display,
@@ -223,7 +223,7 @@ function b(e) {
                         },
                         action: U
                     }, "SLASH_COMMAND");
-                case C.v.SCHEDULED_MESSAGE:
+                case x.v.SCHEDULED_MESSAGE:
                     return (0, i.jsx)(r.Drp, {
                         id: "scheduled_message",
                         label: e.display,
@@ -237,7 +237,7 @@ function b(e) {
                         }),
                         children: P
                     }, "scheduled_message");
-                case C.v.SUMMARIZE_THREAD:
+                case x.v.SUMMARIZE_THREAD:
                     return (0, i.jsx)(r.Drp, {
                         id: "summarize_thread",
                         label: e.display,
@@ -247,12 +247,12 @@ function b(e) {
                             icon: e.icon
                         },
                         action: () => h.A.summarizeThread(t),
-                        loading: w,
-                        disabled: w,
-                        children: w ? null : (0, i.jsxs)(i.Fragment, {
+                        loading: k,
+                        disabled: k,
+                        children: k ? null : (0, i.jsxs)(i.Fragment, {
                             children: [(0, i.jsx)(r.Drp, {
                                 id: "summarize_thread_for_everyone",
-                                label: T.intl.string(T.t.eCzSdd),
+                                label: N.intl.string(N.t.eCzSdd),
                                 iconLeft: r.nFg,
                                 leadingAccessory: {
                                     type: "icon",
@@ -261,7 +261,7 @@ function b(e) {
                                 action: () => h.A.summarizeThread(t, !1)
                             }, "summarize_thread_for_everyone"), (0, i.jsx)(r.Drp, {
                                 id: "summarize_thread_for_me",
-                                label: T.intl.string(T.t["HOe+Hq"]),
+                                label: N.intl.string(N.t["HOe+Hq"]),
                                 iconLeft: r.nys,
                                 leadingAccessory: {
                                     type: "icon",

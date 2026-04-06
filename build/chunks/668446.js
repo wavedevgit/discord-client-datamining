@@ -1,7 +1,7 @@
 /** chunk id: 668446 params = (module,exports,require) **/
 n.d(t, {
     Sk: () => E,
-    lF: () => C
+    lF: () => x
 });
 var i = n(64700),
     l = n(735438),
@@ -29,9 +29,9 @@ function E(e, t) {
     }), [t, e])
 }
 
-function C(e) {
+function x(e) {
     var t;
-    let n, l, r, p, E, C;
+    let n, l, r, p, E, x;
     return {
         guildPopulated: (n = (0, a.bG)([d.A], () => d.A.getChannel(e?.systemChannelId)), l = (0, a.yK)([g.A], () => null != n ? g.A.getMessages(n.id).toArray() : []), (0, a.bG)([h.A], () => {
             let t = h.A.getMemberCount(e?.id) ?? 0,
@@ -42,7 +42,7 @@ function C(e) {
             let t = g.A.getMessages(e.id).toArray();
             return s().some(t, e => e.author.id === p && !(0, o.A)(e))
         }))),
-        guildPersonalized: (E = (0, a.bG)([A.A], () => A.A.hasLayers()), C = (0, a.bG)([m.A], () => m.A.getGuild(e?.id)), C?.icon != null && !E),
+        guildPersonalized: (E = (0, a.bG)([A.A], () => A.A.hasLayers()), x = (0, a.bG)([m.A], () => m.A.getGuild(e?.id)), x?.icon != null && !E),
         guildChannelCreated: (0, a.bG)([u.Ay], () => {
             let t = u.Ay.getChannels(e?.id),
                 n = t[u.vM];

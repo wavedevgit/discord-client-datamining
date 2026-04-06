@@ -22,13 +22,13 @@ function h(e) {
             selectedSummary: _,
             selectedConversation: E
         } = e,
-        C = [],
-        x = !1,
+        x = [],
+        C = !1,
         S = null != g ? r.default.extractTimestamp(g) : null,
-        I = null;
+        T = null;
     return A.forEach(e => {
-        var s, T;
-        let N, b;
+        var s, N;
+        let I, v;
         if (null != f && f.length > 0) {
             let t = r.default.extractTimestamp(e.id);
             for (let e = 0; e < f?.length; e++) {
@@ -36,26 +36,26 @@ function h(e) {
                 let n = r.default.extractTimestamp(f[e].startId),
                     i = r.default.extractTimestamp(f[e].endId);
                 if (t >= n && t <= i) {
-                    if (I === f[e].id) break;
-                    C.push({
+                    if (T === f[e].id) break;
+                    x.push({
                         type: u.TZK.DIVIDER,
                         content: f[e].topic,
                         contentKey: f[e].id
-                    }), I = f[e].id;
+                    }), T = f[e].id;
                     break
                 }
             }
         }
-        let v = (0, a.i$)(e.timestamp, "LL");
-        v !== t && null == I && (C.push({
+        let b = (0, a.i$)(e.timestamp, "LL");
+        b !== t && null == T && (x.push({
             type: u.TZK.DIVIDER,
-            content: v,
-            contentKey: v
-        }), t = v);
-        let y = C[C.length - 1],
+            content: b,
+            contentKey: b
+        }), t = b);
+        let y = x[x.length - 1],
             j = null,
             R = (0, c.kf)(e);
-        x = x || R;
+        C = C || R;
         let M = function(e, t, n) {
             if (i.M.NON_COLLAPSIBLE.has(t.type));
             else if (t.hasFlag(u.pr7.HIDDEN_SUSPENDED_USER)) return u.TZK.MESSAGE_GROUP_SUSPENDED_USER;
@@ -64,22 +64,22 @@ function h(e) {
             else if ((0, c.iJ)(e) && n) return u.TZK.MESSAGE_GROUP_SPAMMER;
             return null
         }(m, e, R && p);
-        (null !== M && ([j, y] = (b = s = y, null == s || s.type !== M ? (N = {
+        (null !== M && ([j, y] = (v = s = y, null == s || s.type !== M ? (I = {
             type: M,
             content: [],
             key: e.id
-        }, C.push(N)) : b = (N = s).content[N.content.length - 1], [N, b])), g === e.id && null != S) ? (null != y && y.type === u.TZK.DIVIDER ? y.unreadId = e.id : null !== j ? (T = j, e.isFirstMessageInForumPost(m) || T.content.push({
+        }, x.push(I)) : v = (I = s).content[I.content.length - 1], [I, v])), g === e.id && null != S) ? (null != y && y.type === u.TZK.DIVIDER ? y.unreadId = e.id : null !== j ? (N = j, e.isFirstMessageInForumPost(m) || N.content.push({
             type: u.TZK.DIVIDER,
             unreadId: e.id
-        }), T.hasUnread = !0) : e.isFirstMessageInForumPost(m) || C.push({
+        }), N.hasUnread = !0) : e.isFirstMessageInForumPost(m) || x.push({
             type: u.TZK.DIVIDER,
             unreadId: e.id
-        }), S = null) : null != S && r.default.extractTimestamp(e.id) > S && (e.isFirstMessageInForumPost(m) || C.push({
+        }), S = null) : null != S && r.default.extractTimestamp(e.id) > S && (e.isFirstMessageInForumPost(m) || x.push({
             type: u.TZK.DIVIDER,
             unreadId: e.id
         }), S = null);
         let D = (0, d.r)(e, m);
-        null != D && "before" === D.position && C.push({
+        null != D && "before" === D.position && x.push({
             type: u.TZK.MESSAGE,
             content: D.message,
             groupId: D.message.id
@@ -94,35 +94,35 @@ function h(e) {
         n === e.id && (h = L);
         let {
             jumpSequenceId: P,
-            jumpFlash: w,
-            jumpTargetId: k
+            jumpFlash: k,
+            jumpTargetId: w
         } = A;
-        w && e.id === k && null != P && (L.flashKey = P), A.jumpTargetId === e.id && (L.jumpTarget = !0), null != _ && e.id === _.startId && _.count > 1 && C.push({
+        k && e.id === w && null != P && (L.flashKey = P), A.jumpTargetId === e.id && (L.jumpTarget = !0), null != _ && e.id === _.startId && _.count > 1 && x.push({
             type: u.TZK.DIVIDER,
             content: _.topic,
             contentKey: _.startId,
             isSummaryDivider: !0
-        }), null != E && e.id === E.start_message_id && E.message_count > 1 && C.push({
+        }), null != E && e.id === E.start_message_id && E.message_count > 1 && x.push({
             type: u.TZK.DIVIDER,
             content: (0, l.u)(E),
             contentKey: `conv-start-${E.id}`,
             isConversationDivider: !0
-        }), null !== j ? (j.content.push(L), L.jumpTarget && (j.hasJumpTarget = !0)) : C.push(L), e.isFirstMessageInForumPost(m) && C.push({
+        }), null !== j ? (j.content.push(L), L.jumpTarget && (j.hasJumpTarget = !0)) : x.push(L), e.isFirstMessageInForumPost(m) && x.push({
             type: u.TZK.FORUM_POST_ACTION_BAR
-        }), null != D && "after" === D.position && C.push({
+        }), null != D && "after" === D.position && x.push({
             type: u.TZK.MESSAGE,
             content: D.message,
             groupId: D.message.id
-        }), null != _ && e.id === _.endId && _.count > 1 && C.push({
+        }), null != _ && e.id === _.endId && _.count > 1 && x.push({
             type: u.TZK.DIVIDER,
             contentKey: _.endId,
             isSummaryDivider: !0
-        }), null != E && e.id === E.end_message_id && E.message_count > 1 && C.push({
+        }), null != E && e.id === E.end_message_id && E.message_count > 1 && x.push({
             type: u.TZK.DIVIDER,
             contentKey: `conv-end-${E.id}`,
             isConversationDivider: !0
         })
-    }), x && (0, c.iJ)(m) && s.A.trackExposure({
+    }), C && (0, c.iJ)(m) && s.A.trackExposure({
         location: "416cc9_1"
-    }), C
+    }), x
 }

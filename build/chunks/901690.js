@@ -30,19 +30,19 @@ let p = l.memo(function(e) {
     } = l.useContext(d.k3), {
         enabled: _,
         minZoom: E,
-        isDragging: C,
-        setIsDragging: x,
+        isDragging: x,
+        setIsDragging: C,
         panOffset: S,
-        setPanOffset: I,
-        zoomLevel: T,
-        isWheeling: N,
-        setIsWheeling: b,
-        isSlidering: v,
+        setPanOffset: T,
+        zoomLevel: N,
+        isWheeling: I,
+        setIsWheeling: v,
+        isSlidering: b,
         setVideoAspectRatio: y,
         wrapperRef: j,
         doZoom: R,
         clampPanOffset: M
-    } = l.useContext(m.e9), [D, O] = l.useState(null), [L, P] = l.useState(null), [w, k] = l.useState(0), [U, G] = l.useState(null), [F, H] = l.useState(null), [B, V] = l.useState(!1), K = l.useRef(new r.Ep), W = l.useRef(new r.Ep), z = l.useRef(null), q = T > E, Y = l.useCallback(e => {
+    } = l.useContext(m.e9), [D, O] = l.useState(null), [L, P] = l.useState(null), [k, w] = l.useState(0), [U, G] = l.useState(null), [F, B] = l.useState(null), [H, V] = l.useState(!1), K = l.useRef(new r.Ep), W = l.useRef(new r.Ep), z = l.useRef(null), q = N > E, Y = l.useCallback(e => {
         e.width > 0 && e.height > 0 && y(e.width / e.height), s?.(e)
     }, [s, y]), J = l.useCallback(e => {
         if (null == j.current) return m.qd;
@@ -55,20 +55,20 @@ let p = l.memo(function(e) {
         if (!q || !g(e)) return;
         e.preventDefault(), e.stopPropagation();
         let t = J(e);
-        x(!0), P(t), O(t), k(Date.now()), H(t), G(S)
-    }, [J, q, S, x]), Z = l.useCallback(e => {
-        if ((_ || q) && f(), !C || !q || null == F || null == U) return;
+        C(!0), P(t), O(t), w(Date.now()), B(t), G(S)
+    }, [J, q, S, C]), Z = l.useCallback(e => {
+        if ((_ || q) && f(), !x || !q || null == F || null == U) return;
         e.preventDefault(), e.stopPropagation();
         let t = J(e),
             n = t.x - F.x,
             i = t.y - F.y;
-        I(M({
+        T(M({
             x: U.x + n,
             y: U.y + i
         })), O(t)
-    }, [M, F, U, _, J, C, q, f, I]), X = l.useCallback(e => {
-        !C || g(e) || (e.preventDefault(), e.stopPropagation(), x(!1), H(null), G(null))
-    }, [C, x]), Q = l.useCallback(e => {
+    }, [M, F, U, _, J, x, q, f, T]), X = l.useCallback(e => {
+        !x || g(e) || (e.preventDefault(), e.stopPropagation(), C(!1), B(null), G(null))
+    }, [x, C]), Q = l.useCallback(e => {
         if (q && null != L && null != D) {
             let {
                 x: t,
@@ -77,15 +77,15 @@ let p = l.memo(function(e) {
                 x: i,
                 y: l
             } = D;
-            (Math.sqrt((i - t) ** 2 + (l - n) ** 2) > .01 || Date.now() - w >= 500) && (e.preventDefault(), e.stopPropagation())
+            (Math.sqrt((i - t) ** 2 + (l - n) ** 2) > .01 || Date.now() - k >= 500) && (e.preventDefault(), e.stopPropagation())
         }
-    }, [q, L, w, D]), ee = l.useCallback(() => {
-        x(!1), H(null), G(null)
-    }, [x]), et = l.useCallback(e => {
-        _ && (b(!0), R(T - e.deltaY / 100, J(e), "wheel"), f(), K.current.start(100, () => {
-            b(!1)
+    }, [q, L, k, D]), ee = l.useCallback(() => {
+        C(!1), B(null), G(null)
+    }, [C]), et = l.useCallback(e => {
+        _ && (v(!0), R(N - e.deltaY / 100, J(e), "wheel"), f(), K.current.start(100, () => {
+            v(!1)
         }))
-    }, [_, R, T, J, f, b]);
+    }, [_, R, N, J, f, v]);
     (0, o.i4)(j, l.useCallback(e => {
         let {
             width: t,
@@ -104,11 +104,11 @@ let p = l.memo(function(e) {
             width: l,
             height: s
         } = i;
-        1 > Math.abs(t - l) && 1 > Math.abs(n - s) || (V(!0), I(e => {
-            let i = l * (T - 1) / 2,
-                a = s * (T - 1) / 2,
-                r = t * (T - 1) / 2,
-                o = n * (T - 1) / 2;
+        1 > Math.abs(t - l) && 1 > Math.abs(n - s) || (V(!0), T(e => {
+            let i = l * (N - 1) / 2,
+                a = s * (N - 1) / 2,
+                r = t * (N - 1) / 2,
+                o = n * (N - 1) / 2;
             return M({
                 x: (0 !== i ? e.x / i : 0) * r,
                 y: (0 !== a ? e.y / a : 0) * o
@@ -119,25 +119,25 @@ let p = l.memo(function(e) {
         }, W.current.start(100, () => {
             V(!1)
         }))
-    }, [M, q, T, I]), [q, T]), (0, c.l0)(() => {
+    }, [M, q, N, T]), [q, N]), (0, c.l0)(() => {
         K.current.stop(), W.current.stop()
     }), l.useEffect(() => {
-        null != n && (0, u.c)(n, void 0, _ && q ? T : 1)
-    }, [_, q, n, T]);
+        null != n && (0, u.c)(n, void 0, _ && q ? N : 1)
+    }, [_, q, n, N]);
     let en = l.useMemo(() => {
         let e = M(S);
         return {
-            "--custom-zoom-scale": T,
+            "--custom-zoom-scale": N,
             "--custom-pan-x": `${e.x}px`,
             "--custom-pan-y": `${e.y}px`,
-            "--custom-zoom-transition": C || B || N || v ? "none" : "transform 0.15s ease-out"
+            "--custom-zoom-transition": x || H || I || b ? "none" : "transform 0.15s ease-out"
         }
-    }, [M, C, B, N, v, S, T]);
+    }, [M, x, H, I, b, S, N]);
     return (0, i.jsx)("div", {
         ref: j,
         className: a()(A.iE, p, {
             [A.rc]: _ && q,
-            [A.d$]: C
+            [A.d$]: x
         }),
         onMouseDown: $,
         onMouseMove: Z,

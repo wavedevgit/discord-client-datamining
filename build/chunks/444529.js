@@ -26,8 +26,8 @@ function c(e) {
             compact: g = !1
         },
         messageWindow: p
-    } = e, f = h.state === r.cmJ.SENDING, _ = h.id === A, E = (0, l.Lt)(h.flags, r.pr7.EPHEMERAL), C = h.state === r.cmJ.SEND_FAILED;
-    return f || E && !C ? null : (0, i.jsx)(a.A, {
+    } = e, f = h.state === r.cmJ.SENDING, _ = h.id === A, E = (0, l.Lt)(h.flags, r.pr7.EPHEMERAL), x = h.state === r.cmJ.SEND_FAILED;
+    return f || E && !x ? null : (0, i.jsx)(a.A, {
         className: o.Uo,
         innerClassName: o.Mc,
         isHeader: !g && _ && !(0, s.A)(h),

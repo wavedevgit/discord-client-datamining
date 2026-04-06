@@ -22,13 +22,13 @@ function x(e) {
         (0, o.C)(h, () => {
             _(!0), n?.()
         })
-    }, [n, h]), f = m ? i.yr3 : i.TdU;
+    }, [n, h]), j = m ? i.yr3 : i.TdU;
     return (0, r.jsx)(i.DUT, {
         className: a()(u.k, s),
         onClick: p,
         children: (0, r.jsx)(c.m, {
             text: m ? d.intl.string(d.t.t5VZ88) : d.intl.string(d.t.OpuAlK),
-            children: (0, r.jsx)(f, {
+            children: (0, r.jsx)(j, {
                 ...x,
                 size: "xxs",
                 color: m ? i.LU0.colors.TEXT_FEEDBACK_POSITIVE : i.LU0.colors.INTERACTIVE_TEXT_DEFAULT

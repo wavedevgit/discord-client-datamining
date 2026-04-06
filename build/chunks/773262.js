@@ -21,16 +21,16 @@ let p = function(e) {
         transitionState: t,
         streamKey: s,
         channelId: p,
-        onClose: f
-    } = e, j = (0, a.bG)([i.A], () => i.A.getSecureFramesState(s)?.epochAuthenticator), T = (0, u.z)({
-        fingerprintBase64: j,
+        onClose: j
+    } = e, f = (0, a.bG)([i.A], () => i.A.getSecureFramesState(s)?.epochAuthenticator), T = (0, u.z)({
+        fingerprintBase64: f,
         chunkSize: 5,
         desiredLength: 30
-    }), v = l.useCallback(() => {
+    }), g = l.useCallback(() => {
         (0, o.y5)({
             channelId: p
         })
-    }, [p]), g = {
+    }, [p]), v = {
         transitionState: t,
         title: m.intl.string(m.t.QogHld),
         subtitle: m.intl.string(m.t.qODBkW)
@@ -47,7 +47,7 @@ let p = function(e) {
                     className: _.nJ,
                     chunks: T,
                     color: c.LU0.colors.INTERACTIVE_TEXT_DEFAULT,
-                    onCopy: v
+                    onCopy: g
                 })]
             }), (0, r.jsx)(x.j, {
                 className: _.aY,
@@ -64,8 +64,8 @@ let p = function(e) {
         })]
     });
     return (0, r.jsx)(n.Modal, {
-        ...g,
-        onClose: f,
+        ...v,
+        onClose: j,
         actions: [],
         children: k
     })
