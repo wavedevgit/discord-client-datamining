@@ -62,7 +62,7 @@ function b() {
                 can: i
             }, t)
         }),
-        T = Object.values(y ?? {}).map(e => {
+        E = Object.values(y ?? {}).map(e => {
             let {
                 title: t,
                 flag: n
@@ -87,7 +87,7 @@ function b() {
                 children: [(0, a.jsx)(o.Heading, {
                     variant: "heading-md/semibold",
                     children: null != i ? `Permissions in ${i.name}` : "No guild selected"
-                }), T]
+                }), E]
             })]
         })
     })

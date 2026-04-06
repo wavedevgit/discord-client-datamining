@@ -25,8 +25,8 @@ var a = n(627968),
     C = n(223344),
     y = n(589939),
     S = n(443960),
-    T = n(899860),
-    E = n(633581),
+    E = n(899860),
+    T = n(633581),
     N = n(508575),
     I = n(847807),
     k = n(364329),
@@ -285,7 +285,7 @@ function G() {
             children: "Quest Preview Tool"
         }), (0, a.jsx)("div", {
             className: w.OA,
-            children: (0, a.jsx)(E.A, {
+            children: (0, a.jsx)(T.A, {
                 onSelect: function(e) {
                     K(e), null == e || (U(function(e) {
                         if (null == e.userStatus) return k.b.UNENROLLED;
@@ -324,22 +324,22 @@ function G() {
             children: "Messages"
         }), (0, a.jsxs)("div", {
             className: w.OA,
-            children: [(0, a.jsx)(T.A, {
+            children: [(0, a.jsx)(E.A, {
                 title: "Quest Name",
                 assetKey: "questName",
                 onMessageChange: Y,
                 initialValue: t.config.messages.questName
-            }), (0, a.jsx)(T.A, {
+            }), (0, a.jsx)(E.A, {
                 title: "Game Title",
                 assetKey: "gameTitle",
                 onMessageChange: Y,
                 initialValue: t.config.messages.gameTitle
-            }), (0, a.jsx)(T.A, {
+            }), (0, a.jsx)(E.A, {
                 title: "Game Publisher",
                 assetKey: "gamePublisher",
                 onMessageChange: Y,
                 initialValue: t.config.messages.gamePublisher
-            }), ee && (0, a.jsx)(T.A, {
+            }), ee && (0, a.jsx)(E.A, {
                 title: "Video Title",
                 assetKey: "videoTitle",
                 onMessageChange: function(e, n) {
@@ -439,12 +439,12 @@ function G() {
                 children: ["Reward #", n + 1]
             }), (0, a.jsxs)("div", {
                 className: w.OA,
-                children: [(0, a.jsx)(T.A, {
+                children: [(0, a.jsx)(E.A, {
                     title: "Name",
                     assetKey: "name",
                     onMessageChange: (e, t) => Q(e, t, n),
                     initialValue: e.messages.name
-                }), (0, a.jsx)(T.A, {
+                }), (0, a.jsx)(E.A, {
                     title: "Name With Article",
                     assetKey: "nameWithArticle",
                     onMessageChange: (e, t) => Q(e, t, n),

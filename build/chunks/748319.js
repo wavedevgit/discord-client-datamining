@@ -26,8 +26,8 @@ var a = n(627968),
     C = n(793574),
     y = n(688810),
     S = n(521502),
-    T = n(380610),
-    E = n(313961),
+    E = n(380610),
+    T = n(313961),
     N = n(18235),
     I = n(183184),
     k = n(384059),
@@ -80,8 +80,8 @@ var a = n(627968),
     eC = n(485599),
     ey = n(809991),
     eS = n(226513),
-    eT = n(383952),
-    eE = n(245750),
+    eE = n(383952),
+    eT = n(245750),
     eN = n(652215),
     eI = n(731854),
     ek = n(985018),
@@ -137,7 +137,7 @@ function eL(e) {
             highlightBadge: s ? n : void 0,
             setHighlightBadge: a
         }
-    }(), T = (0, M.K)(x);
+    }(), E = (0, M.K)(x);
     return null == o ? null : (0, a.jsx)(p.A, {
         object: eN.ZSU.AVATAR,
         children: (0, a.jsx)(Q.A, {
@@ -183,7 +183,7 @@ function eL(e) {
                 } = e;
                 return (0, a.jsxs)("div", {
                     ref: b,
-                    style: T,
+                    style: E,
                     onMouseEnter: t,
                     onMouseDown: i,
                     onClick: t => {
@@ -587,11 +587,11 @@ function eB(e) {
         shouldShowPTTJoinTooltip: C = !1,
         dismissTooltips: y,
         speaking: S
-    } = e, T = (0, M.K)(b);
+    } = e, E = (0, M.K)(b);
     return (0, a.jsxs)("div", {
         className: eO.Uo,
-        style: T,
-        children: [(0, a.jsx)(eT.A, {
+        style: E,
+        children: [(0, a.jsx)(eE.A, {
             accountContainerRef: j,
             selfMute: n,
             serverMute: s,
@@ -619,7 +619,7 @@ function eB(e) {
             nameplate: b,
             shouldShowOutputDeviceChangedTooltip: "output" === A,
             dismissTooltips: y
-        }), (0, a.jsx)(eE.A, {
+        }), (0, a.jsx)(eT.A, {
             webBuildOverride: c,
             onClick: f,
             onContextMenu: _,
@@ -692,9 +692,9 @@ function eF() {
             selfDeaf: b,
             deaf: j
         } = (0, ee.A)(p),
-        A = (0, c.bG)([S.A], () => (0, T.kK)() ? S.A.getCurrentBuildOverride().overrides?.discord_web : null),
+        A = (0, c.bG)([S.A], () => (0, E.kK)() ? S.A.getCurrentBuildOverride().overrides?.discord_web : null),
         N = (0, c.bG)([ed.Ay], () => ed.Ay.getSpeakingWhileMuted()),
-        I = (0, c.bG)([E.A], () => E.A.isFullscreenInContext()),
+        I = (0, c.bG)([T.A], () => T.A.isFullscreenInContext()),
         k = (0, c.bG)([eo.A], () => eo.A.hasLayers()),
         O = (0, h.red)(h.DXt) || k || ev.P.isDisallowPopupsSet() || I,
         w = (0, c.bG)([V.default], () => null != V.default.getAwaitingRemoteSessionInfo()),

@@ -33,8 +33,8 @@ let A = e => {
         expansionSpring: y
     } = i.useContext(p.PW), {
         completionSpring: S,
-        startCompletionAnimation: T
-    } = (0, f.R)(), E = A.userStatus?.completedAt != null, N = i.useRef(!1), I = (0, c.bG)([m.A], () => m.A.useReducedMotion), k = i.useRef(null), O = (0, c.bG)([h.A], () => h.A.hasLayers()), R = (0, u.A)(O), [w, D] = i.useState(null), [M, P] = i.useState(null), L = i.useRef(new r.OH({
+        startCompletionAnimation: E
+    } = (0, f.R)(), T = A.userStatus?.completedAt != null, N = i.useRef(!1), I = (0, c.bG)([m.A], () => m.A.useReducedMotion), k = i.useRef(null), O = (0, c.bG)([h.A], () => h.A.hasLayers()), R = (0, u.A)(O), [w, D] = i.useState(null), [M, P] = i.useState(null), L = i.useRef(new r.OH({
         gravity: 0,
         wind: 0
     })), U = (0, r.f9)(w, M), B = i.useMemo(() => [_.r3], []), G = i.useCallback(() => {
@@ -92,16 +92,16 @@ let A = e => {
         }
     }, [n, k, U, I]), F = (0, u.A)(C);
     return (i.useEffect(() => {
-        E && C && !F && (T(), G())
-    }, [C, E, T, G, F]), i.useEffect(() => {
-        E && !O && R && setTimeout(() => {
-            T(), G()
+        T && C && !F && (E(), G())
+    }, [C, T, E, G, F]), i.useEffect(() => {
+        T && !O && R && setTimeout(() => {
+            E(), G()
         }, 200)
-    }, [E, R, O, T, G]), i.useEffect(() => {
-        U.isReady && (!N.current && E && (T(), G()), N.current = E)
-    }, [E, N, G, T, U]), i.useEffect(() => {
-        s && E && (T(), G())
-    }, [s, E, T, G]), I) ? null : (0, a.jsxs)("div", {
+    }, [T, R, O, E, G]), i.useEffect(() => {
+        U.isReady && (!N.current && T && (E(), G()), N.current = T)
+    }, [T, N, G, E, U]), i.useEffect(() => {
+        s && T && (E(), G())
+    }, [s, T, E, G]), I) ? null : (0, a.jsxs)("div", {
         className: b.iE,
         "aria-hidden": "true",
         ref: k,

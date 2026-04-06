@@ -97,8 +97,8 @@ function b(e) {
 function j() {
     let {
         name: e
-    } = (0, x.x5)(g.oh.AUDIO_INPUT), [t, n] = i.useState(!1), [s, l] = i.useState([]), v = (0, r.bG)([p.Ay], () => p.Ay.getKrispSuppressionLevel()), [j, A] = i.useState(null), C = i.useRef(null), y = i.useRef(null), [S, T] = i.useState(.5), {
-        krispModels: E,
+    } = (0, x.x5)(g.oh.AUDIO_INPUT), [t, n] = i.useState(!1), [s, l] = i.useState([]), v = (0, r.bG)([p.Ay], () => p.Ay.getKrispSuppressionLevel()), [j, A] = i.useState(null), C = i.useRef(null), y = i.useRef(null), [S, E] = i.useState(.5), {
+        krispModels: T,
         krispModelOverride: N,
         inputMode: I,
         echoCancellation: k,
@@ -190,7 +190,7 @@ function j() {
                     label: "Krisp Model Override",
                     clearable: !0,
                     value: N,
-                    options: E.map(e => ({
+                    options: T.map(e => ({
                         label: e,
                         value: e,
                         id: e
@@ -275,7 +275,7 @@ function j() {
                 label: "Volume",
                 initialValue: S,
                 asValueChanges: function(e) {
-                    null != y.current && (y.current.gain.value = e, T(e))
+                    null != y.current && (y.current.gain.value = e, E(e))
                 },
                 minValue: 0,
                 maxValue: 1

@@ -1,7 +1,7 @@
 /** chunk id: 902592 params = (module,exports,require) **/
 n.r(t), n.d(t, {
     default: () => k,
-    openDevToolsPopout: () => T
+    openDevToolsPopout: () => E
 });
 var a = n(627968),
     i = n(64700),
@@ -44,7 +44,7 @@ function S(e) {
     })
 }
 
-function T() {
+function E() {
     (0, x.open)(j.MLl.DEVTOOLS_POPOUT, () => (0, a.jsx)(h.A, {
         windowKey: j.MLl.DEVTOOLS_POPOUT,
         title: "DevTools",
@@ -59,7 +59,7 @@ function T() {
     })
 }
 
-function E(e) {
+function T(e) {
     let {
         isPopout: t = !1
     } = e, n = (0, v.x)(), {
@@ -88,7 +88,7 @@ function E(e) {
                 children: [(0, a.jsx)(m.Ay.Icon, {
                     icon: d.tfB,
                     tooltip: "Pop Out",
-                    onClick: T
+                    onClick: E
                 }), (0, a.jsx)(m.Ay.Icon, {
                     icon: d.PGe,
                     tooltip: A.intl.string(A.t.cpT0Cq),
@@ -130,7 +130,7 @@ function N() {
             onResizeEnd: l
         }), (0, a.jsx)("div", {
             className: C.wp,
-            children: (0, a.jsx)(E, {})
+            children: (0, a.jsx)(T, {})
         })]
     })
 }
@@ -140,7 +140,7 @@ function I() {
         className: l()(C.kL, C.PQ),
         children: (0, a.jsx)("div", {
             className: C.wp,
-            children: (0, a.jsx)(E, {})
+            children: (0, a.jsx)(T, {})
         })
     }) : (0, a.jsx)("div", {
         className: C.kL,
@@ -169,7 +169,7 @@ function k(e) {
     } = e;
     return t ? (0, a.jsx)(I, {}) : n ? (0, a.jsx)("div", {
         className: C.jC,
-        children: (0, a.jsx)(E, {
+        children: (0, a.jsx)(T, {
             isPopout: !0
         })
     }) : (0, a.jsx)(N, {})

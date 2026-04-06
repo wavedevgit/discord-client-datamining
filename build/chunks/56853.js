@@ -25,8 +25,8 @@ var a = n(627968),
     C = n(988436),
     y = n(918338),
     S = n(270045),
-    T = n(57718),
-    E = n(398025),
+    E = n(57718),
+    T = n(398025),
     N = n(545986),
     I = n(516226),
     k = n(720875),
@@ -87,7 +87,7 @@ function P(e) {
     return (0, a.jsx)(r.animated.div, {
         style: {
             height: v.height,
-            opacity: (0, E.a)(v.opacity)
+            opacity: (0, T.a)(v.opacity)
         },
         children: (0, a.jsxs)("div", {
             ref: d,
@@ -125,7 +125,7 @@ function L(e) {
         isVisibleInViewport: r,
         onCtxMenuClose: m,
         onCtxMenuOpen: C,
-        onCtxMenuSelect: E,
+        onCtxMenuSelect: T,
         sourceQuestContent: O
     } = e, L = (0, p.O)(e => e.getErrorHints(t.id)), U = L.length > 0 ? L : s, B = (0, j.IO)(t), G = (0, h.Ay)(), F = ((0, c.Mw)(G) ? R.NJ8.DARK : R.NJ8.LIGHT) === R.NJ8.DARK, V = (0, _.LS)(t), W = t.userStatus?.claimedAt != null, H = (0, _.S5)(t.config.expiresAt, {
         month: "numeric",
@@ -190,7 +190,7 @@ function L(e) {
                     }), (0, a.jsx)(S.C, {
                         onOpen: C,
                         onClose: m,
-                        onSelect: E,
+                        onSelect: T,
                         questContent: f.uF.QUEST_HOME_DESKTOP,
                         quest: t,
                         hideLearnMore: !0,
@@ -213,11 +213,11 @@ function L(e) {
                     width: 100,
                     height: 30,
                     className: D.Iu,
-                    children: (0, a.jsx)(T.Ay, {
+                    children: (0, a.jsx)(E.Ay, {
                         className: D.Iu,
                         logotypeClassName: D.ND,
                         quest: t,
-                        separatorSpacing: T.C8.MEDIUM,
+                        separatorSpacing: E.C8.MEDIUM,
                         withGameTile: !1,
                         onLoadComplete: $
                     })

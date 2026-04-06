@@ -31,20 +31,20 @@ function A(e) {
         iconForeground: C,
         nameplate: y,
         shouldShowOutputDeviceChangedTooltip: S,
-        dismissTooltips: T
-    } = e, E = t || n, {
+        dismissTooltips: E
+    } = e, T = t || n, {
         Component: N,
         play: I,
         events: {
             onMouseEnter: k,
             onMouseLeave: O
         }
-    } = (0, d.I)(E ? "undeafen" : "deafen"), R = n ? r.TJE : N, {
+    } = (0, d.I)(T ? "undeafen" : "deafen"), R = n ? r.TJE : N, {
         name: w
     } = (0, g.x5)(_.oh.AUDIO_OUTPUT), D = (0, h.A)(t, n, s), {
         analyticsLocations: M
     } = (0, m.Ay)(u.A.AUDIO_OUTPUT_BUTTON), P = i.useRef(null);
-    return i.useEffect(() => () => I(), [E, I]), (0, a.jsx)(m.f5, {
+    return i.useEffect(() => () => I(), [T, I]), (0, a.jsx)(m.f5, {
         value: M,
         children: (0, a.jsx)(c.YNO, {
             targetElementRef: P,
@@ -52,7 +52,7 @@ function A(e) {
                 let {
                     closePopout: t
                 } = e;
-                return T(), (0, a.jsx)(m.f5, {
+                return E(), (0, a.jsx)(m.f5, {
                     value: M,
                     children: (0, a.jsx)(x.A, {
                         onInteraction: (0, p.s)("AudioDeviceMenu", u.A.ACCOUNT),
@@ -76,11 +76,11 @@ function A(e) {
                 return (0, a.jsxs)("div", {
                     ref: P,
                     className: l()(b.Lh, {
-                        [b.v8]: E,
+                        [b.v8]: T,
                         [b.q6]: d
                     }),
                     children: [(0, a.jsx)(f.A, {
-                        "aria-checked": E,
+                        "aria-checked": T,
                         "aria-label": v.intl.string(v.t.wjcRFX),
                         className: b.eT,
                         disabled: s,
@@ -88,10 +88,10 @@ function A(e) {
                             size: "custom",
                             width: 20,
                             height: 20,
-                            color: E ? o.A.colors.ICON_VOICE_MUTED : "currentColor",
+                            color: T ? o.A.colors.ICON_VOICE_MUTED : "currentColor",
                             className: C
                         }),
-                        iconForeground: E ? j.o : void 0,
+                        iconForeground: T ? j.o : void 0,
                         innerClassName: l()({
                             [j.T]: n
                         }),
@@ -100,7 +100,7 @@ function A(e) {
                         onMouseEnter: k,
                         onMouseLeave: O,
                         plated: null != y,
-                        redGlow: E,
+                        redGlow: T,
                         role: "switch",
                         tooltipText: D
                     }), (0, a.jsx)(f.A, {
@@ -113,12 +113,12 @@ function A(e) {
                             size: "custom",
                             width: 12,
                             height: 12,
-                            color: E ? o.A.colors.ICON_VOICE_MUTED : "currentColor"
+                            color: T ? o.A.colors.ICON_VOICE_MUTED : "currentColor"
                         }),
                         onClick: i,
                         onContextMenu: i,
                         plated: null != y,
-                        redGlow: E,
+                        redGlow: T,
                         tooltipType: S ? "green_void_do_not_use" : void 0,
                         tooltipForceOpen: S,
                         tooltipPositionKey: S ? v.intl.formatToPlainString(v.t["f+DDY/"], {

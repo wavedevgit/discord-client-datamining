@@ -1,6 +1,6 @@
 /** chunk id: 918550 params = (module,exports,require) **/
 n.d(t, {
-    A: () => E
+    A: () => T
 }), n(321073), n(323874), n(14289), n(35956);
 var a = n(627968),
     i = n(64700),
@@ -70,7 +70,7 @@ let A = {
             })
         })
     },
-    T = e => {
+    E = e => {
         let {
             type: t,
             frame: n,
@@ -120,12 +120,12 @@ let A = {
             })]
         })
     },
-    E = e => {
+    T = e => {
         let {
             effect: t
         } = e, {
             upsertConfig: n
-        } = (0, g.wu)(), s = (0, o.bG)([p.default], () => p.default.getCurrentUser()), [d, j] = i.useState(!0), y = i.useRef({}), [S, E] = i.useState(!1), [N, I] = i.useState(!1), [k, O] = i.useState(8), [R, w] = i.useState([]), [D, M] = i.useState(A), P = i.useRef([]), [L, U] = i.useState(t.name), B = L.toLowerCase().replace(/\s+/g, "_"), G = i.useMemo(() => ({
+        } = (0, g.wu)(), s = (0, o.bG)([p.default], () => p.default.getCurrentUser()), [d, j] = i.useState(!0), y = i.useRef({}), [S, T] = i.useState(!1), [N, I] = i.useState(!1), [k, O] = i.useState(8), [R, w] = i.useState([]), [D, M] = i.useState(A), P = i.useRef([]), [L, U] = i.useState(t.name), B = L.toLowerCase().replace(/\s+/g, "_"), G = i.useMemo(() => ({
             id: C,
             skuId: C,
             title: C,
@@ -255,7 +255,7 @@ let A = {
                         checked: S,
                         className: v.OO,
                         onChange: () => {
-                            E(!S)
+                            T(!S)
                         }
                     }), (0, a.jsx)(c.Text, {
                         variant: "text-md/normal",
@@ -418,7 +418,7 @@ let A = {
                             className: v.mv,
                             children: Object.entries(D).map(e => {
                                 let [t, n] = e;
-                                return (0, a.jsx)(T, {
+                                return (0, a.jsx)(E, {
                                     type: t,
                                     frame: n,
                                     theme: F,

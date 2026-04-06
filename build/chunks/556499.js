@@ -1,6 +1,6 @@
 /** chunk id: 556499 params = (module,exports,require) **/
 n.d(t, {
-    A: () => T
+    A: () => E
 }), n(321073);
 var a = n(627968),
     i = n(64700),
@@ -161,14 +161,14 @@ function S(e) {
     })
 }
 
-function T(e) {
+function E(e) {
     var t;
     let n, {
             subscription: s,
             onUpdated: r
         } = e,
         [d, _] = i.useState(!1),
-        [T, E] = i.useState(!1),
+        [E, T] = i.useState(!1),
         [N, I] = i.useState(!1),
         [k, O] = i.useState(!1),
         [R, w] = i.useState(null),
@@ -346,7 +346,7 @@ function T(e) {
                 className: j.VK,
                 children: [(0, a.jsxs)(u.DUT, {
                     onClick: () => {
-                        E(!T)
+                        T(!E)
                     },
                     className: j.Eh,
                     children: [(0, a.jsx)("div", {
@@ -355,9 +355,9 @@ function T(e) {
                             children: "Modifications"
                         })
                     }), (0, a.jsx)(m.A, {
-                        direction: T ? m.A.Directions.UP : m.A.Directions.DOWN
+                        direction: E ? m.A.Directions.UP : m.A.Directions.DOWN
                     })]
-                }), T && (0, a.jsxs)(u.BJc, {
+                }), E && (0, a.jsxs)(u.BJc, {
                     gap: 24,
                     children: [(0, a.jsx)(u.l6P, {
                         label: "Status",

@@ -1,6 +1,6 @@
 /** chunk id: 933378 params = (module,exports,require) **/
 n.d(t, {
-    A: () => E
+    A: () => T
 });
 var a = n(627968),
     i = n(64700),
@@ -34,7 +34,7 @@ function S(e) {
     })
 }
 
-function T(e) {
+function E(e) {
     let {
         quest: t,
         useReducedMotion: n
@@ -43,7 +43,7 @@ function T(e) {
     }), c = (0, x.Ut)(), _ = (0, g.go)(), {
         errorHints: j,
         startingConsoleQuest: A,
-        startConsoleQuest: T
+        startConsoleQuest: E
     } = (0, h.Wj)({
         questId: t.id,
         beforeRequest: () => {
@@ -56,7 +56,7 @@ function T(e) {
         },
         afterRequest: o.stopAnimation
     }), {
-        header: E,
+        header: T,
         renderBody: N
     } = i.useMemo(() => {
         let e = j.length > 0,
@@ -116,12 +116,12 @@ function T(e) {
                 height: 16
             }), (0, a.jsx)(d.Text, {
                 variant: "text-xs/medium",
-                children: E
+                children: T
             }), (0, a.jsx)(d.DUT, {
                 className: l()(y.w, {
                     [y.r9]: A
                 }),
-                onClick: () => T(),
+                onClick: () => E(),
                 children: o.render()
             })]
         }), (0, a.jsxs)("div", {
@@ -134,7 +134,7 @@ function T(e) {
         })]
     })
 }
-let E = function(e) {
+let T = function(e) {
     let {
         quest: t,
         taskDetails: n
@@ -179,7 +179,7 @@ let E = function(e) {
     return (0, a.jsx)(A.Ay, {
         heading: C.intl.string(C.t.UPWlJu),
         steps: d,
-        children: u && !x && !p && (0, a.jsx)(T, {
+        children: u && !x && !p && (0, a.jsx)(E, {
             useReducedMotion: s,
             quest: t
         })

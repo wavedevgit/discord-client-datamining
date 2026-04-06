@@ -1,8 +1,8 @@
 /** chunk id: 850730 params = (module,exports,require) **/
 n.d(t, {
     DB: () => N,
-    ZL: () => T,
-    ln: () => E,
+    ZL: () => E,
+    ln: () => T,
     t0: () => S
 });
 var a = n(64700),
@@ -56,7 +56,7 @@ async function S() {
         }
     } catch (e) {}
 }
-async function T() {
+async function E() {
     let e = d.A.purchases,
         t = (0, c.x9)(e),
         n = (0, c.$W)(e),
@@ -71,7 +71,7 @@ async function T() {
     } catch (e) {}
 }
 
-function E() {
+function T() {
     try {
         let e = y(v.hH7.FONT_SIZES);
         (0, r.XS)(e);
@@ -97,7 +97,7 @@ function N() {
             C = null != j ? i.find(e => e.skuId === j) ?? null : null,
             y = o.A.fontSize,
             S = o.A.messageGroupSpacing,
-            T = p.Xi.getSetting();
+            E = p.Xi.getSetting();
         return () => {
             try {
                 l.u_({
@@ -110,7 +110,7 @@ function N() {
                 });
                 let e = h.A.getPendingChanges(),
                     t = (0, u.Sk)(e);
-                (0, s._L)(t).finally(s.pZ), (0, r.XS)(y), (0, r.AC)(S), p.Xi.updateSetting(T)
+                (0, s._L)(t).finally(s.pZ), (0, r.XS)(y), (0, r.AC)(S), p.Xi.updateSetting(E)
             } catch (e) {}
         }
     }, [])

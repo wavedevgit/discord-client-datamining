@@ -1119,7 +1119,7 @@ let A = [{
             country: "US"
         }
     },
-    T = [{
+    E = [{
         label: "None",
         value: "NONE"
     }, {
@@ -1162,7 +1162,7 @@ let A = [{
         label: "Yukon",
         value: "YT"
     }],
-    E = {
+    T = {
         NONE: null,
         AB: {
             name: "Alberta Legislature Building",
@@ -1366,7 +1366,7 @@ function N() {
                     label: "CA Address",
                     hideLabel: !0,
                     value: m,
-                    options: T.map(e => {
+                    options: E.map(e => {
                         let {
                             value: t,
                             label: n
@@ -1378,7 +1378,7 @@ function N() {
                         }
                     }),
                     onSelectionChange: e => {
-                        x(e), g(E[e] ?? null)
+                        x(e), g(T[e] ?? null)
                     }
                 }), (0, a.jsx)(r.l6P, {
                     selectionMode: "single",

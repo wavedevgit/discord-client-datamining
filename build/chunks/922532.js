@@ -35,9 +35,9 @@ function o(e) {
             withDelay: t = !1
         } = e;
         t ? x.current = window.setTimeout(d, 75) : d()
-    }, [d, n]), T = a.useCallback(() => {
+    }, [d, n]), E = a.useCallback(() => {
         S()
-    }, [S]), E = a.useCallback(() => {
+    }, [S]), T = a.useCallback(() => {
         window.clearTimeout(x.current), g || _ || p.current || o(!1)
     }, [g, _, o]), N = a.useCallback(() => {
         (0, s.av)({
@@ -63,8 +63,8 @@ function o(e) {
                 impression_id: h.current?.getId()
             },
             sourceQuestContent: i.uF.QUEST_BAR_V2
-        }), p.current = !1, E()
-    }, [E, h, t.id]);
+        }), p.current = !1, T()
+    }, [T, h, t.id]);
     return a.useEffect(() => {
         _ && I()
     }, [_, I]), a.useLayoutEffect(() => {
@@ -80,8 +80,8 @@ function o(e) {
         handleGameSheetOpened: C,
         handleGameSheetClosed: y,
         handleFocus: S,
-        handleFocusWithoutDelay: T,
-        handleBlur: E,
+        handleFocusWithoutDelay: E,
+        handleBlur: T,
         handleMouseEnter: N,
         handleMouseLeave: I
     }

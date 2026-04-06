@@ -26,8 +26,8 @@ var x = n(173628),
     C = n(648514),
     y = n(866001),
     S = n(855936),
-    T = n(489967),
-    E = n(2915),
+    E = n(489967),
+    T = n(2915),
     N = n(986789),
     I = n(821306),
     k = n(226936),
@@ -138,7 +138,7 @@ function em() {
             name: "Feedback",
             group: ed.fu.USERS,
             tags: ["surveys"],
-            render: () => (0, a.jsx)(T.A, {})
+            render: () => (0, a.jsx)(E.A, {})
         }), e.push({
             id: "overlay",
             name: "Overlay v3",
@@ -319,7 +319,7 @@ function em() {
             name: "Fractional Nitro",
             group: ed.fu.PREMIUM,
             tags: ["entitlements", "quests"],
-            render: () => (0, a.jsx)(E.A, {})
+            render: () => (0, a.jsx)(T.A, {})
         })), e.push({
             id: "gifting_intent",
             name: "Gifting Intent",

@@ -25,8 +25,8 @@ var a = n(627968),
     C = n(499156),
     y = n(430452),
     S = n(383501),
-    T = n(350535),
-    E = n(42473),
+    E = n(350535),
+    T = n(42473),
     N = n(731854),
     I = n(985018),
     k = n(807880),
@@ -90,7 +90,7 @@ function D(e) {
     } : H || V ? {
         tooltipType: "green_void_do_not_use",
         tooltipText: I.intl.format(I.t.c1qUOQ, {
-            keybind: T.dI(Y).toLocaleUpperCase()
+            keybind: E.dI(Y).toLocaleUpperCase()
         }),
         tooltipForceOpen: !0
     } : {
@@ -139,7 +139,7 @@ function D(e) {
                         [O.v8]: et,
                         [O.q6]: s
                     }),
-                    children: [(0, a.jsx)(E.A, {
+                    children: [(0, a.jsx)(T.A, {
                         "aria-checked": et,
                         "aria-label": I.intl.string(I.t.w4m945),
                         className: O.eT,
@@ -168,7 +168,7 @@ function D(e) {
                                 [R.z]: z
                             })
                         }) : null
-                    }), (0, a.jsx)(E.A, {
+                    }), (0, a.jsx)(T.A, {
                         "aria-label": W ? I.intl.formatToPlainString(I.t["18wnuD"], {
                             inputDeviceName: X
                         }) : I.intl.string(I.t.fRzCbB),

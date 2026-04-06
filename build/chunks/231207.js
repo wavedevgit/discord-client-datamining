@@ -25,8 +25,8 @@ var a = n(627968),
     C = n(532794),
     y = n(216678),
     S = n(194509),
-    T = n(761705),
-    E = n(448362),
+    E = n(761705),
+    T = n(448362),
     N = n(71393),
     I = n(166403),
     k = n(652215),
@@ -59,11 +59,11 @@ let D = function() {
         balance: Q,
         isFetching: J,
         error: X
-    } = (0, T.W)(), {
+    } = (0, E.W)(), {
         isSubmitting: Z,
         responseMessage: ee,
         redeemVirtualCurrency: et
-    } = (0, T.Q)(), [en, ea] = i.useState(k.dJq), [ei, es] = i.useState(""), [el, er] = i.useState(k.dJq), [eo, ed] = i.useState(k.dJq);
+    } = (0, E.Q)(), [en, ea] = i.useState(k.dJq), [ei, es] = i.useState(""), [el, er] = i.useState(k.dJq), [eo, ed] = i.useState(k.dJq);
     return (0, a.jsx)(x.f5, {
         value: K,
         children: (0, a.jsx)(c.IpV, {
@@ -262,9 +262,9 @@ let D = function() {
                             children: [null !== X && (0, a.jsxs)(c.Text, {
                                 variant: "text-sm/normal",
                                 children: ["Error fetching Virtual Currency Balance: ", X.message]
-                            }), (0, a.jsx)(E.Gy, {
+                            }), (0, a.jsx)(T.Gy, {
                                 balance: Q ?? 0,
-                                balanceWidgetMode: E.k7.SELECTED
+                                balanceWidgetMode: T.k7.SELECTED
                             })]
                         })]
                     }), (0, a.jsx)(c.ksK, {

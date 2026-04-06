@@ -30,13 +30,13 @@ function g() {
             return [t, (0, h.k)(g, t)]
         })), [g]),
         S = y[t],
-        T = i.useCallback(e => {
+        E = i.useCallback(e => {
             f(n => ({
                 ...n,
                 [t]: e(n[t])
             }))
         }, [t]),
-        E = i.useMemo(() => (0, u.CO)({
+        T = i.useMemo(() => (0, u.CO)({
             theme: t,
             saturation: 1
         }), [t]),
@@ -58,7 +58,7 @@ function g() {
             let {
                 text: e,
                 background: t
-            } = E;
+            } = T;
             return c._V.map((n, a) => c.iW[S.scales[a]].map(n => {
                 let i = (0, m._D)(N, a, {
                         ...N[a],
@@ -70,7 +70,7 @@ function g() {
                     trailing: `(${s}:1)`
                 }
             }))
-        }, [N, E, S.scales]),
+        }, [N, T, S.scales]),
         k = i.useMemo(() => {
             try {
                 return c.F$.map(e => {
@@ -159,7 +159,7 @@ function g() {
                                 value: S.scales[t],
                                 onSelectionChange: e => {
                                     let n = c.iW[e][0]?.value;
-                                    T(a => ({
+                                    E(a => ({
                                         ...a,
                                         scales: (0, m._D)(a.scales, t, e),
                                         colors: null != n ? (0, m._D)(a.colors, t, n) : a.colors
@@ -172,7 +172,7 @@ function g() {
                                 label: "Value",
                                 disabled: n,
                                 value: S.colors[t],
-                                onSelectionChange: e => T(n => ({
+                                onSelectionChange: e => E(n => ({
                                     ...n,
                                     colors: (0, m._D)(n.colors, t, e)
                                 })),
@@ -182,7 +182,7 @@ function g() {
                                 label: "Opacity",
                                 name: `opacity-${t}`,
                                 value: S.opacities[t],
-                                onChange: e => T(n => ({
+                                onChange: e => E(n => ({
                                     ...n,
                                     opacities: (0, m._D)(n.opacities, t, e)
                                 })),
@@ -196,7 +196,7 @@ function g() {
                                     let n = (0, m.xb)(e);
                                     if (null != n) {
                                         let e = (0, m.C2)(n);
-                                        j(n => (0, m._D)(n, t, e.deltaE)), T(n => ({
+                                        j(n => (0, m._D)(n, t, e.deltaE)), E(n => ({
                                             ...n,
                                             scales: (0, m._D)(n.scales, t, e.scale),
                                             colors: (0, m._D)(n.colors, t, e.color)

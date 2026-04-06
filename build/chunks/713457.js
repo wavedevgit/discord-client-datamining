@@ -25,8 +25,8 @@ var a = n(627968),
     C = n(710969),
     y = n(901406),
     S = n(792620),
-    T = n(814793),
-    E = n(201805),
+    E = n(814793),
+    T = n(201805),
     N = n(212614),
     I = n(79545),
     k = n(545986),
@@ -210,7 +210,7 @@ function G(e) {
         contentPosition: j,
         rowIndex: y,
         sourceQuestContent: L
-    } = e, G = (0, s.bG)([c.A], () => c.A.useReducedMotion), F = (0, E.Xf)({
+    } = e, G = (0, s.bG)([c.A], () => c.A.useReducedMotion), F = (0, T.Xf)({
         useReducedMotion: G
     }), V = (0, v.Ut)(), W = (0, _.RR)({
         quest: t
@@ -232,7 +232,7 @@ function G(e) {
     }, [er, p, eh, t.id]), {
         text: ep,
         onClick: eg
-    } = (0, E._c)({
+    } = (0, T._c)({
         progressState: ee,
         quest: t,
         questContent: n,
@@ -290,7 +290,7 @@ function G(e) {
         sourceQuestContent: L,
         onClick: eg,
         text: ep
-    }) : (0, T.vA)(t) ? (0, a.jsxs)(r.e2v, {
+    }) : (0, E.vA)(t) ? (0, a.jsxs)(r.e2v, {
         direction: "horizontal",
         fullWidth: !0,
         wrap: !1,
@@ -403,7 +403,7 @@ function G(e) {
             text: ep,
             fullWidth: !0
         })
-    }) : (0, T.vA)(t) ? (0, a.jsx)("div", {
+    }) : (0, E.vA)(t) ? (0, a.jsx)("div", {
         className: w.x6,
         children: (0, a.jsx)(r.$nd, {
             variant: "primary",

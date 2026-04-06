@@ -2,9 +2,9 @@
 n.d(t, {
     $Y: () => f,
     Dp: () => u,
-    EP: () => T,
+    EP: () => E,
     F$: () => C,
-    GA: () => E,
+    GA: () => T,
     ID: () => p,
     KC: () => S,
     ME: () => d,
@@ -73,7 +73,7 @@ let d = [0, .5, 1],
         [r.NJ8.DARKER]: "dark",
         [r.NJ8.MIDNIGHT]: "onyx"
     },
-    T = [{
+    E = [{
         id: "friends",
         icon: i.$yI,
         text: "Friends"
@@ -88,7 +88,7 @@ let d = [0, .5, 1],
         text: "Shop",
         useCustomGradient: !0
     }],
-    E = l.p.map(e => ({
+    T = l.p.map(e => ({
         label: e,
         value: e,
         id: e

@@ -32,7 +32,7 @@ function S() {
     } = (0, l.cf)([_.A, f.A], () => ({
         action: _.A.getAction(),
         theme: f.A.theme
-    })), S = v.A.getVerificationTypes(e), [T, E] = i.useState(0), N = (0, m.A)(S);
+    })), S = v.A.getVerificationTypes(e), [E, T] = i.useState(0), N = (0, m.A)(S);
     (0, x.A)({
         type: s.ImpressionTypes.MODAL,
         name: s.ImpressionNames.USER_ACTION_REQUIRED,
@@ -74,7 +74,7 @@ function S() {
         })
     }, [S, N]), (0, a.jsx)(b.A, {
         types: S,
-        captchaKey: T,
+        captchaKey: E,
         onCaptchaVerify: e => {
             r.Bo.post({
                 url: A.Rsh.CAPTCHA,
@@ -84,7 +84,7 @@ function S() {
                 oldFormErrors: !0,
                 rejectWithError: !0
             }).then(c.jH, () => {
-                E(e => e + 1)
+                T(e => e + 1)
             })
         },
         theme: t,

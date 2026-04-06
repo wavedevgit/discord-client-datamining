@@ -1,6 +1,6 @@
 /** chunk id: 498336 params = (module,exports,require) **/
 n.d(t, {
-    A: () => T
+    A: () => E
 });
 var a = n(627968),
     i = n(989349),
@@ -40,7 +40,7 @@ async function S(e) {
     })
 }
 
-function T() {
+function E() {
     let e = (0, l.bG)([b.A], () => b.A.getGuildId()),
         t = (0, l.bG)([v.A], () => v.A.getGuild(e)?.name),
         n = (0, l.yK)([f.A], () => [...j.DX, ...j.gh].filter(t => null != e && (0, h.zs)(t, e))),

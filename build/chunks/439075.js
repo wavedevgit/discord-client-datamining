@@ -29,7 +29,7 @@ function b(e) {
         rowIndex: m,
         impressionRef: b,
         sourceQuestContent: j
-    } = e, [A, C] = i.useState(!1), [y, S] = i.useState([]), T = (0, o.aC)(t), E = i.useMemo(() => (0, u.vv)(t), [t]), N = (0, d.u0)(), I = i.useCallback(() => {
+    } = e, [A, C] = i.useState(!1), [y, S] = i.useState([]), E = (0, o.aC)(t), T = i.useMemo(() => (0, u.vv)(t), [t]), N = (0, d.u0)(), I = i.useCallback(() => {
         C(!0), N({
             questId: t.id,
             event: _.HAw.QUEST_HOVER,
@@ -39,8 +39,8 @@ function b(e) {
                 content_position: r
             },
             sourceQuestContent: j
-        }), E && (0, h.l9)()
-    }, [N, t.id, s, E, j, r]), k = i.useCallback(() => {
+        }), T && (0, h.l9)()
+    }, [N, t.id, s, T, j, r]), k = i.useCallback(() => {
         C(!1), N({
             questId: t.id,
             event: _.HAw.QUEST_HOVER_OFF,
@@ -81,7 +81,7 @@ function b(e) {
             quest: t,
             isHovering: A,
             errorHints: y,
-            warningHints: T,
+            warningHints: E,
             isVisibleInViewport: w,
             sourceQuestContent: j
         }), (0, a.jsx)(f.A, {

@@ -52,7 +52,7 @@ let C = async () => {
     } catch {} finally {
         await (0, u._D)()
     }
-}, T = async () => {
+}, E = async () => {
     try {
         let {
             body: e
@@ -67,7 +67,7 @@ let C = async () => {
             discount: []
         }
     }
-}, E = async () => {
+}, T = async () => {
     try {
         await r.Bo.del({
             url: v.Rsh.USER_OFFERS,
@@ -102,8 +102,8 @@ function I(e) {
         }
     }, [_]);
     let {
-        id: T,
-        expires_at: E,
+        id: E,
+        expires_at: T,
         redeemed_at: N,
         trial_id: I,
         subscription_trial: k,
@@ -115,8 +115,8 @@ function I(e) {
         return t === I
     })?.label ?? "Unknown";
     null != O && (R = `${R} from @${O.username}`);
-    let w = null != E,
-        D = null != E && new Date(E).getTime() < Date.now(),
+    let w = null != T,
+        D = null != T && new Date(T).getTime() < Date.now(),
         M = k?.sku_id === b.pe.TIER_0,
         P = async () => {
             A(!0), w ? await L({
@@ -126,7 +126,7 @@ function I(e) {
             A(!0);
             try {
                 await r.Bo.patch({
-                    url: v.Rsh.UPDATE_USER_OFFER(T, "trial"),
+                    url: v.Rsh.UPDATE_USER_OFFER(E, "trial"),
                     body: {
                         ..."expiresAt" in e && {
                             expires_at: e.expiresAt
@@ -172,12 +172,12 @@ function I(e) {
         }), (0, a.jsxs)(d.DUT, {
             className: l()(j.nM, j.QB),
             onClick: () => {
-                (0, x.C)(T, () => m(!0))
+                (0, x.C)(E, () => m(!0))
             },
             children: [(0, a.jsxs)(d.Text, {
                 variant: "eyebrow",
                 color: "always-white",
-                children: ["Offer: ", T]
+                children: ["Offer: ", E]
             }), o ? (0, a.jsx)(d.A9s, {
                 size: "md",
                 color: "currentColor",
@@ -224,7 +224,7 @@ function I(e) {
                 children: ["Expires (", (0, c.A)(), "):"]
             }), (0, a.jsx)("input", {
                 type: "datetime-local",
-                value: (0, p.Xm)(E),
+                value: (0, p.Xm)(T),
                 onChange: e => {
                     L({
                         expiresAt: "" !== e.target.value ? new Date(e.target.value).toISOString() : null
@@ -267,7 +267,7 @@ function I(e) {
             })]
         }), (0, a.jsx)(d.DUT, {
             onClick: async () => {
-                A(!0), await S(T, "trial"), s(), A(!1)
+                A(!0), await S(E, "trial"), s(), A(!1)
             },
             children: (0, a.jsx)(d.ucK, {
                 size: "md",
@@ -301,14 +301,14 @@ function k(e) {
     let {
         id: C,
         expires_at: y,
-        applied_at: T,
-        discount_id: E,
+        applied_at: E,
+        discount_id: T,
         discount: N
     } = t, I = n.find(e => {
         let {
             value: t
         } = e;
-        return t === E
+        return t === T
     })?.label ?? "Unknown", k = null != y, O = null != y && new Date(y).getTime() < Date.now(), R = async () => {
         _(!0), k ? await w({
             expiresAt: null
@@ -379,12 +379,12 @@ function k(e) {
         }), (0, a.jsxs)(d.DUT, {
             className: l()(j.nM, j.QB),
             onClick: () => {
-                (0, x.C)(E, () => g(!0))
+                (0, x.C)(T, () => g(!0))
             },
             children: [(0, a.jsxs)(d.Text, {
                 variant: "eyebrow",
                 color: "text-default",
-                children: ["Discount: ", E]
+                children: ["Discount: ", T]
             }), h ? (0, a.jsx)(d.A9s, {
                 size: "md",
                 color: "currentColor",
@@ -426,7 +426,7 @@ function k(e) {
                     color: "Acked" === D ? void 0 : "always-white",
                     children: D
                 })
-            }), null != T && (0, a.jsx)("div", {
+            }), null != E && (0, a.jsx)("div", {
                 className: l()(j.qS, j.k3),
                 children: (0, a.jsx)(d.Text, {
                     variant: "eyebrow",
@@ -476,7 +476,7 @@ function O() {
             t(n), s(a), null == l && r(n[0].value), null == c && x(a[0].value)
         })
     }, [e, n, l, c, O]), i.useEffect(() => {
-        O && (R(!1), h.A.forceReset(), (0, u._D)(), T().then(e => {
+        O && (R(!1), h.A.forceReset(), (0, u._D)(), E().then(e => {
             g(e.trial.sort((e, t) => e.id.localeCompare(t.id))), S(e.discount.sort((e, t) => e.id.localeCompare(t.id)))
         }))
     }, [O]);
@@ -485,7 +485,7 @@ function O() {
     }, F = async () => {
         null != c && (await y(c, "discount"), R(!0))
     }, V = async () => {
-        await E(), R(!0)
+        await T(), R(!0)
     }, W = async () => {
         let e = new Date(Date.now() + 60 * w * 1e3).toISOString();
         await N(e), B()

@@ -26,8 +26,8 @@ var a = n(627968),
     C = n(568329),
     y = n(818276),
     S = n(742860),
-    T = n(783569),
-    E = n(963713),
+    E = n(783569),
+    T = n(963713),
     N = n(717695),
     I = n(899592),
     k = n(546350),
@@ -158,14 +158,14 @@ function L(e) {
                         [D.E$]: Y,
                         [D.KA]: W
                     }),
-                    children: (0, a.jsx)(T.R, {
+                    children: (0, a.jsx)(E.R, {
                         springConfig: en,
                         isExpanded: Y,
                         children: (0, a.jsx)(C.oK, {
                             expandedContentRef: em,
                             collapsedContentRef: eh,
                             expansionSpring: ee,
-                            children: (0, a.jsxs)(E.C, {
+                            children: (0, a.jsxs)(T.C, {
                                 quest: t,
                                 taskDetails: ep,
                                 isExpanded: Y,

@@ -81,7 +81,7 @@ function A() {
         y()
     }, [y]);
     let S = i.useMemo(() => m.filter(e => e.status !== g.Dmq.ACTIVE).sort((e, t) => e.id > t.id ? -1 : 1), [m]),
-        T = async () => {
+        E = async () => {
             await o.Bo.post({
                 url: "/debug/subscription",
                 body: {
@@ -89,7 +89,7 @@ function A() {
                 },
                 rejectWithError: !1
             }), await y()
-        }, E = async () => {
+        }, T = async () => {
             await o.Bo.del({
                 url: "/debug/subscription",
                 rejectWithError: !1
@@ -128,7 +128,7 @@ function A() {
                         variant: "primary",
                         size: "sm",
                         text: "Create Subscription",
-                        onClick: T
+                        onClick: E
                     })]
                 })
             }), null != e && (0, a.jsx)(p.A, {
@@ -144,7 +144,7 @@ function A() {
                     variant: "primary",
                     size: "sm",
                     text: "End All Subscriptions",
-                    onClick: E
+                    onClick: T
                 })
             }), S.length > 0 && (0, a.jsxs)(a.Fragment, {
                 children: [(0, a.jsx)(d.Heading, {

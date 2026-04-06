@@ -1,6 +1,6 @@
 /** chunk id: 912878 params = (module,exports,require) **/
 n.d(t, {
-    A: () => T
+    A: () => E
 });
 var a = n(627968),
     i = n(64700),
@@ -85,7 +85,7 @@ function S() {
     })
 }
 
-function T() {
+function E() {
     let e = (0, d.bG)([b.Ay], () => b.Ay.allByCategory(b.xW.MESSAGING), [], d.My).map(e => {
         let [t, n, {
             label: i

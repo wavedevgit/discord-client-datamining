@@ -25,8 +25,8 @@ var a = n(627968),
     C = n(181435),
     y = n(435736),
     S = n(833551),
-    T = n(515183),
-    E = n(395011),
+    E = n(515183),
+    T = n(395011),
     N = n(127242),
     I = n(869014),
     k = n(379078),
@@ -139,7 +139,7 @@ let et = i.memo(function(e) {
             }), (0, a.jsxs)(h.Text, {
                 variant: "text-sm/normal",
                 color: "text-default",
-                children: ["fullscreenType: ", (0, T.wR)(t.fullscreenType)]
+                children: ["fullscreenType: ", (0, E.wR)(t.fullscreenType)]
             }), (0, a.jsxs)(h.Text, {
                 variant: "text-sm/normal",
                 color: "text-default",
@@ -165,7 +165,7 @@ let et = i.memo(function(e) {
                 }), (0, a.jsxs)(h.Text, {
                     variant: "text-sm/normal",
                     color: "text-default",
-                    children: ["overlayMethod: ", (0, T.gK)(t.overlayMethod)]
+                    children: ["overlayMethod: ", (0, E.gK)(t.overlayMethod)]
                 })]
             }), null != s && (0, a.jsxs)("div", {
                 className: Q.st,
@@ -184,7 +184,7 @@ let et = i.memo(function(e) {
                 }), (0, a.jsxs)(h.Text, {
                     variant: "text-sm/normal",
                     color: "text-default",
-                    children: ["raw overlayMethod: ", (0, T.gK)(s.overlayMethod)]
+                    children: ["raw overlayMethod: ", (0, E.gK)(s.overlayMethod)]
                 })]
             }), (0, a.jsxs)(h.Text, {
                 variant: "text-sm/normal",
@@ -365,7 +365,7 @@ let er = i.memo(function(e) {
             variant: "text-sm/normal",
             color: "text-subtle",
             tag: "span",
-            children: ["Original Screen Type: ", null != n ? (0, T.wR)(n) : "Unknown"]
+            children: ["Original Screen Type: ", null != n ? (0, E.wR)(n) : "Unknown"]
         })
     }),
     eo = i.memo(function() {
@@ -376,7 +376,7 @@ let er = i.memo(function(e) {
             let e = b.Ay.getRunningGames(),
                 t = [],
                 a = Date.now();
-            for (let n of e) t.push((0, T.E1)(n.pid, 0).then(e => [n.pid, e, a]));
+            for (let n of e) t.push((0, E.E1)(n.pid, 0).then(e => [n.pid, e, a]));
             let i = await Promise.all(t);
             n(e => i.reduce((e, t) => {
                 let [n, a, i] = t;
@@ -415,7 +415,7 @@ let er = i.memo(function(e) {
                             return (0, a.jsx)(h.Text, {
                                 variant: "text-xs/normal",
                                 color: "text-default",
-                                children: `${n}:${(0,T.wR)(n)} @ ${ei(i)}`
+                                children: `${n}:${(0,E.wR)(n)} @ ${ei(i)}`
                             }, `${e.pid}-${n}-${i}`)
                         })]
                     }, e.pid))]
@@ -919,7 +919,7 @@ function ey() {
     i.useEffect(() => {
         0 !== C && (o ? m(A.reduce((e, t) => "game_tracking_starting" === t.name ? Math.max(e, t.timestamp) : e, 0)) : m(null))
     }, [o, A, C]);
-    let [y, S] = i.useState(""), T = i.useMemo(() => 0 === C ? [] : A.filter(e => {
+    let [y, S] = i.useState(""), E = i.useMemo(() => 0 === C ? [] : A.filter(e => {
         if (o && null != u && e.timestamp < u) return !1;
         for (let t of x) {
             let {
@@ -928,22 +928,22 @@ function ey() {
             if (n(e)) return !0
         }
         return !1
-    }), [A, x, u, o, C]), [E, I] = i.useState(T), [k, R] = i.useState(null), w = i.useMemo(() => A.find(e => e.key === k), [A, k]), D = i.useCallback(e => {
+    }), [A, x, u, o, C]), [T, I] = i.useState(E), [k, R] = i.useState(null), w = i.useMemo(() => A.find(e => e.key === k), [A, k]), D = i.useCallback(e => {
         I(e)
     }, []), {
         renderSelectedTab: M
     } = (0, z.Ay)({
         tabs: eA
     }, []);
-    (0, O.RT)(y, T, D, eC, [A]);
+    (0, O.RT)(y, E, D, eC, [A]);
     let P = i.useCallback(e => {
             r(e), g.A.setModuleLogging(e)
         }, []),
         [U, B] = i.useState(!1),
         F = i.useRef(null),
         V = i.useCallback(() => {
-            (0, L.C)(JSON.stringify(T)), B(!0)
-        }, [T]);
+            (0, L.C)(JSON.stringify(E)), B(!0)
+        }, [E]);
     i.useEffect(() => {
         if (U) return F.current = setTimeout(() => {
             B(!1)
@@ -1040,7 +1040,7 @@ function ey() {
             className: l()(Q.st, Q.CZ),
             children: (0, a.jsx)(K.A, {
                 columns: ef,
-                data: E,
+                data: T,
                 selectedRowKey: k ?? void 0,
                 onClickRow: e => R(e.key)
             })
@@ -1056,7 +1056,7 @@ function ey() {
     })
 }
 let eS = i.memo(function() {
-        let e = (0, c.bG)([E.A], () => E.A.getPopoutInitializationStages());
+        let e = (0, c.bG)([T.A], () => T.A.getPopoutInitializationStages());
         return (0, a.jsxs)("div", {
             className: Q.st,
             children: [(0, a.jsx)("div", {
@@ -1075,7 +1075,7 @@ let eS = i.memo(function() {
             })]
         })
     }),
-    eT = i.memo(function() {
+    eE = i.memo(function() {
         let e = (0, c.bG)([N.A], () => N.A.isStateDebuggingEnabled()),
             t = (0, c.bG)([N.A], () => N.A.getDebuggingState());
         return i.useEffect(() => (g.A.setStateDebugging(!0), () => {
@@ -1099,11 +1099,11 @@ let eS = i.memo(function() {
         })
     });
 
-function eE() {
+function eT() {
     return (0, a.jsx)(h.ArX, {
         children: (0, a.jsxs)("div", {
             className: l()(J.nd, Q.rf),
-            children: [(0, a.jsx)(eu, {}), (0, a.jsx)(eh, {}), (0, a.jsx)(em, {}), (0, a.jsx)(ed, {}), (0, a.jsx)(el, {}), (0, a.jsx)(eo, {}), (0, a.jsx)(eS, {}), (0, a.jsx)(eT, {})]
+            children: [(0, a.jsx)(eu, {}), (0, a.jsx)(eh, {}), (0, a.jsx)(em, {}), (0, a.jsx)(ed, {}), (0, a.jsx)(el, {}), (0, a.jsx)(eo, {}), (0, a.jsx)(eS, {}), (0, a.jsx)(eE, {})]
         })
     })
 }
@@ -1248,6 +1248,6 @@ function eR() {
                     children: "Experiments"
                 })
             })]
-        }), "state" === e && (0, a.jsx)(eE, {}), "logging" === e && (0, a.jsx)(ey, {}), "experiments" === e && (0, a.jsx)(eO, {})]
+        }), "state" === e && (0, a.jsx)(eT, {}), "logging" === e && (0, a.jsx)(ey, {}), "experiments" === e && (0, a.jsx)(eO, {})]
     })
 }

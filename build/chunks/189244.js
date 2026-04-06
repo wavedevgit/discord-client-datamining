@@ -32,8 +32,8 @@ function _() {
         C = e?.collectibles?.nameplate?.skuId,
         y = null != A ? b.find(e => e.skuId === A) ?? null : null,
         S = null != C ? j.find(e => e.skuId === C) ?? null : null,
-        T = (0, i.bG)([o.A], () => o.A.getProduct(y?.skuId)),
-        E = (0, i.bG)([o.A], () => o.A.getProduct(S?.skuId)),
+        E = (0, i.bG)([o.A], () => o.A.getProduct(y?.skuId)),
+        T = (0, i.bG)([o.A], () => o.A.getProduct(S?.skuId)),
         N = (0, i.bG)([r.A], () => r.A.fontSize),
         I = (0, i.bG)([r.A], () => r.A.messageGroupSpacing),
         k = h.Xi.useSetting();
@@ -74,10 +74,10 @@ function _() {
                 children: ["Client Theme ID:", " ", null != _ ? g.ag[_]?.getName() : "None"]
             }), (0, a.jsxs)(l.Text, {
                 variant: "text-md/normal",
-                children: ["Avatar Decoration: ", T?.name ?? "None"]
+                children: ["Avatar Decoration: ", E?.name ?? "None"]
             }), (0, a.jsxs)(l.Text, {
                 variant: "text-md/normal",
-                children: ["Nameplate: ", E?.name ?? "None"]
+                children: ["Nameplate: ", T?.name ?? "None"]
             }), (0, a.jsxs)(l.Text, {
                 variant: "text-md/normal",
                 children: ["Font Size: ", N, "px"]

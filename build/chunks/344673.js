@@ -25,7 +25,7 @@ var a = n(627968),
     C = n(985018),
     y = n(380649),
     S = n(310086);
-let T = [{
+let E = [{
         key: "id",
         cellClassName: y.Hz,
         render(e) {
@@ -53,7 +53,7 @@ let T = [{
             return t.toLocaleString()
         }
     }],
-    E = [{
+    T = [{
         id: "details",
         name: "Details",
         group: A.fu.NONE,
@@ -138,7 +138,7 @@ function N() {
         TabBar: g,
         renderSelectedTab: v
     } = (0, A.Ay)({
-        tabs: E
+        tabs: T
     }, []), N = (0, u.bG)([f.A], () => f.A.trackTriggers), I = i.useCallback(e => {
         x.h.dispatch({
             type: "SET_TRACK_TRIGGERS",
@@ -173,7 +173,7 @@ function N() {
                 onClick: _.eY
             })]
         }), (0, a.jsx)(j.A, {
-            columns: T,
+            columns: E,
             data: r,
             selectedRowKey: d,
             onClickRow: e => c(e.key)

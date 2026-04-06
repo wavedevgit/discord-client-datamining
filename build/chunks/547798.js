@@ -25,8 +25,8 @@ var a = n(627968),
     C = n(837921),
     y = n(652215),
     S = n(327337),
-    T = n(431804),
-    E = n(413269),
+    E = n(431804),
+    T = n(413269),
     N = n(885106);
 
 function I() {
@@ -38,20 +38,20 @@ function k() {
         [t, s] = i.useState(!1);
     return t ? {} : (0, a.jsxs)(c.HOs, {
         children: [(0, a.jsx)("div", {
-            className: l()(E.N, N.SX),
+            className: l()(T.N, N.SX),
             children: (0, a.jsx)(j.M, {})
         }), (0, a.jsx)("div", {
-            className: l()(E.N, N.QB),
+            className: l()(T.N, N.QB),
             children: (0, a.jsx)(c.Button, {
                 variant: "primary",
                 size: "sm",
                 text: "Launch Vibing Wumpus",
                 onClick: () => (0, _.A)({
-                    source: T.y.KEYBIND
+                    source: E.y.KEYBIND
                 })
             })
         }), (0, a.jsx)("div", {
-            className: l()(E.N, N.QB),
+            className: l()(T.N, N.QB),
             children: (0, a.jsx)(c.Button, {
                 variant: "primary",
                 size: "sm",
@@ -75,7 +75,7 @@ function k() {
                 }
             })
         }), (0, a.jsx)("div", {
-            className: l()(E.N, N.QB),
+            className: l()(T.N, N.QB),
             children: (0, a.jsx)(c.Button, {
                 variant: "primary",
                 size: "sm",
@@ -83,7 +83,7 @@ function k() {
                 onClick: () => (0, m.g)()
             })
         }), (0, a.jsx)("div", {
-            className: l()(E.N, N.QB),
+            className: l()(T.N, N.QB),
             children: (0, a.jsx)(c.Button, {
                 variant: "primary",
                 size: "sm",
@@ -91,7 +91,7 @@ function k() {
                 onClick: () => (0, g.$)("fortnite", "DevTools Quick Actions")
             })
         }), (0, a.jsx)("div", {
-            className: l()(E.N, N.QB),
+            className: l()(T.N, N.QB),
             children: (0, a.jsx)(c.Button, {
                 variant: "primary",
                 size: "sm",
@@ -99,7 +99,7 @@ function k() {
                 onClick: x.B7
             })
         }), (0, a.jsx)("div", {
-            className: l()(E.N, N.QB),
+            className: l()(T.N, N.QB),
             children: (0, a.jsx)(c.Button, {
                 variant: "primary",
                 size: "sm",
@@ -107,7 +107,7 @@ function k() {
                 onClick: d.Oy
             })
         }), (0, a.jsx)("div", {
-            className: l()(E.N, N.QB),
+            className: l()(T.N, N.QB),
             children: (0, a.jsx)(c.Button, {
                 variant: "primary",
                 size: "sm",
@@ -125,14 +125,14 @@ function k() {
                 }
             })
         }), (0, a.jsx)("div", {
-            className: l()(E.N, N.QB),
+            className: l()(T.N, N.QB),
             children: (0, a.jsx)(c.dOG, {
                 label: "Ignore profile speedbump disabled",
                 checked: e,
                 onChange: e => v.j0.updateSetting(e)
             })
         }), (0, a.jsxs)("div", {
-            className: l()(E.N, N.QB),
+            className: l()(T.N, N.QB),
             children: [(0, a.jsx)(c.Button, {
                 variant: "primary",
                 size: "sm",
@@ -174,7 +174,7 @@ function k() {
                 }
             })]
         }), (0, a.jsxs)("div", {
-            className: l()(E.N, N.QB),
+            className: l()(T.N, N.QB),
             children: [(0, a.jsx)(c.l6P, {
                 label: "Trigger native crash",
                 hideLabel: !0,

@@ -25,8 +25,8 @@ var a = n(627968),
     C = n(183555),
     y = n(950191),
     S = n(657331),
-    T = n(718019),
-    E = n(31432),
+    E = n(718019),
+    T = n(31432),
     N = n(915614),
     I = n(223330),
     k = n(559506),
@@ -98,8 +98,8 @@ function ea(e) {
         eC = (0, W.TW)(t),
         ey = i.useRef(null),
         eS = i.useRef(null),
-        eT = i.useRef((0, H.A)(e => e.shouldRenderTenureLevelUp)),
-        eE = i.useMemo(() => (0, v.A)(), []),
+        eE = i.useRef((0, H.A)(e => e.shouldRenderTenureLevelUp)),
+        eT = i.useMemo(() => (0, v.A)(), []),
         [eN, eI] = i.useState(!0);
     i.useEffect(() => {
         setTimeout(() => {
@@ -108,7 +108,7 @@ function ea(e) {
     }, []);
     let ek = e => {
             n?.(), (0, S.openUserProfileModal)({
-                customStatusPrompt: eE,
+                customStatusPrompt: eT,
                 sourceAnalyticsLocations: eo,
                 ...ed,
                 ...e
@@ -159,7 +159,7 @@ function ea(e) {
                                 user: t,
                                 displayProfile: el,
                                 themeType: Z.d.POPOUT
-                            }), (0, a.jsx)(T.A, {
+                            }), (0, a.jsx)(E.A, {
                                 user: t,
                                 displayProfile: el,
                                 themeType: Z.d.POPOUT,
@@ -169,7 +169,7 @@ function ea(e) {
                                 user: t,
                                 themeType: Z.d.POPOUT,
                                 onCloseProfile: n,
-                                prompt: eE
+                                prompt: eT
                             })]
                         }), (0, a.jsxs)(c.HOs, {
                             className: et.rf,
@@ -184,12 +184,12 @@ function ea(e) {
                                 nickname: V.Ay.getName(void 0, null, t),
                                 onOpenProfile: es ? void 0 : ek,
                                 pronouns: el?.pronouns,
-                                tags: (0, a.jsx)(E.A, {
+                                tags: (0, a.jsx)(T.A, {
                                     displayProfile: el,
                                     themeType: Z.d.POPOUT,
                                     onClose: n,
                                     shouldOpenBadgeTooltip: null != ea ? e => e === ea : void 0,
-                                    shouldGlowTenureBadge: eT.current
+                                    shouldGlowTenureBadge: eE.current
                                 }),
                                 nicknameIcons: (0, a.jsx)(M.A, {
                                     user: t,
@@ -307,7 +307,7 @@ function ea(e) {
                         }), null != er && (0, a.jsx)(f.A, {
                             frame: er,
                             layout: "ACCOUNT_POPOUT"
-                        }), el?.profileEffect != null && !eT.current && (0, a.jsx)(p.A, {
+                        }), el?.profileEffect != null && !eE.current && (0, a.jsx)(p.A, {
                             skuId: el.profileEffect.skuId,
                             isHovering: eh
                         })]

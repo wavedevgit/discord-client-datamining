@@ -36,14 +36,14 @@ let A = (0, r.animated)(x.Ay),
                 isExpansionAnimationComplete: y,
                 quest: S
             } = i.useContext(_.T),
-            T = i.useCallback(() => {
+            E = i.useCallback(() => {
                 (0, g.Zc)(S, {
                     content: d.uF.QUEST_BAR_V2,
                     ctaContent: c.Cy.OPEN_DISCLOSURE,
                     sourceQuestContent: d.uF.QUEST_BAR_V2
                 })
             }, [S]),
-            E = i.useCallback(() => {
+            T = i.useCallback(() => {
                 (0, m.pu)(S, {
                     content: d.uF.QUEST_BAR_V2,
                     ctaContent: c.Cy.OPEN_GAME_LINK,
@@ -53,7 +53,7 @@ let A = (0, r.animated)(x.Ay),
             }, [e, S]),
             N = C && y,
             I = (0, a.jsx)(o.DUT, {
-                onClick: E,
+                onClick: T,
                 className: l()(j.vk, {
                     [j.wm]: N
                 }),
@@ -102,7 +102,7 @@ let A = (0, r.animated)(x.Ay),
                 },
                 children: [(0, a.jsxs)(o.DUT, {
                     className: j.y8,
-                    onClick: T,
+                    onClick: E,
                     children: [(0, a.jsx)(o.Text, {
                         color: "always-white",
                         variant: "text-xs/normal",

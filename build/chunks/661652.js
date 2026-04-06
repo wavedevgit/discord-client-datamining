@@ -25,8 +25,8 @@ var a = n(627968),
     C = n(157257),
     y = n(985018),
     S = n(271469),
-    T = n(310086),
-    E = n(521807);
+    E = n(310086),
+    T = n(521807);
 let N = [{
     id: "unset",
     label: "Unset",
@@ -80,9 +80,9 @@ function I() {
         });
     return (0, a.jsxs)("div", {
         ref: s,
-        className: l()(T.nd, E.n),
+        className: l()(E.nd, T.n),
         children: [(0, a.jsxs)("div", {
-            className: E.k,
+            className: T.k,
             children: [(0, a.jsx)(d.Heading, {
                 variant: "heading-lg/normal",
                 children: "Settings"
@@ -95,7 +95,7 @@ function I() {
                 fullWidth: !0
             })]
         }), (0, a.jsxs)("div", {
-            className: E.k,
+            className: T.k,
             children: [(0, a.jsx)(d.Heading, {
                 variant: "heading-lg/normal",
                 children: "Application"
@@ -115,7 +115,7 @@ function I() {
                 children: ["Linked Games:", " ", M.length > 0 ? M.map(e => (0, h.t)(w)?.id === e.id ? `${e.name}*` : e.name).join(", ") : "N/A"]
             })]
         }), (0, a.jsxs)("div", {
-            className: E.k,
+            className: T.k,
             children: [(0, a.jsx)(d.Heading, {
                 variant: "heading-lg/normal",
                 children: "Authorization"

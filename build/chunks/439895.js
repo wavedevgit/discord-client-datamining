@@ -46,15 +46,15 @@ let p = e => {
             b = g || !f && v.size > 0,
             [j, A] = i.useState(""),
             [C, y] = i.useState(null),
-            [S, T] = i.useState(null);
+            [S, E] = i.useState(null);
         return (i.useEffect(() => {
             if ("" === j.trim() || !b) {
-                y(null), T(null);
+                y(null), E(null);
                 return
             }
             let e = d.A.getProduct(j),
                 t = d.A.getCategoryForProduct(j);
-            null != e && null != t ? (y(e), T(t)) : (y(null), T(null))
+            null != e && null != t ? (y(e), E(t)) : (y(null), E(null))
         }, [j, b]), f) ? (0, a.jsx)(l.Text, {
             variant: "text-md/normal",
             children: "Loading categories and collectibles..."

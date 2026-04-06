@@ -34,11 +34,11 @@ function b() {
         }, [n, t]),
         y = (0, x.i)(e => e.showSelfActivity),
         S = (0, x.i)(e => e.setShowSelfActivity),
-        T = (0, x.i)(e => e.recommendationApplicationIds),
-        E = (0, x.i)(e => e.setRecommendationApplicationIds),
+        E = (0, x.i)(e => e.recommendationApplicationIds),
+        T = (0, x.i)(e => e.setRecommendationApplicationIds),
         N = i.useCallback(e => {
-            e ? E(b) : E(null)
-        }, [b, E]),
+            e ? T(b) : T(null)
+        }, [b, T]),
         I = (0, r.bG)([h.A], () => null != h.A.testModeApplicationId),
         k = i.useCallback(e => {
             e ? (0, o.qfG)(e => (0, a.jsx)(m.A, {
@@ -87,10 +87,10 @@ function b() {
                 label: "Recommendation application IDs",
                 value: b,
                 onChange: j,
-                disabled: null == T
+                disabled: null == E
             }), (0, a.jsx)(o.dOG, {
                 label: "Enable recommendation application IDs override",
-                checked: null != T,
+                checked: null != E,
                 onChange: N
             })]
         })

@@ -25,8 +25,8 @@ var a = n(627968),
     C = n(590202),
     y = n(651892),
     S = n(901406),
-    T = n(792620),
-    E = n(814793),
+    E = n(792620),
+    T = n(814793),
     N = n(895253),
     I = n(241124),
     k = n(442734),
@@ -153,7 +153,7 @@ function ee(e) {
         taskDetails: h
     } = i.useContext(V.T), {
         expansionSpring: p
-    } = i.useContext(L.PW), _ = i.useRef(null), S = (0, d.bG)([g.A], () => g.A.isEnrolling(o.id), [o]), T = i.useMemo(() => (0, A.tW)(o, A.fY.QUEST_BAR_HERO), [o]), E = (0, b.NA)({
+    } = i.useContext(L.PW), _ = i.useRef(null), S = (0, d.bG)([g.A], () => g.A.isEnrolling(o.id), [o]), E = i.useMemo(() => (0, A.tW)(o, A.fY.QUEST_BAR_HERO), [o]), T = (0, b.NA)({
         quest: o
     }), w = i.useMemo(() => (0, A.tW)(o, A.fY.HERO_IMAGE), [o]), P = i.useMemo(() => null == w ? {} : {
         backgroundImage: `url(${w.url})`
@@ -223,7 +223,7 @@ function ee(e) {
                         }) : (0, a.jsx)(u.Button, {
                             onClick: t ? s : void 0,
                             loading: S,
-                            text: E,
+                            text: T,
                             size: "sm",
                             icon: (0, M.Oz)(o),
                             fullWidth: !0
@@ -250,12 +250,12 @@ function ee(e) {
                 backdropFilter: (0, D.Q)(p.to([0, 1], [5, 0]).to(e => `blur(${e}px)`)),
                 filter: (0, D.Q)(p.to([0, 1], [.8, 1]).to(e => `brightness(${e})`))
             },
-            children: [T.isAnimated ? (0, a.jsx)(I.Sn, {
+            children: [E.isAnimated ? (0, a.jsx)(I.Sn, {
                 id: "QuestBarContentExpanded_heroAnimated",
                 children: e => (0, a.jsx)(J, {
                     ref: e,
                     autoPlay: !0,
-                    asset: T,
+                    asset: E,
                     className: Q.LO
                 })
             }) : (0, a.jsx)(I.Sn, {
@@ -264,7 +264,7 @@ function ee(e) {
                     ref: e,
                     alt: "",
                     className: Q.LO,
-                    src: T.url
+                    src: E.url
                 })
             }), (0, a.jsx)("div", {
                 className: Q.tV
@@ -284,7 +284,7 @@ function et(e) {
         expansionSpring: c
     } = i.useContext(L.PW), u = s.userStatus?.completedAt != null, m = d.percentComplete > 0, h = (0, j.Vn)(s), [x, p, g] = (0, j.Qo)(s, d), _ = i.useRef(null), v = i.useRef(null), b = (0, j.RR)({
         quest: s
-    }), A = (0, T.vv)(s), y = (0, j.I3)(s), E = i.useCallback(() => {
+    }), A = (0, E.vv)(s), y = (0, j.I3)(s), T = i.useCallback(() => {
         (0, M.d5)({
             quest: s,
             questContent: f.uF.QUEST_BAR_V2,
@@ -332,7 +332,7 @@ function et(e) {
                 })).exhaustive()
             }), (0, a.jsxs)(F.T, {
                 children: [A && (0, a.jsx)(X, {
-                    onClick: E
+                    onClick: T
                 }), (0, a.jsx)(U.f, {
                     awaitingConsoleConnections: b,
                     hasMadeProgress: m,
@@ -352,12 +352,12 @@ function et(e) {
     })
 }
 async function en(e, t, n, a) {
-    (0, T.vv)(e) ? await (0, M.e0)(e, {
+    (0, E.vv)(e) ? await (0, M.e0)(e, {
         questContent: t,
         questContentCTA: n,
         sourceQuestContent: a,
         sourceQuestContentCTA: n
-    }) : (0, E.vA)(e) ? await (0, p.Oy)(e.id, {
+    }) : (0, T.vA)(e) ? await (0, p.Oy)(e.id, {
         questContent: t,
         questContentCTA: n,
         sourceQuestContent: a
@@ -381,7 +381,7 @@ let ea = i.forwardRef(function(e, t) {
         expansionSpring: h
     } = i.useContext(L.PW), {
         launchInGameActivity: x
-    } = (0, j.zW)(m), p = (0, E.vA)(m), g = i.useCallback(async () => {
+    } = (0, j.zW)(m), p = (0, T.vA)(m), g = i.useCallback(async () => {
         let e = p ? C.Cy.START_QUEST : C.Cy.ACCEPT_QUEST;
         await en(m, f.uF.QUEST_BAR_V2, e, f.uF.QUEST_BAR_V2), p && x()
     }, [m, x, p]), _ = m.userStatus?.enrolledAt != null, v = c && u;

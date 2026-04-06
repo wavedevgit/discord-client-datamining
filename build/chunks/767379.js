@@ -1,6 +1,6 @@
 /** chunk id: 767379 params = (module,exports,require) **/
 n.d(t, {
-    default: () => E
+    default: () => T
 });
 var a = n(627968),
     i = n(64700),
@@ -26,7 +26,7 @@ var a = n(627968),
     y = n(774992),
     S = n(700129);
 
-function T(e) {
+function E(e) {
     let {
         modalSessionId: t,
         entryPoint: n
@@ -47,13 +47,13 @@ function T(e) {
         }
     }) : null
 }
-let E = function(e) {
+let T = function(e) {
     let {
         transitionState: t,
         entryPoint: n,
         onClose: u,
         onComplete: j,
-        dismissable: E,
+        dismissable: T,
         classificationId: N
     } = e, [I, k] = i.useState(r.M.AGE_VERIFICATION_SURVEY_MODAL_GET_STARTED), O = i.useRef(I), [R, w] = (0, d.kn)([I], void 0, !0), D = i.useMemo(() => (0, s.A)(), []), M = i.useRef(!1), P = (0, m.W$)();
     i.useEffect(() => {
@@ -84,7 +84,7 @@ let E = function(e) {
         transitionState: t,
         onClose: u,
         gradientColor: "blue",
-        dismissable: E,
+        dismissable: T,
         graphic: {
             type: "image",
             src: S.A
@@ -93,7 +93,7 @@ let E = function(e) {
         subtitle: (0, _.mK)(n, () => {
             p.A.openUrl(x.A.getArticleURL(b.MVz.TIGGER_PAWTECT_LEARN_MORE)), (0, g.St)(D, g.WU.EXPRESSIVE_PRIMARY, g._7.LEARN_MORE)
         }, P),
-        actionBarInput: (0, a.jsx)(T, {
+        actionBarInput: (0, a.jsx)(E, {
             modalSessionId: D,
             entryPoint: n
         }),
