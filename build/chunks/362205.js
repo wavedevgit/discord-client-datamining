@@ -13,8 +13,8 @@ var r = n(627968),
     c = n(942381),
     d = n(837381),
     h = n(935399),
-    f = n(319354),
-    m = n(397927),
+    m = n(319354),
+    f = n(397927),
     p = n(775602),
     _ = n(253932),
     v = n(894858),
@@ -36,16 +36,16 @@ function N(e) {
         useTitle: s,
         useSubnavLabel: u,
         key: c
-    } = t, h = s?.(), f = u?.() ?? h;
-    return o()(null != f, "[SettingsSubnavigationCategory] Category must have a title"), (0, r.jsx)(d.tG, {
+    } = t, h = s?.(), m = u?.() ?? h;
+    return o()(null != m, "[SettingsSubnavigationCategory] Category must have a title"), (0, r.jsx)(d.tG, {
         id: c,
-        children: e => (0, r.jsxs)(m.DUT, {
+        children: e => (0, r.jsxs)(f.DUT, {
             onClick: n,
             className: a()(b.AS, {
                 [b.vu]: i
             }),
             ...e,
-            children: [f, null != l && !i && (0, r.jsx)(E.A, {
+            children: [m, null != l && !i && (0, r.jsx)(E.A, {
                 badge: l
             })]
         }, c)
@@ -78,21 +78,21 @@ function C(e) {
     let h = i.useMemo(() => Math.max(n.findIndex(e => e.key === s), 0), [n, s]);
     i.useEffect(() => {
         if (!t) {
-            let e = f.current;
+            let e = m.current;
             null != e && (e.style.height = `${e.scrollHeight}px`, window.getComputedStyle(e).height, e.style.height = "0", Promise.allSettled(e.getAnimations().map(e => e.finished)).then(() => {
                 d(!1)
             }))
         }
     }, [t]);
-    let f = i.useRef(null),
-        [m, p] = i.useState(t ? "auto" : "0");
+    let m = i.useRef(null),
+        [f, p] = i.useState(t ? "auto" : "0");
     return (0, S.u)(n, t), (0, r.jsx)("div", {
         className: b.lK,
         style: {
-            height: m,
+            height: f,
             opacity: +!!t
         },
-        ref: f,
+        ref: m,
         children: u && (0, r.jsx)(j, {
             index: h,
             activeKey: s,
@@ -100,7 +100,7 @@ function C(e) {
             visibleContent: l,
             dismissibleBadges: a,
             onMount: function() {
-                let e = f.current;
+                let e = m.current;
                 null != e && (e.style.height = `${e.scrollHeight}px`, Promise.all(e.getAnimations().map(e => e.finished)).then(() => {
                     e.style.height = "auto", g.A.scrollSidebarNodeIntoView(e, {
                         animate: !0,
@@ -132,7 +132,7 @@ function j(e) {
             l = i.useRef(null),
             a = i.useRef(!0),
             s = i.useRef(t),
-            [o, u] = (0, m.zhh)(() => ({
+            [o, u] = (0, f.zhh)(() => ({
                 y: 0,
                 height: 0,
                 config: {
@@ -145,10 +145,10 @@ function j(e) {
             let e = s.current !== t,
                 i = () => {
                     if (null == n.current || null == r.current || null == l.current) return;
-                    let [i, c] = [n.current.getBoundingClientRect(), l.current.getBoundingClientRect()], d = i.width / 2, h = (c.y - i.y) / d, f = c.height / d;
-                    a.current || e || p.A.useReducedMotion ? (o.y.set(h), o.height.set(f)) : u({
+                    let [i, c] = [n.current.getBoundingClientRect(), l.current.getBoundingClientRect()], d = i.width / 2, h = (c.y - i.y) / d, m = c.height / d;
+                    a.current || e || p.A.useReducedMotion ? (o.y.set(h), o.height.set(m)) : u({
                         y: h,
-                        height: f
+                        height: m
                     }), a.current = !1, s.current = t
                 },
                 c = null;
@@ -171,7 +171,7 @@ function j(e) {
             "--custom-nav-count": l.length,
             "--custom-nav-index": t,
             "--custom-nav-width": "2px",
-            "--custom-icon-size": `${f.E[A.V]}px`
+            "--custom-icon-size": `${m.E[A.V]}px`
         },
         children: [(0, r.jsx)("div", {
             className: b.u4,

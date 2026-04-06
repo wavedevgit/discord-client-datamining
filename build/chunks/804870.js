@@ -1,7 +1,7 @@
 /** chunk id: 804870 params = (module,exports,require) **/
 i.d(t, {
     Ay: () => b,
-    Zu: () => O,
+    Zu: () => y,
     uz: () => _
 });
 var r = i(627968),
@@ -16,52 +16,52 @@ var r = i(627968),
     I = i(590180),
     h = i(572595),
     m = i(245068),
-    g = i(57020),
-    S = i(713517),
-    f = i(44120),
-    L = i(976860),
+    S = i(57020),
+    g = i(713517),
+    L = i(44120),
+    f = i(976860),
     A = i(661492),
     E = i(111085),
     x = i(594832),
     k = i(657331),
     M = i(353157),
     v = i(798048),
-    j = i(652215),
-    w = i(788868),
-    C = i(985018),
-    p = i(664281),
+    C = i(652215),
+    j = i(788868),
+    p = i(985018),
+    w = i(664281),
     R = i(476324);
-let y = e => {
+let O = e => {
     let {
         size: t = a._3J.SIZE_80
     } = e;
     return (0, r.jsx)(a.euF, {
-        className: p.RH,
+        className: w.RH,
         src: R,
         size: t,
-        "aria-label": C.intl.string(C.t.lqaIxI)
+        "aria-label": p.intl.string(p.t.lqaIxI)
     })
 };
 
-function O(e) {
+function y(e) {
     let {
         cardSize: t = v.Y.MEDIUM
     } = e, i = s.useRef(null), n = s.useRef(null);
     return (0, r.jsx)("div", {
         ref: i,
-        className: p.kL,
+        className: w.kL,
         children: (0, r.jsx)("div", {
             ref: n,
-            className: l()(p.Nr, p.Yf, {
-                [p.IU]: t === v.Y.SMALL,
-                [p.D]: t === v.Y.MEDIUM_SQUARE,
-                [p.Sd]: t === v.Y.LARGE
+            className: l()(w.Nr, w.Yf, {
+                [w.IU]: t === v.Y.SMALL,
+                [w.D]: t === v.Y.MEDIUM_SQUARE,
+                [w.Sd]: t === v.Y.LARGE
             }),
             children: (0, r.jsx)("div", {
-                className: p.ho,
+                className: w.ho,
                 children: (0, r.jsx)("div", {
-                    className: p._P,
-                    children: (0, r.jsx)(y, {
+                    className: w._P,
+                    children: (0, r.jsx)(O, {
                         size: a._3J.SIZE_80
                     })
                 })
@@ -79,25 +79,25 @@ function _(e) {
         renderItemPreview: o
     } = e, d = s.useRef(null), c = s.useRef(null), {
         isHoveringOrFocusing: I
-    } = (0, S.A)(c), h = !0 === t.isOwned;
+    } = (0, g.A)(c), h = !0 === t.isOwned;
     return (0, r.jsx)("div", {
         ref: d,
-        className: p.kL,
+        className: w.kL,
         children: (0, r.jsx)(a.DUT, {
             tag: "div",
             innerRef: c,
             onClick: u,
-            className: l()(p.Nr, p.xJ, {
-                [p.IU]: i === v.Y.SMALL
+            className: l()(w.Nr, w.xJ, {
+                [w.IU]: i === v.Y.SMALL
             }),
             children: (0, r.jsxs)("div", {
-                className: l()(p.ho, p.jP),
+                className: l()(w.ho, w.jP),
                 children: [o(!h && I), (0, r.jsx)("div", {
-                    className: p.RF,
+                    className: w.RF,
                     children: (0, r.jsx)(a.Text, {
                         variant: "text-md/medium",
                         color: "always-white",
-                        children: C.intl.format(C.t.F6iMs4, {
+                        children: p.intl.format(p.t.F6iMs4, {
                             count: n
                         })
                     })
@@ -112,35 +112,35 @@ function b(e) {
         profileOwner: t,
         showIcons: i = !1,
         source: n = x.uS.WISHLIST,
-        giftingOrigin: l = w.vQ.USER_PROFILE_WISHLIST,
+        giftingOrigin: l = j.vQ.USER_PROFILE_WISHLIST,
         heartColor: R = "red",
-        onWishlistItemClick: y,
-        cardSize: O = v.Y.MEDIUM,
+        onWishlistItemClick: O,
+        cardSize: y = v.Y.MEDIUM,
         analyticsLocations: _,
         isDragging: b = !1,
-        ...U
+        ...T
     } = e, {
-        item: T,
+        item: U,
         isOwner: P
-    } = U, {
-        analyticsLocations: H
-    } = (0, c.Ay)(..._ ?? []), N = (0, u.zy)(), Y = s.useRef(null), {
+    } = T, {
+        analyticsLocations: N
+    } = (0, c.Ay)(..._ ?? []), H = (0, u.zy)(), Y = s.useRef(null), {
         isHoveringOrFocusing: F
-    } = (0, S.A)(Y), [z] = (0, o.yK)([E.A], () => [E.A.hasSentGift(T.skuId, t.id)], [T.skuId, t.id]), W = z || !0 === T.isOwned, D = null != T.bundleItems && T.bundleItems.length > 0, G = (0, A.x2)(T), B = P || W ? C.intl.string(C.t.FdGl5A) : C.intl.string(C.t.ilhtIa), Z = P || W ? void 0 : a.okO, q = s.useCallback(() => {
-        let e = N.pathname.startsWith(j.BVt.COLLECTIBLES_SHOP);
+    } = (0, g.A)(Y), [z] = (0, o.yK)([E.A], () => [E.A.hasSentGift(U.skuId, t.id)], [U.skuId, t.id]), W = z || !0 === U.isOwned, D = null != U.bundleItems && U.bundleItems.length > 0, G = (0, A.x2)(U), B = P || W ? p.intl.string(p.t.FdGl5A) : p.intl.string(p.t.ilhtIa), Z = P || W ? void 0 : a.okO, V = s.useCallback(() => {
+        let e = H.pathname.startsWith(C.BVt.COLLECTIBLES_SHOP);
         if (P || W) {
             let t = !P && W;
             if (e) {
-                let e = I.A.getProduct(T.skuId),
-                    i = I.A.getCategoryForProduct(T.skuId);
+                let e = I.A.getProduct(U.skuId),
+                    i = I.A.getCategoryForProduct(U.skuId);
                 if (null != e && null != i) {
                     t || (0, k.closeUserProfileModal)(), (0, h.t)({
                         product: e,
                         category: i,
-                        shouldCheckoutWithOrbs: (0, g.A)({
+                        shouldCheckoutWithOrbs: (0, S.A)({
                             product: e
                         }),
-                        analyticsLocations: H,
+                        analyticsLocations: N,
                         analyticsSource: d.A.USER_PROFILE_WISHLIST,
                         returnRef: void 0,
                         tab: void 0
@@ -148,20 +148,20 @@ function b(e) {
                     return
                 }
             }
-            t || (0, k.closeUserProfileModal)(), (0, L.pX)(`${j.BVt.COLLECTIBLES_SHOP}#itemSkuId=${T.skuId}`)
-        } else y?.(), (0, f.A)({
-            skuId: T.skuId,
+            t || (0, k.closeUserProfileModal)(), (0, f.pX)(`${C.BVt.COLLECTIBLES_SHOP}#itemSkuId=${U.skuId}`)
+        } else O?.(), (0, L.A)({
+            skuId: U.skuId,
             isGift: !0,
             giftingOrigin: l,
-            analyticsLocations: H,
+            analyticsLocations: N,
             giftRecipient: t
         })
-    }, [N.pathname, T.skuId, H, P, W, t, l, y]), J = O === v.Y.MEDIUM_SQUARE, V = s.useCallback(() => {
-        if (!i || D && !J) return null;
+    }, [H.pathname, U.skuId, N, P, W, t, l, O]), q = y === v.Y.MEDIUM_SQUARE, J = s.useCallback(() => {
+        if (!i || D && !q) return null;
         if (n === x.uS.WISHLIST) {
-            let e = "white" === R ? p.e_ : p.Be;
+            let e = "white" === R ? w.e_ : w.Be;
             return (0, r.jsx)("div", {
-                className: p.Fx,
+                className: w.Fx,
                 children: (0, r.jsx)(a.C3E, {
                     size: "custom",
                     width: 20,
@@ -172,22 +172,22 @@ function b(e) {
             })
         }
         return n === x.uS.POPULAR ? (0, r.jsx)("div", {
-            className: p.Fx,
+            className: w.Fx,
             children: (0, r.jsx)(a.Y3C, {
                 size: "custom",
                 width: 20,
                 height: 20,
                 color: "currentColor",
-                colorClass: p.rY
+                colorClass: w.rY
             })
         }) : null
-    }, [D, i, n, R, J]), Q = s.useCallback(() => {
+    }, [D, i, n, R, q]), Q = s.useCallback(() => {
         if (D) {
             let e = {
-                items: T.bundleItems
+                items: U.bundleItems
             };
             return (0, r.jsx)("div", {
-                className: p.hT,
+                className: w.hT,
                 children: (0, r.jsx)(m.X, {
                     product: e,
                     isHighlighted: F && !b,
@@ -196,24 +196,24 @@ function b(e) {
             })
         }
         return (0, r.jsx)(M.A, {
-            item: T,
+            item: U,
             profileOwner: t,
             isHighlighted: F && !b,
-            cardSize: O
+            cardSize: y
         })
-    }, [D, T, t, F, O, b]);
+    }, [D, U, t, F, y, b]);
     return (0, r.jsx)(v.A, {
-        ...U,
+        ...T,
         cardRef: Y,
         accessibleLabel: G,
-        onCardClick: q,
+        onCardClick: V,
         buttonCTALabel: B,
         buttonIcon: Z,
         isOwned: W,
         renderItemPreview: Q,
-        renderSourceIcon: V,
+        renderSourceIcon: J,
         giftingOrigin: l,
         source: n,
-        cardSize: O
+        cardSize: y
     })
 }

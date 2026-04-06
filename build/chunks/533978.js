@@ -70,9 +70,12 @@ function T(e) {
     function Y() {
         (0, u.X)(y, u.O.SOUNDBOARD), S === C.P.SOUNDBOARD ? (b?.(void 0), K()) : (null != S ? (j(), F()) : j(), b?.(C.P.SOUNDBOARD))
     }
-    let z = l.useRef(null);
+    let z = l.useCallback(() => {
+            null == S && b?.(C.P.SOUNDBOARD)
+        }, [S, b]),
+        q = l.useRef(null);
     return (0, i.jsx)(o.Y, {
-        targetElementRef: z,
+        targetElementRef: q,
         shouldShow: V && (S === C.P.SOUNDBOARD || null == S) || S === C.P.SOUNDBOARD,
         animation: o.Y.Animation.FADE,
         animationPosition: "top",
@@ -90,6 +93,7 @@ function T(e) {
                 children: (0, i.jsx)("div", {
                     onMouseEnter: F,
                     onMouseLeave: K,
+                    onMouseDown: z,
                     children: (0, i.jsx)(p.A, {
                         guildId: L,
                         channel: t,
@@ -104,7 +108,7 @@ function T(e) {
             })
         },
         children: () => (0, i.jsx)(I.l, {
-            ref: z,
+            ref: q,
             isTrayButton: !0,
             themeable: T,
             label: M ? N.intl.string(N.t["Ox4/zU"]) : D ? N.intl.string(N.t["+YBKYI"]) : U ? N.intl.string(N.t.X1lQli) : void 0,

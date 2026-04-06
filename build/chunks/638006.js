@@ -28,7 +28,7 @@ let k = e => {
         } = e, l = (0, p.YW)(t), {
             isPurchased: a,
             isPartiallyOwnedBundle: u
-        } = (0, m.h)(t), o = l === s.R.PROFILE_EFFECT;
+        } = (0, m.h)(t), o = l === s.R.PROFILE_EFFECT || l === s.R.BUNDLE;
         return (0, n.jsxs)(n.Fragment, {
             children: [(0, n.jsx)("div", {
                 className: i()(I.mA, {
