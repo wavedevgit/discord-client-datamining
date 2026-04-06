@@ -25,8 +25,8 @@ var l = n(311907),
     j = n(555337),
     N = n(458907),
     E = n(719175),
-    b = n(643674),
-    C = n(156057),
+    C = n(643674),
+    b = n(156057),
     T = n(652215),
     I = n(985018),
     v = n(814579);
@@ -76,19 +76,19 @@ let S = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
             canManageGuild: R
         } = (0, l.cf)([_.A], () => ({
             canManageGuild: _.A.can(T.xBc.MANAGE_GUILD, t)
-        })), O = (0, l.bG)([j.A], () => j.A.isGuildMetadataLoaded()), L = (0, l.bG)([j.A], () => null != t ? j.A.getMetadata() : null), G = (0, l.bG)([j.A], () => null != t && L?.isPublished ? j.A.getSlug() : null), [D, M] = s.useState([!0]), [k, U] = s.useState(!0), [P, w] = s.useState([!1]), [B, F] = s.useState([""]);
+        })), O = (0, l.bG)([j.A], () => j.A.isGuildMetadataLoaded()), G = (0, l.bG)([j.A], () => null != t ? j.A.getMetadata() : null), L = (0, l.bG)([j.A], () => null != t && G?.isPublished ? j.A.getSlug() : null), [D, M] = s.useState([!0]), [k, U] = s.useState(!0), [P, w] = s.useState([!1]), [B, F] = s.useState([""]);
         s.useEffect(() => {
-            if (null !== L) {
+            if (null !== G) {
                 let e = [],
                     t = [];
-                L.socialLinks.forEach((n, i) => {
+                G.socialLinks.forEach((n, i) => {
                     if ("" !== n) {
                         let s = (e => {
                             try {
                                 let t = new URL(e).hostname.split(".");
-                                if (3 === t.length && "bandcamp" === t[1].toLowerCase()) return C.x.bandcamp.presentation;
+                                if (3 === t.length && "bandcamp" === t[1].toLowerCase()) return b.x.bandcamp.presentation;
                                 let n = t.shift()?.toLowerCase() ?? "";
-                                if ("www" === n && (n = t.shift()?.toLowerCase() ?? ""), n in C.x) return C.x[n].presentation;
+                                if ("www" === n && (n = t.shift()?.toLowerCase() ?? ""), n in b.x) return b.x[n].presentation;
                                 return null
                             } catch {
                                 return null
@@ -98,9 +98,9 @@ let S = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                     } else e[i] = !0
                 }), F(t), M(e), U(e.every(e => !0 === e))
             }
-        }, [L]);
+        }, [G]);
         let H = (0, l.bG)([j.A], () => null != t ? j.A.getErrors() : null);
-        if (null == t || null == L) return null;
+        if (null == t || null == G) return null;
         let V = e => {
                 f.A.updateGuild({
                     discoverySplash: e
@@ -110,26 +110,26 @@ let S = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                 let i = () => {
                     (0, m.Ok)(t.id, e), e ? (0, m.Oh)({
                         guildId: t.id,
-                        primaryCategoryId: L.primaryCategoryId,
-                        keywords: L.keywords,
-                        emojiDiscoverabilityEnabled: L.emojiDiscoverabilityEnabled,
-                        partnerActionedTimestamp: L.partnerActionedTimestamp,
-                        partnerApplicationTimestamp: L.partnerApplicationTimestamp,
+                        primaryCategoryId: G.primaryCategoryId,
+                        keywords: G.keywords,
+                        emojiDiscoverabilityEnabled: G.emojiDiscoverabilityEnabled,
+                        partnerActionedTimestamp: G.partnerActionedTimestamp,
+                        partnerApplicationTimestamp: G.partnerApplicationTimestamp,
                         isPublished: !0,
-                        reasonsToJoin: L.reasonsToJoin,
-                        socialLinks: L.socialLinks,
-                        about: L.about
+                        reasonsToJoin: G.reasonsToJoin,
+                        socialLinks: G.socialLinks,
+                        about: G.about
                     }) : (0, m.Oh)({
                         guildId: t.id,
-                        primaryCategoryId: L.primaryCategoryId,
-                        keywords: L.keywords,
-                        emojiDiscoverabilityEnabled: L.emojiDiscoverabilityEnabled,
-                        partnerActionedTimestamp: L.partnerActionedTimestamp,
-                        partnerApplicationTimestamp: L.partnerApplicationTimestamp,
+                        primaryCategoryId: G.primaryCategoryId,
+                        keywords: G.keywords,
+                        emojiDiscoverabilityEnabled: G.emojiDiscoverabilityEnabled,
+                        partnerActionedTimestamp: G.partnerActionedTimestamp,
+                        partnerApplicationTimestamp: G.partnerApplicationTimestamp,
                         isPublished: !1,
-                        reasonsToJoin: L.reasonsToJoin,
-                        socialLinks: L.socialLinks,
-                        about: L.about
+                        reasonsToJoin: G.reasonsToJoin,
+                        socialLinks: G.socialLinks,
+                        about: G.about
                     }), f.A.saveGuild(t.id, {
                         discoverySplash: t.discoverySplash,
                         description: t.description
@@ -156,16 +156,16 @@ let S = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                     completed: null !== t.description && "" !== t.description
                 }, {
                     description: I.intl.string(I.t.m3b3WL),
-                    completed: null !== L.about && L.about.length >= 300 && L.about.length <= 2400
+                    completed: null !== G.about && G.about.length >= 300 && G.about.length <= 2400
                 }, {
                     description: I.intl.string(I.t.qpx5MN),
-                    completed: null !== L.reasonsToJoin && L.reasonsToJoin.every(e => (e => {
+                    completed: null !== G.reasonsToJoin && G.reasonsToJoin.every(e => (e => {
                         let {
                             reason: t = "",
                             emoji_name: n = ""
                         } = e;
                         return (null === t || "" === t) && null === n
-                    })(e) || W(e)) && L.reasonsToJoin.filter(W).length >= 2
+                    })(e) || W(e)) && G.reasonsToJoin.filter(W).length >= 2
                 }]
             }],
             Y = (e, t) => {
@@ -203,8 +203,8 @@ let S = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                                     }), (0, i.jsxs)(o.BJc, {
                                         gap: 40,
                                         children: [(() => {
-                                            if (!L.isPublished || null == G) return;
-                                            let e = S + G;
+                                            if (!G.isPublished || null == L) return;
+                                            let e = S + L;
                                             return (0, i.jsxs)(o.BJc, {
                                                 gap: 16,
                                                 children: [(0, i.jsx)(o.D0$, {
@@ -225,12 +225,12 @@ let S = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                                                     label: I.intl.string(I.t.GjPpSu),
                                                     description: I.intl.string(I.t.MVXonM),
                                                     guildId: t.id,
-                                                    guildMetadata: L,
+                                                    guildMetadata: G,
                                                     isDisabled: !R
                                                 }), (0, i.jsx)(E.A, {
                                                     label: I.intl.string(I.t.oOPlPA),
                                                     guild: t,
-                                                    guildMetadata: L,
+                                                    guildMetadata: G,
                                                     disabled: !R
                                                 }), H?.category != null ? (0, i.jsx)(o.Text, {
                                                     color: "text-feedback-critical",
@@ -282,16 +282,16 @@ let S = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                                             maxLength: 300,
                                             disabled: !R
                                         }), (0, i.jsx)(o.cGx, {}), (() => {
-                                            if (null == L) return null;
-                                            let e = 0 === L.reasonsToJoin.length ? [, , , , ].fill({
+                                            if (null == G) return null;
+                                            let e = 0 === G.reasonsToJoin.length ? [, , , , ].fill({
                                                 reason: "",
                                                 emoji_name: null
-                                            }) : L.reasonsToJoin;
+                                            }) : G.reasonsToJoin;
                                             return (0, i.jsx)(o.D0$, {
                                                 label: I.intl.string(I.t.vUmXsR),
                                                 description: I.intl.string(I.t.esnBnW),
                                                 errorMessage: H?.reasons_to_join != null ? H.reasons_to_join : void 0,
-                                                children: (0, i.jsx)(b.A, {
+                                                children: (0, i.jsx)(C.A, {
                                                     reasonMinLength: 10,
                                                     reasonMaxLength: 128,
                                                     guildId: t.id,
@@ -304,7 +304,7 @@ let S = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                                             error: H?.about != null ? H.about : void 0,
                                             showCharacterCount: !0,
                                             rows: 10,
-                                            value: L.about,
+                                            value: G.about,
                                             placeholder: I.intl.string(I.t.TduTbs),
                                             onChange: e => {
                                                 (0, m.xN)(t.id, e)
@@ -312,15 +312,15 @@ let S = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                                             minLength: 300,
                                             maxLength: 2400,
                                             disabled: !R,
-                                            defaultDirty: L.about?.length > 0
+                                            defaultDirty: G.about?.length > 0
                                         }, `text-area-${O}`), (0, i.jsx)(o.cGx, {}), (0, i.jsxs)(o.D0$, {
                                             label: I.intl.string(I.t.V5mNyb),
                                             description: I.intl.string(I.t.d3kA9a),
                                             errorMessage: H?.social_links != null ? H.social_links : void 0,
-                                            children: [L.socialLinks.map((e, n) => {
+                                            children: [G.socialLinks.map((e, n) => {
                                                 var s;
                                                 let l, r = B[n],
-                                                    a = Object.values(C.x).find(e => e.presentation === r),
+                                                    a = Object.values(b.x).find(e => e.presentation === r),
                                                     d = null != a ? `${a.baseUrl}` : void 0;
                                                 return (0, i.jsxs)("div", {
                                                     className: v.Au,
@@ -330,7 +330,7 @@ let S = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                                                     onBlur: () => Y(n, !1),
                                                     children: [(0, i.jsx)(o.l6P, {
                                                         selectionMode: "single",
-                                                        options: (s = B[n], l = Object.entries(C.x).filter(e => !B.includes(e[1].presentation)).map(e => ({
+                                                        options: (s = B[n], l = Object.entries(b.x).filter(e => !B.includes(e[1].presentation)).map(e => ({
                                                             id: e[0],
                                                             label: e[1].presentation,
                                                             value: e[0]
@@ -345,7 +345,7 @@ let S = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                                                         value: B[n],
                                                         onSelectionChange: e => {
                                                             let i, s, l;
-                                                            return i = [...L.socialLinks], s = [...B], l = [...D], void(s[n] = e, i[n] = C.x[e].baseUrl, l[n] = !0, M(l), F(s), U(l.every(e => !0 === e)), (0, m.uh)(t.id, i))
+                                                            return i = [...G.socialLinks], s = [...B], l = [...D], void(s[n] = e, i[n] = b.x[e].baseUrl, l[n] = !0, M(l), F(s), U(l.every(e => !0 === e)), (0, m.uh)(t.id, i))
                                                         },
                                                         disabled: !R
                                                     }), (0, i.jsx)(o.ksK, {
@@ -353,7 +353,7 @@ let S = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                                                         onChange: e => {
                                                             var i;
                                                             let s, l, r;
-                                                            return i = `${d}${e}`, l = (s = [...L.socialLinks])[n], r = i, 0 === l.length && r.length > 1 && !1 === RegExp("^https?:").test(r) && (r = "https://" + r), void(!/\.(zip|exe|pdf|dmg|msi|apk|rar|7z|tar|gz|iso|docx?|xlsx?|pptx?|mp4|mp3)$/i.test(r) && (s[n] = r, (0, m.uh)(t.id, s)))
+                                                            return i = `${d}${e}`, l = (s = [...G.socialLinks])[n], r = i, 0 === l.length && r.length > 1 && !1 === RegExp("^https?:").test(r) && (r = "https://" + r), void(!/\.(zip|exe|pdf|dmg|msi|apk|rar|7z|tar|gz|iso|docx?|xlsx?|pptx?|mp4|mp3)$/i.test(r) && (s[n] = r, (0, m.uh)(t.id, s)))
                                                         },
                                                         placeholder: null != d ? void 0 : I.intl.string(I.t.Q6o4pJ),
                                                         maxLength: 150,
@@ -365,7 +365,7 @@ let S = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                                                             "aria-label": I.intl.string(I.t.N86XcP),
                                                             onClick: () => {
                                                                 let e, i, s, l;
-                                                                return (e = [...P]).splice(n, 1), w(e), (i = [...D]).splice(n, 1), M(i), (s = [...B]).splice(n, 1), F(s), void((l = [...L.socialLinks]).splice(n, 1), (0, m.uh)(t.id, l))
+                                                                return (e = [...P]).splice(n, 1), w(e), (i = [...D]).splice(n, 1), M(i), (s = [...B]).splice(n, 1), F(s), void((l = [...G.socialLinks]).splice(n, 1), (0, m.uh)(t.id, l))
                                                             }
                                                         } : void 0
                                                     })]
@@ -379,14 +379,14 @@ let S = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                                                 size: "sm",
                                                 text: I.intl.string(I.t.Qvovjc),
                                                 onClick: () => {
-                                                    if (L.socialLinks.length < 9) {
-                                                        let e = [...L.socialLinks];
+                                                    if (G.socialLinks.length < 9) {
+                                                        let e = [...G.socialLinks];
                                                         (0, m.uh)(t.id, e.concat("")), F(B.concat(""))
                                                     }
                                                 },
-                                                disabled: !R || L.socialLinks.length >= 9
+                                                disabled: !R || G.socialLinks.length >= 9
                                             })]
-                                        }), L.isPublished && (0, i.jsxs)(i.Fragment, {
+                                        }), G.isPublished && (0, i.jsxs)(i.Fragment, {
                                             children: [(0, i.jsx)(o.cGx, {}), (0, i.jsx)(o.D0$, {
                                                 label: I.intl.string(I.t["5yF7e1"]),
                                                 description: I.intl.string(I.t.eOFvqT),
@@ -404,7 +404,7 @@ let S = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                                             children: H.is_published
                                         }) : null]
                                     })]
-                                }), !L.isPublished && (0, i.jsx)("div", {
+                                }), !G.isPublished && (0, i.jsx)("div", {
                                     className: v.D4,
                                     children: (0, i.jsx)(u.A, {
                                         title: I.intl.string(I.t["2kCyn/"]),

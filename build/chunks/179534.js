@@ -1,7 +1,7 @@
 /** chunk id: 179534 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => G
+    A: () => L
 });
 var i = n(627968),
     s = n(64700),
@@ -23,8 +23,8 @@ var i = n(627968),
     j = n(221950),
     N = n(735937),
     E = n(104685),
-    b = n(856768),
-    C = n(189552),
+    C = n(856768),
+    b = n(189552),
     T = n(508160),
     I = n(749060),
     v = n(597344),
@@ -32,14 +32,14 @@ var i = n(627968),
     y = n(652215),
     R = n(985018),
     O = n(598482),
-    L = n(223698);
+    G = n(223698);
 
-function G(e) {
+function L(e) {
     let {
         guildId: t
     } = e, n = (0, a.bG)([p.A], () => p.A.getGuild(t)), {
         analyticsLocations: l
-    } = (0, c.Ay)(d.A.GUILD_SETTINGS_MEMBERS_PAGE), G = (0, u.q)(t), D = (0, a.bG)([_.Ay], () => _.Ay.getGuildSidebarState(t), [t]), M = s.useCallback(() => {
+    } = (0, c.Ay)(d.A.GUILD_SETTINGS_MEMBERS_PAGE), L = (0, u.q)(t), D = (0, a.bG)([_.Ay], () => _.Ay.getGuildSidebarState(t), [t]), M = s.useCallback(() => {
         x.A.closeGuildSidebar(t)
     }, [t]), k = !1 == !!n?.features.has(y.GuildFeatures.ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY), U = (0, a.bG)([f.A], () => f.A.getEstimatedMemberSearchCountByGuildId(t), [t]), P = s.useCallback(e => {
         null != e && (0, h.openUserProfileModal)({
@@ -51,21 +51,21 @@ function G(e) {
         w.current?.resetSearchText()
     }, []), F = (0, A.Ms)(t), H = (0, A.Wl)(t);
     if (null == n) return null;
-    let V = (0, C.ii)(H, F, U);
+    let V = (0, b.ii)(H, F, U);
     return (0, i.jsxs)(c.f5, {
         value: l,
         children: [(0, i.jsx)("div", {
-            className: r()(L.customColumn, O.$Z, O.ed),
+            className: r()(G.customColumn, O.$Z, O.ed),
             children: (0, i.jsx)("div", {
-                className: L.customContainer,
+                className: G.customContainer,
                 children: (0, i.jsx)(o.ArX, {
-                    className: r()(L.customScroller, O.cj),
+                    className: r()(G.customScroller, O.cj),
                     orientation: "auto",
                     children: (0, i.jsx)(o.ArX, {
                         className: O.mh,
                         orientation: "auto",
                         children: (0, i.jsxs)("main", {
-                            className: r()(L.customColumn, L.contentColumnDefault, O.$Z, O.ed, O.z1),
+                            className: r()(G.customColumn, G.contentColumnDefault, O.$Z, O.ed, O.z1),
                             children: [(0, i.jsx)("div", {
                                 className: O.wx,
                                 children: (0, i.jsx)(o.Heading, {
@@ -90,7 +90,7 @@ function G(e) {
                                             compact: !0,
                                             onSelectRow: P,
                                             onResetForNewMembers: B
-                                        }), V !== C.IY.SUCCESS_STILL_INDEXING && (0, i.jsx)(I.A, {
+                                        }), V !== b.IY.SUCCESS_STILL_INDEXING && (0, i.jsx)(I.A, {
                                             guildId: n.id
                                         })]
                                     }) : (0, i.jsx)("div", {
@@ -111,14 +111,14 @@ function G(e) {
                                         })
                                     })]
                                 })
-                            }, "body"), (0, i.jsx)(b.A, {
+                            }, "body"), (0, i.jsx)(C.A, {
                                 guildId: n.id
                             })]
                         })
                     })
                 })
             })
-        }), G && null != D && (0, i.jsxs)(i.Fragment, {
+        }), L && null != D && (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)(o.pkL, {
                 isVisible: !0,
                 onClick: M

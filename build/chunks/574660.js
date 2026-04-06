@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(64700),
     l = n(311907),
     s = n(735991),
-    r = n(297486),
-    a = n(837057),
+    a = n(297486),
+    r = n(837057),
     o = n(310419),
     d = n(734057),
     c = n(576705),
@@ -25,11 +25,11 @@ function f(e) {
         isDiscoverable: t,
         customInstallUrl: n,
         installParams: i,
-        integrationTypesConfig: r
-    } = e, a = (0, h.Ie)({
+        integrationTypesConfig: a
+    } = e, r = (0, h.Ie)({
         customInstallUrl: n,
         installParams: i,
-        integrationTypesConfig: r
+        integrationTypesConfig: a
     }), o = (0, l.bG)([_.A], () => _.A.getGuildId() ?? void 0), m = (0, l.bG)([d.A, c.A, u.A], () => {
         let e = d.A.getChannel(u.A.getChannelId());
         return null != e && (e.isPrivate() || c.A.can(g.xBc.SEND_MESSAGES, e))
@@ -38,10 +38,10 @@ function f(e) {
         isDiscoverable: t,
         customInstallUrl: n,
         installParams: i,
-        integrationTypesConfig: r,
+        integrationTypesConfig: a,
         canViewApp: t || p,
         canOpenAppLauncher: p,
-        isInstallable: a,
+        isInstallable: r,
         selectedGuildId: o
     }
 }
@@ -57,7 +57,7 @@ function C(e, t) {
         selectedGuildId: _
     } = f(e);
     return i.useMemo(() => n ? () => {
-        (t?.(), l) ? (0, r.hg)(e.id) : (0, a.transitionToGlobalDiscovery)({
+        (t?.(), l) ? (0, a.hg)(e.id) : (0, r.transitionToGlobalDiscovery)({
             tab: A.GlobalDiscoveryTab.APPS,
             applicationId: e.id,
             newSessionState: {

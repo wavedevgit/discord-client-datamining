@@ -25,8 +25,8 @@ var i = n(627968),
     j = n(555337),
     N = n(401755),
     E = n(985018),
-    b = n(681409),
-    C = n(885106);
+    C = n(681409),
+    b = n(885106);
 class T extends d.Ay.Store {
     initialize() {
         this.waitFor(j.A, A.A)
@@ -82,18 +82,18 @@ function S(e) {
 
 function y() {
     return (0, i.jsx)("div", {
-        className: C.Q5,
+        className: b.Q5,
         children: (0, i.jsxs)(g.Fmo, {
             component: (0, i.jsx)(g.Heading, {
                 variant: "heading-lg/semibold",
                 children: E.intl.string(E.t.KUw7Ss)
             }),
             children: [(0, i.jsx)(g.Text, {
-                className: C.SX,
+                className: b.SX,
                 variant: "text-sm/normal",
                 children: E.intl.format(E.t.c0m8bK, {})
             }), (0, i.jsx)(O, {}), (0, i.jsx)(g.cGx, {
-                className: b.yF
+                className: C.yF
             }), (0, i.jsx)(R, {})]
         })
     })
@@ -134,16 +134,16 @@ function R() {
         variant: "text-sm/normal",
         children: t.message
     }) : (0, i.jsx)(g.y$y, {
-        className: C.eT
+        className: b.eT
     });
     let c = null != t && null == t.getFirstFieldErrorMessage("name") && null == t.getFirstFieldErrorMessage("description");
     return (0, i.jsxs)(g.BJc, {
         gap: 20,
-        children: [(0, i.jsx)(G, {}), (0, i.jsx)(D, {
+        children: [(0, i.jsx)(L, {}), (0, i.jsx)(D, {
             guild: e,
             guildTemplate: a
         }), c ? (0, i.jsx)(g.Text, {
-            className: C.Ot,
+            className: b.Ot,
             color: "text-feedback-critical",
             variant: "text-sm/normal",
             children: t.getAnyErrorMessage()
@@ -153,63 +153,63 @@ function R() {
 
 function O() {
     return (0, i.jsxs)("div", {
-        className: b.qR,
+        className: C.qR,
         children: [(0, i.jsxs)("div", {
-            className: b.eg,
+            className: C.eg,
             children: [(0, i.jsx)(g.Heading, {
                 variant: "eyebrow",
                 children: E.intl.string(E.t["f8u+VO"])
             }), (0, i.jsxs)("div", {
-                className: b.VP,
+                className: C.VP,
                 children: [(0, i.jsx)(g.yr3, {
                     size: "md",
-                    className: b.Sy,
+                    className: C.Sy,
                     color: c.A.unsafe_rawColors.GREEN_360.css,
                     secondaryColor: c.A.unsafe_rawColors.WHITE.css
                 }), E.intl.string(E.t.K2tn16)]
             }), (0, i.jsxs)("div", {
-                className: b.VP,
+                className: C.VP,
                 children: [(0, i.jsx)(g.yr3, {
                     size: "md",
-                    className: b.Sy,
+                    className: C.Sy,
                     color: c.A.unsafe_rawColors.GREEN_360.css,
                     secondaryColor: c.A.unsafe_rawColors.WHITE.css
                 }), E.intl.string(E.t.om5gNq)]
             }), (0, i.jsxs)("div", {
-                className: b.VP,
+                className: C.VP,
                 children: [(0, i.jsx)(g.yr3, {
                     size: "md",
-                    className: b.Sy,
+                    className: C.Sy,
                     color: c.A.unsafe_rawColors.GREEN_360.css,
                     secondaryColor: c.A.unsafe_rawColors.WHITE.css
                 }), E.intl.string(E.t["/VNqdD"])]
             })]
         }), (0, i.jsxs)("div", {
-            className: b.eg,
+            className: C.eg,
             children: [(0, i.jsx)(g.Heading, {
                 variant: "eyebrow",
                 children: E.intl.string(E.t["8zhJEr"])
             }), (0, i.jsxs)("div", {
-                className: b.VP,
+                className: C.VP,
                 children: [(0, i.jsx)(g.aXh, {
                     size: "md",
-                    className: b.Sy,
+                    className: C.Sy,
                     color: c.A.unsafe_rawColors.RED_400.css,
                     secondaryColor: c.A.unsafe_rawColors.WHITE.css
                 }), E.intl.string(E.t.WOKI6t)]
             }), (0, i.jsxs)("div", {
-                className: b.VP,
+                className: C.VP,
                 children: [(0, i.jsx)(g.aXh, {
                     size: "md",
-                    className: b.Sy,
+                    className: C.Sy,
                     color: c.A.unsafe_rawColors.RED_400.css,
                     secondaryColor: c.A.unsafe_rawColors.WHITE.css
                 }), E.intl.string(E.t.ddhDJH)]
             }), (0, i.jsxs)("div", {
-                className: b.VP,
+                className: C.VP,
                 children: [(0, i.jsx)(g.aXh, {
                     size: "md",
-                    className: b.Sy,
+                    className: C.Sy,
                     color: c.A.unsafe_rawColors.RED_400.css,
                     secondaryColor: c.A.unsafe_rawColors.WHITE.css
                 }), E.intl.string(E.t["6Q/DHk"])]
@@ -218,7 +218,7 @@ function O() {
     })
 }
 
-function L(e) {
+function G(e) {
     let {
         cancel: t,
         confirm: n
@@ -238,7 +238,7 @@ function L(e) {
     })
 }
 
-function G() {
+function L() {
     let e = (0, d.bG)([I], () => I.name),
         t = (0, d.bG)([I], () => I.description),
         n = (0, d.bG)([I], () => I.error),
@@ -292,16 +292,16 @@ function D(e) {
             })
         }), n.isDirty && (0, i.jsx)(g.Text, {
             color: "text-feedback-warning",
-            className: C.Ot,
+            className: b.Ot,
             variant: "text-sm/normal",
             children: E.intl.string(E.t.aWsjtD)
         }), (0, i.jsxs)("div", {
-            className: r()(C.QX, b.UD),
+            className: r()(b.QX, C.UD),
             children: [n.isDirty && (0, i.jsx)(k, {
                 guild: t,
                 guildTemplate: n
             }), (0, i.jsxs)("div", {
-                className: b.eS,
+                className: C.eS,
                 children: [(0, i.jsx)(U, {
                     guild: t,
                     guildTemplate: n
@@ -310,7 +310,7 @@ function D(e) {
                 })]
             })]
         }), n.isDirty && (0, i.jsx)("div", {
-            className: b.U2,
+            className: C.U2,
             children: E.intl.format(E.t.v0AVum, {
                 timestamp: new Date(n.updatedAt)
             })
@@ -354,7 +354,7 @@ function k(e) {
     };
     return (0, i.jsx)("div", {
         "data-button-hoisted-classname-wrapper": !0,
-        className: b.x6,
+        className: C.x6,
         children: (0, i.jsx)(g.Button, {
             variant: "primary",
             text: E.intl.string(E.t["Nw+0Y/"]),
@@ -380,13 +380,13 @@ function U(e) {
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)("div", {
             "data-button-hoisted-classname-wrapper": !0,
-            className: b.x6,
+            className: C.x6,
             children: (0, i.jsx)(g.Button, {
                 variant: "critical-secondary",
                 text: E.intl.string(E.t["cN/RFD"]),
                 onClick: () => r(!0)
             })
-        }), l ? (0, i.jsx)(L, {
+        }), l ? (0, i.jsx)(G, {
             confirm: a,
             cancel: () => r(!1)
         }) : null]
@@ -399,7 +399,7 @@ function P(e) {
     } = e;
     return (0, i.jsx)("div", {
         "data-button-hoisted-classname-wrapper": !0,
-        className: b.x6,
+        className: C.x6,
         children: (0, i.jsx)(g.Button, {
             variant: "secondary",
             text: E.intl.string(E.t.YI3iV6),

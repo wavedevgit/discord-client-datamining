@@ -29,7 +29,7 @@ let S = (0, a.dT)(c.X.ACCOUNT_STANDING_TAB, {
         },
         buildLayout: () => [h.Q]
     }),
-    E = (0, a.dT)(c.X.ACCOUNT_SECURITY_TAB, {
+    b = (0, a.dT)(c.X.ACCOUNT_SECURITY_TAB, {
         getTitle: () => f.intl.string(f.t.Am9YHi),
         onItemSelect: () => {
             d.default.track(T.HAw.MY_ACCOUNT_PAGE_TAB_NAVIGATE, {
@@ -39,7 +39,7 @@ let S = (0, a.dT)(c.X.ACCOUNT_STANDING_TAB, {
         buildLayout: () => [x.P, m.o, A.s]
     });
 
-function b() {
+function E() {
     let e = o.default.getCurrentUser();
     return null == e || (0, u.pC)("Account") || (0, r.A)(e.id, e.getAvatarURL(void 0, 80)), () => {
         s.A.clearBackupCodes(), (0, l.Uo)()
@@ -47,13 +47,13 @@ function b() {
 }
 let C = (0, a.t_)(c.X.ACCOUNT_PANEL, {
         useTitle: () => f.intl.string(f.t["JAIM/m"]),
-        initialize: b,
+        initialize: E,
         hideInStreamerMode: !0,
-        buildLayout: () => [E, S]
+        buildLayout: () => [b, S]
     }),
     N = (0, a.t_)(c.X.ACCOUNT_PANEL, {
         useTitle: () => f.intl.string(f.t["ldCE/p"]),
-        initialize: b,
+        initialize: E,
         hideInStreamerMode: !0,
         buildLayout: () => [g.u, _.v]
     }),

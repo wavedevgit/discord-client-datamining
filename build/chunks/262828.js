@@ -1,38 +1,39 @@
 /** chunk id: 262828 params = (module,exports,require) **/
-t.d(e, {
-    A: () => s
+"use strict";
+n.d(t, {
+    A: () => o
 });
-var n = t(64700),
-    a = t(311907),
-    r = t(198982),
-    i = t(627363),
-    l = t(587895);
+var i = n(64700),
+    s = n(311907),
+    l = n(198982),
+    r = n(627363),
+    a = n(587895);
 
-function s(A, e) {
-    let t = (0, a.bG)([l.A], () => l.A.getGuildApplication(A, e)),
-        [s, o] = n.useState(null == t),
-        [d, u] = n.useState(),
-        [c, g] = n.useState(!1),
-        q = n.useCallback(async () => {
-            if (null == t && null != A) {
-                g(!0), o(!0);
+function o(e, t) {
+    let n = (0, s.bG)([a.A], () => a.A.getGuildApplication(e, t)),
+        [o, d] = i.useState(null == n),
+        [c, u] = i.useState(),
+        [m, g] = i.useState(!1),
+        x = i.useCallback(async () => {
+            if (null == n && null != e) {
+                g(!0), d(!0);
                 try {
-                    await i.Ay.getApplicationsForGuild(A, {
-                        type: e,
+                    await r.Ay.getApplicationsForGuild(e, {
+                        type: t,
                         includeTeam: !0
                     })
-                } catch (A) {
-                    u(new r.LG(A))
+                } catch (e) {
+                    u(new l.LG(e))
                 } finally {
-                    o(!1)
+                    d(!1)
                 }
             }
-        }, [t, e, A]);
-    return n.useEffect(() => {
-        c || q()
-    }, [c, q]), {
-        application: t,
-        error: d,
-        loading: s
+        }, [n, t, e]);
+    return i.useEffect(() => {
+        m || x()
+    }, [m, x]), {
+        application: n,
+        error: c,
+        loading: o
     }
 }

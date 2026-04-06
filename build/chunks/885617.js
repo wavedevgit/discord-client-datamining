@@ -1,25 +1,26 @@
 /** chunk id: 885617 params = (module,exports,require) **/
-l.d(t, {
-    A: () => x
+"use strict";
+n.d(t, {
+    A: () => h
 });
-var n = l(635377),
-    i = l.n(n),
-    r = l(311907),
-    a = l(73153),
-    s = l(950762),
-    u = l(967198),
-    o = l(927813);
+var i = n(635377),
+    s = n.n(i),
+    l = n(311907),
+    r = n(73153),
+    a = n(950762),
+    o = n(967198),
+    d = n(927813);
 let c = {},
-    d = {},
+    u = {},
     m = 0,
-    h = new(i())({
+    g = new(s())({
         max: 5,
-        maxAge: o.A.Millis.HOUR
+        maxAge: d.A.Millis.HOUR
     });
-class g extends r.Ay.Store {
+class x extends l.Ay.Store {
     static displayName = "GuildSettingsEmojiStore";
     initialize() {
-        this.waitFor(u.A)
+        this.waitFor(o.A)
     }
     isUploadingEmoji() {
         return m > 0
@@ -28,32 +29,32 @@ class g extends r.Ay.Store {
         return c[e] ?? 0
     }
     getEmojis(e) {
-        return d[e]
+        return u[e]
     }
     getEmojiRawAsset(e) {
-        return h.get(e)
+        return g.get(e)
     }
 }
-let x = new g(a.h, {
+let h = new x(r.h, {
     EMOJI_DELETE: function(e) {
         let {
             guildId: t,
-            emojiId: l
+            emojiId: n
         } = e;
-        d[t] = d[t].filter(e => e.id !== l)
+        u[t] = u[t].filter(e => e.id !== n)
     },
     EMOJI_FETCH_SUCCESS: function(e) {
         let {
             guildId: t,
-            emojis: l
+            emojis: n
         } = e;
-        d[t] = l.map(e => new s.A(e))
+        u[t] = n.map(e => new a.A(e))
     },
     EMOJI_FETCH_FAILURE: function(e) {
         let {
             guildId: t
         } = e;
-        d[t] = []
+        u[t] = []
     },
     EMOJI_UPLOAD_START: function() {
         m++
@@ -64,9 +65,9 @@ let x = new g(a.h, {
     EMOJI_CACHE_RAW_EMOJI_ASSET: function(e) {
         let {
             emojiId: t,
-            userImage: l
+            userImage: n
         } = e;
-        h.set(t, l)
+        g.set(t, n)
     },
     GUILD_EMOJIS_UPDATE: function(e) {
         let {

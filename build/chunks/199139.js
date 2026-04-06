@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
     A: () => p,
-    h: () => b
+    h: () => C
 });
 var i = n(627968),
     s = n(64700),
@@ -237,4 +237,4 @@ class E extends s.Component {
         })
     }
 }
-let b = E
+let C = E

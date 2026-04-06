@@ -23,8 +23,8 @@ var i = n(627968),
     j = n(263063),
     N = n(714991),
     E = n(95035),
-    b = n(447696),
-    C = n(861410),
+    C = n(447696),
+    b = n(861410),
     T = n(734057),
     I = n(603349),
     v = n(954571),
@@ -32,8 +32,8 @@ var i = n(627968),
     y = n(997509),
     R = n(694012),
     O = n(652215),
-    L = n(818348),
-    G = n(650583),
+    G = n(818348),
+    L = n(650583),
     D = n(985018),
     M = n(807060);
 let k = "WELCOME_CHANNEL",
@@ -48,8 +48,8 @@ let k = "WELCOME_CHANNEL",
             } = e,
             N = s.useRef(null),
             E = (0, u.bG)([T.A], () => T.A.getChannel(a.channel_id)),
-            b = (0, u.bG)([f.Ay], () => null != a.emoji_id ? f.Ay.getUsableCustomEmojiById(a.emoji_id) : null),
-            C = null != E && S.MJ(O.xBc.VIEW_CHANNEL, E),
+            C = (0, u.bG)([f.Ay], () => null != a.emoji_id ? f.Ay.getUsableCustomEmojiById(a.emoji_id) : null),
+            b = null != E && S.MJ(O.xBc.VIEW_CHANNEL, E),
             v = (0, A.gU)(E) ?? m.N$i,
             y = (0, p.Ay)(E, !1),
             R = () => {
@@ -65,10 +65,10 @@ let k = "WELCOME_CHANNEL",
                         channelId: a.channel_id
                     })
                 }, {
-                    onCloseRequest: () => L.FX
+                    onCloseRequest: () => G.FX
                 })
             },
-            [, G] = (0, d.i)({
+            [, L] = (0, d.i)({
                 type: k,
                 item: {
                     channel: a,
@@ -87,12 +87,12 @@ let k = "WELCOME_CHANNEL",
                     h(e.channel, j, !0)
                 }
             });
-        return s.useLayoutEffect(() => (G(U(N)), () => {
-            G(null), U(null)
-        }), [G, U]), t = C ? null != b || null != a.emoji_name ? (0, i.jsx)(x.A, {
-            emojiId: b?.id,
-            emojiName: null != b ? b.name : a.emoji_name,
-            animated: !!b?.animated
+        return s.useLayoutEffect(() => (L(U(N)), () => {
+            L(null), U(null)
+        }), [L, U]), t = b ? null != C || null != a.emoji_name ? (0, i.jsx)(x.A, {
+            emojiId: C?.id,
+            emojiName: null != C ? C.name : a.emoji_name,
+            animated: !!C?.animated
         }) : (0, i.jsx)(v, {
             size: "md",
             color: "currentColor",
@@ -129,7 +129,7 @@ let k = "WELCOME_CHANNEL",
                     color: "text-strong",
                     children: a.description
                 }), (0, i.jsxs)(m.Text, {
-                    className: C ? void 0 : M.op,
+                    className: b ? void 0 : M.op,
                     variant: "text-xs/normal",
                     color: "text-default",
                     children: [(0, i.jsx)(v, {
@@ -137,7 +137,7 @@ let k = "WELCOME_CHANNEL",
                         size: "xxs",
                         color: "currentColor"
                     }), (0, i.jsx)("span", {
-                        children: C ? y : D.intl.string(D.t.zFuCsF)
+                        children: b ? y : D.intl.string(D.t.zFuCsF)
                     })]
                 })]
             }), (0, i.jsx)(m.K0, {
@@ -154,25 +154,25 @@ let k = "WELCOME_CHANNEL",
         } = e, {
             welcomeSettings: l,
             originalWelcomeSettings: r
-        } = (0, u.bG)([C.A], () => C.A.getSettingsProps()), a = (0, u.bG)([_.A], () => _.A.useReducedMotion), [d, c] = s.useState(null), [g, x] = s.useState(!1), [p, A] = s.useState(!1), {
+        } = (0, u.bG)([b.A], () => b.A.getSettingsProps()), a = (0, u.bG)([_.A], () => _.A.useReducedMotion), [d, c] = s.useState(null), [g, x] = s.useState(!1), [p, A] = s.useState(!1), {
             description: f,
             channels: T,
             enabled: S
-        } = l, L = e => {
-            null == t || o()(e, r.channels) || ((0, b.i4)(t.id, {
+        } = l, G = e => {
+            null == t || o()(e, r.channels) || ((0, C.i4)(t.id, {
                 channels: e
             }), x(!0))
         }, k = e => {
-            null == t || e !== r.enabled && ((0, b.i4)(t.id, {
+            null == t || e !== r.enabled && ((0, C.i4)(t.id, {
                 enabled: e
             }), A(!a), x(!0))
         }, P = (e, t, n) => {
             if (null == T) return;
             let i = T.indexOf(e),
                 s = [...T];
-            null != t && t !== i && (s.splice(i, 1), s.splice(t, 0, e), (0, b.Xx)({
+            null != t && t !== i && (s.splice(i, 1), s.splice(t, 0, e), (0, C.Xx)({
                 channels: s
-            })), n ? (L(s), c(null)) : c(t)
+            })), n ? (G(s), c(null)) : c(t)
         }, w = s.useRef(!1);
         (0, h.Ay)(() => () => {
             w.current = !0
@@ -192,7 +192,7 @@ let k = "WELCOME_CHANNEL",
                     is_enabled: S
                 })
             }
-        }, [g, T, f, S, t]), s.useEffect(() => () => (0, b.Vv)(), []);
+        }, [g, T, f, S, t]), s.useEffect(() => () => (0, C.Vv)(), []);
         let B = s.useCallback(() => {
             null != t && y.A.open(t.id, O.BEX.ONBOARDING)
         }, [t]);
@@ -266,17 +266,17 @@ let k = "WELCOME_CHANNEL",
                         children: (0, i.jsx)(m.fs1, {
                             placeholder: D.intl.string(D.t.qzZHaX),
                             onChange: e => {
-                                (0, b.Xx)({
+                                (0, C.Xx)({
                                     description: e
                                 })
                             },
                             onBlur: () => {
-                                null == t || f !== r.description && ((0, b.i4)(t.id, {
+                                null == t || f !== r.description && ((0, C.i4)(t.id, {
                                     description: f?.trim()
                                 }), x(!0))
                             },
                             onKeyDown: e => {
-                                e.key === G.dh.ENTER && e.preventDefault()
+                                e.key === L.dh.ENTER && e.preventDefault()
                             },
                             value: f,
                             maxLength: 140,
@@ -295,9 +295,9 @@ let k = "WELCOME_CHANNEL",
                             welcomeChannel: e,
                             onEdit: e => {
                                 let t = [...T ?? []];
-                                null == e ? t.splice(n, 1) : t[n] = e, (0, b.Xx)({
+                                null == e ? t.splice(n, 1) : t[n] = e, (0, C.Xx)({
                                     channels: t
-                                }), L(t), 0 === t.length && S && ((0, b.Xx)({
+                                }), G(t), 0 === t.length && S && ((0, C.Xx)({
                                     enabled: !1
                                 }), k(!1))
                             },

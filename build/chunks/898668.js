@@ -21,13 +21,13 @@ var i = n(627968),
     T = n(910676),
     f = n(570425),
     S = n(860965),
-    E = n(546542),
-    b = n(560812),
+    b = n(546542),
+    E = n(560812),
     C = n(985018);
 let N = (0, o.t_)(c.X.DISPLAY_PANEL, {
         initialize: x.du,
         useTitle: () => C.intl.string(C.t.DVatCa),
-        buildLayout: () => [E.K, T.S, f.X, p.S, S.f, (0, b.$)(!0), h.J]
+        buildLayout: () => [b.K, T.S, f.X, p.S, S.f, (0, E.$)(!0), h.J]
     }),
     v = [...x.j0, {
         badgeType: d.Xi.STRONGLY_DISCOURAGED_CUSTOM,

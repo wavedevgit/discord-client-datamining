@@ -21,8 +21,8 @@ var i = n(627968),
     T = n(473145),
     f = n(927578),
     S = n(966275),
-    E = n(311092),
-    b = n(233413),
+    b = n(311092),
+    E = n(233413),
     C = n(652215),
     N = n(788868),
     v = n(985018),
@@ -42,7 +42,7 @@ function j(e) {
         className: I.Hp,
         children: [(0, i.jsxs)("div", {
             className: I.YL,
-            children: [(0, i.jsx)(b.A, {
+            children: [(0, i.jsx)(E.A, {
                 className: I.W6,
                 hasCooldown: t.isOnCooldown(),
                 isCanceled: _,
@@ -53,7 +53,7 @@ function j(e) {
                 children: v.intl.format(v.t.Z4ULRD, {
                     date: r.currentPeriodEnd
                 })
-            }) : t.isOnCooldown() && null != g ? (0, i.jsx)(E.A, {
+            }) : t.isOnCooldown() && null != g ? (0, i.jsx)(b.A, {
                 cooldown: g.getTime()
             }) : (0, i.jsx)(c.Text, {
                 className: I.__invalid_unappliedGuildBoostSlotDescription,
@@ -116,14 +116,14 @@ let R = function(e) {
             guildBoostSlots: _
         } = e,
         x = (0, r.bG)([p.A], () => p.A.getPremiumTypeSubscription()),
-        E = x?.isPausedOrPausePending === !0,
+        b = x?.isPausedOrPausePending === !0,
         {
-            fractionalState: b
+            fractionalState: E
         } = (0, m.A)(),
         R = (0, r.bG)([u.A], () => u.A.useReducedMotion),
         P = (0, r.bG)([h.default], () => h.default.getCurrentUser()),
-        L = b === N.xc.FP_SUB_PAUSED,
-        D = E && !L,
+        L = E === N.xc.FP_SUB_PAUSED,
+        D = b && !L,
         {
             appliedGuildBoostSlots: G,
             unappliedGuildBoostSlots: M,
@@ -184,7 +184,7 @@ let R = function(e) {
     } else n = w ? v.intl.string(v.t["8pcUZi"]) : v.intl.formatToPlainString(v.t.Kaw82o, {
         numUnappliedGuildBoostSlots: K
     });
-    return l = E && b === N.xc.NONE ? v.intl.string(v.t.mOWsF1) : v.intl.string(v.t.xr4m5B), (0, i.jsx)("div", {
+    return l = b && E === N.xc.NONE ? v.intl.string(v.t.mOWsF1) : v.intl.string(v.t.xr4m5B), (0, i.jsx)("div", {
         className: I.iE,
         children: (0, i.jsxs)("div", {
             className: a()(I.Qs, [I.Yq]),
@@ -238,7 +238,7 @@ let R = function(e) {
                     onUncancel: O,
                     premiumSubscription: x,
                     useReducedMotion: R,
-                    fractionalState: b
+                    fractionalState: E
                 }, e.id))
             })]
         })

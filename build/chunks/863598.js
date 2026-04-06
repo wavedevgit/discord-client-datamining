@@ -73,7 +73,7 @@ function N(e) {
             afkChannelId: t
         })
     }, []);
-    return (0, i.jsx)(b, {
+    return (0, i.jsx)(C, {
         label: o,
         value: a ?? A,
         options: u,
@@ -112,7 +112,7 @@ function E(e) {
             systemChannelId: t
         })
     }, []);
-    return (0, i.jsx)(b, {
+    return (0, i.jsx)(C, {
         label: o,
         description: c,
         layout: u,
@@ -123,7 +123,7 @@ function E(e) {
     })
 }
 
-function b(e) {
+function C(e) {
     let {
         value: t,
         options: n,

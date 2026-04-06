@@ -5,9 +5,9 @@ n.d(t, {
 var i = n(627968),
     l = n(64700),
     s = n(503698),
-    r = n.n(s),
-    a = n(284009),
-    o = n.n(a),
+    a = n.n(s),
+    r = n(284009),
+    o = n.n(r),
     d = n(735438),
     c = n.n(d),
     u = n(110259),
@@ -35,8 +35,8 @@ var i = n(627968),
     D = n(696451),
     M = n(71393),
     w = n(576705),
-    k = n(607567),
-    O = n(954571),
+    O = n(607567),
+    k = n(954571),
     U = n(860689),
     B = n(422844),
     G = n(72951),
@@ -53,10 +53,10 @@ function Q(e) {
         invite: t,
         currentUserId: n,
         message: s,
-        guild: a,
+        guild: r,
         onTransitionToInviteChannel: d,
         onAcceptInstantInvite: I
-    } = e, v = (0, B.xR)("VoiceInviteEmbed"), S = l.useRef(null), H = a ?? null;
+    } = e, v = (0, B.xR)("VoiceInviteEmbed"), S = l.useRef(null), H = r ?? null;
     null == H && null != t.guild && (H = U.DY(t.guild));
     let Q = null != t.channel ? (0, R.OY)(t.channel) : null;
     o()(null != H, "Voice Invite Embed must be used in context of a guild."), o()(null != Q, "Voice Invite Embed must be able to resolve an invite channel.");
@@ -64,7 +64,7 @@ function Q(e) {
             let e = P.A.getChannel(Q.id);
             return null == e || w.A.canBasicChannel(W.hVb.VIEW_CHANNEL, e)
         }, [Q.id]),
-        Z = (0, _.bG)([k.Ay], () => J ? k.Ay.getVoiceStatesForChannelAlt(Q.id, H.id) : [], [Q.id, H.id, J]),
+        Z = (0, _.bG)([O.Ay], () => J ? O.Ay.getVoiceStatesForChannelAlt(Q.id, H.id) : [], [Q.id, H.id, J]),
         {
             label: $,
             sublabel: ee
@@ -73,12 +73,12 @@ function Q(e) {
                 currentUserId: t,
                 author: n,
                 voiceStates: i
-            } = e, l = n.id === t, s = i.length > 0, r = i.length;
+            } = e, l = n.id === t, s = i.length > 0, a = i.length;
             return s ? {
                 label: l ? Y.intl.format(Y.t["2RWMFV"], {
-                    othersCount: r
+                    othersCount: a
                 }) : Y.intl.format(Y.t.Da7tZx, {
-                    othersCount: r
+                    othersCount: a
                 })
             } : {
                 label: l ? Y.intl.string(Y.t.DVDvCD) : Y.intl.string(Y.t.TY77rq),
@@ -96,15 +96,15 @@ function Q(e) {
             analyticsLocations: el
         } = (0, C.Ay)(f.A.INVITE_EMBED),
         es = (0, y._U)(t.code, s.id),
-        er = (0, q.A)({
+        ea = (0, q.A)({
             invite: t,
             message: s,
             voiceStates: Z,
             guildId: H.id,
             channelId: Q.id
         }),
-        ea = (0, T.AO)(er),
-        eo = v.activityPreviewEnabled && null != er,
+        er = (0, T.AO)(ea),
+        eo = v.activityPreviewEnabled && null != ea,
         ed = l.useCallback(() => {
             let e = et ? "transition" : "accept";
             et ? d() : I(), (0, p.he)({
@@ -113,26 +113,26 @@ function Q(e) {
                 inviter_id: s.author.id,
                 invite_message_id: s.id,
                 invite_instance_id: es,
-                application_id: ea?.id ?? void 0,
-                stream_key: null != er ? (0, b._z)(er) : void 0,
+                application_id: er?.id ?? void 0,
+                stream_key: null != ea ? (0, b._z)(ea) : void 0,
                 number_of_users_in_channel: Z.length
             }, el)
-        }, [t, s, el, es, et, ea, er, Z.length, d, I]),
+        }, [t, s, el, es, et, er, ea, Z.length, d, I]),
         ec = l.useCallback(() => {
             et ? (0, j.iN)(Q.id) : I({
                 autoJoin: !1
-            }), O.default.track(W.HAw.VOICE_INVITE_EMBED_BREADCRUMB_CLICKED, {
+            }), k.default.track(W.HAw.VOICE_INVITE_EMBED_BREADCRUMB_CLICKED, {
                 invite_code: t.code,
                 invite_guild_id: H.id,
                 invite_channel_id: Q.id,
                 invite_instance_id: es,
                 is_member: et,
-                application_id: ea?.id ?? null,
-                stream_key: null != er ? (0, b._z)(er) : null,
+                application_id: er?.id ?? null,
+                stream_key: null != ea ? (0, b._z)(ea) : null,
                 number_of_users_in_channel: Z.length,
                 location_stack: el
             })
-        }, [Q.id, H.id, t.code, es, et, ea, er, Z.length, el, I]);
+        }, [Q.id, H.id, t.code, es, et, er, ea, Z.length, el, I]);
     (0, E.A)({
         name: u.ImpressionNames.VOICE_INVITE_EMBED,
         type: u.ImpressionTypes.VIEW,
@@ -146,17 +146,17 @@ function Q(e) {
         }
     });
     let eu = l.useCallback(() => {
-            null != er && (et ? (g.default.selectVoiceChannel(er.channelId), (0, A.Nl)(er)) : I(), (0, p.he)({
+            null != ea && (et ? (g.default.selectVoiceChannel(ea.channelId), (0, A.Nl)(ea)) : I(), (0, p.he)({
                 invite: t,
                 action: et ? "transition" : "accept",
                 inviter_id: s.author.id,
                 invite_message_id: s.id,
                 invite_instance_id: es,
-                application_id: ea?.id ?? void 0,
-                stream_key: (0, b._z)(er),
+                application_id: er?.id ?? void 0,
+                stream_key: (0, b._z)(ea),
                 number_of_users_in_channel: Z.length
             }, [...el, f.A.VOICE_INVITE_STREAM_PREVIEW]))
-        }, [er, et, t, s, el, es, ea, Z.length, I]),
+        }, [ea, et, t, s, el, es, er, Z.length, I]),
         e_ = (0, _.bG)([x.A], () => x.A.useReducedMotion),
         em = l.useRef(null),
         [eh, ep] = l.useState({
@@ -186,9 +186,9 @@ function Q(e) {
             if (null != s) {
                 let n = s.left + s.width / 2,
                     i = s.top + s.height / 2,
-                    r = e.clientX - n,
-                    a = e.clientY - i;
-                l = 2 * Math.exp(-Math.sqrt(r * r + a * a) / (.2 * Math.sqrt(t.width ** 2 + t.height ** 2)))
+                    a = e.clientX - n,
+                    r = e.clientY - i;
+                l = 2 * Math.exp(-Math.sqrt(a * a + r * r) / (.2 * Math.sqrt(t.width ** 2 + t.height ** 2)))
             }
             eA({
                 percentX: n,
@@ -205,7 +205,7 @@ function Q(e) {
         }, [eA]);
     return (0, i.jsxs)("div", {
         ref: em,
-        className: r()(z.kL, {
+        className: a()(z.kL, {
             [z.VD]: eo
         }),
         onMouseMove: ex,
@@ -219,7 +219,7 @@ function Q(e) {
             }
         }), eo ? (0, i.jsx)(X, {
             className: z.tB,
-            stream: er
+            stream: ea
         }) : null, (0, i.jsxs)("div", {
             className: z.rf,
             children: [(0, i.jsxs)("div", {
@@ -249,7 +249,7 @@ function Q(e) {
                     }) : null]
                 })]
             }), eo ? (0, i.jsx)(F.A, {
-                stream: er,
+                stream: ea,
                 currentUserId: n,
                 onClick: eu,
                 className: z.Rh
@@ -307,15 +307,15 @@ function J(e) {
         guildId: t,
         channelId: n,
         members: s
-    } = e, r = l.useRef(null), {
-        isHoveringOrFocusing: a
-    } = (0, I.A)(r);
+    } = e, a = l.useRef(null), {
+        isHoveringOrFocusing: r
+    } = (0, I.A)(a);
     return (0, i.jsx)(H.$, {
         guildId: t,
         channelId: n,
         users: s,
-        targetElementRef: r,
-        shouldShow: a,
+        targetElementRef: a,
+        shouldShow: r,
         children: e => (0, i.jsx)("div", {
             className: z.WM,
             ...e,
@@ -328,7 +328,7 @@ function J(e) {
                 },
                 maxAvatarsShown: 3,
                 members: s,
-                overflowRef: r
+                overflowRef: a
             })
         })
     })
@@ -341,13 +341,13 @@ function X(e) {
     } = e, {
         previewUrl: l,
         isLoading: s
-    } = (0, v.A)(n.guildId, n.channelId, n.ownerId), a = null != l && !s;
+    } = (0, v.A)(n.guildId, n.channelId, n.ownerId), r = null != l && !s;
     return (0, i.jsx)("div", {
-        className: r()(t, z.rr, {
-            [z.pc]: !a
+        className: a()(t, z.rr, {
+            [z.pc]: !r
         }),
         style: {
-            "--custom-bg-url": a ? `url(${l})` : "unset"
+            "--custom-bg-url": r ? `url(${l})` : "unset"
         },
         children: (0, i.jsx)("div", {
             className: z.bW

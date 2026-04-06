@@ -28,10 +28,10 @@ let p = function(e) {
     } = e, {
         title: N,
         channelId: E,
-        description: b
-    } = l, C = u.A.getChannel(E), T = null;
-    null != C && (0, c.Yt)(C) || (T = h.intl.string(h.t.kTdL8X));
-    let I = null == b || 0 === b.length,
+        description: C
+    } = l, b = u.A.getChannel(E), T = null;
+    null != b && (0, c.Yt)(b) || (T = h.intl.string(h.t.kTdL8X));
+    let I = null == C || 0 === C.length,
         v = m.Ay.getResourceChannelIconURL({
             channelId: l.channelId,
             icon: l.icon
@@ -49,10 +49,10 @@ let p = function(e) {
             onDragComplete: A,
             onDragReset: j
         }),
-        L = s.useCallback(e => {
+        G = s.useCallback(e => {
             (0, g.z4)(l.channelId, e)
         }, [l.channelId]),
-        G = s.useCallback((e, n) => {
+        L = s.useCallback((e, n) => {
             let i = x.A.getSettings();
             null != i && ((0, g.z4)(l.channelId, e), (0, g.W5)(t, i).then(() => {
                 (0, g.E0)(t, e.channelId, n)
@@ -66,12 +66,12 @@ let p = function(e) {
                 ...n,
                 guildId: t,
                 resourceChannel: l,
-                onSave: L,
+                onSave: G,
                 onDelete: () => (0, g.XD)(l.channelId),
-                onIconUpload: G
+                onIconUpload: L
             })
-        }), [t, l, L, G]);
-    return null == C ? null : (0, i.jsxs)("div", {
+        }), [t, l, G, L]);
+    return null == b ? null : (0, i.jsxs)("div", {
         className: _.l5,
         children: [(0, i.jsxs)("div", {
             className: r()(_.Km, {
@@ -113,7 +113,7 @@ let p = function(e) {
                     variant: "text-xs/medium",
                     color: "text-muted",
                     lineClamp: 1,
-                    children: b
+                    children: C
                 })]
             }), (0, i.jsx)(a.m, {
                 text: h.intl.string(h.t.bt75uw),

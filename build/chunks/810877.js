@@ -34,7 +34,7 @@ let x = (e, t, n, i) => (o.default.track(u.HAw.EMOJI_UPLOAD_FILE_SIZE_LIMIT_EXCE
         if (d.Ay.isFileTooBig(n)) {
             if ("image/gif" === n.type || "image/webp" === n.type || "image/avif" === n.type) return x(n.name, n.size, h, _);
             else if (null != A) {
-                var E, b;
+                var E, C;
                 let e;
                 t = (0, i.h_)(A, 128, 128);
                 try {
@@ -42,12 +42,12 @@ let x = (e, t, n, i) => (o.default.track(u.HAw.EMOJI_UPLOAD_FILE_SIZE_LIMIT_EXCE
                 } catch (e) {
                     return x(n.name, n.size, h, _)
                 }
-                if (E = t, b = e, o.default.track(u.HAw.EMOJI_FILE_RESIZED, {
+                if (E = t, C = e, o.default.track(u.HAw.EMOJI_FILE_RESIZED, {
                         is_animated: !1,
                         file_type: n.type.split("/").pop(),
                         original_file_size_bytes: n.size,
                         resized_file_size_bytes: (0, c.EW)(E),
-                        resized_file_too_big: b
+                        resized_file_too_big: C
                     }), e) return x(n.name, n.size, h, _)
             }
         }

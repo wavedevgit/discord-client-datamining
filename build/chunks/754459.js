@@ -1,23 +1,23 @@
 /** chunk id: 754459 params = (module,exports,require) **/
 n.d(t, {
-    A: () => a
+    A: () => r
 });
 var i = n(64700),
     l = n(203982),
     s = n(652215);
 
-function r(e) {
+function a(e) {
     return Object.keys(e).some(t => e[t])
 }
 
-function a(e, t) {
-    let [n, a] = i.useState(t), [o, d] = i.useState(r(n)), c = i.useRef(o), u = i.useRef(null), _ = i.useCallback(e => {
-        a(t => {
+function r(e, t) {
+    let [n, r] = i.useState(t), [o, d] = i.useState(a(n)), c = i.useRef(o), u = i.useRef(null), _ = i.useCallback(e => {
+        r(t => {
             let n = {
                     ...t,
                     ...e
                 },
-                i = r(n);
+                i = a(n);
             return i !== c.current && (c.current = i, null != u.current && (cancelAnimationFrame(u.current), u.current = null), i ? d(!0) : u.current = requestAnimationFrame(() => d(!1))), n
         })
     }, []);

@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     l = n(64700),
     s = n(503698),
-    r = n.n(s),
-    a = n(172218),
+    a = n.n(s),
+    r = n(172218),
     o = n(317097),
     d = n(565645),
     c = n(114166),
@@ -19,7 +19,7 @@ let g = l.memo(function(e) {
         let t, n, {
                 useChatFontScaling: l,
                 hideEmoji: s,
-                emoji: a,
+                emoji: r,
                 className: g,
                 count: A,
                 me: x,
@@ -53,19 +53,19 @@ let g = l.memo(function(e) {
             borderColor: n
         };
         return (0, i.jsxs)("div", {
-            className: r()(L.reaction, L.reactionInner, g, {
+            className: a()(L.reaction, L.reactionInner, g, {
                 [L.reactionMe]: S,
                 [L.reactionReadOnly]: I && !v && !b
             }),
             style: D,
             children: [(0, i.jsx)(d.A, {
-                className: r()({
+                className: a()({
                     [L.hideEmoji]: s
                 }),
-                emojiId: a.id,
-                emojiName: a.name,
+                emojiId: r.id,
+                emojiName: r.name,
                 size: N,
-                animated: y && a.animated
+                animated: y && r.animated
             }), (0, i.jsx)("div", {
                 className: L.reactionCount,
                 style: M,
@@ -78,11 +78,11 @@ let g = l.memo(function(e) {
             showImmediate: t,
             reactions: n,
             ...s
-        } = e, [r, o] = l.useState(!1), [d, c] = l.useTransition(), u = l.useCallback(e => {
-            !e || r || d || c(() => {
+        } = e, [a, o] = l.useState(!1), [d, c] = l.useTransition(), u = l.useCallback(e => {
+            !e || a || d || c(() => {
                 o(!0)
             })
-        }, [r, d]), h = (0, a.K)(u), p = r && !d || t ? m.qT : g;
+        }, [a, d]), h = (0, r.K)(u), p = a && !d || t ? m.qT : g;
         return (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)("div", {
                 ref: h

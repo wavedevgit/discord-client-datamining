@@ -23,12 +23,12 @@ var i = n(627968),
     j = n(190695),
     N = n(29086),
     E = n(652215),
-    b = n(743981),
-    C = n(583970),
+    C = n(743981),
+    b = n(583970),
     T = n(985018),
     I = n(791633);
 let v = function() {
-    (0, T.useSyncMessages)(C.messagesLoader);
+    (0, T.useSyncMessages)(b.messagesLoader);
     let e = (0, r.bG)([h.A], () => h.A.getGuild()),
         t = (0, r.bG)([h.A], () => h.A.getGuildProfile()),
         {
@@ -45,9 +45,9 @@ let v = function() {
     let S = l.i.VISIBLE.has(t.visibility),
         y = (0, u.Rg)(e),
         R = !y || t?.tag == null,
-        O = t.badge ?? b.hc["0"],
-        L = t.badgeColorPrimary ?? null,
-        G = t.badgeColorSecondary ?? null,
+        O = t.badge ?? C.hc["0"],
+        G = t.badgeColorPrimary ?? null,
+        L = t.badgeColorSecondary ?? null,
         D = (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)(A.A, {
                 className: I.uW,
@@ -55,8 +55,8 @@ let v = function() {
                 isDisabled: R,
                 tag: t.tag ?? "",
                 badge: O,
-                primaryColor: L,
-                secondaryColor: G
+                primaryColor: G,
+                secondaryColor: L
             }), (0, i.jsx)(p.A, {
                 className: I.uW,
                 selectedBadge: O,
@@ -65,15 +65,15 @@ let v = function() {
                 className: I.uW,
                 guildId: e.id,
                 badge: O,
-                primaryColor: L,
-                secondaryColor: G
+                primaryColor: G,
+                secondaryColor: L
             })]
         });
     return (0, i.jsxs)("div", {
         children: [(0, i.jsx)(a.Heading, {
             className: I.DD,
             variant: "heading-lg/semibold",
-            children: T.intl.string(C.default.mf2OwH)
+            children: T.intl.string(b.default.mf2OwH)
         }), (0, i.jsxs)("div", {
             className: I.kL,
             children: [(0, i.jsxs)("div", {
@@ -83,7 +83,7 @@ let v = function() {
                     children: [(0, i.jsx)(a.Text, {
                         variant: "text-sm/medium",
                         color: "text-subtle",
-                        children: T.intl.format(C.default["655Uny"], {
+                        children: T.intl.format(b.default["655Uny"], {
                             onClickServerProfile: () => {
                                 x.A.setSection(E.BEX.PROFILE)
                             },
@@ -95,7 +95,7 @@ let v = function() {
                         className: I.pB,
                         children: (0, i.jsx)(a.Text, {
                             variant: "text-xs/medium",
-                            children: T.intl.format(C.default.CRbkIz, {
+                            children: T.intl.format(b.default.CRbkIz, {
                                 onClickEditSetting: () => x.A.setSection(E.BEX.PROFILE, E.nd0.PROFILE_VISIBILITY)
                             })
                         })
@@ -107,7 +107,7 @@ let v = function() {
                         children: (0, i.jsx)(a.Text, {
                             variant: "text-md/semibold",
                             color: "text-strong",
-                            children: T.intl.string(C.default["1zams8"])
+                            children: T.intl.string(b.default["1zams8"])
                         })
                     }), (0, i.jsx)(a.dOG, {
                         id: "enable-server-tag",
@@ -116,8 +116,8 @@ let v = function() {
                             R ? x.A.updateGuildProfile(e.id, {
                                 tag: t.tag ?? "",
                                 badge: O,
-                                badgeColorPrimary: L,
-                                badgeColorSecondary: G
+                                badgeColorPrimary: G,
+                                badgeColorSecondary: L
                             }) : x.A.updateGuildProfile(e.id, {
                                 tag: null
                             })
@@ -142,8 +142,8 @@ let v = function() {
                     guildId: e.id,
                     tag: t.tag,
                     badge: O,
-                    primaryColor: L,
-                    secondaryColor: G
+                    primaryColor: G,
+                    secondaryColor: L
                 }), !R && (0, i.jsx)(j.A, {
                     guildId: e.id
                 })]

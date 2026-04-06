@@ -29,17 +29,17 @@ function A(e) {
         vanityURLUses: j,
         originalVanityURLCode: N,
         errorDetails: E,
-        fetched: b
+        fetched: C
     } = (0, l.cf)([m.A], () => ({
         vanityURLCode: m.A.vanityURLCode,
         vanityURLUses: m.A.vanityURLUses,
         originalVanityURLCode: m.A.originalVanityURLCode,
         errorDetails: m.A.errorDetails,
         fetched: m.A.fetchedVanityURL
-    })), C = t?.id;
+    })), b = t?.id;
     return (s.useEffect(() => {
-        null == C || b || (0, u.Je)(C)
-    }, [b, C]), null == t) ? null : A ? (0, i.jsx)(a.A, {}) : (0, i.jsxs)("div", {
+        null == b || C || (0, u.Je)(b)
+    }, [C, b]), null == t) ? null : A ? (0, i.jsx)(a.A, {}) : (0, i.jsxs)("div", {
         ref: n,
         children: [(0, i.jsxs)(r.Heading, {
             variant: "heading-md/medium",

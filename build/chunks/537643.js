@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(64700),
     l = n(311907),
     s = n(139675),
-    r = n(835517),
-    a = n(729394),
+    a = n(835517),
+    r = n(729394),
     o = n(216184);
 let d = e => {
     let {
@@ -28,8 +28,8 @@ let d = e => {
             cachedImageURL: null,
             imageURL: null
         };
-        let a = 600 * (0, r.A)(),
-            d = (n?.assets?.invite_cover_image != null ? (0, s.uD)(n.application_id, n.assets.invite_cover_image, a) : null) ?? l ?? i.getCoverImageURL(a) ?? null;
+        let r = 600 * (0, a.A)(),
+            d = (n?.assets?.invite_cover_image != null ? (0, s.uD)(n.application_id, n.assets.invite_cover_image, r) : null) ?? l ?? i.getCoverImageURL(r) ?? null;
         return {
             cachedImageURL: l,
             imageURL: d
@@ -40,7 +40,7 @@ let d = e => {
         application: d
     }), [t, n, d]);
     return i.useEffect(() => {
-        c !== u && a.K({
+        c !== u && r.K({
             messageId: t,
             coverImageURL: u
         })

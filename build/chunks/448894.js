@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     l = n(64700),
     s = n(284009),
-    r = n.n(s),
-    a = n(110259),
+    a = n.n(s),
+    r = n(110259),
     o = n(158954),
     d = n(311907),
     c = n(846293),
@@ -43,8 +43,8 @@ function N(e) {
             analyticsLocations: M
         } = (0, _.Ay)(u.A.INVITE_EMBED);
     (0, m.A)({
-        name: a.ImpressionNames.INVITE_EMBED,
-        type: a.ImpressionTypes.VIEW,
+        name: r.ImpressionNames.INVITE_EMBED,
+        type: r.ImpressionTypes.VIEW,
         properties: {
             invite_code: n.code,
             invite_guild_id: n.guild?.id,
@@ -56,13 +56,13 @@ function N(e) {
         }
     });
     let w = null != n && n.target_type === v.yV.STREAM && null != n.target_user && null != P,
-        k = null != n && null != D && null != n.channel && null != n.guild && D.channelId === n.channel.id && D.guildId === n.guild.id;
-    r()(null != n, "Invite cannot be null");
+        O = null != n && null != D && null != n.channel && null != n.guild && D.channelId === n.channel.id && D.guildId === n.guild.id;
+    a()(null != n, "Invite cannot be null");
     let {
-        target_type: O,
+        target_type: k,
         target_user: U
     } = n;
-    r()(O === v.yV.STREAM && null != U, "invalid streaming invite");
+    a()(k === v.yV.STREAM && null != U, "invalid streaming invite");
     let B = s === U.id,
         G = n.state === I.elq.ACCEPTING,
         F = l.useCallback(() => {
@@ -82,10 +82,10 @@ function N(e) {
     }
     let V = null != n.channel ? (0, g.OY)(n.channel) : null,
         q = C.Ay.getName(U),
-        W = w || !k && H,
+        W = w || !O && H,
         Y = b.intl.string(b.t.I6JG46),
         z = "active";
-    H && !k ? (t = B ? b.intl.string(b.t.oBLoZJ) : b.intl.formatToPlainString(b.t["0QJmA+"], {
+    H && !O ? (t = B ? b.intl.string(b.t.oBLoZJ) : b.intl.formatToPlainString(b.t["0QJmA+"], {
         name: q
     }), Y = b.intl.string(b.t.Wdi5E1)) : (z = "active", w && (Y = b.intl.string(b.t.Q1W99y), z = "secondary"), t = B ? b.intl.string(b.t["4hyaHu"]) : b.intl.formatToPlainString(b.t.QmlLEq, {
         name: q
@@ -103,10 +103,10 @@ function N(e) {
                 className: T.iH,
                 children: [(0, i.jsx)(p.A.Icon, {
                     guild: N,
-                    onClick: H && k ? F : void 0
+                    onClick: H && O ? F : void 0
                 }), (0, i.jsx)(p.A.Info, {
                     title: t,
-                    onClick: H && k ? F : void 0,
+                    onClick: H && O ? F : void 0,
                     children: Q
                 })]
             }), (0, i.jsx)(o.$nd, {

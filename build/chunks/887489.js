@@ -1,7 +1,7 @@
 /** chunk id: 887489 params = (module,exports,require) **/
 n.d(t, {
     K: () => f,
-    V: () => E
+    V: () => b
 });
 var i = n(421380),
     s = n(171316),
@@ -27,7 +27,7 @@ let f = () => (0, g.e)() ? T.intl.string(T.t.PMsfcH) : T.intl.string(T.t.RAQUSN)
             applied_to_existing_guilds: t
         })
     },
-    E = (0, l.zD)(u.X.CONTENT_AND_SOCIAL_PERMISSIONS_DMS_SETTING, {
+    b = (0, l.zD)(u.X.CONTENT_AND_SOCIAL_PERMISSIONS_DMS_SETTING, {
         useTitle: f,
         useSubtitle: () => {
             let e = (0, _.Tx)(),

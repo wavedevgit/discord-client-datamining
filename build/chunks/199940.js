@@ -10,11 +10,11 @@ n.d(t, {
     UP: () => R,
     W5: () => y,
     WA: () => v,
-    Wh: () => b,
+    Wh: () => C,
     XD: () => I,
     hL: () => _,
     kO: () => D,
-    px: () => C,
+    px: () => b,
     sd: () => N,
     sk: () => M,
     z4: () => T
@@ -84,7 +84,7 @@ function E(e) {
         actions: e
     })
 }
-async function b(e, t, n) {
+async function C(e, t, n) {
     let i = {};
     null != n.emoji ? i.emoji = n.emoji : i.icon = n.icon;
     try {
@@ -113,7 +113,7 @@ async function b(e, t, n) {
     }
 }
 
-function C(e) {
+function b(e) {
     r.h.dispatch({
         type: "GUILD_SETTINGS_ONBOARDING_ADD_RESOURCE_CHANNEL",
         resourceChannel: e
@@ -211,7 +211,7 @@ async function O(e, t) {
             homeSettings: s
         }), Object.entries(n).forEach(t => {
             let [n, i] = t;
-            null == i || (null != i.iconData ? L(e, n, i).finally(() => {
+            null == i || (null != i.iconData ? G(e, n, i).finally(() => {
                 f(n)
             }) : f(n))
         }), c.default.track(x.HAw.GUILD_SETTINGS_GUIDE_UPDATED, {
@@ -235,20 +235,20 @@ async function O(e, t) {
         })
     }
 }
-async function L(e, t, n) {
+async function G(e, t, n) {
     let {
         iconData: i,
         isUrl: s,
         emoji: l
     } = n;
     if (null != l) return;
-    let r = null != i && s ? await G(i) : i;
-    await b(e, t, {
+    let r = null != i && s ? await L(i) : i;
+    await C(e, t, {
         icon: r,
         emoji: null
     })
 }
-async function G(e) {
+async function L(e) {
     let t = await fetch(e),
         n = await t.blob();
     return await (0, u.We)(n)

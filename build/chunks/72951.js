@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     l = n(503698),
     s = n.n(l),
-    r = n(3026),
-    a = n(397927),
+    a = n(3026),
+    r = n(397927),
     o = n(47167),
     d = n(713654),
     c = n(9674);
@@ -18,7 +18,7 @@ function u(e) {
         guild: l,
         onClick: u
     } = e, _ = (0, d.gU)(n, l), m = (0, o.Ay)(n);
-    return (0, i.jsxs)(a.DUT, {
+    return (0, i.jsxs)(r.DUT, {
         onClick: u,
         className: s()(c.UP, t),
         children: [null != _ && (0, i.jsx)(_, {
@@ -27,14 +27,14 @@ function u(e) {
             size: "custom",
             width: 12,
             height: 12
-        }), (0, i.jsx)(a.Text, {
+        }), (0, i.jsx)(r.Text, {
             variant: "text-xs/medium",
             lineClamp: 1,
             color: "currentColor",
-            children: (0, i.jsxs)(r.A, {
+            children: (0, i.jsxs)(a.A, {
                 children: [l.name, " / ", m]
             })
-        }), (0, i.jsx)(a._BQ, {
+        }), (0, i.jsx)(r._BQ, {
             className: c.t4,
             color: "currentColor",
             size: "custom",

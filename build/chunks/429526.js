@@ -25,7 +25,7 @@ let A = [],
         } = e, n = (0, r.bG)([c.A], () => c.A.getGuild(t)), f = (0, r.yK)([g.A], () => {
             let e = g.A.getSettings();
             return e.resourceChannels?.map(e => e.channelId) ?? A
-        }), j = (0, r.yK)([g.A], () => g.A.getDismissedSuggestedChannelIds(t)), N = (0, r.bG)([d.Ay], () => d.Ay.getSelectableChannels(t)), E = s.useMemo(() => (0, l.chain)(N).filter(e => e.channel.type === h.rbe.GUILD_TEXT && e.channel.id !== n?.rulesChannelId && !j.includes(e.channel.id) && !f.includes(e.channel.id) && u.MJ(h.xBc.VIEW_CHANNEL, e.channel) && !u.MJ(h.xBc.SEND_MESSAGES, e.channel)).take(5).value(), [N, j, n?.rulesChannelId, f]), b = s.useCallback(() => {
+        }), j = (0, r.yK)([g.A], () => g.A.getDismissedSuggestedChannelIds(t)), N = (0, r.bG)([d.Ay], () => d.Ay.getSelectableChannels(t)), E = s.useMemo(() => (0, l.chain)(N).filter(e => e.channel.type === h.rbe.GUILD_TEXT && e.channel.id !== n?.rulesChannelId && !j.includes(e.channel.id) && !f.includes(e.channel.id) && u.MJ(h.xBc.VIEW_CHANNEL, e.channel) && !u.MJ(h.xBc.SEND_MESSAGES, e.channel)).take(5).value(), [N, j, n?.rulesChannelId, f]), C = s.useCallback(() => {
             let e = E.map(e => e.channel.id);
             (0, m.kO)(t, e)
         }, [t, E]);
@@ -43,7 +43,7 @@ let A = [],
                         children: _.intl.string(_.t.YtNI8C)
                     }), (0, i.jsxs)(a.DUT, {
                         className: p.iC,
-                        onClick: b,
+                        onClick: C,
                         children: [(0, i.jsx)(a.A9s, {
                             size: "md",
                             color: "currentColor",

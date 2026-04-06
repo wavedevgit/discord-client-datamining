@@ -29,26 +29,26 @@ function E(e) {
         setPreventNavigation: n = () => {}
     } = e, {
         editingRule: E,
-        setEditingRule: b
+        setEditingRule: C
     } = (0, x.U)(), {
-        guild: C,
+        guild: b,
         subsection: T
-    } = (0, l.cf)([a.A], () => a.A.getProps()), I = C?.id ?? t ?? f.dJq, v = null != E, [S] = (0, u.qv)(I), {
+    } = (0, l.cf)([a.A], () => a.A.getProps()), I = b?.id ?? t ?? f.dJq, v = null != E, [S] = (0, u.qv)(I), {
         rulesByTriggerType: y
     } = (0, u.wP)(I), R = {
         [m.yT.MEMBERS]: j.intl.string(j.t.sx4E5v),
         [m.yT.CONTENT]: j.intl.string(j.t.fphZb0)
-    }, O = s.useMemo(() => Object.values(y ?? {}).flat().filter(d.Vq), [y]), L = {
+    }, O = s.useMemo(() => Object.values(y ?? {}).flat().filter(d.Vq), [y]), G = {
         isInEditMode: v,
-        setEditingRule: b
-    }, G = s.useRef(L);
+        setEditingRule: C
+    }, L = s.useRef(G);
     s.useEffect(() => {
-        G.current = L
+        L.current = G
     }), s.useEffect(() => {
         let {
             isInEditMode: e,
             setEditingRule: t
-        } = G.current;
+        } = L.current;
         e && t(null)
     }, [I]);
     let D = s.useCallback((e, t) => null != e ? O.find(t => {
@@ -105,8 +105,8 @@ function E(e) {
                     }, e))
                 })]
             }, t)
-        }), null != C && (0, i.jsx)(o.t9, {
-            guild: C,
+        }), null != b && (0, i.jsx)(o.t9, {
+            guild: b,
             withDivider: !1,
             className: N.Vf
         }), (0, i.jsx)(h.A, {

@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
     Ay: () => k,
-    eW: () => L,
+    eW: () => G,
     th: () => O
 });
 var i = n(627968),
@@ -25,8 +25,8 @@ var i = n(627968),
     j = n(734057),
     N = n(317525),
     E = n(994500),
-    b = n(287809),
-    C = n(985018),
+    C = n(287809),
+    b = n(985018),
     T = n(532300);
 let I = (0, h.Ld)(),
     v = (0, h.Ld)(),
@@ -56,8 +56,8 @@ function O(e) {
     }
 }
 
-function L(e) {
-    let t = (0, g.m1)(e, b.default, E.A);
+function G(e) {
+    let t = (0, g.m1)(e, C.default, E.A);
     return {
         tag: {
             type: m._.CHANNEL,
@@ -71,7 +71,7 @@ function L(e) {
         }
     }
 }
-let G = s.memo(function(e) {
+let L = s.memo(function(e) {
     let {
         row: t,
         guildId: n,
@@ -126,7 +126,7 @@ function D(e) {
 }
 
 function M(e, t, n) {
-    return y(e) ? (0, i.jsx)(G, {
+    return y(e) ? (0, i.jsx)(L, {
         row: e,
         guildId: t,
         className: n
@@ -153,11 +153,11 @@ function k(e) {
         let i = {};
         return e.forEach(e => {
             let t = j.A.getChannel(e);
-            null != t && (i[e] = L(t))
+            null != t && (i[e] = G(t))
         }), t.forEach(e => {
             e in n && (i[e] = O(n[e]))
         }), i
-    })(a, g, A), [a, g, A]), E = s.useMemo(() => Object.keys(f), [f]), [b, S] = s.useState(""), [G, D] = s.useState(!1), [k, U] = s.useState(!1), [P, w] = s.useState(!1), B = s.useRef(null), {
+    })(a, g, A), [a, g, A]), E = s.useMemo(() => Object.keys(f), [f]), [C, S] = s.useState(""), [L, D] = s.useState(!1), [k, U] = s.useState(!1), [P, w] = s.useState(!1), B = s.useRef(null), {
         refs: F,
         floatingStyles: H
     } = (0, d.uaw)({
@@ -168,15 +168,15 @@ function k(e) {
         sections: V,
         sectionCounts: z
     } = s.useMemo(() => {
-        let e = "" !== b ? l.filter(e => o()(b, e.display.toLocaleLowerCase())) : l,
-            t = "" !== b ? n.filter(e => o()(b, e.display.toLocaleLowerCase())) : n,
+        let e = "" !== C ? l.filter(e => o()(C, e.display.toLocaleLowerCase())) : l,
+            t = "" !== C ? n.filter(e => o()(C, e.display.toLocaleLowerCase())) : n,
             i = [],
             s = [];
         return i[0] = e, s[0] = e.length, i[1] = t, s[1] = t.length, {
             sections: i,
             sectionCounts: s
         }
-    }, [b, l, n]), W = s.useCallback(e => {
+    }, [C, l, n]), W = s.useCallback(e => {
         let t = Object.values(e),
             n = t.filter(e => {
                 let {
@@ -196,12 +196,12 @@ function k(e) {
     };
     s.useEffect(() => {
         let e = setTimeout(() => {
-            w(G || k)
+            w(L || k)
         }, 32);
         return () => {
             clearTimeout(e)
         }
-    }, [G, k]);
+    }, [L, k]);
     let Y = (e, t, n) => {
             n.stopPropagation(), n.preventDefault(), 2 === t ? D(e) : (1 === t || D(e), U(e))
         },
@@ -209,7 +209,7 @@ function k(e) {
             let t = {
                 ...f
             };
-            R(e) ? t[e.id] = L(e.record) : y(e) && (t[e.id] = O(e.record)), W(t), S(""), K(), setTimeout(() => {
+            R(e) ? t[e.id] = G(e.record) : y(e) && (t[e.id] = O(e.record)), W(t), S(""), K(), setTimeout(() => {
                 let e = B.current?.containerRef.current,
                     t = e?.firstChild;
                 null != t && t.scrollTo({
@@ -234,7 +234,7 @@ function k(e) {
                 })
             }, l.id)
         }, [t, X, V]),
-        Z = s.useMemo(() => E.map(e => {
+        q = s.useMemo(() => E.map(e => {
             var n;
             return n = f[e], {
                 ...n.tag,
@@ -247,10 +247,10 @@ function k(e) {
             className: T.M6,
             ref: F.setReference,
             children: [(0, i.jsx)(m.A, {
-                tags: Z,
+                tags: q,
                 maxHeight: 98,
                 size: m.A.Sizes.MEDIUM,
-                query: b,
+                query: C,
                 ref: B,
                 onRemoveTag: e => {
                     let t = E[e],
@@ -263,7 +263,7 @@ function k(e) {
                 onQueryChange: e => {
                     S(e.trim().toLocaleLowerCase())
                 },
-                placeholder: h ?? C.intl.string(C.t.uqHLzW),
+                placeholder: h ?? b.intl.string(b.t.uqHLzW),
                 sections: [E.length],
                 inputProps: {
                     "aria-labelledby": I,
@@ -292,12 +292,12 @@ function k(e) {
                         return 0 === t ? (0, i.jsx)(u.Heading, {
                             variant: "heading-sm/semibold",
                             className: r()(T.Gf, T.r6),
-                            children: C.intl.string(C.t.OGiMXJ)
-                        }, C.intl.string(C.t.OGiMXJ)) : 1 === t ? (0, i.jsx)(u.Heading, {
+                            children: b.intl.string(b.t.OGiMXJ)
+                        }, b.intl.string(b.t.OGiMXJ)) : 1 === t ? (0, i.jsx)(u.Heading, {
                             variant: "heading-sm/semibold",
                             className: r()(T.Gf, T.r6),
-                            children: C.intl.string(C.t["LPJmL/"])
-                        }, C.intl.string(C.t["LPJmL/"])) : null
+                            children: b.intl.string(b.t["LPJmL/"])
+                        }, b.intl.string(b.t["LPJmL/"])) : null
                     },
                     renderFooter: e => {
                         let {

@@ -1,6 +1,6 @@
 /** chunk id: 212758 params = (module,exports,require) **/
 _.d(t, {
-    A: () => c
+    A: () => I
 });
 var s = _(627968),
     i = _(64700),
@@ -10,14 +10,14 @@ var s = _(627968),
     r = _(397927),
     l = _(922529),
     o = _(977393),
-    I = _(117816);
+    c = _(117816);
 
-function c(e) {
+function I(e) {
     let {
         headerText: t,
         descriptionText: _,
         infoRows: a,
-        onDismissAndStay: c,
+        onDismissAndStay: I,
         onDismissAndLeave: d,
         leaveButtonText: E,
         stayButtonText: u,
@@ -26,19 +26,19 @@ function c(e) {
     } = e;
     return (0, s.jsx)(A.ExpressiveModal, {
         transitionState: h,
-        onClose: () => (c(), Promise.resolve()),
+        onClose: () => (I(), Promise.resolve()),
         trackingProps: {
             impression: L
         },
         graphic: {
             type: "image",
-            src: I.A
+            src: c.A
         },
         title: t,
         subtitle: _ ?? void 0,
         actions: [{
             text: u,
-            onClick: c,
+            onClick: I,
             variant: "secondary"
         }, {
             text: E,

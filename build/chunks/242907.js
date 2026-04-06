@@ -6,8 +6,8 @@ var i = n(627968);
 n(64700);
 var l = n(158954),
     s = n(311907),
-    r = n(414798),
-    a = n(529200),
+    a = n(414798),
+    r = n(529200),
     o = n(406704),
     d = n(961350),
     c = n(734057),
@@ -48,18 +48,18 @@ function A(e) {
             _._.dispatchToLastSubscribed(h.jej.INSERT_TEXT, {
                 plainText: t,
                 rawText: n
-            }), null != C && r.A.startTyping(C)
+            }), null != C && a.A.startTyping(C)
         },
         text: p.intl.string(p.t.P8tvKG)
-    })) : t = p.intl.string(p.t["SMJr+a"])), (0, i.jsxs)(a.A, {
-        children: [(0, i.jsx)(a.A.Header, {
+    })) : t = p.intl.string(p.t["SMJr+a"])), (0, i.jsxs)(r.A, {
+        children: [(0, i.jsx)(r.A.Header, {
             text: A
-        }), (0, i.jsxs)(a.A.Body, {
+        }), (0, i.jsxs)(r.A.Body, {
             children: [(0, i.jsxs)("div", {
                 className: g.iH,
-                children: [(0, i.jsx)(a.A.Icon, {
+                children: [(0, i.jsx)(r.A.Icon, {
                     expired: !0
-                }), (0, i.jsx)(a.A.Info, {
+                }), (0, i.jsx)(r.A.Info, {
                     expired: !0,
                     title: p.intl.string(p.t["Jhx/ud"]),
                     children: t

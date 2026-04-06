@@ -23,19 +23,19 @@ var i = n(627968),
     j = n(716610),
     N = n(652215),
     E = n(324580),
-    b = n(985018);
+    C = n(985018);
 
-function C(e) {
+function b(e) {
     let {
         pendingState: t,
         dirtyState: l,
         originalGuild: _,
         settingsGuild: A,
-        settingsMetadata: C,
+        settingsMetadata: b,
         settingsProfile: T
-    } = e, I = A.id, [v, S] = s.useState(!1), [y, R] = s.useState(null), O = A.features.has(N.GuildFeatures.MEMBER_VERIFICATION_MANUAL_APPROVAL), L = (0, g.H)({
+    } = e, I = A.id, [v, S] = s.useState(!1), [y, R] = s.useState(null), O = A.features.has(N.GuildFeatures.MEMBER_VERIFICATION_MANUAL_APPROVAL), G = (0, g.H)({
         guildId: A.id
-    }) ?? 0, G = s.useCallback(() => {
+    }) ?? 0, L = s.useCallback(() => {
         R(null), h.A.init(I, N.BEX.ACCESS)
     }, [I]), D = s.useCallback(async e => {
         try {
@@ -49,7 +49,7 @@ function C(e) {
                 throwErr: !0
             })
         } catch (e) {
-            throw "object" == typeof e && "message" in e ? R(e.message) : R(b.intl.formatToPlainString(b.t.aTVNes, {
+            throw "object" == typeof e && "message" in e ? R(e.message) : R(C.intl.formatToPlainString(C.t.aTVNes, {
                 statusPageURL: N.qF7.STATUS
             })), e
         }
@@ -62,7 +62,7 @@ function C(e) {
     }, [I]), U = s.useCallback(async (e, t, n) => {
         let i = t.length > 0 ? [{
             field_type: u.rX.TERMS,
-            label: b.intl.string(b.t["9suSIA"]),
+            label: C.intl.string(C.t["9suSIA"]),
             values: t,
             required: !0
         }] : [];
@@ -121,7 +121,7 @@ function C(e) {
                     try {
                         await (0, d.Oh)({
                             guildId: A.id,
-                            ...C
+                            ...b
                         })
                     } catch (e) {
                         throw R(new o.LG(e).getAnyErrorMessage()), e
@@ -129,15 +129,15 @@ function C(e) {
                 }
             })
         }
-    }, [t, D, A, l, M, U, T, k, _, C]), w = s.useCallback(() => (e => {
+    }, [t, D, A, l, M, U, T, k, _, b]), w = s.useCallback(() => (e => {
         if (t.joinType === f.J.INVITE || t.joinType === f.J.DISCOVERABLE) {
             let {
                 requireTerms: e,
                 termRules: n = []
             } = t;
-            if (n.map(e => e.value.trim()).filter(e => "" !== e).length < 1 && e) return void R(b.intl.string(b.t.TCHkcd))
+            if (n.map(e => e.value.trim()).filter(e => "" !== e).length < 1 && e) return void R(C.intl.string(C.t.TCHkcd))
         }
-        t.joinType !== f.J.APPLY || t.pendingVerificationFields?.some(e => (0, m.OP)(e)) ? e() : R(b.intl.string(b.t.HGVrI3))
+        t.joinType !== f.J.APPLY || t.pendingVerificationFields?.some(e => (0, m.OP)(e)) ? e() : R(C.intl.string(C.t.HGVrI3))
     })(() => {
         var e;
         return e = e => {
@@ -152,24 +152,24 @@ function C(e) {
                     onConfirm: s
                 })
             }) : s())
-        }, void(O && L > 0 && t.joinType !== f.J.APPLY ? (0, a.mMO)(async () => {
+        }, void(O && G > 0 && t.joinType !== f.J.APPLY ? (0, a.mMO)(async () => {
             let {
                 default: t
             } = await n.e("63452").then(n.bind(n, 78903));
             return n => (0, i.jsx)(t, {
                 ...n,
                 guildId: I,
-                submittedGuildJoinRequestsCount: L,
+                submittedGuildJoinRequestsCount: G,
                 onConfirm: e
             })
         }) : e())
-    }), [O, P, t, I, L]), B = t.joinType === f.J.DISCOVERABLE && t.settingsView === j.v.ELIGIBLE_DISABLED, F = null != A.description && C.primaryCategoryId !== E.ig && C.keywords.length > 0;
+    }), [O, P, t, I, G]), B = t.joinType === f.J.DISCOVERABLE && t.settingsView === j.v.ELIGIBLE_DISABLED, F = null != A.description && b.primaryCategoryId !== E.ig && b.keywords.length > 0;
     return (0, i.jsx)(r.A, {
-        message: B ? b.intl.string(b.t.V2G2Yr) : void 0,
-        onSaveText: B ? b.intl.string(b.t["qjtt/p"]) : void 0,
+        message: B ? C.intl.string(C.t.V2G2Yr) : void 0,
+        onSaveText: B ? C.intl.string(C.t["qjtt/p"]) : void 0,
         submitting: v,
         errorMessage: y,
-        onReset: G,
+        onReset: L,
         onSave: w,
         disabled: B && !F
     })
@@ -202,9 +202,9 @@ function T() {
         }
     });
     return null == e || null == n ? null : e.joinType === f.J.DISCOVERABLE && e.settingsView === j.v.INELIGIBLE ? (0, i.jsx)(r.A, {
-        message: b.intl.string(b.t.TEXwRt),
+        message: C.intl.string(C.t.TEXwRt),
         onReset: () => h.A.init(n.id, N.BEX.ACCESS)
-    }) : (0, i.jsx)(C, {
+    }) : (0, i.jsx)(b, {
         pendingState: e,
         dirtyState: t,
         originalGuild: a,

@@ -1,7 +1,7 @@
 /** chunk id: 946171 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    s: () => L
+    s: () => G
 });
 var i = n(627968),
     s = n(64700);
@@ -24,15 +24,15 @@ var l = n(311907),
     j = n(716610),
     N = n(927573),
     E = n(814758),
-    b = n(985018),
-    C = n(903824);
+    C = n(985018),
+    b = n(903824);
 
 function T() {
     return (0, i.jsx)(r.Text, {
         tag: "span",
         variant: "text-xs/bold",
         color: "text-feedback-critical",
-        className: C.mw,
+        className: b.mw,
         children: "*"
     })
 }
@@ -61,47 +61,47 @@ function I(e) {
         onlineCount: u.A.getOnlineCount(t.id)
     }));
     return (0, i.jsxs)("div", {
-        className: C.cL,
+        className: b.cL,
         children: [(0, i.jsxs)("div", {
-            className: C.hd,
+            className: b.hd,
             children: [(0, i.jsxs)("div", {
                 children: [(0, i.jsx)(r.Heading, {
                     variant: "text-md/semibold",
                     color: "text-strong",
-                    className: C.wx,
-                    children: b.intl.string(b.t.LYju5J)
+                    className: b.wx,
+                    children: C.intl.string(C.t.LYju5J)
                 }), (0, i.jsx)(r.Text, {
                     variant: "text-sm/medium",
                     color: "text-subtle",
-                    children: b.intl.string(b.t["53LhI6"])
+                    children: C.intl.string(C.t["53LhI6"])
                 })]
             }), (0, i.jsxs)("div", {
                 children: [(0, i.jsx)(r.Heading, {
                     variant: "text-xs/bold",
                     color: "text-muted",
-                    className: C.uI,
-                    children: b.intl.string(b.t.JaecVH)
+                    className: b.uI,
+                    children: C.intl.string(C.t.JaecVH)
                 }), (0, i.jsx)(r.Text, {
                     variant: "text-sm/medium",
                     color: "text-subtle",
-                    children: b.intl.string(b.t.VJMq8R)
+                    children: C.intl.string(C.t.VJMq8R)
                 }), (0, i.jsxs)("div", {
-                    className: C.Ll,
+                    className: b.Ll,
                     children: [(0, i.jsx)("div", {
-                        className: C.wF,
+                        className: b.wF,
                         children: (0, i.jsx)(c.A, {
                             onChange: a,
-                            text: b.intl.string(b.t["3UB9ad"]),
+                            text: C.intl.string(C.t["3UB9ad"]),
                             size: "sm",
                             variant: "secondary"
                         })
                     }), null != t.discoverySplash ? (0, i.jsx)("div", {
                         "data-button-hoisted-classname-wrapper": !0,
-                        className: C.wF,
+                        className: b.wF,
                         children: (0, i.jsx)(r.Button, {
                             variant: "critical-secondary",
                             size: "sm",
-                            text: b.intl.string(b.t.N86XcP),
+                            text: C.intl.string(C.t.N86XcP),
                             onClick: o
                         })
                     }) : null]
@@ -110,24 +110,24 @@ function I(e) {
                 children: [(0, i.jsxs)(r.Heading, {
                     variant: "text-xs/bold",
                     color: "text-muted",
-                    className: C.uI,
-                    children: [b.intl.string(b.t["1Ts7QP"]), n ? (0, i.jsx)(T, {}) : null]
+                    className: b.uI,
+                    children: [C.intl.string(C.t["1Ts7QP"]), n ? (0, i.jsx)(T, {}) : null]
                 }), (0, i.jsx)(r.Text, {
                     variant: "text-sm/medium",
                     color: "text-subtle",
-                    children: b.intl.string(b.t["6Y9q8d"])
+                    children: C.intl.string(C.t["6Y9q8d"])
                 }), (0, i.jsx)("div", {
-                    className: C.wF,
+                    className: b.wF,
                     children: (0, i.jsx)(r.fs1, {
                         value: t.description ?? "",
-                        placeholder: b.intl.string(b.t.Nvfowl),
+                        placeholder: C.intl.string(C.t.Nvfowl),
                         onChange: d,
                         maxLength: 300
                     })
                 })]
             })]
         }), (0, i.jsx)(h.A, {
-            className: C.VH,
+            className: b.VH,
             guild: t,
             memberCount: g,
             presenceCount: x
@@ -143,30 +143,30 @@ function v(e) {
         error: l
     } = e;
     return (0, i.jsxs)("div", {
-        className: C.hd,
+        className: b.hd,
         children: [(0, i.jsxs)("div", {
             children: [(0, i.jsx)(r.Heading, {
                 variant: "text-md/semibold",
                 color: "text-strong",
-                className: C.wx,
-                children: b.intl.string(b.t["5b4VCV"])
+                className: b.wx,
+                children: C.intl.string(C.t["5b4VCV"])
             }), (0, i.jsx)(r.Text, {
                 variant: "text-sm/medium",
                 color: "text-subtle",
-                children: b.intl.string(b.t.MMEJFB)
+                children: C.intl.string(C.t.MMEJFB)
             })]
         }), (0, i.jsxs)("div", {
             children: [(0, i.jsxs)(r.Heading, {
                 variant: "text-xs/bold",
                 color: "text-muted",
-                className: C.uI,
-                children: [b.intl.string(b.t.Rv9Anz), s ? (0, i.jsx)(T, {}) : null]
+                className: b.uI,
+                children: [C.intl.string(C.t.Rv9Anz), s ? (0, i.jsx)(T, {}) : null]
             }), (0, i.jsx)(r.Text, {
                 variant: "text-sm/medium",
                 color: "text-subtle",
-                children: b.intl.string(b.t.CE5Gya)
+                children: C.intl.string(C.t.CE5Gya)
             }), (0, i.jsx)("div", {
-                className: C.wF,
+                className: b.wF,
                 children: (0, i.jsx)(p.T, {
                     guildId: t.id,
                     guildMetadata: n
@@ -176,14 +176,14 @@ function v(e) {
             children: [(0, i.jsx)(r.Heading, {
                 variant: "text-xs/bold",
                 color: "text-muted",
-                className: C.uI,
-                children: b.intl.string(b.t.oOPlPA)
+                className: b.uI,
+                children: C.intl.string(C.t.oOPlPA)
             }), (0, i.jsx)(r.Text, {
                 variant: "text-sm/medium",
                 color: "text-subtle",
-                children: b.intl.string(b.t["4jnzla"])
+                children: C.intl.string(C.t["4jnzla"])
             }), (0, i.jsx)("div", {
-                className: C.wF,
+                className: b.wF,
                 children: (0, i.jsx)(A.A, {
                     guild: t,
                     guildMetadata: n
@@ -191,7 +191,7 @@ function v(e) {
             }), null != l ? (0, i.jsx)(r.Text, {
                 color: "text-feedback-critical",
                 variant: "text-sm/normal",
-                className: C.z3,
+                className: b.z3,
                 children: l
             }) : null]
         })]
@@ -219,41 +219,41 @@ function S(e) {
             text: e,
             onClick: () => h(e),
             disabled: t,
-            tooltipText: t ? b.intl.string(b.t.Xx7XeB) : void 0
+            tooltipText: t ? C.intl.string(C.t.Xx7XeB) : void 0
         }
     }), [n.keywords, n.primaryCategoryId, h]), p = c ?? u, A = s.useMemo(() => n.keywords.map(e => ({
         id: e,
         label: e
     })), [n.keywords]);
     return (0, i.jsxs)("div", {
-        className: C.hd,
+        className: b.hd,
         children: [(0, i.jsxs)("div", {
             children: [(0, i.jsx)(a.A, {
                 required: l,
-                label: b.intl.string(b.t["0PJZXj"]),
-                description: b.intl.string(b.t.ztiTDH),
-                tagsLabel: b.intl.string(b.t["0PJZXj"]),
+                label: C.intl.string(C.t["0PJZXj"]),
+                description: C.intl.string(C.t.ztiTDH),
+                tagsLabel: C.intl.string(C.t["0PJZXj"]),
                 tags: A,
                 onRemoveTag: g,
                 onAddTag: h,
                 onAddTagError: m,
                 maxTags: N.Qy,
                 maxTaxLength: N.Ug,
-                placeholder: n.keywords.length < 1 ? b.intl.string(b.t.EL4Lhs) : void 0
+                placeholder: n.keywords.length < 1 ? C.intl.string(C.t.EL4Lhs) : void 0
             }), null != p ? (0, i.jsx)(r.Text, {
                 color: "text-feedback-critical",
                 variant: "text-sm/normal",
-                className: C.z3,
+                className: b.z3,
                 children: p
             }) : null]
         }), _.length > 0 ? (0, i.jsxs)("div", {
             children: [(0, i.jsx)(r.Heading, {
                 variant: "text-xs/bold",
                 color: "text-muted",
-                className: C.uI,
-                children: b.intl.string(b.t.sF28Ou)
+                className: b.uI,
+                children: C.intl.string(C.t.sF28Ou)
             }), (0, i.jsx)("div", {
-                className: C.wF,
+                className: b.wF,
                 children: (0, i.jsx)(d.z, {
                     pills: _
                 })
@@ -272,23 +272,23 @@ function y(e) {
         (0, o.r8)(a, !l)
     }, [a, l]);
     return (0, i.jsxs)("div", {
-        className: C.cL,
+        className: b.cL,
         children: [(0, i.jsxs)("div", {
             children: [(0, i.jsx)(r.Heading, {
                 variant: "text-md/semibold",
                 color: "text-strong",
-                className: C.wx,
-                children: b.intl.string(b.t.DhJ8ur)
+                className: b.wx,
+                children: C.intl.string(C.t.DhJ8ur)
             }), (0, i.jsx)(r.Text, {
                 variant: "text-sm/medium",
                 color: "text-subtle",
-                children: b.intl.string(b.t["/RSSlV"])
+                children: C.intl.string(C.t["/RSSlV"])
             }), (0, i.jsx)("div", {
-                className: C.wF,
+                className: b.wF,
                 children: (0, i.jsx)(r.Button, {
                     size: "sm",
                     variant: l ? "secondary" : "active",
-                    text: l ? b.intl.string(b.t.XnrNLi) : b.intl.string(b.t.bHbZLP),
+                    text: l ? C.intl.string(C.t.XnrNLi) : C.intl.string(C.t.bHbZLP),
                     onClick: d
                 })
             })]
@@ -311,8 +311,8 @@ function R(e) {
     }, []);
     return (0, i.jsx)(r.l6P, {
         layout: "horizontal-responsive",
-        label: b.intl.string(b.t.pO60fy),
-        description: b.intl.string(b.t["SF/GRh"]),
+        label: C.intl.string(C.t.pO60fy),
+        description: C.intl.string(C.t["SF/GRh"]),
         value: t,
         options: n,
         onSelectionChange: l,
@@ -323,11 +323,11 @@ function R(e) {
 
 function O() {
     return (0, i.jsx)("div", {
-        className: C.yF
+        className: b.yF
     })
 }
 
-function L(e) {
+function G(e) {
     let {
         requireTerms: t,
         rules: n,
@@ -351,7 +351,7 @@ function L(e) {
     if (null == o) return null;
     let d = s === j.v.ELIGIBLE_DISABLED;
     return (0, i.jsxs)("div", {
-        className: C.W0,
+        className: b.W0,
         children: [(0, i.jsx)(I, {
             guild: o,
             requireDescription: d

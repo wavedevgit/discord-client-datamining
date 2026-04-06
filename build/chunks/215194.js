@@ -23,8 +23,8 @@ var i = n(627968),
     j = n(89145),
     N = n(913443),
     E = n(474215),
-    b = n(561923),
-    C = n(652215),
+    C = n(561923),
+    b = n(652215),
     T = n(985018),
     I = n(978945);
 let v = function() {
@@ -33,13 +33,13 @@ let v = function() {
     } = (0, d.Ay)(o.A.GUILD_SETTINGS_PROFILE_PAGE), t = (0, l.bG)([h.A], () => h.A.getGuild(), []), n = t?.id, {
         fetchGuildProfile: v,
         fetchStatus: S
-    } = (0, u.u)(t?.id), y = (0, l.bG)([h.A], () => h.A.getGuildProfile(), []), R = (0, l.bG)([g.A], () => g.A.can(C.xBc.MANAGE_GUILD, t)), O = s.useCallback(e => {
+    } = (0, u.u)(t?.id), y = (0, l.bG)([h.A], () => h.A.getGuildProfile(), []), R = (0, l.bG)([g.A], () => g.A.can(b.xBc.MANAGE_GUILD, t)), O = s.useCallback(e => {
         null != n && (x.A.updateGuild({
             icon: e
         }), x.A.updateGuildProfile(n, {
             icon: e
         }))
-    }, [n]), L = s.useCallback(e => {
+    }, [n]), G = s.useCallback(e => {
         null != n && x.A.updateGuildProfile(n, {
             customBanner: e
         })
@@ -47,13 +47,13 @@ let v = function() {
     s.useEffect(() => {
         null != n && v()
     }, [n, v]);
-    let G = s.useCallback(() => {
+    let L = s.useCallback(() => {
         v(!0)
     }, [v]);
     return (s.useEffect(() => {
         a.A.getDetectableGames()
     }, []), S === c.X.FETCHED && null == y) ? (0, i.jsx)(N.g, {
-        forceFetchGuildProfile: G
+        forceFetchGuildProfile: L
     }) : S === c.X.NOT_FETCHED || S === c.X.FETCHING ? (0, i.jsx)("main", {
         className: I.u1,
         children: (0, i.jsx)(r.y$y, {})
@@ -87,7 +87,7 @@ let v = function() {
                     className: I.yF
                 }), (0, i.jsx)(_.A, {
                     profile: y,
-                    onCustomBannerChange: L,
+                    onCustomBannerChange: G,
                     canManageGuild: R
                 }), (0, i.jsx)("div", {
                     className: I.yF
@@ -106,7 +106,7 @@ let v = function() {
                     canManageGuild: R
                 }), (0, i.jsx)("div", {
                     className: I.yF
-                }), (0, i.jsx)(b.A, {
+                }), (0, i.jsx)(C.A, {
                     profile: y,
                     canManageGuild: R
                 })]

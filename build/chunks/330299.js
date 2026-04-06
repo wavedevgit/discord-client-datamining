@@ -213,11 +213,11 @@ function d(e, t) {
                 })
             }), e.preventDefault(), e.stopPropagation())
         }, [s, c.length, u, o]),
-        b = i.useCallback(e => {
+        C = i.useCallback(e => {
             let t = e.metaKey || e.ctrlKey;
             "z" === e.key && t ? (m().selections.length > 0 ? s.current?.blur() : s.current?.focus(), e.preventDefault(), e.stopPropagation()) : "y" === e.key && t && (g().selections.length > 0 ? s.current?.blur() : s.current?.focus(), e.preventDefault(), e.stopPropagation())
         }, [m, g, s]),
-        C = i.useCallback(e => {
+        b = i.useCallback(e => {
             let t = o.trim().length > 0,
                 {
                     selectionStart: n = 0,
@@ -250,13 +250,13 @@ function d(e, t) {
         handleInputChange: j,
         handleKeyDown: i.useCallback(e => {
             let t = e.metaKey || e.ctrlKey;
-            "Meta" !== e.key && (a.Wu.has(e.key) ? N(e) : "Backspace" === e.key ? E(e) : "Escape" === e.key ? f(e) : "a" === e.key && t ? C(e) : a.A_.has(e.key) && t && b(e))
-        }, [N, E, f, C, b]),
+            "Meta" !== e.key && (a.Wu.has(e.key) ? N(e) : "Backspace" === e.key ? E(e) : "Escape" === e.key ? f(e) : "a" === e.key && t ? b(e) : a.A_.has(e.key) && t && C(e))
+        }, [N, E, f, b, C]),
         handleContainerKeyUp: i.useCallback(e => {
             if (document.activeElement !== l.current) return;
             let t = e.metaKey || e.ctrlKey;
-            "Backspace" === e.key ? E(e) : "a" === e.key && t ? C(e) : "Escape" === e.key ? f(e) : a.A_.has(e.key) && t ? b(e) : "Meta" !== e.key && f(e)
-        }, [b, E, C, f, l]),
+            "Backspace" === e.key ? E(e) : "a" === e.key && t ? b(e) : "Escape" === e.key ? f(e) : a.A_.has(e.key) && t ? C(e) : "Meta" !== e.key && f(e)
+        }, [C, E, b, f, l]),
         handleRemoveTag: h,
         handleTagChangeEvent: _,
         handleSelectTag: p,

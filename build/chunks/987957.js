@@ -27,18 +27,18 @@ let N = function(e) {
         action: l,
         actionIndex: N,
         onChange: E,
-        onDelete: b,
-        onDragStart: C,
+        onDelete: C,
+        onDragStart: b,
         onDragComplete: T,
         onDragReset: I
     } = e, v = (0, a.bG)([h.A], () => h.A.getChannel(l.channelId)), S = (0, a.bG)([_.A], () => _.A.getGuild(t)), y = (0, a.bG)([A.A], () => A.A.getPendingData()[l.channelId]), {
         customEmoji: R,
         unicodeEmoji: O
-    } = (0, m.A)(l.emoji?.id, l.emoji?.name), L = null == l.emoji || null != R || null != O, G = p.Ay.getNewMemberActionIconURL({
+    } = (0, m.A)(l.emoji?.id, l.emoji?.name), G = null == l.emoji || null != R || null != O, L = p.Ay.getNewMemberActionIconURL({
         channelId: l.channelId,
         icon: l.icon
-    }), D = null != y ? y.iconData : G, M = null;
-    null != v && (0, g.Rc)(v) ? L || (M = f.intl.string(f.t.wAkIZW)) : M = f.intl.string(f.t.CbTEKP);
+    }), D = null != y ? y.iconData : L, M = null;
+    null != v && (0, g.Rc)(v) ? G || (M = f.intl.string(f.t.wAkIZW)) : M = f.intl.string(f.t.CbTEKP);
     let {
         drag: k,
         dragSourcePosition: U,
@@ -48,7 +48,7 @@ let N = function(e) {
         type: "NEW_MEMBER_ACTION",
         index: N,
         optionId: l.channelId,
-        onDragStart: C,
+        onDragStart: b,
         onDragComplete: T,
         onDragReset: I
     }), B = s.useCallback(() => {
@@ -61,10 +61,10 @@ let N = function(e) {
                 guildId: t,
                 action: l,
                 onSave: (e, t, n) => E(N, e, t, n),
-                onDelete: () => b(N)
+                onDelete: () => C(N)
             })
         })
-    }, [t, l, N, E, b]);
+    }, [t, l, N, E, C]);
     if (null == v || null == S) return null;
     let F = (0, c.gU)(v) ?? d.N$i;
     return (0, i.jsxs)("div", {

@@ -25,11 +25,11 @@ function _() {
         setCurrentTab: f
     } = (0, x.Tj)(), j = () => f(x.Oi.EMOJIS), N = (0, s.bG)([r.A], () => r.A.getGuild(t)), E = null != N ? (0, c.A)(N) : void 0;
 
-    function b(e) {
+    function C(e) {
         null == _ ? p(new Set(e)) : p(new Set([..._, ...e]))
     }
 
-    function C(e) {
+    function b(e) {
         let t = new Set(_);
         t.delete(e), p(t)
     }
@@ -47,14 +47,14 @@ function _() {
             tierEmojiIds: _,
             guildId: t,
             onRemoveEmoji: function(e) {
-                e.roles.filter(e => e !== A?.id).length > 0 ? C(e.id) : (0, l.mMO)(async () => {
+                e.roles.filter(e => e !== A?.id).length > 0 ? b(e.id) : (0, l.mMO)(async () => {
                     let {
                         default: t
                     } = await n.e("55631").then(n.bind(n, 185074));
                     return n => (0, i.jsx)(t, {
                         ...n,
                         onConfirmDelete: () => {
-                            C(e.id), n.onClose()
+                            b(e.id), n.onClose()
                         }
                     })
                 })
@@ -71,7 +71,7 @@ function _() {
                         ...n,
                         guildId: t,
                         initialTierEmojiIds: _,
-                        onSubmit: b,
+                        onSubmit: C,
                         transitionToManageEmoji: () => {
                             j(), n.onClose()
                         }

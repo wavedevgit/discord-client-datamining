@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     l = n(311907),
     s = n(793574),
-    r = n(688810),
-    a = n(522305),
+    a = n(688810),
+    r = n(522305),
     o = n(735991),
     d = n(361926),
     c = n(485724),
@@ -39,11 +39,11 @@ function b(e) {
         botUserId: t?.bot?.id
     }), j = null != t && (0, o.Ag)(t), L = null != y && j && S, {
         analyticsLocations: R
-    } = (0, r.Ay)(s.A.ACTIVITY_CUSTOM_LINK), P = (0, l.bG)([A.A], () => A.A.getChannelId()), D = (0, I.et)(P), M = (0, l.bG)([C.Ay], () => {
+    } = (0, a.Ay)(s.A.ACTIVITY_CUSTOM_LINK), P = (0, l.bG)([A.A], () => A.A.getChannelId()), D = (0, I.et)(P), M = (0, l.bG)([C.Ay], () => {
         if (null == P) return;
         let e = C.Ay.getEmbeddedActivitiesForChannel(P).filter(e => e.applicationId === t.id);
         return e.length > 0 ? e[0].compositeInstanceId : void 0
-    }), w = (0, l.bG)([C.Ay], () => C.Ay.getCurrentEmbeddedActivity()), k = (0, E.A)(), O = D === I.xy.CAN_LAUNCH, U = null != M && w?.compositeInstanceId === M, B = null != n ? n : b.customId, G = (0, p.e)(t), F = [];
+    }), w = (0, l.bG)([C.Ay], () => C.Ay.getCurrentEmbeddedActivity()), O = (0, E.A)(), k = D === I.xy.CAN_LAUNCH, U = null != M && w?.compositeInstanceId === M, B = null != n ? n : b.customId, G = (0, p.e)(t), F = [];
     G ? F.push({
         label: v.intl.string(v.t.RscU7I),
         trackingArea: _.kY.PLAY,
@@ -52,7 +52,7 @@ function b(e) {
                 applicationId: t.id
             })
         }
-    }) : (O && F.push({
+    }) : (k && F.push({
         label: null == M ? v.intl.string(v.t.RscU7I) : U ? v.intl.string(v.t.DPfdsq) : v.intl.string(v.t.sqe0hj),
         trackingArea: _.kY.PLAY,
         onClick() {
@@ -60,18 +60,18 @@ function b(e) {
                 channelId: P ?? void 0,
                 applicationId: t.id,
                 isStart: null == M,
-                embeddedActivitiesManager: k,
+                embeddedActivitiesManager: O,
                 customId: B,
                 referrerId: T,
                 analyticsLocations: R
             })
         },
         disabled: U
-    }), L && !O && F.push({
+    }), L && !k && F.push({
         label: v.intl.string(v.t.JeK1Wg),
         trackingArea: _.kY.PLAY,
         onClick() {
-            (0, a.Q)({
+            (0, r.Q)({
                 appId: t.id,
                 botId: y,
                 analyticsLocations: R,

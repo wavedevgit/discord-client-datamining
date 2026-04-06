@@ -35,7 +35,7 @@ function A(e) {
         E = s.useCallback(() => {
             g.A.setSection(h.BEX.ACCESS, h.nd0.ACCESS_DISCOVERABLE)
         }, []),
-        b = t.features?.includes(h.GuildFeatures.DISCOVERABLE);
+        C = t.features?.includes(h.GuildFeatures.DISCOVERABLE);
     return (0, i.jsxs)("div", {
         className: p.Im,
         ref: j,
@@ -46,8 +46,8 @@ function A(e) {
                 description: _.intl.string(_.t.J1YOV6),
                 checked: !A,
                 onChange: N,
-                disabled: b || !n
-            }), b && (0, i.jsx)(d.Text, {
+                disabled: C || !n
+            }), C && (0, i.jsx)(d.Text, {
                 variant: "text-xs/normal",
                 color: "text-muted",
                 children: _.intl.format(_.t.R8jY9g, {

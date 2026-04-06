@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     l = n(64700),
     s = n(503698),
-    r = n.n(s),
-    a = n(311907),
+    a = n.n(s),
+    r = n(311907),
     o = n(3026),
     d = n(990078),
     c = n(421380),
@@ -36,14 +36,14 @@ var i = n(627968),
     M = n(865112),
     w = n(260268);
 
-function k(e) {
+function O(e) {
     b.default.track(R.HAw.PREMIUM_PROMOTION_OPENED, {
         location_page: null != e.guild_id ? R.liQ.GUILD_CHANNEL : R.liQ.DM_CHANNEL,
         location_section: R.JJy.STICKER_POPOUT
     }), (0, C.e)()
 }
 
-function O(e) {
+function k(e) {
     let {
         sticker: t,
         description: n
@@ -74,8 +74,8 @@ let U = e => {
             closePopout: t,
             sticker: n,
             channel: s,
-            refreshPositionKey: r
-        } = e, [o, d, c] = (0, a.yK)([y.A], () => [y.A.getStickerPack(n.pack_id), !y.A.hasLoadedStickerPacks, y.A.isPremiumPack(n.pack_id)], [n]), _ = (e => {
+            refreshPositionKey: a
+        } = e, [o, d, c] = (0, r.yK)([y.A], () => [y.A.getStickerPack(n.pack_id), !y.A.hasLoadedStickerPacks, y.A.isPremiumPack(n.pack_id)], [n]), _ = (e => {
             let {
                 sticker: t,
                 stickerPack: n
@@ -88,7 +88,7 @@ let U = e => {
         (0, N.Sr)(n.pack_id);
         let m = (0, N.pD)(s),
             p = {
-                refreshPositionKey: r,
+                refreshPositionKey: a,
                 channel: s
             },
             g = l.useRef(p);
@@ -157,7 +157,7 @@ let U = e => {
             [S, L] = l.useState(!1),
             U = v.default.getCurrentUser(),
             B = T.Ay.canUseCustomStickersEverywhere(U),
-            G = (0, a.bG)([I.A], () => I.A.getGuild(n.guild_id)),
+            G = (0, r.bG)([I.A], () => I.A.getGuild(n.guild_id)),
             F = null != G,
             [H, V] = l.useState(!1),
             [q, W] = l.useState(null),
@@ -192,7 +192,7 @@ let U = e => {
             $ = "Custom Sticker Popout";
         B ? t = F ? J ? D.intl.string(D.t.fZ0DiG) : D.intl.string(D.t["1f6D9m"]) : X ? D.intl.string(D.t.yHmoR9) : D.intl.string(D.t.vZaScH) : F ? (t = J ? D.intl.string(D.t.jNphpt) : D.intl.string(D.t.lyD5ZW), Z = !0, $ = "Custom Sticker Popout (Upsell)") : X ? (t = D.intl.string(D.t.IuXYch), Z = !0, $ = "Custom Sticker Popout (Upsell)") : (t = D.intl.format(D.t.hGWuxU, {
             openPremiumSettings: () => {
-                k(s), o()
+                O(s), o()
             }
         }), $ = "Custom Sticker Popout (Soft Upsell)");
         let ee = !Z && !F && X && B;
@@ -222,7 +222,7 @@ let U = e => {
                     } catch {}
                 }, (0, i.jsxs)("div", {
                     className: w.gH,
-                    children: [(0, i.jsx)(O, {
+                    children: [(0, i.jsx)(k, {
                         description: t,
                         sticker: n
                     }), Z && (0, i.jsx)(E.A, {
@@ -277,7 +277,7 @@ let U = e => {
                                     }), (0, i.jsx)(u.abt, {
                                         size: "md",
                                         color: "currentColor",
-                                        className: r()(w.ZB, {
+                                        className: a()(w.ZB, {
                                             [w.cP]: !H
                                         })
                                     })]
@@ -291,7 +291,7 @@ let U = e => {
                                     text: e.name,
                                     ...f.Uk,
                                     children: (0, i.jsx)("div", {
-                                        className: r()(w.Th, {
+                                        className: a()(w.Th, {
                                             [M.vT]: null != q && q !== e.id
                                         }),
                                         onMouseEnter: () => {
@@ -326,11 +326,11 @@ function G(e) {
     } = e;
     return (0, i.jsx)(f.Uq, {
         className: M.Bm,
-        children: (0, i.jsx)(O, {
+        children: (0, i.jsx)(k, {
             sticker: l,
             description: D.intl.format(D.t.hGWuxU, {
                 openPremiumSettings: () => {
-                    n(), k(t)
+                    n(), O(t)
                 }
             })
         })
@@ -342,18 +342,18 @@ let F = e => {
         channel: n,
         closePopout: l,
         refreshPositionKey: s
-    } = e, [r, a] = (0, N.Zq)(t, !0);
-    return null != r && (0, S.FD)(r) ? (0, i.jsx)(U, {
-        sticker: r,
+    } = e, [a, r] = (0, N.Zq)(t, !0);
+    return null != a && (0, S.FD)(a) ? (0, i.jsx)(U, {
+        sticker: a,
         closePopout: l,
         channel: n,
         refreshPositionKey: s
-    }) : null != r && (0, S.Xw)(r) ? (0, i.jsx)(B, {
-        sticker: r,
+    }) : null != a && (0, S.Xw)(a) ? (0, i.jsx)(B, {
+        sticker: a,
         channel: n,
         closePopout: l,
         refreshPositionKey: s
-    }) : a ? null == r ? (0, i.jsx)(G, {
+    }) : r ? null == a ? (0, i.jsx)(G, {
         channel: n,
         closePopout: l,
         sticker: t

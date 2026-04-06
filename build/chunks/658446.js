@@ -23,7 +23,7 @@ var i = n(627968),
     j = n(652215),
     N = n(985018),
     E = n(731763);
-let b = e => {
+let C = e => {
     let {
         name: t,
         failingName: n,
@@ -68,7 +68,7 @@ let b = e => {
     })
 };
 
-function C(e, t) {
+function b(e, t) {
     return o()(e?.map(e => {
         let [t, n] = e;
         return t?.id
@@ -102,7 +102,7 @@ let T = e => {
                 let [n, i] = e;
                 return [t[n], i]
             })
-        }, [l.id, y], C);
+        }, [l.id, y], b);
     if (I || null == T) return (0, i.jsxs)("div", {
         className: r()(E.kL, E.NQ, o),
         children: [(0, i.jsx)(x.Heading, {
@@ -115,7 +115,7 @@ let T = e => {
         })]
     });
     let O = S ? N.t["WH+1Yz"] : N.t.a4MYDO,
-        L = [{
+        G = [{
             name: N.intl.string(N.t.yvk9py),
             failingName: N.intl.string(N.t["IY/UT/"]),
             description: N.intl.string(N.t.hSLSM6),
@@ -272,10 +272,10 @@ let T = e => {
                 className: E.nr,
                 width: 40
             }), d]
-        })), L.filter(e => !m || null == e.checked || !e.checked).map((e, t) => (0, i.jsxs)(s.Fragment, {
-            children: [(0, i.jsx)(b, {
+        })), G.filter(e => !m || null == e.checked || !e.checked).map((e, t) => (0, i.jsxs)(s.Fragment, {
+            children: [(0, i.jsx)(C, {
                 ...e
-            }), t < L.length - 1 ? (0, i.jsx)("hr", {
+            }), t < G.length - 1 ? (0, i.jsx)("hr", {
                 className: E.me
             }) : null]
         }, `${e.name}`))]

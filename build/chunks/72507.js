@@ -29,7 +29,7 @@ function p(e) {
         d.A.updateGuild({
             splash: e
         })
-    }, []), b = s.useCallback(e => {
+    }, []), C = s.useCallback(e => {
         e.preventDefault(), e.stopPropagation(), (0, u.p_)({
             guild: t,
             analyticsLocations: A,
@@ -37,7 +37,7 @@ function p(e) {
             analyticsObject: m.ZSU.BUTTON_CTA,
             perks: (0, g.Lp)()
         })
-    }, [A, t]), C = s.useCallback(() => {
+    }, [A, t]), b = s.useCallback(() => {
         N.current?.activateUploadDialogue()
     }, []);
     return f ? (0, i.jsxs)("div", {
@@ -46,7 +46,7 @@ function p(e) {
             disabled: !j,
             variant: "primary",
             text: h.intl.string(h.t.yG2pUi),
-            onClick: C
+            onClick: b
         }), (0, i.jsx)("div", {
             className: _.y,
             children: (0, i.jsx)(o.Ay, {
@@ -62,7 +62,7 @@ function p(e) {
     }) : (0, i.jsx)("div", {
         className: p,
         children: (0, i.jsx)(c.u, {
-            onClick: b
+            onClick: C
         })
     })
 }

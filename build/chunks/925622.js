@@ -25,8 +25,8 @@ var l = n(311907),
     j = n(994500),
     N = n(287809),
     E = n(997509),
-    b = n(555337),
-    C = n(224394),
+    C = n(555337),
+    b = n(224394),
     T = n(814758),
     I = n(652215),
     v = n(985018),
@@ -38,10 +38,10 @@ let R = "dismissedCommunityFeaturesUpsell",
                 guild: t,
                 submitting: n,
                 errors: s
-            } = (0, l.cf)([b.A], () => ({
-                submitting: b.A.isSubmitting(),
-                guild: b.A.getGuild(),
-                errors: b.A.getErrors()
+            } = (0, l.cf)([C.A], () => ({
+                submitting: C.A.isSubmitting(),
+                guild: C.A.getGuild(),
+                errors: C.A.getErrors()
             })),
             r = Object.keys(s),
             a = r.length > 0 ? r[0] : null;
@@ -63,7 +63,7 @@ let R = "dismissedCommunityFeaturesUpsell",
             errorMessage: e
         })
     },
-    L = e => {
+    G = e => {
         let {
             discoveryEnabled: t,
             onboardingEnabled: n,
@@ -80,7 +80,7 @@ let R = "dismissedCommunityFeaturesUpsell",
         let j = (0, l.bG)([A.A], () => A.A.getGuild("942897714956472401")),
             N = o.features.has(I.GuildFeatures.COMMUNITY) && x >= 1e3 && _ && null == j;
         if (t && n && !N) return null;
-        let b = async () => {
+        let C = async () => {
             try {
                 let e = await r.Bo.post({
                     url: I.Rsh.JOIN_ADMIN_SERVER(o.id),
@@ -130,7 +130,7 @@ let R = "dismissedCommunityFeaturesUpsell",
                         variant: "primary",
                         size: "sm",
                         text: v.intl.string(v.t.iF1Asi),
-                        onClick: b
+                        onClick: C
                     })
                 }), n ? null : (0, i.jsx)("div", {
                     "data-button-hoisted-classname-wrapper": !0,
@@ -169,8 +169,8 @@ let R = "dismissedCommunityFeaturesUpsell",
             })]
         })
     },
-    G = () => {
-        let e = (0, l.bG)([b.A], () => b.A.getGuild()),
+    L = () => {
+        let e = (0, l.bG)([C.A], () => C.A.getGuild()),
             {
                 canManageGuild: t,
                 isGuildAdmin: n
@@ -212,7 +212,7 @@ let R = "dismissedCommunityFeaturesUpsell",
             children: [(0, i.jsx)(m.Heading, {
                 variant: "heading-lg/semibold",
                 children: v.intl.string(v.t.nRtNqn)
-            }), u ? (0, i.jsx)(L, {
+            }), u ? (0, i.jsx)(G, {
                 discoveryEnabled: e.features.has(I.GuildFeatures.DISCOVERABLE),
                 onboardingEnabled: e.features.has(I.GuildFeatures.GUILD_ONBOARDING),
                 guild: e
@@ -317,8 +317,8 @@ let R = "dismissedCommunityFeaturesUpsell",
         })
     },
     D = () => {
-        let e = (0, l.bG)([b.A], () => b.A.getGuild());
-        return null == e ? null : e.features.has(I.GuildFeatures.COMMUNITY) ? (0, i.jsx)(G, {}) : (0, i.jsx)(C.A, {
+        let e = (0, l.bG)([C.A], () => C.A.getGuild());
+        return null == e ? null : e.features.has(I.GuildFeatures.COMMUNITY) ? (0, i.jsx)(L, {}) : (0, i.jsx)(b.A, {
             guild: e
         })
     }

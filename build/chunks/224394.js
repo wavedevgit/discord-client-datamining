@@ -23,8 +23,8 @@ var i = n(627968),
     j = n(734673),
     N = n(920852),
     E = n(266332),
-    b = n(386528);
-let C = [{
+    C = n(386528);
+let b = [{
         iconSrc: n(374229),
         name: "Pokemon GO Paris",
         position: [-230, -100]
@@ -40,7 +40,7 @@ let C = [{
         position: [-280, -30],
         faded: !0
     }, {
-        iconSrc: b,
+        iconSrc: C,
         name: "r/leagueoflegends",
         position: [-320, -30],
         rightAlign: !0
@@ -118,7 +118,7 @@ let C = [{
     v = e => {
         let {
             guild: t
-        } = e, [n, l] = s.useState(0), [r, N] = s.useState(0), [E, b] = s.useState(), v = (0, a.bG)([g.A], () => g.A.can(h.xBc.ADMINISTRATOR, t)), S = E?.offsetWidth, y = E?.offsetHeight;
+        } = e, [n, l] = s.useState(0), [r, N] = s.useState(0), [E, C] = s.useState(), v = (0, a.bG)([g.A], () => g.A.can(h.xBc.ADMINISTRATOR, t)), S = E?.offsetWidth, y = E?.offsetHeight;
         return s.useEffect(() => {
             null != S && l(S / 2), null != y && N(y / 2)
         }, [S, y, l, N]), s.useEffect(() => {
@@ -127,8 +127,8 @@ let C = [{
             className: A.kL,
             children: [(0, i.jsxs)("div", {
                 className: A.vK,
-                ref: e => b(e),
-                children: [C.map(e => (0, i.jsx)(I, {
+                ref: e => C(e),
+                children: [b.map(e => (0, i.jsx)(I, {
                     ...e,
                     imageCoordinates: [n, r]
                 }, e.name)), (0, i.jsx)("img", {

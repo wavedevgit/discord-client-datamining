@@ -1,7 +1,7 @@
 /** chunk id: 728713 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => L
+    A: () => G
 });
 var i = n(627968),
     s = n(64700),
@@ -23,8 +23,8 @@ var i = n(627968),
     j = n(576705),
     N = n(792831),
     E = n(396816),
-    b = n(359837),
-    C = n(533448),
+    C = n(359837),
+    b = n(533448),
     T = n(316506),
     I = n(927573),
     v = n(652215),
@@ -45,9 +45,9 @@ function O(e) {
             onDragComplete: j,
             roleStyle: N
         } = e,
-        E = (0, b.c)(s, d, l),
-        C = (0, f.Oy)(l),
-        T = null == E && !C,
+        E = (0, C.c)(s, d, l),
+        b = (0, f.Oy)(l),
+        T = null == E && !b,
         I = l.tags?.guild_connections !== void 0,
         S = (0, A.X_)(s.id, l, l.colorStrings),
         [, O] = (0, a.i)({
@@ -63,8 +63,8 @@ function O(e) {
             }
         }),
         [{
-            dragSourcePosition: L
-        }, G] = (0, o.H)({
+            dragSourcePosition: G
+        }, L] = (0, o.H)({
             accept: R,
             canDrop: () => T,
             collect: e => {
@@ -94,8 +94,8 @@ function O(e) {
         colors: S
     }), (0, i.jsxs)(u.VQ0.Item, {
         className: r()(y.nM, {
-            [y.qo]: null !== L && x < L,
-            [y.BP]: null !== L && x > L
+            [y.qo]: null !== G && x < G,
+            [y.BP]: null !== G && x > G
         }),
         id: l.id,
         selectedItem: c,
@@ -115,34 +115,34 @@ function O(e) {
         },
         "aria-label": l.name,
         clickableRef: e => {
-            O(G(e?.ref ?? null))
+            O(L(e?.ref ?? null))
         },
-        children: [t, null != E ? (0, i.jsx)(b.A, {
+        children: [t, null != E ? (0, i.jsx)(C.A, {
             className: y.s2,
             tooltipText: E
         }) : null, (0, i.jsx)(u.Text, {
             variant: "text-sm/medium",
-            color: C ? "text-strong" : "interactive-text-active",
+            color: b ? "text-strong" : "interactive-text-active",
             lineClamp: 1,
             children: l.name
         })]
     })
 }
 
-function L(e) {
+function G(e) {
     let {
         guild: t,
         currentRoleId: n,
         setCurrentRoleId: l,
         setSelectedSection: a
     } = e, o = (0, d.bG)([E.A], () => E.A.roles), m = (0, d.bG)([j.A], () => j.A.getHighestRole(t)), _ = (0, d.bG)([h.A], () => h.A.roleStyle), [A, f] = s.useState(o.length), {
-        scrolledToTop: b,
+        scrolledToTop: C,
         handleScroll: v
     } = (0, T.u)(), {
         handleDragStart: R,
-        handleDragReset: L,
-        handleDragComplete: G
-    } = (0, C.A)(o), D = s.useRef(null), M = s.useCallback(e => {
+        handleDragReset: G,
+        handleDragComplete: L
+    } = (0, b.A)(o), D = s.useRef(null), M = s.useCallback(e => {
         let t = o.findIndex(t => t.id === e);
         D.current?.getScrollerNode()?.scrollTo({
             top: Math.max((t - 2) * 34, 0)
@@ -158,7 +158,7 @@ function L(e) {
             className: y.kL,
             children: [(0, i.jsxs)("div", {
                 className: r()(y.gn, {
-                    [y.P6]: !b
+                    [y.P6]: !C
                 }),
                 children: [(0, i.jsxs)(u.DUT, {
                     className: y.DD,
@@ -208,8 +208,8 @@ function L(e) {
                         onClick: () => l(e.id),
                         currentPosition: s,
                         onDragStart: R,
-                        onDragReset: L,
-                        onDragComplete: G,
+                        onDragReset: G,
+                        onDragComplete: L,
                         roleStyle: _
                     }, e.id))
                 })

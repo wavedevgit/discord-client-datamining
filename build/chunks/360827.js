@@ -24,8 +24,8 @@ var i = n(627968),
     j = n(191117),
     N = n(652215),
     E = n(539916),
-    b = n(985018),
-    C = n(851824);
+    C = n(985018),
+    b = n(851824);
 
 function T(e) {
     let {
@@ -33,50 +33,50 @@ function T(e) {
         prompts: n
     } = e, r = (0, l.bG)([m.A], () => m.A.editedDefaultChannelIds), [d, u] = (0, c.Lx)(t, n, [...r]), g = d.length, x = d.length + u.length, h = g / x * 100, _ = Math.max(Math.ceil(85 * x / 100) - g, 0), [p, A] = s.useState(!1), f = p ? a.abt : a.tN5;
     return (0, i.jsxs)("div", {
-        className: C.Kf,
+        className: b.Kf,
         children: [(0, i.jsxs)(a.DUT, {
-            className: C.a9,
+            className: b.a9,
             onClick: () => A(!p),
             children: [(0, i.jsxs)("div", {
-                className: C.Vn,
+                className: b.Vn,
                 children: [h <= 85 && (0, i.jsx)(a.EpV, {
                     size: "xs",
                     color: "currentColor",
-                    className: C.$e
+                    className: b.$e
                 }), (0, i.jsx)(a.Text, {
-                    className: C.XG,
+                    className: b.XG,
                     variant: "text-xs/medium",
                     color: "text-muted",
-                    children: b.intl.format(b.t.nMVKCX, {
+                    children: C.intl.format(C.t.nMVKCX, {
                         numChannelsMissing: x - g
                     })
                 })]
             }), (0, i.jsxs)("div", {
-                className: C.L$,
+                className: b.L$,
                 children: [(0, i.jsx)(a.iCB, {
-                    className: C.gH,
+                    className: b.gH,
                     foregroundColor: h > 85 ? "var(--status-positive)" : "var(--status-warning)",
                     percent: h
                 }), (0, i.jsx)(f, {
                     size: "md",
                     color: "currentColor",
-                    className: C.OW
+                    className: b.OW
                 })]
             })]
         }), p ? (0, i.jsxs)("div", {
-            className: C.k$,
+            className: b.k$,
             children: [(0, i.jsx)(a.Text, {
                 variant: "text-xs/semibold",
                 color: "text-muted",
-                children: b.intl.string(b.t["0FM4i+"])
+                children: C.intl.string(C.t["0FM4i+"])
             }), (0, i.jsx)("div", {
-                className: C.BM,
+                className: b.BM,
                 children: u.map(e => {
                     let t = (0, o.gU)(e) ?? a.N$i;
                     return (0, i.jsx)("div", {
-                        className: C.N5,
+                        className: b.N5,
                         children: (0, i.jsxs)(a.Text, {
-                            className: C.Ix,
+                            className: b.Ix,
                             variant: "text-xs/normal",
                             color: "interactive-text-active",
                             children: [(0, i.jsx)(t, {
@@ -87,7 +87,7 @@ function T(e) {
                     }, e.id)
                 })
             }), (0, i.jsx)("div", {
-                className: C.fg,
+                className: b.fg,
                 children: _ > 0 ? (0, i.jsxs)(i.Fragment, {
                     children: [(0, i.jsx)(a.EpV, {
                         size: "xs",
@@ -95,14 +95,14 @@ function T(e) {
                     }), (0, i.jsx)(a.Text, {
                         variant: "text-xs/normal",
                         color: "text-muted",
-                        children: b.intl.format(b.t.sX8890, {
+                        children: C.intl.format(C.t.sX8890, {
                             numChannels: _
                         })
                     })]
                 }) : (0, i.jsx)(a.Text, {
                     variant: "text-xs/normal",
                     color: "text-muted",
-                    children: b.intl.string(b.t.o4s29v)
+                    children: C.intl.string(C.t.o4s29v)
                 })
             })]
         }) : null]
@@ -145,34 +145,34 @@ function v(e) {
     };
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(a.Heading, {
-            className: C.wx,
+            className: b.wx,
             variant: "heading-lg/extrabold",
-            children: c ? b.intl.string(b.t.AGjtFv) : b.intl.string(b.t.dqCzoT)
+            children: c ? C.intl.string(C.t.AGjtFv) : C.intl.string(C.t.dqCzoT)
         }), (0, i.jsx)(a.Text, {
             variant: "text-sm/normal",
             color: "text-default",
-            children: b.intl.string(b.t["q/6MLL"])
+            children: C.intl.string(C.t["q/6MLL"])
         }), (0, i.jsxs)("div", {
-            className: C.yJ,
+            className: b.yJ,
             children: [(0, i.jsx)(a.MzZ, {
                 target: "_blank",
                 href: N.X7G.GUILD_ONBOARDING_EXAMPLES,
                 children: (0, i.jsx)(a.Text, {
                     variant: "text-sm/medium",
                     color: "text-link",
-                    children: b.intl.string(b.t.Ok55Kh)
+                    children: C.intl.string(C.t.Ok55Kh)
                 })
             }), (0, i.jsx)("div", {
-                className: C.Om
+                className: b.Om
             }), (0, i.jsx)(a.MzZ, {
                 onClick: h,
                 children: (0, i.jsx)(a.Text, {
                     variant: "text-sm/medium",
                     color: "text-link",
-                    children: b.intl.string(b.t["6gsjdM"])
+                    children: C.intl.string(C.t["6gsjdM"])
                 })
             }), (0, i.jsx)("div", {
-                className: C.Om
+                className: b.Om
             }), (0, i.jsx)(A.mU, {
                 guildId: t.id
             })]
@@ -182,7 +182,7 @@ function v(e) {
         }), n && (0, i.jsx)(f.A, {
             guildId: t.id
         }), (0, i.jsx)("div", {
-            className: C.E3,
+            className: b.E3,
             children: r ? (0, i.jsx)(a.y$y, {}) : (0, i.jsx)(j.A, {
                 postjoinOnly: c,
                 guildId: t.id
@@ -206,6 +206,6 @@ function S() {
             (0, _.P3)(), s && (0, x.p2)()
         },
         submitting: t || s && n,
-        onSaveText: b.intl.string(b.t["R3BPH+"])
+        onSaveText: C.intl.string(C.t["R3BPH+"])
     })
 }

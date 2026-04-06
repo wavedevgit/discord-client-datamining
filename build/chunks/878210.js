@@ -16,7 +16,7 @@ function o(e) {
         let e = () => {
             o(!0), setTimeout(() => {
                 o(!1)
-            }, 1e3)
+            }, 300)
         };
         return a._.subscribe(r.jej.SHAKE_PROFILE_MODAL, e), () => {
             a._.unsubscribe(r.jej.SHAKE_PROFILE_MODAL, e)

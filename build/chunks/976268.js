@@ -22,9 +22,9 @@ var i = n(627968),
     f = n(652215);
 n(392164);
 var S = n(985018),
-    E = n(502040);
+    b = n(502040);
 
-function b(e) {
+function E(e) {
     let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
         n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
         i = arguments.length > 3 && void 0 !== arguments[3] && arguments[3],
@@ -78,7 +78,7 @@ function C() {
             displayNameMode: p.default.getDisplayNameMode(),
             displayUserMode: p.default.getDisplayUserMode()
         })),
-        [x] = s.useState(() => [b(S.intl.string(S.t.C0ZDvo), !0, !1), b(S.intl.string(S.t.iOtj8E), !1, !1, !0), b(S.intl.string(S.t["0oqNgL"]), !1, !0)]),
+        [x] = s.useState(() => [E(S.intl.string(S.t.C0ZDvo), !0, !1), E(S.intl.string(S.t.iOtj8E), !1, !1, !0), E(S.intl.string(S.t["0oqNgL"]), !1, !0)]),
         C = (0, r.bG)([d.A, A.A], () => {
             let e = d.A.getWidgetByType(f.uss.VOICE_V3);
             if (null == e) return null;
@@ -86,14 +86,14 @@ function C() {
             return null != t && (0, c.ZO)(t) ? t : null
         }),
         N = C?.meta?.voiceStatesMaxShown ?? 8,
-        v = [null != t ? ((e = b(t.username)).user = t, e) : null, ...x].filter(T.Vq),
+        v = [null != t ? ((e = E(t.username)).user = t, e) : null, ...x].filter(T.Vq),
         I = [new Map(v.map(e => [e.user.id, e])), v.map(e => e.user.id)],
         j = (0, i.jsx)(o.NPJ, {
             theme: f.NJ8.MIDNIGHT,
             children: e => (0, i.jsxs)("div", {
-                className: a()(E.Y5, e),
+                className: a()(b.Y5, e),
                 children: [(0, i.jsx)("div", {
-                    className: E.kJ,
+                    className: b.kJ,
                     children: (0, i.jsx)(u.DH, {
                         id: "voice-widget",
                         title: S.intl.string(S.t.KNJ6Vq),
@@ -120,7 +120,7 @@ function C() {
                         maxDisplayedVoiceStates: N
                     })
                 }), (0, i.jsxs)("div", {
-                    className: E.R$,
+                    className: b.R$,
                     children: [(0, i.jsx)(m.Pl, {
                         children: S.intl.string(S.t.KNJ6Vq)
                     }), (0, i.jsx)(m.CS, {}), (0, i.jsx)(m.O0, {
@@ -131,7 +131,7 @@ function C() {
             })
         });
     return (0, i.jsx)("div", {
-        className: E.F9,
+        className: b.F9,
         children: j
     })
 }

@@ -6,8 +6,8 @@ var i = n(627968);
 n(64700);
 var l = n(989349),
     s = n.n(l),
-    r = n(827734),
-    a = n(397927),
+    a = n(827734),
+    r = n(397927),
     o = n(393033),
     d = n(239093),
     c = n(985018),
@@ -17,9 +17,9 @@ function _(e) {
     let {
         classificationId: t
     } = e;
-    return (0, i.jsx)(a.MzZ, {
+    return (0, i.jsx)(r.MzZ, {
         onClick: () => {
-            (0, a.mMO)(async () => {
+            (0, r.mMO)(async () => {
                 let {
                     default: e
                 } = await Promise.all([n.e("83518"), n.e("9407"), n.e("73940")]).then(n.bind(n, 956450));
@@ -40,7 +40,7 @@ function m(e) {
     let {
         learnMoreLink: t
     } = e;
-    return (0, i.jsx)(a.MzZ, {
+    return (0, i.jsx)(r.MzZ, {
         className: u.zh,
         href: t,
         children: c.intl.string(c.t["8/GdRB"])
@@ -73,12 +73,12 @@ function p(e) {
     let {
         iconType: t
     } = e, n = {
-        default: (0, i.jsx)(a.koX, {
+        default: (0, i.jsx)(r.koX, {
             size: "xs",
-            color: r.A.colors.TEXT_LINK.css
+            color: a.A.colors.TEXT_LINK.css
         }),
-        danger: (0, i.jsx)(a.id, {
-            color: r.A.colors.ICON_FEEDBACK_CRITICAL
+        danger: (0, i.jsx)(r.id, {
+            color: a.A.colors.ICON_FEEDBACK_CRITICAL
         })
     };
     return null != t && t in n ? (0, i.jsx)("div", {
@@ -105,7 +105,7 @@ function A(e) {
     let t;
     if (null == e.embed || null == e.embed.fields) return null;
     let n = (0, o.f4)(e.embed);
-    return null == n ? null : (0, i.jsxs)(a.DUT, {
+    return null == n ? null : (0, i.jsxs)(r.DUT, {
         className: u.o3,
         children: [(0, i.jsxs)("div", {
             className: u.qZ,
@@ -113,13 +113,13 @@ function A(e) {
                 className: u.U1,
                 children: [(0, i.jsx)(p, {
                     iconType: n.icon
-                }), (0, i.jsx)(a.Text, {
+                }), (0, i.jsx)(r.Text, {
                     variant: "text-md/semibold",
                     children: n.header
                 })]
             }), (0, i.jsx)("div", {
                 className: u.VU,
-                children: (0, i.jsx)(a.Text, {
+                children: (0, i.jsx)(r.Text, {
                     variant: "text-xs/medium",
                     children: c.intl.format(c.t.eevFb6, {
                         daysAgo: (t = n.timestamp ?? 0, s()().diff(s().unix(t), "days"))
@@ -127,7 +127,7 @@ function A(e) {
                 })
             }), (0, i.jsx)("div", {
                 className: u.vv,
-                children: (0, i.jsx)(a.Text, {
+                children: (0, i.jsx)(r.Text, {
                     variant: "text-md/normal",
                     color: "text-muted",
                     children: n.body

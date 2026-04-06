@@ -53,8 +53,8 @@ let h = e => {
             avatarDecorationLegacyAssetId: T,
             avatarDecorationSkuId: f,
             avatarDecoAssetDescription: S,
-            ellipseOpacity: E,
-            customAnimationClassName: b,
+            ellipseOpacity: b,
+            customAnimationClassName: E,
             circleColor: C,
             circleStroke: N
         } = e, v = (0, o.bG)([c.A], () => c.A.useReducedMotion), I = t && !v;
@@ -63,7 +63,7 @@ let h = e => {
             children: (0, s.jsx)(_.A, {
                 animationClassName: r()(x._0, {
                     [x.uJ]: I,
-                    [b ?? ""]: I
+                    [E ?? ""]: I
                 }),
                 progressCircleStroke: N,
                 progressCircleStrokeSize: a,
@@ -81,7 +81,7 @@ let h = e => {
                         case 1:
                             return (0, s.jsx)(g.A, {
                                 circleColor: C,
-                                ellipseOpacity: E
+                                ellipseOpacity: b
                             });
                         case 2:
                             if (null != f) return (0, s.jsx)(h, {

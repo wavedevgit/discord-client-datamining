@@ -1,7 +1,7 @@
 /** chunk id: 239741 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => G
+    A: () => L
 });
 var i = n(627968),
     s = n(64700),
@@ -23,8 +23,8 @@ var i = n(627968),
     j = n(107795),
     N = n(655943),
     E = n(287479),
-    b = n(400812),
-    C = n(72533),
+    C = n(400812),
+    b = n(72533),
     T = n(23901),
     I = n(729984),
     v = n(692453),
@@ -32,9 +32,9 @@ var i = n(627968),
     y = n(133154),
     R = n(652215),
     O = n(985018),
-    L = n(444412);
+    G = n(444412);
 
-function G() {
+function L() {
     let e = (0, r.bG)([h.A], () => h.A.getGuild());
     return null == e ? null : (0, i.jsx)(D, {
         guild: e
@@ -44,7 +44,7 @@ function G() {
 function D(e) {
     let {
         guild: t
-    } = e, h = t.id, G = (0, r.bG)([E.A], () => E.A.getCurrentPage()), D = (0, C.A)(h), {
+    } = e, h = t.id, L = (0, r.bG)([E.A], () => E.A.getCurrentPage()), D = (0, b.A)(h), {
         hasChanges: M,
         hasConfiguredAnythingForCurrentStep: k,
         hasErrors: U
@@ -53,7 +53,7 @@ function D(e) {
         hasConfiguredAnythingForCurrentStep: E.A.hasConfiguredAnythingForCurrentStep(),
         hasErrors: E.A.hasErrors()
     })), P = (0, r.bG)([E.A], () => {
-        let e = (0, b.ql)(G);
+        let e = (0, C.ql)(L);
         return null != e && !E.A.isEducationUpsellDismissed(e)
     }), w = (0, u.Ay)(), B = s.useRef(null), [{
         spring: F
@@ -83,23 +83,23 @@ function D(e) {
             output: [W, (0, c.rdh)(a.A.colors.BACKGROUND_FEEDBACK_CRITICAL).hex()]
         });
     if (D) {
-        if (G === b.Hy.DEFAULT_CHANNELS) return (0, i.jsx)(I.G, {});
-        else if (G === b.Hy.CUSTOMIZATION_QUESTIONS) return (0, i.jsx)(S.fO, {});
-        else if (G === b.Hy.HOME_SETTINGS) return (0, i.jsx)(y.A, {});
-        else if (G === b.Hy.CONNECTIONS) return (0, i.jsx)(v.R, {});
-        else if ((G === b.Hy.LANDING || G === b.Hy.REVIEW) && f.A.hasChanges()) return (0, i.jsx)(y.A, {})
+        if (L === C.Hy.DEFAULT_CHANNELS) return (0, i.jsx)(I.G, {});
+        else if (L === C.Hy.CUSTOMIZATION_QUESTIONS) return (0, i.jsx)(S.fO, {});
+        else if (L === C.Hy.HOME_SETTINGS) return (0, i.jsx)(y.A, {});
+        else if (L === C.Hy.CONNECTIONS) return (0, i.jsx)(v.R, {});
+        else if ((L === C.Hy.LANDING || L === C.Hy.REVIEW) && f.A.hasChanges()) return (0, i.jsx)(y.A, {})
     }
-    let Y = G === b.kd[b.kd.length - 1],
+    let Y = L === C.kd[C.kd.length - 1],
         X = async () => {
             let e = N.A.advancedMode;
             if (M) try {
-                if (G === b.Hy.DEFAULT_CHANNELS) await (0, _.jr)(t).then(() => e ? (0, j.dm)(t, {
+                if (L === C.Hy.DEFAULT_CHANNELS) await (0, _.jr)(t).then(() => e ? (0, j.dm)(t, {
                     ignoreDefaultPrompt: !0
                 }) : Promise.resolve());
-                else if (G === b.Hy.CUSTOMIZATION_QUESTIONS) await (0, j.dm)(t, {
+                else if (L === C.Hy.CUSTOMIZATION_QUESTIONS) await (0, j.dm)(t, {
                     ignoreDefaultPrompt: !0
                 });
-                else if (G === b.Hy.HOME_SETTINGS) {
+                else if (L === C.Hy.HOME_SETTINGS) {
                     let e = f.A.getSettings();
                     await (0, A.W5)(t.id, e)
                 }
@@ -110,28 +110,28 @@ function D(e) {
         }, J = async () => {
             g.default.track(R.HAw.GUILD_SETTINGS_ONBOARDING_WIZARD_PROGRESS_CTA_CLICKED, {
                 ...(0, m.H$)(h),
-                step: b.Hy[G],
+                step: C.Hy[L],
                 back: !1,
                 skip: !M
-            }), (0, p.Ay)((0, b.ql)(G)), await X() && (0, p._k)(h, G)
-        }, Z = async () => {
+            }), (0, p.Ay)((0, C.ql)(L)), await X() && (0, p._k)(h, L)
+        }, q = async () => {
             g.default.track(R.HAw.GUILD_SETTINGS_ONBOARDING_WIZARD_PROGRESS_CTA_CLICKED, {
                 ...(0, m.H$)(h),
-                step: b.Hy[G],
+                step: C.Hy[L],
                 back: !0,
                 skip: !1
-            }), await X() && (0, p.kP)(h, G)
-        }, q = null;
-    P && (G === b.Hy.SAFETY_CHECK ? q = (0, i.jsx)(T.Et, {}) : G === b.Hy.DEFAULT_CHANNELS ? q = (0, i.jsx)(T.hz, {}) : G === b.Hy.CUSTOMIZATION_QUESTIONS ? q = (0, i.jsx)(T.yP, {}) : G === b.Hy.HOME_SETTINGS && (q = (0, i.jsx)(T.QS, {})));
+            }), await X() && (0, p.kP)(h, L)
+        }, Z = null;
+    P && (L === C.Hy.SAFETY_CHECK ? Z = (0, i.jsx)(T.Et, {}) : L === C.Hy.DEFAULT_CHANNELS ? Z = (0, i.jsx)(T.hz, {}) : L === C.Hy.CUSTOMIZATION_QUESTIONS ? Z = (0, i.jsx)(T.yP, {}) : L === C.Hy.HOME_SETTINGS && (Z = (0, i.jsx)(T.QS, {})));
     let Q = (0, i.jsx)("div", {
-            className: P ? L.R : void 0,
+            className: P ? G.R : void 0,
             children: (0, i.jsx)(c.Button, {
                 size: "sm",
                 variant: "secondary",
                 text: O.intl.string(O.t["13/7kX"]),
                 icon: c.rJJ,
                 iconPosition: "start",
-                onClick: Z,
+                onClick: q,
                 disabled: P || U
             })
         }),
@@ -147,33 +147,33 @@ function D(e) {
     return (0, i.jsx)(o.F, {
         component: "div",
         children: (0, i.jsx)(c.FQk, {
-            className: L.hE,
+            className: G.hE,
             children: (0, i.jsx)(l.animated.div, {
-                className: L.kL,
+                className: G.kL,
                 style: {
                     backgroundColor: K
                 },
                 children: (0, i.jsxs)("div", {
-                    className: L.nP,
+                    className: G.nP,
                     ref: B,
                     children: [P ? (0, i.jsxs)("div", {
-                        className: L.cZ,
+                        className: G.cZ,
                         children: [(0, i.jsx)("img", {
-                            className: L.kX,
+                            className: G.kX,
                             src: n(903702),
                             alt: "wumpus"
                         }), (0, i.jsxs)("div", {
-                            className: L.C0,
-                            children: [q, (0, i.jsx)("div", {
-                                className: L.JM
+                            className: G.C0,
+                            children: [Z, (0, i.jsx)("div", {
+                                className: G.JM
                             })]
                         })]
                     }) : null, (0, i.jsx)(c.xpW, {
                         containerRef: B,
                         children: (0, i.jsxs)("div", {
-                            className: L.o1,
+                            className: G.o1,
                             children: [Q, (0, i.jsxs)("div", {
-                                className: L.K2,
+                                className: G.K2,
                                 children: [U ? (0, i.jsx)(c.Text, {
                                     variant: "text-sm/normal",
                                     color: "status-warning",

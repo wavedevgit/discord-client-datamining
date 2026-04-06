@@ -20,22 +20,22 @@ var _ = s(627968),
 function L(e) {
     var t, s;
     let L, N, {
-        channelId: C,
-        blockedUserIds: g,
+        channelId: g,
+        blockedUserIds: C,
         ignoredUserIds: m = [],
         transitionState: G,
         onClose: f
     } = e;
     return i.useEffect(() => {
         l.default.track(h.HAw.GDM_BLOCKED_USER_WARNING_VIEWED, {
-            channel_id: C,
+            channel_id: g,
             warning_medium: I.W_.MODAL,
-            blocked_user_ids: g,
+            blocked_user_ids: C,
             ignored_user_ids: m
         })
-    }, [C, g, m]), (0, _.jsx)(d.A, {
+    }, [g, C, m]), (0, _.jsx)(d.A, {
         headerText: E.intl.string(E.t["mwJJ+f"]),
-        descriptionText: (t = g.length, s = m.length, L = t > 0, N = s > 0, L && N ? E.intl.string(E.t["0dP7Fk"]) : L ? E.intl.formatToPlainString(E.t.OpIG9d, {
+        descriptionText: (t = C.length, s = m.length, L = t > 0, N = s > 0, L && N ? E.intl.string(E.t["0dP7Fk"]) : L ? E.intl.formatToPlainString(E.t.OpIG9d, {
             n: t
         }) : N ? E.intl.formatToPlainString(E.t["D+V4jI"], {
             n: s
@@ -88,25 +88,25 @@ function L(e) {
             }
             return d
         })({
-            channelId: C,
-            blockedUserIds: g,
+            channelId: g,
+            blockedUserIds: C,
             ignoredUserIds: m
         }),
         onDismissAndStay: () => {
-            f(), (0, c.U)(C), l.default.track(h.HAw.GDM_BLOCKED_USER_WARNING_ENGAGEMENT, {
+            f(), (0, c.U)(g), l.default.track(h.HAw.GDM_BLOCKED_USER_WARNING_ENGAGEMENT, {
                 action: I.Qi.CLICK_TO_STAY,
-                channel_id: C,
+                channel_id: g,
                 warning_medium: I.W_.MODAL,
-                blocked_user_ids: g,
+                blocked_user_ids: C,
                 ignored_user_ids: m
             })
         },
         onDismissAndLeave: () => {
-            f(), (0, c.U)(C), n.A.closePrivateChannel(C, !0, !0), l.default.track(h.HAw.GDM_BLOCKED_USER_WARNING_ENGAGEMENT, {
+            f(), (0, c.U)(g), n.A.closePrivateChannel(g, !0, !0), l.default.track(h.HAw.GDM_BLOCKED_USER_WARNING_ENGAGEMENT, {
                 action: I.Qi.CLICK_TO_LEAVE,
-                channel_id: C,
+                channel_id: g,
                 warning_medium: I.W_.MODAL,
-                blocked_user_ids: g,
+                blocked_user_ids: C,
                 ignored_user_ids: m
             })
         },

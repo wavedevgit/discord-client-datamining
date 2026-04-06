@@ -49,12 +49,12 @@ function A(e) {
         }),
         {
             ref: E,
-            ...b
+            ...C
         } = (0, d._u)({
             orientation: "horizontal",
             isDisabled: l
         }),
-        C = (0, d.Gx)({
+        b = (0, d.Gx)({
             isSelected: f,
             label: x.intl.formatToPlainString(x.t.ZC69mL, {
                 colorHex: g.TpD
@@ -70,7 +70,7 @@ function A(e) {
         className: h.NC,
         "aria-label": x.intl.string(x.t["FJjrI/"]),
         ref: E,
-        ...b,
+        ...C,
         children: [(0, i.jsx)("div", {
             className: r()(h.oP, {
                 [h.r9]: l
@@ -80,7 +80,7 @@ function A(e) {
                     n(g.TGz)
                 },
                 "aria-disabled": l,
-                ...C,
+                ...b,
                 children: [(0, i.jsx)("div", {
                     className: h.nf,
                     style: {

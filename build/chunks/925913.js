@@ -22,8 +22,8 @@ var i = n(627968),
     T = n(287809),
     f = n(780964),
     S = n(932625),
-    E = n(652215),
-    b = n(985018),
+    b = n(652215),
+    E = n(985018),
     C = n(630044);
 let N = [{
         badgeType: g.Xi.NEW,
@@ -44,7 +44,7 @@ let N = [{
                 src: t,
                 avatarDecoration: n,
                 size: r._3J.SIZE_48,
-                "aria-label": b.intl.string(b.t.lqaIxI)
+                "aria-label": E.intl.string(E.t.lqaIxI)
             }), (0, i.jsxs)("div", {
                 className: C.FS,
                 children: [(0, i.jsx)(r.Text, {
@@ -58,7 +58,7 @@ let N = [{
                         variant: "text-sm/normal",
                         color: "currentColor",
                         lineClamp: 1,
-                        children: b.intl.string(b.t.Ip9nBS)
+                        children: E.intl.string(E.t.Ip9nBS)
                     }), (0, i.jsx)(s.PencilIcon, {
                         size: "xxs",
                         color: "currentColor"
@@ -68,18 +68,18 @@ let N = [{
         })
     },
     I = (0, m.t_)(f.X.PROFILE_PANEL, {
-        useTitle: () => b.intl.string(b.t["vi7f+q"]),
+        useTitle: () => E.intl.string(E.t["vi7f+q"]),
         notice: {
             stores: [_.A],
             element: u.A
         },
         initialize: () => () => o.h.wait(() => {
-            (0, d.F7)(), c.A.clearSubsection(E.nc_.PROFILE_CUSTOMIZATION)
+            (0, d.F7)(), c.A.clearSubsection(b.nc_.PROFILE_CUSTOMIZATION)
         }),
         buildLayout: () => [S.I]
     }),
     j = (0, m.i4)(f.X.PROFILE_SIDEBAR_ITEM, {
-        useTitle: () => b.intl.string(b.t["vi7f+q"]),
+        useTitle: () => E.intl.string(E.t["vi7f+q"]),
         icon: O,
         StronglyDiscouragedCustomComponent: v,
         getDismissibleBadges: () => N,
@@ -87,7 +87,7 @@ let N = [{
         buildLayout: () => [I]
     }),
     y = (0, m.i4)(f.X.PROFILE_SIDEBAR_ITEM_WYSIWYG, {
-        useTitle: () => b.intl.string(b.t["vi7f+q"]),
+        useTitle: () => E.intl.string(E.t["vi7f+q"]),
         icon: O,
         StronglyDiscouragedCustomComponent: v,
         getDismissibleBadges: () => N,

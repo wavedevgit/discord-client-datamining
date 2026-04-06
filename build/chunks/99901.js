@@ -1,4 +1,5 @@
 /** chunk id: 99901 params = (module,exports,require) **/
+"use strict";
 e.exports = {
     PY: "coverContainer__2f300",
     tu: "centerArt__2f300",

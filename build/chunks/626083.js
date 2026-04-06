@@ -1,8 +1,8 @@
 /** chunk id: 626083 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    aP: () => C,
-    oJ: () => b
+    aP: () => b,
+    oJ: () => C
 }), n(321073);
 var i = n(627968),
     s = n(64700),
@@ -103,37 +103,37 @@ function E(e) {
         name: n?.emoji_name
     })), E = o && "" !== _ && (null != A.id || null != A.name);
 
-    function b(e) {
+    function C(e) {
         e.preventDefault(), E && (c({
             description: _,
             emojiId: A.id,
             emojiName: A.name
         }), x())
     }
-    let C = [{
+    let b = [{
         text: f.intl.string(f.t["ETE/oC"]),
         variant: "secondary",
         onClick: x
     }];
-    return null != m && C.push({
+    return null != m && b.push({
         text: f.intl.string(f.t.oyYWHE),
         variant: "critical-secondary",
         onClick: () => {
             m(), x()
         },
         icon: d.ucK
-    }), C.push({
+    }), b.push({
         text: null == n ? f.intl.string(f.t.OYkgVk) : f.intl.string(f.t["R3BPH+"]),
         variant: "primary",
-        onClick: b,
+        onClick: C,
         disabled: !E
     }), (0, i.jsx)("form", {
-        onSubmit: b,
+        onSubmit: C,
         children: (0, i.jsx)(a.Modal, {
             transitionState: g,
             onClose: x,
             title: f.intl.string(f.t["2qf9EI"]),
-            actions: C,
+            actions: b,
             children: (0, i.jsxs)(d.BJc, {
                 gap: "md",
                 children: [l, (0, i.jsx)(d.fs1, {
@@ -157,7 +157,7 @@ function E(e) {
     })
 }
 
-function b(e) {
+function C(e) {
     let {
         guildId: t,
         omitChannelIds: n,
@@ -201,7 +201,7 @@ function b(e) {
     })
 }
 
-function C(e) {
+function b(e) {
     let {
         initialData: t,
         onSave: n,

@@ -137,7 +137,7 @@ function E() {
     })
 }
 
-function b() {
+function C() {
     return (0, i.jsxs)("div", {
         className: d.Og,
         children: [(0, i.jsx)(l.Text, {
@@ -157,7 +157,7 @@ function b() {
     })
 }
 
-function C() {
+function b() {
     let e = (0, r.Ay)();
     return (0, i.jsxs)("div", {
         className: d.FN,
@@ -193,7 +193,7 @@ function T() {
             size: 24
         }), (0, i.jsxs)("div", {
             className: d._$,
-            children: [(0, i.jsx)(E, {}), (0, i.jsx)(b, {}), (0, i.jsx)(C, {})]
+            children: [(0, i.jsx)(E, {}), (0, i.jsx)(C, {}), (0, i.jsx)(b, {})]
         })]
     })
 }

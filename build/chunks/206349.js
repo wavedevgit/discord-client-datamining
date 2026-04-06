@@ -1,6 +1,6 @@
 /** chunk id: 206349 params = (module,exports,require) **/
 n.d(t, {
-    A: () => E
+    A: () => b
 });
 var i = n(627968),
     s = n(64700),
@@ -22,7 +22,7 @@ var i = n(627968),
     f = n(652215),
     S = n(479310);
 
-function E() {
+function b() {
     let e = (0, _.j)("UserSettingsPremiumGuildSubscriptions");
     s.useEffect(() => {
         d.h.wait(() => {
@@ -35,8 +35,8 @@ function E() {
     } = (0, r.cf)([h.A], () => ({
         hasFetchedSubscriptions: h.A.hasFetchedSubscriptions(),
         premiumSubscription: h.A.getPremiumTypeSubscription()
-    })), l = (0, g.Y)(), E = (0, r.bG)([A.A], () => A.A.hasFetchedPaymentSources), b = (0, r.bG)([x.A], () => x.A.isFetchingCurrentUserAppliedBoosts);
-    return t && l && E && !b ? (0, i.jsxs)("div", {
+    })), l = (0, g.Y)(), b = (0, r.bG)([A.A], () => A.A.hasFetchedPaymentSources), E = (0, r.bG)([x.A], () => x.A.isFetchingCurrentUserAppliedBoosts);
+    return t && l && b && !E ? (0, i.jsxs)("div", {
         className: S.kL,
         children: [(0, i.jsx)("div", {
             className: S.Tp

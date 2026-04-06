@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     l = n(64700),
     s = n(503698),
-    r = n.n(s),
-    a = n(158954),
+    a = n.n(s),
+    r = n(158954),
     o = n(311907),
     d = n(990078),
     c = n(397927),
@@ -46,7 +46,7 @@ function D(e) {
             color: "currentColor",
             children: R.intl.format(R.t.GiVd2Q, {
                 orbCount: t.orbsReward,
-                orbIconHook: () => (0, i.jsx)(a.Cp8, {
+                orbIconHook: () => (0, i.jsx)(r.Cp8, {
                     size: "xs",
                     color: "currentColor"
                 }, "orbs-icon")
@@ -54,7 +54,7 @@ function D(e) {
         })
     }) : null, [t.orbsReward]), u = null != o && null != s;
     return (0, i.jsx)("div", {
-        className: r()(P.PB, {
+        className: a()(P.PB, {
             [P.un]: u
         }),
         children: u ? (0, i.jsxs)(i.Fragment, {
@@ -89,7 +89,7 @@ function M(e) {
         guildId: t,
         skuId: n,
         channel: s
-    } = e, r = (0, o.bG)([C.A], () => C.A.isFetchingForSKU(n)), M = (0, o.bG)([f.A], () => f.A.get(n)), w = M?.applicationId, k = (0, o.bG)([m.A], () => null != w && m.A.isFetchingApplication(w)), O = (0, o.bG)([m.A], () => null != w && m.A.didFetchingApplicationFail(w)), U = (0, p.h)(w), B = (0, b.b)({
+    } = e, a = (0, o.bG)([C.A], () => C.A.isFetchingForSKU(n)), M = (0, o.bG)([f.A], () => f.A.get(n)), w = M?.applicationId, O = (0, o.bG)([m.A], () => null != w && m.A.isFetchingApplication(w)), k = (0, o.bG)([m.A], () => null != w && m.A.didFetchingApplicationFail(w)), U = (0, p.h)(w), B = (0, b.b)({
         location: "product_details_embed"
     }), {
         analyticsLocations: G
@@ -136,8 +136,8 @@ function M(e) {
                 analyticsLocations: [u.A.SLAYER_STOREFRONT_PRODUCT_DETAILS_EMBED_GIFT_BUTTON]
             })
         }, [M, F]),
-        X = null != w && null == U && !O;
-    return (r || k || X) && (null == M || null == U) ? (0, i.jsx)("div", {
+        X = null != w && null == U && !k;
+    return (a || O || X) && (null == M || null == U) ? (0, i.jsx)("div", {
         className: P.kL,
         children: (0, i.jsx)(c.y$y, {
             className: P.u1
@@ -173,18 +173,18 @@ function M(e) {
                     discountedPrice: Y,
                     discountPercent: z
                 })]
-            }), (0, i.jsxs)(a.e2v, {
+            }), (0, i.jsxs)(r.e2v, {
                 wrap: !1,
                 fullWidth: !0,
                 children: [(0, i.jsx)(d.m, {
                     text: H ? void 0 : R.intl.string(R.t.IqlPbQ),
-                    children: (0, i.jsx)(a.$nd, {
+                    children: (0, i.jsx)(r.$nd, {
                         variant: H ? "secondary" : "primary",
                         onClick: Q,
                         text: R.intl.string(R.t.KLBTgF),
                         fullWidth: !0
                     })
-                }), H && (0, i.jsx)(a.$nd, {
+                }), H && (0, i.jsx)(r.$nd, {
                     variant: "primary",
                     onClick: K,
                     text: R.intl.format(R.t.Xp5WTn, {

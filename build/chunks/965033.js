@@ -1,7 +1,7 @@
 /** chunk id: 965033 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    Ay: () => G,
+    Ay: () => L,
     qH: () => R,
     t9: () => y
 });
@@ -25,8 +25,8 @@ var i = n(627968),
     j = n(997509),
     N = n(555337),
     E = n(512122),
-    b = n(111771),
-    C = n(294363),
+    C = n(111771),
+    b = n(294363),
     T = n(652215),
     I = n(985018),
     v = n(204282);
@@ -67,7 +67,7 @@ function S(e) {
                 variant: "text-sm/normal",
                 children: I.intl.format(I.t.iuRk2j, {})
             })]
-        }), (0, i.jsx)(b.A, {
+        }), (0, i.jsx)(C.A, {
             changeTitle: I.intl.string(I.t.TxESJG),
             value: a?.value,
             options: r,
@@ -120,7 +120,7 @@ function y(e) {
                         helpdeskArticle: A.A.getArticleURL(T.MVz.SAFE_DIRECT_MESSAGING)
                     })
                 })]
-            }), (0, i.jsx)(b.A, {
+            }), (0, i.jsx)(C.A, {
                 changeTitle: I.intl.string(I.t["eBd+Uv"]),
                 value: m?.value,
                 options: u,
@@ -165,7 +165,7 @@ function O(e) {
     })
 }
 
-function L(e) {
+function G(e) {
     let {
         guild: t,
         mfaLevel: n
@@ -208,7 +208,7 @@ function L(e) {
     }) : null
 }
 
-function G() {
+function L() {
     let {
         guild: e,
         mfaLevel: t
@@ -224,7 +224,7 @@ function G() {
             guild: e
         }), (0, i.jsx)(S, {
             guild: e
-        }), (0, i.jsx)(L, {
+        }), (0, i.jsx)(G, {
             guild: e,
             mfaLevel: t
         }), (0, i.jsx)(y, {
@@ -233,7 +233,7 @@ function G() {
             className: v.yF
         }), (0, i.jsx)("div", {
             className: v.hu,
-            children: (0, i.jsx)(C.b, {
+            children: (0, i.jsx)(b.b, {
                 guild: e
             })
         })]

@@ -49,11 +49,11 @@ function j(e) {
         guild: g.A.getGuild(),
         guildProfile: g.A.getGuildProfile()
     })), N = n?.id, E = (0, a.bG)([d.A], () => d.A.get(N)), {
-        fetchGuildProfile: b
-    } = (0, c.u)(N), C = j?.visibility == null || !l.i.VISIBLE.has(j?.visibility), T = j?.visibility === l.n.PUBLIC_WITH_RECRUITMENT;
+        fetchGuildProfile: C
+    } = (0, c.u)(N), b = j?.visibility == null || !l.i.VISIBLE.has(j?.visibility), T = j?.visibility === l.n.PUBLIC_WITH_RECRUITMENT;
     s.useEffect(() => {
-        null != N && b()
-    }, [N, b]);
+        null != N && C()
+    }, [N, C]);
     let I = s.useMemo(() => null == n || null == j ? f : j, [n, j]),
         v = s.useCallback(() => {
             n?.id != null && (T ? m.A.updateGuildProfile(n.id, {
@@ -96,12 +96,12 @@ function j(e) {
                     label: p.intl.string(p.t["N/0232"]),
                     checked: T,
                     onChange: v,
-                    disabled: C
+                    disabled: b
                 }), (0, i.jsx)(r.EYj, {
                     variant: "text-sm/normal",
                     color: "text-subtle",
                     children: p.intl.string(p.t["3TSZYK"])
-                }), C && (0, i.jsx)(r.EYj, {
+                }), b && (0, i.jsx)(r.EYj, {
                     variant: "text-xs/normal",
                     color: "text-muted",
                     children: p.intl.format(p.t.Bk0VOi, {

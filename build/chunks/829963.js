@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     l = n(64700),
     s = n(397927),
-    r = n(572211),
-    a = n(354287),
+    a = n(572211),
+    r = n(354287),
     o = n(693879),
     d = n(353411),
     c = n(882171),
@@ -31,7 +31,7 @@ function p(e) {
         let e = [];
         return v || e.push({
             label: b.label ?? m.intl.string(m.t.VJlc0S),
-            trackingArea: a.kY.SYNC,
+            trackingArea: r.kY.SYNC,
             onClick: () => {
                 b.onClick()
             },
@@ -65,7 +65,7 @@ function p(e) {
             children: S
         }), A ? null : x]
     }), [S, A, x]);
-    return (0, i.jsx)(r.h, {
+    return (0, i.jsx)(a.h, {
         header: p,
         title: N,
         iconSrc: (0, c.A)(g, t.id) ?? void 0,

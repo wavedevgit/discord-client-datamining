@@ -6,8 +6,8 @@ var i = n(627968);
 n(64700);
 var l = n(503698),
     s = n.n(l),
-    r = n(696292),
-    a = n(311907),
+    a = n(696292),
+    r = n(311907),
     o = n(435371),
     d = n(397927),
     c = n(409626),
@@ -66,8 +66,8 @@ function M(e) {
         progressState: n,
         questContent: l,
         questContentPosition: s,
-        sourceQuestContent: r
-    } = e, c = (0, a.bG)([h.A], () => h.A.isEnrolling(t.id)), u = (0, E.vv)(t), _ = (0, E.Cr)(t), m = (0, v._c)({
+        sourceQuestContent: a
+    } = e, c = (0, r.bG)([h.A], () => h.A.isEnrolling(t.id)), u = (0, E.vv)(t), _ = (0, E.Cr)(t), m = (0, v._c)({
         progressState: n,
         quest: t,
         questContent: l,
@@ -75,7 +75,7 @@ function M(e) {
         inGiftInventory: !1,
         isVideoQuest: u,
         inGameQuest: _,
-        sourceQuestContent: r
+        sourceQuestContent: a
     });
     return (0, i.jsx)(o.m_, {
         text: m.tooltipText,
@@ -96,24 +96,24 @@ let w = e => {
         size: l,
         isFocused: v,
         isQuestExpired: w,
-        isExpanded: k,
-        isAnimating: O,
+        isExpanded: O,
+        isAnimating: k,
         contentPosition: U,
         sourceQuestContent: B
     } = e, G = (0, A.In)(t), F = (0, A.S5)(t.userStatus?.completedAt, {
         year: "numeric",
         month: "long",
         day: "numeric"
-    }), H = G >= A.F3.COMPLETED, V = k || O, q = (0, g.wT)(t, j.rE.QUESTS_CARD, n, B), W = (0, x.Ut)(), Y = (0, A.fc)(t), z = (0, g.mU)({
+    }), H = G >= A.F3.COMPLETED, V = O || k, q = (0, g.wT)(t, j.rE.QUESTS_CARD, n, B), W = (0, x.Ut)(), Y = (0, A.fc)(t), z = (0, g.mU)({
         quest: t,
         taskDetails: Y,
         location: j.rE.QUESTS_CARD,
-        questContent: r.u.QUESTS_EMBED,
+        questContent: a.u.QUESTS_EMBED,
         sourceQuestContent: B,
         gameProfileSource: c.Ob.QuestEmbed
-    }), Q = (0, a.bG)([h.A], () => null != h.A.questEnrollmentBlockedUntil, []), K = p.t.useConfig({
+    }), Q = (0, r.bG)([h.A], () => null != h.A.questEnrollmentBlockedUntil, []), K = p.t.useConfig({
         location: j.rE.QUEST_HOME_DESKTOP
-    }), J = (0, N.Pd)(t), X = (0, a.bG)([u.default], () => u.default.locale), Z = (0, A.Oq)(), $ = (0, A.SD)(t), ee = Z && $, et = w && !H, en = (0, E.vv)(t);
+    }), J = (0, N.Pd)(t), X = (0, r.bG)([u.default], () => u.default.locale), Z = (0, A.Oq)(), $ = (0, A.SD)(t), ee = Z && $, et = w && !H, en = (0, E.vv)(t);
     return (0, i.jsx)("div", {
         className: P.zr,
         children: (0, i.jsx)("div", {
@@ -179,10 +179,10 @@ let w = e => {
                                     isQuestExpired: i,
                                     collectibleQuestRewardDescription: l,
                                     formattedCompletionDate: s
-                                } = e, r = t.userStatus?.completedAt != null, a = r && t.userStatus?.claimedAt != null, o = (0, C.kr)({
+                                } = e, a = t.userStatus?.completedAt != null, r = a && t.userStatus?.claimedAt != null, o = (0, C.kr)({
                                     quest: t
                                 }), d = (0, C.mH)(t.config);
-                                if (a) {
+                                if (r) {
                                     let e = o ? (0, C.cg)({
                                             quest: t,
                                             idx: t.userStatus?.claimedTier
@@ -196,7 +196,7 @@ let w = e => {
                                         date: s
                                     })
                                 }
-                                if (r) return o ? R.intl.formatToPlainString(R.t["l1jCM/"], {
+                                if (a) return o ? R.intl.formatToPlainString(R.t["l1jCM/"], {
                                     date: s
                                 }) : R.intl.formatToPlainString(R.t.zNoqRe, {
                                     reward: d,

@@ -6,22 +6,22 @@ var i = n(627968);
 n(64700);
 var l = n(990078),
     s = n(397927),
-    r = n(235986),
-    a = n(455207),
+    a = n(235986),
+    r = n(455207),
     o = n(985018),
     d = n(400628);
-let c = () => (0, i.jsxs)(r.A, {
-    align: r.A.Align.CENTER,
-    justify: r.A.Justify.CENTER,
-    direction: r.A.Direction.VERTICAL,
+let c = () => (0, i.jsxs)(a.A, {
+    align: a.A.Align.CENTER,
+    justify: a.A.Justify.CENTER,
+    direction: a.A.Direction.VERTICAL,
     className: d.SW,
     children: [(0, i.jsx)("img", {
         alt: "",
-        src: (0, a.NB)(),
+        src: (0, r.NB)(),
         className: d.my
-    }), (0, i.jsxs)(r.A, {
-        align: r.A.Align.CENTER,
-        justify: r.A.Justify.CENTER,
+    }), (0, i.jsxs)(a.A, {
+        align: a.A.Align.CENTER,
+        justify: a.A.Justify.CENTER,
         className: d.Bm,
         children: [(0, i.jsx)(l.m, {
             text: o.intl.string(o.t.oMx98L),

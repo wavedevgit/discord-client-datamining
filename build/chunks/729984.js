@@ -1,8 +1,8 @@
 /** chunk id: 729984 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => L,
-    G: () => G
+    A: () => G,
+    G: () => L
 });
 var i = n(627968),
     s = n(64700),
@@ -24,8 +24,8 @@ var i = n(627968),
     j = n(863694),
     N = n(107795),
     E = n(655943),
-    b = n(82566),
-    C = n(259866),
+    C = n(82566),
+    b = n(259866),
     T = n(950358),
     I = n(561108),
     v = n(191117),
@@ -36,7 +36,7 @@ var i = n(627968),
 function O(e) {
     let {
         guild: t
-    } = e, r = (0, l.bG)([c.A], () => c.A.getEnabled(t.id)), h = (0, l.bG)([x.A], () => x.A.hasFetched(t.id)), _ = (0, b.A)(t), p = (0, l.bG)([j.A], () => j.A.editedDefaultChannelIds), A = _.filter(e => !p.has(e.id)), [N, E] = s.useState(!1);
+    } = e, r = (0, l.bG)([c.A], () => c.A.getEnabled(t.id)), h = (0, l.bG)([x.A], () => x.A.hasFetched(t.id)), _ = (0, C.A)(t), p = (0, l.bG)([j.A], () => j.A.editedDefaultChannelIds), A = _.filter(e => !p.has(e.id)), [N, E] = s.useState(!1);
     return (s.useEffect(() => {
         h || r || (0, g.A)(t.id)
     }, [t.id, h, r]), N || 0 === A.length) ? null : (0, i.jsxs)("div", {
@@ -132,7 +132,7 @@ function O(e) {
     })
 }
 
-function L(e) {
+function G(e) {
     let {
         saveOnClose: t = !1
     } = e, n = (0, l.bG)([A.A], () => A.A.getGuild()), r = (0, l.bG)([c.A], () => c.A.isLoading()), a = (0, l.bG)([_.Ay], () => _.Ay.getChannels(n?.id)), d = (0, l.bG)([h.A], () => h.A.getCategories(n?.id)), u = (0, l.bG)([E.A], () => E.A.advancedMode), m = s.useRef(null), [g, x] = s.useState(!1), j = s.useRef(n);
@@ -171,7 +171,7 @@ function L(e) {
                 variant: "text-sm/normal",
                 color: "text-default",
                 children: S.intl.string(S.t.Kq7FAS)
-            }), (0, i.jsx)(C.mU, {
+            }), (0, i.jsx)(b.mU, {
                 className: y.kr,
                 guildId: n.id
             }), g ? null : (0, i.jsxs)(i.Fragment, {
@@ -218,7 +218,7 @@ function L(e) {
     })
 }
 
-function G() {
+function L() {
     let e = (0, l.bG)([A.A], () => A.A.getProps().guild),
         t = (0, l.bG)([j.A], () => j.A.submitting),
         n = (0, l.bG)([E.A], () => E.A.advancedMode);

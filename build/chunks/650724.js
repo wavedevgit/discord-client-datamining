@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(64700),
     l = n(417597),
     s = n(717125),
-    r = n(376943),
-    a = n(961350),
+    a = n(376943),
+    r = n(961350),
     o = n(734057),
     d = n(696451),
     c = n(71393),
@@ -19,8 +19,8 @@ var i = n(64700),
 
 function A(e, t) {
     let n = (0, p.CI)(e),
-        A = (0, l.bG)([d.Ay, a.default], () => {
-            let e = a.default.getId();
+        A = (0, l.bG)([d.Ay, r.default], () => {
+            let e = r.default.getId();
             return d.Ay.isMember(n?.guildId, e)
         }, [n]),
         x = (0, l.bG)([s.A], () => null != n && n?.channelId != null && s.A.isChannelGated(n.guildId, n.channelId), [n]),
@@ -38,14 +38,14 @@ function A(e, t) {
                 i = o.A.getChannel(n?.channelId),
                 l = _.default.getUser(e?.author_id),
                 s = u.A.getGuildId(),
-                a = null != i && (0, r.nc)(i);
+                r = null != i && (0, a.nc)(i);
             return {
                 rawMediaPostEmbedData: e,
                 guild: t,
                 parentChannel: i,
                 user: l,
                 selectedGuildId: s,
-                canAccess: a
+                canAccess: r
             }
         }, [n]),
         N = i.useMemo(() => {

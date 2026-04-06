@@ -141,7 +141,7 @@ let E = function(e) {
         badge: l,
         primaryColor: r,
         secondaryColor: a
-    } = e, [o, u] = s.useState(!1), m = s.useRef(null), g = s.useId(), E = s.useId(), b = null == r && null == a, C = s.useMemo(() => !b && h.Ub.every(e => e.primary !== r || e.secondary !== a), [b, r, a]), T = (0, d._u)({
+    } = e, [o, u] = s.useState(!1), m = s.useRef(null), g = s.useId(), E = s.useId(), C = null == r && null == a, b = s.useMemo(() => !C && h.Ub.every(e => e.primary !== r || e.secondary !== a), [C, r, a]), T = (0, d._u)({
         orientation: "horizontal",
         isDisabled: !1,
         labelledBy: g
@@ -168,7 +168,7 @@ let E = function(e) {
                     onClick: () => I(e)
                 }, `${e.primary}${e.secondary}`)), (0, i.jsx)(N, {
                     badge: l,
-                    isSelected: b,
+                    isSelected: C,
                     onClick: () => {
                         I({
                             primary: null,
@@ -179,7 +179,7 @@ let E = function(e) {
                     badge: l,
                     primary: r ?? h.Ub["0"].primary,
                     secondary: a ?? h.Ub["0"].secondary,
-                    isSelected: C,
+                    isSelected: b,
                     showColorPopout: o,
                     setShowColorPopout: u,
                     palettePopoutTargetRef: m,

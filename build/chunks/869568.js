@@ -23,8 +23,8 @@ var i = n(627968),
     j = n(997509),
     N = n(396816),
     E = n(856644),
-    b = n(785312),
-    C = n(316506),
+    C = n(785312),
+    b = n(316506),
     T = n(981634),
     I = n(927573),
     v = n(652215),
@@ -54,7 +54,7 @@ async function O(e, t, n) {
     }
 }
 
-function L(e) {
+function G(e) {
     let {
         member: t,
         guildId: l,
@@ -152,7 +152,7 @@ function L(e) {
     })
 }
 
-function G(e) {
+function L(e) {
     let {
         handleAddClick: t,
         locked: n
@@ -216,12 +216,12 @@ function D(e) {
                 let {
                     row: s
                 } = e;
-                if (0 === p.length) return (0, i.jsx)(G, {
+                if (0 === p.length) return (0, i.jsx)(L, {
                     handleAddClick: u,
                     locked: a
                 }, "empty");
                 let l = p[s];
-                return (0, i.jsx)(L, {
+                return (0, i.jsx)(G, {
                     member: l,
                     guildId: t,
                     roleId: n,
@@ -267,10 +267,10 @@ function k(e) {
     } = e, [u, m] = s.useState(""), {
         headerHeight: g,
         headerRef: x
-    } = (0, b.A)(0), {
+    } = (0, C.A)(0), {
         scrolledToTop: h,
         handleScroll: _
-    } = (0, C.u)(), p = l.managed || a, j = (0, E.K5)(t.id, l.id), N = (0, o.bG)([f.A], () => f.A.getRoleMemberCount(t.id)?.[l.id] ?? 0) > j.length, T = () => {
+    } = (0, b.u)(), p = l.managed || a, j = (0, E.K5)(t.id, l.id), N = (0, o.bG)([f.A], () => f.A.getRoleMemberCount(t.id)?.[l.id] ?? 0) > j.length, T = () => {
         A.default.track(v.HAw.OPEN_MODAL, {
             type: "Add Role Members",
             location_page: "Role Settings",
@@ -297,7 +297,7 @@ function k(e) {
                     className: r()(R.wx, {
                         [R.l6]: !h
                     }),
-                    children: [(0, i.jsx)(C.A, {
+                    children: [(0, i.jsx)(b.A, {
                         guild: t,
                         role: l,
                         selectedSection: I.T$.MEMBERS,

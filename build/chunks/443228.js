@@ -6,8 +6,8 @@ var i = n(627968);
 n(64700);
 var l = n(734057),
     s = n(71393),
-    r = n(576705),
-    a = n(483660),
+    a = n(576705),
+    r = n(483660),
     o = n(652215);
 
 function d(e) {
@@ -15,7 +15,7 @@ function d(e) {
         code: t,
         message: n
     } = e, [d, c] = t.split("/"), u = l.A.getChannel(c), _ = s.A.getGuild(d);
-    return null != u && u.isGuildVocal() && null != _ && r.A.can(o.xBc.VIEW_CHANNEL, u) && r.A.can(o.xBc.CONNECT, u) ? (0, i.jsx)(a.A, {
+    return null != u && u.isGuildVocal() && null != _ && a.A.can(o.xBc.VIEW_CHANNEL, u) && a.A.can(o.xBc.CONNECT, u) ? (0, i.jsx)(r.A, {
         guild: _,
         channel: u,
         message: n

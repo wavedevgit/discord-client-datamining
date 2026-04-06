@@ -54,7 +54,7 @@ function m(e) {
         useDisabled: g,
         useTrailingContent: _,
         onClick: x
-    } = t, [A, h] = s.useState(!1), p = (0, r.q)(t), T = a(), f = c?.(), S = n(), E = d?.(), b = m?.(), C = g?.(), N = _?.();
+    } = t, [A, h] = s.useState(!1), p = (0, r.q)(t), T = a(), f = c?.(), S = n(), b = d?.(), E = m?.(), C = g?.(), N = _?.();
     return (0, i.jsx)(o.L, {
         children: (0, i.jsx)(l.D0$, {
             label: T,
@@ -75,8 +75,8 @@ function m(e) {
                         e instanceof Promise && (h(!0), e.finally(() => h(!1)))
                     },
                     text: S,
-                    "aria-label": E,
-                    variant: b,
+                    "aria-label": b,
+                    variant: E,
                     disabled: C,
                     loading: A
                 })]

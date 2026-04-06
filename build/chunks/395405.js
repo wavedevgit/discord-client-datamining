@@ -23,8 +23,8 @@ var i = n(627968),
     j = n(859241),
     N = n(696451),
     E = n(71393),
-    b = n(287809),
-    C = n(473145),
+    C = n(287809),
+    b = n(473145),
     T = n(240248),
     I = n(652215),
     v = n(985018),
@@ -94,7 +94,7 @@ class R extends s.Component {
             },
             a = e.map(e => ({
                 numRequired: I.M2T[e.tier],
-                name: (0, C.gb)(e.tier),
+                name: (0, b.gb)(e.tier),
                 y: t[e.tier] ?? 0,
                 key: e.tier
             }));
@@ -219,14 +219,14 @@ class R extends s.Component {
         })
     }
 }
-let O = d.Ay.connectStores([E.A, _.A, h.A, j.A, b.default, N.Ay], () => {
+let O = d.Ay.connectStores([E.A, _.A, h.A, j.A, C.default, N.Ay], () => {
     let e = h.A.getGuildId(),
         t = E.A.getGuild(e)?.premiumTier ?? I.TVA.NONE,
         n = (0, p.G)(e),
         i = null != e ? j.A.getAppliedGuildBoostsForGuild(e) : null,
         s = o()(null != i ? i : []).uniqBy(e => e.userId),
         l = s.map(t => ({
-            user: b.default.getUser(t.userId),
+            user: C.default.getUser(t.userId),
             nick: N.Ay.getNick(e, t.userId)
         })).filter(e => null != e.user).value();
     return {

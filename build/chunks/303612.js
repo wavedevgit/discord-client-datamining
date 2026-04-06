@@ -1,43 +1,44 @@
 /** chunk id: 303612 params = (module,exports,require) **/
-s.d(t, {
-    A: () => o,
+"use strict";
+n.d(t, {
+    A: () => d,
     y: () => c
 });
-var a = s(627968);
-s(64700);
-var n = s(23339),
-    i = s(319060),
-    l = s(492749),
-    r = s(234914);
-let d = (0, n.xI)(i.A.ASPECT_STABLE_IMAGE_CONTAINER_PADDING);
+var i = n(627968);
+n(64700);
+var s = n(23339),
+    l = n(319060),
+    r = n(492749),
+    a = n(234914);
+let o = (0, s.xI)(l.A.ASPECT_STABLE_IMAGE_CONTAINER_PADDING);
 
-function o(e) {
+function d(e) {
     let {
         listing: t,
-        imageSize: s,
-        alt: n,
-        ...i
-    } = e, r = (0, l.R)(t, s);
-    return (0, a.jsx)("img", {
-        src: r,
-        alt: n,
-        ...i
+        imageSize: n,
+        alt: s,
+        ...l
+    } = e, a = (0, r.R)(t, n);
+    return (0, i.jsx)("img", {
+        src: a,
+        alt: s,
+        ...l
     })
 }
 
 function c(e) {
     let {
         listing: t,
-        aspectRatio: s = 16 / 9,
-        height: n,
-        ...i
-    } = e, o = (n - 2 * d) * s, c = (0, l.R)(t, o), x = (0, l.R)(t, o, {
+        aspectRatio: n = 16 / 9,
+        height: s,
+        ...l
+    } = e, d = (s - 2 * o) * n, c = (0, r.R)(t, d), u = (0, r.R)(t, d, {
         shouldAnimate: !1
     });
-    return (0, a.jsx)(r.A, {
+    return (0, i.jsx)(a.A, {
         src: c,
-        backgroundSrc: x,
-        aspectRatio: s,
-        ...i
+        backgroundSrc: u,
+        aspectRatio: n,
+        ...l
     })
 }

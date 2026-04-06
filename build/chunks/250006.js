@@ -28,8 +28,8 @@ function A(e) {
         onDragComplete: j,
         draggingId: N
     } = e, E = (0, c.Ay)(), {
-        drag: b,
-        drop: C,
+        drag: C,
+        drop: b,
         dragSourcePosition: T,
         setIsDraggable: I
     } = (0, g.A)({
@@ -52,7 +52,7 @@ function A(e) {
                 index: l
             })
         })
-    }, [t, l]), y = t.connection_type === h.wZ.APPLICATION, R = t.application_id, O = (0, a.bG)([m.A], () => y && null != R ? m.A.getApplication(R) : null, [y, R]), L = s.useMemo(() => (function(e, t, n) {
+    }, [t, l]), y = t.connection_type === h.wZ.APPLICATION, R = t.application_id, O = (0, a.bG)([m.A], () => y && null != R ? m.A.getApplication(R) : null, [y, R]), G = s.useMemo(() => (function(e, t, n) {
         if (e.connection_type === h.wZ.APPLICATION && null != e.application_id) {
             if (null != n) return {
                 name: n.name,
@@ -81,7 +81,7 @@ function A(e) {
         onMouseEnter: () => I(!0),
         onMouseLeave: () => I(!1),
         ref: e => {
-            b(C(e))
+            C(b(e))
         },
         children: [(0, i.jsx)("div", {
             className: p.BU,
@@ -93,8 +93,8 @@ function A(e) {
             className: p.hu,
             children: [(0, i.jsx)("div", {
                 className: p.Kk,
-                children: null != L.icon ? (0, i.jsx)("img", {
-                    src: L.icon,
+                children: null != G.icon ? (0, i.jsx)("img", {
+                    src: G.icon,
                     alt: "",
                     width: 40,
                     height: 40
@@ -109,7 +109,7 @@ function A(e) {
                 children: [(0, i.jsx)(d.Text, {
                     variant: "text-md/medium",
                     color: "text-strong",
-                    children: L.name
+                    children: G.name
                 }), (0, i.jsx)(d.Text, {
                     variant: "text-sm/normal",
                     color: "text-muted",

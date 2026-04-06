@@ -5,9 +5,9 @@ n.d(t, {
 var i = n(627968),
     l = n(64700),
     s = n(503698),
-    r = n.n(s),
-    a = n(989349),
-    o = n.n(a),
+    a = n.n(s),
+    r = n(989349),
+    o = n.n(r),
     d = n(397927),
     c = n(763754),
     u = n(449859),
@@ -25,20 +25,20 @@ let E = e => {
         reportingUserId: t,
         guildId: n,
         compact: s,
-        channel: a,
+        channel: r,
         messageId: E,
         reportedTimestamp: I
     } = e, v = h.default.getUser(t), b = l.useMemo(() => s ? (0, _.A)((0, p.i$)(o()(), "LT")) : null, [s]), T = (0, m.P)({
         user: v,
-        channelId: a.id,
+        channelId: r.id,
         guildId: n,
         messageId: E
-    })((0, c.m2)(v, a)), N = null != v ? v.getAvatarURL(n, (0, d.FT9)(d._3J.SIZE_16)) : C, y = null != v ? A.intl.format(g.default["+zqXZs"], {
+    })((0, c.m2)(v, r)), N = null != v ? v.getAvatarURL(n, (0, d.FT9)(d._3J.SIZE_16)) : C, y = null != v ? A.intl.format(g.default["+zqXZs"], {
         username: v.username,
         onUserClick: T
     }) : A.intl.string(g.default.xpRjfS);
     return (0, i.jsxs)("div", {
-        className: r()(f.NB, f.JZ, b),
+        className: a()(f.NB, f.JZ, b),
         children: [(0, i.jsx)(d.euF, {
             src: N,
             size: d._3J.SIZE_16,

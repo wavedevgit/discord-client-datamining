@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     l = n(64700),
     s = n(110259),
-    r = n(821418),
-    a = n(665260),
+    a = n(821418),
+    r = n(665260),
     o = n(311907),
     d = n(990078),
     c = n(397927),
@@ -37,18 +37,18 @@ function S(e) {
             message: M,
             currentUserId: w
         } = e,
-        k = w === M.author.id,
+        O = w === M.author.id,
         {
-            channel: O,
+            channel: k,
             approximate_member_count: U,
             approximate_presence_count: B
         } = D,
         G = D.state === T.elq.ACCEPTING,
-        F = null != O ? (0, C.OY)(O) : null,
+        F = null != k ? (0, C.OY)(k) : null,
         H = null != P,
         V = null != F,
         q = null != F && F.isGuildStageVoice(),
-        W = (0, a.Lt)(D.flags ?? 0, r.Q.IS_GUEST_INVITE),
+        W = (0, r.Lt)(D.flags ?? 0, a.Q.IS_GUEST_INVITE),
         Y = F?.isGuildVoiceOrThread() ?? !1,
         z = P?.features.has(T.GuildFeatures.HUB) ?? !1,
         Q = P?.id,
@@ -61,9 +61,9 @@ function S(e) {
         properties: {
             invite_code: D.code,
             invite_guild_id: D.guild?.id,
-            invite_channel_id: O?.id,
+            invite_channel_id: k?.id,
             invite_instance_id: (0, x._U)(D.code, M.id),
-            invite_channel_type: O?.type,
+            invite_channel_type: k?.type,
             embed_type: "guild_invite",
             location_stack: K
         }
@@ -86,7 +86,7 @@ function S(e) {
     }
     let ei = (0, v.l)({
         isVoiceChannel: Y,
-        isOwnInvite: k,
+        isOwnInvite: O,
         isGuest: W,
         isHubGuild: z,
         isStage: q,

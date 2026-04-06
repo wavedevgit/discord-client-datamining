@@ -6,8 +6,8 @@ var i = n(627968);
 n(64700);
 var l = n(503698),
     s = n.n(l),
-    r = n(311907),
-    a = n(397927),
+    a = n(311907),
+    r = n(397927),
     o = n(442433),
     d = n(143413),
     c = n(734057),
@@ -25,7 +25,7 @@ function C(e) {
     let {
         message: t,
         compact: n
-    } = e, l = (0, r.bG)([c.A], () => c.A.getChannel(u.default.castMessageIdAsChannelId(t.id)));
+    } = e, l = (0, a.bG)([c.A], () => c.A.getChannel(u.default.castMessageIdAsChannelId(t.id)));
     return null == l ? null : (0, i.jsx)(E, {
         channel: l,
         compact: n,
@@ -40,8 +40,8 @@ function E(e) {
             compact: C,
             isSystemMessage: E
         } = e,
-        I = (0, r.bG)([m.A], () => m.A.getCount(u.id)),
-        v = (t = u, l = (0, r.bG)([m.A], () => m.A.getMostRecentMessage(t.id)), d = (0, r.bG)([m.A], () => m.A.getCount(t.id)), c = (0, h.JO)(t), t.threadMetadata?.archived ? x.intl.string(x.t.ZTo4HS) : null == d || 0 === d ? x.intl.string(x.t.HYtNyE) : null == l ? (0, i.jsxs)(i.Fragment, {
+        I = (0, a.bG)([m.A], () => m.A.getCount(u.id)),
+        v = (t = u, l = (0, a.bG)([m.A], () => m.A.getMostRecentMessage(t.id)), d = (0, a.bG)([m.A], () => m.A.getCount(t.id)), c = (0, h.JO)(t), t.threadMetadata?.archived ? x.intl.string(x.t.ZTo4HS) : null == d || 0 === d ? x.intl.string(x.t.HYtNyE) : null == l ? (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)("span", {
                 children: x.intl.string(x.t.ZTo4HS)
             }), (0, i.jsx)("span", {
@@ -64,7 +64,7 @@ function E(e) {
                 [f.E]: !C,
                 [f.E_]: E
             })
-        }), (0, i.jsx)(a.DUT, {
+        }), (0, i.jsx)(r.DUT, {
             onClick: function(e) {
                 e.stopPropagation(), (0, g.JA)(u, e.shiftKey)
             },
@@ -89,10 +89,10 @@ function E(e) {
             className: s()(f.kL, {
                 [f.og]: E
             }),
-            children: (0, i.jsxs)(a.RDc, {
+            children: (0, i.jsxs)(r.RDc, {
                 children: [(0, i.jsxs)("div", {
                     className: f.kq,
-                    children: [(0, i.jsx)(a.AC4, {
+                    children: [(0, i.jsx)(r.AC4, {
                         children: x.intl.string(x.t["7Xm5QI"])
                     }), (0, i.jsx)("span", {
                         className: f.UU,
@@ -102,7 +102,7 @@ function E(e) {
                         "aria-hidden": !b,
                         children: (0, _.ub)(I, u.id)
                     })]
-                }), (0, i.jsx)(a.Text, {
+                }), (0, i.jsx)(r.Text, {
                     variant: "text-sm/normal",
                     "aria-hidden": !0,
                     lineClamp: 1,

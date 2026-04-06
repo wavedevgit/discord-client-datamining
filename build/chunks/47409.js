@@ -1,4 +1,5 @@
 /** chunk id: 47409 params = (module,exports,require) **/
+"use strict";
 e.exports = {
     f1: "userContainer__3e7e2",
     a_: "quotes__3e7e2",

@@ -79,8 +79,8 @@ function h(e) {
     } = e, p = s.useRef(null), A = s.useRef(null), f = s.useRef(null), j = (0, u.M)(t), {
         handlePasteEvent: N,
         handleInputChange: E,
-        handleKeyDown: b,
-        handleContainerKeyUp: C,
+        handleKeyDown: C,
+        handleContainerKeyUp: b,
         handleRemoveTag: T,
         handleTagChangeEvent: I,
         handleSelectTag: v,
@@ -94,18 +94,18 @@ function h(e) {
     }), {
         state: {
             value: O,
-            tags: L,
-            selections: G,
+            tags: G,
+            selections: L,
             isSelecting: D
         }
-    } = j, M = (0, o.A)(L), [k, U] = s.useState(!1), P = s.useCallback(() => {
+    } = j, M = (0, o.A)(G), [k, U] = s.useState(!1), P = s.useCallback(() => {
         U(!1), y(), p.current?.focus({
             preventScroll: !0
         })
     }, [y]);
     s.useEffect(() => {
-        M !== L && n(L)
-    }, [n, M, L]), s.useEffect(() => {
+        M !== G && n(G)
+    }, [n, M, G]), s.useEffect(() => {
         k || l(O)
     }, [l, O, k]);
     let w = s.useCallback(function() {
@@ -114,47 +114,47 @@ function h(e) {
         }, [P]),
         B = s.useCallback(e => t => {
             if (t) {
-                let t = G.includes(L[e]);
+                let t = L.includes(G[e]);
                 p.current?.focus(), t ? S(e) : (v(e), setImmediate(() => {
                     p.current?.blur(), setTimeout(() => A.current?.focus(), 16)
                 }))
             } else S(e, !0), U(!0)
-        }, [v, S, G, L]);
+        }, [v, S, L, G]);
     return (0, i.jsxs)("div", {
         className: r()(m.rs, h),
         ref: A,
         tabIndex: 0,
-        onKeyUp: C,
+        onKeyUp: b,
         children: [(0, i.jsxs)(x, {
             ref: f,
             onClick: P,
-            children: [L.map((e, t) => (0, i.jsx)(c.A, {
+            children: [G.map((e, t) => (0, i.jsx)(c.A, {
                 value: e,
                 onChange: I(t),
                 onBlur: w,
                 onFocus: B(t),
                 onRemove: () => T(t),
-                isSelected: G.includes(e),
+                isSelected: L.includes(e),
                 isSelecting: D,
                 error: d[e],
-                forceShowErrorTooltip: !k && t === L.length - 1
+                forceShowErrorTooltip: !k && t === G.length - 1
             }, t)), (0, i.jsx)("input", {
                 className: r()(m.tM, {
                     [m.kD]: k
                 }),
                 ref: p,
                 onChange: E,
-                onKeyDownCapture: b,
+                onKeyDownCapture: C,
                 onPaste: N,
                 onBlur: R,
-                placeholder: 0 === L.length ? g : void 0,
+                placeholder: 0 === G.length ? g : void 0,
                 value: O
             })]
         }), null != _ && (0, i.jsxs)(a.Text, {
             variant: "text-xs/normal",
             color: "text-muted",
             className: m.MH,
-            children: [L?.length ?? 0, "/", _]
+            children: [G?.length ?? 0, "/", _]
         })]
     })
 }

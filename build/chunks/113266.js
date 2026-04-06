@@ -23,8 +23,8 @@ var i = n(627968),
     j = n(931991),
     N = n(796774),
     E = n(209932),
-    b = n(102597),
-    C = n(904054),
+    C = n(102597),
+    b = n(904054),
     T = n(496502),
     I = n(657331),
     v = n(71393),
@@ -32,15 +32,15 @@ var i = n(627968),
     y = n(358431),
     R = n(486020),
     O = n(473145),
-    L = n(723702),
-    G = n(427262),
+    G = n(723702),
+    L = n(427262),
     D = n(555337),
     M = n(619842),
     k = n(652215),
     U = n(980504),
     P = n(985018),
     w = n(656489);
-let B = L.isPlatformEmbedded || "Safari" !== o().name;
+let B = G.isPlatformEmbedded || "Safari" !== o().name;
 
 function F() {
     let e = (0, d.bG)([D.A], () => D.A.getProps().guild),
@@ -168,13 +168,13 @@ function K(e) {
     s.useEffect(() => {
         (0, N.E7)()
     }, []);
-    let x = s.useMemo(() => l.reduce((e, t) => (e[t.soundId] = new Audio((0, b.A)(t.soundId)), e), {}), [l]),
+    let x = s.useMemo(() => l.reduce((e, t) => (e[t.soundId] = new Audio((0, C.A)(t.soundId)), e), {}), [l]),
         h = 0 === l.length && !r;
 
     function p(e) {
         o.current?.pause();
         let t = x[e.soundId];
-        null != t && (o.current = t, t.currentTime = 0, t.volume = (0, C.A)(e.volume), t.play())
+        null != t && (o.current = t, t.currentTime = 0, t.volume = (0, b.A)(e.volume), t.play())
     }
     if (s.useEffect(() => () => {
             o.current?.pause()
@@ -271,12 +271,12 @@ function Y(e) {
         emojiId: f,
         emojiName: E
     } = t, {
-        analyticsLocations: b
-    } = (0, A.Ay)(), C = (0, d.bG)([S.default], () => _ ?? S.default.getUser(p), [p, _]), {
+        analyticsLocations: C
+    } = (0, A.Ay)(), b = (0, d.bG)([S.default], () => _ ?? S.default.getUser(p), [p, _]), {
         canManageGuildExpression: v
-    } = (0, j.nr)(o), y = s.useMemo(() => v(t), [t, v]), O = null != f || null != E, [L, D] = s.useState(!1), M = (0, T.v)(t, o.id);
+    } = (0, j.nr)(o), y = s.useMemo(() => v(t), [t, v]), O = null != f || null != E, [G, D] = s.useState(!1), M = (0, T.v)(t, o.id);
     async function k() {
-        if (!L) {
+        if (!G) {
             D(!0);
             try {
                 await (0, N.ty)(o.id, c)
@@ -286,19 +286,19 @@ function Y(e) {
         }
     }
     s.useEffect(() => {
-        null == C && e();
+        null == b && e();
         async function e() {
             await (0, x.wz)(p)
         }
-    }, [C, p]);
+    }, [b, p]);
     let U = s.useCallback(() => {
-            null != C && (0, I.openUserProfileModal)({
-                userId: C.id,
+            null != b && (0, I.openUserProfileModal)({
+                userId: b.id,
                 guildId: o.id,
-                sourceAnalyticsLocations: b
+                sourceAnalyticsLocations: C
             })
-        }, [C, o.id, b]),
-        B = G.Ay.useUserTag(C);
+        }, [b, o.id, C]),
+        B = L.Ay.useUserTag(b);
     return (0, i.jsxs)("div", {
         className: r()(w.nM, {
             [w.vu]: l
@@ -313,7 +313,7 @@ function Y(e) {
             className: w.Zg
         }), (0, i.jsx)(g.DUT, {
             onClick: () => {
-                L || a(t)
+                G || a(t)
             },
             onContextMenu: M,
             className: w.TW,
@@ -326,14 +326,14 @@ function Y(e) {
                     className: w.Ns
                 })]
             })
-        }), null != C && (0, i.jsxs)(g.DUT, {
+        }), null != b && (0, i.jsxs)(g.DUT, {
             className: w.xp,
             onClick: U,
             children: [(0, i.jsx)(g.euF, {
                 "aria-label": B,
                 size: g._3J.SIZE_24,
                 className: w.Cp,
-                src: (0, R.ku)(C, !1, 24)
+                src: (0, R.ku)(b, !1, 24)
             }), (0, i.jsx)(g.Text, {
                 variant: "text-sm/normal",
                 lineClamp: 1,

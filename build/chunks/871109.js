@@ -5,14 +5,14 @@ n.d(t, {
 }), n(321073);
 var i, l = n(311907),
     s = n(713402),
-    r = n(73153),
-    a = n(927813),
+    a = n(73153),
+    r = n(927813),
     o = n(661191),
     d = ((i = {})[i.NOT_FETCHED = 0] = "NOT_FETCHED", i[i.FETCHING = 1] = "FETCHING", i[i.FETCHED = 2] = "FETCHED", i);
 let c = {},
     u = {},
     _ = {},
-    m = 10 * a.A.Millis.MINUTE;
+    m = 10 * r.A.Millis.MINUTE;
 
 function h(e) {
     return `guild:${e}`
@@ -50,7 +50,7 @@ class x extends l.Ay.Store {
         return Date.now() - (_[e] ?? 0) > m
     }
 }
-let f = new x(r.h, {
+let f = new x(a.h, {
     CONNECTION_OPEN: function() {
         g.clear(), c = {}, u = {}, _ = {}
     },

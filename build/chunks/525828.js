@@ -11,12 +11,12 @@ var i = s(110259),
     A = s(287809),
     l = s(954571),
     o = s(549022),
-    I = s(212758),
-    c = s(90386),
+    c = s(212758),
+    I = s(90386),
     d = s(64175),
     E = s(652215),
-    h = s(985018),
-    u = s(627534);
+    u = s(985018),
+    h = s(627534);
 
 function L(e) {
     var t, s;
@@ -26,15 +26,15 @@ function L(e) {
             ignoredUserIds: m,
             transitionState: f,
             onClose: P,
-            onJoin: p
+            onJoin: O
         } = e,
-        G = Array.from(g).map(e => A.default.getUser(e)).filter(e => null !== e),
-        O = Array.from(m).map(e => A.default.getUser(e)).filter(e => null !== e);
-    return 0 === G.length && 0 === O.length ? null : (0, _.jsx)(I.A, {
-        headerText: h.intl.string(h.t.zPUmzZ),
-        descriptionText: (t = g.size, s = m.size, L = t > 0, N = s > 0, L && N ? h.intl.string(h.t["X/iIjg"]) : L ? h.intl.formatToPlainString(h.t.WgQ12s, {
+        p = Array.from(g).map(e => A.default.getUser(e)).filter(e => null !== e),
+        G = Array.from(m).map(e => A.default.getUser(e)).filter(e => null !== e);
+    return 0 === p.length && 0 === G.length ? null : (0, _.jsx)(c.A, {
+        headerText: u.intl.string(u.t.zPUmzZ),
+        descriptionText: (t = g.size, s = m.size, L = t > 0, N = s > 0, L && N ? u.intl.string(u.t["X/iIjg"]) : L ? u.intl.formatToPlainString(u.t.WgQ12s, {
             n: t
-        }) : N ? h.intl.formatToPlainString(h.t.bwibp1, {
+        }) : N ? u.intl.formatToPlainString(u.t.bwibp1, {
             n: s
         }) : null),
         infoRows: (e => {
@@ -42,48 +42,48 @@ function L(e) {
                 channelId: t,
                 blockedUsers: s,
                 ignoredUsers: i
-            } = e, A = r.A.getChannel(t), l = s.length > 0, o = i.length > 0, I = [{
+            } = e, A = r.A.getChannel(t), l = s.length > 0, o = i.length > 0, c = [{
                 icon: (0, _.jsx)("div", {
-                    className: u.Kk,
+                    className: h.Kk,
                     children: (0, _.jsx)(a.id, {})
                 }),
-                text: h.intl.string(h.t["7jN3FC"]),
-                className: u.nM
+                text: u.intl.string(u.t["7jN3FC"]),
+                className: h.nM
             }];
             if (l && o) {
                 let e = [...s, ...i],
                     r = e.slice(0, 2).map(e => e.id);
-                I.unshift({
+                c.unshift({
                     icon: (0, _.jsx)("div", {
-                        className: u.Kk,
+                        className: h.Kk,
                         children: (0, _.jsx)(n.A, {
                             recipients: r,
                             size: a._3J.SIZE_32
                         })
                     }),
-                    text: (0, c.T)(r, e.length, A?.guild_id, t),
-                    className: u.nM
+                    text: (0, I.T)(r, e.length, A?.guild_id, t),
+                    className: h.nM
                 })
             } else {
                 let e = l ? s.slice(0, 2).map(e => e.id) : i.slice(0, 2).map(e => e.id),
                     a = l ? s.length : i.length;
-                I.unshift({
+                c.unshift({
                     icon: (0, _.jsx)("div", {
-                        className: u.Kk,
-                        children: (0, c.I)(e, A?.guild_id)
+                        className: h.Kk,
+                        children: (0, I.I)(e, A?.guild_id)
                     }),
-                    text: (0, c.T)(e, a, A?.guild_id, t),
-                    className: u.nM
+                    text: (0, I.T)(e, a, A?.guild_id, t),
+                    className: h.nM
                 })
             }
-            return I
+            return c
         })({
             channelId: C,
-            blockedUsers: G,
-            ignoredUsers: O
+            blockedUsers: p,
+            ignoredUsers: G
         }),
         onDismissAndStay: () => {
-            p(), P(), (0, o.Cs)(new Set([...g, ...m])), l.default.track(E.HAw.VOICE_CHANNEL_BLOCKED_USER_WARNING_ENGAGEMENT, {
+            O(), P(), (0, o.Cs)(new Set([...g, ...m])), l.default.track(E.HAw.VOICE_CHANNEL_BLOCKED_USER_WARNING_ENGAGEMENT, {
                 action: d.Qi.CLICK_TO_JOIN,
                 channel_id: C,
                 blocked_user_ids: Array.from(g),
@@ -100,8 +100,8 @@ function L(e) {
                 warning_surface: d.gD.PRE_JOIN_MODAL
             })
         },
-        leaveButtonText: h.intl.string(h.t.rOXspL),
-        stayButtonText: h.intl.string(h.t.VJlc0S),
+        leaveButtonText: u.intl.string(u.t.rOXspL),
+        stayButtonText: u.intl.string(u.t.VJlc0S),
         transitionState: f,
         onClose: P,
         impression: {

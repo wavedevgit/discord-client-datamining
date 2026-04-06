@@ -1,91 +1,92 @@
 /** chunk id: 319664 params = (module,exports,require) **/
-i.d(e, {
-    A: () => j
+"use strict";
+n.d(t, {
+    A: () => p
 });
-var s = i(627968);
-i(64700);
-var r = i(503698),
-    n = i.n(r),
-    l = i(732955),
-    d = i(397927),
-    a = i(58149),
-    o = i(289397),
-    c = i(997509),
-    C = i(954571),
-    u = i(634654),
-    x = i(652215),
-    h = i(985018),
-    _ = i(782197);
+var i = n(627968);
+n(64700);
+var s = n(503698),
+    l = n.n(s),
+    r = n(732955),
+    a = n(397927),
+    o = n(58149),
+    d = n(289397),
+    c = n(997509),
+    u = n(954571),
+    m = n(634654),
+    g = n(652215),
+    x = n(985018),
+    h = n(782197);
 
-function p(t) {
+function _(e) {
     let {
-        pills: e
-    } = t;
-    return (0, s.jsx)("div", {
-        className: _.nM,
-        children: e.map(t => (0, s.jsx)("div", {
-            className: _.Io,
-            children: (0, s.jsx)(d.Text, {
+        pills: t
+    } = e;
+    return (0, i.jsx)("div", {
+        className: h.nM,
+        children: t.map(e => (0, i.jsx)("div", {
+            className: h.Io,
+            children: (0, i.jsx)(a.Text, {
                 variant: "text-sm/normal",
-                children: t
+                children: e
             })
-        }, t))
+        }, e))
     })
 }
 
-function j(t) {
+function p(e) {
     let {
-        guildId: e,
-        showCTA: i,
-        responsive: r = !0
-    } = t, j = [
-        [h.intl.string(h.t["73h51J"]), h.intl.string(h.t["gbjs/6"])],
-        [h.intl.string(h.t.mCoH0V), h.intl.string(h.t["l/BuSI"])],
-        [h.intl.string(h.t.psQktv), h.intl.string(h.t.nMhIZQ)],
-        [h.intl.string(h.t["0ItLmF"]), h.intl.string(h.t.yQHqsC)]
+        guildId: t,
+        showCTA: n,
+        responsive: s = !0
+    } = e, p = [
+        [x.intl.string(x.t["73h51J"]), x.intl.string(x.t["gbjs/6"])],
+        [x.intl.string(x.t.mCoH0V), x.intl.string(x.t["l/BuSI"])],
+        [x.intl.string(x.t.psQktv), x.intl.string(x.t.nMhIZQ)],
+        [x.intl.string(x.t["0ItLmF"]), x.intl.string(x.t.yQHqsC)]
     ];
-    return (0, s.jsx)("div", {
-        className: n()({
-            [_.no]: r
+    return (0, i.jsx)("div", {
+        className: l()({
+            [h.no]: s
         }),
-        children: (0, s.jsxs)("div", {
-            className: _.kL,
-            children: [(0, s.jsxs)("div", {
-                className: _.Qs,
-                children: [(0, s.jsx)("div", {
-                    className: _.V_,
-                    children: j.map((t, e) => (0, s.jsx)(p, {
-                        pills: t
-                    }, `pill-row-${e}`))
-                }), (0, s.jsxs)("div", {
-                    className: _.mv,
-                    children: [(0, s.jsx)(d.Text, {
+        children: (0, i.jsxs)("div", {
+            className: h.kL,
+            children: [(0, i.jsxs)("div", {
+                className: h.Qs,
+                children: [(0, i.jsx)("div", {
+                    className: h.V_,
+                    children: p.map((e, t) => (0, i.jsx)(_, {
+                        pills: e
+                    }, `pill-row-${t}`))
+                }), (0, i.jsxs)("div", {
+                    className: h.mv,
+                    children: [(0, i.jsx)(a.Text, {
                         variant: "text-lg/medium",
                         color: "text-strong",
-                        children: h.intl.string(h.t["67arYL"])
-                    }), i && (0, s.jsx)(l.$nd, {
-                        text: h.intl.string(h.t.oyzLpD),
-                        icon: d.EdP,
+                        children: x.intl.string(x.t["67arYL"])
+                    }), n && (0, i.jsx)(r.$nd, {
+                        text: x.intl.string(x.t.oyzLpD),
+                        icon: a.EdP,
                         iconPosition: "end",
                         size: "md",
                         onClick: () => {
-                            C.default.track(x.HAw.GUILD_SHOP_PREVIEW_CLICK, {
-                                ...(0, a.H$)(e),
-                                action_taken: u.hN.GET_STARTED_CLICK
-                            }), c.A.open(e, x.BEX.GUILD_PRODUCTS)
+                            u.default.track(g.HAw.GUILD_SHOP_PREVIEW_CLICK, {
+                                ...(0, o.H$)(t),
+                                action_taken: m.hN.GET_STARTED_CLICK
+                            }), c.A.open(t, g.BEX.GUILD_PRODUCTS)
                         }
                     })]
                 })]
-            }), (0, s.jsxs)("div", {
-                className: _.SN,
-                children: [(0, s.jsx)("img", {
-                    src: (0, o.n)("server_products/storefront/preview-mural.png"),
+            }), (0, i.jsxs)("div", {
+                className: h.SN,
+                children: [(0, i.jsx)("img", {
+                    src: (0, d.n)("server_products/storefront/preview-mural.png"),
                     alt: "",
-                    className: _.$G
-                }), (0, s.jsx)("img", {
-                    src: (0, o.n)("server_products/storefront/preview-mural-reduced.png"),
+                    className: h.$G
+                }), (0, i.jsx)("img", {
+                    src: (0, d.n)("server_products/storefront/preview-mural-reduced.png"),
                     alt: "",
-                    className: _.rp
+                    className: h.rp
                 })]
             })]
         })

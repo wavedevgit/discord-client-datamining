@@ -44,8 +44,8 @@ function p(e) {
         (0, d.Bq)(t)
     }, []), {
         handleDragStart: E,
-        handleDragReset: b,
-        handleDragComplete: C,
+        handleDragReset: C,
+        handleDragComplete: b,
         draggingId: T
     } = (0, a.A)(j, N), {
         enabled: I
@@ -83,8 +83,8 @@ function p(e) {
                 connection: e,
                 index: t,
                 onDragStart: E,
-                onDragReset: b,
-                onDragComplete: C,
+                onDragReset: C,
+                onDragComplete: b,
                 draggingId: T
             }, e.id))
         }), (0, i.jsxs)("button", {

@@ -96,13 +96,13 @@ function h(e) {
         isSelecting: p,
         error: A,
         forceShowErrorTooltip: f
-    } = e, j = s.useRef(null), N = s.useRef(null), [E, b] = s.useState(!1), {
-        ref: C,
+    } = e, j = s.useRef(null), N = s.useRef(null), [E, C] = s.useState(!1), {
+        ref: b,
         width: T = 0
     } = (0, c.Ay)(E), {
         ref: I,
         width: v = 0
-    } = (0, c.Ay)(E), S = (0, a.bG)([u.A], () => u.A.useReducedMotion), [y, R] = s.useState(f), O = s.useRef(null), L = T > v ? T : v;
+    } = (0, c.Ay)(E), S = (0, a.bG)([u.A], () => u.A.useReducedMotion), [y, R] = s.useState(f), O = s.useRef(null), G = T > v ? T : v;
     s.useEffect(() => {
         f ? (R(!0), O.current = setTimeout(() => {
             R(!1), O.current = null
@@ -110,20 +110,20 @@ function h(e) {
     }, [f]), s.useEffect(() => () => {
         clearTimeout(O.current)
     }, []);
-    let G = s.useCallback(e => {
+    let L = s.useCallback(e => {
             n(e.target.value)
         }, [n]),
         D = s.useCallback(function() {
             let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0];
-            t.trim().length <= 0 && h(), null != j.current && null != C.current && null != N.current && (j.current.scrollTo(0, 0), j.current.setSelectionRange(0, 0), j.current.scrollLeft = 0, C.current.scrollLeft = 0, N.current?.ref != null && (N.current.ref.scrollLeft = 0)), b(!1), l(e)
-        }, [t, C, l, h]),
+            t.trim().length <= 0 && h(), null != j.current && null != b.current && null != N.current && (j.current.scrollTo(0, 0), j.current.setSelectionRange(0, 0), j.current.scrollLeft = 0, b.current.scrollLeft = 0, N.current?.ref != null && (N.current.ref.scrollLeft = 0)), C(!1), l(e)
+        }, [t, b, l, h]),
         M = s.useCallback(e => {
             let n = t.trim().length <= 0;
             m.Wu.has(e.key) ? (e.preventDefault(), e.stopPropagation(), D(!0)) : "Backspace" === e.key && n && (e.preventDefault(), e.stopPropagation(), D(!0))
         }, [D, t]),
         k = s.useCallback(e => {
             let t = e.metaKey || e.ctrlKey;
-            o(t), t ? e.preventDefault() : b(!0), e.stopPropagation()
+            o(t), t ? e.preventDefault() : C(!0), e.stopPropagation()
         }, [o]),
         U = s.useCallback(e => {
             h()
@@ -157,14 +157,14 @@ function h(e) {
                         [g.Pq]: p
                     }),
                     ref: j,
-                    onChange: G,
+                    onChange: L,
                     onKeyDownCapture: M,
                     value: t,
                     style: {
-                        width: L > 0 ? L : `calc(${t.length}ch + 10px)`
+                        width: G > 0 ? G : `calc(${t.length}ch + 10px)`
                     }
                 }), (0, i.jsx)(x, {
-                    ref: C,
+                    ref: b,
                     value: t,
                     isEditing: E,
                     isSelected: _,

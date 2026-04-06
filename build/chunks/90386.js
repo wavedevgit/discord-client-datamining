@@ -1,7 +1,7 @@
 /** chunk id: 90386 params = (module,exports,require) **/
 _.d(t, {
     I: () => o,
-    T: () => I
+    T: () => c
 });
 var s = _(627968),
     i = _(397927),
@@ -24,24 +24,24 @@ let o = (e, t) => {
             size: i._3J.SIZE_32
         })
     },
-    I = (e, t, _, a) => {
+    c = (e, t, _, a) => {
         let o = [...e].map(e => n.default.getUser(e)),
-            I = e => (0, s.jsx)(i.Text, {
+            c = e => (0, s.jsx)(i.Text, {
                 variant: "text-md/semibold",
                 className: l.Xh,
                 children: A.Ay.getName(_, a, e)
             });
         return t >= 4 ? r.intl.format(r.t.qfo6KR, {
-            usernameHook1: () => I(o[0]),
-            usernameHook2: () => I(o[1]),
+            usernameHook1: () => c(o[0]),
+            usernameHook2: () => c(o[1]),
             numberOfOtherUsers: t - e.length
         }) : 3 === t ? r.intl.format(r.t["67ZE+9"], {
-            usernameHook1: () => I(o[0]),
-            usernameHook2: () => I(o[1])
+            usernameHook1: () => c(o[0]),
+            usernameHook2: () => c(o[1])
         }) : 2 === t ? r.intl.format(r.t.veV4IN, {
-            usernameHook1: () => I(o[0]),
-            usernameHook2: () => I(o[1])
+            usernameHook1: () => c(o[0]),
+            usernameHook2: () => c(o[1])
         }) : r.intl.format(r.t["4WHCtq"], {
-            usernameHook: () => I(o[0])
+            usernameHook: () => c(o[0])
         })
     }

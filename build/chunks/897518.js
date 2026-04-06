@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(284009),
     l = n.n(i),
     s = n(417597),
-    r = n(71393),
-    a = n(250627),
+    a = n(71393),
+    r = n(250627),
     o = n(871109),
     d = n(935453),
     c = n(179499),
@@ -17,11 +17,11 @@ function _(e) {
         guildId: t,
         guildProductListingId: n,
         sourceAnalyticsLocations: i
-    } = e, _ = (0, s.bG)([o.A], () => o.A.getGuildProduct(n)), m = (0, s.bG)([r.A], () => r.A.getGuild(t), [t]), h = (0, c.A)({
+    } = e, _ = (0, s.bG)([o.A], () => o.A.getGuildProduct(n)), m = (0, s.bG)([a.A], () => a.A.getGuild(t), [t]), h = (0, c.A)({
         guildId: t,
         productId: n
     });
-    return (l()(null != m, "guild cannot be null"), l()(null != _, "guildProductListing cannot be null"), (0, a.BB)(m)) ? {
+    return (l()(null != m, "guild cannot be null"), l()(null != _, "guildProductListing cannot be null"), (0, r.BB)(m)) ? {
         variant: "primary",
         text: u.intl.string(u.t.xUi3BL),
         disabled: !0

@@ -1,39 +1,39 @@
 /** chunk id: 448836 params = (module,exports,require) **/
-s.d(t, {
+s.d(a, {
     A: () => c
 });
-var n = s(627968);
+var r = s(627968);
 s(64700);
-var a = s(503698),
-    r = s.n(a),
-    l = s(438874),
-    i = s(722523),
-    o = s(439156),
+var t = s(503698),
+    n = s.n(t),
+    o = s(438874),
+    l = s(722523),
+    i = s(439156),
     d = s(143309);
 
 function c(e) {
     let {
-        className: t,
+        className: a,
         guildId: s,
-        powerup: a,
+        powerup: t,
         expressiveCta: c,
-        onError: u
+        onError: _
     } = e, {
         showToggleButton: m,
-        showConfigureButton: _
-    } = (0, l.A)(s, a), x = !_;
-    return (0, n.jsxs)("div", {
-        className: r()(d.k, t),
-        children: [m && (0, n.jsx)(o.A, {
+        showConfigureButton: u
+    } = (0, o.A)(s, t), x = !u;
+    return (0, r.jsxs)("div", {
+        className: n()(d.k, a),
+        children: [m && (0, r.jsx)(i.A, {
             guildId: s,
-            powerup: a,
-            onError: u,
+            powerup: t,
+            onError: _,
             grow: x,
             compact: !x,
             expressiveCta: c
-        }), _ && (0, n.jsx)(i.GU, {
+        }), u && (0, r.jsx)(l.GU, {
             guildId: s,
-            powerup: a
+            powerup: t
         })]
     })
 }

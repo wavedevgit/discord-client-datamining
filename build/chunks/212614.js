@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     l = n(732955),
     s = n(79545),
-    r = n(561393),
-    a = n(220514),
+    a = n(561393),
+    r = n(220514),
     o = n(884392),
     d = n(985018);
 
@@ -64,7 +64,7 @@ let _ = function(e) {
                 analyticsCtxQuestContentRowIndex: g
             });
         case s.UA.ENROLLED:
-            return (0, i.jsx)(r.A, {
+            return (0, i.jsx)(a.A, {
                 quest: t,
                 taskType: f.type,
                 size: A,
@@ -75,7 +75,7 @@ let _ = function(e) {
                 surface: n
             });
         case s.UA.INCOMPLETE:
-            return (0, i.jsx)(a.A, {
+            return (0, i.jsx)(r.A, {
                 quest: t,
                 taskType: f.type,
                 size: A,

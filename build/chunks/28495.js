@@ -23,8 +23,8 @@ var i = n(627968),
     j = n(201275),
     N = n(20851),
     E = n(176201),
-    b = n(676608),
-    C = n(828162),
+    C = n(676608),
+    b = n(828162),
     T = n(208039),
     I = n(34457),
     v = n(576705),
@@ -32,8 +32,8 @@ var i = n(627968),
     y = n(396816),
     R = n(545567),
     O = n(785312),
-    L = n(319805),
-    G = n(316506),
+    G = n(319805),
+    L = n(316506),
     D = n(486619),
     M = n(631103),
     k = n(927573),
@@ -90,8 +90,8 @@ function J(e) {
         }
     };
 
-    function b() {
-        (0, C.A)(n, p.A.GUILD_POWERUPS_GUILD_SETTINGS_ROLE_EDIT), (0, x.jH)()
+    function C() {
+        (0, b.A)(n, p.A.GUILD_POWERUPS_GUILD_SETTINGS_ROLE_EDIT), (0, x.jH)()
     }
     return (0, i.jsx)(f.Ay, {
         contentTypes: [u.M.GUILD_SETTINGS_ROLE_STYLES_NEW_BADGE],
@@ -152,7 +152,7 @@ function J(e) {
                             variant: "text-sm/semibold",
                             color: "button-outline-primary-text",
                             children: B.intl.format(F.default.VpEDJc, {
-                                magical: (0, i.jsx)(Z, {})
+                                magical: (0, i.jsx)(q, {})
                             })
                         }), (0, i.jsx)(g.Text, {
                             variant: "text-xs/medium",
@@ -160,7 +160,7 @@ function J(e) {
                             children: B.intl.string(F.default.FJZeZF)
                         })]
                     }), (0, i.jsx)(g.Button, {
-                        onClick: b,
+                        onClick: C,
                         variant: "expressive",
                         icon: g._Jp,
                         text: B.intl.string(B.t["+7XY31"])
@@ -171,7 +171,7 @@ function J(e) {
     })
 }
 
-function Z() {
+function q() {
     let e = (0, c.bG)([_.A], () => _.A.useReducedMotion),
         {
             gradientStyle: t,
@@ -193,7 +193,7 @@ function Z() {
     })
 }
 
-function q(e) {
+function Z(e) {
     let {
         role: t,
         disabled: n,
@@ -311,13 +311,13 @@ function ee(e) {
         role: n,
         locked: s,
         setSelectedSection: l
-    } = e, a = (0, b.jV)(t.id, n), o = (0, c.bG)([y.A], () => y.A.getRoleStyleData(n.id)), d = !a, u = null != o && a ? o.currentStyle : y.y.SOLID, m = (0, I.Oy)(n), x = s || m, h = (0, c.bG)([v.A], () => v.A.canImpersonateRole(t, n)), {
+    } = e, a = (0, C.jV)(t.id, n), o = (0, c.bG)([y.A], () => y.A.getRoleStyleData(n.id)), d = !a, u = null != o && a ? o.currentStyle : y.y.SOLID, m = (0, I.Oy)(n), x = s || m, h = (0, c.bG)([v.A], () => v.A.canImpersonateRole(t, n)), {
         headerHeight: _,
         headerRef: p
     } = (0, O.A)(0), {
         scrolledToTop: A,
         handleScroll: f
-    } = (0, G.u)();
+    } = (0, L.u)();
     return (0, i.jsx)(g.GtU, {
         className: H.XG,
         style: {
@@ -331,7 +331,7 @@ function ee(e) {
                     [V.l6]: !A
                 }),
                 ref: p,
-                children: (0, i.jsx)(G.A, {
+                children: (0, i.jsx)(L.A, {
                     guild: t,
                     role: n,
                     selectedSection: k.T$.DISPLAY,
@@ -353,7 +353,7 @@ function ee(e) {
                 selectedStyle: u,
                 disabled: x,
                 shouldShowUpsell: d
-            }), u !== y.y.HOLOGRAPHIC && null != u && (0, i.jsx)(q, {
+            }), u !== y.y.HOLOGRAPHIC && null != u && (0, i.jsx)(Z, {
                 role: n,
                 disabled: x,
                 currentStyle: u,
@@ -364,7 +364,7 @@ function ee(e) {
                     variant: "text-xs/medium",
                     children: B.intl.string(F.default.tBhCyr)
                 })
-            }), (0, i.jsx)(L.A, {
+            }), (0, i.jsx)(G.A, {
                 guild: t,
                 disabled: x,
                 role: n

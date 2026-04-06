@@ -3,7 +3,7 @@
 let i, s, l;
 n.d(t, {
     A: () => K,
-    y: () => C
+    y: () => b
 });
 var r, a = n(735438),
     o = n.n(a),
@@ -21,8 +21,8 @@ var r, a = n(735438),
     j = n(488926),
     N = n(555337),
     E = n(652215),
-    b = n(178758),
-    C = ((r = {}).SOLID = "solid", r.GRADIENT = "gradient", r.HOLOGRAPHIC = "holographic", r);
+    C = n(178758),
+    b = ((r = {}).SOLID = "solid", r.GRADIENT = "gradient", r.HOLOGRAPHIC = "holographic", r);
 let T = new Set,
     I = E.XlH.CLOSED,
     v = !1,
@@ -30,8 +30,8 @@ let T = new Set,
     y = [],
     R = [],
     O = !1,
-    L = new Set,
-    G = new Map,
+    G = new Set,
+    L = new Map,
     D = new Map,
     M = new Map;
 
@@ -55,7 +55,7 @@ function U(e) {
 
 function P() {
     let e = !(arguments.length > 0) || void 0 === arguments[0] || arguments[0];
-    i = N.A.getProps().guild, v = !1, S = !1, l = void 0, T.clear(), M.clear(), I = E.XlH.OPEN, R = [...y = null != i ? [...p.A.getSortedRoles(i.id)] : []], w(i?.id, R), O = !1, e && (D.clear(), G.forEach((e, t) => {
+    i = N.A.getProps().guild, v = !1, S = !1, l = void 0, T.clear(), M.clear(), I = E.XlH.OPEN, R = [...y = null != i ? [...p.A.getSortedRoles(i.id)] : []], w(i?.id, R), O = !1, e && (D.clear(), L.forEach((e, t) => {
         D.set(t, [...e])
     }))
 }
@@ -72,14 +72,14 @@ function w(e, t) {
                 tertiary_color: null
             },
             gradient: {
-                primary_color: b.lO.primary_color,
-                secondary_color: b.lO.secondary_color,
+                primary_color: C.lO.primary_color,
+                secondary_color: C.lO.secondary_color,
                 tertiary_color: null
             },
             holographic: {
-                primary_color: b.jl.primary_color,
-                secondary_color: b.jl.secondary_color,
-                tertiary_color: b.jl.tertiary_color
+                primary_color: C.jl.primary_color,
+                secondary_color: C.jl.secondary_color,
+                tertiary_color: C.jl.tertiary_color
             }
         };
         null != t.colors && (s[n] = {
@@ -102,7 +102,7 @@ let B = o().debounce(() => {
             } = e;
             return t === n
         }))) && (T.delete(t), e = !0)
-    }), 0 === T.size && (v = !1), O && o().isEqual(G, D) && (e = !0, O = !1), e && W.emitChange()
+    }), 0 === T.size && (v = !1), O && o().isEqual(L, D) && (e = !0, O = !1), e && W.emitChange()
 }, 500);
 
 function F(e, t) {
@@ -176,7 +176,7 @@ class z extends u.Ay.Store {
         return Array.from(T)
     }
     get editedRoleIdsForConfigurations() {
-        return L
+        return G
     }
     get roles() {
         return y
@@ -365,9 +365,9 @@ let W = new z(m.h, __OVERLAY__ ? {} : {
                 roleConnectionConfigurations: n
             } = e, i = H(t);
             if (null == i) return !1;
-            let s = G.get(i.id);
+            let s = L.get(i.id);
             if (o().isEqual(s, n)) return !1;
-            D.set(i.id, n), G.set(i.id, n), B()
+            D.set(i.id, n), L.set(i.id, n), B()
         },
         GUILD_SETTINGS_ROLES_UPDATE_ROLE_CONNECTION_CONFIGURATIONS: function(e) {
             let {
@@ -375,15 +375,15 @@ let W = new z(m.h, __OVERLAY__ ? {} : {
                 roleConnectionConfigurations: n
             } = e, i = H(t);
             if (null == i) return !1;
-            O = !0, L.add(i.id), D.set(i.id, n), B()
+            O = !0, G.add(i.id), D.set(i.id, n), B()
         },
         GUILD_SETTINGS_CLOSE: function() {
-            i = null, R = y = [], G.clear(), T.clear(), M.clear(), D.clear(), L = new Set, v = !1, S = !1, O = !1, I = E.XlH.CLOSED
+            i = null, R = y = [], L.clear(), T.clear(), M.clear(), D.clear(), G = new Set, v = !1, S = !1, O = !1, I = E.XlH.CLOSED
         },
         GUILD_ROLE_CREATE: V,
         GUILD_ROLE_UPDATE: V,
         GUILD_ROLE_DELETE: function(e) {
-            return L.has(e.roleId) && (L.delete(e.roleId), G.delete(e.roleId), D.delete(e.roleId), O = !1), V(e)
+            return G.has(e.roleId) && (G.delete(e.roleId), L.delete(e.roleId), D.delete(e.roleId), O = !1), V(e)
         },
         GUILD_SETTINGS_ROLES_SUBMITTING: function() {
             I = E.XlH.SUBMITTING

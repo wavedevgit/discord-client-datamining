@@ -1,7 +1,7 @@
 /** chunk id: 726862 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => b
+    A: () => C
 });
 var i = n(627968),
     s = n(64700),
@@ -26,22 +26,22 @@ let E = {
     optionErrors: []
 };
 
-function b(e) {
+function C(e) {
     let {
         guild: t,
         prompt: n,
         disableAutofocus: l,
         promptIndex: u,
         dragIndex: A,
-        includeCount: b,
+        includeCount: C,
         singleColumn: I,
         onPromptDragComplete: v,
         onPromptDragStart: S,
         onPromptDragReset: y
     } = e, R = (0, a.bG)([h.A], () => h.A.editedDefaultChannelIds), {
         drag: O,
-        dragSourcePosition: L,
-        drop: G,
+        dragSourcePosition: G,
+        drop: L,
         setIsDraggable: D
     } = (0, c.A)({
         type: "ONBOARDING_PROMPT_CARD",
@@ -64,12 +64,12 @@ function b(e) {
             onBlur: () => w(!1),
             onMouseLeave: () => w(!1),
             className: r()(N.kL, {
-                [N.A]: null != L && u < L,
-                [N.Ze]: null != L && u > L,
+                [N.A]: null != G && u < G,
+                [N.Ze]: null != G && u > G,
                 [N.tW]: P
             }),
             ref: e => {
-                O(G(e))
+                O(L(e))
             },
             children: [(0, i.jsx)("div", {
                 className: N.cK,
@@ -119,12 +119,12 @@ function b(e) {
             onFocus: () => w(!0),
             onBlur: () => w(!1),
             className: r()(N.kL, {
-                [N.A]: null != L && u < L,
-                [N.Ze]: null != L && u > L,
+                [N.A]: null != G && u < G,
+                [N.Ze]: null != G && u > G,
                 [N.tW]: P
             }),
             ref: e => {
-                O(G(e))
+                O(L(e))
             },
             children: [(0, i.jsx)("div", {
                 className: N.cK,
@@ -149,7 +149,7 @@ function b(e) {
                     placeholder: j.intl.string(j.t.QMCuCo),
                     maxLength: f.kq,
                     error: M.title
-                }), (0, i.jsx)(C, {
+                }), (0, i.jsx)(b, {
                     prompt: n,
                     guild: t
                 }), (0, i.jsx)(d.D0$, {
@@ -185,7 +185,7 @@ function b(e) {
                             required: e
                         }),
                         disabled: !n.inOnboarding,
-                        label: b ? j.intl.formatToPlainString(j.t["0re8T6"], {
+                        label: C ? j.intl.formatToPlainString(j.t["0re8T6"], {
                             count: V
                         }) : j.intl.string(j.t.Ur8Vrt)
                     }) : null]
@@ -218,7 +218,7 @@ function b(e) {
     })
 }
 
-function C(e) {
+function b(e) {
     let {
         prompt: t,
         guild: n

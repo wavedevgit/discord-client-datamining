@@ -31,16 +31,16 @@ function T(e) {
         placeholder: T,
         currentBio: f,
         disabled: S = !1
-    } = e, [E, b] = s.useState(u ?? f), [C, N] = s.useState((0, r.x7)(E)), v = s.useRef(f), I = s.useRef(!1);
+    } = e, [b, E] = s.useState(u ?? f), [C, N] = s.useState((0, r.x7)(b)), v = s.useRef(f), I = s.useRef(!1);
     return s.useEffect(() => {
         if (v.current !== f) {
             let e = (0, r.x7)(f);
-            b(f), N(e)
+            E(f), N(e)
         }
         v.current = f
     }, [f]), s.useEffect(() => {
-        void 0 !== u || E === f || I.current || (b(f), N((0, r.x7)(f)))
-    }, [u, f, E]), (0, i.jsxs)(m.A, {
+        void 0 !== u || b === f || I.current || (E(f), N((0, r.x7)(f)))
+    }, [u, f, b]), (0, i.jsxs)(m.A, {
         title: t,
         titleId: A,
         description: _.intl.string(_.t.Bbw6Ac),
@@ -53,11 +53,11 @@ function T(e) {
             innerClassName: x.Z,
             maxCharacterCount: g.NA2,
             onChange: function(e, t, n) {
-                t !== E && (b(t), N(n), d(t))
+                t !== b && (E(t), N(n), d(t))
             },
             placeholder: T,
             channel: h,
-            textValue: E,
+            textValue: b,
             richValue: C,
             emojiPickerCloseOnModalOuterClick: !0,
             parentModalKey: c.USER_SETTINGS_MODAL_KEY,

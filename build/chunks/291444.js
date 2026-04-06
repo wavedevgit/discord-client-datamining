@@ -23,8 +23,8 @@ var i = n(627968),
     j = n(199940),
     N = n(107795),
     E = n(655943),
-    b = n(287479),
-    C = n(400812),
+    C = n(287479),
+    b = n(400812),
     T = n(72533),
     I = n(729984),
     v = n(193477),
@@ -32,8 +32,8 @@ var i = n(627968),
     y = n(307209),
     R = n(360827),
     O = n(307879),
-    L = n(652215),
-    G = n(985018),
+    G = n(652215),
+    L = n(985018),
     D = n(217515);
 
 function M() {
@@ -47,46 +47,46 @@ function k(e) {
     let t, {
             guildId: n
         } = e,
-        l = (0, a.bG)([b.A], () => b.A.getCurrentPage()),
-        h = (0, a.bG)([b.A], () => {
-            let e = (0, C.ql)(l);
-            return null != e && !b.A.isEducationUpsellDismissed(e)
+        l = (0, a.bG)([C.A], () => C.A.getCurrentPage()),
+        h = (0, a.bG)([C.A], () => {
+            let e = (0, b.ql)(l);
+            return null != e && !C.A.isEducationUpsellDismissed(e)
         }),
         E = (0, T.A)(n),
         M = !E && h;
     switch (s.useEffect(() => {
             (0, m.Dr)(o.M.COMMUNITY_ONBOARDING_NEW_BADGE)
         }, []), l) {
-        case C.Hy.LANDING:
+        case b.Hy.LANDING:
             t = E ? (0, i.jsx)(y.A, {
                 completed: !0,
                 guildId: n
             }) : (0, i.jsx)(O.A, {});
             break;
-        case C.Hy.SAFETY_CHECK:
+        case b.Hy.SAFETY_CHECK:
             t = (0, i.jsx)(_.A, {});
             break;
-        case C.Hy.DEFAULT_CHANNELS:
+        case b.Hy.DEFAULT_CHANNELS:
             t = (0, i.jsx)(I.A, {
                 saveOnClose: !E
             });
             break;
-        case C.Hy.CUSTOMIZATION_QUESTIONS:
+        case b.Hy.CUSTOMIZATION_QUESTIONS:
             t = (0, i.jsx)(R.Ay, {
                 saveOnClose: !E
             });
             break;
-        case C.Hy.HOME_SETTINGS:
+        case b.Hy.HOME_SETTINGS:
             t = (0, i.jsx)(v.A, {
                 saveOnClose: !E
             });
             break;
-        case C.Hy.CONNECTIONS:
+        case b.Hy.CONNECTIONS:
             t = (0, i.jsx)(S.A, {
                 saveOnClose: !E
             });
             break;
-        case C.Hy.REVIEW:
+        case b.Hy.REVIEW:
             t = (0, i.jsx)(y.A, {
                 completed: E,
                 guildId: n
@@ -96,23 +96,23 @@ function k(e) {
         className: r()(D.Jp, {
             [D.Q3]: M
         }),
-        children: [!E && l !== C.Hy.LANDING && (0, i.jsx)(U, {
+        children: [!E && l !== b.Hy.LANDING && (0, i.jsx)(U, {
             setOnboardingStep: A.e_,
             page: l,
             homeSettingsEnabled: !0
-        }), E && l !== C.Hy.LANDING && (0, i.jsx)("div", {
+        }), E && l !== b.Hy.LANDING && (0, i.jsx)("div", {
             children: (0, i.jsxs)(d.$n, {
                 innerClassName: D.Gv,
                 look: d.$n.Looks.BLANK,
                 size: d.$n.Sizes.MIN,
                 onClick: () => {
-                    if (b.A.hasChanges() && !b.A.canCloseEarly()) {
-                        x._.dispatch(L.jej.SHAKE_APP, {
+                    if (C.A.hasChanges() && !C.A.canCloseEarly()) {
+                        x._.dispatch(G.jej.SHAKE_APP, {
                             duration: 300,
                             intensity: u.n3
-                        }), x._.dispatch(L.jej.EMPHASIZE_NOTICE);
+                        }), x._.dispatch(G.jej.EMPHASIZE_NOTICE);
                         return
-                    }(0, N.P3)(), (0, p.nx)(), (0, j.sk)(), (0, f.p2)(), (0, A.e_)(C.Hy.LANDING)
+                    }(0, N.P3)(), (0, p.nx)(), (0, j.sk)(), (0, f.p2)(), (0, A.e_)(b.Hy.LANDING)
                 },
                 children: [(0, i.jsx)(g.A, {
                     className: D.UE,
@@ -120,7 +120,7 @@ function k(e) {
                 }), (0, i.jsx)(c.Text, {
                     variant: "text-sm/semibold",
                     color: "interactive-text-default",
-                    children: G.intl.string(G.t["13/7kX"])
+                    children: L.intl.string(L.t["13/7kX"])
                 })]
             })
         }), (0, i.jsx)("div", {
@@ -134,68 +134,68 @@ function U(e) {
         page: t,
         setOnboardingStep: n,
         homeSettingsEnabled: s
-    } = e, l = (0, a.bG)([b.A], () => b.A.hasErrors()), o = e => {
+    } = e, l = (0, a.bG)([C.A], () => C.A.hasErrors()), o = e => {
         if (!l) return () => n(e)
     }, d = (0, a.bG)([E.A], () => E.A.advancedMode);
     return (0, i.jsxs)("div", {
         className: D.L$,
         children: [(0, i.jsxs)(c.DUT, {
             className: r()(D.G9, D.zp),
-            onClick: o(C.Hy.SAFETY_CHECK),
+            onClick: o(b.Hy.SAFETY_CHECK),
             children: [(0, i.jsx)("div", {
                 className: r()(D.hr, {
-                    [D.Ou]: t === C.Hy.SAFETY_CHECK
+                    [D.Ou]: t === b.Hy.SAFETY_CHECK
                 })
             }), (0, i.jsx)(c.Text, {
-                color: t === C.Hy.SAFETY_CHECK ? "text-brand" : "text-muted",
+                color: t === b.Hy.SAFETY_CHECK ? "text-brand" : "text-muted",
                 variant: "text-xs/medium",
-                children: G.intl.format(G.t.Me5Mma, {
+                children: L.intl.format(L.t.Me5Mma, {
                     stepNumber: 1
                 })
             })]
         }), (0, i.jsxs)(c.DUT, {
             className: r()(D.G9, D.zp),
-            onClick: o(C.Hy.DEFAULT_CHANNELS),
+            onClick: o(b.Hy.DEFAULT_CHANNELS),
             children: [(0, i.jsx)("div", {
                 className: r()(D.hr, {
-                    [D.Ou]: t === C.Hy.DEFAULT_CHANNELS
+                    [D.Ou]: t === b.Hy.DEFAULT_CHANNELS
                 })
             }), (0, i.jsx)(c.Text, {
-                color: t === C.Hy.DEFAULT_CHANNELS ? "text-brand" : "text-muted",
+                color: t === b.Hy.DEFAULT_CHANNELS ? "text-brand" : "text-muted",
                 variant: "text-xs/medium",
-                children: d ? G.intl.formatToPlainString(G.t["8mGhOy"], {
+                children: d ? L.intl.formatToPlainString(L.t["8mGhOy"], {
                     stepNumber: 2
-                }) : G.intl.formatToPlainString(G.t.vxpuTd, {
+                }) : L.intl.formatToPlainString(L.t.vxpuTd, {
                     stepNumber: 2
                 })
             })]
         }), (0, i.jsxs)(c.DUT, {
             className: r()(D.G9, D.zp),
-            onClick: o(C.Hy.CUSTOMIZATION_QUESTIONS),
+            onClick: o(b.Hy.CUSTOMIZATION_QUESTIONS),
             children: [(0, i.jsx)("div", {
                 className: r()(D.hr, {
-                    [D.Ou]: t === C.Hy.CUSTOMIZATION_QUESTIONS
+                    [D.Ou]: t === b.Hy.CUSTOMIZATION_QUESTIONS
                 })
             }), (0, i.jsx)(c.Text, {
-                color: t === C.Hy.CUSTOMIZATION_QUESTIONS ? "text-brand" : "text-muted",
+                color: t === b.Hy.CUSTOMIZATION_QUESTIONS ? "text-brand" : "text-muted",
                 variant: "text-xs/medium",
-                children: d ? G.intl.formatToPlainString(G.t.vb6J5g, {
+                children: d ? L.intl.formatToPlainString(L.t.vb6J5g, {
                     stepNumber: 3
-                }) : G.intl.formatToPlainString(G.t.ZpdQqK, {
+                }) : L.intl.formatToPlainString(L.t.ZpdQqK, {
                     stepNumber: 3
                 })
             })]
         }), s && (0, i.jsxs)(c.DUT, {
             className: r()(D.G9, D.zp),
-            onClick: o(C.Hy.HOME_SETTINGS),
+            onClick: o(b.Hy.HOME_SETTINGS),
             children: [(0, i.jsx)("div", {
                 className: r()(D.hr, {
-                    [D.Ou]: t === C.Hy.HOME_SETTINGS
+                    [D.Ou]: t === b.Hy.HOME_SETTINGS
                 })
             }), (0, i.jsx)(c.Text, {
-                color: t === C.Hy.HOME_SETTINGS ? "text-brand" : "text-muted",
+                color: t === b.Hy.HOME_SETTINGS ? "text-brand" : "text-muted",
                 variant: "text-xs/medium",
-                children: G.intl.format(G.t.KVOukh, {
+                children: L.intl.format(L.t.KVOukh, {
                     stepNumber: 4
                 })
             })]
@@ -203,12 +203,12 @@ function U(e) {
             className: D.G9,
             children: [(0, i.jsx)("div", {
                 className: r()(D.hr, {
-                    [D.Ou]: t === C.Hy.REVIEW
+                    [D.Ou]: t === b.Hy.REVIEW
                 })
             }), (0, i.jsx)(c.Text, {
-                color: t === C.Hy.REVIEW ? "text-brand" : "text-muted",
+                color: t === b.Hy.REVIEW ? "text-brand" : "text-muted",
                 variant: "text-xs/medium",
-                children: G.intl.format(G.t.oVzkiA, {
+                children: L.intl.format(L.t.oVzkiA, {
                     stepNumber: 3 + +!!s + 1
                 })
             })]

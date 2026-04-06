@@ -23,8 +23,8 @@ var i = n(627968),
     j = n(28495),
     N = n(869568),
     E = n(541285),
-    b = n(728713),
-    C = n(927573),
+    C = n(728713),
+    b = n(927573),
     T = n(652215),
     I = n(347173);
 
@@ -47,8 +47,8 @@ function v(e) {
     s.useEffect(() => {
         null == R && l(null)
     }, [R, l]);
-    let L = (0, a.bG)([m.A], () => m.A.getHighestRole(y), [y]),
-        G = (0, a.bG)([m.A], () => !m.A.isRoleHigher(y, L, R)),
+    let G = (0, a.bG)([m.A], () => m.A.getHighestRole(y), [y]),
+        L = (0, a.bG)([m.A], () => !m.A.isRoleHigher(y, G, R)),
         D = s.useRef(null),
         M = (0, a.bG)([_.A], () => _.A.getProps().integrations),
         k = {
@@ -77,38 +77,38 @@ function v(e) {
             R?.id != null && (0, u.os)(y.id, R.id)
         }, [y.id, R?.id]), null == R) return null;
     switch (v) {
-        case C.T$.DISPLAY:
+        case b.T$.DISPLAY:
             t = (0, i.jsx)(j.Ay, {
                 guild: y,
                 role: R,
-                locked: G,
-                highestRole: L,
+                locked: L,
+                highestRole: G,
                 setSelectedSection: S
             });
             break;
-        case C.T$.PERMISSIONS:
+        case b.T$.PERMISSIONS:
             t = (0, i.jsx)(E.Ay, {
                 guild: y,
                 role: R,
-                locked: G,
+                locked: L,
                 setSelectedSection: S,
                 initialSearchQuery: O
             });
             break;
-        case C.T$.VERIFICATIONS:
+        case b.T$.VERIFICATIONS:
             t = (0, i.jsx)(f.A, {
                 guild: y,
                 role: R,
-                locked: G,
+                locked: L,
                 setSelectedSection: S,
                 integrations: M ?? void 0
             });
             break;
-        case C.T$.MEMBERS:
+        case b.T$.MEMBERS:
             t = (0, i.jsx)(N.Ay, {
                 guild: y,
                 role: R,
-                locked: G,
+                locked: L,
                 setSelectedSection: S
             });
             break;
@@ -117,7 +117,7 @@ function v(e) {
     }
     return (0, i.jsxs)("div", {
         className: I.MY,
-        children: [(0, i.jsx)(b.A, {
+        children: [(0, i.jsx)(C.A, {
             guild: y,
             currentRoleId: n,
             setCurrentRoleId: l,

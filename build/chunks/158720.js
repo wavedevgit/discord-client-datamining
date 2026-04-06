@@ -137,11 +137,11 @@ function N(e) {
         } = e,
         j = c?.configuration != null,
         N = c?.index ?? -1,
-        [E, b] = (t = c?.configuration?.value, n = f ?? _.so.GREATER_THAN, l = Math.round(Number(t ?? 0)), n === _.so.GREATER_THAN ? l = Math.max(1, l + 1) : n === _.so.LESS_THAN && (l = Math.max(0, l - 1)), [l.toString(), n]),
-        [C, T] = s.useState(E),
+        [E, C] = (t = c?.configuration?.value, n = f ?? _.so.GREATER_THAN, l = Math.round(Number(t ?? 0)), n === _.so.GREATER_THAN ? l = Math.max(1, l + 1) : n === _.so.LESS_THAN && (l = Math.max(0, l - 1)), [l.toString(), n]),
+        [b, T] = s.useState(E),
         I = null != o ? p.intl.format(o, {
-            count: C,
-            metadataHook: () => C
+            count: b,
+            metadataHook: () => b
         }) : (0, i.jsx)("span", {
             className: A.gF,
             children: a
@@ -176,7 +176,7 @@ function N(e) {
                 children: (0, i.jsx)(u.ksK, {
                     "aria-label": p.intl.string(p.t.FTmi9y),
                     type: "number",
-                    value: C,
+                    value: b,
                     onChange: e => {
                         let t, n;
                         if (T(e), null == c) return;
@@ -202,8 +202,8 @@ function N(e) {
                         connectionType: m?.type ?? _.zR,
                         applicationId: g,
                         connectionMetadataField: d,
-                        operator: b,
-                        value: C
+                        operator: C,
+                        value: b
                     }), x(t, c?.index ?? -1)
                 },
                 disabled: h
@@ -245,7 +245,7 @@ function E(e) {
     })
 }
 
-function b(e) {
+function C(e) {
     let {
         configMetadataMap: t,
         onConfigurationChange: n,
@@ -280,7 +280,7 @@ function b(e) {
     })
 }
 
-function C(e) {
+function b(e) {
     let {
         configMetadataMap: t,
         onConfigurationChange: n,
@@ -627,7 +627,7 @@ function O(e) {
         _ = null;
     switch (c?.type) {
         case h.fg2.STEAM:
-            _ = (0, i.jsx)(C, {
+            _ = (0, i.jsx)(b, {
                 ...m
             });
             break;
@@ -642,7 +642,7 @@ function O(e) {
             });
             break;
         case h.fg2.BLUESKY:
-            _ = (0, i.jsx)(b, {
+            _ = (0, i.jsx)(C, {
                 ...m
             });
             break;

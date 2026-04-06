@@ -1,7 +1,7 @@
 /** chunk id: 544199 params = (module,exports,require) **/
 n.d(t, {
     F: () => s,
-    G: () => r
+    G: () => a
 });
 var i = n(73153),
     l = n(881268);
@@ -28,7 +28,7 @@ async function s(e, t) {
     }
 }
 
-function r(e) {
+function a(e) {
     i.h.dispatch({
         type: "CREATOR_MONETIZATION_SET_HAS_SEEN_ONBOARDING_FOR_GUILD",
         guildId: e

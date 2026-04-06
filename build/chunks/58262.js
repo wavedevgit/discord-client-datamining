@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     l = n(64700),
     s = n(158954),
-    r = n(311907),
-    a = n(308528),
+    a = n(311907),
+    r = n(308528),
     o = n(846293),
     d = n(793574),
     c = n(688810),
@@ -26,11 +26,11 @@ function E(e) {
         invite: t,
         message: n,
         getAcceptInviteContext: E
-    } = e, I = (0, r.bG)([h.default], () => h.default.getId()), v = t.inviter?.id === I, b = t.state === x.elq.ACCEPTING, {
+    } = e, I = (0, a.bG)([h.default], () => h.default.getId()), v = t.inviter?.id === I, b = t.state === x.elq.ACCEPTING, {
         analyticsLocations: T
-    } = (0, c.Ay)(d.A.INVITE_EMBED), N = (0, r.bG)([g.A], () => null != t.inviter && g.A.isFriend(t.inviter?.id)), y = l.useCallback(() => {
+    } = (0, c.Ay)(d.A.INVITE_EMBED), N = (0, a.bG)([g.A], () => null != t.inviter && g.A.isFriend(t.inviter?.id)), y = l.useCallback(() => {
         let e = "noop";
-        null != t.inviter && null != p.A.getDMFromUserId(t.inviter.id) && (e = "transition", a.A.openPrivateChannel({
+        null != t.inviter && null != p.A.getDMFromUserId(t.inviter.id) && (e = "transition", r.A.openPrivateChannel({
             recipientIds: [t.inviter.id]
         })), (0, o.he)({
             invite: t,

@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     l = n(64700),
     s = n(503698),
-    r = n.n(s),
-    a = n(126031),
+    a = n.n(s),
+    r = n(126031),
     o = n(687498),
     d = n(889137),
     c = n(615300),
@@ -27,13 +27,13 @@ function I(e) {
         percentage: t,
         label: n,
         canShowVoterDetails: s,
-        answerId: r
+        answerId: a
     } = e, o = (0, m.GV)(), {
         channelId: d,
         messageId: c
     } = (0, f.Tu)(), [A, x] = l.useState(""), [C, I] = l.useState(!1), v = "" !== A && C, b = l.useCallback(() => {
-        x((0, g.$m)(c, d, r))
-    }, [c, d, r]), T = l.useCallback(() => {
+        x((0, g.$m)(c, d, a))
+    }, [c, d, a]), T = l.useCallback(() => {
         b(), I(!0)
     }, [b]), N = l.useCallback(() => {
         I(!1)
@@ -41,9 +41,9 @@ function I(e) {
         (0, p.e)({
             channelId: d,
             messageId: c,
-            answerId: r
+            answerId: a
         })
-    }, [d, c, r]);
+    }, [d, c, a]);
     return l.useEffect(() => {
         if (C) return h.A.addReactChangeListener(b), () => {
             h.A.removeReactChangeListener(b)
@@ -80,7 +80,7 @@ function I(e) {
                 text: n,
                 variant: "secondary",
                 textVariant: "text-xs/semibold"
-            }), v && (0, i.jsx)(a.s, {
+            }), v && (0, i.jsx)(r.s, {
                 id: o,
                 children: A
             })]
@@ -127,8 +127,8 @@ function b(e) {
         isSelected: n,
         didSelfVote: l,
         isVictor: s,
-        isExpired: r,
-        className: a
+        isExpired: a,
+        className: r
     } = e;
     return (0, d.YW)({
         answersInteraction: t,
@@ -138,21 +138,21 @@ function b(e) {
     }, () => (0, i.jsx)(x.k$, {
         isSelected: n,
         size: 24,
-        className: a
+        className: r
     })).with({
         answersInteraction: A.CQ.CHECKBOXES
     }, () => (0, i.jsx)(x.e5, {
         isSelected: n,
         size: 20,
-        className: a
+        className: r
     })).with({
         answersInteraction: A.CQ.LIST,
         didSelfVote: !0
     }, () => (0, i.jsx)(x.Vx, {
         isVictor: s,
-        isExpired: r,
+        isExpired: a,
         size: 24,
-        className: a
+        className: r
     })).otherwise(() => null)
 }
 
@@ -165,7 +165,7 @@ function T(e) {
         canShowVoterDetails: o
     } = e, d = !0 === t.isSelected, c = !0 === t.didSelfVote, u = !0 === t.isVictor, m = t.shouldAnimateTransition;
     return (0, i.jsxs)("div", {
-        className: r()(E.Fk, {
+        className: a()(E.Fk, {
             [E.EK]: l !== A.CQ.LIST,
             [E.wH]: d
         }),
@@ -181,7 +181,7 @@ function T(e) {
             color: "none",
             scaleFontToUserSetting: !0,
             children: t.pollMedia.text
-        }), t.didSelfVote && (0, i.jsx)(a.s, {
+        }), t.didSelfVote && (0, i.jsx)(r.s, {
             children: C.intl.string(C.t["8DAM+5"])
         }), s && (0, i.jsx)(I, {
             percentage: t.votesPercentage,
@@ -205,7 +205,7 @@ function N(e) {
         answersInteraction: n,
         canShowVoteCounts: l,
         canTapAnswers: s,
-        ...r
+        ...a
     } = e;
     return (0, i.jsx)(x.Fh, {
         className: E.ry,
@@ -219,6 +219,6 @@ function N(e) {
             canShowVoteCounts: l,
             canShowVoterDetails: s
         }),
-        ...r
+        ...a
     })
 }
