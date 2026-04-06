@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var a = n(681154),
-    r = n(311907),
+var r = n(681154),
+    a = n(311907),
     l = n(397927),
     s = n(429913),
     o = n(287809),
@@ -15,7 +15,7 @@ var a = n(681154),
 function u(e) {
     let {
         item: t
-    } = e, n = "contentInventory" === t.data.kind ? t.data.content : null, u = n?.extra, A = n?.author_id, h = n?.content_type, _ = u?.type === "played_game_extra" || u?.type === "launched_activity_extra" ? u.application_id : void 0, m = (0, s.h)(_), p = (0, r.bG)([o.default], () => null != A ? o.default.getUser(A) : null, [A]), g = h === a.ContentInventoryEntryType.TOP_GAME, E = m?.getIconURL(240);
+    } = e, n = "contentInventory" === t.data.kind ? t.data.content : null, u = n?.extra, A = n?.author_id, h = n?.content_type, _ = u?.type === "played_game_extra" || u?.type === "launched_activity_extra" ? u.application_id : void 0, m = (0, s.h)(_), p = (0, a.bG)([o.default], () => null != A ? o.default.getUser(A) : null, [A]), g = h === r.ContentInventoryEntryType.TOP_GAME, E = m?.getIconURL(240);
     return u?.type !== "played_game_extra" || "contentInventory" !== t.data.kind || null == m || null == p || null == E ? null : (0, i.jsx)("div", {
         className: c.kL,
         children: (0, i.jsxs)("div", {

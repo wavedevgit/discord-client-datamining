@@ -15,8 +15,8 @@ var n = r(627968),
     _ = r(303136),
     p = r(649032),
     f = r(320118),
-    h = r(976860),
-    b = r(780964),
+    b = r(976860),
+    h = r(780964),
     g = r(858897),
     x = r(975571),
     C = r(872725),
@@ -49,7 +49,7 @@ let O = e => {
         blurAmount: 10
     }), [T]);
     if (!r || null == i) return null;
-    let D = function(e, t) {
+    let M = function(e, t) {
         let r = e.program_current_state,
             a = null != e.next_reward_date && "" !== e.next_reward_date ? (0, l.default)(new Date(e.next_reward_date), new Date) : null,
             i = e?.total_rewarded_from_program;
@@ -61,7 +61,7 @@ let O = e => {
                         text: y.intl.string(N.default.BxjHiu),
                         variant: t ? "overlay-primary" : "secondary",
                         onClick: () => {
-                            (0, A.WD)(r), (0, h.pX)(j.BV.COLLECTIBLES_SHOP_WITH_TAB(E.G2.ORBS))
+                            (0, A.WD)(r), (0, b.pX)(j.BV.COLLECTIBLES_SHOP_WITH_TAB(E.G2.ORBS))
                         }
                     }), headerText: y.intl.format(N.default.BxLJQL, {
                         days: Math.max(1, a),
@@ -76,7 +76,7 @@ let O = e => {
                         text: y.intl.string(N.default.KVCfnE),
                         variant: t ? "overlay-primary" : "secondary",
                         onClick: () => {
-                            (0, A.CC)(r), (0, g.openUserSettings)(b.X.BILLING_PANEL)
+                            (0, A.CC)(r), (0, g.openUserSettings)(h.X.BILLING_PANEL)
                         }
                     }), headerText: y.intl.string(N.default.uuZJXR), subheaderText: y.intl.format(N.default.dkeEV7, {
                         helpdeskArticle: () => w(r)
@@ -92,7 +92,7 @@ let O = e => {
                                 text: y.intl.string(N.default.KVCfnE),
                                 variant: "critical-secondary",
                                 onClick: () => {
-                                    (0, A.ue)(r), (0, g.openUserSettings)(b.X.BILLING_PANEL)
+                                    (0, A.ue)(r), (0, g.openUserSettings)(h.X.BILLING_PANEL)
                                 }
                             })
                         })
@@ -106,7 +106,7 @@ let O = e => {
                         text: y.intl.string(N.default["wLAd/+"]),
                         variant: t ? "overlay-primary" : "secondary",
                         onClick: () => {
-                            (0, A.WD)(r), (0, h.pX)(j.BV.COLLECTIBLES_SHOP_WITH_TAB(E.G2.ORBS))
+                            (0, A.WD)(r), (0, b.pX)(j.BV.COLLECTIBLES_SHOP_WITH_TAB(E.G2.ORBS))
                         }
                     }), headerText: y.intl.string(N.default.zF0HnJ), subheaderText: y.intl.format(N.default["5tzNTa"], {
                         helpdeskArticle: () => w(r)
@@ -119,7 +119,7 @@ let O = e => {
                         variant: t ? "overlay-primary" : "secondary",
                         icon: d.tvc,
                         onClick: () => {
-                            (0, A.Jv)(r), (0, g.openUserSettings)(b.X.SUBSCRIPTIONS_PANEL)
+                            (0, A.Jv)(r), (0, g.openUserSettings)(h.X.SUBSCRIPTIONS_PANEL)
                         }
                     }), headerText: y.intl.string(N.default.ISnOet), subheaderText: y.intl.format(N.default["vjaRZ/"], {
                         helpdeskArticle: () => w(r)
@@ -129,14 +129,14 @@ let O = e => {
                 return null
         }
     }(i, x);
-    if (null == D) return null;
+    if (null == M) return null;
     let {
-        displayTotalLifetimeRewards: M,
+        displayTotalLifetimeRewards: D,
         displayProgressBar: U,
         actionButton: L,
         headerText: B,
         subheaderText: k
-    } = D;
+    } = M;
     return (0, n.jsx)("div", {
         className: s()(I.Hc, t),
         children: (0, n.jsxs)(C.A, {
@@ -178,7 +178,7 @@ let O = e => {
                     children: k
                 }), U && (0, n.jsx)(R.A, {
                     className: I.L$
-                }), M && i.total_rewarded_from_program > 0 && (0, n.jsxs)("div", {
+                }), D && i.total_rewarded_from_program > 0 && (0, n.jsxs)("div", {
                     className: I.fB,
                     children: [(0, n.jsx)(d.EYj, {
                         variant: "text-md/medium",

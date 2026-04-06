@@ -17,11 +17,11 @@ var n = r(627968),
     f = r(561769),
     x = r(846957),
     g = r(929283),
-    v = r(245068),
-    C = r(761365),
+    C = r(245068),
+    v = r(761365),
     A = r(550674),
-    I = r(797877);
-let k = e => {
+    k = r(797877);
+let I = e => {
         let {
             product: t,
             isCardHovered: r
@@ -31,9 +31,9 @@ let k = e => {
         } = (0, m.h)(t), o = l === s.R.PROFILE_EFFECT;
         return (0, n.jsxs)(n.Fragment, {
             children: [(0, n.jsx)("div", {
-                className: i()(I.mA, {
-                    [I.zj]: (a || u) && !r,
-                    [I.Ge]: o
+                className: i()(k.mA, {
+                    [k.zj]: (a || u) && !r,
+                    [k.Ge]: o
                 }),
                 children: (0, n.jsx)(b, {
                     product: t,
@@ -65,13 +65,13 @@ let k = e => {
                     avatarSize: o._3J.SIZE_120
                 });
             case s.R.NAMEPLATE:
-                return (0, n.jsx)(C.A, {
+                return (0, n.jsx)(v.A, {
                     nameplate: a,
                     user: l,
                     isHighlighted: r
                 });
             case s.R.BUNDLE:
-                return (0, n.jsx)(v.X, {
+                return (0, n.jsx)(C.X, {
                     product: t,
                     user: l,
                     isHighlighted: r
@@ -94,8 +94,8 @@ let k = e => {
             color: o.LU0.colors.INTERACTIVE_TEXT_ACTIVE,
             width: 40,
             height: 40,
-            className: i()(I.zo, {
-                [I.R]: t
+            className: i()(k.zo, {
+                [k.R]: t
             })
         })
     },
@@ -107,7 +107,7 @@ let k = e => {
         } = e, i = (0, f.Vm)(t), s = (0, d.Q)(i);
         if (null == i) return null;
         let a = (0, p.rb)(i, l ?? s);
-        return (0, n.jsx)(k, {
+        return (0, n.jsx)(I, {
             product: a,
             isCardHovered: r
         })

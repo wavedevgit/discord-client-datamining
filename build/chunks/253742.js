@@ -3,9 +3,9 @@ n.d(t, {
     A: () => R
 }), n(321073);
 var i = n(627968),
-    a = n(64700),
-    r = n(503698),
-    l = n.n(r),
+    r = n(64700),
+    a = n(503698),
+    l = n.n(a),
     s = n(311907),
     o = n(990078),
     d = n(397927),
@@ -59,9 +59,9 @@ let y = {
     };
 
 function L(e) {
-    let t = a.useRef(null),
+    let t = r.useRef(null),
         {
-            parentAnalyticsLocation: r
+            parentAnalyticsLocation: a
         } = (0, m.Ay)(),
         {
             channel: A,
@@ -89,14 +89,14 @@ function L(e) {
                 serverDeaf: t,
                 deaf: n,
                 serverMute: i,
-                mute: a,
-                localMute: r
+                mute: r,
+                localMute: a
             } = e;
             if (t) return O.serverDeaf;
             if (n) return O.deaf;
             if (i) return O.serverMute;
-            if (r) return O.localMute;
-            if (a) return O.mute
+            if (a) return O.localMute;
+            if (r) return O.mute
         }({
             serverDeaf: D,
             deaf: R,
@@ -157,7 +157,7 @@ function L(e) {
             children: (0, i.jsx)(d.DUT, {
                 innerRef: t,
                 onClick: t => {
-                    e.onClick(t), (0, p.X)(r, p.O.VOICE_USER)
+                    e.onClick(t), (0, p.X)(a, p.O.VOICE_USER)
                 },
                 className: b.H,
                 onContextMenu: F,
@@ -189,30 +189,30 @@ function R(e) {
     let {
         voiceStates: t,
         channel: n,
-        className: r
-    } = e, [c, u] = a.useState(!1), _ = (0, s.bG)([C.default], () => C.default.getId()), {
+        className: a
+    } = e, [c, u] = r.useState(!1), _ = (0, s.bG)([C.default], () => C.default.getId()), {
         containerRef: m,
         maxVisibleAvatars: p
     } = function(e) {
-        let [t, n] = a.useState(7), i = (0, h.A)(() => {
-            let t = r?.current;
+        let [t, n] = r.useState(7), i = (0, h.A)(() => {
+            let t = a?.current;
             if (null == t) return;
             let i = Math.floor((t.offsetWidth + 4) / 28);
             n(Math.max(1, e > i ? i - 1 : i))
-        }), r = (0, A.w)(i, [e], {
+        }), a = (0, A.w)(i, [e], {
             fireOnMount: !0,
             fireOnDepsChange: !0
         });
         return {
-            containerRef: r,
+            containerRef: a,
             maxVisibleAvatars: t
         }
     }(t.length - 1), [g, E] = function(e, t, n) {
         let i = [];
-        for (let a of e)
-            if (a.user.id !== t && !i.some(e => e.user.id === a.user.id)) {
+        for (let r of e)
+            if (r.user.id !== t && !i.some(e => e.user.id === r.user.id)) {
                 if (i.length >= n) return [i, !0];
-                i.push(a)
+                i.push(r)
             } return [i, !1]
     }(t, _, p), I = c ? d.QGg : d.j96, f = c ? v.intl.string(v.t["Z/Tya5"]) : v.intl.string(v.t.XR5BAc), T = (0, i.jsx)(o.m, {
         text: f,
@@ -228,7 +228,7 @@ function R(e) {
         })
     }), N = E && c ? t : g;
     return N.length <= 0 ? null : (0, i.jsx)(d.IpV, {
-        className: l()(b.XG, r),
+        className: l()(b.XG, a),
         fade: !0,
         children: (0, i.jsxs)("div", {
             ref: m,
@@ -238,18 +238,18 @@ function R(e) {
             children: [N.map(e => {
                 let {
                     user: t,
-                    nick: a,
-                    voiceState: r
+                    nick: r,
+                    voiceState: a
                 } = e;
                 return t.id !== _ ? (0, i.jsx)(L, {
                     channel: n,
                     user: t,
-                    nick: a,
-                    mute: r.isVoiceMuted(),
-                    deaf: r.isVoiceDeafened(),
-                    video: r.selfVideo,
-                    serverMute: r.mute,
-                    serverDeaf: r.deaf
+                    nick: r,
+                    mute: a.isVoiceMuted(),
+                    deaf: a.isVoiceDeafened(),
+                    video: a.selfVideo,
+                    serverMute: a.mute,
+                    serverDeaf: a.deaf
                 }, t.id) : null
             }), E ? T : null]
         })

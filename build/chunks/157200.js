@@ -24,17 +24,17 @@ let f = e => {
             icon: f,
             prioritizedCurrency: x,
             onClickAnalytics: g
-        } = e, v = (0, a.Mk)(), C = v?.tab, A = (0, s.uM)(), I = (0, m.X)(t, x), k = (0, d.ql)(t, i.A.COLLECTIBLES_SHOP_CARD_PREVIEW_BUTTON, g);
+        } = e, C = (0, a.Mk)(), v = C?.tab, A = (0, s.uM)(), k = (0, m.X)(t, x), I = (0, d.ql)(t, i.A.COLLECTIBLES_SHOP_CARD_PREVIEW_BUTTON, g);
         return null != o || null != f ? (0, n.jsx)(l.K0, {
             variant: "primary",
             "aria-label": p.intl.string(p.t.SKNnqq),
             icon: f ?? l.bMW,
             onClick: e => {
-                e.stopPropagation(), null != o ? o(t.skuId) : k(e)
+                e.stopPropagation(), null != o ? o(t.skuId) : I(e)
             }
-        }) : I ? (0, n.jsx)(s.R9, {
+        }) : k ? (0, n.jsx)(s.R9, {
             newValue: {
-                pageCategory: C === h.G2.HOME ? void 0 : A?.pageCategory
+                pageCategory: v === h.G2.HOME ? void 0 : A?.pageCategory
             },
             children: (0, n.jsx)(c.A, {
                 primary: !0,

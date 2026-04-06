@@ -36,8 +36,8 @@ var i = n(627968),
     D = n(927578),
     G = n(881489),
     M = n(887997),
-    k = n(177653),
-    U = n(159906),
+    U = n(177653),
+    k = n(159906),
     w = n(758400),
     V = n(790284),
     B = n(788868),
@@ -75,7 +75,7 @@ function W() {
     }, []), (0, i.jsx)(o.nVY, {
         label: z.intl.string(z.t["2GKrvn"]),
         description: z.intl.string(z.t.kNEjGm),
-        children: null != e && D.Ay.hasAccountCredit(e) ? (0, i.jsx)(k.A, {
+        children: null != e && D.Ay.hasAccountCredit(e) ? (0, i.jsx)(U.A, {
             className: Y.fX,
             entitlements: e
         }) : (0, i.jsx)(K, {})
@@ -99,10 +99,10 @@ let q = function() {
         T = (0, r.bG)([O.A], () => O.A.hasFetchedSubscriptions()),
         R = (0, r.bG)([j.A], () => j.A.isBusy),
         D = (0, h.Y)(),
-        k = V.A.useField("subsection");
+        U = V.A.useField("subsection");
     s.useEffect(() => {
-        (0, N._)(null != k ? X[k] : C.X.SUBSCRIPTIONS_PANEL)
-    }, [k]);
+        (0, N._)(null != U ? X[U] : C.X.SUBSCRIPTIONS_PANEL)
+    }, [U]);
     let K = (0, r.bG)([O.A], () => O.A.getActiveApplicationSubscriptions()?.length ?? 0),
         q = (0, r.bG)([O.A], () => Object.values(O.A.getSubscriptions() ?? {}).filter(e => e.type === F.rzx.GUILD).filter(e => e.status !== F.Dmq.ENDED).length),
         Q = (0, x.A)({
@@ -115,11 +115,11 @@ let q = function() {
         (0, g.zS)(), c.hP(), (0, u.CD)(), c.$o()
     }), function() {
         V.A.resetState()
-    }), []), v.A.enabled) ? (0, i.jsx)(_.A, {}) : T && D ? k === H.nR ? (0, i.jsx)(S.A, {
+    }), []), v.A.enabled) ? (0, i.jsx)(_.A, {}) : T && D ? U === H.nR ? (0, i.jsx)(S.A, {
         onGoBack: () => V.A.setState({
             subsection: null
         })
-    }) : k === H.PZ ? (0, i.jsx)(E.A, {
+    }) : U === H.PZ ? (0, i.jsx)(E.A, {
         onGoBack: () => V.A.setState({
             subsection: null
         })
@@ -165,7 +165,7 @@ let q = function() {
                         }), P.default.track(F.HAw.PREMIUM_APPLICATION_SUBSCRIPTION_MANAGE_CTA_CLICKED)
                     }
                 })]
-            }), (0, i.jsx)(Z, {}), null != t ? (0, i.jsx)(U.A, {
+            }), (0, i.jsx)(Z, {}), null != t ? (0, i.jsx)(k.A, {
                 subscription: t,
                 withOverheadSeparator: !1
             }) : null]

@@ -34,8 +34,8 @@ let _ = {
         if (!r || null == a || null == l) return null;
         let p = (0, s.default)(new Date(a.next_reward_date), new Date),
             f = a.program_current_state === c.L.PREMIUM_CHURNING,
-            h = f ? _.churning.start : _.active.start,
-            b = f ? _.churning.end : _.active.end;
+            b = f ? _.churning.start : _.active.start,
+            h = f ? _.churning.end : _.active.end;
         return (0, n.jsxs)("div", {
             className: i()(m.k, t),
             children: [(0, n.jsx)(o.Ay, {
@@ -44,8 +44,8 @@ let _ = {
                 maximum: l,
                 override: {
                     default: {
-                        gradientStart: h,
-                        gradientEnd: b
+                        gradientStart: b,
+                        gradientEnd: h
                     }
                 }
             }), f ? (0, n.jsx)(d.tvc, {

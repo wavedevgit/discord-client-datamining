@@ -3,8 +3,8 @@ n.d(t, {
     A: () => g
 });
 var i = n(627968),
-    a = n(64700),
-    r = n(731738),
+    r = n(64700),
+    a = n(731738),
     l = n(397927),
     s = n(831062),
     o = n(378570),
@@ -22,13 +22,13 @@ function g(e) {
         active: t,
         user: n,
         channel: g
-    } = e, E = (0, u.r)(), I = a.useCallback(() => {
+    } = e, E = (0, u.r)(), I = r.useCallback(() => {
         (0, l.showToast)((0, l.createToast)(m.intl.string(m.t.pIQ3h4), l.ToastType.FAILURE)), s.A.increment({
-            name: r.K.SPAM_MESSAGE_REQUEST_ERROR_VIEW
+            name: a.K.SPAM_MESSAGE_REQUEST_ERROR_VIEW
         })
-    }, []), f = a.useCallback(() => {
+    }, []), f = r.useCallback(() => {
         d.A.closeChannelSidebar(c.fe)
-    }, []), C = a.useCallback(() => {
+    }, []), C = r.useCallback(() => {
         d.A.closeChannelSidebar(c.fe), E && (0, o.iN)(g.id)
     }, [g.id, E]), {
         acceptMessageRequest: T,

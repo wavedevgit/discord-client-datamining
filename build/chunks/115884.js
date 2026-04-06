@@ -3,9 +3,9 @@ n.d(t, {
     A: () => x
 });
 var i = n(627968),
-    a = n(64700),
-    r = n(503698),
-    l = n.n(r),
+    r = n(64700),
+    a = n(503698),
+    l = n.n(a),
     s = n(284009),
     o = n.n(s),
     d = n(421380),
@@ -51,13 +51,13 @@ function S(e, t) {
 function x(e) {
     let {
         placeholder: t = p.intl.string(p.t["Rn/sLl"])
-    } = e, n = a.useRef(null), r = a.useRef(null), [s, A] = a.useReducer(S, f), {
+    } = e, n = r.useRef(null), a = r.useRef(null), [s, A] = r.useReducer(S, f), {
         canSend: x,
         hint: v,
         error: b,
         success: y
     } = s;
-    return a.useEffect(() => {
+    return r.useEffect(() => {
         null != y && (o()(null != n.current, "Input is submitting when not mounted"), n.current.value = "", n.current.focus())
     }, [y, n]), (0, i.jsxs)("form", {
         onSubmit: e => {
@@ -96,10 +96,10 @@ function x(e) {
             })]
         }), (0, i.jsx)(c.vN3, {
             focusTarget: n,
-            ringTarget: r,
+            ringTarget: a,
             ringClassName: g.hN,
             children: (0, i.jsxs)("div", {
-                ref: r,
+                ref: a,
                 className: l()(g.fc, {
                     [g.kX]: y,
                     [g.z3]: b
@@ -114,10 +114,10 @@ function x(e) {
                         if (e.key !== m.N$.Enter && t.includes("#")) {
                             o()(null != n.current, "Input is handling keypress when not mounted");
                             let i = t.indexOf("#"),
-                                a = n.current.selectionStart,
-                                r = e.key === m.N$.Backspace || e.key === m.N$.ArrowRight || e.key === m.N$.ArrowLeft,
+                                r = n.current.selectionStart,
+                                a = e.key === m.N$.Backspace || e.key === m.N$.ArrowRight || e.key === m.N$.ArrowLeft,
                                 l = e.which >= 48 && e.which <= 57;
-                            null != a && a > i && /^(.+?#\d{4})$/.test(t) && !r ? e.preventDefault() : null == a || !(a > i) || l || r || e.preventDefault()
+                            null != r && r > i && /^(.+?#\d{4})$/.test(t) && !a ? e.preventDefault() : null == r || !(r > i) || l || a || e.preventDefault()
                         }
                     },
                     onChange: e => {

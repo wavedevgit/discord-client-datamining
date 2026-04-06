@@ -3,11 +3,11 @@ n.d(t, {
     A: () => o
 });
 var i = n(627968),
-    a = n(64700),
-    r = n(503698),
-    l = n.n(r),
+    r = n(64700),
+    a = n(503698),
+    l = n.n(a),
     s = n(569181);
-let o = a.memo(function(e) {
+let o = r.memo(function(e) {
     let {
         className: t
     } = e;

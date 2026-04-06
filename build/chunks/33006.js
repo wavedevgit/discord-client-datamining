@@ -1,9 +1,9 @@
 /** chunk id: 33006 params = (module,exports,require) **/
-let i, a;
+let i, r;
 n.d(t, {
     A: () => R
 }), n(323874), n(14289), n(35956), n(321073);
-var r = n(143236),
+var a = n(143236),
     l = n(735438),
     s = n.n(l),
     o = n(73153),
@@ -37,35 +37,35 @@ function S(e) {
 function x() {
     let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : 0,
         t = e > 0 ? void 0 : () => {
-            if (!S(a.listening)) return;
-            let e = a.address().port;
+            if (!S(r.listening)) return;
+            let e = r.address().port;
             T.info(`Starting on ${e}`), o.h.dispatch({
                 type: "RPC_SERVER_READY",
                 port: e
             })
         };
-    a.listen(E.xEi + e % E.sJq, "127.0.0.1", t)
+    r.listen(E.xEi + e % E.sJq, "127.0.0.1", t)
 }
 
 function v(e, t, n) {
     let i = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : 200,
-        a = arguments.length > 4 && void 0 !== arguments[4] ? arguments[4] : {},
-        r = null != S(e.headers).origin ? {
+        r = arguments.length > 4 && void 0 !== arguments[4] ? arguments[4] : {},
+        a = null != S(e.headers).origin ? {
             "Access-Control-Allow-Origin": S(e.headers).origin,
             "Access-Control-Allow-Credentials": "true",
             "Access-Control-Allow-Methods": "POST, GET, PUT, PATCH, DELETE",
             "Access-Control-Allow-Headers": "Content-Type, Authorization"
         } : {};
     n = n ? JSON.stringify(n) : "", i = 200 === i && 0 === n.length ? 204 : i, t.setHeader("Content-Length", I.byteLength(n).toString()), t.setHeader("Content-Type", "application/json"), t.writeHead(i, {
-        ...a,
-        ...r
+        ...r,
+        ...a
     }), t.end(n)
 }
 
 function b(e, t, n, i) {
-    let a = arguments.length > 4 && void 0 !== arguments[4] ? arguments[4] : 0;
+    let r = arguments.length > 4 && void 0 !== arguments[4] ? arguments[4] : 0;
     v(e, t, {
-        code: a,
+        code: r,
         message: i
     }, n)
 }
@@ -105,28 +105,28 @@ class O extends m.A {
         this._closeCallback(t, e)
     }
 }
-class L extends r.EventEmitter {
+class L extends a.EventEmitter {
     constructor() {
         super();
         let e = 0;
-        (a = f.http.createServer()).on("error", t => {
+        (r = f.http.createServer()).on("error", t => {
             T.error(`Error: ${t.message}`), ("EADDRINUSE" === t.code || t.message.includes("EADDRINUSE")) && setTimeout(() => x(++e), 1e3)
-        }), a.on("request", this.handleRequest.bind(this)), x(e);
+        }), r.on("request", this.handleRequest.bind(this)), x(e);
         const t = {
-            instanceId: a.instanceId ?? 0,
-            server: a
+            instanceId: r.instanceId ?? 0,
+            server: r
         };
         new f.ws.Server(t).on("connection", e => this.handleConnection(e))
     }
     handleRequest(e, t) {
-        let [n, i] = S(e.url).split("?"), a = S(e.method);
-        if ("/rpc" === n && "OPTIONS" === a) return void v(e, t, {
+        let [n, i] = S(e.url).split("?"), r = S(e.method);
+        if ("/rpc" === n && "OPTIONS" === r) return void v(e, t, {
             body: ""
         });
-        let r = "POST" === a;
-        if ("/rpc" === n && ("GET" === a || r)) {
+        let a = "POST" === r;
+        if ("/rpc" === n && ("GET" === r || a)) {
             let n = new URLSearchParams(i),
-                a = r ? S(e.headers)["content-type"].split("/")[1] : "json",
+                r = a ? S(e.headers)["content-type"].split("/")[1] : "json",
                 l = function() {
                     let {
                         protocol: e,
@@ -134,8 +134,8 @@ class L extends r.EventEmitter {
                     } = u.A.toURLSafe(n.get("callback") ?? "") ?? {};
                     e === location.protocol && i === location.host ? t.setHeader("Location", n.get("callback")) : t.setHeader("Location", C), t.writeHead(301), t.end()
                 },
-                s = new O(!r ? l : v.bind(null, e, t), !r ? l : b.bind(null, e, t, 400), Number(n.get("v")), a);
-            r ? (0, p.j7)(s, S(e.headers).origin, n.get("client_id")).then(() => {
+                s = new O(!a ? l : v.bind(null, e, t), !a ? l : b.bind(null, e, t, 400), Number(n.get("v")), r);
+            a ? (0, p.j7)(s, S(e.headers).origin, n.get("client_id")).then(() => {
                 let n = "";
                 e.on("data", e => n += e), e.on("error", () => b(e, t, 500, "Internal Server Error")), e.on("end", () => this.handleMessage(s, n))
             }).catch(e => {

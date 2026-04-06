@@ -1,8 +1,8 @@
 /** chunk id: 944127 params = (module,exports,require) **/
 n.d(t, {
-    A: () => a
+    A: () => r
 });
 var i = n(83147);
-let a = {
+let r = {
     [n(652215).e$_.SEND_GENERIC_EVENT]: i.$
 }

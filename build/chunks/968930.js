@@ -3,8 +3,8 @@ n.d(t, {
     A: () => _
 });
 var i = n(73153),
-    a = n(272355),
-    r = n(688796),
+    r = n(272355),
+    a = n(688796),
     l = n(101058),
     s = n(207803),
     o = n(84540),
@@ -12,7 +12,7 @@ var i = n(73153),
     c = n(927578),
     u = n(919395),
     A = n(339984);
-class h extends a.A {
+class h extends r.A {
     _initialize() {
         i.h.subscribe("PROFILE_CUSTOMIZATION_OPEN_PREVIEW_MODAL", this.maybeOpenProfilePreviewModal)
     }
@@ -25,7 +25,7 @@ class h extends a.A {
                 image: t,
                 file: n,
                 guildId: i,
-                analyticsSource: a,
+                analyticsSource: r,
                 isTryItOut: h
             } = e;
             if (h) return void(0, s.e$)(t);
@@ -42,25 +42,25 @@ class h extends a.A {
                 userId: _.id,
                 image: t
             });
-            (0, r.G)({
+            (0, a.G)({
                 uploadType: A.HL.AVATAR,
                 imageSrc: m,
-                analyticsSource: a
+                analyticsSource: r
             })
         })(e) : e.uploadType === A.HL.BANNER ? (e => {
             let {
                 image: t,
                 guildId: n,
                 analyticsSource: i,
-                isTryItOut: a
+                isTryItOut: r
             } = e, l = t.imageUri;
-            if (a) return void(0, s.xe)(l);
+            if (r) return void(0, s.xe)(l);
             let u = d.default.getCurrentUser(),
                 h = c.Ay.canUsePremiumProfileCustomization(u);
             c.Ay.canUsePremiumProfileCustomization(u) ? (0, o.p)({
                 guildId: n,
                 banner: l
-            }) : null == u || h || (0, r.G)({
+            }) : null == u || h || (0, a.G)({
                 uploadType: A.HL.BANNER,
                 imageSrc: l,
                 analyticsSource: i

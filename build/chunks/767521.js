@@ -3,8 +3,8 @@ n.d(t, {
     A: () => m
 });
 var i = n(627968),
-    a = n(64700),
-    r = n(311907),
+    r = n(64700),
+    a = n(311907),
     l = n(827734),
     s = n(397927),
     o = n(817281),
@@ -17,14 +17,14 @@ var i = n(627968),
 let m = function() {
     let {
         analyticsLocations: e
-    } = (0, d.Ay)(), t = (0, r.bG)([u.A], () => u.A.theme), n = a.useRef(null);
-    a.useEffect(() => {
+    } = (0, d.Ay)(), t = (0, a.bG)([u.A], () => u.A.theme), n = r.useRef(null);
+    r.useEffect(() => {
         null == n.current && (n.current = t)
     }, [t]);
     let m = (0, s.rdh)(l.A.colors.BACKGROUND_BASE_LOW, A.NJ8.LIGHT),
         p = (0, s.rdh)(l.A.colors.BACKGROUND_BASE_LOW, A.NJ8.DARKER),
         g = (0, s.rdh)(l.A.colors.BACKGROUND_BASE_LOW, A.NJ8.MIDNIGHT),
-        E = a.useMemo(() => [{
+        E = r.useMemo(() => [{
             theme: A.NJ8.LIGHT,
             label: h.t.K2sFfo,
             color: m.hex()
@@ -37,7 +37,7 @@ let m = function() {
             label: h.t.Do4ZJx,
             color: g.hex()
         }], [m, p, g]),
-        I = a.useCallback(t => {
+        I = r.useCallback(t => {
             (0, c.X8)({
                 isPersisted: !0,
                 analyticsLocations: e,
@@ -46,7 +46,7 @@ let m = function() {
                 theme: t
             })
         }, [e]),
-        f = a.useCallback(() => {
+        f = r.useCallback(() => {
             null != n.current && I(n.current)
         }, [I]);
     return (0, i.jsx)("div", {

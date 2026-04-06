@@ -3,8 +3,8 @@ n.d(t, {
     A: () => g
 });
 var i = n(73153),
-    a = n(827343),
-    r = n(272355),
+    r = n(827343),
+    a = n(272355),
     l = n(15285),
     s = n(869146),
     o = n(430452),
@@ -16,10 +16,10 @@ let A = new Set,
     _ = null;
 
 function m() {
-    for (let e of A) a.A.setDisableLocalVideo(e, c.bb8.MANUAL_ENABLED, u.x.DEFAULT, !1);
+    for (let e of A) r.A.setDisableLocalVideo(e, c.bb8.MANUAL_ENABLED, u.x.DEFAULT, !1);
     h.clear(), A.clear()
 }
-class p extends r.A {
+class p extends a.A {
     _initialize() {
         i.h.subscribe("RTC_CONNECTION_VIDEO", this.handleIncomingVideo), i.h.subscribe("AUDIO_SET_LOCAL_VIDEO_DISABLED", this.handleManualLocalVideoToggle), i.h.subscribe("WINDOW_VISIBILITY_CHANGE", this.handleWindowVisibilityChange), i.h.subscribe("VOICE_CHANNEL_SELECT", this.handleVoiceChannelSelect), s.A.addChangeListener(this.handlePopoutChange)
     }
@@ -33,12 +33,12 @@ class p extends r.A {
             streamId: i
         } = e;
         if (n !== u.x.DEFAULT || null == i) return;
-        let r = null != l.Ay.getVisibleGame(),
+        let a = null != l.Ay.getVisibleGame(),
             _ = d.A.isVisible(),
             m = s.A.getWindowVisible(c.MLl.CHANNEL_CALL_POPOUT),
             p = o.Ay.isLocalVideoDisabled(t, n),
             g = h.has(t);
-        !r || _ || m || p || g || (A.add(t), a.A.setDisableLocalVideo(t, c.bb8.DISABLED, n, !1))
+        !a || _ || m || p || g || (A.add(t), r.A.setDisableLocalVideo(t, c.bb8.DISABLED, n, !1))
     }
     handleManualLocalVideoToggle(e) {
         let {

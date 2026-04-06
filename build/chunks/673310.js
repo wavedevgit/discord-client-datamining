@@ -3,8 +3,8 @@ n.d(t, {
     A: () => _
 });
 var i = n(627968),
-    a = n(64700),
-    r = n(397927),
+    r = n(64700),
+    a = n(397927),
     l = n(698441),
     s = n(976860),
     o = n(378570),
@@ -17,7 +17,7 @@ var i = n(627968),
 function _(e) {
     let {
         item: t
-    } = e, n = a.useCallback(e => {
+    } = e, n = r.useCallback(e => {
         if (null == e.target.closest('img, video, audio, [class*="imageWrapper"], [class*="embedWrapper"], [class*="attachment"], [class*="mediaPlayer"]')) switch (t.data.kind) {
             case "message":
                 (0, o.ci)(t.data.message.channel_id, t.data.message.id);
@@ -36,7 +36,7 @@ function _(e) {
                 })
         }
     }, [t]);
-    return (0, i.jsxs)(r.DUT, {
+    return (0, i.jsxs)(a.DUT, {
         className: h.k,
         onClick: n,
         children: [(0, i.jsx)(u.A, {

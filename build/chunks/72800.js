@@ -3,24 +3,24 @@ n.d(t, {
     A: () => _
 });
 var i = n(627968),
-    a = n(64700),
-    r = n(503698),
-    l = n.n(r),
+    r = n(64700),
+    a = n(503698),
+    l = n.n(a),
     s = n(417597),
     o = n(932001),
     d = n(967198),
     c = n(533550),
     u = n(49999),
     A = n(377299);
-let h = a.memo(function(e) {
+let h = r.memo(function(e) {
     let {
         state: t,
         markAsDismissed: n
     } = e, {
-        name: r,
+        name: a,
         guildId: s,
         boundingRect: o
-    } = t, d = a.useMemo(() => null, [r, s, n]);
+    } = t, d = r.useMemo(() => null, [a, s, n]);
     return null == d ? null : (0, i.jsx)("div", {
         className: l()(A.UX, (null == o || o.y < 0) && A.R),
         style: null == o ? {} : {
@@ -34,7 +34,7 @@ let h = a.memo(function(e) {
 function _() {
     let e = (0, s.bG)([d.A], () => d.A.getGuildId()),
         t = (0, c.RX)(e),
-        [n, a] = (0, o.kn)(Object.values(t).filter(e => {
+        [n, r] = (0, o.kn)(Object.values(t).filter(e => {
             let {
                 disabled: t
             } = e;
@@ -46,12 +46,12 @@ function _() {
             return t
         }), u.m.SIDEBAR);
     if (null == n) return null;
-    let r = t[n];
-    return null == r ? null : (0, i.jsx)("div", {
+    let a = t[n];
+    return null == a ? null : (0, i.jsx)("div", {
         className: A.kL,
         children: (0, i.jsx)(h, {
-            state: r,
-            markAsDismissed: a
+            state: a,
+            markAsDismissed: r
         })
     })
 }

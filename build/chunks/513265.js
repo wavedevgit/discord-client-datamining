@@ -1,40 +1,40 @@
 /** chunk id: 513265 params = (module,exports,require) **/
-i.d(l, {
+t.d(l, {
     A: () => h
 });
-var t = i(627968),
-    n = i(64700),
-    s = i(503698),
-    a = i.n(s),
-    r = i(687498),
-    o = i(311907),
-    d = i(397927),
-    c = i(775602),
-    u = i(606758),
-    m = i(518477),
-    x = i(985018),
-    A = i(439510),
-    p = i(886981);
+var n = t(627968),
+    i = t(64700),
+    s = t(503698),
+    a = t.n(s),
+    r = t(687498),
+    o = t(311907),
+    d = t(397927),
+    c = t(775602),
+    u = t(606758),
+    m = t(518477),
+    p = t(985018),
+    x = t(439510),
+    A = t(886981);
 let g = {
         [m.jM.WIDGET_ADDED]: {
-            message: x.intl.string(x.t.fFP1Uy),
-            icon: (0, t.jsx)(d.A9s, {
+            message: p.intl.string(p.t.fFP1Uy),
+            icon: (0, n.jsx)(d.A9s, {
                 size: "sm",
                 color: d.LU0.colors.STATUS_POSITIVE.css
             }),
             toast_id: "user_profile_widget_added"
         },
         [m.jM.WIDGET_REMOVED]: {
-            message: x.intl.string(x.t.zzsK7h),
-            icon: (0, t.jsx)(d.A9s, {
+            message: p.intl.string(p.t.zzsK7h),
+            icon: (0, n.jsx)(d.A9s, {
                 size: "sm",
                 color: d.LU0.colors.STATUS_POSITIVE.css
             }),
             toast_id: "user_profile_widget_removed"
         },
         [m.jM.WIDGET_SAVE_FAILURE]: {
-            message: x.intl.string(x.t["84MExs"]),
-            icon: (0, t.jsx)(d.d$L, {
+            message: p.intl.string(p.t["84MExs"]),
+            icon: (0, n.jsx)(d.d$L, {
                 size: "sm",
                 color: d.LU0.colors.ICON_FEEDBACK_CRITICAL
             }),
@@ -42,8 +42,8 @@ let g = {
             type: d.ToastType.FAILURE
         },
         [m.jM.SOMETHING_WENT_WRONG]: {
-            message: x.intl.string(x.t.F8FvUy),
-            icon: (0, t.jsx)(d.d$L, {
+            message: p.intl.string(p.t.F8FvUy),
+            icon: (0, n.jsx)(d.d$L, {
                 size: "sm",
                 color: d.LU0.colors.ICON_FEEDBACK_CRITICAL
             }),
@@ -54,16 +54,16 @@ let g = {
     f = e => {
         let {
             message: l,
-            icon: i,
-            type: n
+            icon: t,
+            type: i
         } = e;
-        return (0, t.jsxs)("div", {
-            className: a()(p.oR, A.oR),
-            "data-type": n,
-            children: [(0, t.jsx)("div", {
-                className: A.RC,
-                children: i
-            }), (0, t.jsx)(d.Text, {
+        return (0, n.jsxs)("div", {
+            className: a()(A.oR, x.oR),
+            "data-type": i,
+            children: [(0, n.jsx)("div", {
+                className: x.RC,
+                children: t
+            }), (0, n.jsx)(d.Text, {
                 color: "text-strong",
                 variant: "text-sm/semibold",
                 children: l
@@ -73,10 +73,10 @@ let g = {
     h = e => {
         let {
             className: l
-        } = e, i = (0, u.fu)(), s = (0, o.bG)([c.A], () => c.A.useReducedMotion), [m, x] = n.useState(!1), [p, h] = n.useState(null);
-        n.useEffect(() => {
-            null !== i ? (x(!0), h(g[i]), d.ORC.announce(g[i].message)) : x(!1)
-        }, [i]);
+        } = e, t = (0, u.fu)(), s = (0, o.bG)([c.A], () => c.A.useReducedMotion), [m, p] = i.useState(!1), [A, h] = i.useState(null);
+        i.useEffect(() => {
+            null !== t ? (p(!0), h(g[t]), d.ORC.announce(g[t].message)) : p(!1)
+        }, [t]);
         let j = (0, d.pnh)(m, {
             from: {
                 transform: s ? "translateY(0)" : "translateY(-12px)",
@@ -97,19 +97,19 @@ let g = {
                 clamp: !0
             }
         }, "animate-always");
-        return n.useEffect(() => () => (0, u.XA)(null), []), n.useEffect(() => {
+        return i.useEffect(() => () => (0, u.XA)(null), []), i.useEffect(() => {
             if (m) {
                 let e = setTimeout(() => {
                     (0, u.XA)(null)
                 }, 2e3);
                 return () => clearTimeout(e)
             }
-        }, [m]), (0, t.jsx)(t.Fragment, {
-            children: j((e, i) => i && null !== p && (0, t.jsx)(r.animated.div, {
-                className: a()(l, A.Jt),
+        }, [m]), (0, n.jsx)(n.Fragment, {
+            children: j((e, t) => t && null !== A && (0, n.jsx)(r.animated.div, {
+                className: a()(l, x.Jt),
                 style: e,
-                children: (0, t.jsx)(f, {
-                    ...p
+                children: (0, n.jsx)(f, {
+                    ...A
                 })
             }))
         })

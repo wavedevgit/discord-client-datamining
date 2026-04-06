@@ -3,11 +3,11 @@ n.d(t, {
     H: () => s
 });
 var i = n(554146),
-    a = n(932001),
-    r = n(112848),
+    r = n(932001),
+    a = n(112848),
     l = n(985018);
 let s = () => {
-    let e = (0, r.bu)(),
-        [t] = (0, a.kn)(null != e ? [i.M.WHATS_NEW_TENURE_BADGE_REWARD] : []);
+    let e = (0, a.bu)(),
+        [t] = (0, r.kn)(null != e ? [i.M.WHATS_NEW_TENURE_BADGE_REWARD] : []);
     return t === i.M.WHATS_NEW_TENURE_BADGE_REWARD ? l.intl.string(l.t["jyYgZ+"]).toLocaleUpperCase() : null
 }

@@ -33,8 +33,8 @@ let _ = {
             id: r,
             tabIndex: i,
             className: f,
-            cardClassName: h,
-            cardStyle: b = p,
+            cardClassName: b,
+            cardStyle: h = p,
             cardType: g,
             artboard: x = "BaseGlowRemapped",
             fit: C = "layout",
@@ -71,8 +71,8 @@ let _ = {
                 withReducedMotion: w ? "halt" : "play"
             }), (0, n.jsx)(u.ZpM, {
                 type: g ?? u.sl2.CUSTOM,
-                className: h,
-                style: b,
+                className: b,
+                style: h,
                 children: t
             })]
         })

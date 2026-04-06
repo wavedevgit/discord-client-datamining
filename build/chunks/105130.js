@@ -3,8 +3,8 @@ n.d(t, {
     M: () => u
 });
 var i = n(933958),
-    a = n(663278),
-    r = n(91242),
+    r = n(663278),
+    a = n(91242),
     l = n(859703),
     s = n(792620);
 n(590889);
@@ -29,14 +29,14 @@ function u(e, t, n) {
             } : null
         }
         case d.ZE4.FRAME_LAYOUT_MODE_UPDATE: {
-            let t = null != e.application?.id ? r.A.getConnectedFrame()?.layoutMode : null;
+            let t = null != e.application?.id ? a.A.getConnectedFrame()?.layoutMode : null;
             return null != t ? {
                 layout_mode: t
             } : null
         }
         case d.ZE4.THERMAL_STATE_UPDATE: {
-            let e = (0, a.zw)();
-            if (e === a.MW.UNHANDLED) return null;
+            let e = (0, r.zw)();
+            if (e === r.MW.UNHANDLED) return null;
             return {
                 thermal_state: e
             }
@@ -51,8 +51,8 @@ function u(e, t, n) {
             } = n;
             if (!t) return null;
             let i = l.A.getQuest(t),
-                a = (0, s.TP)(i);
-            if (null == i || null == a || a !== e.application?.id) return null;
+                r = (0, s.TP)(i);
+            if (null == i || null == r || r !== e.application?.id) return null;
             return {
                 quest_id: t,
                 is_enrolled: i.userStatus?.enrolledAt != null,

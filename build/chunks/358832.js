@@ -3,8 +3,8 @@ n.d(t, {
     A: () => p
 });
 var i = n(627968),
-    a = n(64700),
-    r = n(311907),
+    r = n(64700),
+    a = n(311907),
     l = n(397927),
     s = n(157559),
     o = n(229224),
@@ -14,7 +14,7 @@ var i = n(627968),
     A = n(383501),
     h = n(985018),
     _ = n(459251);
-class m extends a.PureComponent {
+class m extends r.PureComponent {
     static getDerivedStateFromProps(e, t) {
         return e.mode !== t.memoizedMode ? {
             memoizedMode: e.mode,
@@ -59,6 +59,6 @@ class m extends a.PureComponent {
         }) : null
     }
 }
-let p = r.Ay.connectStores([u.A], () => ({
+let p = a.Ay.connectStores([u.A], () => ({
     mode: u.A.getState()
 }))(m)

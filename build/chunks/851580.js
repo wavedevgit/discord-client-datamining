@@ -3,26 +3,26 @@ n.d(t, {
     v: () => A
 });
 var i = n(627968),
-    a = n(554146),
-    r = n(342494),
+    r = n(554146),
+    a = n(342494),
     l = n(932001),
     s = n(966597),
     o = n(49999),
     d = n(985018),
     c = n(936037);
-let u = a.M.FOR_LATER_POPOUT_COACHMARK;
+let u = r.M.FOR_LATER_POPOUT_COACHMARK;
 
 function A(e) {
     let {
         location: t,
         targetElementRef: n
     } = e, {
-        enabled: a,
+        enabled: r,
         inInbox: A
     } = s.A.useConfig({
         location: "ForLaterCoachmarkWeb"
-    }), [h, _] = (0, l.kn)(a && t === (A ? "inbox-button" : "bookmarks-button") ? [u] : [], void 0);
-    return h !== u ? null : (0, i.jsx)(r.AM, {
+    }), [h, _] = (0, l.kn)(r && t === (A ? "inbox-button" : "bookmarks-button") ? [u] : [], void 0);
+    return h !== u ? null : (0, i.jsx)(a.AM, {
         targetElementRef: n,
         gradientColor: "purple",
         position: "bottom",

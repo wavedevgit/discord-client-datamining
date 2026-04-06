@@ -3,8 +3,8 @@ n.d(t, {
     A: () => p
 }), n(321073);
 var i = n(339048),
-    a = n(830382),
-    r = n(800342),
+    r = n(830382),
+    a = n(800342),
     l = n(10716),
     s = n(143582),
     o = n(147964),
@@ -15,7 +15,7 @@ var i = n(339048),
 async function h(e, t) {
     let n = t.filter(e => e.type === A.Puh.SUBSCRIPTION_GROUP),
         i = await Promise.all(n.map(async t => await (0, s.vz)(e, t.id))),
-        a = [];
+        r = [];
     return i.forEach(e => {
         if (null == e) return null;
         let n = e.subscription_listings;
@@ -23,25 +23,25 @@ async function h(e, t) {
         let i = [];
         n.forEach(e => {
             e.subscription_plans.forEach(n => {
-                let a = n?.price,
-                    r = t.find(e => e.id === n.sku_id);
-                if (null == r) return;
+                let r = n?.price,
+                    a = t.find(e => e.id === n.sku_id);
+                if (null == a) return;
                 let l = {
                     id: n.sku_id,
-                    name: r.name,
-                    type: r.type,
+                    name: a.name,
+                    type: a.type,
                     price: {
-                        amount: a,
+                        amount: r,
                         currency: A.Yri.USD
                     },
                     application_id: e.application_id,
                     flags: e.sku_flags,
-                    release_date: r.release_date ?? null
+                    release_date: a.release_date ?? null
                 };
                 i.push(l)
             })
-        }), i.filter(e => e?.price != null).forEach(e => a.push(e))
-    }), a
+        }), i.filter(e => e?.price != null).forEach(e => r.push(e))
+    }), r
 }
 async function _(e) {
     let {
@@ -53,11 +53,11 @@ async function _(e) {
         errorCode: A.Lw6.INVALID_COMMAND
     }, "No application.");
     if (o.A.inTestModeForApplication(n) || l.A.inDevModeForApplication(n)) {
-        let e = await a.O1(n, !1),
+        let e = await r.O1(n, !1),
             t = await h(n, e);
         return [...e.filter(e => null != e.price), ...t]
     }
-    let i = await r.JI(n);
+    let i = await a.JI(n);
     return [...i.filter(e => e.sku.type !== A.Puh.SUBSCRIPTION_GROUP).map(e => e.sku).filter(e => null != e.price), ...await h(n, i.map(e => e.sku))]
 }
 

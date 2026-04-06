@@ -3,9 +3,9 @@ n.d(t, {
     A: () => P
 });
 var i = n(627968),
-    a = n(64700),
-    r = n(735438),
-    l = n.n(r),
+    r = n(64700),
+    a = n(735438),
+    l = n.n(a),
     s = n(311907),
     o = n(397927),
     d = n(157559),
@@ -34,27 +34,27 @@ function L(e) {
     let {
         user: t,
         applicationId: n,
-        isGameRelationship: r,
+        isGameRelationship: a,
         onSelect: l
-    } = e, A = a.useCallback(() => {
+    } = e, A = r.useCallback(() => {
         c.A.openPrivateChannel({
             recipientIds: t.id,
             joinCall: !0
         })
-    }, [t.id]), h = a.useCallback(() => {
+    }, [t.id]), h = r.useCallback(() => {
         c.A.openPrivateChannel({
             recipientIds: t.id,
             joinCall: !0,
             joinCallVideo: !0
         })
-    }, [t.id]), _ = a.useCallback(() => {
+    }, [t.id]), _ = r.useCallback(() => {
         f.A.removeFriend({
             userId: t.id,
-            applicationId: r ? n : null,
+            applicationId: a ? n : null,
             location: "Friends"
         })
-    }, [n, r, t.id]), m = a.useCallback(() => {
-        let e = r ? y.intl.string(y.t.RLcE6x) : y.intl.string(y.t.cvSt1J);
+    }, [n, a, t.id]), m = r.useCallback(() => {
+        let e = a ? y.intl.string(y.t.RLcE6x) : y.intl.string(y.t.cvSt1J);
         d.A.show({
             title: y.intl.formatToPlainString(y.t.fPLvZd, {
                 name: I.Ay.getName(t)
@@ -67,7 +67,7 @@ function L(e) {
             cancelText: y.intl.string(y.t["ETE/oC"]),
             onConfirm: _
         })
-    }, [_, r, t]), p = (0, s.bG)([g.Ay], () => g.Ay.supports(b.O5.VIDEO)), E = t.isProvisional, C = r ? y.intl.string(y.t.RLcE6x) : y.intl.string(y.t.cvSt1J);
+    }, [_, a, t]), p = (0, s.bG)([g.Ay], () => g.Ay.supports(b.O5.VIDEO)), E = t.isProvisional, C = a ? y.intl.string(y.t.RLcE6x) : y.intl.string(y.t.cvSt1J);
     return (0, i.jsxs)(o.W1t, {
         "data-menu-migrated-auto": !0,
         navId: "friend-row",
@@ -90,8 +90,8 @@ function L(e) {
         })]
     })
 }
-class R extends a.PureComponent {
-    peopleListItemRef = a.createRef();
+class R extends r.PureComponent {
+    peopleListItemRef = r.createRef();
     state = {
         isActiveRow: !1
     };
@@ -115,12 +115,12 @@ class R extends a.PureComponent {
         let {
             user: t,
             isGameRelationship: n,
-            applicationId: a
+            applicationId: r
         } = this.props;
         (0, u.jA)(e, e => (0, i.jsx)(L, {
             ...e,
             user: t,
-            applicationId: a,
+            applicationId: r,
             isGameRelationship: n
         }), {
             onClose: () => {
@@ -137,8 +137,8 @@ class R extends a.PureComponent {
             user: e,
             isFocused: t,
             activities: n,
-            applicationStream: a,
-            status: r,
+            applicationStream: r,
+            status: a,
             isMobile: l,
             isVR: s,
             isGameRelationship: d,
@@ -156,9 +156,9 @@ class R extends a.PureComponent {
             onOtherHover: () => g ? null : (0, u.Z_)(),
             onClick: this.handleOpenPrivateChannel,
             giftIntentType: c,
-            status: r,
+            status: a,
             activities: n,
-            applicationStream: a,
+            applicationStream: r,
             isMobile: l,
             isVR: s,
             isGameRelationship: d
@@ -173,14 +173,14 @@ class R extends a.PureComponent {
                 className: O.a4,
                 children: [(0, i.jsx)(S.A, {
                     user: e,
-                    status: r,
+                    status: a,
                     isMobile: l,
                     isVR: s,
                     subText: (0, i.jsx)(N.A, {
                         hovered: t,
                         activities: n,
-                        applicationStream: a,
-                        status: r,
+                        applicationStream: r,
+                        status: a,
                         user: e,
                         userIgnored: E.A.isIgnored(e.id)
                     }),

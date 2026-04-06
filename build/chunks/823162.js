@@ -3,8 +3,8 @@ n.d(t, {
     A: () => K
 }), n(667532);
 var i = n(989349),
-    a = n.n(i),
-    r = n(73153),
+    r = n.n(i),
+    a = n(73153),
     l = n(11057),
     s = n(100767),
     o = n(47167),
@@ -37,20 +37,20 @@ let L = [],
     M = /\|\|([\s\S]+?)\|\|/g;
 
 function j(e, t, n, i) {
-    let r = E.A.getGuild(n),
+    let a = E.A.getGuild(n),
         l = e.replace(M, O.intl.string(O.t["F+x38C"])).replace(/<@!?(\d+)>/g, (e, t) => {
             let i = S.default.getUser(t);
             return null == i ? O.intl.string(O.t.sKdZ6U) : p.Ay.getNick(n, i.id) ?? x.Ay.getName(i)
         }).replace(/<@&?(\d+)>/g, (e, t) => {
-            let n = null != r ? g.A.getRole(r.id, t) : null;
+            let n = null != a ? g.A.getRole(a.id, t) : null;
             return null != n && null != n.name ? n.name : O.intl.string(O.t["YV4F/n"])
         }).replace(/<#(\d+)>/g, (e, t) => {
             let n = m.A.getChannel(t);
             return null == n ? O.intl.string(O.t.J90oLW) : (0, o.m1)(n, S.default, C.A)
         }).replace(/<a?:(\w+):(\d+)>/g, (e, t) => `${O.intl.string(O.t.sMOuuS)} ${t}`).replace(/<\/([^\s]+?):(\d+)>/g, (e, t) => `/${t}`).replace(/<t:(\d+):([A-Z]|[a-z])>/g, (e, t, n) => {
             let i = d.kx[n],
-                r = 1e3 * parseInt(t, 10),
-                l = a()(r);
+                a = 1e3 * parseInt(t, 10),
+                l = r()(a);
             return null != i ? i(l) : l.format()
         });
     return null == i ? O.intl.formatToPlainString(O.t["uIj77/"], {
@@ -70,13 +70,13 @@ function w() {
     let t = D.filter(t => t.lang === e || t.lang.slice(0, e.length) === e);
     P = t.length > 0 ? t[0] : null
 }
-async function U(e, t, n, i, a) {
-    let r = s.aW(e, n);
-    null !== r && (null == P && w(), t ? await (0, v.pr)() : R?.removeEventListener("end", v.pr), r.addEventListener("end", v.pr), null != i && r.addEventListener("start", i), null != a && r.addEventListener("end", a), R = r, s.wz(r, P))
+async function U(e, t, n, i, r) {
+    let a = s.aW(e, n);
+    null !== a && (null == P && w(), t ? await (0, v.pr)() : R?.removeEventListener("end", v.pr), a.addEventListener("end", v.pr), null != i && a.addEventListener("start", i), null != r && a.addEventListener("end", r), R = a, s.wz(a, P))
 }
 
-function G(e, t, n, i, a) {
-    U(e, t, a, () => {
+function G(e, t, n, i, r) {
+    U(e, t, r, () => {
         (0, v.kC)(n, i)
     })
 }
@@ -86,10 +86,10 @@ function k(e) {
         text: t,
         interrupt: n,
         maxLength: i,
-        onStart: a,
-        onEnd: r
+        onStart: r,
+        onEnd: a
     } = e;
-    U(t, n, i, a, r)
+    U(t, n, i, r, a)
 }
 
 function V() {
@@ -100,8 +100,8 @@ function B(e) {
     let {
         message: t,
         channel: n
-    } = e, i = t.type === y.lAJ.REPLY ? c.A.getMessageByReference(t.messageReference) : null, a = i?.state === c.a.LOADED ? i?.message?.author : null, r = null != a ? p.Ay.getNick(n.guild_id, a?.id) ?? x.Ay.getName(a) : null, l = n.getGuildId(), s = p.Ay.getNick(l, t.author.id) ?? x.Ay.getName(t.author);
-    return G(j(t.content, s, l, r), !0, n.id, t.id), !0
+    } = e, i = t.type === y.lAJ.REPLY ? c.A.getMessageByReference(t.messageReference) : null, r = i?.state === c.a.LOADED ? i?.message?.author : null, a = null != r ? p.Ay.getNick(n.guild_id, r?.id) ?? x.Ay.getName(r) : null, l = n.getGuildId(), s = p.Ay.getNick(l, t.author.id) ?? x.Ay.getName(t.author);
+    return G(j(t.content, s, l, a), !0, n.id, t.id), !0
 }
 
 function H(e) {
@@ -111,23 +111,23 @@ function H(e) {
         optimistic: i
     } = e;
     if (i || I.Ay.isSelfDeaf()) return !1;
-    let a = m.A.getChannel(t);
-    if (null == a) return !1;
-    let r = T.A.getChannelId(),
-        l = _.Ay.getCurrentSidebarChannelId(r),
-        s = t === r || t === l,
+    let r = m.A.getChannel(t);
+    if (null == r) return !1;
+    let a = T.A.getChannelId(),
+        l = _.Ay.getCurrentSidebarChannelId(a),
+        s = t === a || t === l,
         o = A.on.getSetting() && n.tts && s,
         d = f.A.getTTSType(),
         c = n.author?.id !== h.default.getId() && (d === y.aVn.ALL_CHANNELS || d === y.aVn.SELECTED_CHANNEL && s);
     if ((o || c) && !C.A.isBlockedOrIgnoredForMessage(n)) {
         if (L.indexOf(n.id) >= 0) return !1;
         L.unshift(n.id) > 10 && L.pop();
-        let e = a.getGuildId();
+        let e = r.getGuildId();
         if (null != e && N.Ay.getMutedChannels(e).has(t)) return !1;
         let i = p.Ay.getNick(e, n.author?.id) ?? x.Ay.getName(n.author) ?? "",
-            r = n.type === y.lAJ.REPLY ? n.referenced_message?.author : null,
-            l = null != r ? p.Ay.getNick(e, r?.id) ?? x.Ay.getName(r) : null;
-        G(j(n.content, i, e, l), !1, a.id, n.id, 200)
+            a = n.type === y.lAJ.REPLY ? n.referenced_message?.author : null,
+            l = null != a ? p.Ay.getNick(e, a?.id) ?? x.Ay.getName(a) : null;
+        G(j(n.content, i, e, l), !1, r.id, n.id, 200)
     }
     return !1
 }
@@ -152,6 +152,6 @@ function W(e) {
 }
 let K = {
     init() {
-        r.h.subscribe("SPEAK_TEXT", k), r.h.subscribe("SPEAK_MESSAGE", B), r.h.subscribe("STOP_SPEAKING", V), r.h.subscribe("MESSAGE_CREATE", H), r.h.subscribe("MESSAGE_DELETE", F), r.h.subscribe("AUDIO_TOGGLE_SELF_DEAF", Y), r.h.subscribe("CHANNEL_SELECT", W), r.h.subscribe("USER_SETTINGS_PROTO_UPDATE", w), (0, l.I)(w)
+        a.h.subscribe("SPEAK_TEXT", k), a.h.subscribe("SPEAK_MESSAGE", B), a.h.subscribe("STOP_SPEAKING", V), a.h.subscribe("MESSAGE_CREATE", H), a.h.subscribe("MESSAGE_DELETE", F), a.h.subscribe("AUDIO_TOGGLE_SELF_DEAF", Y), a.h.subscribe("CHANNEL_SELECT", W), a.h.subscribe("USER_SETTINGS_PROTO_UPDATE", w), (0, l.I)(w)
     }
 }

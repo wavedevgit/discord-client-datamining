@@ -1,35 +1,35 @@
 /** chunk id: 347805 params = (module,exports,require) **/
-i.d(l, {
-    A: () => x
+t.d(l, {
+    A: () => p
 });
-var t = i(627968),
-    n = i(64700),
-    s = i(311907),
-    a = i(397927),
-    r = i(629403),
-    o = i(612630),
-    d = i(351906),
-    c = i(652215),
-    u = i(985018),
-    m = i(828950);
+var n = t(627968),
+    i = t(64700),
+    s = t(311907),
+    a = t(397927),
+    r = t(629403),
+    o = t(612630),
+    d = t(351906),
+    c = t(652215),
+    u = t(985018),
+    m = t(828950);
 
-function x(e) {
+function p(e) {
     let {
         autoFocus: l = !1,
-        className: i,
-        userId: x,
-        onUpdate: A
-    } = e, p = (0, s.bG)([d.A], () => d.A.hidePersonalInformation), {
+        className: t,
+        userId: p,
+        onUpdate: x
+    } = e, A = (0, s.bG)([d.A], () => d.A.hidePersonalInformation), {
         loading: g,
         note: f
-    } = (0, o.A)(x), h = n.useRef(null);
-    return (n.useEffect(() => {
-        if (!l || p) return;
+    } = (0, o.A)(p), h = i.useRef(null);
+    return (i.useEffect(() => {
+        if (!l || A) return;
         let e = h.current;
         e?.selectionStart != null && (e.focus(), e.setSelection(e.value.length, e.value.length))
-    }, [l, p]), p) ? null : (0, t.jsx)("div", {
-        className: i,
-        children: (0, t.jsx)(a.d4u, {
+    }, [l, A]), A) ? null : (0, n.jsx)("div", {
+        className: t,
+        children: (0, n.jsx)(a.d4u, {
             ref: h,
             className: m.P,
             disabled: g,
@@ -37,7 +37,7 @@ function x(e) {
             "aria-label": u.intl.string(u.t.PbMNh2),
             onBlur: e => {
                 let l = e.currentTarget.value;
-                (f ?? "") !== l && (A?.(), r.A.updateNote(x, l))
+                (f ?? "") !== l && (x?.(), r.A.updateNote(p, l))
             },
             onKeyPress: e => {
                 13 === e.which ? e.shiftKey ? (e.currentTarget.value.match(/\n/g) ?? []).length >= 5 && e.preventDefault() : (e.preventDefault(), e.currentTarget.blur()) : e.which === c.Ks6.SPACE && e.stopPropagation()

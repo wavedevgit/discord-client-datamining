@@ -4,8 +4,8 @@ n.r(t), n.d(t, {
     useAppSidebarState: () => k
 });
 var i = n(627968),
-    a = n(64700),
-    r = n(353640),
+    r = n(64700),
+    a = n(353640),
     l = n(574381),
     s = n(311907),
     o = n(397927),
@@ -40,11 +40,11 @@ var i = n(627968),
     U = n(475815),
     G = n(71855);
 n(801416);
-let k = (0, r.v)(() => ({
+let k = (0, a.v)(() => ({
         isOpen: !0
     })),
-    V = a.memo(function() {
-        a.useLayoutEffect(() => {
+    V = r.memo(function() {
+        r.useLayoutEffect(() => {
             w.Ay.setMinimumSize(800, 500)
         }, []);
         let {
@@ -56,7 +56,7 @@ let k = (0, r.v)(() => ({
             hasBugReporterAccess: n
         } = A.A.useConfig({
             location: "HeaderBar"
-        }), r = (0, s.bG)([D.A], () => D.A.isDeveloper), k = (0, R.Uk)("VoiceDareTitleBarButton"), V = (0, s.bG)([M.A, c.A], () => L.Q_.getSetting() && null != M.A.testModeApplicationId && null != c.A.getApplication(M.A.testModeApplicationId) && (0, u.A)(c.A.getApplication(M.A.testModeApplicationId))), B = null !== e && t === N.RK.TITLE_BAR_LEFT, H = null === e, {
+        }), a = (0, s.bG)([D.A], () => D.A.isDeveloper), k = (0, R.Uk)("VoiceDareTitleBarButton"), V = (0, s.bG)([M.A, c.A], () => L.Q_.getSetting() && null != M.A.testModeApplicationId && null != c.A.getApplication(M.A.testModeApplicationId) && (0, u.A)(c.A.getApplication(M.A.testModeApplicationId))), B = null !== e && t === N.RK.TITLE_BAR_LEFT, H = null === e, {
             enabled: F
         } = p.s.useConfig({
             location: "AppTitleBar"
@@ -66,7 +66,7 @@ let k = (0, r.v)(() => ({
         } = b.A.useConfig({
             location: "AppTitleBar"
         });
-        a.useLayoutEffect(() => {
+        r.useLayoutEffect(() => {
             w.Ay.setMinimumSize(800, 500)
         }, []);
         let K = (0, O.NC)(),
@@ -78,7 +78,7 @@ let k = (0, r.v)(() => ({
                     showNotificationsInbox: n,
                     showRecentsButton: i
                 } = e;
-                return a.useMemo(() => t ? "BACK_FORWARD_NAVIGATION" : n ? "NOTIFICATIONS_INBOX" : i ? "RECENTS" : "HELP", [t, n, i])
+                return r.useMemo(() => t ? "BACK_FORWARD_NAVIGATION" : n ? "NOTIFICATIONS_INBOX" : i ? "RECENTS" : "HELP", [t, n, i])
             }({
                 showBackForwardButtons: z,
                 showNotificationsInbox: B,
@@ -106,7 +106,7 @@ let k = (0, r.v)(() => ({
                             focusSectionProps: "HELP" === $ ? e : void 0
                         }) : (0, i.jsx)(I.A, {
                             focusSectionProps: "HELP" === $ ? e : void 0
-                        }), r && (0, i.jsx)(E.R, {}), V && (0, i.jsx)(d.A, {}), (0, i.jsx)(C.A, {})]
+                        }), a && (0, i.jsx)(E.R, {}), V && (0, i.jsx)(d.A, {}), (0, i.jsx)(C.A, {})]
                     })
                 })
             })

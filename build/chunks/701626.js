@@ -3,16 +3,16 @@ n.d(t, {
     A: () => o
 });
 var i = n(311907),
-    a = n(73153),
-    r = n(576705),
+    r = n(73153),
+    a = n(576705),
     l = n(652215);
 class s extends i.Ay.Store {
     static displayName = "GuildBoostingNoticeStore";
     initialize() {
-        this.waitFor(r.A), this.syncWith([r.A], l.tEg)
+        this.waitFor(a.A), this.syncWith([a.A], l.tEg)
     }
     channelNoticePredicate(e, t) {
-        return Date.now() - t >= l.D2K && r.A.can(l.xBc.MANAGE_GUILD, e)
+        return Date.now() - t >= l.D2K && a.A.can(l.xBc.MANAGE_GUILD, e)
     }
 }
-let o = new s(a.h)
+let o = new s(r.h)

@@ -15,8 +15,8 @@ var n = r(627968),
     _ = r(139286),
     p = r(531260),
     f = r(914410),
-    h = r(954571),
-    b = r(872725),
+    b = r(954571),
+    h = r(872725),
     g = r(465794),
     x = r(788868),
     C = r(652215),
@@ -37,8 +37,8 @@ let v = e => {
         ctaIconPosition: T,
         ctaText: w,
         onCtaClick: O,
-        subscriptionRequired: D,
-        glowing: M = !1,
+        subscriptionRequired: M,
+        glowing: D = !1,
         progressGlowing: U = !1,
         featured: L,
         className: B,
@@ -56,29 +56,29 @@ let v = e => {
         }
     });
     let Y = a.useMemo(() => (0, l.debounce)(() => {
-            h.default.track(C.HAw.PREMIUM_MARKETING_WHAT_IS_NEW_CARD_HOVERED, {
+            b.default.track(C.HAw.PREMIUM_MARKETING_WHAT_IS_NEW_CARD_HOVERED, {
                 card_type: (0, l.snakeCase)(r)
             })
         }, 800), [r]),
         W = a.useCallback(() => {
-            null != O && (O(), h.default.track(C.HAw.PERK_DISCOVERABILITY_CARD_CTA_CLICKED, {
+            null != O && (O(), b.default.track(C.HAw.PERK_DISCOVERABILITY_CARD_CTA_CLICKED, {
                 card_type: (0, l.snakeCase)(r),
                 function_name: (0, l.snakeCase)(O.name)
             }))
         }, [O, r]),
-        K = D && H === x.xc.FP_ONLY,
+        K = M && H === x.xc.FP_ONLY,
         z = !(0, l.isEmpty)(I),
         Z = z && (0, c.q)(F),
         X = (0, u.rdh)(u.LU0.colors.BACKGROUND_BASE_LOW).hex(),
         $ = K || !(0, l.isEmpty)(w);
     return (0, n.jsx)(o.NPJ, {
         theme: Z ? C.NJ8.DARKER : void 0,
-        children: e => (0, n.jsxs)(b.A, {
+        children: e => (0, n.jsxs)(h.A, {
             id: t,
             tabIndex: G,
             onMouseEnter: Y,
             cardType: u.sl2.PRIMARY,
-            glowing: M,
+            glowing: D,
             hueRotate: 25,
             glowAmount: (0, c.M)(F) ? 2 : 8,
             blurAmount: 10,

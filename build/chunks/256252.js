@@ -7,8 +7,8 @@ n.d(t, {
 }), n(321073);
 var i = n(110259),
     a = n(562465),
-    l = n(98919),
-    r = n(544028);
+    r = n(98919),
+    l = n(544028);
 n(723702);
 var s = n(499785),
     o = n(652215),
@@ -61,7 +61,7 @@ async function h(e, t, n) {
         value: `${t.overridePlatformInformation}`
     }, {
         name: "theme",
-        value: r.A.theme
+        value: l.A.theme
     }];
     "" !== e.description && a.push({
         name: "description",
@@ -106,7 +106,7 @@ async function h(e, t, n) {
     }), a.push({
         name: "locale",
         value: t.locale
-    })), (0, l.a)(o.Umv.WEB_APP);
+    })), (0, r.a)(o.Umv.WEB_APP);
     try {
         return await s.A.post({
             url: o.Rsh.BUG_REPORTS,

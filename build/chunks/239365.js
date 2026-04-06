@@ -1,9 +1,9 @@
 /** chunk id: 239365 params = (module,exports,require) **/
 n.d(t, {
-    g: () => r
+    g: () => a
 });
 var i = n(840251),
-    a = n(688151);
-let r = new i.E([], a.$G.QUEST_HOME_OPEN, {
+    r = n(688151);
+let a = new i.E([], r.$G.QUEST_HOME_OPEN, {
     location: "open quest home"
 })

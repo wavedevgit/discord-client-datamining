@@ -1,16 +1,16 @@
 /** chunk id: 51520 params = (module,exports,require) **/
 n.d(t, {
-    j: () => r
+    j: () => a
 });
 var i = n(397927),
-    a = n(851907);
+    r = n(851907);
 
-function r(e) {
+function a(e) {
     let {
         application: t,
         channelId: n
     } = e;
-    return null != (0, a.Ay)({
+    return null != (0, r.Ay)({
         application: t,
         channelId: n
     }) ? i.KX8 : i.SYi

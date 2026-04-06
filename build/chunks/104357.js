@@ -1,6 +1,6 @@
 /** chunk id: 104357 params = (module,exports,require) **/
 n.d(t, {
-    T: () => a
+    T: () => r
 });
 let i = (0, n(945810).mj)({
     name: "2025-12-social-layer-storefront-rtc-entrypoint-user-experiment",
@@ -18,7 +18,7 @@ let i = (0, n(945810).mj)({
     }
 });
 
-function a(e) {
+function r(e) {
     let {
         location: t
     } = e;

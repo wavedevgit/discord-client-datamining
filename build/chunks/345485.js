@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var a = n(110259),
-    r = n(417597),
+var r = n(110259),
+    a = n(417597),
     l = n(342494),
     s = n(139286),
     o = n(997509),
@@ -22,14 +22,14 @@ function p(e) {
         guildId: t,
         markAsDismissed: n,
         targetElementRef: p
-    } = e, g = (0, r.bG)([c.A, u.default], () => {
+    } = e, g = (0, a.bG)([c.A, u.default], () => {
         let e = u.default.getCurrentUser(),
             n = c.A.getGuild(t);
         return null != n && (0, d.bM)(n, e)
     });
     return (0, s.A)({
-        type: a.ImpressionTypes.POPOUT,
-        name: a.ImpressionNames.ENABLE_CREATOR_MONETIZATION_GUILD_HEADER_UPSELL,
+        type: r.ImpressionTypes.POPOUT,
+        name: r.ImpressionNames.ENABLE_CREATOR_MONETIZATION_GUILD_HEADER_UPSELL,
         properties: {
             guild_id: t,
             is_owner: g

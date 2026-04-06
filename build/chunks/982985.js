@@ -1,29 +1,29 @@
 /** chunk id: 982985 params = (module,exports,require) **/
-i.d(l, {
+t.d(l, {
     e: () => u,
     l: () => m
 });
-var t = i(627968),
-    n = i(64700),
-    s = i(397927),
-    a = i(308528),
-    r = i(993401),
-    o = i(518477),
-    d = i(985018);
+var n = t(627968),
+    i = t(64700),
+    s = t(397927),
+    a = t(308528),
+    r = t(993401),
+    o = t(518477),
+    d = t(985018);
 
 function c(e) {
     let {
         userId: l,
-        onClose: i
-    } = e, t = n.useCallback(() => {
+        onClose: t
+    } = e, n = i.useCallback(() => {
         a.A.openPrivateChannel({
             recipientIds: l
-        }), i?.(), (0, s.s7G)()
-    }, [l, i]);
+        }), t?.(), (0, s.s7G)()
+    }, [l, t]);
     return {
         action: o.pt.SEND_MESSAGE,
         icon: s.oyn,
-        onClick: t,
+        onClick: n,
         text: d.intl.string(d.t.zROXEV)
     }
 }
@@ -31,15 +31,15 @@ function c(e) {
 function u(e) {
     let {
         userId: l,
-        onClose: i,
-        variant: n = "primary",
+        onClose: t,
+        variant: i = "primary",
         ...s
     } = e, a = c({
         userId: l,
-        onClose: i
+        onClose: t
     });
-    return (0, t.jsx)(r.FD, {
-        variant: n,
+    return (0, n.jsx)(r.FD, {
+        variant: i,
         ...a,
         ...s
     })
@@ -48,20 +48,20 @@ function u(e) {
 function m(e) {
     let {
         userId: l,
-        onClose: i,
-        variant: n = "primary",
+        onClose: t,
+        variant: i = "primary",
         ...s
     } = e, {
         text: a,
         ...o
     } = c({
         userId: l,
-        onClose: i
+        onClose: t
     });
-    return (0, t.jsx)(r.q3, {
+    return (0, n.jsx)(r.q3, {
         tooltipText: a,
         "aria-label": a,
-        variant: n,
+        variant: i,
         ...o,
         ...s
     })

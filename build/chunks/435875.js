@@ -3,15 +3,15 @@ n.d(t, {
     q: () => d
 });
 var i = n(73153),
-    a = n(846293),
-    r = n(970163),
+    r = n(846293),
+    a = n(970163),
     l = n(961350),
     s = n(696451),
     o = n(652215);
 async function d(e) {
     let {
         code: t
-    } = e, d = (await (0, r.A)(t)).invite;
+    } = e, d = (await (0, a.A)(t)).invite;
     if (null == d || null == d.guild) return;
     let c = d.guild.id,
         u = s.Ay.getMember(c, l.default.getId()),
@@ -31,5 +31,5 @@ async function d(e) {
     } = await Promise.resolve().then(n.bind(n, 967305));
     await h({
         guildId: c
-    }), a.Ay.transitionToInvite(d, void 0, !0)
+    }), r.Ay.transitionToInvite(d, void 0, !0)
 }

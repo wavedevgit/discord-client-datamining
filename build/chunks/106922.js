@@ -37,8 +37,8 @@ var i = n(627968),
     D = n(224016),
     G = n(954571),
     M = n(975571),
-    k = n(927578),
-    U = n(526292),
+    U = n(927578),
+    k = n(526292),
     w = n(881489),
     V = n(810498),
     B = n(807098),
@@ -71,7 +71,7 @@ function ec(e) {
         isDiscountApplied: n,
         activeDiscountInfo: s,
         theme: l
-    } = e, a = t.hasActiveTrial, r = t.planIdFromItems === $.gD.PREMIUM_YEAR_TIER_2, d = n || a, c = null != t.trialEndsAt ? o()(t.trialEndsAt).diff(o()(), "d") : 0, u = $.hd[t.planIdFromItems], m = k.Ay.formatPriceString(k.Ay.getDefaultPrice(u.id), u.interval);
+    } = e, a = t.hasActiveTrial, r = t.planIdFromItems === $.gD.PREMIUM_YEAR_TIER_2, d = n || a, c = null != t.trialEndsAt ? o()(t.trialEndsAt).diff(o()(), "d") : 0, u = $.hd[t.planIdFromItems], m = U.Ay.formatPriceString(U.Ay.getDefaultPrice(u.id), u.interval);
     return d ? (0, i.jsxs)(i.Fragment, {
         children: [(a || !r) && (0, i.jsx)(Z.HU, {
             text: a ? en.intl.string(en.t.qYKftX) : en.intl.string(en.t.EyjDRE),
@@ -103,8 +103,8 @@ function ec(e) {
 }
 
 function eu() {
-    let e = (0, U.k5)(),
-        t = (0, U.nf)(),
+    let e = (0, k.k5)(),
+        t = (0, k.nf)(),
         n = (0, f.Ay)(),
         s = (0, u.bG)([L.A], () => L.A.getPremiumTypeSubscription()),
         l = (0, u.bG)([P.default], () => P.default.getCurrentUser()),
@@ -338,13 +338,13 @@ let e_ = function() {
     if (e) return (0, i.jsx)(v.uK, {});
     let D = a && null !== l && r,
         M = _.fetched && _.isFractionalPremiumActive,
-        k = n?.isPremiumWithPremiumGroup();
-    if (!D && !M && !o && !k) return (0, i.jsx)(I.A, {
+        U = n?.isPremiumWithPremiumGroup();
+    if (!D && !M && !o && !U) return (0, i.jsx)(I.A, {
         title: en.intl.string(en.t.dyq9TR),
         note: null
     });
-    if (!D && !M && !k || o) return (0, i.jsx)(A.y$y, {});
-    let U = !!l?.hasActiveTrial;
+    if (!D && !M && !U || o) return (0, i.jsx)(A.y$y, {});
+    let k = !!l?.hasActiveTrial;
     return (0, i.jsx)(b.f5, {
         value: t,
         children: (0, i.jsxs)(i.Fragment, {
@@ -356,7 +356,7 @@ let e_ = function() {
                 }), !f && (0, i.jsx)(eg, {}), (0, i.jsx)(J.A, {
                     hideCTAs: !0,
                     headingOverride: en.intl.string(en.t.dnVvQS),
-                    hidePill: !U,
+                    hidePill: !k,
                     selectedPlanColumnClassName: ei.JG,
                     selectedPlanTier: $.PremiumTypes.TIER_2
                 })]

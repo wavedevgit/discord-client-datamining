@@ -3,9 +3,9 @@ n.d(t, {
     A: () => b
 });
 var i = n(627968),
-    a = n(64700),
-    r = n(503698),
-    l = n.n(r),
+    r = n(64700),
+    a = n(503698),
+    l = n.n(a),
     s = n(877227),
     o = n(311907),
     d = n(319354),
@@ -42,10 +42,10 @@ function v(e) {
     let {
         onClick: t,
         selectedOverride: n = !1,
-        popoutProps: r,
+        popoutProps: a,
         ref: s,
         focusSectionProps: o
-    } = e, [_, p] = a.useState(!1), I = (0, g.lI)(), f = n || I, v = n || f, b = (0, i.jsx)(u.XFE, {
+    } = e, [_, p] = r.useState(!1), I = (0, g.lI)(), f = n || I, v = n || f, b = (0, i.jsx)(u.XFE, {
         className: T.Kk,
         color: _ || v ? u.LU0.colors.ICON_STRONG : u.LU0.colors.ICON_MUTED,
         size: "sm"
@@ -69,7 +69,7 @@ function v(e) {
                 innerRef: s,
                 className: T.OV,
                 ...o,
-                ...r,
+                ...a,
                 onMouseEnter: () => {
                     p(!0)
                 },
@@ -77,7 +77,7 @@ function v(e) {
                     p(!1)
                 },
                 onClick: () => {
-                    t?.(), r?.onClick?.()
+                    t?.(), a?.onClick?.()
                 },
                 children: [(0, i.jsx)("div", {
                     className: l()(T.P0, null),
@@ -100,11 +100,11 @@ function v(e) {
 function b() {
     let {
         focusSectionProps: e
-    } = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}, t = a.useRef(null), {
+    } = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}, t = r.useRef(null), {
         notificationCenterVariant: n
     } = (0, p.X8)({
         location: "NotificationsInboxButton"
-    }), r = (0, o.bG)([_.A], () => _.A.getChannelId()), l = a.useMemo(() => f.BVt.CHANNEL(f.gNP, r ?? void 0), [r]), d = (0, E.HN)();
+    }), a = (0, o.bG)([_.A], () => _.A.getChannelId()), l = r.useMemo(() => f.BVt.CHANNEL(f.gNP, a ?? void 0), [a]), d = (0, E.HN)();
     return n === p.U5.SIDEBAR ? (0, i.jsx)(v, {
         onClick: () => {
             d(), (0, s.pX)(l)
@@ -115,13 +115,13 @@ function b() {
         popoutPosition: "bottom",
         popoutAlign: "left",
         spacing: 2,
-        children: (n, a, r) => (0, i.jsx)(v, {
+        children: (n, r, a) => (0, i.jsx)(v, {
             ref: t,
-            selectedOverride: a,
+            selectedOverride: r,
             onClick: () => {
                 d(), n()
             },
-            popoutProps: r,
+            popoutProps: a,
             focusSectionProps: e
         })
     }) : null

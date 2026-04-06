@@ -16,8 +16,8 @@ var n = r(627968),
     _ = r(728458),
     p = r(881373),
     f = r(264779),
-    h = r(852218),
-    b = r(699443),
+    b = r(852218),
+    h = r(699443),
     g = r(652215),
     x = r(653624),
     C = r(985018),
@@ -26,7 +26,7 @@ var n = r(627968),
     v = r(208556),
     E = r(8496);
 let j = {
-        [h.XY]: {
+        [b.XY]: {
             title: x.default.LsJ9hj,
             titleParams: {
                 discountPercent: p.aW
@@ -40,25 +40,25 @@ let j = {
             },
             asset: v.A
         },
-        [h.KS]: {
+        [b.KS]: {
             title: C.t.sfGgOG,
             body: C.t.igiSKe,
             bodyWithExpiration: C.t.w8CXUl,
             redemptionURL: "https://steelseries.com/",
             logos: {
-                dark: (0, n.jsx)(b.a1, {}),
-                light: (0, n.jsx)(b.Gn, {})
+                dark: (0, n.jsx)(h.a1, {}),
+                light: (0, n.jsx)(h.Gn, {})
             },
             asset: E.A
         },
-        [h.Cs]: {
+        [b.Cs]: {
             title: C.t["9N8obd"],
             body: C.t["34g+Z3"],
             bodyWithExpiration: C.t.rqmpXc,
             redemptionURL: "https://www.kontrolfreek.com/",
             logos: {
-                dark: (0, n.jsx)(b.WF, {}),
-                light: (0, n.jsx)(b.s, {})
+                dark: (0, n.jsx)(h.WF, {}),
+                light: (0, n.jsx)(h.s, {})
             },
             asset: R.A
         }
@@ -184,7 +184,7 @@ let j = {
                 showPartnerLogo: _ = !1,
                 showPartnerImage: p = !1,
                 titleVariant: f = "primary",
-                displayCTAInDedicatedFooter: b = !1
+                displayCTAInDedicatedFooter: h = !1
             } = e,
             [x, R] = a.useState(c.code),
             [v, E] = a.useState(!1),
@@ -211,7 +211,7 @@ let j = {
                                 date: c.endDate
                             }) : c.body
                         })]
-                    }), !b && (0, n.jsx)(P, {
+                    }), !h && (0, n.jsx)(P, {
                         recurrence: c,
                         canBeClaimed: T,
                         hasClaimError: v,
@@ -223,18 +223,18 @@ let j = {
                     children: (0, n.jsx)(l._V3, {
                         src: c.asset ?? "",
                         className: A.Ys,
-                        imageClassName: c.partnerId === h.XY ? A.Cy : void 0,
+                        imageClassName: c.partnerId === b.XY ? A.Cy : void 0,
                         width: 100,
                         height: 100,
                         zoomable: !1
                     })
                 })]
-            }), b && (0, n.jsx)(N, {}), null != x && (0, n.jsx)(I, {
+            }), h && (0, n.jsx)(N, {}), null != x && (0, n.jsx)(I, {
                 recurrence: {
                     ...c,
                     code: x
                 }
-            }), b && null == x && (0, n.jsx)(y, {
+            }), h && null == x && (0, n.jsx)(y, {
                 children: (0, n.jsx)(P, {
                     recurrence: c,
                     canBeClaimed: T,

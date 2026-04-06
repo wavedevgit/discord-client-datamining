@@ -3,8 +3,8 @@ n.d(t, {
     A: () => G
 });
 var i = n(73153),
-    a = n(827343),
-    r = n(684013),
+    r = n(827343),
+    a = n(684013),
     l = n(956793),
     s = n(401843),
     o = n(55619),
@@ -36,14 +36,14 @@ let D = new Map;
 
 function M(e, t, n, i) {
     if (!S.A.isConnected()) return;
-    let a = i.context ?? P.x.DEFAULT,
-        r = D.get(a);
-    null == r && (r = {
+    let r = i.context ?? P.x.DEFAULT,
+        a = D.get(r);
+    null == a && (a = {
         held: new Set,
         priorityHeld: new Set
-    }, D.set(a, r)), n || (e ? r.held.add(i.id) : r.held.delete(i.id)), t && (e ? r.priorityHeld.add(i.id) : r.priorityHeld.delete(i.id));
-    let l = r.held.size > 0,
-        s = r.priorityHeld.size > 0;
+    }, D.set(r, a)), n || (e ? a.held.add(i.id) : a.held.delete(i.id)), t && (e ? a.priorityHeld.add(i.id) : a.priorityHeld.delete(i.id));
+    let l = a.held.size > 0,
+        s = a.priorityHeld.size > 0;
     (0, E.N)(l, s)
 }
 let j = {
@@ -87,7 +87,7 @@ let j = {
     },
     [R.hCu.PUSH_TO_MUTE]: {
         onTrigger(e) {
-            N.Ay.getMode() === R.TBI.VOICE_ACTIVITY && (j[R.hCu.PUSH_TO_MUTE].isPressed = e, a.A.setTemporarySelfMute(e))
+            N.Ay.getMode() === R.TBI.VOICE_ACTIVITY && (j[R.hCu.PUSH_TO_MUTE].isPressed = e, r.A.setTemporarySelfMute(e))
         },
         keyEvents: {
             keyup: !0,
@@ -96,7 +96,7 @@ let j = {
         isPressed: !1
     },
     [R.hCu.TOGGLE_MUTE]: {
-        onTrigger: () => a.A.toggleSelfMute({
+        onTrigger: () => r.A.toggleSelfMute({
             usedKeybind: !0,
             location: "Custom Keybind"
         }),
@@ -106,7 +106,7 @@ let j = {
         }
     },
     [R.hCu.TOGGLE_DEAFEN]: {
-        onTrigger: () => a.A.toggleSelfDeaf({
+        onTrigger: () => r.A.toggleSelfDeaf({
             usedKeybind: !0,
             location: "Custom Keybind"
         }),
@@ -125,7 +125,7 @@ let j = {
     [R.hCu.TOGGLE_VOICE_MODE]: {
         onTrigger() {
             let e = N.Ay.getMode() === R.TBI.PUSH_TO_TALK ? R.TBI.VOICE_ACTIVITY : R.TBI.PUSH_TO_TALK;
-            a.A.setMode(e)
+            r.A.setMode(e)
         },
         keyEvents: {
             keyup: !0,
@@ -143,7 +143,7 @@ let j = {
         onTrigger(e, t) {
             if (!(0, v.DV)(t.shortcut)) return;
             let n = (0, L.A)();
-            null != n && r.A.setInputLocked(!y.default.isLocked(n), n)
+            null != n && a.A.setInputLocked(!y.default.isLocked(n), n)
         },
         keyEvents: {
             keyup: !0,
@@ -154,7 +154,7 @@ let j = {
         onTrigger() {
             let e = b.default.getFocusedPID(),
                 t = null != e;
-            null != e && t && y.default.isPinned(R.uss.TEXT) && y.default.isLocked(e) && b.default.isReady(e) && r.A.activateRegion(R.ajI.TEXT_WIDGET)
+            null != e && t && y.default.isPinned(R.uss.TEXT) && y.default.isLocked(e) && b.default.isReady(e) && a.A.activateRegion(R.ajI.TEXT_WIDGET)
         },
         keyEvents: {
             keyup: !0,

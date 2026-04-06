@@ -3,8 +3,8 @@ n.d(t, {
     v: () => _
 });
 var i = n(627968),
-    a = n(64700),
-    r = n(397927),
+    r = n(64700),
+    a = n(397927),
     l = n(378570),
     s = n(138298),
     o = n(761640),
@@ -19,11 +19,11 @@ function _(e) {
         active: t,
         user: n,
         channel: _
-    } = e, m = (0, d.k)(), p = a.useCallback(() => {
-        (0, r.showToast)((0, r.createToast)(A.intl.string(A.t["EDYbS+"]), r.ToastType.FAILURE))
-    }, []), g = a.useCallback(() => {
+    } = e, m = (0, d.k)(), p = r.useCallback(() => {
+        (0, a.showToast)((0, a.createToast)(A.intl.string(A.t["EDYbS+"]), a.ToastType.FAILURE))
+    }, []), g = r.useCallback(() => {
         s.A.closeChannelSidebar(o.fe)
-    }, []), E = a.useCallback(() => {
+    }, []), E = r.useCallback(() => {
         s.A.closeChannelSidebar(o.fe), m && (0, l.iN)(_.id)
     }, [_.id, m]), {
         acceptMessageRequest: I,
@@ -50,7 +50,7 @@ function _(e) {
             children: [(0, i.jsx)("div", {
                 "data-button-hoisted-classname-wrapper": !0,
                 className: h.x6,
-                children: (0, i.jsx)(r.Button, {
+                children: (0, i.jsx)(a.Button, {
                     variant: "secondary",
                     size: "sm",
                     text: A.intl.string(A.t.B2nygW),
@@ -63,7 +63,7 @@ function _(e) {
             }), (0, i.jsx)("div", {
                 "data-button-hoisted-classname-wrapper": !0,
                 className: h.x6,
-                children: (0, i.jsx)(r.Button, {
+                children: (0, i.jsx)(a.Button, {
                     variant: "primary",
                     size: "sm",
                     text: A.intl.string(A.t.Kz8Pwr),

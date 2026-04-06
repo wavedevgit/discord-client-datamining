@@ -1,12 +1,12 @@
 /** chunk id: 293588 params = (module,exports,require) **/
 n.d(t, {
-    C: () => r,
+    C: () => a,
     m: () => l
 });
 var i = n(627968);
 n(64700);
-var a = n(397927);
-let r = "command-share-modal";
+var r = n(397927);
+let a = "command-share-modal";
 
 function l(e) {
     let {
@@ -18,7 +18,7 @@ function l(e) {
         contextKey: c,
         onShareResult: u
     } = e;
-    (0, a.mMO)(async () => {
+    (0, r.mMO)(async () => {
         let {
             ApplicationCommandShareModal: e
         } = await n.e("33885").then(n.bind(n, 962156));
@@ -32,7 +32,7 @@ function l(e) {
             ...n
         })
     }, {
-        modalKey: r,
+        modalKey: a,
         contextKey: c,
         onCloseCallback: () => {
             u(!1)

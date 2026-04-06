@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var a = n(873263),
-    r = n(311907),
+var r = n(873263),
+    a = n(311907),
     l = n(397927),
     s = n(587895),
     o = n(93055),
@@ -25,18 +25,18 @@ var a = n(873263),
     T = n(782584);
 
 function N() {
-    let e, t = (0, a.zy)(),
-        n = (0, r.bG)([p.A], () => p.A.getGuildId()),
-        N = (0, r.bG)([m.A], () => m.A.getChannelId()),
-        S = (0, r.bG)([h.A], () => h.A.getChannel(N), [N]),
+    let e, t = (0, r.zy)(),
+        n = (0, a.bG)([p.A], () => p.A.getGuildId()),
+        N = (0, a.bG)([m.A], () => m.A.getChannelId()),
+        S = (0, a.bG)([h.A], () => h.A.getChannel(N), [N]),
         x = n ?? S?.guild_id,
-        v = (0, r.bG)([_.A], () => _.A.getGuild(x), [x]),
+        v = (0, a.bG)([_.A], () => _.A.getGuild(x), [x]),
         b = (0, o.DZ)(),
         y = (0, A.lI)(),
         {
             application: O,
             isFrameInFocusedMode: L
-        } = (0, r.cf)([s.A, c.A], () => {
+        } = (0, a.cf)([s.A, c.A], () => {
             let e = c.A.getConnectedFrame();
             return {
                 application: s.A.getApplication(e?.applicationId),

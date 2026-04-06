@@ -29,7 +29,7 @@ let v = e => {
         giftingOrigin: N = x.vQ.SHOP_PAGE
     } = e, {
         analyticsLocations: b
-    } = (0, o.Ay)(), I = a.useRef(null), R = (0, u.uM)(), E = (0, m.A)(), T = e => {
+    } = (0, o.Ay)(), I = a.useRef(null), R = (0, u.uM)(), T = (0, m.A)(), E = e => {
         e.stopPropagation(), d.default.track(p.HAw.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
             collectibles_shop_session_id: R?.sessionId,
             sku_id: t.skuId,
@@ -38,7 +38,7 @@ let v = e => {
             tile_type: i.R[t.type],
             tile_position: String(R?.tilePosition),
             cta_name: "gift button",
-            page_type: E ?? "home"
+            page_type: T ?? "home"
         }), (0, c.A)({
             skuId: (0, h.Y)({
                 product: t,
@@ -57,7 +57,7 @@ let v = e => {
     return j ? (0, r.jsx)(l.Button, {
         variant: n ? "primary" : "secondary",
         icon: l.okO,
-        onClick: T,
+        onClick: E,
         text: f.intl.string(f.t.gmnzqM),
         fullWidth: !0
     }) : (0, r.jsx)(s.m, {
@@ -69,7 +69,7 @@ let v = e => {
             variant: n ? "primary" : "secondary",
             icon: l.okO,
             size: "md",
-            onClick: T
+            onClick: E
         })
     })
 }

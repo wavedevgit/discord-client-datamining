@@ -1,6 +1,6 @@
 /** chunk id: 268959 params = (module,exports,require) **/
 r.d(t, {
-    A: () => I
+    A: () => k
 });
 var n = r(627968);
 r(64700);
@@ -18,8 +18,8 @@ var l = r(503698),
     f = r(561769),
     x = r(525723),
     g = r(57020),
-    v = r(985018),
-    C = r(766706);
+    C = r(985018),
+    v = r(766706);
 let A = e => {
         let {
             product: t,
@@ -29,8 +29,8 @@ let A = e => {
             prioritizedCurrency: p
         } = e, {
             isPurchased: A,
-            isPartiallyOwnedBundle: I
-        } = (0, h.h)(t), k = (0, m.G0)(t), b = (0, s.bG)([c.A], () => c.A.getCategoryForProduct(t.skuId)), y = b?.unpublishedAt != null ? (0, m.WU)(b.unpublishedAt) : null, E = (0, s.bG)([u.default], () => u.default.getCurrentUser()), j = o.Ay.canUseCollectibles(E), _ = (0, x.V_)(t), {
+            isPartiallyOwnedBundle: k
+        } = (0, h.h)(t), I = (0, m.G0)(t), b = (0, s.bG)([c.A], () => c.A.getCategoryForProduct(t.skuId)), y = b?.unpublishedAt != null ? (0, m.WU)(b.unpublishedAt) : null, E = (0, s.bG)([u.default], () => u.default.getCurrentUser()), j = o.Ay.canUseCollectibles(E), _ = (0, x.V_)(t), {
             isOrbExclusive: R
         } = (0, g.F)({
             product: t,
@@ -38,30 +38,30 @@ let A = e => {
             prioritizedCurrency: p,
             hasDiscountOffer: null != _
         }), T = r;
-        if (null == T && (!l && (0, m.HF)(b?.unpublishedAt) ? T = f.AW.LIMITED_TIME : !I && !A && (0, m.aT)(t.skuId) ? T = f.AW.NEW : R ? T = f.AW.ORBS_EXCLUSIVE : k && (T = f.AW.NITRO_EXCLUSIVE)), null == T || T === f.AW.NONE) return null;
+        if (null == T && (!l && (0, m.HF)(b?.unpublishedAt) ? T = f.AW.LIMITED_TIME : !k && !A && (0, m.aT)(t.skuId) ? T = f.AW.NEW : R ? T = f.AW.ORBS_EXCLUSIVE : I && (T = f.AW.NITRO_EXCLUSIVE)), null == T || T === f.AW.NONE) return null;
         let L = null;
         switch (T) {
             case f.AW.LIMITED_TIME:
-                L = null != y ? y > 1 ? v.intl.formatToPlainString(v.t.Io7ozn, {
+                L = null != y ? y > 1 ? C.intl.formatToPlainString(C.t.Io7ozn, {
                     days: y
-                }) : v.intl.string(v.t.Bc13HF) : v.intl.string(v.t["h/uBCR"]);
+                }) : C.intl.string(C.t.Bc13HF) : C.intl.string(C.t["h/uBCR"]);
                 break;
             case f.AW.NEW:
-                L = v.intl.string(v.t.y2b7CA);
+                L = C.intl.string(C.t.y2b7CA);
                 break;
             case f.AW.NITRO_EXCLUSIVE:
-                L = v.intl.string(v.t.X3Ekj8);
+                L = C.intl.string(C.t.X3Ekj8);
                 break;
             case f.AW.ORBS_EXCLUSIVE:
-                L = v.intl.string(v.t["0TmQRG"])
+                L = C.intl.string(C.t["0TmQRG"])
         }
         return (0, n.jsx)(a.LpS, {
             text: L,
             disableColor: !0,
-            className: i()(d, C.$)
+            className: i()(d, v.$)
         })
     },
-    I = e => {
+    k = e => {
         let {
             skuId: t,
             badgeOverride: r,

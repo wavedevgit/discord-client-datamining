@@ -3,8 +3,8 @@ n.d(t, {
     A: () => g,
     G: () => p
 });
-var i, a = n(64700),
-    r = n(311907),
+var i, r = n(64700),
+    a = n(311907),
     l = n(285059),
     s = n(82005),
     o = n(508654),
@@ -19,10 +19,10 @@ var i, a = n(64700),
 
 function g(e) {
     let t = e?.id ?? m.dJq,
-        n = (0, r.bG)([A.A], () => A.A.isVisible(e)),
-        i = (0, r.bG)([_.A], () => _.A.isVisible(e)),
+        n = (0, a.bG)([A.A], () => A.A.isVisible(e)),
+        i = (0, a.bG)([_.A], () => _.A.isVisible(e)),
         p = (0, s.C)(t),
-        g = (0, r.bG)([h.A], () => h.A.isVisible(e)),
+        g = (0, a.bG)([h.A], () => h.A.isVisible(e)),
         E = c.A.useShouldShowChannelNotice(t),
         I = (0, u.$s)(e),
         {
@@ -31,7 +31,7 @@ function g(e) {
         C = I.length > 0,
         T = f && !e?.features.has(m.GuildFeatures.HUB),
         N = (0, o.WG)(t);
-    if (a.useEffect(() => {
+    if (r.useEffect(() => {
             l.A.getGuildEventsForCurrentUser(t)
         }, [t]), n) return 0;
     if (i) return 1;

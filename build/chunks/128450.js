@@ -37,8 +37,8 @@ let _ = a.forwardRef(function(e, t) {
         children: _,
         className: p,
         errors: f,
-        disabled: h = !1,
-        hideDivider: b = !1,
+        disabled: b = !1,
+        hideDivider: h = !1,
         showBorder: g = !1,
         borderType: x,
         hasBackground: C = !1,
@@ -47,8 +47,8 @@ let _ = a.forwardRef(function(e, t) {
     } = e;
     return (0, n.jsx)("div", {
         className: s()(u.fz, p, {
-            [u.r9]: h,
-            [u.Ai]: b,
+            [u.r9]: b,
+            [u.Ai]: h,
             [u.Ac]: g,
             [u.Cx]: A
         }),

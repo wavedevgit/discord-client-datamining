@@ -3,8 +3,8 @@ n.d(t, {
     A: () => P
 }), n(321073);
 var i = n(627968),
-    a = n(64700),
-    r = n(311907),
+    r = n(64700),
+    a = n(311907),
     l = n(554146),
     s = n(506774),
     o = n(108722),
@@ -39,14 +39,14 @@ function R(e) {
     let n, {
             guild: _
         } = e,
-        [p, g] = a.useState(s.w.get(v.hV) ?? 0),
-        E = (t = _.id, n = (0, c.I)(t), a.useMemo(() => {
+        [p, g] = r.useState(s.w.get(v.hV) ?? 0),
+        E = (t = _.id, n = (0, c.I)(t), r.useMemo(() => {
             let e = [];
             return n && e.push(l.M.GAME_CLAIM_COACHMARK), e.length > 0 ? e : L
         }, [n])),
         [I, f] = (0, d.ww)(E, _.id, b.m.CHANNEL_NOTICES, !0),
         C = null != I,
-        N = (0, r.yK)(v.cJ, () => C ? [] : v.cA.filter(e => {
+        N = (0, a.yK)(v.cJ, () => C ? [] : v.cA.filter(e => {
             let {
                 dismissibleContentType: t,
                 store: n
@@ -56,7 +56,7 @@ function R(e) {
         [x, R] = (0, d.kn)(N, b.m.CHANNEL_NOTICES),
         P = I ?? x,
         D = null != I ? f : R,
-        M = a.useCallback(() => {
+        M = r.useCallback(() => {
             var e;
             e = Date.now(), s.w.set(v.hV, e), g(e), D(b.i.UNKNOWN)
         }, [D]),

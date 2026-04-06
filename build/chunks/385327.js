@@ -4,16 +4,16 @@ n.d(t, {
     c7: () => s
 });
 var i = n(554146),
-    a = n(826673),
-    r = n(398523);
+    r = n(826673),
+    a = n(398523);
 let l = () => {
-        (0, a.Dr)(i.M.RECURRING_3P_PROMOTION_POPOVER)
+        (0, r.Dr)(i.M.RECURRING_3P_PROMOTION_POPOVER)
     },
     s = () => {
         let {
             enabled: e
-        } = r.A.useConfig({
+        } = a.A.useConfig({
             location: "useIsRecurring3PPopoverShowable"
-        }), t = (0, a.k8)(i.M.RECURRING_3P_PROMOTION_POPOVER);
+        }), t = (0, r.k8)(i.M.RECURRING_3P_PROMOTION_POPOVER);
         return e && !1 === t
     }

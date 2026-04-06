@@ -1,25 +1,25 @@
 /** chunk id: 873351 params = (module,exports,require) **/
 n.d(t, {
-    A: () => r
+    A: () => a
 });
 var i = n(73153),
-    a = n(613057);
-let r = {
+    r = n(613057);
+let a = {
     [n(652215).e$_.SET_SUPPRESS_NOTIFICATIONS]: {
-        scope: a.hj,
+        scope: r.hj,
         handler(e) {
             let {
                 socket: t,
                 args: {
                     suppress_notifications: n,
-                    target_user_id: a
+                    target_user_id: r
                 }
             } = e;
             i.h.dispatch({
                 type: "SET_RPC_NOTIFICATION_SETTINGS",
                 socketId: t.id,
                 suppressNotifications: n,
-                targetUserId: a
+                targetUserId: r
             })
         }
     }

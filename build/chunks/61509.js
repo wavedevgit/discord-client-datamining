@@ -36,8 +36,8 @@ var i = n(627968),
     D = n(378058),
     G = n(148355),
     M = n(780964),
-    k = n(779733),
-    U = n(858897),
+    U = n(779733),
+    k = n(858897),
     w = n(202613),
     V = n(317525),
     B = n(71393),
@@ -133,7 +133,7 @@ function em(e) {
     } = e, l = (0, C.Qi)(t, n, {
         requireCurrentGuild: !1
     }), a = (0, v.z)(l), r = (0, m.bG)([B.A], () => B.A.getGuild(t)), o = l?.role_id != null && l?.attachments_count === 0 ? ei.intl.string(ei.t.H11qcT) : a, d = s.useCallback(async () => {
-        r?.features.has(ee.GuildFeatures.PRODUCTS_AVAILABLE_FOR_PURCHASE) ? await (0, y.A)(ee.BVt.GUILD_PRODUCT(t, n)) : await (0, y.A)(ee.BVt.CHANNEL(t)), (0, k.default)()
+        r?.features.has(ee.GuildFeatures.PRODUCTS_AVAILABLE_FOR_PURCHASE) ? await (0, y.A)(ee.BVt.GUILD_PRODUCT(t, n)) : await (0, y.A)(ee.BVt.CHANNEL(t)), (0, U.default)()
     }, [r, t, n]);
     return (0, i.jsxs)(i.Fragment, {
         children: [null != o && (0, i.jsx)(eu, {
@@ -483,7 +483,7 @@ class e_ extends s.PureComponent {
                 children: (0, i.jsx)(_.$nd, {
                     variant: "primary",
                     text: ei.intl.string(ei.t["jcSP+g"]),
-                    onClick: () => (0, U.openUserSettings)(M.X.GIFT_PANEL)
+                    onClick: () => (0, k.openUserSettings)(M.X.GIFT_PANEL)
                 })
             })]
         }) : o ? null : (0, i.jsxs)(s.Fragment, {

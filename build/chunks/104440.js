@@ -3,8 +3,8 @@ n.d(t, {
     A: () => C
 });
 var i = n(627968),
-    a = n(64700),
-    r = n(665260),
+    r = n(64700),
+    a = n(665260),
     l = n(311907),
     s = n(397927),
     o = n(59636),
@@ -25,7 +25,7 @@ function I(e) {
         restoreApplication: n
     } = e;
     if (0 === t.length) return null;
-    let a = t.map(e => {
+    let r = t.map(e => {
         let t = e.libraryApplication.getDistributor();
         return (0, i.jsxs)("div", {
             className: E.Kp,
@@ -56,10 +56,10 @@ function I(e) {
             variant: "heading-md/semibold",
             className: E.Z9,
             children: g.intl.string(g.t["5PJtrH"])
-        }), a]
+        }), r]
     })
 }
-class f extends a.PureComponent {
+class f extends r.PureComponent {
     handleToggleShortcutDesktop(e) {
         c.uB.updateSetting(e)
     }
@@ -73,8 +73,8 @@ class f extends a.PureComponent {
         })
     }
     handleRestoreHiddenLibraryApplication = e => {
-        let t = r.PQ(e.getFlags(), p.hM6.HIDDEN);
-        o.V(e.id, e.branchId, t), this.trackRestoreApplication(e, r.Lt(t, p.hM6.HIDDEN))
+        let t = a.PQ(e.getFlags(), p.hM6.HIDDEN);
+        o.V(e.id, e.branchId, t), this.trackRestoreApplication(e, a.Lt(t, p.hM6.HIDDEN))
     };
     renderBody() {
         let {

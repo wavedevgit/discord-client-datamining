@@ -3,8 +3,8 @@ n.d(t, {
     A: () => E
 });
 var i = n(627968),
-    a = n(64700),
-    r = n(311907),
+    r = n(64700),
+    a = n(311907),
     l = n(397927),
     s = n(713654),
     o = n(698441),
@@ -21,9 +21,9 @@ var i = n(627968),
 function E(e) {
     let {
         eventId: t
-    } = e, n = (0, r.bG)([o.Ay], () => o.Ay.getGuildScheduledEvent(t), [t]), E = (0, r.bG)([m.A], () => m.A.getGuild(n?.guild_id), [n]), I = (0, r.bG)([_.A], () => _.A.getChannel(n?.channel_id), [n]), f = (0, c.nh)(t, null), C = null != n && (0, o.Fd)(n), T = null != n ? (0, h.G3)(n) : null, N = (0, u.A)(n?.guild_id, n?.id, T), S = f?.startTime.toISOString(), {
+    } = e, n = (0, a.bG)([o.Ay], () => o.Ay.getGuildScheduledEvent(t), [t]), E = (0, a.bG)([m.A], () => m.A.getGuild(n?.guild_id), [n]), I = (0, a.bG)([_.A], () => _.A.getChannel(n?.channel_id), [n]), f = (0, c.nh)(t, null), C = null != n && (0, o.Fd)(n), T = null != n ? (0, h.G3)(n) : null, N = (0, u.A)(n?.guild_id, n?.id, T), S = f?.startTime.toISOString(), {
         startDateTimeString: x
-    } = a.useMemo(() => C ? {
+    } = r.useMemo(() => C ? {
         startDateTimeString: p.intl.string(p.t.TxqPQR)
     } : (0, h.CC)(S ?? new Date().toISOString()), [S, C]), v = null != n ? (0, A.oF)(n) : void 0, b = I?.name ?? v, y = null != I ? (0, s.gU)(I) : null;
     if (null == n || null == E) return null;

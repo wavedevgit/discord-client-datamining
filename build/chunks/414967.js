@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var a = n(877624),
-    r = n(397927),
+var r = n(877624),
+    a = n(397927),
     l = n(73153),
     s = n(272355),
     o = n(835095),
@@ -35,7 +35,7 @@ class f extends s.A {
                     if (null == e || null != e.expires_at && Date.parse(e.expires_at) < Date.now()) continue
                 }
                 for (let e of t.marketingComponents)
-                    if (e.component_type === a.C.ANNOUNCEMENT_MODAL) return void this.maybeOpenServerDriveAnnouncementModal(e.id, e.promotion_id, e.properties, !1)
+                    if (e.component_type === r.C.ANNOUNCEMENT_MODAL) return void this.maybeOpenServerDriveAnnouncementModal(e.id, e.promotion_id, e.properties, !1)
             }
     };
     handleActivePromotionsFetchSuccess = e => {
@@ -56,18 +56,18 @@ class f extends s.A {
         } = e;
         u.P.isDisallowPopupsSet() || t.source_type !== E.GD.REVERSE_TRIAL || (0, h.al)()
     };
-    maybeOpenServerDriveAnnouncementModal = async (e, t, a, l) => {
-        if ((0, r.kBI)(I)) return !1;
+    maybeOpenServerDriveAnnouncementModal = async (e, t, r, l) => {
+        if ((0, a.kBI)(I)) return !1;
         let s = (0, g.H)({
             promotionId: t,
-            content: a,
+            content: r,
             isPreview: l
         });
-        if (null != s) return (!1 !== l || s?.contentIdentifier !== "summer_bogo_content" || !!await (0, p.C)()) && ((0, r.mMO)(async () => {
+        if (null != s) return (!1 !== l || s?.contentIdentifier !== "summer_bogo_content" || !!await (0, p.C)()) && ((0, a.mMO)(async () => {
             let {
-                default: a
+                default: r
             } = await Promise.resolve().then(n.bind(n, 979080));
-            return n => (0, i.jsx)(a, {
+            return n => (0, i.jsx)(r, {
                 renderModalProps: n,
                 componentId: e,
                 promotionId: t,

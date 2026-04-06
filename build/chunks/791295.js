@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var a = n(342494),
-    r = n(997509),
+var r = n(342494),
+    a = n(997509),
     l = n(652215),
     s = n(49999),
     o = n(985018),
@@ -17,7 +17,7 @@ function c(e) {
         markAsDismissed: n,
         targetElementRef: c
     } = e;
-    return (0, i.jsx)(a.AM, {
+    return (0, i.jsx)(r.AM, {
         targetElementRef: c,
         title: o.intl.string(o.t.Hgd22r),
         body: o.intl.string(o.t.SorTPA),
@@ -29,7 +29,7 @@ function c(e) {
             text: o.intl.string(o.t["9l+df7"]),
             variant: "primary",
             onClick: e => {
-                r.A.open(t.id, l.BEX.DISCOVERY_LANDING_PAGE)
+                a.A.open(t.id, l.BEX.DISCOVERY_LANDING_PAGE)
             }
         }],
         onRequestClose: () => n(s.i.USER_DISMISS),

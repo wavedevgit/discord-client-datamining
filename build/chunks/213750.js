@@ -3,9 +3,9 @@ n.d(t, {
     i: () => Y
 });
 var i = n(627968),
-    a = n(64700),
-    r = n(503698),
-    l = n.n(r),
+    r = n(64700),
+    a = n(503698),
+    l = n.n(a),
     s = n(837381),
     o = n(934551),
     d = n(158954),
@@ -38,7 +38,7 @@ let j = e => {
         let {
             badgeIcon: t,
             badgeText: n
-        } = e, a = null != t && "" !== t ? o[t] : void 0;
+        } = e, r = null != t && "" !== t ? o[t] : void 0;
         return (0, i.jsx)("div", {
             className: M.newBadge,
             children: (0, i.jsx)(d.Exy, {
@@ -46,7 +46,7 @@ let j = e => {
                     text: n
                 } : "new",
                 variant: "expressive",
-                icon: a
+                icon: r
             })
         })
     },
@@ -64,7 +64,7 @@ let j = e => {
         let {
             selected: t,
             locationState: n,
-            icon: r,
+            icon: a,
             onClick: l,
             collectibleShopTab: o,
             onMouseEnter: d,
@@ -77,7 +77,7 @@ let j = e => {
             ...f
         } = e, C = (0, s.rm)("shop"), T = p.A.HOME_PAGE_SHOP_TAB, {
             analyticsLocations: S
-        } = (0, g.Ay)(T), [x, v] = a.useState(!1), b = a.useCallback(() => {
+        } = (0, g.Ay)(T), [x, v] = r.useState(!1), b = r.useCallback(() => {
             void 0 !== l && l(), void 0 !== o && (0, N.Cz)({
                 tab: o,
                 analyticsLocations: S,
@@ -92,7 +92,7 @@ let j = e => {
                 showHoverGradient: h ?? !1,
                 selected: t,
                 route: y,
-                icon: r ?? A.U1X,
+                icon: a ?? A.U1X,
                 text: D.intl.string(D.t.pWG4ze),
                 locationState: n,
                 ...C,
@@ -120,53 +120,53 @@ let j = e => {
     },
     V = e => {
         let t, n, {
-                displayOptions: r,
+                displayOptions: a,
                 ...s
             } = e,
-            [o, d] = a.useState(!1),
-            [c, A] = a.useState(!1),
-            h = a.useRef(null),
-            _ = a.useRef(null),
+            [o, d] = r.useState(!1),
+            [c, A] = r.useState(!1),
+            h = r.useRef(null),
+            _ = r.useRef(null),
             p = (0, m.Ay)(),
             g = (0, u.Mw)(p);
-        o ? (t = g ? r.entryPointBackgroundAssets?.srcDarkHovered : r.entryPointBackgroundAssets?.srcLightHovered, n = g ? r.entrypointBackgroundStyle?.hovered?.dark : r.entrypointBackgroundStyle?.hovered?.light) : (t = g ? r.entryPointBackgroundAssets?.srcDark : r.entryPointBackgroundAssets?.srcLight, n = g ? r.entrypointBackgroundStyle?.resting?.dark : r.entrypointBackgroundStyle?.resting?.light);
-        let E = a.useCallback(() => {
+        o ? (t = g ? a.entryPointBackgroundAssets?.srcDarkHovered : a.entryPointBackgroundAssets?.srcLightHovered, n = g ? a.entrypointBackgroundStyle?.hovered?.dark : a.entrypointBackgroundStyle?.hovered?.light) : (t = g ? a.entryPointBackgroundAssets?.srcDark : a.entryPointBackgroundAssets?.srcLight, n = g ? a.entrypointBackgroundStyle?.resting?.dark : a.entrypointBackgroundStyle?.resting?.light);
+        let E = r.useCallback(() => {
                 d(!0);
                 let e = () => A(k(h));
                 e(), _.current = requestAnimationFrame(e)
             }, []),
-            I = a.useCallback(() => {
+            I = r.useCallback(() => {
                 d(!1), A(!1), null != _.current && (cancelAnimationFrame(_.current), _.current = null)
             }, []);
-        return a.useEffect(() => () => {
+        return r.useEffect(() => () => {
             null != _.current && cancelAnimationFrame(_.current)
         }, []), (0, i.jsx)(f.A, {
-            title: r.title(),
-            body: r.body?.() ?? "",
+            title: a.title(),
+            body: a.body?.() ?? "",
             asset: (0, i.jsx)("img", {
-                src: r.asset,
+                src: a.asset,
                 alt: "",
                 "aria-hidden": !0
             }),
             children: (0, i.jsxs)(U, {
-                className: null != r.entryPointClassName ? (0, T.t)(M, r.entryPointClassName) : void 0,
+                className: null != a.entryPointClassName ? (0, T.t)(M, a.entryPointClassName) : void 0,
                 ...s,
-                icon: r.entryPointIcon,
+                icon: a.entryPointIcon,
                 onMouseEnter: E,
                 onMouseLeave: I,
-                ...null != r.hoverGradient && {
+                ...null != a.hoverGradient && {
                     showHoverGradient: !0,
                     hoverGradientStart: {
-                        ...(0, C.j5)(r.hoverGradient.center.color),
-                        a: r.hoverGradient.center.opacity ?? 1
+                        ...(0, C.j5)(a.hoverGradient.center.color),
+                        a: a.hoverGradient.center.opacity ?? 1
                     },
                     hoverGradientMiddle: {
-                        ...(0, C.j5)(r.hoverGradient.inner.color),
-                        a: r.hoverGradient.inner.opacity ?? .5
+                        ...(0, C.j5)(a.hoverGradient.inner.color),
+                        a: a.hoverGradient.inner.opacity ?? .5
                     },
                     hoverGradientEnd: {
-                        ...(0, C.j5)(r.hoverGradient.outer.color),
-                        a: r.hoverGradient.outer.opacity ?? 0
+                        ...(0, C.j5)(a.hoverGradient.outer.color),
+                        a: a.hoverGradient.outer.opacity ?? 0
                     }
                 },
                 children: [(0, i.jsx)("div", {
@@ -182,8 +182,8 @@ let j = e => {
                         "aria-hidden": !0
                     })
                 }), (0, i.jsx)(j, {
-                    badgeIcon: r.badgeIcon,
-                    badgeText: r.badgeText
+                    badgeIcon: a.badgeIcon,
+                    badgeText: a.badgeText
                 })]
             })
         })
@@ -192,7 +192,7 @@ let j = e => {
         let {
             displayOptions: t,
             ...n
-        } = e, r = a.useMemo(() => {
+        } = e, a = r.useMemo(() => {
             let e = null != t.emojiName ? I.Ay.getByName(t.emojiName)?.surrogates : null;
             return (0, i.jsxs)(A.Text, {
                 variant: "text-sm/medium",
@@ -204,7 +204,7 @@ let j = e => {
         }, [t]);
         return (0, i.jsx)(A.STz, {
             "data-migration-pending": !0,
-            text: r,
+            text: a,
             tooltipClassName: M.marketingBadgeTooltip,
             position: "right",
             delay: 100,
@@ -224,9 +224,9 @@ let j = e => {
         let {
             displayOptions: t,
             dismissContent: n,
-            ...r
-        } = e, s = a.useRef(null), o = a.useRef(null), [d, c] = a.useState(!1), A = (0, m.Ay)(), h = (0, u.Mw)(A), _ = t.entryPointBackgroundAssets, p = t.entrypointBackgroundStyle, g = h ? _?.srcDarkHovered : _?.srcLightHovered, E = h ? p?.hovered?.dark : p?.hovered?.light;
-        return a.useEffect(() => {
+            ...a
+        } = e, s = r.useRef(null), o = r.useRef(null), [d, c] = r.useState(!1), A = (0, m.Ay)(), h = (0, u.Mw)(A), _ = t.entryPointBackgroundAssets, p = t.entrypointBackgroundStyle, g = h ? _?.srcDarkHovered : _?.srcLightHovered, E = h ? p?.hovered?.dark : p?.hovered?.light;
+        return r.useEffect(() => {
             if (null == g || "" === g) return void c(!1);
             let e = () => {
                 c(k(o))
@@ -238,7 +238,7 @@ let j = e => {
             }
         }, [g]), (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsxs)(U, {
-                ...r,
+                ...a,
                 onClick: () => n(P.i.TAKE_ACTION),
                 listItemRef: s,
                 children: [(0, i.jsx)("div", {
@@ -269,14 +269,14 @@ let j = e => {
         let {
             dismissContent: t,
             ...n
-        } = e, r = a.useRef(null);
+        } = e, a = r.useRef(null);
         return (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)(U, {
                 ...n,
                 onClick: () => t(P.i.TAKE_ACTION),
-                listItemRef: r
+                listItemRef: a
             }), (0, i.jsx)(v.A, {
-                targetElementRef: r,
+                targetElementRef: a,
                 onClick: () => t(P.i.TAKE_ACTION),
                 onRequestClose: () => t(P.i.USER_DISMISS)
             })]
@@ -286,18 +286,18 @@ let j = e => {
         let {
             selected: t,
             onClick: n,
-            locationState: a,
-            listItemRef: r
+            locationState: r,
+            listItemRef: a
         } = e, {
             shopButtonDisplayOptions: l,
             dismissShopButtonDC: s
         } = (0, b.A)(), o = !(0, A.ueM)(), [d, u] = (0, E.kn)(o ? [c.M.WISHLIST_SHOP_BUTTON_POPOVER] : []), h = {
             selected: t,
-            locationState: a,
+            locationState: r,
             onClick: () => {
                 s(), n?.()
             },
-            listItemRef: r
+            listItemRef: a
         };
         if (null != l) switch (l.type) {
             case O.FF.TOOLTIP:

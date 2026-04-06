@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var a = n(377802),
-    r = n(956793),
+var r = n(377802),
+    a = n(956793),
     l = n(688810),
     s = n(384059),
     o = n(707592),
@@ -20,15 +20,15 @@ function _(e) {
         tooltipText: t,
         onClick: n
     } = e, {
-        parentAnalyticsLocation: r
+        parentAnalyticsLocation: a
     } = (0, l.Ay)(), {
         events: o,
         Component: d
-    } = (0, a.O)();
+    } = (0, r.O)();
     return (0, i.jsx)(A.A, {
         tooltipText: t,
         onClick: () => {
-            (0, s.X)(r, s.O.DISCONNECT), n()
+            (0, s.X)(a, s.O.DISCONNECT), n()
         },
         ...o,
         icon: (0, i.jsx)(d, {
@@ -44,7 +44,7 @@ function m(e) {
     return (0, i.jsx)(_, {
         tooltipText: h.intl.string(h.t.SMKyih),
         onClick: () => {
-            (0, u.A)(t) ? (0, c.j3)(t) : r.default.disconnect()
+            (0, u.A)(t) ? (0, c.j3)(t) : a.default.disconnect()
         }
     })
 }
@@ -56,7 +56,7 @@ function p(e) {
     return (0, i.jsx)(_, {
         tooltipText: h.intl.string(h.t["6vrfgt"]),
         onClick: () => {
-            (0, d.A)(t) ? (0, o.Py)(t) : r.default.disconnect()
+            (0, d.A)(t) ? (0, o.Py)(t) : a.default.disconnect()
         }
     })
 }

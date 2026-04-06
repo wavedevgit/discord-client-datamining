@@ -23,12 +23,12 @@ let _ = e => {
         override: u,
         glowing: m = !0,
         labelledBy: _
-    } = e, p = null != u && "unset" === l, f = (0, o.Ay)(), h = u?.[f] ?? u?.default, b = s.useMemo(() => (t - r) / (n - r) * 100, [t, r, n]), g = t === r, x = {
+    } = e, p = null != u && "unset" === l, f = (0, o.Ay)(), b = u?.[f] ?? u?.default, h = s.useMemo(() => (t - r) / (n - r) * 100, [t, r, n]), g = t === r, x = {
         ...p ? {
-            "--custom-background": h?.background,
-            "--custom-gradient-start": h?.gradientStart,
-            "--custom-gradient-end": h?.gradientEnd,
-            "--custom-gradient-glow": h?.gradientEnd
+            "--custom-background": b?.background,
+            "--custom-gradient-start": b?.gradientStart,
+            "--custom-gradient-end": b?.gradientEnd,
+            "--custom-gradient-glow": b?.gradientEnd
         } : {},
         ...!m && {
             "--custom-gradient-glow": "transparent"
@@ -42,7 +42,7 @@ let _ = e => {
                 [c.empty]: g
             }),
             style: {
-                width: `${b}%`
+                width: `${h}%`
             },
             role: "meter",
             "aria-valuenow": t,

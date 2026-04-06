@@ -1,5 +1,5 @@
 /** chunk id: 291731 params = (module,exports,require) **/
-let i, a, r;
+let i, r, a;
 n.d(t, {
     A: () => y
 }), n(321073);
@@ -22,7 +22,7 @@ let p = [],
     T = null;
 
 function N() {
-    if (i = null != (a = u.A.getChannel()) ? A.A.getGuild(a.guild_id) : null, p = null != a && null != i && h.A.can(m.xBc.MANAGE_WEBHOOKS, a) ? _.A.getWebhooksForChannel(i.id, a.id) : [], null != g) {
+    if (i = null != (r = u.A.getChannel()) ? A.A.getGuild(r.guild_id) : null, p = null != r && null != i && h.A.can(m.xBc.MANAGE_WEBHOOKS, r) ? _.A.getWebhooksForChannel(i.id, r.id) : [], null != g) {
         let e = x(g.id);
         null != e && (g = e)
     }
@@ -68,7 +68,7 @@ class v extends o.Ay.Store {
             submitting: I === m.XlH.SUBMITTING,
             webhooks: p,
             editedWebhook: g,
-            section: r,
+            section: a,
             sectionId: T,
             hasChanges: this.hasChanges(),
             isFetching: E,
@@ -84,7 +84,7 @@ let b = new v(d.h, __OVERLAY__ ? {} : {
                 section: t
             } = e;
             if (t !== m.p_A.INTEGRATIONS) return !1;
-            if (r = m.wLn.OVERVIEW, null == i) {
+            if (a = m.wLn.OVERVIEW, null == i) {
                 let e = u.A.getChannel(),
                     t = e?.getGuildId();
                 null != e && null != t && (c.A.fetchForChannel(t, e.id), E = !0), N()
@@ -95,7 +95,7 @@ let b = new v(d.h, __OVERLAY__ ? {} : {
                 section: t,
                 sectionId: n
             } = e;
-            r = t, T = n
+            a = t, T = n
         },
         INTEGRATION_SETTINGS_START_EDITING_WEBHOOK: function(e) {
             let {
@@ -117,19 +117,19 @@ let b = new v(d.h, __OVERLAY__ ? {} : {
             }, null != t.name && g.name !== t.name && (g.name = t.name, C = !0), void 0 !== t.avatar && g.avatar !== t.avatar && (g.avatar = t.avatar, C = !0), null != t.channelId && g.channel_id !== t.channelId && (g.channel_id = t.channelId, C = !0), C && S()
         },
         CHANNEL_SETTINGS_CLOSE: function() {
-            a = null, i = null, p = [], g = null, I = m.XlH.CLOSED
+            r = null, i = null, p = [], g = null, I = m.XlH.CLOSED
         },
         WEBHOOKS_UPDATE: function(e) {
             let {
                 guildId: t,
                 channelId: n,
-                webhooks: r
+                webhooks: a
             } = e;
-            if (E = !1, null != i && t === i.id && null != a && n === a.id && null != r && I !== m.XlH.SUBMITTING) {
+            if (E = !1, null != i && t === i.id && null != r && n === r.id && null != a && I !== m.XlH.SUBMITTING) {
                 for (let e = p.length - 1; e >= 0; e--) {
                     let t = p[e];
                     if (null != n && t?.channel_id !== n) continue;
-                    let i = r.find(e => {
+                    let i = a.find(e => {
                         let {
                             id: n
                         } = e;
@@ -143,7 +143,7 @@ let b = new v(d.h, __OVERLAY__ ? {} : {
                         p[e] = n, C || g?.id !== n.id || (g = n)
                     } else g?.id === t.id && (g = null), p.splice(e, 1)
                 }
-                for (let e of r) null == p.find(t => {
+                for (let e of a) null == p.find(t => {
                     let {
                         id: n
                     } = t;

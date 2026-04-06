@@ -77,19 +77,22 @@ function b(e) {
     } = e, a = s.useRef(null);
     return (0, i.jsx)(f, {
         notice: n,
-        children: (0, i.jsx)(d.GtU, {
+        children: (0, i.jsxs)(d.GtU, {
             className: T.XG,
             ref: e => {
                 A.A.setPanelScrollerRef(e)
             },
-            children: (0, i.jsx)("div", {
+            children: [(0, i.jsx)("div", {
                 className: T.nd,
                 ref: a,
                 children: (0, i.jsx)(d.xpW, {
                     containerRef: a,
                     children: l
                 })
-            })
+            }), (0, i.jsx)("div", {
+                className: T.iS,
+                "data-panel-bottom": !0
+            })]
         }, t)
     })
 }

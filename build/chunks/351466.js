@@ -3,8 +3,8 @@ n.d(t, {
     A: () => E
 });
 var i = n(627968),
-    a = n(64700),
-    r = n(873263),
+    r = n(64700),
+    a = n(873263),
     l = n(311907),
     s = n(726249),
     o = n(49463),
@@ -34,14 +34,14 @@ let E = function() {
                     (0, A.xb)(e)
             }
         }(t),
-        E = (0, r.zy)();
-    return a.useEffect(() => {
+        E = (0, a.zy)();
+    return r.useEffect(() => {
         let e = E.pathname,
             t = (0, m.j)(e);
         t !== _.A.getField("selectedTab") && _.A.setState({
             selectedTab: t
         })
-    }, [E.pathname]), a.useEffect(() => {
+    }, [E.pathname]), r.useEffect(() => {
         e && (0, h.tx)({
             selectedTab: t
         })

@@ -37,8 +37,8 @@ var i = n(627968),
     D = n(788868),
     G = n(652215),
     M = n(985018),
-    k = n(904286),
-    U = n(288894);
+    U = n(904286),
+    k = n(288894);
 let w = "perk",
     V = e => {
         let {
@@ -88,11 +88,11 @@ let w = "perk",
             analyticsLocations: ea
         } = (0, g.Ay)(m.A.PREMIUM_SUBSCRIBER_NITRO_HOME), [er, eo] = s.useState(!1);
         return null != (0, o.bG)([p.A], () => null != t ? p.A.getUserProfile(t) : null) && (H || null != z) ? (0, i.jsxs)(c.GtU, {
-            className: k.xW,
+            className: U.xW,
             ref: V,
             children: [(0, i.jsx)(c.hLv, {
                 color: "nitro-pink",
-                className: a()(k.kL, k.Gd),
+                className: a()(U.kL, U.Gd),
                 offsetBottom: n ? .55 : .8,
                 children: (0, i.jsxs)(g.f5, {
                     value: ea,
@@ -103,7 +103,7 @@ let w = "perk",
                         active: !0,
                         children: (0, i.jsx)(j.A, {
                             buttonVisibilityRef: ee,
-                            className: k.v1,
+                            className: U.v1,
                             enablePremiumBrandRefresh: !0,
                             userDiscountOffer: $,
                             discountedPrice: es
@@ -117,14 +117,14 @@ let w = "perk",
                     }), (0, i.jsx)(O.A, {
                         glowingPerkId: W
                     }), (0, i.jsx)(I.A, {
-                        className: k.Zy,
+                        className: U.Zy,
                         location: m.A.PREMIUM_MARKETING_GIFT_SECTION,
                         analyticsLocation: {
                             page: G.liQ.NITRO_HOME,
                             section: G.JJy.GIFT_BANNER
                         }
                     }), (0, i.jsx)("div", {
-                        className: k.hz
+                        className: U.hz
                     }), (0, i.jsx)(d.L, {
                         innerRef: B,
                         onChange: e => {
@@ -134,11 +134,11 @@ let w = "perk",
                         },
                         children: (0, i.jsx)("div", {
                             ref: B,
-                            className: k._Z
+                            className: U._Z
                         })
                     }), (0, i.jsx)("img", {
-                        src: U,
-                        className: k.Kw,
+                        src: k,
+                        className: U.Kw,
                         width: 112,
                         height: 85,
                         alt: M.intl.string(M.t.X4IxWL)
@@ -151,7 +151,7 @@ let w = "perk",
                 discountedPrice: es
             })]
         }) : (0, i.jsx)("div", {
-            className: a()(k.kL, k.Lq),
+            className: a()(U.kL, U.Lq),
             children: (0, i.jsx)(c.y$y, {})
         })
     }

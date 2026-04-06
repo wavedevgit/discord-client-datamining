@@ -3,8 +3,8 @@ n.d(t, {
     A: () => u
 }), n(321073);
 var i = n(627968),
-    a = n(64700),
-    r = n(397927),
+    r = n(64700),
+    a = n(397927),
     l = n(688810),
     s = n(657331),
     o = n(129831),
@@ -14,7 +14,7 @@ function c(e) {
     let {
         priorityMembers: t,
         otherMembers: n,
-        totalMembers: a,
+        totalMembers: r,
         activity: l,
         guildId: c,
         sourceAnalyticsLocations: u
@@ -23,7 +23,7 @@ function c(e) {
             user: e,
             status: n
         }
-        of t) A.push((0, i.jsx)(r.Drp, {
+        of t) A.push((0, i.jsx)(a.Drp, {
         id: e.id,
         keepItemStyles: !0,
         render: t => (0, i.jsx)(o.A, {
@@ -38,7 +38,7 @@ function c(e) {
             sourceAnalyticsLocations: u
         })
     }));
-    for (let e of n) A.push((0, i.jsx)(r.Drp, {
+    for (let e of n) A.push((0, i.jsx)(a.Drp, {
         id: e.id,
         keepItemStyles: !0,
         render: t => (0, i.jsx)(o.A, {
@@ -52,8 +52,8 @@ function c(e) {
             sourceAnalyticsLocations: u
         })
     }));
-    let h = a - A.length;
-    return h > 0 && A.push((0, i.jsx)(r.Drp, {
+    let h = r - A.length;
+    return h > 0 && A.push((0, i.jsx)(a.Drp, {
         id: `unknown-members-${l?.session_id}`,
         render: e => (0, i.jsx)(o.x, {
             ...e,
@@ -77,7 +77,7 @@ function u(e) {
         return t.id
     })), A = n.filter(e => !u.has(e.id)), {
         analyticsLocations: h
-    } = (0, l.Ay)(), _ = a.useMemo(() => {
+    } = (0, l.Ay)(), _ = r.useMemo(() => {
         let e = s.flatMap(e => {
             let {
                 playingMembers: t
@@ -86,7 +86,7 @@ function u(e) {
         }).map(e => e.id);
         return n.filter(t => !e.includes(t.id))
     }, [n, s]);
-    if (s.length <= 1 && 0 === _.length) return (0, i.jsx)(r.rXV, {
+    if (s.length <= 1 && 0 === _.length) return (0, i.jsx)(a.rXV, {
         label: n.length > 1 ? d.intl.formatToPlainString(d.t.C4WXvc, {
             memberCount: n.length
         }) : void 0,
@@ -101,12 +101,12 @@ function u(e) {
     });
     let m = s.map((e, n) => {
             let {
-                playingMembers: a,
+                playingMembers: r,
                 game: l,
                 activity: s
-            } = e, d = new Set(a.map(e => e.id));
-            return (0, i.jsx)(r.rXV, {
-                label: `${l.name} - ${a.length}`,
+            } = e, d = new Set(r.map(e => e.id));
+            return (0, i.jsx)(a.rXV, {
+                label: `${l.name} - ${r.length}`,
                 children: c({
                     priorityMembers: t.filter(e => {
                         let {
@@ -114,8 +114,8 @@ function u(e) {
                         } = e;
                         return d.has(t.id)
                     }),
-                    otherMembers: a.filter(e => !u.has(e.id)),
-                    totalMembers: a.length,
+                    otherMembers: r.filter(e => !u.has(e.id)),
+                    totalMembers: r.length,
                     activity: s ?? void 0,
                     guildId: o?.id,
                     sourceAnalyticsLocations: h
@@ -123,7 +123,7 @@ function u(e) {
             }, n)
         }),
         p = _.map(e => e.id);
-    return [...m, (0, i.jsx)(r.rXV, {
+    return [...m, (0, i.jsx)(a.rXV, {
         label: `${d.intl.string(d.t["mIx+gG"])} - ${_.length}`,
         children: c({
             priorityMembers: t.filter(e => {

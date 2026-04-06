@@ -3,9 +3,9 @@ n.d(t, {
     A: () => R
 }), n(323874), n(14289), n(35956);
 var i = n(627968),
-    a = n(64700),
-    r = n(503698),
-    l = n.n(r),
+    r = n(64700),
+    a = n(503698),
+    l = n.n(a),
     s = n(110259),
     o = n(877624),
     d = n(311907),
@@ -42,23 +42,23 @@ let y = [],
         let {
             header: t,
             subHeader: n,
-            imageSrc: a,
-            tagText: r,
+            imageSrc: r,
+            tagText: a,
             wideStyle: s
         } = e;
         return (0, i.jsxs)("div", {
             className: l()(b.Vr, {
                 [b.tF]: s
             }),
-            children: [null != r ? (0, i.jsx)(O, {
-                tagText: r,
+            children: [null != a ? (0, i.jsx)(O, {
+                tagText: a,
                 className: b.bX
             }) : null, (0, i.jsx)("img", {
                 alt: "",
                 className: l()(b._n, {
                     [b.tF]: s
                 }),
-                src: a
+                src: r
             }), (0, i.jsxs)("div", {
                 className: l()(b.Zz, {
                     [b.tF]: s
@@ -80,7 +80,7 @@ function R(e) {
     let {
         componentId: t,
         promotionId: n,
-        className: r,
+        className: a,
         renderModalProps: O,
         heroArt: R,
         heroArtClassName: P,
@@ -96,13 +96,13 @@ function R(e) {
     } = e, {
         onClose: H,
         transitionState: F
-    } = O, Y = (0, g.GV)(), W = G.length % 2 == 0, K = (0, d.bG)([h.A], () => h.A.useReducedMotion), [q, z] = a.useState(Date.now()), [$, Q] = a.useState(0), [X, Z] = a.useState(0), [J, ee] = a.useState(!1), [et, en] = a.useState(!0), ei = a.useRef(q), ea = a.useRef($), er = a.useRef(X), el = a.useRef(J), es = a.useRef(et), [eo, ed] = a.useState(y), ec = a.useRef(!1);
+    } = O, Y = (0, g.GV)(), W = G.length % 2 == 0, K = (0, d.bG)([h.A], () => h.A.useReducedMotion), [q, z] = r.useState(Date.now()), [$, Q] = r.useState(0), [X, Z] = r.useState(0), [J, ee] = r.useState(!1), [et, en] = r.useState(!0), ei = r.useRef(q), er = r.useRef($), ea = r.useRef(X), el = r.useRef(J), es = r.useRef(et), [eo, ed] = r.useState(y), ec = r.useRef(!1);
 
     function eu() {
         let e = Date.now(),
             t = e - ei.current,
-            n = ea.current,
-            i = er.current;
+            n = er.current,
+            i = ea.current;
         return el.current && (Q(n += t), es.current || Z(i += t)), z(e), [n, i]
     }
     return (0, _.A)({
@@ -112,7 +112,7 @@ function R(e) {
             component_id: t,
             component_type: o.C.ANNOUNCEMENT_MODAL
         }
-    }), a.useEffect(() => {
+    }), r.useEffect(() => {
         let e = async () => {
             try {
                 if ("video" !== R.type || null == R.subtitles) return;
@@ -123,10 +123,10 @@ function R(e) {
                         i = new Blob([n], {
                             type: "text/vtt"
                         }),
-                        a = URL.createObjectURL(i);
+                        r = URL.createObjectURL(i);
                     return {
                         ...e,
-                        src: a
+                        src: r
                     }
                 });
                 ed(await Promise.all(e))
@@ -135,13 +135,13 @@ function R(e) {
             }
         };
         !0 !== ec.current && e(), ec.current = !0
-    }, [R, eo]), a.useEffect(() => () => {
+    }, [R, eo]), r.useEffect(() => () => {
         null != eo && eo.forEach(e => {
             URL.revokeObjectURL(e.src)
         })
-    }, [eo]), a.useEffect(() => {
-        ei.current = q, ea.current = $, er.current = X, el.current = J, es.current = et
-    }, [q, $, X, J, et]), a.useEffect(() => () => {
+    }, [eo]), r.useEffect(() => {
+        ei.current = q, er.current = $, ea.current = X, el.current = J, es.current = et
+    }, [q, $, X, J, et]), r.useEffect(() => () => {
         if ("video" === R.type || "embed" === R.type) {
             let [e, t] = eu();
             C.default.track(S.HAw.CHANGE_LOG_VIDEO_PLAYED, {
@@ -152,7 +152,7 @@ function R(e) {
                 seconds_unmuted: Math.round(t / 1e3)
             })
         }
-    }, [k, R.type]), a.useEffect(() => {
+    }, [k, R.type]), r.useEffect(() => {
         (0, I.Vh)(c.M.PREMIUM_MARKETING_MOMENT_ANNOUNCEMENT_UPSELL);
         let e = Date.now();
         return C.default.track(S.HAw.CHANGE_LOG_OPENED, {
@@ -167,7 +167,7 @@ function R(e) {
         }
     }, [k, n]), (0, i.jsx)(A.EOs, {
         "data-migration-pending": !0,
-        className: l()(b.zr, b.kv, r),
+        className: l()(b.zr, b.kv, a),
         transitionState: F,
         "aria-labelledby": Y,
         parentComponent: "PremiumAnnouncementModalVariant1",

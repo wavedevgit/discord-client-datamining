@@ -3,9 +3,9 @@ n.d(t, {
     A: () => L
 }), n(323874), n(14289), n(35956);
 var i = n(627968),
-    a = n(64700),
-    r = n(503698),
-    l = n.n(r),
+    r = n(64700),
+    a = n(503698),
+    l = n.n(a),
     s = n(873263),
     o = n(311907),
     d = n(397927),
@@ -40,15 +40,15 @@ function O() {
 let L = function(e) {
     let {
         initialSection: t
-    } = e, n = (0, s.zy)(), r = (0, s.W6)();
-    a.useEffect(() => {
+    } = e, n = (0, s.zy)(), a = (0, s.W6)();
+    r.useEffect(() => {
         "true" === new URLSearchParams(n.search).get("confirm-age") && c.h.dispatch({
             type: "AGE_GATE_MODAL_OPEN",
             source: v.w_.DEEP_LINK_PROMPT
         }).then(() => {
-            r.replace(x.BVt.ME)
+            a.replace(x.BVt.ME)
         })
-    }, [r, n]), a.useEffect(() => {
+    }, [a, n]), r.useEffect(() => {
         u.I(x.BVt.FRIENDS), (0, I.d)("friends")
     }, []);
     let g = (0, o.bG)([f.A], () => f.A.theme),
@@ -58,8 +58,8 @@ let L = function(e) {
             rows: P
         } = (0, o.cf)([C.Ay], () => C.Ay.getState()),
         D = (0, o.bG)([m.A], () => m.A.getSuggestionCount()),
-        M = a.useMemo(() => P.getRelationshipCounts(), [P]);
-    a.useEffect(() => {
+        M = r.useMemo(() => P.getRelationshipCounts(), [P]);
+    r.useEffect(() => {
         null != t && A.A.setInitialSection(t), 0 === M[x.eA$.FRIEND] && 0 === M[x.eA$.PENDING_INCOMING] && 0 === M[x.eA$.PENDING_OUTGOING] && 0 === M[x.eA$.BLOCKED] && A.A.transitionToSection(x.m3P.ADD_FRIEND)
     }, [t, M]);
     let j = e => {

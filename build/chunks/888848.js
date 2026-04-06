@@ -140,7 +140,7 @@ function G(e) {
             title: P.intl.string(P.t.fvOqBo)
         }), (0, s.jsxs)("div", {
             className: L.zH,
-            children: [(0, s.jsx)(U, {
+            children: [(0, s.jsx)(k, {
                 title: P.intl.string(P.t["5D/KEH"]),
                 content: S ? (0, s.jsxs)(s.Fragment, {
                     children: [(0, s.jsxs)("span", {
@@ -170,10 +170,10 @@ function G(e) {
             }), (0, s.jsx)(M, {
                 invoicePreview: W,
                 subscriptionPlan: A
-            }), (0, s.jsx)(U, {
+            }), (0, s.jsx)(k, {
                 title: P.intl.string(P.t.dnUzb6),
                 content: (0, y.Y)(t.createdAt ?? t.currentPeriodStart)
-            }), (0, s.jsx)(k, {
+            }), (0, s.jsx)(U, {
                 isCancelled: O,
                 subscriptionPeriodEnd: Q,
                 renewalPlan: D
@@ -196,18 +196,18 @@ function M(e) {
         subscriptionPlan: t,
         invoicePreview: n
     } = e;
-    if (null == t) return (0, s.jsx)(U, {
+    if (null == t) return (0, s.jsx)(k, {
         title: P.intl.string(P.t.KI7ERx),
         content: ""
     });
     let i = (0, v.CE)((0, v.$g)(t.price, t.currency), t.interval, t.intervalCount),
         l = n?.findInvoiceItemByPlanId(t.id);
-    if (null == l) return (0, s.jsx)(U, {
+    if (null == l) return (0, s.jsx)(k, {
         title: P.intl.string(P.t.KI7ERx),
         content: i
     });
     let a = (0, v.CE)((0, v.$g)(l.subscriptionPlanPrice, t.currency), t.interval, t.intervalCount);
-    return (0, s.jsx)(U, {
+    return (0, s.jsx)(k, {
         title: P.intl.string(P.t.KI7ERx),
         content: (0, s.jsxs)(s.Fragment, {
             children: [(0, s.jsx)(c.Text, {
@@ -230,7 +230,7 @@ function M(e) {
     })
 }
 
-function k(e) {
+function U(e) {
     let {
         isCancelled: t,
         subscriptionPeriodEnd: n,
@@ -238,7 +238,7 @@ function k(e) {
     } = e;
     if (null != i) {
         let e = (0, v.CE)((0, v.$g)(i.price, i.currency), i.interval, i.intervalCount);
-        return (0, s.jsx)(U, {
+        return (0, s.jsx)(k, {
             title: P.intl.string(P.t.hIhAM3),
             content: (0, s.jsxs)(s.Fragment, {
                 children: [(0, s.jsx)(c.Text, {
@@ -254,13 +254,13 @@ function k(e) {
             })
         })
     }
-    return (0, s.jsx)(U, {
+    return (0, s.jsx)(k, {
         title: t ? P.intl.string(P.t.enxcAl) : P.intl.string(P.t["Ms+6Zq"]),
         content: n
     })
 }
 
-function U(e) {
+function k(e) {
     let {
         title: t,
         content: n

@@ -3,9 +3,9 @@ n.d(t, {
     A: () => C
 });
 var i = n(627968),
-    a = n(64700),
-    r = n(503698),
-    l = n.n(r),
+    r = n(64700),
+    a = n(503698),
+    l = n.n(a),
     s = n(687498),
     o = n(158954),
     d = n(750506),
@@ -24,7 +24,7 @@ var i = n(627968),
 function C(e) {
     let {
         markAsDismissed: t
-    } = e, [n, r] = (0, a.useState)(!1), C = (0, o.zhh)({
+    } = e, [n, a] = (0, r.useState)(!1), C = (0, o.zhh)({
         opacity: +!!n,
         y: n ? 0 : -40,
         pointerEvents: n ? "all" : "none"
@@ -36,10 +36,10 @@ function C(e) {
             className: l()(g.kL, {
                 [g.DM]: n
             }),
-            onMouseLeave: () => r(!1),
+            onMouseLeave: () => a(!1),
             children: [(0, i.jsxs)("div", {
                 className: g.Zv,
-                onMouseEnter: () => r(!0),
+                onMouseEnter: () => a(!0),
                 children: [(0, i.jsx)("img", {
                     src: I.A,
                     alt: "",

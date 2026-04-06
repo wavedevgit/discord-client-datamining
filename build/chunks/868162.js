@@ -4,8 +4,8 @@ n.d(t, {
     x: () => T
 });
 var i = n(735438),
-    a = n.n(i),
-    r = n(311907),
+    r = n.n(i),
+    a = n(311907),
     l = n(73153),
     s = n(827343),
     o = n(617617),
@@ -48,7 +48,7 @@ function N(e, t, n) {
         type: u.E.INPUT_AND_OUTPUT
     } : e
 }
-class S extends r.Ay.DeviceSettingsStore {
+class S extends a.Ay.DeviceSettingsStore {
     static displayName = "ConnectedDeviceStore";
     static persistKey = "ConnectedDeviceStore";
     static migrations = [e => null == e.ignoredDevices ? {
@@ -92,27 +92,27 @@ let x = new S(l.h, {
                 t !== I.id && (I.justChanged = !0), I.id = t
             }
         });
-        let r = {};
+        let a = {};
         if (f.justChanged = !1, n.forEach(e => {
-                if (r[T(e)] = e.id, e.id === A.dx) {
+                if (a[T(e)] = e.id, e.id === A.dx) {
                     let t = e.originalId ?? e.originalName;
                     t !== f.id && (f.justChanged = !0), f.id = t
                 }
             }), !m) {
-            p = i, g = r, m = !0;
+            p = i, g = a, m = !0;
             return
         }
         let l = Object.keys(p),
             s = Object.keys(i),
             o = Object.keys(g),
-            d = Object.keys(r),
-            c = a().difference(l, s),
-            h = a().difference(o, d);
-        return c.length > 0 || h.length > 0 ? E = {} : (a().difference(s, l).forEach(e => {
+            d = Object.keys(a),
+            c = r().difference(l, s),
+            h = r().difference(o, d);
+        return c.length > 0 || h.length > 0 ? E = {} : (r().difference(s, l).forEach(e => {
             E[e] = N(E[e], e, u.E.INPUT)
-        }), a().difference(d, o).forEach(e => {
+        }), r().difference(d, o).forEach(e => {
             E[e] = N(E[e], e, u.E.OUTPUT)
-        })), !(a().isEqual(l, s) && a().isEqual(o, d)) && (p = i, g = r, !0)
+        })), !(r().isEqual(l, s) && r().isEqual(o, d)) && (p = i, g = a, !0)
     },
     CONNECTED_DEVICE_SWITCH: function(e) {
         let {

@@ -3,8 +3,8 @@ n.d(t, {
     A: () => _
 });
 var i = n(179771),
-    a = n(827343),
-    r = n(140175),
+    r = n(827343),
+    a = n(140175),
     l = n(430452),
     s = n(350535),
     o = n(636401),
@@ -37,14 +37,14 @@ let _ = {
                 args: {
                     input_mode: n,
                     self_mute: i,
-                    self_deaf: r
+                    self_deaf: a
                 }
             } = e, o = h(t);
-            null != n && a.A.setMode(n.type, {
+            null != n && r.A.setMode(n.type, {
                 shortcut: (0, s.OH)(n.shortcut)
-            }, o), null != i && i !== l.Ay.isSelfMute(o) && a.A.toggleSelfMute({
+            }, o), null != i && i !== l.Ay.isSelfMute(o) && r.A.toggleSelfMute({
                 context: o
-            }), null != r && r !== l.Ay.isSelfDeaf(o) && a.A.toggleSelfDeaf({
+            }), null != a && a !== l.Ay.isSelfDeaf(o) && r.A.toggleSelfDeaf({
                 context: o
             })
         }
@@ -62,10 +62,10 @@ let _ = {
                 args: {
                     user_id: n,
                     mute: i,
-                    volume: r
+                    volume: a
                 }
             } = e, s = h(t);
-            null != i && i !== l.Ay.isLocalMute(n, s) && a.A.toggleLocalMute(n, s), null != r && a.A.setLocalVolume(n, r, s)
+            null != i && i !== l.Ay.isLocalMute(n, s) && r.A.toggleLocalMute(n, s), null != a && r.A.setLocalVolume(n, a, s)
         }
     },
     [u.e$_.PUSH_TO_TALK]: {
@@ -81,7 +81,7 @@ let _ = {
                     active: t
                 }
             } = e;
-            l.Ay.getMode(A.x.DEFAULT) === u.TBI.PUSH_TO_TALK && (0, r.N)(t)
+            l.Ay.getMode(A.x.DEFAULT) === u.TBI.PUSH_TO_TALK && (0, a.N)(t)
         }
     }
 }

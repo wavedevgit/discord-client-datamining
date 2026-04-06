@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var a = n(397927),
-    r = n(73153),
+var r = n(397927),
+    a = n(73153),
     l = n(361158),
     s = n(80556),
     o = n(159329),
@@ -22,7 +22,7 @@ var a = n(397927),
     I = n(818348);
 let f = {
     init() {
-        r.h.subscribe("CONNECTION_OPEN", this.handleRequiredAction), r.h.subscribe("USER_REQUIRED_ACTION_UPDATE", this.handleRequiredAction), r.h.subscribe("CURRENT_USER_UPDATE", this.handleCurrentUserUpdate), A.default.addChangeListener(this.handleAuthenticationStoreChanged)
+        a.h.subscribe("CONNECTION_OPEN", this.handleRequiredAction), a.h.subscribe("USER_REQUIRED_ACTION_UPDATE", this.handleRequiredAction), a.h.subscribe("CURRENT_USER_UPDATE", this.handleCurrentUserUpdate), A.default.addChangeListener(this.handleAuthenticationStoreChanged)
     },
     handleRequiredAction(e) {
         let t = e.requiredAction;
@@ -41,7 +41,7 @@ let f = {
         }) : (0, l.B8)(() => (0, i.jsx)(u.A, {}), {
             layerKey: E._s,
             Layer: s.Ay
-        }) : t === p.a3B.AGREEMENTS ? (0, a.qfG)(e => (0, i.jsx)(m.default, {
+        }) : t === p.a3B.AGREEMENTS ? (0, r.qfG)(e => (0, i.jsx)(m.default, {
             ...e
         }), {
             modalKey: E.i$,
@@ -57,15 +57,15 @@ let f = {
         }, {
             layerKey: E._s,
             Layer: s.Ay
-        }) : null == t && ((0, l.dF)(E._s), (0, a.kBI)(E.i$) && (0, a.OoC)(E.i$)))
+        }) : null == t && ((0, l.dF)(E._s), (0, r.kBI)(E.i$) && (0, r.OoC)(E.i$)))
     },
     handleAuthenticationStoreChanged() {
-        null == A.default.getId() && ((0, l.dF)(E._s), (0, a.OoC)(E.i$), (0, a.OoC)(E.Pr), (0, a.OoC)(E.H1), (0, a.OoC)(g.V))
+        null == A.default.getId() && ((0, l.dF)(E._s), (0, r.OoC)(E.i$), (0, r.OoC)(E.Pr), (0, r.OoC)(E.H1), (0, r.OoC)(g.V))
     },
     handleCurrentUserUpdate(e) {
         let {
             user: t
         } = e;
-        t.verified && (0, a.OoC)(E.H1)
+        t.verified && (0, r.OoC)(E.H1)
     }
 }

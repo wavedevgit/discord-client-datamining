@@ -57,14 +57,14 @@ function L(e) {
         let e = b.default.getCurrentUser();
         return a()(null != e, "GuildIdentitySettingsPage: user cannot be undefined"), e
     }), D = (0, r.bG)([f.Ay], () => null != t ? f.Ay.getMember(t.id, L.id) : null), G = (0, r.bG)([T.A], () => !T.A.isFetchingProfile(L.id, t?.id)), M = (0, r.bG)([S.A], () => S.A.hidePersonalInformation), {
-        pendingAvatar: k,
-        pendingNameplate: U,
+        pendingAvatar: U,
+        pendingNameplate: k,
         ...w
     } = (0, r.cf)([p.A], () => p.A.getPendingChanges(t?.id)), V = (0, h.V7)({
         userId: L.id,
-        image: k
+        image: U
     }), B = (0, _.lw)({
-        pendingValue: U,
+        pendingValue: k,
         userValue: L?.collectibles?.nameplate,
         guildValue: D?.collectibles?.nameplate,
         guildId: t?.id

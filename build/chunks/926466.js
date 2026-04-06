@@ -3,9 +3,9 @@ n.d(t, {
     A: () => m
 });
 var i = n(627968),
-    a = n(64700),
-    r = n(735438),
-    l = n.n(r),
+    r = n(64700),
+    a = n(735438),
+    l = n.n(a),
     s = n(421380),
     o = n(397927),
     d = n(58149),
@@ -18,7 +18,7 @@ let _ = l().debounce(d.Ay.trackWithMetadata, 500),
         let {
             guild: t,
             title: n,
-            message: r,
+            message: a,
             image: l,
             type: m,
             imageMarginX: p,
@@ -30,7 +30,7 @@ let _ = l().debounce(d.Ay.trackWithMetadata, 500),
             cta: T,
             ctaColor: N
         } = e;
-        a.useEffect(() => {
+        r.useEffect(() => {
             _(u.HAw.CHANNEL_NOTICE_VIEWED, {
                 notice_type: m,
                 guild_id: t.id
@@ -88,7 +88,7 @@ let _ = l().debounce(d.Ay.trackWithMetadata, 500),
                     children: n
                 }) : null, (0, i.jsx)(o.Text, {
                     variant: "text-sm/normal",
-                    children: r
+                    children: a
                 }), S]
             })]
         })

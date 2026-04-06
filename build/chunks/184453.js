@@ -3,9 +3,9 @@ n.d(t, {
     A: () => x
 });
 var i = n(627968),
-    a = n(64700),
-    r = n(503698),
-    l = n.n(r),
+    r = n(64700),
+    a = n(503698),
+    l = n.n(a),
     s = n(696292),
     o = n(397927),
     d = n(881615),
@@ -27,7 +27,7 @@ var i = n(627968),
 function S(e) {
     let {
         tab: t
-    } = e, n = p.A.useField("selectedTab"), r = a.useMemo(() => (function(e) {
+    } = e, n = p.A.useField("selectedTab"), a = r.useMemo(() => (function(e) {
         switch (e) {
             case I.GlobalDiscoveryTab.SERVERS:
                 return (0, i.jsx)(o.RR9, {
@@ -42,7 +42,7 @@ function S(e) {
                     color: "currentColor"
                 })
         }
-    })(t), [t]), T = a.useMemo(() => (0, g.t)(t), [t]), S = n === t, x = a.useCallback(() => {
+    })(t), [t]), T = r.useMemo(() => (0, g.t)(t), [t]), S = n === t, x = r.useCallback(() => {
         switch (t) {
             case I.GlobalDiscoveryTab.QUESTS:
                 return S && _.A.resetState(), m.default.track(f.HAw.DISCOVERY_QUEST_TAB_CLICKED, {
@@ -85,7 +85,7 @@ function S(e) {
         }),
         children: [(0, i.jsx)("div", {
             className: N.wz,
-            children: r
+            children: a
         }), (0, i.jsx)(o.Text, {
             variant: "text-md/medium",
             color: "none",

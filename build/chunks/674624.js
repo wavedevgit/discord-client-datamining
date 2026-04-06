@@ -67,12 +67,12 @@ function M() {
                 analyticsLocations: D
             })
         }, [D]),
-        k = (0, l.useCallback)(() => {
+        U = (0, l.useCallback)(() => {
             (0, T.openUserSettings)(h.X.PREMIUM_GUILD_SUBSCRIPTIONS_PANEL, {
                 analyticsLocations: D
             })
         }, [D]),
-        U = (0, l.useCallback)(() => {
+        k = (0, l.useCallback)(() => {
             let e = (0, p.Ci)("openCustomAppSettings") ? h.X.DISPLAY_IN_APP_ICON_CATEGORY : h.X.APPEARANCE_IN_APP_ICON;
             (0, T.openUserSettings)(e, {
                 analyticsLocations: D
@@ -110,7 +110,7 @@ function M() {
             }),
             subscriptionRequired: !0,
             ctaText: v.intl.string(v.t.jVcuVY),
-            onCtaClick: k,
+            onCtaClick: U,
             primaryAsset: (0, s.jsx)(a.CIt, {
                 alt: "",
                 ariaHidden: !0
@@ -171,7 +171,7 @@ function M() {
             title: v.intl.string(v.t["GU+wqh"]),
             description: v.intl.string(v.t["1uPk1Z"]),
             ctaText: v.intl.string(v.t.jVcuVY),
-            onCtaClick: U,
+            onCtaClick: k,
             primaryAsset: O.A,
             categories: ["appearance"]
         }, {
@@ -264,6 +264,6 @@ function M() {
                 ariaHidden: !0
             }),
             categories: ["vip"]
-        }], [e, i, G, M, k, U, w, V, F, B, t]);
+        }], [e, i, G, M, U, k, w, V, F, B, t]);
     return (0, l.useMemo)(() => Y.filter(e => null != e && !z.includes(e.id)), [Y, z])
 }

@@ -3,11 +3,11 @@ n.d(t, {
     A: () => m
 });
 var i = n(311907),
-    a = n(73153),
-    r = n(927813),
+    r = n(73153),
+    a = n(927813),
     l = n(48128);
-let s = r.A.Millis.DAY,
-    o = 5 * r.A.Millis.MINUTE,
+let s = a.A.Millis.DAY,
+    o = 5 * a.A.Millis.MINUTE,
     d = {},
     c = !1,
     u = null,
@@ -36,7 +36,7 @@ class _ extends i.Ay.Store {
         return u
     }
 }
-let m = new _(a.h, {
+let m = new _(r.h, {
     LOGOUT: function() {
         d = {}, c = !1, u = null, A = null
     },

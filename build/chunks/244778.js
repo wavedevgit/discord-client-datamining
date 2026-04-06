@@ -36,7 +36,7 @@ var i = n(627968),
     D = n(979653),
     G = n(255631),
     M = n(193023);
-let k = () => {
+let U = () => {
         let e = (0, j._)();
         return (0, i.jsx)(I.HU, {
             text: e,
@@ -44,7 +44,7 @@ let k = () => {
             colorOptions: I.at.PREMIUM_TIER_2_NEW_GRADIENT_FILL
         })
     },
-    U = () => (0, i.jsx)("div", {
+    k = () => (0, i.jsx)("div", {
         className: P.Wm,
         children: (0, i.jsx)(c.Heading, {
             className: P.uC,
@@ -235,7 +235,7 @@ let k = () => {
             text: null != q ? R.intl.string(R.t.IBYG5U) : R.intl.string(R.t.ce1v3V),
             className: P.ls,
             colorOptions: q === O.pe.TIER_0 ? Y ? I.at.PREMIUM_TIER_0_GRADIENT_FILL : I.at.PREMIUM_TIER_0_WHITE_FILL : Y ? W ? I.at.PREMIUM_TIER_2_OLD_GRADIENT_FILL : I.at.PREMIUM_TIER_2_NEW_GRADIENT_FILL : I.at.PREMIUM_TIER_2_WHITE_FILL
-        }) : ea ? (0, i.jsx)(k, {}) : (0, i.jsx)(U, {});
+        }) : ea ? (0, i.jsx)(U, {}) : (0, i.jsx)(k, {});
         let eo = q === O.pe.TIER_0 || Q === O.PremiumTypes.TIER_0 || G === O.PremiumTypes.TIER_0;
         return (0, i.jsx)(g.f5, {
             value: M,

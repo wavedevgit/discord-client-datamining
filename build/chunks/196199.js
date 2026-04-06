@@ -34,7 +34,7 @@ function I(e) {
         fractionalState: D
     } = (0, a.A)({
         forceFetch: !0
-    }), G = j?.isPremiumGroupMember(), M = t?.isPausedOrPausePending === !0 && D === C.xc.NONE, k = s.useMemo(() => I.some(e => null == e.premiumGuildSubscription && e.isAvailable()), [I]), U = M ? N.intl.string(N.t.mOWsF1) : k ? void 0 : N.intl.string(N.t.xr4m5B), w = s.useMemo(() => {
+    }), G = j?.isPremiumGroupMember(), M = t?.isPausedOrPausePending === !0 && D === C.xc.NONE, U = s.useMemo(() => I.some(e => null == e.premiumGuildSubscription && e.isAvailable()), [I]), k = M ? N.intl.string(N.t.mOWsF1) : U ? void 0 : N.intl.string(N.t.xr4m5B), w = s.useMemo(() => {
         if (null == t) return 0;
         let e = x.Ay.getNumIncludedPremiumGuildSubscriptionSlots(t.planId);
         return 0 === e || e !== I.length ? 0 : Math.max(0, e - P)
@@ -45,7 +45,7 @@ function I(e) {
             className: v.ek
         }), (0, i.jsx)(f.A, {}), (0, i.jsx)(S.A, {}), w > 0 && (0, i.jsx)(E.A, {
             count: w,
-            disabledReason: U
+            disabledReason: k
         }), G && (0, i.jsx)(d.A, {}), !R && (0, i.jsx)(A.A, {}), (0, i.jsxs)("div", {
             className: v.C_,
             children: [(0, i.jsx)(h.A, {

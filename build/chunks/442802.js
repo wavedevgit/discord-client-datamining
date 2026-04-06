@@ -3,8 +3,8 @@ n.d(t, {
     A: () => c
 });
 var i = n(627968),
-    a = n(64700),
-    r = n(106778);
+    r = n(64700),
+    a = n(106778);
 let l = [n(426560)],
     s = ["#FFFFFF"],
     o = 1e3 / 60,
@@ -66,9 +66,9 @@ function c(e) {
         sprites: u = l,
         spriteColors: A = s,
         confettiConfig: h
-    } = e, [_, m] = a.useState(null), [p, g] = a.useState(null), E = (0, r.f9)(p, _), I = a.useMemo(() => new r.OH({
+    } = e, [_, m] = r.useState(null), [p, g] = r.useState(null), E = (0, a.f9)(p, _), I = r.useMemo(() => new a.OH({
         wind: c
-    }), [c]), f = a.useCallback(() => {
+    }), [c]), f = r.useCallback(() => {
         let e = p?.getCanvas();
         if (null == e) return;
         let t = e.getBoundingClientRect();
@@ -88,15 +88,15 @@ function c(e) {
             }
         })
     }, [E, p, h]);
-    return a.useEffect(() => {
+    return r.useEffect(() => {
         let e = n ? setInterval(f, o) : null;
         return () => clearInterval(e)
     }, [n, f]), (0, i.jsxs)(i.Fragment, {
-        children: [(0, i.jsx)(r.Fk, {
+        children: [(0, i.jsx)(a.Fk, {
             ref: g,
             className: t,
             environment: I
-        }), (0, i.jsx)(r.K_, {
+        }), (0, i.jsx)(a.K_, {
             ref: m,
             colors: A,
             sprites: u,

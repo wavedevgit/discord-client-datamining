@@ -1,6 +1,6 @@
 /** chunk id: 983511 params = (module,exports,require) **/
 n.d(t, {
-    default: () => k
+    default: () => U
 });
 var i = n(627968),
     s = n(64700),
@@ -124,21 +124,21 @@ function G(e) {
         }
     }), {
         analyticsLocations: M
-    } = (0, g.Ay)(), [k] = (0, A.Kq)({
+    } = (0, g.Ay)(), [U] = (0, A.Kq)({
         subscriptionId: t.id,
         renewal: !0,
         currency: t.currency,
         paymentSourceId: t.paymentSourceId,
         analyticsLocations: M,
         analyticsLocation: m.A.GUILD_BOOST_SLOT_CANCELLATION_MODAL_CURRENT_INVOICE_PREVIEW
-    }), U = null != G ? (0, v.Om)(t, C[0]?.quantity ?? 0, G.id) : null, [w] = (0, A.Kq)({
+    }), k = null != G ? (0, v.Om)(t, C[0]?.quantity ?? 0, G.id) : null, [w] = (0, A.Kq)({
         subscriptionId: t.id,
-        items: U,
+        items: k,
         renewal: !0,
         analyticsLocations: M,
         analyticsLocation: m.A.GUILD_BOOST_SLOT_CANCELLATION_MODAL_RENEWAL_INVOICE_PREVIEW
     });
-    if (null == w || null == L || null == G || null == k) return (0, i.jsx)(d.y$y, {});
+    if (null == w || null == L || null == G || null == U) return (0, i.jsx)(d.y$y, {});
     let V = t.items.some(e => {
             let {
                 planId: t
@@ -156,7 +156,7 @@ function G(e) {
             } = e;
             return y.pW.has(t)
         }),
-        F = V || B ? w.total - k.total : -k.total,
+        F = V || B ? w.total - U.total : -U.total,
         {
             interval: H,
             intervalCount: z
@@ -191,7 +191,7 @@ function G(e) {
                     }),
                     value: (0, I.CE)((0, I.$g)(F, t.currency), H, z),
                     className: P.Au
-                }), null != U && U.length > 0 ? (0, i.jsxs)("div", {
+                }), null != k && k.length > 0 ? (0, i.jsxs)("div", {
                     children: [(0, i.jsx)(T.pK, {}), (0, i.jsx)(S.m0, {
                         premiumSubscription: t,
                         renewalInvoice: w,
@@ -254,7 +254,7 @@ function M(e) {
     })
 }
 
-function k(e) {
+function U(e) {
     let t, {
         guildBoostSlot: n,
         transitionState: l,

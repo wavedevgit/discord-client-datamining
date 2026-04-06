@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var a = n(311907),
-    r = n(554146),
+var r = n(311907),
+    a = n(554146),
     l = n(342494),
     s = n(397927),
     o = n(793574),
@@ -19,8 +19,8 @@ var a = n(311907),
 let p = e => {
     let {
         targetElementRef: t
-    } = e, p = (0, A.Tp)(), g = (0, a.bG)([u.A], () => u.A.getReminderStateId()), E = (0, a.bG)([u.A], () => u.A.getReferralsRemaining()), I = (0, a.bG)([d.A], () => {
-        let e = d.A.settings.userContent?.recurringDismissibleContentStates[r.M.REFERRAL_PROGRAM_POPOVER_V2];
+    } = e, p = (0, A.Tp)(), g = (0, r.bG)([u.A], () => u.A.getReminderStateId()), E = (0, r.bG)([u.A], () => u.A.getReferralsRemaining()), I = (0, r.bG)([d.A], () => {
+        let e = d.A.settings.userContent?.recurringDismissibleContentStates[a.M.REFERRAL_PROGRAM_POPOVER_V2];
         return e?.numTimesDismissed ?? 0
     }), f = () => {
         (0, A.ne)(g)
