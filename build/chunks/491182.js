@@ -28,8 +28,8 @@ let A = function(e) {
         childrenHeader: C,
         childrenSystemMessage: N,
         childrenButtons: E,
-        childrenMessageContent: I,
-        childrenAccessories: _,
+        childrenMessageContent: _,
+        childrenAccessories: I,
         messageRef: b,
         focusProps: S = {
             offset: {
@@ -78,8 +78,8 @@ let A = function(e) {
                 onMouseLeave: P,
                 children: [x, v, (0, l.jsxs)("div", {
                     className: h.PG,
-                    children: [N, C, null == N && I]
-                }), _, null != E ? (0, l.jsx)("div", {
+                    children: [N, C, null == N && _]
+                }), I, null != E ? (0, l.jsx)("div", {
                     className: h.UD,
                     children: E
                 }) : null]

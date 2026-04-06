@@ -23,8 +23,8 @@ let c = new Map,
     C = null,
     N = null,
     E = 0,
-    I = null,
     _ = null,
+    I = null,
     b = 0;
 class S extends l.Ay.Store {
     static displayName = "ConversationsStore";
@@ -83,10 +83,10 @@ class S extends l.Ay.Store {
         return d.has(e)
     }
     getSelectedConversation(e) {
-        return _ !== e || null == I ? null : c.get(e)?.conversationMetadataById.get(I)?.conversation ?? null
+        return I !== e || null == _ ? null : c.get(e)?.conversationMetadataById.get(_)?.conversation ?? null
     }
     getSelectedConversationColor(e) {
-        return _ !== e || null == I ? null : c.get(e)?.conversationMetadataById.get(I)?.color ?? null
+        return I !== e || null == _ ? null : c.get(e)?.conversationMetadataById.get(_)?.color ?? null
     }
 }
 let T = new S(i.h, {
@@ -173,7 +173,7 @@ let T = new S(i.h, {
             channelId: t,
             messageId: n
         } = e;
-        return A = !1, f = t ?? null, x = null, v = null, _ !== t && (I = null, _ = null), null != t && !d.has(t) && !c.has(t) && (0, a.f)("channel_select") && (null != n ? (0, o.WF)({
+        return A = !1, f = t ?? null, x = null, v = null, I !== t && (_ = null, I = null), null != t && !d.has(t) && !c.has(t) && (0, a.f)("channel_select") && (null != n ? (0, o.WF)({
             channelId: t,
             around: n,
             limit: 25
@@ -255,6 +255,6 @@ let T = new S(i.h, {
             channelId: t,
             conversationId: n
         } = e;
-        return (_ !== t || I !== n) && (_ = t, I = n, null != t && null != n && (C = n, N = t, E++), !0)
+        return (I !== t || _ !== n) && (I = t, _ = n, null != t && null != n && (C = n, N = t, E++), !0)
     }
 })

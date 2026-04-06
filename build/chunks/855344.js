@@ -1,7 +1,7 @@
 /** chunk id: 855344 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => I
+    A: () => _
 });
 var l = n(627968);
 n(64700);
@@ -24,12 +24,12 @@ var i = n(311907),
     C = n(746080),
     N = n(985018),
     E = n(183819);
-let I = e => {
+let _ = e => {
     let {
         roleIcon: t,
         guild: n
     } = e, {
-        name: I
+        name: _
     } = t;
     (0, r.Ay)(() => {
         p.default.track(v.HAw.OPEN_POPOUT, {
@@ -38,12 +38,12 @@ let I = e => {
             ...(0, o.dI)(h.A.getChannel(f.A.getChannelId(n.id)))
         })
     });
-    let _ = (0, i.bG)([A.A], () => null != t.roleId ? A.A.getRole(n.id, t.roleId) : void 0),
-        b = (0, d.U)(_),
+    let I = (0, i.bG)([A.A], () => null != t.roleId ? A.A.getRole(n.id, t.roleId) : void 0),
+        b = (0, d.U)(I),
         S = b ? N.intl.formatToPlainString(N.t.t0928V, {
-            name: I
+            name: _
         }) : N.intl.formatToPlainString(N.t.UDDkGy, {
-            name: I
+            name: _
         }),
         T = {
             ...t,
@@ -80,7 +80,7 @@ let I = e => {
                             variant: "heading-md/semibold",
                             className: E.S3,
                             children: (0, l.jsx)(s.A, {
-                                children: I
+                                children: _
                             })
                         }), (0, l.jsx)(a.Text, {
                             variant: "text-sm/normal",

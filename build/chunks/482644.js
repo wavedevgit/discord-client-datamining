@@ -2,7 +2,7 @@
 "use strict";
 n.r(t), n.d(t, {
     baseRules: () => E,
-    customRules: () => I
+    customRules: () => _
 });
 var l = n(627968),
     i = n(64700),
@@ -35,7 +35,7 @@ let v = o().defaultRules.link,
         }, n)
     },
     E = null != d.A ? d.A.defaultRules : null,
-    I = {
+    _ = {
         link: {
             parse(e, t, n) {
                 let l, i = e[2],

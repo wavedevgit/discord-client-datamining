@@ -26,8 +26,8 @@ function A(e, t) {
         allowList: C = !1,
         allowLinks: N = !1,
         allowDevLinks: E = !1,
-        previewLinkTarget: I = !1,
-        viewingChannelId: _
+        previewLinkTarget: _ = !1,
+        viewingChannelId: I
     } = t, b = (0, c.I)({
         location: "useMessageRenderedContent"
     }), [S, T] = i.useState(!1), j = i.useCallback(e => {
@@ -59,7 +59,7 @@ function A(e, t) {
                     value: {
                         messageId: e.id,
                         channelId: e.channel_id,
-                        viewingChannelId: _,
+                        viewingChannelId: I,
                         guildId: (0, a.U)(e),
                         setHasSpoilerEmbeds: j
                     },
@@ -79,8 +79,8 @@ function A(e, t) {
             allowList: C,
             allowLinks: N,
             allowDevLinks: E,
-            previewLinkTarget: I,
-            viewingChannelId: _
+            previewLinkTarget: _,
+            viewingChannelId: I
         })
-    }, [e.content, e.customRenderedContent, e.embeds, e.interaction, e.state, e.type, A, f, p, x, v, C, N, I, E, _, b.enabled, S])
+    }, [e.content, e.customRenderedContent, e.embeds, e.interaction, e.state, e.type, A, f, p, x, v, C, N, _, E, I, b.enabled, S])
 }

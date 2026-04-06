@@ -1,25 +1,28 @@
 /** chunk id: 475889 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    H: () => c
+    H: () => d
 });
 var l = n(64700),
     i = n(574381),
     s = n(311907),
-    a = n(858466),
-    r = n(869180),
-    o = n(725613),
-    u = n(652215);
+    a = n(919638),
+    r = n(858466),
+    o = n(869180),
+    u = n(725613),
+    c = n(652215);
 
-function c(e) {
+function d(e) {
     let {
         hasRequestedStartTimes: t,
-        startTime: n
-    } = (0, s.cf)([o.A], () => ({
-        hasRequestedStartTimes: o.A.hasRequestedStartTimes(e.guild_id),
-        startTime: o.A.getStartTime(e)
-    })), c = (0, r.a)(e.guild_id, "useStartTime"), d = ((0, i.un)() || (0, i.m0)()) && !c, m = e.type === u.rbe.GUILD_VOICE;
+        startTime: n,
+        isGuildUnavailable: d
+    } = (0, s.cf)([u.A, a.A], () => ({
+        hasRequestedStartTimes: u.A.hasRequestedStartTimes(e.guild_id),
+        startTime: u.A.getStartTime(e),
+        isGuildUnavailable: a.A.isUnavailable(e.guild_id)
+    })), m = (0, o.a)(e.guild_id, "useStartTime"), g = ((0, i.un)() || (0, i.m0)()) && !m, h = e.type === c.rbe.GUILD_VOICE;
     return l.useEffect(() => {
-        t || !m || d || (0, a.U)(e.guild_id)
-    }, [m, e.guild_id, t, d]), n
+        t || !h || g || d || (0, r.U)(e.guild_id)
+    }, [h, e.guild_id, t, g, d]), n
 }

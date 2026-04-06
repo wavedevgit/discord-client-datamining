@@ -23,8 +23,8 @@ var l = n(627968),
     C = n(688810),
     N = n(709066),
     E = n(657331),
-    I = n(427157),
-    _ = n(696451),
+    _ = n(427157),
+    I = n(696451),
     b = n(954571),
     S = n(370480),
     T = n(633452),
@@ -92,7 +92,7 @@ function U(e) {
                 u = r.find(e => null != e.application),
                 c = x.A.get(e),
                 d = u?.application,
-                g = d?.bot != null ? new I.A(d.bot) : null;
+                g = d?.bot != null ? new _.A(d.bot) : null;
             return S.iC.includes(d?.id ?? "") ? t = (0, l.jsx)(R.A, {
                 className: D.AO,
                 color: i,
@@ -156,7 +156,7 @@ function P(e) {
             ...(0, v.H$)(d)
         })
     }, [r, o, c, d]);
-    let m = (0, u.bG)([_.Ay], () => _.Ay.getSelfMember(d)?.roles.includes(o) ?? !1, [d, o]);
+    let m = (0, u.bG)([I.Ay], () => I.Ay.getSelfMember(d)?.roles.includes(o) ?? !1, [d, o]);
     return t = 1 === a.length && 1 === a[0].length ? k.intl.string(k.t.jDym4E) : 1 === a.length ? k.intl.format(k.t["0eBj3x"], {}) : k.intl.format(k.t.D7uftB, {}), (0, l.jsxs)("div", {
         className: D.SW,
         children: [(0, l.jsx)("div", {
