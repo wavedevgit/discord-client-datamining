@@ -1,143 +1,143 @@
 /** chunk id: 582240 params = (module,exports,require) **/
 n.d(t, {
-    A: () => C
+    A: () => S
 });
 var i = n(627968),
-    s = n(64700),
-    l = n(503698),
-    r = n.n(l),
-    a = n(311907),
+    a = n(64700),
+    r = n(503698),
+    l = n.n(r),
+    s = n(311907),
     o = n(391973),
     d = n(684013),
-    u = n(964486),
-    c = n(555528),
-    h = n(531685),
-    g = n(5463),
+    c = n(964486),
+    u = n(555528),
+    _ = n(531685),
+    h = n(5463),
     m = n(365971),
-    p = n(41984),
-    A = n(129537),
-    x = n(127242),
-    f = n(968898),
+    f = n(41984),
+    g = n(129537),
+    p = n(127242),
+    A = n(968898),
     E = n(481484),
-    S = n(545807),
-    I = n(652215),
-    T = n(620819);
+    I = n(545807),
+    x = n(652215),
+    b = n(620819);
 let v = [],
-    C = s.memo(function(e) {
+    S = a.memo(function(e) {
         let {
             widget: t,
             renderWidget: n,
-            renderTitle: l,
-            renderButtons: C,
-            resizeValidation: j,
-            containerRenderGate: y,
-            className: w,
-            dragContainerClassName: _
-        } = e, O = (0, a.bG)([c.A], () => c.A.getWidgetConfig(t.type), [t.type]), N = (0, f.RE)(t.id, f.X1), b = (0, E.A)(), [R, M] = s.useState(() => y?.stores ?? v);
-        (0, u.Ay)(() => {
-            M(y?.stores ?? v)
+            renderTitle: r,
+            renderButtons: S,
+            resizeValidation: C,
+            containerRenderGate: T,
+            className: y,
+            dragContainerClassName: N
+        } = e, w = (0, s.bG)([u.A], () => u.A.getWidgetConfig(t.type), [t.type]), L = (0, A.RE)(t.id, A.X1), O = (0, E.A)(), [j, P] = a.useState(() => T?.stores ?? v);
+        (0, c.Ay)(() => {
+            P(T?.stores ?? v)
         });
-        let L = (0, a.bG)(R, () => y?.shouldRender({
+        let R = (0, s.bG)(j, () => T?.shouldRender({
                 widget: t,
-                locked: b
-            }) ?? !0, [y, b, t]),
-            z = (0, S.A)(),
-            D = (0, a.bG)([h.A], () => h.A.windowSize((0, m.Q2)(z))),
-            k = s.useCallback((e, t, n, i, s) => {
-                let l = h.A.windowSize((0, m.Q2)((0, S.b)())),
-                    r = (0, g.NO)(n, l),
-                    a = (0, g.R9)(i, l);
+                locked: O
+            }) ?? !0, [T, O, t]),
+            D = (0, I.A)(),
+            M = (0, s.bG)([_.A], () => _.A.windowSize((0, m.Q2)(D))),
+            k = a.useCallback((e, t, n, i, a) => {
+                let r = _.A.windowSize((0, m.Q2)((0, I.b)())),
+                    l = (0, h.NO)(n, r),
+                    s = (0, h.R9)(i, r);
                 (0, o.uD)(t), (0, o.Ju)({
                     widgetId: t,
-                    anchor: r,
-                    size: a
+                    anchor: l,
+                    size: s
                 });
-                let u = e === A.P.MOVE,
-                    p = (0, g.Ly)(n, l.width, l.height, s.width, s.height);
-                d.A.track(I.HAw.OVERLAY_LAYOUT_UPDATED, {
-                    was_resized: !u,
-                    was_dragged: u,
-                    widget_type: c.A.getWidgetType(t),
-                    window_width: l.width,
-                    window_height: l.height,
-                    widget_width: s.width,
-                    widget_height: s.height,
-                    widget_left: p.left,
-                    widget_top: p.top
+                let c = e === g.P.MOVE,
+                    f = (0, h.Ly)(n, r.width, r.height, a.width, a.height);
+                d.A.track(x.HAw.OVERLAY_LAYOUT_UPDATED, {
+                    was_resized: !c,
+                    was_dragged: c,
+                    widget_type: u.A.getWidgetType(t),
+                    window_width: r.width,
+                    window_height: r.height,
+                    widget_width: a.width,
+                    widget_height: a.height,
+                    widget_left: f.left,
+                    widget_top: f.top
                 })
             }, []),
-            P = s.useCallback(e => {
+            G = a.useCallback(e => {
                 (0, o.uD)(e)
             }, []),
             {
-                id: G,
-                pinned: V,
-                zIndex: U,
-                size: H,
-                anchor: Y,
-                minSize: Z
+                id: z,
+                pinned: U,
+                zIndex: V,
+                size: F,
+                anchor: W,
+                minSize: H
             } = t,
-            W = s.useMemo(() => (0, g.fd)(H, D), [H, D]),
-            X = (0, g.Nv)(Y, D),
+            B = a.useMemo(() => (0, h.fd)(F, M), [F, M]),
+            Y = (0, h.Nv)(W, M),
             {
-                resizeX: F,
-                resizeY: K,
-                dragAnywhere: B,
-                constrainAutoSizeToExplicitResizeEvents: Q
-            } = O ?? {},
-            q = !b,
-            J = V || !b,
-            $ = s.useMemo(() => ({
+                resizeX: X,
+                resizeY: Z,
+                dragAnywhere: K,
+                constrainAutoSizeToExplicitResizeEvents: J
+            } = w ?? {},
+            Q = !O,
+            q = U || !O,
+            $ = a.useMemo(() => ({
                 minX: 0,
                 minY: 0,
-                maxX: D.width,
-                maxY: D.height
-            }), [D]),
-            ee = s.useCallback(e => n({
+                maxX: M.width,
+                maxY: M.height
+            }), [M]),
+            ee = a.useCallback(e => n({
                 ...e,
                 widget: t,
                 dragging: null != e.dragOperation,
-                className: w
-            }), [t, n, w]),
-            et = s.useCallback(e => null != l || null != C ? (0, i.jsxs)("div", {
-                className: r()(T.vJ, N && T.vw),
-                children: [l?.(t), C?.(t, e)]
-            }) : null, [t, l, N, C]),
-            en = (0, a.bG)([x.A], () => x.A.hasRenderDebugMode(p.x7.WidgetAreas)),
-            ei = s.useMemo(() => {
-                if (null != j) return e => j({
+                className: y
+            }), [t, n, y]),
+            et = a.useCallback(e => null != r || null != S ? (0, i.jsxs)("div", {
+                className: l()(b.vJ, L && b.vw),
+                children: [r?.(t), S?.(t, e)]
+            }) : null, [t, r, L, S]),
+            en = (0, s.bG)([p.A], () => p.A.hasRenderDebugMode(f.x7.WidgetAreas)),
+            ei = a.useMemo(() => {
+                if (null != C) return e => C({
                     ...e,
                     widget: t
                 })
-            }, [j, t]);
-        return L ? (0, i.jsx)(A.A, {
-            className: r()({
-                [T.Yz]: en,
-                [T.xu]: en && !V,
-                [T.E]: en && V
-            }, _),
-            id: G,
-            size: W,
-            anchor: X,
+            }, [C, t]);
+        return R ? (0, i.jsx)(g.A, {
+            className: l()({
+                [b.Yz]: en,
+                [b.xu]: en && !U,
+                [b.E]: en && U
+            }, N),
+            id: z,
+            size: B,
+            anchor: Y,
             container: $,
-            minSize: Z ?? {
+            minSize: H ?? {
                 width: 0,
                 height: 0
             },
-            hidden: !J,
-            locked: b,
-            resizeX: F ?? !1,
-            resizeY: K ?? !1,
+            hidden: !q,
+            locked: O,
+            resizeX: X ?? !1,
+            resizeY: Z ?? !1,
             style: {
-                zIndex: U
+                zIndex: V
             },
-            dragAnywhere: B ?? !1,
-            constrainAutoSizeToExplicitResizeEvents: Q ?? !1,
-            active: q,
+            dragAnywhere: K ?? !1,
+            constrainAutoSizeToExplicitResizeEvents: J ?? !1,
+            active: Q,
             onUpdate: k,
-            onClick: P,
-            targetWindow: z,
-            forceShowExtras: N,
+            onClick: G,
+            targetWindow: D,
+            forceShowExtras: L,
             renderExtras: et,
             resizeValidation: ei,
             children: ee

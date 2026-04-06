@@ -42,35 +42,35 @@ function k(e) {
         originGuildId: B,
         channelId: M,
         messageId: R,
-        roleId: G,
-        sessionId: D,
+        roleId: D,
+        sessionId: G,
         initialTabSection: U,
         initialScrollTarget: V,
         transitionState: F,
         onClose: w,
-        sourceAnalyticsLocations: W = []
-    } = e, H = k === L.ME ? void 0 : k, z = (0, u.Ay)(n.id, H), Y = o.Ay.getName(H, M, n), X = (0, d.GV)(), {
+        sourceAnalyticsLocations: z = []
+    } = e, W = k === L.ME ? void 0 : k, H = (0, u.Ay)(n.id, W), Y = o.Ay.getName(W, M, n), X = (0, d.GV)(), {
         analyticsLocations: K
-    } = (0, r.Ay)([...W, s.A.USER_PROFILE_MODAL]), Q = (0, c.pb)({
+    } = (0, r.Ay)([...z, s.A.USER_PROFILE_MODAL]), J = (0, c.pb)({
         layout: "MODAL",
         userId: n.id,
-        sourceSessionId: D,
-        guildId: H,
+        sourceSessionId: G,
+        guildId: W,
         channelId: M,
         messageId: R,
-        roleId: G
-    }), J = (0, E.A)(n), q = (0, _.A)({
+        roleId: D
+    }), Q = (0, E.A)(n), q = (0, _.A)({
         user: n,
         guildId: B,
         channelId: M,
-        displayProfile: z,
+        displayProfile: H,
         onClose: w
     });
     return (0, t.jsx)(r.f5, {
         value: K,
         children: (0, t.jsx)(c.of, {
-            value: Q,
-            isLoaded: z?.isLoaded,
+            value: J,
+            isLoaded: H?.isLoaded,
             children: (0, t.jsx)(A.N, {
                 value: V,
                 children: (0, t.jsx)(a.EOs, {
@@ -91,25 +91,25 @@ function k(e) {
                         }),
                         children: (0, t.jsxs)(I.A, {
                             user: n,
-                            displayProfile: z,
+                            displayProfile: H,
                             themeType: P.d.MODAL,
                             children: [(0, t.jsx)(j.A, {
                                 children: (0, t.jsx)(h.A, {
                                     user: n,
-                                    guildId: H,
+                                    guildId: W,
                                     viewProfileItem: q
                                 })
                             }), (0, t.jsxs)("div", {
                                 children: [(0, t.jsx)(g.A, {
                                     user: n,
-                                    displayProfile: z,
+                                    displayProfile: H,
                                     themeType: P.d.MODAL
                                 }), (0, t.jsxs)("div", {
                                     className: S.El,
                                     children: [(0, t.jsx)(p.A, {
                                         user: n,
-                                        displayProfile: z,
-                                        guildId: H,
+                                        displayProfile: H,
+                                        guildId: W,
                                         channelId: M,
                                         themeType: P.d.MODAL
                                     }), (0, t.jsx)(y.A, {
@@ -136,7 +136,7 @@ function k(e) {
                                             })
                                         }), (0, t.jsx)(v.A, {
                                             user: n,
-                                            guildId: H
+                                            guildId: W
                                         }), (0, t.jsx)(b.A, {
                                             user: n
                                         })]
@@ -150,21 +150,21 @@ function k(e) {
                                 children: [(0, t.jsx)(f.A, {
                                     className: S.Xh,
                                     user: n,
-                                    guildId: H,
+                                    guildId: W,
                                     nickname: Y,
-                                    pronouns: z?.pronouns,
+                                    pronouns: H?.pronouns,
                                     nicknameVariant: "heading-xl/bold",
                                     tags: (0, t.jsx)(x.A, {
-                                        displayProfile: z,
+                                        displayProfile: H,
                                         themeType: P.d.MODAL,
                                         onClose: w
                                     })
                                 }), (0, t.jsx)(N.A, {
                                     user: n,
                                     currentUser: i,
-                                    displayProfile: z,
-                                    guildId: H,
-                                    items: J,
+                                    displayProfile: H,
+                                    guildId: W,
+                                    items: Q,
                                     initialSection: U ?? T.RP.BOT_INFO,
                                     onClose: w
                                 })]

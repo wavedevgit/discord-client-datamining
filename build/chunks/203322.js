@@ -1,16 +1,16 @@
 /** chunk id: 203322 params = (module,exports,require) **/
-a.d(t, {
-    A: () => i
+n.d(t, {
+    A: () => r
 });
-var n = a(73153),
-    r = a(395011);
+var i = n(73153),
+    a = n(395011);
 
-function i(e, t) {
-    r.A.getPopoutInitializationStages()[e] !== t && n.h.dispatch({
+function r(e, t) {
+    a.A.getPopoutInitializationStages()[e] !== t && i.h.dispatch({
         type: "OVERLAY_OOP_POPOUT_INITIALIZATION_STAGE_CHANGED",
         update: {
             [e]: t
         }
     })
 }
-a(96175)
+n(96175)

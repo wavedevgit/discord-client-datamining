@@ -43,8 +43,8 @@ function j(e) {
     }), P = (0, a.bG)([s.A], () => s.A.isFetchingUserOutbox(n.id)), O = n.id === i.id, S = (0, a.bG)([d.A, r.A], () => {
         let e = O ? d.A.getStatus() : r.A.getStatus(n.id);
         return e === l.clD.OFFLINE || e === l.clD.INVISIBLE
-    }), k = (0, a.bG)([c.A], () => c.A.getUserProfile(n.id)?.private === !0), B = y.length > 0 || null != E, M = !k && null == E && null == L && null != T, R = !S && (B || M), G = N.length > 0;
-    return R || G || !P ? (0, t.jsxs)(l.IpV, {
+    }), k = (0, a.bG)([c.A], () => c.A.getUserProfile(n.id)?.private === !0), B = y.length > 0 || null != E, M = !k && null == E && null == L && null != T, R = !S && (B || M), D = N.length > 0;
+    return R || D || !P ? (0, t.jsxs)(l.IpV, {
         className: h.XG,
         fade: !0,
         children: [R ? (0, t.jsx)(A.A, {
@@ -74,7 +74,7 @@ function j(e) {
                     })
                 })]
             })
-        }) : null, G ? (0, t.jsx)(A.A, {
+        }) : null, D ? (0, t.jsx)(A.A, {
             heading: b.intl.string(b.t.M0zgnT),
             introText: O ? b.intl.format(b.t["4bk9Ak"], {
                 learnMoreHook: (e, n) => (0, t.jsx)(l.MzZ, {

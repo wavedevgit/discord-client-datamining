@@ -42,7 +42,7 @@ function _(e) {
         onClick: n,
         type: i,
         accessibleLabel: a
-    } = e, l = "remove" === i ? d.intl.string(d.t["2A+piL"]) : d.intl.string(d.t.GaEG4t);
+    } = e, l = "remove" === i ? d.intl.string(d.t.N86XcP) : d.intl.string(d.t.wgIPss);
     return (0, t.jsx)(r.m, {
         text: l,
         ariaHidden: !0,

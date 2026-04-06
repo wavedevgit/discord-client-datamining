@@ -1,32 +1,32 @@
 /** chunk id: 452075 params = (module,exports,require) **/
 n.d(t, {
-    e: () => p
+    e: () => f
 }), n(321073);
 var i = n(64700),
-    s = n(311907),
-    l = n(532624),
-    r = n(531685),
-    a = n(350535),
+    a = n(311907),
+    r = n(532624),
+    l = n(531685),
+    s = n(350535),
     o = n(365971),
     d = n(395011),
-    u = n(222506),
-    c = n(545807);
-let h = new Set(["shift", "ctrl", "control", "alt", "meta", "os"]);
+    c = n(222506),
+    u = n(545807);
+let _ = new Set(["shift", "ctrl", "control", "alt", "meta", "os"]);
 
-function g(e) {
+function h(e) {
     let {
         keyCode: t,
         shiftKey: n,
         metaKey: i,
-        altKey: s,
-        ctrlKey: l
+        altKey: a,
+        ctrlKey: r
     } = e;
     return {
         keyCode: t,
         shiftKey: n,
         metaKey: i,
-        altKey: s,
-        ctrlKey: l
+        altKey: a,
+        ctrlKey: r
     }
 }
 
@@ -34,49 +34,49 @@ function m(e, t) {
     return e.keyCode === t.keyCode && e.shiftKey === t.shiftKey && e.metaKey === t.metaKey && e.altKey === t.altKey && e.ctrlKey === t.ctrlKey
 }
 
-function p() {
-    let e = (0, c.A)(),
-        t = (0, s.bG)([d.A], () => d.A.getTargetPID(), []),
-        n = (0, s.bG)([l.Ay], () => {
-            let e = l.Ay.getOverlayKeybind();
+function f() {
+    let e = (0, u.A)(),
+        t = (0, a.bG)([d.A], () => d.A.getTargetPID(), []),
+        n = (0, a.bG)([r.Ay], () => {
+            let e = r.Ay.getOverlayKeybind();
             return null != e ? e.shortcut : []
         }, []),
-        p = (0, s.bG)([u.A], () => u.A.isInputLocked(t), [t]),
-        A = (0, s.bG)([r.A], () => {
+        f = (0, a.bG)([c.A], () => c.A.isInputLocked(t), [t]),
+        g = (0, a.bG)([l.A], () => {
             let t = (0, o.Q2)(e);
-            return r.A.isVisible(t) && r.A.isFocused(t)
+            return l.A.isVisible(t) && l.A.isFocused(t)
         }, [e]),
-        x = i.useRef([]),
-        f = i.useMemo(() => (0, a.pi)(n).map(e => g(e)), [n]),
+        p = i.useRef([]),
+        A = i.useMemo(() => (0, s.pi)(n).map(e => h(e)), [n]),
         E = i.useMemo(() => n.length > 0, [n]),
-        S = !p && E && A;
+        I = !f && E && g;
     i.useEffect(() => {
-        x.current = []
-    }, [p, f]), i.useEffect(() => {
-        if (!S) {
-            x.current = [];
+        p.current = []
+    }, [f, A]), i.useEffect(() => {
+        if (!I) {
+            p.current = [];
             return
         }
         let t = e => {
-                let t = g(e),
-                    n = x.current,
+                let t = h(e),
+                    n = p.current,
                     i = n.some(e => m(e, t)),
-                    s = function(e) {
+                    a = function(e) {
                         let t = e.key.toLowerCase();
-                        for (let e of h)
+                        for (let e of _)
                             if (t.includes(e)) return !0;
                         return !1
                     }(e);
-                i || s || n.push(t), 0 !== f.length && n.length === f.length && f.every(e => n.some(t => m(e, t))) && (e.preventDefault(), e.stopPropagation())
+                i || a || n.push(t), 0 !== A.length && n.length === A.length && A.every(e => n.some(t => m(e, t))) && (e.preventDefault(), e.stopPropagation())
             },
             n = e => {
-                let t = g(e),
-                    n = x.current,
+                let t = h(e),
+                    n = p.current,
                     i = n.findIndex(e => m(e, t));
                 i > -1 && n.splice(i, 1)
             };
         return e.addEventListener("keydown", t, !0), e.addEventListener("keyup", n, !0), () => {
             e.removeEventListener("keydown", t, !0), e.removeEventListener("keyup", n, !0)
         }
-    }, [S, f, e])
+    }, [I, A, e])
 }

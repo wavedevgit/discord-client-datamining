@@ -1,22 +1,22 @@
 /** chunk id: 833147 params = (module,exports,require) **/
 n.d(t, {
-    A: () => l
+    A: () => o
 });
-var a = n(627968),
-    i = n(536246),
-    o = n(398866),
+var i = n(627968),
+    l = n(536246),
+    a = n(398866),
     r = n(670840);
 
-function l(e) {
+function o(e) {
     let {
         application: t,
         queryParams: n,
-        url: l
+        url: o
     } = e;
-    return (0, a.jsx)(o.o, {
-        allowPopups: (0, i.b)(t),
+    return (0, i.jsx)(a.o, {
+        allowPopups: (0, l.b)(t),
         referrerPolicy: "origin",
-        url: l,
+        url: o,
         queryParams: n,
         className: r.p,
         shouldRefocus: !1

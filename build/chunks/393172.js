@@ -33,8 +33,8 @@ var n = i(627968),
     w = i(810412),
     b = i(412477),
     O = i(395011),
-    G = i(243612),
-    D = i(147905);
+    D = i(243612),
+    G = i(147905);
 i(392164);
 var P = i(652215),
     M = i(731854),
@@ -52,7 +52,7 @@ function U(e) {
         size: l,
         locked: s,
         flipped: o
-    } = e, u = (0, D.Ob)(l), A = (0, r.yK)([y.default, S.A], () => t.map(e => {
+    } = e, u = (0, G.Ob)(l), A = (0, r.yK)([y.default, S.A], () => t.map(e => {
         let t = y.default.getUser(e);
         if (null == t) return;
         let n = S.A.getChannel(i.get(e)?.voiceState.channelId);
@@ -109,12 +109,12 @@ let Y = l.memo(function(e) {
     let C = -1 !== S ? y.slice(0, S) : y,
         _ = -1 !== S ? y.slice(S) : [],
         O = v.get(_[0]),
-        G = u === P.f5z.ALWAYS && -1 !== S;
+        D = u === P.f5z.ALWAYS && -1 !== S;
     return N ? (0, n.jsxs)("div", {
         className: R.h8,
         children: [C.map(e => {
             let l = v.get(e);
-            return null == l ? null : (0, n.jsx)(D.Ay, {
+            return null == l ? null : (0, n.jsx)(G.Ay, {
                 sortedVoiceState: l,
                 channel: s,
                 widgetId: t,
@@ -127,7 +127,7 @@ let Y = l.memo(function(e) {
                 displayUserMode: u,
                 locked: c
             }, e)
-        }), G && 1 === _.length && null != O && (0, n.jsx)(D.Ay, {
+        }), D && 1 === _.length && null != O && (0, n.jsx)(G.Ay, {
             sortedVoiceState: O,
             channel: s,
             widgetId: t,
@@ -139,10 +139,10 @@ let Y = l.memo(function(e) {
             displayNameMode: o,
             displayUserMode: u,
             locked: c
-        }, _[0]), G && _.length > 1 && (0, n.jsx)(U, {
+        }, _[0]), D && _.length > 1 && (0, n.jsx)(U, {
             hiddenVoiceStates: _,
             voiceStateMap: v,
-            size: (0, D.FT)(I),
+            size: (0, G.FT)(I),
             locked: c,
             flipped: !x
         })]
@@ -204,7 +204,7 @@ function z(e) {
             }
             return i
         }, [s, e, d, t])]
-    }(M.x.DEFAULT, e.maxDisplayedVoiceStates), d = (0, r.bG)([f.A], () => f.A.getStreamerActiveStreamMetadata()), c = (0, G.b4)(), y = (0, u.h)(c?.id), T = (0, r.cf)([f.A, j.default, O.A], () => {
+    }(M.x.DEFAULT, e.maxDisplayedVoiceStates), d = (0, r.bG)([f.A], () => f.A.getStreamerActiveStreamMetadata()), c = (0, D.b4)(), y = (0, u.h)(c?.id), T = (0, r.cf)([f.A, j.default, O.A], () => {
         let e = f.A.getCurrentUserActiveStream();
         return {
             displayUserMode: j.default.getDisplayUserMode(),

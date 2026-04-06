@@ -58,7 +58,7 @@ function x(e) {
                 nameplate: null
             }),
             type: v ? "reset" : "remove",
-            accessibleLabel: A.intl.string(v ? A.t.GaEG4t : A.t["2A+piL"])
+            accessibleLabel: A.intl.string(v ? A.t.neYqhR : A.t["9zwziY"])
         } : void 0;
     return (0, t.jsx)(_.N, {
         variant: "bar",

@@ -1,43 +1,43 @@
 /** chunk id: 127938 params = (module,exports,require) **/
 n.d(t, {
-    A: () => d
+    A: () => u
 });
-var a = n(627968),
-    i = n(64700),
-    o = n(311907),
+var i = n(627968),
+    l = n(64700),
+    a = n(311907),
     r = n(833147),
-    l = n(33445),
-    c = n(91242),
-    _ = n(193855),
-    s = n(360469);
+    o = n(33445),
+    s = n(91242),
+    c = n(193855),
+    d = n(360469);
 
-function d() {
-    let e = (0, o.bG)([c.A], () => c.A.getConnectedFrame()),
-        t = (0, o.bG)([c.A], () => e?.applicationId != null && c.A.isProxyTicketRefreshing(e.applicationId), [e]),
-        n = i.useCallback(e => {
+function u() {
+    let e = (0, a.bG)([s.A], () => s.A.getConnectedFrame()),
+        t = (0, a.bG)([s.A], () => e?.applicationId != null && s.A.isProxyTicketRefreshing(e.applicationId), [e]),
+        n = l.useCallback(e => {
             let {
                 application: t
             } = e;
-            return (0, a.jsx)(_.A, {
+            return (0, i.jsx)(c.A, {
                 applicationId: t.id
             })
         }, []),
-        d = i.useCallback(t => {
+        u = l.useCallback(t => {
             let {
                 application: n
-            } = t, i = {};
-            null != e && (i.instance_id = "example-cl-instance", i.platform = s.vu.DESKTOP, null != e.proxyTicket && (i.discord_proxy_ticket = e.proxyTicket));
-            let o = e?.url;
-            return (0, a.jsx)(r.A, {
+            } = t, l = {};
+            null != e && (l.instance_id = "example-cl-instance", l.platform = d.vu.DESKTOP, null != e.proxyTicket && (l.discord_proxy_ticket = e.proxyTicket));
+            let a = e?.url;
+            return (0, i.jsx)(r.A, {
                 application: n,
-                queryParams: i,
-                url: o
+                queryParams: l,
+                url: a
             })
         }, [e]);
-    return (0, a.jsx)(l.E, {
+    return (0, i.jsx)(o.E, {
         activity: e,
         isLoading: t,
         renderHeader: n,
-        renderActivityIFrameWithLoadedData: d
+        renderActivityIFrameWithLoadedData: u
     })
 }

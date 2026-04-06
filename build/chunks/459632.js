@@ -1,28 +1,28 @@
 /** chunk id: 459632 params = (module,exports,require) **/
 n.d(t, {
-    A: () => _
+    A: () => c
 });
-var a = n(627968);
+var i = n(627968);
 n(64700);
-var i = n(397927),
-    o = n(688810),
+var l = n(397927),
+    a = n(688810),
     r = n(384059),
-    l = n(709562),
-    c = n(985018);
+    o = n(709562),
+    s = n(985018);
 
-function _(e) {
+function c(e) {
     let {
         onClick: t,
         ...n
     } = e, {
-        parentAnalyticsLocation: _
-    } = (0, o.Ay)();
-    return (0, a.jsx)(l.A, {
-        label: c.intl.string(c.t["UKOtz+"]),
-        iconComponent: i.jNK,
+        parentAnalyticsLocation: c
+    } = (0, a.Ay)();
+    return (0, i.jsx)(o.A, {
+        label: s.intl.string(s.t["UKOtz+"]),
+        iconComponent: l.jNK,
         tooltipPosition: "bottom",
         onClick: e => {
-            (0, r.X)(_, r.O.MORE), t(e)
+            (0, r.X)(c, r.O.MORE), t(e)
         },
         ...n
     })

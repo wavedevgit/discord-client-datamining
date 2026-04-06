@@ -76,7 +76,7 @@ function I(e) {
                 avatarDecoration: null
             }),
             type: j ? "reset" : "remove",
-            accessibleLabel: x.intl.string(j ? x.t.GaEG4t : x.t["2A+piL"])
+            accessibleLabel: x.intl.string(j ? x.t.pJsnPf : x.t["2U4Bga"])
         } : void 0;
     return (0, t.jsx)(p.N, {
         variant: "square",

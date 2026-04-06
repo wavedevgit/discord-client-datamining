@@ -1,16 +1,16 @@
 /** chunk id: 365995 params = (module,exports,require) **/
 n.d(t, {
-    A: () => l
+    A: () => o
 });
-var a = n(64700),
-    i = n(311907),
-    o = n(87001),
+var i = n(64700),
+    l = n(311907),
+    a = n(87001),
     r = n(652215);
 
-function l() {
-    let e = (0, i.bG)([o.A], () => o.A.getWindow(r.MLl.ACTIVITY_POPOUT)),
-        t = a.useMemo(() => e?.window.document, [e]),
-        n = a.useMemo(() => t?.getElementById("app-mount"), [t]);
+function o() {
+    let e = (0, l.bG)([a.A], () => a.A.getWindow(r.MLl.ACTIVITY_POPOUT)),
+        t = i.useMemo(() => e?.window.document, [e]),
+        n = i.useMemo(() => t?.getElementById("app-mount"), [t]);
     return {
         popoutWindow: e,
         currentDocument: t,

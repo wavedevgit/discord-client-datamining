@@ -60,7 +60,7 @@ function I(e) {
                 }), (0, r.WU)(null)
             },
             type: P ? "reset" : "remove",
-            accessibleLabel: m.intl.string(P ? m.t.GaEG4t : m.t["2A+piL"])
+            accessibleLabel: m.intl.string(P ? m.t.Y0mxy1 : m.t.twB3fz)
         } : void 0;
     return (0, t.jsx)(x.N, {
         variant: "square",

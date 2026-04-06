@@ -1,28 +1,28 @@
 /** chunk id: 193855 params = (module,exports,require) **/
 n.d(t, {
-    A: () => s
+    A: () => d
 });
-var a = n(627968),
-    i = n(64700),
-    o = n(311907),
+var i = n(627968),
+    l = n(64700),
+    a = n(311907),
     r = n(780376),
-    l = n(625180),
-    c = n(91242),
-    _ = n(905579);
+    o = n(625180),
+    s = n(91242),
+    c = n(905579);
 
-function s(e) {
+function d(e) {
     let {
         applicationId: t
-    } = e, n = (0, o.bG)([c.A], () => c.A.getConnectedFrame()), s = i.useCallback(async () => {
-        await l.A.refreshProxyTicket({
+    } = e, n = (0, a.bG)([s.A], () => s.A.getConnectedFrame()), d = l.useCallback(async () => {
+        await o.A.refreshProxyTicket({
             applicationId: t
-        }), _.A.popInFrame()
+        }), c.A.popInFrame()
     }, [t]);
-    return (0, a.jsx)(r.d, {
+    return (0, i.jsx)(r.d, {
         hasActivity: null != n,
         applicationId: t,
         isRichPresenceInvite: !0,
-        onConfirmClosePopout: s,
+        onConfirmClosePopout: d,
         channelId: void 0
     })
 }
