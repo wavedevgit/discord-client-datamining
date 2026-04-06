@@ -19,8 +19,8 @@ var l = t(627968),
     A = t(954571),
     P = t(252424),
     I = t(927578),
-    g = t(580630),
-    b = t(652215),
+    b = t(580630),
+    g = t(652215),
     f = t(788868),
     y = t(985018),
     x = t(747114);
@@ -74,9 +74,9 @@ function T(e) {
     } = e, {
         analyticsLocations: h,
         sourceAnalyticsLocations: C
-    } = (0, p.Ay)(u.A.GUILD_BOOSTING_PREMIUM_UPSELL), N = null == n || null == n.premiumSubscriptionType, L = I.Ay.getPrice(f.gD.PREMIUM_MONTH_TIER_2, !1, !1, T), R = (0, g.$g)(L.amount, L.currency), j = (0, _.V)(), D = j?.trial_id, k = j?.subscription_trial?.sku_id === f.pe.TIER_2;
+    } = (0, p.Ay)(u.A.GUILD_BOOSTING_PREMIUM_UPSELL), N = null == n || null == n.premiumSubscriptionType, L = I.Ay.getPrice(f.gD.PREMIUM_MONTH_TIER_2, !1, !1, T), R = (0, b.$g)(L.amount, L.currency), j = (0, _.V)(), D = j?.trial_id, k = j?.subscription_trial?.sku_id === f.pe.TIER_2;
     return i.useEffect(() => {
-        A.default.track(b.HAw.PREMIUM_UPSELL_VIEWED, {
+        A.default.track(g.HAw.PREMIUM_UPSELL_VIEWED, {
             type: f.e.GUILD_PREMIUM_UPSELL_MODAL,
             location_stack: C
         })
@@ -129,7 +129,7 @@ function T(e) {
                                 analyticsLocations: h,
                                 analyticsObject: {
                                     ...E,
-                                    section: b.JJy.PREMIUM_GUILD_PURCHASE_MODAL
+                                    section: g.JJy.PREMIUM_GUILD_PURCHASE_MODAL
                                 },
                                 analyticsSourceLocation: P,
                                 onSubscriptionConfirmation: S,

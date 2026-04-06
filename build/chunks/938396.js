@@ -9,8 +9,8 @@ var a = l(627968),
     o = l(892227),
     s = l(311907),
     d = l(964892),
-    u = l(916845),
-    c = l(732955),
+    c = l(916845),
+    u = l(732955),
     p = l(303136),
     m = l(320118),
     h = l(976860),
@@ -71,7 +71,7 @@ function O(e) {
         if (e && null != _) {
             let e = (0, o.default)(new Date(_.next_reward_date), new Date);
             return (0, a.jsxs)(a.Fragment, {
-                children: [(0, a.jsx)(c.EYj, {
+                children: [(0, a.jsx)(u.EYj, {
                     variant: "text-xs/normal",
                     color: "text-default",
                     children: T.intl.format(S.default["AvL/At"], {
@@ -91,7 +91,7 @@ function O(e) {
         gradientColor: "blue",
         modal: !0,
         closeOnClickOutside: !0,
-        children: (0, a.jsx)(c.NPJ, {
+        children: (0, a.jsx)(u.NPJ, {
             theme: L ? C.NJ8.DARKER : void 0,
             children: e => (0, a.jsxs)("div", {
                 className: i()(e, A.j),
@@ -100,7 +100,7 @@ function O(e) {
                     className: A.yG
                 }), (0, a.jsxs)("div", {
                     className: A.Qs,
-                    children: [(0, a.jsx)(u.q, {
+                    children: [(0, a.jsx)(c.q, {
                         onClick: r
                     }), (0, a.jsxs)("div", {
                         className: A.hQ,
@@ -108,23 +108,23 @@ function O(e) {
                             className: A.y$,
                             children: [(P ?? 0) > 0 && (0, a.jsxs)("div", {
                                 className: A.E2,
-                                children: [(0, a.jsx)(c.EYj, {
+                                children: [(0, a.jsx)(u.EYj, {
                                     variant: "display-lg",
                                     className: A.K,
                                     children: P ?? 0
-                                }), (0, a.jsx)(c.EYj, {
+                                }), (0, a.jsx)(u.EYj, {
                                     variant: "text-xs/normal",
                                     color: "text-muted",
                                     children: T.intl.string(S.default.KclK9z)
                                 })]
                             }), O]
-                        }), (0, a.jsx)(c.$nd, {
+                        }), (0, a.jsx)(u.$nd, {
                             text: h,
                             variant: "primary",
                             size: "sm",
                             onClick: y,
                             fullWidth: !0
-                        }), (0, a.jsx)(c.EYj, {
+                        }), (0, a.jsx)(u.EYj, {
                             variant: "text-xs/normal",
                             color: k ? "text-default" : "text-muted",
                             className: A.CU,

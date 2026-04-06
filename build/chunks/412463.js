@@ -12,8 +12,8 @@ var a = l(627968),
     o = l(417597),
     s = l(397927),
     d = l(73153),
-    u = l(830382),
-    c = l(73825),
+    c = l(830382),
+    u = l(73825),
     p = l(793574),
     m = l(688810),
     h = l(937008),
@@ -30,13 +30,13 @@ let _ = e => {
             applicationId: a
         } = e, {
             analyticsLocations: s
-        } = (0, m.Ay)(p.A.PAYMENT_FLOW_TEST_PAGE), d = n.useRef(null), c = n.useRef(null), [h, x] = n.useState(() => (0, r.A)());
+        } = (0, m.Ay)(p.A.PAYMENT_FLOW_TEST_PAGE), d = n.useRef(null), u = n.useRef(null), [h, x] = n.useState(() => (0, r.A)());
         n.useEffect(() => {
-            (d.current !== t || c.current !== l) && (x((0, r.A)()), d.current = t, c.current = l)
+            (d.current !== t || u.current !== l) && (x((0, r.A)()), d.current = t, u.current = l)
         }, [t, l]);
         let [b, y] = (0, o.yK)([g.A], () => [g.A.isFetching(t), g.A.get(t)]);
         return n.useEffect(() => {
-            null != y || b || (0, u.EX)(a, t, i.g.VARIANTS_GROUP).catch(e => {})
+            null != y || b || (0, c.EX)(a, t, i.g.VARIANTS_GROUP).catch(e => {})
         }, [a, t, y, b]), {
             loadId: h,
             analyticsLocations: s,
@@ -53,7 +53,7 @@ let _ = e => {
             subscriptionPlanId: t
         } = e;
         n.useEffect(() => {
-            f.A.isLoadedForPremiumSKUs() || d.h.wait(() => (0, c.zS)())
+            f.A.isLoadedForPremiumSKUs() || d.h.wait(() => (0, u.zS)())
         }, []);
         let l = (0, o.bG)([f.A], () => null != t ? f.A.get(t) : null);
         return {
@@ -87,8 +87,8 @@ let _ = e => {
             onClose: i,
             onComplete: o,
             initialPlanId: d,
-            purchaseType: u,
-            stepConfigs: c,
+            purchaseType: c,
+            stepConfigs: u,
             loadId: p,
             excludeSubscriptionPlansBySKU: m,
             renderHeader: f,
@@ -105,12 +105,12 @@ let _ = e => {
         _ && (C.disablePurchasesForStorybook = !0);
         let j = `${n}-${r}-${p}`;
         return (0, a.jsx)(x.PaymentContextProvider, {
-            stepConfigs: c,
+            stepConfigs: u,
             applicationId: l,
             skuIDs: null != n ? [n] : [],
             isGift: r,
             activeSubscription: null,
-            purchaseType: u,
+            purchaseType: c,
             excludeSubscriptionPlansBySKU: m,
             children: (0, a.jsx)(v.Y, {
                 ...C,

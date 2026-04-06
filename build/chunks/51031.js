@@ -1,6 +1,6 @@
 /** chunk id: 51031 params = (module,exports,require) **/
 l.d(t, {
-    bU: () => u
+    bU: () => c
 });
 var a = l(627968),
     n = l(64700),
@@ -12,7 +12,7 @@ let d = {
         value: "",
         label: "No Guild (main profile)"
     },
-    u = {
+    c = {
         title: "Editable Tile Button Examples",
         stories: [{
             name: "Avatar Button",

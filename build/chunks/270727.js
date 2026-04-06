@@ -51,9 +51,9 @@ let s = {
                     loading: t,
                     shouldUseTabularNums: l,
                     ...s
-                } = e, [d, u] = (0, n.useState)(s.balance);
+                } = e, [d, c] = (0, n.useState)(s.balance);
                 return (0, n.useEffect)(() => {
-                    null == d && null != s.balance && u(s.balance)
+                    null == d && null != s.balance && c(s.balance)
                 }, [s.balance, d]), (0, a.jsxs)("div", {
                     className: o.YG,
                     children: [(0, a.jsx)(i.Gy, {
@@ -61,7 +61,7 @@ let s = {
                         balance: t ? null : d,
                         className: l ? o.jG : void 0
                     }), (0, a.jsx)(r.$nd, {
-                        onClick: () => u(s.balance),
+                        onClick: () => c(s.balance),
                         text: "Update Balance"
                     })]
                 })
@@ -82,9 +82,9 @@ let s = {
                     loadingDuration: t,
                     shouldUseTabularNums: l,
                     ...s
-                } = e, [d, u] = (0, n.useState)(s.balance);
+                } = e, [d, c] = (0, n.useState)(s.balance);
                 return (0, n.useEffect)(() => {
-                    u(s.balance)
+                    c(s.balance)
                 }, [s.balance]), (0, a.jsxs)("div", {
                     className: o.YG,
                     children: [(0, a.jsx)(i.Gy, {
@@ -93,8 +93,8 @@ let s = {
                         className: l ? o.jG : void 0
                     }), (0, a.jsx)(r.$nd, {
                         onClick: () => {
-                            u(null), setTimeout(() => {
-                                u(s.balance)
+                            c(null), setTimeout(() => {
+                                c(s.balance)
                             }, t)
                         },
                         text: "Simulate Loading State"

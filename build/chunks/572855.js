@@ -149,7 +149,7 @@ function j(e) {
     })
 }
 
-function w(e) {
+function L(e) {
     let {
         item: t,
         canCopyImage: a,
@@ -165,9 +165,9 @@ function w(e) {
             sourceMetadata: a,
             width: i,
             height: l
-        } = e, s = L(M.intl.string(M.t.ILJuBq), "name", {
+        } = e, s = w(M.intl.string(M.t.ILJuBq), "name", {
             subtextLineClamp: 1
-        }), r = L(M.intl.string(M.t["3Nf9u2"]), "size"), o = L(M.intl.string(M.t.eOB2eR), "alt", {
+        }), r = w(M.intl.string(M.t["3Nf9u2"]), "size"), o = w(M.intl.string(M.t.eOB2eR), "alt", {
             subtextLineClamp: 2
         });
         if (a?.identifier?.type !== "attachment") return null;
@@ -242,7 +242,7 @@ function w(e) {
     })
 }
 
-function L(e, t, a) {
+function w(e, t, a) {
     let l = i.useCallback(e => {
         (0, g.C)(e, () => (0, c.showToast)({
             message: M.intl.string(M.t.mGZ66D),
@@ -271,7 +271,7 @@ function P(e) {
         spacing: 18,
         onRequestClose: () => s(!1),
         animation: c.YNO.Animation.NONE,
-        renderPopout: () => (0, n.jsx)(w, {
+        renderPopout: () => (0, n.jsx)(L, {
             item: t,
             canCopyImage: _,
             canCopyLink: A,

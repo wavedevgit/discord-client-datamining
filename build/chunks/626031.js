@@ -9,13 +9,13 @@ var a = l(627968),
     o = l(687498),
     s = l(397927),
     d = l(475743),
-    u = l(626584),
-    c = l(572009),
+    c = l(626584),
+    u = l(572009),
     p = l(14115),
     m = l(115093),
     h = l(132182);
-let x = new u.A("BalanceCounter"),
-    b = (0, c._$)(void 0) === m.B.PRODUCTION,
+let x = new c.A("BalanceCounter"),
+    b = (0, u._$)(void 0) === m.B.PRODUCTION,
     y = e => null == e ? 0 : `${e.toFixed(0)}`.length,
     f = e => {
         let {
@@ -24,7 +24,7 @@ let x = new u.A("BalanceCounter"),
             onValueChange: r,
             onValueReached: i,
             targetTotalCounterTime: d = 3e3
-        } = e, [u, c] = (0, n.useState)(0), m = (0, n.useRef)(null), h = (0, n.useRef)(null);
+        } = e, [c, u] = (0, n.useState)(0), m = (0, n.useRef)(null), h = (0, n.useRef)(null);
         (0, n.useEffect)(() => {
             if (null === t) return;
             if (null === m.current) {
@@ -61,7 +61,7 @@ let x = new u.A("BalanceCounter"),
                     l(y(g))
                 },
                 onRest: () => {
-                    if (c(u + 1), i(), !b && null !== h.current && null !== m.current) {
+                    if (u(c + 1), i(), !b && null !== h.current && null !== m.current) {
                         let e = Date.now();
                         x.log("Balance Counter finished updating: ", {
                             time: e - h.current.lastChangedAt,
@@ -84,7 +84,7 @@ let x = new u.A("BalanceCounter"),
             value: t,
             className: l,
             ...r
-        } = e, o = null === t, [u, c] = (0, n.useState)(null), p = (0, n.useMemo)(() => y(t), [t]), m = (0, d.A)(p) ?? 0, x = (0, n.useMemo)(() => null === u ? Math.max(m, p) : Math.max(p, u), [m, p, u]), b = `${o?0:x}ch`;
+        } = e, o = null === t, [c, u] = (0, n.useState)(null), p = (0, n.useMemo)(() => y(t), [t]), m = (0, d.A)(p) ?? 0, x = (0, n.useMemo)(() => null === c ? Math.max(m, p) : Math.max(p, c), [m, p, c]), b = `${o?0:x}ch`;
         return (0, a.jsx)(s.Text, {
             variant: "text-md/semibold",
             className: i()(h.S, o ? void 0 : h.r, l),
@@ -94,7 +94,7 @@ let x = new u.A("BalanceCounter"),
             },
             children: o ? null : (0, a.jsx)(f, {
                 onSetDigitCount: e => {
-                    e !== u && c(e)
+                    e !== c && u(e)
                 },
                 value: t,
                 ...r

@@ -9,11 +9,11 @@ var a = l(627968),
     o = l(582754),
     s = l(736653),
     d = l(210951);
-let u = {
+let c = {
         width: 60,
         height: 60
     },
-    c = e => {
+    u = e => {
         let {
             currentAnimationType: t,
             animationTypeRef: l,
@@ -35,12 +35,12 @@ let u = {
             Component: n,
             ...r
         } = (0, i.N)(t ?? "earn");
-        return c({
+        return u({
             currentAnimationType: t,
             ...l,
             ...r
         }), (0, a.jsx)(n, {
-            ...u,
+            ...c,
             size: "custom",
             className: d.E$,
             useLottieDefaultColors: !0
@@ -54,12 +54,12 @@ let u = {
             Component: n,
             ...i
         } = (0, r.q)(t ?? "earn");
-        return c({
+        return u({
             currentAnimationType: t,
             ...l,
             ...i
         }), (0, a.jsx)(n, {
-            ...u,
+            ...c,
             size: "custom",
             className: d.E$,
             useLottieDefaultColors: !0

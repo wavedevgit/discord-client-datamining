@@ -9,8 +9,8 @@ var a = l(627968),
     o = l(158954),
     s = l(311907),
     d = l(314116),
-    u = l(435371),
-    c = l(421380),
+    c = l(435371),
+    u = l(421380),
     p = l(397927),
     m = l(384904),
     h = l(73825),
@@ -158,8 +158,8 @@ let Y = {
                             }), (0, a.jsx)(N.A, {
                                 subscriptionTier: e,
                                 premiumModalAnalyticsLocation: {},
-                                color: c.XD.PRIMARY,
-                                look: c.pR.FILLED
+                                color: u.XD.PRIMARY,
+                                look: u.pR.FILLED
                             })]
                         }), (0, a.jsx)(p.cGx, {}), (0, a.jsxs)(p.BJc, {
                             direction: "horizontal",
@@ -227,7 +227,7 @@ let Y = {
                                     placeholder: "Promotion Code",
                                     value: S,
                                     onChange: e => A(e)
-                                }), (0, a.jsx)(u.m_, {
+                                }), (0, a.jsx)(c.m_, {
                                     text: "Need Promotion Code",
                                     shouldShow: S.length < 1,
                                     children: (0, a.jsx)(p.Button, {
@@ -287,7 +287,7 @@ let Y = {
                                 selectionMode: "single",
                                 fullWidth: !0
                             })]
-                        }), (0, a.jsx)(u.m_, {
+                        }), (0, a.jsx)(c.m_, {
                             text: "Already subscribed",
                             shouldShow: V,
                             children: (0, a.jsx)(p.Button, {

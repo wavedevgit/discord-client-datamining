@@ -2,9 +2,9 @@
 l.d(t, {
     Hq: () => d,
     LB: () => p,
-    MG: () => c,
+    MG: () => u,
     nB: () => s,
-    wn: () => u
+    wn: () => c
 });
 var a = l(627968);
 l(64700);
@@ -35,7 +35,7 @@ let s = () => (0, a.jsx)("hr", {
             })]
         })
     },
-    u = e => {
+    c = e => {
         let {
             children: t
         } = e;
@@ -44,7 +44,7 @@ let s = () => (0, a.jsx)("hr", {
             children: t
         })
     },
-    c = e => (0, a.jsx)("div", {
+    u = e => (0, a.jsx)("div", {
         className: o.wO,
         children: e.children
     }),

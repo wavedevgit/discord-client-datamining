@@ -9,8 +9,8 @@ var a = l(627968),
     o = l(397927),
     s = l(67281),
     d = l(664111),
-    u = l(994500),
-    c = l(287809),
+    c = l(994500),
+    u = l(287809),
     p = l(403362),
     m = l(784018),
     h = l(38445);
@@ -25,7 +25,7 @@ let x = {
                 orientation: l,
                 title: m,
                 autoplay: x
-            } = e, b = (0, r.yK)([u.A, c.default], () => u.A.getFriendIDs().map(e => c.default.getUser(e)).filter(p.Vq)), [y, f] = n.useState(new Set), g = n.useCallback((e, t) => {
+            } = e, b = (0, r.yK)([c.A, u.default], () => c.A.getFriendIDs().map(e => u.default.getUser(e)).filter(p.Vq)), [y, f] = n.useState(new Set), g = n.useCallback((e, t) => {
                 f(l => {
                     let a = new Set(l);
                     return t ? a.add(e) : a.delete(e), a

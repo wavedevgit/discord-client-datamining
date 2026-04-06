@@ -1,6 +1,6 @@
 /** chunk id: 226846 params = (module,exports,require) **/
 l.d(t, {
-    q: () => u
+    q: () => c
 });
 var a = l(627968);
 l(64700);
@@ -10,21 +10,21 @@ var n = l(397927),
     o = l(252561),
     s = l(818348),
     d = l(529816);
-let u = {
+let c = {
     name: "Choose Payment Source Type",
     id: "choose-payment-source-type",
     component: function(e) {
         let {
             isEligibleForTrial: t,
             onlyStripeCardEnabled: l,
-            paymentRequestWalletsEnabled: u
-        } = e, c = {
+            paymentRequestWalletsEnabled: c
+        } = e, u = {
             onChooseType: () => {},
             onStripePaymentMethodReceived: e => {
                 console.log("onStripePaymentMethodReceived called: ", e)
             },
             isEligibleForTrial: t,
-            paymentRequestWallets: u ? ["googlePay", "applePay"] : [],
+            paymentRequestWallets: c ? ["googlePay", "applePay"] : [],
             paymentSourceTypeRestrictions: l ? [s.he.CARD.valueOf()] : null
         };
         return (0, a.jsx)(i.PaymentContextProvider, {
@@ -40,7 +40,7 @@ let u = {
                     children: (0, a.jsx)("div", {
                         className: d.VS,
                         children: (0, a.jsx)(r.A, {
-                            ...c
+                            ...u
                         })
                     })
                 })]

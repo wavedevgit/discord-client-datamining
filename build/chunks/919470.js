@@ -9,8 +9,8 @@ var a = l(627968),
     o = l(397927),
     s = l(301679),
     d = l(149757),
-    u = l(788868),
-    c = l(985018);
+    c = l(788868),
+    u = l(985018);
 let p = {
         bronze: {
             type: "custom",
@@ -69,18 +69,18 @@ let p = {
             gradientColor: _,
             estimatedTooltipHeight: E
         } = e, C = n.useRef(null), j = n.useRef(null), S = n.useMemo(() => ({
-            bronze: u.Ac.PREMIUM_TENURE_1_MONTH,
-            silver: u.Ac.PREMIUM_TENURE_3_MONTH,
-            gold: u.Ac.PREMIUM_TENURE_6_MONTH,
-            platinum: u.Ac.PREMIUM_TENURE_12_MONTH,
-            diamond: u.Ac.PREMIUM_TENURE_24_MONTH,
-            emerald: u.Ac.PREMIUM_TENURE_36_MONTH,
-            ruby: u.Ac.PREMIUM_TENURE_60_MONTH,
-            opal: u.Ac.PREMIUM_TENURE_72_MONTH
+            bronze: c.Ac.PREMIUM_TENURE_1_MONTH,
+            silver: c.Ac.PREMIUM_TENURE_3_MONTH,
+            gold: c.Ac.PREMIUM_TENURE_6_MONTH,
+            platinum: c.Ac.PREMIUM_TENURE_12_MONTH,
+            diamond: c.Ac.PREMIUM_TENURE_24_MONTH,
+            emerald: c.Ac.PREMIUM_TENURE_36_MONTH,
+            ruby: c.Ac.PREMIUM_TENURE_60_MONTH,
+            opal: c.Ac.PREMIUM_TENURE_72_MONTH
         })[h], [h]), T = null != S ? (0, d.I)(S).standard : null, A = n.useMemo(() => {
             if (null == S) return "";
-            let e = u.VD[S];
-            return (c.intl.string(c.t.lG6a5x) + " " + c.intl.string(e.nameUnformatted)).toLocaleUpperCase()
+            let e = c.VD[S];
+            return (u.intl.string(u.t.lG6a5x) + " " + u.intl.string(e.nameUnformatted)).toLocaleUpperCase()
         }, [S]), P = n.useMemo(() => {
             if (!r || null == T) return;
             let e = x ? {

@@ -11,10 +11,10 @@ var a = l(627968),
 l(14115);
 var s = l(305003),
     d = l(626031),
-    u = l(339763),
-    c = l(210951);
+    c = l(339763),
+    u = l(210951);
 let p = () => (0, a.jsx)("img", {
-        className: c.V8,
+        className: u.V8,
         src: l(324292),
         alt: ""
     }),
@@ -29,7 +29,7 @@ let p = () => (0, a.jsx)("img", {
             disabled: y,
             isInModalOverlay: f,
             className: g
-        } = e, [v, _] = (0, n.useState)(!1), E = (0, n.useMemo)(() => m === s.k.SELECTED ? c.wH : v ? c.mr : c.Ay, [m, v]), [C, j] = (0, n.useState)(!1), [S, T] = (0, n.useState)(!1), [A, P] = (0, n.useState)(2700), k = null === r;
+        } = e, [v, _] = (0, n.useState)(!1), E = (0, n.useMemo)(() => m === s.k.SELECTED ? u.wH : v ? u.mr : u.Ay, [m, v]), [C, j] = (0, n.useState)(!1), [S, T] = (0, n.useState)(!1), [A, P] = (0, n.useState)(2700), k = null === r;
         (0, n.useEffect)(() => {
             k && !C && (j(!0), setTimeout(() => {
                 T(!0)
@@ -50,8 +50,8 @@ let p = () => (0, a.jsx)("img", {
             }, [M, N]);
         return (0, a.jsx)(o.DUT, {
             onClick: I ? void 0 : x,
-            className: i()(c.vk, {
-                [c.r9]: y
+            className: i()(u.vk, {
+                [u.r9]: y
             }),
             id: l ?? "balance-widget-pill",
             children: (0, a.jsxs)("span", {
@@ -59,14 +59,14 @@ let p = () => (0, a.jsx)("img", {
                 onMouseEnter: y ? void 0 : () => _(!0),
                 onMouseLeave: y ? void 0 : () => _(!1),
                 ref: t,
-                className: i()(c.kL, E, g, {
-                    [c.En]: I,
-                    [c.dA]: f,
-                    [c.r9]: y
+                className: i()(u.kL, E, g, {
+                    [u.En]: I,
+                    [u.dA]: f,
+                    [u.r9]: y
                 }),
                 children: [(0, a.jsx)("div", {
-                    className: i()(c.hr, I ? c.nr : void 0),
-                    children: (0, a.jsx)(u.Ay, {
+                    className: i()(u.hr, I ? u.nr : void 0),
+                    children: (0, a.jsx)(c.Ay, {
                         currentAnimationType: N,
                         animationTypeRef: D,
                         onSetAnimationDurationMS: P
@@ -76,7 +76,7 @@ let p = () => (0, a.jsx)("img", {
                     onValueChange: L,
                     onValueReached: O,
                     targetTotalCounterTime: A,
-                    className: I ? c.F : void 0
+                    className: I ? u.F : void 0
                 }), h && (0, a.jsx)(p, {})]
             })
         })

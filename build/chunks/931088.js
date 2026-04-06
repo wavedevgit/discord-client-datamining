@@ -9,8 +9,8 @@ var a = l(627968),
     o = l(95337),
     s = l(412314),
     d = l(456459),
-    u = l(473702),
-    c = l(916974),
+    c = l(473702),
+    u = l(916974),
     p = l(347378),
     m = l(606423),
     h = l(652215);
@@ -21,7 +21,7 @@ let x = e => {
             premiumSubscription: o,
             premiumType: s,
             churnDiscount: d,
-            planId: u,
+            planId: c,
             renewalInvoice: p,
             renewalInvoiceDetails: m,
             errorOnCancel: x,
@@ -33,7 +33,7 @@ let x = e => {
         } = (0, i.Ay)(r.A.USER_SETTINGS), [_, E] = n.useState(b(g));
         return (0, n.useEffect)(() => {
             E(b(g))
-        }, [g]), (0, a.jsx)(c.CancellationContext.Provider, {
+        }, [g]), (0, a.jsx)(u.CancellationContext.Provider, {
             value: {
                 setStep: f,
                 premiumType: s,
@@ -47,7 +47,7 @@ let x = e => {
                 isFetchingChurnDiscountOffer: !1,
                 fullPrice: "$9.99",
                 discountedPrice: "$4.99",
-                planId: u,
+                planId: c,
                 paymentsBlocked: !1,
                 renewalInvoice: p,
                 renewalInvoiceDetails: m,
@@ -69,15 +69,15 @@ let x = e => {
     },
     b = e => {
         switch (e) {
-            case u.g.DISCOUNT_APPLIED:
+            case c.g.DISCOUNT_APPLIED:
                 return (0, a.jsx)(d.V, {});
-            case u.g.CONFIRM_DISCOUNT:
+            case c.g.CONFIRM_DISCOUNT:
                 return (0, a.jsx)(s.M, {});
-            case u.g.CONFIRM:
+            case c.g.CONFIRM:
                 return (0, a.jsx)(o.r, {});
-            case u.g.PREVIEW:
+            case c.g.PREVIEW:
                 return (0, a.jsx)(p.E, {});
-            case u.g.WHAT_YOU_LOSE:
+            case c.g.WHAT_YOU_LOSE:
             default:
                 return (0, a.jsx)(m.Z, {})
         }

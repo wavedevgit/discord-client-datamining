@@ -9,8 +9,8 @@ var a = l(627968),
     o = l(997101),
     s = l(417597),
     d = l(397927),
-    u = l(384904),
-    c = l(918022),
+    c = l(384904),
+    u = l(918022),
     p = l(169797),
     m = l(93159),
     h = l(826469),
@@ -32,8 +32,8 @@ let E = {
                 leftSubtext: i,
                 leftShowSubtext: o,
                 leftSubtextStrikethrough: s,
-                rightTitleDescriber: u,
-                rightPrimaryText: c,
+                rightTitleDescriber: c,
+                rightPrimaryText: u,
                 rightSubtext: p,
                 rightShowSubtext: h,
                 rightSubtextStrikethrough: x
@@ -63,8 +63,8 @@ let E = {
                             color: "text-strong",
                             premiumType: t
                         }),
-                        titleDescriber: u,
-                        primaryText: c,
+                        titleDescriber: c,
+                        primaryText: u,
                         subtext: h ? (0, a.jsx)(m.Lo, {
                             strikethrough: x,
                             price: p
@@ -411,8 +411,8 @@ let E = {
                     price: i,
                     hasPriceIcon: o,
                     hasStrikethroughPrice: s,
-                    strikethroughPrice: u,
-                    targetType: c
+                    strikethroughPrice: c,
+                    targetType: u
                 } = e;
 
                 function p(e, p) {
@@ -425,13 +425,13 @@ let E = {
                         description: r,
                         price: i,
                         PriceIcon: o ? d.tvc : void 0,
-                        priceSubText: s ? u : void 0,
+                        priceSubText: s ? c : void 0,
                         priceSubTextHasStrikethrough: s,
                         graphic: (0, a.jsx)(e, {}),
-                        target: "gift" === c ? {
+                        target: "gift" === u ? {
                             type: "gift",
                             user: h
-                        } : "guildSubscription" === c ? {
+                        } : "guildSubscription" === u ? {
                             type: "guildSubscription",
                             guild: x
                         } : void 0
@@ -504,11 +504,10 @@ let E = {
             id: "unified-checkout-payment-select",
             component: e => {
                 let {
-                    label: t,
-                    disabled: l,
-                    error: i,
-                    errorMessage: o
-                } = e, s = [{
+                    disabled: t,
+                    error: l,
+                    errorMessage: i
+                } = e, o = [{
                     id: "visa-1234",
                     label: "Visa ending in 1234",
                     icon: x.Be.VISA
@@ -524,28 +523,22 @@ let E = {
                     id: "amex-9012",
                     label: "Amex ending in 9012",
                     icon: x.Be.AMEX
-                }], [u, c] = n.useState(s[0].id);
+                }], [s, c] = n.useState(o[0].id);
                 return (0, a.jsxs)("div", {
                     children: [(0, a.jsx)(m.v7, {
-                        label: t,
-                        value: u,
-                        options: s,
+                        value: s,
+                        options: o,
                         onChange: c,
                         onNew: r.noop,
-                        disabled: l,
-                        error: i ? o : void 0
+                        disabled: t,
+                        error: l ? i : void 0
                     }), (0, a.jsxs)(d.Text, {
                         variant: "text-sm/normal",
-                        children: ["Selected payment: ", u ?? "None"]
+                        children: ["Selected payment: ", s ?? "None"]
                     })]
                 })
             },
             controls: {
-                label: {
-                    label: "Label",
-                    type: "text",
-                    defaultValue: "Payment Method"
-                },
                 disabled: {
                     label: "Disabled",
                     type: "boolean",
@@ -573,17 +566,15 @@ let E = {
                     hidePersonalInformation: i
                 } = e, o = (0, s.bG)([f.A], () => Object.values(f.A.paymentSources)), [p, x] = n.useState(void 0);
                 n.useEffect(() => {
-                    (0, u.$o)()
+                    (0, c.$o)()
                 }, []);
                 let b = n.useMemo(() => o.map(e => new h.A(e, !0, [])), [o]),
                     {
                         dropdownPaymentSources: y,
                         dropdownPaymentSourceId: g,
-                        giftCardWallet: v,
-                        isGiftCardCreditsChecked: _,
-                        handleGiftCardCreditsToggle: E,
-                        handleDropdownPaymentSourceChange: C
-                    } = (0, c.Y)({
+                        handleDropdownPaymentSourceChange: v,
+                        giftCardCheckboxProps: _
+                    } = (0, u.Y)({
                         checkoutPaymentSources: b,
                         setPaymentSourceId: x,
                         location: "revenue_playground"
@@ -592,16 +583,12 @@ let E = {
                     children: [(0, a.jsx)(m.nL, {
                         label: t,
                         giftCardsEnabled: l,
-                        giftCardCheckboxProps: null != v ? {
-                            giftCardWallet: v,
-                            checked: _,
-                            onChange: E
-                        } : null,
+                        giftCardCheckboxProps: _,
                         paymentSourceDropdownProps: {
                             selectedPaymentSourceId: g,
                             paymentSources: y,
                             hidePersonalInformation: i,
-                            onChange: C
+                            onChange: v
                         },
                         disabled: r
                     }), (0, a.jsxs)(d.Text, {

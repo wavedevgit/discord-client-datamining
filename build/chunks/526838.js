@@ -1,6 +1,6 @@
 /** chunk id: 526838 params = (module,exports,require) **/
 l.d(t, {
-    Z: () => u
+    Z: () => c
 });
 var a = l(627968);
 l(64700);
@@ -13,7 +13,7 @@ let d = {
         none: void 0,
         nitroWheel: n.tvc
     },
-    u = {
+    c = {
         title: "Marketing Home",
         stories: [{
             name: "Bento Box",
@@ -21,8 +21,8 @@ let d = {
                 let {
                     title: t,
                     description: l,
-                    ctaMode: u,
-                    descriptionCtaText: c,
+                    ctaMode: c,
+                    descriptionCtaText: u,
                     action1Text: p,
                     action1Variant: m,
                     action2Text: h,
@@ -35,10 +35,10 @@ let d = {
                     badgeVariant: _,
                     isReducedMotion: E,
                     previewImageStyle: C
-                } = e, j = () => (0, n.showToast)((0, n.createToast)("CTA clicked!", n.ToastType.SUCCESS)), S = d[b], T = "descriptionCta" === u ? {
-                    descriptionCta: c,
+                } = e, j = () => (0, n.showToast)((0, n.createToast)("CTA clicked!", n.ToastType.SUCCESS)), S = d[b], T = "descriptionCta" === c ? {
+                    descriptionCta: u,
                     onClick: j
-                } : "actions" === u ? {
+                } : "actions" === c ? {
                     actions: [{
                         text: p,
                         variant: m,

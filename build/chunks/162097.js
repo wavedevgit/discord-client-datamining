@@ -9,8 +9,8 @@ var a = l(627968),
     o = l(732955),
     s = l(397927),
     d = l(303136),
-    u = l(975571),
-    c = l(318346),
+    c = l(975571),
+    u = l(318346),
     p = l(652215),
     m = l(985018),
     h = l(870722),
@@ -33,7 +33,7 @@ let f = () => (0, a.jsx)("div", {
             linkPreText: d = m.intl.string(m.t["5qZv9E"]),
             linkText: b = m.intl.string(m.t.XRdyjz)
         } = e, y = n.useCallback(() => {
-            null != r && (0, c.Y)({
+            null != r && (0, u.Y)({
                 pageType: r,
                 sectionType: p.JJy.ORBS_BALANCE_MENU,
                 ctaObject: p.ZSU.ORBS_LEARN_MORE_LINK
@@ -56,7 +56,7 @@ let f = () => (0, a.jsx)("div", {
                 }), (0, a.jsx)(s.MzZ, {
                     target: "_blank",
                     rel: "author",
-                    href: u.A.getArticleURL(p.MVz.ORBS_FAQ),
+                    href: c.A.getArticleURL(p.MVz.ORBS_FAQ),
                     className: h.CU,
                     onClick: y,
                     children: b

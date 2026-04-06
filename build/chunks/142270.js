@@ -10,8 +10,8 @@ var a = l(627968),
     o = l(82495),
     s = l(482589),
     d = l(938396),
-    u = l(649032),
-    c = l(26508),
+    c = l(649032),
+    u = l(26508),
     p = l(318346),
     m = l(309954),
     h = l(305003),
@@ -35,7 +35,7 @@ let v = {
             className: j
         } = e, {
             balance: S
-        } = (0, m.W)(), T = (0, c.DK)(u.W.NITRO, "BalanceWidgetMenu"), [A, P] = n.useState(h.k.DEFAULT), [k, I] = n.useState(!1), [R, N] = n.useState(!1), M = n.useRef(null);
+        } = (0, m.W)(), T = (0, u.DK)(c.W.NITRO, "BalanceWidgetMenu"), [A, P] = n.useState(h.k.DEFAULT), [k, I] = n.useState(!1), [R, N] = n.useState(!1), M = n.useRef(null);
         (0, s.j)(!k);
         let D = n.useCallback(() => {
                 let e = !k;

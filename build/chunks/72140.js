@@ -1,7 +1,7 @@
 /** chunk id: 72140 params = (module,exports,require) **/
-n.d(t, {
+n.d(e, {
     A: () => d,
-    G: () => o
+    G: () => c
 });
 var i = n(627968);
 n(64700);
@@ -10,13 +10,13 @@ var r = n(503698),
     a = n(397927),
     s = n(985018),
     u = n(199929),
-    c = n(404648);
+    o = n(404648);
 
-function o() {
+function c() {
     return (0, i.jsxs)("div", {
         className: l()(u.dt, u.dE),
         children: [(0, i.jsx)("img", {
-            src: c.A,
+            src: o.A,
             alt: "reverse trial unlock",
             className: u.qq
         }), (0, i.jsx)(a.Text, {
@@ -27,11 +27,11 @@ function o() {
     })
 }
 
-function d(e) {
+function d(t) {
     let {
-        text: t,
+        text: e,
         color: n
-    } = e;
+    } = t;
     return (0, i.jsxs)("div", {
         className: u.dt,
         children: [(0, i.jsx)(a.tvc, {
@@ -39,7 +39,7 @@ function d(e) {
             className: u.YW,
             color: n
         }), (0, i.jsx)("div", {
-            children: t
+            children: e
         })]
     })
 }

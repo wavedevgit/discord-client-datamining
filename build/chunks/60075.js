@@ -20,8 +20,8 @@ var a = l(627968),
     o = l(252561),
     s = l(287809),
     d = l(652215),
-    u = l(339984),
-    c = l(788868);
+    c = l(339984),
+    u = l(788868);
 
 function p() {
     let e = n.useCallback(() => {
@@ -136,28 +136,28 @@ function b() {
 let y = [{
         id: "avatar_decoration",
         label: "Avatar Decoration",
-        value: c.e.AVATAR_DECORATION_MODAL_UPSELL
+        value: u.e.AVATAR_DECORATION_MODAL_UPSELL
     }, {
         id: "profile_effect",
         label: "Profile Effect",
-        value: c.e.PROFILE_EFFECT_MODAL_UPSELL
+        value: u.e.PROFILE_EFFECT_MODAL_UPSELL
     }, {
         id: "nameplate",
         label: "Nameplate",
-        value: c.e.NAMEPLATE_MODAL_UPSELL
+        value: u.e.NAMEPLATE_MODAL_UPSELL
     }],
     f = {
-        [c.e.AVATAR_DECORATION_MODAL_UPSELL]: {
+        [u.e.AVATAR_DECORATION_MODAL_UPSELL]: {
             title: "Express Yourself with Avatar Decorations",
             body: "Stand out with unique avatar decorations exclusive to Nitro subscribers.",
             glowUp: "Stand out with unique avatar decorations exclusive to Nitro subscribers."
         },
-        [c.e.PROFILE_EFFECT_MODAL_UPSELL]: {
+        [u.e.PROFILE_EFFECT_MODAL_UPSELL]: {
             title: "Animate Your Profile with Profile Effects",
             body: "Add dynamic effects to your profile with Nitro.",
             glowUp: "Add dynamic effects to your profile with Nitro."
         },
-        [c.e.NAMEPLATE_MODAL_UPSELL]: {
+        [u.e.NAMEPLATE_MODAL_UPSELL]: {
             title: "Personalize with a Nameplate",
             body: "Show off your style with a custom nameplate, available with Nitro.",
             glowUp: "Show off your style with a custom nameplate, available with Nitro."
@@ -165,7 +165,7 @@ let y = [{
     };
 
 function g() {
-    let [e, t] = n.useState(c.e.AVATAR_DECORATION_MODAL_UPSELL), r = n.useCallback(() => {
+    let [e, t] = n.useState(u.e.AVATAR_DECORATION_MODAL_UPSELL), r = n.useCallback(() => {
         let {
             title: t,
             body: n,
@@ -252,15 +252,15 @@ function _() {
 let E = [{
     id: "avatar",
     label: "Avatar",
-    value: u.HL.AVATAR
+    value: c.HL.AVATAR
 }, {
     id: "banner",
     label: "Banner",
-    value: u.HL.BANNER
+    value: c.HL.BANNER
 }];
 
 function C() {
-    let [e, t] = n.useState(u.HL.AVATAR), d = (0, r.bG)([s.default], () => s.default.getCurrentUser()), c = n.useCallback(() => {
+    let [e, t] = n.useState(c.HL.AVATAR), d = (0, r.bG)([s.default], () => s.default.getCurrentUser()), u = n.useCallback(() => {
         null != d && (0, i.mMO)(async () => {
             let {
                 default: t
@@ -286,7 +286,7 @@ function C() {
                 fullWidth: !0
             })
         }), (0, a.jsx)(i.Button, {
-            onClick: c,
+            onClick: u,
             variant: "primary",
             size: "md",
             text: "Open Animated Profile Upsell"

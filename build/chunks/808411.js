@@ -9,7 +9,7 @@ var a = l(627968),
     o = l(914410),
     s = l(252561);
 let d = () => {
-    let [e, t] = n.useState(0), [l, d] = n.useState(4), [u, c] = n.useState(2), [p, m] = n.useState(o.fh.LIGHT), [h, x] = n.useState(o.qP.BLUE), [b, y] = n.useState("darkslategray"), [f, g] = n.useState("blanchedalmond"), [v, _] = n.useState("pink"), [E, C] = n.useState(!0), j = n.useMemo(() => Object.entries(o.fh).map(e => {
+    let [e, t] = n.useState(0), [l, d] = n.useState(4), [c, u] = n.useState(2), [p, m] = n.useState(o.fh.LIGHT), [h, x] = n.useState(o.qP.BLUE), [b, y] = n.useState("darkslategray"), [f, g] = n.useState("blanchedalmond"), [v, _] = n.useState("pink"), [E, C] = n.useState(!0), j = n.useMemo(() => Object.entries(o.fh).map(e => {
         let [t, l] = e;
         return {
             id: l,
@@ -26,7 +26,7 @@ let d = () => {
     }), []);
     return (0, a.jsxs)(s.LB, {
         children: [(0, a.jsx)(o.Ay, {
-            progress: u,
+            progress: c,
             minimum: e,
             maximum: l,
             weight: p,
@@ -42,9 +42,9 @@ let d = () => {
         }), (0, a.jsx)(s.nB, {}), (0, a.jsx)(s.MG, {
             children: (0, a.jsx)(i.ksK, {
                 type: "number",
-                value: u.toString(),
+                value: c.toString(),
                 onChange: t => {
-                    c((0, r.clamp)(+t, e, l))
+                    u((0, r.clamp)(+t, e, l))
                 },
                 label: `Progress ( ${e} - ${l} ) `
             })
@@ -53,7 +53,7 @@ let d = () => {
                 type: "number",
                 value: e.toString(),
                 onChange: e => {
-                    0 > +e || +e >= l || (u < +e && c(+e), t(+e))
+                    0 > +e || +e >= l || (c < +e && u(+e), t(+e))
                 },
                 label: "Minimum Value"
             })
@@ -62,7 +62,7 @@ let d = () => {
                 type: "number",
                 value: l.toString(),
                 onChange: t => {
-                    +t <= e || 1 > +t || (u > +t && c(+t), d(+t))
+                    +t <= e || 1 > +t || (c > +t && u(+t), d(+t))
                 },
                 label: "Maximum Value"
             })

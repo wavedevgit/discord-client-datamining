@@ -9,15 +9,15 @@ var a = l(627968),
     o = l(397927),
     s = l(942340),
     d = l(211528),
-    u = l(626584),
-    c = l(166532),
+    c = l(626584),
+    u = l(166532),
     p = l(87952),
     m = l(646443),
     h = l(785205),
     x = l(652215),
     b = l(962017),
     y = l(895375);
-let f = new u.A("PaymentElement.web.stories"),
+let f = new c.A("PaymentElement.web.stories"),
     g = () => {
         let {
             elementsAppearanceOptions: e
@@ -43,14 +43,14 @@ let f = new u.A("PaymentElement.web.stories"),
             theme: t,
             colorText: l,
             colorBackground: r,
-            inputBackgroundColor: u,
+            inputBackgroundColor: c,
             tabBackgroundColor: m,
             storyType: v
         } = e, _ = (0, p.A)(), {
             stripePaymentElementProps: E,
             stripeAddressElementProps: C
         } = (0, d.Lw)({
-            step: c.pn.PAYMENT_ELEMENT,
+            step: u.pn.PAYMENT_ELEMENT,
             handleStepChange: x.tEg,
             onBillingAddressChange: x.tEg,
             paymentElementsEnabled: !0,
@@ -70,7 +70,7 @@ let f = new u.A("PaymentElement.web.stories"),
                 theme: t,
                 colorText: l,
                 colorBackground: r,
-                inputBackgroundColor: u,
+                inputBackgroundColor: c,
                 tabBackgroundColor: m
             }
         });
@@ -87,7 +87,7 @@ let f = new u.A("PaymentElement.web.stories"),
                 className: b.ny,
                 children: [(0, a.jsx)(h.p, {
                     stepConfigs: [{
-                        key: c.pn.ADD_PAYMENT_STEPS,
+                        key: u.pn.ADD_PAYMENT_STEPS,
                         renderStep: () => (0, a.jsx)("div", {}),
                         options: {
                             renderHeader: !1,
@@ -108,12 +108,12 @@ let f = new u.A("PaymentElement.web.stories"),
                                 children: (0, a.jsx)(d.Wf, {
                                     ...E,
                                     customPaymentMethodIdsToSourceTypes: A,
-                                    step: c.pn.PAYMENT_ELEMENT
+                                    step: u.pn.PAYMENT_ELEMENT
                                 })
                             }) : (0, a.jsx)(d.Wf, {
                                 ...E,
                                 customPaymentMethodIdsToSourceTypes: A,
-                                step: c.pn.PAYMENT_ELEMENT
+                                step: u.pn.PAYMENT_ELEMENT
                             }), ("joined-payment-address-elements" === v || "stripe-address-element" === v) && (0, a.jsx)(d.KS, {
                                 ...C,
                                 billingAddressInfo: {
