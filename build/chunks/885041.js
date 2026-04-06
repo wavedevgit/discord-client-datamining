@@ -110,8 +110,8 @@ var i = n(627968),
     e0 = n(71393),
     e1 = n(189081),
     e7 = n(309010),
-    e6 = n(967198),
-    e9 = n(147964),
+    e9 = n(967198),
+    e6 = n(147964),
     e5 = n(237631),
     e2 = n(194871),
     e3 = n(856588),
@@ -385,7 +385,7 @@ let tm = [{
                         break
                     }
                     case "test-mode":
-                        e9.A.whenInitialized(() => _.q1(n));
+                        e6.A.whenInitialized(() => _.q1(n));
                         break;
                     case "uninstall": {
                         let e = e1.A.getActiveLibraryApplication(n);
@@ -612,7 +612,7 @@ class tE extends a.PureComponent {
                 channelId: a,
                 messageId: l,
                 threadId: s
-            } = t_(n), o = (0, ey.nn)(i), d = (0, ey.ts)(a), c = (0, ey.ts)(s), u = e6.A.getGuildId(), _ = u !== i;
+            } = t_(n), o = (0, ey.nn)(i), d = (0, ey.ts)(a), c = (0, ey.ts)(s), u = e9.A.getGuildId(), _ = u !== i;
             if (o && _ && A.A.selectGuild(i), o && d) {
                 let n = e7.A.getChannelId(u),
                     o = n !== a,

@@ -1,10 +1,10 @@
 /** chunk id: 665039 params = (module,exports,require) **/
-t.d(_, {
-    j: () => o
+i.d(e, {
+    j: () => r
 });
-var a = t(64700),
-    c = t(77729);
+var a = i(64700),
+    t = i(77729);
 
-function o(e) {
-    return (0, a.useMemo)(() => null == e || null == c.A.clips.getClipProtocolURLFromPath ? null : c.A.clips.getClipProtocolURLFromPath(e.filepath), [e])
+function r(_) {
+    return (0, a.useMemo)(() => null == _ || null == t.A.clips.getClipProtocolURLFromPath ? null : t.A.clips.getClipProtocolURLFromPath(_.filepath), [_])
 }

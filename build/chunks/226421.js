@@ -15,7 +15,7 @@ function o(e) {
     } = e;
     return (0, i.jsx)("div", {
         className: s()(r.L, t),
-        children: (0, i.jsx)(a.LK_, {
+        children: (0, i.jsx)(a.xgA, {
             size: "lg",
             color: "currentColor"
         })

@@ -57,7 +57,7 @@ let U = l.memo(function(e) {
         (0, o.mMO)(async () => {
             let {
                 default: e
-            } = await Promise.all([n.e("4918"), n.e("62412")]).then(n.bind(n, 543428));
+            } = await Promise.all([n.e("42784"), n.e("27816")]).then(n.bind(n, 543428));
             return t => (0, i.jsx)(e, {
                 ...t,
                 channelId: s.id,

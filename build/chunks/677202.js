@@ -24,11 +24,11 @@ let h = a.memo(function(e) {
         ...m.Jh
     }, {
         audio: v
-    } = (0, o.L)(), j = null != v, p = a.useRef(null), N = a.useRef(null), b = a.useRef(null), [y, C] = a.useState(0), [A, w] = a.useState(0), [S, M] = a.useState(0), [E, T] = a.useState(!1), [k, P] = a.useState(!1), [D, I] = a.useState(!1), [O, F] = a.useState(0), [L, R] = a.useState(-1), U = a.useMemo(() => O / x.fineTuningScale, [x.fineTuningScale, O]);
+    } = (0, o.L)(), j = null != v, p = a.useRef(null), N = a.useRef(null), b = a.useRef(null), [y, C] = a.useState(0), [A, w] = a.useState(0), [S, M] = a.useState(0), [E, T] = a.useState(!1), [k, P] = a.useState(!1), [D, I] = a.useState(!1), [F, O] = a.useState(0), [L, R] = a.useState(-1), U = a.useMemo(() => F / x.fineTuningScale, [x.fineTuningScale, F]);
     a.useEffect(() => {
         if (null == v) return;
         let e = v.duration * u.A.Millis.SECOND;
-        C(0), w(0), M(e), F(e)
+        C(0), w(0), M(e), O(e)
     }, [v]);
     let _ = a.useCallback((e, t) => {
             if (l(), 0 === e.button) switch (t) {
@@ -55,18 +55,18 @@ let h = a.memo(function(e) {
             }
             R(-1)
         }, []),
-        $ = a.useCallback(e => {
+        G = a.useCallback(e => {
             if (null == v || !E) return;
             let t = parseInt(e.target.value),
                 l = t > S ? S : t;
             i((0, d.fP)(l)), C(l), w(l)
         }, [v, i, S, E]),
-        G = a.useCallback(e => {
+        V = a.useCallback(e => {
             if (null == v || !k) return;
             let t = parseInt(e.target.value);
             t < y ? (i((0, d.fP)(y)), w(y)) : t > S ? (i((0, d.fP)(S)), w(S)) : (i((0, d.fP)(t)), w(t))
         }, [v, i, S, k, y]),
-        V = a.useCallback(e => {
+        z = a.useCallback(e => {
             if (null == v || !D) return;
             let t = parseInt(e.target.value),
                 l = t > y ? t : y;
@@ -105,10 +105,10 @@ let h = a.memo(function(e) {
                     ref: p,
                     className: s()(f.Os, f.YT),
                     type: "range",
-                    min: (0, d.Y0)(L, U, O),
-                    max: (0, d.gP)(L, U, O),
+                    min: (0, d.Y0)(L, U, F),
+                    max: (0, d.gP)(L, U, F),
                     value: y,
-                    onChange: $,
+                    onChange: G,
                     onMouseDown: e => _(e, 0),
                     onMouseUp: () => J(0),
                     disabled: !j || g
@@ -116,10 +116,10 @@ let h = a.memo(function(e) {
                     ref: b,
                     className: s()(f.Os, f.BC),
                     type: "range",
-                    min: (0, d.Y0)(L, U, O),
-                    max: (0, d.gP)(L, U, O),
+                    min: (0, d.Y0)(L, U, F),
+                    max: (0, d.gP)(L, U, F),
                     value: S,
-                    onChange: V,
+                    onChange: z,
                     onMouseDown: e => _(e, 2),
                     onMouseUp: () => J(2),
                     disabled: !j || g
@@ -130,10 +130,10 @@ let h = a.memo(function(e) {
                     ref: N,
                     className: s()(f.Os, f.GO),
                     type: "range",
-                    min: (0, d.Y0)(L, U, O),
-                    max: (0, d.gP)(L, U, O),
+                    min: (0, d.Y0)(L, U, F),
+                    max: (0, d.gP)(L, U, F),
                     value: A,
-                    onChange: G,
+                    onChange: V,
                     onMouseDown: e => _(e, 1),
                     onMouseUp: () => J(1),
                     disabled: !j || g
@@ -147,8 +147,8 @@ let h = a.memo(function(e) {
                     [f.z6]: D
                 }),
                 style: {
-                    left: `${(0,d.y)(y,L,U,O)}%`,
-                    right: `${(0,d.N7)(S,L,U,O)}%`
+                    left: `${(0,d.y)(y,L,U,F)}%`,
+                    right: `${(0,d.N7)(S,L,U,F)}%`
                 },
                 children: [(0, n.jsx)("div", {
                     className: s()(f.P, f.RC),
@@ -180,7 +180,7 @@ let h = a.memo(function(e) {
                         [f.cB]: k || E || D || t
                     }),
                     style: {
-                        left: `${(0,d.y)(A,L,U,O)}%`
+                        left: `${(0,d.y)(A,L,U,F)}%`
                     }
                 })
             })]
@@ -189,7 +189,7 @@ let h = a.memo(function(e) {
             children: (0, n.jsx)(c.A, {
                 fineTuning: L,
                 fineTuningResolution: U,
-                duration: O
+                duration: F
             })
         })]
     })

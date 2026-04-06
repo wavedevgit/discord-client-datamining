@@ -132,10 +132,10 @@ let Z = e => {
         (0, _.Tc)() && (eE && eY.push(o.M.RECURRING_3P_PROMOTION_POPOVER), eA && eY.push(o.M.BOGO_2025_NITRO_TAB_BADGE));
         let [eK, eq] = (0, p.kn)(eY, void 0, !0);
         eD && eW.push(o.M.CHURN_DISCOUNT_PREMIUM_TAB_COACHMARK), e_ && (eS ? eW.push(o.M.PREMIUM_GROUP_POPOVER_UPSELL_V2) : eW.push(o.M.PREMIUM_GROUP_POPOVER)), eb && eW.push(o.M.PREMIUM_ORBS_UPSELL_POPOVER), eP && eW.push(o.M.PREMIUM_ORBS_REWARDS_INTRO_POPOVER), ew && eW.push(o.M.L_3PP_NITRO_TOOLTIP), eU && eW.push(o.M.L_3PP_NON_NITRO_POPOVER), eM && eW.push(o.M.WISHLISTING_NITRO_TAB_NEW_BADGE);
-        let [ez, e$] = (0, p.kn)(eW, void 0, !0), eQ = (0, j.c)(l.C.PREMIUM_TAB), eX = (0, j.c)(l.C.PREMIUM_TAB_TOOLTIP), eZ = (0, j.c)(l.C.PREMIUM_TAB_POPOVER), [eJ, e0] = (0, p.Cc)(null != eQ && "premiumTab" === eQ.properties.properties.oneofKind ? o.M.PREMIUM_TAB_MARKETING_MOMENT_OFFER_BADGE : null, eQ?.promotionId ?? "", void 0, !0), [e1, e7] = (0, p.Cc)(null != eZ && "premiumTabPopover" === eZ.properties.properties.oneofKind ? o.M.PREMIUM_MARKETING_MOMENT_REMINDER_UPSELL : null, eZ?.promotionId ?? "", void 0, !0), [e6, e9] = (0, p.Cc)(eR ? o.M.PREMIUM_ORBS_REWARDS_DROP_POPOVER : null, ey ?? "", void 0, !0), e5 = null != eX && "premiumTabTooltip" === eX.properties.properties.oneofKind && eJ === o.M.PREMIUM_TAB_MARKETING_MOMENT_OFFER_BADGE, e2 = ew && ez === o.M.L_3PP_NITRO_TOOLTIP, e3 = eU && ez === o.M.L_3PP_NON_NITRO_POPOVER;
+        let [ez, e$] = (0, p.kn)(eW, void 0, !0), eQ = (0, j.c)(l.C.PREMIUM_TAB), eX = (0, j.c)(l.C.PREMIUM_TAB_TOOLTIP), eZ = (0, j.c)(l.C.PREMIUM_TAB_POPOVER), [eJ, e0] = (0, p.Cc)(null != eQ && "premiumTab" === eQ.properties.properties.oneofKind ? o.M.PREMIUM_TAB_MARKETING_MOMENT_OFFER_BADGE : null, eQ?.promotionId ?? "", void 0, !0), [e1, e7] = (0, p.Cc)(null != eZ && "premiumTabPopover" === eZ.properties.properties.oneofKind ? o.M.PREMIUM_MARKETING_MOMENT_REMINDER_UPSELL : null, eZ?.promotionId ?? "", void 0, !0), [e9, e6] = (0, p.Cc)(eR ? o.M.PREMIUM_ORBS_REWARDS_DROP_POPOVER : null, ey ?? "", void 0, !0), e5 = null != eX && "premiumTabTooltip" === eX.properties.properties.oneofKind && eJ === o.M.PREMIUM_TAB_MARKETING_MOMENT_OFFER_BADGE, e2 = ew && ez === o.M.L_3PP_NITRO_TOOLTIP, e3 = eU && ez === o.M.L_3PP_NON_NITRO_POPOVER;
         if (a.useEffect(() => {
-                !0 === S && (null != eK && eq(Q.i.AUTO_DISMISS), null != ez && e$(Q.i.AUTO_DISMISS), null != eJ && e0(Q.i.AUTO_DISMISS), null != e6 && e9(Q.i.AUTO_DISMISS), null != e1 && e7(Q.i.AUTO_DISMISS))
-            }, [eq, S, eK, e$, ez, eJ, e0, e6, e9, e1, e7]), !Z({
+                !0 === S && (null != eK && eq(Q.i.AUTO_DISMISS), null != ez && e$(Q.i.AUTO_DISMISS), null != eJ && e0(Q.i.AUTO_DISMISS), null != e9 && e6(Q.i.AUTO_DISMISS), null != e1 && e7(Q.i.AUTO_DISMISS))
+            }, [eq, S, eK, e$, ez, eJ, e0, e9, e6, e1, e7]), !Z({
                 selected: S
             })) return null;
         let e4 = () => {
@@ -194,7 +194,7 @@ let Z = e => {
         }), n = 3) : null == eo || eF ? eD ? (t = (0, i.jsx)(F.A, {
             isSelected: S,
             discountOffer: ec
-        }), n = 8) : eb && ez === o.M.PREMIUM_ORBS_UPSELL_POPOVER || eP && ez === o.M.PREMIUM_ORBS_REWARDS_INTRO_POPOVER || eR && e6 === o.M.PREMIUM_ORBS_REWARDS_DROP_POPOVER ? (t = (0, i.jsx)(c.Exy, {
+        }), n = 8) : eb && ez === o.M.PREMIUM_ORBS_UPSELL_POPOVER || eP && ez === o.M.PREMIUM_ORBS_REWARDS_INTRO_POPOVER || eR && e9 === o.M.PREMIUM_ORBS_REWARDS_DROP_POPOVER ? (t = (0, i.jsx)(c.Exy, {
             type: "new",
             variant: "expressive"
         }), n = 2) : e2 ? (t = (0, i.jsx)(c.Exy, {
@@ -222,7 +222,7 @@ let Z = e => {
             }), (0, B.ne)(eg)
         }, n = 6);
         let tt = K.L.NONE;
-        e1 === o.M.PREMIUM_MARKETING_MOMENT_REMINDER_UPSELL ? tt = K.L.MARKETING_MOMENT_POPOVER : eD && ez === o.M.CHURN_DISCOUNT_PREMIUM_TAB_COACHMARK && 8 === n ? tt = K.L.CHURN_DISCOUNT : te && !ex ? tt = K.L.PREMIUM_GROUP : te && ex ? tt = K.L.PREMIUM_GROUP_TOOLTIP : eb && ez === o.M.PREMIUM_ORBS_UPSELL_POPOVER ? tt = K.L.ORBS_UPSELL : eP && ez === o.M.PREMIUM_ORBS_REWARDS_INTRO_POPOVER ? tt = K.L.ORBS_INTRO : eR && e6 === o.M.PREMIUM_ORBS_REWARDS_DROP_POPOVER ? tt = K.L.ORBS_DROP : e5 ? tt = K.L.TOOLTIP : e2 ? tt = K.L.L_PREMIUM_SUB_TOOLTIP : e3 ? tt = K.L.L_UPSELL : eu && (tt = K.L.REVERSE_TRIAL);
+        e1 === o.M.PREMIUM_MARKETING_MOMENT_REMINDER_UPSELL ? tt = K.L.MARKETING_MOMENT_POPOVER : eD && ez === o.M.CHURN_DISCOUNT_PREMIUM_TAB_COACHMARK && 8 === n ? tt = K.L.CHURN_DISCOUNT : te && !ex ? tt = K.L.PREMIUM_GROUP : te && ex ? tt = K.L.PREMIUM_GROUP_TOOLTIP : eb && ez === o.M.PREMIUM_ORBS_UPSELL_POPOVER ? tt = K.L.ORBS_UPSELL : eP && ez === o.M.PREMIUM_ORBS_REWARDS_INTRO_POPOVER ? tt = K.L.ORBS_INTRO : eR && e9 === o.M.PREMIUM_ORBS_REWARDS_DROP_POPOVER ? tt = K.L.ORBS_DROP : e5 ? tt = K.L.TOOLTIP : e2 ? tt = K.L.L_PREMIUM_SUB_TOOLTIP : e3 ? tt = K.L.L_UPSELL : eu && (tt = K.L.REVERSE_TRIAL);
         let tn = (0, i.jsx)(u.z9, {
             listItemRef: J,
             selected: S,
@@ -256,7 +256,7 @@ let Z = e => {
             orbsRewardAmount: eT,
             lastGrantedRewardAmount: eO,
             dismissCoachMark: e$,
-            dismissOrbsDropPopover: e9,
+            dismissOrbsDropPopover: e6,
             dismissMarketingPopover: e7,
             fpEndsAt: eV,
             children: tn

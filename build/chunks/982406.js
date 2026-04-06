@@ -1,6 +1,6 @@
 /** chunk id: 982406 params = (module,exports,require) **/
 a.d(t, {
-    A: () => u
+    A: () => p
 });
 var n = a(627968),
     r = a(64700),
@@ -8,26 +8,26 @@ var n = a(627968),
     i = a.n(o),
     c = a(776231),
     l = a(664111),
-    _ = a(67281),
-    s = a(838541),
+    s = a(67281),
+    _ = a(838541),
     d = a(878159);
 
-function u(e) {
+function p(e) {
     let {
         attachment: t,
         posterUrl: a,
         guildId: o,
-        className: u
-    } = e, p = t.width ?? 0, m = t.height ?? 0, b = p >= m ? "landscape" : "portrait", f = (0, c.AE)({
+        className: p
+    } = e, u = t.width ?? 0, m = t.height ?? 0, b = u >= m ? "landscape" : "portrait", f = (0, c.AE)({
         src: a,
-        width: p,
+        width: u,
         height: m
     }), C = r.useCallback(e => {
         let {
             playerState: a,
             isControlBarExpanded: r
         } = e;
-        return (0, n.jsx)(_.A, {
+        return (0, n.jsx)(s.A, {
             createdAt: null != t.clip_created_at ? Date.parse(t.clip_created_at) : void 0,
             participantIds: t.clip_participants?.map(e => {
                 let {
@@ -43,10 +43,10 @@ function u(e) {
         })
     }, [t, o]);
     return (0, n.jsx)("div", {
-        className: i()(d.k, u),
+        className: i()(d.k, p),
         style: {
-            aspectRatio: `${p} / ${m}`,
-            maxHeight: s.Rk
+            aspectRatio: `${u} / ${m}`,
+            maxHeight: _.Rk
         },
         children: (0, n.jsx)(l.A, {
             src: t.url,

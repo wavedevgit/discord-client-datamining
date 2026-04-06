@@ -1,42 +1,42 @@
 /** chunk id: 510059 params = (module,exports,require) **/
-t.d(l, {
+i.d(l, {
     A: () => v
 });
-var i = t(627968);
-t(64700);
-var n = t(503698),
-    s = t.n(n),
-    a = t(311907),
-    r = t(990078),
-    o = t(397927),
-    d = t(573648),
-    c = t(58149),
-    u = t(681819),
-    m = t(370480),
-    x = t(169869),
-    A = t(773669),
-    p = t(307600),
-    g = t(652215),
-    f = t(783419),
-    h = t(985018),
-    j = t(622376);
+var t = i(627968);
+i(64700);
+var n = i(503698),
+    s = i.n(n),
+    a = i(311907),
+    r = i(990078),
+    o = i(397927),
+    d = i(573648),
+    c = i(58149),
+    u = i(681819),
+    m = i(370480),
+    x = i(169869),
+    A = i(773669),
+    p = i(307600),
+    g = i(652215),
+    f = i(783419),
+    h = i(985018),
+    j = i(622376);
 
 function I(e) {
     let l, {
-            account: t,
+            account: i,
             locale: n,
             userId: s
         } = e,
-        a = t.metadata ?? {},
+        a = i.metadata ?? {},
         A = (0, m.An)(a[f.pK.CREATED_AT], n),
-        I = d.A.get((0, u.ML)(t.type));
-    return (0, i.jsxs)("li", {
+        I = d.A.get((0, u.ML)(i.type));
+    return (0, t.jsxs)("li", {
         className: j.FI,
-        children: [(0, i.jsx)(r.m, {
+        children: [(0, t.jsx)(r.m, {
             __unsupportedReactNodeAsText: I?.name,
-            children: (0, i.jsx)("div", {
+            children: (0, t.jsx)("div", {
                 className: j.k_,
-                children: (0, i.jsx)("img", {
+                children: (0, t.jsx)("img", {
                     alt: h.intl.formatToPlainString(h.t.rtm15P, {
                         name: I?.name
                     }),
@@ -44,55 +44,55 @@ function I(e) {
                     src: I?.icon.lightPNG
                 })
             })
-        }), (0, i.jsxs)("div", {
+        }), (0, t.jsxs)("div", {
             className: j.Hd,
-            children: [(0, i.jsxs)("div", {
-                children: [null == (l = I?.getPlatformUserUrl?.(t)) ? (0, i.jsx)(r.m, {
+            children: [(0, t.jsxs)("div", {
+                children: [null == (l = I?.getPlatformUserUrl?.(i)) ? (0, t.jsx)(r.m, {
                     overflowOnly: !0,
-                    text: t.name,
-                    children: (0, i.jsx)(o.Text, {
+                    text: i.name,
+                    children: (0, t.jsx)(o.Text, {
                         variant: "text-sm/normal",
                         className: j.GW,
-                        children: t.name
+                        children: i.name
                     })
-                }) : (0, i.jsx)(o.MzZ, {
+                }) : (0, t.jsx)(o.MzZ, {
                     href: l,
                     className: j.Y2,
                     useDefaultUnderlineStyles: !1,
-                    "aria-label": I?.name != null ? `${I.name}, ${t.name}, ${h.intl.string(h.t.q5jLJB)}` : `${t.name}, ${h.intl.string(h.t.q5jLJB)}`,
+                    "aria-label": I?.name != null ? `${I.name}, ${i.name}, ${h.intl.string(h.t.q5jLJB)}` : `${i.name}, ${h.intl.string(h.t.q5jLJB)}`,
                     onClick: e => {
                         (0, c.zV)(g.HAw.CONNECTED_ACCOUNT_VIEWED, {
-                            platform_type: t.type,
+                            platform_type: i.type,
                             other_user_id: s
                         }), (0, p.h)({
                             href: l,
                             trusted: I?.type !== g.fg2.DOMAIN
                         }, e)
                     },
-                    children: (0, i.jsxs)("div", {
+                    children: (0, t.jsxs)("div", {
                         className: j.vi,
-                        children: [(0, i.jsx)(r.m, {
+                        children: [(0, t.jsx)(r.m, {
                             overflowOnly: !0,
-                            text: t.name,
-                            children: (0, i.jsx)(o.Text, {
+                            text: i.name,
+                            children: (0, t.jsx)(o.Text, {
                                 variant: "text-sm/normal",
                                 className: j.GW,
-                                children: t.name
+                                children: i.name
                             })
-                        }), (0, i.jsx)(o.I9m, {
+                        }), (0, t.jsx)(o.I9m, {
                             size: "xs",
                             color: "currentColor"
                         })]
                     })
-                }), null != A && (0, i.jsx)(o.Text, {
+                }), null != A && (0, t.jsx)(o.Text, {
                     variant: "text-xs/normal",
                     children: h.intl.format(h.t["9rfonh"], {
                         date: A
                     })
                 })]
-            }), (0, i.jsx)("div", {
+            }), (0, t.jsx)("div", {
                 className: j.yu,
-                children: t.type === g.fg2.REDDIT ? (0, x.xE)(a) : t.type === g.fg2.STEAM ? (0, x.dy)(a) : t.type === g.fg2.BLUESKY || t.type === g.fg2.MASTODON || t.type === g.fg2.TWITTER ? (0, x.ED)(a) : t.type === g.fg2.PAYPAL ? (0, x.gZ)(a) : t.type === g.fg2.EBAY ? (0, x.ub)(a) : t.type === g.fg2.TIKTOK ? (0, x.HU)(a) : null
+                children: i.type === g.fg2.REDDIT ? (0, x.xE)(a) : i.type === g.fg2.STEAM ? (0, x.dy)(a) : i.type === g.fg2.BLUESKY || i.type === g.fg2.MASTODON || i.type === g.fg2.TWITTER ? (0, x.ED)(a) : i.type === g.fg2.PAYPAL ? (0, x.gZ)(a) : i.type === g.fg2.EBAY ? (0, x.ub)(a) : i.type === g.fg2.TIKTOK ? (0, x.HU)(a) : null
             })]
         })]
     })
@@ -101,14 +101,14 @@ function I(e) {
 function v(e) {
     let {
         connections: l,
-        userId: t,
+        userId: i,
         className: n
     } = e, r = (0, a.bG)([A.default], () => A.default.locale);
-    return 0 === l.length ? null : (0, i.jsx)("ul", {
+    return 0 === l.length ? null : (0, t.jsx)("ul", {
         className: s()(j.kL, n),
-        children: l.map(e => (0, i.jsx)(I, {
+        children: l.map(e => (0, t.jsx)(I, {
             account: e,
-            userId: t,
+            userId: i,
             locale: r
         }, `${e.type}:${e.id}`))
     })

@@ -1,23 +1,23 @@
 /** chunk id: 718812 params = (module,exports,require) **/
 l.d(t, {
-    h: () => n
+    h: () => s
 });
-var i = l(64700),
-    s = l(372684),
-    a = l(985018);
+var a = l(64700),
+    n = l(372684),
+    i = l(985018);
 
-function n(e) {
-    return i.useMemo(() => {
+function s(e) {
+    return a.useMemo(() => {
         if (null != e.name && "" !== e.name) return "";
         if (e.decision?.signal != null) {
             let t = e.decision?.signal;
             switch (t.type) {
-                case s.Gy.GAME_EVENT:
-                    return t.description ?? t.title ?? a.intl.string(a.t.Cyxddp);
-                case s.Gy.PHRASE:
+                case n.Gy.GAME_EVENT:
+                    return t.description ?? t.title ?? i.intl.string(i.t.Cyxddp);
+                case n.Gy.PHRASE:
                     return `"${t.text}"`
             }
         }
-        return a.intl.string(a.t.Cyxddp)
+        return i.intl.string(i.t.Cyxddp)
     }, [e.name, e.decision])
 }

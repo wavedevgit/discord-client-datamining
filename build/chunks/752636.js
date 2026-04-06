@@ -15,23 +15,23 @@ function l(e) {
         author: r,
         compact: i,
         animateAvatar: l,
-        guildId: _,
-        isGroupStart: s = !0,
+        guildId: s,
+        isGroupStart: _ = !0,
         roleIcon: d,
-        hideTimestamp: u,
-        hideGuildTag: p,
+        hideTimestamp: p,
+        hideGuildTag: u,
         preview: m
     } = e;
-    return !(0, o.A)(t) && (s || i) ? (0, n.jsx)(c, {
+    return !(0, o.A)(t) && (_ || i) ? (0, n.jsx)(c, {
         message: t,
         channel: a,
         author: r,
-        guildId: _,
+        guildId: s,
         compact: i,
         animate: l,
         roleIcon: d,
-        hideTimestamp: u,
-        hideGuildTag: p,
+        hideTimestamp: p,
+        hideGuildTag: u,
         preview: m
     }) : void 0
 }

@@ -1,23 +1,23 @@
 /** chunk id: 252449 params = (module,exports,require) **/
-a.d(t, {
-    E: () => b
+l.d(t, {
+    E: () => j
 });
-var l = a(627968),
-    n = a(64700),
-    i = a(735438),
-    s = a.n(i),
-    r = a(311907),
-    o = a(118356),
-    u = a(397927),
-    d = a(287809),
-    c = a(690521),
-    m = a(562153),
-    h = a(372684),
-    p = a(429364),
-    f = a(731854),
-    g = a(314212);
-let v = new o.Vy("ClipsSpeakingOverlay");
-class x {
+var a = l(627968),
+    n = l(64700),
+    i = l(735438),
+    s = l.n(i),
+    r = l(311907),
+    o = l(118356),
+    d = l(397927),
+    c = l(287809),
+    u = l(690521),
+    m = l(562153),
+    h = l(372684),
+    p = l(429364),
+    x = l(731854),
+    f = l(314212);
+let g = new o.Vy("ClipsSpeakingOverlay");
+class v {
     timeline;
     userSpeakingStates;
     activeSoundboards;
@@ -29,19 +29,19 @@ class x {
         return `${e}:${t}`
     }
     processSpeakingEvent(e) {
-        !this.userSpeakingStates.has(e.userId) && 0 === e.speakingFlags && (this.userSpeakingStates.set(e.userId, !0), this.timeline.has(0) || this.timeline.set(0, this.getCurrentSnapshot())), this.userSpeakingStates.set(e.userId, (e.speakingFlags & f.ME.VOICE) === f.ME.VOICE)
+        !this.userSpeakingStates.has(e.userId) && 0 === e.speakingFlags && (this.userSpeakingStates.set(e.userId, !0), this.timeline.has(0) || this.timeline.set(0, this.getCurrentSnapshot())), this.userSpeakingStates.set(e.userId, (e.speakingFlags & x.ME.VOICE) === x.ME.VOICE)
     }
     processSoundboardEvent(e) {
         let t = this.getSoundboardKey(e.soundboardId, e.userId),
-            a = this.soundboardPlayCounts.get(t) ?? 0;
-        if (0 === a && !e.playing && (this.soundboardPlayCounts.set(t, 1), this.activeSoundboards.set(t, {
+            l = this.soundboardPlayCounts.get(t) ?? 0;
+        if (0 === l && !e.playing && (this.soundboardPlayCounts.set(t, 1), this.activeSoundboards.set(t, {
                 soundboardId: e.soundboardId,
                 name: e.name,
                 userId: e.userId,
                 emojiId: e.emojiId,
                 emojiName: e.emojiName,
                 emojiAnimated: e.emojiAnimated
-            }), this.timeline.has(0) || this.timeline.set(0, this.getCurrentSnapshot())), e.playing) this.soundboardPlayCounts.set(t, a + 1), this.activeSoundboards.set(t, {
+            }), this.timeline.has(0) || this.timeline.set(0, this.getCurrentSnapshot())), e.playing) this.soundboardPlayCounts.set(t, l + 1), this.activeSoundboards.set(t, {
             soundboardId: e.soundboardId,
             name: e.name,
             userId: e.userId,
@@ -50,17 +50,17 @@ class x {
             emojiAnimated: e.emojiAnimated
         });
         else {
-            let e = Math.max(0, a - 1);
+            let e = Math.max(0, l - 1);
             this.soundboardPlayCounts.set(t, e), 0 === e && this.activeSoundboards.delete(t)
         }
     }
     getCurrentSnapshot() {
         return {
             speakingUserIds: Array.from(this.userSpeakingStates.entries()).filter(e => {
-                let [t, a] = e;
-                return a
+                let [t, l] = e;
+                return l
             }).map(e => {
-                let [t, a] = e;
+                let [t, l] = e;
                 return t
             }),
             activeSoundboards: Array.from(this.activeSoundboards.values())
@@ -68,12 +68,12 @@ class x {
     }
     getEventsAtTimestamp(e) {
         let t = Array.from(this.timeline.keys()).sort((e, t) => e - t),
-            a = 0,
-            l = t.length - 1,
+            l = 0,
+            a = t.length - 1,
             n = -1;
-        for (; a <= l;) {
-            let i = Math.floor((a + l) / 2);
-            t[i] <= e ? (n = i, a = i + 1) : l = i - 1
+        for (; l <= a;) {
+            let i = Math.floor((l + a) / 2);
+            t[i] <= e ? (n = i, l = i + 1) : a = i - 1
         }
         return -1 === n ? {
             speakingUserIds: [],
@@ -85,67 +85,67 @@ class x {
     }
 }
 
-function b(e) {
+function j(e) {
     let {
         clip: t,
-        soundboardAudioEnabled: a,
+        soundboardAudioEnabled: l,
         voiceAudioEnabled: i
     } = e, {
         useCurrentTime: o,
         subscribe: h
-    } = (0, p.T)(), f = o(), b = t.decision?.timestamp ?? 0, [j] = n.useState(() => new x(t.timeline ?? [])), _ = b - t.length, C = n.useCallback(e => {
+    } = (0, p.T)(), x = o(), j = t.decision?.timestamp ?? 0, [b] = n.useState(() => new v(t.timeline ?? [])), C = j - t.length, y = n.useCallback(e => {
         let t = 1e3 * s().round(e, 3),
-            a = j.getEventsAtTimestamp(_ + t);
+            l = b.getEventsAtTimestamp(C + t);
         return {
-            speakingUserIds: s().sortBy(a.speakingUserIds),
-            activeSoundboards: s().sortBy(a.activeSoundboards, "soundboardId")
+            speakingUserIds: s().sortBy(l.speakingUserIds),
+            activeSoundboards: s().sortBy(l.activeSoundboards, "soundboardId")
         }
-    }, [j, _]), [k, y] = n.useState(() => C(f)), N = (0, r.cf)([d.default], () => s().pick(d.default.getUsers(), t.users));
+    }, [b, C]), [N, A] = n.useState(() => y(x)), E = (0, r.cf)([c.default], () => s().pick(c.default.getUsers(), t.users));
     return (n.useEffect(() => h({
         onTimeUpdate: e => {
-            let t = C(e);
-            y(e => s().isEqual(t, e) ? e : (v.info("Event snapshot changed", {
+            let t = y(e);
+            A(e => s().isEqual(t, e) ? e : (g.info("Event snapshot changed", {
                 newEventSnapshot: t,
                 currentEventSnapshot: e
             }), t))
         }
-    }), [h, C]), null == b) ? null : (0, l.jsxs)("div", {
-        className: g.h8,
-        children: [i && k.speakingUserIds.map(e => {
-            let a = N[e];
-            if (null == a) return null;
-            let n = (0, m.mG)(t.guildId, t.channelId, a);
-            return (0, l.jsxs)("div", {
-                className: g.q7,
-                children: [(0, l.jsx)(u.euF, {
+    }), [h, y]), null == j) ? null : (0, a.jsxs)("div", {
+        className: f.h8,
+        children: [i && N.speakingUserIds.map(e => {
+            let l = E[e];
+            if (null == l) return null;
+            let n = (0, m.mG)(t.guildId, t.channelId, l);
+            return (0, a.jsxs)("div", {
+                className: f.q7,
+                children: [(0, a.jsx)(d.euF, {
                     "aria-label": n,
-                    size: u._3J.SIZE_24,
-                    src: a.getAvatarURL(null, 24, !1)
-                }), (0, l.jsx)(u.Text, {
-                    className: g.Xh,
+                    size: d._3J.SIZE_24,
+                    src: l.getAvatarURL(null, 24, !1)
+                }), (0, a.jsx)(d.Text, {
+                    className: f.Xh,
                     color: "always-white",
                     variant: "text-sm/normal",
                     children: n
                 })]
             }, e)
-        }), a && k.activeSoundboards.map(e => {
-            let t = N[e.userId];
-            return null == t ? null : (0, l.jsxs)("div", {
-                className: g.q7,
-                children: [(0, l.jsx)(u.euF, {
+        }), l && N.activeSoundboards.map(e => {
+            let t = E[e.userId];
+            return null == t ? null : (0, a.jsxs)("div", {
+                className: f.q7,
+                children: [(0, a.jsx)(d.euF, {
                     "aria-label": t.username,
-                    size: u._3J.SIZE_24,
+                    size: d._3J.SIZE_24,
                     src: t.getAvatarURL(null, 24, !1)
-                }), null != e.emojiId || null != e.emojiName ? (0, l.jsx)("img", {
+                }), null != e.emojiId || null != e.emojiName ? (0, a.jsx)("img", {
                     alt: e.name,
-                    className: g.g8,
-                    src: (0, c.Ez)({
+                    className: f.g8,
+                    src: (0, u.Ez)({
                         id: e.emojiId,
                         name: e.emojiName ?? "",
                         animated: e.emojiAnimated ?? !1
                     }, 24)
-                }) : null, (0, l.jsx)(u.Text, {
-                    className: g.Xh,
+                }) : null, (0, a.jsx)(d.Text, {
+                    className: f.Xh,
                     color: "always-white",
                     variant: "text-sm/normal",
                     children: e.name

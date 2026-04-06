@@ -1,9 +1,9 @@
 /** chunk id: 792852 params = (module,exports,require) **/
 l.d(t, {
-    P: () => a
+    P: () => i
 });
-var i = l(353640);
-let s = {
+var a = l(353640);
+let n = {
         query: "",
         sortOrder: "descending",
         selectedGameId: null,
@@ -12,8 +12,8 @@ let s = {
         selectedGuildId: null,
         selectedYear: null
     },
-    a = (0, i.v)(e => ({
-        ...s,
+    i = (0, a.v)(e => ({
+        ...n,
         setQuery: t => e({
             query: t
         }),
@@ -47,5 +47,5 @@ let s = {
             selectedGuildId: null,
             selectedYear: null
         }),
-        resetFilters: () => e(s)
+        resetFilters: () => e(n)
     }))
