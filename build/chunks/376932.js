@@ -14,8 +14,8 @@ var i = n(627968),
     g = n(770983),
     m = n(927813),
     x = n(622543),
-    p = n(49999),
-    f = n(985018),
+    f = n(49999),
+    p = n(985018),
     h = n(970901);
 let _ = 90 * m.A.Millis.DAY,
     A = 90 * m.A.Millis.DAY;
@@ -43,11 +43,11 @@ function I(e) {
             children: [(0, i.jsx)(r.EYj, {
                 variant: "text-xs/normal",
                 color: "text-subtle",
-                children: f.intl.string(f.t["+GB8Kt"])
+                children: p.intl.string(p.t["+GB8Kt"])
             }), E && (0, i.jsx)(r.JnF, {
                 size: "xs",
                 onClick: () => {
-                    b(!1), N(p.i.USER_DISMISS)
+                    b(!1), N(f.i.USER_DISMISS)
                 }
             })]
         }), (0, i.jsx)(g.A, {

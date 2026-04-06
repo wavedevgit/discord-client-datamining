@@ -14,8 +14,8 @@ var i = n(627968),
     g = n(183555),
     m = n(289173),
     x = n(958805),
-    p = n(61881),
-    f = n(606758),
+    f = n(61881),
+    p = n(606758),
     h = n(518477),
     _ = n(652215),
     A = n(985018),
@@ -27,7 +27,7 @@ function v(e) {
         className: t
     } = e, {
         trackUserProfileEditSaved: n
-    } = (0, g.NJ)(), [a, v] = l.useState(!1), E = (0, o.yK)([p.A], () => p.A.getSaveablePendingWidgets() ?? []), T = (0, o.yK)([p.A], () => p.A.getChangedWidgets()), b = (0, o.yK)([p.A], () => p.A.getRemovedWidgets()), C = (0, o.bG)([p.A], () => p.A.hasUnsavedChanges()), S = (0, o.bG)([p.A], () => p.A.canSaveChanges()), N = (0, o.bG)([p.A], () => p.A.isSubmitting), y = (0, o.bG)([d.A], () => d.A.useReducedMotion), R = (0, c.pnh)(C, {
+    } = (0, g.NJ)(), [a, v] = l.useState(!1), E = (0, o.yK)([f.A], () => f.A.getSaveablePendingWidgets() ?? []), T = (0, o.yK)([f.A], () => f.A.getChangedWidgets()), b = (0, o.yK)([f.A], () => f.A.getRemovedWidgets()), C = (0, o.bG)([f.A], () => f.A.hasUnsavedChanges()), S = (0, o.bG)([f.A], () => f.A.canSaveChanges()), N = (0, o.bG)([f.A], () => f.A.isSubmitting), y = (0, o.bG)([d.A], () => d.A.useReducedMotion), R = (0, c.pnh)(C, {
         from: {
             opacity: 0,
             y: 80 * !y
@@ -54,11 +54,11 @@ function v(e) {
         C && c.ORC.announce(A.intl.string(A.t["0Y/qkL"]))
     }, [C]);
     let k = l.useCallback(async () => {
-            if (p.A.canSaveChanges()) {
+            if (f.A.canSaveChanges()) {
                 try {
                     await x.A.savePendingWidgets(E)
                 } catch (e) {
-                    (0, f.XA)(h.jM.WIDGET_SAVE_FAILURE);
+                    (0, p.XA)(h.jM.WIDGET_SAVE_FAILURE);
                     return
                 }
                 for (let e of T) {

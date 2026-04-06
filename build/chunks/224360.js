@@ -15,9 +15,9 @@ var l = n(503698),
     g = n(788593),
     m = n(985018),
     x = n(522500),
-    p = n(97717);
+    f = n(97717);
 
-function f(e) {
+function p(e) {
     let {
         applicationId: t,
         userId: n,
@@ -25,21 +25,21 @@ function f(e) {
     } = e, {
         coverImageUrl: a,
         gameName: c,
-        isLoading: f
+        isLoading: p
     } = (0, d.A)(t), h = (0, s.bG)([u.A], () => u.A.suggestedFetchIsLoading), _ = m.intl.formatToPlainString(m.t["3mb1s5"], {
         game: c
     });
-    return f || h ? (0, i.jsx)("div", {
+    return p || h ? (0, i.jsx)("div", {
         className: x.mD
     }) : (0, i.jsx)(r.m, {
         text: _,
         ariaHidden: !0,
         children: (0, i.jsxs)(o.DUT, {
-            className: p.c9,
+            className: f.c9,
             onClick: l,
             "aria-label": _,
             children: [(0, i.jsx)(g.A, {
-                className: p.Iv,
+                className: f.Iv,
                 imageSrc: a,
                 gameName: c,
                 applicationId: t,
@@ -47,7 +47,7 @@ function f(e) {
                 disableInteraction: !0
             }), (0, i.jsx)(o.pa$, {
                 size: "md",
-                className: p.Xv,
+                className: f.Xv,
                 color: o.LU0.colors.WHITE
             })]
         })
@@ -63,12 +63,12 @@ function h(e) {
         className: r
     } = e, d = (0, c.GV)();
     return (0, i.jsxs)("aside", {
-        className: a()(p.kL, r),
+        className: a()(f.kL, r),
         "aria-labelledby": d,
         children: [(0, i.jsxs)("div", {
-            className: p.wx,
+            className: f.wx,
             children: [(0, i.jsx)(o.DUT, {
-                className: p.r,
+                className: f.r,
                 "aria-label": m.intl.string(m.t["pUR+3g"]),
                 onClick: l,
                 children: (0, i.jsx)(o.PGe, {
@@ -82,13 +82,13 @@ function h(e) {
                 children: m.intl.string(m.t.zMUr6Z)
             })]
         }), (0, i.jsx)("ul", {
-            className: p.Vg,
+            className: f.Vg,
             children: n.map(e => {
                 let {
                     applicationId: n
                 } = e;
                 return (0, i.jsx)("li", {
-                    children: (0, i.jsx)(f, {
+                    children: (0, i.jsx)(p, {
                         onClick: () => s(n),
                         userId: t,
                         applicationId: n

@@ -17,13 +17,13 @@ var i = n(627968),
     g = n(562153),
     m = n(993401),
     x = n(652215),
-    p = n(985018),
-    f = n(160514);
-let h = [() => p.intl.string(p.t.madJdE), () => p.intl.string(p.t.NYmfoP), () => p.intl.string(p.t.R2PaCg), () => p.intl.string(p.t.laSR8h), () => p.intl.string(p.t.DnsJE8)],
-    _ = [() => p.intl.string(p.t.nFSbeE), () => p.intl.string(p.t.gTcxOz), () => p.intl.string(p.t["8T0wYj"]), () => p.intl.string(p.t.BIHl1g), () => p.intl.string(p.t["jhBm0+"])],
-    A = [() => p.intl.string(p.t.AyMGXA), () => p.intl.string(p.t.aAFW7V), e => p.intl.formatToPlainString(p.t.h2g0cM, {
+    f = n(985018),
+    p = n(160514);
+let h = [() => f.intl.string(f.t.madJdE), () => f.intl.string(f.t.NYmfoP), () => f.intl.string(f.t.R2PaCg), () => f.intl.string(f.t.laSR8h), () => f.intl.string(f.t.DnsJE8)],
+    _ = [() => f.intl.string(f.t.nFSbeE), () => f.intl.string(f.t.gTcxOz), () => f.intl.string(f.t["8T0wYj"]), () => f.intl.string(f.t.BIHl1g), () => f.intl.string(f.t["jhBm0+"])],
+    A = [() => f.intl.string(f.t.AyMGXA), () => f.intl.string(f.t.aAFW7V), e => f.intl.formatToPlainString(f.t.h2g0cM, {
         name: e
-    }), () => p.intl.string(p.t.rrYh58), () => p.intl.string(p.t["HX3K+F"]), () => p.intl.string(p.t["/yW3aY"]), () => p.intl.string(p.t["PmL/v0"]), () => p.intl.string(p.t.IALa3h), () => p.intl.string(p.t.HRcTFL), () => p.intl.string(p.t.NuCqPt), () => p.intl.string(p.t["M1tw+4"]), () => p.intl.string(p.t.UBm1y2), () => p.intl.string(p.t.Cu95PQ), () => p.intl.string(p.t["R/wFuh"]), () => p.intl.string(p.t.HQPAVT), () => p.intl.string(p.t.YolGh4)],
+    }), () => f.intl.string(f.t.rrYh58), () => f.intl.string(f.t["HX3K+F"]), () => f.intl.string(f.t["/yW3aY"]), () => f.intl.string(f.t["PmL/v0"]), () => f.intl.string(f.t.IALa3h), () => f.intl.string(f.t.HRcTFL), () => f.intl.string(f.t.NuCqPt), () => f.intl.string(f.t["M1tw+4"]), () => f.intl.string(f.t.UBm1y2), () => f.intl.string(f.t.Cu95PQ), () => f.intl.string(f.t["R/wFuh"]), () => f.intl.string(f.t.HQPAVT), () => f.intl.string(f.t.YolGh4)],
     I = [x.fg2.STEAM, x.fg2.PLAYSTATION, x.fg2.XBOX, x.fg2.TWITCH, x.fg2.BATTLENET, x.fg2.LEAGUE_OF_LEGENDS, x.fg2.EPIC_GAMES, x.fg2.RIOT_GAMES, x.fg2.ROBLOX, x.fg2.SPOTIFY, x.fg2.YOUTUBE, x.fg2.CRUNCHYROLL, x.fg2.BUNGIE];
 
 function j(e) {
@@ -33,9 +33,9 @@ function j(e) {
         children: l
     } = e;
     return (0, i.jsxs)("div", {
-        className: f.Ie,
+        className: p.Ie,
         children: [(0, i.jsxs)("div", {
-            className: f.FS,
+            className: p.FS,
             children: [(0, i.jsx)(s.Heading, {
                 variant: "heading-md/medium",
                 color: "text-strong",
@@ -50,7 +50,7 @@ function j(e) {
 }
 
 function v() {
-    let e = p.intl.string(p.t.RnD2yZ),
+    let e = f.intl.string(f.t.RnD2yZ),
         [t] = l.useState(() => ((0, a.sample)(h) ?? h[0])());
     return (0, i.jsx)(j, {
         heading: e,
@@ -59,7 +59,7 @@ function v() {
 }
 
 function E() {
-    let e = p.intl.string(p.t.bFgqYJ),
+    let e = f.intl.string(f.t.bFgqYJ),
         [t] = l.useState(() => ((0, a.sample)(_) ?? _[0])());
     return (0, i.jsx)(j, {
         heading: e,
@@ -73,7 +73,7 @@ function T(e) {
         guildId: n,
         channelId: o,
         onClose: c
-    } = e, d = g.Ay.getName(n, o, t), u = p.intl.formatToPlainString(p.t.sjSitP, {
+    } = e, d = g.Ay.getName(n, o, t), u = f.intl.formatToPlainString(f.t.sjSitP, {
         name: d
     }), [x] = l.useState(() => ((0, a.sample)(A) ?? A[0])(d)), h = l.useCallback(() => {
         r.A.openPrivateChannel({
@@ -84,10 +84,10 @@ function T(e) {
         heading: u,
         bodyText: x,
         children: (0, i.jsx)("div", {
-            className: f.v0,
+            className: p.v0,
             children: (0, i.jsx)(m.FD, {
                 icon: s.oyn,
-                text: p.intl.string(p.t["g33r/P"]),
+                text: f.intl.string(f.t["g33r/P"]),
                 onClick: h
             })
         })
@@ -97,7 +97,7 @@ function T(e) {
 function b() {
     let e = (0, o.Ay)();
     return (0, i.jsx)("div", {
-        className: f.HU,
+        className: p.HU,
         children: I.map((t, n) => {
             let l = c.A.get(t);
             if (null == l) return null;
@@ -105,7 +105,7 @@ function b() {
             return (0, i.jsx)("img", {
                 src: a,
                 alt: l.name,
-                className: f.gj
+                className: p.gj
             }, n)
         })
     })
@@ -120,15 +120,15 @@ function C(e) {
         t?.(), (0, u.openUserSettings)(d.X.CONTENT_AND_SOCIAL_CONNECTED_GAMES_TAB)
     }, [t]);
     return (0, i.jsxs)(j, {
-        heading: p.intl.string(p.t.VB6LWY),
-        bodyText: p.intl.string(p.t.KpjsU9),
+        heading: f.intl.string(f.t.VB6LWY),
+        bodyText: f.intl.string(f.t.KpjsU9),
         children: [(0, i.jsx)(b, {}), (0, i.jsxs)("div", {
-            className: f.v0,
+            className: p.v0,
             children: [(0, i.jsx)(m.FD, {
-                text: p.intl.string(p.t["/Hl24U"]),
+                text: f.intl.string(f.t["/Hl24U"]),
                 onClick: n
             }), (0, i.jsx)(m.FD, {
-                text: p.intl.string(p.t.GTCx0p),
+                text: f.intl.string(f.t.GTCx0p),
                 onClick: a
             })]
         })]

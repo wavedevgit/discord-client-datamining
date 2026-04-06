@@ -1,11 +1,11 @@
 /** chunk id: 154297 params = (module,exports,require) **/
 n.d(t, {
-    C: () => r
+    C: () => s
 });
 var i = n(652215),
     l = n(985018);
 
-function r(e) {
+function s(e) {
     switch (e) {
         case i.yTV.DESKTOP:
             return l.intl.string(l.t.aqN8U9);

@@ -1,6 +1,6 @@
 /** chunk id: 245750 params = (module,exports,require) **/
 n.d(t, {
-    A: () => _
+    A: () => f
 });
 var a = n(627968),
     i = n(64700),
@@ -17,40 +17,40 @@ var a = n(627968),
     p = n(49999),
     g = n(985018);
 
-function _(e) {
+function f(e) {
     let t, n, {
-            webBuildOverride: _,
-            onClick: f,
+            webBuildOverride: f,
+            onClick: _,
             onContextMenu: v,
             dismissibleContents: b,
             iconForeground: j,
             nameplate: A
         } = e,
         C = i.useRef(null),
-        [y, E] = i.useState(!1);
+        [y, S] = i.useState(!1);
     (0, s.Ay)(() => {
-        let e = () => E(!0);
+        let e = () => S(!0);
         return m._.subscribe(x.jej.PREMIUM_GROUP_PURCHASE_FLOW_COMPLETED, e), () => {
             m._.unsubscribe(x.jej.PREMIUM_GROUP_PURCHASE_FLOW_COMPLETED, e)
         }
     });
-    let S = i.useCallback(() => {
-        E(!1), f()
-    }, [f]);
-    t = null != _ ? g.intl.formatToPlainString(g.t.Gzh6ZP, {
-        webBuildOverride: _.id
+    let T = i.useCallback(() => {
+        S(!1), _()
+    }, [_]);
+    t = null != f ? g.intl.formatToPlainString(g.t.Gzh6ZP, {
+        webBuildOverride: f.id
     }) : g.intl.string(g.t.cduTBL);
-    let T = o.Zes,
+    let E = o.Zes,
         N = (0, r.w)();
-    return T = null != _ ? o.Hnu : N.Component, (0, a.jsxs)(a.Fragment, {
+    return E = null != f ? o.Hnu : N.Component, (0, a.jsxs)(a.Fragment, {
         children: [(0, a.jsx)(h.A, {
             ref: C,
             tooltipText: t,
             tooltipPositionKey: n,
-            onClick: S,
+            onClick: T,
             onContextMenu: v,
             "aria-label": g.intl.string(g.t.cduTBL),
-            icon: (0, a.jsx)(T, {
+            icon: (0, a.jsx)(E, {
                 size: "refresh_sm",
                 color: "currentColor",
                 className: j
@@ -60,7 +60,7 @@ function _(e) {
         }), (0, a.jsx)(c.V, {
             targetElementRef: C,
             shouldShow: y,
-            onDismiss: () => E(!1)
+            onDismiss: () => S(!1)
         }), (0, a.jsx)(d.Ay, {
             contentTypes: b,
             groupName: p.m.ACCOUNT_NAME_ZONE,

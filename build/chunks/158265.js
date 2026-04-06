@@ -16,8 +16,8 @@ var a = n(627968),
     x = n(398025),
     p = n(568329),
     g = n(963713),
-    _ = n(772244),
-    f = n(272111),
+    f = n(772244),
+    _ = n(272111),
     v = n(851110),
     b = n(131206),
     j = n(231901);
@@ -32,15 +32,15 @@ let A = e => {
     } = i.useContext(g.T), {
         expansionSpring: y
     } = i.useContext(p.PW), {
-        completionSpring: E,
-        startCompletionAnimation: S
-    } = (0, _.R)(), T = A.userStatus?.completedAt != null, N = i.useRef(!1), I = (0, c.bG)([m.A], () => m.A.useReducedMotion), O = i.useRef(null), k = (0, c.bG)([h.A], () => h.A.hasLayers()), R = (0, u.A)(k), [w, D] = i.useState(null), [M, P] = i.useState(null), L = i.useRef(new r.OH({
+        completionSpring: S,
+        startCompletionAnimation: T
+    } = (0, f.R)(), E = A.userStatus?.completedAt != null, N = i.useRef(!1), I = (0, c.bG)([m.A], () => m.A.useReducedMotion), k = i.useRef(null), O = (0, c.bG)([h.A], () => h.A.hasLayers()), R = (0, u.A)(O), [w, D] = i.useState(null), [M, P] = i.useState(null), L = i.useRef(new r.OH({
         gravity: 0,
         wind: 0
-    })), U = (0, r.f9)(w, M), B = i.useMemo(() => [f.r3], []), G = i.useCallback(() => {
+    })), U = (0, r.f9)(w, M), B = i.useMemo(() => [_.r3], []), G = i.useCallback(() => {
         if (I) return;
         let e = n.current,
-            t = O.current;
+            t = k.current;
         if (null != t && null != e && U.isReady) {
             var a, i, s, l;
             let {
@@ -90,30 +90,30 @@ let A = e => {
                 }
             }), 100)
         }
-    }, [n, O, U, I]), F = (0, u.A)(C);
+    }, [n, k, U, I]), F = (0, u.A)(C);
     return (i.useEffect(() => {
-        T && C && !F && (S(), G())
-    }, [C, T, S, G, F]), i.useEffect(() => {
-        T && !k && R && setTimeout(() => {
-            S(), G()
+        E && C && !F && (T(), G())
+    }, [C, E, T, G, F]), i.useEffect(() => {
+        E && !O && R && setTimeout(() => {
+            T(), G()
         }, 200)
-    }, [T, R, k, S, G]), i.useEffect(() => {
-        U.isReady && (!N.current && T && (S(), G()), N.current = T)
-    }, [T, N, G, S, U]), i.useEffect(() => {
-        s && T && (S(), G())
-    }, [s, T, S, G]), I) ? null : (0, a.jsxs)("div", {
+    }, [E, R, O, T, G]), i.useEffect(() => {
+        U.isReady && (!N.current && E && (T(), G()), N.current = E)
+    }, [E, N, G, T, U]), i.useEffect(() => {
+        s && E && (T(), G())
+    }, [s, E, T, G]), I) ? null : (0, a.jsxs)("div", {
         className: b.iE,
         "aria-hidden": "true",
-        ref: O,
+        ref: k,
         children: [(0, a.jsx)(d.animated.div, {
             className: b.Tp,
             style: {
-                opacity: (0, x.a)(E)
+                opacity: (0, x.a)(S)
             }
         }), (0, a.jsx)(d.animated.div, {
             className: l()(b.sJ, b.ix),
             style: {
-                opacity: (0, x.a)(E)
+                opacity: (0, x.a)(S)
             }
         }), (0, a.jsxs)(d.animated.div, {
             className: b.KG,
@@ -136,7 +136,7 @@ let A = e => {
             }), null != t.current && (0, o.createPortal)((0, a.jsx)(d.animated.div, {
                 className: l()(b.sJ, b.d7),
                 style: {
-                    opacity: (0, x.a)(E)
+                    opacity: (0, x.a)(S)
                 }
             }), t.current)]
         })]

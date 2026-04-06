@@ -1,20 +1,20 @@
 /** chunk id: 912702 params = (module,exports,require) **/
 n.d(t, {
-    GI: () => s,
+    GI: () => r,
     Oo: () => d,
     Qm: () => o,
     py: () => a
 });
 var i = n(73153),
     l = n(198982),
-    r = n(306522);
-let s = async e => {
+    s = n(306522);
+let r = async e => {
     i.h.dispatch({
         type: "GUILD_PRODUCTS_FETCH",
         guildId: e
     });
     try {
-        let t = await r.oG(e);
+        let t = await s.oG(e);
         i.h.dispatch({
             type: "GUILD_PRODUCTS_FETCH_SUCCESS",
             guildId: e,
@@ -32,7 +32,7 @@ let s = async e => {
         productId: t
     });
     try {
-        let n = await r.bq(e, t);
+        let n = await s.bq(e, t);
         return i.h.dispatch({
             type: "GUILD_PRODUCT_FETCH_SUCCESS",
             product: n
@@ -46,14 +46,14 @@ let s = async e => {
     }
 };
 async function o(e, t, n) {
-    let l = await r.Qm(e, t, n);
+    let l = await s.Qm(e, t, n);
     return i.h.dispatch({
         type: "GUILD_PRODUCT_UPDATE",
         product: l
     }), l
 }
 async function d(e, t) {
-    return await r.Oo(e, t), i.h.dispatch({
+    return await s.Oo(e, t), i.h.dispatch({
         type: "GUILD_PRODUCT_DELETE",
         productId: t
     }), !0

@@ -4,14 +4,14 @@ n.d(t, {
 });
 var i = n(735438),
     l = n.n(i),
-    r = n(223637),
-    s = n(542664),
+    s = n(223637),
+    r = n(542664),
     a = n(46054);
-let o = l().omit(s.A.RULES, ["codeBlock", "heading"]),
+let o = l().omit(r.A.RULES, ["codeBlock", "heading"]),
     d = {
-        ...r.A,
+        ...s.A,
         parse: function(e, t, n) {
-            let i = r.A.parse(e, t, n),
+            let i = s.A.parse(e, t, n),
                 l = Math.min(6, (n.initialHeaderLevel ?? 3) + i.level);
             return {
                 ...i,

@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     l = n(64700),
-    r = n(284009),
-    s = n.n(r),
+    s = n(284009),
+    r = n.n(s),
     a = n(158954),
     o = n(311907),
     d = n(846293),
@@ -27,7 +27,7 @@ var i = n(627968),
 function b(e) {
     let t, {
             invite: n,
-            currentUserId: r,
+            currentUserId: s,
             guild: b,
             message: T,
             onTransitionToInviteChannel: N,
@@ -42,13 +42,13 @@ function b(e) {
         } = (0, u.Ay)(c.A.INVITE_EMBED),
         D = null != n && n.target_type === E.yV.STREAM && null != n.target_user && null != L,
         M = null != n && null != R && null != n.channel && null != n.guild && R.channelId === n.channel.id && R.guildId === n.guild.id;
-    s()(null != n, "Invite cannot be null");
+    r()(null != n, "Invite cannot be null");
     let {
         target_type: w,
         target_user: O
     } = n;
-    s()(w === E.yV.STREAM && null != O, "invalid streaming invite");
-    let k = r === O.id,
+    r()(w === E.yV.STREAM && null != O, "invalid streaming invite");
+    let k = s === O.id,
         U = n.state === C.elq.ACCEPTING,
         B = l.useCallback(() => {
             let e = "noop";

@@ -16,21 +16,21 @@ var a = n(627968),
     x = n(73153),
     p = n(587895),
     g = n(429913),
-    _ = n(303054),
-    f = n(409626),
+    f = n(303054),
+    _ = n(409626),
     v = n(692969),
     b = n(760751),
     j = n(403362),
     A = n(603047),
     C = n(435738),
     y = n(99753),
-    E = n(868068),
-    S = n(476398),
-    T = n(405311),
+    S = n(868068),
+    T = n(476398),
+    E = n(405311),
     N = n(424994),
     I = n(913351),
-    O = n(310086);
-let k = [{
+    k = n(310086);
+let O = [{
     key: "type",
     cellClassName: l()(I.Hn, I.T$),
     render(e) {
@@ -108,7 +108,7 @@ function w() {
         P = (0, v.A)({
             applicationId: M,
             location: "DevToolsContentInventory",
-            source: f.Ob.DevTools
+            source: _.Ob.DevTools
         }),
         L = Object.entries(m.w.get("GameProfileModal") ?? {}).filter(e => {
             let [t, n] = e;
@@ -120,7 +120,7 @@ function w() {
         U = (0, g.A)(L).filter(j.Vq),
         B = (0, u.bG)([A.A], () => A.A.getFakeGameToShow());
     return (0, a.jsx)("div", {
-        className: O.nd,
+        className: k.nd,
         children: (0, a.jsxs)(h.IpV, {
             className: I.Qs,
             children: [(0, a.jsxs)(h.BJc, {
@@ -128,10 +128,10 @@ function w() {
                 children: [(0, a.jsx)(h.Text, {
                     variant: "text-md/semibold",
                     children: "Inventory"
-                }), r.length > 0 && (0, a.jsx)(_.A, {
-                    columns: k,
+                }), r.length > 0 && (0, a.jsx)(f.A, {
+                    columns: O,
                     data: r
-                }), (0, a.jsx)(T.A, {}), (0, a.jsx)(h.Button, {
+                }), (0, a.jsx)(E.A, {}), (0, a.jsx)(h.Button, {
                     variant: "primary",
                     text: "Refresh Now",
                     fullWidth: !0,
@@ -186,7 +186,7 @@ function w() {
                         })
                     }
                 })]
-            }), !1, (0, a.jsx)(S.A, {}), (0, a.jsxs)(h.BJc, {
+            }), !1, (0, a.jsx)(T.A, {}), (0, a.jsxs)(h.BJc, {
                 gap: 8,
                 children: [(0, a.jsx)(h.Text, {
                     variant: "text-md/semibold",
@@ -213,7 +213,7 @@ function w() {
                     children: "Activity Sharing"
                 }), (0, a.jsx)(h.l6P, {
                     label: "Force show game",
-                    options: E.K.map(e => ({
+                    options: S.K.map(e => ({
                         label: e,
                         value: e,
                         id: e
@@ -238,7 +238,7 @@ let D = e => {
     } = e, n = (0, v.A)({
         applicationId: t.id,
         location: "DevToolsContentInventory",
-        source: f.Ob.DevTools
+        source: _.Ob.DevTools
     });
     return (0, a.jsx)(h.DUT, {
         onClick: n,

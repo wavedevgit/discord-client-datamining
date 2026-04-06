@@ -1,6 +1,6 @@
 /** chunk id: 128988 params = (module,exports,require) **/
 n.d(t, {
-    A: () => f
+    A: () => p
 });
 var i = n(627968),
     l = n(64700),
@@ -14,13 +14,13 @@ var i = n(627968),
     g = n(742710),
     m = n(463259),
     x = n(18983),
-    p = n(563919);
+    f = n(563919);
 
-function f(e) {
+function p(e) {
     let {
         scrollerRef: t
     } = e, n = (0, o.GG)("user_profile_drag_preview_layer"), {
-        isDragging: f,
+        isDragging: p,
         item: h,
         sourceClientOffset: _
     } = (0, a.V)(e => ({
@@ -39,7 +39,7 @@ function f(e) {
                 getWidth: n
             } = s, l = n?.() ?? 432;
             return (0, i.jsx)("div", {
-                className: p.dt,
+                className: f.dt,
                 style: {
                     width: l
                 },
@@ -61,7 +61,7 @@ function f(e) {
                     width: r
                 },
                 children: (0, i.jsx)(u.A, {
-                    className: p.XJ,
+                    className: f.XJ,
                     imageSrc: e,
                     gameName: n,
                     applicationId: l,
@@ -77,7 +77,7 @@ function f(e) {
                 getWidth: l
             } = s, a = l?.() ?? 400;
             return (0, i.jsx)("div", {
-                className: p.xB,
+                className: f.xB,
                 style: {
                     width: a
                 },
@@ -94,7 +94,7 @@ function f(e) {
                 item: e
             } = s;
             return (0, i.jsx)("div", {
-                className: p.Xm,
+                className: f.Xm,
                 children: n ? (0, i.jsx)(c.A, {
                     item: e,
                     wishlistOwner: t,
@@ -121,12 +121,12 @@ function f(e) {
         }
     }, [t]);
     if (l.useEffect(() => {
-            if (!f) {
+            if (!p) {
                 v.current = null;
                 return
             }
             null == v.current && E()
-        }, [f, E]), !0 !== f || null == _ || null == j) return null;
+        }, [p, E]), !0 !== p || null == _ || null == j) return null;
     null == v.current && E();
     let {
         x: T,
@@ -136,7 +136,7 @@ function f(e) {
         y: 0
     }, C = _.x - T - 60 * !!I, S = _.y - b;
     return (0, i.jsx)("div", {
-        className: p.kL,
+        className: f.kL,
         style: {
             transform: `translate3d(${C}px, ${S}px, 0)`
         },

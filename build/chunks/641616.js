@@ -17,21 +17,21 @@ n(283030);
 var x = n(173628),
     p = n(378230),
     g = n(374058),
-    _ = n(601152),
-    f = n(246993),
+    f = n(601152),
+    _ = n(246993),
     v = n(974857),
     b = n(358622),
     j = n(568834),
     A = n(19767),
     C = n(648514),
     y = n(866001),
-    E = n(855936),
-    S = n(489967),
-    T = n(2915),
+    S = n(855936),
+    T = n(489967),
+    E = n(2915),
     N = n(986789),
     I = n(821306),
-    O = n(226936),
-    k = n(27126),
+    k = n(226936),
+    O = n(27126),
     R = n(60781),
     w = n(498336),
     D = n(615112),
@@ -121,7 +121,7 @@ function em() {
             name: "E2EE",
             group: ed.fu.DEVELOPMENT,
             tags: ["secure frames", "encryption"],
-            render: () => (0, a.jsx)(E.A, {})
+            render: () => (0, a.jsx)(S.A, {})
         }), e.push({
             id: "performance",
             name: "Performance",
@@ -138,7 +138,7 @@ function em() {
             name: "Feedback",
             group: ed.fu.USERS,
             tags: ["surveys"],
-            render: () => (0, a.jsx)(S.A, {})
+            render: () => (0, a.jsx)(T.A, {})
         }), e.push({
             id: "overlay",
             name: "Overlay v3",
@@ -148,7 +148,7 @@ function em() {
             id: "generated_test_user",
             name: "Generated Test Users",
             group: ed.fu.DEVELOPMENT,
-            render: () => (0, a.jsx)(O.A, {})
+            render: () => (0, a.jsx)(k.A, {})
         }), e.push({
             id: "slayer_sdk",
             name: "Slayer SDK",
@@ -263,7 +263,7 @@ function em() {
             name: "Channel Affinity",
             group: ed.fu.USERS,
             tags: ["channels"],
-            render: () => (0, a.jsx)(f.A, {})
+            render: () => (0, a.jsx)(_.A, {})
         }), m.A.isDeveloper && (e.push({
             id: "content_inventory",
             name: "Content Inventory",
@@ -319,13 +319,13 @@ function em() {
             name: "Fractional Nitro",
             group: ed.fu.PREMIUM,
             tags: ["entitlements", "quests"],
-            render: () => (0, a.jsx)(T.A, {})
+            render: () => (0, a.jsx)(E.A, {})
         })), e.push({
             id: "gifting_intent",
             name: "Gifting Intent",
             group: ed.fu.PREMIUM,
             tags: ["friends", "anniversary"],
-            render: () => (0, a.jsx)(k.A, {})
+            render: () => (0, a.jsx)(O.A, {})
         }), e.push({
             id: "krisp_tester",
             name: "Krisp Tester",
@@ -385,7 +385,7 @@ function em() {
             id: "application_widget",
             name: "Application Widget",
             group: ed.fu.USERS,
-            render: () => (0, a.jsx)(_.A, {})
+            render: () => (0, a.jsx)(f.A, {})
         }), e.push({
             id: "developer_portal",
             name: "Developer Portal",

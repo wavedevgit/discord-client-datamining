@@ -62,45 +62,45 @@ function g(e) {
         applicationId: g,
         ref: m
     } = e, x = (0, l.useRef)(null), {
-        trackUserProfileEditAction: p
-    } = (0, s.NJ)(), f = (0, l.useMemo)(() => null != t ? t : [], [t]), h = (0, l.useCallback)(function(e) {
+        trackUserProfileEditAction: f
+    } = (0, s.NJ)(), p = (0, l.useMemo)(() => null != t ? t : [], [t]), h = (0, l.useCallback)(function(e) {
         let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
-            i = new Set(f);
+            i = new Set(p);
         if (t) {
             let t = Object.values(o.Pb).find(t => t.tags.includes(e));
             null != t && (t.tags.forEach(e => {
                 i.delete(e)
-            }), i.add(e), p({
+            }), i.add(e), f({
                 action: "TAG_ADDED",
                 widgetEdited: n,
                 gameId: g
             }))
-        } else i.has(e) ? (i.delete(e), p({
+        } else i.has(e) ? (i.delete(e), f({
             action: "TAG_REMOVED",
             widgetEdited: n,
             gameId: g
-        })) : (i.add(e), p({
+        })) : (i.add(e), f({
             action: "TAG_ADDED",
             widgetEdited: n,
             gameId: g
         }));
         (0, r.s1)(n, g, Array.from(i))
-    }, [f, p, n, g]), _ = (0, l.useCallback)(e => {
-        let t = new Set(f);
+    }, [p, f, n, g]), _ = (0, l.useCallback)(e => {
+        let t = new Set(p);
         e.forEach(e => {
             t.delete(e)
-        }), p({
+        }), f({
             action: "TAG_REMOVED",
             widgetEdited: n,
             gameId: g
         }), (0, r.s1)(n, g, Array.from(t))
-    }, [f, p, n, g]);
+    }, [p, f, n, g]);
     return (0, i.jsx)(a.YNO, {
         targetElementRef: x,
         position: "right",
         align: "top",
         onRequestOpen: () => {
-            p({
+            f({
                 action: "PRESS_ADD_TAG",
                 widgetEdited: n
             })
@@ -110,7 +110,7 @@ function g(e) {
                 closePopout: t
             } = e;
             return (0, i.jsx)(u, {
-                currentTags: f,
+                currentTags: p,
                 onTagSelect: h,
                 onNoneSelect: _,
                 onClose: t

@@ -1,6 +1,6 @@
 /** chunk id: 113763 params = (module,exports,require) **/
 n.d(t, {
-    A: () => f
+    A: () => p
 });
 var i = n(627968),
     l = n(64700),
@@ -14,13 +14,13 @@ var i = n(627968),
     g = n(503062),
     m = n(782505),
     x = n(515054),
-    p = n(499044);
+    f = n(499044);
 
-function f(e) {
+function p(e) {
     let {
         user: t,
         guildId: n,
-        channelId: f,
+        channelId: p,
         onClose: h
     } = e, {
         analyticsLocations: _
@@ -34,11 +34,11 @@ function f(e) {
     return l.useEffect(() => {
         (0, d.A)(t.id, E)
     }, [t.id, E]), (0, i.jsx)(x.K, {
-        className: p.XG,
+        className: f.XG,
         children: null == j ? Array.from({
             length: v ?? 10
         }).map((e, t) => (0, i.jsxs)("div", {
-            className: p.D$,
+            className: f.D$,
             children: [(0, i.jsx)(r.FQ, {
                 width: 40,
                 opacity: .08
@@ -56,7 +56,7 @@ function f(e) {
                 user: l,
                 status: a,
                 guildId: n,
-                channelId: f,
+                channelId: p,
                 onSelect: () => {
                     h?.(), I({
                         action: "PRESS_MUTUAL_FRIEND"

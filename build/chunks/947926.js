@@ -17,21 +17,21 @@ var a = n(627968),
     x = n(890687),
     p = n(971276),
     g = n(851936),
-    _ = n(792620),
-    f = n(241124),
+    f = n(792620),
+    _ = n(241124),
     v = n(73473),
     b = n(201805),
     j = n(545986),
     A = n(139210),
     C = n(568329),
     y = n(818276),
-    E = n(742860),
-    S = n(783569),
-    T = n(963713),
+    S = n(742860),
+    T = n(783569),
+    E = n(963713),
     N = n(717695),
     I = n(899592),
-    O = n(546350),
-    k = n(922532),
+    k = n(546350),
+    O = n(922532),
     R = n(20732),
     w = n(654487);
 n(272111);
@@ -67,10 +67,10 @@ function L(e) {
         reason: U
     } = (0, b.TQ)({
         quest: t
-    }), B = (0, o.bG)([u.A], () => u.A.hasLayers()), G = i.useRef(null), F = i.useMemo(() => (0, _.vv)(t), [t]), V = t.id, W = t.userStatus?.enrolledAt != null, H = (0, d.A)(W), K = t.userStatus?.completedAt != null, {
+    }), B = (0, o.bG)([u.A], () => u.A.hasLayers()), G = i.useRef(null), F = i.useMemo(() => (0, f.vv)(t), [t]), V = t.id, W = t.userStatus?.enrolledAt != null, H = (0, d.A)(W), K = t.userStatus?.completedAt != null, {
         hasError: z,
         isLoading: $
-    } = (0, f.Gk)(), q = i.useContext(N.Z) || s && L && !$ && !c, {
+    } = (0, _.Gk)(), q = i.useContext(N.Z) || s && L && !$ && !c, {
         isExpanded: Y,
         setIsExpanded: Q,
         expandQuestBar: J,
@@ -79,7 +79,7 @@ function L(e) {
         expansionSpring: ee,
         visibilitySpring: et,
         springConfig: en
-    } = (0, O.w)({
+    } = (0, k.w)({
         isQuestAccepted: W,
         isQuestCompleted: K,
         isQuestBarVisible: q
@@ -93,7 +93,7 @@ function L(e) {
         handleBlur: ed,
         handleMouseEnter: ec,
         handleMouseLeave: eu
-    } = (0, k.m)({
+    } = (0, O.m)({
         quest: t,
         isExpanded: Y,
         setIsExpanded: Q,
@@ -123,7 +123,7 @@ function L(e) {
     if (i.useEffect(() => {
             F && (0, j.l9)()
         }, [F]), !s || !q && Z && !$ || z) return z ? n.log("Not rendered due to asset error") : s || n.log("Not rendered due to ineligibility"), null;
-    let e_ = 70 + 78 * !!K;
+    let ef = 70 + 78 * !!K;
     return (0, a.jsx)(v.R, {
         questOrQuests: t,
         questContent: h.uF.QUEST_BAR_V2,
@@ -150,7 +150,7 @@ function L(e) {
                 style: {
                     height: et.to({
                         range: [0, 1],
-                        output: [0, e_]
+                        output: [0, ef]
                     })
                 },
                 children: (0, a.jsx)(r.animated.div, {
@@ -158,14 +158,14 @@ function L(e) {
                         [D.E$]: Y,
                         [D.KA]: W
                     }),
-                    children: (0, a.jsx)(S.R, {
+                    children: (0, a.jsx)(T.R, {
                         springConfig: en,
                         isExpanded: Y,
                         children: (0, a.jsx)(C.oK, {
                             expandedContentRef: em,
                             collapsedContentRef: eh,
                             expansionSpring: ee,
-                            children: (0, a.jsxs)(T.C, {
+                            children: (0, a.jsxs)(E.C, {
                                 quest: t,
                                 taskDetails: ep,
                                 isExpanded: Y,
@@ -175,12 +175,12 @@ function L(e) {
                                 onCtxMenuSelect: es,
                                 onGameSheetOpen: el,
                                 onGameSheetClose: er,
-                                collapsedHeight: e_,
+                                collapsedHeight: ef,
                                 children: [(0, a.jsx)(y.A, {
                                     ref: eh,
                                     className: D.Qs,
                                     overlayRef: ex
-                                }, K ? "collapsed-with-rewards" : "collapsed-without-rewards"), (0, a.jsx)(E.A, {
+                                }, K ? "collapsed-with-rewards" : "collapsed-without-rewards"), (0, a.jsx)(S.A, {
                                     className: D.Qs,
                                     overlayRef: ex,
                                     ref: em,
@@ -201,7 +201,7 @@ function L(e) {
 }
 let U = 21552 == n.j ? function() {
     let e = (0, b.dN)();
-    return null == e ? null : (0, a.jsx)(f.jY, {
+    return null == e ? null : (0, a.jsx)(_.jY, {
         source: w.rE.QUESTS_BAR,
         questId: e.id,
         children: (0, a.jsx)(L, {

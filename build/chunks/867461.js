@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     l = n(64700),
-    r = n(503698),
-    s = n.n(r),
+    s = n(503698),
+    r = n.n(s),
     a = n(158954),
     o = n(311907),
     d = n(827734),
@@ -27,7 +27,7 @@ function E(e) {
         variant: n = "default"
     } = e;
     return (0, i.jsx)("div", {
-        className: s()(C.Io, {
+        className: r()(C.Io, {
             [C.tV]: "brand" === n,
             "theme-light": "default" === n
         }),
@@ -44,8 +44,8 @@ function I(e) {
     let {
         quest: t,
         isInteracting: n,
-        location: r,
-        sourceQuestContent: s
+        location: s,
+        sourceQuestContent: r
     } = e, I = (0, h.Ic)(t), v = t.userStatus?.claimedAt != null, b = (0, _.S5)(t.config.expiresAt, {
         month: "numeric",
         day: "numeric"
@@ -84,12 +84,12 @@ function I(e) {
                             children: f.intl.string(f.t.SKNnqq)
                         })]
                     }), (0, i.jsx)(A.C, {
-                        questContent: r,
+                        questContent: s,
                         quest: t,
                         hideLearnMore: !0,
                         shouldShowDisclosure: !0,
                         showShareLink: !0,
-                        sourceQuestContent: s,
+                        sourceQuestContent: r,
                         children: e => (0, i.jsx)(a.DUT, {
                             ...e,
                             className: C.iI,

@@ -1,29 +1,29 @@
 /** chunk id: 708676 params = (module,exports,require) **/
 n.d(t, {
     A: () => a,
-    J: () => s
+    J: () => r
 });
 var i = n(989349),
     l = n.n(i),
-    r = n(985018);
+    s = n(985018);
 
-function s(e) {
+function r(e) {
     let t = l()();
     if (e <= t) return;
     let n = e.diff(t, "days");
-    if (n > 1) return r.intl.formatToPlainString(r.t.dex68a, {
+    if (n > 1) return s.intl.formatToPlainString(s.t.dex68a, {
         days: n
     });
     let i = e.diff(t, "hours");
-    if (i > 1) return r.intl.formatToPlainString(r.t.BWqf0c, {
+    if (i > 1) return s.intl.formatToPlainString(s.t.BWqf0c, {
         hours: i
     });
-    let s = e.diff(t, "minutes");
-    return r.intl.formatToPlainString(r.t["3SLXAz"], {
-        minutes: s
+    let r = e.diff(t, "minutes");
+    return s.intl.formatToPlainString(s.t["3SLXAz"], {
+        minutes: r
     })
 }
 
 function a(e) {
-    if (null != e) return s(e)
+    if (null != e) return r(e)
 }

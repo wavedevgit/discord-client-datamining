@@ -4,20 +4,20 @@ n.d(t, {
 });
 var i = n(64700),
     l = n(203982),
-    r = n(652215);
+    s = n(652215);
 
-function s(e) {
+function r(e) {
     return Object.keys(e).some(t => e[t])
 }
 
 function a(e, t) {
-    let [n, a] = i.useState(t), [o, d] = i.useState(s(n)), c = i.useRef(o), u = i.useRef(null), m = i.useCallback(e => {
+    let [n, a] = i.useState(t), [o, d] = i.useState(r(n)), c = i.useRef(o), u = i.useRef(null), m = i.useCallback(e => {
         a(t => {
             let n = {
                     ...t,
                     ...e
                 },
-                i = s(n);
+                i = r(n);
             return i !== c.current && (c.current = i, null != u.current && (cancelAnimationFrame(u.current), u.current = null), i ? d(!0) : u.current = requestAnimationFrame(() => d(!1))), n
         })
     }, []);
@@ -32,7 +32,7 @@ function a(e, t) {
                 emojiBurstPicker: n
             })
         };
-        return l._.subscribeKeyed(r.zOV.TOGGLE_REACTION_POPOUT, e, t), () => void l._.unsubscribeKeyed(r.zOV.TOGGLE_REACTION_POPOUT, e, t)
+        return l._.subscribeKeyed(s.zOV.TOGGLE_REACTION_POPOUT, e, t), () => void l._.unsubscribeKeyed(s.zOV.TOGGLE_REACTION_POPOUT, e, t)
     }, [e, m]), {
         popouts: n,
         setPopout: m,

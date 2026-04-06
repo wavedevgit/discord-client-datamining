@@ -20,10 +20,10 @@ function m(e) {
         location: e.location
     }), n = (0, l.bG)([c.default], () => c.default.getCurrentUser()), m = (0, g.w$)({
         location: e.location
-    }), x = i.useMemo(() => m?.filter(e => e.isEligibleForSuggestions()), [m]), p = i.useMemo(() => x?.map(e => e.applicationId) ?? [], [x]), f = (0, s.A)(p), {
+    }), x = i.useMemo(() => m?.filter(e => e.isEligibleForSuggestions()), [m]), f = i.useMemo(() => x?.map(e => e.applicationId) ?? [], [x]), p = (0, s.A)(f), {
         tokens: h,
         fetched: _
-    } = (0, a.j)(p), A = (0, o.A)(n?.id), I = null == n || null == x || null == h || !_;
+    } = (0, a.j)(f), A = (0, o.A)(n?.id), I = null == n || null == x || null == h || !_;
     return i.useMemo(() => I ? {
         isLoading: I
     } : t ? {
@@ -33,7 +33,7 @@ function m(e) {
     } : {
         isLoading: I,
         suggestions: x.map(e => {
-            let t = f.find(t => t?.id === e.applicationId);
+            let t = p.find(t => t?.id === e.applicationId);
             return null == t || null == h.find(t => t.application.id === e.applicationId) || null != A.find(t => t instanceof r.R && t.applicationId === e.applicationId) ? null : {
                 config: e,
                 application: t,
@@ -41,5 +41,5 @@ function m(e) {
             }
         }).filter(d.Vq),
         currentUser: n
-    }, [t, I, x, n, f, h, A])
+    }, [t, I, x, n, p, h, A])
 }

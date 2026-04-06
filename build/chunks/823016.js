@@ -56,14 +56,14 @@ function d(e) {
         } else requestAnimationFrame(() => {
             n?.focus()
         })
-    }, [n, d]), p = l.useMemo(() => ({
+    }, [n, d]), f = l.useMemo(() => ({
         registerDragHandleRef: u,
         registerItemRef: g,
         manageFocusOnReorder: m,
         manageFocusOnDelete: x
     }), [u, g, m, x]);
     return (0, i.jsx)(r.Provider, {
-        value: p,
+        value: f,
         children: t
     })
 }

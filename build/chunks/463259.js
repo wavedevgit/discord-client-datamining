@@ -15,8 +15,8 @@ var i = n(627968),
     g = n(429913),
     m = n(379848),
     x = n(840387),
-    p = n(201718),
-    f = n(961350),
+    f = n(201718),
+    p = n(961350),
     h = n(615405),
     _ = n(633075),
     A = n(289173),
@@ -94,7 +94,7 @@ function M(e) {
         user: t,
         guildId: n,
         channelId: a
-    } = e, s = (0, v.A)(t.id), o = (0, r.bG)([f.default], () => f.default.getId() === t.id), u = (() => {
+    } = e, s = (0, v.A)(t.id), o = (0, r.bG)([p.default], () => p.default.getId() === t.id), u = (() => {
         let [e, t] = (0, r.yK)([h.A], () => [h.A.ipCountryCode, h.A.ipCountryCodeRequest]), n = (0, x.Z)();
         return l.useEffect(() => {
             null == e && null == t && n && (0, c.xe)()
@@ -108,7 +108,7 @@ function M(e) {
         let {
             data: i,
             refetch: a
-        } = (0, p.P)(e), s = l.useRef(null !== i);
+        } = (0, f.P)(e), s = l.useRef(null !== i);
         l.useEffect(() => {
             s.current && (s.current = !1, a())
         }, [a])

@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     l = n(64700),
-    r = n(397927),
-    s = n(341915),
+    s = n(397927),
+    r = n(341915),
     a = n(570852),
     o = n(890687),
     d = n(710969),
@@ -33,7 +33,7 @@ function x(e) {
     } = a.S.useConfig({
         location: g.rE.EMBED_DESKTOP
     });
-    return f ? (0, i.jsx)(r.y$y, {
+    return f ? (0, i.jsx)(s.y$y, {
         className: A.u
     }) : null == C ? null != E ? (0, i.jsx)(u.g, {
         questId: t
@@ -42,12 +42,12 @@ function x(e) {
         reason: m.o.NOT_FOUND
     }) : (0, c.E0)(C.config) ? I ? (0, i.jsx)(p.M, {
         quest: C,
-        location: s.uF.QUESTS_EMBED,
-        sourceQuestContent: s.uF.QUESTS_EMBED
+        location: r.uF.QUESTS_EMBED,
+        sourceQuestContent: r.uF.QUESTS_EMBED
     }, C.id) : (0, i.jsx)(h.R, {
         quest: C,
-        location: s.uF.QUESTS_EMBED,
-        sourceQuestContent: s.uF.QUESTS_EMBED
+        location: r.uF.QUESTS_EMBED,
+        sourceQuestContent: r.uF.QUESTS_EMBED
     }, C.id) : (0, i.jsx)(_.S, {
         questId: t
     })

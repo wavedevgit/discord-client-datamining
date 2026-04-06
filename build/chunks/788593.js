@@ -1,7 +1,7 @@
 /** chunk id: 788593 params = (module,exports,require) **/
 n.d(t, {
     A: () => _,
-    R: () => f
+    R: () => p
 });
 var i = n(627968),
     l = n(64700),
@@ -15,9 +15,9 @@ var i = n(627968),
     g = n(958805),
     m = n(61881),
     x = n(985018),
-    p = n(522500);
+    f = n(522500);
 
-function f(e) {
+function p(e) {
     let {
         imageSrc: t,
         gameName: n
@@ -25,7 +25,7 @@ function f(e) {
     return a || null == t ? (0, i.jsx)("div", {
         role: "img",
         "aria-label": r,
-        className: p.Np,
+        className: f.Np,
         children: (0, i.jsx)(c.Text, {
             variant: "text-xxs/medium",
             lineClamp: 3,
@@ -35,7 +35,7 @@ function f(e) {
     }) : (0, i.jsx)("img", {
         src: t,
         alt: r,
-        className: p.$_,
+        className: f.$_,
         onError: () => s(!0),
         onLoad: () => s(!1)
     })
@@ -74,7 +74,7 @@ function h(e) {
             ref: I,
             className: _,
             tabIndex: -1,
-            children: (0, i.jsx)(f, {
+            children: (0, i.jsx)(p, {
                 imageSrc: t,
                 gameName: n
             })
@@ -83,8 +83,8 @@ function h(e) {
         innerRef: I,
         onClick: b,
         "aria-label": T,
-        className: s()(p.vk, _),
-        children: (0, i.jsx)(f, {
+        className: s()(f.vk, _),
+        children: (0, i.jsx)(p, {
             imageSrc: t,
             gameName: n
         })
@@ -100,13 +100,13 @@ function _(e) {
         hideTooltip: r,
         coverRef: o,
         ...d
-    } = e, u = s()(p.PY, l);
+    } = e, u = s()(f.PY, l);
     return a ? (0, i.jsx)(c.vN3, {
         children: (0, i.jsx)("div", {
             ref: o,
             className: u,
             tabIndex: -1,
-            children: (0, i.jsx)(f, {
+            children: (0, i.jsx)(p, {
                 ...d
             })
         })

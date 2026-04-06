@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(284009),
     l = n.n(i),
-    r = n(417597),
-    s = n(71393),
+    s = n(417597),
+    r = n(71393),
     a = n(250627),
     o = n(871109),
     d = n(935453),
@@ -17,7 +17,7 @@ function m(e) {
         guildId: t,
         guildProductListingId: n,
         sourceAnalyticsLocations: i
-    } = e, m = (0, r.bG)([o.A], () => o.A.getGuildProduct(n)), _ = (0, r.bG)([s.A], () => s.A.getGuild(t), [t]), h = (0, c.A)({
+    } = e, m = (0, s.bG)([o.A], () => o.A.getGuildProduct(n)), _ = (0, s.bG)([r.A], () => r.A.getGuild(t), [t]), h = (0, c.A)({
         guildId: t,
         productId: n
     });

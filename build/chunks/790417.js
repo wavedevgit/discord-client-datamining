@@ -15,8 +15,8 @@ var l = n(311907),
     g = n(489379),
     m = n(837924),
     x = n(558628),
-    p = n(842241),
-    f = n(282797),
+    f = n(842241),
+    p = n(282797),
     h = n(782505),
     _ = n(83013),
     A = n(515054),
@@ -55,7 +55,7 @@ function T(e) {
             children: (0, i.jsxs)("ul", {
                 className: E.kR,
                 children: [null != R && (0, i.jsx)("li", {
-                    children: (0, i.jsx)(p.A, {
+                    children: (0, i.jsx)(f.A, {
                         user: t,
                         currentUser: n,
                         stream: R,
@@ -69,7 +69,7 @@ function T(e) {
                         onClose: S
                     })
                 }, `live-${l}`)), G && (0, i.jsx)("li", {
-                    children: (0, i.jsx)(f.A, {
+                    children: (0, i.jsx)(p.A, {
                         user: t,
                         currentUser: n,
                         voiceChannel: k,

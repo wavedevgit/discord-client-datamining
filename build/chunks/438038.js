@@ -4,9 +4,9 @@ n.d(t, {
 });
 var i = n(627968),
     l = n(64700),
-    r = n(687498);
+    s = n(687498);
 n(311907), n(859703);
-var s = n(341915),
+var r = n(341915),
     a = n(890687),
     o = n(73473),
     d = n(288531),
@@ -37,11 +37,11 @@ function _(e) {
         questOrQuests: t,
         questContent: n,
         questContentPosition: _,
-        trackGuildAndChannelMetadata: n === s.uF.QUESTS_EMBED,
+        trackGuildAndChannelMetadata: n === r.uF.QUESTS_EMBED,
         sourceQuestContent: h,
-        children: e => (0, i.jsx)(r.animated.div, {
+        children: e => (0, i.jsx)(s.animated.div, {
             style: {
-                maxHeight: n === s.uF.QUESTS_EMBED ? void 0 : f.to({
+                maxHeight: n === r.uF.QUESTS_EMBED ? void 0 : f.to({
                     range: [0, 1],
                     output: [100, S]
                 })

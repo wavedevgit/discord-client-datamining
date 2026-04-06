@@ -14,8 +14,8 @@ var i = n(627968),
     g = n(823016),
     m = n(788593),
     x = n(858808),
-    p = n(685049),
-    f = n(617086),
+    f = n(685049),
+    p = n(617086),
     h = n(985018),
     _ = n(522500),
     A = n(51631);
@@ -75,7 +75,7 @@ function j(e) {
         isLoading: C
     } = (0, o.A)(t.applicationId), {
         registerDragHandleRef: S
-    } = (0, g.r)(), N = (0, f.A)(t.applicationId).length > 0, y = c.default.getCurrentUser(), R = y?.id === n, k = !h && R, {
+    } = (0, g.r)(), N = (0, p.A)(t.applicationId).length > 0, y = c.default.getCurrentUser(), R = y?.id === n, k = !h && R, {
         isDragging: w
     } = (0, r.V)(e => ({
         isDragging: e.isDragging()
@@ -92,7 +92,7 @@ function j(e) {
         }), k && (0, i.jsx)(u.jV, {
             buttonRef: S(t.applicationId),
             className: A.BU
-        }), !h && (0, i.jsx)(p.d, {
+        }), !h && (0, i.jsx)(f.d, {
             userId: n,
             applicationId: t.applicationId,
             guildId: a,

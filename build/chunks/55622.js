@@ -9,8 +9,8 @@ var r = n(627968),
     a = n(397927),
     s = n(252452),
     o = n(139286),
-    u = n(507553),
-    c = n(324593),
+    c = n(507553),
+    u = n(324593),
     d = n(883662),
     h = n(961350),
     m = n(287809),
@@ -36,14 +36,14 @@ function N(e) {
     } = e, a = f.A.useField("query"), E = i.useCallback(() => {
         f.A.setState({
             query: ""
-        }), c.A.terminate()
+        }), u.A.terminate()
     }, []), [A, N] = i.useState(!1);
     return (i.useLayoutEffect(() => {
         let e = () => {
             null == m.default.getCurrentUser() && (N(!0), (0, x.default)())
         };
         return h.default.addChangeListener(e), () => {
-            h.default.removeChangeListener(e), y.A.resetState(), u.A.resetState(), s.A.close()
+            h.default.removeChangeListener(e), y.A.resetState(), c.A.resetState(), s.A.close()
         }
     }, []), A) ? null : (0, r.jsx)(d.A, {
         partialRoot: _.D,
@@ -76,21 +76,21 @@ function C() {
         t = i.useCallback(e => {
             f.A.setState({
                 query: e
-            }), c.A.maybeTrackQueryEntered()
+            }), u.A.maybeTrackQueryEntered()
         }, []),
         n = i.useCallback(() => {
-            c.A.isSessionActive() || c.A.initialize()
+            u.A.isSessionActive() || u.A.initialize()
         }, []),
         l = i.useCallback(() => {
-            0 === f.A.getField("query").trim().length && c.A.terminate()
+            0 === f.A.getField("query").trim().length && u.A.terminate()
         }, []),
         s = i.useCallback(() => {
             f.A.setState({
                 query: ""
-            }), c.A.terminate()
+            }), u.A.terminate()
         }, []);
     return i.useEffect(() => () => {
-        f.A.resetState(), c.A.terminate()
+        f.A.resetState(), u.A.terminate()
     }, []), (0, r.jsx)("div", {
         className: A.P,
         children: (0, r.jsx)(a.IWV, {

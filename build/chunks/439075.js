@@ -16,8 +16,8 @@ var a = n(627968),
     x = n(203879),
     p = n(321503),
     g = n(56853),
-    _ = n(515038),
-    f = n(652215),
+    f = n(515038),
+    _ = n(652215),
     v = n(917332);
 
 function b(e) {
@@ -29,21 +29,21 @@ function b(e) {
         rowIndex: m,
         impressionRef: b,
         sourceQuestContent: j
-    } = e, [A, C] = i.useState(!1), [y, E] = i.useState([]), S = (0, o.aC)(t), T = i.useMemo(() => (0, u.vv)(t), [t]), N = (0, d.u0)(), I = i.useCallback(() => {
+    } = e, [A, C] = i.useState(!1), [y, S] = i.useState([]), T = (0, o.aC)(t), E = i.useMemo(() => (0, u.vv)(t), [t]), N = (0, d.u0)(), I = i.useCallback(() => {
         C(!0), N({
             questId: t.id,
-            event: f.HAw.QUEST_HOVER,
+            event: _.HAw.QUEST_HOVER,
             properties: {
                 content_id: s,
                 content_name: (0, c.jO)(s),
                 content_position: r
             },
             sourceQuestContent: j
-        }), T && (0, h.l9)()
-    }, [N, t.id, s, T, j, r]), O = i.useCallback(() => {
+        }), E && (0, h.l9)()
+    }, [N, t.id, s, E, j, r]), k = i.useCallback(() => {
         C(!1), N({
             questId: t.id,
-            event: f.HAw.QUEST_HOVER_OFF,
+            event: _.HAw.QUEST_HOVER_OFF,
             properties: {
                 content_id: s,
                 content_name: (0, c.jO)(s),
@@ -51,7 +51,7 @@ function b(e) {
             },
             sourceQuestContent: j
         })
-    }, [N, t.id, s, j, r]), k = i.useContext(p.X), {
+    }, [N, t.id, s, j, r]), O = i.useContext(p.X), {
         visibilityElementRef: R,
         almostVisibleInViewport: w
     } = function(e) {
@@ -66,7 +66,7 @@ function b(e) {
             }, !0),
             almostVisibleInViewport: t
         }
-    }(k?.current?.getScrollerNode() ?? null);
+    }(O?.current?.getScrollerNode() ?? null);
     return (0, a.jsxs)("div", {
         id: `quest-tile-${t.id}`,
         ref: e => {
@@ -74,23 +74,23 @@ function b(e) {
         },
         className: l()(v.k, n),
         onMouseEnter: I,
-        onMouseLeave: O,
+        onMouseLeave: k,
         onFocus: I,
-        onBlur: O,
+        onBlur: k,
         children: [(0, a.jsx)(g.A, {
             quest: t,
             isHovering: A,
             errorHints: y,
-            warningHints: S,
+            warningHints: T,
             isVisibleInViewport: w,
             sourceQuestContent: j
-        }), (0, a.jsx)(_.A, {
+        }), (0, a.jsx)(f.A, {
             quest: t,
             questContent: s,
             isHovering: A,
             contentPosition: r,
             rowIndex: m,
-            onReceiveErrorHints: E,
+            onReceiveErrorHints: S,
             isVisibleInViewport: w,
             sourceQuestContent: j
         })]

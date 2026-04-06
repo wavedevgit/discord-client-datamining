@@ -4,8 +4,8 @@ n.d(t, {
 }), n(321073);
 var i = n(627968),
     l = n(64700),
-    r = n(397927),
-    s = n(572211),
+    s = n(397927),
+    r = n(572211),
     a = n(354287),
     o = n(693879),
     d = n(353411),
@@ -43,7 +43,7 @@ function p(e) {
         artist: g.state
     }) : t.name, S = g?.timestamps?.start ?? g?.created_at, y = l.useMemo(() => null != S ? (0, i.jsxs)("div", {
         className: h.Ym,
-        children: [(0, i.jsx)(r.T7G, {
+        children: [(0, i.jsx)(s.T7G, {
             size: "xxs",
             color: "currentColor"
         }), (0, i.jsx)(o.z, {
@@ -57,7 +57,7 @@ function p(e) {
         })]
     }) : null, [S, g?.timestamps?.end]), j = l.useMemo(() => (0, i.jsxs)("div", {
         className: h.pq,
-        children: [(0, i.jsx)(r.Text, {
+        children: [(0, i.jsx)(s.Text, {
             variant: "text-xs/normal",
             className: h.dS,
             color: "none",
@@ -65,7 +65,7 @@ function p(e) {
             children: y
         }), A ? null : x]
     }), [y, A, x]);
-    return (0, i.jsx)(s.h, {
+    return (0, i.jsx)(r.h, {
         header: p,
         title: N,
         iconSrc: (0, c.A)(g, t.id) ?? void 0,

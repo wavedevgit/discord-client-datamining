@@ -19,10 +19,10 @@ function d(e) {
         let e = [];
         for (let n of t?.items ?? [])(0, s.$)(n) && null != m[n.sku.applicationId] && e.push(n.sku.applicationId);
         return e
-    }, [t, m]), p = (0, c.w)({
+    }, [t, m]), f = (0, c.w)({
         userIds: g
-    }), f = (0, c.mn)({
+    }), p = (0, c.mn)({
         userIds: g
     }), h = (0, c.tR)(g), _ = (0, c.rY)(), A = (0, c.qx)(), I = (0, c.px)();
-    return i.useMemo(() => (0, l.uniq)([...x, ...p, ...f, ...h, ...u ? [..._, ...A, ...I] : []].filter(r.Vq)), [x, p, f, h, _, A, I, u])
+    return i.useMemo(() => (0, l.uniq)([...x, ...f, ...p, ...h, ...u ? [..._, ...A, ...I] : []].filter(r.Vq)), [x, f, p, h, _, A, I, u])
 }

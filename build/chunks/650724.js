@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(64700),
     l = n(417597),
-    r = n(717125),
-    s = n(376943),
+    s = n(717125),
+    r = n(376943),
     a = n(961350),
     o = n(734057),
     d = n(696451),
@@ -23,7 +23,7 @@ function A(e, t) {
             let e = a.default.getId();
             return d.Ay.isMember(n?.guildId, e)
         }, [n]),
-        x = (0, l.bG)([r.A], () => null != n && n?.channelId != null && r.A.isChannelGated(n.guildId, n.channelId), [n]),
+        x = (0, l.bG)([s.A], () => null != n && n?.channelId != null && s.A.isChannelGated(n.guildId, n.channelId), [n]),
         f = t.hasFlag(g.pr7.IS_CROSSPOST),
         {
             rawMediaPostEmbedData: C,
@@ -37,14 +37,14 @@ function A(e, t) {
                 t = c.A.getGuild(n?.guildId),
                 i = o.A.getChannel(n?.channelId),
                 l = m.default.getUser(e?.author_id),
-                r = u.A.getGuildId(),
-                a = null != i && (0, s.nc)(i);
+                s = u.A.getGuildId(),
+                a = null != i && (0, r.nc)(i);
             return {
                 rawMediaPostEmbedData: e,
                 guild: t,
                 parentChannel: i,
                 user: l,
-                selectedGuildId: r,
+                selectedGuildId: s,
                 canAccess: a
             }
         }, [n]),

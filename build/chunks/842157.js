@@ -4,8 +4,8 @@ n.d(t, {
 }), n(321073);
 var i = n(627968),
     l = n(64700),
-    r = n(379834),
-    s = n(934551),
+    s = n(379834),
+    r = n(934551),
     a = n(27989),
     o = n(311907),
     d = n(397927),
@@ -41,11 +41,11 @@ function k(e) {
     let {
         presenceActivity: t,
         remoteJoinPlatform: n,
-        isGameLaunchable: r
+        isGameLaunchable: s
     } = e, o = (0, L.z4)({
         platforms: t?.supported_platforms,
         currentPlatform: D.yTV.DESKTOP,
-        isGameLaunchable: r
+        isGameLaunchable: s
     }), c = l.useMemo(() => o.map(e => {
         switch (e) {
             case L.FL.MOBILE:
@@ -75,7 +75,7 @@ function k(e) {
                     color: "currentColor"
                 });
             case L.FL.VR:
-                return (0, i.jsx)(s.VrHeadsetIcon, {
+                return (0, i.jsx)(r.VrHeadsetIcon, {
                     size: "xxs",
                     color: "currentColor"
                 });
@@ -111,7 +111,7 @@ function U(e) {
     let {
         message: t,
         application: n,
-        applicationName: s,
+        applicationName: r,
         channel: a,
         header: C,
         currentUserId: N,
@@ -146,7 +146,7 @@ function U(e) {
             textTabularNumbers: !1,
             textFontCode: !1
         })]
-    }) : null, [$, V?.timestamps?.end]), et = (0, b.v)(t), en = (0, x.s)(n.id), ei = l.useMemo(() => en.some(e => (0, g.CZ)(e) === r.m.GLOBAL) ? (0, i.jsxs)(i.Fragment, {
+    }) : null, [$, V?.timestamps?.end]), et = (0, b.v)(t), en = (0, x.s)(n.id), ei = l.useMemo(() => en.some(e => (0, g.CZ)(e) === s.m.GLOBAL) ? (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(d.Y3C, {
             size: "xxs",
             color: "currentColor"
@@ -156,8 +156,8 @@ function U(e) {
         className: O.dS,
         color: "none",
         lineClamp: 2,
-        children: [et ? (0, E.YC)(t, s, a, N, !1) : ee, et ? null : ei]
-    }), [et, t, s, a, N, ee, ei]), er = l.useMemo(() => {
+        children: [et ? (0, E.YC)(t, r, a, N, !1) : ee, et ? null : ei]
+    }), [et, t, r, a, N, ee, ei]), es = l.useMemo(() => {
         let e = V?.details;
         return null == e || "" === e ? null : (0, i.jsx)(d.Text, {
             variant: "text-xs/normal",
@@ -165,10 +165,10 @@ function U(e) {
             lineClamp: 1,
             children: e
         })
-    }, [V?.details]), es = l.useMemo(() => (0, i.jsxs)("div", {
+    }, [V?.details]), er = l.useMemo(() => (0, i.jsxs)("div", {
         className: O.pq,
-        children: [er, el, W || et ? null : Y]
-    }), [el, W, et, Y, er]), ea = !!L, eo = (0, A.e)(n), {
+        children: [es, el, W || et ? null : Y]
+    }), [el, W, et, Y, es]), ea = !!L, eo = (0, A.e)(n), {
         canJoin: ed,
         remoteJoinPlatform: ec
     } = (0, I.D)({
@@ -274,12 +274,12 @@ function U(e) {
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(_.h, {
             header: C,
-            title: s,
+            title: r,
             staticBannerSrc: B,
             onClickBanner: G,
             bannerAspectRatio: _.u.ACTIVITY,
             iconSrc: F ?? void 0,
-            info: es,
+            info: er,
             actions: eg,
             primaryActionFirst: !0,
             onClickContent: G,

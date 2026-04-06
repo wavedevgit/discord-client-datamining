@@ -14,14 +14,14 @@ var i = n(627968),
     g = n(661492),
     m = n(808247),
     x = n(146423),
-    p = n(460442),
-    f = n(699976),
+    f = n(460442),
+    p = n(699976),
     h = n(652215),
     _ = n(518477),
     A = n(985018),
     I = n(353787),
     j = n(913110);
-let v = f.Z.SIZE_90;
+let v = p.Z.SIZE_90;
 
 function E(e) {
     let {
@@ -35,15 +35,15 @@ function E(e) {
         wishlistId: g,
         children: m
     } = e, {
-        trackUserProfileWishlistAction: p
-    } = (0, u.NJ)(), f = l.useCallback(() => {
-        p({
+        trackUserProfileWishlistAction: f
+    } = (0, u.NJ)(), p = l.useCallback(() => {
+        f({
             wishlistId: g,
             action: _.Mq.WISHLIST_ITEM_CLICKED,
             skuId: t.id,
             productLines: new Set([t.productLine])
         }), c()
-    }, [c, t.id, t.productLine, p, g]);
+    }, [c, t.id, t.productLine, f, g]);
     return (0, i.jsx)(x.A, {
         sku: t,
         user: n,
@@ -51,7 +51,7 @@ function E(e) {
         cardStyle: s()(I.Nr, a),
         skuPreviewStyle: s()(I.ev, r),
         onHoverOrFocusChange: o,
-        onClick: f,
+        onClick: p,
         "aria-label": d,
         children: m
     })
@@ -66,9 +66,9 @@ function T(e) {
         skuPreviewStyle: c,
         wishlistOwner: d,
         ...u
-    } = e, [x, f] = l.useState(!1), h = l.useCallback(async () => {
+    } = e, [x, p] = l.useState(!1), h = l.useCallback(async () => {
         if (!x) {
-            f(!0);
+            p(!0);
             try {
                 await m.A.addSkuToWishlist(t.id, n), r?.({
                     tabSection: _.RP.WISHLIST
@@ -76,7 +76,7 @@ function T(e) {
             } catch (e) {
                 (0, o.showToast)((0, o.createToast)(A.intl.string(A.t.F8FvUy), o.ToastType.FAILURE)), o.ORC.announce(A.intl.string(A.t.F8FvUy))
             } finally {
-                f(!1)
+                p(!1)
             }
         }
     }, [t, n, x, r]), j = l.useMemo(() => s()({
@@ -92,7 +92,7 @@ function T(e) {
         onClick: h,
         isHoveringOrFocusing: a,
         ...u,
-        children: (0, i.jsx)(p.oU, {
+        children: (0, i.jsx)(f.oU, {
             isHoveringOrFocusing: a,
             loading: x
         })

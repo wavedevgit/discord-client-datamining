@@ -16,21 +16,21 @@ var a = n(627968),
     x = n(688810),
     p = n(993719),
     g = n(14059),
-    _ = n(362823),
-    f = n(980923),
+    f = n(362823),
+    _ = n(980923),
     v = n(206018),
     b = n(480890),
     j = n(74848),
     A = n(533488),
     C = n(499156),
     y = n(430452),
-    E = n(383501),
-    S = n(350535),
-    T = n(42473),
+    S = n(383501),
+    T = n(350535),
+    E = n(42473),
     N = n(731854),
     I = n(985018),
-    O = n(807880),
-    k = n(479360),
+    k = n(807880),
+    O = n(479360),
     R = n(545229),
     w = n(973324);
 
@@ -59,8 +59,8 @@ function D(e) {
         }),
         q = (0, o.bG)([y.Ay], () => y.Ay.getMode() === N.TB.PUSH_TO_TALK),
         Y = (0, o.bG)([y.Ay], () => y.Ay.getSettings().modeOptions.shortcut),
-        Q = (0, o.bG)([g.A], () => g.A.getIsTutorialActive(_.v.MUTE_TUTORIAL)),
-        J = (0, o.bG)([E.A], () => null != E.A.getChannelId()),
+        Q = (0, o.bG)([g.A], () => g.A.getIsTutorialActive(f.v.MUTE_TUTORIAL)),
+        J = (0, o.bG)([S.A], () => null != S.A.getChannelId()),
         {
             name: X
         } = (0, j.x5)(N.oh.AUDIO_INPUT),
@@ -82,7 +82,7 @@ function D(e) {
         } = en,
         er = s || D ? r.O1p : ei;
     i.useEffect(() => () => el(), [et, el]);
-    let eo = (0, f.A)(n, s, D, M);
+    let eo = (0, _.A)(n, s, D, M);
     t = F ? {
         tooltipType: "green_void_do_not_use",
         tooltipText: I.intl.string(I.t["29gnR4"]),
@@ -90,7 +90,7 @@ function D(e) {
     } : H || V ? {
         tooltipType: "green_void_do_not_use",
         tooltipText: I.intl.format(I.t.c1qUOQ, {
-            keybind: S.dI(Y).toLocaleUpperCase()
+            keybind: T.dI(Y).toLocaleUpperCase()
         }),
         tooltipForceOpen: !0
     } : {
@@ -99,7 +99,7 @@ function D(e) {
     let ed = $ && q && J,
         ec = et ? d.A.colors.ICON_VOICE_MUTED : "currentColor",
         eu = i.useCallback(() => {
-            B(), Q && p.N(_.v.MUTE_TUTORIAL)
+            B(), Q && p.N(f.v.MUTE_TUTORIAL)
         }, [B, Q]);
     return (0, a.jsxs)(x.f5, {
         value: ea,
@@ -135,14 +135,14 @@ function D(e) {
                 } = n, o = s ? r.tN5 : r.abt;
                 return (0, a.jsxs)("div", {
                     ref: ee,
-                    className: l()(k.Lh, {
-                        [k.v8]: et,
-                        [k.q6]: s
+                    className: l()(O.Lh, {
+                        [O.v8]: et,
+                        [O.q6]: s
                     }),
-                    children: [(0, a.jsx)(T.A, {
+                    children: [(0, a.jsx)(E.A, {
                         "aria-checked": et,
                         "aria-label": I.intl.string(I.t.w4m945),
-                        className: k.eT,
+                        className: O.eT,
                         disabled: M,
                         icon: (0, a.jsx)(er, {
                             size: "custom",
@@ -168,16 +168,16 @@ function D(e) {
                                 [R.z]: z
                             })
                         }) : null
-                    }), (0, a.jsx)(T.A, {
+                    }), (0, a.jsx)(E.A, {
                         "aria-label": W ? I.intl.formatToPlainString(I.t["18wnuD"], {
                             inputDeviceName: X
                         }) : I.intl.string(I.t.fRzCbB),
-                        className: l()(k.UT, {
-                            [k.q6]: s
+                        className: l()(O.UT, {
+                            [O.q6]: s
                         }),
                         disabled: M,
                         icon: (0, a.jsx)(o, {
-                            className: k.$$,
+                            className: O.$$,
                             size: "custom",
                             width: 12,
                             height: 12,
@@ -209,11 +209,11 @@ function D(e) {
                 src: w.A
             },
             onRequestClose: () => {
-                p.N(_.v.MUTE_TUTORIAL)
+                p.N(f.v.MUTE_TUTORIAL)
             },
             position: "top",
-            title: I.intl.string(O.default.VG4zAf),
-            body: I.intl.string(O.default["8VIRzR"])
+            title: I.intl.string(k.default.VG4zAf),
+            body: I.intl.string(k.default["8VIRzR"])
         })]
     })
 }

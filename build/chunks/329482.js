@@ -17,23 +17,23 @@ var i = n(503698),
     x = n(967198),
     p = n(558393),
     g = n(737045),
-    _ = n(150921),
-    f = n(310086);
+    f = n(150921),
+    _ = n(310086);
 
 function v(e) {
     let {
         title: t,
         can: n
     } = e, i = n ? o.A9s : o.PGe, l = (0, a.jsx)("div", {
-        className: s()(_.v_, n ? _.uU : _.Ss),
+        className: s()(f.v_, n ? f.uU : f.Ss),
         children: (0, a.jsx)(i, {
-            className: _.Kk
+            className: f.Kk
         })
     });
     return (0, a.jsxs)("div", {
-        className: _.z8,
+        className: f.z8,
         children: [l, (0, a.jsx)("div", {
-            className: _.rv,
+            className: f.rv,
             children: (0, a.jsx)(o.Text, {
                 variant: "text-md/normal",
                 children: t
@@ -52,7 +52,7 @@ function b() {
         A = (0, d.Ay)(n, !0),
         C = null != n ? (0, g.mW)(n, !1) : null,
         y = null != i ? p.A.getGuildPermissionSpecMap(i) : null,
-        E = Object.values(C ?? {}).map(e => {
+        S = Object.values(C ?? {}).map(e => {
             let {
                 title: t,
                 flag: n
@@ -62,7 +62,7 @@ function b() {
                 can: i
             }, t)
         }),
-        S = Object.values(y ?? {}).map(e => {
+        T = Object.values(y ?? {}).map(e => {
             let {
                 title: t,
                 flag: n
@@ -73,21 +73,21 @@ function b() {
             }, t)
         });
     return (0, a.jsx)("div", {
-        className: s()(f.nd, _.nd),
+        className: s()(_.nd, f.nd),
         children: (0, a.jsxs)("div", {
-            className: _.l$,
+            className: f.l$,
             children: [(0, a.jsxs)("section", {
-                className: _.uW,
+                className: f.uW,
                 children: [(0, a.jsx)(o.Heading, {
                     variant: "heading-md/semibold",
                     children: null != A ? `Permissions in ${A}` : "No channel selected"
-                }), E]
+                }), S]
             }), (0, a.jsxs)("section", {
-                className: _.uW,
+                className: f.uW,
                 children: [(0, a.jsx)(o.Heading, {
                     variant: "heading-md/semibold",
                     children: null != i ? `Permissions in ${i.name}` : "No guild selected"
-                }), S]
+                }), T]
             })]
         })
     })

@@ -15,8 +15,8 @@ var l = n(503698),
     g = n(915089),
     m = n(961350),
     x = n(183555),
-    p = n(735321),
-    f = n(606758),
+    f = n(735321),
+    p = n(606758),
     h = n(518477),
     _ = n(985018),
     A = n(558454);
@@ -27,7 +27,7 @@ function I(e) {
         className: n,
         buttonRef: l,
         additionalMenuItems: s
-    } = e, r = (0, p.L)(t), o = (0, g.GV)();
+    } = e, r = (0, f.L)(t), o = (0, g.GV)();
     return (0, i.jsx)(v, {
         targetRef: l,
         widget: t,
@@ -98,10 +98,10 @@ let j = e => {
             trackUserProfileEditAction: r
         } = (0, x.NJ)(), o = e => {
             if (e.shiftKey) {
-                (0, p.qA)(l), r({
+                (0, f.qA)(l), r({
                     action: "WIDGET_REMOVED",
                     ...l.getProfileEditAnalyticsOptions()
-                }), (0, f.XA)(h.jM.WIDGET_REMOVED);
+                }), (0, p.XA)(h.jM.WIDGET_REMOVED);
                 return
             }(0, c.mMO)(async () => {
                 let {

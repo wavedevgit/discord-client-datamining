@@ -4,12 +4,12 @@ n.d(t, {
 });
 var i = n(635377),
     l = n.n(i),
-    r = n(311907),
-    s = n(73153);
+    s = n(311907),
+    r = n(73153);
 let a = new(l())({
     max: 500
 });
-class o extends r.Ay.Store {
+class o extends s.Ay.Store {
     static displayName = "MessageActivityInviteCoverImageStore";
     getCoverImageURL(e) {
         let {
@@ -18,7 +18,7 @@ class o extends r.Ay.Store {
         return a.get(t)
     }
 }
-let d = new o(s.h, {
+let d = new o(r.h, {
     SET_MESSAGE_ACTIVITY_INVITE_COVER_IMAGE_URL: function(e) {
         let {
             messageId: t,

@@ -7,28 +7,28 @@ n.d(t, {
             }), n) {
             case u.GlobalDiscoveryTab.SERVERS:
                 let p = t.selectedServersTab;
-                return null != p ? r.A.setState({
+                return null != p ? s.A.setState({
                     selectedTab: p,
                     entrypoint: t.entrypoint ?? h.J8.UNKNOWN
-                }) : r.A.setState({
+                }) : s.A.setState({
                     entrypoint: t.entrypoint ?? h.J8.UNKNOWN
                 }), (0, a.pX)(m.BVt.GLOBAL_DISCOVERY_SERVERS, t.extra);
             case u.GlobalDiscoveryTab.APPS:
                 if (null != t.newSessionState) {
                     let n = (0, l.YP)(),
                         {
-                            guildId: r,
-                            entrypoint: s
+                            guildId: s,
+                            entrypoint: r
                         } = t.newSessionState;
                     if (i.h.setState({
                             sessionId: n,
-                            guildId: r ?? null,
-                            entrypoint: s,
+                            guildId: s ?? null,
+                            entrypoint: r,
                             trackedOpenedFromExternalEntrypoint: !1
                         }), d.default.track(m.HAw.APP_DIRECTORY_OPENED, {
-                            source: s?.name,
+                            source: r?.name,
                             session_id: n,
-                            guild_id: r,
+                            guild_id: s,
                             user_id: o.default.getCurrentUser()?.id
                         }), t.newSessionState.restorePreviousView) return e(function() {
                         let {
@@ -68,7 +68,7 @@ n.d(t, {
                 if (null != t.categoryId) return (0, a.pX)(m.BVt.GLOBAL_DISCOVERY_APPS_CATEGORY(t.categoryId.toString()));
                 else return (0, a.pX)(m.BVt.GLOBAL_DISCOVERY_APPS);
             case u.GlobalDiscoveryTab.QUESTS:
-                return (0, s.navigateToQuestHome)({
+                return (0, r.navigateToQuestHome)({
                     fromContent: t.questContent,
                     questId: t.questId,
                     forceDiscoveryQuestHomeRoute: !0
@@ -80,8 +80,8 @@ n.d(t, {
 }), n(323874), n(14289), n(35956);
 var i = n(310419),
     l = n(965660),
-    r = n(601193),
-    s = n(545986),
+    s = n(601193),
+    r = n(545986),
     a = n(976860),
     o = n(287809),
     d = n(954571),

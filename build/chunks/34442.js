@@ -1,7 +1,7 @@
 /** chunk id: 34442 params = (module,exports,require) **/
 n.d(t, {
     IU: () => x,
-    dE: () => p
+    dE: () => f
 });
 var i = n(627968),
     l = n(64700),
@@ -20,8 +20,8 @@ function m(e) {
         widget: n,
         onAddGame: m,
         children: x,
-        ...p
-    } = e, f = l.useMemo(() => new Set(n.games.map(e => e.applicationId)), [n.games]), {
+        ...f
+    } = e, p = l.useMemo(() => new Set(n.games.map(e => e.applicationId)), [n.games]), {
         trackUserProfileEditAction: h
     } = (0, o.NJ)(), [_, A] = l.useState(""), I = l.useRef(""), {
         options: j,
@@ -45,12 +45,12 @@ function m(e) {
                 id: String(e.value),
                 value: String(e.value),
                 label: e.label,
-                disabled: f.has(e.value)
+                disabled: p.has(e.value)
             }])),
             t = E.map(t => e.get(t)).filter(e => null != e && !e.disabled),
             n = [...e.values()].filter(e => !t.includes(e));
         return [...t, ...n]
-    }, [j, f, E]), S = l.useMemo(() => ({
+    }, [j, p, E]), S = l.useMemo(() => ({
         ...v,
         threshold: a.Ht.rankings.CONTAINS,
         keys: ["label"]
@@ -64,7 +64,7 @@ function m(e) {
         }), A(n), I.current = n
     }, [_, h, t, N]);
     return (0, i.jsx)(s.YNO, {
-        ...p,
+        ...f,
         onRequestOpen: () => {
             h({
                 action: "PRESS_ADD_GAME",
@@ -132,7 +132,7 @@ function x(e) {
     })
 }
 
-function p(e) {
+function f(e) {
     let t = l.useRef(null);
     return (0, i.jsx)(m, {
         targetElementRef: t,

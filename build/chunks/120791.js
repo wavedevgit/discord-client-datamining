@@ -41,8 +41,8 @@ function x(e) {
         disableInteraction: r,
         games: u
     } = e, x = (0, l.bG)([a.default], () => a.default.getId() === t), {
-        getManageButtonForWidget: p
-    } = (0, g.r)(), f = p(n), {
+        getManageButtonForWidget: f
+    } = (0, g.r)(), p = f(n), {
         expanded: h,
         setExpanded: _
     } = (0, c.B)(), A = h ? u : u.slice(0, 8), I = u.length > 8, j = (0, i.jsxs)(i.Fragment, {
@@ -59,7 +59,7 @@ function x(e) {
             widgetType: n,
             gameCount: u.length
         }), (0, i.jsx)(s.B, {
-            emptyListFallbackRef: f,
+            emptyListFallbackRef: p,
             children: j
         })]
     }) : j

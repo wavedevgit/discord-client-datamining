@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     l = n(311907),
-    r = n(421380),
-    s = n(397927),
+    s = n(421380),
+    r = n(397927),
     a = n(775602),
     o = n(178540),
     d = n(341915),
@@ -24,7 +24,7 @@ function C(e) {
     let {
         quest: t,
         analyticsCtxQuestContent: n,
-        analyticsCtxSourceQuestContent: s,
+        analyticsCtxSourceQuestContent: r,
         analyticsCtxQuestContentPosition: d,
         analyticsCtxQuestContentRowIndex: _
     } = e, h = (0, u.Ut)(), p = (0, l.bG)([a.A], () => a.A.useReducedMotion), A = (0, g.Xf)({
@@ -41,16 +41,16 @@ function C(e) {
                 questContentCTA: m.Cy.DEFIBRILLATOR,
                 questContentPosition: d,
                 questContentRowIndex: _,
-                sourceQuestContent: s
+                sourceQuestContent: r
             })
         },
         afterRequest: e => {
             A.stopAnimation(), C(t.id, e)
         }
     });
-    return (0, i.jsx)(r.$n, {
+    return (0, i.jsx)(s.$n, {
         "data-migration-pending": !0,
-        color: r.XD.PRIMARY,
+        color: s.XD.PRIMARY,
         onClick: I,
         disabled: E,
         className: f.x,
@@ -66,20 +66,20 @@ function E(e) {
         quest: t,
         surface: n,
         analyticsCtxQuestContent: l,
-        analyticsCtxSourceQuestContent: r,
+        analyticsCtxSourceQuestContent: s,
         analyticsCtxQuestContentPosition: a,
         analyticsCtxQuestContentRowIndex: o,
         size: u
     } = e, p = (0, c.RR)({
         quest: t
     }), g = (0, _.vU)()?.getId(), f = (0, c.Vn)(t), E = (0, c.fc)(t), [I, v, b] = (0, c.Qo)(t, E);
-    return f || I === d.X0.DESKTOP ? (0, i.jsx)(s.Button, {
+    return f || I === d.X0.DESKTOP ? (0, i.jsx)(r.Button, {
         variant: "secondary",
         size: u,
         disabled: !0,
         text: x.intl.string(x.t["9KoPyB"]),
         fullWidth: !0
-    }) : p && n === A.V3.QUEST_HOME_TILE_FOOTER ? (0, i.jsx)(s.Button, {
+    }) : p && n === A.V3.QUEST_HOME_TILE_FOOTER ? (0, i.jsx)(r.Button, {
         size: u,
         variant: "secondary",
         onClick: () => {
@@ -91,7 +91,7 @@ function E(e) {
                 position: a,
                 rowIndex: o,
                 impressionId: g,
-                sourceQuestContent: r
+                sourceQuestContent: s
             })
         },
         text: x.intl.string(x.t.Cfye4v),
@@ -99,7 +99,7 @@ function E(e) {
     }) : (0, i.jsx)(C, {
         quest: t,
         analyticsCtxQuestContent: l,
-        analyticsCtxSourceQuestContent: r,
+        analyticsCtxSourceQuestContent: s,
         analyticsCtxQuestContentPosition: a,
         analyticsCtxQuestContentRowIndex: o
     })
@@ -109,7 +109,7 @@ let I = function(e) {
         quest: t,
         surface: n,
         analyticsCtxQuestContent: l,
-        analyticsCtxSourceQuestContent: r,
+        analyticsCtxSourceQuestContent: s,
         analyticsCtxQuestContentPosition: a,
         analyticsCtxQuestContentRowIndex: o,
         size: d
@@ -119,12 +119,12 @@ let I = function(e) {
         surface: n,
         size: d,
         analyticsCtxQuestContent: l,
-        analyticsCtxSourceQuestContent: r,
+        analyticsCtxSourceQuestContent: s,
         analyticsCtxQuestContentPosition: a,
         analyticsCtxQuestContentRowIndex: o
     });
     let c = x.intl.string(x.t["9KoPyB"]);
-    return (0, i.jsx)(s.Button, {
+    return (0, i.jsx)(r.Button, {
         size: d,
         variant: "secondary",
         disabled: !0,

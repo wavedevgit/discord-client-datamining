@@ -15,8 +15,8 @@ var i = n(627968),
     g = n(688810),
     m = n(362490),
     x = n(369374),
-    p = n(531913),
-    f = n(429913),
+    f = n(531913),
+    p = n(429913),
     h = n(287809),
     _ = n(183555),
     A = n(622543),
@@ -72,7 +72,7 @@ function E(e) {
         applicationId: t,
         size: n = "default",
         userId: l
-    } = e, a = (0, p.A)(l, t), c = a.surfaceConfigs[o.m.ADD_WIDGET_PREVIEW];
+    } = e, a = (0, f.A)(l, t), c = a.surfaceConfigs[o.m.ADD_WIDGET_PREVIEW];
     return null == c ? null : (0, i.jsx)("div", {
         className: s()(j.iW, {
             [j.PG]: "small" === n
@@ -109,21 +109,21 @@ function b(e) {
         size: n = "default"
     } = e, {
         trackUserProfileAction: a
-    } = (0, _.NJ)(), s = (0, f.h)(t), {
+    } = (0, _.NJ)(), s = (0, p.h)(t), {
         hasAlreadyLinked: r,
         canStartAuthorization: o,
         startAuthorization: d,
         fetched: x
     } = (0, m.RD)(s), {
-        analyticsLocations: p
+        analyticsLocations: f
     } = (0, g.Ay)(u.A.USER_PROFILE_APPLICATION_WIDGET), h = l.useCallback(() => {
         o && (a({
             action: "PRESS_APPLICATION_WIDGET_PLACEHOLDER_CONNECT",
             applicationId: t
         }), d({
-            analyticsLocations: p
+            analyticsLocations: f
         }))
-    }, [o, a, t, d, p]);
+    }, [o, a, t, d, f]);
     return "default" !== n || null == s ? null : (0, i.jsxs)("div", {
         className: j.qr,
         children: [(0, i.jsx)(c.A5T, {

@@ -19,12 +19,12 @@ function x() {
         trackUserProfileAction: e,
         trackUserProfileEditAction: t
     } = (0, o.NJ)(), x = l.useRef(!1), {
-        suggestions: p,
-        currentUser: f,
+        suggestions: f,
+        currentUser: p,
         isLoading: h
     } = (0, s.A)({
         location: "UserProfileModalV2ApplicationWidgetsEmptyState"
-    }), _ = p?.[0], A = l.useCallback(() => {
+    }), _ = f?.[0], A = l.useCallback(() => {
         t({
             action: "PRESS_ADD_WIDGET"
         }), (0, a.mMO)(async () => {
@@ -80,7 +80,7 @@ function x() {
                 }), I, (0, i.jsx)("div", {
                     className: m.Zj,
                     children: (0, i.jsx)(c.A, {
-                        user: f,
+                        user: p,
                         application: _.application,
                         onDismiss: n
                     })

@@ -1,6 +1,6 @@
 /** chunk id: 264461 params = (module,exports,require) **/
 n.d(t, {
-    A: () => f
+    A: () => _
 });
 var a = n(627968),
     i = n(64700),
@@ -16,7 +16,7 @@ var a = n(627968),
     x = n(439895),
     p = n(652215),
     g = n(751156);
-let _ = e => {
+let f = e => {
         let {
             setTab: t
         } = e, n = (0, o.bG)([c.A], () => c.A.getWindowOpen(p.MLl.DEVTOOLS_POPOUT));
@@ -96,7 +96,7 @@ let _ = e => {
             })]
         })
     },
-    f = () => {
+    _ = () => {
         let [e, t] = i.useState(0);
         return (0, a.jsxs)(r.IpV, {
             className: g.iE,
@@ -121,7 +121,7 @@ let _ = e => {
                     case 4:
                         return (0, a.jsx)(x.A, {});
                     default:
-                        return (0, a.jsx)(_, {
+                        return (0, a.jsx)(f, {
                             setTab: t
                         })
                 }

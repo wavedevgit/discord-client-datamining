@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     l = n(64700),
-    r = n(158954),
-    s = n(311907),
+    s = n(158954),
+    r = n(311907),
     a = n(308528),
     o = n(846293),
     d = n(793574),
@@ -26,9 +26,9 @@ function E(e) {
         invite: t,
         message: n,
         getAcceptInviteContext: E
-    } = e, I = (0, s.bG)([h.default], () => h.default.getId()), v = t.inviter?.id === I, b = t.state === x.elq.ACCEPTING, {
+    } = e, I = (0, r.bG)([h.default], () => h.default.getId()), v = t.inviter?.id === I, b = t.state === x.elq.ACCEPTING, {
         analyticsLocations: T
-    } = (0, c.Ay)(d.A.INVITE_EMBED), N = (0, s.bG)([g.A], () => null != t.inviter && g.A.isFriend(t.inviter?.id)), S = l.useCallback(() => {
+    } = (0, c.Ay)(d.A.INVITE_EMBED), N = (0, r.bG)([g.A], () => null != t.inviter && g.A.isFriend(t.inviter?.id)), S = l.useCallback(() => {
         let e = "noop";
         null != t.inviter && null != p.A.getDMFromUserId(t.inviter.id) && (e = "transition", a.A.openPrivateChannel({
             recipientIds: [t.inviter.id]
@@ -75,7 +75,7 @@ function E(e) {
                     onClick: N ? j : void 0,
                     children: M
                 })]
-            }), (0, i.jsx)(r.$nd, {
+            }), (0, i.jsx)(s.$nd, {
                 onClick: j,
                 text: L,
                 loading: b,

@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     l = n(64700),
-    r = n(503698),
-    s = n.n(r),
+    s = n(503698),
+    r = n.n(s),
     a = n(835245),
     o = n(417597),
     d = n(827734),
@@ -39,10 +39,10 @@ function w(e) {
     let {
         embedUrl: t,
         message: n,
-        channel: r
+        channel: s
     } = e, w = l.useRef(null), O = l.useRef(null), k = (0, j.D)(t, n), {
         setPopout: U
-    } = (0, f.A)(n.id, R.Fd), B = (0, x.VL)(n, r, U, !0), G = I.kt.useSetting(), F = (0, S.j)(), [H, V] = l.useState(!1), [q, W] = l.useState(k?.coverImage == null), Y = (0, o.bG)([v.Ay, b.default], () => v.Ay.isMember(k?.guildId, b.default.getCurrentUser()?.id), [k]), z = (0, o.bG)([v.Ay], () => k?.authorId != null ? v.Ay.getMember(k.guildId, k.authorId) : null), Q = (0, _.A)(z?.avatarDecoration != null ? z?.avatarDecoration : k?.user?.avatarDecoration), [K, J, X] = l.useMemo(() => [z?.colorString ?? "inherit", z?.colorStrings ?? null, z?.colorRoleId], [z]), Z = (0, C.gn)(z?.guildId, k?.authorId ?? void 0, J), {
+    } = (0, f.A)(n.id, R.Fd), B = (0, x.VL)(n, s, U, !0), G = I.kt.useSetting(), F = (0, S.j)(), [H, V] = l.useState(!1), [q, W] = l.useState(k?.coverImage == null), Y = (0, o.bG)([v.Ay, b.default], () => v.Ay.isMember(k?.guildId, b.default.getCurrentUser()?.id), [k]), z = (0, o.bG)([v.Ay], () => k?.authorId != null ? v.Ay.getMember(k.guildId, k.authorId) : null), Q = (0, _.A)(z?.avatarDecoration != null ? z?.avatarDecoration : k?.user?.avatarDecoration), [K, J, X] = l.useMemo(() => [z?.colorString ?? "inherit", z?.colorStrings ?? null, z?.colorRoleId], [z]), Z = (0, C.gn)(z?.guildId, k?.authorId ?? void 0, J), {
         reducedMotion: $
     } = l.useContext(c.CZY), [ee, et] = l.useState(!1), en = l.useCallback(() => {
         V(!0)
@@ -51,20 +51,20 @@ function w(e) {
     }, [V]), el = l.useCallback(async () => {
         null != k && ((0, m.zV)(L.HAw.MEDIA_POST_PREVIEW_EMBED_CLICKED, {
             media_post_id: k.threadId,
-            channel_id: r.id,
+            channel_id: s.id,
             can_access: k.canAccess,
             is_member: Y
         }), k.canAccess ? (0, g.A)(L.BVt.CHANNEL(k.guildId, k.threadId, k.messageId)) : Y ? (0, g.A)(L.BVt.CHANNEL(k.guildId, k.parentChannelId)) : await N.Z2(k.guildId, {}, {
             channelId: k.parentChannelId
         }))
-    }, [k, r, Y]);
+    }, [k, s, Y]);
     if (null == k) return null;
-    let er = (0, T.F_)({
+    let es = (0, T.F_)({
             avatarDecoration: Q,
             size: (0, h.Te)(c._3J.SIZE_40),
             canAnimate: ee
         }),
-        es = k.user?.getAvatarURL(k.guildId, 40, ee),
+        er = k.user?.getAvatarURL(k.guildId, 40, ee),
         ea = () => {
             $.enabled || et(e => !e)
         },
@@ -79,7 +79,7 @@ function w(e) {
             children: [!q && (!0 === k.shouldShowBlurredThumbnailImage ? (0, i.jsx)("img", {
                 src: M,
                 alt: P.intl.string(P.t.rIbh8H),
-                className: s()(D.xn, {
+                className: r()(D.xn, {
                     [D.p6]: k.shouldSpoiler
                 }),
                 onContextMenu: B,
@@ -89,7 +89,7 @@ function w(e) {
                 backgroundSrc: `${eo}?format=png`,
                 alt: P.intl.string(P.t.rIbh8H),
                 aspectRatio: 16 / 9,
-                className: s()(D.xn, {
+                className: r()(D.xn, {
                     [D.p6]: k.shouldSpoiler
                 }),
                 imageChildClassName: D.q_,
@@ -123,16 +123,16 @@ function w(e) {
                 }), (0, i.jsx)(c.Text, {
                     variant: "text-sm/normal",
                     color: "text-muted",
-                    className: s()(D.hF, D.Fq),
+                    className: r()(D.hF, D.Fq),
                     children: k.subtitle
                 })]
             }), (0, i.jsxs)("div", {
                 className: D._5,
-                children: [null != k.authorId && null != es && (0, i.jsx)(E.A, {
+                children: [null != k.authorId && null != er && (0, i.jsx)(E.A, {
                     targetElementRef: O,
                     userId: k.authorId,
                     guildId: k.guildId,
-                    channelId: r.id,
+                    channelId: s.id,
                     messageId: n.id,
                     roleId: X,
                     avatarUrl: k.avatarUrl,
@@ -145,9 +145,9 @@ function w(e) {
                             ...e,
                             ref: O,
                             size: c._3J.SIZE_40,
-                            src: es,
+                            src: er,
                             "aria-label": P.intl.string(P.t.KXz3XB),
-                            avatarDecoration: er
+                            avatarDecoration: es
                         })
                     })
                 }), (0, i.jsxs)("div", {
@@ -182,7 +182,7 @@ function w(e) {
                                 targetElementRef: w,
                                 userId: k.authorId,
                                 guildId: k.guildId,
-                                channelId: r.id,
+                                channelId: s.id,
                                 messageId: n.id,
                                 roleId: X,
                                 avatarUrl: k.avatarUrl,

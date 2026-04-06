@@ -4,8 +4,8 @@ n.d(t, {
 }), n(321073);
 var i = n(627968),
     l = n(64700),
-    r = n(311907),
-    s = n(554146),
+    s = n(311907),
+    r = n(554146),
     a = n(342494),
     o = n(397927),
     d = n(735991),
@@ -72,7 +72,7 @@ function D(e) {
         {
             openGameProfileModal: K,
             launchableAppId: J
-        } = (t = O.id, n = F.author.id, D = (0, f.d)(t), M = (0, r.bG)([_.A, C.A], () => {
+        } = (t = O.id, n = F.author.id, D = (0, f.d)(t), M = (0, s.bG)([_.A, C.A], () => {
             let e = _.A.getApplication(t);
             return null != e ? C.A.getGameByApplication(e) : null
         }, [t]), {
@@ -107,21 +107,21 @@ function D(e) {
             hasAlreadyLinked: ei,
             startAuthorization: el
         } = (0, m.RD)(O),
-        er = (0, u.z)(el, ei),
-        es = !(0, T.A)(q, F, O.id),
-        ea = (0, b.n$)(z, F.activity?.type, es),
+        es = (0, u.z)(el, ei),
+        er = !(0, T.A)(q, F, O.id),
+        ea = (0, b.n$)(z, F.activity?.type, er),
         eo = l.useRef(null),
-        ed = (0, r.bG)([E.A], () => E.A.getMessages(k.id)),
+        ed = (0, s.bG)([E.A], () => E.A.getMessages(k.id)),
         ec = () => {
             let e = [];
-            return (0, N.G)(F.id, ed) && en && !ei && et.enabled && e.push(s.M.GAME_INVITE_ACCOUNT_LINK_UPSELL), (0, i.jsx)(g.Ay, {
+            return (0, N.G)(F.id, ed) && en && !ei && et.enabled && e.push(r.M.GAME_INVITE_ACCOUNT_LINK_UPSELL), (0, i.jsx)(g.Ay, {
                 contentTypes: e,
                 children: e => {
                     let {
                         visibleContent: t,
                         markAsDismissed: n
                     } = e;
-                    if (t === s.M.GAME_INVITE_ACCOUNT_LINK_UPSELL) return (0, i.jsx)(a.AM, {
+                    if (t === r.M.GAME_INVITE_ACCOUNT_LINK_UPSELL) return (0, i.jsx)(a.AM, {
                         graphic: {
                             type: "dynamic",
                             component: o.Z86.ACCOUNT_LINK_DISPLAY,
@@ -144,7 +144,7 @@ function D(e) {
                 }
             })
         };
-    return es ? (0, i.jsx)(j.A, {
+    return er ? (0, i.jsx)(j.A, {
         message: F,
         application: O,
         applicationName: z,
@@ -161,7 +161,7 @@ function D(e) {
         presenceActivity: q,
         analyticsLocations: w,
         showAuthButton: en && !ei && et.enabled,
-        startAuthorization: er,
+        startAuthorization: es,
         accountLinkButtonRef: eo,
         renderAccountLinkUpsell: ec
     }) : (0, i.jsx)(L.A, {
@@ -185,7 +185,7 @@ function D(e) {
         analyticsLocations: w,
         showAuthButton: en && !ei && et.enabled,
         canPromptAuth: en && !ei,
-        startAuthorization: er,
+        startAuthorization: es,
         accountLinkButtonRef: eo,
         renderAccountLinkUpsell: ec
     })

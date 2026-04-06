@@ -1,7 +1,7 @@
 /** chunk id: 422844 params = (module,exports,require) **/
 n.d(t, {
     MR: () => l,
-    xR: () => r
+    xR: () => s
 });
 let i = (0, n(945810).mj)({
     name: "2026-03-receiver-invite-embed-refresh",
@@ -28,7 +28,7 @@ function l(e) {
     })
 }
 
-function r(e) {
+function s(e) {
     return i.useConfig({
         location: e
     })

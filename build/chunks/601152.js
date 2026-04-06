@@ -102,7 +102,7 @@ function m(e) {
             variant: "secondary",
             size: "sm",
             text: "Refetch",
-            onClick: () => (0, o.u)(t.application_id, {
+            onClick: () => (0, o.un)(t.application_id, {
                 force: !0
             })
         })]
@@ -111,9 +111,7 @@ function m(e) {
 
 function h() {
     let e = (0, l.bG)([d.A], () => d.A.getFeaturedFetchState());
-    return i.useEffect(() => {
-        (0, o.W)()
-    }, []), (0, a.jsxs)(s.BJc, {
+    return (0, a.jsxs)(s.BJc, {
         gap: 8,
         children: [(0, a.jsxs)(s.BJc, {
             direction: "horizontal",
@@ -132,7 +130,7 @@ function h() {
             variant: "primary",
             size: "sm",
             text: "Force Refetch",
-            onClick: () => (0, o.W)({
+            onClick: () => (0, o.Wq)({
                 force: !0
             })
         })]
@@ -140,7 +138,35 @@ function h() {
 }
 
 function x() {
-    let [e, t] = i.useState(""), n = (0, l.bG)([d.A], () => e.length > 0 ? d.A.getFetchState(e) : null), c = (0, l.bG)([d.A], () => e.length > 0 ? d.A.getConfigs(e) : []);
+    let e = (0, l.bG)([d.A], () => d.A.getDeveloperFetchState());
+    return (0, a.jsxs)(s.BJc, {
+        gap: 8,
+        children: [(0, a.jsxs)(s.BJc, {
+            direction: "horizontal",
+            gap: 8,
+            align: "center",
+            children: [(0, a.jsx)(s.EYj, {
+                variant: "text-md/semibold",
+                color: "text-strong",
+                children: "Developer Configs"
+            }), (0, a.jsxs)(s.EYj, {
+                variant: "text-xs/normal",
+                color: "text-muted",
+                children: ["(", e, ")"]
+            })]
+        }), (0, a.jsx)(s.$nd, {
+            variant: "primary",
+            size: "sm",
+            text: "Force Refetch",
+            onClick: () => (0, o.i$)({
+                force: !0
+            })
+        })]
+    })
+}
+
+function p() {
+    let [e, t] = i.useState(""), n = (0, l.bG)([d.A], () => e.length > 0 ? d.A.getFetchState(e) : null), c = (0, l.bG)([d.A], () => e.length > 0 ? d.A.getConfigs(e) : null);
     return (0, a.jsxs)(s.BJc, {
         gap: 8,
         children: [(0, a.jsx)(s.EYj, {
@@ -156,14 +182,14 @@ function x() {
             size: "sm",
             text: "Fetch",
             disabled: 0 === e.length,
-            onClick: () => (0, o.u)(e, {
+            onClick: () => (0, o.un)(e, {
                 force: !0
             })
         }), null != n && (0, a.jsxs)(s.EYj, {
             variant: "text-xs/normal",
             color: "text-muted",
             children: ["Status: ", n]
-        }), c.length > 0 && (0, a.jsx)(s.BJc, {
+        }), null != c && c.length > 0 && (0, a.jsx)(s.BJc, {
             gap: 4,
             children: c.map(e => (0, a.jsx)(u, {
                 config: e
@@ -172,7 +198,7 @@ function x() {
     })
 }
 
-function p(e) {
+function g(e) {
     let {
         configs: t,
         selectedConfigId: n,
@@ -196,7 +222,7 @@ function p(e) {
     })
 }
 
-function g(e) {
+function f(e) {
     let {
         config: t
     } = e;
@@ -225,11 +251,11 @@ function _() {
                 variant: "heading-lg/semibold",
                 color: "text-strong",
                 children: "Application Widget Configs"
-            }), (0, a.jsx)(h, {}), (0, a.jsx)(s.cGx, {}), (0, a.jsx)(x, {}), (0, a.jsx)(s.cGx, {}), (0, a.jsx)(p, {
+            }), (0, a.jsx)(h, {}), (0, a.jsx)(s.cGx, {}), (0, a.jsx)(x, {}), (0, a.jsx)(s.cGx, {}), (0, a.jsx)(p, {}), (0, a.jsx)(s.cGx, {}), (0, a.jsx)(g, {
                 configs: n,
                 selectedConfigId: e,
                 onSelectConfig: t
-            }), null != r && (0, a.jsx)(g, {
+            }), null != r && (0, a.jsx)(f, {
                 config: r
             })]
         })

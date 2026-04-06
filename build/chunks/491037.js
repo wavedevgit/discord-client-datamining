@@ -1,15 +1,15 @@
 /** chunk id: 491037 params = (module,exports,require) **/
 n.d(t, {
-    W: () => r
+    W: () => s
 });
 var i = n(627968);
 n(64700);
 var l = n(397927);
 
-function r(e) {
+function s(e) {
     let {
         message: t,
-        initialAnswerId: r
+        initialAnswerId: s
     } = e;
     (0, l.mMO)(async () => {
         let {
@@ -18,7 +18,7 @@ function r(e) {
         return n => (0, i.jsx)(e, {
             ...n,
             message: t,
-            initialAnswerId: r
+            initialAnswerId: s
         })
     })
 }

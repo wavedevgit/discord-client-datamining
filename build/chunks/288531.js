@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var l = n(503698),
-    r = n.n(l),
-    s = n(696292),
+    s = n.n(l),
+    r = n(696292),
     a = n(311907),
     o = n(435371),
     d = n(397927),
@@ -39,10 +39,10 @@ function D(e) {
         containerSize: t,
         onClick: n,
         text: l,
-        tabIndex: r
+        tabIndex: s
     } = e;
     return "xs" === t ? (0, i.jsx)(d.DUT, {
-        tabIndex: r,
+        tabIndex: s,
         className: P.CU,
         tag: "span",
         onClick: n,
@@ -53,7 +53,7 @@ function D(e) {
         })
     }) : (0, i.jsx)(d.Button, {
         fullWidth: !0,
-        tabIndex: r,
+        tabIndex: s,
         variant: "secondary",
         onClick: n,
         text: l
@@ -65,17 +65,17 @@ function M(e) {
         quest: t,
         progressState: n,
         questContent: l,
-        questContentPosition: r,
-        sourceQuestContent: s
+        questContentPosition: s,
+        sourceQuestContent: r
     } = e, c = (0, a.bG)([h.A], () => h.A.isEnrolling(t.id)), u = (0, E.vv)(t), m = (0, E.Cr)(t), _ = (0, v._c)({
         progressState: n,
         quest: t,
         questContent: l,
-        questContentPosition: r,
+        questContentPosition: s,
         inGiftInventory: !1,
         isVideoQuest: u,
         inGameQuest: m,
-        sourceQuestContent: s
+        sourceQuestContent: r
     });
     return (0, i.jsx)(o.m_, {
         text: _.tooltipText,
@@ -108,7 +108,7 @@ let w = e => {
         quest: t,
         taskDetails: Y,
         location: j.rE.QUESTS_CARD,
-        questContent: s.u.QUESTS_EMBED,
+        questContent: r.u.QUESTS_EMBED,
         sourceQuestContent: B,
         gameProfileSource: c.Ob.QuestEmbed
     }), Q = (0, a.bG)([h.A], () => null != h.A.questEnrollmentBlockedUntil, []), K = p.t.useConfig({
@@ -122,7 +122,7 @@ let w = e => {
             },
             "aria-hidden": !V,
             children: (0, i.jsxs)("div", {
-                className: r()(P.nw, {
+                className: s()(P.nw, {
                     [P.dF]: "sm" === l,
                     [P.e5]: "xs" === l
                 }),
@@ -141,7 +141,7 @@ let w = e => {
                             })
                         }), (0, i.jsx)(S.A, {
                             autoplay: v,
-                            className: r()({
+                            className: s()({
                                 [P.Lu]: "lg" === l,
                                 [P.je]: "sm" === l,
                                 [P.ks]: "xs" === l
@@ -178,8 +178,8 @@ let w = e => {
                                     locale: n,
                                     isQuestExpired: i,
                                     collectibleQuestRewardDescription: l,
-                                    formattedCompletionDate: r
-                                } = e, s = t.userStatus?.completedAt != null, a = s && t.userStatus?.claimedAt != null, o = (0, C.kr)({
+                                    formattedCompletionDate: s
+                                } = e, r = t.userStatus?.completedAt != null, a = r && t.userStatus?.claimedAt != null, o = (0, C.kr)({
                                     quest: t
                                 }), d = (0, C.mH)(t.config);
                                 if (a) {
@@ -190,17 +190,17 @@ let w = e => {
                                         n = e?.messages.nameWithArticle ?? null;
                                     return null != n ? R.intl.formatToPlainString(R.t.RrxtPU, {
                                         reward: n,
-                                        date: r
+                                        date: s
                                     }) : R.intl.formatToPlainString(R.t.zNoqRe, {
                                         reward: d,
-                                        date: r
+                                        date: s
                                     })
                                 }
-                                if (s) return o ? R.intl.formatToPlainString(R.t["l1jCM/"], {
-                                    date: r
+                                if (r) return o ? R.intl.formatToPlainString(R.t["l1jCM/"], {
+                                    date: s
                                 }) : R.intl.formatToPlainString(R.t.zNoqRe, {
                                     reward: d,
-                                    date: r
+                                    date: s
                                 });
                                 let c = o ? (0, C.cg)({
                                     quest: t,

@@ -14,8 +14,8 @@ var i = n(627968),
     g = n(311907),
     m = n(397927),
     x = n(155718),
-    p = n(793574),
-    f = n(688810),
+    f = n(793574),
+    p = n(688810),
     h = n(362490),
     _ = n(369374),
     A = n(531913),
@@ -62,7 +62,7 @@ function W(e) {
         token: C
     } = (0, h.RD)(c), {
         analyticsLocations: S
-    } = (0, f.Ay)(p.A.USER_PROFILE_APPLICATION_WIDGET), N = l.useCallback(() => {
+    } = (0, p.Ay)(f.A.USER_PROFILE_APPLICATION_WIDGET), N = l.useCallback(() => {
         j && (t({
             action: I ? "PRESS_APPLICATION_WIDGET_LINKED_RECONNECT" : "PRESS_APPLICATION_WIDGET_UNLINKED_CONNECT",
             applicationId: a.applicationId
@@ -580,8 +580,8 @@ function el(e) {
     var t, n;
     let a, r, o, c, d, {
             user: x,
-            widget: p,
-            cta: f,
+            widget: f,
+            cta: p,
             subtle: h = !1
         } = e,
         _ = W(e),
@@ -589,7 +589,7 @@ function el(e) {
             isLoading: A,
             hasData: j,
             components: v
-        } = (t = x.id, n = p.applicationId, a = (0, I.A)(), r = (0, g.bG)([w.A], () => w.A.getUserIdentityByApplication(t, n)), o = (0, g.bG)([G.A], () => G.A.getApplicationWidgetConfig(n)), c = (0, g.bG)([w.A, G.A], () => null == w.A.getUserIdentities(t) || null == G.A.applicationWidgetConfigs), d = l.useMemo(() => {
+        } = (t = x.id, n = f.applicationId, a = (0, I.A)(), r = (0, g.bG)([w.A], () => w.A.getUserIdentityByApplication(t, n)), o = (0, g.bG)([G.A], () => G.A.getApplicationWidgetConfig(n)), c = (0, g.bG)([w.A, G.A], () => null == w.A.getUserIdentities(t) || null == G.A.applicationWidgetConfigs), d = l.useMemo(() => {
             var e, t;
             if (null == o) return null;
             let n = V[o.widgetTemplateId];
@@ -666,7 +666,7 @@ function el(e) {
     return null == v ? null : (0, i.jsxs)(M.A, {
         ...e,
         userId: x.id,
-        widget: p,
+        widget: f,
         className: s()(F.Y5, h && F.aK),
         headerTitle: _.headerTitle,
         headerClassName: F.wx,
@@ -677,7 +677,7 @@ function el(e) {
             action: _.openGameProfileModal
         }) : null,
         children: [(0, i.jsx)(ei, {
-            widget: p,
+            widget: f,
             children: (0, i.jsx)(z, {
                 component: v
             })
@@ -688,7 +688,7 @@ function el(e) {
             showConnectCta: _.showConnectCta,
             showReconnectCta: _.showReconnectCta,
             handleConnect: _.handleConnect,
-            cta: f
+            cta: p
         })]
     })
 }
@@ -713,20 +713,14 @@ function ea(e) {
             action: c.openGameProfileModal
         }) : null,
         children: [(0, i.jsx)(r.kH, {
+            ...d,
             surface: o.m.WIDGET_TOP,
             surfaceConfig: u,
-            header: c.headerTitle,
-            data: d.data,
-            locale: d.locale,
-            applicationAssets: d.applicationAssets,
-            localizedStrings: d.localizedStrings
+            header: c.headerTitle
         }), (0, i.jsx)(m.cGx, {}), (0, i.jsx)(r.kH, {
+            ...d,
             surface: o.m.WIDGET_BOTTOM,
-            surfaceConfig: g,
-            data: d.data,
-            locale: d.locale,
-            applicationAssets: d.applicationAssets,
-            localizedStrings: d.localizedStrings
+            surfaceConfig: g
         }), (0, i.jsx)(H, {
             isCurrentUser: c.isCurrentUser,
             isLoading: d.isLoading,

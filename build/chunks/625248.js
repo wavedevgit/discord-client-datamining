@@ -4,8 +4,8 @@ n.d(t, {
 }), n(938796);
 var i = n(665260),
     l = n(574381),
-    r = n(134861),
-    s = n(528767),
+    s = n(134861),
+    r = n(528767),
     a = n(182892),
     o = n(652215);
 
@@ -13,8 +13,8 @@ function d(e) {
     if (null == e) return null;
     let t = e.application_id;
     if (null == t || !(0, i.Lt)(e.flags ?? 0, o.jUm.SUPPORTS_REMOTE_ACTIVITY_ACTION_JOIN)) return null;
-    let n = s.A.getRemoteApplicationActivity(t);
-    return null == n || (0, a.e)(n) || null != n.application_id && (r.A.isConnected(n.application_id) || function(e) {
+    let n = r.A.getRemoteApplicationActivity(t);
+    return null == n || (0, a.e)(n) || null != n.application_id && (s.A.isConnected(n.application_id) || function(e) {
         let {
             platform: t
         } = e;

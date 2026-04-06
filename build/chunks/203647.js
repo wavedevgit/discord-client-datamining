@@ -14,8 +14,8 @@ var i = n(627968),
     g = n(178213),
     m = n(594832),
     x = n(86638),
-    p = n(46537),
-    f = n(287809),
+    f = n(46537),
+    p = n(287809),
     h = n(622543),
     _ = n(451395),
     A = n(823016),
@@ -65,7 +65,7 @@ let T = l.memo(function(e) {
         wishlistId: c,
         tooltipConfig: d,
         isDragging: u,
-        onReorder: f
+        onReorder: p
     } = e, {
         registerDragHandleRef: h
     } = (0, A.r)(), j = (0, g.GG)("user_profile_wishlist_grid"), T = l.useMemo(() => s ? (0, i.jsx)(_.jV, {
@@ -89,7 +89,7 @@ let T = l.memo(function(e) {
                 dragHandle: T
             }),
             n = e;
-        return d.shouldShow && !u && (n = (0, p.Qc)(d) ? (0, i.jsx)(o.m, {
+        return d.shouldShow && !u && (n = (0, f.Qc)(d) ? (0, i.jsx)(o.m, {
             text: d.title,
             position: "top",
             asContainer: !0,
@@ -111,7 +111,7 @@ let T = l.memo(function(e) {
             item: t,
             index: n,
             wishlistId: c,
-            onReorder: f,
+            onReorder: p,
             children: b
         })
     }) : (0, i.jsx)("li", {
@@ -124,11 +124,11 @@ function b(e) {
         items: t,
         profileOwner: n,
         isOwner: r
-    } = e, o = f.default.getCurrentUser(), {
+    } = e, o = p.default.getCurrentUser(), {
         defaultWishlistId: g
     } = (0, s.cf)([h.A], () => ({
         defaultWishlistId: h.A.getFirstWishlistId(n.id)
-    })), m = (0, p.b7)(t, r), {
+    })), m = (0, f.b7)(t, r), {
         isDragging: x
     } = (0, a.V)(e => ({
         isDragging: e.isDragging()

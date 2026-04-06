@@ -16,17 +16,17 @@ var a = n(627968),
     x = n(362490),
     p = n(487431),
     g = n(587895),
-    _ = n(429913),
-    f = n(15285),
+    f = n(429913),
+    _ = n(15285),
     v = n(905552),
     b = n(253932),
     j = n(546183),
     A = n(134861),
     C = n(157257),
     y = n(985018),
-    E = n(271469),
-    S = n(310086),
-    T = n(521807);
+    S = n(271469),
+    T = n(310086),
+    E = n(521807);
 let N = [{
     id: "unset",
     label: "Unset",
@@ -52,9 +52,9 @@ function I() {
             analyticsLocations: o
         } = (0, m.Ay)(u.A.DEV_TOOLS),
         I = b.TA.useSetting(),
-        [O, k] = i.useState(""),
-        R = (0, r.bG)([f.Ay, C.A], () => (0, v.A)(f.Ay, C.A)),
-        w = (0, _.h)(O),
+        [k, O] = i.useState(""),
+        R = (0, r.bG)([_.Ay, C.A], () => (0, v.A)(_.Ay, C.A)),
+        w = (0, f.h)(k),
         D = (0, h.g)(w),
         M = (0, r.yK)([g.A], () => w?.linkedGames?.map(e => g.A.getApplication(e.id)).filter(e => null != e) ?? []),
         P = (0, x.RD)(w, {
@@ -80,9 +80,9 @@ function I() {
         });
     return (0, a.jsxs)("div", {
         ref: s,
-        className: l()(S.nd, T.n),
+        className: l()(T.nd, E.n),
         children: [(0, a.jsxs)("div", {
-            className: T.k,
+            className: E.k,
             children: [(0, a.jsx)(d.Heading, {
                 variant: "heading-lg/normal",
                 children: "Settings"
@@ -95,16 +95,16 @@ function I() {
                 fullWidth: !0
             })]
         }), (0, a.jsxs)("div", {
-            className: T.k,
+            className: E.k,
             children: [(0, a.jsx)(d.Heading, {
                 variant: "heading-lg/normal",
                 children: "Application"
             }), (0, a.jsx)(d.ksK, {
                 label: "Application ID",
-                value: O,
-                onChange: k
+                value: k,
+                onChange: O
             }), null != R && null != R.id ? (0, a.jsx)(d.Button, {
-                onClick: () => k(R.id),
+                onClick: () => O(R.id),
                 variant: "primary",
                 text: `Use detected game: ${R.name} (${R.id})`
             }) : null, (0, a.jsxs)(d.Text, {
@@ -115,32 +115,32 @@ function I() {
                 children: ["Linked Games:", " ", M.length > 0 ? M.map(e => (0, h.t)(w)?.id === e.id ? `${e.name}*` : e.name).join(", ") : "N/A"]
             })]
         }), (0, a.jsxs)("div", {
-            className: T.k,
+            className: E.k,
             children: [(0, a.jsx)(d.Heading, {
                 variant: "heading-lg/normal",
                 children: "Authorization"
             }), (0, a.jsx)(p.VT, {
                 overallStatus: P.debug.isSubscribedToAuthorizeRequest ? p.nW.OVERALL_GOOD : U ? p.nW.WARN : p.nW.OVERALL_BAD,
-                name: y.intl.string(E.default.AGLx00),
+                name: y.intl.string(S.default.AGLx00),
                 steps: [{
                     status: U ? p.nW.GOOD : p.nW.BAD,
-                    text: y.intl.string(E.default.kxF9br),
-                    description: U ? null : y.intl.string(E.default.PFxxJa),
+                    text: y.intl.string(S.default.kxF9br),
+                    description: U ? null : y.intl.string(S.default.PFxxJa),
                     learnMoreLink: U ? null : "https://discord.com/developers/docs/discord-social-sdk/how-to/debug-log"
                 }, {
                     status: P.debug.isSubscribedToAuthorizeRequest ? p.nW.GOOD : U ? p.nW.WARN : p.nW.BAD,
-                    text: y.intl.string(E.default.S94dzs),
-                    description: P.debug.isSubscribedToAuthorizeRequest || !U ? null : y.intl.string(E.default.aTULMB),
+                    text: y.intl.string(S.default.S94dzs),
+                    description: P.debug.isSubscribedToAuthorizeRequest || !U ? null : y.intl.string(S.default.aTULMB),
                     learnMoreLink: P.debug.isSubscribedToAuthorizeRequest || !U ? null : "https://discord.com/developers/docs/discord-social-sdk/how-to/debug-log"
                 }],
                 isChosen: B.chosenFlow === x._M.RPC
             }), (0, a.jsx)(p.VT, {
                 overallStatus: L.debug.hasConnectionEntrypointUrl ? p.nW.OVERALL_GOOD : p.nW.OVERALL_BAD,
-                name: y.intl.string(E.default.K3ObrU),
+                name: y.intl.string(S.default.K3ObrU),
                 steps: [{
                     status: L.debug.hasConnectionEntrypointUrl ? p.nW.GOOD : p.nW.BAD,
-                    text: y.intl.string(E.default["8a7IrV"]),
-                    description: L.debug.hasConnectionEntrypointUrl ? y.intl.formatToPlainString(E.default["9iLeL2"], {
+                    text: y.intl.string(S.default["8a7IrV"]),
+                    description: L.debug.hasConnectionEntrypointUrl ? y.intl.formatToPlainString(S.default["9iLeL2"], {
                         url: L.connectionApp?.connectionEntrypointUrl
                     }) : null
                 }],
@@ -154,7 +154,7 @@ function I() {
                     overflow: "hidden"
                 },
                 variant: "text-md/medium",
-                children: y.intl.string(E.default.eg0mNa)
+                children: y.intl.string(S.default.eg0mNa)
             }), (0, a.jsx)(d.Button, {
                 disabled: !B.canStartAuthorization,
                 onClick: () => B.startAuthorization({

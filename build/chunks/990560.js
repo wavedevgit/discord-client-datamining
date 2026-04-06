@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     l = n(64700),
-    r = n(311907),
-    s = n(846293),
+    s = n(311907),
+    r = n(846293),
     a = n(820284),
     o = n(688810),
     d = n(107123),
@@ -40,12 +40,12 @@ function P(e) {
     } = e, {
         invite: D,
         inviteError: M
-    } = (0, r.cf)([x.A], () => ({
+    } = (0, s.cf)([x.A], () => ({
         invite: x.A.getInvite(t),
         inviteError: x.A.getInviteError(t)
     }), [t]), w = null == D, O = (0, m._U)(t, n.id);
     l.useEffect(() => {
-        w && s.Ay.resolveInvite(t, void 0, {
+        w && r.Ay.resolveInvite(t, void 0, {
             inviteInstanceId: O
         })
     }, [t, w, O]);
@@ -56,11 +56,11 @@ function P(e) {
         {
             analyticsLocations: U
         } = (0, o.Ay)(),
-        B = (0, r.bG)([A.A], () => D?.guild != null ? A.A.getGuild(D.guild.id) : null, [D]),
-        G = (0, r.bG)([g.default], () => g.default.getId()),
-        F = (0, r.bG)([c.Ay], () => c.Ay.getGuildScheduledEvent(k.guild_scheduled_event?.id), [k]),
+        B = (0, s.bG)([A.A], () => D?.guild != null ? A.A.getGuild(D.guild.id) : null, [D]),
+        G = (0, s.bG)([g.default], () => g.default.getId()),
+        F = (0, s.bG)([c.Ay], () => c.Ay.getGuildScheduledEvent(k.guild_scheduled_event?.id), [k]),
         H = () => {
-            null != k.channel && s.Ay.transitionToInviteSync(k)
+            null != k.channel && r.Ay.transitionToInviteSync(k)
         },
         V = function() {
             let {
@@ -70,7 +70,7 @@ function P(e) {
                 guild: n,
                 isMember: null != B,
                 analyticsLocations: U
-            }) === h.W.PROCEED && s.Ay.acceptInviteAndTransitionToInviteChannel({
+            }) === h.W.PROCEED && r.Ay.acceptInviteAndTransitionToInviteChannel({
                 inviteKey: t,
                 context: P("Invite Button Embed", t),
                 autoJoin: e

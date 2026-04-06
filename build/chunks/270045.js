@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     l = n(64700),
-    r = n(311907),
-    s = n(397927),
+    s = n(311907),
+    r = n(397927),
     a = n(442433),
     o = n(181658),
     d = n(976860),
@@ -31,7 +31,7 @@ var i = n(627968),
     j = n(985018);
 
 function L(e) {
-    let t = (0, r.bG)([_.A], () => _.A.questDeliveryOverride, []),
+    let t = (0, s.bG)([_.A], () => _.A.questDeliveryOverride, []),
         n = (0, E.vy)(e.questContent),
         c = [h.uF.QUEST_BAR_V2, h.uF.QUEST_BAR].includes(e.questContent),
         L = (0, A.Ut)(),
@@ -62,10 +62,10 @@ function L(e) {
                 sourceQuestContent: e.sourceQuestContent
             }), [e.questContent, e.questContentPosition, e.sourceQuestContent, R])
         }),
-        F = e => (0, s.showToast)((0, s.createToast)(new o.A(e, e.status).message, s.ToastType.FAILURE)),
+        F = e => (0, r.showToast)((0, r.createToast)(new o.A(e, e.status).message, r.ToastType.FAILURE)),
         H = () => (0, m.CV)(e.quest.id).catch(F),
         V = (0, g.nv)(e.quest),
-        q = l.useMemo(() => (0, i.jsx)(s.sLh, {
+        q = l.useMemo(() => (0, i.jsx)(r.sLh, {
             id: "delivery",
             label: "Show in Quest Bar",
             checked: t?.id === e.quest.id,
@@ -75,7 +75,7 @@ function L(e) {
             (0, d.pX)(S.BVt.QUEST_PREVIEW_TOOL_2(e.quest.id))
         }, [e.quest.id]),
         Y = e.shouldShowDisclosure && e.quest.id !== N.Fw;
-    return (0, i.jsxs)(s.W1t, {
+    return (0, i.jsxs)(r.W1t, {
         "data-menu-migrated": !0,
         variant: "fixed",
         onSelect: () => {
@@ -84,28 +84,28 @@ function L(e) {
         navId: "quests-entry",
         "aria-label": j.intl.string(j.t.ogxXGq),
         onClose: e?.onClose ?? y.tE,
-        children: [(0, i.jsxs)(s.rXV, {
-            children: [(0, i.jsx)(s.Drp, {
+        children: [(0, i.jsxs)(r.rXV, {
+            children: [(0, i.jsx)(r.Drp, {
                 id: "play-game",
                 label: P,
                 action: B,
-                icon: s.We5,
+                icon: r.We5,
                 leadingAccessory: {
                     type: "icon",
-                    icon: s.We5
+                    icon: r.We5
                 }
-            }), D && (0, i.jsx)(s.Drp, {
+            }), D && (0, i.jsx)(r.Drp, {
                 id: "share-link",
                 label: j.intl.string(j.t.RDE0Sc),
                 action: G,
-                icon: s.TdU,
+                icon: r.TdU,
                 leadingAccessory: {
                     type: "icon",
-                    icon: s.TdU
+                    icon: r.TdU
                 }
             }), V && q]
-        }, "major-actions"), (0, i.jsxs)(s.rXV, {
-            children: [!e.hideLearnMore && (0, i.jsx)(s.Drp, {
+        }, "major-actions"), (0, i.jsxs)(r.rXV, {
+            children: [!e.hideLearnMore && (0, i.jsx)(r.Drp, {
                 id: "learn-more",
                 label: j.intl.string(j.t["Ws2Bl+"]),
                 action: () => {
@@ -120,12 +120,12 @@ function L(e) {
                         questId: e.quest.id
                     })
                 },
-                icon: s.r2v,
+                icon: r.r2v,
                 leadingAccessory: {
                     type: "icon",
-                    icon: s.r2v
+                    icon: r.r2v
                 }
-            }), Y && (0, i.jsx)(s.Drp, {
+            }), Y && (0, i.jsx)(r.Drp, {
                 id: "display-disclosure",
                 label: j.intl.string(j.t.GcsZKJ),
                 action: () => {
@@ -137,7 +137,7 @@ function L(e) {
                         sourceQuestContent: e.sourceQuestContent
                     })
                 }
-            }), n && (0, i.jsx)(s.Drp, {
+            }), n && (0, i.jsx)(r.Drp, {
                 id: "hide-entrypoint",
                 label: j.intl.string(j.t.NN79E9),
                 action: () => {
@@ -151,45 +151,45 @@ function L(e) {
                 },
                 subtext: j.intl.string(j.t.RK9gxo)
             })]
-        }, "minor-actions"), e.quest.preview && (0, i.jsxs)(s.rXV, {
+        }, "minor-actions"), e.quest.preview && (0, i.jsxs)(r.rXV, {
             label: j.intl.string(j.t["Ape+mm"]),
-            children: [(0, i.jsx)(s.Drp, {
+            children: [(0, i.jsx)(r.Drp, {
                 id: "dismiss",
                 label: j.intl.string(j.t.JF6W66),
                 action: O
-            }), (0, i.jsx)(s.Drp, {
+            }), (0, i.jsx)(r.Drp, {
                 id: "enrollment",
                 label: j.intl.string(j.t.taqkwK),
                 action: () => {
                     k(), H()
                 }
-            }), (0, i.jsx)(s.Drp, {
+            }), (0, i.jsx)(r.Drp, {
                 id: "progress",
                 label: j.intl.string(j.t.cKSLr4),
                 action: () => {
                     w(.9 * Math.random() + .03)
                 }
-            }), (0, i.jsx)(s.Drp, {
+            }), (0, i.jsx)(r.Drp, {
                 id: "complete",
                 label: j.intl.string(j.t.jQEfRT),
                 action: M
-            }), (0, I.g5)(e.quest) && (0, i.jsxs)(s.Drp, {
+            }), (0, I.g5)(e.quest) && (0, i.jsxs)(r.Drp, {
                 id: "console",
                 label: "Console Heartbeat",
-                children: [(0, i.jsx)(s.Drp, {
+                children: [(0, i.jsx)(r.Drp, {
                     disabled: !0,
                     id: "status",
                     label: `Status: ${(0,I.YL)(e.quest)?"alive":"dead"}`
-                }), (0, i.jsx)(s.Drp, {
+                }), (0, i.jsx)(r.Drp, {
                     id: "start",
                     label: "Start heartbeat (cheatmode)",
                     action: () => (0, m.vD)(e.quest.id, !0).catch(F)
-                }), (0, i.jsx)(s.Drp, {
+                }), (0, i.jsx)(r.Drp, {
                     id: "stop",
                     label: "Stop heartbeat",
                     action: H
                 })]
-            }), (0, i.jsx)(s.Drp, {
+            }), (0, i.jsx)(r.Drp, {
                 id: "copy-quest-id",
                 label: j.intl.string(j.t.oisrFi),
                 action: () => {
@@ -197,7 +197,7 @@ function L(e) {
                 }
             }), (0, p.U)({
                 location: N.rE.QUEST_PREVIEW_TOOL_2
-            }) && (0, i.jsx)(s.Drp, {
+            }) && (0, i.jsx)(r.Drp, {
                 id: "preview",
                 label: j.intl.string(j.t.tx5Ax5),
                 action: W
@@ -210,7 +210,7 @@ function R(e) {
     let {
         children: t,
         onOpen: n,
-        onClose: r,
+        onClose: s,
         preventIdle: a,
         quest: o,
         questContent: d,
@@ -226,10 +226,10 @@ function R(e) {
             sourceQuestContent: m
         }), null != n && n()
     }, [n, o.id, d, u, h, m]);
-    return (0, i.jsx)(s.YNO, {
+    return (0, i.jsx)(r.YNO, {
         targetElementRef: p,
         onRequestOpen: g,
-        onRequestClose: r,
+        onRequestClose: s,
         renderPopout: e => {
             let {
                 closePopout: t
@@ -252,7 +252,7 @@ function R(e) {
                 sourceQuestContent: m
             })
         },
-        animation: s.YNO.Animation.NONE,
+        animation: r.YNO.Animation.NONE,
         children: e => (0, i.jsx)("div", {
             ref: p,
             children: t(e)

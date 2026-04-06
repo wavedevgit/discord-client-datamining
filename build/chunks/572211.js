@@ -4,9 +4,9 @@ n.d(t, {
     u: () => C
 }), n(323874), n(14289), n(35956);
 var i, l = n(627968),
-    r = n(64700),
-    s = n(503698),
-    a = n.n(s),
+    s = n(64700),
+    r = n(503698),
+    a = n.n(r),
     o = n(299619),
     d = n(172218),
     c = n(158954),
@@ -44,7 +44,7 @@ function I(e) {
     let {
         title: n,
         header: i,
-        footer: s,
+        footer: r,
         info: C,
         staticBannerSrc: I,
         videoBannerSrc: v,
@@ -71,7 +71,7 @@ function I(e) {
     let {
         primaryColor: R,
         secondaryColor: P
-    } = (0, h.A)(T ?? I), D = `linear-gradient(45deg, ${R}, ${P})`, M = (0, u.bG)([_.A], () => _.A.useReducedMotion), w = r.useRef(!1), O = (0, d.K)(e => {
+    } = (0, h.A)(T ?? I), D = `linear-gradient(45deg, ${R}, ${P})`, M = (0, u.bG)([_.A], () => _.A.useReducedMotion), w = s.useRef(!1), O = (0, d.K)(e => {
         !1 === w.current && e && (y?.onView?.(), (0, g.wV)({
             appId: y.id,
             linkType: y.linkType,
@@ -81,10 +81,10 @@ function I(e) {
             channelId: y.channelId,
             messageId: y.messageId
         }), w.current = !0)
-    }, void 0), k = null != I, U = null != v && !1 === M, B = k || U, G = 0 === b ? f.pv : f.$g, F = r.useRef(null), H = r.useCallback(() => {
+    }, void 0), k = null != I, U = null != v && !1 === M, B = k || U, G = 0 === b ? f.pv : f.$g, F = s.useRef(null), H = s.useCallback(() => {
         let e = F.current;
         null == e || ("hidden" === getComputedStyle(e).visibility ? e.pause() : e.play())
-    }, []), V = r.useMemo(() => !!U && new URL(v).pathname.endsWith(".gif"), [U, v]), q = r.useMemo(() => {
+    }, []), V = s.useMemo(() => !!U && new URL(v).pathname.endsWith(".gif"), [U, v]), q = s.useMemo(() => {
         if (null != j) return e => {
             j(e), (0, g.gx)({
                 applicationId: y.id,
@@ -95,7 +95,7 @@ function I(e) {
                 isDeadEnd: y.isDeadEnd
             })
         }
-    }, [j, y]), W = r.useMemo(() => {
+    }, [j, y]), W = s.useMemo(() => {
         if (null != L) return e => {
             L(e), (0, g.gx)({
                 applicationId: y.id,
@@ -174,8 +174,8 @@ function I(e) {
                         let {
                             label: n,
                             icon: i,
-                            onClick: r,
-                            disabled: s,
+                            onClick: s,
+                            disabled: r,
                             disabledReason: a,
                             submitting: o,
                             trackingArea: d,
@@ -188,13 +188,13 @@ function I(e) {
                             targetElementRef: h,
                             children: (0, l.jsx)(c.K0, {
                                 variant: p ? "overlay-primary" : "overlay-secondary",
-                                disabled: s || null != a,
+                                disabled: r || null != a,
                                 loading: o,
                                 icon: i,
                                 "aria-label": n,
                                 buttonRef: h,
                                 onClick: e => {
-                                    r(e), (0, g.gx)({
+                                    s(e), (0, g.gx)({
                                         applicationId: y.id,
                                         linkType: y.linkType,
                                         area: d,
@@ -208,13 +208,13 @@ function I(e) {
                             className: f.uc,
                             children: [(0, l.jsx)(c.$nd, {
                                 variant: p ? "overlay-primary" : "overlay-secondary",
-                                disabled: s || null != a,
+                                disabled: r || null != a,
                                 loading: o,
                                 icon: i,
                                 text: n,
                                 buttonRef: h,
                                 onClick: e => {
-                                    r(e), (0, g.gx)({
+                                    s(e), (0, g.gx)({
                                         applicationId: y.id,
                                         linkType: y.linkType,
                                         area: d,
@@ -233,7 +233,7 @@ function I(e) {
                         }, n)
                     })
                 })]
-            }), null != s && s]
+            }), null != r && r]
         })]
     })
 }

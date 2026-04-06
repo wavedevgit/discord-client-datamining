@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     l = n(64700),
-    r = n(503698),
-    s = n.n(r),
+    s = n(503698),
+    r = n.n(s),
     a = n(687498),
     o = n(827734),
     d = n(990078),
@@ -27,7 +27,7 @@ let v = e => {
     let {
         isQuestExpired: t,
         quest: n,
-        location: r,
+        location: s,
         size: v,
         expansionSpring: b,
         isAnimating: T,
@@ -39,7 +39,7 @@ let v = e => {
     } = e, [R, P] = l.useState(null), [D, M] = l.useState(null), w = (0, m.A)(e => {
         let t = e.target;
         P(t.offsetWidth), M(t.scrollWidth)
-    }), O = (0, u.w)(w), k = r === _.uF.QUESTS_EMBED, U = n.userStatus?.completedAt != null, B = (0, h.S5)(n.config.expiresAt), G = (0, h.S5)(n.config.rewardsConfig.rewardsExpireAt), F = l.useMemo(() => null != n.config.cosponsorMetadata, [n]), H = (0, i.jsx)(A.Ay, {
+    }), O = (0, u.w)(w), k = s === _.uF.QUESTS_EMBED, U = n.userStatus?.completedAt != null, B = (0, h.S5)(n.config.expiresAt), G = (0, h.S5)(n.config.rewardsConfig.rewardsExpireAt), F = l.useMemo(() => null != n.config.cosponsorMetadata, [n]), H = (0, i.jsx)(A.Ay, {
         className: I.Iu,
         logotypeClassName: F ? I.qN : void 0,
         gameTileSize: A.LU.MEDIUM,
@@ -49,7 +49,7 @@ let v = e => {
         withGameTile: !k || null == n.config.cosponsorMetadata
     });
     return (0, i.jsxs)("div", {
-        className: s()(I.nw, {
+        className: r()(I.nw, {
             [I.Gg]: k,
             [I.e5]: "xs" === v
         }),
@@ -67,11 +67,11 @@ let v = e => {
             className: I.wx,
             "aria-expanded": N,
             children: [(0, i.jsx)(a.animated.div, {
-                className: s()(I.VW, {
+                className: r()(I.VW, {
                     [I.eX]: k
                 }),
                 children: (0, i.jsx)(a.animated.div, {
-                    className: s()(I.Yu, {
+                    className: r()(I.Yu, {
                         [I.Gg]: k
                     }),
                     style: {
@@ -123,7 +123,7 @@ let v = e => {
                     top: 20
                 },
                 children: (0, i.jsx)(g.C, {
-                    questContent: r,
+                    questContent: s,
                     quest: n,
                     questContentPosition: y,
                     shouldShowDisclosure: !0,

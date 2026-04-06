@@ -1,6 +1,6 @@
 /** chunk id: 767379 params = (module,exports,require) **/
 n.d(t, {
-    default: () => T
+    default: () => E
 });
 var a = n(627968),
     i = n(64700),
@@ -16,17 +16,17 @@ var a = n(627968),
     x = n(975571),
     p = n(935649),
     g = n(847599),
-    _ = n(295972),
-    f = n(36149),
+    f = n(295972),
+    _ = n(36149),
     v = n(807734),
     b = n(652215),
     j = n(239093),
     A = n(536242),
     C = n(985018),
     y = n(774992),
-    E = n(700129);
+    S = n(700129);
 
-function S(e) {
+function T(e) {
     let {
         modalSessionId: t,
         entryPoint: n
@@ -47,17 +47,17 @@ function S(e) {
         }
     }) : null
 }
-let T = function(e) {
+let E = function(e) {
     let {
         transitionState: t,
         entryPoint: n,
         onClose: u,
         onComplete: j,
-        dismissable: T,
+        dismissable: E,
         classificationId: N
-    } = e, [I, O] = i.useState(r.M.AGE_VERIFICATION_SURVEY_MODAL_GET_STARTED), k = i.useRef(I), [R, w] = (0, d.kn)([I], void 0, !0), D = i.useMemo(() => (0, s.A)(), []), M = i.useRef(!1), P = (0, m.W$)();
+    } = e, [I, k] = i.useState(r.M.AGE_VERIFICATION_SURVEY_MODAL_GET_STARTED), O = i.useRef(I), [R, w] = (0, d.kn)([I], void 0, !0), D = i.useMemo(() => (0, s.A)(), []), M = i.useRef(!1), P = (0, m.W$)();
     i.useEffect(() => {
-        k.current = R
+        O.current = R
     }, [R]);
     let {
         loading: L,
@@ -67,13 +67,13 @@ let T = function(e) {
             j?.(), u()
         },
         onMethodClick: () => {
-            O(r.M.AGE_VERIFICATION_SURVEY_MODAL_CLOSE)
+            k(r.M.AGE_VERIFICATION_SURVEY_MODAL_CLOSE)
         },
         classificationId: N
     });
     return i.useLayoutEffect(() => () => {
         if (M.current) return;
-        let e = k.current;
+        let e = O.current;
         null != e && (M.current = !0, h.A.maybeOpenAgeVerificationUserFeedback({
             location: "age_verification_get_started_modal",
             visibleContent: e
@@ -84,16 +84,16 @@ let T = function(e) {
         transitionState: t,
         onClose: u,
         gradientColor: "blue",
-        dismissable: T,
+        dismissable: E,
         graphic: {
             type: "image",
-            src: E.A
+            src: S.A
         },
-        title: (0, f.ST)(n),
-        subtitle: (0, f.mK)(n, () => {
+        title: (0, _.ST)(n),
+        subtitle: (0, _.mK)(n, () => {
             p.A.openUrl(x.A.getArticleURL(b.MVz.TIGGER_PAWTECT_LEARN_MORE)), (0, g.St)(D, g.WU.EXPRESSIVE_PRIMARY, g._7.LEARN_MORE)
         }, P),
-        actionBarInput: (0, a.jsx)(S, {
+        actionBarInput: (0, a.jsx)(T, {
             modalSessionId: D,
             entryPoint: n
         }),
@@ -133,7 +133,7 @@ let T = function(e) {
                     size: "sm",
                     text: C.intl.string(A.default.hDvmYP),
                     onClick: () => {
-                        (0, _.DJ)()
+                        (0, f.DJ)()
                     }
                 })]
             }) : (0, a.jsx)(o.BJc, {

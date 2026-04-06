@@ -22,7 +22,7 @@ function g(e) {
         buttonRef: m,
         onRemove: x
     } = e, {
-        trackUserProfileEditAction: p
+        trackUserProfileEditAction: f
     } = (0, o.NJ)();
     return (0, i.jsx)(s.m, {
         text: d.intl.string(d.t.HUvyDc),
@@ -30,7 +30,7 @@ function g(e) {
         children: (0, i.jsx)(r.DUT, {
             innerRef: m,
             onClick: () => {
-                (0, c.ef)(n, t.applicationId), r.ORC.announce(d.intl.string(d.t["08HmMj"])), p({
+                (0, c.ef)(n, t.applicationId), r.ORC.announce(d.intl.string(d.t["08HmMj"])), f({
                     action: "GAME_REMOVED",
                     gameId: t.applicationId,
                     widgetEdited: n

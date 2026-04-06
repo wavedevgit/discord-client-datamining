@@ -14,8 +14,8 @@ var i = n(627968),
     g = n(44120),
     m = n(532794),
     x = n(87719),
-    p = n(317560),
-    f = n(533406),
+    f = n(317560),
+    p = n(533406),
     h = n(183555),
     _ = n(657331),
     A = n(606758),
@@ -49,8 +49,8 @@ function G(e) {
         skuAssetClassName: g,
         isHoveringOrFocusing: m,
         setIsHoveringOrFocusing: x,
-        onDetailsClick: p,
-        onPurchaseClick: f,
+        onDetailsClick: f,
+        onPurchaseClick: p,
         wishlistId: _,
         isItemOwned: I,
         cardBackdrop: j
@@ -75,15 +75,15 @@ function G(e) {
             action: w.Mq.WISHLIST_ITEM_CLICKED,
             skuId: t.sku.id,
             productLines: new Set([t.sku.productLine])
-        }), p())
-    }, [p, t.sku, _, y]), k = l.useCallback(() => {
+        }), f())
+    }, [f, t.sku, _, y]), k = l.useCallback(() => {
         null != _ && (y({
             wishlistId: _,
             action: w.Mq.WISHLIST_ITEM_CLICKED,
             skuId: t.sku.id,
             productLines: new Set([t.sku.productLine])
-        }), f())
-    }, [f, t.sku, _, y]), P = l.useCallback(() => {
+        }), p())
+    }, [p, t.sku, _, y]), P = l.useCallback(() => {
         (0, A.XA)(w.jM.SOMETHING_WENT_WRONG), o.ORC.announce(O.intl.string(O.t.F8FvUy))
     }, []), G = null != d ? (0, i.jsx)("div", {
         ref: E,
@@ -145,7 +145,7 @@ function M(e) {
         analyticsLocations: r,
         ...o
     } = e, c = l.useCallback(() => {
-        (0, p.R)({
+        (0, f.R)({
             skuId: t.sku.id,
             applicationId: t.sku.applicationId,
             isStorefront: !1,
@@ -155,7 +155,7 @@ function M(e) {
         })
     }, [t.sku.id, t.sku.applicationId, a, r]), u = l.useCallback(() => {
         let e = a.id === s.id;
-        (0, f.a)(t.sku, {
+        (0, p.a)(t.sku, {
             isGift: !e,
             giftRecipient: a,
             giftingOrigin: k.vQ.USER_PROFILE_WISHLIST
@@ -198,7 +198,7 @@ function U(e) {
             analyticsLocations: o ?? [],
             giftRecipient: n
         })
-    }, [t.sku, n, c.id, o]), p = d && t.sku.productLine === R.EZt.COLLECTIBLES && t.sku.tenantMetadata?.collectibles?.type !== r.R.PROFILE_EFFECT && t.sku.tenantMetadata?.collectibles?.type !== r.R.NAMEPLATE;
+    }, [t.sku, n, c.id, o]), f = d && t.sku.productLine === R.EZt.COLLECTIBLES && t.sku.tenantMetadata?.collectibles?.type !== r.R.PROFILE_EFFECT && t.sku.tenantMetadata?.collectibles?.type !== r.R.NAMEPLATE;
     return (0, i.jsx)(G, {
         item: t,
         wishlistOwner: n,
@@ -208,7 +208,7 @@ function U(e) {
         onPurchaseClick: x,
         isHoveringOrFocusing: d,
         skuPreviewStyle: s()({
-            [L.mn]: p
+            [L.mn]: f
         }),
         analyticsLocations: o,
         ...u
@@ -259,7 +259,7 @@ function W(e) {
         ...r
     } = e, {
         analyticsLocations: o
-    } = (0, u.Ay)(...s ?? [], t.sku?.productLine === R.EZt.SOCIAL_LAYER_GAME_ITEM ? d.A.SLAYER_STOREFRONT_WISHLIST_ITEM_CARD : []), g = (0, c.bG)([I.default], () => I.default.getCurrentUser()), [m, x] = l.useState(!1), p = (0, c.bG)([E.A], () => E.A.hasSentGift(t.skuId, n.id), [n, t.skuId]), f = l.useMemo(() => t.skuProductLine === R.EZt.PREMIUM ? null != g && n.id === g.id && (0, j.ki)(g, k.WN[t.skuId]) : !0 === t.isOwned || p, [t.isOwned, t.skuId, t.skuProductLine, p, g, n.id]);
+    } = (0, u.Ay)(...s ?? [], t.sku?.productLine === R.EZt.SOCIAL_LAYER_GAME_ITEM ? d.A.SLAYER_STOREFRONT_WISHLIST_ITEM_CARD : []), g = (0, c.bG)([I.default], () => I.default.getCurrentUser()), [m, x] = l.useState(!1), f = (0, c.bG)([E.A], () => E.A.hasSentGift(t.skuId, n.id), [n, t.skuId]), p = l.useMemo(() => t.skuProductLine === R.EZt.PREMIUM ? null != g && n.id === g.id && (0, j.ki)(g, k.WN[t.skuId]) : !0 === t.isOwned || f, [t.isOwned, t.skuId, t.skuProductLine, f, g, n.id]);
     if (null == t.sku || null == g) return null;
     switch (t.sku.productLine) {
         case R.EZt.SOCIAL_LAYER_GAME_ITEM:
@@ -269,7 +269,7 @@ function W(e) {
                 isHoveringOrFocusing: m,
                 setIsHoveringOrFocusing: x,
                 currentUser: g,
-                isItemOwned: f,
+                isItemOwned: p,
                 wishlistOwner: n,
                 wishlistId: a,
                 ...r
@@ -281,7 +281,7 @@ function W(e) {
                 isHoveringOrFocusing: m,
                 setIsHoveringOrFocusing: x,
                 currentUser: g,
-                isItemOwned: f,
+                isItemOwned: p,
                 wishlistOwner: n,
                 wishlistId: a,
                 ...r
@@ -293,7 +293,7 @@ function W(e) {
                 isHoveringOrFocusing: m,
                 setIsHoveringOrFocusing: x,
                 currentUser: g,
-                isItemOwned: f,
+                isItemOwned: p,
                 wishlistOwner: n,
                 wishlistId: a,
                 ...r

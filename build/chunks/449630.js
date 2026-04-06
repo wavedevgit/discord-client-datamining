@@ -16,21 +16,21 @@ var a = n(627968),
     x = n(395332),
     p = n(351966),
     g = n(361628),
-    _ = n(744808),
-    f = n(713517),
+    f = n(744808),
+    _ = n(713517),
     v = n(645507),
     b = n(970931),
     j = n(258836),
     A = n(206835),
     C = n(183555),
     y = n(950191),
-    E = n(657331),
-    S = n(718019),
-    T = n(31432),
+    S = n(657331),
+    T = n(718019),
+    E = n(31432),
     N = n(915614),
     I = n(223330),
-    O = n(559506),
-    k = n(646986),
+    k = n(559506),
+    O = n(646986),
     R = n(379654),
     w = n(946356),
     D = n(810396),
@@ -76,7 +76,7 @@ function ea(e) {
     } = (0, u.Ay)(), {
         isHoveringOrFocusing: em,
         isHovering: eh
-    } = (0, f.A)(ec);
+    } = (0, _.A)(ec);
     i.useEffect(() => {
         s?.(ec.current)
     }, [ec, s]), i.useEffect(() => (H.A.setState({
@@ -87,8 +87,8 @@ function ea(e) {
     let ex = (0, d.bG)([B.A], () => B.A.getStatus(t.id)),
         ep = U.CY.useSetting(),
         eg = (0, Q.Q)(ep),
-        e_ = (0, d.bG)([G.A], () => G.A.hidePersonalInformation),
-        ef = (0, b.kB)(),
+        ef = (0, d.bG)([G.A], () => G.A.hidePersonalInformation),
+        e_ = (0, b.kB)(),
         ev = U.Q_.useSetting(),
         eb = (0, Q.T)(ex),
         ej = (0, K.j)(n),
@@ -97,24 +97,24 @@ function ea(e) {
         }),
         eC = (0, W.TW)(t),
         ey = i.useRef(null),
-        eE = i.useRef(null),
-        eS = i.useRef((0, H.A)(e => e.shouldRenderTenureLevelUp)),
-        eT = i.useMemo(() => (0, v.A)(), []),
+        eS = i.useRef(null),
+        eT = i.useRef((0, H.A)(e => e.shouldRenderTenureLevelUp)),
+        eE = i.useMemo(() => (0, v.A)(), []),
         [eN, eI] = i.useState(!0);
     i.useEffect(() => {
         setTimeout(() => {
             eI(!1)
         }, 500)
     }, []);
-    let eO = e => {
-            n?.(), (0, E.openUserProfileModal)({
-                customStatusPrompt: eT,
+    let ek = e => {
+            n?.(), (0, S.openUserProfileModal)({
+                customStatusPrompt: eE,
                 sourceAnalyticsLocations: eo,
                 ...ed,
                 ...e
             })
         },
-        ek = el?.widgets != null && el.widgets.length > 0,
+        eO = el?.widgets != null && el.widgets.length > 0,
         eR = i.useCallback(() => {
             n()
         }, [n]),
@@ -146,7 +146,7 @@ function ea(e) {
                 }), (0, a.jsxs)(c.Fmo, {
                     children: [(0, a.jsx)(Y.A, {
                         displayProfile: el,
-                        handleOpenUserProfileModal: eO,
+                        handleOpenUserProfileModal: ek,
                         height: eu
                     }), (0, a.jsxs)(w.A, {
                         className: et.BK,
@@ -159,37 +159,37 @@ function ea(e) {
                                 user: t,
                                 displayProfile: el,
                                 themeType: Z.d.POPOUT
-                            }), (0, a.jsx)(S.A, {
+                            }), (0, a.jsx)(T.A, {
                                 user: t,
                                 displayProfile: el,
                                 themeType: Z.d.POPOUT,
-                                onOpenProfile: es ? void 0 : eO
+                                onOpenProfile: es ? void 0 : ek
                             }), (0, a.jsx)(P.A, {
                                 ref: ey,
                                 user: t,
                                 themeType: Z.d.POPOUT,
                                 onCloseProfile: n,
-                                prompt: eT
+                                prompt: eE
                             })]
                         }), (0, a.jsxs)(c.HOs, {
                             className: et.rf,
                             style: {
                                 pointerEvents: eN ? "none" : void 0
                             },
-                            children: [(0, a.jsx)(O.A, {
+                            children: [(0, a.jsx)(k.A, {
                                 userId: t.id
                             }), (0, a.jsx)(D.A, {
                                 user: t,
                                 className: et.Xh,
                                 nickname: V.Ay.getName(void 0, null, t),
-                                onOpenProfile: es ? void 0 : eO,
+                                onOpenProfile: es ? void 0 : ek,
                                 pronouns: el?.pronouns,
-                                tags: (0, a.jsx)(T.A, {
+                                tags: (0, a.jsx)(E.A, {
                                     displayProfile: el,
                                     themeType: Z.d.POPOUT,
                                     onClose: n,
                                     shouldOpenBadgeTooltip: null != ea ? e => e === ea : void 0,
-                                    shouldGlowTenureBadge: eS.current
+                                    shouldGlowTenureBadge: eT.current
                                 }),
                                 nicknameIcons: (0, a.jsx)(M.A, {
                                     user: t,
@@ -198,19 +198,19 @@ function ea(e) {
                             }), (0, a.jsx)(L.A, {
                                 user: t,
                                 bio: el?.bio,
-                                hidePersonalInformation: e_,
+                                hidePersonalInformation: ef,
                                 onClose: n
-                            }), ek && (0, a.jsx)(R.A, {
+                            }), eO && (0, a.jsx)(R.A, {
                                 user: t,
                                 widgets: el?.widgets,
-                                onOpenUserProfileModal: eO
+                                onOpenUserProfileModal: ek
                             }), (0, a.jsx)(I.A, {
                                 isPremiumUser: eC,
                                 onInteraction: n
-                            }), (0, a.jsx)(k.A, {
+                            }), (0, a.jsx)(O.A, {
                                 user: t,
                                 currentUser: t,
-                                onOpenUserProfileModal: eO,
+                                onOpenUserProfileModal: ek,
                                 onClose: n
                             }), (0, a.jsxs)("div", {
                                 className: et.T_,
@@ -222,7 +222,7 @@ function ea(e) {
                                             label: ee.intl.string(ee.t.s5vZlQ),
                                             icon: c.R2l,
                                             onClick: ew,
-                                            ref: eE
+                                            ref: eS
                                         }), (0, a.jsx)($.N3, {
                                             action: "PRESS_SET_STATUS",
                                             label: (0, a.jsx)(q.A, {}),
@@ -231,7 +231,7 @@ function ea(e) {
                                                 status: ex,
                                                 size: 12
                                             }),
-                                            trailing: (ef || ex === X.clD.DND) && (0, a.jsx)(c.a_I, {
+                                            trailing: (e_ || ex === X.clD.DND) && (0, a.jsx)(c.a_I, {
                                                 size: "xxs"
                                             }),
                                             renderSubmenu: r.Fr ? void 0 : e => {
@@ -304,15 +304,15 @@ function ea(e) {
                                     })
                                 })]
                             })]
-                        }), null != er && (0, a.jsx)(_.A, {
+                        }), null != er && (0, a.jsx)(f.A, {
                             frame: er,
                             layout: "ACCOUNT_POPOUT"
-                        }), el?.profileEffect != null && !eS.current && (0, a.jsx)(p.A, {
+                        }), el?.profileEffect != null && !eT.current && (0, a.jsx)(p.A, {
                             skuId: el.profileEffect.skuId,
                             isHovering: eh
                         })]
                     }), eD && eM ? (0, a.jsx)(z.A, {
-                        targetElementRef: eE,
+                        targetElementRef: eS,
                         onClose: n
                     }) : null, (0, a.jsx)(j.A, {})]
                 })]

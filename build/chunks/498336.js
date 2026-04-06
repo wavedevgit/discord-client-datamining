@@ -1,6 +1,6 @@
 /** chunk id: 498336 params = (module,exports,require) **/
 n.d(t, {
-    A: () => S
+    A: () => T
 });
 var a = n(627968),
     i = n(989349),
@@ -16,8 +16,8 @@ var a = n(627968),
     x = n(665171),
     p = n(942975),
     g = n(594061),
-    _ = n(617617),
-    f = n(859241),
+    f = n(617617),
+    _ = n(859241),
     v = n(71393),
     b = n(967198),
     j = n(642020),
@@ -33,18 +33,18 @@ async function y(e, t, n) {
         rejectWithError: !0
     }), (0, c.VU)(e), (0, p.Xd)(e, !0)
 }
-async function E(e) {
+async function S(e) {
     await r.Bo.post({
         url: A.Rsh.SEND_POWERUPS_SYSTEM_MESSAGE(e),
         rejectWithError: !0
     })
 }
 
-function S() {
+function T() {
     let e = (0, l.bG)([b.A], () => b.A.getGuildId()),
         t = (0, l.bG)([v.A], () => v.A.getGuild(e)?.name),
-        n = (0, l.yK)([_.A], () => [...j.DX, ...j.gh].filter(t => null != e && (0, h.zs)(t, e))),
-        i = (0, l.yK)([f.A], () => null != e ? f.A.getAppliedGuildBoostsForGuild(e) ?? [] : []);
+        n = (0, l.yK)([f.A], () => [...j.DX, ...j.gh].filter(t => null != e && (0, h.zs)(t, e))),
+        i = (0, l.yK)([_.A], () => null != e ? _.A.getAppliedGuildBoostsForGuild(e) ?? [] : []);
     if (null != e) return (0, a.jsxs)(d.IpV, {
         className: C.kL,
         children: [(0, a.jsx)("div", {
@@ -154,7 +154,7 @@ function S() {
                 variant: "primary",
                 text: "Send System Message",
                 onClick: () => {
-                    E(e)
+                    S(e)
                 }
             })]
         }), (0, a.jsx)(d.Button, {

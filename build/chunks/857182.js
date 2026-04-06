@@ -1,13 +1,13 @@
 /** chunk id: 857182 params = (module,exports,require) **/
 n.d(t, {
-    A: () => s
+    A: () => r
 });
 var i = n(562465),
     l = n(73153),
-    r = n(652215);
-let s = {
+    s = n(652215);
+let r = {
     createChannelFollower: (e, t) => i.Bo.post({
-        url: r.Rsh.CHANNEL_FOLLOWERS(t),
+        url: s.Rsh.CHANNEL_FOLLOWERS(t),
         body: {
             webhook_channel_id: e
         },
@@ -20,7 +20,7 @@ let s = {
         });
         try {
             let t = await i.Bo.get({
-                url: r.Rsh.CHANNEL_FOLLOWER_STATS(e),
+                url: s.Rsh.CHANNEL_FOLLOWER_STATS(e),
                 body: {
                     channel_id: e
                 },

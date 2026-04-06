@@ -16,8 +16,8 @@ var a = n(627968),
     x = n(74848),
     p = n(430452),
     g = n(731854),
-    _ = n(4791),
-    f = n(310086);
+    f = n(4791),
+    _ = n(310086);
 
 function v(e) {
     let {
@@ -97,12 +97,12 @@ function b(e) {
 function j() {
     let {
         name: e
-    } = (0, x.x5)(g.oh.AUDIO_INPUT), [t, n] = i.useState(!1), [s, l] = i.useState([]), v = (0, r.bG)([p.Ay], () => p.Ay.getKrispSuppressionLevel()), [j, A] = i.useState(null), C = i.useRef(null), y = i.useRef(null), [E, S] = i.useState(.5), {
-        krispModels: T,
+    } = (0, x.x5)(g.oh.AUDIO_INPUT), [t, n] = i.useState(!1), [s, l] = i.useState([]), v = (0, r.bG)([p.Ay], () => p.Ay.getKrispSuppressionLevel()), [j, A] = i.useState(null), C = i.useRef(null), y = i.useRef(null), [S, T] = i.useState(.5), {
+        krispModels: E,
         krispModelOverride: N,
         inputMode: I,
-        echoCancellation: O,
-        autoThreshold: k,
+        echoCancellation: k,
+        autoThreshold: O,
         vadUseKrisp: R,
         vadKrispActivationThreshold: w,
         noiseCancellation: D,
@@ -136,7 +136,7 @@ function j() {
     function H(e) {
         if (t && W(), V(), null == F) return;
         let n = F.createBufferSource();
-        n.buffer = e.audioBuffer, y.current = F.createGain(), y.current.gain.value = E, n.connect(y.current), y.current.connect(F.destination), n.loop = !0, n.start(), C.current = n, A(e)
+        n.buffer = e.audioBuffer, y.current = F.createGain(), y.current.gain.value = S, n.connect(y.current), y.current.connect(F.destination), n.loop = !0, n.start(), C.current = n, A(e)
     }
     i.useEffect(() => {
         V()
@@ -160,9 +160,9 @@ function j() {
         label: "Disabled",
         value: "NONE"
     }), (0, a.jsx)(d.IpV, {
-        className: f.nd,
+        className: _.nd,
         children: (0, a.jsxs)("div", {
-            className: _.l,
+            className: f.l,
             children: [(0, a.jsx)(d.Text, {
                 variant: "text-lg/bold",
                 children: "Krisp Tester"
@@ -190,7 +190,7 @@ function j() {
                     label: "Krisp Model Override",
                     clearable: !0,
                     value: N,
-                    options: T.map(e => ({
+                    options: E.map(e => ({
                         label: e,
                         value: e,
                         id: e
@@ -208,11 +208,11 @@ function j() {
             }), I === g.TB.VOICE_ACTIVITY && (0, a.jsxs)(a.Fragment, {
                 children: [(0, a.jsx)(d.dOG, {
                     label: "Auto Threshold",
-                    checked: k,
+                    checked: O,
                     onChange: e => c.A.setMode(g.TB.VOICE_ACTIVITY, {
                         autoThreshold: e
                     })
-                }), k && (0, a.jsxs)(a.Fragment, {
+                }), O && (0, a.jsxs)(a.Fragment, {
                     children: [(0, a.jsx)(d.dOG, {
                         label: "Use Krisp VAD",
                         checked: R,
@@ -237,7 +237,7 @@ function j() {
                 })]
             }), (0, a.jsx)(d.dOG, {
                 label: "Echo Cancellation",
-                checked: O,
+                checked: k,
                 onChange: e => c.A.setEchoCancellation(e)
             }), (0, a.jsxs)(d.BJc, {
                 gap: 4,
@@ -264,7 +264,7 @@ function j() {
                                 audioBuffer: s,
                                 createdAt: Date.now(),
                                 suppression: G,
-                                echoCancellation: O,
+                                echoCancellation: k,
                                 krispSuppressionLevel: v
                             }])
                         })
@@ -273,9 +273,9 @@ function j() {
                 })]
             }), (0, a.jsx)(d.Apm, {
                 label: "Volume",
-                initialValue: E,
+                initialValue: S,
                 asValueChanges: function(e) {
-                    null != y.current && (y.current.gain.value = e, S(e))
+                    null != y.current && (y.current.gain.value = e, T(e))
                 },
                 minValue: 0,
                 maxValue: 1

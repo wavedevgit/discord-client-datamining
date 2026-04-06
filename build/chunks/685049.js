@@ -32,13 +32,13 @@ function g(e) {
     let g, {
             userId: m,
             applicationId: x,
-            guildId: p,
-            channelId: f,
+            guildId: f,
+            channelId: p,
             className: h
         } = e,
         _ = (0, o.A)(x),
         A = _.length > 0,
-        I = (t = _, n = p, u = f, g = t.slice(0, 3).map(e => s.Ay.getName(n, u, e)), 1 === t.length ? c.intl.formatToPlainString(c.t.FURqTU, {
+        I = (t = _, n = f, u = p, g = t.slice(0, 3).map(e => s.Ay.getName(n, u, e)), 1 === t.length ? c.intl.formatToPlainString(c.t.FURqTU, {
             name: g[0]
         }) : 2 === t.length ? c.intl.formatToPlainString(c.t["08Usu/"], {
             name1: g[0],
@@ -65,8 +65,8 @@ function g(e) {
         label: I,
         className: h,
         onClick: j,
-        guildId: p,
-        channelId: f,
+        guildId: f,
+        channelId: p,
         "aria-label": I,
         overflowCountColor: "text-strong",
         overflowCountClassName: d.L

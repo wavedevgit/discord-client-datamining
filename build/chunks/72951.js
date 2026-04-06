@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     l = n(503698),
-    r = n.n(l),
-    s = n(3026),
+    s = n.n(l),
+    r = n(3026),
     a = n(397927),
     o = n(47167),
     d = n(713654),
@@ -20,7 +20,7 @@ function u(e) {
     } = e, m = (0, d.gU)(n, l), _ = (0, o.Ay)(n);
     return (0, i.jsxs)(a.DUT, {
         onClick: u,
-        className: r()(c.UP, t),
+        className: s()(c.UP, t),
         children: [null != m && (0, i.jsx)(m, {
             className: c.p,
             color: "currentColor",
@@ -31,7 +31,7 @@ function u(e) {
             variant: "text-xs/medium",
             lineClamp: 1,
             color: "currentColor",
-            children: (0, i.jsxs)(s.A, {
+            children: (0, i.jsxs)(r.A, {
                 children: [l.name, " / ", _]
             })
         }), (0, i.jsx)(a._BQ, {

@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var l = n(311907),
-    r = n(397927),
-    s = n(456060),
+    s = n(397927),
+    r = n(456060),
     a = n(793574),
     o = n(688810),
     d = n(572211),
@@ -48,7 +48,7 @@ function b(e) {
         let n = p.A.getGameByApplication(T);
         return null != n && t === n.id
     })), M = (0, l.bG)([h.A], () => h.A.getCurrentUserActiveStream()), w = (0, l.bG)([g.A], () => g.A.getChannelId()), O = f.default.extractTimestamp(b.id) + C.M < Date.now(), k = (0, i.jsx)(i.Fragment, {
-        children: (0, s.Wf)(b, N, t)
+        children: (0, r.Wf)(b, N, t)
     }), {
         analyticsLocations: U
     } = (0, o.Ay)(S, a.A.REQUEST_TO_STREAM_INVITE_EMBED), B = v.intl.string(I.default["5+172e"]), G = !1;
@@ -65,7 +65,7 @@ function b(e) {
             trackingArea: c.kY.STREAM,
             disabled: G,
             onClick: () => {
-                null != D && ((0, x.isWindows)() ? (0, _.A)(D.pid) : (0, r.mMO)(async () => {
+                null != D && ((0, x.isWindows)() ? (0, _.A)(D.pid) : (0, s.mMO)(async () => {
                     let {
                         default: e
                     } = await Promise.all([n.e("96811"), n.e("48697")]).then(n.bind(n, 648230));

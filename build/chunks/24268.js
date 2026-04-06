@@ -16,8 +16,8 @@ var a = n(627968),
     x = n(760716),
     p = n(652215),
     g = n(115093),
-    _ = n(310086),
-    f = n(521807);
+    f = n(310086),
+    _ = n(521807);
 let v = window.GLOBAL_ENV.RELEASE_CHANNEL === g.B.STAGING ? "1438571444891025408" : "1346069614634864772";
 
 function b() {
@@ -33,31 +33,31 @@ function b() {
             g(e), n && t(e)
         }, [n, t]),
         y = (0, x.i)(e => e.showSelfActivity),
-        E = (0, x.i)(e => e.setShowSelfActivity),
-        S = (0, x.i)(e => e.recommendationApplicationIds),
-        T = (0, x.i)(e => e.setRecommendationApplicationIds),
+        S = (0, x.i)(e => e.setShowSelfActivity),
+        T = (0, x.i)(e => e.recommendationApplicationIds),
+        E = (0, x.i)(e => e.setRecommendationApplicationIds),
         N = i.useCallback(e => {
-            e ? T(b) : T(null)
-        }, [b, T]),
+            e ? E(b) : E(null)
+        }, [b, E]),
         I = (0, r.bG)([h.A], () => null != h.A.testModeApplicationId),
-        O = i.useCallback(e => {
+        k = i.useCallback(e => {
             e ? (0, o.qfG)(e => (0, a.jsx)(m.A, {
                 ...e
             })) : d.cL()
         }, []),
-        k = (0, u.A)({
+        O = (0, u.A)({
             location: "DevToolsSlayerStorefrontPanel",
             applicationId: s,
             source: c.Ob.Embed,
             trackEntryPointImpression: !0
         }),
         R = i.useCallback(e => {
-            k?.(e)
-        }, [k]);
+            O?.(e)
+        }, [O]);
     return (0, a.jsx)("div", {
-        className: l()(_.nd, f.n),
+        className: l()(f.nd, _.n),
         children: (0, a.jsxs)("div", {
-            className: f.k,
+            className: _.k,
             children: [(0, a.jsx)(o.ksK, {
                 label: "Application ID",
                 value: s,
@@ -72,11 +72,11 @@ function b() {
             }), (0, a.jsx)(o.dOG, {
                 label: "Show own voice activity (bypass self check)",
                 checked: y,
-                onChange: E
+                onChange: S
             }), (0, a.jsx)(o.dOG, {
                 label: "Enable application test mode",
                 checked: I,
-                onChange: O
+                onChange: k
             }), (0, a.jsx)(o.Button, {
                 text: "Open Game Profile Modal",
                 onClick: R
@@ -87,10 +87,10 @@ function b() {
                 label: "Recommendation application IDs",
                 value: b,
                 onChange: j,
-                disabled: null == S
+                disabled: null == T
             }), (0, a.jsx)(o.dOG, {
                 label: "Enable recommendation application IDs override",
-                checked: null != S,
+                checked: null != T,
                 onChange: N
             })]
         })

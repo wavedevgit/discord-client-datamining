@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     l = n(64700),
-    r = n(503698),
-    s = n.n(r),
+    s = n(503698),
+    r = n.n(s),
     a = n(158954),
     o = n(311907),
     d = n(990078),
@@ -37,7 +37,7 @@ function D(e) {
     let {
         sku: t,
         normalPrice: n,
-        discountedPrice: r,
+        discountedPrice: s,
         discountPercent: o
     } = e, d = l.useMemo(() => null != t.orbsReward && t.orbsReward > 0 ? (0, i.jsx)("div", {
         className: P.pt,
@@ -52,9 +52,9 @@ function D(e) {
                 }, "orbs-icon")
             })
         })
-    }) : null, [t.orbsReward]), u = null != o && null != r;
+    }) : null, [t.orbsReward]), u = null != o && null != s;
     return (0, i.jsx)("div", {
-        className: s()(P.PB, {
+        className: r()(P.PB, {
             [P.un]: u
         }),
         children: u ? (0, i.jsxs)(i.Fragment, {
@@ -67,7 +67,7 @@ function D(e) {
             }), (0, i.jsx)(c.Text, {
                 variant: "text-md/bold",
                 lineClamp: 1,
-                children: r
+                children: s
             }), (0, i.jsx)(c.Text, {
                 variant: "text-md/bold",
                 color: "text-feedback-positive",
@@ -88,14 +88,14 @@ function M(e) {
     let {
         guildId: t,
         skuId: n,
-        channel: r
-    } = e, s = (0, o.bG)([C.A], () => C.A.isFetchingForSKU(n)), M = (0, o.bG)([f.A], () => f.A.get(n)), w = M?.applicationId, O = (0, o.bG)([_.A], () => null != w && _.A.isFetchingApplication(w)), k = (0, o.bG)([_.A], () => null != w && _.A.didFetchingApplicationFail(w)), U = (0, p.h)(w), B = (0, b.b)({
+        channel: s
+    } = e, r = (0, o.bG)([C.A], () => C.A.isFetchingForSKU(n)), M = (0, o.bG)([f.A], () => f.A.get(n)), w = M?.applicationId, O = (0, o.bG)([_.A], () => null != w && _.A.isFetchingApplication(w)), k = (0, o.bG)([_.A], () => null != w && _.A.didFetchingApplicationFail(w)), U = (0, p.h)(w), B = (0, b.b)({
         location: "product_details_embed"
     }), {
         analyticsLocations: G
     } = (0, m.Ay)(u.A.SLAYER_STOREFRONT_PRODUCT_DETAILS_EMBED);
     (0, A.pE)();
-    let F = (0, o.bG)([x.default], () => r.isDM() && null != r.recipients && 0 !== r.recipients.length ? x.default.getUser(r.recipients[0]) : null),
+    let F = (0, o.bG)([x.default], () => s.isDM() && null != s.recipients && 0 !== s.recipients.length ? x.default.getUser(s.recipients[0]) : null),
         H = (0, o.bG)([v.A], () => null != n ? v.A.getNormalizedSKUEligibility(n) : void 0, [n]),
         {
             primaryIconAsset: V,
@@ -137,7 +137,7 @@ function M(e) {
             })
         }, [M, F]),
         X = null != w && null == U && !k;
-    return (s || O || X) && (null == M || null == U) ? (0, i.jsx)("div", {
+    return (r || O || X) && (null == M || null == U) ? (0, i.jsx)("div", {
         className: P.kL,
         children: (0, i.jsx)(c.y$y, {
             className: P.u1

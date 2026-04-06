@@ -16,21 +16,21 @@ var a = n(627968),
     x = n(92246),
     p = n(792620),
     g = n(241124),
-    _ = n(947926),
-    f = n(717695),
+    f = n(947926),
+    _ = n(717695),
     v = n(164203),
     b = n(127219),
     j = n(438038),
     A = n(439075),
     C = n(223344),
     y = n(589939),
-    E = n(443960),
-    S = n(899860),
-    T = n(633581),
+    S = n(443960),
+    T = n(899860),
+    E = n(633581),
     N = n(508575),
     I = n(847807),
-    O = n(364329),
-    k = n(545986),
+    k = n(364329),
+    O = n(545986),
     R = n(927813),
     w = n(163459);
 let D = ["png", "gif", "webp"],
@@ -138,7 +138,7 @@ function G() {
             ...e,
             preview: !0
         })
-    }, []), [u, U] = i.useState(O.b.UNENROLLED), [G, F] = i.useState(!1), [V, W] = i.useState(!1), [H, K] = i.useState(null), z = (e = t.config, (0, r.YW)(e).with({
+    }, []), [u, U] = i.useState(k.b.UNENROLLED), [G, F] = i.useState(!1), [V, W] = i.useState(!1), [H, K] = i.useState(null), z = (e = t.config, (0, r.YW)(e).with({
         configVersion: 2
     }, e => e.rewardsConfig.rewards).exhaustive());
 
@@ -267,7 +267,7 @@ function G() {
     }
 
     function X() {
-        (0, x.tU)(t.config) && (0, k.hJ)(t, h.uF.GIFT_INVENTORY_FOR_YOU, h.uF.INTERNAL_PREVIEW_TOOL, !0)
+        (0, x.tU)(t.config) && (0, O.hJ)(t, h.uF.GIFT_INVENTORY_FOR_YOU, h.uF.INTERNAL_PREVIEW_TOOL, !0)
     }
     let Z = i.useMemo(() => {
             for (let [e, n] of Object.entries(t.config.taskConfigV2.tasks))
@@ -285,16 +285,16 @@ function G() {
             children: "Quest Preview Tool"
         }), (0, a.jsx)("div", {
             className: w.OA,
-            children: (0, a.jsx)(T.A, {
+            children: (0, a.jsx)(E.A, {
                 onSelect: function(e) {
                     K(e), null == e || (U(function(e) {
-                        if (null == e.userStatus) return O.b.UNENROLLED;
-                        if (null != e.userStatus.claimedAt) return O.b.CLAIMED;
-                        if (null != e.userStatus.completedAt) return O.b.COMPLETED_100;
+                        if (null == e.userStatus) return k.b.UNENROLLED;
+                        if (null != e.userStatus.claimedAt) return k.b.CLAIMED;
+                        if (null != e.userStatus.completedAt) return k.b.COMPLETED_100;
                         let t = (0, p.Yh)(e),
                             n = t.progressSeconds,
                             a = t.targetSeconds;
-                        return n / a >= 1 ? O.b.COMPLETED_100 : n / a >= .75 ? O.b.COMPLETED_75 : n / a >= .5 ? O.b.COMPLETED_50 : n / a >= .25 ? O.b.COMPLETED_25 : O.b.ENROLLED
+                        return n / a >= 1 ? k.b.COMPLETED_100 : n / a >= .75 ? k.b.COMPLETED_75 : n / a >= .5 ? k.b.COMPLETED_50 : n / a >= .25 ? k.b.COMPLETED_25 : k.b.ENROLLED
                     }(e)), c(e))
                 },
                 quest: H
@@ -324,22 +324,22 @@ function G() {
             children: "Messages"
         }), (0, a.jsxs)("div", {
             className: w.OA,
-            children: [(0, a.jsx)(S.A, {
+            children: [(0, a.jsx)(T.A, {
                 title: "Quest Name",
                 assetKey: "questName",
                 onMessageChange: Y,
                 initialValue: t.config.messages.questName
-            }), (0, a.jsx)(S.A, {
+            }), (0, a.jsx)(T.A, {
                 title: "Game Title",
                 assetKey: "gameTitle",
                 onMessageChange: Y,
                 initialValue: t.config.messages.gameTitle
-            }), (0, a.jsx)(S.A, {
+            }), (0, a.jsx)(T.A, {
                 title: "Game Publisher",
                 assetKey: "gamePublisher",
                 onMessageChange: Y,
                 initialValue: t.config.messages.gamePublisher
-            }), ee && (0, a.jsx)(S.A, {
+            }), ee && (0, a.jsx)(T.A, {
                 title: "Video Title",
                 assetKey: "videoTitle",
                 onMessageChange: function(e, n) {
@@ -375,56 +375,56 @@ function G() {
             children: "Assets"
         }), (0, a.jsxs)("div", {
             className: w.OA,
-            children: [(0, a.jsx)(E.A, {
+            children: [(0, a.jsx)(S.A, {
                 title: "Hero",
                 assetKey: "hero",
                 onFileChange: $,
                 filters: P,
                 initialValue: t.config.assets.hero
-            }), (0, a.jsx)(E.A, {
+            }), (0, a.jsx)(S.A, {
                 title: "Hero Video (optional)",
                 assetKey: "heroVideo",
                 onFileChange: $,
                 filters: P,
                 initialValue: t.config.assets.heroVideo ?? void 0
-            }), (0, a.jsx)(E.A, {
+            }), (0, a.jsx)(S.A, {
                 title: "Quest Bar Hero",
                 assetKey: "questBarHero",
                 onFileChange: $,
                 filters: P,
                 initialValue: t.config.assets.questBarHero
-            }), (0, a.jsx)(E.A, {
+            }), (0, a.jsx)(S.A, {
                 title: "Quest Bar Hero Video (optional)",
                 assetKey: "questBarHeroVideo",
                 onFileChange: $,
                 filters: P,
                 initialValue: t.config.assets.questBarHeroVideo ?? void 0
-            }), (0, a.jsx)(E.A, {
+            }), (0, a.jsx)(S.A, {
                 title: "Game Tile",
                 assetKey: "gameTile",
                 onFileChange: $,
                 filters: [...M, "svg"],
                 initialValue: t.config.assets.gameTile
-            }), (0, a.jsx)(E.A, {
+            }), (0, a.jsx)(S.A, {
                 title: "Logotype",
                 assetKey: "logotype",
                 onFileChange: $,
                 filters: [...D, "svg"],
                 initialValue: t.config.assets.logotype
             }), ee && (0, a.jsxs)(a.Fragment, {
-                children: [(0, a.jsx)(E.A, {
+                children: [(0, a.jsx)(S.A, {
                     title: "Quest Video",
                     assetKey: "videoPlayerVideo",
                     onFileChange: q,
                     filters: P,
                     initialValue: et?.assets.video.url
-                }), (0, a.jsx)(E.A, {
+                }), (0, a.jsx)(S.A, {
                     title: "Quest Video (Low Resolution)",
                     assetKey: "videoPlayerVideoLowRes",
                     onFileChange: q,
                     filters: P,
                     initialValue: et?.assets.videoLowRes?.url
-                }), (0, a.jsx)(E.A, {
+                }), (0, a.jsx)(S.A, {
                     title: "Video Player Thumbnail (optional)",
                     assetKey: "videoPlayerThumbnail",
                     onFileChange: q,
@@ -439,17 +439,17 @@ function G() {
                 children: ["Reward #", n + 1]
             }), (0, a.jsxs)("div", {
                 className: w.OA,
-                children: [(0, a.jsx)(S.A, {
+                children: [(0, a.jsx)(T.A, {
                     title: "Name",
                     assetKey: "name",
                     onMessageChange: (e, t) => Q(e, t, n),
                     initialValue: e.messages.name
-                }), (0, a.jsx)(S.A, {
+                }), (0, a.jsx)(T.A, {
                     title: "Name With Article",
                     assetKey: "nameWithArticle",
                     onMessageChange: (e, t) => Q(e, t, n),
                     initialValue: e.messages.nameWithArticle
-                }), e.type !== d.l.VIRTUAL_CURRENCY && (0, a.jsx)(E.A, {
+                }), e.type !== d.l.VIRTUAL_CURRENCY && (0, a.jsx)(S.A, {
                     title: "Asset",
                     assetKey: "asset",
                     onFileChange: (e, a) => (function(e, n, a) {
@@ -513,16 +513,16 @@ function G() {
             }), (0, a.jsx)("div", {
                 className: w.OA,
                 children: (0, a.jsx)(I.A, {})
-            }), (0, a.jsx)(O.A, {
+            }), (0, a.jsx)(k.A, {
                 onChange: function(e) {
                     switch (U(e), e) {
-                        case O.b.UNENROLLED:
+                        case k.b.UNENROLLED:
                             c({
                                 ...t,
                                 userStatus: null
                             });
                             break;
-                        case O.b.ENROLLED:
+                        case k.b.ENROLLED:
                             c({
                                 ...t,
                                 userStatus: L({
@@ -530,7 +530,7 @@ function G() {
                                 })
                             });
                             break;
-                        case O.b.COMPLETED_25:
+                        case k.b.COMPLETED_25:
                             c({
                                 ...t,
                                 userStatus: L({
@@ -539,7 +539,7 @@ function G() {
                                 })
                             });
                             break;
-                        case O.b.COMPLETED_50:
+                        case k.b.COMPLETED_50:
                             c({
                                 ...t,
                                 userStatus: L({
@@ -548,7 +548,7 @@ function G() {
                                 })
                             });
                             break;
-                        case O.b.COMPLETED_75:
+                        case k.b.COMPLETED_75:
                             c({
                                 ...t,
                                 userStatus: L({
@@ -557,7 +557,7 @@ function G() {
                                 })
                             });
                             break;
-                        case O.b.COMPLETED_100:
+                        case k.b.COMPLETED_100:
                             c({
                                 ...t,
                                 userStatus: L({
@@ -567,7 +567,7 @@ function G() {
                                 })
                             });
                             break;
-                        case O.b.CLAIMED:
+                        case k.b.CLAIMED:
                             c({
                                 ...t,
                                 userStatus: L({
@@ -604,8 +604,8 @@ function G() {
                             isPreview: !0,
                             source: "preview",
                             questId: "0",
-                            children: (0, a.jsx)(f.A, {
-                                children: (0, a.jsx)(_.Y, {
+                            children: (0, a.jsx)(_.A, {
+                                children: (0, a.jsx)(f.Y, {
                                     quest: t
                                 })
                             })

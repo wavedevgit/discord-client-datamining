@@ -15,8 +15,8 @@ var r = n(397927),
     g = n(287809),
     m = n(562153),
     x = n(183555),
-    p = n(735321),
-    f = n(451395),
+    f = n(735321),
+    p = n(451395),
     h = n(823016),
     _ = n(788593),
     A = n(492280),
@@ -37,7 +37,7 @@ function C(e) {
     } = e, {
         manageFocusOnReorder: r
     } = (0, h.r)();
-    return (0, i.jsx)(f.mG, {
+    return (0, i.jsx)(p.mG, {
         index: t,
         itemId: l.applicationId,
         listType: n,
@@ -50,7 +50,7 @@ function C(e) {
         "aria-label": E.intl.formatToPlainString(E.t["0dR3gw"], {
             positionNumber: t + 1
         }),
-        onReorder: (e, t) => (0, p.Un)(n, e, t),
+        onReorder: (e, t) => (0, f.Un)(n, e, t),
         onEnd: () => r(l.applicationId),
         className: b.vF,
         dropBeforeClassName: b.A,
@@ -148,21 +148,21 @@ function k(e) {
         widgetType: d,
         applicationId: u
     } = e, g = (0, o.GV)(), m = (0, o.GV)(), {
-        trackUserProfileEditAction: f
+        trackUserProfileEditAction: p
     } = (0, x.NJ)(), [h, _] = l.useState("idle"), [A, I] = l.useState(t ?? ""), j = l.useRef(null), v = l.useRef(null), T = E.intl.string(E.t.xKSfBT), C = null != t && "" !== t.trim(), S = l.useCallback(() => {
-        f({
+        p({
             action: "PRESS_ADD_COMMENTARY",
             widgetEdited: d
         }), _("editing")
-    }, [d, f]), R = l.useCallback(() => {
+    }, [d, p]), R = l.useCallback(() => {
         let e = A.trim(),
             n = e !== (t ?? "").trim();
-        (0, p.oc)(d, u, "" !== e ? e : void 0), _("completed"), n && f({
+        (0, f.oc)(d, u, "" !== e ? e : void 0), _("completed"), n && p({
             action: "COMMENTARY_EDITED",
             widgetEdited: d,
             gameId: u
         })
-    }, [d, u, A, t, f]), k = l.useCallback(e => {
+    }, [d, u, A, t, p]), k = l.useCallback(e => {
         I(e)
     }, []);
     return l.useEffect(() => {
@@ -242,7 +242,7 @@ function w(e) {
     } = (0, c.A)(w), M = {
         variant: "heading-sm/medium",
         color: "text-default"
-    }, U = g.default.getCurrentUser(), F = U?.id === t.id, W = 1 === (0, p.cv)(d), H = !u && F, B = H && (0, p.y9)(d), X = H && !W, {
+    }, U = g.default.getCurrentUser(), F = U?.id === t.id, W = 1 === (0, f.cv)(d), H = !u && F, B = H && (0, f.y9)(d), X = H && !W, {
         registerDragHandleRef: V
     } = (0, h.r)();
     if (G) return (0, i.jsx)(A.E, {});
@@ -261,7 +261,7 @@ function w(e) {
             className: s()(b.Nr, N),
             children: [X ? (0, i.jsxs)("div", {
                 className: b.An,
-                children: [z(), (0, i.jsx)(f.jV, {
+                children: [z(), (0, i.jsx)(p.jV, {
                     buttonRef: V(o.applicationId),
                     className: b.BU
                 })]

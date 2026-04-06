@@ -16,16 +16,16 @@ var a = n(627968),
     x = n(73153),
     p = n(58736),
     g = n(405269),
-    _ = n(967954),
-    f = n(538064),
+    f = n(967954),
+    _ = n(538064),
     v = n(708403),
     b = n(260880),
     j = n(303054),
     A = n(231643),
     C = n(985018),
     y = n(380649),
-    E = n(310086);
-let S = [{
+    S = n(310086);
+let T = [{
         key: "id",
         cellClassName: y.Hz,
         render(e) {
@@ -53,7 +53,7 @@ let S = [{
             return t.toLocaleString()
         }
     }],
-    T = [{
+    E = [{
         id: "details",
         name: "Details",
         group: A.fu.NONE,
@@ -71,7 +71,7 @@ let S = [{
             } = e, u = c()(r);
             return (0, a.jsxs)(a.Fragment, {
                 children: [(0, a.jsxs)(p.Ay, {
-                    className: l()(E.jr, y.nZ),
+                    className: l()(S.jr, y.nZ),
                     children: [(0, a.jsx)(p.Ay.Icon, {
                         icon: h.Uy2,
                         tooltip: t
@@ -134,29 +134,29 @@ let S = [{
     }];
 
 function N() {
-    let [e, t] = i.useState(""), n = i.useRef(null), s = (0, u.yK)([_.A], () => _.A.loggedTriggers), r = i.useMemo(() => s.filter(t => 0 === e.length || o()(e, t.experimentId)).sort((e, t) => t.timestamp.getTime() - e.timestamp.getTime()), [s, e]), [d, c] = i.useState(void 0), p = r.find(e => e.key === d), {
+    let [e, t] = i.useState(""), n = i.useRef(null), s = (0, u.yK)([f.A], () => f.A.loggedTriggers), r = i.useMemo(() => s.filter(t => 0 === e.length || o()(e, t.experimentId)).sort((e, t) => t.timestamp.getTime() - e.timestamp.getTime()), [s, e]), [d, c] = i.useState(void 0), p = r.find(e => e.key === d), {
         TabBar: g,
         renderSelectedTab: v
     } = (0, A.Ay)({
-        tabs: T
-    }, []), N = (0, u.bG)([_.A], () => _.A.trackTriggers), I = i.useCallback(e => {
+        tabs: E
+    }, []), N = (0, u.bG)([f.A], () => f.A.trackTriggers), I = i.useCallback(e => {
         x.h.dispatch({
             type: "SET_TRACK_TRIGGERS",
             enabled: e
         })
-    }, []), O = N ? "Stop Tracking" : "Start Tracking";
+    }, []), k = N ? "Stop Tracking" : "Start Tracking";
     return (0, a.jsxs)("div", {
         ref: n,
-        className: l()(E.nd, y.nd),
+        className: l()(S.nd, y.nd),
         children: [(0, a.jsxs)("div", {
             className: y.rh,
             children: [(0, a.jsx)(m.m_, {
-                text: O,
+                text: k,
                 children: (0, a.jsx)(h.K0, {
                     size: "sm",
                     variant: N ? "active" : "primary",
                     icon: N ? h.E$n : h.udU,
-                    "aria-label": O,
+                    "aria-label": k,
                     onClick: () => I(!N)
                 })
             }), (0, a.jsx)(h.IWV, {
@@ -170,10 +170,10 @@ function N() {
                 variant: "icon-only",
                 "aria-label": C.intl.string(C.t.VkKicb),
                 icon: h.ucK,
-                onClick: f.eY
+                onClick: _.eY
             })]
         }), (0, a.jsx)(j.A, {
-            columns: S,
+            columns: T,
             data: r,
             selectedRowKey: d,
             onClickRow: e => c(e.key)

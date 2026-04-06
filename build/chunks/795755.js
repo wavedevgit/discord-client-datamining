@@ -15,8 +15,8 @@ var l = n(540185),
     g = n(155400),
     m = n(844206),
     x = n(557964),
-    p = n(987140),
-    f = n(671924);
+    f = n(987140),
+    p = n(671924);
 
 function h(e) {
     let {
@@ -75,11 +75,11 @@ function _(e) {
             widget: t,
             onAddGame: () => g(!0)
         }, `${t.type}-browse-games-popout`)] : void 0,
-        trailingContent: A && (0, i.jsx)(p.A, {
+        trailingContent: A && (0, i.jsx)(f.A, {
             userId: n.id,
             widgetType: t.type,
             onDismiss: x,
-            className: f.r
+            className: p.r
         }),
         ...u
     })

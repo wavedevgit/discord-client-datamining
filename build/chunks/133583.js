@@ -14,8 +14,8 @@ var i = n(627968),
     g = n(688810),
     m = n(429913),
     x = n(979286),
-    p = n(895360),
-    f = n(574499),
+    f = n(895360),
+    p = n(574499),
     h = n(400669),
     _ = n(832163),
     A = n(690946),
@@ -176,8 +176,8 @@ function z(e) {
         handleOpenGameShop: u,
         handleAddNitroToWishlist: g
     } = e, m = a.id, x = (0, o.bG)([y.A], () => y.A.getWishlistSettings(n.id, m)), {
-        trackUserProfileWishlistAction: p
-    } = (0, N.NJ)(), f = !1 === n.nsfwAllowed, [h, _] = l.useState(!0);
+        trackUserProfileWishlistAction: f
+    } = (0, N.NJ)(), p = !1 === n.nsfwAllowed, [h, _] = l.useState(!0);
     l.useEffect(() => {
         x?.visibility != null && _(x.visibility === r.a.PUBLIC)
     }, [x?.visibility]);
@@ -187,12 +187,12 @@ function z(e) {
                 action: n,
                 productLines: i
             } = e;
-            null != t && p({
+            null != t && f({
                 wishlistId: t,
                 action: n,
                 productLines: i
             })
-        }, [p]),
+        }, [f]),
         I = (0, k.A)({
             wishlistId: m,
             onAction: A,
@@ -201,12 +201,12 @@ function z(e) {
         j = l.useCallback(() => {
             if (null == m) return;
             let e = h ? r.a.PRIVATE : r.a.PUBLIC;
-            _(!h), v.A.updateWishlistVisibility(m, e), p({
+            _(!h), v.A.updateWishlistVisibility(m, e), f({
                 wishlistId: m,
                 action: h ? M.Mq.WISHLIST_TOGGLE_PRIVATE : M.Mq.WISHLIST_TOGGLE_PUBLIC,
                 productLines: a?.getProductLines()
             })
-        }, [m, h, p, a]);
+        }, [m, h, f, a]);
     return (0, i.jsxs)(i.Fragment, {
         children: [!h && (0, i.jsxs)("div", {
             className: W.lm,
@@ -219,7 +219,7 @@ function z(e) {
                 color: "text-subtle",
                 children: F.intl.string(F.t.RX7D9h)
             })]
-        }), h && f && (0, i.jsxs)("div", {
+        }), h && p && (0, i.jsxs)("div", {
             className: W.lm,
             children: [(0, i.jsx)(d.mir, {
                 size: "custom",
@@ -311,11 +311,11 @@ function Y(e) {
         }, []),
         {
             handleToggle: K
-        } = (0, f.c)({
+        } = (0, p.c)({
             userId: r?.id,
             skuId: U.pe.TIER_2,
             nuxGraphic: F ? h.g : void 0,
-            onNuxShow: p.D,
+            onNuxShow: f.D,
             location: u.A.USER_PROFILE_WISHLIST
         });
     if (null == r || null != k) return null;

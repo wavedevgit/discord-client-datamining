@@ -4,8 +4,8 @@ n.d(t, {
 }), n(801541);
 var i = n(627968),
     l = n(64700),
-    r = n(503698),
-    s = n.n(r),
+    s = n(503698),
+    r = n.n(s),
     a = n(126031),
     o = n(687498),
     d = n(889137),
@@ -26,14 +26,14 @@ function I(e) {
     let {
         percentage: t,
         label: n,
-        canShowVoterDetails: r,
-        answerId: s
+        canShowVoterDetails: s,
+        answerId: r
     } = e, o = (0, _.GV)(), {
         channelId: d,
         messageId: c
     } = (0, f.Tu)(), [A, x] = l.useState(""), [C, I] = l.useState(!1), v = "" !== A && C, b = l.useCallback(() => {
-        x((0, g.$m)(c, d, s))
-    }, [c, d, s]), T = l.useCallback(() => {
+        x((0, g.$m)(c, d, r))
+    }, [c, d, r]), T = l.useCallback(() => {
         b(), I(!0)
     }, [b]), N = l.useCallback(() => {
         I(!1)
@@ -41,16 +41,16 @@ function I(e) {
         (0, p.e)({
             channelId: d,
             messageId: c,
-            answerId: s
+            answerId: r
         })
-    }, [d, c, s]);
+    }, [d, c, r]);
     return l.useEffect(() => {
         if (C) return h.A.addReactChangeListener(b), () => {
             h.A.removeReactChangeListener(b)
         }
     }, [C, b]), (0, i.jsxs)("div", {
         className: E.AA,
-        children: [r ? (0, i.jsxs)(i.Fragment, {
+        children: [s ? (0, i.jsxs)(i.Fragment, {
             children: ["" !== A ? (0, i.jsx)(u.m, {
                 __unsupportedReactNodeAsText: (0, i.jsx)(m.Text, {
                     variant: "text-sm/normal",
@@ -126,8 +126,8 @@ function b(e) {
         answersInteraction: t,
         isSelected: n,
         didSelfVote: l,
-        isVictor: r,
-        isExpired: s,
+        isVictor: s,
+        isExpired: r,
         className: a
     } = e;
     return (0, d.YW)({
@@ -149,8 +149,8 @@ function b(e) {
         answersInteraction: A.CQ.LIST,
         didSelfVote: !0
     }, () => (0, i.jsx)(x.Vx, {
-        isVictor: r,
-        isExpired: s,
+        isVictor: s,
+        isExpired: r,
         size: 24,
         className: a
     })).otherwise(() => null)
@@ -161,15 +161,15 @@ function T(e) {
         answer: t,
         isExpired: n,
         answersInteraction: l,
-        canShowVoteCounts: r,
+        canShowVoteCounts: s,
         canShowVoterDetails: o
     } = e, d = !0 === t.isSelected, c = !0 === t.didSelfVote, u = !0 === t.isVictor, _ = t.shouldAnimateTransition;
     return (0, i.jsxs)("div", {
-        className: s()(E.Fk, {
+        className: r()(E.Fk, {
             [E.EK]: l !== A.CQ.LIST,
             [E.wH]: d
         }),
-        children: [r ? (0, i.jsx)(v, {
+        children: [s ? (0, i.jsx)(v, {
             percentage: t.votesPercentage,
             shouldAnimate: _
         }) : null, null != t.pollMedia.emoji && (0, i.jsx)(x.Fb, {
@@ -183,7 +183,7 @@ function T(e) {
             children: t.pollMedia.text
         }), t.didSelfVote && (0, i.jsx)(a.s, {
             children: C.intl.string(C.t["8DAM+5"])
-        }), r && (0, i.jsx)(I, {
+        }), s && (0, i.jsx)(I, {
             percentage: t.votesPercentage,
             label: t.votes,
             canShowVoterDetails: o,
@@ -204,21 +204,21 @@ function N(e) {
         isExpired: t,
         answersInteraction: n,
         canShowVoteCounts: l,
-        canTapAnswers: r,
-        ...s
+        canTapAnswers: s,
+        ...r
     } = e;
     return (0, i.jsx)(x.Fh, {
         className: E.ry,
         answerClassName: E.ZF,
         answersInteraction: n,
-        canTapAnswers: r,
+        canTapAnswers: s,
         renderAnswerContent: e => (0, i.jsx)(T, {
             answer: e,
             isExpired: t,
             answersInteraction: n,
             canShowVoteCounts: l,
-            canShowVoterDetails: r
+            canShowVoterDetails: s
         }),
-        ...s
+        ...r
     })
 }

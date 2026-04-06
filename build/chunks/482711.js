@@ -5,8 +5,8 @@ n.d(t, {
 });
 var i = n(627968),
     l = n(64700),
-    r = n(503698),
-    s = n.n(r),
+    s = n(503698),
+    r = n.n(s),
     a = n(397927),
     o = n(442433),
     d = n(492749),
@@ -22,8 +22,8 @@ function g(e) {
         showEditProduct: t,
         showUnpublishProduct: n,
         showCopyLink: l,
-        showTestDownload: r,
-        showDeleteProduct: s,
+        showTestDownload: s,
+        showDeleteProduct: r,
         showReportProduct: o,
         onEditProduct: d,
         onUnpublishProduct: c,
@@ -61,7 +61,7 @@ function g(e) {
                         icon: a.qYV
                     },
                     action: m
-                }), r && (0, i.jsx)(a.Drp, {
+                }), s && (0, i.jsx)(a.Drp, {
                     id: "guild-product-test-download",
                     label: h.intl.string(h.t.aXoI6U),
                     icon: a.s3U,
@@ -76,7 +76,7 @@ function g(e) {
                     id: "guild-product-unpublish",
                     label: h.intl.string(h.t.QrkMlN),
                     action: c
-                }), s && (0, i.jsx)(a.Drp, {
+                }), r && (0, i.jsx)(a.Drp, {
                     id: "guild-product-delete",
                     label: h.intl.string(h.t.zWjqvB),
                     color: "danger",
@@ -98,8 +98,8 @@ function A(e) {
     let {
         product: t,
         guildId: n,
-        showEditProduct: r,
-        showUnpublishProduct: s,
+        showEditProduct: s,
+        showUnpublishProduct: r,
         showTestDownload: o,
         showCopyLink: d,
         showDeleteProduct: c,
@@ -125,8 +125,8 @@ function A(e) {
                 ...e,
                 guildId: n,
                 productId: t.id,
-                showEditProduct: r,
-                showUnpublishProduct: s,
+                showEditProduct: s,
+                showUnpublishProduct: r,
                 showCopyLink: d,
                 showTestDownload: o,
                 showReportProduct: u,
@@ -168,7 +168,7 @@ function x(e) {
         product: t,
         guildId: n,
         onEditProduct: l,
-        onUnpublishProduct: r,
+        onUnpublishProduct: s,
         onDeleteProduct: x,
         onCopyProductLink: f,
         onTestDownload: C,
@@ -176,7 +176,7 @@ function x(e) {
     } = e, I = (0, d.R)(t, 600), v = null !== t.price_tier ? (0, c.$g)(t.price_tier, _.Yr.USD) : void 0, b = (0, u.z)(t);
     return (0, i.jsxs)(a.sqX, {
         tag: "article",
-        className: s()(p.gc, p.Um, {
+        className: r()(p.gc, p.Um, {
             [p.r9]: E
         }),
         onClick: E ? void 0 : l,
@@ -193,7 +193,7 @@ function x(e) {
                 showDeleteProduct: !0,
                 showReportProduct: !1,
                 onEditProduct: l,
-                onUnpublishProduct: r,
+                onUnpublishProduct: s,
                 onDeleteProduct: x,
                 onCopyLink: f,
                 onTestDownload: C,
@@ -246,7 +246,7 @@ function x(e) {
                 showDeleteProduct: !0,
                 showReportProduct: !1,
                 onEditProduct: l,
-                onUnpublishProduct: r,
+                onUnpublishProduct: s,
                 onDeleteProduct: x,
                 onCopyProductLink: f,
                 onTestDownload: C,

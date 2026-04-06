@@ -1,6 +1,6 @@
 /** chunk id: 918550 params = (module,exports,require) **/
 n.d(t, {
-    A: () => T
+    A: () => E
 }), n(321073), n(323874), n(14289), n(35956);
 var a = n(627968),
     i = n(64700),
@@ -16,19 +16,19 @@ var a = n(627968),
     x = n(239606),
     p = n(287809),
     g = n(816866),
-    _ = n(87558),
-    f = n(643084),
+    f = n(87558),
+    _ = n(643084),
     v = n(525221),
     b = n(778765),
     j = n(73269);
 let A = {
-        [_.qH.THUMBNAIL]: null,
-        [_.qH.STATIC]: null,
-        [_.qH.REDUCED_MOTION]: null
+        [f.qH.THUMBNAIL]: null,
+        [f.qH.STATIC]: null,
+        [f.qH.REDUCED_MOTION]: null
     },
     C = "debug",
     y = "reduced-motion-preview-modal",
-    E = e => {
+    S = e => {
         let {
             transitionState: t,
             onClose: n,
@@ -70,13 +70,13 @@ let A = {
             })
         })
     },
-    S = e => {
+    T = e => {
         let {
             type: t,
             frame: n,
             theme: i,
             onClear: s
-        } = e, r = t === _.qH.REDUCED_MOTION, o = r ? j.A : b.A, d = (0, a.jsx)(c.NPJ, {
+        } = e, r = t === f.qH.REDUCED_MOTION, o = r ? j.A : b.A, d = (0, a.jsx)(c.NPJ, {
             theme: i,
             children: e => (0, a.jsxs)(a.Fragment, {
                 children: [(0, a.jsx)("img", {
@@ -99,7 +99,7 @@ let A = {
             }), r ? (0, a.jsx)(c.DUT, {
                 className: l()(v.zd, v.eB),
                 onClick: () => {
-                    (0, c.kBI)(y) ? (0, c.OoC)(y) : (0, c.mMO)(() => Promise.resolve(e => (0, a.jsx)(E, {
+                    (0, c.kBI)(y) ? (0, c.OoC)(y) : (0, c.mMO)(() => Promise.resolve(e => (0, a.jsx)(S, {
                         ...e,
                         frameSrc: n?.src ?? null,
                         theme: i
@@ -120,12 +120,12 @@ let A = {
             })]
         })
     },
-    T = e => {
+    E = e => {
         let {
             effect: t
         } = e, {
             upsertConfig: n
-        } = (0, g.wu)(), s = (0, o.bG)([p.default], () => p.default.getCurrentUser()), [d, j] = i.useState(!0), y = i.useRef({}), [E, T] = i.useState(!1), [N, I] = i.useState(!1), [O, k] = i.useState(8), [R, w] = i.useState([]), [D, M] = i.useState(A), P = i.useRef([]), [L, U] = i.useState(t.name), B = L.toLowerCase().replace(/\s+/g, "_"), G = i.useMemo(() => ({
+        } = (0, g.wu)(), s = (0, o.bG)([p.default], () => p.default.getCurrentUser()), [d, j] = i.useState(!0), y = i.useRef({}), [S, E] = i.useState(!1), [N, I] = i.useState(!1), [k, O] = i.useState(8), [R, w] = i.useState([]), [D, M] = i.useState(A), P = i.useRef([]), [L, U] = i.useState(t.name), B = L.toLowerCase().replace(/\s+/g, "_"), G = i.useMemo(() => ({
             id: C,
             skuId: C,
             title: C,
@@ -135,15 +135,15 @@ let A = {
             thumbnailPreviewSrc: "",
             effects: R,
             animationType: r.l.ANIMATION_TYPE_UNSPECIFIED
-        }), [R]), F = E ? c.LU0.themes.DARKER : c.LU0.themes.LIGHT, V = e => {
+        }), [R]), F = S ? c.LU0.themes.DARKER : c.LU0.themes.LIGHT, V = e => {
             let t = e.currentTarget.files;
             return null == t ? null : t[0]
         }, W = (e, t) => {
             let n = V(t);
-            null != n && (0, _.Mz)(n, t => {
+            null != n && (0, f.Mz)(n, t => {
                 M(a => ({
                     ...a,
-                    [e]: (0, _.GT)(t, n)
+                    [e]: (0, f.GT)(t, n)
                 }))
             })
         };
@@ -160,7 +160,7 @@ let A = {
                         [t]: n
                     }));
                     else if ("" !== n.base64 && null != n.base64) {
-                        let e = (0, _.fB)(n.base64);
+                        let e = (0, f.fB)(n.base64);
                         n.src = e, P.current.push(e), M(e => ({
                             ...e,
                             [t]: n
@@ -205,8 +205,8 @@ let A = {
                     },
                     onChange: e => {
                         let t = V(e);
-                        null != t && (0, _.Mz)(t, async e => {
-                            let n = await (0, _.Ay)(e, t, R.length);
+                        null != t && (0, f.Mz)(t, async e => {
+                            let n = await (0, f.Ay)(e, t, R.length);
                             w(e => [...e, n])
                         })
                     },
@@ -215,19 +215,19 @@ let A = {
                     ref: e => {
                         y.current.thumbnail = e
                     },
-                    onChange: e => W(_.qH.THUMBNAIL, e),
+                    onChange: e => W(f.qH.THUMBNAIL, e),
                     multiple: !1
                 }), (0, a.jsx)(m.A, {
                     ref: e => {
                         y.current.static = e
                     },
-                    onChange: e => W(_.qH.STATIC, e),
+                    onChange: e => W(f.qH.STATIC, e),
                     multiple: !1
                 }), (0, a.jsx)(m.A, {
                     ref: e => {
                         y.current.reducedMotion = e
                     },
-                    onChange: e => W(_.qH.REDUCED_MOTION, e),
+                    onChange: e => W(f.qH.REDUCED_MOTION, e),
                     multiple: !1
                 })]
             }), (0, a.jsxs)("div", {
@@ -252,10 +252,10 @@ let A = {
                         children: "Dark Theme"
                     }), (0, a.jsx)("input", {
                         type: "checkbox",
-                        checked: E,
+                        checked: S,
                         className: v.OO,
                         onChange: () => {
-                            T(!E)
+                            E(!S)
                         }
                     }), (0, a.jsx)(c.Text, {
                         variant: "text-md/normal",
@@ -278,16 +278,16 @@ let A = {
                         min: 4,
                         max: 24,
                         step: 2,
-                        value: O,
-                        onChange: e => k(+e.target.value)
+                        value: k,
+                        onChange: e => O(+e.target.value)
                     }), (0, a.jsxs)(c.Text, {
                         variant: "text-sm/normal",
-                        children: [O, "px"]
+                        children: [k, "px"]
                     })]
                 }), (0, a.jsxs)("div", {
                     className: l()(v.nz, v.VH),
                     style: {
-                        borderRadius: O
+                        borderRadius: k
                     },
                     children: [N ? (0, a.jsx)("div", {
                         className: v.jq,
@@ -310,7 +310,7 @@ let A = {
                         })
                     }), d && (0, a.jsx)("div", {
                         className: v.KJ,
-                        children: (0, a.jsx)(f.A, {
+                        children: (0, a.jsx)(_.A, {
                             config: G
                         })
                     })]
@@ -318,7 +318,7 @@ let A = {
                     children: N && (0, a.jsxs)("div", {
                         className: l()(v.f5, v.VH),
                         style: {
-                            borderRadius: O
+                            borderRadius: k
                         },
                         children: [(0, a.jsx)(h.A, {
                             user: s,
@@ -326,7 +326,7 @@ let A = {
                             pendingProfileEffect: null,
                             canUsePremiumCustomization: !0,
                             isTryItOut: !0
-                        }), (0, a.jsx)(f.A, {
+                        }), (0, a.jsx)(_.A, {
                             config: G
                         })]
                     })
@@ -381,7 +381,7 @@ let A = {
                         }), (0, a.jsxs)("div", {
                             className: v.nM,
                             children: [(0, a.jsx)(u.A, {
-                                fileContents: () => (0, _.rs)(R),
+                                fileContents: () => (0, f.rs)(R),
                                 contentType: "text/plain",
                                 fileName: `${B}_timing_config.txt`,
                                 children: (0, a.jsx)(c.Button, {
@@ -418,7 +418,7 @@ let A = {
                             className: v.mv,
                             children: Object.entries(D).map(e => {
                                 let [t, n] = e;
-                                return (0, a.jsx)(S, {
+                                return (0, a.jsx)(T, {
                                     type: t,
                                     frame: n,
                                     theme: F,
@@ -574,7 +574,7 @@ let A = {
                                 },
                                 onChange: e => {
                                     let n;
-                                    null != (n = V(e)) && (0, _.Mz)(n, e => {
+                                    null != (n = V(e)) && (0, f.Mz)(n, e => {
                                         w(a => {
                                             let i = [...a],
                                                 s = a[t];

@@ -1,6 +1,6 @@
 /** chunk id: 547798 params = (module,exports,require) **/
 n.d(t, {
-    A: () => O
+    A: () => k
 });
 var a = n(627968),
     i = n(64700),
@@ -16,42 +16,42 @@ var a = n(627968),
     x = n(69555),
     p = n(237984),
     g = n(43203),
-    _ = n(349435),
-    f = n(674272),
+    f = n(349435),
+    _ = n(674272),
     v = n(253932),
     b = n(407186),
     j = n(543924),
     A = n(309010),
     C = n(837921),
     y = n(652215),
-    E = n(327337),
-    S = n(431804),
-    T = n(413269),
+    S = n(327337),
+    T = n(431804),
+    E = n(413269),
     N = n(885106);
 
 function I() {
     throw Error("Send help")
 }
 
-function O() {
+function k() {
     let e = v.j0.useSetting(),
         [t, s] = i.useState(!1);
     return t ? {} : (0, a.jsxs)(c.HOs, {
         children: [(0, a.jsx)("div", {
-            className: l()(T.N, N.SX),
+            className: l()(E.N, N.SX),
             children: (0, a.jsx)(j.M, {})
         }), (0, a.jsx)("div", {
-            className: l()(T.N, N.QB),
+            className: l()(E.N, N.QB),
             children: (0, a.jsx)(c.Button, {
                 variant: "primary",
                 size: "sm",
                 text: "Launch Vibing Wumpus",
-                onClick: () => (0, f.A)({
-                    source: S.y.KEYBIND
+                onClick: () => (0, _.A)({
+                    source: T.y.KEYBIND
                 })
             })
         }), (0, a.jsx)("div", {
-            className: l()(T.N, N.QB),
+            className: l()(E.N, N.QB),
             children: (0, a.jsx)(c.Button, {
                 variant: "primary",
                 size: "sm",
@@ -66,16 +66,16 @@ function O() {
                             otherUserId: "9876543210",
                             channelId: e,
                             warningId: "test-warning-id",
-                            warningType: _._j.INAPPROPRIATE_CONVERSATION_TIER_2,
+                            warningType: f._j.INAPPROPRIATE_CONVERSATION_TIER_2,
                             ...n
                         })
                     }, {
-                        modalKey: E.V
+                        modalKey: S.V
                     })
                 }
             })
         }), (0, a.jsx)("div", {
-            className: l()(T.N, N.QB),
+            className: l()(E.N, N.QB),
             children: (0, a.jsx)(c.Button, {
                 variant: "primary",
                 size: "sm",
@@ -83,7 +83,7 @@ function O() {
                 onClick: () => (0, m.g)()
             })
         }), (0, a.jsx)("div", {
-            className: l()(T.N, N.QB),
+            className: l()(E.N, N.QB),
             children: (0, a.jsx)(c.Button, {
                 variant: "primary",
                 size: "sm",
@@ -91,7 +91,7 @@ function O() {
                 onClick: () => (0, g.$)("fortnite", "DevTools Quick Actions")
             })
         }), (0, a.jsx)("div", {
-            className: l()(T.N, N.QB),
+            className: l()(E.N, N.QB),
             children: (0, a.jsx)(c.Button, {
                 variant: "primary",
                 size: "sm",
@@ -99,7 +99,7 @@ function O() {
                 onClick: x.B7
             })
         }), (0, a.jsx)("div", {
-            className: l()(T.N, N.QB),
+            className: l()(E.N, N.QB),
             children: (0, a.jsx)(c.Button, {
                 variant: "primary",
                 size: "sm",
@@ -107,7 +107,7 @@ function O() {
                 onClick: d.Oy
             })
         }), (0, a.jsx)("div", {
-            className: l()(T.N, N.QB),
+            className: l()(E.N, N.QB),
             children: (0, a.jsx)(c.Button, {
                 variant: "primary",
                 size: "sm",
@@ -125,14 +125,14 @@ function O() {
                 }
             })
         }), (0, a.jsx)("div", {
-            className: l()(T.N, N.QB),
+            className: l()(E.N, N.QB),
             children: (0, a.jsx)(c.dOG, {
                 label: "Ignore profile speedbump disabled",
                 checked: e,
                 onChange: e => v.j0.updateSetting(e)
             })
         }), (0, a.jsxs)("div", {
-            className: l()(T.N, N.QB),
+            className: l()(E.N, N.QB),
             children: [(0, a.jsx)(c.Button, {
                 variant: "primary",
                 size: "sm",
@@ -174,7 +174,7 @@ function O() {
                 }
             })]
         }), (0, a.jsxs)("div", {
-            className: l()(T.N, N.QB),
+            className: l()(E.N, N.QB),
             children: [(0, a.jsx)(c.l6P, {
                 label: "Trigger native crash",
                 hideLabel: !0,

@@ -14,8 +14,8 @@ var i = n(627968),
     g = n(735321),
     m = n(94343),
     x = n(789290),
-    p = n(451395),
-    f = n(716804),
+    f = n(451395),
+    p = n(716804),
     h = n(19333),
     _ = n(557137),
     A = n(192),
@@ -37,17 +37,17 @@ function v(e) {
         let e = m(n.type);
         return e(d.current), () => e(null)
     }, [m, n.type]);
-    let f = l.useMemo(() => n.id ?? (0, c.Ld)(), [n.id]),
+    let p = l.useMemo(() => n.id ?? (0, c.Ld)(), [n.id]),
         {
             isDragging: _,
             dragSourcePosition: v
-        } = (0, p.gY)({
+        } = (0, f.gY)({
             dragRef: d,
             dropRef: u,
             index: t,
             listType: "WIDGETS",
             itemType: "WIDGET",
-            itemId: f,
+            itemId: p,
             itemPreviewProps: {
                 widget: n,
                 getWidth: o
@@ -83,7 +83,7 @@ function E(e) {
         widget: n,
         children: a,
         disableInteraction: g,
-        className: p,
+        className: f,
         index: h,
         trailingContent: A,
         headerTitle: I,
@@ -91,7 +91,7 @@ function E(e) {
         headerActionButtons: T,
         headerClassName: b,
         additionalManageWidgetMenuItems: C
-    } = e, S = (0, c.GV)(), N = l.useRef(null), y = (0, o.bG)([d.default], () => d.default.getId() === t), R = (0, f.g)(), {
+    } = e, S = (0, c.GV)(), N = l.useRef(null), y = (0, o.bG)([d.default], () => d.default.getId() === t), R = (0, p.g)(), {
         trackUserProfileAction: k
     } = (0, u.NJ)(), w = (0, x.A)({
         widget: n,
@@ -101,7 +101,7 @@ function E(e) {
     let L = y && null != h && !g,
         P = () => (0, i.jsxs)("div", {
             ref: N,
-            className: s()(j.kL, p),
+            className: s()(j.kL, f),
             children: [(0, i.jsx)(_.A, {
                 userId: t,
                 headingId: S,

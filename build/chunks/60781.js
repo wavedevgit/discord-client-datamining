@@ -19,8 +19,8 @@ var a = n(627968),
 function g() {
     let e = (0, s.G98)(),
         [t, n] = i.useState(x.NJ8.DARK),
-        [g, _] = i.useState(h.D),
-        [f, v] = i.useState(["", "", ""]),
+        [g, f] = i.useState(h.D),
+        [_, v] = i.useState(["", "", ""]),
         [b, j] = i.useState([null, null, null]),
         [A, C] = i.useState(null),
         y = i.useMemo(() => Object.fromEntries(c.F$.map(e => {
@@ -29,37 +29,37 @@ function g() {
             } = e;
             return [t, (0, h.k)(g, t)]
         })), [g]),
-        E = y[t],
-        S = i.useCallback(e => {
-            _(n => ({
+        S = y[t],
+        T = i.useCallback(e => {
+            f(n => ({
                 ...n,
                 [t]: e(n[t])
             }))
         }, [t]),
-        T = i.useMemo(() => (0, u.CO)({
+        E = i.useMemo(() => (0, u.CO)({
             theme: t,
             saturation: 1
         }), [t]),
         N = i.useMemo(() => {
             let e = [];
             for (let t = 0; t < c.Dp; t++) {
-                let n = parseFloat(E.opacities[t]);
+                let n = parseFloat(S.opacities[t]);
                 if (isNaN(n) || n < 0 || n > 1) return null;
                 e.push({
-                    color: E.colors[t],
+                    color: S.colors[t],
                     opacity: n,
                     position: c.ME[t]
                 })
             }
             return e
-        }, [E]),
+        }, [S]),
         I = i.useMemo(() => {
             if (null == N) return null;
             let {
                 text: e,
                 background: t
-            } = T;
-            return c._V.map((n, a) => c.iW[E.scales[a]].map(n => {
+            } = E;
+            return c._V.map((n, a) => c.iW[S.scales[a]].map(n => {
                 let i = (0, m._D)(N, a, {
                         ...N[a],
                         color: n.value
@@ -70,8 +70,8 @@ function g() {
                     trailing: `(${s}:1)`
                 }
             }))
-        }, [N, T, E.scales]),
-        O = i.useMemo(() => {
+        }, [N, E, S.scales]),
+        k = i.useMemo(() => {
             try {
                 return c.F$.map(e => {
                     let {
@@ -146,7 +146,7 @@ function g() {
                 }), (0, a.jsx)("div", {
                     className: p.G9,
                     children: c._V.map((e, t) => {
-                        let n = "" !== f[t];
+                        let n = "" !== _[t];
                         return (0, a.jsxs)(i.Fragment, {
                             children: [(0, a.jsx)(s.EYj, {
                                 variant: "text-md/medium",
@@ -156,10 +156,10 @@ function g() {
                                 selectionMode: "single",
                                 label: "Scale",
                                 disabled: n,
-                                value: E.scales[t],
+                                value: S.scales[t],
                                 onSelectionChange: e => {
                                     let n = c.iW[e][0]?.value;
-                                    S(a => ({
+                                    T(a => ({
                                         ...a,
                                         scales: (0, m._D)(a.scales, t, e),
                                         colors: null != n ? (0, m._D)(a.colors, t, n) : a.colors
@@ -171,18 +171,18 @@ function g() {
                                 selectionMode: "single",
                                 label: "Value",
                                 disabled: n,
-                                value: E.colors[t],
-                                onSelectionChange: e => S(n => ({
+                                value: S.colors[t],
+                                onSelectionChange: e => T(n => ({
                                     ...n,
                                     colors: (0, m._D)(n.colors, t, e)
                                 })),
                                 closeOnSelect: !0,
-                                options: I?.[t] ?? c.iW[E.scales[t]]
+                                options: I?.[t] ?? c.iW[S.scales[t]]
                             }), (0, a.jsx)(r.ksK, {
                                 label: "Opacity",
                                 name: `opacity-${t}`,
-                                value: E.opacities[t],
-                                onChange: e => S(n => ({
+                                value: S.opacities[t],
+                                onChange: e => T(n => ({
                                     ...n,
                                     opacities: (0, m._D)(n.opacities, t, e)
                                 })),
@@ -190,13 +190,13 @@ function g() {
                             }), (0, a.jsx)(r.ksK, {
                                 label: `Hex${n&&null!=b[t]?` (dE: ${b[t]})`:""}`,
                                 name: `hex-${t}`,
-                                value: f[t],
+                                value: _[t],
                                 onChange: e => {
                                     v(n => (0, m._D)(n, t, e));
                                     let n = (0, m.xb)(e);
                                     if (null != n) {
                                         let e = (0, m.C2)(n);
-                                        j(n => (0, m._D)(n, t, e.deltaE)), S(n => ({
+                                        j(n => (0, m._D)(n, t, e.deltaE)), T(n => ({
                                             ...n,
                                             scales: (0, m._D)(n.scales, t, e.scale),
                                             colors: (0, m._D)(n.colors, t, e.color)
@@ -239,9 +239,9 @@ function g() {
                                     tabIndex: 0,
                                     onFocus: () => {},
                                     ..."useCustomGradient" in e && {
-                                        hoverGradientStart: (0, m.H9)(E.colors[0], parseFloat(E.opacities[0])),
-                                        hoverGradientMiddle: (0, m.H9)(E.colors[1], parseFloat(E.opacities[1])),
-                                        hoverGradientEnd: (0, m.H9)(E.colors[2], parseFloat(E.opacities[2]))
+                                        hoverGradientStart: (0, m.H9)(S.colors[0], parseFloat(S.opacities[0])),
+                                        hoverGradientMiddle: (0, m.H9)(S.colors[1], parseFloat(S.opacities[1])),
+                                        hoverGradientEnd: (0, m.H9)(S.colors[2], parseFloat(S.opacities[2]))
                                     },
                                     ...{
                                         "data-list-item-id": `devtools-preview-${t}`
@@ -251,12 +251,12 @@ function g() {
                         })
                     })
                 })
-            }), null != O && (0, a.jsxs)(s.BJc, {
+            }), null != k && (0, a.jsxs)(s.BJc, {
                 gap: 16,
                 children: [(0, a.jsx)(s.DZT, {
                     variant: "heading-sm/semibold",
                     children: "Results"
-                }), O.map(e => {
+                }), k.map(e => {
                     let {
                         theme: t,
                         label: n,

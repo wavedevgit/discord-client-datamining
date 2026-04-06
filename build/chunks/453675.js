@@ -36,7 +36,7 @@ function x() {
     i.useEffect(() => {
         if (e) return d.A.addChangeListener(g), () => d.A.removeChangeListener(g)
     }, [g, e]);
-    let _ = i.useCallback(async () => {
+    let f = i.useCallback(async () => {
         let {
             isUploading: e
         } = h.getState();
@@ -78,7 +78,7 @@ function x() {
                 isUploading: t,
                 isSuccess: n,
                 errorMessage: r,
-                onClick: _,
+                onClick: f,
                 title: "Upload Session Logs"
             })]
         })]

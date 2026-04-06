@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(47167),
     l = n(958340),
-    r = n(734057),
-    s = n(71393),
+    s = n(734057),
+    r = n(71393),
     a = n(576705),
     o = n(994500),
     d = n(287809),
@@ -38,11 +38,11 @@ class h {
         this.parentMessage = e, this.messageSnapshot = t, this.snapshotIndex = n
     }
     getForwardInfo() {
-        let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : r.A,
+        let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : s.A,
             t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : d.default,
             n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : o.A,
             c = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : a.A,
-            h = arguments.length > 4 && void 0 !== arguments[4] ? arguments[4] : s.A,
+            h = arguments.length > 4 && void 0 !== arguments[4] ? arguments[4] : r.A,
             p = arguments.length > 5 && void 0 !== arguments[5] ? arguments[5] : l.A,
             {
                 snapshotIndex: g,

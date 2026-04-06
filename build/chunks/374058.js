@@ -16,20 +16,20 @@ var a = n(627968),
     x = n(379078),
     p = n(704554),
     g = n(287809),
-    _ = n(957565),
-    f = n(405269),
+    f = n(957565),
+    _ = n(405269),
     v = n(967954),
     b = n(538064),
     j = n(708403),
     A = n(260880),
     C = n(303054),
     y = n(231643),
-    E = n(985018),
-    S = n(380649),
-    T = n(310086);
+    S = n(985018),
+    T = n(380649),
+    E = n(310086);
 let N = [{
     key: "event",
-    cellClassName: S.Hz,
+    cellClassName: T.Hz,
     render(e) {
         let {
             event: t
@@ -38,7 +38,7 @@ let N = [{
     }
 }, {
     key: "location",
-    cellClassName: S.QN,
+    cellClassName: T.QN,
     render(e) {
         let {
             properties: t
@@ -52,14 +52,14 @@ function I(e) {
         children: t
     } = e;
     return (0, a.jsx)(u.IpV, {
-        className: S._D,
+        className: T._D,
         children: (0, a.jsx)("dl", {
             children: t
         })
     })
 }
 
-function O(e) {
+function k(e) {
     let {
         name: t,
         children: n,
@@ -71,16 +71,16 @@ function O(e) {
             return () => clearTimeout(e)
         }
     }, [l]), (0, a.jsxs)("div", {
-        className: S.fY,
+        className: T.fY,
         children: [(0, a.jsx)("dt", {
-            className: S.m2,
+            className: T.m2,
             children: t
         }), (0, a.jsx)("dd", {
             children: n
         }), (0, a.jsx)(u.DUT, {
             tag: "span",
-            className: S.nH,
-            onClick: () => (0, _.C)(JSON.stringify(s), () => r(!0)),
+            className: T.nH,
+            onClick: () => (0, f.C)(JSON.stringify(s), () => r(!0)),
             children: l ? (0, a.jsx)(u.Uzd, {
                 color: "currentColor",
                 size: "sm"
@@ -91,7 +91,7 @@ function O(e) {
         })]
     })
 }
-let k = new Set(["client_performance_cpu", "client_performance_memory"]),
+let O = new Set(["client_performance_cpu", "client_performance_memory"]),
     R = [{
         id: "details",
         name: "Details",
@@ -110,16 +110,16 @@ let k = new Set(["client_performance_cpu", "client_performance_memory"]),
             return (0, a.jsxs)("div", {
                 "data-mtctest-ignore": "true",
                 children: [(0, a.jsxs)(h.Ay, {
-                    className: l()(T.jr, S.nZ),
+                    className: l()(E.jr, T.nZ),
                     children: [(0, a.jsx)(h.Ay.Icon, {
                         icon: u.Uy2,
                         tooltip: t
                     }), (0, a.jsxs)(h.Ay.Title, {
-                        wrapperClassName: S.qd,
+                        wrapperClassName: T.qd,
                         children: [t, (0, a.jsx)(u.DUT, {
                             tag: "span",
-                            className: S.KE,
-                            onClick: () => (0, _.C)(t),
+                            className: T.KE,
+                            onClick: () => (0, f.C)(t),
                             children: (0, a.jsx)(u.TdU, {
                                 color: "currentColor",
                                 size: "sm"
@@ -129,7 +129,7 @@ let k = new Set(["client_performance_cpu", "client_performance_memory"]),
                         icon: u.TdU,
                         tooltip: "Copy all properties",
                         onClick: () => {
-                            (0, _.C)(JSON.stringify({
+                            (0, f.C)(JSON.stringify({
                                 event: t,
                                 timestamp: i,
                                 fingerprint: s,
@@ -143,14 +143,14 @@ let k = new Set(["client_performance_cpu", "client_performance_memory"]),
                         onClick: r
                     })]
                 }), (0, a.jsxs)(j.OA, {
-                    className: S.ZK,
+                    className: T.ZK,
                     children: [(0, a.jsx)(j.mA, {
                         name: "Timestamp (local)",
                         copyValue: i.toISOString(),
                         children: (0, a.jsxs)("time", {
                             dateTime: i.toISOString(),
-                            title: (0, f.i$)(x, "LLLL"),
-                            children: ["(", o().locale(), ") ", (0, f.mk)(x)]
+                            title: (0, _.i$)(x, "LLLL"),
+                            children: ["(", o().locale(), ") ", (0, _.mk)(x)]
                         })
                     }), null != c && (0, a.jsx)(j.mA, {
                         name: "User",
@@ -167,7 +167,7 @@ let k = new Set(["client_performance_cpu", "client_performance_memory"]),
                     })]
                 }), (0, a.jsx)(I, {
                     children: Object.entries(n).map(e => {
-                        let [n, i] = e, s = k.has(n) ? ((e, t, n) => {
+                        let [n, i] = e, s = O.has(n) ? ((e, t, n) => {
                             let a = e.filter(e => e.event === t);
                             if (0 === a.length) return {
                                 average: null,
@@ -185,7 +185,7 @@ let k = new Set(["client_performance_cpu", "client_performance_memory"]),
                             }
                         })(d, t, n) : null;
                         return (0, a.jsxs)("div", {
-                            children: [(0, a.jsx)(O, {
+                            children: [(0, a.jsx)(k, {
                                 name: `${n}:`,
                                 copyValue: {
                                     [n]: i || null
@@ -193,10 +193,10 @@ let k = new Set(["client_performance_cpu", "client_performance_memory"]),
                                 children: null != i ? (0, a.jsx)("code", {
                                     children: JSON.stringify(i)
                                 }) : (0, a.jsx)("code", {
-                                    className: S.HO,
+                                    className: T.HO,
                                     children: "null"
                                 })
-                            }, n), null !== s && null !== s.average && (0, a.jsx)(O, {
+                            }, n), null !== s && null !== s.average && (0, a.jsx)(k, {
                                 name: `${n}_avg:`,
                                 copyValue: {
                                     [n]: i || null
@@ -264,40 +264,40 @@ function M() {
                 if (w[t].filter(e)) return !0;
             return !1
         }),
-        [_, f] = i.useState(void 0),
-        j = g.find(e => e.key === _),
+        [f, _] = i.useState(void 0),
+        j = g.find(e => e.key === f),
         {
             TabBar: I,
-            renderSelectedTab: O
+            renderSelectedTab: k
         } = (0, y.Ay)({
             tabs: R
         }, []);
     return (0, a.jsxs)("div", {
         ref: e,
-        className: l()(T.nd, S.nd),
+        className: l()(E.nd, T.nd),
         children: [(0, a.jsxs)("div", {
-            className: S.rh,
+            className: T.rh,
             children: [(0, a.jsx)(c.$n, {
-                className: S.Q$,
+                className: T.Q$,
                 look: c.$n.Looks.BLANK,
                 size: c.$n.Sizes.ICON,
                 onClick: b.eY,
                 children: (0, a.jsx)("span", {
-                    title: E.intl.string(E.t.VkKicb),
+                    title: S.intl.string(S.t.VkKicb),
                     children: (0, a.jsx)(u.ucK, {
                         size: "md",
                         color: "currentColor",
-                        "aria-label": E.intl.string(E.t.VkKicb)
+                        "aria-label": S.intl.string(S.t.VkKicb)
                     })
                 })
             }), (0, a.jsx)("div", {
-                className: S.Bi
+                className: T.Bi
             }), (0, a.jsx)("div", {
-                className: S.uW,
+                className: T.uW,
                 children: Object.entries(w).map(e => {
                     let [t, n] = e;
                     return (0, a.jsx)(u.DUT, {
-                        className: l()(S.pb, r.includes(t) && S.bx),
+                        className: l()(T.pb, r.includes(t) && T.bx),
                         onClick: () => {
                             o(e => e.includes(t) ? e.filter(e => e !== t) : [...e, t])
                         },
@@ -306,7 +306,7 @@ function M() {
                 })
             })]
         }), (0, a.jsx)("div", {
-            className: S.rh,
+            className: T.rh,
             children: (0, a.jsx)(u.IWV, {
                 size: "sm",
                 query: t,
@@ -317,15 +317,15 @@ function M() {
         }), (0, a.jsx)(C.A, {
             columns: N,
             data: g,
-            selectedRowKey: _,
-            onClickRow: e => f(e.key)
+            selectedRowKey: f,
+            onClickRow: e => _(e.key)
         }), null != j && (0, a.jsxs)(A.A, {
-            className: S.rf,
+            className: T.rf,
             minHeight: 100,
             initialHeight: null != e.current ? e.current.clientHeight / 2 : 300,
-            children: [(0, a.jsx)(I, {}), O({
+            children: [(0, a.jsx)(I, {}), k({
                 loggedEvent: j,
-                onClose: () => f(void 0),
+                onClose: () => _(void 0),
                 filteredEvents: g
             })]
         })]

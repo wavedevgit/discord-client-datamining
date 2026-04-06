@@ -1,6 +1,6 @@
 /** chunk id: 189244 params = (module,exports,require) **/
 n.d(t, {
-    A: () => f
+    A: () => _
 });
 var a = n(627968);
 n(64700);
@@ -17,28 +17,28 @@ var i = n(311907),
     x = n(287809),
     p = n(850730),
     g = n(385803),
-    _ = n(37760);
+    f = n(37760);
 
-function f() {
+function _() {
     (0, u.Bf)();
     let e = (0, i.bG)([x.default], () => x.default.getCurrentUser()),
         t = h.eh.useSetting(),
         n = (0, i.bG)([m.A], () => m.A.theme),
-        f = t.backgroundGradientPresetId,
+        _ = t.backgroundGradientPresetId,
         v = (0, i.bG)([d.A], () => d.A.purchases),
         b = (0, c.x9)(v),
         j = (0, c.$W)(v),
         A = e?.avatarDecoration?.skuId,
         C = e?.collectibles?.nameplate?.skuId,
         y = null != A ? b.find(e => e.skuId === A) ?? null : null,
-        E = null != C ? j.find(e => e.skuId === C) ?? null : null,
-        S = (0, i.bG)([o.A], () => o.A.getProduct(y?.skuId)),
-        T = (0, i.bG)([o.A], () => o.A.getProduct(E?.skuId)),
+        S = null != C ? j.find(e => e.skuId === C) ?? null : null,
+        T = (0, i.bG)([o.A], () => o.A.getProduct(y?.skuId)),
+        E = (0, i.bG)([o.A], () => o.A.getProduct(S?.skuId)),
         N = (0, i.bG)([r.A], () => r.A.fontSize),
         I = (0, i.bG)([r.A], () => r.A.messageGroupSpacing),
-        O = h.Xi.useSetting();
+        k = h.Xi.useSetting();
     return (0, p.DB)(), (0, a.jsxs)("div", {
-        className: _.kL,
+        className: f.kL,
         children: [(0, a.jsxs)("div", {
             children: [(0, a.jsx)(l.Heading, {
                 variant: "heading-lg/semibold",
@@ -71,13 +71,13 @@ function f() {
                 children: ["Theme: ", n]
             }), (0, a.jsxs)(l.Text, {
                 variant: "text-md/normal",
-                children: ["Client Theme ID:", " ", null != f ? g.ag[f]?.getName() : "None"]
+                children: ["Client Theme ID:", " ", null != _ ? g.ag[_]?.getName() : "None"]
             }), (0, a.jsxs)(l.Text, {
                 variant: "text-md/normal",
-                children: ["Avatar Decoration: ", S?.name ?? "None"]
+                children: ["Avatar Decoration: ", T?.name ?? "None"]
             }), (0, a.jsxs)(l.Text, {
                 variant: "text-md/normal",
-                children: ["Nameplate: ", T?.name ?? "None"]
+                children: ["Nameplate: ", E?.name ?? "None"]
             }), (0, a.jsxs)(l.Text, {
                 variant: "text-md/normal",
                 children: ["Font Size: ", N, "px"]
@@ -86,7 +86,7 @@ function f() {
                 children: ["Message Spacing: ", I]
             }), (0, a.jsxs)(l.Text, {
                 variant: "text-md/normal",
-                children: ["UI Density: ", O, " (", function(e) {
+                children: ["UI Density: ", k, " (", function(e) {
                     switch (e) {
                         case s.NS.COMPACT:
                             return "Compact";
@@ -99,7 +99,7 @@ function f() {
                         default:
                             return "Unknown"
                     }
-                }(O), ")"]
+                }(k), ")"]
             })]
         })]
     })

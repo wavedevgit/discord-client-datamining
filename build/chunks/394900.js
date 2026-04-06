@@ -5,17 +5,17 @@ n.d(t, {
 });
 var i = n(64700),
     l = n(397927),
-    r = n(770178),
-    s = n(765548);
+    s = n(770178),
+    r = n(765548);
 
 function a() {
-    let [e, t] = i.useState("lg"), [n, l] = i.useState(void 0), a = (0, s.A)(e => {
+    let [e, t] = i.useState("lg"), [n, l] = i.useState(void 0), a = (0, r.A)(e => {
         let n = e.target,
             i = e.contentRect.width;
         return (l(n.scrollHeight), null == i || i > 460) ? t("lg") : i > 280 ? t("sm") : t("xs")
     });
     return {
-        containerRef: (0, r.w)(a),
+        containerRef: (0, s.w)(a),
         size: e,
         height: n
     }
@@ -24,8 +24,8 @@ function a() {
 function o(e) {
     let {
         initiallyExpanded: t
-    } = e, [n, r] = i.useState(t), [s, a] = i.useState(!1), o = i.useCallback(() => {
-        r(e => !e), a(!0)
+    } = e, [n, s] = i.useState(t), [r, a] = i.useState(!1), o = i.useCallback(() => {
+        s(e => !e), a(!0)
     }, []), {
         expansionSpring: d
     } = (0, l.zhh)({
@@ -38,7 +38,7 @@ function o(e) {
     });
     return {
         expansionSpring: d,
-        isAnimating: s,
+        isAnimating: r,
         isExpanded: n,
         toggleExpanded: o
     }

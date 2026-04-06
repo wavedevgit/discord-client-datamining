@@ -19,7 +19,7 @@ function u(e) {
         handleOpenGameShop: g,
         handleAddNitroToWishlist: m,
         socialLayerStorefrontApplicationIds: x
-    } = e, p = l.useRef(null), [f, h] = l.useState(!1), _ = function(e) {
+    } = e, f = l.useRef(null), [p, h] = l.useState(!1), _ = function(e) {
         let {
             applications: t,
             handleOpenGameShop: n
@@ -90,7 +90,7 @@ function u(e) {
         })]
     }), [u, g, m, _]);
     return (0, i.jsx)(a.YNO, {
-        targetElementRef: p,
+        targetElementRef: f,
         position: "bottom",
         onRequestOpen: () => h(!0),
         onRequestClose: () => h(!1),
@@ -108,10 +108,10 @@ function u(e) {
             })
         },
         children: e => (0, i.jsx)(a.Button, {
-            buttonRef: p,
+            buttonRef: f,
             variant: n,
             size: "sm",
-            icon: f ? a.PGe : a.abt,
+            icon: p ? a.PGe : a.abt,
             iconPosition: "end",
             text: t,
             ...e

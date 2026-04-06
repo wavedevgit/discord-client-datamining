@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     l = n(64700),
-    r = n(503698),
-    s = n.n(r),
+    s = n(503698),
+    r = n.n(s),
     a = n(397927),
     o = n(538451),
     d = n(562153),
@@ -16,16 +16,16 @@ function m(e) {
     let {
         guildId: t,
         channelId: n,
-        users: r,
-        ...s
+        users: s,
+        ...r
     } = e, o = l.useCallback(e => (0, i.jsx)(_, {
         users: e,
         guildId: t,
         channelId: n
     }), [t, n]);
     return (0, i.jsx)(a.YNO, {
-        renderPopout: () => o(r),
-        ...s
+        renderPopout: () => o(s),
+        ...r
     })
 }
 
@@ -36,7 +36,7 @@ function _(e) {
         channelId: l
     } = e;
     return (0, i.jsx)(a.HOs, {
-        className: s()(u.popover, c.o),
+        className: r()(u.popover, c.o),
         style: {
             "--custom-popover-width": "200px"
         },

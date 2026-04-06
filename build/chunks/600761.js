@@ -22,17 +22,17 @@ function s(e) {
         item: e.getItem()
     }), []), {
         isDragging: x,
-        clientOffset: p,
-        item: f
+        clientOffset: f,
+        item: p
     } = (0, l.V)(m);
     (0, i.useEffect)(() => {
-        g.current = p
-    }, [p]);
+        g.current = f
+    }, [f]);
     let h = (0, a.VUy)();
     (0, i.useEffect)(() => {
         let e = t.current;
         if (null == e) return;
-        if (!(!0 === x && f?.itemType === n && !h)) {
+        if (!(!0 === x && p?.itemType === n && !h)) {
             null !== c.current && cancelAnimationFrame(c.current), c.current = null, e.style.overflowAnchor = "auto", e.style.overscrollBehavior = "auto", d.current = 0;
             return
         }
@@ -52,13 +52,13 @@ function s(e) {
             let {
                 top: a,
                 bottom: m
-            } = u.current, x = i.y, p = x - a, f = m - x, h = 0;
-            if (p >= 0 && p < s ? h = -r * Math.pow(1 - p / s, o) : f >= 0 && f < s && (h = r * Math.pow(1 - f / s, o)), 0 !== h) {
+            } = u.current, x = i.y, f = x - a, p = m - x, h = 0;
+            if (f >= 0 && f < s ? h = -r * Math.pow(1 - f / s, o) : p >= 0 && p < s && (h = r * Math.pow(1 - p / s, o)), 0 !== h) {
                 let t = h * l;
                 Math.abs(t) >= 1 && (e.scrollTop += Math.round(t))
             }
         }), () => {
             null !== c.current && cancelAnimationFrame(c.current), c.current = null, d.current = 0, null != e && (e.style.overflowAnchor = "auto", e.style.overscrollBehavior = "auto")
         }
-    }, [t, x, f?.itemType, n, s, r, o, h])
+    }, [t, x, p?.itemType, n, s, r, o, h])
 }

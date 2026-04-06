@@ -14,8 +14,8 @@ var i = n(627968),
     g = n(701613),
     m = n(587895),
     x = n(429913),
-    p = n(403362),
-    f = n(635344),
+    f = n(403362),
+    p = n(635344),
     h = n(735321),
     _ = n(606758),
     A = n(492280),
@@ -27,28 +27,28 @@ let T = {
     [r.x.FAVORITE_GAMES]: {
         placeholder: () => ({
             variant: "details",
-            applicationId: f.n.LEAGUE_OF_LEGENDS
+            applicationId: p.n.LEAGUE_OF_LEGENDS
         }),
         getAriaLabel: () => v.intl.string(v.t.xJtdIm)
     },
     [r.x.CURRENT_GAMES]: {
         placeholder: () => ({
             variant: "details",
-            applicationId: f.n.VALORANT
+            applicationId: p.n.VALORANT
         }),
         getAriaLabel: () => v.intl.string(v.t.Ae8tRi)
     },
     [r.x.PLAYED_GAMES]: {
         placeholder: () => ({
             variant: "grid",
-            applicationIds: [f.n.PEAK, f.n.BATTLEFIELD_6, f.n.REPO, f.n.BALDURS_GATE_3]
+            applicationIds: [p.n.PEAK, p.n.BATTLEFIELD_6, p.n.REPO, p.n.BALDURS_GATE_3]
         }),
         getAriaLabel: () => v.intl.string(v.t["pBR+4j"])
     },
     [r.x.WANT_TO_PLAY_GAMES]: {
         placeholder: () => ({
             variant: "grid",
-            applicationIds: [f.n.MARVEL_RIVALS, f.n.WORLD_OF_WARCRAFT, f.n.RUST, f.n.SILKSONG]
+            applicationIds: [p.n.MARVEL_RIVALS, p.n.WORLD_OF_WARCRAFT, p.n.RUST, p.n.SILKSONG]
         }),
         getAriaLabel: () => v.intl.string(v.t.NtoBi1)
     },
@@ -69,7 +69,7 @@ function b(e) {
             widget: n,
             onAddWidget: a,
             size: m = "default",
-            loading: f = !1,
+            loading: p = !1,
             trackUserProfileEditAction: b
         } = e,
         {
@@ -93,7 +93,7 @@ function b(e) {
         }),
         G = y && !w && O && D.enabled,
         M = l.useCallback(() => {
-            if (!f) {
+            if (!p) {
                 if (G) {
                     D.autoAdd && ((0, h.Y5)(n), b({
                         action: "WIDGET_ADDED",
@@ -107,18 +107,18 @@ function b(e) {
                     ...n.getProfileEditAnalyticsOptions()
                 }), (0, _.XA)(j.jM.WIDGET_ADDED), a?.()
             }
-        }, [f, G, D, n, b, a, L, P]),
+        }, [p, G, D, n, b, a, L, P]),
         U = N?.(n),
         F = G ? o.qYV : o.U1e;
     return (0, i.jsxs)("div", {
         className: E.LG,
         children: [(0, i.jsxs)(o.DUT, {
-            className: s()(E.PH, "small" === m && E.PG, f && E.Lq),
+            className: s()(E.PH, "small" === m && E.PG, p && E.Lq),
             onClick: M,
             "aria-label": G && null != k ? v.intl.formatToPlainString(v.t.ATS0FK, {
                 applicationName: k.name
             }) : S(n),
-            "aria-busy": f,
+            "aria-busy": p,
             children: [(() => {
                 let e = C(n);
                 switch (e.variant) {
@@ -140,7 +140,7 @@ function b(e) {
                             size: m
                         });
                     default:
-                        return (0, p.xb)(e)
+                        return (0, f.xb)(e)
                 }
             })(), (0, i.jsxs)("div", {
                 className: E.Lw,

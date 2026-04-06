@@ -1,7 +1,7 @@
 /** chunk id: 451395 params = (module,exports,require) **/
 n.d(t, {
     gY: () => m,
-    jV: () => p,
+    jV: () => f,
     mG: () => x
 });
 var i = n(627968),
@@ -27,12 +27,12 @@ function m(e) {
         onReorder: g,
         onEnd: m,
         disableDefaultPreview: x = !0
-    } = e, p = `${d}_${a}`, f = l.useCallback((e, t) => {
+    } = e, f = `${d}_${a}`, p = l.useCallback((e, t) => {
         g?.(e, t)
     }, [g]), [{
         isDragging: h
     }, _, A] = (0, r.i)({
-        type: p,
+        type: f,
         item: {
             id: s,
             index: i,
@@ -52,10 +52,10 @@ function m(e) {
     let [{
         dragSourcePosition: I
     }, j] = (0, o.H)({
-        accept: p,
+        accept: f,
         drop: e => {
             let t = e.index;
-            t !== i && (f(t, i), e.index = i)
+            t !== i && (p(t, i), e.index = i)
         },
         collect: e => {
             let t = e.getItem(),
@@ -86,13 +86,13 @@ let x = l.memo(function(e) {
         ...u
     } = e, g = l.useRef(null), {
         isDragging: x,
-        dragSourcePosition: p
+        dragSourcePosition: f
     } = m({
         dragRef: g,
         dropRef: g,
         index: t,
         ...u
-    }), f = null != p, h = f && t < p, _ = f && t > p;
+    }), p = null != f, h = p && t < f, _ = p && t > f;
     return (0, i.jsx)("div", {
         ref: g,
         className: s()(n, x && a, h && r, _ && o),
@@ -101,7 +101,7 @@ let x = l.memo(function(e) {
     })
 });
 
-function p(e) {
+function f(e) {
     let {
         buttonRef: t,
         "aria-label": n,

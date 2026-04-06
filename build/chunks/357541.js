@@ -1,6 +1,6 @@
 /** chunk id: 357541 params = (module,exports,require) **/
 n.d(t, {
-    A: () => p
+    A: () => f
 });
 var i = n(627968),
     l = n(64700),
@@ -15,21 +15,21 @@ var i = n(627968),
     m = n(49999),
     x = n(985018);
 
-function p(e) {
+function f(e) {
     let {
         user: t,
         application: n,
-        onDismiss: p
+        onDismiss: f
     } = e, {
-        trackUserProfileEditAction: f
+        trackUserProfileEditAction: p
     } = (0, r.NJ)(), h = l.useMemo(() => new o.R({
         applicationId: n.id
     }), [n.id]), _ = l.useCallback(() => {
-        null != h && ((0, c.Y5)(h), f({
+        null != h && ((0, c.Y5)(h), p({
             action: "WIDGET_ADDED",
             ...h.getProfileEditAnalyticsOptions()
         }), (0, d.XA)(g.jM.WIDGET_ADDED))
-    }, [h, f]);
+    }, [h, p]);
     return (0, i.jsx)(u.A, {
         user: t,
         widget: h,
@@ -52,7 +52,7 @@ function p(e) {
                         icon: s.PGe,
                         "aria-label": x.intl.string(x.t.WAI6xu),
                         onClick: () => {
-                            p(m.i.USER_DISMISS)
+                            f(m.i.USER_DISMISS)
                         }
                     })
                 }), (0, i.jsx)(a.m, {
@@ -66,7 +66,7 @@ function p(e) {
                             applicationName: n.name
                         }),
                         onClick: () => {
-                            p(m.i.TAKE_ACTION), _()
+                            f(m.i.TAKE_ACTION), _()
                         }
                     })
                 })]

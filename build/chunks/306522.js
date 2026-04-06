@@ -8,11 +8,11 @@ n.d(t, {
 });
 var i = n(562465),
     l = n(198982),
-    r = n(371794),
-    s = n(652215);
+    s = n(371794),
+    r = n(652215);
 let a = async (e, t, n) => {
     let {
-        priceTier: r,
+        priceTier: s,
         imageName: a,
         createNewRole: o,
         unlinkRole: d,
@@ -20,11 +20,11 @@ let a = async (e, t, n) => {
     } = n;
     try {
         return (await i.Bo.patch({
-            url: s.Rsh.GUILD_PRODUCT_LISTINGS(e, t),
+            url: r.Rsh.GUILD_PRODUCT_LISTINGS(e, t),
             body: {
                 ...c,
                 image_name: a,
-                price_tier: r,
+                price_tier: s,
                 create_new_role: o,
                 unlink_role: d
             },
@@ -36,7 +36,7 @@ let a = async (e, t, n) => {
 }, o = async (e, t) => {
     try {
         await i.Bo.del({
-            url: s.Rsh.GUILD_PRODUCT_LISTINGS(e, t),
+            url: r.Rsh.GUILD_PRODUCT_LISTINGS(e, t),
             rejectWithError: !1
         })
     } catch (e) {
@@ -44,8 +44,8 @@ let a = async (e, t, n) => {
     }
 }, d = async e => {
     try {
-        return (await (0, r.aP)({
-            url: s.Rsh.GUILD_PRODUCT_LISTINGS(e),
+        return (await (0, s.aP)({
+            url: r.Rsh.GUILD_PRODUCT_LISTINGS(e),
             rejectWithError: !1
         })).body.listings
     } catch (e) {
@@ -53,8 +53,8 @@ let a = async (e, t, n) => {
     }
 }, c = async (e, t) => {
     try {
-        return (await (0, r.aP)({
-            url: s.Rsh.GUILD_PRODUCT_LISTINGS(e, t),
+        return (await (0, s.aP)({
+            url: r.Rsh.GUILD_PRODUCT_LISTINGS(e, t),
             rejectWithError: !1
         })).body
     } catch (e) {
@@ -64,11 +64,11 @@ let a = async (e, t, n) => {
     let {
         guildId: t,
         productId: n,
-        attachmentId: r
+        attachmentId: s
     } = e;
     try {
         return (await i.Bo.post({
-            url: s.Rsh.GUILD_PRODUCT_ATTACHMENT_DOWNLOAD(t, n, r),
+            url: r.Rsh.GUILD_PRODUCT_ATTACHMENT_DOWNLOAD(t, n, s),
             rejectWithError: !1
         })).body
     } catch (e) {

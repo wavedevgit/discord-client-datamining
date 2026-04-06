@@ -35,27 +35,27 @@ let p = e => {
             m = (0, s.bG)([d.A], () => d.A.lastSuccessfulFetch),
             g = t.size > 0 && n.size > 0 && null != m,
             {
-                isFetching: _,
-                categories: f
+                isFetching: f,
+                categories: _
             } = (0, u.Ay)({
                 logPerf: !1,
                 stalePurchasesOK: !0,
                 noOp: g
             }),
-            v = g ? t : f,
-            b = g || !_ && v.size > 0,
+            v = g ? t : _,
+            b = g || !f && v.size > 0,
             [j, A] = i.useState(""),
             [C, y] = i.useState(null),
-            [E, S] = i.useState(null);
+            [S, T] = i.useState(null);
         return (i.useEffect(() => {
             if ("" === j.trim() || !b) {
-                y(null), S(null);
+                y(null), T(null);
                 return
             }
             let e = d.A.getProduct(j),
                 t = d.A.getCategoryForProduct(j);
-            null != e && null != t ? (y(e), S(t)) : (y(null), S(null))
-        }, [j, b]), _) ? (0, a.jsx)(l.Text, {
+            null != e && null != t ? (y(e), T(t)) : (y(null), T(null))
+        }, [j, b]), f) ? (0, a.jsx)(l.Text, {
             variant: "text-md/normal",
             children: "Loading categories and collectibles..."
         }) : null == e ? (0, a.jsx)(l.Text, {
@@ -97,7 +97,7 @@ let p = e => {
                 children: [(0, a.jsx)(l.Heading, {
                     variant: "heading-lg/semibold",
                     children: "Product Preview"
-                }), null != C && null != E ? (0, a.jsxs)("div", {
+                }), null != C && null != S ? (0, a.jsxs)("div", {
                     className: x.i1,
                     children: [(0, a.jsx)(p, {
                         skuId: C.skuId
