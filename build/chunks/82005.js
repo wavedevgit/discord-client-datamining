@@ -5,17 +5,17 @@ n.d(t, {
 var i = n(311907);
 n(63995), n(113783), n(69407);
 var a = n(446600),
-    l = n(624265);
+    r = n(624265);
 n(616356);
-var r = n(734057);
+var l = n(734057);
 n(576705), n(607567);
 var s = n(473019);
 n(539446);
 var o = n(508654);
 
 function d(e) {
-    let t = (0, l.Ay)(e),
-        n = r.A.getChannel(t[0]?.id),
+    let t = (0, r.Ay)(e),
+        n = l.A.getChannel(t[0]?.id),
         d = (0, i.bG)([a.A], () => a.A.getStageInstanceByChannel(n?.id), [n]),
         c = (0, o.BP)(e),
         {

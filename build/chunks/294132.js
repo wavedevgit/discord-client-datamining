@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var a = n(397927),
-    l = n(956793),
-    r = n(401843),
+    r = n(956793),
+    l = n(401843),
     s = n(427262),
     o = n(985018);
 
@@ -22,7 +22,7 @@ function d(e) {
         return (0, i.jsx)(a.Drp, {
             id: `spectate-${t.ownerId}`,
             action: () => {
-                l.default.selectVoiceChannel(t.channelId), (0, r.Nl)(t)
+                r.default.selectVoiceChannel(t.channelId), (0, l.Nl)(t)
             },
             label: o.intl.formatToPlainString(o.t.m09d0T, {
                 streamerName: s.Ay.getName(n)

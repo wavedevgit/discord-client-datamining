@@ -11,8 +11,8 @@ var i = n(627968),
     d = n(529200),
     c = n(309010),
     u = n(967198),
-    m = n(954571),
-    _ = n(652215),
+    _ = n(954571),
+    m = n(652215),
     h = n(985018),
     p = n(366228);
 
@@ -22,7 +22,7 @@ function g(e) {
         channel: n,
         message: g
     } = e, A = u.A.getGuildId(), x = c.A.getChannelId(A), f = l.useCallback(() => {
-        m.default.track(_.HAw.CHANNEL_LINK_PREVIEW_JOINED, {
+        _.default.track(m.HAw.CHANNEL_LINK_PREVIEW_JOINED, {
             author_id: g.author?.id,
             link_guild_id: t.id,
             link_channel_id: n.id,

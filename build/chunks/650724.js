@@ -11,8 +11,8 @@ var i = n(64700),
     d = n(696451),
     c = n(71393),
     u = n(967198),
-    m = n(287809),
-    _ = n(36491),
+    _ = n(287809),
+    m = n(36491),
     h = n(752755),
     p = n(461715),
     g = n(652215);
@@ -32,11 +32,11 @@ function A(e, t) {
             user: v,
             selectedGuildId: b,
             canAccess: T
-        } = (0, l.cf)([h.A, c.A, o.A, m.default, u.A], () => {
+        } = (0, l.cf)([h.A, c.A, o.A, _.default, u.A], () => {
             let e = h.A.getMediaPostEmbed(n?.threadId)?.media,
                 t = c.A.getGuild(n?.guildId),
                 i = o.A.getChannel(n?.channelId),
-                l = m.default.getUser(e?.author_id),
+                l = _.default.getUser(e?.author_id),
                 s = u.A.getGuildId(),
                 a = null != i && (0, r.nc)(i);
             return {
@@ -63,6 +63,6 @@ function A(e, t) {
             }
         }, [C, E, I, v, b, T]);
     return i.useEffect(() => {
-        n?.threadId != null && (h.A.getEmbedFetchState(n.threadId) !== h.e.NOT_FETCHED || A && !1 === x || !A && f || (0, _.O0)(n?.threadId))
+        n?.threadId != null && (h.A.getEmbedFetchState(n.threadId) !== h.e.NOT_FETCHED || A && !1 === x || !A && f || (0, m.O0)(n?.threadId))
     }, [n, A, x, f]), N
 }

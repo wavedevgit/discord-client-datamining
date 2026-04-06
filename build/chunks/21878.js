@@ -1,7 +1,7 @@
 /** chunk id: 21878 params = (module,exports,require) **/
 n.d(t, {
     A: () => h,
-    M: () => m
+    M: () => _
 });
 var i = n(627968),
     l = n(64700),
@@ -13,12 +13,12 @@ var i = n(627968),
     c = n(951727);
 let u = l.createContext(void 0);
 
-function m(e) {
+function _(e) {
     let t = l.useContext(u) ?? e;
     return r()(null != t, "Using PollReferenceMessageContext without a provider (or a fallback)"), t
 }
 
-function _(e) {
+function m(e) {
     let {
         message: t,
         children: n
@@ -39,7 +39,7 @@ function h(e) {
         message: t,
         children: n
     } = e;
-    return (0, c.Ls)(t) ? n : (0, i.jsx)(_, {
+    return (0, c.Ls)(t) ? n : (0, i.jsx)(m, {
         message: t,
         children: n
     })

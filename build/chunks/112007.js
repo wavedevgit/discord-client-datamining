@@ -1,169 +1,179 @@
 /** chunk id: 112007 params = (module,exports,require) **/
 n.d(t, {
-    A: () => N
+    A: () => S
 }), n(938796);
 var i = n(627968),
     l = n(64700),
-    s = n(821418),
-    r = n(665260),
-    a = n(311907),
-    o = n(990078),
-    d = n(397927),
-    c = n(846293),
-    u = n(793574),
+    s = n(110259),
+    r = n(821418),
+    a = n(665260),
+    o = n(311907),
+    d = n(990078),
+    c = n(397927),
+    u = n(846293),
+    _ = n(793574),
     m = n(688810),
-    _ = n(290331),
-    h = n(517905),
-    p = n(986268),
-    g = n(21599),
-    A = n(529200),
-    x = n(95701),
-    f = n(696451),
-    C = n(860689),
-    E = n(505417),
-    I = n(168428),
-    v = n(652215),
-    b = n(985018),
-    T = n(366228);
+    h = n(139286),
+    p = n(290331),
+    g = n(517905),
+    A = n(986268),
+    x = n(21599),
+    f = n(529200),
+    C = n(95701),
+    E = n(696451),
+    I = n(860689),
+    v = n(505417),
+    b = n(168428),
+    T = n(652215),
+    N = n(985018),
+    y = n(366228);
 
-function N(e) {
-    let t, N, S, {
-            onTransitionToInviteChannel: y,
-            onAcceptInstantInvite: j,
-            guild: L,
-            invite: R,
-            message: P,
-            currentUserId: D
+function S(e) {
+    let t, S, j, {
+            onTransitionToInviteChannel: L,
+            onAcceptInstantInvite: R,
+            guild: P,
+            invite: D,
+            message: M,
+            currentUserId: w
         } = e,
-        M = D === P.author.id,
+        k = w === M.author.id,
         {
-            channel: w,
-            approximate_member_count: O,
-            approximate_presence_count: k
-        } = R,
-        U = R.state === v.elq.ACCEPTING,
-        B = null != w ? (0, x.OY)(w) : null,
-        G = null != L,
-        F = null != B,
-        H = null != B && B.isGuildStageVoice(),
-        V = (0, r.Lt)(R.flags ?? 0, s.Q.IS_GUEST_INVITE),
-        q = B?.isGuildVoiceOrThread() ?? !1,
-        W = L?.features.has(v.GuildFeatures.HUB) ?? !1,
-        Y = L?.id,
+            channel: O,
+            approximate_member_count: U,
+            approximate_presence_count: B
+        } = D,
+        G = D.state === T.elq.ACCEPTING,
+        F = null != O ? (0, C.OY)(O) : null,
+        H = null != P,
+        V = null != F,
+        q = null != F && F.isGuildStageVoice(),
+        W = (0, a.Lt)(D.flags ?? 0, r.Q.IS_GUEST_INVITE),
+        Y = F?.isGuildVoiceOrThread() ?? !1,
+        z = P?.features.has(T.GuildFeatures.HUB) ?? !1,
+        Q = P?.id,
         {
-            analyticsLocations: z
-        } = (0, m.Ay)(u.A.INVITE_EMBED),
-        [Q, K] = l.useState(!1),
-        J = l.useCallback(() => K(!1), []),
-        X = l.useRef(null),
-        Z = (0, a.bG)([f.Ay], () => _.A.canAcceptInvite([f.Ay], R)),
-        $ = l.useCallback(() => {
-            K(!0), (0, c.Pq)(Y, "show profile", z)
-        }, [Y, z]),
-        ee = l.useCallback(() => {
-            let e = "noop";
-            G ? (y(), e = "transition") : (j(), e = "accept"), (0, c.he)({
-                invite: R,
-                action: e,
-                inviter_id: P.author.id,
-                invite_message_id: P.id,
-                invite_instance_id: (0, g._U)(R.code, P.id)
-            }, z)
-        }, [R, P, z, G, y, j]);
-    if (null == L) {
-        if (null == R.guild) return (0, i.jsx)(I.A, {});
-        (L = C.DY(R.guild)).premiumTier = R.guild.premium_tier ?? v.TVA.NONE
+            analyticsLocations: K
+        } = (0, m.Ay)(_.A.INVITE_EMBED);
+    (0, h.A)({
+        name: s.ImpressionNames.INVITE_EMBED,
+        type: s.ImpressionTypes.VIEW,
+        properties: {
+            invite_code: D.code,
+            invite_guild_id: D.guild?.id,
+            invite_channel_id: O?.id,
+            invite_instance_id: (0, x._U)(D.code, M.id),
+            invite_channel_type: O?.type,
+            embed_type: "guild_invite",
+            location_stack: K
+        }
+    });
+    let [J, X] = l.useState(!1), Z = l.useCallback(() => X(!1), []), $ = l.useRef(null), ee = (0, o.bG)([E.Ay], () => p.A.canAcceptInvite([E.Ay], D)), et = l.useCallback(() => {
+        X(!0), (0, u.Pq)(Q, "show profile", K)
+    }, [Q, K]), en = l.useCallback(() => {
+        let e = "noop";
+        H ? (L(), e = "transition") : (R(), e = "accept"), (0, u.he)({
+            invite: D,
+            action: e,
+            inviter_id: M.author.id,
+            invite_message_id: M.id,
+            invite_instance_id: (0, x._U)(D.code, M.id)
+        }, K)
+    }, [D, M, K, H, L, R]);
+    if (null == P) {
+        if (null == D.guild) return (0, i.jsx)(b.A, {});
+        (P = I.DY(D.guild)).premiumTier = D.guild.premium_tier ?? T.TVA.NONE
     }
-    let et = (0, E.l)({
-        isVoiceChannel: q,
-        isOwnInvite: M,
-        isGuest: V,
-        isHubGuild: W,
-        isStage: H,
+    let ei = (0, v.l)({
+        isVoiceChannel: Y,
+        isOwnInvite: k,
+        isGuest: W,
+        isHubGuild: z,
+        isStage: q,
         isStream: !1
     });
-    return N = (0, i.jsxs)("span", {
-        className: T.FA,
-        children: [(0, i.jsx)(h.A, {
-            guildId: L.id,
-            name: L.name,
-            shouldShow: Q,
-            onRequestClose: J,
-            targetElementRef: X,
-            children: () => (0, i.jsx)(A.A.GuildName, {
-                guild: L,
-                ref: X
+    return S = (0, i.jsxs)("span", {
+        className: y.FA,
+        children: [(0, i.jsx)(g.A, {
+            guildId: P.id,
+            name: P.name,
+            shouldShow: J,
+            onRequestClose: Z,
+            targetElementRef: $,
+            children: () => (0, i.jsx)(f.A.GuildName, {
+                guild: P,
+                ref: $
             })
         }), (0, i.jsx)("span", {
-            className: T.E3,
-            children: (0, i.jsx)(p.A, {
-                guild: L,
+            className: y.E3,
+            children: (0, i.jsx)(A.A, {
+                guild: P,
                 isBannerVisible: !1,
                 disableBoostClick: !0
             })
         })]
-    }), V && (S = (0, i.jsx)(o.m, {
+    }), W && (j = (0, i.jsx)(d.m, {
         asContainer: !0,
-        text: b.intl.string(b.t["/FeTK6"]),
-        children: (0, i.jsx)(d.mir, {
+        text: N.intl.string(N.t["/FeTK6"]),
+        children: (0, i.jsx)(c.mir, {
             size: "md",
             color: "currentColor",
-            className: T.G
+            className: y.G
         })
-    })), q ? (N = (0, i.jsx)(A.A.Channel, {
-        channel: B
+    })), Y ? (S = (0, i.jsx)(f.A.Channel, {
+        channel: F
     }), t = (0, i.jsxs)("span", {
-        className: T.FA,
-        children: [b.intl.format(b.t["2wimj5"], {
-            guildName: L.name
+        className: y.FA,
+        children: [N.intl.format(N.t["2wimj5"], {
+            guildName: P.name
         }), (0, i.jsx)("span", {
-            className: T.E3,
-            children: (0, i.jsx)(p.A, {
-                guild: L,
+            className: y.E3,
+            children: (0, i.jsx)(A.A, {
+                guild: P,
                 isBannerVisible: !1
             })
         })]
-    })) : null != O && O >= 5 || null != k && k > 0 ? t = (0, i.jsx)(A.A.Data, {
-        members: O,
-        membersOnline: k
-    }) : F && (t = (0, i.jsx)(A.A.Channel, {
-        channel: B,
-        guild: L
-    })), (0, i.jsxs)(A.A, {
-        children: [(0, i.jsx)(A.A.GuildSplash, {
-            guild: L
-        }), (0, i.jsx)(A.A.Header, {
-            text: et,
-            extra: S
-        }), (0, i.jsxs)(A.A.Body, {
+    })) : null != U && U >= 5 || null != B && B > 0 ? t = (0, i.jsx)(f.A.Data, {
+        members: U,
+        membersOnline: B
+    }) : V && (t = (0, i.jsx)(f.A.Channel, {
+        channel: F,
+        guild: P
+    })), (0, i.jsxs)(f.A, {
+        children: [(0, i.jsx)(f.A.GuildSplash, {
+            guild: P
+        }), (0, i.jsx)(f.A.Header, {
+            text: ei,
+            extra: j
+        }), (0, i.jsxs)(f.A.Body, {
             children: [(0, i.jsxs)("div", {
-                className: T.iH,
-                children: [(0, i.jsx)(A.A.Icon, {
-                    guild: L
-                }), (0, i.jsx)(A.A.Info, {
-                    title: N,
-                    onClick: $,
+                className: y.iH,
+                children: [(0, i.jsx)(f.A.Icon, {
+                    guild: P
+                }), (0, i.jsx)(f.A.Info, {
+                    title: S,
+                    onClick: et,
                     children: t
                 })]
             }), (0, i.jsx)("div", {
-                className: T.UD,
-                children: (0, i.jsx)(d.Button, {
-                    onClick: ee,
-                    loading: U,
+                className: y.UD,
+                children: (0, i.jsx)(c.Button, {
+                    onClick: en,
+                    loading: G,
                     variant: "active",
-                    fullWidth: q,
-                    disabled: !Z,
-                    text: q ? H ? b.intl.string(b.t["7vb2cc"]) : b.intl.string(b.t.gpqgah) : G ? b.intl.string(b.t.cEnaWx) : b.intl.string(b.t.XpeFYr)
+                    fullWidth: Y,
+                    disabled: !ee,
+                    text: Y ? q ? N.intl.string(N.t["7vb2cc"]) : N.intl.string(N.t.gpqgah) : H ? N.intl.string(N.t.cEnaWx) : N.intl.string(N.t.XpeFYr)
                 })
             })]
-        }), L.features.has(v.GuildFeatures.HUB) && (0, i.jsxs)(i.Fragment, {
+        }), P.features.has(T.GuildFeatures.HUB) && (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)("div", {
-                className: T.me
-            }), (0, i.jsx)(d.Text, {
+                className: y.me
+            }), (0, i.jsx)(c.Text, {
                 variant: "text-sm/normal",
                 color: "text-default",
-                children: b.intl.format(b.t["/o1IfA"], {
-                    onClick: () => (0, d.mMO)(async () => {
+                children: N.intl.format(N.t["/o1IfA"], {
+                    onClick: () => (0, c.mMO)(async () => {
                         let {
                             default: e
                         } = await n.e("98363").then(n.bind(n, 780086));

@@ -4,8 +4,8 @@ n.d(t, {
 }), n(321073);
 var i = n(627968),
     a = n(64700),
-    l = n(687498),
-    r = n(942381),
+    r = n(687498),
+    l = n(942381),
     s = n(311907),
     o = n(554146),
     d = n(451988),
@@ -58,8 +58,8 @@ var i = n(627968),
     en = n(487401),
     ei = n(952790),
     ea = n(718996),
-    el = n(64084),
-    er = n(66933),
+    er = n(64084),
+    el = n(66933),
     es = n(846930),
     eo = n(652215),
     ed = n(946960),
@@ -95,7 +95,7 @@ class em extends a.PureComponent {
     }
     showTimeout = new d.Ep;
     state = {
-        controller: new l.Controller({
+        controller: new r.Controller({
             value: 1,
             immediate: !0
         }),
@@ -241,7 +241,7 @@ class em extends a.PureComponent {
             showGuildHeaderTutorial: n,
             anyLayerOpen: a
         } = this.props, {
-            shouldShowSubscribeTooltip: l
+            shouldShowSubscribeTooltip: r
         } = this.state;
         return n ? (0, i.jsx)("div", {
             onClick: t => e ? null : t.stopPropagation(),
@@ -262,7 +262,7 @@ class em extends a.PureComponent {
                     align: "center"
                 }
             })]
-        }) : a || e ? this.renderGuildHeaderDropdownButton(e) : l ? (0, i.jsxs)(i.Fragment, {
+        }) : a || e ? this.renderGuildHeaderDropdownButton(e) : r ? (0, i.jsxs)(i.Fragment, {
             children: [this.renderGuildHeaderDropdownButton(e), (0, i.jsx)(c.AM, {
                 targetElementRef: this.guildHeaderDropdownButtonRef,
                 title: eu.intl.string(eu.t.Q3qa4x),
@@ -280,8 +280,8 @@ class em extends a.PureComponent {
             guild: t,
             isHeaderPopoutOpen: n,
             showGuildHeaderTutorial: a,
-            showGuildTemplateDirtyTooltip: l,
-            isGuildHeaderDismissibleTooltipShown: r,
+            showGuildTemplateDirtyTooltip: r,
+            isGuildHeaderDismissibleTooltipShown: l,
             headerAnalyticsLocations: s
         } = this.props, {
             controller: o,
@@ -289,7 +289,7 @@ class em extends a.PureComponent {
             bannerVisible: c,
             bannerVisibleHeight: A,
             communityInfoVisible: h
-        } = this.state, _ = a || l || r;
+        } = this.state, _ = a || r || l;
         return null == t ? null : (0, i.jsx)(p.f5, {
             value: s,
             children: (0, i.jsx)(u.QCx, {
@@ -305,8 +305,8 @@ class em extends a.PureComponent {
                 spacing: 4,
                 children: a => {
                     let {
-                        onClick: l,
-                        ...r
+                        onClick: r,
+                        ...l
                     } = a;
                     return (0, i.jsx)(ei.Ay, {
                         ref: this.guildHeaderRef,
@@ -321,7 +321,7 @@ class em extends a.PureComponent {
                         onContextMenu: this.handleHeaderContextMenu,
                         disableBannerAnimation: _,
                         animationOverlayHeight: A,
-                        ...r,
+                        ...l,
                         children: this.renderGuildHeaderNotices(n)
                     })
                 }
@@ -340,14 +340,14 @@ class em extends a.PureComponent {
             communityInfoVisible: n,
             bannerVisible: i,
             bannerVisibleHeight: a,
-            controller: l
+            controller: r
         } = this.state;
         (e >= 88 && i || e < 88 && !i) && (i = !i), (e >= 88 && !t || e < 88 && t) && (t = !t), a = Math.max(88 - e, 0), n = i, (t !== this.state.renderBanner || i !== this.state.bannerVisible || a !== this.state.bannerVisibleHeight || n !== this.state.communityInfoVisible) && this.setState({
             renderBanner: t,
             bannerVisible: i,
             bannerVisibleHeight: a,
             communityInfoVisible: n
-        }), l.update({
+        }), r.update({
             value: Math.min(1, Math.max(0, 1 - e / 88)),
             immediate: !0
         }).start()
@@ -376,7 +376,7 @@ class em extends a.PureComponent {
             guild: t,
             selectedChannel: n,
             enableStudyGroup: a,
-            ...l
+            ...r
         } = this.props;
         if (e || null == t) return (0, i.jsx)(es.A, {
             withBannerPadding: null != t && null != this.getGuildBannerHash()
@@ -392,7 +392,7 @@ class em extends a.PureComponent {
             let e = (0, C.ai)(t.id) ? en.T : en.B;
             return (0, i.jsx)(e, {
                 guild: t,
-                ...l,
+                ...r,
                 guildBanner: this.getGuildBannerHash(),
                 hasGuildSubheader: this.state.hasGuildSubheader,
                 onScroll: null != t && (null != this.getGuildBannerHash() || (0, et.A)(t)) ? this.pinBannerOrGuildInfo : null
@@ -409,7 +409,7 @@ class em extends a.PureComponent {
             "aria-label": eu.intl.formatToPlainString(eu.t.nj5gAZ, {
                 guildName: t ?? ""
             }),
-            children: [null != e && this.renderGuildHeader(this.state.hasGuildSubheader), null != e && (0, i.jsx)(el.A, {
+            children: [null != e && this.renderGuildHeader(this.state.hasGuildSubheader), null != e && (0, i.jsx)(er.A, {
                 guild: e,
                 setHasSubheader: e => this.setState({
                     hasGuildSubheader: e
@@ -423,7 +423,7 @@ function ep(e) {
     let {
         guildId: t,
         hideSelectedChannel: n,
-        selectedChannelId: l
+        selectedChannelId: r
     } = e, d = (0, N.$)("favorite-guild-header-context"), c = (0, s.bG)([z.A], () => z.A.getGuild(t)), A = (0, T.A)(t), h = (0, s.bG)([W.A], () => W.A.getGuildDimensions(t).scrollTo), C = (0, s.bG)([Z.A], () => Z.A.getChannelId()), y = (0, s.bG)([Q.A], () => Q.A.can(eo.xBc.MANAGE_GUILD, c)), R = (0, s.bG)([K.A], () => K.A.isUnavailable(t)), B = (0, s.bG)([J.default], () => J.default.getCurrentUser()), {
         enableStudyGroup: H
     } = (0, L.y)(c), q = (0, E.Ay)(e => e.currentlyShown.has(o.M.NAGBAR_NOTICE_CONNECT_PLAYSTATION)), [et, en] = a.useState(!q), ei = (0, _.A)(t), {
@@ -432,7 +432,7 @@ function ep(e) {
     a.useEffect(() => {
         t !== ei && en(!q)
     }, [t, ei, q]);
-    let [el, es] = (0, E.Ay)(e => [ed.cA.some(t => e.currentlyShown.has(t.dismissibleContentType)), e.currentlyShownGroup.has(ec.m.GUILD_HEADER_TOOLTIPS)], r.x), eu = (0, g.A)(c), eA = (0, u.red)(u.DXt), e_ = (0, s.bG)([$.A], () => $.A.hasLayers()), ep = (0, P.xr)(e => e.fullScreenLayers.length > 0), eg = (0, s.bG)([F.A], () => F.A.shouldShow(eh)), eE = (0, b.A)(t), eI = c?.features.has(eo.GuildFeatures.HUB) === !0, ef = y && c?.features.has(eo.GuildFeatures.DISCOVERABLE) === !0, eC = (0, s.bG)([O.A, $.A], () => null != c && null != B && y && !$.A.hasLayers() && O.A.shouldShowGuildTemplateDirtyTooltip(t)), eT = (0, s.bG)([Y.A], () => Y.A.getChannel(l)), {
+    let [er, es] = (0, E.Ay)(e => [ed.cA.some(t => e.currentlyShown.has(t.dismissibleContentType)), e.currentlyShownGroup.has(ec.m.GUILD_HEADER_TOOLTIPS)], l.x), eu = (0, g.A)(c), eA = (0, u.red)(u.DXt), e_ = (0, s.bG)([$.A], () => $.A.hasLayers()), ep = (0, P.xr)(e => e.fullScreenLayers.length > 0), eg = (0, s.bG)([F.A], () => F.A.shouldShow(eh)), eE = (0, b.A)(t), eI = c?.features.has(eo.GuildFeatures.HUB) === !0, ef = y && c?.features.has(eo.GuildFeatures.DISCOVERABLE) === !0, eC = (0, s.bG)([O.A, $.A], () => null != c && null != B && y && !$.A.hasLayers() && O.A.shouldShowGuildTemplateDirtyTooltip(t)), eT = (0, s.bG)([Y.A], () => Y.A.getChannel(r)), {
         isPopoutOpen: eN
     } = (0, S.S)(), eS = c?.features.has(eo.GuildFeatures.COMMUNITY) ?? !1, ex = ee.Ay.isNewUser(B), ev = et && !ex;
     (0, x.A)(c);
@@ -441,7 +441,7 @@ function ep(e) {
         eO = (0, s.bG)([Z.A], () => Z.A.getChannelId()),
         eL = (0, s.bG)([X.A], () => X.A.desyncedVoiceStatesCount),
         eR = (0, k.A)(t);
-    er.A.useConfig({
+    el.A.useConfig({
         guildId: t,
         location: "guild_sidebar"
     });
@@ -483,7 +483,7 @@ function ep(e) {
         hideSelectedChannel: n,
         guild: c,
         scrollToChannel: h,
-        selectedChannelId: n ? null : l,
+        selectedChannelId: n ? null : r,
         selectedChannel: eT,
         selectedVoiceChannelId: C,
         voiceStates: A,
@@ -491,7 +491,7 @@ function ep(e) {
         rtcDesyncedVoiceStatesCount: eL,
         isUnavailable: R,
         user: B,
-        hasChannelNotice: null != eu || el,
+        hasChannelNotice: null != eu || er,
         anyLayerOpen: eA || e_ || ep,
         showGuildHeaderTutorial: eg,
         showGuildTemplateDirtyTooltip: eC,

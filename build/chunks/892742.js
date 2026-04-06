@@ -11,8 +11,8 @@ var i = n(627968),
     d = n(710969),
     c = n(814793),
     u = n(338404),
-    m = n(127219),
-    _ = n(636658),
+    _ = n(127219),
+    m = n(636658),
     h = n(438038),
     p = n(295194),
     g = n(654487),
@@ -37,9 +37,9 @@ function x(e) {
         className: A.u
     }) : null == C ? null != E ? (0, i.jsx)(u.g, {
         questId: t
-    }) : (0, i.jsx)(m.l, {
+    }) : (0, i.jsx)(_.l, {
         questId: t,
-        reason: m.o.NOT_FOUND
+        reason: _.o.NOT_FOUND
     }) : (0, c.E0)(C.config) ? I ? (0, i.jsx)(p.M, {
         quest: C,
         location: r.uF.QUESTS_EMBED,
@@ -48,7 +48,7 @@ function x(e) {
         quest: C,
         location: r.uF.QUESTS_EMBED,
         sourceQuestContent: r.uF.QUESTS_EMBED
-    }, C.id) : (0, i.jsx)(_.S, {
+    }, C.id) : (0, i.jsx)(m.S, {
         questId: t
     })
 }

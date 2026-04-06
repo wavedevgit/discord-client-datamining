@@ -12,8 +12,8 @@ var l = n(503698),
     d = n(397927),
     c = n(409626),
     u = n(773669),
-    m = n(975571),
-    _ = n(252424),
+    _ = n(975571),
+    m = n(252424),
     h = n(859703),
     p = n(112142),
     g = n(714510),
@@ -27,8 +27,8 @@ var l = n(503698),
     b = n(442734),
     T = n(212614),
     N = n(79545),
-    S = n(646764),
-    y = n(545986),
+    y = n(646764),
+    S = n(545986),
     j = n(654487),
     L = n(652215),
     R = n(985018),
@@ -67,27 +67,27 @@ function M(e) {
         questContent: l,
         questContentPosition: s,
         sourceQuestContent: r
-    } = e, c = (0, a.bG)([h.A], () => h.A.isEnrolling(t.id)), u = (0, E.vv)(t), m = (0, E.Cr)(t), _ = (0, v._c)({
+    } = e, c = (0, a.bG)([h.A], () => h.A.isEnrolling(t.id)), u = (0, E.vv)(t), _ = (0, E.Cr)(t), m = (0, v._c)({
         progressState: n,
         quest: t,
         questContent: l,
         questContentPosition: s,
         inGiftInventory: !1,
         isVideoQuest: u,
-        inGameQuest: m,
+        inGameQuest: _,
         sourceQuestContent: r
     });
     return (0, i.jsx)(o.m_, {
-        text: _.tooltipText,
+        text: m.tooltipText,
         children: (0, i.jsx)(d.Button, {
             fullWidth: !0,
             variant: "primary",
-            disabled: null == _.onClick,
+            disabled: null == m.onClick,
             loading: c,
-            onClick: _.onClick ?? void 0,
-            text: _.text
+            onClick: m.onClick ?? void 0,
+            text: m.text
         })
-    }, _.tooltipText)
+    }, m.tooltipText)
 }
 let w = e => {
     let {
@@ -96,15 +96,15 @@ let w = e => {
         size: l,
         isFocused: v,
         isQuestExpired: w,
-        isExpanded: O,
-        isAnimating: k,
+        isExpanded: k,
+        isAnimating: O,
         contentPosition: U,
         sourceQuestContent: B
     } = e, G = (0, A.In)(t), F = (0, A.S5)(t.userStatus?.completedAt, {
         year: "numeric",
         month: "long",
         day: "numeric"
-    }), H = G >= A.F3.COMPLETED, V = O || k, q = (0, g.wT)(t, j.rE.QUESTS_CARD, n, B), W = (0, x.Ut)(), Y = (0, A.fc)(t), z = (0, g.mU)({
+    }), H = G >= A.F3.COMPLETED, V = k || O, q = (0, g.wT)(t, j.rE.QUESTS_CARD, n, B), W = (0, x.Ut)(), Y = (0, A.fc)(t), z = (0, g.mU)({
         quest: t,
         taskDetails: Y,
         location: j.rE.QUESTS_CARD,
@@ -139,7 +139,7 @@ let w = e => {
                             children: (0, i.jsx)(d.EpV, {
                                 color: d.LU0.colors.WHITE
                             })
-                        }), (0, i.jsx)(S.A, {
+                        }), (0, i.jsx)(y.A, {
                             autoplay: v,
                             className: s()({
                                 [P.Lu]: "lg" === l,
@@ -210,8 +210,8 @@ let w = e => {
                                     reward: c?.messages.nameWithArticle ?? d
                                 }) : null != c && null != c.approximateCount ? R.intl.format(R.t["4bMK1z"], {
                                     maxReward: c.messages.nameWithArticle,
-                                    maxRewardCount: (0, _.tg)(c.approximateCount, n),
-                                    helpCenterLink: m.A.getArticleURL(L.MVz.QUESTS_LEARN_MORE)
+                                    maxRewardCount: (0, m.tg)(c.approximateCount, n),
+                                    helpCenterLink: _.A.getArticleURL(L.MVz.QUESTS_LEARN_MORE)
                                 }) : l
                             }({
                                 quest: t,
@@ -235,7 +235,7 @@ let w = e => {
                         text: R.intl.string(R.t.V293qn)
                     }), (0, i.jsx)(d.Button, {
                         variant: "primary",
-                        onClick: () => (0, y.m6)(t, n, B),
+                        onClick: () => (0, S.m6)(t, n, B),
                         text: R.intl.string(R.t.vY9GgG)
                     })]
                 }) : (0, i.jsxs)(d.ButtonGroup, {
@@ -246,7 +246,7 @@ let w = e => {
                     children: [(0, i.jsx)(D, {
                         containerSize: l,
                         onClick: () => {
-                            (0, y.navigateToQuestHome)({
+                            (0, S.navigateToQuestHome)({
                                 fromContent: n,
                                 questId: t.id
                             }), W({

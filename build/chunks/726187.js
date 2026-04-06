@@ -4,14 +4,14 @@ n.d(t, {
 });
 var i = n(627968),
     a = n(64700),
-    l = n(503698),
-    r = n.n(l),
+    r = n(503698),
+    l = n.n(r),
     s = n(569181);
 let o = a.memo(function(e) {
     let {
         className: t
     } = e;
     return (0, i.jsx)("div", {
-        className: r()(t, s.En)
+        className: l()(t, s.En)
     })
 })

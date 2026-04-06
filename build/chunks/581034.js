@@ -13,7 +13,7 @@ var l = n(989349),
     c = n(985018),
     u = n(504945);
 
-function m(e) {
+function _(e) {
     let {
         classificationId: t
     } = e;
@@ -36,7 +36,7 @@ function m(e) {
     })
 }
 
-function _(e) {
+function m(e) {
     let {
         learnMoreLink: t
     } = e;
@@ -56,12 +56,12 @@ function h(e) {
     switch (t) {
         case d.xw.POLICY_VIOLATION_DETAIL:
             if (null == n) return null;
-            return (0, i.jsx)(m, {
+            return (0, i.jsx)(_, {
                 classificationId: n
             });
         case d.xw.LEARN_MORE_LINK:
             if (null == l) return null;
-            return (0, i.jsx)(_, {
+            return (0, i.jsx)(m, {
                 learnMoreLink: l
             });
         default:

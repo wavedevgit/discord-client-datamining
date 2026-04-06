@@ -11,8 +11,8 @@ var i = n(627968),
     d = n(397927),
     c = n(212245),
     u = n(775602),
-    m = n(933958),
-    _ = n(447031),
+    _ = n(933958),
+    m = n(447031),
     h = n(956549),
     p = n(550151),
     g = n(793574),
@@ -26,8 +26,8 @@ var i = n(627968),
     b = n(611010),
     T = n(961350),
     N = n(734057),
-    S = n(290863),
-    y = n(287809),
+    y = n(290863),
+    S = n(287809),
     j = n(954571),
     L = n(486020),
     R = n(927813),
@@ -35,8 +35,8 @@ var i = n(627968),
     D = n(218394),
     M = n(255345),
     w = n(652215),
-    O = n(360469),
-    k = n(768349),
+    k = n(360469),
+    O = n(768349),
     U = n(985018),
     B = n(746338);
 let G = l.memo(e => {
@@ -69,17 +69,17 @@ let F = l.memo(function(e) {
             embeddedActivity: V,
             currentEmbeddedActivity: q,
             activityLaunchState: W
-        } = (0, a.cf)([m.Ay], () => ({
-            embeddedActivity: m.Ay.getEmbeddedActivitiesForChannel(F ?? "").find(e => e.applicationId === n.id),
-            currentEmbeddedActivity: m.Ay.getCurrentEmbeddedActivity(),
-            activityLaunchState: m.Ay.getLaunchState(n.id, F ?? void 0)
+        } = (0, a.cf)([_.Ay], () => ({
+            embeddedActivity: _.Ay.getEmbeddedActivitiesForChannel(F ?? "").find(e => e.applicationId === n.id),
+            currentEmbeddedActivity: _.Ay.getCurrentEmbeddedActivity(),
+            activityLaunchState: _.Ay.getLaunchState(n.id, F ?? void 0)
         }), [F, n.id]),
         Y = V?.userIds,
-        z = (0, a.yK)([y.default], () => Array.from(Y ?? []).map(e => y.default.getUser(e)).filter(P.Vq), [Y]),
-        Q = (0, a.bG)([S.A], () => {
+        z = (0, a.yK)([S.default], () => Array.from(Y ?? []).map(e => S.default.getUser(e)).filter(P.Vq), [Y]),
+        Q = (0, a.bG)([y.A], () => {
             if (null == Y) return null;
             for (let e of Y) {
-                let t = S.A.findActivity(e, e => e.application_id === n.id);
+                let t = y.A.findActivity(e, e => e.application_id === n.id);
                 if (null != t) return t
             }
             return null
@@ -87,7 +87,7 @@ let F = l.memo(function(e) {
         K = Q?.details,
         J = l.useMemo(() => {
             let e = new b.Ay(n);
-            return null == e.embeddedActivityConfig && (e.embeddedActivityConfig = O.Gl), e
+            return null == e.embeddedActivityConfig && (e.embeddedActivityConfig = k.Gl), e
         }, [n]),
         X = (0, p.vG)({
             userId: H,
@@ -117,7 +117,7 @@ let F = l.memo(function(e) {
                 analyticsLocations: v,
                 componentId: ee,
                 commandOrigin: x.iw.ACTIVITY_INSTANCE_EMBED
-            }) : await (0, _.A)({
+            }) : await (0, m.A)({
                 applicationId: V.applicationId,
                 activityChannelId: s,
                 locationObject: R.location,
@@ -204,7 +204,7 @@ let F = l.memo(function(e) {
         onClickContent: el,
         trackingConfig: {
             id: n.id,
-            linkType: k.J.ACTIVITY_INSTANCE,
+            linkType: O.J.ACTIVITY_INSTANCE,
             guildId: o,
             channelId: s,
             messageId: u.id,

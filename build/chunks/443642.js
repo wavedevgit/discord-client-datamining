@@ -11,23 +11,23 @@ var i = n(627968),
     d = n(58149),
     c = n(688810),
     u = n(652176),
-    m = n(240248),
-    _ = n(256449),
+    _ = n(240248),
+    m = n(256449),
     h = n(842086),
     p = n(148355),
     g = n(552117),
     A = n(652215),
     x = n(788868),
     f = n(911697);
-let C = (0, m.xI)(r.A.STICKERS_CONSTANTS_STICKER_DIMENSION),
+let C = (0, _.xI)(r.A.STICKERS_CONSTANTS_STICKER_DIMENSION),
     E = e => {
         let {
             renderableSticker: t,
             channel: n,
             isInteracting: r
-        } = e, m = l.useRef(null), [E, I] = l.useState(!0), [v, b] = l.useState(String(Date.now())), [T] = (0, _.Zq)(t, r), {
+        } = e, _ = l.useRef(null), [E, I] = l.useState(!0), [v, b] = l.useState(String(Date.now())), [T] = (0, m.Zq)(t, r), {
             analyticsLocations: N
-        } = (0, c.Ay)(o.A.STICKER_MESSAGE), S = (0, i.jsxs)("span", {
+        } = (0, c.Ay)(o.A.STICKER_MESSAGE), y = (0, i.jsxs)("span", {
             className: f.Zl,
             children: [(0, i.jsx)(a.s2T, {
                 size: "xs",
@@ -52,7 +52,7 @@ let C = (0, m.xI)(r.A.STICKERS_CONSTANTS_STICKER_DIMENSION),
                         channel: n,
                         refreshPositionKey: () => b(String(Date.now()))
                     }),
-                    targetElementRef: m,
+                    targetElementRef: _,
                     children: e => {
                         let {
                             onClick: n
@@ -60,7 +60,7 @@ let C = (0, m.xI)(r.A.STICKERS_CONSTANTS_STICKER_DIMENSION),
                         return (0, i.jsx)(s.m, {
                             ...u.Uk,
                             shouldShow: E,
-                            __unsupportedReactNodeAsText: (0, u.yR)(S),
+                            __unsupportedReactNodeAsText: (0, u.yR)(y),
                             "aria-label": !1,
                             onTooltipShow: () => {
                                 var e;
@@ -73,7 +73,7 @@ let C = (0, m.xI)(r.A.STICKERS_CONSTANTS_STICKER_DIMENSION),
                                 })
                             },
                             children: (0, i.jsx)(a.DUT, {
-                                innerRef: m,
+                                innerRef: _,
                                 className: f.q7,
                                 onClick: e => {
                                     I(!E), n(e)

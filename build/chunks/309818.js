@@ -11,8 +11,8 @@ var i = n(627968),
     d = n(846293),
     c = n(793574),
     u = n(688810),
-    m = n(21599),
-    _ = n(529200),
+    _ = n(21599),
+    m = n(529200),
     h = n(95701),
     p = n(734057),
     g = n(287809),
@@ -32,50 +32,50 @@ function I(e) {
         } = e,
         T = I === s.author.id,
         N = n.state === f.elq.ACCEPTING,
-        S = (0, o.bG)([p.A], () => null != n.channel ? p.A.getChannel(n.channel.id) : null, [n]);
-    r()(null == S || S.isPrivate(), "must be a private channel");
+        y = (0, o.bG)([p.A], () => null != n.channel ? p.A.getChannel(n.channel.id) : null, [n]);
+    r()(null == y || y.isPrivate(), "must be a private channel");
     let {
-        analyticsLocations: y
-    } = (0, u.Ay)(c.A.INVITE_EMBED), j = null != S, L = l.useCallback(() => {
+        analyticsLocations: S
+    } = (0, u.Ay)(c.A.INVITE_EMBED), j = null != y, L = l.useCallback(() => {
         let e = "noop";
         j ? (v(), e = "transition") : (b(), e = "accept"), (0, d.he)({
             invite: n,
             action: e,
             inviter_id: s.author.id,
             invite_message_id: s.id,
-            invite_instance_id: (0, m._U)(n.code, s.id)
-        }, y)
-    }, [n, s, y, j, v, b]);
-    if (null == S) {
+            invite_instance_id: (0, _._U)(n.code, s.id)
+        }, S)
+    }, [n, s, S, j, v, b]);
+    if (null == y) {
         if (null == n.channel) return (0, i.jsx)(x.A, {});
-        S = (0, h.OY)(n.channel), t = null != n.channel && null != n.channel.recipients ? n.channel.recipients : []
+        y = (0, h.OY)(n.channel), t = null != n.channel && null != n.channel.recipients ? n.channel.recipients : []
     } else {
-        t = S.recipients.reduce((e, t) => {
+        t = y.recipients.reduce((e, t) => {
             let n = g.default.getUser(t);
             return null != n && e.push(n), e
         }, []);
         let e = g.default.getCurrentUser();
         j && null != e && t.push(e)
     }
-    let R = S.name;
+    let R = y.name;
     (null == R || "" === R) && (R = t.length > 0 ? t.filter(A.Vq).map(e => e.username).join(", ") : C.intl.string(C.t.LJpTRF));
     let P = C.intl.string(C.t.XpeFYr),
         D = "active";
     j && (P = C.intl.string(C.t.cEnaWx), D = "secondary");
     let M = C.intl.string(C.t["3p3/BK"]);
-    return T && (M = C.intl.string(C.t.qmtuXE)), (0, i.jsxs)(_.A, {
-        children: [(0, i.jsx)(_.A.Header, {
+    return T && (M = C.intl.string(C.t.qmtuXE)), (0, i.jsxs)(m.A, {
+        children: [(0, i.jsx)(m.A.Header, {
             text: M
-        }), (0, i.jsxs)(_.A.Body, {
+        }), (0, i.jsxs)(m.A.Body, {
             children: [(0, i.jsxs)("div", {
                 className: E.iH,
-                children: [(0, i.jsx)(_.A.Icon, {
-                    channel: S,
+                children: [(0, i.jsx)(m.A.Icon, {
+                    channel: y,
                     onClick: j ? L : void 0
-                }), (0, i.jsx)(_.A.Info, {
+                }), (0, i.jsx)(m.A.Info, {
                     title: R,
                     onClick: j ? L : void 0,
-                    children: (0, i.jsx)(_.A.Data, {
+                    children: (0, i.jsx)(m.A.Data, {
                         members: t.length
                     })
                 })]

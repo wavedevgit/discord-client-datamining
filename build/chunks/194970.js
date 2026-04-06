@@ -4,15 +4,15 @@ n.d(t, {
 });
 var i = n(615300),
     a = n(365659),
-    l = n(73153),
-    r = n(272355),
+    r = n(73153),
+    l = n(272355),
     s = n(869146);
-class o extends r.A {
+class o extends l.A {
     _initialize() {
-        s.A.addChangeListener(this.handlePopoutWindowChange), l.h.subscribe("WINDOW_FOCUS", this.handleMainWindowFocus)
+        s.A.addChangeListener(this.handlePopoutWindowChange), r.h.subscribe("WINDOW_FOCUS", this.handleMainWindowFocus)
     }
     _terminate() {
-        s.A.removeChangeListener(this.handlePopoutWindowChange), l.h.unsubscribe("WINDOW_FOCUS", this.handleMainWindowFocus), this.injectWindowAnimationFrame(window)
+        s.A.removeChangeListener(this.handlePopoutWindowChange), r.h.unsubscribe("WINDOW_FOCUS", this.handleMainWindowFocus), this.injectWindowAnimationFrame(window)
     }
     handleMainWindowFocus = e => {
         e.focused && e.windowId === window.__DISCORD_WINDOW_ID && this.injectWindowAnimationFrame(window)

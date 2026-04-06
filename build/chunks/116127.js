@@ -4,29 +4,29 @@ n.d(t, {
 });
 var i = n(311907),
     a = n(73153),
-    l = n(596720);
-let r = {};
+    r = n(596720);
+let l = {};
 class s extends i.Ay.DeviceSettingsStore {
     static displayName = "ICYMIFiltersStore";
     static persistKey = "ICYMIFiltersStore";
     initialize(e) {
-        r = e ?? {}
+        l = e ?? {}
     }
     filterStaffContent() {
-        return !0 === r.filterStaffContent
+        return !0 === l.filterStaffContent
     }
     getDoubleTapBehavior() {
-        return r.doubleTapBehavior ?? l.Ai.DEFAULT
+        return l.doubleTapBehavior ?? r.Ai.DEFAULT
     }
     getState() {
-        return r
+        return l
     }
     getUserAgnosticState() {
-        return r
+        return l
     }
 }
 let o = new s(a.h, {
     SET_ICYMI_FILTERS: function(e) {
-        r = e.filters
+        l = e.filters
     }
 })

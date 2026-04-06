@@ -12,7 +12,7 @@ n.d(t, {
                     entrypoint: t.entrypoint ?? h.J8.UNKNOWN
                 }) : s.A.setState({
                     entrypoint: t.entrypoint ?? h.J8.UNKNOWN
-                }), (0, a.pX)(m.BVt.GLOBAL_DISCOVERY_SERVERS, t.extra);
+                }), (0, a.pX)(_.BVt.GLOBAL_DISCOVERY_SERVERS, t.extra);
             case u.GlobalDiscoveryTab.APPS:
                 if (null != t.newSessionState) {
                     let n = (0, l.YP)(),
@@ -25,7 +25,7 @@ n.d(t, {
                             guildId: s ?? null,
                             entrypoint: r,
                             trackedOpenedFromExternalEntrypoint: !1
-                        }), d.default.track(m.HAw.APP_DIRECTORY_OPENED, {
+                        }), d.default.track(_.HAw.APP_DIRECTORY_OPENED, {
                             source: r?.name,
                             session_id: n,
                             guild_id: s,
@@ -54,19 +54,19 @@ n.d(t, {
                     }())
                 }
                 if (null != t.applicationId) {
-                    if (t.section === _.GlobalDiscoveryAppsSections.STORE)
-                        if (null != t.skuId) return (0, a.pX)(m.BVt.GLOBAL_DISCOVERY_APPS_PROFILE_STORE_SKU(t.applicationId, t.skuId));
-                        else return (0, a.pX)(m.BVt.GLOBAL_DISCOVERY_APPS_PROFILE_SECTION(t.applicationId, _.GlobalDiscoveryAppsSections.STORE));
-                    return (0, a.pX)(m.BVt.GLOBAL_DISCOVERY_APPS_PROFILE(t.applicationId))
+                    if (t.section === m.GlobalDiscoveryAppsSections.STORE)
+                        if (null != t.skuId) return (0, a.pX)(_.BVt.GLOBAL_DISCOVERY_APPS_PROFILE_STORE_SKU(t.applicationId, t.skuId));
+                        else return (0, a.pX)(_.BVt.GLOBAL_DISCOVERY_APPS_PROFILE_SECTION(t.applicationId, m.GlobalDiscoveryAppsSections.STORE));
+                    return (0, a.pX)(_.BVt.GLOBAL_DISCOVERY_APPS_PROFILE(t.applicationId))
                 }
                 if (null != t.query) {
                     let e = new URLSearchParams;
-                    return "" !== t.query && e.set("q", t.query), null != t.categoryId && e.set("category_id", t.categoryId.toString()), null != t.page && e.set("page", t.page.toString()), (0, a.pX)(m.BVt.GLOBAL_DISCOVERY_APPS_SEARCH, {
+                    return "" !== t.query && e.set("q", t.query), null != t.categoryId && e.set("category_id", t.categoryId.toString()), null != t.page && e.set("page", t.page.toString()), (0, a.pX)(_.BVt.GLOBAL_DISCOVERY_APPS_SEARCH, {
                         search: e.toString()
                     })
                 }
-                if (null != t.categoryId) return (0, a.pX)(m.BVt.GLOBAL_DISCOVERY_APPS_CATEGORY(t.categoryId.toString()));
-                else return (0, a.pX)(m.BVt.GLOBAL_DISCOVERY_APPS);
+                if (null != t.categoryId) return (0, a.pX)(_.BVt.GLOBAL_DISCOVERY_APPS_CATEGORY(t.categoryId.toString()));
+                else return (0, a.pX)(_.BVt.GLOBAL_DISCOVERY_APPS);
             case u.GlobalDiscoveryTab.QUESTS:
                 return (0, r.navigateToQuestHome)({
                     fromContent: t.questContent,
@@ -87,6 +87,6 @@ var i = n(310419),
     d = n(954571),
     c = n(726845),
     u = n(488995),
-    m = n(652215),
-    _ = n(435220),
+    _ = n(652215),
+    m = n(435220),
     h = n(324580)

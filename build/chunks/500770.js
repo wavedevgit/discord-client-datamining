@@ -12,9 +12,9 @@ var l = n(503698),
     d = n(724609),
     c = n(411342),
     u = n(985018),
-    m = n(632531);
+    _ = n(632531);
 
-function _(e) {
+function m(e) {
     let {
         hidePurchaseToUnlockBadge: t,
         showDraftBadge: n,
@@ -22,22 +22,22 @@ function _(e) {
         children: a
     } = e;
     return (0, i.jsxs)("div", {
-        className: s()(m.v0, l),
+        className: s()(_.v0, l),
         children: [a, !t && (0, i.jsxs)("div", {
-            className: m.su,
+            className: _.su,
             children: [(0, i.jsx)(r.XAi, {
                 size: "xs",
-                className: m.hz,
+                className: _.hz,
                 color: "currentColor",
                 "aria-hidden": !0
             }), (0, i.jsx)(r.Text, {
                 variant: "text-sm/normal",
                 color: "always-white",
-                className: m.__invalid_unlockText,
+                className: _.__invalid_unlockText,
                 children: u.intl.string(u.t.YmIiSe)
             })]
         }), n && (0, i.jsx)("div", {
-            className: m.vW,
+            className: _.vW,
             children: (0, i.jsx)(d.k, {})
         })]
     })
@@ -55,14 +55,14 @@ function h(e) {
         }), (0, i.jsx)(r.EdP, {
             size: "xs",
             color: "currentColor",
-            className: m.D6
+            className: _.D6
         })]
     });
     return null == t ? (0, i.jsx)("div", {
-        className: m.dO,
+        className: _.dO,
         children: l
     }) : (0, i.jsx)(r.DUT, {
-        className: s()(m.dO, m.hY),
+        className: s()(_.dO, _.hY),
         onClick: e => {
             e.stopPropagation(), null != t && t()
         },
@@ -88,41 +88,41 @@ function p(e) {
         lineClamp: b = 1,
         cardWidth: T = 332,
         cardHeight: N,
-        thumbnailHeight: S = 187,
-        descriptionTextVariant: y = "text-sm/normal",
+        thumbnailHeight: y = 187,
+        descriptionTextVariant: S = "text-sm/normal",
         isDraft: j = !1
     } = e, L = (0, a.Ld)(), R = (0, i.jsxs)(i.Fragment, {
-        children: [(0, i.jsx)(_, {
+        children: [(0, i.jsx)(m, {
             showDraftBadge: j,
             hidePurchaseToUnlockBadge: !0,
             children: (0, i.jsx)("img", {
                 alt: "",
                 src: t,
-                className: m.K_,
+                className: _.K_,
                 style: {
-                    height: S
+                    height: y
                 }
             })
         }), (0, i.jsxs)("div", {
-            className: m.MS,
+            className: _.MS,
             children: [(0, i.jsxs)("div", {
-                className: m.Ag,
+                className: _.Ag,
                 children: [(0, i.jsx)(r.Heading, {
                     variant: "text-md/medium",
                     color: "text-strong",
-                    className: m.tZ,
+                    className: _.tZ,
                     id: L,
                     children: n
                 }), (0, i.jsx)(r.M1G, {
                     children: (0, i.jsx)(o.A, {
-                        variant: y,
+                        variant: S,
                         color: "text-muted",
                         lineClamp: b,
                         text: l
                     })
                 }), A && (0, i.jsx)(h, {
                     onShowFullDescription: x,
-                    variant: y
+                    variant: S
                 }), v || null == p || "" === p.name ? null : (0, i.jsxs)(i.Fragment, {
                     children: [(0, i.jsx)(r.hKd, {
                         size: 16
@@ -132,19 +132,19 @@ function p(e) {
                 })]
             }), E]
         }), (0, i.jsxs)("div", {
-            className: m.kP,
+            className: _.kP,
             children: [(0, i.jsx)(r.Text, {
                 variant: "text-md/medium",
                 color: "interactive-text-active",
-                className: m.__invalid_productPrice,
+                className: _.__invalid_productPrice,
                 children: d ?? u.intl.string(u.t["4uLhAp"])
             }), (0, i.jsx)(r.Text, {
                 variant: "text-xxs/normal",
                 color: "text-default",
-                className: m.__invalid_productType,
+                className: _.__invalid_productType,
                 children: f
             }), (0, i.jsx)("div", {
-                className: m.QW,
+                className: _.QW,
                 onClick: e => {
                     e.stopPropagation()
                 },
@@ -153,7 +153,7 @@ function p(e) {
         })]
     });
     return null == C ? (0, i.jsx)("article", {
-        className: s()(m.Um, I ? m.sG : m.Wi),
+        className: s()(_.Um, I ? _.sG : _.Wi),
         "aria-labelledby": L,
         children: R
     }) : (0, i.jsx)("div", {
@@ -166,7 +166,7 @@ function p(e) {
             "aria-label": u.intl.formatToPlainString(u.t["e+TmJa"], {
                 productName: n
             }),
-            className: s()(m.Um, I ? m.sG : m.Wi, m.GA),
+            className: s()(_.Um, I ? _.sG : _.Wi, _.GA),
             onClick: C,
             children: R
         })

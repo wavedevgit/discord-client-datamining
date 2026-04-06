@@ -1,6 +1,6 @@
 /** chunk id: 519397 params = (module,exports,require) **/
 n.d(t, {
-    A: () => _
+    A: () => m
 });
 var i = n(627968),
     l = n(64700),
@@ -11,14 +11,14 @@ var i = n(627968),
     d = n(943220),
     c = n(994500),
     u = n(838541),
-    m = n(767283);
+    _ = n(767283);
 
-function _(e) {
+function m(e) {
     let {
         message: t,
         channel: n
     } = e, {
-        isBlocked: _,
+        isBlocked: m,
         isIgnored: h
     } = (0, s.cf)([c.A], () => ({
         isBlocked: c.A.isBlockedForMessage(t),
@@ -31,35 +31,35 @@ function _(e) {
         formatInline: !0
     }).content : null, [t]);
     return (0, i.jsxs)("div", {
-        className: m.up,
+        className: _.up,
         children: [(0, i.jsx)("img", {
             alt: "",
             src: t.author.getAvatarURL(n.guild_id, 16),
-            className: m.FJ
+            className: _.FJ
         }), (0, i.jsx)(d.A, {
             message: t,
             channel: n,
             compact: !0
         }), (0, i.jsx)("div", {
-            className: m.Au,
+            className: _.Au,
             children: function(e, t, n, l) {
                 let {
                     contentPlaceholder: s,
                     renderedContent: r,
                     leadingIcon: a,
                     trailingIcon: d
-                } = (0, o.o)(e, t, n, l, m.tP, {
-                    trailingIconClass: m._v,
-                    leadingIconClass: m.a5,
+                } = (0, o.o)(e, t, n, l, _.tP, {
+                    trailingIconClass: _._v,
+                    leadingIconClass: _.a5,
                     iconSize: u.eJ
                 });
                 return (0, i.jsxs)(i.Fragment, {
                     children: [a, r ?? (0, i.jsx)("span", {
-                        className: m.dp,
+                        className: _.dp,
                         children: s
                     }), d]
                 })
-            }(t, g, _, h)
+            }(t, g, m, h)
         })]
     })
 }

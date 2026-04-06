@@ -15,13 +15,13 @@ async function c(e) {
         n = e.messageReference.channel_id,
         c = e.messageReference.message_id,
         u = s.A.getChannel(n),
-        m = !1;
+        _ = !1;
     if (null == u && null != t && null == r.A.getGuild(t)) try {
         await (0, o.Z2)(t, {
             object: d.ZSU.FORWARD_BREADCRUMB
         }, {
             shouldNavigate: !1
-        }), m = !0, await (0, i.k)(t), u = s.A.getChannel(n)
+        }), _ = !0, await (0, i.k)(t), u = s.A.getChannel(n)
     } catch {}
     a.default.track(d.HAw.FORWARD_BREADCRUMB_CLICKED, {
         guild_id: s.A.getBasicChannel(e.channel_id)?.guild_id,
@@ -30,10 +30,10 @@ async function c(e) {
         breadcrumb_guild_id: t,
         breadcrumb_channel_id: n,
         breadcrumb_message_id: c,
-        did_lurk: m
+        did_lurk: _
     });
-    let _ = m ? n : void 0;
+    let m = _ ? n : void 0;
     (0, l.A)(d.BVt.CHANNEL(t, n, c), {
-        welcomeModalChannelId: _
+        welcomeModalChannelId: m
     })
 }

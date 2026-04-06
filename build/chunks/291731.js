@@ -1,10 +1,10 @@
 /** chunk id: 291731 params = (module,exports,require) **/
-let i, a, l;
+let i, a, r;
 n.d(t, {
     A: () => y
 }), n(321073);
-var r = n(735438),
-    s = n.n(r),
+var l = n(735438),
+    s = n.n(l),
     o = n(311907),
     d = n(73153),
     c = n(824953),
@@ -68,7 +68,7 @@ class v extends o.Ay.Store {
             submitting: I === m.XlH.SUBMITTING,
             webhooks: p,
             editedWebhook: g,
-            section: l,
+            section: r,
             sectionId: T,
             hasChanges: this.hasChanges(),
             isFetching: E,
@@ -84,7 +84,7 @@ let b = new v(d.h, __OVERLAY__ ? {} : {
                 section: t
             } = e;
             if (t !== m.p_A.INTEGRATIONS) return !1;
-            if (l = m.wLn.OVERVIEW, null == i) {
+            if (r = m.wLn.OVERVIEW, null == i) {
                 let e = u.A.getChannel(),
                     t = e?.getGuildId();
                 null != e && null != t && (c.A.fetchForChannel(t, e.id), E = !0), N()
@@ -95,7 +95,7 @@ let b = new v(d.h, __OVERLAY__ ? {} : {
                 section: t,
                 sectionId: n
             } = e;
-            l = t, T = n
+            r = t, T = n
         },
         INTEGRATION_SETTINGS_START_EDITING_WEBHOOK: function(e) {
             let {
@@ -123,13 +123,13 @@ let b = new v(d.h, __OVERLAY__ ? {} : {
             let {
                 guildId: t,
                 channelId: n,
-                webhooks: l
+                webhooks: r
             } = e;
-            if (E = !1, null != i && t === i.id && null != a && n === a.id && null != l && I !== m.XlH.SUBMITTING) {
+            if (E = !1, null != i && t === i.id && null != a && n === a.id && null != r && I !== m.XlH.SUBMITTING) {
                 for (let e = p.length - 1; e >= 0; e--) {
                     let t = p[e];
                     if (null != n && t?.channel_id !== n) continue;
-                    let i = l.find(e => {
+                    let i = r.find(e => {
                         let {
                             id: n
                         } = e;
@@ -143,7 +143,7 @@ let b = new v(d.h, __OVERLAY__ ? {} : {
                         p[e] = n, C || g?.id !== n.id || (g = n)
                     } else g?.id === t.id && (g = null), p.splice(e, 1)
                 }
-                for (let e of l) null == p.find(t => {
+                for (let e of r) null == p.find(t => {
                     let {
                         id: n
                     } = t;

@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(73153),
     a = n(272355),
-    l = n(260509),
-    r = n(71393),
+    r = n(260509),
+    l = n(71393),
     s = n(287809),
     o = n(723702),
     d = n(493540),
@@ -19,9 +19,9 @@ class u extends a.A {
     }
     maybeFetchEligiblity = async () => {
         if ((0, o.isDesktop)() || (0, o.isWeb)()) {
-            let e = r.A.getGuildsArray(),
+            let e = l.A.getGuildsArray(),
                 t = s.default.getCurrentUser(),
-                n = e.filter(e => (0, l.bM)(e, t) && !e.features.has(c.GuildFeatures.ROLE_SUBSCRIPTIONS_AVAILABLE_FOR_PURCHASE) && !e.features.has(c.GuildFeatures.CREATOR_MONETIZABLE_RESTRICTED) && !e.features.has(c.GuildFeatures.CREATOR_MONETIZABLE_DISABLED) && (e.features.has(c.GuildFeatures.CREATOR_MONETIZABLE) || e.features.has(c.GuildFeatures.CREATOR_MONETIZABLE_PROVISIONAL)));
+                n = e.filter(e => (0, r.bM)(e, t) && !e.features.has(c.GuildFeatures.ROLE_SUBSCRIPTIONS_AVAILABLE_FOR_PURCHASE) && !e.features.has(c.GuildFeatures.CREATOR_MONETIZABLE_RESTRICTED) && !e.features.has(c.GuildFeatures.CREATOR_MONETIZABLE_DISABLED) && (e.features.has(c.GuildFeatures.CREATOR_MONETIZABLE) || e.features.has(c.GuildFeatures.CREATOR_MONETIZABLE_PROVISIONAL)));
             n.length > 0 && await (0, d._8)(n.map(e => e.id))
         }
     }

@@ -3,8 +3,8 @@ let i, a;
 n.d(t, {
     A: () => y
 });
-var l = n(735438),
-    r = n.n(l),
+var r = n(735438),
+    l = n.n(r),
     s = n(311907),
     o = n(506774),
     d = n(73153),
@@ -93,16 +93,16 @@ let y = new b(d.h, {
             id: t,
             allow: n,
             deny: a
-        } = e, l = E?.[t];
-        if (null == l || null == f) return !1;
-        l = {
-            ...l,
+        } = e, r = E?.[t];
+        if (null == r || null == f) return !1;
+        r = {
+            ...r,
             allow: n,
             deny: a
         }, E = {
             ...E,
-            [t]: l
-        }, m.add(t), p = h.XlH.OPEN, g = !r().isEqual(E, I), i = c.r(f, C)
+            [t]: r
+        }, m.add(t), p = h.XlH.OPEN, g = !l().isEqual(E, I), i = c.r(f, C)
     },
     CHANNEL_SETTINGS_PERMISSIONS_SELECT_PERMISSION: function(e) {
         let {

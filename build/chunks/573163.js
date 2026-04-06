@@ -11,8 +11,8 @@ var i = n(627968),
     d = n(505527),
     c = n(960538),
     u = n(860227),
-    m = n(866630),
-    _ = n(483202),
+    _ = n(866630),
+    m = n(483202),
     h = n(985018),
     p = n(486025),
     g = n(108277);
@@ -51,12 +51,12 @@ class x extends l.PureComponent {
             visibleReactionsCount: T
         } = this.props, {
             disableTransitionAppear: N
-        } = this.state, S = E ? g : p, y = T > 0;
-        if (!y && !f) return null;
-        let j = f || y;
+        } = this.state, y = E ? g : p, S = T > 0;
+        if (!S && !f) return null;
+        let j = f || S;
         return (0, i.jsxs)(a.F, {
             component: "div",
-            className: r()(S.reactions, x),
+            className: r()(y.reactions, x),
             transitionAppear: !N,
             role: "group",
             transitionLeave: !1,
@@ -67,7 +67,7 @@ class x extends l.PureComponent {
             onMouseLeave: () => this.setState({
                 isHovered: !1
             }),
-            children: [(0, i.jsx)(m.A, {
+            children: [(0, i.jsx)(_.A, {
                 reactions: b,
                 message: e,
                 readOnly: n,
@@ -78,12 +78,12 @@ class x extends l.PureComponent {
                 className: C
             }), v > 0 && (0, i.jsx)(o.DUT, {
                 onClick: t => {
-                    t.stopPropagation(), (0, _.$l)(A, e)
+                    t.stopPropagation(), (0, m.$l)(A, e)
                 },
-                className: r()(S.reaction, C, S.remainingReactions),
+                className: r()(y.reaction, C, y.remainingReactions),
                 "aria-label": h.intl.string(h.t.lfIHs4),
                 children: (0, i.jsxs)(o.Text, {
-                    className: S.reactionInner,
+                    className: y.reactionInner,
                     variant: "text-sm/normal",
                     children: ["+", v]
                 })
@@ -94,7 +94,7 @@ class x extends l.PureComponent {
                 useChatFontScaling: E,
                 isHovered: this.state.isHovered,
                 className: r()({
-                    [S.forceShow]: j
+                    [y.forceShow]: j
                 })
             })]
         })

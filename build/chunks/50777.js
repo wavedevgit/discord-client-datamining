@@ -11,8 +11,8 @@ var i = n(627968),
     d = n(990078),
     c = n(397927),
     u = n(793574),
-    m = n(688810),
-    _ = n(587895),
+    _ = n(688810),
+    m = n(587895),
     h = n(875444),
     p = n(429913),
     g = n(993046),
@@ -26,8 +26,8 @@ var i = n(627968),
     b = n(207654),
     T = n(317560),
     N = n(533406),
-    S = n(971146),
-    y = n(300182),
+    y = n(971146),
+    S = n(300182),
     j = n(183802),
     L = n(652215),
     R = n(985018),
@@ -89,11 +89,11 @@ function M(e) {
         guildId: t,
         skuId: n,
         channel: s
-    } = e, r = (0, o.bG)([C.A], () => C.A.isFetchingForSKU(n)), M = (0, o.bG)([f.A], () => f.A.get(n)), w = M?.applicationId, O = (0, o.bG)([_.A], () => null != w && _.A.isFetchingApplication(w)), k = (0, o.bG)([_.A], () => null != w && _.A.didFetchingApplicationFail(w)), U = (0, p.h)(w), B = (0, b.b)({
+    } = e, r = (0, o.bG)([C.A], () => C.A.isFetchingForSKU(n)), M = (0, o.bG)([f.A], () => f.A.get(n)), w = M?.applicationId, k = (0, o.bG)([m.A], () => null != w && m.A.isFetchingApplication(w)), O = (0, o.bG)([m.A], () => null != w && m.A.didFetchingApplicationFail(w)), U = (0, p.h)(w), B = (0, b.b)({
         location: "product_details_embed"
     }), {
         analyticsLocations: G
-    } = (0, m.Ay)(u.A.SLAYER_STOREFRONT_PRODUCT_DETAILS_EMBED);
+    } = (0, _.Ay)(u.A.SLAYER_STOREFRONT_PRODUCT_DETAILS_EMBED);
     (0, A.pE)();
     let F = (0, o.bG)([x.default], () => s.isDM() && null != s.recipients && 0 !== s.recipients.length ? x.default.getUser(s.recipients[0]) : null),
         H = (0, o.bG)([v.A], () => null != n ? v.A.getNormalizedSKUEligibility(n) : void 0, [n]),
@@ -136,8 +136,8 @@ function M(e) {
                 analyticsLocations: [u.A.SLAYER_STOREFRONT_PRODUCT_DETAILS_EMBED_GIFT_BUTTON]
             })
         }, [M, F]),
-        X = null != w && null == U && !k;
-    return (r || O || X) && (null == M || null == U) ? (0, i.jsx)("div", {
+        X = null != w && null == U && !O;
+    return (r || k || X) && (null == M || null == U) ? (0, i.jsx)("div", {
         className: P.kL,
         children: (0, i.jsx)(c.y$y, {
             className: P.u1
@@ -154,7 +154,7 @@ function M(e) {
             className: P.zH,
             children: [(0, i.jsxs)("div", {
                 className: P.lI,
-                children: [B && null != U && (0, i.jsx)(S.V, {
+                children: [B && null != U && (0, i.jsx)(y.V, {
                     application: U
                 }), (0, i.jsxs)("div", {
                     className: P.PB,
@@ -191,7 +191,7 @@ function M(e) {
                         price: Y ?? W
                     }),
                     fullWidth: !0
-                }), (0, i.jsx)(y.A, {
+                }), (0, i.jsx)(S.A, {
                     onGift: J
                 })]
             })]

@@ -12,8 +12,8 @@ var l = n(503698),
     d = n(18301),
     c = n(652215),
     u = n(985018),
-    m = n(670519);
-let _ = {
+    _ = n(670519);
+let m = {
     [c.uje.WINDOWS]: {
         icon: d.A,
         getLabel: () => u.intl.string(u.t["0/xHFO"])
@@ -32,7 +32,7 @@ function h(e) {
     let {
         operatingSystem: t,
         className: n
-    } = e, l = _[t];
+    } = e, l = m[t];
     if (null == l) throw Error(`Unexpected operating system: ${t}`);
     let s = l.icon;
     return (0, i.jsx)(r.m, {
@@ -49,10 +49,10 @@ let p = e => {
         iconClassName: l
     } = e;
     return (0, i.jsx)("div", {
-        className: s()(m.I, n),
+        className: s()(_.I, n),
         children: t.map(e => (0, i.jsx)(h, {
             operatingSystem: e,
-            className: s()(m.A, l)
+            className: s()(_.A, l)
         }, e))
     })
 }

@@ -1,6 +1,6 @@
 /** chunk id: 499454 params = (module,exports,require) **/
 n.d(t, {
-    h: () => m
+    h: () => _
 });
 var i = n(627968);
 n(64700);
@@ -13,11 +13,11 @@ var l = n(397927),
     c = n(788868),
     u = n(652215);
 
-function m(e) {
+function _(e) {
     let {
         processedCode: t,
-        channelContext: m,
-        customGiftMessage: _,
+        channelContext: _,
+        customGiftMessage: m,
         giftInfo: h
     } = e, p = !1, g = null, A = s.default.getCurrentUser(), x = (0, o.CC)(A?.premiumType, c.PremiumTypes.TIER_0);
     (0, l.mMO)(async () => {
@@ -26,8 +26,8 @@ function m(e) {
         } = await n.e("14439").then(n.bind(n, 67327));
         return n => (0, i.jsx)(e, {
             code: t,
-            channelContext: m,
-            customGiftMessage: _,
+            channelContext: _,
+            customGiftMessage: m,
             emojiName: h?.emoji?.name,
             soundId: h?.sound?.id,
             onComplete: (e, t) => {

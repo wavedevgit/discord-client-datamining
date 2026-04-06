@@ -13,7 +13,7 @@ var l = n(503698),
     c = n(985018),
     u = n(673287);
 
-function m(e) {
+function _(e) {
     let {
         didSelfVote: t,
         label: n,
@@ -35,7 +35,7 @@ function m(e) {
     })
 }
 
-function _(e) {
+function m(e) {
     let {
         answer: t,
         isExpired: n,
@@ -58,7 +58,7 @@ function _(e) {
             isExpired: n,
             className: u.Dt
         }), r && (0, i.jsxs)(i.Fragment, {
-            children: [(0, i.jsx)(m, {
+            children: [(0, i.jsx)(_, {
                 didSelfVote: o,
                 percentage: t.votesPercentage,
                 label: t.votes,
@@ -88,7 +88,7 @@ function h(e) {
         }),
         myAvatarUrl: n,
         answersInteraction: l,
-        renderAnswerContent: e => (0, i.jsx)(_, {
+        renderAnswerContent: e => (0, i.jsx)(m, {
             answer: e,
             isExpired: t,
             myAvatarUrl: n,

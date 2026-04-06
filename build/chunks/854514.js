@@ -6,8 +6,8 @@ n.d(t, {
 });
 var i = n(627968),
     a = n(64700),
-    l = n(503698),
-    r = n.n(l),
+    r = n(503698),
+    l = n.n(r),
     s = n(323889),
     o = n(311907),
     d = n(397927),
@@ -38,8 +38,8 @@ function b(e) {
     let {
         assetImage: t,
         assetVideo: n
-    } = e, l = a.useRef(null);
-    (0, E.A)(l, C.rE.QUEST_HOME_DESKTOP);
+    } = e, r = a.useRef(null);
+    (0, E.A)(r, C.rE.QUEST_HOME_DESKTOP);
     let s = a.useMemo(() => (null != n ? (0, h.WV)(n.url) : null) ?? t.url, [n, t]);
     return null == n ? (0, i.jsxs)("div", {
         className: S.Tv,
@@ -51,14 +51,14 @@ function b(e) {
                 alt: t.altText
             })
         }), (0, i.jsx)("div", {
-            className: r()(S.LO, S.jx, S.hw),
+            className: l()(S.LO, S.jx, S.hw),
             children: (0, i.jsx)("img", {
                 className: S.LY,
                 src: t.url,
                 alt: ""
             })
         }), (0, i.jsx)("div", {
-            className: r()(S.LO, S.jx, S.Co),
+            className: l()(S.LO, S.jx, S.Co),
             children: (0, i.jsx)("img", {
                 className: S.LY,
                 src: t.url,
@@ -72,7 +72,7 @@ function b(e) {
             children: (0, i.jsx)(p.N, {
                 showImage: !1,
                 showVideo: !0,
-                assetRef: l,
+                assetRef: r,
                 imageAsset: {
                     alt: n.altText,
                     className: S.LY,
@@ -102,13 +102,13 @@ function y(e) {
     let {
         config: t,
         onQuestCtaClick: n
-    } = e, l = (0, o.bG)([u.A], () => u.A.quests), {
-        dismissQuestHomeHeroContent: r
+    } = e, r = (0, o.bG)([u.A], () => u.A.quests), {
+        dismissQuestHomeHeroContent: l
     } = (0, f.I)();
     a.useEffect(() => {
-        r(T.i.INDIRECT_ACTION)
-    }, [r]);
-    let h = a.useMemo(() => t.ctaQuests.find(e => l.has(e.questId)), [l, t.ctaQuests]);
+        l(T.i.INDIRECT_ACTION)
+    }, [l]);
+    let h = a.useMemo(() => t.ctaQuests.find(e => r.has(e.questId)), [r, t.ctaQuests]);
     return (0, i.jsx)(g.R, {
         adContentId: t.campaignId,
         adCreativeType: s.p.QUEST_HOME_HERO,
@@ -172,7 +172,7 @@ function y(e) {
 
 function O() {
     return (0, i.jsx)("div", {
-        className: r()(x.iE, x.FG, x.B3),
+        className: l()(x.iE, x.FG, x.B3),
         children: (0, i.jsx)(d.y$y, {})
     })
 }

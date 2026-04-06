@@ -4,19 +4,19 @@ n.d(t, {
 });
 var i = n(302495),
     a = n(334465),
-    l = n(901123);
-let r = new Set([l.BV.APP_WITH_INVITE_AND_GUILD_ONBOARDING(":inviteCode"), l.BV.APP_WITH_GIFT_CODE(":giftCode"), l.BV.APP, l.BV.PICK_GUILD_SETTINGS(":section?", ":subsection?"), l.BV.SETTINGS(":section", ":subsection?"), l.BV.USER_GUILD_NOTIFICATION_SETTINGS(i.p.guildId()), l.BV.APPLICATION_LIBRARY_INVENTORY, l.BV.WELCOME(i.p.guildId({
+    r = n(901123);
+let l = new Set([r.BV.APP_WITH_INVITE_AND_GUILD_ONBOARDING(":inviteCode"), r.BV.APP_WITH_GIFT_CODE(":giftCode"), r.BV.APP, r.BV.PICK_GUILD_SETTINGS(":section?", ":subsection?"), r.BV.SETTINGS(":section", ":subsection?"), r.BV.USER_GUILD_NOTIFICATION_SETTINGS(i.p.guildId()), r.BV.APPLICATION_LIBRARY_INVENTORY, r.BV.WELCOME(i.p.guildId({
     optional: !0
 }), i.p.channelId({
     optional: !0
-})), l.BV.GUILD_EVENT_DETAILS(i.p.guildId({
+})), r.BV.GUILD_EVENT_DETAILS(i.p.guildId({
     optional: !0
-}), ":guildEventId"), l.BV.GUILD_SETTINGS(i.p.guildId(), ":section?", ":subsection?"), l.BV.CHANNEL_THREAD_VIEW(i.p.guildId(), i.p.channelId(), ":threadId", ":messageId?"), l.BV.CHANNEL(i.p.guildId(), i.p.channelId({
+}), ":guildEventId"), r.BV.GUILD_SETTINGS(i.p.guildId(), ":section?", ":subsection?"), r.BV.CHANNEL_THREAD_VIEW(i.p.guildId(), i.p.channelId(), ":threadId", ":messageId?"), r.BV.CHANNEL(i.p.guildId(), i.p.channelId({
     optional: !0
-}), ":messageId?"), l.BV.ACTIVITY, l.BV.ACTIVITIES, l.BV.ACTIVITIES_HAPPENING_NOW, l.BV.ACTIVITY_DETAILS(":applicationId"), l.BV.APPLICATION_LIBRARY, l.BV.APPLICATION_STORE, l.BV.MESSAGE_REQUESTS, l.BV.COLLECTIBLES_SHOP, l.BV.COLLECTIBLES_SHOP_COLLECTION_DETAIL(":collectionId"), l.BV.COLLECTIBLES_SHOP_PRODUCT_DETAIL(":skuId"), l.BV.COLLECTIBLES_SHOP_LAYOUT(":layoutId"), l.BV.GUILD_DISCOVERY, l.BV.QUEST_HOME_DEPRECATED, l.BV.QUEST_HOME, l.BV.ICYMI, l.BV.GLOBAL_DISCOVERY, l.BV.GUILD_MEMBER_VERIFICATION(i.p.guildId()), l.BV.GUILD_MEMBER_VERIFICATION_FOR_HUB(i.p.guildId(), ":inviteCode?"), l.BV.GUILD_BOOSTING_MARKETING(i.p.guildId()), l.BV.GUILD_FEATURE(":feature", i.p.guildId()), l.BV.FEATURE(":feature"), l.BV.FAMILY_CENTER, l.BV.APPLICATION_DIRECTORY, l.BV.GAME_SHOP(i.p.guildId(), ":shopSkuId?", ":shopSlug?")]);
+}), ":messageId?"), r.BV.ACTIVITY, r.BV.ACTIVITIES, r.BV.ACTIVITIES_HAPPENING_NOW, r.BV.ACTIVITY_DETAILS(":applicationId"), r.BV.APPLICATION_LIBRARY, r.BV.APPLICATION_STORE, r.BV.MESSAGE_REQUESTS, r.BV.COLLECTIBLES_SHOP, r.BV.COLLECTIBLES_SHOP_COLLECTION_DETAIL(":collectionId"), r.BV.COLLECTIBLES_SHOP_PRODUCT_DETAIL(":skuId"), r.BV.COLLECTIBLES_SHOP_LAYOUT(":layoutId"), r.BV.GUILD_DISCOVERY, r.BV.QUEST_HOME_DEPRECATED, r.BV.QUEST_HOME, r.BV.ICYMI, r.BV.GLOBAL_DISCOVERY, r.BV.GUILD_MEMBER_VERIFICATION(i.p.guildId()), r.BV.GUILD_MEMBER_VERIFICATION_FOR_HUB(i.p.guildId(), ":inviteCode?"), r.BV.GUILD_BOOSTING_MARKETING(i.p.guildId()), r.BV.GUILD_FEATURE(":feature", i.p.guildId()), r.BV.FEATURE(":feature"), r.BV.FAMILY_CENTER, r.BV.APPLICATION_DIRECTORY, r.BV.GAME_SHOP(i.p.guildId(), ":shopSkuId?", ":shopSlug?")]);
 
 function s(e) {
-    for (let t of r)
+    for (let t of l)
         if (null != (0, a.B)(e, {
                 path: t
             })) return !0;

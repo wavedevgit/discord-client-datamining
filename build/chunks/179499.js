@@ -1,6 +1,6 @@
 /** chunk id: 179499 params = (module,exports,require) **/
 n.d(t, {
-    A: () => m
+    A: () => _
 });
 var i = n(64700),
     l = n(284009),
@@ -12,17 +12,17 @@ var i = n(64700),
     c = n(960427),
     u = n(985018);
 
-function m(e) {
+function _(e) {
     let {
         guildId: t,
         productId: n
     } = e, l = (0, r.bG)([o.A], () => o.A.getGuildProduct(n)), {
-        isLoading: m,
-        downloadAttachment: _
+        isLoading: _,
+        downloadAttachment: m
     } = (0, d.A)(t, n), h = i.useCallback(() => {
         let e = l?.attachments?.[0]?.id;
-        s()(null != e, "No attachment"), _(e)
-    }, [_, l?.attachments]), p = i.useCallback(() => c.A.open({
+        s()(null != e, "No attachment"), m(e)
+    }, [m, l?.attachments]), p = i.useCallback(() => c.A.open({
         guildId: t,
         productId: n
     }), [t, n]);
@@ -37,7 +37,7 @@ function m(e) {
         text: u.intl.string(u.t.t9bE9b),
         icon: a.s3U,
         iconPosition: "end",
-        loading: m,
+        loading: _,
         onClick: h
     }
 }

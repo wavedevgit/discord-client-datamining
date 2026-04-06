@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     a = n(64700),
-    l = n(342494),
-    r = n(793574),
+    r = n(342494),
+    l = n(793574),
     s = n(688810),
     o = n(979286),
     d = n(758836),
@@ -18,10 +18,10 @@ let A = e => {
         onClick: A
     } = e, {
         analyticsLocations: h
-    } = (0, s.Ay)(r.A.HOME_PAGE_SHOP_TAB), _ = a.useRef(n);
+    } = (0, s.Ay)(l.A.HOME_PAGE_SHOP_TAB), _ = a.useRef(n);
     return _.current = n, a.useEffect(() => () => {
         _.current?.()
-    }, []), (0, i.jsx)(l.AM, {
+    }, []), (0, i.jsx)(r.AM, {
         targetElementRef: t,
         position: "right",
         size: "md",
@@ -43,7 +43,7 @@ let A = e => {
             onClick: () => {
                 A?.(), (0, o.Cz)({
                     analyticsLocations: h,
-                    analyticsSource: r.A.HOME_PAGE_SHOP_TAB,
+                    analyticsSource: l.A.HOME_PAGE_SHOP_TAB,
                     tab: d.G2.HOME
                 })
             }

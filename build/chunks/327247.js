@@ -11,8 +11,8 @@ var i = n(627968),
     d = n(158954),
     c = n(311907),
     u = n(775602),
-    m = n(409626),
-    _ = n(106799),
+    _ = n(409626),
+    m = n(106799),
     h = n(859703),
     p = n(112142),
     g = n(714510),
@@ -26,8 +26,8 @@ var i = n(627968),
     b = n(201805),
     T = n(212614),
     N = n(79545),
-    S = n(646764),
-    y = n(398025),
+    y = n(646764),
+    S = n(398025),
     j = n(545986),
     L = n(654487),
     R = n(985018),
@@ -57,29 +57,29 @@ function w(e) {
     }), H = (0, C.Ic)(t), V = (0, A.In)(t), q = (0, E.mq)(t.config), W = (0, E.mH)(t.config), Y = t.userStatus?.enrolledAt != null, z = t.userStatus?.completedAt != null, Q = t.userStatus?.claimedAt != null, K = (0, E.ks)(t.config), J = (0, E._Z)(t.config), {
         completedRatio: X,
         completedRatioDisplay: Z
-    } = (0, A.O9)(t), $ = (0, g.gj)(t, b, m.Ob.QuestEmbed, w), ee = (0, N.Pd)(t), et = l.useMemo(() => Q && K ? R.intl.format(R.t["8Op4c4"], {
-        balanceHook: () => (0, i.jsxs)(O, {
+    } = (0, A.O9)(t), $ = (0, g.gj)(t, b, _.Ob.QuestEmbed, w), ee = (0, N.Pd)(t), et = l.useMemo(() => Q && K ? R.intl.format(R.t["8Op4c4"], {
+        balanceHook: () => (0, i.jsxs)(k, {
             questId: t.id,
-            children: [(0, i.jsx)(_.A, {
+            children: [(0, i.jsx)(m.A, {
                 shouldUseThemeColor: !0,
                 className: D.Kq,
                 customSize: 14
             }), J]
         }, t.id)
-    }) : Q ? (0, i.jsx)(O, {
+    }) : Q ? (0, i.jsx)(k, {
         questId: t.id,
         children: q
     }) : K ? R.intl.format(R.t.ro1sze, {
-        balanceHook: () => (0, i.jsxs)(O, {
+        balanceHook: () => (0, i.jsxs)(k, {
             questId: t.id,
-            children: [(0, i.jsx)(_.A, {
+            children: [(0, i.jsx)(m.A, {
                 shouldUseThemeColor: !0,
                 className: D.Kq,
                 customSize: 14
             }), J]
         }, t.id)
     }) : R.intl.format(R.t["0IUT4Y"], {
-        rewardWithArticleHook: () => (0, i.jsx)(O, {
+        rewardWithArticleHook: () => (0, i.jsx)(k, {
             questId: t.id,
             children: W
         }, t.id)
@@ -128,7 +128,7 @@ function w(e) {
                         size: 76,
                         percentComplete: X,
                         percentCompleteText: s && !H ? Z : void 0,
-                        children: (0, i.jsx)(S.A, {
+                        children: (0, i.jsx)(y.A, {
                             quest: t,
                             questContent: n,
                             autoplay: s,
@@ -137,7 +137,7 @@ function w(e) {
                             sourceQuestContent: b
                         })
                     })]
-                }) : (0, i.jsx)(S.A, {
+                }) : (0, i.jsx)(y.A, {
                     quest: t,
                     autoplay: s,
                     questContent: n,
@@ -165,7 +165,7 @@ function w(e) {
                 }), en]
             }), G && (0, i.jsx)(a.animated.div, {
                 style: {
-                    opacity: (0, y.a)(F.to([0, 1], [1, 0]))
+                    opacity: (0, S.a)(F.to([0, 1], [1, 0]))
                 },
                 className: D.hS
             })]
@@ -199,7 +199,7 @@ function w(e) {
                     analyticsCtxQuestContent: n,
                     analyticsCtxSourceQuestContent: b,
                     analyticsCtxQuestContentPosition: I
-                }) : (0, i.jsx)(k, {
+                }) : (0, i.jsx)(O, {
                     quest: t,
                     progressState: V,
                     questContent: n,
@@ -210,7 +210,7 @@ function w(e) {
         })]
     })
 }
-let O = l.memo(function(e) {
+let k = l.memo(function(e) {
     let {
         questId: t,
         children: n
@@ -224,14 +224,14 @@ let O = l.memo(function(e) {
     }, `${t}_reward`)
 });
 
-function k(e) {
+function O(e) {
     let {
         quest: t,
         progressState: n,
         questContent: l,
         questContentPosition: s,
         sourceQuestContent: r
-    } = e, a = (0, c.bG)([h.A], () => h.A.isEnrolling(t.id)), o = (0, I.vv)(t), u = (0, I.Cr)(t), m = (0, C.Ic)(t), _ = (0, b._c)({
+    } = e, a = (0, c.bG)([h.A], () => h.A.isEnrolling(t.id)), o = (0, I.vv)(t), u = (0, I.Cr)(t), _ = (0, C.Ic)(t), m = (0, b._c)({
         progressState: n,
         quest: t,
         questContent: l,
@@ -244,7 +244,7 @@ function k(e) {
         month: "numeric",
         day: "numeric"
     });
-    return m ? (0, i.jsx)(d.$nd, {
+    return _ ? (0, i.jsx)(d.$nd, {
         variant: "secondary",
         disabled: !0,
         text: R.intl.format(R.t["14o6QY"], {
@@ -254,9 +254,9 @@ function k(e) {
     }) : (0, i.jsx)(d.$nd, {
         fullWidth: !0,
         variant: "primary",
-        disabled: null == _.onClick,
+        disabled: null == m.onClick,
         loading: a,
-        onClick: _.onClick ?? void 0,
-        text: _.text
+        onClick: m.onClick ?? void 0,
+        text: m.text
     })
 }

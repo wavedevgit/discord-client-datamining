@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     a = n(64700),
-    l = n(342494),
-    r = n(976860),
+    r = n(342494),
+    l = n(976860),
     s = n(652215),
     o = n(985018),
     d = n(78701);
@@ -17,11 +17,11 @@ function c(e) {
         onRequestClose: c,
         targetElementRef: u
     } = e, A = a.useCallback(() => {
-        t(), (0, r.pX)(s.BVt.QUEST_HOME)
+        t(), (0, l.pX)(s.BVt.QUEST_HOME)
     }, [t]);
     return a.useEffect(() => {
         n()
-    }, [n]), (0, i.jsx)(l.AM, {
+    }, [n]), (0, i.jsx)(r.AM, {
         actions: [{
             text: o.intl.string(o.t.facYnD),
             variant: "primary",

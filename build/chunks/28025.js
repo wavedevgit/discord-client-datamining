@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var a = n(873263),
-    l = n(435220),
-    r = n(652215);
+    r = n(435220),
+    l = n(652215);
 
 function s() {
     let e = new URLSearchParams(location.search),
@@ -14,29 +14,29 @@ function s() {
         n = e.get("category_id");
     return e.delete("page"), (0, i.jsxs)(a.dO, {
         children: [null != n && null == t ? (0, i.jsx)(a.rd, {
-            path: r.BVt.APPLICATION_DIRECTORY_SEARCH,
-            to: `${r.BVt.GLOBAL_DISCOVERY_APPS_CATEGORY(`${n}`)}`
+            path: l.BVt.APPLICATION_DIRECTORY_SEARCH,
+            to: `${l.BVt.GLOBAL_DISCOVERY_APPS_CATEGORY(`${n}`)}`
         }) : (0, i.jsx)(a.rd, {
-            path: r.BVt.APPLICATION_DIRECTORY_SEARCH,
-            to: `${r.BVt.GLOBAL_DISCOVERY_APPS_SEARCH}?${e.toString()}`
+            path: l.BVt.APPLICATION_DIRECTORY_SEARCH,
+            to: `${l.BVt.GLOBAL_DISCOVERY_APPS_SEARCH}?${e.toString()}`
         }), (0, i.jsx)(a.rd, {
-            path: r.BVt.APPLICATION_DIRECTORY_PROFILE_STORE_SKU(":applicationId", ":skuId"),
-            to: r.BVt.GLOBAL_DISCOVERY_APPS_PROFILE_STORE_SKU(":applicationId", ":skuId")
+            path: l.BVt.APPLICATION_DIRECTORY_PROFILE_STORE_SKU(":applicationId", ":skuId"),
+            to: l.BVt.GLOBAL_DISCOVERY_APPS_PROFILE_STORE_SKU(":applicationId", ":skuId")
         }), (0, i.jsx)(a.rd, {
-            path: r.BVt.APPLICATION_DIRECTORY_PROFILE_SECTION(":applicationId", l.ApplicationDirectoryProfileSections.STORE),
-            to: r.BVt.GLOBAL_DISCOVERY_APPS_PROFILE_SECTION(":applicationId", l.GlobalDiscoveryAppsSections.STORE)
+            path: l.BVt.APPLICATION_DIRECTORY_PROFILE_SECTION(":applicationId", r.ApplicationDirectoryProfileSections.STORE),
+            to: l.BVt.GLOBAL_DISCOVERY_APPS_PROFILE_SECTION(":applicationId", r.GlobalDiscoveryAppsSections.STORE)
         }), (0, i.jsx)(a.rd, {
-            path: r.BVt.APPLICATION_DIRECTORY_PROFILE_SECTION(":applicationId", l.ApplicationDirectoryProfileSections.PREMIUM_DEPRECATED),
-            to: r.BVt.GLOBAL_DISCOVERY_APPS_PROFILE_SECTION(":applicationId", l.GlobalDiscoveryAppsSections.STORE)
+            path: l.BVt.APPLICATION_DIRECTORY_PROFILE_SECTION(":applicationId", r.ApplicationDirectoryProfileSections.PREMIUM_DEPRECATED),
+            to: l.BVt.GLOBAL_DISCOVERY_APPS_PROFILE_SECTION(":applicationId", r.GlobalDiscoveryAppsSections.STORE)
         }), (0, i.jsx)(a.rd, {
-            path: r.BVt.APPLICATION_DIRECTORY_PROFILE(":applicationId"),
+            path: l.BVt.APPLICATION_DIRECTORY_PROFILE(":applicationId"),
             to: {
-                pathname: r.BVt.GLOBAL_DISCOVERY_APPS_PROFILE(":applicationId"),
+                pathname: l.BVt.GLOBAL_DISCOVERY_APPS_PROFILE(":applicationId"),
                 search: location.search
             }
         }), (0, i.jsx)(a.rd, {
-            path: r.BVt.APPLICATION_DIRECTORY,
-            to: r.BVt.GLOBAL_DISCOVERY_APPS
+            path: l.BVt.APPLICATION_DIRECTORY,
+            to: l.BVt.GLOBAL_DISCOVERY_APPS
         })]
     })
 }

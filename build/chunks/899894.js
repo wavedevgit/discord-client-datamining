@@ -17,9 +17,9 @@ function u(e) {
     let t = e.message.embeds[0],
         l = t.fields?.find(e => e.rawName === o.AT.CLASSIFICATION_ID) ?? void 0,
         u = l?.rawValue ?? void 0,
-        m = t.fields?.find(e => e.rawName === o.AT.INCIDENT_TIMESTAMP) ?? void 0,
-        _ = null == m || null == m.rawValue ? void 0 : parseFloat(m.rawValue);
-    return null == u || null == _ ? null : (0, i.jsxs)(a.DUT, {
+        _ = t.fields?.find(e => e.rawName === o.AT.INCIDENT_TIMESTAMP) ?? void 0,
+        m = null == _ || null == _.rawValue ? void 0 : parseFloat(_.rawValue);
+    return null == u || null == m ? null : (0, i.jsxs)(a.DUT, {
         onClick: () => {
             (0, a.mMO)(async () => {
                 let {
@@ -50,7 +50,7 @@ function u(e) {
                 children: (0, i.jsx)(a.Text, {
                     variant: "text-xs/medium",
                     children: d.intl.format(d.t.eevFb6, {
-                        daysAgo: s()().diff(s().unix(_), "days")
+                        daysAgo: s()().diff(s().unix(m), "days")
                     })
                 })
             }), (0, i.jsx)("div", {

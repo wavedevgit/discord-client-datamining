@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(64700),
     a = n(607399),
-    l = n(311907),
-    r = n(197111),
+    r = n(311907),
+    l = n(197111),
     s = n(10088),
     o = n(961350),
     d = n(652215);
@@ -18,7 +18,7 @@ function u(e) {
         path: a,
         paramsBuilder: u,
         search: A
-    } = e, h = (0, l.bG)([o.default], () => o.default.getFingerprint() ?? o.default.getId()), _ = (0, l.bG)([o.default], () => o.default.getInstallationForTracking()), m = (0, l.bG)([s.A], () => s.A.getState(a), [a]), p = i.useMemo(() => null == u ? {
+    } = e, h = (0, r.bG)([o.default], () => o.default.getFingerprint() ?? o.default.getId()), _ = (0, r.bG)([o.default], () => o.default.getInstallationForTracking()), m = (0, r.bG)([s.A], () => s.A.getState(a), [a]), p = i.useMemo(() => null == u ? {
         path: a,
         fingerprint: h,
         installationId: _,
@@ -30,7 +30,7 @@ function u(e) {
         installationId: _
     }), [a, u, h, _, A]);
     return i.useEffect(() => {
-        c || null == m && r.A.openNativeAppModal(a, d.e$_.DEEP_LINK, {
+        c || null == m && l.A.openNativeAppModal(a, d.e$_.DEEP_LINK, {
             type: n,
             params: p
         })

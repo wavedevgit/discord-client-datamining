@@ -11,8 +11,8 @@ var i = n(627968),
     d = n(793574),
     c = n(688810),
     u = n(21599),
-    m = n(529200),
-    _ = n(427157),
+    _ = n(529200),
+    m = n(427157),
     h = n(961350),
     p = n(734057),
     g = n(994500),
@@ -28,7 +28,7 @@ function E(e) {
         getAcceptInviteContext: E
     } = e, I = (0, r.bG)([h.default], () => h.default.getId()), v = t.inviter?.id === I, b = t.state === x.elq.ACCEPTING, {
         analyticsLocations: T
-    } = (0, c.Ay)(d.A.INVITE_EMBED), N = (0, r.bG)([g.A], () => null != t.inviter && g.A.isFriend(t.inviter?.id)), S = l.useCallback(() => {
+    } = (0, c.Ay)(d.A.INVITE_EMBED), N = (0, r.bG)([g.A], () => null != t.inviter && g.A.isFriend(t.inviter?.id)), y = l.useCallback(() => {
         let e = "noop";
         null != t.inviter && null != p.A.getDMFromUserId(t.inviter.id) && (e = "transition", a.A.openPrivateChannel({
             recipientIds: [t.inviter.id]
@@ -39,7 +39,7 @@ function E(e) {
             invite_message_id: n.id,
             invite_instance_id: (0, u._U)(t.code, n.id)
         }, T)
-    }, [t, n, T]), y = l.useCallback(() => {
+    }, [t, n, T]), S = l.useCallback(() => {
         (0, o.he)({
             invite: t,
             action: "accept",
@@ -54,23 +54,23 @@ function E(e) {
         })
     }, [t, n, T, E]);
     if (null == t.inviter) return null;
-    let j = N ? S : y,
+    let j = N ? y : S,
         L = f.intl.string(f.t.ib7Ng1),
         R = "active";
     N ? (L = f.intl.string(f.t.xhxnPn), R = "secondary") : v && (L = f.intl.string(f.t.ib7Ng1), R = "secondary");
     let P = v ? f.intl.string(f.t.eQyu1F) : f.intl.string(f.t.PYJHW6),
         D = null != t.inviter ? `${t.inviter.username}` : "",
         M = null != t.inviter ? A.Ay.getUserTag(t.inviter) : "";
-    return (0, i.jsxs)(m.A, {
-        children: [(0, i.jsx)(m.A.Header, {
+    return (0, i.jsxs)(_.A, {
+        children: [(0, i.jsx)(_.A.Header, {
             text: P
-        }), (0, i.jsxs)(m.A.Body, {
+        }), (0, i.jsxs)(_.A.Body, {
             children: [(0, i.jsxs)("div", {
                 className: C.iH,
-                children: [(0, i.jsx)(m.A.Icon, {
-                    user: new _.A(t.inviter),
+                children: [(0, i.jsx)(_.A.Icon, {
+                    user: new m.A(t.inviter),
                     onClick: N ? j : void 0
-                }), (0, i.jsx)(m.A.Info, {
+                }), (0, i.jsx)(_.A.Info, {
                     title: D,
                     onClick: N ? j : void 0,
                     children: M

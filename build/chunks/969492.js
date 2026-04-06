@@ -5,8 +5,8 @@ n.d(t, {
 });
 var i, a = n(627968);
 n(64700);
-var l = n(192308),
-    r = n(333639),
+var r = n(192308),
+    l = n(333639),
     s = n(236697),
     o = n(768569),
     d = n(962915),
@@ -35,7 +35,7 @@ function I(e) {
         dismissMarketingPopover: x,
         fpEndsAt: v
     } = e;
-    if ((0, l.useHasAnyModalOpen)()) return t;
+    if ((0, r.useHasAnyModalOpen)()) return t;
     switch (n) {
         case "churn_discount":
             if (null != E && null != I) return (0, a.jsx)(_.A, {
@@ -100,7 +100,7 @@ function I(e) {
                 children: t
             });
         case "l_premium_sub_tooltip":
-            return (0, a.jsx)(r.e, {
+            return (0, a.jsx)(l.e, {
                 children: t
             });
         case "l_upsell":

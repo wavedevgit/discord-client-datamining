@@ -11,8 +11,8 @@ var i = n(627968),
     d = n(97808),
     c = n(732955),
     u = n(397927),
-    m = n(139286),
-    _ = n(520117),
+    _ = n(139286),
+    m = n(520117),
     h = n(793943),
     p = n(763754),
     g = n(973654),
@@ -35,7 +35,7 @@ let T = e => e.map(e => `#${e}`),
         } = (0, x.ko)();
         return void 0 === n ? null : (0, i.jsxs)("div", {
             className: b.kL,
-            children: [(0, i.jsx)(S, {
+            children: [(0, i.jsx)(y, {
                 message: t
             }), (0, i.jsx)(c.$nd, {
                 text: v.intl.string(v.t.SKNnqq),
@@ -53,7 +53,7 @@ let T = e => e.map(e => `#${e}`),
             })]
         })
     },
-    S = e => {
+    y = e => {
         let t, n, c, {
                 message: h
             } = e,
@@ -62,13 +62,13 @@ let T = e => e.map(e => `#${e}`),
             } = h,
             A = (0, p.Ay)(h),
             x = l.useMemo(() => (0, s.once)(() => {
-                (0, m.x)({
+                (0, _.x)({
                     type: r.ImpressionTypes.VIEW,
                     name: a.I.CUSTOM_THEME_SHARE,
                     properties: {}
                 })
             }), []),
-            f = (0, _.A)({
+            f = (0, m.A)({
                 onVisible: () => {
                     x()
                 },

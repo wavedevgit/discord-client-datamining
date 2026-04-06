@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var a = n(342494),
-    l = n(397927),
-    r = n(688810),
+    r = n(397927),
+    l = n(688810),
     s = n(532794),
     o = n(113359),
     d = n(788868),
@@ -24,7 +24,7 @@ let m = e => {
         location: "nitro_tab_popover"
     }) === o.xb.POPOVER, {
         analyticsLocations: E
-    } = (0, r.Ay)(), I = g ? h.intl.string(A.default.oOSj1l) : h.intl.format(A.default["c+NBSl"], {
+    } = (0, l.Ay)(), I = g ? h.intl.string(A.default.oOSj1l) : h.intl.format(A.default["c+NBSl"], {
         premiumGroupProductName: (0, c.DP)()
     }), f = g ? h.intl.string(A.default.nCLJQn) : h.intl.format(A.default.MuUV5u, {
         premiumGroupProductName: (0, c.DP)(),
@@ -58,7 +58,7 @@ let m = e => {
                     subscriptionTier: d.pe.TIER_2,
                     initialPlanId: d.gD.PREMIUM_GROUP_MONTH,
                     analyticsLocations: E
-                }) : (0, l.mMO)(async () => {
+                }) : (0, r.mMO)(async () => {
                     let {
                         default: e
                     } = await n.e("91976").then(n.bind(n, 526710));
@@ -68,7 +68,7 @@ let m = e => {
                 })
             },
             ...g ? {
-                icon: l.tvc,
+                icon: r.tvc,
                 iconPosition: "start"
             } : {}
         }],

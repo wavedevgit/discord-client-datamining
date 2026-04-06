@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(64700),
     a = n(635358),
-    l = n(311907),
-    r = n(49463),
+    r = n(311907),
+    l = n(49463),
     s = n(979286),
     o = n(590180),
     d = n(295811),
@@ -13,9 +13,9 @@ var i = n(64700),
 
 function u(e, t, n) {
     let u = arguments.length > 3 && void 0 !== arguments[3] && arguments[3],
-        A = (0, l.bG)([r.A], () => r.A.hasLoadedExperiments),
-        h = (0, l.bG)([o.A], () => o.A.skipNumCategories),
-        [_, m, p, g, E, I, f, C] = (0, l.yK)([d.A], () => [d.A.getShopBlocks(e), d.A.getLastSuccessfulFetch(e) ?? 0, d.A.getLastErrorTimestamp(e) ?? 0, d.A.getLastFetchOptions(e), d.A.getFetchShopHomeError(e), d.A.getIsFetchingShopHome(e), d.A.getHasKnownStaleData(e), d.A.getShopHomeConfigOverride()]),
+        A = (0, r.bG)([l.A], () => l.A.hasLoadedExperiments),
+        h = (0, r.bG)([o.A], () => o.A.skipNumCategories),
+        [_, m, p, g, E, I, f, C] = (0, r.yK)([d.A], () => [d.A.getShopBlocks(e), d.A.getLastSuccessfulFetch(e) ?? 0, d.A.getLastErrorTimestamp(e) ?? 0, d.A.getLastFetchOptions(e), d.A.getFetchShopHomeError(e), d.A.getIsFetchingShopHome(e), d.A.getHasKnownStaleData(e), d.A.getShopHomeConfigOverride()]),
         T = (0, i.useMemo)(() => ({
             ...t,
             variantsReturnStyle: a.g.VARIANTS_GROUP,

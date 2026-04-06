@@ -12,8 +12,8 @@ var l = n(503698),
     d = n(143413),
     c = n(734057),
     u = n(661191),
-    m = n(321045),
-    _ = n(456874),
+    _ = n(321045),
+    m = n(456874),
     h = n(707539),
     p = n(519397),
     g = n(747926),
@@ -40,8 +40,8 @@ function E(e) {
             compact: C,
             isSystemMessage: E
         } = e,
-        I = (0, r.bG)([_.A], () => _.A.getCount(u.id)),
-        v = (t = u, l = (0, r.bG)([_.A], () => _.A.getMostRecentMessage(t.id)), d = (0, r.bG)([_.A], () => _.A.getCount(t.id)), c = (0, h.JO)(t), t.threadMetadata?.archived ? x.intl.string(x.t.ZTo4HS) : null == d || 0 === d ? x.intl.string(x.t.HYtNyE) : null == l ? (0, i.jsxs)(i.Fragment, {
+        I = (0, r.bG)([m.A], () => m.A.getCount(u.id)),
+        v = (t = u, l = (0, r.bG)([m.A], () => m.A.getMostRecentMessage(t.id)), d = (0, r.bG)([m.A], () => m.A.getCount(t.id)), c = (0, h.JO)(t), t.threadMetadata?.archived ? x.intl.string(x.t.ZTo4HS) : null == d || 0 === d ? x.intl.string(x.t.HYtNyE) : null == l ? (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)("span", {
                 children: x.intl.string(x.t.ZTo4HS)
             }), (0, i.jsx)("span", {
@@ -100,7 +100,7 @@ function E(e) {
                     }), (0, i.jsx)("span", {
                         className: f.lO,
                         "aria-hidden": !b,
-                        children: (0, m.ub)(I, u.id)
+                        children: (0, _.ub)(I, u.id)
                     })]
                 }), (0, i.jsx)(a.Text, {
                     variant: "text-sm/normal",

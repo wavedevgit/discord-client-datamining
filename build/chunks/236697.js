@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     a = n(64700),
-    l = n(964892),
-    r = n(208756),
+    r = n(964892),
+    l = n(208756),
     s = n(135564),
     o = n(916845),
     d = n(627330),
@@ -36,7 +36,7 @@ function f(e) {
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)("div", {
             children: f
-        }), (0, i.jsx)(l.x, {
+        }), (0, i.jsx)(r.x, {
             targetElementRef: t,
             onRequestClose: () => n(m.i.USER_DISMISS),
             alignmentStrategy: "edge",
@@ -68,7 +68,7 @@ function f(e) {
                         type: "beta",
                         variant: "expressive"
                     }
-                }), (0, i.jsx)(r.Z, {
+                }), (0, i.jsx)(l.Z, {
                     actions: [{
                         text: g.intl.string(g.t.pj0XBN),
                         variant: "primary",

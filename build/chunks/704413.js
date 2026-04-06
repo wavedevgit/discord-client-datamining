@@ -14,12 +14,12 @@ function c(e, t) {
     let n = (0, a.M)(e),
         c = (0, r.d$)(n.getChannelId())[n.id],
         u = (0, d.A)(n.poll?.expiry),
-        m = s.Sf.useSetting(),
-        _ = (0, l.Ay)(),
-        h = t ?? _;
+        _ = s.Sf.useSetting(),
+        m = (0, l.Ay)(),
+        h = t ?? m;
     return i.useMemo(() => (0, o.Ay)(n, c, {
-        animateEmoji: m,
+        animateEmoji: _,
         theme: h,
         formattedExpirationLabel: u
-    }), [m, n, c, u, h])
+    }), [_, n, c, u, h])
 }

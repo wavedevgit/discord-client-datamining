@@ -1,7 +1,7 @@
 /** chunk id: 215566 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => c
+    A: () => u
 });
 var r = n(627968),
     i = n(158954),
@@ -23,7 +23,7 @@ function o(e) {
         count: n
     })
 }
-let c = function(e) {
+let u = function(e) {
     let {
         badge: t
     } = e;

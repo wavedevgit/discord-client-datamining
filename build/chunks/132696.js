@@ -11,8 +11,8 @@ var i = n(627968),
     d = n(451988),
     c = n(73939),
     u = n(397927),
-    m = n(133296),
-    _ = n(607470),
+    _ = n(133296),
+    m = n(607470),
     h = n(428339);
 class p extends l.Component {
     _animatedValue = new a.A.Value(1);
@@ -143,13 +143,13 @@ class g extends l.Component {
             title: s,
             playing: a,
             muted: d,
-            splashClassName: m,
+            splashClassName: _,
             splashPlaceholderClassName: g,
             renderMediaOverlay: A
         } = this.props, x = d ? u._RO : u.HKD;
         return (0, i.jsxs)(l.Fragment, {
-            children: [o.Fr ? null : (0, i.jsx)(_.A, {
-                className: r()(h.Yi, m),
+            children: [o.Fr ? null : (0, i.jsx)(m.A, {
+                className: r()(h.Yi, _),
                 muted: d,
                 loop: !0,
                 preload: "none",
@@ -217,7 +217,7 @@ class g extends l.Component {
             className: r()(h.Yi, s),
             src: n,
             title: l
-        }, "image") : (0, i.jsx)(m.A, {
+        }, "image") : (0, i.jsx)(_.A, {
             onInterval: this.nextItem,
             interval: 2e3,
             className: h.mZ,

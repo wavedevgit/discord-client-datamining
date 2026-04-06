@@ -1,7 +1,7 @@
 /** chunk id: 43136 params = (module,exports,require) **/
 n.d(t, {
-    A: () => y,
-    C: () => S
+    A: () => S,
+    C: () => y
 });
 var i = n(627968),
     l = n(64700),
@@ -12,8 +12,8 @@ var i = n(627968),
     d = n(241524),
     c = n(289397),
     u = n(607470),
-    m = n(263063),
-    _ = n(258335),
+    _ = n(263063),
+    m = n(258335),
     h = n(253932),
     p = n(696451),
     g = n(287809),
@@ -48,11 +48,11 @@ function N(e) {
     })
 }
 
-function S(e) {
+function y(e) {
     let {
         coverImageAsset: t,
         isPreview: n = !1
-    } = e, l = h.kt.useSetting(), s = (0, f.j)() && l, [r, a] = (0, _.A)(t, s), o = s ? (0, i.jsx)(u.A, {
+    } = e, l = h.kt.useSetting(), s = (0, f.j)() && l, [r, a] = (0, m.A)(t, s), o = s ? (0, i.jsx)(u.A, {
         autoPlay: !0,
         loop: !0,
         className: T.N4,
@@ -75,13 +75,13 @@ function S(e) {
     })
 }
 
-function y(e) {
+function S(e) {
     let {
         guild: t,
         subscriptionsSettings: n
     } = e, s = t.id, {
         nickname: u,
-        nickcolor: _
+        nickcolor: m
     } = (0, a.cf)([p.Ay, g.default], () => {
         let e = g.default.getCurrentUser();
         r()(null != e, "user cannot be null");
@@ -93,12 +93,12 @@ function y(e) {
     }, [s]), {
         isTruncated: h,
         ExpandableTextContainer: A
-    } = (0, C.e)(), f = (n?.description?.trim().length ?? 0) > 0, [y, j] = l.useState(1), L = (0, d.A)("(max-width: 1439px)"), {
+    } = (0, C.e)(), f = (n?.description?.trim().length ?? 0) > 0, [S, j] = l.useState(1), L = (0, d.A)("(max-width: 1439px)"), {
         selectedTab: R,
         isPhantomPreview: P
     } = (0, E.k)(), D = R === I.B.GUILD_PRODUCTS_PREVIEW ? b.intl.string(b.t["LvXy/H"]) : b.intl.string(b.t.XyqKh8), M = f ? (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(A, {
-            lineClamp: L || 2 === y ? 2 : 3,
+            lineClamp: L || 2 === S ? 2 : 3,
             children: (0, i.jsx)(o.Text, {
                 variant: "text-sm/normal",
                 color: "text-default",
@@ -123,9 +123,9 @@ function y(e) {
         children: [(0, i.jsxs)("div", {
             className: T.op,
             children: [(0, i.jsx)("div", {
-                children: (0, i.jsx)(m.Ay, {
+                children: (0, i.jsx)(_.Ay, {
                     guild: t,
-                    size: m.Ay.Sizes.LARGER,
+                    size: _.Ay.Sizes.LARGER,
                     iconSrc: null == t.icon || P ? (0, c.n)("server_products/storefront/default-guild-icon.jpg") : void 0
                 })
             }), (0, i.jsx)(o.hKd, {
@@ -154,7 +154,7 @@ function y(e) {
                         usernameHook: function(e, t) {
                             return (0, i.jsx)("span", {
                                 style: {
-                                    color: _
+                                    color: m
                                 },
                                 children: e
                             }, t)
@@ -164,7 +164,7 @@ function y(e) {
                     size: 9
                 }), M]
             })]
-        }), (0, i.jsx)(S, {
+        }), (0, i.jsx)(y, {
             coverImageAsset: n?.cover_image_asset,
             isPreview: P
         })]

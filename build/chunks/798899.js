@@ -16,8 +16,8 @@ function u(e) {
         application: t,
         message: n,
         header: u,
-        onClickContent: m,
-        onView: _,
+        onClickContent: _,
+        onView: m,
         guildId: h
     } = e, p = l.useMemo(() => (0, i.jsx)(s.Text, {
         variant: "text-xs/medium",
@@ -31,11 +31,11 @@ function u(e) {
         title: t.name,
         iconSrc: a.HT.getWhiteIconURL(),
         info: p,
-        onClickContent: m,
+        onClickContent: _,
         trackingConfig: {
             id: t.id,
             linkType: o.J.RICH_PRESENCE_INVITE,
-            onView: _,
+            onView: m,
             referrerId: n.author.id,
             guildId: h,
             channelId: n.channel_id,

@@ -11,8 +11,8 @@ var i = n(627968),
     d = n(990078),
     c = n(421380),
     u = n(397927),
-    m = n(686956),
-    _ = n(964486),
+    _ = n(686956),
+    m = n(964486),
     h = n(58149),
     p = n(235986),
     g = n(624793),
@@ -26,8 +26,8 @@ var i = n(627968),
     b = n(954571),
     T = n(927578),
     N = n(256449),
-    S = n(679382),
-    y = n(378058),
+    y = n(679382),
+    S = n(378058),
     j = n(148355),
     L = n(915488),
     R = n(652215),
@@ -36,14 +36,14 @@ var i = n(627968),
     M = n(865112),
     w = n(260268);
 
-function O(e) {
+function k(e) {
     b.default.track(R.HAw.PREMIUM_PROMOTION_OPENED, {
         location_page: null != e.guild_id ? R.liQ.GUILD_CHANNEL : R.liQ.DM_CHANNEL,
         location_section: R.JJy.STICKER_POPOUT
     }), (0, C.e)()
 }
 
-function k(e) {
+function O(e) {
     let {
         sticker: t,
         description: n
@@ -75,7 +75,7 @@ let U = e => {
             sticker: n,
             channel: s,
             refreshPositionKey: r
-        } = e, [o, d, c] = (0, a.yK)([S.A], () => [S.A.getStickerPack(n.pack_id), !S.A.hasLoadedStickerPacks, S.A.isPremiumPack(n.pack_id)], [n]), m = (e => {
+        } = e, [o, d, c] = (0, a.yK)([y.A], () => [y.A.getStickerPack(n.pack_id), !y.A.hasLoadedStickerPacks, y.A.isPremiumPack(n.pack_id)], [n]), _ = (e => {
             let {
                 sticker: t,
                 stickerPack: n
@@ -86,7 +86,7 @@ let U = e => {
             stickerPack: o
         });
         (0, N.Sr)(n.pack_id);
-        let _ = (0, N.pD)(s),
+        let m = (0, N.pD)(s),
             p = {
                 refreshPositionKey: r,
                 channel: s
@@ -125,7 +125,7 @@ let U = e => {
                 })
             }), (0, i.jsx)("ul", {
                 className: M.pQ,
-                children: m.map(e => (0, i.jsx)(j.A, {
+                children: _.map(e => (0, i.jsx)(j.A, {
                     isInteracting: !0,
                     size: 80,
                     sticker: e
@@ -139,7 +139,7 @@ let U = e => {
                     onClick: () => {
                         c && (0, L.a)({
                             stickerPack: o,
-                            stickerPickerCategories: _
+                            stickerPickerCategories: m
                         }), t()
                     }
                 }, "view-sticker-pack")
@@ -153,8 +153,8 @@ let U = e => {
                 closePopout: o,
                 refreshPositionKey: C
             } = e,
-            [N, S] = l.useState(null),
-            [y, L] = l.useState(!1),
+            [N, y] = l.useState(null),
+            [S, L] = l.useState(!1),
             U = v.default.getCurrentUser(),
             B = T.Ay.canUseCustomStickersEverywhere(U),
             G = (0, a.bG)([I.A], () => I.A.getGuild(n.guild_id)),
@@ -183,7 +183,7 @@ let U = e => {
                 stickerSourceGuild: e
             } = K.current;
             (async () => {
-                (null == e || e.features.has(R.GuildFeatures.DISCOVERABLE)) && S(await (0, A.A)(n.id)), L(!0)
+                (null == e || e.features.has(R.GuildFeatures.DISCOVERABLE)) && y(await (0, A.A)(n.id)), L(!0)
             })()
         }, [n.id, F]);
         let J = n.guild_id === s.getGuildId(),
@@ -192,7 +192,7 @@ let U = e => {
             $ = "Custom Sticker Popout";
         B ? t = F ? J ? D.intl.string(D.t.fZ0DiG) : D.intl.string(D.t["1f6D9m"]) : X ? D.intl.string(D.t.yHmoR9) : D.intl.string(D.t.vZaScH) : F ? (t = J ? D.intl.string(D.t.jNphpt) : D.intl.string(D.t.lyD5ZW), Z = !0, $ = "Custom Sticker Popout (Upsell)") : X ? (t = D.intl.string(D.t.IuXYch), Z = !0, $ = "Custom Sticker Popout (Upsell)") : (t = D.intl.format(D.t.hGWuxU, {
             openPremiumSettings: () => {
-                O(s), o()
+                k(s), o()
             }
         }), $ = "Custom Sticker Popout (Soft Upsell)");
         let ee = !Z && !F && X && B;
@@ -201,12 +201,12 @@ let U = e => {
                     refreshPositionKey: e
                 } = K.current;
                 e()
-            }, [y, N]), (0, _.Ay)(() => {
+            }, [S, N]), (0, m.Ay)(() => {
                 b.default.track(R.HAw.OPEN_POPOUT, {
                     type: $,
                     ...z
                 })
-            }), !y) return (0, i.jsx)(f.Y0, {
+            }), !S) return (0, i.jsx)(f.Y0, {
             className: M.v0
         });
         {
@@ -218,11 +218,11 @@ let U = e => {
                     o();
                     let e = N.id;
                     try {
-                        await m.A.joinGuild(e), m.A.transitionToGuildSync(e)
+                        await _.A.joinGuild(e), _.A.transitionToGuildSync(e)
                     } catch {}
                 }, (0, i.jsxs)("div", {
                     className: w.gH,
-                    children: [(0, i.jsx)(k, {
+                    children: [(0, i.jsx)(O, {
                         description: t,
                         sticker: n
                     }), Z && (0, i.jsx)(E.A, {
@@ -326,11 +326,11 @@ function G(e) {
     } = e;
     return (0, i.jsx)(f.Uq, {
         className: M.Bm,
-        children: (0, i.jsx)(k, {
+        children: (0, i.jsx)(O, {
             sticker: l,
             description: D.intl.format(D.t.hGWuxU, {
                 openPremiumSettings: () => {
-                    n(), O(t)
+                    n(), k(t)
                 }
             })
         })
@@ -343,12 +343,12 @@ let F = e => {
         closePopout: l,
         refreshPositionKey: s
     } = e, [r, a] = (0, N.Zq)(t, !0);
-    return null != r && (0, y.FD)(r) ? (0, i.jsx)(U, {
+    return null != r && (0, S.FD)(r) ? (0, i.jsx)(U, {
         sticker: r,
         closePopout: l,
         channel: n,
         refreshPositionKey: s
-    }) : null != r && (0, y.Xw)(r) ? (0, i.jsx)(B, {
+    }) : null != r && (0, S.Xw)(r) ? (0, i.jsx)(B, {
         sticker: r,
         channel: n,
         closePopout: l,

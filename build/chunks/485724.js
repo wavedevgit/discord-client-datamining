@@ -12,8 +12,8 @@ var i = n(627968),
     d = n(795816),
     c = n(574152),
     u = n(793574),
-    m = n(688810),
-    _ = n(522305),
+    _ = n(688810),
+    m = n(522305),
     h = n(735991),
     p = n(361926),
     g = n(583846),
@@ -27,8 +27,8 @@ var i = n(627968),
     b = n(967198),
     T = n(287809),
     N = n(486020),
-    S = n(204776),
-    y = n(725606),
+    y = n(204776),
+    S = n(725606),
     j = n(572211),
     L = n(178910),
     R = n(354287),
@@ -36,8 +36,8 @@ var i = n(627968),
     D = n(112150),
     M = n(574660),
     w = n(768349),
-    O = n(985018),
-    k = n(716957);
+    k = n(985018),
+    O = n(716957);
 
 function U(e) {
     let {
@@ -55,17 +55,17 @@ function U(e) {
         icon: t.icon,
         bot: C
     }), {
-        staticBannerSrc: S,
+        staticBannerSrc: y,
         videoBannerSrc: L,
         bannerAspectRatio: w
-    } = (0, D.f)(t), k = (0, a.bG)([E.default], () => r ?? E.default.getId(), [r]), {
+    } = (0, D.f)(t), O = (0, a.bG)([E.default], () => r ?? E.default.getId(), [r]), {
         analyticsLocations: U
-    } = (0, m.Ay)(u.A.APP_MESSAGE_EMBED), {
+    } = (0, _.Ay)(u.A.APP_MESSAGE_EMBED), {
         currentChannelId: F,
         instanceId: H,
         isCurrentlyInInstance: V,
         canLaunchInChannel: q
-    } = (0, y.w)(t.id), W = (0, c.A)(), Y = (0, p.Vr)({
+    } = (0, S.w)(t.id), W = (0, c.A)(), Y = (0, p.Vr)({
         context: {
             type: "contextless"
         },
@@ -74,7 +74,7 @@ function U(e) {
     }), z = null != v && b && Y, Q = q && b, K = (0, x.e)(t), J = (0, M.F)(t), X = (0, M.t)(t), Z = l.useMemo(() => {
         let e = [];
         return b ? K ? e.push({
-            label: O.intl.string(O.t.RscU7I),
+            label: k.intl.string(k.t.RscU7I),
             trackingArea: R.kY.PLAY,
             onClick() {
                 A.A.launchFrame({
@@ -82,7 +82,7 @@ function U(e) {
                 })
             }
         }) : (Q && e.push({
-            label: null == H ? O.intl.string(O.t.RscU7I) : V ? O.intl.string(O.t.DPfdsq) : O.intl.string(O.t.sqe0hj),
+            label: null == H ? k.intl.string(k.t.RscU7I) : V ? k.intl.string(k.t.DPfdsq) : k.intl.string(k.t.sqe0hj),
             trackingArea: R.kY.PLAY,
             onClick() {
                 (0, d.su)({
@@ -91,32 +91,32 @@ function U(e) {
                     isStart: null == H,
                     embeddedActivitiesManager: W,
                     customId: s,
-                    referrerId: k,
+                    referrerId: O,
                     analyticsLocations: U
                 })
             },
             disabled: V
         }), !Q && z && e.push({
-            label: O.intl.string(O.t.JeK1Wg),
+            label: k.intl.string(k.t.JeK1Wg),
             trackingArea: R.kY.PLAY,
             onClick() {
-                (0, _.Q)({
+                (0, m.Q)({
                     appId: t.id,
                     botId: v,
                     analyticsLocations: U,
                     customId: s,
-                    referrerId: k
+                    referrerId: O
                 })
             }
         })) : null != X && e.push(X), e
-    }, [b, X, K, t.id, Q, z, H, V, F, W, s, k, U, v]), $ = b ? (0, i.jsx)(G, {
+    }, [b, X, K, t.id, Q, z, H, V, F, W, s, O, U, v]), $ = b ? (0, i.jsx)(G, {
         app: t
     }) : (0, i.jsx)(B, {
         app: t
     });
     return (0, i.jsx)(j.h, {
         title: f,
-        staticBannerSrc: S,
+        staticBannerSrc: y,
         videoBannerSrc: L,
         onClickBanner: J,
         bannerAspectRatio: w,
@@ -127,7 +127,7 @@ function U(e) {
         trackingConfig: {
             id: t.id,
             linkType: n,
-            referrerId: k,
+            referrerId: O,
             activityCustomId: s,
             onView: g,
             guildId: I.A.getChannel(o.channel_id)?.guild_id,
@@ -140,7 +140,7 @@ function U(e) {
 function B(e) {
     let {
         app: t
-    } = e, n = (0, S.Ie)({
+    } = e, n = (0, y.Ie)({
         customInstallUrl: t.customInstallUrl,
         installParams: t.installParams,
         integrationTypesConfig: t.integrationTypesConfig
@@ -151,19 +151,19 @@ function B(e) {
                 compactDisplay: "short"
             }),
             i = t.directoryEntry?.guild_count ?? 0;
-        return 0 === i ? null : O.intl.format(O.t["6IW6Wi"], {
+        return 0 === i ? null : k.intl.format(k.t["6IW6Wi"], {
             guildCount: e.format(i)
         })
     }, [t.directoryEntry?.guild_count, n, r]), c = t.categories?.at(0)?.name;
     return (0, i.jsxs)(i.Fragment, {
         children: [null != c && (0, i.jsx)(o.Text, {
             variant: "text-xs/medium",
-            className: k.h_,
+            className: O.h_,
             color: "none",
             children: c
         }), null != d && (0, i.jsxs)(o.Text, {
             variant: "text-xs/normal",
-            className: k.dS,
+            className: O.dS,
             color: "none",
             lineClamp: 1,
             children: [(0, i.jsx)(o.QGJ, {
@@ -189,11 +189,11 @@ function G(e) {
             null != i && l && e.push(i)
         }
         return e
-    }, [c]), m = l.useMemo(() => {
+    }, [c]), _ = l.useMemo(() => {
         if (u.length > 0) return (0, i.jsx)(L.$, {
             activityUsers: u,
             guildId: d,
-            activityText: O.intl.formatToPlainString(O.t["IJa+46"], {
+            activityText: k.intl.formatToPlainString(k.t["IJa+46"], {
                 count: u.length
             })
         });
@@ -201,11 +201,11 @@ function G(e) {
             children: [(0, i.jsx)(o.Y3C, {
                 size: "xxs",
                 color: "currentColor"
-            }), O.intl.string(O.t.TsWCdW)]
+            }), k.intl.string(k.t.TsWCdW)]
         });
-        let e = s > 0 ? O.intl.format(O.t.z8EAJW, {
+        let e = s > 0 ? k.intl.format(k.t.z8EAJW, {
             count: s
-        }) : O.intl.string(O.t.RjceQU);
+        }) : k.intl.string(k.t.RjceQU);
         return (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)(o.nys, {
                 size: "xxs",
@@ -216,19 +216,19 @@ function G(e) {
     return (0, i.jsxs)(i.Fragment, {
         children: [n.length > 0 && (0, i.jsx)(o.Text, {
             variant: "text-xs/medium",
-            className: k.h_,
+            className: O.h_,
             color: "none",
             lineClamp: 1,
             children: n.map((e, t) => (0, i.jsx)("span", {
-                className: k.Tc,
+                className: O.Tc,
                 children: e
             }, t))
         }), (0, i.jsx)(o.Text, {
             variant: "text-xs/normal",
-            className: k.dS,
+            className: O.dS,
             color: "none",
             lineClamp: 1,
-            children: m
+            children: _
         })]
     })
 }

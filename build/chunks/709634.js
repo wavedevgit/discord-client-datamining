@@ -11,8 +11,8 @@ var i = n(627968),
     d = n(397927),
     c = n(763754),
     u = n(449859),
-    m = n(943815),
-    _ = n(447215),
+    _ = n(943815),
+    m = n(447215),
     h = n(287809),
     p = n(405269),
     g = n(641131),
@@ -28,12 +28,12 @@ let E = e => {
         channel: a,
         messageId: E,
         reportedTimestamp: I
-    } = e, v = h.default.getUser(t), b = l.useMemo(() => s ? (0, m.A)((0, p.i$)(o()(), "LT")) : null, [s]), T = (0, _.P)({
+    } = e, v = h.default.getUser(t), b = l.useMemo(() => s ? (0, _.A)((0, p.i$)(o()(), "LT")) : null, [s]), T = (0, m.P)({
         user: v,
         channelId: a.id,
         guildId: n,
         messageId: E
-    })((0, c.m2)(v, a)), N = null != v ? v.getAvatarURL(n, (0, d.FT9)(d._3J.SIZE_16)) : C, S = null != v ? A.intl.format(g.default["+zqXZs"], {
+    })((0, c.m2)(v, a)), N = null != v ? v.getAvatarURL(n, (0, d.FT9)(d._3J.SIZE_16)) : C, y = null != v ? A.intl.format(g.default["+zqXZs"], {
         username: v.username,
         onUserClick: T
     }) : A.intl.string(g.default.xpRjfS);
@@ -48,7 +48,7 @@ let E = e => {
             variant: "text-sm/medium",
             color: "text-subtle",
             className: x.Xh,
-            children: S
+            children: y
         }), (0, i.jsxs)(d.Text, {
             variant: "text-sm/medium",
             color: "text-subtle",

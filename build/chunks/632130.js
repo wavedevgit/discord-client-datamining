@@ -4,8 +4,8 @@ n.d(t, {
 }), n(321073);
 var i = n(339048),
     a = n(830382),
-    l = n(800342),
-    r = n(10716),
+    r = n(800342),
+    l = n(10716),
     s = n(143582),
     o = n(147964),
     d = n(636401),
@@ -24,21 +24,21 @@ async function h(e, t) {
         n.forEach(e => {
             e.subscription_plans.forEach(n => {
                 let a = n?.price,
-                    l = t.find(e => e.id === n.sku_id);
-                if (null == l) return;
-                let r = {
+                    r = t.find(e => e.id === n.sku_id);
+                if (null == r) return;
+                let l = {
                     id: n.sku_id,
-                    name: l.name,
-                    type: l.type,
+                    name: r.name,
+                    type: r.type,
                     price: {
                         amount: a,
                         currency: A.Yri.USD
                     },
                     application_id: e.application_id,
                     flags: e.sku_flags,
-                    release_date: l.release_date ?? null
+                    release_date: r.release_date ?? null
                 };
-                i.push(r)
+                i.push(l)
             })
         }), i.filter(e => e?.price != null).forEach(e => a.push(e))
     }), a
@@ -52,12 +52,12 @@ async function _(e) {
     if (null == n) throw new d.A({
         errorCode: A.Lw6.INVALID_COMMAND
     }, "No application.");
-    if (o.A.inTestModeForApplication(n) || r.A.inDevModeForApplication(n)) {
+    if (o.A.inTestModeForApplication(n) || l.A.inDevModeForApplication(n)) {
         let e = await a.O1(n, !1),
             t = await h(n, e);
         return [...e.filter(e => null != e.price), ...t]
     }
-    let i = await l.JI(n);
+    let i = await r.JI(n);
     return [...i.filter(e => e.sku.type !== A.Puh.SUBSCRIPTION_GROUP).map(e => e.sku).filter(e => null != e.price), ...await h(n, i.map(e => e.sku))]
 }
 

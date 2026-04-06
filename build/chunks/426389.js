@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     a = n(64700),
-    l = n(735438),
-    r = n.n(l),
+    r = n(735438),
+    l = n.n(r),
     s = n(111956),
     o = n.n(s),
     d = n(311907),
@@ -40,15 +40,15 @@ let w = 15 * x.A.Millis.MINUTE,
         let {
             party: t,
             onUserContextMenu: n,
-            onChannelContextMenu: l,
-            quest: r
+            onChannelContextMenu: r,
+            quest: l
         } = e, s = a.useRef(null), d = (0, i.jsx)(y.A, {
             party: t,
             onUserContextMenu: n
         }), u = (0, i.jsx)(b.A, {
             party: t,
-            onChannelContextMenu: l,
-            quest: r
+            onChannelContextMenu: r,
+            quest: l
         }), {
             partiedMembers: A,
             applicationStreams: h,
@@ -95,15 +95,15 @@ let w = 15 * x.A.Millis.MINUTE,
             }
         }) : null
     }),
-    G = r().throttle(() => f.u(), 3e5);
+    G = l().throttle(() => f.u(), 3e5);
 
 function k() {
     let {
         nowPlayingCards: e,
         loaded: t,
         needsRefresh: n,
-        fetching: l,
-        currentUser: r
+        fetching: r,
+        currentUser: l
     } = (0, d.cf)([N.A, C.A, T.default], () => ({
         nowPlayingCards: N.A.nowPlayingCards,
         loaded: N.A.loaded,
@@ -113,9 +113,9 @@ function k() {
     })), s = (0, d.bG)([h.A], () => h.A.quests), o = (0, p.oH)(Array.from(s.values()));
     a.useEffect(() => (u.h.wait(() => v.O()), () => {
         u.h.wait(() => v.v())
-    }), [r?.id]), a.useEffect(() => {
-        n && !l && G()
-    }, [n, l]);
+    }), [l?.id]), a.useEffect(() => {
+        n && !r && G()
+    }, [n, r]);
     let {
         use_api_call: f
     } = m.M.getConfig({
@@ -128,13 +128,13 @@ function k() {
             n = new Map,
             i = new Set,
             a = (0, I.$e)(s, D.B3);
-        for (let l of e) l.party.currentActivities.forEach(e => {
+        for (let r of e) r.party.currentActivities.forEach(e => {
             let {
-                activity: r
+                activity: l
             } = e;
-            if (null == r) return;
-            let s = (0, E.nq)(a, r);
-            null == s || i.has(s.id) || (t.set(l.party.id, s), i.add(s.id), n.set(l.party.id, s.id))
+            if (null == l) return;
+            let s = (0, E.nq)(a, l);
+            null == s || i.has(s.id) || (t.set(r.party.id, s), i.add(s.id), n.set(r.party.id, s.id))
         });
         return {
             questsByPartyId: t,

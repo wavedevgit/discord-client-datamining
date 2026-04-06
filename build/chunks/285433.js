@@ -11,8 +11,8 @@ var i = n(627968),
     d = n(990078),
     c = n(397927),
     u = n(770178),
-    m = n(765548),
-    _ = n(341915),
+    _ = n(765548),
+    m = n(341915),
     h = n(890687),
     p = n(918338),
     g = n(270045),
@@ -32,31 +32,31 @@ let v = e => {
         expansionSpring: b,
         isAnimating: T,
         isExpanded: N,
-        isInteracting: S,
-        contentPosition: y,
+        isInteracting: y,
+        contentPosition: S,
         toggleExpanded: j,
         sourceQuestContent: L
-    } = e, [R, P] = l.useState(null), [D, M] = l.useState(null), w = (0, m.A)(e => {
+    } = e, [R, P] = l.useState(null), [D, M] = l.useState(null), w = (0, _.A)(e => {
         let t = e.target;
         P(t.offsetWidth), M(t.scrollWidth)
-    }), O = (0, u.w)(w), k = s === _.uF.QUESTS_EMBED, U = n.userStatus?.completedAt != null, B = (0, h.S5)(n.config.expiresAt), G = (0, h.S5)(n.config.rewardsConfig.rewardsExpireAt), F = l.useMemo(() => null != n.config.cosponsorMetadata, [n]), H = (0, i.jsx)(A.Ay, {
+    }), k = (0, u.w)(w), O = s === m.uF.QUESTS_EMBED, U = n.userStatus?.completedAt != null, B = (0, h.S5)(n.config.expiresAt), G = (0, h.S5)(n.config.rewardsConfig.rewardsExpireAt), F = l.useMemo(() => null != n.config.cosponsorMetadata, [n]), H = (0, i.jsx)(A.Ay, {
         className: I.Iu,
         logotypeClassName: F ? I.qN : void 0,
         gameTileSize: A.LU.MEDIUM,
         quest: n,
         separatorSpacing: A.C8.MEDIUM,
         theme: C.NJ.DARK,
-        withGameTile: !k || null == n.config.cosponsorMetadata
+        withGameTile: !O || null == n.config.cosponsorMetadata
     });
     return (0, i.jsxs)("div", {
         className: r()(I.nw, {
-            [I.Gg]: k,
+            [I.Gg]: O,
             [I.e5]: "xs" === v
         }),
         "aria-label": E.intl.string(E.t.dcl9MQ),
         children: [(0, i.jsx)(p.A, {
             quest: n,
-            isInteracting: S,
+            isInteracting: y,
             containerClassName: I.v7,
             imageSize: {
                 width: 660,
@@ -68,11 +68,11 @@ let v = e => {
             "aria-expanded": N,
             children: [(0, i.jsx)(a.animated.div, {
                 className: r()(I.VW, {
-                    [I.eX]: k
+                    [I.eX]: O
                 }),
                 children: (0, i.jsx)(a.animated.div, {
                     className: r()(I.Yu, {
-                        [I.Gg]: k
+                        [I.Gg]: O
                     }),
                     style: {
                         opacity: (0, f.a)(b.to({
@@ -86,7 +86,7 @@ let v = e => {
                         className: I.uA,
                         children: [(0, i.jsxs)("div", {
                             className: I._V,
-                            children: [H, k ? null : (0, i.jsx)(x.A, {
+                            children: [H, O ? null : (0, i.jsx)(x.A, {
                                 color: "always-white"
                             })]
                         }), (0, i.jsxs)("div", {
@@ -95,7 +95,7 @@ let v = e => {
                                 __unsupportedReactNodeAsText: n.config.messages.questName,
                                 shouldShow: null != R && null != D && R < D,
                                 children: (0, i.jsx)(c.Heading, {
-                                    ref: O,
+                                    ref: k,
                                     variant: "lg" === v ? "heading-xxl/bold" : "sm" === v ? "heading-xl/bold" : "heading-lg/bold",
                                     className: I.R_,
                                     color: "always-white",
@@ -125,9 +125,9 @@ let v = e => {
                 children: (0, i.jsx)(g.C, {
                     questContent: s,
                     quest: n,
-                    questContentPosition: y,
+                    questContentPosition: S,
                     shouldShowDisclosure: !0,
-                    showShareLink: !t && k,
+                    showShareLink: !t && O,
                     sourceQuestContent: L,
                     children: e => (0, i.jsx)(a.animated.div, {
                         style: {

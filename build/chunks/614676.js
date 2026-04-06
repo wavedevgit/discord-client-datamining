@@ -4,12 +4,12 @@ n.d(t, {
 });
 var i = n(626584),
     a = n(90924),
-    l = n(629471),
-    r = n(652215);
-let s = new i.A(r.meB),
+    r = n(629471),
+    l = n(652215);
+let s = new i.A(l.meB),
     o = {
-        [r.e$_.CAPTURE_LOG]: {
-            validation: e => (0, l.A)(e).required().keys({
+        [l.e$_.CAPTURE_LOG]: {
+            validation: e => (0, r.A)(e).required().keys({
                 level: e.string().max(10).required(),
                 message: e.string().max(1e3).required()
             }),
@@ -22,23 +22,23 @@ let s = new i.A(r.meB),
                     }
                 } = e;
                 (0, a.lG)(t.transport);
-                let l = t.application.id,
-                    r = `${l} - ${i}`;
+                let r = t.application.id,
+                    l = `${r} - ${i}`;
                 switch (n) {
                     case "log":
-                        s.log(r);
+                        s.log(l);
                         break;
                     case "warn":
-                        s.warn(r);
+                        s.warn(l);
                         break;
                     case "debug":
-                        s.verbose(r);
+                        s.verbose(l);
                         break;
                     case "info":
-                        s.info(r);
+                        s.info(l);
                         break;
                     case "error":
-                        s.error(r)
+                        s.error(l)
                 }
             }
         }
