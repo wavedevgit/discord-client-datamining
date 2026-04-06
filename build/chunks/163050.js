@@ -16,8 +16,8 @@ var r = s(627968),
     m = s(15552),
     C = s(854378),
     A = s(701273),
-    g = s(720353),
-    S = s(976860),
+    S = s(720353),
+    g = s(976860),
     E = s(210714),
     f = s(961350),
     w = s(203982),
@@ -27,8 +27,8 @@ var r = s(627968),
 c.Ay.initialize();
 class j extends n.PureComponent {
     static defaultProps = {
-        transitionTo: S.pX,
-        replaceWith: S.bG
+        transitionTo: g.pX,
+        replaceWith: g.bG
     };
     constructor(e) {
         super(e);
@@ -244,7 +244,7 @@ class j extends n.PureComponent {
             },
             theme: s,
             className: n,
-            children: (0, r.jsx)(g.t, {
+            children: (0, r.jsx)(S.t, {
                 mfaFinish: i,
                 mfaChallenge: {
                     ticket: e,

@@ -1,26 +1,29 @@
 /** chunk id: 876587 params = (module,exports,require) **/
 n.d(t, {
-    O: () => c
+    O: () => g
 });
 var i = n(627968);
 n(64700);
 var s = n(554146),
     l = n(342494),
-    a = n(932001),
-    r = n(49999),
-    o = n(985018),
-    d = n(201682);
-let c = e => {
+    a = n(397927),
+    r = n(932001),
+    o = n(808247),
+    d = n(788868),
+    c = n(49999),
+    u = n(985018),
+    m = n(201682);
+let g = e => {
     let {
         targetElementRef: t
-    } = e, [n, c] = (0, a.kn)([s.M.PREMIUM_WISHLIST_COACHMARK]);
+    } = e, [n, g] = (0, r.kn)([s.M.PREMIUM_WISHLIST_COACHMARK]);
     return n !== s.M.PREMIUM_WISHLIST_COACHMARK ? null : (0, i.jsx)(l.AM, {
         targetElementRef: t,
-        title: o.intl.string(o.t["1YLUuN"]),
-        body: o.intl.string(o.t.IqPvOn),
+        title: u.intl.string(u.t["1YLUuN"]),
+        body: u.intl.string(u.t.IqPvOn),
         graphic: {
             type: "image",
-            src: d.A
+            src: m.A
         },
         size: "video",
         alignmentStrategy: "edge",
@@ -30,9 +33,15 @@ let c = e => {
             align: "end"
         },
         actions: [{
-            text: o.intl.string(o.t.moIhI0),
-            onClick: () => c(r.i.TAKE_ACTION)
+            text: u.intl.string(u.t["8DkMEQ"]),
+            onClick: async () => {
+                try {
+                    await o.A.addSkuToWishlist(d.pe.TIER_2), g(c.i.TAKE_ACTION)
+                } catch {
+                    (0, a.showToast)((0, a.createToast)(u.intl.string(u.t.F8FvUy), a.ToastType.FAILURE)), a.ORC.announce(u.intl.string(u.t.F8FvUy))
+                }
+            }
         }],
-        onRequestClose: () => c(r.i.USER_DISMISS)
+        onRequestClose: () => g(c.i.USER_DISMISS)
     })
 }

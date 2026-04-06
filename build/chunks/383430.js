@@ -63,6 +63,15 @@ function u(e) {
                 icon: a.U1X
             },
             action: u
+        }), null != m && (0, i.jsx)(a.Drp, {
+            id: "add-nitro-to-wishlist",
+            label: c.intl.string(c.t.lG6a5x),
+            iconLeft: a.tvc,
+            leadingAccessory: {
+                type: "icon",
+                icon: a.tvc
+            },
+            action: m
         }), null != g && _.map(e => {
             let {
                 id: t,
@@ -78,15 +87,6 @@ function u(e) {
                 leadingAccessory: s,
                 action: r
             }, t)
-        }), null != m && (0, i.jsx)(a.Drp, {
-            id: "add-nitro-to-wishlist",
-            label: c.intl.string(c.t.lG6a5x),
-            iconLeft: a.tvc,
-            leadingAccessory: {
-                type: "icon",
-                icon: a.tvc
-            },
-            action: m
         })]
     }), [u, g, m, _]);
     return (0, i.jsx)(a.YNO, {

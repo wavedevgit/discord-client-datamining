@@ -134,7 +134,8 @@ let F = e => {
                     inOfferExperience: ei
                 }), el && (0, i.jsx)(O.l, {
                     className: V.ij,
-                    size: "md"
+                    size: "md",
+                    location: g.A.PREMIUM_WISHLIST_SETTINGS_HERO
                 })]
             }), (0, i.jsxs)("div", {
                 className: a()({

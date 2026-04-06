@@ -22,12 +22,12 @@ var i = s(503698),
     j = s(753070),
     v = s(731854),
     A = s(191850),
-    y = s(985018),
-    S = s(725647);
+    S = s(985018),
+    y = s(725647);
 
 function C() {
     return (0, r.jsx)("span", {
-        className: S.gO,
+        className: y.gO,
         children: "•"
     })
 }
@@ -39,20 +39,20 @@ function b(e) {
         data: s
     } = (0, c.YY)(null != t && (0, _.l)(t) ? t.id : void 0);
     return null == t ? (0, r.jsx)(o.Fzq, {
-        className: S.Jd,
+        className: y.Jd,
         size: "md",
         color: "currentColor"
     }) : (0, _.l)(t) ? (0, r.jsx)(d.A, {
         game: s,
         pid: t.pid
     }) : null == t.icon || "" === t.icon ? (0, r.jsx)(o.Fzq, {
-        className: S.Jd,
+        className: y.Jd,
         size: "md",
         color: "currentColor"
     }) : (0, r.jsx)("img", {
         src: t.icon,
         alt: "",
-        className: S.pI
+        className: y.pI
     })
 }
 
@@ -65,27 +65,27 @@ function w() {
         selectedSource: c,
         sourceType: d,
         audioSourceId: _
-    }] = (0, x.tS)(), w = (0, u.tR)(v.oh.AUDIO_INPUT), [I, E] = (0, g.A)(e) ?? [t, s], N = (0, p.K)(e), O = (0, m.b)(I), T = d === l.fS.CAMERA, R = null != c, M = null != c ? c?.id?.startsWith(l.fS.CAMERA) : T, U = e === j.jQ.PRESET_AUTO, G = R ? void 0 : e === j.jQ.PRESET_VIDEO ? y.intl.string(A.default.MuHUFe) : e === j.jQ.PRESET_DOCUMENTS ? y.intl.string(A.default.y0JuYR) : e === j.jQ.PRESET_AUTO ? y.intl.string(A.default.m4jtlc) : void 0, D = (0, a.bG)([f.Ay], () => f.Ay.getUseSystemScreensharePicker() && (0, h.isLinux)());
+    }] = (0, x.tS)(), w = (0, u.tR)(v.oh.AUDIO_INPUT), [I, E] = (0, g.A)(e) ?? [t, s], N = (0, p.K)(e), O = (0, m.b)(I), T = d === l.fS.CAMERA, R = null != c, M = null != c ? c?.id?.startsWith(l.fS.CAMERA) : T, U = e === j.jQ.PRESET_AUTO, G = R ? void 0 : e === j.jQ.PRESET_VIDEO ? S.intl.string(A.default.MuHUFe) : e === j.jQ.PRESET_DOCUMENTS ? S.intl.string(A.default.y0JuYR) : e === j.jQ.PRESET_AUTO ? S.intl.string(A.default.m4jtlc) : void 0, L = (0, a.bG)([f.Ay], () => f.Ay.getUseSystemScreensharePicker() && (0, h.isLinux)());
     return (0, r.jsxs)("div", {
-        className: S.zr,
+        className: y.zr,
         children: [R && (0, r.jsx)(b, {
             source: c
         }), (0, r.jsxs)("div", {
-            className: S.z,
+            className: y.z,
             children: [(0, r.jsx)(o.Text, {
-                className: S.fB,
+                className: y.fB,
                 variant: "text-md/semibold",
                 color: "text-strong",
-                children: R ? c?.name ?? y.intl.string(A.default["hJMA+x"]) : N
+                children: R ? c?.name ?? S.intl.string(A.default["hJMA+x"]) : N
             }), (0, r.jsxs)(o.Text, {
-                className: S.kI,
+                className: y.kI,
                 variant: "text-xs/medium",
                 color: "text-muted",
                 children: [R && (0, r.jsxs)(r.Fragment, {
                     children: [(0, r.jsxs)("span", {
-                        className: S.x5,
+                        className: y.x5,
                         children: [(0, r.jsx)(o.Zes, {
-                            className: S.Kk,
+                            className: y.Kk,
                             size: "xxs",
                             color: "currentColor"
                         }), N]
@@ -100,15 +100,15 @@ function w() {
                     })]
                 }), i && (0, r.jsxs)(r.Fragment, {
                     children: [(0, r.jsx)(C, {}), (0, r.jsxs)("span", {
-                        className: S.x5,
+                        className: y.x5,
                         children: [(0, r.jsx)(o._RO, {
-                            className: n()(S.Kk, S.tG),
+                            className: n()(y.Kk, y.tG),
                             size: "xxs",
                             color: "currentColor"
-                        }), y.intl.string(A.default.FzMGWR)]
+                        }), S.intl.string(A.default.FzMGWR)]
                     })]
-                }), !i && !M && D && (0, r.jsxs)(r.Fragment, {
-                    children: [(0, r.jsx)(C, {}), y.intl.string(A.default["n9/rUq"])]
+                }), !i && !M && L && (0, r.jsxs)(r.Fragment, {
+                    children: [(0, r.jsx)(C, {}), S.intl.string(A.default["n9/rUq"])]
                 }), M ? (0, r.jsxs)(r.Fragment, {
                     children: [(0, r.jsx)(C, {}), (0, r.jsx)("span", {
                         children: w.find(e => {

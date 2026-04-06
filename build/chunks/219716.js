@@ -1,6 +1,6 @@
 /** chunk id: 219716 params = (module,exports,require) **/
 s.d(t, {
-    A: () => S
+    A: () => g
 });
 var r = s(627968),
     n = s(64700),
@@ -16,8 +16,8 @@ var r = s(627968),
     m = s(518977),
     C = s(985018),
     A = s(60433),
-    g = s(778437);
-class S extends n.PureComponent {
+    S = s(778437);
+class g extends n.PureComponent {
     constructor(e) {
         super(e), this.state = {
             query: ""
@@ -73,7 +73,7 @@ class S extends n.PureComponent {
             className: e
         } = this.props;
         return (0, r.jsxs)(u.i6n, {
-            className: i()(A.eQ, g.Cw, e),
+            className: i()(A.eQ, S.Cw, e),
             children: [(0, r.jsx)(u.i6n.SearchBar, {
                 query: this.state.query,
                 placeholder: C.intl.string(C.t.hGOODh),

@@ -1,6 +1,6 @@
 /** chunk id: 933924 params = (module,exports,require) **/
 s.d(t, {
-    a: () => A
+    a: () => C
 }), s(508300);
 var r = s(73153),
     n = s(830215),
@@ -11,11 +11,10 @@ var r = s(73153),
     c = s(464477),
     h = s(3928),
     d = s(917136),
-    u = s(191986),
-    p = s(293731),
-    m = s(652215);
-let C = new l.A("ConditionalMediation");
-async function A(e) {
+    u = s(293731),
+    p = s(652215);
+let m = new l.A("ConditionalMediation");
+async function C(e) {
     let {
         abortController: t,
         loginSource: s,
@@ -23,31 +22,31 @@ async function A(e) {
     } = e;
     if (null == i.A && null != window.PublicKeyCredential) {
         let e, i = await PublicKeyCredential.isConditionalMediationAvailable?.(),
-            A = (await PublicKeyCredential.getClientCapabilities?.())?.conditionalGet;
-        if (!i && !A) return;
+            C = (await PublicKeyCredential.getClientCapabilities?.())?.conditionalGet;
+        if (!i && !C) return;
         let {
-            challenge: g,
+            challenge: A,
             ticket: S
         } = await (0, d.Ud)();
         try {
-            e = await (0, p.J)(g, t.signal)
+            e = await (0, u.J)(A, t.signal)
         } catch (e) {
             if (!(e instanceof DOMException)) throw e;
             switch (e.name) {
                 case "AbortError":
                 case "SecurityError":
                 case "NotAllowedError":
-                    C.warn(e.name, e.message);
+                    m.warn(e.name, e.message);
                     break;
                 default:
-                    (0, c.Os)(e), C.error(e.name, e.message)
+                    (0, c.Os)(e), m.error(e.name, e.message)
             }
             return
         }
         r.h.dispatch({
             type: "PASSWORDLESS_START"
-        }), o.default.track(m.HAw.LOGIN_ATTEMPTED, {
-            source: m.mdB.PASSWORDLESS_CONDITIONAL_UI,
+        }), o.default.track(p.HAw.LOGIN_ATTEMPTED, {
+            source: p.mdB.PASSWORDLESS_CONDITIONAL_UI,
             login_method: "passwordless",
             login_source: s,
             gift_code_sku_id: l
@@ -60,18 +59,10 @@ async function A(e) {
                 giftCodeSKUId: l
             })
         } catch (t) {
-            if (r.h.dispatch({
-                    type: "PASSWORDLESS_FAILURE",
-                    error: t
-                }), t instanceof a.LG && null != t.status && t.status >= 400 && t.status < 500) {
-                let {
-                    enabled: t
-                } = u.V.getConfig({
-                    location: "conditional"
-                });
-                t && await h.A.signalUnknownCredential(e)
-            }
-            throw t
+            throw r.h.dispatch({
+                type: "PASSWORDLESS_FAILURE",
+                error: t
+            }), t instanceof a.LG && null != t.status && t.status >= 400 && t.status < 500 && await h.A.signalUnknownCredential(e), t
         }
     }
 }

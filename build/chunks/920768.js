@@ -17,20 +17,20 @@ function u(e) {
         show: t,
         alpha2: s,
         countryCode: a
-    } = e, u = n.useRef(null), p = n.useRef(null), [m, C] = n.useState(0), [A, g] = n.useState(!1);
+    } = e, u = n.useRef(null), p = n.useRef(null), [m, C] = n.useState(0), [A, S] = n.useState(!1);
     n.useEffect(() => {
         function e() {
             C(t ? p.current?.getBoundingClientRect().width ?? 0 : 0)
         }
         return e(), window.addEventListener("resize", e), () => window.removeEventListener("resize", e)
     }, [t, s, a]);
-    let S = (0, o.zhh)({
+    let g = (0, o.zhh)({
         width: `${m}px`,
         onStart: () => {
-            g(!0)
+            S(!0)
         },
         onRest: () => {
-            g(!1)
+            S(!1)
         }
     });
     return (0, r.jsx)(o.YNO, {
@@ -49,7 +49,7 @@ function u(e) {
             ref: u,
             children: (0, r.jsx)(l.animated.div, {
                 className: d.kL,
-                style: S,
+                style: g,
                 children: (0, r.jsxs)("div", {
                     className: d.WH,
                     ref: p,
