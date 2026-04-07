@@ -20,24 +20,26 @@ let d = "orb-checkout-payment-modal-key",
             onCheckoutSuccess: n,
             analyticsLocations: i = [],
             analyticsSourceLocation: s,
-            onCloseCallback: u
-        } = e, m = (0, r.A)(), p = !1;
+            applicationId: u,
+            onCloseCallback: m
+        } = e, p = (0, r.A)(), x = !1;
         return h({
-            loadId: m,
+            loadId: p,
             skuId: t,
             onCheckoutSuccess: e => {
-                p || n(e), p = !0
+                x || n(e), x = !0
             },
+            applicationId: u,
             analyticsLocations: i,
             analyticsSourceLocation: s,
             onCloseCallback: () => {
                 (0, l.S)({
-                    checkoutSucceeded: p
-                }), u?.()
+                    checkoutSucceeded: x
+                }), m?.()
             },
             onCloseRequest: () => {
-                p || (0, o.g)(c.HAw.PAYMENT_FLOW_CANCELED, {
-                    loadId: m,
+                x || (0, o.g)(c.HAw.PAYMENT_FLOW_CANCELED, {
+                    loadId: p,
                     skuId: t,
                     analyticsLocations: i,
                     analyticsSourceLocation: s
@@ -52,8 +54,9 @@ let d = "orb-checkout-payment-modal-key",
             onCheckoutSuccess: r,
             analyticsLocations: a = [],
             analyticsSourceLocation: l,
-            onCloseCallback: o,
-            onCloseRequest: c
+            applicationId: o,
+            onCloseCallback: c,
+            onCloseRequest: u
         } = e;
         return i.h.wait(() => {
             i.h.dispatch({
@@ -62,15 +65,16 @@ let d = "orb-checkout-payment-modal-key",
         }), (0, s.Tt)().openCheckoutModal({
             loadId: t,
             skuId: n,
+            applicationId: o,
             analyticsLocations: a,
             analyticsSourceLocation: l,
             flowSpecificOptions: {
                 onCheckoutSuccess: r
             },
             openModalOptions: {
-                onCloseCallback: o,
+                onCloseCallback: c,
                 modalKey: d,
-                onCloseRequest: c
+                onCloseRequest: u
             }
         })
     }
