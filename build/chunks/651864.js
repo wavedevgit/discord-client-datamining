@@ -15,8 +15,8 @@ var a = n(627968),
     x = n(958805),
     h = n(735321),
     f = n(961350),
-    g = n(760751),
-    p = n(985018);
+    p = n(760751),
+    g = n(985018);
 async function _(e) {
     let t = e((0, h.BF)());
     await x.A.savePendingWidgets(t.filter(e => !e.isDiscardable()))
@@ -26,29 +26,29 @@ function v(e) {
     let t = e?.id,
         n = e?.supplementalData?.name ?? e?.name ?? "",
         x = (0, r.bG)([f.default], () => f.default.getId()),
-        v = (0, r.bG)([g.A], () => g.A.getDetectableGame(t)),
+        v = (0, r.bG)([p.A], () => p.A.getDetectableGame(t)),
         A = l.useMemo(() => [{
             type: i.x.FAVORITE_GAMES,
-            addLabel: p.intl.string(p.t.fgmitg),
-            removeLabel: p.intl.string(p.t.TSGNQY),
+            addLabel: g.intl.string(g.t.fgmitg),
+            removeLabel: g.intl.string(g.t.TSGNQY),
             menuId: "game-profile-add-favorite-game",
             icon: s.C3E
         }, {
             type: i.x.PLAYED_GAMES,
-            addLabel: p.intl.string(p.t["0xIVLR"]),
-            removeLabel: p.intl.string(p.t.iN9ShA),
+            addLabel: g.intl.string(g.t["0xIVLR"]),
+            removeLabel: g.intl.string(g.t.iN9ShA),
             menuId: "game-profile-add-games-i-like",
             icon: s.Gek
         }, {
             type: i.x.CURRENT_GAMES,
-            addLabel: p.intl.string(p.t.G0c4En),
-            removeLabel: p.intl.string(p.t.h00srf),
+            addLabel: g.intl.string(g.t.G0c4En),
+            removeLabel: g.intl.string(g.t.h00srf),
             menuId: "game-profile-add-games-in-rotation",
             icon: s.H_z
         }, {
             type: i.x.WANT_TO_PLAY_GAMES,
-            addLabel: p.intl.string(p.t.UuBS4K),
-            removeLabel: p.intl.string(p.t.MB8XLq),
+            addLabel: g.intl.string(g.t.UuBS4K),
+            removeLabel: g.intl.string(g.t.MB8XLq),
             menuId: "game-profile-add-want-to-play",
             icon: s._b6
         }], []),
@@ -120,9 +120,9 @@ function v(e) {
         let e = j.some(e => e instanceof d.R && e.applicationId === b);
         S.push((0, a.jsx)(s.Drp, {
             id: "game-profile-app-widget",
-            label: e ? p.intl.formatToPlainString(p.t.Ktb1n8, {
+            label: e ? g.intl.formatToPlainString(g.t.Ktb1n8, {
                 name: n
-            }) : p.intl.formatToPlainString(p.t.Xp6iZt, {
+            }) : g.intl.formatToPlainString(g.t.Xp6iZt, {
                 name: n
             }),
             action: () => I(!e),
@@ -140,7 +140,7 @@ function v(e) {
             S.push((0, a.jsx)(s.Drp, {
                 id: e.menuId,
                 label: l ? e.removeLabel : e.addLabel,
-                subtext: i ? p.intl.string(p.t["86OoiH"]) : void 0,
+                subtext: i ? g.intl.string(g.t["86OoiH"]) : void 0,
                 subtextLineClamp: 1,
                 action: () => C(e.type, !l),
                 leadingAccessory: {

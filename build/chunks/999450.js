@@ -22,8 +22,8 @@ function f(e) {
         socialLayerStorefrontRecommendationsData: n,
         closeModal: f
     } = (0, u.c)(), {
-        analyticsLocations: g
-    } = (0, r.Ay)([i.A.GAME_PROFILE]), p = l.useCallback(() => {
+        analyticsLocations: p
+    } = (0, r.Ay)([i.A.GAME_PROFILE]), g = l.useCallback(() => {
         n?.guildId != null && (t(d.Ws.GameShop), f(), (0, s.default)({
             guildId: n.guildId
         }))
@@ -33,22 +33,22 @@ function f(e) {
             skuId: e,
             applicationId: a,
             isStorefront: !1,
-            analyticsLocations: g,
+            analyticsLocations: p,
             onClose: () => {
                 location.pathname.indexOf(x.BVt.CHANNELS_GAME_SHOP(l)) >= 0 && f()
             }
         }))
-    }, [t, f, g, n]);
+    }, [t, f, p, n]);
     if (null == n) return null;
     let {
         skuIds: v
     } = n;
     return (0, a.jsx)(m.A, {
         title: h.intl.string(h.t.WDdlUb),
-        onClickViewAll: p,
+        onClickViewAll: g,
         children: (0, a.jsx)(c.R, {
             skuIds: v,
-            analyticsLocations: g,
+            analyticsLocations: p,
             onCardClick: _
         })
     })

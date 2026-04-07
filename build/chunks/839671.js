@@ -16,10 +16,10 @@ var a = n(627968),
     x = n(282063),
     h = n(808900);
 let f = [s.V.OFFICIAL, s.V.TWITTER, s.V.YOUTUBE],
-    g = {
+    p = {
         colorClass: h.wP
     },
-    p = {
+    g = {
         size: "xs",
         colorClass: h.wP
     };
@@ -87,7 +87,7 @@ function v(e) {
         action: i,
         icon: r,
         title: s
-    } = _(t, g), d = l.useCallback(() => {
+    } = _(t, p), d = l.useCallback(() => {
         n(i)
     }, [i, n]);
     return (0, a.jsx)(o.m, {
@@ -138,7 +138,7 @@ function j(e) {
         action: r,
         icon: s,
         title: d
-    } = _(t, p), m = l.useCallback(() => {
+    } = _(t, g), m = l.useCallback(() => {
         n(r), i(t.url)
     }, [r, i, n, t.url]);
     return (0, a.jsx)(o.m, {

@@ -21,8 +21,8 @@ var i = n(989349),
     E = n(662427),
     T = n(826673),
     I = n(367727),
-    g = n(487329),
-    N = n(161518),
+    N = n(487329),
+    g = n(161518),
     f = n(49463),
     C = n(15285),
     h = n(142120),
@@ -38,8 +38,8 @@ var i = n(989349),
     P = n(860300),
     v = n(264779),
     j = n(412260),
-    k = n(852218),
-    y = n(160394),
+    y = n(852218),
+    k = n(160394),
     b = n(859703),
     G = n(34550),
     H = n(655116),
@@ -75,8 +75,8 @@ var i = n(989349),
     eE = n(166403),
     eT = n(816733),
     eI = n(469778),
-    eg = n(147964),
-    eN = n(723702),
+    eN = n(147964),
+    eg = n(723702),
     ef = n(927578),
     eC = n(837921),
     eh = n(755439),
@@ -130,8 +130,8 @@ let eL = {
         [ex.kqX.SYSTEM_SERVICE_WARNING]: "hideSystemServiceWarningNotice",
         [ex.kqX.E2EE_UPDATE_REQUIRED]: "hideE2EEUpdateRequiredNotice"
     },
-    ek = new Set([ex.kqX.NO_INPUT_DETECTED, ex.kqX.NO_INPUT_DEVICES_DETECTED, ex.kqX.STREAMER_MODE, ex.kqX.VIDEO_UNSUPPORTED_BROWSER, ex.kqX.SPOTIFY_AUTO_PAUSED, ex.kqX.DISPATCH_ERROR, ex.kqX.DISPATCH_ERROR, ex.kqX.DISPATCH_INSTALL_SCRIPT_PROGRESS, ex.kqX.WINDOWS_MEDIA_PACK_REQUIRED]),
-    ey = {},
+    ey = new Set([ex.kqX.NO_INPUT_DETECTED, ex.kqX.NO_INPUT_DEVICES_DETECTED, ex.kqX.STREAMER_MODE, ex.kqX.VIDEO_UNSUPPORTED_BROWSER, ex.kqX.SPOTIFY_AUTO_PAUSED, ex.kqX.DISPATCH_ERROR, ex.kqX.DISPATCH_ERROR, ex.kqX.DISPATCH_INSTALL_SCRIPT_PROGRESS, ex.kqX.WINDOWS_MEDIA_PACK_REQUIRED]),
+    ek = {},
     eb = {},
     eG = Object.freeze({
         id: null,
@@ -149,7 +149,7 @@ function eF(e) {
 function eB(e, t, n) {
     if (null == e) return;
     let i = ej[e];
-    (null == i || t || c.w.set(i, !0), ek.has(e) && (ey[e] = !0), null != n && null != i) ? c.w.set(eF(e), n.format("YYYY-MM-DDTHH:mm:ss.SSSZ")): c.w.remove(eF(e))
+    (null == i || t || c.w.set(i, !0), ey.has(e) && (ek[e] = !0), null != n && null != i) ? c.w.set(eF(e), n.format("YYYY-MM-DDTHH:mm:ss.SSSZ")): c.w.remove(eF(e))
 }
 let ew = null;
 
@@ -178,8 +178,8 @@ function eX(e) {
         let t, n = null != (t = c.w.get(eF(e))) ? l()(t) : null;
         if (null != n) return n?.isAfter(l()())
     }
-    let a = ey[e];
-    return !!a || (null != i && "" !== i ? c.w.get(i) : !!ek.has(e) && a)
+    let a = ek[e];
+    return !!a || (null != i && "" !== i ? c.w.get(i) : !!ey.has(e) && a)
 }
 let eq = [ex.kqX.QUARANTINED, ex.kqX.AUTOMOD_QUARANTINED_USER_PROFILE, ex.kqX.VIEWING_ROLES, ex.kqX.INVITED_TO_SPEAK, ex.kqX.LURKING_GUILD, ex.kqX.VOICE_DISABLED, ex.kqX.NO_INPUT_DEVICES_DETECTED, ex.kqX.NO_INPUT_DETECTED, ex.kqX.PTT_NO_KEYBIND_WARNING, ex.kqX.HARDWARE_MUTE, ex.kqX.DISPATCH_ERROR, ex.kqX.DISPATCH_INSTALL_SCRIPT_PROGRESS, ex.kqX.SPOTIFY_AUTO_PAUSED, ex.kqX.WIN32_DEPRECATED_MESSAGE, ex.kqX.WIN7_8_DEPRECATED_MESSAGE, ex.kqX.WIN_COMPAT_MODE_MESSAGE, ex.kqX.MACOS_19_DEPRECATED_MESSAGE, ex.kqX.E2EE_UPDATE_REQUIRED, ex.kqX.WINDOWS_MEDIA_PACK_REQUIRED, ex.kqX.VOICE_CONNECTED_LAST_SESSION, ex.kqX.SYSTEM_SERVICE_WARNING, ex.kqX.AUTO_MODERATION_MENTION_RAID_DETECTION, ex.kqX.GUILD_RAID_NOTIFICATION, ex.kqX.GIFTING_PROMOTION_REMINDER, ex.kqX.QUESTS_PROGRESS_INTERRUPTION, ex.kqX.UNCLAIMED_ACCOUNT, ex.kqX.PENDING_MEMBER, ex.kqX.CHECKOUT_RECOVERY_NAGBAR, ex.kqX.PREMIUM_MARKETING_NAGBAR, ex.kqX.OUTBOUND_PROMOTION, ex.kqX.CORRUPT_INSTALLATION, ex.kqX.VIDEO_UNSUPPORTED_BROWSER, ex.kqX.DETECTED_OFF_PLATFORM_PREMIUM_PERK, ex.kqX.DETECTED_OFF_PLATFORM_PREMIUM_PERK_UPSELL, ex.kqX.STREAMER_MODE, ex.kqX.SCHEDULED_MAINTENANCE, ex.kqX.BOUNCED_EMAIL_DETECTED, ex.kqX.UNVERIFIED_ACCOUNT, ex.kqX.PREMIUM_TIER_2_TRIAL_ENDING, ex.kqX.PREMIUM_TIER_2_DISCOUNT_ENDING, ex.kqX.PREMIUM_TIER_0_TRIAL_ENDING, ex.kqX.PREMIUM_UNCANCEL, ex.kqX.PREMIUM_MISSING_PAYMENT, ex.kqX.PREMIUM_PAST_DUE_INVALID_PAYMENT, ex.kqX.PREMIUM_PAST_DUE_MISSING_PAYMENT, ex.kqX.PREMIUM_PAST_DUE_ONE_TIME_PAYMENT, ex.kqX.PREMIUM_REACTIVATE, ex.kqX.ACTIVATE_SERVER_SUBSCRIPTION, ex.kqX.PASSKEY_BACKUP, ex.kqX.APPLICATION_TEST_MODE, ex.kqX.QUEST_APP_UPSELL, ex.kqX.DOWNLOAD_NAG, ex.kqX.CONNECT_SPOTIFY, ex.kqX.CONNECT_PLAYSTATION, ex.kqX.SURVEY, ex.kqX.BLOCK_USER_FEEDBACK_NAGBAR, ex.kqX.IGNORE_USER_FEEDBACK_NAGBAR];
 ex.kqX.QUARANTINED, ex.kqX.AUTOMOD_QUARANTINED_USER_PROFILE, ex.kqX.VIEWING_ROLES, ex.kqX.INVITED_TO_SPEAK, ex.kqX.LURKING_GUILD, ex.kqX.VOICE_DISABLED, ex.kqX.NO_INPUT_DETECTED, ex.kqX.HARDWARE_MUTE, ex.kqX.DISPATCH_ERROR, ex.kqX.DISPATCH_INSTALL_SCRIPT_PROGRESS, ex.kqX.SPOTIFY_AUTO_PAUSED, ex.kqX.VOICE_CONNECTED_LAST_SESSION, ex.kqX.PENDING_MEMBER, ex.kqX.STREAMER_MODE, ex.kqX.SCHEDULED_MAINTENANCE;
@@ -250,10 +250,10 @@ let eK = {
         predicate: () => null != ea.A.getLastSessionVoiceChannelId()
     },
     [ex.kqX.NO_INPUT_DETECTED]: {
-        predicate: () => N.A.hasActiveErrorOfType(g.iy.NO_AUDIO_INPUT_DETECTED)
+        predicate: () => g.A.hasActiveErrorOfType(N.iy.NO_AUDIO_INPUT_DETECTED)
     },
     [ex.kqX.NO_INPUT_DEVICES_DETECTED]: {
-        predicate: () => N.A.hasActiveErrorOfType(g.iy.NO_INPUT_DEVICES)
+        predicate: () => g.A.hasActiveErrorOfType(N.iy.NO_INPUT_DEVICES)
     },
     [ex.kqX.HARDWARE_MUTE]: {
         predicate: () => ea.A.isConnected() && et.Ay.isHardwareMute() && et.Ay.isHardwareMuteNoticeEnabled() && !w.Ay.disableHardwareMuteSilenceAlert,
@@ -306,7 +306,7 @@ let eK = {
         predicate: () => (0, v.So)()
     },
     [ex.kqX.CORRUPT_INSTALLATION]: {
-        predicate: () => eN.isPlatformEmbedded && (!s.A.supported() || eS.A.isCorruptInstallation())
+        predicate: () => eg.isPlatformEmbedded && (!s.A.supported() || eS.A.isCorruptInstallation())
     },
     [ex.kqX.VIDEO_UNSUPPORTED_BROWSER]: {
         predicate: e => {
@@ -333,10 +333,10 @@ let eK = {
         predicate: () => ec.A.enabled
     },
     [ex.kqX.DOWNLOAD_NAG]: {
-        predicate: () => !eN.isPlatformEmbedded && !eX(ex.kqX.DOWNLOAD_NAG)
+        predicate: () => !eg.isPlatformEmbedded && !eX(ex.kqX.DOWNLOAD_NAG)
     },
     [ex.kqX.QUEST_APP_UPSELL]: {
-        predicate: () => (0, eN.isOculusWeb)() && !eX(ex.kqX.QUEST_APP_UPSELL) && y.A.getConfig({
+        predicate: () => (0, eg.isOculusWeb)() && !eX(ex.kqX.QUEST_APP_UPSELL) && k.A.getConfig({
             location: "NoticeStore"
         }).enabled
     },
@@ -514,10 +514,10 @@ let eK = {
         }
     },
     [ex.kqX.APPLICATION_TEST_MODE]: {
-        predicate: () => null != eg.A.testModeApplicationId,
+        predicate: () => null != eN.A.testModeApplicationId,
         metadata: () => {
-            if (null == eg.A.testModeApplicationId) return {};
-            let e = eg.A.testModeApplicationId,
+            if (null == eN.A.testModeApplicationId) return {};
+            let e = eN.A.testModeApplicationId,
                 t = A.A.getApplication(e);
             return {
                 applicationName: null != t ? t.name : e,
@@ -600,7 +600,7 @@ let eK = {
             let e = j.A.getMarketingComponentByType(a.C.NAGBAR);
             if (null == e) return !1;
             if (null == e.promotionId) return !0;
-            let t = j.A.getPromotionByTypeAndId(k.pt.MARKETING_MOMENT, e.promotionId);
+            let t = j.A.getPromotionByTypeAndId(y.pt.MARKETING_MOMENT, e.promotionId);
             return !(null != t && t.endDate < new Date) && !(0, T.u$)(o.M.PREMIUM_MARKETING_MOMENT_NAGBAR_UPSELL, e.promotionId).isDismissed
         }
     },
@@ -638,7 +638,7 @@ let eK = {
         })
     },
     [ex.kqX.WINDOWS_MEDIA_PACK_REQUIRED]: {
-        predicate: () => !(!eN.isPlatformEmbedded || u.A?.process.platform !== "win32" || eX(ex.kqX.WINDOWS_MEDIA_PACK_REQUIRED) || eC.Ay.getEnableHardwareAcceleration()) && !1 === et.Ay.isH264MfDecodeAvailable()
+        predicate: () => !(!eg.isPlatformEmbedded || u.A?.process.platform !== "win32" || eX(ex.kqX.WINDOWS_MEDIA_PACK_REQUIRED) || eC.Ay.getEnableHardwareAcceleration()) && !1 === et.Ay.isH264MfDecodeAvailable()
     }
 };
 
@@ -678,12 +678,12 @@ function eY() {
 }
 
 function eW() {
-    return ec.A.enabled || delete ey[ex.kqX.STREAMER_MODE], eY()
+    return ec.A.enabled || delete ek[ex.kqX.STREAMER_MODE], eY()
 }
 class eJ extends r.Ay.Store {
     static displayName = "NoticeStore";
     initialize() {
-        this.syncWith([N.A, ed.Ay, el.A, Z.A, es.A, j.A, eT.A, W.default, Q.A, V.A, x.A, b.A, K.A, C.Ay, q.A, N.A], eY), this.waitFor(N.A, A.A, K.A, Y.default, W.default, J.A, z.A, L.A, Q.A, E.A, Z.A, eh.A, ep.A, eS.A, eI.A, f.A, h.A, O.A, x.A, $.Ay, ee.A, M.A, D.A, et.Ay, en.A, em.A, ei.A, el.A, j.A, b.A, ea.A, C.Ay, er.A, es.A, H.A, eo.A, ec.A, U.A, eE.A, ed.Ay, eg.A, w.Ay, eT.A, eu.A, V.A, e_.default, eA.A, q.A)
+        this.syncWith([g.A, ed.Ay, el.A, Z.A, es.A, j.A, eT.A, W.default, Q.A, V.A, x.A, b.A, K.A, C.Ay, q.A, g.A], eY), this.waitFor(g.A, A.A, K.A, Y.default, W.default, J.A, z.A, L.A, Q.A, E.A, Z.A, eh.A, ep.A, eS.A, eI.A, f.A, h.A, O.A, x.A, $.Ay, ee.A, M.A, D.A, et.Ay, en.A, em.A, ei.A, el.A, j.A, b.A, ea.A, C.Ay, er.A, es.A, H.A, eo.A, ec.A, U.A, eE.A, ed.Ay, eN.A, w.Ay, eT.A, eu.A, V.A, e_.default, eA.A, q.A)
     }
     hasNotice() {
         return null != eH && null != eH.type
@@ -752,10 +752,10 @@ let ez = new eJ(d.h, {
     STREAMER_MODE_UPDATE: eW,
     RUNNING_STREAMER_TOOLS_CHANGE: eW,
     DISPATCH_APPLICATION_ERROR: function() {
-        return delete ey[ex.kqX.DISPATCH_ERROR], eY()
+        return delete ek[ex.kqX.DISPATCH_ERROR], eY()
     },
     DISPATCH_APPLICATION_LAUNCH_SETUP_START: function() {
-        return delete ey[ex.kqX.DISPATCH_INSTALL_SCRIPT_PROGRESS], eY()
+        return delete ek[ex.kqX.DISPATCH_INSTALL_SCRIPT_PROGRESS], eY()
     },
     DISPATCH_APPLICATION_INSTALL_SCRIPTS_PROGRESS_UPDATE: function() {
         return eY()
@@ -776,7 +776,7 @@ let ez = new eJ(d.h, {
         return eB(t), eY()
     },
     LOGOUT: function() {
-        ey = {}, eb = {}, eH = null
+        ek = {}, eb = {}, eH = null
     },
     SUBSCRIPTION_PLANS_FETCH_SUCCESS: eY,
     AUTO_MODERATION_MENTION_RAID_DETECTION: eY,

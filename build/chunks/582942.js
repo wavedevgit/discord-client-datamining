@@ -16,8 +16,8 @@ var l = n(503698),
     x = n(885151),
     h = n(409626),
     f = n(422069),
-    g = n(611656),
-    p = n(459746),
+    p = n(611656),
+    g = n(459746),
     _ = n(225732),
     v = n(985018),
     A = n(282063),
@@ -40,11 +40,11 @@ let E = e => {
                     ...e
                 }))), await new Promise(e => setTimeout(e, 10)), n()
             },
-            children: (0, a.jsx)(p.A, {
+            children: (0, a.jsx)(g.A, {
                 game: t,
                 application: i,
                 className: j.n1,
-                size: p.w.SMALL
+                size: g.w.SMALL
             })
         })
     })
@@ -61,7 +61,7 @@ function b(e) {
         let e = void 0 === f.A.getSimilarGames(t) && null == f.A.getSimilarGamesError(t),
             n = r.some(e => m.A.isFetching(e));
         return e || n
-    }), h = (0, o.yK)([m.A], () => r.map(e => m.A.getGame(e)).filter(e => null != e).filter(e => (0, g.oS)(e.applicationId)).slice(0, 5));
+    }), h = (0, o.yK)([m.A], () => r.map(e => m.A.getGame(e)).filter(e => null != e).filter(e => (0, p.oS)(e.applicationId)).slice(0, 5));
     return ((0, x.k)(t), (0, x.W)(r), u && null == c) ? (0, a.jsxs)("div", {
         children: [(0, a.jsx)("div", {
             className: i()(j.vM, A.bV)

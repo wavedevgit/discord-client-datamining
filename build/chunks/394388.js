@@ -17,8 +17,8 @@ var i = n(627968),
     E = n(828162),
     T = n(71393),
     I = n(888675),
-    g = n(652215),
-    N = n(49999),
+    N = n(652215),
+    g = n(49999),
     f = n(985018),
     C = n(333354),
     h = n(884967),
@@ -61,8 +61,8 @@ function x(e) {
                 guild: l,
                 analyticsLocations: r,
                 analyticsLocation: {
-                    page: g.liQ.GUILD_CHANNEL,
-                    section: g.JJy.CHANNEL_TEXT_AREA
+                    page: N.liQ.GUILD_CHANNEL,
+                    section: N.JJy.CHANNEL_TEXT_AREA
                 }
             })
         })]
@@ -75,7 +75,7 @@ function R(e) {
     } = e;
     l.useEffect(() => {
         (0, u.uh)(r.M.FIRST_BOOSTER_UPSELL_OVERSEER, {
-            dismissAction: N.i.AUTO_DISMISS,
+            dismissAction: g.i.AUTO_DISMISS,
             guildId: t.id
         })
     }, [t.id]);
@@ -90,8 +90,8 @@ function R(e) {
                     n ? (0, E.A)(t.id, d.A.GUILD_BOOSTING_FIRST_TIME_BOOSTER_UPSELL) : (0, _.K4)({
                         guildId: t.id,
                         location: {
-                            section: g.JJy.CHANNEL_TEXT_AREA,
-                            object: g.ZSU.BOOST_ANNOUNCEMENT_UPSELL
+                            section: N.JJy.CHANNEL_TEXT_AREA,
+                            object: N.ZSU.BOOST_ANNOUNCEMENT_UPSELL
                         }
                     })
                 },

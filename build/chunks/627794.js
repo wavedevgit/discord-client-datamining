@@ -9,8 +9,8 @@ n.d(t, {
     _I: () => T,
     nl: () => h,
     r3: () => _,
-    uV: () => g,
-    wC: () => N,
+    uV: () => N,
+    wC: () => g,
     wk: () => I
 });
 var i = n(168186),
@@ -44,7 +44,7 @@ function T(e, t) {
             exemptChannels: new Set,
             exemptRoles: new Set
         };
-    if (N(r)) throw Error(d.intl.string(d.t["A/nX8D"]));
+    if (g(r)) throw Error(d.intl.string(d.t["A/nX8D"]));
     let c = (0, s.p3)(e, t);
     return c > 0 && (r.name += ` ${c+1}`), r
 }
@@ -62,7 +62,7 @@ function I(e, t) {
     })
 }
 
-function g(e) {
+function N(e) {
     if (u(e)) {
         let t = e.triggerMetadata.keywordFilter ?? [],
             n = e.triggerMetadata.regexPatterns ?? [];
@@ -82,7 +82,7 @@ function g(e) {
     if (0 === e.actions.length) throw Error(d.intl.string(d.t["t+gj5V"]))
 }
 
-function N(e) {
+function g(e) {
     return (0, i.hT)(e?.id ?? "INVALID_SNOWFLAKE")
 }
 

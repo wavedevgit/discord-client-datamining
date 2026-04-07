@@ -30,8 +30,8 @@ let A = e => {
             isPartiallyOwnedBundle: k
         } = (0, m.h)(t), I = (0, c.G0)(t), b = (0, c.tt)(t), y = l.useMemo(() => (0, c.fT)(t, h), [t, h]), E = (0, x.V_)(t), {
             checkoutEligiblePrices: j,
-            hasSufficientOrbs: _,
-            shouldCheckoutWithOrbs: R
+            hasSufficientOrbs: R,
+            shouldCheckoutWithOrbs: _
         } = (0, g.F)({
             product: t,
             isPremiumUser: h,
@@ -70,7 +70,7 @@ let A = e => {
             nitroIconType: h ? "default" : void 0,
             nitroIconSize: "sm",
             discountOfferAmount: E,
-            className: R && !_ ? v.c : void 0,
+            className: _ && !R ? v.c : void 0,
             variant: "text-md/bold"
         })
     },

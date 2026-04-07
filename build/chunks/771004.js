@@ -16,8 +16,8 @@ var a = n(627968),
     x = n(305080),
     h = n(936636),
     f = n(985018),
-    g = n(282063),
-    p = n(48757);
+    p = n(282063),
+    g = n(48757);
 
 function _(e) {
     let {
@@ -31,9 +31,9 @@ function _(e) {
         let e = E.current;
         null != e && j(e.scrollHeight - e.clientHeight > 1 || !_)
     }, [E, b, C, _]), null == t.summary) ? null : (0, a.jsxs)("div", {
-        className: r()(g.fi, g.mX),
+        className: r()(p.fi, p.mX),
         children: [null != t.summaryLocalized && (0, a.jsxs)("div", {
-            className: r()(g.nM, g.Lc),
+            className: r()(p.nM, p.Lc),
             children: [(0, a.jsx)(s.PencilSparkleIcon, {
                 color: c.A.colors.TEXT_DEFAULT,
                 size: "xs"
@@ -52,7 +52,7 @@ function _(e) {
             variant: "text-sm/normal",
             children: i ? t.summaryLocalized : t.summary
         }), A && (0, a.jsx)(d.DUT, {
-            className: g.vk,
+            className: p.vk,
             onClick: () => {
                 n(_ ? m.Ws.ShowMore : m.Ws.ShowLess), v(!_)
             },
@@ -61,7 +61,7 @@ function _(e) {
                 children: _ ? f.intl.string(f.t.lBeKY2) : f.intl.string(f.t["6MwJo/"])
             })
         }), (0, a.jsx)(h.A, {
-            className: p.B,
+            className: g.B,
             detectedGame: t
         })]
     })
@@ -98,9 +98,9 @@ function v(e) {
         isTwoColumn: u
     } = (0, x.c)(), h = l.useMemo(() => u ? 8 : 5, [u]);
     if (null == t.summary) return null;
-    let p = s ? f.intl.string(f.t["6MwJo/"]) : f.intl.string(f.t.lBeKY2);
+    let g = s ? f.intl.string(f.t["6MwJo/"]) : f.intl.string(f.t.lBeKY2);
     return (0, a.jsxs)("div", {
-        className: r()(g.fi, g.mX),
+        className: r()(p.fi, p.mX),
         children: [(0, a.jsx)(o.EYj, {
             ref: i,
             lineClamp: s ? void 0 : h,
@@ -108,7 +108,7 @@ function v(e) {
             children: t.summary
         }), c && (0, a.jsx)(o.QWc, {
             onClick: d,
-            text: p
+            text: g
         })]
     })
 }

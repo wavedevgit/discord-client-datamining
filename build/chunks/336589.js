@@ -17,8 +17,8 @@ var i = n(627968),
     E = n(167681),
     T = n(652215),
     I = n(985018),
-    g = n(453302);
-let N = e => {
+    N = n(453302);
+let g = e => {
         let {
             channel: t,
             message: n
@@ -35,7 +35,7 @@ let N = e => {
             })
         }, [t, n, a]);
         return (0, i.jsx)("div", {
-            className: g.T,
+            className: N.T,
             children: (0, i.jsx)(r.$nd, {
                 icon: {
                     type: "sticker",
@@ -62,7 +62,7 @@ let N = e => {
                 m = null != o && (o.systemChannelFlags & T.ogj.SUPPRESS_JOIN_NOTIFICATION_REPLIES) == 0;
             return a && !i && !r && !s && m
         });
-        return null != l && r ? (0, i.jsx)(N, {
+        return null != l && r ? (0, i.jsx)(g, {
             message: t,
             channel: n
         }) : null

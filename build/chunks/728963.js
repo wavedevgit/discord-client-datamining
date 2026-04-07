@@ -17,8 +17,8 @@ var i = n(627968),
     E = n(657331),
     T = n(734057),
     I = n(317525),
-    g = n(71393),
-    N = n(994500),
+    N = n(71393),
+    g = n(994500),
     f = n(287809),
     C = n(763754);
 n(827669);
@@ -53,7 +53,7 @@ let O = l.memo(function(e) {
             onCopy: M,
             copyRef: D
         } = (0, _.A)(n, r?.application_command?.id),
-        L = (0, s.bG)([g.A], () => g.A.getGuild(n.guild_id), [n.guild_id]);
+        L = (0, s.bG)([N.A], () => N.A.getGuild(n.guild_id), [n.guild_id]);
     if (l.useEffect(() => {
             (null == r || r.type === c.kc.CHAT && void 0 === r.application_command) && A.S7(n.id, a)
         }, [n.id, a, r]), null == r) t = (0, i.jsx)(o.y$y, {
@@ -71,7 +71,7 @@ let O = l.memo(function(e) {
                     messageId: d,
                     parentOptionKey: _,
                     commandOptionSpec: A,
-                    sourceAnalyticsLocations: g
+                    sourceAnalyticsLocations: N
                 } = t,
                 p = null != _ ? _ + " " + a.name : a.name;
             if (a.type === c.n4.SUB_COMMAND || a.type === c.n4.SUB_COMMAND_GROUP) {
@@ -89,7 +89,7 @@ let O = l.memo(function(e) {
                     messageId: d,
                     parentOptionKey: p,
                     commandOptionSpec: n[i.name],
-                    sourceAnalyticsLocations: g
+                    sourceAnalyticsLocations: N
                 }));
                 return t
             }
@@ -107,7 +107,7 @@ let O = l.memo(function(e) {
                                 guildId: r.guild_id,
                                 channelId: r.id,
                                 messageId: d,
-                                sourceAnalyticsLocations: g
+                                sourceAnalyticsLocations: N
                             }),
                             children: ["@", e.nick]
                         })
@@ -119,7 +119,7 @@ let O = l.memo(function(e) {
                         t = T.A.getChannel(e);
                     null != t && (n = (0, i.jsxs)(m.A, {
                         ...x,
-                        children: ["#", (0, u.m1)(t, f.default, N.A)]
+                        children: ["#", (0, u.m1)(t, f.default, g.A)]
                     }));
                     break
                 }
@@ -147,7 +147,7 @@ let O = l.memo(function(e) {
                                 onClick: () => (0, E.openUserProfileModal)({
                                     userId: t.id,
                                     guildId: r.guild_id,
-                                    sourceAnalyticsLocations: g
+                                    sourceAnalyticsLocations: N
                                 }),
                                 children: ["@", e.nick]
                             })

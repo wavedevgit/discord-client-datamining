@@ -69,10 +69,10 @@ function x(e) {
         onClose: n,
         className: m,
         trackAction: x
-    } = e, h = l.useRef(null), f = l.useRef(null), g = (0, o.A)({
+    } = e, h = l.useRef(null), f = l.useRef(null), p = (0, o.A)({
         id: t.id,
         label: u.intl.string(u.t["FfCL+6"])
-    }), p = (0, c.n)(t.id, x), _ = (0, d.A)(t);
+    }), g = (0, c.n)(t.id, x), _ = (0, d.A)(t);
     return (0, a.jsxs)("div", {
         className: m,
         children: [null != _ && (0, a.jsx)(r.YNO, {
@@ -106,7 +106,7 @@ function x(e) {
                     text: u.intl.string(u.t.sidPSo)
                 })
             })
-        }), (null != g || null != p) && (0, a.jsx)(r.YNO, {
+        }), (null != p || null != g) && (0, a.jsx)(r.YNO, {
             targetElementRef: h,
             align: "top",
             position: "right",
@@ -124,9 +124,9 @@ function x(e) {
                     onSelect: () => {},
                     children: (0, a.jsxs)(a.Fragment, {
                         children: [(0, a.jsx)(r.rXV, {
-                            children: p
-                        }), (0, a.jsx)(r.rXV, {
                             children: g
+                        }), (0, a.jsx)(r.rXV, {
+                            children: p
                         })]
                     })
                 })

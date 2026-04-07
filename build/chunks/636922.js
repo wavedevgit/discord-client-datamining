@@ -17,8 +17,8 @@ var i = n(627968),
     E = n(763754),
     T = n(491182),
     I = n(860227),
-    g = n(538355),
-    N = n(522871),
+    N = n(538355),
+    g = n(522871),
     f = n(699352),
     C = n(715628),
     h = n(752636),
@@ -40,13 +40,13 @@ let M = l.memo(function(e) {
         animateAvatar: P,
         subscribeToComponentDispatch: v,
         renderThreadAccessory: j,
-        trackAnnouncementViews: k = !1,
-        ...y
+        trackAnnouncementViews: y = !1,
+        ...k
     } = e, b = t.type === R.lAJ.POLL_RESULT || (e.disableInteraction ?? !1), G = t.isFirstMessageInForumPost(L), H = (0, d.S)((t.editedTimestamp ?? t.timestamp).valueOf()), {
         content: F,
         hasSpoilerEmbeds: B,
         hasBailedAst: w
-    } = (0, g.A)(t, {
+    } = (0, N.A)(t, {
         hideSimpleEmbedContent: D,
         allowList: G || H,
         allowHeading: G || H,
@@ -55,10 +55,10 @@ let M = l.memo(function(e) {
     }), V = t.type === R.lAJ.REPLY ? t.messageReference : void 0, X = (0, o.bG)([u.A], () => u.A.getMessageByReference(V)), q = (0, s.rm)(t.id), K = (0, E.Ay)(t), Y = (0, o.bG)([_.A], () => t.hasFlag(R.pr7.HAS_THREAD) && _.A.getChannel(A.default.castMessageIdAsChannelId(t.id))), W = (0, c.$7)({
         guildId: L.guild_id,
         roleId: K.iconRoleId
-    }), J = (0, N.A)({
+    }), J = (0, g.A)({
         message: t,
         channel: L,
-        enabled: k
+        enabled: y
     }), z = (0, I.fF)(t), Q = (0, I.ZD)(t);
     return (0, i.jsx)(T.A, {
         compact: n,
@@ -90,6 +90,6 @@ let M = l.memo(function(e) {
         messageRef: J,
         author: K,
         ...q,
-        ...y
+        ...k
     })
 })

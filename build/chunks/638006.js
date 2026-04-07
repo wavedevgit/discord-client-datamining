@@ -1,6 +1,6 @@
 /** chunk id: 638006 params = (module,exports,require) **/
 r.d(t, {
-    A: () => E
+    A: () => j
 });
 var n = r(627968),
     l = r(503698),
@@ -11,73 +11,76 @@ var n = r(627968),
     o = r(397927),
     c = r(287809),
     d = r(298072),
-    m = r(466459),
-    h = r(139136),
-    p = r(623373),
-    f = r(561769),
-    x = r(846957),
-    g = r(929283),
-    C = r(245068),
-    v = r(761365),
-    A = r(550674),
-    k = r(797877);
-let I = e => {
+    m = r(320447),
+    h = r(466459),
+    p = r(139136),
+    f = r(623373),
+    x = r(561769),
+    g = r(846957),
+    C = r(929283),
+    v = r(245068),
+    A = r(761365),
+    k = r(550674),
+    I = r(797877);
+let b = e => {
         let {
             product: t,
             isCardHovered: r
-        } = e, l = (0, p.YW)(t), {
+        } = e, l = (0, f.YW)(t), {
             isPurchased: a,
             isPartiallyOwnedBundle: u
-        } = (0, m.h)(t), o = l === s.R.PROFILE_EFFECT;
+        } = (0, h.h)(t), {
+            enabled: o
+        } = (0, m.P)("ProductCardPreview"), c = l === s.R.PROFILE_EFFECT || l === s.R.BUNDLE && o;
         return (0, n.jsxs)(n.Fragment, {
             children: [(0, n.jsx)("div", {
-                className: i()(k.mA, {
-                    [k.zj]: (a || u) && !r,
-                    [k.Ge]: o
+                className: i()(I.mA, {
+                    [I.zj]: (a || u) && !r,
+                    [I.Ge]: c
                 }),
-                children: (0, n.jsx)(b, {
+                children: (0, n.jsx)(y, {
                     product: t,
                     isCardHovered: r
                 })
-            }), a && (0, n.jsx)(y, {
+            }), a && (0, n.jsx)(E, {
                 hidden: r
             })]
         })
     },
-    b = e => {
+    y = e => {
         let {
             product: t,
             isCardHovered: r
-        } = e, l = (0, u.bG)([c.default], () => c.default.getCurrentUser()), i = (0, p.YW)(t), a = (0, A.D)(t);
+        } = e, l = (0, u.bG)([c.default], () => c.default.getCurrentUser()), i = (0, f.YW)(t), a = (0, k.D)(t);
         switch (i) {
             case s.R.PROFILE_EFFECT:
-                return (0, n.jsx)(h.A, {
+                return (0, n.jsx)(p.A, {
                     skuId: a.skuId,
                     isHighlighted: r,
                     removeSetHeight: !0,
                     hideBackground: !0
                 });
             case s.R.AVATAR_DECORATION:
-                return (0, n.jsx)(g.i, {
+                return (0, n.jsx)(C.i, {
                     item: a,
                     user: l,
                     isHighlighted: r,
                     avatarSize: o._3J.SIZE_120
                 });
             case s.R.NAMEPLATE:
-                return (0, n.jsx)(v.A, {
+                return (0, n.jsx)(A.A, {
                     nameplate: a,
                     user: l,
                     isHighlighted: r
                 });
             case s.R.BUNDLE:
-                return (0, n.jsx)(C.X, {
+                return (0, n.jsx)(v.X, {
                     product: t,
                     user: l,
                     isHighlighted: r
                 });
             case s.R.EXTERNAL_SKU:
-                return (0, n.jsx)(x.B, {
+                return (0, n.jsx)(g.B, {
                     product: t,
                     animationState: r ? "on" : "off"
                 });
@@ -85,7 +88,7 @@ let I = e => {
                 return null
         }
     },
-    y = e => {
+    E = e => {
         let {
             hidden: t
         } = e;
@@ -94,20 +97,20 @@ let I = e => {
             color: o.LU0.colors.INTERACTIVE_TEXT_ACTIVE,
             width: 40,
             height: 40,
-            className: i()(k.zo, {
-                [k.R]: t
+            className: i()(I.zo, {
+                [I.R]: t
             })
         })
     },
-    E = e => {
+    j = e => {
         let {
             skuId: t,
             isCardHovered: r,
             overrideVariantIndex: l
-        } = e, i = (0, f.Vm)(t), s = (0, d.Q)(i);
+        } = e, i = (0, x.Vm)(t), s = (0, d.Q)(i);
         if (null == i) return null;
-        let a = (0, p.rb)(i, l ?? s);
-        return (0, n.jsx)(I, {
+        let a = (0, f.rb)(i, l ?? s);
+        return (0, n.jsx)(b, {
             product: a,
             isCardHovered: r
         })

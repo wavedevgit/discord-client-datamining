@@ -17,8 +17,8 @@ var i = n(627968),
     E = n(203982),
     T = n(728458),
     I = n(427262),
-    g = n(573359),
-    N = n(59784),
+    N = n(573359),
+    g = n(59784),
     f = n(612669),
     C = n(88001),
     h = n(652215),
@@ -61,14 +61,14 @@ let O = e => {
                         premiumGroupPrimaryName: c,
                         isExistingSub: s,
                         onClose: async () => {
-                            A || (A = !0, E._.dispatch(h.jej.WOW_MOMENT_CONFIRMATION_MODAL_CLOSED), g.A.isDisplayingWowMomentConfirmation && g.A.isAnimated ? setTimeout(() => {
+                            A || (A = !0, E._.dispatch(h.jej.WOW_MOMENT_CONFIRMATION_MODAL_CLOSED), N.A.isDisplayingWowMomentConfirmation && N.A.isAnimated ? setTimeout(() => {
                                 n.onClose()
                             }, u.K) : await n.onClose())
                         }
                     })
                 }, {
                     onCloseRequest: () => {
-                        A || (A = !0, E._.dispatch(h.jej.WOW_MOMENT_CONFIRMATION_MODAL_CLOSED), g.A.isDisplayingWowMomentConfirmation && g.A.isAnimated ? setTimeout(() => {
+                        A || (A = !0, E._.dispatch(h.jej.WOW_MOMENT_CONFIRMATION_MODAL_CLOSED), N.A.isDisplayingWowMomentConfirmation && N.A.isAnimated ? setTimeout(() => {
                             (0, o.OoC)(d)
                         }, u.K) : (0, o.OoC)(d))
                     },
@@ -177,10 +177,10 @@ let O = e => {
             invite: d,
             currentUser: u,
             premiumSubscription: m
-        } = (0, r.cf)([N.A, _.default, A.A], () => ({
-            inviteState: null != a ? N.A.getInviteState(a) : C.xI.NOT_FOUND,
-            isFetching: null != a && N.A.isFetching(a),
-            invite: null != a ? N.A.getInvite(a)?.invite : null,
+        } = (0, r.cf)([g.A, _.default, A.A], () => ({
+            inviteState: null != a ? g.A.getInviteState(a) : C.xI.NOT_FOUND,
+            isFetching: null != a && g.A.isFetching(a),
+            invite: null != a ? g.A.getInvite(a)?.invite : null,
             currentUser: _.default.getCurrentUser(),
             premiumSubscription: A.A.getPremiumSubscription()
         }), [a]);
@@ -197,9 +197,9 @@ let O = e => {
             inviteState: s
         });
         if (null == I) return null;
-        let g = s === C.xI.PENDING,
+        let N = s === C.xI.PENDING,
             h = null;
-        return h = T ? g ? (0, i.jsx)(M, {
+        return h = T ? N ? (0, i.jsx)(M, {
             disabled: !1,
             invite: d,
             channel: n
@@ -208,7 +208,7 @@ let O = e => {
             invite: d,
             channel: n
         }) : null : (0, i.jsx)(O, {
-            disabled: !g,
+            disabled: !N,
             invite: d,
             isExistingSub: null != m
         }), (0, i.jsx)(D, {

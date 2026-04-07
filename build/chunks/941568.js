@@ -15,8 +15,8 @@ var a = n(627968),
     x = n(405269),
     h = n(890060),
     f = n(409626),
-    g = n(21091),
-    p = n(385064),
+    p = n(21091),
+    g = n(385064),
     _ = n(305080),
     v = n(954506),
     A = n(652215),
@@ -39,12 +39,12 @@ function I(e) {
         message: n,
         channelId: i,
         onCardClick: d
-    } = e, [u, m] = l.useState(!1), f = "main" === t, g = l.useCallback(() => m(!0), []), p = l.useCallback(e => {
+    } = e, [u, m] = l.useState(!1), f = "main" === t, p = l.useCallback(() => m(!0), []), g = l.useCallback(e => {
         if (!((0, s.vq)(e.target, HTMLAnchorElement) || (0, s.vq)(e.target, HTMLSpanElement) && (0, s.vq)(e.target.parentElement, HTMLAnchorElement))) return d(n.id)
     }, [d, n.id]), _ = n.media?.width != null && n.media?.height != null ? n.media.width / n.media.height : 16 / 9, v = n.media?.proxyUrl ?? n.media?.url, I = (null != v ? (0, h.V)(v) : null) ?? v;
     return (0, a.jsxs)(c.DUT, {
         className: f ? E.cG : E.IU,
-        onClick: p,
+        onClick: g,
         children: [null != n.media && null != I && (0, a.jsx)("div", {
             className: f ? E._v : E.eZ,
             children: (0, a.jsx)(o.y, {
@@ -62,7 +62,7 @@ function I(e) {
                     className: f ? E.fk : E.v,
                     alt: "",
                     draggable: !1,
-                    onLoad: g
+                    onLoad: p
                 })
             })
         }), (0, a.jsxs)("div", {
@@ -110,9 +110,9 @@ function N(e) {
         messages: o,
         guildId: c,
         channelId: m
-    } = (0, g.A)(t), x = l.useCallback(() => {
+    } = (0, p.A)(t), x = l.useCallback(() => {
         let e = r?.guild?.id ?? c;
-        null != e && (n(f.Ws.Announcements), s(), (0, p.A)({
+        null != e && (n(f.Ws.Announcements), s(), (0, g.A)({
             invite: r,
             guildId: e,
             channelId: m,
@@ -120,7 +120,7 @@ function N(e) {
         }))
     }, [n, s, r, c, m, i]), h = l.useCallback(e => {
         let t = r?.guild?.id ?? c;
-        null != t && (n(f.Ws.AnnouncementsItem), s(), (0, p.A)({
+        null != t && (n(f.Ws.AnnouncementsItem), s(), (0, g.A)({
             invite: r,
             guildId: t,
             channelId: m,

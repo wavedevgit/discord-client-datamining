@@ -178,10 +178,10 @@ let S = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                 className: v.V1,
                 children: (0, i.jsx)(o.ArX, {
                     className: v.iL,
-                    children: (0, i.jsx)("main", {
+                    children: (0, i.jsxs)("main", {
                         ref: e,
                         className: v.z1,
-                        children: (0, i.jsx)(o.xpW, {
+                        children: [(0, i.jsx)(o.xpW, {
                             containerRef: e,
                             children: (0, i.jsxs)("div", {
                                 className: v.kL,
@@ -415,7 +415,9 @@ let S = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                                     })
                                 })]
                             })
-                        })
+                        }), (0, i.jsx)(o.hKd, {
+                            size: 96
+                        })]
                     })
                 })
             })

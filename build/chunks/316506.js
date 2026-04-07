@@ -73,7 +73,9 @@ function _(e) {
         }), null != N ? (0, i.jsx)(r.po8, {
             messageType: r.YCn.WARNING,
             children: N
-        }) : null, (0, i.jsxs)(r.VQ0, {
+        }) : null, (0, i.jsx)(r.hKd, {
+            size: 6
+        }), (0, i.jsxs)(r.VQ0, {
             className: x.$H,
             "aria-label": g.intl.string(g.t["+1H47t"]),
             selectedItem: _,

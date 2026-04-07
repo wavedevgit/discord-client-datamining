@@ -18,16 +18,16 @@ function A(e) {
         message: t,
         channel: n,
         compact: A
-    } = e, m = t.getChannelId(), E = n.isDM() ? n.getRecipientId() : void 0, T = (0, l.bG)([s.default], () => null != E ? s.default.getUser(E) : void 0, [E]), I = (0, l.bG)([s.default], () => s.default.getCurrentUser(), []), g = null != I && t.author.id === I.id, N = (0, o.d8)(T, n), f = (0, c.P)({
+    } = e, m = t.getChannelId(), E = n.isDM() ? n.getRecipientId() : void 0, T = (0, l.bG)([s.default], () => null != E ? s.default.getUser(E) : void 0, [E]), I = (0, l.bG)([s.default], () => s.default.getCurrentUser(), []), N = null != I && t.author.id === I.id, g = (0, o.d8)(T, n), f = (0, c.P)({
         user: T,
         channelId: m,
         guildId: void 0,
         messageId: t.id
-    })(N);
+    })(g);
     if (!n.isDM() || null == T || null == I) return null;
-    let C = g ? u.t.S6PRsh : u.t["H/9Tlj"],
+    let C = N ? u.t.S6PRsh : u.t["H/9Tlj"],
         h = u.intl.format(C, {
-            username: N.nick,
+            username: g.nick,
             usernameHook: f
         });
     return (0, i.jsx)(d.A, {

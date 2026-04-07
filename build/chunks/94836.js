@@ -16,8 +16,8 @@ var a = n(627968),
     x = n(256905),
     h = n(652176),
     f = n(371794),
-    g = n(409626),
-    p = n(368546),
+    p = n(409626),
+    g = n(368546),
     _ = n(985018),
     v = n(282063),
     A = n(426401),
@@ -65,7 +65,7 @@ function E(e) {
                         ringClassName: A.jR
                     },
                     onClick: () => {
-                        n(g.Ws.ClickImage), (0, x.R)({
+                        n(p.Ws.ClickImage), (0, x.R)({
                             items: r,
                             startingIndex: t,
                             shouldHideMediaOptions: !0,
@@ -146,7 +146,7 @@ let b = l.memo(function(e) {
             onPause: o,
             onFullscreenChange: c
         } = e, d = l.useRef(null);
-        return (0, p.A)({
+        return (0, g.A)({
             videoRef: i,
             canvasRef: d,
             enabled: !n
@@ -186,8 +186,8 @@ function I(e) {
     let {
         detectedGame: t,
         trackAction: n
-    } = e, [i, r] = l.useState(0), [o, m] = l.useState(null), [h, p] = l.useState(t.screenshots), v = l.useRef(null), A = l.useRef(null), E = (0, s.bG)([d.A], () => d.A.useReducedMotion);
-    h !== t.screenshots && (p(t.screenshots), r(0));
+    } = e, [i, r] = l.useState(0), [o, m] = l.useState(null), [h, g] = l.useState(t.screenshots), v = l.useRef(null), A = l.useRef(null), E = (0, s.bG)([d.A], () => d.A.useReducedMotion);
+    h !== t.screenshots && (g(t.screenshots), r(0));
     let I = l.useMemo(() => [...(t.trailers ?? []).map(e => {
             let t = (0, f.YE)(e.application_id, e.id, e.width, "mp4");
             return {
@@ -213,7 +213,7 @@ function I(e) {
         [L, k] = l.useState(!1),
         R = l.useRef(null),
         O = l.useCallback(() => {
-            n(T ? g.Ws.ClickTrailer : g.Ws.ClickImage);
+            n(T ? p.Ws.ClickTrailer : p.Ws.ClickImage);
             let e = v.current,
                 t = R.current,
                 a = null != e && !e.paused,

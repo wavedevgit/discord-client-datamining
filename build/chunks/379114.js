@@ -17,17 +17,17 @@ var i = n(627968),
     E = n(652215),
     T = n(746080),
     I = n(985018),
-    g = n(871029);
+    N = n(871029);
 
-function N(e) {
+function g(e) {
     let {
         username: t
     } = e;
     return (0, i.jsx)("div", {
-        className: g._X,
+        className: N._X,
         children: (0, i.jsx)(a.Text, {
             tag: "p",
-            className: g._X,
+            className: N._X,
             color: "status-positive-text",
             variant: "heading-xl/medium",
             children: I.intl.format(I.t.MLKSln, {
@@ -51,7 +51,7 @@ function f(e) {
         username: l
     } = e;
     return (0, i.jsxs)("div", {
-        className: g.pG,
+        className: N.pG,
         role: "img",
         "aria-label": I.intl.formatToPlainString(I.t["utf8+W"], {
             username: l
@@ -59,8 +59,8 @@ function f(e) {
         children: [(0, i.jsx)(m.A, {
             guildId: t,
             user: n,
-            className: g.sz
-        }), (0, i.jsx)(N, {
+            className: N.sz
+        }), (0, i.jsx)(g, {
             username: l
         })]
     })
@@ -71,7 +71,7 @@ function C(e) {
         channel: t,
         message: a,
         compact: m
-    } = e, I = (0, o.Ay)(a), g = function(e) {
+    } = e, I = (0, o.Ay)(a), N = function(e) {
         let {
             author: t,
             channel: n,
@@ -99,14 +99,14 @@ function C(e) {
         channel: t,
         message: a,
         author: I
-    }), N = a.roleSubscriptionData?.total_months_subscribed != null && a.roleSubscriptionData?.total_months_subscribed <= 1;
-    return null == g ? null : (0, i.jsxs)(i.Fragment, {
+    }), g = a.roleSubscriptionData?.total_months_subscribed != null && a.roleSubscriptionData?.total_months_subscribed <= 1;
+    return null == N ? null : (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(d.A, {
             icon: n(617184),
             timestamp: a.timestamp,
             compact: m,
-            children: g
-        }), N && (0, i.jsx)(f, {
+            children: N
+        }), g && (0, i.jsx)(f, {
             guildId: t.guild_id,
             user: a.author,
             username: I.nick
