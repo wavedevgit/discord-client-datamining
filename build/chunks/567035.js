@@ -9,8 +9,8 @@ var i = n(735438),
     l = n(591552),
     o = n(863005),
     s = n(808728),
-    _ = n(222823),
-    c = n(954571),
+    c = n(222823),
+    _ = n(954571),
     u = n(661191),
     d = n(652215),
     b = n(790782);
@@ -28,19 +28,19 @@ function m(e, t, n) {
     }).map(e => ({
         channelId: e,
         readStateType: b.P.CHANNEL,
-        messageId: _.Ay.lastMessageId(e)
+        messageId: c.Ay.lastMessageId(e)
     }));
     return e.forEach(e => {
         i.push({
             channelId: u.default.cast(e),
             readStateType: b.P.GUILD_EVENT,
-            messageId: _.Ay.lastMessageId(e, b.P.GUILD_EVENT)
+            messageId: c.Ay.lastMessageId(e, b.P.GUILD_EVENT)
         }), i.push({
             channelId: u.default.cast(e),
             readStateType: b.P.GUILD_ONBOARDING_QUESTION,
             messageId: l.A.ackIdForGuild(e)
         })
-    }), c.default.track(d.HAw.MARK_AS_READ, {
+    }), _.default.track(d.HAw.MARK_AS_READ, {
         source: t,
         type: "guild"
     }), (0, a.Uq)(i, n)

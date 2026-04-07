@@ -95,9 +95,7 @@ let ee = (e, t, s) => {
                         }), (0, i.jsx)(u.Text, {
                             variant: "text-md/medium",
                             color: "text-subtle",
-                            children: Z.intl.format(Z.t.PhQPzq, {
-                                settingsHook: () => (0, p.openUserSettings)(h.X.SUBSCRIPTIONS_PANEL)
-                            })
+                            children: Z.intl.string(Z.t.Jf8KrT)
                         })]
                     }), (0, i.jsxs)(u.BJc, {
                         direction: "horizontal",
@@ -109,7 +107,7 @@ let ee = (e, t, s) => {
                             iconOverride: u.tvc,
                             variantOverride: "expressive"
                         }), (0, i.jsx)(u.Button, {
-                            variant: "overlay-secondary",
+                            variant: "secondary",
                             size: "md",
                             text: Z.intl.string(Z.t.Af7ye6),
                             onClick: () => (0, p.openUserSettings)(h.X.SUBSCRIPTIONS_PANEL)
@@ -120,7 +118,7 @@ let ee = (e, t, s) => {
                     children: [(0, i.jsx)(r.C, {
                         alt: "",
                         width: "100%",
-                        height: "100%"
+                        height: "auto"
                     }), (0, i.jsx)(z.A, {})]
                 })]
             })
@@ -162,7 +160,7 @@ let ee = (e, t, s) => {
                 visibilityPercentage: ei
             } = (0, H.U)(!$);
         return s ? (0, i.jsx)(et, {
-            fpEndsAt: z.endsAt,
+            fpEndsAt: z.currentEntitlementEndsAt,
             className: t,
             buttonVisibilityRef: f
         }) : (0, i.jsx)("div", {

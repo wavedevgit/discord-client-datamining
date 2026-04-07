@@ -145,7 +145,8 @@ let j = {
             hasClaimError: a,
             setCode: s,
             setHasClaimError: l,
-            className: d
+            className: d,
+            analyticsLocations: o = []
         } = e;
         return r ? a ? (0, n.jsx)("div", {
             className: d,
@@ -166,7 +167,7 @@ let j = {
                 onClick: () => {
                     (0, f.kd)({
                         promotionId: t.id,
-                        analyticsLocations: []
+                        analyticsLocations: o
                     }).then(e => {
                         s(e.code)
                     }).catch(e => {
@@ -184,19 +185,20 @@ let j = {
                 showPartnerLogo: _ = !1,
                 showPartnerImage: p = !1,
                 titleVariant: f = "primary",
-                displayCTAInDedicatedFooter: h = !1
+                displayCTAInDedicatedFooter: h = !1,
+                analyticsLocations: x = []
             } = e,
-            [x, R] = a.useState(c.code),
-            [v, E] = a.useState(!1),
-            S = (t = c.partnerId, r = (0, s.bG)([o.A], () => (0, i.Mwr)(o.A.theme)), null == (d = j[t]) ? null : r ? d.logos.dark : d.logos.light),
-            T = null == x;
+            [R, v] = a.useState(c.code),
+            [E, S] = a.useState(!1),
+            T = (t = c.partnerId, r = (0, s.bG)([o.A], () => (0, i.Mwr)(o.A.theme)), null == (d = j[t]) ? null : r ? d.logos.dark : d.logos.light),
+            w = null == R;
         return (0, n.jsxs)("div", {
             className: A.lA,
             children: [(0, n.jsxs)("div", {
                 className: A.LV,
                 children: [(0, n.jsxs)("div", {
                     className: A.JN,
-                    children: [_ && S, (0, n.jsxs)("div", {
+                    children: [_ && T, (0, n.jsxs)("div", {
                         className: null != u ? `${A.yO} ${u}` : A.yO,
                         children: [(0, n.jsx)(i.DZT, {
                             variant: "secondary" === f ? "heading-md/semibold" : "heading-lg/semibold",
@@ -205,18 +207,19 @@ let j = {
                         }), (0, n.jsx)(i.DZT, {
                             variant: "heading-sm/medium",
                             color: "text-subtle",
-                            children: v ? C.intl.format(C.t.i2EuFO, {
+                            children: E ? C.intl.format(C.t.i2EuFO, {
                                 helpdeskArticle: m.A.getArticleURL(g.MVz.RECURRING_PROMOTION)
-                            }) : T ? c.body : null != c.bodyWithExpiration ? C.intl.format(c.bodyWithExpiration, {
+                            }) : w ? c.body : null != c.bodyWithExpiration ? C.intl.format(c.bodyWithExpiration, {
                                 date: c.endDate
                             }) : c.body
                         })]
                     }), !h && (0, n.jsx)(P, {
                         recurrence: c,
-                        canBeClaimed: T,
-                        hasClaimError: v,
-                        setCode: R,
-                        setHasClaimError: E
+                        canBeClaimed: w,
+                        hasClaimError: E,
+                        setCode: v,
+                        setHasClaimError: S,
+                        analyticsLocations: x
                     })]
                 }), p && (0, n.jsx)("div", {
                     className: A.R4,
@@ -229,19 +232,20 @@ let j = {
                         zoomable: !1
                     })
                 })]
-            }), h && (0, n.jsx)(N, {}), null != x && (0, n.jsx)(I, {
+            }), h && (0, n.jsx)(N, {}), null != R && (0, n.jsx)(I, {
                 recurrence: {
                     ...c,
-                    code: x
+                    code: R
                 }
-            }), h && null == x && (0, n.jsx)(y, {
+            }), h && null == R && (0, n.jsx)(y, {
                 children: (0, n.jsx)(P, {
                     recurrence: c,
-                    canBeClaimed: T,
-                    hasClaimError: v,
-                    setCode: R,
-                    setHasClaimError: E,
-                    className: A.qx
+                    canBeClaimed: w,
+                    hasClaimError: E,
+                    setCode: v,
+                    setHasClaimError: S,
+                    className: A.qx,
+                    analyticsLocations: x
                 })
             })]
         })

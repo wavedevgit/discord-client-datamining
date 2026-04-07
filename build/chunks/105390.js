@@ -1,7 +1,7 @@
 /** chunk id: 105390 params = (module,exports,require) **/
 n.d(t, {
-    Ag: () => g,
-    MA: () => A,
+    Ag: () => A,
+    MA: () => g,
     fY: () => _
 });
 var i = n(627968),
@@ -15,58 +15,63 @@ var i = n(627968),
     u = n(927578),
     h = n(234419),
     m = n(915516),
-    p = n(985018),
-    E = n(377947);
+    p = n(788868),
+    E = n(985018),
+    S = n(377947);
 
-function S(e) {
+function f(e) {
     let {
         isTabSelected: t,
         expiresAt: n,
         badgeCopy: r,
         className: u,
         tooltipTextOverride: h,
-        tooltipPosition: m
-    } = e, S = s.useMemo(() => Date.parse(n), [n]), g = (0, c.A)(S, 6e4);
-    return Object.values(g).every(e => 0 === e) ? null : (0, i.jsx)(o.m, {
-        text: null != h ? h : (0, d.uN)(g, {
-            days: p.t.qVGNkU,
-            hours: p.t.wyg9a9,
-            minutes: p.t.IzmIlV
+        tooltipPosition: m,
+        hideTooltip: p = !1
+    } = e, f = s.useMemo(() => Date.parse(n), [n]), A = (0, c.A)(f, 6e4);
+    if (Object.values(A).every(e => 0 === e)) return null;
+    let _ = (0, i.jsxs)("div", {
+        className: l()(S.Fg, S.C8, u, {
+            [S.WO]: t
+        }),
+        children: [(0, i.jsx)(a.O4, {
+            size: "custom",
+            width: 16,
+            height: 16,
+            color: "currentColor",
+            className: S._q
+        }), (0, i.jsx)(a.Text, {
+            variant: "eyebrow",
+            color: "text-strong",
+            children: r
+        })]
+    });
+    return p ? _ : (0, i.jsx)(o.m, {
+        text: null != h ? h : (0, d.uN)(A, {
+            days: E.t.qVGNkU,
+            hours: E.t.wyg9a9,
+            minutes: E.t.IzmIlV
         }),
         position: null != m ? m : "top",
-        children: (0, i.jsxs)("div", {
-            className: l()(E.Fg, E.C8, u, {
-                [E.WO]: t
-            }),
-            children: [(0, i.jsx)(a.O4, {
-                size: "custom",
-                width: 20,
-                height: 20,
-                color: "currentColor",
-                className: E._q
-            }), (0, i.jsx)(a.Text, {
-                variant: "eyebrow",
-                color: "text-strong",
-                children: r
-            })]
-        })
+        children: _
     })
 }
 
-function g(e) {
+function A(e) {
     let {
         isTabSelected: t,
         trialOffer: n
     } = e, s = (0, h.V)()?.subscription_trial, r = (0, u.tS)({
         intervalType: s?.interval,
         intervalCount: s?.interval_count
-    }), l = (0, m.Fu)(n);
-    return (0, i.jsx)(A, {
+    }), l = n.trial_id === p.Tt, o = (0, m.Fu)(n);
+    return (0, i.jsx)(g, {
         isTabSelected: t,
         badgeCopy: r,
         offerExpiresAt: n.expires_at,
-        tooltipTextOverride: l,
-        tooltipPosition: "right"
+        tooltipTextOverride: o,
+        tooltipPosition: "right",
+        hideTooltip: l
     })
 }
 
@@ -75,37 +80,39 @@ function _(e) {
         isTabSelected: t,
         userDiscount: n,
         includesAmountOff: s
-    } = e, r = p.intl.formatToPlainString(p.t.iiLbvu, {
+    } = e, r = E.intl.formatToPlainString(E.t.iiLbvu, {
         percent: n.discount.amount
     }), l = (0, m.__)(n);
-    return (0, i.jsx)(A, {
+    return (0, i.jsx)(g, {
         isTabSelected: t,
-        badgeCopy: s ? r : p.intl.string(p.t["/DTtr6"]),
+        badgeCopy: s ? r : E.intl.string(E.t["/DTtr6"]),
         offerExpiresAt: n.expires_at,
         tooltipTextOverride: l,
         tooltipPosition: "right"
     })
 }
 
-function A(e) {
+function g(e) {
     let {
         isTabSelected: t,
         badgeCopy: n,
         offerExpiresAt: s,
         tooltipTextOverride: r,
-        tooltipPosition: o
+        tooltipPosition: o,
+        hideTooltip: c
     } = e;
-    return null != s ? (0, i.jsx)(S, {
+    return null != s ? (0, i.jsx)(f, {
         expiresAt: s,
         isTabSelected: t,
         badgeCopy: n,
         tooltipTextOverride: r,
-        tooltipPosition: o
+        tooltipPosition: o,
+        hideTooltip: c
     }) : (0, i.jsx)("div", {
-        className: l()(E.Fg, E.AT),
+        className: l()(S.Fg, S.AT),
         children: (0, i.jsx)(a.Text, {
             variant: "eyebrow",
-            className: E.md,
+            className: S.md,
             children: n
         })
     })

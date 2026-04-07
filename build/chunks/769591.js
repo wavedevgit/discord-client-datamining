@@ -11,34 +11,34 @@ var i = n(665260),
     l = n(543465),
     o = n(661191),
     s = n(652215),
-    _ = n(355097),
-    c = n(985018);
+    c = n(355097),
+    _ = n(985018);
 
 function u() {
     return [{
         id: "15-minutes",
-        label: c.intl.string(c.t["8ot6gv"]),
-        value: _.Xx.MINUTES_15
+        label: _.intl.string(_.t["8ot6gv"]),
+        value: c.Xx.MINUTES_15
     }, {
         id: "1-hour",
-        label: c.intl.string(c.t.UMWBZr),
-        value: _.Xx.HOURS_1
+        label: _.intl.string(_.t.UMWBZr),
+        value: c.Xx.HOURS_1
     }, {
         id: "3-hours",
-        label: c.intl.string(c.t.QmYWtu),
-        value: _.Xx.HOURS_3
+        label: _.intl.string(_.t.QmYWtu),
+        value: c.Xx.HOURS_3
     }, {
         id: "8-hours",
-        label: c.intl.string(c.t.EpAXPC),
-        value: _.Xx.HOURS_8
+        label: _.intl.string(_.t.EpAXPC),
+        value: c.Xx.HOURS_8
     }, {
         id: "24-hours",
-        label: c.intl.string(c.t["755t4q"]),
-        value: _.Xx.HOURS_24
+        label: _.intl.string(_.t["755t4q"]),
+        value: c.Xx.HOURS_24
     }, {
         id: "forever",
-        label: c.intl.string(c.t.r3LawO),
-        value: _.Xx.ALWAYS
+        label: _.intl.string(_.t.r3LawO),
+        value: c.Xx.ALWAYS
     }]
 }
 let d = {
@@ -51,7 +51,7 @@ function b(e) {
     let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : d;
     return o.default.keys(e).filter(n => {
         let r = e[n].message_notifications !== s.orn.NULL,
-            l = i.Lt(e[n].flags ?? 0, _.vv.UNREADS_ALL_MESSAGES) || i.Lt(e[n].flags ?? 0, _.vv.UNREADS_ONLY_MENTIONS);
+            l = i.Lt(e[n].flags ?? 0, c.vv.UNREADS_ALL_MESSAGES) || i.Lt(e[n].flags ?? 0, c.vv.UNREADS_ONLY_MENTIONS);
         return !t.ignoreUnreadSetting && l || !t.ignoreNotificationSetting && r || !t.ignoreMute && (0, a.tG)(e[n])
     })
 }

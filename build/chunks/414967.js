@@ -36,7 +36,7 @@ class f extends s.A {
                 }
                 for (let e of t.marketingComponents)
                     if (e.component_type === r.C.ANNOUNCEMENT_MODAL) return void this.maybeOpenServerDriveAnnouncementModal(e.id, e.promotion_id, e.properties, !1)
-            }
+            }(0, h.al)(), (0, h.QM)()
     };
     handleActivePromotionsFetchSuccess = e => {
         let {
@@ -75,8 +75,7 @@ class f extends s.A {
             })
         }, {
             modalKey: I
-        }), !0);
-        return !1
+        }), !0)
     };
     handlePreview = e => {
         let {
@@ -87,7 +86,7 @@ class f extends s.A {
     mayShowAnnouncementModal = async () => {
         if (await (0, A.hb)(), u.P.isDisallowPopupsSet()) return;
         let e = d.default.getCurrentUser();
-        (null == e || e.verified) && ((0, h.al)(), (0, h.QM)())
+        if (null != e && !e.verified) return
     }
 }
 let C = new f

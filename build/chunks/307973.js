@@ -26,14 +26,15 @@ let g = e => {
         hammerAssetClassName: T,
         keyAssetClassName: f,
         starAssetClassName: S,
-        animationSpeedScale: b = 1
+        animationSpeedScale: b = 1,
+        blurScale: E = 1
     } = e;
     return (0, i.jsxs)(i.Fragment, {
         children: [null != s && (0, i.jsx)("div", {
             className: l()(r.nJ, s),
             children: (0, i.jsx)(a.Ay, {
                 blurAnimationData: {
-                    startBlurRadius: 10,
+                    startBlurRadius: 10 * E,
                     endBlurRadius: 0,
                     duration: a.$G
                 },
@@ -112,7 +113,7 @@ let g = e => {
             className: l()(r.FV, x),
             children: (0, i.jsx)(a.Ay, {
                 blurAnimationData: {
-                    startBlurRadius: 5,
+                    startBlurRadius: 5 * E,
                     endBlurRadius: 0,
                     duration: a.Mp
                 },
@@ -146,7 +147,7 @@ let g = e => {
             children: (0, i.jsx)(a.Ay, {
                 blurAnimationData: {
                     startBlurRadius: 0,
-                    endBlurRadius: 2,
+                    endBlurRadius: 2 * E,
                     duration: a.$G
                 },
                 scaleAnimationData: {

@@ -10,8 +10,8 @@ var r = n(989349),
     l = n(311907),
     o = n(397927),
     s = n(832712),
-    _ = n(995102),
-    c = n(145408),
+    c = n(995102),
+    _ = n(145408),
     u = n(543465),
     d = n(477427),
     b = n(985018);
@@ -25,7 +25,7 @@ function m(e, t) {
             muted: null != n ? u.Ay.isMuted(n) : void 0,
             muteConfig: null != n ? u.Ay.getMuteConfig(n) : void 0
         }), [n]),
-        g = (0, c.M)(m);
+        g = (0, _.M)(m);
     return null == n ? null : r ? (0, i.jsx)(o.Drp, {
         id: "unmute-guild",
         label: b.intl.string(b.t.De0BTC),
@@ -39,7 +39,7 @@ function m(e, t) {
         action: () => s.A.updateGuildNotificationSettings(n, {
             muted: !0
         }, d.fd.Muted),
-        children: (0, _.g)().map(e => {
+        children: (0, c.g)().map(e => {
             let {
                 value: r,
                 label: l
