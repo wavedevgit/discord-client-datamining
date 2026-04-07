@@ -15,8 +15,8 @@ var l = n(627968),
     m = n(49999),
     E = n(788868),
     _ = n(665606),
-    N = n(985018),
-    f = n(988572);
+    f = n(985018),
+    N = n(988572);
 
 function T(e) {
     let {
@@ -25,8 +25,8 @@ function T(e) {
     } = e, [T, p] = s.useState("top"), h = s.useRef(null), S = s.useRef(null), {
         hasAccess: C
     } = (0, A.TW)("FavoritesOnboardingMenuItemPopover"), {
-        analyticsLocations: x
-    } = (0, u.Ay)(o.A.FAVORITES_GUILD_MENU_ITEM), g = (0, i.bG)([d.A], () => d.A.hasStoredFavorites());
+        analyticsLocations: g
+    } = (0, u.Ay)(o.A.FAVORITES_GUILD_MENU_ITEM), x = (0, i.bG)([d.A], () => d.A.hasStoredFavorites());
     s.useLayoutEffect(() => {
         if (null == t.current) return;
         let e = () => {
@@ -46,10 +46,10 @@ function T(e) {
     let v = s.useCallback(() => {
             n?.(m.i.TAKE_ACTION), C || (0, c.A)({
                 subscriptionTier: E.pe.TIER_2,
-                analyticsLocations: x
+                analyticsLocations: g
             })
-        }, [n, x, C]),
-        I = g ? _.default.TWuDTt : _.default["25YCHl"];
+        }, [n, g, C]),
+        I = x ? _.default.TWuDTt : _.default["25YCHl"];
     return (0, l.jsx)(a.AM, {
         targetElementRef: t,
         gradientColor: "nitro-pink",
@@ -65,16 +65,16 @@ function T(e) {
             variant: "expressive"
         },
         graphic: {
-            src: f.A,
+            src: N.A,
             type: "image",
             aspectRatio: "16/9"
         },
-        title: N.intl.string(C ? I : _.default.A3ZjbM),
-        body: N.intl.string(C ? _.default.DFjrWw : _.default.qJUI2v),
+        title: f.intl.string(C ? I : _.default.A3ZjbM),
+        body: f.intl.string(C ? _.default.DFjrWw : _.default.qJUI2v),
         onRequestClose: () => n?.(m.i.USER_DISMISS),
         actions: C ? void 0 : [{
             icon: r.tvc,
-            text: N.intl.string(_.default["avps/2"]),
+            text: f.intl.string(_.default["avps/2"]),
             onClick: () => v(),
             variant: "expressive"
         }]

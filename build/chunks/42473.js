@@ -23,14 +23,14 @@ let m = s.forwardRef(function(e, t) {
             iconForeground: m,
             innerClassName: E,
             className: _,
-            redGlow: N,
-            onMouseEnter: f,
+            redGlow: f,
+            onMouseEnter: N,
             onMouseLeave: T,
             "aria-label": p,
             "aria-checked": h,
             role: S,
             plated: C
-        } = e, x = "function" == typeof c ? (0, l.jsx)(c, {
+        } = e, g = "function" == typeof c ? (0, l.jsx)(c, {
             width: 20,
             height: 20,
             size: "custom",
@@ -47,17 +47,17 @@ let m = s.forwardRef(function(e, t) {
             innerClassName: E,
             wrapperClassName: a()(A.x6, _),
             className: a()(A.x6, _, {
-                [A.Xr]: N,
+                [A.Xr]: f,
                 [A.r9]: o,
                 [A.Sn]: !o,
                 [A.ZQ]: C,
-                [A.OH]: N && C
+                [A.OH]: f && C
             }),
             onClick: e => {
                 null != i && i(e)
             },
             onMouseDown: r,
-            onMouseEnter: f,
+            onMouseEnter: N,
             onMouseLeave: T,
             onContextMenu: s,
             role: S,
@@ -74,8 +74,8 @@ let m = s.forwardRef(function(e, t) {
                 width: 20,
                 height: 20,
                 mask: d.Ay.Masks.PANEL_BUTTON,
-                children: x
-            }) : x, n]
+                children: g
+            }) : g, n]
         })
     }),
     E = s.forwardRef(function(e, t) {
@@ -112,14 +112,14 @@ let m = s.forwardRef(function(e, t) {
                 onContextMenu: d,
                 onFocus: E,
                 onBlur: _,
-                "aria-label": N,
-                ...f
+                "aria-label": f,
+                ...N
             } = e;
             return (0, l.jsx)(c.STz, {
                 "data-migration-pending": !0,
                 tooltipClassName: A.RF,
                 tooltipContentClassName: A.In,
-                "aria-label": N,
+                "aria-label": f,
                 forceOpen: s,
                 shouldShow: i,
                 color: c.oMw.GREEN,
@@ -133,7 +133,7 @@ let m = s.forwardRef(function(e, t) {
                         onContextMenu: a,
                         onFocus: c,
                         onBlur: A,
-                        "aria-label": N
+                        "aria-label": f
                     } = e;
                     return (0, l.jsx)(m, {
                         onClick: e => {
@@ -154,8 +154,8 @@ let m = s.forwardRef(function(e, t) {
                         onBlur: () => {
                             A?.(), _?.()
                         },
-                        "aria-label": N,
-                        ...f,
+                        "aria-label": f,
+                        ...N,
                         ref: t
                     })
                 }

@@ -15,15 +15,15 @@ var l = n(627968),
     m = n(834757),
     E = n(544028),
     _ = n(461782),
-    N = n(290863),
-    f = n(287809),
+    f = n(290863),
+    N = n(287809),
     T = n(829219),
     p = n(859703),
     h = n(341915),
     S = n(55738),
     C = n(112142),
-    x = n(714510),
-    g = n(890687),
+    g = n(714510),
+    x = n(890687),
     v = n(579473),
     I = n(18437),
     R = n(590202),
@@ -55,27 +55,27 @@ function Y(e) {
         quest: n,
         previewQuest: i,
         isParticipatingOverride: _
-    } = e, S = (0, I.Ut)(), [D, Y] = s.useState(!1), $ = s.useCallback(() => Y(!0), []), J = s.useCallback(() => Y(!1), []), X = (0, r.bG)([f.default], () => f.default.getCurrentUser()), Z = (0, r.bG)([E.A], () => E.A.getState().theme), ee = (0, o.Mw)(Z) ? H.NJ8.DARK : H.NJ8.LIGHT, et = (0, r.bG)([c.A], () => c.A.getParticipants(e.channelId), [e.channelId]), en = (0, r.bG)([p.A], () => (0, b.t6)(p.A.quests, p.A.questToDeliverForPlacement, h.yW.DESKTOP_ACCOUNT_PANEL_AREA), []), {
+    } = e, S = (0, I.Ut)(), [D, Y] = s.useState(!1), $ = s.useCallback(() => Y(!0), []), J = s.useCallback(() => Y(!1), []), X = (0, r.bG)([N.default], () => N.default.getCurrentUser()), Z = (0, r.bG)([E.A], () => E.A.getState().theme), ee = (0, o.Mw)(Z) ? H.NJ8.DARK : H.NJ8.LIGHT, et = (0, r.bG)([c.A], () => c.A.getParticipants(e.channelId), [e.channelId]), en = (0, r.bG)([p.A], () => (0, b.t6)(p.A.quests, p.A.questToDeliverForPlacement, h.yW.DESKTOP_ACCOUNT_PANEL_AREA), []), {
         isCurrentUserStreamingQuestApplication: el,
         isQuestInQuestBar: es
-    } = (0, r.cf)([N.A], () => {
+    } = (0, r.cf)([f.A], () => {
         var e;
         return {
-            isCurrentUserStreamingQuestApplication: null != n && null != X && (e = N.A, et.some(t => {
+            isCurrentUserStreamingQuestApplication: null != n && null != X && (e = f.A, et.some(t => {
                 if (t.type !== z.lp.STREAM || t.user.id !== X.id) return !1;
                 let l = (0, m.nr)(t.stream, e);
                 return null != l && (0, y.zS)(l, n)
             })),
             isQuestInQuestBar: en?.id === n?.id
         }
-    }, [X, n, et, en]), ei = (0, L.pU)(n)?.[0], ea = (0, r.bG)([d.Ay, N.A], () => {
+    }, [X, n, et, en]), ei = (0, L.pU)(n)?.[0], ea = (0, r.bG)([d.Ay, f.A], () => {
         let e = d.Ay.getRunningGames().map(e => e.id);
         if ((0, L.xZ)(n) && null !== ei && e.includes(ei)) return !0;
-        let t = null != X ? N.A.findActivity(X.id, e => e.type !== H.$pd.CUSTOM_STATUS) : null;
+        let t = null != X ? f.A.findActivity(X.id, e => e.type !== H.$pd.CUSTOM_STATUS) : null;
         return !!(null != t && (0, L.g5)(n) && (0, y.zS)(t, n))
     }, [n, X, ei]), er = !0 === _ || el || ea, eo = (0, r.bG)([p.A], () => null != n && p.A.isEnrolling(n.id), [n]), eu = (0, r.bG)([c.A], () => (X?.id == null ? null : c.A.getParticipant(t, X.id)) != null, [t, X]), {
         launchInGameActivity: ec
-    } = (0, g.zW)(n), ed = (0, g.S5)(n?.config.expiresAt), eA = (0, g.S5)(n?.config.rewardsConfig.rewardsExpireAt), em = s.useCallback(() => {
+    } = (0, x.zW)(n), ed = (0, x.S5)(n?.config.expiresAt), eA = (0, x.S5)(n?.config.rewardsConfig.rewardsExpireAt), em = s.useCallback(() => {
         (0, T.Oy)(n.id, {
             questContent: h.uF.QUEST_LIVE_STREAM,
             questContentCTA: R.Cy.ACCEPT_QUEST,
@@ -101,26 +101,26 @@ function Y(e) {
             fromContent: h.uF.QUEST_LIVE_STREAM,
             questId: n.id
         })
-    }, [n, S]), eN = (0, G.ix)({
+    }, [n, S]), ef = (0, G.ix)({
         quest: n,
         questContent: h.uF.QUEST_LIVE_STREAM,
         sourceQuestContent: h.uF.QUEST_LIVE_STREAM
-    }), ef = s.useMemo(() => (0, M.L)({
+    }), eN = s.useMemo(() => (0, M.L)({
         quest: n,
         location: q.rE.QUEST_CHANNEL_CALL_HEADER
-    }), [n]), eT = (0, x.NA)({
+    }), [n]), eT = (0, g.NA)({
         quest: n
-    }), ep = (0, U.vA)(n), eh = (0, g.LS)(n), eS = n.userStatus?.enrolledAt != null, eC = n.userStatus?.completedAt != null, ex = null != n.userStatus && (0, b.gO)(n.userStatus, h.uF.QUEST_LIVE_STREAM), eg = null != n.userStatus && (0, b.gO)(n.userStatus, h.uF.QUEST_BAR), ev = es && !eg, eI = C.t.useConfig({
+    }), ep = (0, U.vA)(n), eh = (0, x.LS)(n), eS = n.userStatus?.enrolledAt != null, eC = n.userStatus?.completedAt != null, eg = null != n.userStatus && (0, b.gO)(n.userStatus, h.uF.QUEST_LIVE_STREAM), ex = null != n.userStatus && (0, b.gO)(n.userStatus, h.uF.QUEST_BAR), ev = es && !ex, eI = C.t.useConfig({
         location: q.rE.QUEST_CHANNEL_CALL_HEADER
     }), eR = (0, Q.Pd)(n);
-    ef.info({
-        isQuestCallHeaderDismissed: ex,
+    eN.info({
+        isQuestCallHeaderDismissed: eg,
         isQuestExpired: eh,
         isQuestBarShowing: ev,
         isCurrentUserCallParticipant: eu
     });
     let eM = null != i && n.userStatus?.claimedAt == null;
-    if (!eM && (ex || eh || ev) || !eM && !eu) return null;
+    if (!eM && (eg || eh || ev) || !eM && !eu) return null;
     let ej = (0, L.Yh)(n),
         eb = (0, l.jsx)(V.A, {
             className: K.Qq,
@@ -237,7 +237,7 @@ function Y(e) {
                     size: "sm",
                     fullWidth: !0,
                     text: W.intl.string(W.t.cfY4PE),
-                    onClick: eN
+                    onClick: ef
                 })]
             })]
         })]
@@ -253,10 +253,10 @@ function $(e) {
             location: "QuestChannelCallHeader"
         }),
         a = (0, r.bG)([p.A], () => p.A.quests),
-        o = (0, g.oH)(Array.from(a.values())),
+        o = (0, x.oH)(Array.from(a.values())),
         u = s.useMemo(() => (0, U.$e)(a, q.Ls), [a]),
         d = (0, r.bG)([c.A], () => c.A.getParticipants(e.channelId), [e.channelId]),
-        A = (0, r.bG)([N.A], () => null != e.previewQuest ? e.previewQuest : function(e, t, n) {
+        A = (0, r.bG)([f.A], () => null != e.previewQuest ? e.previewQuest : function(e, t, n) {
             for (let l of e) {
                 if (l.type === z.lp.STREAM) {
                     let e = (0, m.nr)(l.stream, n) ?? null,
@@ -271,22 +271,22 @@ function $(e) {
                         }
             }
             return null
-        }(d, u, N.A), [d, u, o, e.previewQuest]),
+        }(d, u, f.A), [d, u, o, e.previewQuest]),
         E = s.useMemo(() => i ? A?.id ?? null : null, [A, i]);
     s.useEffect(() => {
         null == e.previewQuest && null != E && (0, T.yO)([E], h.uF.QUEST_LIVE_STREAM, "QuestChannelCallHeader")
     }, [E, e.previewQuest]);
-    let f = (0, r.bG)([p.A], () => {
+    let N = (0, r.bG)([p.A], () => {
             let e = p.A.earnedQuestForPlacement.get(h.uF.QUEST_LIVE_STREAM);
             if (null == e || null == E) return null;
             let t = e.quests.get(E);
             return (0, b.Oh)(t) ? t.questWithUserStatus : null
         }, [E]),
-        [C, x] = s.useState(null);
+        [C, g] = s.useState(null);
     s.useEffect(() => {
-        null != f ? x(f) : null === E && x(null)
-    }, [f, E]);
-    let v = f ?? (null !== E ? C : null),
+        null != N ? g(N) : null === E && g(null)
+    }, [N, E]);
+    let v = N ?? (null !== E ? C : null),
         I = e.previewQuest ?? (i ? v : A);
     return null == I || n ? null : (0, l.jsx)(D.R, {
         questOrQuests: I,
@@ -300,7 +300,7 @@ function $(e) {
     })
 }
 let J = function(e) {
-    let t = (0, r.bG)([f.default], () => f.default.getCurrentUser());
+    let t = (0, r.bG)([N.default], () => N.default.getCurrentUser());
     return (0, r.bG)([c.A], () => (t?.id == null ? null : c.A.getParticipant(e.channelId, t.id)) != null, [e.channelId, t]) || null != e.previewQuest ? (0, l.jsx)($, {
         ...e
     }) : null

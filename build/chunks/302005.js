@@ -21,7 +21,7 @@ function A(e) {
         isPopoverAllowed: m = !0
     } = e, E = (0, a.JZ)(s.M.FAVORITES_SERVER_ONBOARDING_INTRO), {
         isExperimentEnabled: _
-    } = (0, u.TW)(t), N = (0, l.bG)([o.A], () => null != o.A.getVoiceChannelId()), f = (0, i.useHasAnyModalOpen)(), T = _ && c && n && d.has(A) && m && !N && !f, [p, h] = (0, r.kn)(T && E ? [s.M.FAVORITES_SERVER_ONBOARDING_MENU_ITEM] : []);
+    } = (0, u.TW)(t), f = (0, l.bG)([o.A], () => null != o.A.getVoiceChannelId()), N = (0, i.useHasAnyModalOpen)(), T = _ && c && n && d.has(A) && m && !f && !N, [p, h] = (0, r.kn)(T && E ? [s.M.FAVORITES_SERVER_ONBOARDING_MENU_ITEM] : []);
     return {
         showMenuItemPopover: p === s.M.FAVORITES_SERVER_ONBOARDING_MENU_ITEM,
         markMenuItemPopoverAsDismissed: h

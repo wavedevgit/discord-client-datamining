@@ -21,15 +21,15 @@ let m = function(e) {
         questContent: m,
         taskDetails: E,
         location: _,
-        sourceQuestContent: N,
-        gameProfileSource: f
+        sourceQuestContent: f,
+        gameProfileSource: N
     } = e, T = (0, r.mU)({
         quest: s,
         taskDetails: E,
         location: _,
         questContent: m,
-        sourceQuestContent: N,
-        gameProfileSource: f
+        sourceQuestContent: f,
+        gameProfileSource: N
     }), p = (0, o.SD)(s), h = (0, o.Oq)(), S = p && h;
     return (0, l.jsxs)("div", {
         className: i()(A.iE, t),
@@ -40,7 +40,7 @@ let m = function(e) {
             className: A.Qq,
             quest: s,
             questContent: m,
-            sourceQuestContent: N
+            sourceQuestContent: f
         }), (0, l.jsx)("div", {
             className: A.C,
             children: (0, l.jsxs)("div", {
