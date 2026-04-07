@@ -2,19 +2,19 @@
 l.d(t, {
     h: () => s
 });
-var a = l(64700),
-    n = l(372684),
+var n = l(64700),
+    a = l(372684),
     i = l(985018);
 
 function s(e) {
-    return a.useMemo(() => {
+    return n.useMemo(() => {
         if (null != e.name && "" !== e.name) return "";
         if (e.decision?.signal != null) {
             let t = e.decision?.signal;
             switch (t.type) {
-                case n.Gy.GAME_EVENT:
+                case a.Gy.GAME_EVENT:
                     return t.description ?? t.title ?? i.intl.string(i.t.Cyxddp);
-                case n.Gy.PHRASE:
+                case a.Gy.PHRASE:
                     return `"${t.text}"`
             }
         }

@@ -3,13 +3,13 @@ l.d(t, {
     $: () => E,
     default: () => k
 });
-var a = l(627968),
-    n = l(64700),
+var n = l(627968),
+    a = l(64700),
     i = l(503698),
     s = l.n(i),
     r = l(311907),
-    o = l(990078),
-    d = l(521489),
+    d = l(990078),
+    o = l(521489),
     c = l(397927),
     u = l(775602),
     m = l(793574),
@@ -25,7 +25,7 @@ var a = l(627968),
     y = l(409067),
     N = l(985018),
     A = l(702351);
-let E = n.createContext({
+let E = a.createContext({
     selectedClipIds: new Set,
     toggleClipSelection: () => {},
     clearSelection: () => {},
@@ -41,83 +41,83 @@ function k(e) {
         ...S
     } = e, {
         analyticsLocations: w
-    } = (0, h.Ay)(m.A.CLIPS_GALLERY), [L, M] = n.useState(new Set), {
+    } = (0, h.Ay)(m.A.CLIPS_GALLERY), [L, M] = a.useState(new Set), {
         clipsByGame: T,
         filteredClips: R,
         favoriteClips: D,
         allClips: O
     } = (0, y.a)(), {
         onShareClick: P
-    } = (0, v.A)(t), U = (0, r.bG)([p.A], () => p.A.getExportingClipIds().length > 0), [G, V] = n.useState("gallery"), [H, $] = n.useState(null), [z, _] = n.useState(c.ip4.HIDDEN), K = n.useRef(null), F = (0, C.P)(e => e.selectedGameId), B = n.useMemo(() => null == F || "favorites" === F ? null : T.find(e => e.applicationId === F) ?? null, [F, T]), Y = n.useMemo(() => "favorites" === F ? D : B?.filteredClips ?? R, [F, B, R, D]), X = n.useMemo(() => "favorites" === F ? N.intl.string(N.t["9rlCk1"]) : B?.name ?? N.intl.string(N.t.dPVrEv), [F, B]), Q = n.useCallback(e => {
+    } = (0, v.A)(t), U = (0, r.bG)([p.A], () => p.A.getExportingClipIds().length > 0), [G, V] = a.useState("gallery"), [H, z] = a.useState(null), [$, _] = a.useState(c.ip4.HIDDEN), K = a.useRef(null), B = (0, C.P)(e => e.selectedGameId), F = a.useMemo(() => null == B || "favorites" === B ? null : T.find(e => e.applicationId === B) ?? null, [B, T]), Y = a.useMemo(() => "favorites" === B ? D : F?.filteredClips ?? R, [B, F, R, D]), X = a.useMemo(() => "favorites" === B ? N.intl.string(N.t["9rlCk1"]) : F?.name ?? N.intl.string(N.t.dPVrEv), [B, F]), Q = a.useCallback(e => {
         M(t => {
             let l = new Set(t);
             return l.has(e) ? l.delete(e) : l.add(e), l
         })
-    }, []), q = n.useCallback(e => {
-        $(e), V("editing"), u.A.useReducedMotion && _(c.ip4.ENTERED)
-    }, []), Z = n.useCallback(() => {
-        u.A.useReducedMotion && $(null), V("gallery")
-    }, []), W = n.useCallback(() => {
+    }, []), q = a.useCallback(e => {
+        z(e), V("editing"), u.A.useReducedMotion && _(c.ip4.ENTERED)
+    }, []), W = a.useCallback(() => {
+        u.A.useReducedMotion && z(null), V("gallery")
+    }, []), Z = a.useCallback(() => {
         M(new Set)
-    }, []), J = L.size > 0, ee = n.useCallback(() => {
+    }, []), J = L.size > 0, ee = a.useCallback(() => {
         let e = O.filter(e => L.has(e.id));
         (0, c.mMO)(async () => {
             let {
                 default: t
             } = await l.e("13367").then(l.bind(l, 223818));
-            return l => (0, a.jsx)(t, {
+            return l => (0, n.jsx)(t, {
                 ...l,
                 clips: e,
                 onAfterDelete: () => {
-                    W(), l.onClose()
+                    Z(), l.onClose()
                 }
             })
         }, {
             stackingBehavior: "stack"
         })
-    }, [O, L, W]), et = n.useCallback(async () => {
+    }, [O, L, Z]), et = a.useCallback(async () => {
         let e = O.filter(e => L.has(e.id));
         await P({
             clips: e
-        }), W()
-    }, [O, L, P, W]), el = n.useMemo(() => ({
+        }), Z()
+    }, [O, L, P, Z]), el = a.useMemo(() => ({
         selectedClipIds: L,
         toggleClipSelection: Q,
-        clearSelection: W,
+        clearSelection: Z,
         isMultiSelectMode: J
-    }), [L, Q, W, J]);
-    return (0, a.jsx)(h.f5, {
+    }), [L, Q, Z, J]);
+    return (0, n.jsx)(h.f5, {
         value: w,
-        children: (0, a.jsx)(E.Provider, {
+        children: (0, n.jsx)(E.Provider, {
             value: el,
-            children: (0, a.jsx)(d.N, {
+            children: (0, n.jsx)(o.N, {
                 onClose: i,
                 transitionState: I,
                 ...S,
-                children: (0, a.jsxs)("div", {
+                children: (0, n.jsxs)("div", {
                     className: A.jT,
                     ref: K,
-                    children: [(0, a.jsxs)("div", {
+                    children: [(0, n.jsxs)("div", {
                         className: s()(A.PD, "gallery" === G && A.vu),
-                        children: [(0, a.jsx)(b.A, {
+                        children: [(0, n.jsx)(b.A, {
                             clipsByGame: T,
                             filteredClips: R,
                             favoriteClips: D,
                             allClips: O
-                        }), (0, a.jsxs)("div", {
+                        }), (0, n.jsxs)("div", {
                             className: A.Qs,
-                            children: [(0, a.jsxs)("div", {
+                            children: [(0, n.jsxs)("div", {
                                 className: A.$Q,
-                                children: [(0, a.jsx)(c.Heading, {
+                                children: [(0, n.jsx)(c.Heading, {
                                     variant: "heading-md/medium",
                                     color: "text-default",
                                     children: X
-                                }), (0, a.jsxs)("div", {
+                                }), (0, n.jsxs)("div", {
                                     className: A.$s,
-                                    children: [J && (0, a.jsxs)(a.Fragment, {
-                                        children: [(0, a.jsx)(o.m, {
+                                    children: [J && (0, n.jsxs)(n.Fragment, {
+                                        children: [(0, n.jsx)(d.m, {
                                             text: N.intl.string(N.t.RDE0Sc),
-                                            children: (0, a.jsx)(c.K0, {
+                                            children: (0, n.jsx)(c.K0, {
                                                 onClick: et,
                                                 icon: c.liv,
                                                 size: "sm",
@@ -125,9 +125,9 @@ function k(e) {
                                                 "aria-label": N.intl.string(N.t.RDE0Sc),
                                                 loading: U
                                             })
-                                        }), (0, a.jsx)(o.m, {
+                                        }), (0, n.jsx)(d.m, {
                                             text: N.intl.string(N.t.oyYWHE),
-                                            children: (0, a.jsx)(c.K0, {
+                                            children: (0, n.jsx)(c.K0, {
                                                 onClick: ee,
                                                 icon: c.ucK,
                                                 size: "sm",
@@ -135,7 +135,7 @@ function k(e) {
                                                 "aria-label": N.intl.string(N.t.oyYWHE)
                                             })
                                         })]
-                                    }), (0, a.jsx)(c.K0, {
+                                    }), (0, n.jsx)(c.K0, {
                                         onClick: i,
                                         icon: c.d$L,
                                         size: "sm",
@@ -143,7 +143,7 @@ function k(e) {
                                         "aria-label": N.intl.string(N.t.cpT0Cq)
                                     })]
                                 })]
-                            }), (0, a.jsx)(j.A, {
+                            }), (0, n.jsx)(j.A, {
                                 onEdit: q,
                                 channelId: t,
                                 filteredClips: Y,
@@ -151,19 +151,19 @@ function k(e) {
                                 onClipClick: k
                             })]
                         })]
-                    }), (0, a.jsx)("div", {
+                    }), (0, n.jsx)("div", {
                         className: s()(A.jN, "editing" === G && A.vu),
                         onTransitionEnd: () => {
-                            "gallery" === G ? ($(null), _(c.ip4.HIDDEN)) : "editing" === G && _(c.ip4.ENTERED)
+                            "gallery" === G ? (z(null), _(c.ip4.HIDDEN)) : "editing" === G && _(c.ip4.ENTERED)
                         },
-                        children: null != H && (0, a.jsxs)(g.p, {
+                        children: null != H && (0, n.jsxs)(g.p, {
                             clip: H,
                             modalContainerRef: K,
-                            children: [(0, a.jsx)(x.A, {
+                            children: [(0, n.jsx)(x.A, {
                                 clip: H,
-                                transitionState: z,
-                                onClose: Z
-                            }), (0, a.jsx)(f.A, {
+                                transitionState: $,
+                                onClose: W
+                            }), (0, n.jsx)(f.A, {
                                 channelId: t,
                                 clip: H,
                                 onClose: i

@@ -1,0 +1,2 @@
+/** chunk id: 939782 params = (module,exports,require) **/
+s.exports = JSON.parse('{"ihBfyA":["Добавить в избранное"],"PACPOV":["Игра"],"xkY5xS":["Попробуйте поискать что-нибудь другое"],"IZsalP":["Удалить из избранного"]}')

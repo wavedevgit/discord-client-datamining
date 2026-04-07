@@ -1,10 +1,10 @@
 /** chunk id: 584794 params = (module,exports,require) **/
 l.d(t, {
-    A: () => n
+    A: () => a
 });
-var a = l(696016);
+var n = l(696016);
 
-function n(e, t) {
-    let l = e / a.YM;
-    return t && (l /= a.iJ), l
+function a(e, t) {
+    let l = e / n.YM;
+    return t && (l /= n.iJ), l
 }

@@ -2,8 +2,8 @@
 l.d(t, {
     P: () => i
 });
-var a = l(353640);
-let n = {
+var n = l(353640);
+let a = {
         query: "",
         sortOrder: "descending",
         selectedGameId: null,
@@ -12,8 +12,8 @@ let n = {
         selectedGuildId: null,
         selectedYear: null
     },
-    i = (0, a.v)(e => ({
-        ...n,
+    i = (0, n.v)(e => ({
+        ...a,
         setQuery: t => e({
             query: t
         }),
@@ -47,5 +47,5 @@ let n = {
             selectedGuildId: null,
             selectedYear: null
         }),
-        resetFilters: () => e(n)
+        resetFilters: () => e(a)
     }))

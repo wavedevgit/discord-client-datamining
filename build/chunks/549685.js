@@ -2,9 +2,9 @@
 l.d(t, {
     A: () => i
 });
-var a = l(627968);
+var n = l(627968);
 l(64700);
-var n = l(953727);
+var a = l(953727);
 
 function i(e) {
     let {
@@ -14,12 +14,12 @@ function i(e) {
         foreground: s,
         ...r
     } = e;
-    return (0, a.jsx)("svg", {
-        ...(0, n.A)(r),
+    return (0, n.jsx)("svg", {
+        ...(0, a.A)(r),
         width: t,
         height: l,
         viewBox: "0 0 18 20",
-        children: (0, a.jsx)("path", {
+        children: (0, n.jsx)("path", {
             fill: i,
             className: s,
             fillRule: "evenodd",

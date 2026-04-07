@@ -2,13 +2,13 @@
 l.d(t, {
     A: () => C
 }), l(321073);
-var a = l(627968),
-    n = l(64700),
+var n = l(627968),
+    a = l(64700),
     i = l(110259),
     s = l(311907),
     r = l(397927),
-    o = l(139286),
-    d = l(962125),
+    d = l(139286),
+    o = l(962125),
     c = l(661191),
     u = l(274372),
     m = l(399925),
@@ -30,11 +30,11 @@ function C(e) {
         totalClipCount: l,
         onClipClick: C,
         onEdit: y
-    } = e, [N, A] = n.useState(!0), [E, k] = n.useState({
+    } = e, [N, A] = a.useState(!0), [E, k] = a.useState({
         width: 0,
         height: 0
     }), I = (0, s.bG)([u.A], () => u.A.getSettings().storageLocation), S = (0, s.yK)([u.A], () => u.A.getNewClipIds()), w = (0, s.bG)([u.A], () => u.A.getExportingClipIds().length > 0);
-    (0, o.A)({
+    (0, d.A)({
         type: i.ImpressionTypes.MODAL,
         name: i.ImpressionNames.CLIP_GALLERY_VIEWED,
         properties: {
@@ -42,43 +42,43 @@ function C(e) {
         }
     }, {
         disableTrack: N
-    }, [t.length, N]), n.useEffect(() => ((0, m.jA)(), () => {
+    }, [t.length, N]), a.useEffect(() => ((0, m.jA)(), () => {
         (0, m.jA)(), (0, m.Su)()
     }), []);
-    let L = n.useMemo(() => {
+    let L = a.useMemo(() => {
             let e = [],
                 l = new Map,
-                a = [],
-                n = new Date;
-            n.setHours(0, 0, 0, 0);
-            let i = n.getTime();
+                n = [],
+                a = new Date;
+            a.setHours(0, 0, 0, 0);
+            let i = a.getTime();
             if (t.forEach(e => {
                     let t = c.default.extractTimestamp(e.id),
-                        n = new Date(t);
-                    if (n.setHours(0, 0, 0, 0), n.getTime() === i) a.push(e);
+                        a = new Date(t);
+                    if (a.setHours(0, 0, 0, 0), a.getTime() === i) n.push(e);
                     else {
-                        let a = new Date(t).toLocaleDateString("en-US", {
+                        let n = new Date(t).toLocaleDateString("en-US", {
                                 month: "long",
                                 year: "numeric"
                             }),
-                            n = l.get(a) ?? [];
-                        l.set(a, [...n, e])
+                            a = l.get(n) ?? [];
+                        l.set(n, [...a, e])
                     }
-                }), a.length > 0) {
-                let t = a.some(e => e.isTemporary);
+                }), n.length > 0) {
+                let t = n.some(e => e.isTemporary);
                 e.push({
                     type: "today",
                     title: x.intl.string(x.t["kB2R/0"]),
                     description: t ? x.intl.string(x.t["6AXirz"]) : void 0,
-                    clips: a
+                    clips: n
                 })
             }
             return Array.from(l.entries()).forEach(t => {
-                let [l, a] = t;
+                let [l, n] = t;
                 e.push({
                     type: "monthyear",
                     title: l,
-                    clips: a
+                    clips: n
                 })
             }), e
         }, [t]),
@@ -88,16 +88,16 @@ function C(e) {
         {
             tileWidth: T,
             columns: R
-        } = n.useMemo(() => {
+        } = a.useMemo(() => {
             var e;
-            let l, a, n, i, s;
-            return e = t.length, n = 16 * ((a = Math.max(1, Math.floor(((l = M - j) + 16) / 336))) - 1), i = Math.max(320, (l - n) / a), s = b(a, e), {
+            let l, n, a, i, s;
+            return e = t.length, a = 16 * ((n = Math.max(1, Math.floor(((l = M - j) + 16) / 336))) - 1), i = Math.max(320, (l - a) / n), s = b(n, e), {
                 tileWidth: i,
-                columns: a,
+                columns: n,
                 rows: s
             }
         }, [t.length, M]);
-    n.useEffect(() => {
+    a.useEffect(() => {
         !async function() {
             A(!0);
             try {
@@ -107,24 +107,24 @@ function C(e) {
             }
         }()
     }, [I]);
-    let D = n.useMemo(() => L.map(e => b(R, e.clips.length)), [L, R]),
-        O = n.useMemo(() => D.reduce((e, t) => e + t, 0), [D]),
+    let D = a.useMemo(() => L.map(e => b(R, e.clips.length)), [L, R]),
+        O = a.useMemo(() => D.reduce((e, t) => e + t, 0), [D]),
         P = Math.floor(T / g),
-        U = n.useCallback((e, t) => {
+        U = a.useCallback((e, t) => {
             let {
                 sectionIndex: l,
-                sectionRowIndex: n
+                sectionRowIndex: a
             } = t, i = L[l];
             if (null == i) return null;
-            let s = n * R,
+            let s = a * R,
                 r = i.clips.slice(s, s + R);
-            return (0, a.jsx)("div", {
+            return (0, n.jsx)("div", {
                 className: f.UX,
-                children: r.map(e => (0, a.jsx)("div", {
+                children: r.map(e => (0, n.jsx)("div", {
                     style: {
                         width: T
                     },
-                    children: (0, a.jsx)(h.A, {
+                    children: (0, n.jsx)(h.A, {
                         actionsDisabled: w,
                         isNew: S.includes(e.id),
                         onClick: C ?? y,
@@ -132,21 +132,21 @@ function C(e) {
                         clip: e
                     })
                 }, e.id))
-            }, `row-${l}-${n}`)
+            }, `row-${l}-${a}`)
         }, [L, R, T, w, S, C, y]),
-        G = n.useCallback(e => {
+        G = a.useCallback(e => {
             let t = L[e];
             return t?.description != null ? 66 : 44
         }, [L]),
-        V = n.useCallback(e => {
+        V = a.useCallback(e => {
             let t = L[e];
-            return null == t ? null : (0, a.jsxs)("div", {
+            return null == t ? null : (0, n.jsxs)("div", {
                 className: f.aE,
-                children: [(0, a.jsx)(r.Heading, {
+                children: [(0, n.jsx)(r.Heading, {
                     variant: "text-md/semibold",
                     color: "text-default",
                     children: t.title
-                }), null != t.description && (0, a.jsx)(r.Text, {
+                }), null != t.description && (0, n.jsx)(r.Text, {
                     variant: "text-sm/normal",
                     color: "text-subtle",
                     className: f.yV,
@@ -154,10 +154,10 @@ function C(e) {
                 })]
             }, `header-${e}`)
         }, [L]);
-    return N || 0 !== L.length ? N ? (0, a.jsx)("div", {
+    return N || 0 !== L.length ? N ? (0, n.jsx)("div", {
         className: f.dc,
-        children: (0, a.jsx)(r.y$y, {})
-    }) : (0, a.jsx)(d.A, {
+        children: (0, n.jsx)(r.y$y, {})
+    }) : (0, n.jsx)(o.A, {
         listPadding: v,
         renderRow: U,
         renderSectionHeader: V,
@@ -166,7 +166,7 @@ function C(e) {
         rowHeight: P + 68 + 16,
         sectionHeaderHeight: G,
         onResize: k
-    }) : (0, a.jsx)(p.A, {
+    }) : (0, n.jsx)(p.A, {
         isEmptyBecauseQuery: l > 0
     })
 }
