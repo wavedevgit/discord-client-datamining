@@ -19,21 +19,21 @@ var p = n(985018),
     g = n(435115),
     m = n(885106);
 let A = () => {
-    let [e, t] = s.useState(""), [r, A] = s.useState(""), [f, E] = s.useState(!1), [x, I] = s.useState(!1), [N, v] = s.useState(null), [C, j] = s.useState(null), S = (0, a.bG)([u.A], () => u.A.getCountryCode()), T = S.code.split(" ")[0], y = async () => {
+    let [e, t] = s.useState(""), [r, A] = s.useState(""), [f, E] = s.useState(!1), [x, I] = s.useState(!1), [N, v] = s.useState(null), [T, C] = s.useState(null), j = (0, a.bG)([u.A], () => u.A.getCountryCode()), S = j.code.split(" ")[0], y = async () => {
         try {
             await d.A.resendCode(e)
         } catch (e) {
-            j(e.body.message)
+            C(e.body.message)
         }
     }, b = async () => {
         E(!0);
         try {
             let {
                 token: t
-            } = await d.A.verifyPhone(T + e, r);
-            v(null), j(null), I(!0), d.A.validatePhoneForSupport(t)
+            } = await d.A.verifyPhone(S + e, r);
+            v(null), C(null), I(!0), d.A.validatePhoneForSupport(t)
         } catch (e) {
-            e.body.message ? (v(null), j(e.body.message)) : (v(e.body.phone), j(e.body.code))
+            e.body.message ? (v(null), C(e.body.message)) : (v(e.body.phone), C(e.body.code))
         } finally {
             E(!1)
         }
@@ -59,8 +59,8 @@ let A = () => {
             className: m.QX,
             children: [(0, i.jsx)(h.A, {
                 label: p.intl.string(p.t["eJnn0+"]),
-                alpha2: S.alpha2,
-                countryCode: T,
+                alpha2: j.alpha2,
+                countryCode: S,
                 value: e,
                 autoComplete: "off",
                 spellCheck: "false",
@@ -73,7 +73,7 @@ let A = () => {
                 value: r,
                 onChange: A,
                 maxLength: 6,
-                error: C
+                error: T
             }), (0, i.jsx)(o.QWc, {
                 text: p.intl.string(p.t["5b60gi"]),
                 onClick: y

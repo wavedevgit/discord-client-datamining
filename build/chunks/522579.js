@@ -27,7 +27,7 @@ var t = t || function(e) {
                     "string" == typeof e ? n().revokeObjectURL(e) : e.remove()
                 }, 4e4)
             },
-            f = function(e, t, n) {
+            m = function(e, t, n) {
                 for (var r = (t = [].concat(t)).length; r--;) {
                     var i = e["on" + t[r]];
                     if ("function" == typeof i) try {
@@ -37,18 +37,18 @@ var t = t || function(e) {
                     }
                 }
             },
-            m = function(e) {
+            f = function(e) {
                 return /^\s*(?:text\/\S*|application\/xml|\S*\/\S*\+xml)\s*;.*charset\s*=\s*utf-8/i.test(e.type) ? new Blob(["\xef\xbb\xbf", e], {
                     type: e.type
                 }) : e
             },
             p = function(t, u, p) {
-                p || (t = m(t));
+                p || (t = f(t));
                 var _, v, y = this,
                     g = t.type,
                     x = !1,
                     E = function() {
-                        f(y, "writestart progress write writeend".split(" "))
+                        m(y, "writestart progress write writeend".split(" "))
                     },
                     A = function() {
                         if (v && a && "u" > typeof FileReader) {
@@ -80,7 +80,7 @@ var t = t || function(e) {
                             e.getFile(u, b, S(function(e) {
                                 e.createWriter(S(function(n) {
                                     n.onwriteend = function(t) {
-                                        v.location.href = e.toURL(), y.readyState = y.DONE, f(y, "writeend", t), h(e)
+                                        v.location.href = e.toURL(), y.readyState = y.DONE, m(y, "writeend", t), h(e)
                                     }, n.onerror = function() {
                                         var e = n.error;
                                         e.code !== e.ABORT_ERR && A()
@@ -104,9 +104,9 @@ var t = t || function(e) {
             },
             _ = p.prototype;
         return "u" > typeof navigator && navigator.msSaveOrOpenBlob ? function(e, t, n) {
-            return n || (e = m(e)), navigator.msSaveOrOpenBlob(e, t || "download")
+            return n || (e = f(e)), navigator.msSaveOrOpenBlob(e, t || "download")
         } : (_.abort = function() {
-            this.readyState = this.DONE, f(this, "abort")
+            this.readyState = this.DONE, m(this, "abort")
         }, _.readyState = _.INIT = 0, _.WRITING = 1, _.DONE = 2, _.error = _.onwritestart = _.onprogress = _.onwrite = _.onabort = _.onerror = _.onwriteend = null, function(e, t, n) {
             return new p(e, t, n)
         })

@@ -24,10 +24,10 @@ var i = n(627968),
     I = n(403362),
     N = n(860689),
     v = n(21599),
-    C = n(949155),
-    j = n(663572),
-    S = n(439680),
-    T = n(131929),
+    T = n(949155),
+    C = n(663572),
+    j = n(439680),
+    S = n(131929),
     y = n(66027),
     b = n(172799),
     R = n(652215),
@@ -64,7 +64,7 @@ function k(e) {
     }
 }
 
-function D(e) {
+function B(e) {
     let {
         invite: t,
         onAcceptInvite: n
@@ -80,7 +80,7 @@ function D(e) {
     })
 }
 
-function P(e) {
+function D(e) {
     let {
         children: t,
         cardChildren: n,
@@ -113,17 +113,17 @@ function U(e) {
     let {
         invite: t
     } = e;
-    if (null == t || !(0, C.Fk)(t)) return null;
+    if (null == t || !(0, T.Fk)(t)) return null;
     let n = k(t);
-    return (0, i.jsx)(P, {
+    return (0, i.jsx)(D, {
         startAnimHeightPx: 0,
         sectionClassName: L.ui,
-        children: 1 === n ? (0, i.jsx)(T.s, {
+        children: 1 === n ? (0, i.jsx)(S.s, {
             invite: t
         }) : null
     })
 }
-let B = {
+let P = {
     1: L._r,
     2: L.Gm,
     0: L.Kt
@@ -147,7 +147,7 @@ function G(e) {
                 n = null != e.traits && e.traits.filter(e => e.label.length > 0).length > 0,
                 i = null != e.gameApplicationIds && e.gameApplicationIds.length > 0;
             return t && (n || i)
-        }(o) && null != d && null != n && !(0, C.Fk)(n);
+        }(o) && null != d && null != n && !(0, T.Fk)(n);
     if (s.useEffect(() => {
             c && y.n.getConfig({
                 location: "AcceptInviteMobile.hasProfile"
@@ -155,18 +155,18 @@ function G(e) {
         }, [c]), null == n) t = (0, i.jsx)(w, {});
     else switch (r) {
         case 1:
-            t = c ? (0, i.jsx)(S.A, {
+            t = c ? (0, i.jsx)(j.A, {
                 invite: n,
                 guild: d,
                 profile: o,
                 onAcceptInvite: e.onAcceptInvite
-            }) : (0, i.jsx)(j.A, {
+            }) : (0, i.jsx)(C.A, {
                 ...e,
                 invite: n
             });
             break;
         case 2:
-            t = (0, i.jsx)(D, {
+            t = (0, i.jsx)(B, {
                 ...e,
                 invite: n
             });
@@ -175,9 +175,9 @@ function G(e) {
             t = (0, i.jsx)(w, {})
     }
     let u = 1 === r && c ? L.c4 : L.qF;
-    return (0, i.jsx)(P, {
+    return (0, i.jsx)(D, {
         startAnimHeightPx: 200,
-        sectionClassName: B[r],
+        sectionClassName: P[r],
         inviteCardClassName: u,
         children: t
     })

@@ -24,7 +24,7 @@ let E = e => {
         let {
             transitionState: t,
             onClose: n
-        } = e, [i, f] = r.useState(!0), [x, I] = r.useState([]), [N, v] = r.useState("selection"), C = (0, l.bG)([_.default], () => _.default.isAuthenticated()), j = (0, l.bG)([c.A], () => c.A.hasLoadedExperiments), S = r.useCallback(() => {
+        } = e, [i, f] = r.useState(!0), [x, I] = r.useState([]), [N, v] = r.useState("selection"), T = (0, l.bG)([_.default], () => _.default.isAuthenticated()), C = (0, l.bG)([c.A], () => c.A.hasLoadedExperiments), j = r.useCallback(() => {
             (0, h.OY)().then(e => {
                 let {
                     body: {
@@ -37,23 +37,23 @@ let E = e => {
             })
         }, []);
         r.useEffect(() => {
-            C ? (f(!0), d.rQ({
+            T ? (f(!0), d.rQ({
                 withAnalyticsToken: !0
-            }).then(() => S()).catch(() => f(!1))) : S()
-        }, [C, S]), r.useEffect(() => {
+            }).then(() => j()).catch(() => f(!1))) : j()
+        }, [T, j]), r.useEffect(() => {
             (async () => {
-                j || (await o.A.getLocationMetadata(), o.A.getExperiments())
+                C || (await o.A.getLocationMetadata(), o.A.getExperiments())
             })()
-        }, [j]);
-        let T = x.filter(e => e !== u.tY.MEDIA_TAKEDOWN),
+        }, [C]);
+        let S = x.filter(e => e !== u.tY.MEDIA_TAKEDOWN),
             y = x.includes(u.tY.MEDIA_TAKEDOWN),
-            b = T.length > 0,
+            b = S.length > 0,
             R = b && y;
         r.useEffect(() => {
-            !i && j && !R && (b ? v("dsa") : y && v("tida"))
-        }, [i, j, R, b, y]), r.useEffect(() => {
-            i || !j || b || y || n()
-        }, [i, j, b, y, n]);
+            !i && C && !R && (b ? v("dsa") : y && v("tida"))
+        }, [i, C, R, b, y]), r.useEffect(() => {
+            i || !C || b || y || n()
+        }, [i, C, b, y, n]);
         let O = r.useCallback(e => {
                 v(e)
             }, []),
@@ -79,7 +79,7 @@ let E = e => {
             children: (0, s.jsx)(a.$mQ, {
                 className: A.k,
                 "data-migration-pending": !0,
-                children: !i && j && (b || y) ? (0, s.jsxs)(a.tN_, {
+                children: !i && C && (b || y) ? (0, s.jsxs)(a.tN_, {
                     width: "100%",
                     activeSlide: N,
                     centered: !1,
@@ -93,7 +93,7 @@ let E = e => {
                         children: (0, s.jsx)(p.c, {
                             showBackButton: R,
                             onBack: R ? L : void 0,
-                            dsaCapabilities: T,
+                            dsaCapabilities: S,
                             renderFooter: k,
                             onClose: n,
                             onReopen: w

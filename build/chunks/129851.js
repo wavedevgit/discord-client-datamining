@@ -25,10 +25,10 @@ var i = n(627968),
     I = n(235986),
     N = n(491509),
     v = n(895600),
-    C = n(720353),
-    j = n(559568),
-    S = n(274303),
-    T = n(13437),
+    T = n(720353),
+    C = n(559568),
+    j = n(274303),
+    S = n(13437),
     y = n(557722),
     b = n(148864),
     R = n(146571),
@@ -36,10 +36,10 @@ var i = n(627968),
     L = n(913612),
     w = n(210714),
     k = n(933924),
-    D = n(961350),
-    P = n(115036),
+    B = n(961350),
+    D = n(115036),
     U = n(650048),
-    B = n(954571),
+    P = n(954571),
     G = n(203982),
     F = n(723702),
     M = n(161928),
@@ -99,7 +99,7 @@ class J extends s.PureComponent {
             invite: i,
             location: s
         } = this.props;
-        e && !t ? (0, g.ST)() : t && this.loginOrSSO(t, s, !0), B.default.track(K.HAw.LOGIN_VIEWED, {
+        e && !t ? (0, g.ST)() : t && this.loginOrSSO(t, s, !0), P.default.track(K.HAw.LOGIN_VIEWED, {
             location: null != i ? "Invite Login Page" : "Non-Invite Login Page",
             login_source: this.loginSource,
             authenticated: t,
@@ -160,7 +160,7 @@ class J extends s.PureComponent {
     handleAuthSuccess = e => {
         this.setState({
             errors: {}
-        }), B.default.track(K.HAw.LOGIN_SUCCESSFUL, {
+        }), P.default.track(K.HAw.LOGIN_SUCCESSFUL, {
             source: K.mdB.QR_CODE,
             login_source: this.loginSource,
             gift_code_sku_id: this.giftCodeSKUId,
@@ -183,7 +183,7 @@ class J extends s.PureComponent {
             let e = window.location.protocol + window.GLOBAL_ENV.API_ENDPOINT + K.Rsh.SSO,
                 t = {
                     ...s,
-                    token: D.default.getToken()
+                    token: B.default.getToken()
                 };
             window.location = `${e}?${(0,a.stringify)(t)}`
         }
@@ -458,7 +458,7 @@ class J extends s.PureComponent {
                 className: e,
                 expanded: !0,
                 children: this.renderDefaultForm(!0)
-            }), t && (0, i.jsx)(j.A, {})]
+            }), t && (0, i.jsx)(C.A, {})]
         })
     }
     renderGuildTemplate(e) {
@@ -480,7 +480,7 @@ class J extends s.PureComponent {
             style: {
                 padding: 0
             },
-            children: (0, i.jsx)(C.t, {
+            children: (0, i.jsx)(T.t, {
                 mfaFinish: this.handleTokenSubmitMFA,
                 mfaChallenge: e,
                 onEarlyClose: () => {
@@ -539,7 +539,7 @@ class J extends s.PureComponent {
                 dismissedChooseAccount: !0
             }))
         };
-        return (0, i.jsx)(T.A, {
+        return (0, i.jsx)(S.A, {
             onDismiss: e
         })
     }
@@ -737,16 +737,16 @@ class J extends s.PureComponent {
 }
 let $ = function(e) {
     (0, L.K)();
-    let t = (0, c.cf)([P.A, U.A, D.default, S.A, b.A], () => ({
-        authenticated: D.default.isAuthenticated(),
-        handoffAvailable: P.A.isHandoffAvailable(),
-        user: P.A.user,
-        loginStatus: D.default.getLoginStatus(),
-        mfaTicket: D.default.getMFATicket(),
-        mfaMethods: D.default.getMFAMethods(),
+    let t = (0, c.cf)([D.A, U.A, B.default, j.A, b.A], () => ({
+        authenticated: B.default.isAuthenticated(),
+        handoffAvailable: D.A.isHandoffAvailable(),
+        user: D.A.user,
+        loginStatus: B.default.getLoginStatus(),
+        mfaTicket: B.default.getMFATicket(),
+        mfaMethods: B.default.getMFAMethods(),
         defaultRoute: U.A.defaultRoute,
         country: b.A.getCountryCode(),
-        hasLoggedInAccounts: S.A.getHasLoggedInAccounts()
+        hasLoggedInAccounts: j.A.getHasLoggedInAccounts()
     }));
     return (0, i.jsx)(J, {
         ...e,

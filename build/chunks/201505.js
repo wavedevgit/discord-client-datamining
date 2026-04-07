@@ -75,12 +75,12 @@ let E = s.forwardRef(function(e, t) {
             autoFocus: I,
             required: N,
             onFocus: v,
-            onBlur: C,
-            name: j
+            onBlur: T,
+            name: C
         } = e,
         {
-            day: S,
-            setDay: T,
+            day: j,
+            setDay: S,
             month: y,
             setMonth: b,
             year: R,
@@ -100,7 +100,7 @@ let E = s.forwardRef(function(e, t) {
                 setYear: c
             }
         }(a),
-        L = s.useMemo(() => null != S && null != y && null != R ? o()(`${S}/${y}/${R}`, "DD/MM/YYYY") : null, [S, y, R]);
+        L = s.useMemo(() => null != j && null != y && null != R ? o()(`${j}/${y}/${R}`, "DD/MM/YYYY") : null, [j, y, R]);
     s.useEffect(() => {
         m(L?.isValid() ? L : null)
     }, [L, m]);
@@ -115,22 +115,22 @@ let E = s.forwardRef(function(e, t) {
                 label: `${n-e-3}`
             }))
         }, [n]), r.current),
-        [D, P] = s.useState(I ? 0 : -1),
+        [B, D] = s.useState(I ? 0 : -1),
         U = s.useMemo(f, []),
-        B = {
+        P = {
             onPopulated: E,
             sortedInputs: U
         },
-        G = s.useRef(B);
+        G = s.useRef(P);
     s.useEffect(() => {
-        G.current = B
+        G.current = P
     }), s.useEffect(() => {
         let {
             onPopulated: e,
             sortedInputs: t
         } = G.current;
-        if (D >= t.length) return void e?.()
-    }, [D]);
+        if (B >= t.length) return void e?.()
+    }, [B]);
     let F = [];
     for (let e = 0; e < 3; e++) {
         let {
@@ -142,20 +142,20 @@ let E = s.forwardRef(function(e, t) {
                     key: "day",
                     input: (0, i.jsx)(A, {
                         options: p,
-                        selectOption: T,
+                        selectOption: S,
                         children: (0, i.jsx)(d.Te, {
                             "aria-label": u.intl.string(u.t.Voklre),
                             popoutPosition: "top",
                             placeholder: u.intl.string(u.t.Voklre),
                             options: p,
-                            value: S,
+                            value: j,
                             onChange: t => {
-                                T(t), P(e + 1)
+                                S(t), D(e + 1)
                             },
                             maxVisibleItems: 6,
-                            autoFocus: D === e,
-                            onOpen: () => v?.(`${j}_${t}`),
-                            onClose: () => C?.(`${j}_${t}`),
+                            autoFocus: B === e,
+                            onOpen: () => v?.(`${C}_${t}`),
+                            onClose: () => T?.(`${C}_${t}`),
                             "data-migration-pending": !0
                         })
                     })
@@ -174,12 +174,12 @@ let E = s.forwardRef(function(e, t) {
                             options: g,
                             value: y,
                             onChange: t => {
-                                b(t), P(e + 1)
+                                b(t), D(e + 1)
                             },
                             maxVisibleItems: 6,
-                            autoFocus: D === e,
-                            onOpen: () => v?.(`${j}_${t}`),
-                            onClose: () => C?.(`${j}_${t}`),
+                            autoFocus: B === e,
+                            onOpen: () => v?.(`${C}_${t}`),
+                            onClose: () => T?.(`${C}_${t}`),
                             "data-migration-pending": !0
                         })
                     })
@@ -198,12 +198,12 @@ let E = s.forwardRef(function(e, t) {
                             options: k,
                             value: R,
                             onChange: t => {
-                                O(t), P(e + 1)
+                                O(t), D(e + 1)
                             },
                             maxVisibleItems: 6,
-                            autoFocus: D === e,
-                            onOpen: () => v?.(`${j}_${t}`),
-                            onClose: () => C?.(`${j}_${t}`),
+                            autoFocus: B === e,
+                            onOpen: () => v?.(`${C}_${t}`),
+                            onClose: () => T?.(`${C}_${t}`),
                             "data-migration-pending": !0
                         })
                     })

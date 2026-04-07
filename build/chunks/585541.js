@@ -25,19 +25,19 @@ function f(e) {
         setSlide: r,
         ready: f,
         token: E
-    } = e, [x, I] = s.useState(!1), [N, v] = s.useState(null), [C, j] = s.useState(null), [S, T] = s.useState(""), y = s.useRef(null);
+    } = e, [x, I] = s.useState(!1), [N, v] = s.useState(null), [T, C] = s.useState(null), [j, S] = s.useState(""), y = s.useRef(null);
     return s.useEffect(() => {
         f && y.current?.focus()
     }, [f]), (0, i.jsxs)("div", {
         children: [(0, i.jsx)(c._V, {
-            src: null == C ? n(79418) : n(579656),
+            src: null == T ? n(79418) : n(579656),
             className: l()(A.SX, A.Ot)
         }), (0, i.jsx)(c.hE, {
             children: g.intl.string(g.t.IfBQ56)
-        }), null != C && "" !== C ? (0, i.jsx)(o.Text, {
+        }), null != T && "" !== T ? (0, i.jsx)(o.Text, {
             variant: "text-sm/normal",
             color: "text-feedback-critical",
-            children: C
+            children: T
         }) : null, (0, i.jsxs)(c.eB, {
             className: l()(A.SX, A.QX),
             children: [(0, i.jsx)(c.pd, {
@@ -46,8 +46,8 @@ function f(e) {
                 label: g.intl.string(g.t["8dM4FO"]),
                 setRef: y,
                 className: A.SX,
-                value: S,
-                onChange: T,
+                value: j,
+                onChange: S,
                 error: N,
                 autoComplete: "new-password",
                 maxLength: 72,
@@ -59,15 +59,15 @@ function f(e) {
                     fullWidth: !0,
                     onClick: () => {
                         if (!x) {
-                            if (0 === S.length) {
+                            if (0 === j.length) {
                                 v(g.intl.string(g.t.R98xD5)), u._.dispatch(p.jej.WAVE_EMPHASIZE);
                                 return
                             }
-                            return null != C && j(null), null != N && v(null), t(""), I(!0), h.A.post({
+                            return null != T && C(null), null != N && v(null), t(""), I(!0), h.A.post({
                                 url: p.Rsh.ACCOUNT_REVERT,
                                 body: {
                                     token: E,
-                                    password: S
+                                    password: j
                                 },
                                 trackedActionData: {
                                     event: a.NetworkActionNames.ACCOUNT_REVERT
@@ -79,14 +79,14 @@ function f(e) {
                                         email: n
                                     }
                                 } = e;
-                                T(""), t(n), r(_.k.SUCCESS)
+                                S(""), t(n), r(_.k.SUCCESS)
                             }).catch(e => {
-                                if (e instanceof Error) j(g.intl.formatToPlainString(g.t.aTVNes, {
+                                if (e instanceof Error) C(g.intl.formatToPlainString(g.t.aTVNes, {
                                     statusPageURL: p.qF7.STATUS
                                 }));
                                 else {
                                     let t = new d.A(e);
-                                    t.hasFieldErrors() ? v(t.getAnyErrorMessage()) : j((function(e) {
+                                    t.hasFieldErrors() ? v(t.getAnyErrorMessage()) : C((function(e) {
                                         switch (e) {
                                             case p.t02.ACCOUNT_REVERT_INVALID_TOKEN:
                                                 return g.intl.string(g.t["11zzGR"]);
@@ -118,7 +118,7 @@ function f(e) {
                 variant: "secondary",
                 fullWidth: !0,
                 onClick: () => {
-                    T(""), r(_.k.START)
+                    S(""), r(_.k.START)
                 }
             })
         })]

@@ -2,38 +2,38 @@
 s.d(t, {
     A: () => u
 });
-var r = s(627968),
+var n = s(627968),
     i = s(64700),
-    l = s(492462),
-    o = s(873263),
+    r = s(492462),
+    l = s(873263),
     a = s(716965),
-    n = s(321987),
+    o = s(321987),
     c = s(595244),
     d = s(985018);
 
 function u() {
-    let e, t = (0, o.zy)(),
+    let e, t = (0, l.zy)(),
         [s, u] = i.useState(!1),
-        [h, f] = i.useState(!1);
+        [h, p] = i.useState(!1);
     return i.useEffect(() => {
         !async function() {
-            let e = (0, l.parse)(t.search);
+            let e = (0, r.parse)(t.search);
             try {
                 await (0, a.Kf)(e.token ?? ""), u(!0)
             } catch {
-                f(!0)
+                p(!0)
             }
         }()
-    }, [t.search]), e = s ? (0, r.jsx)(c.jX, {
+    }, [t.search]), e = s ? (0, n.jsx)(c.jX, {
         message: d.intl.string(d.t.Tqu3OQ),
         showsCloseWindowText: !0
-    }) : h ? (0, r.jsx)(c.gz, {
+    }) : h ? (0, n.jsx)(c.gz, {
         message: d.intl.string(d.t.J8LsCs),
         showsCloseWindowText: !0
-    }) : (0, r.jsx)(c.Ay, {
+    }) : (0, n.jsx)(c.Ay, {
         message: d.intl.string(d.t.BAcf6a),
         spinner: !0
-    }), (0, r.jsx)(n.$, {
+    }), (0, n.jsx)(o.$, {
         children: e
     })
 }

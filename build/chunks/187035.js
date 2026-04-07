@@ -1,7 +1,7 @@
 /** chunk id: 187035 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => P
+    A: () => D
 });
 var i = n(627968),
     s = n(64700),
@@ -24,10 +24,10 @@ var i = n(627968),
     I = n(961350),
     N = n(650048),
     v = n(877062),
-    C = n(129851),
-    j = n(538796),
-    S = n(229),
-    T = n(652215),
+    T = n(129851),
+    C = n(538796),
+    j = n(229),
+    S = n(652215),
     y = n(401755),
     b = n(771016),
     R = n(315290),
@@ -36,9 +36,9 @@ var i = n(627968),
     w = n(379790),
     k = n(885106);
 d.Ay.initialize();
-class D extends s.PureComponent {
+class B extends s.PureComponent {
     componentDidMount() {
-        (0, E.d)("guildTemplate"), O.VP || v.A.launch("discord://" + T.BVt.GUILD_TEMPLATE(this.props.code), () => void 0)
+        (0, E.d)("guildTemplate"), O.VP || v.A.launch("discord://" + S.BVt.GUILD_TEMPLATE(this.props.code), () => void 0)
     }
     componentDidUpdate(e) {
         this.props.code !== e.code && g.A.resolveGuildTemplate(this.props.code)
@@ -118,19 +118,19 @@ class D extends s.PureComponent {
             location: r
         } = this.props;
         if (null == e) return this.renderSpinner(L.intl.string(L.t.ZTNur7));
-        if (t === T.fAW.OPEN) return this.renderAppOpened();
-        if (t === T.fAW.OPENING) return this.renderSpinner(L.intl.string(L.t["Z+hCVU"]));
+        if (t === S.fAW.OPEN) return this.renderAppOpened();
+        if (t === S.fAW.OPENING) return this.renderSpinner(L.intl.string(L.t["Z+hCVU"]));
         switch (e.state) {
             case y.QB.RESOLVING:
                 return this.renderSpinner(L.intl.string(L.t["Z+hCVU"]));
             case y.QB.RESOLVED:
                 if (n || !O.VP) return this.renderAuthenticatedOrDownload();
-                if (this.props.login) return (0, i.jsx)(C.A, {
+                if (this.props.login) return (0, i.jsx)(T.A, {
                     guildTemplate: e,
                     transitionTo: s,
                     location: r
                 });
-                return (0, i.jsx)(S.A, {
+                return (0, i.jsx)(j.A, {
                     guildTemplate: e,
                     transitionTo: s,
                     location: r,
@@ -146,14 +146,14 @@ class D extends s.PureComponent {
     }
 }
 
-function P(e) {
+function D(e) {
     let t = {
         guildTemplate: (0, d.bG)([_.A], () => _.A.getGuildTemplate(e.code)),
         nativeAppState: (0, d.bG)([h.A], () => h.A.getState(e.code)),
         authenticated: (0, d.bG)([I.default], () => I.default.isAuthenticated()),
         defaultRoute: (0, d.bG)([N.A], () => N.A.defaultRoute)
     };
-    return (0, i.jsx)(D, {
+    return (0, i.jsx)(B, {
         ...e,
         ...t
     })
@@ -180,7 +180,7 @@ function U(e) {
             })
         })]
     });
-    return (0, i.jsx)(j.A, {
+    return (0, i.jsx)(C.A, {
         className: w.sL,
         children: () => [(0, i.jsx)(m.A, {
             guildTemplate: t

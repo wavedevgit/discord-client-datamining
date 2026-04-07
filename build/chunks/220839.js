@@ -1,15 +1,16 @@
 /** chunk id: 220839 params = (module,exports,require) **/
-i.d(e, {
-    A: () => n
+"use strict";
+n.d(t, {
+    A: () => s
 });
-var s = i(64700);
-let n = (t, e) => {
-    let i = (0, s.useRef)(t);
-    (0, s.useEffect)(() => {
-        i.current = t
-    }, [t]), (0, s.useEffect)(() => {
-        if (null === e) return;
-        let t = setTimeout(() => i.current(), e);
-        return () => clearTimeout(t)
-    }, [e, i])
+var i = n(64700);
+let s = (e, t) => {
+    let n = (0, i.useRef)(e);
+    (0, i.useEffect)(() => {
+        n.current = e
+    }, [e]), (0, i.useEffect)(() => {
+        if (null === t) return;
+        let e = setTimeout(() => n.current(), t);
+        return () => clearTimeout(e)
+    }, [t, n])
 }
