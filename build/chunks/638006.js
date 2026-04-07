@@ -16,8 +16,8 @@ var n = r(627968),
     p = r(139136),
     f = r(623373),
     x = r(561769),
-    g = r(846957),
-    C = r(929283),
+    C = r(846957),
+    g = r(929283),
     v = r(245068),
     A = r(761365),
     k = r(550674),
@@ -38,16 +38,16 @@ let b = e => {
                     [I.zj]: (a || u) && !r,
                     [I.Ge]: c
                 }),
-                children: (0, n.jsx)(y, {
+                children: (0, n.jsx)(E, {
                     product: t,
                     isCardHovered: r
                 })
-            }), a && (0, n.jsx)(E, {
+            }), a && (0, n.jsx)(y, {
                 hidden: r
             })]
         })
     },
-    y = e => {
+    E = e => {
         let {
             product: t,
             isCardHovered: r
@@ -61,7 +61,7 @@ let b = e => {
                     hideBackground: !0
                 });
             case s.R.AVATAR_DECORATION:
-                return (0, n.jsx)(C.i, {
+                return (0, n.jsx)(g.i, {
                     item: a,
                     user: l,
                     isHighlighted: r,
@@ -80,7 +80,7 @@ let b = e => {
                     isHighlighted: r
                 });
             case s.R.EXTERNAL_SKU:
-                return (0, n.jsx)(g.B, {
+                return (0, n.jsx)(C.B, {
                     product: t,
                     animationState: r ? "on" : "off"
                 });
@@ -88,7 +88,7 @@ let b = e => {
                 return null
         }
     },
-    E = e => {
+    y = e => {
         let {
             hidden: t
         } = e;

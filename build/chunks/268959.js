@@ -17,8 +17,8 @@ var l = r(503698),
     p = r(623373),
     f = r(561769),
     x = r(525723),
-    g = r(57020),
-    C = r(985018),
+    C = r(57020),
+    g = r(985018),
     v = r(766706);
 let A = e => {
         let {
@@ -30,30 +30,30 @@ let A = e => {
         } = e, {
             isPurchased: A,
             isPartiallyOwnedBundle: k
-        } = (0, h.h)(t), I = (0, m.G0)(t), b = (0, s.bG)([c.A], () => c.A.getCategoryForProduct(t.skuId)), y = b?.unpublishedAt != null ? (0, m.WU)(b.unpublishedAt) : null, E = (0, s.bG)([u.default], () => u.default.getCurrentUser()), j = o.Ay.canUseCollectibles(E), R = (0, x.V_)(t), {
-            isOrbExclusive: _
-        } = (0, g.F)({
+        } = (0, h.h)(t), I = (0, m.G0)(t), b = (0, s.bG)([c.A], () => c.A.getCategoryForProduct(t.skuId)), E = b?.unpublishedAt != null ? (0, m.WU)(b.unpublishedAt) : null, y = (0, s.bG)([u.default], () => u.default.getCurrentUser()), j = o.Ay.canUseCollectibles(y), _ = (0, x.V_)(t), {
+            isOrbExclusive: R
+        } = (0, C.F)({
             product: t,
             isPremiumUser: j,
             prioritizedCurrency: p,
-            hasDiscountOffer: null != R
+            hasDiscountOffer: null != _
         }), T = r;
-        if (null == T && (!l && (0, m.HF)(b?.unpublishedAt) ? T = f.AW.LIMITED_TIME : !k && !A && (0, m.aT)(t.skuId) ? T = f.AW.NEW : _ ? T = f.AW.ORBS_EXCLUSIVE : I && (T = f.AW.NITRO_EXCLUSIVE)), null == T || T === f.AW.NONE) return null;
+        if (null == T && (!l && (0, m.HF)(b?.unpublishedAt) ? T = f.AW.LIMITED_TIME : !k && !A && (0, m.aT)(t.skuId) ? T = f.AW.NEW : R ? T = f.AW.ORBS_EXCLUSIVE : I && (T = f.AW.NITRO_EXCLUSIVE)), null == T || T === f.AW.NONE) return null;
         let L = null;
         switch (T) {
             case f.AW.LIMITED_TIME:
-                L = null != y ? y > 1 ? C.intl.formatToPlainString(C.t.Io7ozn, {
-                    days: y
-                }) : C.intl.string(C.t.Bc13HF) : C.intl.string(C.t["h/uBCR"]);
+                L = null != E ? E > 1 ? g.intl.formatToPlainString(g.t.Io7ozn, {
+                    days: E
+                }) : g.intl.string(g.t.Bc13HF) : g.intl.string(g.t["h/uBCR"]);
                 break;
             case f.AW.NEW:
-                L = C.intl.string(C.t.y2b7CA);
+                L = g.intl.string(g.t.y2b7CA);
                 break;
             case f.AW.NITRO_EXCLUSIVE:
-                L = C.intl.string(C.t.X3Ekj8);
+                L = g.intl.string(g.t.X3Ekj8);
                 break;
             case f.AW.ORBS_EXCLUSIVE:
-                L = C.intl.string(C.t["0TmQRG"])
+                L = g.intl.string(g.t["0TmQRG"])
         }
         return (0, n.jsx)(a.LpS, {
             text: L,

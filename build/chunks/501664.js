@@ -28,9 +28,9 @@ function d(e) {
     if (null == x) return null;
     let {
         defaultPrice: f,
-        showDefaultPriceOnly: v
+        showDefaultPriceOnly: _
     } = x;
-    if (v) return (0, r.jsx)("div", {
+    if (_) return (0, r.jsx)("div", {
         className: i()(c.kG, d),
         children: (0, r.jsx)(o.x, {
             priceAmount: f.amount,
@@ -38,14 +38,14 @@ function d(e) {
         })
     });
     let {
-        showNitroPrice: g,
-        originalPrice: _,
+        showNitroPrice: v,
+        originalPrice: g,
         finalPrice: A
     } = x;
     return (0, r.jsxs)("div", {
         className: i()(c.kG, d),
         children: [m ? null : (0, r.jsx)(l.a, {
-            price: _,
+            price: g,
             className: c.q9
         }), (0, r.jsx)(o.x, {
             priceAmount: A.amount,
@@ -54,7 +54,7 @@ function d(e) {
             className: i()({
                 [c.q9]: null == u
             }),
-            nitroIconType: g ? h : void 0,
+            nitroIconType: v ? h : void 0,
             nitroIconSize: p,
             discountOfferAmount: u
         })]

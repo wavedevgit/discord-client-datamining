@@ -37,7 +37,7 @@ function o(e, t) {
                 sku_id: r ? t.variants[h.current]?.skuId ?? t.skuId : t.skuId,
                 position_in_section: e?.tilePosition,
                 card_id: e?.cardId,
-                card_contents: r ? t.variants.map(e => e.skuId) : [t.skuId]
+                card_contents: (0, a.v8)(t)
             }), c.current = !0
         }, 250);
         return () => clearTimeout(t)

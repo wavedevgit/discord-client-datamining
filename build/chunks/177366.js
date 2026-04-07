@@ -1,8 +1,8 @@
 /** chunk id: 177366 params = (module,exports,require) **/
 n.d(t, {
-    XU: () => j,
+    XU: () => C,
     Yr: () => A,
-    k0: () => C
+    k0: () => j
 });
 var r = n(64700),
     a = n(873263),
@@ -18,35 +18,35 @@ var r = n(64700),
     p = n(159439),
     x = n(57020),
     f = n(652215);
-let v = "#itemSkuId=",
-    g = RegExp(`^${v}(\\d+)$`),
-    _ = [f.BVt.COLLECTIBLES_SHOP],
+let _ = "#itemSkuId=",
+    v = RegExp(`^${_}(\\d+)$`),
+    g = [f.BVt.COLLECTIBLES_SHOP],
     A = e => {
         let t = (0, a.zy)();
         r.useEffect(() => {
-            if (null != e && _.includes(t.pathname)) return () => {
-                window.location.hash.startsWith(v) && window.location.replace("#")
+            if (null != e && g.includes(t.pathname)) return () => {
+                window.location.hash.startsWith(_) && window.location.replace("#")
             }
         }, [e, t.pathname])
     },
-    j = e => {
+    C = e => {
         let t = (0, p.U)(),
             n = r.useRef(null),
             s = (0, a.zy)(),
-            v = s.pathname === f.BVt.COLLECTIBLES_SHOP ? l.A.HOME_PAGE_SHOP_TAB : l.A.COLLECTIBLES_SHOP,
+            _ = s.pathname === f.BVt.COLLECTIBLES_SHOP ? l.A.HOME_PAGE_SHOP_TAB : l.A.COLLECTIBLES_SHOP,
             {
-                analyticsLocations: _
-            } = (0, o.Ay)(v),
+                analyticsLocations: g
+            } = (0, o.Ay)(_),
             A = (0, m.A)();
         r.useEffect(() => {
-            let e = g.exec(s.hash);
+            let e = v.exec(s.hash);
             null != e ? n.current = e[1] : n.current = null
         }, [A, s.hash]);
-        let j = (0, i.bG)([d.A], () => d.A.initialProductSkuId);
+        let C = (0, i.bG)([d.A], () => d.A.initialProductSkuId);
         r.useEffect(() => {
             if (t) return;
             let r = null;
-            if (null != j ? r = j : null != n.current && (r = n.current), null != r) {
+            if (null != C ? r = C : null != n.current && (r = n.current), null != r) {
                 let t = setTimeout(() => {
                     (e => {
                         let {
@@ -81,17 +81,17 @@ let v = "#itemSkuId=",
                         }
                     })({
                         productSkuId: r,
-                        analyticsLocations: _,
-                        analyticsSource: v,
+                        analyticsLocations: g,
+                        analyticsSource: _,
                         tab: A,
                         sessionId: e
                     })
                 }, 250);
                 return () => clearTimeout(t)
             }
-        }, [_, v, t, j, A, e])
+        }, [g, _, t, C, A, e])
     },
-    C = e => {
+    j = e => {
         let t = r.useRef({}),
             n = (0, i.bG)([s.A], () => s.A.useReducedMotion),
             a = (0, i.bG)([c.A], () => c.A.isFetchingCategories),

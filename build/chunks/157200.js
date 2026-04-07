@@ -23,8 +23,8 @@ let f = e => {
             onClick: o,
             icon: f,
             prioritizedCurrency: x,
-            onClickAnalytics: g
-        } = e, C = (0, a.Mk)(), v = C?.tab, A = (0, s.uM)(), k = (0, m.X)(t, x), I = (0, d.ql)(t, i.A.COLLECTIBLES_SHOP_CARD_PREVIEW_BUTTON, g);
+            onClickAnalytics: C
+        } = e, g = (0, a.Mk)(), v = g?.tab, A = (0, s.uM)(), k = (0, m.X)(t, x), I = (0, d.ql)(t, i.A.COLLECTIBLES_SHOP_CARD_PREVIEW_BUTTON, C);
         return null != o || null != f ? (0, n.jsx)(l.K0, {
             variant: "primary",
             "aria-label": p.intl.string(p.t.SKNnqq),

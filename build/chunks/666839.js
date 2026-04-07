@@ -12,23 +12,27 @@ let u = e => {
         let {
             product: t,
             selectedVariantIndex: r,
-            isCardHovered: l
+            isCardHovered: l,
+            onTrackClick: i
         } = e;
         return (0, n.jsx)(s.R, {
             product: t,
             selectedVariantIndex: r,
             isCardHovered: l,
-            className: a.i
+            className: a.i,
+            onTrackClick: i
         })
     },
     o = e => {
         let {
             skuId: t,
-            isCardHovered: r
-        } = e, s = (0, i.Vm)(t), a = (0, l.Q)(s);
-        return null == s ? null : (0, n.jsx)(u, {
-            product: s,
-            selectedVariantIndex: a,
-            isCardHovered: r
+            isCardHovered: r,
+            onTrackClick: s
+        } = e, a = (0, i.Vm)(t), o = (0, l.Q)(a);
+        return null == a ? null : (0, n.jsx)(u, {
+            product: a,
+            selectedVariantIndex: o,
+            isCardHovered: r,
+            onTrackClick: s
         })
     }

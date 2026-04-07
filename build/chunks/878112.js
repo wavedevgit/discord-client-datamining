@@ -13,63 +13,65 @@ var r = n(627968),
     u = n(440938),
     m = n(238184),
     h = n(766172),
-    p = n(652215),
-    x = n(788868),
-    f = n(985018);
+    p = n(758836),
+    x = n(652215),
+    f = n(788868),
+    _ = n(985018);
 let v = e => {
     let {
         product: t,
         primary: n,
         selectedVariantIndex: v,
         returnRef: g,
-        onSuccess: _,
-        tooltipDelay: A,
+        onSuccess: A,
+        tooltipDelay: C,
         fullWidth: j = !1,
-        giftRecipient: C,
-        giftingOrigin: N = x.vQ.SHOP_PAGE
+        giftRecipient: N,
+        giftingOrigin: I = f.vQ.SHOP_PAGE,
+        onTrackClick: b
     } = e, {
-        analyticsLocations: b
-    } = (0, o.Ay)(), I = a.useRef(null), R = (0, u.uM)(), T = (0, m.A)(), E = e => {
-        e.stopPropagation(), d.default.track(p.HAw.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
-            collectibles_shop_session_id: R?.sessionId,
+        analyticsLocations: R
+    } = (0, o.Ay)(), T = a.useRef(null), k = (0, u.uM)(), E = (0, m.A)(), O = e => {
+        e.stopPropagation(), d.default.track(x.HAw.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+            collectibles_shop_session_id: k?.sessionId,
             sku_id: t.skuId,
-            page_section: R?.pageSection,
-            page_category: R?.pageCategory,
+            page_section: k?.pageSection,
+            page_category: k?.pageCategory,
             tile_type: i.R[t.type],
-            tile_position: String(R?.tilePosition),
+            tile_position: String(k?.tilePosition),
             cta_name: "gift button",
-            page_type: T ?? "home"
-        }), (0, c.A)({
+            page_type: E ?? "home"
+        }), b?.(p.sH.SEND_AS_GIFT), (0, c.A)({
             skuId: (0, h.Y)({
                 product: t,
                 selectedVariantIndex: v
             }),
             isGift: !0,
-            giftRecipient: C,
-            giftingOrigin: N,
-            analyticsLocations: b,
+            giftRecipient: N,
+            giftingOrigin: I,
+            analyticsLocations: R,
             returnRef: g,
-            onClose: null != _ ? e => {
-                e && _()
+            onClose: null != A ? e => {
+                e && A()
             } : void 0
         })
     };
     return j ? (0, r.jsx)(l.Button, {
         variant: n ? "primary" : "secondary",
         icon: l.okO,
-        onClick: E,
-        text: f.intl.string(f.t.gmnzqM),
+        onClick: O,
+        text: _.intl.string(_.t.gmnzqM),
         fullWidth: !0
     }) : (0, r.jsx)(s.m, {
-        text: f.intl.string(f.t["JCFN/y"]),
-        delay: A,
+        text: _.intl.string(_.t["JCFN/y"]),
+        delay: C,
         children: (0, r.jsx)(l.K0, {
-            "aria-label": f.intl.string(f.t["JCFN/y"]),
-            buttonRef: I,
+            "aria-label": _.intl.string(_.t["JCFN/y"]),
+            buttonRef: T,
             variant: n ? "primary" : "secondary",
             icon: l.okO,
             size: "md",
-            onClick: E
+            onClick: O
         })
     })
 }

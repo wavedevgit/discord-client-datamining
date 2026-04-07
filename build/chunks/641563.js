@@ -1,28 +1,30 @@
 /** chunk id: 641563 params = (module,exports,require) **/
 n.d(t, {
-    Z: () => d
+    Z: () => u
 });
 var r = n(627968),
     a = n(64700),
     i = n(397927),
     s = n(688810),
     l = n(532794),
-    o = n(788868),
-    c = n(319278);
-let d = e => {
+    o = n(758836),
+    c = n(788868),
+    d = n(319278);
+let u = e => {
     let {
-        text: t
+        text: t,
+        onTrackClick: n
     } = e, {
-        analyticsLocations: n
-    } = (0, s.Ay)(), d = a.useRef(null);
+        analyticsLocations: u
+    } = (0, s.Ay)(), m = a.useRef(null);
     return (0, r.jsx)(i.DUT, {
-        className: c.F,
-        innerRef: d,
+        className: d.F,
+        innerRef: m,
         onClick: () => {
-            (0, l.A)({
-                subscriptionTier: o.pe.TIER_2,
-                analyticsLocations: n,
-                returnRef: d
+            n?.(o.sH.SUBSCRIBE_NOW), (0, l.A)({
+                subscriptionTier: c.pe.TIER_2,
+                analyticsLocations: u,
+                returnRef: m
             })
         },
         children: t
