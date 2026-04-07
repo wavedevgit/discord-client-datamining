@@ -20,18 +20,18 @@ var i = n(503698),
     p = n(60868),
     A = n(894328),
     f = n(997509),
-    b = n(776781),
-    C = n(233993),
+    C = n(776781),
+    b = n(233993),
     j = n(110618),
     N = n(176360),
     v = n(696451),
     _ = n(317525),
     y = n(71393),
-    S = n(576705),
-    E = n(287809),
-    T = n(396465),
-    M = n(488926),
-    I = n(495273),
+    T = n(576705),
+    S = n(287809),
+    E = n(396465),
+    I = n(488926),
+    M = n(495273),
     R = n(270486),
     L = n(80686),
     w = n(908494),
@@ -54,11 +54,11 @@ function P(e) {
         sections: [n.length, i.length],
         renderRow: function(e) {
             let p, A, f, {
-                    section: C,
+                    section: b,
                     row: j
                 } = e,
                 N = !1;
-            switch (C) {
+            switch (b) {
                 case O.oO.ROLES:
                     f = (A = n[j]).rowType === O.T6.ROLE && A.tags?.guild_connections === null ? (0, l.jsx)(x.A, {
                         className: B.a,
@@ -112,7 +112,7 @@ function P(e) {
                     children: [(0, l.jsx)(o.Text, {
                         color: "text-muted",
                         variant: "text-xs/normal",
-                        children: I.vV(A.rowType)
+                        children: M.vV(A.rowType)
                     }), A.rowType !== O.T6.EMPTY_STATE && (0, l.jsx)(r.m, {
                         asContainer: !0,
                         text: a ?? u(A.rowType, A.disabled),
@@ -127,8 +127,8 @@ function P(e) {
                                     cancelText: D.intl.string(D.t["ETE/oC"]),
                                     onConfirm: () => (function(e, n) {
                                         if (t.isGuildStageVoice()) {
-                                            let l = (0, b.$b)(e, n === O.T6.ROLE ? g.r2.ROLE : g.r2.MEMBER, t);
-                                            (0, b.pF)(l) ? c.A.clearPermissionOverwrite(t.id, l.id): (0, h.R$)(t.id, [l])
+                                            let l = (0, C.$b)(e, n === O.T6.ROLE ? g.r2.ROLE : g.r2.MEMBER, t);
+                                            (0, C.pF)(l) ? c.A.clearPermissionOverwrite(t.id, l.id): (0, h.R$)(t.id, [l])
                                         } else c.A.clearPermissionOverwrite(t.id, e)
                                     })(e, l)
                                 }))
@@ -174,7 +174,7 @@ function U(e) {
         guild: t,
         channel: i,
         permissionUpdates: d
-    } = e, c = (0, a.bG)([_.A], () => _.A.getSortedRoles(t.id)), u = I.C$(t, c, i, C.QY, d), h = (0, a.bG)([v.Ay], () => I.Wi(v.Ay.getMemberIds(t.id), i, t, C.QY, d)), g = (0, b.qd)(i.id);
+    } = e, c = (0, a.bG)([_.A], () => _.A.getSortedRoles(t.id)), u = M.C$(t, c, i, b.QY, d), h = (0, a.bG)([v.Ay], () => M.Wi(v.Ay.getMemberIds(t.id), i, t, b.QY, d)), g = (0, C.qd)(i.id);
     return (0, l.jsxs)("div", {
         className: s()(B.j1, B.vu),
         children: [(0, l.jsx)(L.A, {
@@ -234,11 +234,11 @@ function V(e) {
         isPrivateGuildChannel: r,
         roles: d,
         members: c
-    } = e, u = (0, a.bG)([S.A], () => S.A.can(k.xB.ADMINISTRATOR, t)), h = M.MJ(k.xB.VIEW_CHANNEL, t), g = M.MJ(k.xB.ADMINISTRATOR, t);
+    } = e, u = (0, a.bG)([T.A], () => T.A.can(k.xB.ADMINISTRATOR, t)), h = I.MJ(k.xB.VIEW_CHANNEL, t), g = I.MJ(k.xB.ADMINISTRATOR, t);
     async function m() {
         let e = i.accessPermissions,
-            s = E.default.getCurrentUser();
-        r || null == await (0, A.D)(t.id, i.id) ? (I.uB(i, e, r), r || null == s || u || I.tP(i, e)) : (0, o.mMO)(async () => {
+            s = S.default.getCurrentUser();
+        r || null == await (0, A.D)(t.id, i.id) ? (M.uB(i, e, r), r || null == s || u || M.tP(i, e)) : (0, o.mMO)(async () => {
             let {
                 Modal: e
             } = await Promise.resolve().then(n.bind(n, 158954));
@@ -321,7 +321,7 @@ function V(e) {
                     channel: i,
                     roles: d,
                     members: c,
-                    getRemoveTooltipHint: I.ro
+                    getRemoveTooltipHint: M.ro
                 })]
             })]
         })]
@@ -342,7 +342,7 @@ function H(e) {
         })]
     })
 }
-let F = a.Ay.connectStores([N.A, S.A, v.Ay, y.A, _.A], () => {
+let F = a.Ay.connectStores([N.A, T.A, v.Ay, y.A, _.A], () => {
     let e, t = N.A.channel,
         n = N.A.category,
         l = [],
@@ -357,11 +357,11 @@ let F = a.Ay.connectStores([N.A, S.A, v.Ay, y.A, _.A], () => {
             s = N.A.editedPermissionIds.reduce((e, t) => {
                 let n = N.A.getPermissionOverwrite(t);
                 return null != n && (e[t] = n), e
-            }, {}), l = I.uX(e, r, t, t.accessPermissions, s), i = I.Wi(n, t, e, t.accessPermissions, s), a = I.Ae(t, s)
+            }, {}), l = M.uX(e, r, t, t.accessPermissions, s), i = M.Wi(n, t, e, t.accessPermissions, s), a = M.Ae(t, s)
         }
     }
     return {
-        canSyncChannel: null != n && S.A.can(k.xB.MANAGE_ROLES, n),
+        canSyncChannel: null != n && T.A.can(k.xB.MANAGE_ROLES, n),
         category: n,
         channel: t,
         filteredMembers: i,
@@ -404,7 +404,7 @@ let F = a.Ay.connectStores([N.A, S.A, v.Ay, y.A, _.A], () => {
         }) : (0, l.jsx)(w.A, {
             buttonText: D.intl.string(D.t.NVwuHq),
             canSync: !0,
-            icon: (0, o.kHD)(T.A),
+            icon: (0, o.kHD)(E.A),
             noticeText: D.intl.format(D.t.OIhm0M, {
                 categoryName: i.name
             }),
@@ -423,7 +423,7 @@ let F = a.Ay.connectStores([N.A, S.A, v.Ay, y.A, _.A], () => {
                             } = i, t = {
                                 ...i.permissionOverwrites
                             };
-                            null != e && null == t[e] && (t[e] = M.xT(e)), await (0, p.n)(s, t[e].deny, t[e].allow) && (0, u.RT)(s.id, {
+                            null != e && null == t[e] && (t[e] = I.xT(e)), await (0, p.n)(s, t[e].deny, t[e].allow) && (0, u.RT)(s.id, {
                                 permissionOverwrites: Object.values(t)
                             })
                         }

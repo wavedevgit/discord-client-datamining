@@ -1,7 +1,7 @@
 /** chunk id: 662903 params = (module,exports,require) **/
 n.d(t, {
-    Ay: () => u,
-    Bu: () => o,
+    Ay: () => o,
+    Bu: () => u,
     OJ: () => s,
     XY: () => i
 });
@@ -10,37 +10,37 @@ var r = n(64700),
     a = n(876230);
 let i = 8e5,
     s = 20,
-    o = 30;
+    u = 30;
 
-function u(e, t) {
+function o(e, t) {
     let {
         src: n,
-        initialTimeSec: u = 0,
-        onError: d,
-        onHlsInstance: c
-    } = t, m = r.useRef(null), h = r.useRef(u);
-    h.current = u;
-    let p = r.useRef(d),
-        f = r.useRef(c);
+        initialTimeSec: o = 0,
+        onError: c,
+        onHlsInstance: d
+    } = t, m = r.useRef(null), f = r.useRef(o);
+    f.current = o;
+    let h = r.useRef(c),
+        p = r.useRef(d);
     r.useEffect(() => {
+        h.current = c
+    }, [c]), r.useEffect(() => {
         p.current = d
-    }, [d]), r.useEffect(() => {
-        f.current = c
-    }, [c]);
+    }, [d]);
     let x = null != n && n.split("?")[0].endsWith(".m3u8") && l.Ay.isSupported();
     return r.useEffect(() => {
         if (!x || null == n || null == e.current) return;
         let t = e.current,
             r = new l.Ay({
                 backBufferLength: s,
-                maxBufferLength: o,
-                startPosition: h.current,
+                maxBufferLength: u,
+                startPosition: f.current,
                 startFragPrefetch: !0,
                 startLevel: -1
             });
-        m.current = r, f.current?.(r);
-        let u = 0,
-            d = () => {
+        m.current = r, p.current?.(r);
+        let o = 0,
+            c = () => {
                 r.mainForwardBufferInfo?.len === 0 && r.trigger(l.Ay.Events.BUFFER_FLUSHING, {
                     startOffset: t.currentTime,
                     endOffset: 1 / 0,
@@ -50,7 +50,7 @@ function u(e, t) {
         return r.on(l.Ay.Events.FRAG_LOADING, () => {
             r.config.minAutoBitrate !== i && (r.config.minAutoBitrate = i)
         }), r.on(l.Ay.Events.ERROR, (e, t) => {
-            if (p.current?.(function(e) {
+            if (h.current?.(function(e) {
                     switch (e) {
                         case l.Ay.ErrorTypes.NETWORK_ERROR:
                             return a.SB.HLS_NETWORK_ERROR;
@@ -67,11 +67,11 @@ function u(e, t) {
                     errorDetails: t.details,
                     fatal: t.fatal
                 }), t.fatal) {
-                if (u >= 3) {
-                    r.destroy(), m.current = null, f.current?.(null);
+                if (o >= 3) {
+                    r.destroy(), m.current = null, p.current?.(null);
                     return
                 }
-                switch (u++, t.type) {
+                switch (o++, t.type) {
                     case l.Ay.ErrorTypes.NETWORK_ERROR:
                         r.startLoad();
                         break;
@@ -79,11 +79,11 @@ function u(e, t) {
                         r.recoverMediaError();
                         break;
                     default:
-                        r.destroy(), m.current = null, f.current?.(null)
+                        r.destroy(), m.current = null, p.current?.(null)
                 }
             }
-        }), t.addEventListener("seeking", d), r.loadSource(n), r.attachMedia(t), () => {
-            t.removeEventListener("seeking", d), m.current === r && (r.destroy(), m.current = null, f.current?.(null)), t.removeAttribute("src"), t.load()
+        }), t.addEventListener("seeking", c), r.loadSource(n), r.attachMedia(t), () => {
+            t.removeEventListener("seeking", c), m.current === r && (r.destroy(), m.current = null, p.current?.(null)), t.removeAttribute("src"), t.load()
         }
     }, [x, n, e]), {
         isHlsActive: x,

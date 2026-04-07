@@ -28,7 +28,7 @@ function u(e) {
         }))
     }, [m, p]), f = i.useCallback(e => {
         g(e), x(null)
-    }, [g]), b = i.useCallback(e => {
+    }, [g]), C = i.useCallback(e => {
         if ("" === e) return void x(null);
         let t = [],
             n = parseInt(e, 10);
@@ -38,7 +38,7 @@ function u(e) {
         l <= o.WA1 && t.push(l);
         let i = n * a.A.Seconds.HOUR;
         i <= o.WA1 && t.push(i), x(t)
-    }, []), C = i.useCallback(() => {
+    }, []), b = i.useCallback(() => {
         x(null)
     }, []);
     return (0, l.jsx)("div", {
@@ -50,9 +50,9 @@ function u(e) {
             helperText: n,
             value: p,
             onSelectionChange: f,
-            onQueryChange: e => b(e.target.value),
+            onQueryChange: e => C(e.target.value),
             options: A,
-            onBlur: C,
+            onBlur: b,
             placeholder: d.intl.string(d.t.dBqQu4)
         })
     })

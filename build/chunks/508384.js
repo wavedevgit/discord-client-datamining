@@ -59,14 +59,14 @@ function p(e) {
         selectedItem: p,
         onItemSelect: A,
         itemType: f,
-        locked: b,
-        lockTooltip: C,
+        locked: C,
+        lockTooltip: b,
         showContextMenu: j,
         theme: N,
         roleStyle: v,
         onContextMenu: _,
         "aria-label": y
-    } = e, S = (0, g.X_)(a.id, s, s?.colorStrings);
+    } = e, T = (0, g.X_)(a.id, s, s?.colorStrings);
     return u ? (0, l.jsx)("div", {
         className: m.rz
     }) : (0, l.jsx)(d.VQ0.Item, {
@@ -75,25 +75,25 @@ function p(e) {
         selectedItem: p,
         onItemSelect: A,
         itemType: f,
-        "aria-label": null != C ? `${y}, ${C}` : y,
+        "aria-label": null != b ? `${y}, ${b}` : y,
         onContextMenu: _,
         children: (0, l.jsxs)("div", {
             className: m.yl,
             children: ["dot" === v ? (0, l.jsx)(d.WYI, {
                 color: t ?? void 0,
-                colors: S,
+                colors: T,
                 className: m.m4,
                 background: !1,
                 tooltip: !1
             }) : (0, l.jsx)(d.RYH, {
                 color: t ?? null,
-                colors: S,
+                colors: T,
                 className: m.Ni
             }), function() {
-                if (!b) return null;
+                if (!C) return null;
                 let e = (0, o.Mw)(N) ? n(454554) : n(470474);
                 return (0, l.jsx)(r.m, {
-                    text: C,
+                    text: b,
                     children: (0, l.jsx)(h.A, {
                         className: m.s2,
                         src: e

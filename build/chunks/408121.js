@@ -1,30 +1,30 @@
 /** chunk id: 408121 params = (module,exports,require) **/
 n.d(t, {
-    X: () => u
+    X: () => o
 });
 var r = n(627968),
     l = n(64700),
     a = n(397927),
     i = n(961432),
     s = n(985018),
-    o = n(246878);
+    u = n(246878);
 
-function u(e) {
+function o(e) {
     let {
         text: t,
         isLoading: n = !1,
-        onClose: u
-    } = e, d = l.useMemo(() => (t ?? "").split("\n").map(e => e.trim()).filter(e => e.length > 0), [t]);
+        onClose: o
+    } = e, c = l.useMemo(() => (t ?? "").split("\n").map(e => e.trim()).filter(e => e.length > 0), [t]);
     return (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsxs)("div", {
-            className: o.Mm,
+            className: u.Mm,
             children: [(0, r.jsx)(a.Heading, {
                 variant: "heading-md/semibold",
                 color: "currentColor",
                 children: s.intl.string(i.default["VZkd/n"])
             }), (0, r.jsx)(a.DUT, {
-                onClick: u,
-                className: o.GI,
+                onClick: o,
+                className: u.GI,
                 "aria-label": s.intl.string(i.default["6/dkHh"]),
                 children: (0, r.jsx)(a.PGe, {
                     color: "currentColor"
@@ -32,19 +32,19 @@ function u(e) {
             })]
         }), (0, r.jsx)(a.vN3, {
             children: (0, r.jsx)(a.ArX, {
-                className: o.j5,
+                className: u.j5,
                 fade: !0,
                 children: (0, r.jsx)("div", {
-                    className: o.FN,
+                    className: u.FN,
                     children: n ? (0, r.jsx)("div", {
-                        className: o.Cw,
+                        className: u.Cw,
                         children: (0, r.jsx)(a.y$y, {
                             type: a.y$y.Type.WANDERING_CUBES
                         })
                     }) : (0, r.jsx)(a.Heading, {
                         variant: "heading-md/normal",
                         color: "text-muted",
-                        children: d.map((e, t) => (0, r.jsx)("p", {
+                        children: c.map((e, t) => (0, r.jsx)("p", {
                             children: e
                         }, t))
                     })

@@ -19,18 +19,18 @@ var l = n(627968),
     p = n(526132),
     A = n(97469),
     f = n(406704),
-    b = n(544028),
-    C = n(95701),
+    C = n(544028),
+    b = n(95701),
     j = n(291731),
     N = n(176360),
     v = n(863036),
     _ = n(734057),
     y = n(576705),
-    S = n(994500),
-    E = n(287809),
-    T = n(203982),
-    M = n(608226),
-    I = n(654030),
+    T = n(994500),
+    S = n(287809),
+    E = n(203982),
+    I = n(608226),
+    M = n(654030),
     R = n(955941),
     L = n(865678),
     w = n(159495),
@@ -99,7 +99,7 @@ class B extends i.PureComponent {
                     canUnlinkChannel: h
                 } = e, p = (0, m.gU)(t), {
                     GUILD_CATEGORY: A
-                } = O.rbe, f = C.Le.has(t.type), b = t.type === A ? G.intl.string(G.t.ifbXnL) : f ? t.isForumPost() ? G.intl.string(G.t.nEOg1N) : G.intl.string(G.t.H7vTe2) : G.intl.string(G.t["8D8Rsb"]);
+                } = O.rbe, f = b.Le.has(t.type), C = t.type === A ? G.intl.string(G.t.ifbXnL) : f ? t.isForumPost() ? G.intl.string(G.t.nEOg1N) : G.intl.string(G.t.H7vTe2) : G.intl.string(G.t["8D8Rsb"]);
                 return [{
                     section: u.Fq.HEADER,
                     label: null != t ? (0, l.jsxs)(l.Fragment, {
@@ -107,13 +107,13 @@ class B extends i.PureComponent {
                             size: "xxs",
                             color: "currentColor",
                             className: k.p
-                        }) : null, (0, g.m1)(t, E.default, S.A), null != n ? (0, l.jsx)(a.Text, {
+                        }) : null, (0, g.m1)(t, S.default, T.A), null != n ? (0, l.jsx)(a.Text, {
                             tag: "span",
                             variant: "text-xs/semibold",
                             color: "text-default",
                             lineClamp: 1,
                             className: k.L,
-                            children: (0, g.m1)(n, E.default, S.A)
+                            children: (0, g.m1)(n, S.default, T.A)
                         }) : null]
                     }) : G.intl.string(G.t.XPDhcc)
                 }, {
@@ -145,25 +145,25 @@ class B extends i.PureComponent {
                     section: O.p_A.INTEGRATIONS,
                     label: G.intl.string(G.t.s69NLF),
                     ariaLabel: G.intl.string(G.t.s69NLF),
-                    element: I.A,
+                    element: M.A,
                     notice: {
                         stores: [j.A],
-                        element: I.q
+                        element: M.q
                     },
-                    predicate: () => !(!c && !h || t.isModeratorReportChannel()) && C.oH.has(t.type)
+                    predicate: () => !(!c && !h || t.isModeratorReportChannel()) && b.oH.has(t.type)
                 }, {
                     section: u.Fq.DIVIDER
                 }, {
                     section: O.p_A.DELETE,
                     onClick() {
-                        (0, M.O)(t, function() {
-                            T._.subscribeOnce(O.jej.LAYER_POP_COMPLETE, () => {
+                        (0, I.O)(t, function() {
+                            E._.subscribeOnce(O.jej.LAYER_POP_COMPLETE, () => {
                                 (0, o.D3)(t.id)
                             }), (0, d.jH)()
                         })
                     },
-                    label: b,
-                    ariaLabel: b,
+                    label: C,
+                    ariaLabel: C,
                     icon: (0, l.jsx)(a.ucK, {
                         size: "xs",
                         color: "currentColor"
@@ -188,7 +188,7 @@ function P() {
     let {
         channel: e,
         analyticsLocation: t
-    } = (0, s.cf)([v.A], () => v.A.getProps()), n = (0, s.bG)([v.A], () => v.A.getFormState()), i = (0, s.bG)([v.A], () => v.A.getSection()), a = (0, s.bG)([b.A], () => b.A.theme), r = (0, A.NC)(), o = (0, f.NI)(e), d = (0, f.H_)(e), {
+    } = (0, s.cf)([v.A], () => v.A.getProps()), n = (0, s.bG)([v.A], () => v.A.getFormState()), i = (0, s.bG)([v.A], () => v.A.getSection()), a = (0, s.bG)([C.A], () => C.A.theme), r = (0, A.NC)(), o = (0, f.NI)(e), d = (0, f.H_)(e), {
         canManageChannels: c,
         canManageRoles: u,
         canManageWebhooks: h,

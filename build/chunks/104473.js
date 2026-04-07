@@ -6,8 +6,8 @@ var r = n(627968),
     a = n(64700),
     o = n(687498),
     i = n(397927),
-    s = n(664111),
-    l = n(831056),
+    l = n(664111),
+    s = n(831056),
     c = n(784018);
 let d = "https://cdn.discordapp.com/assets/og_img_discord_home.png";
 
@@ -18,14 +18,14 @@ function u(e) {
         onReplay: a
     } = e;
     return (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsx)(l.nY, {
+        children: [(0, r.jsx)(s.nY, {
             url: n
-        }), (0, r.jsx)(l.KP, {}), (0, r.jsxs)(l.zj, {
+        }), (0, r.jsx)(s.KP, {}), (0, r.jsxs)(s.zj, {
             orientation: t,
-            children: [(0, r.jsx)(l.Kb, {
+            children: [(0, r.jsx)(s.Kb, {
                 url: n,
                 orientation: t
-            }), (0, r.jsx)(l.lx, {
+            }), (0, r.jsx)(s.lx, {
                 title: "Watch Again",
                 subtitle: "Replay this video",
                 ctaBtnLabel: "Replay",
@@ -42,9 +42,9 @@ function p(e) {
         autoplay: n,
         maxSeekableTimeSec: a,
         videoUrl: o,
-        poster: l,
+        poster: s,
         showEndScreen: p,
-        active: b
+        active: m
     } = e;
     return (0, r.jsx)("div", {
         style: {
@@ -52,10 +52,10 @@ function p(e) {
             height: "landscape" === t ? "360px" : "640px",
             margin: "0 auto"
         },
-        children: (0, r.jsx)(s.A, {
+        children: (0, r.jsx)(l.A, {
             src: o,
-            poster: l,
-            active: b,
+            poster: s,
+            active: m,
             autoplay: n,
             orientation: t,
             maxSeekableTimeSec: a > 0 ? a : void 0,
@@ -77,10 +77,10 @@ function p(e) {
                     onReplay: n
                 })
             } : void 0
-        }, String(b))
+        }, String(m))
     })
 }
-let b = {
+let m = {
         orientation: {
             label: "Orientation",
             type: "select",
@@ -124,85 +124,85 @@ let b = {
             defaultValue: !0
         }
     },
-    m = {
-        name: "Landscape Video (Generic)",
+    b = {
+        name: "Landscape",
         id: "landscape-video-generic",
         component: p,
         controls: {
-            ...b,
+            ...m,
             orientation: {
-                ...b.orientation,
+                ...m.orientation,
                 defaultValue: "landscape"
             }
         }
     },
     _ = {
-        name: "Portrait Video (Generic)",
+        name: "Portrait",
         id: "portrait-video-generic",
         component: p,
         controls: {
-            ...b,
+            ...m,
             orientation: {
-                ...b.orientation,
+                ...m.orientation,
                 defaultValue: "portrait"
             }
         }
     },
-    S = {
-        name: "HLS Video (Generic)",
+    g = {
+        name: "HLS",
         id: "hls-video-generic",
         component: p,
         controls: {
-            ...b,
+            ...m,
             orientation: {
-                ...b.orientation,
+                ...m.orientation,
                 defaultValue: "landscape"
             },
             videoUrl: {
-                ...b.videoUrl,
+                ...m.videoUrl,
                 defaultValue: c.Im
             }
         }
     },
-    g = {
+    S = {
         tension: 500,
         friction: 30,
         clamp: !0
     },
     f = {
         title: "Discord Video Player (Generic)",
-        stories: [m, _, S, {
-            name: "Timeline Indicators (Generic)",
+        stories: [b, _, g, {
+            name: "Timeline Indicators",
             id: "timeline-indicators-generic",
             component: function(e) {
                 let {
                     orientation: t,
                     autoplay: n,
-                    maxSeekableTimeSec: l,
+                    maxSeekableTimeSec: s,
                     videoUrl: c,
                     indicatorTimeSec: d
                 } = e, u = function(e) {
-                    let [t, n] = a.useState(null), [s, l] = a.useState(null), c = a.useRef(null), [{
+                    let [t, n] = a.useState(null), [l, s] = a.useState(null), c = a.useRef(null), [{
                         expansion: d
                     }, u] = (0, i.zhh)(() => ({
                         expansion: 0,
-                        config: g,
+                        config: S,
                         onRest: () => {
-                            null == c.current && l(null)
+                            null == c.current && s(null)
                         }
                     })), p = a.useCallback(e => {
-                        c.current = e, null != e ? (l(e), u({
+                        c.current = e, null != e ? (s(e), u({
                             expansion: 4
                         })) : u({
                             expansion: 0
                         }), n(e)
-                    }, [u]), b = a.useMemo(() => [{
+                    }, [u]), m = a.useMemo(() => [{
                         index: 0,
                         timeSec: e,
                         widthPx: 32,
                         gapPx: 4
-                    }], [e]), m = a.useCallback((e, t) => {
-                        let n = s === e.index;
+                    }], [e]), b = a.useCallback((e, t) => {
+                        let n = l === e.index;
                         return (0, r.jsx)(o.animated.div, {
                             "data-testid": "timeline-indicator",
                             onMouseEnter: () => p(e.index),
@@ -230,13 +230,13 @@ let b = {
                                 children: "R"
                             })
                         }, `indicator-${e.index}`)
-                    }, [p, s, d]);
+                    }, [p, l, d]);
                     return {
-                        indicators: b,
-                        animatingIndex: s,
+                        indicators: m,
+                        animatingIndex: l,
                         expansionSpring: d,
                         hoverExpansionPx: 4,
-                        renderIndicator: m
+                        renderIndicator: b
                     }
                 }(d);
                 return (0, r.jsx)("div", {
@@ -245,11 +245,11 @@ let b = {
                         height: "landscape" === t ? "360px" : "640px",
                         margin: "0 auto"
                     },
-                    children: (0, r.jsx)(s.A, {
+                    children: (0, r.jsx)(l.A, {
                         src: c,
                         autoplay: n,
                         orientation: t,
-                        maxSeekableTimeSec: l > 0 ? l : void 0,
+                        maxSeekableTimeSec: s > 0 ? s : void 0,
                         parentTransitionState: i.ip4.ENTERED,
                         targetTimeSec: 1 / 0,
                         onOptimisticProgressUpdate: () => {},
@@ -259,10 +259,10 @@ let b = {
                 })
             },
             controls: {
-                orientation: b.orientation,
-                autoplay: b.autoplay,
-                maxSeekableTimeSec: b.maxSeekableTimeSec,
-                videoUrl: b.videoUrl,
+                orientation: m.orientation,
+                autoplay: m.autoplay,
+                maxSeekableTimeSec: m.maxSeekableTimeSec,
+                videoUrl: m.videoUrl,
                 indicatorTimeSec: {
                     label: "Indicator Time (sec)",
                     type: "number",

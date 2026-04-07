@@ -1,13 +1,13 @@
 /** chunk id: 142619 params = (module,exports,require) **/
 n.d(t, {
-    A: () => s
+    A: () => l
 });
 var r = n(64700),
     a = n(829219),
     o = n(405670),
     i = n(579473);
 
-function s(e) {
+function l(e) {
     let t = (0, o.Kr)(e => e.transcript);
     return (r.useEffect(() => {
         let n = (0, i.tW)(e, i.fY.VIDEO_PLAYER_TRANSCRIPT, void 0, !1);

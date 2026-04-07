@@ -20,18 +20,18 @@ var l = n(627968),
     p = n(308528),
     A = n(702805),
     f = n(442433),
-    b = n(508384),
-    C = n(155718),
+    C = n(508384),
+    b = n(155718),
     j = n(736653),
     N = n(775602),
     v = n(861197),
     _ = n(942234),
     y = n(233993),
-    S = n(260509),
-    E = n(427157),
-    T = n(176360),
-    M = n(863036),
-    I = n(696451),
+    T = n(260509),
+    S = n(427157),
+    E = n(176360),
+    I = n(863036),
+    M = n(696451),
     R = n(317525),
     L = n(71393),
     w = n(576705),
@@ -49,17 +49,17 @@ var l = n(627968),
     W = n(985018),
     J = n(938626),
     z = n(132832);
-let Z = u.Ay.connectStores([T.A, M.A], () => {
-    let e = M.A.getChannel();
+let Z = u.Ay.connectStores([E.A, I.A], () => {
+    let e = I.A.getChannel();
     return {
-        submitting: T.A.formState === Y.XlH.SUBMITTING,
+        submitting: E.A.formState === Y.XlH.SUBMITTING,
         onReset() {
             (0, A.Ts)()
         },
         onSave() {
             if (null == e) return;
-            let t = T.A.editedPermissionIds.reduce((e, t) => {
-                let n = T.A.getPermissionOverwrite(t);
+            let t = E.A.editedPermissionIds.reduce((e, t) => {
+                let n = E.A.getPermissionOverwrite(t);
                 return null != n && e.push(n), e
             }, []);
             (0, A.R$)(e.id, t)
@@ -70,14 +70,14 @@ let Z = u.Ay.connectStores([T.A, M.A], () => {
 function Q(e) {
     let {
         overwrite: t
-    } = e, n = (0, u.bG)([T.A], () => T.A.channel), i = (0, u.bG)([L.A], () => null != n ? L.A.getGuild(n.getGuildId()) : null), s = (0, u.bG)([R.A], () => null != i && null != t && t.type === C.r2.ROLE ? R.A.getRole(i.id, t.id) : void 0);
+    } = e, n = (0, u.bG)([E.A], () => E.A.channel), i = (0, u.bG)([L.A], () => null != n ? L.A.getGuild(n.getGuildId()) : null), s = (0, u.bG)([R.A], () => null != i && null != t && t.type === b.r2.ROLE ? R.A.getRole(i.id, t.id) : void 0);
     if (null == n || null == i || null == t) return null;
     let {
         guild_id: a,
         id: r
     } = n, o = () => {
         if (null == L.A.getGuild(a)) return "";
-        let e = t.type === C.r2.MEMBER ? O.default.getUser(t.id) : void 0,
+        let e = t.type === b.r2.MEMBER ? O.default.getUser(t.id) : void 0,
             n = e?.username ?? "";
         return null != s ? s.name : n
     }, c = (e, l) => {
@@ -102,10 +102,10 @@ function Q(e) {
             }))(0, A.LA)(n, t.id, i, s);
         else {
             let e;
-            if (t.type === C.r2.MEMBER) {
+            if (t.type === b.r2.MEMBER) {
                 let n = O.default.getUser(t.id);
                 null != n && (e = V.Ay.getName(n))
-            } else if (t.type === C.r2.ROLE) {
+            } else if (t.type === b.r2.ROLE) {
                 let l = L.A.getGuild(n.getGuildId());
                 if (null != l) {
                     let n = R.A.getRole(l.id, t.id);
@@ -117,9 +117,9 @@ function Q(e) {
     }, h = e => {
         let t = w.A.can(Y.xBc.ADMINISTRATOR, i) || w.A.can(Y.xBc.MANAGE_ROLES, n, void 0, void 0, !0);
         return n.isGuildStageVoice() && y.Zq.has(e) ? W.intl.string(W.t.bTS5lf) : !((!d.aI(e, Y.xBc.MANAGE_ROLES) || t) && (null == e || w.A.can(e, i) || t)) && W.intl.string(W.t.nOtPMM)
-    }, g = t.id === a, f = n.isForumLikeChannel() && d.zy(t.deny, Y.xBc.SEND_MESSAGES), b = d.zy(t.deny, Y.xBc.SEND_MESSAGES), j = d.zy(t.deny, Y.xBc.READ_MESSAGE_HISTORY), N = P.A.generateChannelPermissionSpec(a, n, g, {
+    }, g = t.id === a, f = n.isForumLikeChannel() && d.zy(t.deny, Y.xBc.SEND_MESSAGES), C = d.zy(t.deny, Y.xBc.SEND_MESSAGES), j = d.zy(t.deny, Y.xBc.READ_MESSAGE_HISTORY), N = P.A.generateChannelPermissionSpec(a, n, g, {
         createPostsDisabled: f,
-        sendMessagesDisabled: b,
+        sendMessagesDisabled: C,
         readMessageHistoryDisabled: j
     });
     return (0, l.jsxs)(v.Ay.Content, {
@@ -198,13 +198,13 @@ function $(e) {
         permissionOverwrites: s,
         onClose: r,
         onSelect: d
-    } = e, h = (0, u.bG)([R.A], () => R.A.getSortedRoles(t.id)), g = (0, u.yK)([I.Ay], () => I.Ay.getMemberIds(t.id)), x = i.useMemo(() => [...h.filter(e => null == s[e.id]), ...o()(g).map(O.default.getUser).filter(G.Vq).filter(e => null == s[e.id]).sortBy(e => e.username.toLowerCase()).value()], [g, s, h]);
+    } = e, h = (0, u.bG)([R.A], () => R.A.getSortedRoles(t.id)), g = (0, u.yK)([M.Ay], () => M.Ay.getMemberIds(t.id)), x = i.useMemo(() => [...h.filter(e => null == s[e.id]), ...o()(g).map(O.default.getUser).filter(G.Vq).filter(e => null == s[e.id]).sortBy(e => e.username.toLowerCase()).value()], [g, s, h]);
     return (0, l.jsx)(c.lGe, {
         className: J.Nd,
         children: (0, l.jsxs)(m.iS7, {
             selectionMode: "single",
             onSelectionChange: e => {
-                null != e && (q(e) ? d(e.id, C.r2.ROLE) : e instanceof E.A && d(e.id, C.r2.MEMBER), r())
+                null != e && (q(e) ? d(e.id, b.r2.ROLE) : e instanceof S.A && d(e.id, b.r2.MEMBER), r())
             },
             options: x,
             formatOption: e => ({
@@ -247,7 +247,7 @@ function $(e) {
                             })]
                         })
                     }
-                    if (i instanceof E.A) return (0, l.jsx)(X, {
+                    if (i instanceof S.A) return (0, l.jsx)(X, {
                         guildId: t.id,
                         channelId: n.id,
                         user: i
@@ -265,7 +265,7 @@ function K() {
             channel: s,
             permissionOverwrites: a,
             selectedOverwriteId: r
-        } = (0, u.cf)([T.A], () => T.A),
+        } = (0, u.cf)([E.A], () => E.A),
         d = s?.getGuildId(),
         {
             guild: c,
@@ -280,15 +280,15 @@ function K() {
         }, [d]),
         _ = (0, F.A)(d, a),
         y = (0, j.Ay)(),
-        E = (0, u.bG)([N.A], () => N.A.roleStyle),
-        M = i.useCallback((e, t) => {
+        S = (0, u.bG)([N.A], () => N.A.roleStyle),
+        I = i.useCallback((e, t) => {
             if (null == s) return null;
             (0, f.L3)(e, async () => {
                 let {
                     id: e,
                     role: i,
                     name: a
-                } = t, r = null != c ? (0, S.af)(c) : null, o = null != i && r === i.id, {
+                } = t, r = null != c ? (0, T.af)(c) : null, o = null != i && r === i.id, {
                     default: d
                 } = await n.e("77168").then(n.bind(n, 495603));
                 return t => (0, l.jsx)(d, {
@@ -309,7 +309,7 @@ function K() {
             })
         }, [s, c]);
     if (null == c || null == h || null == s || null == a) return null;
-    let I = (e, t) => {
+    let M = (e, t) => {
         p.A.updatePermissionOverwrite(s.id, {
             id: e,
             type: t,
@@ -318,15 +318,15 @@ function K() {
         }).then(() => (0, A.G9)(e))
     };
     null != a && null == a[c.id] && (a[c.id] = U.xT(c.id));
-    let w = h.filter(e => a[e.id]?.type === C.r2.ROLE).map(e => (0, l.jsx)(b.A, {
+    let w = h.filter(e => a[e.id]?.type === b.r2.ROLE).map(e => (0, l.jsx)(C.A, {
             theme: y,
-            roleStyle: E,
+            roleStyle: S,
             id: e.id,
             role: e,
             guild: c,
             color: e.colorString,
             "aria-label": e.name,
-            onContextMenu: t => M(t, {
+            onContextMenu: t => I(t, {
                 id: e.id,
                 name: e.name,
                 role: e
@@ -335,15 +335,15 @@ function K() {
         }, `${r}-${e.id}`)),
         O = o()(_).sortBy(e => e.username.toLowerCase()).map(e => {
             let t = e.getAvatarURL(c.id, 24);
-            return (0, l.jsx)(b.A, {
+            return (0, l.jsx)(C.A, {
                 id: e.id,
                 guild: c,
                 theme: y,
-                roleStyle: E,
+                roleStyle: S,
                 "aria-label": V.Ay.getUserTag(e, {
                     decoration: "never"
                 }),
-                onContextMenu: t => M(t, {
+                onContextMenu: t => I(t, {
                     id: e.id,
                     name: e.username
                 }),
@@ -380,7 +380,7 @@ function K() {
                         channel: s,
                         permissionOverwrites: a,
                         position: null != t ? t : "bottom",
-                        onSelect: I,
+                        onSelect: M,
                         onClose: n
                     })
                 },
@@ -426,7 +426,7 @@ function ee() {
         channel: e,
         permissionOverwrites: t,
         selectedOverwriteId: n
-    } = (0, u.cf)([T.A], () => T.A);
+    } = (0, u.cf)([E.A], () => E.A);
     if (null == (0, u.bG)([L.A], () => null != e ? L.A.getGuild(e.getGuildId()) : null) || null == e || null == t || null == n) return null;
     let i = t[n];
     return (0, l.jsxs)(v.Ay, {

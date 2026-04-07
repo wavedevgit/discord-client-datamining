@@ -16,7 +16,7 @@ var i = n(627968),
     _ = n(782691);
 
 function m(e) {
-    return e.matches("a") || "highlight" === e.className || e.className.includes("mention")
+    return e.matches("a") || "highlight" === e.className || e.className.includes("mention") || e.className.includes("roleMention") || e.className.includes("emojiContainer")
 }
 class g extends l.Component {
     handleOpenTopic = e => {
