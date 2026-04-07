@@ -1,6 +1,6 @@
 /** chunk id: 351405 params = (module,exports,require) **/
 n.d(t, {
-    P: () => N
+    P: () => y
 }), n(321073);
 var i = n(627968),
     l = n(64700),
@@ -55,21 +55,21 @@ function T(e) {
     })
 }
 
-function N(e) {
+function y(e) {
     let {
         analyticsLocations: t,
         app: n,
         channel: a,
         message: g,
         hideParty: b,
-        onView: N
-    } = e, y = (0, r.b)(n), S = (0, s.bG)([c.default], () => c.default.getId()), j = (0, s.bG)([m.A], () => {
+        onView: y
+    } = e, N = (0, r.b)(n), S = (0, s.bG)([c.default], () => c.default.getId()), j = (0, s.bG)([m.A], () => {
         if (null == g.application) return m.A.findActivity(g.author.id, e => e.type === I.$pd.LISTENING);
         {
             let e = g.author.id;
             return (0, A.v)(g) && (e = e === S && a.isPrivate() ? a.getRecipientId() : S), m.A.getApplicationActivity(e, g.application.id)
         }
-    }, [g, a, S]), L = (0, s.bG)([_.A, h.A], () => _.A.getApplicationActivity(y.id) ?? h.A.getApplicationActivity(y.id, !0), [y.id]), R = (0, s.yK)([u.A], () => null == j || null == j.party ? [] : Array.from(u.A.getParty(j.party.id) ?? []), [j]), {
+    }, [g, a, S]), L = (0, s.bG)([_.A, h.A], () => _.A.getApplicationActivity(N.id) ?? h.A.getApplicationActivity(N.id, !0), [N.id]), R = (0, s.yK)([u.A], () => null == j || null == j.party ? [] : Array.from(u.A.getParty(j.party.id) ?? []), [j]), {
         partySize: P,
         maxPartySize: D
     } = (0, x._)(j), M = l.useMemo(() => R.map(e => {
@@ -82,30 +82,30 @@ function N(e) {
         guildId: a.guild_id,
         activityActionType: g.activity?.type
     }), [M, P, D, a.guild_id, g.activity?.type]);
-    return (0, v.pH)(j?.party?.id) || y.id === d.HT.id ? (0, i.jsx)(E.A, {
-        application: y,
+    return (0, v.pH)(j?.party?.id) || N.id === d.HT.id ? (0, i.jsx)(E.A, {
+        application: N,
         currentUserPresenceActivity: L,
         hideParty: b,
         message: g,
-        onView: N,
+        onView: y,
         partyStatusElement: w,
         presenceActivity: j,
         guildId: a.guild_id
     }) : g.activity?.type === I.xL.STREAM_REQUEST ? (0, i.jsx)(o.A, {
         analyticsLocations: t,
-        application: y,
+        application: N,
         channel: a,
         currentUserId: S,
         message: g
     }) : (0, i.jsx)(C.A, {
         analyticsLocations: t,
-        application: y,
+        application: N,
         channel: a,
         currentUserId: S,
         currentUserPresenceActivity: L,
         hideParty: b,
         message: g,
-        onView: N,
+        onView: y,
         partyStatusElement: w,
         presenceActivity: j
     })

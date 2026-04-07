@@ -26,8 +26,8 @@ var i = n(627968),
     v = n(994500),
     b = n(967198),
     T = n(287809),
-    N = n(486020),
-    y = n(204776),
+    y = n(486020),
+    N = n(204776),
     S = n(725606),
     j = n(572211),
     L = n(178910),
@@ -50,12 +50,12 @@ function U(e) {
     } = e, {
         name: f,
         bot: C
-    } = t = (0, P.b)(t), v = C?.id, b = (0, h.Ag)(t), T = N.Ay.getApplicationIconURL({
+    } = t = (0, P.b)(t), v = C?.id, b = (0, h.Ag)(t), T = y.Ay.getApplicationIconURL({
         id: t.id,
         icon: t.icon,
         bot: C
     }), {
-        staticBannerSrc: y,
+        staticBannerSrc: N,
         videoBannerSrc: L,
         bannerAspectRatio: w
     } = (0, D.f)(t), k = (0, r.bG)([E.default], () => a ?? E.default.getId(), [a]), {
@@ -116,7 +116,7 @@ function U(e) {
     });
     return (0, i.jsx)(j.h, {
         title: f,
-        staticBannerSrc: y,
+        staticBannerSrc: N,
         videoBannerSrc: L,
         onClickBanner: J,
         bannerAspectRatio: w,
@@ -140,7 +140,7 @@ function U(e) {
 function B(e) {
     let {
         app: t
-    } = e, n = (0, y.Ie)({
+    } = e, n = (0, N.Ie)({
         customInstallUrl: t.customInstallUrl,
         installParams: t.installParams,
         integrationTypesConfig: t.integrationTypesConfig

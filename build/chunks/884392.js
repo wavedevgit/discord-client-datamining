@@ -46,7 +46,7 @@ let g = function(e) {
         isEnrolling: b
     } = (0, s.cf)([o.A], () => ({
         isEnrolling: o.A.isEnrolling(v)
-    }), [v]), T = (0, _.Oz)(n), N = function(e, t) {
+    }), [v]), T = (0, _.Oz)(n), y = function(e, t) {
         let {
             launchInGameActivity: n
         } = (0, d.zW)(t);
@@ -62,7 +62,7 @@ let g = function(e) {
             default:
                 return null
         }
-    }(c, n), y = function(e, t) {
+    }(c, n), N = function(e, t) {
         let {
             features: n
         } = t.config;
@@ -79,7 +79,7 @@ let g = function(e) {
             default:
                 return h.intl.string(h.t.kUQLMJ)
         }
-    }(c, n), S = (t = N ?? void 0, c === l.n.WATCH_VIDEO ? async () => {
+    }(c, n), S = (t = y ?? void 0, c === l.n.WATCH_VIDEO ? async () => {
         await (0, _.e0)(n, {
             questContent: I.questContent,
             questContentCTA: I.questContentCTA,
@@ -104,7 +104,7 @@ let g = function(e) {
         onClick: () => {
             A?.(), S()
         },
-        text: y,
+        text: N,
         icon: T,
         fullWidth: !0
     })

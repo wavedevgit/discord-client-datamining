@@ -1,22 +1,38 @@
-/** chunk id: 941775, original params: e,t,n (module,exports,require) **/
-"use strict";
-e.exports = {
-    RH: "themeSelectionContainer__36dee",
-    yM: "themeSelection__36dee",
-    wH: "selected__36dee",
-    r0: "defaultThemeSelection__36dee",
-    BO: "selectionCircle__36dee",
-    AU: "checkmarkCircle__36dee",
-    AI: "checkmark__36dee",
-    g3: "redCircle__36dee",
-    RK: "lockedBadgeContainer__36dee",
-    AA: "lockedBadge__36dee",
-    r9: "disabled__36dee",
-    P0: "iconWrapper__36dee",
-    Xu: "darkOverlay__36dee",
-    VO: "lightOverlay__36dee",
-    eQ: "darkIcon__36dee",
-    xl: "darkerIcon__36dee",
-    k$: "midnightIcon__36dee",
-    mT: "lightIcon__36dee"
+/** chunk id: 941775 params = (module,exports,require) **/
+n.d(t, {
+    A: () => d
+});
+var i = n(627968),
+    l = n(311907),
+    s = n(397927),
+    a = n(859703),
+    r = n(201805),
+    o = n(985018);
+let d = function(e) {
+    let {
+        quest: t,
+        analyticsCtxQuestContent: n,
+        analyticsCtxSourceQuestContent: d,
+        analyticsCtxQuestContentPosition: c,
+        analyticsCtxQuestContentRowIndex: u,
+        size: _
+    } = e, m = t.id, {
+        isClaiming: h
+    } = (0, l.cf)([a.A], () => ({
+        isClaiming: a.A.isClaimingReward(m) || a.A.isFetchingRewardCode(m)
+    }), [m]), p = (0, r.ix)({
+        quest: t,
+        questContent: n,
+        questContentPosition: c,
+        questContentRowIndex: u,
+        sourceQuestContent: d
+    });
+    return (0, i.jsx)(s.Button, {
+        variant: "primary",
+        fullWidth: !0,
+        size: _,
+        loading: h,
+        onClick: p,
+        text: o.intl.string(o.t.cfY4PE)
+    })
 }

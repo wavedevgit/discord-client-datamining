@@ -25,8 +25,8 @@ var i = n(627968),
     v = n(814793),
     b = n(201805),
     T = n(545986),
-    N = n(654487),
-    y = n(652215),
+    y = n(654487),
+    N = n(652215),
     S = n(818348),
     j = n(985018);
 
@@ -72,9 +72,9 @@ function L(e) {
             action: U
         }), [U, e.quest.id, t?.id]),
         W = l.useCallback(() => {
-            (0, d.pX)(y.BVt.QUEST_PREVIEW_TOOL_2(e.quest.id))
+            (0, d.pX)(N.BVt.QUEST_PREVIEW_TOOL_2(e.quest.id))
         }, [e.quest.id]),
-        Y = e.shouldShowDisclosure && e.quest.id !== N.Fw;
+        Y = e.shouldShowDisclosure && e.quest.id !== y.Fw;
     return (0, i.jsxs)(a.W1t, {
         "data-menu-migrated": !0,
         variant: "fixed",
@@ -196,7 +196,7 @@ function L(e) {
                     (0, u.C)(e.quest.id)
                 }
             }), (0, p.U)({
-                location: N.rE.QUEST_PREVIEW_TOOL_2
+                location: y.rE.QUEST_PREVIEW_TOOL_2
             }) && (0, i.jsx)(a.Drp, {
                 id: "preview",
                 label: j.intl.string(j.t.tx5Ax5),

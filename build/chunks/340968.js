@@ -1,6 +1,6 @@
 /** chunk id: 340968 params = (module,exports,require) **/
 t.d(e, {
-    default: () => C
+    default: () => G
 });
 var i = t(627968);
 t(64700);
@@ -14,46 +14,47 @@ var l = t(397927),
     s = t(533957),
     A = t(886393),
     _ = t(659566),
-    h = t(477190),
-    E = t(307623),
-    p = t(317910),
-    g = t(475777),
+    E = t(477190),
+    h = t(307623),
+    g = t(317910),
+    p = t(475777),
     b = t(995102),
     f = t(288104),
-    x = t(661504),
-    v = t(969128),
-    y = t(652215),
-    G = t(985018);
-let C = (0, a.A)(function(n) {
+    v = t(661504),
+    y = t(969128),
+    x = t(704543),
+    C = t(652215),
+    N = t(985018);
+let G = (0, a.A)(function(n) {
     let {
         channel: e,
         guild: t,
         includeTopic: a = !1,
         onSelect: c
-    } = n, C = (0, v.A)(e), D = (0, b.A)(e), j = (0, f.A)(e), N = (0, A.A)(e), T = (0, _.A)(e), I = (0, u.m)(e), m = (0, u.y)(e), L = (0, p.A)(e), O = (0, g.A)(e, t), M = (0, s.A)(e, t), X = (0, h.A)(e, t, y.rbe.GUILD_TEXT), U = (0, h.A)(e, t, y.rbe.GUILD_VOICE), V = (0, E.A)(e), P = (0, d.A)({
+    } = n, G = (0, x.A)(e), D = (0, y.A)(e), j = (0, b.A)(e), T = (0, f.A)(e), I = (0, A.A)(e), m = (0, _.A)(e), L = (0, u.m)(e), O = (0, u.y)(e), M = (0, g.A)(e), X = (0, p.A)(e, t), P = (0, s.A)(e, t), U = (0, E.A)(e, t, C.rbe.GUILD_TEXT), V = (0, E.A)(e, t, C.rbe.GUILD_VOICE), H = (0, h.A)(e), R = (0, d.A)({
         id: e.id,
-        label: G.intl.string(G.t.gFHI3k)
-    }), R = (0, o.os)("ChannelTitleContextMenu"), H = (0, x.Ay)(e);
+        label: N.intl.string(N.t.gFHI3k)
+    }), w = (0, o.os)("ChannelTitleContextMenu"), S = (0, v.Ay)(e);
     return (0, i.jsxs)(l.W1t, {
         "data-menu-migrated-auto": !0,
         navId: "channel-context",
         onClose: r.Z_,
-        "aria-label": G.intl.string(G.t.Xm41aV),
+        "aria-label": N.intl.string(N.t.Xm41aV),
         onSelect: c,
-        children: [(0, i.jsx)(l.rXV, {
-            children: C
+        children: [(0, i.jsxs)(l.rXV, {
+            children: [G, D]
         }), (0, i.jsx)(l.rXV, {
-            children: D
+            children: j
         }), (0, i.jsx)(l.rXV, {
-            children: I
+            children: L
         }), (0, i.jsxs)(l.rXV, {
-            children: [a ? T : R ? H : j, L]
+            children: [a ? m : w ? S : T, M]
         }), (0, i.jsxs)(l.rXV, {
-            children: [O, N, M, X, U, V]
+            children: [X, I, P, U, V, H]
         }), (0, i.jsx)(l.rXV, {
-            children: m
+            children: O
         }), (0, i.jsx)(l.rXV, {
-            children: P
+            children: R
         })]
     })
 }, [c.A.CONTEXT_MENU, c.A.CHANNEL_TITLE_MENU])

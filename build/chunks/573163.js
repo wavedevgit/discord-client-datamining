@@ -50,14 +50,14 @@ class x extends l.PureComponent {
             combinedReactions: b,
             visibleReactionsCount: T
         } = this.props, {
-            disableTransitionAppear: N
-        } = this.state, y = E ? g : p, S = T > 0;
+            disableTransitionAppear: y
+        } = this.state, N = E ? g : p, S = T > 0;
         if (!S && !f) return null;
         let j = f || S;
         return (0, i.jsxs)(r.F, {
             component: "div",
-            className: a()(y.reactions, x),
-            transitionAppear: !N,
+            className: a()(N.reactions, x),
+            transitionAppear: !y,
             role: "group",
             transitionLeave: !1,
             id: (0, u.JH)(e),
@@ -80,10 +80,10 @@ class x extends l.PureComponent {
                 onClick: t => {
                     t.stopPropagation(), (0, m.$l)(A, e)
                 },
-                className: a()(y.reaction, C, y.remainingReactions),
+                className: a()(N.reaction, C, N.remainingReactions),
                 "aria-label": h.intl.string(h.t.lfIHs4),
                 children: (0, i.jsxs)(o.Text, {
-                    className: y.reactionInner,
+                    className: N.reactionInner,
                     variant: "text-sm/normal",
                     children: ["+", v]
                 })
@@ -94,7 +94,7 @@ class x extends l.PureComponent {
                 useChatFontScaling: E,
                 isHovered: this.state.isHovered,
                 className: a()({
-                    [y.forceShow]: j
+                    [N.forceShow]: j
                 })
             })]
         })

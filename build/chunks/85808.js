@@ -18,7 +18,7 @@ function d(e, t, n) {
                 return 1 === t.length && t[0] === a.n.GUILD_PREMIUM_PROGRESS_BAR || e.getGuildActionSection().isEmpty()
             }
             return 0 === e.getSections(!1)[t]
-        }(e, n) && (n === s.PU || (e.id === o.Vc ? n !== e.getSections(!1).length - 1 : !!t && (n === s.HP || n !== s.bK && (n === e.recentsSectionNumber || (e.voiceChannelsSectionNumber, !1))))),
+        }(e, n) && (n === s.PU || (e.id === o.Vc ? n !== e.getSections(!1).length - 1 : n === s.HP || !!t && n !== s.bK && (n === e.recentsSectionNumber || (e.voiceChannelsSectionNumber, !1)))),
         canHaveVoiceSummary: n !== s.PU && n !== s.HP && n !== s.bK && n !== e.recentsSectionNumber && n !== e.voiceChannelsSectionNumber
     }
 }

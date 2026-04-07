@@ -25,8 +25,8 @@ var i = n(627968),
     v = n(699352),
     b = n(378570),
     T = n(138298),
-    N = n(253932),
-    y = n(761640),
+    y = n(253932),
+    N = n(761640),
     S = n(734057),
     j = n(540999),
     L = n(71393),
@@ -50,7 +50,7 @@ function G(e) {
             n = L.A.getGuild(e?.guild_id),
             i = t.messageReference?.channel_id,
             l = D.A.getCurrentlySelectedChannelId(),
-            s = y.Ay.getCurrentSidebarChannelId(t.messageReference?.channel_id),
+            s = N.Ay.getCurrentSidebarChannelId(t.messageReference?.channel_id),
             a = l === i && s === e?.id;
         null == e || null == n || a || null == i || (T.A.openModReportAsSidebar({
             channelId: e.id,
@@ -166,8 +166,8 @@ function H(e) {
             let e = (0, _.A)(t, n);
             return null != r && n?.moderatorReport?.reported_user_id != null ? e.set("author", r) : e
         }, [t, n, r]),
-        u = N.hD.useSetting(),
-        m = N.rs.useSetting(),
+        u = y.hD.useSetting(),
+        m = y.rs.useSetting(),
         p = (0, a.bG)([j.A], () => j.A.isDeveloper),
         g = (0, h.S)((d.editedTimestamp ?? d.timestamp).valueOf()),
         {

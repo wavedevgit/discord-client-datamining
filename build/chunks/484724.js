@@ -29,8 +29,8 @@ function E(e) {
     } = (0, r.Ay)(), {
         guildScheduledEvent: b,
         guild: T,
-        channel: N,
-        isMember: y
+        channel: y,
+        isMember: N
     } = (0, s.cf)([A.Ay, h.A, _.A, m.Ay, p.default], () => {
         let e = A.Ay.getGuildScheduledEvent(E) ?? void 0,
             t = h.A.getGuild(n),
@@ -46,13 +46,13 @@ function E(e) {
         b?.id == null && x.A.fetchGuildEvent(n, E), g.A.getGuildEventUserCounts(n, E, null != I ? [I] : []), g.A.getGuildEventsForCurrentUser(n)
     }, [E, n, b?.id, I]), (0, i.jsx)(f.Ay, {
         guild: T,
-        channel: N,
+        channel: y,
         guildScheduledEvent: b,
-        isMember: y,
+        isMember: N,
         onAcceptInstantInvite: () => {
             if ((0, c.g)({
                     guild: T,
-                    isMember: y,
+                    isMember: N,
                     analyticsLocations: v
                 }) === c.W.PROCEED) {
                 if ((0, d.V)(n)) return void(0, o.Ze)(n);
@@ -62,7 +62,7 @@ function E(e) {
             }
         },
         onTransitionToInviteChannel: function() {
-            (0, d.V)(n) ? (0, o.Ze)(n) : N?.isGuildStageVoice() ? (0, u.av)(N) : N?.isGuildVoice() && x.A.joinVoiceEvent(N.guild_id, N.id)
+            (0, d.V)(n) ? (0, o.Ze)(n) : y?.isGuildStageVoice() ? (0, u.av)(y) : y?.isGuildVoice() && x.A.joinVoiceEvent(y.guild_id, y.id)
         },
         recurrenceId: I
     })

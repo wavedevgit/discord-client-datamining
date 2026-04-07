@@ -120,6 +120,7 @@ function v(e) {
                     user: o,
                     userHook: (e, s) => (0, i.jsx)(u.A, {
                         tag: "span",
+                        className: b.C3,
                         onClick: () => (0, p.openUserProfileModal)({
                             userId: t.userId,
                             guildId: n,
@@ -128,7 +129,6 @@ function v(e) {
                         children: (0, i.jsx)(r.Text, {
                             variant: "text-sm/semibold",
                             tag: "span",
-                            className: b.C3,
                             children: e
                         })
                     }, s),

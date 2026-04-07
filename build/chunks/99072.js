@@ -30,8 +30,8 @@ function b(e) {
         currentUserId: t,
         message: b,
         application: T,
-        channel: N,
-        analyticsLocations: y,
+        channel: y,
+        analyticsLocations: N,
         onView: S
     } = e, {
         staticBannerSrc: j,
@@ -48,11 +48,11 @@ function b(e) {
         let n = p.A.getGameByApplication(T);
         return null != n && t === n.id
     })), M = (0, l.bG)([h.A], () => h.A.getCurrentUserActiveStream()), w = (0, l.bG)([g.A], () => g.A.getChannelId()), O = f.default.extractTimestamp(b.id) + C.M < Date.now(), k = (0, i.jsx)(i.Fragment, {
-        children: (0, a.Wf)(b, N, t)
+        children: (0, a.Wf)(b, y, t)
     }), {
         analyticsLocations: U
-    } = (0, o.Ay)(y, r.A.REQUEST_TO_STREAM_INVITE_EMBED), B = v.intl.string(I.default["5+172e"]), G = !1;
-    return O ? (B = v.intl.string(I.default.u4QmWl), G = !0) : null != M ? (B = v.intl.string(I.default.P0wwmM), G = !0) : w !== N.id ? (B = v.intl.string(I.default.qRXats), G = !0) : null == D && (B = v.intl.string(I.default["43zohO"]), G = !0), (0, i.jsx)(d.h, {
+    } = (0, o.Ay)(N, r.A.REQUEST_TO_STREAM_INVITE_EMBED), B = v.intl.string(I.default["5+172e"]), G = !1;
+    return O ? (B = v.intl.string(I.default.u4QmWl), G = !0) : null != M ? (B = v.intl.string(I.default.P0wwmM), G = !0) : w !== y.id ? (B = v.intl.string(I.default.qRXats), G = !0) : null == D && (B = v.intl.string(I.default["43zohO"]), G = !0), (0, i.jsx)(d.h, {
         header: v.intl.string(I.default.nAyuPp),
         title: T.name,
         staticBannerSrc: j,
@@ -79,8 +79,8 @@ function b(e) {
         trackingConfig: {
             id: T.id,
             linkType: E.J.REQUEST_TO_STREAM,
-            guildId: N.guild_id,
-            channelId: N.id,
+            guildId: y.guild_id,
+            channelId: y.id,
             messageId: b.id,
             onView: S,
             isDeadEnd: O

@@ -107,27 +107,28 @@ function U(e) {
         questContent: n,
         sourceQuestContent: i,
         onClick: s,
-        text: l
+        text: l,
+        primaryCtaButton: o
     } = e, {
-        enabled: o
+        enabled: c
     } = p.K.useConfig({
         location: O.rE.QUEST_LEARN_MORE_CTA
     }), {
-        externalLinkCta: c,
-        handleOpenExternalLink: u
+        externalLinkCta: u,
+        handleOpenExternalLink: m
     } = L({
         quest: t,
         sourceQuestContent: i
     });
-    return o ? (0, a.jsxs)(r.e2v, {
+    return c ? (0, a.jsxs)(r.e2v, {
         direction: "horizontal",
         fullWidth: !0,
         wrap: !1,
         children: [(0, a.jsx)(r.$nd, {
             variant: "secondary",
-            text: c,
-            onClick: u
-        }), (0, a.jsx)(r.$nd, {
+            text: u,
+            onClick: m
+        }), o ?? (0, a.jsx)(r.$nd, {
             variant: "primary",
             onClick: s ?? void 0,
             text: l
@@ -149,7 +150,7 @@ function U(e) {
                     skipEnrollmentCheck: !0
                 })
             }
-        }), (0, a.jsx)(r.$nd, {
+        }), o ?? (0, a.jsx)(r.$nd, {
             variant: "primary",
             onClick: s ?? void 0,
             text: l
@@ -225,7 +226,7 @@ function G(e) {
         isClaiming: h.A.isClaimingReward(t.id) || h.A.isFetchingRewardCode(t.id),
         isEnrolling: h.A.isEnrolling(t.id),
         isQuestEnrollmentBlocked: null != h.A.questEnrollmentBlockedUntil
-    })), Y = t.userStatus?.enrolledAt != null, Q = t.userStatus?.completedAt != null, J = Q && t.userStatus?.claimedAt == null, X = (0, C.if)(t), Z = !(0, C.Ic)(t), ee = (0, _.In)(t), et = (0, S.IO)(t), en = (0, S.K$)(t), ea = (0, S.Cr)(t), ei = (0, _.fc)(t), [es, el, er] = (0, _.Qo)(t, ei), eo = Z && ee === _.F3.ACCEPTED, ed = eo && es === x.X0.SELECT, ec = eo && !ed && el.length > 1, eu = g.t.useConfig({
+    })), Q = t.userStatus?.enrolledAt != null, Y = t.userStatus?.completedAt != null, J = Y && t.userStatus?.claimedAt == null, X = (0, C.if)(t), Z = !(0, C.Ic)(t), ee = (0, _.In)(t), et = (0, S.IO)(t), en = (0, S.K$)(t), ea = (0, S.Cr)(t), ei = (0, _.fc)(t), [es, el, er] = (0, _.Qo)(t, ei), eo = Z && ee === _.F3.ACCEPTED, ed = eo && es === x.X0.SELECT, ec = eo && !ed && el.length > 1, eu = g.t.useConfig({
         location: O.rE.QUEST_HOME_DESKTOP
     }), em = (0, I.Pd)(t), eh = (0, m.O)(e => e.clearErrorHints), ex = i.useCallback(e => {
         er(e), e === O.fO.DESKTOP && (p([]), eh(t.id))
@@ -284,7 +285,50 @@ function G(e) {
             text: ep,
             fullWidth: !0
         })
-    }) : Q ? eS = et ? (0, a.jsx)(U, {
+    }) : J && eu.enabled && em === I.UA.COMPLETED && eu.enabledQuestStates.has(em) ? eS = et ? (0, a.jsx)(U, {
+        quest: t,
+        questContent: n,
+        sourceQuestContent: L,
+        onClick: eg,
+        text: ep,
+        primaryCtaButton: (0, a.jsx)(N.A, {
+            quest: t,
+            surface: I.V3.QUEST_HOME_TILE_FOOTER,
+            analyticsCtxQuestContent: n,
+            analyticsCtxSourceQuestContent: L,
+            analyticsCtxQuestContentPosition: j,
+            analyticsCtxQuestContentRowIndex: y
+        })
+    }) : (0, E.vA)(t) ? (0, a.jsxs)(r.e2v, {
+        direction: "horizontal",
+        fullWidth: !0,
+        wrap: !1,
+        children: [(0, a.jsx)(r.$nd, {
+            variant: "secondary",
+            icon: t.config.features.includes(O.Li.CLOUD_GAMING_ACTIVITY) ? d.hpF : d._xR,
+            text: ej,
+            onClick: () => {
+                eb()
+            }
+        }), (0, a.jsx)(N.A, {
+            quest: t,
+            surface: I.V3.QUEST_HOME_TILE_FOOTER,
+            analyticsCtxQuestContent: n,
+            analyticsCtxSourceQuestContent: L,
+            analyticsCtxQuestContentPosition: j,
+            analyticsCtxQuestContentRowIndex: y
+        })]
+    }) : (0, a.jsx)("div", {
+        className: w.x6,
+        children: (0, a.jsx)(N.A, {
+            quest: t,
+            surface: I.V3.QUEST_HOME_TILE_FOOTER,
+            analyticsCtxQuestContent: n,
+            analyticsCtxSourceQuestContent: L,
+            analyticsCtxQuestContentPosition: j,
+            analyticsCtxQuestContentRowIndex: y
+        })
+    }) : Y ? eS = et ? (0, a.jsx)(U, {
         quest: t,
         questContent: n,
         sourceQuestContent: L,
@@ -314,16 +358,7 @@ function G(e) {
             text: ep,
             fullWidth: !0
         })
-    }) : Z ? J ? eS = (0, a.jsx)("div", {
-        className: w.x6,
-        children: (0, a.jsx)(r.$nd, {
-            variant: "primary",
-            loading: z,
-            onClick: eg ?? void 0,
-            text: ep,
-            fullWidth: !0
-        })
-    }) : en ? eS = (0, a.jsx)("div", {
+    }) : Z ? en ? eS = (0, a.jsx)("div", {
         className: w.x6,
         children: eu.enabled && (em === I.UA.UNENROLLED || em === I.UA.ENROLLED || em === I.UA.INCOMPLETE) && eu.enabledQuestStates.has(em) ? (0, a.jsxs)(r.e2v, {
             direction: "horizontal",
@@ -348,7 +383,7 @@ function G(e) {
                 fullWidth: !0
             })
         })
-    }) : Y && !ev ? eS = ed ? (0, a.jsx)(l.Pw, {
+    }) : Q && !ev ? eS = ed ? (0, a.jsx)(l.Pw, {
         className: w.dd,
         isSelected: () => !1,
         options: D,
@@ -420,7 +455,7 @@ function G(e) {
             text: R.intl.string(R.t["9KoPyB"]),
             fullWidth: !0
         })
-    }) : Y || (eS = q ? (0, a.jsxs)(r.e2v, {
+    }) : Q || (eS = q ? (0, a.jsxs)(r.e2v, {
         direction: "horizontal",
         fullWidth: !0,
         wrap: !1,

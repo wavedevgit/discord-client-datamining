@@ -24,7 +24,7 @@ function x(e) {
         message: n
     } = e, [x, f, C] = (0, r.yK)([h.A], () => [h.A.getApplication(t), h.A.isInvalidApplication(t), h.A.getApplicationFetchState(t)], [t]), E = (0, r.bG)([u.A], () => u.A.getGuildId() ?? void 0), [I, v] = l.useState(!1), b = l.useCallback(e => {
         e && v(!0)
-    }, []), T = (0, s.K)(b), N = l.useCallback(() => {
+    }, []), T = (0, s.K)(b), y = l.useCallback(() => {
         _.default.track(p.HAw.APP_DIRECTORY_PROFILE_EMBED_VIEWED, {
             application_id: t,
             device_platform: a.Fr ? "mobile_web" : "desktop_web",
@@ -36,8 +36,8 @@ function x(e) {
     return (l.useEffect(() => {
         (0, m.eP)(t)
     }, [t]), l.useEffect(() => {
-        I && C === h.e.FETCHED && N()
-    }, [I, C, N]), l.useEffect(() => {
+        I && C === h.e.FETCHED && y()
+    }, [I, C, y]), l.useEffect(() => {
         I && f && _.default.track(p.HAw.APP_DIRECTORY_PROFILE_INVALID_EMBED_VIEWED, {
             device_platform: a.Fr ? "mobile_web" : "desktop_web",
             sender_user_id: n.author.id,
@@ -70,7 +70,7 @@ function x(e) {
     }) : (0, i.jsx)(o.W, {
         app: c.Ay.createFromServer(x),
         linkType: o.J.APP_DISCOVERY,
-        onView: N,
+        onView: y,
         message: n
     })
 }

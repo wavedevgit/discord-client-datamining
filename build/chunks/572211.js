@@ -50,8 +50,8 @@ function I(e) {
         videoBannerSrc: v,
         bannerAspectRatio: b = 0,
         iconSrc: T,
-        actions: N = [],
-        primaryActionFirst: y = !1,
+        actions: y = [],
+        primaryActionFirst: N = !1,
         trackingConfig: S,
         onClickContent: j,
         onClickBanner: L
@@ -168,9 +168,9 @@ function I(e) {
                             children: C
                         })]
                     })]
-                }), N.length > 0 && (0, l.jsx)("div", {
-                    className: r()(f.AC, y ? f.ad : null),
-                    children: N.map((e, t) => {
+                }), y.length > 0 && (0, l.jsx)("div", {
+                    className: r()(f.AC, N ? f.ad : null),
+                    children: y.map((e, t) => {
                         let {
                             label: n,
                             icon: i,

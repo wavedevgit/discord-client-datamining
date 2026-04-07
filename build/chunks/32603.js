@@ -436,8 +436,7 @@ class ei extends et {
 }
 class es extends et {
     constructor(e, t) {
-        if (super(e), !e.optInEnabled) return;
-        this.channels = l()(D.Ay.getGuildFavorites(e.id) ?? []).map(e => w.A.getChannel(e)).filter(U.Vq).map(e => new eu(this, e, t)).keyBy(e => e.id).value();
+        super(e), this.channels = l()(D.Ay.getGuildFavorites(e.id) ?? []).map(e => w.A.getChannel(e)).filter(U.Vq).map(e => new eu(this, e, t)).keyBy(e => e.id).value();
         const n = _.A.getSuggestedChannelId(e.id),
             i = w.A.getChannel(n);
         null != i && null != n && (this.channels[n] = new eu(this, i, {
@@ -773,7 +772,7 @@ function eA(e, t, n, i, s) {
 }
 
 function eI(e, t) {
-    return e.favoriteChannelIds.has(t.id) && (e.optInEnabled || !1)
+    return e.favoriteChannelIds.has(t.id)
 }
 
 function e_(e, t) {

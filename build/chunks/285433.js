@@ -31,8 +31,8 @@ let v = e => {
         size: v,
         expansionSpring: b,
         isAnimating: T,
-        isExpanded: N,
-        isInteracting: y,
+        isExpanded: y,
+        isInteracting: N,
         contentPosition: S,
         toggleExpanded: j,
         sourceQuestContent: L
@@ -56,7 +56,7 @@ let v = e => {
         "aria-label": E.intl.string(E.t.dcl9MQ),
         children: [(0, i.jsx)(p.A, {
             quest: n,
-            isInteracting: y,
+            isInteracting: N,
             containerClassName: I.v7,
             imageSize: {
                 width: 660,
@@ -65,7 +65,7 @@ let v = e => {
             imageClassName: I.Z5
         }), (0, i.jsxs)("div", {
             className: I.wx,
-            "aria-expanded": N,
+            "aria-expanded": y,
             children: [(0, i.jsx)(r.animated.div, {
                 className: a()(I.VW, {
                     [I.eX]: k
@@ -79,9 +79,9 @@ let v = e => {
                             range: [0, 1],
                             output: [0, 1]
                         })),
-                        visibility: T || N ? "inherit" : "hidden"
+                        visibility: T || y ? "inherit" : "hidden"
                     },
-                    "aria-hidden": !T && !N,
+                    "aria-hidden": !T && !y,
                     children: (0, i.jsxs)("div", {
                         className: I.uA,
                         children: [(0, i.jsxs)("div", {
@@ -132,9 +132,9 @@ let v = e => {
                     children: e => (0, i.jsx)(r.animated.div, {
                         style: {
                             opacity: (0, f.a)(b),
-                            visibility: T || N ? "inherit" : "hidden"
+                            visibility: T || y ? "inherit" : "hidden"
                         },
-                        "aria-hidden": !T && !N,
+                        "aria-hidden": !T && !y,
                         children: (0, i.jsx)(c.DUT, {
                             ...e,
                             className: I.P0,

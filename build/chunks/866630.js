@@ -30,16 +30,16 @@ let g = l.memo(function(e) {
                 isLurking: v,
                 isPendingMember: b,
                 type: T,
-                emojiSize: N
+                emojiSize: y
             } = e,
-            y = T === _.v.BURST,
+            N = T === _.v.BURST,
             S = (0, m.IN)(x, f, T),
-            j = (0, u.g)(y && null != E ? E : []),
+            j = (0, u.g)(N && null != E ? E : []),
             L = l ? p : h,
-            R = y ? C : A,
+            R = N ? C : A,
             P = (0, c.x)(R, m.$Z),
             D = {};
-        if (y && null != j) {
+        if (N && null != j) {
             let {
                 accentColor: e,
                 backgroundColor: i,
@@ -64,8 +64,8 @@ let g = l.memo(function(e) {
                 }),
                 emojiId: r.id,
                 emojiName: r.name,
-                size: N,
-                animated: y && r.animated
+                size: y,
+                animated: N && r.animated
             }), (0, i.jsx)("div", {
                 className: L.reactionCount,
                 style: M,

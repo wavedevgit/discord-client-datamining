@@ -31,12 +31,12 @@ function I(e) {
             onAcceptInstantInvite: b
         } = e,
         T = I === s.author.id,
-        N = n.state === f.elq.ACCEPTING,
-        y = (0, o.bG)([p.A], () => null != n.channel ? p.A.getChannel(n.channel.id) : null, [n]);
-    a()(null == y || y.isPrivate(), "must be a private channel");
+        y = n.state === f.elq.ACCEPTING,
+        N = (0, o.bG)([p.A], () => null != n.channel ? p.A.getChannel(n.channel.id) : null, [n]);
+    a()(null == N || N.isPrivate(), "must be a private channel");
     let {
         analyticsLocations: S
-    } = (0, u.Ay)(c.A.INVITE_EMBED), j = null != y, L = l.useCallback(() => {
+    } = (0, u.Ay)(c.A.INVITE_EMBED), j = null != N, L = l.useCallback(() => {
         let e = "noop";
         j ? (v(), e = "transition") : (b(), e = "accept"), (0, d.he)({
             invite: n,
@@ -46,18 +46,18 @@ function I(e) {
             invite_instance_id: (0, _._U)(n.code, s.id)
         }, S)
     }, [n, s, S, j, v, b]);
-    if (null == y) {
+    if (null == N) {
         if (null == n.channel) return (0, i.jsx)(x.A, {});
-        y = (0, h.OY)(n.channel), t = null != n.channel && null != n.channel.recipients ? n.channel.recipients : []
+        N = (0, h.OY)(n.channel), t = null != n.channel && null != n.channel.recipients ? n.channel.recipients : []
     } else {
-        t = y.recipients.reduce((e, t) => {
+        t = N.recipients.reduce((e, t) => {
             let n = g.default.getUser(t);
             return null != n && e.push(n), e
         }, []);
         let e = g.default.getCurrentUser();
         j && null != e && t.push(e)
     }
-    let R = y.name;
+    let R = N.name;
     (null == R || "" === R) && (R = t.length > 0 ? t.filter(A.Vq).map(e => e.username).join(", ") : C.intl.string(C.t.LJpTRF));
     let P = C.intl.string(C.t.XpeFYr),
         D = "active";
@@ -70,7 +70,7 @@ function I(e) {
             children: [(0, i.jsxs)("div", {
                 className: E.iH,
                 children: [(0, i.jsx)(m.A.Icon, {
-                    channel: y,
+                    channel: N,
                     onClick: j ? L : void 0
                 }), (0, i.jsx)(m.A.Info, {
                     title: R,
@@ -81,7 +81,7 @@ function I(e) {
                 })]
             }), (0, i.jsx)(r.$nd, {
                 onClick: L,
-                loading: N,
+                loading: y,
                 disabled: j,
                 variant: D,
                 text: P,

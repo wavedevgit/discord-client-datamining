@@ -38,24 +38,24 @@ function p(e) {
             disabled: b.disabled,
             disabledReason: b.disabled ? b.tooltip : void 0
         }), e
-    }, [v, b]), N = null != g && null != g.details && null != g.state ? m.intl.formatToPlainString(m.t.JCvHtx, {
+    }, [v, b]), y = null != g && null != g.details && null != g.state ? m.intl.formatToPlainString(m.t.JCvHtx, {
         track: g.details,
         artist: g.state
-    }) : t.name, y = g?.timestamps?.start ?? g?.created_at, S = l.useMemo(() => null != y ? (0, i.jsxs)("div", {
+    }) : t.name, N = g?.timestamps?.start ?? g?.created_at, S = l.useMemo(() => null != N ? (0, i.jsxs)("div", {
         className: h.Ym,
         children: [(0, i.jsx)(s.T7G, {
             size: "xxs",
             color: "currentColor"
         }), (0, i.jsx)(o.z, {
             entry: {
-                start: y,
+                start: N,
                 end: g?.timestamps?.end
             },
             textColor: "currentColor",
             textTabularNumbers: !1,
             textFontCode: !1
         })]
-    }) : null, [y, g?.timestamps?.end]), j = l.useMemo(() => (0, i.jsxs)("div", {
+    }) : null, [N, g?.timestamps?.end]), j = l.useMemo(() => (0, i.jsxs)("div", {
         className: h.pq,
         children: [(0, i.jsx)(s.Text, {
             variant: "text-xs/normal",
@@ -67,7 +67,7 @@ function p(e) {
     }), [S, A, x]);
     return (0, i.jsx)(a.h, {
         header: p,
-        title: N,
+        title: y,
         iconSrc: (0, c.A)(g, t.id) ?? void 0,
         info: j,
         actions: T,

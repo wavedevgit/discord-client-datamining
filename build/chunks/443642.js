@@ -26,8 +26,8 @@ let C = (0, _.xI)(a.A.STICKERS_CONSTANTS_STICKER_DIMENSION),
             channel: n,
             isInteracting: a
         } = e, _ = l.useRef(null), [E, I] = l.useState(!0), [v, b] = l.useState(String(Date.now())), [T] = (0, m.Zq)(t, a), {
-            analyticsLocations: N
-        } = (0, c.Ay)(o.A.STICKER_MESSAGE), y = (0, i.jsxs)("span", {
+            analyticsLocations: y
+        } = (0, c.Ay)(o.A.STICKER_MESSAGE), N = (0, i.jsxs)("span", {
             className: f.Zl,
             children: [(0, i.jsx)(r.s2T, {
                 size: "xs",
@@ -36,7 +36,7 @@ let C = (0, _.xI)(a.A.STICKERS_CONSTANTS_STICKER_DIMENSION),
             }), (T ?? t).name]
         });
         return (0, i.jsx)(c.f5, {
-            value: N,
+            value: y,
             children: (0, i.jsx)("div", {
                 className: f.be,
                 children: (0, i.jsx)(r.YNO, {
@@ -60,7 +60,7 @@ let C = (0, _.xI)(a.A.STICKERS_CONSTANTS_STICKER_DIMENSION),
                         return (0, i.jsx)(s.m, {
                             ...u.Uk,
                             shouldShow: E,
-                            __unsupportedReactNodeAsText: (0, u.yR)(y),
+                            __unsupportedReactNodeAsText: (0, u.yR)(N),
                             "aria-label": !1,
                             onTooltipShow: () => {
                                 var e;

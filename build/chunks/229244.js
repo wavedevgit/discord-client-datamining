@@ -207,7 +207,7 @@ function G() {
         })
     }
 
-    function Y(e, n) {
+    function Q(e, n) {
         if ("questName" === e || "gameTitle" === e || "gamePublisher" === e) {
             var a, i;
             c({
@@ -227,7 +227,7 @@ function G() {
         }
     }
 
-    function Q(e, n, a) {
+    function Y(e, n, a) {
         if ("name" === e || "nameWithArticle" === e) {
             var i, s;
             c({
@@ -327,17 +327,17 @@ function G() {
             children: [(0, a.jsx)(E.A, {
                 title: "Quest Name",
                 assetKey: "questName",
-                onMessageChange: Y,
+                onMessageChange: Q,
                 initialValue: t.config.messages.questName
             }), (0, a.jsx)(E.A, {
                 title: "Game Title",
                 assetKey: "gameTitle",
-                onMessageChange: Y,
+                onMessageChange: Q,
                 initialValue: t.config.messages.gameTitle
             }), (0, a.jsx)(E.A, {
                 title: "Game Publisher",
                 assetKey: "gamePublisher",
-                onMessageChange: Y,
+                onMessageChange: Q,
                 initialValue: t.config.messages.gamePublisher
             }), ee && (0, a.jsx)(E.A, {
                 title: "Video Title",
@@ -442,12 +442,12 @@ function G() {
                 children: [(0, a.jsx)(E.A, {
                     title: "Name",
                     assetKey: "name",
-                    onMessageChange: (e, t) => Q(e, t, n),
+                    onMessageChange: (e, t) => Y(e, t, n),
                     initialValue: e.messages.name
                 }), (0, a.jsx)(E.A, {
                     title: "Name With Article",
                     assetKey: "nameWithArticle",
-                    onMessageChange: (e, t) => Q(e, t, n),
+                    onMessageChange: (e, t) => Y(e, t, n),
                     initialValue: e.messages.nameWithArticle
                 }), e.type !== d.l.VIRTUAL_CURRENCY && (0, a.jsx)(S.A, {
                     title: "Asset",

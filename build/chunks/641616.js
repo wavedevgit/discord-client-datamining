@@ -49,8 +49,8 @@ var x = n(173628),
     z = n(12171),
     $ = n(706712),
     q = n(4807),
-    Y = n(329482),
-    Q = n(189244),
+    Q = n(329482),
+    Y = n(189244),
     J = n(982078),
     X = n(547798),
     Z = n(253804),
@@ -208,7 +208,7 @@ function em() {
             id: "appearance_randomizer",
             name: "Appearance Randomizer",
             group: ed.fu.UI,
-            render: () => (0, a.jsx)(Q.A, {})
+            render: () => (0, a.jsx)(Y.A, {})
         }), e.push({
             id: "overlays",
             name: "Dev Overlays",
@@ -233,7 +233,7 @@ function em() {
             id: "permissions",
             name: "Permissions",
             group: ed.fu.USERS,
-            render: () => (0, a.jsx)(Y.A, {})
+            render: () => (0, a.jsx)(Q.A, {})
         }), e.push({
             id: "modals",
             name: "Modals",

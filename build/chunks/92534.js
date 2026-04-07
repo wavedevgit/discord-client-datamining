@@ -202,7 +202,7 @@ function g(e) {
                     (0, s.L3)(e.event, async () => {
                         let {
                             default: t
-                        } = await Promise.all([n.e("97262"), n.e("57287"), n.e("77666")]).then(n.bind(n, 370372));
+                        } = await Promise.all([n.e("97262"), n.e("2381"), n.e("77666")]).then(n.bind(n, 370372));
                         return n => (0, i.jsx)(t, {
                             ...n,
                             channel: e.channel,
@@ -215,7 +215,7 @@ function g(e) {
                     (0, s.L3)(e.event, async () => {
                         let {
                             default: t
-                        } = await Promise.all([n.e("97262"), n.e("57287"), n.e("40394"), n.e("30997")]).then(n.bind(n, 698193));
+                        } = await Promise.all([n.e("97262"), n.e("2381"), n.e("40394"), n.e("30997")]).then(n.bind(n, 698193));
                         return n => (0, i.jsx)(t, {
                             ...n,
                             channel: e.channel,

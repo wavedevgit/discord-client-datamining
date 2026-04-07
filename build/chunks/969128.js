@@ -16,38 +16,24 @@ function A(n) {
     let t = (0, d.jN)(n.guild_id),
         e = (0, r.bG)([s.Ay], () => s.Ay.isChannelOptedIn(n.guild_id, n.id)),
         A = (0, r.bG)([s.Ay], () => null != n.parent_id && s.Ay.isChannelOptedIn(n.guild_id, n.parent_id)),
-        u = (0, r.bG)([s.Ay], () => s.Ay.isFavorite(n.guild_id, n.id)),
-        g = () => {
+        u = () => {
             (0, a.AC)(n.guild_id, n.id, !e, {
                 section: c.JJy.CONTEXT_MENU
             })
         };
-    if (!t || n.isThread()) return null;
-    if (n.isCategory()) return (0, i.jsx)(l.Drp, {
+    return !t || n.isThread() ? null : n.isCategory() ? (0, i.jsx)(l.Drp, {
         id: "opt-into-category",
         label: e ? o.intl.string(o.t["3zySTA"]) : o.intl.string(o.t["9mysCh"]),
-        action: () => g()
-    });
-    let _ = u ? o.intl.string(o.t.M5PWSf) : o.intl.string(o.t.RMpwZu);
-    return (0, i.jsxs)(i.Fragment, {
-        children: [(0, i.jsx)(l.Drp, {
-            id: "opt-in-favorite-channel",
-            label: _,
-            action: () => {
-                (0, a.jA)(n.guild_id, n.id, !u, {
-                    section: c.JJy.CONTEXT_MENU
-                })
-            }
-        }), A ? (0, i.jsx)(l.Drp, {
-            id: "opt-out-category",
-            label: o.intl.string(o.t.jNphKT),
-            action: () => void(null != n.parent_id && (0, a.AC)(n.guild_id, n.parent_id, !1, {
-                section: c.JJy.CONTEXT_MENU
-            }))
-        }) : (0, i.jsx)(l.Drp, {
-            id: "opt-into-channel",
-            label: e ? o.intl.string(o.t["3zySTA"]) : o.intl.string(o.t["9mysCh"]),
-            action: () => g()
-        })]
+        action: () => u()
+    }) : A ? (0, i.jsx)(l.Drp, {
+        id: "opt-out-category",
+        label: o.intl.string(o.t.jNphKT),
+        action: () => void(null != n.parent_id && (0, a.AC)(n.guild_id, n.parent_id, !1, {
+            section: c.JJy.CONTEXT_MENU
+        }))
+    }) : (0, i.jsx)(l.Drp, {
+        id: "opt-into-channel",
+        label: e ? o.intl.string(o.t["3zySTA"]) : o.intl.string(o.t["9mysCh"]),
+        action: () => u()
     })
 }

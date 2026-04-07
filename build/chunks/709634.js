@@ -33,14 +33,14 @@ let E = e => {
         channelId: r.id,
         guildId: n,
         messageId: E
-    })((0, c.m2)(v, r)), N = null != v ? v.getAvatarURL(n, (0, d.FT9)(d._3J.SIZE_16)) : C, y = null != v ? A.intl.format(g.default["+zqXZs"], {
+    })((0, c.m2)(v, r)), y = null != v ? v.getAvatarURL(n, (0, d.FT9)(d._3J.SIZE_16)) : C, N = null != v ? A.intl.format(g.default["+zqXZs"], {
         username: v.username,
         onUserClick: T
     }) : A.intl.string(g.default.xpRjfS);
     return (0, i.jsxs)("div", {
         className: a()(f.NB, f.JZ, b),
         children: [(0, i.jsx)(d.euF, {
-            src: N,
+            src: y,
             size: d._3J.SIZE_16,
             className: x.my,
             "aria-label": ""
@@ -48,7 +48,7 @@ let E = e => {
             variant: "text-sm/medium",
             color: "text-subtle",
             className: x.Xh,
-            children: y
+            children: N
         }), (0, i.jsxs)(d.Text, {
             variant: "text-sm/medium",
             color: "text-subtle",

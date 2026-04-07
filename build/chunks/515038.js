@@ -53,10 +53,10 @@ function k(e) {
             ...E.N,
             clamp: !0
         }
-    }), q = t.userStatus?.completedAt != null, Y = t.userStatus?.claimedAt != null, Q = (0, f.ks)(t.config), J = (0, f._Z)(t.config), {
+    }), q = t.userStatus?.completedAt != null, Q = t.userStatus?.claimedAt != null, Y = (0, f.ks)(t.config), J = (0, f._Z)(t.config), {
         completedRatio: X,
         completedRatioDisplay: Z
-    } = (0, p.O9)(t), ee = (0, x.gj)(t, M, m.Ob.QuestHome, P), et = i.useMemo(() => Y && Q ? T.intl.format(T.t["8Op4c4"], {
+    } = (0, p.O9)(t), ee = (0, x.gj)(t, M, m.Ob.QuestHome, P), et = i.useMemo(() => Q && Y ? T.intl.format(T.t["8Op4c4"], {
         balanceHook: () => (0, a.jsxs)(O, {
             questId: t.id,
             children: [(0, a.jsx)(h.A, {
@@ -65,10 +65,10 @@ function k(e) {
                 customSize: 14
             }), J]
         }, t.id)
-    }) : Y ? (0, a.jsx)(O, {
+    }) : Q ? (0, a.jsx)(O, {
         questId: t.id,
         children: G
-    }) : Q ? T.intl.format(T.t.ro1sze, {
+    }) : Y ? T.intl.format(T.t.ro1sze, {
         balanceHook: () => (0, a.jsxs)(O, {
             questId: t.id,
             children: [(0, a.jsx)(h.A, {
@@ -82,7 +82,7 @@ function k(e) {
             questId: t.id,
             children: F
         }, t.id)
-    }), [G, Y, F, t.id, J, Q]), en = i.useMemo(() => {
+    }), [G, Q, F, t.id, J, Y]), en = i.useMemo(() => {
         if (null != ee) return (0, a.jsx)(d.Text, {
             variant: "text-sm/medium",
             color: "text-muted",
@@ -107,7 +107,7 @@ function k(e) {
                 height: 80,
                 children: (0, a.jsxs)("div", {
                     className: N.c6,
-                    children: [!Y && q && (0, a.jsx)("div", {
+                    children: [!Q && q && (0, a.jsx)("div", {
                         className: N.Nz
                     }), V ? (0, a.jsxs)("div", {
                         className: N.Tr,

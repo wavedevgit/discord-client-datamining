@@ -55,8 +55,8 @@ let D = function() {
         gift: "true"
     }), V = "true" !== G.gift && null != D, [W, H] = i.useState(M.length > 0 ? M[0].value : null), {
         analyticsLocations: K
-    } = (0, x.Ay)(h.A.PAYMENT_FLOW_TEST_PAGE), [z, $] = i.useState(""), [q, Y] = i.useState(k.dJq), {
-        balance: Q,
+    } = (0, x.Ay)(h.A.PAYMENT_FLOW_TEST_PAGE), [z, $] = i.useState(""), [q, Q] = i.useState(k.dJq), {
+        balance: Y,
         isFetching: J,
         error: X
     } = (0, E.W)(), {
@@ -263,7 +263,7 @@ let D = function() {
                                 variant: "text-sm/normal",
                                 children: ["Error fetching Virtual Currency Balance: ", X.message]
                             }), (0, a.jsx)(T.Gy, {
-                                balance: Q ?? 0,
+                                balance: Y ?? 0,
                                 balanceWidgetMode: T.k7.SELECTED
                             })]
                         })]
@@ -310,7 +310,7 @@ let D = function() {
                             label: "Sku Id",
                             placeholder: "Sku Id",
                             value: q,
-                            onChange: e => Y(e)
+                            onChange: e => Q(e)
                         })]
                     }), (0, a.jsx)(c.Button, {
                         variant: "primary",

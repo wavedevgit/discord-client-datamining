@@ -25,8 +25,8 @@ var i = n(627968),
     v = n(21599),
     b = n(734057),
     T = n(71393),
-    N = n(576705),
-    y = n(287809),
+    y = n(576705),
+    N = n(287809),
     S = n(954571),
     j = n(486020),
     L = n(860689),
@@ -147,12 +147,12 @@ function B(e) {
             return A.id === t
         })),
         D = b.A.getChannel(s.channel?.id),
-        O = (0, d.bG)([N.A], () => null != D && N.A.can(P.xBc.USE_EMBEDDED_ACTIVITIES, D), [D]),
+        O = (0, d.bG)([y.A], () => null != D && y.A.can(P.xBc.USE_EMBEDDED_ACTIVITIES, D), [D]),
         {
             analyticsLocations: k
         } = (0, p.Ay)(h.A.INVITE_EMBED),
         U = (0, d.yK)([m.Ay], () => null != D ? m.Ay.getEmbeddedActivitiesForChannel(D.id).filter(e => e.applicationId === A.id).flatMap(e => Array.from(e.userIds)) : [], [D, A.id]),
-        B = (0, d.yK)([y.default], () => U.map(e => y.default.getUser(e)).filter(e => null != e), [U]),
+        B = (0, d.yK)([N.default], () => U.map(e => N.default.getUser(e)).filter(e => null != e), [U]),
         F = l.useCallback(() => {
             (0, _.he)({
                 invite: s,
@@ -220,7 +220,7 @@ function G(e) {
         id: t.id,
         icon: b,
         bot: v
-    }), N = (0, C.F)(t), y = (0, f.f)(t), S = n.length, L = l.useMemo(() => [{
+    }), y = (0, C.F)(t), N = (0, f.f)(t), S = n.length, L = l.useMemo(() => [{
         label: m,
         trackingArea: s ? x.kY.PLAY : x.kY.JOIN_SERVER,
         submitting: _,
@@ -232,8 +232,8 @@ function G(e) {
         header: t.name,
         title: w.intl.string(w.t["7vb6nw"]),
         iconSrc: T,
-        ...y,
-        onClickBanner: N,
+        ...N,
+        onClickBanner: y,
         info: (0, i.jsxs)("div", {
             className: O.QR,
             children: [(0, i.jsx)(U, {
@@ -254,7 +254,7 @@ function G(e) {
             })]
         }),
         actions: L,
-        onClickContent: N,
+        onClickContent: y,
         trackingConfig: {
             id: t.id,
             linkType: D.J.ACTIVITY_INVITE,

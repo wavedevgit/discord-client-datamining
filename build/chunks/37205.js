@@ -25,8 +25,8 @@ var i = n(627968),
     v = n(450149),
     b = n(652896),
     T = n(834757),
-    N = n(290331),
-    y = n(21599),
+    y = n(290331),
+    N = n(21599),
     S = n(281489),
     j = n(378570),
     L = n(21119),
@@ -90,12 +90,12 @@ function Q(e) {
             voiceStates: Z
         }),
         et = (0, _.bG)([M.A], () => null != M.A.getGuild(H.id), [H.id]),
-        en = (0, _.bG)([D.Ay], () => N.A.canAcceptInvite([D.Ay], t), [t]),
+        en = (0, _.bG)([D.Ay], () => y.A.canAcceptInvite([D.Ay], t), [t]),
         ei = t.state === W.elq.ACCEPTING,
         {
             analyticsLocations: el
         } = (0, C.Ay)(f.A.INVITE_EMBED),
-        es = (0, y._U)(t.code, s.id),
+        es = (0, N._U)(t.code, s.id),
         ea = (0, q.A)({
             invite: t,
             message: s,

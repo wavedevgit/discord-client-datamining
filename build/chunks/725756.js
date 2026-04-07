@@ -19,8 +19,8 @@ var r = e(397927),
     b = e(307623),
     p = e(317910),
     y = e(848977),
-    f = e(995102),
-    C = e(288104),
+    C = e(995102),
+    f = e(288104),
     x = e(661504),
     j = e(969128),
     v = e(90509),
@@ -57,10 +57,10 @@ function G(n) {
         channel: t,
         guild: e,
         onSelect: a
-    } = n, d = (0, y.A)(t), c = (0, f.A)(t), o = (0, C.A)(t), v = (0, _.A)(t), O = (0, g.A)(t), G = (0, p.A)(t), N = (0, A.A)(t), T = (0, h.A)(t, e), m = (0, b.A)(t), M = (0, s.A)({
+    } = n, d = (0, y.A)(t), c = (0, C.A)(t), o = (0, f.A)(t), v = (0, _.A)(t), O = (0, g.A)(t), G = (0, p.A)(t), N = (0, A.A)(t), T = (0, h.A)(t, e), m = (0, b.A)(t), M = (0, s.A)({
         id: t.id,
         label: E.intl.string(E.t["2visC6"])
-    }), I = (0, j.A)(t), U = (0, u.os)("ChannelCategoryNormalMenu"), D = (0, x.Ay)(t);
+    }), I = (0, j.A)(t), L = (0, u.os)("ChannelCategoryNormalMenu"), U = (0, x.Ay)(t);
     return (0, i.jsxs)(r.W1t, {
         "data-menu-migrated-auto": !0,
         navId: "channel-context",
@@ -72,7 +72,7 @@ function G(n) {
         }, "mark-as-read"), (0, i.jsxs)(r.rXV, {
             children: [I, v, O]
         }, "channel-actions"), (0, i.jsxs)(r.rXV, {
-            children: [c, U ? D : o]
+            children: [c, L ? U : o]
         }, "notifications"), (0, i.jsxs)(r.rXV, {
             children: [G, N, T, m]
         }, "admin-actions"), (0, i.jsx)(r.rXV, {

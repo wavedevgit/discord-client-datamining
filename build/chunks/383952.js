@@ -58,8 +58,8 @@ function D(e) {
             location: "MicrophoneButton"
         }),
         q = (0, o.bG)([y.Ay], () => y.Ay.getMode() === N.TB.PUSH_TO_TALK),
-        Y = (0, o.bG)([y.Ay], () => y.Ay.getSettings().modeOptions.shortcut),
-        Q = (0, o.bG)([g.A], () => g.A.getIsTutorialActive(f.v.MUTE_TUTORIAL)),
+        Q = (0, o.bG)([y.Ay], () => y.Ay.getSettings().modeOptions.shortcut),
+        Y = (0, o.bG)([g.A], () => g.A.getIsTutorialActive(f.v.MUTE_TUTORIAL)),
         J = (0, o.bG)([S.A], () => null != S.A.getChannelId()),
         {
             name: X
@@ -90,7 +90,7 @@ function D(e) {
     } : H || V ? {
         tooltipType: "green_void_do_not_use",
         tooltipText: I.intl.format(I.t.c1qUOQ, {
-            keybind: E.dI(Y).toLocaleUpperCase()
+            keybind: E.dI(Q).toLocaleUpperCase()
         }),
         tooltipForceOpen: !0
     } : {
@@ -99,8 +99,8 @@ function D(e) {
     let ed = $ && q && J,
         ec = et ? d.A.colors.ICON_VOICE_MUTED : "currentColor",
         eu = i.useCallback(() => {
-            B(), Q && p.N(f.v.MUTE_TUTORIAL)
-        }, [B, Q]);
+            B(), Y && p.N(f.v.MUTE_TUTORIAL)
+        }, [B, Y]);
     return (0, a.jsxs)(x.f5, {
         value: ea,
         children: [(0, a.jsx)(m.YNO, {
@@ -203,7 +203,7 @@ function D(e) {
             }
         }), (0, a.jsx)(u.AM, {
             targetElementRef: ee,
-            shouldShow: Q,
+            shouldShow: Y,
             graphic: {
                 type: "image",
                 src: w.A
