@@ -23,13 +23,13 @@ function m(e) {
         targetElementRef: _,
         spacing: m = 0
     } = e, {
-        isOpen: g,
+        isOpen: p,
         setIsOpen: f
     } = (0, c.A)(), x = l.useCallback(() => {
         f(!1)
     }, [f]), E = l.useCallback(() => {
-        f(!g)
-    }, [g, f]);
+        f(!p)
+    }, [p, f]);
     (0, r.Ay)(() => {
         let e = () => {
             f(!1)
@@ -43,7 +43,7 @@ function m(e) {
     });
     return (0, i.jsx)(s.YNO, {
         targetElementRef: _,
-        shouldShow: g,
+        shouldShow: p,
         align: u,
         animation: I === d.RK.TITLE_BAR_LEFT ? s.YNO.Animation.TRANSLATE : s.YNO.Animation.FADE,
         animationPosition: I === d.RK.TITLE_BAR_LEFT ? "bottom" : "left",
@@ -52,7 +52,7 @@ function m(e) {
         spacing: m,
         renderPopout: () => (0, i.jsx)(s.lGe, {
             "aria-label": A.intl.string(A.t.GSmTKJ),
-            children: (0, i.jsx)(p, {})
+            children: (0, i.jsx)(g, {})
         }),
         children: (e, n) => {
             let {
@@ -63,7 +63,7 @@ function m(e) {
     })
 }
 
-function p() {
+function g() {
     return (0, i.jsxs)("div", {
         className: _.kL,
         children: [(0, i.jsx)("div", {

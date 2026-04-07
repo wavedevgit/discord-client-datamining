@@ -16,12 +16,12 @@ t.d(i, {
 });
 var l = t(562465),
     s = t(73153),
-    a = t(773669),
-    n = t(997590),
+    n = t(773669),
+    a = t(997590),
     r = t(652215);
 async function o() {
-    let e = a.default.locale;
-    if (e === n.A.getFetchedLocale()) return;
+    let e = n.default.locale;
+    if (e === a.A.getFetchedLocale()) return;
     let i = await l.Bo.get({
         url: r.Rsh.GUILD_DISCOVERY_CATEGORIES,
         query: {
@@ -42,8 +42,8 @@ async function d(e) {
         let {
             primary_category_id: i,
             category_ids: t,
-            keywords: a,
-            emoji_discoverability_enabled: n,
+            keywords: n,
+            emoji_discoverability_enabled: a,
             partner_actioned_timestamp: o,
             partner_application_timestamp: d,
             is_published: c,
@@ -57,8 +57,8 @@ async function d(e) {
         })).body, h = {
             primaryCategoryId: i,
             secondaryCategoryIds: t,
-            keywords: a,
-            emojiDiscoverabilityEnabled: n,
+            keywords: n,
+            emojiDiscoverabilityEnabled: a,
             partnerActionedTimestamp: o,
             partnerApplicationTimestamp: d,
             isPublished: c,
@@ -154,8 +154,8 @@ async function A(e) {
     let {
         guildId: i,
         primaryCategoryId: t,
-        keywords: a,
-        emojiDiscoverabilityEnabled: n,
+        keywords: n,
+        emojiDiscoverabilityEnabled: a,
         partnerActionedTimestamp: o,
         partnerApplicationTimestamp: d,
         isPublished: c,
@@ -179,10 +179,10 @@ async function A(e) {
             url: r.Rsh.GUILD_DISCOVERY_METADATA(i),
             body: {
                 primary_category_id: t,
-                emoji_discoverability_enabled: n,
+                emoji_discoverability_enabled: a,
                 partner_actioned_timestamp: o,
                 partner_application_timestamp: d,
-                keywords: a,
+                keywords: n,
                 is_published: c,
                 reasons_to_join: u,
                 social_links: m,

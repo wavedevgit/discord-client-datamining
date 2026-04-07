@@ -51,7 +51,7 @@ let v = function() {
         v(!0)
     }, [v]);
     return (s.useEffect(() => {
-        a.A.getDetectableGames()
+        a.Ay.getDetectableGames()
     }, []), S === c.X.FETCHED && null == y) ? (0, i.jsx)(N.g, {
         forceFetchGuildProfile: L
     }) : S === c.X.NOT_FETCHED || S === c.X.FETCHING ? (0, i.jsx)("main", {

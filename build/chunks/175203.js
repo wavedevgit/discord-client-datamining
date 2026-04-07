@@ -16,8 +16,8 @@ var i = n(627968),
     A = n(827343),
     _ = n(820284),
     m = n(793574),
-    p = n(429913),
-    g = n(520698),
+    g = n(429913),
+    p = n(520698),
     f = n(164617),
     x = n(66004),
     E = n(958005),
@@ -88,11 +88,11 @@ let eo = [ei.lp.ACTIVITY],
                 ignored: eh = !1,
                 fit: e_ = S.$.CONTAIN,
                 paused: em = !1,
-                pulseSpeakingIndicator: ep = !1,
-                forceIdle: eg = !1,
+                pulseSpeakingIndicator: eg = !1,
+                forceIdle: ep = !1,
                 controlsBottom: ef
             } = e,
-            ex = l.useContext(U.vG) || eg,
+            ex = l.useContext(U.vG) || ep,
             [eE, eI] = l.useState(!1),
             eC = D.Q_.useSetting(),
             eN = (0, d.bG)([w.default], () => w.default.isStreamInfoOverlayEnabled),
@@ -100,9 +100,9 @@ let eo = [ei.lp.ACTIVITY],
             eb = (0, d.bG)([k.default], () => k.default.getId()),
             ev = u.type === ei.lp.ACTIVITY ? null : u.user,
             ey = ev?.id ?? null,
-            [ej] = (0, p.A)(u.type === ei.lp.ACTIVITY ? [u.applicationId] : []),
-            eR = (0, d.bG)([B.Ay], () => null != ey && B.Ay.isLocalVideoDisabled(ey, (0, g.A)(u.type)), [ey, u.type]),
-            eO = (0, d.bG)([B.Ay], () => null != ey ? B.Ay.getVideoToggleState(ey, (0, g.A)(u.type)) : en.bb8.NONE, [ey, u.type]),
+            [ej] = (0, g.A)(u.type === ei.lp.ACTIVITY ? [u.applicationId] : []),
+            eR = (0, d.bG)([B.Ay], () => null != ey && B.Ay.isLocalVideoDisabled(ey, (0, p.A)(u.type)), [ey, u.type]),
+            eO = (0, d.bG)([B.Ay], () => null != ey ? B.Ay.getVideoToggleState(ey, (0, p.A)(u.type)) : en.bb8.NONE, [ey, u.type]),
             eL = eO === en.bb8.AUTO_PROBING,
             {
                 speaking: eM,
@@ -119,7 +119,7 @@ let eo = [ei.lp.ACTIVITY],
                     voiceChannelId: e?.channelId
                 }
             }), c = (0, d.cf)([B.Ay], () => {
-                let e = (0, g.A)(n.type);
+                let e = (0, p.A)(n.type);
                 return t === r ? {
                     muted: !1,
                     deafened: !1
@@ -201,7 +201,7 @@ let eo = [ei.lp.ACTIVITY],
                     blocked: eu,
                     ignored: eh,
                     noVideoRender: ed || eL,
-                    pulseSpeakingIndicator: ep
+                    pulseSpeakingIndicator: eg
                 }), eX = (0, i.jsx)(Z.s, {
                     participant: u,
                     channelId: F.id
@@ -445,7 +445,7 @@ let eA = l.memo(e => {
         width: s,
         focused: A,
         videoToggleState: _,
-        blocked: p,
+        blocked: g,
         ignored: x,
         participantId: C,
         participantType: S,
@@ -466,7 +466,7 @@ let eA = l.memo(e => {
         paused: W,
         controlsBottom: K,
         streamId: Y
-    } = e, z = (0, d.bG)([B.Ay], () => null != b && B.Ay.isLocalVideoAutoDisabled(b, (0, g.A)(S)), [b, S]), q = (0, N.A)({
+    } = e, z = (0, d.bG)([B.Ay], () => null != b && B.Ay.isLocalVideoAutoDisabled(b, (0, p.A)(S)), [b, S]), q = (0, N.A)({
         userId: b,
         guildId: y.getGuildId()
     }), X = (0, T.a)({
@@ -575,7 +575,7 @@ let eA = l.memo(e => {
                     className: er.gr,
                     size: "xs",
                     color: "currentColor"
-                }), p ? (0, i.jsx)("div", {
+                }), g ? (0, i.jsx)("div", {
                     className: er.Z5,
                     children: (0, i.jsx)(h.KTN, {
                         size: "lg",

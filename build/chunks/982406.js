@@ -1,6 +1,6 @@
 /** chunk id: 982406 params = (module,exports,require) **/
 a.d(t, {
-    A: () => p
+    A: () => u
 });
 var n = a(627968),
     r = a(64700),
@@ -12,15 +12,15 @@ var n = a(627968),
     _ = a(838541),
     d = a(878159);
 
-function p(e) {
+function u(e) {
     let {
         attachment: t,
         posterUrl: a,
         guildId: o,
-        className: p
-    } = e, u = t.width ?? 0, m = t.height ?? 0, b = u >= m ? "landscape" : "portrait", f = (0, c.AE)({
+        className: u
+    } = e, p = t.width ?? 0, m = t.height ?? 0, b = p >= m ? "landscape" : "portrait", f = (0, c.AE)({
         src: a,
-        width: u,
+        width: p,
         height: m
     }), C = r.useCallback(e => {
         let {
@@ -43,9 +43,9 @@ function p(e) {
         })
     }, [t, o]);
     return (0, n.jsx)("div", {
-        className: i()(d.k, p),
+        className: i()(d.k, u),
         style: {
-            aspectRatio: `${u} / ${m}`,
+            aspectRatio: `${p} / ${m}`,
             maxHeight: _.Rk
         },
         children: (0, n.jsx)(l.A, {

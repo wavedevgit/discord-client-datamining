@@ -107,7 +107,7 @@ function q(i, t) {
             let e = (0, $.A)(i, k.jUm.EMBEDDED),
                 n = g.A.getVoiceChannelId(),
                 l = _.A.getChannel(n);
-            await o.A.join({
+            await o.Ay.join({
                 userId: t.id,
                 sessionId: i.session_id,
                 applicationId: i.application_id,

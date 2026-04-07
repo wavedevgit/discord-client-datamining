@@ -25,8 +25,8 @@ var i = n(627968),
     A = n(793574),
     _ = n(688810),
     m = n(509536),
-    p = n(987144),
-    g = n(976860),
+    g = n(987144),
+    p = n(976860),
     f = n(71393),
     x = n(881756),
     E = n(297930),
@@ -300,7 +300,7 @@ function $(e) {
             text: k.intl.string(k.t.RzWDqY),
             variant: "primary",
             onClick: () => {
-                n(U.i.TAKE_ACTION), (0, g.pX)(M.BVt.CHANNEL(t, D.VV.GAME_SERVERS))
+                n(U.i.TAKE_ACTION), (0, p.pX)(M.BVt.CHANNEL(t, D.VV.GAME_SERVERS))
             }
         }],
         markAsDismissed: n
@@ -466,7 +466,7 @@ function ee(e) {
                     page: M.liQ.GUILD_CHANNEL,
                     section: M.JJy.GUILD_HEADER
                 };
-                await (0, p.g)({
+                await (0, g.g)({
                     guild: e,
                     numberOfBoostsToAdd: d,
                     analyticsLocation: i,
@@ -490,7 +490,7 @@ function et(e) {
         ...r
     } = e, c = (0, d.bG)([I.A], () => I.A.getStateForGuild(t)), {
         analyticsLocations: u
-    } = (0, _.Ay)(A.A.GUILD_POWERUPS_COACHMARK_EXPIRING_PERK), m = c?.allPowerups[n.skuId], g = (0, N.A)(m, !0), x = l.useRef(null), E = (0, d.bG)([h.A], () => h.A.useReducedMotion);
+    } = (0, _.Ay)(A.A.GUILD_POWERUPS_COACHMARK_EXPIRING_PERK), m = c?.allPowerups[n.skuId], p = (0, N.A)(m, !0), x = l.useRef(null), E = (0, d.bG)([h.A], () => h.A.useReducedMotion);
     if (null == m && !n.isGameServer) return null;
     let C = n.isGameServer ? k.intl.string(P.default["9L0pAN"]) : k.intl.formatToPlainString(P.default.gG8bI8, {
             perkName: n.name
@@ -513,7 +513,7 @@ function et(e) {
             className: w.Lj
         }) : (0, i.jsx)("img", {
             alt: "",
-            src: g,
+            src: p,
             className: w.Sl
         }),
         title: C,
@@ -528,7 +528,7 @@ function et(e) {
                     page: M.liQ.GUILD_CHANNEL,
                     section: M.JJy.GUILD_HEADER
                 };
-                await (0, p.g)({
+                await (0, g.g)({
                     guild: e,
                     numberOfBoostsToAdd: n.numExpiringBoosts,
                     analyticsLocation: i,

@@ -14,12 +14,12 @@ let _ = e => {
         participants: t,
         maxVisibleParticipants: a,
         guildId: _
-    } = e, d = r.useRef(null), p = (0, r.useCallback)(() => (0, n.jsx)(l.L, {
+    } = e, d = r.useRef(null), u = (0, r.useCallback)(() => (0, n.jsx)(l.L, {
         users: t,
         guildId: _
     }), [t, _]);
     return (0, n.jsx)(c.YNO, {
-        renderPopout: p,
+        renderPopout: u,
         targetElementRef: d,
         position: "right",
         children: e => (0, n.jsx)(o.D, {

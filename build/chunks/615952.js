@@ -21,7 +21,7 @@ function m(e) {
         user: t
     } = e, {
         analyticsLocations: n
-    } = (0, a.Ay)(), m = (0, l.bG)([d.default], () => d.default.getId() === t.id), p = (0, l.bG)([c.A], () => c.A.isBlockedOrIgnored(t.id) || c.A.isSpam(t.id)), g = (0, o.j)("UserProfileGiftingBannerButton"), {
+    } = (0, a.Ay)(), m = (0, l.bG)([d.default], () => d.default.getId() === t.id), g = (0, l.bG)([c.A], () => c.A.isBlockedOrIgnored(t.id) || c.A.isSpam(t.id)), p = (0, o.j)("UserProfileGiftingBannerButton"), {
         openGiftModal: f
     } = (0, r.$)({
         giftRecipient: t,
@@ -34,7 +34,7 @@ function m(e) {
         },
         location: "user-profile-gifting-banner-button"
     });
-    return null == t || t.bot || m || p || !g ? null : (0, i.jsx)(u.br, {
+    return null == t || t.bot || m || g || !p ? null : (0, i.jsx)(u.br, {
         icon: s.okO,
         tooltipText: _.intl.string(_.t.PEjaCx),
         action: h.pt.GIFT,

@@ -1,6 +1,6 @@
 /** chunk id: 898375 params = (module,exports,require) **/
 n.d(t, {
-    A: () => p
+    A: () => g
 });
 var i = n(627968),
     l = n(64700),
@@ -16,12 +16,12 @@ var i = n(627968),
     _ = n(985018),
     m = n(292142);
 
-function p(e) {
+function g(e) {
     let {
         quest: t,
         questDescription: n,
-        completedRatio: p,
-        minimizeFrame: g,
+        completedRatio: g,
+        minimizeFrame: p,
         onClose: f
     } = e, x = (0, r.GV)(), E = (0, d.Ut)(), I = l.useCallback(() => {
         E({
@@ -32,8 +32,8 @@ function p(e) {
         }), (0, A.navigateToQuestHome)({
             fromContent: o.uF.RUNNING_ACTIVITY,
             questId: t.id
-        }), g(), f()
-    }, [t.id, E, g, f]);
+        }), p(), f()
+    }, [t.id, E, p, f]);
     return (0, i.jsxs)(a.lGe, {
         className: m.kL,
         "aria-labelledby": x,
@@ -60,7 +60,7 @@ function p(e) {
             children: [(0, i.jsx)("div", {
                 children: (0, i.jsx)(u.A, {
                     size: 48,
-                    percentComplete: p,
+                    percentComplete: g,
                     children: (0, i.jsx)(h.A, {
                         fullWidth: !0,
                         quest: t,

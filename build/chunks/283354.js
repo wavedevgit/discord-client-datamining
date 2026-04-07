@@ -20,8 +20,8 @@ function A(e) {
         closePopout: _,
         hideEditButton: m = !1
     } = e, {
-        isEntryAdmin: p,
-        canEdit: g,
+        isEntryAdmin: g,
+        canEdit: p,
         canRemove: f
     } = (0, u.A)(t), x = (0, o.A)({
         id: t.guildId,
@@ -29,7 +29,7 @@ function A(e) {
         onSuccess: _
     });
     l.useEffect(() => {
-        g || f || null != x || (0, r.Z_)()
+        p || f || null != x || (0, r.Z_)()
     });
     let E = () => {
         c.ZM(t.channelId, t.guildId)
@@ -45,7 +45,7 @@ function A(e) {
         "aria-label": h.intl.string(h.t.HpQykc),
         onSelect: A,
         children: [(0, i.jsxs)(a.rXV, {
-            children: [g && !m ? (0, i.jsx)(a.Drp, {
+            children: [p && !m ? (0, i.jsx)(a.Drp, {
                 id: "update-entry",
                 label: h.intl.string(h.t.XnuOvN),
                 action: function() {
@@ -81,7 +81,7 @@ function A(e) {
                     type: "icon",
                     icon: a.ucK
                 }
-            }) : null, p ? null : (0, i.jsx)(a.Drp, {
+            }) : null, g ? null : (0, i.jsx)(a.Drp, {
                 id: "report-server-listing",
                 label: h.intl.string(h.t.Aen9eh),
                 action: function() {

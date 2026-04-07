@@ -6,17 +6,17 @@ var l = n(627968);
 n(64700);
 var s = n(503698),
     i = n.n(s),
-    a = n(397927),
-    r = n(734682);
+    r = n(397927),
+    a = n(734682);
 
 function o(e) {
     let {
         children: t,
         className: n
     } = e;
-    return (0, l.jsx)(a.Text, {
+    return (0, l.jsx)(r.Text, {
         color: "none",
-        className: i()(r.D, n),
+        className: i()(a.D, n),
         variant: "text-md/medium",
         children: t
     })

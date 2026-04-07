@@ -1,6 +1,6 @@
 /** chunk id: 690953 params = (module,exports,require) **/
 n.d(t, {
-    A: () => p
+    A: () => g
 });
 var i = n(627968);
 n(64700);
@@ -17,21 +17,21 @@ var l = n(417597),
     _ = n(652215),
     m = n(985018);
 
-function p(e) {
+function g(e) {
     let t = (0, l.bG)([o.A], () => o.A.getChannelId() === e.id),
-        p = (0, u.A)(),
-        g = p?.channelId === e.id,
+        g = (0, u.A)(),
+        p = g?.channelId === e.id,
         f = (0, r.J)(e) && !e.isPrivate(),
         x = (0, r.A)(e),
         E = !(0, l.bG)([d.A], () => d.A.isInChannel(e.id)) && x || f,
         I = (0, h.A)();
-    if (!g && 0 === I.length) return null;
+    if (!p && 0 === I.length) return null;
     let C = (0, A.A)(void 0);
-    return g ? (0, i.jsx)(s.Drp, {
+    return p ? (0, i.jsx)(s.Drp, {
         label: m.intl.string(m.t.PlwgdU),
         id: "handoff",
         action: () => {
-            (0, c.x)(p)
+            (0, c.x)(g)
         },
         icon: C,
         leadingAccessory: {

@@ -48,7 +48,7 @@ function A(e) {
                 text: u.intl.string(u.t.GTCx0p),
                 disabled: null == l,
                 onClick: function() {
-                    null != l && (d.A.addGame(l.pid, l.name), t())
+                    null != l && (d.Ay.addGame(l.pid, l.name), t())
                 }
             })]
         })]

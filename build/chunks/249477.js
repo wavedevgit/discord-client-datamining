@@ -240,7 +240,7 @@ class eu extends r.PureComponent {
                     })
                 }, 1e4), null != o.name && null != c && H.A.shouldReport(o)) {
                 let e = o.name;
-                d.A.identifyGame(c, e).then(e => d.A.reportUnverifiedGame(e)).catch(e => new C.A("AutoAnalytics").error("Cannot identify game", e))
+                d.Ay.identifyGame(c, e).then(e => d.Ay.reportUnverifiedGame(e)).catch(e => new C.A("AutoAnalytics").error("Cannot identify game", e))
             }
         }
         if (e.runningNonGame !== u && u?.id != null && e.runningNonGame?.id !== u.id) {

@@ -1,15 +1,15 @@
 /** chunk id: 899273 params = (module,exports,require) **/
 n.d(t, {
-    Y: () => i
+    Y: () => l
 });
 var a = n(505779);
-let l = [a.V.OFFICIAL, a.V.FACEBOOK, a.V.TWITTER, a.V.INSTAGRAM, a.V.YOUTUBE, a.V.BLUESKY, a.V.REDDIT, a.V.TWITCH];
+let i = [a.V.OFFICIAL, a.V.FACEBOOK, a.V.TWITTER, a.V.INSTAGRAM, a.V.YOUTUBE, a.V.BLUESKY, a.V.REDDIT, a.V.TWITCH];
 
-function i(e) {
+function l(e) {
     return (e?.websites ?? []).filter(e => {
         let {
             category: t
         } = e;
-        return l.includes(t)
-    }).sort((e, t) => l.indexOf(e.category) - l.indexOf(t.category))
+        return i.includes(t)
+    }).sort((e, t) => i.indexOf(e.category) - i.indexOf(t.category))
 }

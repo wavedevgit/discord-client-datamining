@@ -3,8 +3,8 @@ n.d(t, {
     R: () => o
 });
 var a = n(627968),
-    l = n(64700),
-    i = n(951707),
+    i = n(64700),
+    l = n(951707),
     r = n(183802),
     s = n(244459);
 
@@ -13,7 +13,7 @@ function o(e) {
         skuIds: t,
         analyticsLocations: n,
         onCardClick: o
-    } = e, c = l.useMemo(() => {
+    } = e, c = i.useMemo(() => {
         if (null != o) return (e, t) => {
             let {
                 skuId: n,
@@ -22,7 +22,7 @@ function o(e) {
             e.preventDefault(), o(n, a)
         }
     }, [o]);
-    return null == t || 0 === t.length ? null : (0, a.jsx)(i.A, {
+    return null == t || 0 === t.length ? null : (0, a.jsx)(l.A, {
         gap: "md",
         children: t.map((e, t) => (0, a.jsx)("div", {
             className: s.B,

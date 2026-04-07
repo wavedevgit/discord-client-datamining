@@ -16,8 +16,8 @@ var l = n(503698),
     A = n(47167),
     _ = n(713654),
     m = n(769015),
-    p = n(508654),
-    g = n(974930),
+    g = n(508654),
+    p = n(974930),
     f = n(961314),
     x = n(58736),
     E = n(742589),
@@ -69,8 +69,8 @@ function w(e) {
             shouldShowHeaderParticipants: a = !0
         } = e,
         r = (0, b.$F)(s),
-        d = (0, p.Qs)(s.id),
-        u = null != d ? (0, g.G3)(d) : null,
+        d = (0, g.Qs)(s.id),
+        u = null != d ? (0, p.G3)(d) : null,
         h = null != d;
     if (l?.type === M.lp.ACTIVITY) null != n && (t = (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(x.Ay.Divider, {
@@ -121,8 +121,8 @@ function B(e) {
         appContext: d,
         inCall: c,
         isChatOpen: m,
-        exitFullScreen: p
-    } = e, g = (0, S.B)({
+        exitFullScreen: g
+    } = e, p = (0, S.B)({
         location: "channel_call_header_toolbar"
     }), {
         focusedParticipant: f
@@ -193,9 +193,9 @@ function B(e) {
                     appContext: d,
                     inCall: c,
                     isChatOpen: m,
-                    exitFullScreen: p,
+                    exitFullScreen: g,
                     focusedApplication: R,
-                    shouldShowHeaderParticipants: g
+                    shouldShowHeaderParticipants: p
                 }),
                 children: [(0, i.jsx)(x.Ay.Title, {
                     wrapperClassName: G.DD,
@@ -220,7 +220,7 @@ function B(e) {
                     focusedApplication: R,
                     focusedParticipant: f,
                     channel: t,
-                    shouldShowHeaderParticipants: !g
+                    shouldShowHeaderParticipants: !p
                 })]
             })
         }), (0, i.jsx)(N.A, {

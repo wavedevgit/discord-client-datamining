@@ -96,7 +96,7 @@ function T(e) {
                 trackingArea: u.kY.PLAY,
                 isDeadEnd: !0,
                 onClick: () => {
-                    d.A.launch({
+                    d.Ay.launch({
                         applicationId: h,
                         embedded: p
                     })

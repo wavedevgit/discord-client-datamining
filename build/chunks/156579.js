@@ -30,10 +30,10 @@ function A(e) {
             connectedActivity: t,
             activityPanelMode: r.Ay.getActivityPanelMode()
         }
-    }), p = (0, l.bG)([s.A], () => s.A.getWindowOpen(h.MLl.ACTIVITY_POPOUT));
+    }), g = (0, l.bG)([s.A], () => s.A.getWindowOpen(h.MLl.ACTIVITY_POPOUT));
     if (!(0, a.Gp)(A)) return null;
-    let g = _?.applicationId;
-    return m !== u.Gd.PANEL || null == g || p || null == A || null == _ || (0, d.A)(A) ? null : (0, i.jsx)(c.A, {
+    let p = _?.applicationId;
+    return m !== u.Gd.PANEL || null == p || g || null == A || null == _ || (0, d.A)(A) ? null : (0, i.jsx)(c.A, {
         maxHeight: t,
         connectedLocation: _.location,
         renderExternalHeader: n

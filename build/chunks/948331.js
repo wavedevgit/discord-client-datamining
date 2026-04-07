@@ -15,48 +15,48 @@ var i = n(627968),
     A = n(226017),
     _ = n(652215),
     m = n(788868),
-    p = n(985018),
-    g = n(707394),
+    g = n(985018),
+    p = n(707394),
     f = n(7410),
     x = n(936037);
 
 function E() {
     return (0, A.A)() ? (0, i.jsx)("div", {
-        className: g.do,
+        className: p.do,
         children: (0, i.jsxs)("div", {
-            className: g.U6,
+            className: p.U6,
             children: [(0, i.jsx)("img", {
                 src: f,
-                className: g.Sl,
+                className: p.Sl,
                 alt: ""
             }), (0, i.jsx)(o.Heading, {
-                className: g.wx,
+                className: p.wx,
                 variant: "heading-xl/semibold",
                 color: "text-default",
-                children: p.intl.string(p.t.erEf2g)
+                children: g.intl.string(g.t.erEf2g)
             }), (0, i.jsx)(a.EYj, {
                 variant: "text-md/medium",
                 color: "text-muted",
-                children: p.intl.string(p.t.NaRCXT)
+                children: g.intl.string(g.t.NaRCXT)
             })]
         })
     }) : (0, i.jsxs)("div", {
-        className: g.do,
+        className: p.do,
         children: [(0, i.jsxs)("div", {
-            className: g.U6,
+            className: p.U6,
             children: [(0, i.jsx)("img", {
                 src: x,
-                className: g.Sl,
+                className: p.Sl,
                 alt: ""
             }), (0, i.jsx)(o.Heading, {
-                className: g.wx,
+                className: p.wx,
                 variant: "heading-xl/semibold",
                 color: "text-default",
-                children: p.intl.string(p.t.w4DRbZ)
+                children: g.intl.string(g.t.w4DRbZ)
             }), (0, i.jsx)(a.EYj, {
                 variant: "text-md/medium",
                 color: "text-muted",
-                children: p.intl.string(p.t.F6u3E3)
+                children: g.intl.string(g.t.F6u3E3)
             })]
         }), (0, i.jsx)(I, {})]
     })
@@ -73,24 +73,24 @@ function I() {
                 ...t
             })
         }), []),
-        A = p.intl.format(p.t.qXh3fo, {
+        A = g.intl.format(g.t.qXh3fo, {
             nitroTierName: e,
             onClick: t
         });
     return (0, i.jsxs)("div", {
-        className: g.Zj,
+        className: p.Zj,
         children: [(0, i.jsx)(s.NitroWheelIcon, {
             size: "md",
             color: c.k0.PREMIUM_TIER_2
         }), (0, i.jsx)(a.EYj, {
             variant: "text-xs/medium",
             color: "text-strong",
-            className: g.tD,
+            className: p.tD,
             children: A
         }), (0, i.jsx)(u.A, {
-            className: g.Oy,
+            className: p.Oy,
             size: r.lO.TINY,
-            shinyButtonClassName: g.Oy,
+            shinyButtonClassName: p.Oy,
             subscriptionTier: m.pe.TIER_2,
             premiumModalAnalyticsLocation: {
                 section: _.JJy.FOR_LATER_POPOUT_UPSELL

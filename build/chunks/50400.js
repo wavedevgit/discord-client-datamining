@@ -15,8 +15,8 @@ var i = n(627968),
     A = n(47167),
     _ = n(598104),
     m = n(616356),
-    p = n(383501),
-    g = n(222823),
+    g = n(383501),
+    p = n(222823),
     f = n(309010),
     x = n(287809),
     E = n(607567),
@@ -169,8 +169,8 @@ class O extends l.PureComponent {
             unread: A,
             treeItemProps: m
         } = this.props, {
-            hovered: p,
-            animating: g
+            hovered: g,
+            animating: p
         } = this.state, f = e.isMultiUserDM() && null == e.icon, x = () => (0, i.jsx)(o.jlP, {
             to: b.BVt.CHANNEL(b.ME, e.id),
             onMouseEnter: () => this.setState({
@@ -179,7 +179,7 @@ class O extends l.PureComponent {
             onMouseLeave: () => this.setState({
                 hovered: !1
             }),
-            selected: n || p,
+            selected: n || g,
             ariaLabel: null != t ? [v.intl.formatToPlainString(v.t.hKarnZ, {
                 name: t,
                 mentions: l
@@ -199,9 +199,9 @@ class O extends l.PureComponent {
             style: this.getAnimatedStyle(),
             children: (0, i.jsxs)(T.c, {
                 children: [(0, i.jsx)(C.A, {
-                    hovered: !g && p,
-                    selected: !g && n,
-                    unread: !g && A,
+                    hovered: !p && g,
+                    selected: !p && n,
+                    unread: !p && A,
                     className: y.I
                 }), (0, i.jsx)(N.A, {
                     channel: e,
@@ -229,12 +229,12 @@ let L = l.forwardRef(function(e, t) {
     let n = e.channel.id,
         l = (0, A.Ay)(e.channel),
         s = (0, a.Vd)(n, 2),
-        d = (0, r.bG)([p.A], () => p.A.getChannelId(), []),
+        d = (0, r.bG)([g.A], () => g.A.getChannelId(), []),
         h = (0, r.bG)([c.A], () => c.A.getMode(n), [n]),
         _ = (0, r.bG)([m.A], () => m.A.getAllApplicationStreamsForChannel(n).length > 0),
         x = (0, r.bG)([E.Ay], () => E.Ay.getVoiceStatesForChannel(e.channel).length > 0, [e.channel]),
         I = (0, r.bG)([f.A], () => f.A.getChannelId(), []),
-        C = (0, r.bG)([g.Ay], () => g.Ay.getMentionCount(n), [n]),
+        C = (0, r.bG)([p.Ay], () => p.Ay.getMentionCount(n), [n]),
         N = d === n,
         {
             isIncomingCall: T,

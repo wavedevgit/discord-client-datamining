@@ -71,12 +71,12 @@ function I(e) {
                 }, {
                     text: E.intl.string(E.t.Fmjztz),
                     onClick: () => {
-                        u.A.toggleDetection(R), t.onClose()
+                        u.Ay.toggleDetection(R), t.onClose()
                     },
                     variant: "primary"
                 }]
             })
-        }) : u.A.toggleDetection(R)
+        }) : u.Ay.toggleDetection(R)
     }
     let F = null != D && (0, _.Es)(R) === (0, _.Es)(D),
         H = null != O && O.id === D?.id || F || null != j && j.some(e => e.id === D?.id);
@@ -110,7 +110,7 @@ function I(e) {
                     maxLength: 128,
                     value: k,
                     onBlur: function() {
-                        R.name !== k && u.A.editName(R, k)
+                        R.name !== k && u.Ay.editName(R, k)
                     },
                     onKeyDown: function(e) {
                         e.key === b.dh.ENTER && (e.currentTarget.blur(), e.preventDefault())
@@ -223,7 +223,7 @@ function I(e) {
                             className: C.ym,
                             onClick: () => {
                                 var t;
-                                return t = !e, void u.A.toggleOverlay(R, t, t)
+                                return t = !e, void u.Ay.toggleOverlay(R, t, t)
                             },
                             children: n
                         })
@@ -232,8 +232,8 @@ function I(e) {
             }(), l && !f || H ? null : (0, i.jsx)(m.A, {
                 className: C.LS,
                 onClick: function() {
-                    u.A.deleteEntry(R), j?.forEach(e => {
-                        u.A.deleteEntry(e)
+                    u.Ay.deleteEntry(R), j?.forEach(e => {
+                        u.Ay.deleteEntry(e)
                     })
                 }
             })]

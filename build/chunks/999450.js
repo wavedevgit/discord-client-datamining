@@ -1,10 +1,10 @@
 /** chunk id: 999450 params = (module,exports,require) **/
 n.d(t, {
-    A: () => f
+    A: () => h
 });
 var a = n(627968),
-    l = n(64700),
-    i = n(793574),
+    i = n(64700),
+    l = n(793574),
     r = n(688810),
     s = n(44724),
     o = n(317560),
@@ -13,42 +13,42 @@ var a = n(627968),
     u = n(305080),
     m = n(954506),
     x = n(652215),
-    h = n(985018);
+    g = n(985018);
 
-function f(e) {
+function h(e) {
     let {
         trackAction: t
     } = e, {
         socialLayerStorefrontRecommendationsData: n,
-        closeModal: f
+        closeModal: h
     } = (0, u.c)(), {
-        analyticsLocations: p
-    } = (0, r.Ay)([i.A.GAME_PROFILE]), g = l.useCallback(() => {
-        n?.guildId != null && (t(d.Ws.GameShop), f(), (0, s.default)({
+        analyticsLocations: f
+    } = (0, r.Ay)([l.A.GAME_PROFILE]), p = i.useCallback(() => {
+        n?.guildId != null && (t(d.Ws.GameShop), h(), (0, s.default)({
             guildId: n.guildId
         }))
-    }, [n, t, f]), _ = l.useCallback((e, a) => {
-        let l = n?.guildId;
-        null != l && (t(d.Ws.GameShopItem), (0, o.R)({
+    }, [n, t, h]), _ = i.useCallback((e, a) => {
+        let i = n?.guildId;
+        null != i && (t(d.Ws.GameShopItem), (0, o.R)({
             skuId: e,
             applicationId: a,
             isStorefront: !1,
-            analyticsLocations: p,
+            analyticsLocations: f,
             onClose: () => {
-                location.pathname.indexOf(x.BVt.CHANNELS_GAME_SHOP(l)) >= 0 && f()
+                location.pathname.indexOf(x.BVt.CHANNELS_GAME_SHOP(i)) >= 0 && h()
             }
         }))
-    }, [t, f, p, n]);
+    }, [t, h, f, n]);
     if (null == n) return null;
     let {
         skuIds: v
     } = n;
     return (0, a.jsx)(m.A, {
-        title: h.intl.string(h.t.WDdlUb),
-        onClickViewAll: g,
+        title: g.intl.string(g.t.WDdlUb),
+        onClickViewAll: p,
         children: (0, a.jsx)(c.R, {
             skuIds: v,
-            analyticsLocations: p,
+            analyticsLocations: f,
             onCardClick: _
         })
     })

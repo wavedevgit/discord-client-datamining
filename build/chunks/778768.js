@@ -15,8 +15,8 @@ var i = n(627968),
     A = n(846293),
     _ = n(774300),
     m = n(566903),
-    p = n(714114),
-    g = n(864436),
+    g = n(714114),
+    p = n(864436),
     f = n(835072),
     x = n(793574),
     E = n(688810),
@@ -55,7 +55,7 @@ function V(e) {
         guildId: t.guild_id,
         location: "VoiceInviteSuggestionsPopover"
     }), {
-        analyticsLocations: p
+        analyticsLocations: g
     } = (0, E.Ay)(x.A.VOICE_INVITE_SUGGESTIONS_POPOVER);
     (0, I.A)({
         name: d.ImpressionNames.VOICE_INVITE_SUGGESTIONS_POPOVER,
@@ -63,14 +63,14 @@ function V(e) {
         properties: {
             voice_channel_id: t.id,
             voice_guild_id: t.guild_id,
-            location_stack: p
+            location_stack: g
         }
     }), l.useEffect(() => {
         r?.(u.current)
     }, [r]), l.useEffect(() => {
         s?.(A.isHoveringOrFocusing)
     }, [s, A]);
-    let g = l.useCallback(() => {
+    let p = l.useCallback(() => {
         let e = j.A.getGuild(t.guild_id);
         o()(null != e, "VoiceInviteSuggestionsPopover must be used in context of a guild"), (0, h.mMO)(async () => {
             let {
@@ -103,7 +103,7 @@ function V(e) {
                     ringingEnabled: m
                 }, e.id)), (0, i.jsxs)(h.DUT, {
                     tag: "li",
-                    onClick: g,
+                    onClick: p,
                     className: a()(P.nM, P.vk),
                     children: [(0, i.jsx)("div", {
                         className: P.R4,
@@ -160,7 +160,7 @@ function H(e) {
         }
     }, [K]), {
         voiceChannel: q
-    } = (0, p.A)({
+    } = (0, g.A)({
         userId: n.id
     }), X = (0, C.Ay)(q), $ = (0, h.S31)(h.clD.ONLINE), Q = "success" === E || "sending" === E, J = l.useCallback(e => {
         e.stopPropagation(), k || H()
@@ -240,7 +240,7 @@ function H(e) {
                     color: $,
                     channel: q,
                     className: P.RI
-                }) : null != z ? (0, i.jsx)(g.A, {
+                }) : null != z ? (0, i.jsx)(p.A, {
                     icon: z,
                     className: P.RI
                 }) : null, (0, i.jsx)(h.Text, {

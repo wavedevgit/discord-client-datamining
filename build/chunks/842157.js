@@ -192,7 +192,7 @@ function U(e) {
             trackingArea: h.kY.JOIN,
             submitting: ep,
             onClick: () => {
-                u.A.join({
+                u.Ay.join({
                     userId: t.author.id,
                     sessionId: V.session_id,
                     applicationId: V.application_id,

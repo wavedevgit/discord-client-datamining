@@ -16,8 +16,8 @@ var i = n(627968),
     A = n(157559),
     _ = n(827343),
     m = n(830215),
-    p = n(503703),
-    g = n(912851),
+    g = n(503703),
+    p = n(912851),
     f = n(169604),
     x = n(956793),
     E = n(785796),
@@ -70,8 +70,8 @@ var i = n(627968),
     eA = n(383501),
     e_ = n(967198),
     em = n(287809),
-    ep = n(67480),
-    eg = n(147964),
+    eg = n(67480),
+    ep = n(147964),
     ef = n(519057),
     ex = n(954571),
     eE = n(975571),
@@ -175,7 +175,7 @@ function eL(e) {
 }
 
 function eM(e) {
-    g.A.dismiss(null != e ? {
+    p.A.dismiss(null != e ? {
         untilAtLeast: a()(e)
     } : void 0)
 }
@@ -188,18 +188,18 @@ let eD = l.memo(function() {
         } = (0, y.Ay)(),
         o = (0, T.Ay)(),
         d = (0, F.H)(t),
-        g = (0, Z.V)();
+        p = (0, Z.V)();
     if (l.useEffect(() => {
             if (s?.type != null) {
                 let e;
-                if (null == g && (s.type === eC.kqX.PREMIUM_TIER_2_TRIAL_ENDING || s.type === eC.kqX.PREMIUM_TIER_0_TRIAL_ENDING)) return;
+                if (null == p && (s.type === eC.kqX.PREMIUM_TIER_2_TRIAL_ENDING || s.type === eC.kqX.PREMIUM_TIER_0_TRIAL_ENDING)) return;
                 let n = {};
-                null != t && (n.guild_id = t), g?.trial_id != null && (n.trial_id = g.trial_id), e = {
+                null != t && (n.guild_id = t), p?.trial_id != null && (n.trial_id = p.trial_id), e = {
                     notice_type: s.type,
                     ...n
                 }, ex.default.track(eC.HAw.APP_NOTICE_VIEWED, e)
             }
-        }, [s?.type, t, g]), l.useEffect(() => {
+        }, [s?.type, t, p]), l.useEffect(() => {
             if (null != s && s.type === eC.kqX.SURVEY && null != s.metadata) {
                 let {
                     metadata: e
@@ -502,7 +502,7 @@ let eD = l.memo(function() {
             if (null == s.metadata) return null;
             let {
                 skuId: eG, applicationId: eP
-            } = s.metadata, ek = ep.A.get(eG), ew = j.A.getApplication(eP);
+            } = s.metadata, ek = eg.A.get(eG), ew = j.A.getApplication(eP);
             if (null == ek || null == ew) return null;
             let eB = {
                 page: eC.liQ.IN_APP
@@ -510,7 +510,7 @@ let eD = l.memo(function() {
             return (0, i.jsxs)(h.$Td, {
                 color: h.Hv$.PREMIUM_TIER_1,
                 children: [(0, i.jsx)(h.PMB, {
-                    onClick: () => p.X(ek.id),
+                    onClick: () => g.X(ek.id),
                     noticeType: eC.kqX.DETECTED_OFF_PLATFORM_PREMIUM_PERK
                 }), (0, i.jsx)(h.tvc, {
                     size: "md",
@@ -535,7 +535,7 @@ let eD = l.memo(function() {
                         analyticsLocations: a,
                         analyticsLocationObject: eB,
                         context: __OVERLAY__ ? eC.BRT.OVERLAY : eC.BRT.APP
-                    }).then(() => p.X(ek.id)),
+                    }).then(() => g.X(ek.id)),
                     children: ev.intl.string(ev.t.KEwPYx)
                 })]
             });
@@ -544,7 +544,7 @@ let eD = l.memo(function() {
             let {
                 skuId: e,
                 applicationId: t
-            } = s.metadata, n = ep.A.get(e), l = j.A.getApplication(t);
+            } = s.metadata, n = eg.A.get(e), l = j.A.getApplication(t);
             if (null == n || null == l) return null;
             return (0, i.jsxs)(h.$Td, {
                 color: h.Hv$.PREMIUM_TIER_1,
@@ -681,7 +681,7 @@ let eD = l.memo(function() {
             });
         case eC.kqX.APPLICATION_TEST_MODE:
             if (null == s.metadata) return null;
-            if (null != eg.A.testModeEmbeddedApplicationId) return (0, i.jsx)(h.$Td, {
+            if (null != ep.A.testModeEmbeddedApplicationId) return (0, i.jsx)(h.$Td, {
                 color: h.Hv$.WARNING,
                 children: (0, i.jsxs)(O.A, {
                     justify: O.A.Justify.CENTER,

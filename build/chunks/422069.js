@@ -1,10 +1,10 @@
 /** chunk id: 422069 params = (module,exports,require) **/
 n.d(t, {
-    A: () => h
+    A: () => g
 });
 var a = n(311907),
-    l = n(73153);
-let i = {},
+    i = n(73153);
+let l = {},
     r = {},
     s = {},
     o = {},
@@ -15,7 +15,7 @@ let i = {},
 class x extends a.Ay.Store {
     static displayName = "GameProfileStore";
     getSimilarGames(e) {
-        return i[e]
+        return l[e]
     }
     getSimilarGamesError(e) {
         return r[e]
@@ -39,13 +39,13 @@ class x extends a.Ay.Store {
         return m[e] ?? !1
     }
 }
-let h = new x(l.h, {
+let g = new x(i.h, {
     GAME_PROFILE_GET_SIMILAR_GAMES_SUCCESS: function(e) {
         let {
             applicationId: t,
             games: n
         } = e;
-        i[t] = n
+        l[t] = n
     },
     GAME_PROFILE_GET_SIMILAR_GAMES_ERROR: function(e) {
         let {
@@ -84,12 +84,12 @@ let h = new x(l.h, {
             gameId: t,
             messages: n,
             channelId: a,
-            guildId: l
+            guildId: i
         } = e;
         d[t] = {
             messages: n,
             channelId: a,
-            guildId: l
+            guildId: i
         }, u[t] = !0, m[t] = !1
     },
     GAME_PROFILE_GET_ANNOUNCEMENTS_ERROR: function(e) {

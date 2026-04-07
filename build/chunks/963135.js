@@ -1,6 +1,6 @@
 /** chunk id: 963135 params = (module,exports,require) **/
 a.d(t, {
-    A: () => u
+    A: () => p
 });
 var n = a(627968),
     r = a(64700),
@@ -11,12 +11,12 @@ var n = a(627968),
     s = a(342296),
     _ = a(589022),
     d = a(287809),
-    p = a(2398);
-let u = function(e) {
+    u = a(2398);
+let p = function(e) {
     let {
         user: t,
         guildId: a
-    } = e, u = (0, o.bG)([d.default], () => d.default.getCurrentUser()), m = r.useRef(null), {
+    } = e, p = (0, o.bG)([d.default], () => d.default.getCurrentUser()), m = r.useRef(null), {
         isHovered: b,
         onMouseEnter: f,
         onMouseLeave: C,
@@ -26,19 +26,19 @@ let u = function(e) {
             userId: t.id,
             guildId: a
         })
-    }, [t.id, a, g]), v = r.useCallback(e => null == u ? null : (0, n.jsx)("div", {
+    }, [t.id, a, g]), v = r.useCallback(e => null == p ? null : (0, n.jsx)("div", {
         onMouseEnter: f,
         onMouseLeave: C,
         children: (0, n.jsx)(_.A, {
             ...e,
             user: t,
-            currentUser: u,
+            currentUser: p,
             guildId: a,
             closePopout: () => {
                 e.closePopout(), g(!1)
             }
         })
-    }), [t, u, a, f, C, g]);
+    }), [t, p, a, f, C, g]);
     return (0, n.jsx)(s.A, {
         targetElementRef: m,
         user: t,
@@ -55,7 +55,7 @@ let u = function(e) {
             return (0, n.jsx)(i.DUT, {
                 ...o,
                 innerRef: m,
-                className: p.RB,
+                className: u.RB,
                 onMouseEnter: f,
                 onMouseLeave: C,
                 onClick: h,

@@ -1,7 +1,7 @@
 /** chunk id: 814249 params = (module,exports,require) **/
 n.d(t, {
-    K: () => p,
-    default: () => g
+    K: () => g,
+    default: () => p
 });
 var i = n(627968),
     l = n(64700),
@@ -24,10 +24,10 @@ function m(e) {
         transitionState: c
     } = e, {
         getSurveyResponses: m,
-        setResponse: p,
-        trackDisplayedQuestions: g
+        setResponse: g,
+        trackDisplayedQuestions: p
     } = (0, d.i)(), f = m(t), x = (0, u.i)(n), [E, I] = l.useState(x.blockId), [C, N] = l.useState(x.pageIndex), [T, S] = l.useState(!1), b = (e, n) => {
-        p(t, e, n)
+        g(t, e, n)
     }, v = l.useCallback(() => (T ? a() : (0, r.qfG)(e => (0, i.jsx)(s.Modal, {
         title: A.intl.string(A.t.T9Sx3z),
         actions: [{
@@ -57,8 +57,8 @@ function m(e) {
             pageIndex: C,
             responses: f
         });
-        g(t, y), e.isComplete && o.Ay.submitSurveyResponse(t, f), I(e.blockId), N(e.pageIndex), S(e.isComplete)
-    }, [n, E, C, f, t, y, g]);
+        p(t, y), e.isComplete && o.Ay.submitSurveyResponse(t, f), I(e.blockId), N(e.pageIndex), S(e.isComplete)
+    }, [n, E, C, f, t, y, p]);
     l.useEffect(() => {
         0 === y.length && j()
     }, [y, j]);
@@ -120,7 +120,7 @@ function m(e) {
         })
     })
 }
-async function p(e) {
+async function g(e) {
     null != await o.Ay.fetchSurveyDetails(e) && (d.i.getState().clearSurveyResponses(e), (0, r.mMO)(async () => {
         let {
             default: t
@@ -134,7 +134,7 @@ async function p(e) {
     }))
 }
 
-function g(e) {
+function p(e) {
     let {
         surveyId: t,
         onClose: n,

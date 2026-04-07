@@ -15,8 +15,8 @@ var i = n(627968),
     A = n(183555),
     _ = n(950191),
     m = n(657331),
-    p = n(718019),
-    g = n(31432),
+    g = n(718019),
+    p = n(31432),
     f = n(915614),
     x = n(389996),
     E = n(743987),
@@ -74,7 +74,7 @@ function O(e) {
                             displayProfile: L,
                             themeType: v.d.SIDEBAR,
                             animateOnHoverOrFocusOnly: !P
-                        }), (0, i.jsx)(p.A, {
+                        }), (0, i.jsx)(g.A, {
                             user: t,
                             displayProfile: L,
                             channelId: n.id,
@@ -89,7 +89,7 @@ function O(e) {
                             nickname: h.Ay.getName(null, n.id, t),
                             pronouns: L?.pronouns,
                             onOpenProfile: O ? void 0 : w,
-                            tags: (0, i.jsx)(g.A, {
+                            tags: (0, i.jsx)(p.A, {
                                 displayProfile: L,
                                 themeType: v.d.SIDEBAR
                             })

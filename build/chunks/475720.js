@@ -4,23 +4,23 @@ t.d(i, {
 });
 var l = t(627968),
     s = t(64700),
-    a = t(397927),
-    n = t(9578),
+    n = t(397927),
+    a = t(9578),
     r = t(573648),
     o = t(954571),
     d = t(652215),
     c = t(139616);
 let u = {
-    [d.fg2.TWITCH]: a.aWO,
-    [d.fg2.YOUTUBE]: a.CiD,
-    [d.fg2.TWITTER]: a.p3p,
-    [d.fg2.TWITTER_LEGACY]: a.p3p,
-    [d.fg2.FACEBOOK]: a.Zc1,
-    [d.fg2.INSTAGRAM]: a.LyU,
-    [d.fg2.REDDIT]: a.T1e,
-    [d.fg2.TIKTOK]: a.Xsb,
-    [d.fg2.SPOTIFY]: a.L5T,
-    [d.fg2.BLUESKY]: a.akf
+    [d.fg2.TWITCH]: n.aWO,
+    [d.fg2.YOUTUBE]: n.CiD,
+    [d.fg2.TWITTER]: n.p3p,
+    [d.fg2.TWITTER_LEGACY]: n.p3p,
+    [d.fg2.FACEBOOK]: n.Zc1,
+    [d.fg2.INSTAGRAM]: n.LyU,
+    [d.fg2.REDDIT]: n.T1e,
+    [d.fg2.TIKTOK]: n.Xsb,
+    [d.fg2.SPOTIFY]: n.L5T,
+    [d.fg2.BLUESKY]: n.akf
 };
 
 function m(e) {
@@ -33,7 +33,7 @@ function m(e) {
         social_platform: m?.type,
         social_platform_url: i
     }), null), [t.code, t.guild?.id, m, i]);
-    return (0, l.jsx)(n.A, {
+    return (0, l.jsx)(a.A, {
         href: i,
         trusted: null != m,
         useDefaultUnderlineStyles: !1,
@@ -41,11 +41,11 @@ function m(e) {
         children: null != _ ? (0, l.jsx)(_, {
             className: c.zg,
             size: "xs",
-            color: a.LU0.colors.ICON_MUTED,
+            color: n.LU0.colors.ICON_MUTED,
             "aria-hidden": !0
-        }) : (0, l.jsx)(a.L_e, {
+        }) : (0, l.jsx)(n.L_e, {
             className: c.zg,
-            color: a.LU0.colors.ICON_MUTED,
+            color: n.LU0.colors.ICON_MUTED,
             width: 16,
             height: 16,
             size: "custom"

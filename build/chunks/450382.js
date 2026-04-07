@@ -4,8 +4,8 @@ t.d(i, {
 });
 var l = t(627968),
     s = t(64700),
-    a = t(991660),
-    n = t(311907),
+    n = t(991660),
+    a = t(311907),
     r = t(397927),
     o = t(565645),
     d = t(59520),
@@ -19,7 +19,7 @@ var l = t(627968),
 function g(e) {
     let {
         categoryIds: i
-    } = e, t = (0, n.yK)([c.A], () => i.map(e => c.A.getCategoryName(e)));
+    } = e, t = (0, a.yK)([c.A], () => i.map(e => c.A.getCategoryName(e)));
     return (0, l.jsxs)("div", {
         className: x.Ff,
         children: [(0, l.jsx)(r.Heading, {
@@ -108,11 +108,11 @@ function A(e) {
     let {
         invite: i,
         guild: t,
-        discoveryGuild: n,
+        discoveryGuild: a,
         scrollableSectionClassName: o,
         expanded: c,
         setExpanded: m
-    } = e, g = null != m, A = n?.about != null && "" !== n.about || n?.reasons_to_join != null && n.reasons_to_join.length > 0, E = s.useCallback((e, i) => {
+    } = e, g = null != m, A = a?.about != null && "" !== a.about || a?.reasons_to_join != null && a.reasons_to_join.length > 0, E = s.useCallback((e, i) => {
         u.default.track(_.HAw.INVITE_ACCEPT_DETAILS_VIEWED, {
             guild_id: i,
             invite_code: e,
@@ -123,7 +123,7 @@ function A(e) {
     }), v = s.useCallback(() => {
         j(i.code, t.id)
     }, [i.code, t.id, j]);
-    return A ? (0, l.jsx)(a.A, {
+    return A ? (0, l.jsx)(n.A, {
         className: o,
         gradientClassName: x.wH,
         onScroll: v,
@@ -156,7 +156,7 @@ function A(e) {
                 children: (0, l.jsxs)("div", {
                     className: x.Cz,
                     children: [(0, l.jsx)(p, {
-                        discoveryGuild: n,
+                        discoveryGuild: a,
                         invite: i
                     }), c && g && (0, l.jsxs)(r.BJc, {
                         direction: "horizontal",

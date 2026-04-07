@@ -1,6 +1,6 @@
 /** chunk id: 170428 params = (module,exports,require) **/
 n.d(t, {
-    A: () => g
+    A: () => p
 });
 var i = n(627968),
     l = n(64700),
@@ -15,12 +15,12 @@ var i = n(627968),
     A = n(652215),
     _ = n(486974),
     m = n(985018),
-    p = n(641131);
+    g = n(641131);
 
-function g(e) {
+function p(e) {
     let {
         channel: t
-    } = e, n = l.useContext(h.AnalyticsContext), g = (0, d.aL)(), f = m.intl.string(p.default["Beo/7v"]), {
+    } = e, n = l.useContext(h.AnalyticsContext), p = (0, d.aL)(), f = m.intl.string(g.default["Beo/7v"]), {
         firstMessage: x
     } = (0, a.OA)(t), E = x?.messageSnapshots?.[0], I = E?.moderatorReport?.reported_user_id;
     return t.isModeratorReportChannel() && null != I ? (0, i.jsx)(o.Ay.Icon, {
@@ -28,7 +28,7 @@ function g(e) {
             (0, u.iN)(t.id), (0, c.A)(), (0, r.z)(t.guild_id, I, t.id, {
                 modViewPanel: _.g.INFO,
                 sourceLocation: location ?? n.location
-            }), g.dispatch(A.jej.POPOUT_CLOSE)
+            }), p.dispatch(A.jej.POPOUT_CLOSE)
         },
         tooltip: f,
         icon: s.quN,

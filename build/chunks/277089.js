@@ -3,8 +3,8 @@ n.d(t, {
     A: () => o
 });
 var a = n(64700),
-    l = n(505779),
-    i = n(311907),
+    i = n(505779),
+    l = n(311907),
     r = n(970163),
     s = n(184989);
 let o = function(e, t) {
@@ -12,12 +12,12 @@ let o = function(e, t) {
     a.useEffect(() => {
         d.current = t
     }, [t]);
-    let u = (0, i.bG)([s.A], () => n?.guild?.id != null && s.A.isMember(n?.guild?.id)),
+    let u = (0, l.bG)([s.A], () => n?.guild?.id != null && s.A.isMember(n?.guild?.id)),
         m = a.useMemo(() => e?.websites?.find(e => {
             let {
                 category: t
             } = e;
-            return t === l.V.DISCORD
+            return t === i.V.DISCORD
         }), [e?.websites]);
     return a.useEffect(() => {
         let e = async e => {

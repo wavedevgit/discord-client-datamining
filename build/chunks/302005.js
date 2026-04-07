@@ -5,8 +5,8 @@ n.d(t, {
 var l = n(311907),
     s = n(554146),
     i = n(192308),
-    a = n(826673),
-    r = n(932001),
+    r = n(826673),
+    a = n(932001),
     o = n(309010),
     u = n(93055),
     c = n(652215);
@@ -19,11 +19,11 @@ function A(e) {
         isTargetInViewport: c = !0,
         channelType: A,
         isPopoverAllowed: m = !0
-    } = e, E = (0, a.JZ)(s.M.FAVORITES_SERVER_ONBOARDING_INTRO), {
-        isExperimentEnabled: _
-    } = (0, u.TW)(t), f = (0, l.bG)([o.A], () => null != o.A.getVoiceChannelId()), N = (0, i.useHasAnyModalOpen)(), T = _ && c && n && d.has(A) && m && !f && !N, [p, h] = (0, r.kn)(T && E ? [s.M.FAVORITES_SERVER_ONBOARDING_MENU_ITEM] : []);
+    } = e, E = (0, r.JZ)(s.M.FAVORITES_SERVER_ONBOARDING_INTRO), {
+        isExperimentEnabled: f
+    } = (0, u.TW)(t), _ = (0, l.bG)([o.A], () => null != o.A.getVoiceChannelId()), N = (0, i.useHasAnyModalOpen)(), T = f && c && n && d.has(A) && m && !_ && !N, [p, g] = (0, a.kn)(T && E ? [s.M.FAVORITES_SERVER_ONBOARDING_MENU_ITEM] : []);
     return {
         showMenuItemPopover: p === s.M.FAVORITES_SERVER_ONBOARDING_MENU_ITEM,
-        markMenuItemPopoverAsDismissed: h
+        markMenuItemPopoverAsDismissed: g
     }
 }

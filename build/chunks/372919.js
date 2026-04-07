@@ -154,7 +154,7 @@ let V = {
                 errorCode: U.Lw6.INVALID_COMMAND
             }, "No application.");
             let c = Promise.resolve(!1);
-            return n === U.xL.JOIN && (c = d.A.join({
+            return n === U.xL.JOIN && (c = d.Ay.join({
                 userId: i,
                 sessionId: r,
                 applicationId: o,

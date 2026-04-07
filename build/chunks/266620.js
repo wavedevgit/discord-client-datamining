@@ -17,8 +17,8 @@ var n = a(627968),
     s = a(397927),
     _ = a(672477),
     d = a(982406),
-    p = a(458517),
-    u = a(713021),
+    u = a(458517),
+    p = a(713021),
     m = a(121489),
     b = a(734057),
     f = a(644447),
@@ -65,9 +65,9 @@ function S(e) {
         } = _.Q.useConfig({
             location: "VideoComponentForMessageAttachment"
         }),
-        p = (0, o.Lt)(t.flags ?? 0, v.sbO.IS_CLIP),
-        u = (0, i.bG)([b.A], () => b.A.getBasicChannel(e.message.channel_id)?.guild_id),
-        m = r.useCallback(() => !p || a ? null : (0, n.jsx)(l.m, {
+        u = (0, o.Lt)(t.flags ?? 0, v.sbO.IS_CLIP),
+        p = (0, i.bG)([b.A], () => b.A.getBasicChannel(e.message.channel_id)?.guild_id),
+        m = r.useCallback(() => !u || a ? null : (0, n.jsx)(l.m, {
             text: x.intl.string(x.t["/fgfWh"]),
             children: (0, n.jsxs)("div", {
                 className: I.M,
@@ -80,12 +80,12 @@ function S(e) {
                     children: x.intl.string(x.t.oA4afG)
                 })]
             })
-        }), [p, a]),
+        }), [u, a]),
         f = C.A.toURLSafe(t.proxy_url);
-    return null == f ? null : (f.searchParams.append("format", "webp"), p && a) ? (0, n.jsx)(d.A, {
+    return null == f ? null : (f.searchParams.append("format", "webp"), u && a) ? (0, n.jsx)(d.A, {
         attachment: t,
         posterUrl: f.toString(),
-        guildId: u,
+        guildId: p,
         className: e.className
     }) : (0, h.$o)({
         ...e,
@@ -124,7 +124,7 @@ function B(e) {
     let {
         message: t,
         item: a
-    } = e, n = a.originalItem, o = (0, u.dx)(u.k0.VOICE_MESSAGE, n.id), i = r.useCallback((e, a, r) => {
+    } = e, n = a.originalItem, o = (0, p.dx)(p.k0.VOICE_MESSAGE, n.id), i = r.useCallback((e, a, r) => {
         (0, m.wQ)(t.id, n.duration_secs ?? null, a, t.author.id)
     }, [t, n.duration_secs]), c = r.useCallback((e, a) => {
         (0, m.dP)(t.id, n.duration_secs ?? null, e, t.author.id, a)
@@ -188,7 +188,7 @@ function j(e) {
         title: s,
         application: _
     } = t;
-    return (0, n.jsx)(p.A, {
+    return (0, n.jsx)(u.A, {
         createdAt: null != c ? Date.parse(c) : void 0,
         participantIds: l?.map(e => {
             let {

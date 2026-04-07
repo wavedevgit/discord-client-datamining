@@ -78,13 +78,13 @@ let _ = function(e) {
         showHeader: _ = !0
     } = e, m = (0, l.bG)([c.default], () => null != s ? c.default.getUser(s) : null, [s]);
     if (null == m) return null;
-    let p = (0, u.Gf)(m.id, n, o);
+    let g = (0, u.Gf)(m.id, n, o);
     return (0, i.jsxs)("div", {
-        children: [p.isSpotify ? (0, i.jsx)(u.vP, {
-            resolvedActivity: p,
+        children: [g.isSpotify ? (0, i.jsx)(u.vP, {
+            resolvedActivity: g,
             showHeader: _
         }) : (0, i.jsx)(A, {
-            resolvedActivity: p,
+            resolvedActivity: g,
             showHeader: _
         }), (0, i.jsx)(r.A, {
             type: null != d ? a.M.STREAM_PREVIEW : a.M.VOICE_CHANNEL,

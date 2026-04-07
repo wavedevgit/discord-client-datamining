@@ -12,8 +12,8 @@ var r = a(503698),
     s = a(397927),
     _ = a(429913),
     d = a(885151),
-    p = a(409626),
-    u = a(692969),
+    u = a(409626),
+    p = a(692969),
     m = a(287809),
     b = a(405269),
     f = a(403362),
@@ -28,11 +28,11 @@ function x(e) {
         separator: a
     } = e, r = (0, _.h)(t), {
         data: o
-    } = (0, d.k)(t), i = (0, u.A)({
+    } = (0, d.k)(t), i = (0, p.A)({
         applicationId: t,
         location: "ClipEmbed",
-        source: p.Ob.ClipEmbed
-    }), c = o?.supplementalData?.name ?? r?.name;
+        source: u.Ob.ClipEmbed
+    }), c = o?.name ?? r?.name;
     return null == c ? null : null != i ? (0, n.jsxs)(n.Fragment, {
         children: [(0, n.jsx)(s.DUT, {
             tag: "span",
@@ -51,12 +51,12 @@ let I = function(e) {
         applicationId: r,
         title: _,
         guildId: d,
-        playerState: p = c.Q6.PAUSED,
-        isControlBarExpanded: u = !0
+        playerState: u = c.Q6.PAUSED,
+        isControlBarExpanded: p = !0
     } = e, I = (0, i.yK)([m.default], () => a.map(e => m.default.getUser(e)).filter(f.Vq) ?? []), y = null != t ? (0, b.Fe)(new Date(t)) : null;
     return (0, n.jsxs)("div", {
         className: o()(v.oK, {
-            [v.pd]: p === c.Q6.PLAYING && !u
+            [v.pd]: u === c.Q6.PLAYING && !p
         }),
         children: [(0, n.jsx)("div", {
             className: v.Lu

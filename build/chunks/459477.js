@@ -11,7 +11,7 @@ let o = t => {
     let {
         transitionState: a,
         onClose: e,
-        detectedGame: o,
+        game: o,
         websiteButtons: c,
         trackAction: u
     } = t, d = (0, l.A)(), p = n.useMemo(() => c.map(t => ({

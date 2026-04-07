@@ -4,8 +4,8 @@ t.d(i, {
 });
 var l = t(627968),
     s = t(64700),
-    a = t(110259),
-    n = t(158954),
+    n = t(110259),
+    a = t(158954),
     r = t(417597),
     o = t(397927),
     d = t(890698),
@@ -23,8 +23,8 @@ var l = t(627968),
     v = t(287809),
     I = t(954571),
     f = t(486020),
-    T = t(723702),
-    C = t(837921),
+    C = t(723702),
+    T = t(837921),
     y = t(260451),
     D = t(972387),
     N = t(539895),
@@ -41,7 +41,7 @@ function R(e) {
     } = (0, h.Ay)(_.A.INVITE_MODAL);
     return (0, l.jsx)(h.f5, {
         value: t,
-        children: (0, l.jsx)(n.Modal, {
+        children: (0, l.jsx)(a.Modal, {
             "aria-label": S.intl.string(S.t.u9zxnX),
             title: S.intl.string(S.t.u9zxnX),
             subtitle: S.intl.string(S.t.FWkU6P),
@@ -86,7 +86,7 @@ function G(e) {
         }),
         K = J ? w : null;
     s.useEffect(() => {
-        !__OVERLAY__ && T.isPlatformEmbedded && ((0, T.isWindows)() ? C.Ay.minimize() : C.Ay.restore(), C.Ay.focus())
+        !__OVERLAY__ && C.isPlatformEmbedded && ((0, C.isWindows)() ? T.Ay.minimize() : T.Ay.restore(), T.Ay.focus())
     }, []), (0, u.Ay)(() => {
         I.default.track(L.HAw.OPEN_MODAL, {
             type: "Accept Invite",
@@ -127,7 +127,7 @@ function G(e) {
         channel: et,
         inviter: el,
         target_application: es
-    } = P, ea = null == P.guild && null == P.channel && null != el, en = null != ei;
+    } = P, en = null == P.guild && null == P.channel && null != el, ea = null != ei;
     if (null != es) i = ei?.name, t = E.Ay.createFromServer(es).getCoverImageURL(1024);
     else if (null != ei) i = ei.name, t = f.Ay.getGuildSplashURL({
         id: ei.id,
@@ -135,18 +135,18 @@ function G(e) {
     });
     else if ((null == (i = et.name) || "" === i) && null != el && (i = el.username), null == i) throw Error("no name for group DM invite");
     let er = (0, A.Sn)();
-    if (G = ea ? S.intl.string(S.t["e/6Ogt"]) : S.intl.format(S.t["9sWQNT"], {
+    if (G = en ? S.intl.string(S.t["e/6Ogt"]) : S.intl.format(S.t["9sWQNT"], {
             usernameHook: () => (0, l.jsx)("span", {
                 children: F
             })
-        }), B) return (0, l.jsx)(n.dWK, {
+        }), B) return (0, l.jsx)(a.dWK, {
         size: "md",
         "aria-labelledby": Z,
         transitionState: O,
         onClose: () => (ee(), Promise.resolve()),
         children: (0, l.jsx)("div", {
             className: U.g4,
-            children: (0, l.jsx)(n.y$y, {})
+            children: (0, l.jsx)(a.y$y, {})
         })
     });
     if (H && null != ei) return (0, l.jsx)(h.f5, {
@@ -188,7 +188,7 @@ function G(e) {
         })
     }) : (0, l.jsx)(h.f5, {
         value: q,
-        children: (0, l.jsx)(n.dWK, {
+        children: (0, l.jsx)(a.dWK, {
             size: null != t ? "xl" : "sm",
             "aria-labelledby": Z,
             "aria-label": ei?.name ?? et?.name ?? "",
@@ -196,7 +196,7 @@ function G(e) {
             onClose: () => (ee(), Promise.resolve()),
             trackingProps: {
                 impression: {
-                    impressionName: a.ImpressionNames.INVITE_ACCEPT,
+                    impressionName: n.ImpressionNames.INVITE_ACCEPT,
                     impressionProperties: {
                         guild_id: ei?.id,
                         invite_code: P.code
@@ -213,14 +213,14 @@ function G(e) {
                             id: Z,
                             children: (0, l.jsx)(d.A, {
                                 invite: P,
-                                disableUser: en,
+                                disableUser: ea,
                                 error: M
                             })
                         }), (0, l.jsxs)("div", {
-                            children: [er ? (0, l.jsx)(b.A, {}) : null, (0, l.jsxs)(n.BJc, {
+                            children: [er ? (0, l.jsx)(b.A, {}) : null, (0, l.jsxs)(a.BJc, {
                                 gap: 8,
                                 align: "center",
-                                children: [null == es ? (0, l.jsx)(n.$nd, {
+                                children: [null == es ? (0, l.jsx)(a.$nd, {
                                     onClick: X,
                                     loading: V,
                                     disabled: er,
@@ -233,20 +233,20 @@ function G(e) {
                                         user: k,
                                         className: U.Mp
                                     })
-                                }) : (0, l.jsxs)(n.e2v, {
+                                }) : (0, l.jsxs)(a.e2v, {
                                     fullWidth: !0,
-                                    children: [(0, l.jsx)(n.$nd, {
+                                    children: [(0, l.jsx)(a.$nd, {
                                         variant: "secondary",
                                         text: S.intl.string(S.t.eylRaY),
                                         onClick: X,
                                         loading: V
-                                    }), (0, l.jsx)(n.$nd, {
+                                    }), (0, l.jsx)(a.$nd, {
                                         variant: "primary",
                                         text: S.intl.string(S.t.RscU7I),
                                         onClick: X,
                                         loading: V
                                     })]
-                                }), (0, l.jsx)(n.QWc, {
+                                }), (0, l.jsx)(a.QWc, {
                                     onClick: ee,
                                     variant: "secondary",
                                     text: S.intl.string(S.t.ndsK4Z),

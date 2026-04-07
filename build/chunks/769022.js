@@ -36,17 +36,17 @@ function m(e) {
     }
 }
 
-function p(e) {
+function g(e) {
     return -e.timestamp
 }
-let g = new Map,
+let p = new Map,
     f = new Map,
     x = new Map,
     E = new Map,
     I = [];
 
 function C(e) {
-    let t = g.get(e),
+    let t = p.get(e),
         n = x.get(e),
         i = t?.values(_).find(e => e.eventType === u.i.USER_LEFT && !o.A.isBlockedOrIgnored(e.userId));
     if (null != i) {
@@ -56,7 +56,7 @@ function C(e) {
 }
 
 function N(e) {
-    let t = g.get(e)?.values(_) ?? [],
+    let t = p.get(e)?.values(_) ?? [],
         n = E.get(e) ?? I,
         i = t.filter(e => !o.A.isBlockedOrIgnored(e.userId));
     return E.set(e, i.length > 0 ? i : I), i.length !== n.length
@@ -64,7 +64,7 @@ function N(e) {
 
 function T(e, t) {
     let n = A(t),
-        i = g.get(e);
+        i = p.get(e);
     return null != i && (i.set(n, {
         userId: t,
         timestamp: Date.now(),
@@ -75,7 +75,7 @@ function T(e, t) {
 
 function S(e, t, n) {
     let i = A(t),
-        l = g.get(e);
+        l = p.get(e);
     if (null == l) return !1;
     let s = l.get(i);
     if (null == s) return null != n && (l.set(i, {
@@ -97,12 +97,12 @@ function S(e, t, n) {
 function b() {
     let e = function() {
         let e = !1;
-        for (let t of g.keys()) e = C(t) || e;
+        for (let t of p.keys()) e = C(t) || e;
         return e
     }();
     return function() {
         let e = !1;
-        for (let t of g.keys()) e = N(t) || e;
+        for (let t of p.keys()) e = N(t) || e;
         return e
     }() || e
 }
@@ -111,7 +111,7 @@ class v extends i.Ay.Store {
         this.waitFor(r.A, a.A, c.A, o.A, d.default)
     }
     __getLocalVars = () => ({
-        channelEventMaps: g,
+        channelEventMaps: p,
         lastLeftUserIds: x
     });
     getLastLeftUserId(e) {
@@ -121,10 +121,10 @@ class v extends i.Ay.Store {
         return E.get(e) ?? I
     }
     getHistoryVersion(e) {
-        return g.get(e)?.version ?? 0
+        return p.get(e)?.version ?? 0
     }
     getHistoryExists(e) {
-        return g.has(e)
+        return p.has(e)
     }
     getLastFetchTime(e) {
         return f.get(e)
@@ -144,37 +144,37 @@ let y = new v(s.h, {
     VOICE_STATE_UPDATES: function(e) {
         let t = !1,
             n = new Set,
-            i = e.voiceStates.filter(e => null != e.oldChannelId && g.has(e.oldChannelId)),
-            l = e.voiceStates.filter(e => null != e.channelId && g.has(e.channelId));
+            i = e.voiceStates.filter(e => null != e.oldChannelId && p.has(e.oldChannelId)),
+            l = e.voiceStates.filter(e => null != e.channelId && p.has(e.channelId));
         return new Set(i.map(e => e.oldChannelId).filter(e => null != e)).forEach(e => {
             var t;
             let n;
-            0 === Object.keys(c.A.getVoiceStatesForChannel(e)).length && (t = e, null != (n = g.get(t)) && n.clear(), x.delete(t), E.delete(t))
+            0 === Object.keys(c.A.getVoiceStatesForChannel(e)).length && (t = e, null != (n = p.get(t)) && n.clear(), x.delete(t), E.delete(t))
         }), i.forEach(e => {
             let {
                 userId: i,
                 oldChannelId: l
-            } = e, s = null != l ? g.get(l) : null;
+            } = e, s = null != l ? p.get(l) : null;
             null != l && null != s && s.values().length > 0 && S(l, i) && (t = !0, n.add(l))
         }), l.forEach(e => {
             let {
                 userId: i,
                 channelId: l
             } = e;
-            null != l && g.has(l) && T(l, i) && (t = !0, n.add(l))
+            null != l && p.has(l) && T(l, i) && (t = !0, n.add(l))
         }), n.forEach(C), n.forEach(N), t
     },
     CHANNEL_DELETE: function(e) {
         let {
             channel: t
         } = e;
-        return !!g.has(t.id) && (g.delete(t.id), f.delete(t.id), x.delete(t.id), E.delete(t.id), !0)
+        return !!p.has(t.id) && (p.delete(t.id), f.delete(t.id), x.delete(t.id), E.delete(t.id), !0)
     },
     VOICE_CHANNEL_HISTORY_START_TRACKING: function(e) {
         let {
             channelId: t
         } = e;
-        if (!g.has(t)) return g.has(t) || (g.set(t, new l.J(m, p)), Object.values(c.A.getVoiceStatesForChannel(t)).forEach(e => {
+        if (!p.has(t)) return p.has(t) || (p.set(t, new l.J(m, g)), Object.values(c.A.getVoiceStatesForChannel(t)).forEach(e => {
             T(t, e.userId)
         })), !0;
         return !1
@@ -184,7 +184,7 @@ let y = new v(s.h, {
             channelId: t,
             voiceLeaves: n,
             activities: i
-        } = e, l = g.get(t);
+        } = e, l = p.get(t);
         if (null == l) return !1;
         let s = !1;
         for (let {
@@ -210,7 +210,7 @@ let y = new v(s.h, {
             of i) s = function(e, t, n, i, l) {
             let s = n ?? i;
             if (null == s) return !1;
-            let a = g.get(e);
+            let a = p.get(e);
             if (null == a) return !1;
             let r = h(t, s);
             return a.set(r, {

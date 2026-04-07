@@ -6,15 +6,15 @@ var l = n(627968);
 n(64700);
 var s = n(503698),
     i = n.n(s),
-    a = n(827734),
-    r = n(397927),
+    r = n(827734),
+    a = n(397927),
     o = n(890687),
     u = n(191065),
     c = n(333028);
 let d = function(e) {
     let {
         className: t,
-        color: n = a.A.colors.WHITE,
+        color: n = r.A.colors.WHITE,
         quest: s,
         isInventory: d
     } = e, A = (0, o.aC)(e.quest), {
@@ -30,7 +30,7 @@ let d = function(e) {
         },
         children: [(0, l.jsxs)("div", {
             className: c.O,
-            children: [(0, l.jsx)(r.Text, {
+            children: [(0, l.jsx)(a.Text, {
                 variant: "text-xs/semibold",
                 className: c.Df,
                 color: "none",

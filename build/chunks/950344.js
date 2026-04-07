@@ -20,18 +20,18 @@ function A(e) {
         location: A,
         relevantSubscriptionListingIds: _
     } = e, m = (0, d.X)("useTrackRoleSubscriptionUpsellAnalytics"), {
-        activeSubscription: p
-    } = (0, u.A)(n), g = null != p, f = (0, l.yK)([c.A], () => (_ ?? []).filter(e => c.A.getSubscriptionListing(e)?.published === !0), [_]), {
+        activeSubscription: g
+    } = (0, u.A)(n), p = null != g, f = (0, l.yK)([c.A], () => (_ ?? []).filter(e => c.A.getSubscriptionListing(e)?.published === !0), [_]), {
         analyticsLocations: x
     } = (0, a.Ay)((0, r.UC)() ?? []), E = i.useRef(!1);
     i.useEffect(() => {
         m && null != n && null != f && !E.current && (E.current = !0, o.default.track(h.HAw.ROLE_SUBSCRIPTION_LISTING_UPSELL_PAGE_VIEWED, {
             role_subscription_group_listing_id: n,
             role_subscription_listing_ids: f,
-            is_premium_member: g,
+            is_premium_member: p,
             location_stack: x,
             location: A,
             ...(0, s.H$)(t)
         }))
-    }, [t, n, m, A, f, g, x])
+    }, [t, n, m, A, f, p, x])
 }

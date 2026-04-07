@@ -25,7 +25,7 @@ let h = () => {
             isDesktop: h,
             withMentions: A = !1,
             initialPageSize: _
-        } = e, m = (0, l.bG)([c.A], () => c.A.shouldReload()), p = i.useRef(!1), [g, f] = i.useState(!1), {
+        } = e, m = (0, l.bG)([c.A], () => c.A.shouldReload()), g = i.useRef(!1), [p, f] = i.useState(!1), {
             initialized: x,
             loading: E,
             items: I,
@@ -62,14 +62,14 @@ let h = () => {
             })
         }, [x, m, t, A, S, b, _]);
         let y = i.useCallback(async e => {
-            !p.current && x && C && null != N && (e || !T) && (p.current = !0, f(!0), await (0, o.ni)({
+            !g.current && x && C && null != N && (e || !T) && (g.current = !0, f(!0), await (0, o.ni)({
                 after: N,
                 with_mentions: A,
                 roles_filter: S,
                 everyone_filter: b,
                 limit: A ? 8 : 20
             }, () => {
-                p.current = !1
+                g.current = !1
             }), f(!1))
         }, [x, C, N, T, A, S, b]);
         return {
@@ -78,7 +78,7 @@ let h = () => {
             items: I,
             hasMore: C,
             loadMore: y,
-            loadingMore: g,
+            loadingMore: p,
             setReadNotifItemToAcked: e => {
                 e.acked || (e.acked = !0)
             },

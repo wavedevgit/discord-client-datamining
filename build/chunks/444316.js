@@ -4,8 +4,8 @@ t.d(i, {
 });
 var l = t(627968),
     s = t(64700),
-    a = t(503698),
-    n = t.n(a),
+    n = t(503698),
+    a = t.n(n),
     r = t(417597),
     o = t(397927),
     d = t(966327),
@@ -18,7 +18,7 @@ function h(e) {
     let {
         friendMemberIds: i,
         className: t,
-        avatarSize: a = o._3J.SIZE_16
+        avatarSize: n = o._3J.SIZE_16
     } = e, h = (0, r.yK)([c.default], () => i.slice(0, 3).map(e => c.default.getUser(e)).filter(e => null != e)), {
         enabled: x
     } = u.SH.useConfig({
@@ -41,11 +41,11 @@ function h(e) {
             ...A
         }) : m.intl.format(m.t["5NHEPu"], A);
     return (0, l.jsxs)("div", {
-        className: n()(_.kL, t),
+        className: a()(_.kL, t),
         children: [(0, l.jsx)("div", {
             className: _.yA,
             style: {
-                maxHeight: `${(0,o.FT9)(a)}px`
+                maxHeight: `${(0,o.FT9)(n)}px`
             },
             children: h.map((e, i) => (0, l.jsx)("div", {
                 className: _.R3,
@@ -54,7 +54,7 @@ function h(e) {
                 },
                 children: (0, l.jsx)(d.A, {
                     user: e,
-                    size: a
+                    size: n
                 })
             }, e.id))
         }), (0, l.jsx)(o.Text, {

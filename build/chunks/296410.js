@@ -34,7 +34,7 @@ function b() {
         let {
             enabledOOP: i
         } = n;
-        r.A.toggleOverlay(t, e, i)
+        r.Ay.toggleOverlay(t, e, i)
     }, j = s.useMemo(() => (0, A.supportsLegacy)() ? N ? f.intl.string(f.t.r9jEVw) : f.intl.string(f.t.OzInYk) : f.intl.string(f.t["8Ox6/E"]), [N]);
     return 0 === E.length ? (0, i.jsx)(T.A, {
         title: f.intl.string(f.t.BfFpW1),

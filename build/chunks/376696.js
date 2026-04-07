@@ -15,8 +15,8 @@ var i = n(627968),
     A = n(643501),
     _ = n(279250),
     m = n(834757),
-    p = n(727353),
-    g = n(140547),
+    g = n(727353),
+    p = n(140547),
     f = n(636920),
     x = n(958140),
     E = n(832163),
@@ -64,7 +64,7 @@ function k(e) {
         et = (0, c.m)(n, k ?? ee),
         {
             enableHangStatus: en
-        } = (0, g.$j)({
+        } = (0, p.$j)({
             guildId: t.guild_id,
             location: "VoiceUserActivities"
         }),
@@ -104,7 +104,7 @@ function k(e) {
                 analyticsSource: "VoiceUserActivities",
                 onAction: s
             })]
-        }) : null, null == X || null == w || ea ? null : (0, i.jsx)(p.P, {
+        }) : null, null == X || null == w || ea ? null : (0, i.jsx)(g.P, {
             stream: X,
             activeStream: $,
             streamActivity: ee,

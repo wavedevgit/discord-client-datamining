@@ -17,8 +17,8 @@ var c = n(397927),
 n(793574), n(688810);
 var _ = n(952790),
     m = n(85109),
-    p = n(734057),
-    g = n(71393),
+    g = n(734057),
+    p = n(71393),
     f = n(320501),
     x = n(222823),
     E = n(661191),
@@ -56,18 +56,18 @@ function P(e) {
         includePanelSpacing: t
     } = e, n = (0, N.op)(), {
         selectedFilter: s
-    } = (0, T.A)(), r = (0, o.bG)([S.A], () => S.A.oldestDisplayedMessageId), d = (0, o.yK)([S.A], () => S.A.getInboxMessages()), v = (0, o.yK)([x.Ay, g.A, S.A], () => d.filter(e => !(0, b.EJ)({
+    } = (0, T.A)(), r = (0, o.bG)([S.A], () => S.A.oldestDisplayedMessageId), d = (0, o.yK)([S.A], () => S.A.getInboxMessages()), v = (0, o.yK)([x.Ay, p.A, S.A], () => d.filter(e => !(0, b.EJ)({
         messageId: e.id,
         channelId: e.channelId,
         guildId: e.guildId,
         ReadStateStore_: x.Ay,
-        GuildStore_: g.A
-    }) && !(0, b.zo)(e, S.A.selectedItemInfo))), y = (0, o.yK)([x.Ay, g.A, S.A], () => d.filter(e => (0, b.EJ)({
+        GuildStore_: p.A
+    }) && !(0, b.zo)(e, S.A.selectedItemInfo))), y = (0, o.yK)([x.Ay, p.A, S.A], () => d.filter(e => (0, b.EJ)({
         messageId: e.id,
         channelId: e.channelId,
         guildId: e.guildId,
         ReadStateStore_: x.Ay,
-        GuildStore_: g.A
+        GuildStore_: p.A
     }) || (0, b.zo)(e, S.A.selectedItemInfo))), j = l.useCallback(e => {
         s !== O.Io.BOOKMARKS && C.A.loadMoreInbox({
             viewId: n,
@@ -109,7 +109,7 @@ function P(e) {
             return null == t ? U : [{
                 id: t.id,
                 channelId: t.channel_id,
-                guildId: p.A.getBasicChannel(t.channel_id)?.guild_id,
+                guildId: g.A.getBasicChannel(t.channel_id)?.guild_id,
                 kind: O.yL.BOOKMARK,
                 message: t
             }]

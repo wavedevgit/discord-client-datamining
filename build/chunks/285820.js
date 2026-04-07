@@ -4,8 +4,8 @@ n.d(t, {
     D: () => m
 });
 var a = n(627968),
-    l = n(64700),
-    i = n(476464),
+    i = n(64700),
+    l = n(476464),
     r = n(357599),
     s = n(37948),
     o = n(306897),
@@ -14,7 +14,7 @@ var a = n(627968),
     u = n(985018);
 
 function m(e) {
-    let t = (0, i.y)("GameProfileStoreLinks"),
+    let t = (0, l.y)("GameProfileStoreLinks"),
         n = (0, r._)(e);
     return {
         storeWebsites: n,
@@ -23,21 +23,21 @@ function m(e) {
 }
 let x = function(e) {
     let {
-        detectedGame: t,
+        game: t,
         trackAction: n
-    } = e, i = (0, s.A)(), {
+    } = e, l = (0, s.A)(), {
         showsStoreLinks: r,
         storeWebsites: x
-    } = m(t), h = l.useMemo(() => x.map(o.A).filter(e => null != e), [x]);
+    } = m(t), g = i.useMemo(() => x.map(o.A).filter(e => null != e), [x]);
     if (!r) return null;
-    if (1 === h.length) {
-        let [e] = h;
+    if (1 === g.length) {
+        let [e] = g;
         return (0, a.jsx)(d.u, {
             icon: e.icon,
             text: e.text,
             "aria-label": e.ariaLabel,
             onClick: () => {
-                n(e.action), i(e.url)
+                n(e.action), l(e.url)
             }
         })
     }
@@ -45,8 +45,8 @@ let x = function(e) {
         text: u.intl.string(u.t["/hMurx"]),
         "aria-label": u.intl.string(u.t.nK60cc),
         onClick: () => (0, c.N)({
-            detectedGame: t,
-            websiteButtons: h,
+            game: t,
+            websiteButtons: g,
             trackAction: n
         })
     })

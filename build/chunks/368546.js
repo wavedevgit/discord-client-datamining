@@ -1,18 +1,18 @@
 /** chunk id: 368546 params = (module,exports,require) **/
 n.d(t, {
-    A: () => i
+    A: () => l
 });
 var a = n(64700);
-let l = "requestVideoFrameCallback" in HTMLVideoElement.prototype;
+let i = "requestVideoFrameCallback" in HTMLVideoElement.prototype;
 
-function i(e) {
+function l(e) {
     let {
         videoRef: t,
         canvasRef: n,
-        enabled: i
+        enabled: l
     } = e;
     a.useEffect(() => {
-        if (!i) return;
+        if (!l) return;
         let e = t.current,
             a = n.current;
         if (null == e || null == a) return;
@@ -24,7 +24,7 @@ function i(e) {
         function o() {
             s || e.readyState < 2 || r.drawImage(e, 0, 0, 10, 6)
         }
-        if (l) {
+        if (i) {
             let t;
 
             function c() {
@@ -52,12 +52,12 @@ function i(e) {
                 t = requestAnimationFrame(m)
             }
 
-            function h() {
+            function g() {
                 cancelAnimationFrame(t)
             }
-            return e.addEventListener("play", x), e.addEventListener("pause", h), e.addEventListener("ended", h), e.addEventListener("seeked", o), e.addEventListener("loadeddata", o), e.paused ? e.readyState >= 2 && o() : t = requestAnimationFrame(m), () => {
-                s = !0, cancelAnimationFrame(t), e.removeEventListener("play", x), e.removeEventListener("pause", h), e.removeEventListener("ended", h), e.removeEventListener("seeked", o), e.removeEventListener("loadeddata", o)
+            return e.addEventListener("play", x), e.addEventListener("pause", g), e.addEventListener("ended", g), e.addEventListener("seeked", o), e.addEventListener("loadeddata", o), e.paused ? e.readyState >= 2 && o() : t = requestAnimationFrame(m), () => {
+                s = !0, cancelAnimationFrame(t), e.removeEventListener("play", x), e.removeEventListener("pause", g), e.removeEventListener("ended", g), e.removeEventListener("seeked", o), e.removeEventListener("loadeddata", o)
             }
         }
-    }, [t, n, i])
+    }, [t, n, l])
 }

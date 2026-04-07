@@ -1,10 +1,10 @@
 /** chunk id: 286737 params = (module,exports,require) **/
 n.d(t, {
-    A: () => h
+    A: () => g
 });
 var a = n(627968),
-    l = n(64700),
-    i = n(311907),
+    i = n(64700),
+    l = n(311907),
     r = n(397927),
     s = n(289363),
     o = n(287809),
@@ -14,23 +14,23 @@ var a = n(627968),
     m = n(985018),
     x = n(290490);
 
-function h(e) {
+function g(e) {
     let {
         trackAction: t,
         analyticsLocations: n
     } = e, {
-        fetchedAuthorization: h,
-        hasAlreadyLinked: f,
-        canStartAuthorization: p,
-        startAuthorization: g,
+        fetchedAuthorization: g,
+        hasAlreadyLinked: h,
+        canStartAuthorization: f,
+        startAuthorization: p,
         connectionApp: _,
         officialInvite: v
-    } = (0, u.c)(), A = (0, i.bG)([o.default], () => o.default.getCurrentUser()), j = l.useCallback(() => {
-        t(d.Ws.LinkAccount), g({
+    } = (0, u.c)(), A = (0, l.bG)([o.default], () => o.default.getCurrentUser()), j = i.useCallback(() => {
+        t(d.Ws.LinkAccount), p({
             analyticsLocations: n
         })
-    }, [t, g, n]);
-    if (!h || null == _ || !p || f || null == A) return null;
+    }, [t, p, n]);
+    if (!g || null == _ || !f || h || null == A) return null;
     let E = v?.guild != null ? c.Ay.getGuildSplashURL({
         id: v.guild.id,
         splash: v.guild.splash

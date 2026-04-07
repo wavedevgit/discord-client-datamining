@@ -17,7 +17,7 @@ function d(e) {
         applicationId: t
     } = e, {
         data: n
-    } = (0, s.k)(t), l = n?.supplementalData?.coverImageUrl;
+    } = (0, s.k)(t), l = n?.getCoverURL();
     return null != l && "" !== l ? (0, i.jsx)("div", {
         className: a()(o.PY, c.LH),
         children: (0, i.jsx)(r.R, {

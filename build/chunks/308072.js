@@ -24,7 +24,7 @@ function g(e) {
         data: x,
         isLoading: h
     } = (0, d.k)(t), _ = s.useMemo(() => {
-        let e = x?.supplementalData?.coverImageUrl;
+        let e = x?.getCoverURL();
         if (null == e) return;
         let t = u.A.toURLSafe(e);
         return null == t ? e : (t.searchParams.set("size", "256"), t.toString())

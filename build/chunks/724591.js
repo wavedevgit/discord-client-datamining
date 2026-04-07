@@ -15,8 +15,8 @@ var i = n(627968),
     A = n(932001),
     _ = n(361158),
     m = n(976860),
-    p = n(733391),
-    g = n(832163),
+    g = n(733391),
+    p = n(832163),
     f = n(44724),
     x = n(849134),
     E = n(203548),
@@ -34,9 +34,9 @@ let j = l.memo(function(e) {
         selected: s
     } = e, j = l.useRef(null), R = l.useRef(null), O = (0, c.useHasAnyModalOpen)(), L = (0, r.bG)([I.A], () => I.A.hasLayers()), M = (0, _.xr)(e => e.fullScreenLayers.length > 0);
     l.useEffect(() => {
-        (0, p.Kh)(t.id)
+        (0, g.Kh)(t.id)
     }, [t.id]);
-    let D = (0, r.bG)([g.A], () => g.A.getAnnouncement(t.id)),
+    let D = (0, r.bG)([p.A], () => p.A.getAnnouncement(t.id)),
         U = D?.state === "success" ? D.announcement : void 0,
         [G, P] = (0, A.x_)(o.M.GAME_SHOP_NEW_BADGE, t.id, U?.id ?? "", void 0, !0),
         k = G === o.M.GAME_SHOP_NEW_BADGE && null != U,
@@ -47,7 +47,7 @@ let j = l.memo(function(e) {
     }, [P, B, s, k, V]);
     let H = l.useCallback(() => {
             P(b.i.TAKE_ACTION), B(b.i.TAKE_ACTION);
-            let e = g.A.getStorefrontState(t.id)?.activePage ?? 0;
+            let e = p.A.getStorefrontState(t.id)?.activePage ?? 0;
             (0, m.pX)(S.BVt.CHANNELS_GAME_SHOP(t.id, e))
         }, [t.id, P, B]),
         F = l.useCallback(() => {

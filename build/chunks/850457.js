@@ -15,8 +15,8 @@ var i = n(627968),
     A = n(769015),
     _ = n(409626),
     m = n(692969),
-    p = n(290987),
-    g = n(657331),
+    g = n(290987),
+    p = n(657331),
     f = n(820512),
     x = n(769022),
     E = n(898926),
@@ -56,7 +56,7 @@ function v(e) {
                 children: S.intl.format(S.t.CKIMrx, {
                     user: (0, i.jsx)(u.A, {
                         tag: "span",
-                        onClick: () => (0, g.openUserProfileModal)({
+                        onClick: () => (0, p.openUserProfileModal)({
                             userId: t.userId,
                             guildId: n,
                             channelId: l
@@ -85,9 +85,9 @@ function v(e) {
                 variant: "text-xs/normal",
                 color: "text-muted",
                 className: b.gE,
-                children: (0, i.jsx)(p.Ay, {
+                children: (0, i.jsx)(g.Ay, {
                     end: t.timestamp,
-                    location: p.Ay.Locations.VOICE_CHANNEL_HISTORY
+                    location: g.Ay.Locations.VOICE_CHANNEL_HISTORY
                 })
             })]
         })]
@@ -121,7 +121,7 @@ function y(e) {
                     userHook: (e, s) => (0, i.jsx)(u.A, {
                         tag: "span",
                         className: b.C3,
-                        onClick: () => (0, g.openUserProfileModal)({
+                        onClick: () => (0, p.openUserProfileModal)({
                             userId: t.userId,
                             guildId: n,
                             channelId: l
@@ -142,9 +142,9 @@ function y(e) {
                 variant: "text-xs/normal",
                 color: "text-muted",
                 className: b.gE,
-                children: (0, i.jsx)(p.Ay, {
+                children: (0, i.jsx)(g.Ay, {
                     end: t.timestamp,
-                    location: p.Ay.Locations.VOICE_CHANNEL_HISTORY
+                    location: g.Ay.Locations.VOICE_CHANNEL_HISTORY
                 })
             })]
         })]

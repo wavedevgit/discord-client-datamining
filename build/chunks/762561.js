@@ -15,8 +15,8 @@ var i = n(627968),
     A = n(361628),
     _ = n(713517),
     m = n(673843),
-    p = n(594832),
-    g = n(183555),
+    g = n(594832),
+    p = n(183555),
     f = n(622543),
     x = n(950191),
     E = n(679492),
@@ -49,7 +49,7 @@ function H(e) {
         channel: H
     } = e, F = __OVERLAY__, W = (0, x.Ay)(t.id), K = (0, A.A)(W?.profileFrame?.skuId, "UserProfileSidebar"), Y = (0, d.Ay)(), {
         analyticsLocations: z
-    } = (0, u.Ay)(c.A.USER_PROFILE_SIDEBAR), q = (0, g.pb)({
+    } = (0, u.Ay)(c.A.USER_PROFILE_SIDEBAR), q = (0, p.pb)({
         layout: "SIDEBAR",
         userId: t.id,
         channelId: H.id
@@ -74,7 +74,7 @@ function H(e) {
         defaultWishlistId: f.A.getFirstWishlistId(t.id)
     })), {
         wishlist: ei
-    } = (0, p.fw)({
+    } = (0, g.fw)({
         wishlistId: en,
         userId: t.id
     });
@@ -82,7 +82,7 @@ function H(e) {
     let el = l.useMemo(() => null == ei ? null : ei.items.filter(e => !e.isOwned), [ei]);
     return (0, i.jsx)(u.f5, {
         value: z,
-        children: (0, i.jsx)(g.of, {
+        children: (0, i.jsx)(p.of, {
             value: q,
             isLoaded: W?.isLoaded,
             children: (0, i.jsx)(E.Hl, {

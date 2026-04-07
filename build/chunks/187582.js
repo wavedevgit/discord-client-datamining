@@ -15,8 +15,8 @@ var i = n(627968),
     A = n(709066),
     _ = n(87664),
     m = n(449582),
-    p = n(485947),
-    g = n(342296),
+    g = n(485947),
+    p = n(342296),
     f = n(290863),
     x = n(994500),
     E = n(741961),
@@ -38,7 +38,7 @@ function L(e) {
         channel: r,
         status: u,
         activities: h
-    } = e, A = (0, a.bG)([E.A], () => null != E.A.getTypingUsers(r.id)[t.id]), p = (0, a.bG)([I.default], () => I.default.getCurrentUser()), C = (0, a.bG)([f.A], () => f.A.isMobileOnline(t.id)), T = (0, a.bG)([x.A], () => x.A.getNickname(t.id)), b = (0, _.A)(t.id), j = l.useRef(null), R = e => {
+    } = e, A = (0, a.bG)([E.A], () => null != E.A.getTypingUsers(r.id)[t.id]), g = (0, a.bG)([I.default], () => I.default.getCurrentUser()), C = (0, a.bG)([f.A], () => f.A.isMobileOnline(t.id)), T = (0, a.bG)([x.A], () => x.A.getNickname(t.id)), b = (0, _.A)(t.id), j = l.useRef(null), R = e => {
         (0, o.L3)(e, async () => {
             let {
                 default: e
@@ -61,7 +61,7 @@ function L(e) {
     }, M = (0, m.r)({
         user: t
     }), [D, U] = l.useState(!1);
-    return (0, i.jsx)(g.A, {
+    return (0, i.jsx)(p.A, {
         targetElementRef: j,
         user: t,
         channelId: r.id,
@@ -79,7 +79,7 @@ function L(e) {
             return (0, i.jsx)(c.A, {
                 ref: j,
                 user: t,
-                currentUser: p,
+                currentUser: g,
                 isOwner: t.id === r.ownerId,
                 ownerTooltipText: y.intl.string(y.t["MRXZ+x"]),
                 shouldAnimateStatus: O,
@@ -162,7 +162,7 @@ function D(e) {
                 children: (0, i.jsxs)(r.HOs, {
                     className: j.ol,
                     fade: !0,
-                    children: [(0, i.jsxs)(p.A, {
+                    children: [(0, i.jsxs)(g.A, {
                         className: j.lL,
                         children: [`${y.intl.string(y.t["9Oq93m"])}—${d.length} `, c && (0, i.jsx)(A.A, {
                             type: A.A.Types.STAFF_ONLY_DM

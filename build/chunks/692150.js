@@ -35,19 +35,19 @@ function S(e) {
     let n = (0, f.U)("GameServerPage"),
         S = (0, l.bG)([u.A], () => u.A.getGuild(t)?.features.has(b.GuildFeatures.GAME_SERVERS) ?? !1);
     (0, C.A)(S ? t : null), s.useEffect(() => {
-        S && ((0, x.cq)(t), d.A.getDetectableGames())
+        S && ((0, x.cq)(t), d.Ay.getDetectableGames())
     }, [t, S]);
     let T = (0, m.A)(t),
         R = (0, j.N)("GameServerPage"),
-        M = (0, l.bG)([v.A], () => v.A.getStateForGuild(t)),
-        y = s.useMemo(() => {
-            if (!M?.hasFetchedInstances) return;
-            let e = Object.values(M.instances ?? {});
+        y = (0, l.bG)([v.A], () => v.A.getStateForGuild(t)),
+        M = s.useMemo(() => {
+            if (!y?.hasFetchedInstances) return;
+            let e = Object.values(y.instances ?? {});
             return 0 === e.length ? null : e.map((e, n) => (0, a.jsx)(A.Ay, {
                 guildId: t,
                 instance: e
             }, `${e.gameId}-${n}`))
-        }, [M?.instances, M?.hasFetchedInstances, t]);
+        }, [y?.instances, y?.hasFetchedInstances, t]);
     return (0, a.jsxs)("div", {
         className: E.kL,
         children: [(0, a.jsxs)(c.Ay, {
@@ -73,12 +73,12 @@ function S(e) {
             })]
         }), (0, a.jsxs)("div", {
             className: E.hQ,
-            children: [S && !M?.hasFetchedInstances ? (0, a.jsx)("div", {
+            children: [S && !y?.hasFetchedInstances ? (0, a.jsx)("div", {
                 className: E.dc,
                 children: (0, a.jsx)(r.y$y, {
                     type: r.tVU.SPINNING_CIRCLE
                 })
-            }) : null == y ? (0, a.jsx)(h.A, {
+            }) : null == M ? (0, a.jsx)(h.A, {
                 guildId: t
             }) : (0, a.jsxs)("div", {
                 className: E.nd,
@@ -91,7 +91,7 @@ function S(e) {
                 }), (0, a.jsx)(r.IpV, {
                     children: (0, a.jsx)("div", {
                         className: E.Y_,
-                        children: y
+                        children: M
                     })
                 })]
             }), (T || R) && (0, a.jsx)(p.A, {

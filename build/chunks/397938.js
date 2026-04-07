@@ -15,8 +15,8 @@ var i = n(627968),
     A = n(309010),
     _ = n(287809),
     m = n(851109),
-    p = n(394953),
-    g = n(355216),
+    g = n(394953),
+    p = n(355216),
     f = n(596540),
     x = n(879221);
 n(445368);
@@ -35,7 +35,7 @@ function T(e) {
         selectedOverride: n = !1,
         popoutProps: u,
         ref: h
-    } = e, _ = (0, s.Vd)("notifications-inbox"), [f, I] = l.useState(!1), T = (0, p.lI)(), S = n || T, {
+    } = e, _ = (0, s.Vd)("notifications-inbox"), [f, I] = l.useState(!1), T = (0, g.lI)(), S = n || T, {
         notificationCenterVariant: b
     } = (0, m.X8)({
         location: "NotificationsInboxButtonInner"
@@ -50,10 +50,10 @@ function T(e) {
             location: "NotificationsInboxButtonInner"
         }), {
             unreadChannelIds: n
-        } = (0, p.U4)(), l = N(), {
+        } = (0, g.U4)(), l = N(), {
             badge: s,
             dimensions: a
-        } = (0, g.ux)({
+        } = (0, p.ux)({
             isSelected: e
         });
         return t === m.U5.LEGACY ? {
@@ -120,7 +120,7 @@ function S() {
             location: "NotificationsInboxButton"
         }),
         n = N(),
-        s = (0, g.HN)();
+        s = (0, p.HN)();
     return t === m.U5.SIDEBAR ? (0, i.jsx)(T, {
         onClick: s
     }) : t === m.U5.POPOUT ? (0, i.jsx)(f.A, {

@@ -4,9 +4,9 @@ n.d(t, {
     K: () => j
 });
 var a = n(627968),
-    l = n(64700),
-    i = n(503698),
-    r = n.n(i),
+    i = n(64700),
+    l = n(503698),
+    r = n.n(l),
     s = n(505779),
     o = n(990078),
     c = n(397927),
@@ -14,14 +14,14 @@ var a = n(627968),
     u = n(37948),
     m = n(985018),
     x = n(282063),
-    h = n(808900);
-let f = [s.V.OFFICIAL, s.V.TWITTER, s.V.YOUTUBE],
-    p = {
-        colorClass: h.wP
+    g = n(808900);
+let h = [s.V.OFFICIAL, s.V.TWITTER, s.V.YOUTUBE],
+    f = {
+        colorClass: g.wP
     },
-    g = {
+    p = {
         size: "xs",
-        colorClass: h.wP
+        colorClass: g.wP
     };
 
 function _(e, t) {
@@ -84,17 +84,17 @@ function v(e) {
         website: t,
         trackAction: n
     } = e, {
-        action: i,
+        action: l,
         icon: r,
         title: s
-    } = _(t, p), d = l.useCallback(() => {
-        n(i)
-    }, [i, n]);
+    } = _(t, f), d = i.useCallback(() => {
+        n(l)
+    }, [l, n]);
     return (0, a.jsx)(o.m, {
         text: s,
         children: (0, a.jsx)(c.MzZ, {
             onClick: d,
-            className: h.yO,
+            className: g.yO,
             href: t.url,
             target: "_blank",
             "aria-label": s,
@@ -104,17 +104,17 @@ function v(e) {
 }
 let A = function(e) {
     let {
-        detectedGame: t,
+        game: t,
         trackAction: n
     } = e;
     if (null == t.websites) return null;
-    let l = t.websites.filter(e => {
+    let i = t.websites.filter(e => {
         let {
             category: t
         } = e;
-        return f.includes(t)
+        return h.includes(t)
     }).sort((e, t) => e.category - t.category);
-    return 0 === l.length ? null : (0, a.jsxs)("div", {
+    return 0 === i.length ? null : (0, a.jsxs)("div", {
         children: [(0, a.jsx)(c.Heading, {
             className: x.bV,
             variant: "text-xs/semibold",
@@ -122,7 +122,7 @@ let A = function(e) {
             children: m.intl.string(m.t["Oj3o1/"])
         }), (0, a.jsx)("div", {
             className: r()(x.nM, x.mX),
-            children: l.map(e => (0, a.jsx)(v, {
+            children: i.map(e => (0, a.jsx)(v, {
                 website: e,
                 trackAction: n
             }, e.url))
@@ -134,18 +134,18 @@ function j(e) {
     let {
         website: t,
         trackAction: n
-    } = e, i = (0, u.A)(), {
+    } = e, l = (0, u.A)(), {
         action: r,
         icon: s,
         title: d
-    } = _(t, g), m = l.useCallback(() => {
-        n(r), i(t.url)
-    }, [r, i, n, t.url]);
+    } = _(t, p), m = i.useCallback(() => {
+        n(r), l(t.url)
+    }, [r, l, n, t.url]);
     return (0, a.jsx)(o.m, {
         text: d,
         children: (0, a.jsx)(c.DUT, {
             onClick: m,
-            className: h.yO,
+            className: g.yO,
             title: d,
             children: s
         })

@@ -16,8 +16,8 @@ var i = n(627968),
     A = n(713125),
     _ = n(967305),
     m = n(739455),
-    p = n(997509),
-    g = n(976860),
+    g = n(997509),
+    p = n(976860),
     f = n(309010),
     x = n(967198),
     E = n(792831),
@@ -96,7 +96,7 @@ function M() {
             let {
                 backToSettings: n
             } = e;
-            null != t && (T.A.isFullServerPreview(t) && (0, g.pX)(b.BVt.CHANNEL(t)), A.Ay.shouldShowOnboarding(t) && (h.A.finishOnboarding(t), (0, _.Jg)(t)), (0, N.rf)(t), n && p.A.open(t, a), a === b.BEX.ROLE_SUBSCRIPTIONS && (0, m.Fx)(t))
+            null != t && (T.A.isFullServerPreview(t) && (0, p.pX)(b.BVt.CHANNEL(t)), A.Ay.shouldShowOnboarding(t) && (h.A.finishOnboarding(t), (0, _.Jg)(t)), (0, N.rf)(t), n && g.A.open(t, a), a === b.BEX.ROLE_SUBSCRIPTIONS && (0, m.Fx)(t))
         };
     return (0, i.jsxs)(u.$Td, {
         color: u.Hv$.BRAND,

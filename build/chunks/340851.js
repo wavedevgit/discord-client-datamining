@@ -17,8 +17,8 @@ var i = n(627968),
     A = n(296216),
     _ = n(793574),
     m = n(480890),
-    p = n(643501),
-    g = n(916641),
+    g = n(643501),
+    p = n(916641),
     f = n(652896),
     x = n(279250),
     E = n(346846),
@@ -109,7 +109,7 @@ let U = (0, A.J)(function(e) {
         application: es,
         hangStatusActivity: ea,
         showHangStatus: er
-    } = e, eo = l.useRef(null), [ed, ec] = l.useState(!1), eu = l.useRef(null), [eh, eA] = l.useState(!1), [e_, em] = l.useState(!1), [ep, eg] = l.useState(!1), ef = eh || ep || e_, ex = () => {
+    } = e, eo = l.useRef(null), [ed, ec] = l.useState(!1), eu = l.useRef(null), [eh, eA] = l.useState(!1), [e_, em] = l.useState(!1), [eg, ep] = l.useState(!1), ef = eh || eg || e_, ex = () => {
         ec(!ed)
     }, eE = (e, t) => {
         let n = new Set(["system:click_outside", "user:escape", "user:explicit"]);
@@ -121,7 +121,7 @@ let U = (0, A.J)(function(e) {
         clearTimeout(eu.current)
     }, []);
     let eC = () => {
-            if (!z || !(0, x.eo)(A, v.A, T.A, S.A, p.default)[0]) return;
+            if (!z || !(0, x.eo)(A, v.A, T.A, S.A, g.default)[0]) return;
             let e = {
                 streamType: R.U4.GUILD,
                 ownerId: s.id,
@@ -203,7 +203,7 @@ let U = (0, A.J)(function(e) {
                         hangStatusActivity: ea,
                         showHangStatus: er
                     }, en ? (0, i.jsx)(r.m, {
-                        text: (0, g.A)(ee) ?? O.intl.string(O.t.IyYqqY),
+                        text: (0, p.A)(ee) ?? O.intl.string(O.t.IyYqqY),
                         children: (0, i.jsx)(C.Ay, {
                             ref: eo,
                             ...l
@@ -218,7 +218,7 @@ let U = (0, A.J)(function(e) {
                             onWatchStream: z ? eC : void 0,
                             hangStatusActivity: ea,
                             setIsHangStatusInputFocused: eA,
-                            setIsHangStatusEmojiPickerOpen: eg
+                            setIsHangStatusEmojiPickerOpen: ep
                         }),
                         shouldShow: (Z || er && ef && el) && !ed,
                         onRequestClose: eE,

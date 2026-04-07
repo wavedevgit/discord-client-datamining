@@ -20,8 +20,8 @@ var l = n(503698),
     A = n(769015),
     _ = n(290987),
     m = n(172710),
-    p = n(763758),
-    g = n(139675),
+    g = n(763758),
+    p = n(139675),
     f = n(486020),
     x = n(652215),
     E = n(985018),
@@ -116,7 +116,7 @@ function T(e) {
                     className: I.nf,
                     children: (0, i.jsx)("img", {
                         alt: l?.large_text ?? "",
-                        src: (0, g.uD)(a, x, [128, 128]),
+                        src: (0, p.uD)(a, x, [128, 128]),
                         className: I.Sl
                     })
                 })
@@ -133,7 +133,7 @@ function T(e) {
                     }) : d
                 }), null != c && c.length > 0 && (0, i.jsx)("div", {
                     className: s()(I.QJ, I.p9, I.Mo),
-                    children: (0, i.jsx)(p.A, {
+                    children: (0, i.jsx)(g.A, {
                         artists: c,
                         canOpen: null != h,
                         linkClassName: I.QJ,
@@ -175,7 +175,7 @@ function S(e) {
     let d = l.large_image ?? l.small_image;
     return null != d ? (0, i.jsx)("img", {
         alt: l.large_text ?? "",
-        src: (0, g.uD)(t.applicationId, d, [128, 128]),
+        src: (0, p.uD)(t.applicationId, d, [128, 128]),
         className: I.Sl
     }) : null
 }

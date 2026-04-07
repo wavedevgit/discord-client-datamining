@@ -15,8 +15,8 @@ var i = n(627968),
     A = n(222823),
     _ = n(309010),
     m = n(741961),
-    p = n(234320),
-    g = n(20465),
+    g = n(234320),
+    p = n(20465),
     f = n(108460),
     x = n(709562),
     E = n(652215),
@@ -92,7 +92,7 @@ function T(e) {
                 a(t > 0);
                 let e = setTimeout(() => {
                     a(!1)
-                }, g.R);
+                }, p.R);
                 return () => {
                     clearTimeout(e), a(!1)
                 }
@@ -117,14 +117,14 @@ function T(e) {
         D = l.useCallback(() => {
             v.current?.focus()
         }, []);
-    (0, p.Vo)({
+    (0, g.Vo)({
         event: E.jej.FOCUS_CHAT_BUTTON,
         handler: b ? null : D
     });
     let [U, G] = l.useState(!1), P = l.useCallback(() => {
         _ && G(!0)
     }, [_]);
-    (0, p.Vo)({
+    (0, g.Vo)({
         event: E.jej.SHOW_TEXT_IN_VOICE_POPOUT_COMING_SOON_TIP,
         handler: P
     }), l.useEffect(() => {

@@ -15,8 +15,8 @@ var i = n(627968),
     A = n(522435),
     _ = n(46054),
     m = n(954571),
-    p = n(652215),
-    g = n(985018),
+    g = n(652215),
+    p = n(985018),
     f = n(171616),
     x = n(782691);
 
@@ -35,7 +35,7 @@ function E(e) {
         location: "VoiceChannelStatus"
     }), S = T && (0, A.TP)(N), b = null != N && N.length > 0 && !S, v = (0, c.Ay)(t, !0), y = null != E && E.length > 0;
     if (l.useEffect(() => {
-            b && m.default.track(p.HAw.VOICE_CHANNEL_TOPIC_VIEWED, {
+            b && m.default.track(g.HAw.VOICE_CHANNEL_TOPIC_VIEWED, {
                 channel_id: t.id,
                 guild_id: t.guild_id
             })
@@ -59,7 +59,7 @@ function E(e) {
         children: [(0, i.jsx)(d.Text, {
             variant: "text-xs/medium",
             className: f.qS,
-            children: g.intl.string(g.t.Mgpxiw)
+            children: p.intl.string(p.t.Mgpxiw)
         }), (0, i.jsx)(d.R2l, {
             color: "currentColor",
             className: f.rD,

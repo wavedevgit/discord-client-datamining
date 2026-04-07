@@ -1,6 +1,6 @@
 /** chunk id: 565265 params = (module,exports,require) **/
 n.d(t, {
-    A: () => g
+    A: () => p
 });
 var i = n(627968),
     l = n(64700),
@@ -18,7 +18,7 @@ var i = n(627968),
 function m(e) {
     return e.matches("a") || "highlight" === e.className || e.className.includes("mention") || e.className.includes("roleMention") || e.className.includes("emojiContainer")
 }
-class p extends l.Component {
+class g extends l.Component {
     handleOpenTopic = e => {
         let t = e.target;
         if ((0, r.vq)(t)) {
@@ -74,4 +74,4 @@ class p extends l.Component {
         }) : null
     }
 }
-let g = p
+let p = g

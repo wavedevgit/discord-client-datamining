@@ -13,8 +13,8 @@ var r = n(627968),
     c = n(324593),
     d = n(883662),
     h = n(961350),
-    m = n(287809),
-    f = n(152056),
+    f = n(287809),
+    m = n(152056),
     p = n(780964),
     _ = n(921854),
     v = n(7564),
@@ -33,14 +33,14 @@ function N(e) {
     let {
         target: t,
         ...n
-    } = e, a = f.A.useField("query"), E = i.useCallback(() => {
-        f.A.setState({
+    } = e, a = m.A.useField("query"), E = i.useCallback(() => {
+        m.A.setState({
             query: ""
         }), c.A.terminate()
     }, []), [A, N] = i.useState(!1);
     return (i.useLayoutEffect(() => {
         let e = () => {
-            null == m.default.getCurrentUser() && (N(!0), (0, x.default)())
+            null == f.default.getCurrentUser() && (N(!0), (0, x.default)())
         };
         return h.default.addChangeListener(e), () => {
             h.default.removeChangeListener(e), y.A.resetState(), u.A.resetState(), s.A.close()
@@ -72,9 +72,9 @@ function N(e) {
 }
 
 function C() {
-    let e = f.A.useField("query"),
+    let e = m.A.useField("query"),
         t = i.useCallback(e => {
-            f.A.setState({
+            m.A.setState({
                 query: e
             }), c.A.maybeTrackQueryEntered()
         }, []),
@@ -82,15 +82,15 @@ function C() {
             c.A.isSessionActive() || c.A.initialize()
         }, []),
         l = i.useCallback(() => {
-            0 === f.A.getField("query").trim().length && c.A.terminate()
+            0 === m.A.getField("query").trim().length && c.A.terminate()
         }, []),
         s = i.useCallback(() => {
-            f.A.setState({
+            m.A.setState({
                 query: ""
             }), c.A.terminate()
         }, []);
     return i.useEffect(() => () => {
-        f.A.resetState(), c.A.terminate()
+        m.A.resetState(), c.A.terminate()
     }, []), (0, r.jsx)("div", {
         className: A.P,
         children: (0, r.jsx)(a.IWV, {

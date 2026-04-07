@@ -44,7 +44,7 @@ function c(e, t, n, c, u) {
         },
         confirmText: d.intl.string(d.t.VJlc0S),
         onConfirmClick: (a, l) => {
-            i.A.join({
+            i.Ay.join({
                 userId: n.id,
                 sessionId: p,
                 applicationId: c.id,

@@ -16,8 +16,8 @@ var i = n(627968),
     A = n(942857),
     _ = n(646865),
     m = n(833349),
-    p = n(869003),
-    g = n(521588),
+    g = n(869003),
+    p = n(521588),
     f = n(688810),
     x = n(362490),
     E = n(384059),
@@ -57,7 +57,7 @@ let Y = l.memo(function(e) {
             isStreaming: d,
             channel: A,
             canStream: m,
-            runningGame: g,
+            runningGame: p,
             embeddedActivity: C,
             frame: O,
             activity: M,
@@ -76,29 +76,29 @@ let Y = l.memo(function(e) {
             enabled: ea
         } = y._.useConfig({
             location: "activity-panel"
-        }), er = (0, j.Bp)("activity-panel"), eo = (0, v.C$)(r ?? void 0, "activity-panel"), ed = (0, o.bG)([G.A], () => G.A.hasConsented(B.YAq.PERSONALIZATION)), ec = (0, j.TF)(g?.id, {
+        }), er = (0, j.Bp)("activity-panel"), eo = (0, v.C$)(r ?? void 0, "activity-panel"), ed = (0, o.bG)([G.A], () => G.A.hasConsented(B.YAq.PERSONALIZATION)), ec = (0, j.TF)(p?.id, {
             shouldFetch: er || eo
         }), eu = ea && ed && ec, eh = eu && er, eA = eu && eo, e_ = l.useCallback(() => {
             a()(null != M, "Received null activity"), k.default.track(B.HAw.ACTIVITY_PANEL_BUTTON_CLICKED, {
                 action_type: "invite_to_game",
-                game_id: g?.id ?? null,
+                game_id: p?.id ?? null,
                 application_id: M.application_id
             }), (0, E.X)(en, E.O.INVITE), k.default.track(B.HAw.OPEN_MODAL, {
                 type: "Send Join Invite",
                 application_id: M.application_id,
                 location: Y.location
             }), (0, h.qf)(M, !1)
-        }, [M, Y, en, g]), em = l.useCallback((e, t) => () => {
-            (0, E.X)(en, E.O.LEAVE_ACTIVITY), p.A.leaveActivity({
+        }, [M, Y, en, p]), em = l.useCallback((e, t) => () => {
+            (0, E.X)(en, E.O.LEAVE_ACTIVITY), g.A.leaveActivity({
                 location: t,
                 applicationId: e,
                 showFeedback: !0
             })
-        }, [en]), ep = l.useCallback(e => () => {
+        }, [en]), eg = l.useCallback(e => () => {
             (0, E.X)(en, E.O.LEAVE_ACTIVITY), N.A.stopFrame({
                 applicationId: e
             })
-        }, [en]), eg = l.useCallback(() => {
+        }, [en]), ep = l.useCallback(() => {
             (0, T.A)(t)
         }, [t]), ef = l.useCallback(() => {
             (0, u.mMO)(async () => {
@@ -107,14 +107,14 @@ let Y = l.memo(function(e) {
                 } = await Promise.all([n.e("96811"), n.e("53612")]).then(n.bind(n, 648230));
                 return t => (0, i.jsx)(e, {
                     ...t,
-                    sourcePID: g?.pid,
+                    sourcePID: p?.pid,
                     selectSource: null != P.A.getVoiceChannelId(),
                     analyticsLocations: ei
                 })
             })
-        }, [g, ei]), ex = D?.name ?? g?.name ?? "", eE = l.useCallback(() => {
+        }, [p, ei]), ex = D?.name ?? p?.name ?? "", eE = l.useCallback(() => {
             (0, b.pK)({
-                gameApplicationId: g?.id,
+                gameApplicationId: p?.id,
                 buttonVariant: "admin"
             }), (0, u.mMO)(async () => {
                 let {
@@ -122,20 +122,20 @@ let Y = l.memo(function(e) {
                 } = await n.e("74132").then(n.bind(n, 279871));
                 return t => (0, i.jsx)(e, {
                     gameName: ex,
-                    gameApplicationId: g?.id,
+                    gameApplicationId: p?.id,
                     ...t
                 })
             })
-        }, [ex, g?.id]), eI = l.useCallback(() => {
+        }, [ex, p?.id]), eI = l.useCallback(() => {
             a()(null != r, "Received null guildId"), (0, b.pK)({
-                gameApplicationId: g?.id,
+                gameApplicationId: p?.id,
                 buttonVariant: "member"
             }), (0, S.A)({
                 analyticsLocations: ei,
                 analyticsLocation: Y.location,
                 guildId: r
             })
-        }, [r, ei, Y.location, g?.id]), eC = l.useRef(null), [eN, eT] = l.useState(!1);
+        }, [r, ei, Y.location, p?.id]), eC = l.useRef(null), [eN, eT] = l.useState(!1);
         l.useEffect(() => () => {
             null != eC.current && clearTimeout(eC.current)
         }, []), l.useEffect(() => {
@@ -151,7 +151,7 @@ let Y = l.memo(function(e) {
                 }),
                 onClick: eE,
                 onViewed: () => (0, b.ET)({
-                    gameApplicationId: g?.id,
+                    gameApplicationId: p?.id,
                     buttonVariant: "admin"
                 }),
                 renderCoachmark: e => {
@@ -162,7 +162,7 @@ let Y = l.memo(function(e) {
                     } = e;
                     return (0, i.jsx)(R.C, {
                         gameName: ex,
-                        runningGameId: g?.id,
+                        runningGameId: p?.id,
                         targetElementRef: t,
                         onClick: () => {
                             eE(), n(V.i.TAKE_ACTION), l(V.i.TAKE_ACTION)
@@ -176,7 +176,7 @@ let Y = l.memo(function(e) {
                 }),
                 onClick: eI,
                 onViewed: () => (0, b.ET)({
-                    gameApplicationId: g?.id,
+                    gameApplicationId: p?.id,
                     buttonVariant: "member"
                 }),
                 renderCoachmark: e => {
@@ -187,7 +187,7 @@ let Y = l.memo(function(e) {
                     } = e;
                     return (0, i.jsx)(R.D, {
                         gameName: ex,
-                        runningGameId: g?.id,
+                        runningGameId: p?.id,
                         targetElementRef: t,
                         onClick: () => {
                             eI(), n(V.i.TAKE_ACTION), l(V.i.TAKE_ACTION)
@@ -198,14 +198,14 @@ let Y = l.memo(function(e) {
             }) : null,
             ev = function() {
                 let e, t, n;
-                if (null == g && null != C && !(0, _.f)() || !d && !s) return null;
+                if (null == p && null != C && !(0, _.f)() || !d && !s) return null;
                 let l = null;
                 return d ? (e = !1, t = () => {
-                    eg(), (0, E.X)(en, E.O.STREAM, !1)
+                    ep(), (0, E.X)(en, E.O.STREAM, !1)
                 }, n = u.GT3, l = H.intl.string(H.t.S5anIc)) : m ? (e = !1, t = () => {
                     ef(), (0, E.X)(en, E.O.STREAM, !0)
-                }, n = u.Fzq, l = null != g ? H.intl.formatToPlainString(H.t.AB5gTy, {
-                    game: g.name
+                }, n = u.Fzq, l = null != p ? H.intl.formatToPlainString(H.t.AB5gTy, {
+                    game: p.name
                 }) : H.intl.string(H.t.FeUKeA)) : (e = !0, t = null, n = u.Fzq, null != A && (0, U.gV)(A.type) && (l = H.intl.string(H.t.uQn9B8))), (0, i.jsx)("div", {
                     className: W.IF,
                     children: (0, i.jsx)(w.A, {
@@ -229,12 +229,12 @@ let Y = l.memo(function(e) {
             }),
             eR = null == O ? null : (0, i.jsx)(w.A, {
                 tooltipText: H.intl.string(H.t["R/FK4A"]),
-                onClick: ep(O.applicationId),
+                onClick: eg(O.applicationId),
                 icon: u.oLl
             }),
             eO = null == t ? null : (0, i.jsx)(I.A, {}),
             eL = !Z || ee ? null : (0, i.jsx)(z, {
-                runningGame: g,
+                runningGame: p,
                 startAuthorization: () => {
                     J({
                         analyticsLocations: ei
@@ -299,11 +299,11 @@ function q(e) {
             isQuestBarEmpty: h,
             hasLoadedQuestBar: _
         } = (0, O.c9)(),
-        [m, p] = (0, C.kn)(!c && h && _ ? [d.M.GAME_DETECTION_CREATE_GAME_SERVER_COACHMARK] : [], void 0, !0),
+        [m, g] = (0, C.kn)(!c && h && _ ? [d.M.GAME_DETECTION_CREATE_GAME_SERVER_COACHMARK] : [], void 0, !0),
         [f, x] = (0, C.kn)([d.M.GAME_SERVER_GAME_DETECTION_UPSELL_NEW_BADGE], void 0, !0),
         E = l.useCallback(() => {
-            p(V.i.TAKE_ACTION), x(V.i.TAKE_ACTION), n()
-        }, [p, x, n]);
+            g(V.i.TAKE_ACTION), x(V.i.TAKE_ACTION), n()
+        }, [g, x, n]);
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsxs)("div", {
             className: W.IF,
@@ -317,14 +317,14 @@ function q(e) {
                 tooltipText: t,
                 onClick: E,
                 icon: u._xR
-            }), f === d.M.GAME_SERVER_GAME_DETECTION_UPSELL_NEW_BADGE && (0, i.jsx)(g.a, {
+            }), f === d.M.GAME_SERVER_GAME_DETECTION_UPSELL_NEW_BADGE && (0, i.jsx)(p.a, {
                 top: 2,
                 right: 2,
                 alert: !0
             })]
         }), null != m && a({
             targetElementRef: r,
-            markAsDismissed: p,
+            markAsDismissed: g,
             markBadgeAsDismissed: x
         })]
     })

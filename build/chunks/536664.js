@@ -60,10 +60,10 @@ function R() {
                 s = !1;
             switch (n) {
                 case p.OverlayToggledClientSettingType.LEGACY_GAME:
-                    U(t), c.A.toggleOverlay(e, t, D), i = !t && M;
+                    U(t), c.Ay.toggleOverlay(e, t, D), i = !t && M;
                     break;
                 case p.OverlayToggledClientSettingType.OOP_GAME:
-                    G(t), c.A.toggleOverlay(e, M, t), s = !t && D;
+                    G(t), c.Ay.toggleOverlay(e, M, t), s = !t && D;
                     break;
                 case p.OverlayToggledClientSettingType.LEGACY:
                     u.A.setEnabled(t, H), (0, p.Q3)(t, p.OverlayToggledClientSettingType.LEGACY, e.id ?? null);
@@ -164,7 +164,7 @@ function R() {
             }
         })();
     (0, g.Ay)(() => {
-        c.A.getDetectableGames()
+        c.Ay.getDetectableGames()
     });
     let [el, ea] = s.useMemo(() => Q ? ["text-muted", d.LU0.colors.TEXT_MUTED.css] : q && $ ? ["text-feedback-warning", d.LU0.colors.TEXT_FEEDBACK_WARNING.css] : q && J ? ["text-feedback-positive", d.LU0.colors.TEXT_FEEDBACK_POSITIVE.css] : q && ee ? ["text-strong", d.LU0.colors.TEXT_STRONG.css] : ["interactive-text-default", d.LU0.colors.INTERACTIVE_TEXT_DEFAULT.css], [Q, q, $, J, ee]);
     return null == e ? null : (0, i.jsxs)(v.A, {
@@ -217,13 +217,13 @@ function R() {
                             s = !1;
                         switch (n) {
                             case "game":
-                                c.A.toggleOverlay(e, t, t), U(t), G(t), i = !t && M, s = !t && D;
+                                c.Ay.toggleOverlay(e, t, t), U(t), G(t), i = !t && M, s = !t && D;
                                 break;
                             case "global":
                                 u.A.setEnabled(t, t), i = !t && F, s = !t && H;
                                 break;
                             case "both":
-                                u.A.setEnabled(t, t), c.A.toggleOverlay(e, t, t), U(t), G(t), i = !t && F || !t && M, s = !t && H || !t && D
+                                u.A.setEnabled(t, t), c.Ay.toggleOverlay(e, t, t), U(t), G(t), i = !t && F || !t && M, s = !t && H || !t && D
                         }
                         let l = null;
                         i ? l = "game" === n ? p.OverlayToggledClientSettingType.LEGACY_GAME : p.OverlayToggledClientSettingType.LEGACY : s && (l = "game" === n ? p.OverlayToggledClientSettingType.OOP_GAME : p.OverlayToggledClientSettingType.OOP), null != l && (0, S.L)(l, e.id ?? null)

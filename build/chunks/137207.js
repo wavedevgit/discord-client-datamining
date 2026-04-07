@@ -46,14 +46,14 @@ function m(e) {
     }
 }
 
-function p(e) {
+function g(e) {
     return {
         type: e.type,
         metadata: (0, u.W)(e.metadata)
     }
 }
 
-function g(e) {
+function p(e) {
     let t = {
         id: e.id ?? d.default.fromTimestamp(Date.now()),
         name: e.name,
@@ -61,7 +61,7 @@ function g(e) {
         eventType: e.event_type,
         triggerType: e.trigger_type,
         triggerMetadata: (0, u.W)(e.trigger_metadata),
-        actions: e.actions.filter(o.Vq).map(p),
+        actions: e.actions.filter(o.Vq).map(g),
         enabled: e.enabled,
         creatorId: e.creator_id,
         position: e.position,
@@ -81,7 +81,7 @@ async function f(e) {
 }
 async function x(e) {
     let t = m(e);
-    return delete t.id, g((await i.Bo.post({
+    return delete t.id, p((await i.Bo.post({
         url: A.Rsh.GUILD_AUTOMOD_RULES(e.guildId),
         body: t,
         rejectWithError: !1
@@ -89,7 +89,7 @@ async function x(e) {
 }
 async function E(e) {
     let t = m(e);
-    return g((await i.Bo.patch({
+    return p((await i.Bo.patch({
         url: A.Rsh.GUILD_AUTOMOD_RULE(e.guildId, e.id),
         body: t,
         rejectWithError: !1
@@ -106,7 +106,7 @@ async function C(e) {
         url: A.Rsh.GUILD_AUTOMOD_RULES(e),
         rejectWithError: !1
     });
-    return Array.isArray(t.body) ? t.body.map(g) : []
+    return Array.isArray(t.body) ? t.body.map(p) : []
 }
 async function N(e, t, n) {
     r.A.can(A.xBc.MANAGE_MESSAGES, t) && await i.Bo.post({

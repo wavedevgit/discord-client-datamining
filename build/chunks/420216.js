@@ -16,8 +16,8 @@ var l = n(554146),
     A = n(745299),
     _ = n(976860),
     m = n(780964),
-    p = n(718446),
-    g = n(858897),
+    g = n(718446),
+    p = n(858897),
     f = n(879945),
     x = n(954571),
     E = n(379848),
@@ -171,7 +171,7 @@ let v = e => {
                                 x.default.track(C.HAw.PREMIUM_PROMOTION_OPENED, {
                                     location_section: C.JJy.NOTIFICATION_BAR,
                                     location_object: C.ZSU.BUTTON_CTA
-                                }), (0, g.openUserSettings)(m.X.NITRO_PANEL)
+                                }), (0, p.openUserSettings)(m.X.NITRO_PANEL)
                             },
                             children: S.intl.string(S.t["8JC5e/"])
                         }), (0, i.jsx)(s.PMB, {
@@ -200,7 +200,7 @@ let v = e => {
                         }), S.intl.string(S.t["0KFB2B"]), (0, i.jsx)(s.Z_L, {
                             noticeType: v,
                             onClick: () => {
-                                E(I.i.UNKNOWN), (0, g.openUserSettings)(m.X.NITRO_PANEL)
+                                E(I.i.UNKNOWN), (0, p.openUserSettings)(m.X.NITRO_PANEL)
                             },
                             children: S.intl.string(S.t.pyYSiO)
                         })]
@@ -214,7 +214,7 @@ let v = e => {
                         }), S.intl.string(S.t["7490vQ"]), (0, i.jsx)(s.Z_L, {
                             noticeType: v,
                             onClick: () => {
-                                (0, _.pX)((0, p.settingsPathToRoute)(T.od.ACCOUNT))
+                                (0, _.pX)((0, g.settingsPathToRoute)(T.od.ACCOUNT))
                             },
                             children: S.intl.string(S.t.Vm8akB)
                         })]

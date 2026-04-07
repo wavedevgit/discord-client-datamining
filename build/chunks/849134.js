@@ -22,28 +22,28 @@ function c(e) {
         caretConfig: m = {
             align: "start"
         },
-        skuImageDetails: p,
-        title: g,
+        skuImageDetails: g,
+        title: p,
         body: f,
         overlayImageUrl: x
     } = e;
     l.useEffect(() => {
         n?.()
     }, [n]);
-    let E = l.useMemo(() => p?.imageUrl == null ? {
+    let E = l.useMemo(() => g?.imageUrl == null ? {
         type: "image",
         src: d.A,
         aspectRatio: "6/4"
     } : (0, a.e)({
-        imageUrl: p?.imageUrl,
-        backgroundImageUrl: p?.backgroundImageUrl,
+        imageUrl: g?.imageUrl,
+        backgroundImageUrl: g?.backgroundImageUrl,
         altText: r.intl.string(r.t["ulQB+t"]),
         overlayImageUrl: x,
         customClassNames: {
             containerClassName: o.z,
             foregroundImageClassName: o._
         }
-    }), [p?.imageUrl, p?.backgroundImageUrl, x]);
+    }), [g?.imageUrl, g?.backgroundImageUrl, x]);
     return (0, i.jsx)(s.AM, {
         size: "lg",
         shouldShow: !0,
@@ -64,7 +64,7 @@ function c(e) {
             onMouseDown: h
         }],
         targetElementRef: t,
-        title: g ?? r.intl.string(r.t.Ylu2JM),
+        title: p ?? r.intl.string(r.t.Ylu2JM),
         body: f ?? r.intl.string(r.t.vgylLQ),
         graphic: E
     })

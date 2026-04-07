@@ -19,12 +19,12 @@ function u(e) {
         renderComponent: h,
         nudgeAlignIntoViewport: A = !1,
         skipForceHide: _ = !1
-    } = e, m = l.useContext(d.vG), [p, g] = l.useState(""), [f, x] = l.useState(!1), E = (0, s.bG)([o.Ay], () => o.Ay.callHeaderHeight), I = l.useRef(null), C = l.useRef(0);
+    } = e, m = l.useContext(d.vG), [g, p] = l.useState(""), [f, x] = l.useState(!1), E = (0, s.bG)([o.Ay], () => o.Ay.callHeaderHeight), I = l.useRef(null), C = l.useRef(0);
     l.useEffect(() => {
         let e = t.current;
         if (null != e) return e.addEventListener("click", u), () => e.removeEventListener("click", u)
     }), l.useEffect(() => {
-        _ || (g(String(C.current)), x(void 0 !== E && E < (I.current?.clientHeight ?? 300) + 24), C.current += 1)
+        _ || (p(String(C.current)), x(void 0 !== E && E < (I.current?.clientHeight ?? 300) + 24), C.current += 1)
     }, [E, I, _]);
     let {
         preventIdle: N,
@@ -36,7 +36,7 @@ function u(e) {
             position: "top",
             align: "center",
             spacing: 0,
-            positionKey: p,
+            positionKey: g,
             nudgeAlignIntoViewport: A,
             children: () => (0, i.jsx)("div", {
                 ref: I,

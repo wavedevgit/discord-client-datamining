@@ -32,8 +32,8 @@ var n = s(627968),
     T = s(114166),
     N = s(810181),
     b = s(390248),
-    _ = s(77350),
-    F = s(294520),
+    F = s(77350),
+    _ = s(294520),
     M = s(505527),
     y = s(863439),
     I = s(465364),
@@ -46,8 +46,8 @@ var n = s(627968),
     R = s(761640),
     G = s(734057),
     H = s(576705),
-    D = s(994500),
-    U = s(531685),
+    U = s(994500),
+    D = s(531685),
     z = s(405269),
     B = s(200463),
     W = s(435470),
@@ -124,8 +124,8 @@ let ei = 72,
         }, [j, a, t]);
         let b = l.useRef(null),
             {
-                handleLeftClick: _,
-                handleRightClick: F
+                handleLeftClick: F,
+                handleRightClick: _
             } = (0, ee.A)({
                 facepileRef: b,
                 goToThread: s,
@@ -144,17 +144,17 @@ let ei = 72,
         return (0, n.jsxs)("div", {
             ref: j,
             "data-item-id": t,
-            onClick: _,
-            onContextMenu: F,
+            onClick: F,
+            onContextMenu: _,
             className: i()(el.kL, d, {
                 [el.nT]: x
             }),
             children: [(0, n.jsx)(A.DUT, {
-                onClick: _,
+                onClick: F,
                 focusProps: {
                     ringTarget: j
                 },
-                onContextMenu: F,
+                onContextMenu: _,
                 "aria-label": en.intl.formatToPlainString(en.t.pgYN6c, {
                     title: g.name,
                     count: f
@@ -268,9 +268,9 @@ let eu = l.memo(function(e) {
     } = e, {
         isBlocked: o,
         isIgnored: d
-    } = (0, m.cf)([D.A], () => ({
-        isBlocked: null != t && D.A.isBlockedForMessage(t),
-        isIgnored: null != t && D.A.isIgnoredForMessage(t)
+    } = (0, m.cf)([U.A], () => ({
+        isBlocked: null != t && U.A.isBlockedForMessage(t),
+        isIgnored: null != t && U.A.isIgnoredForMessage(t)
     })), c = (0, m.bG)([V.A], () => V.A.isLoading(s.id)), u = (0, m.bG)([H.A], () => H.A.can(et.xBc.MANAGE_MESSAGES, s)), h = E.gs.useSetting(), g = null;
     if (o) g = (0, n.jsx)(A.Text, {
         className: el.Wv,
@@ -501,7 +501,7 @@ function ep(e) {
         shouldObscure: s,
         obscureReason: l,
         shouldShowAgeVerification: a
-    } = e, r = (0, m.bG)([U.A], () => U.A.isFocused()), o = (0, _.ge)(t.src), d = E.kt.useSetting(), c = (0, F.rx)(l), {
+    } = e, r = (0, m.bG)([D.A], () => D.A.isFocused()), o = (0, F.ge)(t.src), d = E.kt.useSetting(), c = (0, _.rx)(l), {
         src: u,
         width: h,
         height: g,
@@ -549,7 +549,7 @@ function eC(e) {
     let {
         channel: t,
         firstMedia: s
-    } = e, [l, a] = (0, F.eJ)({
+    } = e, [l, a] = (0, _.eJ)({
         media: s,
         channel: t
     }), i = (0, b.qZ)(a);

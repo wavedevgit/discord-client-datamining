@@ -15,8 +15,8 @@ var i = n(627968),
     A = n(676002),
     _ = n(296216),
     m = n(963027),
-    p = n(202384),
-    g = n(51758),
+    g = n(202384),
+    p = n(51758),
     f = n(721592),
     x = n(214660),
     E = n(824865),
@@ -88,7 +88,7 @@ class Y extends P.Ay {
             unverifiedAccount: i,
             isSuggestedSection: l
         } = this.props, s = e.getGuildId();
-        null != s && (0, g.V)(s) && (0, p.Ze)(s), i && this.setState({
+        null != s && (0, p.V)(s) && (0, g.Ze)(s), i && this.setState({
             shouldShowGuildVerificationPopout: !0
         }), t || n || e.isRoleSubscriptionTemplatePreviewChannel() || (0, C.av)(e), __OVERLAY__ || (0, I.iN)(e.id, l ? {
             source: E.A.CHANNEL_LIST_SUGGESTED_SECTION
@@ -199,8 +199,8 @@ class Y extends P.Ay {
             canReorderChannel: h,
             canMoveMembers: A,
             stageInstance: _,
-            isSubscriptionGated: p,
-            needSubscriptionToAccess: g,
+            isSubscriptionGated: g,
+            needSubscriptionToAccess: p,
             unread: f,
             resolvedUnreadSetting: x,
             mentionCount: E,
@@ -247,8 +247,8 @@ class Y extends P.Ay {
                             channel: e,
                             unread: f,
                             mentionCount: E,
-                            isSubscriptionGated: p,
-                            needSubscriptionToAccess: g
+                            isSubscriptionGated: g,
+                            needSubscriptionToAccess: p
                         }),
                         children: [I && this.renderAcceptSuggestionButton(), I && this.renderRemoveSuggestionButton(), !I && this.renderOpenChatButton(), !I && this.renderInviteButton(), !I && this.renderEditButton(), !I && this.renderChannelInfo()]
                     })
@@ -283,15 +283,15 @@ function q(e) {
             unverifiedAccount: !i.canChat
         }
     }), h = (0, r.bG)([y.A], () => y.A.isCollapsed(n.parent_id)), A = (0, v.Ay)(n.id), _ = (0, r.bG)([S.A], () => S.A.getStageInstanceByChannel(n.id), [n.id]), m = (0, N.zy)(n.id, T.ip.AUDIENCE), {
-        isSubscriptionGated: p,
-        needSubscriptionToAccess: g
+        isSubscriptionGated: g,
+        needSubscriptionToAccess: p
     } = (0, f.A)(n.id), x = (0, r.bG)([D.Ay], () => D.Ay.isFavorite(t.id, n.id)), E = (0, b.xn)(n.id), I = (0, k.A)({
         channel: n,
         isChannelSelected: !1,
         isChannelCollapsed: a,
         voiceStates: o,
-        isSubscriptionGated: p,
-        needSubscriptionToAccess: g,
+        isSubscriptionGated: g,
+        needSubscriptionToAccess: p,
         enableConnectedUserLimit: E || n.userLimit > 0 && n.userLimit < V.RCc
     }), C = e.connected && null == I;
     return (0, i.jsx)(z, {
@@ -299,8 +299,8 @@ function q(e) {
         connectAction: A,
         numAudience: m,
         stageInstance: _,
-        isSubscriptionGated: p,
-        needSubscriptionToAccess: g,
+        isSubscriptionGated: g,
+        needSubscriptionToAccess: p,
         ...d,
         ...u,
         ...e,

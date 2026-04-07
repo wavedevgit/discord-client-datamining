@@ -1,6 +1,6 @@
 /** chunk id: 530484 params = (module,exports,require) **/
 n.d(t, {
-    A: () => p
+    A: () => g
 });
 var i = n(627968);
 n(64700);
@@ -17,12 +17,12 @@ var l = n(311907),
     _ = n(985018),
     m = n(567431);
 
-function p(e) {
+function g(e) {
     let {
         guild: t,
-        selected: p
+        selected: g
     } = e, {
-        hasUnread: g,
+        hasUnread: p,
         mentionCount: f
     } = (0, l.cf)([c.Ay], () => ({
         hasUnread: c.Ay.hasUnread(t.id, A.P.GUILD_EVENT),
@@ -51,7 +51,7 @@ function p(e) {
             className: e
         }),
         text: C,
-        selected: p,
+        selected: g,
         onClick: E,
         onContextMenu: e => {
             (0, r.L3)(e, async () => {
@@ -64,7 +64,7 @@ function p(e) {
                 })
             })
         },
-        showUnread: g && !x,
+        showUnread: p && !x,
         trailing: !x && f > 0 ? (0, i.jsx)(a.hVq, {
             className: m.Do,
             disableColor: !0,

@@ -1,12 +1,12 @@
 /** chunk id: 620982 params = (module,exports,require) **/
 n.d(t, {
-    A: () => a
+    A: () => r
 });
 var l = n(311907),
     s = n(961350),
     i = n(470710);
 
-function a(e) {
+function r(e) {
     return (0, l.cf)([i.A, s.default], () => {
         let t = i.A.getCall(e),
             n = s.default.getId(),

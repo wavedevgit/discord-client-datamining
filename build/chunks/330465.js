@@ -15,8 +15,8 @@ var i = n(627968),
     A = n(397927),
     _ = n(308528),
     m = n(442433),
-    p = n(817281),
-    g = n(658128),
+    g = n(817281),
+    p = n(658128),
     f = n(976860),
     x = n(345942),
     E = n(260509),
@@ -97,7 +97,7 @@ let P = l.memo(function(e) {
                 nodeId: t.id
             }),
             end() {
-                m?.(), (0, p.um)(C.Ay.getCompatibleGuildFolders())
+                m?.(), (0, g.um)(C.Ay.getCompatibleGuildFolders())
             },
             collect: e => ({
                 dragging: e.isDragging()
@@ -109,9 +109,9 @@ let P = l.memo(function(e) {
         [eu, eh] = l.useState(!1),
         [eA, e_] = l.useState(!1),
         [em] = l.useState(() => new h.J_(70, () => e_(!0))),
-        ep = (0, N.nr)() && !c.Fr;
+        eg = (0, N.nr)() && !c.Fr;
     l.useEffect(() => () => em.cancel(), [em]);
-    let eg = l.useCallback(() => {
+    let ep = l.useCallback(() => {
             null != P ? (0, f.pX)(P, {
                 state: U
             }) : (0, x.u)(ee, {
@@ -120,7 +120,7 @@ let P = l.memo(function(e) {
         }, [ee, P]),
         ef = l.useCallback(() => {
             if (null != P || null == k || F || !X) return;
-            let e = (0, g.W)(k.id);
+            let e = (0, p.W)(k.id);
             null != e && _.A.preload(k.id, e)
         }, [P, k, F, X]),
         ex = (0, u.bG)([I.Ay], () => I.Ay.isCurrentUserGuest(ee)),
@@ -164,10 +164,10 @@ let P = l.memo(function(e) {
                 eA || eh(!1)
             }
         }),
-        ej = ep ? (0, i.jsx)(A.jlP, {
+        ej = eg ? (0, i.jsx)(A.jlP, {
             ariaLabel: ev,
             name: k.name,
-            onClick: eg,
+            onClick: ep,
             onMouseEnter: eN,
             onMouseLeave: eT,
             onMouseDown: ef,
@@ -190,7 +190,7 @@ let P = l.memo(function(e) {
                 children: (0, i.jsx)(A.jlP, {
                     ariaLabel: ev,
                     name: k.name,
-                    onClick: eg,
+                    onClick: ep,
                     onMouseEnter: eN,
                     onMouseLeave: eT,
                     onMouseDown: ef,
@@ -209,7 +209,7 @@ let P = l.memo(function(e) {
         eO = (0, i.jsx)(v.g4, {
             children: (0, i.jsx)(j.A, {})
         }),
-        eL = ep ? (0, i.jsx)(o.animated.div, {
+        eL = eg ? (0, i.jsx)(o.animated.div, {
             ref: z ? e => {
                 ea(e)
             } : void 0,

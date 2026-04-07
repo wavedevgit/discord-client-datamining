@@ -15,8 +15,8 @@ var i = n(627968),
     A = n(676002),
     _ = n(296216),
     m = n(685399),
-    p = n(271683),
-    g = n(186369),
+    g = n(271683),
+    p = n(186369),
     f = n(725613),
     x = n(963027),
     E = n(844262),
@@ -176,7 +176,7 @@ class en extends K.Ay {
             connected: t,
             channel: n
         } = this.props;
-        t && (e.stopPropagation(), (0, p.A)({
+        t && (e.stopPropagation(), (0, g.A)({
             channel: n
         }))
     };
@@ -300,8 +300,8 @@ class en extends K.Ay {
             connectChannelDropTarget: A,
             connectChannelDragSource: _,
             connectUserDropTarget: m,
-            connectDragPreview: p,
-            canReorderChannel: g,
+            connectDragPreview: g,
+            canReorderChannel: p,
             canMoveMembers: f,
             showTutorial: I,
             hasActiveEvent: C,
@@ -368,7 +368,7 @@ class en extends K.Ay {
                             onContextMenu: e => {
                                 this.handleContextMenu(e)
                             },
-                            connectDragPreview: p,
+                            connectDragPreview: g,
                             isFavoriteSuggestion: S,
                             "aria-label": (0, x.Ay)({
                                 channel: e,
@@ -393,7 +393,7 @@ class en extends K.Ay {
                 })
             }), this.renderHangoutWindow(), this.renderVoiceUsers()]
         });
-        return f && (D = m(D)), g && (D = A(_(D))), I && (D = (0, i.jsx)(U.A, {
+        return f && (D = m(D)), p && (D = A(_(D))), I && (D = (0, i.jsx)(U.A, {
             childRef: this.ref,
             tutorialId: "voice-conversations",
             position: "right",
@@ -427,7 +427,7 @@ function el(e) {
             bypassLimit: B.A.can(J.xBc.MOVE_MEMBERS, n),
             unverifiedAccount: !i.canChat
         }
-    }), A = (0, r.bG)([F.A], () => F.A.hasVideo(n.id)), _ = (0, m.Ay)(n), p = (0, I.Ay)(n), x = (0, y.Qs)(n.id), E = (0, r.bG)([f.A], () => null != f.A.getStartTime(n), [n]), {
+    }), A = (0, r.bG)([F.A], () => F.A.hasVideo(n.id)), _ = (0, m.Ay)(n), g = (0, I.Ay)(n), x = (0, y.Qs)(n.id), E = (0, r.bG)([f.A], () => null != f.A.getStartTime(n), [n]), {
         isSubscriptionGated: C,
         needSubscriptionToAccess: N
     } = (0, v.A)(n.id), S = (0, T.A)(), b = (0, r.bG)([H.Ay], () => H.Ay.isFavorite(t.id, n.id)), j = e.connected || S?.channelId === n.id, {
@@ -446,7 +446,7 @@ function el(e) {
     }), {
         enableHighlight: U,
         enableWaveformIcon: G
-    } = (0, g.b)(t.id, "VoiceChannel"), k = null != d && d.length > 0, W = U && k, K = G && k, z = (0, Y.A)({
+    } = (0, p.b)(t.id, "VoiceChannel"), k = null != d && d.length > 0, W = U && k, K = G && k, z = (0, Y.A)({
         channel: n,
         isChannelSelected: a,
         isChannelCollapsed: o,
@@ -457,7 +457,7 @@ function el(e) {
         enableActivities: !0
     }), q = j && null == z;
     return (0, i.jsx)(ei, {
-        channelName: p,
+        channelName: g,
         embeddedApps: _,
         embeddedActivityType: J.$pd.PLAYING,
         video: A,

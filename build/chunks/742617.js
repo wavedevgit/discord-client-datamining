@@ -1,6 +1,6 @@
 /** chunk id: 742617 params = (module,exports,require) **/
 n.d(t, {
-    A: () => p
+    A: () => g
 });
 var i = n(627968);
 n(64700);
@@ -46,12 +46,12 @@ function m(e) {
     }) : null
 }
 
-function p(e) {
+function g(e) {
     let {
         activity: t,
         embeddedApp: n,
         channel: d
-    } = e, c = Array.from(n.embeddedActivity.userIds), p = (0, l.yK)([o.default], () => c.map(e => o.default.getUser(e)).filter(u.Vq));
+    } = e, c = Array.from(n.embeddedActivity.userIds), g = (0, l.yK)([o.default], () => c.map(e => o.default.getUser(e)).filter(u.Vq));
     return (0, i.jsx)("div", {
         className: A.ec,
         children: (0, i.jsxs)("div", {
@@ -80,7 +80,7 @@ function p(e) {
                 }), c.length > 0 && (0, i.jsx)(r.Ay, {
                     className: A.TN,
                     guildId: d.guild_id,
-                    users: p,
+                    users: g,
                     size: _,
                     max: 7,
                     renderUser: e => {

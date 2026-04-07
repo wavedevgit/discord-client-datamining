@@ -15,8 +15,8 @@ var i = n(627968),
     A = n(793574),
     _ = n(688810),
     m = n(222823),
-    p = n(203982),
-    g = n(661191),
+    g = n(203982),
+    p = n(661191),
     f = n(851109),
     x = n(932883),
     E = n(39324),
@@ -153,8 +153,8 @@ function D(e) {
                 animate: !0
             })
         }
-        return p._.subscribe(b.jej.SCROLL_PAGE_DOWN, t), p._.subscribe(b.jej.SCROLL_PAGE_UP, e), () => {
-            p._.unsubscribe(b.jej.SCROLL_PAGE_DOWN, t), p._.unsubscribe(b.jej.SCROLL_PAGE_UP, e)
+        return g._.subscribe(b.jej.SCROLL_PAGE_DOWN, t), g._.subscribe(b.jej.SCROLL_PAGE_UP, e), () => {
+            g._.unsubscribe(b.jej.SCROLL_PAGE_DOWN, t), g._.unsubscribe(b.jej.SCROLL_PAGE_UP, e)
         }
     }, []);
     let q = l.useCallback(() => {
@@ -188,7 +188,7 @@ function D(e) {
                 let n = (0, C.i7)(e);
                 e.kind === S.yL.MENTION ? t[n].push(e) : e.channelId in i[n] ? i[n][e.channelId].push(e) : i[n][e.channelId] = [e]
             }), o().each(L, n => {
-                [...Object.values(i[n]).map(e => e.reverse()), ...t[n].map(e => [e])].sort((e, t) => g.default.compare(t[0].id, e[0].id)).forEach(t => {
+                [...Object.values(i[n]).map(e => e.reverse()), ...t[n].map(e => [e])].sort((e, t) => p.default.compare(t[0].id, e[0].id)).forEach(t => {
                     e[n].push(t)
                 })
             })), e

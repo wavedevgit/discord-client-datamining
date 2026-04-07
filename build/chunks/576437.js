@@ -1,6 +1,6 @@
 /** chunk id: 576437 params = (module,exports,require) **/
 n.d(t, {
-    M: () => g
+    M: () => p
 });
 var i = n(627968),
     l = n(64700),
@@ -15,12 +15,12 @@ var i = n(627968),
     A = n(954571),
     _ = n(130802),
     m = n(652215),
-    p = n(49999);
-let g = e => {
+    g = n(49999);
+let p = e => {
     let {
         children: t,
         isForceShowSharingPopout: n,
-        setIsForceShowSharingPopout: g,
+        setIsForceShowSharingPopout: p,
         popoutTargetRef: f
     } = e, x = function(e) {
         let {
@@ -57,7 +57,7 @@ let g = e => {
                 showPopout: r,
                 popoutState: x,
                 handleClose: () => {
-                    s(p.i.USER_DISMISS), g(!1)
+                    s(g.i.USER_DISMISS), p(!1)
                 },
                 popoutTargetRef: f,
                 children: t

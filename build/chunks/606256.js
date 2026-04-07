@@ -19,8 +19,8 @@ let A = l.forwardRef(function(e, t) {
         onContextMenu: A,
         icon: _,
         selected: m,
-        tooltip: p,
-        upperBadge: g,
+        tooltip: g,
+        upperBadge: p,
         lowerBadge: f,
         lowerBadgeSize: x,
         showPill: E = !0,
@@ -30,7 +30,7 @@ let A = l.forwardRef(function(e, t) {
         onMouseEnter: T,
         onMouseLeave: S,
         onMouseDown: b
-    } = e, v = (0, r.Vd)(n), [y, j] = l.useState(!1), R = "string" == typeof p && null == C ? p : C;
+    } = e, v = (0, r.Vd)(n), [y, j] = l.useState(!1), R = "string" == typeof g && null == C ? g : C;
     return (0, i.jsxs)(c.c, {
         children: [E ? (0, i.jsx)("div", {
             className: h.Io,
@@ -39,11 +39,11 @@ let A = l.forwardRef(function(e, t) {
                 selected: m
             })
         }) : null, (0, i.jsx)(u.A, {
-            text: p,
+            text: g,
             selected: m,
             children: (0, i.jsx)(o.Qk9, {
                 selected: !0,
-                upperBadge: g,
+                upperBadge: p,
                 lowerBadge: f,
                 lowerBadgeSize: x,
                 children: (0, i.jsx)(o.DUT, {
