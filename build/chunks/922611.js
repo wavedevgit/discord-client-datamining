@@ -35,18 +35,18 @@ let m = r.memo(function(e) {
         size: _ = 24,
         isTyping: m = !1,
         mentionCount: f = 0,
-        isMentionLowImportance: g = !1
-    } = e, p = t?.isPrivate() ?? !1, A = t?.isMultiUserDM() ?? !1, E = n?.id, I = (0, l.bG)([d.A], () => null != E ? d.A.getStatus(E) : null, [E]), x = (0, l.bG)([d.A], () => null != E && d.A.isMobileOnline(E), [E]);
-    if (p || A) return (0, a.jsx)(c.h, {
+        isMentionLowImportance: p = !1
+    } = e, g = t?.isPrivate() ?? !1, A = t?.isMultiUserDM() ?? !1, x = n?.id, I = (0, l.bG)([d.A], () => null != x ? d.A.getStatus(x) : null, [x]), E = (0, l.bG)([d.A], () => null != x && d.A.isMobileOnline(x), [x]);
+    if (g || A) return (0, a.jsx)(c.h, {
         channel: t ?? null,
         user: n,
         "aria-hidden": !0,
         size: h(_, "user"),
         status: I,
-        isMobile: x,
+        isMobile: E,
         isTyping: m,
         mentionCount: f,
-        isMentionLowImportance: g
+        isMentionLowImportance: p
     });
     if (null == i) return (0, a.jsx)(s.oyn, {
         size: h(_, "default"),

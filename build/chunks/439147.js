@@ -19,19 +19,19 @@ async function _(e, t) {
     let l = o.A.getMessages(e),
         _ = l.toArray().filter(e => 0 > u.default.compare(e.id, t)).sort((e, t) => u.default.compare(e.id, t.id)).reverse()[0],
         m = null == _ ? u.default.atPreviousMillisecond(t) : _.id,
-        g = 0;
+        p = 0;
     l.forAll(e => {
-        u.default.compare(e.id, m) > 0 && (0, d.Wm)(e, n) && g++
+        u.default.compare(e.id, m) > 0 && (0, d.Wm)(e, n) && p++
     });
-    let p = r.A.getChannel(e);
-    null != p && p.isThread() && (p.isArchivedThread() && await a.A.unarchiveThread(p, !1), s.A.hasJoined(e) || await a.A.joinThread(p, "Mark Unread")), A.log("Marking unread", {
+    let g = r.A.getChannel(e);
+    null != g && g.isThread() && (g.isArchivedThread() && await a.A.unarchiveThread(g, !1), s.A.hasJoined(e) || await a.A.joinThread(g, "Mark Unread")), A.log("Marking unread", {
         channelId: e,
         messageId: t
     }), i.Bo.post({
         url: h.Rsh.MESSAGE_ACK(e, m),
         body: {
             manual: !0,
-            mention_count: g
+            mention_count: p
         },
         oldFormErrors: !0,
         rejectWithError: !0

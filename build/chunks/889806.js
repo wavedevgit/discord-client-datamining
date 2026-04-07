@@ -15,8 +15,8 @@ var i = n(627968),
     A = n(811024),
     _ = n(685399),
     m = n(323073),
-    g = n(963027),
-    p = n(5932),
+    p = n(963027),
+    g = n(5932),
     f = n(414808),
     x = n(302005),
     E = n(721592),
@@ -26,8 +26,8 @@ var i = n(627968),
     T = n(734057),
     S = n(696451),
     b = n(71393),
-    y = n(576705),
-    v = n(383501),
+    v = n(576705),
+    y = n(383501),
     j = n(222823),
     R = n(543465),
     O = n(287809),
@@ -196,10 +196,10 @@ class B extends M.Ay {
             resolvedUnreadSetting: T,
             enableActivities: S,
             showMenuItemPopover: b,
-            markMenuItemPopoverAsDismissed: y,
-            channelItemRef: v,
+            markMenuItemPopoverAsDismissed: v,
+            channelItemRef: y,
             isSuggestedSection: j
-        } = this.props, R = v ?? this.channelItemRef, O = !b && o, L = !b && S && null != N && N.length > 0, M = (0, p.M)(E), D = (0, i.jsxs)("li", {
+        } = this.props, R = y ?? this.channelItemRef, O = !b && o, L = !b && S && null != N && N.length > 0, M = (0, g.M)(E), D = (0, i.jsxs)("li", {
             className: a()(this.getClassName(), {
                 [w.r9]: this.isDisabled(),
                 [w.wH]: n
@@ -235,7 +235,7 @@ class B extends M.Ay {
                     transitionExtras: j ? {
                         source: C.A.CHANNEL_LIST_SUGGESTED_SECTION
                     } : void 0,
-                    "aria-label": (0, g.Ay)({
+                    "aria-label": (0, p.Ay)({
                         channel: e,
                         unread: s,
                         mentionCount: c,
@@ -249,7 +249,7 @@ class B extends M.Ay {
                 })
             }), b && (0, i.jsx)(f.A, {
                 targetElementRef: R,
-                markMenuItemPopoverAsDismissed: y
+                markMenuItemPopoverAsDismissed: v
             })]
         });
         return _ ? u(h(D)) : D
@@ -268,15 +268,15 @@ function H(e) {
     } = e, {
         hasActiveThreads: u,
         hasMoreActiveThreads: h
-    } = (0, N.NR)(t), g = (0, o.cf)([j.Ay], () => ({
+    } = (0, N.NR)(t), p = (0, o.cf)([j.Ay], () => ({
         unread: j.Ay.hasUnread(t.id),
         ackMessageId: j.Ay.ackMessageId(t.id),
         isLowImportanceMention: j.Ay.getIsMentionLowImportance(t.id)
-    })), p = (0, o.bG)([R.Ay], () => R.Ay.resolveUnreadSetting(t)), f = (0, o.cf)([T.A, y.A], () => {
+    })), g = (0, o.bG)([R.Ay], () => R.Ay.resolveUnreadSetting(t)), f = (0, o.cf)([T.A, v.A], () => {
         let e = T.A.getChannel(t.parent_id);
         return {
-            canManageChannel: y.A.can(P.xBc.MANAGE_CHANNELS, t),
-            canReorderChannel: !0 !== s && (n.id === k.Vc || (null != e ? y.A.can(P.xBc.MANAGE_CHANNELS, e) : y.A.can(P.xBc.MANAGE_CHANNELS, n)))
+            canManageChannel: v.A.can(P.xBc.MANAGE_CHANNELS, t),
+            canReorderChannel: !0 !== s && (n.id === k.Vc || (null != e ? v.A.can(P.xBc.MANAGE_CHANNELS, e) : v.A.can(P.xBc.MANAGE_CHANNELS, n)))
         }
     }), C = (0, o.bG)([I.A], () => I.A.shouldIndicateNewChannel(n.id, t.id)), {
         needSubscriptionToAccess: b,
@@ -290,12 +290,12 @@ function H(e) {
         isNewChannel: C,
         muted: d,
         enableActivities: U,
-        resolvedUnreadSetting: p
+        resolvedUnreadSetting: g
     }), w = (0, _.Ay)(t), [B, H] = l.useState(!1), F = (0, r.K)(l.useCallback(e => {
         H(e)
     }, [])), {
-        showMenuItemPopover: K,
-        markMenuItemPopoverAsDismissed: W
+        showMenuItemPopover: W,
+        markMenuItemPopoverAsDismissed: K
     } = (0, x.z)({
         location: "TextChannel",
         isChannelSelected: c,
@@ -303,8 +303,8 @@ function H(e) {
         channelType: t.type,
         isPopoverAllowed: n.id !== k.Vc
     });
-    return (0, o.bG)([v.A, S.Ay], () => v.A.getChannelId() !== t.id && S.Ay.isCurrentUserGuest(t.getGuildId())) ? null : (0, i.jsx)(V, {
-        ...g,
+    return (0, o.bG)([y.A, S.Ay], () => y.A.getChannelId() !== t.id && S.Ay.isCurrentUserGuest(t.getGuildId())) ? null : (0, i.jsx)(V, {
+        ...p,
         ...f,
         ...e,
         hasActiveThreads: u,
@@ -316,11 +316,11 @@ function H(e) {
         channelIsContentGated: M,
         channelInfo: G,
         embeddedApps: w,
-        resolvedUnreadSetting: p,
+        resolvedUnreadSetting: g,
         hasChannelInfo: null != G,
         enableActivities: U,
-        showMenuItemPopover: K,
-        markMenuItemPopoverAsDismissed: W,
+        showMenuItemPopover: W,
+        markMenuItemPopoverAsDismissed: K,
         channelItemRef: F
     })
 }

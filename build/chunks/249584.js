@@ -1,16 +1,16 @@
 /** chunk id: 249584 params = (module,exports,require) **/
 n.d(t, {
     Gw: () => ee,
-    HW: () => W,
+    HW: () => K,
     K8: () => Q,
     Mr: () => et,
     Ns: () => Z,
     UB: () => Y,
-    YX: () => $,
+    YX: () => J,
     bo: () => q,
     jz: () => X,
     lw: () => z,
-    mn: () => J
+    mn: () => $
 });
 var i = n(627968),
     l = n(64700),
@@ -25,8 +25,8 @@ var i = n(627968),
     A = n(793574),
     _ = n(688810),
     m = n(509536),
-    g = n(987144),
-    p = n(976860),
+    p = n(987144),
+    g = n(976860),
     f = n(71393),
     x = n(881756),
     E = n(297930),
@@ -36,8 +36,8 @@ var i = n(627968),
     T = n(864310),
     S = n(363487),
     b = n(828162),
-    y = n(490557),
-    v = n(306113),
+    v = n(490557),
+    y = n(306113),
     j = n(220628),
     R = n(867060),
     O = n(800007),
@@ -53,9 +53,9 @@ var i = n(627968),
     V = n(108432),
     H = n(581665),
     F = n(392438),
-    K = n(20874);
+    W = n(20874);
 
-function W(e) {
+function K(e) {
     let {
         guildId: t,
         powerup: n,
@@ -63,7 +63,7 @@ function W(e) {
         markAsDismissed: s
     } = e;
     return (0, i.jsx)(en, {
-        asset: (0, i.jsx)(y.b, {
+        asset: (0, i.jsx)(v.b, {
             className: a()(w.Sl, w.SV)
         }),
         title: k.intl.formatToPlainString(P.default["Zg/m9K"], {
@@ -136,7 +136,7 @@ function z(e) {
         m = 1 === n.length;
     return (0, i.jsx)(en, {
         size: 1 === n.length ? "video" : "lg",
-        asset: n.length > 1 ? (0, i.jsx)(y.b, {
+        asset: n.length > 1 ? (0, i.jsx)(v.b, {
             className: a()(w.Sl, w.SV)
         }) : (0, i.jsx)("img", {
             alt: "",
@@ -172,7 +172,7 @@ function q(e) {
         title: k.intl.string(P.default.Ygpx4Q),
         body: k.intl.string(P.default.mmNkUA),
         size: "video",
-        asset: K.A,
+        asset: W.A,
         actions: [{
             text: k.intl.string(k.t.RzWDqY),
             variant: "primary",
@@ -279,7 +279,7 @@ function X(e) {
     })
 }
 
-function J(e) {
+function $(e) {
     let {
         guildId: t,
         markAsDismissed: n,
@@ -300,7 +300,7 @@ function J(e) {
             text: k.intl.string(k.t.RzWDqY),
             variant: "primary",
             onClick: () => {
-                n(U.i.TAKE_ACTION), (0, p.pX)(M.BVt.CHANNEL(t, D.VV.GAME_SERVERS))
+                n(U.i.TAKE_ACTION), (0, g.pX)(M.BVt.CHANNEL(t, D.VV.GAME_SERVERS))
             }
         }],
         markAsDismissed: n
@@ -354,7 +354,7 @@ function Q(e) {
     })
 }
 
-function $(e) {
+function J(e) {
     let {
         guildId: t,
         markAsDismissed: n,
@@ -442,7 +442,7 @@ function ee(e) {
         analyticsLocations: u
     } = (0, _.Ay)(A.A.GUILD_POWERUPS_COACHMARK_BOOST_TO_UNLOCK), h = (0, S.A)(t), m = l.useRef(null);
     return (0, i.jsx)(en, {
-        asset: n.type === L.o9.LEVEL ? (0, i.jsx)(v.n, {
+        asset: n.type === L.o9.LEVEL ? (0, i.jsx)(y.n, {
             powerup: n,
             eventTargetRef: m,
             className: w.Lj
@@ -466,7 +466,7 @@ function ee(e) {
                     page: M.liQ.GUILD_CHANNEL,
                     section: M.JJy.GUILD_HEADER
                 };
-                await (0, g.g)({
+                await (0, p.g)({
                     guild: e,
                     numberOfBoostsToAdd: d,
                     analyticsLocation: i,
@@ -490,7 +490,7 @@ function et(e) {
         ...r
     } = e, c = (0, d.bG)([I.A], () => I.A.getStateForGuild(t)), {
         analyticsLocations: u
-    } = (0, _.Ay)(A.A.GUILD_POWERUPS_COACHMARK_EXPIRING_PERK), m = c?.allPowerups[n.skuId], p = (0, N.A)(m, !0), x = l.useRef(null), E = (0, d.bG)([h.A], () => h.A.useReducedMotion);
+    } = (0, _.Ay)(A.A.GUILD_POWERUPS_COACHMARK_EXPIRING_PERK), m = c?.allPowerups[n.skuId], g = (0, N.A)(m, !0), x = l.useRef(null), E = (0, d.bG)([h.A], () => h.A.useReducedMotion);
     if (null == m && !n.isGameServer) return null;
     let C = n.isGameServer ? k.intl.string(P.default["9L0pAN"]) : k.intl.formatToPlainString(P.default.gG8bI8, {
             perkName: n.name
@@ -507,13 +507,13 @@ function et(e) {
             fit: "contain",
             className: w.Sl,
             stateMachine: E ? "SM_Main_Int" : "SM_Auto"
-        }) : m?.type === L.o9.LEVEL ? (0, i.jsx)(v.n, {
+        }) : m?.type === L.o9.LEVEL ? (0, i.jsx)(y.n, {
             powerup: m,
             eventTargetRef: x,
             className: w.Lj
         }) : (0, i.jsx)("img", {
             alt: "",
-            src: p,
+            src: g,
             className: w.Sl
         }),
         title: C,
@@ -528,7 +528,7 @@ function et(e) {
                     page: M.liQ.GUILD_CHANNEL,
                     section: M.JJy.GUILD_HEADER
                 };
-                await (0, g.g)({
+                await (0, p.g)({
                     guild: e,
                     numberOfBoostsToAdd: n.numExpiringBoosts,
                     analyticsLocation: i,

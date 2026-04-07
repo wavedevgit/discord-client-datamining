@@ -1,18 +1,18 @@
 /** chunk id: 199029 params = (module,exports,require) **/
-n.d(t, {
+a.d(t, {
     o: () => c
 });
-var a = n(627968),
-    l = n(64700),
-    r = n(77555),
-    s = n(151054),
-    o = n(457417),
-    i = n(642036);
+var n = a(627968),
+    r = a(64700),
+    l = a(77555),
+    s = a(151054),
+    o = a(457417),
+    i = a(642036);
 let c = () => {
     let {
         selectedDestinations: e,
         maxDestinations: t,
-        searchText: n,
+        searchText: a,
         message: c,
         channel: u,
         updateSelectShareDestinations: d
@@ -23,34 +23,34 @@ let c = () => {
         selectedDestinations: e,
         includeMissingDMs: !0
     });
-    (0, l.useEffect)(() => {
-        h(n)
-    }, [h, n]);
-    let b = (0, l.useCallback)(t => {
-            let n = e.findIndex(e => {
+    (0, r.useEffect)(() => {
+        h(a)
+    }, [h, a]);
+    let p = (0, r.useCallback)(t => {
+            let a = e.findIndex(e => {
                 let {
-                    type: n,
-                    id: a
+                    type: a,
+                    id: n
                 } = e;
-                return n === t.type && a === t.id
+                return a === t.type && n === t.id
             });
-            if (-1 !== n) {
+            if (-1 !== a) {
                 let t = [...e];
-                t.splice(n, 1), d(t);
+                t.splice(a, 1), d(t);
                 return
             }
             d([...e, t])
         }, [e, d]),
-        p = e.length >= t;
-    return (0, a.jsx)(r.z, {
+        f = e.length >= t;
+    return (0, n.jsx)(l.z, {
         paddingBottom: 16,
         paddingTop: 16,
         rowData: _,
         message: c,
         originChannel: u,
-        handleToggleDestination: b,
+        handleToggleDestination: p,
         selectedDestinations: e,
-        disableSelection: p,
+        disableSelection: f,
         rowClassName: i.q
     })
 }

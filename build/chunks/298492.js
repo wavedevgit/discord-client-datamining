@@ -8,10 +8,10 @@ var i = s(503698),
     l = s.n(i),
     r = s(397927),
     n = s(308528),
-    c = s(854627),
-    d = s(779733),
-    o = s(427262),
-    u = s(519412),
+    d = s(854627),
+    c = s(779733),
+    u = s(427262),
+    o = s(519412),
     m = s(985018),
     x = s(798381);
 let f = e => {
@@ -22,10 +22,10 @@ let f = e => {
     } = e, {
         avatarSrc: f,
         eventHandlers: _
-    } = (0, c.A)({
+    } = (0, d.A)({
         userId: t?.id,
         size: r._3J.SIZE_56
-    }), h = o.Ay.getName(t), p = !s;
+    }), h = u.Ay.getName(t), p = !s;
     return (0, a.jsxs)("div", {
         className: l()(x.nM, {
             [x.z3]: p
@@ -46,7 +46,7 @@ let f = e => {
                 variant: "text-xs/normal",
                 color: "text-strong",
                 className: x.kc,
-                children: m.intl.format(u.default["Y/oMwY"], {
+                children: m.intl.format(o.default["Y/oMwY"], {
                     userName: h
                 })
             })]
@@ -57,7 +57,7 @@ let f = e => {
             icon: r.oyn,
             onClick: () => {
                 var e;
-                return e = t.id, void((0, d.default)(), n.A.openPrivateChannel({
+                return e = t.id, void((0, c.default)(), n.A.openPrivateChannel({
                     recipientIds: e
                 }), i())
             }

@@ -10,8 +10,8 @@ n.d(t, {
     eb: () => f,
     et: () => x,
     hc: () => E,
-    uP: () => p,
-    uk: () => g
+    uP: () => g,
+    uk: () => p
 }), n(321073);
 var i = n(64700),
     l = n(311907),
@@ -62,11 +62,11 @@ let h = [],
         }, [e, t, n])
     },
     m = e => (0, l.bG)([c.A], () => null != e ? c.A.getSubscriptionListing(e) : null),
-    g = e => {
+    p = e => {
         let t = (0, o.X)("useGroupListingsForGuild");
         return (0, l.bG)([c.A], () => null != e && t ? c.A.getSubscriptionGroupListingsForGuild(e) : h)
     },
-    p = function(e) {
+    g = function(e) {
         let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {
             includeSoftDeleted: !1,
             sortDeletedListingsLast: !1

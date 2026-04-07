@@ -17,8 +17,8 @@ var l = n(284009),
     A = n(375492),
     _ = n(576705),
     m = n(709562),
-    g = n(652215),
-    p = n(985018);
+    p = n(652215),
+    g = n(985018);
 
 function f(e) {
     let {
@@ -48,7 +48,7 @@ function f(e) {
         })
     }, {
         modalKey: "stream-invite-modal",
-        contextKey: o === g.BRT.POPOUT ? r.KX8 : r.SYi
+        contextKey: o === p.BRT.POPOUT ? r.KX8 : r.SYi
     })
 }
 
@@ -65,14 +65,14 @@ function x(e) {
         isRichPresenceInvite: T = !1,
         iconClassName: S,
         look: b,
-        size: y,
-        buttonText: v,
+        size: v,
+        buttonText: y,
         color: j,
         ...R
     } = e, O = (0, u.Us)(), {
         parentAnalyticsLocation: L
-    } = (0, d.Ay)(), M = l?.getGuildId(), D = (0, a.bG)([h.A], () => null != M ? h.A.getGuild(M) : null, [M]), U = (0, a.bG)([A.A], () => null != t ? A.A.getApplicationActivity(t) : void 0), G = null == t || N ? r.DpX : r.dCJ, P = p.intl.string(p.t["6F9ivu"]);
-    return (null != t && (P = p.intl.string(p.t["OzOM/q"])), null != n && (P = p.intl.string(p.t["6VQaqd"])), null != U && T) ? (0, i.jsx)(m.A, {
+    } = (0, d.Ay)(), M = l?.getGuildId(), D = (0, a.bG)([h.A], () => null != M ? h.A.getGuild(M) : null, [M]), U = (0, a.bG)([A.A], () => null != t ? A.A.getApplicationActivity(t) : void 0), G = null == t || N ? r.DpX : r.dCJ, P = g.intl.string(g.t["6F9ivu"]);
+    return (null != t && (P = g.intl.string(g.t["OzOM/q"])), null != n && (P = g.intl.string(g.t["6VQaqd"])), null != U && T) ? (0, i.jsx)(m.A, {
         onClick: () => {
             null != L && (0, c.X)(L, c.O.INVITE), o.qf(U, !1, O)
         },
@@ -80,10 +80,10 @@ function x(e) {
         label: P,
         iconClassName: S,
         look: b,
-        size: y,
-        buttonText: v,
+        size: v,
+        buttonText: y,
         color: j ?? void 0
-    }) : null != D && null != l && _.A.can(g.xBc.CREATE_INSTANT_INVITE, l) ? (0, i.jsx)(m.A, {
+    }) : null != D && null != l && _.A.can(p.xBc.CREATE_INSTANT_INVITE, l) ? (0, i.jsx)(m.A, {
         onClick: () => {
             s()(null != D, "guild cannot be null"), s()(null != l, "channel cannot be null"), null != L && (0, c.X)(L, c.O.INVITE), f({
                 guild: D,
@@ -94,16 +94,16 @@ function x(e) {
                 exitFullScreen: x,
                 analyticsLocation: I,
                 guildScheduledEvent: C,
-                source: l.isGuildStageVoice() ? g.PE1.STAGE_CHANNEL : g.PE1.STREAM_INVITE
+                source: l.isGuildStageVoice() ? p.PE1.STAGE_CHANNEL : p.PE1.STREAM_INVITE
             })
         },
         iconComponent: G,
         label: P,
         iconClassName: S,
         look: b,
-        size: y,
+        size: v,
         color: j,
-        buttonText: v,
+        buttonText: y,
         ...R
     }) : null
 }

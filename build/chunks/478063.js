@@ -1,222 +1,222 @@
 /** chunk id: 478063 params = (module,exports,require) **/
-s.d(t, {
-    A: () => N
+a.d(t, {
+    A: () => I
 });
-var i = s(627968),
-    a = s(64700),
-    l = s(503698),
-    n = s.n(l),
-    r = s(97808),
-    A = s(863610),
-    u = s(397927),
-    d = s(573435);
-s(883392);
-var _ = s(942158);
-let c = {},
-    o = 1 / 4;
+var n = a(627968),
+    i = a(64700),
+    s = a(503698),
+    r = a.n(s),
+    l = a(97808),
+    d = a(863610),
+    _ = a(397927),
+    o = a(573435);
+a(883392);
+var c = a(942158);
+let h = {},
+    u = 1 / 4;
 
-function h(e) {
+function m(e) {
     let {
         height: t,
-        fillColor: s
+        fillColor: a
     } = e;
-    return (0, i.jsx)("div", {
+    return (0, n.jsx)("div", {
         style: {
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
             borderRadius: t / 2,
-            backgroundColor: s,
+            backgroundColor: a,
             height: t,
             width: 2.5 * t
         },
-        children: (0, i.jsx)(A.n, {
-            className: _.r$,
-            dotRadius: t * o
+        children: (0, n.jsx)(d.n, {
+            className: c.r$,
+            dotRadius: t * u
         })
     })
 }
 
-function I(e) {
+function A(e) {
     let {
         isTyping: t,
-        statusCoords: s,
-        status: a
-    } = e, l = (0, u.S31)(u.clD.ONLINE);
-    return t ? (0, i.jsx)("div", {
+        statusCoords: a,
+        status: i
+    } = e, s = (0, _.S31)(_.clD.ONLINE);
+    return t ? (0, n.jsx)("div", {
         style: {
             position: "absolute",
-            top: s.y,
-            left: s.x
+            top: a.y,
+            left: a.x
         },
-        children: (0, i.jsx)(h, {
-            height: s.height,
-            fillColor: l
+        children: (0, n.jsx)(m, {
+            height: a.height,
+            fillColor: s
         })
-    }) : null != a ? (0, i.jsx)(u.nW6, {
-        size: s.height,
-        status: a,
+    }) : null != i ? (0, n.jsx)(_.nW6, {
+        size: a.height,
+        status: i,
         style: {
             position: "absolute",
-            top: s.y,
-            left: s.x
+            top: a.y,
+            left: a.x
         }
     }) : null
 }
 
-function L(e) {
+function b(e) {
     let {
         src: t,
-        size: s
+        size: a
     } = e;
-    return (0, i.jsx)("img", {
-        className: _.tM,
+    return (0, n.jsx)("img", {
+        className: c.tM,
         src: t,
         alt: "",
-        width: s,
-        height: s
+        width: a,
+        height: a
     })
 }
-let E = {
-        [u._3J.SIZE_16]: {
-            default: d.hW.DIAGONAL_FACEPILE_16,
-            typing: d.hW.DIAGONAL_FACEPILE_TYPING_16,
-            status: d.hW.DIAGONAL_FACEPILE_STATUS_16,
-            back: d.hW.DIAGONAL_FACEPILE_BACK_16
+let p = {
+        [_._3J.SIZE_16]: {
+            default: o.hW.DIAGONAL_FACEPILE_16,
+            typing: o.hW.DIAGONAL_FACEPILE_TYPING_16,
+            status: o.hW.DIAGONAL_FACEPILE_STATUS_16,
+            back: o.hW.DIAGONAL_FACEPILE_BACK_16
         },
-        [u._3J.SIZE_20]: {
-            default: d.hW.DIAGONAL_FACEPILE_20,
-            typing: d.hW.DIAGONAL_FACEPILE_TYPING_20,
-            status: d.hW.DIAGONAL_FACEPILE_STATUS_20,
-            back: d.hW.DIAGONAL_FACEPILE_BACK_20
+        [_._3J.SIZE_20]: {
+            default: o.hW.DIAGONAL_FACEPILE_20,
+            typing: o.hW.DIAGONAL_FACEPILE_TYPING_20,
+            status: o.hW.DIAGONAL_FACEPILE_STATUS_20,
+            back: o.hW.DIAGONAL_FACEPILE_BACK_20
         },
-        [u._3J.SIZE_24]: {
-            default: d.hW.DIAGONAL_FACEPILE_24,
-            typing: d.hW.DIAGONAL_FACEPILE_TYPING_24,
-            status: d.hW.DIAGONAL_FACEPILE_STATUS_24,
-            back: d.hW.DIAGONAL_FACEPILE_BACK_24
+        [_._3J.SIZE_24]: {
+            default: o.hW.DIAGONAL_FACEPILE_24,
+            typing: o.hW.DIAGONAL_FACEPILE_TYPING_24,
+            status: o.hW.DIAGONAL_FACEPILE_STATUS_24,
+            back: o.hW.DIAGONAL_FACEPILE_BACK_24
         },
-        [u._3J.SIZE_32]: {
-            default: d.hW.DIAGONAL_FACEPILE_32,
-            typing: d.hW.DIAGONAL_FACEPILE_TYPING_32,
-            status: d.hW.DIAGONAL_FACEPILE_STATUS_32,
-            back: d.hW.DIAGONAL_FACEPILE_BACK_32
+        [_._3J.SIZE_32]: {
+            default: o.hW.DIAGONAL_FACEPILE_32,
+            typing: o.hW.DIAGONAL_FACEPILE_TYPING_32,
+            status: o.hW.DIAGONAL_FACEPILE_STATUS_32,
+            back: o.hW.DIAGONAL_FACEPILE_BACK_32
         },
-        [u._3J.SIZE_40]: {
-            default: d.hW.DIAGONAL_FACEPILE_32,
-            typing: d.hW.DIAGONAL_FACEPILE_TYPING_32,
-            status: d.hW.DIAGONAL_FACEPILE_STATUS_32,
-            back: d.hW.DIAGONAL_FACEPILE_BACK_32
+        [_._3J.SIZE_40]: {
+            default: o.hW.DIAGONAL_FACEPILE_32,
+            typing: o.hW.DIAGONAL_FACEPILE_TYPING_32,
+            status: o.hW.DIAGONAL_FACEPILE_STATUS_32,
+            back: o.hW.DIAGONAL_FACEPILE_BACK_32
         },
-        [u._3J.SIZE_48]: {
-            default: d.hW.DIAGONAL_FACEPILE_40,
-            typing: d.hW.DIAGONAL_FACEPILE_TYPING_40,
-            status: d.hW.DIAGONAL_FACEPILE_STATUS_40,
-            back: d.hW.DIAGONAL_FACEPILE_BACK_40
+        [_._3J.SIZE_48]: {
+            default: o.hW.DIAGONAL_FACEPILE_40,
+            typing: o.hW.DIAGONAL_FACEPILE_TYPING_40,
+            status: o.hW.DIAGONAL_FACEPILE_STATUS_40,
+            back: o.hW.DIAGONAL_FACEPILE_BACK_40
         },
-        [u._3J.SIZE_56]: {
-            default: d.hW.DIAGONAL_FACEPILE_56,
-            typing: d.hW.DIAGONAL_FACEPILE_TYPING_56,
-            status: d.hW.DIAGONAL_FACEPILE_STATUS_56,
-            back: d.hW.DIAGONAL_FACEPILE_BACK_56
+        [_._3J.SIZE_56]: {
+            default: o.hW.DIAGONAL_FACEPILE_56,
+            typing: o.hW.DIAGONAL_FACEPILE_TYPING_56,
+            status: o.hW.DIAGONAL_FACEPILE_STATUS_56,
+            back: o.hW.DIAGONAL_FACEPILE_BACK_56
         },
-        [u._3J.SIZE_72]: {
-            default: d.hW.DIAGONAL_FACEPILE_72,
-            typing: d.hW.DIAGONAL_FACEPILE_TYPING_72,
-            status: d.hW.DIAGONAL_FACEPILE_STATUS_72,
-            back: d.hW.DIAGONAL_FACEPILE_BACK_72
+        [_._3J.SIZE_72]: {
+            default: o.hW.DIAGONAL_FACEPILE_72,
+            typing: o.hW.DIAGONAL_FACEPILE_TYPING_72,
+            status: o.hW.DIAGONAL_FACEPILE_STATUS_72,
+            back: o.hW.DIAGONAL_FACEPILE_BACK_72
         },
-        [u._3J.SIZE_80]: {
-            default: d.hW.DIAGONAL_FACEPILE_80,
-            typing: d.hW.DIAGONAL_FACEPILE_TYPING_80,
-            status: d.hW.DIAGONAL_FACEPILE_STATUS_80,
-            back: d.hW.DIAGONAL_FACEPILE_BACK_80
+        [_._3J.SIZE_80]: {
+            default: o.hW.DIAGONAL_FACEPILE_80,
+            typing: o.hW.DIAGONAL_FACEPILE_TYPING_80,
+            status: o.hW.DIAGONAL_FACEPILE_STATUS_80,
+            back: o.hW.DIAGONAL_FACEPILE_BACK_80
         },
-        [u._3J.SIZE_96]: {
-            default: d.hW.DIAGONAL_FACEPILE_96,
-            typing: d.hW.DIAGONAL_FACEPILE_TYPING_96,
-            status: d.hW.DIAGONAL_FACEPILE_STATUS_96,
-            back: d.hW.DIAGONAL_FACEPILE_BACK_96
+        [_._3J.SIZE_96]: {
+            default: o.hW.DIAGONAL_FACEPILE_96,
+            typing: o.hW.DIAGONAL_FACEPILE_TYPING_96,
+            status: o.hW.DIAGONAL_FACEPILE_STATUS_96,
+            back: o.hW.DIAGONAL_FACEPILE_BACK_96
         },
-        [u._3J.SIZE_120]: {
-            default: d.hW.DIAGONAL_FACEPILE_120,
-            typing: d.hW.DIAGONAL_FACEPILE_TYPING_120,
-            status: d.hW.DIAGONAL_FACEPILE_STATUS_120,
-            back: d.hW.DIAGONAL_FACEPILE_BACK_120
+        [_._3J.SIZE_120]: {
+            default: o.hW.DIAGONAL_FACEPILE_120,
+            typing: o.hW.DIAGONAL_FACEPILE_TYPING_120,
+            status: o.hW.DIAGONAL_FACEPILE_STATUS_120,
+            back: o.hW.DIAGONAL_FACEPILE_BACK_120
         }
     },
-    N = function(e) {
+    I = function(e) {
         var t;
         let {
-            backSrc: s,
-            frontSrc: l,
-            size: A,
-            isTyping: o,
-            status: h,
-            style: N,
-            className: C,
-            ...P
+            backSrc: a,
+            frontSrc: s,
+            size: d,
+            isTyping: u,
+            status: m,
+            style: I,
+            className: E,
+            ...g
         } = e, {
-            size: m
-        } = u.vCh[A], {
-            statusCoords: b,
-            frontAvatarOffsetPx: f,
-            frontAvatarSizePx: g,
-            backAvatarSizePx: x
-        } = a.useMemo(() => {
-            let e, t, s, i, a, l = `${m}-${o}`;
-            return c[l] ?? (s = +(t = (e = u.vCh[A]).size / 1.5), i = .5 * t, a = {
-                statusCoords: (0, r.Rb)(e, u.clD.ONLINE, {
-                    isTyping: o,
+            size: N
+        } = _.vCh[d], {
+            statusCoords: x,
+            frontAvatarOffsetPx: L,
+            frontAvatarSizePx: f,
+            backAvatarSizePx: C
+        } = i.useMemo(() => {
+            let e, t, a, n, i, s = `${N}-${u}`;
+            return h[s] ?? (a = +(t = (e = _.vCh[d]).size / 1.5), n = .5 * t, i = {
+                statusCoords: (0, l.Rb)(e, _.clD.ONLINE, {
+                    isTyping: u,
                     isMobile: !1,
                     isVR: !1
                 }),
-                frontAvatarSizePx: s,
+                frontAvatarSizePx: a,
                 backAvatarSizePx: t,
-                frontAvatarOffsetPx: i,
-                frontAvatarCenter: i + s / 2
-            }, c[l] = a, a)
-        }, [m, o, A]), D = (t = null != h, o ? E[A].typing : t ? E[A].status : E[A].default), G = E[A].back;
-        return (0, i.jsxs)("div", {
+                frontAvatarOffsetPx: n,
+                frontAvatarCenter: n + a / 2
+            }, h[s] = i, i)
+        }, [N, u, d]), y = (t = null != m, u ? p[d].typing : t ? p[d].status : p[d].default), P = p[d].back;
+        return (0, n.jsxs)("div", {
             style: {
-                width: m,
-                height: m,
-                ...N
+                width: N,
+                height: N,
+                ...I
             },
-            "aria-label": P["aria-label"],
-            "aria-hidden": P["aria-hidden"],
-            className: n()(_.kL, C),
-            children: [(0, i.jsxs)(d.Ay, {
-                mask: D,
-                height: m,
-                width: m,
-                children: [(0, i.jsx)(d.Ay, {
-                    mask: G,
-                    height: m,
-                    width: m,
-                    children: (0, i.jsx)("img", {
-                        src: s,
+            "aria-label": g["aria-label"],
+            "aria-hidden": g["aria-hidden"],
+            className: r()(c.kL, E),
+            children: [(0, n.jsxs)(o.Ay, {
+                mask: y,
+                height: N,
+                width: N,
+                children: [(0, n.jsx)(o.Ay, {
+                    mask: P,
+                    height: N,
+                    width: N,
+                    children: (0, n.jsx)("img", {
+                        src: a,
                         alt: "",
-                        width: x,
-                        height: x
+                        width: C,
+                        height: C
                     })
-                }), (0, i.jsx)("div", {
+                }), (0, n.jsx)("div", {
                     style: {
                         position: "absolute",
-                        top: f,
-                        left: f
+                        top: L,
+                        left: L
                     },
-                    children: (0, i.jsx)(L, {
-                        src: l,
-                        size: g,
-                        isTyping: o,
-                        status: h
+                    children: (0, n.jsx)(b, {
+                        src: s,
+                        size: f,
+                        isTyping: u,
+                        status: m
                     })
                 })]
-            }), (0, i.jsx)(I, {
-                statusCoords: b,
-                status: h,
-                isTyping: o
+            }), (0, n.jsx)(A, {
+                statusCoords: x,
+                status: m,
+                isTyping: u
             })]
         })
     }

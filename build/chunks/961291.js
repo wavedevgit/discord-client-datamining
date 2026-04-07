@@ -19,8 +19,8 @@ var i = n(827734),
     A = n(846500),
     _ = n(784297),
     m = n(51213),
-    g = n(194066),
-    p = n(211643);
+    p = n(194066),
+    g = n(211643);
 let f = {
         MISSED_MESSAGES: _,
         FRIEND_REQUEST_REMINDER: u,
@@ -30,7 +30,7 @@ let f = {
         UPDATE_PROFILE: n(566213),
         FIND_FRIENDS: a,
         ADD_FRIEND: a,
-        FIRST_MESSAGE: g
+        FIRST_MESSAGE: p
     },
     x = e => {
         switch (e.type) {
@@ -65,7 +65,7 @@ let f = {
         switch (e) {
             case l.hW.GO_LIVE_PUSH:
                 return {
-                    icon: p, color: i.A.colors.BACKGROUND_MOD_STRONG
+                    icon: g, color: i.A.colors.BACKGROUND_MOD_STRONG
                 };
             case l.hW.FRIEND_REQUEST_ACCEPTED:
             case l.hW.GAME_FRIEND_REQUEST_ACCEPTED:

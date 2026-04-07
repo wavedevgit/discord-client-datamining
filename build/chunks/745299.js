@@ -16,8 +16,8 @@ var l = n(110259),
     A = n(234419),
     _ = n(635995),
     m = n(915516),
-    g = n(788868),
-    p = n(652215),
+    p = n(788868),
+    g = n(652215),
     f = n(985018);
 let x = function(e) {
     let {
@@ -27,9 +27,9 @@ let x = function(e) {
         analyticsLocations: x
     } = (0, r.Ay)(function(e) {
         switch (e) {
-            case g.pe.TIER_0:
+            case p.pe.TIER_0:
                 return a.A.PREMIUM_TIER_0_TRIAL_ENDING_NOTICE;
-            case g.pe.TIER_2:
+            case p.pe.TIER_2:
                 return a.A.PREMIUM_TIER_2_TRIAL_ENDING_NOTICE;
             default:
                 throw Error(`Unsupported subscription tier: ${e}`)
@@ -44,15 +44,15 @@ let x = function(e) {
         }, {
             disableTrack: C
         }), C) return null;
-    let N = n === g.pe.TIER_2 ? p.kqX.PREMIUM_TIER_2_TRIAL_ENDING : p.kqX.PREMIUM_TIER_0_TRIAL_ENDING,
+    let N = n === p.pe.TIER_2 ? g.kqX.PREMIUM_TIER_2_TRIAL_ENDING : g.kqX.PREMIUM_TIER_0_TRIAL_ENDING,
         T = (0, h.re)({
             intervalType: E.subscription_trial?.interval,
             intervalCount: E.subscription_trial?.interval_count
         }),
-        S = u.A.getArticleURL(E.trial_id === g.yo ? p.MVz.NITRO_TRIAL_FOR_ALL : p.MVz.PREMIUM_TRIAL);
+        S = u.A.getArticleURL(E.trial_id === p.yo ? g.MVz.NITRO_TRIAL_FOR_ALL : g.MVz.PREMIUM_TRIAL);
     return (0, i.jsxs)(_.T0, {
         onClick: () => {
-            t(), c.default.track(p.HAw.APP_NOTICE_CLOSED, {
+            t(), c.default.track(g.HAw.APP_NOTICE_CLOSED, {
                 notice_type: N,
                 trial_id: E.trial_id
             })
@@ -66,20 +66,20 @@ let x = function(e) {
                     subscriptionTier: n,
                     analyticsLocations: x,
                     analyticsObject: {
-                        page: p.liQ.IN_APP,
-                        section: p.JJy.NOTIFICATION_BAR,
-                        object: p.ZSU.BUTTON_CTA
+                        page: g.liQ.IN_APP,
+                        section: g.JJy.NOTIFICATION_BAR,
+                        object: g.ZSU.BUTTON_CTA
                     }
-                }), c.default.track(p.HAw.APP_NOTICE_PRIMARY_CTA_OPENED, {
+                }), c.default.track(g.HAw.APP_NOTICE_PRIMARY_CTA_OPENED, {
                     notice_type: N,
                     trial_id: E.trial_id
                 })
             },
             text: function(e) {
                 switch (e) {
-                    case g.pe.TIER_0:
+                    case p.pe.TIER_0:
                         return f.intl.string(f.t.mCG023);
-                    case g.pe.TIER_2:
+                    case p.pe.TIER_2:
                         return f.intl.string(f.t.J61px0);
                     default:
                         throw Error(`Unsupported subscription tier: ${e}`)

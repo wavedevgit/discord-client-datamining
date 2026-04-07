@@ -16,8 +16,8 @@ var i = n(627968),
     A = n(688810),
     _ = n(611371),
     m = n(721923),
-    g = n(954571),
-    p = n(927578),
+    p = n(954571),
+    g = n(927578),
     f = n(560138),
     x = n(422936),
     E = n(234419),
@@ -27,8 +27,8 @@ var i = n(627968),
     T = n(811611),
     S = n(841252),
     b = n(788868),
-    y = n(652215),
-    v = n(985018),
+    v = n(652215),
+    y = n(985018),
     j = n(790344),
     R = n(669149);
 
@@ -52,15 +52,15 @@ function O(e) {
         onClose: V,
         onSubscribeClick: H,
         onSubscribeFinish: F,
-        onSecondaryClick: K,
-        secondaryCTA: W,
+        onSecondaryClick: W,
+        secondaryCTA: K,
         secondaryCTAClassName: Y,
         subscribeButtonText: z,
         showNewBadge: q = !1,
         showBetaBadge: X = !1,
-        enableArtBoxShadow: J = !0,
+        enableArtBoxShadow: $ = !0,
         subscriptionTier: Q = b.pe.TIER_2,
-        isLoading: $ = !1,
+        isLoading: J = !1,
         hideBackButton: Z,
         backButtonText: ee,
         showEnhancedUpsell: et,
@@ -75,38 +75,38 @@ function O(e) {
         ...ec
     } = e, eu = null != s, eh = (0, E.V)(), eA = (0, x.O)(), e_ = !el && (eh?.subscription_trial?.sku_id === Q || (0, N.U9)(eA, Q)) && !eu, {
         analyticsLocations: em
-    } = (0, A.Ay)(h.A.PREMIUM_UPSELL_MODAL), eg = {
+    } = (0, A.Ay)(h.A.PREMIUM_UPSELL_MODAL), ep = {
         analyticsLocation: C,
         analyticsLocations: em,
         analyticsSource: r,
         guildBoostProps: s,
         type: n
-    }, ep = l.useRef(eg);
+    }, eg = l.useRef(ep);
     l.useEffect(() => {
-        ep.current = eg
+        eg.current = ep
     }), l.useEffect(() => {
-        if ($) return;
+        if (J) return;
         let {
             analyticsLocation: e,
             analyticsLocations: t,
             analyticsSource: n,
             guildBoostProps: i,
             type: l
-        } = ep.current;
-        eu ? g.default.track(y.HAw.PREMIUM_GUILD_UPSELL_VIEWED, {
+        } = eg.current;
+        eu ? p.default.track(v.HAw.PREMIUM_GUILD_UPSELL_VIEWED, {
             type: `${l} - Tier ${i?.boostedGuildTier}`,
             guild_id: i?.guild.id,
             channel_id: i?.channelId,
             location: e,
             location_stack: t
-        }) : g.default.track(y.HAw.PREMIUM_UPSELL_VIEWED, {
+        }) : p.default.track(v.HAw.PREMIUM_UPSELL_VIEWED, {
             type: l,
             source: n,
             location: e,
             location_stack: t,
-            sku_id: (0, p.mH)(Q)
+            sku_id: (0, g.mH)(Q)
         })
-    }, [eu, Q, $]);
+    }, [eu, Q, J]);
     let ef = (0, o.bG)([f.A], () => f.A.affinities),
         ex = ef.length > 1 && function(e) {
             switch (e) {
@@ -124,7 +124,7 @@ function O(e) {
     l.useEffect(() => {
         eE || u.xG()
     }, [eE]);
-    let eI = J ? a()(j.JS, j.OV, G) : a()(j.JS, G),
+    let eI = $ ? a()(j.JS, j.OV, G) : a()(j.JS, G),
         eC = null;
     return null != ec.artURL ? eC = (0, i.jsx)("img", {
         className: a()(P, j.Qw),
@@ -147,7 +147,7 @@ function O(e) {
             "data-migration-pending": !0,
             scrollbarType: "none",
             className: a()(et ? j.es : j.Qs, !e_ && U),
-            children: $ ? (0, i.jsx)(c.y$y, {}) : e_ ? (0, i.jsx)(T.Ay, {
+            children: J ? (0, i.jsx)(c.y$y, {}) : e_ ? (0, i.jsx)(T.Ay, {
                 onClose: V,
                 type: n,
                 subscriptionTier: eh?.subscription_trial?.sku_id ?? b.pe.TIER_2,
@@ -187,27 +187,27 @@ function O(e) {
                 className: a()(j.E3, {
                     [j.Q_]: et
                 }),
-                children: [null != W ? (0, i.jsx)(d.$n, {
+                children: [null != K ? (0, i.jsx)(d.$n, {
                     "data-migration-pending": !0,
                     className: a()(j.Dc, Y, {
                         [j.HZ]: et
                     }),
-                    onClick: K,
+                    onClick: W,
                     size: d.$n.Sizes.SMALL,
                     color: et ? d.$n.Colors.CUSTOM : d.$n.Colors.PRIMARY,
                     look: d.$n.Looks.LINK,
-                    children: W
+                    children: K
                 }) : null, (() => {
                     if (eu) return (0, i.jsx)(m.A, {
                         analyticsLocation: C,
                         guild: s.guild,
                         onClose: V
                     });
-                    let e = et ? v.intl.string(v.t.pj0XBN) : void 0;
-                    return e_ && (null != eh ? e = (0, p.FY)({
+                    let e = et ? y.intl.string(y.t.pj0XBN) : void 0;
+                    return e_ && (null != eh ? e = (0, g.FY)({
                         intervalType: eh?.subscription_trial?.interval,
                         intervalCount: eh?.subscription_trial?.interval_count
-                    }) : null != eA && (e = v.intl.formatToPlainString(v.t.bkQ4bH, {
+                    }) : null != eA && (e = y.intl.formatToPlainString(y.t.bkQ4bH, {
                         percent: eA.discount.amount
                     }))), (0, i.jsx)(I.A, {
                         className: ei,
@@ -228,7 +228,7 @@ function O(e) {
             }), !Z && !et && (0, i.jsx)(c.Button, {
                 variant: "secondary",
                 size: "sm",
-                text: null != ee ? ee : v.intl.string(v.t["13/7kX"]),
+                text: null != ee ? ee : y.intl.string(y.t["13/7kX"]),
                 onClick: V
             })]
         }), et ? (0, i.jsx)(c.s_y, {
@@ -253,15 +253,15 @@ function L(e) {
         showBetaBadge: A = !1,
         subscriptionTier: _ = b.pe.TIER_2,
         hidePremiumOfferUpsell: m
-    } = e, g = (0, E.V)(), f = (0, x.O)(), I = !m && (g?.subscription_trial?.sku_id === _ || (0, N.U9)(f, _)) && null == a, T = v.intl.string(v.t.pj0XBN);
-    I && (null != g ? T = (0, p.FY)({
-        intervalType: g?.subscription_trial?.interval,
-        intervalCount: g?.subscription_trial?.interval_count
-    }) : null != f && (T = v.intl.formatToPlainString(v.t.bkQ4bH, {
+    } = e, p = (0, E.V)(), f = (0, x.O)(), I = !m && (p?.subscription_trial?.sku_id === _ || (0, N.U9)(f, _)) && null == a, T = y.intl.string(y.t.pj0XBN);
+    I && (null != p ? T = (0, g.FY)({
+        intervalType: p?.subscription_trial?.interval,
+        intervalCount: p?.subscription_trial?.interval_count
+    }) : null != f && (T = y.intl.formatToPlainString(y.t.bkQ4bH, {
         percent: f.discount.amount
     })));
     let S = null;
-    return h ? S = "new" : A && (S = "beta"), null != g && (S = "free_trial"), (0, i.jsx)(C.A, {
+    return h ? S = "new" : A && (S = "beta"), null != p && (S = "free_trial"), (0, i.jsx)(C.A, {
         subscriptionTier: _,
         children: e => {
             let {

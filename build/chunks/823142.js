@@ -1,7 +1,7 @@
 /** chunk id: 823142 params = (module,exports,require) **/
 n.d(t, {
     AV: () => R,
-    Ay: () => v,
+    Ay: () => y,
     P4: () => j,
     kD: () => O,
     sM: () => L
@@ -19,8 +19,8 @@ var i = n(627968),
     A = n(914430),
     _ = n(442433),
     m = n(676002),
-    g = n(485947),
-    p = n(924985),
+    p = n(485947),
+    g = n(924985),
     f = n(71393),
     x = n(576705),
     E = n(543465),
@@ -33,21 +33,21 @@ var i = n(627968),
 function b(e) {
     e.stopPropagation()
 }
-let y = l.memo(function(e) {
+let v = l.memo(function(e) {
         let t, {
                 channel: s,
                 connectChannelDragSource: u,
                 connectChannelDropTarget: m,
                 disableManageChannels: I,
                 position: C,
-                sortingPosition: y,
-                hideIcon: v,
+                sortingPosition: v,
+                hideIcon: y,
                 children: j
             } = e,
             R = (0, o.bG)([E.Ay], () => E.Ay.isChannelMuted(s.getGuildId(), s.id)),
-            O = (0, o.bG)([p.A], () => p.A.isCollapsed(s.id)),
+            O = (0, o.bG)([g.A], () => g.A.isCollapsed(s.id)),
             L = (0, o.bG)([x.A], () => x.A.can(N.xBc.MANAGE_CHANNELS, s));
-        t = null != y ? C > y ? S.mU : S.TR : S.fx;
+        t = null != v ? C > v ? S.mU : S.TR : S.fx;
         let M = l.useCallback(() => {
                 O ? (0, A.fh)(s.id) : (0, A.Gv)(s.id)
             }, [s.id, O]),
@@ -119,12 +119,12 @@ let y = l.memo(function(e) {
                             focusProps: {
                                 enabled: !1
                             },
-                            children: [(0, i.jsx)(g.A, {
+                            children: [(0, i.jsx)(p.A, {
                                 className: S.UU,
                                 children: (0, i.jsx)(d.A, {
                                     children: s.name
                                 })
-                            }), v ? null : (0, i.jsx)(h.abt, {
+                            }), y ? null : (0, i.jsx)(h.abt, {
                                 size: "md",
                                 color: "currentColor",
                                 className: S.Kk
@@ -153,7 +153,7 @@ let y = l.memo(function(e) {
             });
         return null != m && null != u ? m(u(V)) : V
     }),
-    v = (0, m.a)(y),
+    y = (0, m.a)(v),
     j = l.memo(function(e) {
         let {
             name: t,
@@ -166,7 +166,7 @@ let y = l.memo(function(e) {
                 className: a()(S.Ki, S._V),
                 children: [(0, i.jsx)("div", {
                     className: S.rb,
-                    children: (0, i.jsx)(g.A, {
+                    children: (0, i.jsx)(p.A, {
                         className: S.UU,
                         children: (0, i.jsx)(d.A, {
                             children: t
@@ -214,7 +214,7 @@ let y = l.memo(function(e) {
             className: S.fx,
             children: (0, i.jsx)("div", {
                 className: a()(S.Ki, S._V),
-                children: (0, i.jsx)(g.A, {
+                children: (0, i.jsx)(p.A, {
                     className: S.UU,
                     children: (0, i.jsx)(d.A, {
                         children: T.intl.string(T.t["V/u9Dy"])
@@ -235,7 +235,7 @@ let y = l.memo(function(e) {
             className: S.fx,
             children: (0, i.jsx)("div", {
                 className: a()(S.Ki, S._V),
-                children: (0, i.jsx)(g.A, {
+                children: (0, i.jsx)(p.A, {
                     className: S.UU,
                     children: (0, i.jsx)(d.A, {
                         children: t.name

@@ -1,58 +1,58 @@
 /** chunk id: 137508 params = (module,exports,require) **/
-n.d(t, {
-    t: () => b
+a.d(t, {
+    t: () => p
 });
-var a = n(627968),
-    l = n(64700),
-    r = n(311907),
-    s = n(465532),
-    o = n(355622),
-    i = n(408018),
-    c = n(133343),
-    u = n(31717),
-    d = n(457417),
-    _ = n(985018),
-    h = n(110647);
-let b = () => {
+var n = a(627968),
+    r = a(64700),
+    l = a(311907),
+    s = a(465532),
+    o = a(355622),
+    i = a(408018),
+    c = a(133343),
+    u = a(31717),
+    d = a(457417),
+    _ = a(985018),
+    h = a(110647);
+let p = () => {
     let {
         message: e,
         channel: t,
-        updateMessageText: n
-    } = (0, d.Vw)(), b = (0, r.bG)([u.A], () => u.A.getDraft(e.channel_id, u.C.ChannelMessage)), [p, f] = l.useState(() => (0, i.ur)(b)), {
-        textValue: m,
-        richValue: g
-    } = p;
-    (0, l.useEffect)(() => {
-        n(m)
-    }, [n, m]);
-    let C = l.useCallback((t, n, a) => {
-            f({
-                textValue: n,
-                richValue: a
-            }), s.A.saveDraft(e.channel_id, n, u.C.ChannelMessage)
+        updateMessageText: a
+    } = (0, d.Vw)(), p = (0, l.bG)([u.A], () => u.A.getDraft(e.channel_id, u.C.ChannelMessage)), [f, g] = r.useState(() => (0, i.ur)(p)), {
+        textValue: C,
+        richValue: b
+    } = f;
+    (0, r.useEffect)(() => {
+        a(C)
+    }, [a, C]);
+    let m = r.useCallback((t, a, n) => {
+            g({
+                textValue: a,
+                richValue: n
+            }), s.A.saveDraft(e.channel_id, a, u.C.ChannelMessage)
         }, [e]),
-        [k, A] = l.useState(!1),
-        x = l.useCallback(() => A(!0), []),
-        w = l.useCallback(() => A(!1), []);
-    (0, l.useEffect)(() => () => {
+        [x, M] = r.useState(!1),
+        k = r.useCallback(() => M(!0), []),
+        w = r.useCallback(() => M(!1), []);
+    (0, r.useEffect)(() => () => {
         s.A.clearDraft(e.channel_id, u.C.ChannelMessage)
     }, [e]);
-    let E = async () => ({
+    let S = async () => ({
         shouldClear: !0,
         shouldRefocus: !1
     });
-    return (0, a.jsx)(c.Ay, {
+    return (0, n.jsx)(c.Ay, {
         innerClassName: h.O,
-        onChange: C,
+        onChange: m,
         placeholder: _.intl.string(_.t.ZroO3G),
         channel: t,
-        textValue: m,
-        richValue: g,
+        textValue: C,
+        richValue: b,
         type: o.oU.SHARE_CUSTOM_CLIENT_THEME_INPUT,
         onBlur: w,
-        onFocus: x,
-        focused: k,
-        onSubmit: E,
+        onFocus: k,
+        focused: x,
+        onSubmit: S,
         parentModalKey: d.dJ,
         autoCompletePosition: "bottom",
         emojiPickerCloseOnModalOuterClick: !0,

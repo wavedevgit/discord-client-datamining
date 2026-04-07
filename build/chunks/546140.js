@@ -1,18 +1,18 @@
 /** chunk id: 546140 params = (module,exports,require) **/
-i.d(e, {
+n.d(e, {
     L: () => o
 });
-var n = i(311907),
-    l = i(617617),
-    r = i(287809),
-    s = i(840387),
-    a = i(639555);
+var i = n(311907),
+    l = n(617617),
+    r = n(287809),
+    s = n(840387),
+    a = n(639555);
 let o = () => {
     let t = r.default.getCurrentUser(),
-        e = (0, n.bG)([l.A], () => l.A.settings.privacy?.inappropriateConversationWarnings?.value ?? !0),
-        i = (0, s.Z)(),
+        e = (0, i.bG)([l.A], () => l.A.settings.privacy?.inappropriateConversationWarnings?.value ?? !0),
+        n = (0, s.Z)(),
         o = (0, a.Rv)({
             location: "useSafetyAlertsSettingOrDefault"
         });
-    return !!i && !!o || (i || t?.isStaff() === !0) && e
+    return !!n && !!o || (n || t?.isStaff() === !0) && e
 }

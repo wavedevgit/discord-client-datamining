@@ -15,8 +15,8 @@ var i = n(627968),
     A = n(855446),
     _ = n(793574),
     m = n(688810),
-    g = n(975412),
-    p = n(392054),
+    p = n(975412),
+    g = n(392054),
     f = n(826673),
     x = n(757293),
     E = n(954571),
@@ -36,7 +36,7 @@ function b(e) {
         userParticipantCount: r,
         activitiesEnabled: o = !0
     } = e;
-    return l < 250 ? (0, i.jsx)(y, {
+    return l < 250 ? (0, i.jsx)(v, {
         channel: t,
         guild: n,
         width: l,
@@ -50,7 +50,7 @@ function b(e) {
         inPopout: s,
         handleClose: a,
         userParticipantCount: r
-    }) : (0, i.jsx)(v, {
+    }) : (0, i.jsx)(y, {
         channel: t,
         guild: n,
         width: l,
@@ -59,7 +59,7 @@ function b(e) {
     })
 }
 
-function y(e) {
+function v(e) {
     let {
         channel: t,
         inPopout: n,
@@ -77,7 +77,7 @@ function y(e) {
                 text: N.intl.string(N.t.qJvTKQ),
                 children: (0, i.jsx)(c.DUT, {
                     onClick: () => {
-                        (0, g.A)({
+                        (0, p.A)({
                             context: null != t ? {
                                 type: "channel",
                                 channel: t
@@ -116,7 +116,7 @@ function y(e) {
     })
 }
 
-function v(e) {
+function y(e) {
     let {
         channel: t,
         guild: s,
@@ -151,7 +151,7 @@ function v(e) {
     }
 
     function A() {
-        (0, g.A)({
+        (0, p.A)({
             context: null != t ? {
                 type: "channel",
                 channel: t
@@ -207,7 +207,7 @@ function j(e) {
             n_participants: d
         })
     });
-    let g = (0, h.A)({
+    let p = (0, h.A)({
             guildId: n.id
         }).slice(0, 3),
         {
@@ -229,12 +229,12 @@ function j(e) {
                 className: a()(T.Di, {
                     [T.qy]: o <= 300
                 }),
-                children: g.map(e => (0, i.jsx)(A.C, {
+                children: p.map(e => (0, i.jsx)(A.C, {
                     context: b,
                     activityItem: e,
                     aspectRatio: A.C.AspectRatio.SIXTEEN_BY_NINE,
                     animatedDivClass: T.KU,
-                    commandOrigin: p.iw.VOICE_TILE_ACTIVITY_SUGGESTIONS
+                    commandOrigin: g.iw.VOICE_TILE_ACTIVITY_SUGGESTIONS
                 }, e.application.id))
             }), (0, i.jsxs)(c.DUT, {
                 className: T.HI,

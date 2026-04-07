@@ -16,8 +16,8 @@ var i, l, s = n(64700),
     A = n(334738),
     _ = n(775602),
     m = n(323073),
-    g = n(181079),
-    p = n(567035),
+    p = n(181079),
+    g = n(567035),
     f = n(202803),
     x = n(455234),
     E = n(863005),
@@ -27,8 +27,8 @@ var i, l, s = n(64700),
     T = n(594061),
     S = n(617617),
     b = n(95701),
-    y = n(734057),
-    v = n(808728),
+    v = n(734057),
+    y = n(808728),
     j = n(71393),
     R = n(320501),
     O = n(576705),
@@ -79,7 +79,7 @@ class F extends a.EventEmitter {
     }
     populateInitialStateFromStore(e) {
         if ("messages" === e.type) {
-            let t = K(e, !1);
+            let t = W(e, !1);
             return t.messages.some(f.$r) ? (h.A.clearChannel(e.channelId), {
                 ...e,
                 messages: []
@@ -101,7 +101,7 @@ class F extends a.EventEmitter {
     }
     reloadMessages = () => {
         this.setState({
-            channels: this.state.channels.map(e => "messages" === e.type && e.hasLoadedAnything ? K(e, !1, !0) : e)
+            channels: this.state.channels.map(e => "messages" === e.type && e.hasLoadedAnything ? W(e, !1, !0) : e)
         })
     };
     getNumUnreadChannels = () => this.state.channels.length;
@@ -140,7 +140,7 @@ class F extends a.EventEmitter {
         })
     };
     markGuildRead = e => {
-        u.h.wait(() => (0, p.A)([e], k.JJy.INBOX)), this.setState({
+        u.h.wait(() => (0, g.A)([e], k.JJy.INBOX)), this.setState({
             channels: this.state.channels.filter(t => t.guildId !== e)
         }), this.maybeLoadMore()
     };
@@ -230,7 +230,7 @@ class F extends a.EventEmitter {
                 loadState: "loaded",
                 channels: this.updateChannel(e.channelId, e => {
                     o()("messages" === e.type, "channel cannot change type");
-                    let n = K(e, !0);
+                    let n = W(e, !0);
                     return (0 === n.messages.length || n.messages.length === e.messages.length) && (n = {
                         ...n,
                         hasLoadedAnything: !0,
@@ -243,7 +243,7 @@ class F extends a.EventEmitter {
             this.setState({
                 loadState: "loaded",
                 channels: this.updateChannel(e.channelId, e => (o()("messages" === e.type, "channel cannot change type"), {
-                    ...K(e, !0),
+                    ...W(e, !0),
                     isFullyLoaded: !0,
                     hasError: !0,
                     hasLoadedAnything: !0,
@@ -267,7 +267,7 @@ class F extends a.EventEmitter {
     }
 }
 
-function K(e, t) {
+function W(e, t) {
     let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
         i = R.A.getMessages(e.channelId),
         l = i.toArray().filter(t => P.default.compare(t.id, e.oldestReadMessageId) > 0 && 0 >= P.default.compare(t.id, e.newestUnreadMessageId));
@@ -284,21 +284,21 @@ function K(e, t) {
     }
 }
 
-function W() {
+function K() {
     var e;
     let t, n = function() {
             let e = {},
                 t = S.A.settings.guilds?.guilds ?? {};
             for (let n in t)
                 for (let i in t[n].channels) {
-                    let l = y.A.getChannel(i);
+                    let l = v.A.getChannel(i);
                     i in e && l?.guild_id !== n || (e[i] = t[n].channels[i].collapsedInInbox)
                 }
             return e
         }(),
-        i = (e = n, t = [], y.A.getSortedPrivateChannels().forEach(n => Y(e, t, null, n.id)), M.Ay.getFlattenedGuildIds().forEach(n => {
+        i = (e = n, t = [], v.A.getSortedPrivateChannels().forEach(n => Y(e, t, null, n.id)), M.Ay.getFlattenedGuildIds().forEach(n => {
             if (null == n) return;
-            let i = v.Ay.getSelectableChannelIds(n),
+            let i = y.Ay.getSelectableChannelIds(n),
                 l = E.A.getActiveJoinedUnreadThreadsForGuild(n);
             i.forEach(i => {
                 Y(e, t, n, i);
@@ -320,7 +320,7 @@ function W() {
 
 function Y(e, t, n, i) {
     if (null == i) return;
-    let l = y.A.getChannel(i);
+    let l = v.A.getChannel(i);
     if (null == l || !b.Le.has(l.type) && D.Ay.isGuildOrCategoryOrChannelMuted(n, l.id)) return;
     if (l.isPrivate()) {
         if (0 === L.Ay.getMentionCount(i)) return
@@ -351,8 +351,8 @@ function Y(e, t, n, i) {
         hasMentionsOrUnreads: d,
         mentionCount: o,
         sortOrder: function(e, t, n) {
-            let i = y.A.getChannel(t);
-            if (g.A.isFavorite(t)) return 0;
+            let i = v.A.getChannel(t);
+            if (p.A.isFavorite(t)) return 0;
             if (i.isPrivate()) return 1;
             if (L.Ay.getMentionCount(t) > 0) return L.Ay.getIsMentionLowImportance(t) ? 3 : 2;
             if (null != n) {
@@ -387,7 +387,7 @@ let z = 2 * U.A.Millis.DAY,
     q = 10 * U.A.Millis.DAY;
 
 function X(e) {
-    let [t, n] = s.useState(() => new F(W(), e)), [i, l] = s.useState(!1), a = s.useRef(Date.now()), [r, o] = s.useState(() => W());
+    let [t, n] = s.useState(() => new F(K(), e)), [i, l] = s.useState(!1), a = s.useRef(Date.now()), [r, o] = s.useState(() => K());
     s.useEffect(() => {
         let e = e => o(e);
         return t.on("change", e), o(t.state), () => {
@@ -396,7 +396,7 @@ function X(e) {
     }, [t]), s.useEffect(() => {
         if (null == r || r.channels.length > 0 || i) return;
         let t = Date.now(),
-            s = W();
+            s = K();
         0 === s.channels.length || t - a.current < 10 * U.A.Millis.SECOND ? l(!0) : (a.current = Date.now(), n(new F(s, e)))
     }, [r, i, e]);
     let d = s.useRef(t);

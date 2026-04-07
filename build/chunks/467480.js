@@ -15,13 +15,13 @@ var i = n(627968),
     A = n(278941),
     _ = n(665909),
     m = n(186111),
-    g = n(58736),
-    p = n(327337),
+    p = n(58736),
+    g = n(327337),
     f = n(985018);
 let x = l.memo(function(e) {
     let {
         channel: t
-    } = e, x = (0, u.u)(t.id), E = (0, h.S)(t.id), I = (0, A.e)(t.id), C = (0, a.useHasAnyModalOpen)(), N = (0, s.bG)([m.A], () => m.A.hasLayers()), T = l.useCallback(() => E ? f.intl.string(f.t["16QyDv"]) : null != I ? f.intl.string(f.t.kCN9i0) : null, [E, I]), S = l.useMemo(() => (E || null != I) && !C && !N, [E, I, C, N]), [b, y] = l.useState(T());
+    } = e, x = (0, u.u)(t.id), E = (0, h.S)(t.id), I = (0, A.e)(t.id), C = (0, a.useHasAnyModalOpen)(), N = (0, s.bG)([m.A], () => m.A.hasLayers()), T = l.useCallback(() => E ? f.intl.string(f.t["16QyDv"]) : null != I ? f.intl.string(f.t.kCN9i0) : null, [E, I]), S = l.useMemo(() => (E || null != I) && !C && !N, [E, I, C, N]), [b, v] = l.useState(T());
     l.useEffect(() => {
         null != I && null != x && (o.ORC.announce(f.intl.string(f.t.acsXuG)), setTimeout(() => {
             (0, c.xi)(t.id, [I.id])
@@ -46,9 +46,9 @@ let x = l.memo(function(e) {
         })
     }), l.useEffect(() => {
         let e = T();
-        null != e && y(e)
+        null != e && v(e)
     }, [E, I, T]);
-    let v = l.useCallback(() => {
+    let y = l.useCallback(() => {
         null != I && (0, c.xi)(t.id, [I.id]), null != x && ((0, o.mMO)(async () => {
             let {
                 default: e
@@ -68,7 +68,7 @@ let x = l.memo(function(e) {
                 })
             }
         }, {
-            modalKey: p.V
+            modalKey: g.V
         }), (0, _._$)({
             channelId: t.id,
             senderId: t.getRecipientId(),
@@ -82,9 +82,9 @@ let x = l.memo(function(e) {
         forceOpen: S,
         text: b,
         position: "bottom",
-        children: (0, i.jsx)(g.Ay.Icon, {
+        children: (0, i.jsx)(p.Ay.Icon, {
             icon: o.lmn,
-            onClick: v,
+            onClick: y,
             tooltip: f.intl.string(f.t.rpc2qv),
             tooltipDisabled: null != I
         })

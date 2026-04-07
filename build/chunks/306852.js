@@ -15,8 +15,8 @@ var i = n(627968),
     A = n(175203),
     _ = n(652215),
     m = n(806931),
-    g = n(143275),
-    p = n(778437);
+    p = n(143275),
+    g = n(778437);
 let f = "CameraPreviewPosition";
 
 function x(e) {
@@ -32,26 +32,26 @@ function x(e) {
         return [e, l.useCallback(e => {
             o.w.set(f, e), t(e)
         }, [])]
-    }(), T = l.useRef(null), S = null == x.getGuildId() ? 70 : 50, b = (0, r.bG)([h.A], () => h.A.pipWidth(m.R8.CAMERA_PREVIEW)), y = E.length, v = b * y + 8 * (y - 1), j = l.useMemo(() => ({
-        minWidth: m.mn[m.R8.CAMERA_PREVIEW] * y + 8 * (y - 1),
-        maxWidth: m.cF[m.R8.CAMERA_PREVIEW] * y + 8 * (y - 1)
-    }), [y]);
+    }(), T = l.useRef(null), S = null == x.getGuildId() ? 70 : 50, b = (0, r.bG)([h.A], () => h.A.pipWidth(m.R8.CAMERA_PREVIEW)), v = E.length, y = b * v + 8 * (v - 1), j = l.useMemo(() => ({
+        minWidth: m.mn[m.R8.CAMERA_PREVIEW] * v + 8 * (v - 1),
+        maxWidth: m.cF[m.R8.CAMERA_PREVIEW] * v + 8 * (v - 1)
+    }), [v]);
     l.useLayoutEffect(() => {
         T.current?.ensureIsInPosition()
     }, [E.length]);
     let R = l.useCallback(e => {
-            let t = 0 === y ? e : (e - 8 * (y - 1)) / y;
+            let t = 0 === v ? e : (e - 8 * (v - 1)) / v;
             d.EB(t, m.R8.CAMERA_PREVIEW)
-        }, [y]),
+        }, [v]),
         O = l.useCallback((e, t) => {
             N(t)
         }, [N]);
     return (0, i.jsx)("div", {
-        className: g.kL,
+        className: p.kL,
         children: (0, i.jsx)(u.S, {
             position: C,
             id: 0,
-            width: v,
+            width: y,
             ref: T,
             onMove: O,
             onResize: R,
@@ -63,12 +63,12 @@ function x(e) {
             edgeOffsetRight: 16,
             resizeConfig: j,
             children: (0, i.jsx)("div", {
-                className: g.iA,
+                className: p.iA,
                 children: E.map(e => (0, i.jsx)(A.Ay, {
                     participant: e,
                     channel: x,
                     onContextMenu: n,
-                    className: a()(g.Vs, p.a8),
+                    className: a()(p.Vs, g.a8),
                     fit: A.Yl.COVER,
                     inCall: !0,
                     popoutType: c.N.NO_POPOUT,

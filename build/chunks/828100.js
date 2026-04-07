@@ -15,8 +15,8 @@ var i = n(627968),
     A = n(775602),
     _ = n(793574),
     m = n(58149),
-    g = n(688810),
-    p = n(660387),
+    p = n(688810),
+    g = n(660387),
     f = n(343328),
     x = n(485947),
     E = n(915089),
@@ -26,8 +26,8 @@ var i = n(627968),
     T = n(380335),
     S = n(309199),
     b = n(157550),
-    y = n(97469),
-    v = n(734057),
+    v = n(97469),
+    y = n(734057),
     j = n(290863),
     R = n(645959),
     O = n(701363),
@@ -245,7 +245,7 @@ class G extends l.Component {
             };
         this.hasReportedAnalytics = !0, m.Ay.trackWithMetadata(L.HAw.DM_LIST_VIEWED, {
             ...d,
-            ...(0, p.F)(),
+            ...(0, g.F)(),
             visible_user_ids: r.filter(e => null != e),
             changelog_dm_visible: o
         })
@@ -373,19 +373,19 @@ let P = e => {
         theme: s,
         children: a,
         listScrollerRef: c
-    } = e, h = l.Children.count(a), m = v.A.getMutablePrivateChannels(), p = (0, S.uX)(m), f = (0, d.yK)([R.default, T.A, b.A], () => {
+    } = e, h = l.Children.count(a), m = y.A.getMutablePrivateChannels(), g = (0, S.uX)(m), f = (0, d.yK)([R.default, T.A, b.A], () => {
         let e = R.default.getPrivateChannelIds();
         return (0, S.eh)(e, [T.A, b.A])
     });
     (0, C.P)(I._);
     let {
         analyticsLocations: x
-    } = (0, g.Ay)(_.A.CONTACTS_LIST), N = (0, y.NC)(), {
+    } = (0, p.Ay)(_.A.CONTACTS_LIST), N = (0, v.NC)(), {
         keyboardModeEnabled: j,
         version: O
-    } = (0, d.cf)([A.A, v.A], () => ({
+    } = (0, d.cf)([A.A, y.A], () => ({
         keyboardModeEnabled: A.A.keyboardModeEnabled,
-        version: null != n ? `${n}:${v.A.getPrivateChannelsVersion()}` : v.A.getPrivateChannelsVersion()
+        version: null != n ? `${n}:${y.A.getPrivateChannelsVersion()}` : y.A.getPrivateChannelsVersion()
     })), L = l.useRef(null), M = c ?? L, D = l.useCallback(e => {
         let t = M.current,
             n = document.querySelector(e);
@@ -419,14 +419,14 @@ let P = e => {
         defaultFocused: (h + 1).toString(),
         setFocus: D
     });
-    return (0, i.jsx)(g.f5, {
+    return (0, i.jsx)(p.f5, {
         value: x,
         children: (0, i.jsx)(r.hD, {
             navigator: w,
             children: (0, i.jsx)(G, {
                 ...e,
                 density: t,
-                channels: p,
+                channels: g,
                 privateChannelIds: f,
                 listRef: M,
                 theme: N ?? s,

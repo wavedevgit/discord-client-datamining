@@ -15,8 +15,8 @@ var i = n(627968),
     A = n(160761),
     _ = n(421773),
     m = n(536432),
-    g = n(674168),
-    p = n(989799),
+    p = n(674168),
+    g = n(989799),
     f = n(173660),
     x = n(430452),
     E = n(246356),
@@ -31,9 +31,9 @@ function T(e) {
         whichPopoutIsOpen: S,
         setWhichPopoutIsOpen: b
     } = e, {
-        parentAnalyticsLocation: y
+        parentAnalyticsLocation: v
     } = (0, c.Ay)(), {
-        Component: v,
+        Component: y,
         play: j,
         events: {
             onMouseEnter: R,
@@ -50,10 +50,10 @@ function T(e) {
         isHovered: V,
         setIsHovered: H,
         onMouseEnter: F,
-        onMouseLeave: K
+        onMouseLeave: W
     } = (0, _.A)(200, 300);
 
-    function W(e) {
+    function K(e) {
         null != L && (0, d.L3)(e, async () => {
             let {
                 default: e
@@ -62,13 +62,13 @@ function T(e) {
                 guildId: L,
                 sourceAnalyticsLocations: B,
                 ...t,
-                onInteraction: (0, h.s)("SoundboardContextMenu", y)
+                onInteraction: (0, h.s)("SoundboardContextMenu", v)
             })
         })
     }
 
     function Y() {
-        (0, u.X)(y, u.O.SOUNDBOARD), S === C.P.SOUNDBOARD ? (b?.(void 0), K()) : (null != S ? (j(), F()) : j(), b?.(C.P.SOUNDBOARD))
+        (0, u.X)(v, u.O.SOUNDBOARD), S === C.P.SOUNDBOARD ? (b?.(void 0), W()) : (null != S ? (j(), F()) : j(), b?.(C.P.SOUNDBOARD))
     }
     let z = l.useCallback(() => {
             null == S && b?.(C.P.SOUNDBOARD)
@@ -92,13 +92,13 @@ function T(e) {
             return G ? null : (0, i.jsx)(E.A, {
                 children: (0, i.jsx)("div", {
                     onMouseEnter: F,
-                    onMouseLeave: K,
+                    onMouseLeave: W,
                     onMouseDown: z,
-                    children: (0, i.jsx)(p.A, {
+                    children: (0, i.jsx)(g.A, {
                         guildId: L,
                         channel: t,
                         onClose: n,
-                        gridNotice: k === a.M.CUSTOM_CALL_SOUNDS_PICKER_UPSELL && (0, i.jsx)(g.m, {
+                        gridNotice: k === a.M.CUSTOM_CALL_SOUNDS_PICKER_UPSELL && (0, i.jsx)(p.m, {
                             onClose: n,
                             markAsDismissed: w
                         }),
@@ -112,15 +112,15 @@ function T(e) {
             isTrayButton: !0,
             themeable: T,
             label: M ? N.intl.string(N.t["Ox4/zU"]) : D ? N.intl.string(N.t["+YBKYI"]) : U ? N.intl.string(N.t.X1lQli) : void 0,
-            iconComponent: v,
+            iconComponent: y,
             disabled: G,
-            onContextMenu: W,
+            onContextMenu: K,
             onClick: Y,
             onMouseEnter: e => {
                 R(), "focus" !== e.type && F()
             },
             onMouseLeave: () => {
-                null == S && (K(), O())
+                null == S && (W(), O())
             },
             isActive: V || S === C.P.SOUNDBOARD,
             color: V || S === C.P.SOUNDBOARD ? "primaryDark" : void 0

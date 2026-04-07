@@ -15,8 +15,8 @@ var i = n(627968),
     A = n(738876),
     _ = n(775602),
     m = n(793574),
-    g = n(688810),
-    p = n(355622),
+    p = n(688810),
+    g = n(355622),
     f = n(408018),
     x = n(133343),
     E = n(171593),
@@ -26,8 +26,8 @@ var i = n(627968),
     T = n(636922),
     S = n(931664),
     b = n(631576),
-    y = n(253932),
-    v = n(734057),
+    v = n(253932),
+    y = n(734057),
     j = n(31717),
     R = n(320501),
     O = n(576705),
@@ -43,24 +43,24 @@ var i = n(627968),
     V = n(55294),
     H = n(652215),
     F = n(985018),
-    K = n(822334),
-    W = n(756304);
-let Y = p.oU.THREAD_CREATION;
+    W = n(822334),
+    K = n(756304);
+let Y = g.oU.THREAD_CREATION;
 
 function z(e) {
     let {
         parentChannelId: t,
         parentMessageId: n,
         location: l
-    } = e, s = (0, r.bG)([v.A], () => v.A.getChannel(t)), {
+    } = e, s = (0, r.bG)([y.A], () => y.A.getChannel(t)), {
         analyticsLocations: a
-    } = (0, g.Ay)(m.A.CREATE_THREAD);
-    return null == s ? null : (0, i.jsx)(g.f5, {
+    } = (0, p.Ay)(m.A.CREATE_THREAD);
+    return null == s ? null : (0, i.jsx)(p.f5, {
         value: a,
         children: (0, i.jsx)(M.Ah, {
             children: (0, i.jsxs)("section", {
                 "aria-label": F.intl.string(F.t.rBIGBL),
-                className: K.kL,
+                className: W.kL,
                 children: [(0, i.jsx)(A.A, {
                     channel: s,
                     draftType: j.C.FirstThreadMessage
@@ -122,8 +122,8 @@ function X(e) {
         }, [t])),
         {
             threadSettings: m,
-            setThreadSettings: g,
-            updateThreadSettings: p
+            setThreadSettings: p,
+            updateThreadSettings: g
         } = function(e, t) {
             let n = (0, r.bG)([j.A], () => j.A.getThreadSettings(e.id) ?? {}, [e.id]),
                 [i, s] = l.useState(n),
@@ -159,21 +159,21 @@ function X(e) {
                 textAreaState: n,
                 setTextAreaState: i
             }
-        }(n, g),
+        }(n, p),
         I = (0, P.EN)(n),
         {
             isGeneratingAI: N,
             enableAIFeatures: T,
-            getThreadNameInputAccessory: y
+            getThreadNameInputAccessory: v
         } = (0, B.C)({
             parentChannel: n,
             parentMessageId: s,
-            updateThreadSettings: p,
+            updateThreadSettings: g,
             threadSettings: m,
             textAreaState: x
         }),
         {
-            nameError: v,
+            nameError: y,
             messageError: R,
             submit: O,
             submitting: U
@@ -212,7 +212,7 @@ function X(e) {
                         shouldRefocus: !0
                     };
                     let {
-                        valid: g
+                        valid: p
                     } = await (0, D.i)({
                         content: e,
                         stickers: l,
@@ -220,7 +220,7 @@ function X(e) {
                         type: Y,
                         channel: null == n ? t : null
                     });
-                    if (!g) return _(!1), {
+                    if (!p) return _(!1), {
                         shouldClear: !1,
                         shouldRefocus: !0
                     };
@@ -250,43 +250,43 @@ function X(e) {
         }),
         k = (0, P.Iy)(m, I) ? o.tn0 : o.ysw;
     return (0, i.jsx)("div", {
-        className: K.TE,
+        className: W.TE,
         onMouseDown: A,
         onFocus: A,
         children: (0, i.jsx)("div", {
-            className: a()(K.Og, `group-spacing-${u}`),
+            className: a()(W.Og, `group-spacing-${u}`),
             children: (0, i.jsxs)("form", {
                 onSubmit: e => {
                     e.preventDefault(), O()
                 },
-                className: K.Zd,
+                className: W.Zd,
                 children: [(0, i.jsx)(o.HOs, {
-                    className: K.XG,
+                    className: W.XG,
                     fade: !0,
                     children: (0, i.jsxs)("div", {
-                        className: K.bv,
+                        className: W.bv,
                         children: [(0, i.jsxs)(C.Ay, {
                             channelId: "create-thread-null",
                             children: [(0, i.jsx)("div", {
-                                className: a()(W.P0, K.P0),
+                                className: a()(K.P0, W.P0),
                                 children: (0, i.jsx)(k, {
-                                    className: W.Kk
+                                    className: K.Kk
                                 })
                             }), (0, i.jsxs)(o.nVY, {
                                 children: [(0, i.jsx)(Q, {
                                     parentChannel: n,
                                     parentMessageId: s,
                                     threadSettings: m,
-                                    updateThreadSettings: p,
-                                    error: v,
+                                    updateThreadSettings: g,
+                                    error: y,
                                     disabled: U,
                                     isGeneratingAI: N,
                                     enableAIFeatures: T,
-                                    getThreadNameInputAccessory: y
-                                }), n.type === H.rbe.GUILD_TEXT ? (0, i.jsx)(J, {
+                                    getThreadNameInputAccessory: v
+                                }), n.type === H.rbe.GUILD_TEXT ? (0, i.jsx)($, {
                                     startedFromMessage: null != s,
                                     threadSettings: m,
-                                    updateThreadSettings: p,
+                                    updateThreadSettings: g,
                                     privateThreadMode: I
                                 }) : null]
                             })]
@@ -296,8 +296,8 @@ function X(e) {
                         })]
                     })
                 }), (0, i.jsxs)("div", {
-                    className: K.Eh,
-                    children: [(0, i.jsx)($, {
+                    className: W.Eh,
+                    children: [(0, i.jsx)(J, {
                         parentChannel: n,
                         textAreaState: x,
                         setTextAreaState: E,
@@ -306,7 +306,7 @@ function X(e) {
                     }), (0, i.jsx)(h.Ay, {
                         channel: n,
                         isThreadCreation: !0,
-                        className: K.RL,
+                        className: W.RL,
                         isInTextChannel: !0
                     })]
                 })]
@@ -315,7 +315,7 @@ function X(e) {
     })
 }
 
-function J(e) {
+function $(e) {
     let {
         startedFromMessage: t,
         threadSettings: n,
@@ -349,12 +349,12 @@ function Q(e) {
         getThreadNameInputAccessory: h
     } = e, A = l.name ?? "", _ = (0, G.vr)(a, {
         content: A
-    }), m = (0, P.l1)(t, n), g = null != n && !u, p = (0, I.GV)(), f = u ? F.intl.string(F.t["Nb2/RE"]) : "" !== m ? m : F.intl.string(F.t["Nb2/RE"]);
+    }), m = (0, P.l1)(t, n), p = null != n && !u, g = (0, I.GV)(), f = u ? F.intl.string(F.t["Nb2/RE"]) : "" !== m ? m : F.intl.string(F.t["Nb2/RE"]);
     return (0, i.jsx)(o.ksK, {
-        label: F.intl.string(g ? F.t.JPvIiL : F.t.j3XWjD),
+        label: F.intl.string(p ? F.t.JPvIiL : F.t.j3XWjD),
         trailing: h(r),
         value: A,
-        id: p,
+        id: g,
         placeholder: f,
         maxLength: H.Ign,
         onChange: e => {
@@ -373,14 +373,14 @@ function Q(e) {
     })
 }
 
-function $(e) {
+function J(e) {
     let {
         parentChannel: t,
         textAreaState: n,
         setTextAreaState: s,
         submit: u,
         error: h
-    } = e, [A, _] = l.useState(!0), m = l.useCallback(() => _(!0), []), g = l.useCallback(() => _(!1), []), p = l.useCallback((e, n, i) => {
+    } = e, [A, _] = l.useState(!0), m = l.useCallback(() => _(!0), []), p = l.useCallback(() => _(!1), []), g = l.useCallback((e, n, i) => {
         d.A.saveDraft(t.id, n, j.C.FirstThreadMessage), s(e => ("" !== n && e.textValue !== n ? c.A.startTyping(t.id) : "" === n && c.A.stopTyping(t.id), {
             textValue: n,
             richValue: i
@@ -398,7 +398,7 @@ function $(e) {
         handler: m
     }), (0, M.Vo)({
         event: H.jej.TEXTAREA_BLUR,
-        handler: g
+        handler: p
     });
     let I = (0, r.bG)([O.A], () => O.A.can(H.xBc.ATTACH_FILES, t)),
         C = (0, G.vr)(h, {
@@ -410,7 +410,7 @@ function $(e) {
             type: Y,
             canAttachFiles: I
         }), (0, i.jsx)("div", {
-            className: K.xN,
+            className: W.xN,
             children: (0, i.jsx)(o.dzK, {
                 error: C
             })
@@ -421,13 +421,13 @@ function $(e) {
             textValue: n.textValue,
             richValue: n.richValue,
             focused: A,
-            className: a()(K.gM, K.Yy),
-            innerClassName: a()(K.SL, {
-                [K.cr]: null != C
+            className: a()(W.gM, W.Yy),
+            innerClassName: a()(W.SL, {
+                [W.cr]: null != C
             }),
             onFocus: m,
-            onBlur: g,
-            onChange: p,
+            onBlur: p,
+            onChange: g,
             onSubmit: f,
             promptToUpload: U.R
         })]
@@ -438,9 +438,9 @@ function Z(e) {
     let {
         parentChannel: t,
         parentMessageId: n
-    } = e, l = (0, r.bG)([R.A], () => null == n ? null : R.A.getMessage(t.id, n)), s = y.hH.useSetting();
+    } = e, l = (0, r.bG)([R.A], () => null == n ? null : R.A.getMessage(t.id, n)), s = v.hH.useSetting();
     return null != l ? (0, i.jsx)(T.A, {
-        className: K.IL,
+        className: W.IL,
         message: l,
         channel: t,
         compact: s,

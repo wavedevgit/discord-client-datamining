@@ -42,24 +42,24 @@ function f() {
             return null != e ? e.shortcut : []
         }, []),
         f = (0, a.bG)([c.A], () => c.A.isInputLocked(t), [t]),
-        g = (0, a.bG)([l.A], () => {
+        p = (0, a.bG)([l.A], () => {
             let t = (0, o.Q2)(e);
             return l.A.isVisible(t) && l.A.isFocused(t)
         }, [e]),
-        p = i.useRef([]),
+        g = i.useRef([]),
         A = i.useMemo(() => (0, s.pi)(n).map(e => h(e)), [n]),
-        E = i.useMemo(() => n.length > 0, [n]),
-        I = !f && E && g;
+        x = i.useMemo(() => n.length > 0, [n]),
+        I = !f && x && p;
     i.useEffect(() => {
-        p.current = []
+        g.current = []
     }, [f, A]), i.useEffect(() => {
         if (!I) {
-            p.current = [];
+            g.current = [];
             return
         }
         let t = e => {
                 let t = h(e),
-                    n = p.current,
+                    n = g.current,
                     i = n.some(e => m(e, t)),
                     a = function(e) {
                         let t = e.key.toLowerCase();
@@ -71,7 +71,7 @@ function f() {
             },
             n = e => {
                 let t = h(e),
-                    n = p.current,
+                    n = g.current,
                     i = n.findIndex(e => m(e, t));
                 i > -1 && n.splice(i, 1)
             };

@@ -15,8 +15,8 @@ var i = n(627968),
     A = n(676002),
     _ = n(296216),
     m = n(963027),
-    g = n(202384),
-    p = n(51758),
+    p = n(202384),
+    g = n(51758),
     f = n(721592),
     x = n(214660),
     E = n(824865),
@@ -26,8 +26,8 @@ var i = n(627968),
     T = n(69407),
     S = n(446600),
     b = n(96566),
-    y = n(175452),
-    v = n(924985),
+    v = n(175452),
+    y = n(924985),
     j = n(734057),
     R = n(71393),
     O = n(834942),
@@ -44,8 +44,8 @@ n(281405);
 var V = n(652215),
     H = n(349828),
     F = n(985018),
-    K = n(928409),
-    W = n(822294);
+    W = n(928409),
+    K = n(822294);
 class Y extends P.Ay {
     channelItemRef = l.createRef();
     state = {
@@ -74,11 +74,11 @@ class Y extends P.Ay {
             sortingPosition: t,
             isUserOver: n
         } = this.props;
-        if (n) return K.ZS;
+        if (n) return W.ZS;
         if (null != t)
-            if (e > t) return K.mU;
-            else return K.TR;
-        return K.fx
+            if (e > t) return W.mU;
+            else return W.TR;
+        return W.fx
     }
     handleClick = () => {
         let {
@@ -88,7 +88,7 @@ class Y extends P.Ay {
             unverifiedAccount: i,
             isSuggestedSection: l
         } = this.props, s = e.getGuildId();
-        null != s && (0, p.V)(s) && (0, g.Ze)(s), i && this.setState({
+        null != s && (0, g.V)(s) && (0, p.Ze)(s), i && this.setState({
             shouldShowGuildVerificationPopout: !0
         }), t || n || e.isRoleSubscriptionTemplatePreviewChannel() || (0, C.av)(e), __OVERLAY__ || (0, I.iN)(e.id, l ? {
             source: E.A.CHANNEL_LIST_SUGGESTED_SECTION
@@ -158,7 +158,7 @@ class Y extends P.Ay {
             asContainer: !0,
             text: F.intl.string(F.t.ZXxLQg),
             children: (0, i.jsx)(c.DUT, {
-                className: a()(K.Xs, n ? K.Tf : null),
+                className: a()(W.Xs, n ? W.Tf : null),
                 onClick: () => {
                     u.A.updateChatOpen(e.id, !0), this.handleClickChat()
                 },
@@ -166,7 +166,7 @@ class Y extends P.Ay {
                 children: (0, i.jsx)(c.oyn, {
                     size: "xs",
                     color: "currentColor",
-                    className: K.gE
+                    className: W.gE
                 })
             })
         })
@@ -199,8 +199,8 @@ class Y extends P.Ay {
             canReorderChannel: h,
             canMoveMembers: A,
             stageInstance: _,
-            isSubscriptionGated: g,
-            needSubscriptionToAccess: p,
+            isSubscriptionGated: p,
+            needSubscriptionToAccess: g,
             unread: f,
             resolvedUnreadSetting: x,
             mentionCount: E,
@@ -209,7 +209,7 @@ class Y extends P.Ay {
             shouldShowGuildVerificationPopout: C
         } = this.state, N = (0, i.jsxs)("li", {
             className: a()(this.getModeClass(), {
-                [K.r9]: this.isDisabled()
+                [W.r9]: this.isDisabled()
             }),
             "data-dnd-name": e.name,
             children: [(0, i.jsx)(c.YNO, {
@@ -223,9 +223,9 @@ class Y extends P.Ay {
                     text: this.getTooltipText(),
                     children: (0, i.jsxs)(w.Ay, {
                         ref: this.channelItemRef,
-                        className: K.Ki,
+                        className: W.Ki,
                         iconClassName: a()({
-                            [W.G]: null != _
+                            [K.G]: null != _
                         }),
                         channel: e,
                         selected: !I && t,
@@ -247,8 +247,8 @@ class Y extends P.Ay {
                             channel: e,
                             unread: f,
                             mentionCount: E,
-                            isSubscriptionGated: g,
-                            needSubscriptionToAccess: p
+                            isSubscriptionGated: p,
+                            needSubscriptionToAccess: g
                         }),
                         children: [I && this.renderAcceptSuggestionButton(), I && this.renderRemoveSuggestionButton(), !I && this.renderOpenChatButton(), !I && this.renderInviteButton(), !I && this.renderEditButton(), !I && this.renderChannelInfo()]
                     })
@@ -282,16 +282,16 @@ function q(e) {
             bypassLimit: L.A.can(V.xBc.MOVE_MEMBERS, n),
             unverifiedAccount: !i.canChat
         }
-    }), h = (0, r.bG)([v.A], () => v.A.isCollapsed(n.parent_id)), A = (0, y.Ay)(n.id), _ = (0, r.bG)([S.A], () => S.A.getStageInstanceByChannel(n.id), [n.id]), m = (0, N.zy)(n.id, T.ip.AUDIENCE), {
-        isSubscriptionGated: g,
-        needSubscriptionToAccess: p
+    }), h = (0, r.bG)([y.A], () => y.A.isCollapsed(n.parent_id)), A = (0, v.Ay)(n.id), _ = (0, r.bG)([S.A], () => S.A.getStageInstanceByChannel(n.id), [n.id]), m = (0, N.zy)(n.id, T.ip.AUDIENCE), {
+        isSubscriptionGated: p,
+        needSubscriptionToAccess: g
     } = (0, f.A)(n.id), x = (0, r.bG)([D.Ay], () => D.Ay.isFavorite(t.id, n.id)), E = (0, b.xn)(n.id), I = (0, k.A)({
         channel: n,
         isChannelSelected: !1,
         isChannelCollapsed: a,
         voiceStates: o,
-        isSubscriptionGated: g,
-        needSubscriptionToAccess: p,
+        isSubscriptionGated: p,
+        needSubscriptionToAccess: g,
         enableConnectedUserLimit: E || n.userLimit > 0 && n.userLimit < V.RCc
     }), C = e.connected && null == I;
     return (0, i.jsx)(z, {
@@ -299,8 +299,8 @@ function q(e) {
         connectAction: A,
         numAudience: m,
         stageInstance: _,
-        isSubscriptionGated: g,
-        needSubscriptionToAccess: p,
+        isSubscriptionGated: p,
+        needSubscriptionToAccess: g,
         ...d,
         ...u,
         ...e,

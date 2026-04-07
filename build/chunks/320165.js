@@ -15,29 +15,29 @@ var i = n(627968),
     h = n(47167),
     m = n(713654),
     f = n(461678),
-    g = n(95550),
-    p = n(95701),
+    p = n(95550),
+    g = n(95701),
     A = n(734057),
-    E = n(383501),
+    x = n(383501),
     I = n(994500),
-    x = n(543465),
+    E = n(543465),
     b = n(287809),
     v = n(810412),
     S = n(914853),
     C = n(589051),
-    T = n(129537),
-    y = n(578093),
+    y = n(129537),
+    T = n(578093),
     N = n(145567),
     w = n(922611),
     L = n(201479),
-    O = n(691761),
-    j = n(256688),
+    j = n(691761),
+    O = n(256688),
     P = n(652215),
     R = n(895867),
     D = n(985018),
-    M = n(580884);
+    k = n(580884);
 
-function k(e) {
+function M(e) {
     return null != e && (e.isDM() || e.isMultiUserDM())
 }
 
@@ -96,13 +96,13 @@ function G(e) {
 function z(e) {
     let {
         channel: t
-    } = e, n = a.useRef(null), r = t?.id ?? null, l = t?.guild_id != null, [o, u] = (0, s.yK)([x.Ay], () => l && null != r && null != t ? [x.Ay.isChannelMuted(t.getGuildId(), t.id), x.Ay.resolvedMessageNotifications(t)] : [!1, P.orn.ALL_MESSAGES], [t, r, l]), [_, h] = a.useState(!1), m = a.useCallback(() => {
+    } = e, n = a.useRef(null), r = t?.id ?? null, l = t?.guild_id != null, [o, u] = (0, s.yK)([E.Ay], () => l && null != r && null != t ? [E.Ay.isChannelMuted(t.getGuildId(), t.id), E.Ay.resolvedMessageNotifications(t)] : [!1, P.orn.ALL_MESSAGES], [t, r, l]), [_, h] = a.useState(!1), m = a.useCallback(() => {
         h(e => !e), (0, v.YX)(P.uss.TEXT_CHAT_V3, {
             type: v.Z5.TEXT_CHAT,
             value: v.IP.SETTINGS_OPENED,
             secondaryValue: "notification_settings"
         })
-    }, []), g = D.intl.string(D.t.h850Ss), p = o || u !== P.orn.ALL_MESSAGES ? c.a_I : c.XFE;
+    }, []), p = D.intl.string(D.t.h850Ss), g = o || u !== P.orn.ALL_MESSAGES ? c.a_I : c.XFE;
     return l && null != t ? (0, i.jsx)(c.YNO, {
         targetElementRef: n,
         shouldShow: _,
@@ -126,12 +126,12 @@ function z(e) {
             return (0, i.jsx)("div", {
                 ref: n,
                 children: (0, i.jsx)(d.m, {
-                    text: g,
-                    "aria-label": g,
+                    text: p,
+                    "aria-label": p,
                     children: (0, i.jsx)(c.K0, {
                         ...a,
-                        icon: p,
-                        "aria-label": g,
+                        icon: g,
+                        "aria-label": p,
                         size: "sm",
                         variant: "icon-only",
                         onClick: m
@@ -150,7 +150,7 @@ function U(e) {
         onTogglePinsPopout: r,
         onRequestClosePinsPopout: l
     } = e;
-    return k(t) ? (0, i.jsxs)(i.Fragment, {
+    return M(t) ? (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(d.m, {
             text: D.intl.string(D.t.JJogjm),
             "aria-label": D.intl.string(D.t.JJogjm),
@@ -179,7 +179,7 @@ function U(e) {
                         type: v.Z5.INVITE,
                         value: v.IP.PANEL_OPENED,
                         secondaryValue: "add_members"
-                    }), (0, g.Jz)({
+                    }), (0, p.Jz)({
                         channel: t,
                         onComplete: e => {
                             (0, N.D$)({
@@ -189,7 +189,7 @@ function U(e) {
                                     guildId: null,
                                     messageId: null
                                 },
-                                source: j.B.MANUAL,
+                                source: O.B.MANUAL,
                                 widgetType: P.uss.TEXT_CHAT_V3
                             })
                         }
@@ -226,23 +226,23 @@ function F(e) {
         guild: r,
         title: _,
         dragStart: f,
-        dragging: g
+        dragging: p
     } = e, {
-        hasFriendList: x
-    } = (0, C.M8)("TextChatHeader"), [G, z] = a.useState(!1), F = (0, s.bG)([E.A], () => E.A.getChannelId(), []), W = t?.isDM() ? n?.id ?? null : null, H = (0, O.p)(W), B = F === t?.id, Y = D.intl.string(R.default.tYPfF2), X = (0, s.bG)([A.A], () => t?.isThread() && null != t.parent_id ? A.A.getChannel(t.parent_id) : null, [t]), Z = (0, s.bG)([b.default, I.A], () => null != X ? (0, h.m1)(X, b.default, I.A) : null, [X]), K = (0, s.bG)([], () => {
+        hasFriendList: E
+    } = (0, C.M8)("TextChatHeader"), [G, z] = a.useState(!1), F = (0, s.bG)([x.A], () => x.A.getChannelId(), []), W = t?.isDM() ? n?.id ?? null : null, H = (0, j.p)(W), B = F === t?.id, Y = D.intl.string(R.default.tYPfF2), X = (0, s.bG)([A.A], () => t?.isThread() && null != t.parent_id ? A.A.getChannel(t.parent_id) : null, [t]), Z = (0, s.bG)([b.default, I.A], () => null != X ? (0, h.m1)(X, b.default, I.A) : null, [X]), K = (0, s.bG)([], () => {
         var e, i;
         return e = t, i = n, null == e ? null : e.isDM() && null != i ? I.A.isFriend(i.id) ? {
             tab: S.x.FRIENDS,
             targetId: i.id
-        } : null : (0, p.ke)(e.type) ? {
+        } : null : (0, g.ke)(e.type) ? {
             tab: S.x.MESSAGES,
             targetId: e.id
-        } : (0, p.ay)(e.type) ? {
+        } : (0, g.ay)(e.type) ? {
             tab: S.x.VOICE,
             targetId: e.id
         } : null
     }, [t, n]), J = a.useCallback(e => {
-        k(t) && ((0, v.YX)(P.uss.TEXT_CHAT_V3, {
+        M(t) && ((0, v.YX)(P.uss.TEXT_CHAT_V3, {
             type: v.Z5.CALL_BUTTON,
             value: v.IP.ENABLED,
             secondaryValue: e ? "video" : "voice"
@@ -258,14 +258,14 @@ function F(e) {
         })
     }, [t?.id]);
     return (0, i.jsxs)("div", {
-        className: l()(M.XV, g && M.cB),
+        className: l()(k.XV, p && k.cB),
         onMouseDown: e => {
-            0 === e.button && f(T.P.MOVE, e.clientX, e.clientY)
+            0 === e.button && f(y.P.MOVE, e.clientX, e.clientY)
         },
         children: [(0, i.jsxs)("div", {
-            className: M.LD,
+            className: k.LD,
             children: [(0, i.jsx)("div", {
-                className: M.gr,
+                className: k.gr,
                 children: (0, i.jsx)(L.J, {
                     application: H,
                     fallback: (0, i.jsx)(w.g, {
@@ -276,17 +276,17 @@ function F(e) {
                     })
                 })
             }), (0, i.jsxs)("div", {
-                className: M.G1,
+                className: k.G1,
                 children: [(() => {
                     if (null != W) return null;
                     let e = (0, m.gU)(t, r);
                     return null != e ? (0, i.jsx)(e, {
-                        className: M.gr,
+                        className: k.gr,
                         size: "xs"
                     }) : null
                 })(), null != X && null != Z ? (0, i.jsxs)(i.Fragment, {
                     children: [(0, i.jsx)(c.DUT, {
-                        className: M.oH,
+                        className: k.oH,
                         onMouseDown: e => e.stopPropagation(),
                         onClick: e => {
                             e.stopPropagation(), (0, N.D$)({
@@ -296,7 +296,7 @@ function F(e) {
                                     guildId: X.getGuildId?.() ?? X.guild_id ?? null,
                                     messageId: null
                                 },
-                                source: j.B.MANUAL,
+                                source: O.B.MANUAL,
                                 widgetType: P.uss.TEXT_CHAT_V3
                             })
                         },
@@ -306,17 +306,17 @@ function F(e) {
                             children: Z
                         })
                     }), (0, i.jsx)(c._BQ, {
-                        className: M.ln,
+                        className: k.ln,
                         size: "xs",
                         color: c.LU0.colors.TEXT_MUTED
                     })]
                 }) : null, (0, i.jsxs)(c.Text, {
-                    className: M.DD,
+                    className: k.DD,
                     variant: "text-sm/medium",
                     color: "text-strong",
                     children: [_, H?.name != null && "" !== H.name ? (0, i.jsx)(c.Text, {
                         tag: "span",
-                        className: M.X7,
+                        className: k.X7,
                         variant: "text-xs/medium",
                         color: "text-muted",
                         children: D.intl.formatToPlainString(R.default.x1k3cO, {
@@ -326,7 +326,7 @@ function F(e) {
                 })]
             })]
         }), (0, i.jsxs)("div", {
-            className: M.IE,
+            className: k.IE,
             onMouseDown: e => {
                 e.stopPropagation()
             },
@@ -341,7 +341,7 @@ function F(e) {
                 pinsOpen: G,
                 onTogglePinsPopout: Q,
                 onRequestClosePinsPopout: () => z(!1)
-            }), x && null != K && (0, i.jsx)(y.j, {
+            }), E && null != K && (0, i.jsx)(T.j, {
                 tab: K.tab,
                 targetId: K.targetId,
                 widgetType: P.uss.TEXT_CHAT_V3,

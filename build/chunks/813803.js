@@ -1,6 +1,6 @@
 /** chunk id: 813803 params = (module,exports,require) **/
 n.d(t, {
-    _: () => p
+    _: () => g
 });
 var i = n(627968);
 n(64700);
@@ -16,13 +16,13 @@ var l = n(877624),
     A = n(49999),
     _ = n(652215),
     m = n(985018),
-    g = n(381703);
-let p = e => {
+    p = n(381703);
+let g = e => {
     let {
         dismissibleContent: t,
         noticeType: n
     } = e, {
-        analyticsLocations: p
+        analyticsLocations: g
     } = (0, o.Ay)(), f = (0, s.bG)([c.A], () => {
         let e = c.A.getMarketingComponentByType(l.C.GIFT_REMINDER_NAGBAR);
         return null == e || "giftReminderNagbar" !== e.properties.properties.oneofKind ? null : e.properties.properties.giftReminderNagbar
@@ -47,13 +47,13 @@ let p = e => {
                     width: 20,
                     height: 20,
                     color: "currentColor",
-                    className: g.ez
+                    className: p.ez
                 }), f.body, (0, i.jsx)(r.Z_L, {
                     onClick: () => {
                         (0, d.A)({
                             isGift: !0,
                             initialPlanId: null,
-                            analyticsLocations: p,
+                            analyticsLocations: g,
                             analyticsLocation: _.ThZ.SEASONAL_GIFTING_REMINDER_NAGBAR,
                             analyticsObject: {
                                 page: _.liQ.PREMUIM_UPSELL_GIFTING_PROMOTION

@@ -1,6 +1,6 @@
 /** chunk id: 420216 params = (module,exports,require) **/
 n.d(t, {
-    r: () => y
+    r: () => v
 });
 var i = n(627968);
 n(64700);
@@ -16,8 +16,8 @@ var l = n(554146),
     A = n(745299),
     _ = n(976860),
     m = n(780964),
-    g = n(718446),
-    p = n(858897),
+    p = n(718446),
+    g = n(858897),
     f = n(879945),
     x = n(954571),
     E = n(379848),
@@ -27,10 +27,10 @@ var l = n(554146),
     T = n(355097),
     S = n(985018),
     b = n(381703);
-let y = e => {
+let v = e => {
     let {
         dismissibleContent: t,
-        noticeType: y
+        noticeType: v
     } = e;
     return (0, i.jsx)(E.Ay, {
         contentTypes: [t],
@@ -47,7 +47,7 @@ let y = e => {
                         color: s.Hv$.DEFAULT,
                         children: [(0, i.jsx)(s.PMB, {
                             onClick: () => E(I.i.UNKNOWN),
-                            noticeType: y
+                            noticeType: v
                         }), S.intl.string(S.t["+xn1o5"]), (0, i.jsx)("i", {
                             className: b.c9
                         }), (0, i.jsx)("i", {
@@ -55,7 +55,7 @@ let y = e => {
                         }), (0, i.jsx)("i", {
                             className: b.p0
                         }), (0, i.jsx)(s.Z_L, {
-                            noticeType: y,
+                            noticeType: v,
                             onClick: () => {
                                 (0, s.mMO)(async () => {
                                     let {
@@ -75,11 +75,11 @@ let y = e => {
                         color: s.Hv$.DEFAULT,
                         children: [(0, i.jsx)(s.PMB, {
                             onClick: () => E(I.i.UNKNOWN),
-                            noticeType: y
+                            noticeType: v
                         }), (0, i.jsx)("i", {
                             className: b.TN
                         }), S.intl.string(S.t.lgwX26), (0, i.jsx)(s.Z_L, {
-                            noticeType: y,
+                            noticeType: v,
                             onClick: () => {
                                 (0, o.A)(C.AMi.META_QUEST), E(I.i.TAKE_ACTION)
                             },
@@ -91,7 +91,7 @@ let y = e => {
                         color: s.Hv$.SPOTIFY,
                         children: [(0, i.jsx)(s.PMB, {
                             onClick: () => E(I.i.UNKNOWN),
-                            noticeType: y
+                            noticeType: v
                         }), (0, i.jsx)(f.A, {
                             className: b.tV
                         }), S.intl.string(S.t["5NUVHH"]), (0, i.jsx)(s.Z_L, {
@@ -99,7 +99,7 @@ let y = e => {
                                 platformType: C.fg2.SPOTIFY,
                                 location: "Notice Bar"
                             }),
-                            noticeType: y,
+                            noticeType: v,
                             children: S.intl.string(S.t.S0W8Z5)
                         })]
                     });
@@ -107,7 +107,7 @@ let y = e => {
                     return (0, i.jsxs)(s.$Td, {
                         color: s.Hv$.PLAYSTATION,
                         children: [(0, i.jsx)(s.PMB, {
-                            noticeType: y,
+                            noticeType: v,
                             onClick: () => E(I.i.UNKNOWN)
                         }), (0, i.jsx)("img", {
                             alt: "",
@@ -126,7 +126,7 @@ let y = e => {
                         color: s.Hv$.DEFAULT,
                         children: [(0, i.jsx)(s.PMB, {
                             onClick: () => E(I.i.USER_DISMISS),
-                            noticeType: y
+                            noticeType: v
                         }), S.intl.string(S.t["3qKN/h"]), (0, i.jsx)(s.Z_L, {
                             onClick: async () => {
                                 E(I.i.TAKE_ACTION);
@@ -152,7 +152,7 @@ let y = e => {
                                     (0, s.showToast)((0, s.createToast)(S.intl.string(S.t.xSCvBf), s.ToastType.FAILURE))
                                 }
                             },
-                            noticeType: y,
+                            noticeType: v,
                             children: S.intl.string(S.t["ff/XXy"])
                         })]
                     });
@@ -166,19 +166,19 @@ let y = e => {
                             children: S.intl.string(S.t["+urf75"])
                         }), (0, i.jsx)(s.Z_L, {
                             className: b.CO,
-                            noticeType: y,
+                            noticeType: v,
                             onClick: () => {
                                 x.default.track(C.HAw.PREMIUM_PROMOTION_OPENED, {
                                     location_section: C.JJy.NOTIFICATION_BAR,
                                     location_object: C.ZSU.BUTTON_CTA
-                                }), (0, p.openUserSettings)(m.X.NITRO_PANEL)
+                                }), (0, g.openUserSettings)(m.X.NITRO_PANEL)
                             },
                             children: S.intl.string(S.t["8JC5e/"])
                         }), (0, i.jsx)(s.PMB, {
                             onClick: () => {
                                 E(I.i.UNKNOWN), (0, a.lA)(C.nhx.PREMIUM_PROMO_DISMISSED, !0)
                             },
-                            noticeType: y
+                            noticeType: v
                         })]
                     });
                 case l.M.NAGBAR_NOTICE_PREMIUM_TIER_TWO_TRIAL_ENDING:
@@ -195,12 +195,12 @@ let y = e => {
                     return (0, i.jsxs)(s.$Td, {
                         color: s.Hv$.PREMIUM_TIER_2,
                         children: [(0, i.jsx)(s.PMB, {
-                            noticeType: y,
+                            noticeType: v,
                             onClick: () => E(I.i.UNKNOWN)
                         }), S.intl.string(S.t["0KFB2B"]), (0, i.jsx)(s.Z_L, {
-                            noticeType: y,
+                            noticeType: v,
                             onClick: () => {
-                                E(I.i.UNKNOWN), (0, p.openUserSettings)(m.X.NITRO_PANEL)
+                                E(I.i.UNKNOWN), (0, g.openUserSettings)(m.X.NITRO_PANEL)
                             },
                             children: S.intl.string(S.t.pyYSiO)
                         })]
@@ -210,26 +210,26 @@ let y = e => {
                         color: s.Hv$.DANGER,
                         children: [(0, i.jsx)(s.PMB, {
                             onClick: () => E(I.i.UNKNOWN),
-                            noticeType: y
+                            noticeType: v
                         }), S.intl.string(S.t["7490vQ"]), (0, i.jsx)(s.Z_L, {
-                            noticeType: y,
+                            noticeType: v,
                             onClick: () => {
-                                (0, _.pX)((0, g.settingsPathToRoute)(T.od.ACCOUNT))
+                                (0, _.pX)((0, p.settingsPathToRoute)(T.od.ACCOUNT))
                             },
                             children: S.intl.string(S.t.Vm8akB)
                         })]
                     });
                 case l.M.NAGBAR_ACTIVATE_SERVER_SUBSCRIPTION:
-                    let v = u.A.getEligibleGuildsForNagActivate();
+                    let y = u.A.getEligibleGuildsForNagActivate();
                     return (0, i.jsxs)(s.$Td, {
                         color: s.Hv$.DEFAULT,
                         children: [(0, i.jsx)(s.PMB, {
                             onClick: () => E(I.i.UNKNOWN),
-                            noticeType: y
+                            noticeType: v
                         }), S.intl.string(S.t.pJ4hJE), (0, i.jsx)(s.Z_L, {
-                            noticeType: y,
+                            noticeType: v,
                             onClick: () => {
-                                E(I.i.PRIMARY), (0, _.pX)(1 === v.length ? C.BVt.GUILD_SETTINGS(v[0], "role-subscriptions") : C.BVt.PICK_GUILD_SETTINGS("role-subscriptions", void 0, "server-subscriptions-finish-setting-up"))
+                                E(I.i.PRIMARY), (0, _.pX)(1 === y.length ? C.BVt.GUILD_SETTINGS(y[0], "role-subscriptions") : C.BVt.PICK_GUILD_SETTINGS("role-subscriptions", void 0, "server-subscriptions-finish-setting-up"))
                             },
                             children: S.intl.string(S.t["74s74F"])
                         })]
@@ -239,7 +239,7 @@ let y = e => {
                         color: s.Hv$.PREMIUM_TIER_2,
                         children: [(0, i.jsx)(s.PMB, {
                             onClick: () => E(I.i.UNKNOWN),
-                            noticeType: y
+                            noticeType: v
                         }), S.intl.string(S.t["O9GI+k"]), (0, i.jsx)(s.Z_L, {
                             onClick: () => {
                                 (0, h.A)({
@@ -249,7 +249,7 @@ let y = e => {
                                     onClose: () => E(I.i.UNKNOWN)
                                 })
                             },
-                            noticeType: y,
+                            noticeType: v,
                             children: S.intl.string(S.t.Zi69D4)
                         })]
                     })

@@ -1,41 +1,41 @@
 /** chunk id: 371664 params = (module,exports,require) **/
-i.d(e, {
+n.d(e, {
     A: () => a,
     K: () => s
 });
-var n = i(627968),
-    l = i(64700),
-    r = i(953727);
+var i = n(627968),
+    l = n(64700),
+    r = n(953727);
 let s = 8;
 
 function a(t) {
     let {
         width: e = 80,
-        height: i = 28,
+        height: n = 28,
         color: a = "currentColor",
         foreground: o,
-        ...d
-    } = t, u = `pill-frame-pattern-${i}`, c = l.useMemo(() => {
+        ...u
+    } = t, d = `pill-frame-pattern-${n}`, c = l.useMemo(() => {
         let t;
-        return t = i - 8, `m0 0h8v${i}h-8zm4 2c-1.1045695 0-2 .8954305-2 2v${t}c0 1.1045695.8954305 2 2 2s2-.8954305 2-2v-${t}c0-1.1045695-.8954305-2-2-2z`
-    }, [i]);
-    return (0, n.jsxs)("svg", {
-        ...(0, r.A)(d),
+        return t = n - 8, `m0 0h8v${n}h-8zm4 2c-1.1045695 0-2 .8954305-2 2v${t}c0 1.1045695.8954305 2 2 2s2-.8954305 2-2v-${t}c0-1.1045695-.8954305-2-2-2z`
+    }, [n]);
+    return (0, i.jsxs)("svg", {
+        ...(0, r.A)(u),
         width: e,
-        height: i,
-        viewBox: `0 0 ${e} ${i}`,
-        children: [(0, n.jsx)("pattern", {
-            id: u,
+        height: n,
+        viewBox: `0 0 ${e} ${n}`,
+        children: [(0, i.jsx)("pattern", {
+            id: d,
             width: s / e,
             height: "1",
-            children: (0, n.jsx)("path", {
+            children: (0, i.jsx)("path", {
                 d: c,
                 fillRule: "evenodd",
                 fill: a,
                 className: o
             })
-        }), (0, n.jsx)("rect", {
-            fill: `url(#${u})`,
+        }), (0, i.jsx)("rect", {
+            fill: `url(#${d})`,
             height: "100%",
             width: "100%"
         })]

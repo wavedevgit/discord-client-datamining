@@ -1,32 +1,32 @@
 /** chunk id: 443493 params = (module,exports,require) **/
-i.d(e, {
-    A: () => d
+n.d(e, {
+    A: () => u
 });
-var n = i(627968);
-i(64700);
-var l = i(311907),
-    r = i(397927),
-    s = i(323443),
-    a = i(977997),
-    o = i(985018);
-let d = t => {
+var i = n(627968);
+n(64700);
+var l = n(311907),
+    r = n(397927),
+    s = n(323443),
+    a = n(977997),
+    o = n(985018);
+let u = t => {
     let {
         guildId: e,
-        channelId: i,
-        variant: d = "active",
-        size: u = "sm",
+        channelId: n,
+        variant: u = "active",
+        size: d = "sm",
         onAction: c,
-        ...p
-    } = t, m = (0, l.bG)([a.A], () => a.A.isInChannel(i), [i]);
-    return (0, n.jsx)(r.Button, {
-        variant: d,
-        size: u,
+        ...h
+    } = t, A = (0, l.bG)([a.A], () => a.A.isInChannel(n), [n]);
+    return (0, i.jsx)(r.Button, {
+        variant: u,
+        size: d,
         text: o.intl.string(o.t.ZYO5OK),
-        disabled: m,
+        disabled: A,
         onClick: () => {
-            c?.(), s.CH(e, i)
+            c?.(), s.CH(e, n)
         },
         fullWidth: !0,
-        ...p
+        ...h
     })
 }

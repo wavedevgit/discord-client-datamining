@@ -1,6 +1,6 @@
 /** chunk id: 204722 params = (module,exports,require) **/
 n.d(t, {
-    W: () => W,
+    W: () => K,
     f: () => Y
 });
 var i = n(627968),
@@ -16,8 +16,8 @@ var i = n(627968),
     A = n(942857),
     _ = n(646865),
     m = n(833349),
-    g = n(869003),
-    p = n(521588),
+    p = n(869003),
+    g = n(521588),
     f = n(688810),
     x = n(362490),
     E = n(384059),
@@ -27,8 +27,8 @@ var i = n(627968),
     T = n(338771),
     S = n(212637),
     b = n(397400),
-    y = n(488803),
-    v = n(44621),
+    v = n(488803),
+    y = n(44621),
     j = n(823748),
     R = n(997692),
     O = n(201805),
@@ -44,9 +44,9 @@ var i = n(627968),
     V = n(49999),
     H = n(985018),
     F = n(294726),
-    K = n(868509);
+    W = n(868509);
 
-function W(e, t, n) {
+function K(e, t, n) {
     return null != e && (null != n ? n.applicationId === e.id : null != t && (t.application_id === e.id || e.linkedGames?.some(e => e.id === t.application_id)) && t.type === B.$pd.PLAYING && (0, m.A)(t, B.jUm.JOIN))
 }
 let Y = l.memo(function(e) {
@@ -57,48 +57,48 @@ let Y = l.memo(function(e) {
             isStreaming: d,
             channel: A,
             canStream: m,
-            runningGame: p,
+            runningGame: g,
             embeddedActivity: C,
             frame: O,
             activity: M,
             application: D,
             analyticsContext: Y,
-            inviteButtonRef: J,
+            inviteButtonRef: $,
             accountLinkButtonRef: Q,
-            startAuthorization: $,
+            startAuthorization: J,
             canStartAuthorization: Z,
             hasAlreadyLinked: ee,
             connectionApp: et
         } = e, {
             parentAnalyticsLocation: en,
             analyticsLocations: ei
-        } = (0, f.Ay)(), el = (0, L.A)(D?.id), es = W(D, M, C), {
+        } = (0, f.Ay)(), el = (0, L.A)(D?.id), es = K(D, M, C), {
             enabled: ea
-        } = v._.useConfig({
+        } = y._.useConfig({
             location: "activity-panel"
-        }), er = (0, j.Bp)("activity-panel"), eo = (0, y.C$)(r ?? void 0, "activity-panel"), ed = (0, o.bG)([G.A], () => G.A.hasConsented(B.YAq.PERSONALIZATION)), ec = (0, j.TF)(p?.id, {
+        }), er = (0, j.Bp)("activity-panel"), eo = (0, v.C$)(r ?? void 0, "activity-panel"), ed = (0, o.bG)([G.A], () => G.A.hasConsented(B.YAq.PERSONALIZATION)), ec = (0, j.TF)(g?.id, {
             shouldFetch: er || eo
         }), eu = ea && ed && ec, eh = eu && er, eA = eu && eo, e_ = l.useCallback(() => {
             a()(null != M, "Received null activity"), k.default.track(B.HAw.ACTIVITY_PANEL_BUTTON_CLICKED, {
                 action_type: "invite_to_game",
-                game_id: p?.id ?? null,
+                game_id: g?.id ?? null,
                 application_id: M.application_id
             }), (0, E.X)(en, E.O.INVITE), k.default.track(B.HAw.OPEN_MODAL, {
                 type: "Send Join Invite",
                 application_id: M.application_id,
                 location: Y.location
             }), (0, h.qf)(M, !1)
-        }, [M, Y, en, p]), em = l.useCallback((e, t) => () => {
-            (0, E.X)(en, E.O.LEAVE_ACTIVITY), g.A.leaveActivity({
+        }, [M, Y, en, g]), em = l.useCallback((e, t) => () => {
+            (0, E.X)(en, E.O.LEAVE_ACTIVITY), p.A.leaveActivity({
                 location: t,
                 applicationId: e,
                 showFeedback: !0
             })
-        }, [en]), eg = l.useCallback(e => () => {
+        }, [en]), ep = l.useCallback(e => () => {
             (0, E.X)(en, E.O.LEAVE_ACTIVITY), N.A.stopFrame({
                 applicationId: e
             })
-        }, [en]), ep = l.useCallback(() => {
+        }, [en]), eg = l.useCallback(() => {
             (0, T.A)(t)
         }, [t]), ef = l.useCallback(() => {
             (0, u.mMO)(async () => {
@@ -107,14 +107,14 @@ let Y = l.memo(function(e) {
                 } = await Promise.all([n.e("96811"), n.e("53612")]).then(n.bind(n, 648230));
                 return t => (0, i.jsx)(e, {
                     ...t,
-                    sourcePID: p?.pid,
+                    sourcePID: g?.pid,
                     selectSource: null != P.A.getVoiceChannelId(),
                     analyticsLocations: ei
                 })
             })
-        }, [p, ei]), ex = D?.name ?? p?.name ?? "", eE = l.useCallback(() => {
+        }, [g, ei]), ex = D?.name ?? g?.name ?? "", eE = l.useCallback(() => {
             (0, b.pK)({
-                gameApplicationId: p?.id,
+                gameApplicationId: g?.id,
                 buttonVariant: "admin"
             }), (0, u.mMO)(async () => {
                 let {
@@ -122,20 +122,20 @@ let Y = l.memo(function(e) {
                 } = await n.e("74132").then(n.bind(n, 279871));
                 return t => (0, i.jsx)(e, {
                     gameName: ex,
-                    gameApplicationId: p?.id,
+                    gameApplicationId: g?.id,
                     ...t
                 })
             })
-        }, [ex, p?.id]), eI = l.useCallback(() => {
+        }, [ex, g?.id]), eI = l.useCallback(() => {
             a()(null != r, "Received null guildId"), (0, b.pK)({
-                gameApplicationId: p?.id,
+                gameApplicationId: g?.id,
                 buttonVariant: "member"
             }), (0, S.A)({
                 analyticsLocations: ei,
                 analyticsLocation: Y.location,
                 guildId: r
             })
-        }, [r, ei, Y.location, p?.id]), eC = l.useRef(null), [eN, eT] = l.useState(!1);
+        }, [r, ei, Y.location, g?.id]), eC = l.useRef(null), [eN, eT] = l.useState(!1);
         l.useEffect(() => () => {
             null != eC.current && clearTimeout(eC.current)
         }, []), l.useEffect(() => {
@@ -151,7 +151,7 @@ let Y = l.memo(function(e) {
                 }),
                 onClick: eE,
                 onViewed: () => (0, b.ET)({
-                    gameApplicationId: p?.id,
+                    gameApplicationId: g?.id,
                     buttonVariant: "admin"
                 }),
                 renderCoachmark: e => {
@@ -162,7 +162,7 @@ let Y = l.memo(function(e) {
                     } = e;
                     return (0, i.jsx)(R.C, {
                         gameName: ex,
-                        runningGameId: p?.id,
+                        runningGameId: g?.id,
                         targetElementRef: t,
                         onClick: () => {
                             eE(), n(V.i.TAKE_ACTION), l(V.i.TAKE_ACTION)
@@ -176,7 +176,7 @@ let Y = l.memo(function(e) {
                 }),
                 onClick: eI,
                 onViewed: () => (0, b.ET)({
-                    gameApplicationId: p?.id,
+                    gameApplicationId: g?.id,
                     buttonVariant: "member"
                 }),
                 renderCoachmark: e => {
@@ -187,7 +187,7 @@ let Y = l.memo(function(e) {
                     } = e;
                     return (0, i.jsx)(R.D, {
                         gameName: ex,
-                        runningGameId: p?.id,
+                        runningGameId: g?.id,
                         targetElementRef: t,
                         onClick: () => {
                             eI(), n(V.i.TAKE_ACTION), l(V.i.TAKE_ACTION)
@@ -196,18 +196,18 @@ let Y = l.memo(function(e) {
                     })
                 }
             }) : null,
-            ey = function() {
+            ev = function() {
                 let e, t, n;
-                if (null == p && null != C && !(0, _.f)() || !d && !s) return null;
+                if (null == g && null != C && !(0, _.f)() || !d && !s) return null;
                 let l = null;
                 return d ? (e = !1, t = () => {
-                    ep(), (0, E.X)(en, E.O.STREAM, !1)
+                    eg(), (0, E.X)(en, E.O.STREAM, !1)
                 }, n = u.GT3, l = H.intl.string(H.t.S5anIc)) : m ? (e = !1, t = () => {
                     ef(), (0, E.X)(en, E.O.STREAM, !0)
-                }, n = u.Fzq, l = null != p ? H.intl.formatToPlainString(H.t.AB5gTy, {
-                    game: p.name
+                }, n = u.Fzq, l = null != g ? H.intl.formatToPlainString(H.t.AB5gTy, {
+                    game: g.name
                 }) : H.intl.string(H.t.FeUKeA)) : (e = !0, t = null, n = u.Fzq, null != A && (0, U.gV)(A.type) && (l = H.intl.string(H.t.uQn9B8))), (0, i.jsx)("div", {
-                    className: K.IF,
+                    className: W.IF,
                     children: (0, i.jsx)(w.A, {
                         tooltipText: l,
                         disabled: e,
@@ -216,8 +216,8 @@ let Y = l.memo(function(e) {
                     })
                 })
             }(),
-            ev = es && null == C ? (0, i.jsx)(w.A, {
-                ref: J,
+            ey = es && null == C ? (0, i.jsx)(w.A, {
+                ref: $,
                 tooltipText: H.intl.string(H.t["hC/Zey"]),
                 onClick: e_,
                 icon: u.DpX
@@ -229,14 +229,14 @@ let Y = l.memo(function(e) {
             }),
             eR = null == O ? null : (0, i.jsx)(w.A, {
                 tooltipText: H.intl.string(H.t["R/FK4A"]),
-                onClick: eg(O.applicationId),
+                onClick: ep(O.applicationId),
                 icon: u.oLl
             }),
             eO = null == t ? null : (0, i.jsx)(I.A, {}),
             eL = !Z || ee ? null : (0, i.jsx)(z, {
-                runningGame: p,
+                runningGame: g,
                 startAuthorization: () => {
-                    $({
+                    J({
                         analyticsLocations: ei
                     }) === x._M.RPC && (eT(!0), null != eC.current && clearTimeout(eC.current), eC.current = setTimeout(() => {
                         eT(!1)
@@ -259,9 +259,9 @@ let Y = l.memo(function(e) {
                     eT(!1), null != eC.current && (clearTimeout(eC.current), eC.current = null)
                 }
             });
-        return null == ey && null == ev && null == ej && null == eR && null == eL && null == eS && null == eb ? null : (0, i.jsxs)("div", {
-            className: K.o1,
-            children: [eS ?? eL ?? ev, eb, ey, ej ?? eR ?? eO, eM]
+        return null == ev && null == ey && null == ej && null == eR && null == eL && null == eS && null == eb ? null : (0, i.jsxs)("div", {
+            className: W.o1,
+            children: [eS ?? eL ?? ey, eb, ev, ej ?? eR ?? eO, eM]
         })
     }),
     z = l.forwardRef(function(e, t) {
@@ -299,32 +299,32 @@ function q(e) {
             isQuestBarEmpty: h,
             hasLoadedQuestBar: _
         } = (0, O.c9)(),
-        [m, g] = (0, C.kn)(!c && h && _ ? [d.M.GAME_DETECTION_CREATE_GAME_SERVER_COACHMARK] : [], void 0, !0),
+        [m, p] = (0, C.kn)(!c && h && _ ? [d.M.GAME_DETECTION_CREATE_GAME_SERVER_COACHMARK] : [], void 0, !0),
         [f, x] = (0, C.kn)([d.M.GAME_SERVER_GAME_DETECTION_UPSELL_NEW_BADGE], void 0, !0),
         E = l.useCallback(() => {
-            g(V.i.TAKE_ACTION), x(V.i.TAKE_ACTION), n()
-        }, [g, x, n]);
+            p(V.i.TAKE_ACTION), x(V.i.TAKE_ACTION), n()
+        }, [p, x, n]);
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsxs)("div", {
-            className: K.IF,
+            className: W.IF,
             children: [(0, i.jsx)("div", {
-                className: K.uD,
+                className: W.uD,
                 children: (0, i.jsx)("div", {
-                    className: K.Z9
+                    className: W.Z9
                 })
             }), (0, i.jsx)(w.A, {
                 ref: r,
                 tooltipText: t,
                 onClick: E,
                 icon: u._xR
-            }), f === d.M.GAME_SERVER_GAME_DETECTION_UPSELL_NEW_BADGE && (0, i.jsx)(p.a, {
+            }), f === d.M.GAME_SERVER_GAME_DETECTION_UPSELL_NEW_BADGE && (0, i.jsx)(g.a, {
                 top: 2,
                 right: 2,
                 alert: !0
             })]
         }), null != m && a({
             targetElementRef: r,
-            markAsDismissed: g,
+            markAsDismissed: p,
             markBadgeAsDismissed: x
         })]
     })

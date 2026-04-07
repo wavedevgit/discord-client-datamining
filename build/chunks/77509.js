@@ -1,11 +1,11 @@
 /** chunk id: 77509 params = (module,exports,require) **/
 n.d(e, {
-    A: () => u
+    A: () => d
 });
 var i = n(984083),
     r = n(142120),
-    l = n(366811),
-    s = n(612716),
+    s = n(366811),
+    l = n(612716),
     a = n(976860),
     o = n(652215);
 class c {
@@ -21,7 +21,7 @@ class c {
         let {
             pathname: t
         } = (0, a.JK)().location;
-        l.A.getState().resetPath(t), this.unlistenKeyboardChange = l.A.subscribe(this.handleKeybindRouteChange), r.A.addChangeListener(this.handleConnectionChange)
+        s.A.getState().resetPath(t), this.unlistenKeyboardChange = s.A.subscribe(this.handleKeybindRouteChange), r.A.addChangeListener(this.handleConnectionChange)
     }
     handleConnectionChange = () => {
         let t = r.A.isConnected(),
@@ -31,9 +31,9 @@ class c {
     handleRouteChange = (t, e) => {
         if ("POP" !== e) {
             if (this.executeRouteRewrites(t, e)) return;
-            if (!(0, s.o)(t)) return void(0, a.bG)(o.BVt.ME)
+            if (!(0, l.o)(t)) return void(0, a.bG)(o.BVt.ME)
         }
-        let n = l.A.getState();
+        let n = s.A.getState();
         for (let i of (n.basePath !== t.pathname && n.resetPath(t.pathname), this.listeners)) try {
             i(t, e)
         } catch (t) {
@@ -45,14 +45,14 @@ class c {
         if (this.routeChangeCount += 1, this.routeChangeCount < 10)
             for (let n of this.rewrites) {
                 let r = (0, a.JK)().location.pathname,
-                    l = n(t, e);
-                if (null != l) return (0, i.Z)({
+                    s = n(t, e);
+                if (null != s) return (0, i.Z)({
                     message: "RouteManager.handleRouteChange: A route rewrite is replacing the current route",
                     data: {
-                        replacePath: l.path,
+                        replacePath: s.path,
                         previousPath: r
                     }
-                }), (0, a.bG)(l.path, l.state), !0
+                }), (0, a.bG)(s.path, s.state), !0
             } else throw Error("RouteManager: Something has gone horribly wrong with rewrites");
         return !1
     }
@@ -63,7 +63,7 @@ class c {
     };
     flushRoute = () => {
         clearTimeout(this.timer);
-        let t = l.A.getState();
+        let t = s.A.getState();
         null != t.path && (0, a.pX)(t.path)
     };
     cleanup() {
@@ -89,4 +89,4 @@ class c {
         return (0, a.JK)()
     }
 }
-let u = new c
+let d = new c

@@ -24,7 +24,7 @@ function A(e) {
         onContextMenu: A,
         onMouseEnter: _,
         onMouseLeave: m,
-        className: g,
+        className: p,
         ariaHidden: f,
         avatarDecoration: x,
         specs: E,
@@ -35,10 +35,10 @@ function A(e) {
     } = e, S = {
         width: (0, o.FT9)(n),
         height: (0, o.FT9)(n)
-    }, b = (0, l.useId)(), y = E.size * c.Xq, v = null != x && (0, i.jsxs)("svg", {
-        width: y,
-        height: y,
-        viewBox: `0 0 ${y} ${y}`,
+    }, b = (0, l.useId)(), v = E.size * c.Xq, y = null != x && (0, i.jsxs)("svg", {
+        width: v,
+        height: v,
+        viewBox: `0 0 ${v} ${v}`,
         className: h.DX,
         "aria-hidden": !0,
         children: [(0, i.jsxs)("mask", {
@@ -46,8 +46,8 @@ function A(e) {
             children: [(0, i.jsx)("rect", {
                 x: 0,
                 y: 0,
-                width: y,
-                height: y,
+                width: v,
+                height: v,
                 fill: "white"
             }), null != I && function(e, t) {
                 let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : 0,
@@ -63,7 +63,7 @@ function A(e) {
                             width: s,
                             x: a,
                             y: r
-                        } = p(e, n, i), o = (t - e.size) / 2;
+                        } = g(e, n, i), o = (t - e.size) / 2;
                         return {
                             width: s,
                             height: l,
@@ -80,12 +80,12 @@ function A(e) {
                     rx: e.stroke,
                     fill: "black"
                 })
-            }(E, y, C, N)]
+            }(E, v, C, N)]
         }), (0, i.jsx)("foreignObject", {
             x: 0,
             y: 0,
-            width: y,
-            height: y,
+            width: v,
+            height: v,
             mask: `url(#${b})`,
             children: (0, i.jsx)("img", {
                 className: h.M,
@@ -96,7 +96,7 @@ function A(e) {
         })]
     });
     return null != s || null != r ? (0, i.jsxs)(o.DUT, {
-        className: a()(h.iE, h.Wn, g),
+        className: a()(h.iE, h.Wn, p),
         style: S,
         onClick: s,
         onContextMenu: A,
@@ -106,9 +106,9 @@ function A(e) {
         onMouseLeave: m ?? void 0,
         "aria-label": T ?? void 0,
         "aria-hidden": f,
-        children: [t, v]
+        children: [t, y]
     }) : (0, i.jsxs)("div", {
-        className: a()(h.iE, g),
+        className: a()(h.iE, p),
         style: S,
         onContextMenu: A ?? void 0,
         onMouseEnter: _ ?? void 0,
@@ -116,7 +116,7 @@ function A(e) {
         role: "img",
         "aria-label": T ?? void 0,
         "aria-hidden": f,
-        children: [t, v]
+        children: [t, y]
     })
 }
 
@@ -155,7 +155,7 @@ function _(e) {
                         width: s,
                         x: a,
                         y: r
-                    } = p(e, t, n);
+                    } = g(e, t, n);
                     return (0, i.jsx)("rect", {
                         mask: `url(#${d.hW.SQUIRCLE})`,
                         height: l,
@@ -177,7 +177,7 @@ function _(e) {
                     isSpeaking: !1
                 })
             }), null != _ && (0, i.jsx)("foreignObject", {
-                ...g(x, m, f),
+                ...p(x, m, f),
                 mask: `url(#${d.hW.SQUIRCLE})`,
                 children: (0, i.jsx)("img", {
                     src: _,
@@ -199,7 +199,7 @@ function m(e) {
         cornerIconUrl: o,
         cornerIconOffsetX: c = 0,
         cornerIconOffsetY: _ = 0
-    } = e, m = (0, l.useId)(), f = (0, l.useId)(), x = (0, u.Kj)(n), E = x.size + c, I = x.size + _, C = p(x, c, _), N = g(x, c, _);
+    } = e, m = (0, l.useId)(), f = (0, l.useId)(), x = (0, u.Kj)(n), E = x.size + c, I = x.size + _, C = g(x, c, _), N = p(x, c, _);
     return (0, i.jsx)(A, {
         ...e,
         ariaLabel: r,
@@ -263,7 +263,7 @@ function m(e) {
     })
 }
 
-function g(e, t, n) {
+function p(e, t, n) {
     return {
         width: 16,
         height: 16,
@@ -272,8 +272,8 @@ function g(e, t, n) {
     }
 }
 
-function p(e, t, n) {
-    let i = g(e, t, n),
+function g(e, t, n) {
+    let i = p(e, t, n),
         l = i.x - 2,
         s = i.y - 2;
     return {

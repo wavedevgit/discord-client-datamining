@@ -15,28 +15,28 @@ var i = n(627968),
     h = n(793574),
     m = n(688810),
     f = n(607470),
-    g = n(880144),
-    p = n(616356),
+    p = n(880144),
+    g = n(616356),
     A = n(734057),
-    E = n(71393),
+    x = n(71393),
     I = n(430452),
-    x = n(309010),
+    E = n(309010),
     b = n(532624),
     v = n(256415),
     S = n(531685),
     C = n(203982),
-    T = n(723702),
-    y = n(350535),
+    y = n(723702),
+    T = n(350535),
     N = n(365971),
     w = n(41984),
     L = n(589051),
-    O = n(223251),
-    j = n(935975),
+    j = n(223251),
+    O = n(935975),
     P = n(555153),
     R = n(155052),
     D = n(452075),
-    M = n(302614),
-    k = n(833551),
+    k = n(302614),
+    M = n(833551),
     G = n(592598),
     z = n(395011),
     U = n(222506),
@@ -49,7 +49,7 @@ var i = n(627968),
     X = n(644434),
     Z = n(652215),
     K = n(650519);
-let J = !T.isPlatformEmbedded && !1,
+let J = !y.isPlatformEmbedded && !1,
     Q = J ? (0, i.jsx)(f.A, {
         src: "https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExNzdpcnRrYXdrNzVuNjZ3NXpmeTJvNGl4Z2N4OXBsamx5aXphdHhxaCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9dg/OPg2B0FPBL94H12uM0/giphy480p.mp4",
         className: K.pN,
@@ -96,12 +96,12 @@ let ee = a.memo(function(e) {
                 a === Z.hE4.PRIMARY && t === i && n()
             },
             onContextMenu: $,
-            children: a ? null : (0, i.jsxs)(M.A, {
+            children: a ? null : (0, i.jsxs)(k.A, {
                 className: K.BE,
-                children: [(0, i.jsx)(j.A, {
+                children: [(0, i.jsx)(O.A, {
                     onClick: () => (0, F.b)(h.A.OVERLAY, Z.BRT.OVERLAY),
                     IconComponent: d.iFK
-                }), (0, i.jsx)(j.A, {
+                }), (0, i.jsx)(O.A, {
                     keybind: t,
                     onClick: n,
                     IconComponent: d.d$L
@@ -114,9 +114,9 @@ let ee = a.memo(function(e) {
             locked: t,
             focused: n
         } = e;
-        return t && n ? (0, i.jsx)(M.A, {
+        return t && n ? (0, i.jsx)(k.A, {
             className: K.BE,
-            children: (0, i.jsx)(j.A, {
+            children: (0, i.jsx)(O.A, {
                 onClick: () => u.A.setInputLocked(!1, z.A.getTargetPID()),
                 IconComponent: d.wUM
             })
@@ -141,7 +141,7 @@ function ei(e) {
         }(e, t), J && function(e) {
             if ("keydown" !== e.type.toLowerCase() || e.repeat) return !1;
             let t = b.Ay.getOverlayKeybind();
-            return !!t.enabled && 0 !== t.shortcut.length && (0, y.pi)(t.shortcut).some(t => 0 !== t.keyCode && t.keyCode === e.keyCode && t.shiftKey === e.shiftKey && t.metaKey === e.metaKey && t.altKey === e.altKey && t.ctrlKey === e.ctrlKey)
+            return !!t.enabled && 0 !== t.shortcut.length && (0, T.pi)(t.shortcut).some(t => 0 !== t.keyCode && t.keyCode === e.keyCode && t.shiftKey === e.shiftKey && t.metaKey === e.metaKey && t.altKey === e.altKey && t.ctrlKey === e.ctrlKey)
         }(e) && (e.preventDefault(), e.stopPropagation(), u.A.setInputLocked(!t, z.A.getTargetPID()))
 }
 let ea = a.memo(function() {
@@ -154,7 +154,7 @@ let ea = a.memo(function() {
             t = (0, s.bG)([z.A], () => z.A.getTargetPID()),
             n = (0, s.bG)([U.A], () => U.A.isInputLocked(t), [t]),
             r = (0, s.bG)([z.A], () => z.A.isFocused(t), [t]),
-            c = (0, s.bG)([b.Ay], () => null != b.Ay.getOverlayKeybind() ? (0, y.dI)(b.Ay.getOverlayKeybind()?.shortcut, !0) : "???", []);
+            c = (0, s.bG)([b.Ay], () => null != b.Ay.getOverlayKeybind() ? (0, T.dI)(b.Ay.getOverlayKeybind()?.shortcut, !0) : "???", []);
         return a.useEffect(() => {
             if (C._.dispatch(Z.jej.OVERLAY_V3_SHOW_WIDGETS, {
                     show: !0
@@ -211,15 +211,15 @@ function el() {
         r.current.unmount()
     }), []), (l = a.useRef(null), (0, _.Ay)(() => {
         let e = (0, W.qv)(),
-            t = x.A.getVoiceChannelId(),
+            t = E.A.getVoiceChannelId(),
             n = A.A.getChannel(t),
-            i = null != n ? E.A.getGuild(n.guild_id) : null,
-            a = null != p.A.getCurrentUserActiveStream(),
+            i = null != n ? x.A.getGuild(n.guild_id) : null,
+            a = null != g.A.getCurrentUserActiveStream(),
             r = null != t,
-            s = (0, g.A)(I.Ay) && !a && null != e,
+            s = (0, p.A)(I.Ay) && !a && null != e,
             o = r && null != i && null != t,
             d = z.A.getTargetPID();
-        if (k.default.hasChangedRenderMode(d)) return;
+        if (M.default.hasChangedRenderMode(d)) return;
         let c = G.A.isNotificationDisabled(Y.KS.WelcomeNudge),
             _ = G.A.isNotificationDisabled(Y.KS.GoLiveNudge),
             h = G.A.isNotificationDisabled(Y.KS.ActivityInvite),
@@ -247,7 +247,7 @@ function el() {
         children: (0, i.jsxs)("div", {
             id: "overlay-container",
             className: K.Lw,
-            children: [Q, (0, i.jsx)(er, {}), (0, i.jsx)(H.A, {}), (0, i.jsx)(O.A, {}), (0, i.jsx)(d.N9M, {
+            children: [Q, (0, i.jsx)(er, {}), (0, i.jsx)(H.A, {}), (0, i.jsx)(j.A, {}), (0, i.jsx)(d.N9M, {
                 appContext: Z.BRT.OVERLAY
             }), (0, i.jsx)(ea, {})]
         })

@@ -15,10 +15,10 @@ let o = e => {
         searchQuery: t,
         selectedUsers: s,
         limit: i
-    } = e, o = (0, a.bG)([u.A], () => u.A.getRecipientStatus()), E = (0, a.bG)([u.A], () => u.A.getReferralsRemaining()), [d, _] = r.useState(0), [R, p] = r.useState([]), [I, S] = r.useState(!1), [h, f] = r.useState(!1), [A, M] = r.useState(new Map);
+    } = e, o = (0, a.bG)([u.A], () => u.A.getRecipientStatus()), E = (0, a.bG)([u.A], () => u.A.getReferralsRemaining()), [d, _] = r.useState(0), [R, p] = r.useState([]), [I, S] = r.useState(!1), [f, h] = r.useState(!1), [A, M] = r.useState(new Map);
     n()(null != E, "Referrals remaining should not be null");
     let g = async (e, r) => {
-        if (!I && !h && null != e && 0 !== E) try {
+        if (!I && !f && null != e && 0 !== E) try {
             S(!0);
             let i = [...A.values()];
             for (let [e, t] of o)
@@ -37,7 +37,7 @@ let o = e => {
                 return t
             }), _(n.nextIndex)
         } catch (e) {
-            f(!0)
+            h(!0)
         } finally {
             S(!1)
         }
@@ -65,7 +65,7 @@ let o = e => {
     }, [t, E]), {
         eligibleUsers: R,
         fetchUsers: () => g(d, i),
-        hasError: h,
+        hasError: f,
         isFetching: I,
         resendUsers: A
     }

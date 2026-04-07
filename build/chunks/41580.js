@@ -15,8 +15,8 @@ let d = 2.5 * _.A.Millis.SECOND,
     p = +_.A.Millis.HOUR;
 
 function A() {
-    let [e, t] = a.useState(!1), n = (0, r.bG)([o.Ay], () => o.Ay.getMode() === c.TB.PUSH_TO_TALK), _ = (0, r.bG)([s.A], () => null != s.A.getChannelId() && (s.A.getDuration() ?? Number.MAX_VALUE) < d), [A, g] = a.useState(!1), {
-        showPTTJoinTooltip: f
+    let [e, t] = a.useState(!1), n = (0, r.bG)([o.Ay], () => o.Ay.getMode() === c.TB.PUSH_TO_TALK), _ = (0, r.bG)([s.A], () => null != s.A.getChannelId() && (s.A.getDuration() ?? Number.MAX_VALUE) < d), [A, f] = a.useState(!1), {
+        showPTTJoinTooltip: g
     } = u.A.useConfig({
         location: "usePTTJoinTooltip"
     }), m = a.useRef(new i.Ep), b = a.useRef(new i.Ep);
@@ -24,17 +24,17 @@ function A() {
         if (_ && n && !e) {
             if (u.A.getConfig({
                     location: "usePTTJoinTooltip:couldDisplayTooltip"
-                }), !f) return;
-            g(!0), t(!0), b.current.start(p, () => {
+                }), !g) return;
+            f(!0), t(!0), b.current.start(p, () => {
                 t(!1)
             }), m.current.start(d, () => {
-                g(!1)
+                f(!1)
             })
         }
-        _ || g(!1)
-    }, [_, n, f, e]);
+        _ || f(!1)
+    }, [_, n, g, e]);
     let C = a.useCallback(() => {
-        g(!1), m.current.stop()
+        f(!1), m.current.stop()
     }, []);
     return (0, l.l0)(() => {
         m.current.stop(), b.current.stop()

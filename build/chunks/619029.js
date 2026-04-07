@@ -17,7 +17,7 @@ var l = n(311907),
     _ = n(355097),
     m = n(985018);
 
-function g(e) {
+function p(e) {
     let {
         guildId: t,
         analyticsLocations: n
@@ -34,7 +34,7 @@ function g(e) {
     })
 }
 
-function p() {
+function g() {
     let e = (0, o.A)({
         scrollPosition: _._F.GUILD_TAG
     });
@@ -58,10 +58,10 @@ function f(e) {
         let e = d.default.getId();
         return (0, u.wj)(c.Ay.getMember(n.guildId, e))
     }, [n.guildId]);
-    return o.has(A.D.AUTOMOD_QUARANTINED_USERNAME_OR_GUILD_NICKNAME) || o.has(A.D.AUTOMOD_QUARANTINED_BIO) ? (0, i.jsx)(g, {
+    return o.has(A.D.AUTOMOD_QUARANTINED_USERNAME_OR_GUILD_NICKNAME) || o.has(A.D.AUTOMOD_QUARANTINED_BIO) ? (0, i.jsx)(p, {
         ...n,
         analyticsLocations: s
-    }) : o.has(A.D.AUTOMOD_QUARANTINED_SERVER_TAG) ? (0, i.jsx)(p, {}) : (0, i.jsx)(g, {
+    }) : o.has(A.D.AUTOMOD_QUARANTINED_SERVER_TAG) ? (0, i.jsx)(g, {}) : (0, i.jsx)(p, {
         ...n,
         analyticsLocations: s
     })

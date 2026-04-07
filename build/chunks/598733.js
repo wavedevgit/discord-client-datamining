@@ -15,8 +15,8 @@ var i = n(627968),
     A = n(967198),
     _ = n(449054),
     m = n(652215),
-    g = n(985018),
-    p = n(236458),
+    p = n(985018),
+    g = n(236458),
     f = n(215433);
 let x = () => {
     let e = (0, r.bG)([A.A], () => A.A.getGuildId(), []),
@@ -34,33 +34,33 @@ let x = () => {
         }
     };
     return (0, i.jsxs)("div", {
-        className: a()(p.lm, f.lm),
+        className: a()(g.lm, f.lm),
         children: [(0, i.jsxs)(o.$n, {
             look: o.$n.Looks.OUTLINED,
             color: o.$n.Colors.WHITE,
             size: o.$n.Sizes.NONE,
-            className: a()(p.x6, p.aX),
-            innerClassName: p.gb,
+            className: a()(g.x6, g.aX),
+            innerClassName: g.gb,
             onClick: () => {
                 (0, u.JK)().goBack()
             },
             children: [(0, i.jsx)(d.rJJ, {
                 size: "xs",
                 color: "currentColor",
-                className: p.UE
-            }), g.intl.string(g.t["13/7kX"])]
+                className: g.UE
+            }), p.intl.string(p.t["13/7kX"])]
         }), (0, i.jsx)(d.Text, {
-            className: p.wx,
+            className: g.wx,
             variant: "text-sm/normal",
-            children: g.intl.string(g.t["N/y2WE"])
+            children: p.intl.string(p.t["N/y2WE"])
         }), (0, i.jsx)(o.$n, {
-            className: p.x6,
+            className: g.x6,
             look: o.$n.Looks.OUTLINED,
             color: o.$n.Colors.WHITE,
             size: o.$n.Sizes.NONE,
             submitting: n,
             onClick: x,
-            children: g.intl.format(g.t.uHN7ny, {
+            children: p.intl.format(p.t.uHN7ny, {
                 guild: t.name
             })
         })]

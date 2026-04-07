@@ -16,8 +16,8 @@ var l = n(503698),
     A = n(289397),
     _ = n(486418),
     m = n(575926),
-    g = n(826673),
-    p = n(440293),
+    p = n(826673),
+    g = n(440293),
     f = n(976860),
     x = n(808728),
     E = n(71393),
@@ -27,43 +27,43 @@ var l = n(503698),
     T = n(746080),
     S = n(634654),
     b = n(985018),
-    y = n(672669);
+    v = n(672669);
 
-function v(e) {
+function y(e) {
     let {
         guildId: t,
         selected: n,
         handleClick: l
-    } = e, c = (0, p.w)(t), _ = (0, a.bG)([E.A], () => E.A.getGuild(t)), T = _?.features.has(N.GuildFeatures.ROLE_SUBSCRIPTIONS_AVAILABLE_FOR_PURCHASE) === !0, v = "false" === o.w.get(S.bJ, "false"), j = (0, a.bG)([u.A], () => u.A.useReducedMotion);
+    } = e, c = (0, g.w)(t), _ = (0, a.bG)([E.A], () => E.A.getGuild(t)), T = _?.features.has(N.GuildFeatures.ROLE_SUBSCRIPTIONS_AVAILABLE_FOR_PURCHASE) === !0, y = "false" === o.w.get(S.bJ, "false"), j = (0, a.bG)([u.A], () => u.A.useReducedMotion);
     return (0, i.jsx)(C.G, {
         id: `shop-${t}`,
-        className: s()(y.A2, {
-            [y.wH]: n,
-            [y.ST]: v
+        className: s()(v.A2, {
+            [v.wH]: n,
+            [v.ST]: y
         }),
-        innerClassName: y.LE,
+        innerClassName: v.LE,
         renderIcon: e => (0, i.jsx)(m.h, {
             width: 20,
             height: 20,
-            className: s()([e, y.sV])
+            className: s()([e, v.sV])
         }),
         text: b.intl.string(b.t.al5EXL),
         selected: n,
         onClick: l,
         trailing: (0, i.jsxs)("div", {
-            className: y.ai,
+            className: v.ai,
             children: [j ? (0, i.jsx)(d.LpS, {
                 color: d.LU0.unsafe_rawColors.BRAND_260.css,
                 text: b.intl.string(b.t.y2b7CA),
-                className: y.Ad
+                className: v.Ad
             }) : (0, i.jsx)("img", {
                 src: (0, A.n)("server_products/storefront/money.gif"),
-                className: y.TG,
+                className: v.TG,
                 alt: ""
             }), n && (0, i.jsx)(d.DUT, {
-                className: y.b,
+                className: v.b,
                 onClick: e => {
-                    e.stopPropagation(), (0, g.Dr)(r.M.SERVER_SHOP_PHANTOM_PREVIEW), I.default.track(N.HAw.GUILD_SHOP_PREVIEW_CLICK, {
+                    e.stopPropagation(), (0, p.Dr)(r.M.SERVER_SHOP_PHANTOM_PREVIEW), I.default.track(N.HAw.GUILD_SHOP_PREVIEW_CLICK, {
                         ...(0, h.H$)(t),
                         action_taken: S.hN.DISMISS_CHANNEL_ROW
                     }), c && T || (0, f.bG)(N.BVt.CHANNEL(t, x.Ay.getDefaultChannel(t)?.id))
@@ -85,7 +85,7 @@ function j(e) {
     } = e, s = (0, _.P)(t), a = () => {
         o.w.set(S.bJ, "true"), (0, f.pX)(N.BVt.CHANNEL(t.id, T.VV.GUILD_SHOP))
     };
-    return s ? (0, i.jsx)(v, {
+    return s ? (0, i.jsx)(y, {
         guildId: t.id,
         selected: l,
         handleClick: a

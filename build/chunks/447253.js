@@ -1,6 +1,6 @@
 /** chunk id: 447253 params = (module,exports,require) **/
 n.d(t, {
-    A: () => g
+    A: () => p
 });
 var i = n(627968),
     l = n(64700),
@@ -71,7 +71,7 @@ function m(e) {
     })
 }
 
-function g(e) {
+function p(e) {
     let {
         folderNode: t,
         expanded: n,
@@ -81,8 +81,8 @@ function g(e) {
         isMentionLowImportance: d,
         tooltipName: c,
         folderGroupId: _,
-        folderButtonContent: g,
-        onClick: p,
+        folderButtonContent: p,
+        onClick: g,
         onContextMenu: f,
         onHoverChange: x,
         onKeyDown: E,
@@ -92,18 +92,18 @@ function g(e) {
         },
         "aria-setsize": N,
         "aria-posinset": T
-    } = e, [S, b] = l.useState(!1), y = l.useCallback(() => {
+    } = e, [S, b] = l.useState(!1), v = l.useCallback(() => {
         s || b(!0), x?.(!0)
-    }, [s, x]), v = l.useCallback(() => {
+    }, [s, x]), y = l.useCallback(() => {
         s || b(!1), x?.(!1)
     }, [s, x]), j = n || null == a ? null : (0, u.oi)(a), R = !n && r > 0 ? (0, u.wN)(r, d ? o.LU0.colors.BACKGROUND_MOD_STRONG.css : o.LU0.colors.BACKGROUND_FEEDBACK_NOTIFICATION.css) : null;
     return (0, i.jsx)(o.vN3, {
         children: (0, i.jsxs)(o.DUT, {
             className: A.H3,
-            onClick: p,
+            onClick: g,
             onContextMenu: f,
-            onMouseEnter: y,
-            onMouseLeave: v,
+            onMouseEnter: v,
+            onMouseLeave: y,
             onKeyDown: E,
             onFocus: I,
             focusProps: {
@@ -130,9 +130,9 @@ function g(e) {
                 },
                 children: (0, i.jsx)("div", {
                     className: A.vA,
-                    children: null != g ? (0, i.jsx)("div", {
+                    children: null != p ? (0, i.jsx)("div", {
                         className: A.hJ,
-                        children: g
+                        children: p
                     }) : (0, i.jsx)(m, {
                         folderNode: t,
                         hovered: S,

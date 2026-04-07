@@ -15,8 +15,8 @@ var i = n(627968),
     A = n(522435),
     _ = n(46054),
     m = n(954571),
-    g = n(652215),
-    p = n(985018),
+    p = n(652215),
+    g = n(985018),
     f = n(171616),
     x = n(782691);
 
@@ -33,17 +33,17 @@ function E(e) {
     } = (0, h.Dm)({
         guildId: t.guild_id,
         location: "VoiceChannelStatus"
-    }), S = T && (0, A.TP)(N), b = null != N && N.length > 0 && !S, y = (0, c.Ay)(t, !0), v = null != E && E.length > 0;
+    }), S = T && (0, A.TP)(N), b = null != N && N.length > 0 && !S, v = (0, c.Ay)(t, !0), y = null != E && E.length > 0;
     if (l.useEffect(() => {
-            b && m.default.track(g.HAw.VOICE_CHANNEL_TOPIC_VIEWED, {
+            b && m.default.track(p.HAw.VOICE_CHANNEL_TOPIC_VIEWED, {
                 channel_id: t.id,
                 guild_id: t.guild_id
             })
         }, [b, t.id, t.guild_id]), null == t.guild_id) return null;
-    let j = a()(f.Ui, n && y ? f.BI : null);
+    let j = a()(f.Ui, n && v ? f.BI : null);
     return b ? (0, i.jsx)(d.DUT, {
         className: j,
-        onClick: y ? I : void 0,
+        onClick: v ? I : void 0,
         children: (0, i.jsx)(d.Text, {
             variant: "text-xs/medium",
             className: a()(f.qS, x.PT),
@@ -53,19 +53,19 @@ function E(e) {
                 })
             })
         })
-    }) : n && y && !S && (!v || s) && C ? (0, i.jsxs)(d.DUT, {
+    }) : n && v && !S && (!y || s) && C ? (0, i.jsxs)(d.DUT, {
         className: j,
         onClick: I,
         children: [(0, i.jsx)(d.Text, {
             variant: "text-xs/medium",
             className: f.qS,
-            children: p.intl.string(p.t.Mgpxiw)
+            children: g.intl.string(g.t.Mgpxiw)
         }), (0, i.jsx)(d.R2l, {
             color: "currentColor",
             className: f.rD,
             size: "xxs"
         })]
-    }) : v ? (0, i.jsx)(o.A, {
+    }) : y ? (0, i.jsx)(o.A, {
         children: E
     }) : null
 }

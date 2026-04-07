@@ -16,8 +16,8 @@ var l = n(503698),
     A = n(624458),
     _ = n(202384),
     m = n(513461),
-    g = n(709977),
-    p = n(212455),
+    p = n(709977),
+    g = n(212455),
     f = n(652215),
     x = n(746080),
     E = n(985018),
@@ -26,18 +26,18 @@ var l = n(503698),
 let N = () => {
     let e = (0, r.bG)([h.A], () => h.A.getGuildId(), []),
         t = (0, r.bG)([u.A], () => u.A.getGuild(e), [e]),
-        l = (0, r.bG)([p.A], () => null != e ? p.A.getRequest(e) : null, [e]),
+        l = (0, r.bG)([g.A], () => null != e ? g.A.getRequest(e) : null, [e]),
         N = (0, a.zy)(),
         T = (0, c.B)(N.pathname, f.BVt.CHANNEL(t?.id, x.VV.GUILD_ONBOARDING))?.isExact === !0;
-    if (null == t || !(0, g.Qd)(t) || T) return null;
+    if (null == t || !(0, p.Qd)(t) || T) return null;
     let S = l?.applicationStatus ?? m.B5.STARTED,
         b = null,
-        y = null,
         v = null,
+        y = null,
         j = [I.lm, C.lm];
     switch (S) {
         case m.B5.SUBMITTED:
-            b = E.intl.string(E.t["5iLvSx"]), y = E.intl.string(E.t.mqtdmQ), v = () => {
+            b = E.intl.string(E.t["5iLvSx"]), v = E.intl.string(E.t.mqtdmQ), y = () => {
                 (0, o.A)({
                     title: E.intl.string(E.t.aIz1oV),
                     subtitle: E.intl.string(E.t["13tjTU"]),
@@ -48,7 +48,7 @@ let N = () => {
             };
             break;
         case m.B5.REJECTED:
-            b = E.intl.string(E.t.lk30cY), y = E.intl.string(E.t["8RrsHr"]), v = () => {
+            b = E.intl.string(E.t.lk30cY), v = E.intl.string(E.t["8RrsHr"]), y = () => {
                 (0, d.mMO)(async () => {
                     let {
                         default: e
@@ -61,7 +61,7 @@ let N = () => {
             }, j.push(I.z3);
             break;
         default:
-            b = E.intl.string(E.t.G5YKXP), y = E.intl.string(E.t["r8/DT+"]), v = () => {
+            b = E.intl.string(E.t.G5YKXP), v = E.intl.string(E.t["r8/DT+"]), y = () => {
                 (0, _.Ze)(t.id)
             }
     }
@@ -74,8 +74,8 @@ let N = () => {
         }), (0, i.jsx)(d.Button, {
             variant: "overlay-primary",
             size: "sm",
-            onClick: v,
-            text: y
+            onClick: y,
+            text: v
         })]
     })
 }

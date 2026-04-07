@@ -1,21 +1,21 @@
 /** chunk id: 254608 params = (module,exports,require) **/
-n.d(t, {
+a.d(t, {
     l: () => i
 });
-var a = n(627968),
-    l = n(64700),
-    r = n(397927),
-    s = n(457417),
-    o = n(985018);
+var n = a(627968),
+    r = a(64700),
+    l = a(397927),
+    s = a(457417),
+    o = a(985018);
 let i = () => {
     let {
         searchText: e,
         updateSearchText: t
-    } = (0, s.Vw)(), n = l.useRef(null);
-    return (0, l.useEffect)(() => {
-        null !== n.current && "" === e && n.current.focus()
-    }, [e, n]), (0, a.jsx)(r.IWV, {
-        ref: n,
+    } = (0, s.Vw)(), a = r.useRef(null);
+    return (0, r.useEffect)(() => {
+        null !== a.current && "" === e && a.current.focus()
+    }, [e, a]), (0, n.jsx)(l.IWV, {
+        ref: a,
         query: e,
         onChange: e => {
             t(e)

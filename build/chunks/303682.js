@@ -18,8 +18,8 @@ var r, i = s(627968),
     p = s(994500),
     I = s(954571),
     S = s(975571),
-    h = s(427262),
-    f = s(326084),
+    f = s(427262),
+    h = s(326084),
     A = s(851746),
     M = s(761546),
     g = s(972007),
@@ -32,14 +32,14 @@ let U = e => {
             transitionState: t,
             onClose: s,
             onShare: r
-        } = e, a = (0, u.bG)([A.A], () => A.A.getReferralsRemaining()), E = (0, u.bG)([A.A], () => A.A.getHasEligibleFriends()), [_, R] = n.useState(new Map), [p, I] = n.useState(""), f = (0, d.A)(p, 400), {
+        } = e, a = (0, u.bG)([A.A], () => A.A.getReferralsRemaining()), E = (0, u.bG)([A.A], () => A.A.getHasEligibleFriends()), [_, R] = n.useState(new Map), [p, I] = n.useState(""), h = (0, d.A)(p, 400), {
             eligibleUsers: T,
             fetchUsers: U,
             hasError: x,
             isFetching: C,
             resendUsers: N
         } = (0, g.i)({
-            searchQuery: f,
+            searchQuery: h,
             selectedUsers: _
         }), [b, y] = n.useState(!1), v = T.reduce((e, t) => (e.has(t.id) || e.set(t.id, t), e), new Map);
         return null === a ? (0, i.jsx)(o.y$y, {}) : x ? (0, i.jsx)(c.Modal, {
@@ -71,7 +71,7 @@ let U = e => {
                 formatOption: e => ({
                     id: e.id,
                     value: e,
-                    label: h.Ay.getName(e)
+                    label: f.Ay.getName(e)
                 }),
                 onSelectionChange: e => {
                     let t = Array.isArray(e) ? e : [e],
@@ -95,7 +95,7 @@ let U = e => {
                 let t, {
                         eligibleRecipients: n
                     } = e,
-                    a = f.length > 0 && 0 === n.size;
+                    a = h.length > 0 && 0 === n.size;
                 return t = !0 === a ? P.intl.string(P.t.wpSqAW) : _.size <= 1 ? P.intl.string(P.t.ItpQxk) : P.intl.format(P.t.iW2stn, {
                     nTrials: _.size
                 }), (0, i.jsx)("div", {
@@ -130,7 +130,7 @@ let U = e => {
                     isFetching: C,
                     onFetchMore: U,
                     isUserDisabled: e => null !== a && 0 !== a && [..._.values()].filter(e => !N.has(e.id)).length >= a && !_.has(e.id) && !N.has(e.id),
-                    searchQuery: f,
+                    searchQuery: h,
                     emptySearchContent: {
                         header: P.intl.string(P.t["8+ywHD"]),
                         body: P.intl.string(P.t.CgQmY2)
@@ -151,7 +151,7 @@ let U = e => {
             d = (0, u.bG)([A.A], () => A.A.getRecipientStatus()),
             [_, R] = n.useState(new Map),
             [I, S] = n.useState(new Map),
-            [h, g] = n.useState(!1);
+            [f, g] = n.useState(!1);
         return n.useEffect(() => {
             (async () => {
                 let e = new Map;
@@ -175,7 +175,7 @@ let U = e => {
                 className: l()(O.qr, O.h0),
                 children: (0, i.jsx)(o.Button, {
                     variant: "primary",
-                    disabled: 0 === I.size || h,
+                    disabled: 0 === I.size || f,
                     text: t,
                     size: "md",
                     fullWidth: !0,
@@ -187,7 +187,7 @@ let U = e => {
             children: (0, i.jsx)(M.A, {
                 users: Array.from(_.values()),
                 isUserSelected: e => I.has(e.id),
-                isUserDisabled: e => e.referralStatus === f.aK.REDEEMED,
+                isUserDisabled: e => e.referralStatus === h.aK.REDEEMED,
                 onSelectionChange: (e, t) => {
                     S(s => {
                         let r = new Map(s);
@@ -210,7 +210,7 @@ let N = e => {
         I.default.track(m.HAw.REFERRAL_PROGRAM_SHARE_CTA_CLICKED, {
             location_stack: p
         });
-        let t = await (0, f.xm)(Object.values(e).map(e => e.id));
+        let t = await (0, h.xm)(Object.values(e).map(e => e.id));
         d(e.map(e => ({
             recipient: e,
             status: t.get(e.id)

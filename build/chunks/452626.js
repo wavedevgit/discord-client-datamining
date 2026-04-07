@@ -1,44 +1,44 @@
 /** chunk id: 452626 params = (module,exports,require) **/
-i.d(e, {
+n.d(e, {
     A: () => a
 });
-var n = i(627968);
-i(64700);
-var l = i(990078),
-    r = i(397927),
-    s = i(353411);
+var i = n(627968);
+n(64700);
+var l = n(990078),
+    r = n(397927),
+    s = n(353411);
 
 function a(t) {
     let {
         activity: e,
-        user: i,
+        user: n,
         source: a,
         size: o = "sm",
-        variant: d = "secondary",
-        fullWidth: u,
+        variant: u = "secondary",
+        fullWidth: d,
         onAction: c,
-        ...p
+        ...h
     } = t, {
-        label: m,
-        tooltip: A,
-        loading: h,
+        label: A,
+        tooltip: m,
+        loading: p,
         disabled: g,
         onClick: f
-    } = (0, s._B)(e, i, a);
-    return (0, n.jsx)(l.m, {
-        text: A,
-        children: (0, n.jsx)(r.Button, {
-            variant: d,
+    } = (0, s._B)(e, n, a);
+    return (0, i.jsx)(l.m, {
+        text: m,
+        children: (0, i.jsx)(r.Button, {
+            variant: u,
             size: o,
             icon: r.L5T,
-            text: m,
-            fullWidth: u,
+            text: A,
+            fullWidth: d,
             onClick: () => {
                 c?.(), f()
             },
             disabled: g,
-            loading: h,
-            ...p
+            loading: p,
+            ...h
         })
     })
 }

@@ -1,6 +1,6 @@
 /** chunk id: 847221 params = (module,exports,require) **/
 n.d(t, {
-    A: () => p
+    A: () => g
 });
 var i = n(627968),
     l = n(64700),
@@ -16,12 +16,12 @@ var i = n(627968),
     _ = n(850457);
 n(281405);
 var m = n(985018),
-    g = n(77676);
+    p = n(77676);
 
-function p(e) {
+function g(e) {
     let {
         channel: t
-    } = e, [n, s] = l.useState(!1), p = l.useRef(null), f = l.useRef(null);
+    } = e, [n, s] = l.useState(!1), g = l.useRef(null), f = l.useRef(null);
     l.useEffect(() => () => {
         clearTimeout(f.current)
     }, []);
@@ -44,7 +44,7 @@ function p(e) {
             clearTimeout(f.current), f.current = setTimeout(() => s(!1), 100)
         };
     return null == x ? null : (0, i.jsx)(o.YNO, {
-        targetElementRef: p,
+        targetElementRef: g,
         position: "right",
         shouldShow: n,
         onRequestOpen: N,
@@ -63,14 +63,14 @@ function p(e) {
                 ...l
             } = e;
             return (0, i.jsxs)(o.DUT, {
-                innerRef: p,
-                className: g.nM,
+                innerRef: g,
+                className: p.nM,
                 "aria-haspopup": "dialog",
                 onClick: N,
                 ...l,
                 onMouseLeave: T,
                 children: [(0, i.jsxs)("div", {
-                    className: g.R3,
+                    className: p.R3,
                     children: [(0, i.jsx)(o.euF, {
                         src: x.getAvatarURL(t.guild_id, 24),
                         size: o._3J.SIZE_24,
@@ -78,22 +78,22 @@ function p(e) {
                         status: o.clD.INVISIBLE,
                         statusColor: "currentColor"
                     }), (0, i.jsx)(o.O4, {
-                        className: g.SM
+                        className: p.SM
                     })]
                 }), (0, i.jsx)(o.Text, {
                     variant: "text-sm/normal",
-                    className: g.Pf,
+                    className: p.Pf,
                     children: m.intl.format(m.t.TlVwqn, {
                         user: E,
                         userHook: (e, t) => (0, i.jsx)(o.Text, {
                             variant: "text-sm/semibold",
-                            className: a()(g.Xh, C),
+                            className: a()(p.Xh, C),
                             color: "text-muted",
                             children: e
                         }, t),
                         labelHook: (e, t) => (0, i.jsx)(o.Text, {
                             variant: "text-sm/normal",
-                            className: g.cp,
+                            className: p.cp,
                             color: "text-muted",
                             children: e
                         }, t)

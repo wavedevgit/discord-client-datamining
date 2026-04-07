@@ -23,15 +23,15 @@ function f(e) {
         onSend: x,
         inputValue: C,
         setInputValue: p
-    } = e, A = (0, o.A)(), b = (0, c.QK)(f), v = (0, d.VF)(), {
+    } = e, A = (0, o.A)(), v = (0, c.QK)(f), b = (0, d.VF)(), {
         textValue: w,
-        richValue: T
-    } = C, [j, k] = a.useState(!1), y = a.useCallback(() => k(!0), []), R = a.useCallback(() => k(!1), []), S = a.useCallback((e, n, l) => {
+        richValue: j
+    } = C, [T, k] = a.useState(!1), y = a.useCallback(() => k(!0), []), R = a.useCallback(() => k(!1), []), S = a.useCallback((e, n, l) => {
         p({
             textValue: n,
             richValue: l
-        }), null != t && (s.A.saveDraft(t.channel_id, n, u.C.ForwardContextMessage), v(t.channel_id, t.id))
-    }, [v, t, p]), M = a.useCallback(() => {
+        }), null != t && (s.A.saveDraft(t.channel_id, n, u.C.ForwardContextMessage), b(t.channel_id, t.id))
+    }, [b, t, p]), M = a.useCallback(() => {
         null != t && (s.A.clearDraft(t.channel_id, u.C.ForwardContextMessage), x(w))
     }, [t, x, w]), N = a.useCallback(() => (!n || w.length > A || M(), Promise.resolve({
         shouldClear: !1,
@@ -41,13 +41,13 @@ function f(e) {
         innerClassName: g.OG,
         onChange: S,
         placeholder: m.intl.string(m.t.ZroO3G),
-        channel: b,
+        channel: v,
         textValue: w,
-        richValue: T,
+        richValue: j,
         type: i.oU.FORWARD_MESSAGE_INPUT,
         onBlur: R,
         onFocus: y,
-        focused: j,
+        focused: T,
         onSubmit: N,
         parentModalKey: h.aU,
         autoCompletePosition: "bottom",

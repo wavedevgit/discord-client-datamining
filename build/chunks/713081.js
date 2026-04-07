@@ -21,14 +21,14 @@ function _(e) {
         questContent: n,
         sourceQuestContent: _,
         onClose: m,
-        size: g = "md"
-    } = e, p = (0, d.LS)(t), f = (0, l.bG)([o.A], () => o.A.useReducedMotion), x = null != (0, c._Z)(t.config), E = (0, u.vv)(t), I = (0, h.v)({
+        size: p = "md"
+    } = e, g = (0, d.LS)(t), f = (0, l.bG)([o.A], () => o.A.useReducedMotion), x = null != (0, c._Z)(t.config), E = (0, u.vv)(t), I = (0, h.v)({
         quest: t,
         questContent: n,
         sourceQuestContent: _,
         onCloseModal: m,
         shouldShowShopIfAlreadyClaimed: !0
-    }), C = t.userStatus?.claimedAt != null ? x ? A.intl.string(A.t.WYchde) : A.intl.string(A.t.vTgCWx) : A.intl.string(A.t.cfY4PE), N = t.userStatus?.completedAt == null ? p ? A.intl.string(A.t.NJ6Bnm) : E ? A.intl.string(A.t.USNO1K) : void 0 : void 0;
+    }), C = t.userStatus?.claimedAt != null ? x ? A.intl.string(A.t.WYchde) : A.intl.string(A.t.vTgCWx) : A.intl.string(A.t.cfY4PE), N = t.userStatus?.completedAt == null ? g ? A.intl.string(A.t.NJ6Bnm) : E ? A.intl.string(A.t.USNO1K) : void 0 : void 0;
     return (0, i.jsx)(a.m, {
         text: N,
         children: (0, i.jsx)("div", {
@@ -52,7 +52,7 @@ function _(e) {
                 onClick: I,
                 text: C,
                 disabled: t.userStatus?.completedAt == null,
-                size: g
+                size: p
             })
         })
     })

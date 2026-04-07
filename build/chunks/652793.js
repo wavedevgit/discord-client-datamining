@@ -22,8 +22,8 @@ function h(e) {
         text: A,
         selected: _,
         trailing: m,
-        background: g,
-        showUnread: p = !1,
+        background: p,
+        showUnread: g = !1,
         ref: f,
         ...x
     } = e, E = (0, a.rm)(t), I = (0, r.O)(A) ?? "";
@@ -51,7 +51,7 @@ function h(e) {
             className: s()(c.fx, u.iE, {
                 [u.J1]: _
             }, n),
-            children: [g, p ? (0, i.jsx)("div", {
+            children: [p, g ? (0, i.jsx)("div", {
                 className: s()(u.gy, u.WS)
             }) : null, (0, i.jsx)("div", {
                 className: s()([u.nf, u.ae, l]),

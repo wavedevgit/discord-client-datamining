@@ -1,6 +1,6 @@
 /** chunk id: 968975 params = (module,exports,require) **/
 n.d(t, {
-    A: () => y
+    A: () => v
 }), n(321073);
 var i = n(627968),
     l = n(64700),
@@ -15,8 +15,8 @@ var i = n(627968),
     A = n(178213),
     _ = n(332772),
     m = n(872472),
-    g = n(721932),
-    p = n(35092),
+    p = n(721932),
+    g = n(35092),
     f = n(183555),
     x = n(535089),
     E = n(946356),
@@ -27,12 +27,12 @@ var i = n(627968),
     S = n(985018),
     b = n(141076);
 
-function y(e) {
+function v(e) {
     let {
         unownedWishlistItems: t = [],
         profileOwner: n,
-        onClick: y,
-        wishlistId: v,
+        onClick: v,
+        wishlistId: y,
         cardSize: j,
         title: R
     } = e, {
@@ -64,7 +64,7 @@ function y(e) {
                 i = !1;
             for (let l = 0; l < t.length && e.length < D; l++) {
                 let s = t[l];
-                e.push(s), (0, g.$)(s) && (0, c.bF)(s.sku) ? n = !0 : (0, m.L)(s) && (i = !0)
+                e.push(s), (0, p.$)(s) && (0, c.bF)(s.sku) ? n = !0 : (0, m.L)(s) && (i = !0)
             }
             return {
                 visibleItems: e,
@@ -87,17 +87,17 @@ function y(e) {
                     moreCount: a ? t.length - D + 1 : void 0,
                     profileOwner: n,
                     analyticsLocations: O,
-                    onViewWishlist: y,
-                    wishlistId: v,
+                    onViewWishlist: v,
+                    wishlistId: y,
                     showTypeTooltip: k,
                     cardSize: j
-                }))) : (0, g.$)(s) && (l.add(s.skuProductLine), e.push((0, h.Z)(s, {
+                }))) : (0, p.$)(s) && (l.add(s.skuProductLine), e.push((0, h.Z)(s, {
                     index: i,
                     moreCount: a ? t.length - D + 1 : void 0,
                     profileOwner: n,
                     analyticsLocations: O,
-                    onViewWishlist: y,
-                    wishlistId: v,
+                    onViewWishlist: v,
+                    wishlistId: y,
                     showTypeTooltip: k,
                     cardSize: j
                 })))
@@ -107,35 +107,35 @@ function y(e) {
                 singleItem: i,
                 productLines: l
             }
-        }, [t, n, O, y, v, j, P, k, D]),
+        }, [t, n, O, v, y, j, P, k, D]),
         H = (0, x.A)({
-            wishlistId: v ?? null,
+            wishlistId: y ?? null,
             onAction: G,
             productLines: V
         }),
-        F = (0, l.useMemo)(() => M ? P.map((e, l) => null == e.sku ? null : (0, i.jsx)(p.A, {
+        F = (0, l.useMemo)(() => M ? P.map((e, l) => null == e.sku ? null : (0, i.jsx)(g.A, {
             sku: e.sku,
             index: l,
             wishlistOwner: n,
-            wishlistId: v,
+            wishlistId: y,
             analyticsLocations: O,
-            onViewWishlist: y,
+            onViewWishlist: v,
             isSingleCard: 1 === t.length
-        }, e.skuId)) : null, [O, M, y, n, t.length, P, v]),
-        [K, W] = (0, d.RF)(s.M.SLAYER_STOREFRONT_ORBS_REWARD_WISHLIST_UPSELL, (0, o.c)(s.M.SLAYER_STOREFRONT_ORBS_REWARD_WISHLIST_UPSELL), void 0, !0),
-        Y = K !== s.M.SLAYER_STOREFRONT_ORBS_REWARD_WISHLIST_UPSELL;
+        }, e.skuId)) : null, [O, M, v, n, t.length, P, y]),
+        [W, K] = (0, d.RF)(s.M.SLAYER_STOREFRONT_ORBS_REWARD_WISHLIST_UPSELL, (0, o.c)(s.M.SLAYER_STOREFRONT_ORBS_REWARD_WISHLIST_UPSELL), void 0, !0),
+        Y = W !== s.M.SLAYER_STOREFRONT_ORBS_REWARD_WISHLIST_UPSELL;
     if (0 === w.length) return null;
     let z = w;
     return null != B && ((0, m.L)(B) ? z = (0, I.z)(B, {
         profileOwner: n,
         analyticsLocations: O,
-        wishlistId: v,
-        onViewWishlist: y
-    }) : (0, g.$)(B) && (z = (0, h.A)(B, {
+        wishlistId: y,
+        onViewWishlist: v
+    }) : (0, p.$)(B) && (z = (0, h.A)(B, {
         profileOwner: n,
         analyticsLocations: O,
-        wishlistId: v,
-        onViewWishlist: y
+        wishlistId: y,
+        onViewWishlist: v
     }))), (0, i.jsx)("section", {
         "aria-labelledby": U,
         children: (0, i.jsxs)(E.A.Overlay, {
@@ -150,7 +150,7 @@ function y(e) {
                 }), M && t.length > D && (0, i.jsx)(a.QWc, {
                     variant: "secondary",
                     textVariant: "text-xs/normal",
-                    onClick: y,
+                    onClick: v,
                     text: S.intl.string(S.t.y6PSA3)
                 })]
             }), (0, i.jsxs)(a.Fmo, {
@@ -160,7 +160,7 @@ function y(e) {
                 }), !Y && V.has(N.EZt.SOCIAL_LAYER_GAME_ITEM) && (0, i.jsx)(u.A, {
                     location: "user_profile_sidebar_wishlist_breadcrumb",
                     className: b.EK,
-                    onDismiss: () => W(T.i.USER_DISMISS)
+                    onDismiss: () => K(T.i.USER_DISMISS)
                 })]
             })]
         })

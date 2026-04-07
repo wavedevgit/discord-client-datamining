@@ -15,8 +15,8 @@ var i = n(627968),
     A = n(557534),
     _ = n(166444),
     m = n(652215),
-    g = n(790782),
-    p = n(928409);
+    p = n(790782),
+    g = n(928409);
 let f = (0, d.a)(function(e) {
     let {
         guild: t,
@@ -32,7 +32,7 @@ let f = (0, d.a)(function(e) {
     } = e, S = (0, r.bG)([c.A, u.Ay], () => {
         let e = u.Ay.getDirectoryChannelIds(t.id);
         return 0 === e.length ? null : c.A.getChannel(e[0])
-    }), b = (0, r.bG)([c.A], () => c.A.getChannel(S?.parent_id)), y = s === S?.id, v = (0, r.bG)([h.A], () => null != b ? h.A.can(m.xBc.MANAGE_CHANNELS, b) : null != t && h.A.can(m.xBc.MANAGE_CHANNELS, t)), j = l.useCallback(e => {
+    }), b = (0, r.bG)([c.A], () => c.A.getChannel(S?.parent_id)), v = s === S?.id, y = (0, r.bG)([h.A], () => null != b ? h.A.can(m.xBc.MANAGE_CHANNELS, b) : null != t && h.A.can(m.xBc.MANAGE_CHANNELS, t)), j = l.useCallback(e => {
         null != S && (0, o.L3)(e, async () => {
             let {
                 default: e
@@ -48,18 +48,18 @@ let f = (0, d.a)(function(e) {
         O = (0, A.h$)(S, x, E),
         L = (0, i.jsx)("div", {
             className: a()(R, {
-                [p.r9]: O,
-                [p.wH]: y
+                [g.r9]: O,
+                [g.wH]: v
             }),
             "data-dnd-name": S.name,
             children: (0, i.jsxs)(_.Ay, {
-                className: p.Ki,
+                className: g.Ki,
                 channel: S,
                 guild: t,
-                selected: y,
+                selected: v,
                 onContextMenu: j,
                 forceInteractable: !0,
-                resolvedUnreadSetting: g.e.ONLY_MENTIONS,
+                resolvedUnreadSetting: p.e.ONLY_MENTIONS,
                 children: [(0, i.jsx)(A.gQ, {
                     channel: S,
                     tabIndex: T
@@ -70,5 +70,5 @@ let f = (0, d.a)(function(e) {
                 })]
             })
         });
-    return v && (L = N(C(L))), L
+    return y && (L = N(C(L))), L
 })

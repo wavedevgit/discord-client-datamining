@@ -1,7 +1,7 @@
 /** chunk id: 945777 params = (module,exports,require) **/
 n.d(t, {
     A: () => j,
-    S: () => v
+    S: () => y
 });
 var i = n(627968),
     l = n(64700),
@@ -16,8 +16,8 @@ var i = n(627968),
     A = n(442433),
     _ = n(793574),
     m = n(688810),
-    g = n(139286),
-    p = n(480890),
+    p = n(139286),
+    g = n(480890),
     f = n(267102),
     x = n(342296),
     E = n(961350),
@@ -55,7 +55,7 @@ let b = l.memo(function(e) {
             }) : null]
         })
     }),
-    y = l.memo(function(e) {
+    v = l.memo(function(e) {
         let {
             participant: t,
             guildId: n,
@@ -94,7 +94,7 @@ let b = l.memo(function(e) {
             })]
         })
     }),
-    v = () => (0, i.jsx)("div", {
+    y = () => (0, i.jsx)("div", {
         className: S.j8
     }),
     j = l.memo(function(e) {
@@ -106,10 +106,10 @@ let b = l.memo(function(e) {
             blocked: u
         } = t, C = s.getGuildId(), N = E.default.getId(), {
             newestAnalyticsLocation: b
-        } = (0, m.Ay)(_.A.AUDIENCE_TILE), v = (0, f.Us)(), j = (0, c.bG)([I.Ay], () => null != C && I.Ay.getMember(C, r.id)?.premiumSince != null, [C, r.id]), R = l.useRef(null);
+        } = (0, m.Ay)(_.A.AUDIENCE_TILE), y = (0, f.Us)(), j = (0, c.bG)([I.Ay], () => null != C && I.Ay.getMember(C, r.id)?.premiumSince != null, [C, r.id]), R = l.useRef(null);
         o()(null != C, "Channel cannot be guildless");
         let O = l.useCallback(e => {
-            (0, g.x)({
+            (0, p.x)({
                 type: d.ImpressionTypes.MENU,
                 name: d.ImpressionNames.CALL_TILE_CONTEXT_MENU,
                 properties: {
@@ -129,15 +129,15 @@ let b = l.memo(function(e) {
                     showMediaItems: !0,
                     showStageChannelItems: !0,
                     showChatItems: !1,
-                    onInteraction: (0, p.s)("GuildChannelUserContextMenu", b, {
+                    onInteraction: (0, g.s)("GuildChannelUserContextMenu", b, {
                         targetUserId: r.id,
                         tileType: T.qs.USER
                     })
                 })
             }, {
-                context: v
+                context: y
             })
-        }, [r, N, v, C, s, b]);
+        }, [r, N, y, C, s, b]);
         return (0, i.jsx)(x.A, {
             targetElementRef: R,
             user: r,
@@ -152,7 +152,7 @@ let b = l.memo(function(e) {
                 }),
                 onContextMenu: O,
                 ...e,
-                children: (0, i.jsx)(y, {
+                children: (0, i.jsx)(v, {
                     participant: t,
                     guildId: C,
                     channel: s,

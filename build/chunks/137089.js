@@ -17,16 +17,16 @@ var i = n(627968),
     A = n(147036),
     _ = n(32603),
     m = n(85808),
-    g = n(823142);
+    p = n(823142);
 n(83766);
-var p = n(928409),
+var g = n(928409),
     f = n(116648);
 let x = l.memo(function(e) {
     let {
         guildChannels: t,
         guildChannelsVersion: n
     } = e, s = l.useMemo(() => t.getCategoryFromSection(t.voiceChannelsSectionNumber), [t, n]);
-    return null == s ? null : (0, i.jsx)(g.AV, {
+    return null == s ? null : (0, i.jsx)(p.AV, {
         category: s
     })
 });
@@ -70,7 +70,7 @@ let C = l.memo(function(e) {
         sectionIndex: t,
         guildChannels: n,
         guildChannelsVersion: s,
-        voiceStates: g,
+        voiceStates: p,
         guildId: E,
         selectedChannelId: I,
         selectedVoiceChannelId: C,
@@ -78,8 +78,8 @@ let C = l.memo(function(e) {
     } = e, {
         hasDivider: T,
         canHaveVoiceSummary: S
-    } = l.useMemo(() => (0, m.B3)(n, N, t), [n, N, t, s]), b = l.useMemo(() => t === _.PU ? null : n.getCategoryFromSection(t), [n, t, s]), y = (0, u.jN)(E), {
-        enableWaveformIcon: v
+    } = l.useMemo(() => (0, m.B3)(n, N, t), [n, N, t, s]), b = l.useMemo(() => t === _.PU ? null : n.getCategoryFromSection(t), [n, t, s]), v = (0, u.jN)(E), {
+        enableWaveformIcon: y
     } = (0, d.b)(E, "ChannelListSectionFooter"), j = (0, r.yK)([h.Ay], () => {
         if (null == b || !b.isCollapsed || !S) return [];
         let e = b.getChannelRecords(),
@@ -87,15 +87,15 @@ let C = l.memo(function(e) {
         for (let n of e) {
             if (!n.isGuildVocal()) continue;
             let e = h.Ay.isChannelOrParentOptedIn(E, n.id);
-            (!y || e) && t.push(n)
+            (!v || e) && t.push(n)
         }
         return t
-    }, [b, S, E, y]), R = l.useMemo(() => (0, A.fK)({
+    }, [b, S, E, v]), R = l.useMemo(() => (0, A.fK)({
         channels: j,
         selectedChannelId: I,
         selectedVoiceChannelId: C,
-        voiceStates: g
-    }), [j, I, C, g]);
+        voiceStates: p
+    }), [j, I, C, p]);
     if (t === n.voiceChannelsSectionNumber) return (0, i.jsx)(x, {
         guildChannels: n,
         guildChannelsVersion: s
@@ -112,9 +112,9 @@ let C = l.memo(function(e) {
                 max: 8,
                 showUserPopout: !0,
                 guildId: E,
-                renderLeadingIcon: v ? e => (0, i.jsx)(c.A, {
+                renderLeadingIcon: y ? e => (0, i.jsx)(c.A, {
                     color: "currentColor",
-                    className: a()(e, p.Gj)
+                    className: a()(e, g.Gj)
                 }) : void 0
             })
         }), O]

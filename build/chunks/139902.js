@@ -1,16 +1,16 @@
 /** chunk id: 139902 params = (module,exports,require) **/
-i.d(e, {
+n.d(e, {
     A: () => o
 });
-var n = i(573648),
-    l = i(153331),
-    r = i(855511),
-    s = i(652215),
-    a = i(985018);
+var i = n(573648),
+    l = n(153331),
+    r = n(855511),
+    s = n(652215),
+    a = n(985018);
 
-function o(t, e, i) {
+function o(t, e, n) {
     let o = (0, r.A)(t) ?? "",
-        d = e === l.O.VOICE_CHANNEL && i;
+        u = e === l.O.VOICE_CHANNEL && n;
     switch (o) {
         case s.yTV.PS4:
         case s.yTV.PS5:
@@ -20,9 +20,9 @@ function o(t, e, i) {
         case s.yTV.XBOX:
         case s.yTV.SAMSUNG:
             return a.intl.formatToPlainString(a.t.A17aM8, {
-                platform: n.A.get(o).name
+                platform: i.A.get(o).name
             });
         default:
-            return a.intl.string(d ? a.t.J4MQFX : a.t["2TbM/G"])
+            return a.intl.string(u ? a.t.J4MQFX : a.t["2TbM/G"])
     }
 }

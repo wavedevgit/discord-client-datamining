@@ -1,12 +1,12 @@
 /** chunk id: 29160 params = (module,exports,require) **/
-i.d(e, {
-    A: () => d
+n.d(e, {
+    A: () => u
 });
-var n = i(627968),
-    l = i(64700),
-    r = i(503698),
-    s = i.n(r),
-    a = i(584045);
+var i = n(627968),
+    l = n(64700),
+    r = n(503698),
+    s = n.n(r),
+    a = n(584045);
 class o extends l.PureComponent {
     static defaultProps = {
         tag: "div",
@@ -16,25 +16,25 @@ class o extends l.PureComponent {
         let {
             tag: t,
             children: e,
-            hoverText: i,
+            hoverText: n,
             className: l,
             forceHover: r,
             ...o
         } = this.props;
-        return (0, n.jsxs)("div", {
+        return (0, i.jsxs)("div", {
             ...o,
             className: s()(l, a.oM, {
-                [a.r9]: null == i,
+                [a.r9]: null == n,
                 [a.EE]: r
             }),
-            children: [(0, n.jsx)(t, {
+            children: [(0, i.jsx)(t, {
                 className: a.yo,
-                children: i
-            }), (0, n.jsx)(t, {
+                children: n
+            }), (0, i.jsx)(t, {
                 className: a.Ay,
                 children: e
             })]
         })
     }
 }
-let d = o
+let u = o

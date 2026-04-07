@@ -15,8 +15,8 @@ var i = n(627968),
     A = n(928039),
     _ = n(636922),
     m = n(976860),
-    g = n(151282),
-    p = n(199160),
+    p = n(151282),
+    g = n(199160),
     f = n(551640),
     x = n(970244),
     E = n(253932),
@@ -26,8 +26,8 @@ var i = n(627968),
     T = n(403362),
     S = n(572448),
     b = n(963702),
-    y = n(652215),
-    v = n(985018),
+    v = n(652215),
+    y = n(985018),
     j = n(677510);
 let R = {
     offset: {
@@ -38,22 +38,22 @@ let R = {
 
 function O() {
     return l.useEffect(() => {
-        (0, g.sy)()
+        (0, p.sy)()
     }, []), (0, i.jsx)(L, {})
 }
 
 function L() {
-    let e = (0, u.bG)([p.A], () => p.A.getScheduledMessagesForInbox(), []),
+    let e = (0, u.bG)([g.A], () => g.A.getScheduledMessagesForInbox(), []),
         t = l.useMemo(() => Object.values(e).sort((e, t) => new Date(e.sendAtTimestamp) > new Date(t.sendAtTimestamp) ? -1 : 1), [e]),
-        n = (0, u.bG)([p.A], () => p.A.loading, []),
+        n = (0, u.bG)([g.A], () => g.A.loading, []),
         s = l.useRef(null),
         a = (0, A.A)("scheduled-messages", s);
     return n ? (0, i.jsx)(h.y$y, {
         className: j.k$
     }) : 0 === t.length ? (0, i.jsx)(b.A, {
         Icon: h.O4,
-        header: v.intl.string(v.t.aJQZfZ),
-        tip: v.intl.string(v.t.rCN4pN)
+        header: y.intl.string(y.t.aJQZfZ),
+        tip: y.intl.string(y.t.rCN4pN)
     }) : (0, i.jsx)(d.hD, {
         navigator: a,
         children: (0, i.jsx)(d.PR, {
@@ -85,7 +85,7 @@ function M(e) {
             channel: n,
             scheduledMessages: [...e[n.id]?.scheduledMessages ?? [], t]
         }), e
-    }, {}), [t]), s = (0, u.bG)([p.A], () => p.A.getMessagesPendingDeletion(), []);
+    }, {}), [t]), s = (0, u.bG)([g.A], () => g.A.getMessagesPendingDeletion(), []);
     return (0, i.jsx)(i.Fragment, {
         children: Object.entries(n).map(e => {
             let [t, {
@@ -96,7 +96,7 @@ function M(e) {
                 className: j.WG,
                 children: [(0, i.jsx)(S.A, {
                     channel: n,
-                    gotoChannel: () => (0, m.pX)(y.BVt.CHANNEL(n.getGuildId(), n.id)),
+                    gotoChannel: () => (0, m.pX)(v.BVt.CHANNEL(n.getGuildId(), n.id)),
                     children: null
                 }), l.map(e => {
                     let t = s.has(e.scheduledMessageId);
@@ -128,33 +128,33 @@ let D = l.memo(function(e) {
         switch (e) {
             case f.A.SCHEDULED:
                 return {
-                    isError: !1, stateMessage: v.intl.string(v.t.Fn6Odn)
+                    isError: !1, stateMessage: y.intl.string(y.t.Fn6Odn)
                 };
             case f.A.ERROR_CHANNEL_NOT_FOUND:
                 return {
-                    isError: !0, stateMessage: v.intl.string(v.t.v5O2dK)
+                    isError: !0, stateMessage: y.intl.string(y.t.v5O2dK)
                 };
             case f.A.ERROR_USER_NOT_FOUND:
                 return {
-                    isError: !0, stateMessage: v.intl.string(v.t.j8uIfG)
+                    isError: !0, stateMessage: y.intl.string(y.t.j8uIfG)
                 };
             case f.A.ERROR_USER_CANNOT_USE_SCHEDULED_MESSAGES:
                 return {
-                    isError: !0, stateMessage: v.intl.string(v.t["w6zHX/"])
+                    isError: !0, stateMessage: y.intl.string(y.t["w6zHX/"])
                 };
             case f.A.ERROR_SEND_FAILED:
                 return {
-                    isError: !0, stateMessage: v.intl.string(v.t.pflV7z)
+                    isError: !0, stateMessage: y.intl.string(y.t.pflV7z)
                 };
             case f.A.ERROR_SCHEDULED_MESSAGES_DISABLED:
                 return {
-                    isError: !0, stateMessage: v.intl.string(v.t.j8uIfG)
+                    isError: !0, stateMessage: y.intl.string(y.t.j8uIfG)
                 };
             default:
                 (0, T.xb)(e)
         }
     }(t.state), A = l.useCallback(() => {
-        (0, g.mk)(t.scheduledMessageId).then(() => {
+        (0, p.mk)(t.scheduledMessageId).then(() => {
             (0, x.Re)()
         }).catch(e => {
             (0, x.kM)(e.message)
@@ -192,11 +192,11 @@ let D = l.memo(function(e) {
                         icon: h.O4,
                         onClick: m,
                         variant: "icon-only",
-                        "aria-label": v.intl.string(v.t.SBcdAN)
+                        "aria-label": y.intl.string(y.t.SBcdAN)
                     }), (0, i.jsx)(c.K0, {
                         icon: h.aXh,
                         onClick: A,
-                        "aria-label": v.intl.string(v.t.O3sL8F),
+                        "aria-label": y.intl.string(y.t.O3sL8F),
                         variant: "icon-only"
                     })]
                 })]

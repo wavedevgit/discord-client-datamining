@@ -1,6 +1,6 @@
 /** chunk id: 543274 params = (module,exports,require) **/
 n.d(t, {
-    K: () => y
+    K: () => v
 }), n(321073);
 var i = n(627968),
     l = n(64700),
@@ -15,8 +15,8 @@ var i = n(627968),
     A = n(641703),
     _ = n(807067),
     m = n(521588),
-    g = n(688810),
-    p = n(975412),
+    p = n(688810),
+    g = n(975412),
     f = n(384059),
     x = n(379848),
     E = n(267102),
@@ -27,12 +27,12 @@ var i = n(627968),
     S = n(49999),
     b = n(985018);
 
-function y(e) {
+function v(e) {
     let {
         channel: t,
         idle: n,
-        whichPopoutIsOpen: y,
-        setWhichPopoutIsOpen: v
+        whichPopoutIsOpen: v,
+        setWhichPopoutIsOpen: y
     } = e, j = (0, s.bG)([c.Ay], () => c.Ay.isLaunchingActivity()), R = (0, h.et)(t.id), O = (0, h.dL)(R), L = R !== h.xy.CAN_LAUNCH || j, {
         isHovered: M,
         setIsHovered: D,
@@ -45,8 +45,8 @@ function y(e) {
     }, [U]), V = (0, E.Us)() === T.BRT.POPOUT, {
         parentAnalyticsLocation: H,
         newestAnalyticsLocation: F
-    } = (0, g.Ay)(), K = l.useCallback(() => {
-        (0, f.X)(H, f.O.ACTIVITY), (0, p.A)({
+    } = (0, p.Ay)(), W = l.useCallback(() => {
+        (0, f.X)(H, f.O.ACTIVITY), (0, g.A)({
             context: null != t ? {
                 type: "channel",
                 channel: t
@@ -56,12 +56,12 @@ function y(e) {
             openInPopout: V,
             analyticsLocation: F
         })
-    }, [t, V, F, H]), W = [];
-    L || W.push(a.M.ACTIVITIES_MINI_SHELF_SPARKLES), (0, A.A)(t.id) && !L && W.push(a.M.ACTIVITY_GDM_ROCKET_SPARKLE), L || W.push(a.M.VOICE_PANEL_ACTIVITIES_SHAPES_BUTTON_EDUCATION_TOOLTIP);
+    }, [t, V, F, H]), K = [];
+    L || K.push(a.M.ACTIVITIES_MINI_SHELF_SPARKLES), (0, A.A)(t.id) && !L && K.push(a.M.ACTIVITY_GDM_ROCKET_SPARKLE), L || K.push(a.M.VOICE_PANEL_ACTIVITIES_SHAPES_BUTTON_EDUCATION_TOOLTIP);
     let Y = l.useRef(!1),
         z = l.useRef(null);
     return (0, i.jsx)(x.Ay, {
-        contentTypes: W,
+        contentTypes: K,
         children: e => {
             let {
                 visibleContent: l,
@@ -70,14 +70,14 @@ function y(e) {
             return Y.current && !d && s(S.i.AUTO_DISMISS), Y.current !== d && (Y.current = d), (0, i.jsx)(o.YNO, {
                 targetElementRef: z,
                 fixed: !0,
-                shouldShow: M && (y === N.P.ACTIVITY || null == y),
+                shouldShow: M && (v === N.P.ACTIVITY || null == v),
                 animation: o.YNO.Animation.FADE,
                 animationPosition: "top",
                 position: "top",
                 align: "center",
                 spacing: 16,
                 onRequestClose: () => {
-                    D(!1), v?.(void 0)
+                    D(!1), y?.(void 0)
                 },
                 renderPopout: e => {
                     let {
@@ -117,7 +117,7 @@ function y(e) {
                                         label: w ? void 0 : O,
                                         isActivityActive: k,
                                         onClick: () => {
-                                            K(), (l === a.M.ACTIVITIES_MINI_SHELF_SPARKLES || l === a.M.ACTIVITY_GDM_ROCKET_SPARKLE || l === a.M.ACTIVITIES_WATCH_TOGETHER_APRIL_2023_WEEK_1_SPARKLES || l === a.M.ACTIVITIES_WATCH_TOGETHER_APRIL_2023_WEEK_2_SPARKLES || l === a.M.VOICE_PANEL_ACTIVITIES_SHAPES_BUTTON_EDUCATION_TOOLTIP) && s(S.i.TAKE_ACTION), t === a.M.ACTIVITIES_VOICE_LAUNCHER_BADGE && n(S.i.TAKE_ACTION)
+                                            W(), (l === a.M.ACTIVITIES_MINI_SHELF_SPARKLES || l === a.M.ACTIVITY_GDM_ROCKET_SPARKLE || l === a.M.ACTIVITIES_WATCH_TOGETHER_APRIL_2023_WEEK_1_SPARKLES || l === a.M.ACTIVITIES_WATCH_TOGETHER_APRIL_2023_WEEK_2_SPARKLES || l === a.M.VOICE_PANEL_ACTIVITIES_SHAPES_BUTTON_EDUCATION_TOOLTIP) && s(S.i.TAKE_ACTION), t === a.M.ACTIVITIES_VOICE_LAUNCHER_BADGE && n(S.i.TAKE_ACTION)
                                         },
                                         onMouseEnter: B,
                                         onMouseLeave: G

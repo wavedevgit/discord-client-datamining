@@ -1,10 +1,10 @@
 /** chunk id: 533488 params = (module,exports,require) **/
-i.d(e, {
+n.d(e, {
     _: () => r,
     d: () => s
 });
-var n = i(509381);
-let l = [n.m.VOICE_ISOLATION, n.m.STUDIO, n.m.CUSTOM];
+var i = n(509381);
+let l = [i.m.VOICE_ISOLATION, i.m.STUDIO, i.m.CUSTOM];
 
 function r(t) {
     let {

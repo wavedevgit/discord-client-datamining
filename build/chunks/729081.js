@@ -15,8 +15,8 @@ var i = n(627968),
     A = n(568598),
     _ = n(313961),
     m = n(246356),
-    g = n(178213),
-    p = n(332772),
+    p = n(178213),
+    g = n(332772),
     f = n(594832),
     x = n(631784),
     E = n(721932),
@@ -26,8 +26,8 @@ var i = n(627968),
     T = n(954571),
     S = n(403362),
     b = n(871123),
-    y = n(832163),
-    v = n(453774),
+    v = n(832163),
+    y = n(453774),
     j = n(533562),
     R = n(568751),
     O = n(620406),
@@ -55,19 +55,19 @@ function B(e) {
     l.useEffect(() => {
         t || n()
     }, [n, t]);
-    let B = (0, g.GG)("social_layer_storefront_gifting_mini_shelf");
-    (0, p.T)({
+    let B = (0, p.GG)("social_layer_storefront_gifting_mini_shelf");
+    (0, g.T)({
         location: "social_layer_storefront_gifting_mini_shelf"
     });
-    let H = (0, u.bG)([y.A], () => y.A.getDetectableIdsToApplicationIds()),
+    let H = (0, u.bG)([v.A], () => v.A.getDetectableIdsToApplicationIds()),
         F = (0, j.W)(),
-        [K] = (0, u.bG)([_.A], () => null != h.id ? [_.A.getParticipants(h.id), _.A.getParticipantsVersion(h.id)] : [
+        [W] = (0, u.bG)([_.A], () => null != h.id ? [_.A.getParticipants(h.id), _.A.getParticipantsVersion(h.id)] : [
             [], 0
         ], [h.id], A.hS),
-        [W, Y] = (0, u.bG)([N.A], () => {
+        [K, Y] = (0, u.bG)([N.A], () => {
             let e = new Set,
                 t = new Set;
-            for (let n of (null != F && t.add(F), K))
+            for (let n of (null != F && t.add(F), W))
                 if ((0, D.Xw)(n) || (0, D.Ay)(n)) {
                     for (let i of N.A.getActivities(n.user.id))
                         if (null != i.application_id && null != H[i.application_id]) {
@@ -75,23 +75,23 @@ function B(e) {
                             break
                         }
                 } return [Array.from(e).sort(), Array.from(t).sort()]
-        }, [K, H, F], w),
+        }, [W, H, F], w),
         z = (0, u.bG)([C.default], () => C.default.getId()),
         q = l.useMemo(() => {
-            let e = K.map(e => (0, D.Xw)(e) || (0, D.Ay)(e) ? e.user.id : null).filter(S.Vq);
-            return (0, r.uniq)([...W, ...e])
-        }, [K, W]),
-        X = (0, v.v)(Y),
+            let e = W.map(e => (0, D.Xw)(e) || (0, D.Ay)(e) ? e.user.id : null).filter(S.Vq);
+            return (0, r.uniq)([...K, ...e])
+        }, [W, K]),
+        X = (0, y.v)(Y),
         {
-            status: J,
+            status: $,
             recommendations: Q,
-            skusToUserAndReason: $
+            skusToUserAndReason: J
         } = (0, x.XQ)({
             applicationIds: Y,
             numItems: 6,
             userIds: q
         }),
-        Z = "loading" === J || 0 === Q.length,
+        Z = "loading" === $ || 0 === Q.length,
         ee = l.useMemo(() => Q.map(e => E.A.fromSKU(e)).filter(S.Vq), [Q]),
         et = (0, d.A)(Z ? k : ee, V),
         en = l.useMemo(() => {
@@ -99,10 +99,10 @@ function B(e) {
                 {
                     hasWishlist: t,
                     hasPopular: n
-                } = (0, b.wH)(Q, $, e),
+                } = (0, b.wH)(Q, J, e),
                 l = t && n;
             return et.map(t => {
-                let n = Object.entries($[t.skuId] ?? {}).filter(t => {
+                let n = Object.entries(J[t.skuId] ?? {}).filter(t => {
                         let [n, i] = t;
                         return i === I.j.WISHLIST && e.has(n)
                     }).map(e => {
@@ -130,7 +130,7 @@ function B(e) {
                     contextContainerClassName: G.RL
                 }, t.skuId)
             })
-        }, [z, q, Q, et, $, B, X, h.guild_id, h.id]);
+        }, [z, q, Q, et, J, B, X, h.guild_id, h.id]);
     return l.useEffect(() => {
         0 !== Q.length && T.default.track(M.HAw.COMMERCE_SHOP_VC_GIFT_BUTTON_VIEWED, {
             guild_id: h.guild_id,

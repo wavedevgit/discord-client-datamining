@@ -15,8 +15,8 @@ var i = n(627968),
     A = n(183555),
     _ = n(672385),
     m = n(950191),
-    g = n(249790),
-    p = n(946356),
+    p = n(249790),
+    g = n(946356),
     f = n(254828),
     x = n(783123),
     E = n(996988),
@@ -29,19 +29,19 @@ function T(e) {
         user: t,
         channel: n,
         onHide: T
-    } = e, S = (0, m.Ay)(t.id), b = (0, o.Ay)(), y = (0, a.bG)([u.A], () => u.A.isBlocked(t.id)), {
-        analyticsLocations: v
-    } = (0, c.Ay)(y ? d.A.BLOCKED_PROFILE_PANEL : d.A.IGNORED_PROFILE_PANEL), j = (0, A.pb)({
+    } = e, S = (0, m.Ay)(t.id), b = (0, o.Ay)(), v = (0, a.bG)([u.A], () => u.A.isBlocked(t.id)), {
+        analyticsLocations: y
+    } = (0, c.Ay)(v ? d.A.BLOCKED_PROFILE_PANEL : d.A.IGNORED_PROFILE_PANEL), j = (0, A.pb)({
         layout: "SIDEBAR",
         userId: t.id,
         channelId: n.id
     }), R = l.useRef(null);
     return (0, i.jsx)(c.f5, {
-        value: v,
+        value: y,
         children: (0, i.jsx)(A.of, {
             value: j,
             isLoaded: S?.isLoaded,
-            children: (0, i.jsx)(p.A, {
+            children: (0, i.jsx)(g.A, {
                 ref: R,
                 user: t,
                 displayProfile: S,
@@ -59,25 +59,25 @@ function T(e) {
                             className: C.rf,
                             children: [(0, i.jsxs)("div", {
                                 className: C.N1,
-                                children: [(0, i.jsx)(g.A, {
+                                children: [(0, i.jsx)(p.A, {
                                     user: t
                                 }), (0, i.jsx)(r.Heading, {
                                     variant: "heading-lg/bold",
                                     children: I.intl.string(I.t.b33pLD)
                                 }), (0, i.jsx)(r.Text, {
                                     variant: "text-sm/medium",
-                                    children: I.intl.format(y ? I.t["8F+WNz"] : I.t["/cZp5s"], {
+                                    children: I.intl.format(v ? I.t["8F+WNz"] : I.t["/cZp5s"], {
                                         username: h.Ay.getName(n.guild_id, n.id, t)
                                     })
                                 })]
                             }), (0, i.jsxs)(r.BJc, {
                                 align: "center",
                                 children: [(0, i.jsx)(x.A, {
-                                    isBlocked: y,
+                                    isBlocked: v,
                                     onClick: () => {
                                         T(), (0, _.Wn)({
-                                            action: y ? "VIEW_BLOCKED_PROFILE" : "VIEW_IGNORED_PROFILE",
-                                            analyticsLocations: v,
+                                            action: v ? "VIEW_BLOCKED_PROFILE" : "VIEW_IGNORED_PROFILE",
+                                            analyticsLocations: y,
                                             ...j
                                         })
                                     }
@@ -86,7 +86,7 @@ function T(e) {
                                     onClick: () => {
                                         T(), (0, _.Wn)({
                                             action: "DONT_SHOW_AGAIN_IGNORED_PROFILE",
-                                            analyticsLocations: v,
+                                            analyticsLocations: y,
                                             ...j
                                         })
                                     }

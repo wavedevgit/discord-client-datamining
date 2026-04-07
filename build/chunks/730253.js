@@ -15,8 +15,8 @@ var i = n(627968),
     A = n(688810),
     _ = n(941971),
     m = n(900848),
-    g = n(65611),
-    p = n(855725),
+    p = n(65611),
+    g = n(855725),
     f = n(532794),
     x = n(366811),
     E = n(345942),
@@ -26,8 +26,8 @@ var i = n(627968),
     T = n(977997),
     S = n(661191),
     b = n(181079),
-    y = n(422258),
-    v = n(668267),
+    v = n(422258),
+    y = n(668267),
     j = n(93055),
     R = n(5180),
     O = n(210082),
@@ -50,7 +50,7 @@ let H = {
 };
 
 function F(e) {
-    let t, F, K, W, Y, z, q, X, J, Q, $, Z, {
+    let t, F, W, K, Y, z, q, X, $, Q, J, Z, {
             shouldShowIntroPopover: ee,
             markIntroPopoverAsDismissed: et
         } = e,
@@ -77,29 +77,29 @@ function F(e) {
         eA = (0, a.bG)([N.A], () => N.A.getChannelId(D.YYv)),
         e_ = (0, a.bG)([C.A], () => C.A.getChannel(eA)),
         em = (0, x.A)(e => e.guildId),
-        eg = (0, R.ai)(em),
+        ep = (0, R.ai)(em),
         {
-            badge: ep,
+            badge: eg,
             unread: ef
         } = (0, O.A)(eh),
-        ex = (F = null != (t = (0, a.bG)([N.A], () => N.A.getVoiceChannelId())) && null != eh[t], K = (0, a.bG)([I.A], () => {
+        ex = (F = null != (t = (0, a.bG)([N.A], () => N.A.getVoiceChannelId())) && null != eh[t], W = (0, a.bG)([I.A], () => {
             if (!F) return !1;
             let e = I.A.getCurrentUserActiveStream();
             return null != e && null != eh[e.channelId]
-        }), W = (0, a.bG)([I.A], () => I.A.getAllApplicationStreams().some(e => null != eh[e.channelId])), Y = (0, a.bG)([T.A], () => F && null != t && T.A.hasVideo(t), [F, t]), z = (0, a.yK)([c.Ay], () => S.default.keys(eh).reduce((e, t) => (e.push(...c.Ay.getEmbeddedActivitiesForChannel(t)), e), [])), q = (0, a.bG)([c.Ay], () => Array.from(c.Ay.getSelfEmbeddedActivities().values()).some(e => {
+        }), K = (0, a.bG)([I.A], () => I.A.getAllApplicationStreams().some(e => null != eh[e.channelId])), Y = (0, a.bG)([T.A], () => F && null != t && T.A.hasVideo(t), [F, t]), z = (0, a.yK)([c.Ay], () => S.default.keys(eh).reduce((e, t) => (e.push(...c.Ay.getEmbeddedActivitiesForChannel(t)), e), [])), q = (0, a.bG)([c.Ay], () => Array.from(c.Ay.getSelfEmbeddedActivities().values()).some(e => {
             let {
                 location: t
             } = e, n = (0, u.H)(t);
             return null != n && null != eh[n]
-        })), X = z.length > 0, J = !1, Q = !1, $ = !1, Z = !1, F ? (J = !Y, Q = Y, $ = K, Z = q) : ($ = W, Z = X), (0, g.oi)({
-            audio: J,
+        })), X = z.length > 0, $ = !1, Q = !1, J = !1, Z = !1, F ? ($ = !Y, Q = Y, J = W, Z = q) : (J = K, Z = X), (0, p.oi)({
+            audio: $,
             video: Q,
-            screenshare: $,
+            screenshare: J,
             liveStage: !1,
             isCurrentUserConnected: F,
             activity: Z
         })),
-        eE = ep > 0 ? (0, p.w)(ep) : null,
+        eE = eg > 0 ? (0, g.w)(eg) : null,
         eI = l.useRef(!1),
         {
             hasAccess: eC
@@ -108,7 +108,7 @@ function F(e) {
             eI.current = !0, et(e, t)
         }, [et]),
         eT = l.useCallback(e => {
-            e && ((0, v.mv)("intro_dc"), (0, E.u)(D.YYv)), eC ? (ec || (0, y.tV)(!0, "favorites_button_onboarding"), e && (0, o.mMO)(async () => {
+            e && ((0, y.mv)("intro_dc"), (0, E.u)(D.YYv)), eC ? (ec || (0, v.tV)(!0, "favorites_button_onboarding"), e && (0, o.mMO)(async () => {
                 let {
                     default: e
                 } = await n.e("59839").then(n.bind(n, 889186));
@@ -137,7 +137,7 @@ function F(e) {
         }
     }, [ei, el]), (0, i.jsxs)(m.c, {
         children: [(0, i.jsx)(_.A, {
-            selected: eg,
+            selected: ep,
             hovered: er,
             unread: ef && !eu,
             className: B.I
@@ -152,14 +152,14 @@ function F(e) {
                         ...en,
                         ariaLabel: w.intl.formatToPlainString(w.t["/uzRss"], {
                             guildName: w.intl.string(w.t.wMWyci),
-                            mentions: ep
+                            mentions: eg
                         }),
-                        "aria-selected": eg,
+                        "aria-selected": ep,
                         to: {
                             pathname: D.BVt.CHANNEL(D.YYv, eA),
                             state: H
                         },
-                        selected: eg || er,
+                        selected: ep || er,
                         onClick: () => {
                             ee && eT(!1)
                         },

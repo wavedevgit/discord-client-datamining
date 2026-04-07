@@ -1,6 +1,6 @@
 /** chunk id: 55294 params = (module,exports,require) **/
 n.d(t, {
-    A: () => p,
+    A: () => g,
     N: () => x
 });
 var i = n(64700),
@@ -16,16 +16,16 @@ var i = n(64700),
     A = n(522602),
     _ = n(393309),
     m = n(381941),
-    g = n(985018);
+    p = n(985018);
 
-function p(e) {
+function g(e) {
     let {
         parentChannel: t,
         parentMessageId: n,
         threadSettings: l,
         privateThreadMode: d,
         location: c,
-        onThreadCreated: p,
+        onThreadCreated: g,
         useDefaultThreadName: f
     } = e, x = i.useCallback((e, t, n, i) => {
         a.A.sendMessage(e.id, u.Ay.parse(e, n), void 0, {
@@ -35,8 +35,8 @@ function p(e) {
             attachmentsToUpload: t,
             onAttachmentUploadError: (i, l, a, d) => {
                 (0, o.openUploadError)({
-                    title: g.intl.string(g.t.B3vFdU),
-                    help: d?.message ?? g.intl.string(g.t.zMEjJg)
+                    title: p.intl.string(p.t.B3vFdU),
+                    help: d?.message ?? p.intl.string(p.t.zMEjJg)
                 }), "" !== n && "" === h.A.getDraft(e.id, h.C.FirstThreadMessage) && s.A.saveDraft(e.id, n, h.C.FirstThreadMessage), 0 === A.A.getUploadCount(e.id, h.C.FirstThreadMessage) && r.A.setUploads({
                     channelId: e.id,
                     uploads: t,
@@ -51,7 +51,7 @@ function p(e) {
         threadSettings: l,
         privateThreadMode: d,
         location: c,
-        onThreadCreated: p,
+        onThreadCreated: g,
         useDefaultThreadName: f,
         uploadHandler: x
     })

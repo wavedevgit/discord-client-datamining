@@ -1,86 +1,86 @@
 /** chunk id: 530804 params = (module,exports,require) **/
-i.d(e, {
+n.d(e, {
     $n: () => f,
-    uy: () => S,
+    uy: () => T,
     vp: () => E
-}), i(321073);
-var n = i(64700),
-    l = i(735438),
-    r = i(311907),
-    s = i(568598),
-    a = i(313961),
-    o = i(288737),
-    d = i(961350),
-    u = i(734057),
-    c = i(696451),
-    p = i(584569),
-    m = i(383501),
-    A = i(287809),
-    h = i(977997),
-    g = i(403362);
+}), n(321073);
+var i = n(64700),
+    l = n(735438),
+    r = n(311907),
+    s = n(568598),
+    a = n(313961),
+    o = n(288737),
+    u = n(961350),
+    d = n(734057),
+    c = n(696451),
+    h = n(584569),
+    A = n(383501),
+    m = n(287809),
+    p = n(977997),
+    g = n(403362);
 
 function f(t, e) {
-    let i = (0, r.bG)([p.A, m.A], () => t === m.A.getChannelId() ? p.A.getDesyncedVoiceStates() : null),
+    let n = (0, r.bG)([h.A, A.A], () => t === A.A.getChannelId() ? h.A.getDesyncedVoiceStates() : null),
         s = (0, r.yK)([a.A], () => null == t ? [] : [...a.A.getGuildRingingUsers(t)]),
-        d = (0, r.yK)([A.default], () => s.map(t => A.default.getUser(t)).filter(g.Vq)),
-        h = (0, r.bG)([u.A], () => u.A.getBasicChannel(t)),
-        f = n.useMemo(() => d.map(t => ({
+        u = (0, r.yK)([m.default], () => s.map(t => m.default.getUser(t)).filter(g.Vq)),
+        p = (0, r.bG)([d.A], () => d.A.getBasicChannel(t)),
+        f = i.useMemo(() => u.map(t => ({
             voiceState: new o.A(t.id),
             user: t,
-            member: h?.guild_id != null ? c.Ay.getMember(h?.guild_id, t.id) : null,
+            member: p?.guild_id != null ? c.Ay.getMember(p?.guild_id, t.id) : null,
             nick: t.globalName,
             comparator: t.globalName,
             _isPlaceholder: !1
-        })), [d, h?.guild_id]);
-    return n.useMemo(() => (function(t, e, i) {
-        if ((null == t || 0 === t.length) && 0 === i.length) return e;
-        let n = [],
+        })), [u, p?.guild_id]);
+    return i.useMemo(() => (function(t, e, n) {
+        if ((null == t || 0 === t.length) && 0 === n.length) return e;
+        let i = [],
             r = new Set;
-        for (let t of e) n.push(t), r.add(t.user.id);
+        for (let t of e) i.push(t), r.add(t.user.id);
         return t?.forEach(t => {
-            n.splice((0, l.sortedIndexBy)(n, t, t => {
+            i.splice((0, l.sortedIndexBy)(i, t, t => {
                 let {
                     comparator: e
                 } = t;
                 return e
             }), 0, t)
-        }), i.length > 0 && i.forEach(t => {
-            r.has(t.user.id) || n.splice((0, l.sortedIndexBy)(n, t, t => {
+        }), n.length > 0 && n.forEach(t => {
+            r.has(t.user.id) || i.splice((0, l.sortedIndexBy)(i, t, t => {
                 let {
                     comparator: e
                 } = t;
                 return e
             }), 0, t)
-        }), n
-    })(i, e, f), [i, e, f])
+        }), i
+    })(n, e, f), [n, e, f])
 }
 
 function E(t, e) {
-    let i = (0, r.bG)([p.A, m.A], () => t === m.A.getChannelId() ? p.A.getDesyncedParticipants() : null);
-    return n.useMemo(() => (function(t, e) {
+    let n = (0, r.bG)([h.A, A.A], () => t === A.A.getChannelId() ? h.A.getDesyncedParticipants() : null);
+    return i.useMemo(() => (function(t, e) {
         if (null == t || 0 === t.length) return e;
-        let i = [...e];
+        let n = [...e];
         return t.forEach(t => {
-            i.splice((0, l.sortedIndexBy)(i, t, t => (0, s.KU)(t)), 0, t)
-        }), i
-    })(i, e), [i, e])
+            n.splice((0, l.sortedIndexBy)(n, t, t => (0, s.KU)(t)), 0, t)
+        }), n
+    })(n, e), [n, e])
 }
 
-function S(t, e) {
-    let i = (0, r.bG)([d.default], () => d.default.getId() === e),
-        l = (0, r.bG)([m.A], () => m.A.getChannelId()),
-        s = n.useRef(null),
-        [a, o] = n.useState(!1),
-        [u, c] = n.useState(!1),
-        p = (0, r.bG)([m.A, h.A], () => null != e && null != t && m.A.getChannelId() === t && null != h.A.isInChannel(t, e) && m.A.isUserConnected(e)),
-        A = (0, r.bG)([m.A, h.A], () => null != e && null != t && m.A.getChannelId() === t && null != h.A.isInChannel(t, e) && !m.A.isUserConnected(e));
-    return n.useEffect(() => {
-        p && c(!0)
-    }, [p]), n.useEffect(() => {
+function T(t, e) {
+    let n = (0, r.bG)([u.default], () => u.default.getId() === e),
+        l = (0, r.bG)([A.A], () => A.A.getChannelId()),
+        s = i.useRef(null),
+        [a, o] = i.useState(!1),
+        [d, c] = i.useState(!1),
+        h = (0, r.bG)([A.A, p.A], () => null != e && null != t && A.A.getChannelId() === t && null != p.A.isInChannel(t, e) && A.A.isUserConnected(e)),
+        m = (0, r.bG)([A.A, p.A], () => null != e && null != t && A.A.getChannelId() === t && null != p.A.isInChannel(t, e) && !A.A.isUserConnected(e));
+    return i.useEffect(() => {
+        h && c(!0)
+    }, [h]), i.useEffect(() => {
         l !== t && c(!1)
-    }, [t, l]), n.useEffect(() => (A && null == s.current ? s.current = setTimeout(() => {
+    }, [t, l]), i.useEffect(() => (m && null == s.current ? s.current = setTimeout(() => {
         s.current = null, o(!0)
     }, 250) : (clearTimeout(s.current), s.current = null, o(!1)), () => {
         clearTimeout(s.current), s.current = null
-    }), [A]), !i && u && a
+    }), [m]), !n && d && a
 }

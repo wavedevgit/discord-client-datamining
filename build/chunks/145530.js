@@ -1,6 +1,6 @@
 /** chunk id: 145530 params = (module,exports,require) **/
 n.d(t, {
-    A: () => y
+    A: () => v
 }), n(938796);
 var i = n(627968),
     l = n(64700),
@@ -15,8 +15,8 @@ var i = n(627968),
     A = n(47167),
     _ = n(12351),
     m = n(386467),
-    g = n(928658),
-    p = n(226698),
+    p = n(928658),
+    g = n(226698),
     f = n(994500),
     x = n(287809),
     E = n(628691),
@@ -42,10 +42,10 @@ class b extends l.PureComponent {
             moderatorReportChannelId: s,
             isFlagResolved: a
         } = l ?? {};
-        e ? (0, g.V2)(i, "message_delete_alert", () => h.A.deleteMessage(n.id, i.id).then(() => {
-            null != s && (t && !a && p.A.resolveFlag(s), this.props.onClose?.())
+        e ? (0, p.V2)(i, "message_delete_alert", () => h.A.deleteMessage(n.id, i.id).then(() => {
+            null != s && (t && !a && g.A.resolveFlag(s), this.props.onClose?.())
         })) : h.A.deleteMessage(n.id, i.id).then(() => {
-            null != s && (t && !a && p.A.resolveFlag(s), this.props.onClose?.())
+            null != s && (t && !a && g.A.resolveFlag(s), this.props.onClose?.())
         })
     };
     handleDeleteMana = () => {
@@ -85,8 +85,8 @@ class b extends l.PureComponent {
                 onChange: this.handleToggleReport
             })
         }));
-        let g = A ? N.intl.string(N.t["2kHABX"]) : N.intl.string(N.t.AMvpS4),
-            p = (0, i.jsxs)(i.Fragment, {
+        let p = A ? N.intl.string(N.t["2kHABX"]) : N.intl.string(N.t.AMvpS4),
+            g = (0, i.jsxs)(i.Fragment, {
                 children: [(0, i.jsx)("div", {
                     className: S.iU,
                     children: (0, i.jsx)(I.A, {
@@ -104,7 +104,7 @@ class b extends l.PureComponent {
                 value: s.guild_id,
                 children: (0, i.jsx)(o.Modal, {
                     title: N.intl.string(N.t.MWMcg7),
-                    subtitle: g,
+                    subtitle: p,
                     actions: [{
                         variant: "critical-primary",
                         text: N.intl.string(N.t.oyYWHE),
@@ -116,7 +116,7 @@ class b extends l.PureComponent {
                         onChange: e => this.handleToggleResolveFlag(e)
                     }),
                     ...h,
-                    children: p
+                    children: g
                 })
             })
         }
@@ -124,7 +124,7 @@ class b extends l.PureComponent {
             value: s.guild_id,
             children: (0, i.jsx)(o.Modal, {
                 title: A ? N.intl.string(N.t.aIz1oV) : N.intl.string(N.t.MWMcg7),
-                subtitle: g,
+                subtitle: p,
                 actions: [{
                     text: N.intl.string(N.t["ETE/oC"]),
                     onClick: h.onClose,
@@ -136,12 +136,12 @@ class b extends l.PureComponent {
                 }],
                 onClose: h.onClose,
                 transitionState: h.transitionState,
-                children: p
+                children: g
             })
         })
     }
 }
-let y = {
+let v = {
     confirmPin: function(e, t) {
         let n, l = (0, A.m1)(e, x.default, f.A);
         n = e.isPrivate() ? N.intl.string(N.t.hMRngA) : N.intl.formatToPlainString(N.t["3IRluI"], {

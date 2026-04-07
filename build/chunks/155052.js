@@ -19,20 +19,20 @@ function f(e) {
     return e.widget.id
 }
 
-function g(e, t, n, a) {
+function p(e, t, n, a) {
     return n === l.wLy.YEETED ? null : (0, i.jsx)(u.A, {
         ...t,
         transitionState: n,
         cleanUp: a
     }, e)
 }
-let p = [],
+let g = [],
     A = a.memo(function(e) {
         let {
             className: t
         } = e, n = (0, h.A)(), u = (0, r.bG)([o.A], () => o.A.windowSize((0, d.Q2)(n))), A = (0, r.bG)([s.A], () => {
             let e = s.A.getLayout(m.G);
-            if (null == e) return p;
+            if (null == e) return g;
             let t = [];
             for (let n of e.widgets) {
                 let e = s.A.getWidget(n);
@@ -44,15 +44,15 @@ let p = [],
                 })
             }
             return t
-        }, [], c.VC), E = a.useCallback(e => (0, i.jsx)("div", {
+        }, [], c.VC), x = a.useCallback(e => (0, i.jsx)("div", {
             className: t,
             style: u,
             children: e
         }), [t, u]);
         return (0, i.jsx)(l.Fai, {
             items: A,
-            renderItem: g,
+            renderItem: p,
             getItemKey: f,
-            wrapChildren: E
+            wrapChildren: x
         })
     })

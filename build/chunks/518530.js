@@ -15,8 +15,8 @@ var i = n(627968),
     A = n(58736),
     _ = n(31717),
     m = n(203982),
-    g = n(43189),
-    p = n(652215),
+    p = n(43189),
+    g = n(652215),
     f = n(49999),
     x = n(985018),
     E = n(200393);
@@ -32,7 +32,7 @@ let I = function(e) {
         })
     }, []);
     let C = l.useCallback(() => {
-            r.A.updateChatOpen(t.id, !1, "close button"), m._.safeDispatch(p.jej.FOCUS_CHAT_BUTTON)
+            r.A.updateChatOpen(t.id, !1, "close button"), m._.safeDispatch(g.jej.FOCUS_CHAT_BUTTON)
         }, [t.id]),
         N = (0, i.jsx)(A.Ay.Icon, {
             icon: a.PGe,
@@ -42,7 +42,7 @@ let I = function(e) {
     return (0, i.jsxs)(c.A, {
         sidebarType: c.X.CallChatSidebar,
         maxWidth: I,
-        floatingLayer: g.Ay,
+        floatingLayer: p.Ay,
         children: [(0, i.jsx)(o.A, {
             channel: t,
             draftType: _.C.ChannelMessage

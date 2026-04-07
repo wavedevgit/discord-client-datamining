@@ -15,8 +15,8 @@ var i = n(627968),
     A = n(263063),
     _ = n(71393),
     m = n(985018),
-    g = n(609632);
-let p = {
+    p = n(609632);
+let g = {
     top: 8,
     bottom: 8,
     left: -4,
@@ -29,9 +29,9 @@ function f(e) {
         children: n
     } = e;
     return (0, i.jsx)(r.vN3, {
-        offset: p,
+        offset: g,
         children: (0, i.jsxs)("div", {
-            className: g.ZO,
+            className: p.ZO,
             "data-recents-channel": t.id,
             children: [(0, i.jsx)(x, {
                 channel: t
@@ -49,7 +49,7 @@ function x(e) {
         channel: t
     } = e, n = (0, o.bG)([_.A], () => _.A.getGuild(t.guild_id));
     return null != n ? (0, i.jsx)(A.Ay, {
-        className: g.Kk,
+        className: p.Kk,
         guild: n,
         size: A.Ay.Sizes.SMALLER,
         "aria-hidden": !0
@@ -58,7 +58,7 @@ function x(e) {
         size: d._3J.SIZE_24,
         "aria-hidden": !0
     }) : (0, i.jsx)("div", {
-        className: s()(g.Kk, g.ro),
+        className: s()(p.Kk, p.ro),
         children: (0, i.jsx)(a.ChatIcon, {
             size: "xxs"
         })
@@ -72,9 +72,9 @@ function E(e) {
         username: l
     }) : l;
     return (0, i.jsxs)("div", {
-        className: g.yP,
+        className: p.yP,
         children: [a ? null : (0, i.jsx)(s, {
-            className: g.j1,
+            className: p.j1,
             size: "xxs"
         }), (0, i.jsx)(d.Heading, {
             variant: "text-md/semibold",

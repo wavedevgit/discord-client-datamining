@@ -72,12 +72,12 @@ function S(e) {
         e.length > 0 && (p(), (0, y.S_)(e, u ?? null, "modal")), l()
     }, [R, p, l, u, f]), O = s.useMemo(() => {
         let e = [];
-        for (let t of T) t.type !== c.rD.HEADER && null != N(t) && e.push(t);
+        for (let t of T) t.type !== c.rD.HEADER && null != I(t) && e.push(t);
         return e
     }, [T]), z = s.useMemo(() => 0 === O.length ? {
         sections: [1],
         sectionHeight: 0,
-        renderRow: () => (0, n.jsx)(I, {}),
+        renderRow: () => (0, n.jsx)(N, {}),
         rowHeight: 72
     } : {
         sections: [O.length],
@@ -91,7 +91,7 @@ function S(e) {
             if (t > 0) return null;
             let s = O[l];
             if (null == s) return null;
-            let r = N(s);
+            let r = I(s);
             return null == r ? null : (0, n.jsx)(E, {
                 channel: r,
                 selected: f.has(r.id),
@@ -128,7 +128,7 @@ function S(e) {
     })
 }
 
-function I() {
+function N() {
     return (0, n.jsx)("div", {
         className: M.p,
         children: (0, n.jsx)(a.Text, {
@@ -139,7 +139,7 @@ function I() {
     })
 }
 
-function N(e) {
+function I(e) {
     if (e.type === c.rD.USER) {
         let t = (0, g._g)({
             type: "user",

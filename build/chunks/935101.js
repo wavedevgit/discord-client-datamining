@@ -1,6 +1,6 @@
 /** chunk id: 935101 params = (module,exports,require) **/
 n.d(t, {
-    A: () => g
+    A: () => f
 });
 var a = n(64700),
     r = n(311907),
@@ -15,18 +15,18 @@ var a = n(64700),
 let p = 3 * u.A.Millis.SECOND,
     A = +u.A.Millis.DAY;
 
-function g() {
+function f() {
     let {
         showPTTSpeakingIndicator: e
     } = c.A.useConfig({
         location: "useSpeakingWhilePTT"
-    }), [t, n] = a.useState(!1), u = (0, r.bG)([o.Ay], () => o.Ay.getMode() === d.TB.PUSH_TO_TALK), g = (0, r.bG)([s.A], () => s.A.getRTCConnectionId()), f = (0, r.bG)([o.Ay], () => {
+    }), [t, n] = a.useState(!1), u = (0, r.bG)([o.Ay], () => o.Ay.getMode() === d.TB.PUSH_TO_TALK), f = (0, r.bG)([s.A], () => s.A.getRTCConnectionId()), g = (0, r.bG)([o.Ay], () => {
         let e = o.Ay.getModeOptions().updatedAt;
         return null != e && Date.now() - e < A
     }), m = a.useRef(new l.Ep);
     return a.useEffect(() => {
         n(!1)
-    }, [g]), a.useEffect(() => {
+    }, [f]), a.useEffect(() => {
         let t = 0,
             a = m.current;
 
@@ -37,8 +37,8 @@ function g() {
                 n(!1)
             })) : t = 0
         }
-        return f && e && u && null != g && o.Ay.getMediaEngine().on(i.bg.VoiceActivity, r), () => {
+        return g && e && u && null != f && o.Ay.getMediaEngine().on(i.bg.VoiceActivity, r), () => {
             o.Ay.getMediaEngine().removeListener(i.bg.VoiceActivity, r), a.stop()
         }
-    }, [e, u, f, g]), t
+    }, [e, u, g, f]), t
 }

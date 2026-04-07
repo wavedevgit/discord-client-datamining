@@ -1,7 +1,7 @@
 /** chunk id: 121914 params = (module,exports,require) **/
 n.d(t, {
-    _: () => O,
-    g: () => j
+    _: () => j,
+    g: () => O
 });
 var i, a = n(627968),
     r = n(64700),
@@ -15,33 +15,33 @@ var i, a = n(627968),
     h = n(941971),
     m = n(734057),
     f = n(71393),
-    g = n(222823),
-    p = n(994500),
+    p = n(222823),
+    g = n(994500),
     A = n(485296),
-    E = n(741961),
+    x = n(741961),
     I = n(287809),
-    x = n(1193),
+    E = n(1193),
     b = n(145567),
     v = n(922611),
     S = n(651813),
     C = n(919843),
-    T = n(534765),
-    y = n(256688),
+    y = n(534765),
+    T = n(256688),
     N = n(652215),
     w = n(985018),
     L = n(129839),
-    O = ((i = {}).DEFAULT = "DEFAULT", i.CHANNEL_TYPE = "CHANNEL_TYPE", i);
-let j = r.memo(function(e) {
+    j = ((i = {}).DEFAULT = "DEFAULT", i.CHANNEL_TYPE = "CHANNEL_TYPE", i);
+let O = r.memo(function(e) {
     let {
         channelId: t,
         selectedVoiceChannelId: n,
         iconVariant: i = "DEFAULT"
-    } = e, l = null != n && t === n, O = (0, o.bG)([x.A], () => x.A.getSelectedChannelId() === t, [t]), j = (0, o.bG)([x.A], () => x.A.getVoiceChatMinimized()), P = (0, c.rdh)(c.LU0.colors.ICON_STATUS_ONLINE), R = (0, o.bG)([A.A], () => !!l && !!(A.A.isAnyoneElseSpeaking() || A.A.isCurrentUserSpeaking()), [l]), [D, M] = r.useState(!1), {
-        mentionCount: k,
+    } = e, l = null != n && t === n, j = (0, o.bG)([E.A], () => E.A.getSelectedChannelId() === t, [t]), O = (0, o.bG)([E.A], () => E.A.getVoiceChatMinimized()), P = (0, c.rdh)(c.LU0.colors.ICON_STATUS_ONLINE), R = (0, o.bG)([A.A], () => !!l && !!(A.A.isAnyoneElseSpeaking() || A.A.isCurrentUserSpeaking()), [l]), [D, k] = r.useState(!1), {
+        mentionCount: M,
         isMentionLowImportance: G
-    } = (0, o.cf)([g.Ay], () => null != t ? {
-        mentionCount: g.Ay.getMentionCount(t),
-        isMentionLowImportance: g.Ay.getIsMentionLowImportance(t)
+    } = (0, o.cf)([p.Ay], () => null != t ? {
+        mentionCount: p.Ay.getMentionCount(t),
+        isMentionLowImportance: p.Ay.getIsMentionLowImportance(t)
     } : {
         mentionCount: 0,
         isMentionLowImportance: !1
@@ -50,7 +50,7 @@ let j = r.memo(function(e) {
         user: U,
         guild: V,
         channel: F
-    } = (0, o.cf)([m.A, f.A, I.default, p.A], () => {
+    } = (0, o.cf)([m.A, f.A, I.default, g.A], () => {
         let e = m.A.getChannel(t) ?? null;
         if (null == e) return {
             label: w.intl.string(w.t.zLZPmk),
@@ -58,7 +58,7 @@ let j = r.memo(function(e) {
             guild: null,
             channel: null
         };
-        let n = (0, u.m1)(e, I.default, p.A);
+        let n = (0, u.m1)(e, I.default, g.A);
         return {
             label: n,
             user: (0, S.j)(e, I.default),
@@ -69,17 +69,17 @@ let j = r.memo(function(e) {
     r.useEffect(() => {
         null == F && (0, C.b)(t)
     }, [F, t]);
-    let W = (0, o.bG)([E.A, I.default], () => {
+    let W = (0, o.bG)([x.A, I.default], () => {
             if (null == F) return !1;
             let e = I.default.getCurrentUser()?.id ?? null,
-                t = E.A.getTypingUsers(F.id);
+                t = x.A.getTypingUsers(F.id);
             for (let n in t)
                 if (n !== e) return !0;
             return !1
         }, [F]),
-        H = (0, o.bG)([g.Ay], () => {
+        H = (0, o.bG)([p.Ay], () => {
             let e = F?.id;
-            return null != e && g.Ay.hasUnread(e)
+            return null != e && p.Ay.hasUnread(e)
         }, [F]),
         B = (0, a.jsx)("div", {
             className: L.St,
@@ -88,7 +88,7 @@ let j = r.memo(function(e) {
                 if ("CHANNEL_TYPE" === i && !e) {
                     let e = (0, _.gU)(F, V);
                     e ??= c.oyn;
-                    let t = l && !j && R,
+                    let t = l && !O && R,
                         n = {
                             boxShadow: "none"
                         },
@@ -99,12 +99,12 @@ let j = r.memo(function(e) {
                             opacity: .45
                         });
                     return t && (n.boxShadow = `0 0 0 2px rgba(${i}), 0 0 12px 2px rgba(${r})`), (0, a.jsx)("div", {
-                        className: s()(L.s, O && L.lJ),
+                        className: s()(L.s, j && L.lJ),
                         style: n,
                         children: (0, a.jsx)(e, {
                             className: L.Yc,
                             size: "sm",
-                            color: O ? c.LU0.colors.WHITE : c.LU0.colors.ICON_STATUS_ONLINE
+                            color: j ? c.LU0.colors.WHITE : c.LU0.colors.ICON_STATUS_ONLINE
                         })
                     })
                 }
@@ -112,15 +112,15 @@ let j = r.memo(function(e) {
                     channel: F,
                     user: U,
                     guild: V,
-                    isSelected: O,
+                    isSelected: j,
                     size: v.c.SIZE_40,
                     isTyping: W,
-                    mentionCount: k,
+                    mentionCount: M,
                     isMentionLowImportance: G
                 })
             })()
         }),
-        Y = (0, T.r)({
+        Y = (0, y.r)({
             channel: F,
             guild: V,
             user: U
@@ -157,17 +157,17 @@ let j = r.memo(function(e) {
                         guildId: V?.id ?? null,
                         messageId: null
                     },
-                    source: y.B.MANUAL,
+                    source: T.B.MANUAL,
                     widgetType: N.uss.TEXT_CHAT_V3
                 })
             },
             onContextMenu: Y,
-            onMouseEnter: () => M(!0),
-            onMouseLeave: () => M(!1),
+            onMouseEnter: () => k(!0),
+            onMouseLeave: () => k(!1),
             children: [B, (0, a.jsx)("div", {
                 className: L.vT,
                 children: (0, a.jsx)(h.A, {
-                    selected: O,
+                    selected: j,
                     hovered: D,
                     unread: H
                 })

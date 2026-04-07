@@ -46,9 +46,9 @@ function u(e, t, n) {
         maxHeight: _
     } = n, h = Math.max(1, s), m = e.width > u, f = e.height > _;
     if (!m && !f) return e;
-    let g = d(s, a),
+    let p = d(s, a),
         {
-            verticalRatio: p,
+            verticalRatio: g,
             horizontalRatio: A
         } = c({
             width: e.width,
@@ -58,12 +58,12 @@ function u(e, t, n) {
             tileCount: h,
             isVertical: o
         }),
-        E = e.width - i,
+        x = e.width - i,
         I = e.height - i,
-        x = u - i,
+        E = u - i,
         b = _ - i;
-    return o ? (b -= g, I -= g) : (x -= g, E -= g), m && f && (e.width > e.height ? I = r(E = x, p) : E = l(I = b, A), m = E > x, f = I > b), m && (I = r(E = x, p)), f && (E = l(I = b, A)), o ? I += d(s, a) : E += d(s, a), {
-        width: E + i,
+    return o ? (b -= p, I -= p) : (E -= p, x -= p), m && f && (e.width > e.height ? I = r(x = E, g) : x = l(I = b, A), m = x > E, f = I > b), m && (I = r(x = E, g)), f && (x = l(I = b, A)), o ? I += d(s, a) : x += d(s, a), {
+        width: x + i,
         height: I + i
     }
 }

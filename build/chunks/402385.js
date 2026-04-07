@@ -15,8 +15,8 @@ var i = n(627968),
     A = n(313961),
     _ = n(826673),
     m = n(379848),
-    g = n(753727),
-    p = n(267102),
+    p = n(753727),
+    g = n(267102),
     f = n(222692),
     x = n(442353),
     E = n(470710),
@@ -26,8 +26,8 @@ var i = n(627968),
     T = n(287809),
     S = n(977997),
     b = n(203982),
-    y = n(58736),
-    v = n(652215),
+    v = n(58736),
+    y = n(652215),
     j = n(360469),
     R = n(49999),
     O = n(731854),
@@ -35,10 +35,10 @@ var i = n(627968),
 class M extends l.PureComponent {
     iconRef = l.createRef();
     componentDidMount() {
-        b._.subscribe(v.jej.CALL_START, this.handleVoiceClick)
+        b._.subscribe(y.jej.CALL_START, this.handleVoiceClick)
     }
     componentWillUnmount() {
-        b._.unsubscribe(v.jej.CALL_START, this.handleVoiceClick)
+        b._.unsubscribe(y.jej.CALL_START, this.handleVoiceClick)
     }
     renderVideoCallButton() {
         let e, {
@@ -50,11 +50,11 @@ class M extends l.PureComponent {
             mode: r,
             isProvisional: d
         } = this.props;
-        if (t || n && r === v._Of.VOICE) return null;
+        if (t || n && r === y._Of.VOICE) return null;
         let c = a.isManaged(),
             u = null,
             h = !1;
-        return d ? (h = !0, u = L.intl.string(L.t.izMR7o)) : C.Ay.supports(O.O5.VIDEO) ? s ? (u = L.intl.string(L.t.PHzjvX), h = !0) : n && r === v._Of.VIDEO ? (e = this.handleJoinVideoCall, u = c ? L.intl.string(L.t.S0W8Z5) : L.intl.string(L.t.W68MhH)) : (e = this.handleStartVideoCall, u = c ? L.intl.string(L.t.S0W8Z5) : L.intl.string(L.t.oCqlGG)) : (h = !0, e = this.handleBrowserNotSupported, u = L.intl.string(L.t.UVpg3U)), (0, i.jsx)(y.Ay.Icon, {
+        return d ? (h = !0, u = L.intl.string(L.t.izMR7o)) : C.Ay.supports(O.O5.VIDEO) ? s ? (u = L.intl.string(L.t.PHzjvX), h = !0) : n && r === y._Of.VIDEO ? (e = this.handleJoinVideoCall, u = c ? L.intl.string(L.t.S0W8Z5) : L.intl.string(L.t.W68MhH)) : (e = this.handleStartVideoCall, u = c ? L.intl.string(L.t.S0W8Z5) : L.intl.string(L.t.oCqlGG)) : (h = !0, e = this.handleBrowserNotSupported, u = L.intl.string(L.t.UVpg3U)), (0, i.jsx)(v.Ay.Icon, {
             icon: o.npA,
             onClick: e,
             disabled: h || l,
@@ -75,7 +75,7 @@ class M extends l.PureComponent {
         let h = d.isManaged(),
             A = !1;
         u ? (A = !0, e = L.intl.string(L.t.izMR7o)) : l ? (e = h ? L.intl.string(L.t.LW2Ghr) : L.intl.string(L.t.rF7lN5), A = !0) : s ? (e = L.intl.string(L.t.PHzjvX), A = !0) : e = n ? h ? L.intl.string(L.t.S0W8Z5) : L.intl.string(L.t.fdEeb5) : h ? L.intl.string(L.t.S0W8Z5) : L.intl.string(L.t.focH1t);
-        let _ = (0, i.jsx)(y.Ay.Icon, {
+        let _ = (0, i.jsx)(v.Ay.Icon, {
             ref: this.iconRef,
             icon: o._jp,
             onClick: this.handleVoiceClick,
@@ -152,7 +152,7 @@ class M extends l.PureComponent {
 function D(e) {
     let {
         channel: t
-    } = e, n = (0, g.A)(), l = (0, s.bG)([A.A], () => A.A.getMode(t.id)), r = (0, s.bG)([S.A], () => S.A.isInChannel(t.id)), o = (0, s.bG)([u.A], () => u.A.useReducedMotion), {
+    } = e, n = (0, p.A)(), l = (0, s.bG)([A.A], () => A.A.getMode(t.id)), r = (0, s.bG)([S.A], () => S.A.isInChannel(t.id)), o = (0, s.bG)([u.A], () => u.A.useReducedMotion), {
         callActive: d,
         callUnavailable: c
     } = (0, s.cf)([E.A], () => ({
@@ -162,10 +162,10 @@ function D(e) {
         notFriend: m,
         isBlocked: f
     } = (0, s.cf)([N.A], () => ({
-        notFriend: t.type === v.rbe.DM && null != _ && !N.A.isFriend(_),
-        isBlocked: t.type === v.rbe.DM && null != _ && N.A.isBlocked(_)
-    })), x = (0, s.bG)([T.default], () => T.default.getUser(_)), C = (0, p.Us)(), b = [], y = (0, h.A)(t.id), j = (0, s.bG)([I.A], () => I.A.hasLayers());
-    return (y && !j && b.push(a.M.ACTIVITY_GDM_CALL_TOOLTIP), n || x?.bot) ? null : (0, i.jsx)(M, {
+        notFriend: t.type === y.rbe.DM && null != _ && !N.A.isFriend(_),
+        isBlocked: t.type === y.rbe.DM && null != _ && N.A.isBlocked(_)
+    })), x = (0, s.bG)([T.default], () => T.default.getUser(_)), C = (0, g.Us)(), b = [], v = (0, h.A)(t.id), j = (0, s.bG)([I.A], () => I.A.hasLayers());
+    return (v && !j && b.push(a.M.ACTIVITY_GDM_CALL_TOOLTIP), n || x?.bot) ? null : (0, i.jsx)(M, {
         channel: t,
         mode: l,
         inCall: r,

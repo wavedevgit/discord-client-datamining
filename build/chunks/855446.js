@@ -14,8 +14,8 @@ var i, l = n(627968),
     A = n(881343),
     _ = n(697675),
     m = n(869003),
-    g = n(652215),
-    p = n(985018),
+    p = n(652215),
+    g = n(985018),
     f = n(488893);
 let x = ["embedded_cover"],
     E = {
@@ -46,11 +46,11 @@ function C(e) {
         embeddedActivitiesManager: m.A,
         assetNames: x,
         commandOrigin: C
-    }), [y, v] = s.useState(!1), j = s.useCallback(() => {
-        v(!0)
-    }, [v]), R = s.useCallback(() => {
-        v(!1)
-    }, [v]), O = s.useMemo(() => (0, l.jsx)("div", {
+    }), [v, y] = s.useState(!1), j = s.useCallback(() => {
+        y(!0)
+    }, [y]), R = s.useCallback(() => {
+        y(!1)
+    }, [y]), O = s.useMemo(() => (0, l.jsx)("div", {
         className: f.Gz,
         children: (0, l.jsx)("div", {
             className: f.fC,
@@ -68,7 +68,7 @@ function C(e) {
                         children: (0, l.jsx)(c.Text, {
                             variant: "text-sm/medium",
                             color: "always-white",
-                            children: p.intl.string(p.t.VJlc0S)
+                            children: g.intl.string(g.t.VJlc0S)
                         })
                     })
                 });
@@ -80,7 +80,7 @@ function C(e) {
                         children: (0, l.jsx)(c.Text, {
                             variant: "text-sm/medium",
                             color: "always-white",
-                            children: p.intl.string(p.t["wH/wDO"])
+                            children: g.intl.string(g.t["wH/wDO"])
                         })
                     })
                 });
@@ -102,14 +102,14 @@ function C(e) {
                 value: 0
             },
             to: {
-                value: +!!y
+                value: +!!v
             },
             children: e => {
                 let {
                     value: t
                 } = e;
                 return (0, l.jsx)(c.NPJ, {
-                    theme: g.NJ8.DARK,
+                    theme: p.NJ8.DARK,
                     children: e => (0, l.jsx)(u.A, {
                         applicationId: n.application.id,
                         questContent: d.u.ACTIVITY_SUGGESTION,

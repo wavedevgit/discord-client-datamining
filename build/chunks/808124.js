@@ -15,8 +15,8 @@ var i = n(627968),
     A = n(998740),
     _ = n(732777),
     m = n(709382),
-    g = n(287245),
-    p = n(615658),
+    p = n(287245),
+    g = n(615658),
     f = n(592044),
     x = n(100449),
     E = n(588703),
@@ -38,7 +38,7 @@ let N = e => {
                 N(!0)
             }, 2500)
         }, []);
-        let [y, v] = l.useState(.65), [j, R] = l.useState(.65), [O, L] = l.useState(.65), [M, D] = l.useState({
+        let [v, y] = l.useState(.65), [j, R] = l.useState(.65), [O, L] = l.useState(.65), [M, D] = l.useState({
             x: 0,
             y: 0
         }), [U, G] = l.useState(!1), [P, k] = l.useState(0), [w, B] = l.useState({
@@ -47,7 +47,7 @@ let N = e => {
         }), [V, H] = l.useState({
             x: 0,
             y: 0
-        }), [F, K] = l.useState(!1), W = l.useRef(null), [Y, z] = l.useState(null), q = (0, c.w)(e => {
+        }), [F, W] = l.useState(!1), K = l.useRef(null), [Y, z] = l.useState(null), q = (0, c.w)(e => {
             let {
                 contentRect: t,
                 target: n
@@ -57,15 +57,15 @@ let N = e => {
                 y: s / 2 + i.y
             });
             let c = Math.max(a, r);
-            if (v(Math.max(o, d)), L(c), null != W.current) {
-                let e = W.current.getBoundingClientRect();
+            if (y(Math.max(o, d)), L(c), null != K.current) {
+                let e = K.current.getBoundingClientRect();
                 z({
                     x: e.left - i.left,
                     y: e.top - i.top
                 })
             }
         }), X = l.useCallback(e => {
-            let t = Math.max(e, y),
+            let t = Math.max(e, v),
                 n = q.current?.getBoundingClientRect();
             if (null == n) return;
             let i = {
@@ -84,11 +84,11 @@ let N = e => {
                 x: d,
                 y: c
             })
-        }, [q, y]);
+        }, [q, v]);
         l.useEffect(() => {
             X(O)
         }, [O, X]);
-        let J = l.useCallback(e => {
+        let $ = l.useCallback(e => {
             let t = q.current?.getBoundingClientRect();
             if (null == t) return;
             let n = t.height / j,
@@ -128,7 +128,7 @@ let N = e => {
                     }
                 },
                 onMouseMove: e => {
-                    !1 !== U && (k(P + Math.abs(e.movementX) + Math.abs(e.movementY)), J({
+                    !1 !== U && (k(P + Math.abs(e.movementX) + Math.abs(e.movementY)), $({
                         x: M.x + e.movementX,
                         y: M.y + e.movementY
                     })), H({
@@ -157,14 +157,14 @@ let N = e => {
                             [C.R]: n
                         }),
                         children: [(0, i.jsx)("div", {
-                            ref: W,
+                            ref: K,
                             children: (0, i.jsx)(o.K0, {
                                 variant: "icon-only",
                                 "aria-label": I.intl.string(E.default.W7TAH4),
                                 icon: o.T7G,
                                 disabled: n,
                                 onClick: e => {
-                                    e.preventDefault(), e.stopPropagation(), K(!F)
+                                    e.preventDefault(), e.stopPropagation(), W(!F)
                                 }
                             })
                         }), (0, i.jsx)(o.K0, {
@@ -176,7 +176,7 @@ let N = e => {
                                 e.preventDefault(), e.stopPropagation(), b(!S)
                             }
                         })]
-                    }), (0, i.jsx)(g.A, {
+                    }), (0, i.jsx)(p.A, {
                         channel: t,
                         idle: n,
                         showChat: S ?? !1
@@ -207,13 +207,13 @@ let N = e => {
                     participants: r
                 }), (0, i.jsx)(f.A, {
                     open: F,
-                    close: () => K(!1),
-                    triggerRef: W,
+                    close: () => W(!1),
+                    triggerRef: K,
                     style: null != Y ? {
                         left: Y.x,
                         top: Y.y
                     } : void 0
-                }), (0, i.jsx)(p.A, {}), (0, i.jsx)("div", {
+                }), (0, i.jsx)(g.A, {}), (0, i.jsx)("div", {
                     className: a()(C.Lw, {
                         [C.FD]: A
                     }),

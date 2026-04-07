@@ -15,8 +15,8 @@ var i = n(627968),
     A = n(846293),
     _ = n(774300),
     m = n(566903),
-    g = n(714114),
-    p = n(864436),
+    p = n(714114),
+    g = n(864436),
     f = n(835072),
     x = n(793574),
     E = n(688810),
@@ -26,8 +26,8 @@ var i = n(627968),
     T = n(854627),
     S = n(10862),
     b = n(164891),
-    y = n(135635),
-    v = n(696451),
+    v = n(135635),
+    y = n(696451),
     j = n(71393),
     R = n(958590),
     O = n(576705),
@@ -55,7 +55,7 @@ function V(e) {
         guildId: t.guild_id,
         location: "VoiceInviteSuggestionsPopover"
     }), {
-        analyticsLocations: g
+        analyticsLocations: p
     } = (0, E.Ay)(x.A.VOICE_INVITE_SUGGESTIONS_POPOVER);
     (0, I.A)({
         name: d.ImpressionNames.VOICE_INVITE_SUGGESTIONS_POPOVER,
@@ -63,14 +63,14 @@ function V(e) {
         properties: {
             voice_channel_id: t.id,
             voice_guild_id: t.guild_id,
-            location_stack: g
+            location_stack: p
         }
     }), l.useEffect(() => {
         r?.(u.current)
     }, [r]), l.useEffect(() => {
         s?.(A.isHoveringOrFocusing)
     }, [s, A]);
-    let p = l.useCallback(() => {
+    let g = l.useCallback(() => {
         let e = j.A.getGuild(t.guild_id);
         o()(null != e, "VoiceInviteSuggestionsPopover must be used in context of a guild"), (0, h.mMO)(async () => {
             let {
@@ -103,7 +103,7 @@ function V(e) {
                     ringingEnabled: m
                 }, e.id)), (0, i.jsxs)(h.DUT, {
                     tag: "li",
-                    onClick: p,
+                    onClick: g,
                     className: a()(P.nM, P.vk),
                     children: [(0, i.jsx)("div", {
                         className: P.R4,
@@ -128,7 +128,7 @@ function H(e) {
         channel: t,
         user: n,
         ringingEnabled: s
-    } = e, r = t.guild_id, o = l.useRef(null), d = (0, c.bG)([v.Ay], () => v.Ay.getMember(r, n.id), [r, n.id]), {
+    } = e, r = t.guild_id, o = l.useRef(null), d = (0, c.bG)([y.Ay], () => y.Ay.getMember(r, n.id), [r, n.id]), {
         isHoveringOrFocusing: x
     } = (0, N.A)(o), [E, I] = l.useState(null), {
         icon: b,
@@ -137,14 +137,14 @@ function H(e) {
         disabled: k,
         shouldHideButton: V,
         onClick: H
-    } = (0, y.A)({
+    } = (0, v.A)({
         user: n,
         channel: t,
         location: B
     }), {
         status: F,
-        isMobileOnline: K,
-        activities: W
+        isMobileOnline: W,
+        activities: K
     } = (0, c.cf)([L.A], () => ({
         status: L.A.getStatus(n.id, r),
         isMobileOnline: L.A.isMobileOnline(n.id),
@@ -153,16 +153,16 @@ function H(e) {
         activityStatusText: Y,
         activityStatusIcon: z
     } = l.useMemo(() => {
-        let e = W.find(e => e.type !== U.$pd.CUSTOM_STATUS && e.type !== U.$pd.HANG_STATUS);
+        let e = K.find(e => e.type !== U.$pd.CUSTOM_STATUS && e.type !== U.$pd.HANG_STATUS);
         return {
             activityStatusText: (0, m.A)(e, !1),
             activityStatusIcon: null == e ? void 0 : (0, f.f)(e)
         }
-    }, [W]), {
+    }, [K]), {
         voiceChannel: q
-    } = (0, g.A)({
+    } = (0, p.A)({
         userId: n.id
-    }), X = (0, C.Ay)(q), J = (0, h.S31)(h.clD.ONLINE), Q = "success" === E || "sending" === E, $ = l.useCallback(e => {
+    }), X = (0, C.Ay)(q), $ = (0, h.S31)(h.clD.ONLINE), Q = "success" === E || "sending" === E, J = l.useCallback(e => {
         e.stopPropagation(), k || H()
     }, [H, k]), Z = l.useCallback(async () => {
         if (Q) return;
@@ -224,7 +224,7 @@ function H(e) {
             src: et,
             avatarDecoration: ee,
             status: es,
-            isMobile: K,
+            isMobile: W,
             ...en
         }), (0, i.jsxs)("div", {
             className: P.VW,
@@ -237,10 +237,10 @@ function H(e) {
                 className: P.J2,
                 children: [er ? (0, i.jsx)(S.A, {
                     size: "custom",
-                    color: J,
+                    color: $,
                     channel: q,
                     className: P.RI
-                }) : null != z ? (0, i.jsx)(p.A, {
+                }) : null != z ? (0, i.jsx)(g.A, {
                     icon: z,
                     className: P.RI
                 }) : null, (0, i.jsx)(h.Text, {
@@ -275,7 +275,7 @@ function H(e) {
                 className: a()(P.D9, w.button, w.secondary, {
                     [P.r9]: k
                 }),
-                onClick: $,
+                onClick: J,
                 "aria-disabled": k,
                 children: (0, i.jsx)(b, {
                     size: "xxs",

@@ -1,25 +1,25 @@
 /** chunk id: 54570 params = (module,exports,require) **/
 n.d(e, {
-    AU: () => r,
-    kC: () => l,
-    kP: () => a,
-    pr: () => s,
+    AU: () => l,
+    kC: () => s,
+    kP: () => r,
+    pr: () => a,
     zU: () => o
 });
 var i = n(73153);
 
-function r(t, e, n, r, a) {
+function l(t, e, n, l, r) {
     i.h.dispatch({
         type: "SPEAK_TEXT",
         text: t,
         interrupt: e,
         maxLength: n,
-        onStart: r,
-        onEnd: a
+        onStart: l,
+        onEnd: r
     })
 }
 
-function a(t, e) {
+function r(t, e) {
     i.h.dispatch({
         type: "SPEAK_MESSAGE",
         channel: t,
@@ -27,7 +27,7 @@ function a(t, e) {
     })
 }
 
-function l(t, e) {
+function s(t, e) {
     i.h.dispatch({
         type: "SPEAKING_MESSAGE",
         channelId: t,
@@ -35,7 +35,7 @@ function l(t, e) {
     })
 }
 
-function s() {
+function a() {
     i.h.dispatch({
         type: "STOP_SPEAKING"
     })

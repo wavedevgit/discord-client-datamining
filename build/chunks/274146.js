@@ -15,8 +15,8 @@ var i = n(627968),
     A = n(519480),
     _ = n(352123),
     m = n(372536),
-    g = n(268965),
-    p = n(667369),
+    p = n(268965),
+    g = n(667369),
     f = n(647026),
     x = n(946116),
     E = n(652215),
@@ -30,8 +30,8 @@ let N = e => {
         currentCategoryId: T,
         directoryEntries: S,
         categoryCounts: b,
-        allEntriesCount: y,
-        isLoading: v
+        allEntriesCount: v,
+        isLoading: y
     } = (0, s.cf)([A.A], () => {
         let e = A.A.getCurrentCategoryId(t.id),
             n = A.A.getDirectoryEntries(t.id, e === x.mU.ALL ? null : e),
@@ -53,7 +53,7 @@ let N = e => {
             }, !0, !0, e)
         })
     }, [t.id]);
-    let j = l.useMemo(() => null != S ? (0, p._)(Object.values(S), T) : null, [S, T]),
+    let j = l.useMemo(() => null != S ? (0, g._)(Object.values(S), T) : null, [S, T]),
         {
             mostRecentQuery: R,
             searchFetching: O,
@@ -133,7 +133,7 @@ let N = e => {
             guild: N,
             onAddGuild: w
         })
-    }) : (0, i.jsx)(g.A, {
+    }) : (0, i.jsx)(p.A, {
         channel: t,
         searchQuery: M,
         setSearchQuery: D,
@@ -146,7 +146,7 @@ let N = e => {
         },
         directoryEntries: j,
         categoryCounts: b,
-        allEntriesCount: y,
-        isLoading: v
+        allEntriesCount: v,
+        isLoading: y
     })
 }

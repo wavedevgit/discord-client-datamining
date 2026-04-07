@@ -15,8 +15,8 @@ var i = n(627968),
     A = n(927630),
     _ = n(120017),
     m = n(779271),
-    g = n(763793),
-    p = n(985018),
+    p = n(763793),
+    g = n(985018),
     f = n(516950);
 
 function x(e) {
@@ -39,8 +39,8 @@ let E = (0, a.A)(e => {
             chatOpen: r.A.getChatOpen(a.id)
         }), [a.id]),
         b = (0, d.uy)(a.id),
-        y = (0, d.zy)(a.id, c.ip.AUDIENCE),
-        v = (0, s.bG)([o.A], () => null != N ? o.A.getParticipant(a.id, N) : null),
+        v = (0, d.zy)(a.id, c.ip.AUDIENCE),
+        y = (0, s.bG)([o.A], () => null != N ? o.A.getParticipant(a.id, N) : null),
         j = (0, d.E5)(a.id, c.ip.SPEAKER),
         R = j.filter(x),
         O = null != j.find(e => e.type === c.wY.STREAM),
@@ -57,14 +57,14 @@ let E = (0, a.A)(e => {
         {
             speakerTileWidth: w,
             speakerTileHeight: B
-        } = (n = Math.floor((t = Math.floor(E / M - 8)) / g.i), {
+        } = (n = Math.floor((t = Math.floor(E / M - 8)) / p.i), {
             speakerTileWidth: t,
             speakerTileHeight: n
         }),
         V = T ? E - 32 : Math.min(E - 64, 3 * w + 8),
-        H = e => e === G.length - 1 || 0 === y && 1 === e,
-        [F, K] = l.useState(!1),
-        [W, Y] = l.useState(!1);
+        H = e => e === G.length - 1 || 0 === v && 1 === e,
+        [F, W] = l.useState(!1),
+        [K, Y] = l.useState(!1);
     return (0, i.jsx)(A.A, {
         sections: k,
         renderSection: e => {
@@ -73,19 +73,19 @@ let E = (0, a.A)(e => {
             } = e;
             return 1 === t ? 0 === b ? null : (0, i.jsx)(m.A, {
                 participantCount: b,
-                label: p.intl.string(p.t.CduOkx),
+                label: g.intl.string(g.t.CduOkx),
                 className: f.wx,
-                onClick: () => K(!F),
+                onClick: () => W(!F),
                 collapsed: F,
                 speakers: R,
                 channel: a,
                 isStreamLive: O
-            }, `speaker-header-${t}`) : 2 === t ? 0 === y ? null : (0, i.jsx)(m.A, {
-                participantCount: y,
-                label: p.intl.string(p.t["3foUu5"]),
+            }, `speaker-header-${t}`) : 2 === t ? 0 === v ? null : (0, i.jsx)(m.A, {
+                participantCount: v,
+                label: g.intl.string(g.t["3foUu5"]),
                 className: f.wx,
-                onClick: () => Y(!W),
-                collapsed: W,
+                onClick: () => Y(!K),
+                collapsed: K,
                 channel: a
             }, `audience-header-${t}`) : null
         },
@@ -101,7 +101,7 @@ let E = (0, a.A)(e => {
                     if (0 === s.length || null == s[0]) return null;
                     return (0, i.jsx)("div", {
                         className: f.Od,
-                        children: (0, i.jsx)(g.A, {
+                        children: (0, i.jsx)(p.A, {
                             channel: a,
                             participant: s[0],
                             width: V,
@@ -115,12 +115,12 @@ let E = (0, a.A)(e => {
                             tileWidth: w,
                             channel: a,
                             participants: s,
-                            selectedParticipant: v,
+                            selectedParticipant: y,
                             popoutType: C
                         })
                     }, `speakers-${t}-${n}`);
                 case 2:
-                    if (W) return null;
+                    if (K) return null;
                     return (0, i.jsx)(h.A, {
                         channel: a,
                         participants: s,
@@ -130,7 +130,7 @@ let E = (0, a.A)(e => {
                     return null
             }
         },
-        rowHeight: e => null == P[e][0] ? 0 : 0 === e ? V / g.i + 8 : 1 === e ? F ? 0 : B : 98 * !W,
+        rowHeight: e => null == P[e][0] ? 0 : 0 === e ? V / p.i + 8 : 1 === e ? F ? 0 : B : 98 * !K,
         renderFooter: e => {
             let {
                 section: t

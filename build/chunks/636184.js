@@ -18,8 +18,8 @@ var r = s(627968),
     p = s(975571),
     I = s(427262),
     S = s(326084),
-    h = s(851746),
-    f = s(652215),
+    f = s(851746),
+    h = s(652215),
     A = s(985018),
     M = s(471449),
     g = s(299148);
@@ -84,8 +84,8 @@ let T = e => {
             results: s,
             onClose: n,
             isReminderConfirmation: a
-        } = e, E = (0, c.bG)([h.A], () => h.A.getReferralsRemaining());
-        R.default.track(f.HAw.REFERRAL_PROGRAM_SHARE_CTA_CLICKED);
+        } = e, E = (0, c.bG)([f.A], () => f.A.getReferralsRemaining());
+        R.default.track(h.HAw.REFERRAL_PROGRAM_SHARE_CTA_CLICKED);
         let {
             reducedMotion: d
         } = i.useContext(u.CZ);
@@ -100,9 +100,9 @@ let T = e => {
             gradientColor: "nitro-pink",
             title: 0 === s.filter(e => e.status === S.o.SUCCESS).length ? A.intl.string(A.t["7VBEue"]) : !0 === a ? A.intl.string(A.t.GP5lbq) : A.intl.string(A.t.tKCltd),
             subtitle: !0 === a ? A.intl.format(A.t["4gJJfD"], {
-                helpdeskArticle: p.A.getArticleURL(f.MVz.REFERRAL_PROGRAM)
+                helpdeskArticle: p.A.getArticleURL(h.MVz.REFERRAL_PROGRAM)
             }) : A.intl.format(A.t.AwGSWl, {
-                helpdeskArticle: p.A.getArticleURL(f.MVz.REFERRAL_PROGRAM)
+                helpdeskArticle: p.A.getArticleURL(h.MVz.REFERRAL_PROGRAM)
             }),
             onClose: n,
             transitionState: t,

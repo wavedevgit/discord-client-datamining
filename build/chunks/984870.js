@@ -15,15 +15,15 @@ var i = n(627968),
     A = n(954571),
     _ = n(927578),
     m = n(379848),
-    g = n(49999),
-    p = n(652215),
+    p = n(49999),
+    g = n(652215),
     f = n(985018),
     x = n(258527);
 let E = e => {
     let {
         dismissibleContent: t
     } = e, n = (0, o.Cp)(), E = (0, s.bG)([h.default], () => !_.Ay.isPremium(h.default.getCurrentUser())), I = l.useCallback(() => {
-        A.default.track(p.HAw.OUTBOUND_PROMOTION_NOTICE_CLICKED), (0, u.openUserSettings)(c.X.GIFT_PANEL), d.Ay.dismissOutboundPromotionNotice()
+        A.default.track(g.HAw.OUTBOUND_PROMOTION_NOTICE_CLICKED), (0, u.openUserSettings)(c.X.GIFT_PANEL), d.Ay.dismissOutboundPromotionNotice()
     }, []);
     return null == n ? null : (0, i.jsx)(m.YS, {
         contentType: t,
@@ -31,7 +31,7 @@ let E = e => {
         timeRecurringConfig: {
             cooldownDurationMs: 0
         },
-        groupName: g.m.NOTICE_BAR,
+        groupName: p.m.NOTICE_BAR,
         bypassAutoDismiss: !0,
         children: e => {
             let {
@@ -41,18 +41,18 @@ let E = e => {
             if (t === a.M.THIRD_PARTY_OUTBOUND_PROMO_NAGBAR) return (0, i.jsxs)(r.$Td, {
                 color: r.Hv$.PREMIUM_TIER_2,
                 children: [(0, i.jsx)(r.PMB, {
-                    noticeType: p.kqX.OUTBOUND_PROMOTION,
+                    noticeType: g.kqX.OUTBOUND_PROMOTION,
                     onClick: () => {
-                        d.Ay.dismissOutboundPromotionNotice(), null !== n && n(g.i.USER_DISMISS)
+                        d.Ay.dismissOutboundPromotionNotice(), null !== n && n(p.i.USER_DISMISS)
                     }
                 }), (0, i.jsx)(r.tvc, {
                     size: "md",
                     color: "currentColor",
                     className: x.P
                 }), E ? f.intl.string(f.t["5JMiOo"]) : f.intl.string(f.t["Pzh+G2"]), (0, i.jsx)(r.Z_L, {
-                    noticeType: p.kqX.OUTBOUND_PROMOTION,
+                    noticeType: g.kqX.OUTBOUND_PROMOTION,
                     onClick: () => {
-                        I(), null !== n && n(g.i.TAKE_ACTION)
+                        I(), null !== n && n(p.i.TAKE_ACTION)
                     },
                     children: f.intl.string(f.t.jVcuVY)
                 })]

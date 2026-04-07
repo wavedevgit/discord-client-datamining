@@ -24,7 +24,7 @@ function f(e) {
     let {
         locked: t,
         pinned: n
-    } = e, [r, s] = a.useState(0), [f, g] = a.useState(0), [p, A] = a.useState(0), E = a.useRef(0), [I, x] = a.useState(0), {
+    } = e, [r, s] = a.useState(0), [f, p] = a.useState(0), [g, A] = a.useState(0), x = a.useRef(0), [I, E] = a.useState(0), {
         timeToLiveMs: b,
         reappearTimeMs: v
     } = u.Ay.useState(e => ({
@@ -36,9 +36,9 @@ function f(e) {
     }, C = a.useRef(S);
     a.useEffect(() => {
         C.current = S
-    }), a.useEffect(() => (E.current = setInterval(() => {
+    }), a.useEffect(() => (x.current = setInterval(() => {
         let e = Date.now();
-        g(e), A(t => {
+        p(e), A(t => {
             if (0 === t) return e;
             let n = e - t,
                 i = C.current.timeToLiveMs,
@@ -46,13 +46,13 @@ function f(e) {
             return n > i ? t + a : t
         })
     }, 100), () => {
-        clearInterval(E.current)
+        clearInterval(x.current)
     }), []);
-    let T = () => {
-            s(Date.now()), x(e => e + 1)
+    let y = () => {
+            s(Date.now()), E(e => e + 1)
         },
-        y = r > 0 && f - r < 1e3,
-        N = (0, c.pnh)(p > 0 && p < f && f - p < b, {
+        T = r > 0 && f - r < 1e3,
+        N = (0, c.pnh)(g > 0 && g < f && f - g < b, {
             from: {
                 opacity: 0
             },
@@ -73,9 +73,9 @@ function f(e) {
             style: e,
             className: h.r2,
             children: (0, i.jsx)(_.A, {
-                className: l()(h.VC, y && h.Nd),
+                className: l()(h.VC, T && h.Nd),
                 children: (0, i.jsx)(c.DUT, {
-                    onClick: T,
+                    onClick: y,
                     className: h.vk,
                     children: (0, i.jsxs)(c.Text, {
                         variant: "text-md/semibold",

@@ -15,8 +15,8 @@ var i = n(627968),
     A = n(175203),
     _ = n(426660),
     m = n(403362),
-    g = n(69407),
-    p = n(110618),
+    p = n(69407),
+    g = n(110618),
     f = n(566388),
     x = n(985018),
     E = n(616124);
@@ -27,7 +27,7 @@ let I = function(e) {
         hasConnectPermission: I
     } = e, C = (0, h.H)(n.guild_id), N = l.useCallback(() => {
         C ? (0, u.Ze)(n.guild_id, () => r.default.selectVoiceChannel(n.id)) : r.default.selectVoiceChannel(n.id)
-    }, [n.id, n.guild_id, C]), T = t.filter(e => e.type === g.wY.VOICE), S = (0, c.Ay)(n), b = 4 === T.length ? 2 : 3, y = (0, s.yK)([o.A], () => T.map(e => o.A.getParticipant(n.id, e.id)).filter(m.Vq), [n.id, T]);
+    }, [n.id, n.guild_id, C]), T = t.filter(e => e.type === p.wY.VOICE), S = (0, c.Ay)(n), b = 4 === T.length ? 2 : 3, v = (0, s.yK)([o.A], () => T.map(e => o.A.getParticipant(n.id, e.id)).filter(m.Vq), [n.id, T]);
     return (0, i.jsxs)("div", {
         className: E.kL,
         children: [(0, i.jsx)(_.A, {}), (0, i.jsx)("div", {
@@ -35,7 +35,7 @@ let I = function(e) {
             style: {
                 maxWidth: 168 * b
             },
-            children: y.slice(0, 5).map(e => (0, i.jsx)(A.Ay, {
+            children: v.slice(0, 5).map(e => (0, i.jsx)(A.Ay, {
                 participant: e,
                 channel: n,
                 className: E.Vs,
@@ -54,7 +54,7 @@ let I = function(e) {
                 tag: "div",
                 color: "text-default",
                 variant: "heading-lg/normal",
-                children: (0, p.DO)(n, T)
+                children: (0, g.DO)(n, T)
             })
         }), (0, i.jsxs)("div", {
             className: E.UD,

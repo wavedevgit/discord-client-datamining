@@ -15,37 +15,37 @@ var i = n(627968),
     h = n(256415),
     m = n(810412),
     f = n(1193),
-    g = n(129537),
-    p = n(412477),
+    p = n(129537),
+    g = n(412477),
     A = n(651813),
-    E = n(320165),
+    x = n(320165),
     I = n(121914),
-    x = n(197043),
+    E = n(197043),
     b = n(919843),
     v = n(652215),
     S = n(895867),
     C = n(985018),
-    T = n(468690);
+    y = n(468690);
 
-function y(e) {
+function T(e) {
     let {
         dragStart: t,
         dragging: n
-    } = e, [y, N] = (0, r.bG)([f.A], () => f.A.getSessionEntries()), w = (0, r.bG)([f.A], () => f.A.getSelectedChannelId()), L = (0, r.bG)([f.A], () => f.A.getVoiceChatMinimized()), O = (0, r.bG)([o.A], () => null != w ? o.A.getChannel(w) ?? null : null, [w]);
+    } = e, [T, N] = (0, r.bG)([f.A], () => f.A.getSessionEntries()), w = (0, r.bG)([f.A], () => f.A.getSelectedChannelId()), L = (0, r.bG)([f.A], () => f.A.getVoiceChatMinimized()), j = (0, r.bG)([o.A], () => null != w ? o.A.getChannel(w) ?? null : null, [w]);
     a.useEffect(() => {
-        null == w || null == O && (0, b.b)(w)
-    }, [O, w]);
-    let j = (0, r.bG)([d.A], () => (0, A.P)(O, d.A), [O]),
+        null == w || null == j && (0, b.b)(w)
+    }, [j, w]);
+    let O = (0, r.bG)([d.A], () => (0, A.P)(j, d.A), [j]),
         P = (0, r.bG)([c.A], () => c.A.getChannelId(), []),
-        R = a.useMemo(() => null == P || 0 === N ? y : y.filter(e => e.channelId !== P), [y, N, P]),
+        R = a.useMemo(() => null == P || 0 === N ? T : T.filter(e => e.channelId !== P), [T, N, P]),
         D = (0, m.Dk)(() => {
             let e = new Set;
             for (let t of (null != P && e.add(P), R)) e.add(t.channelId);
             return e
         }, [R, P, N]),
         {
-            shownUserIds: M,
-            contentInventoryIds: k
+            shownUserIds: k,
+            contentInventoryIds: M
         } = (0, r.bG)([], () => (function(e) {
             let t = new Set,
                 n = new Set;
@@ -69,8 +69,8 @@ function y(e) {
                 contentInventoryIds: n
             }
         })(D), [D]),
-        G = (0, m.Dk)(() => M, [M]),
-        z = (0, m.Dk)(() => k, [k]);
+        G = (0, m.Dk)(() => k, [k]),
+        z = (0, m.Dk)(() => M, [M]);
     a.useEffect(() => {
         (0 !== G.size || 0 !== z.size) && (0, m.Y)(v.uss.TEXT_CHAT_V3, {
             locked: h.default.isInstanceLocked(),
@@ -79,23 +79,23 @@ function y(e) {
             contentInventoryIds: Array.from(z)
         })
     }, [G, z]);
-    let U = (0, r.bG)([_.default], () => (0, A.j)(O, _.default)),
-        V = (0, r.bG)([_.default, u.A], () => null == O ? C.intl.string(S.default.uhJexs) : (0, s.m1)(O, _.default, u.A), [O]),
+    let U = (0, r.bG)([_.default], () => (0, A.j)(j, _.default)),
+        V = (0, r.bG)([_.default, u.A], () => null == j ? C.intl.string(S.default.uhJexs) : (0, s.m1)(j, _.default, u.A), [j]),
         F = (0, r.bG)([o.A], () => {
             if (null != P && null != o.A.getChannel(P)) return !0;
             if (0 === N) return !1;
-            for (let e of y)
+            for (let e of T)
                 if (null != o.A.getChannel(e.channelId)) return !0;
             return !1
-        }, [y, P, N]),
+        }, [T, P, N]),
         W = null != w && !(L && w === P);
     return F ? (0, i.jsxs)("div", {
-        className: T.kL,
+        className: y.kL,
         children: [(0, i.jsx)("nav", {
-            className: T.pz,
+            className: y.pz,
             "aria-label": C.intl.string(S.default["2yFtJ1"]),
             onMouseDown: e => {
-                0 === e.button && t(g.P.MOVE, e.clientX, e.clientY)
+                0 === e.button && t(p.P.MOVE, e.clientX, e.clientY)
             },
             children: (0, i.jsxs)(l.d_W, {
                 children: [null != P ? (0, i.jsxs)(i.Fragment, {
@@ -104,7 +104,7 @@ function y(e) {
                         selectedVoiceChannelId: P,
                         iconVariant: I._.CHANNEL_TYPE
                     }, `tiv-${P}`), R.length > 0 ? (0, i.jsx)("hr", {
-                        className: T.mF
+                        className: y.mF
                     }) : null]
                 }) : null, R.map(e => (0, i.jsx)(I.g, {
                     channelId: e.channelId,
@@ -112,19 +112,19 @@ function y(e) {
                 }, e.channelId))]
             })
         }), W ? (0, i.jsxs)("div", {
-            className: T.oM,
-            children: [(0, i.jsx)(E.A, {
-                channel: O,
+            className: y.oM,
+            children: [(0, i.jsx)(x.A, {
+                channel: j,
                 user: U,
-                guild: j,
+                guild: O,
                 title: V,
                 dragStart: t,
                 dragging: n
-            }), (0, i.jsx)(x.A, {
+            }), (0, i.jsx)(E.A, {
                 selectedChannelId: w
             })]
         }) : null]
-    }) : (0, i.jsx)(p.g, {
+    }) : (0, i.jsx)(g.g, {
         emptyText: C.intl.string(S.default["xpv/t5"]),
         icon: l.oyn
     })
@@ -135,7 +135,7 @@ let N = a.memo(function(e) {
         dragStart: n,
         dragging: a
     } = e;
-    return t ? null : (0, i.jsx)(y, {
+    return t ? null : (0, i.jsx)(T, {
         dragStart: n,
         dragging: a
     })

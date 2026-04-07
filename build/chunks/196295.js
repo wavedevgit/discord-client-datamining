@@ -15,11 +15,11 @@ var i = n(627968),
     h = n(703552),
     m = n(672396),
     f = n(652215),
-    g = n(985018),
-    p = n(458904);
+    p = n(985018),
+    g = n(458904);
 let A = [];
 
-function E(e) {
+function x(e) {
     return e.notification.id
 }
 
@@ -40,9 +40,9 @@ function I(e, t, n, a) {
     }, e)
 }
 
-function x(e) {
+function E(e) {
     return (0, i.jsx)("div", {
-        className: p.k,
+        className: g.k,
         children: e
     })
 }
@@ -51,7 +51,7 @@ let b = a.memo(function(e) {
         locked: t,
         pinned: n,
         showEmpty: u = !0
-    } = e, p = (0, r.bG)([h.A, o.A], () => {
+    } = e, g = (0, r.bG)([h.A, o.A], () => {
         if (o.A.isNotificationDisabled(m.KS.TextChat)) return A;
         let e = [],
             i = 0;
@@ -66,16 +66,16 @@ let b = a.memo(function(e) {
         }
         return e
     }, [t, n], d.oQ), b = a.useState(() => new _.Fn(t))[0];
-    return (a.useLayoutEffect(() => b.updateState(p, t)), a.useLayoutEffect(() => (b.initialize((0, c.b)()), () => b.cleanUp()), [b]), 0 !== p.length || t) ? (0, i.jsx)(_.Gt.Provider, {
+    return (a.useLayoutEffect(() => b.updateState(g, t)), a.useLayoutEffect(() => (b.initialize((0, c.b)()), () => b.cleanUp()), [b]), 0 !== g.length || t) ? (0, i.jsx)(_.Gt.Provider, {
         value: b,
         children: (0, i.jsx)(l.Fai, {
-            items: p,
+            items: g,
             renderItem: I,
-            getItemKey: E,
-            wrapChildren: x
+            getItemKey: x,
+            wrapChildren: E
         })
     }) : u ? t ? null : (0, i.jsx)(s.g, {
-        emptyText: g.intl.string(g.t.O1Nbjq),
+        emptyText: p.intl.string(p.t.O1Nbjq),
         icon: l.XFE,
         absolute: !0
     }) : null

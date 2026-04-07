@@ -1,11 +1,11 @@
 /** chunk id: 492684 params = (module,exports,require) **/
-i.d(e, {
+n.d(e, {
     A: () => o
 });
-var n = i(627968),
-    l = i(64700),
-    r = i(451988),
-    s = i(985018);
+var i = n(627968),
+    l = n(64700),
+    r = n(451988),
+    s = n(985018);
 
 function a(t) {
     return `${t}`.length < 13 ? 1e3 * t : t
@@ -43,27 +43,27 @@ function o(t) {
             return e && t <= 0 ? -1 : t < 10 ? `0${t}` : t
         }
         getDiff(t, e) {
-            let i = Math.max(e - t, 0),
-                n = Math.floor(i) % 60,
-                l = Math.floor(i / 60) % 60;
+            let n = Math.max(e - t, 0),
+                i = Math.floor(n) % 60,
+                l = Math.floor(n / 60) % 60;
             return {
-                hours: Math.floor(i / 3600) % 24,
+                hours: Math.floor(n / 3600) % 24,
                 minutes: l,
-                seconds: n
+                seconds: i
             }
         }
         render() {
             let {
                 timestamps: e,
-                ...i
+                ...n
             } = this.props, l = this.renderTime(this.state.hours, !0), r = this.renderTime(this.state.minutes), a = this.renderTime(this.state.seconds), o = -1 === l ? `${r}:${a}` : `${l}:${r}:${a}`;
-            return null != e.end ? (0, n.jsx)(t, {
-                ...i,
+            return null != e.end ? (0, i.jsx)(t, {
+                ...n,
                 message: s.intl.formatToPlainString(s.t["I/J7vI"], {
                     duration: o
                 })
-            }) : null != e.start ? (0, n.jsx)(t, {
-                ...i,
+            }) : null != e.start ? (0, i.jsx)(t, {
+                ...n,
                 message: s.intl.formatToPlainString(s.t.M9Fexd, {
                     duration: o
                 })

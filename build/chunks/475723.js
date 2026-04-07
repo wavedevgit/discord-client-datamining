@@ -16,8 +16,8 @@ var i = n(627968),
     A = n(713125),
     _ = n(967305),
     m = n(739455),
-    g = n(997509),
-    p = n(976860),
+    p = n(997509),
+    g = n(976860),
     f = n(309010),
     x = n(967198),
     E = n(792831),
@@ -27,9 +27,9 @@ var i = n(627968),
     T = n(164956),
     S = n(311127),
     b = n(652215),
-    y = n(746080);
+    v = n(746080);
 n(500208);
-var v = n(2242),
+var y = n(2242),
     j = n(985018),
     R = n(859812);
 
@@ -91,12 +91,12 @@ function M() {
             }
         }(a),
         D = a === b.BEX.ROLE_SUBSCRIPTIONS ? j.intl.string(j.t.hZUCzd) : j.intl.string(j.t["/djIh7"]),
-        U = n === y.VV.GUILD_ONBOARDING,
+        U = n === v.VV.GUILD_ONBOARDING,
         G = e => {
             let {
                 backToSettings: n
             } = e;
-            null != t && (T.A.isFullServerPreview(t) && (0, p.pX)(b.BVt.CHANNEL(t)), A.Ay.shouldShowOnboarding(t) && (h.A.finishOnboarding(t), (0, _.Jg)(t)), (0, N.rf)(t), n && g.A.open(t, a), a === b.BEX.ROLE_SUBSCRIPTIONS && (0, m.Fx)(t))
+            null != t && (T.A.isFullServerPreview(t) && (0, g.pX)(b.BVt.CHANNEL(t)), A.Ay.shouldShowOnboarding(t) && (h.A.finishOnboarding(t), (0, _.Jg)(t)), (0, N.rf)(t), n && p.A.open(t, a), a === b.BEX.ROLE_SUBSCRIPTIONS && (0, m.Fx)(t))
         };
     return (0, i.jsxs)(u.$Td, {
         color: u.Hv$.BRAND,
@@ -158,7 +158,7 @@ function M() {
             }), C && (0, i.jsx)(d.m, {
                 asContainer: !0,
                 text: j.intl.formatToPlainString(j.t.eummvd, {
-                    maxTiers: v.f7,
+                    maxTiers: y.f7,
                     maxProducts: 50
                 }),
                 children: (0, i.jsx)(u.EpV, {

@@ -1,91 +1,91 @@
 /** chunk id: 302959 params = (module,exports,require) **/
-i.d(e, {
-    A: () => _,
-    M: () => v
+n.d(t, {
+    A: () => N,
+    M: () => C
 });
-var n = i(627968),
-    l = i(64700),
-    r = i(311907),
-    s = i(833349),
-    a = i(153331),
-    o = i(592182),
-    d = i(587895),
-    u = i(806246),
-    c = i(890330),
-    p = i(172710),
-    m = i(616356),
-    A = i(734057),
-    h = i(71393),
-    g = i(977997),
-    f = i(954571),
-    E = i(821589),
-    S = i(652215),
-    T = i(78016);
+var i = n(627968),
+    l = n(64700),
+    s = n(311907),
+    a = n(833349),
+    r = n(153331),
+    o = n(592182),
+    d = n(587895),
+    c = n(806246),
+    u = n(890330),
+    h = n(172710),
+    A = n(616356),
+    _ = n(734057),
+    m = n(71393),
+    p = n(977997),
+    g = n(954571),
+    f = n(821589),
+    x = n(652215),
+    E = n(78016);
 
-function C(t) {
+function I(e) {
     let {
-        type: e,
-        source: i,
+        type: t,
+        source: n,
         activity: l,
-        applicationStream: r,
-        user: s,
-        guildId: a,
+        applicationStream: s,
+        user: a,
+        guildId: r,
         channelId: d,
-        onAction: u
-    } = t;
-    return (0, n.jsx)(o.A, {
-        className: (0, E.t)(T, "actions", e),
-        type: e,
-        source: i,
+        onAction: c
+    } = e;
+    return (0, i.jsx)(o.A, {
+        className: (0, f.t)(E, "actions", t),
+        type: t,
+        source: n,
         activity: l,
-        applicationStream: r,
-        user: s,
-        guildId: a,
+        applicationStream: s,
+        user: a,
+        guildId: r,
         buttonVariant: "primary",
         channelId: d,
-        onAction: u
+        onAction: c
     })
 }
-let v = a.A.Types,
-    _ = function(t) {
+let C = r.A.Types,
+    N = function(e) {
         let {
-            activity: e,
-            user: i,
+            activity: t,
+            user: n,
             useStoreStream: o = !0,
-            showActions: E = !0,
-            hideHeader: T = !1,
-            showChannelDetails: v = !1,
-            ..._
-        } = t, y = (0, r.bG)([g.A, A.A], () => A.A.getChannel(g.A.getVoiceStateForUser(i.id)?.channelId)), I = (0, c.v)("UserActivityContainer", y), N = (0, r.bG)([m.A], () => o ? m.A.getAnyStreamForUser(i.id) : null), x = e?.type === S.$pd.HANG_STATUS && I ? y : null, j = (0, r.bG)([h.A, g.A, A.A], () => (0, s.A)(e, S.jUm.EMBEDDED) ? h.A.getGuild(A.A.getChannel(g.A.getVoiceStateForSession(i.id, e?.session_id)?.channelId)?.getGuildId()) : null != x ? h.A.getGuild(x.getGuildId()) : null), L = (0, r.bG)([h.A], () => null != N ? h.A.getGuild(N.guildId) : null), P = (0, r.bG)([d.A], () => {
-            if (null != e)
-                if (null != e.application_id) return d.A.getApplication(e.application_id);
-                else return d.A.getApplicationByName(e.name);
+            showActions: f = !0,
+            hideHeader: E = !1,
+            showChannelDetails: C = !1,
+            ...N
+        } = e, T = (0, s.bG)([p.A, _.A], () => _.A.getChannel(p.A.getVoiceStateForUser(n.id)?.channelId)), S = (0, u.v)("UserActivityContainer", T), b = (0, s.bG)([A.A], () => o ? A.A.getAnyStreamForUser(n.id) : null), v = t?.type === x.$pd.HANG_STATUS && S ? T : null, y = (0, s.bG)([m.A, p.A, _.A], () => (0, a.A)(t, x.jUm.EMBEDDED) ? m.A.getGuild(_.A.getChannel(p.A.getVoiceStateForSession(n.id, t?.session_id)?.channelId)?.getGuildId()) : null != v ? m.A.getGuild(v.getGuildId()) : null), j = (0, s.bG)([m.A], () => null != b ? m.A.getGuild(b.guildId) : null), R = (0, s.bG)([d.A], () => {
+            if (null != t)
+                if (null != t.application_id) return d.A.getApplication(t.application_id);
+                else return d.A.getApplicationByName(t.name);
             return null
         });
         return (l.useEffect(() => {
-            e?.type === S.$pd.HANG_STATUS && I && f.default.track(S.HAw.VIEW_HANG_STATUS, {
+            t?.type === x.$pd.HANG_STATUS && S && g.default.track(x.HAw.VIEW_HANG_STATUS, {
                 source: "UserActivity",
-                other_user_id: i.id,
-                ...(0, u.A)(x?.id)
+                other_user_id: n.id,
+                ...(0, c.A)(v?.id)
             })
-        }, [e?.type, I, x, i.id]), e?.type !== S.$pd.HANG_STATUS || I) ? (0, n.jsx)(a.A, {
-            ..._,
-            activity: e,
-            user: i,
-            application: P,
-            hideHeader: T,
-            activityGuild: j ?? L,
-            showChannelDetails: v,
-            channel: v ? y : void 0,
-            enableUserHoverActivities: _.enableUserHoverActivities,
-            renderActions: E ? () => (0, n.jsx)(C, {
-                ..._,
-                applicationStream: N,
-                activity: e,
-                user: i
+        }, [t?.type, S, v, n.id]), t?.type !== x.$pd.HANG_STATUS || S) ? (0, i.jsx)(r.A, {
+            ...N,
+            activity: t,
+            user: n,
+            application: R,
+            hideHeader: E,
+            activityGuild: y ?? j,
+            showChannelDetails: C,
+            channel: C ? T : void 0,
+            enableUserHoverActivities: N.enableUserHoverActivities,
+            renderActions: f ? () => (0, i.jsx)(I, {
+                ...N,
+                applicationStream: b,
+                activity: t,
+                user: n
             }) : null,
-            onOpenSpotifyTrack: p.Mp,
-            onOpenSpotifyArtist: p.mN,
-            onOpenSpotifyAlbum: p.QX
+            onOpenSpotifyTrack: h.Mp,
+            onOpenSpotifyArtist: h.mN,
+            onOpenSpotifyAlbum: h.QX
         }) : null
     }

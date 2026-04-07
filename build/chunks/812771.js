@@ -1,7 +1,7 @@
 /** chunk id: 812771 params = (module,exports,require) **/
 n.d(t, {
     A: () => f,
-    X: () => g
+    X: () => p
 });
 var i, l = n(627968),
     s = n(64700),
@@ -15,9 +15,9 @@ var i, l = n(627968),
     A = n(964404),
     _ = n(743898),
     m = n(53454),
-    g = ((i = {})[i.PostSidebar = 0] = "PostSidebar", i[i.ThreadSidebar = 1] = "ThreadSidebar", i[i.CallChatSidebar = 2] = "CallChatSidebar", i[i.MessageRequestSidebar = 3] = "MessageRequestSidebar", i[i.HomeSidebar = 4] = "HomeSidebar", i);
+    p = ((i = {})[i.PostSidebar = 0] = "PostSidebar", i[i.ThreadSidebar = 1] = "ThreadSidebar", i[i.CallChatSidebar = 2] = "CallChatSidebar", i[i.MessageRequestSidebar = 3] = "MessageRequestSidebar", i[i.HomeSidebar = 4] = "HomeSidebar", i);
 
-function p(e) {
+function g(e) {
     let {
         resizableNode: t,
         onResize: n,
@@ -46,7 +46,7 @@ function f(e) {
         onWidthChange: i,
         children: a,
         floatingLayer: h
-    } = e, g = s.useRef(null), f = function(e) {
+    } = e, p = s.useRef(null), f = function(e) {
         switch (e) {
             case 0:
                 return "postSidebarWidth";
@@ -89,14 +89,14 @@ function f(e) {
                     style: {
                         width: S
                     }
-                }), !C && (0, l.jsx)(p, {
+                }), !C && (0, l.jsx)(g, {
                     minWidth: 450,
                     maxWidth: n,
-                    resizableNode: g,
+                    resizableNode: p,
                     onResize: E,
                     onResizeEnd: I
                 }), (0, l.jsx)("div", {
-                    ref: g,
+                    ref: p,
                     className: r()(m.kL, {
                         [m.DU]: C
                     }),

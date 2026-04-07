@@ -1,56 +1,56 @@
 /** chunk id: 77555 params = (module,exports,require) **/
-n.d(t, {
+a.d(t, {
     z: () => c
 });
-var a = n(627968),
-    l = n(64700),
-    r = n(837381),
-    s = n(397927),
-    o = n(928039),
-    i = n(61916);
+var n = a(627968),
+    r = a(64700),
+    l = a(837381),
+    s = a(397927),
+    o = a(928039),
+    i = a(61916);
 
 function c(e) {
     let {
         rowData: t,
-        message: n,
+        message: a,
         originChannel: c,
         selectedDestinations: u,
         handleToggleDestination: d,
         disableSelection: _,
         rowClassName: h,
-        ...b
+        ...p
     } = e, {
-        sections: p,
-        sectionHeight: f,
-        renderRow: m,
-        rowHeight: g
+        sections: f,
+        sectionHeight: g,
+        renderRow: C,
+        rowHeight: b
     } = (0, i.s)({
         rowData: t,
-        message: n,
+        message: a,
         originChannel: c,
         selectedDestinations: u,
         handleToggleDestination: d,
         disableSelection: _,
         rowClassName: h
-    }), C = l.useRef(null), k = (0, o.A)("forward-modal", C);
-    return (0, a.jsx)(r.hD, {
-        navigator: k,
-        children: (0, a.jsx)(r.PR, {
+    }), m = r.useRef(null), x = (0, o.A)("forward-modal", m);
+    return (0, n.jsx)(l.hD, {
+        navigator: x,
+        children: (0, n.jsx)(l.PR, {
             children: e => {
                 let {
                     ref: t,
-                    ...n
+                    ...a
                 } = e;
-                return (0, a.jsx)(s.OZj, {
+                return (0, n.jsx)(s.OZj, {
                     ref: e => {
-                        C.current = e, t.current = e?.getScrollerNode() ?? null
+                        m.current = e, t.current = e?.getScrollerNode() ?? null
                     },
-                    ...n,
-                    ...b,
-                    sections: p,
-                    sectionHeight: f,
-                    renderRow: m,
-                    rowHeight: g
+                    ...a,
+                    ...p,
+                    sections: f,
+                    sectionHeight: g,
+                    renderRow: C,
+                    rowHeight: b
                 })
             }
         })

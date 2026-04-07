@@ -15,8 +15,8 @@ var i = n(627968),
     A = n(688810),
     _ = n(313961),
     m = n(385318),
-    g = n(750765),
-    p = n(183184),
+    p = n(750765),
+    g = n(183184),
     f = n(384059),
     x = n(480890),
     E = n(643501),
@@ -26,8 +26,8 @@ var i = n(627968),
     T = n(859894),
     S = n(267102),
     b = n(931991),
-    y = n(151476),
-    v = n(405018),
+    v = n(151476),
+    y = n(405018),
     j = n(704877),
     R = n(173660),
     O = n(105225),
@@ -43,15 +43,15 @@ var i = n(627968),
     V = n(430452),
     H = n(576705),
     F = n(309010),
-    K = n(287809),
-    W = n(993838),
+    W = n(287809),
+    K = n(993838),
     Y = n(849736),
     z = n(776781),
     q = n(233993),
     X = n(312006),
-    J = n(446600),
+    $ = n(446600),
     Q = n(96566),
-    $ = n(302884),
+    J = n(302884),
     Z = n(30108),
     ee = n(39938),
     et = n(106044),
@@ -70,18 +70,18 @@ function eu(e) {
         channel: t
     } = e, {
         parentAnalyticsLocation: n
-    } = (0, A.Ay)(), s = (0, ei.A)(t.id), [o, h] = (0, ea.A)(t), _ = (0, en.L)(t), m = (0, el.Vv)(), g = (0, el.tp)(), p = l.useRef(null), [x, E] = (0, d.V)("age-verification-stage-popover-dismissed", !1), I = l.useContext(D.vG);
+    } = (0, A.Ay)(), s = (0, ei.A)(t.id), [o, h] = (0, ea.A)(t), _ = (0, en.L)(t), m = (0, el.Vv)(), p = (0, el.tp)(), g = l.useRef(null), [x, E] = (0, d.V)("age-verification-stage-popover-dismissed", !1), I = l.useContext(D.vG);
     if (s) return null;
-    let C = g && !x;
+    let C = p && !x;
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(G.l, {
-            ref: p,
+            ref: g,
             isTrayButton: !0,
             isActive: o,
             label: function(e, t, n, i) {
                 let l = !(arguments.length > 4) || void 0 === arguments[4] || arguments[4];
                 return !l && i ? null : n ? eo.intl.string(eo.t.NzITVo) : e ? eo.intl.string(eo.t.GCimTk) : t ? eo.intl.string(eo.t.hLbG5N) : eo.intl.string(eo.t.e4WMvx)
-            }(o, _, m, g, x),
+            }(o, _, m, p, x),
             iconComponent: m ? r._xi : r.E7M,
             onClick: () => {
                 (0, f.X)(n, f.O.REQUEST_TO_SPEAK, !o), E(!0), m ? c.A.showAgeVerificationGetStartedModal({
@@ -91,7 +91,7 @@ function eu(e) {
             color: o ? "green" : void 0,
             disabled: !_ && !o
         }), C && (0, i.jsx)(a.AM, {
-            targetElementRef: p,
+            targetElementRef: g,
             graphic: {
                 type: "image",
                 src: ec.A
@@ -120,7 +120,7 @@ let eh = l.memo(function(e) {
         className: ed.kL,
         children: [(0, i.jsxs)("div", {
             className: ed.qi,
-            children: [(0, i.jsx)(eg, {
+            children: [(0, i.jsx)(ep, {
                 channelId: t.id
             }), n ? (0, i.jsx)(eu, {
                 channel: t
@@ -157,21 +157,21 @@ function e_(e) {
         onSelect: n
     } = e, a = (0, S.Us)(), {
         canManageGuildEvent: d
-    } = (0, b.nr)(t), c = (0, s.bG)([J.A], () => J.A.getStageInstanceByChannel(t.id), [t.id]), u = (0, s.bG)([C.Ay], () => C.Ay.getGuildScheduledEvent(c?.guild_scheduled_event_id)), {
+    } = (0, b.nr)(t), c = (0, s.bG)([$.A], () => $.A.getStageInstanceByChannel(t.id), [t.id]), u = (0, s.bG)([C.Ay], () => C.Ay.getGuildScheduledEvent(c?.guild_scheduled_event_id)), {
         suppress: _
-    } = (0, R.A)(t), m = B.default.getId(), [g] = (0, ea.A)(t), p = X.Ay.isModerator(m, t.id), E = (0, z.Ni)(t.id), I = d(u), {
+    } = (0, R.A)(t), m = B.default.getId(), [p] = (0, ea.A)(t), g = X.Ay.isModerator(m, t.id), E = (0, z.Ni)(t.id), I = d(u), {
         parentAnalyticsLocation: N
-    } = (0, A.Ay)(), T = l.useRef(null), y = () => (function(e) {
+    } = (0, A.Ay)(), T = l.useRef(null), v = () => (function(e) {
         let {
             channel: t,
             appContext: n
         } = e;
-        ((0, f.X)(h.A.VOICE_CONTROL_TRAY, f.O.DISCONNECT), (0, et.A)(t)) ? (0, W.j3)(t, n) : o.default.disconnect()
+        ((0, f.X)(h.A.VOICE_CONTROL_TRAY, f.O.DISCONNECT), (0, et.A)(t)) ? (0, K.j3)(t, n) : o.default.disconnect()
     })({
         channel: t,
         appContext: a
     });
-    return (p || I) && null != c ? (0, i.jsx)(r.YNO, {
+    return (g || I) && null != c ? (0, i.jsx)(r.YNO, {
         targetElementRef: T,
         renderPopout: e => {
             let {
@@ -190,7 +190,7 @@ function e_(e) {
                     children: (0, i.jsx)(r.Drp, {
                         id: "end-stage",
                         color: "danger",
-                        action: () => (0, W.$q)(t, a),
+                        action: () => (0, K.$q)(t, a),
                         label: eo.intl.string(eo.t["Fmx5y/"]),
                         icon: r.aXh,
                         leadingAccessory: {
@@ -214,17 +214,17 @@ function e_(e) {
             return (0, i.jsx)(P.A, {
                 ref: T,
                 label: eo.intl.string(eo.t.c6qKwr),
-                onClick: y,
+                onClick: v,
                 onPopoutClick: n,
                 popoutOpen: l
             })
         }
-    }) : _ && !E || g ? (0, i.jsx)(P.A, {
+    }) : _ && !E || p ? (0, i.jsx)(P.A, {
         label: eo.intl.string(eo.t.SMKyih),
-        onClick: y
+        onClick: v
     }) : (0, i.jsx)(P.A, {
         label: eo.intl.string(eo.t.c6qKwr),
-        onClick: y
+        onClick: v
     })
 }
 
@@ -244,7 +244,7 @@ function em(e) {
     })
 }
 
-function eg(e) {
+function ep(e) {
     let {
         channelId: t
     } = e, {
@@ -257,7 +257,7 @@ function eg(e) {
         iconComponent: l ? r.CIB : r.T7G,
         color: l ? void 0 : "green",
         onClick: () => {
-            (0, f.X)(n, f.O.STAGE_MUSIC, l), (0, $.k)(!l)
+            (0, f.X)(n, f.O.STAGE_MUSIC, l), (0, J.k)(!l)
         }
     }) : (0, i.jsx)(G.l, {
         isTrayButton: !0,
@@ -266,11 +266,11 @@ function eg(e) {
         iconComponent: o ? r.T7G : r.CIB,
         color: o ? "green" : void 0,
         onClick: () => {
-            (0, f.X)(n, f.O.STAGE_MUSIC, !o), (0, $.C)(!o)
+            (0, f.X)(n, f.O.STAGE_MUSIC, !o), (0, J.C)(!o)
         }
     })
 }
-let ep = l.memo(function(e) {
+let eg = l.memo(function(e) {
     let {
         channel: t
     } = e, {
@@ -282,10 +282,10 @@ let ep = l.memo(function(e) {
     } = (0, R.A)(t), c = (0, z.Ni)(t.id), u = (0, s.bG)([E.default], () => null != E.default.getAwaitingRemoteSessionInfo()), {
         cameraUnavailable: h,
         enabled: f
-    } = (0, y.A)(), C = (0, j.A)(t), {
+    } = (0, v.A)(), C = (0, j.A)(t), {
         limit: N,
         reachedLimit: T
-    } = (0, v.A)(t), S = (0, s.bG)([K.default], () => K.default.getCurrentUser()), b = (0, s.bG)([V.Ay], () => (0, I.A)(V.Ay)), D = (0, s.bG)([F.A], () => F.A.getVoiceChannelId() === t.id, [t.id]), G = (0, s.bG)([_.A], () => _.A.getStreamParticipants(t.id)[0], [t.id]), P = (0, Q.qT)(t.id), B = N > 0, H = T && !P || null != G && G.user.id !== S?.id, W = (0, x.s)("AudioDeviceMenu", n, {
+    } = (0, y.A)(t), S = (0, s.bG)([W.default], () => W.default.getCurrentUser()), b = (0, s.bG)([V.Ay], () => (0, I.A)(V.Ay)), D = (0, s.bG)([F.A], () => F.A.getVoiceChannelId() === t.id, [t.id]), G = (0, s.bG)([_.A], () => _.A.getStreamParticipants(t.id)[0], [t.id]), P = (0, Q.qT)(t.id), B = N > 0, H = T && !P || null != G && G.user.id !== S?.id, K = (0, x.s)("AudioDeviceMenu", n, {
         entrypoint: er.GK.CARET
     }), Y = l.useRef(null), q = l.useRef(null);
     if (null == S) return null;
@@ -296,7 +296,7 @@ let ep = l.memo(function(e) {
                 closePopout: t
             } = e;
             return (0, i.jsx)(U.A, {
-                children: (0, i.jsx)(g.A, {
+                children: (0, i.jsx)(p.A, {
                     onClose: t,
                     minimal: !0,
                     onInteraction: (0, x.s)("VideoDeviceMenu", n, {
@@ -350,7 +350,7 @@ let ep = l.memo(function(e) {
                             renderOutputVolume: !0,
                             renderDeafen: !0,
                             minimal: !0,
-                            onInteraction: W
+                            onInteraction: K
                         })
                     })
                 },
@@ -372,7 +372,7 @@ let ep = l.memo(function(e) {
                         serverMute: d,
                         suppress: a,
                         popoutOpen: l,
-                        onClick: () => (0, p.A)(d, a, "Stage Channel Controls"),
+                        onClick: () => (0, g.A)(d, a, "Stage Channel Controls"),
                         awaitingRemote: u
                     })
                 }
@@ -386,7 +386,7 @@ let ep = l.memo(function(e) {
                 canGoLive: b,
                 hasPermission: C,
                 disabled: H
-            }) : null, (0, i.jsx)(eg, {
+            }) : null, (0, i.jsx)(ep, {
                 channelId: t.id
             }), D && (0, i.jsx)(eu, {
                 channel: t
@@ -411,7 +411,7 @@ function ef(e) {
         className: ed.iE,
         children: [(0, i.jsx)("div", {
             className: ed.qi,
-            children: (0, i.jsx)(eg, {
+            children: (0, i.jsx)(ep, {
                 channelId: t.id
             })
         }), (0, i.jsx)(e_, {
@@ -440,7 +440,7 @@ let ex = l.memo(function(e) {
             }) : null, (0, i.jsx)("div", {
                 className: ed.me
             })]
-        }), (0, i.jsx)(ep, {
+        }), (0, i.jsx)(eg, {
             channel: t
         })]
     }) : (0, i.jsx)(eh, {

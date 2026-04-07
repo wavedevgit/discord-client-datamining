@@ -1,10 +1,10 @@
 /** chunk id: 397400 params = (module,exports,require) **/
 n.d(t, {
-    Ai: () => g,
+    Ai: () => p,
     ET: () => x,
     Jh: () => m,
     SX: () => h,
-    ed: () => p,
+    ed: () => g,
     f7: () => f,
     ft: () => u,
     gU: () => I,
@@ -103,7 +103,7 @@ function m(e) {
     })
 }
 
-function g(e, t, n, i) {
+function p(e, t, n, i) {
     a.default.track(d.HAw.GAME_SERVER_JOIN_CLICKED, {
         guild_id: e,
         game_id: t,
@@ -112,7 +112,7 @@ function g(e, t, n, i) {
     })
 }
 
-function p(e, t, n) {
+function g(e, t, n) {
     a.default.track(d.HAw.GAME_SERVER_COPY_IP_CLICKED, {
         guild_id: e,
         game_server_id: t,
