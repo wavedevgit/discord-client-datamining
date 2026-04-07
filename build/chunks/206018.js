@@ -21,8 +21,8 @@ var r = n(110259),
     b = n(532624),
     C = n(723702),
     T = n(17143),
-    I = n(819027),
-    v = n(652215),
+    v = n(819027),
+    I = n(652215),
     S = n(509381),
     h = n(731854),
     x = n(985018),
@@ -53,7 +53,7 @@ function E(e) {
             location_stack: j
         }
     });
-    let B = (0, I.A)(t),
+    let B = (0, v.A)(t),
         G = (0, d.H)({
             deviceType: h.oh.AUDIO_INPUT,
             analyticsLocations: j,
@@ -71,16 +71,16 @@ function E(e) {
         F = l.x.DEFAULT,
         X = g.Ay.isSelfDeaf(F),
         J = (0, i.bG)([g.Ay], () => g.Ay.getMode()),
-        Y = J === v.TBI.VOICE_ACTIVITY ? v.TBI.PUSH_TO_TALK : v.TBI.VOICE_ACTIVITY,
+        Y = J === I.TBI.VOICE_ACTIVITY ? I.TBI.PUSH_TO_TALK : I.TBI.VOICE_ACTIVITY,
         z = (0, i.bG)([g.Ay, b.Ay], () => {
             let e = g.Ay.getModeOptions().shortcut?.length > 0,
-                t = null != b.Ay.getKeybindForAction(v.hCu.PUSH_TO_TALK, !1, !0),
-                n = null != b.Ay.getKeybindForAction(v.hCu.PUSH_TO_TALK_PRIORITY, !1, !0);
+                t = null != b.Ay.getKeybindForAction(I.hCu.PUSH_TO_TALK, !1, !0),
+                n = null != b.Ay.getKeybindForAction(I.hCu.PUSH_TO_TALK_PRIORITY, !1, !0);
             return e || t || n
         }),
         q = (0, i.bG)([m.A], () => null != m.A.getChannelId());
     return (0, a.jsx)(_.A, {
-        object: v.ZSU.CONTEXT_MENU,
+        object: I.ZSU.CONTEXT_MENU,
         children: (0, a.jsxs)(o.W1t, {
             "data-menu-migrated": !0,
             onSelect: E,
@@ -95,10 +95,11 @@ function E(e) {
             }), (0, a.jsxs)(o.rXV, {
                 children: [w && K, L && q && (0, a.jsx)(o.aK1, {
                     id: "input-device-meter",
+                    interactive: !1,
                     control: () => (0, a.jsx)(T.A, {
                         notchBackground: T.V.BLACK,
                         location: {
-                            section: v.JJy.CONTEXT_MENU
+                            section: I.JJy.CONTEXT_MENU
                         },
                         meterOnly: !0,
                         containerClassName: y.Eq,
@@ -107,7 +108,7 @@ function E(e) {
                 }), D && Q]
             }), (0, a.jsxs)(o.rXV, {
                 children: [O && C.isPlatformEmbedded && z ? (0, a.jsx)(o.sLh, {
-                    checked: J === v.TBI.PUSH_TO_TALK,
+                    checked: J === I.TBI.PUSH_TO_TALK,
                     id: "input-mode",
                     label: x.intl.string(x.t.Q8gkVL),
                     action: () => s.A.setMode(Y, void 0, void 0, {

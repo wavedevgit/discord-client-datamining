@@ -16,6 +16,7 @@ function d(t) {
     return (0, i.jsx)(r.aK1, {
         id: "input",
         label: u.intl.string(u.t.OX2Bnr),
+        interactive: !1,
         control: (n, l) => (0, i.jsx)(r.i42, {
             ...n,
             ref: l,

@@ -21,28 +21,28 @@ let n = async e => window.Meticulous?.isRunningAsTest ? (console.debug("Running 
     isProduction: u,
     version: a
 }) => {
-    let _ = !1;
-    return new Promise((E, w) => {
-        var p;
+    let w = !1;
+    return new Promise((p, _) => {
+        var E;
         let S = s ?? 2e3;
         S > 0 && setTimeout(() => {
-            _ = !0, E({
+            w = !0, p({
                 stopRecording: async () => {}
             })
         }, S);
         let R = document.createElement("script");
-        R.type = "text/javascript", R.src = new URL(`${null!=a?"record/":""}${null==(p=a??null)?"v1":`v/${p}`}/meticulous-manual-init.js`, r || "https://snippet.meticulous.ai").href;
-        let I = window;
-        I.METICULOUS_RECORDING_TOKEN = o ?? e, void 0 !== i && (I.METICULOUS_UPLOAD_INTERVAL_MS = i), void 0 !== t && (I.METICULOUS_APP_COMMIT_HASH = t), void 0 !== n && (I.METICULOUS_SNAPSHOT_LINKED_STYLESHEETS = n), void 0 !== d && (I.METICULOUS_FORCE_RECORDING = d), void 0 !== u && (I.METICULOUS_IS_PRODUCTION_ENVIRONMENT = u), null != l && l.length > 0 && (I.METICULOUS_NETWORK_RESPONSE_SANITIZERS = l), null != c && c.length > 0 && (I.METICULOUS_RECORDER_MIDDLEWARE_V1 = c), R.onload = function() {
-            if (_) return void console.debug("Meticulous snippet abandoned due to max blocking time reached.");
+        R.type = "text/javascript", R.src = new URL(`${null!=a?"record/":""}${null==(E=a??null)?"v1":`v/${E}`}/meticulous-manual-init.js`, r || "https://snippet.meticulous.ai").href;
+        let M = window;
+        M.METICULOUS_RECORDING_TOKEN = o ?? e, void 0 !== i && (M.METICULOUS_UPLOAD_INTERVAL_MS = i), void 0 !== t && (M.METICULOUS_APP_COMMIT_HASH = t), void 0 !== n && (M.METICULOUS_SNAPSHOT_LINKED_STYLESHEETS = n), void 0 !== d && (M.METICULOUS_FORCE_RECORDING = d), void 0 !== u && (M.METICULOUS_IS_PRODUCTION_ENVIRONMENT = u), null != l && l.length > 0 && (M.METICULOUS_NETWORK_RESPONSE_SANITIZERS = l), null != c && c.length > 0 && (M.METICULOUS_RECORDER_MIDDLEWARE_V1 = c), R.onload = function() {
+            if (w) return void console.debug("Meticulous snippet abandoned due to max blocking time reached.");
             let e = window.__meticulous?.initialiseRecorder;
-            if ("function" != typeof e) return void w("Meticulous recorder failed to initialise.");
+            if ("function" != typeof e) return void _("Meticulous recorder failed to initialise.");
             try {
                 e()
             } catch (e) {
-                w(e)
+                _(e)
             }
-            E({
+            p({
                 stopRecording: async () => {
                     let e = window.__meticulous?.stopRecording;
                     if (!e) throw Error("Recorder not initialised: window.__meticulous.stopRecording is not defined.");
@@ -50,7 +50,7 @@ let n = async e => window.Meticulous?.isRunningAsTest ? (console.debug("Running 
                 }
             })
         }, R.onerror = () => {
-            w("Meticulous recorder failed to initialise.")
+            _("Meticulous recorder failed to initialise.")
         }, document.head.appendChild(R)
     })
 }, s = async () => {

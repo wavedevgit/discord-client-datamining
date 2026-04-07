@@ -157,9 +157,7 @@ function M(e) {
             className: P.zH,
             children: [(0, i.jsxs)("div", {
                 className: P.lI,
-                children: [B && null != U && (0, i.jsx)(N.V, {
-                    application: U
-                }), (0, i.jsxs)("div", {
+                children: [B && (0, i.jsx)(N.V, {}), (0, i.jsxs)("div", {
                     className: P.PB,
                     children: [null != V && (0, i.jsx)("img", {
                         src: V.toString(),
