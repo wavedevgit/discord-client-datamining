@@ -38,14 +38,14 @@ function x(e) {
         popoutType: n
     } = e, {
         reducedMotion: x
-    } = l.useContext(r.CZ), C = (0, l.useRef)(null), S = h.K.getState().clipsButtonRef, T = (0, m._z)(t), N = (0, a.bG)([d.A], () => d.A.getActiveAnimation()), I = (0, a.yK)([d.A], () => d.A.getStreamClipAnimations(T)), v = (0, l.useRef)(void 0);
+    } = l.useContext(r.CZ), C = (0, l.useRef)(null), S = h.K.getState().clipsButtonRef, T = (0, m._z)(t), I = (0, a.bG)([d.A], () => d.A.getActiveAnimation()), N = (0, a.yK)([d.A], () => d.A.getStreamClipAnimations(T)), v = (0, l.useRef)(void 0);
     l.useEffect(() => () => {
         (0, u.MI)(T)
     }, [T]);
-    let b = e => {
+    let y = e => {
             if (n !== c.N.NO_POPOUT) return p;
             let t = S?.getBoundingClientRect();
-            if (v.current = t, e.timestamp !== N || null == t) return p;
+            if (v.current = t, e.timestamp !== I || null == t) return p;
             let {
                 top: i,
                 left: l
@@ -57,10 +57,10 @@ function x(e) {
                 width: 268
             }
         },
-        y = (0, l.useRef)(null),
-        j = (0, o.pnh)(I, {
+        b = (0, l.useRef)(null),
+        j = (0, o.pnh)(N, {
             keys: e => e.timestamp,
-            ref: y,
+            ref: b,
             from: {
                 opacity: .2
             },
@@ -70,14 +70,14 @@ function x(e) {
             config: f
         }, "animate-always"),
         R = (0, l.useRef)(null),
-        M = (0, o.pnh)(I, {
+        M = (0, o.pnh)(N, {
             ref: R,
             keys: e => e.timestamp,
             from: e => ({
                 position: "fixed",
                 visibility: "hidden",
                 opacity: 1,
-                ...x.enabled ? b(e) : (() => {
+                ...x.enabled ? y(e) : (() => {
                     if (n !== c.N.NO_POPOUT) return p;
                     let e = C.current?.getBoundingClientRect();
                     return null == e ? p : {
@@ -91,7 +91,7 @@ function x(e) {
             enter: e => [{
                 opacity: 1,
                 visibility: "visible",
-                ...b(e)
+                ...y(e)
             }],
             leave: {
                 opacity: 0,
@@ -108,10 +108,10 @@ function x(e) {
             },
             config: x.enabled ? E : _,
             onRest: (e, t) => {
-                null != t.item && null != I.find(e => e.timestamp === t.item.timestamp) && (0, u.MI)(T, t.item.timestamp)
+                null != t.item && null != N.find(e => e.timestamp === t.item.timestamp) && (0, u.MI)(T, t.item.timestamp)
             }
         }, "animate-always");
-    return (0, s.useChain)([y, R], [0, .1], 3e3), (0, i.jsxs)(i.Fragment, {
+    return (0, s.useChain)([b, R], [0, .1], 3e3), (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)("div", {
             className: g.R,
             ref: C

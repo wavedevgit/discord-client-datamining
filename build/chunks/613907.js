@@ -31,10 +31,10 @@ function T(e) {
         (0, d.zk)("847199849233514549", !0)
     }, []);
     let T = (0, r.bG)([A.A, m.default], () => !!a()(A.A.getMessages(t.id).toArray()).reverse().find(e => e.author.id !== m.default.getId() && e.state === E.cmJ.SENT && !(0, _.A)(e))),
-        N = (0, r.bG)([g.default], () => g.default.getUser(t.isPrivate() ? t.getRecipientId() : null)),
-        I = f.Ay.useName(N) ?? x.intl.string(x.t.y1Wu2f),
+        I = (0, r.bG)([g.default], () => g.default.getUser(t.isPrivate() ? t.getRecipientId() : null)),
+        N = f.Ay.useName(I) ?? x.intl.string(x.t.y1Wu2f),
         v = (0, r.bG)([u.A], () => u.A.getStickerById(S)),
-        b = l.useCallback(async () => {
+        y = l.useCallback(async () => {
             if (null == n || "" === n) try {
                 await c.A.sendGreetMessage(t.id, S), p.default.track(E.HAw.DM_EMPTY_ACTION, {
                     channel_id: t.id,
@@ -46,8 +46,8 @@ function T(e) {
                 e.ok || 429 !== e.status || s(x.intl.string(x.t.Whhv4w))
             }
         }, [t.id, t.type, n]),
-        y = x.intl.formatToPlainString(x.t.m0zYbV, {
-            username: I
+        b = x.intl.formatToPlainString(x.t.m0zYbV, {
+            username: N
         }),
         j = null != n && "" !== n ? (0, i.jsx)(o.Text, {
             className: C.z3,
@@ -60,14 +60,14 @@ function T(e) {
         children: [(0, i.jsxs)(o.DUT, {
             className: null != n && "" !== n ? C.AO : C.Iq,
             "aria-label": x.intl.string(x.t.pJObYI),
-            onClick: b,
+            onClick: y,
             children: [(0, i.jsx)(h.A, {
                 sticker: v,
                 size: 24
             }), (0, i.jsx)(o.Text, {
                 className: C.Qq,
                 variant: "text-md/medium",
-                children: y
+                children: b
             })]
         }), j]
     }) : (0, i.jsxs)("div", {
@@ -80,9 +80,9 @@ function T(e) {
             fullWidth: !0,
             variant: "primary",
             size: "md",
-            onClick: b,
+            onClick: y,
             disabled: !!n,
-            text: y
+            text: b
         }), j]
     })
 }

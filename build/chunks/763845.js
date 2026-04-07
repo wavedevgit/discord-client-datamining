@@ -116,11 +116,11 @@ let x = function(e) {
             })
         }, [e, S]),
         {
-            connectionState: N,
-            connectionTypeText: I
+            connectionState: I,
+            connectionTypeText: N
         } = e,
         v = c.Q_.getSetting(),
-        b = {
+        y = {
             [g.S7L.AWAITING_ENDPOINT]: f.intl.format(f.t.Eu2vUR, {
                 url: g.qF7.STATUS
             }),
@@ -139,14 +139,14 @@ let x = function(e) {
                 url: m.A.getArticleURL(g.MVz.VOICE_CONNECTION_ERRORS)
             }),
             [g.S7L.RTC_DISCONNECTED]: f.intl.string(f.t.fOX25I)
-        } [N];
+        } [I];
     return (0, i.jsxs)("div", {
         className: _.kL,
-        children: ["function" == typeof b ? b() : (0, i.jsx)(a.Text, {
+        children: ["function" == typeof y ? y() : (0, i.jsx)(a.Text, {
             tag: "p",
             variant: "text-sm/normal",
             color: "text-muted",
-            children: b
+            children: y
         }), v && d.Ay.supports(p.O5.DIAGNOSTICS) && !__OVERLAY__ && (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)("hr", {
                 className: E.me
@@ -192,7 +192,7 @@ let x = function(e) {
             }), (0, i.jsx)(a.Text, {
                 variant: "text-xs/medium",
                 color: "text-feedback-positive",
-                children: I
+                children: N
             })]
         }), !v && !__OVERLAY__ && (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)("hr", {

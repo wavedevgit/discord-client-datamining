@@ -24,11 +24,11 @@ var i = n(627968),
     C = n(854627),
     S = n(530804),
     T = n(961350),
-    N = n(430452),
-    I = n(531685),
+    I = n(430452),
+    N = n(531685),
     v = n(562153),
-    b = n(51082),
-    y = n(566566),
+    y = n(51082),
+    b = n(566566),
     j = n(289552),
     R = n(652215),
     M = n(731854),
@@ -71,11 +71,11 @@ function w(e) {
         noVideoRender: G = !1,
         pulseSpeakingIndicator: F = !1,
         paused: B = !1
-    } = e, H = N.Ay.getVideoComponent(), V = (0, r.bG)([T.default], () => T.default.getId()), {
+    } = e, H = I.Ay.getVideoComponent(), V = (0, r.bG)([T.default], () => T.default.getId()), {
         user: K,
         streamId: W,
         speaking: z
-    } = t, q = K.id === V, Y = (0, b.Ay)(t), J = (0, r.bG)([I.A], () => I.A.isFocused()), $ = (0, r.bG)([x.A], () => x.A.getWindowFocused(R.MLl.CHANNEL_CALL_POPOUT)), Z = (0, r.bG)([N.Ay], () => null != K.id && N.Ay.isLocalVideoDisabled(K.id, (0, m.A)(t.type)), [K.id, t.type]), X = (0, f.A)(n.guild_id, K.id), Q = v.Ay.getName(n.getGuildId(), n.id, K) + (X ? ` ${D.intl.string(D.t["pFO/Ph"])}` : ""), ee = z && ($ || J), et = o < 124 ? P : L, {
+    } = t, q = K.id === V, Y = (0, y.Ay)(t), J = (0, r.bG)([N.A], () => N.A.isFocused()), $ = (0, r.bG)([x.A], () => x.A.getWindowFocused(R.MLl.CHANNEL_CALL_POPOUT)), Z = (0, r.bG)([I.Ay], () => null != K.id && I.Ay.isLocalVideoDisabled(K.id, (0, m.A)(t.type)), [K.id, t.type]), X = (0, f.A)(n.guild_id, K.id), Q = v.Ay.getName(n.getGuildId(), n.id, K) + (X ? ` ${D.intl.string(D.t["pFO/Ph"])}` : ""), ee = z && ($ || J), et = o < 124 ? P : L, {
         avatarSrc: en,
         avatarDecorationSrc: ei
     } = (0, C.A)({
@@ -97,7 +97,7 @@ function w(e) {
             user: n
         } = eo.current;
         e.isGuildStageVoice() && !Y && t?.id === n.id && d.A.selectParticipant(e.id, null)
-    }, [Y]), s && !Z && !G && Y && !c && null != H && N.Ay.supports(M.O5.VIDEO)) ? null != es && null == ea ? (0, i.jsx)(y.A, {
+    }, [Y]), s && !Z && !G && Y && !c && null != H && I.Ay.supports(M.O5.VIDEO)) ? null != es && null == ea ? (0, i.jsx)(b.A, {
         avError: es,
         userId: t.id,
         width: o,

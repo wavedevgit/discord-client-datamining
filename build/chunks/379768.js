@@ -23,11 +23,11 @@ var i = n(627968),
     C = n(317525),
     S = n(71393),
     T = n(576705),
-    N = n(287809),
-    I = n(488926),
+    I = n(287809),
+    N = n(488926),
     v = n(427262),
-    b = n(314307),
-    y = n(234567),
+    y = n(314307),
+    b = n(234567),
     j = n(652215),
     R = n(985018),
     M = n(650373),
@@ -36,43 +36,43 @@ var i = n(627968),
 function O(e) {
     let {
         channel: t
-    } = e, [n, s] = l.useState(!1), r = (0, g.Ay)(t, !0), O = t.guild_id, L = (0, d.bG)([C.A], () => null != O ? C.A.getSortedRoles(O) : void 0), P = (0, d.bG)([N.default, S.A], () => N.default.getUser(S.A.getGuild(O)?.ownerId)), k = l.useMemo(() => null != L ? L.filter(e => !(0, x.Oy)(e)) : [], [L]), w = l.useMemo(() => o()(k).filter(e => {
+    } = e, [n, s] = l.useState(!1), r = (0, g.Ay)(t, !0), O = t.guild_id, L = (0, d.bG)([C.A], () => null != O ? C.A.getSortedRoles(O) : void 0), P = (0, d.bG)([I.default, S.A], () => I.default.getUser(S.A.getGuild(O)?.ownerId)), k = l.useMemo(() => null != L ? L.filter(e => !(0, x.Oy)(e)) : [], [L]), w = l.useMemo(() => o()(k).filter(e => {
         if (null == O) return !1;
-        let n = I.aH({
+        let n = N.aH({
             forceRoles: {
                 [e.id]: e
             },
             context: t
         });
         return c.X8(n, c.kg(j.xBc.ADMINISTRATOR, j.xBc.VIEW_CHANNEL))
-    }).value(), [t, O, k]), U = (0, d.yK)([N.default], () => {
+    }).value(), [t, O, k]), U = (0, d.yK)([I.default], () => {
         let e = {};
         for (let n of (null != P && (e[P.id] = P), Object.values(t.permissionOverwrites))) {
             if (n.type !== A.r2.MEMBER || null != e[n.id]) continue;
-            let t = N.default.getUser(n.id);
+            let t = I.default.getUser(n.id);
             null != t && (e[t.id] = t)
         }
         return o()(e).filter(e => {
-            let n = I.$3({
+            let n = N.$3({
                     permission: j.xBc.ADMINISTRATOR,
                     user: e,
                     context: t
                 }),
-                i = t.permissionOverwrites[e.id] ?? I.x3,
+                i = t.permissionOverwrites[e.id] ?? N.x3,
                 l = c.zy(i.allow, j.xBc.VIEW_CHANNEL);
             return n || l
         }).value()
     }, [t, P]), G = T.A.can(j.xBc.MANAGE_CHANNELS, t) || T.A.can(j.xBc.MANAGE_ROLES, t), F = l.useCallback(() => s(!1), []);
-    return (0, i.jsxs)(b.Ay, {
+    return (0, i.jsxs)(y.Ay, {
         channelId: t.id,
-        children: [(0, i.jsx)(b.WK, {
+        children: [(0, i.jsx)(y.WK, {
             locked: !0,
             channelType: t.type
-        }), (0, i.jsx)(b.cr, {
+        }), (0, i.jsx)(y.cr, {
             children: R.intl.format(R.t.I3R7Vn, {
                 channelName: r
             })
-        }), (0, i.jsx)(b.j1, {
+        }), (0, i.jsx)(y.j1, {
             className: D.PT,
             children: R.intl.format(R.t.QuwqjG, {
                 channelName: r,
@@ -129,7 +129,7 @@ function O(e) {
             }(), w.map((e, n) => {
                 let l = e.colorString ?? j.TpD,
                     s = e.tags?.guild_connections !== void 0;
-                return G ? (0, i.jsx)(y.A, {
+                return G ? (0, i.jsx)(b.A, {
                     className: a()(M.JC, {
                         [M.HV]: n === w.length - 1
                     }),

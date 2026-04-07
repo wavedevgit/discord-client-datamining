@@ -23,11 +23,11 @@ var i = n(627968),
     C = n(573163),
     S = n(483202),
     T = n(226698),
-    N = n(376708),
-    I = n(715757),
+    I = n(376708),
+    N = n(715757),
     v = n(390897),
-    b = n(704860),
-    y = n(152007),
+    y = n(704860),
+    b = n(152007),
     j = n(867455),
     R = n(734057),
     M = n(147036),
@@ -45,7 +45,7 @@ var i = n(627968),
 function H(e) {
     let {
         channel: t
-    } = e, s = t.isArchivedThread(), a = (0, N.uW)(t), [r, c] = l.useState(!1), u = () => {
+    } = e, s = t.isArchivedThread(), a = (0, I.uW)(t), [r, c] = l.useState(!1), u = () => {
         c(!0), T.A.resolveFlag(t.id).then(() => {
             c(!1)
         })
@@ -86,15 +86,15 @@ function V(e) {
         parentChannelId: o
     } = e, {
         ref: T,
-        width: N
+        width: I
     } = (0, m.Ay)(), [v, U] = l.useState(3), [V, K] = l.useState(!n), [W, z] = (0, A.A)(!1, 2e3), q = (0, r.bG)([R.A], () => R.A.getChannel(t), [t]), {
         firstMessage: Y
-    } = (0, L.OA)(q), J = (0, r.bG)([y.A], () => y.A.hasJoined(t)), {
+    } = (0, L.OA)(q), J = (0, r.bG)([b.A], () => b.A.hasJoined(t)), {
         disableReactionUpdates: $,
         disableReactionCreates: Z,
         isLurking: X,
         isPendingMember: Q
-    } = (0, _.A)(q), ee = (0, I.W1)(q), et = (0, r.bG)([R.A], () => R.A.getChannel(o)), en = (0, O.Ck)(et), ei = (0, r.bG)([g.A], () => g.A.shouldDisplayPrompt(t) && !0 === n, [t, n]), el = l.useCallback(e => {
+    } = (0, _.A)(q), ee = (0, N.W1)(q), et = (0, r.bG)([R.A], () => R.A.getChannel(o)), en = (0, O.Ck)(et), ei = (0, r.bG)([g.A], () => g.A.shouldDisplayPrompt(t) && !0 === n, [t, n]), el = l.useCallback(e => {
         let t = e[0];
         if (null != t && n) {
             let e = t.intersectionRect,
@@ -114,8 +114,8 @@ function V(e) {
     });
     let [es, ea] = l.useState(!0);
     if (l.useEffect(() => {
-            null == N || (U(Math.floor((N - 280) / 58)), ea(!1))
-        }, [N]), null == q || null == Y) return null;
+            null == I || (U(Math.floor((I - 280) / 58)), ea(!1))
+        }, [I]), null == q || null == Y) return null;
     let er = Y.reactions.length > 0,
         eo = () => {
             (0, P.jC)({
@@ -134,7 +134,7 @@ function V(e) {
             ref: T,
             children: [ee ? (0, i.jsx)("div", {
                 className: G.kX,
-                children: (0, i.jsx)(b.A, {
+                children: (0, i.jsx)(y.A, {
                     message: Y,
                     channel: q
                 })

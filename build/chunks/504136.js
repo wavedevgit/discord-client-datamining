@@ -27,8 +27,8 @@ function h(e) {
         S = null != g ? r.default.extractTimestamp(g) : null,
         T = null;
     return A.forEach(e => {
-        var s, N;
-        let I, v;
+        var s, I;
+        let N, v;
         if (null != f && f.length > 0) {
             let t = r.default.extractTimestamp(e.id);
             for (let e = 0; e < f?.length; e++) {
@@ -46,13 +46,13 @@ function h(e) {
                 }
             }
         }
-        let b = (0, a.i$)(e.timestamp, "LL");
-        b !== t && null == T && (x.push({
+        let y = (0, a.i$)(e.timestamp, "LL");
+        y !== t && null == T && (x.push({
             type: u.TZK.DIVIDER,
-            content: b,
-            contentKey: b
-        }), t = b);
-        let y = x[x.length - 1],
+            content: y,
+            contentKey: y
+        }), t = y);
+        let b = x[x.length - 1],
             j = null,
             R = (0, c.kf)(e);
         C = C || R;
@@ -64,14 +64,14 @@ function h(e) {
             else if ((0, c.iJ)(e) && n) return u.TZK.MESSAGE_GROUP_SPAMMER;
             return null
         }(m, e, R && p);
-        (null !== M && ([j, y] = (v = s = y, null == s || s.type !== M ? (I = {
+        (null !== M && ([j, b] = (v = s = b, null == s || s.type !== M ? (N = {
             type: M,
             content: [],
             key: e.id
-        }, x.push(I)) : v = (I = s).content[I.content.length - 1], [I, v])), g === e.id && null != S) ? (null != y && y.type === u.TZK.DIVIDER ? y.unreadId = e.id : null !== j ? (N = j, e.isFirstMessageInForumPost(m) || N.content.push({
+        }, x.push(N)) : v = (N = s).content[N.content.length - 1], [N, v])), g === e.id && null != S) ? (null != b && b.type === u.TZK.DIVIDER ? b.unreadId = e.id : null !== j ? (I = j, e.isFirstMessageInForumPost(m) || I.content.push({
             type: u.TZK.DIVIDER,
             unreadId: e.id
-        }), N.hasUnread = !0) : e.isFirstMessageInForumPost(m) || x.push({
+        }), I.hasUnread = !0) : e.isFirstMessageInForumPost(m) || x.push({
             type: u.TZK.DIVIDER,
             unreadId: e.id
         }), S = null) : null != S && r.default.extractTimestamp(e.id) > S && (e.isFirstMessageInForumPost(m) || x.push({
@@ -84,7 +84,7 @@ function h(e) {
             content: D.message,
             groupId: D.message.id
         });
-        let O = y?.type === u.TZK.MESSAGE ? h : y;
+        let O = b?.type === u.TZK.MESSAGE ? h : b;
         (0, o.l)(m, O, e) && (n = e.id);
         let L = {
             type: e.type === u.lAJ.THREAD_STARTER_MESSAGE ? u.TZK.THREAD_STARTER_MESSAGE : u.TZK.MESSAGE,

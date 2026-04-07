@@ -54,12 +54,12 @@ let o = {
                         gap: "16px",
                         alignItems: "center"
                     },
-                    children: [(0, a.jsx)(n.k, {
+                    children: [(0, a.jsx)(n.kL, {
                         variant: t,
                         onClick: () => {},
                         accessibleLabel: l,
                         children: (0, a.jsx)(r, {})
-                    }), (0, a.jsx)(n.k, {
+                    }), (0, a.jsx)(n.kL, {
                         variant: t,
                         onClick: () => {},
                         accessibleLabel: l,
@@ -90,13 +90,13 @@ let o = {
                         gap: "16px",
                         alignItems: "center"
                     },
-                    children: [(0, a.jsx)(n.N, {
+                    children: [(0, a.jsx)(n.NW, {
                         variant: t,
                         onClick: () => {},
                         accessibleLabel: o,
                         showOverlay: l,
                         children: (0, a.jsx)(r, {})
-                    }), (0, a.jsx)(n.N, {
+                    }), (0, a.jsx)(n.NW, {
                         variant: t,
                         onClick: () => {},
                         accessibleLabel: o,
@@ -139,14 +139,14 @@ let o = {
                         gap: "16px",
                         alignItems: "center"
                     },
-                    children: [(0, a.jsx)(n.N, {
+                    children: [(0, a.jsx)(n.NW, {
                         variant: t,
                         onClick: () => {},
                         accessibleLabel: o,
                         showOverlay: l,
                         deleteButtonConfig: c,
                         children: (0, a.jsx)(r, {})
-                    }), (0, a.jsx)(n.N, {
+                    }), (0, a.jsx)(n.NW, {
                         variant: t,
                         onClick: () => {},
                         accessibleLabel: o,

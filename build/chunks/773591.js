@@ -40,7 +40,7 @@ function B(e) {
         isFetchingCategories: t,
         scrollerRef: s,
         tab: B
-    } = e, M = (0, _.uM)(), P = M?.sessionId ?? "", {
+    } = e, P = (0, _.uM)(), M = P?.sessionId ?? "", {
         noCache: D,
         includeUnpublished: w
     } = (0, C.A)(), H = (0, m.W)("CollectiblesFilterableShop"), F = (0, i.bG)([d.default], () => d.default.getCurrentUser()), G = (0, i.bG)([g.A], () => g.A.productsWithVariantsAsGroup), [U, V] = r.useState(1), W = (0, c.DP)(), z = (0, a.qB)(W), [K, Y, $] = r.useMemo(() => {
@@ -62,7 +62,7 @@ function B(e) {
     }))), [G, $, Z]), X = (0, p.X)(q);
     return (r.useEffect(() => {
         (0, f.z)({
-            sessionId: P,
+            sessionId: M,
             checkpoint: f.t.SHOP_MOUNTED,
             tab: B,
             unpublishedCategoriesShown: w,
@@ -70,13 +70,13 @@ function B(e) {
         })
     }, []), r.useEffect(() => {
         t || (0, f.z)({
-            sessionId: P,
+            sessionId: M,
             checkpoint: f.t.SHOP_RENDERED,
             tab: B,
             unpublishedCategoriesShown: w,
             cacheDisabled: D
         })
-    }, [P, w, D, t, B]), t || null == F) ? (0, n.jsx)(x.A, {}) : (0, n.jsxs)(n.Fragment, {
+    }, [M, w, D, t, B]), t || null == F) ? (0, n.jsx)(x.A, {}) : (0, n.jsxs)(n.Fragment, {
         children: [(0, n.jsx)("div", {
             style: {
                 backgroundImage: `url(${Y})`
@@ -106,9 +106,9 @@ function B(e) {
                     pageSize: 40,
                     onPageChange: e => {
                         u.default.track(S.HAw.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
-                            collectibles_shop_session_id: M?.sessionId,
-                            page_section: M?.pageSection,
-                            page_category: M?.pageCategory,
+                            collectibles_shop_session_id: P?.sessionId,
+                            page_section: P?.pageSection,
+                            page_category: P?.pageCategory,
                             page_index: e,
                             page_size: 40,
                             cta_name: `${B} page ${e}`,

@@ -1,7 +1,7 @@
 /** chunk id: 921955 params = (module,exports,require) **/
 let i;
 n.d(t, {
-    A: () => b
+    A: () => y
 }), n(321073);
 var l = n(311907),
     s = n(73153),
@@ -33,11 +33,11 @@ function T() {
     _ = null, null != i && (i.destroy(), i = null), null != E && E()
 }
 
-function N() {
+function I() {
     let e = null != _ && null != _.application_id ? u.A.getApplicationActivity(_.application_id) : null;
     if (null != _ && (null == e || null == e.party || null == e.party.id)) return T()
 }
-class I extends l.Ay.Store {
+class N extends l.Ay.Store {
     static displayName = "ActivityInviteModalStore";
     initialize() {
         this.waitFor(c.A, d.A, u.A, h.A, g.default, A.default)
@@ -52,7 +52,7 @@ class I extends l.Ay.Store {
         return C
     }
 }
-let v = new I(s.h, {
+let v = new N(s.h, {
         ACTIVITY_INVITE_MODAL_OPEN: function(e) {
             _ = e.activity, E = e.resolve, x = [], null == i && (i = new r.Ay((e, t) => {
                 let n;
@@ -142,7 +142,7 @@ let v = new I(s.h, {
             } = e;
             return !!t && null != _ && (T(), !0)
         },
-        LOCAL_ACTIVITY_UPDATE: N,
-        RPC_APP_DISCONNECTED: N
+        LOCAL_ACTIVITY_UPDATE: I,
+        RPC_APP_DISCONNECTED: I
     }),
-    b = 21552 == n.j ? v : null
+    y = 21552 == n.j ? v : null

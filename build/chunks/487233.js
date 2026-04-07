@@ -1,51 +1,51 @@
 /** chunk id: 487233 params = (module,exports,require) **/
-i.d(n, {
+t.d(n, {
     m: () => f
 });
-var t = i(627968);
-i(64700);
-var a = i(311907),
-    l = i(397927),
-    s = i(688810),
-    r = i(919395),
-    d = i(385612),
-    o = i(101058),
-    c = i(696451),
-    u = i(287809),
-    _ = i(84540),
-    A = i(836602),
-    p = i(854627),
-    x = i(930349),
-    g = i(339984),
-    m = i(985018);
+var i = t(627968);
+t(64700);
+var a = t(311907),
+    l = t(397927),
+    s = t(688810),
+    r = t(919395),
+    d = t(385612),
+    o = t(101058),
+    c = t(696451),
+    u = t(287809),
+    _ = t(84540),
+    A = t(836602),
+    x = t(854627),
+    p = t(930349),
+    g = t(339984),
+    m = t(985018);
 
 function I(e) {
     let {
         user: n,
-        guildId: i
+        guildId: t
     } = e, {
         newestAnalyticsLocation: u
-    } = (0, s.Ay)(), I = null != i, f = (0, a.bG)([c.Ay], () => null != i ? c.Ay.getMember(i, n.id) : null), b = (0, a.bG)([A.A], () => A.A.getPendingChanges(i ?? void 0).pendingAvatar), h = (0, o.V7)({
+    } = (0, s.Ay)(), I = null != t, f = (0, a.bG)([c.Ay], () => null != t ? c.Ay.getMember(t, n.id) : null), b = (0, a.bG)([A.A], () => A.A.getPendingChanges(t ?? void 0).pendingAvatar), h = (0, o.V7)({
         userId: n.id,
         image: b
     }), {
         avatarSrc: v
-    } = (0, p.A)({
+    } = (0, x.A)({
         userId: n.id,
-        guildId: i,
+        guildId: t,
         avatarOverride: h,
         size: l._3J.SIZE_56
     }), j = I ? f?.avatar : n.avatar, C = null != n.avatar, y = I && f?.avatar != null, N = null != b, E = null === b, T = (0, r.z5)(b, j), L = () => (0, d.XD)({
         uploadType: g.HL.AVATAR,
         analyticsSource: u,
-        guildId: i ?? void 0,
+        guildId: t ?? void 0,
         stackingBehavior: "stack"
     });
-    if (!(E ? I && C : N || y || C)) return (0, t.jsx)(x.k, {
+    if (!(E ? I && C : N || y || C)) return (0, i.jsx)(p.kL, {
         variant: "square",
         onClick: L,
         accessibleLabel: m.intl.string(m.t["4OynCD"]),
-        children: (0, t.jsx)(l.euF, {
+        children: (0, i.jsx)(l.euF, {
             src: v,
             size: l._3J.SIZE_56,
             "aria-hidden": !0
@@ -55,19 +55,19 @@ function I(e) {
         O = T ? {
             onClick: () => {
                 (0, _.p)({
-                    guildId: i ?? void 0,
+                    guildId: t ?? void 0,
                     avatar: null
                 }), (0, r.WU)(null)
             },
             type: P ? "reset" : "remove",
             accessibleLabel: m.intl.string(P ? m.t.Y0mxy1 : m.t.twB3fz)
         } : void 0;
-    return (0, t.jsx)(x.N, {
+    return (0, i.jsx)(p.NW, {
         variant: "square",
         onClick: L,
         accessibleLabel: m.intl.string(m.t["4OynCD"]),
         deleteButtonConfig: O,
-        children: (0, t.jsx)(l.euF, {
+        children: (0, i.jsx)(l.euF, {
             src: v,
             size: l._3J.SIZE_56,
             "aria-hidden": !0
@@ -78,9 +78,9 @@ function I(e) {
 function f(e) {
     let {
         guildId: n
-    } = e, i = (0, a.bG)([u.default], () => u.default.getCurrentUser());
-    return null == i ? null : (0, t.jsx)(I, {
-        user: i,
+    } = e, t = (0, a.bG)([u.default], () => u.default.getCurrentUser());
+    return null == t ? null : (0, i.jsx)(I, {
+        user: t,
         guildId: n
     })
 }

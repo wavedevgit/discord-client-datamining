@@ -1,56 +1,56 @@
 /** chunk id: 240783 params = (module,exports,require) **/
-i.d(n, {
+t.d(n, {
     A: () => b
 });
-var t = i(627968),
-    a = i(64700),
-    l = i(311907),
-    s = i(397927),
-    r = i(351906),
-    d = i(183555),
-    o = i(382120),
-    c = i(128490),
-    u = i(539548),
-    _ = i(412775),
-    A = i(86404),
-    p = i(738759),
-    x = i(518477),
-    g = i(985018),
-    m = i(643146),
-    I = i(843796);
+var i = t(627968),
+    a = t(64700),
+    l = t(311907),
+    s = t(397927),
+    r = t(351906),
+    d = t(183555),
+    o = t(382120),
+    c = t(128490),
+    u = t(539548),
+    _ = t(412775),
+    A = t(86404),
+    x = t(738759),
+    p = t(518477),
+    g = t(985018),
+    m = t(643146),
+    I = t(843796);
 
 function f(e) {
     let {
         section: n,
-        user: i,
+        user: t,
         currentUser: a,
         displayProfile: l,
         guildId: s,
         channelId: r,
         onClose: d
     } = e;
-    return n === x.RP.ACTIVITY ? (0, t.jsx)(u.A, {
-        user: i,
+    return n === p.RP.ACTIVITY ? (0, i.jsx)(u.A, {
+        user: t,
         currentUser: a,
         guildId: s,
         onClose: d
-    }) : n === x.RP.MUTUAL_FRIENDS ? (0, t.jsx)(A.A, {
-        user: i,
+    }) : n === p.RP.MUTUAL_FRIENDS ? (0, i.jsx)(A.A, {
+        user: t,
         guildId: s,
         channelId: r,
         onClose: d
-    }) : n === x.RP.MUTUAL_GUILDS ? (0, t.jsx)(p.A, {
-        user: i,
+    }) : n === p.RP.MUTUAL_GUILDS ? (0, i.jsx)(x.A, {
+        user: t,
         onClose: d
-    }) : n === x.RP.BOT_DATA_ACCESS ? (0, t.jsx)(o.A, {
-        user: i
-    }) : n === x.RP.BOT_INFO ? (0, t.jsx)(c.A, {
-        user: i,
+    }) : n === p.RP.BOT_DATA_ACCESS ? (0, i.jsx)(o.A, {
+        user: t
+    }) : n === p.RP.BOT_INFO ? (0, i.jsx)(c.A, {
+        user: t,
         displayProfile: l,
         guildId: s,
         onClose: d
-    }) : (0, t.jsx)(_.A, {
-        user: i,
+    }) : (0, i.jsx)(_.A, {
+        user: t,
         displayProfile: l,
         onClose: d
     })
@@ -59,14 +59,14 @@ function f(e) {
 function b(e) {
     let {
         user: n,
-        currentUser: i,
+        currentUser: t,
         displayProfile: o,
         guildId: c,
         items: u,
-        initialSection: _ = x.RP.USER_INFO,
+        initialSection: _ = p.RP.USER_INFO,
         onClose: A
     } = e, {
-        trackUserProfileAction: p
+        trackUserProfileAction: x
     } = (0, d.NJ)(), b = (0, l.bG)([r.A], () => r.A.hidePersonalInformation), [h, v] = a.useState(() => u.find(e => {
         let {
             section: n
@@ -77,25 +77,25 @@ function b(e) {
         null == u.find(e => e.section === h) && v(u[0].section)
     }, [u, h]);
     let j = a.useCallback(e => {
-        p({
+        x({
             action: "PRESS_SECTION",
             section: e
         }), v(e)
-    }, [p]);
-    return b ? (0, t.jsx)("div", {
+    }, [x]);
+    return b ? (0, i.jsx)("div", {
         className: I.kL,
-        children: (0, t.jsxs)("div", {
+        children: (0, i.jsxs)("div", {
             className: m.Ie,
-            children: [(0, t.jsx)("div", {
+            children: [(0, i.jsx)("div", {
                 className: m.hB
-            }), (0, t.jsx)("div", {
+            }), (0, i.jsx)("div", {
                 className: m.BI,
                 children: g.intl.string(g.t.Br1ls3)
             })]
         })
-    }) : (0, t.jsxs)("div", {
+    }) : (0, i.jsxs)("div", {
         className: I.kL,
-        children: [(0, t.jsx)(s.VQ0, {
+        children: [(0, i.jsx)(s.VQ0, {
             className: I.$H,
             type: "top",
             selectedItem: h,
@@ -103,23 +103,23 @@ function b(e) {
             children: u.map(e => {
                 let {
                     section: n,
-                    text: i
+                    text: t
                 } = e;
-                return (0, t.jsx)(s.VQ0.Item, {
+                return (0, i.jsx)(s.VQ0.Item, {
                     className: I.YU,
                     id: n,
-                    "aria-label": i,
-                    children: (0, t.jsx)(s.Text, {
+                    "aria-label": t,
+                    children: (0, i.jsx)(s.Text, {
                         variant: "text-sm/normal",
-                        children: i
+                        children: t
                     })
                 }, n)
             })
-        }), (0, t.jsx)(f, {
+        }), (0, i.jsx)(f, {
             items: u,
             section: h,
             user: n,
-            currentUser: i,
+            currentUser: t,
             displayProfile: o,
             guildId: c,
             onClose: A

@@ -61,9 +61,9 @@ function c(e) {
         totalUnownedWishlistItemCount: i,
         wishlistInDmLength: t,
         displayItems: c
-    }), [i, t, c]), m = (0, n.GG)("wishlist_banner_config");
+    }), [i, t, c]), u = (0, n.GG)("wishlist_banner_config");
     return (0, r.useMemo)(() => {
-        if (m) switch (_) {
+        if (u) switch (_) {
             case "FULL_WISHLIST":
                 return {
                     title: l.intl.formatToPlainString(l.t["YcL/Vr"], {
@@ -86,6 +86,6 @@ function c(e) {
             subtitle: o[_].getSubtitle(d),
             showIcons: o[_].showIcons
         }
-    }, [_, d, m])
+    }, [_, d, u])
 }
 l.intl.string(l.t["7lZ31J"]), l.intl.string(l.t.pWG4ze), l.intl.string(l.t.SK5rmi), l.intl.string(l.t.BCi1gT)

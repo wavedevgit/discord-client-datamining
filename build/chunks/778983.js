@@ -27,7 +27,7 @@ function g(e) {
     if (!f) return null;
     let S = null == E ? A.intl.string(m.default["0IZbwC"]) : A.intl.string(m.default.Uj6oD4),
         T = null == E,
-        N = `delete-message-${t.id}`;
+        I = `delete-message-${t.id}`;
     return (0, i.jsx)(h.A, {
         text: S,
         icon: a.ucK,
@@ -39,5 +39,5 @@ function g(e) {
         },
         disabled: T,
         color: s.$n.Colors.RED
-    }, N)
+    }, I)
 }

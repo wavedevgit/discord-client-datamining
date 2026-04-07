@@ -23,7 +23,7 @@ function f(e) {
         onAcceptSuccess: n,
         onRejectSuccess: l,
         onError: f
-    } = e, _ = (0, A.A)(), [E, x] = i.useState(!1), [C, S] = i.useState(!1), [T, N] = i.useState(!1), [I, v] = i.useState(!1), [b, y] = i.useState(!1), j = E || C || T, R = i.useCallback(async e => {
+    } = e, _ = (0, A.A)(), [E, x] = i.useState(!1), [C, S] = i.useState(!1), [T, I] = i.useState(!1), [N, v] = i.useState(!1), [y, b] = i.useState(!1), j = E || C || T, R = i.useCallback(async e => {
         if (!j) {
             x(!0);
             try {
@@ -39,7 +39,7 @@ function f(e) {
         if (!j) {
             S(!0);
             try {
-                await (0, h.UK)(e), y(!0), l?.()
+                await (0, h.UK)(e), b(!0), l?.()
             } catch (t) {
                 let e = new a.LG(t);
                 f?.(e)
@@ -53,7 +53,7 @@ function f(e) {
         let t = s()(e, 50);
         try {
             for (let e of t) await (0, h.ST)(e);
-            y(!0), l?.()
+            b(!0), l?.()
         } catch (t) {
             let e = new a.LG(t);
             f?.(e)
@@ -63,14 +63,14 @@ function f(e) {
     }, [j, l, f]), O = i.useCallback(async e => {
         if (j) return;
         if (null != t && null == o.A.getMutualGuilds(t.id)) {
-            N(!0);
+            I(!0);
             try {
                 await (0, c.A)(t.id, t.getAvatarURL(void 0, 80), {
                     withMutualGuilds: !0,
                     withMutualFriendsCount: !0
                 })
             } catch (e) {} finally {
-                N(!1)
+                I(!1)
             }
         }
         let n = async () => {
@@ -124,7 +124,7 @@ function f(e) {
         isAcceptLoading: E,
         isRejectLoading: C,
         isUserProfileLoading: T,
-        isOptimisticAccepted: I,
-        isOptimisticRejected: b
+        isOptimisticAccepted: N,
+        isOptimisticRejected: y
     }
 }

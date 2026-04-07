@@ -31,12 +31,12 @@ let u = function(e) {
     if (null == t) return (0, i.jsx)(i.Fragment, {
         children: l.Children.only(x)
     });
-    let N = null;
-    return null != p ? N = (0, i.jsx)("img", {
+    let I = null;
+    return null != p ? I = (0, i.jsx)("img", {
         alt: "",
         src: p,
         className: d.Sl
-    }) : null != f && (N = (0, i.jsx)(r.akl, {
+    }) : null != f && (I = (0, i.jsx)(r.akl, {
         importData: f,
         shouldAnimate: !C,
         className: d.lY
@@ -44,7 +44,7 @@ let u = function(e) {
         className: d.iE,
         children: [(0, i.jsxs)("div", {
             className: d.Qs,
-            children: [N, (0, i.jsxs)("div", {
+            children: [I, (0, i.jsxs)("div", {
                 className: d.Qq,
                 children: [(0, i.jsx)(r.Heading, {
                     variant: "heading-md/semibold",

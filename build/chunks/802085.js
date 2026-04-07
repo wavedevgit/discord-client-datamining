@@ -23,8 +23,8 @@ var i = n(627968),
     C = n(985018),
     S = n(526724),
     T = n(767283),
-    N = n(782691);
-let I = l.memo(function(e) {
+    I = n(782691);
+let N = l.memo(function(e) {
         let {
             message: t,
             notice: n,
@@ -86,7 +86,7 @@ let I = l.memo(function(e) {
             p.current ? null != A && A() : p.current = !0
         }, [A, s.content, d, g, r]), (0, i.jsxs)("div", {
             id: (0, f.CJ)(s),
-            className: a()(t, N.PT, {
+            className: a()(t, I.PT, {
                 [T.BK]: !0,
                 [T.nB]: "rtl" === o()(s.content),
                 [S.Dy]: x?.isBlockedEdit,
@@ -102,7 +102,7 @@ let I = l.memo(function(e) {
                         children: ["(", C.intl.string(C.t.Z7eEx9), ")"]
                     })
                 })]
-            }), (0, i.jsx)(I, {
+            }), (0, i.jsx)(N, {
                 notice: x?.errorMessage ?? C.intl.string(C.t.zQ69pv),
                 message: s,
                 compact: n,

@@ -21,7 +21,7 @@ let m = (0, a.zZ)(o.X.DISPLAY_IN_APP_ICON_CATEGORY, {
             return t.push({
                 id: "preview-icon-button",
                 type: r.UV.BUTTON,
-                useText: () => u.intl.string(u.t["6acvnZ"]),
+                text: u.intl.string(u.t["6acvnZ"]),
                 onClick: d.U6
             }), e && t.push({
                 id: "upsell-button",

@@ -17,7 +17,7 @@ let c = function(e) {
         onWishlistItemClick: d
     } = e, {
         claimableRewards: _
-    } = (0, n.Pv)(), m = null != _ && _.length > 0;
+    } = (0, n.Pv)(), u = null != _ && _.length > 0;
     return (0, r.jsxs)("div", {
         className: o.H,
         children: [(0, r.jsxs)("div", {
@@ -26,7 +26,7 @@ let c = function(e) {
                 onClick: () => i(l.pe.TIER_2),
                 isGift: !0,
                 priceOptions: t,
-                showPromotionalGiftBanner: m
+                showPromotionalGiftBanner: u
             }), (0, r.jsx)(a.Ls, {
                 onClick: () => i(l.pe.TIER_0),
                 isGift: !0,

@@ -25,11 +25,11 @@ var i = n(627968),
     C = n(793574),
     S = n(58149),
     T = n(688810),
-    N = n(571694),
-    I = n(47167),
+    I = n(571694),
+    N = n(47167),
     v = n(915089),
-    b = n(66442),
-    y = n(279208),
+    y = n(66442),
+    b = n(279208),
     j = n(267102),
     R = n(976860),
     M = n(219271),
@@ -64,7 +64,7 @@ let el = (0, v.Ld)(),
         let {
             channel: t,
             onClose: n
-        } = e, l = (0, I.Ay)(t) ?? "", s = (0, c.bG)([G.Ay], () => G.Ay.lastMessageId(t.id) ?? t.id);
+        } = e, l = (0, N.Ay)(t) ?? "", s = (0, c.bG)([G.Ay], () => G.Ay.lastMessageId(t.id) ?? t.id);
         return (0, i.jsx)(u.DUT, {
             onClick: () => {
                 (0, R.uh)(ee.ME, t.id), n()
@@ -72,7 +72,7 @@ let el = (0, v.Ld)(),
             children: (0, i.jsxs)("div", {
                 className: ei.us,
                 children: [(0, i.jsx)(u.euF, {
-                    src: (0, N.Y)(t),
+                    src: (0, I.Y)(t),
                     size: u._3J.SIZE_24,
                     "aria-label": l
                 }), (0, i.jsx)("span", {
@@ -577,7 +577,7 @@ class er extends l.PureComponent {
             copied: l
         } = this.state;
         if (null == e || !e.isMultiUserDM() || this.isPartyFull()) return null;
-        let s = null != t ? (0, y.A)(t.code) : "",
+        let s = null != t ? (0, b.A)(t.code) : "",
             a = s.length > 0;
         return (0, i.jsx)(u.D0$, {
             label: en.intl.string(en.t.t3O2BR),
@@ -586,7 +586,7 @@ class er extends l.PureComponent {
             }) : void 0,
             children: (0, i.jsx)(u.e2O, {
                 supportsCopy: K.p5,
-                placeholder: (0, y.A)(en.intl.string(en.t.lPVBqP)),
+                placeholder: (0, b.A)(en.intl.string(en.t.lPVBqP)),
                 value: a ? n ? en.intl.string(en.t["6HzNgZ"]) : s : "",
                 buttonColor: d.$n.Colors.BRAND,
                 text: a ? l ? en.intl.string(en.t.q30c5i) : en.intl.string(en.t.OpuAlK) : en.intl.string(en.t.qzxqUf),
@@ -908,10 +908,10 @@ function eo(e) {
         onChange: r
     } = e, {
         analyticsLocations: o
-    } = (0, T.Ay)(C.A.NEW_GROUP_DM_INVITE_MODAL), c = (0, I.Jo)(Array.from(t), H.default, F.A);
+    } = (0, T.Ay)(C.A.NEW_GROUP_DM_INVITE_MODAL), c = (0, N.Jo)(Array.from(t), H.default, F.A);
     return (0, i.jsxs)("div", {
         className: ei.zj,
-        children: [(0, i.jsx)(b.X, {
+        children: [(0, i.jsx)(y.X, {
             className: ei.r9,
             channel: null,
             previewIcon: l,

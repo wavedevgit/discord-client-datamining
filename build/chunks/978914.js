@@ -19,9 +19,11 @@ function A(e) {
     let {
         id: n
     } = e, {
-        loaded: i,
-        message: l,
-        error: a
+        enabled: i = !0
+    } = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {}, {
+        loaded: l,
+        message: a,
+        error: r
     } = (0, s.cf)([d.A, o.A, c.Ay], () => {
         let e = c.Ay.lastMessageId(n),
             t = d.A.getMessageRequestPreview(n);
@@ -34,11 +36,11 @@ function A(e) {
             }
         }
         return t
-    }, [n]), r = (0, s.bG)([d.A], () => d.A.shouldLoadMessageRequestPreview(n), [n]);
-    return !i && null == l && r && (t = n, h.add(t), null == m && (m = setTimeout(g, 0))), {
-        loaded: i,
-        error: a,
-        message: l
+    }, [n]), u = (0, s.bG)([d.A], () => d.A.shouldLoadMessageRequestPreview(n), [n]);
+    return i && !l && null == a && u && (t = n, h.add(t), null == m && (m = setTimeout(g, 0))), {
+        loaded: l,
+        error: r,
+        message: a
     }
 }
 async function g() {

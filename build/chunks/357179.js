@@ -69,10 +69,10 @@ function p(e) {
         T = l.useCallback(() => {
             _(), C(h.Wm.USER_BANNER_BLOCK_CONFIRM)
         }, [_, C]),
-        N = l.useCallback(() => {
+        I = l.useCallback(() => {
             _(), C(h.Wm.USER_BANNER_BLOCK_AND_REPORT_CONFIRM)
         }, [_, C]),
-        I = l.useCallback(() => {
+        N = l.useCallback(() => {
             (0, r.mMO)(async () => {
                 let {
                     default: e
@@ -85,7 +85,7 @@ function p(e) {
                     return (0, i.jsx)(e, {
                         transitionState: l,
                         onBlock: T,
-                        onBlockAndReport: N,
+                        onBlockAndReport: I,
                         onCancel: () => {
                             s?.(), C(h.Wm.USER_BANNER_BLOCK_CANCEL)
                         },
@@ -95,7 +95,7 @@ function p(e) {
                     })
                 }
             })
-        }, [T, N, f, t, C]);
+        }, [T, I, f, t, C]);
     return (0, i.jsx)(m.N, {
         channelId: t,
         warningId: p,
@@ -111,7 +111,7 @@ function p(e) {
         }, ...E ? [] : [{
             text: g.intl.string(g.t["7q0bNY"]),
             variant: "secondary",
-            onClick: I
+            onClick: N
         }]]
     })
 }

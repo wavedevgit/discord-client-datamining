@@ -40,7 +40,7 @@ let O = e => {
         tab: N,
         buttonContainerClassName: R,
         orbsSupportedOnly: B
-    } = e, M = (0, a.bG)([_.default], () => _.default.getCurrentUser()), P = p.Ay.canUseCollectibles(M), D = (0, E.W)("FeedBlock"), w = (0, I.yB)("FeedBlock"), {
+    } = e, P = (0, a.bG)([_.default], () => _.default.getCurrentUser()), M = p.Ay.canUseCollectibles(P), D = (0, E.W)("FeedBlock"), w = (0, I.yB)("FeedBlock"), {
         sortType: H,
         setSortType: F,
         sortedItems: G,
@@ -49,7 +49,7 @@ let O = e => {
         showRecommendationOption: W
     } = (0, v.A)({
         sortedSkuIds: l,
-        isPremiumUser: P,
+        isPremiumUser: M,
         prioritizeUserDiscounts: y,
         orbsSupportedOnly: B
     }), z = (0, a.bG)([u.A], () => u.A.useReducedMotion), K = (0, a.bG)([g.A], () => g.A.isFocused()), Y = !z && K, {
@@ -64,7 +64,7 @@ let O = e => {
             sort_type: e
         })
     }, [Z, F, X]);
-    return null == M ? null : (0, n.jsxs)("div", {
+    return null == P ? null : (0, n.jsxs)("div", {
         className: i()(T.lD, T.YB),
         children: [(0, n.jsxs)("div", {
             className: T.$6,

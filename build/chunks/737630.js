@@ -35,8 +35,8 @@ var n = s(627968),
     N = s(120286),
     R = s(870308),
     B = s(938191),
-    M = s(758836),
-    P = s(652215),
+    P = s(758836),
+    M = s(652215),
     D = s(650583),
     w = s(985018),
     H = s(229781);
@@ -56,7 +56,7 @@ let F = e => {
     },
     G = function(e) {
         let {
-            tab: t = M.G2.HOME
+            tab: t = P.G2.HOME
         } = e;
         (0, p.P)(h.a), (0, I.g)();
         let s = (0, _.A)((0, a.A)()),
@@ -70,7 +70,7 @@ let F = e => {
                 currentTab: G,
                 hasFilters: U
             } = (0, j.v)(),
-            V = r.useMemo(() => t === M.G2.HOME && null != G && U() ? G : t, [t, G, U]),
+            V = r.useMemo(() => t === P.G2.HOME && null != G && U() ? G : t, [t, G, U]),
             {
                 categories: W,
                 refreshCategories: z
@@ -102,7 +102,7 @@ let F = e => {
         r.useEffect(() => {
             es()
         }, [es]), r.useEffect(() => {
-            (0, u.I)(P.BVt.COLLECTIBLES_SHOP)
+            (0, u.I)(M.BVt.COLLECTIBLES_SHOP)
         }, []);
         let en = r.useRef(null),
             er = r.useRef(null);
@@ -118,7 +118,7 @@ let F = e => {
                 newValue: {
                     sessionId: s,
                     pageCategory: Z,
-                    pageSize: M.l5
+                    pageSize: P.l5
                 },
                 children: (0, n.jsx)(C.iM, {
                     tab: Q,
@@ -136,14 +136,14 @@ let F = e => {
                                 selectedTab: Q
                             }), null != ei && ei.type === S.Z.COUNTDOWN && (0, n.jsx)(N.k, {
                                 message: ei.message,
-                                onClick: () => et(M.G2.HOME),
+                                onClick: () => et(P.G2.HOME),
                                 variant: "pink",
                                 countdownEndDate: ei.countdownEndDate
                             }), (0, n.jsx)("div", {
                                 className: i()(H.td, {
-                                    [H.RK]: ee === M.Pf.VISIBLE,
-                                    [H.in]: ee === M.Pf.IN,
-                                    [H.FD]: ee === M.Pf.OUT
+                                    [H.RK]: ee === P.Pf.VISIBLE,
+                                    [H.in]: ee === P.Pf.IN,
+                                    [H.FD]: ee === P.Pf.OUT
                                 }),
                                 children: (0, n.jsx)(k.A, {
                                     tab: Q,

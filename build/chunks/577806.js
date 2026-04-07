@@ -10,11 +10,14 @@ var i = n(627968),
 function r(e) {
     let {
         decoration: t
-    } = e, n = t.useText();
+    } = e, {
+        type: n,
+        id: l,
+        ...a
+    } = t;
     return (0, i.jsx)(s.$nd, {
         variant: "secondary",
-        onClick: t.onClick,
-        text: n
+        ...a
     })
 }
 

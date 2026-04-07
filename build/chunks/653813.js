@@ -11,8 +11,8 @@ var r = t(627968),
     c = t(232516),
     d = t(788868),
     _ = t(652215),
-    m = t(985018),
-    u = t(245526);
+    u = t(985018),
+    m = t(245526);
 
 function p(e) {
     let {
@@ -45,25 +45,25 @@ function p(e) {
     return (0, r.jsxs)(a.EOs, {
         transitionState: s,
         size: a.rIJ.DYNAMIC,
-        className: u.jT,
+        className: m.jT,
         parentComponent: "GiftOptionSelectModal",
         "data-migration-pending": !0,
         children: [(0, r.jsx)(a.rQ0, {
-            className: u.Hc,
+            className: m.Hc,
             "data-migration-pending": !0,
             children: (0, r.jsxs)(a.BJc, {
                 direction: "horizontal",
                 justify: "space-between",
                 children: [(0, r.jsx)(a.Heading, {
                     variant: "heading-md/semibold",
-                    children: m.intl.string(m.t["wg/30i"])
+                    children: u.intl.string(u.t["wg/30i"])
                 }), (0, r.jsx)(a.s_y, {
                     onClick: t,
                     "data-migration-pending": !0
                 })]
             })
         }), (0, r.jsx)(a.$mQ, {
-            className: u.S3,
+            className: m.S3,
             "data-migration-pending": !0,
             children: (0, r.jsx)(c.A, {
                 onSelectSku: b,

@@ -1,7 +1,7 @@
 /** chunk id: 603647 params = (module,exports,require) **/
 let s;
 i.d(e, {
-    A: () => T
+    A: () => R
 });
 var n = i(627968),
     a = i(64700),
@@ -16,34 +16,36 @@ var n = i(627968),
     m = i(49463),
     v = i(976860),
     g = i(426660),
-    w = i(652215),
-    E = i(339086);
+    E = i(652215),
+    w = i(339086);
 let f = i(843020),
     x = i(545044),
-    I = [w.BVt.LOGIN, w.BVt.LOGIN_HANDOFF, w.BVt.LOGIN_ONE_TIME, w.BVt.REGISTER, w.BVt.INVITE(""), w.BVt.GIFT_CODE(""), w.BVt.GUILD_TEMPLATE_LOGIN(""), w.BVt.GUILD_TEMPLATE(""), w.BVt.DISABLE_EMAIL_NOTIFICATIONS, w.BVt.DISABLE_SERVER_HIGHLIGHT_NOTIFICATIONS, w.BVt.BILLING_PREMIUM_SUBSCRIBE, w.BVt.BILLING_PAYMENT_SOURCES_CREATE, w.BVt.BILLING_PAYMENTS, w.BVt.BILLING_PREMIUM_SWITCH_PLAN, w.BVt.BILLING_GUILD_SUBSCRIPTIONS_PURCHASE, w.BVt.VERIFY, w.BVt.VERIFY_HUB_EMAIL, w.BVt.REJECT_IP, w.BVt.REJECT_MFA, w.BVt.AUTHORIZE_IP, w.BVt.AUTHORIZE_PAYMENT, w.BVt.RESET, w.BVt.HANDOFF, w.BVt.REPORT, w.BVt.REPORT_SECOND_LOOK, w.BVt.ACCOUNT_REVERT("")];
+    I = [E.BVt.LOGIN, E.BVt.LOGIN_HANDOFF, E.BVt.LOGIN_ONE_TIME, E.BVt.REGISTER, E.BVt.INVITE(""), E.BVt.GIFT_CODE(""), E.BVt.GUILD_TEMPLATE_LOGIN(""), E.BVt.GUILD_TEMPLATE(""), E.BVt.DISABLE_EMAIL_NOTIFICATIONS, E.BVt.DISABLE_SERVER_HIGHLIGHT_NOTIFICATIONS, E.BVt.BILLING_PREMIUM_SUBSCRIBE, E.BVt.BILLING_PAYMENT_SOURCES_CREATE, E.BVt.BILLING_PAYMENTS, E.BVt.BILLING_PREMIUM_SWITCH_PLAN, E.BVt.BILLING_GUILD_SUBSCRIPTIONS_PURCHASE, E.BVt.GIFT_CARD_REDEEM, E.BVt.VERIFY, E.BVt.VERIFY_HUB_EMAIL, E.BVt.REJECT_IP, E.BVt.REJECT_MFA, E.BVt.AUTHORIZE_IP, E.BVt.AUTHORIZE_PAYMENT, E.BVt.RESET, E.BVt.HANDOFF, E.BVt.REPORT, E.BVt.REPORT_SECOND_LOOK, E.BVt.ACCOUNT_REVERT("")];
 
 function A(t) {
     return I.some(e => t.startsWith(e))
 }
 let M = t => (s = t, t),
-    _ = [w.BVt.VERIFY, w.BVt.VERIFY_HUB_EMAIL];
+    _ = [E.BVt.VERIFY, E.BVt.VERIFY_HUB_EMAIL],
+    L = [E.BVt.GIFT_CARD_REDEEM];
 
-function L(t) {
+function T(t) {
     let {
         children: e
     } = t, i = function() {
         let [t, e] = a.useState(!1), [i, n] = a.useState(!0), h = (0, r.bG)([m.A], () => m.A.hasLoadedExperiments);
         return ((0, d.A)(() => {}, 300), void 0 !== s) ? s : !i && h ? (t || e(!0), M("default")) : i ? M("default") : "loading"
-    }(), l = (0, h.zy)(), o = _.includes(l.pathname);
+    }(), l = (0, h.zy)(), o = L.includes(l.pathname), c = _.includes(l.pathname);
+    if (o) return e;
     switch (i) {
         case "default":
             return (0, n.jsxs)(n.Fragment, {
-                children: [o ? (0, n.jsx)(g.A, {}) : (0, n.jsx)("img", {
-                    className: E.xX,
+                children: [c ? (0, n.jsx)(g.A, {}) : (0, n.jsx)("img", {
+                    className: w.xX,
                     src: f,
                     alt: ""
                 }), (0, n.jsx)("img", {
-                    className: E.F,
+                    className: w.F,
                     src: x,
                     alt: ""
                 }), e]
@@ -91,18 +93,18 @@ class S extends a.Component {
             }))
         });
         return (0, n.jsx)("div", {
-            className: E.WA,
+            className: w.WA,
             children: (0, n.jsx)(o.Fmo, {
                 forceLevel: 1,
                 children: null != t ? (0, n.jsxs)(n.Fragment, {
                     children: [(0, n.jsx)(u.A, {
                         show: !0,
-                        className: E.wm
+                        className: w.wm
                     }), (0, n.jsx)(p.g, {
                         splash: t,
                         children: e
                     })]
-                }) : (0, n.jsx)(L, {
+                }) : (0, n.jsx)(T, {
                     children: e
                 })
             })
@@ -124,4 +126,4 @@ class S extends a.Component {
         return t || l.Fr || l.v1 || e ? this.renderMobile() : this.renderDefault()
     }
 }
-let T = S
+let R = S

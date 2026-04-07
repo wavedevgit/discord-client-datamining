@@ -1,5 +1,5 @@
 /** chunk id: 572841 params = (module,exports,require) **/
-i.r(e.exports = {
+t.r(e.exports = {
     root: "root__9c3be",
     layoutContainer: "layoutContainer__9c3be",
     hasPrivateBanner: "hasPrivateBanner__9c3be",

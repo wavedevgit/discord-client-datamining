@@ -61,18 +61,18 @@ let m = {
             minZoom: n = 1,
             maxZoom: o = 5,
             children: c
-        } = e, [d, u] = l.useState(n), [h, p] = l.useState(!1), [f, _] = l.useState(!1), [E, x] = l.useState(!1), [C, S] = l.useState(!1), [T, N] = l.useState(16 / 9), [I, v] = l.useState({
+        } = e, [d, u] = l.useState(n), [h, p] = l.useState(!1), [f, _] = l.useState(!1), [E, x] = l.useState(!1), [C, S] = l.useState(!1), [T, I] = l.useState(16 / 9), [N, v] = l.useState({
             x: 0,
             y: 0
-        }), b = l.useRef(null), y = l.useRef(null);
+        }), y = l.useRef(null), b = l.useRef(null);
         (0, r.l0)(() => {
-            y.current?.stop()
+            b.current?.stop()
         });
         let j = l.useCallback((e, t) => {
-                if (null == b.current) return m;
+                if (null == y.current) return m;
                 let n = t ?? d,
-                    i = b.current.clientWidth,
-                    l = b.current.clientHeight,
+                    i = y.current.clientWidth,
+                    l = y.current.clientHeight,
                     a = i * (n - 1) / 2,
                     r = l * (n - 1) / 2;
                 return {
@@ -88,7 +88,7 @@ let m = {
                 v(e => j({
                     x: (e.x - i.x) * c + i.x,
                     y: (e.y - i.y) * c + i.y
-                }, r)), u(r), g(r, l, t), null == y.current && (y.current = new a.Ep), y.current.start(2e3, () => {
+                }, r)), u(r), g(r, l, t), null == b.current && (b.current = new a.Ep), b.current.start(2e3, () => {
                     p(!1)
                 })
             }, [j, o, n, t, d]),
@@ -107,13 +107,13 @@ let m = {
                 isSlidering: C,
                 setIsSlidering: S,
                 videoAspectRatio: T,
-                setVideoAspectRatio: N,
+                setVideoAspectRatio: I,
                 doZoom: R,
-                panOffset: I,
+                panOffset: N,
                 setPanOffset: v,
-                wrapperRef: b,
+                wrapperRef: y,
                 clampPanOffset: j
-            }), [j, R, f, C, E, h, o, n, I, T, d]);
+            }), [j, R, f, C, E, h, o, n, N, T, d]);
         return (0, i.jsx)(A.Provider, {
             value: M,
             children: c

@@ -133,7 +133,7 @@ let k = (0, u.A)(e => {
         onItemChange: r,
         isMuted: c = !0,
         onTrackClick: u
-    } = e, _ = (0, l.useRef)(0), [m, f] = (0, l.useState)(0), [g, j] = (0, l.useState)(0), E = (0, l.useRef)(0), I = (0, l.useRef)(t.length), [k, y] = (0, l.useState)(!0), [R, U] = (0, l.useState)(!1), [O, w] = (0, l.useState)(!1), [P, L] = (0, l.useState)(!1), [D, M] = (0, l.useState)(!1), B = (0, l.useCallback)((e, n) => {
+    } = e, _ = (0, l.useRef)(0), [m, f] = (0, l.useState)(0), [g, j] = (0, l.useState)(0), E = (0, l.useRef)(0), I = (0, l.useRef)(t.length), [k, y] = (0, l.useState)(!0), [R, U] = (0, l.useState)(!1), [O, P] = (0, l.useState)(!1), [w, L] = (0, l.useState)(!1), [D, M] = (0, l.useState)(!1), B = (0, l.useCallback)((e, n) => {
         let a = t[e]?.backgroundSrc,
             l = n.interpolate({
                 inputRange: [0, 1],
@@ -154,7 +154,7 @@ let k = (0, u.A)(e => {
         }
     }, [t]), F = (0, l.useCallback)(function(e) {
         let t = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1];
-        U(!1), w(t);
+        U(!1), P(t);
         let n = I.current,
             a = (0, b.U3)(E.current, n),
             l = (0, b.U3)(e, n);
@@ -166,7 +166,7 @@ let k = (0, u.A)(e => {
     }, [F, u]), W = (0, l.useCallback)(() => {
         u?.(C.Jq.CAROUSEL_PREV), F(E.current - 1)
     }, [F, u]), Y = (0, l.useCallback)(e => {
-        U(!0), w(!e)
+        U(!0), P(!e)
     }, []), q = (0, l.useCallback)(() => {
         O || H()
     }, [O, H]), V = (0, l.useCallback)(e => {
@@ -181,7 +181,7 @@ let k = (0, u.A)(e => {
         onSetItem: e => {
             u?.(C.Jq.CAROUSEL_ITEM), F(e)
         },
-        setHasInteracted: w
+        setHasInteracted: P
     }), [F, u]), z = (0, l.useCallback)((e, n, l) => {
         let i = n === (0, b.U3)(g, t.length);
         return (0, a.jsx)(d.A.div, {
@@ -220,7 +220,7 @@ let k = (0, u.A)(e => {
             children: [e, (0, a.jsx)(p.Q8, {
                 onClick: W,
                 className: o()(T.UE, {
-                    [T.h_]: P
+                    [T.h_]: w
                 })
             }), (0, a.jsx)(p.Oj, {
                 onClick: G,
@@ -229,7 +229,7 @@ let k = (0, u.A)(e => {
                 })
             })]
         })
-    }, [t, z, g, k, W, G, P, D]), K = (0, l.useCallback)((e, t) => {
+    }, [t, z, g, k, W, G, w, D]), K = (0, l.useCallback)((e, t) => {
         let n = g === t;
         return (0, a.jsx)("div", {
             className: o()(T.Yw, n ? T.sM : T.N7),

@@ -1,6 +1,6 @@
 /** chunk id: 914835 params = (module,exports,require) **/
 n.d(t, {
-    A: () => N
+    A: () => I
 });
 var i = n(627968),
     l = n(64700),
@@ -44,11 +44,11 @@ function S(e) {
             })
         })
     }
-    let N = x?.nick ?? f.Ay.getName(E) ?? "???",
-        I = x?.colorString;
+    let I = x?.nick ?? f.Ay.getName(E) ?? "???",
+        N = x?.colorString;
     return null == E ? (0, i.jsx)("span", {
         className: a()(C.eM, C.sL),
-        children: N
+        children: I
     }) : (0, i.jsx)(u.f5, {
         value: _,
         children: (0, i.jsx)(A.A, {
@@ -65,8 +65,8 @@ function S(e) {
                 className: C.eM,
                 onContextMenu: T,
                 children: (0, i.jsx)(o.gyj, {
-                    name: N,
-                    colorString: I ?? null,
+                    name: I,
+                    colorString: N ?? null,
                     colorStrings: S
                 })
             })
@@ -105,7 +105,7 @@ function T(e) {
     })
 }
 
-function N(e) {
+function I(e) {
     let {
         channel: t
     } = e, n = (0, h.gU)(t) ?? o.ysw;

@@ -45,7 +45,7 @@ function S(e) {
         newChannel: u,
         inSettings: h,
         ...m
-    } = e, [_, C] = l.useState(""), [S, T] = l.useState({}), [N, I] = l.useState(!1), [v, b] = l.useState(null), y = l.useRef(null), {
+    } = e, [_, C] = l.useState(""), [S, T] = l.useState({}), [I, N] = l.useState(!1), [v, y] = l.useState(null), b = l.useRef(null), {
         roles: j,
         members: R,
         getRichTag: M
@@ -55,7 +55,7 @@ function S(e) {
     }), O = u && 0 === Object.keys(S).length;
     async function L() {
         if (null == n || 0 === Object.keys(S).length) return void a();
-        I(!0);
+        N(!0);
         try {
             var e, t, i;
             let l;
@@ -64,15 +64,15 @@ function S(e) {
                     row: n
                 } = t;
                 null != n.id && "" !== n.id && (n.rowType === f.T6.ROLE ? l.push((0, A.we)(n.id, e.type)) : n.rowType === f.T6.MEMBER && l.push((0, A.n3)(n.id, e.type)))
-            }), (0, o.R$)(e.id, l, i)), a(), I(!1)
+            }), (0, o.R$)(e.id, l, i)), a(), N(!1)
         } catch (t) {
             let e = new c.LG(t);
-            I(!1), b(e)
+            N(!1), y(e)
         }
     }
     let P = (0, d.ke)(n.type) ? r.I$d : r.trU;
     return (0, i.jsx)(g.A.Provider, {
-        listRef: y,
+        listRef: b,
         query: _,
         setQuery: C,
         pendingAdditions: S,
@@ -113,7 +113,7 @@ function S(e) {
                 }) : null]
             }),
             listProps: {
-                ref: y,
+                ref: b,
                 sectionHeight: g.A.SECTION_HEIGHT,
                 renderSection: g.A.renderSection,
                 rowHeight: g.A.ROW_HEIGHT,
@@ -132,7 +132,7 @@ function S(e) {
                 variant: "primary",
                 text: E.intl.string(E.t.i4jeWR),
                 onClick: L,
-                loading: N
+                loading: I
             }]
         })
     })

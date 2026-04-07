@@ -16,8 +16,8 @@ var s = i(627968),
     m = i(574902),
     v = i(852431),
     g = i(652215),
-    w = i(990275);
-let E = (0, c.xI)(r.A.WAVE_SPLASH_RESPONSIVE_WIDTH_MOBILE),
+    E = i(990275);
+let w = (0, c.xI)(r.A.WAVE_SPLASH_RESPONSIVE_WIDTH_MOBILE),
     f = 1 / 120;
 class x extends n.Component {
     width = 0;
@@ -65,7 +65,7 @@ class x extends n.Component {
             height: s,
             ratio: n
         } = this;
-        null != t && null != e && (t.width = i * n, t.height = s * n, t.style.width = i + "px", t.style.height = s + "px", e.scale(n, n)), i <= E ? this.pause() : this.play(), this.wave.resizeWave(), this.renderAnimation()
+        null != t && null != e && (t.width = i * n, t.height = s * n, t.style.width = i + "px", t.style.height = s + "px", e.scale(n, n)), i <= w ? this.pause() : this.play(), this.wave.resizeWave(), this.renderAnimation()
     };
     initialize() {
         this.children.forEach(t => t.initialize()), this.bindEvents(), this.resizeCanvas(), document.hidden && this.delayedPause()
@@ -146,13 +146,13 @@ class x extends n.Component {
                     reducedMotion: a
                 } = n;
                 return a.enabled ? (0, s.jsx)("div", {
-                    className: h()(w.s9, {
-                        [w.F9]: i,
-                        [w.RK]: !e && t >= v.go.ENTERED
+                    className: h()(E.s9, {
+                        [E.F9]: i,
+                        [E.RK]: !e && t >= v.go.ENTERED
                     })
                 }) : (0, s.jsx)("canvas", {
-                    className: h()(w.Ji, {
-                        [w.F9]: i
+                    className: h()(E.Ji, {
+                        [E.F9]: i
                     }),
                     ref: this.setCanvas
                 })

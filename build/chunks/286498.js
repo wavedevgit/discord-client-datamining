@@ -23,8 +23,8 @@ var i = n(627968),
     C = n(427262),
     S = n(652215),
     T = n(985018),
-    N = n(442921);
-let I = e => {
+    I = n(442921);
+let N = e => {
     let {
         user: t,
         handleTrackAction: n
@@ -105,8 +105,8 @@ function v(e) {
             disabled: x = !1,
             onClick: S,
             onMessageClick: v,
-            onMouseEnter: b,
-            "aria-setsize": y,
+            onMouseEnter: y,
+            "aria-setsize": b,
             "aria-posinset": j,
             handleTrackAction: R,
             inImprovedDMExperiment: M,
@@ -115,7 +115,7 @@ function v(e) {
         } = e,
         L = (0, o.bG)([_.A], () => _.A.getStatus(n.id));
     t = l === E.A.GUILD_MEMBERS ? O ? (0, i.jsx)("div", {
-        className: N.ch,
+        className: I.ch,
         children: (0, i.jsx)(d.P7L, {
             checked: f
         })
@@ -140,35 +140,35 @@ function v(e) {
         k = !x && l === E.A.FRIENDS || O;
     return (0, i.jsx)(d.DUT, {
         id: `user-row-${s}`,
-        className: a()(N.Se, {
-            [N.r9]: !k
+        className: a()(I.Se, {
+            [I.r9]: !k
         }),
         onClick: k ? () => {
             R(l, s, "select"), S?.(n.id)
         } : void 0,
         onMouseEnter: () => {
-            b?.(l, s)
+            y?.(l, s)
         },
         ...P,
         role: "option",
         "aria-selected": f,
         "aria-disabled": x,
-        "aria-setsize": y,
+        "aria-setsize": b,
         "aria-posinset": j,
         children: (0, i.jsxs)(g.A, {
             align: g.A.Align.CENTER,
-            className: a()(N.Bc, {
-                [N.oz]: p
+            className: a()(I.Bc, {
+                [I.oz]: p
             }),
             children: [(0, i.jsx)(m.A, {
                 user: n,
                 status: L,
-                className: N.my
+                className: I.my
             }), (0, i.jsxs)("div", {
-                className: N.YW,
+                className: I.YW,
                 children: [(0, i.jsx)(d.Text, {
                     tag: "strong",
-                    className: N.$R,
+                    className: I.$R,
                     "aria-hidden": !0,
                     variant: "text-md/medium",
                     children: null != A && A === n.tag ? C.Ay.getName(n) : null != A && "" !== A ? A : C.Ay.getName(n)
@@ -178,11 +178,11 @@ function v(e) {
                     children: (0, i.jsx)(h.A, {
                         user: n,
                         hideDiscriminator: u,
-                        className: N.xK,
+                        className: I.xK,
                         forceUsername: !0
                     })
                 })]
-            }), l !== E.A.FRIENDS && M ? (0, i.jsx)(I, {
+            }), l !== E.A.FRIENDS && M ? (0, i.jsx)(N, {
                 user: n,
                 handleTrackAction: () => R(l, s, "friend")
             }) : null, t]

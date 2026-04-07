@@ -1,25 +1,25 @@
 /** chunk id: 86404 params = (module,exports,require) **/
-i.d(n, {
-    A: () => x
+t.d(n, {
+    A: () => p
 });
-var t = i(627968),
-    a = i(64700),
-    l = i(397927),
-    s = i(163126),
-    r = i(688810),
-    d = i(183555),
-    o = i(913453),
-    c = i(229187),
-    u = i(657331),
-    _ = i(503062),
-    A = i(985018),
-    p = i(643146);
+var i = t(627968),
+    a = t(64700),
+    l = t(397927),
+    s = t(163126),
+    r = t(688810),
+    d = t(183555),
+    o = t(913453),
+    c = t(229187),
+    u = t(657331),
+    _ = t(503062),
+    A = t(985018),
+    x = t(643146);
 
-function x(e) {
+function p(e) {
     let {
         user: n,
-        guildId: i,
-        channelId: x,
+        guildId: t,
+        channelId: p,
         onClose: g
     } = e, {
         mutualFriends: m
@@ -31,18 +31,18 @@ function x(e) {
     } = (0, d.NJ)(), h = (0, s.A)();
     return a.useEffect(() => {
         (0, c.A)(n.id, h)
-    }, [n.id, h]), (0, t.jsx)(l.IpV, {
-        className: p.DK,
+    }, [n.id, h]), (0, i.jsx)(l.IpV, {
+        className: x.DK,
         fade: !0,
-        children: null == m ? (0, t.jsx)("div", {
-            className: p.Ie,
-            children: (0, t.jsx)(l.y$y, {})
-        }) : 0 === m.length ? (0, t.jsxs)("div", {
-            className: p.Ie,
-            children: [(0, t.jsx)("div", {
-                className: p.on
-            }), (0, t.jsx)("div", {
-                className: p.BI,
+        children: null == m ? (0, i.jsx)("div", {
+            className: x.Ie,
+            children: (0, i.jsx)(l.y$y, {})
+        }) : 0 === m.length ? (0, i.jsxs)("div", {
+            className: x.Ie,
+            children: [(0, i.jsx)("div", {
+                className: x.on
+            }), (0, i.jsx)("div", {
+                className: x.BI,
                 children: A.intl.string(A.t["/5p4gx"])
             })]
         }) : m.map(e => {
@@ -51,11 +51,11 @@ function x(e) {
                 user: a,
                 status: l
             } = e;
-            return (0, t.jsx)(_.A, {
+            return (0, i.jsx)(_.A, {
                 user: a,
                 status: l,
-                guildId: i,
-                channelId: x,
+                guildId: t,
+                channelId: p,
                 onSelect: () => {
                     var e;
                     g?.(), b({

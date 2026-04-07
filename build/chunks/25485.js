@@ -79,7 +79,7 @@ function g(t) {
         })]
     })
 }
-class w extends n.PureComponent {
+class E extends n.PureComponent {
     state = {
         naturalWidth: 0,
         naturalHeight: 0,

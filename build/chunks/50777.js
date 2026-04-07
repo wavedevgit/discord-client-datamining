@@ -16,9 +16,9 @@ var i = n(627968),
     h = n(875444),
     p = n(429913),
     g = n(993046),
-    A = n(594832),
-    x = n(287809),
-    f = n(67480),
+    A = n(801228),
+    x = n(594832),
+    f = n(287809),
     C = n(328968),
     E = n(871123),
     I = n(733391),
@@ -68,11 +68,11 @@ function D(e) {
                 variant: "text-md/bold",
                 lineClamp: 1,
                 children: s
-            }), (0, i.jsx)(c.Text, {
+            }), (0, i.jsxs)(c.Text, {
                 variant: "text-md/bold",
                 color: "text-feedback-positive",
                 lineClamp: 1,
-                children: o
+                children: ["(", o, ")"]
             }), d]
         }) : (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)(c.Text, {
@@ -89,13 +89,16 @@ function M(e) {
         guildId: t,
         skuId: n,
         channel: s
-    } = e, a = (0, o.bG)([C.A], () => C.A.isFetchingForSKU(n)), M = (0, o.bG)([f.A], () => f.A.get(n)), w = M?.applicationId, O = (0, o.bG)([m.A], () => null != w && m.A.isFetchingApplication(w)), k = (0, o.bG)([m.A], () => null != w && m.A.didFetchingApplicationFail(w)), U = (0, p.h)(w), B = (0, b.b)({
+    } = e, a = (0, o.bG)([C.A], () => C.A.isFetchingForSKU(n)), M = (0, A.A)({
+        skuId: n,
+        location: "SocialLayerStorefrontProductDetailsEmbed"
+    }), w = M?.applicationId, O = (0, o.bG)([m.A], () => null != w && m.A.isFetchingApplication(w)), k = (0, o.bG)([m.A], () => null != w && m.A.didFetchingApplicationFail(w)), U = (0, p.h)(w), B = (0, b.b)({
         location: "product_details_embed"
     }), {
         analyticsLocations: G
     } = (0, _.Ay)(u.A.SLAYER_STOREFRONT_PRODUCT_DETAILS_EMBED);
-    (0, A.pE)();
-    let F = (0, o.bG)([x.default], () => s.isDM() && null != s.recipients && 0 !== s.recipients.length ? x.default.getUser(s.recipients[0]) : null),
+    (0, x.pE)();
+    let F = (0, o.bG)([f.default], () => s.isDM() && null != s.recipients && 0 !== s.recipients.length ? f.default.getUser(s.recipients[0]) : null),
         H = (0, o.bG)([v.A], () => null != n ? v.A.getNormalizedSKUEligibility(n) : void 0, [n]),
         {
             primaryIconAsset: V,

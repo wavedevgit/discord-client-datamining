@@ -35,7 +35,7 @@ let h = (0, r.zZ)(d.X.DISPLAY_THEME_CATEGORY, {
             buttons: [{
                 id: "open-client-themes-button",
                 type: o.UV.BUTTON,
-                useText: () => A.intl.string(A.t["E+COuA"]),
+                text: A.intl.string(A.t["E+COuA"]),
                 onClick: c.J3
             }]
         }

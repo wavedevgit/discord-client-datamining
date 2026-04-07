@@ -1,6 +1,6 @@
 /** chunk id: 329449 params = (module,exports,require) **/
 n.d(t, {
-    A: () => N
+    A: () => I
 }), n(142703);
 var i = n(627968),
     l = n(64700),
@@ -116,39 +116,39 @@ let S = l.memo(function(e) {
             })]
         })
     }),
-    N = l.memo(function(e) {
+    I = l.memo(function(e) {
         let {
             channelId: t
         } = e, n = (0, o.bG)([h.default], () => h.default.getId()), s = (0, o.bG)([m.A], () => m.A.isTyping(t, n), [t, n]), a = (0, o.bG)([p.A], () => p.A.isEnabled()), u = (0, o.bG)([f.Ay], () => f.Ay.isComboing(n, t), [t, n]), {
             ref: A,
             width: g = 0
-        } = (0, d.Ay)(), [_, x] = l.useState(!1), N = (0, E.A)(t), I = a && u && s;
+        } = (0, d.Ay)(), [_, x] = l.useState(!1), I = (0, E.A)(t), N = a && u && s;
         l.useEffect(() => {
-            I && x(!0);
-            let e = setTimeout(() => x(I), 1e3);
+            N && x(!0);
+            let e = setTimeout(() => x(N), 1e3);
             return () => clearTimeout(e)
-        }, [I]);
+        }, [N]);
         let v = (0, c.zhh)({
                 opacity: +!!_,
                 transform: _ ? "translateY(0)" : "translateY(100%)",
                 pointerEvents: "none",
                 config: r.config.stiff
             }),
-            b = l.useMemo(() => N ?? {
+            y = l.useMemo(() => I ?? {
                 value: 0,
                 multiplier: 1
-            }, [N]),
-            y = l.useRef(b);
+            }, [I]),
+            b = l.useRef(y);
         l.useEffect(() => {
-            (b.multiplier > 1 || b.value > 0) && (y.current = b)
-        }, [b]);
+            (y.multiplier > 1 || y.value > 0) && (b.current = y)
+        }, [y]);
         let {
             multiplier: j,
             value: R
         } = l.useMemo(() => ({
-            value: I ? b.value : y.current.value,
-            multiplier: I ? b.multiplier : y.current.multiplier
-        }), [I, b, y]);
+            value: N ? y.value : b.current.value,
+            multiplier: N ? y.multiplier : b.current.multiplier
+        }), [N, y, b]);
         return (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)(S, {
                 channelId: t,

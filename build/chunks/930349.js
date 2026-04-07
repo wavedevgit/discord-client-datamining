@@ -1,19 +1,19 @@
 /** chunk id: 930349 params = (module,exports,require) **/
-i.d(n, {
-    N: () => p,
-    k: () => A
+t.d(n, {
+    NW: () => g,
+    kL: () => p
 });
-var t = i(627968);
-i(64700);
-var a = i(503698),
-    l = i.n(a),
-    s = i(158954),
-    r = i(990078),
-    d = i(985018),
-    o = i(967024);
+var i = t(627968);
+t(64700);
+var a = t(503698),
+    l = t.n(a),
+    s = t(158954),
+    r = t(990078),
+    d = t(985018),
+    o = t(967024);
 
 function c() {
-    return (0, t.jsx)("div", {
+    return (0, i.jsx)("div", {
         className: o.overlay
     })
 }
@@ -21,14 +21,14 @@ function c() {
 function u(e) {
     let {
         icon: n,
-        iconAlignment: i
+        iconAlignment: t
     } = e;
-    return (0, t.jsx)("div", {
+    return (0, i.jsx)("div", {
         className: l()(o.iconContainer, {
-            [o.iconAlignCenter]: "center" === i,
-            [o.iconAlignRight]: "right" === i
+            [o.iconAlignCenter]: "center" === t,
+            [o.iconAlignRight]: "right" === t
         }),
-        children: (0, t.jsx)(n, {
+        children: (0, i.jsx)(n, {
             size: "md",
             color: "white",
             "aria-hidden": !0,
@@ -40,15 +40,15 @@ function u(e) {
 function _(e) {
     let {
         onClick: n,
-        type: i,
+        type: t,
         accessibleLabel: a
-    } = e, l = "remove" === i ? d.intl.string(d.t.N86XcP) : d.intl.string(d.t.wgIPss);
-    return (0, t.jsx)(r.m, {
+    } = e, l = "remove" === t ? d.intl.string(d.t.N86XcP) : d.intl.string(d.t.wgIPss);
+    return (0, i.jsx)(r.m, {
         text: l,
         ariaHidden: !0,
-        children: (0, t.jsx)(s.K0, {
+        children: (0, i.jsx)(s.K0, {
             "aria-label": a,
-            icon: "remove" === i ? s.ucK : s.mqY,
+            icon: "remove" === t ? s.ucK : s.mqY,
             size: "sm",
             variant: "overlay-secondary",
             onClick: n
@@ -59,51 +59,61 @@ function _(e) {
 function A(e) {
     let {
         variant: n,
-        onClick: i,
-        accessibleLabel: a,
-        children: r
+        children: t
     } = e;
-    return (0, t.jsx)("div", {
-        className: o.tileWrapper,
-        children: (0, t.jsxs)(s.DUT, {
+    return (0, i.jsx)("div", {
+        className: l()(o.tile, o[n]),
+        children: t
+    })
+}
+
+function x(e) {
+    let {
+        variant: n,
+        onClick: t,
+        accessibleLabel: a,
+        children: l,
+        showOverlay: r = !1,
+        overlayIcon: d,
+        overlayControls: _
+    } = e;
+    return (0, i.jsxs)(A, {
+        variant: n,
+        children: [(0, i.jsxs)(s.DUT, {
+            className: o.tileButton,
             "aria-label": a,
-            className: l()(o.base, o[n]),
-            onClick: i,
-            children: [(0, t.jsx)("div", {
+            onClick: t,
+            children: [(0, i.jsx)("div", {
                 className: o.content,
-                children: r
-            }), (0, t.jsx)(c, {}), (0, t.jsx)(u, {
-                icon: s.TIR,
+                children: l
+            }), r && (0, i.jsx)(c, {}), null != d && (0, i.jsx)(u, {
+                icon: d,
                 iconAlignment: "bar" === n ? "right" : "center"
             })]
-        })
+        }), _]
     })
 }
 
 function p(e) {
+    return (0, i.jsx)(x, {
+        ...e,
+        overlayIcon: s.TIR,
+        showOverlay: !0
+    })
+}
+
+function g(e) {
     let {
-        variant: n,
-        onClick: i,
-        accessibleLabel: a,
-        children: r,
-        showOverlay: d,
-        deleteButtonConfig: u
+        deleteButtonConfig: n,
+        ...t
     } = e;
-    return (0, t.jsxs)("div", {
-        className: o.tileWrapper,
-        children: [(0, t.jsxs)(s.DUT, {
-            "aria-label": a,
-            className: l()(o.base, o[n]),
-            onClick: i,
-            children: [(0, t.jsx)("div", {
-                className: o.content,
-                children: r
-            }), d && (0, t.jsx)(c, {})]
-        }), null != u && (0, t.jsx)("div", {
+    return (0, i.jsx)(x, {
+        ...t,
+        overlayControls: null != n && (0, i.jsx)("div", {
             className: o.deleteButtonWrapper,
-            children: (0, t.jsx)(_, {
-                ...u
+            children: (0, i.jsx)(_, {
+                ...n
             })
-        })]
+        })
     })
 }

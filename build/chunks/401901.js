@@ -45,7 +45,7 @@ let A = s.memo(function(e) {
         videoSpinnerContext: _,
         streamKey: x,
         paused: p
-    }), N = s.useCallback(() => {
+    }), I = s.useCallback(() => {
         S(!1), T()
     }, [T]);
     return (0, l.jsxs)("div", {
@@ -56,7 +56,7 @@ let A = s.memo(function(e) {
             }, m),
             streamId: t,
             onResize: n,
-            onReady: N,
+            onReady: I,
             paused: p
         }), p ? null : (0, l.jsx)("div", {
             className: r()(h.previewWrapper, {
