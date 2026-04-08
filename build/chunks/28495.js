@@ -24,9 +24,9 @@ var i = n(627968),
     N = n(20851),
     E = n(176201),
     C = n(676608),
-    b = n(828162),
-    T = n(208039),
-    I = n(34457),
+    T = n(828162),
+    I = n(208039),
+    b = n(34457),
     v = n(576705),
     S = n(636042),
     y = n(396816),
@@ -91,7 +91,7 @@ function J(e) {
     };
 
     function C() {
-        (0, b.A)(n, p.A.GUILD_POWERUPS_GUILD_SETTINGS_ROLE_EDIT), (0, x.jH)()
+        (0, T.A)(n, p.A.GUILD_POWERUPS_GUILD_SETTINGS_ROLE_EDIT), (0, x.jH)()
     }
     return (0, i.jsx)(f.Ay, {
         contentTypes: [u.M.GUILD_SETTINGS_ROLE_STYLES_NEW_BADGE],
@@ -152,7 +152,7 @@ function J(e) {
                             variant: "text-sm/semibold",
                             color: "button-outline-primary-text",
                             children: B.intl.format(F.default.VpEDJc, {
-                                magical: (0, i.jsx)(q, {})
+                                magical: (0, i.jsx)(Z, {})
                             })
                         }), (0, i.jsx)(g.Text, {
                             variant: "text-xs/medium",
@@ -171,7 +171,7 @@ function J(e) {
     })
 }
 
-function q() {
+function Z() {
     let e = (0, c.bG)([_.A], () => _.A.useReducedMotion),
         {
             gradientStyle: t,
@@ -193,7 +193,7 @@ function q() {
     })
 }
 
-function Z(e) {
+function q(e) {
     let {
         role: t,
         disabled: n,
@@ -311,7 +311,7 @@ function ee(e) {
         role: n,
         locked: s,
         setSelectedSection: l
-    } = e, a = (0, C.jV)(t.id, n), o = (0, c.bG)([y.A], () => y.A.getRoleStyleData(n.id)), d = !a, u = null != o && a ? o.currentStyle : y.y.SOLID, m = (0, I.Oy)(n), x = s || m, h = (0, c.bG)([v.A], () => v.A.canImpersonateRole(t, n)), {
+    } = e, a = (0, C.jV)(t.id, n), o = (0, c.bG)([y.A], () => y.A.getRoleStyleData(n.id)), d = !a, u = null != o && a ? o.currentStyle : y.y.SOLID, m = (0, b.Oy)(n), x = s || m, h = (0, c.bG)([v.A], () => v.A.canImpersonateRole(t, n)), {
         headerHeight: _,
         headerRef: p
     } = (0, O.A)(0), {
@@ -353,12 +353,12 @@ function ee(e) {
                 selectedStyle: u,
                 disabled: x,
                 shouldShowUpsell: d
-            }), u !== y.y.HOLOGRAPHIC && null != u && (0, i.jsx)(Z, {
+            }), u !== y.y.HOLOGRAPHIC && null != u && (0, i.jsx)(q, {
                 role: n,
                 disabled: x,
                 currentStyle: u,
                 hasEnhancedRoleColors: a
-            }), u === y.y.HOLOGRAPHIC && (0, i.jsx)(T.A, {
+            }), u === y.y.HOLOGRAPHIC && (0, i.jsx)(I.A, {
                 className: H.u,
                 children: (0, i.jsx)(g.Text, {
                     variant: "text-xs/medium",

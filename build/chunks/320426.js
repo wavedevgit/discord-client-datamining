@@ -1,30 +1,30 @@
 /** chunk id: 320426 params = (module,exports,require) **/
 r.d(t, {
-    A: () => u
+    A: () => A
 });
 var i = r(64700),
     a = r(417597),
     s = r(562465),
     n = r(73153),
-    o = r(58149),
-    l = r(71393),
+    l = r(58149),
+    o = r(71393),
     c = r(576705),
-    _ = r(954571),
-    d = r(927813),
-    E = r(381616),
-    h = r(652215);
-let A = +d.A.Millis.DAY,
-    I = new Map,
-    u = {
+    d = r(954571),
+    _ = r(927813),
+    h = r(381616),
+    p = r(652215);
+let D = +_.A.Millis.DAY,
+    E = new Map,
+    A = {
         useShouldShowChannelNotice(e) {
-            let t = (0, a.bG)([l.A, c.A], () => {
-                let t = l.A.getGuild(e);
-                return null != t && c.A.can(h.xBc.ADMINISTRATOR, t)
+            let t = (0, a.bG)([o.A, c.A], () => {
+                let t = o.A.getGuild(e);
+                return null != t && c.A.can(p.xBc.ADMINISTRATOR, t)
             });
             i.useEffect(() => {
                 let r, i;
-                t && (r = Date.now(), r < (i = I.get(e) ?? 0) + A || (I.set(e, r), s.Bo.post({
-                    url: h.Rsh.GUILD_MIGRATE_COMMAND_SCOPE(e),
+                t && (r = Date.now(), r < (i = E.get(e) ?? 0) + D || (E.set(e, r), s.Bo.post({
+                    url: p.Rsh.GUILD_MIGRATE_COMMAND_SCOPE(e),
                     rejectWithError: !0
                 }).then(t => {
                     n.h.dispatch({
@@ -33,10 +33,10 @@ let A = +d.A.Millis.DAY,
                         integrationIdsWithAppCommands: t.body?.integration_ids_with_app_commands ?? []
                     })
                 }, () => {
-                    I.set(e, i)
+                    E.set(e, i)
                 })))
             }, [e, t]);
-            let r = (0, a.bG)([E.A], () => E.A.shouldShowChannelNotice(e));
+            let r = (0, a.bG)([h.A], () => h.A.shouldShowChannelNotice(e));
             return t && r
         },
         dismissNotice(e) {
@@ -50,8 +50,8 @@ let A = +d.A.Millis.DAY,
                 type: "COMMANDS_MIGRATION_OVERVIEW_TOOLTIP_DISMISSED",
                 guildId: e,
                 integrationId: t.id
-            }), _.default.track(h.HAw.COMMANDS_MIGRATION_TOOLTIP_DISMISSED, {
-                ...(0, o.H$)(e),
+            }), d.default.track(p.HAw.COMMANDS_MIGRATION_TOOLTIP_DISMISSED, {
+                ...(0, l.H$)(e),
                 application_id: t.application?.id,
                 location: "overview"
             })
@@ -60,8 +60,8 @@ let A = +d.A.Millis.DAY,
             void 0 !== t && (n.h.dispatch({
                 type: "COMMANDS_MIGRATION_TOGGLE_TOOLTIP_DISMISSED",
                 integrationId: t.id
-            }), _.default.track(h.HAw.COMMANDS_MIGRATION_TOOLTIP_DISMISSED, {
-                ...(0, o.H$)(e),
+            }), d.default.track(p.HAw.COMMANDS_MIGRATION_TOOLTIP_DISMISSED, {
+                ...(0, l.H$)(e),
                 application_id: t.application?.id,
                 location: "toggle"
             }))

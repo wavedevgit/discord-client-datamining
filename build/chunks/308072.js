@@ -9,7 +9,7 @@ var i = n(627968),
     r = n.n(l),
     a = n(397927),
     o = n(311907),
-    d = n(885151),
+    d = n(454908),
     c = n(760751),
     u = n(998218),
     m = n(523372);
@@ -23,7 +23,7 @@ function g(e) {
     } = e, {
         data: x,
         isLoading: h
-    } = (0, d.k)(t), _ = s.useMemo(() => {
+    } = (0, d.I)(t), _ = s.useMemo(() => {
         let e = x?.getCoverURL();
         if (null == e) return;
         let t = u.A.toURLSafe(e);

@@ -37,7 +37,7 @@ function p(e) {
             analyticsObject: m.ZSU.BUTTON_CTA,
             perks: (0, g.Lp)()
         })
-    }, [A, t]), b = s.useCallback(() => {
+    }, [A, t]), T = s.useCallback(() => {
         N.current?.activateUploadDialogue()
     }, []);
     return f ? (0, i.jsxs)("div", {
@@ -46,7 +46,7 @@ function p(e) {
             disabled: !j,
             variant: "primary",
             text: h.intl.string(h.t.yG2pUi),
-            onClick: b
+            onClick: T
         }), (0, i.jsx)("div", {
             className: _.y,
             children: (0, i.jsx)(o.Ay, {

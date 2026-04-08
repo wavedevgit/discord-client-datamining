@@ -11,9 +11,9 @@ var r = a(503698),
     c = a(990078),
     s = a(397927),
     _ = a(429913),
-    d = a(885151),
-    u = a(409626),
-    p = a(692969),
+    d = a(409626),
+    u = a(692969),
+    p = a(454908),
     m = a(287809),
     b = a(405269),
     f = a(403362),
@@ -28,10 +28,10 @@ function x(e) {
         separator: a
     } = e, r = (0, _.h)(t), {
         data: o
-    } = (0, d.k)(t), i = (0, p.A)({
+    } = (0, p.I)(t), i = (0, u.A)({
         applicationId: t,
         location: "ClipEmbed",
-        source: u.Ob.ClipEmbed
+        source: d.Ob.ClipEmbed
     }), l = o?.name ?? r?.name;
     return null == l ? null : null != i ? (0, n.jsxs)(n.Fragment, {
         children: [(0, n.jsx)(s.DUT, {

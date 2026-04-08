@@ -36,10 +36,10 @@ function A(e) {
         originalVanityURLCode: m.A.originalVanityURLCode,
         errorDetails: m.A.errorDetails,
         fetched: m.A.fetchedVanityURL
-    })), b = t?.id;
+    })), T = t?.id;
     return (s.useEffect(() => {
-        null == b || C || (0, u.Je)(b)
-    }, [C, b]), null == t) ? null : A ? (0, i.jsx)(a.A, {}) : (0, i.jsxs)("div", {
+        null == T || C || (0, u.Je)(T)
+    }, [C, T]), null == t) ? null : A ? (0, i.jsx)(a.A, {}) : (0, i.jsxs)("div", {
         ref: n,
         children: [(0, i.jsxs)(r.Heading, {
             variant: "heading-md/medium",

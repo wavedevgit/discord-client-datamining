@@ -1,7 +1,7 @@
 /** chunk id: 314737 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    Ay: () => q,
+    Ay: () => Z,
     Bt: () => Y,
     zI: () => X
 });
@@ -26,9 +26,9 @@ var i = n(627968),
     N = n(793574),
     E = n(262295),
     C = n(936555),
-    b = n(725437),
-    T = n(952385),
-    I = n(810877),
+    T = n(725437),
+    I = n(952385),
+    b = n(810877),
     v = n(945086),
     S = n(824832),
     y = n(931991),
@@ -330,7 +330,7 @@ let z = c().throttle(p.dZ, 1e3),
             }
         }))
     },
-    q = () => {
+    Z = () => {
         let e = s.useRef(null),
             t = s.useRef(0),
             l = (0, g.bG)([P.A], () => P.A.getGuild()),
@@ -355,7 +355,7 @@ let z = c().throttle(p.dZ, 1e3),
                 totalStaticEmoji: M,
                 animatedEmoji: V,
                 totalAnimatedEmoji: W
-            } = (0, T.v)({
+            } = (0, I.v)({
                 guild: l
             }),
             [Y, X] = s.useState(null);
@@ -368,16 +368,16 @@ let z = c().throttle(p.dZ, 1e3),
         }, [u, _, l.id]), s.useEffect(() => {
             if (null != x && null == Y) return void X(x)
         }, [x, Y]);
-        let q = s.useMemo(() => null == Y ? new Set : new Set(c().differenceBy(x, Y, "id").map(e => e.id)), [x, Y]),
-            Z = s.useCallback(function() {
+        let Z = s.useMemo(() => null == Y ? new Set : new Set(c().differenceBy(x, Y, "id").map(e => e.id)), [x, Y]),
+            q = s.useCallback(function() {
                 let {
                     emoji: e
                 } = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
-                null != e ? (0, b.f)({
+                null != e ? (0, T.f)({
                     guildId: l.id,
                     emoji: e,
                     analyticsLocation: N.A.GUILD_SETTINGS_EMOJI_EDIT_BUTTON
-                }) : (0, b.f)({
+                }) : (0, T.f)({
                     guildId: l.id,
                     analyticsLocation: {
                         page: B.liQ.GUILD_SETTINGS,
@@ -386,7 +386,7 @@ let z = c().throttle(p.dZ, 1e3),
                 })
             }, [l]),
             Q = async (e, t, n) => {
-                let i = await (0, I.W)({
+                let i = await (0, b.W)({
                     data: e,
                     file: t,
                     image: n,
@@ -424,7 +424,7 @@ let z = c().throttle(p.dZ, 1e3),
                     })
                 })
             }, en = s.useCallback(async (e, n, i) => {
-                await (0, b.f)({
+                await (0, T.f)({
                     userImage: {
                         data: e,
                         file: n,
@@ -490,10 +490,10 @@ let z = c().throttle(p.dZ, 1e3),
                     animatedEmoji: V,
                     guild: l,
                     theme: d,
-                    onEdit: e => Z({
+                    onEdit: e => q({
                         emoji: e
                     }),
-                    newlyAddedEmojiIds: q
+                    newlyAddedEmojiIds: Z
                 })]
             })]
         })

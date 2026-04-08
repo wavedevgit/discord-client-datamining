@@ -24,8 +24,8 @@ var i = n(627968),
     N = n(652215),
     E = n(897513),
     C = n(985018),
-    b = n(915475);
-let T = function(e, t, n) {
+    T = n(915475);
+let I = function(e, t, n) {
         let i = arguments.length > 3 && void 0 !== arguments[3] && arguments[3],
             s = null;
         return null == t || Number.isNaN(t) ? (null == t || Number.isNaN(t)) && null != e && (s = C.intl.string(C.t.xO2msf)) : s = C.intl.formatToPlainString(C.t.nskeMw, {
@@ -37,10 +37,10 @@ let T = function(e, t, n) {
             isTrendingDown: t < 0
         }
     },
-    I = function(e) {
+    b = function(e) {
         let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
         return t || e === N.t02.NOT_ENOUGH_GUILD_MEMBERS ? (0, i.jsx)("div", {
-            className: b.NA,
+            className: T.NA,
             children: (0, i.jsx)(d.wx6, {
                 type: "info",
                 children: C.intl.string(C.t["FsgE/B"])
@@ -54,7 +54,7 @@ let T = function(e, t, n) {
         let [e, t] = s.useState(!1), n = (0, a.bG)([p.A], () => p.A.getGuildId());
         return (0, i.jsx)("div", {
             "data-button-hoisted-classname-wrapper": !0,
-            className: b.XU,
+            className: T.XU,
             children: (0, i.jsx)(d.Button, {
                 variant: "primary",
                 text: C.intl.string(C.t.Uskgxx),
@@ -102,24 +102,24 @@ let T = function(e, t, n) {
             (0, u.sF)(E._.GUILD_ANALYTICS_GUILD_SETTINGS_MENU)
         }, []);
         let y = null != r ? (0, i.jsx)("div", {
-            className: b.__invalid_guildAnalyticsOverviewWrapper,
+            className: T.__invalid_guildAnalyticsOverviewWrapper,
             children: (0, i.jsxs)("div", {
-                className: b.SJ,
+                className: T.SJ,
                 children: [(0, i.jsx)(j.A, {
                     title: C.intl.string(C.t.i0NorT),
                     tooltipText: C.intl.string(C.t.KiRbLJ),
-                    ...T(r.visitors, r.visitorsChange, l)
+                    ...I(r.visitors, r.visitorsChange, l)
                 }), (0, i.jsx)(j.A, {
                     title: C.intl.string(C.t.DDAHdQ),
                     tooltipText: C.intl.string(C.t.HxWUkU),
-                    ...T(r.communicators, r.communicatorsChange, l)
+                    ...I(r.communicators, r.communicatorsChange, l)
                 }), (0, i.jsx)(j.A, {
                     title: C.intl.string(C.t.hYeOqC),
-                    ...T(r.newMembers, r.newMembersChange, l)
+                    ...I(r.newMembers, r.newMembersChange, l)
                 }), (0, i.jsx)(j.A, {
                     title: C.intl.string(C.t.jj7OPw),
                     tooltipText: C.intl.string(C.t.MQCslz),
-                    ...T(r.pctRetained, r.pctRetainedChange, l, !0)
+                    ...I(r.pctRetained, r.pctRetainedChange, l, !0)
                 })]
             })
         }) : null;
@@ -130,17 +130,17 @@ let T = function(e, t, n) {
             }), (0, i.jsx)(d.Text, {
                 variant: "text-sm/normal",
                 children: C.intl.format(C.t.NIZ60a, {})
-            }), I(o, S), (0, i.jsxs)("div", {
-                className: b.Pg,
+            }), b(o, S), (0, i.jsxs)("div", {
+                className: T.Pg,
                 children: [(0, i.jsx)("div", {
-                    className: b.jM
+                    className: T.jM
                 }), (0, i.jsx)(d.Text, {
-                    className: b.WO,
+                    className: T.WO,
                     variant: "text-sm/normal",
                     children: C.intl.string(C.t.A5vswv)
                 }), (0, i.jsx)(v, {})]
             }), _ ? (0, i.jsx)("div", {
-                className: b.Rc,
+                className: T.Rc,
                 children: (0, i.jsx)(c.A, {})
             }) : y]
         })

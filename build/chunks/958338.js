@@ -5,8 +5,8 @@ n.d(t, {
 });
 var i = n(64700),
     a = n(311907),
-    l = n(136086),
-    s = n(885151),
+    l = n(311043),
+    s = n(454908),
     r = n(958805),
     o = n(61881),
     d = n(911498);
@@ -22,7 +22,7 @@ function c(e) {
             remove: t,
             peekedGameIds: n
         } = (0, d.s)(), r = i.useMemo(() => n[e] ?? [], [n, e]);
-        (0, s.W)(r);
+        (0, s.x)(r);
         let o = (0, a.yK)([l.A], () => r.map(e => l.A.isFetching(e)));
         i.useEffect(() => {
             for (let n of r) {

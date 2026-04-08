@@ -1,6 +1,6 @@
 /** chunk id: 966833 params = (module,exports,require) **/
 n.d(t, {
-    A: () => h,
+    A: () => S,
     e: () => g
 }), n(667532);
 var i, s = n(735438),
@@ -36,7 +36,7 @@ function I() {
         }), e.items = e.items.slice()
     })
 }
-class S extends r.Ay.Store {
+class h extends r.Ay.Store {
     static displayName = "ChannelPinsStore";
     initialize() {
         this.waitFor(u.A, E.Ay, A.A, d.default, p.A, m.A, f.default)
@@ -45,7 +45,7 @@ class S extends r.Ay.Store {
         return D[e]
     }
 }
-let h = new S(a.h, {
+let S = new h(a.h, {
     CONNECTION_OPEN: function() {
         D = {}
     },

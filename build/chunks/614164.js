@@ -24,10 +24,10 @@ var i = n(627968),
     N = n(652215),
     E = n(783419),
     C = n(985018),
-    b = n(333152),
-    T = n(177424);
+    T = n(333152),
+    I = n(177424);
 
-function I(e, t) {
+function b(e, t) {
     return t !== m.jO.AND ? Object.values(o().groupBy(e, e => `${e.connectionType}:${e.applicationId}`)) : 0 === e.length ? [] : [
         [...e]
     ]
@@ -39,15 +39,15 @@ function v(e) {
         locked: n
     } = e;
     return (0, i.jsxs)("div", {
-        className: b.Gq,
+        className: T.Gq,
         children: [(0, i.jsx)(c.Heading, {
-            className: b.gg,
+            className: T.gg,
             variant: "eyebrow",
             children: C.intl.string(C.t.nMir27)
         }), (0, i.jsx)(c.Text, {
             variant: "text-sm/normal",
             color: "text-default",
-            className: b.$L,
+            className: T.$L,
             children: C.intl.format(C.t.q5f7tK, {
                 helpdeskArticleUrl: g.A.getArticleURL(N.MVz.CONNECTION_DETAILS_ADMIN)
             })
@@ -85,7 +85,7 @@ function S(e) {
             applicationId: t,
             operator: void 0,
             value: void 0
-        }), (0, h.pn)(n.id, I(i, D))
+        }), (0, h.pn)(n.id, b(i, D))
     }
 
     function P() {
@@ -115,9 +115,9 @@ function S(e) {
         })), w = (0, i.jsxs)(i.Fragment, {
             children: [(B = () => (0, h.pn)(n.id, []), (0, i.jsxs)(i.Fragment, {
                 children: [(0, i.jsxs)("div", {
-                    className: b.$$,
+                    className: T.$$,
                     children: [(0, i.jsx)("div", {
-                        className: b.Ir,
+                        className: T.Ir,
                         children: (0, i.jsx)(c.Heading, {
                             variant: "eyebrow",
                             children: C.intl.string(C.t.nMir27)
@@ -135,7 +135,7 @@ function S(e) {
                         helpdeskArticleUrl: g.A.getArticleURL(N.MVz.CONNECTION_DETAILS_ADMIN)
                     })
                 })]
-            })), (n.id, F = (e, t) => (0, h.pn)(n.id, I(e, t)), e = I(M, m.jO.OR), (0, i.jsx)(c.z6M, {
+            })), (n.id, F = (e, t) => (0, h.pn)(n.id, b(e, t)), e = b(M, m.jO.OR), (0, i.jsx)(c.z6M, {
                 label: C.intl.string(C.t.Xs7PHX),
                 options: [{
                     name: C.intl.string(C.t.W3iY58),
@@ -192,7 +192,7 @@ function S(e) {
                     })
                 }
                 return (0, i.jsx)("div", {
-                    className: b.rr,
+                    className: T.rr,
                     children: Array.from(a.values()).map(e => (0, i.jsx)(A.A, {
                         configurationItems: e,
                         onConfigurationChange: r,
@@ -200,20 +200,20 @@ function S(e) {
                         integrations: l
                     }, e[0].configuration.connectionType + ":" + e[0].index))
                 })
-            }(M, e => (0, h.pn)(n.id, I(e, D)), l, n.id, o), t]
+            }(M, e => (0, h.pn)(n.id, b(e, D)), l, n.id, o), t]
         })
     }
     return (0, i.jsx)(c.GtU, {
-        className: b.XG,
+        className: T.XG,
         style: {
             scrollPaddingTop: S
         },
         onScroll: O,
         children: (0, i.jsxs)("div", {
-            className: T.Q,
+            className: I.Q,
             children: [(0, i.jsx)("div", {
-                className: r()(T.wx, T.ln, {
-                    [T.l6]: !R
+                className: r()(I.wx, I.ln, {
+                    [I.l6]: !R
                 }),
                 ref: y,
                 children: (0, i.jsx)(f.A, {
@@ -223,13 +223,13 @@ function S(e) {
                     setSelectedSection: a
                 })
             }), (G ?? 0) > 0 ? (0, i.jsxs)("div", {
-                className: b.UW,
+                className: T.UW,
                 children: [(0, i.jsx)(c.EpV, {
                     size: "custom",
                     width: 20,
                     height: 20,
                     color: "currentColor",
-                    className: b.QW
+                    className: T.QW
                 }), (0, i.jsx)(c.Text, {
                     variant: "text-sm/normal",
                     color: "text-default",

@@ -24,9 +24,9 @@ var i = n(627968),
     N = n(792831),
     E = n(396816),
     C = n(359837),
-    b = n(533448),
-    T = n(316506),
-    I = n(927573),
+    T = n(533448),
+    I = n(316506),
+    b = n(927573),
     v = n(652215),
     S = n(985018),
     y = n(914535);
@@ -46,9 +46,9 @@ function O(e) {
             roleStyle: N
         } = e,
         E = (0, C.c)(s, d, l),
-        b = (0, f.Oy)(l),
-        T = null == E && !b,
-        I = l.tags?.guild_connections !== void 0,
+        T = (0, f.Oy)(l),
+        I = null == E && !T,
+        b = l.tags?.guild_connections !== void 0,
         S = (0, A.X_)(s.id, l, l.colorStrings),
         [, O] = (0, a.i)({
             type: R,
@@ -56,7 +56,7 @@ function O(e) {
                 id: l.id,
                 position: x
             }),
-            canDrag: () => T,
+            canDrag: () => I,
             end: (e, t) => {
                 let n = t.getDropResult();
                 null == n ? p() : j(n.roleId)
@@ -66,7 +66,7 @@ function O(e) {
             dragSourcePosition: G
         }, L] = (0, o.H)({
             accept: R,
-            canDrop: () => T,
+            canDrop: () => I,
             collect: e => {
                 let t = e.getItem();
                 return null != t && e.isOver() && e.canDrop() ? {
@@ -80,7 +80,7 @@ function O(e) {
             })
         }),
         D = l.colorString ?? v.TpD;
-    return t = I ? (0, i.jsx)(_.A, {
+    return t = b ? (0, i.jsx)(_.A, {
         size: 12,
         color: l.colorString,
         className: y.Ev
@@ -122,7 +122,7 @@ function O(e) {
             tooltipText: E
         }) : null, (0, i.jsx)(u.Text, {
             variant: "text-sm/medium",
-            color: b ? "text-strong" : "interactive-text-active",
+            color: T ? "text-strong" : "interactive-text-active",
             lineClamp: 1,
             children: l.name
         })]
@@ -138,11 +138,11 @@ function G(e) {
     } = e, o = (0, d.bG)([E.A], () => E.A.roles), m = (0, d.bG)([j.A], () => j.A.getHighestRole(t)), _ = (0, d.bG)([h.A], () => h.A.roleStyle), [A, f] = s.useState(o.length), {
         scrolledToTop: C,
         handleScroll: v
-    } = (0, T.u)(), {
+    } = (0, I.u)(), {
         handleDragStart: R,
         handleDragReset: G,
         handleDragComplete: L
-    } = (0, b.A)(o), D = s.useRef(null), M = s.useCallback(e => {
+    } = (0, T.A)(o), D = s.useRef(null), M = s.useCallback(e => {
         let t = o.findIndex(t => t.id === e);
         D.current?.getScrollerNode()?.scrollTo({
             top: Math.max((t - 2) * 34, 0)
@@ -182,7 +182,7 @@ function G(e) {
                     children: (0, i.jsx)(u.DUT, {
                         className: y.Cm,
                         onClick: () => {
-                            g.A.createRole(t.id), a(I.T$.DISPLAY)
+                            g.A.createRole(t.id), a(b.T$.DISPLAY)
                         },
                         children: (0, i.jsx)(u.j96, {
                             size: "custom",

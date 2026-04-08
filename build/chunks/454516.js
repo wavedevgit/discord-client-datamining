@@ -24,7 +24,7 @@ var i = n(627968),
     N = n(652215),
     E = n(985018),
     C = n(552592);
-class b extends s.PureComponent {
+class T extends s.PureComponent {
     render() {
         let {
             user: e,
@@ -83,7 +83,7 @@ class b extends s.PureComponent {
         })
     }
 }
-let T = s.forwardRef(function(e, t) {
+let I = s.forwardRef(function(e, t) {
     let {
         guild: n,
         sortedBans: l,
@@ -100,7 +100,7 @@ let T = s.forwardRef(function(e, t) {
         }, "spinner");
         let t = l[e],
             s = r?.get(t?.id ?? "");
-        if (null != t && null != s) return (0, i.jsx)(b, {
+        if (null != t && null != s) return (0, i.jsx)(T, {
             user: t,
             ban: s,
             guild: n
@@ -116,7 +116,7 @@ let T = s.forwardRef(function(e, t) {
     })
 });
 
-function I(e) {
+function b(e) {
     let {
         guildId: t,
         storedSearchQuery: n
@@ -182,7 +182,7 @@ function v() {
     let {
         guild: e,
         searchQuery: t
-    } = (0, a.bG)([A.A], () => A.A.getProps(), [], l.isEqual), d = null != t && t.trim().length > 0, g = (0, u.A)(d), p = d !== g, [f] = (0, a.bG)([A.A], () => A.A.getBans(), [], _.D), j = f?.size ?? 0, b = (0, m.Ay)(), v = e?.id ?? N.dJq, S = s.useRef(null), y = s.useCallback(e => null == e || 0 === e.length ? e => null != e : t => {
+    } = (0, a.bG)([A.A], () => A.A.getProps(), [], l.isEqual), d = null != t && t.trim().length > 0, g = (0, u.A)(d), p = d !== g, [f] = (0, a.bG)([A.A], () => A.A.getBans(), [], _.D), j = f?.size ?? 0, T = (0, m.Ay)(), v = e?.id ?? N.dJq, S = s.useRef(null), y = s.useCallback(e => null == e || 0 === e.length ? e => null != e : t => {
         if (null == t || 0 === e.trim().length) return !1;
         let [
             [n], i
@@ -223,18 +223,18 @@ function v() {
     let F = s.useMemo(() => P[M.currentPage - 1] ?? [], [P, M.currentPage]);
     return null == e ? null : (0, i.jsxs)("div", {
         className: C.kL,
-        children: [(0, i.jsx)(I, {
+        children: [(0, i.jsx)(b, {
             guildId: v,
             storedSearchQuery: t
         }), (0, i.jsxs)("div", {
             className: C.gs,
-            children: [!D && (0, i.jsx)(T, {
+            children: [!D && (0, i.jsx)(I, {
                 guild: e,
                 bans: f,
                 sortedBans: F,
                 ref: S
             }), !L && D && (0, i.jsxs)(o.ppr, {
-                theme: b,
+                theme: T,
                 className: C.p$,
                 children: [(0, i.jsx)(o.G8R, {
                     darkSrc: n(29093),

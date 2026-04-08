@@ -26,9 +26,9 @@ function A(t) {
         getSurveyResponses: A,
         setResponse: I,
         trackDisplayedQuestions: N
-    } = (0, c.i)(), R = A(e), p = (0, u.i)(n), [h, C] = l.useState(p.blockId), [g, m] = l.useState(p.pageIndex), [O, S] = l.useState(!1), y = (t, n) => {
+    } = (0, c.i)(), R = A(e), p = (0, u.i)(n), [h, C] = l.useState(p.blockId), [m, O] = l.useState(p.pageIndex), [g, S] = l.useState(!1), y = (t, n) => {
         I(e, t, n)
-    }, x = l.useCallback(() => (O ? s() : (0, a.qfG)(t => (0, i.jsx)(r.Modal, {
+    }, x = l.useCallback(() => (g ? s() : (0, a.qfG)(t => (0, i.jsx)(r.Modal, {
         title: E.intl.string(E.t.T9Sx3z),
         actions: [{
             variant: "secondary",
@@ -46,24 +46,24 @@ function A(t) {
             variant: "text-md/normal",
             children: E.intl.string(E.t.iCK6G0)
         })
-    })), Promise.resolve()), [s, O]), M = l.useMemo(() => null == h ? [] : (0, u.uy)(n, {
+    })), Promise.resolve()), [s, g]), M = l.useMemo(() => null == h ? [] : (0, u.uy)(n, {
         blockId: h,
-        pageIndex: g,
+        pageIndex: m,
         responses: R
-    }), [n, h, g, R]), U = l.useCallback(() => {
+    }), [n, h, m, R]), U = l.useCallback(() => {
         if (null == n || null == h) return;
         let t = (0, u.vt)(n, {
             blockId: h,
-            pageIndex: g,
+            pageIndex: m,
             responses: R
         });
-        N(e, M), t.isComplete && o.Ay.submitSurveyResponse(e, R), C(t.blockId), m(t.pageIndex), S(t.isComplete)
-    }, [n, h, g, R, e, M, N]);
+        N(e, M), t.isComplete && o.Ay.submitSurveyResponse(e, R), C(t.blockId), O(t.pageIndex), S(t.isComplete)
+    }, [n, h, m, R, e, M, N]);
     l.useEffect(() => {
         0 === M.length && U()
     }, [M, U]);
     let P = l.useMemo(() => {
-        if (O) return !1;
+        if (g) return !1;
         for (let t of M) {
             let e = n.Questions[t];
             if (e?.Validation?.Settings?.ForceResponse === "ON") {
@@ -72,8 +72,8 @@ function A(t) {
             }
         }
         return !0
-    }, [O, M, n, R]);
-    return O ? (0, i.jsxs)(r.Modal, {
+    }, [g, M, n, R]);
+    return g ? (0, i.jsxs)(r.Modal, {
         transitionState: d,
         onClose: s,
         size: "md",

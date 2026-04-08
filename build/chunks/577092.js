@@ -24,9 +24,9 @@ var i = n(627968),
     N = n(740816),
     E = n(285732),
     C = n(395405),
-    b = n(175471),
-    T = n(652215),
-    I = n(568065),
+    T = n(175471),
+    I = n(652215),
+    b = n(568065),
     v = n(985018),
     S = n(309520);
 let y = e => {
@@ -71,8 +71,8 @@ let y = e => {
             size: "sm",
             text: v.intl.string(v.t.O1REe1),
             onClick: () => {
-                f.default.track(T.HAw.OPEN_MODAL, {
-                    type: T.JJy.CREATE_STICKER_MODAL,
+                f.default.track(I.HAw.OPEN_MODAL, {
+                    type: I.JJy.CREATE_STICKER_MODAL,
                     location: s
                 }), (e => {
                     let {
@@ -99,41 +99,41 @@ let y = e => {
             guild: t
         } = e, l = (0, N.A)(t.id), {
             analyticsLocations: u
-        } = (0, m.Ay)(), f = (0, p.A)(t.id), G = t.features.has(T.GuildFeatures.MORE_STICKERS) ? T.TVA.TIER_3 : t.premiumTier, L = t.features.has(T.GuildFeatures.MORE_STICKERS) ? T.M2T[T.TVA.TIER_3] : f, D = (0, A.A)(t.id);
+        } = (0, m.Ay)(), f = (0, p.A)(t.id), G = t.features.has(I.GuildFeatures.MORE_STICKERS) ? I.TVA.TIER_3 : t.premiumTier, L = t.features.has(I.GuildFeatures.MORE_STICKERS) ? I.M2T[I.TVA.TIER_3] : f, D = (0, A.A)(t.id);
         if (s.useEffect(() => {
                 window.dispatchEvent(new Event("resize"))
             }, [l]), "success" !== l.status) return (0, i.jsx)(d.y$y, {});
         let M = l.stickers,
             k = [{
-                tier: T.TVA.NONE,
+                tier: I.TVA.NONE,
                 title: (0, i.jsx)(y, {
                     guildStickers: M,
                     currentGuildTier: G,
-                    tier: T.TVA.NONE,
+                    tier: I.TVA.NONE,
                     children: v.intl.string(v.t.tfVXhP)
                 })
             }, {
-                tier: T.TVA.TIER_1,
+                tier: I.TVA.TIER_1,
                 title: (0, i.jsx)(y, {
                     guildStickers: M,
                     currentGuildTier: G,
-                    tier: T.TVA.TIER_1,
+                    tier: I.TVA.TIER_1,
                     children: v.intl.string(v.t.nzXtaS)
                 })
             }, {
-                tier: T.TVA.TIER_2,
+                tier: I.TVA.TIER_2,
                 title: (0, i.jsx)(y, {
                     guildStickers: M,
                     currentGuildTier: G,
-                    tier: T.TVA.TIER_2,
+                    tier: I.TVA.TIER_2,
                     children: v.intl.string(v.t["h33/uW"])
                 })
             }, {
-                tier: T.TVA.TIER_3,
+                tier: I.TVA.TIER_3,
                 title: (0, i.jsx)(y, {
                     guildStickers: M,
                     currentGuildTier: G,
-                    tier: T.TVA.TIER_3,
+                    tier: I.TVA.TIER_3,
                     children: v.intl.string(v.t.BfF6ED)
                 })
             }];
@@ -159,26 +159,26 @@ let y = e => {
                     H = M.slice(w, B),
                     V = H.length > 0,
                     z = G < N.tier,
-                    W = (s = M.length, s < (0, j.aG)(T.TVA.NONE) ? T.TVA.NONE : s < (0, j.aG)(T.TVA.TIER_1) ? T.TVA.TIER_1 : s < (0, j.aG)(T.TVA.TIER_2) ? T.TVA.TIER_2 : s < (0, j.aG)(T.TVA.TIER_3) || null != t && t.features.has(T.GuildFeatures.MORE_STICKERS) && s < c.K.MAX_STICKER_SLOTS ? T.TVA.TIER_3 : T.TVA.NONE),
+                    W = (s = M.length, s < (0, j.aG)(I.TVA.NONE) ? I.TVA.NONE : s < (0, j.aG)(I.TVA.TIER_1) ? I.TVA.TIER_1 : s < (0, j.aG)(I.TVA.TIER_2) ? I.TVA.TIER_2 : s < (0, j.aG)(I.TVA.TIER_3) || null != t && t.features.has(I.GuildFeatures.MORE_STICKERS) && s < c.K.MAX_STICKER_SLOTS ? I.TVA.TIER_3 : I.TVA.NONE),
                     K = k && !z && W === N.tier && B !== H.length,
                     Y = K || H.length > 0,
                     X = B - w,
                     J = n(415358),
-                    q = F - H.length,
-                    Z = K ? Math.min(5 - (H.length + 0) % 5, q) : 0,
+                    Z = F - H.length,
+                    q = K ? Math.min(5 - (H.length + 0) % 5, Z) : 0,
                     Q = [];
-                for (let e = 0; e < Z; e++) Q.push((0, i.jsx)(R, {}, `placeholder-${e}`));
-                let $ = t.premiumTier < N.tier && f >= T.M2T[N.tier],
+                for (let e = 0; e < q; e++) Q.push((0, i.jsx)(R, {}, `placeholder-${e}`));
+                let $ = t.premiumTier < N.tier && f >= I.M2T[N.tier],
                     ee = v.intl.string(v.t.dtFw5c),
                     et = () => {
                         var e, n;
                         let i;
-                        return e = Math.max(1, T.M2T[N.tier] - f), n = N.tier, i = null, void(n === T.TVA.TIER_1 ? i = T.AnalyticsObjectTypes.TIER_1 : n === T.TVA.TIER_2 ? i = T.AnalyticsObjectTypes.TIER_2 : n === T.TVA.TIER_3 && (i = T.AnalyticsObjectTypes.TIER_3), (0, x.A)({
+                        return e = Math.max(1, I.M2T[N.tier] - f), n = N.tier, i = null, void(n === I.TVA.TIER_1 ? i = I.AnalyticsObjectTypes.TIER_1 : n === I.TVA.TIER_2 ? i = I.AnalyticsObjectTypes.TIER_2 : n === I.TVA.TIER_3 && (i = I.AnalyticsObjectTypes.TIER_3), (0, x.A)({
                             analyticsLocations: u,
                             analyticsLocation: {
-                                page: T.liQ.GUILD_SETTINGS,
-                                section: T.JJy.GUILD_SETTINGS_STICKERS,
-                                object: T.ZSU.BOOST_LEVEL_UPSELL_BUTTON,
+                                page: I.liQ.GUILD_SETTINGS,
+                                section: I.JJy.GUILD_SETTINGS_STICKERS,
+                                object: I.ZSU.BOOST_LEVEL_UPSELL_BUTTON,
                                 objectType: i
                             },
                             guildId: t.id,
@@ -187,7 +187,7 @@ let y = e => {
                     },
                     en = !1;
                 $ && (D ? (et = () => {
-                    let e = I.a8[N.tier];
+                    let e = b.a8[N.tier];
                     null != e && (0, _.Qh)(t.id, e)
                 }, ee = v.intl.string(v.t.g7lkrU), t.premiumTier + 1 !== N.tier && (en = !0, l = v.intl.string(v.t.mTMkY2))) : (en = !0, l = v.intl.string(v.t.hwPEJR)));
                 let ei = W === y + 1 && W > G,
@@ -199,14 +199,14 @@ let y = e => {
                     buttonText: v.intl.string(v.t.Vbkh2l),
                     targetBoostedGuildTier: G + 1,
                     analyticsLocation: {
-                        page: T.liQ.GUILD_SETTINGS,
-                        section: T.JJy.GUILD_SETTINGS_STICKERS,
-                        object: T.ZSU.BOOST_UPSELL_NEXT_LEVEL_HEADER,
+                        page: I.liQ.GUILD_SETTINGS,
+                        section: I.JJy.GUILD_SETTINGS_STICKERS,
+                        object: I.ZSU.BOOST_UPSELL_NEXT_LEVEL_HEADER,
                         objectType: (0, j.k1)(N.tier)
                     }
                 }) : K && (m = (0, i.jsx)(O, {
                     guild: t
-                })), (0, i.jsxs)(b.A, {
+                })), (0, i.jsxs)(T.A, {
                     subscriptionCount: L,
                     tier: N,
                     onSetRef: A,
@@ -240,7 +240,7 @@ let y = e => {
                             className: S.nN,
                             variant: "text-md/normal",
                             color: "text-default",
-                            children: N.tier === T.TVA.TIER_1 ? v.intl.formatToPlainString(v.t.psMYux, {
+                            children: N.tier === I.TVA.TIER_1 ? v.intl.formatToPlainString(v.t.psMYux, {
                                 numAdditional: X
                             }) : v.intl.formatToPlainString(v.t.bLykEe, {
                                 numAdditional: X,

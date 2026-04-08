@@ -45,17 +45,17 @@ function p(e) {
     }, []), {
         handleDragStart: E,
         handleDragReset: C,
-        handleDragComplete: b,
-        draggingId: T
+        handleDragComplete: T,
+        draggingId: I
     } = (0, a.A)(j, N), {
-        enabled: I
+        enabled: b
     } = u.A.useExperiment({
         guildId: t,
         location: "guild_settings"
     }, {
         autoTrackExposure: !0
     });
-    if (!I) return null;
+    if (!b) return null;
     let v = p.length < x.pA;
     return (0, i.jsxs)("div", {
         className: _.jx,
@@ -84,8 +84,8 @@ function p(e) {
                 index: t,
                 onDragStart: E,
                 onDragReset: C,
-                onDragComplete: b,
-                draggingId: T
+                onDragComplete: T,
+                draggingId: I
             }, e.id))
         }), (0, i.jsxs)("button", {
             className: _.qG,

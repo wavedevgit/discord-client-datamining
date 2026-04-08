@@ -20,17 +20,17 @@ function x(e) {
     let {
         guildId: t,
         scrollToQuestions: n
-    } = e, x = (0, s.bG)([a.A], () => a.A.isAdvancedMode(t)), h = (0, s.bG)([d.A], () => d.A.editedDefaultChannelIds), [_, p] = (0, o.tb)(t, h), [A, f] = (0, c.tB)(t, [...h]), j = x ? f.length : p.length, N = x ? A.length : _.length, E = N >= u.Kd, C = f.length - p.length, b = (0, i.jsx)(r.yr3, {
+    } = e, x = (0, s.bG)([a.A], () => a.A.isAdvancedMode(t)), h = (0, s.bG)([d.A], () => d.A.editedDefaultChannelIds), [_, p] = (0, o.tb)(t, h), [A, f] = (0, c.tB)(t, [...h]), j = x ? f.length : p.length, N = x ? A.length : _.length, E = N >= u.Kd, C = f.length - p.length, T = (0, i.jsx)(r.yr3, {
         size: "sm",
         color: l.A.unsafe_rawColors.BRAND_500.css,
         secondaryColor: l.A.unsafe_rawColors.WHITE.css,
         className: g.Kk
-    }), T = (0, i.jsx)(r.aXh, {
+    }), I = (0, i.jsx)(r.aXh, {
         size: "sm",
         className: g.Kk,
         color: l.A.colors.WHITE.css,
         secondaryColor: l.A.colors.BACKGROUND_MOD_MUTED.css
-    }), I = [Math.min(u.Kd, N) / u.Kd * 100], v = E ? [l.A.colors.TEXT_FEEDBACK_POSITIVE.css] : [l.A.colors.TEXT_BRAND.css];
+    }), b = [Math.min(u.Kd, N) / u.Kd * 100], v = E ? [l.A.colors.TEXT_FEEDBACK_POSITIVE.css] : [l.A.colors.TEXT_BRAND.css];
     return (0, i.jsxs)("div", {
         className: g.kL,
         children: [(0, i.jsxs)("div", {
@@ -50,11 +50,11 @@ function x(e) {
             })]
         }), (0, i.jsx)(r.LvI, {
             foregroundColors: v,
-            percents: I,
+            percents: b,
             size: r.LvI.Sizes.XSMALL
         }), (0, i.jsxs)("div", {
             className: g.n,
-            children: [E ? b : T, (0, i.jsx)(r.Text, {
+            children: [E ? T : I, (0, i.jsx)(r.Text, {
                 variant: "text-xs/normal",
                 color: "text-muted",
                 children: m.intl.format(m.t.PwXgSy, {

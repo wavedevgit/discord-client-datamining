@@ -29,7 +29,7 @@ let A = function(e) {
         isDisabled: N = !1
     } = e, E = (0, r.bG)([g.A], () => g.A.getProps().originalProfile), C = null != E && E.tag !== s;
 
-    function b(e) {
+    function T(e) {
         m.A.updateGuildProfile(n, {
             tag: e
         })
@@ -58,7 +58,7 @@ let A = function(e) {
                         }),
                         disabled: N,
                         value: s ?? "",
-                        onChange: b
+                        onChange: T
                     })
                 }), (0, i.jsx)("div", {
                     className: p.e7,

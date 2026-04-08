@@ -1,7 +1,7 @@
 /** chunk id: 91534 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => T
+    A: () => I
 });
 var i = n(627968),
     s = n(311907),
@@ -86,7 +86,7 @@ let N = {
             })
         })]
     }),
-    b = e => {
+    T = e => {
         let t, n, s, {
                 guild: l,
                 guildStickers: r
@@ -115,7 +115,7 @@ let N = {
             }
         }))
     },
-    T = () => {
+    I = () => {
         let e = (0, s.bG)([p.A], () => p.A.getGuild()),
             t = (0, s.bG)([m.A], () => null != e ? m.A.getStickersByGuildId(e.id) ?? [] : [], [e]),
             {
@@ -131,7 +131,7 @@ let N = {
                     variant: "heading-lg/semibold",
                     children: f.intl.string(f.t.R5nQkS)
                 }), o ? (0, i.jsxs)("div", {
-                    children: [(0, i.jsx)(b, {
+                    children: [(0, i.jsx)(T, {
                         guild: e,
                         guildStickers: t
                     }), (0, i.jsx)(C, {})]

@@ -26,9 +26,9 @@ var l = n(311907),
     N = n(287809),
     E = n(997509),
     C = n(555337),
-    b = n(224394),
-    T = n(814758),
-    I = n(652215),
+    T = n(224394),
+    I = n(814758),
+    b = n(652215),
     v = n(985018),
     S = n(585862),
     y = n(597306);
@@ -71,19 +71,19 @@ let R = "dismissedCommunityFeaturesUpsell",
         } = e, [d, c] = s.useState(!0 === a.w.get(R)), x = (0, l.bG)([p.A], () => p.A.getMemberCount(o.id) ?? 0), [_, f] = s.useState(!1);
         (0, g.Ay)(() => {
             r.Bo.get({
-                url: I.Rsh.GUILD_ADMIN_SERVER_ELIGIBILITY(o.id),
+                url: b.Rsh.GUILD_ADMIN_SERVER_ELIGIBILITY(o.id),
                 rejectWithError: !0
             }).then(e => {
                 f(e.body.eligible_for_admin_server)
             }).catch(() => f(!1))
         });
         let j = (0, l.bG)([A.A], () => A.A.getGuild("942897714956472401")),
-            N = o.features.has(I.GuildFeatures.COMMUNITY) && x >= 1e3 && _ && null == j;
+            N = o.features.has(b.GuildFeatures.COMMUNITY) && x >= 1e3 && _ && null == j;
         if (t && n && !N) return null;
         let C = async () => {
             try {
                 let e = await r.Bo.post({
-                    url: I.Rsh.JOIN_ADMIN_SERVER(o.id),
+                    url: b.Rsh.JOIN_ADMIN_SERVER(o.id),
                     oldFormErrors: !0,
                     rejectWithError: !0
                 });
@@ -140,7 +140,7 @@ let R = "dismissedCommunityFeaturesUpsell",
                         size: "sm",
                         text: v.intl.string(v.t["S/Dfid"]),
                         onClick: () => {
-                            E.A.setSection(I.BEX.ONBOARDING)
+                            E.A.setSection(b.BEX.ONBOARDING)
                         }
                     })
                 }), t ? null : (0, i.jsx)("div", {
@@ -151,7 +151,7 @@ let R = "dismissedCommunityFeaturesUpsell",
                         size: "sm",
                         text: v.intl.string(v.t["0kmJdw"]),
                         onClick: () => {
-                            E.A.setSection(I.BEX.ACCESS, I.nd0.ACCESS_DISCOVERABLE)
+                            E.A.setSection(b.BEX.ACCESS, b.nd0.ACCESS_DISCOVERABLE)
                         }
                     })
                 }), (0, i.jsx)("div", {
@@ -162,7 +162,7 @@ let R = "dismissedCommunityFeaturesUpsell",
                         size: "sm",
                         text: v.intl.string(v.t.BQIYTb),
                         onClick: () => {
-                            E.A.setSection(I.BEX.ANALYTICS)
+                            E.A.setSection(b.BEX.ANALYTICS)
                         }
                     })
                 })]
@@ -175,11 +175,11 @@ let R = "dismissedCommunityFeaturesUpsell",
                 canManageGuild: t,
                 isGuildAdmin: n
             } = (0, l.cf)([f.A], () => ({
-                canManageGuild: f.A.can(I.xBc.MANAGE_GUILD, e),
-                isGuildAdmin: f.A.can(I.xBc.ADMINISTRATOR, e)
+                canManageGuild: f.A.can(b.xBc.MANAGE_GUILD, e),
+                isGuildAdmin: f.A.can(b.xBc.ADMINISTRATOR, e)
             })),
             r = (0, l.bG)([_.Ay], () => null != e ? _.Ay.getChannels(e.id) : null),
-            o = s.useMemo(T.fr, []),
+            o = s.useMemo(I.fr, []),
             u = !0 !== a.w.get(R);
         if (null == e) return null;
         let g = [];
@@ -187,7 +187,7 @@ let R = "dismissedCommunityFeaturesUpsell",
             let {
                 channel: t
             } = e;
-            t.type === I.rbe.GUILD_TEXT && g.push({
+            t.type === b.rbe.GUILD_TEXT && g.push({
                 id: t.id,
                 value: t.id,
                 label: (0, x.m1)(t, N.default, j.A, !0)
@@ -196,7 +196,7 @@ let R = "dismissedCommunityFeaturesUpsell",
         let h = () => {
                 if (null == e) return;
                 let t = new Set(e.features);
-                t.delete(I.GuildFeatures.COMMUNITY), t.delete(I.GuildFeatures.DISCOVERABLE), t.delete(I.GuildFeatures.PREVIEW_ENABLED), E.A.updateGuild({
+                t.delete(b.GuildFeatures.COMMUNITY), t.delete(b.GuildFeatures.DISCOVERABLE), t.delete(b.GuildFeatures.PREVIEW_ENABLED), E.A.updateGuild({
                     features: t,
                     rulesChannelId: null,
                     publicUpdatesChannelId: null
@@ -213,8 +213,8 @@ let R = "dismissedCommunityFeaturesUpsell",
                 variant: "heading-lg/semibold",
                 children: v.intl.string(v.t.nRtNqn)
             }), u ? (0, i.jsx)(G, {
-                discoveryEnabled: e.features.has(I.GuildFeatures.DISCOVERABLE),
-                onboardingEnabled: e.features.has(I.GuildFeatures.GUILD_ONBOARDING),
+                discoveryEnabled: e.features.has(b.GuildFeatures.DISCOVERABLE),
+                onboardingEnabled: e.features.has(b.GuildFeatures.GUILD_ONBOARDING),
                 guild: e
             }) : null, (0, i.jsx)(m.ZiE, {
                 selectionMode: "single",
@@ -290,19 +290,19 @@ let R = "dismissedCommunityFeaturesUpsell",
                         size: "sm",
                         text: v.intl.string(v.t.c1BmbC),
                         onClick: () => {
-                            e.features.has(I.GuildFeatures.DISCOVERABLE) && e.features.has(I.GuildFeatures.PARTNERED) ? (0, d.A)({
+                            e.features.has(b.GuildFeatures.DISCOVERABLE) && e.features.has(b.GuildFeatures.PARTNERED) ? (0, d.A)({
                                 title: v.intl.string(v.t.iBnVHc),
                                 subtitle: v.intl.string(v.t["P+Sh8V"]),
                                 confirmText: v.intl.string(v.t["cY+Oob"]),
                                 cancelText: v.intl.string(v.t.oEAioF),
                                 onConfirm: h
-                            }) : e.features.has(I.GuildFeatures.DISCOVERABLE) ? (0, d.A)({
+                            }) : e.features.has(b.GuildFeatures.DISCOVERABLE) ? (0, d.A)({
                                 title: v.intl.string(v.t.iBnVHc),
                                 subtitle: v.intl.string(v.t["eMx/uZ"]),
                                 confirmText: v.intl.string(v.t["cY+Oob"]),
                                 cancelText: v.intl.string(v.t.oEAioF),
                                 onConfirm: h
-                            }) : e.features.has(I.GuildFeatures.PARTNERED) ? (0, d.A)({
+                            }) : e.features.has(b.GuildFeatures.PARTNERED) ? (0, d.A)({
                                 title: v.intl.string(v.t.iBnVHc),
                                 subtitle: v.intl.string(v.t.l1wLeX),
                                 confirmText: v.intl.string(v.t["cY+Oob"]),
@@ -318,7 +318,7 @@ let R = "dismissedCommunityFeaturesUpsell",
     },
     D = () => {
         let e = (0, l.bG)([C.A], () => C.A.getGuild());
-        return null == e ? null : e.features.has(I.GuildFeatures.COMMUNITY) ? (0, i.jsx)(L, {}) : (0, i.jsx)(b.A, {
+        return null == e ? null : e.features.has(b.GuildFeatures.COMMUNITY) ? (0, i.jsx)(L, {}) : (0, i.jsx)(T.A, {
             guild: e
         })
     }

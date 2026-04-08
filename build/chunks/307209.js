@@ -106,12 +106,12 @@ function C(e) {
         })]
     });
     return n ? (0, i.jsxs)(i.Fragment, {
-        children: [(0, i.jsx)(b, {
+        children: [(0, i.jsx)(T, {
             guildId: t,
             handlePreview: h
-        }), (0, i.jsx)(T, {}), (0, i.jsxs)("div", {
+        }), (0, i.jsx)(I, {}), (0, i.jsxs)("div", {
             className: E.Qs,
-            children: [(0, i.jsx)(I, {
+            children: [(0, i.jsx)(b, {
                 guildId: t,
                 handleOnboardingToggle: u
             }), A]
@@ -130,7 +130,7 @@ function C(e) {
     })
 }
 
-function b(e) {
+function T(e) {
     let {
         guildId: t,
         handlePreview: n
@@ -174,7 +174,7 @@ function b(e) {
     })
 }
 
-function T() {
+function I() {
     let e = "• ";
     return (0, i.jsxs)("div", {
         className: E.lm,
@@ -201,7 +201,7 @@ function T() {
     })
 }
 
-function I(e) {
+function b(e) {
     let {
         guildId: t,
         handleOnboardingToggle: n

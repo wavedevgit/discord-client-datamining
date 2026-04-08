@@ -138,10 +138,10 @@ function N(e) {
         j = c?.configuration != null,
         N = c?.index ?? -1,
         [E, C] = (t = c?.configuration?.value, n = f ?? _.so.GREATER_THAN, l = Math.round(Number(t ?? 0)), n === _.so.GREATER_THAN ? l = Math.max(1, l + 1) : n === _.so.LESS_THAN && (l = Math.max(0, l - 1)), [l.toString(), n]),
-        [b, T] = s.useState(E),
-        I = null != o ? p.intl.format(o, {
-            count: b,
-            metadataHook: () => b
+        [T, I] = s.useState(E),
+        b = null != o ? p.intl.format(o, {
+            count: T,
+            metadataHook: () => T
         }) : (0, i.jsx)("span", {
             className: A.gF,
             children: a
@@ -167,7 +167,7 @@ function N(e) {
                 className: A.bM,
                 children: (0, i.jsx)(u.Text, {
                     variant: "text-md/normal",
-                    children: I
+                    children: b
                 })
             })]
         }), (0, i.jsx)("td", {
@@ -176,10 +176,10 @@ function N(e) {
                 children: (0, i.jsx)(u.ksK, {
                     "aria-label": p.intl.string(p.t.FTmi9y),
                     type: "number",
-                    value: b,
+                    value: T,
                     onChange: e => {
                         let t, n;
-                        if (T(e), null == c) return;
+                        if (I(e), null == c) return;
                         let [i, s] = (t = f ?? _.so.GREATER_THAN, n = Math.round(Number(e ?? 0)), t === _.so.GREATER_THAN ? n = Math.max(0, n - 1) : t === _.so.LESS_THAN && (n = Math.max(1, n + 1)), [n.toString(), t]);
                         "" !== e && x({
                             connectionType: m?.type ?? _.zR,
@@ -203,7 +203,7 @@ function N(e) {
                         applicationId: g,
                         connectionMetadataField: d,
                         operator: C,
-                        value: b
+                        value: T
                     }), x(t, c?.index ?? -1)
                 },
                 disabled: h
@@ -280,7 +280,7 @@ function C(e) {
     })
 }
 
-function b(e) {
+function T(e) {
     let {
         configMetadataMap: t,
         onConfigurationChange: n,
@@ -327,7 +327,7 @@ function b(e) {
     })
 }
 
-function T(e) {
+function I(e) {
     let {
         configMetadataMap: t,
         onConfigurationChange: n,
@@ -370,7 +370,7 @@ function T(e) {
     })
 }
 
-function I(e) {
+function b(e) {
     let {
         configMetadataMap: t,
         onConfigurationChange: n,
@@ -627,17 +627,17 @@ function O(e) {
         _ = null;
     switch (c?.type) {
         case h.fg2.STEAM:
-            _ = (0, i.jsx)(b, {
-                ...m
-            });
-            break;
-        case h.fg2.TWITTER:
             _ = (0, i.jsx)(T, {
                 ...m
             });
             break;
-        case h.fg2.REDDIT:
+        case h.fg2.TWITTER:
             _ = (0, i.jsx)(I, {
+                ...m
+            });
+            break;
+        case h.fg2.REDDIT:
+            _ = (0, i.jsx)(b, {
                 ...m
             });
             break;

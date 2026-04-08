@@ -50,18 +50,18 @@ function j(e) {
         guildProfile: g.A.getGuildProfile()
     })), N = n?.id, E = (0, a.bG)([d.A], () => d.A.get(N)), {
         fetchGuildProfile: C
-    } = (0, c.u)(N), b = j?.visibility == null || !l.i.VISIBLE.has(j?.visibility), T = j?.visibility === l.n.PUBLIC_WITH_RECRUITMENT;
+    } = (0, c.u)(N), T = j?.visibility == null || !l.i.VISIBLE.has(j?.visibility), I = j?.visibility === l.n.PUBLIC_WITH_RECRUITMENT;
     s.useEffect(() => {
         null != N && C()
     }, [N, C]);
-    let I = s.useMemo(() => null == n || null == j ? f : j, [n, j]),
+    let b = s.useMemo(() => null == n || null == j ? f : j, [n, j]),
         v = s.useCallback(() => {
-            n?.id != null && (T ? m.A.updateGuildProfile(n.id, {
+            n?.id != null && (I ? m.A.updateGuildProfile(n.id, {
                 visibility: l.n.PUBLIC
             }) : m.A.updateGuildProfile(n.id, {
                 visibility: l.n.PUBLIC_WITH_RECRUITMENT
             }))
-        }, [n?.id, T]),
+        }, [n?.id, I]),
         S = s.useCallback(() => {
             m.A.setSection(_.BEX.PROFILE)
         }, []);
@@ -94,14 +94,14 @@ function j(e) {
                 className: A.fi,
                 children: [(0, i.jsx)(o.dOG, {
                     label: p.intl.string(p.t["N/0232"]),
-                    checked: T,
+                    checked: I,
                     onChange: v,
-                    disabled: b
+                    disabled: T
                 }), (0, i.jsx)(r.EYj, {
                     variant: "text-sm/normal",
                     color: "text-subtle",
                     children: p.intl.string(p.t["3TSZYK"])
-                }), b && (0, i.jsx)(r.EYj, {
+                }), T && (0, i.jsx)(r.EYj, {
                     variant: "text-xs/normal",
                     color: "text-muted",
                     children: p.intl.format(p.t.Bk0VOi, {
@@ -119,7 +119,7 @@ function j(e) {
                         className: A.D7
                     }), (0, i.jsx)(u.Ay, {
                         className: A.VH,
-                        profile: I,
+                        profile: b,
                         CTAOverride: (0, i.jsx)(r.$nd, {
                             variant: "active",
                             size: "sm",

@@ -24,19 +24,19 @@ var i = n(627968),
     N = n(696451),
     E = n(71393),
     C = n(287809),
-    b = n(473145),
-    T = n(240248),
-    I = n(652215),
+    T = n(473145),
+    I = n(240248),
+    b = n(652215),
     v = n(985018),
     S = n(921491);
-let y = (0, T.xI)(u.A.GUILD_SETTINGS_PREMIUM_TIER_STATUS_PROGRESS_WITH_SUBSCRIPTIONS_MARGIN_TOP);
+let y = (0, I.xI)(u.A.GUILD_SETTINGS_PREMIUM_TIER_STATUS_PROGRESS_WITH_SUBSCRIPTIONS_MARGIN_TOP);
 class R extends s.Component {
     tierRefs = {};
     defaultTierRef = s.createRef();
     subscribersPopoutTargetRef = s.createRef();
     state = {
         tierPositions: null,
-        animatedTier: I.TVA.NONE
+        animatedTier: b.TVA.NONE
     };
     componentDidMount() {
         this.measure();
@@ -93,8 +93,8 @@ class R extends s.Component {
                 key: A.A
             },
             a = e.map(e => ({
-                numRequired: I.M2T[e.tier],
-                name: (0, b.gb)(e.tier),
+                numRequired: b.M2T[e.tier],
+                name: (0, T.gb)(e.tier),
                 y: t[e.tier] ?? 0,
                 key: e.tier
             }));
@@ -210,7 +210,7 @@ class R extends s.Component {
                         tiers: l,
                         tierIndex: s,
                         onSetRef: this.setTierRef,
-                        isAnimatedTo: I.M2T[this.state.animatedTier] >= I.M2T[i.tier],
+                        isAnimatedTo: b.M2T[this.state.animatedTier] >= b.M2T[i.tier],
                         subscriptionCount: n,
                         guildId: e
                     }))]
@@ -221,7 +221,7 @@ class R extends s.Component {
 }
 let O = d.Ay.connectStores([E.A, _.A, h.A, j.A, C.default, N.Ay], () => {
     let e = h.A.getGuildId(),
-        t = E.A.getGuild(e)?.premiumTier ?? I.TVA.NONE,
+        t = E.A.getGuild(e)?.premiumTier ?? b.TVA.NONE,
         n = (0, p.G)(e),
         i = null != e ? j.A.getAppliedGuildBoostsForGuild(e) : null,
         s = o()(null != i ? i : []).uniqBy(e => e.userId),

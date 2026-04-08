@@ -24,16 +24,16 @@ var i = n(627968),
 function C(t) {
     let {
         onDismiss: e
-    } = t, C = (0, r.bG)([_.A], () => _.A.getGuildId()), g = (0, r.bG)([u.A], () => null != C ? u.A.getChannelId(C) : null, [C]), m = C ?? null, O = (0, r.bG)([d.A], () => null != m ? d.A.getGuild(m) : null, [m]), {
+    } = t, C = (0, r.bG)([_.A], () => _.A.getGuildId()), m = (0, r.bG)([u.A], () => null != C ? u.A.getChannelId(C) : null, [C]), O = C ?? null, g = (0, r.bG)([d.A], () => null != O ? d.A.getGuild(O) : null, [O]), {
         shouldShowIncidentActions: S,
         incidentData: y,
         isUnderLockdown: x
-    } = (0, T.Li)(m), M = (0, o.fw)(O?.id ?? N.dJq), U = l.useCallback(() => null != O && (0, c.aZ)(O.id), [O]);
-    if (null == O || null == y || !S) return null;
+    } = (0, T.Li)(O), M = (0, o.fw)(g?.id ?? N.dJq), U = l.useCallback(() => null != g && (0, c.aZ)(g.id), [g]);
+    if (null == g || null == y || !S) return null;
     let P = t => {
-            t && M && g !== R.VV.MEMBER_SAFETY && U() ? E.default.track(N.HAw.APP_NOTICE_PRIMARY_CTA_OPENED, {
+            t && M && m !== R.VV.MEMBER_SAFETY && U() ? E.default.track(N.HAw.APP_NOTICE_PRIMARY_CTA_OPENED, {
                 notice_type: N.kqX.GUILD_RAID_NOTIFICATION,
-                guild_id: O.id
+                guild_id: g.id
             }) : (0, s.mMO)(async () => {
                 let t = {
                         source: A.Eo.NAGBAR,
@@ -44,17 +44,17 @@ function C(t) {
                     } = await n.e("43233").then(n.bind(n, 671576));
                 return n => (0, i.jsx)(e, {
                     ...n,
-                    guildId: O.id,
+                    guildId: g.id,
                     analyticsData: t
                 })
             })
         },
         j = (0, i.jsx)(a.Ay, {
             className: h.$f,
-            guild: O,
+            guild: g,
             size: a.Ay.Sizes.MINI
         }),
-        D = (0, I.ql)(y, O.name);
+        D = (0, I.ql)(y, g.name);
     if (null != (y.dmsDisabledUntil ?? y.invitesDisabledUntil) && x) return (0, i.jsxs)(s.$Td, {
         className: h.lm,
         color: s.Hv$.NEUTRAL,
@@ -76,13 +76,13 @@ function C(t) {
         })]
     });
     let f = (0, I.P$)(y) ? p.intl.formatToPlainString(p.t.tZTx2E, {
-            guildName: O.name
+            guildName: g.name
         }) : (0, I.Qm)(y) ? p.intl.formatToPlainString(p.t["1bSmxr"], {
-            guildName: O.name
+            guildName: g.name
         }) : p.intl.formatToPlainString(p.t.W87xDE, {
-            guildName: O.name
+            guildName: g.name
         }),
-        k = M && g === R.VV.MEMBER_SAFETY;
+        k = M && m === R.VV.MEMBER_SAFETY;
     return (0, i.jsxs)(s.$Td, {
         className: h.lm,
         color: s.Hv$.WARNING,

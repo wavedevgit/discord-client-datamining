@@ -1,15 +1,15 @@
 /** chunk id: 381616 params = (module,exports,require) **/
 let i;
 r.d(t, {
-    A: () => _
+    A: () => d
 }), r(321073);
 var a = r(311907),
     s = r(73153);
 let n = {
         guildNoticeDismissed: []
     },
-    o = new Map,
-    l = new Set;
+    l = new Map,
+    o = new Set;
 class c extends a.Ay.PersistedStore {
     static displayName = "CommandsMigrationStore";
     static persistKey = "CommandsMigrationStore";
@@ -21,22 +21,22 @@ class c extends a.Ay.PersistedStore {
         return i
     }
     shouldShowChannelNotice(e) {
-        return !i.guildNoticeDismissed.includes(e) && (o.get(e)?.size ?? 0) > 0
+        return !i.guildNoticeDismissed.includes(e) && (l.get(e)?.size ?? 0) > 0
     }
     canShowOverviewTooltip(e, t) {
-        return o.get(e)?.has(t) === !0
+        return l.get(e)?.has(t) === !0
     }
     canShowToggleTooltip(e) {
-        return l.has(e)
+        return o.has(e)
     }
 }
-let _ = new c(s.h, {
+let d = new c(s.h, {
     COMMANDS_MIGRATION_UPDATE_SUCCESS: function(e) {
         let {
             guildId: t,
             integrationIdsWithAppCommands: r
         } = e;
-        return o.set(t, new Set(r)), !0
+        return l.set(t, new Set(r)), !0
     },
     COMMANDS_MIGRATION_NOTICE_DISMISSED: function(e) {
         let {
@@ -49,12 +49,12 @@ let _ = new c(s.h, {
             guildId: t,
             integrationId: r
         } = e;
-        o.get(t)?.clear(), l.add(r)
+        l.get(t)?.clear(), o.add(r)
     },
     COMMANDS_MIGRATION_TOGGLE_TOOLTIP_DISMISSED: function(e) {
         let {
             integrationId: t
         } = e;
-        l.delete(t)
+        o.delete(t)
     }
 })

@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
     $i: () => E,
-    aV: () => b,
+    aV: () => T,
     bW: () => C,
     gE: () => N,
     n5: () => j
@@ -134,7 +134,7 @@ function N(e) {
         guildId: t,
         onEdit: n,
         disableGoodStatus: d
-    } = e, c = (0, l.yK)([a.A], () => a.A.getDefaultChannelIds(t)), u = (0, l.bG)([a.A], () => (0, o.G4)(t, a.A.getDefaultChannelIds(t), a.A.getOnboardingPrompts(t)).length), m = s.useMemo(() => new Set(c), [c]), [, g] = (0, o.tb)(t, m), j = g.length, N = f(t), E = (0, x.Mj)(t), C = (0, l.bG)([a.A], () => a.A.isAdvancedMode(t)), b = C ? _.intl.formatToPlainString(_.t.nHwnLK, {
+    } = e, c = (0, l.yK)([a.A], () => a.A.getDefaultChannelIds(t)), u = (0, l.bG)([a.A], () => (0, o.G4)(t, a.A.getDefaultChannelIds(t), a.A.getOnboardingPrompts(t)).length), m = s.useMemo(() => new Set(c), [c]), [, g] = (0, o.tb)(t, m), j = g.length, N = f(t), E = (0, x.Mj)(t), C = (0, l.bG)([a.A], () => a.A.isAdvancedMode(t)), T = C ? _.intl.formatToPlainString(_.t.nHwnLK, {
         numDefaultChannels: j,
         numFromQuestions: u - j
     }) : N ? _.intl.formatToPlainString(_.t.HxEwSv, {
@@ -144,7 +144,7 @@ function N(e) {
     });
     return (0, i.jsx)(A, {
         title: C ? _.intl.string(_.t.YZookV) : _.intl.string(_.t["4GSygh"]),
-        description: b,
+        description: T,
         icon: (0, i.jsx)(r.N$i, {
             size: "md",
             color: "currentColor",
@@ -219,7 +219,7 @@ function C(e) {
     })
 }
 
-function b(e) {
+function T(e) {
     let {
         guildId: t,
         onEdit: n,

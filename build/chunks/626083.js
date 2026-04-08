@@ -1,7 +1,7 @@
 /** chunk id: 626083 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    aP: () => b,
+    aP: () => T,
     oJ: () => C
 }), n(321073);
 var i = n(627968),
@@ -110,19 +110,19 @@ function E(e) {
             emojiName: A.name
         }), x())
     }
-    let b = [{
+    let T = [{
         text: f.intl.string(f.t["ETE/oC"]),
         variant: "secondary",
         onClick: x
     }];
-    return null != m && b.push({
+    return null != m && T.push({
         text: f.intl.string(f.t.oyYWHE),
         variant: "critical-secondary",
         onClick: () => {
             m(), x()
         },
         icon: d.ucK
-    }), b.push({
+    }), T.push({
         text: null == n ? f.intl.string(f.t.OYkgVk) : f.intl.string(f.t["R3BPH+"]),
         variant: "primary",
         onClick: C,
@@ -133,7 +133,7 @@ function E(e) {
             transitionState: g,
             onClose: x,
             title: f.intl.string(f.t["2qf9EI"]),
-            actions: b,
+            actions: T,
             children: (0, i.jsxs)(d.BJc, {
                 gap: "md",
                 children: [l, (0, i.jsx)(d.fs1, {
@@ -201,7 +201,7 @@ function C(e) {
     })
 }
 
-function b(e) {
+function T(e) {
     let {
         initialData: t,
         onSave: n,

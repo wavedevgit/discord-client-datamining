@@ -9,9 +9,9 @@ var i = n(627968),
 n(926675);
 var r = n(397927),
     o = n(915089),
-    d = n(152621),
-    c = n(409626),
-    u = n(692969),
+    d = n(409626),
+    c = n(692969),
+    u = n(201438),
     g = n(287809),
     m = n(562153),
     x = n(183555),
@@ -66,10 +66,10 @@ function S(e) {
         userId: n,
         gameName: a,
         ...l
-    } = e, s = (0, u.A)({
+    } = e, s = (0, c.A)({
         location: "UserProfileWidgetGameDetailsCard",
         applicationId: t,
-        source: c.Ob.UserProfile,
+        source: d.Ob.UserProfile,
         sourceUserId: n,
         trackEntryPointImpression: !0
     });
@@ -225,8 +225,8 @@ function O(e) {
         guildId: n,
         channelId: l,
         game: o,
-        widgetType: c,
-        disableInteraction: u = !1,
+        widgetType: d,
+        disableInteraction: c = !1,
         index: m,
         onRemoveGame: x,
         coverRef: E,
@@ -239,21 +239,21 @@ function O(e) {
         coverImageUrl: P,
         gameName: D,
         isLoading: G
-    } = (0, d.A)(O), M = {
+    } = (0, u.A)(O), M = {
         variant: "heading-sm/medium",
         color: "text-default"
-    }, U = g.default.getCurrentUser(), F = U?.id === t.id, W = 1 === (0, f.cv)(c), H = !u && F, B = H && (0, f.y9)(c), X = H && !W, {
+    }, U = g.default.getCurrentUser(), F = U?.id === t.id, W = 1 === (0, f.cv)(d), H = !c && F, B = H && (0, f.y9)(d), X = H && !W, {
         registerDragHandleRef: V
     } = (0, h.r)();
     if (G) return (0, i.jsx)(A.E, {});
     let z = () => (0, i.jsx)(_.A, {
             coverRef: E,
-            className: null == P || u ? void 0 : T.iL,
+            className: null == P || c ? void 0 : T.iL,
             imageSrc: P,
             gameName: D,
             applicationId: O,
             userId: t.id,
-            disableInteraction: u,
+            disableInteraction: c,
             hideTooltip: !0
         }),
         Y = () => (0, i.jsxs)("div", {
@@ -267,7 +267,7 @@ function O(e) {
                 })]
             }) : z(), (0, i.jsxs)("div", {
                 className: b.zH,
-                children: [u ? (0, i.jsx)(r.Heading, {
+                children: [c ? (0, i.jsx)(r.Heading, {
                     ...M,
                     children: D
                 }) : (0, i.jsx)(S, {
@@ -280,7 +280,7 @@ function O(e) {
                     user: t,
                     guildId: n,
                     channelId: l,
-                    widgetType: c,
+                    widgetType: d,
                     applicationId: O
                 }) : (0, i.jsx)(R, {
                     text: w,
@@ -290,26 +290,26 @@ function O(e) {
                 }), (0, i.jsx)(I.A, {
                     tags: L,
                     isCurrentUser: F,
-                    widgetType: c,
+                    widgetType: d,
                     applicationId: O,
-                    disableInteraction: u,
+                    disableInteraction: c,
                     className: b._A
-                }), !u && (0, i.jsx)(v.o, {
+                }), !c && (0, i.jsx)(v.o, {
                     className: b.Ez,
                     applicationId: O,
                     guildId: n,
                     channelId: l
                 })]
-            }), !u && F && (0, i.jsx)(j.A, {
+            }), !c && F && (0, i.jsx)(j.A, {
                 game: o,
-                widgetType: c,
+                widgetType: d,
                 className: b.vS,
                 onRemove: () => x?.(o.applicationId)
             })]
         });
     return X ? (0, i.jsx)(C, {
         index: m ?? 0,
-        widgetType: c,
+        widgetType: d,
         game: o,
         getWidth: () => y.current?.offsetWidth,
         children: Y()

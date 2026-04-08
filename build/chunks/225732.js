@@ -1,6 +1,6 @@
 /** chunk id: 225732 params = (module,exports,require) **/
 n.d(t, {
-    default: () => eC
+    default: () => eI
 });
 var a = n(627968),
     i = n(64700),
@@ -23,10 +23,10 @@ var a = n(627968),
     j = n(139286),
     E = n(362490),
     b = n(429913),
-    C = n(590703),
-    I = n(708197),
+    I = n(590703),
+    C = n(708197),
     N = n(583846),
-    S = n(885151),
+    S = n(454908),
     T = n(928550),
     y = n(657331),
     L = n(773669),
@@ -449,12 +449,12 @@ function eE(e) {
         trackExternalAction: d
     } = e, {
         clientThemesClassName: u
-    } = (0, C.Ay)(), m = (0, x.bG)([L.default], () => L.default.locale), {
+    } = (0, I.Ay)(), m = (0, x.bG)([L.default], () => L.default.locale), {
         analyticsLocations: g
     } = (0, A.Ay)(v.A.GAME_PROFILE), h = i.useMemo(() => (0, G.u9)(), []), _ = (0, x.yK)([P.A], () => (P.A.getSimilarGames(t) ?? []).slice(0, 25)), [j, E] = i.useState(null), T = (0, D.s)(t), [y, k] = i.useState(null), R = (0, b.h)(t), {
         data: O,
         refetch: M
-    } = (0, S.k)(t), V = O?.name ?? R?.name, U = (e, a) => {
+    } = (0, S.I)(t), V = O?.name ?? R?.name, U = (e, a) => {
         (0, G.Tn)({
             gameName: V ?? "",
             applicationId: t,
@@ -473,7 +473,7 @@ function eE(e) {
             gameName: V ?? "",
             authorId: l,
             profileType: G.HV.FullProfile
-        }), (0, I.He)()
+        }), (0, C.He)()
     }), (0, b.A)(_), i.useEffect(() => {
         m.startsWith("en") || O?.summaryLocalized != null || M()
     }, [t, O?.summaryLocalized, m, M]), i.useEffect(() => {
@@ -566,11 +566,11 @@ function eb(e) {
         trackExternalAction: u
     } = e, [m, g] = i.useState(!0), [_, j] = i.useState(null), {
         clientThemesClassName: T
-    } = (0, C.Ay)(), k = (0, x.bG)([L.default], () => L.default.locale), R = i.useMemo(() => (0, G.u9)(), []), {
+    } = (0, I.Ay)(), k = (0, x.bG)([L.default], () => L.default.locale), R = i.useMemo(() => (0, G.u9)(), []), {
         analyticsLocations: O
     } = (0, A.Ay)(v.A.GAME_PROFILE), M = (0, b.h)(t), w = (0, D.s)(t), {
         data: P
-    } = (0, S.k)(t), V = P?.name ?? M?.name ?? "", {
+    } = (0, S.I)(t), V = P?.name ?? M?.name ?? "", {
         hasAlreadyLinked: W,
         canStartAuthorization: B,
         fetched: Y,
@@ -600,7 +600,7 @@ function eb(e) {
             gameName: V,
             authorId: l,
             profileType: G.HV.FullProfile
-        }), (0, I.He)()
+        }), (0, C.He)()
     }), (0, p.Ay)(() => () => {
         let e = Date.now(),
             n = w.map(t => {
@@ -717,7 +717,7 @@ function eb(e) {
         })
     })
 }
-let eC = function(e) {
+let eI = function(e) {
     let t = (0, V._)("GameProfileModal");
     return e.forceV2 || t ? (0, a.jsx)(eb, {
         ...e

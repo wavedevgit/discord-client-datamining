@@ -29,9 +29,9 @@ let p = function(e) {
         title: N,
         channelId: E,
         description: C
-    } = l, b = u.A.getChannel(E), T = null;
-    null != b && (0, c.Yt)(b) || (T = h.intl.string(h.t.kTdL8X));
-    let I = null == C || 0 === C.length,
+    } = l, T = u.A.getChannel(E), I = null;
+    null != T && (0, c.Yt)(T) || (I = h.intl.string(h.t.kTdL8X));
+    let b = null == C || 0 === C.length,
         v = m.Ay.getResourceChannelIconURL({
             channelId: l.channelId,
             icon: l.icon
@@ -71,13 +71,13 @@ let p = function(e) {
                 onIconUpload: L
             })
         }), [t, l, G, L]);
-    return null == b ? null : (0, i.jsxs)("div", {
+    return null == T ? null : (0, i.jsxs)("div", {
         className: _.l5,
         children: [(0, i.jsxs)("div", {
             className: r()(_.Km, {
                 [_.A]: null != y && p < y,
                 [_.Ze]: null != y && p > y,
-                [_._t]: null != T
+                [_._t]: null != I
             }),
             ref: e => {
                 S(R(e))
@@ -108,7 +108,7 @@ let p = function(e) {
                     variant: "text-md/semibold",
                     color: "text-strong",
                     children: N
-                }), !I && (0, i.jsx)(o.Text, {
+                }), !b && (0, i.jsx)(o.Text, {
                     className: _.ur,
                     variant: "text-xs/medium",
                     color: "text-muted",
@@ -125,10 +125,10 @@ let p = function(e) {
                     "aria-label": h.intl.string(h.t.bt75uw)
                 })
             })]
-        }), null != T && (0, i.jsx)(o.Text, {
+        }), null != I && (0, i.jsx)(o.Text, {
             variant: "text-xs/medium",
             color: "text-feedback-critical",
-            children: T
+            children: I
         })]
     })
 }

@@ -1,7 +1,7 @@
 /** chunk id: 841650 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => T
+    A: () => I
 }), n(321073);
 var i = n(627968),
     s = n(64700),
@@ -80,7 +80,7 @@ function C(e) {
     })
 }
 
-function b(e) {
+function T(e) {
     let {
         value: t
     } = e;
@@ -89,7 +89,7 @@ function b(e) {
     }) : (0, i.jsx)(E, {})
 }
 
-function T(e) {
+function I(e) {
     let {
         label: t,
         guildId: l,
@@ -98,25 +98,25 @@ function T(e) {
         omitChannelIds: f,
         "aria-labelledby": N,
         onChange: E
-    } = e, C = A.intl.string(A.t.d7YJMK), T = (0, a.bG)([g.A], () => g.A.getCategories(l), [l]), I = (0, _.fE)(r ?? p.dJq), v = s.useMemo(() => {
+    } = e, C = A.intl.string(A.t.d7YJMK), I = (0, a.bG)([g.A], () => g.A.getCategories(l), [l]), b = (0, _.fE)(r ?? p.dJq), v = s.useMemo(() => {
         let e = [{
                 value: null,
                 label: C
             }],
             t = !1;
-        for (let n of T._categories)
+        for (let n of I._categories)
             for (let {
                     channel: i
                 }
-                of T[n.channel.id])((0, m.tr)(i.type) || (0, m.ay)(i.type)) && (i.id !== r && f?.has(i.id) && (i.id !== u || r === u) || (r === i.id && (t = !0), e.push({
+                of I[n.channel.id])((0, m.tr)(i.type) || (0, m.ay)(i.type)) && (i.id !== r && f?.has(i.id) && (i.id !== u || r === u) || (r === i.id && (t = !0), e.push({
                 value: i.id,
                 label: (0, c.m1)(i, h.default, x.A)
             })));
-        return null == r || t || null == I || e.push({
+        return null == r || t || null == b || e.push({
             value: r,
-            label: I.name
+            label: b.name
         }), e
-    }, [C, r, I, T, f, u]);
+    }, [C, r, b, I, f, u]);
     return (0, i.jsx)(o.Pw, {
         label: t,
         placeholder: A.intl.string(A.t.r2ptsz),
@@ -135,10 +135,10 @@ function T(e) {
         },
         isSelected: e => null != r && j(e) === j(r),
         serialize: j,
-        renderOptionLabel: b,
+        renderOptionLabel: T,
         renderOptionValue: e => {
             let [t] = e;
-            return b(t)
+            return T(t)
         },
         "aria-labelledby": N,
         "data-migration-pending": !0

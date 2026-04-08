@@ -141,13 +141,13 @@ let E = function(e) {
         badge: l,
         primaryColor: r,
         secondaryColor: a
-    } = e, [o, u] = s.useState(!1), m = s.useRef(null), g = s.useId(), E = s.useId(), C = null == r && null == a, b = s.useMemo(() => !C && h.Ub.every(e => e.primary !== r || e.secondary !== a), [C, r, a]), T = (0, d._u)({
+    } = e, [o, u] = s.useState(!1), m = s.useRef(null), g = s.useId(), E = s.useId(), C = null == r && null == a, T = s.useMemo(() => !C && h.Ub.every(e => e.primary !== r || e.secondary !== a), [C, r, a]), I = (0, d._u)({
         orientation: "horizontal",
         isDisabled: !1,
         labelledBy: g
     });
 
-    function I(e) {
+    function b(e) {
         let t = {};
         void 0 !== e.primary && (t.badgeColorPrimary = e.primary), void 0 !== e.secondary && (t.badgeColorSecondary = e.secondary), x.A.updateGuildProfile(n, t)
     }
@@ -157,7 +157,7 @@ let E = function(e) {
             label: p.intl.string(_.default.zSbMdX),
             id: g,
             children: e => (0, i.jsxs)("div", {
-                ...T,
+                ...I,
                 id: e.controlId,
                 "aria-describedby": E,
                 className: A.p3,
@@ -165,12 +165,12 @@ let E = function(e) {
                     palette: e,
                     badge: l,
                     isSelected: e.primary === r && e.secondary === a,
-                    onClick: () => I(e)
+                    onClick: () => b(e)
                 }, `${e.primary}${e.secondary}`)), (0, i.jsx)(N, {
                     badge: l,
                     isSelected: C,
                     onClick: () => {
-                        I({
+                        b({
                             primary: null,
                             secondary: null
                         })
@@ -179,11 +179,11 @@ let E = function(e) {
                     badge: l,
                     primary: r ?? h.Ub["0"].primary,
                     secondary: a ?? h.Ub["0"].secondary,
-                    isSelected: b,
+                    isSelected: T,
                     showColorPopout: o,
                     setShowColorPopout: u,
                     palettePopoutTargetRef: m,
-                    handleChange: I
+                    handleChange: b
                 })]
             })
         }), (0, i.jsx)(c.AC4, {

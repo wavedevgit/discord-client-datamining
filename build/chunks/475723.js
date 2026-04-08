@@ -22,9 +22,9 @@ var i = n(627968),
     p = n(967198),
     h = n(792831),
     C = n(147925),
-    g = n(723702),
-    m = n(529942),
-    O = n(164956),
+    m = n(723702),
+    O = n(529942),
+    g = n(164956),
     S = n(311127),
     y = n(652215),
     x = n(746080);
@@ -70,12 +70,12 @@ function f() {
             viewingRoles: r,
             backNavigationSection: s,
             isFullServerPreview: d,
-            isServerShopPreview: g
-        } = (0, a.cf)([O.A], () => ({
-            viewingRoles: null != e ? O.A.getViewingRoles(e) : null,
-            backNavigationSection: O.A.getBackNavigationSection(e),
-            isFullServerPreview: null != e && O.A.isFullServerPreview(e),
-            isServerShopPreview: null != e && O.A.isViewingServerShop(e)
+            isServerShopPreview: m
+        } = (0, a.cf)([g.A], () => ({
+            viewingRoles: null != e ? g.A.getViewingRoles(e) : null,
+            backNavigationSection: g.A.getBackNavigationSection(e),
+            isFullServerPreview: null != e && g.A.isFullServerPreview(e),
+            isServerShopPreview: null != e && g.A.isViewingServerShop(e)
         }));
     if (null == r || null == e) return null;
     let f = function(t) {
@@ -96,7 +96,7 @@ function f() {
             let {
                 backToSettings: n
             } = t;
-            null != e && (O.A.isFullServerPreview(e) && (0, N.pX)(y.BVt.CHANNEL(e)), E.Ay.shouldShowOnboarding(e) && (_.A.finishOnboarding(e), (0, T.Jg)(e)), (0, m.rf)(e), n && I.A.open(e, s), s === y.BEX.ROLE_SUBSCRIPTIONS && (0, A.Fx)(e))
+            null != e && (g.A.isFullServerPreview(e) && (0, N.pX)(y.BVt.CHANNEL(e)), E.Ay.shouldShowOnboarding(e) && (_.A.finishOnboarding(e), (0, T.Jg)(e)), (0, O.rf)(e), n && I.A.open(e, s), s === y.BEX.ROLE_SUBSCRIPTIONS && (0, A.Fx)(e))
         };
     return (0, i.jsxs)(u.$Td, {
         color: u.Hv$.BRAND,
@@ -155,7 +155,7 @@ function f() {
                     size: "xs",
                     color: o.A.unsafe_rawColors.YELLOW_300.css
                 })
-            }), g && (0, i.jsx)(c.m, {
+            }), m && (0, i.jsx)(c.m, {
                 asContainer: !0,
                 text: U.intl.formatToPlainString(U.t.eummvd, {
                     maxTiers: M.f7,
@@ -178,10 +178,10 @@ function k(t) {
     let {
         guildId: e
     } = t;
-    return (0, a.bG)([O.A], () => O.A.isViewingRoles(e)) ? (0, i.jsx)("div", {
+    return (0, a.bG)([g.A], () => g.A.isViewingRoles(e)) ? (0, i.jsx)("div", {
         className: s()(P.xd, {
-            [P.KF]: (0, g.isWindows)(),
-            [P.Xz]: (0, g.isMac)()
+            [P.KF]: (0, m.isWindows)(),
+            [P.Xz]: (0, m.isMac)()
         }),
         children: (0, i.jsx)(f, {})
     }) : null

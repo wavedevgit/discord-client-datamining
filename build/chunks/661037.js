@@ -15,11 +15,11 @@ var n = i(627968),
     p = i(997509),
     g = i(71393),
     S = i(751394),
-    A = i(720619),
-    C = i(985018),
-    b = i(876627);
+    C = i(720619),
+    h = i(985018),
+    A = i(876627);
 
-function h(e) {
+function b(e) {
     let {
         className: t,
         guildId: i,
@@ -27,7 +27,7 @@ function h(e) {
         isGuildIncluded: a
     } = e, {
         options: s
-    } = (0, A.A)({
+    } = (0, C.A)({
         isGuildIncluded: a
     });
     return (0, n.jsx)("div", {
@@ -36,7 +36,7 @@ function h(e) {
             onSelectionChange: l,
             value: i,
             options: s,
-            placeholder: C.intl.string(C.t.etZ9tX),
+            placeholder: h.intl.string(h.t.etZ9tX),
             selectionMode: "single"
         })
     })
@@ -47,17 +47,17 @@ function m(e) {
         transitionState: t,
         onClose: i,
         feature: a,
-        section: A,
-        subsection: C
+        section: C,
+        subsection: h
     } = e, m = (0, o.GV)(), {
-        canCreateGuild: v,
-        createGuildCta: x,
-        createGuildDescription: E,
+        canCreateGuild: x,
+        createGuildCta: E,
+        createGuildDescription: v,
         selectGuildCta: _,
-        title: I,
-        description: M,
-        isGuildSupported: F
-    } = (0, S.q)(a), [N, j] = l.useState(), [O, T] = l.useState(!1), R = async () => {
+        title: M,
+        description: I,
+        isGuildSupported: j
+    } = (0, S.q)(a), [N, F] = l.useState(), [O, T] = l.useState(!1), R = async () => {
         T(!0);
         let e = await new Promise(e => {
             u.A.openCreateGuildModal({
@@ -68,59 +68,59 @@ function m(e) {
             g.A.addChangeListener(function i() {
                 null != g.A.getGuild(e) && (g.A.removeChangeListener(i), t())
             })
-        }), p.A.open(e, A, void 0, C), i?.()
+        }), p.A.open(e, C, void 0, h), i?.()
     };
     return (0, n.jsxs)(d.EOs, {
         transitionState: t,
         "aria-labelledby": m,
         parentComponent: "GuildSettingsPickerModal",
         children: [(0, n.jsxs)(d.rQ0, {
-            className: b.Hc,
+            className: A.Hc,
             separator: !1,
             children: [(0, n.jsx)(d.Heading, {
                 id: m,
                 variant: "heading-lg/medium",
-                children: I
+                children: M
             }), (0, n.jsx)(d.s_y, {
                 onClick: i
             })]
         }), (0, n.jsxs)(d.$mQ, {
-            className: b.jE,
+            className: A.jE,
             children: [(0, n.jsxs)(d.BJc, {
                 direction: "vertical",
                 gap: 8,
                 children: [(0, n.jsx)(d.Text, {
                     variant: "text-md/medium",
-                    children: M
+                    children: I
                 }), (0, n.jsxs)("div", {
-                    className: b.ce,
+                    className: A.ce,
                     children: [(0, n.jsx)("div", {
-                        className: b.oN,
-                        children: (0, n.jsx)(h, {
+                        className: A.oN,
+                        children: (0, n.jsx)(b, {
                             guildId: N,
-                            onChange: j,
-                            isGuildIncluded: F
+                            onChange: F,
+                            isGuildIncluded: j
                         })
                     }), (0, n.jsx)(d.Button, {
                         variant: "primary",
                         text: _,
                         onClick: () => {
-                            s()(null != N, "Guild ID must not be null on click"), G.A.hasSeenCreatorOnboardingForGuild(N) || (0, c.G)(N), p.A.open(N, A, void 0, C), i?.()
+                            s()(null != N, "Guild ID must not be null on click"), G.A.hasSeenCreatorOnboardingForGuild(N) || (0, c.G)(N), p.A.open(N, C, void 0, h), i?.()
                         },
                         disabled: null == N
                     })]
                 })]
-            }), v && (0, n.jsxs)(d.BJc, {
+            }), x && (0, n.jsxs)(d.BJc, {
                 direction: "vertical",
                 gap: 8,
                 children: [(0, n.jsx)(d.Text, {
                     variant: "text-md/medium",
-                    children: E
+                    children: v
                 }), (0, n.jsx)(r.$n, {
                     onClick: R,
                     submitting: O,
-                    className: b.qo,
-                    children: x
+                    className: A.qo,
+                    children: E
                 })]
             })]
         })]

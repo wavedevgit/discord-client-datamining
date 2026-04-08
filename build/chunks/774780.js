@@ -31,11 +31,11 @@ function E(e) {
         editingRule: E,
         setEditingRule: C
     } = (0, x.U)(), {
-        guild: b,
-        subsection: T
-    } = (0, l.cf)([a.A], () => a.A.getProps()), I = b?.id ?? t ?? f.dJq, v = null != E, [S] = (0, u.qv)(I), {
+        guild: T,
+        subsection: I
+    } = (0, l.cf)([a.A], () => a.A.getProps()), b = T?.id ?? t ?? f.dJq, v = null != E, [S] = (0, u.qv)(b), {
         rulesByTriggerType: y
-    } = (0, u.wP)(I), R = {
+    } = (0, u.wP)(b), R = {
         [m.yT.MEMBERS]: j.intl.string(j.t.sx4E5v),
         [m.yT.CONTENT]: j.intl.string(j.t.fphZb0)
     }, O = s.useMemo(() => Object.values(y ?? {}).flat().filter(d.Vq), [y]), G = {
@@ -50,7 +50,7 @@ function E(e) {
             setEditingRule: t
         } = L.current;
         e && t(null)
-    }, [I]);
+    }, [b]);
     let D = s.useCallback((e, t) => null != e ? O.find(t => {
             let {
                 id: n
@@ -61,7 +61,7 @@ function E(e) {
     s.useEffect(() => {
         n(v, (0, p.cT)(M))
     }, [n, v, M]);
-    let k = (0, m.ws)(I);
+    let k = (0, m.ws)(b);
     return (0, i.jsxs)("div", {
         children: [(0, i.jsx)(r.Heading, {
             variant: "heading-lg/semibold",
@@ -98,19 +98,19 @@ function E(e) {
                 className: N.Wk,
                 children: [l, (0, i.jsx)(i.Fragment, {
                     children: n.map(e => (0, i.jsx)(_.A, {
-                        guildId: I,
+                        guildId: b,
                         triggerType: e,
                         rules: y[e] ?? [],
-                        initWithEdit: T === f.nd0.AUTOMOD_MENTION_SPAM && e === A.uh.MENTION_SPAM
+                        initWithEdit: I === f.nd0.AUTOMOD_MENTION_SPAM && e === A.uh.MENTION_SPAM
                     }, e))
                 })]
             }, t)
-        }), null != b && (0, i.jsx)(o.t9, {
-            guild: b,
+        }), null != T && (0, i.jsx)(o.t9, {
+            guild: T,
             withDivider: !1,
             className: N.Vf
         }), (0, i.jsx)(h.A, {
-            guildId: I,
+            guildId: b,
             existingRules: O
         }), v && (0, i.jsx)("div", {
             className: N.OL

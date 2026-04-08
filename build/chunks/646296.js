@@ -1,7 +1,7 @@
 /** chunk id: 646296 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => T
+    A: () => I
 });
 var i = n(627968),
     s = n(64700),
@@ -25,22 +25,22 @@ var i = n(627968),
     E = n(815548);
 let C = "guild-role-subscription-tier-template-selector";
 
-function b(e) {
+function T(e) {
     let {
         guildId: t,
         priceTiers: l,
         groupListingId: h
     } = e, f = (0, x.cY)(h), {
-        editStateIds: b,
-        addNewEditStateId: T,
-        addNewEditStateFromTemplate: I,
+        editStateIds: T,
+        addNewEditStateId: I,
+        addNewEditStateFromTemplate: b,
         removeEditStateId: v
     } = p.d0(h, t, {
         includeSoftDeleted: !0
     }), [S, y] = s.useState({}), R = s.useMemo(() => {
-        let e = b.map(e => S[e] ?? e);
+        let e = T.map(e => S[e] ?? e);
         return (0, a.uniq)(e)
-    }, [b, S]), O = (0, g._Y)(t), G = s.useCallback(() => {
+    }, [T, S]), O = (0, g._Y)(t), G = s.useCallback(() => {
         O ? (0, u.mMO)(async () => {
             let {
                 default: e
@@ -48,14 +48,14 @@ function b(e) {
             return n => (0, i.jsx)(e, {
                 ...n,
                 guildId: t,
-                addNewEditStateFromTemplate: I,
-                addNewEditStateFromScratch: T,
+                addNewEditStateFromTemplate: b,
+                addNewEditStateFromScratch: I,
                 priceTiers: l
             })
         }, {
             modalKey: C
-        }) : T()
-    }, [t, I, T, l, O]), L = p.Zw(R), D = s.useCallback(() => R.forEach(p.Ts), [R]), M = (0, _.gN)(), k = (0, o.bG)([m.A], () => m.A.getProps().subsection);
+        }) : I()
+    }, [t, b, I, l, O]), L = p.Zw(R), D = s.useCallback(() => R.forEach(p.Ts), [R]), M = (0, _.gN)(), k = (0, o.bG)([m.A], () => m.A.getProps().subsection);
     return s.useEffect(() => (k === j.nd0.ROLE_SUBSCRIPTION_TIER_TEMPLATE && G(), () => {
         (0, u.OoC)(C)
     }), [k, G]), (0, i.jsxs)(i.Fragment, {
@@ -104,7 +104,7 @@ function b(e) {
     })
 }
 
-function T(e) {
+function I(e) {
     let {
         guildId: t
     } = e, {
@@ -125,7 +125,7 @@ function T(e) {
         description: N.intl.format(N.t.nHRSvM, {
             maxTiers: r
         }),
-        children: (0, i.jsx)(b, {
+        children: (0, i.jsx)(T, {
             priceTiers: n,
             guildId: t,
             groupListingId: a[0]

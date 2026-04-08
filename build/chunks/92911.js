@@ -24,9 +24,9 @@ var i = n(627968),
     N = n(714991),
     E = n(95035),
     C = n(447696),
-    b = n(861410),
-    T = n(734057),
-    I = n(603349),
+    T = n(861410),
+    I = n(734057),
+    b = n(603349),
     v = n(954571),
     S = n(488926),
     y = n(997509),
@@ -47,9 +47,9 @@ let k = "WELCOME_CHANNEL",
                 index: j
             } = e,
             N = s.useRef(null),
-            E = (0, u.bG)([T.A], () => T.A.getChannel(a.channel_id)),
+            E = (0, u.bG)([I.A], () => I.A.getChannel(a.channel_id)),
             C = (0, u.bG)([f.Ay], () => null != a.emoji_id ? f.Ay.getUsableCustomEmojiById(a.emoji_id) : null),
-            b = null != E && S.MJ(O.xBc.VIEW_CHANNEL, E),
+            T = null != E && S.MJ(O.xBc.VIEW_CHANNEL, E),
             v = (0, A.gU)(E) ?? m.N$i,
             y = (0, p.Ay)(E, !1),
             R = () => {
@@ -89,7 +89,7 @@ let k = "WELCOME_CHANNEL",
             });
         return s.useLayoutEffect(() => (L(U(N)), () => {
             L(null), U(null)
-        }), [L, U]), t = b ? null != C || null != a.emoji_name ? (0, i.jsx)(x.A, {
+        }), [L, U]), t = T ? null != C || null != a.emoji_name ? (0, i.jsx)(x.A, {
             emojiId: C?.id,
             emojiName: null != C ? C.name : a.emoji_name,
             animated: !!C?.animated
@@ -97,7 +97,7 @@ let k = "WELCOME_CHANNEL",
             size: "md",
             color: "currentColor",
             className: M.p
-        }) : (0, i.jsx)(I.A, {
+        }) : (0, i.jsx)(b.A, {
             width: 24,
             height: 24,
             className: M.QW
@@ -129,7 +129,7 @@ let k = "WELCOME_CHANNEL",
                     color: "text-strong",
                     children: a.description
                 }), (0, i.jsxs)(m.Text, {
-                    className: b ? void 0 : M.op,
+                    className: T ? void 0 : M.op,
                     variant: "text-xs/normal",
                     color: "text-default",
                     children: [(0, i.jsx)(v, {
@@ -137,7 +137,7 @@ let k = "WELCOME_CHANNEL",
                         size: "xxs",
                         color: "currentColor"
                     }), (0, i.jsx)("span", {
-                        children: b ? y : D.intl.string(D.t.zFuCsF)
+                        children: T ? y : D.intl.string(D.t.zFuCsF)
                     })]
                 })]
             }), (0, i.jsx)(m.K0, {
@@ -154,9 +154,9 @@ let k = "WELCOME_CHANNEL",
         } = e, {
             welcomeSettings: l,
             originalWelcomeSettings: r
-        } = (0, u.bG)([b.A], () => b.A.getSettingsProps()), a = (0, u.bG)([_.A], () => _.A.useReducedMotion), [d, c] = s.useState(null), [g, x] = s.useState(!1), [p, A] = s.useState(!1), {
+        } = (0, u.bG)([T.A], () => T.A.getSettingsProps()), a = (0, u.bG)([_.A], () => _.A.useReducedMotion), [d, c] = s.useState(null), [g, x] = s.useState(!1), [p, A] = s.useState(!1), {
             description: f,
-            channels: T,
+            channels: I,
             enabled: S
         } = l, G = e => {
             null == t || o()(e, r.channels) || ((0, C.i4)(t.id, {
@@ -167,9 +167,9 @@ let k = "WELCOME_CHANNEL",
                 enabled: e
             }), A(!a), x(!0))
         }, P = (e, t, n) => {
-            if (null == T) return;
-            let i = T.indexOf(e),
-                s = [...T];
+            if (null == I) return;
+            let i = I.indexOf(e),
+                s = [...I];
             null != t && t !== i && (s.splice(i, 1), s.splice(t, 0, e), (0, C.Xx)({
                 channels: s
             })), n ? (G(s), c(null)) : c(t)
@@ -181,7 +181,7 @@ let k = "WELCOME_CHANNEL",
                 let e = [],
                     n = [],
                     i = !1;
-                T?.forEach(t => {
+                I?.forEach(t => {
                     e.push(t.description), n.push(t.channel_id), null != t.emoji_id && (i = !0)
                 }), v.default.track(O.HAw.GUILD_WELCOME_SCREEN_SETTINGS_UPDATED, {
                     guild_id: t?.id,
@@ -192,7 +192,7 @@ let k = "WELCOME_CHANNEL",
                     is_enabled: S
                 })
             }
-        }, [g, T, f, S, t]), s.useEffect(() => () => (0, C.Vv)(), []);
+        }, [g, I, f, S, t]), s.useEffect(() => () => (0, C.Vv)(), []);
         let B = s.useCallback(() => {
             null != t && y.A.open(t.id, O.BEX.ONBOARDING)
         }, [t]);
@@ -204,7 +204,7 @@ let k = "WELCOME_CHANNEL",
                 className: M.lm,
                 children: (0, i.jsxs)(m.Text, {
                     variant: "text-md/normal",
-                    children: [(0, i.jsx)(I.A, {
+                    children: [(0, i.jsx)(b.A, {
                         className: M.EP
                     }), D.intl.format(D.t["oj2vi+"], {
                         onboardingLink: e => (0, i.jsx)(E.A, {
@@ -218,7 +218,7 @@ let k = "WELCOME_CHANNEL",
                 children: D.intl.string(D.t.w2d74x)
             }), (0, i.jsx)(R.A, {
                 enabled: S,
-                onPreview: T?.length === 0 ? void 0 : () => {
+                onPreview: I?.length === 0 ? void 0 : () => {
                     null != t && (0, m.mMO)(async () => {
                         let {
                             default: e
@@ -230,7 +230,7 @@ let k = "WELCOME_CHANNEL",
                         })
                     })
                 },
-                onToggle: S || T?.length !== 0 ? () => {
+                onToggle: S || I?.length !== 0 ? () => {
                     k(!S)
                 } : void 0,
                 animateStatus: p,
@@ -290,11 +290,11 @@ let k = "WELCOME_CHANNEL",
                     children: (0, i.jsx)(m.D0$, {
                         label: D.intl.string(D.t.euJXzT),
                         description: D.intl.string(D.t.VOnnnz),
-                        children: T?.map((e, n) => (0, i.jsx)(U, {
+                        children: I?.map((e, n) => (0, i.jsx)(U, {
                             guildId: t.id,
                             welcomeChannel: e,
                             onEdit: e => {
-                                let t = [...T ?? []];
+                                let t = [...I ?? []];
                                 null == e ? t.splice(n, 1) : t[n] = e, (0, C.Xx)({
                                     channels: t
                                 }), G(t), 0 === t.length && S && ((0, C.Xx)({

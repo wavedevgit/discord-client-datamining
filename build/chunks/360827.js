@@ -1,7 +1,7 @@
 /** chunk id: 360827 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    Ay: () => I,
+    Ay: () => b,
     fO: () => S
 });
 var i = n(627968),
@@ -25,26 +25,26 @@ var i = n(627968),
     N = n(652215),
     E = n(539916),
     C = n(985018),
-    b = n(201205);
+    T = n(201205);
 
-function T(e) {
+function I(e) {
     let {
         guildId: t,
         prompts: n
     } = e, r = (0, l.bG)([m.A], () => m.A.editedDefaultChannelIds), [d, u] = (0, c.Lx)(t, n, [...r]), g = d.length, x = d.length + u.length, h = g / x * 100, _ = Math.max(Math.ceil(85 * x / 100) - g, 0), [p, A] = s.useState(!1), f = p ? a.abt : a.tN5;
     return (0, i.jsxs)("div", {
-        className: b.Kf,
+        className: T.Kf,
         children: [(0, i.jsxs)(a.DUT, {
-            className: b.a9,
+            className: T.a9,
             onClick: () => A(!p),
             children: [(0, i.jsxs)("div", {
-                className: b.Vn,
+                className: T.Vn,
                 children: [h <= 85 && (0, i.jsx)(a.EpV, {
                     size: "xs",
                     color: "currentColor",
-                    className: b.$e
+                    className: T.$e
                 }), (0, i.jsx)(a.Text, {
-                    className: b.XG,
+                    className: T.XG,
                     variant: "text-xs/medium",
                     color: "text-muted",
                     children: C.intl.format(C.t.nMVKCX, {
@@ -52,31 +52,31 @@ function T(e) {
                     })
                 })]
             }), (0, i.jsxs)("div", {
-                className: b.L$,
+                className: T.L$,
                 children: [(0, i.jsx)(a.iCB, {
-                    className: b.gH,
+                    className: T.gH,
                     foregroundColor: h > 85 ? "var(--status-positive)" : "var(--status-warning)",
                     percent: h
                 }), (0, i.jsx)(f, {
                     size: "md",
                     color: "currentColor",
-                    className: b.OW
+                    className: T.OW
                 })]
             })]
         }), p ? (0, i.jsxs)("div", {
-            className: b.k$,
+            className: T.k$,
             children: [(0, i.jsx)(a.Text, {
                 variant: "text-xs/semibold",
                 color: "text-muted",
                 children: C.intl.string(C.t["0FM4i+"])
             }), (0, i.jsx)("div", {
-                className: b.BM,
+                className: T.BM,
                 children: u.map(e => {
                     let t = (0, o.gU)(e) ?? a.N$i;
                     return (0, i.jsx)("div", {
-                        className: b.N5,
+                        className: T.N5,
                         children: (0, i.jsxs)(a.Text, {
-                            className: b.Ix,
+                            className: T.Ix,
                             variant: "text-xs/normal",
                             color: "interactive-text-active",
                             children: [(0, i.jsx)(t, {
@@ -87,7 +87,7 @@ function T(e) {
                     }, e.id)
                 })
             }), (0, i.jsx)("div", {
-                className: b.fg,
+                className: T.fg,
                 children: _ > 0 ? (0, i.jsxs)(i.Fragment, {
                     children: [(0, i.jsx)(a.EpV, {
                         size: "xs",
@@ -109,7 +109,7 @@ function T(e) {
     })
 }
 
-function I(e) {
+function b(e) {
     let {
         saveOnClose: t
     } = e, n = (0, l.bG)([u.A], () => u.A.getGuild());
@@ -145,7 +145,7 @@ function v(e) {
     };
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(a.Heading, {
-            className: b.wx,
+            className: T.wx,
             variant: "heading-lg/extrabold",
             children: c ? C.intl.string(C.t.AGjtFv) : C.intl.string(C.t.dqCzoT)
         }), (0, i.jsx)(a.Text, {
@@ -153,7 +153,7 @@ function v(e) {
             color: "text-default",
             children: C.intl.string(C.t["q/6MLL"])
         }), (0, i.jsxs)("div", {
-            className: b.yJ,
+            className: T.yJ,
             children: [(0, i.jsx)(a.MzZ, {
                 target: "_blank",
                 href: N.X7G.GUILD_ONBOARDING_EXAMPLES,
@@ -163,7 +163,7 @@ function v(e) {
                     children: C.intl.string(C.t.Ok55Kh)
                 })
             }), (0, i.jsx)("div", {
-                className: b.Om
+                className: T.Om
             }), (0, i.jsx)(a.MzZ, {
                 onClick: h,
                 children: (0, i.jsx)(a.Text, {
@@ -172,17 +172,17 @@ function v(e) {
                     children: C.intl.string(C.t["6gsjdM"])
                 })
             }), (0, i.jsx)("div", {
-                className: b.Om
+                className: T.Om
             }), (0, i.jsx)(A.mU, {
                 guildId: t.id
             })]
-        }), (0, i.jsx)(T, {
+        }), (0, i.jsx)(I, {
             guildId: t.id,
             prompts: o
         }), n && (0, i.jsx)(f.A, {
             guildId: t.id
         }), (0, i.jsx)("div", {
-            className: b.E3,
+            className: T.E3,
             children: r ? (0, i.jsx)(a.y$y, {}) : (0, i.jsx)(j.A, {
                 postjoinOnly: c,
                 guildId: t.id

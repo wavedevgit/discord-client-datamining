@@ -24,16 +24,16 @@ var i = n(627968),
     N = n(913443),
     E = n(474215),
     C = n(561923),
-    b = n(652215),
-    T = n(985018),
-    I = n(521266);
+    T = n(652215),
+    I = n(985018),
+    b = n(521266);
 let v = function() {
     let {
         analyticsLocations: e
     } = (0, d.Ay)(o.A.GUILD_SETTINGS_PROFILE_PAGE), t = (0, l.bG)([h.A], () => h.A.getGuild(), []), n = t?.id, {
         fetchGuildProfile: v,
         fetchStatus: S
-    } = (0, u.u)(t?.id), y = (0, l.bG)([h.A], () => h.A.getGuildProfile(), []), R = (0, l.bG)([g.A], () => g.A.can(b.xBc.MANAGE_GUILD, t)), O = s.useCallback(e => {
+    } = (0, u.u)(t?.id), y = (0, l.bG)([h.A], () => h.A.getGuildProfile(), []), R = (0, l.bG)([g.A], () => g.A.can(T.xBc.MANAGE_GUILD, t)), O = s.useCallback(e => {
         null != n && (x.A.updateGuild({
             icon: e
         }), x.A.updateGuildProfile(n, {
@@ -55,67 +55,67 @@ let v = function() {
     }, []), S === c.X.FETCHED && null == y) ? (0, i.jsx)(N.g, {
         forceFetchGuildProfile: L
     }) : S === c.X.NOT_FETCHED || S === c.X.FETCHING ? (0, i.jsx)("main", {
-        className: I.u1,
+        className: b.u1,
         children: (0, i.jsx)(r.y$y, {})
     }) : null == t || null == y ? null : (0, i.jsx)(d.f5, {
         value: e,
         children: (0, i.jsxs)("main", {
-            className: I.Qs,
+            className: b.Qs,
             children: [(0, i.jsxs)("div", {
-                className: I.Cd,
+                className: b.Cd,
                 children: [(0, i.jsxs)("div", {
                     children: [(0, i.jsx)(r.Heading, {
                         variant: "heading-lg/semibold",
                         color: "text-strong",
-                        children: T.intl.string(T.t.txdaxf)
+                        children: I.intl.string(I.t.txdaxf)
                     }), (0, i.jsx)(r.Text, {
                         variant: "text-sm/medium",
                         color: "text-default",
-                        className: I.h_,
-                        children: T.intl.string(T.t["5PGZWS"])
+                        className: b.h_,
+                        children: I.intl.string(I.t["5PGZWS"])
                     })]
                 }), (0, i.jsx)(j.A, {
                     profile: y,
                     canManageGuild: R
                 }), (0, i.jsx)("div", {
-                    className: I.yF
+                    className: b.yF
                 }), (0, i.jsx)(f.A, {
                     profile: y,
                     canManageGuild: R,
                     onIconChange: O
                 }), (0, i.jsx)("div", {
-                    className: I.yF
+                    className: b.yF
                 }), (0, i.jsx)(_.A, {
                     profile: y,
                     onCustomBannerChange: G,
                     canManageGuild: R
                 }), (0, i.jsx)("div", {
-                    className: I.yF
+                    className: b.yF
                 }), (0, i.jsx)(E.A, {
                     profile: y,
                     canManageGuild: R
                 }), (0, i.jsx)("div", {
-                    className: I.yF
+                    className: b.yF
                 }), (0, i.jsx)(p.A, {
                     profile: y,
                     canManageGuild: R
                 }), (0, i.jsx)("div", {
-                    className: I.yF
+                    className: b.yF
                 }), (0, i.jsx)(A.A, {
                     profile: y,
                     canManageGuild: R
                 }), (0, i.jsx)("div", {
-                    className: I.yF
+                    className: b.yF
                 }), (0, i.jsx)(C.A, {
                     profile: y,
                     canManageGuild: R
                 })]
             }), (0, i.jsx)("div", {
-                className: I.DK,
+                className: b.DK,
                 children: (0, i.jsx)(r.HOs, {
-                    className: I.ti,
+                    className: b.ti,
                     children: (0, i.jsx)(m.Ay, {
-                        className: I.q5,
+                        className: b.q5,
                         profile: y,
                         disableCTA: !0,
                         onIconChange: R ? O : void 0,

@@ -65,7 +65,7 @@ function v(e) {
             }
             return null
         }, [E, e]),
-        C = i.useCallback(async (e, n) => {
+        I = i.useCallback(async (e, n) => {
             let a = null;
             if (await _(i => {
                     let l = i.filter(u.fu).find(t => t.type === e) ?? null;
@@ -101,7 +101,7 @@ function v(e) {
                 ...i.getProfileEditAnalyticsOptions()
             })
         }, [t]),
-        I = i.useCallback(async e => {
+        C = i.useCallback(async e => {
             if (null == b) return;
             let t = null;
             if (await _(n => e ? n.some(e => e instanceof d.R && e.applicationId === b) ? n : [t = new d.R({
@@ -125,7 +125,7 @@ function v(e) {
             }) : p.intl.formatToPlainString(p.t.Xp6iZt, {
                 name: n
             }),
-            action: () => I(!e),
+            action: () => C(!e),
             leadingAccessory: {
                 type: "icon",
                 icon: s.Uy2
@@ -142,7 +142,7 @@ function v(e) {
                 label: i ? e.removeLabel : e.addLabel,
                 subtext: l ? p.intl.string(p.t["86OoiH"]) : void 0,
                 subtextLineClamp: 1,
-                action: () => C(e.type, !i),
+                action: () => I(e.type, !i),
                 leadingAccessory: {
                     type: "icon",
                     icon: e.icon

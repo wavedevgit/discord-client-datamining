@@ -24,7 +24,7 @@ var i = n(627968),
     N = n(920852),
     E = n(266332),
     C = n(386528);
-let b = [{
+let T = [{
         iconSrc: n(374229),
         name: "Pokemon GO Paris",
         position: [-230, -100]
@@ -55,7 +55,7 @@ let b = [{
         faded: !0,
         rightAlign: !0
     }],
-    T = e => {
+    I = e => {
         let {
             icon: t,
             color: n,
@@ -84,7 +84,7 @@ let b = [{
             })]
         })
     },
-    I = e => {
+    b = e => {
         let {
             iconSrc: t,
             name: n,
@@ -128,7 +128,7 @@ let b = [{
             children: [(0, i.jsxs)("div", {
                 className: A.vK,
                 ref: e => C(e),
-                children: [b.map(e => (0, i.jsx)(I, {
+                children: [T.map(e => (0, i.jsx)(b, {
                     ...e,
                     imageCoordinates: [n, r]
                 }, e.name)), (0, i.jsx)("img", {
@@ -215,7 +215,7 @@ let b = [{
                     color: o.A.unsafe_rawColors.RED_360.css,
                     header: p.intl.string(p.t.W2kLJC),
                     body: p.intl.string(p.t.hyNkHz)
-                }].map((e, t) => (0, i.jsx)(T, {
+                }].map((e, t) => (0, i.jsx)(I, {
                     ...e
                 }, t))
             })]

@@ -66,7 +66,7 @@ let E = e => {
         })
     };
 
-function b(e) {
+function T(e) {
     let {
         rule: t,
         onChangeRule: n,
@@ -107,7 +107,7 @@ function b(e) {
     })
 }
 
-function T(e) {
+function I(e) {
     return (0, g.ub)(e, g.H2.ALPHA) ? (0, i.jsx)(d.A, {
         className: j.n0
     }) : (0, g.ub)(e, g.H2.BETA) ? (0, i.jsx)(c.A, {
@@ -115,7 +115,7 @@ function T(e) {
     }) : null
 }
 
-function I(e) {
+function b(e) {
     let {
         rule: t,
         isDefaultRule: n,
@@ -125,7 +125,7 @@ function I(e) {
         saveRule: g
     } = (0, x.S)(), {
         updateRule: _
-    } = (0, m.wP)(t.guildId), [p, A] = s.useState(t.enabled), b = (0, l.throttle)(async () => {
+    } = (0, m.wP)(t.guildId), [p, A] = s.useState(t.enabled), T = (0, l.throttle)(async () => {
         if (!c) {
             let e = {
                 ...t,
@@ -138,7 +138,7 @@ function I(e) {
     }, 300);
     if (null == d) return null;
     let {
-        headerText: I,
+        headerText: b,
         headerSubtext: v,
         descriptionText: S,
         icon: y
@@ -159,7 +159,7 @@ function I(e) {
                 className: j.aY,
                 children: [(0, i.jsxs)("div", {
                     className: j.bR,
-                    children: [I, T(t.triggerType)]
+                    children: [b, I(t.triggerType)]
                 }), (0, i.jsx)(a.Text, {
                     className: j.bL,
                     variant: "text-sm/normal",
@@ -176,7 +176,7 @@ function I(e) {
         }), (0, i.jsxs)(C, {
             className: j.Ik,
             children: [(0, i.jsx)(a.dOG, {
-                onChange: b,
+                onChange: T,
                 checked: p ?? !1
             }), !n && (0, i.jsx)(r.m, {
                 text: f.intl.string(f.t["UKOtz+"]),
@@ -225,7 +225,7 @@ function v(e) {
                 color: "text-strong",
                 children: (0, i.jsxs)("div", {
                     className: j.bR,
-                    children: [r, T(t)]
+                    children: [r, I(t)]
                 })
             }), (0, i.jsx)(a.Text, {
                 className: j.mT,
@@ -269,11 +269,11 @@ function S(e) {
         triggerType: s,
         onSetupRule: c
     });
-    return null == t || d || (g = l ? (0, i.jsx)(b, {
+    return null == t || d || (g = l ? (0, i.jsx)(T, {
         rule: t,
         onChangeRule: u,
         onContextMenu: m
-    }) : (0, i.jsx)(I, {
+    }) : (0, i.jsx)(b, {
         rule: t,
         isDefaultRule: r,
         onContextMenu: m

@@ -24,9 +24,9 @@ var i = n(627968),
     N = n(655943),
     E = n(287479),
     C = n(400812),
-    b = n(72533),
-    T = n(23901),
-    I = n(729984),
+    T = n(72533),
+    I = n(23901),
+    b = n(729984),
     v = n(692453),
     S = n(360827),
     y = n(133154),
@@ -44,7 +44,7 @@ function L() {
 function D(e) {
     let {
         guild: t
-    } = e, h = t.id, L = (0, r.bG)([E.A], () => E.A.getCurrentPage()), D = (0, b.A)(h), {
+    } = e, h = t.id, L = (0, r.bG)([E.A], () => E.A.getCurrentPage()), D = (0, T.A)(h), {
         hasChanges: M,
         hasConfiguredAnythingForCurrentStep: k,
         hasErrors: U
@@ -83,7 +83,7 @@ function D(e) {
             output: [W, (0, c.rdh)(a.A.colors.BACKGROUND_FEEDBACK_CRITICAL).hex()]
         });
     if (D) {
-        if (L === C.Hy.DEFAULT_CHANNELS) return (0, i.jsx)(I.G, {});
+        if (L === C.Hy.DEFAULT_CHANNELS) return (0, i.jsx)(b.G, {});
         else if (L === C.Hy.CUSTOMIZATION_QUESTIONS) return (0, i.jsx)(S.fO, {});
         else if (L === C.Hy.HOME_SETTINGS) return (0, i.jsx)(y.A, {});
         else if (L === C.Hy.CONNECTIONS) return (0, i.jsx)(v.R, {});
@@ -114,15 +114,15 @@ function D(e) {
                 back: !1,
                 skip: !M
             }), (0, p.Ay)((0, C.ql)(L)), await X() && (0, p._k)(h, L)
-        }, q = async () => {
+        }, Z = async () => {
             g.default.track(R.HAw.GUILD_SETTINGS_ONBOARDING_WIZARD_PROGRESS_CTA_CLICKED, {
                 ...(0, m.H$)(h),
                 step: C.Hy[L],
                 back: !0,
                 skip: !1
             }), await X() && (0, p.kP)(h, L)
-        }, Z = null;
-    P && (L === C.Hy.SAFETY_CHECK ? Z = (0, i.jsx)(T.Et, {}) : L === C.Hy.DEFAULT_CHANNELS ? Z = (0, i.jsx)(T.hz, {}) : L === C.Hy.CUSTOMIZATION_QUESTIONS ? Z = (0, i.jsx)(T.yP, {}) : L === C.Hy.HOME_SETTINGS && (Z = (0, i.jsx)(T.QS, {})));
+        }, q = null;
+    P && (L === C.Hy.SAFETY_CHECK ? q = (0, i.jsx)(I.Et, {}) : L === C.Hy.DEFAULT_CHANNELS ? q = (0, i.jsx)(I.hz, {}) : L === C.Hy.CUSTOMIZATION_QUESTIONS ? q = (0, i.jsx)(I.yP, {}) : L === C.Hy.HOME_SETTINGS && (q = (0, i.jsx)(I.QS, {})));
     let Q = (0, i.jsx)("div", {
             className: P ? G.R : void 0,
             children: (0, i.jsx)(c.Button, {
@@ -131,7 +131,7 @@ function D(e) {
                 text: O.intl.string(O.t["13/7kX"]),
                 icon: c.rJJ,
                 iconPosition: "start",
-                onClick: q,
+                onClick: Z,
                 disabled: P || U
             })
         }),
@@ -164,7 +164,7 @@ function D(e) {
                             alt: "wumpus"
                         }), (0, i.jsxs)("div", {
                             className: G.C0,
-                            children: [Z, (0, i.jsx)("div", {
+                            children: [q, (0, i.jsx)("div", {
                                 className: G.JM
                             })]
                         })]

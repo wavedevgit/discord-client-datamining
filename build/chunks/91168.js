@@ -24,9 +24,9 @@ var i = n(627968),
     N = n(7891),
     E = n(450510),
     C = n(475481),
-    b = n(861410),
-    T = n(433522),
-    I = n(287809),
+    T = n(861410),
+    I = n(433522),
+    b = n(287809),
     v = n(203982),
     S = n(403362),
     y = n(997509),
@@ -50,8 +50,8 @@ var i = n(627968),
     Y = n(807165),
     X = n(454516),
     J = n(155008),
-    q = n(965033),
-    Z = n(737331),
+    Z = n(965033),
+    q = n(737331),
     Q = n(771935),
     $ = n(647171),
     ee = n(113266),
@@ -92,7 +92,7 @@ let eN = {
                 }),
                 ariaLabel: ef.intl.string(ef.t["KzCF/6"])
             },
-            eb = t.guild.features.has(ep.GuildFeatures.COMMUNITY) && t.canViewGuildAnalytics;
+            eT = t.guild.features.has(ep.GuildFeatures.COMMUNITY) && t.canViewGuildAnalytics;
         switch (e) {
             case ep.BEX.PROFILE:
                 return {
@@ -118,7 +118,7 @@ let eN = {
             case ep.BEX.BOOST_PERKS:
                 return {
                     section: ep.BEX.BOOST_PERKS, impressionName: s.ImpressionNames.GUILD_SETTINGS_BOOST_PERKS, label: ef.intl.string(ef.t.UKgg5N), ariaLabel: ef.intl.string(ef.t.UKgg5N), element: Q.H, notice: {
-                        stores: [R.A, Z.A],
+                        stores: [R.A, q.A],
                         element: $.l
                     }
                 };
@@ -190,7 +190,7 @@ let eN = {
                 };
             case ep.BEX.MODERATION:
                 return {
-                    section: ep.BEX.MODERATION, impressionName: s.ImpressionNames.GUILD_SETTINGS_MODERATION, label: ef.intl.string(ef.t["suhY+Y"]), element: q.Ay, predicate: () => t.canManageGuild && !t.guild.features.has(ep.GuildFeatures.COMMUNITY)
+                    section: ep.BEX.MODERATION, impressionName: s.ImpressionNames.GUILD_SETTINGS_MODERATION, label: ef.intl.string(ef.t["suhY+Y"]), element: Z.Ay, predicate: () => t.canManageGuild && !t.guild.features.has(ep.GuildFeatures.COMMUNITY)
                 };
             case ep.BEX.GUILD_AUTOMOD:
                 return {
@@ -208,13 +208,13 @@ let eN = {
                     section: ep.BEX.BANS, impressionName: s.ImpressionNames.GUILD_SETTINGS_BANS, label: ef.intl.string(ef.t.ZbeITS), element: X.A, predicate: () => t.canManageBans
                 };
             case ep.BEX.COMMUNITY:
-                let eT = ef.intl.string(ef.t.ElKTeb);
-                return t.guild.features.has(ep.GuildFeatures.COMMUNITY) && (eT = ef.intl.string(ef.t["8nY2LE"])), {
+                let eI = ef.intl.string(ef.t.ElKTeb);
+                return t.guild.features.has(ep.GuildFeatures.COMMUNITY) && (eI = ef.intl.string(ef.t["8nY2LE"])), {
                     section: ep.BEX.COMMUNITY,
                     impressionName: t.guild.features.has(ep.GuildFeatures.COMMUNITY) ? s.ImpressionNames.GUILD_SETTINGS_COMMUNITY_OVERVIEW : s.ImpressionNames.GUILD_SETTINGS_ENABLE_COMMUNITY,
-                    label: eT,
+                    label: eI,
                     element: D.A,
-                    ariaLabel: eT,
+                    ariaLabel: eI,
                     newIndicator: !t.guild.features.has(ep.GuildFeatures.COMMUNITY) && null != t.memberCount && t.memberCount >= eA.dH && E.HP.hasHotspot(E._2.GUILD_SETTINGS_COMMUNITY_GUILD_UPSELL),
                     notice: {
                         stores: [R.A],
@@ -239,7 +239,7 @@ let eN = {
                 };
             case ep.BEX.ANALYTICS:
                 return {
-                    section: ep.BEX.ANALYTICS, impressionName: s.ImpressionNames.GUILD_SETTINGS_ANALYTICS, label: ef.intl.string(ef.t["0wWfUG"]), ariaLabel: ef.intl.string(ef.t["0wWfUG"]), element: L.A, predicate: () => eb
+                    section: ep.BEX.ANALYTICS, impressionName: s.ImpressionNames.GUILD_SETTINGS_ANALYTICS, label: ef.intl.string(ef.t["0wWfUG"]), ariaLabel: ef.intl.string(ef.t["0wWfUG"]), element: L.A, predicate: () => eT
                 };
             case ep.BEX.DISCOVERY_LANDING_PAGE:
                 return {
@@ -254,8 +254,8 @@ let eN = {
             case ep.BEX.COMMUNITY_WELCOME:
                 return {
                     section: ep.BEX.COMMUNITY_WELCOME, impressionName: s.ImpressionNames.GUILD_SETTINGS_COMMUNITY_WELCOME, label: ef.intl.string(ef.t["2rkmDr"]), ariaLabel: ef.intl.string(ef.t["2rkmDr"]), element: M.A, notice: {
-                        stores: [b.A],
-                        element: T.A
+                        stores: [T.A],
+                        element: I.A
                     }, predicate: () => t.canManageGuild && t.guild.features.has(ep.GuildFeatures.COMMUNITY) && !t.welcomeScreenEmpty && !t.guild.features.has(ep.GuildFeatures.GUILD_SERVER_GUIDE)
                 };
             case ep.BEX.ROLE_SUBSCRIPTIONS:
@@ -279,7 +279,7 @@ let eN = {
             case ep.BEX.DELETE:
                 return {
                     section: ep.BEX.DELETE, onClick() {
-                        let e = I.default.getCurrentUser();
+                        let e = b.default.getCurrentUser();
                         if (null == e) return;
                         let {
                             name: s

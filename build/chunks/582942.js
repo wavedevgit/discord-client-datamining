@@ -12,8 +12,8 @@ var i = n(503698),
     c = n(990078),
     d = n(397927),
     u = n(587895),
-    m = n(136086),
-    x = n(885151),
+    m = n(311043),
+    x = n(454908),
     g = n(409626),
     h = n(422069),
     f = n(611656),
@@ -62,7 +62,7 @@ function b(e) {
             n = r.some(e => m.A.isFetching(e));
         return e || n
     }), g = (0, o.yK)([m.A], () => r.map(e => m.A.getGame(e)).filter(e => null != e).filter(e => (0, f.oS)(e.applicationId)).slice(0, 5));
-    return ((0, x.k)(t), (0, x.W)(r), u && null == c) ? (0, a.jsxs)("div", {
+    return ((0, x.I)(t), (0, x.x)(r), u && null == c) ? (0, a.jsxs)("div", {
         children: [(0, a.jsx)("div", {
             className: l()(j.vM, A.bV)
         }), (0, a.jsx)("div", {

@@ -217,7 +217,7 @@ function d(e, t) {
             let t = e.metaKey || e.ctrlKey;
             "z" === e.key && t ? (m().selections.length > 0 ? s.current?.blur() : s.current?.focus(), e.preventDefault(), e.stopPropagation()) : "y" === e.key && t && (g().selections.length > 0 ? s.current?.blur() : s.current?.focus(), e.preventDefault(), e.stopPropagation())
         }, [m, g, s]),
-        b = i.useCallback(e => {
+        T = i.useCallback(e => {
             let t = o.trim().length > 0,
                 {
                     selectionStart: n = 0,
@@ -242,7 +242,7 @@ function d(e, t) {
                 }, 16)
             }), e.preventDefault(), e.stopPropagation())
         }, [l, s, u, d.length, o]),
-        T = i.useCallback(e => {
+        I = i.useCallback(e => {
             e.relatedTarget !== e.currentTarget && N(e, !1, !1)
         }, [N]);
     return {
@@ -250,18 +250,18 @@ function d(e, t) {
         handleInputChange: j,
         handleKeyDown: i.useCallback(e => {
             let t = e.metaKey || e.ctrlKey;
-            "Meta" !== e.key && (a.Wu.has(e.key) ? N(e) : "Backspace" === e.key ? E(e) : "Escape" === e.key ? f(e) : "a" === e.key && t ? b(e) : a.A_.has(e.key) && t && C(e))
-        }, [N, E, f, b, C]),
+            "Meta" !== e.key && (a.Wu.has(e.key) ? N(e) : "Backspace" === e.key ? E(e) : "Escape" === e.key ? f(e) : "a" === e.key && t ? T(e) : a.A_.has(e.key) && t && C(e))
+        }, [N, E, f, T, C]),
         handleContainerKeyUp: i.useCallback(e => {
             if (document.activeElement !== l.current) return;
             let t = e.metaKey || e.ctrlKey;
-            "Backspace" === e.key ? E(e) : "a" === e.key && t ? b(e) : "Escape" === e.key ? f(e) : a.A_.has(e.key) && t ? C(e) : "Meta" !== e.key && f(e)
-        }, [C, E, b, f, l]),
+            "Backspace" === e.key ? E(e) : "a" === e.key && t ? T(e) : "Escape" === e.key ? f(e) : a.A_.has(e.key) && t ? C(e) : "Meta" !== e.key && f(e)
+        }, [C, E, T, f, l]),
         handleRemoveTag: h,
         handleTagChangeEvent: _,
         handleSelectTag: p,
         handleUnselectTag: A,
         handleResetTagSelections: f,
-        handleInputBlurEvent: T
+        handleInputBlurEvent: I
     }
 }

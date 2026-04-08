@@ -24,9 +24,9 @@ var i = n(627968),
     N = n(11351),
     E = n(739455),
     C = n(535876),
-    b = n(299824),
-    T = n(859016),
-    I = n(623529),
+    T = n(299824),
+    I = n(859016),
+    b = n(623529),
     v = n(328031),
     S = n(646296),
     y = n(700458),
@@ -139,7 +139,7 @@ function w(e) {
     if (!N) return (0, i.jsx)(r.y$y, {});
     switch (x) {
         case y.Oi.BASIC_INFO:
-            t = (0, i.jsx)(I.A, {
+            t = (0, i.jsx)(b.A, {
                 guild: n
             });
             break;
@@ -149,7 +149,7 @@ function w(e) {
             });
             break;
         case y.Oi.PAYMENT:
-            t = (0, i.jsx)(T.A, {
+            t = (0, i.jsx)(I.A, {
                 guild: n
             });
             break;
@@ -174,7 +174,7 @@ function w(e) {
                     variant: "text-sm/normal",
                     children: D.intl.string(D.t.KyGv0k)
                 })]
-            }), (0, i.jsx)(b.A, {
+            }), (0, i.jsx)(T.A, {
                 guild: n
             }), c && (0, i.jsx)(U, {
                 application: o

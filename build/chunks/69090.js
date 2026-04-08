@@ -24,9 +24,9 @@ var i = n(627968),
     N = n(657048),
     E = n(576705),
     C = n(954571),
-    b = n(545868),
-    T = n(642133),
-    I = n(856644),
+    T = n(545868),
+    I = n(642133),
+    b = n(856644),
     v = n(359837),
     S = n(533448),
     y = n(927573),
@@ -46,9 +46,9 @@ function M(e) {
         renderHeader: o,
         headerHeight: c,
         query: u
-    } = e, m = (0, d.bG)([T.A], () => T.A.getRoleMemberCount(n.id), [n.id]), g = (0, d.bG)([E.A], () => E.A.getHighestRole(n), [n]), h = u.trim();
+    } = e, m = (0, d.bG)([I.A], () => I.A.getRoleMemberCount(n.id), [n.id]), g = (0, d.bG)([E.A], () => E.A.getHighestRole(n), [n]), h = u.trim();
     s.useEffect(() => {
-        (0, b.L)(n.id)
+        (0, T.L)(n.id)
     }, [n.id]);
     let _ = s.useRef(!1);
     s.useEffect(() => {
@@ -56,7 +56,7 @@ function M(e) {
             search_type: "Roles"
         }), _.current = !0)
     }, [u]);
-    let p = s.useMemo(() => r.filter(e => (0, I.Vh)(e, h)), [r, h]),
+    let p = s.useMemo(() => r.filter(e => (0, b.Vh)(e, h)), [r, h]),
         A = s.useMemo(() => [...r, l], [r, l]),
         {
             draggingId: f,
@@ -123,9 +123,9 @@ function U(e) {
         onDragComplete: N,
         disableHover: E,
         disableDrag: C,
-        setEditRoleId: b,
-        setSelectedSection: T
-    } = e, I = (0, v.c)(l, d, t), S = null != I, [R, M] = s.useState(!1), k = s.useMemo(() => ({
+        setEditRoleId: T,
+        setSelectedSection: I
+    } = e, b = (0, v.c)(l, d, t), S = null != b, [R, M] = s.useState(!1), k = s.useMemo(() => ({
         type: D,
         item: () => (A(t.id), {
             id: t.id,
@@ -177,7 +177,7 @@ function U(e) {
     });
 
     function W() {
-        b(t.id)
+        T(t.id)
     }
     return (0, i.jsxs)(m.DUT, {
         className: r()(G.xf, {
@@ -217,9 +217,9 @@ function U(e) {
                 size: 24,
                 className: G.UT,
                 defaultIconClassName: G.a
-            }), null != I ? (0, i.jsx)(v.A, {
+            }), null != b ? (0, i.jsx)(v.A, {
                 className: G.s2,
-                tooltipText: I
+                tooltipText: b
             }) : null, (0, i.jsx)(m.Text, {
                 className: G.S3,
                 color: "text-strong",
@@ -238,7 +238,7 @@ function U(e) {
             children: (0, i.jsxs)(m.DUT, {
                 className: r()(G.Tb, L.Hp),
                 onClick: function() {
-                    W(), T(y.T$.MEMBERS)
+                    W(), I(y.T$.MEMBERS)
                 },
                 children: [(0, i.jsx)(m.Text, {
                     variant: "text-md/normal",

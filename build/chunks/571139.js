@@ -1,6 +1,6 @@
 /** chunk id: 571139 params = (module,exports,require) **/
 n.d(e, {
-    A: () => m
+    A: () => O
 }), n(321073);
 var i = n(627968);
 n(64700);
@@ -22,19 +22,19 @@ var a = n(311907),
     p = n(746080),
     h = n(985018),
     C = n(610749),
-    g = n(375986);
-let m = 21552 == n.j ? () => {
+    m = n(375986);
+let O = 21552 == n.j ? () => {
     let t = (0, a.bG)([_.A], () => _.A.getGuildId(), []),
         e = (0, a.bG)([u.A], () => u.A.getGuild(t), [t]),
         l = (0, a.bG)([N.A], () => null != t ? N.A.getRequest(t) : null, [t]),
-        m = (0, s.zy)(),
-        O = (0, d.B)(m.pathname, R.BVt.CHANNEL(e?.id, p.VV.GUILD_ONBOARDING))?.isExact === !0;
-    if (null == e || !(0, I.Qd)(e) || O) return null;
+        O = (0, s.zy)(),
+        g = (0, d.B)(O.pathname, R.BVt.CHANNEL(e?.id, p.VV.GUILD_ONBOARDING))?.isExact === !0;
+    if (null == e || !(0, I.Qd)(e) || g) return null;
     let S = l?.applicationStatus ?? A.B5.STARTED,
         y = null,
         x = null,
         M = null,
-        U = [C.lm, g.lm];
+        U = [C.lm, m.lm];
     switch (S) {
         case A.B5.SUBMITTED:
             y = h.intl.string(h.t["5iLvSx"]), x = h.intl.string(h.t.mqtdmQ), M = () => {

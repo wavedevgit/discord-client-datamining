@@ -34,7 +34,7 @@ function C(e) {
         promptIndex: u,
         dragIndex: A,
         includeCount: C,
-        singleColumn: I,
+        singleColumn: b,
         onPromptDragComplete: v,
         onPromptDragStart: S,
         onPromptDragReset: y
@@ -149,7 +149,7 @@ function C(e) {
                     placeholder: j.intl.string(j.t.QMCuCo),
                     maxLength: f.kq,
                     error: M.title
-                }), (0, i.jsx)(b, {
+                }), (0, i.jsx)(T, {
                     prompt: n,
                     guild: t
                 }), (0, i.jsx)(d.D0$, {
@@ -161,12 +161,12 @@ function C(e) {
                         count: n.options.length,
                         total: f.fs
                     }),
-                    children: (0, i.jsx)(T, {
+                    children: (0, i.jsx)(I, {
                         guild: t,
                         prompt: n,
                         promptIndex: u,
                         errors: M,
-                        singleColumn: I
+                        singleColumn: b
                     })
                 })]
             }), (0, i.jsxs)("div", {
@@ -218,7 +218,7 @@ function C(e) {
     })
 }
 
-function b(e) {
+function T(e) {
     let {
         prompt: t,
         guild: n
@@ -252,7 +252,7 @@ function b(e) {
     })
 }
 
-function T(e) {
+function I(e) {
     let {
         guild: t,
         prompt: n,

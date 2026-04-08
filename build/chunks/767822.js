@@ -24,14 +24,14 @@ function x(e) {
         createNewEditingRule: f
     } = (0, c.U)(), {
         getDefaultRuleName: j
-    } = d.i$[n], N = !(0, o.wC)(A) && A?.triggerType === n, [E, C] = s.useState(N ? A : h), b = (0, a.zhh)({
+    } = d.i$[n], N = !(0, o.wC)(A) && A?.triggerType === n, [E, C] = s.useState(N ? A : h), T = (0, a.zhh)({
         opacity: +!N,
         pointerEvents: N ? "none" : "all",
         config: {
             ...l.config.stiff,
             clamp: !0
         }
-    }), T = (0, a.zhh)({
+    }), I = (0, a.zhh)({
         opacity: +!!N,
         pointerEvents: N ? "all" : "none",
         config: {
@@ -52,14 +52,14 @@ function x(e) {
         },
         children: [(0, i.jsx)(l.animated.div, {
             className: g.pT,
-            style: T,
+            style: I,
             children: (0, i.jsx)(u.A, {
                 rule: E,
                 persistEdit: _
             })
         }), (0, i.jsx)(l.animated.div, {
             className: g.animatedNewRuleContainer,
-            style: b,
+            style: T,
             children: (0, i.jsxs)(a.DUT, {
                 className: g.Y0,
                 onClick: () => {

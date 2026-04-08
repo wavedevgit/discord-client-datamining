@@ -144,7 +144,7 @@ function E(e) {
         withCardBody: A = !0,
         guildId: f,
         showHeaderLockStatus: j = !0
-    } = e, E = (0, o.bG)([g.A], () => g.A.getGuild(f)?.premiumTier ?? h.TVA.NONE), C = h.M2T[l.tier], b = a && l.tier <= E, T = l.tier !== h.TVA.NONE && l.tier !== h.TVA.TIER_1;
+    } = e, E = (0, o.bG)([g.A], () => g.A.getGuild(f)?.premiumTier ?? h.TVA.NONE), C = h.M2T[l.tier], T = a && l.tier <= E, I = l.tier !== h.TVA.NONE && l.tier !== h.TVA.TIER_1;
     return (0, i.jsxs)("div", {
         className: r()(p.Zm, {
             [p.Ab]: c
@@ -161,14 +161,14 @@ function E(e) {
             guildId: f,
             hasBottomMargin: c,
             subscriptionsRequired: C,
-            hasAnimatedUnlocked: b,
+            hasAnimatedUnlocked: T,
             isAnimatedTo: a
         }), (0, i.jsx)("div", {
             className: r()({
                 [p.J8]: A
             }),
             children: null != t ? t : (0, i.jsxs)(i.Fragment, {
-                children: [T ? (0, i.jsx)("div", {
+                children: [I ? (0, i.jsx)("div", {
                     className: p.p8,
                     children: _.intl.string(_.t.oKzyRQ)
                 }) : null, null != l.perks && (0, i.jsx)("div", {
@@ -199,7 +199,7 @@ function E(e) {
                                 })]
                             })]
                         }, e.title?.toString())
-                    })(e, b))
+                    })(e, T))
                 })]
             })
         })]
@@ -212,13 +212,13 @@ let C = e => {
             headerButton: s,
             subscriptionsRequired: l
         } = e;
-        return null !== s ? s : n ? (0, i.jsx)(b, {
+        return null !== s ? s : n ? (0, i.jsx)(T, {
             transform: t
-        }) : (0, i.jsx)(T, {
+        }) : (0, i.jsx)(I, {
             subscriptionsRequired: l
         })
     },
-    b = e => {
+    T = e => {
         let {
             transform: t
         } = e;
@@ -230,7 +230,7 @@ let C = e => {
             children: _.intl.string(_.t.dNGM0v)
         })
     },
-    T = e => {
+    I = e => {
         let {
             subscriptionsRequired: t
         } = e;

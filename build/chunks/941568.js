@@ -24,7 +24,7 @@ var a = n(627968),
     E = n(576404),
     b = n(830684);
 
-function C(e, t) {
+function I(e, t) {
     return m.A.parse(e, !0, {
         allowHeading: !0,
         allowList: !0,
@@ -33,7 +33,7 @@ function C(e, t) {
     })
 }
 
-function I(e) {
+function C(e) {
     let {
         variant: t,
         message: n,
@@ -41,11 +41,11 @@ function I(e) {
         onCardClick: d
     } = e, [u, m] = i.useState(!1), h = "main" === t, f = i.useCallback(() => m(!0), []), p = i.useCallback(e => {
         if (!((0, s.vq)(e.target, HTMLAnchorElement) || (0, s.vq)(e.target, HTMLSpanElement) && (0, s.vq)(e.target.parentElement, HTMLAnchorElement))) return d(n.id)
-    }, [d, n.id]), _ = n.media?.width != null && n.media?.height != null ? n.media.width / n.media.height : 16 / 9, v = n.media?.proxyUrl ?? n.media?.url, I = (null != v ? (0, g.V)(v) : null) ?? v;
+    }, [d, n.id]), _ = n.media?.width != null && n.media?.height != null ? n.media.width / n.media.height : 16 / 9, v = n.media?.proxyUrl ?? n.media?.url, C = (null != v ? (0, g.V)(v) : null) ?? v;
     return (0, a.jsxs)(c.DUT, {
         className: h ? E.cG : E.IU,
         onClick: p,
-        children: [null != n.media && null != I && (0, a.jsx)("div", {
+        children: [null != n.media && null != C && (0, a.jsx)("div", {
             className: h ? E._v : E.eZ,
             children: (0, a.jsx)(o.y, {
                 readyState: u ? A.Rv1.READY : A.Rv1.LOADING,
@@ -58,7 +58,7 @@ function I(e) {
                     objectFit: "cover"
                 },
                 children: (0, a.jsx)("img", {
-                    src: I,
+                    src: C,
                     className: h ? E.fk : E.v,
                     alt: "",
                     draggable: !1,
@@ -71,10 +71,10 @@ function I(e) {
                 variant: "heading-md/bold",
                 color: "text-strong",
                 className: h ? E.KX : E._N,
-                children: C(n.title, l)
+                children: I(n.title, l)
             }), n.body.length > 0 && (0, a.jsx)("div", {
                 className: r()(E.h_, h ? E.My : E.Gd, b.PT),
-                children: C(n.body, l)
+                children: I(n.body, l)
             }), (0, a.jsxs)("div", {
                 className: E.ov,
                 children: [(0, a.jsx)(c.Text, {
@@ -131,20 +131,20 @@ function N(e) {
     if (null == m || 0 === o.length) return null;
     let A = 2 !== o.length,
         b = A ? o[0] : null,
-        C = A ? o.slice(1) : o;
+        I = A ? o.slice(1) : o;
     return (0, a.jsx)(v.A, {
         title: j.intl.string(j.t.B0BV3Y),
         onClickViewAll: x,
         children: (0, a.jsxs)("div", {
             className: E.f3,
-            children: [null != b && (0, a.jsx)(I, {
+            children: [null != b && (0, a.jsx)(C, {
                 variant: "main",
                 message: b,
                 channelId: m,
                 onCardClick: g
-            }), C.length > 0 && (0, a.jsx)(u.A, {
+            }), I.length > 0 && (0, a.jsx)(u.A, {
                 gap: 16,
-                children: C.map(e => (0, a.jsx)(I, {
+                children: I.map(e => (0, a.jsx)(C, {
                     variant: "small",
                     message: e,
                     channelId: m,

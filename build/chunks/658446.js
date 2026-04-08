@@ -1,7 +1,7 @@
 /** chunk id: 658446 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => T
+    A: () => I
 });
 var i = n(627968),
     s = n(64700),
@@ -68,7 +68,7 @@ let C = e => {
     })
 };
 
-function b(e, t) {
+function T(e, t) {
     return o()(e?.map(e => {
         let [t, n] = e;
         return t?.id
@@ -77,7 +77,7 @@ function b(e, t) {
         return t?.id
     }))
 }
-let T = e => {
+let I = e => {
     let t, {
             guild: l,
             guildId: a,
@@ -85,10 +85,10 @@ let T = e => {
             headerContent: d,
             failedItemsOnly: m = !1
         } = e,
-        [T, I] = (0, u.yK)([f.Ay], () => [f.Ay.getDiscoveryChecklist(a), f.Ay.isLoading()], [a]),
+        [I, b] = (0, u.yK)([f.Ay], () => [f.Ay.getDiscoveryChecklist(a), f.Ay.isLoading()], [a]),
         {
             nsfwProperties: v
-        } = T ?? {},
+        } = I ?? {},
         S = l?.features.has(j.GuildFeatures.PARTNERED),
         y = v?.channels_banned_keywords,
         R = (0, u.bG)([h.Ay], () => {
@@ -102,8 +102,8 @@ let T = e => {
                 let [n, i] = e;
                 return [t[n], i]
             })
-        }, [l.id, y], b);
-    if (I || null == T) return (0, i.jsxs)("div", {
+        }, [l.id, y], T);
+    if (b || null == I) return (0, i.jsxs)("div", {
         className: r()(E.kL, E.NQ, o),
         children: [(0, i.jsx)(x.Heading, {
             className: E.KQ,
@@ -123,32 +123,32 @@ let T = e => {
                 termsURL: j.X7G.TERMS,
                 guidelinesURL: _.A.getArticleURL(j.MVz.PUBLIC_GUILD_GUILDLINES)
             }),
-            checked: T?.safeEnvironment
+            checked: I?.safeEnvironment
         }, {
             name: N.intl.formatToPlainString(N.t.NYovA2, {
-                minMembers: T.minimumGuildSize
+                minMembers: I.minimumGuildSize
             }),
             failingName: N.intl.formatToPlainString(N.t.wvJwYs, {
-                minMembers: T.minimumGuildSize.toLocaleString()
+                minMembers: I.minimumGuildSize.toLocaleString()
             }),
             description: null,
             failingDescription: N.intl.format(O, {
-                minMembers: T.minimumGuildSize.toLocaleString()
+                minMembers: I.minimumGuildSize.toLocaleString()
             }),
-            checked: T?.size
+            checked: I?.size
         }, {
             name: N.intl.string(N.t.PtxOCK),
             failingName: N.intl.string(N.t.JPF5IL),
             description: N.intl.formatToPlainString(N.t.VT0bQJ, {
-                minimumGuildAge: Math.ceil(T.minimumGuildAge / 7)
+                minimumGuildAge: Math.ceil(I.minimumGuildAge / 7)
             }),
             failingDescription: N.intl.formatToPlainString(N.t.jYwM1Y, {
-                minimumGuildAge: Math.ceil(T.minimumGuildAge / 7),
-                passDate: c()(p.default.extractTimestamp(a)).add(T.minimumGuildAge, "days").format("LL")
+                minimumGuildAge: Math.ceil(I.minimumGuildAge / 7),
+                passDate: c()(p.default.extractTimestamp(a)).add(I.minimumGuildAge, "days").format("LL")
             }),
-            checked: T?.age
+            checked: I?.age
         }, {
-            name: T?.healthScorePending ? N.intl.string(N.t.G77ud0) : N.intl.string(N.t["95nW0H"]),
+            name: I?.healthScorePending ? N.intl.string(N.t.G77ud0) : N.intl.string(N.t["95nW0H"]),
             failingName: N.intl.string(N.t["+GHxPy"]),
             description: N.intl.string(N.t.rTWJwX),
             failingDescription: (0, i.jsxs)(i.Fragment, {
@@ -157,21 +157,21 @@ let T = e => {
                     className: E.t,
                     variant: "text-sm/normal",
                     children: N.intl.string(N.t.LjqS0G)
-                }), T?.engagementHealthy ? null : (0, i.jsx)(x.Text, {
+                }), I?.engagementHealthy ? null : (0, i.jsx)(x.Text, {
                     color: "text-feedback-critical",
                     variant: "text-sm/normal",
                     children: N.intl.string(N.t.X8Lt77)
-                }), T?.retentionHealthy ? null : (0, i.jsx)(x.Text, {
+                }), I?.retentionHealthy ? null : (0, i.jsx)(x.Text, {
                     color: "text-feedback-critical",
                     variant: "text-sm/normal",
                     children: N.intl.string(N.t.esdy89)
                 }), (() => {
-                    if (null == T || null == T.healthScore) return !1;
+                    if (null == I || null == I.healthScore) return !1;
                     let {
                         retentionHealthy: e,
                         engagementHealthy: t,
                         healthScore: n
-                    } = T, {
+                    } = I, {
                         avg_nonnew_participators: i,
                         avg_nonnew_communicators: s,
                         perc_ret_w1_intentful: l
@@ -188,13 +188,13 @@ let T = e => {
                         } = await n.e("63401").then(n.bind(n, 247920));
                         return t => (0, i.jsx)(e, {
                             ...t,
-                            guildChecklist: T
+                            guildChecklist: I
                         })
                     }),
                     children: N.intl.string(N.t.qyiTH8)
                 })]
             }),
-            pendingDescription: T?.size ? N.intl.format(N.t.ALtXIF, {
+            pendingDescription: I?.size ? N.intl.format(N.t.ALtXIF, {
                 checkBackHook: (e, t) => (0, i.jsx)("strong", {
                     className: E.eb,
                     children: e
@@ -202,8 +202,8 @@ let T = e => {
             }) : N.intl.formatToPlainString(N.t["6S/96D"], {
                 minMembers: 200
             }),
-            checked: T?.healthy,
-            pending: T?.healthScorePending
+            checked: I?.healthy,
+            pending: I?.healthScorePending
         }, {
             name: N.intl.string(N.t["AUUV/x"]),
             failingName: N.intl.string(N.t["jURyO+"]),
@@ -260,11 +260,11 @@ let T = e => {
             failingDescription: N.intl.format(N.t.kBXInb, {
                 onClick: () => A.A.setSection(j.BEX.SAFETY, j.nd0.SAFETY_PERMISSIONS)
             }),
-            checked: T?.protected
+            checked: I?.protected
         }];
     return (0, i.jsxs)("div", {
         className: r()(E.kL, o),
-        children: [(t = T?.sufficient ? n(617416) : n(848887), null == d ? null : (0, i.jsxs)("div", {
+        children: [(t = I?.sufficient ? n(617416) : n(848887), null == d ? null : (0, i.jsxs)("div", {
             className: E.wx,
             children: [(0, i.jsx)("img", {
                 alt: "",

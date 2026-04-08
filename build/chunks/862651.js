@@ -29,11 +29,11 @@ function _() {
         null == _ ? p(new Set(e)) : p(new Set([..._, ...e]))
     }
 
-    function b(e) {
+    function T(e) {
         let t = new Set(_);
         t.delete(e), p(t)
     }
-    let T = (0, a.gN)();
+    let I = (0, a.gN)();
     return (0, i.jsxs)(l.D0$, {
         label: h.intl.string(h.t["D0qeO+"]),
         description: h.intl.format(h.t.zuwely, {
@@ -42,19 +42,19 @@ function _() {
         helperText: h.intl.format(h.t.sEkgBk, {
             handleTransitionToManageEmoji: j
         }),
-        disabled: T,
+        disabled: I,
         children: [(0, i.jsx)(g.d, {
             tierEmojiIds: _,
             guildId: t,
             onRemoveEmoji: function(e) {
-                e.roles.filter(e => e !== A?.id).length > 0 ? b(e.id) : (0, l.mMO)(async () => {
+                e.roles.filter(e => e !== A?.id).length > 0 ? T(e.id) : (0, l.mMO)(async () => {
                     let {
                         default: t
                     } = await n.e("55631").then(n.bind(n, 185074));
                     return n => (0, i.jsx)(t, {
                         ...n,
                         onConfirmDelete: () => {
-                            b(e.id), n.onClose()
+                            T(e.id), n.onClose()
                         }
                     })
                 })
@@ -78,7 +78,7 @@ function _() {
                     })
                 })
             },
-            disabled: T,
+            disabled: I,
             children: h.intl.string(h.t.ouOOVy)
         })]
     })

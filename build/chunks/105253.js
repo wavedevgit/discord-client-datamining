@@ -82,18 +82,19 @@ function G(e) {
     } = e, {
         entityType: c,
         channelId: o
-    } = n, x = (0, r.bG)([u.A], () => u.A.getChannel(o), [o]), h = i.useRef(null);
+    } = n, x = (0, r.bG)([u.A], () => u.A.getChannel(o), [o]), h = i.useRef(null), m = i.useRef(void 0);
     i.useEffect(() => {
-        a && c === C.Ps.EXTERNAL && h.current?.focus()
+        let e = a && !m.current;
+        m.current = a, e && c === C.Ps.EXTERNAL && h.current?.focus()
     }, [a, c]);
-    let m = e => {
+    let g = e => {
             s({
                 channelId: e?.id ?? null
             })
         },
-        g = (0, E.k5)(n),
-        j = (0, E.dy)(c),
-        A = (0, v.Fd)(n);
+        j = (0, E.k5)(n),
+        A = (0, E.dy)(c),
+        N = (0, v.Fd)(n);
     return null == c || c === C.Ps.NONE ? null : c === C.Ps.EXTERNAL ? (0, l.jsx)(d.ksK, {
         label: y.intl.string(y.t.yx785A),
         required: !0,
@@ -106,15 +107,15 @@ function G(e) {
         },
         placeholder: y.intl.string(y.t.mkCMia),
         maxLength: C.vj,
-        value: g ?? "",
+        value: j ?? "",
         inputRef: h
-    }) : null == j ? null : (0, l.jsx)(I, {
+    }) : null == A ? null : (0, l.jsx)(I, {
         guildId: t,
-        channelType: j,
-        onSelectChannel: m,
+        channelType: A,
+        onSelectChannel: g,
         channel: x,
         entityType: c,
-        disabled: A
+        disabled: N
     })
 }
 

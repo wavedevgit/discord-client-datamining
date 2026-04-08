@@ -7,7 +7,7 @@ var i = n(627968);
 n(64700);
 var a = n(503698),
     l = n.n(a),
-    s = n(885151),
+    s = n(454908),
     r = n(788593),
     o = n(496527),
     d = n(272220);
@@ -17,7 +17,7 @@ function c(e) {
         applicationId: t
     } = e, {
         data: n
-    } = (0, s.k)(t), a = n?.getCoverURL();
+    } = (0, s.I)(t), a = n?.getCoverURL();
     return null != a && "" !== a ? (0, i.jsx)("div", {
         className: l()(o.PY, d.LH),
         children: (0, i.jsx)(r.R, {

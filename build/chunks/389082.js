@@ -54,13 +54,13 @@ function A(e) {
             orientation: "horizontal",
             isDisabled: l
         }),
-        b = (0, d.Gx)({
+        T = (0, d.Gx)({
             isSelected: f,
             label: x.intl.formatToPlainString(x.t.ZC69mL, {
                 colorHex: g.TpD
             })
         }),
-        T = (0, d.Gx)({
+        I = (0, d.Gx)({
             isSelected: !f,
             label: x.intl.formatToPlainString(x.t["3kiLZZ"], {
                 colorHex: (0, a.Hl)(t)
@@ -80,7 +80,7 @@ function A(e) {
                     n(g.TGz)
                 },
                 "aria-disabled": l,
-                ...b,
+                ...T,
                 children: [(0, i.jsx)("div", {
                     className: h.nf,
                     style: {
@@ -102,7 +102,7 @@ function A(e) {
             children: [(0, i.jsxs)(c.DUT, {
                 onClick: l ? void 0 : _,
                 "aria-disabled": l,
-                ...T,
+                ...I,
                 children: [(0, i.jsx)("div", {
                     className: r()(h.yB, {
                         [h.MU]: j === g.TGz

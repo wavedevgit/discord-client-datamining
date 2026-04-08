@@ -9,8 +9,8 @@ var a = n(627968),
     r = n(544420),
     o = n(56562),
     d = n(15285),
-    c = n(885151),
-    u = n(769015),
+    c = n(769015),
+    u = n(454908),
     m = n(760751);
 let h = [{
     label: "Wuthering Waves",
@@ -29,11 +29,11 @@ function x(e) {
         isDebugGame: n
     } = e, {
         data: i
-    } = (0, c.k)(t.id);
+    } = (0, u.I)(t.id);
     return (0, a.jsxs)(s.BJc, {
         direction: "horizontal",
         gap: 8,
-        children: [null != i && (0, a.jsx)(u.A, {
+        children: [null != i && (0, a.jsx)(c.A, {
             game: i
         }), (0, a.jsxs)(s.BJc, {
             justify: "center",

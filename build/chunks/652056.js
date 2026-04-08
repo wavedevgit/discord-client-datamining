@@ -25,8 +25,8 @@ function p(e) {
         editStateId: l,
         guildId: p,
         groupListingId: A
-    } = (0, m.O)(), f = (0, a.bG)([u.A], () => u.A.getSubscriptionListing(l)), j = f?.id, N = (0, g.A)(p), E = s.useMemo(() => null != N && null != f && (N[f.role_id] ?? 0), [N, f]), C = 0 === E, b = null == j, T = f?.archived ?? !1, {
-        error: I,
+    } = (0, m.O)(), f = (0, a.bG)([u.A], () => u.A.getSubscriptionListing(l)), j = f?.id, N = (0, g.A)(p), E = s.useMemo(() => null != N && null != f && (N[f.role_id] ?? 0), [N, f]), C = 0 === E, T = null == j, I = f?.archived ?? !1, {
+        error: b,
         deleteSubscriptionListing: v,
         submitting: S
     } = (0, c.et)(), {
@@ -40,13 +40,13 @@ function p(e) {
         title: h.intl.string(h.t["7Si8Ul"]),
         children: (0, i.jsxs)(o.BJc, {
             gap: 16,
-            children: [null !== I && (0, i.jsx)(o.po8, {
+            children: [null !== b && (0, i.jsx)(o.po8, {
                 messageType: o.YCn.ERROR,
                 children: h.intl.string(h.t["9k8H/9"])
             }), null !== y && (0, i.jsx)(o.po8, {
                 messageType: o.YCn.ERROR,
                 children: h.intl.string(h.t.up8gUr)
-            }), T ? (0, i.jsx)(o.D0$, {
+            }), I ? (0, i.jsx)(o.D0$, {
                 disabled: !G,
                 label: h.intl.string(h.t["2D14T0"]),
                 description: h.intl.string(h.t.Y4KjUN),
@@ -62,7 +62,7 @@ function p(e) {
                         variant: "critical-primary",
                         onClick: () => {
                             let e = async () => {
-                                (b || (r()(null != A, "group listing doesnt exist"), r()(null != j, "subscription listing doesnt exist"), await v(p, A, j))) && t?.()
+                                (T || (r()(null != A, "group listing doesnt exist"), r()(null != j, "subscription listing doesnt exist"), await v(p, A, j))) && t?.()
                             };
                             (0, o.mMO)(async () => {
                                 let {

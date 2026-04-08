@@ -1,7 +1,7 @@
 /** chunk id: 193477 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => I
+    A: () => b
 });
 var i = n(627968),
     s = n(64700),
@@ -24,24 +24,24 @@ var i = n(627968),
     N = n(87906),
     E = n(467069),
     C = n(544351),
-    b = n(361776);
+    T = n(361776);
 
-function T(e) {
+function I(e) {
     let {
         guild: t,
         saveOnClose: n
-    } = e, [d, c] = s.useState("new"), T = s.useMemo(() => [{
+    } = e, [d, c] = s.useState("new"), I = s.useMemo(() => [{
         value: "new",
         name: f.intl.string(f.t["4e5u3l"])
     }, {
         value: "existing",
         name: f.intl.string(f.t.cmkOsU)
-    }], []), I = (0, l.bG)([o.A], () => o.A.theme);
+    }], []), b = (0, l.bG)([o.A], () => o.A.theme);
     s.useEffect(() => () => {
         let e = m.A.getSettings();
         (0, u.W5)(t.id, e)
     }, [n, t.id]);
-    let v = s.useMemo(() => (0, r.qB)(I) ? "existing" === d ? E : b : "existing" === d ? N : C, [d, I]);
+    let v = s.useMemo(() => (0, r.qB)(b) ? "existing" === d ? E : T : "existing" === d ? N : C, [d, b]);
     return (0, i.jsxs)("div", {
         className: j.MY,
         children: [(0, i.jsxs)("div", {
@@ -143,7 +143,7 @@ function T(e) {
                 src: v,
                 alt: f.intl.string(f.t.ST4UOy)
             }), (0, i.jsx)(a.IzF, {
-                options: T,
+                options: I,
                 value: d,
                 onChange: e => c(e.value),
                 look: "pill"
@@ -152,14 +152,14 @@ function T(e) {
     })
 }
 
-function I(e) {
+function b(e) {
     let {
         saveOnClose: t
     } = e, n = (0, l.bG)([c.A, d.A], () => {
         let e = c.A.getGuildId();
         return d.A.getGuild(e)
     });
-    return null == n ? null : (0, i.jsx)(T, {
+    return null == n ? null : (0, i.jsx)(I, {
         guild: n,
         saveOnClose: t
     })

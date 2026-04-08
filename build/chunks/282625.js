@@ -24,9 +24,9 @@ var i = n(627968),
     N = n(287809),
     E = n(403362),
     C = n(427262),
-    b = n(555337),
-    T = n(276373),
-    I = n(523599),
+    T = n(555337),
+    I = n(276373),
+    b = n(523599),
     v = n(438407),
     S = n(258665),
     y = n(652215),
@@ -288,7 +288,7 @@ class M extends s.PureComponent {
             moderators: s
         } = this.props;
         if (t) return null;
-        let l = T.ACTION_FILTER_ITEMS(),
+        let l = I.ACTION_FILTER_ITEMS(),
             r = l.find(t => {
                 let {
                     value: n
@@ -494,23 +494,23 @@ class M extends s.PureComponent {
         this._lastExpandedRef = e
     }
 }
-let k = d.Ay.connectStores([I.A, b.A, f.A, h.A, j.A, N.default], () => {
-    let e = b.A.getGuildId(),
+let k = d.Ay.connectStores([b.A, T.A, f.A, h.A, j.A, N.default], () => {
+    let e = T.A.getGuildId(),
         t = f.A.getGuild(e),
-        n = I.A.logs;
+        n = b.A.logs;
     return {
         guildId: e,
         guild: t,
-        moderators: I.A.userIds.map(e => N.default.getUser(e)).filter(E.Vq),
-        isInitialLoading: I.A.isInitialLoading,
-        isLoading: I.A.isLoading,
-        isLoadingNextPage: I.A.isLoadingNextPage,
-        showLoadMore: I.A.groupedFetchCount > 2,
-        hasError: I.A.hasError,
-        hasOlderLogs: I.A.hasOlderLogs,
-        logs: null != n && null != t ? T.transformLogs(n, t) : [],
-        actionFilter: I.A.actionFilter,
-        userIdFilter: I.A.userIdFilter,
+        moderators: b.A.userIds.map(e => N.default.getUser(e)).filter(E.Vq),
+        isInitialLoading: b.A.isInitialLoading,
+        isLoading: b.A.isLoading,
+        isLoadingNextPage: b.A.isLoadingNextPage,
+        showLoadMore: b.A.groupedFetchCount > 2,
+        hasError: b.A.hasError,
+        hasOlderLogs: b.A.hasOlderLogs,
+        logs: null != n && null != t ? I.transformLogs(n, t) : [],
+        actionFilter: b.A.actionFilter,
+        userIdFilter: b.A.userIdFilter,
         theme: h.A.theme,
         hide: j.A.enabled
     }

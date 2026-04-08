@@ -11,13 +11,13 @@ n.d(t, {
     W5: () => y,
     WA: () => v,
     Wh: () => C,
-    XD: () => I,
+    XD: () => b,
     hL: () => _,
     kO: () => D,
-    px: () => b,
+    px: () => T,
     sd: () => N,
     sk: () => M,
-    z4: () => T
+    z4: () => I
 });
 var i = n(735438),
     s = n.n(i),
@@ -113,14 +113,14 @@ async function C(e, t, n) {
     }
 }
 
-function b(e) {
+function T(e) {
     r.h.dispatch({
         type: "GUILD_SETTINGS_ONBOARDING_ADD_RESOURCE_CHANNEL",
         resourceChannel: e
     })
 }
 
-function T(e, t) {
+function I(e, t) {
     r.h.dispatch({
         type: "GUILD_SETTINGS_ONBOARDING_UPDATE_RESOURCE_CHANNEL",
         channelId: e,
@@ -128,7 +128,7 @@ function T(e, t) {
     })
 }
 
-function I(e) {
+function b(e) {
     r.h.dispatch({
         type: "GUILD_SETTINGS_ONBOARDING_DELETE_RESOURCE_CHANNEL",
         resourceChannelId: e

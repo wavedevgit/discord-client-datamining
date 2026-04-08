@@ -24,9 +24,9 @@ var i = n(627968),
     N = n(894222),
     E = n(652215),
     C = n(985018),
-    b = n(468943);
+    T = n(468943);
 
-function T(e) {
+function I(e) {
     let {
         pendingState: t
     } = e, n = s.useRef(!1), l = s.useCallback(async e => {
@@ -56,7 +56,7 @@ function T(e) {
     }
 }
 
-function I(e) {
+function b(e) {
     let {
         guildId: t
     } = e, {
@@ -104,15 +104,15 @@ function v() {
             activeType: c,
             guild: e
         }), (0, i.jsx)("div", {
-            className: b.y
+            className: T.y
         }), !n && (0, i.jsxs)(i.Fragment, {
-            children: [(0, i.jsx)(I, {
+            children: [(0, i.jsx)(b, {
                 guildId: e.id
             }), (0, i.jsx)("div", {
-                className: b.y
+                className: T.y
             })]
         }), (0, i.jsx)("div", {
-            children: (0, i.jsx)(T, {
+            children: (0, i.jsx)(I, {
                 pendingState: t
             })
         })]

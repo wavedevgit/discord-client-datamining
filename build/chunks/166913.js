@@ -135,7 +135,8 @@ let F = e => {
                 }), el && (0, i.jsx)(O.l, {
                     className: V.ij,
                     size: "md",
-                    location: g.A.PREMIUM_WISHLIST_SETTINGS_HERO
+                    location: g.A.PREMIUM_WISHLIST_SETTINGS_HERO,
+                    forceDarkTheme: !0
                 })]
             }), (0, i.jsxs)("div", {
                 className: a()({

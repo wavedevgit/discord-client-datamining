@@ -59,9 +59,9 @@ function A(e) {
             (0, u.Bq)(t)
         }, []),
         {
-            handleDragStart: b,
-            handleDragReset: T,
-            handleDragComplete: I,
+            handleDragStart: T,
+            handleDragReset: I,
+            handleDragComplete: b,
             draggingId: v
         } = (0, o.A)(E, C);
     if (null == r) return null;
@@ -87,9 +87,9 @@ function A(e) {
                 children: E.map((e, t) => (0, i.jsx)(g.A, {
                     connection: e,
                     index: t,
-                    onDragStart: b,
-                    onDragReset: T,
-                    onDragComplete: I,
+                    onDragStart: T,
+                    onDragReset: I,
+                    onDragComplete: b,
                     draggingId: v
                 }, e.id))
             }), (0, i.jsxs)("button", {

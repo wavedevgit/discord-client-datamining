@@ -24,9 +24,9 @@ var i = n(627968),
     N = n(631103),
     E = n(927573),
     C = n(652215),
-    b = n(985018),
-    T = n(219115),
-    I = n(177424);
+    T = n(985018),
+    I = n(219115),
+    b = n(177424);
 
 function v(e) {
     let {
@@ -47,16 +47,16 @@ function v(e) {
         roles: m
     }), [r, t, m]), h = !a.aI(u, x);
     return (0, i.jsx)(d.m, {
-        text: h ? b.intl.string(b.t["IQ/6Sg"]) : null,
+        text: h ? T.intl.string(T.t["IQ/6Sg"]) : null,
         position: "top",
         children: (0, i.jsx)("div", {
-            className: T.FS,
+            className: I.FS,
             children: (0, i.jsx)(c.QWc, {
                 variant: "primary",
                 textVariant: "text-sm/semibold",
                 onClick: () => (0, p.Y_)(n.id),
                 disabled: a.aI(n.permissions, _.x3) || h || l,
-                text: b.intl.string(b.t["UYq7+O"])
+                text: T.intl.string(T.t["UYq7+O"])
             })
         })
     })
@@ -70,12 +70,12 @@ function S(e) {
         locked: l
     } = e;
     if (0 === s.length) return (0, i.jsxs)("div", {
-        className: T.pb,
+        className: I.pb,
         children: [(0, i.jsx)(A.A, {
-            className: T.wV
+            className: I.wV
         }), (0, i.jsx)(c.Text, {
             variant: "text-sm/normal",
-            children: b.intl.string(b.t.DEBGqA)
+            children: T.intl.string(T.t.DEBGqA)
         })]
     });
 
@@ -85,16 +85,16 @@ function S(e) {
                 ...n,
                 permissions: a.TF(n.permissions, e)
             }
-        }) && b.intl.string(b.t["K+D+GF"]) : b.intl.string(b.t.nOtPMM)
+        }) && T.intl.string(T.t["K+D+GF"]) : T.intl.string(T.t.nOtPMM)
     }
     return (0, i.jsxs)("div", {
-        className: T.eZ,
+        className: I.eZ,
         children: [(0, i.jsx)(v, {
             guild: t,
             role: n,
             locked: l
         }), s.map((e, t) => (0, i.jsx)(u.A, {
-            className: T.p2,
+            className: I.p2,
             spec: e,
             permissions: n.permissions,
             locked: l,
@@ -132,16 +132,16 @@ function y(e) {
             search_type: "Permissions"
         }), v.current = !0)
     }, [d]), (0, i.jsx)(c.GtU, {
-        className: T.XG,
+        className: I.XG,
         style: {
             scrollPaddingTop: g
         },
         onScroll: A,
         children: (0, i.jsxs)("div", {
-            className: I.Q,
+            className: b.Q,
             children: [(0, i.jsxs)("div", {
-                className: r()(I.wx, I.ln, {
-                    [I.l6]: !p
+                className: r()(b.wx, b.ln, {
+                    [b.l6]: !p
                 }),
                 ref: _,
                 children: [(0, i.jsx)(j.A, {
@@ -150,18 +150,18 @@ function y(e) {
                     selectedSection: E.T$.PERMISSIONS,
                     setSelectedSection: a
                 }), (0, i.jsx)("div", {
-                    className: T.U9,
+                    className: I.U9,
                     children: (0, i.jsx)(N.A, {
                         role: n
                     })
                 }), (0, i.jsx)("div", {
-                    className: T.MT,
+                    className: I.MT,
                     children: (0, i.jsx)(c.IWV, {
                         query: d,
                         onChange: u,
                         onClear: () => u(""),
-                        placeholder: b.intl.string(b.t.OLJAk3),
-                        "aria-label": b.intl.string(b.t.OLJAk3)
+                        placeholder: T.intl.string(T.t.OLJAk3),
+                        "aria-label": T.intl.string(T.t.OLJAk3)
                     })
                 })]
             }), (0, i.jsx)(S, {

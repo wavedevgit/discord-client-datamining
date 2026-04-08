@@ -1,7 +1,7 @@
 /** chunk id: 639714 params = (module,exports,require) **/
 n.d(t, {
     A: () => b,
-    o: () => C
+    o: () => I
 });
 var a = n(627968),
     i = n(64700),
@@ -30,7 +30,7 @@ function b(e) {
         trackAction: n,
         onInviteResolved: l,
         closeModal: h
-    } = e, [p, E] = i.useState(), b = (0, o.bG)([x.A], () => p?.guild?.id != null && x.A.isMember(p?.guild?.id)), C = i.useMemo(() => t.websites?.find(e => {
+    } = e, [p, E] = i.useState(), b = (0, o.bG)([x.A], () => p?.guild?.id != null && x.A.isMember(p?.guild?.id)), I = i.useMemo(() => t.websites?.find(e => {
         let {
             category: t
         } = e;
@@ -45,9 +45,9 @@ function b(e) {
                 !0 !== e.banned && (E(e.invite), null != e.invite && l?.(e.invite))
             }
         };
-        null != C && e(C.url)
-    }, [C, l, p]);
-    let I = i.useCallback(() => {
+        null != I && e(I.url)
+    }, [I, l, p]);
+    let C = i.useCallback(() => {
         null != p && (n(f.Ws.JoinOfficialServer), h(), d.h.dispatch({
             type: "INVITE_MODAL_OPEN",
             invite: p,
@@ -98,13 +98,13 @@ function b(e) {
         }), (0, a.jsx)(c.Button, {
             variant: "secondary",
             text: b ? v.intl.string(v.t.cEnaWx) : v.intl.string(v.t.XpeFYr),
-            onClick: I,
+            onClick: C,
             fullWidth: !0
         })]
     })
 }
 
-function C(e) {
+function I(e) {
     let {
         trackAction: t,
         closeModal: n
@@ -140,8 +140,8 @@ function C(e) {
             }),
             draggable: !1
         }),
-        C = j ? E.To : E.Kt,
-        I = j ? E.yj : E.FS;
+        I = j ? E.To : E.Kt,
+        C = j ? E.yj : E.FS;
     return (0, a.jsxs)("div", {
         className: E.uW,
         children: [(0, a.jsx)(c.Heading, {
@@ -159,7 +159,7 @@ function C(e) {
             }), (0, a.jsxs)("div", {
                 className: E.hQ,
                 children: [(0, a.jsxs)("div", {
-                    className: C,
+                    className: I,
                     children: [j ? b : (0, a.jsx)("div", {
                         className: E._C,
                         children: (0, a.jsx)("div", {
@@ -167,7 +167,7 @@ function C(e) {
                             children: b
                         })
                     }), (0, a.jsxs)("div", {
-                        className: I,
+                        className: C,
                         children: [(0, a.jsxs)("div", {
                             className: E.YS,
                             children: [(0, a.jsx)(u.A, {

@@ -24,9 +24,9 @@ var i = n(627968),
     N = n(319225),
     E = n(781289),
     C = n(652215),
-    b = n(705751),
-    T = n(269927),
-    I = n(985018),
+    T = n(705751),
+    I = n(269927),
+    b = n(985018),
     v = n(354994);
 
 function S(e) {
@@ -37,7 +37,7 @@ function S(e) {
     return (0, i.jsx)("div", {
         className: v.xF,
         children: (0, i.jsx)(r.$nd, {
-            text: I.intl.string(I.t["5k6FfR"]),
+            text: b.intl.string(b.t["5k6FfR"]),
             disabled: !n,
             onClick: t,
             fullWidth: !0
@@ -61,9 +61,9 @@ function y(e) {
         label: e.name,
         value: e.id
     })), [n]), p = async () => {
-        await u(t, o, b.S7.GUILD_ROLE_SUBSCRIPTIONS) && (x(t.id), (0, N.E)({
-            title: I.intl.string(I.t["AP/2qe"]),
-            body: I.intl.string(I.t.kHMgaK)
+        await u(t, o, T.S7.GUILD_ROLE_SUBSCRIPTIONS) && (x(t.id), (0, N.E)({
+            title: b.intl.string(b.t["AP/2qe"]),
+            body: b.intl.string(b.t.kHMgaK)
         }))
     };
     return (0, i.jsxs)(i.Fragment, {
@@ -72,14 +72,14 @@ function y(e) {
             children: [(0, i.jsx)(a.l6P, {
                 selectionMode: "single",
                 options: _,
-                placeholder: I.intl.string(I.t.QXf93A),
+                placeholder: b.intl.string(b.t.QXf93A),
                 value: o,
                 disabled: 0 === _.length || h || !l,
                 onSelectionChange: d,
-                label: I.intl.string(I.t.QXf93A),
+                label: b.intl.string(b.t.QXf93A),
                 hideLabel: !0
             }), (0, i.jsx)(r.$nd, {
-                text: I.intl.string(I.t["9HU3ZV"]),
+                text: b.intl.string(b.t["9HU3ZV"]),
                 onClick: p,
                 loading: m,
                 disabled: null == o || h || !l
@@ -99,7 +99,7 @@ let R = e => {
         loading: N
     } = (0, x.A)({
         refreshOnDepChange: f
-    }), b = s.useMemo(() => j.filter(e => e.payout_account_status !== T.y.BLOCKED && (0, g.y)(n?.id ?? C.dJq, e)), [j, n]), R = b.length > 0, O = s.useCallback(async () => {
+    }), T = s.useMemo(() => j.filter(e => e.payout_account_status !== I.y.BLOCKED && (0, g.y)(n?.id ?? C.dJq, e)), [j, n]), R = T.length > 0, O = s.useCallback(async () => {
         A.default.track(C.HAw.GUILD_ROLE_SUBSCRIPTION_TEAM_SETUP_CLICKED, {
             is_onboarding_v2: c,
             has_eligible_team: R,
@@ -118,24 +118,24 @@ let R = e => {
             className: v.b8,
             children: (0, i.jsx)(a.wx6, {
                 type: "warning",
-                children: I.intl.string(I.t.t56qWO)
+                children: b.intl.string(b.t.t56qWO)
             })
         }), (0, i.jsx)(a.D0$, {
-            label: I.intl.string(I.t["sYLCY/"]),
+            label: b.intl.string(b.t["sYLCY/"]),
             disabled: !r,
-            description: I.intl.format(I.t["5mfqpW"], {
+            description: b.intl.format(b.t["5mfqpW"], {
                 onCreateTeamHook: G
             }),
             children: R ? (0, i.jsx)(y, {
                 guild: t,
-                eligibleTeams: b,
+                eligibleTeams: T,
                 isGuildOwner: r
             }) : (0, i.jsx)(S, {
                 onCreateTeamClick: O,
                 isGuildOwner: r
             })
         }), (0, i.jsx)(a.D0$, {
-            label: I.intl.string(I.t["0n7R2X"]),
+            label: b.intl.string(b.t["0n7R2X"]),
             children: (0, i.jsx)(E.A, {
                 guildId: t.id,
                 allPeriods: []

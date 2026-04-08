@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
     A3: () => N,
-    Ay: () => T,
+    Ay: () => I,
     CU: () => A,
     HA: () => h,
     IE: () => j,
@@ -130,7 +130,7 @@ function f(e) {
         renderHeader: l,
         renderContent(e) {
             let t = n(e);
-            return (0, i.jsx)(b, {
+            return (0, i.jsx)(T, {
                 children: t
             })
         },
@@ -181,7 +181,7 @@ let N = e => {
             children: (0, d.$g)(t ?? 0, u.Yri.USD)
         })
     },
-    b = e => {
+    T = e => {
         let {
             children: t
         } = e;
@@ -196,7 +196,7 @@ let N = e => {
         })
     };
 
-function T(e) {
+function I(e) {
     let {
         className: t,
         headerClassName: n,
