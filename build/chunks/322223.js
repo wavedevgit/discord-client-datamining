@@ -28,10 +28,10 @@ function C(t) {
         shouldShowIncidentActions: S,
         incidentData: y,
         isUnderLockdown: x
-    } = (0, T.Li)(O), M = (0, o.fw)(g?.id ?? N.dJq), U = l.useCallback(() => null != g && (0, c.aZ)(g.id), [g]);
+    } = (0, T.Li)(O), M = (0, o.fw)(g?.id ?? N.dJq), P = l.useCallback(() => null != g && (0, c.aZ)(g.id), [g]);
     if (null == g || null == y || !S) return null;
-    let P = t => {
-            t && M && m !== R.VV.MEMBER_SAFETY && U() ? E.default.track(N.HAw.APP_NOTICE_PRIMARY_CTA_OPENED, {
+    let U = t => {
+            t && M && m !== R.VV.MEMBER_SAFETY && P() ? E.default.track(N.HAw.APP_NOTICE_PRIMARY_CTA_OPENED, {
                 notice_type: N.kqX.GUILD_RAID_NOTIFICATION,
                 guild_id: g.id
             }) : (0, s.mMO)(async () => {
@@ -63,7 +63,7 @@ function C(t) {
             noticeType: N.kqX.GUILD_RAID_NOTIFICATION
         }), j, D, (0, i.jsx)(s.zr9, {
             className: h.hP,
-            onClick: () => P(!1),
+            onClick: () => U(!1),
             children: (0, i.jsxs)("div", {
                 className: h.rx,
                 children: [(0, i.jsx)(s.XAi, {
@@ -91,7 +91,7 @@ function C(t) {
             noticeType: N.kqX.GUILD_RAID_NOTIFICATION
         }), j, f, !k && (0, i.jsx)(s.zr9, {
             className: h.hP,
-            onClick: () => P(!0),
+            onClick: () => U(!0),
             children: (0, i.jsx)("div", {
                 className: h.rx,
                 children: (0, i.jsx)("span", {

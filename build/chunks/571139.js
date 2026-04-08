@@ -34,7 +34,7 @@ let O = 21552 == n.j ? () => {
         y = null,
         x = null,
         M = null,
-        U = [C.lm, m.lm];
+        P = [C.lm, m.lm];
     switch (S) {
         case A.B5.SUBMITTED:
             y = h.intl.string(h.t["5iLvSx"]), x = h.intl.string(h.t.mqtdmQ), M = () => {
@@ -58,7 +58,7 @@ let O = 21552 == n.j ? () => {
                         ...n
                     })
                 })
-            }, U.push(C.z3);
+            }, P.push(C.z3);
             break;
         default:
             y = h.intl.string(h.t.G5YKXP), x = h.intl.string(h.t["r8/DT+"]), M = () => {
@@ -66,7 +66,7 @@ let O = 21552 == n.j ? () => {
             }
     }
     return (0, i.jsxs)("div", {
-        className: r()(...U),
+        className: r()(...P),
         children: [(0, i.jsx)(c.Text, {
             className: C.wx,
             variant: "text-sm/normal",

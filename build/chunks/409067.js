@@ -17,7 +17,7 @@ function m(e, t) {
 }
 
 function h() {
-    let e = (0, d.bG)([c.A], () => c.A.getClips()),
+    let e = (0, d.yK)([c.A], () => c.A.getClips()),
         t = (0, d.bG)([c.A], () => c.A.getPendingClips()),
         l = (0, u.P)();
     return n.useMemo(() => {

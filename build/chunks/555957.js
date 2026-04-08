@@ -70,7 +70,7 @@ let G = function(e) {
         G(!1)
     }, []), ee = a.useCallback(e => {
         G(!0), z.current?.pause();
-        let a = T && L.size > 0 ? I.A.getClips().filter(e => L.has(e.id)) : [t];
+        let a = T && L.size > 0 ? Array.from(L).map(e => I.A.getClipById(e)).filter(E.Vq) : [t];
         (0, p.L3)(e, async () => {
             let {
                 default: e

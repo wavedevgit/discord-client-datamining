@@ -30,8 +30,8 @@ var i = n(627968),
     x = n(746080);
 n(500208);
 var M = n(2242),
-    U = n(985018),
-    P = n(192069);
+    P = n(985018),
+    U = n(192069);
 
 function j(t) {
     let {
@@ -42,8 +42,8 @@ function j(t) {
     } = t;
     return (0, i.jsx)(d.$n, {
         buttonRef: r,
-        className: s()(P.x6, e),
-        innerClassName: P.hZ,
+        className: s()(U.x6, e),
+        innerClassName: U.hZ,
         look: d.$n.Looks.OUTLINED,
         color: d.$n.Colors.WHITE,
         size: d.$n.Sizes.NONE,
@@ -58,7 +58,7 @@ function D(t) {
     } = t;
     return (0, i.jsx)(j, {
         onClick: e,
-        children: U.intl.string(U.t.R9GHya)
+        children: P.intl.string(P.t.R9GHya)
     })
 }
 
@@ -81,16 +81,16 @@ function f() {
     let f = function(t) {
             switch (t) {
                 case y.BEX.INTEGRATIONS:
-                    return U.intl.string(U.t.k7LGdh);
+                    return P.intl.string(P.t.k7LGdh);
                 case y.BEX.ROLE_SUBSCRIPTIONS:
-                    return U.intl.string(U.t.bRqiqa);
+                    return P.intl.string(P.t.bRqiqa);
                 case y.BEX.ONBOARDING:
-                    return U.intl.string(U.t.qZpU3S);
+                    return P.intl.string(P.t.qZpU3S);
                 default:
-                    return U.intl.string(U.t.MTIXhi)
+                    return P.intl.string(P.t.MTIXhi)
             }
         }(s),
-        k = s === y.BEX.ROLE_SUBSCRIPTIONS ? U.intl.string(U.t.hZUCzd) : U.intl.string(U.t["/djIh7"]),
+        k = s === y.BEX.ROLE_SUBSCRIPTIONS ? P.intl.string(P.t.hZUCzd) : P.intl.string(P.t["/djIh7"]),
         L = n === x.VV.GUILD_ONBOARDING,
         G = t => {
             let {
@@ -100,31 +100,31 @@ function f() {
         };
     return (0, i.jsxs)(u.$Td, {
         color: u.Hv$.BRAND,
-        className: P.lm,
+        className: U.lm,
         children: [(0, i.jsxs)(j, {
             onClick: () => G({
                 backToSettings: !0
             }),
-            className: P.Gv,
+            className: U.Gv,
             children: [(0, i.jsx)(h.A, {
                 width: 16,
                 height: 16,
                 direction: h.A.Directions.LEFT,
-                className: P.lJ
+                className: U.lJ
             }), f]
         }), L && d ? (0, i.jsx)("div", {
-            className: P.XI,
+            className: U.XI,
             children: (0, i.jsx)("div", {
-                className: P.ut,
-                children: U.intl.string(U.t.PxbiAf)
+                className: U.ut,
+                children: P.intl.string(P.t.PxbiAf)
             })
         }) : (0, i.jsxs)("div", {
-            className: P.XI,
+            className: U.XI,
             children: [(0, i.jsx)("div", {
-                className: P.ut,
-                children: d ? U.intl.formatToPlainString(U.t["0PHahI"], {
+                className: U.ut,
+                children: d ? P.intl.formatToPlainString(P.t["0PHahI"], {
                     numRoles: Object.keys(r).length
-                }) : U.intl.formatToPlainString(U.t.vMlK8t, {
+                }) : P.intl.formatToPlainString(P.t.vMlK8t, {
                     numRoles: Object.keys(r).length
                 })
             }), (0, i.jsx)(u.YNO, {
@@ -144,20 +144,20 @@ function f() {
                             width: 16,
                             height: 16,
                             direction: C.A.Directions.DOWN,
-                            className: P.k5
+                            className: U.k5
                         })]
                     })
                 }
             }), d && (0, i.jsx)(c.m, {
                 asContainer: !0,
-                text: U.intl.string(U.t.mW4DUE),
+                text: P.intl.string(P.t.mW4DUE),
                 children: (0, i.jsx)(u.EpV, {
                     size: "xs",
                     color: o.A.unsafe_rawColors.YELLOW_300.css
                 })
             }), m && (0, i.jsx)(c.m, {
                 asContainer: !0,
-                text: U.intl.formatToPlainString(U.t.eummvd, {
+                text: P.intl.formatToPlainString(P.t.eummvd, {
                     maxTiers: M.f7,
                     maxProducts: 50
                 }),
@@ -179,9 +179,9 @@ function k(t) {
         guildId: e
     } = t;
     return (0, a.bG)([g.A], () => g.A.isViewingRoles(e)) ? (0, i.jsx)("div", {
-        className: s()(P.xd, {
-            [P.KF]: (0, m.isWindows)(),
-            [P.Xz]: (0, m.isMac)()
+        className: s()(U.xd, {
+            [U.KF]: (0, m.isWindows)(),
+            [U.Xz]: (0, m.isMac)()
         }),
         children: (0, i.jsx)(f, {})
     }) : null

@@ -1,37 +1,38 @@
 /** chunk id: 237607 params = (module,exports,require) **/
 n.d(t, {
-    A: () => u
+    A: () => h
 });
 var i = n(627968);
 n(64700);
 var l = n(503698),
     s = n.n(l),
     a = n(311907),
-    r = n(274372),
-    o = n(372684),
-    c = n(226421),
-    d = n(614809);
+    r = n(403362),
+    o = n(274372),
+    c = n(372684),
+    d = n(226421),
+    u = n(614809);
 
-function u() {
-    let e = (0, a.yK)([r.A], () => {
-        let e = r.A.getLastClipsSession()?.newClipIds;
-        return null == e ? [] : r.A.getClips().slice(0, 4).filter(t => e.includes(t.id))
+function h() {
+    let e = (0, a.yK)([o.A], () => {
+        let e = o.A.getLastClipsSession()?.newClipIds;
+        return null == e ? [] : o.A.getClipIds().slice(0, 4).filter(t => e.includes(t)).map(e => o.A.getClipById(e)).filter(r.Vq)
     });
     return (0, i.jsx)("div", {
-        className: s()(d.vH, {
-            [d.gb]: 1 === e.length,
-            [d.$d]: 2 === e.length,
-            [d.gS]: 3 === e.length,
-            [d.hA]: e.length >= 4
+        className: s()(u.vH, {
+            [u.gb]: 1 === e.length,
+            [u.$d]: 2 === e.length,
+            [u.gS]: 3 === e.length,
+            [u.hA]: e.length >= 4
         }),
         children: Array.from({
             ...e,
             length: 4
-        }).map((e, t) => null != e ? e.type === o.nQ.VOICE_CLIP ? (0, i.jsx)(c.A, {
-            className: d.xn
+        }).map((e, t) => null != e ? e.type === c.nQ.VOICE_CLIP ? (0, i.jsx)(d.A, {
+            className: u.xn
         }, e.id) : (0, i.jsx)("img", {
             alt: "",
-            className: d.xn,
+            className: u.xn,
             src: e.thumbnail
         }, e.id) : (0, i.jsx)("div", {}, `placeholder-${t}`)).reverse()
     })

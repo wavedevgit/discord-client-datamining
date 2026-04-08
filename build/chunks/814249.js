@@ -50,7 +50,7 @@ function A(t) {
         blockId: h,
         pageIndex: m,
         responses: R
-    }), [n, h, m, R]), U = l.useCallback(() => {
+    }), [n, h, m, R]), P = l.useCallback(() => {
         if (null == n || null == h) return;
         let t = (0, u.vt)(n, {
             blockId: h,
@@ -60,9 +60,9 @@ function A(t) {
         N(e, M), t.isComplete && o.Ay.submitSurveyResponse(e, R), C(t.blockId), O(t.pageIndex), S(t.isComplete)
     }, [n, h, m, R, e, M, N]);
     l.useEffect(() => {
-        0 === M.length && U()
-    }, [M, U]);
-    let P = l.useMemo(() => {
+        0 === M.length && P()
+    }, [M, P]);
+    let U = l.useMemo(() => {
         if (g) return !1;
         for (let t of M) {
             let e = n.Questions[t];
@@ -98,8 +98,8 @@ function A(t) {
         actions: [{
             variant: "primary",
             text: E.intl.string(E.t.PDTjLN),
-            onClick: U,
-            disabled: !P
+            onClick: P,
+            disabled: !U
         }],
         children: (0, i.jsx)("div", {
             style: {

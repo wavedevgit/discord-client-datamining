@@ -29,8 +29,8 @@ var o = n(299855),
     y = n(573648),
     x = n(793574),
     M = n(688810),
-    U = n(587895),
-    P = n(315982),
+    P = n(587895),
+    U = n(315982),
     j = n(235986),
     D = n(420216),
     f = n(984870),
@@ -83,7 +83,7 @@ var o = n(299855),
     ty = n(731854),
     tx = n(985018),
     tM = n(571655);
-let tU = t => {
+let tP = t => {
         let {
             error: e,
             allowClick: n = !1
@@ -104,7 +104,7 @@ let tU = t => {
             children: s
         }) : s
     },
-    tP = t => {
+    tU = t => {
         let {
             noticeType: e
         } = t;
@@ -115,7 +115,7 @@ let tU = t => {
                 onClick: () => {
                     tf()
                 }
-            }), tx.intl.string(tx.t.o3zuYz), (0, i.jsx)(tU, {
+            }), tx.intl.string(tx.t.o3zuYz), (0, i.jsx)(tP, {
                 error: G.iy.NO_INPUT_DEVICES
             }), (0, i.jsx)(_.eCN, {
                 href: th.A.getArticleURL(tm.MVz.NO_INPUT_DETECTED),
@@ -167,7 +167,7 @@ function tD(t) {
             onClick: () => {
                 tf(), (0, td.h)()
             }
-        }), e, (0, i.jsx)(tU, {
+        }), e, (0, i.jsx)(tP, {
             allowClick: c,
             error: G.iy.NO_AUDIO_INPUT_DETECTED
         }), n]
@@ -273,12 +273,12 @@ let tk = 21552 == n.j ? l.memo(function() {
             });
         case tm.kqX.WIN_COMPAT_MODE_MESSAGE:
             let {
-                dismissUntil: tU
+                dismissUntil: tP
             } = r.metadata;
             return (0, i.jsxs)(_.$Td, {
                 color: _.Hv$.WARNING,
                 children: [(0, i.jsx)(_.PMB, {
-                    onClick: () => tf(tU),
+                    onClick: () => tf(tP),
                     noticeType: r.type
                 }), tx.intl.string(tx.t["9DJgOg"])]
             });
@@ -406,7 +406,7 @@ let tk = 21552 == n.j ? l.memo(function() {
                 color: _.Hv$.DEFAULT,
                 children: [tx.intl.string(tx.t["f+Zaol"]), (0, i.jsx)(_.Z_L, {
                     noticeType: r.type,
-                    onClick: () => c && null != e ? (0, $.Ze)(e) : P.R(),
+                    onClick: () => c && null != e ? (0, $.Ze)(e) : U.R(),
                     children: tx.intl.string(tx.t.fiNVin)
                 })]
             });
@@ -422,7 +422,7 @@ let tk = 21552 == n.j ? l.memo(function() {
                                 email: t?.email
                             }),
                             cancelText: tx.intl.string(tx.t.Vm8akB),
-                            onCancel: P.R
+                            onCancel: U.R
                         })
                     },
                     children: tx.intl.string(tx.t.WnX4J2)
@@ -446,7 +446,7 @@ let tk = 21552 == n.j ? l.memo(function() {
                 noticeType: r.type
             });
         case tm.kqX.NO_INPUT_DEVICES_DETECTED:
-            return (0, i.jsx)(tP, {
+            return (0, i.jsx)(tU, {
                 noticeType: r.type
             });
         case tm.kqX.HARDWARE_MUTE:
@@ -502,7 +502,7 @@ let tk = 21552 == n.j ? l.memo(function() {
             if (null == r.metadata) return null;
             let {
                 skuId: tG, applicationId: tv
-            } = r.metadata, tB = tI.A.get(tG), tb = U.A.getApplication(tv);
+            } = r.metadata, tB = tI.A.get(tG), tb = P.A.getApplication(tv);
             if (null == tB || null == tb) return null;
             let tw = {
                 page: tm.liQ.IN_APP
@@ -544,7 +544,7 @@ let tk = 21552 == n.j ? l.memo(function() {
             let {
                 skuId: t,
                 applicationId: e
-            } = r.metadata, n = tI.A.get(t), l = U.A.getApplication(e);
+            } = r.metadata, n = tI.A.get(t), l = P.A.getApplication(e);
             if (null == n || null == l) return null;
             return (0, i.jsxs)(_.$Td, {
                 color: _.Hv$.PREMIUM_TIER_1,

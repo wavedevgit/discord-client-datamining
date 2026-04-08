@@ -21,7 +21,7 @@ function d(t) {
         C(!0);
         try {
             i?.(), await Promise.all(p.map(async t => {
-                await s.oH(t.filepath), e.default.track(o.HAw.CLIP_DELETED)
+                await s.oH(t.filepath, t.id), e.default.track(o.HAw.CLIP_DELETED)
             })), d()
         } finally {
             C(!1)
