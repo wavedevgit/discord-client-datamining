@@ -1,7 +1,7 @@
 /** chunk id: 606423 params = (module,exports,require) **/
 i.d(e, {
-    Z: () => j
-}), i(321073);
+    Z: () => A
+}), i(30146), i(321073);
 var n = i(627968),
     r = i(64700),
     l = i(284009),
@@ -9,48 +9,72 @@ var n = i(627968),
     s = i(158954),
     u = i(311907),
     o = i(397927),
-    c = i(576622),
-    d = i(287809),
-    m = i(927578),
-    f = i(477421),
-    g = i(96304),
-    p = i(816252),
-    x = i(473702),
-    h = i(916974),
-    P = i(88001),
-    C = i(518582),
-    y = i(985018),
-    v = i(221177);
-let E = t => {
+    c = i(793574),
+    d = i(576622),
+    m = i(909536),
+    f = i(287809),
+    p = i(927578),
+    g = i(477421),
+    x = i(96304),
+    h = i(400669),
+    C = i(816252),
+    P = i(473702),
+    y = i(916974),
+    v = i(88001),
+    j = i(518582),
+    E = i(985018),
+    _ = i(221177);
+let D = t => {
         let {
             churnUserDiscountOffer: e
         } = t;
         return null == e ? null : (0, n.jsx)("div", {
-            className: v.i,
-            children: (0, n.jsx)(p._, {
+            className: _.i1,
+            children: (0, n.jsx)(C._, {
                 userDiscountOffer: e
             })
         })
     },
-    j = () => {
+    S = ["primary", "critical-primary", "expressive"],
+    N = t => {
+        let {
+            actions: e
+        } = t, i = e.findLastIndex(t => null != t.variant && S.includes(t.variant));
+        return (0, n.jsxs)("div", {
+            className: _.NC,
+            children: [(0, n.jsx)(h.l, {
+                size: "sm",
+                location: c.A.PREMIUM_WISHLIST_CHURN_MODAL
+            }), (0, n.jsx)(s.e2v, {
+                fullWidth: !0,
+                className: _.uL,
+                children: e.map((t, e) => (0, n.jsx)(s.$nd, {
+                    autoFocus: i === e,
+                    ...t
+                }, e))
+            })]
+        })
+    },
+    A = () => {
         let {
             transitionState: t,
             onClose: e,
             premiumType: i,
             setStep: l,
-            churnUserDiscountOffer: p,
-            isFetchingChurnDiscountOffer: v,
-            planId: j
-        } = (0, h.X)(), D = (0, u.bG)([d.default], () => {
-            let t = d.default.getCurrentUser();
+            churnUserDiscountOffer: c,
+            isFetchingChurnDiscountOffer: h,
+            planId: C
+        } = (0, y.X)(), _ = (0, u.bG)([f.default], () => {
+            let t = f.default.getCurrentUser();
             return a()(null != t, "ProfileItem: currentUser cannot be undefined"), t
         });
         r.useEffect(() => {
-            (0, c.A)(D.id, D.getAvatarURL(null, 80))
-        }, [D]);
-        let _ = (0, f.A)(),
-            S = "US" === _.ipCountryCode && "CA" === _.ipSubdivisionCode;
-        if (v) return (0, n.jsx)(s.Modal, {
+            (0, d.A)(_.id, _.getAvatarURL(null, 80))
+        }, [_]);
+        let S = (0, m.St)("churn-modal"),
+            A = (0, g.A)(),
+            M = "US" === A.ipCountryCode && "CA" === A.ipSubdivisionCode;
+        if (h) return (0, n.jsx)(s.Modal, {
             transitionState: t,
             title: "",
             actions: [],
@@ -58,36 +82,39 @@ let E = t => {
                 e()
             }
         });
-        let A = (0, m.Zb)(j),
-            N = A ? y.intl.string(C.default.z2vO3h) : y.intl.string(y.t.PWq8TL),
-            T = A ? y.intl.formatToPlainString(C.default.stVlc6, {
-                cooldownMonths: P.wl
-            }) : y.intl.string(y.t.SOC4ML),
-            M = [];
-        return null != p ? M.push({
-            text: y.intl.string(y.t.zrCzVB),
-            onClick: () => l(x.g.CONFIRM_DISCOUNT),
+        let T = (0, p.Zb)(C),
+            b = T ? E.intl.string(j.default.z2vO3h) : E.intl.string(E.t.PWq8TL),
+            I = T ? E.intl.formatToPlainString(j.default.stVlc6, {
+                cooldownMonths: v.wl
+            }) : E.intl.string(E.t.SOC4ML),
+            L = [];
+        return null != c ? L.push({
+            text: E.intl.string(E.t.zrCzVB),
+            onClick: () => l(P.g.CONFIRM_DISCOUNT),
             variant: "secondary",
             icon: o.tvc
-        }) : M.push({
-            text: y.intl.string(y.t.rzVN6j),
+        }) : L.push({
+            text: E.intl.string(S ? E.t["2+luBl"] : E.t.rzVN6j),
             onClick: () => e(),
             variant: "secondary"
-        }), M.push({
-            text: S ? y.intl.string(y.t.PfnxqD) : y.intl.string(y.t["3PatSz"]),
-            onClick: () => l(x.g.CONFIRM),
+        }), L.push({
+            text: M ? E.intl.string(E.t.PfnxqD) : E.intl.string(E.t["3PatSz"]),
+            onClick: () => l(P.g.CONFIRM),
             variant: "primary"
         }), (0, n.jsx)(s.Modal, {
             transitionState: t,
-            title: N,
-            subtitle: T,
-            actions: M,
-            preview: null !== p && (0, n.jsx)(E, {
-                churnUserDiscountOffer: p
+            title: b,
+            subtitle: I,
+            actions: S ? [] : L,
+            actionBarInput: S ? (0, n.jsx)(N, {
+                actions: L
+            }) : void 0,
+            preview: null !== c && (0, n.jsx)(D, {
+                churnUserDiscountOffer: c
             }),
             onClose: async () => e(),
-            children: (0, n.jsx)(g.l, {
-                currentUser: D,
+            children: (0, n.jsx)(x.l, {
+                currentUser: _,
                 premiumType: i,
                 onClose: e,
                 isDowngrade: !1,

@@ -1,6 +1,6 @@
 /** chunk id: 412314 params = (module,exports,require) **/
 i.d(e, {
-    M: () => P
+    M: () => C
 });
 var n = i(627968),
     r = i(64700),
@@ -13,86 +13,86 @@ var n = i(627968),
     d = i(916974),
     m = i(788868),
     f = i(652215),
-    g = i(985018),
-    p = i(331314),
+    p = i(985018),
+    g = i(331314),
     x = i(303930),
     h = i(398932);
-let P = () => {
+let C = () => {
     let {
         transitionState: t,
         onClose: e,
         premiumType: i,
-        premiumSubscription: P,
-        setStep: C,
+        premiumSubscription: C,
+        setStep: P,
         applyOffer: y,
         churnUserDiscountOffer: v,
-        discountedPrice: E,
-        fullPrice: j
-    } = (0, d.X)(), [D, _] = (0, r.useState)(!1), [S, A] = (0, r.useState)(!1), N = async () => {
-        if (null === v) return void A(!0);
-        _(!0), A(!1);
+        discountedPrice: j,
+        fullPrice: E
+    } = (0, d.X)(), [_, D] = (0, r.useState)(!1), [S, N] = (0, r.useState)(!1), A = async () => {
+        if (null === v) return void N(!0);
+        D(!0), N(!1);
         try {
-            await y(), C(c.g.DISCOUNT_APPLIED)
+            await y(), P(c.g.DISCOUNT_APPLIED)
         } catch (t) {
-            A(!0), _(!1)
+            N(!0), D(!1)
         }
     };
-    if (null === v || null === E) return (0, n.jsx)("div", {
-        className: p.dc,
+    if (null === v || null === j) return (0, n.jsx)("div", {
+        className: g.dc,
         children: (0, n.jsx)(a.y$y, {})
     });
-    let T = i === m.PremiumTypes.TIER_2,
-        M = [{
-            text: g.intl.string(g.t.zl7LZp),
+    let M = i === m.PremiumTypes.TIER_2,
+        T = [{
+            text: p.intl.string(p.t.zl7LZp),
             onClick: () => e(),
             variant: "secondary",
-            disabled: D
+            disabled: _
         }, {
-            text: g.intl.string(g.t.CKSuZJ),
-            onClick: () => N(),
+            text: p.intl.string(p.t.CKSuZJ),
+            onClick: () => A(),
             variant: "primary",
             icon: a.tvc,
-            loading: D,
-            disabled: D
+            loading: _,
+            disabled: _
         }];
     return (0, n.jsxs)(l.ExpressiveModal, {
         graphic: {
             type: "image",
-            src: T ? h.A : x
+            src: M ? h.A : x
         },
-        gradientColor: T ? "nitro-pink" : "nitro-green",
+        gradientColor: M ? "nitro-pink" : "nitro-green",
         transitionState: t,
-        title: P.status === f.Dmq.CANCELED ? g.intl.string(g.t["2Otzti"]) : `${g.intl.format(g.t.q9Vxu4,{percent:v.discount.amount})}`,
-        actions: M,
+        title: C.status === f.Dmq.CANCELED ? p.intl.string(p.t["2Otzti"]) : `${p.intl.format(p.t.q9Vxu4,{percent:v.discount.amount})}`,
+        actions: T,
         onClose: async () => e(),
         children: [(0, n.jsx)("div", {
-            className: p.TA,
+            className: g.TA,
             children: (0, n.jsx)(o._, {
                 userDiscountOffer: v,
                 offerState: o.b.CONFIRMING
             })
         }), (0, n.jsx)("div", {
-            className: p.V6,
+            className: g.V6,
             children: (0, n.jsx)(a.Text, {
                 variant: "text-xs/medium",
                 color: "text-subtle",
-                children: P.status === f.Dmq.CANCELED ? g.intl.format(g.t.mY3ysK, {
-                    discountedPrice: E,
+                children: C.status === f.Dmq.CANCELED ? p.intl.format(p.t.mY3ysK, {
+                    discountedPrice: j,
                     billingPeriod: (0, u.Ke)(v.discount.user_usage_limit_interval),
                     numMonths: v.discount.user_usage_limit,
-                    fullPrice: j,
+                    fullPrice: E,
                     paidURL: s.A.getArticleURL(f.MVz.PAID_TERMS)
-                }) : g.intl.format(g.t.hrGTjG, {
-                    discountedPrice: E,
+                }) : p.intl.format(p.t.hrGTjG, {
+                    discountedPrice: j,
                     billingPeriod: (0, u.Ke)(v.discount.user_usage_limit_interval),
                     numMonths: v.discount.user_usage_limit,
-                    fullPrice: j,
+                    fullPrice: E,
                     helpdeskArticle: s.A.getArticleURL(f.MVz.PAID_TERMS)
                 })
             })
         }), S ? (0, n.jsx)(l.wx6, {
             type: "critical",
-            children: g.intl.string(g.t["5mlOCW"])
+            children: p.intl.string(p.t["5mlOCW"])
         }) : null]
     })
 }

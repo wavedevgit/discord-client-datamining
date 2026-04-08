@@ -1,6 +1,6 @@
 /** chunk id: 584569 params = (module,exports,require) **/
 n.d(e, {
-    A: () => I
+    A: () => N
 });
 var i = n(311907),
     l = n(205693),
@@ -17,8 +17,8 @@ var i = n(311907),
     p = n(652215),
     g = n(806931);
 let f = new s.A,
-    E = new s.A,
-    T = new Set;
+    T = new s.A,
+    E = new Set;
 
 function C(t, e, n) {
     let i = new o.A({
@@ -43,13 +43,13 @@ function C(t, e, n) {
         localVideoDisabled: !1,
         isPoppedOut: !1
     };
-    E.set(t.id, r)
+    T.set(t.id, r)
 }
 
 function S(t) {
     let e = f.delete(t),
-        n = E.delete(t),
-        i = T.delete(t);
+        n = T.delete(t),
+        i = E.delete(t);
     return e || n || i
 }
 
@@ -58,17 +58,17 @@ function _() {
     if (null == t) return !1;
     let e = d.A.getChannel(t)?.getGuildId(),
         n = !1;
-    return T.forEach(i => {
-        if (null != A.A.getVoiceStateForChannel(t, i)) return void T.delete(i);
+    return E.forEach(i => {
+        if (null != A.A.getVoiceStateForChannel(t, i)) return void E.delete(i);
         let l = h.default.getUser(i);
-        null != l && (n = !0, T.delete(i), C(l, e, t))
+        null != l && (n = !0, E.delete(i), C(l, e, t))
     }), n
 }
 
-function v() {
-    f.clear(), E.clear(), T.clear()
+function y() {
+    f.clear(), T.clear(), E.clear()
 }
-class y extends i.Ay.Store {
+class I extends i.Ay.Store {
     static displayName = "RTCConnectionDesyncStore";
     initialize() {
         this.waitFor(A.A, h.default, d.A, c.A), this.syncWith([h.default], _)
@@ -83,21 +83,21 @@ class y extends i.Ay.Store {
         return f.values()
     }
     getDesyncedParticipants() {
-        return E.values()
+        return T.values()
     }
 }
-let I = new y(r.h, {
+let N = new I(r.h, {
     CONNECTION_OPEN: function() {
-        v()
+        y()
     },
-    VOICE_CHANNEL_SELECT: v,
+    VOICE_CHANNEL_SELECT: y,
     RTC_CONNECTION_STATE: function(t) {
         let {
             state: e,
             context: n
         } = t;
         if (n !== l.x.DEFAULT || e !== p.S7L.DISCONNECTED) return !1;
-        v()
+        y()
     },
     VOICE_STATE_UPDATES: function(t) {
         let {
@@ -121,7 +121,7 @@ let I = new y(r.h, {
         return r === l.x.DEFAULT && e.reduce((t, e) => {
             if (null != A.A.getVoiceStateForChannel(i, e)) return t;
             let l = h.default.getUser(e);
-            return null == l ? (T.add(e), t) : (C(l, n, i), !0)
+            return null == l ? (E.add(e), t) : (C(l, n, i), !0)
         }, !1)
     },
     RTC_CONNECTION_CLIENT_DISCONNECT: function(t) {

@@ -18,15 +18,15 @@ var l = n(503698),
     p = n(267102),
     g = n(159426),
     f = n(25528),
-    E = n(655724),
-    T = n(82149),
+    T = n(655724),
+    E = n(82149),
     C = n(657331),
     S = n(734057),
     _ = n(287809),
-    v = n(977997),
-    y = n(874546),
-    I = n(90644),
-    N = n(61330),
+    y = n(977997),
+    I = n(874546),
+    N = n(90644),
+    v = n(61330),
     x = n(709309),
     j = n(153331),
     P = n(33852),
@@ -34,15 +34,15 @@ var l = n(503698),
     O = n(284525),
     R = n(730430),
     D = n(443493),
-    U = n(462226),
-    M = n(913948),
+    M = n(462226),
+    U = n(913948),
     b = n(329151),
     G = n(738080),
     V = n(648246),
-    H = n(305637),
-    F = n(652215),
-    w = n(346640),
-    B = n(985018),
+    F = n(305637),
+    w = n(652215),
+    B = n(346640),
+    H = n(985018),
     W = n(758630);
 let Y = t => {
         let {
@@ -58,7 +58,7 @@ let Y = t => {
             onAction: () => {
                 A.s.getConfig({
                     location: "rich_presence"
-                }).enabled && (s.dispatch(F.jej.POPOUT_CLOSE), (0, C.closeUserProfileModal)(), (0, m.A)({
+                }).enabled && (s.dispatch(w.jej.POPOUT_CLOSE), (0, C.closeUserProfileModal)(), (0, m.A)({
                     source: "rich_presence"
                 }), r?.())
             }
@@ -80,7 +80,7 @@ let Y = t => {
         } = t, J = (0, o.bG)([_.default], () => {
             let t = _.default.getCurrentUser();
             return a()(null != t, "UserActivityActions: currentUser cannot be undefined"), t
-        }), K = k === j.O.STREAM_PREVIEW || null != s, $ = (0, I.A)(e), Z = $ || K ? h.A.Direction.HORIZONTAL : h.A.Direction.VERTICAL, X = e?.type === F.$pd.HANG_STATUS, q = (0, o.bG)([v.A, S.A], () => X ? S.A.getChannel(v.A.getVoiceStateForUser(l.id)?.channelId) : null), Q = (0, o.bG)([S.A], () => null != m ? S.A.getChannel(m) : null, [m]), {
+        }), K = k === j.O.STREAM_PREVIEW || null != s, $ = (0, N.A)(e), Z = $ || K ? h.A.Direction.HORIZONTAL : h.A.Direction.VERTICAL, q = e?.type === w.$pd.HANG_STATUS, X = (0, o.bG)([y.A, S.A], () => q ? S.A.getChannel(y.A.getVoiceStateForUser(l.id)?.channelId) : null), Q = (0, o.bG)([S.A], () => null != m ? S.A.getChannel(m) : null, [m]), {
             enableRequestToStream: tt
         } = g.m.useExperiment({
             guildId: A ?? Q?.guild_id,
@@ -88,9 +88,9 @@ let Y = t => {
         }, {
             autoTrackExposure: !1
         }), te = null != Q && tt && (0, f.F9)(e), tn = (0, x.A)("voice_channel_activity_actions", e?.application_id);
-        if (e?.application_id === w.L8) return e = {
+        if (e?.application_id === B.L8) return e = {
             ...e,
-            buttons: [B.intl.string(B.t.E4kW5O)]
+            buttons: [H.intl.string(H.t.E4kW5O)]
         }, (0, i.jsx)(Y, {
             user: l,
             buttonVariant: C,
@@ -105,21 +105,21 @@ let Y = t => {
             wrap: ti ? h.A.Wrap.WRAP : h.A.Wrap.NO_WRAP,
             className: r()(d, W.jx, ti ? W.Vd : W.xM),
             children: (() => {
-                if (!(0, y.A)(e)) {
-                    if ((0, N.A)(e)) return (0, i.jsx)(P.A, {
-                        platform: c.A.get(F.fg2.XBOX),
+                if (!(0, I.A)(e)) {
+                    if ((0, v.A)(e)) return (0, i.jsx)(P.A, {
+                        platform: c.A.get(w.fg2.XBOX),
                         variant: C,
                         onAction: z,
                         icon: u.YWd
                     });
-                    if (e?.platform === F.yTV.PS4 || e?.platform === F.yTV.PS5) return (0, i.jsx)(P.A, {
+                    if (e?.platform === w.yTV.PS4 || e?.platform === w.yTV.PS5) return (0, i.jsx)(P.A, {
                         variant: C,
-                        platform: c.A.get(F.fg2.PLAYSTATION),
+                        platform: c.A.get(w.fg2.PLAYSTATION),
                         onAction: z,
                         icon: u.Xj
                     })
                 }
-                if (tn.length > 0) return (0, i.jsx)(M.A, {
+                if (tn.length > 0) return (0, i.jsx)(U.A, {
                     distributorCTAConfigs: tn,
                     buttonVariant: "overlay-primary"
                 });
@@ -144,8 +144,8 @@ let Y = t => {
                         children: [n, t]
                     })
                 }
-                if ((0, T.Cy)(e)) {
-                    let t = (0, T.UW)(e);
+                if ((0, E.Cy)(e)) {
+                    let t = (0, E.UW)(e);
                     return null == t ? null : (0, i.jsx)(D.A, {
                         guildId: t.guildId,
                         channelId: t.channelId,
@@ -153,17 +153,17 @@ let Y = t => {
                         onAction: z
                     })
                 }
-                return K ? (0, i.jsx)(H.A, {
+                return K ? (0, i.jsx)(F.A, {
                     isCurrentUser: J.id === l.id,
                     applicationStream: s,
                     onAction: z
-                }) : X && null != q ? (0, i.jsx)(R.A, {
+                }) : q && null != X ? (0, i.jsx)(R.A, {
                     userId: l.id,
                     variant: C,
-                    hangStatusChannel: q,
+                    hangStatusChannel: X,
                     onAction: z
                 }) : (0, i.jsxs)(i.Fragment, {
-                    children: [te && (0, i.jsx)(E.B, {
+                    children: [te && (0, i.jsx)(T.B, {
                         userId: l.id,
                         channel: Q,
                         onAction: z
@@ -177,7 +177,7 @@ let Y = t => {
                         user: l,
                         variant: te ? "secondary" : C,
                         onAction: z
-                    }), (0, i.jsx)(U.A, {
+                    }), (0, i.jsx)(M.A, {
                         activity: e,
                         user: l,
                         variant: te ? "secondary" : C,

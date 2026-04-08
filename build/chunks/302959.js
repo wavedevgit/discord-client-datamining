@@ -77,7 +77,6 @@ let C = r.A.Types,
             activityGuild: y ?? j,
             showChannelDetails: C,
             channel: C ? T : void 0,
-            enableUserHoverActivities: N.enableUserHoverActivities,
             renderActions: f ? () => (0, i.jsx)(I, {
                 ...N,
                 applicationStream: b,

@@ -1,6 +1,6 @@
 /** chunk id: 347378 params = (module,exports,require) **/
 i.d(e, {
-    E: () => p
+    E: () => g
 });
 var n = i(627968),
     r = i(64700),
@@ -13,58 +13,58 @@ var n = i(627968),
     d = i(692440),
     m = i(916974),
     f = i(985018),
-    g = i(296360);
-let p = () => {
+    p = i(296360);
+let g = () => {
     let {
         transitionState: t,
         planId: e,
         renewalInvoice: i,
         onClose: l,
-        handleCancellation: p,
+        handleCancellation: g,
         renewalInvoiceDetails: x,
         fullPrice: h,
-        premiumSubscription: P
-    } = (0, m.X)(), [C, y] = r.useState(!1), [v, E] = r.useState(!1);
+        premiumSubscription: C
+    } = (0, m.X)(), [P, y] = r.useState(!1), [v, j] = r.useState(!1);
     if (null == i) return null;
-    let j = async () => {
-        y(!0), E(!1);
+    let E = async () => {
+        y(!0), j(!1);
         try {
-            await p(), l()
+            await g(), l()
         } catch (t) {
-            E(!0), y(!1)
+            j(!0), y(!1)
         }
-    }, D = [{
+    }, _ = [{
         text: f.intl.string(f.t.rzVN6j),
         onClick: () => l(),
         variant: "secondary"
     }, {
         text: `${f.intl.format(f.t.yxFzdO,{planPremiumType:u.Ay.getTierDisplayNameByPlanId(`${e}`)})}`,
-        onClick: j,
-        disabled: C,
+        onClick: E,
+        disabled: P,
         variant: "critical-primary",
-        loading: C
+        loading: P
     }];
     if (null == x) return null;
     let {
-        intervalType: _,
+        intervalType: D,
         intervalCount: S
-    } = x, A = (0, o.CE)(`${h}`, _, S);
+    } = x, N = (0, o.CE)(`${h}`, D, S);
     return (0, n.jsxs)(s.Modal, {
         size: "md",
         transitionState: t,
         title: `${f.intl.format(f.t.LZunzZ,{planPremiumType:u.Ay.getTierDisplayNameByPlanId(`${e}`)})}`,
         subtitle: 0 !== i.total ? f.intl.format(f.t.ycyeBx, {
             renewalDate: i.subscriptionPeriodStart,
-            rate: (0, o.CE)((0, o.$g)(i.total, i.currency), _, S)
+            rate: (0, o.CE)((0, o.$g)(i.total, i.currency), D, S)
         }) : f.intl.format(f.t["+y0Tjy"], {
             renewalDate: i.subscriptionPeriodStart
         }),
-        actions: D,
+        actions: _,
         onClose: async () => l(),
         children: [(0, n.jsxs)(c.Yx, {
             isPremiumRebrand: !0,
             className: a()({
-                [g.JD]: v
+                [p.JD]: v
             }),
             children: [(0, n.jsx)(c.Xd, {
                 children: f.intl.string(f.t.iqhIp4)
@@ -72,10 +72,10 @@ let p = () => {
                 label: f.intl.formatToPlainString(f.t.r3jVZq, {
                     planName: u.Ay.getDisplayName(`${e}`)
                 }),
-                value: `${A}`,
-                className: g.aD
+                value: `${N}`,
+                className: p.aD
             }), (0, n.jsx)(c.pK, {}), (0, n.jsx)(d.m0, {
-                premiumSubscription: P,
+                premiumSubscription: C,
                 renewalInvoice: i,
                 isUpdate: !0
             })]

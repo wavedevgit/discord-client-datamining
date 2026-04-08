@@ -13,8 +13,8 @@ var n = i(627968),
     d = i(788868),
     m = i(985018),
     f = i(331314),
-    g = i(303930),
-    p = i(938822);
+    p = i(303930),
+    g = i(938822);
 let x = () => {
     let {
         transitionState: t,
@@ -22,20 +22,20 @@ let x = () => {
         premiumType: i,
         confettiCanvas: x,
         churnUserDiscountOffer: h,
-        discountedPrice: P
-    } = (0, c.X)(), C = (0, r.useRef)(null), [y, v] = (0, r.useState)(!1), E = (0, a.bG)([s.A], () => s.A.useReducedMotion);
+        discountedPrice: C
+    } = (0, c.X)(), P = (0, r.useRef)(null), [y, v] = (0, r.useState)(!1), j = (0, a.bG)([s.A], () => s.A.useReducedMotion);
     if ((0, r.useEffect)(() => {
-            null !== C.current && null !== P && v(!0)
-        }, [C, P]), null === h) return null;
-    let j = i === d.PremiumTypes.TIER_2;
+            null !== P.current && null !== C && v(!0)
+        }, [P, C]), null === h) return null;
+    let E = i === d.PremiumTypes.TIER_2;
     return (0, n.jsxs)("div", {
-        ref: C,
+        ref: P,
         children: [(0, n.jsx)(l.ExpressiveModal, {
             graphic: {
                 type: "image",
-                src: j ? p.A : g
+                src: E ? g.A : p
             },
-            gradientColor: j ? "nitro-pink" : "nitro-green",
+            gradientColor: E ? "nitro-pink" : "nitro-green",
             transitionState: t,
             title: m.intl.string(m.t.PZSyRk),
             onClose: async () => e(),
@@ -46,8 +46,8 @@ let x = () => {
                     userDiscountOffer: h
                 })
             })
-        }), !E && y && (0, n.jsx)(u.A, {
-            confettiTarget: C.current,
+        }), !j && y && (0, n.jsx)(u.A, {
+            confettiTarget: P.current,
             confettiCanvas: x,
             confettiVelocityMultiplier: .75
         })]

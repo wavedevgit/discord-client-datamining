@@ -77,33 +77,24 @@ let h = t => (e, n) => null == n ? "" : u.intl.format(t(), {
                     return arguments.length > 2 && void 0 !== arguments[2] && arguments[2], u.intl.string(u.t["ahzZr+"])
                 },
                 [a.pJ.MINUTES]: function(t, e) {
-                    let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
-                        i = arguments.length > 3 && void 0 !== arguments[3] && arguments[3];
+                    let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2];
                     return n ? u.intl.formatToPlainString(u.t["03mIHW"], {
-                        time: t
-                    }) : i ? u.intl.formatToPlainString(u.t.w5w79N, {
                         time: t
                     }) : u.intl.formatToPlainString(u.t["vQml+P"], {
                         time: t
                     })
                 },
                 [a.pJ.HOURS]: function(t, e) {
-                    let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
-                        i = arguments.length > 3 && void 0 !== arguments[3] && arguments[3];
+                    let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2];
                     return n ? u.intl.formatToPlainString(u.t.eNoooU, {
-                        time: t
-                    }) : i ? u.intl.formatToPlainString(u.t.EPkGyE, {
                         time: t
                     }) : u.intl.formatToPlainString(u.t["4Wq+6x"], {
                         time: t
                     })
                 },
                 [a.pJ.DAYS]: function(t, e) {
-                    let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
-                        i = arguments.length > 3 && void 0 !== arguments[3] && arguments[3];
+                    let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2];
                     return n ? u.intl.formatToPlainString(u.t["2rUo/p"], {
-                        time: t
-                    }) : i ? u.intl.formatToPlainString(u.t.V3g3dS, {
                         time: t
                     }) : u.intl.formatToPlainString(u.t["jN3/fR"], {
                         time: t
@@ -257,20 +248,19 @@ function m(t) {
                 location: e,
                 messageProps: n,
                 isApplicationStreaming: i,
-                enableUserHoverActivities: l,
-                ...s
+                ...l
             } = this.props, {
-                time: o
-            } = this.state, u = this.getType();
-            if (null == u) return null;
-            let d = this.getTimeUnit(o, e, u),
-                c = A[e][u];
-            if (null == c) return null;
-            let h = c[d],
-                m = Math.floor((0, a.eZ)(o, d));
+                time: s
+            } = this.state, o = this.getType();
+            if (null == o) return null;
+            let u = this.getTimeUnit(s, e, o),
+                d = A[e][o];
+            if (null == d) return null;
+            let c = d[u],
+                h = Math.floor((0, a.eZ)(s, u));
             return (0, r.jsx)(t, {
-                ...s,
-                children: h?.(m, n, i, l)
+                ...l,
+                children: c?.(h, n, i)
             })
         }
     }
