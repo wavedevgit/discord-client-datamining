@@ -15,8 +15,8 @@ var i = n(627968),
     A = n(730134),
     _ = n(964486),
     m = n(80682),
-    g = n(58736),
-    p = n(967144),
+    p = n(58736),
+    g = n(967144),
     f = n(342296),
     x = n(696451),
     E = n(576705),
@@ -29,26 +29,26 @@ var i = n(627968),
     v = n(345687),
     y = n(818348),
     j = n(985018),
-    R = n(142126);
+    R = n(463591);
 let O = l.memo(function(e) {
         let {
             toggleRequestToSpeakSidebar: t,
             chatOpen: n
-        } = e, l = (0, i.jsx)(g.Ay.Icon, {
+        } = e, l = (0, i.jsx)(p.Ay.Icon, {
             icon: u.PGe,
             tooltip: j.intl.string(j.t.cpT0Cq),
             onClick: t
         });
-        return (0, i.jsxs)(g.Ay, {
+        return (0, i.jsxs)(p.Ay, {
             toolbar: l,
             className: a()(R.N1, {
                 [R.X_]: n
             }),
-            children: [(0, i.jsx)(g.Ay.Icon, {
+            children: [(0, i.jsx)(p.Ay.Icon, {
                 icon: u.E7M,
                 disabled: !0,
                 "aria-label": j.intl.string(j.t.TYZgzW)
-            }), (0, i.jsx)(g.Ay.Title, {
+            }), (0, i.jsx)(p.Ay.Title, {
                 children: j.intl.string(j.t.TYZgzW)
             })]
         })
@@ -58,9 +58,9 @@ let O = l.memo(function(e) {
             channel: t,
             participant: s,
             tempDisableOnInit: a = !1
-        } = e, r = l.useRef(null), [g, E] = l.useState(a);
+        } = e, r = l.useRef(null), [p, E] = l.useState(a);
         (0, _.Ay)(() => {
-            if (!g) return;
+            if (!p) return;
             let e = setTimeout(() => E(!1), 1e3);
             return () => clearTimeout(e)
         });
@@ -72,7 +72,7 @@ let O = l.memo(function(e) {
         } = (0, d.cf)([I.A], () => ({
             isMobile: I.A.isMobileOnline(s.user.id),
             status: I.A.getStatus(s.user.id, N)
-        })), y = (0, d.bG)([x.Ay], () => x.Ay.getMember(N, s.user.id)), O = (0, p.gn)(t.guild_id, y?.userId, y?.colorStrings ?? null), L = l.useMemo(() => ({
+        })), y = (0, d.bG)([x.Ay], () => x.Ay.getMember(N, s.user.id)), O = (0, g.gn)(t.guild_id, y?.userId, y?.colorStrings ?? null), L = l.useMemo(() => ({
             [N]: [s.user.id]
         }), [N, s.user.id]);
         (0, m.Eq)(L, "RequestToSpeakSidebar");
@@ -81,7 +81,7 @@ let O = l.memo(function(e) {
                 (0, h.L3)(e, async () => {
                     let {
                         default: e
-                    } = await Promise.all([n.e("97262"), n.e("42128"), n.e("84841"), n.e("50970")]).then(n.bind(n, 107632));
+                    } = await Promise.all([n.e("97262"), n.e("42128"), n.e("84841"), n.e("36382")]).then(n.bind(n, 107632));
                     return n => (0, i.jsx)(e, {
                         ...n,
                         user: s.user,
@@ -135,7 +135,7 @@ let O = l.memo(function(e) {
                         onClick: function() {
                             (0, C.lL)(t, s.user.id, !1)
                         },
-                        disabled: M || g,
+                        disabled: M || p,
                         icon: u.LvC,
                         variant: "secondary",
                         "aria-label": M ? j.intl.string(j.t.h9rsTd) : j.intl.string(j.t.f0T7hI)

@@ -15,8 +15,8 @@ var i = n(627968),
     A = n(209047),
     _ = n(454938),
     m = n(855687),
-    g = n(731091),
-    p = n(544028),
+    p = n(731091),
+    g = n(544028),
     f = n(253932),
     x = n(576705),
     E = n(486020),
@@ -25,7 +25,7 @@ var i = n(627968),
     N = n(652215),
     T = n(349828),
     S = n(985018),
-    b = n(961577);
+    b = n(826358);
 
 function v(e) {
     let {
@@ -138,12 +138,12 @@ function L(e) {
         onContextMenu: r,
         ariaControls: o,
         ariaExpanded: _,
-        children: p
+        children: g
     } = e, f = (0, h.YC)(s), E = (0, d.bG)([x.A], () => (0, m.K)(x.A, s)), I = l.useCallback(() => {
         E ? (0, u.mMO)(async () => {
             let {
                 default: e
-            } = await Promise.all([n.e("43600"), n.e("67505")]).then(n.bind(n, 234355));
+            } = await Promise.all([n.e("43600"), n.e("71281")]).then(n.bind(n, 234355));
             return t => (0, i.jsx)(e, {
                 ...t,
                 guild: s,
@@ -178,7 +178,7 @@ function L(e) {
                 })]
             }), (0, i.jsx)("div", {
                 className: b.dx,
-                children: p
+                children: g
             })]
         }), s.id === T.Vc && (0, i.jsx)(A.A, {
             className: b.sq
@@ -196,7 +196,7 @@ function L(e) {
                     color: "currentColor"
                 })
             })
-        }), s.id === N.gNP && (0, i.jsx)(g.g, {})]
+        }), s.id === N.gNP && (0, i.jsx)(p.g, {})]
     })
 }
 let M = l.memo(function(e) {
@@ -209,7 +209,7 @@ let M = l.memo(function(e) {
         onContextMenu: h,
         onMouseDown: A,
         disableBannerAnimation: m,
-        "aria-expanded": g,
+        "aria-expanded": p,
         "aria-controls": x,
         guild: C,
         guildBanner: T,
@@ -218,7 +218,7 @@ let M = l.memo(function(e) {
         headerClassName: R,
         communityInfoVisible: O,
         hasSubheader: M
-    } = e, U = C.features.has(N.GuildFeatures.ANIMATED_BANNER), G = (0, _.A)(C), P = !G && (0, I.A)(C), k = !G && O, w = (0, E.VI)(T) && U && !m, [B, V] = l.useState(!1), H = l.useRef(!1), F = l.useRef(null), W = t ?? F, K = l.useRef(void 0), Y = f.kt.getSetting(), z = (0, d.bG)([p.A], () => p.A.theme);
+    } = e, U = C.features.has(N.GuildFeatures.ANIMATED_BANNER), G = (0, _.A)(C), P = !G && (0, I.A)(C), k = !G && O, w = (0, E.VI)(T) && U && !m, [B, V] = l.useState(!1), H = l.useRef(!1), F = l.useRef(null), W = t ?? F, K = l.useRef(void 0), Y = f.kt.getSetting(), z = (0, d.bG)([g.A], () => g.A.theme);
     l.useEffect(() => {
         if (w && n && !H.current && Y) return V(!0), K.current = setTimeout(() => {
             V(!1)
@@ -263,7 +263,7 @@ let M = l.memo(function(e) {
                             onClick: c,
                             onContextMenu: h,
                             ariaControls: x,
-                            ariaExpanded: g,
+                            ariaExpanded: p,
                             children: j
                         })
                     }), P && (0, i.jsx)(y, {

@@ -15,25 +15,25 @@ var i = n(627968),
     A = n(817281),
     _ = n(534409),
     m = n(711014),
-    g = n(240248),
-    p = n(263715),
+    p = n(240248),
+    g = n(263715),
     f = n(941971),
     x = n(447253),
     E = n(531053),
     I = n(107385),
     C = n(900848),
-    N = n(550591),
+    N = n(772972),
     T = n(114329),
     S = n(985018),
-    b = n(142163),
-    v = n(604418);
-let y = (0, g.xI)(u.A.FOLDER_ITEM_ANIMATION_DURATION),
+    b = n(161136),
+    v = n(135759);
+let y = (0, p.xI)(u.A.FOLDER_ITEM_ANIMATION_DURATION),
     j = (0, o.animated)(h.BJc),
     R = l.memo(function(e) {
         var t;
         let n, s, o, {
                 folderNode: u,
-                setNodeRef: g,
+                setNodeRef: p,
                 selected: R,
                 expanded: O,
                 mediaState: L,
@@ -58,19 +58,19 @@ let y = (0, g.xI)(u.A.FOLDER_ITEM_ANIMATION_DURATION),
                 name: X,
                 children: $
             } = u,
-            [Q, J] = l.useState(!1),
+            [J, Q] = l.useState(!1),
             [Z, ee] = l.useState(!1),
-            et = Q || Z,
+            et = J || Z,
             en = (0, _.qK)("FolderItem");
         l.useEffect(() => {
-            k && J(!1)
+            k && Q(!1)
         }, [k]);
         let [{
             dragging: ei
         }, el] = (0, r.i)({
-            type: p.PJ.FOLDER,
+            type: g.PJ.FOLDER,
             item: () => (w?.(), {
-                type: p.PJ.FOLDER,
+                type: g.PJ.FOLDER,
                 nodeId: u.id
             }),
             end() {
@@ -96,10 +96,10 @@ let y = (0, g.xI)(u.A.FOLDER_ITEM_ANIMATION_DURATION),
             config: {
                 duration: y
             }
-        }), eh = l.useCallback(e => g?.(q, e), [g, q]), eA = (0, i.jsxs)(C.c, {
+        }), eh = l.useCallback(e => p?.(q, e), [p, q]), eA = (0, i.jsxs)(C.c, {
             children: [(0, i.jsx)(f.A, {
                 disabled: ei || O,
-                hovered: Q,
+                hovered: J,
                 selected: R,
                 unread: U,
                 className: v.Io
@@ -130,7 +130,7 @@ let y = (0, g.xI)(u.A.FOLDER_ITEM_ANIMATION_DURATION),
                         folderGroupId: ed,
                         onClick: V,
                         onContextMenu: H,
-                        onHoverChange: J,
+                        onHoverChange: Q,
                         onKeyDown: ea,
                         treeItemProps: eo,
                         folderButtonContent: K,

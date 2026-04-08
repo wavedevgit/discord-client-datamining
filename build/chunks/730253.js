@@ -15,8 +15,8 @@ var i = n(627968),
     A = n(688810),
     _ = n(941971),
     m = n(900848),
-    g = n(65611),
-    p = n(855725),
+    p = n(65611),
+    g = n(855725),
     f = n(532794),
     x = n(366811),
     E = n(345942),
@@ -37,9 +37,9 @@ var i = n(627968),
     U = n(97483),
     G = n(49999),
     P = n(788868),
-    k = n(665606),
+    k = n(525736),
     w = n(985018),
-    B = n(414839),
+    B = n(141920),
     V = n(988572);
 let H = {
     analyticsSource: {
@@ -50,7 +50,7 @@ let H = {
 };
 
 function F(e) {
-    let t, F, W, K, Y, z, q, X, $, Q, J, Z, {
+    let t, F, W, K, Y, z, q, X, $, J, Q, Z, {
             shouldShowIntroPopover: ee,
             markIntroPopoverAsDismissed: et
         } = e,
@@ -77,9 +77,9 @@ function F(e) {
         eA = (0, a.bG)([N.A], () => N.A.getChannelId(D.YYv)),
         e_ = (0, a.bG)([C.A], () => C.A.getChannel(eA)),
         em = (0, x.A)(e => e.guildId),
-        eg = (0, R.ai)(em),
+        ep = (0, R.ai)(em),
         {
-            badge: ep,
+            badge: eg,
             unread: ef
         } = (0, O.A)(eh),
         ex = (F = null != (t = (0, a.bG)([N.A], () => N.A.getVoiceChannelId())) && null != eh[t], W = (0, a.bG)([I.A], () => {
@@ -91,15 +91,15 @@ function F(e) {
                 location: t
             } = e, n = (0, u.H)(t);
             return null != n && null != eh[n]
-        })), X = z.length > 0, $ = !1, Q = !1, J = !1, Z = !1, F ? ($ = !Y, Q = Y, J = W, Z = q) : (J = K, Z = X), (0, g.oi)({
+        })), X = z.length > 0, $ = !1, J = !1, Q = !1, Z = !1, F ? ($ = !Y, J = Y, Q = W, Z = q) : (Q = K, Z = X), (0, p.oi)({
             audio: $,
-            video: Q,
-            screenshare: J,
+            video: J,
+            screenshare: Q,
             liveStage: !1,
             isCurrentUserConnected: F,
             activity: Z
         })),
-        eE = ep > 0 ? (0, p.w)(ep) : null,
+        eE = eg > 0 ? (0, g.w)(eg) : null,
         eI = l.useRef(!1),
         {
             hasAccess: eC
@@ -137,7 +137,7 @@ function F(e) {
         }
     }, [ei, el]), (0, i.jsxs)(m.c, {
         children: [(0, i.jsx)(_.A, {
-            selected: eg,
+            selected: ep,
             hovered: er,
             unread: ef && !eu,
             className: B.I
@@ -152,14 +152,14 @@ function F(e) {
                         ...en,
                         ariaLabel: w.intl.formatToPlainString(w.t["/uzRss"], {
                             guildName: w.intl.string(w.t.wMWyci),
-                            mentions: ep
+                            mentions: eg
                         }),
-                        "aria-selected": eg,
+                        "aria-selected": ep,
                         to: {
                             pathname: D.BVt.CHANNEL(D.YYv, eA),
                             state: H
                         },
-                        selected: eg || er,
+                        selected: ep || er,
                         onClick: () => {
                             ee && eT(!1)
                         },

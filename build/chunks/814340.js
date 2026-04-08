@@ -15,8 +15,8 @@ var i = n(627968),
     A = n(775121),
     _ = n(629357),
     m = n(599677),
-    g = n(12351),
-    p = n(915089),
+    p = n(12351),
+    g = n(915089),
     f = n(734057),
     x = n(458294),
     E = n(71393),
@@ -33,7 +33,7 @@ var i = n(627968),
     O = n(826050),
     L = n(652215),
     M = n(985018),
-    D = n(598855);
+    D = n(992928);
 let U = () => (0, i.jsxs)("div", {
     className: D.p$,
     children: [(0, i.jsx)("div", {
@@ -122,7 +122,7 @@ function H(e, t, n) {
 class F extends l.PureComponent {
     scrollerRef = l.createRef();
     inputRef = l.createRef();
-    _listId = (0, p.Ld)();
+    _listId = (0, g.Ld)();
     state = {
         query: this.props.query,
         mouseFocusDisabled: !0
@@ -185,7 +185,7 @@ class F extends l.PureComponent {
                 return (0, u.L3)(e, async () => {
                     let {
                         default: e
-                    } = await Promise.all([n.e("43600"), n.e("68587"), n.e("63379"), n.e("56026"), n.e("16301"), n.e("22191"), n.e("25961"), n.e("91872"), n.e("35894"), n.e("50796"), n.e("94253"), n.e("8458"), n.e("11810"), n.e("85200"), n.e("38865"), n.e("3788"), n.e("54469"), n.e("76087")]).then(n.bind(n, 544676));
+                    } = await Promise.all([n.e("43600"), n.e("68587"), n.e("63379"), n.e("56026"), n.e("16301"), n.e("22191"), n.e("25961"), n.e("33144"), n.e("35894"), n.e("50796"), n.e("94253"), n.e("8458"), n.e("11810"), n.e("90226"), n.e("38865"), n.e("3788"), n.e("54469"), n.e("8442")]).then(n.bind(n, 544676));
                     return n => (0, i.jsx)(e, {
                         ...n,
                         guild: t.record,
@@ -280,7 +280,7 @@ class F extends l.PureComponent {
                 return (0, u.L3)(e, async () => {
                     let {
                         default: e
-                    } = await Promise.all([n.e("97262"), n.e("32418"), n.e("54631")]).then(n.bind(n, 668569));
+                    } = await Promise.all([n.e("97262"), n.e("32418"), n.e("84821")]).then(n.bind(n, 668569));
                     return n => (0, i.jsx)(e, {
                         ...n,
                         user: t.record,
@@ -521,11 +521,11 @@ class F extends l.PureComponent {
         }
     };
     renderProtip() {
-        return (0, i.jsx)(g.A, {
+        return (0, i.jsx)(p.A, {
             className: a()(D.PP, {
                 [D.ov]: this.state.query.length > 0
             }),
-            type: g.A.Types.INLINE,
+            type: p.A.Types.INLINE,
             children: M.intl.format(M.t.wukqXQ, {
                 userSymbolHook: (e, t) => H(t, _.AT.USER, M.intl.string(M.t.GQRCGn)),
                 textChannelSymbolHook: (e, t) => H(t, _.AT.TEXT_CHANNEL, M.intl.string(M.t.wrwhuZ)),

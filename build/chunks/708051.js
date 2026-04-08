@@ -15,11 +15,11 @@ var l = n(627968),
     g = n(351906),
     h = n(954571),
     A = n(735547),
-    p = n(299827),
-    x = n(172799),
+    x = n(299827),
+    p = n(172799),
     I = n(652215),
     m = n(985018),
-    S = n(465892);
+    S = n(133501);
 let v = r.Ay.connectStores([g.A], () => ({
         hideValue: g.A.hideInstantInvites
     }))(e => {
@@ -48,10 +48,10 @@ let v = r.Ay.connectStores([g.A], () => ({
             modalState: u,
             isApplicationBypassToggleEnabled: g,
             setInviteFlags: y,
-            copyValue: E,
-            changePage: T,
+            copyValue: f,
+            changePage: E,
             inviteChannel: _,
-            source: f,
+            source: T,
             code: C,
             guildScheduledEvent: N,
             disabled: b,
@@ -62,23 +62,23 @@ let v = r.Ay.connectStores([g.A], () => ({
             networkError: R,
             showVanityURL: U,
             flags: V
-        } = u, O = i.useCallback(() => {
+        } = u, w = i.useCallback(() => {
             h.default.track(I.HAw.COPY_INSTANT_INVITE, {
                 server: c.A.getGuildId(),
                 channel: _?.id,
                 channel_type: _?.type,
-                location: f,
+                location: T,
                 code: C,
                 guild_scheduled_event_id: N?.id,
                 application_id: M?.id
             })
-        }, [M?.id, _, f, C, N]);
+        }, [M?.id, _, T, C, N]);
         return (0, l.jsxs)(d.BJc, {
             gap: 16,
             children: [(0, l.jsx)(v, {
-                value: E,
+                value: f,
                 autoFocus: r,
-                onCopy: O,
+                onCopy: w,
                 disabled: b
             }), g && (0, l.jsx)(d.dOG, {
                 checked: (0, a.Lt)(V, s.Q.IS_APPLICATION_BYPASS),
@@ -90,14 +90,14 @@ let v = r.Ay.connectStores([g.A], () => ({
                 variant: "text-xs/normal",
                 className: S.PJ,
                 children: [(0, A.Be)(j, G), " ", r ? (0, l.jsx)(d.MzZ, {
-                    onClick: () => T(x.QR.SETTINGS),
+                    onClick: () => E(p.QR.SETTINGS),
                     children: m.intl.string(m.t["VNe8P/"])
                 }) : null]
             }), !n && r && U ? (0, l.jsxs)(d.Text, {
                 variant: "text-xs/normal",
                 className: S.PJ,
                 children: [m.intl.string(m.t["0M2U95"]), " "]
-            }) : null, null != R ? (0, l.jsx)(p.X, {
+            }) : null, null != R ? (0, l.jsx)(x.X, {
                 guild: t,
                 error: R,
                 onClose: o

@@ -34,27 +34,27 @@ function C(e) {
             guildId: t,
             returnChannelId: n
         }))
-    }, [t, n]), S = (0, s.bG)([h.A], () => h.A.getGuild(t)), v = r.useMemo(() => null == S ? null : _.Ay.getGuildSplashURL({
+    }, [t, n]), S = (0, s.bG)([h.A], () => h.A.getGuild(t)), x = r.useMemo(() => null == S ? null : _.Ay.getGuildSplashURL({
         id: S.id,
         splash: S.splash
-    }), [S]), x = (0, u.S)(v);
+    }), [S]), v = (0, u.S)(x);
     return (0, i.jsxs)("div", {
         className: l()(I.kf, f.iW, {
-            [f.Me]: null == v
+            [f.Me]: null == x
         }),
         ref: a,
-        children: [null != v ? (0, i.jsx)(c.A, {
+        children: [null != x ? (0, i.jsx)(c.A, {
             className: f.xX,
-            src: v,
+            src: x,
             width: C,
             height: T,
             imageClassName: f.Iv
-        }) : (0, i.jsx)(A.A, {}), null != x && null != v && (0, i.jsx)("div", {
+        }) : (0, i.jsx)(A.A, {}), null != v && null != x && (0, i.jsx)("div", {
             className: f.D7,
             style: {
-                background: `linear-gradient(180deg, ${(0,m.cb)(x,.16)} 0%, ${(0,m.cb)(x,1)} 100%)`
+                background: `linear-gradient(180deg, ${(0,m.cb)(v,.16)} 0%, ${(0,m.cb)(v,1)} 100%)`
             }
-        }), null != v && (0, i.jsx)("div", {
+        }), null != x && (0, i.jsx)("div", {
             className: f.D7
         }), (0, i.jsxs)("div", {
             className: l()(I.Cj, I.Vw),

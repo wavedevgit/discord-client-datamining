@@ -1,6 +1,6 @@
 /** chunk id: 530484 params = (module,exports,require) **/
 n.d(t, {
-    A: () => g
+    A: () => p
 });
 var i = n(627968);
 n(64700);
@@ -15,14 +15,14 @@ var l = n(311907),
     h = n(652793),
     A = n(790782),
     _ = n(985018),
-    m = n(567431);
+    m = n(11464);
 
-function g(e) {
+function p(e) {
     let {
         guild: t,
-        selected: g
+        selected: p
     } = e, {
-        hasUnread: p,
+        hasUnread: g,
         mentionCount: f
     } = (0, l.cf)([c.Ay], () => ({
         hasUnread: c.Ay.hasUnread(t.id, A.P.GUILD_EVENT),
@@ -32,7 +32,7 @@ function g(e) {
         await (0, a.mMO)(async () => {
             let {
                 default: e
-            } = await Promise.all([n.e("51354"), n.e("7453"), n.e("9561")]).then(n.bind(n, 926956));
+            } = await Promise.all([n.e("51354"), n.e("7453"), n.e("11049")]).then(n.bind(n, 926956));
             return n => (0, i.jsx)(e, {
                 ...n,
                 guildId: t.id
@@ -51,7 +51,7 @@ function g(e) {
             className: e
         }),
         text: C,
-        selected: g,
+        selected: p,
         onClick: E,
         onContextMenu: e => {
             (0, r.L3)(e, async () => {
@@ -64,7 +64,7 @@ function g(e) {
                 })
             })
         },
-        showUnread: p && !x,
+        showUnread: g && !x,
         trailing: !x && f > 0 ? (0, i.jsx)(a.hVq, {
             className: m.Do,
             disableColor: !0,

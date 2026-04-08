@@ -18,7 +18,7 @@ function c(n, t) {
         (0, l.mMO)(async () => {
             let {
                 default: t
-            } = await Promise.all([e.e("93142"), e.e("64233"), e.e("37154")]).then(e.bind(e, 409200));
+            } = await Promise.all([e.e("93142"), e.e("64233"), e.e("54509")]).then(e.bind(e, 409200));
             return e => (0, i.jsx)(t, {
                 ...e,
                 channelType: c,

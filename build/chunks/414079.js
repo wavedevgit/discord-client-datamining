@@ -1,26 +1,26 @@
 /** chunk id: 414079 params = (module,exports,require) **/
-t.d(s, {
+i.d(e, {
     A: () => c
 });
-var i = t(627968);
-t(64700);
-var n = t(503698),
-    r = t.n(n),
-    a = t(397927),
-    l = t(985018),
-    o = t(305430);
+var r = i(627968);
+i(64700);
+var a = i(503698),
+    n = i.n(a),
+    h = i(397927),
+    d = i(985018),
+    s = i(692833);
 
-function c(e) {
+function c(t) {
     let {
-        className: s,
-        "aria-label": t,
-        ...n
-    } = e;
-    return (0, i.jsx)(a.DUT, {
-        ...n,
-        "aria-label": null != t ? t : l.intl.string(l.t.N86XcP),
-        className: r()(o.x, s),
-        children: (0, i.jsx)(a.aXh, {
+        className: e,
+        "aria-label": i,
+        ...a
+    } = t;
+    return (0, r.jsx)(h.DUT, {
+        ...a,
+        "aria-label": null != i ? i : d.intl.string(d.t.N86XcP),
+        className: n()(s.x, e),
+        children: (0, r.jsx)(h.aXh, {
             size: "xs",
             color: "currentColor"
         })

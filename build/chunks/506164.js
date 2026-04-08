@@ -6,7 +6,7 @@ var i = n(627968),
     l = n(64700),
     s = n(397927),
     a = n(847599),
-    r = n(132857);
+    r = n(928800);
 let o = function(e) {
     let {
         title: t,
@@ -23,10 +23,10 @@ let o = function(e) {
     l.useEffect(() => {
         (0, a.Bf)(A, _, m)
     }, [A, _, m]);
-    let g = l.useCallback(() => {
+    let p = l.useCallback(() => {
             (0, a.mU)(a.IY.NSFW_CHANNEL_DISAGREE_CTA, A, _, m), h?.()
         }, [h, A, _, m]),
-        p = l.useCallback(() => {
+        g = l.useCallback(() => {
             (0, a.mU)(a.IY.NSFW_CHANNEL_AGREE_CTA, A, _, m), u?.()
         }, [u, A, _, m]);
     return (0, i.jsxs)(s.BJc, {
@@ -63,9 +63,9 @@ let o = function(e) {
             children: [null != c && null != h ? (0, i.jsx)(s.Button, {
                 variant: "secondary",
                 text: c,
-                onClick: g
+                onClick: p
             }) : null, null != d && null != u ? (0, i.jsx)(s.Button, {
-                onClick: p,
+                onClick: g,
                 text: d
             }) : null]
         })]

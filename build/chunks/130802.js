@@ -12,12 +12,12 @@ var i, l = n(627968),
     c = n(253932),
     u = n(461213),
     h = n(481045),
-    A = n(536482),
+    A = n(730844),
     _ = n(985018),
-    m = n(373431),
-    g = n(233732);
+    m = n(725850),
+    p = n(233732);
 
-function p(e) {
+function g(e) {
     let {
         closePopout: t
     } = e;
@@ -137,7 +137,7 @@ function I(e) {
             variant: "text-sm/normal",
             color: "text-subtle",
             children: _.intl.string(A.default.Yl0mh4)
-        }), (0, l.jsx)(p, {
+        }), (0, l.jsx)(g, {
             closePopout: t
         })]
     })
@@ -171,7 +171,7 @@ function T(e) {
         handleClose: i,
         popoutTargetRef: a,
         children: u
-    } = e, [m, p] = (0, s.useState)(n), f = (0, s.useRef)(null), x = function(e) {
+    } = e, [m, g] = (0, s.useState)(n), f = (0, s.useRef)(null), x = function(e) {
         if (null === e) return null;
         switch (e) {
             case 0:
@@ -228,7 +228,7 @@ function T(e) {
         }
     }(m), N = (0, s.useRef)(t);
     if ((0, s.useEffect)(() => {
-            t && !N.current && p(n), t !== N.current && (N.current = t)
+            t && !N.current && g(n), t !== N.current && (N.current = t)
         }, [n, t]), null == x || !t) return u;
     if ("popover" === x.type) {
         let {
@@ -250,7 +250,7 @@ function T(e) {
                 gradientColor: "purple",
                 graphic: {
                     type: "image",
-                    src: g.A
+                    src: p.A
                 },
                 actions: [{
                     ...e,

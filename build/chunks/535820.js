@@ -9,15 +9,15 @@ var d = n(311907),
     g = n(21119),
     h = n(403362),
     A = n(735547),
-    p = n(734057),
-    x = n(576705),
+    x = n(734057),
+    p = n(576705),
     I = n(994500),
     m = n(652215),
     S = n(172799);
 let v = new Set,
     y = [],
-    E = new Map,
-    T = {
+    f = new Map,
+    E = {
         numFriends: 0,
         numDms: 0,
         numGroupDms: 0,
@@ -32,7 +32,7 @@ function _(e) {
     let i = (0, A.oW)(v, l);
     for (let e of (null == i || I.A.isBlockedOrIgnored(i.id) || t.add(i.id), g.A.getUserAffinities())) t.add(e.otherUserId);
     let r = new Set;
-    return o === S.yV.EMBEDDED_APPLICATION && c.A.getChannelHistory().map(e => p.A.getChannel(e)).filter(h.Vq).filter(e => e.type === m.rbe.GUILD_TEXT).filter(e => x.A.can(m.xBc.SEND_MESSAGES, e)).slice(0, 3).forEach(e => r.add(e.id)), (0, A.Us)({
+    return o === S.yV.EMBEDDED_APPLICATION && c.A.getChannelHistory().map(e => x.A.getChannel(e)).filter(h.Vq).filter(e => e.type === m.rbe.GUILD_TEXT).filter(e => p.A.can(m.xBc.SEND_MESSAGES, e)).slice(0, 3).forEach(e => r.add(e.id)), (0, A.Us)({
         query: e,
         omitUserIds: v,
         suggestedUserIds: t,
@@ -43,9 +43,9 @@ function _(e) {
     })
 }
 
-function f(e) {
-    y = e, E = new Map, e.forEach((e, t) => {
-        E.set(e, {
+function T(e) {
+    y = e, f = new Map, e.forEach((e, t) => {
+        f.set(e, {
             index: t
         })
     })
@@ -53,7 +53,7 @@ function f(e) {
 class C extends d.Ay.Store {
     static displayName = "InviteSuggestionsStore";
     initialize() {
-        this.waitFor(p.A, x.A, c.A, I.A, g.A)
+        this.waitFor(x.A, p.A, c.A, I.A, g.A)
     }
     getInviteSuggestionRows() {
         return y
@@ -62,10 +62,10 @@ class C extends d.Ay.Store {
         return l
     }
     getInitialCounts() {
-        return T
+        return E
     }
     getSelectedInviteMetadata(e) {
-        let t = E.get(e),
+        let t = f.get(e),
             n = g.A.getUserAffinities().map(e => e.otherUserId);
         if (null != t) return {
             rowNum: t.index,
@@ -94,7 +94,7 @@ let N = new C(u.h, {
             rows: g,
             counts: h
         } = _("");
-        f(g), T = h, l = y.length
+        T(g), E = h, l = y.length
     },
     INVITE_SUGGESTIONS_SEARCH: function(e) {
         let {
@@ -104,6 +104,6 @@ let N = new C(u.h, {
         let {
             rows: n
         } = _(t);
-        n.sort((e, t) => null != e.score && null != t.score ? e.score - t.score : 0), f(n)
+        n.sort((e, t) => null != e.score && null != t.score ? e.score - t.score : 0), T(n)
     }
 })

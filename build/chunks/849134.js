@@ -7,7 +7,7 @@ var i = n(627968),
     s = n(342494),
     a = n(486318),
     r = n(985018),
-    o = n(762683),
+    o = n(766382),
     d = n(585048);
 
 function c(e) {
@@ -22,28 +22,28 @@ function c(e) {
         caretConfig: m = {
             align: "start"
         },
-        skuImageDetails: g,
-        title: p,
+        skuImageDetails: p,
+        title: g,
         body: f,
         overlayImageUrl: x
     } = e;
     l.useEffect(() => {
         n?.()
     }, [n]);
-    let E = l.useMemo(() => g?.imageUrl == null ? {
+    let E = l.useMemo(() => p?.imageUrl == null ? {
         type: "image",
         src: d.A,
         aspectRatio: "6/4"
     } : (0, a.e)({
-        imageUrl: g?.imageUrl,
-        backgroundImageUrl: g?.backgroundImageUrl,
+        imageUrl: p?.imageUrl,
+        backgroundImageUrl: p?.backgroundImageUrl,
         altText: r.intl.string(r.t["ulQB+t"]),
         overlayImageUrl: x,
         customClassNames: {
             containerClassName: o.z,
             foregroundImageClassName: o._
         }
-    }), [g?.imageUrl, g?.backgroundImageUrl, x]);
+    }), [p?.imageUrl, p?.backgroundImageUrl, x]);
     return (0, i.jsx)(s.AM, {
         size: "lg",
         shouldShow: !0,
@@ -64,7 +64,7 @@ function c(e) {
             onMouseDown: h
         }],
         targetElementRef: t,
-        title: p ?? r.intl.string(r.t.Ylu2JM),
+        title: g ?? r.intl.string(r.t.Ylu2JM),
         body: f ?? r.intl.string(r.t.vgylLQ),
         graphic: E
     })

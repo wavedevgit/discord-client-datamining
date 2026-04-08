@@ -12,8 +12,8 @@ var i = n(627968),
     c = n(397927),
     u = n(242919),
     h = n(985018),
-    A = n(661720),
-    _ = n(945375);
+    A = n(674827),
+    _ = n(168812);
 
 function m(e) {
     let {
@@ -21,10 +21,10 @@ function m(e) {
         icon: n,
         setStatus: s,
         isFavorited: m,
-        onFavoriteClick: g
-    } = e, [p, f] = l.useState(!1), x = (0, r.bG)([u.A], () => u.A.getFavoritedStatuses().length >= u.x), E = null != g, I = l.useCallback(e => {
-        e.stopPropagation(), g?.()
-    }, [g]), C = m ? c.Gg5 : c.yA2;
+        onFavoriteClick: p
+    } = e, [g, f] = l.useState(!1), x = (0, r.bG)([u.A], () => u.A.getFavoritedStatuses().length >= u.x), E = null != p, I = l.useCallback(e => {
+        e.stopPropagation(), p?.()
+    }, [p]), C = m ? c.Gg5 : c.yA2;
     return (0, i.jsxs)(c.DUT, {
         onClick: s,
         onMouseEnter: () => {
@@ -41,7 +41,7 @@ function m(e) {
             variant: "text-md/normal",
             className: A.rv,
             children: t
-        }), p && E && (0, i.jsx)(d.m_, {
+        }), g && E && (0, i.jsx)(d.m_, {
             text: x && !m ? h.intl.string(h.t.YSDH9n) : void 0,
             children: (0, i.jsx)(c.DUT, {
                 className: a()(A.ff, A.wB),

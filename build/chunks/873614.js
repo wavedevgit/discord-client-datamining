@@ -15,9 +15,9 @@ var i = n(627968),
     A = n(46054),
     _ = n(506164),
     m = n(734057),
-    g = n(985018),
-    p = n(879317),
-    f = n(324025);
+    p = n(985018),
+    g = n(859822),
+    f = n(643272);
 
 function x(e) {
     let {
@@ -35,7 +35,7 @@ function x(e) {
             size: "md",
             color: o.LU0.colors.TEXT_DEFAULT
         }), C]
-    }) : g.intl.string(g.t["q38/ae"]), S = l.useCallback(e => {
+    }) : p.intl.string(p.t["q38/ae"]), S = l.useCallback(e => {
         null != e && x(e.scrollHeight - e.clientHeight > 1)
     }, []), b = l.useCallback(() => {
         null != a && null != t && (0, o.mMO)(async () => {
@@ -53,22 +53,22 @@ function x(e) {
             ref: S,
             variant: "text-md/medium",
             color: "text-muted",
-            className: p.VA,
+            className: g.VA,
             lineClamp: 3,
             children: A.A.parseTopic(a.topic, !0, {
                 channelId: s
             })
         }), f && (0, i.jsx)(o.DUT, {
-            className: p.zT,
+            className: g.zT,
             onClick: b,
             children: (0, i.jsx)(o.Text, {
                 variant: "text-md/medium",
                 color: "text-brand",
-                className: p.ql,
-                children: g.intl.string(g.t["/QvRak"])
+                className: g.ql,
+                children: p.intl.string(p.t["/QvRak"])
             })
         }), (0, i.jsx)("div", {
-            className: p.yF
+            className: g.yF
         })]
     }) : null;
     return (0, i.jsx)(_.A, {
@@ -77,9 +77,9 @@ function x(e) {
         modalType: c.A5.SPOILER_CHANNEL,
         title: T,
         subtitle: v,
-        description: g.intl.string(g.t["34D1HC"]),
-        agreement: g.intl.string(g.t.KmRwcW),
-        disagreement: g.intl.string(g.t["/g10LC"]),
+        description: p.intl.string(p.t["34D1HC"]),
+        agreement: p.intl.string(p.t.KmRwcW),
+        disagreement: p.intl.string(p.t["/g10LC"]),
         guildId: t?.id,
         channelId: s
     })

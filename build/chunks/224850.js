@@ -13,7 +13,7 @@ var i = n(627968),
     c = n(560138),
     u = n(778712),
     h = n(985018),
-    A = n(969969);
+    A = n(375722);
 
 function _(e) {
     let {
@@ -22,25 +22,25 @@ function _(e) {
         textColor: s,
         isApplicationHome: d,
         enablePremiumBrandRefresh: _
-    } = e, g = (0, r.bG)([c.A], () => c.A.affinities.slice(0, 3).reverse()), p = g.map((e, t) => (0, i.jsx)(m, {
+    } = e, p = (0, r.bG)([c.A], () => c.A.affinities.slice(0, 3).reverse()), g = p.map((e, t) => (0, i.jsx)(m, {
         affinity: e,
-        applyMask: t !== g.length - 1,
+        applyMask: t !== p.length - 1,
         size: _ ? u._3.SIZE_24 : u._3.SIZE_32
-    }, e.id)), f = e => null != e.globalName ? e.globalName : e.username, x = l.useMemo(() => 3 === g.length ? h.intl.formatToPlainString(h.t.c7ETJH, {
-        username: f(g[2])
-    }) : 2 === g.length ? h.intl.formatToPlainString(h.t["st8Rh/"], {
-        username: f(g[1]),
-        otherUsername: f(g[0])
-    }) : 1 === g.length ? h.intl.formatToPlainString(h.t.dpjXPL, {
-        username: f(g[0])
-    }) : "", [g]);
-    return 0 === g.length ? null : (0, i.jsxs)("div", {
+    }, e.id)), f = e => null != e.globalName ? e.globalName : e.username, x = l.useMemo(() => 3 === p.length ? h.intl.formatToPlainString(h.t.c7ETJH, {
+        username: f(p[2])
+    }) : 2 === p.length ? h.intl.formatToPlainString(h.t["st8Rh/"], {
+        username: f(p[1]),
+        otherUsername: f(p[0])
+    }) : 1 === p.length ? h.intl.formatToPlainString(h.t.dpjXPL, {
+        username: f(p[0])
+    }) : "", [p]);
+    return 0 === p.length ? null : (0, i.jsxs)("div", {
         className: a()(_ ? A.bD : A.kL, n, {
             [A.gr]: !_ && d
         }),
         children: [(0, i.jsx)("div", {
             className: A.zc,
-            children: p
+            children: g
         }), (0, i.jsx)("div", {
             className: A.FS,
             children: (0, i.jsx)(function() {

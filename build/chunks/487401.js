@@ -16,8 +16,8 @@ var i = n(627968),
     A = n(793574),
     _ = n(688810),
     m = n(309698),
-    g = n(915089),
-    p = n(5180),
+    p = n(915089),
+    g = n(5180),
     f = n(227004),
     x = n(581007),
     E = n(522435),
@@ -51,8 +51,8 @@ var i = n(627968),
     q = n(506792),
     X = n(724591),
     $ = n(573956),
-    Q = n(141515),
-    J = n(463938),
+    J = n(141515),
+    Q = n(463938),
     Z = n(779881),
     ee = n(998986),
     et = n(732077),
@@ -69,8 +69,8 @@ var ec = n(652215),
     eu = n(746080);
 n(131955);
 var eh = n(985018),
-    eA = n(665606),
-    e_ = n(116648);
+    eA = n(525736),
+    e_ = n(520487);
 
 function em(e) {
     return d.LU0.modules.channels.NAME_LINE_HEIGHT.resolve({
@@ -79,7 +79,7 @@ function em(e) {
         density: e
     }) + 2
 }
-class eg extends l.PureComponent {
+class ep extends l.PureComponent {
     static contextType = a.nC;
     _list = null;
     unreadTopRef = l.createRef();
@@ -427,7 +427,7 @@ class eg extends l.PureComponent {
                         withMargin: l.length > 1
                     }, ed.n.GUILD_PREMIUM_PROGRESS_BAR);
                 case ed.n.GUILD_HOME:
-                    return (0, i.jsx)(Q.A, {
+                    return (0, i.jsx)(J.A, {
                         guild: s,
                         selected: r === eu.VV.GUILD_HOME
                     }, ed.n.GUILD_HOME);
@@ -452,7 +452,7 @@ class eg extends l.PureComponent {
                         selected: r === eu.VV.GAME_SHOP
                     }, ed.n.GUILD_GAME_SHOP);
                 case ed.n.GUILD_NEW_MEMBER_ACTIONS_PROGRESS_BAR:
-                    return (0, i.jsx)(J.j, {
+                    return (0, i.jsx)(Q.j, {
                         guild: s
                     });
                 case ed.n.CHANNELS_AND_ROLES:
@@ -491,12 +491,12 @@ class eg extends l.PureComponent {
             }
         }
         if (c.isPlaceholderRow(t, n)) return null;
-        let g = c.getChannelFromSectionRow(t, n);
-        if (null == g) return null;
+        let p = c.getChannelFromSectionRow(t, n);
+        if (null == p) return null;
         let {
-            category: p,
+            category: g,
             channel: x
-        } = g, E = p instanceof B.xu, C = x.record, N = `${t}${x.id}`;
+        } = p, E = g instanceof B.xu, C = x.record, N = `${t}${x.id}`;
         switch (C.type) {
             case ec.rbe.GUILD_ANNOUNCEMENT:
             case ec.rbe.GUILD_TEXT:
@@ -531,7 +531,7 @@ class eg extends l.PureComponent {
                     position: x.position,
                     selected: r === x.id,
                     connected: d === x.id,
-                    collapsed: x.isCollapsed || p.isCollapsed,
+                    collapsed: x.isCollapsed || g.isCollapsed,
                     voiceStates: u[x.id] ?? [],
                     speakerVoiceStates: A[x.id] ?? [],
                     disableManageChannels: h,
@@ -545,7 +545,7 @@ class eg extends l.PureComponent {
                     position: x.position,
                     selected: r === x.id,
                     connected: d === x.id,
-                    collapsed: x.isCollapsed || p.isCollapsed,
+                    collapsed: x.isCollapsed || g.isCollapsed,
                     voiceStates: u[x.id],
                     subtitle: x.subtitle,
                     disableManageChannels: h,
@@ -678,7 +678,7 @@ class eg extends l.PureComponent {
             selectedGuildId: n,
             density: l
         } = this.props, s = {};
-        (0, p.ai)(n) && (s["data-favorites"] = !0);
+        (0, g.ai)(n) && (s["data-favorites"] = !0);
         let {
             ref: a,
             ...r
@@ -731,7 +731,7 @@ class eg extends l.PureComponent {
             guildChannelsVersion: t,
             showNewUnreadsBar: n
         } = this.props;
-        return (0, i.jsx)(g.V0, {
+        return (0, i.jsx)(p.V0, {
             children: s => (0, i.jsx)(d.Fmo, {
                 component: (0, i.jsx)(d.AC4, {
                     children: (0, i.jsx)(d.H, {
@@ -763,14 +763,14 @@ class eg extends l.PureComponent {
         })
     }
 }
-let ep = e => {
+let eg = e => {
     let {
         guildId: t,
         selectedChannelId: n,
         selectedVoiceChannelId: s
     } = e, d = (0, o.bG)([h.A], () => h.A.keyboardModeEnabled), {
         analyticsLocations: c
-    } = (0, _.Ay)(A.A.GUILD_CHANNEL_LIST), m = (0, o.bG)([G.A], () => G.A.getChannel(n)), g = (0, o.bG)([G.A], () => G.A.getChannel(s)), p = (0, o.bG)([w.A], () => w.A.getGuildId()), f = (0, T.jN)(t), x = l.useRef(null), E = l.useCallback((e, t) => {
+    } = (0, _.Ay)(A.A.GUILD_CHANNEL_LIST), m = (0, o.bG)([G.A], () => G.A.getChannel(n)), p = (0, o.bG)([G.A], () => G.A.getChannel(s)), g = (0, o.bG)([w.A], () => w.A.getGuildId()), f = (0, T.jN)(t), x = l.useRef(null), E = l.useCallback((e, t) => {
         let n = x.current;
         null != n && (ec.Ut1.test(t) || (0, eu.jq)(t) ? n.scrollToChannel(t, !1, 16, () => {
             requestAnimationFrame(() => document.querySelector(e)?.focus())
@@ -801,14 +801,14 @@ let ep = e => {
             section: ec.JJy.GUILD_CHANNEL_LIST,
             children: (0, i.jsx)(a.hD, {
                 navigator: N,
-                children: (0, i.jsx)(eg, {
+                children: (0, i.jsx)(ep, {
                     ...e,
                     listNavigator: N,
                     ref: x,
                     selectedChannel: m,
-                    selectedVoiceChannel: g,
+                    selectedVoiceChannel: p,
                     stageChannelSpeakerVoiceStates: b,
-                    selectedGuildId: p,
+                    selectedGuildId: g,
                     optInEnabled: f
                 })
             })
@@ -876,7 +876,7 @@ function ef(e) {
                 })]
             })]
         })
-    }) : (0, i.jsx)(ep, {
+    }) : (0, i.jsx)(eg, {
         ...e,
         guildChannels: t,
         guildChannelsVersion: 0,
@@ -893,7 +893,7 @@ function ex(e) {
         {
             density: l
         } = (0, d.wRf)();
-    return (0, i.jsx)(ep, {
+    return (0, i.jsx)(eg, {
         ...e,
         ...n,
         density: l

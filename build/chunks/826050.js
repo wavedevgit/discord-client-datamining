@@ -1,6 +1,6 @@
 /** chunk id: 826050 params = (module,exports,require) **/
 n.d(t, {
-    A: () => g
+    A: () => p
 });
 var i = n(627968),
     l = n(64700),
@@ -12,7 +12,7 @@ var i = n(627968),
     c = n(203982),
     u = n(652215),
     h = n(985018),
-    A = n(709081);
+    A = n(618154);
 let _ = {
     friction: 15,
     tension: 100
@@ -135,4 +135,4 @@ class m extends l.PureComponent {
         }
     }
 }
-let g = m
+let p = m

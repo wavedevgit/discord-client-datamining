@@ -15,8 +15,8 @@ var i = n(627968),
     A = n(769015),
     _ = n(409626),
     m = n(692969),
-    g = n(290987),
-    p = n(657331),
+    p = n(290987),
+    g = n(657331),
     f = n(820512),
     x = n(769022),
     E = n(898926),
@@ -25,7 +25,7 @@ var i = n(627968),
     N = n(562153),
     T = n(652215),
     S = n(985018),
-    b = n(4568);
+    b = n(930935);
 
 function v(e) {
     let {
@@ -56,7 +56,7 @@ function v(e) {
                 children: S.intl.format(S.t.CKIMrx, {
                     user: (0, i.jsx)(u.A, {
                         tag: "span",
-                        onClick: () => (0, p.openUserProfileModal)({
+                        onClick: () => (0, g.openUserProfileModal)({
                             userId: t.userId,
                             guildId: n,
                             channelId: l
@@ -85,9 +85,9 @@ function v(e) {
                 variant: "text-xs/normal",
                 color: "text-muted",
                 className: b.gE,
-                children: (0, i.jsx)(g.Ay, {
+                children: (0, i.jsx)(p.Ay, {
                     end: t.timestamp,
-                    location: g.Ay.Locations.VOICE_CHANNEL_HISTORY
+                    location: p.Ay.Locations.VOICE_CHANNEL_HISTORY
                 })
             })]
         })]
@@ -121,7 +121,7 @@ function y(e) {
                     userHook: (e, s) => (0, i.jsx)(u.A, {
                         tag: "span",
                         className: b.C3,
-                        onClick: () => (0, p.openUserProfileModal)({
+                        onClick: () => (0, g.openUserProfileModal)({
                             userId: t.userId,
                             guildId: n,
                             channelId: l
@@ -142,9 +142,9 @@ function y(e) {
                 variant: "text-xs/normal",
                 color: "text-muted",
                 className: b.gE,
-                children: (0, i.jsx)(g.Ay, {
+                children: (0, i.jsx)(p.Ay, {
                     end: t.timestamp,
-                    location: g.Ay.Locations.VOICE_CHANNEL_HISTORY
+                    location: p.Ay.Locations.VOICE_CHANNEL_HISTORY
                 })
             })]
         })]

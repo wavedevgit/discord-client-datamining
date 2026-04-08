@@ -15,8 +15,8 @@ var i = n(627968),
     A = n(102876),
     _ = n(657331),
     m = n(253932),
-    g = n(427157),
-    p = n(287809),
+    p = n(427157),
+    g = n(287809),
     f = n(954571),
     x = n(661191),
     E = n(998218),
@@ -31,7 +31,7 @@ var i = n(627968),
     j = n(457404),
     R = n(652215),
     O = n(985018),
-    L = n(174720),
+    L = n(616999),
     M = n(213398),
     D = n(537997);
 
@@ -40,7 +40,7 @@ function U(e) {
         item: t
     } = e, n = t.message?.content;
     if (null == n) return (0, i.jsx)("div", {});
-    let l = p.default.getUser(t.message?.author?.id) ?? new g.A(t.message?.author),
+    let l = g.default.getUser(t.message?.author?.id) ?? new p.A(t.message?.author),
         s = h.A.parse(n);
     return (0, i.jsxs)("div", {
         className: L.PI,
@@ -147,8 +147,8 @@ let w = l.memo(function(e) {
         }) : (t.type === C.hW.FRIEND_REQUEST_ACCEPTED || t.type === C.hW.GAME_FRIEND_REQUEST_ACCEPTED) && null != t.other_user && (m = (0, i.jsx)(y.R, {
             userId: t.other_user.id
         }));
-        let g = null != t.local_id,
-            p = (0, T.A)({
+        let p = null != t.local_id,
+            g = (0, T.A)({
                 item: t,
                 renderApplication: e => (0, i.jsx)(k, {
                     applicationId: e
@@ -170,7 +170,7 @@ let w = l.memo(function(e) {
                 focusProps: {
                     offset: 4
                 },
-                "aria-label": p,
+                "aria-label": g,
                 onClick: A,
                 children: [c ? null : (0, i.jsx)("div", {
                     className: L.gy
@@ -183,7 +183,7 @@ let w = l.memo(function(e) {
                     }), (0, i.jsxs)(a.Text, {
                         variant: "text-md/normal",
                         color: c ? "text-muted" : "text-default",
-                        children: ["string" != typeof p ? p : h.A.parse(p), M]
+                        children: ["string" != typeof g ? g : h.A.parse(g), M]
                     }), t.message?.content != null ? (0, i.jsx)(U, {
                         item: t
                     }) : null, null != t.callout ? (0, i.jsx)(G, {
@@ -194,7 +194,7 @@ let w = l.memo(function(e) {
                         children: (0, N.jb)(x.default.extractTimestamp(t.id))
                     }), m]
                 })]
-            }), g ? null : (0, i.jsx)(j.e, {
+            }), p ? null : (0, i.jsx)(j.e, {
                 item: t
             })]
         })

@@ -1,6 +1,6 @@
 /** chunk id: 397036 params = (module,exports,require) **/
 n.d(t, {
-    A: () => p
+    A: () => g
 });
 var i = n(627968),
     l = n(64700),
@@ -15,13 +15,13 @@ var i = n(627968),
     A = n(250253),
     _ = n(652215),
     m = n(985018),
-    g = n(807611);
+    p = n(551432);
 
-function p(e) {
+function g(e) {
     let {
         guildId: t,
         channelId: n
-    } = e, p = (0, c.e)({
+    } = e, g = (0, c.e)({
         guildId: t,
         channelId: n
     }), f = (0, d.uk)(t), x = (0, d.Tq)(t), E = (0, s.bG)([o.A], () => o.A.getGuild(t), [t]), I = E?.name, C = (0, s.bG)([r.A], () => r.A.getChannel(n)), N = l.useMemo(() => {
@@ -33,28 +33,28 @@ function p(e) {
     return ((0, u.A)({
         guildId: t,
         location: _.ThZ.ROLE_SUBSCRIPTION_GATED_CHANNEL,
-        relevantSubscriptionListingIds: p.map(e => e.id)
+        relevantSubscriptionListingIds: g.map(e => e.id)
     }), null == E) ? (0, i.jsx)("div", {
-        className: g.__invalid_spinnerContainer,
+        className: p.__invalid_spinnerContainer,
         children: (0, i.jsx)(a.y$y, {
-            className: g.__invalid_spinner
+            className: p.__invalid_spinner
         })
     }) : (0, i.jsxs)(a.ArX, {
-        className: g.$$,
+        className: p.$$,
         children: [(0, i.jsx)(a.Heading, {
             variant: "heading-xl/semibold",
-            className: g.DX,
+            className: p.DX,
             children: m.intl.format(m.t.xHMpym, {
                 serverName: I,
                 channelName: C?.name
             })
         }), (0, i.jsx)(a.Text, {
-            className: g.Lv,
+            className: p.Lv,
             variant: "text-md/normal",
             color: "text-default",
             children: x?.description
         }), (0, i.jsx)(h.A, {
-            children: p.filter(e => null != N[e.id]).map(e => (0, i.jsx)(A.A, {
+            children: g.filter(e => null != N[e.id]).map(e => (0, i.jsx)(A.A, {
                 guildId: t,
                 listingId: e.id,
                 groupListingId: N[e.id],

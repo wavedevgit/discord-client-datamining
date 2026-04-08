@@ -18,8 +18,8 @@ function c(e) {
         location: c
     } = e, g = (0, i.bG)([r.A], () => r.A.getVoiceChannelId() === n.id), h = (0, o.tx)(n.guild_id, n.id, t), {
         icon: A,
-        iconColor: p,
-        tooltipText: x,
+        iconColor: x,
+        tooltipText: p,
         disabled: I,
         shouldHideButton: m,
         onClick: S
@@ -29,13 +29,13 @@ function c(e) {
         location: c
     });
     return !g || m ? null : (0, l.jsx)(s.m_, {
-        text: x,
+        text: p,
         children: (0, l.jsx)("div", {
             children: (0, l.jsx)(a.K0, {
                 variant: "icon-only",
                 icon: () => (0, l.jsx)(A, {
                     size: "sm",
-                    color: p
+                    color: x
                 }),
                 "aria-label": u.intl.formatToPlainString(u.t["3IPBG1"], {
                     username: h

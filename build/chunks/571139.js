@@ -1,81 +1,81 @@
 /** chunk id: 571139 params = (module,exports,require) **/
-n.d(t, {
-    A: () => N
+n.d(e, {
+    A: () => O
 }), n(321073);
 var i = n(627968);
 n(64700);
 var l = n(503698),
-    s = n.n(l),
-    a = n(873263),
-    r = n(311907),
+    r = n.n(l);
+if (21552 == n.j) var s = n(873263);
+var a = n(311907),
     o = n(314116),
-    d = n(397927),
-    c = n(334465),
+    c = n(397927),
+    d = n(334465),
     u = n(71393),
-    h = n(967198),
-    A = n(624458),
-    _ = n(202384),
-    m = n(513461),
-    g = n(709977),
-    p = n(212455),
-    f = n(652215),
-    x = n(746080),
-    E = n(985018),
-    I = n(79790),
-    C = n(215433);
-let N = () => {
-    let e = (0, r.bG)([h.A], () => h.A.getGuildId(), []),
-        t = (0, r.bG)([u.A], () => u.A.getGuild(e), [e]),
-        l = (0, r.bG)([p.A], () => null != e ? p.A.getRequest(e) : null, [e]),
-        N = (0, a.zy)(),
-        T = (0, c.B)(N.pathname, f.BVt.CHANNEL(t?.id, x.VV.GUILD_ONBOARDING))?.isExact === !0;
-    if (null == t || !(0, g.Qd)(t) || T) return null;
-    let S = l?.applicationStatus ?? m.B5.STARTED,
-        b = null,
-        v = null,
+    _ = n(967198),
+    E = n(624458),
+    T = n(202384),
+    A = n(513461),
+    I = n(709977),
+    N = n(212455),
+    R = n(652215),
+    p = n(746080),
+    h = n(985018),
+    C = n(610749),
+    m = n(375986);
+let O = 21552 == n.j ? () => {
+    let t = (0, a.bG)([_.A], () => _.A.getGuildId(), []),
+        e = (0, a.bG)([u.A], () => u.A.getGuild(t), [t]),
+        l = (0, a.bG)([N.A], () => null != t ? N.A.getRequest(t) : null, [t]),
+        O = (0, s.zy)(),
+        g = (0, d.B)(O.pathname, R.BVt.CHANNEL(e?.id, p.VV.GUILD_ONBOARDING))?.isExact === !0;
+    if (null == e || !(0, I.Qd)(e) || g) return null;
+    let S = l?.applicationStatus ?? A.B5.STARTED,
         y = null,
-        j = [I.lm, C.lm];
+        x = null,
+        M = null,
+        P = [C.lm, m.lm];
     switch (S) {
-        case m.B5.SUBMITTED:
-            b = E.intl.string(E.t["5iLvSx"]), v = E.intl.string(E.t.mqtdmQ), y = () => {
+        case A.B5.SUBMITTED:
+            y = h.intl.string(h.t["5iLvSx"]), x = h.intl.string(h.t.mqtdmQ), M = () => {
                 (0, o.A)({
-                    title: E.intl.string(E.t.aIz1oV),
-                    subtitle: E.intl.string(E.t["13tjTU"]),
+                    title: h.intl.string(h.t.aIz1oV),
+                    subtitle: h.intl.string(h.t["13tjTU"]),
                     variant: "primary",
-                    confirmText: E.intl.string(E.t["cY+Oob"]),
-                    onConfirm: () => A.A.removeGuildJoinRequest(t.id)
+                    confirmText: h.intl.string(h.t["cY+Oob"]),
+                    onConfirm: () => E.A.removeGuildJoinRequest(e.id)
                 })
             };
             break;
-        case m.B5.REJECTED:
-            b = E.intl.string(E.t.lk30cY), v = E.intl.string(E.t["8RrsHr"]), y = () => {
-                (0, d.mMO)(async () => {
+        case A.B5.REJECTED:
+            y = h.intl.string(h.t.lk30cY), x = h.intl.string(h.t["8RrsHr"]), M = () => {
+                (0, c.mMO)(async () => {
                     let {
-                        default: e
+                        default: t
                     } = await n.e("37548").then(n.bind(n, 856103));
-                    return n => (0, i.jsx)(e, {
-                        guildId: t.id,
+                    return n => (0, i.jsx)(t, {
+                        guildId: e.id,
                         ...n
                     })
                 })
-            }, j.push(I.z3);
+            }, P.push(C.z3);
             break;
         default:
-            b = E.intl.string(E.t.G5YKXP), v = E.intl.string(E.t["r8/DT+"]), y = () => {
-                (0, _.Ze)(t.id)
+            y = h.intl.string(h.t.G5YKXP), x = h.intl.string(h.t["r8/DT+"]), M = () => {
+                (0, T.Ze)(e.id)
             }
     }
     return (0, i.jsxs)("div", {
-        className: s()(...j),
-        children: [(0, i.jsx)(d.Text, {
-            className: I.wx,
+        className: r()(...P),
+        children: [(0, i.jsx)(c.Text, {
+            className: C.wx,
             variant: "text-sm/normal",
-            children: b
-        }), (0, i.jsx)(d.Button, {
+            children: y
+        }), (0, i.jsx)(c.Button, {
             variant: "overlay-primary",
             size: "sm",
-            onClick: y,
-            text: v
+            onClick: M,
+            text: x
         })]
     })
-}
+} : null

@@ -1,17 +1,17 @@
 /** chunk id: 284738 params = (module,exports,require) **/
-e.d(i, {
-    R: () => S,
+n.d(t, {
+    R: () => o,
     Y: () => s
 });
-var n = e(311907),
-    r = e(71393),
-    E = e(652215);
+var r = n(311907),
+    a = n(71393),
+    l = n(652215);
 
-function s(t) {
-    let [i] = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : [r.A];
-    return !!i.getGuild(t)?.features.has(E.GuildFeatures.COMMUNITY)
+function s(e) {
+    let [t] = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : [a.A];
+    return !!t.getGuild(e)?.features.has(l.GuildFeatures.COMMUNITY)
 }
 
-function S(t) {
-    return (0, n.bG)([r.A], () => s(t, [r.A]), [t])
+function o(e) {
+    return (0, r.bG)([a.A], () => s(e, [a.A]), [e])
 }

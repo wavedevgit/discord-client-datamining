@@ -19,8 +19,8 @@ var i = n(627968),
     A = n(914430),
     _ = n(442433),
     m = n(676002),
-    g = n(485947),
-    p = n(924985),
+    p = n(485947),
+    g = n(924985),
     f = n(71393),
     x = n(576705),
     E = n(543465),
@@ -28,7 +28,7 @@ var i = n(627968),
     C = n(879124),
     N = n(652215),
     T = n(985018),
-    S = n(458004);
+    S = n(71735);
 
 function b(e) {
     e.stopPropagation()
@@ -45,7 +45,7 @@ let v = l.memo(function(e) {
                 children: j
             } = e,
             R = (0, o.bG)([E.Ay], () => E.Ay.isChannelMuted(s.getGuildId(), s.id)),
-            O = (0, o.bG)([p.A], () => p.A.isCollapsed(s.id)),
+            O = (0, o.bG)([g.A], () => g.A.isCollapsed(s.id)),
             L = (0, o.bG)([x.A], () => x.A.can(N.xBc.MANAGE_CHANNELS, s));
         t = null != v ? C > v ? S.mU : S.TR : S.fx;
         let M = l.useCallback(() => {
@@ -72,7 +72,7 @@ let v = l.memo(function(e) {
                 null != t && (0, h.mMO)(async () => {
                     let {
                         default: l
-                    } = await Promise.all([n.e("64233"), n.e("38405")]).then(n.bind(n, 409200));
+                    } = await Promise.all([n.e("64233"), n.e("52719")]).then(n.bind(n, 409200));
                     return n => (0, i.jsx)(l, {
                         ...n,
                         channelType: e,
@@ -119,7 +119,7 @@ let v = l.memo(function(e) {
                             focusProps: {
                                 enabled: !1
                             },
-                            children: [(0, i.jsx)(g.A, {
+                            children: [(0, i.jsx)(p.A, {
                                 className: S.UU,
                                 children: (0, i.jsx)(d.A, {
                                     children: s.name
@@ -166,7 +166,7 @@ let v = l.memo(function(e) {
                 className: a()(S.Ki, S._V),
                 children: [(0, i.jsx)("div", {
                     className: S.rb,
-                    children: (0, i.jsx)(g.A, {
+                    children: (0, i.jsx)(p.A, {
                         className: S.UU,
                         children: (0, i.jsx)(d.A, {
                             children: t
@@ -214,7 +214,7 @@ let v = l.memo(function(e) {
             className: S.fx,
             children: (0, i.jsx)("div", {
                 className: a()(S.Ki, S._V),
-                children: (0, i.jsx)(g.A, {
+                children: (0, i.jsx)(p.A, {
                     className: S.UU,
                     children: (0, i.jsx)(d.A, {
                         children: T.intl.string(T.t["V/u9Dy"])
@@ -235,7 +235,7 @@ let v = l.memo(function(e) {
             className: S.fx,
             children: (0, i.jsx)("div", {
                 className: a()(S.Ki, S._V),
-                children: (0, i.jsx)(g.A, {
+                children: (0, i.jsx)(p.A, {
                     className: S.UU,
                     children: (0, i.jsx)(d.A, {
                         children: t.name

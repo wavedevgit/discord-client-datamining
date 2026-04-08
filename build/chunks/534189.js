@@ -16,8 +16,8 @@ var l = n(934551),
     A = n(622543),
     _ = n(987112),
     m = n(31432),
-    g = n(389996),
-    p = n(559506),
+    p = n(389996),
+    g = n(559506),
     f = n(361311),
     x = n(886891),
     E = n(743987),
@@ -31,7 +31,7 @@ var l = n(934551),
     y = n(652215),
     j = n(996988),
     R = n(985018),
-    O = n(733866);
+    O = n(869891);
 
 function L(e) {
     let {
@@ -52,7 +52,7 @@ function L(e) {
     }), B = (0, s.bG)([u.A], () => u.A.hidePersonalInformation), V = (0, s.bG)([A.A], () => A.A.getUserProfile(t.id)?.application);
     return (0, i.jsxs)("div", {
         className: O.rf,
-        children: [(0, i.jsx)(p.A, {
+        children: [(0, i.jsx)(g.A, {
             userId: t.id
         }), (0, i.jsx)(b.A, {
             user: t,
@@ -109,7 +109,7 @@ function L(e) {
             children: [!B && L?.bio != null && L?.bio !== "" && (0, i.jsx)(N.A, {
                 heading: R.intl.string(R.t.ZzAR2Y),
                 headingColor: "text-strong",
-                children: (0, i.jsx)(g.A, {
+                children: (0, i.jsx)(p.A, {
                     userId: t.id,
                     userBio: L.bio,
                     isHoveringOrFocusing: D,

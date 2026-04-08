@@ -1,6 +1,6 @@
 /** chunk id: 765627 params = (module,exports,require) **/
 n.d(t, {
-    A: () => p
+    A: () => g
 });
 var i = n(627968);
 n(64700);
@@ -16,9 +16,9 @@ var l = n(417597),
     A = n(435084),
     _ = n(412484),
     m = n(985018),
-    g = n(958766);
+    p = n(188149);
 
-function p(e) {
+function g(e) {
     let {
         tab: t,
         setTab: n,
@@ -26,25 +26,25 @@ function p(e) {
         closePopout: A
     } = e, {
         enabled: _,
-        inInbox: p
+        inInbox: g
     } = o.A.useConfig({
         location: "RecentsPopout"
     }), x = (0, c.Sc)(), E = (0, l.bG)([d.A], () => d.A.getOverdueMessageReminderCount());
     return (0, i.jsxs)("div", {
-        className: g.wx,
+        className: p.wx,
         children: [(0, i.jsxs)("div", {
-            className: g.qd,
+            className: p.qd,
             children: [(0, i.jsx)(r.K$s, {
                 size: "md",
                 color: "currentColor",
-                className: g.yH
+                className: p.yH
             }), (0, i.jsx)(r.Heading, {
-                className: g.Hi,
+                className: p.Hi,
                 variant: "text-lg/semibold",
                 color: "interactive-text-active",
                 children: m.intl.string(m.t.GSmTKJ)
             }), (0, i.jsxs)(r.sqX, {
-                className: g.ne,
+                className: p.ne,
                 onClick: e => e.stopPropagation(),
                 focusProps: {
                     enabled: !1
@@ -57,41 +57,41 @@ function p(e) {
                 })]
             })]
         }), (0, i.jsx)("div", {
-            className: g.YF,
+            className: p.YF,
             children: (0, i.jsxs)(r.VQ0, {
                 selectedItem: t,
                 type: "top",
                 look: "brand",
                 onItemSelect: n,
-                className: g.$H,
+                className: p.$H,
                 children: [(0, i.jsxs)(r.VQ0.Item, {
                     id: s.Y2.FOR_YOU,
                     "aria-label": m.intl.string(m.t["En+D+u"]),
-                    className: g.Mf,
+                    className: p.Mf,
                     children: [m.intl.string(m.t["En+D+u"]), u?.badgeForYou ? (0, i.jsx)(r.SC0, {
                         color: a.A.colors.BACKGROUND_FEEDBACK_NOTIFICATION.css,
-                        className: g.bG
+                        className: p.bG
                     }) : null]
                 }), (0, i.jsx)(r.VQ0.Item, {
                     id: s.Y2.UNREADS,
-                    className: g.Mf,
+                    className: p.Mf,
                     children: m.intl.string(m.t.sRUdB8)
                 }), (0, i.jsx)(r.VQ0.Item, {
                     "aria-label": m.intl.string(m.t.GRZF96),
                     id: s.Y2.MENTIONS,
-                    className: g.Mf,
+                    className: p.Mf,
                     children: m.intl.string(m.t.GRZF96)
-                }), _ && p ? (0, i.jsx)(r.VQ0.Item, {
+                }), _ && g ? (0, i.jsx)(r.VQ0.Item, {
                     "aria-label": m.intl.string(m.t["2pAkDA"]),
                     id: s.Y2.BOOKMARKS,
-                    className: g.Mf,
+                    className: p.Mf,
                     children: 0 === E ? m.intl.string(m.t["2pAkDA"]) : m.intl.formatToPlainString(m.t.I4fryG, {
                         count: E
                     })
                 }) : null, x ? (0, i.jsx)(r.VQ0.Item, {
                     "aria-label": "scheduled",
                     id: s.Y2.SCHEDULED,
-                    className: g.Mf,
+                    className: p.Mf,
                     children: m.intl.string(m.t.Fn6Odn)
                 }) : null]
             })

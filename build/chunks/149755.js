@@ -8,7 +8,7 @@ var s = a(627968),
     c = a(549711),
     i = a(652215);
 let n = p.lazy(() => (0, r.sq)({
-    createPromise: () => Promise.all([a.e("38939"), a.e("40396"), a.e("90365"), a.e("37901"), a.e("33563"), a.e("83867"), a.e("73169")]).then(a.bind(a, 122204)),
+    createPromise: () => Promise.all([a.e("38939"), a.e("40396"), a.e("90365"), a.e("37901"), a.e("33563"), a.e("47298"), a.e("73169")]).then(a.bind(a, 122204)),
     webpackId: 122204
 }));
 

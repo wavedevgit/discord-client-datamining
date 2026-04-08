@@ -15,8 +15,8 @@ var i = n(627968),
     A = n(202803),
     _ = n(636922),
     m = n(835835),
-    g = n(566908),
-    p = n(253932),
+    p = n(566908),
+    g = n(253932),
     f = n(734057),
     x = n(517019),
     E = n(309010),
@@ -26,7 +26,7 @@ var i = n(627968),
     T = n(963702),
     S = n(652215),
     b = n(985018),
-    v = n(917831);
+    v = n(398314);
 let y = {
     offset: {
         left: 4,
@@ -56,7 +56,7 @@ function R(e) {
         hasMore: o,
         loading: h,
         guildFilter: _,
-        roleFilter: p,
+        roleFilter: g,
         everyoneFilter: x
     } = (0, r.cf)([I.Ay], () => ({
         messages: I.Ay.getMentions(),
@@ -65,10 +65,10 @@ function R(e) {
         guildFilter: I.Ay.guildFilter,
         roleFilter: I.Ay.roleFilter,
         everyoneFilter: I.Ay.everyoneFilter
-    })), C = (0, g.Sc)(), N = (0, u.A)(_), T = (0, u.A)(p), y = (0, u.A)(x);
+    })), C = (0, p.Sc)(), N = (0, u.A)(_), T = (0, u.A)(g), y = (0, u.A)(x);
     l.useEffect(() => {
-        I.Ay.hasLoadedEver ? (null != N && _ !== N || null != T && p !== T || null != y && x !== y) && j(n, !0) : j(n, !0)
-    }, [N, _, T, p, y, x, n, !0]), (0, c.Ay)(() => {
+        I.Ay.hasLoadedEver ? (null != N && _ !== N || null != T && g !== T || null != y && x !== y) && j(n, !0) : j(n, !0)
+    }, [N, _, T, g, y, x, n, !0]), (0, c.Ay)(() => {
         s?.some(A.$r) && (d.A.clearMentions(), j(n, !0))
     }), l.useEffect(() => () => {
         d.A.truncateMentions(S.Ue3)
@@ -139,7 +139,7 @@ function L(e) {
                 channel: s,
                 className: v.iU,
                 hideAccessories: r,
-                compact: p.hH.getSetting(),
+                compact: g.hH.getSetting(),
                 animateAvatar: !1,
                 focusProps: y,
                 trackAnnouncementViews: !0

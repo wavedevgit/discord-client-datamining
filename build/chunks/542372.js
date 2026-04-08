@@ -15,8 +15,8 @@ var i = n(627968),
     A = n(423562),
     _ = n(309010),
     m = n(954571),
-    g = n(203982),
-    p = n(723702),
+    p = n(203982),
+    g = n(723702),
     f = n(475815),
     x = n(652215);
 
@@ -61,7 +61,7 @@ function E(e) {
         L = E && !T,
         M = v === x._Of.VIDEO && y && !L,
         D = l.useCallback((e, i) => {
-            i !== e && (r.A.updateLayout(t.id, i, n), i === x.DUB.FULL_SCREEN && t.isPrivate() && g._.dispatch(x.jej.TEXTAREA_BLUR))
+            i !== e && (r.A.updateLayout(t.id, i, n), i === x.DUB.FULL_SCREEN && t.isPrivate() && p._.dispatch(x.jej.TEXTAREA_BLUR))
         }, [n, t]),
         U = l.useCallback(e => {
             null == O || e === x.DUB.FULL_SCREEN && (D(e, j.current), (0, f.sP)(e => {
@@ -95,7 +95,7 @@ function E(e) {
             video_layout: T ? "popout" : b,
             ...(0, o.QS)(e.id)
         }), () => {
-            T && (0, p.isMac)() || t(b)
+            T && (0, g.isMac)() || t(b)
         }
     }, [b, T]), l.useEffect(() => {
         null != O && S.current === x._Of.VIDEO && v === x._Of.VOICE && (0, f.sP)(O, R)

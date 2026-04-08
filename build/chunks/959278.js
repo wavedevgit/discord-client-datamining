@@ -44,7 +44,7 @@ var i = n(627968),
     H = n(386467),
     F = n(490358),
     Y = n(961973),
-    W = n(140354),
+    W = n(917973),
     K = n(440293),
     q = n(551036),
     z = n(46533),
@@ -93,7 +93,7 @@ var i = n(627968),
     eU = n(539916),
     eG = n(613057),
     ek = n(355097),
-    eV = n(325593);
+    eV = n(373838);
 let eB = (0, c.Fe)({
         createPromise: () => Promise.resolve().then(n.bind(n, 500831)),
         webpackId: 500831
@@ -297,10 +297,10 @@ let eB = (0, c.Fe)({
         ...e
     }),
     e1 = () => (0, i.jsx)(V.A, {}),
-    e7 = e => (0, i.jsx)(e9, {
+    e7 = e => (0, i.jsx)(e6, {
         ...e
     }),
-    e9 = e => {
+    e6 = e => {
         let {
             channelId: t,
             messageId: n
@@ -314,7 +314,7 @@ let eB = (0, c.Fe)({
             })
         }, [t, n]), null == t) ? (0, i.jsx)(el.A, {}) : e0(e)
     },
-    e6 = e => {
+    e9 = e => {
         let {
             match: t
         } = e;
@@ -730,7 +730,7 @@ function to() {
                                     disableTrack: !0
                                 }), (0, i.jsx)(v.A, {
                                     path: eM.BVt.GUILD_MEMBER_VERIFICATION(eI.pv.guildId()),
-                                    render: e6,
+                                    render: e9,
                                     impressionName: d.ImpressionNames.GUILD_MEMBER_VERIFICATION,
                                     disableTrack: !0
                                 }), (0, i.jsx)(v.A, {

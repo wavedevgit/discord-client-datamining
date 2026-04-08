@@ -13,8 +13,8 @@ var n = t(627968),
     u = t(606758),
     m = t(518477),
     x = t(985018),
-    p = t(439510),
-    A = t(886981);
+    p = t(194399),
+    A = t(549290);
 let g = {
         [m.jM.WIDGET_ADDED]: {
             message: x.intl.string(x.t.fFP1Uy),

@@ -15,8 +15,8 @@ var i = n(627968),
     A = n(775602),
     _ = n(793574),
     m = n(58149),
-    g = n(688810),
-    p = n(660387),
+    p = n(688810),
+    g = n(660387),
     f = n(343328),
     x = n(485947),
     E = n(915089),
@@ -33,7 +33,7 @@ var i = n(627968),
     O = n(701363),
     L = n(652215),
     M = n(985018),
-    D = n(767343);
+    D = n(387792);
 let U = l.memo(function() {
     return (0, i.jsxs)("svg", {
         width: "184",
@@ -245,7 +245,7 @@ class G extends l.Component {
             };
         this.hasReportedAnalytics = !0, m.Ay.trackWithMetadata(L.HAw.DM_LIST_VIEWED, {
             ...d,
-            ...(0, p.F)(),
+            ...(0, g.F)(),
             visible_user_ids: r.filter(e => null != e),
             changelog_dm_visible: o
         })
@@ -373,14 +373,14 @@ let P = e => {
         theme: s,
         children: a,
         listScrollerRef: c
-    } = e, h = l.Children.count(a), m = y.A.getMutablePrivateChannels(), p = (0, S.uX)(m), f = (0, d.yK)([R.default, T.A, b.A], () => {
+    } = e, h = l.Children.count(a), m = y.A.getMutablePrivateChannels(), g = (0, S.uX)(m), f = (0, d.yK)([R.default, T.A, b.A], () => {
         let e = R.default.getPrivateChannelIds();
         return (0, S.eh)(e, [T.A, b.A])
     });
     (0, C.P)(I._);
     let {
         analyticsLocations: x
-    } = (0, g.Ay)(_.A.CONTACTS_LIST), N = (0, v.NC)(), {
+    } = (0, p.Ay)(_.A.CONTACTS_LIST), N = (0, v.NC)(), {
         keyboardModeEnabled: j,
         version: O
     } = (0, d.cf)([A.A, y.A], () => ({
@@ -419,14 +419,14 @@ let P = e => {
         defaultFocused: (h + 1).toString(),
         setFocus: D
     });
-    return (0, i.jsx)(g.f5, {
+    return (0, i.jsx)(p.f5, {
         value: x,
         children: (0, i.jsx)(r.hD, {
             navigator: w,
             children: (0, i.jsx)(G, {
                 ...e,
                 density: t,
-                channels: p,
+                channels: g,
                 privateChannelIds: f,
                 listRef: M,
                 theme: N ?? s,

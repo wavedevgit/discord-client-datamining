@@ -17,8 +17,8 @@ var i = n(627968),
     A = n(296216),
     _ = n(793574),
     m = n(480890),
-    g = n(643501),
-    p = n(916641),
+    p = n(643501),
+    g = n(916641),
     f = n(652896),
     x = n(279250),
     E = n(346846),
@@ -34,7 +34,7 @@ n(281405);
 var j = n(544105),
     R = n(502075),
     O = n(985018),
-    L = n(437942);
+    L = n(988445);
 
 function M(e) {
     let {
@@ -98,8 +98,8 @@ let U = (0, A.J)(function(e) {
         isWatching: q,
         isGuest: X,
         priority: $,
-        showPreview: Q,
-        hidePreview: J,
+        showPreview: J,
+        hidePreview: Q,
         shouldShowHoverPopout: Z,
         otherClientSessionType: ee,
         voicePlatform: et,
@@ -109,32 +109,32 @@ let U = (0, A.J)(function(e) {
         application: es,
         hangStatusActivity: ea,
         showHangStatus: er
-    } = e, eo = l.useRef(null), [ed, ec] = l.useState(!1), eu = l.useRef(null), [eh, eA] = l.useState(!1), [e_, em] = l.useState(!1), [eg, ep] = l.useState(!1), ef = eh || eg || e_, ex = () => {
+    } = e, eo = l.useRef(null), [ed, ec] = l.useState(!1), eu = l.useRef(null), [eh, eA] = l.useState(!1), [e_, em] = l.useState(!1), [ep, eg] = l.useState(!1), ef = eh || ep || e_, ex = () => {
         ec(!ed)
     }, eE = (e, t) => {
         let n = new Set(["system:click_outside", "user:escape", "user:explicit"]);
         null != t && n.has(t) && (e_ && em(!1), eh && eA(!1)), eI()
     }, eI = () => {
-        clearTimeout(eu.current), J?.(s.id)
+        clearTimeout(eu.current), Q?.(s.id)
     };
     l.useEffect(() => () => {
         clearTimeout(eu.current)
     }, []);
     let eC = () => {
-            if (!z || !(0, x.eo)(A, v.A, T.A, S.A, g.default)[0]) return;
+            if (!z || !(0, x.eo)(A, v.A, T.A, S.A, p.default)[0]) return;
             let e = {
                 streamType: R.U4.GUILD,
                 ownerId: s.id,
                 channelId: A.id,
                 guildId: A.guild_id
             };
-            N.default.getId() !== s.id && u.default.selectVoiceChannel(A.id), q ? ((0, E.A)(e), d.A.selectParticipant(e.channelId, (0, f._z)(e))) : (0, h.Nl)(e), J?.(s.id)
+            N.default.getId() !== s.id && u.default.selectVoiceChannel(A.id), q ? ((0, E.A)(e), d.A.selectParticipant(e.channelId, (0, f._z)(e))) : (0, h.Nl)(e), Q?.(s.id)
         },
         eN = e => {
             (0, c.L3)(e, async () => {
                 let {
                     default: e
-                } = await Promise.all([n.e("97262"), n.e("42128"), n.e("84841"), n.e("50970")]).then(n.bind(n, 107632));
+                } = await Promise.all([n.e("97262"), n.e("42128"), n.e("84841"), n.e("36382")]).then(n.bind(n, 107632));
                 return t => (0, i.jsx)(e, {
                     ...t,
                     user: s,
@@ -152,7 +152,7 @@ let U = (0, A.J)(function(e) {
             className: L.kZ,
             "data-dnd-name": A.name,
             onMouseEnter: en ? void 0 : () => {
-                ed || (eu.current = setTimeout(() => Q?.(s.id), 100))
+                ed || (eu.current = setTimeout(() => J?.(s.id), 100))
             },
             onMouseLeave: en ? void 0 : eI,
             children: (0, i.jsx)(I.A, {
@@ -203,7 +203,7 @@ let U = (0, A.J)(function(e) {
                         hangStatusActivity: ea,
                         showHangStatus: er
                     }, en ? (0, i.jsx)(r.m, {
-                        text: (0, p.A)(ee) ?? O.intl.string(O.t.IyYqqY),
+                        text: (0, g.A)(ee) ?? O.intl.string(O.t.IyYqqY),
                         children: (0, i.jsx)(C.Ay, {
                             ref: eo,
                             ...l
@@ -218,7 +218,7 @@ let U = (0, A.J)(function(e) {
                             onWatchStream: z ? eC : void 0,
                             hangStatusActivity: ea,
                             setIsHangStatusInputFocused: eA,
-                            setIsHangStatusEmojiPickerOpen: ep
+                            setIsHangStatusEmojiPickerOpen: eg
                         }),
                         shouldShow: (Z || er && ef && el) && !ed,
                         onRequestClose: eE,

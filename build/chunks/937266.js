@@ -23,7 +23,7 @@ var i = n(627968),
     C = n(328968),
     E = n(652215),
     I = n(985018),
-    v = n(657881);
+    v = n(497242);
 class b extends l.Component {
     static defaultProps = {
         renderFallback: E.tEg

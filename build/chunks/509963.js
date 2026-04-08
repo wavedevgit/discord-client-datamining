@@ -16,13 +16,13 @@ var i = n(627968),
     A = n(587895),
     _ = n(290987),
     m = n(976860),
-    g = n(194871),
-    p = n(966846),
+    p = n(194871),
+    g = n(966846),
     f = n(674378),
     x = n(505806),
     E = n(652215),
     I = n(985018),
-    C = n(832954);
+    C = n(618965);
 let N = {
     [E.WTw.INSTALLING]: {
         [_.pJ.NONE]: (e, t) => I.intl.formatToPlainString(I.t["p+2sE+"], {
@@ -110,7 +110,7 @@ class T extends l.PureComponent {
         if (e.type === E.WTw.UPDATING || e.type === E.WTw.REPAIRING || e.type === E.WTw.INSTALLING) {
             if (t) return I.intl.string(I.t["5oxtFS"]);
             else if (e.stage === E.OQC.PATCHING || e.stage === E.OQC.REPAIRING) return (0, i.jsx)(x.A, {
-                getHistoricalTotalBytes: g.A.getHistoricalTotalBytesWritten,
+                getHistoricalTotalBytes: p.A.getHistoricalTotalBytesWritten,
                 updateInterval: 5e3,
                 children: this.renderProgressBody
             })
@@ -205,16 +205,16 @@ function b(e, t) {
         return null != s && e.push(s), e
     }, [])
 }
-let v = o.Ay.connectStores([p.A, g.A, A.A], () => {
-    let e = p.A.activeItems,
-        t = b(e, g.A),
+let v = o.Ay.connectStores([g.A, p.A, A.A], () => {
+    let e = g.A.activeItems,
+        t = b(e, p.A),
         {
             total: n,
             progress: i
         } = f.zY(t);
     return {
         percent: f.uA(i, n),
-        isPaused: p.A.paused,
+        isPaused: g.A.paused,
         firstApplication: e.length > 0 ? A.A.getApplication(e[0].applicationId) : null,
         firstState: t.length > 0 ? t[0] : null
     }

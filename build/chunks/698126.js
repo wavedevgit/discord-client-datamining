@@ -15,18 +15,18 @@ var i = n(627968),
     A = n(734057),
     _ = n(71393),
     m = n(576705),
-    g = n(557534),
-    p = n(166444),
+    p = n(557534),
+    g = n(166444),
     f = n(652215),
     x = n(790782),
-    E = n(928409);
+    E = n(99566);
 
 function I(e, t) {
     let n = t.getGuildId();
     if (null == n) throw Error("TextChannel, preloadChannel: Channel does not have a guildId");
     o.A.preload(n, t.id)
 }
-class C extends g.Ay {
+class C extends p.Ay {
     handleContextMenu = e => {
         let {
             channel: t
@@ -68,7 +68,7 @@ class C extends g.Ay {
                 [E.r9]: this.isDisabled()
             }),
             "data-dnd-name": e.name,
-            children: (0, i.jsxs)(p.Ay, {
+            children: (0, i.jsxs)(g.Ay, {
                 className: E.Ki,
                 channel: e,
                 selected: t,

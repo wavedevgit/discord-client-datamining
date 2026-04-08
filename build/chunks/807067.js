@@ -15,8 +15,8 @@ var i = n(627968),
     A = n(735991),
     _ = n(786115),
     m = n(975412),
-    g = n(392054),
-    p = n(354138),
+    p = n(392054),
+    g = n(354138),
     f = n(111042),
     x = n(767599),
     E = n(267102),
@@ -28,7 +28,7 @@ var i = n(627968),
     b = n(855446),
     v = n(652215),
     y = n(985018),
-    j = n(690076);
+    j = n(543189);
 let R = r.K.APP_LAUNCHER_IN_VOICE_BANNER,
     O = `vc-activities-${(0,s.A)()}`;
 
@@ -39,10 +39,10 @@ function L(e) {
             onClick: h
         } = e,
         {
-            fetchState: g,
+            fetchState: p,
             voiceBannerCollection: E
         } = (t = (0, d.bG)([C.default], () => C.default.onlyShowPreviewAppCollections) ? a.W.PREVIEW : a.W.ACTIVE, l.useEffect(() => {
-            (0, p.An)({
+            (0, g.An)({
                 surface: R,
                 activeState: t
             })
@@ -56,7 +56,7 @@ function L(e) {
                 activeState: t
             }))[0]
         }),
-        I = g === f.e.FETCHING,
+        I = p === f.e.FETCHING,
         N = l.useMemo(() => {
             let e = E?.application_directory_collection_items[0];
             return null == e ? null : e.type === o.L.APPLICATION_BANNER ? e : null
@@ -111,15 +111,15 @@ let M = l.forwardRef(function(e, t) {
         onClick: A,
         className: _
     } = e, {
-        id: p,
+        id: g,
         guild_id: f
     } = s;
     l.useEffect(() => {
         N.default.track(v.HAw.ACTIVITIES_CENTER_CONTROL_TRAY_BUTTON_HOVERED, {
-            channel_id: p,
+            channel_id: g,
             guild_id: f
         })
-    }, [p, f]), l.useEffect(() => {
+    }, [g, f]), l.useEffect(() => {
         a || r()
     }, [r, a]);
     let x = (0, E.Us)(),
@@ -217,7 +217,7 @@ let M = l.forwardRef(function(e, t) {
                             },
                             aspectRatio: b.C.AspectRatio.THIRTEEN_BY_ELEVEN,
                             animatedDivClass: j.KU,
-                            commandOrigin: g.iw.MINI_SHELF
+                            commandOrigin: p.iw.MINI_SHELF
                         }, e.application.id))
                     })]
                 })]

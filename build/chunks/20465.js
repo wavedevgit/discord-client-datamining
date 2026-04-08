@@ -16,8 +16,8 @@ var i = n(627968),
     A = n(843472),
     _ = n(386467),
     m = n(465364),
-    g = n(763754),
-    p = n(448368),
+    p = n(763754),
+    g = n(448368),
     f = n(378058),
     x = n(148355),
     E = n(320501),
@@ -27,7 +27,7 @@ var i = n(627968),
     T = n(403362),
     S = n(652215),
     b = n(838541),
-    v = n(424366);
+    v = n(379807);
 let y = 10 * N.A.Millis.SECOND;
 
 function j(e) {
@@ -39,7 +39,7 @@ function j(e) {
     } = (0, d.cf)([I.A], () => ({
         isBlocked: I.A.isBlockedForMessage(t),
         isIgnored: I.A.isIgnoredForMessage(t)
-    }), [t]), r = (0, g.X4)(t), o = l.useContext(_.A), [u, E] = l.useState(!1), N = l.useCallback(e => {
+    }), [t]), r = (0, p.X4)(t), o = l.useContext(_.A), [u, E] = l.useState(!1), N = l.useCallback(e => {
         "A" !== e.target.nodeName && (h.A.updateChatOpen(t.channel_id, !0), A.A.jumpToMessage({
             channelId: t.channel_id,
             messageId: t.id,
@@ -52,7 +52,7 @@ function j(e) {
         renderedContent: y,
         trailingIcon: j,
         leadingIcon: R
-    } = (0, p.o)(t, T, n, s, v.BK, {
+    } = (0, g.o)(t, T, n, s, v.BK, {
         trailingIconClass: v.sl,
         leadingIconClass: v.aG,
         iconSize: b.eJ
@@ -136,23 +136,23 @@ function R(e) {
         isFrozen: s,
         count: 3,
         lingerMs: y
-    }), m = l.useRef({}), [g, p] = l.useState({}), f = l.useCallback((e, t) => {
+    }), m = l.useRef({}), [p, g] = l.useState({}), f = l.useCallback((e, t) => {
         null == t ? delete m.current[e] : m.current[e] = t
-    }, []), x = l.useRef(g);
+    }, []), x = l.useRef(p);
     l.useLayoutEffect(() => {
-        x.current = g
+        x.current = p
     }), l.useLayoutEffect(() => {
         let e = {},
             t = 0;
         for (let n of _) {
             let i = m.current[n.id] ?? 0;
             e[n.id] = t, t += i + 8
-        }(0, r.isEqual)(e, x.current) || p(e)
+        }(0, r.isEqual)(e, x.current) || g(e)
     }, [_]);
     let I = _.map(e => ({
             message: e,
             height: m.current[e.id],
-            y: g[e.id]
+            y: p[e.id]
         })),
         C = (0, c.pnh)(I, {
             keys: e => e.message.id,

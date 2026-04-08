@@ -15,8 +15,8 @@ var i = n(627968),
     A = n(200273),
     _ = n(565846),
     m = n(57907),
-    g = n(375500),
-    p = n(707653),
+    p = n(375500),
+    g = n(707653),
     f = n(50268),
     x = n(584682),
     E = n(58736),
@@ -73,10 +73,10 @@ function j(e) {
         channel: t,
         closePopout: n,
         onSelect: l
-    } = e, x = (0, d.A)(t, "Sidebar Overflow"), E = (0, u.A)(t), N = (0, m.A)(t), T = (0, g.A)(t), S = (0, a.A)(t), y = (0, c.A)(t), j = (0, _.A)(t.id), R = (0, A.A)(t), O = (0, o.A)(t), L = (0, r.A)(t), M = (0, f.A)({
+    } = e, x = (0, d.A)(t, "Sidebar Overflow"), E = (0, u.A)(t), N = (0, m.A)(t), T = (0, p.A)(t), S = (0, a.A)(t), y = (0, c.A)(t), j = (0, _.A)(t.id), R = (0, A.A)(t), O = (0, o.A)(t), L = (0, r.A)(t), M = (0, f.A)({
         id: t.id,
         label: v.intl.string(v.t.DQ797g)
-    }), D = (0, p.A)(t), U = (0, h.A)(t);
+    }), D = (0, g.A)(t), U = (0, h.A)(t);
 
     function G() {
         (0, I.iN)(t.id)

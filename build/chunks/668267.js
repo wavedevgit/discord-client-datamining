@@ -1,73 +1,73 @@
 /** chunk id: 668267 params = (module,exports,require) **/
-n.d(e, {
-    Kg: () => u,
-    LO: () => s,
-    P: () => f,
+e.d(t, {
+    Kg: () => d,
+    LO: () => u,
+    P: () => h,
     TX: () => c,
-    U5: () => _,
-    XC: () => h,
+    U5: () => b,
+    XC: () => f,
     mv: () => o,
-    tC: () => v,
+    tC: () => _,
     uS: () => A
 });
-var i = n(967198),
-    l = n(954571),
-    a = n(5180),
-    r = n(652215);
-let d = "manual_browsing";
+var i = e(967198),
+    l = e(954571),
+    a = e(5180),
+    r = e(652215);
+let s = "manual_browsing";
 
-function o(t) {
-    (0, a.ai)(i.A.getGuildId()) || (d = t)
+function o(n) {
+    (0, a.ai)(i.A.getGuildId()) || (s = n)
 }
 
-function u() {
-    let t = d;
-    return d = "manual_browsing", t
+function d() {
+    let n = s;
+    return s = "manual_browsing", n
 }
 
-function s(t, e, n) {
+function u(n, t, e) {
     l.default.track(r.HAw.FAVORITES_GUILD_ADD_TO_FAVORITES, {
-        source: t,
-        channel_type: e,
-        total_favorites: n
-    })
-}
-
-function c(t, e) {
-    l.default.track(r.HAw.FAVORITES_GUILD_REMOVE_FROM_FAVORITES, {
+        source: n,
         channel_type: t,
         total_favorites: e
     })
 }
 
-function f() {
+function c(n, t) {
+    l.default.track(r.HAw.FAVORITES_GUILD_REMOVE_FROM_FAVORITES, {
+        channel_type: n,
+        total_favorites: t
+    })
+}
+
+function h() {
     l.default.track(r.HAw.FAVORITES_GUILD_ORDER_UPDATED)
 }
 
-function A(t, e) {
+function A(n, t) {
     l.default.track(r.HAw.FAVORITES_GUILD_SETTING_TOGGLED, {
-        source: t,
-        is_visible: e
+        source: n,
+        is_visible: t
     })
 }
 
-function h(t) {
+function f(n) {
     l.default.track(r.HAw.FAVORITES_GUILD_UPSELL_MODAL_OPENED, {
-        source: t
+        source: n
     })
 }
 
-function v(t) {
+function _(n) {
     l.default.track(r.HAw.FAVORITES_GUILD_ADD_MODAL_OPENED, {
-        source: t
+        source: n
     })
 }
 
-function _(t, e, n, i) {
+function b(n, t, e, i) {
     l.default.track(r.HAw.FAVORITES_GUILD_VIEWED, {
-        source: t,
-        total_favorites: e,
-        is_xp_enabled: n,
+        source: n,
+        total_favorites: t,
+        is_xp_enabled: e,
         is_premium_tier_2: i
     })
 }

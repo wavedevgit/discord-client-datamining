@@ -26,8 +26,8 @@ var a = n(627968),
     y = n(652215),
     S = n(327337),
     E = n(431804),
-    T = n(413269),
-    N = n(885106);
+    T = n(561110),
+    N = n(153335);
 
 function I() {
     throw Error("Send help")
@@ -61,7 +61,7 @@ function k() {
                     return e = A.A.getChannelId() ?? "21154681615024128", void(0, c.mMO)(async () => {
                         let {
                             default: t
-                        } = await Promise.all([n.e("45033"), n.e("46717"), n.e("64690")]).then(n.bind(n, 788099));
+                        } = await Promise.all([n.e("45033"), n.e("46717"), n.e("75207")]).then(n.bind(n, 788099));
                         return n => (0, a.jsx)(t, {
                             otherUserId: "9876543210",
                             channelId: e,

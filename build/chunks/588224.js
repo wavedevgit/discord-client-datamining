@@ -15,8 +15,8 @@ var i = n(627968),
     A = n(313961),
     _ = n(532622),
     m = n(550946),
-    g = n(140547),
-    p = n(242919),
+    p = n(140547),
+    g = n(242919),
     f = n(7054),
     x = n(962392),
     E = n(220995),
@@ -40,7 +40,7 @@ var i = n(627968),
     k = n(340851),
     w = n(652215),
     B = n(31408),
-    V = n(647493);
+    V = n(552068);
 let H = l.memo(e => {
     let {
         mute: t,
@@ -58,18 +58,18 @@ let H = l.memo(e => {
         } = e;
         return t.has(x)
     }), [x, s.id]), F = (0, h.A)(null != H ? [H.applicationId] : []), W = (0, T.Ay)(x, s.guild_id)[0], K = (0, u.YY)(W?.application_id).data ?? void 0, [Y, z] = (0, r.yK)([y.A], () => [y.A.getStreamForUser(x, s.getGuildId()), y.A.getActiveStreamForUser(x, s.getGuildId())], [s, x]), q = (0, r.bG)([M.A], () => M.A.getSessionById(a)), X = G.Ay.useName(l), $ = (0, r.bG)([U.A], () => U.A.getVoicePlatformForChannel(s.id, x), [s.id, x]), {
-        enableHangStatus: Q
-    } = (0, g.$j)({
+        enableHangStatus: J
+    } = (0, p.$j)({
         guildId: s.guild_id,
         location: "VoiceUsers"
-    }), J = (0, _.Ay)(s, !0, l), Z = (0, r.bG)([p.A], () => E ? p.A.getHangStatusActivity() : null, [E]), ee = (0, f.h)(x), et = (0, S.uy)(s.id, x), {
+    }), Q = (0, _.Ay)(s, !0, l), Z = (0, r.bG)([g.A], () => E ? g.A.getHangStatusActivity() : null, [E]), ee = (0, f.h)(x), et = (0, S.uy)(s.id, x), {
         enableVCStatusIcons: en
     } = N.m.useExperiment({
         guildId: s.guild_id,
         location: "VoiceUsers"
     }, {
         autoTrackExposure: W?.session_id != null
-    }), ei = en || Q;
+    }), ei = en || J;
     return (0, i.jsx)(C.A, {
         shakeLocation: B.uD.VOICE_USER,
         isShaking: L,
@@ -93,7 +93,7 @@ let H = l.memo(e => {
             isGuest: P,
             isSelf: E,
             application: ei && W?.session_id != null ? K : void 0,
-            showHangStatus: J && Q && (E || null != ee),
+            showHangStatus: Q && J && (E || null != ee),
             hangStatusActivity: E ? Z : ee
         })
     })
@@ -110,8 +110,8 @@ let F = [],
             collapsedMax: u = 6,
             tabIndex: _,
             numAudience: m,
-            withGuildIcon: g = !1,
-            className: p,
+            withGuildIcon: p = !1,
+            className: g,
             children: C,
             isThread: N = !1
         } = e, [T, y] = l.useState(null), R = l.useRef(null), M = (0, S.$n)(s.id, d ?? F);
@@ -199,9 +199,9 @@ let F = [],
             }, "voice-invite-suggestions-button")), l
         })();
         return null == X && null == C ? null : (0, i.jsxs)(b.Wr, {
-            className: a()(p, V.p_, {
+            className: a()(g, V.p_, {
                 [V.yZ]: c,
-                [V.lY]: g,
+                [V.lY]: p,
                 [V.fT]: N
             }),
             collapsed: c,

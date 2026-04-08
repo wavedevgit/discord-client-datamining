@@ -1,6 +1,6 @@
 /** chunk id: 125248 params = (module,exports,require) **/
 n.d(t, {
-    A: () => g
+    A: () => p
 });
 var i = n(627968),
     l = n(64700),
@@ -12,7 +12,7 @@ var i = n(627968),
     c = n(73153),
     u = n(565645),
     h = n(775602),
-    A = n(307259);
+    A = n(823476);
 let _ = [A.u8, A.n$, A.uN, A.no],
     m = l.memo(function(e) {
         let {
@@ -32,7 +32,7 @@ let _ = [A.u8, A.n$, A.uN, A.no],
         })
     });
 
-function g(e) {
+function p(e) {
     let {
         channelId: t,
         callHeight: n

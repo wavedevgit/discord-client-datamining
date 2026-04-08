@@ -1,10 +1,10 @@
 /** chunk id: 598653 params = (module,exports,require) **/
-a.d(t, {
-    o: () => i
+n.d(t, {
+    o: () => l
 });
-var n = a(73153);
-let i = e => {
-    n.h.dispatch({
+var i = n(73153);
+let l = e => {
+    i.h.dispatch({
         type: "PURCHASED_ITEMS_FESTIVITY_SET_CAN_PLAY_WOW_MOMENT",
         value: e
     })

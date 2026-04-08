@@ -1,104 +1,104 @@
 /** chunk id: 78213 params = (module,exports,require) **/
-l.d(t, {
-    A: () => v
+i.d(t, {
+    A: () => x
 });
-var n = l(627968),
-    a = l(64700),
-    i = l(311907),
-    s = l(397927),
-    r = l(565645),
-    u = l(414079),
-    o = l(713517),
-    d = l(375499),
-    c = l(937773),
-    m = l(808728),
-    f = l(730906),
-    h = l(307731),
-    g = l(985018),
-    x = l(906796);
+var l = i(627968),
+    n = i(64700),
+    a = i(311907),
+    s = i(397927),
+    r = i(565645),
+    o = i(414079),
+    u = i(713517),
+    d = i(375499),
+    m = i(937773),
+    c = i(808728),
+    g = i(730906),
+    f = i(307731),
+    p = i(985018),
+    j = i(146283);
 
-function v(e) {
+function x(e) {
     let {
         className: t,
-        guildId: l,
-        error: v,
-        emojiId: j,
-        emojiName: p,
-        isRequiredField: N = !0,
+        guildId: i,
+        error: x,
+        emojiId: h,
+        emojiName: A,
+        isRequiredField: E = !0,
         shouldUpdateBothEmojiFields: b = !1,
         setEmojiId: y,
-        setEmojiName: C
-    } = e, A = (0, f.A)({
-        emojiId: j,
-        emojiName: p
-    }), w = (0, i.bG)([m.Ay], () => null != l ? m.Ay.getDefaultChannel(l) : null), S = a.useRef(null), {
-        isHoveringOrFocusing: M
-    } = (0, o.A)(S), E = () => {
-        C(void 0), y(void 0)
+        setEmojiName: S
+    } = e, N = (0, g.A)({
+        emojiId: h,
+        emojiName: A
+    }), v = (0, a.bG)([c.Ay], () => null != i ? c.Ay.getDefaultChannel(i) : null), C = n.useRef(null), {
+        isHoveringOrFocusing: k
+    } = (0, u.A)(C), I = () => {
+        S(void 0), y(void 0)
     }, T = e => {
-        e.stopPropagation(), E()
-    }, k = a.useMemo(() => {
-        let e = null != j && "" !== j,
-            t = null != p && "" !== p,
-            l = null != A && "" !== A,
-            n = t && !Number.isNaN(parseInt(p)) && !l && !e;
+        e.stopPropagation(), I()
+    }, _ = n.useMemo(() => {
+        let e = null != h && "" !== h,
+            t = null != A && "" !== A,
+            i = null != N && "" !== N,
+            l = t && !Number.isNaN(parseInt(A)) && !i && !e;
         return {
             hasEmojiId: e,
             hasEmojiName: t,
-            hasEmojiDisplayName: l,
-            isDeletedCustomEmoji: n
+            hasEmojiDisplayName: i,
+            isDeletedCustomEmoji: l
         }
-    }, [j, p, A]), P = !k.isDeletedCustomEmoji && k.hasEmojiDisplayName;
-    return (0, n.jsx)("div", {
+    }, [h, A, N]), w = !_.isDeletedCustomEmoji && _.hasEmojiDisplayName;
+    return (0, l.jsx)("div", {
         className: t,
-        children: (0, n.jsx)(s.D0$, {
-            required: N,
-            label: g.intl.string(g.t["3BQmiC"]),
-            errorMessage: v ?? void 0,
-            children: (0, n.jsx)(s.YNO, {
-                targetElementRef: S,
+        children: (0, l.jsx)(s.D0$, {
+            required: E,
+            label: p.intl.string(p.t["3BQmiC"]),
+            errorMessage: x ?? void 0,
+            children: (0, l.jsx)(s.YNO, {
+                targetElementRef: C,
                 animation: s.YNO.Animation.NONE,
                 position: "top",
                 renderPopout: e => {
                     let {
                         closePopout: t
                     } = e;
-                    return (0, n.jsx)(c.A, {
+                    return (0, l.jsx)(m.A, {
                         closePopout: t,
-                        pickerIntention: h.b_.SOUNDBOARD,
+                        pickerIntention: f.b_.SOUNDBOARD,
                         onNavigateAway: t,
                         onSelectEmoji: e => {
                             let {
-                                emoji: l,
-                                willClose: n
-                            } = e, a = l?.id == null;
-                            E(), a ? C(l?.optionallyDiverseSequence) : (b && C(l?.name), y(l?.id)), n && t()
+                                emoji: i,
+                                willClose: l
+                            } = e, n = i?.id == null;
+                            I(), n ? S(i?.optionallyDiverseSequence) : (b && S(i?.name), y(i?.id)), l && t()
                         },
-                        guildId: l,
-                        channel: w
+                        guildId: i,
+                        channel: v
                     })
                 },
                 children: (e, t) => {
                     let {
-                        isShown: l
+                        isShown: i
                     } = t;
-                    return (0, n.jsxs)(s.FON, {
+                    return (0, l.jsxs)(s.FON, {
                         ...e,
-                        className: x.LM,
-                        ref: S,
-                        children: [(0, n.jsx)(d.A, {
-                            active: l,
+                        className: j.LM,
+                        ref: C,
+                        children: [(0, l.jsx)(d.A, {
+                            active: i,
                             tabIndex: 0,
-                            renderButtonContents: !k.isDeletedCustomEmoji && (k.hasEmojiId || k.hasEmojiName) ? () => (0, n.jsx)(r.A, {
-                                emojiName: p,
-                                emojiId: j
+                            renderButtonContents: !_.isDeletedCustomEmoji && (_.hasEmojiId || _.hasEmojiName) ? () => (0, l.jsx)(r.A, {
+                                emojiName: A,
+                                emojiId: h
                             }) : null
-                        }), (0, n.jsx)(s.Text, {
+                        }), (0, l.jsx)(s.Text, {
                             variant: "text-md/normal",
                             lineClamp: 1,
-                            color: P ? "text-default" : "text-muted",
-                            children: P ? `:${A}:` : g.intl.string(g.t.QTK0TJ)
-                        }), P && M && (0, n.jsx)(u.A, {
+                            color: w ? "text-default" : "text-muted",
+                            children: w ? `:${N}:` : p.intl.string(p.t.QTK0TJ)
+                        }), w && k && (0, l.jsx)(o.A, {
                             ...e,
                             onClick: T
                         })]

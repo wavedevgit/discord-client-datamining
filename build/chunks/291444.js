@@ -34,7 +34,7 @@ var i = n(627968),
     O = n(307879),
     G = n(652215),
     L = n(985018),
-    D = n(217515);
+    D = n(960528);
 
 function M() {
     let e = (0, a.bG)([h.A], () => h.A.getGuildId());

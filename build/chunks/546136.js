@@ -16,7 +16,7 @@ var i = t(503698),
     u = t(338003),
     m = t(642737),
     x = t(985018),
-    p = t(266603);
+    p = t(475276);
 let A = "profile-modal-editing-panel",
     g = "profile-modal-editing-panel-heading";
 

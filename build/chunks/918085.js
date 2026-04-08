@@ -17,7 +17,7 @@ var i = n(627968),
     p = n(863574),
     g = n(622413),
     A = n(652215),
-    x = n(297064);
+    x = n(853867);
 class f extends l.PureComponent {
     static defaultProps = {
         showMediaPlaceholder: !1,

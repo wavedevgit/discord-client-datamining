@@ -16,8 +16,8 @@ var i = n(627968),
     A = n(442433),
     _ = n(793574),
     m = n(688810),
-    g = n(139286),
-    p = n(480890),
+    p = n(139286),
+    g = n(480890),
     f = n(267102),
     x = n(342296),
     E = n(961350),
@@ -25,7 +25,7 @@ var i = n(627968),
     C = n(562153),
     N = n(105530),
     T = n(806931),
-    S = n(101832);
+    S = n(772959);
 let b = l.memo(function(e) {
         let {
             guildId: t,
@@ -109,7 +109,7 @@ let b = l.memo(function(e) {
         } = (0, m.Ay)(_.A.AUDIENCE_TILE), y = (0, f.Us)(), j = (0, c.bG)([I.Ay], () => null != C && I.Ay.getMember(C, r.id)?.premiumSince != null, [C, r.id]), R = l.useRef(null);
         o()(null != C, "Channel cannot be guildless");
         let O = l.useCallback(e => {
-            (0, g.x)({
+            (0, p.x)({
                 type: d.ImpressionTypes.MENU,
                 name: d.ImpressionNames.CALL_TILE_CONTEXT_MENU,
                 properties: {
@@ -120,7 +120,7 @@ let b = l.memo(function(e) {
             }), (0, A.L3)(e, async () => {
                 let {
                     default: e
-                } = await Promise.all([n.e("97262"), n.e("42128"), n.e("84841"), n.e("50970")]).then(n.bind(n, 107632));
+                } = await Promise.all([n.e("97262"), n.e("42128"), n.e("84841"), n.e("36382")]).then(n.bind(n, 107632));
                 return t => (0, i.jsx)(e, {
                     ...t,
                     user: r,
@@ -129,7 +129,7 @@ let b = l.memo(function(e) {
                     showMediaItems: !0,
                     showStageChannelItems: !0,
                     showChatItems: !1,
-                    onInteraction: (0, p.s)("GuildChannelUserContextMenu", b, {
+                    onInteraction: (0, g.s)("GuildChannelUserContextMenu", b, {
                         targetUserId: r.id,
                         tileType: T.qs.USER
                     })

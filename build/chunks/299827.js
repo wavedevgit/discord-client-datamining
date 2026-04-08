@@ -10,7 +10,7 @@ var l = n(627968),
     o = n(576705),
     d = n(652215),
     u = n(985018),
-    c = n(465892);
+    c = n(133501);
 
 function g(e) {
     let {
@@ -19,7 +19,7 @@ function g(e) {
         onClose: g
     } = e, h = t.id, A = i.useCallback(() => {
         g(), r.A.open(h, d.BEX.INVITES)
-    }, [h, g]), p = i.useCallback(e => (0, l.jsx)(s.DUT, {
+    }, [h, g]), x = i.useCallback(e => (0, l.jsx)(s.DUT, {
         className: c.P5,
         onClick: A,
         children: (0, l.jsx)(s.Text, {
@@ -28,7 +28,7 @@ function g(e) {
             tag: "span",
             children: e
         })
-    }), [A]), x = i.useCallback(e => (0, l.jsx)(s.MzZ, {
+    }), [A]), p = i.useCallback(e => (0, l.jsx)(s.MzZ, {
         href: d.X7G.INVITES_HELP,
         target: "_blank",
         children: (0, l.jsx)(s.Text, {
@@ -38,8 +38,8 @@ function g(e) {
             children: e
         })
     }), []), I = n instanceof a.A ? n.code !== d.t02.TOO_MANY_INVITES ? n.getAnyErrorMessage() : o.A.can(d.xBc.MANAGE_GUILD, t) ? u.intl.format(u.t["H/RUY1"], {
-        inviteListHook: p,
-        inviteHelpHook: x
+        inviteListHook: x,
+        inviteHelpHook: p
     }) : u.intl.string(u.t["/FxH6G"]) : "message" in n ? n.message : u.intl.string(u.t.eAn6z2);
     return (0, l.jsx)(s.Text, {
         className: c.gJ,

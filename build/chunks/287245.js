@@ -15,8 +15,8 @@ var i = n(627968),
     A = n(609425),
     _ = n(922301),
     m = n(750112),
-    g = n(451909),
-    p = n(538355),
+    p = n(451909),
+    g = n(538355),
     f = n(854627),
     x = n(447404),
     E = n(320501),
@@ -24,14 +24,14 @@ var i = n(627968),
     C = n(427262),
     N = n(652215),
     T = n(985018),
-    S = n(124172);
+    S = n(888899);
 let b = e => {
         let {
             channel: t,
             message: n,
             out: l = !1,
             noAnimate: s = !1
-        } = e, o = (0, p.A)(n, {
+        } = e, o = (0, g.A)(n, {
             hideSimpleEmbedContent: !0,
             formatInline: !1,
             noStyleAndInteraction: !1,
@@ -44,7 +44,7 @@ let b = e => {
             guildId: t.guild_id
         }), {
             avatarSrc: h,
-            avatarDecorationSrc: g
+            avatarDecorationSrc: p
         } = (0, f.A)({
             userId: d.id,
             guildId: t.guild_id,
@@ -58,7 +58,7 @@ let b = e => {
             children: [(0, i.jsx)("div", {
                 children: (0, i.jsx)(r.euF, {
                     src: h,
-                    avatarDecoration: g,
+                    avatarDecoration: p,
                     size: r._3J.SIZE_24,
                     "aria-label": "User Avatar",
                     isTyping: !1
@@ -91,7 +91,7 @@ let b = e => {
             channel: t,
             idle: n,
             showChat: s
-        } = e, A = l.useRef(new Set), [_, m] = l.useState([]), [p, f] = l.useState(0), C = l.useRef(null), T = l.useRef(!1), [v, y] = l.useState(!0), [j, R] = l.useState(""), [O, L] = l.useState((0, u.x7)(j));
+        } = e, A = l.useRef(new Set), [_, m] = l.useState([]), [g, f] = l.useState(0), C = l.useRef(null), T = l.useRef(!1), [v, y] = l.useState(!0), [j, R] = l.useState(""), [O, L] = l.useState((0, u.x7)(j));
         l.useEffect(() => {
             let e = A.current;
             return () => {
@@ -125,7 +125,7 @@ let b = e => {
             D = l.useMemo(() => {
                 let e = _[_.length - 1];
                 if (null == e) return !0;
-                if (p + 100 > Date.now()) return !1;
+                if (g + 100 > Date.now()) return !1;
                 let t = Date.now() > e.timestamp.getTime() + 5e3;
                 if (!t) {
                     let e = setTimeout(() => {
@@ -134,7 +134,7 @@ let b = e => {
                     A.current.add(e)
                 }
                 return t
-            }, [_, p]);
+            }, [_, g]);
         return l.useEffect(() => {
             let e = e => {
                 let {
@@ -210,7 +210,7 @@ let b = e => {
                         shouldClear: !1,
                         shouldRefocus: !1
                     };
-                    let l = g.Ay.parse(t, i);
+                    let l = p.Ay.parse(t, i);
                     try {
                         return await d.A.sendMessage(t.id, l, !0, {
                             location: "Haven"

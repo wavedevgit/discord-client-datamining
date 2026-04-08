@@ -15,8 +15,8 @@ var i = n(627968),
     A = n(104171),
     _ = n(297334),
     m = n(454938),
-    g = n(714991),
-    p = n(57991),
+    p = n(714991),
+    g = n(57991),
     f = n(513461),
     x = n(199285),
     E = n(347951),
@@ -36,7 +36,7 @@ var i = n(627968),
     D = n(145408),
     U = n(652215),
     G = n(985018),
-    P = n(826427);
+    P = n(981248);
 
 function k(e, t, n) {
     return 0 === t.length ? null : (0, i.jsxs)("div", {
@@ -69,7 +69,7 @@ function w(e) {
 }
 
 function B(e) {
-    let t, n, s, r, c, m, g, p, f, x, E, I, D, G, B, V, H, F, W, K, {
+    let t, n, s, r, c, m, p, g, f, x, E, I, D, G, B, V, H, F, W, K, {
             guild: Y
         } = e,
         z = Y.id,
@@ -77,8 +77,8 @@ function B(e) {
             voiceUsersToShow: q,
             stageSpeakers: X,
             numStageListeners: $,
-            streamUsersToShow: Q,
-            embeddedActivitiesUsers: J
+            streamUsersToShow: J,
+            embeddedActivitiesUsers: Q
         } = (t = Y.id, n = (0, d.yK)([j.Ay, S.A], () => [...j.Ay.getChannels(t)[j.vM].filter(e => {
             let {
                 channel: t
@@ -89,7 +89,7 @@ function B(e) {
                 channel: t
             } = e;
             return t.id
-        }), ...Object.values(S.A.getThreadsForGuild(t)).flatMap(e => Object.keys(e))], [t]), s = (0, T.Ay)(t), r = l.useMemo(() => s.map(e => e.id), [s]), c = (0, d.bG)([M.Ay], () => M.Ay.getVoiceStates(t), [t]), m = (0, d.yK)([R.A], () => R.A.getBlockedOrIgnoredIDs()), g = o().flatMap(n, e => {
+        }), ...Object.values(S.A.getThreadsForGuild(t)).flatMap(e => Object.keys(e))], [t]), s = (0, T.Ay)(t), r = l.useMemo(() => s.map(e => e.id), [s]), c = (0, d.bG)([M.Ay], () => M.Ay.getVoiceStates(t), [t]), m = (0, d.yK)([R.A], () => R.A.getBlockedOrIgnoredIDs()), p = o().flatMap(n, e => {
             if (e === Y.afkChannelId) return [];
             let t = (c[e] ?? []).map(e => {
                 let {
@@ -98,7 +98,7 @@ function B(e) {
                 return t
             });
             return (0, _.aw)(t, m)
-        }), p = (0, d.yK)([C.A], () => o().flatMap(r, e => {
+        }), g = (0, d.yK)([C.A], () => o().flatMap(r, e => {
             if (e === Y.afkChannelId) return [];
             let t = C.A.getMutableParticipants(e, N.ip.SPEAKER).filter(e => e.type === N.wY.VOICE).map(e => {
                 let {
@@ -120,13 +120,13 @@ function B(e) {
         }, [t, m]), I = (0, d.yK)([L.default], () => {
             let e = E.map(e => L.default.getUser(e));
             return (0, _.aw)(e)
-        }, [E]), D = (0, d.yK)([L.default], () => x.map(e => L.default.getUser(e)), [x]), G = g.filter(e => !x.includes(e.id) && !E.includes(e.id)), B = (0, _.aw)(G), V = D.filter(e => null != e && !E.includes(e.id)), H = (0, d.bG)([b.A], () => b.A.getUserAffinitiesMap(), []), F = l.useMemo(() => (0, v.L)(B, H, "GuildTooltip - nonBlockedUsers"), [B, H]), W = l.useMemo(() => (0, v.L)(p, H, "GuildTooltip - stageSpeakers"), [p, H]), K = l.useMemo(() => (0, v.L)(V, H, "GuildTooltip - streamUsers"), [V, H]), {
+        }, [E]), D = (0, d.yK)([L.default], () => x.map(e => L.default.getUser(e)), [x]), G = p.filter(e => !x.includes(e.id) && !E.includes(e.id)), B = (0, _.aw)(G), V = D.filter(e => null != e && !E.includes(e.id)), H = (0, d.bG)([b.A], () => b.A.getUserAffinitiesMap(), []), F = l.useMemo(() => (0, v.L)(B, H, "GuildTooltip - nonBlockedUsers"), [B, H]), W = l.useMemo(() => (0, v.L)(g, H, "GuildTooltip - stageSpeakers"), [g, H]), K = l.useMemo(() => (0, v.L)(V, H, "GuildTooltip - streamUsers"), [V, H]), {
             voiceUsersToShow: F,
             stageSpeakers: W,
             numStageListeners: f,
             streamUsersToShow: K,
             embeddedActivitiesUsers: l.useMemo(() => (0, v.L)(I, H, "GuildTooltip - embeddedActivitiesUsers"), [I, H]),
-            hasActivity: p.length > 0 || G.length > 0 || V.length > 0 || I.length > 0
+            hasActivity: g.length > 0 || G.length > 0 || V.length > 0 || I.length > 0
         }),
         Z = k(u.HKD, q, z),
         ee = 0 === X.length ? null : (0, i.jsxs)("div", {
@@ -152,8 +152,8 @@ function B(e) {
                 })]
             })]
         }),
-        et = k(u.Fzq, Q, z),
-        en = k(u.k9F, J, z),
+        et = k(u.Fzq, J, z),
+        en = k(u.k9F, Q, z),
         {
             isMuted: ei,
             muteConfig: el
@@ -205,10 +205,10 @@ function H(e) {
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsxs)("div", {
             className: a()(P.nM, P.Dl),
-            children: [n ? (0, i.jsx)(p.A, {
+            children: [n ? (0, i.jsx)(g.A, {
                 guild: t,
                 className: P.WX
-            }) : (0, i.jsx)(g.A, {
+            }) : (0, i.jsx)(p.A, {
                 guild: t,
                 size: 20,
                 className: P.aL

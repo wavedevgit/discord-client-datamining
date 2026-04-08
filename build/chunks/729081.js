@@ -15,8 +15,8 @@ var i = n(627968),
     A = n(568598),
     _ = n(313961),
     m = n(246356),
-    g = n(178213),
-    p = n(332772),
+    p = n(178213),
+    g = n(332772),
     f = n(594832),
     x = n(631784),
     E = n(721932),
@@ -35,7 +35,7 @@ var i = n(627968),
     M = n(652215),
     D = n(806931),
     U = n(985018),
-    G = n(325486);
+    G = n(788551);
 let P = `vc-gifting-${(0,o.A)()}`,
     k = Object.freeze([]);
 
@@ -55,8 +55,8 @@ function B(e) {
     l.useEffect(() => {
         t || n()
     }, [n, t]);
-    let B = (0, g.GG)("social_layer_storefront_gifting_mini_shelf");
-    (0, p.T)({
+    let B = (0, p.GG)("social_layer_storefront_gifting_mini_shelf");
+    (0, g.T)({
         location: "social_layer_storefront_gifting_mini_shelf"
     });
     let H = (0, u.bG)([v.A], () => v.A.getDetectableIdsToApplicationIds()),
@@ -84,25 +84,25 @@ function B(e) {
         X = (0, y.v)(Y),
         {
             status: $,
-            recommendations: Q,
-            skusToUserAndReason: J
+            recommendations: J,
+            skusToUserAndReason: Q
         } = (0, x.XQ)({
             applicationIds: Y,
             numItems: 6,
             userIds: q
         }),
-        Z = "loading" === $ || 0 === Q.length,
-        ee = l.useMemo(() => Q.map(e => E.A.fromSKU(e)).filter(S.Vq), [Q]),
+        Z = "loading" === $ || 0 === J.length,
+        ee = l.useMemo(() => J.map(e => E.A.fromSKU(e)).filter(S.Vq), [J]),
         et = (0, d.A)(Z ? k : ee, V),
         en = l.useMemo(() => {
             let e = new Set(q),
                 {
                     hasWishlist: t,
                     hasPopular: n
-                } = (0, b.wH)(Q, J, e),
+                } = (0, b.wH)(J, Q, e),
                 l = t && n;
             return et.map(t => {
-                let n = Object.entries(J[t.skuId] ?? {}).filter(t => {
+                let n = Object.entries(Q[t.skuId] ?? {}).filter(t => {
                         let [n, i] = t;
                         return i === I.j.WISHLIST && e.has(n)
                     }).map(e => {
@@ -130,14 +130,14 @@ function B(e) {
                     contextContainerClassName: G.RL
                 }, t.skuId)
             })
-        }, [z, q, Q, et, J, B, X, h.guild_id, h.id]);
+        }, [z, q, J, et, Q, B, X, h.guild_id, h.id]);
     return l.useEffect(() => {
-        0 !== Q.length && T.default.track(M.HAw.COMMERCE_SHOP_VC_GIFT_BUTTON_VIEWED, {
+        0 !== J.length && T.default.track(M.HAw.COMMERCE_SHOP_VC_GIFT_BUTTON_VIEWED, {
             guild_id: h.guild_id,
             channel_id: h.id,
-            sku_ids: Q.map(e => e.id)
+            sku_ids: J.map(e => e.id)
         })
-    }, [h.id, h.guild_id, Q]), (0, i.jsx)(m.A, {
+    }, [h.id, h.guild_id, J]), (0, i.jsx)(m.A, {
         children: (0, i.jsx)(c.lGe, {
             "aria-labelledby": P,
             modal: !1,

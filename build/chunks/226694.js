@@ -16,8 +16,8 @@ var i = n(627968),
     A = n(101555),
     _ = n(263063),
     m = n(714991),
-    g = n(776231),
-    p = n(345942),
+    p = n(776231),
+    g = n(345942),
     f = n(71393),
     x = n(486020),
     E = n(860689),
@@ -25,7 +25,7 @@ var i = n(627968),
     C = n(682557),
     N = n(652215),
     T = n(985018),
-    S = n(802103),
+    S = n(420950),
     b = n(166382);
 let v = l.memo(function(e) {
     let {
@@ -116,7 +116,7 @@ let j = l.memo(function(e) {
     } = e, [s, a] = l.useState(!1), o = null != (0, r.bG)([f.A], () => f.A.getGuild(t.guildId)), A = async () => {
         a(!0);
         try {
-            o ? (0, p.u)(t.guildId) : await u.A.joinGuild(t.guildId, {
+            o ? (0, g.u)(t.guildId) : await u.A.joinGuild(t.guildId, {
                 source: N.Q4z.DIRECTORY_ENTRY
             })
         } finally {
@@ -125,7 +125,7 @@ let j = l.memo(function(e) {
     }, I = x.Ay.getGuildSplashURL({
         id: t.guildId,
         splash: t.splash,
-        size: 300 * (0, g.mZ)()
+        size: 300 * (0, p.mZ)()
     }), C = x.Ay.getGuildIconURL({
         id: t.guildId,
         icon: t.icon,

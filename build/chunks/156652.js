@@ -11,7 +11,7 @@ var i, l = n(627968),
     d = n(765671),
     c = n(401685),
     u = n(919706),
-    h = n(366797),
+    h = n(813496),
     A = ((i = {})[i.TOP = 0] = "TOP", i[i.BOTTOM = 1] = "BOTTOM", i);
 
 function _(e) {
@@ -25,7 +25,7 @@ function _(e) {
     } = e, A = s.useRef(null), {
         width: _,
         ref: m
-    } = (0, d.Ay)(), g = (0, c.bf)(_);
+    } = (0, d.Ay)(), p = (0, c.bf)(_);
     return (0, l.jsx)(o.xpW, {
         containerRef: A,
         children: (0, l.jsxs)("div", {
@@ -39,7 +39,7 @@ function _(e) {
                 className: h.K1,
                 children: n?.()
             }), u?.(), (0, l.jsx)(c.Ay.Provider, {
-                value: g,
+                value: p,
                 children: (0, l.jsxs)("div", {
                     className: h.q6,
                     ref: m,

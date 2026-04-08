@@ -18,20 +18,20 @@ let r = e => {
         isGuestInviteCreationToggleEnabled: g,
         onSetInviteFlags: h,
         onClose: A,
-        transitionState: p,
-        isRoleAssignmentEnabled: x,
+        transitionState: x,
+        isRoleAssignmentEnabled: p,
         assignableRoles: I,
         onToggleRole: m
     } = e, {
         maxAgeOptions: S,
         maxAge: v,
         maxUses: y,
-        temporary: E,
-        flags: T,
+        temporary: f,
+        flags: E,
         roleIds: _
     } = n;
     return (0, l.jsx)(i.Modal, {
-        transitionState: p,
+        transitionState: x,
         onClose: A,
         title: a.intl.string(a.t.Atdlyu),
         actions: [{
@@ -50,14 +50,14 @@ let r = e => {
             maxAgeOptions: S,
             maxAge: v,
             maxUses: y,
-            temporary: E,
+            temporary: f,
             onToggleTemporary: d,
             onSelectMaxAge: u,
             onSelectMaxUses: c,
             isGuestInviteCreationToggleEnabled: g,
             onSetInviteFlags: h,
-            inviteFlags: T,
-            isRoleAssignmentEnabled: x,
+            inviteFlags: E,
+            isRoleAssignmentEnabled: p,
             assignableRoles: I,
             selectedRoleIds: _,
             onToggleRole: m

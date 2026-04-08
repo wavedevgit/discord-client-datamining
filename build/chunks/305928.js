@@ -19,9 +19,9 @@ function d(e) {
         A = (0, l.bG)([r.A], () => r.A.getChannelId()),
         _ = (0, s.A)()?.guild_id,
         m = null != _ && n.includes(_),
-        g = (0, l.bG)([o.A], () => null != A && o.A.hasVideo(A), [A]),
-        p = (0, l.bG)([a.A], () => a.A.getCurrentUserActiveStream());
-    return d && (c = !g, u = g, h = null != p && null != p.guildId && n.includes(p.guildId)), i.useMemo(() => ({
+        p = (0, l.bG)([o.A], () => null != A && o.A.hasVideo(A), [A]),
+        g = (0, l.bG)([a.A], () => a.A.getCurrentUserActiveStream());
+    return d && (c = !p, u = p, h = null != g && null != g.guildId && n.includes(g.guildId)), i.useMemo(() => ({
         audio: c,
         video: u,
         screenshare: h,

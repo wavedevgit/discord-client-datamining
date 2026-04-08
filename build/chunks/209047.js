@@ -9,7 +9,7 @@ var i = n(627968),
     r = n(976860),
     o = n(93055),
     d = n(652215),
-    c = n(665606),
+    c = n(525736),
     u = n(985018);
 let h = l.lazy(() => n.e("60497").then(n.bind(n, 908424)));
 
@@ -20,7 +20,7 @@ function A(e) {
         hasAccess: n
     } = (0, o.TW)("FavoriteGuildHeaderActionButton"), A = l.useRef(null), _ = n ? u.intl.string(c.default.G9fGlP) : u.intl.string(u.t.ojM1xJ), m = l.useCallback(() => {
         (0, r.pX)(d.BVt.ME)
-    }, []), g = l.useCallback(e => {
+    }, []), p = l.useCallback(e => {
         let {
             closePopout: t
         } = e;
@@ -38,7 +38,7 @@ function A(e) {
         position: "bottom",
         align: "left",
         spacing: 4,
-        renderPopout: g,
+        renderPopout: p,
         children: (e, n) => {
             let {
                 isShown: l

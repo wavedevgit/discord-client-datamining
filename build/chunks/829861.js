@@ -15,8 +15,8 @@ var i = n(627968),
     A = n(775602),
     _ = n(58149),
     m = n(587837),
-    g = n(473553),
-    p = n(964404),
+    p = n(473553),
+    g = n(964404),
     f = n(709562),
     x = n(383831),
     E = n(128286),
@@ -41,7 +41,7 @@ var i = n(627968),
     w = n(5867),
     B = n(652215),
     V = n(985018),
-    H = n(513336);
+    H = n(959579);
 let F = D.DN.SIZE_32,
     W = {
         [w.E8.NO_CHAT]: H.Oo,
@@ -53,9 +53,9 @@ function K(e) {
         maxHeight: t,
         connectedLocation: n,
         renderExternalHeader: s
-    } = e, K = (0, L.A)(), Y = (0, r.yK)([y.Ay], () => y.Ay.getEmbeddedActivitiesForLocation(n), [n]), z = (0, O.H)(n), q = (0, r.bG)([I.A], () => I.A.getChannel(z)), X = (0, j.IQ)(Y), $ = (0, j.Rz)(X), Q = l.useCallback(() => {
+    } = e, K = (0, L.A)(), Y = (0, r.yK)([y.Ay], () => y.Ay.getEmbeddedActivitiesForLocation(n), [n]), z = (0, O.H)(n), q = (0, r.bG)([I.A], () => I.A.getChannel(z)), X = (0, j.IQ)(Y), $ = (0, j.Rz)(X), J = l.useCallback(() => {
         (0, v.gk)(w.Gd.PIP)
-    }, []), J = l.useRef(null), Z = (0, r.bG)([y.Ay], () => y.Ay.getFocusedLayout()), ee = Z !== w.E8.NO_CHAT, [et, en] = l.useState(p.Ay.activityPanelHeight ?? t ?? null), ei = l.useCallback(e => {
+    }, []), Q = l.useRef(null), Z = (0, r.bG)([y.Ay], () => y.Ay.getFocusedLayout()), ee = Z !== w.E8.NO_CHAT, [et, en] = l.useState(g.Ay.activityPanelHeight ?? t ?? null), ei = l.useCallback(e => {
         u.Ay.updatedUnsyncedSettings({
             activityPanelHeight: e
         })
@@ -115,10 +115,10 @@ function K(e) {
                 } : i
             }, [o, e, n, t])
         }(ee, et, t),
-        eg = (0, P.G)();
+        ep = (0, P.G)();
     if (null == K) return null;
-    let ep = [];
-    null != eu && (ep = Array.from(eu.embeddedActivity.userIds).map(e => T.default.getUser(e)).filter(e => null != e && void 0 !== e));
+    let eg = [];
+    null != eu && (eg = Array.from(eu.embeddedActivity.userIds).map(e => T.default.getUser(e)).filter(e => null != e && void 0 !== e));
     let ef = e => {
         if (null == e || void 0 === e || e === D.mt) return null;
         let t = e_.get(e.id),
@@ -138,9 +138,9 @@ function K(e) {
         theme: B.NJ8.DARK,
         children: e => (0, i.jsxs)("div", {
             className: a()(H.iE, W[Z], e),
-            ref: J,
+            ref: Q,
             style: em,
-            children: [s?.(), (0, i.jsx)(g.A, {
+            children: [s?.(), (0, i.jsx)(p.A, {
                 applicationId: K.id
             }), (0, i.jsxs)("div", {
                 className: H.lq,
@@ -171,7 +171,7 @@ function K(e) {
                     className: H.qr,
                     children: [(0, i.jsx)(D.Ay, {
                         renderIcon: !1,
-                        users: ep,
+                        users: eg,
                         size: F,
                         max: 6,
                         renderUser: ef
@@ -184,7 +184,7 @@ function K(e) {
                             }), (0, i.jsx)(f.l, {
                                 isTrayButton: !0,
                                 label: V.intl.string(V.t.brPQ5U),
-                                onClick: Q,
+                                onClick: J,
                                 iconComponent: c.gR,
                                 themeable: !0
                             })]
@@ -197,7 +197,7 @@ function K(e) {
                                 color: "disconnect"
                             })
                         })]
-                    }), eg ? (0, i.jsx)(E.A, {
+                    }), ep ? (0, i.jsx)(E.A, {
                         popoutOpen: !1,
                         onOpenPopout: () => {
                             (0, _.zV)(B.HAw.ACTIVITY_POPOUT_POP_OUT_BUTTON_CLICKED), (0, U.A)({
@@ -212,7 +212,7 @@ function K(e) {
             }), ee && null != t ? (0, i.jsx)(m.A, {
                 minHeight: 480,
                 maxHeight: t,
-                resizableNode: J,
+                resizableNode: Q,
                 onResize: e => {
                     S._.dispatch(B.jej.MANUAL_IFRAME_RESIZING, {
                         resizing: !0

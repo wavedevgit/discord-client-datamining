@@ -15,8 +15,8 @@ var i = n(627968),
     A = n(966597),
     _ = n(85109),
     m = n(44022),
-    g = n(566908),
-    p = n(594061),
+    p = n(566908),
+    g = n(594061),
     f = n(617617),
     x = n(203982),
     E = n(646468),
@@ -26,7 +26,7 @@ var i = n(627968),
     T = n(412484),
     S = n(652215),
     b = n(985018),
-    v = n(217793);
+    v = n(415632);
 
 function y(e) {
     let t, n, {
@@ -45,18 +45,18 @@ function y(e) {
         } = (0, h.Ay)(u.A.NOTIFICATION_CENTER),
         [P, k] = l.useState(!1),
         [w, B] = [(0, o.bG)([f.A], () => f.A.settings.inbox?.currentTab ?? d.Y2.UNREADS), l.useCallback(e => {
-            p.wc.updateAsync("inbox", t => {
+            g.wc.updateAsync("inbox", t => {
                 if (t.currentTab === e) return !1;
                 t.currentTab = e
-            }, p.Sb.FREQUENT_USER_ACTION)
+            }, g.Sb.FREQUENT_USER_ACTION)
         }, [])],
         {
             showTutorial: V,
             setSeenTutorial: H
         } = (t = (0, o.bG)([f.A], () => f.A.settings.inbox?.viewedTutorial ?? !1), n = l.useCallback(() => {
-            p.wc.updateAsync("inbox", e => {
+            g.wc.updateAsync("inbox", e => {
                 e.viewedTutorial = !0
-            }, p.Sb.INFREQUENT_USER_ACTION)
+            }, g.Sb.INFREQUENT_USER_ACTION)
         }, []), {
             showTutorial: !t && w === d.Y2.UNREADS,
             setSeenTutorial: n
@@ -80,7 +80,7 @@ function y(e) {
     let q = l.useCallback(e => {
             e.shiftKey || F()
         }, [F]),
-        X = (0, g.Sc)();
+        X = (0, p.Sc)();
     return (0, i.jsx)(h.f5, {
         value: G,
         children: (0, i.jsx)(c.YNO, {

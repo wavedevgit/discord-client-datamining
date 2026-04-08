@@ -19,7 +19,7 @@ var s = r(627968),
     p = r(536572),
     _ = r(162232),
     v = r(985018),
-    j = r(939380);
+    j = r(278945);
 let y = [{
         avatarSize: c._3J.SIZE_40,
         showStatus: !1
