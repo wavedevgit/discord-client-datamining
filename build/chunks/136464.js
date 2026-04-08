@@ -7,8 +7,8 @@ r.d(t, {
 }), r(321073);
 var s, i = r(64700),
     n = r(417597),
-    l = r(590180),
-    a = r(4227),
+    a = r(590180),
+    l = r(4227),
     o = r(993408),
     c = r(985018),
     d = ((s = {}).PURCHASE = "purchase", s.PREMIUM_PURCHASE = "premium_purchase", s.PREVIEW = "preview", s);
@@ -19,8 +19,8 @@ let u = {
         skuId: "Shop"
     },
     x = () => {
-        let e = (0, n.bG)([a.A], () => a.A.purchases),
-            [t, r] = (0, n.yK)([l.A], () => [l.A.categories, l.A.products]);
+        let e = (0, n.bG)([l.A], () => l.A.purchases),
+            [t, r] = (0, n.yK)([a.A], () => [a.A.categories, a.A.products]);
         return (0, i.useMemo)(() => {
             let s = (0, o.ps)(e, t).reduce((t, s) => {
                 let i = e.get(s.skuId);

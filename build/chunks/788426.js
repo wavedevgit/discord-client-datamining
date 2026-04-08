@@ -21,10 +21,11 @@ let A = () => 80,
         let {
             children: t,
             className: n,
-            isSelected: i = !1,
+            isSelected: i,
             ...s
         } = e;
         return (0, r.jsx)(a.DUT, {
+            "aria-pressed": i,
             className: l()(g.BP, n, {
                 [g.wH]: i
             }),

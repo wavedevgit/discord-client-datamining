@@ -1,7 +1,7 @@
 /** chunk id: 4887 params = (module,exports,require) **/
 n.d(t, {
-    $: () => p,
-    C: () => h
+    $: () => f,
+    C: () => T
 });
 var i = n(64700),
     s = n(934551),
@@ -14,10 +14,21 @@ var i = n(64700),
     u = n(358776),
     m = n(102255),
     g = n(416047),
-    _ = n(342537),
-    x = n(985018);
-let A = (0, o.zZ)(c.X.SESSIONS_CATEGORY, {
-        buildLayout: () => [g.I, _.A],
+    _ = n(222994),
+    x = n(342537),
+    A = n(985018);
+let h = (0, o.zZ)(c.X.SESSIONS_CATEGORY, {
+        useTitle: () => A.intl.string(A.t.mEndXM),
+        useSubtitle: () => A.intl.string(A.t.b7ZpTM),
+        initialize: () => ((0, r.GY)(), () => {
+            (0, r.ZQ)()
+        }),
+        buildLayout: () => [g.I, x.A, _.V],
+        useSearchTerms: () => [A.intl.string(A.t["+1h0k/"]), A.intl.string(A.t.LLS19o), A.intl.string(A.t.xx1MWc), A.intl.string(A.t.lSWsrd)]
+    }),
+    p = (0, o.zZ)(c.X.SESSIONS_CATEGORY, {
+        useSearchTerms: () => [A.intl.string(A.t["+1h0k/"]), A.intl.string(A.t.LLS19o), A.intl.string(A.t.xx1MWc), A.intl.string(A.t.Vij32M), A.intl.string(A.t.lSWsrd)],
+        buildLayout: () => [g.I, x.A],
         initialize: () => ((0, r.GY)(), () => {
             (0, r.ZQ)()
         }),
@@ -28,13 +39,13 @@ let A = (0, o.zZ)(c.X.SESSIONS_CATEGORY, {
             }), [])
         }
     }),
-    h = (0, o.t_)(c.X.SESSIONS_PANEL, {
-        useTitle: () => (0, u._A)("SessionsPanel") ? x.intl.string(x.t.mEndXM) : x.intl.string(x.t["+1h0k/"]),
+    T = (0, o.t_)(c.X.SESSIONS_PANEL, {
+        useTitle: () => (0, u._A)("SessionsPanel") ? A.intl.string(A.t.mEndXM) : A.intl.string(A.t["+1h0k/"]),
         useObscuredNotice: a.L,
-        buildLayout: () => [A]
+        buildLayout: () => (0, u.pC)("SessionsPanel") ? [h] : [p]
     }),
-    p = (0, o.i4)(c.X.SESSIONS_SIDEBAR_ITEM, {
-        useTitle: () => x.intl.string(x.t["+1h0k/"]),
+    f = (0, o.i4)(c.X.SESSIONS_SIDEBAR_ITEM, {
+        useTitle: () => A.intl.string(A.t["+1h0k/"]),
         icon: s.LaptopPhoneIcon,
         getDismissibleBadges: function() {
             return [{
@@ -43,5 +54,5 @@ let A = (0, o.zZ)(c.X.SESSIONS_CATEGORY, {
             }]
         },
         usePredicate: () => !(0, u._A)("SessionsPanel"),
-        buildLayout: () => [h]
+        buildLayout: () => [T]
     })

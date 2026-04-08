@@ -8,7 +8,7 @@ var i = n(469993),
     s = n(836039),
     l = n(979816),
     r = n(555325),
-    a = n(472282),
+    a = n(475481),
     o = n(403362),
     d = n(91168),
     c = n(652215),
@@ -43,10 +43,7 @@ function h(e) {
         section: g,
         label: "" !== t.name ? t.name : u.intl.string(u.t["154/bL"])
     }), b.push(m(c.BEX.PROFILE, C)), b.push(m(c.BEX.TAG, C)), b.push(m(c.BEX.ENGAGEMENT, C)), b.push(m(c.BEX.BOOST_PERKS, C));
-    let T = n && t.features.has(c.GuildFeatures.VERIFIED) && a.A.getCurrentConfig({
-        guildId: t.id,
-        location: "generateSections"
-    }).enabled;
+    let T = n && (0, a.GP)(t, "generateSections");
     (N || T) && (b.push({
         section: x
     }), b.push({

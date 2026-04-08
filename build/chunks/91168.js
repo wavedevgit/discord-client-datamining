@@ -23,7 +23,7 @@ var i = n(627968),
     j = n(599167),
     N = n(7891),
     E = n(450510),
-    C = n(472282),
+    C = n(475481),
     b = n(861410),
     T = n(433522),
     I = n(287809),
@@ -147,10 +147,7 @@ let eN = {
                 };
             case ep.BEX.OFFICIAL_MESSAGES:
                 return {
-                    section: ep.BEX.OFFICIAL_MESSAGES, impressionName: s.ImpressionNames.GUILD_SETTINGS_OFFICIAL_MESSAGES, label: ef.intl.string(ef.t.xHEzFh), ariaLabel: ef.intl.string(ef.t.xHEzFh), element: ex.Ay, predicate: () => t.canManageGuild && t.guild.features.has(ep.GuildFeatures.VERIFIED) && C.A.getCurrentConfig({
-                        guildId: t.guild.id,
-                        location: "getSectionDefinition"
-                    }).enabled, notice: {
+                    section: ep.BEX.OFFICIAL_MESSAGES, impressionName: s.ImpressionNames.GUILD_SETTINGS_OFFICIAL_MESSAGES, label: ef.intl.string(ef.t.xHEzFh), ariaLabel: ef.intl.string(ef.t.xHEzFh), element: ex.Ay, predicate: () => t.canManageGuild && (0, C.GP)(t.guild, "getSectionDefinition"), notice: {
                         stores: [R.A],
                         element: ex.wF
                     }

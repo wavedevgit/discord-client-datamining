@@ -16,6 +16,7 @@ function d(e) {
         parentPanelNode: u
     } = (0, r.x)(c), m = u?.useTitle?.();
     return null == u || null == m ? null : (0, i.jsx)(a.U, {
+        role: "link",
         title: m,
         description: n,
         trailingElement: (0, i.jsxs)(s.BJc, {

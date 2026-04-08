@@ -28,6 +28,7 @@ let g = e => {
         } = (0, c.A)(h);
         return (0, n.jsxs)(a.DUT, {
             innerRef: h,
+            "aria-pressed": d,
             "aria-label": l.label ?? x.intl.string(x.t.x5CoXR),
             className: A.Hj,
             onClick: g,
@@ -66,6 +67,7 @@ let g = e => {
                 }), e.section === m.wn.PURCHASE && (0, n.jsxs)("div", {
                     className: A.VQ,
                     children: [(0, n.jsxs)(a.DUT, {
+                        "aria-pressed": null == l,
                         className: r()(A.H5, {
                             [A.wH]: null == l
                         }),

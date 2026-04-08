@@ -13,23 +13,25 @@ var s = n(503698),
 function d(e) {
     let {
         ref: t,
-        leadingElement: n,
-        trailingElement: s,
-        title: d,
-        description: c,
-        onClick: u,
-        style: m
+        role: n,
+        leadingElement: s,
+        trailingElement: d,
+        title: c,
+        description: u,
+        onClick: m,
+        style: g
     } = e;
     return (0, i.jsxs)(r.DUT, {
         className: l()(o.EA, {
-            [o.vk]: null != u
+            [o.vk]: null != m
         }),
-        onClick: u,
+        role: n,
+        onClick: m,
         innerRef: t,
-        style: m,
-        children: [null != n && (0, i.jsx)("div", {
+        style: g,
+        children: [null != s && (0, i.jsx)("div", {
             className: o._y,
-            children: n
+            children: s
         }), (0, i.jsxs)("div", {
             className: o.jw,
             children: [(0, i.jsx)("div", {
@@ -37,16 +39,16 @@ function d(e) {
                 children: (0, i.jsx)(a.DZT, {
                     variant: "heading-md/medium",
                     color: "text-strong",
-                    children: d
+                    children: c
                 })
-            }), null != c && (0, i.jsx)(a.EYj, {
+            }), null != u && (0, i.jsx)(a.EYj, {
                 variant: "text-sm/normal",
                 color: "text-subtle",
-                children: c
+                children: u
             })]
-        }), null != s && (0, i.jsx)("div", {
+        }), null != d && (0, i.jsx)("div", {
             className: o.EY,
-            children: s
+            children: d
         })]
     })
 }

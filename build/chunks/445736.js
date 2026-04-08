@@ -49,7 +49,7 @@ let f = new c.A("PaymentElement.web.stories"),
         } = e, _ = (0, p.A)(), {
             stripePaymentElementProps: E,
             stripeAddressElementProps: C
-        } = (0, d.Lw)({
+        } = (0, d.wD)({
             step: u.pn.PAYMENT_ELEMENT,
             handleStepChange: x.tEg,
             onBillingAddressChange: x.tEg,

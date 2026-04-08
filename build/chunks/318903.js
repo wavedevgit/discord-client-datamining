@@ -26,6 +26,7 @@ function u(e) {
     if (null == A || null == f) return null;
     let b = null != h ? h.icon : void 0;
     return (0, i.jsx)(o.U, {
+        role: "link",
         title: f,
         description: x,
         leadingElement: null != b && (0, i.jsx)("div", {
