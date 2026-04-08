@@ -1,8 +1,8 @@
 /** chunk id: 83257 params = (module,exports,require) **/
 n.d(t, {
     Ay: () => b,
-    OZ: () => x,
-    n3: () => g,
+    OZ: () => f,
+    n3: () => x,
     pe: () => v
 }), n(321073);
 var i = n(627968),
@@ -19,15 +19,15 @@ var i = n(627968),
     p = n(820284),
     E = n(361739),
     S = n(652215),
-    f = n(985018),
-    A = n(776471);
-let _ = Object.freeze({
+    _ = n(985018),
+    g = n(776471);
+let A = Object.freeze({
         shouldPreventNavigation: !1,
         onPreventNavigation: null,
         sidebarOpen: !0
     }),
-    g = 1.4,
-    x = 15,
+    x = 1.4,
+    f = 15,
     v = 2;
 
 function N(e) {
@@ -54,11 +54,11 @@ function N(e) {
 }
 class C extends s.PureComponent {
     _unmounted = !1;
-    _intensity = g;
+    _intensity = x;
     _subscribedStores = [];
     scrollerRef = s.createRef();
     state = {
-        ..._,
+        ...A,
         sidebarOpen: this.props.section !== S.nc_.SUBSCRIPTIONS && this.props.section !== S.nc_.PROFILE_CUSTOMIZATION
     };
     componentDidMount() {
@@ -79,7 +79,7 @@ class C extends s.PureComponent {
         let {
             section: t
         } = e;
-        t !== this.props.section && (this._intensity = g)
+        t !== this.props.section && (this._intensity = x)
     }
     componentWillUnmount() {
         this._unmounted = !0, this._subscribedStores.forEach(e => e.removeChangeListener(this.handleNoticeStoreUpdate)), this.props.sections.forEach(e => e.onSettingsClose?.())
@@ -102,7 +102,7 @@ class C extends s.PureComponent {
         return null != t && t.stores.some(e => e.showNotice() && !(null != e.canCloseEarly && e.canCloseEarly())) ? (h._.dispatch(S.jej.SHAKE_APP, {
             duration: 300,
             intensity: this._intensity
-        }), this._intensity = Math.min(this._intensity + v, x), h._.dispatch(S.jej.EMPHASIZE_NOTICE), !1) : (this._intensity = g, !0)
+        }), this._intensity = Math.min(this._intensity + v, f), h._.dispatch(S.jej.EMPHASIZE_NOTICE), !1) : (this._intensity = x, !0)
     }
     handleSetSection = e => {
         let {
@@ -119,7 +119,7 @@ class C extends s.PureComponent {
             null != s && s.forEach(e => {
                 this._subscribedStores.includes(e) || (e.addChangeListener(this.handleNoticeStoreUpdate), this._subscribedStores.push(e))
             }), this.setState({
-                ..._,
+                ...A,
                 sidebarOpen: !1
             })
         };
@@ -137,7 +137,7 @@ class C extends s.PureComponent {
         }
     };
     handleNoticeStoreUpdate = () => {
-        this._unmounted || (this._intensity = g, this.forceUpdate())
+        this._unmounted || (this._intensity = x, this.forceUpdate())
     };
     renderSettingsSectionTabBarItem = (e, t, n) => {
         let {
@@ -151,23 +151,23 @@ class C extends s.PureComponent {
             newIndicator: m,
             newIndicatorDismissibleContentTypes: p,
             badgeCount: E
-        } = e, _ = null;
-        null != e.decoration ? _ = (0, i.jsx)(l.Text, {
+        } = e, A = null;
+        null != e.decoration ? A = (0, i.jsx)(l.Text, {
             variant: "text-md/normal",
             color: "text-muted",
             children: e.decoration
-        }) : null != n && p?.includes(n) && !t ? _ = m ?? (0, i.jsx)(l.LpS, {
-            text: f.intl.string(f.t.y2b7CA)
-        }) : null != d ? _ = d : null != E && E > 0 && (_ = (0, i.jsx)(l.hVq, {
+        }) : null != n && p?.includes(n) && !t ? A = m ?? (0, i.jsx)(l.LpS, {
+            text: _.intl.string(_.t.y2b7CA)
+        }) : null != d ? A = d : null != E && E > 0 && (A = (0, i.jsx)(l.hVq, {
             count: E
         }));
-        let g = s === S.nc_.PREMIUM ? (0, i.jsx)(u.A, {
+        let x = s === S.nc_.PREMIUM ? (0, i.jsx)(u.A, {
             label: r,
             isSelected: t,
-            decoration: _
-        }) : null == _ ? r : (0, i.jsxs)("div", {
-            className: A.l,
-            children: [r, _]
+            decoration: A
+        }) : null == A ? r : (0, i.jsxs)("div", {
+            className: g.l,
+            children: [r, A]
         });
         return (0, i.jsx)(l.VQ0.Item, {
             variant: c,
@@ -175,7 +175,7 @@ class C extends s.PureComponent {
             onClick: a,
             className: h,
             "aria-label": o ?? "",
-            children: g
+            children: x
         }, s)
     };
     renderSidebar(e) {
@@ -196,7 +196,7 @@ class C extends s.PureComponent {
                     orientation: "vertical",
                     "aria-label": n,
                     children: [s ? (0, i.jsx)("div", {
-                        className: A.O,
+                        className: g.O,
                         children: (0, i.jsx)(d.A, {})
                     }) : null, e.map((e, t) => {
                         if (null != e.tabPredicate && !e.tabPredicate()) return null;

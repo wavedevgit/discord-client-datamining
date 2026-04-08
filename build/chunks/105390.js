@@ -1,8 +1,8 @@
 /** chunk id: 105390 params = (module,exports,require) **/
 n.d(t, {
-    Ag: () => A,
-    MA: () => g,
-    fY: () => _
+    Ag: () => g,
+    MA: () => x,
+    fY: () => A
 });
 var i = n(627968),
     s = n(64700),
@@ -19,7 +19,7 @@ var i = n(627968),
     E = n(985018),
     S = n(532606);
 
-function f(e) {
+function _(e) {
     let {
         isTabSelected: t,
         expiresAt: n,
@@ -28,9 +28,9 @@ function f(e) {
         tooltipTextOverride: h,
         tooltipPosition: m,
         hideTooltip: p = !1
-    } = e, f = s.useMemo(() => Date.parse(n), [n]), A = (0, c.A)(f, 6e4);
-    if (Object.values(A).every(e => 0 === e)) return null;
-    let _ = (0, i.jsxs)("div", {
+    } = e, _ = s.useMemo(() => Date.parse(n), [n]), g = (0, c.A)(_, 6e4);
+    if (Object.values(g).every(e => 0 === e)) return null;
+    let A = (0, i.jsxs)("div", {
         className: l()(S.Fg, S.C8, u, {
             [S.WO]: t
         }),
@@ -46,18 +46,18 @@ function f(e) {
             children: r
         })]
     });
-    return p ? _ : (0, i.jsx)(o.m, {
-        text: null != h ? h : (0, d.uN)(A, {
+    return p ? A : (0, i.jsx)(o.m, {
+        text: null != h ? h : (0, d.uN)(g, {
             days: E.t.qVGNkU,
             hours: E.t.wyg9a9,
             minutes: E.t.IzmIlV
         }),
         position: null != m ? m : "top",
-        children: _
+        children: A
     })
 }
 
-function A(e) {
+function g(e) {
     let {
         isTabSelected: t,
         trialOffer: n
@@ -65,7 +65,7 @@ function A(e) {
         intervalType: s?.interval,
         intervalCount: s?.interval_count
     }), l = n.trial_id === p.Tt, o = (0, m.Fu)(n);
-    return (0, i.jsx)(g, {
+    return (0, i.jsx)(x, {
         isTabSelected: t,
         badgeCopy: r,
         offerExpiresAt: n.expires_at,
@@ -75,7 +75,7 @@ function A(e) {
     })
 }
 
-function _(e) {
+function A(e) {
     let {
         isTabSelected: t,
         userDiscount: n,
@@ -83,7 +83,7 @@ function _(e) {
     } = e, r = E.intl.formatToPlainString(E.t.iiLbvu, {
         percent: n.discount.amount
     }), l = (0, m.__)(n);
-    return (0, i.jsx)(g, {
+    return (0, i.jsx)(x, {
         isTabSelected: t,
         badgeCopy: s ? r : E.intl.string(E.t["/DTtr6"]),
         offerExpiresAt: n.expires_at,
@@ -92,7 +92,7 @@ function _(e) {
     })
 }
 
-function g(e) {
+function x(e) {
     let {
         isTabSelected: t,
         badgeCopy: n,
@@ -101,7 +101,7 @@ function g(e) {
         tooltipPosition: o,
         hideTooltip: c
     } = e;
-    return null != s ? (0, i.jsx)(f, {
+    return null != s ? (0, i.jsx)(_, {
         expiresAt: s,
         isTabSelected: t,
         badgeCopy: n,

@@ -10,24 +10,25 @@ var i = n(627968),
 let o = function(e) {
     let {
         title: t,
-        description: n,
-        agreement: o,
-        disagreement: d,
-        onAgree: c,
-        onDisagree: u,
-        modalType: h,
-        channelId: A,
-        guildId: _
+        subtitle: n,
+        description: o,
+        agreement: d,
+        disagreement: c,
+        onAgree: u,
+        onDisagree: h,
+        modalType: A,
+        channelId: _,
+        guildId: m
     } = e;
     l.useEffect(() => {
-        (0, a.Bf)(h, A, _)
-    }, [h, A, _]);
-    let m = l.useCallback(() => {
-            (0, a.mU)(a.IY.NSFW_CHANNEL_DISAGREE_CTA, h, A, _), u?.()
-        }, [u, h, A, _]),
-        g = l.useCallback(() => {
-            (0, a.mU)(a.IY.NSFW_CHANNEL_AGREE_CTA, h, A, _), c?.()
-        }, [c, h, A, _]);
+        (0, a.Bf)(A, _, m)
+    }, [A, _, m]);
+    let g = l.useCallback(() => {
+            (0, a.mU)(a.IY.NSFW_CHANNEL_DISAGREE_CTA, A, _, m), h?.()
+        }, [h, A, _, m]),
+        p = l.useCallback(() => {
+            (0, a.mU)(a.IY.NSFW_CHANNEL_AGREE_CTA, A, _, m), u?.()
+        }, [u, A, _, m]);
     return (0, i.jsxs)(s.BJc, {
         justify: "center",
         align: "center",
@@ -43,24 +44,29 @@ let o = function(e) {
                 variant: "text-lg/semibold",
                 className: r.DD,
                 children: t
-            }), (0, i.jsx)(s.Text, {
+            }), null != n ? (0, i.jsx)(s.Text, {
+                variant: "text-md/medium",
+                className: r.VA,
+                color: "text-muted",
+                children: n
+            }) : null, (0, i.jsx)(s.Text, {
                 variant: "text-md/medium",
                 className: r.h_,
                 color: "text-muted",
-                children: n
+                children: o
             })]
         }), (0, i.jsxs)(s.BJc, {
             direction: "horizontal",
             justify: "center",
             align: "center",
             gap: 16,
-            children: [null != d && null != u ? (0, i.jsx)(s.Button, {
+            children: [null != c && null != h ? (0, i.jsx)(s.Button, {
                 variant: "secondary",
-                text: d,
-                onClick: m
-            }) : null, null != o && null != c ? (0, i.jsx)(s.Button, {
-                onClick: g,
-                text: o
+                text: c,
+                onClick: g
+            }) : null, null != d && null != u ? (0, i.jsx)(s.Button, {
+                onClick: p,
+                text: d
             }) : null]
         })]
     })
