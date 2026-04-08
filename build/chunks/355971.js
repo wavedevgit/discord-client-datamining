@@ -18,8 +18,8 @@ function h(e) {
     let t, {
             color: n,
             size: h,
-            forcedIconColor: m,
-            className: f,
+            forcedIconColor: f,
+            className: m,
             iconClassName: p,
             tooltipText: _
         } = e,
@@ -27,10 +27,10 @@ function h(e) {
         g = (0, o.rdh)(a.A.unsafe_rawColors.PRIMARY_300).hex(),
         x = (0, i.LX)(n ?? g),
         E = (0, i.$k)(x, !1, v ? y : null);
-    return t = null != m ? m : .3 > (0, i.OK)(x) ? a.A.unsafe_rawColors.PRIMARY_630.css : a.A.unsafe_rawColors.WHITE.css, (0, r.jsx)(s.m, {
+    return t = null != f ? f : .3 > (0, i.OK)(x) ? a.A.unsafe_rawColors.PRIMARY_630.css : a.A.unsafe_rawColors.WHITE.css, (0, r.jsx)(s.m, {
         text: null != _ ? _ : d.intl.string(d.t.T3PvV4),
         children: (0, r.jsx)(c.A, {
-            className: f,
+            className: m,
             color: E,
             size: h,
             children: (0, r.jsx)(o.Uzd, {

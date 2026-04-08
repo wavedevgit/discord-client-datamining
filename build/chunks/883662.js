@@ -1,7 +1,7 @@
 /** chunk id: 883662 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => m
+    A: () => f
 });
 var r = n(627968),
     i = n(64700),
@@ -14,41 +14,41 @@ var r = n(627968),
     d = n(418829),
     h = n(652215);
 
-function m(e) {
+function f(e) {
     let {
         partialRoot: t,
         target: n,
-        defaultTarget: m,
-        onViewChange: f,
+        defaultTarget: f,
+        onViewChange: m,
         sidebarFooter: p,
         emptyState: _,
         searchQuery: v,
         clearSearchQuery: y,
         searchBar: g,
         ...x
-    } = e, [E, A] = i.useState(!1), [b, S] = i.useState(1.4), N = i.useRef(null), C = (0, l.bG)([o.A], () => o.A.useReducedMotion), j = (0, l.bG)([u.A], () => u.A.isFocused());
+    } = e, [E, A] = i.useState(!1), [S, b] = i.useState(1.4), N = i.useRef(null), C = (0, l.bG)([o.A], () => o.A.useReducedMotion), j = (0, l.bG)([u.A], () => u.A.isFocused());
     return i.useEffect(() => {
         let e = e => {
             let {
                 intensity: t,
                 duration: n
             } = e;
-            !C && j && (A(!0), S(t ?? 1.4), clearTimeout(N.current), N.current = setTimeout(() => A(!1), n ?? 1e3))
+            !C && j && (A(!0), b(t ?? 1.4), clearTimeout(N.current), N.current = setTimeout(() => A(!1), n ?? 1e3))
         };
         return c._.subscribe(h.jej.SHAKE_SETTINGS_MODAL, e), () => {
             c._.unsubscribe(h.jej.SHAKE_SETTINGS_MODAL, e), clearTimeout(N.current)
         }
     }, [C, j]), (0, r.jsx)(s.bfh, {
         isShaking: E,
-        intensity: b,
+        intensity: S,
         children: (0, r.jsx)(a.N, {
             ...x,
             children: (0, r.jsx)(d.A, {
                 onClose: x.onClose,
                 partialRoot: t,
                 target: n,
-                defaultTarget: m,
-                onViewChange: f,
+                defaultTarget: f,
+                onViewChange: m,
                 emptyState: _,
                 sidebarFooter: p,
                 searchQuery: v,

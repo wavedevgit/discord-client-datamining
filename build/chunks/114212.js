@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
     Ay: () => g,
-    B5: () => f,
+    B5: () => m,
     BP: () => _,
     FQ: () => h,
     Uj: () => v,
@@ -49,14 +49,14 @@ function h(e) {
     })
 }
 
-function m(e) {
+function f(e) {
     let t, {
             groupStart: n = !1,
             compact: i = !1,
             attachmentSpecs: a,
             usernameWidth: c,
-            usernameOpacity: m,
-            className: f,
+            usernameOpacity: f,
+            className: m,
             style: p
         } = e,
         _ = i ? 50 : s().random(40, 50);
@@ -65,7 +65,7 @@ function m(e) {
             className: u.wx,
             children: (0, r.jsx)(h, {
                 width: c,
-                opacity: m,
+                opacity: f,
                 className: u.__invalid_username
             })
         })]
@@ -80,12 +80,12 @@ function m(e) {
             className: u.wx,
             children: (0, r.jsx)(h, {
                 width: c,
-                opacity: m
+                opacity: f
             })
         })]
     })), (0, r.jsxs)("div", {
         "aria-hidden": !0,
-        className: l()(f, {
+        className: l()(m, {
             [u.iE]: !0,
             [u.oE]: i,
             [u.E]: !i
@@ -112,7 +112,7 @@ function m(e) {
         })]
     })
 }
-let f = 44,
+let m = 44,
     p = 22,
     _ = 26,
     v = 26,
@@ -127,7 +127,7 @@ function g(e) {
         className: a
     } = e, o = null != l ? l.last ? t - 1 : s().random(0, t - 1) : -1, u = s().random(80, 120), d = s().random(.1, .2);
     return (0, r.jsx)(r.Fragment, {
-        children: Array(t).fill(null).map((e, t) => (0, r.jsx)(m, {
+        children: Array(t).fill(null).map((e, t) => (0, r.jsx)(f, {
             compact: i,
             className: a,
             usernameWidth: u,

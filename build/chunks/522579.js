@@ -27,7 +27,7 @@ var t = t || function(e) {
                     "string" == typeof e ? n().revokeObjectURL(e) : e.remove()
                 }, 4e4)
             },
-            m = function(e, t, n) {
+            f = function(e, t, n) {
                 for (var r = (t = [].concat(t)).length; r--;) {
                     var i = e["on" + t[r]];
                     if ("function" == typeof i) try {
@@ -37,18 +37,18 @@ var t = t || function(e) {
                     }
                 }
             },
-            f = function(e) {
+            m = function(e) {
                 return /^\s*(?:text\/\S*|application\/xml|\S*\/\S*\+xml)\s*;.*charset\s*=\s*utf-8/i.test(e.type) ? new Blob(["\xef\xbb\xbf", e], {
                     type: e.type
                 }) : e
             },
             p = function(t, u, p) {
-                p || (t = f(t));
+                p || (t = m(t));
                 var _, v, y = this,
                     g = t.type,
                     x = !1,
                     E = function() {
-                        m(y, "writestart progress write writeend".split(" "))
+                        f(y, "writestart progress write writeend".split(" "))
                     },
                     A = function() {
                         if (v && a && "u" > typeof FileReader) {
@@ -60,12 +60,12 @@ var t = t || function(e) {
                             return
                         }(x || !_) && (_ = n().createObjectURL(t)), v ? v.location.href = _ : void 0 === e.open(_, "_blank") && a && (e.location.href = _), y.readyState = y.DONE, E(), h(_)
                     },
-                    b = function(e) {
+                    S = function(e) {
                         return function() {
                             if (y.readyState !== y.DONE) return e.apply(this, arguments)
                         }
                     },
-                    S = {
+                    b = {
                         create: !0,
                         exclusive: !1
                     };
@@ -74,13 +74,13 @@ var t = t || function(e) {
                         r.href = _, r.download = u, l(r), E(), h(_), y.readyState = y.DONE
                     });
                     return
-                }(e.chrome && g && g !== c && (t = (t.slice || t.webkitSlice).call(t, 0, t.size, c), x = !0), s && "download" !== u && (u += ".download"), (g === c || s) && (v = e), o) ? (d += t.size, o(e.TEMPORARY, d, b(function(e) {
-                    e.root.getDirectory("saved", S, b(function(e) {
+                }(e.chrome && g && g !== c && (t = (t.slice || t.webkitSlice).call(t, 0, t.size, c), x = !0), s && "download" !== u && (u += ".download"), (g === c || s) && (v = e), o) ? (d += t.size, o(e.TEMPORARY, d, S(function(e) {
+                    e.root.getDirectory("saved", b, S(function(e) {
                         var n = function() {
-                            e.getFile(u, S, b(function(e) {
-                                e.createWriter(b(function(n) {
+                            e.getFile(u, b, S(function(e) {
+                                e.createWriter(S(function(n) {
                                     n.onwriteend = function(t) {
-                                        v.location.href = e.toURL(), y.readyState = y.DONE, m(y, "writeend", t), h(e)
+                                        v.location.href = e.toURL(), y.readyState = y.DONE, f(y, "writeend", t), h(e)
                                     }, n.onerror = function() {
                                         var e = n.error;
                                         e.code !== e.ABORT_ERR && A()
@@ -94,9 +94,9 @@ var t = t || function(e) {
                         };
                         e.getFile(u, {
                             create: !1
-                        }, b(function(e) {
+                        }, S(function(e) {
                             e.remove(), n()
-                        }), b(function(e) {
+                        }), S(function(e) {
                             e.code === e.NOT_FOUND_ERR ? n() : A()
                         }))
                     }), A)
@@ -104,9 +104,9 @@ var t = t || function(e) {
             },
             _ = p.prototype;
         return "u" > typeof navigator && navigator.msSaveOrOpenBlob ? function(e, t, n) {
-            return n || (e = f(e)), navigator.msSaveOrOpenBlob(e, t || "download")
+            return n || (e = m(e)), navigator.msSaveOrOpenBlob(e, t || "download")
         } : (_.abort = function() {
-            this.readyState = this.DONE, m(this, "abort")
+            this.readyState = this.DONE, f(this, "abort")
         }, _.readyState = _.INIT = 0, _.WRITING = 1, _.DONE = 2, _.error = _.onwritestart = _.onprogress = _.onwrite = _.onabort = _.onerror = _.onwriteend = null, function(e, t, n) {
             return new p(e, t, n)
         })
