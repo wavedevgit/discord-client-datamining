@@ -5,13 +5,13 @@ n.d(t, {
 var a = n(627968);
 n(64700);
 var i = n(687498),
-    l = n(397927),
-    s = n(902561);
+    s = n(397927),
+    l = n(342874);
 
 function r(e) {
     let {
         text: t
-    } = e, n = (0, l.pnh)(t, {
+    } = e, n = (0, s.pnh)(t, {
         from: {
             opacity: 0,
             transform: "translate3d(0, 107%, 0)"
@@ -26,9 +26,9 @@ function r(e) {
         }
     });
     return (0, a.jsx)("div", {
-        className: s.k,
+        className: l.k,
         children: n((e, t) => (0, a.jsx)(i.animated.div, {
-            className: s.H,
+            className: l.H,
             style: e,
             children: t
         }))

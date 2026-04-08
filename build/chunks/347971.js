@@ -4,8 +4,8 @@ n.d(t, {
 });
 var a = n(627968),
     i = n(64700),
-    l = n(158954),
-    s = n(397927),
+    s = n(158954),
+    l = n(397927),
     r = n(839214),
     o = n(718446),
     d = n(858897),
@@ -40,9 +40,9 @@ function p() {
             path: t.path
         })
     }, []);
-    return (0, a.jsxs)(l.nVY, {
+    return (0, a.jsxs)(s.nVY, {
         label: "Settings Deep Link Tool",
-        children: [(0, a.jsx)(s.ZiE, {
+        children: [(0, a.jsx)(l.ZiE, {
             label: "[optional] Choose a path",
             clearable: !0,
             value: e,
@@ -59,7 +59,7 @@ function p() {
                 }
             },
             fullWidth: !0
-        }), (0, a.jsx)(s.ksK, {
+        }), (0, a.jsx)(l.ksK, {
             label: "URL",
             placeholder: "e.g. /settings/appearance",
             value: n,
@@ -67,19 +67,19 @@ function p() {
                 urlString: e,
                 error: null
             })
-        }), (0, a.jsxs)(l.e2v, {
-            children: [(0, a.jsx)(l.$nd, {
+        }), (0, a.jsxs)(s.e2v, {
+            children: [(0, a.jsx)(s.$nd, {
                 variant: "primary",
                 onClick: p,
                 text: "Open User Settings for URL",
                 disabled: "" === n
-            }), (0, a.jsx)(l.$nd, {
+            }), (0, a.jsx)(s.$nd, {
                 variant: "secondary",
                 onClick: () => (0, c.C)(`${window.location.origin}${n}`),
                 disabled: "" === n,
                 text: "Copy URL"
             })]
-        }), null != r && (0, a.jsx)(l.EYj, {
+        }), null != r && (0, a.jsx)(s.EYj, {
             variant: "text-sm/normal",
             color: "text-feedback-critical",
             children: r

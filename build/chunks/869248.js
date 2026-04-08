@@ -20,16 +20,16 @@ var i = n(627968),
     E = n(47167),
     I = n(698718),
     f = n(985018),
-    C = n(121603),
-    T = n(717316);
+    C = n(368526),
+    T = n(624739);
 
 function N(e) {
     let {
         channel: t,
         baseChannelId: n
-    } = e, N = (0, E.Ay)(t), S = (0, A.k)(), v = (0, A.r)(), x = (0, a.bG)([c.A], () => c.A.isMessageRequest(t.id)), y = (0, a.bG)([u.A], () => u.A.isSpam(t.id)), b = (0, _.D)(t.id, t.getRecipientId()), O = r.useCallback(() => {
-        p.A.closeChannelSidebar(g.fe), x && S && (0, m.iN)(t.id), y && v && (0, m.iN)(t.id)
-    }, [t.id, y, v, x, S]), L = r.useCallback(() => {
+    } = e, N = (0, E.Ay)(t), S = (0, A.k)(), x = (0, A.r)(), v = (0, a.bG)([c.A], () => c.A.isMessageRequest(t.id)), b = (0, a.bG)([u.A], () => u.A.isSpam(t.id)), y = (0, _.D)(t.id, t.getRecipientId()), O = r.useCallback(() => {
+        p.A.closeChannelSidebar(g.fe), v && S && (0, m.iN)(t.id), b && x && (0, m.iN)(t.id)
+    }, [t.id, b, x, v, S]), L = r.useCallback(() => {
         (0, l.showToast)((0, l.createToast)(f.intl.string(f.t.pIQ3h4), l.ToastType.FAILURE))
     }, []), {
         markAsNotSpam: R
@@ -52,7 +52,7 @@ function N(e) {
                 channelName: N,
                 inSidebar: !0
             })
-        }), y && (0, i.jsxs)("div", {
+        }), b && (0, i.jsxs)("div", {
             className: T.F,
             children: [(0, i.jsx)(l.Text, {
                 variant: "text-sm/normal",
@@ -61,7 +61,7 @@ function N(e) {
                 className: T.$,
                 children: (0, i.jsx)(l.Button, {
                     size: "sm",
-                    onClick: () => R(t, b),
+                    onClick: () => R(t, y),
                     text: f.intl.string(f.t.koqL3Z)
                 })
             })]

@@ -1,11 +1,11 @@
 /** chunk id: 223352 params = (module,exports,require) **/
 n.d(t, {
-    A: () => v
+    A: () => _
 });
 var a = n(627968),
     i = n(64700),
-    l = n(503698),
-    s = n.n(l),
+    s = n(503698),
+    l = n.n(s),
     r = n(687498),
     o = n(311907),
     d = n(397927),
@@ -17,20 +17,20 @@ var a = n(627968),
     p = n(963713),
     g = n(772244);
 n(272111);
-var _ = n(985018),
-    f = n(624076);
-let v = e => {
+var f = n(985018),
+    v = n(924391);
+let _ = e => {
     let {
         isFullyExpanded: t,
         partnerBranding: n
-    } = e, l = (0, g.q)().label, v = (0, o.bG)([c.A], () => c.A.useReducedMotion), {
+    } = e, s = (0, g.q)().label, _ = (0, o.bG)([c.A], () => c.A.useReducedMotion), {
         quest: b
     } = i.useContext(p.T), {
         expansionSpring: j
-    } = i.useContext(x.PW), A = l ? -4 : 6;
+    } = i.useContext(x.PW), A = s ? -4 : 6;
     return (0, a.jsxs)(a.Fragment, {
         children: [(0, a.jsx)(r.animated.div, {
-            className: f.tE,
+            className: v.tE,
             style: {
                 transform: (0, r.to)([j.to({
                     range: [0, 1],
@@ -48,7 +48,7 @@ let v = e => {
                 learnMoreFontSize: t ? 9 : void 0,
                 quest: b,
                 questContent: u.uF.QUEST_BAR_V2,
-                autoplay: t && !v,
+                autoplay: t && !_,
                 sourceQuestContent: u.uF.QUEST_BAR_V2,
                 style: {
                     width: 48,
@@ -58,8 +58,8 @@ let v = e => {
                 }
             })
         }), (0, a.jsxs)(r.animated.div, {
-            className: s()(f.pm, {
-                [f.nd]: l
+            className: l()(v.pm, {
+                [v.nd]: s
             }),
             style: {
                 transform: (0, r.to)([j.to({
@@ -71,25 +71,25 @@ let v = e => {
                 })], (e, t) => `translate(${e}px, ${t}px)`)
             },
             children: [(0, a.jsx)("div", {
-                className: s()({
-                    [f.Iu]: !l
+                className: l()({
+                    [v.Iu]: !s
                 }),
                 children: n
             }), (0, a.jsx)(r.animated.div, {
-                className: s()(f.ol, {
-                    [f.yZ]: l
+                className: l()(v.ol, {
+                    [v.yZ]: s
                 }),
                 style: {
                     opacity: (0, h.a)(j.to({
                         range: [0, 1],
-                        output: [l ? 1 : .7, 0]
+                        output: [s ? 1 : .7, 0]
                     }))
                 },
                 children: (0, a.jsx)(d.Text, {
                     color: "always-white",
                     lineClamp: 1,
                     variant: "text-xs/medium",
-                    children: _.intl.string(_.t["3mgEQf"])
+                    children: f.intl.string(f.t["3mgEQf"])
                 })
             })]
         })]

@@ -24,16 +24,16 @@ var i = n(627968),
     T = n(98165),
     N = n(174279),
     S = n(278066),
-    v = n(594968),
-    x = n(979282),
-    y = n(575474),
-    b = n(535266),
+    x = n(594968),
+    v = n(979282),
+    b = n(575474),
+    y = n(535266),
     O = n(787331);
 n(646363);
 var L = n(652215),
     R = n(788868),
     P = n(985018),
-    D = n(998838);
+    D = n(63461);
 let M = [];
 
 function j() {
@@ -104,7 +104,7 @@ let G = function(e) {
         } = e;
         switch (d) {
             case L.m3P.PENDING:
-                return (0, i.jsx)(v.A, {
+                return (0, i.jsx)(x.A, {
                     ...r,
                     isFocused: j,
                     onAcceptFriendRequest: () => F(e)
@@ -215,7 +215,7 @@ let G = function(e) {
                 }(d, n.length, e, n.some(e => e.giftIntentType === R.np.FRIEND_ANNIVERSARY));
             return d === L.m3P.PENDING && 0 === e ? (0, i.jsxs)("div", {
                 className: D.Gf,
-                children: [(0, i.jsx)(b.A, {
+                children: [(0, i.jsx)(y.A, {
                     id: t,
                     title: r
                 }), ea && (0, i.jsx)("div", {
@@ -229,7 +229,7 @@ let G = function(e) {
                 })]
             }, r) : (0, i.jsx)("div", {
                 className: D.Gf,
-                children: (0, i.jsx)(b.A, {
+                children: (0, i.jsx)(y.A, {
                     id: t,
                     title: r
                 })
@@ -260,14 +260,14 @@ let G = function(e) {
         value: n,
         children: (0, i.jsxs)(u.A, {
             section: L.JJy.FRIENDS_LIST,
-            children: [k && (0, i.jsx)(y.g, {}), (0, i.jsx)("div", {
+            children: [k && (0, i.jsx)(b.g, {}), (0, i.jsx)("div", {
                 className: D.ON,
                 children: (0, i.jsx)(o.IWV, {
                     query: Y[d],
                     onChange: Q,
                     onClear: X
                 })
-            }), (0, i.jsx)(x.A, {
+            }), (0, i.jsx)(v.A, {
                 rows: ei,
                 renderRow: $,
                 renderSection: eo,

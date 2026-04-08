@@ -15,7 +15,7 @@ var i = n(627968),
     h = n(352670),
     _ = n(654487),
     m = n(985018),
-    p = n(258547);
+    p = n(670422);
 let g = [],
     E = d.L1.SORT,
     I = d.L1.FILTER,
@@ -36,7 +36,7 @@ let g = [],
                     [E]: e
                 })
             }, [C]),
-            v = r.useCallback(e => {
+            x = r.useCallback(e => {
                 C({
                     [I]: 0 === e.length ? null : e.map(e => {
                         let {
@@ -47,17 +47,17 @@ let g = [],
                 })
             }, [C]),
             {
-                quests: x,
-                excludedQuests: y,
-                isFetchingCurrentQuests: b,
+                quests: v,
+                excludedQuests: b,
+                isFetchingCurrentQuests: y,
                 hasFetched: O
             } = (0, d.Qh)(d.NC.ALL, r.useMemo(() => ({
                 sortMethod: T,
                 filters: N
             }), [T, N])),
             L = r.useCallback(() => {
-                v(g)
-            }, [v]),
+                x(g)
+            }, [x]),
             R = r.useRef(null),
             P = r.useRef(null),
             D = (0, a.zy)(),
@@ -74,7 +74,7 @@ let g = [],
         }, [N]), (0, d.$P)({
             selectedSortMethod: T,
             selectedFilters: N,
-            numQuestsVisible: x.length
+            numQuestsVisible: v.length
         }), r.useImperativeHandle(t, () => ({
             resetSortingFiltering: () => {
                 L(), S(_.kL.SUGGESTED)
@@ -95,15 +95,15 @@ let g = [],
                         optionClassName: p.Uq,
                         selectedSortMethod: T
                     }), (0, i.jsx)(c.A, {
-                        onChange: v,
+                        onChange: x,
                         selectedFilters: N
                     })]
                 })]
             }), (0, i.jsx)(A.A, {
                 ref: n,
-                quests: x,
-                excludedQuests: y,
-                isFetching: b,
+                quests: v,
+                excludedQuests: b,
+                isFetching: y,
                 hasFetched: O,
                 hasFiltersApplied: N.length > 0,
                 onClearFilters: L

@@ -1,22 +1,22 @@
 /** chunk id: 675120 params = (module,exports,require) **/
 n.d(t, {
-    v: () => s
+    v: () => l
 });
 var a = n(627968);
 n(64700);
 var i = n(732955),
-    l = n(402100);
-let s = e => {
+    s = n(803413);
+let l = e => {
     let {
         actions: t,
         footerInput: n
     } = e;
     return 0 === t.length && null == n ? null : (0, a.jsxs)("footer", {
-        className: l.q,
+        className: s.q,
         children: [null != n && (0, a.jsx)("div", {
             children: n
         }), (0, a.jsx)(i.e2v, {
-            className: l.G,
+            className: s.G,
             justify: "end",
             children: t.map((e, t) => (0, a.jsx)(i.$nd, {
                 ...e

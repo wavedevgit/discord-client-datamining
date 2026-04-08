@@ -4,13 +4,13 @@ n.d(t, {
 });
 var a = n(562465),
     i = n(73153),
-    l = n(153488),
-    s = n(209390),
+    s = n(153488),
+    l = n(209390),
     r = n(652215);
 
 function o() {
     let e = !(arguments.length > 0) || void 0 === arguments[0] || arguments[0];
-    return s.A.shouldFetch() && l.A.hasConsented(r.YAq.PERSONALIZATION) ? (i.h.dispatch({
+    return l.A.shouldFetch() && s.A.hasConsented(r.YAq.PERSONALIZATION) ? (i.h.dispatch({
         type: "LOAD_CHANNEL_AFFINITIES_V2"
     }), a.Bo.get({
         url: r.Rsh.CHANNEL_AFFINITIES_V2,

@@ -21,18 +21,18 @@ var r = n(873263),
     E = n(652215),
     I = n(165610),
     f = n(985018),
-    C = n(870236),
-    T = n(397337);
+    C = n(842130),
+    T = n(782584);
 
 function N() {
     let e, t = (0, r.zy)(),
         n = (0, a.bG)([p.A], () => p.A.getGuildId()),
         N = (0, a.bG)([m.A], () => m.A.getChannelId()),
         S = (0, a.bG)([h.A], () => h.A.getChannel(N), [N]),
-        v = n ?? S?.guild_id,
-        x = (0, a.bG)([_.A], () => _.A.getGuild(v), [v]),
-        y = (0, o.DZ)(),
-        b = (0, A.lI)(),
+        x = n ?? S?.guild_id,
+        v = (0, a.bG)([_.A], () => _.A.getGuild(x), [x]),
+        b = (0, o.DZ)(),
+        y = (0, A.lI)(),
         {
             application: O,
             isFrameInFocusedMode: L
@@ -55,12 +55,12 @@ function N() {
         src: R,
         "aria-hidden": !0,
         draggable: !1
-    })) : b ? (e = f.intl.string(f.t.HcoRu0), P = (0, i.jsx)(l.XFE, {
+    })) : y ? (e = f.intl.string(f.t.HcoRu0), P = (0, i.jsx)(l.XFE, {
         size: "sm"
-    })) : null != x ? (e = (0, d.YC)(x), P = y ? (0, i.jsx)(l.Gg5, {
+    })) : null != v ? (e = (0, d.YC)(v), P = b ? (0, i.jsx)(l.Gg5, {
         size: "sm"
     }) : (0, i.jsx)(u.Ay, {
-        guild: x,
+        guild: v,
         size: u.Ay.Sizes.SMOL,
         active: !0,
         className: T.$f

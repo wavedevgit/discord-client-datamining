@@ -12,7 +12,7 @@ var i = n(627968),
     c = n(954571),
     u = n(652215),
     A = n(985018),
-    h = n(66762);
+    h = n(436965);
 let _ = l().debounce(d.Ay.trackWithMetadata, 500),
     m = e => {
         let {
@@ -52,7 +52,7 @@ let _ = l().debounce(d.Ay.trackWithMetadata, 500),
             color: N,
             children: T
         }));
-        let v = null != p ? `${p}px` : "16px";
+        let x = null != p ? `${p}px` : "16px";
         return (0, i.jsxs)("div", {
             className: h.kX,
             children: [!0 === I ? null : (0, i.jsx)(o.DUT, {
@@ -72,8 +72,8 @@ let _ = l().debounce(d.Ay.trackWithMetadata, 500),
                 className: h.ZS,
                 style: {
                     marginTop: `${g}px`,
-                    marginLeft: v,
-                    marginRight: v
+                    marginLeft: x,
+                    marginRight: x
                 },
                 children: "string" == typeof l ? (0, i.jsx)("img", {
                     className: h.Sl,

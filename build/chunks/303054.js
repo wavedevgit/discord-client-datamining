@@ -4,16 +4,16 @@ n.d(t, {
 });
 var a = n(627968),
     i = n(64700),
-    l = n(503698),
-    s = n.n(l),
+    s = n(503698),
+    l = n.n(s),
     r = n(397927),
-    o = n(793877);
+    o = n(310086);
 
 function d(e) {
     let {
         columns: t,
         data: n,
-        className: l,
+        className: s,
         rowClassName: d,
         onClickRow: c,
         selectedRowKey: u,
@@ -28,7 +28,7 @@ function d(e) {
     return (0, a.jsx)("div", {
         className: o.CZ,
         children: (0, a.jsx)(r.OZj, {
-            className: l,
+            className: s,
             innerClassName: o.tp,
             sections: x,
             sectionHeight: 40,
@@ -40,12 +40,12 @@ function d(e) {
                     className: i,
                     children: h.map(e => {
                         let i = e.cellClassName,
-                            l = {
+                            s = {
                                 width: `calc(${e.cellWidth??"1fr"} - 16px)`
                             };
                         return (0, a.jsx)("div", {
                             className: i,
-                            style: l,
+                            style: s,
                             children: e.renderHeader?.(e, n)
                         }, `dev-tools-th-${t}-${e.key}`)
                     })
@@ -57,9 +57,9 @@ function d(e) {
                     rowIndex: t
                 } = e, i = n[t];
                 if (null == i) return null;
-                let l = i.key,
-                    x = s()(o.jD, {
-                        [o.wD]: l === u,
+                let s = i.key,
+                    x = l()(o.jD, {
+                        [o.wD]: s === u,
                         rowClassName: d
                     });
                 return (0, a.jsx)(r.DUT, {
@@ -67,13 +67,13 @@ function d(e) {
                     onClick: () => c?.(i),
                     children: h.map(e => {
                         let n = e.cellClassName,
-                            l = {
+                            s = {
                                 width: `calc(${e.cellWidth??"1fr"} - 16px)`,
                                 height: `calc(${m}px - 16px)`
                             };
                         return (0, a.jsx)("div", {
                             className: n,
-                            style: l,
+                            style: s,
                             children: e.render?.(i, void 0, t)
                         }, `dev-tools-td-${t}-${e.key}`)
                     })

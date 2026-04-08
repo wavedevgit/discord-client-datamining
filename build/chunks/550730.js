@@ -4,8 +4,8 @@ n.d(t, {
 }), n(508300);
 var a = n(627968),
     i = n(64700),
-    l = n(503698),
-    s = n.n(l),
+    s = n(503698),
+    l = n.n(s),
     r = n(835245),
     o = n(397927),
     d = n(157559),
@@ -16,9 +16,9 @@ var a = n(627968),
     x = n(816866),
     p = n(87558),
     g = n(918550),
-    _ = n(291554);
-let f = "Make sure you're only uploading text files!",
-    v = e => {
+    f = n(525221);
+let v = "Make sure you're only uploading text files!",
+    _ = e => {
         let {
             effect: t,
             onClick: n
@@ -26,17 +26,17 @@ let f = "Make sure you're only uploading text files!",
             deleteConfig: i
         } = (0, x.wu)();
         return (0, a.jsxs)(o.DUT, {
-            className: _.B0,
+            className: f.B0,
             onClick: () => {
                 n(t)
             },
             children: [(0, a.jsx)("div", {
-                className: _.yV,
+                className: f.yV,
                 style: {
                     backgroundImage: `url(${t.config?.effects?.[0]?.base64})`
                 }
             }), (0, a.jsxs)("div", {
-                className: _.eL,
+                className: f.eL,
                 children: [(0, a.jsx)(o.Text, {
                     variant: "text-md/bold",
                     children: t.name
@@ -56,29 +56,29 @@ function b() {
         profileEffects: e,
         upsertConfig: t,
         clearAll: n
-    } = (0, x.wu)(), [l, b] = i.useState(), j = i.useRef(null), {
+    } = (0, x.wu)(), [s, b] = i.useState(), j = i.useRef(null), {
         categories: A
-    } = (0, m.A)(), C = i.useMemo(() => (0, u.Wj)(A), [A]), [y, S] = i.useState(""), T = i.useMemo(() => "" === y ? C : C.filter(e => {
+    } = (0, m.A)(), C = i.useMemo(() => (0, u.Wj)(A), [A]), [y, S] = i.useState(""), E = i.useMemo(() => "" === y ? C : C.filter(e => {
         let t = y.toLowerCase(),
             n = e.title?.toLowerCase() ?? "",
             a = e.description?.toLowerCase() ?? "";
         return n.includes(t) || a.includes(t)
-    }), [y, C]), E = i.useCallback((e, n) => {
-        if (null == n || !e.type.startsWith("text/")) return (0, h.Ni)(f);
+    }), [y, C]), T = i.useCallback((e, n) => {
+        if (null == n || !e.type.startsWith("text/")) return (0, h.Ni)(v);
         let [a, i] = n.split(",");
-        if (!a.includes("text/plain")) return (0, h.Ni)(f);
-        let l = JSON.parse(atob(i));
-        l.skuId = (0, r.A)(), t(l), (0, h.GF)("Profile Effect (maybe??) imported!")
+        if (!a.includes("text/plain")) return (0, h.Ni)(v);
+        let s = JSON.parse(atob(i));
+        s.skuId = (0, r.A)(), t(s), (0, h.GF)("Profile Effect (maybe??) imported!")
     }, [t]), N = i.useCallback(e => {
-        e.currentTarget?.files == null ? (0, h.Ni)("Error uploading file. Try again!") : (0, h.KE)(e.currentTarget.files, E, h.Ni)
-    }, [E]);
+        e.currentTarget?.files == null ? (0, h.Ni)("Error uploading file. Try again!") : (0, h.KE)(e.currentTarget.files, T, h.Ni)
+    }, [T]);
     return (0, a.jsxs)("div", {
-        className: _.zr,
-        children: [null == l && (0, a.jsxs)(a.Fragment, {
+        className: f.zr,
+        children: [null == s && (0, a.jsxs)(a.Fragment, {
             children: [(0, a.jsxs)("div", {
-                className: _.nz,
+                className: f.nz,
                 children: [(0, a.jsxs)("div", {
-                    className: s()(_.uW, _.nM),
+                    className: l()(f.uW, f.nM),
                     children: [(0, a.jsx)(o.Heading, {
                         variant: "heading-xl/bold",
                         children: "Custom Profile Effects"
@@ -95,8 +95,8 @@ function b() {
                         }
                     })]
                 }), (0, a.jsx)("div", {
-                    className: _.Iv,
-                    children: Object.values(e).map(e => (0, a.jsx)(v, {
+                    className: f.Iv,
+                    children: Object.values(e).map(e => (0, a.jsx)(_, {
                         effect: e,
                         onClick: e => {
                             b(e)
@@ -104,9 +104,9 @@ function b() {
                     }, e.skuId))
                 })]
             }), (0, a.jsxs)("div", {
-                className: s()(_.nM, _._N, _.uW),
+                className: l()(f.nM, f._N, f.uW),
                 children: [(0, a.jsxs)("div", {
-                    className: _.au,
+                    className: f.au,
                     children: [(0, a.jsx)(o.Text, {
                         variant: "text-md/normal",
                         color: "always-white",
@@ -130,7 +130,7 @@ function b() {
                     }
                 })]
             }), (0, a.jsx)("hr", {}), (0, a.jsxs)("div", {
-                className: _.uW,
+                className: f.uW,
                 children: [(0, a.jsx)(o.Heading, {
                     variant: "heading-xl/bold",
                     children: "All Effects"
@@ -140,9 +140,9 @@ function b() {
                         S(e)
                     }
                 }), (0, a.jsx)("div", {
-                    className: _.xm,
-                    children: T.map(e => (0, a.jsx)(o.DUT, {
-                        className: _.S5,
+                    className: f.xm,
+                    children: E.map(e => (0, a.jsx)(o.DUT, {
+                        className: f.S5,
                         style: {
                             backgroundImage: `url(${e.thumbnailPreviewSrc})`
                         },
@@ -175,7 +175,7 @@ function b() {
                             })
                         },
                         children: (0, a.jsx)("div", {
-                            className: _.Hd,
+                            className: f.Hd,
                             children: (0, a.jsx)(o.Text, {
                                 variant: "text-md/normal",
                                 color: "always-white",
@@ -185,8 +185,8 @@ function b() {
                     }, e.skuId))
                 })]
             })]
-        }), null != l && (0, a.jsx)(g.A, {
-            effect: l
+        }), null != s && (0, a.jsx)(g.A, {
+            effect: s
         })]
     })
 }

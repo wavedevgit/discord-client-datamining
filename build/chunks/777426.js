@@ -1,6 +1,6 @@
 /** chunk id: 777426 params = (module,exports,require) **/
 n.d(t, {
-    A: () => x
+    A: () => v
 });
 var i = n(627968),
     r = n(64700),
@@ -25,15 +25,15 @@ var i = n(627968),
     N = n(652215);
 n(646363);
 var S = n(985018),
-    v = n(955017);
+    x = n(664184);
 
-function x(e) {
+function v(e) {
     let {
         ref: t,
         isFocused: a,
-        isActive: x,
-        status: y,
-        activities: b,
+        isActive: v,
+        status: b,
+        activities: y,
         applicationStream: O,
         isGameRelationship: L,
         isMobile: R,
@@ -83,29 +83,29 @@ function x(e) {
     return (0, i.jsx)(_.A, {
         ref: t,
         isFocused: a,
-        isActive: x,
+        isActive: v,
         user: j,
         onOtherHover: D,
         onClick: M,
         height: 72,
         children: e => (0, i.jsxs)("div", {
-            className: l()(v.a4, v.Z$),
+            className: l()(x.a4, x.Z$),
             children: [(0, i.jsx)(p.A, {
-                className: v.Cv,
+                className: x.Cv,
                 user: j,
-                status: y,
+                status: b,
                 isMobile: R,
                 isVR: P,
                 subText: (0, i.jsxs)(i.Fragment, {
                     children: [(0, i.jsx)(m.A, {
                         hovered: e,
-                        activities: b,
+                        activities: y,
                         applicationStream: O,
-                        status: y,
+                        status: b,
                         user: j,
                         userIgnored: E.A.isIgnored(j.id)
                     }), (0, i.jsxs)("div", {
-                        className: v.K3,
+                        className: x.K3,
                         children: [(0, i.jsx)(c.$yI, {
                             size: "xxs",
                             color: "currentColor"
@@ -121,7 +121,7 @@ function x(e) {
                 hovered: e,
                 showAccountIdentifier: !L && !j.isProvisional
             }), (0, i.jsxs)("div", {
-                className: v.o1,
+                className: x.o1,
                 children: [(0, i.jsx)(c.K0, {
                     size: "sm",
                     variant: "secondary",

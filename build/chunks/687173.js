@@ -4,25 +4,25 @@ n.d(t, {
 });
 var a = n(627968),
     i = n(64700),
-    l = n(503698),
-    s = n.n(l),
+    s = n(503698),
+    l = n.n(s),
     r = n(687498),
     o = n(397927),
     d = n(915089),
     c = n(49999),
     u = n(985018),
-    m = n(516443);
+    m = n(342976);
 
 function h(e) {
     let {
         markAsDismissed: t,
         heading: n,
-        subheading: l,
+        subheading: s,
         children: h,
         height: x,
         className: p,
         contentClassName: g
-    } = e, _ = (0, d.GV)(), f = i.useRef(null), v = (0, o.zhh)({
+    } = e, f = (0, d.GV)(), v = i.useRef(null), _ = (0, o.zhh)({
         from: {
             transform: "translate3d(-110%, 0, 0)",
             height: x
@@ -37,19 +37,19 @@ function h(e) {
             damping: 15
         },
         onRest: () => {
-            null != f.current && f.current.focus()
+            null != v.current && v.current.focus()
         }
     });
     return (0, a.jsx)(r.animated.div, {
-        className: s()(m.kL, p),
-        style: v,
+        className: l()(m.kL, p),
+        style: _,
         children: (0, a.jsxs)("aside", {
-            "aria-labelledby": _,
+            "aria-labelledby": f,
             className: m.Qs,
             children: [(0, a.jsxs)("div", {
                 className: m.U1,
                 children: [(0, a.jsx)(o.DUT, {
-                    innerRef: f,
+                    innerRef: v,
                     "aria-label": u.intl.string(u.t.WAI6xu),
                     className: m.b,
                     onClick: () => {
@@ -59,19 +59,19 @@ function h(e) {
                         color: "currentColor"
                     })
                 }), (0, a.jsx)(o.Heading, {
-                    id: _,
+                    id: f,
                     variant: "heading-lg/semibold",
                     children: n
                 })]
-            }), null != l && (0, a.jsx)(o.Text, {
+            }), null != s && (0, a.jsx)(o.Text, {
                 variant: "text-md/normal",
                 color: "text-subtle",
-                children: l
+                children: s
             }), (0, a.jsx)(o.HOs, {
                 className: m.XG,
                 fade: !0,
                 children: (0, a.jsx)("div", {
-                    className: s()(m.gT, g),
+                    className: l()(m.gT, g),
                     children: h
                 })
             })]

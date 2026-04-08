@@ -1,11 +1,11 @@
 /** chunk id: 323970 params = (module,exports,require) **/
 n.d(t, {
-    A: () => T
+    A: () => E
 });
 var a = n(582754),
     i = n(736653),
-    l = n(439174),
-    s = n(881141),
+    s = n(439174),
+    l = n(881141),
     r = n(788868),
     o = n(164741),
     d = n(341094),
@@ -16,9 +16,9 @@ var a = n(582754),
     x = n(935495),
     p = n(651714),
     g = n(416307),
-    _ = n(497783),
-    f = n(39579),
-    v = n(673554),
+    f = n(497783),
+    v = n(39579),
+    _ = n(673554),
     b = n(719401),
     j = n(128640),
     A = n(369306),
@@ -64,15 +64,15 @@ let y = {
         },
         [r.Ac.PREMIUM_TENURE_3_MONTH]: {
             dark: d.A,
-            light: _.A
+            light: f.A
         },
         [r.Ac.PREMIUM_TENURE_6_MONTH]: {
             dark: c.A,
-            light: f.A
+            light: v.A
         },
         [r.Ac.PREMIUM_TENURE_12_MONTH]: {
             dark: u.A,
-            light: v.A
+            light: _.A
         },
         [r.Ac.PREMIUM_TENURE_24_MONTH]: {
             dark: m.A,
@@ -92,14 +92,14 @@ let y = {
         }
     };
 
-function T() {
-    let e = (0, s.A)(),
+function E() {
+    let e = (0, l.A)(),
         t = (0, a.Mw)((0, i.Ay)());
     if (null == e) return null;
     let n = y[e],
         o = S[e],
         d = {
-            currentBadge: (0, l.e0)(e),
+            currentBadge: (0, s.e0)(e),
             currentBadgeTextGradient: t ? n?.dark : n?.light,
             levelUpVideoSrc: t ? o?.dark : o?.light
         },
@@ -107,7 +107,7 @@ function T() {
     if (c > 0) {
         let e = r.sp[c - 1],
             n = y[e];
-        d.prevBadge = (0, l.e0)(e), d.prevBadgeTextGradient = t ? n?.dark : n?.light
+        d.prevBadge = (0, s.e0)(e), d.prevBadgeTextGradient = t ? n?.dark : n?.light
     }
     return d
 }

@@ -232,6 +232,9 @@ let y = new v(s.h, {
         } = e;
         f.set(t, n)
     },
+    CONNECTION_OPEN: function() {
+        return 0 !== p.size && (p.clear(), f.clear(), x.clear(), E.clear(), !0)
+    },
     RELATIONSHIP_UPDATE: b,
     RELATIONSHIP_ADD: b,
     RELATIONSHIP_REMOVE: b,

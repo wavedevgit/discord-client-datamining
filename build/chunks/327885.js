@@ -1,11 +1,11 @@
 /** chunk id: 327885 params = (module,exports,require) **/
 n.d(t, {
-    y: () => f
+    y: () => v
 });
 var a = n(64700),
     i = n(559474);
-let l = new Set([i.RN.HERO_BANNER_STATIC, i.RN.HERO_LOGO, i.RN.PDP_BACKGROUND, i.RN.LOGO, i.RN.MOBILE_BANNER, i.RN.MOBILE_BACKGROUND]),
-    s = ["intro", "idle", "reduced_motion", "static", "thumbnail"],
+let s = new Set([i.RN.HERO_BANNER_STATIC, i.RN.HERO_LOGO, i.RN.PDP_BACKGROUND, i.RN.LOGO, i.RN.MOBILE_BANNER, i.RN.MOBILE_BACKGROUND]),
+    l = ["intro", "idle", "reduced_motion", "static", "thumbnail"],
     r = {
         max: 5e6,
         warn: 2e6
@@ -62,20 +62,20 @@ let l = new Set([i.RN.HERO_BANNER_STATIC, i.RN.HERO_LOGO, i.RN.PDP_BACKGROUND, i
         i.length > 0 && n("File names must be in lowercase snake case", i)
     }, p = (e, t, n, a) => {
         let i = t.size,
-            l = i > 1e6 ? `${(i/1e6).toFixed(2)}MB` : `${(i/1e3).toFixed(2)}KB`,
-            s = `${t.name} - ${l}`;
+            s = i > 1e6 ? `${(i/1e6).toFixed(2)}MB` : `${(i/1e3).toFixed(2)}KB`,
+            l = `${t.name} - ${s}`;
         if (i > e.max) {
             let t = e.max > 1e6 ? `${Math.round(e.max/1e6)}MB` : `${Math.round(e.max/1e3)}KB`;
-            n("Files exceed the recommended size limit - make sure they are optimized!", [`${s} (max: ${t})`])
-        } else i > e.warn && a("Files are a tad chonky - are you sure they're optimized?", [`${s}`])
+            n("Files exceed the recommended size limit - make sure they are optimized!", [`${l} (max: ${t})`])
+        } else i > e.warn && a("Files are a tad chonky - are you sure they're optimized?", [`${l}`])
     }, g = (e, t, n, a) => {
         let i = m[e];
         if (null != i)
             for (let e of t) e.name.endsWith(".txt") || p(i, e, n, a)
-    }, _ = e => {
+    }, f = e => {
         let t = i.aL[e];
         return `${e} (${t.map(e=>`.${e}`).join(", ")})`
-    }, f = () => {
+    }, v = () => {
         let [e, t] = a.useState(!1), [n, r] = a.useState({}), [o, d] = a.useState({}), c = a.useCallback(function(e) {
             let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : [];
             d(n => {
@@ -94,7 +94,7 @@ let l = new Set([i.RN.HERO_BANNER_STATIC, i.RN.HERO_LOGO, i.RN.PDP_BACKGROUND, i
                     [e]: [...a, ...t]
                 }
             })
-        }, []), f = a.useCallback(() => {
+        }, []), v = a.useCallback(() => {
             t(!1), d({}), r({})
         }, []);
         return {
@@ -118,17 +118,17 @@ let l = new Set([i.RN.HERO_BANNER_STATIC, i.RN.HERO_LOGO, i.RN.PDP_BACKGROUND, i
                         } = e;
                         for (let e of t.collectionFiles) {
                             let t = (0, i.pd)(e),
-                                l = null != t ? m[t] : null;
-                            null != l && p(l, e, n, a)
+                                s = null != t ? m[t] : null;
+                            null != s && p(s, e, n, a)
                         }
                         x({
                             names: t.collectionFiles.map(e => e.name),
                             addError: n
                         });
-                        let s = new Set(t.collectionFiles.map(e => (0, i.pd)(e)).filter(e => null != e)),
-                            r = Array.from(l).filter(e => !s.has(e)).map(_);
+                        let l = new Set(t.collectionFiles.map(e => (0, i.pd)(e)).filter(e => null != e)),
+                            r = Array.from(s).filter(e => !l.has(e)).map(f);
                         r.length > 0 && n("Missing required files", r);
-                        let o = Object.values(i.RN).filter(e => !l.has(e)).filter(e => !s.has(e)).map(_);
+                        let o = Object.values(i.RN).filter(e => !s.has(e)).filter(e => !l.has(e)).map(f);
                         o.length > 0 && a("Missing optional assets", o)
                     })({
                         files: n,
@@ -144,17 +144,17 @@ let l = new Set([i.RN.HERO_BANNER_STATIC, i.RN.HERO_LOGO, i.RN.PDP_BACKGROUND, i
                             names: Object.keys(t.profileEffectFilesMap),
                             addError: n
                         }), Object.entries(t.profileEffectFilesMap).forEach(e => {
-                            let [t, l] = e, r = l.map(e => e.name);
+                            let [t, s] = e, r = s.map(e => e.name);
                             x({
                                 names: r.map(e => {
                                     let t = e.indexOf("-");
                                     return e.substring(0, t > 0 ? t : e.length)
                                 }),
                                 addError: n
-                            }), g(i.Jn.PROFILE_EFFECT, l, n, a);
-                            let o = s.filter(e => !r.some(t => t.startsWith(e) && t.endsWith(".png"))).map(e => `${t}/${e}`);
+                            }), g(i.Jn.PROFILE_EFFECT, s, n, a);
+                            let o = l.filter(e => !r.some(t => t.startsWith(e) && t.endsWith(".png"))).map(e => `${t}/${e}`);
                             o.length > 0 && n("Missing required PFX files with prefix", o), r.some(e => e.endsWith(".txt")) || n("PFX configs required - please include both exports! (exception: duplicate variant configs are optional)", [t]);
-                            let d = r.filter(e => !s.some(t => e.startsWith(t)) && !e.endsWith(".txt")).map(e => `${t}/${e}`);
+                            let d = r.filter(e => !l.some(t => e.startsWith(t)) && !e.endsWith(".txt")).map(e => `${t}/${e}`);
                             d.length > 0 && a("Contains unrecognized files", d)
                         })
                     })({
@@ -190,6 +190,6 @@ let l = new Set([i.RN.HERO_BANNER_STATIC, i.RN.HERO_LOGO, i.RN.PDP_BACKGROUND, i
                     t(!0)
                 }
             }, [c, u]),
-            reset: f
+            reset: v
         }
     }

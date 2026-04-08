@@ -14,20 +14,21 @@ var i = t(397927),
     c = t(788868),
     u = t(652215),
     p = t(985018),
-    g = t(375160),
+    g = t(826461),
     C = t(880223);
 
 function m(e) {
     let {
         analyticsSource: n,
-        onSubscribeFinish: s
-    } = e, o = r.default.getCurrentUser();
-    null != o && (0, i.mMO)(async () => {
+        onSubscribeFinish: s,
+        stackingBehavior: o
+    } = e, l = r.default.getCurrentUser();
+    null != l && (0, i.mMO)(async () => {
         let {
             default: e
         } = await Promise.resolve().then(t.bind(t, 407217));
         return t => (0, a.jsx)(e, {
-            user: o,
+            user: l,
             analyticsSource: n,
             analyticsLocation: {
                 section: u.JJy.USER_PROFILE,
@@ -36,6 +37,8 @@ function m(e) {
             onSubscribeFinish: s,
             ...t
         })
+    }, {
+        stackingBehavior: o
     })
 }
 

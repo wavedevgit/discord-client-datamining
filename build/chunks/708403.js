@@ -6,11 +6,11 @@ n.d(t, {
 });
 var a = n(627968),
     i = n(64700),
-    l = n(503698),
-    s = n.n(l),
+    s = n(503698),
+    l = n.n(s),
     r = n(397927),
     o = n(957565),
-    d = n(793877);
+    d = n(310086);
 
 function c(e) {
     let {
@@ -18,7 +18,7 @@ function c(e) {
         children: n
     } = e;
     return (0, a.jsx)("dl", {
-        className: s()(d.qo, t),
+        className: l()(d.qo, t),
         children: n
     })
 }
@@ -26,24 +26,24 @@ let u = e => {
     let {
         name: t,
         children: n,
-        copyValue: l
-    } = e, [s, c] = i.useState(!1);
+        copyValue: s
+    } = e, [l, c] = i.useState(!1);
     return i.useEffect(() => {
-        if (s) {
+        if (l) {
             let e = setTimeout(() => c(!1), 1e3);
             return () => clearTimeout(e)
         }
-    }, [s]), (0, a.jsxs)(a.Fragment, {
+    }, [l]), (0, a.jsxs)(a.Fragment, {
         children: [(0, a.jsx)("dt", {
             className: d.Bz,
             children: t
         }), (0, a.jsxs)("dd", {
             className: d.Nw,
-            children: [n, null != l ? (0, a.jsx)(r.DUT, {
+            children: [n, null != s ? (0, a.jsx)(r.DUT, {
                 tag: "span",
                 className: d.nH,
-                onClick: () => (0, o.C)(l, () => c(!0)),
-                children: s ? (0, a.jsx)(r.Uzd, {
+                onClick: () => (0, o.C)(s, () => c(!0)),
+                children: l ? (0, a.jsx)(r.Uzd, {
                     color: "currentColor",
                     size: "sm"
                 }) : (0, a.jsx)(r.TdU, {

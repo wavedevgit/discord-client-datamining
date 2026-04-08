@@ -49,7 +49,7 @@ var i = n(627968),
     W = n(381941),
     z = n(652215),
     q = n(985018),
-    Y = n(10029);
+    Y = n(480972);
 
 function J(e, t, n) {
     return e.getElementById((0, v.j)(t, n))
@@ -348,6 +348,7 @@ let X = l.memo(function(e) {
                         [Y.mK]: r.mentioned,
                         [Y.M1]: (0, I.ec)(r),
                         [Y.SH]: r.type === z.lAJ.NITRO_NOTIFICATION,
+                        [Y.Sg]: r.hasFlag(z.pr7.IS_GUILD_OFFICIAL),
                         [Y.H4]: (0, y.A)(r),
                         [Y._A]: !ee && (eW || r.type === z.lAJ.REPLY),
                         [Y.wH]: eN,

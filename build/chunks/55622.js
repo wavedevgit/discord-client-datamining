@@ -22,7 +22,7 @@ var r = n(627968),
     g = n(178241),
     x = n(779733),
     E = n(985018),
-    A = n(188550);
+    A = n(167067);
 let S = new Set([p.X.PROFILE_PANEL, p.X.SUBSCRIPTIONS_PANEL, p.X.FAMILY_CENTER_PANEL, p.X.POGGERMODE_PANEL]),
     b = new Map([
         [p.X.CONNECTIONS_PANEL, l.ImpressionNames.USER_SETTINGS_CONNECTIONS],

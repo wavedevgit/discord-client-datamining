@@ -1,11 +1,11 @@
 /** chunk id: 245750 params = (module,exports,require) **/
 n.d(t, {
-    A: () => _
+    A: () => f
 });
 var a = n(627968),
     i = n(64700),
-    l = n(935399),
-    s = n(554146),
+    s = n(935399),
+    l = n(554146),
     r = n(505312),
     o = n(397927),
     d = n(379848),
@@ -17,40 +17,40 @@ var a = n(627968),
     p = n(49999),
     g = n(985018);
 
-function _(e) {
+function f(e) {
     let t, n, {
-            webBuildOverride: _,
-            onClick: f,
-            onContextMenu: v,
+            webBuildOverride: f,
+            onClick: v,
+            onContextMenu: _,
             dismissibleContents: b,
             iconForeground: j,
             nameplate: A
         } = e,
         C = i.useRef(null),
         [y, S] = i.useState(!1);
-    (0, l.Ay)(() => {
+    (0, s.Ay)(() => {
         let e = () => S(!0);
         return m._.subscribe(x.jej.PREMIUM_GROUP_PURCHASE_FLOW_COMPLETED, e), () => {
             m._.unsubscribe(x.jej.PREMIUM_GROUP_PURCHASE_FLOW_COMPLETED, e)
         }
     });
-    let T = i.useCallback(() => {
-        S(!1), f()
-    }, [f]);
-    t = null != _ ? g.intl.formatToPlainString(g.t.Gzh6ZP, {
-        webBuildOverride: _.id
+    let E = i.useCallback(() => {
+        S(!1), v()
+    }, [v]);
+    t = null != f ? g.intl.formatToPlainString(g.t.Gzh6ZP, {
+        webBuildOverride: f.id
     }) : g.intl.string(g.t.cduTBL);
-    let E = o.Zes,
+    let T = o.Zes,
         N = (0, r.w)();
-    return E = null != _ ? o.Hnu : N.Component, (0, a.jsxs)(a.Fragment, {
+    return T = null != f ? o.Hnu : N.Component, (0, a.jsxs)(a.Fragment, {
         children: [(0, a.jsx)(h.A, {
             ref: C,
             tooltipText: t,
             tooltipPositionKey: n,
-            onClick: T,
-            onContextMenu: v,
+            onClick: E,
+            onContextMenu: _,
             "aria-label": g.intl.string(g.t.cduTBL),
-            icon: (0, a.jsx)(E, {
+            icon: (0, a.jsx)(T, {
                 size: "refresh_sm",
                 color: "currentColor",
                 className: j
@@ -69,7 +69,7 @@ function _(e) {
                     visibleContent: t,
                     markAsDismissed: n
                 } = e;
-                return t === s.M.PRIVATE_PROFILE_COACHMARK ? (0, a.jsx)(u.K, {
+                return t === l.M.PRIVATE_PROFILE_COACHMARK ? (0, a.jsx)(u.K, {
                     markAsDismissed: n,
                     targetElementRef: C
                 }) : null

@@ -13,7 +13,7 @@ var r = n(934551),
     c = n(498470),
     u = n(652215),
     A = n(985018),
-    h = n(320218);
+    h = n(654513);
 
 function _(e) {
     let {
@@ -37,15 +37,15 @@ function _(e) {
             href: d.A.getArticleURL(_.helpArticleId),
             children: A.intl.string(A.t["sBp+u0"])
         })]
-    }) : void 0, v = {
+    }) : void 0, x = {
         type: "video",
         src: E ? _.heroArtVideoLinkLightTheme : _.videoLink
     };
-    return null != _.heroArtVideoSubtitles && (v.subtitles = _.heroArtVideoSubtitles.map(e => ({
+    return null != _.heroArtVideoSubtitles && (x.subtitles = _.heroArtVideoSubtitles.map(e => ({
         locale: e.locale,
         src: e.link,
         isDefault: !1
-    }))), ("" !== _.heroArtImageLinkDarkTheme || "" !== _.heroArtImageLinkLightTheme) && (v = {
+    }))), ("" !== _.heroArtImageLinkDarkTheme || "" !== _.heroArtImageLinkLightTheme) && (x = {
         type: "image",
         src: E ? _.heroArtImageLinkLightTheme : _.heroArtImageLinkDarkTheme
     }), {
@@ -57,7 +57,7 @@ function _(e) {
         subHeader: _.subheader,
         subHeaderExtra: S,
         body: _.body,
-        heroArt: v,
+        heroArt: x,
         featureCards: _.featureCards.map(e => ({
             header: e.header,
             subHeader: e.body,

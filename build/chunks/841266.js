@@ -4,32 +4,32 @@ n.d(t, {
 });
 var a = n(627968),
     i = n(64700),
-    l = n(158954),
-    s = n(151196),
+    s = n(158954),
+    l = n(151196),
     r = n(473336),
-    o = n(557347);
+    o = n(222094);
 
 function d(e) {
     let {
         yaml: t,
         label: n
-    } = e, s = i.useCallback(() => {
+    } = e, l = i.useCallback(() => {
         navigator.clipboard.writeText(t)
     }, [t]);
-    return (0, a.jsxs)(l.BJc, {
+    return (0, a.jsxs)(s.BJc, {
         gap: 4,
-        children: [(0, a.jsxs)(l.BJc, {
+        children: [(0, a.jsxs)(s.BJc, {
             direction: "horizontal",
             gap: 8,
             align: "center",
             justify: "space-between",
-            children: [(0, a.jsx)(l.EYj, {
+            children: [(0, a.jsx)(s.EYj, {
                 variant: "text-md/semibold",
                 children: n
-            }), (0, a.jsx)(l.K0, {
-                icon: l.TdU,
+            }), (0, a.jsx)(s.K0, {
+                icon: s.TdU,
                 "aria-label": `Copy ${n} YAML`,
-                onClick: s,
+                onClick: l,
                 variant: "secondary",
                 size: "sm"
             })]
@@ -43,15 +43,15 @@ function d(e) {
 function c(e) {
     let {
         allResolvedStops: t
-    } = e, n = i.useMemo(() => s._V.map((e, n) => {
+    } = e, n = i.useMemo(() => l._V.map((e, n) => {
         let a;
-        return a = s.F$.map(e => {
+        return a = l.F$.map(e => {
             let {
                 value: a
-            } = e, i = s.KC[a], l = t[a];
+            } = e, i = l.KC[a], s = t[a];
             return `  ${i}:
-    color: ${(0,r.b5)(l.colors[n])}
-    opacity: ${l.opacities[n]}`
+    color: ${(0,r.b5)(s.colors[n])}
+    opacity: ${s.opacities[n]}`
         }).join("\n"), `type: background
 colors:
 ${a}
@@ -61,12 +61,12 @@ codegen:
   web: true
   mobile: false`
     }), [t]);
-    return (0, a.jsxs)(l.BJc, {
+    return (0, a.jsxs)(s.BJc, {
         gap: 16,
-        children: [(0, a.jsx)(l.DZT, {
+        children: [(0, a.jsx)(s.DZT, {
             variant: "heading-sm/semibold",
             children: "Token YAML"
-        }), s._V.map((e, t) => (0, a.jsx)(d, {
+        }), l._V.map((e, t) => (0, a.jsx)(d, {
             yaml: n[t],
             label: e
         }, e))]

@@ -5,8 +5,8 @@ n.d(t, {
 var a = n(627968);
 n(64700);
 var i = n(397927),
-    l = n(669550),
-    s = n(963935),
+    s = n(669550),
+    l = n(963935),
     r = n(921854),
     o = n(522958);
 
@@ -15,27 +15,27 @@ function d(e) {
         setting: t,
         depth: n,
         inheritedHighlightMode: i
-    } = e, l = function(e, t) {
+    } = e, s = function(e, t) {
         if ("migrated" === t) return "migrated";
         switch (e.type) {
-            case s.Z6.ROOT:
+            case l.Z6.ROOT:
                 return "migrated-root";
-            case s.Z6.SECTION:
-            case s.Z6.PANEL:
-            case s.Z6.SIDEBAR_ITEM:
+            case l.Z6.SECTION:
+            case l.Z6.PANEL:
+            case l.Z6.SIDEBAR_ITEM:
                 return "migrated";
             default:
                 return t ?? "migrated"
         }
-    }(t, i), r = "migrated" === l ? "migrated" : void 0, c = null;
-    return (0, s.nW)(t) && t.layout.length > 0 && (c = t.layout.map(e => (0, a.jsx)(d, {
+    }(t, i), r = "migrated" === s ? "migrated" : void 0, c = null;
+    return (0, l.nW)(t) && t.layout.length > 0 && (c = t.layout.map(e => (0, a.jsx)(d, {
         setting: e,
         depth: n + 1,
         inheritedHighlightMode: r
     }, e.key))), (0, a.jsx)(o.n, {
         title: t.key,
         initExpanded: n <= 2,
-        highlightMode: l,
+        highlightMode: s,
         children: c
     })
 }
@@ -43,14 +43,14 @@ function d(e) {
 function c() {
     let {
         node: e
-    } = (0, l.Ay)(r.D, ""), t = (0, l.KA)();
+    } = (0, s.Ay)(r.D, ""), t = (0, s.KA)();
     return (0, a.jsxs)(i.nVY, {
         label: "Settings Tree",
         children: [(0, a.jsx)(i.dOG, {
             label: "Bypass Predicates",
             description: "Forces all migrated settings to be visible.",
             checked: t,
-            onChange: l.jL
+            onChange: s.jL
         }), (0, a.jsx)(d, {
             setting: e,
             depth: 1

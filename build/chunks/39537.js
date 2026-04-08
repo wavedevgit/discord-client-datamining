@@ -1,15 +1,15 @@
 /** chunk id: 39537 params = (module,exports,require) **/
 n.d(t, {
-    $R: () => s,
+    $R: () => l,
     Rt: () => r
 });
 var a = n(110259);
 n(181658);
 var i = n(499785),
-    l = n(652215);
-async function s() {
+    s = n(652215);
+async function l() {
     let e = await i.A.get({
-        url: l.Rsh.SAFETY_FLOWS_TASK,
+        url: s.Rsh.SAFETY_FLOWS_TASK,
         trackedActionData: {
             event: a.NetworkActionNames.USER_VERIFY
         },
@@ -19,7 +19,7 @@ async function s() {
 }
 async function r(e) {
     return (await i.A.post({
-        url: l.Rsh.SAFETY_FLOWS_TASK,
+        url: s.Rsh.SAFETY_FLOWS_TASK,
         body: e,
         trackedActionData: {
             event: a.NetworkActionNames.USER_VERIFY

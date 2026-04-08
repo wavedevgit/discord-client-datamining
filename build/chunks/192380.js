@@ -12,7 +12,7 @@ var i = n(627968),
     c = n(285545),
     u = n(673310),
     A = n(884801),
-    h = n(785720);
+    h = n(464383);
 let _ = function(e) {
     let {
         scrollContainerRef: t
@@ -32,21 +32,21 @@ let _ = function(e) {
         N()
     }, [N]);
     let S = (0, a.bG)([l.A], () => l.A.hasNewContent(), []),
-        v = (0, a.bG)([l.A], () => l.A.isHydrating(), []),
-        x = r.useMemo(() => T[0].onViewableItemsChanged, [T]),
+        x = (0, a.bG)([l.A], () => l.A.isHydrating(), []),
+        v = r.useMemo(() => T[0].onViewableItemsChanged, [T]),
         {
-            registerItemRef: y
-        } = (0, A.N)(E, x, t),
-        b = r.useMemo(() => E.some(e => "end" === e.data.kind), [E]),
+            registerItemRef: b
+        } = (0, A.N)(E, v, t),
+        y = r.useMemo(() => E.some(e => "end" === e.data.kind), [E]),
         O = r.useCallback(() => {
-            if (b) return;
+            if (y) return;
             let e = t.current;
-            null == e || !(e.scrollHeight - e.scrollTop - e.clientHeight < 300) || p || I || v || (g(!0), (0, s._x)().finally(() => {
+            null == e || !(e.scrollHeight - e.scrollTop - e.clientHeight < 300) || p || I || x || (g(!0), (0, s._x)().finally(() => {
                 setTimeout(() => {
                     g(!1)
                 }, 300)
             }))
-        }, [I, p, v, b, t]);
+        }, [I, p, x, y, t]);
     r.useEffect(() => {
         let e = t.current;
         if (null != e) return e.addEventListener("scroll", O), () => {
@@ -88,12 +88,12 @@ let _ = function(e) {
                 children: "You're all caught up!"
             })
         }, e.id) : (0, i.jsx)("div", {
-            ref: t => y(e.id, t),
+            ref: t => b(e.id, t),
             "data-item-id": e.id,
             children: (0, i.jsx)(u.A, {
                 item: e
             })
-        }, e.id), [y]);
+        }, e.id), [b]);
     return I && 0 === E.length ? (0, i.jsx)("div", {
         style: {
             padding: "32px",
@@ -129,7 +129,7 @@ let _ = function(e) {
         }), (0, i.jsxs)("div", {
             ref: m,
             className: h.j,
-            children: [E.map(e => P(e)), !b && (p || v) && (0, i.jsx)("div", {
+            children: [E.map(e => P(e)), !y && (p || x) && (0, i.jsx)("div", {
                 style: {
                     padding: "16px",
                     textAlign: "center"

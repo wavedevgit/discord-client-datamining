@@ -25,10 +25,10 @@ var r = n(835245),
     T = n(200330),
     N = n(708281),
     S = n(890687),
-    v = n(976860),
-    x = n(718446),
-    y = n(858897),
-    b = n(962173),
+    x = n(976860),
+    v = n(718446),
+    b = n(858897),
+    y = n(962173),
     O = n(287809),
     L = n(954571),
     R = n(203982),
@@ -84,7 +84,7 @@ let k = {
             return D.Ay.focus(), (0, l.mMO)(async () => {
                 let {
                     default: e
-                } = await Promise.all([n.e("7726"), n.e("30106")]).then(n.bind(n, 72715));
+                } = await Promise.all([n.e("7726"), n.e("49040")]).then(n.bind(n, 72715));
                 return t => (0, i.jsx)(e, {
                     ...t,
                     guildTemplate: r
@@ -115,7 +115,7 @@ let k = {
                         }), (0, l.mMO)(async () => {
                             let {
                                 default: e
-                            } = await n.e("36820").then(n.bind(n, 67327));
+                            } = await n.e("14439").then(n.bind(n, 67327));
                             return n => (0, i.jsx)(e, {
                                 code: t,
                                 ...n
@@ -145,60 +145,60 @@ let k = {
                 case w.XK.USER_SETTINGS:
                     null != i && (0, E.B)(() => {
                         let e = U.BVt.SETTINGS(i.section, i.subsection),
-                            n = (0, x.parseSettingsUrl)({
+                            n = (0, v.parseSettingsUrl)({
                                 path: e,
                                 search: i.search
                             });
-                        (0, x.trackParseSettingsUrl)(n, "deeplink"), (0, y.openUserSettings)(n.target, {
+                        (0, v.trackParseSettingsUrl)(n, "deeplink"), (0, b.openUserSettings)(n.target, {
                             path: n.path,
                             searchParams: n.params
                         }), G(i, (0, w.OE)(t))
                     });
                     break;
                 case w.XK.CHANGELOG:
-                    null != i && ((0, v.pX)(P.A.formatPathWithQuery(U.BVt.CHANGELOGS(i.date), i.query)), G(i, (0, w.OE)(t)));
+                    null != i && ((0, x.pX)(P.A.formatPathWithQuery(U.BVt.CHANGELOGS(i.date), i.query)), G(i, (0, w.OE)(t)));
                     break;
                 case w.XK.LIBRARY:
-                    (0, v.pX)(U.BVt.APPLICATION_LIBRARY), null != i && G(i, (0, w.OE)(t));
+                    (0, x.pX)(U.BVt.APPLICATION_LIBRARY), null != i && G(i, (0, w.OE)(t));
                     break;
                 case w.XK.STORE_HOME:
-                    (0, v.pX)(U.BVt.APPLICATION_STORE), null != i && G(i, (0, w.OE)(t));
+                    (0, x.pX)(U.BVt.APPLICATION_STORE), null != i && G(i, (0, w.OE)(t));
                     break;
                 case w.XK.STORE_LISTING:
-                    null != i && ((0, v.pX)(U.BVt.APPLICATION_STORE_LISTING_SKU(i.skuId, i.slug)), G(i, (0, w.OE)(t)));
+                    null != i && ((0, x.pX)(U.BVt.APPLICATION_STORE_LISTING_SKU(i.skuId, i.slug)), G(i, (0, w.OE)(t)));
                     break;
                 case w.XK.PICK_GUILD_SETTINGS:
-                    null != i && ((0, v.pX)(U.BVt.PICK_GUILD_SETTINGS(i.section, i.subsection), {
+                    null != i && ((0, x.pX)(U.BVt.PICK_GUILD_SETTINGS(i.section, i.subsection), {
                         search: i.search
                     }), G(i, (0, w.OE)(t)));
                     break;
                 case w.XK.CHANNEL:
-                    null != i && ((0, v.pX)(U.BVt.CHANNEL(i.guildId, i.channelId, i.messageId), {
+                    null != i && ((0, x.pX)(U.BVt.CHANNEL(i.guildId, i.channelId, i.messageId), {
                         search: i.search
                     }), G(i, (0, w.OE)(t)));
                     break;
                 case w.XK.GAME_SHOP:
-                    null != i && ((0, v.pX)(U.BVt.CHANNELS_GAME_SHOP(i.guildId, i.pageIndex, i.skuId, i.slug)), G(i, (0, w.OE)(t)));
+                    null != i && ((0, x.pX)(U.BVt.CHANNELS_GAME_SHOP(i.guildId, i.pageIndex, i.skuId, i.slug)), G(i, (0, w.OE)(t)));
                     break;
                 case w.XK.QUEST_HOME:
                     if (null != i) {
                         let e = new URLSearchParams;
-                        null != i.sort && e.set(S.L1.SORT, i.sort), null != i.filter && e.set(S.L1.FILTER, i.filter), null != i.tab && e.set(S.L1.TAB, i.tab), (0, v.pX)(U.BVt.QUEST_HOME, {
+                        null != i.sort && e.set(S.L1.SORT, i.sort), null != i.filter && e.set(S.L1.FILTER, i.filter), null != i.tab && e.set(S.L1.TAB, i.tab), (0, x.pX)(U.BVt.QUEST_HOME, {
                             hash: i.questId,
                             search: `?${e.toString()}`
                         }), G(i, (0, w.OE)(t))
-                    } else(0, v.pX)(U.BVt.QUEST_HOME);
+                    } else(0, x.pX)(U.BVt.QUEST_HOME);
                     break;
                 case w.XK.QUEST_PREVIEW_TOOL:
                     if (null != i) {
                         let e = new URLSearchParams;
-                        e.set(S.L1.TAB, S.NC.PREVIEW_TOOL), null != i.questId && e.set(S.L1.QUEST_ID, i.questId), (0, v.pX)(U.BVt.QUEST_HOME, {
+                        e.set(S.L1.TAB, S.NC.PREVIEW_TOOL), null != i.questId && e.set(S.L1.QUEST_ID, i.questId), (0, x.pX)(U.BVt.QUEST_HOME, {
                             search: `?${e.toString()}`
                         }), G(i, (0, w.OE)(t))
                     }
                     break;
                 case w.XK.DISCOVERY_GAME_RESULTS:
-                    null != i && ((0, v.pX)(U.BVt.GLOBAL_DISCOVERY_SERVERS, {
+                    null != i && ((0, x.pX)(U.BVt.GLOBAL_DISCOVERY_SERVERS, {
                         search: `?game=${i.gameId}`
                     }), G(i, (0, w.OE)(t)));
                     break;
@@ -214,12 +214,12 @@ let k = {
                     }), G(i, (0, w.OE)(t)), !0;
                     return !1;
                 case w.XK.SHOP:
-                    null != i && ((0, v.pX)(U.BVt.COLLECTIBLES_SHOP, {
+                    null != i && ((0, x.pX)(U.BVt.COLLECTIBLES_SHOP, {
                         search: i.search
                     }), G(i, (0, w.OE)(t)));
                     break;
                 case w.XK.FEATURES:
-                    i?.path != null && ((0, v.pX)(i.path), G(i, (0, w.OE)(t)));
+                    i?.path != null && ((0, x.pX)(i.path), G(i, (0, w.OE)(t)));
                     break;
                 case w.XK.ACTIVITIES:
                     if (null != i) {
@@ -313,11 +313,11 @@ let k = {
                     state: a
                 }
             } = e;
-            if (!b.A.hasPendingAuthorizedState(a)) throw new M.A({
+            if (!y.A.hasPendingAuthorizedState(a)) throw new M.A({
                 errorCode: U.Lw6.INVALID_CONNECTION_CALLBACK_STATE
             }, "Provider authorization did not originate from this discord client");
             try {
-                return b.A.deletePendingAuthorizedState(a), await u.A.callback(t, {
+                return y.A.deletePendingAuthorizedState(a), await u.A.callback(t, {
                     code: n,
                     openid_params: i,
                     iss: r,

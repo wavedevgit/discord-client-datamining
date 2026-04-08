@@ -1,11 +1,11 @@
 /** chunk id: 963713 params = (module,exports,require) **/
 n.d(t, {
-    C: () => s,
-    T: () => l
+    C: () => l,
+    T: () => s
 });
 var a = n(627968),
     i = n(64700);
-let l = i.createContext({
+let s = i.createContext({
         onCtxMenuClose: () => {},
         onCtxMenuOpen: () => {},
         onCtxMenuSelect: () => {},
@@ -17,11 +17,11 @@ let l = i.createContext({
         quest: null,
         taskDetails: null
     }),
-    s = e => {
+    l = e => {
         let {
             children: t,
             isExpanded: n,
-            isExpansionAnimationComplete: s,
+            isExpansionAnimationComplete: l,
             onCtxMenuClose: r,
             onCtxMenuOpen: o,
             onCtxMenuSelect: d,
@@ -32,7 +32,7 @@ let l = i.createContext({
             taskDetails: x
         } = e, p = i.useMemo(() => ({
             isExpanded: n,
-            isExpansionAnimationComplete: s,
+            isExpansionAnimationComplete: l,
             onCtxMenuClose: r,
             onCtxMenuOpen: o,
             onCtxMenuSelect: d,
@@ -41,8 +41,8 @@ let l = i.createContext({
             collapsedHeight: m,
             quest: h,
             taskDetails: x
-        }), [n, s, r, o, d, c, u, m, h, x]);
-        return (0, a.jsx)(l.Provider, {
+        }), [n, l, r, o, d, c, u, m, h, x]);
+        return (0, a.jsx)(s.Provider, {
             value: p,
             children: t
         })

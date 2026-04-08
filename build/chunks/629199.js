@@ -21,7 +21,7 @@ var r = n(311907),
     E = n(999068),
     I = n(122943),
     f = n(985018),
-    C = n(984472);
+    C = n(430841);
 let T = e => {
         let {
             userId: t
@@ -56,7 +56,7 @@ function S(e) {
         otherUser: n,
         active: a
     } = e, c = (0, r.bG)([o.A], () => o.A.useReducedMotion), p = (0, r.bG)([_.A], () => null == n ? null : _.A.getNickname(n.id)), E = !c && a, S = (0, g.j)(t), {
-        avatarDecorationSrc: v
+        avatarDecorationSrc: x
     } = (0, h.A)({
         user: n,
         size: (0, A.Te)(l._3J.SIZE_40),
@@ -66,7 +66,7 @@ function S(e) {
         children: [(0, i.jsx)(N, {
             className: C.my,
             src: (0, u.Y)(t, 40, E),
-            avatarDecoration: v,
+            avatarDecoration: x,
             size: l._3J.SIZE_40,
             "aria-label": n?.username ?? f.intl.string(f.t["30mdIx"])
         }), (0, i.jsxs)("div", {

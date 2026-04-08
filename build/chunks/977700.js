@@ -1,12 +1,12 @@
 /** chunk id: 977700 params = (module,exports,require) **/
 n.d(t, {
-    A: () => f
+    A: () => v
 });
 var a = n(627968);
 n(64700);
 var i = n(397927),
-    l = n(793574),
-    s = n(688810),
+    s = n(793574),
+    l = n(688810),
     r = n(826673),
     o = n(750506),
     d = n(780964),
@@ -16,18 +16,18 @@ var i = n(397927),
     h = n(41280),
     x = n(49999),
     p = n(985018),
-    g = n(484768);
+    g = n(770875);
 
-function _(e) {
+function f(e) {
     let {
         dismissibleContent: t,
         backgroundColor: n,
         specialTextColor: u
-    } = e, _ = m.A.useIsEligible(), f = (0, r.JZ)(t), v = null != n, b = null != u ? {
+    } = e, f = m.A.useIsEligible(), v = (0, r.JZ)(t), _ = null != n, b = null != u ? {
         color: u
     } : void 0, {
         analyticsLocations: j
-    } = (0, s.Ay)(l.A.HOLIDAY_COACHMARK), A = e => {
+    } = (0, l.Ay)(s.A.HOLIDAY_COACHMARK), A = e => {
         (0, r.Dr)(t, {
             dismissAction: e
         })
@@ -36,13 +36,13 @@ function _(e) {
             analyticsLocations: j
         }), A(x.i.TAKE_ACTION)
     };
-    return _ && !f ? (0, a.jsx)(o.Ay, {
+    return f && !v ? (0, a.jsx)(o.Ay, {
         children: (0, a.jsxs)("div", {
             className: g.iE,
             style: {
-                backgroundColor: v ? n : void 0
+                backgroundColor: _ ? n : void 0
             },
-            children: [!v && (0, a.jsxs)("div", {
+            children: [!_ && (0, a.jsxs)("div", {
                 className: g.o5,
                 children: [(0, a.jsx)(h.A, {
                     className: g.iL,
@@ -86,8 +86,8 @@ function _(e) {
     }) : null
 }
 
-function f() {
-    return null == u.A.coachmarkDismissibleContent ? null : (0, a.jsx)(_, {
+function v() {
+    return null == u.A.coachmarkDismissibleContent ? null : (0, a.jsx)(f, {
         dismissibleContent: u.A.coachmarkDismissibleContent,
         backgroundColor: u.A.coachmarkBackgroundColor,
         specialTextColor: u.A.coachmarkSpecialTextColor

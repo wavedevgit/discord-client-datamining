@@ -1,11 +1,11 @@
 /** chunk id: 683589 params = (module,exports,require) **/
 n.d(t, {
-    A: () => _
+    A: () => f
 });
 var a = n(627968),
     i = n(64700),
-    l = n(503698),
-    s = n.n(l),
+    s = n(503698),
+    l = n.n(s),
     r = n(607399),
     o = n(397927),
     d = n(354949),
@@ -13,7 +13,7 @@ var a = n(627968),
     u = n(446868),
     m = n(652215),
     h = n(985018),
-    x = n(829675);
+    x = n(148460);
 let p = c.A.getArticleURL(m.MVz.VERIFICATION_FAQ);
 class g extends i.PureComponent {
     static defaultProps = {
@@ -48,7 +48,7 @@ class g extends i.PureComponent {
             children: [(0, a.jsxs)(o.BJc, {
                 gap: 16,
                 fullWidth: !1,
-                className: s()(x.kL, {
+                className: l()(x.kL, {
                     [x.Fr]: r.Fr
                 }),
                 align: "center",
@@ -105,7 +105,7 @@ class g extends i.PureComponent {
                             supportURL: c.A.getSubmitRequestURL()
                         })
                     }), (0, a.jsx)("div", {
-                        className: s()(x.qr, x.mf),
+                        className: l()(x.qr, x.mf),
                         children: "•"
                     }), (0, a.jsx)(o.Text, {
                         variant: "text-sm/semibold",
@@ -125,4 +125,4 @@ class g extends i.PureComponent {
         t?.(e)
     }
 }
-let _ = g
+let f = g

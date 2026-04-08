@@ -4,13 +4,13 @@ n.d(t, {
 });
 var a = n(627968),
     i = n(64700),
-    l = n(735438),
-    s = n(219220),
+    s = n(735438),
+    l = n(219220),
     r = n(351966);
 let o = e => {
     let {
         config: t
-    } = e, n = i.useMemo(() => (0, l.cloneDeep)(t), [t]), o = i.useMemo(() => t.effects.some(e => null != e.randomizedSources && e.randomizedSources.length > 0), [t]), d = i.useMemo(() => {
+    } = e, n = i.useMemo(() => (0, s.cloneDeep)(t), [t]), o = i.useMemo(() => t.effects.some(e => null != e.randomizedSources && e.randomizedSources.length > 0), [t]), d = i.useMemo(() => {
         if (o) {
             var e;
             let a = 1 === (e = n.effects.reduce((e, t) => {
@@ -24,7 +24,7 @@ let o = e => {
         return n
     }, [t.effects, n, o]), {
         layerData: c
-    } = (0, s.A)({
+    } = (0, l.A)({
         skuId: "debug",
         layers: d.effects
     });

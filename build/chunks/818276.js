@@ -1,11 +1,11 @@
 /** chunk id: 818276 params = (module,exports,require) **/
 n.d(t, {
-    A: () => v
+    A: () => _
 });
 var a = n(627968),
     i = n(64700),
-    l = n(503698),
-    s = n.n(l),
+    s = n(503698),
+    l = n.n(s),
     r = n(687498),
     o = n(341915),
     d = n(890687),
@@ -16,50 +16,50 @@ var a = n(627968),
     x = n(963713),
     p = n(277928),
     g = n(783602),
-    _ = n(272111),
-    f = n(537536);
-let v = i.forwardRef(function(e, t) {
+    f = n(272111),
+    v = n(310765);
+let _ = i.forwardRef(function(e, t) {
     let {
         className: n,
-        overlayRef: l
+        overlayRef: s
     } = e, {
-        expansionSpring: v
+        expansionSpring: _
     } = i.useContext(u.PW), {
         quest: b,
         taskDetails: j,
         isExpanded: A,
         isExpansionAnimationComplete: C
-    } = i.useContext(x.T), y = b.userStatus?.completedAt != null, S = (0, d.I3)(b), T = i.useRef(null), E = b.userStatus?.enrolledAt != null, N = null != S ? S.percentComplete : j.percentComplete, [I, k] = i.useState(!1);
+    } = i.useContext(x.T), y = b.userStatus?.completedAt != null, S = (0, d.I3)(b), E = i.useRef(null), T = b.userStatus?.enrolledAt != null, N = null != S ? S.percentComplete : j.percentComplete, [I, k] = i.useState(!1);
     return (0, a.jsxs)(a.Fragment, {
         children: [y && (0, a.jsx)(h.A, {
-            overlayRef: l,
-            progressBarRef: T,
+            overlayRef: s,
+            progressBarRef: E,
             isHovered: I
         }), (0, a.jsx)(r.animated.div, {
             ref: t,
             "aria-hidden": A && C,
-            className: s()(n, f.hR, {
-                [f.Ag]: A,
-                [f.s]: E
+            className: l()(n, v.hR, {
+                [v.Ag]: A,
+                [v.s]: T
             }),
             style: {
-                opacity: (0, c.a)(v.to({
+                opacity: (0, c.a)(_.to({
                     range: [0, 1],
                     output: [1, 0]
                 })),
-                backgroundImage: y ? `linear-gradient(90deg, ${_.V1}, ${_.us})` : void 0
+                backgroundImage: y ? `linear-gradient(90deg, ${f.V1}, ${f.us})` : void 0
             },
             onMouseEnter: () => k(!0),
             onMouseLeave: () => k(!1),
             children: (0, a.jsxs)("div", {
-                className: f.o8,
+                className: v.o8,
                 children: [y && (0, a.jsxs)(a.Fragment, {
                     children: [(0, a.jsx)(g.A, {}), (0, a.jsx)("div", {
-                        className: f.yF
+                        className: v.yF
                     })]
-                }), E ? (0, a.jsx)(p.A, {
+                }), T ? (0, a.jsx)(p.A, {
                     contentLocation: "collapsed",
-                    progressBarRef: T,
+                    progressBarRef: E,
                     isExpanded: !1,
                     percentComplete: N
                 }) : null, y && (0, a.jsx)(m.f, {

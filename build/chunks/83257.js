@@ -20,7 +20,7 @@ var i = n(627968),
     E = n(361739),
     S = n(652215),
     _ = n(985018),
-    g = n(776471);
+    g = n(52130);
 let A = Object.freeze({
         shouldPreventNavigation: !1,
         onPreventNavigation: null,

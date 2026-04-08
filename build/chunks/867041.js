@@ -7,6 +7,6 @@ n.d(t, {
 let {
     Layer: a,
     LayerContainer: i,
-    LayerProvider: l,
-    layerContext: s
-} = (0, n(397927).AyR)("DevTools"), r = i, o = l, d = s
+    LayerProvider: s,
+    layerContext: l
+} = (0, n(397927).AyR)("DevTools"), r = i, o = s, d = l

@@ -1,20 +1,20 @@
 /** chunk id: 293731 params = (module,exports,require) **/
 a.d(e, {
-    J: () => s,
+    J: () => i,
     v: () => o
 }), a(393431), a(532706), a(42231), a(232424), a(949626), a(767709), a(65162), a(508300);
 var n = a(284009),
     r = a.n(n);
 
-function i(t) {
+function s(t) {
     if (null != t) return btoa(String.fromCharCode(...new Uint8Array(t))).replace(/\+/g, "-").replace(/\//g, "_").replace(/=/g, "")
 }
-async function s(t, e) {
+async function i(t, e) {
     var a;
-    let n, s = JSON.parse(t),
-        o = PublicKeyCredential.parseRequestOptionsFromJSON(s.publicKey),
+    let n, i = JSON.parse(t),
+        o = PublicKeyCredential.parseRequestOptionsFromJSON(i.publicKey),
         c = {
-            ...s,
+            ...i,
             publicKey: o,
             signal: e
         };
@@ -22,22 +22,22 @@ async function s(t, e) {
         authenticatorAttachment: a.authenticatorAttachment,
         clientExtensionResults: a.getClientExtensionResults(),
         id: a.id,
-        rawId: i(a.rawId),
+        rawId: s(a.rawId),
         response: {
-            authenticatorData: i(n.authenticatorData),
-            clientDataJSON: i(n.clientDataJSON),
-            signature: i(n.signature),
-            userHandle: i(n.userHandle)
+            authenticatorData: s(n.authenticatorData),
+            clientDataJSON: s(n.clientDataJSON),
+            signature: s(n.signature),
+            userHandle: s(n.userHandle)
         },
         type: a.type
     })
 }
 async function o(t, e) {
     var a;
-    let n, s = JSON.parse(t),
-        o = PublicKeyCredential.parseCreationOptionsFromJSON(s.publicKey),
+    let n, i = JSON.parse(t),
+        o = PublicKeyCredential.parseCreationOptionsFromJSON(i.publicKey),
         c = {
-            ...s,
+            ...i,
             publicKey: o,
             signal: e
         };
@@ -45,12 +45,12 @@ async function o(t, e) {
         authenticatorAttachment: a.authenticatorAttachment,
         clientExtensionResults: a.getClientExtensionResults(),
         id: a.id,
-        rawId: i(a.rawId),
+        rawId: s(a.rawId),
         response: {
-            attestationObject: i(n.attestationObject),
-            authenticatorData: i(n.getAuthenticatorData()),
-            clientDataJSON: i(n.clientDataJSON),
-            publicKey: i(n.getPublicKey()),
+            attestationObject: s(n.attestationObject),
+            authenticatorData: s(n.getAuthenticatorData()),
+            clientDataJSON: s(n.clientDataJSON),
+            publicKey: s(n.getPublicKey()),
             publicKeyAlgorithm: n.getPublicKeyAlgorithm(),
             transports: n.getTransports()
         },

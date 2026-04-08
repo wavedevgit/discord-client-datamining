@@ -4,8 +4,8 @@ n.d(t, {
 });
 var a = n(627968),
     i = n(64700),
-    l = n(158954),
-    s = n(397927),
+    s = n(158954),
+    l = n(397927),
     r = n(839214),
     o = n(780964),
     d = n(858897);
@@ -23,9 +23,9 @@ function u() {
             label: e,
             value: e
         })), []);
-    return (0, a.jsxs)(l.nVY, {
+    return (0, a.jsxs)(s.nVY, {
         label: "Settings Navigation Tool",
-        children: [(0, a.jsx)(s.ZiE, {
+        children: [(0, a.jsx)(l.ZiE, {
             label: "Setting",
             placeholder: "Select a setting",
             value: e,
@@ -35,7 +35,7 @@ function u() {
             options: n,
             selectionMode: "single",
             clearable: !0
-        }), (0, a.jsx)(l.$nd, {
+        }), (0, a.jsx)(s.$nd, {
             variant: "primary",
             onClick: t,
             text: "Open User Settings"

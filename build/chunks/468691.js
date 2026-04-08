@@ -17,7 +17,7 @@ var i = n(627968),
     m = n(715671),
     p = n(652215),
     g = n(985018),
-    E = n(671437);
+    E = n(699504);
 class I extends r.Component {
     searchBarRef = r.createRef();
     state = {

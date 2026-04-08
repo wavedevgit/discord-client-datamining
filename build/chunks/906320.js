@@ -24,10 +24,10 @@ var i = n(627968),
     T = n(235986),
     N = n(596719),
     S = n(769015),
-    v = n(290987),
-    x = n(544028),
-    y = n(189081),
-    b = n(194871),
+    x = n(290987),
+    v = n(544028),
+    b = n(189081),
+    y = n(194871),
     O = n(966846),
     L = n(531685),
     R = n(255438),
@@ -36,7 +36,7 @@ var i = n(627968),
     M = n(250632),
     j = n(652215),
     w = n(985018),
-    U = n(752948);
+    U = n(248355);
 let G = e => {
         let {
             className: t,
@@ -84,24 +84,24 @@ function B(e, t) {
 }
 let H = {
     [j.WTw.INSTALLING]: {
-        [v.pJ.NONE]: (e, t, n, i) => w.intl.formatToPlainString(w.t.JfJt9d, {
+        [x.pJ.NONE]: (e, t, n, i) => w.intl.formatToPlainString(w.t.JfJt9d, {
             percent: e,
             progress: t,
             total: n
         }),
-        [v.pJ.SECONDS]: (e, t, n, i) => w.intl.formatToPlainString(w.t["1z3c6e"], {
+        [x.pJ.SECONDS]: (e, t, n, i) => w.intl.formatToPlainString(w.t["1z3c6e"], {
             percent: e,
             progress: t,
             total: n,
             timeRemaining: i
         }),
-        [v.pJ.MINUTES]: (e, t, n, i) => w.intl.formatToPlainString(w.t.PCX506, {
+        [x.pJ.MINUTES]: (e, t, n, i) => w.intl.formatToPlainString(w.t.PCX506, {
             percent: e,
             progress: t,
             total: n,
             timeRemaining: i
         }),
-        [v.pJ.HOURS]: (e, t, n, i) => w.intl.formatToPlainString(w.t["3VG9s1"], {
+        [x.pJ.HOURS]: (e, t, n, i) => w.intl.formatToPlainString(w.t["3VG9s1"], {
             percent: e,
             progress: t,
             total: n,
@@ -109,24 +109,24 @@ let H = {
         })
     },
     [j.WTw.UPDATING]: {
-        [v.pJ.NONE]: (e, t, n, i) => w.intl.formatToPlainString(w.t.JsqXXL, {
+        [x.pJ.NONE]: (e, t, n, i) => w.intl.formatToPlainString(w.t.JsqXXL, {
             percent: e,
             progress: t,
             total: n
         }),
-        [v.pJ.SECONDS]: (e, t, n, i) => w.intl.formatToPlainString(w.t["3BvVec"], {
+        [x.pJ.SECONDS]: (e, t, n, i) => w.intl.formatToPlainString(w.t["3BvVec"], {
             percent: e,
             progress: t,
             total: n,
             timeRemaining: i
         }),
-        [v.pJ.MINUTES]: (e, t, n, i) => w.intl.formatToPlainString(w.t["rwULn+"], {
+        [x.pJ.MINUTES]: (e, t, n, i) => w.intl.formatToPlainString(w.t["rwULn+"], {
             percent: e,
             progress: t,
             total: n,
             timeRemaining: i
         }),
-        [v.pJ.HOURS]: (e, t, n, i) => w.intl.formatToPlainString(w.t.adcitP, {
+        [x.pJ.HOURS]: (e, t, n, i) => w.intl.formatToPlainString(w.t.adcitP, {
             percent: e,
             progress: t,
             total: n,
@@ -134,24 +134,24 @@ let H = {
         })
     },
     [j.WTw.REPAIRING]: {
-        [v.pJ.NONE]: (e, t, n, i) => w.intl.formatToPlainString(w.t.JfJt9d, {
+        [x.pJ.NONE]: (e, t, n, i) => w.intl.formatToPlainString(w.t.JfJt9d, {
             percent: e,
             progress: t,
             total: n
         }),
-        [v.pJ.SECONDS]: (e, t, n, i) => w.intl.formatToPlainString(w.t["1z3c6e"], {
+        [x.pJ.SECONDS]: (e, t, n, i) => w.intl.formatToPlainString(w.t["1z3c6e"], {
             percent: e,
             progress: t,
             total: n,
             timeRemaining: i
         }),
-        [v.pJ.MINUTES]: (e, t, n, i) => w.intl.formatToPlainString(w.t.PCX506, {
+        [x.pJ.MINUTES]: (e, t, n, i) => w.intl.formatToPlainString(w.t.PCX506, {
             percent: e,
             progress: t,
             total: n,
             timeRemaining: i
         }),
-        [v.pJ.HOURS]: (e, t, n, i) => w.intl.formatToPlainString(w.t["3VG9s1"], {
+        [x.pJ.HOURS]: (e, t, n, i) => w.intl.formatToPlainString(w.t["3VG9s1"], {
             percent: e,
             progress: t,
             total: n,
@@ -166,7 +166,7 @@ function F(e, t, n, i, r) {
         {
             unit: s,
             time: o
-        } = (0, v.$l)(null != e ? e / 60 : null, l);
+        } = (0, x.$l)(null != e ? e / 60 : null, l);
     if (null != a && null != s) {
         let e = a[s];
         return null != e ? e(n, i, r, o) : null
@@ -384,7 +384,7 @@ class W extends r.PureComponent {
         })
     };renderProgressPatching() {
         return (0, i.jsx)(D.A, {
-            getHistoricalTotalBytes: b.A.getHistoricalTotalBytesWritten,
+            getHistoricalTotalBytes: y.A.getHistoricalTotalBytesWritten,
             updateInterval: 5e3,
             children: this.renderProgressPatchingBody
         })
@@ -558,7 +558,7 @@ class X extends r.PureComponent {
                 children: [(0, i.jsx)(M.A, {
                     className: l()(U.e4, U.Eg),
                     title: w.intl.string(w.t.ytoXKr),
-                    getHistoricalTotalBytes: b.A.getHistoricalTotalBytesDownloaded,
+                    getHistoricalTotalBytes: y.A.getHistoricalTotalBytesDownloaded,
                     color: u.A.unsafe_rawColors.GREEN_360.resolve({
                         saturation: 1
                     }).hex(),
@@ -566,7 +566,7 @@ class X extends r.PureComponent {
                 }), (0, i.jsx)(M.A, {
                     className: l()(U.e4, U.pn),
                     title: w.intl.string(w.t.SjohhI),
-                    getHistoricalTotalBytes: b.A.getHistoricalTotalBytesWritten,
+                    getHistoricalTotalBytes: y.A.getHistoricalTotalBytesWritten,
                     color: u.A.unsafe_rawColors.BLUE_345.resolve({
                         saturation: 1
                     }).hex(),
@@ -617,15 +617,15 @@ function Z(e, t, n, i) {
             branchId: s,
             state: d,
             application: o,
-            libraryApplication: y.A.getLibraryApplication(l, s),
+            libraryApplication: b.A.getLibraryApplication(l, s),
             finished: t,
             index: a
         }), e
     }, [])
 }
-let J = (0, f.A)(c.Ay.connectStores([C.A, b.A, O.A, x.A, L.A], () => ({
-    applications: [...Z(O.A.activeItems, !1, C.A, b.A), ...Z(O.A.finishedItems, !0, C.A, b.A)],
+let J = (0, f.A)(c.Ay.connectStores([C.A, y.A, O.A, v.A, L.A], () => ({
+    applications: [...Z(O.A.activeItems, !1, C.A, y.A), ...Z(O.A.finishedItems, !0, C.A, y.A)],
     paused: O.A.paused,
     isFocused: L.A.isFocused(),
-    theme: x.A.theme
+    theme: v.A.theme
 }))((0, I.A)(X)))

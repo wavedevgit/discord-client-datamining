@@ -4,8 +4,8 @@ n.d(t, {
 });
 var a = n(627968),
     i = n(64700),
-    l = n(110259),
-    s = n(311907),
+    s = n(110259),
+    l = n(311907),
     r = n(562465),
     o = n(397927),
     d = n(830215),
@@ -16,9 +16,9 @@ var a = n(627968),
     x = n(139286),
     p = n(80556),
     g = n(557722),
-    _ = n(544028),
-    f = n(870570),
-    v = n(446868),
+    f = n(544028),
+    v = n(870570),
+    _ = n(446868),
     b = n(683589),
     j = n(87404),
     A = n(652215),
@@ -29,13 +29,13 @@ function S() {
     let {
         action: e,
         theme: t
-    } = (0, s.cf)([f.A, _.A], () => ({
-        action: f.A.getAction(),
-        theme: _.A.theme
-    })), S = v.A.getVerificationTypes(e), [T, E] = i.useState(0), N = (0, m.A)(S);
+    } = (0, l.cf)([v.A, f.A], () => ({
+        action: v.A.getAction(),
+        theme: f.A.theme
+    })), S = _.A.getVerificationTypes(e), [E, T] = i.useState(0), N = (0, m.A)(S);
     (0, x.A)({
-        type: l.ImpressionTypes.MODAL,
-        name: l.ImpressionNames.USER_ACTION_REQUIRED,
+        type: s.ImpressionTypes.MODAL,
+        name: s.ImpressionNames.USER_ACTION_REQUIRED,
         properties: {
             verification_type: S[0],
             verification_types: S
@@ -74,7 +74,7 @@ function S() {
         })
     }, [S, N]), (0, a.jsx)(b.A, {
         types: S,
-        captchaKey: T,
+        captchaKey: E,
         onCaptchaVerify: e => {
             r.Bo.post({
                 url: A.Rsh.CAPTCHA,
@@ -84,7 +84,7 @@ function S() {
                 oldFormErrors: !0,
                 rejectWithError: !0
             }).then(c.jH, () => {
-                E(e => e + 1)
+                T(e => e + 1)
             })
         },
         theme: t,

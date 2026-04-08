@@ -4,8 +4,8 @@ n.d(t, {
 }), n(321073);
 var a = n(627968),
     i = n(64700),
-    l = n(311907),
-    s = n(342494),
+    s = n(311907),
+    l = n(342494),
     r = n(688810),
     o = n(704824),
     d = n(362490),
@@ -16,9 +16,9 @@ var a = n(627968),
     x = n(633075),
     p = n(735321),
     g = n(667049),
-    _ = n(657331),
-    f = n(606758),
-    v = n(961350),
+    f = n(657331),
+    v = n(606758),
+    _ = n(961350),
     b = n(403362),
     j = n(49999),
     A = n(518477),
@@ -29,11 +29,11 @@ function y(e) {
         targetElementRef: t,
         onClose: n
     } = e, [y, S] = i.useState(!1), {
-        trackUserProfileEditAction: T
-    } = (0, h.NJ)(), E = (0, l.bG)([v.default], () => v.default.getId()), N = function() {
-        let e, t, n = (0, l.bG)([v.default], () => v.default.getId()),
+        trackUserProfileEditAction: E
+    } = (0, h.NJ)(), T = (0, s.bG)([_.default], () => _.default.getId()), N = function() {
+        let e, t, n = (0, s.bG)([_.default], () => _.default.getId()),
             a = (0, g.A)(n),
-            s = i.useMemo(() => a.filter(e => e instanceof x.R), [a]),
+            l = i.useMemo(() => a.filter(e => e instanceof x.R), [a]),
             r = (e = (0, c.VA)({
                 location: "UserProfileAccountPopoutApplicationWidgetCoachmark"
             }), i.useMemo(() => e?.filter(e => e.isEligibleForEditProfileUpsell()), [e])),
@@ -41,34 +41,34 @@ function y(e) {
             h = (t = (0, u.A)(m), i.useMemo(() => t.filter(b.Vq), [t])),
             {
                 tokens: p,
-                fetched: _
+                fetched: f
             } = (0, o.j)(m),
-            f = (0, d.U9)(h);
+            v = (0, d.U9)(h);
         return i.useMemo(() => {
-            if (null == r || null == p || !_) return null;
+            if (null == r || null == p || !f) return null;
             let e = [],
                 t = [];
             for (let n of r) {
                 let a = p.find(e => e.application.id === n.applicationId),
-                    i = s.find(e => e.applicationId === n.applicationId),
-                    l = h.find(e => e.id === n.applicationId),
-                    r = f.find(e => e.context.application.id === n.applicationId);
-                if (null == l) return null;
+                    i = l.find(e => e.applicationId === n.applicationId),
+                    s = h.find(e => e.id === n.applicationId),
+                    r = v.find(e => e.context.application.id === n.applicationId);
+                if (null == s) return null;
                 null != a && null == i ? e.push({
                     type: "linked",
                     config: n,
-                    application: l,
+                    application: s,
                     dismissibleContent: n.editProfileLinkedDc
                 }) : null == a && r?.preferredFlow != null && t.push({
                     type: "unlinked",
                     config: n,
-                    application: l,
+                    application: s,
                     dismissibleContent: n.editProfileUnlinkedDc,
                     authFlow: r.preferredFlow
                 })
             }
             return [...e, ...t]
-        }, [r, p, _, s, h, f])
+        }, [r, p, f, l, h, v])
     }(), {
         analyticsLocations: I
     } = (0, r.Ay)();
@@ -77,17 +77,17 @@ function y(e) {
         children: e => {
             let {
                 visibleContent: i,
-                markAsDismissed: l
+                markAsDismissed: s
             } = e, r = N.find(e => e.dismissibleContent === i);
             if (null == r) return null;
             let o = "linked" === r.type,
-                d = () => (0, _.openUserProfileModal)({
-                    userId: E,
+                d = () => (0, f.openUserProfileModal)({
+                    userId: T,
                     tabSection: A.RP.WIDGETS
                 }).then(() => {
-                    l(j.i.TAKE_ACTION), n()
+                    s(j.i.TAKE_ACTION), n()
                 });
-            return (0, a.jsx)(s.AM, {
+            return (0, a.jsx)(l.AM, {
                 targetElementRef: t,
                 position: "right",
                 gradientColor: "blue",
@@ -99,7 +99,7 @@ function y(e) {
                     applicationName: r.application.name
                 }),
                 body: o ? C.intl.string(C.t["63Kso0"]) : C.intl.string(C.t.HwXoeC),
-                onRequestClose: () => l(j.i.USER_DISMISS),
+                onRequestClose: () => s(j.i.USER_DISMISS),
                 actions: [o ? {
                     text: C.intl.string(C.t.VSLDly),
                     onClick: () => {
@@ -107,10 +107,10 @@ function y(e) {
                             let e;
                             return e = new x.R({
                                 applicationId: r.application.id
-                            }), void((0, p.Y5)(e), T({
+                            }), void((0, p.Y5)(e), E({
                                 action: "WIDGET_ADDED",
                                 ...e.getProfileEditAnalyticsOptions()
-                            }), (0, f.XA)(A.jM.WIDGET_ADDED))
+                            }), (0, v.XA)(A.jM.WIDGET_ADDED))
                         }).finally(() => S(!1))
                     },
                     loading: y

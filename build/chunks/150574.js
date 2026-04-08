@@ -1,6 +1,6 @@
 /** chunk id: 150574 params = (module,exports,require) **/
 n.d(t, {
-    A: () => b
+    A: () => y
 });
 var i = n(627968),
     r = n(64700),
@@ -24,19 +24,19 @@ var i = n(627968),
     T = n(734736),
     N = n(247455),
     S = n(57718),
-    v = n(652215),
-    x = n(985018),
-    y = n(598766);
-let b = (0, r.memo)(function(e) {
+    x = n(652215),
+    v = n(985018),
+    b = n(864833);
+let y = (0, r.memo)(function(e) {
     let {
         quest: t
-    } = e, [n, a] = (0, r.useState)(!1), [b, O] = (0, r.useState)(24), [L, R] = (0, r.useState)(!1), P = (0, r.useRef)(null), D = (0, r.useRef)(null), M = (0, r.useRef)(null), j = (0, d.bG)([p.default], () => p.default.getCurrentUser()), {
+    } = e, [n, a] = (0, r.useState)(!1), [y, O] = (0, r.useState)(24), [L, R] = (0, r.useState)(!1), P = (0, r.useRef)(null), D = (0, r.useRef)(null), M = (0, r.useRef)(null), j = (0, d.bG)([p.default], () => p.default.getCurrentUser()), {
         ref: w,
         height: U = 0
     } = (0, A.Ay)(), G = (0, h.Ay)(), k = (0, I.S5)(t.userStatus?.claimedAt, {
         month: "numeric",
         day: "numeric"
-    }), V = t.userStatus?.claimedTier ?? 0, B = t.config.rewards[V], H = B?.type === o.l.FRACTIONAL_PREMIUM, F = B?.type === o.l.COLLECTIBLE, Y = B?.type === o.l.VIRTUAL_CURRENCY, W = B?.collectibleProduct?.items?.[0], K = W?.type === s.R.AVATAR_DECORATION ? W : null, q = r.useMemo(() => null == B ? null : !0 === Y && t.userStatus?.orbQuantityClaimed != null ? x.intl.format(x.t["nLXlh+"], {
+    }), V = t.userStatus?.claimedTier ?? 0, B = t.config.rewards[V], H = B?.type === o.l.FRACTIONAL_PREMIUM, F = B?.type === o.l.COLLECTIBLE, Y = B?.type === o.l.VIRTUAL_CURRENCY, W = B?.collectibleProduct?.items?.[0], K = W?.type === s.R.AVATAR_DECORATION ? W : null, q = r.useMemo(() => null == B ? null : !0 === Y && t.userStatus?.orbQuantityClaimed != null ? v.intl.format(v.t["nLXlh+"], {
         orbAmount: t.userStatus.orbQuantityClaimed
     }) : B.name, [B, Y, t]);
     (0, A.i4)(P, e => {
@@ -59,7 +59,7 @@ let b = (0, r.memo)(function(e) {
             ...ee
         } = (0, C.fF)(E.uF.TROPHY_CASE_CARD),
         et = () => {
-            a(!0), g.default.track(v.HAw.QUEST_HOVER, {
+            a(!0), g.default.track(x.HAw.QUEST_HOVER, {
                 quest_id: t.id,
                 ...ee
             })
@@ -68,7 +68,7 @@ let b = (0, r.memo)(function(e) {
             a(!1)
         },
         ei = e => {
-            R(!0), g.default.track(v.HAw.QUEST_ASSET_LOADING_FAILURE, {
+            R(!0), g.default.track(x.HAw.QUEST_ASSET_LOADING_FAILURE, {
                 source: e,
                 asset_id: e,
                 quest_id: t.id
@@ -82,14 +82,14 @@ let b = (0, r.memo)(function(e) {
             onBlur: en,
             onMouseEnter: et,
             onMouseLeave: en,
-            className: l()(y.kL, {
-                [y.yo]: n
+            className: l()(b.kL, {
+                [b.yo]: n
             }),
             children: [null != j && F && null != K && (0, i.jsx)("div", {
                 ref: M,
-                className: y.FX,
+                className: b.FX,
                 style: {
-                    top: b
+                    top: y
                 },
                 children: (0, i.jsx)(_.A, {
                     avatarDecorationOverride: K,
@@ -98,13 +98,13 @@ let b = (0, r.memo)(function(e) {
                     animateOnHover: !n
                 })
             }), H ? (0, i.jsx)(T.A, {
-                className: y.Sl
+                className: b.Sl
             }) : Y ? (0, i.jsx)(N.A, {
-                className: y.Sl,
+                className: b.Sl,
                 isAnimated: n,
                 questName: t.config.messages.questName
             }) : Q.isAnimated ? (0, i.jsx)(m.A, {
-                className: y.JU,
+                className: b.JU,
                 autoPlay: !1,
                 children: (0, i.jsx)("source", {
                     src: Q.url,
@@ -112,36 +112,36 @@ let b = (0, r.memo)(function(e) {
                     onError: () => ei(Q.url)
                 })
             }) : (0, i.jsx)("img", {
-                className: y.Sl,
+                className: b.Sl,
                 src: Q.url,
                 alt: t.config.messages.questName,
                 onError: () => ei(Q.url)
             }), (0, i.jsx)("div", {
-                className: l()(y.Lw, {
-                    [y.en]: z,
-                    [y.So]: !z
+                className: l()(b.Lw, {
+                    [b.en]: z,
+                    [b.So]: !z
                 })
             }), (0, i.jsx)("div", {
                 ref: D,
-                className: y.r$,
+                className: b.r$,
                 style: {
                     transform: `translateY(-${X}px)`
                 },
                 children: (0, i.jsx)(S.Ay, {
-                    logotypeClassName: l()(y.wm, {
-                        [y.A0]: $
+                    logotypeClassName: l()(b.wm, {
+                        [b.A0]: $
                     }),
                     quest: t,
                     withGameTile: !1
                 })
             }), (0, i.jsxs)("div", {
                 ref: w,
-                className: y.zH,
+                className: b.zH,
                 children: [(0, i.jsx)(u.Heading, {
-                    className: y.DD,
+                    className: b.DD,
                     variant: "heading-md/semibold",
                     color: "always-white",
-                    children: x.intl.format(x.t.EAYZAr, {
+                    children: v.intl.format(v.t.EAYZAr, {
                         questName: t.config.messages.questName
                     })
                 }), (0, i.jsx)(u.Text, {
@@ -150,7 +150,7 @@ let b = (0, r.memo)(function(e) {
                     style: {
                         opacity: z ? 1 : .75
                     },
-                    children: x.intl.format(x.t["kXVcV+"], {
+                    children: v.intl.format(v.t["kXVcV+"], {
                         reward: q,
                         claimedDate: k
                     })

@@ -1,5 +1,6 @@
 /** chunk id: 894374 params = (module,exports,require) **/
-n.d(e, {
+"use strict";
+n.d(t, {
     A: () => r
 });
 let i = (0, n(945810).mj)({
@@ -15,11 +16,11 @@ let i = (0, n(945810).mj)({
     }
 });
 
-function r(t) {
+function r(e) {
     let {
-        location: e
-    } = t;
+        location: t
+    } = e;
     return i.useConfig({
-        location: e
+        location: t
     }).enabled
 }

@@ -22,7 +22,7 @@ var i = n(627968),
     f = n(324580),
     C = n(488995),
     T = n(985018),
-    N = n(691553);
+    N = n(579528);
 
 function S() {
     let e = r.useRef((0, h.YP)()),
@@ -32,12 +32,12 @@ function S() {
             resetScrollPosition: S
         } = (0, l.G)(),
         {
-            tabs: v,
-            selectedTab: x,
-            setSelectedTab: y
+            tabs: x,
+            selectedTab: v,
+            setSelectedTab: b
         } = (0, g.f)(),
-        b = (0, h.Ub)(x),
-        O = !f.R0.has(x),
+        y = (0, h.Ub)(v),
+        O = !f.R0.has(v),
         {
             searchQuery: L,
             onSearchTextChange: R,
@@ -63,15 +63,15 @@ function S() {
         }),
         V = u.A.useField("fetchedQuery"),
         B = r.useCallback(e => {
-            y(e), M && P()
-        }, [M, P, y]),
-        H = r.useMemo(() => M ? v.filter(e => {
+            b(e), M && P()
+        }, [M, P, b]),
+        H = r.useMemo(() => M ? x.filter(e => {
             let {
                 id: t
             } = e;
             return !f.R0.has(t)
-        }) : v, [v, M]),
-        F = r.useRef(new A.A(b)),
+        }) : x, [x, M]),
+        F = r.useRef(new A.A(y)),
         {
             onGuildCardSeen: Y,
             onGuildCardClick: W
@@ -81,9 +81,9 @@ function S() {
         });
     return r.useEffect(() => {
         F.current.flushSeenGuilds(e.current)
-    }, [b]), r.useEffect(() => {
+    }, [y]), r.useEffect(() => {
         S()
-    }, [x, S]), r.useEffect(() => {
+    }, [v, S]), r.useEffect(() => {
         M || u.A.setState({
             scrollPosition: null
         })
@@ -101,7 +101,7 @@ function S() {
             }), !M && (0, i.jsx)(d.A, {
                 className: k,
                 tabs: H,
-                selectedTab: x,
+                selectedTab: v,
                 onTabSelect: B,
                 onAvailableWidthChange: w
             }), M && (0, i.jsx)(a.Heading, {
@@ -126,7 +126,7 @@ function S() {
             onGuildCardClick: W,
             onGuildCardSeen: Y
         }) : (0, i.jsx)(E.A, {
-            selectedTab: x,
+            selectedTab: v,
             onScroll: t,
             onGuildCardClick: W,
             onGuildCardSeen: Y

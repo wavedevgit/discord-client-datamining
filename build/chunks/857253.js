@@ -1,16 +1,16 @@
 /** chunk id: 857253 params = (module,exports,require) **/
 n.d(t, {
-    A: () => u
+    A: () => r
 });
 var i = n(311907),
     l = n(961350),
-    r = n(977997),
+    s = n(977997),
     a = n(643501);
 
-function u() {
-    return (0, i.bG)([l.default, r.A, a.default], () => {
+function r() {
+    return (0, i.bG)([l.default, s.A, a.default], () => {
         let e = l.default.getId(),
             t = a.default.getRemoteSessionId();
-        return r.A.getVoiceStateForSession(e, t) ?? void 0
+        return s.A.getVoiceStateForSession(e, t) ?? void 0
     }, [])
 }

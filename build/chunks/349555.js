@@ -15,7 +15,7 @@ var i = n(627968),
     h = n(710969),
     _ = n(439075),
     m = n(985018),
-    p = n(909901);
+    p = n(398168);
 let g = 4 * u.A.Millis.SECOND;
 
 function E(e) {
@@ -49,16 +49,16 @@ let I = r.forwardRef(function(e, t) {
         hasFetched: u,
         hasFiltersApplied: I = !1,
         onClearFilters: f
-    } = e, C = (0, s.zy)(), T = r.useRef(""), [N, S] = r.useState(null), [v, x] = r.useState(0), [{
-        highlightAnimationProgress: y
-    }, b] = (0, c.zhh)(() => ({
+    } = e, C = (0, s.zy)(), T = r.useRef(""), [N, S] = r.useState(null), [x, v] = r.useState(0), [{
+        highlightAnimationProgress: b
+    }, y] = (0, c.zhh)(() => ({
         highlightAnimationProgress: 1,
         config: {
             duration: g
         }
     })), O = r.useCallback(e => {
         let t = (0, h.vc)(e, n, a);
-        return null != t && (S(t.id), x(e => e + 1), !0)
+        return null != t && (S(t.id), v(e => e + 1), !0)
     }, [n, a]);
     return (r.useImperativeHandle(t, () => ({
         scrollToQuest: O
@@ -74,7 +74,7 @@ let I = r.forwardRef(function(e, t) {
         null != e && (e.scrollIntoView({
             behavior: "smooth",
             block: "center"
-        }), b({
+        }), y({
             from: {
                 highlightAnimationProgress: 0
             },
@@ -86,7 +86,7 @@ let I = r.forwardRef(function(e, t) {
                 e.cancelled || S(null)
             }
         }))
-    }, [N, v, b]), d && 0 === n.length) ? (0, i.jsx)(c.y$y, {
+    }, [N, x, y]), d && 0 === n.length) ? (0, i.jsx)(c.y$y, {
         className: p.u1
     }) : 0 === n.length ? (0, i.jsxs)("div", {
         className: p.y7,
@@ -110,19 +110,19 @@ let I = r.forwardRef(function(e, t) {
                     [p.XB]: a
                 }),
                 style: a ? {
-                    boxShadow: (0, o.to)([y.to({
+                    boxShadow: (0, o.to)([b.to({
                         range: [0, .25, .75, 1],
                         output: [0, 1, 1, 0]
                     })], e => `0 0 ${25*e}px 0 rgba(88, 101, 242, ${e})`)
                 } : s ? {
-                    opacity: (0, o.to)([y.to({
+                    opacity: (0, o.to)([b.to({
                         range: [0, .25, .75, 1],
                         output: [1, .4, .4, 1]
                     })], e => e)
                 } : void 0,
                 children: [a && (0, i.jsx)("div", {
                     className: p.E4
-                }, v), (0, i.jsx)(_.A, {
+                }, x), (0, i.jsx)(_.A, {
                     quest: t,
                     questContent: A.uF.QUEST_HOME_DESKTOP,
                     contentPosition: n,

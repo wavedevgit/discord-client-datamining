@@ -56,7 +56,7 @@ function I(e) {
         }
     }(t), {
         subtitle: S,
-        icon: v
+        icon: x
     } = function(e) {
         let {
             priorityMembers: t,
@@ -184,25 +184,25 @@ function I(e) {
                 src: p.A.Header.Icon.Src.MULTIPLE
             })
         }
-    }(t), x = (0, A.A)({
+    }(t), v = (0, A.A)({
         applicationId: t.currentActivities[0]?.activity?.application_id,
         location: "FriendsActivityFeed",
         source: u.Ob.FriendsActivityFeed
-    }), y = (0, d.A)({
+    }), b = (0, d.A)({
         userId: T.user.id,
         guildId: C?.id
-    }), b = (0, c.a)({
-        displayNameStyles: y
+    }), y = (0, c.a)({
+        displayNameStyles: b
     });
     return (0, i.jsx)(p.A.Header, {
         priorityUser: T,
         guildId: C?.id,
         title: N,
         subtitle: S,
-        icon: v,
-        onSubtitleClick: x,
-        onIconClick: x,
+        icon: x,
+        onSubtitleClick: v,
+        onIconClick: v,
         onContextMenu: e => r(e, T.user),
-        displayNameFont: 1 === f.length ? b : void 0
+        displayNameFont: 1 === f.length ? y : void 0
     })
 }

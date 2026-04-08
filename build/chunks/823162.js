@@ -24,11 +24,11 @@ var i = n(989349),
     T = n(309010),
     N = n(543465),
     S = n(287809),
-    v = n(427262),
-    x = n(54570),
-    y = n(8880);
+    x = n(427262),
+    v = n(54570),
+    b = n(8880);
 n(75804);
-var b = n(652215),
+var y = n(652215),
     O = n(985018);
 let L = [],
     R = null,
@@ -40,7 +40,7 @@ function j(e, t, n, i) {
     let a = E.A.getGuild(n),
         l = e.replace(M, O.intl.string(O.t["F+x38C"])).replace(/<@!?(\d+)>/g, (e, t) => {
             let i = S.default.getUser(t);
-            return null == i ? O.intl.string(O.t.sKdZ6U) : p.Ay.getNick(n, i.id) ?? v.Ay.getName(i)
+            return null == i ? O.intl.string(O.t.sKdZ6U) : p.Ay.getNick(n, i.id) ?? x.Ay.getName(i)
         }).replace(/<@&?(\d+)>/g, (e, t) => {
             let n = null != a ? g.A.getRole(a.id, t) : null;
             return null != n && null != n.name ? n.name : O.intl.string(O.t["YV4F/n"])
@@ -72,12 +72,12 @@ function w() {
 }
 async function U(e, t, n, i, r) {
     let a = s.aW(e, n);
-    null !== a && (null == P && w(), t ? await (0, x.pr)() : R?.removeEventListener("end", x.pr), a.addEventListener("end", x.pr), null != i && a.addEventListener("start", i), null != r && a.addEventListener("end", r), R = a, s.wz(a, P))
+    null !== a && (null == P && w(), t ? await (0, v.pr)() : R?.removeEventListener("end", v.pr), a.addEventListener("end", v.pr), null != i && a.addEventListener("start", i), null != r && a.addEventListener("end", r), R = a, s.wz(a, P))
 }
 
 function G(e, t, n, i, r) {
     U(e, t, r, () => {
-        (0, x.kC)(n, i)
+        (0, v.kC)(n, i)
     })
 }
 
@@ -93,14 +93,14 @@ function k(e) {
 }
 
 function V() {
-    return null !== R && R.removeEventListener("end", x.pr), s._X(), R = null, !0
+    return null !== R && R.removeEventListener("end", v.pr), s._X(), R = null, !0
 }
 
 function B(e) {
     let {
         message: t,
         channel: n
-    } = e, i = t.type === b.lAJ.REPLY ? c.A.getMessageByReference(t.messageReference) : null, r = i?.state === c.a.LOADED ? i?.message?.author : null, a = null != r ? p.Ay.getNick(n.guild_id, r?.id) ?? v.Ay.getName(r) : null, l = n.getGuildId(), s = p.Ay.getNick(l, t.author.id) ?? v.Ay.getName(t.author);
+    } = e, i = t.type === y.lAJ.REPLY ? c.A.getMessageByReference(t.messageReference) : null, r = i?.state === c.a.LOADED ? i?.message?.author : null, a = null != r ? p.Ay.getNick(n.guild_id, r?.id) ?? x.Ay.getName(r) : null, l = n.getGuildId(), s = p.Ay.getNick(l, t.author.id) ?? x.Ay.getName(t.author);
     return G(j(t.content, s, l, a), !0, n.id, t.id), !0
 }
 
@@ -118,15 +118,15 @@ function H(e) {
         s = t === a || t === l,
         o = A.on.getSetting() && n.tts && s,
         d = f.A.getTTSType(),
-        c = n.author?.id !== h.default.getId() && (d === b.aVn.ALL_CHANNELS || d === b.aVn.SELECTED_CHANNEL && s);
+        c = n.author?.id !== h.default.getId() && (d === y.aVn.ALL_CHANNELS || d === y.aVn.SELECTED_CHANNEL && s);
     if ((o || c) && !C.A.isBlockedOrIgnoredForMessage(n)) {
         if (L.indexOf(n.id) >= 0) return !1;
         L.unshift(n.id) > 10 && L.pop();
         let e = r.getGuildId();
         if (null != e && N.Ay.getMutedChannels(e).has(t)) return !1;
-        let i = p.Ay.getNick(e, n.author?.id) ?? v.Ay.getName(n.author) ?? "",
-            a = n.type === b.lAJ.REPLY ? n.referenced_message?.author : null,
-            l = null != a ? p.Ay.getNick(e, a?.id) ?? v.Ay.getName(a) : null;
+        let i = p.Ay.getNick(e, n.author?.id) ?? x.Ay.getName(n.author) ?? "",
+            a = n.type === y.lAJ.REPLY ? n.referenced_message?.author : null,
+            l = null != a ? p.Ay.getNick(e, a?.id) ?? x.Ay.getName(a) : null;
         G(j(n.content, i, e, l), !1, r.id, n.id, 200)
     }
     return !1
@@ -136,8 +136,8 @@ function F(e) {
     let {
         id: t,
         channelId: n
-    } = e, i = y.A.currentMessage;
-    return null != i && t === i.messageId && n === i.channelId && ((0, x.pr)(), !0)
+    } = e, i = b.A.currentMessage;
+    return null != i && t === i.messageId && n === i.channelId && ((0, v.pr)(), !0)
 }
 
 function Y() {
@@ -147,8 +147,8 @@ function Y() {
 function W(e) {
     let {
         channelId: t
-    } = e, n = y.A.currentMessage;
-    null != n && n.channelId !== t && (0, x.pr)()
+    } = e, n = b.A.currentMessage;
+    null != n && n.channelId !== t && (0, v.pr)()
 }
 let K = {
     init() {

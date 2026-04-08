@@ -50,7 +50,7 @@ let A = [{
         handler: (e, t) => (0, s.mMO)(async () => {
             let {
                 default: l
-            } = await Promise.all([n.e("43600"), n.e("71281")]).then(n.bind(n, 234355));
+            } = await Promise.all([n.e("43600"), n.e("67505")]).then(n.bind(n, 234355));
             return n => (0, i.jsx)(l, {
                 ...n,
                 guild: e,

@@ -1,12 +1,12 @@
 /** chunk id: 974857 params = (module,exports,require) **/
 n.d(t, {
-    A: () => l
+    A: () => s
 });
 var a = n(627968);
 n(64700);
 var i = n(397927);
 
-function l() {
+function s() {
     return (0, a.jsxs)(i.Text, {
         variant: "text-lg/normal",
         children: ["Under Construction", " ", (0, a.jsx)("span", {

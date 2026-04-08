@@ -1,11 +1,11 @@
 /** chunk id: 523875 params = (module,exports,require) **/
 n.d(t, {
-    L: () => r
+    L: () => o
 });
-var i = n(627968),
-    l = n(64700),
-    s = n(744682);
-let a = {
+var a = n(627968),
+    r = n(64700),
+    i = n(744682);
+let l = {
         mute: {
             name: "mute",
             start: 0,
@@ -27,39 +27,39 @@ let a = {
             duration: 40
         }
     },
-    r = e => {
-        let t = l.useRef(null),
-            r = l.useRef(e);
-        r.current = e;
-        let o = l.useMemo(() => () => {
+    o = e => {
+        let t = r.useRef(null),
+            o = r.useRef(e);
+        o.current = e;
+        let s = r.useMemo(() => () => {
                 null != t.current && t.current.play(e)
             }, [e]),
-            c = l.useCallback(() => {
+            _ = r.useCallback(() => {
                 if (null == t.current) return;
                 let n = "mute" === e ? "hover_unmuted" : "hover_muted";
                 t.current.play(n)
             }, [e]),
-            d = l.useCallback(() => {
+            u = r.useCallback(() => {
                 if (null == t.current) return;
                 let n = "mute" === e ? "hover_unmuted" : "hover_muted";
                 t.current.stopIfPlaying(n)
             }, [e]),
-            u = l.useCallback(e => (0, i.jsx)(s.P, {
+            c = r.useCallback(e => (0, a.jsx)(i.P, {
                 ...e,
                 src: () => n.e("18133").then(n.t.bind(n, 705844, 19)),
                 ref: t,
-                initialAnimation: r.current,
-                markers: a
+                initialAnimation: o.current,
+                markers: l
             }), []);
         return {
             events: {
-                onClick: o,
-                onMouseEnter: c,
-                onMouseLeave: d
+                onClick: s,
+                onMouseEnter: _,
+                onMouseLeave: u
             },
-            play: o,
-            getDuration: l.useCallback(() => t.current?.getDuration(), []),
-            getCurrentFrame: l.useCallback(() => t.current?.getCurrentFrame() ?? null, []),
-            Component: u
+            play: s,
+            getDuration: r.useCallback(() => t.current?.getDuration(), []),
+            getCurrentFrame: r.useCallback(() => t.current?.getCurrentFrame() ?? null, []),
+            Component: c
         }
     }

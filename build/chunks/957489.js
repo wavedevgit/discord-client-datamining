@@ -2,8 +2,8 @@
 t.d(n, {
     F: () => x
 });
-var i = t(627968),
-    l = t(158954),
+var l = t(627968),
+    i = t(158954),
     r = t(234419),
     s = t(612669),
     a = t(672525),
@@ -15,38 +15,38 @@ var i = t(627968),
     m = t(169801),
     E = t(788868),
     _ = t(985018),
-    S = t(908879);
+    S = t(338042);
 
 function x(e) {
     let {
         handleStepChange: n,
         referralTrialOfferId: t
     } = e, {
-        setSelectedSkuId: l,
+        setSelectedSkuId: i,
         activeSubscription: s,
         startedPaymentFlowWithPaymentSourcesRef: a,
         setSelectedPlanId: _,
         priceOptions: S,
         defaultPlanId: x,
-        hasPaymentSources: I
+        hasPaymentSources: P
     } = (0, d.P5)(), {
-        isGift: P,
-        claimableRewards: h
-    } = (0, u.Pv)(), A = P && null != h && h.length > 0, g = (0, r.V)(t);
-    return (0, i.jsx)(T, {
+        isGift: h,
+        claimableRewards: A
+    } = (0, u.Pv)(), I = h && null != A && A.length > 0, g = (0, r.V)(t);
+    return (0, l.jsx)(T, {
         selectSku: e => (function(e) {
             let {
                 activeSubscription: n,
                 newSkuId: t,
-                setSelectedSkuId: i,
-                handleStepChange: l,
+                setSelectedSkuId: l,
+                handleStepChange: i,
                 isGift: r,
                 userTrialOffer: s,
                 setSelectedPlanId: a,
                 startedPaymentFlowWithPaymentSources: u,
                 defaultPlanId: d
             } = e;
-            i(t);
+            l(t);
             let _ = c.pn.PLAN_SELECT,
                 S = (0, o.aZ)(n);
             S !== E.pe.TIER_1 && S !== E.pe.TIER_2 || t !== E.pe.TIER_0 || r || (_ = c.pn.WHAT_YOU_LOSE);
@@ -61,7 +61,7 @@ function x(e) {
                     selectedSkuId: t,
                     startedPaymentFlowWithPaymentSources: u
                 });
-            _ !== c.pn.WHAT_YOU_LOSE && T && (_ = c.pn.REVIEW, a((0, p.xT)(t, n, d))), l(_, {
+            _ !== c.pn.WHAT_YOU_LOSE && T && (_ = c.pn.REVIEW, a((0, p.xT)(t, n, d))), i(_, {
                 analyticsDataOverride: {
                     sku_id: t
                 }
@@ -69,9 +69,9 @@ function x(e) {
         })({
             activeSubscription: s,
             newSkuId: e,
-            setSelectedSkuId: l,
+            setSelectedSkuId: i,
             handleStepChange: n,
-            isGift: P,
+            isGift: h,
             userTrialOffer: g,
             startedPaymentFlowWithPaymentSources: a.current,
             setSelectedPlanId: _,
@@ -81,10 +81,10 @@ function x(e) {
             let {
                 setSelectedPlanId: n,
                 handleStepChange: t,
-                hasPaymentSources: i,
-                setSelectedSkuId: l
+                hasPaymentSources: l,
+                setSelectedSkuId: i
             } = e;
-            l((0, o.mH)(E.pe.TIER_2)), n(E.gD.PREMIUM_GROUP_MONTH), t(i ? c.pn.REVIEW : c.pn.ADD_PAYMENT_STEPS, {
+            i((0, o.mH)(E.pe.TIER_2)), n(E.gD.PREMIUM_GROUP_MONTH), t(l ? c.pn.REVIEW : c.pn.ADD_PAYMENT_STEPS, {
                 analyticsDataOverride: {
                     sku_id: E.pe.TIER_2
                 }
@@ -92,12 +92,12 @@ function x(e) {
         })({
             setSelectedPlanId: _,
             handleStepChange: n,
-            hasPaymentSources: I,
-            setSelectedSkuId: l
+            hasPaymentSources: P,
+            setSelectedSkuId: i
         }),
-        isGift: P,
+        isGift: h,
         priceOptions: S,
-        showPromotionalGiftBanner: A
+        showPromotionalGiftBanner: I
     })
 }
 
@@ -111,24 +111,24 @@ function T(e) {
     } = e, c = (0, s.FY)({
         isGift: t
     });
-    return (0, i.jsxs)(i.Fragment, {
-        children: [(0, i.jsx)(l.rQ0, {
+    return (0, l.jsxs)(l.Fragment, {
+        children: [(0, l.jsx)(i.rQ0, {
             titleTextVariant: "heading-lg/semibold",
             title: _.intl.string(_.t["r+SebU"])
-        }), c ? (0, i.jsx)(l.cwr, {
-            children: (0, i.jsx)("div", {
+        }), c ? (0, l.jsx)(i.cwr, {
+            children: (0, l.jsx)("div", {
                 className: S.eE,
-                children: (0, i.jsx)(a.yS, {
+                children: (0, l.jsx)(a.yS, {
                     onSelectSku: e => n((0, o.mH)(e)),
                     onSelectPremiumGroup: d,
                     priceOptions: r,
                     showPromotionalGiftBanner: u
                 })
             })
-        }) : (0, i.jsx)(l.cwr, {
-            children: (0, i.jsx)("div", {
+        }) : (0, l.jsx)(i.cwr, {
+            children: (0, l.jsx)("div", {
                 className: S.a2,
-                children: (0, i.jsx)(a.Ay, {
+                children: (0, l.jsx)(a.Ay, {
                     onSelectSku: e => n((0, o.mH)(e)),
                     isGift: t,
                     priceOptions: r,

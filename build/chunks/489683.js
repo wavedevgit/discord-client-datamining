@@ -1,6 +1,6 @@
 /** chunk id: 489683 params = (module,exports,require) **/
 n.d(t, {
-    A: () => e2
+    A: () => e5
 });
 var i = n(627968),
     r = n(64700),
@@ -24,10 +24,10 @@ var i = n(627968),
     T = n(951001),
     N = n(707606),
     S = n(155718),
-    v = n(933958),
-    x = n(967812),
-    y = n(404522),
-    b = n(782091),
+    x = n(933958),
+    v = n(967812),
+    b = n(404522),
+    y = n(782091),
     O = n(641703),
     L = n(521588),
     R = n(793574),
@@ -78,10 +78,10 @@ var i = n(627968),
     eT = n(442353),
     eN = n(970636),
     eS = n(616356),
-    ev = n(961350),
-    ex = n(734057),
-    ey = n(71393),
-    eb = n(186111),
+    ex = n(961350),
+    ev = n(734057),
+    eb = n(71393),
+    ey = n(186111),
     eO = n(430452),
     eL = n(576705),
     eR = n(383501),
@@ -102,7 +102,7 @@ var i = n(627968),
     eK = n(897513),
     eq = n(509381),
     ez = n(985018),
-    e$ = n(435549);
+    e$ = n(470534);
 let eQ = {
     offset: {
         left: -1,
@@ -213,7 +213,7 @@ function e0(e) {
         disabled: a
     } = e, s = r.useRef(null), {
         parentAnalyticsLocation: o
-    } = (0, P.Ay)(), d = (0, em.A)(), u = (0, eg.A)(t), A = (0, c.bG)([v.Ay], () => null != v.Ay.getSelfEmbeddedActivityForLocation(v.Ay.getConnectedActivityLocation())), h = (0, ea.Ay)(t), {
+    } = (0, P.Ay)(), d = (0, em.A)(), u = (0, eg.A)(t), A = (0, c.bG)([x.Ay], () => null != x.Ay.getSelfEmbeddedActivityForLocation(x.Ay.getConnectedActivityLocation())), h = (0, ea.Ay)(t), {
         reachedLimit: _,
         limit: p
     } = (0, ep.A)(t), C = r.useCallback(() => {
@@ -225,11 +225,11 @@ function e0(e) {
         };
         (0, w.X)(o, w.O.CAMERA, e), e ? (0, eT.A)(n, T) : n()
     }, [t, T, o]), S = A || n || h, {
-        Component: x,
-        play: y,
-        events: b
+        Component: v,
+        play: b,
+        events: y
     } = (0, m.K)(d.enabled ? "disable" : "enable");
-    return r.useEffect(() => () => y(), [d.enabled, y]), (0, i.jsx)(eN.r, {
+    return r.useEffect(() => () => b(), [d.enabled, b]), (0, i.jsx)(eN.r, {
         onChange: N,
         onCameraUnavailable: C,
         hasPermission: u,
@@ -245,7 +245,7 @@ function e0(e) {
                 iconComponent: a,
                 iconColor: d,
                 ...c
-            } = e, u = (0, i.jsx)(x, {
+            } = e, u = (0, i.jsx)(v, {
                 size: "md",
                 className: l()(e$.iA, {
                     [e$.ij]: !S
@@ -285,10 +285,10 @@ function e0(e) {
                                 c.onClick(e), A && o(e)
                             },
                             onMouseEnter: () => {
-                                d.onMouseEnter?.(), b.onMouseEnter()
+                                d.onMouseEnter?.(), y.onMouseEnter()
                             },
                             onMouseLeave: () => {
-                                b.onMouseLeave()
+                                y.onMouseLeave()
                             },
                             onContextMenu: e => {
                                 o(e)
@@ -322,14 +322,14 @@ function e1(e) {
     } = e, r = (0, Q.Us)(), {
         parentAnalyticsLocation: a,
         newestAnalyticsLocation: s
-    } = (0, P.Ay)(), o = r === eF.BRT.POPOUT, d = (0, b.et)(t.id), h = (0, b.dL)(d), {
+    } = (0, P.Ay)(), o = r === eF.BRT.POPOUT, d = (0, y.et)(t.id), h = (0, y.dL)(d), {
         userInActivity: _
-    } = (0, c.cf)([v.Ay], () => ({
-        userInActivity: null != v.Ay.getSelfEmbeddedActivityForChannel(t.id)
-    })), m = (0, y.b)({
+    } = (0, c.cf)([x.Ay], () => ({
+        userInActivity: null != x.Ay.getSelfEmbeddedActivityForChannel(t.id)
+    })), m = (0, b.b)({
         surface: S.YI.VOICE_LAUNCHER,
         skipFetchingShelf: !0
-    }), p = d !== b.xy.CAN_LAUNCH, {
+    }), p = d !== y.xy.CAN_LAUNCH, {
         Component: I,
         events: f,
         play: C
@@ -473,16 +473,16 @@ function e9(e) {
         m = (0, c.yK)([eS.A], () => eS.A.getAllActiveStreams()),
         p = (0, eg.A)(n),
         f = n.getGuildId(),
-        C = (0, c.cf)([v.Ay], () => null != v.Ay.getSelfEmbeddedActivityForChannel(n.id)),
+        C = (0, c.cf)([x.Ay], () => null != x.Ay.getSelfEmbeddedActivityForChannel(n.id)),
         T = (0, ea.Ay)(n),
         N = r.useCallback(() => {
             (0, eC.A)(f, n.id, A)
         }, [f, n.id, A]),
         S = m.find(e => e.ownerId === h?.id),
-        x = (0, eE.T)(n, h, m);
+        v = (0, eE.T)(n, h, m);
     t = null == S ? a ? N : ef.A : () => (0, K.A)(S);
-    let y = null != S || x.length > 0,
-        b = p ? ez.intl.string(ez.t.fjBNo1) : ez.intl.string(ez.t.uQn9B8),
+    let b = null != S || v.length > 0,
+        y = p ? ez.intl.string(ez.t.fjBNo1) : ez.intl.string(ez.t.uQn9B8),
         O = C || s || T,
         L = null != S,
         {
@@ -525,20 +525,20 @@ function e9(e) {
                 ...a
             } = e;
             return (0, i.jsx)(g.m_, {
-                text: b,
+                text: y,
                 children: (0, i.jsx)(E.$n, {
                     "data-migration-pending": !0,
                     buttonRef: d,
                     size: E.$n.Sizes.MEDIUM,
                     onClick: e => {
-                        (0, w.X)(u, w.O.STREAM, null == S), y ? n(e) : t()
+                        (0, w.X)(u, w.O.STREAM, null == S), b ? n(e) : t()
                     },
                     disabled: !p || o,
                     className: l()(e$.x6, e$.Sq, {
                         [e$.rK]: null != S,
                         [e$.r9]: !p || o
                     }),
-                    ...y ? a : null,
+                    ...b ? a : null,
                     onMouseEnter: () => {
                         r?.(), D.onMouseEnter()
                     },
@@ -635,7 +635,7 @@ class e6 extends r.PureComponent {
             channel: a,
             voiceStates: l
         } = this.props;
-        return null != r ? null : a?.isGuildStageVoice() && null == l.find(e => e.user.id === ev.default.getId() && (0, eh.eY)(e.voiceState) === eh.zF.ON_STAGE) && (0, eu.Zl)(a.id) ? (0, i.jsx)(eJ, {}) : !n && t ? (0, i.jsx)(g.m_, {
+        return null != r ? null : a?.isGuildStageVoice() && null == l.find(e => e.user.id === ex.default.getId() && (0, eh.eY)(e.voiceState) === eh.zF.ON_STAGE) && (0, eu.Zl)(a.id) ? (0, i.jsx)(eJ, {}) : !n && t ? (0, i.jsx)(g.m_, {
             text: ez.intl.string(ez.t["i+SO/U"]),
             forceOpen: !0,
             children: (0, i.jsx)(ek.A, {
@@ -653,7 +653,7 @@ class e6 extends r.PureComponent {
                 let {
                     isShown: r
                 } = n;
-                return (0, i.jsx)(e5, {
+                return (0, i.jsx)(e2, {
                     popoutProps: t,
                     isShown: r,
                     noiseCancellationActive: e,
@@ -686,7 +686,7 @@ class e6 extends r.PureComponent {
             showSocialLayerStorefrontGiftingButton: o
         } = this.props;
         if (null == e || null != n) return null;
-        let d = ev.default.getId();
+        let d = ex.default.getId();
         if (e.isGuildStageVoice()) {
             if (!(0, ed.Bw)(e.guild_id) || !t) return null;
             let n = a.find(e => e.user.id === d);
@@ -772,7 +772,7 @@ class e6 extends r.PureComponent {
     }
 }
 
-function e5(e) {
+function e2(e) {
     let {
         popoutProps: t,
         isShown: n,
@@ -803,7 +803,7 @@ function e5(e) {
         })
     })
 }
-let e2 = (0, N.A)(function(e) {
+let e5 = (0, N.A)(function(e) {
     let t = (0, F.A)(),
         n = (0, c.bG)([H.default], () => H.default.getAwaitingRemoteSessionInfo()),
         a = (0, c.bG)([eD.default], () => eD.default.getCurrentUser()),
@@ -821,9 +821,9 @@ let e2 = (0, N.A)(function(e) {
             rtcConnectionState: eR.A.getState(),
             rtcConnectionLastPing: eR.A.getLastPing()
         }),
-        o = (0, c.bG)([ex.A], () => ex.A.getChannel(l), [l]),
+        o = (0, c.bG)([ev.A], () => ev.A.getChannel(l), [l]),
         d = o?.getGuildId(),
-        u = (0, c.bG)([ey.A], () => ey.A.getGuild(d), [d]),
+        u = (0, c.bG)([eb.A], () => eb.A.getGuild(d), [d]),
         A = (0, c.cf)([eO.Ay], () => ({
             noiseCancellationSupported: eO.Ay.isNoiseCancellationSupported(),
             noiseCancellationActive: (0, Z.A)(eO.Ay.getNoiseCancellation(), eO.Ay.getSystemMicrophoneMode()),
@@ -833,7 +833,7 @@ let e2 = (0, N.A)(function(e) {
         h = (0, c.bG)([eO.Ay, z.A], () => z.A.hasHotspot(eK._.VOICE_PANEL_INTRODUCTION) && (0, eG.mv)(a) && !eO.Ay.isInteractionRequired() && !o?.isGuildStageVoice()),
         _ = (0, c.bG)([eM.A], () => null != l && eM.A.hasVideo(l), [l]),
         m = (0, c.bG)([eS.A], () => eS.A.getCurrentUserActiveStream()),
-        p = (0, c.bG)([eb.A], () => eb.A.hasLayers()),
+        p = (0, c.bG)([ey.A], () => ey.A.hasLayers()),
         g = (0, c.bG)([$.A], () => $.A.isViewingRoles(d)),
         E = (0, c.bG)([eL.A], () => g && !eL.A.can(eF.xBc.VIEW_CHANNEL, o), [g, o]),
         f = e_.vL.useSetting(),
@@ -850,13 +850,13 @@ let e2 = (0, N.A)(function(e) {
                 voiceState: i
             }
         }) ?? N ?? [], [C, T, N]),
-        [v, y] = r.useState(!1);
+        [x, b] = r.useState(!1);
     r.useEffect(() => {
-        (g || E) && y(!1)
-    }, [g, E, y]);
+        (g || E) && b(!1)
+    }, [g, E, b]);
     let {
-        analyticsLocations: b
-    } = (0, P.Ay)(R.A.RTC_PANEL), L = (0, x.A)(d ?? eF.dJq, o?.id), D = (0, O.A)(o?.id), M = (0, en.T)({
+        analyticsLocations: y
+    } = (0, P.Ay)(R.A.RTC_PANEL), L = (0, v.A)(d ?? eF.dJq, o?.id), D = (0, O.A)(o?.id), M = (0, en.T)({
         location: "RTCConnection"
     }), j = (0, ei.A)({
         channelId: o?.id
@@ -864,7 +864,7 @@ let e2 = (0, N.A)(function(e) {
         location: "RTCConnection"
     });
     return (0, i.jsx)(P.f5, {
-        value: b,
+        value: y,
         children: (0, i.jsxs)("div", {
             className: e$.iE,
             children: [null != t || null != n ? (0, i.jsx)(Y.A, {
@@ -886,8 +886,8 @@ let e2 = (0, N.A)(function(e) {
                 shouldShowVoicePanelIntroduction: h,
                 showSocialLayerStorefrontGiftingButton: M && j && w,
                 isPrivateChannelWithEnabledActivities: D,
-                analyticsLocations: b
-            }), !v && g && null != d ? (0, i.jsxs)("div", {
+                analyticsLocations: y
+            }), !x && g && null != d ? (0, i.jsxs)("div", {
                 className: e$.BT,
                 children: [(0, i.jsx)(I.Text, {
                     variant: "text-sm/normal",
@@ -897,7 +897,7 @@ let e2 = (0, N.A)(function(e) {
                     size: "sm",
                     fullWidth: !0,
                     onClick: () => {
-                        y(!0)
+                        b(!0)
                     },
                     text: ez.intl.string(ez.t.WAI6xu),
                     focusProps: eQ

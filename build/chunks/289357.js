@@ -26,10 +26,10 @@ var i, r = n(627968),
     T = n(403362),
     N = n(707592),
     S = n(698441),
-    v = n(935159),
-    x = n(473019),
-    y = n(11550),
-    b = n(435328),
+    x = n(935159),
+    v = n(473019),
+    b = n(11550),
+    y = n(435328),
     O = n(539446),
     L = n(563312),
     R = n(508654),
@@ -39,7 +39,7 @@ var i, r = n(627968),
     j = n(988794),
     w = n(652215),
     U = n(985018),
-    G = n(971667);
+    G = n(999476);
 let k = a.memo(function(e) {
     let {
         heading: t,
@@ -111,7 +111,7 @@ function V(e) {
         return t
     }), [n]), a = (0, u.gU)(n);
     return (0, r.jsx)(k, {
-        onClickCloseIcon: () => (0, v.iF)({
+        onClickCloseIcon: () => (0, x.iF)({
             eventId: t?.id
         }),
         heading: U.intl.string(U.t["X2K3/4"]),
@@ -134,10 +134,10 @@ function B(e) {
     let {
         guildEvent: t,
         noticeType: n
-    } = e, i = (0, D.G3)(t), a = (0, o.bG)([S.Ay], () => S.Ay.isInterestedInEventRecurrence(t.id, i), [t.id, i]), l = (0, o.bG)([y.A], () => y.A.getUpcomingNoticeSeenTime(t.id), [t.id]);
-    return a || null != l || (0, v.pE)(t.id), (0, r.jsx)(d.Button, {
+    } = e, i = (0, D.G3)(t), a = (0, o.bG)([S.Ay], () => S.Ay.isInterestedInEventRecurrence(t.id, i), [t.id, i]), l = (0, o.bG)([b.A], () => b.A.getUpcomingNoticeSeenTime(t.id), [t.id]);
+    return a || null != l || (0, x.pE)(t.id), (0, r.jsx)(d.Button, {
         onClick: function() {
-            (0, M.A)(t.id, null, t.guild_id, () => setTimeout(() => (0, v.Lx)(t.id), 1e3)), C.default.track(w.HAw.CHANNEL_NOTICE_CTA_CLICKED, {
+            (0, M.A)(t.id, null, t.guild_id, () => setTimeout(() => (0, x.Lx)(t.id), 1e3)), C.default.track(w.HAw.CHANNEL_NOTICE_CTA_CLICKED, {
                 guild_id: t.guild_id,
                 notice_type: n
             })
@@ -154,7 +154,7 @@ function H(e) {
     let {
         guildEvent: t,
         noticeType: n
-    } = e, i = (0, P.oF)(t), l = null != i ? (0, b.l)(i, !0) : null, o = (0, P.WN)(t), c = (0, u.gU)(o), {
+    } = e, i = (0, P.oF)(t), l = null != i ? (0, y.l)(i, !0) : null, o = (0, P.WN)(t), c = (0, u.gU)(o), {
         startTime: A,
         endTime: h
     } = (0, L.Ay)(t), {
@@ -191,7 +191,7 @@ function H(e) {
                     C.default.track(w.HAw.CHANNEL_NOTICE_CLOSED, {
                         notice_type: n,
                         guild_id: t.guild_id
-                    }), (0, v.Lx)(t.id)
+                    }), (0, x.Lx)(t.id)
                 },
                 className: G.ut,
                 "aria-label": U.intl.string(U.t.cpT0Cq),
@@ -244,12 +244,12 @@ function F(e) {
         guildEvent: t
     } = e, n = (0, P.oF)(t);
     return null == n ? null : (0, r.jsx)(k, {
-        onClickCloseIcon: () => (0, v.iF)({
+        onClickCloseIcon: () => (0, x.iF)({
             eventId: t?.id
         }),
         heading: U.intl.string(U.t["1+boPi"]),
         topic: t.name,
-        location: (0, b.l)(n, !0),
+        location: (0, y.l)(n, !0),
         locationIcon: (0, r.jsx)(d.BT6, {
             size: "custom",
             color: "currentColor",
@@ -312,7 +312,7 @@ function K(e) {
         count: `${a}`
     });
     return (0, r.jsx)(k, {
-        onClickCloseIcon: () => (0, v.iF)({
+        onClickCloseIcon: () => (0, x.iF)({
             stageId: t?.id
         }),
         heading: U.intl.string(U.t["X2K3/4"]),
@@ -387,11 +387,11 @@ let $ = a.memo(function(e) {
     } = e, n = (0, O.V)(t.id), i = (0, R.BP)(t.id), a = (0, R.WG)(t.id), l = (0, o.bG)([g.A], () => g.A.getStageInstanceByChannel(n?.id), [n]), {
         isStageNoticeHidden: s,
         isEventNoticeHidden: d
-    } = (0, o.cf)([x.A], () => ({
-        isStageNoticeHidden: x.A.isLiveChannelNoticeHidden({
+    } = (0, o.cf)([v.A], () => ({
+        isStageNoticeHidden: v.A.isLiveChannelNoticeHidden({
             stageId: l?.id
         }),
-        isEventNoticeHidden: x.A.isLiveChannelNoticeHidden({
+        isEventNoticeHidden: v.A.isLiveChannelNoticeHidden({
             eventId: i?.id
         })
     }), [l, i]), c = null, u = null != l && null != n && !s;

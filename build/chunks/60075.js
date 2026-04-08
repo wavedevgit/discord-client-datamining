@@ -7,7 +7,6 @@ l.d(t, {
     NA: () => x,
     Z1: () => h,
     lz: () => j,
-    mi: () => A,
     t$: () => p,
     yJ: () => C,
     yi: () => S,
@@ -359,28 +358,6 @@ function T() {
             variant: "primary",
             size: "md",
             text: "Open Guild Member Profile Upsell"
-        })
-    })
-}
-
-function A() {
-    let e = n.useCallback(() => {
-        (0, i.mMO)(async () => {
-            let {
-                default: e
-            } = await l.e("31852").then(l.bind(l, 997351));
-            return t => (0, a.jsx)(e, {
-                handleLearnMore: t.onClose,
-                ...t
-            })
-        })
-    }, []);
-    return (0, a.jsx)(o.LB, {
-        children: (0, a.jsx)(i.Button, {
-            onClick: e,
-            variant: "primary",
-            size: "md",
-            text: "Open File Upload Upsell"
         })
     })
 }

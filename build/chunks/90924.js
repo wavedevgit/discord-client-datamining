@@ -40,12 +40,12 @@ var i = n(567243),
     T = n(927813),
     N = n(562153),
     S = n(257120),
-    v = n(998218),
-    x = n(636401),
-    y = n(639621),
-    b = n(613057),
+    x = n(998218),
+    v = n(636401),
+    b = n(639621),
+    y = n(613057),
     O = n(652215);
-let L = v.A.toURLSafe(window.GLOBAL_ENV.API_ENDPOINT)?.host ?? "localhost",
+let L = x.A.toURLSafe(window.GLOBAL_ENV.API_ENDPOINT)?.host ?? "localhost",
     R = function() {
         let e = L.split(":")[0];
         if (!e.includes(".")) return e;
@@ -119,7 +119,7 @@ function k(e) {
         mention_roles: e.mention_roles || e.mentionRoles,
         embeds: e.embeds,
         attachments: e.attachments,
-        author: null != i ? (0, y.A)(i) : void 0,
+        author: null != i ? (0, b.A)(i) : void 0,
         pinned: e.pinned,
         type: e.type
     }
@@ -147,14 +147,14 @@ function V(e, t, n) {
             self_deaf: l,
             suppress: s
         },
-        user: (0, y.A)(d)
+        user: (0, b.A)(d)
     }
 }
 
 function B(e, t) {
     return {
         type: e,
-        user: (0, y.A)(t),
+        user: (0, b.A)(t),
         presence: {
             status: I.A.getStatus(t.id, null),
             activity: null
@@ -217,7 +217,7 @@ function q(e) {
         } = e;
         return t
     }, () => {
-        throw new x.A({
+        throw new v.A({
             closeCode: O.YI$.INVALID_CLIENTID
         }, "Invalid Client ID")
     })
@@ -225,14 +225,14 @@ function q(e) {
 async function z(e, t, n) {
     let i = d.A.getApplication(t);
     if ("string" == typeof n)
-        if (e.transport === b.z4.POST_MESSAGE) {
+        if (e.transport === y.z4.POST_MESSAGE) {
             let e = (0, o.Ay)(t);
-            if (null == e || !U(n, [e])) throw new x.A({
+            if (null == e || !U(n, [e])) throw new v.A({
                 closeCode: O.YI$.INVALID_ORIGIN
             }, "Invalid Origin")
         } else {
             let e = await q(t);
-            if (i = A.Ay.createFromServer(e), !U(n, e.rpc_origins)) throw new x.A({
+            if (i = A.Ay.createFromServer(e), !U(n, e.rpc_origins)) throw new v.A({
                 closeCode: O.YI$.INVALID_ORIGIN
             }, "Invalid Origin")
         } null == i && (i = A.Ay.createFromServer(await q(t)));
@@ -257,14 +257,14 @@ async function $(e, t, n) {
     try {
         await i.process(n)
     } catch (e) {
-        throw new x.A({
+        throw new v.A({
             closeCode: O.YI$.CLOSE_ABNORMAL
         }, "Socket closed during throttle")
     }
 }
 
 function Q(e, t) {
-    null == t && (e.authorization.scopes = [b.hj])
+    null == t && (e.authorization.scopes = [y.hj])
 }
 
 function X(e) {
@@ -318,13 +318,13 @@ function Z(e, t) {
 }
 
 function J(e) {
-    if (e !== b.z4.POST_MESSAGE) throw new x.A({
+    if (e !== y.z4.POST_MESSAGE) throw new v.A({
         errorCode: O.Lw6.INVALID_COMMAND
     }, `command not available from "${e} transport`)
 }
 
 function ee(e) {
-    if (null == e.id) throw new x.A({
+    if (null == e.id) throw new v.A({
         errorCode: O.Lw6.INVALID_COMMAND
     }, "Invalid application");
     return e.id

@@ -4,8 +4,8 @@ n.d(t, {
 });
 var a = n(311907),
     i = n(73153),
-    l = n(314542);
-let s = new Map,
+    s = n(314542);
+let l = new Map,
     r = !1,
     o = Object.freeze({
         channelAffinities: [],
@@ -16,7 +16,7 @@ let s = new Map,
     };
 
 function c() {
-    s = new Map(d.channelAffinities.map(e => [e.channelId, e]))
+    l = new Map(d.channelAffinities.map(e => [e.channelId, e]))
 }
 class u extends a.Ay.PersistedStore {
     static displayName = "ChannelAffinitiesV2Store";
@@ -25,7 +25,7 @@ class u extends a.Ay.PersistedStore {
         null != e && (d.channelAffinities = e.channelAffinities, d.lastFetched = e.lastFetched, c())
     }
     shouldFetch() {
-        if (!r) return Date.now() - d.lastFetched > l.p
+        if (!r) return Date.now() - d.lastFetched > s.p
     }
     isFetching() {
         return r
@@ -34,13 +34,13 @@ class u extends a.Ay.PersistedStore {
         return d.channelAffinities
     }
     getChannelAffinitiesMap() {
-        return s
+        return l
     }
     getChannelAffinity(e) {
-        return s.get(e)
+        return l.get(e)
     }
     compare(e, t) {
-        return (s.get(t)?.score ?? 0) - (s.get(e)?.score ?? 0)
+        return (l.get(t)?.score ?? 0) - (l.get(e)?.score ?? 0)
     }
     getState() {
         return d
@@ -62,6 +62,6 @@ let m = new u(i.h, {
     LOGOUT: function() {
         d = {
             ...o
-        }, s = new Map, r = !1
+        }, l = new Map, r = !1
     }
 })

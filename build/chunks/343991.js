@@ -1,28 +1,28 @@
 /** chunk id: 343991 params = (module,exports,require) **/
 n.d(t, {
-    D: () => l,
-    default: () => s
+    D: () => s,
+    default: () => l
 });
 var a = n(627968);
 n(64700);
 var i = n(158954);
-let l = "UPLOAD_ERROR_MODAL_KEY",
-    s = e => {
+let s = "UPLOAD_ERROR_MODAL_KEY",
+    l = e => {
         let {
             title: t,
             help: n,
-            transitionState: l,
-            onClose: s
+            transitionState: s,
+            onClose: l
         } = e;
         return (0, a.jsx)(i.Modal, {
             title: t,
             subtitle: n,
-            transitionState: l,
+            transitionState: s,
             actions: [{
                 variant: "critical-secondary",
                 text: "Close",
-                onClick: s
+                onClick: l
             }],
-            onClose: s
+            onClose: l
         })
     }

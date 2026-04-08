@@ -1,6 +1,6 @@
 /** chunk id: 217549 params = (module,exports,require) **/
 n.d(t, {
-    A: () => b
+    A: () => y
 }), n(321073);
 var i = n(627968),
     r = n(64700),
@@ -24,14 +24,14 @@ var i = n(627968),
     T = n(954571),
     N = n(144914),
     S = n(715671),
-    v = n(652215),
-    x = n(985018);
-let y = d.A.get(v.fg2.XBOX).name;
+    x = n(652215),
+    v = n(985018);
+let b = d.A.get(x.fg2.XBOX).name;
 
-function b(e) {
+function y(e) {
     let {
         currentActivities: t
-    } = e, n = t.length > 1, b = function(e) {
+    } = e, n = t.length > 1, y = function(e) {
         let {
             currentActivities: t
         } = e, n = t.some(e => {
@@ -39,7 +39,7 @@ function b(e) {
                 activity: t
             } = e;
             return (0, c.A)(t)
-        }), r = (0, a.bG)([E.A], () => E.A.getAccounts().some(e => e.type === d.A.get(v.fg2.XBOX).type)), s = t.filter(e => {
+        }), r = (0, a.bG)([E.A], () => E.A.getAccounts().some(e => e.type === d.A.get(x.fg2.XBOX).type)), s = t.filter(e => {
             let {
                 activity: t
             } = e;
@@ -53,8 +53,8 @@ function b(e) {
         return n || r || !o || A ? null : (0, i.jsx)(l.Drp, {
             id: "xbox-connect",
             action: () => (0, g.openUserSettings)(p.X.CONNECTIONS_PANEL),
-            label: x.intl.formatToPlainString(x.t.XWSHTb, {
-                platform: y
+            label: v.intl.formatToPlainString(v.t.XWSHTb, {
+                platform: b
             })
         })
     }(e), O = function(e) {
@@ -98,18 +98,18 @@ function b(e) {
             async function d() {
                 if (null == r) return;
                 let e = await s.A.sendActivityInviteUser({
-                    type: v.xL.JOIN_REQUEST,
+                    type: x.xL.JOIN_REQUEST,
                     userId: a.id,
                     activity: r,
-                    location: v.ThZ.USER_ACTIVITY_ACTIONS
+                    location: x.ThZ.USER_ACTIVITY_ACTIONS
                 });
                 null != e && o.default.selectPrivateChannel(e.id)
             }
             return (0, i.jsx)(l.Drp, {
                 id: `join-${r.session_id}`,
-                label: t ? x.intl.formatToPlainString(x.t.wFAvxM, {
+                label: t ? v.intl.formatToPlainString(v.t.wFAvxM, {
                     name: a.toString()
-                }) : x.intl.string(x.t.OKsSCR),
+                }) : v.intl.string(v.t.OKsSCR),
                 action: d
             })
         }(e, n), function(e, t) {
@@ -123,9 +123,9 @@ function b(e) {
                 isLaunching: c
             } = e;
             if (!o || null == n) return null;
-            let u = d ? x.intl.formatToPlainString(x.t["gBme/4"], {
+            let u = d ? v.intl.formatToPlainString(v.t["gBme/4"], {
                 name: r.name
-            }) : c ? x.intl.formatToPlainString(x.t.WtSQwG, {
+            }) : c ? v.intl.formatToPlainString(v.t.WtSQwG, {
                 name: r.name
             }) : void 0;
             return (0, i.jsx)(l.Drp, {
@@ -135,17 +135,17 @@ function b(e) {
                         analyticsParams: {
                             location: {
                                 ...s,
-                                object: v.ZSU.LIST_ITEM
+                                object: x.ZSU.LIST_ITEM
                             }
                         }
                     })
                 },
-                label: t ? x.intl.formatToPlainString(x.t.ZDZEJN, {
+                label: t ? v.intl.formatToPlainString(v.t.ZDZEJN, {
                     name: r.name
-                }) : x.intl.string(x.t.XKUw8m),
+                }) : v.intl.string(v.t.XKUw8m),
                 subtext: u
             })
         }(e, n))
     }
-    return [...L, b]
+    return [...L, y]
 }

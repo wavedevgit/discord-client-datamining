@@ -24,15 +24,15 @@ var i = n(627968),
     T = n(73473),
     N = n(270045),
     S = n(201805),
-    v = n(212614),
-    x = n(79545),
-    y = n(847641),
-    b = n(311243),
+    x = n(212614),
+    v = n(79545),
+    b = n(847641),
+    y = n(311243),
     O = n(545986),
     L = n(654487),
     R = n(652215),
     P = n(985018),
-    D = n(766345);
+    D = n(122530);
 
 function M(e) {
     let {
@@ -73,7 +73,7 @@ function j(e) {
         launchInGameActivity: w
     } = (0, p.zW)(n), U = _.t.useConfig({
         location: L.rE.ACTIVITY_PANEL
-    }), G = (0, x.Pd)(n), k = r.useCallback(e => {
+    }), G = (0, v.Pd)(n), k = r.useCallback(e => {
         e.stopPropagation()
     }, []), V = r.useCallback(() => {
         (0, u.Oy)(n.id, {
@@ -125,7 +125,7 @@ function j(e) {
             className: D.Wp,
             children: [Y ? (0, i.jsx)(M, {
                 quest: n
-            }) : (0, i.jsx)(y.A, {}), (0, i.jsx)(N.C, {
+            }) : (0, i.jsx)(b.A, {}), (0, i.jsx)(N.C, {
                 quest: n,
                 questContent: h.uF.ACTIVITY_PANEL,
                 shouldShowDisclosure: n.userStatus?.enrolledAt == null,
@@ -144,7 +144,7 @@ function j(e) {
         }), !Y && (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)(M, {
                 quest: n
-            }), (0, i.jsx)(b.A, {
+            }), (0, i.jsx)(y.A, {
                 autoplay: g,
                 className: D.t3,
                 quest: n,
@@ -154,7 +154,7 @@ function j(e) {
                 sourceQuestContent: h.uF.ACTIVITY_PANEL,
                 gameProfileSource: d.Ob.QuestActivityPanel
             })]
-        }), Y && !W && (0, i.jsx)(b.A, {
+        }), Y && !W && (0, i.jsx)(y.A, {
             autoplay: g,
             className: D.t3,
             quest: n,
@@ -173,9 +173,9 @@ function j(e) {
                     variant: "secondary",
                     text: P.intl.string(P.t.LLLLPD),
                     onClick: H
-                }), U.enabled && G === x.UA.UNENROLLED && U.enabledQuestStates.has(x.UA.UNENROLLED) && !(0, f.Ic)(n) ? (0, i.jsx)(v.A, {
+                }), U.enabled && G === v.UA.UNENROLLED && U.enabledQuestStates.has(v.UA.UNENROLLED) && !(0, f.Ic)(n) ? (0, i.jsx)(x.A, {
                     quest: n,
-                    surface: x.V3.ACTIVITY_PANEL,
+                    surface: v.V3.ACTIVITY_PANEL,
                     size: "md",
                     analyticsCtxQuestContent: h.uF.ACTIVITY_PANEL,
                     analyticsCtxSourceQuestContent: h.uF.ACTIVITY_PANEL

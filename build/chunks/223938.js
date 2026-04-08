@@ -49,8 +49,8 @@ var i = n(627968),
 n(827669), n(294920);
 var q = n(478644),
     Y = n(985018),
-    J = n(207722),
-    $ = n(526636);
+    J = n(287303),
+    $ = n(351671);
 
 function Z(e, t, n) {
     let i = e.startsWith("attachment://"),
@@ -206,7 +206,7 @@ let X = l.memo(l.forwardRef(function(e, t) {
         handleOuterClick: e1
     } = (0, V.MD)(b, eN, y.id), {
         handleAutocompleteVisibilityChange: e2
-    } = (0, V.uW)(b, y.id), e3 = (0, V.NO)(eN), e7 = (0, V.Vu)(eH, b, eN), e6 = (0, V.HG)(eN), e5 = (0, V.C)({
+    } = (0, V.uW)(b, y.id), e3 = (0, V.NO)(eN), e7 = (0, V.Vu)(eH, b, eN), e5 = (0, V.HG)(eN), e6 = (0, V.C)({
         editorRef: eN,
         disabled: eR,
         textValue: s,
@@ -437,8 +437,8 @@ let X = l.memo(l.forwardRef(function(e, t) {
                 type: b,
                 onSelectGIF: e7,
                 onSelectEmoji: e3,
-                onSelectKaomoji: e6,
-                onSelectSticker: e5,
+                onSelectKaomoji: e5,
+                onSelectSticker: e6,
                 channel: y,
                 closeOnModalOuterClick: eA,
                 parentModalKey: ep,

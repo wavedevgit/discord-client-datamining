@@ -4,8 +4,8 @@ n.d(t, {
 });
 var a = n(627968),
     i = n(64700),
-    l = n(503698),
-    s = n.n(l),
+    s = n(503698),
+    l = n.n(s),
     r = n(341915),
     o = n(890687),
     d = n(18437),
@@ -16,42 +16,42 @@ var a = n(627968),
     x = n(203879),
     p = n(321503),
     g = n(56853),
-    _ = n(515038),
-    f = n(652215),
-    v = n(217885);
+    f = n(515038),
+    v = n(652215),
+    _ = n(917332);
 
 function b(e) {
     let {
         quest: t,
         className: n,
-        questContent: l,
+        questContent: s,
         contentPosition: r,
         rowIndex: m,
         impressionRef: b,
         sourceQuestContent: j
-    } = e, [A, C] = i.useState(!1), [y, S] = i.useState([]), T = (0, o.aC)(t), E = i.useMemo(() => (0, u.vv)(t), [t]), N = (0, d.u0)(), I = i.useCallback(() => {
+    } = e, [A, C] = i.useState(!1), [y, S] = i.useState([]), E = (0, o.aC)(t), T = i.useMemo(() => (0, u.vv)(t), [t]), N = (0, d.u0)(), I = i.useCallback(() => {
         C(!0), N({
             questId: t.id,
-            event: f.HAw.QUEST_HOVER,
+            event: v.HAw.QUEST_HOVER,
             properties: {
-                content_id: l,
-                content_name: (0, c.jO)(l),
+                content_id: s,
+                content_name: (0, c.jO)(s),
                 content_position: r
             },
             sourceQuestContent: j
-        }), E && (0, h.l9)()
-    }, [N, t.id, l, E, j, r]), k = i.useCallback(() => {
+        }), T && (0, h.l9)()
+    }, [N, t.id, s, T, j, r]), k = i.useCallback(() => {
         C(!1), N({
             questId: t.id,
-            event: f.HAw.QUEST_HOVER_OFF,
+            event: v.HAw.QUEST_HOVER_OFF,
             properties: {
-                content_id: l,
-                content_name: (0, c.jO)(l),
+                content_id: s,
+                content_name: (0, c.jO)(s),
                 content_position: r
             },
             sourceQuestContent: j
         })
-    }, [N, t.id, l, j, r]), O = i.useContext(p.X), {
+    }, [N, t.id, s, j, r]), O = i.useContext(p.X), {
         visibilityElementRef: R,
         almostVisibleInViewport: w
     } = function(e) {
@@ -72,7 +72,7 @@ function b(e) {
         ref: e => {
             b.current = e, R.current = e
         },
-        className: s()(v.k, n),
+        className: l()(_.k, n),
         onMouseEnter: I,
         onMouseLeave: k,
         onFocus: I,
@@ -81,12 +81,12 @@ function b(e) {
             quest: t,
             isHovering: A,
             errorHints: y,
-            warningHints: T,
+            warningHints: E,
             isVisibleInViewport: w,
             sourceQuestContent: j
-        }), (0, a.jsx)(_.A, {
+        }), (0, a.jsx)(f.A, {
             quest: t,
-            questContent: l,
+            questContent: s,
             isHovering: A,
             contentPosition: r,
             rowIndex: m,

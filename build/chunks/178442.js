@@ -14,7 +14,7 @@ var i = n(627968),
     h = n(241847),
     m = n(167155),
     A = n(652215),
-    p = n(490178);
+    p = n(750593);
 let g = {
         [A.vkP.CONNECTED]: p.nf,
         [A.vkP.CONNECTING]: p._6,

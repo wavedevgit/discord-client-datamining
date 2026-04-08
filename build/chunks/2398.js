@@ -1,6 +1,7 @@
 /** chunk id: 2398 params = (module,exports,require) **/
 e.exports = {
     oK: "overlayHeader__4774c",
+    aS: "isFullscreen__4774c",
     Lu: "overlayGradient__4774c",
     pd: "minimized__4774c",
     s$: "overlayContent__4774c",

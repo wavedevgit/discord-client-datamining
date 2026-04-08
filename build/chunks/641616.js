@@ -4,8 +4,8 @@ n.d(t, {
 }), n(321073);
 var a = n(627968),
     i = n(64700),
-    l = n(806235),
-    s = n(264461),
+    s = n(806235),
+    l = n(264461),
     r = n(986294),
     o = n(502128),
     d = n(215e3),
@@ -17,17 +17,17 @@ var h = n(173628),
     x = n(378230),
     p = n(374058),
     g = n(601152),
-    _ = n(246993),
-    f = n(974857),
-    v = n(358622),
+    f = n(246993),
+    v = n(974857),
+    _ = n(358622),
     b = n(568834),
     j = n(19767),
     A = n(571731),
     C = n(648514),
     y = n(866001),
     S = n(855936),
-    T = n(489967),
-    E = n(2915),
+    E = n(489967),
+    T = n(2915),
     N = n(986789),
     I = n(821306),
     k = n(226936),
@@ -59,8 +59,8 @@ var h = n(173628),
     en = n(953414),
     ea = n(344673),
     ei = n(491982),
-    el = n(263758),
-    es = n(229244),
+    es = n(263758),
+    el = n(229244),
     er = n(76037),
     eo = n(922316),
     ed = n(231643),
@@ -108,7 +108,7 @@ function eu() {
             id: "shop_collectibles",
             name: "Collectibles Preview",
             group: ed.fu.SHOP,
-            render: () => (0, a.jsx)(s.A, {})
+            render: () => (0, a.jsx)(l.A, {})
         }), e.push({
             id: "quick_actions",
             name: "Quick Actions",
@@ -137,7 +137,7 @@ function eu() {
             name: "Feedback",
             group: ed.fu.USERS,
             tags: ["surveys"],
-            render: () => (0, a.jsx)(T.A, {})
+            render: () => (0, a.jsx)(E.A, {})
         }), e.push({
             id: "overlay",
             name: "Overlay v3",
@@ -172,7 +172,7 @@ function eu() {
             id: "clips",
             name: "Clips",
             group: ed.fu.AUDIO_VIDEO,
-            render: () => (0, a.jsx)(l.A, {})
+            render: () => (0, a.jsx)(s.A, {})
         })), e.push({
             id: "rive",
             name: "Rive",
@@ -202,7 +202,7 @@ function eu() {
             name: "Colors",
             group: ed.fu.UI,
             tags: ["tokens", "themes", "palette"],
-            render: () => (0, a.jsx)(f.A, {})
+            render: () => (0, a.jsx)(v.A, {})
         }), e.push({
             id: "design_toggles",
             name: "Design Toggles",
@@ -267,7 +267,7 @@ function eu() {
             name: "Channel Affinity",
             group: ed.fu.USERS,
             tags: ["channels"],
-            render: () => (0, a.jsx)(_.A, {})
+            render: () => (0, a.jsx)(f.A, {})
         }), u.A.isDeveloper && (e.push({
             id: "content_inventory",
             name: "Content Inventory",
@@ -287,7 +287,7 @@ function eu() {
             id: "dcf_events",
             name: "DCF Events",
             group: ed.fu.DCF,
-            render: () => (0, a.jsx)(v.A, {})
+            render: () => (0, a.jsx)(_.A, {})
         }), e.push({
             id: "hotspots",
             name: "Hotspots",
@@ -317,13 +317,13 @@ function eu() {
             name: "Subscriptions",
             group: ed.fu.PREMIUM,
             tags: ["nitro", "reverse trial"],
-            render: () => (0, a.jsx)(el.A, {})
+            render: () => (0, a.jsx)(es.A, {})
         }), e.push({
             id: "fractional_nitro",
             name: "Fractional Nitro",
             group: ed.fu.PREMIUM,
             tags: ["entitlements", "quests"],
-            render: () => (0, a.jsx)(E.A, {})
+            render: () => (0, a.jsx)(T.A, {})
         })), e.push({
             id: "gifting_intent",
             name: "Gifting Intent",
@@ -377,7 +377,7 @@ function eu() {
             id: "quest_preview",
             name: "Quest Preview",
             group: ed.fu.QUESTS,
-            render: () => (0, a.jsx)(es.A, {})
+            render: () => (0, a.jsx)(el.A, {})
         }), e.push({
             id: "profile_theme_override",
             name: "Profile Theme Override",

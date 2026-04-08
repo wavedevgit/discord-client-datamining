@@ -9,7 +9,7 @@ var s = t(503698),
     n = t.n(s),
     i = t(567243),
     a = t(985018),
-    o = t(219581);
+    o = t(340488);
 let d = ["sessionshare.sp-int.playstation.com", "session-share.playstation.com"],
     u = ["PlayStation"];
 

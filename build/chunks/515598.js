@@ -1,61 +1,61 @@
 /** chunk id: 515598 params = (module,exports,require) **/
-a.d(t, {
+n.d(t, {
     A: () => m
 });
-var n = a(627968);
-a(64700);
-var i = a(311907),
-    s = a(397927),
-    l = a(688810),
-    r = a(503566),
-    o = a(631305),
-    c = a(71393),
-    d = a(967198),
-    u = a(652215),
-    p = a(874864),
-    _ = a(985018),
-    A = a(313872);
+var a = n(627968);
+n(64700);
+var i = n(311907),
+    r = n(397927),
+    o = n(688810),
+    s = n(503566),
+    l = n(631305),
+    c = n(71393),
+    _ = n(967198),
+    d = n(652215),
+    A = n(874864),
+    u = n(985018),
+    g = n(188213);
 
 function m(e) {
     let {
         analyticsSection: t,
-        analyticsPage: a,
+        analyticsPage: n,
         isGIF: m,
         banner: h
-    } = e, g = (0, i.bG)([d.A], () => d.A.getGuildId()), f = (0, i.bG)([c.A], () => c.A.getGuild(g)), {
-        analyticsLocations: x
-    } = (0, l.Ay)();
-    return null == f || f.features.has(u.GuildFeatures.ANIMATED_BANNER) || !m && f.features.has(u.GuildFeatures.BANNER) ? null : (0, n.jsxs)("div", {
-        className: A.kL,
-        children: [(0, n.jsx)(s._Jp, {
-            color: s.LU0.unsafe_rawColors.GUILD_BOOSTING_PINK,
-            className: A.qC
-        }), (0, n.jsx)(s.Text, {
+    } = e, L = (0, i.bG)([_.A], () => _.A.getGuildId()), x = (0, i.bG)([c.A], () => c.A.getGuild(L)), {
+        analyticsLocations: C
+    } = (0, o.Ay)();
+    return null == x || x.features.has(d.GuildFeatures.ANIMATED_BANNER) || !m && x.features.has(d.GuildFeatures.BANNER) ? null : (0, a.jsxs)("div", {
+        className: g.kL,
+        children: [(0, a.jsx)(r._Jp, {
+            color: r.LU0.unsafe_rawColors.GUILD_BOOSTING_PINK,
+            className: g.qC
+        }), (0, a.jsx)(r.Text, {
             color: "text-strong",
             variant: "text-sm/semibold",
-            children: _.intl.string(_.t["56M7xe"])
-        }), (0, n.jsx)("div", {
-            className: A.xF,
-            children: (0, n.jsx)(s.QWc, {
-                text: _.intl.string(_.t.WUHdZV),
+            children: u.intl.string(u.t["56M7xe"])
+        }), (0, a.jsx)("div", {
+            className: g.xF,
+            children: (0, a.jsx)(r.QWc, {
+                text: u.intl.string(u.t.WUHdZV),
                 onClick: () => {
-                    if (null == f) return;
+                    if (null == x) return;
                     let e = {
                         section: t,
-                        page: a,
-                        object: u.ZSU.UPSELL_HEADER
+                        page: n,
+                        object: d.ZSU.UPSELL_HEADER
                     };
-                    null != h ? (0, r._)({
-                        analyticsLocations: x,
+                    null != h ? (0, s._)({
+                        analyticsLocations: C,
                         analyticsLocation: e,
-                        guild: f,
+                        guild: x,
                         isGIF: m,
                         banner: h
-                    }) : (0, o.A)({
-                        analyticsLocations: x,
+                    }) : (0, l.A)({
+                        analyticsLocations: C,
                         analyticsSourceLocation: e,
-                        guild: f,
-                        perks: m ? (0, p.Pf)() : (0, p.QR)()
+                        guild: x,
+                        perks: m ? (0, A.Pf)() : (0, A.QR)()
                     })
                 },
                 textVariant: "text-sm/semibold"

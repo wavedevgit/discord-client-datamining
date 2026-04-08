@@ -4,14 +4,14 @@ n.d(t, {
 });
 var a = n(627968),
     i = n(64700),
-    l = n(397927),
-    s = n(442433),
+    s = n(397927),
+    l = n(442433),
     r = n(611010),
     o = n(734057),
     d = n(71393),
     c = n(287809),
-    u = n(616873),
-    m = n(793877);
+    u = n(786020),
+    m = n(310086);
 let h = {
         ClipsContextMenu: async () => {
             let {
@@ -44,7 +44,7 @@ let h = {
             return () => (0, a.jsx)(e, {
                 application: t,
                 channelId: "987654321",
-                onClose: s.Z_
+                onClose: l.Z_
             })
         },
         GuildChannelListContextMenu: async () => {
@@ -59,7 +59,7 @@ let h = {
         GuildContextMenu: async () => {
             let {
                 default: e
-            } = await Promise.all([n.e("49681"), n.e("43600"), n.e("68587"), n.e("28136"), n.e("63379"), n.e("56026"), n.e("16301"), n.e("22191"), n.e("25961"), n.e("8018"), n.e("33424"), n.e("33144"), n.e("35894"), n.e("50796"), n.e("94253"), n.e("8458"), n.e("11810"), n.e("90226"), n.e("17537"), n.e("1637"), n.e("54816"), n.e("3788"), n.e("54469"), n.e("30076")]).then(n.bind(n, 544676)), t = Object.values(d.A.getGuilds())[0];
+            } = await Promise.all([n.e("49681"), n.e("43600"), n.e("68587"), n.e("28136"), n.e("63379"), n.e("56026"), n.e("16301"), n.e("22191"), n.e("25961"), n.e("8018"), n.e("79463"), n.e("91872"), n.e("35894"), n.e("50796"), n.e("94253"), n.e("8458"), n.e("11810"), n.e("85200"), n.e("17537"), n.e("37207"), n.e("54816"), n.e("3788"), n.e("54469"), n.e("54465")]).then(n.bind(n, 544676)), t = Object.values(d.A.getGuilds())[0];
             return null == t ? () => null : n => (0, a.jsx)(e, {
                 ...n,
                 guild: t
@@ -93,7 +93,7 @@ let h = {
             } = await n.e("50143").then(n.bind(n, 92962));
             return t => (0, a.jsx)(e, {
                 ...t,
-                onClose: s.Z_
+                onClose: l.Z_
             })
         },
         ExpressionPickerContextMenu: async () => {
@@ -123,20 +123,20 @@ let h = {
                 ...t,
                 roleId: "123456789",
                 onLeaveRole: () => {
-                    console.log("Leave role clicked"), (0, s.Z_)()
+                    console.log("Leave role clicked"), (0, l.Z_)()
                 }
             })
         },
         StaffOnlyEntryDebugMenu: async () => {
             let {
                 default: e
-            } = await n.e("66965").then(n.bind(n, 949881)), {
+            } = await n.e("89346").then(n.bind(n, 949881)), {
                 ContentInventoryEntryType: t
             } = await Promise.resolve().then(n.bind(n, 681154)), {
                 ContentInventoryAuthorType: i
-            } = await Promise.resolve().then(n.bind(n, 6161)), l = c.default.getCurrentUser(), s = {
+            } = await Promise.resolve().then(n.bind(n, 6161)), s = c.default.getCurrentUser(), l = {
                 id: "mock-entry-123",
-                author_id: l?.id ?? "123456789",
+                author_id: s?.id ?? "123456789",
                 author_type: i.USER,
                 content_type: t.PLAYED_GAME,
                 participants: [],
@@ -148,18 +148,18 @@ let h = {
                 }
             };
             return () => (0, a.jsx)(e, {
-                entry: s,
+                entry: l,
                 requestId: "mock-request-123"
             })
         },
         AddQuestionsContextMenu: async () => {
             let {
                 AddQuestionsContextMenu: e
-            } = await Promise.all([n.e("11810"), n.e("69094")]).then(n.bind(n, 892921)), t = Object.values(d.A.getGuilds())[0];
+            } = await Promise.all([n.e("11810"), n.e("72732")]).then(n.bind(n, 892921)), t = Object.values(d.A.getGuilds())[0];
             return null == t ? () => null : n => (0, a.jsx)(e, {
                 ...n,
                 addFormField: e => {
-                    console.log("Add form field:", e), (0, s.Z_)()
+                    console.log("Add form field:", e), (0, l.Z_)()
                 },
                 guild: t,
                 allowTerms: !0
@@ -190,7 +190,7 @@ let h = {
             } = await n.e("73091").then(n.bind(n, 779662)), t = Object.values(d.A.getGuilds())[0];
             return null == t ? () => null : () => (0, a.jsx)(e, {
                 guildId: t.id,
-                onClose: s.Z_
+                onClose: l.Z_
             })
         },
         MembersTableJoinTypeContextMenu: async () => {
@@ -199,7 +199,7 @@ let h = {
             } = await n.e("21539").then(n.bind(n, 441358)), t = Object.values(d.A.getGuilds())[0];
             return null == t ? () => null : () => (0, a.jsx)(e, {
                 guildId: t.id,
-                onClose: s.Z_
+                onClose: l.Z_
             })
         }
     },
@@ -233,56 +233,56 @@ function p() {
         [n, r] = i.useState(null),
         [o, d] = i.useState(null),
         c = i.useCallback(e => {
-            null != n && (0, s.L3)(e, h[n])
+            null != n && (0, l.L3)(e, h[n])
         }, [n]),
         p = null != o ? x[o] : null;
-    return (0, a.jsx)(l.IpV, {
+    return (0, a.jsx)(s.IpV, {
         className: m.nd,
-        children: (0, a.jsxs)(l.BJc, {
+        children: (0, a.jsxs)(s.BJc, {
             className: u.l$,
             gap: 16,
-            children: [(0, a.jsxs)(l.BJc, {
+            children: [(0, a.jsxs)(s.BJc, {
                 gap: 8,
-                children: [(0, a.jsx)(l.Text, {
+                children: [(0, a.jsx)(s.Text, {
                     variant: "eyebrow",
                     children: "Context Menus"
-                }), (0, a.jsx)(l.Text, {
+                }), (0, a.jsx)(s.Text, {
                     variant: "text-sm/normal",
                     color: "text-muted",
                     children: "Select a menu and click Open to trigger it as a context menu at the button position."
                 })]
-            }), (0, a.jsxs)(l.BJc, {
+            }), (0, a.jsxs)(s.BJc, {
                 direction: "horizontal",
                 gap: 8,
                 align: "end",
-                children: [(0, a.jsx)(l.ZiE, {
+                children: [(0, a.jsx)(s.ZiE, {
                     label: "Open a Context Menu",
                     placeholder: "Select a menu",
                     options: e,
                     value: n,
                     onSelectionChange: r,
                     selectionMode: "single"
-                }), (0, a.jsx)(l.Button, {
+                }), (0, a.jsx)(s.Button, {
                     variant: "primary",
                     text: "Open",
                     disabled: null == n,
                     onClick: c
                 })]
-            }), (0, a.jsxs)(l.BJc, {
+            }), (0, a.jsxs)(s.BJc, {
                 gap: 8,
-                children: [(0, a.jsx)(l.Text, {
+                children: [(0, a.jsx)(s.Text, {
                     variant: "eyebrow",
                     children: "Popout Menus"
-                }), (0, a.jsx)(l.Text, {
+                }), (0, a.jsx)(s.Text, {
                     variant: "text-sm/normal",
                     color: "text-muted",
                     children: "Select a popout menu to render it. Click the rendered button to open the popout."
                 })]
-            }), (0, a.jsx)(l.BJc, {
+            }), (0, a.jsx)(s.BJc, {
                 direction: "horizontal",
                 gap: 8,
                 align: "end",
-                children: (0, a.jsx)(l.ZiE, {
+                children: (0, a.jsx)(s.ZiE, {
                     label: "Render a Popout Menu",
                     placeholder: "Select a popout",
                     options: t,
@@ -291,7 +291,7 @@ function p() {
                     selectionMode: "single"
                 })
             }), null != p && (0, a.jsx)(i.Suspense, {
-                fallback: (0, a.jsx)(l.Text, {
+                fallback: (0, a.jsx)(s.Text, {
                     variant: "text-sm/normal",
                     color: "text-muted",
                     children: "Loading..."

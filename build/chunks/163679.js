@@ -4,8 +4,8 @@ n.d(t, {
 });
 var a = n(627968),
     i = n(64700),
-    l = n(397927),
-    s = n(964486),
+    s = n(397927),
+    l = n(964486),
     r = n(847599),
     o = n(767379),
     d = n(240248),
@@ -16,28 +16,28 @@ var a = n(627968),
     x = n(870341),
     p = n(686267),
     g = n(231723),
-    _ = n(818348),
-    f = n(774630),
-    v = n(985018),
-    b = n(914161);
+    f = n(818348),
+    v = n(646284),
+    _ = n(985018),
+    b = n(474716);
 let j = n(843020);
 
 function A(e) {
     let {
         task: t,
         handleSubmit: n,
-        disabled: l
-    } = e, [s, r] = i.useState(t), o = i.useMemo(() => ({
-        task: s,
+        disabled: s
+    } = e, [l, r] = i.useState(t), o = i.useMemo(() => ({
+        task: l,
         setTask: r
-    }), [s, r]);
+    }), [l, r]);
     return i.useEffect(() => {
         r(t)
     }, [t]), (0, a.jsxs)(u.h.Provider, {
         value: o,
         children: [(0, a.jsx)(p.A, {}), (0, a.jsx)(x.A, {
             onSubmit: n,
-            disabled: l
+            disabled: s
         })]
     })
 }
@@ -45,7 +45,7 @@ let C = function(e) {
     let {
         transitionState: t,
         onClose: n
-    } = e, [u, x] = i.useState(null), [p, C] = i.useState(!0), [y, S] = i.useState(null), [T, E] = i.useState(!1), N = i.useCallback(async () => {
+    } = e, [u, x] = i.useState(null), [p, C] = i.useState(!0), [y, S] = i.useState(null), [E, T] = i.useState(!1), N = i.useCallback(async () => {
         C(!0), S(null);
         try {
             let e = await (0, c.$R)();
@@ -66,13 +66,13 @@ let C = function(e) {
                 }
             })
         } catch {
-            S(v.intl.string(f.default["/f++3g"]))
+            S(_.intl.string(v.default["/f++3g"]))
         } finally {
             C(!1)
         }
     }, [n]), I = i.useCallback(async e => {
         if (null !== u) {
-            E(!0);
+            T(!0);
             try {
                 let t = {
                     task_id: u.task_id,
@@ -81,13 +81,13 @@ let C = function(e) {
                 };
                 await (0, c.Rt)(t), N()
             } catch (e) {
-                S(v.intl.string(f.default["+QRSxc"]))
+                S(_.intl.string(v.default["+QRSxc"]))
             } finally {
-                E(!1)
+                T(!1)
             }
         }
     }, [u, N]);
-    (0, s.Ay)(() => {
+    (0, l.Ay)(() => {
         N()
     });
     let k = i.useMemo(() => u?.task_type === m.wP.AGE_VERIFICATION, [u]);
@@ -100,7 +100,7 @@ let C = function(e) {
         }), k ? (0, a.jsx)(o.default, {
             transitionState: t ?? g.ip.ENTERED,
             entryPoint: r.q1.SAFETY_FLOWS,
-            onClose: _.tE,
+            onClose: f.tE,
             onComplete: async () => {
                 await I({
                     type: m.Ij.Empty
@@ -109,45 +109,45 @@ let C = function(e) {
             dismissable: !1
         }) : (0, a.jsx)("div", {
             className: b.nA,
-            children: p ? (0, a.jsx)(l.y$y, {
-                type: l.y$y.Type.SPINNING_CIRCLE
+            children: p ? (0, a.jsx)(s.y$y, {
+                type: s.y$y.Type.SPINNING_CIRCLE
             }) : (0, a.jsx)("div", {
                 className: b.kL,
-                children: (0, a.jsxs)(l.BJc, {
+                children: (0, a.jsxs)(s.BJc, {
                     direction: "horizontal",
                     justify: "start",
                     className: b.rf,
-                    children: [null !== y && (0, a.jsxs)(l.BJc, {
+                    children: [null !== y && (0, a.jsxs)(s.BJc, {
                         direction: "vertical",
                         justify: "space-between",
                         align: "center",
                         className: b.Nj,
                         padding: 16,
-                        children: [(0, a.jsxs)(l.BJc, {
+                        children: [(0, a.jsxs)(s.BJc, {
                             direction: "vertical",
                             gap: 4,
-                            children: [(0, a.jsx)(l.Heading, {
+                            children: [(0, a.jsx)(s.Heading, {
                                 variant: "heading-xl/semibold",
-                                children: v.intl.string(v.t.c6kn6F)
-                            }), (0, a.jsx)(l.Text, {
+                                children: _.intl.string(_.t.c6kn6F)
+                            }), (0, a.jsx)(s.Text, {
                                 variant: "text-md/normal",
                                 color: "text-muted",
-                                children: v.intl.string(v.t.ZUEGFn)
+                                children: _.intl.string(_.t.ZUEGFn)
                             })]
-                        }), (0, a.jsxs)(l.BJc, {
+                        }), (0, a.jsxs)(s.BJc, {
                             direction: "horizontal",
                             justify: "center",
                             align: "center",
-                            children: [(0, a.jsx)(l.Button, {
+                            children: [(0, a.jsx)(s.Button, {
                                 fullWidth: !0,
                                 variant: "secondary",
-                                text: v.intl.string(v.t["2jxGer"]),
+                                text: _.intl.string(_.t["2jxGer"]),
                                 onClick: () => {
                                     (0, h.k)("safety_flows_modal")
                                 }
-                            }), (0, a.jsx)(l.Button, {
+                            }), (0, a.jsx)(s.Button, {
                                 fullWidth: !0,
-                                text: v.intl.string(v.t["7NqTJn"]),
+                                text: _.intl.string(_.t["7NqTJn"]),
                                 onClick: () => {
                                     N()
                                 }
@@ -156,7 +156,7 @@ let C = function(e) {
                     }), null === y && null != u && (0, a.jsx)(A, {
                         task: u,
                         handleSubmit: I,
-                        disabled: T
+                        disabled: E
                     })]
                 })
             })

@@ -6,10 +6,10 @@ n.d(t, {
 var a = n(627968);
 n(64700);
 var i = n(503698),
-    l = n.n(i),
-    s = n(397927);
+    s = n.n(i),
+    l = n(397927);
 n(714510), n(92246), n(985018);
-var r = n(507747);
+var r = n(351212);
 
 function o(e) {
     let {
@@ -18,7 +18,7 @@ function o(e) {
         hasNextStep: i
     } = e;
     return (0, a.jsxs)("li", {
-        className: l()(r.gY, {
+        className: s()(r.gY, {
             [r.HP]: n
         }, {
             [r.h4]: i
@@ -27,9 +27,9 @@ function o(e) {
             className: r.cJ,
             children: [(0, a.jsx)("div", {
                 className: r.$P,
-                children: n && (0, a.jsx)(s.rOg, {
+                children: n && (0, a.jsx)(l.rOg, {
                     className: r.ap,
-                    color: s.LU0.colors.WHITE
+                    color: l.LU0.colors.WHITE
                 })
             }), i && (0, a.jsx)("div", {
                 className: r.UK
@@ -45,7 +45,7 @@ function d(e) {
     let {
         children: t
     } = e;
-    return (0, a.jsx)(s.Text, {
+    return (0, a.jsx)(l.Text, {
         color: "text-muted",
         variant: "text-xs/medium",
         children: t
@@ -61,7 +61,7 @@ let c = function(e) {
         className: r.iE,
         children: [(0, a.jsx)("div", {
             className: r.Mj,
-            children: (0, a.jsx)(s.Heading, {
+            children: (0, a.jsx)(l.Heading, {
                 className: r.R_,
                 color: "text-strong",
                 variant: "text-xs/semibold",

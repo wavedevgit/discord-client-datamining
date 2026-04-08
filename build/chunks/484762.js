@@ -4,8 +4,8 @@ n.d(t, {
 }), n(321073);
 var a = n(627968),
     i = n(64700),
-    l = n(503698),
-    s = n.n(l),
+    s = n(503698),
+    l = n.n(s),
     r = n(989349),
     o = n.n(r),
     d = n(835245),
@@ -16,17 +16,17 @@ var a = n(627968),
     x = n(73153),
     p = n(391973),
     g = n(684013),
-    _ = n(56562),
-    f = n(765671),
-    v = n(235986),
+    f = n(56562),
+    v = n(765671),
+    _ = n(235986),
     b = n(15285),
     j = n(742589),
     A = n(41984),
     C = n(181435),
     y = n(435736),
     S = n(833551),
-    T = n(515183),
-    E = n(395011),
+    E = n(515183),
+    T = n(395011),
     N = n(127242),
     I = n(869014),
     k = n(379078),
@@ -49,8 +49,8 @@ var a = n(627968),
     $ = n(652215),
     q = n(644434),
     Y = n(985018),
-    Q = n(737314),
-    J = n(793877);
+    Q = n(876457),
+    J = n(310086);
 let X = {
         [$.uss.CLICK_ZONE_DEBUG]: e => ({
             type: $.uss.CLICK_ZONE_DEBUG,
@@ -89,11 +89,11 @@ let X = {
 function ee(e) {
     let {
         id: t
-    } = e, [n, l] = i.useState(!1);
+    } = e, [n, s] = i.useState(!1);
     return i.useEffect(() => {
         let e;
         return n && (e = setTimeout(() => {
-            l(!1)
+            s(!1)
         }, 1e3)), () => {
             null != e && clearTimeout(e)
         }
@@ -102,7 +102,7 @@ function ee(e) {
         color: m.$n.Colors.LINK,
         size: m.$n.Sizes.MIN,
         onClick: function() {
-            (0, L.C)(t, () => l(!0))
+            (0, L.C)(t, () => s(!0))
         },
         className: Q.DT,
         children: ["Application Id: ", t, " ", n ? Y.intl.string(Y.t.t5VZ88) : null]
@@ -111,7 +111,7 @@ function ee(e) {
 let et = i.memo(function(e) {
         let {
             trackedGame: t
-        } = e, n = (0, c.bG)([b.Ay], () => b.Ay.getGameOrTransformedSubgameForPID(t.pid)), i = (0, c.bG)([D.A], () => D.A.getGameForPID(t.pid)), l = (0, c.bG)([b.Ay], () => null == n ? null : b.Ay.getGameOverlayStatus(n));
+        } = e, n = (0, c.bG)([b.Ay], () => b.Ay.getGameOrTransformedSubgameForPID(t.pid)), i = (0, c.bG)([D.A], () => D.A.getGameForPID(t.pid)), s = (0, c.bG)([b.Ay], () => null == n ? null : b.Ay.getGameOverlayStatus(n));
         return (0, a.jsxs)("div", {
             className: Q.st,
             children: [(0, a.jsx)(h.Text, {
@@ -139,7 +139,7 @@ let et = i.memo(function(e) {
             }), (0, a.jsxs)(h.Text, {
                 variant: "text-sm/normal",
                 color: "text-default",
-                children: ["fullscreenType: ", (0, T.wR)(t.fullscreenType)]
+                children: ["fullscreenType: ", (0, E.wR)(t.fullscreenType)]
             }), (0, a.jsxs)(h.Text, {
                 variant: "text-sm/normal",
                 color: "text-default",
@@ -165,26 +165,26 @@ let et = i.memo(function(e) {
                 }), (0, a.jsxs)(h.Text, {
                     variant: "text-sm/normal",
                     color: "text-default",
-                    children: ["overlayMethod: ", (0, T.gK)(t.overlayMethod)]
+                    children: ["overlayMethod: ", (0, E.gK)(t.overlayMethod)]
                 })]
-            }), null != l && (0, a.jsxs)("div", {
+            }), null != s && (0, a.jsxs)("div", {
                 className: Q.st,
                 children: [(0, a.jsxs)(h.Text, {
                     variant: "text-sm/normal",
                     color: "text-default",
-                    children: ["raw source: ", l.source]
+                    children: ["raw source: ", s.source]
                 }), (0, a.jsxs)(h.Text, {
                     variant: "text-sm/normal",
                     color: "text-default",
-                    children: ["raw enabledLegacy: ", l.enabledLegacy ? "Yes" : "No"]
+                    children: ["raw enabledLegacy: ", s.enabledLegacy ? "Yes" : "No"]
                 }), (0, a.jsxs)(h.Text, {
                     variant: "text-sm/normal",
                     color: "text-default",
-                    children: ["raw enabledOOP: ", l.enabledOOP ? "Yes" : "No"]
+                    children: ["raw enabledOOP: ", s.enabledOOP ? "Yes" : "No"]
                 }), (0, a.jsxs)(h.Text, {
                     variant: "text-sm/normal",
                     color: "text-default",
-                    children: ["raw overlayMethod: ", (0, T.gK)(l.overlayMethod)]
+                    children: ["raw overlayMethod: ", (0, E.gK)(s.overlayMethod)]
                 })]
             }), (0, a.jsxs)(h.Text, {
                 variant: "text-sm/normal",
@@ -212,7 +212,7 @@ let et = i.memo(function(e) {
     en = i.memo(function(e) {
         let {
             pid: t
-        } = e, n = (0, c.cf)([P.default], () => P.default.getOverlayPIDStatuses()), i = (0, c.cf)([S.default], () => S.default.getTrackedGames()), l = (0, c.bG)([P.default], () => P.default.isInputLocked(t), [t]), s = (0, c.bG)([P.default], () => P.default.DEV_isInputLockedV3(t), [t]), r = (0, c.bG)([P.default], () => P.default.DEV_isInputLocked(t), [t]), o = (0, c.bG)([P.default], () => P.default.isReady(t), [t]);
+        } = e, n = (0, c.cf)([P.default], () => P.default.getOverlayPIDStatuses()), i = (0, c.cf)([S.default], () => S.default.getTrackedGames()), s = (0, c.bG)([P.default], () => P.default.isInputLocked(t), [t]), l = (0, c.bG)([P.default], () => P.default.DEV_isInputLockedV3(t), [t]), r = (0, c.bG)([P.default], () => P.default.DEV_isInputLocked(t), [t]), o = (0, c.bG)([P.default], () => P.default.isReady(t), [t]);
         return (0, a.jsxs)("div", {
             className: Q.st,
             children: [(0, a.jsx)(h.Text, {
@@ -253,11 +253,11 @@ let et = i.memo(function(e) {
             }), (0, a.jsxs)(h.Text, {
                 variant: "text-sm/normal",
                 color: "text-strong",
-                children: ["isInputLocked: ", l]
+                children: ["isInputLocked: ", s]
             }), (0, a.jsxs)(h.Text, {
                 variant: "text-sm/normal",
                 color: "text-strong",
-                children: ["isInputLockedV3: ", s]
+                children: ["isInputLockedV3: ", l]
             }), (0, a.jsxs)(h.Text, {
                 variant: "text-sm/normal",
                 color: "text-strong",
@@ -287,7 +287,7 @@ function ei(e) {
     let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
     return t ? `${e.toFixed(2)}ms` : (0, U.i$)(o()(e), "h:mm:ss.SSS")
 }
-let el = i.memo(function(e) {
+let es = i.memo(function(e) {
     let {
         pid: t,
         ...n
@@ -304,7 +304,7 @@ let el = i.memo(function(e) {
     })
 });
 
-function es() {
+function el() {
     let e = (0, c.bG)([N.A], () => N.A.hasRenderDebugMode(A.x7.TrackFocusPIDs)),
         t = (0, c.yK)([S.default], () => S.default.getDevToolsFocusedPidsWithTimestamp());
     return (0, a.jsxs)("div", {
@@ -324,22 +324,22 @@ function es() {
                 })
             })]
         }), (0, a.jsxs)(h.IpV, {
-            className: s()(Q.st, Q.XG),
+            className: l()(Q.st, Q.XG),
             children: [0 === t.length && (0, a.jsx)(h.Text, {
                 variant: "text-sm/normal",
                 color: "text-default",
                 children: "No recent focused pids"
             }), [...t].reverse().map(e => {
-                let [t, n, l] = e;
+                let [t, n, s] = e;
                 return (0, a.jsx)(i.Fragment, {
                     children: (0, a.jsx)(u.m_, {
                         position: "left",
-                        text: l === A.su.TRACK_FOCUS ? "Tracked Focus Event" : "Clear Focus Event",
+                        text: s === A.su.TRACK_FOCUS ? "Tracked Focus Event" : "Clear Focus Event",
                         children: (0, a.jsx)("div", {
                             children: (0, a.jsxs)(h.Text, {
                                 variant: "text-sm/medium",
-                                color: l === A.su.TRACK_FOCUS ? "text-default" : "text-feedback-critical",
-                                children: [(0, a.jsx)(el, {
+                                color: s === A.su.TRACK_FOCUS ? "text-default" : "text-feedback-critical",
+                                children: [(0, a.jsx)(es, {
                                     pid: n,
                                     tag: "span"
                                 }), " - ", n?.toString() ?? "null", " @ ", ei(t)]
@@ -359,31 +359,31 @@ let er = i.memo(function(e) {
             let e = S.default.getTrackedGameByPid(t)?.fullscreenType;
             if (null != e) return e;
             let n = b.Ay.getGameOrTransformedSubgameForPID(t);
-            return n?.fullscreenType ?? _.aI.UNKNOWN
+            return n?.fullscreenType ?? f.aI.UNKNOWN
         }, [t]);
         return (0, a.jsxs)(h.Text, {
             variant: "text-sm/normal",
             color: "text-subtle",
             tag: "span",
-            children: ["Original Screen Type: ", null != n ? (0, T.wR)(n) : "Unknown"]
+            children: ["Original Screen Type: ", null != n ? (0, E.wR)(n) : "Unknown"]
         })
     }),
     eo = i.memo(function() {
         let e = (0, c.cf)([S.default], () => S.default.getTrackedGames()),
             [t, n] = i.useState({}),
-            l = i.useRef(null);
-        return i.useEffect(() => (l.current = setInterval(async () => {
+            s = i.useRef(null);
+        return i.useEffect(() => (s.current = setInterval(async () => {
             let e = b.Ay.getRunningGames(),
                 t = [],
                 a = Date.now();
-            for (let n of e) t.push((0, T.E1)(n.pid, 0).then(e => [n.pid, e, a]));
+            for (let n of e) t.push((0, E.E1)(n.pid, 0).then(e => [n.pid, e, a]));
             let i = await Promise.all(t);
             n(e => i.reduce((e, t) => {
                 let [n, a, i] = t;
                 if (null == a || null == n) return e;
-                let l = e[n] ?? [],
-                    s = l[l.length - 1]?.screenType;
-                return (0 === l.length || s !== a) && (e[n] = [...l, {
+                let s = e[n] ?? [],
+                    l = s[s.length - 1]?.screenType;
+                return (0 === s.length || l !== a) && (e[n] = [...s, {
                     pid: n,
                     screenType: a,
                     timestamp: i
@@ -391,18 +391,18 @@ let er = i.memo(function(e) {
             }, {
                 ...e
             }))
-        }, +B.A.Millis.SECOND), () => clearInterval(l.current)), []), (0, a.jsx)(u.m_, {
+        }, +B.A.Millis.SECOND), () => clearInterval(s.current)), []), (0, a.jsx)(u.m_, {
             position: "left",
             text: "The most recent screen types we've logged, indexed by pid",
             children: (0, a.jsx)("div", {
                 children: (0, a.jsxs)(h.IpV, {
-                    className: s()(Q.st, Q.XG),
+                    className: l()(Q.st, Q.XG),
                     children: [0 === Object.keys(e).length && (0, a.jsx)(h.Text, {
                         variant: "text-sm/normal",
                         color: "text-default",
                         children: "No recent screen types"
                     }), Object.values(e).map(e => (0, a.jsxs)("div", {
-                        children: [(0, a.jsx)(el, {
+                        children: [(0, a.jsx)(es, {
                             tag: "div",
                             pid: e.pid
                         }), (0, a.jsx)(er, {
@@ -415,7 +415,7 @@ let er = i.memo(function(e) {
                             return (0, a.jsx)(h.Text, {
                                 variant: "text-xs/normal",
                                 color: "text-default",
-                                children: `${n}:${(0,T.wR)(n)} @ ${ei(i)}`
+                                children: `${n}:${(0,E.wR)(n)} @ ${ei(i)}`
                             }, `${e.pid}-${n}-${i}`)
                         })]
                     }, e.pid))]
@@ -427,8 +427,8 @@ let er = i.memo(function(e) {
         let e = (0, c.cf)([S.default], () => S.default.getTrackedGames()),
             t = (0, V.getPID)(),
             n = (0, c.bG)([S.default], () => S.default.isOverlayOOPEnabledForPid(t), [t]),
-            [i, l] = (0, c.yK)([R.A], () => [R.A.enabled, R.A.keepOpen]),
-            s = (0, c.bG)([P.default], () => P.default.getFocusedPID()),
+            [i, s] = (0, c.yK)([R.A], () => [R.A.enabled, R.A.keepOpen]),
+            l = (0, c.bG)([P.default], () => P.default.getFocusedPID()),
             r = (0, c.bG)([P.default], () => P.default.isFocusedPidOutOfProcess());
         return (0, a.jsxs)("div", {
             className: Q.st,
@@ -442,7 +442,7 @@ let er = i.memo(function(e) {
                 children: [(0, a.jsxs)(h.Text, {
                     variant: "text-sm/medium",
                     color: "text-strong",
-                    children: ["focusedPID: ", s?.toString() ?? "null"]
+                    children: ["focusedPID: ", l?.toString() ?? "null"]
                 }), (0, a.jsxs)(h.Text, {
                     variant: "text-sm/normal",
                     color: "text-subtle",
@@ -462,7 +462,7 @@ let er = i.memo(function(e) {
                 }), (0, a.jsxs)(h.Text, {
                     variant: "text-sm/normal",
                     color: "text-subtle",
-                    children: ["SoundboardOverlay.keepOpen: ", l ? "Yes" : "No"]
+                    children: ["SoundboardOverlay.keepOpen: ", s ? "Yes" : "No"]
                 })]
             })]
         })
@@ -497,7 +497,7 @@ let er = i.memo(function(e) {
         tooltip: "Enables legacy overlay logging, which will forward all legacy logging to the main apps console."
     }],
     eu = i.memo(function() {
-        let [e, t] = ea($.uss.CLICK_ZONE_DEBUG), [n, l] = ea($.uss.PERFORMANCE_DEBUG), s = (0, c.bG)([N.A], () => N.A.getRenderDebugModes()), [r, o] = i.useState({});
+        let [e, t] = ea($.uss.CLICK_ZONE_DEBUG), [n, s] = ea($.uss.PERFORMANCE_DEBUG), l = (0, c.bG)([N.A], () => N.A.getRenderDebugModes()), [r, o] = i.useState({});
         return i.useEffect(() => {
             let e = setInterval(() => {
                 o({})
@@ -507,14 +507,14 @@ let er = i.memo(function(e) {
             className: Q.st,
             children: ec.map(r => {
                 let o = r.mode === A.x7.OverlayRafManagerForceEnabled ? `${r.label} (${I.A.getLastRAFCallbackReason()})` : r.label,
-                    d = () => r.mode === A.x7.ClickZones ? null != e : r.mode === A.x7.WidgetAreas ? null != n : s.has(r.mode);
+                    d = () => r.mode === A.x7.ClickZones ? null != e : r.mode === A.x7.WidgetAreas ? null != n : l.has(r.mode);
                 return (0, a.jsx)(i.Fragment, {
                     children: (0, a.jsx)(h.dOG, {
                         checked: d(),
                         onChange: () => {
                             var e;
                             let n = d();
-                            r.mode === A.x7.ClickZones && t(), r.mode === A.x7.WidgetAreas && l(), e = r.mode, g.A.setRenderDebugMode(!n, e)
+                            r.mode === A.x7.ClickZones && t(), r.mode === A.x7.WidgetAreas && s(), e = r.mode, g.A.setRenderDebugMode(!n, e)
                         },
                         label: o,
                         description: r.tooltip
@@ -569,7 +569,7 @@ let er = i.memo(function(e) {
     eh = i.memo(function() {
         let e = (0, c.bG)([S.default], () => S.default.getForcedRenderMode()),
             [t, n] = i.useState(e),
-            l = [{
+            s = [{
                 label: A.V6.UNSET,
                 value: A.V6.UNSET,
                 id: A.V6.UNSET
@@ -592,7 +592,7 @@ let er = i.memo(function(e) {
         return (0, a.jsx)(h.l6P, {
             label: "Override the overlay render mode",
             value: t,
-            options: l,
+            options: s,
             onSelectionChange: e => {
                 n(e), g.A.forceRenderMode(e)
             },
@@ -605,7 +605,7 @@ function ex(e) {
     let {
         modalProps: t,
         onClose: n
-    } = e, [l, s] = i.useState(null);
+    } = e, [s, l] = i.useState(null);
 
     function r() {
         n(null)
@@ -617,8 +617,8 @@ function ex(e) {
         transitionState: t.transitionState,
         parentComponent: "BreadcrumbImportPanel",
         children: [(0, a.jsxs)(h.rQ0, {
-            align: v.A.Align.CENTER,
-            justify: v.A.Justify.BETWEEN,
+            align: _.A.Align.CENTER,
+            justify: _.A.Justify.BETWEEN,
             children: [(0, a.jsx)(h.Text, {
                 variant: "text-md/bold",
                 color: "text-feedback-critical",
@@ -631,8 +631,8 @@ function ex(e) {
                 className: Q.st,
                 children: (0, a.jsx)(h.fs1, {
                     label: "Paste JSON Here",
-                    onChange: s,
-                    value: l ?? "",
+                    onChange: l,
+                    value: s ?? "",
                     rows: 12
                 })
             })
@@ -643,7 +643,7 @@ function ex(e) {
                     variant: "primary",
                     text: "Import",
                     onClick: function() {
-                        n(l)
+                        n(s)
                     }
                 }), (0, a.jsx)(h.Button, {
                     variant: "secondary",
@@ -693,7 +693,7 @@ function eg(e) {
             return "var(--gray-400)"
     }
 }
-let e_ = [{
+let ef = [{
     key: "type",
     cellClassName: Q.SZ,
     renderHeader: () => null,
@@ -701,7 +701,7 @@ let e_ = [{
         let {
             type: t,
             logType: n
-        } = e, i = ef(t);
+        } = e, i = ev(t);
         return (0, a.jsx)("div", {
             className: Q.g$,
             style: {
@@ -756,7 +756,7 @@ let e_ = [{
     }
 }];
 
-function ef(e) {
+function ev(e) {
     switch (e) {
         case C.ON.NativeLegacy:
             return h.WxK;
@@ -774,7 +774,7 @@ function ef(e) {
     }
 }
 
-function ev(e) {
+function e_(e) {
     return JSON.stringify(e, (e, t) => void 0 === t ? null : t, 2)
 }
 let eb = ["__webpack_require__", "fn"],
@@ -789,21 +789,21 @@ let eb = ["__webpack_require__", "fn"],
                 onClose: n
             } = e, {
                 name: i,
-                type: l,
+                type: s,
                 logType: r,
                 nativeId: d,
                 stack: c,
                 data: u,
                 timestamp: m,
                 pid: x
-            } = t, p = o()(m), g = ef(l);
+            } = t, p = o()(m), g = ev(s);
             return (0, a.jsxs)(h.ArX, {
                 className: Q.bW,
                 children: [(0, a.jsxs)(j.A, {
-                    className: s()(J.jr, Q.nZ),
+                    className: l()(J.jr, Q.nZ),
                     children: [(0, a.jsx)("div", {
                         style: {
-                            color: eg(l, r)
+                            color: eg(s, r)
                         },
                         className: Q.nr,
                         children: (0, a.jsx)(g, {
@@ -812,7 +812,7 @@ let eb = ["__webpack_require__", "fn"],
                         })
                     }), (0, a.jsxs)(j.A.Title, {
                         wrapperClassName: Q.qd,
-                        children: [i, " (", l, ")", (0, a.jsx)(h.DUT, {
+                        children: [i, " (", s, ")", (0, a.jsx)(h.DUT, {
                             tag: "span",
                             className: Q.KE,
                             onClick: () => (0, L.C)(i),
@@ -825,7 +825,7 @@ let eb = ["__webpack_require__", "fn"],
                         icon: h.TdU,
                         tooltip: "Copy all properties",
                         onClick: () => {
-                            (0, L.C)(ev(t))
+                            (0, L.C)(e_(t))
                         }
                     }), (0, a.jsx)(j.A.Icon, {
                         icon: h.aXh,
@@ -862,9 +862,9 @@ let eb = ["__webpack_require__", "fn"],
                         })
                     }), (0, a.jsx)(W.mA, {
                         name: "Data",
-                        copyValue: ev(u),
+                        copyValue: e_(u),
                         children: (0, a.jsx)("code", {
-                            children: ev(u)
+                            children: e_(u)
                         })
                     }), null != c && (0, a.jsx)(W.mA, {
                         name: "Stack Trace",
@@ -873,7 +873,7 @@ let eb = ["__webpack_require__", "fn"],
                             children: c.split("\n").map((e, t) => {
                                 let n = e.match(/at (.*) \((.*):(\d+):(\d+)\)/);
                                 if (null != n) {
-                                    let [, e, i, l, s] = n, r = i.split(/[\\/]/).pop();
+                                    let [, e, i, s, l] = n, r = i.split(/[\\/]/).pop();
                                     return eb.includes(e.trim()) ? null : (0, a.jsxs)("div", {
                                         children: [(0, a.jsx)("span", {
                                             className: Q.e0,
@@ -882,7 +882,7 @@ let eb = ["__webpack_require__", "fn"],
                                             children: [" (", (0, a.jsxs)("span", {
                                                 className: Q.lz,
                                                 title: i,
-                                                children: [r, ":", l, ":", s]
+                                                children: [r, ":", s, ":", l]
                                             }), ")"]
                                         })]
                                     }, t)
@@ -905,8 +905,8 @@ let eb = ["__webpack_require__", "fn"],
                 type: n,
                 stack: a,
                 data: i
-            } = e, l = [t, n, JSON.stringify(i)];
-            return null != a && l.push(a), l
+            } = e, s = [t, n, JSON.stringify(i)];
+            return null != a && s.push(a), s
         },
         throttleMs: 100
     };
@@ -915,11 +915,11 @@ function ey() {
     let {
         ref: e,
         height: t
-    } = (0, f.Ay)(), n = (0, c.bG)([N.A], () => N.A.isModuleLoggingEnabled()), [l, r] = i.useState(n), [o, d] = i.useState(!1), [u, m] = i.useState(null), [x, p] = i.useState(Object.keys(ep)), [_, v] = (0, c.bG)([N.A], () => N.A.getOverlayLoggingBreadcrumbs(), [], G.D), [b, j] = i.useState(null), A = b ?? _, C = null != b ? -1 : v;
+    } = (0, v.Ay)(), n = (0, c.bG)([N.A], () => N.A.isModuleLoggingEnabled()), [s, r] = i.useState(n), [o, d] = i.useState(!1), [u, m] = i.useState(null), [x, p] = i.useState(Object.keys(ep)), [f, _] = (0, c.bG)([N.A], () => N.A.getOverlayLoggingBreadcrumbs(), [], G.D), [b, j] = i.useState(null), A = b ?? f, C = null != b ? -1 : _;
     i.useEffect(() => {
         0 !== C && (o ? m(A.reduce((e, t) => "game_tracking_starting" === t.name ? Math.max(e, t.timestamp) : e, 0)) : m(null))
     }, [o, A, C]);
-    let [y, S] = i.useState(""), T = i.useMemo(() => 0 === C ? [] : A.filter(e => {
+    let [y, S] = i.useState(""), E = i.useMemo(() => 0 === C ? [] : A.filter(e => {
         if (o && null != u && e.timestamp < u) return !1;
         for (let t of x) {
             let {
@@ -928,22 +928,22 @@ function ey() {
             if (n(e)) return !0
         }
         return !1
-    }), [A, x, u, o, C]), [E, I] = i.useState(T), [k, R] = i.useState(null), w = i.useMemo(() => A.find(e => e.key === k), [A, k]), D = i.useCallback(e => {
+    }), [A, x, u, o, C]), [T, I] = i.useState(E), [k, R] = i.useState(null), w = i.useMemo(() => A.find(e => e.key === k), [A, k]), D = i.useCallback(e => {
         I(e)
     }, []), {
         renderSelectedTab: M
     } = (0, z.Ay)({
         tabs: eA
     }, []);
-    (0, O.RT)(y, T, D, eC, [A]);
+    (0, O.RT)(y, E, D, eC, [A]);
     let P = i.useCallback(e => {
             r(e), g.A.setModuleLogging(e)
         }, []),
         [U, B] = i.useState(!1),
         F = i.useRef(null),
         V = i.useCallback(() => {
-            (0, L.C)(JSON.stringify(T)), B(!0)
-        }, [T]);
+            (0, L.C)(JSON.stringify(E)), B(!0)
+        }, [E]);
     i.useEffect(() => {
         if (U) return F.current = setTimeout(() => {
             B(!1)
@@ -971,13 +971,13 @@ function ey() {
         children: [(0, a.jsxs)("div", {
             className: Q.st,
             children: [(0, a.jsxs)("div", {
-                className: s()(Q._V, Q.XQ),
+                className: l()(Q._V, Q.XQ),
                 children: [(0, a.jsx)("div", {
                     title: "Toggles the Polling of Native",
                     className: Q.iR,
                     children: (0, a.jsx)(h.Checkbox, {
                         label: "Poll Native",
-                        checked: l,
+                        checked: s,
                         onChange: e => P(e)
                     })
                 }), (0, a.jsx)("div", {
@@ -1012,11 +1012,11 @@ function ey() {
                     })
                 })]
             }), (0, a.jsx)("div", {
-                className: s()(Q._V, Q.XQ),
+                className: l()(Q._V, Q.XQ),
                 children: Object.entries(ep).map(e => {
                     let [t, n] = e;
                     return (0, a.jsx)(h.DUT, {
-                        className: s()(Q.pb, x.includes(t) && Q.bx),
+                        className: l()(Q.pb, x.includes(t) && Q.bx),
                         onClick: () => {
                             p(e => e.includes(t) ? e.filter(e => e !== t) : [...e, t])
                         },
@@ -1037,15 +1037,15 @@ function ey() {
                 })
             })]
         }), (0, a.jsx)("div", {
-            className: s()(Q.st, Q.CZ),
+            className: l()(Q.st, Q.CZ),
             children: (0, a.jsx)(K.A, {
-                columns: e_,
-                data: E,
+                columns: ef,
+                data: T,
                 selectedRowKey: k ?? void 0,
                 onClickRow: e => R(e.key)
             })
         }), null != w && (0, a.jsx)(H.A, {
-            className: s()(Q.st, Q.rf),
+            className: l()(Q.st, Q.rf),
             minHeight: 100,
             initialHeight: null != t ? t / 3 : 300,
             children: M({
@@ -1056,7 +1056,7 @@ function ey() {
     })
 }
 let eS = i.memo(function() {
-        let e = (0, c.bG)([E.A], () => E.A.getPopoutInitializationStages());
+        let e = (0, c.bG)([T.A], () => T.A.getPopoutInitializationStages());
         return (0, a.jsxs)("div", {
             className: Q.st,
             children: [(0, a.jsx)("div", {
@@ -1075,7 +1075,7 @@ let eS = i.memo(function() {
             })]
         })
     }),
-    eT = i.memo(function() {
+    eE = i.memo(function() {
         let e = (0, c.bG)([N.A], () => N.A.isStateDebuggingEnabled()),
             t = (0, c.bG)([N.A], () => N.A.getDebuggingState());
         return i.useEffect(() => (g.A.setStateDebugging(!0), () => {
@@ -1099,11 +1099,11 @@ let eS = i.memo(function() {
         })
     });
 
-function eE() {
+function eT() {
     return (0, a.jsx)(h.ArX, {
         children: (0, a.jsxs)("div", {
-            className: s()(J.nd, Q.rf),
-            children: [(0, a.jsx)(eu, {}), (0, a.jsx)(eh, {}), (0, a.jsx)(em, {}), (0, a.jsx)(ed, {}), (0, a.jsx)(es, {}), (0, a.jsx)(eo, {}), (0, a.jsx)(eS, {}), (0, a.jsx)(eT, {})]
+            className: l()(J.nd, Q.rf),
+            children: [(0, a.jsx)(eu, {}), (0, a.jsx)(eh, {}), (0, a.jsx)(em, {}), (0, a.jsx)(ed, {}), (0, a.jsx)(el, {}), (0, a.jsx)(eo, {}), (0, a.jsx)(eS, {}), (0, a.jsx)(eE, {})]
         })
     })
 }
@@ -1203,7 +1203,7 @@ let eN = e => {
 function eO() {
     return (0, a.jsx)(h.ArX, {
         children: (0, a.jsx)("div", {
-            className: s()(J.nd, Q.rf),
+            className: l()(J.nd, Q.rf),
             children: (0, a.jsx)(ek, {})
         })
     })
@@ -1220,11 +1220,11 @@ function eR() {
             enabled: !1
         })
     }), []), (0, a.jsxs)("div", {
-        className: s()(J.nd, Q.nd),
+        className: l()(J.nd, Q.nd),
         children: [(0, a.jsxs)("div", {
             className: Q._V,
             children: [(0, a.jsx)(h.DUT, {
-                className: s()(Q.k0, "state" === e && Q.a),
+                className: l()(Q.k0, "state" === e && Q.a),
                 onClick: () => t("state"),
                 children: (0, a.jsx)(h.Text, {
                     variant: "text-md/medium",
@@ -1232,7 +1232,7 @@ function eR() {
                     children: "Client State"
                 })
             }), (0, a.jsx)(h.DUT, {
-                className: s()(Q.k0, "logging" === e && Q.a),
+                className: l()(Q.k0, "logging" === e && Q.a),
                 onClick: () => t("logging"),
                 children: (0, a.jsx)(h.Text, {
                     variant: "text-md/medium",
@@ -1240,7 +1240,7 @@ function eR() {
                     children: "Logging"
                 })
             }), (0, a.jsx)(h.DUT, {
-                className: s()(Q.k0, "experiments" === e && Q.a),
+                className: l()(Q.k0, "experiments" === e && Q.a),
                 onClick: () => t("experiments"),
                 children: (0, a.jsx)(h.Text, {
                     variant: "text-md/medium",
@@ -1248,6 +1248,6 @@ function eR() {
                     children: "Experiments"
                 })
             })]
-        }), "state" === e && (0, a.jsx)(eE, {}), "logging" === e && (0, a.jsx)(ey, {}), "experiments" === e && (0, a.jsx)(eO, {})]
+        }), "state" === e && (0, a.jsx)(eT, {}), "logging" === e && (0, a.jsx)(ey, {}), "experiments" === e && (0, a.jsx)(eO, {})]
     })
 }

@@ -1,30 +1,30 @@
 /** chunk id: 252362 params = (module,exports,require) **/
 n.d(t, {
-    A: () => g
+    A: () => _
 });
-var r = n(627968),
-    a = n(64700),
-    i = n(342494),
+var i = n(627968),
+    r = n(64700),
+    a = n(342494),
     l = n(582754),
-    o = n(736653),
-    s = n(793574),
-    _ = n(688810),
-    u = n(976860),
-    d = n(979286),
-    c = n(652215),
-    A = n(985018);
-let g = 21552 == n.j ? e => {
+    s = n(736653),
+    o = n(793574),
+    d = n(688810),
+    c = n(976860),
+    u = n(979286),
+    A = n(652215),
+    h = n(985018);
+let _ = e => {
     let {
         displayOptions: t,
         targetElementRef: n,
-        onRequestClose: g,
-        onClick: p
+        onRequestClose: _,
+        onClick: m
     } = e, {
-        analyticsLocations: b
-    } = (0, _.Ay)(s.A.HOME_PAGE_SHOP_TAB), m = (0, o.Ay)(), f = (0, l.Mw)(m) ? t.assetDark : t.assetLight, T = a.useRef(g);
-    return T.current = g, a.useEffect(() => () => {
-        T.current?.()
-    }, []), (0, r.jsx)(i.AM, {
+        analyticsLocations: p
+    } = (0, d.Ay)(o.A.HOME_PAGE_SHOP_TAB), g = (0, s.Ay)(), E = (0, l.Mw)(g) ? t.assetDark : t.assetLight, I = r.useRef(_);
+    return I.current = _, r.useEffect(() => () => {
+        I.current?.()
+    }, []), (0, i.jsx)(a.AM, {
         targetElementRef: n,
         position: "right",
         align: "top",
@@ -36,18 +36,18 @@ let g = 21552 == n.j ? e => {
         body: t.body(),
         graphic: {
             type: "image",
-            src: f
+            src: E
         },
         actions: [{
-            text: A.intl.string(A.t.fYfGgK),
+            text: h.intl.string(h.t.fYfGgK),
             variant: "primary",
             onClick: () => {
-                p?.(), (0, u.pX)(c.BVt.COLLECTIBLES_SHOP), (0, d.Cz)({
-                    analyticsLocations: b,
-                    analyticsSource: s.A.HOME_PAGE_SHOP_TAB
+                m?.(), (0, c.pX)(A.BVt.COLLECTIBLES_SHOP), (0, u.Cz)({
+                    analyticsLocations: p,
+                    analyticsSource: o.A.HOME_PAGE_SHOP_TAB
                 })
             }
         }],
-        onRequestClose: g
+        onRequestClose: _
     })
-} : null
+}

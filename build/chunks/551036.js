@@ -24,26 +24,26 @@ var i = n(627968),
     T = n(457830),
     N = n(167010),
     S = n(139613),
-    v = n(746080),
-    x = n(985018),
-    y = n(599368);
+    x = n(746080),
+    v = n(985018),
+    b = n(369717);
 
-function b(e) {
+function y(e) {
     let {
         guildId: t
-    } = e, n = (0, l.bG)([p.A], () => p.A.getGuild(t), [t]), b = (0, l.bG)([_.A], () => _.A.isConnected()), O = (0, A.A)(t), L = (0, I.A)(t), R = (0, l.bG)([g.A], () => g.A.isSubscriptionFetching), P = (0, E.X)(), {
+    } = e, n = (0, l.bG)([p.A], () => p.A.getGuild(t), [t]), y = (0, l.bG)([_.A], () => _.A.isConnected()), O = (0, A.A)(t), L = (0, I.A)(t), R = (0, l.bG)([g.A], () => g.A.isSubscriptionFetching), P = (0, E.X)(), {
         shouldHideGuildPurchaseEntryPoints: D,
         restrictionsLoading: M
     } = (0, h.MH)(t), j = null == n || !P || R || M;
     (0, c.HU)({
-        subsection: x.intl.string(x.t["KzCF/6"]),
+        subsection: v.intl.string(v.t["KzCF/6"]),
         location: n?.name
     }), (0, d.A)(a.Fr ? "role-subscriptions-overview" : void 0);
-    let w = b && (null == n || !(O || L) || D && !M);
+    let w = y && (null == n || !(O || L) || D && !M);
     if (r.useEffect(() => {
             o.hP()
         }, []), r.useEffect(() => {
-            w && !a.Fr && (0, u.B)(t, v.VV.ROLE_SUBSCRIPTIONS)
+            w && !a.Fr && (0, u.B)(t, x.VV.ROLE_SUBSCRIPTIONS)
         }, [t, w]), a.Fr && w) {
         let e = null == n ? T.b.NOT_GUILD_MEMBER : T.b.GUILD_NOT_ELIGIBLE;
         return (0, i.jsx)(T.k, {
@@ -51,24 +51,24 @@ function b(e) {
         })
     }
     return (0, i.jsxs)("div", {
-        className: y.kL,
+        className: b.kL,
         children: [(0, i.jsxs)(m.A, {
             toolbar: (0, i.jsx)(r.Fragment, {}),
-            className: y.jr,
+            className: b.jr,
             children: [(0, i.jsx)(m.A.Icon, {
                 icon: (0, s.kHD)(f.A),
                 "aria-hidden": !0
             }), (0, i.jsx)(m.A.Title, {
-                children: x.intl.string(x.t["KzCF/6"])
+                children: v.intl.string(v.t["KzCF/6"])
             })]
         }), (0, i.jsx)("div", {
             id: S.K
         }), (0, i.jsx)("div", {
-            className: y.Qs,
+            className: b.Qs,
             children: O ? (0, i.jsx)(s.d_W, {
-                className: y.XG,
+                className: b.XG,
                 children: (0, i.jsx)("div", {
-                    className: y.gT,
+                    className: b.gT,
                     children: j ? (0, i.jsx)(s.y$y, {}) : (0, i.jsx)(C.A, {
                         guild: n
                     })
@@ -85,7 +85,7 @@ function O(e) {
     return (0, i.jsx)(E.H, {
         guildId: t,
         refetchOnMount: !0,
-        children: (0, i.jsx)(b, {
+        children: (0, i.jsx)(y, {
             guildId: t
         })
     })

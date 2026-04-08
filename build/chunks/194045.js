@@ -1,6 +1,6 @@
 /** chunk id: 194045 params = (module,exports,require) **/
 n.d(t, {
-    A: () => x
+    A: () => v
 });
 var i = n(627968);
 n(64700);
@@ -25,7 +25,7 @@ var r = n(397927),
     T = n(652215),
     N = n(731854);
 let S = new l.A("SoundboardManager");
-class v extends _.A {
+class x extends _.A {
     playingSoundsWeb = new Map;
     _initialize() {
         super._initialize(), __OVERLAY__ || (a.h.subscribe("OVERLAY_SOUNDBOARD_SOUNDS_FETCH_REQUEST", this._handleOverlaySoundboardSoundsFetchRequest), a.h.subscribe("RTC_CONNECTION_STATE", this._handleRTCConnectionState))
@@ -90,4 +90,4 @@ class v extends _.A {
         })
     }
 }
-let x = new v
+let v = new x

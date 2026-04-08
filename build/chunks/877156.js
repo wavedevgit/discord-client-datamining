@@ -1,9 +1,9 @@
 /** chunk id: 877156 params = (module,exports,require) **/
 t.d(n, {
-    A: () => A
+    A: () => I
 });
-var i = t(627968),
-    l = t(64700),
+var l = t(627968),
+    i = t(64700),
     r = t(311907),
     s = t(732955),
     a = t(397927),
@@ -18,24 +18,24 @@ var i = t(627968),
     S = t(61750),
     x = t(287809),
     T = t(482132),
-    I = t(758836),
-    P = t(985018),
-    h = t(586080);
+    P = t(758836),
+    h = t(985018),
+    A = t(527667);
 
-function A(e) {
+function I(e) {
     let {
         rewardSkuId: n,
         onClose: t
-    } = e, A = (0, r.bG)([x.default], () => x.default.getCurrentUser()), g = (0, r.bG)([o.A], () => o.A.useReducedMotion), {
+    } = e, I = (0, r.bG)([x.default], () => x.default.getCurrentUser()), g = (0, r.bG)([o.A], () => o.A.useReducedMotion), {
         analyticsLocations: f
     } = (0, u.Ay)(), j = a._3J.SIZE_32, {
         product: R,
         isFetching: M
-    } = (0, c.q)(n), [C, N] = l.useState(!1), O = R?.items[0], {
+    } = (0, c.q)(n), [C, N] = i.useState(!1), O = R?.items[0], {
         isNameplateReward: y,
-        nameplateData: v,
-        rewardAvatarDecorationSrc: b
-    } = l.useMemo(() => null == O ? {
+        nameplateData: b,
+        rewardAvatarDecorationSrc: v
+    } = i.useMemo(() => null == O ? {
         isNameplateReward: !1,
         nameplateData: null,
         rewardAvatarDecorationSrc: null
@@ -62,37 +62,37 @@ function A(e) {
         nameplateData: null,
         rewardAvatarDecorationSrc: null
     }, [O, j, g]);
-    return (0, i.jsx)(T.UX, {
-        children: (0, i.jsx)(s.jlY, {
-            children: (0, i.jsxs)("div", {
-                className: h.W,
-                children: [y && null != v ? (0, i.jsx)("div", {
-                    className: h.D,
+    return (0, l.jsx)(T.UX, {
+        children: (0, l.jsx)(s.jlY, {
+            children: (0, l.jsxs)("div", {
+                className: A.W,
+                children: [y && null != b ? (0, l.jsx)("div", {
+                    className: A.D,
                     onMouseEnter: () => N(!0),
                     onMouseLeave: () => N(!1),
-                    children: (0, i.jsx)(m.a, {
-                        user: A,
+                    children: (0, l.jsx)(m.a, {
+                        user: I,
                         nameplate: null,
-                        nameplateData: v,
+                        nameplateData: b,
                         showPlaceholderUser: !0,
                         nameplatePreviewSize: "xsmall",
                         isHighlighted: C
                     })
-                }) : (0, i.jsx)(a.JsQ, {
-                    "aria-label": A?.username,
+                }) : (0, l.jsx)(a.JsQ, {
+                    "aria-label": I?.username,
                     size: j,
-                    src: A?.getAvatarURL(void 0, (0, a.FT9)(j), !g),
-                    avatarDecoration: b
-                }), (0, i.jsx)(s.$nd, {
+                    src: I?.getAvatarURL(void 0, (0, a.FT9)(j), !g),
+                    avatarDecoration: v
+                }), (0, l.jsx)(s.$nd, {
                     variant: "primary",
-                    text: P.intl.string(P.t.kMYVwv),
+                    text: h.intl.string(h.t.kMYVwv),
                     loading: M,
                     onClick: () => {
                         null != R && (t(), (0, S.A)({
                             product: R,
                             shouldShowPromotionalExperience: !0,
                             analyticsLocations: f,
-                            purchaseType: I.gs.PROMOTIONAL
+                            purchaseType: P.gs.PROMOTIONAL
                         }))
                     }
                 })]

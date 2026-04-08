@@ -1,73 +1,73 @@
 /** chunk id: 240783 params = (module,exports,require) **/
 t.d(n, {
-    A: () => h
+    A: () => x
 });
 var i = t(627968),
     a = t(64700),
-    l = t(311907),
-    r = t(397927),
+    r = t(311907),
+    l = t(397927),
     s = t(351906),
-    d = t(183555),
-    o = t(382120),
+    o = t(183555),
+    d = t(382120),
     c = t(128490),
     u = t(539548),
     _ = t(412775),
     p = t(86404),
     A = t(738759),
     g = t(518477),
-    I = t(985018),
-    m = t(272823),
-    f = t(613761);
+    m = t(985018),
+    I = t(643146),
+    f = t(843796);
 
-function x(e) {
+function h(e) {
     let {
         section: n,
         user: t,
         currentUser: a,
-        displayProfile: l,
-        guildId: r,
+        displayProfile: r,
+        guildId: l,
         channelId: s,
-        onClose: d
+        onClose: o
     } = e;
     return n === g.RP.ACTIVITY ? (0, i.jsx)(u.A, {
         user: t,
         currentUser: a,
-        guildId: r,
-        onClose: d
+        guildId: l,
+        onClose: o
     }) : n === g.RP.MUTUAL_FRIENDS ? (0, i.jsx)(p.A, {
         user: t,
-        guildId: r,
+        guildId: l,
         channelId: s,
-        onClose: d
+        onClose: o
     }) : n === g.RP.MUTUAL_GUILDS ? (0, i.jsx)(A.A, {
         user: t,
-        onClose: d
-    }) : n === g.RP.BOT_DATA_ACCESS ? (0, i.jsx)(o.A, {
+        onClose: o
+    }) : n === g.RP.BOT_DATA_ACCESS ? (0, i.jsx)(d.A, {
         user: t
     }) : n === g.RP.BOT_INFO ? (0, i.jsx)(c.A, {
         user: t,
-        displayProfile: l,
-        guildId: r,
-        onClose: d
+        displayProfile: r,
+        guildId: l,
+        onClose: o
     }) : (0, i.jsx)(_.A, {
         user: t,
-        displayProfile: l,
-        onClose: d
+        displayProfile: r,
+        onClose: o
     })
 }
 
-function h(e) {
+function x(e) {
     let {
         user: n,
         currentUser: t,
-        displayProfile: o,
+        displayProfile: d,
         guildId: c,
         items: u,
         initialSection: _ = g.RP.USER_INFO,
         onClose: p
     } = e, {
         trackUserProfileAction: A
-    } = (0, d.NJ)(), h = (0, l.bG)([s.A], () => s.A.hidePersonalInformation), [v, E] = a.useState(() => u.find(e => {
+    } = (0, o.NJ)(), x = (0, r.bG)([s.A], () => s.A.hidePersonalInformation), [v, E] = a.useState(() => u.find(e => {
         let {
             section: n
         } = e;
@@ -82,20 +82,20 @@ function h(e) {
             section: e
         }), E(e)
     }, [A]);
-    return h ? (0, i.jsx)("div", {
+    return x ? (0, i.jsx)("div", {
         className: f.kL,
         children: (0, i.jsxs)("div", {
-            className: m.Ie,
+            className: I.Ie,
             children: [(0, i.jsx)("div", {
-                className: m.hB
+                className: I.hB
             }), (0, i.jsx)("div", {
-                className: m.BI,
-                children: I.intl.string(I.t.Br1ls3)
+                className: I.BI,
+                children: m.intl.string(m.t.Br1ls3)
             })]
         })
     }) : (0, i.jsxs)("div", {
         className: f.kL,
-        children: [(0, i.jsx)(r.VQ0, {
+        children: [(0, i.jsx)(l.VQ0, {
             className: f.$H,
             type: "top",
             selectedItem: v,
@@ -105,22 +105,22 @@ function h(e) {
                     section: n,
                     text: t
                 } = e;
-                return (0, i.jsx)(r.VQ0.Item, {
+                return (0, i.jsx)(l.VQ0.Item, {
                     className: f.YU,
                     id: n,
                     "aria-label": t,
-                    children: (0, i.jsx)(r.Text, {
+                    children: (0, i.jsx)(l.Text, {
                         variant: "text-sm/normal",
                         children: t
                     })
                 }, n)
             })
-        }), (0, i.jsx)(x, {
+        }), (0, i.jsx)(h, {
             items: u,
             section: v,
             user: n,
             currentUser: t,
-            displayProfile: o,
+            displayProfile: d,
             guildId: c,
             onClose: p
         })]

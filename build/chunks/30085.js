@@ -1,12 +1,12 @@
 /** chunk id: 30085 params = (module,exports,require) **/
 n.d(t, {
-    D: () => s,
+    D: () => l,
     k: () => r
 }), n(321073);
 var a = n(151196),
     i = n(652215);
 
-function l() {
+function s() {
     return {
         colors: Array.from({
             length: a.Dp
@@ -20,35 +20,35 @@ function l() {
     }
 }
 
-function s() {
+function l() {
     return {
-        [i.NJ8.LIGHT]: l(),
+        [i.NJ8.LIGHT]: s(),
         [i.NJ8.DARK]: {
             colors: [...a.ji],
             scales: [...a.eg],
             opacities: [...a.UH]
         },
-        [i.NJ8.DARKER]: l(),
-        [i.NJ8.MIDNIGHT]: l()
+        [i.NJ8.DARKER]: s(),
+        [i.NJ8.MIDNIGHT]: s()
     }
 }
 
 function r(e, t) {
     let n = [],
         i = [],
-        l = [];
-    for (let s = 0; s < a.Dp; s++) {
+        s = [];
+    for (let l = 0; l < a.Dp; l++) {
         let r, o, d, c = t;
         for (; null != c;) {
             let t = e[c];
-            if (r ??= t.colors[s], o ??= t.scales[s], d ??= t.opacities[s], null != r && null != o && null != d) break;
+            if (r ??= t.colors[l], o ??= t.scales[l], d ??= t.opacities[l], null != r && null != o && null != d) break;
             c = a.QN[c]
         }
-        n.push(r ?? a.ji[s]), i.push(o ?? a.eg[s]), l.push(d ?? a.UH[s])
+        n.push(r ?? a.ji[l]), i.push(o ?? a.eg[l]), s.push(d ?? a.UH[l])
     }
     return {
         colors: n,
         scales: i,
-        opacities: l
+        opacities: s
     }
 }

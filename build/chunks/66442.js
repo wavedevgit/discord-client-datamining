@@ -1,63 +1,63 @@
 /** chunk id: 66442 params = (module,exports,require) **/
-n.d(t, {
-    X: () => S,
-    default: () => T
+n.d(e, {
+    X: () => D,
+    default: () => j
 });
 var i = n(627968),
     l = n(64700),
-    s = n(503698),
-    a = n.n(s),
+    a = n(503698),
+    s = n.n(a),
     r = n(158954),
     o = n(311907),
     c = n(397927),
     d = n(308528),
     u = n(964486),
     h = n(793574),
-    m = n(688810),
-    A = n(571694),
+    _ = n(688810),
+    m = n(571694),
     p = n(47167),
-    g = n(734057),
-    f = n(954571),
-    _ = n(396787),
-    E = n(652215),
-    x = n(985018),
-    C = n(840834);
+    v = n(734057),
+    A = n(954571),
+    f = n(396787),
+    x = n(652215),
+    g = n(985018),
+    y = n(514693);
 
-function S(e) {
+function D(t) {
     let {
-        channel: t,
+        channel: e,
         previewIcon: n,
         onIconChange: l,
-        onIconRemove: s,
+        onIconRemove: a,
         analyticsLocations: r,
         petite: o = !1,
         className: d,
         allowRemovingIcon: u = !0
-    } = e, p = void 0 !== n ? n : t?.icon != null ? (0, A.Y)(t, 120) : null, {
-        analyticsLocations: g
-    } = (0, m.Ay)(r, h.A.GROUP_DM_ICON_EDITOR), f = o ? 32 : 64;
+    } = t, p = void 0 !== n ? n : e?.icon != null ? (0, m.Y)(e, 120) : null, {
+        analyticsLocations: v
+    } = (0, _.Ay)(r, h.A.GROUP_DM_ICON_EDITOR), A = o ? 32 : 64;
     return (0, i.jsxs)("div", {
-        className: a()(C.r2, d),
+        className: s()(y.r2, d),
         children: [(0, i.jsxs)(c.DUT, {
-            className: a()(C.zc, {
-                [C.ud]: o
+            className: s()(y.zc, {
+                [y.ud]: o
             }),
-            "aria-label": x.intl.string(x.t["0qPSMV"]),
-            onClick: () => (0, _.F5)(l, g),
+            "aria-label": g.intl.string(g.t["0qPSMV"]),
+            onClick: () => (0, f.F5)(l, v),
             children: [null != p ? (0, i.jsx)("img", {
                 src: p,
                 alt: "",
-                className: C.Dp
+                className: y.Dp
             }) : (0, i.jsx)("div", {
-                className: C.Pz,
+                className: y.Pz,
                 children: (0, i.jsx)(c.nFg, {
                     size: "custom",
-                    width: f,
-                    height: f,
+                    width: A,
+                    height: A,
                     color: "currentColor"
                 })
             }), (0, i.jsx)("div", {
-                className: C.qc,
+                className: y.qc,
                 children: (0, i.jsx)(c.R2l, {
                     color: "currentColor",
                     size: o ? "xs" : "refresh_sm"
@@ -65,9 +65,9 @@ function S(e) {
             })]
         }), null != p && u ? (0, i.jsx)(c.QWc, {
             variant: "critical",
-            onClick: s,
-            "aria-label": x.intl.string(x.t["uY+Nk/"]),
-            text: x.intl.string(x.t["uY+Nk/"]),
+            onClick: a,
+            "aria-label": g.intl.string(g.t["uY+Nk/"]),
+            text: g.intl.string(g.t["uY+Nk/"]),
             textVariant: "text-sm/medium",
             size: "sm",
             role: "button",
@@ -75,82 +75,82 @@ function S(e) {
         }) : null]
     })
 }
-let T = function(e) {
+let j = function(t) {
     let {
-        channelId: t,
+        channelId: e,
         onClose: n,
-        transitionState: s,
-        setHasPendingChanges: a,
-        closeOrShowDiscardChangesAlert: A,
-        location: T
-    } = e, N = (0, o.bG)([g.A], () => g.A.getChannel(t)), I = N?.name, v = (0, p.e5)(N), [y, b] = l.useState(I ?? ""), [j, R] = l.useState(void 0), M = void 0 !== j, {
-        analyticsLocations: D
-    } = (0, m.Ay)(T, h.A.GROUP_DM_EDIT_MODAL), O = {
-        channel_id: t,
-        channel_type: N?.type,
-        location: T,
-        location_stack: D,
+        transitionState: a,
+        setHasPendingChanges: s,
+        closeOrShowDiscardChangesAlert: m,
+        location: j
+    } = t, C = (0, o.bG)([v.A], () => v.A.getChannel(e)), I = C?.name, w = (0, p.e5)(C), [E, T] = l.useState(I ?? ""), [b, R] = l.useState(void 0), k = void 0 !== b, {
+        analyticsLocations: N
+    } = (0, _.Ay)(j, h.A.GROUP_DM_EDIT_MODAL), P = {
+        channel_id: e,
+        channel_type: C?.type,
+        location: j,
+        location_stack: N,
         old_name_set: "" !== I,
-        old_icon_set: N?.icon != null
+        old_icon_set: C?.icon != null
     };
     return (l.useEffect(() => {
-        a(y !== I || M)
-    }, [y, I, M, a]), (0, u.Ay)(() => (f.default.track(E.HAw.GDM_EDIT_INTERACTED, {
-        ...O,
+        s(E !== I || k)
+    }, [E, I, k, s]), (0, u.Ay)(() => (A.default.track(x.HAw.GDM_EDIT_INTERACTED, {
+        ...P,
         action: "opened"
     }), () => {
-        f.default.track(E.HAw.GDM_EDIT_INTERACTED, {
-            ...O,
+        A.default.track(x.HAw.GDM_EDIT_INTERACTED, {
+            ...P,
             action: "dismissed"
         })
-    })), null == N) ? null : (0, i.jsx)(m.f5, {
-        value: D,
+    })), null == C) ? null : (0, i.jsx)(_.f5, {
+        value: N,
         children: (0, i.jsx)("form", {
-            onSubmit: e => {
-                e.preventDefault();
-                let i = y !== I,
-                    l = void 0 !== j;
-                if (f.default.track(E.HAw.GDM_EDIT_INTERACTED, {
-                        ...O,
+            onSubmit: t => {
+                t.preventDefault();
+                let i = E !== I,
+                    l = void 0 !== b;
+                if (A.default.track(x.HAw.GDM_EDIT_INTERACTED, {
+                        ...P,
                         action: "saved",
-                        new_name_set: "" !== y,
-                        new_icon_set: (l ? j : N?.icon) != null,
+                        new_name_set: "" !== E,
+                        new_icon_set: (l ? b : C?.icon) != null,
                         name_changed: i,
                         icon_changed: l
                     }), i || l) {
-                    let e = {};
-                    i && (e.name = y), l && (e.icon = j), d.A.updateChannel(t, e, T).catch(_.XA)
+                    let t = {};
+                    i && (t.name = E), l && (t.icon = b), d.A.updateChannel(e, t, j).catch(f.XA)
                 }
                 n()
             },
             children: (0, i.jsx)(r.Modal, {
-                title: x.intl.string(x.t["5Q9+/L"]),
+                title: g.intl.string(g.t["5Q9+/L"]),
                 actions: [{
-                    text: x.intl.string(x.t["ETE/oC"]),
+                    text: g.intl.string(g.t["ETE/oC"]),
                     variant: "secondary",
-                    onClick: A
+                    onClick: m
                 }, {
-                    text: x.intl.string(x.t["R3BPH+"]),
+                    text: g.intl.string(g.t["R3BPH+"]),
                     variant: "primary",
                     type: "submit",
-                    disabled: y === I && !M
+                    disabled: E === I && !k
                 }],
-                onClose: () => Promise.resolve(A()),
-                transitionState: s,
+                onClose: () => Promise.resolve(m()),
+                transitionState: a,
                 children: (0, i.jsxs)("div", {
-                    className: C.jE,
-                    children: [(0, i.jsx)(S, {
-                        channel: N,
-                        previewIcon: j,
-                        onIconChange: e => R(e.imageUri),
+                    className: y.jE,
+                    children: [(0, i.jsx)(D, {
+                        channel: C,
+                        previewIcon: b,
+                        onIconChange: t => R(t.imageUri),
                         onIconRemove: () => R(null),
-                        analyticsLocations: D
+                        analyticsLocations: N
                     }), (0, i.jsx)(c.ksK, {
-                        "aria-label": x.intl.string(x.t.GEGW3P),
-                        placeholder: v ?? "",
-                        maxLength: E.Ign,
-                        value: y,
-                        onChange: b,
+                        "aria-label": g.intl.string(g.t.GEGW3P),
+                        placeholder: w ?? "",
+                        maxLength: x.Ign,
+                        value: E,
+                        onChange: T,
                         autoFocus: !0
                     })]
                 })

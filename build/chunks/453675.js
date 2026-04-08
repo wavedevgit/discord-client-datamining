@@ -4,8 +4,8 @@ n.d(t, {
 });
 var a = n(627968),
     i = n(64700),
-    l = n(397927),
-    s = n(198982),
+    s = n(397927),
+    l = n(198982),
     r = n(839214),
     o = n(98919),
     d = n(174768),
@@ -36,7 +36,7 @@ function x() {
     i.useEffect(() => {
         if (e) return d.A.addChangeListener(g), () => d.A.removeChangeListener(g)
     }, [g, e]);
-    let _ = i.useCallback(async () => {
+    let f = i.useCallback(async () => {
         let {
             isUploading: e
         } = h.getState();
@@ -51,7 +51,7 @@ function x() {
                 errorMessage: null
             })
         } catch (t) {
-            let e = new s.LG(t);
+            let e = new l.LG(t);
             h.setState({
                 errorMessage: e.getAnyErrorMessage()
             })
@@ -61,14 +61,14 @@ function x() {
             })
         }
     }, []);
-    return (0, a.jsxs)(l.nVY, {
+    return (0, a.jsxs)(s.nVY, {
         label: "Debug Logs Session",
         description: "Click to emit debug logs as you search in the Quick Switcher. Includes your search term and all results. For each result, includes the record id, associated names, and frecency scores.",
-        children: [(0, a.jsx)(l.po8, {
-            messageType: l.YCn.INFO,
+        children: [(0, a.jsx)(s.po8, {
+            messageType: s.YCn.INFO,
             children: "When you are done, please remember to upload the logs."
-        }), (0, a.jsxs)(l.ButtonGroup, {
-            children: [(0, a.jsx)(l.Button, {
+        }), (0, a.jsxs)(s.ButtonGroup, {
+            children: [(0, a.jsx)(s.Button, {
                 variant: e ? "critical-primary" : "primary",
                 onClick: () => h.setState({
                     isRecording: !e
@@ -78,7 +78,7 @@ function x() {
                 isUploading: t,
                 isSuccess: n,
                 errorMessage: r,
-                onClick: _,
+                onClick: f,
                 title: "Upload Session Logs"
             })]
         })]

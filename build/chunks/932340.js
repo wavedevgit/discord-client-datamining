@@ -6,7 +6,7 @@ var i = n(627968),
     r = n(64700),
     a = n(311907),
     l = n(397927),
-    s = n(966871),
+    s = n(189252),
     o = n(447404),
     d = n(186111),
     c = n(430452),
@@ -35,8 +35,8 @@ function E(e) {
         lastClipsSession: A.A.getLastClipsSession(),
         remindersEnabled: A.A.getSettings().remindersEnabled,
         hasAnyClipAnimations: A.A.hasAnyClipAnimations()
-    })), S = null != C && C.newClipIds.length > 0, v = (0, _.K)(e => e.clipsButtonRef), x = (0, _.K)(e => e.setClipsButtonRef), y = (0, a.bG)([d.A], () => d.A.hasLayers()), {
-        preventIdle: b,
+    })), S = null != C && C.newClipIds.length > 0, x = (0, _.K)(e => e.clipsButtonRef), v = (0, _.K)(e => e.setClipsButtonRef), b = (0, a.bG)([d.A], () => d.A.hasLayers()), {
+        preventIdle: y,
         allowIdle: O
     } = (0, o.o)("animation");
 
@@ -44,7 +44,7 @@ function E(e) {
         (0, l.mMO)(async () => {
             let {
                 default: e
-            } = await Promise.all([n.e("42784"), n.e("72897")]).then(n.bind(n, 543428));
+            } = await Promise.all([n.e("42784"), n.e("75758")]).then(n.bind(n, 543428));
             return t => (0, i.jsx)(e, {
                 ...t
             })
@@ -52,13 +52,13 @@ function E(e) {
             modalKey: p.nm
         })
     }
-    return (r.useEffect(() => (N ? b() : O(), () => O()), [N, b, O]), I && E) ? (0, i.jsxs)(i.Fragment, {
-        children: [null != v && t && T && S && !(0, l.ueM)() && !y && (0, i.jsx)(m.A, {
-            clipIconRef: v,
+    return (r.useEffect(() => (N ? y() : O(), () => O()), [N, y, O]), I && E) ? (0, i.jsxs)(i.Fragment, {
+        children: [null != x && t && T && S && !(0, l.ueM)() && !b && (0, i.jsx)(m.A, {
+            clipIconRef: x,
             lastClipsSession: C,
             onOpenClipsGallery: L
         }), (0, i.jsx)("div", {
-            ref: x,
+            ref: v,
             children: (0, i.jsx)(s.A, {
                 icon: l.xgA,
                 showBadge: f,

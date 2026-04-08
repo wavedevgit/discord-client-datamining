@@ -1,6 +1,6 @@
 /** chunk id: 184453 params = (module,exports,require) **/
 n.d(t, {
-    A: () => v
+    A: () => x
 });
 var i = n(627968),
     r = n(64700),
@@ -22,7 +22,7 @@ var i = n(627968),
     f = n(652215),
     C = n(654487),
     T = n(985018),
-    N = n(788427);
+    N = n(404260);
 
 function S(e) {
     let {
@@ -42,7 +42,7 @@ function S(e) {
                     color: "currentColor"
                 })
         }
-    })(t), [t]), T = r.useMemo(() => (0, g.t)(t), [t]), S = n === t, v = r.useCallback(() => {
+    })(t), [t]), T = r.useMemo(() => (0, g.t)(t), [t]), S = n === t, x = r.useCallback(() => {
         switch (t) {
             case I.GlobalDiscoveryTab.QUESTS:
                 return S && _.A.resetState(), m.default.track(f.HAw.DISCOVERY_QUEST_TAB_CLICKED, {
@@ -79,7 +79,7 @@ function S(e) {
         }
     }, [t, S]);
     return (0, i.jsxs)(o.DUT, {
-        onClick: v,
+        onClick: x,
         className: l()(N.pc, {
             [N.wH]: S
         }),
@@ -93,7 +93,7 @@ function S(e) {
         })]
     })
 }
-let v = function() {
+let x = function() {
     return (0, i.jsxs)("div", {
         className: N.kL,
         children: [(0, i.jsx)("div", {

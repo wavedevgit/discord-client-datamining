@@ -5,8 +5,8 @@ n.d(t, {
 });
 var a = n(627968),
     i = n(64700),
-    l = n(3745),
-    s = n(582754),
+    s = n(3745),
+    l = n(582754),
     r = n(397927),
     o = n(954571),
     d = n(966284),
@@ -16,14 +16,14 @@ function u(e) {
     let {
         sitekey: t,
         action: n,
-        onVerify: l
-    } = e, [s, u] = i.useState("uninitialized"), m = i.useCallback(e => {
+        onVerify: s
+    } = e, [l, u] = i.useState("uninitialized"), m = i.useCallback(e => {
         o.default.track(c.HAw.RECAPTCHA_MODAL_EVENT, {
             recaptcha_event_name: e
         })
     }, []), h = i.useCallback(e => {
-        m("handle-verify"), l(e)
-    }, [l, m]), x = i.useCallback(() => {
+        m("handle-verify"), s(e)
+    }, [s, m]), x = i.useCallback(() => {
         window?.grecaptcha?.enterprise?.ready(async () => {
             m("recaptcha-ready"), h(await (window?.grecaptcha).enterprise.execute(t, null != n ? {
                 action: n
@@ -33,8 +33,8 @@ function u(e) {
         u("running"), m("recaptcha-loading"), d.Z.loadRecaptchaScript(t, x, m)
     }, [t, x, m]);
     return i.useEffect(() => {
-        "uninitialized" === s && p()
-    }, [p, s]), i.useEffect(() => () => {
+        "uninitialized" === l && p()
+    }, [p, l]), i.useEffect(() => () => {
         m("recaptcha-unloading"), document.querySelectorAll('script[src*="recaptcha/enterprise.js"],.grecaptcha-badge').forEach(e => e.parentNode?.removeChild(e)), null != window.grecaptcha && delete window.grecaptcha
     }, [m]), (0, a.jsx)(r.y$y, {})
 }
@@ -42,8 +42,8 @@ let m = e => {
     let {
         theme: t,
         ...n
-    } = e, i = (0, s.Mw)(t) ? "dark" : "light";
-    return (0, a.jsx)(l.A, {
+    } = e, i = (0, l.Mw)(t) ? "dark" : "light";
+    return (0, a.jsx)(s.A, {
         sitekey: c._Ak,
         ...n,
         theme: i

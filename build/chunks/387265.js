@@ -4,8 +4,8 @@ n.d(t, {
 }), n(321073);
 var a = n(627968),
     i = n(64700),
-    l = n(554146),
-    s = n(397927),
+    s = n(554146),
+    l = n(397927),
     r = n(617617),
     o = n(256787),
     d = n(20439);
@@ -14,27 +14,27 @@ let c = i.memo(function(e) {
         className: t,
         content: n,
         onChange: c
-    } = e, u = l.M[n], {
+    } = e, u = s.M[n], {
         isDismissed: m,
         handleToggleDismissState: h
     } = (0, d.A)(u), [x, p] = i.useState(!1), g = i.useCallback(() => {
         c?.(n), h()
-    }, [c, h, n]), _ = i.useCallback(e => {
+    }, [c, h, n]), f = i.useCallback(e => {
         e.preventDefault(), p(!0), navigator.clipboard.writeText(n.toLowerCase())
     }, [n]);
     return (0, a.jsxs)(a.Fragment, {
-        children: [(0, a.jsxs)(s.BJc, {
+        children: [(0, a.jsxs)(l.BJc, {
             className: t,
             direction: "horizontal",
             align: "center",
-            children: [(0, a.jsx)(s.K0, {
+            children: [(0, a.jsx)(l.K0, {
                 size: "sm",
                 variant: "icon-only",
-                icon: x ? s.ODX : s.sjE,
-                onClick: _,
+                icon: x ? l.ODX : l.sjE,
+                onClick: f,
                 "aria-label": x ? "Copied" : "Copy"
-            }), (0, a.jsx)(s.dOG, {
-                label: `${n.toLowerCase()} (${l.M[n]})`,
+            }), (0, a.jsx)(l.dOG, {
+                label: `${n.toLowerCase()} (${s.M[n]})`,
                 description: (0, o.Zm)(u) ? function(e) {
                     let t = r.A.settings.userContent?.recurringDismissibleContentStates?.[e];
                     if (null == t) return null;
@@ -42,18 +42,18 @@ let c = i.memo(function(e) {
                         {
                             lastDismissedVersion: a,
                             lastDismissedAtMs: i,
-                            lastDismissedObjectId: l
+                            lastDismissedObjectId: s
                         } = t;
                     if (void 0 !== a && 0 !== a && n.push(`last_dismissed_version: ${a}`), void 0 !== i) {
                         let e = Number(i),
                             t = Number.isNaN(e) ? "n/a" : new Date(e).toLocaleString();
                         n.push(`last_dismissed_at: ${t}`)
                     }
-                    return (void 0 !== l && "0" !== l && n.push(`last_dismissed_object_id: ${l}`), 0 === n.length) ? null : n.join(", ")
+                    return (void 0 !== s && "0" !== s && n.push(`last_dismissed_object_id: ${s}`), 0 === n.length) ? null : n.join(", ")
                 }(u) : null,
                 checked: m,
                 onChange: g
             })]
-        }), (0, a.jsx)(s.cGx, {})]
+        }), (0, a.jsx)(l.cGx, {})]
     })
 })

@@ -24,10 +24,10 @@ var i = n(627968),
     T = n(826673),
     N = n(239365),
     S = n(178629),
-    v = n(701508),
-    x = n(979590),
-    y = n(153527),
-    b = n(783531),
+    x = n(701508),
+    v = n(979590),
+    b = n(153527),
+    y = n(783531),
     O = n(334465),
     L = n(318346),
     R = n(270051),
@@ -59,7 +59,7 @@ var i = n(627968),
     ei = n(758836),
     er = n(613057),
     ea = n(985018),
-    el = n(207573),
+    el = n(749504),
     es = n(92872),
     eo = n(880440),
     ed = n(522303),
@@ -161,7 +161,7 @@ function ep(e) {
     }, []);
     return (0, i.jsxs)(J.X.Provider, {
         value: u,
-        children: [a, (0, i.jsxs)(b.A, {
+        children: [a, (0, i.jsxs)(y.A, {
             onScroll: d,
             ref: u,
             children: [function() {
@@ -174,7 +174,7 @@ function ep(e) {
                     })
                 }
                 return t()
-            }(), (0, i.jsx)(x.A, {
+            }(), (0, i.jsx)(v.A, {
                 children: (0, i.jsxs)("div", {
                     className: l()(el.Qs, {
                         [el.HR]: p && !m && A !== H.NC.ALL
@@ -193,17 +193,17 @@ let eg = function(e) {
     let {
         topLevelRoute: t
     } = e, n = (0, s.zy)(), a = (0, s.W6)(), _ = r.useMemo(() => (0, O.B)(n.pathname, en.BVt.QUEST_HOME_DEPRECATED)?.isExact === !0, [n.pathname]), C = (0, c.bG)([E.A], () => E.A.getState("quests")), {
-        selectedTab: x,
-        onSelectTab: b,
+        selectedTab: v,
+        onSelectTab: y,
         tabs: D
     } = (0, ee.J)({
         withClaimedQuestsTab: !_
     });
     r.useLayoutEffect(() => {
-        _ && x === H.NC.CLAIMED && k.A.setState({
+        _ && v === H.NC.CLAIMED && k.A.setState({
             tab: H.NC.ALL
         })
-    }, [_, x]);
+    }, [_, v]);
     let {
         onScroll: j
     } = (0, S.G)(), B = V.A.getState().getUtmCurrentContext(), Y = (0, $.W)(e => e.registerAssetLoad), K = r.useRef(B);
@@ -221,10 +221,10 @@ let eg = function(e) {
                 utm_medium_current: e.utmMediumCurrent,
                 utm_campaign_current: e.utmCampaignCurrent,
                 utm_content_current: e.utmContentCurrent,
-                tab: x
+                tab: v
             }
         })
-    }, [x]);
+    }, [v]);
     let {
         enabled: q
     } = (0, R.Z)({
@@ -302,8 +302,8 @@ let eg = function(e) {
                 hash: void 0
             }), eo.current?.scrollToTop({
                 animate: !1
-            }), b(e)
-        }, [a, b]);
+            }), y(e)
+        }, [a, y]);
     return (0, i.jsx)(Q.M.Provider, {
         value: {
             onAssetLoadComplete: Y
@@ -314,14 +314,14 @@ let eg = function(e) {
                 onScroll: j,
                 onSelectTab: eu,
                 scrollerRef: eo,
-                selectedTab: x
-            }), [_, j, eu, eo, x]),
+                selectedTab: v
+            }), [_, j, eu, eo, v]),
             children: (0, i.jsx)("div", {
                 className: l()(el.kL, {
                     [el.KY]: !t
                 }),
                 children: _ ? (0, i.jsx)(ep, {
-                    renderBanner: () => (0, i.jsx)(v.A, {
+                    renderBanner: () => (0, i.jsx)(x.A, {
                         title: ea.intl.string(ea.t.z8YP2A),
                         titleColor: "always-white",
                         button: (0, i.jsx)(A.Button, {
@@ -334,8 +334,8 @@ let eg = function(e) {
                             onLoadComplete: Y
                         })
                     }),
-                    header: (0, i.jsx)(y.S, {
-                        selectedTabId: x,
+                    header: (0, i.jsx)(b.S, {
+                        selectedTabId: v,
                         handleTransition: eu,
                         tabs: D,
                         icon: A.r2v
@@ -358,7 +358,7 @@ let eg = function(e) {
                         })]
                     })
                 }) : (0, i.jsx)(ep, {
-                    renderBanner: () => x !== H.NC.PREVIEW_TOOL && (0, i.jsx)(Z.A, {
+                    renderBanner: () => v !== H.NC.PREVIEW_TOOL && (0, i.jsx)(Z.A, {
                         title: J,
                         subtitle: es,
                         buttons: q ? (0, i.jsxs)(A.ButtonGroup, {
@@ -399,8 +399,8 @@ let eg = function(e) {
                             })]
                         })
                     }),
-                    header: (0, i.jsx)(y.S, {
-                        selectedTabId: x,
+                    header: (0, i.jsx)(b.S, {
+                        selectedTabId: v,
                         handleTransition: eu,
                         tabs: D,
                         endContent: q ? (0, i.jsx)(P.SS, {

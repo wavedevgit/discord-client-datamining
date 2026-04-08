@@ -4,36 +4,36 @@ n.d(t, {
 });
 var a = n(627968),
     i = n(64700),
-    l = n(18051),
-    s = n(158954),
+    s = n(18051),
+    l = n(158954),
     r = n(827734),
     o = n(732955),
     d = n(397927);
 
 function c() {
-    let e = Object.keys(l).map(e => (0, a.jsx)(h, {
+    let e = Object.keys(s).map(e => (0, a.jsx)(h, {
         riveName: e
     }, e));
-    return (0, a.jsx)(s.ArX, {
+    return (0, a.jsx)(l.ArX, {
         style: {
             maxHeight: "100%"
         },
-        children: (0, a.jsxs)(s.BJc, {
+        children: (0, a.jsxs)(l.BJc, {
             gap: 24,
             padding: 8,
             style: {
                 boxSizing: "border-box"
             },
-            children: [(0, a.jsx)(s.DZT, {
+            children: [(0, a.jsx)(l.DZT, {
                 variant: "heading-lg/medium",
                 children: "Rive Inspector"
-            }), (0, a.jsx)(s.EYj, {
+            }), (0, a.jsx)(l.EYj, {
                 variant: "text-md/normal",
                 children: "Upload a .riv file to view the animation and interact with its data binding configuration."
-            }), (0, a.jsx)(u, {}), (0, a.jsx)(s.DZT, {
+            }), (0, a.jsx)(u, {}), (0, a.jsx)(l.DZT, {
                 variant: "heading-lg/medium",
                 children: "Rive Overrides"
-            }), (0, a.jsx)(s.EYj, {
+            }), (0, a.jsx)(l.EYj, {
                 variant: "text-md/normal",
                 children: "Upload a .riv file to replace an existing Rive animation in the app with the new one. Useful for previewing updated versions of existing animations before uploading them via the Rive pipeline."
             }), e]
@@ -42,12 +42,12 @@ function c() {
 }
 
 function u() {
-    let [e, t] = i.useState(null), [n, l] = i.useState(null), [r, o] = i.useState(null), [c, u] = i.useState([]), x = i.useRef(null), [p, g] = i.useState(400), [_, f] = i.useState(400), v = i.useCallback(() => {
+    let [e, t] = i.useState(null), [n, s] = i.useState(null), [r, o] = i.useState(null), [c, u] = i.useState([]), x = i.useRef(null), [p, g] = i.useState(400), [f, v] = i.useState(400), _ = i.useCallback(() => {
         setTimeout(() => {
-            o(x.current?.getProperties() ?? {}), u(x.current?.getArtboards() ?? []), l({})
+            o(x.current?.getProperties() ?? {}), u(x.current?.getArtboards() ?? []), s({})
         }, 1e3)
     }, []), b = i.useCallback((e, t) => {
-        null != n && l(n => ({
+        null != n && s(n => ({
             ...n,
             [e]: {
                 type: r?.[e]?.type,
@@ -55,9 +55,9 @@ function u() {
             }
         }))
     }, [r, n]), j = i.useCallback(e => {
-        o(null), l(null), t(e)
+        o(null), s(null), t(e)
     }, []);
-    return (0, a.jsxs)(s.BJc, {
+    return (0, a.jsxs)(l.BJc, {
         gap: 16,
         children: [(0, a.jsx)(h, {
             riveName: "Rive inspector",
@@ -65,18 +65,18 @@ function u() {
         }), null != e && (0, a.jsx)("div", {
             style: {
                 width: p,
-                height: _
+                height: f
             },
             children: (0, a.jsx)(d._7m, {
                 src: e,
                 ref: x,
-                onLoad: v,
+                onLoad: _,
                 dynamicDataBinding: n ?? {}
             })
-        }), null != e && null == n ? (0, a.jsx)(s.y$y, {}) : null, null != n && (0, a.jsxs)(s.BJc, {
-            children: [(0, a.jsxs)(s.BJc, {
+        }), null != e && null == n ? (0, a.jsx)(l.y$y, {}) : null, null != n && (0, a.jsxs)(l.BJc, {
+            children: [(0, a.jsxs)(l.BJc, {
                 gap: 8,
-                children: [(0, a.jsx)(s.DZT, {
+                children: [(0, a.jsx)(l.DZT, {
                     variant: "heading-lg/medium",
                     children: "Dimensions"
                 }), (0, a.jsx)(d.ksK, {
@@ -87,12 +87,12 @@ function u() {
                 }), (0, a.jsx)(d.ksK, {
                     type: "number",
                     label: "height",
-                    value: _.toString(),
-                    onChange: e => f(parseInt(e))
+                    value: f.toString(),
+                    onChange: e => v(parseInt(e))
                 })]
-            }), (0, a.jsxs)(s.BJc, {
+            }), (0, a.jsxs)(l.BJc, {
                 gap: 8,
-                children: [(0, a.jsx)(s.DZT, {
+                children: [(0, a.jsx)(l.DZT, {
                     variant: "heading-lg/medium",
                     children: "Data Binding"
                 }), Object.keys(r ?? {}).map(e => (0, a.jsx)(m, {
@@ -112,34 +112,34 @@ function m(e) {
         property: t,
         type: n,
         value: i,
-        onChange: l,
+        onChange: s,
         artboards: o
     } = e;
     return "string" === n ? (0, a.jsx)(d.ksK, {
         label: t,
         value: i,
-        onChange: e => l(e)
+        onChange: e => s(e)
     }) : "number" === n ? (0, a.jsx)(d.ksK, {
         type: "number",
         label: t,
         value: i,
-        onChange: e => l(parseInt(e))
-    }) : "boolean" === n ? (0, a.jsx)(s.dOG, {
+        onChange: e => s(parseInt(e))
+    }) : "boolean" === n ? (0, a.jsx)(l.dOG, {
         label: t,
         checked: i,
-        onChange: e => l(e)
-    }) : "trigger" === n ? (0, a.jsx)(s.$nd, {
+        onChange: e => s(e)
+    }) : "trigger" === n ? (0, a.jsx)(l.$nd, {
         text: `Trigger ${t}`,
-        onClick: () => l(Number.isSafeInteger(i) ? i + 1 : 1)
+        onClick: () => s(Number.isSafeInteger(i) ? i + 1 : 1)
     }) : "image" === n ? (0, a.jsx)(d.ksK, {
         label: t,
         value: i,
-        onChange: e => l(e)
+        onChange: e => s(e)
     }) : "color" === n ? (0, a.jsx)(d.ZiE, {
         selectionMode: "single",
         label: t,
         value: i,
-        onSelectionChange: e => l(e),
+        onSelectionChange: e => s(e),
         closeOnSelect: !0,
         placeholder: "Select a color...",
         options: Object.entries(r.A.colors).map(e => {
@@ -154,7 +154,7 @@ function m(e) {
         selectionMode: "single",
         label: t,
         value: i,
-        onSelectionChange: e => l(e),
+        onSelectionChange: e => s(e),
         closeOnSelect: !0,
         placeholder: "Select an artboard...",
         options: o.map(e => ({
@@ -169,12 +169,12 @@ function h(e) {
     let {
         riveName: t,
         onRiveLoad: n
-    } = e, r = l[t]?.riveSrc, c = null == r, u = i.useRef(null), m = (0, d.GyQ)(r);
-    return (0, a.jsxs)(s.BJc, {
+    } = e, r = s[t]?.riveSrc, c = null == r, u = i.useRef(null), m = (0, d.GyQ)(r);
+    return (0, a.jsxs)(l.BJc, {
         gap: 8,
         children: [(0, a.jsx)("label", {
             children: t
-        }), (0, a.jsxs)(s.BJc, {
+        }), (0, a.jsxs)(l.BJc, {
             justify: "space-between",
             direction: "horizontal",
             align: "center",

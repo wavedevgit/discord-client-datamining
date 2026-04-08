@@ -12,7 +12,7 @@ var i = n(627968),
     c = n(49999),
     u = n(835002),
     A = n(985018),
-    h = n(616186);
+    h = n(945771);
 
 function _() {
     let [e, t] = (0, l.kn)([a.M.RESTRICTED_ACCOUNTS_SETTING_NOTICE]);

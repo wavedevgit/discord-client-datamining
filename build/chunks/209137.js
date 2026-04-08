@@ -4,8 +4,8 @@ n.d(t, {
 });
 var a = n(64700),
     i = n(735438),
-    l = n(311907),
-    s = n(622543),
+    s = n(311907),
+    l = n(622543),
     r = n(287809),
     o = n(816176),
     d = n(501838),
@@ -16,6 +16,6 @@ function u(e) {
         location: t
     } = e, n = (0, o.d)({
         location: t
-    }), u = (0, l.bG)([r.default], () => r.default.getCurrentUser()), m = (0, l.bG)([s.A], () => null != u ? s.A.getFirstWishlistId(u.id) : null), h = (0, c.i)(e => e.recommendationApplicationIds), x = (0, d.rY)(), p = (0, d.qx)();
+    }), u = (0, s.bG)([r.default], () => r.default.getCurrentUser()), m = (0, s.bG)([l.A], () => null != u ? l.A.getFirstWishlistId(u.id) : null), h = (0, c.i)(e => e.recommendationApplicationIds), x = (0, d.rY)(), p = (0, d.qx)();
     return a.useMemo(() => null != h || null == m && n ? (0, i.uniq)([...h ?? [], ...p, ...x]).sort() : [], [n, m, p, x, h])
 }

@@ -2,8 +2,8 @@
 t.d(n, {
     _: () => k
 });
-var i = t(627968),
-    l = t(64700),
+var l = t(627968),
+    i = t(64700),
     r = t(284009),
     s = t.n(r),
     a = t(735438),
@@ -18,10 +18,10 @@ var i = t(627968),
     S = t(173834),
     x = t(412260),
     T = t(380083),
-    I = t(954571),
-    P = t(203982),
-    h = t(45938),
-    A = t(615396),
+    P = t(954571),
+    h = t(203982),
+    A = t(45938),
+    I = t(615396),
     g = t(937008),
     f = t(156312),
     j = t(491057),
@@ -31,8 +31,8 @@ var i = t(627968),
     N = t(615310),
     O = t(216641),
     y = t(921925),
-    v = t(652215),
-    b = t(49999);
+    b = t(652215),
+    v = t(49999);
 
 function k(e) {
     let n, {
@@ -64,35 +64,35 @@ function k(e) {
             isSendingMessage: ee,
             sendGiftMessage: en,
             claimableRewards: et,
-            selectedGiftingPromotionReward: ei
+            selectedGiftingPromotionReward: el
         } = (0, g.Pv)(),
         {
-            confirmationFooter: el
+            confirmationFooter: ei
         } = (0, j.cG)(),
         er = (0, _.px)(Y, X, et),
         es = (0, _.Mq)(Y),
-        ea = (0, m.Mv)(ei, !1),
+        ea = (0, m.Mv)(el, !1),
         eo = (0, u.bG)([x.A], () => {
             let e = x.A.getMarketingComponentByType(o.C.GIFT_REMINDER_NAGBAR);
             return null == e || "giftReminderNagbar" !== e.properties.properties.oneofKind ? null : e.properties.properties.giftReminderNagbar
         }),
         eu = (0, O.g)(H, B),
-        ed = X && null != ei && null != ea && es;
+        ed = X && null != el && null != ea && es;
     s()(null != Y, "Expected plan to selected"), s()(null != W, "Expected selectedSkuId"), s()(null != Z, "Step should be set");
-    let ec = l.useCallback(() => {
+    let ec = i.useCallback(() => {
         r(), U?.()
     }, [r, U]);
     (0, p.Ay)(() => {
-        q && I.default.track(v.HAw.PREMIUM_GROUP_PURCHASE_CONFIRMATION_VIEWED, {
+        q && P.default.track(b.HAw.PREMIUM_GROUP_PURCHASE_CONFIRMATION_VIEWED, {
             has_updated_subscription: null != K,
             has_any_premium_group: K?.hasAnyPremiumGroup ?? !1,
             subscription_id: K?.id
         })
-    }), l.useEffect(() => {
+    }), i.useEffect(() => {
         function e() {
             if (q)
                 if (null != K && K.hasAnyPremiumGroup) {
-                    I.default.track(v.HAw.PREMIUM_GROUP_PURCHASE_FRIEND_SELECTOR_OPENED, {
+                    P.default.track(b.HAw.PREMIUM_GROUP_PURCHASE_FRIEND_SELECTOR_OPENED, {
                         subscription_id: K.id
                     });
                     let e = (0, a.uniqueId)("premium-group-purchase-flow-modal");
@@ -100,40 +100,40 @@ function k(e) {
                         let {
                             default: e
                         } = await t.e("29225").then(t.bind(t, 773486));
-                        return n => (0, i.jsx)(e, {
+                        return n => (0, l.jsx)(e, {
                             ...n,
                             subscription: K,
                             isFromPurchaseFlow: !0,
                             onClose: async () => {
-                                P._.dispatch(v.jej.PREMIUM_GROUP_PURCHASE_FLOW_COMPLETED), await n.onClose()
+                                h._.dispatch(b.jej.PREMIUM_GROUP_PURCHASE_FLOW_COMPLETED), await n.onClose()
                             }
                         })
                     }, {
                         onCloseRequest: () => {
-                            P._.dispatch(v.jej.PREMIUM_GROUP_PURCHASE_FLOW_COMPLETED), (0, c.OoC)(e)
+                            h._.dispatch(b.jej.PREMIUM_GROUP_PURCHASE_FLOW_COMPLETED), (0, c.OoC)(e)
                         },
                         modalKey: e
                     })
-                } else I.default.track(v.HAw.PREMIUM_GROUP_PURCHASE_FRIEND_SELECTOR_SKIPPED, {
+                } else P.default.track(b.HAw.PREMIUM_GROUP_PURCHASE_FRIEND_SELECTOR_SKIPPED, {
                     has_updated_subscription: null != K,
                     has_any_premium_group: K?.hasAnyPremiumGroup ?? !1
-                }), P._.dispatch(v.jej.PREMIUM_GROUP_PURCHASE_FLOW_COMPLETED)
+                }), h._.dispatch(b.jej.PREMIUM_GROUP_PURCHASE_FLOW_COMPLETED)
         }
-        return P._.subscribe(v.jej.WOW_MOMENT_CONFIRMATION_MODAL_CLOSED, e), () => {
-            P._.unsubscribe(v.jej.WOW_MOMENT_CONFIRMATION_MODAL_CLOSED, e)
+        return h._.subscribe(b.jej.WOW_MOMENT_CONFIRMATION_MODAL_CLOSED, e), () => {
+            h._.unsubscribe(b.jej.WOW_MOMENT_CONFIRMATION_MODAL_CLOSED, e)
         }
-    }, [q, K]), l.useEffect(() => {
-        !X || null == Q || null == J || $ || ee || (0, h.Ik)(Q) || en({
+    }, [q, K]), i.useEffect(() => {
+        !X || null == Q || null == J || $ || ee || (0, A.Ik)(Q) || en({
             onSubscriptionConfirmation: U
         })
-    }, [en, X, Q, J, $, ee, U]), l.useEffect(() => {
+    }, [en, X, Q, J, $, ee, U]), i.useEffect(() => {
         er && null != eo && (0, E.$l)(d.M.GIFTING_PROMOTION_REMINDER, (0, S.p)(), {
-            dismissAction: b.i.INDIRECT_ACTION
+            dismissAction: v.i.INDIRECT_ACTION
         })
     }, [eo, er]);
     let ep = null != L ? T.Rs.DEEPLINK_TO_DESKTOP_APP : void 0;
     if (null != w) n = w(Y, ec, K);
-    else if (X) n = (0, i.jsx)(T.fw, {
+    else if (X) n = (0, l.jsx)(T.fw, {
         planId: Y.id,
         onClose: ec
     });
@@ -143,23 +143,23 @@ function k(e) {
         } : {
             followupSKUInfo: G,
             startingPremiumSubscriptionPlanId: z.current,
-            isDowngrade: null != F && (0, A.vT)(F, Y.id, k)
+            isDowngrade: null != F && (0, I.vT)(F, Y.id, k)
         };
-        n = (0, i.jsx)(T.Ay, {
+        n = (0, l.jsx)(T.Ay, {
             planId: Y.id,
             onClose: ec,
             paymentSourceType: eu,
-            hideClose: null != el,
+            hideClose: null != ei,
             startingFractionalPremiumEndsAt: V.current,
             customCTAType: ep,
             ...e
         })
     }
-    return (0, i.jsxs)(i.Fragment, {
-        children: [(0, i.jsxs)(R.dZ, {
-            children: [(0, i.jsx)(y.A, {}), n]
-        }), null != el && el, ed && null != ei && (0, i.jsx)(M.A, {
-            rewardSkuId: ei,
+    return (0, l.jsxs)(l.Fragment, {
+        children: [(0, l.jsxs)(R.dZ, {
+            children: [(0, l.jsx)(y.A, {}), n]
+        }), null != ei && ei, ed && null != el && (0, l.jsx)(M.A, {
+            rewardSkuId: el,
             onClose: ec
         })]
     })

@@ -1,5 +1,5 @@
 /** chunk id: 967024 params = (module,exports,require) **/
-t.r(e.exports = {
+l.r(e.exports = {
     tile: "tile__4e9aa",
     square: "square__4e9aa",
     bar: "bar__4e9aa",

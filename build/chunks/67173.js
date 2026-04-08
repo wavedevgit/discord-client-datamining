@@ -24,11 +24,11 @@ var i = n(627968),
     T = n(18437),
     N = n(7832),
     S = n(325087),
-    v = n(398025),
-    x = n(652215),
-    y = n(49999),
-    b = n(985018),
-    O = n(414939);
+    x = n(398025),
+    v = n(652215),
+    b = n(49999),
+    y = n(985018),
+    O = n(449014);
 let L = Math.ceil(Math.sqrt(115200)),
     R = (L - 240) / 2,
     P = function(e) {
@@ -42,9 +42,9 @@ let L = Math.ceil(Math.sqrt(115200)),
             let e = (0, A.useHasAnyModalOpen)(),
                 t = (0, c.bG)([f.A], () => f.A.quests.size > 0),
                 n = (0, c.bG)([I.default], () => I.default.getCurrentUser()),
-                [i, a] = (0, E.kn)(!e && t && null != n ? [u.M.QUEST_HOME_ENTRYPOINT_ONBOARDING] : [], y.m.PRIVATE_CHANNELS_LIST, !0),
+                [i, a] = (0, E.kn)(!e && t && null != n ? [u.M.QUEST_HOME_ENTRYPOINT_ONBOARDING] : [], b.m.PRIVATE_CHANNELS_LIST, !0),
                 l = r.useCallback(() => {
-                    a(y.i.TAKE_ACTION)
+                    a(b.i.TAKE_ACTION)
                 }, [a]),
                 s = i === u.M.QUEST_HOME_ENTRYPOINT_ONBOARDING,
                 o = (0, g.JZ)(u.M.QUEST_HOME_ENTRYPOINT_ONBOARDING);
@@ -152,16 +152,16 @@ let L = Math.ceil(Math.sqrt(115200)),
                 icon: _.r2v,
                 listItemRef: a,
                 onClick: G,
-                route: x.BVt.QUEST_HOME,
+                route: v.BVt.QUEST_HOME,
                 selected: t,
-                text: b.intl.string(b.t.JALI2K),
+                text: y.intl.string(y.t.JALI2K),
                 ...n,
                 children: [j && (0, i.jsxs)(i.Fragment, {
                     children: [(0, i.jsx)("div", {
                         className: O.qS,
                         children: (0, i.jsx)(d.Exy, {
                             type: {
-                                text: b.intl.string(b.t.y2b7CA)
+                                text: y.intl.string(y.t.y2b7CA)
                             },
                             variant: "expressive"
                         })
@@ -179,14 +179,14 @@ let L = Math.ceil(Math.sqrt(115200)),
                     }), (0, i.jsx)(s.animated.div, {
                         className: O.ys,
                         style: {
-                            opacity: (0, v.a)(k.to({
+                            opacity: (0, x.a)(k.to({
                                 range: [0, 1],
                                 output: [0, .5]
                             }))
                         }
                     }), (0, i.jsx)(_.LpS, {
                         className: O.qS,
-                        text: b.intl.string(b.t.y2b7CA),
+                        text: y.intl.string(y.t.y2b7CA),
                         color: _.LU0.colors.BACKGROUND_BRAND.css
                     })]
                 })]

@@ -5,9 +5,9 @@ n.d(t, {
 var a = n(627968);
 n(64700);
 var i = n(397927),
-    l = n(890687),
-    s = n(985018),
-    r = n(133973);
+    s = n(890687),
+    l = n(985018),
+    r = n(408162);
 
 function o(e) {
     let {
@@ -40,14 +40,14 @@ function o(e) {
 let d = function(e) {
     let {
         quest: t
-    } = e, n = (0, l.aC)(t);
+    } = e, n = (0, s.aC)(t);
     if (0 === n.length) return null;
     let i = n.at(0);
-    return i === s.intl.string(s.t.BV6xDm) ? (0, a.jsx)(o, {
-        header: s.intl.string(s.t.onh6ct),
-        children: s.intl.string(s.t.arVHRA)
-    }) : i === s.intl.string(s.t.MFGxFM) ? (0, a.jsx)(o, {
-        header: s.intl.string(s.t.JPihZA),
-        children: s.intl.string(s.t.MFGxFM)
+    return i === l.intl.string(l.t.BV6xDm) ? (0, a.jsx)(o, {
+        header: l.intl.string(l.t.onh6ct),
+        children: l.intl.string(l.t.arVHRA)
+    }) : i === l.intl.string(l.t.MFGxFM) ? (0, a.jsx)(o, {
+        header: l.intl.string(l.t.JPihZA),
+        children: l.intl.string(l.t.MFGxFM)
     }) : null
 }

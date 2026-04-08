@@ -28,7 +28,7 @@ class E extends r.PureComponent {
         (0, o.L3)(e, async () => {
             let {
                 default: e
-            } = await Promise.all([n.e("97262"), n.e("32418"), n.e("84821")]).then(n.bind(n, 668569));
+            } = await Promise.all([n.e("97262"), n.e("32418"), n.e("54631")]).then(n.bind(n, 668569));
             return n => (0, i.jsx)(e, {
                 ...n,
                 user: t

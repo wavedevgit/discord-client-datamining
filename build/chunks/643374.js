@@ -4,17 +4,17 @@ n.d(t, {
 });
 var a = n(627968),
     i = n(64700),
-    l = n(503698),
-    s = n.n(l),
+    s = n(503698),
+    l = n.n(s),
     r = n(397927),
     o = n(817363),
-    d = n(386014);
+    d = n(700665);
 
 function c(e) {
     let {
         filename: t,
         className: n,
-        filters: l,
+        filters: s,
         buttonText: c,
         placeholder: u,
         onFileSelect: m
@@ -24,7 +24,7 @@ function c(e) {
         within: !0,
         children: (0, a.jsxs)(r.FON, {
             ref: h,
-            className: s()(n, d.U),
+            className: l()(n, d.U),
             children: [(0, a.jsx)(r.JMY, {
                 size: "sm"
             }), (0, a.jsx)(r.Text, {
@@ -44,7 +44,7 @@ function c(e) {
                     m(e.currentTarget.files?.[0])
                 },
                 multiple: !1,
-                filters: l
+                filters: s
             })]
         })
     })

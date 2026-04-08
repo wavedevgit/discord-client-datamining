@@ -6,7 +6,7 @@ var i = n(627968),
     l = n(64700),
     r = n(503698),
     s = n.n(r),
-    a = n(817628);
+    a = n(584045);
 class o extends l.PureComponent {
     static defaultProps = {
         tag: "div",

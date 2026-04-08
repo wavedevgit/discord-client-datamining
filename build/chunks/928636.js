@@ -23,10 +23,10 @@ var i, r = n(627968),
     T = n(672979),
     N = n(90644),
     S = n(960076),
-    v = n(847177),
-    x = n(359549),
-    y = n(793574),
-    b = n(688810),
+    x = n(847177),
+    v = n(359549),
+    b = n(793574),
+    y = n(688810),
     O = n(139286),
     L = n(362490),
     R = n(627363),
@@ -60,7 +60,7 @@ var i, r = n(627968),
     ea = n(281489),
     el = n(652215),
     es = n(985018),
-    eo = n(630968);
+    eo = n(103781);
 let ed = [14, 14, 12, 12, 10, 8, 6],
     ec = function(e) {
         let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : null;
@@ -168,7 +168,7 @@ let ed = [14, 14, 12, 12, 10, 8, 6],
             user: n
         }), {
             newestAnalyticsLocation: o
-        } = (0, b.Ay)();
+        } = (0, y.Ay)();
         if (a && null != i) {
             let {
                 isJoining: e,
@@ -214,7 +214,7 @@ let ed = [14, 14, 12, 12, 10, 8, 6],
             name: a
         } = t, {
             data: l
-        } = (0, R.YY)(i), s = (0, x.A)({
+        } = (0, R.YY)(i), s = (0, v.A)({
             application: l,
             analyticsLocations: n
         }), o = (0, G.JZ)(u.M.CLOUD_PLAY_NEW_BADGE), d = (0, W.L)(i);
@@ -425,7 +425,7 @@ eT.Header = eC, eT.Body = e => {
         activity: l
     } = e, {
         analyticsLocations: s
-    } = (0, b.Ay)(y.A.NOW_PLAYING_ITEM_GAME_SECTION);
+    } = (0, y.Ay)(b.A.NOW_PLAYING_ITEM_GAME_SECTION);
     return (0, r.jsxs)(eh, {
         children: [(0, r.jsxs)("div", {
             className: eo.yn,
@@ -453,7 +453,7 @@ eT.Header = eC, eT.Body = e => {
         user: a
     } = e, {
         analyticsLocations: l
-    } = (0, b.Ay)(y.A.NOW_PLAYING_ITEM_RICH_PRESENCE_SECTION), {
+    } = (0, y.Ay)(b.A.NOW_PLAYING_ITEM_RICH_PRESENCE_SECTION), {
         data: o
     } = (0, R.YY)(t.application_id), {
         assets: d,
@@ -465,7 +465,7 @@ eT.Header = eC, eT.Body = e => {
     } = ep({
         activity: t,
         user: a
-    }), _ = (0, j.C4)(o)?.src ?? n(960648), m = (0, x.A)({
+    }), _ = (0, j.C4)(o)?.src ?? n(960648), m = (0, v.A)({
         application: o,
         analyticsLocations: l
     });
@@ -639,7 +639,7 @@ eT.Header = eC, eT.Body = e => {
             color: "always-white",
             children: (0, H.CT)(d)
         })]
-    }), A = (0, v.A)(t, i)?.activityText ?? es.intl.string(es.t.eXan7B), h = (0, k.A)({
+    }), A = (0, x.A)(t, i)?.activityText ?? es.intl.string(es.t.eXan7B), h = (0, k.A)({
         userId: n.id,
         guildId: l
     }), m = (0, V.a)({
@@ -677,7 +677,7 @@ eT.Header = eC, eT.Body = e => {
         A = (0, g.p)(),
         {
             analyticsLocations: h
-        } = (0, b.Ay)();
+        } = (0, y.Ay)();
     if (null == d) return null;
     let m = P.A.getApplication(d);
     if (null == m) return null;

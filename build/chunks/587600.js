@@ -1,15 +1,16 @@
 /** chunk id: 587600 params = (module,exports,require) **/
+"use strict";
 n.d(t, {
-    C5: () => d,
-    Sk: () => o,
-    yX: () => l,
-    yg: () => _
+    C5: () => o,
+    Sk: () => s,
+    yX: () => a,
+    yg: () => u
 }), n(321073);
-var a = n(575593),
+var r = n(575593),
     i = n(392107),
-    r = n(546145);
+    l = n(546145);
 
-function l(e, t) {
+function a(e, t) {
     let n = {};
     void 0 !== e.pendingBanner && (n.banner = e.pendingBanner), null != e.pendingBio && (n.bio = e.pendingBio), null != e.pendingPronouns && (n.pronouns = e.pendingPronouns), void 0 !== e.pendingAccentColor && (n.accent_color = e.pendingAccentColor), void 0 !== e.pendingThemeColors && (n.theme_colors = e.pendingThemeColors);
     let i = function(e, t) {
@@ -18,23 +19,23 @@ function l(e, t) {
             pendingProfileFrame: i
         } = e;
         if (void 0 === n && void 0 === i) return {};
-        let l = (0, r.A)(t),
-            o = [...l?.collectibles ?? []];
-        return void 0 !== n && (o = o.filter(e => {
+        let a = (0, l.A)(t),
+            s = [...a?.collectibles ?? []];
+        return void 0 !== n && (s = s.filter(e => {
             let {
                 type: t
             } = e;
-            return t !== a.R.PROFILE_EFFECT
-        }), null !== n && o.push({
+            return t !== r.R.PROFILE_EFFECT
+        }), null !== n && s.push({
             skuId: n.skuId,
-            type: a.R.PROFILE_EFFECT
-        })), void 0 !== i && (o = o.filter(e => {
+            type: r.R.PROFILE_EFFECT
+        })), void 0 !== i && (s = s.filter(e => {
             let {
                 type: t
             } = e;
-            return t !== a.R.PROFILE_FRAME
-        }), null !== i && o.push(i)), {
-            collectibles_sku_ids: o.map(e => {
+            return t !== r.R.PROFILE_FRAME
+        }), null !== i && s.push(i)), {
+            collectibles_sku_ids: s.map(e => {
                 let {
                     skuId: t
                 } = e;
@@ -45,7 +46,7 @@ function l(e, t) {
     return void 0 !== i.collectibles_sku_ids && (n.collectibles_sku_ids = i.collectibles_sku_ids), n
 }
 
-function o(e) {
+function s(e) {
     let t = {};
     if (void 0 !== e.pendingGlobalName && (t.globalName = e.pendingGlobalName), void 0 !== e.pendingNameplate && (t.nameplate = e.pendingNameplate), void 0 !== e.pendingAvatar) {
         let {
@@ -56,7 +57,7 @@ function o(e) {
     return void 0 !== e.pendingAvatarDecoration && (t.avatarDecoration = e.pendingAvatarDecoration), void 0 !== e.pendingDisplayNameStyles && (t.displayNameStyles = e.pendingDisplayNameStyles), t
 }
 
-function d(e) {
+function o(e) {
     let t = {};
     if (void 0 !== e.pendingAvatar) {
         let {
@@ -67,7 +68,7 @@ function d(e) {
     return void 0 !== e.pendingNickname && (t.nick = e.pendingNickname ?? ""), void 0 !== e.pendingAvatarDecoration && (t.avatarDecoration = e.pendingAvatarDecoration), void 0 !== e.pendingNameplate && (t.nameplate = e.pendingNameplate), void 0 !== e.pendingDisplayNameStyles && (t.displayNameStyles = e.pendingDisplayNameStyles), t
 }
 
-function _(e) {
+function u(e) {
     let t = {};
     return void 0 !== e.pendingPrimaryGuildId && (t.primaryGuildId = e.pendingPrimaryGuildId), t
 }

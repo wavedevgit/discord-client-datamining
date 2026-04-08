@@ -19,8 +19,8 @@ var i = n(627968),
     g = n(652215),
     E = n(838541),
     I = n(985018),
-    f = n(485473),
-    C = n(830684);
+    f = n(530202),
+    C = n(782691);
 let T = r.memo(function(e) {
     let {
         channel: t
@@ -34,28 +34,28 @@ let T = r.memo(function(e) {
     } = (0, s.cf)([m.A], () => ({
         isBlocked: null != T && m.A.isBlockedForMessage(T),
         isIgnored: null != T && m.A.isIgnoredForMessage(T)
-    }), [T]), v = (0, s.bG)([_.A], () => _.A.can(g.xBc.MANAGE_MESSAGES, t)), x = h.gs.useSetting(), {
-        content: y
+    }), [T]), x = (0, s.bG)([_.A], () => _.A.can(g.xBc.MANAGE_MESSAGES, t)), v = h.gs.useSetting(), {
+        content: b
     } = r.useMemo(() => T?.content != null && "" !== T.content ? (0, c.Ay)(T, {
         formatInline: !0,
         noStyleAndInteraction: !0
     }) : {
         content: null
-    }, [T]), b = null;
-    if (a) b = (0, i.jsx)(o.Text, {
+    }, [T]), y = null;
+    if (a) y = (0, i.jsx)(o.Text, {
         className: f.G4,
         variant: "text-sm/normal",
         color: "text-muted",
         children: I.intl.string(I.t.BZHld2)
     });
     else if (n)
-        if (null != T && N) b = (0, i.jsx)(o.Text, {
+        if (null != T && N) y = (0, i.jsx)(o.Text, {
             className: f.G4,
             variant: "text-sm/normal",
             color: "text-muted",
             children: I.intl.string(I.t["WPe+xL"])
         });
-        else if (null != T && S) b = (0, i.jsx)(o.Text, {
+        else if (null != T && S) y = (0, i.jsx)(o.Text, {
         className: f.G4,
         variant: "text-sm/normal",
         color: "text-muted",
@@ -65,12 +65,12 @@ let T = r.memo(function(e) {
         let {
             contentPlaceholder: e,
             renderedContent: t
-        } = (0, u.o)(T, y, N, S, l()(f.BK, C.tZ), {
+        } = (0, u.o)(T, b, N, S, l()(f.BK, C.tZ), {
             leadingIconClass: f.AF,
             trailingIconClass: f.AF,
             iconSize: E.eJ
         });
-        b = null != t ? (0, i.jsx)(o.Text, {
+        y = null != t ? (0, i.jsx)(o.Text, {
             variant: "text-sm/normal",
             color: "text-muted",
             className: f.BK,
@@ -82,18 +82,18 @@ let T = r.memo(function(e) {
             className: f.G4,
             children: e
         })
-    } else b = (0, i.jsx)(o.Text, {
+    } else y = (0, i.jsx)(o.Text, {
         className: f.G4,
         variant: "text-sm/normal",
         color: "text-muted",
         children: I.intl.string(I.t["0KfDxM"])
     });
-    else b = null;
+    else y = null;
     return (0, i.jsx)(A.Bs.Provider, {
-        value: (0, d.A)(x, v),
+        value: (0, d.A)(v, x),
         children: (0, i.jsx)(o.M1G, {
             className: f.JY,
-            children: b
+            children: y
         })
     })
 })

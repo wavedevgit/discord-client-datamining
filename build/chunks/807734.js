@@ -4,8 +4,8 @@ n.d(t, {
 });
 var a = n(64700),
     i = n(311907),
-    l = n(847599),
-    s = n(787301),
+    s = n(847599),
+    l = n(787301),
     r = n(295972),
     o = n(36149),
     d = n(677501),
@@ -21,20 +21,20 @@ let h = function(e) {
     } = e, {
         methods: p,
         loading: g
-    } = (0, i.cf)([s.A], () => ({
-        methods: s.A.methods,
-        loading: s.A.loading
+    } = (0, i.cf)([l.A], () => ({
+        methods: l.A.methods,
+        loading: l.A.loading
     })), {
-        initiateAgeVerification: _
+        initiateAgeVerification: f
     } = (0, o.nn)({
         onComplete: t,
-        entryPoint: l.q1.EXPRESSIVE_GET_STARTED,
+        entryPoint: s.q1.EXPRESSIVE_GET_STARTED,
         shouldShowExpressiveModal: !0,
         classificationId: h
-    }), f = (0, c.D)("age_verification_methods"), [v, b] = a.useState(!1);
+    }), v = (0, c.D)("age_verification_methods"), [_, b] = a.useState(!1);
     return a.useEffect(() => {
-        f && (0, d.sf)().then(b)
-    }, [f]), a.useEffect(() => {
+        v && (0, d.sf)().then(b)
+    }, [v]), a.useEffect(() => {
         null == p && (0, r.DJ)()
     }, [p]), {
         ageVerificationMethods: a.useMemo(() => {
@@ -50,23 +50,23 @@ let h = function(e) {
                     title: m.intl.string(a),
                     description: m.intl.string(i),
                     onClick: async t => {
-                        (0, l.St)(t, l.WU.EXPRESSIVE_PRIMARY, l._7.METHOD_SELECT, e), n?.(), await _(e)
+                        (0, s.St)(t, s.WU.EXPRESSIVE_PRIMARY, s._7.METHOD_SELECT, e), n?.(), await f(e)
                     }
                 }
             }).filter(e => null != e) ?? [];
-            if (f && v && null != x) {
+            if (v && _ && null != x) {
                 let t = u.uv[u.VF.GOOGLE_WALLET];
                 if (null != t) return [{
                     id: u.VF.GOOGLE_WALLET,
                     title: m.intl.string(t.title),
                     description: m.intl.string(t.description),
                     onClick: e => {
-                        (0, l.St)(e, l.WU.EXPRESSIVE_PRIMARY, l._7.METHOD_SELECT, u.VF.GOOGLE_WALLET), n?.(), x()
+                        (0, s.St)(e, s.WU.EXPRESSIVE_PRIMARY, s._7.METHOD_SELECT, u.VF.GOOGLE_WALLET), n?.(), x()
                     }
                 }, ...e]
             }
             return e
-        }, [p, f, v, x, n, _]),
+        }, [p, v, _, x, n, f]),
         loading: g
     }
 }

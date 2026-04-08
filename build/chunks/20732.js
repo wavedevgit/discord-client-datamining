@@ -4,8 +4,8 @@ n.d(t, {
 });
 var a = n(64700),
     i = n(731738),
-    l = n(831062),
-    s = n(260364),
+    s = n(831062),
+    l = n(260364),
     r = n(341915),
     o = n(561844),
     d = n(590202),
@@ -21,8 +21,8 @@ function u(e) {
         isLoadingAssets: x,
         currentQuestVisibleReason: p,
         shouldShowQuestBar: g,
-        isQuestEnrollmentBlocked: _,
-        impressionRef: f
+        isQuestEnrollmentBlocked: f,
+        impressionRef: v
     } = e;
     a.useEffect(() => {
         n && ((0, o.av)({
@@ -32,14 +32,14 @@ function u(e) {
                 content_id: r.uF.QUEST_BAR,
                 content_name: (0, d.jO)(r.uF.QUEST_BAR),
                 reason: "asset_loading_error",
-                impression_id: f.current?.getId()
+                impression_id: v.current?.getId()
             },
             sourceQuestContent: r.uF.QUEST_BAR_V2
-        }), l.A.increment({
+        }), s.A.increment({
             name: i.K.QUEST_CONTENT_RENDERING_FAILURE,
             tags: [`quest_id:${t.id}`, `quest_content:${(0,d.jO)(r.uF.QUEST_BAR)}`, "reason:asset_loading_error"]
         }))
-    }, [n, f, t.id]), a.useEffect(() => {
+    }, [n, v, t.id]), a.useEffect(() => {
         u || (0, o.av)({
             questId: t.id,
             event: c.HAw.QUEST_CONTENT_RENDERING_FAILURE,
@@ -47,11 +47,11 @@ function u(e) {
                 content_id: r.uF.QUEST_BAR,
                 content_name: (0, d.jO)(r.uF.QUEST_BAR),
                 reason: "not_eligible_for_quest",
-                impression_id: f.current?.getId()
+                impression_id: v.current?.getId()
             },
             sourceQuestContent: r.uF.QUEST_BAR_V2
         })
-    }, [u, f, t.id]), a.useEffect(() => {
+    }, [u, v, t.id]), a.useEffect(() => {
         m || !h || x || (0, o.av)({
             questId: t.id,
             event: c.HAw.QUEST_CONTENT_RENDERING_FAILURE,
@@ -59,11 +59,11 @@ function u(e) {
                 content_id: r.uF.QUEST_BAR,
                 content_name: (0, d.jO)(r.uF.QUEST_BAR),
                 reason: p,
-                impression_id: f.current?.getId()
+                impression_id: v.current?.getId()
             },
             sourceQuestContent: r.uF.QUEST_BAR_V2
         })
-    }, [m, h, x, t.id, p, f]), a.useEffect(() => {
-        (!g || _) && s.A.clearTracking(), m && h && !x && !n && u && s.A.stopTracking(t.id)
-    }, [g, _, m, h, x, n, u, t.id])
+    }, [m, h, x, t.id, p, v]), a.useEffect(() => {
+        (!g || f) && l.A.clearTracking(), m && h && !x && !n && u && l.A.stopTracking(t.id)
+    }, [g, f, m, h, x, n, u, t.id])
 }

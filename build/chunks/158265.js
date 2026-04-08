@@ -4,8 +4,8 @@ n.d(t, {
 });
 var a = n(627968),
     i = n(64700),
-    l = n(503698),
-    s = n.n(l),
+    s = n(503698),
+    l = n.n(s),
     r = n(106778),
     o = n(340287),
     d = n(687498),
@@ -16,16 +16,16 @@ var a = n(627968),
     x = n(398025),
     p = n(568329),
     g = n(963713),
-    _ = n(772244),
-    f = n(272111),
-    v = n(851110),
-    b = n(873655),
+    f = n(772244),
+    v = n(272111),
+    _ = n(851110),
+    b = n(131206),
     j = n(231901);
 let A = e => {
     let {
         overlayRef: t,
         progressBarRef: n,
-        isHovered: l
+        isHovered: s
     } = e, {
         quest: A,
         isExpanded: C
@@ -33,16 +33,16 @@ let A = e => {
         expansionSpring: y
     } = i.useContext(p.PW), {
         completionSpring: S,
-        startCompletionAnimation: T
-    } = (0, _.R)(), E = A.userStatus?.completedAt != null, N = i.useRef(!1), I = (0, c.bG)([m.A], () => m.A.useReducedMotion), k = i.useRef(null), O = (0, c.bG)([h.A], () => h.A.hasLayers()), R = (0, u.A)(O), [w, D] = i.useState(null), [M, P] = i.useState(null), L = i.useRef(new r.OH({
+        startCompletionAnimation: E
+    } = (0, f.R)(), T = A.userStatus?.completedAt != null, N = i.useRef(!1), I = (0, c.bG)([m.A], () => m.A.useReducedMotion), k = i.useRef(null), O = (0, c.bG)([h.A], () => h.A.hasLayers()), R = (0, u.A)(O), [w, D] = i.useState(null), [M, P] = i.useState(null), L = i.useRef(new r.OH({
         gravity: 0,
         wind: 0
-    })), U = (0, r.f9)(w, M), B = i.useMemo(() => [f.r3], []), G = i.useCallback(() => {
+    })), U = (0, r.f9)(w, M), B = i.useMemo(() => [v.r3], []), G = i.useCallback(() => {
         if (I) return;
         let e = n.current,
             t = k.current;
         if (null != t && null != e && U.isReady) {
-            var a, i, l, s;
+            var a, i, s, l;
             let {
                 x: n,
                 y: r
@@ -50,8 +50,8 @@ let A = e => {
                 x: o,
                 y: d
             } = t.getBoundingClientRect();
-            U.createMultipleConfetti((a = n - o, i = r - d, l = e.clientHeight, s = e.clientWidth, {
-                ...v.Mw,
+            U.createMultipleConfetti((a = n - o, i = r - d, s = e.clientHeight, l = e.clientWidth, {
+                ..._.Mw,
                 position: {
                     type: "static-random",
                     minValue: {
@@ -59,8 +59,8 @@ let A = e => {
                         y: i
                     },
                     maxValue: {
-                        x: a + l,
-                        y: i + s
+                        x: a + s,
+                        y: i + l
                     }
                 },
                 velocity: {
@@ -92,16 +92,16 @@ let A = e => {
         }
     }, [n, k, U, I]), F = (0, u.A)(C);
     return (i.useEffect(() => {
-        E && C && !F && (T(), G())
-    }, [C, E, T, G, F]), i.useEffect(() => {
-        E && !O && R && setTimeout(() => {
-            T(), G()
+        T && C && !F && (E(), G())
+    }, [C, T, E, G, F]), i.useEffect(() => {
+        T && !O && R && setTimeout(() => {
+            E(), G()
         }, 200)
-    }, [E, R, O, T, G]), i.useEffect(() => {
-        U.isReady && (!N.current && E && (T(), G()), N.current = E)
-    }, [E, N, G, T, U]), i.useEffect(() => {
-        l && E && (T(), G())
-    }, [l, E, T, G]), I) ? null : (0, a.jsxs)("div", {
+    }, [T, R, O, E, G]), i.useEffect(() => {
+        U.isReady && (!N.current && T && (E(), G()), N.current = T)
+    }, [T, N, G, E, U]), i.useEffect(() => {
+        s && T && (E(), G())
+    }, [s, T, E, G]), I) ? null : (0, a.jsxs)("div", {
         className: b.iE,
         "aria-hidden": "true",
         ref: k,
@@ -111,7 +111,7 @@ let A = e => {
                 opacity: (0, x.a)(S)
             }
         }), (0, a.jsx)(d.animated.div, {
-            className: s()(b.sJ, b.ix),
+            className: l()(b.sJ, b.ix),
             style: {
                 opacity: (0, x.a)(S)
             }
@@ -131,10 +131,10 @@ let A = e => {
                 ref: P,
                 sprites: [j],
                 colors: B,
-                spriteWidth: v.wn,
-                spriteHeight: v.wn
+                spriteWidth: _.wn,
+                spriteHeight: _.wn
             }), null != t.current && (0, o.createPortal)((0, a.jsx)(d.animated.div, {
-                className: s()(b.sJ, b.d7),
+                className: l()(b.sJ, b.d7),
                 style: {
                     opacity: (0, x.a)(S)
                 }

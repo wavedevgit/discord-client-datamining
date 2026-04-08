@@ -1,16 +1,16 @@
 /** chunk id: 812141 params = (module,exports,require) **/
-e.d(t, {
-    p: () => a
+i.d(n, {
+    p: () => r
 });
-var i = e(989349),
-    l = e.n(i);
-let a = n => {
-    let t = n > 0 ? l()().add(n, "second").toISOString() : null;
+var e = i(989349),
+    l = i.n(e);
+let r = t => {
+    let n = t > 0 ? l()().add(t, "second").toISOString() : null;
     return {
         muted: !0,
         mute_config: {
-            selected_time_window: n,
-            end_time: t
+            selected_time_window: t,
+            end_time: n
         }
     }
 }

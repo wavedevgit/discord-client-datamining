@@ -1,13 +1,13 @@
 /** chunk id: 33042 params = (module,exports,require) **/
 n.d(t, {
     Q: () => g,
-    T: () => _
+    T: () => f
 });
 var a = n(627968);
 n(64700);
 var i = n(397927),
-    l = n(970931),
-    s = n(253932),
+    s = n(970931),
+    l = n(253932),
     r = n(927813),
     o = n(427262),
     d = n(146901),
@@ -39,31 +39,31 @@ function p(e) {
     let {
         status: t,
         currentStatus: n,
-        description: l
-    } = e, s = t !== u.clD.ONLINE, r = (0, a.jsx)(a.Fragment, {
+        description: s
+    } = e, l = t !== u.clD.ONLINE, r = (0, a.jsx)(a.Fragment, {
         children: h.map(e => {
             let {
-                duration: l,
-                label: s
+                duration: s,
+                label: l
             } = e;
             return (0, a.jsx)(i.Drp, {
-                id: `${t}-${l}`,
-                label: s(),
+                id: `${t}-${s}`,
+                label: l(),
                 action: () => (0, c.A)({
                     nextStatus: t,
                     prevStatus: n,
-                    durationMillis: l
+                    durationMillis: s
                 }),
                 dontCloseOnAction: !0
-            }, l ?? x)
+            }, s ?? x)
         })
     });
     return (0, a.jsx)(i.Drp, {
         id: t,
         keepItemStyles: !0,
-        hasSubmenu: s,
+        hasSubmenu: l,
         label: (0, o.MU)(t),
-        subtext: l,
+        subtext: s,
         iconLeft: () => (0, a.jsx)(i.nW6, {
             status: t,
             size: 10
@@ -79,7 +79,7 @@ function p(e) {
             })
         },
         dontCloseOnAction: !0,
-        children: s ? r : void 0
+        children: l ? r : void 0
     })
 }
 
@@ -98,10 +98,10 @@ function g(e) {
     })
 }
 
-function _(e) {
-    let t = s.CY.useSetting(),
-        n = (0, l.kB)(),
-        r = s.Jr.useSetting(),
+function f(e) {
+    let t = l.CY.useSetting(),
+        n = (0, s.kB)(),
+        r = l.Jr.useSetting(),
         o = a => {
             let i = g(t);
             if (e === a && null != i) return i;
@@ -118,13 +118,13 @@ function _(e) {
             children: h.map(t => {
                 let {
                     duration: n,
-                    label: s
+                    label: l
                 } = t;
                 return (0, a.jsx)(i.Drp, {
                     id: `${e}-${n}`,
-                    label: s(),
+                    label: l(),
                     action: () => {
-                        (0, l.ES)(!0, n)
+                        (0, s.ES)(!0, n)
                     },
                     dontCloseOnAction: !0
                 }, n ?? x)
@@ -134,23 +134,23 @@ function _(e) {
             status: u.clD.ONLINE,
             currentStatus: e
         }),
-        _ = p({
+        f = p({
             status: u.clD.IDLE,
             currentStatus: e,
             description: o(u.clD.IDLE)
         }),
-        f = p({
+        v = p({
             status: u.clD.DND,
             currentStatus: e,
             description: o(u.clD.DND)
         }),
-        v = p({
+        _ = p({
             status: u.clD.INVISIBLE,
             currentStatus: e,
             description: o(u.clD.INVISIBLE)
         });
     return (0, a.jsxs)(a.Fragment, {
-        children: [c, (0, a.jsx)(i.bXX, {}, "menu-separator-statuses"), _, f, v, n ? (0, a.jsxs)(a.Fragment, {
+        children: [c, (0, a.jsx)(i.bXX, {}, "menu-separator-statuses"), f, v, _, n ? (0, a.jsxs)(a.Fragment, {
             children: [(0, a.jsx)(i.bXX, {}, "menu-separator-statuses"), (0, a.jsx)(i.Drp, {
                 id: "quiet-mode",
                 "aria-label": "focus mode",
@@ -174,7 +174,7 @@ function _(e) {
                     })
                 }) : m.intl.string(m.t["Br1q+x"]),
                 action: () => {
-                    (0, l.ES)(!n)
+                    (0, s.ES)(!n)
                 },
                 dontCloseOnAction: !0,
                 children: d

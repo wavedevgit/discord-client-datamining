@@ -1,11 +1,11 @@
 /** chunk id: 933378 params = (module,exports,require) **/
 n.d(t, {
-    A: () => E
+    A: () => T
 });
 var a = n(627968),
     i = n(64700),
-    l = n(503698),
-    s = n.n(l),
+    s = n(503698),
+    l = n.n(s),
     r = n(114046),
     o = n(311907),
     d = n(397927),
@@ -16,14 +16,14 @@ var a = n(627968),
     x = n(18437),
     p = n(590202),
     g = n(971649),
-    _ = n(901406),
-    f = n(792620),
-    v = n(814793),
+    f = n(901406),
+    v = n(792620),
+    _ = n(814793),
     b = n(201805),
     j = n(495242),
     A = n(52093),
     C = n(985018),
-    y = n(570506);
+    y = n(146567);
 
 function S(e) {
     return (0, a.jsx)(d.Text, {
@@ -34,16 +34,16 @@ function S(e) {
     })
 }
 
-function T(e) {
+function E(e) {
     let {
         quest: t,
         useReducedMotion: n
-    } = e, l = (0, b.H1)(t.id, m.uF.QUEST_BAR_V2, m.uF.QUEST_BAR_V2), o = (0, b.Xf)({
+    } = e, s = (0, b.H1)(t.id, m.uF.QUEST_BAR_V2, m.uF.QUEST_BAR_V2), o = (0, b.Xf)({
         useReducedMotion: n
-    }), c = (0, x.Ut)(), f = (0, g.go)(), {
+    }), c = (0, x.Ut)(), v = (0, g.go)(), {
         errorHints: j,
         startingConsoleQuest: A,
-        startConsoleQuest: T
+        startConsoleQuest: E
     } = (0, h.Wj)({
         questId: t.id,
         beforeRequest: () => {
@@ -56,34 +56,34 @@ function T(e) {
         },
         afterRequest: o.stopAnimation
     }), {
-        header: E,
+        header: T,
         renderBody: N
     } = i.useMemo(() => {
         let e = j.length > 0,
             n = t.config.messages.gameTitle;
         return {
-            header: e ? (0, v.ui)(t) ? C.intl.string(C.t.N33EuL) : C.intl.formatToPlainString(C.t["28Ql27"], {
+            header: e ? (0, _.ui)(t) ? C.intl.string(C.t.N33EuL) : C.intl.formatToPlainString(C.t["28Ql27"], {
                 gameTitle: n
-            }) : (0, v.ui)(t) ? C.intl.string(C.t.YstzGO) : C.intl.formatToPlainString(C.t.gX0Qcx, {
+            }) : (0, _.ui)(t) ? C.intl.string(C.t.YstzGO) : C.intl.formatToPlainString(C.t.gX0Qcx, {
                 gameTitle: n
             }),
             renderBody: e ? () => (0, a.jsx)(a.Fragment, {
                 children: j.map((e, n) => {
                     if (e.type === r._.EXPIRED_CREDENTIAL) {
                         let i = u.A.getAccount(e.connected_account_id, e.connected_account_type),
-                            l = (0, _.IG)(e),
-                            s = (0, _.$J)(e);
+                            s = (0, f.IG)(e),
+                            l = (0, f.$J)(e);
                         return (0, a.jsx)(S, {
-                            children: C.intl.format(l, {
+                            children: C.intl.format(s, {
                                 account_name: i?.name,
                                 onClick: () => {
-                                    (0, _.v0)({
+                                    (0, f.v0)({
                                         quest: t,
-                                        platformType: s
+                                        platformType: l
                                     }, {
                                         content: m.uF.QUEST_BAR,
                                         ctaContent: p.Cy.DEFIBRILLATOR_RECONNECT_CONSOLE,
-                                        impressionId: f,
+                                        impressionId: v,
                                         sourceQuestContent: m.uF.QUEST_BAR_V2
                                     })
                                 }
@@ -98,12 +98,12 @@ function T(e) {
                 className: y.eW,
                 color: "text-muted",
                 variant: "text-xxs/normal",
-                children: (0, v.ui)(t) ? C.intl.string(C.t.bUyEZZ) : C.intl.format(C.t.GXqvC1, {
+                children: (0, _.ui)(t) ? C.intl.string(C.t.bUyEZZ) : C.intl.format(C.t.GXqvC1, {
                     gameTitle: n
                 })
             })
         }
-    }, [j, t, f]);
+    }, [j, t, v]);
     return (0, a.jsxs)("div", {
         className: y.XK,
         children: [(0, a.jsxs)("div", {
@@ -116,50 +116,50 @@ function T(e) {
                 height: 16
             }), (0, a.jsx)(d.Text, {
                 variant: "text-xs/medium",
-                children: E
+                children: T
             }), (0, a.jsx)(d.DUT, {
-                className: s()(y.w, {
+                className: l()(y.w, {
                     [y.r9]: A
                 }),
-                onClick: () => T(),
+                onClick: () => E(),
                 children: o.render()
             })]
         }), (0, a.jsxs)("div", {
-            className: s()({
+            className: l()({
                 [y.Iu]: A
             }),
             children: [N(), 0 === j.length ? null : (0, a.jsx)(S, {
-                children: l
+                children: s
             })]
         })]
     })
 }
-let E = function(e) {
+let T = function(e) {
     let {
         quest: t,
         taskDetails: n
-    } = e, l = (0, o.bG)([c.A], () => c.A.useReducedMotion), s = (0, h.Du)(), r = i.useMemo(() => (0, _.bg)(t).filter(e => s.xboxAndPlaystationAccounts.find(t => t.type === e)), [s.xboxAndPlaystationAccounts, t]), {
+    } = e, s = (0, o.bG)([c.A], () => c.A.useReducedMotion), l = (0, h.Du)(), r = i.useMemo(() => (0, f.bg)(t).filter(e => l.xboxAndPlaystationAccounts.find(t => t.type === e)), [l.xboxAndPlaystationAccounts, t]), {
         steps: d,
         hasConnectedAccounts: u,
         isProgressingQuestForLaunchedGame: x,
         isQuestComplete: p
     } = i.useMemo(() => {
         let e = r.length > 0,
-            i = e && (0, f.YL)(t),
-            l = t.config.messages.gameTitle,
+            i = e && (0, v.YL)(t),
+            s = t.config.messages.gameTitle,
             o = t.userStatus?.completedAt != null;
         return {
             steps: [{
                 renderContent: () => (0, a.jsx)(j.Z, {
-                    ...s,
+                    ...l,
                     quest: t,
                     sourceQuestContent: m.uF.QUEST_BAR_V2
                 }),
                 isComplete: e || i || o
             }, {
                 renderContent: () => (0, a.jsx)(A.L5, {
-                    children: (0, v.ui)(t) ? C.intl.string(C.t["5tXqFe"]) : C.intl.formatToPlainString(C.t["+8JB6Y"], {
-                        gameTitle: l
+                    children: (0, _.ui)(t) ? C.intl.string(C.t["5tXqFe"]) : C.intl.formatToPlainString(C.t["+8JB6Y"], {
+                        gameTitle: s
                     })
                 }),
                 isComplete: i || o
@@ -175,12 +175,12 @@ let E = function(e) {
             isProgressingQuestForLaunchedGame: i,
             isQuestComplete: o
         }
-    }, [s, r.length, t, n.targetMinutes]);
+    }, [l, r.length, t, n.targetMinutes]);
     return (0, a.jsx)(A.Ay, {
         heading: C.intl.string(C.t.UPWlJu),
         steps: d,
-        children: u && !x && !p && (0, a.jsx)(T, {
-            useReducedMotion: l,
+        children: u && !x && !p && (0, a.jsx)(E, {
+            useReducedMotion: s,
             quest: t
         })
     })

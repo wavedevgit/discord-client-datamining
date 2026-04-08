@@ -5,10 +5,10 @@ n.d(t, {
 var a = n(627968);
 n(64700);
 var i = n(397927),
-    l = n(976860),
-    s = n(829219),
+    s = n(976860),
+    l = n(829219),
     r = n(652215),
-    o = n(930316);
+    o = n(543603);
 let d = function() {
     return (0, a.jsxs)("div", {
         className: o.k,
@@ -21,7 +21,7 @@ let d = function() {
             children: "Click the button below to clear your Minor Reward Capping History."
         }), (0, a.jsx)(i.Button, {
             onClick: () => {
-                (0, s.Ov)(), (0, l.pX)(r.BVt.QUEST_HOME)
+                (0, l.Ov)(), (0, s.pX)(r.BVt.QUEST_HOME)
             },
             text: "Clear History"
         }), (0, a.jsx)(i.Text, {

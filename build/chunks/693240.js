@@ -6,8 +6,8 @@ n.d(t, {
 var a = n(627968);
 n(64700);
 var i = n(311907),
-    l = n(116833),
-    s = n(342494),
+    s = n(116833),
+    l = n(342494),
     r = n(73153),
     o = n(626584),
     d = n(71393),
@@ -35,7 +35,7 @@ function p(e) {
         onEditProfile: g
     } = (0, u.A)(t?.id ?? null, () => n(m.i.TAKE_ACTION));
     if (null == t || !(0, c.q0)(t)) return x.error("GuildTagChangedCoachmark rendered without guildId for a guild with tags."), e.children;
-    let _ = [{
+    let f = [{
         text: h.intl.string(h.t.jwEaiX),
         loading: o,
         onClick: p,
@@ -46,13 +46,13 @@ function p(e) {
         variant: "secondary"
     }];
     return (0, a.jsxs)(a.Fragment, {
-        children: [e.children, (0, a.jsx)(s.AM, {
+        children: [e.children, (0, a.jsx)(l.AM, {
             targetElementRef: e.targetElementRef,
             shouldShow: !0,
             position: "top",
             graphic: {
                 type: "dynamic",
-                component: l.DynamicGraphicComponent.GUILD_TAG_COACHMARK_ASSET,
+                component: s.DynamicGraphicComponent.GUILD_TAG_COACHMARK_ASSET,
                 props: {
                     guildId: t.id,
                     guildProfile: t.profile
@@ -62,7 +62,7 @@ function p(e) {
                 guildName: t.name
             }),
             body: h.intl.string(h.t.DrAXIr),
-            actions: _,
+            actions: f,
             size: "md",
             onRequestClose: () => n(m.i.USER_DISMISS)
         })]
@@ -92,13 +92,13 @@ function g(e) {
         variant: "secondary"
     }];
     return (0, a.jsxs)(a.Fragment, {
-        children: [e.children, (0, a.jsx)(s.AM, {
+        children: [e.children, (0, a.jsx)(l.AM, {
             targetElementRef: e.targetElementRef,
             shouldShow: !0,
             position: "top",
             graphic: {
                 type: "dynamic",
-                component: l.DynamicGraphicComponent.GUILD_TAG_COACHMARK_ASSET,
+                component: s.DynamicGraphicComponent.GUILD_TAG_COACHMARK_ASSET,
                 props: {
                     guildId: t.id,
                     guildProfile: t.profile

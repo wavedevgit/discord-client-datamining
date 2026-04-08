@@ -1,11 +1,11 @@
 /** chunk id: 666055 params = (module,exports,require) **/
 n.d(t, {
-    A: () => _
+    A: () => f
 });
 var a = n(627968),
     i = n(64700),
-    l = n(311907),
-    s = n(562465),
+    s = n(311907),
+    l = n(562465),
     r = n(397927),
     o = n(384904),
     d = n(803306),
@@ -53,8 +53,8 @@ let g = [{
     value: 72
 }];
 
-function _() {
-    let [e, t] = i.useState(!1), n = (0, l.bG)([u.default], () => u.default.getCurrentUser()), _ = (0, c.Lh)(), f = (0, l.bG)([m.A], () => m.A.getPremiumTypeSubscription()), v = null != _ ? p.VD[_]?.tenureReqNumMonths ?? 0 : 0, b = i.useCallback(async e => {
+function f() {
+    let [e, t] = i.useState(!1), n = (0, s.bG)([u.default], () => u.default.getCurrentUser()), f = (0, c.Lh)(), v = (0, s.bG)([m.A], () => m.A.getPremiumTypeSubscription()), _ = null != f ? p.VD[f]?.tenureReqNumMonths ?? 0 : 0, b = i.useCallback(async e => {
         let a = new Date;
         e > 0 ? a.setMonth(a.getMonth() - e) : a.setDate(a.getDate() - 7), a.setDate(a.getDate() - 2);
         let i = {
@@ -62,18 +62,18 @@ function _() {
             endedAt: void 0,
             premium_streak_started_at: h.default.fromTimestamp(a.getTime())
         };
-        t(!0), await s.Bo.patch({
-            url: `/debug/subscriptions/${f.id}`,
+        t(!0), await l.Bo.patch({
+            url: `/debug/subscriptions/${v.id}`,
             body: i,
             rejectWithError: !1
         }), await (0, d.eO)(n.id), await (0, o.hP)(), t(!1)
-    }, [f, n]);
-    if (null != n && null != f) return (0, a.jsx)(r.l6P, {
+    }, [v, n]);
+    if (null != n && null != v) return (0, a.jsx)(r.l6P, {
         label: "Tenure",
         hideLabel: !0,
         selectionMode: "single",
         disabled: e,
-        value: v,
+        value: _,
         options: g,
         onSelectionChange: b
     })

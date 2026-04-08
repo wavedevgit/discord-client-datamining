@@ -1,19 +1,19 @@
 /** chunk id: 801228 params = (module,exports,require) **/
 n.d(t, {
-    A: () => a
+    A: () => r
 });
-var i = n(64700),
+var a = n(64700),
     l = n(311907),
-    s = n(67480),
-    r = n(435658);
+    i = n(67480),
+    s = n(435658);
 
-function a(e) {
+function r(e) {
     let {
         skuId: t,
         location: n
-    } = e, a = (0, l.bG)([s.A], () => s.A.get(t)), o = i.useMemo(() => [t], [t]);
-    return (0, r.j)({
+    } = e, r = (0, l.bG)([i.A], () => i.A.get(t)), o = a.useMemo(() => [t], [t]);
+    return (0, s.j)({
         skuIds: o,
         location: n
-    }), a
+    }), r
 }

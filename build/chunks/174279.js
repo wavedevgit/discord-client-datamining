@@ -24,11 +24,11 @@ var i = n(627968),
     T = n(414711),
     N = n(187696),
     S = n(723690),
-    v = n(652215),
-    x = n(788868),
-    y = n(731854),
-    b = n(985018),
-    O = n(955017);
+    x = n(652215),
+    v = n(788868),
+    b = n(731854),
+    y = n(985018),
+    O = n(664184);
 
 function L(e) {
     let {
@@ -54,33 +54,33 @@ function L(e) {
             location: "Friends"
         })
     }, [n, a, t.id]), m = r.useCallback(() => {
-        let e = a ? b.intl.string(b.t.RLcE6x) : b.intl.string(b.t.cvSt1J);
+        let e = a ? y.intl.string(y.t.RLcE6x) : y.intl.string(y.t.cvSt1J);
         d.A.show({
-            title: b.intl.formatToPlainString(b.t.fPLvZd, {
+            title: y.intl.formatToPlainString(y.t.fPLvZd, {
                 name: I.Ay.getName(t)
             }),
-            body: b.intl.formatToPlainString(b.t.l5FFq6, {
+            body: y.intl.formatToPlainString(y.t.l5FFq6, {
                 name: I.Ay.getName(t)
             }),
             confirmText: e,
             confirmVariant: "critical-primary",
-            cancelText: b.intl.string(b.t["ETE/oC"]),
+            cancelText: y.intl.string(y.t["ETE/oC"]),
             onConfirm: _
         })
-    }, [_, a, t]), p = (0, s.bG)([g.Ay], () => g.Ay.supports(y.O5.VIDEO)), E = t.isProvisional, C = a ? b.intl.string(b.t.RLcE6x) : b.intl.string(b.t.cvSt1J);
+    }, [_, a, t]), p = (0, s.bG)([g.Ay], () => g.Ay.supports(b.O5.VIDEO)), E = t.isProvisional, C = a ? y.intl.string(y.t.RLcE6x) : y.intl.string(y.t.cvSt1J);
     return (0, i.jsxs)(o.W1t, {
         "data-menu-migrated-auto": !0,
         navId: "friend-row",
-        "aria-label": b.intl.string(b.t.liqwPJ),
+        "aria-label": y.intl.string(y.t.liqwPJ),
         onClose: u.Z_,
         onSelect: l,
         children: [!E && p ? (0, i.jsx)(o.Drp, {
             id: "start-video-call",
-            label: b.intl.string(b.t.oCqlGG),
+            label: y.intl.string(y.t.oCqlGG),
             action: h
         }) : null, !E && (0, i.jsx)(o.Drp, {
             id: "start-voice-call",
-            label: b.intl.string(b.t.focH1t),
+            label: y.intl.string(y.t.focH1t),
             action: A
         }), (0, i.jsx)(o.Drp, {
             id: "remove-friend",
@@ -106,8 +106,8 @@ class R extends r.PureComponent {
             user: t
         } = this.props;
         e.stopPropagation();
-        let n = l().find(p.A.getMutablePrivateChannels(), e => e.type === v.rbe.DM && e.getRecipientId() === t.id);
-        null != n ? (0, m.pX)(v.BVt.CHANNEL(v.ME, n.id)) : c.A.openPrivateChannel({
+        let n = l().find(p.A.getMutablePrivateChannels(), e => e.type === x.rbe.DM && e.getRecipientId() === t.id);
+        null != n ? (0, m.pX)(x.BVt.CHANNEL(x.ME, n.id)) : c.A.openPrivateChannel({
             recipientIds: t.id
         })
     };
@@ -148,7 +148,7 @@ class R extends r.PureComponent {
         } = this.props, {
             isActiveRow: g
         } = this.state;
-        return (0, h.p)(A.A.FRIENDS_LIST) && c === x.np.FRIEND_ANNIVERSARY && m && 0 === p ? (0, i.jsx)(_.A, {
+        return (0, h.p)(A.A.FRIENDS_LIST) && c === v.np.FRIEND_ANNIVERSARY && m && 0 === p ? (0, i.jsx)(_.A, {
             ref: this.peopleListItemRef,
             isFocused: t,
             isActive: g,
@@ -190,12 +190,12 @@ class R extends r.PureComponent {
                     className: O.o1,
                     children: [(0, i.jsx)(C.A, {
                         icon: o.oyn,
-                        tooltip: b.intl.string(b.t["g33r/P"]),
+                        tooltip: y.intl.string(y.t["g33r/P"]),
                         onClick: this.handleOpenPrivateChannel,
                         shouldHighlight: t
                     }), (0, i.jsx)(C.A, {
                         icon: o.FHP,
-                        tooltip: b.intl.string(b.t["UKOtz+"]),
+                        tooltip: y.intl.string(y.t["UKOtz+"]),
                         onClick: this.handleOpenActionsMenu,
                         shouldHighlight: t
                     })]

@@ -24,10 +24,10 @@ var i = n(735438),
     T = n(592653),
     N = n(629471),
     S = n(511776),
-    v = n(901898),
-    x = n(639621),
-    y = n(613057),
-    b = n(652215);
+    x = n(901898),
+    v = n(639621),
+    b = n(613057),
+    y = n(652215);
 let O = e => (0, N.A)(e).required().keys({
     channel_id: e.string().required()
 });
@@ -40,10 +40,10 @@ function L(e) {
         socket: n
     } = e, i = h.A.getChannel(t);
     if (null == i || !(0, C.B_)(i, n.application.id, n.authorization.scopes)) throw new f.A({
-        errorCode: b.Lw6.INVALID_CHANNEL
+        errorCode: y.Lw6.INVALID_CHANNEL
     }, `Invalid channel id: ${t}`);
     if ((0, o.$v)(i)) throw new f.A({
-        errorCode: b.Lw6.INVALID_CHANNEL
+        errorCode: y.Lw6.INVALID_CHANNEL
     }, `Invalid nsfw channel id: ${i.id}`)
 }
 let R = e => (0, N.A)(e).keys({
@@ -57,11 +57,11 @@ function P(e) {
         }
     } = e;
     if (null != t && null == h.A.getChannel(t)) throw new f.A({
-        errorCode: b.Lw6.INVALID_CHANNEL
+        errorCode: y.Lw6.INVALID_CHANNEL
     }, `Invalid channel id: ${t}`)
 }
 let D = {
-    [b.ZE4.GUILD_STATUS]: {
+    [y.ZE4.GUILD_STATUS]: {
         scope: a.F.RPC,
         validation: e => (0, N.A)(e).required().keys({
             guild_id: e.string().required()
@@ -73,7 +73,7 @@ let D = {
                 }
             } = e;
             if (null == m.A.getGuild(t)) throw new f.A({
-                errorCode: b.Lw6.INVALID_GUILD
+                errorCode: y.Lw6.INVALID_GUILD
             }, `Invalid guild id: ${t}`);
             return e => {
                 let {
@@ -93,9 +93,9 @@ let D = {
             }
         }
     },
-    [b.ZE4.VOICE_STATE_CREATE]: {
+    [y.ZE4.VOICE_STATE_CREATE]: {
         scope: {
-            [y.sm.ANY]: [a.F.RPC, a.F.RPC_VOICE_READ]
+            [b.sm.ANY]: [a.F.RPC, a.F.RPC_VOICE_READ]
         },
         validation: e => (0, N.A)(e).required().keys({
             channel_id: e.string().required()
@@ -107,7 +107,7 @@ let D = {
                 }
             } = e;
             if (null == h.A.getChannel(t)) throw new f.A({
-                errorCode: b.Lw6.INVALID_CHANNEL
+                errorCode: y.Lw6.INVALID_CHANNEL
             }, `Invalid channel id: ${t}`);
             return e => {
                 let {
@@ -126,9 +126,9 @@ let D = {
             }
         }
     },
-    [b.ZE4.VOICE_STATE_DELETE]: {
+    [y.ZE4.VOICE_STATE_DELETE]: {
         scope: {
-            [y.sm.ANY]: [a.F.RPC, a.F.RPC_VOICE_READ]
+            [b.sm.ANY]: [a.F.RPC, a.F.RPC_VOICE_READ]
         },
         validation: e => (0, N.A)(e).required().keys({
             channel_id: e.string().required()
@@ -140,7 +140,7 @@ let D = {
                 }
             } = e;
             if (null == h.A.getChannel(t)) throw new f.A({
-                errorCode: b.Lw6.INVALID_CHANNEL
+                errorCode: y.Lw6.INVALID_CHANNEL
             }, `Invalid channel id: ${t}`);
             return e => {
                 let {
@@ -159,9 +159,9 @@ let D = {
             }
         }
     },
-    [b.ZE4.VOICE_STATE_UPDATE]: {
+    [y.ZE4.VOICE_STATE_UPDATE]: {
         scope: {
-            [y.sm.ANY]: [a.F.RPC, a.F.RPC_VOICE_READ]
+            [b.sm.ANY]: [a.F.RPC, a.F.RPC_VOICE_READ]
         },
         validation: e => (0, N.A)(e).required().keys({
             channel_id: e.string().required()
@@ -173,7 +173,7 @@ let D = {
                 }
             } = e;
             if (null == h.A.getChannel(t)) throw new f.A({
-                errorCode: b.Lw6.INVALID_CHANNEL
+                errorCode: y.Lw6.INVALID_CHANNEL
             }, `Invalid channel id: ${t}`);
             return e => {
                 let {
@@ -187,9 +187,9 @@ let D = {
             }
         }
     },
-    [b.ZE4.VOICE_CONNECTION_STATUS]: {
+    [y.ZE4.VOICE_CONNECTION_STATUS]: {
         scope: {
-            [y.sm.ANY]: [a.F.RPC, a.F.RPC_VOICE_READ]
+            [b.sm.ANY]: [a.F.RPC, a.F.RPC_VOICE_READ]
         },
         handler: () => e => {
             let {
@@ -205,128 +205,128 @@ let D = {
             return r().isEqual(i, t) || n(i), i
         }
     },
-    [b.ZE4.MESSAGE_CREATE]: {
+    [y.ZE4.MESSAGE_CREATE]: {
         scope: a.F.RPC,
         validation: O,
         handler: L
     },
-    [b.ZE4.MESSAGE_UPDATE]: {
+    [y.ZE4.MESSAGE_UPDATE]: {
         scope: a.F.RPC,
         validation: O,
         handler: L
     },
-    [b.ZE4.MESSAGE_DELETE]: {
+    [y.ZE4.MESSAGE_DELETE]: {
         scope: a.F.RPC,
         validation: O,
         handler: L
     },
-    [b.ZE4.SPEAKING_START]: {
+    [y.ZE4.SPEAKING_START]: {
         scope: {
-            [y.sm.ANY]: [a.F.RPC, a.F.RPC_VOICE_READ, y.hj]
+            [b.sm.ANY]: [a.F.RPC, a.F.RPC_VOICE_READ, b.hj]
         },
         validation: R,
         handler: P
     },
-    [b.ZE4.SPEAKING_STOP]: {
+    [y.ZE4.SPEAKING_STOP]: {
         scope: {
-            [y.sm.ANY]: [a.F.RPC, a.F.RPC_VOICE_READ, y.hj]
+            [b.sm.ANY]: [a.F.RPC, a.F.RPC_VOICE_READ, b.hj]
         },
         validation: R,
         handler: P
     },
-    [b.ZE4.GUILD_CREATE]: {
+    [y.ZE4.GUILD_CREATE]: {
         scope: a.F.RPC,
         handler() {}
     },
-    [b.ZE4.CHANNEL_CREATE]: {
+    [y.ZE4.CHANNEL_CREATE]: {
         scope: a.F.RPC,
         handler() {}
     },
-    [b.ZE4.GAME_JOIN]: {
+    [y.ZE4.GAME_JOIN]: {
         scope: {
-            [y.sm.ANY]: [a.F.RPC, y.hj]
+            [b.sm.ANY]: [a.F.RPC, b.hj]
         },
         handler() {}
     },
-    [b.ZE4.GAME_SPECTATE]: {
+    [y.ZE4.GAME_SPECTATE]: {
         scope: {
-            [y.sm.ANY]: [a.F.RPC, y.hj]
+            [b.sm.ANY]: [a.F.RPC, b.hj]
         },
         handler() {}
     },
-    [b.ZE4.ACTIVITY_JOIN]: {
+    [y.ZE4.ACTIVITY_JOIN]: {
         scope: {
-            [y.sm.ANY]: [a.F.RPC, y.VH, y.hj]
+            [b.sm.ANY]: [a.F.RPC, b.VH, b.hj]
         },
         handler() {}
     },
-    [b.ZE4.ACTIVITY_JOIN_REQUEST]: {
+    [y.ZE4.ACTIVITY_JOIN_REQUEST]: {
         scope: {
-            [y.sm.ANY]: [a.F.RPC, y.hj]
+            [b.sm.ANY]: [a.F.RPC, b.hj]
         },
         handler() {}
     },
-    [b.ZE4.ACTIVITY_SPECTATE]: {
+    [y.ZE4.ACTIVITY_SPECTATE]: {
         scope: {
-            [y.sm.ANY]: [a.F.RPC, y.VH, y.hj]
+            [b.sm.ANY]: [a.F.RPC, b.VH, b.hj]
         },
         handler() {}
     },
-    [b.ZE4.ACTIVITY_INVITE]: {
+    [y.ZE4.ACTIVITY_INVITE]: {
         scope: {
-            [y.sm.ANY]: [a.F.RPC, y.hj]
+            [b.sm.ANY]: [a.F.RPC, b.hj]
         },
         handler() {}
     },
-    [b.ZE4.ACTIVITY_PIP_MODE_UPDATE]: {
+    [y.ZE4.ACTIVITY_PIP_MODE_UPDATE]: {
         scope: void 0,
         handler() {}
     },
-    [b.ZE4.ACTIVITY_LAYOUT_MODE_UPDATE]: {
+    [y.ZE4.ACTIVITY_LAYOUT_MODE_UPDATE]: {
         scope: void 0,
         handler() {}
     },
-    [b.ZE4.FRAME_LAYOUT_MODE_UPDATE]: {
+    [y.ZE4.FRAME_LAYOUT_MODE_UPDATE]: {
         scope: void 0,
         handler() {}
     },
-    [b.ZE4.ACTIVITY_INSTANCE_PARTICIPANTS_UPDATE]: T.t$,
-    [b.ZE4.THERMAL_STATE_UPDATE]: {
+    [y.ZE4.ACTIVITY_INSTANCE_PARTICIPANTS_UPDATE]: T.t$,
+    [y.ZE4.THERMAL_STATE_UPDATE]: {
         scope: {
-            [y.sm.ANY]: [y.VH]
+            [b.sm.ANY]: [b.VH]
         },
         handler() {}
     },
-    [b.ZE4.ORIENTATION_UPDATE]: {
+    [y.ZE4.ORIENTATION_UPDATE]: {
         scope: {
-            [y.sm.ANY]: [y.VH]
+            [b.sm.ANY]: [b.VH]
         },
         handler() {}
     },
-    [b.ZE4.VOICE_CHANNEL_SELECT]: {
+    [y.ZE4.VOICE_CHANNEL_SELECT]: {
         scope: a.F.RPC,
         handler() {}
     },
-    [b.ZE4.NOTIFICATION_CREATE]: {
+    [y.ZE4.NOTIFICATION_CREATE]: {
         scope: {
-            [y.sm.ALL]: [a.F.RPC, a.F.RPC_NOTIFICATIONS_READ]
+            [b.sm.ALL]: [a.F.RPC, a.F.RPC_NOTIFICATIONS_READ]
         },
         handler() {}
     },
-    [b.ZE4.RELATIONSHIP_UPDATE]: {
+    [y.ZE4.RELATIONSHIP_UPDATE]: {
         scope: a.F.RELATIONSHIPS_READ,
         handler(e) {
             let {
                 socket: t
             } = e;
-            if (l.zy(l.iu(t.application.flags ?? 0), l.iu(b.gfo.DISABLE_RELATIONSHIPS_ACCESS))) throw new f.A({
-                errorCode: b.Lw6.INVALID_PERMISSIONS
+            if (l.zy(l.iu(t.application.flags ?? 0), l.iu(y.gfo.DISABLE_RELATIONSHIPS_ACCESS))) throw new f.A({
+                errorCode: y.Lw6.INVALID_PERMISSIONS
             }, "Missing Permissions")
         }
     },
-    [b.ZE4.CURRENT_USER_UPDATE]: {
+    [y.ZE4.CURRENT_USER_UPDATE]: {
         scope: {
-            [y.sm.ANY]: [y.hj, a.F.IDENTIFY]
+            [b.sm.ANY]: [b.hj, a.F.IDENTIFY]
         },
         handler: () => e => {
             let {
@@ -335,12 +335,12 @@ let D = {
             } = e, i = {
                 currentUser: E.default.getCurrentUser()
             };
-            return null == i.currentUser || null != t && (0, s.A)(i, t) || n((0, x.A)(i.currentUser)), i
+            return null == i.currentUser || null != t && (0, s.A)(i, t) || n((0, v.A)(i.currentUser)), i
         }
     },
-    [b.ZE4.CURRENT_GUILD_MEMBER_UPDATE]: {
+    [y.ZE4.CURRENT_GUILD_MEMBER_UPDATE]: {
         scope: {
-            [y.sm.ALL]: [a.F.IDENTIFY, a.F.GUILDS_MEMBERS_READ]
+            [b.sm.ALL]: [a.F.IDENTIFY, a.F.GUILDS_MEMBERS_READ]
         },
         handler(e) {
             let {
@@ -355,25 +355,25 @@ let D = {
                 } = e, r = {
                     currentGuildMember: _.Ay.getSelfMember(t)
                 };
-                return null == r.currentGuildMember || null != n && (0, s.A)(r, n) || i((0, v.A)(r.currentGuildMember)), r
+                return null == r.currentGuildMember || null != n && (0, s.A)(r, n) || i((0, x.A)(r.currentGuildMember)), r
             }
         }
     },
-    [b.ZE4.ENTITLEMENT_CREATE]: {
+    [y.ZE4.ENTITLEMENT_CREATE]: {
         scope: {
-            [y.sm.ANY]: [y.hj, y.VH]
+            [b.sm.ANY]: [b.hj, b.VH]
         },
         handler() {}
     },
-    [b.ZE4.ENTITLEMENT_DELETE]: {
+    [y.ZE4.ENTITLEMENT_DELETE]: {
         scope: {
-            [y.sm.ANY]: [y.hj, y.VH]
+            [b.sm.ANY]: [b.hj, b.VH]
         },
         handler() {}
     },
-    [b.ZE4.SCREENSHARE_STATE_UPDATE]: {
+    [y.ZE4.SCREENSHARE_STATE_UPDATE]: {
         scope: {
-            [y.sm.ALL]: [y.hj, a.F.RPC_SCREENSHARE_READ]
+            [b.sm.ALL]: [b.hj, a.F.RPC_SCREENSHARE_READ]
         },
         handler: () => e => {
             let {
@@ -389,9 +389,9 @@ let D = {
             return r().isEqual(u, t) || n(u), u
         }
     },
-    [b.ZE4.VIDEO_STATE_UPDATE]: {
+    [y.ZE4.VIDEO_STATE_UPDATE]: {
         scope: {
-            [y.sm.ALL]: [y.hj, a.F.RPC_VIDEO_READ]
+            [b.sm.ALL]: [b.hj, a.F.RPC_VIDEO_READ]
         },
         handler: () => e => {
             let {
@@ -403,7 +403,7 @@ let D = {
             return r().isEqual(i, t) || n(i), i
         }
     },
-    [b.ZE4.AUTHORIZE_REQUEST]: {
+    [y.ZE4.AUTHORIZE_REQUEST]: {
         scope: void 0,
         handler() {}
     }

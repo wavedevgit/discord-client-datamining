@@ -1,11 +1,11 @@
 /** chunk id: 767379 params = (module,exports,require) **/
 n.d(t, {
-    default: () => E
+    default: () => T
 });
 var a = n(627968),
     i = n(64700),
-    l = n(835245),
-    s = n(158954),
+    s = n(835245),
+    l = n(158954),
     r = n(554146),
     o = n(397927),
     d = n(932001),
@@ -16,17 +16,17 @@ var a = n(627968),
     x = n(975571),
     p = n(935649),
     g = n(847599),
-    _ = n(295972),
-    f = n(36149),
-    v = n(807734),
+    f = n(295972),
+    v = n(36149),
+    _ = n(807734),
     b = n(652215),
     j = n(239093),
-    A = n(949268),
+    A = n(536242),
     C = n(985018),
-    y = n(325901),
+    y = n(774992),
     S = n(700129);
 
-function T(e) {
+function E(e) {
     let {
         modalSessionId: t,
         entryPoint: n
@@ -47,22 +47,22 @@ function T(e) {
         }
     }) : null
 }
-let E = function(e) {
+let T = function(e) {
     let {
         transitionState: t,
         entryPoint: n,
         onClose: u,
         onComplete: j,
-        dismissable: E,
+        dismissable: T,
         classificationId: N
-    } = e, [I, k] = i.useState(r.M.AGE_VERIFICATION_SURVEY_MODAL_GET_STARTED), O = i.useRef(I), [R, w] = (0, d.kn)([I], void 0, !0), D = i.useMemo(() => (0, l.A)(), []), M = i.useRef(!1), P = (0, m.W$)();
+    } = e, [I, k] = i.useState(r.M.AGE_VERIFICATION_SURVEY_MODAL_GET_STARTED), O = i.useRef(I), [R, w] = (0, d.kn)([I], void 0, !0), D = i.useMemo(() => (0, s.A)(), []), M = i.useRef(!1), P = (0, m.W$)();
     i.useEffect(() => {
         O.current = R
     }, [R]);
     let {
         loading: L,
         ageVerificationMethods: U
-    } = (0, v.A)({
+    } = (0, _.A)({
         onClose: () => {
             j?.(), u()
         },
@@ -80,20 +80,20 @@ let E = function(e) {
         }))
     }, []), i.useEffect(() => {
         (0, g.Bs)(D, g.WU.EXPRESSIVE_PRIMARY, n)
-    }, [D, n]), (0, a.jsx)(s.ExpressiveModal, {
+    }, [D, n]), (0, a.jsx)(l.ExpressiveModal, {
         transitionState: t,
         onClose: u,
         gradientColor: "blue",
-        dismissable: E,
+        dismissable: T,
         graphic: {
             type: "image",
             src: S.A
         },
-        title: (0, f.ST)(n),
-        subtitle: (0, f.mK)(n, () => {
+        title: (0, v.ST)(n),
+        subtitle: (0, v.mK)(n, () => {
             p.A.openUrl(x.A.getArticleURL(b.MVz.TIGGER_PAWTECT_LEARN_MORE)), (0, g.St)(D, g.WU.EXPRESSIVE_PRIMARY, g._7.LEARN_MORE)
         }, P),
-        actionBarInput: (0, a.jsx)(T, {
+        actionBarInput: (0, a.jsx)(E, {
             modalSessionId: D,
             entryPoint: n
         }),
@@ -133,7 +133,7 @@ let E = function(e) {
                     size: "sm",
                     text: C.intl.string(A.default.hDvmYP),
                     onClick: () => {
-                        (0, _.DJ)()
+                        (0, f.DJ)()
                     }
                 })]
             }) : (0, a.jsx)(o.BJc, {

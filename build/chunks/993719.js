@@ -1,6 +1,6 @@
 /** chunk id: 993719 params = (module,exports,require) **/
 n.d(t, {
-    N: () => l,
+    N: () => s,
     O: () => i
 });
 var a = n(73153);
@@ -12,7 +12,7 @@ function i(e) {
     })
 }
 
-function l(e) {
+function s(e) {
     a.h.dispatch({
         type: "CALL_FEEDBACK_TUTORIAL_DISMISS",
         tutorialKey: e

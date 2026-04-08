@@ -4,8 +4,8 @@ n.d(t, {
 });
 var a = n(627968),
     i = n(64700),
-    l = n(311907),
-    s = n(554146),
+    s = n(311907),
+    l = n(554146),
     r = n(265486),
     o = n(775602),
     d = n(379848),
@@ -16,17 +16,17 @@ var a = n(627968),
     x = n(881141),
     p = n(149757),
     g = n(788868),
-    _ = n(652215),
-    f = n(49999),
-    v = n(985018);
+    f = n(652215),
+    v = n(49999),
+    _ = n(985018);
 
 function b(e) {
     let {
         groupName: t,
         targetElementRef: n
-    } = e, i = (0, x.A)(), r = (0, l.bG)([o.A], () => o.A.useReducedMotion), m = (0, c.A)(e => e.isOpen), h = (0, u.G)();
+    } = e, i = (0, x.A)(), r = (0, s.bG)([o.A], () => o.A.useReducedMotion), m = (0, c.A)(e => e.isOpen), h = (0, u.G)();
     return r || null == i || m || h ? null : (0, a.jsx)(d.zJ, {
-        contentType: s.M.NITRO_TENURE_BADGE_LEVEL_UP,
+        contentType: l.M.NITRO_TENURE_BADGE_LEVEL_UP,
         timeRecurringConfig: {
             cooldownDurationMs: 12096e5
         },
@@ -34,13 +34,13 @@ function b(e) {
         children: e => {
             let {
                 visibleContent: t,
-                markAsDismissed: l
+                markAsDismissed: s
             } = e;
             return (0, a.jsx)(j, {
                 recentlyLeveledTenureBadge: i,
-                markAsDismissed: l,
+                markAsDismissed: s,
                 targetElementRef: n,
-                shouldShow: t === s.M.NITRO_TENURE_BADGE_LEVEL_UP
+                shouldShow: t === l.M.NITRO_TENURE_BADGE_LEVEL_UP
             })
         }
     })
@@ -50,25 +50,25 @@ function j(e) {
     let {
         recentlyLeveledTenureBadge: t,
         markAsDismissed: n,
-        targetElementRef: l,
-        shouldShow: s
+        targetElementRef: s,
+        shouldShow: l
     } = e, o = g.sp.indexOf(t), d = (0, p.I)(g.sp[o > 0 ? o - 1 : o]).ambient, u = (0, i.useCallback)(() => {
-        n(f.i.TAKE_ACTION), c.A.setState({
+        n(v.i.TAKE_ACTION), c.A.setState({
             shouldRenderTenureLevelUp: !0
-        }), m._.dispatch(_.jej.SHOW_ACCOUNT_PROFILE_POPOUT, {})
+        }), m._.dispatch(f.jej.SHOW_ACCOUNT_PROFILE_POPOUT, {})
     }, [n]), x = (0, i.useCallback)(() => {
-        n(f.i.USER_DISMISS)
-    }, [n]), b = g.VD[t], j = v.intl.formatToPlainString(v.t.ewkaVR, {
+        n(v.i.USER_DISMISS)
+    }, [n]), b = g.VD[t], j = _.intl.formatToPlainString(_.t.ewkaVR, {
         timeMilestone: (0, h.T)(b.id, b.tenureReqNumMonths)?.toLocaleLowerCase()
     }), A = [{
-        text: v.intl.string(v.t.RzWDqY),
+        text: _.intl.string(_.t.RzWDqY),
         variant: "primary",
         onClick: u
     }];
     return (0, a.jsx)(r.A, {
-        targetElementRef: l,
+        targetElementRef: s,
         onRequestClose: x,
-        shouldShow: s,
+        shouldShow: l,
         caretConfig: {
             align: "center"
         },
@@ -78,7 +78,7 @@ function j(e) {
             aspectRatio: "6/4"
         } : void 0,
         size: "lg",
-        title: v.intl.string(v.t.VoDxsV),
+        title: _.intl.string(_.t.VoDxsV),
         body: j,
         actions: A
     })

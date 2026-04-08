@@ -20,14 +20,14 @@ var i = n(627968),
     E = n(203982),
     I = n(652215),
     f = n(985018),
-    C = n(679328);
+    C = n(708015);
 let T = (0, _.Fe)({
         createPromise: () => Promise.resolve().then(n.bind(n, 944771)),
         webpackId: 944771,
         name: "ComponentPlayground"
     }),
     N = (0, _.Fe)({
-        createPromise: () => Promise.all([n.e("43600"), n.e("68587"), n.e("33144"), n.e("78888")]).then(n.bind(n, 667587)),
+        createPromise: () => Promise.all([n.e("43600"), n.e("68587"), n.e("91872"), n.e("78888")]).then(n.bind(n, 667587)),
         webpackId: 667587,
         name: "ChannelSettings"
     }),
@@ -36,19 +36,19 @@ let T = (0, _.Fe)({
         webpackId: 737630,
         name: "CollectiblesShop"
     }),
-    v = (0, _.Fe)({
-        createPromise: () => Promise.all([n.e("43600"), n.e("68587"), n.e("63379"), n.e("56026"), n.e("16301"), n.e("22191"), n.e("25961"), n.e("33144"), n.e("35894"), n.e("50796"), n.e("94253"), n.e("8458"), n.e("11810"), n.e("90226"), n.e("98700")]).then(n.bind(n, 422559)),
+    x = (0, _.Fe)({
+        createPromise: () => Promise.all([n.e("43600"), n.e("68587"), n.e("63379"), n.e("56026"), n.e("16301"), n.e("22191"), n.e("25961"), n.e("91872"), n.e("35894"), n.e("50796"), n.e("94253"), n.e("8458"), n.e("11810"), n.e("85200"), n.e("98700")]).then(n.bind(n, 422559)),
         webpackId: 422559,
         name: "GuildSettings"
     }),
-    x = {
+    v = {
         [I.zgK.CHANNEL_SETTINGS]: () => (0, i.jsx)(N, {}),
-        [I.zgK.GUILD_SETTINGS]: () => (0, i.jsx)(v, {}),
+        [I.zgK.GUILD_SETTINGS]: () => (0, i.jsx)(x, {}),
         [I.zgK.COLLECTIBLES_SHOP]: () => (0, i.jsx)(S, {}),
         [I.zgK.COMPONENT_PLAYGROUND]: () => (0, i.jsx)(T, {})
     },
-    y = "SHOWN",
-    b = "HIDDEN",
+    b = "SHOWN",
+    y = "HIDDEN",
     O = {
         friction: 10,
         tension: 100
@@ -73,7 +73,7 @@ class R extends r.PureComponent {
         super(e);
         let t = 1,
             n = 1;
-        e.mode === b && (t = .93, n = 0), this.state = {
+        e.mode === y && (t = .93, n = 0), this.state = {
             animating: !1,
             scale: new s.A.Value(t),
             opacity: new s.A.Value(n),
@@ -87,8 +87,8 @@ class R extends r.PureComponent {
             mode: n
         } = e;
         if (t !== n) {
-            if (t === y && n === b) return this.animateIn();
-            if (t === b && n === y) return this.animateUnder()
+            if (t === b && n === y) return this.animateIn();
+            if (t === y && n === b) return this.animateUnder()
         }
     }
     componentWillEnter(e) {
@@ -163,7 +163,7 @@ class R extends r.PureComponent {
             children: r,
             baseLayer: a,
             ...o
-        } = this.props, d = n === b, u = e || d ? this.getAnimatedStyle() : null, A = !d && !a, h = (0, i.jsx)(s.A.div, {
+        } = this.props, d = n === y, u = e || d ? this.getAnimatedStyle() : null, A = !d && !a, h = (0, i.jsx)(s.A.div, {
             ref: e => this.containerRef.current = null != e ? e.componentRef : void 0,
             "data-layer": t ?? "base",
             "aria-hidden": d,
@@ -184,7 +184,7 @@ class R extends r.PureComponent {
             className: l()(C.qd, {
                 [C.n3]: a,
                 [C.bW]: e,
-                "stop-animations": n === b
+                "stop-animations": n === y
             }),
             style: u,
             ...o,
@@ -230,16 +230,16 @@ class P extends r.PureComponent {
             length: r
         } = t, a = [];
         return a.push((0, i.jsx)(R, {
-            mode: 0 !== r || n ? b : y,
+            mode: 0 !== r || n ? y : b,
             baseLayer: !0,
             children: e
         }, "layer-base")), t.forEach((e, t) => a.push(this.renderComponent(e, t, r))), a
     }
     renderComponent(e, t, n) {
         let r;
-        return r = "string" == typeof e ? x[e]() : (0, i.jsx)(e, {}), (0, i.jsxs)(R, {
+        return r = "string" == typeof e ? v[e]() : (0, i.jsx)(e, {}), (0, i.jsxs)(R, {
             name: "string" == typeof e ? e : void 0,
-            mode: t === n - 1 ? y : b,
+            mode: t === n - 1 ? b : y,
             children: [(0, i.jsx)(L, {}), r]
         }, `layer-${t}`)
     }

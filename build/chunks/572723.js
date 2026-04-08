@@ -27,7 +27,7 @@ var i = n(627968),
     k = n(256252),
     C = n(382913),
     E = n(985018),
-    O = n(425869);
+    O = n(545052);
 let A = ["Android", "iOS", "Windows Mobile", "Windows", "Linux", "Mac OS X"].map(e => ({
     id: e,
     label: e,
@@ -58,8 +58,8 @@ function L(e) {
             },
             rejectWithError: !0
         }).then(e => {
-            if (null != e.body && "ef52faa73c1c89c2175021407c802b5c642a7387" !== e.body.hash) {
-                let e = new Date("1775680797276"),
+            if (null != e.body && "da5b55d9ad15e84553d26371d6a6a816b3b394f0" !== e.body.hash) {
+                let e = new Date("1775684824479"),
                     t = new Date,
                     n = (0, S.Tf)(t, e);
                 n.hours > 6 && ef(n.hours)

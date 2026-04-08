@@ -4,8 +4,8 @@ n.d(t, {
 });
 var a = n(627968),
     i = n(64700),
-    l = n(732955),
-    s = n(421380),
+    s = n(732955),
+    l = n(421380),
     r = n(397927),
     o = n(793574),
     d = n(979286),
@@ -16,17 +16,17 @@ var a = n(627968),
     x = n(971649),
     p = n(651892),
     g = n(901406),
-    _ = n(92246),
-    f = n(792620),
-    v = n(814793),
+    f = n(92246),
+    v = n(792620),
+    _ = n(814793),
     b = n(753386),
     j = n(201805),
     A = n(545986),
     C = n(194267),
     y = n(963713),
     S = n(758836),
-    T = n(985018),
-    E = n(753219);
+    E = n(985018),
+    T = n(384100);
 
 function N(e) {
     let {
@@ -34,7 +34,7 @@ function N(e) {
         sourceQuestContent: n,
         taskDetails: i
     } = e;
-    return (0, a.jsx)(l.$nd, {
+    return (0, a.jsx)(s.$nd, {
         variant: "primary",
         fullWidth: !0,
         onClick: () => {
@@ -54,8 +54,8 @@ let I = e => {
         let {
             quest: t,
             sourceQuestContent: n
-        } = e, i = (0, x.go)(), s = (0, p.wr)(t);
-        return (0, a.jsx)(l.$nd, {
+        } = e, i = (0, x.go)(), l = (0, p.wr)(t);
+        return (0, a.jsx)(s.$nd, {
             size: "sm",
             fullWidth: !0,
             onClick: () => (0, g.pu)(t, {
@@ -64,7 +64,7 @@ let I = e => {
                 impressionId: i,
                 sourceQuestContent: n
             }),
-            text: s
+            text: l
         })
     },
     k = e => {
@@ -72,7 +72,7 @@ let I = e => {
             quest: t,
             sourceQuestContent: n
         } = e, i = (0, x.vU)()?.getId();
-        return (0, a.jsx)(l.$nd, {
+        return (0, a.jsx)(s.$nd, {
             fullWidth: !0,
             onClick: () => (0, g.se)({
                 quest: t
@@ -83,7 +83,7 @@ let I = e => {
                 sourceQuestContent: n
             }),
             size: "sm",
-            text: T.intl.string(T.t.csptqV)
+            text: E.intl.string(E.t.csptqV)
         })
     },
     O = e => {
@@ -94,7 +94,7 @@ let I = e => {
         }), {
             launchInGameActivity: i
         } = (0, m.zW)(t);
-        return (0, v.vA)(t) ? (0, a.jsx)(l.$nd, {
+        return (0, _.vA)(t) ? (0, a.jsx)(s.$nd, {
             fullWidth: !0,
             variant: "primary",
             icon: (0, A.Oz)(t),
@@ -108,7 +108,7 @@ let I = e => {
             quest: t,
             sourceQuestContent: n,
             taskDetails: i,
-            popoutTargetElementRef: s,
+            popoutTargetElementRef: l,
             onGameSheetOpened: r,
             onGameSheetClosed: o
         } = e, {
@@ -118,14 +118,14 @@ let I = e => {
             quest: t,
             sourceQuestContent: n,
             applications: d ?? [],
-            targetElementRef: s,
+            targetElementRef: l,
             onGameSheetOpened: r,
             onGameSheetClosed: o,
-            children: e => (0, a.jsx)(l.$nd, {
+            children: e => (0, a.jsx)(s.$nd, {
                 variant: "secondary",
                 fullWidth: !0,
                 size: "sm",
-                text: T.intl.string(T.t["93PTEs"]),
+                text: E.intl.string(E.t["93PTEs"]),
                 ...e
             })
         })
@@ -143,26 +143,26 @@ let I = e => {
             questContent: u,
             sourceQuestContent: m
         }), p = i.useCallback(e => {
-            r?.(e), (0, _.ks)(t.config) && t.userStatus?.claimedAt != null ? (0, d.Cz)({
+            r?.(e), (0, f.ks)(t.config) && t.userStatus?.claimedAt != null ? (0, d.Cz)({
                 tab: S.G2.ORBS,
                 analyticsLocations: [],
                 analyticsSource: o.A.QUEST_HOME_PAGE
             }) : x()
         }, [r, t.config, t.userStatus?.claimedAt, x]);
-        return (0, a.jsx)(l.$nd, {
+        return (0, a.jsx)(s.$nd, {
             fullWidth: !0,
             onClick: p,
-            text: n ?? T.intl.string(T.t.cfY4PE),
+            text: n ?? E.intl.string(E.t.cfY4PE),
             ...h,
-            size: h.size === s.$n.Sizes.MEDIUM ? "md" : "sm"
+            size: h.size === l.$n.Sizes.MEDIUM ? "md" : "sm"
         })
     },
     D = e => {
         let {
             sourceQuestContent: t,
             awaitingConsoleConnections: n,
-            hasMadeProgress: l,
-            isProgressing: s,
+            hasMadeProgress: s,
+            isProgressing: l,
             activeScreen: r,
             popoutTargetElementRef: o
         } = e, {
@@ -170,43 +170,43 @@ let I = e => {
             onGameSheetOpen: u,
             onGameSheetClose: m,
             taskDetails: h
-        } = i.useContext(y.T), x = d.userStatus?.completedAt != null, p = (0, f.vv)(d), g = r !== c.X0.SELECT && !l && !s, _ = null;
-        return x ? _ = (0, a.jsx)(w, {
+        } = i.useContext(y.T), x = d.userStatus?.completedAt != null, p = (0, v.vv)(d), g = r !== c.X0.SELECT && !s && !l, f = null;
+        return x ? f = (0, a.jsx)(w, {
             quest: d,
             sourceQuestContent: t
-        }) : p ? _ = (0, a.jsx)(N, {
+        }) : p ? f = (0, a.jsx)(N, {
             quest: d,
             sourceQuestContent: t,
             taskDetails: h
-        }) : (0, v.vA)(d) ? _ = (0, a.jsx)(O, {
+        }) : (0, _.vA)(d) ? f = (0, a.jsx)(O, {
             quest: d
-        }) : r === c.X0.CONSOLE && n ? _ = (0, a.jsx)(k, {
+        }) : r === c.X0.CONSOLE && n ? f = (0, a.jsx)(k, {
             quest: d,
             sourceQuestContent: t
-        }) : g && (0, v.ui)(d) ? _ = (0, a.jsx)(R, {
+        }) : g && (0, _.ui)(d) ? f = (0, a.jsx)(R, {
             quest: d,
             sourceQuestContent: t,
             taskDetails: h,
             popoutTargetElementRef: o,
             onGameSheetOpened: u,
             onGameSheetClosed: m
-        }) : g && (_ = (0, a.jsx)(I, {
+        }) : g && (f = (0, a.jsx)(I, {
             quest: d,
             sourceQuestContent: t
-        })), null == _ ? null : (0, a.jsx)("div", {
-            className: E.lO,
-            children: _
+        })), null == f ? null : (0, a.jsx)("div", {
+            className: T.lO,
+            children: f
         })
     };
 
 function M(e) {
     let t = i.useRef(null);
     return (0, a.jsxs)("div", {
-        className: E.oG,
+        className: T.oG,
         ref: t,
-        children: [e.showBackButton && (0, a.jsx)(l.K0, {
+        children: [e.showBackButton && (0, a.jsx)(s.K0, {
             size: "sm",
-            "aria-label": T.intl.string(T.t["13/7kX"]),
+            "aria-label": E.intl.string(E.t["13/7kX"]),
             onClick: e.onBack,
             icon: r.n2b,
             variant: "secondary"

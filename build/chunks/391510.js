@@ -98,16 +98,16 @@ let E = ["1402418171662569542"],
                 let S = (0, o.E)(a, T, f, null != C && (0, c.x)(C) && f, N);
                 S > 0 && (a.flags = S);
                 let {
-                    assets: v,
-                    party: x,
-                    secrets: y,
-                    timestamps: b,
+                    assets: x,
+                    party: v,
+                    secrets: b,
+                    timestamps: y,
                     buttons: O,
                     type: L
                 } = a;
-                if (null == L && (a.type = g.$pd.PLAYING), null != y) {
-                    let e = r().values(y).filter(e => !!e);
-                    if (null != x && r().intersection(e, [x.id]).length > 0 && !E.includes(n.application.id)) throw new _.A({
+                if (null == L && (a.type = g.$pd.PLAYING), null != b) {
+                    let e = r().values(b).filter(e => !!e);
+                    if (null != v && r().intersection(e, [v.id]).length > 0 && !E.includes(n.application.id)) throw new _.A({
                         errorCode: g.Lw6.INVALID_ACTIVITY_SECRET
                     }, "secrets cannot match the party id");
                     if (r().uniq(e).length < e.length) throw new _.A({
@@ -117,16 +117,16 @@ let E = ["1402418171662569542"],
                         errorCode: g.Lw6.INVALID_ACTIVITY_SECRET
                     }, "secrets cannot currently be sent with buttons")
                 }
-                if (null != O && (m.button_urls = O.map(e => e.url), a.buttons = O.map(e => e.label)), a.metadata = m, null != b)
-                    for (let e of Object.keys(b)) Date.now().toString().length - b[e].toString().length > 2 && (b[e] = Math.floor(b[e] * h.A.Millis.SECOND));
-                if (null == v) t = Promise.resolve([]);
+                if (null != O && (m.button_urls = O.map(e => e.url), a.buttons = O.map(e => e.label)), a.metadata = m, null != y)
+                    for (let e of Object.keys(y)) Date.now().toString().length - y[e].toString().length > 2 && (y[e] = Math.floor(y[e] * h.A.Millis.SECOND));
+                if (null == x) t = Promise.resolve([]);
                 else {
                     if (null == n.application || null == n.application.id) throw Error();
-                    t = (0, A.RG)(n.application.id, [v.large_image, v.small_image, v.invite_cover_image])
+                    t = (0, A.RG)(n.application.id, [x.large_image, x.small_image, x.invite_cover_image])
                 }
                 return t.then(e => {
                     let [t, r, o] = e;
-                    if (null != v && (null != t ? v.large_image = t : delete v.large_image, null != r ? v.small_image = r : delete v.small_image, null != o ? v.invite_cover_image = o : delete v.invite_cover_image), !l()) return;
+                    if (null != x && (null != t ? x.large_image = t : delete x.large_image, null != r ? x.small_image = r : delete x.small_image, null != o ? x.invite_cover_image = o : delete x.invite_cover_image), !l()) return;
                     s.h.dispatch({
                         type: "LOCAL_ACTIVITY_UPDATE",
                         socketId: n.id,
@@ -146,7 +146,7 @@ let E = ["1402418171662569542"],
                         state: a.state ?? "",
                         has_urls: null != a.state_url || null != a.details_url || a.assets?.large_url != null || a.assets?.small_url != null
                     };
-                    return null != d && (A.has_match_secret = !!d.match, A.has_join_secret = !!d.join), null != v && (A.has_images = !!(v.large_image || v.small_image || v.invite_cover_image)), null != c && (A.party_max = null != c.size && c.size[1] > 0 ? c.size[1] : void 0, A.party_id = c.id), u.default.track(g.HAw.ACTIVITY_UPDATED, A), a
+                    return null != d && (A.has_match_secret = !!d.match, A.has_join_secret = !!d.join), null != x && (A.has_images = !!(x.large_image || x.small_image || x.invite_cover_image)), null != c && (A.party_max = null != c.size && c.size[1] > 0 ? c.size[1] : void 0, A.party_id = c.id), u.default.track(g.HAw.ACTIVITY_UPDATED, A), a
                 })
             }
         }
