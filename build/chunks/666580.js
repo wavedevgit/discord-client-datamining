@@ -18,11 +18,11 @@ let s = e => {
     a.useEffect(() => {
         m(u)
     }, [u]);
-    let x = a.useMemo(() => c.map(e => ({
+    let p = a.useMemo(() => c.map(e => ({
             name: e.label,
             value: e.value
         })), [c]),
-        p = a.useCallback(e => {
+        g = a.useCallback(e => {
             null != e && (m(e), n(d, e))
         }, [n, d]);
     return (0, l.jsxs)("div", {
@@ -36,8 +36,8 @@ let s = e => {
             })]
         }), (0, l.jsx)(i.z6M, {
             value: _,
-            onChange: p,
-            options: x
+            onChange: g,
+            options: p
         })]
     })
 }

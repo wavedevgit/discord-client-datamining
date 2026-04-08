@@ -15,11 +15,11 @@ let d = e => {
     } = e, o = t.name, {
         title: c,
         options: u
-    } = t.data, _ = d?.[o]?.value ?? void 0, [m, x] = a.useState(_);
+    } = t.data, _ = d?.[o]?.value ?? void 0, [m, p] = a.useState(_);
     a.useEffect(() => {
-        x(_)
+        p(_)
     }, [_]);
-    let p = a.useMemo(() => u.map(e => {
+    let g = a.useMemo(() => u.map(e => {
             let t = e.label;
             try {
                 t = (0, r.Gw)(e.value)
@@ -30,8 +30,8 @@ let d = e => {
                 label: t
             }
         }).sort((e, t) => e.label.localeCompare(t.label)), [u]),
-        g = a.useCallback(e => {
-            null != e && (x(e), n(o, e))
+        x = a.useCallback(e => {
+            null != e && (p(e), n(o, e))
         }, [n, o]);
     return (0, l.jsx)("div", {
         className: s.QB,
@@ -39,8 +39,8 @@ let d = e => {
             label: c,
             value: m,
             required: t.should_submit_data,
-            onSelectionChange: g,
-            options: p,
+            onSelectionChange: x,
+            options: g,
             selectionMode: "single",
             maxOptionsVisible: 4,
             fullWidth: !0

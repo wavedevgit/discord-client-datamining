@@ -3,13 +3,13 @@ n.d(t, {
     A: () => m
 });
 var i = n(64700),
-    l = n(311907),
-    a = n(704824),
+    a = n(311907),
+    l = n(704824),
     s = n(429913),
     r = n(633075),
     o = n(667049),
-    c = n(287809),
-    d = n(403362),
+    d = n(287809),
+    c = n(403362),
     u = n(369374),
     g = n(395332);
 
@@ -18,12 +18,12 @@ function m(e) {
         enabled: t
     } = u.A.useConfig({
         location: e.location
-    }), n = (0, l.bG)([c.default], () => c.default.getCurrentUser()), m = (0, g.w$)({
+    }), n = (0, a.bG)([d.default], () => d.default.getCurrentUser()), m = (0, g.w$)({
         location: e.location
     }), x = i.useMemo(() => m?.filter(e => e.isEligibleForSuggestions()), [m]), f = i.useMemo(() => x?.map(e => e.applicationId) ?? [], [x]), p = (0, s.A)(f), {
         tokens: h,
         fetched: _
-    } = (0, a.j)(f), A = (0, o.A)(n?.id), I = null == n || null == x || null == h || !_;
+    } = (0, l.j)(f), A = (0, o.A)(n?.id), I = null == n || null == x || null == h || !_;
     return i.useMemo(() => I ? {
         isLoading: I
     } : t ? {
@@ -39,7 +39,7 @@ function m(e) {
                 application: t,
                 dismissibleContent: e.suggestedWidgetLinkedDc
             }
-        }).filter(d.Vq),
+        }).filter(c.Vq),
         currentUser: n
     }, [t, I, x, n, p, h, A])
 }

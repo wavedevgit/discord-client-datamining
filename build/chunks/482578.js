@@ -16,21 +16,21 @@ let o = e => {
             onClick: u,
             canNavigateBack: _,
             onBackClicked: m,
-            isModeratorReport: x,
-            className: p
+            isModeratorReport: p,
+            className: g
         } = e,
-        g = a.useRef(null),
+        x = a.useRef(null),
         h = null != n && "cancel" !== n.type,
         A = _ && n?.type !== "done",
-        b = h || A;
+        v = h || A;
     if (a.useEffect(() => {
-            (n?.type === "submit" || n?.type === "done") && g.current?.focus()
-        }, [n?.type]), !b) return null;
-    let v = s.intl.string(s.t.i4jeWR);
-    return n?.type === "submit" ? (t = "critical-primary", v = x ? s.intl.string(d.default.ZUyreS) : s.intl.string(s.t["G+vU89"])) : n?.type === "next" ? v = s.intl.string(s.t.PDTjLN) : n?.type === "cancel" && (v = s.intl.string(s.t["ETE/oC"]), t = "secondary"), (0, l.jsx)(i.jlY, {
+            (n?.type === "submit" || n?.type === "done") && x.current?.focus()
+        }, [n?.type]), !v) return null;
+    let b = s.intl.string(s.t.i4jeWR);
+    return n?.type === "submit" ? (t = "critical-primary", b = p ? s.intl.string(d.default.ZUyreS) : s.intl.string(s.t["G+vU89"])) : n?.type === "next" ? b = s.intl.string(s.t.PDTjLN) : n?.type === "cancel" && (b = s.intl.string(s.t["ETE/oC"]), t = "secondary"), (0, l.jsx)(i.jlY, {
         "data-migration-pending": !0,
         direction: r.A.Direction.HORIZONTAL,
-        className: p,
+        className: g,
         children: (0, l.jsxs)(i.ButtonGroup, {
             fullWidth: !0,
             children: [A && (0, l.jsx)(i.Button, {
@@ -44,8 +44,8 @@ let o = e => {
                 },
                 variant: t,
                 disabled: o || c,
-                buttonRef: g,
-                text: v
+                buttonRef: x,
+                text: b
             })]
         })
     })

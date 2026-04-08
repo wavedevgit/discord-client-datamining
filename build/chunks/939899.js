@@ -4,13 +4,13 @@ n.d(t, {
     R: () => b
 });
 var i = n(627968),
-    l = n(64700),
-    a = n(503698),
-    s = n.n(a),
+    a = n(64700),
+    l = n(503698),
+    s = n.n(l),
     r = n(485584),
     o = n(598748),
-    c = n(158954),
-    d = n(311907),
+    d = n(158954),
+    c = n(311907),
     u = n(793574),
     g = n(688810),
     m = n(362490),
@@ -27,7 +27,7 @@ function v(e) {
     let {
         applicationId: t,
         size: n = "default"
-    } = e, l = (0, d.bG)([A.A], () => A.A.getApplicationWidgetConfig(t));
+    } = e, a = (0, c.bG)([A.A], () => A.A.getApplicationWidgetConfig(t));
     return (0, i.jsxs)("div", {
         className: s()(j.kL, {
             [j.PG]: "small" === n
@@ -56,8 +56,8 @@ function v(e) {
             })]
         }), (0, i.jsx)("div", {
             className: j.ZS,
-            children: l?.miniPreviewImage != null ? (0, i.jsx)("img", {
-                src: l.miniPreviewImage,
+            children: a?.miniPreviewImage != null ? (0, i.jsx)("img", {
+                src: a.miniPreviewImage,
                 alt: "",
                 className: j.oz
             }) : (0, i.jsx)("div", {
@@ -71,16 +71,16 @@ function E(e) {
     let {
         applicationId: t,
         size: n = "default",
-        userId: l
-    } = e, a = (0, f.A)(l, t), c = a.surfaceConfigs[o.m.ADD_WIDGET_PREVIEW];
-    return null == c ? null : (0, i.jsx)("div", {
+        userId: a
+    } = e, l = (0, f.A)(a, t), d = l.surfaceConfigs[o.m.ADD_WIDGET_PREVIEW];
+    return null == d ? null : (0, i.jsx)("div", {
         className: s()(j.iW, {
             [j.PG]: "small" === n
         }),
         children: (0, i.jsx)(r.kH, {
-            ...a,
+            ...l,
             surface: o.m.ADD_WIDGET_PREVIEW,
-            surfaceConfig: c,
+            surfaceConfig: d,
             layoutProps: {
                 small: "small" === n
             }
@@ -89,7 +89,7 @@ function E(e) {
 }
 
 function T(e) {
-    let t = (0, d.bG)([h.default], () => h.default.getCurrentUser()),
+    let t = (0, c.bG)([h.default], () => h.default.getCurrentUser()),
         {
             enabled: n
         } = x.A.useConfig({
@@ -108,27 +108,27 @@ function b(e) {
         applicationId: t,
         size: n = "default"
     } = e, {
-        trackUserProfileAction: a
+        trackUserProfileAction: l
     } = (0, _.NJ)(), s = (0, p.h)(t), {
         hasAlreadyLinked: r,
         canStartAuthorization: o,
-        startAuthorization: d,
+        startAuthorization: c,
         fetched: x
     } = (0, m.RD)(s), {
         analyticsLocations: f
-    } = (0, g.Ay)(u.A.USER_PROFILE_APPLICATION_WIDGET), h = l.useCallback(() => {
-        o && (a({
+    } = (0, g.Ay)(u.A.USER_PROFILE_APPLICATION_WIDGET), h = a.useCallback(() => {
+        o && (l({
             action: "PRESS_APPLICATION_WIDGET_PLACEHOLDER_CONNECT",
             applicationId: t
-        }), d({
+        }), c({
             analyticsLocations: f
         }))
-    }, [o, a, t, d, f]);
+    }, [o, l, t, c, f]);
     return "default" !== n || null == s ? null : (0, i.jsxs)("div", {
         className: j.qr,
-        children: [(0, i.jsx)(c.A5T, {
+        children: [(0, i.jsx)(d.A5T, {
             size: "xs"
-        }), (0, i.jsx)(c.EYj, {
+        }), (0, i.jsx)(d.EYj, {
             variant: "text-sm/medium",
             color: "text-subtle",
             children: x ? r ? I.intl.format(I.t.wiyuG9, {

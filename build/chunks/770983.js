@@ -1,15 +1,15 @@
 /** chunk id: 770983 params = (module,exports,require) **/
 n.d(t, {
-    A: () => w
+    A: () => O
 });
 var i = n(627968),
-    l = n(64700),
-    a = n(503698),
-    s = n.n(a),
+    a = n(64700),
+    l = n(503698),
+    s = n.n(l),
     r = n(158954),
     o = n(311907),
-    c = n(435371),
-    d = n(397927),
+    d = n(435371),
+    c = n(397927),
     u = n(688810),
     g = n(429913),
     m = n(576030),
@@ -34,27 +34,27 @@ function R(e) {
     let {
         application: t,
         sku: n,
-        handleOpenUserProfileModal: a,
+        handleOpenUserProfileModal: l,
         analyticsLocations: s
-    } = e, o = l.useRef(null), {
+    } = e, o = a.useRef(null), {
         analyticsLocations: g
     } = (0, u.Ay)(s ?? []), {
         isHoveringOrFocusing: p
-    } = (0, x.A)(o), [_, I] = l.useState(!1), j = l.useCallback(async e => {
+    } = (0, x.A)(o), [_, I] = a.useState(!1), j = a.useCallback(async e => {
         if (e.stopPropagation(), !_) {
             I(!0);
             try {
-                await A.A.addSkuToWishlist(n.id, g), a?.({
+                await A.A.addSkuToWishlist(n.id, g), l?.({
                     tabSection: S.RP.WISHLIST
                 })
             } catch (e) {
-                (0, d.showToast)((0, d.createToast)(N.intl.string(N.t.F8FvUy), d.ToastType.FAILURE)), r.ORC.announce(N.intl.string(N.t.F8FvUy))
+                (0, c.showToast)((0, c.createToast)(N.intl.string(N.t.F8FvUy), c.ToastType.FAILURE)), r.ORC.announce(N.intl.string(N.t.F8FvUy))
             } finally {
                 I(!1)
             }
         }
-    }, [n.id, g, a, _]);
-    return (0, i.jsx)(c.un, {
+    }, [n.id, g, l, _]);
+    return (0, i.jsx)(d.un, {
         title: N.intl.string(N.t["8DkMEQ"]),
         body: n.name,
         asset: (0, i.jsx)(m.mW, {
@@ -79,7 +79,7 @@ function R(e) {
                     className: y.R$,
                     children: _ ? (0, i.jsx)(f.k, {}) : (0, i.jsx)(r.pa$, {
                         size: "lg",
-                        color: d.LU0.unsafe_rawColors.WHITE_500
+                        color: c.LU0.unsafe_rawColors.WHITE_500
                     })
                 })]
             })]
@@ -91,14 +91,14 @@ function k(e) {
     let {
         wishlist: t,
         handleOpenUserProfileModal: n,
-        analyticsLocations: a,
+        analyticsLocations: l,
         numWishlistItemsToRecommend: r,
-        maxWishlistItemsToShow: c = r,
-        className: d,
+        maxWishlistItemsToShow: d = r,
+        className: c,
         isLoading: u,
         recommendations: m,
         applicationIds: x
-    } = e, h = (0, g.A)(x), A = (0, o.bG)([_.default], () => _.default.getUser(t?.userId)), v = (0, I.GG)("add_to_wishlist_grid"), E = (0, j.Gh)("add_to_wishlist_grid_suggested_nitro"), S = l.useMemo(() => h.reduce((e, t) => (null == t || (e[t.id] = t), e), {}), [h]), k = l.useMemo(() => new Set(t?.items.map(e => e.skuId) ?? []), [t]), w = E && v && !k.has(C.pe.TIER_2), O = l.useMemo(() => w ? new p.A({
+    } = e, h = (0, g.A)(x), A = (0, o.bG)([_.default], () => _.default.getUser(t?.userId)), v = (0, I.GG)("add_to_wishlist_grid"), E = (0, j.Gh)("add_to_wishlist_grid_suggested_nitro"), S = a.useMemo(() => h.reduce((e, t) => (null == t || (e[t.id] = t), e), {}), [h]), k = a.useMemo(() => new Set(t?.items.map(e => e.skuId) ?? []), [t]), O = E && v && !k.has(C.pe.TIER_2), w = a.useMemo(() => O ? new p.A({
         id: C.pe.TIER_2,
         productLine: b.EZt.PREMIUM,
         name: N.intl.string(N.t.lG6a5x),
@@ -111,34 +111,34 @@ function k(e) {
         selectedOptions: [],
         eligibleOffers: [],
         prices: {}
-    }) : null, [w]), L = m.filter(e => !k.has(e.id)).slice(0, null != O ? Math.max(0, c - 1) : c), P = null != O ? [O, ...L] : L;
+    }) : null, [O]), L = m.filter(e => !k.has(e.id)).slice(0, null != w ? Math.max(0, d - 1) : d), P = null != w ? [w, ...L] : L;
     return u ? (0, i.jsx)("div", {
         className: y.g4,
         children: (0, i.jsx)(f.k, {})
     }) : 0 === P.length ? null : (0, i.jsx)("ul", {
-        className: s()(y.Vg, d),
+        className: s()(y.Vg, c),
         children: P.map(e => v ? (0, i.jsx)(T.J, {
             sku: e,
             wishlistId: t?.id,
             wishlistOwner: A,
             handleOpenUserProfileModal: n,
-            analyticsLocations: a
+            analyticsLocations: l
         }, e.id) : null == e.applicationId || null == S[e.applicationId] ? null : (0, i.jsx)(R, {
             application: S[e.applicationId],
             sku: e,
             handleOpenUserProfileModal: n,
-            analyticsLocations: a
+            analyticsLocations: l
         }, e.id))
     })
 }
 
-function w(e) {
+function O(e) {
     let {
         userId: t,
         numWishlistItemsToRecommend: n,
-        ...l
+        ...a
     } = e, {
-        recommendations: a,
+        recommendations: l,
         status: s
     } = (0, E.Ul)({
         userId: t,
@@ -147,8 +147,8 @@ function w(e) {
     });
     return (0, i.jsx)(k, {
         isLoading: "loading" === s,
-        recommendations: a,
+        recommendations: l,
         numWishlistItemsToRecommend: n,
-        ...l
+        ...a
     })
 }

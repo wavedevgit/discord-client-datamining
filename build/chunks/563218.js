@@ -1,6 +1,6 @@
 /** chunk id: 563218 params = (module,exports,require) **/
 n.d(t, {
-    A: () => b
+    A: () => v
 });
 var l = n(627968),
     a = n(64700),
@@ -13,9 +13,9 @@ var l = n(627968),
     u = n(858897),
     _ = n(734057),
     m = n(319582),
-    x = n(369053),
-    p = n(652215),
-    g = n(985018),
+    p = n(369053),
+    g = n(652215),
+    x = n(985018),
     h = n(266004);
 
 function A(e) {
@@ -26,33 +26,33 @@ function A(e) {
         trackSettingsUpsellsAction: r
     } = e, [d, c] = a.useState(!1);
     return (0, s.Ay)(() => {
-        r(x.lJ.SETTINGS_UPSELLS_VIEWED)
+        r(p.lJ.SETTINGS_UPSELLS_VIEWED)
     }), (0, l.jsx)(o.PQ, {
         title: t,
         description: n,
-        buttonText: d ? g.intl.string(g.t["h+WsPb"]) : g.intl.string(g.t.A8t4Nf),
+        buttonText: d ? x.intl.string(x.t["h+WsPb"]) : x.intl.string(x.t.A8t4Nf),
         buttonDisabled: d,
         onButtonPress: () => {
-            i(), c(!0), r(x.lJ.SETTINGS_UPSELLS_APPLY_CLICKED)
+            i(), c(!0), r(p.lJ.SETTINGS_UPSELLS_APPLY_CLICKED)
         }
     })
 }
 
-function b(e) {
+function v(e) {
     let {
         settingsUpsells: t,
         channelId: n,
         onModalClose: a,
         reportId: s,
         reportType: o,
-        reportSubType: b
-    } = e, v = (0, i.bG)([_.A], () => _.A.getChannel(n)), f = (0, m.MR)(t, v?.type), T = (0, x.Mw)(o, b, s);
+        reportSubType: v
+    } = e, b = (0, i.bG)([_.A], () => _.A.getChannel(n)), f = (0, m.MR)(t, b?.type), T = (0, p.Mw)(o, v, s);
     return 0 === f.length ? null : (0, l.jsxs)("div", {
         className: h.kL,
         children: [(0, l.jsx)(r.Heading, {
             variant: "text-sm/semibold",
             className: h.wx,
-            children: g.intl.string(g.t["1yxTIJ"])
+            children: x.intl.string(x.t["1yxTIJ"])
         }), (0, l.jsx)("div", {
             className: h.uk,
             children: f.map((e, n) => {
@@ -69,13 +69,13 @@ function b(e) {
                 }, n)
             })
         }), (0, l.jsx)(r.QWc, {
-            text: g.intl.string(g.t.olebGx),
+            text: x.intl.string(x.t.olebGx),
             onClick: () => {
-                (0, u.openUserSettings)(c.X.CONTENT_AND_SOCIAL_PANEL), a(), d.Ay.trackWithMetadata(p.HAw.IAR_SETTINGS_UPSELLS_ACTION, {
+                (0, u.openUserSettings)(c.X.CONTENT_AND_SOCIAL_PANEL), a(), d.Ay.trackWithMetadata(g.HAw.IAR_SETTINGS_UPSELLS_ACTION, {
                     report_id: s,
                     report_type: o.name,
-                    report_subtype: b,
-                    action: x.lJ.SETTINGS_UPSELLS_GO_TO_SETTINGS_LINK_CLICKED
+                    report_subtype: v,
+                    action: p.lJ.SETTINGS_UPSELLS_GO_TO_SETTINGS_LINK_CLICKED
                 })
             }
         })]

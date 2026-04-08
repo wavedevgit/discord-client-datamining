@@ -3,52 +3,52 @@ n.d(t, {
     A: () => g
 }), n(321073);
 var i = n(627968),
-    l = n(64700),
-    a = n(397927),
+    a = n(64700),
+    l = n(397927),
     s = n(183555),
     r = n(735321),
     o = n(394245),
-    c = n(985018),
-    d = n(802638);
-let u = l.memo(function(e) {
+    d = n(985018),
+    c = n(802638);
+let u = a.memo(function(e) {
     let {
         currentTags: t,
         onTagSelect: n,
-        onNoneSelect: l,
+        onNoneSelect: a,
         onClose: s
     } = e;
-    return (0, i.jsx)(a.W1t, {
+    return (0, i.jsx)(l.W1t, {
         "data-menu-migrated-auto": !0,
         navId: "widget-game-tags",
-        "aria-label": c.intl.string(c.t.r6EJOu),
+        "aria-label": d.intl.string(d.t.r6EJOu),
         onClose: s,
         onSelect: () => {},
-        className: d.VS,
+        className: c.VS,
         children: Object.entries(o.Pb).map(e => {
-            let s, [r, d] = e,
-                u = (s = [], d.type === o.me.RADIO && s.push((0, i.jsx)(a.iDA, {
+            let s, [r, c] = e,
+                u = (s = [], c.type === o.me.RADIO && s.push((0, i.jsx)(l.iDA, {
                     id: `${r}-none`,
                     group: r,
-                    label: c.intl.string(c.t.PoWNfe),
-                    checked: !d.tags.some(e => t.includes(e)),
-                    action: () => l(d.tags)
-                }, "none")), d.tags.forEach(e => {
-                    let l = o.PT[e];
-                    null != l && (d.type === o.me.RADIO ? s.push((0, i.jsx)(a.iDA, {
+                    label: d.intl.string(d.t.PoWNfe),
+                    checked: !c.tags.some(e => t.includes(e)),
+                    action: () => a(c.tags)
+                }, "none")), c.tags.forEach(e => {
+                    let a = o.PT[e];
+                    null != a && (c.type === o.me.RADIO ? s.push((0, i.jsx)(l.iDA, {
                         id: e,
                         group: r,
-                        label: l.getText(),
+                        label: a.getText(),
                         checked: t.includes(e),
                         action: () => n(e, !0)
-                    }, e)) : s.push((0, i.jsx)(a.sLh, {
+                    }, e)) : s.push((0, i.jsx)(l.sLh, {
                         id: e,
-                        label: l.getText(),
+                        label: a.getText(),
                         checked: t.includes(e),
                         action: () => n(e, !1)
                     }, e)))
                 }), s);
-            return (0, i.jsx)(a.rXV, {
-                label: d.getLabel(),
+            return (0, i.jsx)(l.rXV, {
+                label: c.getLabel(),
                 children: u
             }, r)
         })
@@ -61,9 +61,9 @@ function g(e) {
         widgetType: n,
         applicationId: g,
         ref: m
-    } = e, x = (0, l.useRef)(null), {
+    } = e, x = (0, a.useRef)(null), {
         trackUserProfileEditAction: f
-    } = (0, s.NJ)(), p = (0, l.useMemo)(() => null != t ? t : [], [t]), h = (0, l.useCallback)(function(e) {
+    } = (0, s.NJ)(), p = (0, a.useMemo)(() => null != t ? t : [], [t]), h = (0, a.useCallback)(function(e) {
         let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
             i = new Set(p);
         if (t) {
@@ -85,7 +85,7 @@ function g(e) {
             gameId: g
         }));
         (0, r.s1)(n, g, Array.from(i))
-    }, [p, f, n, g]), _ = (0, l.useCallback)(e => {
+    }, [p, f, n, g]), _ = (0, a.useCallback)(e => {
         let t = new Set(p);
         e.forEach(e => {
             t.delete(e)
@@ -95,7 +95,7 @@ function g(e) {
             gameId: g
         }), (0, r.s1)(n, g, Array.from(t))
     }, [p, f, n, g]);
-    return (0, i.jsx)(a.YNO, {
+    return (0, i.jsx)(l.YNO, {
         targetElementRef: x,
         position: "right",
         align: "top",
@@ -120,14 +120,14 @@ function g(e) {
             ref: e => (null != e && (x.current = e, m.current = e), () => {
                 x.current = null, m.current = null
             }),
-            children: (0, i.jsx)(a.DUT, {
+            children: (0, i.jsx)(l.DUT, {
                 ...e,
-                className: d.c9,
-                "aria-label": c.intl.string(c.t.r6EJOu),
-                children: (0, i.jsx)(a.Text, {
+                className: c.c9,
+                "aria-label": d.intl.string(d.t.r6EJOu),
+                children: (0, i.jsx)(l.Text, {
                     variant: "text-xxs/medium",
                     color: "none",
-                    children: c.intl.string(c.t.fZSejy)
+                    children: d.intl.string(d.t.fZSejy)
                 })
             })
         })

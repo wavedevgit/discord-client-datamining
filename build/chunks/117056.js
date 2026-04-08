@@ -15,20 +15,20 @@ let _ = e => {
     let {
         guildId: t,
         reportId: n
-    } = e, [_, m] = a.useState(!1), x = o.A.getGuild(t), p = null != x;
+    } = e, [_, m] = a.useState(!1), p = o.A.getGuild(t), g = null != p;
     a.useEffect(() => {
-        m(!p)
-    }, [p]);
-    let g = a.useCallback(() => {
+        m(!g)
+    }, [g]);
+    let x = a.useCallback(() => {
         m(!0), r.Ay.trackWithMetadata(c.HAw.IAR_LEAVE_GUILD_BUTTON_CLICKED, {
             guild_id: t,
             report_id: n
         }), s.A.leaveGuild(t)
     }, [t, n]);
-    return null == x ? null : (0, l.jsx)(d.PQ, {
+    return null == p ? null : (0, l.jsx)(d.PQ, {
         title: u.intl.string(u.t.cU96ip),
         description: u.intl.formatToPlainString(u.t["26mR6/"], {
-            guildName: x?.name
+            guildName: p?.name
         }),
         buttonText: _ ? u.intl.string(u.t["9Ak99h"]) : u.intl.string(u.t.F3qExp),
         buttonDisabled: _,
@@ -36,13 +36,13 @@ let _ = e => {
         onButtonPress: () => {
             (0, i.A)({
                 title: u.intl.formatToPlainString(u.t["1GX6P/"], {
-                    name: x.name
+                    name: p.name
                 }),
                 subtitle: u.intl.format(u.t.ZEXC0r, {
-                    name: x.name
+                    name: p.name
                 }),
                 confirmText: u.intl.string(u.t.J2TBi3),
-                onConfirm: g
+                onConfirm: x
             })
         }
     })

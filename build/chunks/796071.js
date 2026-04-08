@@ -1,6 +1,6 @@
 /** chunk id: 796071 params = (module,exports,require) **/
 n.d(t, {
-    A: () => x
+    A: () => p
 });
 var l = n(627968),
     a = n(64700),
@@ -13,30 +13,30 @@ var l = n(627968),
     u = n(562153),
     _ = n(652215),
     m = n(985018);
-let x = e => {
+let p = e => {
     let {
         user: t,
         channelId: n,
-        reportId: x
+        reportId: p
     } = e, {
-        isIgnored: p,
-        isBlocked: g
+        isIgnored: g,
+        isBlocked: x
     } = (0, i.cf)([c.A], () => ({
         isIgnored: c.A.isIgnored(t.id),
         isBlocked: c.A.isBlocked(t.id)
-    }), [t]), h = (0, i.bG)([o.A], () => o.A.getChannel(n), [n]), A = a.useMemo(() => u.Ay.getName(h?.guild_id, h?.id, t), [h, t]), b = a.useCallback(() => {
+    }), [t]), h = (0, i.bG)([o.A], () => o.A.getChannel(n), [n]), A = a.useMemo(() => u.Ay.getName(h?.guild_id, h?.id, t), [h, t]), v = a.useCallback(() => {
         s.Ay.trackWithMetadata(_.HAw.IAR_IGNORE_USER_BUTTON_CLICKED, {
             other_user_id: t.id,
-            report_id: x
+            report_id: p
         }), r.A.ignoreUser(t.id, "web_iar_ignore_user_element", n)
-    }, [t, x, n]), v = a.useMemo(() => p || g, [p, g]);
+    }, [t, p, n]), b = a.useMemo(() => g || x, [g, x]);
     return (0, l.jsx)(d.PQ, {
         title: m.intl.formatToPlainString(m.t.U3yyFs, {
             username: A
         }),
         description: m.intl.string(m.t.naWE6W),
-        buttonText: v ? m.intl.string(m.t.nDdxOG) : m.intl.string(m.t.ICYEfY),
-        buttonDisabled: v,
-        onButtonPress: b
+        buttonText: b ? m.intl.string(m.t.nDdxOG) : m.intl.string(m.t.ICYEfY),
+        buttonDisabled: b,
+        onButtonPress: v
     })
 }

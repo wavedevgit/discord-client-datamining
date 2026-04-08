@@ -3,13 +3,13 @@ n.d(t, {
     A: () => b
 });
 var i = n(627968),
-    l = n(64700),
-    a = n(688807),
+    a = n(64700),
+    l = n(688807),
     s = n(311907),
     r = n(459192),
     o = n(990078),
-    c = n(808247),
-    d = n(107563),
+    d = n(808247),
+    c = n(107563),
     u = n(840411),
     g = n(178213),
     m = n(594832),
@@ -27,8 +27,8 @@ function E(e) {
     let {
         item: t,
         index: n,
-        wishlistId: l,
-        onReorder: a,
+        wishlistId: a,
+        onReorder: l,
         children: s
     } = e, {
         manageFocusOnReorder: r
@@ -36,7 +36,7 @@ function E(e) {
     return (0, i.jsx)(_.mG, {
         index: n,
         itemId: String(t.skuId),
-        listType: String(l),
+        listType: String(a),
         itemType: "WISHLIST_ITEM",
         itemPreviewProps: {
             item: t
@@ -44,7 +44,7 @@ function E(e) {
         "aria-label": j.intl.formatToPlainString(j.t["7SnyMA"], {
             positionNumber: n + 1
         }),
-        onReorder: a,
+        onReorder: l,
         onEnd: () => r(String(t.skuId)),
         className: v.C,
         dropBeforeClassName: v.A,
@@ -56,61 +56,61 @@ function E(e) {
         })
     })
 }
-let T = l.memo(function(e) {
+let T = a.memo(function(e) {
     let {
         item: t,
         index: n,
-        profileOwner: a,
+        profileOwner: l,
         isOwner: s,
-        wishlistId: c,
-        tooltipConfig: d,
+        wishlistId: d,
+        tooltipConfig: c,
         isDragging: u,
         onReorder: p
     } = e, {
         registerDragHandleRef: h
-    } = (0, A.r)(), j = (0, g.GG)("user_profile_wishlist_grid"), T = l.useMemo(() => s ? (0, i.jsx)(_.jV, {
+    } = (0, A.r)(), j = (0, g.GG)("user_profile_wishlist_grid"), T = a.useMemo(() => s ? (0, i.jsx)(_.jV, {
         buttonRef: h(String(t.skuId)),
         className: v.BU,
         onFocus: e => e.stopPropagation()
-    }) : void 0, [s, h, t.skuId]), b = l.useMemo(() => {
+    }) : void 0, [s, h, t.skuId]), b = a.useMemo(() => {
         if (j) return (0, i.jsx)(x.A, {
             item: t,
-            wishlistOwner: a,
-            wishlistId: c,
+            wishlistOwner: l,
+            wishlistId: d,
             isDragging: u,
             dragHandle: T
         });
         let e = (0, i.jsx)(I.A, {
                 item: t,
-                profileOwner: a,
-                wishlistId: c,
+                profileOwner: l,
+                wishlistId: d,
                 isOwner: s,
                 isDragging: u,
                 dragHandle: T
             }),
             n = e;
-        return d.shouldShow && !u && (n = (0, f.Qc)(d) ? (0, i.jsx)(o.m, {
-            text: d.title,
+        return c.shouldShow && !u && (n = (0, f.Qc)(c) ? (0, i.jsx)(o.m, {
+            text: c.title,
             position: "top",
             asContainer: !0,
             delay: m.Zh,
             children: e
         }) : (0, i.jsx)(r.u, {
-            title: d.title,
-            body: d.body ?? "",
-            asset: d.renderIcon?.(t),
+            title: c.title,
+            body: c.body ?? "",
+            asset: c.renderIcon?.(t),
             assetSize: m.Q8,
             position: "top",
             asContainer: !0,
             delay: m.Zh,
             children: e
         })), n
-    }, [j, t, a, u, T, d, s, c]);
+    }, [j, t, l, u, T, c, s, d]);
     return s ? (0, i.jsx)("li", {
         children: (0, i.jsx)(E, {
             item: t,
             index: n,
-            wishlistId: c,
+            wishlistId: d,
             onReorder: p,
             children: b
         })
@@ -130,22 +130,22 @@ function b(e) {
         defaultWishlistId: h.A.getFirstWishlistId(n.id)
     })), m = (0, f.b7)(t, r), {
         isDragging: x
-    } = (0, a.V)(e => ({
+    } = (0, l.V)(e => ({
         isDragging: e.isDragging()
-    })), _ = l.useCallback((e, n) => {
+    })), _ = a.useCallback((e, n) => {
         if (e === n || null == g || 0 === t.length || e < 0 || e >= t.length || n < 0 || n >= t.length) return;
-        let i = d.A.getWishlist(g);
+        let i = c.A.getWishlist(g);
         if (null == i) return;
-        let l = t[e],
+        let a = t[e],
             {
-                newWishlistData: a,
+                newWishlistData: l,
                 previousSkuId: s,
                 nextSkuId: r
             } = (0, u.A)(i, t, e, n);
-        c.A.reorderWishlistItem(g, l.skuId, {
+        d.A.reorderWishlistItem(g, a.skuId, {
             previousSkuId: s,
             nextSkuId: r,
-            newWishlistData: a
+            newWishlistData: l
         })
     }, [g, t]);
     if (null == o || null == g) return null;

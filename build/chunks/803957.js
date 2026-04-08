@@ -17,7 +17,7 @@ let _ = e => {
             child: t,
             onClick: n,
             nodeMap: a
-        } = e, [_, m] = t, x = (0, r.bG)([d.Ay], () => d.Ay.get("iar_show_report_sub_type_labels")), p = a[m], g = p?.report_type;
+        } = e, [_, m] = t, p = (0, r.bG)([d.Ay], () => d.Ay.get("iar_show_report_sub_type_labels")), g = a[m], x = g?.report_type;
         return (0, l.jsxs)(s.DUT, {
             className: i()(u.Zm, c.lD),
             onClick: () => n(t),
@@ -27,11 +27,11 @@ let _ = e => {
                     className: u.ix,
                     variant: "text-md/semibold",
                     children: _
-                }), x && null != g && (0, l.jsx)(s.Text, {
+                }), p && null != x && (0, l.jsx)(s.Text, {
                     className: u.Z$,
                     variant: "text-xs/normal",
                     color: "text-muted",
-                    children: g
+                    children: x
                 })]
             }), (0, l.jsx)(o.A, {
                 className: u._2,

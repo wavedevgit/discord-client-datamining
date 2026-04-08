@@ -1,6 +1,6 @@
 /** chunk id: 66535 params = (module,exports,require) **/
 n.d(t, {
-    A: () => b
+    A: () => v
 });
 var l = n(627968),
     a = n(64700),
@@ -13,26 +13,26 @@ var l = n(627968),
     u = n(643204),
     _ = n(448368),
     m = n(538355),
-    x = n(253932),
-    p = n(734057),
-    g = n(838541),
+    p = n(253932),
+    g = n(734057),
+    x = n(838541),
     h = n(985018),
     A = n(382500);
-let b = e => {
+let v = e => {
     let {
         message: t
-    } = e, n = (0, d.Ay)(t), b = (0, i.bG)([p.A], () => p.A.getChannel(t.channel_id)), v = a.useMemo(() => (0, s.A)(t), [t]), {
+    } = e, n = (0, d.Ay)(t), v = (0, i.bG)([g.A], () => g.A.getChannel(t.channel_id)), b = a.useMemo(() => (0, s.A)(t), [t]), {
         content: f
-    } = (0, m.A)(v, {
+    } = (0, m.A)(b, {
         hideSimpleEmbedContent: !1
-    }), T = x.hH.useSetting(), C = a.useCallback(() => {
+    }), T = p.hH.useSetting(), E = a.useCallback(() => {
         let {
             leadingIcon: e,
             trailingIcon: n
         } = (0, _.o)(t, f, !1, !1, "", {
             leadingIconClass: A.$r,
             trailingIconClass: A.$r,
-            iconSize: g.eJ
+            iconSize: x.eJ
         });
         return (0, l.jsxs)("div", {
             className: A.hQ,
@@ -43,7 +43,7 @@ let b = e => {
             }), n]
         })
     }, [t, f, T]);
-    return null == b ? null : (0, l.jsxs)("div", {
+    return null == v ? null : (0, l.jsxs)("div", {
         className: A.kL,
         children: [(0, l.jsx)(r.Heading, {
             className: A.wx,
@@ -52,12 +52,12 @@ let b = e => {
         }), (0, l.jsx)(r.HOs, {
             className: A.PI,
             children: (0, l.jsx)(o.A, {
-                childrenMessageContent: C(),
+                childrenMessageContent: E(),
                 childrenHeader: (0, l.jsx)(u.Ay, {
                     message: t,
-                    channel: b,
+                    channel: v,
                     author: n,
-                    guildId: b.guild_id
+                    guildId: v.guild_id
                 }),
                 disableInteraction: !0,
                 author: n

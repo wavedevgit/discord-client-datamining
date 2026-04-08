@@ -1,42 +1,42 @@
 /** chunk id: 546136 params = (module,exports,require) **/
-t.d(l, {
+n.d(l, {
     Ay: () => h,
     _T: () => g,
     oA: () => A
 });
-var n = t(627968);
-t(64700);
-var i = t(503698),
-    s = t.n(i),
-    a = t(397927),
-    r = t(487233),
-    o = t(230635),
-    d = t(473219),
-    c = t(642737),
-    u = t(985018),
-    m = t(266603);
+var t = n(627968);
+n(64700);
+var i = n(503698),
+    s = n.n(i),
+    a = n(397927),
+    r = n(487233),
+    o = n(230635),
+    d = n(473219),
+    c = n(642737),
+    u = n(985018),
+    m = n(266603);
 let p = "profile-modal-editing-panel",
     x = "profile-modal-editing-panel-heading";
 
 function A(e) {
     let {
         onClick: l,
-        className: t,
+        className: n,
         innerRef: i
     } = e;
-    return (0, n.jsx)(a.DUT, {
+    return (0, t.jsx)(a.DUT, {
         innerRef: i,
         "aria-label": u.intl.string(u.t.N8XQDE),
         "aria-expanded": !1,
         "aria-controls": p,
-        className: s()(m.eg, t),
+        className: s()(m.eg, n),
         onClick: l,
         focusProps: {
             offset: {
                 right: 6
             }
         },
-        children: (0, n.jsx)(a.NDp, {
+        children: (0, t.jsx)(a.NDp, {
             size: "sm",
             color: a.LU0.colors.ICON_STRONG
         })
@@ -46,12 +46,12 @@ function A(e) {
 function g(e) {
     let {
         onClick: l,
-        className: t,
+        className: n,
         buttonRef: i
     } = e;
-    return (0, n.jsx)("div", {
-        className: t,
-        children: (0, n.jsx)(a.K0, {
+    return (0, t.jsx)("div", {
+        className: n,
+        children: (0, t.jsx)(a.K0, {
             buttonRef: i,
             "aria-label": u.intl.string(u.t.N8XQDE),
             "aria-expanded": !1,
@@ -67,19 +67,19 @@ function g(e) {
 function f(e) {
     let {
         onClick: l,
-        innerRef: t
+        innerRef: n
     } = e;
-    return (0, n.jsxs)(a.DUT, {
-        innerRef: t,
+    return (0, t.jsxs)(a.DUT, {
+        innerRef: n,
         className: m.cS,
         "aria-label": u.intl.string(u.t.X6NklS),
         onClick: l,
         "aria-controls": p,
         "aria-expanded": !0,
-        children: [(0, n.jsx)(a._BQ, {
+        children: [(0, t.jsx)(a._BQ, {
             size: "md",
             color: "currentColor"
-        }), (0, n.jsx)(a._BQ, {
+        }), (0, t.jsx)(a._BQ, {
             size: "md",
             color: "currentColor"
         })]
@@ -89,51 +89,51 @@ function f(e) {
 function h(e) {
     let {
         selectedGuildId: l,
-        onSelectGuildId: t,
+        onSelectGuildId: n,
         onClose: i,
         className: A,
         collapseButtonRef: g
     } = e;
-    return (0, n.jsxs)("aside", {
+    return (0, t.jsxs)("aside", {
         id: p,
         "aria-labelledby": x,
         className: s()(m.nd, A),
-        children: [(0, n.jsx)(a.AC4, {
-            children: (0, n.jsx)(a.H, {
+        children: [(0, t.jsx)(a.AC4, {
+            children: (0, t.jsx)(a.H, {
                 id: x,
                 children: u.intl.string(u.t["L+ch00"])
             })
-        }), (0, n.jsxs)("div", {
+        }), (0, t.jsxs)("div", {
             className: m.wx,
-            children: [(0, n.jsx)(f, {
+            children: [(0, t.jsx)(f, {
                 innerRef: g,
                 onClick: i
-            }), (0, n.jsx)(c.A, {
+            }), (0, t.jsx)(c.A, {
                 selectedGuildId: l ?? null,
-                onChange: t
+                onChange: n
             })]
-        }), (0, n.jsx)(a.Fmo, {
-            children: (0, n.jsxs)(a.HOs, {
+        }), (0, t.jsx)(a.Fmo, {
+            children: (0, t.jsxs)(a.HOs, {
                 className: m.XG,
                 fade: !0,
-                children: [(0, n.jsxs)("div", {
+                children: [(0, t.jsxs)("div", {
                     className: m.Os,
-                    children: [(0, n.jsx)(a.Heading, {
+                    children: [(0, t.jsx)(a.Heading, {
                         variant: "text-sm/medium",
                         className: m.AM,
                         children: u.intl.string(u.t.x5CoXR)
-                    }), (0, n.jsx)(d.W, {
+                    }), (0, t.jsx)(d.W, {
                         guildId: l
                     })]
-                }), (0, n.jsxs)("div", {
+                }), (0, t.jsxs)("div", {
                     className: m.Os,
-                    children: [(0, n.jsx)(a.Heading, {
+                    children: [(0, t.jsx)(a.Heading, {
                         variant: "text-sm/medium",
                         className: m.AM,
                         children: u.intl.string(u.t.lqaIxI)
-                    }), (0, n.jsx)(r.m, {
+                    }), (0, t.jsx)(r.m, {
                         guildId: l
-                    }), (0, n.jsx)(o.W, {
+                    }), (0, t.jsx)(o.W, {
                         guildId: l
                     })]
                 })]

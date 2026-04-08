@@ -13,9 +13,9 @@ var l = n(627968),
     u = n(885106);
 let _ = ["cdn.discordapp.com", "media.discordapp.net"],
     m = /^(?:localhost|127\.0\.0\.1|\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})$/,
-    x = (0, s.m6)() ? /^https?:\/\/(?:(?:ptb\.|canary\.)?discord(?:app)?\.com|localhost(?::\d+)?|\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}(?::\d+)?)\/channels\/(?:@me|\d+)\/\d+\/\d+$/ : /^https:\/\/(?:ptb\.|canary\.)?discord(?:app)?\.com\/channels\/(?:@me|\d+)\/\d+\/\d+$/;
+    p = (0, s.m6)() ? /^https?:\/\/(?:(?:ptb\.|canary\.)?discord(?:app)?\.com|localhost(?::\d+)?|\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}(?::\d+)?)\/channels\/(?:@me|\d+)\/\d+\/\d+$/ : /^https:\/\/(?:ptb\.|canary\.)?discord(?:app)?\.com\/channels\/(?:@me|\d+)\/\d+\/\d+$/;
 
-function p(e) {
+function g(e) {
     try {
         return new URL(e), !0
     } catch {
@@ -23,8 +23,8 @@ function p(e) {
     }
 }
 
-function g(e) {
-    return "" !== e && !!p(e) && ! function(e) {
+function x(e) {
+    return "" !== e && !!g(e) && ! function(e) {
         try {
             let t = new URL(e);
             if (_.some(e => t.hostname === e) || (0, s.m6)() && m.test(t.hostname)) return !0;
@@ -45,54 +45,54 @@ let h = e => {
             },
             onChange: h,
             initialContentUrl: A,
-            initialMessageUrl: b,
-            isRequired: v
+            initialMessageUrl: v,
+            isRequired: b
         } = e, f = a.useMemo(() => r.A.reactParserFor({
             ...r.A.defaultRules,
             link: d.B
-        }), []), [T, C] = a.useState(""), [j, I] = a.useState(""), [N, S] = a.useState(null), [y, k] = a.useState(null), [E, M] = a.useState(!1);
+        }), []), [T, E] = a.useState(""), [S, I] = a.useState(""), [C, N] = a.useState(null), [y, j] = a.useState(null), [k, R] = a.useState(!1);
         a.useEffect(() => {
-            C(A?.value ?? ""), I(b?.value ?? ""), A?.value != null && "" !== A.value && M(g(A.value))
-        }, [A, b]);
-        let R = a.useCallback(e => {
-                if (C(e), "" === e) {
-                    S(null), M(!1), I(""), k(null), h({
+            E(A?.value ?? ""), I(v?.value ?? ""), A?.value != null && "" !== A.value && R(x(A.value))
+        }, [A, v]);
+        let M = a.useCallback(e => {
+                if (E(e), "" === e) {
+                    N(null), R(!1), I(""), j(null), h({
                         value: e,
                         isValid: !1
                     });
                     return
                 }
-                if (!p(e)) {
-                    S(o.intl.string(o.t["24xrGb"])), M(!1), I(""), k(null), h({
+                if (!g(e)) {
+                    N(o.intl.string(o.t["24xrGb"])), R(!1), I(""), j(null), h({
                         value: e,
                         isValid: !1
                     });
                     return
                 }
-                let t = g(e);
-                M(t), S(null), t ? "" === j ? h({
+                let t = x(e);
+                R(t), N(null), t ? "" === S ? h({
                     value: e,
                     isValid: !1
-                }) : x.test(j) ? h({
+                }) : p.test(S) ? h({
                     value: e,
                     isValid: !0
                 }, {
-                    value: j,
+                    value: S,
                     isValid: !0
                 }) : h({
                     value: e,
                     isValid: !1
                 }, {
-                    value: j,
+                    value: S,
                     isValid: !1
-                }) : (I(""), k(null), h({
+                }) : (I(""), j(null), h({
                     value: e,
                     isValid: !0
                 }))
-            }, [h, j]),
-            w = a.useCallback(e => {
-                if (I(e), "" === e || !x.test(e)) {
-                    k(o.intl.string(o.t["24xrGb"])), h({
+            }, [h, S]),
+            O = a.useCallback(e => {
+                if (I(e), "" === e || !p.test(e)) {
+                    j(o.intl.string(o.t["24xrGb"])), h({
                         value: T,
                         isValid: !1
                     }, {
@@ -101,7 +101,7 @@ let h = e => {
                     });
                     return
                 }
-                k(null), h({
+                j(null), h({
                     value: T,
                     isValid: !0
                 }, {
@@ -119,33 +119,33 @@ let h = e => {
                         children: (0, l.jsxs)(i.Text, {
                             variant: "text-md/medium",
                             color: "text-strong",
-                            children: [t, v && (0, l.jsx)("span", {
+                            children: [t, b && (0, l.jsx)("span", {
                                 className: c.m,
                                 children: "*"
                             })]
                         })
                     }), (0, l.jsx)(i.ksK, {
-                        onChange: R,
+                        onChange: M,
                         value: T,
-                        error: N,
+                        error: C,
                         placeholder: s,
                         autoFocus: !0
                     })]
-                }), E && null != _ && (0, l.jsxs)("div", {
+                }), k && null != _ && (0, l.jsxs)("div", {
                     className: u.QB,
                     children: [(0, l.jsx)("div", {
                         className: u.QB,
                         children: (0, l.jsxs)(i.Text, {
                             variant: "text-md/medium",
                             color: "text-strong",
-                            children: [_, v && (0, l.jsx)("span", {
+                            children: [_, b && (0, l.jsx)("span", {
                                 className: c.m,
                                 children: "*"
                             })]
                         })
                     }), (0, l.jsx)(i.ksK, {
-                        onChange: w,
-                        value: j,
+                        onChange: O,
+                        value: S,
                         error: y,
                         placeholder: m
                     })]

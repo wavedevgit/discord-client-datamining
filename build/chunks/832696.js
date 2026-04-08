@@ -1,22 +1,22 @@
 /** chunk id: 832696 params = (module,exports,require) **/
-t.d(l, {
+n.d(l, {
     A: () => p
 });
-var n = t(627968),
-    i = t(64700),
-    s = t(397927),
-    a = t(688810),
-    r = t(233971),
-    o = t(746174),
-    d = t(993401),
-    c = t(518477),
-    u = t(652215),
-    m = t(985018);
+var t = n(627968),
+    i = n(64700),
+    s = n(397927),
+    a = n(688810),
+    r = n(233971),
+    o = n(746174),
+    d = n(993401),
+    c = n(518477),
+    u = n(652215),
+    m = n(985018);
 
 function p(e) {
     let {
         user: l,
-        onClose: t
+        onClose: n
     } = e, {
         analyticsLocations: p
     } = (0, a.Ay)(), x = (0, o.j)("UserProfileGiftButton"), {
@@ -32,9 +32,9 @@ function p(e) {
         },
         location: "user-profile-gift-button"
     }), g = i.useCallback(() => {
-        A(), t?.()
-    }, [A, t]);
-    return x ? (0, n.jsx)(d.q3, {
+        A(), n?.()
+    }, [A, n]);
+    return x ? (0, t.jsx)(d.q3, {
         action: c.pt.GIFT,
         icon: s.okO,
         tooltipText: m.intl.string(m.t.PEjaCx),

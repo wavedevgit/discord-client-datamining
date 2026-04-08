@@ -22,7 +22,7 @@ function _(e) {
                 is_localized: _
             }
         }
-    } = e, [m, x] = a.useState(!1), p = a.useRef(d.A.reactParserFor(d.A.defaultRules));
+    } = e, [m, p] = a.useState(!1), g = a.useRef(d.A.reactParserFor(d.A.defaultRules));
     return _ ? (0, l.jsxs)("div", {
         className: u.kL,
         children: [(0, l.jsx)(s.Heading, {
@@ -33,7 +33,7 @@ function _(e) {
         }), (0, l.jsx)(s.Text, {
             variant: "text-sm/normal",
             className: u.G3,
-            children: p.current(n)
+            children: g.current(n)
         }), (0, l.jsx)("div", {
             children: (0, l.jsxs)("div", {
                 className: r()(u.GH, {
@@ -52,7 +52,7 @@ function _(e) {
                         size: "sm",
                         text: m ? c.intl.string(c.t.t5VZ88) : c.intl.string(c.t.OpuAlK),
                         onClick: () => {
-                            (0, o.C)(i, () => x(!0))
+                            (0, o.C)(i, () => p(!0))
                         }
                     })
                 })]

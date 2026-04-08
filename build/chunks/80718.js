@@ -1,6 +1,6 @@
 /** chunk id: 80718 params = (module,exports,require) **/
 n.d(t, {
-    A: () => x
+    A: () => p
 });
 var l = n(627968),
     a = n(64700),
@@ -13,38 +13,38 @@ var l = n(627968),
     u = n(546183),
     _ = n(652215),
     m = n(985018);
-let x = e => {
+let p = e => {
     let {
         application: t,
         reportId: n
-    } = e, [x, p] = a.useState(!1), g = (0, i.bG)([u.default], () => u.default.getNewestTokenForApplication(t.id));
+    } = e, [p, g] = a.useState(!1), x = (0, i.bG)([u.default], () => u.default.getNewestTokenForApplication(t.id));
     a.useEffect(() => {
-        null != g && p(!0)
-    }, [g]);
+        null != x && g(!0)
+    }, [x]);
     let h = a.useRef(!1);
     a.useEffect(() => {
         h.current || (r.A.fetch(), h.current = !0)
     }, []);
     let A = (0, i.bG)([s.Ay], () => s.Ay.getSelfEmbeddedActivities()),
-        b = a.useCallback(() => {
-            if (p(!1), o.Ay.trackWithMetadata(_.HAw.IAR_DEAUTHORIZE_APP_BUTTON_CLICKED, {
+        v = a.useCallback(() => {
+            if (g(!1), o.Ay.trackWithMetadata(_.HAw.IAR_DEAUTHORIZE_APP_BUTTON_CLICKED, {
                     application_id: t.id,
                     report_id: n
-                }), null == g) return;
-            r.A.delete(g.id);
+                }), null == x) return;
+            r.A.delete(x.id);
             let e = A.get(t.id);
             null != e && d.A.leaveActivity({
                 location: e.location,
                 applicationId: t.id,
                 showFeedback: !1
             })
-        }, [t.id, g, A, n]);
+        }, [t.id, x, A, n]);
     return null == t ? null : (0, l.jsx)(c.PQ, {
         title: m.intl.string(m.t.ygG62M),
         description: m.intl.string(m.t.S51EKg),
-        buttonText: x ? m.intl.string(m.t.xXpoGV) : m.intl.string(m.t.JsiUnL),
-        buttonDisabled: !x,
-        onButtonPress: b,
-        buttonVariant: x ? "critical-primary" : "secondary"
+        buttonText: p ? m.intl.string(m.t.xXpoGV) : m.intl.string(m.t.JsiUnL),
+        buttonDisabled: !p,
+        onButtonPress: v,
+        buttonVariant: p ? "critical-primary" : "secondary"
     })
 }

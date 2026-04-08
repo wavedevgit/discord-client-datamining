@@ -24,7 +24,7 @@ let s = e => {
                 ...e,
                 id: e.id ?? e.value
             })), [_]),
-            x = a.useCallback(e => {
+            p = a.useCallback(e => {
                 null != e && (o(e), n(e))
             }, [n]);
         return (0, l.jsx)("div", {
@@ -33,7 +33,7 @@ let s = e => {
                 label: u,
                 value: d,
                 required: t.should_submit_data,
-                onSelectionChange: x,
+                onSelectionChange: p,
                 options: m,
                 selectionMode: "single",
                 fullWidth: !0

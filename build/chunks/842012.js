@@ -1,6 +1,6 @@
 /** chunk id: 842012 params = (module,exports,require) **/
 n.d(t, {
-    A: () => g
+    A: () => x
 });
 var l = n(627968),
     a = n(64700),
@@ -13,28 +13,28 @@ var l = n(627968),
     u = n(543465),
     _ = n(562153),
     m = n(477427),
-    x = n(652215),
-    p = n(985018);
-let g = e => {
+    p = n(652215),
+    g = n(985018);
+let x = e => {
     let {
         user: t,
         channelId: n,
-        reportId: g
-    } = e, h = c.A.getDMFromUserId(t.id), A = (0, i.bG)([c.A], () => c.A.getChannel(n), [n]), b = a.useMemo(() => _.Ay.getName(A?.guild_id, A?.id, t), [A, t]), v = (0, i.bG)([u.Ay], () => null == h ? null : u.Ay.isChannelMuted(null, h)), [f, T] = a.useState(v ?? !1), C = a.useCallback(() => {
-        null != h && (T(!0), s.Ay.trackWithMetadata(x.HAw.IAR_MUTE_USER_BUTTON_CLICKED, {
+        reportId: x
+    } = e, h = c.A.getDMFromUserId(t.id), A = (0, i.bG)([c.A], () => c.A.getChannel(n), [n]), v = a.useMemo(() => _.Ay.getName(A?.guild_id, A?.id, t), [A, t]), b = (0, i.bG)([u.Ay], () => null == h ? null : u.Ay.isChannelMuted(null, h)), [f, T] = a.useState(b ?? !1), E = a.useCallback(() => {
+        null != h && (T(!0), s.Ay.trackWithMetadata(p.HAw.IAR_MUTE_USER_BUTTON_CLICKED, {
             other_user_id: t.id,
-            report_id: g
+            report_id: x
         }), r.A.updateChannelOverrideSettings(null, h, {
             muted: !0
         }, m.fd.Muted), d.A.showMuteSuccessToast(t.id, n))
-    }, [h, n, t, g]);
+    }, [h, n, t, x]);
     return (0, l.jsx)(o.PQ, {
-        title: p.intl.formatToPlainString(p.t.TRp5wR, {
-            username: b
+        title: g.intl.formatToPlainString(g.t.TRp5wR, {
+            username: v
         }),
-        description: p.intl.string(p.t["yM/+AJ"]),
-        buttonText: f ? p.intl.string(p.t.E8x4Nj) : p.intl.string(p.t.HITUcR),
+        description: g.intl.string(g.t["yM/+AJ"]),
+        buttonText: f ? g.intl.string(g.t.E8x4Nj) : g.intl.string(g.t.HITUcR),
         buttonDisabled: f,
-        onButtonPress: C
+        onButtonPress: E
     })
 }

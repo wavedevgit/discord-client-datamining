@@ -1,49 +1,49 @@
 /** chunk id: 86404 params = (module,exports,require) **/
 t.d(n, {
-    A: () => p
+    A: () => g
 });
 var i = t(627968),
     a = t(64700),
     l = t(397927),
-    s = t(163126),
-    r = t(688810),
+    r = t(163126),
+    s = t(688810),
     d = t(183555),
     o = t(913453),
     c = t(229187),
     u = t(657331),
     _ = t(503062),
-    A = t(985018),
-    x = t(643146);
+    p = t(985018),
+    A = t(643146);
 
-function p(e) {
+function g(e) {
     let {
         user: n,
         guildId: t,
-        channelId: p,
-        onClose: g
+        channelId: g,
+        onClose: I
     } = e, {
         mutualFriends: m
     } = (0, o.A)(n), {
-        analyticsLocations: I
-    } = (0, r.Ay)(), {
-        context: f,
-        trackUserProfileAction: b
-    } = (0, d.NJ)(), h = (0, s.A)();
+        analyticsLocations: f
+    } = (0, s.Ay)(), {
+        context: x,
+        trackUserProfileAction: h
+    } = (0, d.NJ)(), v = (0, r.A)();
     return a.useEffect(() => {
-        (0, c.A)(n.id, h)
-    }, [n.id, h]), (0, i.jsx)(l.IpV, {
-        className: x.DK,
+        (0, c.A)(n.id, v)
+    }, [n.id, v]), (0, i.jsx)(l.IpV, {
+        className: A.DK,
         fade: !0,
         children: null == m ? (0, i.jsx)("div", {
-            className: x.Ie,
+            className: A.Ie,
             children: (0, i.jsx)(l.y$y, {})
         }) : 0 === m.length ? (0, i.jsxs)("div", {
-            className: x.Ie,
+            className: A.Ie,
             children: [(0, i.jsx)("div", {
-                className: x.on
+                className: A.on
             }), (0, i.jsx)("div", {
-                className: x.BI,
-                children: A.intl.string(A.t["/5p4gx"])
+                className: A.BI,
+                children: p.intl.string(p.t["/5p4gx"])
             })]
         }) : m.map(e => {
             let {
@@ -55,15 +55,15 @@ function p(e) {
                 user: a,
                 status: l,
                 guildId: t,
-                channelId: p,
+                channelId: g,
                 onSelect: () => {
                     var e;
-                    g?.(), b({
+                    I?.(), h({
                         action: "PRESS_MUTUAL_FRIEND"
                     }), e = a.id, (0, u.openUserProfileModal)({
-                        ...f,
+                        ...x,
                         userId: e,
-                        sourceAnalyticsLocations: I
+                        sourceAnalyticsLocations: f
                     })
                 }
             }, n)

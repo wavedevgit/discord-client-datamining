@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var l = n(435546),
-    a = n(466853),
+var a = n(435546),
+    l = n(466853),
     s = n(120791);
 
 function r(e) {
@@ -14,22 +14,22 @@ function r(e) {
         widget: n,
         guildId: r,
         channelId: o,
-        disableInteraction: c,
-        ...d
+        disableInteraction: d,
+        ...c
     } = e;
-    return (0, i.jsx)(a.A, {
+    return (0, i.jsx)(l.A, {
         userId: t.id,
         widget: n,
-        disableInteraction: c,
-        ...d,
+        disableInteraction: d,
+        ...c,
         children: n.games.length > 0 ? (0, i.jsx)(s.A, {
             userId: t.id,
             widgetType: n.type,
             games: n.games,
             guildId: r,
             channelId: o,
-            disableInteraction: c
-        }) : (0, i.jsx)(l.A, {
+            disableInteraction: d
+        }) : (0, i.jsx)(a.A, {
             widget: n
         })
     })

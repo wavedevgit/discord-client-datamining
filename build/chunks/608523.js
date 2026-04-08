@@ -18,29 +18,29 @@ let u = e => {
                 description: u,
                 placeholder: _,
                 rows: m,
-                character_limit: x,
-                pattern: p
+                character_limit: p,
+                pattern: g
             },
-            onChange: g,
+            onChange: x,
             initialText: h,
             isRequired: A
-        } = e, b = a.useMemo(() => r.A.reactParserFor({
+        } = e, v = a.useMemo(() => r.A.reactParserFor({
             ...r.A.defaultRules,
             link: s.B
-        }), []), [v, f] = a.useState(""), [T, C] = a.useState(null);
+        }), []), [b, f] = a.useState(""), [T, E] = a.useState(null);
         a.useEffect(() => {
             f(h?.value ?? "")
         }, [h]);
-        let j = a.useCallback(e => {
-            let t = null != p ? new RegExp(p) : null;
-            null == t || t.test(e) ? null != e && (C(null), f(e), g({
+        let S = a.useCallback(e => {
+            let t = null != g ? new RegExp(g) : null;
+            null == t || t.test(e) ? null != e && (E(null), f(e), x({
                 value: e,
                 isValid: !0
-            })) : (C(d.intl.string(d.t["24xrGb"])), g({
+            })) : (E(d.intl.string(d.t["24xrGb"])), x({
                 value: e,
                 isValid: !1
             }))
-        }, [g, p]);
+        }, [x, g]);
         return (0, l.jsxs)("div", {
             children: [(0, l.jsxs)("div", {
                 className: c.QB,
@@ -60,15 +60,15 @@ let u = e => {
                     })
                 })]
             }), 1 === m ? (0, l.jsx)(i.ksK, {
-                maxLength: x,
-                onChange: j,
-                value: v,
+                maxLength: p,
+                onChange: S,
+                value: b,
                 error: T,
                 placeholder: _
             }) : (0, l.jsx)(i.fs1, {
-                maxLength: x,
-                onChange: j,
-                value: v,
+                maxLength: p,
+                onChange: S,
+                value: b,
                 error: T,
                 rows: m,
                 placeholder: _
@@ -77,7 +77,7 @@ let u = e => {
                 children: (0, l.jsx)(i.Text, {
                     variant: "text-xs/normal",
                     color: "text-muted",
-                    children: b(n)
+                    children: v(n)
                 })
             })]
         })
