@@ -9,8 +9,8 @@ var i = n(627968),
     l = n(311907),
     a = n(830215),
     o = n(6981),
-    d = n(964486),
-    c = n(574052),
+    c = n(964486),
+    d = n(574052),
     u = n(463347),
     h = n(334465),
     _ = n(976860),
@@ -51,14 +51,14 @@ function f(e) {
             handoffSource: i
         }), N(!1)
     }
-    return ((0, d.Ay)(() => {
+    return ((0, c.Ay)(() => {
         if (null != E) {
             let {
                 handoff_key: e,
                 handoff_token: t
             } = (0, r.parse)(E.search);
             if (null != e && null != t) {
-                let n = null != x ? (0, c.Q)(x) : void 0;
+                let n = null != x ? (0, d.Q)(x) : void 0;
                 I ? a.A.logout("handoff", null).finally(() => {
                     v({
                         handoffKey: e,

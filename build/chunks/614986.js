@@ -9,8 +9,8 @@ var i = n(627968),
     l = n(280513),
     a = n(311907),
     o = n(397927),
-    d = n(73153),
-    c = n(846293),
+    c = n(73153),
+    d = n(846293),
     u = n(900662),
     h = n(765671),
     _ = n(854378),
@@ -64,7 +64,7 @@ function k(e) {
     }
 }
 
-function B(e) {
+function D(e) {
     let {
         invite: t,
         onAcceptInvite: n
@@ -80,7 +80,7 @@ function B(e) {
     })
 }
 
-function D(e) {
+function B(e) {
     let {
         children: t,
         cardChildren: n,
@@ -88,10 +88,10 @@ function D(e) {
         sectionClassName: l,
         inviteCardClassName: a = L.qF
     } = e, {
-        ref: d,
-        height: c
+        ref: c,
+        height: d
     } = (0, h.Ay)(), u = (0, o.zhh)({
-        height: null != c && 0 !== c ? `${c}px` : `${s}px`,
+        height: null != d && 0 !== d ? `${d}px` : `${s}px`,
         config: r.config.stiff
     });
     return (0, i.jsxs)(r.animated.div, {
@@ -101,7 +101,7 @@ function D(e) {
             className: L.NS,
             style: u,
             children: (0, i.jsx)("section", {
-                ref: d,
+                ref: c,
                 className: l,
                 children: t
             })
@@ -115,7 +115,7 @@ function U(e) {
     } = e;
     if (null == t || !(0, T.Fk)(t)) return null;
     let n = k(t);
-    return (0, i.jsx)(D, {
+    return (0, i.jsx)(B, {
         startAnimHeightPx: 0,
         sectionClassName: L.ui,
         children: 1 === n ? (0, i.jsx)(S.s, {
@@ -140,24 +140,24 @@ function G(e) {
             location: "AcceptInviteMobile"
         }),
         o = null != n ? (0, p.oO)(n) : null,
-        d = n?.guild != null ? (0, N.DY)(n.guild) : null,
-        c = a && null != o && function(e) {
+        c = n?.guild != null ? (0, N.DY)(n.guild) : null,
+        d = a && null != o && function(e) {
             if (null == e || !l.i.VISIBLE.has(e.visibility)) return !1;
             let t = null != e.description && e.description.length > 0,
                 n = null != e.traits && e.traits.filter(e => e.label.length > 0).length > 0,
                 i = null != e.gameApplicationIds && e.gameApplicationIds.length > 0;
             return t && (n || i)
-        }(o) && null != d && null != n && !(0, T.Fk)(n);
+        }(o) && null != c && null != n && !(0, T.Fk)(n);
     if (s.useEffect(() => {
-            c && y.n.getConfig({
+            d && y.n.getConfig({
                 location: "AcceptInviteMobile.hasProfile"
             })
-        }, [c]), null == n) t = (0, i.jsx)(w, {});
+        }, [d]), null == n) t = (0, i.jsx)(w, {});
     else switch (r) {
         case 1:
-            t = c ? (0, i.jsx)(j.A, {
+            t = d ? (0, i.jsx)(j.A, {
                 invite: n,
-                guild: d,
+                guild: c,
                 profile: o,
                 onAcceptInvite: e.onAcceptInvite
             }) : (0, i.jsx)(C.A, {
@@ -166,7 +166,7 @@ function G(e) {
             });
             break;
         case 2:
-            t = (0, i.jsx)(B, {
+            t = (0, i.jsx)(D, {
                 ...e,
                 invite: n
             });
@@ -174,8 +174,8 @@ function G(e) {
         default:
             t = (0, i.jsx)(w, {})
     }
-    let u = 1 === r && c ? L.c4 : L.qF;
-    return (0, i.jsx)(D, {
+    let u = 1 === r && d ? L.c4 : L.qF;
+    return (0, i.jsx)(B, {
         startAnimHeightPx: 200,
         sectionClassName: P[r],
         inviteCardClassName: u,
@@ -218,7 +218,7 @@ function M(e) {
     } = e, r = (0, a.bG)([f.A], () => f.A.getInvite(t));
     return s.useEffect(() => {
         let e = m.default.getAnalyticsToken();
-        null != e && d.h.dispatch({
+        null != e && c.h.dispatch({
             type: "SET_ANALYTICS_TOKEN",
             analyticsToken: e,
             userId: m.default.getId()
@@ -239,7 +239,7 @@ function M(e) {
                 invite_type: null != r && r?.type != null ? b.Xd[r?.type] : void 0,
                 user_is_member: null != r && null != r.guild && null != A.A.getGuild(r.guild.id),
                 size_total: r?.approximate_member_count
-            }), n = null != r && r.state !== R.elq.EXPIRED && r.state !== R.elq.BANNED ? t : void 0, s = null != (i = m.default.getFingerprint()) ? i : m.default.getId(), l = null != r && r?.type != null ? Number(r?.type) : void 0, c.Ay.openApp(n, void 0, s, void 0, l)
+            }), n = null != r && r.state !== R.elq.EXPIRED && r.state !== R.elq.BANNED ? t : void 0, s = null != (i = m.default.getFingerprint()) ? i : m.default.getId(), l = null != r && r?.type != null ? Number(r?.type) : void 0, d.Ay.openApp(n, void 0, s, void 0, l)
         },
         transitionTo: n
     })

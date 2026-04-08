@@ -9,8 +9,8 @@ var i = n(627968),
     l = n.n(r),
     a = n(311907),
     o = n(397927),
-    d = n(830215),
-    c = n(964486),
+    c = n(830215),
+    d = n(964486),
     u = n(396681),
     h = n(854378),
     _ = n(976860),
@@ -34,12 +34,12 @@ function f(e) {
             })
         })
     }
-    return ((0, c.Ay)(() => {
+    return ((0, d.Ay)(() => {
         (0, p.d)("authorize_ip");
         let e = (0, u.A)(t);
         null == e ? f("failed") : (async () => {
             try {
-                await d.A.authorizeIPAddress(e), f("succeeded")
+                await c.A.authorizeIPAddress(e), f("succeeded")
             } catch (e) {
                 f("failed")
             }

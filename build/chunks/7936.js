@@ -9,8 +9,8 @@ var i = n(627968),
     l = n.n(r),
     a = n(311907),
     o = n(397927),
-    d = n(557722),
-    c = n(628387),
+    c = n(557722),
+    d = n(628387),
     u = n(148864),
     h = n(146571),
     _ = n(854378);
@@ -21,7 +21,7 @@ var p = n(985018),
 let A = () => {
     let [e, t] = s.useState(""), [r, A] = s.useState(""), [f, E] = s.useState(!1), [x, I] = s.useState(!1), [N, v] = s.useState(null), [T, C] = s.useState(null), j = (0, a.bG)([u.A], () => u.A.getCountryCode()), S = j.code.split(" ")[0], y = async () => {
         try {
-            await d.A.resendCode(e)
+            await c.A.resendCode(e)
         } catch (e) {
             C(e.body.message)
         }
@@ -30,8 +30,8 @@ let A = () => {
         try {
             let {
                 token: t
-            } = await d.A.verifyPhone(S + e, r);
-            v(null), C(null), I(!0), d.A.validatePhoneForSupport(t)
+            } = await c.A.verifyPhone(S + e, r);
+            v(null), C(null), I(!0), c.A.validatePhoneForSupport(t)
         } catch (e) {
             e.body.message ? (v(null), C(e.body.message)) : (v(e.body.phone), C(e.body.code))
         } finally {
@@ -65,7 +65,7 @@ let A = () => {
                 autoComplete: "off",
                 spellCheck: "false",
                 onChange: t,
-                forceMode: c.Pd.PHONE,
+                forceMode: d.Pd.PHONE,
                 error: N
             }), (0, i.jsx)(_.pd, {
                 className: m.QX,

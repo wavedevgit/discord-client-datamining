@@ -1,8 +1,8 @@
 /** chunk id: 212640 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    NY: () => c,
-    RZ: () => d
+    NY: () => d,
+    RZ: () => c
 }), n(323874), n(14289), n(35956);
 var i = n(835245),
     s = n(562465),
@@ -16,7 +16,7 @@ function o(e) {
     return "127.0.0.1" === n.hostname && (n.hostname = "localhost"), n.href
 }
 
-function d(e) {
+function c(e) {
     let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : window.location.href,
         n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : a;
     try {
@@ -33,7 +33,7 @@ function d(e) {
         return new r.Vy("Auth").error("Failed to check external redirect", e), !1
     }
 }
-async function c(e) {
+async function d(e) {
     let t = (0, i.A)();
     try {
         var n;

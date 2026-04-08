@@ -2,8 +2,8 @@
 "use strict";
 n.d(t, {
     $2: () => u,
-    Xv: () => c,
-    n7: () => d
+    Xv: () => d,
+    n7: () => c
 });
 var i = n(562465),
     s = n(73153),
@@ -12,7 +12,7 @@ var i = n(562465),
     a = n(204925),
     o = n(652215);
 
-function d(e, t) {
+function c(e, t) {
     return (0, r.A)(e, t), l.default.track(o.HAw.AGE_GATE_ACTION, {
         source: t,
         action: a.AM.AGE_GATE_SUBMITTED
@@ -35,7 +35,7 @@ function d(e, t) {
     })
 }
 
-function c(e) {
+function d(e) {
     s.h.dispatch({
         type: "AGE_GATE_PREVENT_UNDERAGE_REGISTRATION"
     }), l.default.track(o.HAw.AGE_GATE_ACTION, {

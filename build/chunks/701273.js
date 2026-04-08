@@ -9,8 +9,8 @@ var i = n(481613),
     l = n(49485),
     a = n(80703),
     o = n(803306),
-    d = n(976860),
-    c = n(961350),
+    c = n(976860),
+    d = n(961350),
     u = n(650048),
     h = n(954571),
     _ = n(877062),
@@ -18,10 +18,10 @@ var i = n(481613),
 async function g(e) {
     let t = s().os?.family;
     if ("Android" === t || "iOS" === t) {
-        let t = c.default.getFingerprint() ?? c.default.getId(),
+        let t = d.default.getFingerprint() ?? d.default.getId(),
             n = (0, l.I_)();
-        if (null == t && c.default.isAuthenticated()) try {
-            await (0, o.rQ)(), t = c.default.getId()
+        if (null == t && d.default.isAuthenticated()) try {
+            await (0, o.rQ)(), t = d.default.getId()
         } catch {}
         return (0, l.Ay)((0, r.BH)(), {
             utmSource: e,
@@ -39,6 +39,6 @@ async function m(e) {
         attempt_id: n.attemptId,
         source: n.utmSource
     }), _.A.launch(t, e => {
-        e || (0, d.bG)(u.A.fallbackRoute)
+        e || (0, c.bG)(u.A.fallbackRoute)
     })
 }

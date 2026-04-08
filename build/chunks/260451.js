@@ -1,14 +1,14 @@
 /** chunk id: 260451 params = (module,exports,require) **/
 n.d(t, {
-    SH: () => o,
+    SH: () => d,
     qE: () => _,
-    zQ: () => d
+    zQ: () => o
 });
 var i = n(64700),
     l = n(945810),
     a = n(449054),
     r = n(652215);
-let d = (0, l.mj)({
+let o = (0, l.mj)({
         name: "2026-02-silp-in-app-redesign",
         kind: "user",
         defaultConfig: {
@@ -26,7 +26,7 @@ let d = (0, l.mj)({
             }
         }
     }),
-    o = (0, l.mj)({
+    d = (0, l.mj)({
         name: "2026-03-silp-in-app-redesign-profile",
         kind: "user",
         defaultConfig: {
@@ -49,9 +49,9 @@ function _(e, t) {
     let {
         enabled: n,
         treatment: l
-    } = d.useConfig({
+    } = o.useConfig({
         location: t
-    }), [o, _] = i.useState(null), [u, s] = i.useState(!1), c = n && null != e && e.features.has(r.GuildFeatures.DISCOVERABLE);
+    }), [d, _] = i.useState(null), [u, s] = i.useState(!1), c = n && null != e && e.features.has(r.GuildFeatures.DISCOVERABLE);
     i.useEffect(() => {
         if (!c || null == e) {
             _(null), s(!1);
@@ -65,10 +65,10 @@ function _(e, t) {
             t = !0
         }
     }, [c, e]);
-    let f = n && null != e && e.features.has(r.GuildFeatures.DISCOVERABLE) && o?.is_published === !0;
+    let f = n && null != e && e.features.has(r.GuildFeatures.DISCOVERABLE) && d?.is_published === !0;
     return {
         enabled: f,
-        discoveryGuild: f ? o : null,
+        discoveryGuild: f ? d : null,
         treatment: l,
         isLoading: u
     }

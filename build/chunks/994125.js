@@ -1,7 +1,7 @@
 /** chunk id: 994125 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    K: () => d
+    K: () => c
 });
 var i = n(64700),
     s = n(311907),
@@ -10,7 +10,7 @@ var i = n(64700),
     a = n(429707),
     o = n(274303);
 
-function d() {
+function c() {
     let e = (0, s.cf)([o.A, l.default], () => {
         let e = o.A.getUsers(),
             t = l.default.getCurrentUser();

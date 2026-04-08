@@ -13,23 +13,23 @@ function o(e) {
     let {
         children: t,
         ...n
-    } = e, o = (0, r.zy)(), d = (0, r.W6)(), c = null, u = null;
+    } = e, o = (0, r.zy)(), c = (0, r.W6)(), d = null, u = null;
     return s.Children.forEach(t, e => {
-        if (null == c && s.isValidElement(e)) {
+        if (null == d && s.isValidElement(e)) {
             let {
                 component: t,
                 render: n,
                 ...i
             } = e.props, r = i.path || i.from;
-            null != (c = null != r ? (0, a.B)(o.pathname, {
+            null != (d = null != r ? (0, a.B)(o.pathname, {
                 ...i,
                 path: r
             }) : null) && (i = {
                 ...i,
                 key: r,
                 location: o,
-                match: c,
-                history: d
+                match: d,
+                history: c
             }, null != t ? u = s.createElement(t, i) : null != n && (u = n(i)))
         }
     }), (0, i.jsx)(l.F, {

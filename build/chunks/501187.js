@@ -10,8 +10,8 @@ var s = n(607399),
     l = n(80703),
     a = n(492917),
     o = n(397927),
-    d = n(976860),
-    c = n(961350),
+    c = n(976860),
+    d = n(961350),
     u = n(954571),
     h = n(877062),
     _ = n(652215),
@@ -52,7 +52,7 @@ function A(e) {
                 onClick: () => {
                     u.default.track(_.HAw.ONE_TIME_LOGIN_BACK_TO_LOGIN_CLICKED, {
                         error_reason: A
-                    }), (0, d.pX)(_.BVt.LOGIN)
+                    }), (0, c.pX)(_.BVt.LOGIN)
                 }
             })]
         })]
@@ -85,7 +85,7 @@ function A(e) {
                     e = function(e) {
                         let t = platform.os?.family;
                         if ("Android" === t || "iOS" === t) {
-                            let t = c.default.getFingerprint(),
+                            let t = d.default.getFingerprint(),
                                 n = (0, r.I_)(),
                                 i = `${location.protocol}//${window.GLOBAL_ENV.WEBAPP_ENDPOINT}/login/one-time?token=${e}`;
                             return (0, r.Ay)(i, {
@@ -104,7 +104,7 @@ function A(e) {
                         attempt_id: n.attemptId,
                         source: n.utmSource
                     }), h.A.launch(e, e => {
-                        e || (0, d.bG)({
+                        e || (0, c.bG)({
                             pathname: _.BVt.LOGIN
                         })
                     })

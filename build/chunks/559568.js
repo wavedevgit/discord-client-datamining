@@ -9,8 +9,8 @@ var i = n(627968),
     l = n(80703),
     a = n(311907),
     o = n(562465),
-    d = n(506774),
-    c = n(397927),
+    c = n(506774),
+    d = n(397927),
     u = n(73153),
     h = n(830215),
     _ = n(961350),
@@ -26,7 +26,7 @@ let x = "mweb_handoff_nonce",
     v = new Set(["nonce_missing", "nonce_expired", "handoff_exchange"]),
     T = new Set(["deep_link_failed"]),
     C = () => {
-        d.w.remove(x), d.w.remove(I)
+        c.w.remove(x), c.w.remove(I)
     },
     j = () => {
         let e = (0, a.bG)([_.default], () => _.default.getFingerprint()),
@@ -49,10 +49,10 @@ let x = "mweb_handoff_nonce",
             }, {
                 fingerprint: j
             })
-        }, [y, j]), R = d.w.get(x);
+        }, [y, j]), R = c.w.get(x);
         if ("null" === n && null === S && b("deep_link_failed"), null != n && "null" !== n && null == R && null === S && b("nonce_missing"), s.useEffect(() => {
                 if (null != R) {
-                    let e = d.w.get(I);
+                    let e = c.w.get(I);
                     (null == e || Date.now() >= e) && (b("nonce_expired"), C())
                 }
             }, [R, b]), s.useEffect(() => {
@@ -83,22 +83,22 @@ let x = "mweb_handoff_nonce",
         }) : T.has(S) ? f.intl.string(f.t.EPt55r) : v.has(S) ? f.intl.string(f.t.g87kTp) : void 0;
         return null != S && T.has(S) ? (0, i.jsx)("div", {
             className: E.Un,
-            children: (0, i.jsx)(c.Text, {
+            children: (0, i.jsx)(d.Text, {
                 color: "interactive-text-default",
                 variant: "text-sm/semibold",
                 children: O
             })
         }) : (0, i.jsxs)("div", {
             className: E.kL,
-            children: [(0, i.jsx)(c.Text, {
+            children: [(0, i.jsx)(d.Text, {
                 variant: "text-sm/semibold",
                 children: O
-            }), (0, i.jsx)(c.Button, {
+            }), (0, i.jsx)(d.Button, {
                 variant: "overlay-primary",
                 text: f.intl.string(f.t.NcC759),
                 onClick: () => {
                     let e = m.A.generateNonce();
-                    d.w.set(x, e), d.w.set(I, Date.now() + N);
+                    c.w.set(x, e), c.w.set(I, Date.now() + N);
                     let t = new URL(A.J$u),
                         n = new URLSearchParams(window.location.search);
                     n.delete("fingerprint"), n.delete("handoff_token");

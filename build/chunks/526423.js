@@ -9,17 +9,17 @@ var i = n(562465),
     l = n(6981),
     a = n(574052),
     o = n(115036),
-    d = n(954571),
-    c = n(272355),
+    c = n(954571),
+    d = n(272355),
     u = n(652215);
 
 function h(e, t) {
-    d.default.track(u.HAw.BROWSER_HANDOFF_SUCCEEDED, {
+    c.default.track(u.HAw.BROWSER_HANDOFF_SUCCEEDED, {
         authenticated: e,
         handoff_source: t
     })
 }
-class _ extends c.A {
+class _ extends d.A {
     _initialize() {
         s.h.subscribe("BROWSER_HANDOFF_END", this.handleEnd), s.h.subscribe("BROWSER_HANDOFF_FROM_APP", this.handleHandoff)
     }
@@ -46,7 +46,7 @@ class _ extends c.A {
             } = e;
             (0, l.uA)(t.user), r.A.loginToken(t.token, !1), h(!0, o)
         }, e => {
-            null != s && h(!1, o), r.A.setFingerprint(s), (0, l.mZ)(), o === a.L.ROLE_SUBSCRIPTION && d.default.track(u.HAw.MOBILE_WEB_HANDOFF_FAILURE, {
+            null != s && h(!1, o), r.A.setFingerprint(s), (0, l.mZ)(), o === a.L.ROLE_SUBSCRIPTION && c.default.track(u.HAw.MOBILE_WEB_HANDOFF_FAILURE, {
                 reason: e.message ?? e.text,
                 handoff_source: o
             })

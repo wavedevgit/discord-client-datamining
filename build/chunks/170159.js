@@ -9,8 +9,8 @@ var i = n(627968),
     l = n.n(r),
     a = n(311907),
     o = n(397927),
-    d = n(73153),
-    c = n(830215),
+    c = n(73153),
+    d = n(830215),
     u = n(869038),
     h = n(110782),
     _ = n(803306),
@@ -53,7 +53,7 @@ class L extends s.PureComponent {
             authenticated: t,
             isResolved: n
         } = this.props;
-        n || d.h.wait(() => {
+        n || c.h.wait(() => {
             this.resolveGiftCode()
         }), t && !e.authenticated && this.handleAuthenticated(), !t && e.authenticated && this.setState({
             currentUser: null
@@ -104,10 +104,10 @@ class L extends s.PureComponent {
     }
     handleLogout = () => {
         let e = this.props.match.params.giftCode;
-        c.A.logout("gift_code", b.BVt.GIFT_CODE_LOGIN(e))
+        d.A.logout("gift_code", b.BVt.GIFT_CODE_LOGIN(e))
     };
     handleResendVerification = () => {
-        c.A.verifyResend(), this.setState({
+        d.A.verifyResend(), this.setState({
             sentVerification: !0
         })
     };
@@ -265,17 +265,17 @@ class L extends s.PureComponent {
             transitionTo: a,
             location: o
         } = this.props, {
-            fetchingUser: d,
-            continueOnWeb: c
+            fetchingUser: c,
+            continueOnWeb: d
         } = this.state;
-        if (e === b.fAW.OPEN && !c) return this.renderAppOpened();
+        if (e === b.fAW.OPEN && !d) return this.renderAppOpened();
         if (e === b.fAW.OPENING) return this.renderSpinner(R.intl.string(R.t["Z+hCVU"]));
         if (l) return this.renderSpinner(R.intl.string(R.t.bhJseN));
         if (null == s) return r ? this.renderExpiredInvite() : this.renderSpinner(R.intl.string(R.t.b3lf1c));
         if (r) {
             if (n) {
                 let e = this.state.currentUser;
-                return d || null == e ? this.renderSpinner(R.intl.string(R.t.bYb2nS)) : this.requiresVerification && null != e ? this.renderVerification(e) : this.renderAuthenticated(s, e, t)
+                return c || null == e ? this.renderSpinner(R.intl.string(R.t.bYb2nS)) : this.requiresVerification && null != e ? this.renderVerification(e) : this.renderAuthenticated(s, e, t)
             }
             return "login" === this.getMode() ? (0, i.jsx)(S.A, {
                 giftCodeSKU: t,

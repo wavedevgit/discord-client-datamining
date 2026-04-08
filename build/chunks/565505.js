@@ -9,8 +9,8 @@ var i = n(627968),
     l = n(397927),
     a = n(854378),
     o = n(122906),
-    d = n(121623),
-    c = n(768397),
+    c = n(121623),
+    d = n(768397),
     u = n(210714),
     h = n(961350),
     _ = n(954571),
@@ -29,7 +29,7 @@ function E(e, t, n) {
     });
     let i = h.default.getFingerprint(),
         s = null != i ? i : h.default.getId();
-    d.A.openMobileApp(n.state === m.QB.RESOLVED ? t : void 0, s)
+    c.A.openMobileApp(n.state === m.QB.RESOLVED ? t : void 0, s)
 }
 
 function x(e) {
@@ -41,7 +41,7 @@ function x(e) {
     }, []), null == n || n.state === m.QB.RESOLVING) ? (0, i.jsx)(a.Ay, {
         children: (0, i.jsx)(l.y$y, {})
     }) : n.state === m.QB.RESOLVED ? (0, i.jsxs)(a.Ay, {
-        children: [(0, i.jsx)(c.A, {
+        children: [(0, i.jsx)(d.A, {
             guildTemplate: n,
             tall: !0
         }), (0, i.jsx)("div", {

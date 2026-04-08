@@ -1,7 +1,7 @@
 /** chunk id: 187035 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => D
+    A: () => B
 });
 var i = n(627968),
     s = n(64700),
@@ -9,8 +9,8 @@ var i = n(627968),
     l = n.n(r),
     a = n(284009),
     o = n.n(a),
-    d = n(311907),
-    c = n(397927),
+    c = n(311907),
+    d = n(397927),
     u = n(854378),
     h = n(10088),
     _ = n(122906),
@@ -35,8 +35,8 @@ var i = n(627968),
     L = n(985018),
     w = n(379790),
     k = n(885106);
-d.Ay.initialize();
-class B extends s.PureComponent {
+c.Ay.initialize();
+class D extends s.PureComponent {
     componentDidMount() {
         (0, E.d)("guildTemplate"), O.VP || v.A.launch("discord://" + S.BVt.GUILD_TEMPLATE(this.props.code), () => void 0)
     }
@@ -53,7 +53,7 @@ class B extends s.PureComponent {
     renderButton(e, t) {
         return O.VP ? (0, i.jsx)("div", {
             className: k.eT,
-            children: (0, i.jsx)(c.Button, {
+            children: (0, i.jsx)(d.Button, {
                 text: e,
                 fullWidth: !0,
                 onClick: t
@@ -146,14 +146,14 @@ class B extends s.PureComponent {
     }
 }
 
-function D(e) {
+function B(e) {
     let t = {
-        guildTemplate: (0, d.bG)([_.A], () => _.A.getGuildTemplate(e.code)),
-        nativeAppState: (0, d.bG)([h.A], () => h.A.getState(e.code)),
-        authenticated: (0, d.bG)([I.default], () => I.default.isAuthenticated()),
-        defaultRoute: (0, d.bG)([N.A], () => N.A.defaultRoute)
+        guildTemplate: (0, c.bG)([_.A], () => _.A.getGuildTemplate(e.code)),
+        nativeAppState: (0, c.bG)([h.A], () => h.A.getState(e.code)),
+        authenticated: (0, c.bG)([I.default], () => I.default.isAuthenticated()),
+        defaultRoute: (0, c.bG)([N.A], () => N.A.defaultRoute)
     };
-    return (0, i.jsx)(B, {
+    return (0, i.jsx)(D, {
         ...e,
         ...t
     })
@@ -173,7 +173,7 @@ function U(e) {
             children: L.intl.string(L.t.UNFvtM)
         }), n, (0, i.jsx)("div", {
             className: w.Tf,
-            children: (0, i.jsx)(c.Button, {
+            children: (0, i.jsx)(d.Button, {
                 text: L.intl.string(L.t.xr59t7),
                 fullWidth: !0,
                 onClick: s

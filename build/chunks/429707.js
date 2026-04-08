@@ -11,13 +11,13 @@ var i = n(247775),
     l = n(830215),
     a = n(626584),
     o = n(961350),
-    d = n(274303),
-    c = n(652215);
+    c = n(274303),
+    d = n(652215);
 let u = new a.A("MultiAccountActionCreators");
 
 function h() {
     let e = o.default.getId();
-    d.A.getUsers().forEach(async t => {
+    c.A.getUsers().forEach(async t => {
         let n, {
                 id: l
             } = t,
@@ -32,7 +32,7 @@ function h() {
         });
         try {
             n = await s.Bo.get({
-                url: c.Rsh.ME,
+                url: d.Rsh.ME,
                 headers: {
                     authorization: a
                 },

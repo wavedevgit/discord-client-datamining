@@ -9,8 +9,8 @@ var s = n(627968),
     l = n(873263),
     a = n(607399),
     o = n(311907),
-    d = n(397927),
-    c = n(220839),
+    c = n(397927),
+    d = n(220839),
     u = n(897479),
     h = n(942156),
     _ = n(574094),
@@ -35,9 +35,9 @@ function j(e) {
         children: t
     } = e, n = function() {
         let [e, t] = r.useState(!1), [n, s] = r.useState(!0), l = (0, o.bG)([p.A], () => p.A.hasLoadedExperiments);
-        return ((0, c.A)(() => {}, 300), void 0 !== i) ? i : !n && l ? (e || t(!0), v("default")) : n ? v("default") : "loading"
-    }(), a = (0, l.zy)(), d = C.includes(a.pathname), u = T.includes(a.pathname);
-    if (d) return t;
+        return ((0, d.A)(() => {}, 300), void 0 !== i) ? i : !n && l ? (e || t(!0), v("default")) : n ? v("default") : "loading"
+    }(), a = (0, l.zy)(), c = C.includes(a.pathname), u = T.includes(a.pathname);
+    if (c) return t;
     switch (n) {
         case "default":
             return (0, s.jsxs)(s.Fragment, {
@@ -95,7 +95,7 @@ class S extends r.Component {
         });
         return (0, s.jsx)("div", {
             className: f.WA,
-            children: (0, s.jsx)(d.Fmo, {
+            children: (0, s.jsx)(c.Fmo, {
                 forceLevel: 1,
                 children: null != e ? (0, s.jsxs)(s.Fragment, {
                     children: [(0, s.jsx)(h.A, {

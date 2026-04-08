@@ -9,7 +9,7 @@ var i = n(627968),
     l = n.n(r),
     a = n(235986),
     o = n(55623);
-class d extends s.PureComponent {
+class c extends s.PureComponent {
     static defaultProps = {
         autoFocus: !1
     };
@@ -53,7 +53,7 @@ class d extends s.PureComponent {
         t?.(e.currentTarget.value)
     }
 }
-class c extends s.PureComponent {
+class d extends s.PureComponent {
     _codeBlockRefs = Array(this.props.count);
     static defaultProps = {
         count: 6
@@ -72,7 +72,7 @@ class c extends s.PureComponent {
         } = this.state, s = [];
         for (let e = 0; e < n.length; e++) e === n.length / 2 && s.push((0, i.jsx)("div", {
             className: o.j
-        }, "spacer")), s.push((0, i.jsx)(d, {
+        }, "spacer")), s.push((0, i.jsx)(c, {
             ref: t => this.setCodeBlockRef(e, t),
             code: n[e],
             autoFocus: 0 === e,
@@ -127,4 +127,4 @@ class c extends s.PureComponent {
         t?.(e)
     }
 }
-let u = c
+let u = d

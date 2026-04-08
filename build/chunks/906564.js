@@ -10,8 +10,8 @@ var i = n(989349),
     l = n(73153),
     a = n(181658),
     o = n(955437),
-    d = n(577015),
-    c = n(961350),
+    c = n(577015),
+    d = n(961350),
     u = n(954571),
     h = n(499785),
     _ = n(569717),
@@ -60,7 +60,7 @@ function A(e) {
     return h.A.post({
         url: p.Rsh.REGISTER,
         body: {
-            fingerprint: c.default.getFingerprint(),
+            fingerprint: d.default.getFingerprint(),
             email: t,
             username: i,
             global_name: m,
@@ -93,7 +93,7 @@ function A(e) {
             action: g.AM.AGE_GATE_SUCCESS
         })
     }, e => {
-        if (e instanceof d.CaptchaCancelError) throw e;
+        if (e instanceof c.CaptchaCancelError) throw e;
         let t = new a.A(e);
         throw null != t.getFieldErrors("date_of_birth") && o.Xv(g.w_.REGISTER), u.default.track(p.HAw.REGISTER_SUBMIT_ERRORED, {
             is_unique_username_registration: !0,

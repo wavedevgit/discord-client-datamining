@@ -9,8 +9,8 @@ var i, s = n(627968),
     l = n(503698),
     a = n.n(l),
     o = n(311907),
-    d = n(397927),
-    c = n(830215),
+    c = n(397927),
+    d = n(830215),
     u = n(442433),
     h = n(427157),
     _ = n(961350),
@@ -40,12 +40,12 @@ function C(e) {
         hidePrivateData: p.A.hidePersonalInformation,
         isAuthenticated: _.default.isAuthenticated()
     })), T = new h.A(n), C = x && r?.id === T.id, j = n.tokenStatus === E.U.INVALID, S = l || T.hasUniqueUsername() ? null : `#${T.discriminator}`, y = null;
-    return C ? y = (0, s.jsx)(d.Text, {
+    return C ? y = (0, s.jsx)(c.Text, {
         variant: "text-sm/semibold",
         className: v.dx,
         color: "text-feedback-positive",
         children: N.intl.string(N.t.seV8yt)
-    }) : j && (y = (0, s.jsx)(d.Text, {
+    }) : j && (y = (0, s.jsx)(c.Text, {
         variant: "text-sm/semibold",
         className: v.dx,
         color: "text-feedback-critical",
@@ -54,9 +54,9 @@ function C(e) {
         className: v.KJ,
         children: (0, s.jsxs)("div", {
             className: v.yS,
-            children: [(0, s.jsx)(d.euF, {
+            children: [(0, s.jsx)(c.euF, {
                 src: T.getAvatarURL(void 0, 40),
-                size: d._3J.SIZE_40,
+                size: c._3J.SIZE_40,
                 "aria-label": n.username
             }), (0, s.jsxs)("div", {
                 className: a()(v.K_, {
@@ -64,7 +64,7 @@ function C(e) {
                 }),
                 children: [(0, s.jsxs)("div", {
                     className: v.Xh,
-                    children: [(0, s.jsx)(d.Text, {
+                    children: [(0, s.jsx)(c.Text, {
                         variant: "text-md/semibold",
                         color: "text-strong",
                         lineClamp: 1,
@@ -72,7 +72,7 @@ function C(e) {
                             mode: "username",
                             identifiable: l ? "never" : "always"
                         })
-                    }), (0, s.jsx)(d.Text, {
+                    }), (0, s.jsx)(c.Text, {
                         color: "text-default",
                         variant: "text-sm/normal",
                         children: S
@@ -80,7 +80,7 @@ function C(e) {
                 }), y]
             }), (0, s.jsxs)("div", {
                 className: v.Xp,
-                children: [!C && (0, s.jsx)(d.Button, {
+                children: [!C && (0, s.jsx)(c.Button, {
                     variant: "secondary",
                     text: j ? N.intl.string(N.t["DSN+hw"]) : t,
                     onClick: function() {
@@ -90,25 +90,25 @@ function C(e) {
                             }
                         }), f.Mx(n.id), i(1, n.id))
                     }
-                }), (0, s.jsx)(d.K0, {
-                    icon: d.jNK,
+                }), (0, s.jsx)(c.K0, {
+                    icon: c.jNK,
                     onClick: function(e) {
                         (0, u.jA)(e, e => {
                             let {
                                 onSelect: t
                             } = e;
-                            return (0, s.jsx)(d.W1t, {
+                            return (0, s.jsx)(c.W1t, {
                                 "data-menu-migrated-auto": !0,
                                 "aria-label": N.intl.string(N.t["41qiDU"]),
                                 navId: "manage-multi-account",
                                 onClose: u.Z_,
                                 onSelect: t,
-                                children: (0, s.jsx)(d.Drp, {
+                                children: (0, s.jsx)(c.Drp, {
                                     id: "remove-account",
                                     label: N.intl.string(N.t.lSLMaU),
                                     action: () => {
                                         let e;
-                                        c.A.logout("multi_accounts_list", null, n.id).finally(() => {
+                                        d.A.logout("multi_accounts_list", null, n.id).finally(() => {
                                             f.At(n.id)
                                         }), e = {}, null != r ? e.section = I.JJy.MANAGE_ACCOUNTS_MODAL : e.page = I.S3d.LOGIN, m.default.track(I.HAw.MULTI_ACCOUNT_ACCOUNT_REMOVE, {
                                             location: e
@@ -137,7 +137,7 @@ function j(e) {
     } = (0, x.K)();
     return (0, s.jsx)("div", {
         className: v.p_,
-        children: i ? (0, s.jsx)(d.y$y, {
+        children: i ? (0, s.jsx)(c.y$y, {
             className: v.u1
         }) : l.map((e, i) => (0, s.jsxs)(r.Fragment, {
             children: [(0, s.jsx)(C, {

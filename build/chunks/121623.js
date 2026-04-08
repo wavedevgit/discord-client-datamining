@@ -9,28 +9,28 @@ var i = n(400253),
     l = n(197111),
     a = n(954571),
     o = n(877062),
-    d = n(292572),
-    c = n(652215);
+    c = n(292572),
+    d = n(652215);
 let u = "template",
     h = {
-        ...d.A,
+        ...c.A,
         openNativeAppModal(e) {
-            l.A.openNativeAppModal(e, c.e$_.GUILD_TEMPLATE_BROWSER)
+            l.A.openNativeAppModal(e, d.e$_.GUILD_TEMPLATE_BROWSER)
         },
         openMobileApp(e, t) {
             if (null != platform.ua && platform.ua.toLowerCase().indexOf("googlebot") > -1) return;
             let n = null != e ? (0, i.FH)(e) : (0, i.BH)(),
                 l = (0, s.I_)(),
-                d = (0, s.Ay)(n, {
+                c = (0, s.Ay)(n, {
                     utmSource: u,
                     fingerprint: t,
                     attemptId: l
                 });
-            a.default.track(c.HAw.DEEP_LINK_CLICKED, {
+            a.default.track(d.HAw.DEEP_LINK_CLICKED, {
                 fingerprint: (0, r.v)(t),
                 attempt_id: l,
                 source: u,
                 guild_template_code: e
-            }), o.A.launch(d, () => {})
+            }), o.A.launch(c, () => {})
         }
     }

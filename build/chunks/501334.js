@@ -1,7 +1,7 @@
 /** chunk id: 501334 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    u: () => d
+    u: () => c
 });
 var i = n(627968),
     s = n(64700),
@@ -9,12 +9,12 @@ var i = n(627968),
     l = n(887324),
     a = n(985018),
     o = n(911791);
-let d = e => {
+let c = e => {
     let {
         onNavigate: t
     } = e, n = s.useCallback(() => {
         t(l.rP.DSA)
-    }, [t]), d = s.useCallback(() => {
+    }, [t]), c = s.useCallback(() => {
         t(l.rP.TIDA)
     }, [t]);
     return (0, i.jsxs)(r.BJc, {
@@ -44,7 +44,7 @@ let d = e => {
                 })]
             }), (0, i.jsxs)(r.DUT, {
                 className: o.b,
-                onClick: d,
+                onClick: c,
                 children: [(0, i.jsxs)("div", {
                     children: [(0, i.jsx)(r.Text, {
                         variant: "text-md/medium",

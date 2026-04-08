@@ -9,8 +9,8 @@ var i = n(627968),
     l = n.n(r),
     a = n(615300),
     o = n(397927),
-    d = n(652215),
-    c = n(102041);
+    c = n(652215),
+    d = n(102041);
 class u extends s.Component {
     static contextType = o.CZY;
     anim = new a.A.Value(0);
@@ -47,10 +47,10 @@ class u extends s.Component {
     }
     render() {
         return (0, i.jsx)(a.A.a, {
-            href: d.BVt.INDEX,
+            href: c.BVt.INDEX,
             target: "_blank",
             rel: "noopener",
-            className: l()(c.w, this.props.className),
+            className: l()(d.w, this.props.className),
             style: this.getAnimatedStyle()
         })
     }

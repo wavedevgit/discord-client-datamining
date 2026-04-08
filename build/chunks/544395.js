@@ -13,7 +13,7 @@ let o = {
         error: void 0,
         rateLimited: !0
     },
-    d = {
+    c = {
         validations: new(s())({
             max: 100,
             maxAge: 6e4
@@ -37,41 +37,41 @@ let o = {
             }
         }
     };
-class c extends r.Ay.Store {
+class d extends r.Ay.Store {
     static displayName = "UniqueUsernamesStore";
     isRateLimited() {
-        return null != d.retryAfterTime && Date.now() < d.retryAfterTime
+        return null != c.retryAfterTime && Date.now() < c.retryAfterTime
     }
     validate(e) {
-        let t = d.validations.get(e);
+        let t = c.validations.get(e);
         return this.isRateLimited() && (null == t || t.rateLimited) ? o : this.isRateLimited() || null == t || !t.rateLimited ? t : void 0
     }
     registrationUsernameSuggestion() {
-        return d.suggestions.registration.suggestion.username
+        return c.suggestions.registration.suggestion.username
     }
     usernameSuggestion() {
-        return d.suggestions.migration.suggestion.username
+        return c.suggestions.migration.suggestion.username
     }
     usernameSuggestionLoading() {
-        return d.suggestions.migration.usernameSuggestionLoading
+        return c.suggestions.migration.usernameSuggestionLoading
     }
     isCurrentUsernameInvalid() {
-        return d.currentUsernameInvalid
+        return c.currentUsernameInvalid
     }
     wasRegistrationSuggestionFetched(e) {
-        return d.suggestions.registration.source === e && d.suggestions.registration.fetched
+        return c.suggestions.registration.source === e && c.suggestions.registration.fetched
     }
     wasSuggestionsFetched() {
-        return d.suggestions.migration.fetched
+        return c.suggestions.migration.fetched
     }
 }
-let u = new c(l.h, {
+let u = new d(l.h, {
     UNIQUE_USERNAME_ATTEMPT_SUCCESS: function(e) {
         let {
             username: t,
             taken: n
         } = e;
-        d.validations.set(t, {
+        c.validations.set(t, {
             taken: n
         })
     },
@@ -82,23 +82,23 @@ let u = new c(l.h, {
             statusCode: i,
             retryAfter: s
         } = e;
-        429 === i ? d.validations.set(t, {
+        429 === i ? c.validations.set(t, {
             taken: null,
             error: n,
             rateLimited: !0
-        }, (s ?? 7) * a.A.Millis.SECOND) : d.validations.set(t, {
+        }, (s ?? 7) * a.A.Millis.SECOND) : c.validations.set(t, {
             taken: null,
             error: n
-        }), null != s && (d.retryAfterTime = Date.now() + s * a.A.Millis.SECOND)
+        }), null != s && (c.retryAfterTime = Date.now() + s * a.A.Millis.SECOND)
     },
     UNIQUE_USERNAME_SUGGESTIONS_RESET: function() {
-        d.suggestions.migration = {
+        c.suggestions.migration = {
             suggestion: {
                 username: void 0
             },
             fetched: !1,
             usernameSuggestionLoading: !1
-        }, d.suggestions.registration = {
+        }, c.suggestions.registration = {
             suggestion: {
                 username: void 0
             },
@@ -110,22 +110,22 @@ let u = new c(l.h, {
         let {
             suggestion: t
         } = e;
-        d.suggestions.migration = {
+        c.suggestions.migration = {
             suggestion: t,
             fetched: !0,
             usernameSuggestionLoading: !1
-        }, t?.invalid_current_username === !0 && (d.currentUsernameInvalid = !0)
+        }, t?.invalid_current_username === !0 && (c.currentUsernameInvalid = !0)
     },
     UNIQUE_USERNAME_REGISTRATION_SUGGESTIONS_SUCCESS: function(e) {
         let {
             suggestion: t,
             source: n
         } = e;
-        d.suggestions.registration = {
+        c.suggestions.registration = {
             suggestion: t,
             source: n,
             fetched: !0
-        }, t?.username != null && d.validations.set(t.username, {
+        }, t?.username != null && c.validations.set(t.username, {
             taken: !1
         })
     }

@@ -10,8 +10,8 @@ var s = n(397927),
     l = n(57930),
     a = n(115703),
     o = n(438842),
-    d = n(652215),
-    c = n(985018),
+    c = n(652215),
+    d = n(985018),
     u = n(500577);
 
 function h(e) {
@@ -29,8 +29,8 @@ function h(e) {
             state: t
         } = e;
         switch (t) {
-            case d.elq.ACCEPTING:
-            case d.elq.APP_OPENING:
+            case c.elq.ACCEPTING:
+            case c.elq.APP_OPENING:
                 return !0;
             default:
                 return !1
@@ -75,7 +75,7 @@ function h(e) {
             children: (0, i.jsx)(s.Button, {
                 variant: "primary",
                 size: "md",
-                text: c.intl.string(c.t.ohMvm1),
+                text: d.intl.string(d.t.ohMvm1),
                 onClick: _,
                 loading: A,
                 fullWidth: !0

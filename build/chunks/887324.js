@@ -9,8 +9,8 @@ var i, s = n(627968),
     l = n(311907),
     a = n(397927),
     o = n(830215),
-    d = n(803306),
-    c = n(49463),
+    c = n(803306),
+    d = n(49463),
     u = n(17372),
     h = n(369053),
     _ = n(961350),
@@ -24,7 +24,7 @@ let E = e => {
         let {
             transitionState: t,
             onClose: n
-        } = e, [i, f] = r.useState(!0), [x, I] = r.useState([]), [N, v] = r.useState("selection"), T = (0, l.bG)([_.default], () => _.default.isAuthenticated()), C = (0, l.bG)([c.A], () => c.A.hasLoadedExperiments), j = r.useCallback(() => {
+        } = e, [i, f] = r.useState(!0), [x, I] = r.useState([]), [N, v] = r.useState("selection"), T = (0, l.bG)([_.default], () => _.default.isAuthenticated()), C = (0, l.bG)([d.A], () => d.A.hasLoadedExperiments), j = r.useCallback(() => {
             (0, h.OY)().then(e => {
                 let {
                     body: {
@@ -37,7 +37,7 @@ let E = e => {
             })
         }, []);
         r.useEffect(() => {
-            T ? (f(!0), d.rQ({
+            T ? (f(!0), c.rQ({
                 withAnalyticsToken: !0
             }).then(() => j()).catch(() => f(!1))) : j()
         }, [T, j]), r.useEffect(() => {

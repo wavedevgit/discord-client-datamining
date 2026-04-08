@@ -9,15 +9,15 @@ var i = n(627968),
     l = n(435328),
     a = n(427080),
     o = n(515115),
-    d = n(988794),
-    c = n(863487);
+    c = n(988794),
+    d = n(863487);
 
 function u(e) {
     let {
         guildScheduledEvent: t,
         channel: n,
         onClose: u
-    } = e, h = t.entity_type === d.Ps.EXTERNAL, _ = s.useCallback(e => (0, a.GI)(t, u)(e), [t, u]), p = (0, o.L)(t, n);
+    } = e, h = t.entity_type === c.Ps.EXTERNAL, _ = s.useCallback(e => (0, a.GI)(t, u)(e), [t, u]), p = (0, o.L)(t, n);
     if (null == p) return null;
     let {
         IconComponent: g,
@@ -28,18 +28,18 @@ function u(e) {
             color: "currentColor",
             width: 20,
             height: 20,
-            className: c.p
+            className: d.p
         }), (0, i.jsx)(r.Text, {
             color: "text-default",
             variant: "text-sm/normal",
-            className: c.fN,
+            className: d.fN,
             children: (0, l.l)(m, !0)
         })]
     });
     return (0, i.jsx)("div", {
-        className: c.nM,
+        className: d.nM,
         children: null != _ ? (0, i.jsx)(r.DUT, {
-            className: h ? c.dC : c.h7,
+            className: h ? d.dC : d.h7,
             onClick: _,
             children: A
         }) : A

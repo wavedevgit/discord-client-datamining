@@ -9,8 +9,8 @@ var i = n(627968),
     l = n(110259),
     a = n(607399),
     o = n(470562),
-    d = n(311907),
-    c = n(73153),
+    c = n(311907),
+    d = n(73153),
     u = n(830215),
     h = n(869038),
     _ = n(846293),
@@ -35,8 +35,8 @@ var i = n(627968),
     L = n(30793),
     w = n(299091),
     k = n(954571),
-    B = n(139675),
-    D = n(612181),
+    D = n(139675),
+    B = n(612181),
     U = n(486020),
     P = n(952072),
     G = n(765624),
@@ -60,13 +60,13 @@ var i = n(627968),
     ei = n(652215);
 n(436317);
 var es = n(172799);
-n(426620), d.Ay.initialize();
+n(426620), c.Ay.initialize();
 let er = (0, G.A)(Y.A),
     el = (0, G.A)(X.A),
     ea = (0, G.A)(q.A),
     eo = (0, G.A)(z.A),
-    ed = (0, G.A)(K.A),
-    ec = (0, G.A)(j.A),
+    ec = (0, G.A)(K.A),
+    ed = (0, G.A)(j.A),
     eu = (0, G.A)($.A),
     eh = (0, G.A)(et.A),
     e_ = (0, G.A)(M.A),
@@ -97,13 +97,13 @@ class ej extends s.PureComponent {
         } = t, l = (0, r.parse)(i.search).redirect_to ?? null;
         (null == l || "" === l || l.startsWith(ei.BVt.ME) || !(0, o.e)(l) && !(0, f.RZ)(l)) && (l = null);
         let a = null;
-        if (null == n) a = (0, D.u8)(l);
+        if (null == n) a = (0, B.u8)(l);
         else if (n?.state === ei.elq.RESOLVED) {
             let {
                 guild: e,
                 target_application: t
             } = n;
-            null != t ? null != s && (a = (0, B.uD)(t.id, s, 1024)) : null != e && "string" == typeof e.splash && (a = U.Ay.getGuildSplashURL({
+            null != t ? null != s && (a = (0, D.uD)(t.id, s, 1024)) : null != e && "string" == typeof e.splash && (a = U.Ay.getGuildSplashURL({
                 id: e.id,
                 splash: e.splash
             }))
@@ -140,7 +140,7 @@ class ej extends s.PureComponent {
             let {
                 target_application: t
             } = e;
-            null != t && (0, B.RG)(t.id, ["embedded_splash"]).then(e => {
+            null != t && (0, D.RG)(t.id, ["embedded_splash"]).then(e => {
                 let [t] = e;
                 return this.setState({
                     backgroundId: t
@@ -174,7 +174,7 @@ class ej extends s.PureComponent {
             giftCode: e
         } = this.props;
         null != e && h.A.resolveGiftCode(e, !0, !0).then(t => {
-            null != t && null == t.giftCode.promotion && c.h.wait(() => h.A.openNativeGiftCodeModal(e))
+            null != t && null == t.giftCode.promotion && d.h.wait(() => h.A.openNativeGiftCodeModal(e))
         })
     }
     render() {
@@ -213,13 +213,13 @@ class ej extends s.PureComponent {
                 })
             }), (0, i.jsx)(m.A, {
                 path: ei.BVt.GIFT_CODE_LOGIN(":giftCode"),
-                render: e => (0, i.jsx)(ed, {
+                render: e => (0, i.jsx)(ec, {
                     login: !0,
                     ...e
                 })
             }), (0, i.jsx)(m.A, {
                 path: ei.BVt.GIFT_CODE(":giftCode"),
-                render: e => (0, i.jsx)(ed, {
+                render: e => (0, i.jsx)(ec, {
                     ...e
                 })
             }), (0, i.jsx)(m.A, {
@@ -235,7 +235,7 @@ class ej extends s.PureComponent {
                         location: s,
                         transitionTo: r
                     } = e, l = (0, C.fB)(t, s.search);
-                    return a.Fr || a.v1 ? (0, i.jsx)(ec, {
+                    return a.Fr || a.v1 ? (0, i.jsx)(ed, {
                         inviteKey: l,
                         transitionTo: r
                     }, l) : (0, i.jsx)(ea, {
@@ -354,7 +354,7 @@ class ej extends s.PureComponent {
         })
     }
 }
-let eS = d.Ay.connectStores([O.default, w.A, L.A, I.A, N.A], e => {
+let eS = c.Ay.connectStores([O.default, w.A, L.A, I.A, N.A], e => {
     let {
         match: t,
         location: n

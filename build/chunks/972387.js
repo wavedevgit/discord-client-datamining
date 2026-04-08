@@ -6,15 +6,15 @@ var i = n(73153),
     l = n(846293),
     a = n(159001),
     r = n(960736),
-    d = n(253932),
-    o = n(954571),
+    o = n(253932),
+    d = n(954571),
     _ = n(4274),
     u = n(115063),
     s = n(652215);
 let c = {
     acceptInvite(e, t) {
         let n = l.Ay.getInviteContext("Desktop Invite Modal", e),
-            o = (0, r.tJ)(),
+            d = (0, r.tJ)(),
             s = (0, r.Z1)(),
             c = (0, r.N9)();
         l.Ay.acceptInvite({
@@ -31,25 +31,25 @@ let c = {
         }).then(() => {
             if (null != e.guild) {
                 if (s) {
-                    if (d.$s.getSetting().includes(e.guild.id)) {
+                    if (o.$s.getSetting().includes(e.guild.id)) {
                         let t = new Set((0, u.Tb)());
-                        t.delete(e.guild.id), d.$s.updateSetting(Array.from(t))
+                        t.delete(e.guild.id), o.$s.updateSetting(Array.from(t))
                     }
                 } else {
                     let t = new Set((0, u.Tb)());
-                    t.add(e.guild?.id), d.$s.updateSetting(Array.from(t))
+                    t.add(e.guild?.id), o.$s.updateSetting(Array.from(t))
                 }
                 if (c) {
-                    if (d.JG.getSetting().includes(e.guild.id)) {
+                    if (o.JG.getSetting().includes(e.guild.id)) {
                         let t = new Set((0, u.Kk)());
-                        t.delete(e.guild.id), d.JG.updateSetting(Array.from(t))
+                        t.delete(e.guild.id), o.JG.updateSetting(Array.from(t))
                     }
                 } else {
                     let t = new Set((0, u.Kk)());
-                    t.add(e.guild.id), d.JG.updateSetting(Array.from(t))
+                    t.add(e.guild.id), o.JG.updateSetting(Array.from(t))
                 }
-                null != o && o.length > 0 && (0, a.GL)(e.guild.id, {
-                    nick: o
+                null != d && d.length > 0 && (0, a.GL)(e.guild.id, {
+                    nick: d
                 })
             }
             this.close()
@@ -68,7 +68,7 @@ let c = {
                 i = (0, r.Z1)(),
                 l = (0, r.N9)(),
                 a = (0, r.qO)();
-            o.default.track(s.HAw.INVITE_ACCEPT_JOIN_SETTINGS_SET, {
+            d.default.track(s.HAw.INVITE_ACCEPT_JOIN_SETTINGS_SET, {
                 invite_code: e,
                 guild_id: t,
                 nickname_present: null != n && n.length > 0,

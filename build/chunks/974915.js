@@ -4,9 +4,9 @@ var i = n(349519),
     r = n(147818);
 e.exports = function(e, t, n) {
     for (var l = -1, a = t.length, o = {}; ++l < a;) {
-        var d = t[l],
-            c = i(e, d);
-        n(c, d) && s(o, r(d, e), c)
+        var c = t[l],
+            d = i(e, c);
+        n(d, c) && s(o, r(c, e), d)
     }
     return o
 }

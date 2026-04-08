@@ -9,8 +9,8 @@ var i = n(64700),
     l = n(830215),
     a = n(765548),
     o = n(626584),
-    d = n(751124),
-    c = n(203982),
+    c = n(751124),
+    d = n(203982),
     u = n(323737),
     h = n(442767),
     _ = n(525711),
@@ -37,7 +37,7 @@ function m(e, t) {
             i = e => g.info(n(e)),
             s = `${window.GLOBAL_ENV.REMOTE_AUTH_ENDPOINT}/?v=2`;
         s.startsWith("//") && (s = `wss:${s}`);
-        let a = (0, d.A)(s);
+        let a = (0, c.A)(s);
         g.info(`[0ms] connecting to ${s}`);
         let o = null,
             m = null,
@@ -69,7 +69,7 @@ function m(e, t) {
                         return
                     }
                     case "pending_remote_init": {
-                        I.succeed(), c._.dispatch(p.jej.WAVE_EMPHASIZE);
+                        I.succeed(), d._.dispatch(p.jej.WAVE_EMPHASIZE);
                         let e = await u.A.publicKeyFingerprint(C());
                         if (e !== o.fingerprint) throw Error(`bad fingerprint ${e} !== ${o.fingerprint}`);
                         i("handshake complete awaiting remote auth."), E({
@@ -100,7 +100,7 @@ function m(e, t) {
                         return
                     }
                     case "pending_ticket": {
-                        c._.dispatch(p.jej.WAVE_EMPHASIZE), i("remote auth handshake started, awaiting ticket/cancel.");
+                        d._.dispatch(p.jej.WAVE_EMPHASIZE), i("remote auth handshake started, awaiting ticket/cancel.");
                         let e = o.encrypted_user_payload,
                             t = await (0, h.n7)(C(), e);
                         E({

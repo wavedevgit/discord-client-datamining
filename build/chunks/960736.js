@@ -1,13 +1,13 @@
 /** chunk id: 960736 params = (module,exports,require) **/
 n.d(t, {
-    N9: () => v,
+    N9: () => m,
     Z1: () => A,
     dR: () => u,
     jJ: () => g,
     lD: () => _,
     p9: () => f,
     qO: () => c,
-    tJ: () => m,
+    tJ: () => v,
     uE: () => I,
     xD: () => p,
     xP: () => s
@@ -16,18 +16,18 @@ var i = n(353640),
     l = n(873298),
     a = n(253932),
     r = n(287809);
-let d = {
+let o = {
     nickname: void 0,
     dmsAllowed: !a.Zt.getSetting()
 };
 
-function o(e) {
+function d(e) {
     let t = a._Z.getSetting();
     return t !== l.Qd.ACTIVITY_STATUS_ON && (t !== l.Qd.ACTIVITY_STATUS_ON_FOR_LARGE_GUILDS || null == e || !(e > 200))
 }
 let _ = (0, i.v)(e => ({
-        nickname: d.nickname,
-        dmsAllowed: d.dmsAllowed,
+        nickname: o.nickname,
+        dmsAllowed: o.dmsAllowed,
         showActivity: !0,
         inviteCode: void 0,
         guildId: void 0,
@@ -62,14 +62,14 @@ let _ = (0, i.v)(e => ({
             guildSize: t,
             inviteCode: n,
             guildId: i,
-            showActivity: o(t),
+            showActivity: d(t),
             dmsAllowed: !a.Zt.getSetting(),
             touched: !1
         })),
         reset: () => e(e => ({
-            nickname: d.nickname,
-            dmsAllowed: d.dmsAllowed,
-            showActivity: o(e.guildSize),
+            nickname: o.nickname,
+            dmsAllowed: o.dmsAllowed,
+            showActivity: d(e.guildSize),
             inviteCode: void 0,
             guildId: void 0,
             guildSize: e.guildSize,
@@ -84,14 +84,14 @@ let _ = (0, i.v)(e => ({
     },
     c = () => {
         let e = _.getState();
-        return e.nickname !== d.nickname || e.dmsAllowed !== d.dmsAllowed || e.showActivity !== o(e.guildSize)
+        return e.nickname !== o.nickname || e.dmsAllowed !== o.dmsAllowed || e.showActivity !== d(e.guildSize)
     },
     f = () => _.getState().inviteCode,
     p = () => _.getState().guildId,
     g = () => _.getState().touched,
     A = () => _.getState().dmsAllowed,
-    m = () => _.getState().nickname,
-    v = () => _.getState().showActivity,
+    v = () => _.getState().nickname,
+    m = () => _.getState().showActivity,
     I = () => {
         let {
             nickname: e

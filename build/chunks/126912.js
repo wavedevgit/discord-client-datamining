@@ -9,8 +9,8 @@ var i = n(627968),
     l = n(311907),
     a = n(562465),
     o = n(397927),
-    d = n(396681),
-    c = n(854378),
+    c = n(396681),
+    d = n(854378),
     u = n(210714),
     h = n(718446),
     _ = n(427157),
@@ -32,7 +32,7 @@ class x extends s.PureComponent {
         category: null
     };
     componentDidMount() {
-        let e = (0, d.A)(this.props.location),
+        let e = (0, c.A)(this.props.location),
             t = (0, r.parse)(this.props.location.search);
         a.Bo.post({
             url: g.Rsh.DISABLE_EMAIL_NOTIFICATIONS,
@@ -62,8 +62,8 @@ class x extends s.PureComponent {
         })), (0, u.d)("disable_email_notifications")
     }
     renderBusy() {
-        return (0, i.jsx)(c.Ay, {
-            children: (0, i.jsx)(c.CK, {})
+        return (0, i.jsx)(d.Ay, {
+            children: (0, i.jsx)(d.CK, {})
         })
     }
     renderCategorySuccess(e, t) {
@@ -73,11 +73,11 @@ class x extends s.PureComponent {
         } = this.props, r = f.intl.formatToPlainString(f.t.YDAohB, {
             category: t
         });
-        return (0, i.jsxs)(c.Ay, {
-            children: [(0, i.jsx)(c.hE, {
+        return (0, i.jsxs)(d.Ay, {
+            children: [(0, i.jsx)(d.hE, {
                 className: E.QB,
                 children: f.intl.string(f.t.f6rdLg)
-            }), (0, i.jsx)(c.tK, {
+            }), (0, i.jsx)(d.tK, {
                 children: r
             }), (0, i.jsx)("div", {
                 className: E.QX,
@@ -108,15 +108,15 @@ class x extends s.PureComponent {
             let e = m.px.find(e => e.category === s);
             if (null != e) return this.renderCategorySuccess(s, e.label())
         }
-        return (0, i.jsxs)(c.Ay, {
-            children: [(0, i.jsx)(c.eu, {
+        return (0, i.jsxs)(d.Ay, {
+            children: [(0, i.jsx)(d.eu, {
                 src: n?.getAvatarURL(void 0, 100),
                 size: o._3J.DEPRECATED_SIZE_100,
                 className: E.SX
-            }), (0, i.jsx)(c.hE, {
+            }), (0, i.jsx)(d.hE, {
                 className: E.QB,
                 children: f.intl.string(f.t["6U6OMQ"])
-            }), (0, i.jsx)(c.tK, {
+            }), (0, i.jsx)(d.tK, {
                 children: f.intl.string(f.t["yaDJ4/"])
             }), (0, i.jsx)("div", {
                 className: E.eT,
@@ -133,14 +133,14 @@ class x extends s.PureComponent {
             defaultRoute: e,
             transitionTo: t
         } = this.props;
-        return (0, i.jsxs)(c.Ay, {
-            children: [(0, i.jsx)(c._V, {
+        return (0, i.jsxs)(d.Ay, {
+            children: [(0, i.jsx)(d._V, {
                 src: n(37772),
                 className: E.SX
-            }), (0, i.jsx)(c.hE, {
+            }), (0, i.jsx)(d.hE, {
                 className: E.QB,
                 children: f.intl.string(f.t.ox9hIS)
-            }), (0, i.jsx)(c.tK, {
+            }), (0, i.jsx)(d.tK, {
                 children: f.intl.string(f.t["/dcuR5"])
             }), (0, i.jsx)("div", {
                 className: E.eT,

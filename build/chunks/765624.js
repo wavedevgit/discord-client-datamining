@@ -9,11 +9,11 @@ var i = n(627968),
     l = n.n(r),
     a = n(615300),
     o = n(607399),
-    d = n(319060),
-    c = n(397927),
+    c = n(319060),
+    d = n(397927),
     u = n(240248),
     h = n(540433);
-let _ = (0, u.xI)(d.A.WAVE_SPLASH_RESPONSIVE_WIDTH_MOBILE),
+let _ = (0, u.xI)(c.A.WAVE_SPLASH_RESPONSIVE_WIDTH_MOBILE),
     p = {
         friction: 10,
         tension: 130
@@ -74,7 +74,7 @@ let _ = (0, u.xI)(d.A.WAVE_SPLASH_RESPONSIVE_WIDTH_MOBILE),
             render() {
                 return (0, i.jsx)("div", {
                     className: h.i,
-                    children: (0, i.jsx)(c.CZY.Consumer, {
+                    children: (0, i.jsx)(d.CZY.Consumer, {
                         children: t => {
                             let {
                                 reducedMotion: n

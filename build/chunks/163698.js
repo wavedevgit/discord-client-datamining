@@ -10,8 +10,8 @@ var s = n(503698),
     l = n(397927),
     a = n(854378),
     o = n(813516),
-    d = n(524832),
-    c = n(652215),
+    c = n(524832),
+    d = n(652215),
     u = n(985018),
     h = n(651068),
     _ = n(885106);
@@ -69,11 +69,11 @@ function g(e) {
             className: h.UD,
             children: [(0, i.jsx)(l.Button, {
                 text: u.intl.string(u.t.GgCRqR),
-                onClick: () => t(d.k.PASSWORD)
+                onClick: () => t(c.k.PASSWORD)
             }), (0, i.jsx)(l.Button, {
                 text: u.intl.string(u.t["B/yHcQ"]),
                 variant: "secondary",
-                onClick: () => s(c.BVt.LOGIN, {
+                onClick: () => s(d.BVt.LOGIN, {
                     source: "account_revert"
                 })
             })]

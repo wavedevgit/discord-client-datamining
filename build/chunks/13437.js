@@ -10,8 +10,8 @@ var s = n(110259),
     l = n(139286),
     a = n(854378),
     o = n(970573),
-    d = n(985018),
-    c = n(795032);
+    c = n(985018),
+    d = n(795032);
 
 function u(e) {
     let {
@@ -21,26 +21,26 @@ function u(e) {
         type: s.ImpressionTypes.MODAL,
         name: s.ImpressionNames.MULTI_ACCOUNT_SWITCH_LANDING
     }), (0, i.jsxs)(a.Ay, {
-        className: c.ci,
+        className: d.ci,
         children: [(0, i.jsx)(a.hE, {
-            children: d.intl.string(d.t.bVbB63)
+            children: c.intl.string(c.t.bVbB63)
         }), (0, i.jsx)(r.Text, {
-            className: c.PK,
+            className: d.PK,
             variant: "text-md/normal",
             color: "text-default",
-            children: d.intl.string(d.t["0M5fN7"])
+            children: c.intl.string(c.t["0M5fN7"])
         }), (0, i.jsx)(o.A, {
-            actionText: d.intl.string(d.t["DSN+hw"]),
+            actionText: c.intl.string(c.t["DSN+hw"]),
             onAction: e => {
                 e === o.X.LOGIN_REQUIRED && t()
             }
         }), (0, i.jsx)("div", {
-            className: c.o1,
+            className: d.o1,
             children: (0, i.jsx)(r.QWc, {
                 variant: "secondary",
                 size: "md",
                 textVariant: "text-sm/medium",
-                text: d.intl.string(d.t["9g2mqT"]),
+                text: c.intl.string(c.t["9g2mqT"]),
                 onClick: t
             })
         })]

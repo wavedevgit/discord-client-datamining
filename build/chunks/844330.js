@@ -1,7 +1,7 @@
 /** chunk id: 844330 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => c
+    A: () => d
 });
 var i = n(627968),
     s = n(64700),
@@ -9,14 +9,14 @@ var i = n(627968),
     l = n.n(r),
     a = n(397927),
     o = n(147925),
-    d = n(485965);
+    c = n(485965);
 
-function c(e) {
+function d(e) {
     let {
         icon: t,
         title: n,
         subtitle: r,
-        children: c,
+        children: d,
         className: u,
         isExpanded: h,
         onExpandedChange: _,
@@ -26,7 +26,7 @@ function c(e) {
     } = e, [A, f] = s.useState(p), E = s.useRef(null), [x, I] = s.useState(null), N = void 0 !== h, v = N ? h : A;
     s.useEffect(() => {
         v && null != E.current && I(E.current.scrollHeight)
-    }, [v, c]);
+    }, [v, d]);
     let T = s.useCallback(() => {
             let e = !v;
             N || f(e), _?.(e), e && null != g && g()
@@ -42,17 +42,17 @@ function c(e) {
             }
         }, [m, v, x]);
     return (0, i.jsxs)("div", {
-        className: l()(d.Yt, u, {
-            [d.Sg]: v
+        className: l()(c.Yt, u, {
+            [c.Sg]: v
         }),
         children: [(0, i.jsxs)(a.DUT, {
-            className: d.wx,
+            className: c.wx,
             onClick: T,
             children: [null != t && (0, i.jsx)("div", {
-                className: d.Y5,
+                className: c.Y5,
                 children: t
             }), (0, i.jsxs)("div", {
-                className: d.DD,
+                className: c.DD,
                 children: [(0, i.jsx)(a.Text, {
                     variant: "text-sm/medium",
                     color: "text-default",
@@ -63,8 +63,8 @@ function c(e) {
                     children: r
                 })]
             }), (0, i.jsx)("div", {
-                className: l()(d.OW, {
-                    [d.Sg]: v
+                className: l()(c.OW, {
+                    [c.Sg]: v
                 }),
                 children: (0, i.jsx)(o.A, {
                     width: 20,
@@ -74,11 +74,11 @@ function c(e) {
             })]
         }), (0, i.jsx)("div", {
             ref: E,
-            className: l()(d.Qs, {
-                [d.Sg]: v
+            className: l()(c.Qs, {
+                [c.Sg]: v
             }),
             style: C,
-            children: c
+            children: d
         })]
     })
 }

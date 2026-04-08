@@ -11,8 +11,8 @@ var s = n(397927),
     l = n(714991),
     a = n(557582),
     o = n(167630),
-    d = n(860689),
-    c = n(949155),
+    c = n(860689),
+    d = n(949155),
     u = n(985018),
     h = n(519096);
 
@@ -56,7 +56,7 @@ function _(e) {
 function p(e) {
     let {
         invite: t
-    } = e, n = null != t.guild ? (0, d.DY)(t.guild) : null;
+    } = e, n = null != t.guild ? (0, c.DY)(t.guild) : null;
     if (null == n) return null;
     let a = n.description ?? "";
     return (0, i.jsxs)("div", {
@@ -83,7 +83,7 @@ function p(e) {
                         className: h.n2,
                         tooltipPosition: "left"
                     })]
-                }), (0, i.jsx)(c.IK, {
+                }), (0, i.jsx)(d.IK, {
                     invite: t,
                     textClassName: h.kS,
                     className: h.pe

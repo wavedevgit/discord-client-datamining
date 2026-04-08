@@ -9,8 +9,8 @@ var i = n(627968),
     l = n(492917),
     a = n(830215),
     o = n(964486),
-    d = n(396681),
-    c = n(317940),
+    c = n(396681),
+    d = n(317940),
     u = n(701273),
     h = n(210714),
     _ = n(954571),
@@ -28,7 +28,7 @@ function A(e) {
     } = e, [r, A] = s.useState("submitting"), f = s.useRef(void 0);
     (0, o.Ay)(() => {
         (0, h.d)("verify_email");
-        let e = (0, d.A)(t);
+        let e = (0, c.A)(t);
         null == e ? A("failed") : (async () => {
             try {
                 let t = await a.A.verify(e);
@@ -48,19 +48,19 @@ function A(e) {
                 verifying_user_id: f.current
             }), (0, u.A)("verify_email")
         }, []);
-    return "failed" === r ? (0, i.jsx)(c.A, {
+    return "failed" === r ? (0, i.jsx)(d.A, {
         title: g.intl.string(g.t["PCgG3+"]),
         subtitle: g.intl.string(g.t.tQpeA3),
         buttonText: g.intl.string(g.t.dKhVQN),
         onButtonClick: E
-    }) : "succeeded" === r ? (0, i.jsx)(c.A, {
+    }) : "succeeded" === r ? (0, i.jsx)(d.A, {
         title: g.intl.string(g.t["dAfGb+"]),
         buttonText: g.intl.string(g.t["uJWIj/"]),
         onButtonClick: x,
         image: (0, i.jsx)(l.bqQ, {
             alt: g.intl.string(g.t["dAfGb+"])
         })
-    }) : (0, i.jsx)(c.A, {
+    }) : (0, i.jsx)(d.A, {
         title: g.intl.string(g.t["0c8+5n"]),
         subtitle: g.intl.string(g.t.ULTCBE),
         loading: !0

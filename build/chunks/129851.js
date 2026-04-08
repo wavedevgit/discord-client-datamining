@@ -10,8 +10,8 @@ var i = n(627968),
     l = n.n(r),
     a = n(492462),
     o = n(511815),
-    d = n(158954),
-    c = n(311907),
+    c = n(158954),
+    d = n(311907),
     u = n(139033),
     h = n(397927),
     _ = n(73153),
@@ -36,8 +36,8 @@ var i = n(627968),
     L = n(913612),
     w = n(210714),
     k = n(933924),
-    B = n(961350),
-    D = n(115036),
+    D = n(961350),
+    B = n(115036),
     U = n(650048),
     P = n(954571),
     G = n(203982),
@@ -183,7 +183,7 @@ class J extends s.PureComponent {
             let e = window.location.protocol + window.GLOBAL_ENV.API_ENDPOINT + K.Rsh.SSO,
                 t = {
                     ...s,
-                    token: B.default.getToken()
+                    token: D.default.getToken()
                 };
             window.location = `${e}?${(0,a.stringify)(t)}`
         }
@@ -335,9 +335,9 @@ class J extends s.PureComponent {
                 loginStatus: r,
                 country: a,
                 showMobileWebHandoff: o,
-                disableAutofocusOnDefaultForm: d
+                disableAutofocusOnDefaultForm: c
             } = this.props,
-            c = !this.hasError("email") && this.hasError("password");
+            d = !this.hasError("email") && this.hasError("password");
         return t = null != n ? (0, i.jsx)("div", {
             className: Y.S3,
             children: (0, i.jsx)(V.A, {
@@ -390,7 +390,7 @@ class J extends s.PureComponent {
                             autoCorrect: "off",
                             spellCheck: "false",
                             value: this.state.login,
-                            autoFocus: !c && !o && !d,
+                            autoFocus: !d && !o && !c,
                             required: !0
                         }), (0, i.jsx)(E.pd, {
                             label: Q.intl.string(Q.t["CIGa+7"]),
@@ -403,7 +403,7 @@ class J extends s.PureComponent {
                             setRef: this.setPasswordRef,
                             autoComplete: "current-password",
                             spellCheck: "false",
-                            autoFocus: c && !o && !d,
+                            autoFocus: d && !o && !c,
                             value: this.state.password,
                             required: !0
                         }), (0, i.jsx)("div", {
@@ -674,7 +674,7 @@ class J extends s.PureComponent {
                     onClick: e.onClose,
                     fullWidth: !0
                 }];
-                return (0, i.jsx)(d.Modal, {
+                return (0, i.jsx)(c.Modal, {
                     title: Q.intl.string(Q.t["6Ecyts"]),
                     actions: t,
                     ...e,
@@ -729,21 +729,21 @@ class J extends s.PureComponent {
                 transitionTo: l,
                 redirectTo: o
             } = this.props,
-            d = null != r ? (0, a.parse)(r.search) : {};
-        "" !== t && (d.email = t), null != n ? (d.mode = "register", e = K.BVt.INVITE(n.code)) : null != i ? (d.mode = "register", e = K.BVt.GIFT_CODE(i.code)) : null != s ? e = K.BVt.GUILD_TEMPLATE(s.code) : null != o ? (e = K.BVt.REGISTER, d.redirect_to = o) : e = K.BVt.REGISTER, this.loginReset(), l(e, {
-            search: (0, a.stringify)(d)
+            c = null != r ? (0, a.parse)(r.search) : {};
+        "" !== t && (c.email = t), null != n ? (c.mode = "register", e = K.BVt.INVITE(n.code)) : null != i ? (c.mode = "register", e = K.BVt.GIFT_CODE(i.code)) : null != s ? e = K.BVt.GUILD_TEMPLATE(s.code) : null != o ? (e = K.BVt.REGISTER, c.redirect_to = o) : e = K.BVt.REGISTER, this.loginReset(), l(e, {
+            search: (0, a.stringify)(c)
         }), G._.dispatch(K.jej.WAVE_EMPHASIZE)
     }
 }
 let $ = function(e) {
     (0, L.K)();
-    let t = (0, c.cf)([D.A, U.A, B.default, j.A, b.A], () => ({
-        authenticated: B.default.isAuthenticated(),
-        handoffAvailable: D.A.isHandoffAvailable(),
-        user: D.A.user,
-        loginStatus: B.default.getLoginStatus(),
-        mfaTicket: B.default.getMFATicket(),
-        mfaMethods: B.default.getMFAMethods(),
+    let t = (0, d.cf)([B.A, U.A, D.default, j.A, b.A], () => ({
+        authenticated: D.default.isAuthenticated(),
+        handoffAvailable: B.A.isHandoffAvailable(),
+        user: B.A.user,
+        loginStatus: D.default.getLoginStatus(),
+        mfaTicket: D.default.getMFATicket(),
+        mfaMethods: D.default.getMFAMethods(),
         defaultRoute: U.A.defaultRoute,
         country: b.A.getCountryCode(),
         hasLoggedInAccounts: j.A.getHasLoggedInAccounts()

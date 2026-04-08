@@ -9,8 +9,8 @@ var i = n(627968),
     l = n(311907),
     a = n(562465),
     o = n(397927),
-    d = n(210714),
-    c = n(650048),
+    c = n(210714),
+    d = n(650048),
     u = n(860689),
     h = n(396681),
     _ = n(854378),
@@ -53,7 +53,7 @@ class A extends s.PureComponent {
         }, () => this.setState({
             success: !1,
             busy: !1
-        })), (0, d.d)("disable_server_highlight_notifications")
+        })), (0, c.d)("disable_server_highlight_notifications")
     }
     renderBusy() {
         return (0, i.jsx)(_.Ay, {
@@ -125,6 +125,6 @@ class A extends s.PureComponent {
         return e ? this.renderBusy() : t ? this.renderSuccess() : this.renderError()
     }
 }
-let f = l.Ay.connectStores([c.A], () => ({
-    defaultRoute: c.A.defaultRoute
+let f = l.Ay.connectStores([d.A], () => ({
+    defaultRoute: d.A.defaultRoute
 }))(A)

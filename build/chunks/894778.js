@@ -9,13 +9,13 @@ var i = n(353640),
     l = n(506774),
     a = n(626584),
     o = n(954571),
-    d = n(315290),
-    c = n(652215);
+    c = n(315290),
+    d = n(652215);
 let u = "UserFlowAnalyticsStore_current",
     h = "UserFlowAnalyticsStore";
 
 function _(e) {
-    if (e === d.do.UNKNOWN) return null;
+    if (e === c.do.UNKNOWN) return null;
     let t = l.w.get(`${h}-${e}`);
     if (null == t) return null;
     let {
@@ -63,7 +63,7 @@ function g(e, t) {
 function m(e, t) {
     let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
         i = e;
-    e === d.do.ANY && (i = p.getState().activeFlow() ?? d.do.UNKNOWN);
+    e === c.do.ANY && (i = p.getState().activeFlow() ?? c.do.UNKNOWN);
     let {
         [i]: s, ...l
     } = p.getState().flows, a = s ?? _(i);
@@ -90,13 +90,13 @@ function A() {
 }
 p.subscribe(e => null != e.currentFlow ? e.flows[e.currentFlow] : void 0, e => {
     if (null != e && (! function(e) {
-            if (e.type === d.do.UNKNOWN) return;
+            if (e.type === c.do.UNKNOWN) return;
             let t = `${h}-${e.type}`;
             e.ended ? (l.w.remove(t), l.w.remove(u)) : (l.w.set(`${h}-${e.type}`, {
                 ...e,
                 version: 1
             }), l.w.set(u, e.type))
-        }(e), o.default.track(c.HAw.NUO_TRANSITION, {
+        }(e), o.default.track(d.HAw.NUO_TRANSITION, {
             flow_type: e.type,
             from_step: e.lastStep,
             to_step: e.currentStep,

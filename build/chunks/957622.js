@@ -9,8 +9,8 @@ var i = n(627968),
     l = n(607399),
     a = n(397927),
     o = n(830215),
-    d = n(854378),
-    c = n(976860),
+    c = n(854378),
+    d = n(976860),
     u = n(961350),
     h = n(954571),
     _ = n(723702),
@@ -26,14 +26,14 @@ let E = e => {
             buttonText: s,
             buttonOnClick: r
         } = e;
-        return (0, i.jsx)(d.Ay, {
+        return (0, i.jsx)(c.Ay, {
             children: (0, i.jsxs)(a.BJc, {
                 gap: 24,
                 children: [(0, i.jsxs)(a.BJc, {
                     gap: 8,
-                    children: [(0, i.jsx)(d.hE, {
+                    children: [(0, i.jsx)(c.hE, {
                         children: t
-                    }), (0, i.jsx)(d.tK, {
+                    }), (0, i.jsx)(c.tK, {
                         children: n
                     })]
                 }), (0, i.jsx)(a.Button, {
@@ -125,7 +125,7 @@ let E = e => {
                 errorReason: e
             })
         }
-        if ((0, c.MX)()) return null;
+        if ((0, d.MX)()) return null;
         if ("app_launched" === I) return (0, i.jsx)(E, {
             title: f.intl.string(f.t.RvUUOy),
             subtitle: f.intl.string(f.t["5/lR0g"]),
@@ -151,11 +151,11 @@ let E = e => {
                 buttonOnClick: () => {
                     h.default.track(m.HAw.ONE_TIME_LOGIN_BACK_TO_LOGIN_CLICKED, {
                         error_reason: e
-                    }), (0, c.pX)(m.BVt.LOGIN)
+                    }), (0, d.pX)(m.BVt.LOGIN)
                 }
             })
         }
-        return (0, i.jsx)(d.Ay, {
-            children: (0, i.jsx)(d.CK, {})
+        return (0, i.jsx)(c.Ay, {
+            children: (0, i.jsx)(c.CK, {})
         })
     }

@@ -16,8 +16,8 @@ var i = n(627968),
     l = n.n(r),
     a = n(397927),
     o = n(854378),
-    d = n(769015),
-    c = n(714991),
+    c = n(769015),
+    d = n(714991),
     u = n(486020),
     h = n(427262),
     _ = n(172799),
@@ -53,7 +53,7 @@ let f = 100,
             user: n,
             application: s
         } = e;
-        return null != s ? (0, i.jsx)(d.A, {
+        return null != s ? (0, i.jsx)(c.A, {
             className: A.Z2,
             game: s,
             size: A.q6
@@ -114,7 +114,7 @@ function b(e) {
     let t, n, s, {
         user: r,
         guild: l,
-        channel: d,
+        channel: c,
         application: u,
         showBigUserIcon: _
     } = e;
@@ -138,11 +138,11 @@ function b(e) {
             })]
         })]
     }));
-    else if (null != d) {
+    else if (null != c) {
         if (null == r) throw Error("no inviter in group DM invite");
         let e = h.Ay.getFormattedName(r);
-        null != d.name && "" !== d.name ? (n = d.name, null != d.icon && (t = (0, i.jsx)(o.F4, {
-            channel: d,
+        null != c.name && "" !== c.name ? (n = c.name, null != c.icon && (t = (0, i.jsx)(o.F4, {
+            channel: c,
             size: a._3J.SIZE_32
         }))) : n = e
     } else if (null != r) {
@@ -159,7 +159,7 @@ function b(e) {
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsxs)(o.hE, {
             className: A.DD,
-            children: [null != l ? (0, i.jsx)(c.A, {
+            children: [null != l ? (0, i.jsx)(d.A, {
                 guild: l,
                 className: A.n2,
                 tooltipPosition: "left"

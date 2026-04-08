@@ -1,7 +1,7 @@
 /** chunk id: 745399 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => c
+    A: () => d
 });
 var i = n(627968),
     s = n(64700),
@@ -9,9 +9,9 @@ var i = n(627968),
     l = n(854378),
     a = n(976860),
     o = n(210714),
-    d = n(58013);
+    c = n(58013);
 r.Ay.initialize();
-class c extends s.PureComponent {
+class d extends s.PureComponent {
     static defaultProps = {
         transitionTo: a.pX,
         replaceWith: a.bG
@@ -27,7 +27,7 @@ class c extends s.PureComponent {
             style: {
                 padding: 0
             },
-            children: (0, i.jsx)(d.A, {
+            children: (0, i.jsx)(c.A, {
                 width: 464,
                 token: e,
                 ...this.props

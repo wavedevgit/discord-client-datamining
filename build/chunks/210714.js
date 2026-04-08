@@ -11,10 +11,10 @@ var i = n(835245),
     a = n(614792),
     o = n(652215);
 
-function d() {
+function c() {
     return window.GLOBAL_ENV.HTML_TIMESTAMP
 }
-class c {
+class d {
     loadId = (0, i.A)();
     appUIViewed = !1;
     trackEvent(e) {
@@ -48,7 +48,7 @@ class c {
                 }), n ? i : {}),
                 load_id: this.loadId,
                 screen_name: e,
-                duration_ms_since_app_opened: t - d(),
+                duration_ms_since_app_opened: t - c(),
                 app_hardware_acceleration_enabled: l.Ay.getEnableHardwareAcceleration()
             })
         })
@@ -58,7 +58,7 @@ class c {
         window.__TTI_COMPLETED = !0;
         let e = window.location?.pathname?.split("/")?.[1];
         requestIdleCallback(() => {
-            let t = d();
+            let t = c();
             a.A.firstRenderAfterReadyPayload.record();
             let n = a.A.serializeWebPerfStartupMetrics(t);
             r.default.track(o.HAw.APP_WEB_PERF_STARTUP_METRICS, {
@@ -81,7 +81,7 @@ class c {
         }
     }
 }
-let u = new c;
+let u = new d;
 
 function h(e) {
     u.trackAppUIViewed(e)

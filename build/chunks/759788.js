@@ -1,7 +1,7 @@
 /** chunk id: 759788 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    K: () => d
+    K: () => c
 });
 var i = n(627968);
 n(64700);
@@ -10,13 +10,13 @@ var s = n(397927),
     l = n(204173),
     a = n(985018),
     o = n(563087);
-let d = e => {
+let c = e => {
     let {
         showBackButton: t,
         onBack: n,
-        renderFooter: d,
-        onReopen: c
-    } = e, u = (0, l.i)(r.tY.MEDIA_TAKEDOWN, c), h = (0, i.jsxs)(s.ButtonGroup, {
+        renderFooter: c,
+        onReopen: d
+    } = e, u = (0, l.i)(r.tY.MEDIA_TAKEDOWN, d), h = (0, i.jsxs)(s.ButtonGroup, {
         fullWidth: !0,
         children: [t && null != n && (0, i.jsx)(s.Button, {
             variant: "secondary",
@@ -94,6 +94,6 @@ let d = e => {
                     helpCenterURL: "https://support.discord.com/hc/articles/38675715591831"
                 })
             })]
-        }), d?.(h)]
+        }), c?.(h)]
     })
 }

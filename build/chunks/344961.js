@@ -9,8 +9,8 @@ var i = n(627968),
     l = n(397927),
     a = n(830215),
     o = n(730134),
-    d = n(598047),
-    c = n(854378),
+    c = n(598047),
+    d = n(854378),
     u = n(414121),
     h = n(525711),
     _ = n(787610),
@@ -80,7 +80,7 @@ function S(e) {
         cancel: n,
         errorMessage: s,
         conditionalMediationAbortController: r,
-        isPasswordlessActive: d
+        isPasswordlessActive: c
     } = e;
     switch (t.step) {
         case h.b.INITIALIZING:
@@ -88,12 +88,12 @@ function S(e) {
             return (0, i.jsxs)(i.Fragment, {
                 children: [(0, i.jsx)(C, {
                     text: t.step === h.b.PENDING_REMOTE_INIT ? `https://discord.com/ra/${t.fingerprint}` : ""
-                }), (0, i.jsx)(c.hE, {
+                }), (0, i.jsx)(d.hE, {
                     className: v.QB,
                     children: I.intl.string(I.t.UPiHaL)
                 }), null != s ? (0, i.jsx)(j, {
                     children: s
-                }) : (0, i.jsx)(c.tK, {
+                }) : (0, i.jsx)(d.tK, {
                     children: I.intl.format(I.t["Qq+A6i"], {})
                 }), (0, i.jsx)(l.BJc, {
                     padding: 8,
@@ -108,7 +108,7 @@ function S(e) {
                                 conditionalMediationAbortController: r
                             }).catch(() => {})
                         },
-                        disabled: d
+                        disabled: c
                     })
                 })]
             });
@@ -123,10 +123,10 @@ function S(e) {
                     size: l._3J.SIZE_120,
                     isMobile: !0,
                     status: x.cl.ONLINE
-                }), (0, i.jsx)(c.hE, {
+                }), (0, i.jsx)(d.hE, {
                     className: v.QB,
                     children: I.intl.string(I.t.apGCUT)
-                }), (0, i.jsx)(c.tK, {
+                }), (0, i.jsx)(d.tK, {
                     children: I.intl.format(I.t.Cbl5JK, {
                         username: `${A.Ay.getUserTag(e)}`
                     })
@@ -152,9 +152,9 @@ function y(e) {
     let {
         onAuthenticateSuccess: t,
         conditionalMediationAbortController: n
-    } = e, s = (0, r.bG)([g.default], () => g.default.getIsPasswordlessActive()), a = (0, d.A)(), {
+    } = e, s = (0, r.bG)([g.default], () => g.default.getIsPasswordlessActive()), a = (0, c.A)(), {
         state: o,
-        cancel: c
+        cancel: d
     } = (0, _.H)(t, a), u = function(e) {
         switch (e) {
             case h.b.INITIALIZING:
@@ -178,7 +178,7 @@ function y(e) {
                 className: N.vP,
                 children: (0, i.jsx)(S, {
                     state: o,
-                    cancel: c,
+                    cancel: d,
                     conditionalMediationAbortController: n,
                     isPasswordlessActive: s
                 })

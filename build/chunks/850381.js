@@ -9,8 +9,8 @@ var i = n(627968),
     l = n(492917),
     a = n(154672),
     o = n(396681),
-    d = n(317940),
-    c = n(976860),
+    c = n(317940),
+    d = n(976860),
     u = n(210714),
     h = n(341371),
     _ = n(714505),
@@ -32,24 +32,24 @@ function m(e) {
     let x = () => {
         (0, _.A)(E), m(!0)
     };
-    return n ? (0, i.jsx)(d.A, {
+    return n ? (0, i.jsx)(c.A, {
         title: g.intl.string(g.t.csrAMJ),
         subtitle: g.intl.string(g.t["m1+IBn"]),
         buttonText: g.intl.string(g.t.fIv16B),
-        onButtonClick: () => (0, c.pX)(p.BVt.CHANNEL(E))
-    }) : A ? (0, i.jsx)(d.A, {
+        onButtonClick: () => (0, d.pX)(p.BVt.CHANNEL(E))
+    }) : A ? (0, i.jsx)(c.A, {
         title: g.intl.string(g.t["dAfGb+"]),
         buttonText: g.intl.string(g.t["uJWIj/"]),
         onButtonClick: x,
         image: (0, i.jsx)(l.bqQ, {
             alt: g.intl.string(g.t["dAfGb+"])
         })
-    }) : null != f ? (0, i.jsx)(d.A, {
+    }) : null != f ? (0, i.jsx)(c.A, {
         title: g.intl.string(g.t["PCgG3+"]),
         subtitle: g.intl.string(g.t.tQpeA3),
         buttonText: g.intl.string(g.t["uJWIj/"]),
         onButtonClick: x
-    }) : (0, i.jsx)(d.A, {
+    }) : (0, i.jsx)(c.A, {
         title: g.intl.string(g.t["0c8+5n"]),
         subtitle: g.intl.string(g.t.ULTCBE),
         loading: !0

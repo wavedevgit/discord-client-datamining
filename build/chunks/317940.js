@@ -1,7 +1,7 @@
 /** chunk id: 317940 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => d
+    A: () => c
 });
 var i = n(627968);
 n(64700);
@@ -11,12 +11,12 @@ var s = n(158954),
     a = n(854378),
     o = n(204699);
 
-function d(e) {
+function c(e) {
     let {
         title: t,
         subtitle: n,
-        buttonText: d,
-        image: c,
+        buttonText: c,
+        image: d,
         onButtonClick: u,
         loading: h
     } = e;
@@ -32,11 +32,11 @@ function d(e) {
                 children: [(0, i.jsxs)(s.BJc, {
                     gap: 24,
                     align: "center",
-                    children: [null != c && (0, i.jsx)(s.BJc, {
+                    children: [null != d && (0, i.jsx)(s.BJc, {
                         align: "center",
                         justify: "center",
                         className: o.Sl,
-                        children: c
+                        children: d
                     }), h && (0, i.jsx)(l.y$y, {
                         type: l.y$y.Type.SPINNING_CIRCLE
                     }), (0, i.jsx)(s.DZT, {
@@ -52,7 +52,7 @@ function d(e) {
                 })]
             }), !h && (0, i.jsx)(r.$nd, {
                 onClick: u,
-                text: d,
+                text: c,
                 variant: "overlay-primary"
             })]
         })

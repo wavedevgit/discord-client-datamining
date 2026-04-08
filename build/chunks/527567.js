@@ -9,8 +9,8 @@ var i = n(627968),
     l = n(396681),
     a = n(854378),
     o = n(210714),
-    d = n(985018),
-    c = n(885106);
+    c = n(985018),
+    d = n(885106);
 
 function u(e) {
     let {
@@ -30,29 +30,29 @@ function u(e) {
         children: [(0, i.jsx)("img", {
             alt: "",
             src: n(678985),
-            className: c.SX
+            className: d.SX
         }), (0, i.jsx)(a.hE, {
-            className: c.QB,
-            children: d.intl.string(d.t.GHRpue)
+            className: d.QB,
+            children: c.intl.string(c.t.GHRpue)
         }), (0, i.jsx)(a.tK, {
-            className: c.C2,
-            children: d.intl.string(d.t["1nO55v"])
+            className: d.C2,
+            children: c.intl.string(c.t["1nO55v"])
         })]
     }) : "succeeded" === u ? (0, i.jsxs)(a.Ay, {
         children: [(0, i.jsx)("img", {
             alt: "",
             src: n(586430),
-            className: c.SX
+            className: d.SX
         }), (0, i.jsx)(a.hE, {
-            className: c.QB,
-            children: d.intl.string(d.t.ihHX53)
+            className: d.QB,
+            children: c.intl.string(c.t.ihHX53)
         }), (0, i.jsx)(a.tK, {
-            className: c.C2,
-            children: d.intl.string(d.t["pGPCv+"])
+            className: d.C2,
+            children: c.intl.string(c.t["pGPCv+"])
         })]
     }) : (0, i.jsxs)(a.Ay, {
         children: [(0, i.jsx)(a.CK, {}), (0, i.jsx)(a.hE, {
-            children: d.intl.string(d.t.T3vC7n)
+            children: c.intl.string(c.t.T3vC7n)
         })]
     })
 }

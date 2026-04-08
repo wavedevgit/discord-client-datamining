@@ -9,8 +9,8 @@ var i = n(627968),
     l = n.n(r),
     a = n(311907),
     o = n(397927),
-    d = n(587895),
-    c = n(854378),
+    c = n(587895),
+    d = n(854378),
     u = n(769015),
     h = n(242874),
     _ = n(75825),
@@ -24,7 +24,7 @@ var i = n(627968),
     I = n(1205),
     N = n(435115),
     v = n(885106);
-let T = a.Ay.connectStores([m.A, d.A, g.A, p.default], e => {
+let T = a.Ay.connectStores([m.A, c.A, g.A, p.default], e => {
     let {
         giftCode: t
     } = e, n = m.A.get(t.skuId), {
@@ -33,7 +33,7 @@ let T = a.Ay.connectStores([m.A, d.A, g.A, p.default], e => {
     return {
         sku: n,
         subscriptionPlan: null != i ? (0, A.c9)(i) : null,
-        application: d.A.getApplication(n.applicationId),
+        application: c.A.getApplication(n.applicationId),
         gifter: p.default.getUser(t.userId)
     }
 })(e => {
@@ -42,7 +42,7 @@ let T = a.Ay.connectStores([m.A, d.A, g.A, p.default], e => {
         giftCode: n,
         gifter: r,
         sku: a,
-        application: d,
+        application: c,
         subscriptionPlan: p
     } = e, g = null == r ? x.intl.string(x.t.lTGZAl) : x.intl.formatToPlainString(x.t.TjWdPc, {
         username: r.username
@@ -55,25 +55,25 @@ let T = a.Ay.connectStores([m.A, d.A, g.A, p.default], e => {
             defaultAnimationState: h.oA.LOOP,
             giftStyle: n.giftStyle,
             className: I.e
-        }) : (0, i.jsx)(c.eu, {
+        }) : (0, i.jsx)(d.eu, {
             src: null != r ? r.getAvatarURL(void 0, 100) : null,
             size: o._3J.DEPRECATED_SIZE_100,
             className: v.SX
         }), null != t ? (0, i.jsxs)(s.Fragment, {
-            children: [(0, i.jsx)(c.tK, {
+            children: [(0, i.jsx)(d.tK, {
                 children: x.intl.string(x.t.mDFGFj)
-            }), (0, i.jsx)(c.hE, {
+            }), (0, i.jsx)(d.hE, {
                 children: t
             })]
         }) : (0, i.jsxs)(s.Fragment, {
-            children: [(0, i.jsx)(c.tK, {
+            children: [(0, i.jsx)(d.tK, {
                 children: g
-            }), (0, i.jsxs)(c.hE, {
+            }), (0, i.jsxs)(d.hE, {
                 className: l()(v.Ot, N.tR),
                 children: [a.productLine !== f.EZt.COLLECTIBLES && (0, i.jsx)(u.A, {
                     size: u.M.MEDIUM,
                     className: I.I,
-                    game: d,
+                    game: c,
                     skuId: a.id
                 }), m]
             })]

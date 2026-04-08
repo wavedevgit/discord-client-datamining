@@ -1,7 +1,7 @@
 /** chunk id: 528685 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => c
+    A: () => d
 });
 var i = n(627968);
 n(64700);
@@ -10,16 +10,16 @@ var s = n(503698),
     l = n(397927),
     a = n(854378),
     o = n(985018),
-    d = n(885106);
+    c = n(885106);
 
-function c(e) {
+function d(e) {
     let {
         email: t
     } = e;
     return (0, i.jsxs)("div", {
         children: [(0, i.jsx)(a._V, {
             src: n(79418),
-            className: r()(d.SX, d.Ot)
+            className: r()(c.SX, c.Ot)
         }), (0, i.jsx)(a.hE, {
             children: o.intl.string(o.t.ailkVG)
         }), (0, i.jsx)(a.tK, {
@@ -27,7 +27,7 @@ function c(e) {
                 email: t
             })
         }), (0, i.jsx)(l.Text, {
-            className: r()(d.QB, d.QX),
+            className: r()(c.QB, c.QX),
             variant: "text-md/normal",
             children: o.intl.string(o.t["dpAn+8"])
         })]

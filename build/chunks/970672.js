@@ -1,7 +1,7 @@
 /** chunk id: 970672 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    W: () => d,
+    W: () => c,
     h: () => o
 });
 var i = n(129014),
@@ -15,7 +15,7 @@ let o = l.isPlatformEmbedded ? a.tEg : (e, t) => {
             params: t
         })
     },
-    d = l.isPlatformEmbedded ? a.tEg : (e, t) => {
+    c = l.isPlatformEmbedded ? a.tEg : (e, t) => {
         if (!r.default.isAuthenticated()) return o(e, {
             ...t || {},
             fingerprint: r.default.getFingerprint(),

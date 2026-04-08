@@ -1,7 +1,7 @@
 /** chunk id: 359438 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    X: () => d
+    X: () => c
 });
 var i = n(627968);
 n(64700);
@@ -30,7 +30,7 @@ function o(e) {
     })
 }
 
-function d(e) {
+function c(e) {
     let {
         channel: t,
         guildScheduledEvent: n

@@ -1,7 +1,7 @@
 /** chunk id: 965252 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => c
+    A: () => d
 });
 var i = n(627968);
 n(64700);
@@ -10,15 +10,15 @@ var s = n(397927),
     l = n(975571),
     a = n(652215),
     o = n(985018),
-    d = n(817305);
-let c = () => (0, i.jsx)(r.Ay, {
+    c = n(817305);
+let d = () => (0, i.jsx)(r.Ay, {
     children: (0, i.jsxs)("div", {
-        className: d.hQ,
+        className: c.hQ,
         children: [(0, i.jsx)(r.hE, {
-            className: d.DD,
+            className: c.DD,
             children: o.intl.string(o.t.nCB6Ga)
         }), (0, i.jsx)(r.tK, {
-            className: d.VA,
+            className: c.VA,
             children: o.intl.format(o.t.KQgoxG, {
                 underageMessage: o.intl.string(o.t.WqEH4D)
             })

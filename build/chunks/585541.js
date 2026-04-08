@@ -9,8 +9,8 @@ var i = n(627968),
     l = n.n(r),
     a = n(110259),
     o = n(397927),
-    d = n(181658),
-    c = n(854378),
+    c = n(181658),
+    d = n(854378),
     u = n(203982),
     h = n(499785),
     _ = n(524832),
@@ -29,18 +29,18 @@ function f(e) {
     return s.useEffect(() => {
         f && y.current?.focus()
     }, [f]), (0, i.jsxs)("div", {
-        children: [(0, i.jsx)(c._V, {
+        children: [(0, i.jsx)(d._V, {
             src: null == T ? n(79418) : n(579656),
             className: l()(A.SX, A.Ot)
-        }), (0, i.jsx)(c.hE, {
+        }), (0, i.jsx)(d.hE, {
             children: g.intl.string(g.t.IfBQ56)
         }), null != T && "" !== T ? (0, i.jsx)(o.Text, {
             variant: "text-sm/normal",
             color: "text-feedback-critical",
             children: T
-        }) : null, (0, i.jsxs)(c.eB, {
+        }) : null, (0, i.jsxs)(d.eB, {
             className: l()(A.SX, A.QX),
-            children: [(0, i.jsx)(c.pd, {
+            children: [(0, i.jsx)(d.pd, {
                 name: "password",
                 type: "password",
                 label: g.intl.string(g.t["8dM4FO"]),
@@ -85,7 +85,7 @@ function f(e) {
                                     statusPageURL: p.qF7.STATUS
                                 }));
                                 else {
-                                    let t = new d.A(e);
+                                    let t = new c.A(e);
                                     t.hasFieldErrors() ? v(t.getAnyErrorMessage()) : C((function(e) {
                                         switch (e) {
                                             case p.t02.ACCOUNT_REVERT_INVALID_TOKEN:

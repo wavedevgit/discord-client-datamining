@@ -1,7 +1,7 @@
 /** chunk id: 794696 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => d
+    A: () => c
 });
 var i = n(627968),
     s = n(64700),
@@ -10,14 +10,14 @@ var i = n(627968),
     a = n(397927);
 let o = window.ResizeObserver ?? r.t;
 
-function d(e) {
+function c(e) {
     let {
         show: t,
         children: n,
         top: r = 0,
-        bottom: d = 0
+        bottom: c = 0
     } = e, {
-        ref: c,
+        ref: d,
         height: u
     } = (() => {
         let e = s.useRef(null),
@@ -38,7 +38,7 @@ function d(e) {
         },
         to: {
             height: t ? u : 0,
-            paddingBottom: t ? `${d}px` : "0px",
+            paddingBottom: t ? `${c}px` : "0px",
             marginTop: t ? `${r}px` : "0px"
         },
         config: {
@@ -68,7 +68,7 @@ function d(e) {
             style: {
                 opacity: _.opacity
             },
-            ref: c,
+            ref: d,
             children: n
         })
     })

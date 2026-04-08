@@ -9,8 +9,8 @@ var i = n(284009),
     l = n.n(r),
     a = n(400253),
     o = n(49485),
-    d = n(80703),
-    c = n(976860),
+    c = n(80703),
+    d = n(976860),
     u = n(961350),
     h = n(650048),
     _ = n(954571),
@@ -33,10 +33,10 @@ function m(e) {
         }(e),
         n = (0, o.X7)(t);
     null != n && _.default.track(g.HAw.DEEP_LINK_CLICKED, {
-        fingerprint: (0, d.v)(n.fingerprint),
+        fingerprint: (0, c.v)(n.fingerprint),
         attempt_id: n.attemptId,
         source: n.utmSource
     }), p.A.launch(t, e => {
-        e || (0, c.bG)(h.A.fallbackRoute)
+        e || (0, d.bG)(h.A.fallbackRoute)
     })
 }

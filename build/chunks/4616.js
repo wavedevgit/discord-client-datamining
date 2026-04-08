@@ -1,7 +1,7 @@
 /** chunk id: 4616 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => d
+    A: () => c
 });
 var i = n(627968),
     s = n(64700),
@@ -49,20 +49,20 @@ class o extends s.PureComponent {
             width: s,
             height: r,
             onLoad: o,
-            style: d,
-            imageClassName: c
+            style: c,
+            imageClassName: d
         } = this.props, {
             loaded: u
         } = this.state;
         return (0, i.jsx)("div", {
             className: e,
             style: {
-                ...d,
+                ...c,
                 width: s,
                 height: r
             },
             children: (0, i.jsx)("img", {
-                className: l()(a.S, c, {
+                className: l()(a.S, d, {
                     [a.K]: u
                 }),
                 width: s,
@@ -74,4 +74,4 @@ class o extends s.PureComponent {
         })
     }
 }
-let d = o
+let c = o

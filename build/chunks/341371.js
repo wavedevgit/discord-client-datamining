@@ -1,7 +1,7 @@
 /** chunk id: 341371 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => d
+    A: () => c
 });
 var i = n(311907),
     s = n(73153);
@@ -18,7 +18,7 @@ class o extends i.Ay.Store {
         }
     }
 }
-let d = new o(s.h, {
+let c = new o(s.h, {
     HUB_VERIFY_EMAIL_SUCCESS: function(e) {
         let {
             guildId: t

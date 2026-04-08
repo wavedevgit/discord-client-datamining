@@ -31,8 +31,8 @@ function o(e) {
         children: n
     } = e, [{
         width: o,
-        height: d
-    }, c] = s.useState({
+        height: c
+    }, d] = s.useState({
         width: 0,
         height: 0,
         naturalHeight: 0,
@@ -40,7 +40,7 @@ function o(e) {
     });
     return s.useEffect(() => {
         function e() {
-            c(e => {
+            d(e => {
                 let {
                     naturalWidth: t,
                     naturalHeight: n
@@ -59,11 +59,11 @@ function o(e) {
                     naturalWidth: n,
                     naturalHeight: i
                 } = t, s = a(n, i);
-                null != s && c(s)
+                null != s && d(s)
             },
             src: t,
             width: o,
-            height: d
+            height: c
         }), (0, i.jsx)("div", {
             className: l.Q,
             children: n

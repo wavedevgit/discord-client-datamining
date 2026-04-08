@@ -3,15 +3,15 @@
 n.d(t, {
     Ay: () => g,
     Lx: () => p,
-    Zs: () => c
+    Zs: () => d
 });
 var i, s = n(627968),
     r = n(64700),
     l = n(503698),
     a = n.n(l),
     o = n(780813),
-    d = n(788888),
-    c = ((i = {}).SIZE_40 = "SIZE_40", i.SIZE_60 = "SIZE_60", i);
+    c = n(788888),
+    d = ((i = {}).SIZE_40 = "SIZE_40", i.SIZE_60 = "SIZE_60", i);
 let u = Object.freeze({
         SIZE_40: "size-40",
         SIZE_60: "size-60"
@@ -35,7 +35,7 @@ class _ extends r.PureComponent {
                 height: n.size,
                 backgroundColor: n.bgColor
             },
-            className: a()(d.qrCodeContainer, e),
+            className: a()(c.qrCodeContainer, e),
             children: (0, s.jsx)(o.default, {
                 value: t,
                 level: "M",
@@ -55,13 +55,13 @@ class p extends r.PureComponent {
             overlaySize: e
         } = this.props, t = u[e ?? "SIZE_40"];
         return (0, s.jsxs)("div", {
-            className: d.qrCodeOverlayContainer,
+            className: c.qrCodeOverlayContainer,
             children: [(0, s.jsx)(_, {
                 ...this.props
             }), (0, s.jsx)("div", {
-                className: d.qrCodeOverlay,
+                className: c.qrCodeOverlay,
                 children: (0, s.jsx)("img", {
-                    className: d[t],
+                    className: c[t],
                     src: h,
                     alt: ""
                 })
