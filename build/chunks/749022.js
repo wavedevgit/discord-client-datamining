@@ -2,4 +2,4 @@
 s.d(t, {
     A: () => r
 });
-let r = "https://cdn.discordapp.com/assets/content/527086a44d0ff5f70f330b661759a3764b4dbe872056587509f3c7b896646f77.png"
+let r = "https://cdn.discordapp.com/assets/content/9f04e9b5b7689dbbecc8fbd15acc438f7f4af98592ee506716a71b2fcdc94e53.png"

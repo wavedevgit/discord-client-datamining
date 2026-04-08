@@ -24,22 +24,22 @@ function h(e) {
         isNarrow: n,
         hasText: h
     } = e, {
-        searchQuery: f,
-        onSetSearchQuery: A
+        searchQuery: A,
+        onSetSearchQuery: f
     } = (0, b.v)(), [C, g] = l.useState(""), T = (0, d.uM)(), y = (0, o.bG)([c.default], () => c.default.locale), O = l.useRef(null), [L, x] = l.useState(!1);
     l.useEffect(() => {
         let e = setTimeout(() => {
-            A(C)
+            f(C)
         }, 250);
         return () => clearTimeout(e)
-    }, [C, A]), l.useEffect(() => {
-        g(f)
-    }, [f]), l.useEffect(() => {
+    }, [C, f]), l.useEffect(() => {
+        g(A)
+    }, [A]), l.useEffect(() => {
         x(n && h)
     }, [n, h]);
     let _ = l.useCallback(e => {
-            "Enter" === e.key && A(C)
-        }, [C, A]),
+            "Enter" === e.key && f(C)
+        }, [C, f]),
         I = l.useCallback(e => {
             u.default.track(S.HAw.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
                 collectibles_shop_session_id: T?.sessionId,
@@ -58,8 +58,8 @@ function h(e) {
             s !== p.G2.CATALOG && t(p.G2.CATALOG), I(p.uY.SEARCH_BAR)
         }, [s, t, I]),
         G = l.useCallback(() => {
-            g(""), A(""), I(p.uY.SEARCH_BAR_CLEAR), n && x(!1)
-        }, [A, I, n]),
+            g(""), f(""), I(p.uY.SEARCH_BAR_CLEAR), n && x(!1)
+        }, [f, I, n]),
         N = l.useCallback(() => {
             n && "" === C && x(!1)
         }, [n, C]),

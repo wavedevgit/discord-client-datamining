@@ -1,6 +1,6 @@
 /** chunk id: 365491 params = (module,exports,require) **/
 s.d(t, {
-    S: () => f,
+    S: () => A,
     v: () => E
 });
 var r = s(64700),
@@ -208,7 +208,7 @@ let d = {
             search: "" !== a ? a : void 0
         }
     },
-    f = () => {
+    A = () => {
         let {
             onSetResponse: e,
             setSearchError: t,

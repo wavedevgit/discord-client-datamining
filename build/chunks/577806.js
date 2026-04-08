@@ -72,9 +72,9 @@ function u(e) {
         align: "center",
         gap: 16,
         padding: {
-            left: 12,
-            right: 12,
-            bottom: 24
+            left: "sm",
+            right: "sm",
+            bottom: "lg"
         },
         children: [(0, i.jsxs)(s.BJc, {
             direction: "vertical",

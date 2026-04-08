@@ -17,8 +17,8 @@ var r = s(627968),
     m = s(270051),
     E = s(142270),
     h = s(287809),
-    f = s(954571),
-    A = s(440938),
+    A = s(954571),
+    f = s(440938),
     C = s(365491),
     g = s(563989),
     T = s(397309),
@@ -44,7 +44,7 @@ function G(e) {
         location: "collectibles_shop_header_bar"
     }), F = (0, d.X)({
         location: "collectibles_shop_header_bar"
-    }), P = (0, A.uM)(), {
+    }), P = (0, f.uM)(), {
         searchQuery: k,
         itemTypeFilters: D
     } = (0, C.v)(), w = l.useRef(null), [M, $] = l.useState(!1);
@@ -52,7 +52,7 @@ function G(e) {
         $(e.contentRect.width < 800)
     }, []));
     let B = l.useCallback(() => {
-            f.default.track(x.HAw.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+            A.default.track(x.HAw.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
                 collectibles_shop_session_id: P?.sessionId,
                 page_type: L.G2.RIVALS,
                 page_category: P?.pageCategory,

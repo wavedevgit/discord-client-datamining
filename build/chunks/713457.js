@@ -285,7 +285,7 @@ function G(e) {
             text: ep,
             fullWidth: !0
         })
-    }) : J && eu.enabled && em === I.UA.COMPLETED && eu.enabledQuestStates.has(em) ? eS = et ? (0, a.jsx)(U, {
+    }) : eu.enabled && (em === I.UA.COMPLETED || em === I.UA.CLAIMED) && eu.enabledQuestStates.has(em) ? eS = et ? (0, a.jsx)(U, {
         quest: t,
         questContent: n,
         sourceQuestContent: L,
