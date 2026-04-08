@@ -1,6 +1,6 @@
 /** chunk id: 35314 params = (module,exports,require) **/
 l.d(t, {
-    A: () => h
+    A: () => g
 });
 var n = l(627968),
     s = l(64700),
@@ -15,23 +15,23 @@ var n = l(627968),
     p = l(512213),
     x = l(985018),
     A = l(662202);
-let g = e => {
+let h = e => {
         let {
             currentUser: t,
             nameplate: l,
             section: i,
             canUsePremiumCollectibles: o,
             isSelected: d,
-            onClick: g
-        } = e, h = (0, s.useRef)(null), {
+            onClick: h
+        } = e, g = (0, s.useRef)(null), {
             isHoveringOrFocusing: _
-        } = (0, c.A)(h);
+        } = (0, c.A)(g);
         return (0, n.jsxs)(a.DUT, {
-            innerRef: h,
+            innerRef: g,
             "aria-pressed": d,
             "aria-label": l.label ?? x.intl.string(x.t.x5CoXR),
             className: A.Hj,
-            onClick: g,
+            onClick: h,
             children: [(0, n.jsx)(p.A, {
                 nameplate: l,
                 user: t,
@@ -49,7 +49,7 @@ let g = e => {
             })]
         })
     },
-    h = e => {
+    g = e => {
         let {
             currentUser: t,
             selectedNameplate: l,
@@ -92,7 +92,7 @@ let g = e => {
                     })]
                 }), (0, n.jsx)("div", {
                     className: A.p_,
-                    children: e.items.filter(d.F).map(s => (0, n.jsx)(g, {
+                    children: e.items.filter(d.F).map(s => (0, n.jsx)(h, {
                         currentUser: t,
                         nameplate: s,
                         section: e.section,

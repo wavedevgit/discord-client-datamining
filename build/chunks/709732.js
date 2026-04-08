@@ -31,8 +31,8 @@ var i = n(627968),
     y = n(615396),
     O = n(788868),
     R = n(985018),
-    P = n(508816);
-class L extends s.PureComponent {
+    L = n(508816);
+class P extends s.PureComponent {
     _copyModeTimeout = new c.Ep;
     state = {
         copyMode: m.qCr.DEFAULT
@@ -77,9 +77,9 @@ class L extends s.PureComponent {
         } = this.state;
         return (0, i.jsxs)(A.A, {
             direction: A.A.Direction.VERTICAL,
-            className: P.Gj,
+            className: L.Gj,
             children: [(0, i.jsx)(m.e2O, {
-                className: P.ph,
+                className: L.ph,
                 value: (0, j.Zq)(t.code),
                 text: this.copyButtonText,
                 mode: n,
@@ -89,7 +89,7 @@ class L extends s.PureComponent {
                 buttonColor: u.XD.BRAND,
                 buttonLook: u.pR.FILLED
             }), (0, i.jsxs)("div", {
-                className: P.KB,
+                className: L.KB,
                 children: [null != t.expiresAt ? (0, i.jsxs)(s.Fragment, {
                     children: [R.intl.format(R.t.ltVZcJ, {
                         hours: t.expiresAt.diff(o()(), "h")
@@ -146,10 +146,10 @@ class D extends s.PureComponent {
         return (0, T.bF)(e) ? (0, i.jsx)(f.e, {
             shape: "square",
             sku: e,
-            containerClassName: P.ez
+            containerClassName: L.ez
         }) : null != t ? (0, i.jsx)(p.A, {
             giftStyle: t,
-            className: P.ez,
+            className: L.ez,
             shouldAnimate: this.state.isHovered
         }) : (0, i.jsx)(h.A, {
             game: n,
@@ -164,18 +164,18 @@ class D extends s.PureComponent {
             application: n
         } = this.props;
         return (0, T.bF)(e) ? (0, i.jsxs)("div", {
-            className: a()(P.Oc, P.ic),
+            className: a()(L.Oc, L.ic),
             children: [(0, i.jsx)(h.A, {
                 game: n,
                 size: h.M.XSMALL,
                 skuId: e.id,
-                className: P._u
+                className: L._u
             }), R.intl.format(R.t["6plpZi"], {
                 applicationName: n.name,
                 copies: t.length
             })]
         }) : (0, i.jsx)("div", {
-            className: P.Oc,
+            className: L.Oc,
             children: R.intl.format(R.t.zMcvcA, {
                 copies: t.length
             })
@@ -194,7 +194,7 @@ class D extends s.PureComponent {
             skuName: t.name,
             intervalCount: n.intervalCount
         }), (0, i.jsx)("div", {
-            className: P.mO,
+            className: L.mO,
             children: e
         })
     }
@@ -202,7 +202,7 @@ class D extends s.PureComponent {
         return (0, i.jsxs)(A.A, {
             justify: A.A.Justify.BETWEEN,
             align: A.A.Align.CENTER,
-            className: P.pe,
+            className: L.pe,
             children: [(0, i.jsx)(m.Text, {
                 variant: "text-md/normal",
                 children: R.intl.string(R.t.lELyPj)
@@ -236,30 +236,30 @@ class D extends s.PureComponent {
             className: l,
             children: [(0, i.jsx)(m.DUT, {
                 onClick: this.handleToggleOpen,
-                className: P.Nr,
+                className: L.Nr,
                 onMouseEnter: () => this.setIsHovered(!0),
                 onMouseLeave: () => this.setIsHovered(!1),
                 children: (0, i.jsx)(_.A.Header, {
                     splashArtURL: t.getSplashURL(512),
                     children: (0, i.jsxs)("div", {
-                        className: P.MY,
+                        className: L.MY,
                         children: [(0, i.jsxs)(A.A, {
                             align: A.A.Align.CENTER,
                             children: [this.renderGiftIcon(), (0, i.jsxs)("div", {
-                                className: P.TK,
+                                className: L.TK,
                                 children: [this.renderTitle(), this.renderSubtitle()]
                             })]
                         }), (0, i.jsx)(v.A, {
                             direction: d ? v.A.Directions.UP : v.A.Directions.DOWN,
-                            className: P.eO
+                            className: L.eO
                         })]
                     })
                 })
             }), d ? (0, i.jsx)(_.A.Body, {
                 children: r ? (0, i.jsx)(m.y$y, {
-                    className: P.u1
+                    className: L.u1
                 }) : (0, i.jsxs)(s.Fragment, {
-                    children: [n.length < e.length ? this.renderGenerateGiftCodeRow() : null, n.map(e => (0, i.jsx)(L, {
+                    children: [n.length < e.length ? this.renderGenerateGiftCodeRow() : null, n.map(e => (0, i.jsx)(P, {
                         giftCode: e,
                         sku: a,
                         hideCode: o

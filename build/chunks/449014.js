@@ -1,5 +1,5 @@
 /** chunk id: 449014 params = (module,exports,require) **/
-n.r(e.exports = {
+i.r(e.exports = {
     reactions: "reactions__23977",
     icon: "icon__23977",
     reactionBtn: "reactionBtn__23977",

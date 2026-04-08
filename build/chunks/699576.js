@@ -1,53 +1,51 @@
 /** chunk id: 699576 params = (module,exports,require) **/
 n.d(t, {
-    A: () => h
+    A: () => m
 });
 var a = n(627968),
     i = n(64700),
     r = n(503698),
     o = n.n(r),
     s = n(311907),
-    l = n(287809),
-    c = n(927578),
+    c = n(287809),
+    l = n(927578),
     _ = n(202639),
     d = n(688796),
-    A = n(652215),
-    u = n(339984),
-    g = n(985018),
-    m = n(326060);
+    u = n(652215),
+    h = n(339984),
+    A = n(985018),
+    g = n(326060);
 
-function h(e) {
+function m(e) {
     let {
         uploadType: t,
-        analyticsSource: n,
-        className: r,
-        ...h
-    } = e, L = i.useCallback(() => {
+        className: n,
+        ...r
+    } = e, m = i.useCallback(() => {
         (0, d.G)({
-            uploadType: t,
-            analyticsSource: n
+            uploadType: t
         })
-    }, [t, n]), x = (0, s.bG)([l.default], () => l.default.getCurrentUser()), C = c.Ay.canUseAnimatedAvatar(x), f = i.useMemo(() => {
+    }, [t]), x = (0, s.bG)([c.default], () => c.default.getCurrentUser()), b = l.Ay.canUseAnimatedAvatar(x), f = i.useMemo(() => {
         switch (t) {
-            case u.HL.AVATAR:
-                return g.intl.format(g.t["pvw/HH"], {
-                    onClick: L
+            case h.HL.AVATAR:
+                return A.intl.format(A.t["pvw/HH"], {
+                    onClick: m
                 });
-            case u.HL.BANNER:
-                return g.intl.format(g.t.aCrz1e, {
-                    onClick: L
+            case h.HL.BANNER:
+                return A.intl.format(A.t.aCrz1e, {
+                    onClick: m
                 });
             default:
                 return ""
         }
-    }, [t, L]);
-    return t !== u.HL.AVATAR && t !== u.HL.BANNER || t === u.HL.AVATAR && C ? null : (0, a.jsx)(_.d, {
+    }, [t, m]);
+    return t !== h.HL.AVATAR && t !== h.HL.BANNER || t === h.HL.AVATAR && b ? null : (0, a.jsx)(_.d, {
         text: f,
-        button: g.intl.string(g.t.BmJkbd),
+        button: A.intl.string(A.t.BmJkbd),
         buttonAnalyticsObject: {
-            section: A.JJy.USER_PROFILE
+            section: u.JJy.USER_PROFILE
         },
-        className: o()(m.k, r),
-        ...h
+        className: o()(g.k, n),
+        ...r
     })
 }

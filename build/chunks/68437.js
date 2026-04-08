@@ -1,6 +1,6 @@
 /** chunk id: 68437 params = (module,exports,require) **/
 n.d(t, {
-    A: () => y
+    A: () => v
 });
 var i = n(627968);
 n(64700);
@@ -27,13 +27,13 @@ var l = n(311907),
     T = n(775946),
     S = n(652215),
     b = n(790782),
-    v = n(985018);
+    y = n(985018);
 
-function y(e) {
+function v(e) {
     let {
         channel: t,
         isChannelSelected: n,
-        isChannelCollapsed: y,
+        isChannelCollapsed: v,
         voiceStates: j,
         enableConnectedUserLimit: R,
         enableActivities: O,
@@ -56,13 +56,13 @@ function y(e) {
         locked: M
     });
     if (D) return (0, i.jsx)(a.LpS, {
-        text: v.intl.string(v.t.y2b7CA),
+        text: y.intl.string(y.t.y2b7CA),
         color: s.A.colors.BADGE_BACKGROUND_BRAND.css
     });
     if (!U && G === b.e.ALL_MESSAGES && t.isForumLikeChannel() && null != K && K > 0) return (0, i.jsx)(a.Text, {
         variant: "text-xs/semibold",
         color: "text-brand",
-        children: v.intl.format(v.t.GkAbqY, {
+        children: y.intl.format(y.t.GkAbqY, {
             count: (0, a.Gub)(K)
         })
     });
@@ -76,8 +76,8 @@ function y(e) {
         userCount: q,
         video: H || F,
         channel: t
-    }) : y && (0, f.t)(j) && z ? (0, i.jsx)(a.LpS, {
-        text: v.intl.string(v.t.dI3q4h),
+    }) : v && (0, f.t)(j) && z ? (0, i.jsx)(a.LpS, {
+        text: y.intl.string(y.t.dI3q4h),
         color: s.A.unsafe_rawColors.RED_400.css
     }) : null != V ? (0, i.jsx)(d.z, {
         textColor: "text-feedback-positive",

@@ -32,7 +32,7 @@ function x(e) {
                 location_stack: R
             })
         }, [E, t, R]), E) return null;
-    let y = (0, n.jsx)(c.A, {
+    let I = (0, n.jsx)(c.A, {
         className: f.__invalid_getNitroLink,
         size: l.$n.Sizes.SMALL,
         look: l.$n.Looks.LINK,
@@ -52,6 +52,6 @@ function x(e) {
         reducedRightPadding: !0,
         className: f.C,
         text: g.intl.format(g.t.Og803x, {}),
-        button: y
+        button: I
     })
 }

@@ -38,10 +38,10 @@ function g(e) {
     }), {
         gameFriends: C,
         hasOutgoingPendingGameFriends: T,
-        hasIncomingPendingGameFriends: _
+        hasIncomingPendingGameFriends: b
     } = (0, p.J)({
         userId: l.id
-    }), b = C.length > 0 || T || _;
+    }), _ = C.length > 0 || T || b;
     return I === A.eA$.BLOCKED ? null : l.id === t.id ? N ? (0, n.jsxs)(n.Fragment, {
         children: [(0, n.jsx)(c.e, {
             userId: l.id,
@@ -103,7 +103,7 @@ function g(e) {
             guildId: g,
             viewProfileItem: E
         })]
-    }) : I === A.eA$.NONE && b ? (0, n.jsxs)(n.Fragment, {
+    }) : I === A.eA$.NONE && _ ? (0, n.jsxs)(n.Fragment, {
         children: [(0, n.jsx)(c.e, {
             userId: l.id,
             onClose: i.A.popAll,
@@ -114,7 +114,7 @@ function g(e) {
             gameFriends: C,
             tooltipPosition: "top",
             tooltipAlign: "center",
-            hasIncomingPendingGameFriends: _,
+            hasIncomingPendingGameFriends: b,
             hasOutgoingPendingGameFriends: T
         }), (0, n.jsx)(d.A, {
             user: l

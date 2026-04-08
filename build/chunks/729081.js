@@ -26,8 +26,8 @@ var i = n(627968),
     T = n(954571),
     S = n(403362),
     b = n(871123),
-    v = n(832163),
-    y = n(453774),
+    y = n(832163),
+    v = n(453774),
     j = n(533562),
     R = n(568751),
     O = n(620406),
@@ -59,7 +59,7 @@ function B(e) {
     (0, g.T)({
         location: "social_layer_storefront_gifting_mini_shelf"
     });
-    let H = (0, u.bG)([v.A], () => v.A.getDetectableIdsToApplicationIds()),
+    let H = (0, u.bG)([y.A], () => y.A.getDetectableIdsToApplicationIds()),
         F = (0, j.W)(),
         [W] = (0, u.bG)([_.A], () => null != h.id ? [_.A.getParticipants(h.id), _.A.getParticipantsVersion(h.id)] : [
             [], 0
@@ -81,7 +81,7 @@ function B(e) {
             let e = W.map(e => (0, D.Xw)(e) || (0, D.Ay)(e) ? e.user.id : null).filter(S.Vq);
             return (0, r.uniq)([...K, ...e])
         }, [W, K]),
-        X = (0, y.v)(Y),
+        X = (0, v.v)(Y),
         {
             status: $,
             recommendations: J,

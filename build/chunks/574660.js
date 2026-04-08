@@ -12,8 +12,8 @@ var i = n(64700),
     d = n(734057),
     c = n(576705),
     u = n(309010),
-    _ = n(967198),
-    m = n(692848),
+    m = n(967198),
+    _ = n(692848),
     h = n(204776),
     p = n(354287),
     g = n(652215),
@@ -30,10 +30,10 @@ function f(e) {
         customInstallUrl: n,
         installParams: i,
         integrationTypesConfig: r
-    }), o = (0, l.bG)([_.A], () => _.A.getGuildId() ?? void 0), m = (0, l.bG)([d.A, c.A, u.A], () => {
+    }), o = (0, l.bG)([m.A], () => m.A.getGuildId() ?? void 0), _ = (0, l.bG)([d.A, c.A, u.A], () => {
         let e = d.A.getChannel(u.A.getChannelId());
         return null != e && (e.isPrivate() || c.A.can(g.xBc.SEND_MESSAGES, e))
-    }, []), p = (0, s.V1)(e, o) && m;
+    }, []), p = (0, s.V1)(e, o) && _;
     return {
         isDiscoverable: t,
         customInstallUrl: n,
@@ -54,7 +54,7 @@ function C(e, t) {
         customInstallUrl: d,
         installParams: c,
         integrationTypesConfig: u,
-        selectedGuildId: _
+        selectedGuildId: m
     } = f(e);
     return i.useMemo(() => n ? () => {
         (t?.(), l) ? (0, r.hg)(e.id) : (0, a.transitionToGlobalDiscovery)({
@@ -67,15 +67,15 @@ function C(e, t) {
             }
         })
     } : s ? () => {
-        t?.(), (0, m.o)({
+        t?.(), (0, _.o)({
             applicationId: e.id,
             customInstallUrl: d,
             installParams: c,
             integrationTypesConfig: u,
-            guildId: _,
+            guildId: m,
             source: "app_message_embed"
         })
-    } : void 0, [e.id, l, n, d, c, u, s, t, _])
+    } : void 0, [e.id, l, n, d, c, u, s, t, m])
 }
 
 function E(e) {

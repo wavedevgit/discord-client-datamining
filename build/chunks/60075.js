@@ -51,7 +51,6 @@ function m() {
                 default: e
             } = await l.e("22540").then(l.bind(l, 530951));
             return t => (0, a.jsx)(e, {
-                source: {},
                 ...t
             })
         })
@@ -95,7 +94,6 @@ function x() {
                 default: e
             } = await l.e("66920").then(l.bind(l, 220763));
             return t => (0, a.jsx)(e, {
-                channel: null,
                 ...t
             })
         })
@@ -148,18 +146,15 @@ let y = [{
     f = {
         [u.e.AVATAR_DECORATION_MODAL_UPSELL]: {
             title: "Express Yourself with Avatar Decorations",
-            body: "Stand out with unique avatar decorations exclusive to Nitro subscribers.",
-            glowUp: "Stand out with unique avatar decorations exclusive to Nitro subscribers."
+            body: "Stand out with unique avatar decorations exclusive to Nitro subscribers."
         },
         [u.e.PROFILE_EFFECT_MODAL_UPSELL]: {
             title: "Animate Your Profile with Profile Effects",
-            body: "Add dynamic effects to your profile with Nitro.",
-            glowUp: "Add dynamic effects to your profile with Nitro."
+            body: "Add dynamic effects to your profile with Nitro."
         },
         [u.e.NAMEPLATE_MODAL_UPSELL]: {
             title: "Personalize with a Nameplate",
-            body: "Show off your style with a custom nameplate, available with Nitro.",
-            glowUp: "Show off your style with a custom nameplate, available with Nitro."
+            body: "Show off your style with a custom nameplate, available with Nitro."
         }
     };
 
@@ -167,19 +162,16 @@ function g() {
     let [e, t] = n.useState(u.e.AVATAR_DECORATION_MODAL_UPSELL), r = n.useCallback(() => {
         let {
             title: t,
-            body: n,
-            glowUp: r
+            body: n
         } = f[e];
         (0, i.mMO)(async () => {
             let {
-                default: i
-            } = await Promise.all([l.e("59701"), l.e("64864")]).then(l.bind(l, 948265));
-            return l => (0, a.jsx)(i, {
+                default: r
+            } = await l.e("64864").then(l.bind(l, 948265));
+            return l => (0, a.jsx)(r, {
                 premiumUpsellType: e,
                 title: t,
                 body: n,
-                glowUp: r,
-                analyticsSource: {},
                 onSecondaryClick: () => l.onClose(),
                 ...l
             })
@@ -263,12 +255,9 @@ function C() {
         null != d && (0, i.mMO)(async () => {
             let {
                 default: t
-            } = await Promise.all([l.e("59701"), l.e("79149")]).then(l.bind(l, 688796));
+            } = await l.e("79149").then(l.bind(l, 688796));
             return l => (0, a.jsx)(t, {
-                user: d,
                 uploadType: e,
-                analyticsSource: {},
-                analyticsLocation: {},
                 ...l
             })
         })
@@ -298,13 +287,10 @@ function j() {
         t = n.useCallback(() => {
             null != e && (0, i.mMO)(async () => {
                 let {
-                    default: t
+                    default: e
                 } = await l.e("97674").then(l.bind(l, 407217));
-                return l => (0, a.jsx)(t, {
-                    user: e,
-                    analyticsSource: {},
-                    analyticsLocation: {},
-                    ...l
+                return t => (0, a.jsx)(e, {
+                    ...t
                 })
             })
         }, [e]);

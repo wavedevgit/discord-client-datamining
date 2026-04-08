@@ -184,8 +184,8 @@ let E = e => {
             y = (0, x.N1)(p.gD.PREMIUM_MONTH_TIER_2),
             O = `${y}/${(0,u.FJ)(p.WT.MONTH)}`,
             R = (0, u.JM)(p.gD.PREMIUM_MONTH_TIER_0),
-            P = (0, u.JM)(p.gD.PREMIUM_MONTH_TIER_2),
-            L = (0, h.g)();
+            L = (0, u.JM)(p.gD.PREMIUM_MONTH_TIER_2),
+            P = (0, h.g)();
         if (l) t = null;
         else {
             let e = null != E ? T.intl.string(T.t.IBYG5U) : T.intl.string(T.t.TR2B4T);
@@ -229,10 +229,10 @@ let E = e => {
                         className: f.tp,
                         children: [(0, i.jsx)(I, {
                             tier0Price: R,
-                            tier2Price: P,
+                            tier2Price: L,
                             shouldUseDiscountPrice: j,
                             tier2DiscountedPriceString: O
-                        }), L.map(e => (0, s.createElement)(N, {
+                        }), P.map(e => (0, s.createElement)(N, {
                             ...e,
                             key: e.id
                         }))]

@@ -26,8 +26,8 @@ var i = n(627968),
     T = n(857253),
     S = n(202384),
     b = n(51758),
-    v = n(721592),
-    y = n(508654),
+    y = n(721592),
+    v = n(508654),
     j = n(214660),
     R = n(140547),
     O = n(303333),
@@ -309,8 +309,8 @@ class en extends K.Ay {
             isSubscriptionGated: T,
             isFavoriteSuggestion: S,
             withGuildIcon: b,
-            hasStartTime: v,
-            shouldHighlightChannel: y,
+            hasStartTime: y,
+            shouldHighlightChannel: v,
             shouldUseAnimatedWaveform: j,
             voiceStates: R
         } = this.props, {
@@ -320,16 +320,16 @@ class en extends K.Ay {
         } = (0, G.NH)({
             guildId: e.guild_id,
             location: "VoiceChannel"
-        }), M = y || j, D = (0, i.jsxs)("li", {
+        }), M = v || j, D = (0, i.jsxs)("li", {
             ref: this.ref,
             className: a()(this.getModeClass(), {
                 [et.r9]: this.isDisabled(),
-                [et.fy]: y
+                [et.fy]: v
             }),
             "data-dnd-name": e.name,
             children: [L && this.getVoiceStatesCount() > 0 && (0, i.jsx)(X.A, {
                 channel: e
-            }), y && (0, i.jsxs)(i.Fragment, {
+            }), v && (0, i.jsxs)(i.Fragment, {
                 children: [(0, i.jsx)("div", {
                     className: et.UQ
                 }), (0, i.jsx)("div", {
@@ -351,7 +351,7 @@ class en extends K.Ay {
                             ref: this.channelItemRef,
                             className: et.Ki,
                             iconClassName: a()({
-                                [et.Gj]: C || v || M
+                                [et.Gj]: C || y || M
                             }),
                             hasActiveEvent: C,
                             channel: e,
@@ -427,10 +427,10 @@ function el(e) {
             bypassLimit: B.A.can(Q.xBc.MOVE_MEMBERS, n),
             unverifiedAccount: !i.canChat
         }
-    }), A = (0, r.bG)([F.A], () => F.A.hasVideo(n.id)), _ = (0, m.Ay)(n), p = (0, I.Ay)(n), x = (0, y.Qs)(n.id), E = (0, r.bG)([f.A], () => null != f.A.getStartTime(n), [n]), {
+    }), A = (0, r.bG)([F.A], () => F.A.hasVideo(n.id)), _ = (0, m.Ay)(n), p = (0, I.Ay)(n), x = (0, v.Qs)(n.id), E = (0, r.bG)([f.A], () => null != f.A.getStartTime(n), [n]), {
         isSubscriptionGated: C,
         needSubscriptionToAccess: N
-    } = (0, v.A)(n.id), S = (0, T.A)(), b = (0, r.bG)([H.Ay], () => H.Ay.isFavorite(t.id, n.id)), j = e.connected || S?.channelId === n.id, {
+    } = (0, y.A)(n.id), S = (0, T.A)(), b = (0, r.bG)([H.Ay], () => H.Ay.isFavorite(t.id, n.id)), j = e.connected || S?.channelId === n.id, {
         enableHangStatus: O,
         showEmptyChannelTopic: M
     } = (0, R.$j)({

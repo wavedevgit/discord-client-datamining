@@ -11,8 +11,8 @@ var i = n(627968),
     d = n(505527),
     c = n(960538),
     u = n(860227),
-    _ = n(866630),
-    m = n(260821),
+    m = n(866630),
+    _ = n(260821),
     h = n(985018),
     p = n(767474),
     g = n(449014);
@@ -50,14 +50,14 @@ class x extends l.PureComponent {
             combinedReactions: b,
             visibleReactionsCount: T
         } = this.props, {
-            disableTransitionAppear: y
-        } = this.state, N = E ? g : p, S = T > 0;
+            disableTransitionAppear: N
+        } = this.state, y = E ? g : p, S = T > 0;
         if (!S && !f) return null;
         let j = f || S;
         return (0, i.jsxs)(a.F, {
             component: "div",
-            className: r()(N.reactions, x),
-            transitionAppear: !y,
+            className: r()(y.reactions, x),
+            transitionAppear: !N,
             role: "group",
             transitionLeave: !1,
             id: (0, u.JH)(e),
@@ -67,7 +67,7 @@ class x extends l.PureComponent {
             onMouseLeave: () => this.setState({
                 isHovered: !1
             }),
-            children: [(0, i.jsx)(_.A, {
+            children: [(0, i.jsx)(m.A, {
                 reactions: b,
                 message: e,
                 readOnly: n,
@@ -78,12 +78,12 @@ class x extends l.PureComponent {
                 className: C
             }), v > 0 && (0, i.jsx)(o.DUT, {
                 onClick: t => {
-                    t.stopPropagation(), (0, m.$l)(A, e)
+                    t.stopPropagation(), (0, _.$l)(A, e)
                 },
-                className: r()(N.reaction, C, N.remainingReactions),
+                className: r()(y.reaction, C, y.remainingReactions),
                 "aria-label": h.intl.string(h.t.lfIHs4),
                 children: (0, i.jsxs)(o.Text, {
-                    className: N.reactionInner,
+                    className: y.reactionInner,
                     variant: "text-sm/normal",
                     children: ["+", v]
                 })
@@ -94,7 +94,7 @@ class x extends l.PureComponent {
                 useChatFontScaling: E,
                 isHovered: this.state.isHovered,
                 className: r()({
-                    [N.forceShow]: j
+                    [y.forceShow]: j
                 })
             })]
         })

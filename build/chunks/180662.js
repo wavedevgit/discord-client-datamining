@@ -12,8 +12,8 @@ var i = n(284009),
     d = n(582754),
     c = n(73153),
     u = n(157559),
-    _ = n(686956),
-    m = n(843472),
+    m = n(686956),
+    _ = n(843472),
     h = n(198982),
     p = n(58149),
     g = n(857071),
@@ -26,8 +26,8 @@ var i = n(284009),
     v = n(834942),
     b = n(320501),
     T = n(522602),
-    y = n(491037),
-    N = n(335759),
+    N = n(491037),
+    y = n(335759),
     S = n(862780),
     j = n(951727),
     L = n(652215),
@@ -60,7 +60,7 @@ function D(e) {
         confirmText: R.intl.string(R.t["9VLmlZ"]),
         cancelText: R.intl.string(R.t["2m+Sqk"]),
         onConfirm: () => {
-            _.A.joinGuild(t, {
+            m.A.joinGuild(t, {
                 source: L.Q4z.POLL_ALERT
             })
         }
@@ -82,7 +82,7 @@ function M(e) {
     let s = b.A.getMessage(t, n);
     if (null == s || null == s.poll || 0 === s.poll.answers.length) return;
     let r = i ?? String(s.poll.answers[0].answer_id);
-    y.W({
+    N.W({
         message: s,
         initialAnswerId: r
     })
@@ -103,19 +103,19 @@ function w(e) {
     }))
 }
 
-function k(e) {
+function O(e) {
     let {
         channelId: t,
         messageId: n
     } = e, i = b.A.getMessage(t, n);
     return null == i ? [] : i.reactions.flatMap(e => !0 === e.me_vote ? e.emoji.name : [])
 }
-async function O(e) {
+async function k(e) {
     let {
         channelId: t,
         messageId: n,
         answerIds: i
-    } = e, l = k({
+    } = e, l = O({
         channelId: t,
         messageId: n
     }), s = r().difference(l, i), a = r().difference(i, l), d = C.default.getId(), u = [...s.map(e => ({
@@ -124,7 +124,7 @@ async function O(e) {
     })), ...a.map(e => ({
         type: "MESSAGE_REACTION_ADD",
         id: e
-    }))], _ = o.Ay.Emitter.batched(() => {
+    }))], m = o.Ay.Emitter.batched(() => {
         let e;
         for (let {
                 id: i,
@@ -144,7 +144,7 @@ async function O(e) {
         });
         return e
     });
-    null != _ && await _
+    null != m && await m
 }
 async function U(e) {
     let {
@@ -163,7 +163,7 @@ async function U(e) {
     });
     let s = (0, S.xt)(t, n);
     l()(null != s, "Must not be able to vote without existing state!");
-    let r = k({
+    let r = O({
         channelId: t,
         messageId: n
     });
@@ -173,11 +173,11 @@ async function U(e) {
             ...e,
             submitting: !0,
             editing: !1
-        })), await O({
+        })), await k({
             channelId: t,
             messageId: n,
             answerIds: e
-        }), await N.Q({
+        }), await y.Q({
             channelId: t,
             messageId: n,
             answerIds: e
@@ -186,7 +186,7 @@ async function U(e) {
         u.A.show({
             title: R.intl.string(R.t.iufib1),
             body: e.getAnyErrorMessage?.() ?? e.message ?? R.intl.string(R.t.eAn6z2)
-        }), await O({
+        }), await k({
             channelId: t,
             messageId: n,
             answerIds: r
@@ -401,7 +401,7 @@ let F = {
             layout_type: r
         };
         try {
-            await m.A.sendPollMessage(t.id, u, {
+            await _.A.sendPollMessage(t.id, u, {
                 attachmentsToUpload: d,
                 onAttachmentUploadError: (e, n, i) => {
                     (0, A.k)({
@@ -429,7 +429,7 @@ let F = {
         await u.A.confirm({
             title: R.intl.string(R.t["+rfkTK"]),
             body: R.intl.string(R.t.H2I1gL)
-        }) && await N.w({
+        }) && await y.w({
             channelId: t,
             messageId: n
         })

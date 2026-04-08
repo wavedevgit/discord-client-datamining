@@ -36,9 +36,9 @@ function _(e) {
         }
     } = (0, s.T)(), b = l.useCallback(e => {
         "focus" !== e.type && (E(), T())
-    }, [E, T]), v = l.useCallback(() => {
+    }, [E, T]), y = l.useCallback(() => {
         null == _ && (I(), S())
-    }, [I, S, _]), y = l.useCallback(() => {
+    }, [I, S, _]), v = l.useCallback(() => {
         (0, o.X)(p, o.O.GIFTING), _ === h.P.GIFTING ? (m?.(void 0), I()) : (null != _ ? (N(), E()) : N(), m?.(h.P.GIFTING))
     }, [E, I, p, N, m, _]);
     return (0, i.jsx)(a.Y, {
@@ -70,9 +70,9 @@ function _(e) {
             themeable: n,
             "aria-label": A.intl.string(A.t.PEjaCx),
             iconComponent: C,
-            onClick: y,
+            onClick: v,
             onMouseEnter: b,
-            onMouseLeave: v,
+            onMouseLeave: y,
             isActive: f || _ === h.P.GIFTING,
             color: f || _ === h.P.GIFTING ? "primaryDark" : void 0
         })

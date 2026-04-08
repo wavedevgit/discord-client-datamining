@@ -1,7 +1,7 @@
 /** chunk id: 274590 params = (module,exports,require) **/
-n.d(t, {
+a.d(t, {
     A: () => i
 });
-var r = n(64700),
-    a = n(317097);
-let i = e => r.useMemo(() => (0, a.qt)(e.variantValue) && .3 > (0, a.OK)((0, a.LX)(e.variantValue)), [e.variantValue])
+var n = a(64700),
+    r = a(317097);
+let i = e => n.useMemo(() => (0, r.qt)(e.variantValue) && .3 > (0, r.OK)((0, r.LX)(e.variantValue)), [e.variantValue])

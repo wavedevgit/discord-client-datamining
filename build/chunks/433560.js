@@ -1,13 +1,13 @@
 /** chunk id: 433560 params = (module,exports,require) **/
 n.d(t, {
-    O: () => M,
+    O: () => k,
     d: () => G
 });
 var i = n(627968),
     a = n(64700),
     r = n(503698),
-    l = n.n(r),
-    s = n(417597),
+    s = n.n(r),
+    l = n(417597),
     o = n(205693),
     d = n(435371),
     c = n(397927),
@@ -15,17 +15,17 @@ var i = n(627968),
     _ = n(442433),
     h = n(391973),
     m = n(401843),
-    f = n(520698),
-    p = n(164617),
-    g = n(402216),
+    p = n(520698),
+    g = n(164617),
+    f = n(402216),
     A = n(607407),
     x = n(534400),
     I = n(267102),
     E = n(401901),
     b = n(203355),
     v = n(110234),
-    S = n(616356),
-    C = n(961350),
+    C = n(616356),
+    S = n(961350),
     y = n(430452),
     T = n(287809),
     N = n(562153),
@@ -38,12 +38,12 @@ var i = n(627968),
 function R(e) {
     let {
         participant: t
-    } = e, n = t.user.id, r = (0, s.bG)([y.Ay], () => {
-        let e = (0, f.A)(t.type);
+    } = e, n = t.user.id, r = (0, l.bG)([y.Ay], () => {
+        let e = (0, p.A)(t.type);
         return y.Ay.isLocalMute(t.user.id, e)
-    }, [t]), l = (0, s.bG)([C.default], () => C.default.getId()), {
+    }, [t]), s = (0, l.bG)([S.default], () => S.default.getId()), {
         hasVideo: _
-    } = (0, v.A)(t, l), h = r && _, m = a.useCallback(() => {
+    } = (0, v.A)(t, s), h = r && _, m = a.useCallback(() => {
         u.A.toggleLocalMute(n, o.x.STREAM)
     }, [n]);
     return (0, i.jsx)(d.m_, {
@@ -88,15 +88,15 @@ function D(e, t) {
     }
 }
 
-function k(e) {
+function M(e) {
     let {
         hasActiveStream: t,
         participant: n,
         onEnablePin: a
-    } = e, r = (0, I.Us)(), o = n.user, u = (0, s.bG)([T.default], () => T.default.getUser(o.id) ?? o, [o]), _ = t ? O.intl.string(O.t.tLxK4l) : O.intl.string(O.t.E5RDnK);
+    } = e, r = (0, I.Us)(), o = n.user, u = (0, l.bG)([T.default], () => T.default.getUser(o.id) ?? o, [o]), _ = t ? O.intl.string(O.t.tLxK4l) : O.intl.string(O.t.E5RDnK);
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)("div", {
-            className: l()(P.MI, {
+            className: s()(P.MI, {
                 [P.te]: t
             })
         }), !t && (0, i.jsx)("div", {
@@ -171,19 +171,19 @@ function k(e) {
         })]
     })
 }
-let M = new Set([j.XYD.ENDED, j.XYD.FAILED, j.XYD.PAUSED]),
+let k = new Set([j.XYD.ENDED, j.XYD.FAILED, j.XYD.PAUSED]),
     G = a.memo(function(e) {
         let {
             participant: t,
             width: n,
             locked: a,
             widgetId: r,
-            pinned: l
-        } = e, o = (0, s.bG)([S.A], () => S.A.getActiveStreamForUser(t.user.id, t.stream.guildId), [t.user.id, t.stream.guildId]), d = (0, I.Us)(), u = null != o && M.has(o.state), _ = null != o, m = (0, L.dh)(t.stream), f = (0, L.XG)(t.stream);
+            pinned: s
+        } = e, o = (0, l.bG)([C.A], () => C.A.getActiveStreamForUser(t.user.id, t.stream.guildId), [t.user.id, t.stream.guildId]), d = (0, I.Us)(), u = null != o && k.has(o.state), _ = null != o, m = (0, L.dh)(t.stream), p = (0, L.XG)(t.stream);
         return !_ && a || u ? null : (0, i.jsxs)("div", {
             className: P.Vs,
-            children: [_ && !a && (0, i.jsx)(g.Ay, {
-                size: g.Ay.Sizes.SMALL,
+            children: [_ && !a && (0, i.jsx)(f.Ay, {
+                size: f.Ay.Sizes.SMALL,
                 className: P.Ok
             }), _ ? (0, i.jsx)("div", {
                 className: P.X$,
@@ -200,8 +200,8 @@ let M = new Set([j.XYD.ENDED, j.XYD.FAILED, j.XYD.PAUSED]),
                     children: (0, i.jsx)(b.A, {
                         participant: t,
                         width: n,
-                        fit: f ?? E.$.CONTAIN,
-                        popoutType: p.N.OVERLAY,
+                        fit: p ?? E.$.CONTAIN,
+                        popoutType: g.N.OVERLAY,
                         selected: !1,
                         wrapperClassName: a ? P.Gq : void 0
                     })
@@ -213,11 +213,11 @@ let M = new Set([j.XYD.ENDED, j.XYD.FAILED, j.XYD.PAUSED]),
                     className: P.HL,
                     stream: t.stream
                 })
-            }), a ? null : (0, i.jsx)(k, {
+            }), a ? null : (0, i.jsx)(M, {
                 participant: t,
                 hasActiveStream: _,
                 onEnablePin: () => {
-                    l || (0, h.v0)(r)
+                    s || (0, h.v0)(r)
                 }
             })]
         })

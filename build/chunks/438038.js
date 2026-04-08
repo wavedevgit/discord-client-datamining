@@ -1,6 +1,6 @@
 /** chunk id: 438038 params = (module,exports,require) **/
 n.d(t, {
-    R: () => m
+    R: () => _
 });
 var i = n(627968),
     l = n(64700),
@@ -13,13 +13,13 @@ var r = n(341915),
     c = n(285433),
     u = n(394900);
 n(433745);
-var _ = n(502454);
+var m = n(502454);
 
-function m(e) {
+function _(e) {
     let {
         quest: t,
         location: n,
-        contentPosition: m,
+        contentPosition: _,
         sourceQuestContent: h
     } = e, p = (0, a.LS)(t), {
         containerRef: g,
@@ -32,25 +32,25 @@ function m(e) {
         toggleExpanded: I
     } = (0, u.s)({
         initiallyExpanded: !0
-    }), [v, b] = l.useState(!1), T = () => b(!0), y = () => b(!1), N = x ?? 1e3;
+    }), [v, b] = l.useState(!1), T = () => b(!0), N = () => b(!1), y = x ?? 1e3;
     return (0, i.jsx)(o.R, {
         questOrQuests: t,
         questContent: n,
-        questContentPosition: m,
+        questContentPosition: _,
         trackGuildAndChannelMetadata: n === r.uF.QUESTS_EMBED,
         sourceQuestContent: h,
         children: e => (0, i.jsx)(s.animated.div, {
             style: {
                 maxHeight: n === r.uF.QUESTS_EMBED ? void 0 : f.to({
                     range: [0, 1],
-                    output: [100, N]
+                    output: [100, y]
                 })
             },
-            className: _.i,
+            className: m.i,
             onMouseEnter: T,
-            onMouseLeave: y,
+            onMouseLeave: N,
             onFocus: T,
-            onBlur: y,
+            onBlur: N,
             children: (0, i.jsxs)("div", {
                 ref: t => {
                     e.current = t, g.current = t
@@ -64,7 +64,7 @@ function m(e) {
                     isInteracting: v,
                     isAnimating: C,
                     isExpanded: E,
-                    contentPosition: m,
+                    contentPosition: _,
                     toggleExpanded: I,
                     sourceQuestContent: h
                 }), (0, i.jsx)(d.A, {
@@ -75,7 +75,7 @@ function m(e) {
                     isFocused: v,
                     isExpanded: E,
                     isAnimating: C,
-                    contentPosition: m,
+                    contentPosition: _,
                     sourceQuestContent: h
                 })]
             })

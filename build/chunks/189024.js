@@ -31,8 +31,8 @@ var i = n(627968),
     y = n(358776),
     O = n(858897),
     R = n(166403),
-    P = n(975571),
-    L = n(398523),
+    L = n(975571),
+    P = n(398523),
     D = n(881373),
     G = n(152815),
     M = n(612669),
@@ -66,7 +66,7 @@ function er() {
         analyticsLocations: e
     } = (0, g.Ay)(m.A.PREMIUM_MARKETING_PERK_CARD), t = (0, v.X)("useWhatsNewPerkCards"), er = (0, c.Ay)(), eo = (0, M.O9)(), ed = (0, D.YS)({
         location: "useWhatsNewPerkCards"
-    }).functionalityEnabled, ec = L.A.useConfig({
+    }).functionalityEnabled, ec = P.A.useConfig({
         location: "PremiumWhatsNewSection"
     }).enabled, eu = (0, a.bG)([R.A], () => R.A.getPremiumTypeSubscription()), em = eu?.hasActiveTrial ?? !1, eg = (0, a.bG)([f.A], () => [...f.A.quests.values()].find(e => e.config.features.includes(z.Li.NITRO_CONTROL_CTA)) ?? null), e_ = (0, I.A)({
         analyticsLocations: e
@@ -157,7 +157,7 @@ function er() {
                 title: W.intl.string(Y.default.OlObRa),
                 description: W.intl.format(Y.default["/UNTlE"], {
                     discountPercent: D.aW,
-                    termsUrl: P.A.getArticleURL(H.MVz.LOGITECH_PROMOTION)
+                    termsUrl: L.A.getArticleURL(H.MVz.LOGITECH_PROMOTION)
                 }),
                 subscriptionRequired: !0,
                 progress: eN.getDate() / ev,

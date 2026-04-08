@@ -1,15 +1,12 @@
 /** chunk id: 228201 params = (module,exports,require) **/
 n.d(t, {
-    Q: () => o
+    Q: () => r
 });
-var i = n(210742),
-    s = n(419954),
-    l = n(780964),
+var i = n(419954),
+    s = n(780964),
+    l = n(83321),
     a = n(985018);
-let r = (0, s.E2)(l.X.ACCOUNT_STANDING_SETTING, {
-        useSearchTerms: () => [a.intl.string(a.t["Vov/9o"])],
-        Component: i.A
-    }),
-    o = (0, s.zZ)(l.X.ACCOUNT_STANDING_CATEGORY, {
-        buildLayout: () => [r]
-    })
+let r = (0, i.zZ)(s.X.ACCOUNT_STANDING_CATEGORY, {
+    useTitle: () => a.intl.string(a.t["16r9jm"]),
+    buildLayout: () => [l.P]
+})

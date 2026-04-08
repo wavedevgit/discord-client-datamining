@@ -11,8 +11,8 @@ var i = n(627968),
     d = n(139286),
     c = n(627363),
     u = n(587895),
-    _ = n(485724),
-    m = n(204776);
+    m = n(485724),
+    _ = n(204776);
 
 function h(e) {
     let {
@@ -21,7 +21,7 @@ function h(e) {
     } = e, [s, a, o] = (0, r.yK)([u.A], () => [u.A.getApplication(t), u.A.isFetchingApplication(t), u.A.didFetchingApplicationFail(t)], [t]);
     return (l.useEffect(() => {
         null != s || a || o || c.Ay.fetchApplication(t)
-    }, [s, a, o, t]), null != s && (0, m.Ie)({
+    }, [s, a, o, t]), null != s && (0, _.Ie)({
         customInstallUrl: s.customInstallUrl,
         installParams: s.installParams,
         integrationTypesConfig: s.integrationTypesConfig
@@ -48,9 +48,9 @@ function p(e) {
     } = (0, o.Ay)(a.A.APP_OAUTH2_LINK_EMBED);
     return (0, i.jsx)(o.f5, {
         value: c,
-        children: (0, i.jsx)(_.W, {
+        children: (0, i.jsx)(m.W, {
             app: t,
-            linkType: _.J.OAUTH,
+            linkType: m.J.OAUTH,
             onView: r,
             message: n
         })

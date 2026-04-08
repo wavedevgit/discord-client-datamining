@@ -1,17 +1,17 @@
 /** chunk id: 657299 params = (module,exports,require) **/
 n.d(t, {
-    A: () => s
+    A: () => a
 });
-var a = n(73153),
-    i = n(954571),
-    r = n(652215);
-let s = {
+var i = n(73153),
+    l = n(954571),
+    s = n(652215);
+let a = {
     dismissForApplicationId(e) {
-        a.h.dispatch({
+        i.h.dispatch({
             type: "ACTIVITY_INVITE_EDUCATION_DISMISS",
             key: e,
             value: !0
-        }), i.default.track(r.HAw.CLOSE_TUTORIAL, {
+        }), l.default.track(s.HAw.CLOSE_TUTORIAL, {
             tutorial: "activity-invite-nux-inline",
             application_id: e,
             acknowledged: !0

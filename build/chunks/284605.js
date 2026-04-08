@@ -12,8 +12,8 @@ var l = n(417597),
     d = n(317525),
     c = n(71393),
     u = n(957565),
-    _ = n(250627),
-    m = n(253141),
+    m = n(250627),
+    _ = n(253141),
     h = n(579970),
     p = n(500770),
     g = n(571654),
@@ -31,13 +31,13 @@ function E(e) {
         hideRoleTag: v = !1,
         lineClamp: b = 1,
         cardWidth: T,
-        cardHeight: y,
-        thumbnailHeight: N,
+        cardHeight: N,
+        thumbnailHeight: y,
         descriptionTextVariant: S = "text-sm/normal",
         showOpaqueBackground: j = !1
-    } = e, L = (0, l.bG)([c.A], () => c.A.getGuild(n), [n]), R = (0, l.bG)([d.A], () => d.A.getRole(n, t?.role_id ?? C.dJq)), P = (0, r.R)(t, 600), D = (0, g.z)(t), M = (0, _.BB)(L), {
+    } = e, L = (0, l.bG)([c.A], () => c.A.getGuild(n), [n]), R = (0, l.bG)([d.A], () => d.A.getRole(n, t?.role_id ?? C.dJq)), P = (0, r.R)(t, 600), D = (0, g.z)(t), M = (0, m.BB)(L), {
         shouldHideGuildPurchaseEntryPoints: w
-    } = (0, o.MH)(n), k = (0, g.X)(t), O = (0, x.A)({
+    } = (0, o.MH)(n), O = (0, g.X)(t), k = (0, x.A)({
         guildId: n,
         guildProductListingId: t.id,
         sourceAnalyticsLocations: E
@@ -68,7 +68,7 @@ function E(e) {
                 })
             },
             onCopyProductLink: () => {
-                (0, u.C)((0, m.KW)(n, t.id))
+                (0, u.C)((0, _.KW)(n, t.id))
             },
             onTestDownload: () => {}
         });
@@ -76,10 +76,10 @@ function E(e) {
         imageUrl: P,
         name: t.name,
         description: t.description,
-        formattedPrice: k,
+        formattedPrice: O,
         role: R,
         ctaComponent: (0, i.jsx)(s.$nd, {
-            ...O
+            ...k
         }),
         productType: D,
         shouldShowFullDescriptionButton: I,
@@ -90,8 +90,8 @@ function E(e) {
         hideRoleTag: v,
         lineClamp: b,
         cardWidth: T,
-        cardHeight: y,
-        thumbnailHeight: N,
+        cardHeight: N,
+        thumbnailHeight: y,
         descriptionTextVariant: S,
         isDraft: !t.published
     }, t.id)

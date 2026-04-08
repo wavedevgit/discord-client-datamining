@@ -1,6 +1,6 @@
 /** chunk id: 71755 params = (module,exports,require) **/
 n.d(t, {
-    A: () => m
+    A: () => _
 });
 var i = n(627968);
 n(64700);
@@ -12,20 +12,20 @@ var l = n(311907),
     d = n(401755),
     c = n(985018),
     u = n(37925),
-    _ = n(147673);
+    m = n(147673);
 
-function m(e) {
+function _(e) {
     let {
         code: t
-    } = e, m = (0, l.bG)([o.A], () => o.A.getGuildTemplate(t));
-    if (null == m || m.state === d.QB.RESOLVING) return (0, i.jsxs)(r.A, {
+    } = e, _ = (0, l.bG)([o.A], () => o.A.getGuildTemplate(t));
+    if (null == _ || _.state === d.QB.RESOLVING) return (0, i.jsxs)(r.A, {
         children: [(0, i.jsx)(r.A.Header, {
             text: c.intl.string(c.t.Xj87Yf)
         }), (0, i.jsx)(r.A.Body, {
             resolving: !0
         })]
     });
-    if (m.state === d.QB.EXPIRED) return (0, i.jsxs)(r.A, {
+    if (_.state === d.QB.EXPIRED) return (0, i.jsxs)(r.A, {
         children: [(0, i.jsx)(r.A.Header, {
             text: c.intl.string(c.t.C7ZRNw)
         }), (0, i.jsxs)(r.A.Body, {
@@ -49,11 +49,11 @@ function m(e) {
                 } = await Promise.all([n.e("7726"), n.e("30106")]).then(n.bind(n, 72715));
                 return t => (0, i.jsx)(e, {
                     ...t,
-                    guildTemplate: m
+                    guildTemplate: _
                 })
             })
         },
-        loading: m.state === d.QB.ACCEPTING,
+        loading: _.state === d.QB.ACCEPTING,
         variant: "active",
         text: c.intl.string(c.t["a3Gl+e"])
     });
@@ -62,13 +62,13 @@ function m(e) {
             text: c.intl.string(c.t.kAvFkO)
         }), (0, i.jsxs)(r.A.Body, {
             children: [(0, i.jsxs)("div", {
-                className: _.iH,
+                className: m.iH,
                 children: [(0, i.jsx)(a.A, {
                     className: u.K
                 }), (0, i.jsx)(r.A.Info, {
-                    title: m.name,
+                    title: _.name,
                     children: c.intl.format(c.t.cGXXHL, {
-                        usageCount: String(m.usageCount ?? 0)
+                        usageCount: String(_.usageCount ?? 0)
                     })
                 })]
             }), h]

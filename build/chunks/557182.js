@@ -16,8 +16,8 @@ var s = r(627968),
     A = r(215689),
     h = r(985018),
     g = r(498206);
-let p = () => 80,
-    _ = e => {
+let _ = () => 80,
+    p = e => {
         let {
             children: t,
             className: r,
@@ -45,20 +45,20 @@ let p = () => 80,
         } = e, m = i.useRef(null), {
             isHoveringOrFocusing: h
         } = (0, o.A)(n ?? m), {
-            avatarDecorationSrc: p
+            avatarDecorationSrc: _
         } = (0, A.A)({
             user: t,
             avatarDecorationOverride: r,
             size: 80,
             onlyAnimateOnHoverOrFocus: !h
         });
-        return (0, s.jsxs)(_, {
+        return (0, s.jsxs)(p, {
             innerRef: n ?? m,
             isSelected: c,
             ...d,
-            children: [null != p && (0, s.jsx)("img", {
+            children: [null != _ && (0, s.jsx)("img", {
                 className: g.Pw,
-                src: p,
+                src: _,
                 alt: r.label
             }), (0, s.jsx)(u.A, {
                 skuId: r.skuId,
@@ -92,14 +92,14 @@ let p = () => 80,
             paddingHorizontal: 12,
             paddingVertical: 0,
             removeEdgeItemGutters: !0,
-            renderItem: (e, c, p, j) => {
+            renderItem: (e, c, _, j) => {
                 let {
-                    section: y,
-                    items: I
-                } = u[e], C = I[c];
-                if (C === x.dP) return (0, s.jsxs)(_, {
+                    section: I,
+                    items: y
+                } = u[e], C = y[c];
+                if (C === x.dP) return (0, s.jsxs)(p, {
                     style: {
-                        ...p
+                        ..._
                     },
                     isSelected: null === i,
                     onSelect: () => a(null),
@@ -113,8 +113,8 @@ let p = () => 80,
                         children: (0, m.uZ)(t, r) ? h.intl.string(h.t.CHf9iJ) : h.intl.string(h.t.PoWNfe)
                     })]
                 }, j);
-                if (C === x.ZK) return (0, s.jsxs)(_, {
-                    style: p,
+                if (C === x.ZK) return (0, s.jsxs)(p, {
+                    style: _,
                     onSelect: o,
                     children: [(0, s.jsx)(l.U1X, {
                         size: "custom",
@@ -132,11 +132,11 @@ let p = () => 80,
                     let e = i?.skuId === C.skuId;
                     return (0, s.jsx)(v, {
                         style: {
-                            ...p
+                            ..._
                         },
                         user: t,
                         avatarDecoration: C,
-                        section: y,
+                        section: I,
                         innerRef: e ? n : void 0,
                         canUsePremiumCollectibles: A,
                         isSelected: e,
@@ -163,6 +163,6 @@ let p = () => 80,
             },
             getSectionHeight: e => u[e].height,
             getItemKey: (e, t) => u[e].items[t].skuId,
-            getItemHeight: p
+            getItemHeight: _
         })
     }

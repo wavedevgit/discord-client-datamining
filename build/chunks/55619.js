@@ -1,19 +1,20 @@
 /** chunk id: 55619 params = (module,exports,require) **/
-n.d(e, {
-    A: () => r
+"use strict";
+n.d(t, {
+    A: () => i
 });
-var i = n(73153);
-let r = {
-    setEnabled(t) {
+var a = n(73153);
+let i = {
+    setEnabled(e) {
         this.update({
-            enabled: t
+            enabled: e
         })
     },
-    update(t) {
-        for (let e of Object.keys(t)) i.h.dispatch({
+    update(e) {
+        for (let t of Object.keys(e)) a.h.dispatch({
             type: "STREAMER_MODE_UPDATE",
-            key: e,
-            value: t[e]
+            key: t,
+            value: e[t]
         })
     }
 }

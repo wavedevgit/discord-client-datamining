@@ -32,8 +32,8 @@ var i = n(627968),
     y = n(975571),
     O = n(773669),
     R = n(208039),
-    P = n(523104),
-    L = n(856220),
+    L = n(523104),
+    P = n(856220),
     D = n(652215),
     G = n(783419),
     M = n(985018),
@@ -203,7 +203,7 @@ function w(e) {
                     color: "currentColor"
                 })
             })]
-        })), E.twoWayLink ? null : E.type === D.fg2.XBOX ? (0, i.jsx)(L._, {}) : E.type === D.fg2.PLAYSTATION ? (0, i.jsx)(P.j, {}) : null, function(e) {
+        })), E.twoWayLink ? null : E.type === D.fg2.XBOX ? (0, i.jsx)(P._, {}) : E.type === D.fg2.PLAYSTATION ? (0, i.jsx)(L.j, {}) : null, function(e) {
             let t = e.metadata ?? {},
                 n = null,
                 s = (0, T.An)(t[G.pK.CREATED_AT], v);

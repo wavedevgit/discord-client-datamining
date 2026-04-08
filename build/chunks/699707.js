@@ -31,8 +31,8 @@ function b(e) {
             onSelectParticipant: n,
             onContextMenuParticipant: s,
             onFullscreenParticipant: b,
-            participants: v,
-            filteredParticipants: y,
+            participants: y,
+            filteredParticipants: v,
             popoutType: j,
             inCall: R,
             channel: O,
@@ -133,11 +133,11 @@ function b(e) {
         ef = l.useCallback(e => {
             H(e), K(!1)
         }, []),
-        ex = Q ? [] : (0, f.Cf)(v, L, B),
+        ex = Q ? [] : (0, f.Cf)(y, L, B),
         {
             visibleParticipants: eE,
             participantTileWidth: eI
-        } = (0, x.i4)(U, y);
+        } = (0, x.i4)(U, v);
     return (0, i.jsxs)("div", {
         className: a()(N.zr, C.tR, D),
         children: [(0, i.jsxs)("div", {

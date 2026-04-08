@@ -1,7 +1,7 @@
 /** chunk id: 20465 params = (module,exports,require) **/
 n.d(t, {
     A: () => R,
-    R: () => y
+    R: () => v
 });
 var i = n(627968),
     l = n(64700),
@@ -27,8 +27,8 @@ var i = n(627968),
     T = n(403362),
     S = n(652215),
     b = n(838541),
-    v = n(379807);
-let y = 10 * N.A.Millis.SECOND;
+    y = n(379807);
+let v = 10 * N.A.Millis.SECOND;
 
 function j(e) {
     let {
@@ -49,21 +49,21 @@ function j(e) {
         isInteracting: u
     }).content : null, {
         contentPlaceholder: S,
-        renderedContent: y,
+        renderedContent: v,
         trailingIcon: j,
         leadingIcon: R
-    } = (0, g.o)(t, T, n, s, v.BK, {
-        trailingIconClass: v.sl,
-        leadingIconClass: v.aG,
+    } = (0, g.o)(t, T, n, s, y.BK, {
+        trailingIconClass: y.sl,
+        leadingIconClass: y.aG,
         iconSize: b.eJ
     }), O = (0, f.o6)(t), L = O.length > 0 ? O.map(e => (0, i.jsx)(x.A, {
-        className: v.yI,
+        className: y.yI,
         size: 128,
         sticker: e,
         isInteracting: u
     }, e.id)) : null;
     return (0, i.jsxs)(c.DUT, {
-        className: v.oR,
+        className: y.oR,
         onMouseEnter: () => {
             E(!0)
         },
@@ -72,10 +72,10 @@ function j(e) {
         },
         onClick: N,
         children: [(0, i.jsxs)("div", {
-            className: a()(v.kn, {
-                [v.mK]: t.mentioned
+            className: a()(y.kn, {
+                [y.mK]: t.mentioned
             }),
-            children: [null != L ? null : R, y ?? L ?? (0, i.jsx)("span", {
+            children: [null != L ? null : R, v ?? L ?? (0, i.jsx)("span", {
                 children: S
             }), null != L ? null : j]
         }), (0, i.jsx)("img", {
@@ -85,7 +85,7 @@ function j(e) {
                 userId: t.author.id,
                 avatar: r.guildMemberAvatar
             }) : t.author.getAvatarURL(o, 32),
-            className: v.my
+            className: y.my
         })]
     })
 }
@@ -135,7 +135,7 @@ function R(e) {
         channelId: t,
         isFrozen: s,
         count: 3,
-        lingerMs: y
+        lingerMs: v
     }), m = l.useRef({}), [p, g] = l.useState({}), f = l.useCallback((e, t) => {
         null == t ? delete m.current[e] : m.current[e] = t
     }, []), x = l.useRef(p);
@@ -200,7 +200,7 @@ function R(e) {
             },
             children: C((e, t) => (0, i.jsx)(o.animated.div, {
                 ref: e => f(t.message.id, null != e ? e.offsetHeight : null),
-                className: v.T_,
+                className: y.T_,
                 style: e,
                 children: (0, i.jsx)(j, {
                     message: t.message

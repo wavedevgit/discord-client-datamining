@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     a = n(442433),
     r = n(383501),
-    l = n(1193),
-    s = n(589051),
+    s = n(1193),
+    l = n(589051),
     o = n(547463),
     d = n(620851),
     c = n(646881),
@@ -14,9 +14,9 @@ var i = n(627968),
     _ = n(324093),
     h = n(897720),
     m = n(888987),
-    f = n(218670),
-    p = n(709747),
-    g = n(479207),
+    p = n(218670),
+    g = n(709747),
+    f = n(479207),
     A = n(393172),
     x = n(968898),
     I = n(196295);
@@ -31,18 +31,18 @@ let v = {
                 locked: n,
                 size: a,
                 padding: r,
-                borderWidth: l,
-                showEmpty: s
+                borderWidth: s,
+                showEmpty: l
             } = e;
-            return (0, h.cv)(t) ? (0, i.jsx)(g.A, {
+            return (0, h.cv)(t) ? (0, i.jsx)(f.A, {
                 id: t.id,
                 locked: n,
                 widget: t,
-                height: "auto" === a.height ? 0 : a.height - 2 * r - 2 * l,
-                width: "auto" === a.width ? 0 : a.width - 2 * r - 2 * l,
-                showEmpty: s,
+                height: "auto" === a.height ? 0 : a.height - 2 * r - 2 * s,
+                width: "auto" === a.width ? 0 : a.width - 2 * r - 2 * s,
+                showEmpty: l,
                 padding: r,
-                borderWidth: l
+                borderWidth: s
             }) : null
         },
         renderTitle: () => (0, i.jsx)(x.Pl, {
@@ -66,7 +66,7 @@ let v = {
                 pinned: e.pinned
             })]
         }),
-        resizeValidation: g.r
+        resizeValidation: f.r
     },
     [E.uss.VOICE_V3]: {
         renderWidget(e) {
@@ -170,8 +170,8 @@ let v = {
                 locked: n,
                 size: a,
                 dragStart: r,
-                anchorTop: l,
-                anchorLeft: s,
+                anchorTop: s,
+                anchorLeft: l,
                 showEmpty: o,
                 padding: d,
                 borderWidth: c
@@ -182,8 +182,8 @@ let v = {
                 pinned: t.pinned,
                 opacity: t.opacity,
                 size: a,
-                anchorTop: l,
-                anchorLeft: s,
+                anchorTop: s,
+                anchorLeft: l,
                 widget: t,
                 isPreviewingInGame: !1,
                 dragStart: r,
@@ -225,7 +225,7 @@ let v = {
             let {
                 locked: t
             } = e;
-            return (0, i.jsx)(f.A, {
+            return (0, i.jsx)(p.A, {
                 locked: t
             })
         }
@@ -277,7 +277,7 @@ let v = {
             children: b.intl.string(b.t["6gwSFY"])
         }),
         renderButtons: () => null,
-        predicate: () => !(0, s.NI)("WidgetRenderConfig").hasFriendList
+        predicate: () => !(0, l.NI)("WidgetRenderConfig").hasFriendList
     },
     [E.uss.FRIENDS]: {
         renderWidget(e) {
@@ -292,7 +292,7 @@ let v = {
             children: b.intl.string(b.t.TdEu5X)
         }),
         renderButtons: () => null,
-        predicate: () => (0, s.NI)("WidgetRenderConfig").hasFriendList
+        predicate: () => (0, l.NI)("WidgetRenderConfig").hasFriendList
     },
     [E.uss.TEXT_CHAT_V3]: {
         renderWidget(e) {
@@ -301,7 +301,7 @@ let v = {
                 dragStart: n,
                 dragging: a
             } = e;
-            return (0, i.jsx)(p.A, {
+            return (0, i.jsx)(g.A, {
                 locked: t,
                 dragStart: n,
                 dragging: a
@@ -311,16 +311,16 @@ let v = {
             children: b.intl.string(b.t["/VQax8"])
         }),
         renderButtons: () => null,
-        predicate: () => (0, s.NI)("WidgetRenderConfig").hasChat,
+        predicate: () => (0, l.NI)("WidgetRenderConfig").hasChat,
         containerRenderGate: {
-            stores: [r.A, l.A],
+            stores: [r.A, s.A],
             shouldRender(e) {
                 let {
                     locked: t
                 } = e;
                 if (t) return !1;
                 let n = r.A.getChannelId() ?? null,
-                    [i] = l.A.getSessionEntries(),
+                    [i] = s.A.getSessionEntries(),
                     a = i.length > 0;
                 return null != n || a
             }

@@ -31,8 +31,8 @@ var i = n(627968),
     y = n(709732),
     O = n(652215),
     R = n(788868),
-    P = n(985018),
-    L = n(145860);
+    L = n(985018),
+    P = n(145860);
 
 function D(e) {
     let t, {
@@ -48,20 +48,20 @@ function D(e) {
         S = (0, A.WD)(n.id, f),
         b = null != l,
         E = (0, x.A)(n, b);
-    b && d ? t = P.intl.format(P.t.pkxVx6, {
+    b && d ? t = L.intl.format(L.t.pkxVx6, {
         endDate: E,
         onClickDetails: T
-    }) : b && !d ? t = P.intl.format(P.t["4sFeob"], {
+    }) : b && !d ? t = L.intl.format(L.t["4sFeob"], {
         endDate: E,
         onClickDetails: T
-    }) : !b && d ? t = P.intl.format(P.t["RBnE+l"], {
+    }) : !b && d ? t = L.intl.format(L.t["RBnE+l"], {
         endDate: E,
         onClickDetails: T
-    }) : b || d || (t = P.intl.format(P.t["57+7Qn"], {
+    }) : b || d || (t = L.intl.format(L.t["57+7Qn"], {
         endDate: E,
         onClickDetails: T
     }));
-    let C = b ? P.intl.string(P.t["2cHUti"]) : P.intl.string(P.t.O13yhz),
+    let C = b ? L.intl.string(L.t["2cHUti"]) : L.intl.string(L.t.O13yhz),
         N = s.useCallback(() => h(!1), []),
         {
             outboundTitle: v,
@@ -69,17 +69,17 @@ function D(e) {
         } = n;
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsxs)("div", {
-            className: a()(L.uI, L.AX),
+            className: a()(P.uI, P.AX),
             children: [(0, i.jsxs)("div", {
-                className: L.gE,
+                className: P.gE,
                 children: [(0, i.jsxs)("div", {
-                    className: L.At,
+                    className: P.At,
                     children: [(0, i.jsx)("div", {
-                        className: L.$G,
+                        className: P.$G,
                         children: (0, i.jsx)("img", {
                             alt: "",
                             src: S,
-                            className: L.IJ
+                            className: P.IJ
                         })
                     }), (0, i.jsxs)("div", {
                         children: [(0, i.jsx)(c.Heading, {
@@ -88,7 +88,7 @@ function D(e) {
                         }), (0, i.jsx)(c.Text, {
                             variant: "text-sm/normal",
                             color: "text-default",
-                            className: L.__invalid_promotionText,
+                            className: P.__invalid_promotionText,
                             children: t
                         })]
                     })]
@@ -99,7 +99,7 @@ function D(e) {
                     size: "sm"
                 })]
             }), d && (0, i.jsx)(c.Text, {
-                className: L.GL,
+                className: P.GL,
                 variant: "text-xs/normal",
                 color: "text-default",
                 children: _.A.parse(I, !1, {
@@ -154,42 +154,42 @@ let G = function() {
                 }),
                 d = (0, i.jsx)(c.Heading, {
                     variant: "heading-md/semibold",
-                    children: k ? P.intl.string(P.t.wFsj3B) : void 0
+                    children: k ? L.intl.string(L.t.wFsj3B) : void 0
                 }),
                 u = w ? (0, i.jsxs)("div", {
-                    className: L.uo,
+                    className: P.uo,
                     children: [(0, i.jsx)(c.tvc, {
                         size: "md",
                         color: c.LU0.colors.REDESIGN_BUTTON_PREMIUM_PRIMARY_PURPLE_FOR_GRADIENT_2,
-                        className: L.PC
+                        className: P.PC
                     }), (0, i.jsx)(c.Text, {
                         variant: "text-md/normal",
-                        className: L.Qw,
-                        children: P.intl.format(P.t.G4fwxK, {
+                        className: P.Qw,
+                        children: L.intl.format(L.t.G4fwxK, {
                             onClick: () => {
                                 (0, I.default)(), (0, S.pX)(O.BVt.APPLICATION_STORE)
                             }
                         })
                     }), (0, i.jsx)(T.A, {
                         showGradient: !0,
-                        className: L.aA,
+                        className: P.aA,
                         subscriptionTier: R.pe.TIER_2,
                         textOptions: {
-                            textOverride: P.intl.string(P.t.mr4K7D)
+                            textOverride: L.intl.string(L.t.mr4K7D)
                         }
                     })]
                 }) : null;
             return (0, i.jsxs)("div", {
                 children: [d, k ? (0, i.jsx)(c.cGx, {
-                    className: L.yF
+                    className: P.yF
                 }) : null, (0, i.jsx)(f.A, {
-                    className: L.Yj,
+                    className: P.Yj,
                     isShown: w,
                     type: f.i.PREMIUM,
                     hasBackground: !0,
                     children: (0, i.jsxs)("div", {
                         className: a()({
-                            [L.sW]: !w
+                            [P.sW]: !w
                         }),
                         children: [u, G.map(e => {
                             let {
@@ -208,19 +208,19 @@ let G = function() {
                             addClaimedOutboundPromotionCode: U,
                             disabled: !l
                         }, e.id)), null != e ? (0, i.jsx)(y.A, {
-                            className: L.uI,
+                            className: P.uI,
                             skuId: e.skuId,
                             subscriptionPlanId: e.subscriptionPlanId,
                             entitlements: [e],
                             giftCodeBatchId: R.FB
                         }, (0, C.Kx)(e.skuId, e.subscriptionPlanId)) : null, s.length > 0 ? (0, i.jsx)(y.A, {
-                            className: L.uI,
+                            className: P.uI,
                             skuId: s[0].skuId,
                             subscriptionPlanId: s[0].subscriptionPlanId,
                             entitlements: s,
                             giftCodeBatchId: R.Bu
                         }, (0, C.Kx)(s[0].skuId, s[0].subscriptionPlanId)) : null, r.length > 0 ? (0, i.jsx)(y.A, {
-                            className: L.uI,
+                            className: P.uI,
                             skuId: r[0].skuId,
                             subscriptionPlanId: r[0].subscriptionPlanId,
                             entitlements: r,
@@ -230,24 +230,24 @@ let G = function() {
                 })]
             })
         }(), (0, i.jsx)("div", {
-            className: L.sW,
+            className: P.sW,
             children: (0, i.jsxs)(c.Fmo, {
                 component: (0, i.jsx)(c.Heading, {
                     variant: "heading-md/semibold",
-                    children: P.intl.string(P.t["9KeUbY"])
+                    children: L.intl.string(L.t["9KeUbY"])
                 }),
                 children: [(0, i.jsx)(c.cGx, {
-                    className: L.yF
+                    className: P.yF
                 }), 0 === Object.keys(g).length ? (0, i.jsxs)("div", {
-                    className: L.p$,
+                    className: P.p$,
                     children: [(0, i.jsx)("div", {
-                        className: L.QT
+                        className: P.QT
                     }), (0, i.jsx)(c.H, {
-                        className: L.ks,
-                        children: P.intl.string(P.t.B1qgZn)
+                        className: P.ks,
+                        children: L.intl.string(L.t.B1qgZn)
                     }), (0, i.jsx)("p", {
-                        className: L.WO,
-                        children: P.intl.format(P.t.HezvJ8, {
+                        className: P.WO,
+                        children: L.intl.format(L.t.HezvJ8, {
                             onClick: function() {
                                 (0, j.openUserSettings)(v.X.NITRO_PANEL)
                             }
@@ -260,7 +260,7 @@ let G = function() {
                         giftStyle: s
                     } = (0, C.X6)(e);
                     return (0, i.jsx)(y.A, {
-                        className: L.uI,
+                        className: P.uI,
                         skuId: t,
                         subscriptionPlanId: n,
                         entitlements: g[e],
@@ -270,6 +270,6 @@ let G = function() {
             })
         })]
     }) : (0, i.jsx)(c.y$y, {
-        className: L.Lq
+        className: P.Lq
     })
 }

@@ -16,8 +16,8 @@ function c(e) {
         currentUserPresenceActivity: n,
         hideParty: c,
         message: u,
-        onView: _,
-        partyStatusElement: m,
+        onView: m,
+        partyStatusElement: _,
         presenceActivity: h,
         guildId: p
     } = e, g = !(0, a.A)(h, u, t.id), A = (0, r.n$)(t.name, u.activity?.type, g), x = l.useMemo(() => {
@@ -28,7 +28,7 @@ function c(e) {
         message: u,
         header: A,
         onClickContent: x,
-        onView: _,
+        onView: m,
         guildId: p
     }) : (0, i.jsx)(d.A, {
         application: t,
@@ -36,10 +36,10 @@ function c(e) {
         header: A,
         presenceActivity: h,
         hideParty: c,
-        partyStatusElement: m,
+        partyStatusElement: _,
         currentUserPresenceActivity: n,
         onClickContent: x,
-        onView: _,
+        onView: m,
         guildId: p
     })
 }

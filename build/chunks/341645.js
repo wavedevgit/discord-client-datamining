@@ -11,8 +11,8 @@ var i = n(627968),
     d = n(397927),
     c = n(212245),
     u = n(775602),
-    _ = n(933958),
-    m = n(447031),
+    m = n(933958),
+    _ = n(447031),
     h = n(956549),
     p = n(550151),
     g = n(793574),
@@ -25,8 +25,8 @@ var i = n(627968),
     v = n(853390),
     b = n(611010),
     T = n(961350),
-    y = n(734057),
-    N = n(290863),
+    N = n(734057),
+    y = n(290863),
     S = n(287809),
     j = n(954571),
     L = n(486020),
@@ -35,8 +35,8 @@ var i = n(627968),
     D = n(218394),
     M = n(255345),
     w = n(652215),
-    k = n(360469),
-    O = n(768349),
+    O = n(360469),
+    k = n(768349),
     U = n(985018),
     B = n(949235);
 let G = l.memo(e => {
@@ -62,32 +62,32 @@ let F = l.memo(function(e) {
             analyticsLocations: v
         } = (0, A.Ay)(g.A.ACTIVITY_INSTANCE_EMBED),
         R = (0, c.p)(),
-        D = (0, a.bG)([y.A], () => y.A.getChannel(s), [s]),
+        D = (0, a.bG)([N.A], () => N.A.getChannel(s), [s]),
         F = D?.isThread?.() ? D?.parent_id : s,
         H = (0, a.bG)([T.default], () => T.default.getId()),
         {
             embeddedActivity: V,
             currentEmbeddedActivity: q,
             activityLaunchState: W
-        } = (0, a.cf)([_.Ay], () => ({
-            embeddedActivity: _.Ay.getEmbeddedActivitiesForChannel(F ?? "").find(e => e.applicationId === n.id),
-            currentEmbeddedActivity: _.Ay.getCurrentEmbeddedActivity(),
-            activityLaunchState: _.Ay.getLaunchState(n.id, F ?? void 0)
+        } = (0, a.cf)([m.Ay], () => ({
+            embeddedActivity: m.Ay.getEmbeddedActivitiesForChannel(F ?? "").find(e => e.applicationId === n.id),
+            currentEmbeddedActivity: m.Ay.getCurrentEmbeddedActivity(),
+            activityLaunchState: m.Ay.getLaunchState(n.id, F ?? void 0)
         }), [F, n.id]),
-        z = V?.userIds,
-        Y = (0, a.yK)([S.default], () => Array.from(z ?? []).map(e => S.default.getUser(e)).filter(P.Vq), [z]),
-        Q = (0, a.bG)([N.A], () => {
-            if (null == z) return null;
-            for (let e of z) {
-                let t = N.A.findActivity(e, e => e.application_id === n.id);
+        Y = V?.userIds,
+        z = (0, a.yK)([S.default], () => Array.from(Y ?? []).map(e => S.default.getUser(e)).filter(P.Vq), [Y]),
+        Q = (0, a.bG)([y.A], () => {
+            if (null == Y) return null;
+            for (let e of Y) {
+                let t = y.A.findActivity(e, e => e.application_id === n.id);
                 if (null != t) return t
             }
             return null
-        }, [n.id, z]),
+        }, [n.id, Y]),
         K = Q?.details,
         J = l.useMemo(() => {
             let e = new b.Ay(n);
-            return null == e.embeddedActivityConfig && (e.embeddedActivityConfig = k.Gl), e
+            return null == e.embeddedActivityConfig && (e.embeddedActivityConfig = O.Gl), e
         }, [n]),
         X = (0, p.vG)({
             userId: H,
@@ -117,7 +117,7 @@ let F = l.memo(function(e) {
                 analyticsLocations: v,
                 componentId: ee,
                 commandOrigin: x.iw.ACTIVITY_INSTANCE_EMBED
-            }) : await (0, m.A)({
+            }) : await (0, _.A)({
                 applicationId: V.applicationId,
                 activityChannelId: s,
                 locationObject: R.location,
@@ -137,7 +137,7 @@ let F = l.memo(function(e) {
             bot: n.bot
         });
     $.disabled && (t = $.tooltip);
-    let er = Y.length,
+    let er = z.length,
         ea = Q?.timestamps?.start ?? Q?.created_at,
         eo = (0, C.y)({
             activity: Q,
@@ -194,7 +194,7 @@ let F = l.memo(function(e) {
                         })]
                     })]
                 }), er > 0 && (0, i.jsx)(C.$, {
-                    activityUsers: Y,
+                    activityUsers: z,
                     guildId: o,
                     activityText: eo.text
                 })]
@@ -204,7 +204,7 @@ let F = l.memo(function(e) {
         onClickContent: el,
         trackingConfig: {
             id: n.id,
-            linkType: O.J.ACTIVITY_INSTANCE,
+            linkType: k.J.ACTIVITY_INSTANCE,
             guildId: o,
             channelId: s,
             messageId: u.id,

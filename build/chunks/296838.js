@@ -45,9 +45,9 @@ function b(e) {
             return null
     }
 }
-let v = [m.Q_.MESSAGE, m.Q_.NAVIGATION, m.Q_.VOICE_AND_VIDEO, m.Q_.CHAT, m.Q_.MISCELLANEOUS];
+let y = [m.Q_.MESSAGE, m.Q_.NAVIGATION, m.Q_.VOICE_AND_VIDEO, m.Q_.CHAT, m.Q_.MISCELLANEOUS];
 
-function y(e) {
+function v(e) {
     let {
         showBackdrop: t
     } = e;
@@ -62,7 +62,7 @@ function j() {
     let e = l.useMemo(() => c()((0, m.Bx)()).groupBy(e => e.group).value(), []);
     return (0, i.jsx)("div", {
         className: T.Io,
-        children: v.map(t => {
+        children: y.map(t => {
             let n = e[t],
                 l = (0, m.Gm)(t),
                 s = (0, m.zF)(t);
@@ -290,7 +290,7 @@ function L(e) {
         useReducedMotion: f.A.useReducedMotion
     }));
     return (0, i.jsxs)(i.Fragment, {
-        children: [(0, i.jsx)(y, {
+        children: [(0, i.jsx)(v, {
             showBackdrop: o
         }), (0, i.jsx)(_.EOs, {
             className: a()(T._$, {

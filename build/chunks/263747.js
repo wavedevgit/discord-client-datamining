@@ -115,11 +115,11 @@ let v = e => {
                 analyticsLocations: O
             } = (0, m.Ay)(u.A.PREMIUM_MARKETING_REFERALL_PROGRAM_PROGRESS_BAR),
             R = s.useRef(null),
-            P = v.sent / f.Z * 100,
-            L = (0, i.jsxs)("div", {
+            L = v.sent / f.Z * 100,
+            P = (0, i.jsxs)("div", {
                 className: C.hE,
                 children: [(0, i.jsx)(T.Ay, {
-                    percentage: P,
+                    percentage: L,
                     progressCircleVariation: T.BN.NITRO_LOGO,
                     iconClassName: a()({
                         [C.VC]: !t,
@@ -197,7 +197,7 @@ let v = e => {
                         [C.d_]: t,
                         [C.kS]: D
                     }),
-                    children: L
+                    children: P
                 })
             })
         })

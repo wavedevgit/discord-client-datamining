@@ -32,8 +32,8 @@ var i = n(627968),
     y = n(965591),
     O = n(495022),
     R = n(382694),
-    P = n(235365),
-    L = n(994763),
+    L = n(235365),
+    P = n(994763),
     D = n(788868),
     G = n(652215),
     M = n(985018),
@@ -83,7 +83,7 @@ let w = "perk",
                     scrollBlock: "start"
                 } : {}
             }, [l.search]);
-        (0, L.z)(X ?? "", null != X, Z, q);
+        (0, P.z)(X ?? "", null != X, Z, q);
         let [Q, J] = s.useState(!1), $ = (0, E.p)(), ee = s.useRef(null), [et, en] = s.useState(!1), ei = null != $ && null != F && F.status === G.Dmq.CANCELED, es = (0, N.iU)(D.gD.PREMIUM_MONTH_TIER_2, $, F), el = !et && ei, {
             analyticsLocations: ea
         } = (0, g.Ay)(m.A.PREMIUM_SUBSCRIBER_NITRO_HOME), [er, eo] = s.useState(!1);
@@ -112,7 +112,7 @@ let w = "perk",
                         glowingPerkId: W
                     }), (0, i.jsx)(v.A, {
                         glowingSectionId: K
-                    }), null != z && Y && (0, i.jsx)(P.A, {
+                    }), null != z && Y && (0, i.jsx)(L.A, {
                         location: m.A.PREMIUM_MARKETING_NITRO_HOME_ORBS_SECTION
                     }), (0, i.jsx)(O.A, {
                         glowingPerkId: W

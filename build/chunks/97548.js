@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     a = n(64700),
     r = n(311907),
-    l = n(397927),
-    s = n(684013),
+    s = n(397927),
+    l = n(684013),
     o = n(964486),
     d = n(313961),
     c = n(652896),
@@ -14,17 +14,17 @@ var i = n(627968),
     _ = n(616356),
     h = n(961350),
     m = n(734057),
-    f = n(555528),
-    p = n(309010),
-    g = n(41984),
+    p = n(555528),
+    g = n(309010),
+    f = n(41984),
     A = n(412477),
     x = n(75280),
     I = n(433560),
     E = n(324093),
     b = n(897720),
     v = n(392164),
-    S = n(985018),
-    C = n(510376);
+    C = n(985018),
+    S = n(510376);
 
 function y(e) {
     var t, n;
@@ -36,26 +36,26 @@ function y(e) {
             padding: P,
             borderWidth: R,
             opacity: D,
-            horizontal: k,
-            pinned: M,
+            horizontal: M,
+            pinned: k,
             anchorTop: G,
             anchorLeft: z,
             showEmpty: U = !0
         } = e,
-        V = k ? b.IV.HORIZONTAL : b.IV.VERTICAL,
+        V = M ? b.IV.HORIZONTAL : b.IV.VERTICAL,
         F = V === b.IV.VERTICAL,
-        W = (0, r.bG)([f.A], () => {
-            let e = f.A.getWidget(w);
+        W = (0, r.bG)([p.A], () => {
+            let e = p.A.getWidget(w);
             return !!(0, b.dO)(e) && !O && (e.meta.showAllStreams ?? !0)
         }, [w, O]),
-        H = (0, r.bG)([p.A], () => p.A.getVoiceChannelId()),
+        H = (0, r.bG)([g.A], () => g.A.getVoiceChannelId()),
         B = (0, r.bG)([m.A], () => m.A.getChannel(H)),
         Y = (0, r.bG)([h.default], () => h.default.getId()),
         {
             streamParticipants: X,
             activeStreams: Z,
             participantsVersion: K
-        } = (t = G && F || z && k, n = !G && F || !z && k, y = (0, r.yK)([_.A], () => null == H ? [] : _.A.getAllActiveStreamsForChannel(H)), T = a.useMemo(() => new Set(y.map(e => (0, c._z)(e))), [y]), N = (0, r.bG)([d.A], () => null == H ? -1 : d.A.getParticipantsVersion(H)), {
+        } = (t = G && F || z && M, n = !G && F || !z && M, y = (0, r.yK)([_.A], () => null == H ? [] : _.A.getAllActiveStreamsForChannel(H)), T = a.useMemo(() => new Set(y.map(e => (0, c._z)(e))), [y]), N = (0, r.bG)([d.A], () => null == H ? -1 : d.A.getParticipantsVersion(H)), {
             streamParticipants: (0, r.yK)([d.A, _.A], () => {
                 if (null == H) return [];
 
@@ -125,15 +125,15 @@ function y(e) {
     });
     let er = null == B || 0 === Z.size && O || 0 === J && !O;
     return (a.useEffect(() => {
-        s.A.setGpuBoostRequested(g.y7.OVERLAY_VIDEO_STREAM_RENDERING, !er)
+        l.A.setGpuBoostRequested(f.y7.OVERLAY_VIDEO_STREAM_RENDERING, !er)
     }, [er]), (0, o.Ay)(() => () => {
-        s.A.setGpuBoostRequested(g.y7.OVERLAY_VIDEO_STREAM_RENDERING, !1)
-    }), (er || !M) && O) ? null : er && !O ? U ? O ? null : (0, i.jsx)(A.g, {
-        emptyText: S.intl.string(S.t["T6+rXy"]),
-        icon: l.Fzq,
+        l.A.setGpuBoostRequested(f.y7.OVERLAY_VIDEO_STREAM_RENDERING, !1)
+    }), (er || !k) && O) ? null : er && !O ? U ? O ? null : (0, i.jsx)(A.g, {
+        emptyText: C.intl.string(C.t["T6+rXy"]),
+        icon: s.Fzq,
         absolute: !0
     }) : null : (0, i.jsx)("div", {
-        className: C.u,
+        className: S.u,
         style: {
             opacity: D
         },
@@ -147,7 +147,7 @@ function y(e) {
             activeStreams: Z,
             streamParticipants: X,
             participantsVersion: K,
-            pinned: M,
+            pinned: k,
             padding: P
         })
     })

@@ -1,61 +1,61 @@
 /** chunk id: 803203 params = (module,exports,require) **/
 i.d(t, {
-    A: () => A
+    A: () => _
 });
 var n = i(627968),
-    l = i(64700),
-    a = i(311907),
-    s = i(73153),
+    a = i(64700),
+    l = i(311907),
+    o = i(73153),
     r = i(775602),
-    o = i(649963),
-    u = i(253932),
+    s = i(649963),
+    c = i(253932),
     d = i(900210),
-    c = i(297494),
+    u = i(297494),
     h = i(211180),
     m = i(60317),
     p = i(707493),
     g = i(785833);
-let A = l.memo(function(e) {
+let _ = a.memo(function(e) {
     let {
         channelId: t,
         messageId: i,
-        emoji: A,
+        emoji: _,
         useChatFontScaling: f,
-        color: T,
-        count: E,
-        emojiSize: x
-    } = e, N = (0, a.bG)([d.A], () => d.A.getEffectForEmojiId(t, i, A)), I = l.useMemo(() => (0, m.eT)(A, T, t, {
-        key: N,
+        color: A,
+        count: T,
+        emojiSize: b
+    } = e, E = (0, l.bG)([d.A], () => d.A.getEffectForEmojiId(t, i, _)), x = a.useMemo(() => (0, m.eT)(_, A, t, {
+        key: E,
         messageId: i
-    }), [T, N, A, t, i]), [v, j] = l.useState(!1), R = (0, a.bG)([r.A], () => r.A.useReducedMotion), C = u.Sf.useSetting(), S = l.useCallback(() => {
-        s.h.dispatch({
+    }), [A, E, _, t, i]), [I, N] = a.useState(!1), j = (0, l.bG)([r.A], () => r.A.useReducedMotion), R = c.Sf.useSetting(), v = a.useCallback(() => {
+        o.h.dispatch({
             type: "BURST_REACTION_EFFECT_CLEAR",
             channelId: t,
             messageId: i,
-            emoji: A
+            emoji: _
         })
-    }, [A, t, i]);
-    return (l.useEffect(() => {
+    }, [_, t, i]);
+    return (a.useEffect(() => {
         let e = () => {
-            if (v) return;
-            let e = (0, c.H4)(`${Date.now()}${t}${i}${A.name}`) % 10;
-            (e += E > 4 ? 4 : E - 1) > 7 && (j(!0), (0, o.on)({
+            if (I) return;
+            let e = (0, u.H4)(`${Date.now()}${t}${i}${_.name}`) % 10;
+            (e += T > 4 ? 4 : T - 1) > 7 && (N(!0), (0, s.on)({
                 channelId: t,
                 messageId: i,
-                emoji: A,
+                emoji: _,
                 key: d.W.RANDOM
             }))
         };
-        if (v || R && !C || !C) return;
+        if (I || j && !R || !R) return;
         e();
         let n = setInterval(e, 5e3);
         return () => {
             clearInterval(n)
         }
-    }, [C, t, E, A, A.name, v, i, R]), null == N) ? null : (0, n.jsx)(h.A, {
+    }, [R, t, T, _, _.name, I, i, j]), null == E) ? null : (0, n.jsx)(h.A, {
         className: (f ? g : p).effect,
-        effect: I,
-        onComplete: S,
-        emojiSize: x
+        effect: x,
+        onComplete: v,
+        emojiSize: b
     })
 })

@@ -1,7 +1,7 @@
 /** chunk id: 123857 params = (module,exports,require) **/
 n.d(t, {
     Ix: () => k,
-    J3: () => L,
+    J3: () => P,
     Q3: () => V,
     mx: () => B
 });
@@ -34,8 +34,8 @@ var i = n(627968),
     y = n(49999),
     O = n(788868),
     R = n(985018),
-    P = n(882527);
-let L = () => {
+    L = n(882527);
+let P = () => {
     (0, h.Dr)(a.M.CLIENT_THEMES_SPARKLE_PREVIEW, {
         dismissAction: y.i.PRIMARY,
         forceTrack: !0
@@ -62,11 +62,11 @@ function G() {
     let e = (0, l.bG)([g.A], () => g.A.isPreview),
         t = (0, T.V)()?.subscription_trial?.sku_id === O.pe.TIER_2;
     return !e || t ? null : (0, i.jsxs)("div", {
-        className: P.gY,
+        className: L.gY,
         children: [(0, i.jsx)(o.Button, {
             variant: "secondary",
             text: R.intl.string(R.t["E+COuA"]),
-            onClick: L
+            onClick: P
         }), (0, i.jsx)(D, {})]
     })
 }
@@ -83,7 +83,7 @@ function M(e) {
             location_stack: a
         })
     }, [n, a]), n) ? (0, i.jsx)("div", {
-        className: P._$,
+        className: L._$,
         children: t
     }) : t
 }
@@ -93,15 +93,15 @@ function U() {
         t = (0, T.V)()?.subscription_trial?.sku_id === O.pe.TIER_2;
     return e && t ? (0, i.jsxs)("div", {
         children: [(0, i.jsx)("div", {
-            className: P.c7,
+            className: L.c7,
             children: (0, i.jsx)(o.Button, {
                 variant: "secondary",
                 fullWidth: !0,
                 text: R.intl.string(R.t["E+COuA"]),
-                onClick: () => L()
+                onClick: () => P()
             })
         }), (0, i.jsx)("div", {
-            className: P.BU
+            className: L.BU
         }), (0, i.jsx)(b.Ay, {
             type: O.e.PREMIUM_CLIENT_THEME_SETTINGS_UPSELL,
             subscriptionTier: O.pe.TIER_2
@@ -112,7 +112,7 @@ let k = () => (0, i.jsx)("div", {
     children: (0, i.jsxs)(x.Ay, {
         type: x.v0.SETTINGS,
         children: [(0, i.jsx)(x.Ay.Basic, {
-            className: P.a6
+            className: L.a6
         }), (0, i.jsx)(w, {}), (0, i.jsx)(_.A, {}), (0, i.jsxs)(M, {
             children: [(0, i.jsx)(x.Ay.Gradient, {
                 disabled: !1,
@@ -150,7 +150,7 @@ function w() {
 let V = () => (0, l.bG)([g.A], () => g.A.isPreview) ? null : (0, i.jsx)(o.Button, {
     variant: "primary",
     text: R.intl.string(R.t.qYXrkX),
-    onClick: L
+    onClick: P
 });
 
 function B(e) {
@@ -163,10 +163,10 @@ function B(e) {
             children: [(0, i.jsx)(x.ew, {
                 isCoachmark: !1,
                 renderCTAButtons: () => (0, i.jsx)(G, {}),
-                headingClassName: P.EK,
+                headingClassName: L.EK,
                 titleTextVariant: "text-md/semibold",
-                titleClassName: P.cI,
-                titleIconClassName: P.Hq
+                titleClassName: L.cI,
+                titleIconClassName: L.Hq
             }), (0, i.jsx)(o.BJc, {
                 direction: "horizontal",
                 wrap: !0,

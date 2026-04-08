@@ -1,7 +1,7 @@
 /** chunk id: 929770 params = (module,exports,require) **/
 s.d(e, {
-    b: () => l
+    b: () => a
 });
 var i = s(311907),
-    a = s(207913);
-let l = () => (0, i.bG)([a.A], () => a.A.getFetchError())
+    n = s(207913);
+let a = () => (0, i.bG)([n.A], () => n.A.getFetchError())

@@ -260,7 +260,7 @@ let S = () => (0, i.jsxs)(a.BJc, {
             })
         }, [t, c]), R = s.useCallback(async () => {
             j(!0), await (0, r.Ir)(t, c), j(!1)
-        }, [t, c]), P = () => {
+        }, [t, c]), L = () => {
             o.default.track(h.HAw.PREMIUM_GROUP_SUBSCRIPTION_CARD_INVITE_CLICKED, {
                 subscription_id: t.id
             }), (0, a.mMO)(async () => {
@@ -272,7 +272,7 @@ let S = () => (0, i.jsxs)(a.BJc, {
                     subscription: t
                 })
             })
-        }, L = s.useMemo(() => !A.BE.includes(t.status) && E > 0, [t.status, E]), {
+        }, P = s.useMemo(() => !A.BE.includes(t.status) && E > 0, [t.status, E]), {
             title: D,
             description: G
         } = (() => {
@@ -333,8 +333,8 @@ let S = () => (0, i.jsxs)(a.BJc, {
                             size: "md",
                             fullWidth: !0,
                             text: T.intl.string(p.default.Tcmclj),
-                            onClick: P,
-                            disabled: !L
+                            onClick: L,
+                            disabled: !P
                         }), (0, i.jsx)(a.Button, {
                             variant: "secondary",
                             size: "md",
@@ -346,8 +346,8 @@ let S = () => (0, i.jsxs)(a.BJc, {
                 }), (0, i.jsx)(C, {
                     premiumGroupMembers: _,
                     isLoadingPremiumGroupMembers: x,
-                    canInvite: L,
-                    onInvite: P,
+                    canInvite: P,
+                    onInvite: L,
                     onRemoveMember: e => {
                         o.default.track(h.HAw.PREMIUM_GROUP_SUBSCRIPTION_CARD_REMOVE_MEMBER_CLICKED, {
                             subscription_id: t.id,

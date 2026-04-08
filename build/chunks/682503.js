@@ -28,17 +28,16 @@ function b(e) {
         onComplete: b,
         uploadType: E,
         showUpsellHeader: R,
-        analyticsPage: y
-    } = e, [I, j] = i.useState(!1), L = (0, o.k34)(), {
-        analyticsLocations: v,
-        newestAnalyticsLocation: w
+        analyticsPage: I
+    } = e, [j, y] = i.useState(!1), L = (0, o.k34)(), {
+        analyticsLocations: v
     } = (0, d.Ay)(c.A.GIF_PICKER);
-    async function P(e) {
+    async function w(e) {
         let t, {
             gifSrc: i
         } = e;
-        if (null == i || I) return;
-        j(!0);
+        if (null == i || j) return;
+        y(!0);
         let l = (0, h.s)(i),
             r = await fetch(l),
             c = await r.blob(),
@@ -82,12 +81,12 @@ function b(e) {
             type: g.JJy.GIF_PICKER_AVATAR_OR_BANNER_MODAL,
             location_stack: v,
             location: {
-                page: y
+                page: I
             }
         })
-    }, [v, y]);
-    let S = E === f.HL.AVATAR || E === f.HL.BANNER,
-        $ = (0, p.b)(!S);
+    }, [v, I]);
+    let P = E === f.HL.AVATAR || E === f.HL.BANNER,
+        $ = (0, p.b)(!P);
     return (0, n.jsx)(d.f5, {
         value: v,
         children: (0, n.jsxs)(r.dWK, {
@@ -99,7 +98,7 @@ function b(e) {
                 className: N.It,
                 children: (0, n.jsx)(m.A, {
                     type: E,
-                    analyticsPage: y,
+                    analyticsPage: I,
                     analyticsSection: g.JJy.GIF_PICKER_AVATAR_OR_BANNER_MODAL,
                     isGIF: !0
                 })
@@ -107,16 +106,15 @@ function b(e) {
                 className: N.SD,
                 children: [(0, n.jsx)(u.A, {
                     className: l()(N.XC, {
-                        [N.bX]: I
+                        [N.bX]: j
                     }),
-                    onSelectGIF: P,
+                    onSelectGIF: w,
                     headingColor: "text-subtle",
                     hideFavorites: !0
-                }), I && (0, n.jsx)(o.y$y, {
+                }), j && (0, n.jsx)(o.y$y, {
                     className: N.u1
                 }), R && $ && (0, n.jsx)(_.A, {
                     uploadType: E,
-                    analyticsSource: w,
                     showUpsell: !0,
                     className: N.Kt
                 })]

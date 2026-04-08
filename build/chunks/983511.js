@@ -31,9 +31,9 @@ var i = n(627968),
     y = n(788868),
     O = n(818348),
     R = n(985018),
-    P = n(362454);
+    L = n(362454);
 
-function L(e) {
+function P(e) {
     let {
         premiumSubscription: t,
         fractionalPremiumInfo: n,
@@ -70,9 +70,9 @@ function L(e) {
         title: u,
         actions: m,
         children: (0, i.jsxs)("div", {
-            className: P.rf,
+            className: L.rf,
             children: [l && (0, i.jsx)("div", {
-                className: P.OC
+                className: L.OC
             }), (0, i.jsx)("div", {
                 children: c
             })]
@@ -114,7 +114,7 @@ function G(e) {
         N && O.current()
     }, [N]);
     let {
-        premiumSubscriptionPlan: L,
+        premiumSubscriptionPlan: P,
         premiumGuildPlan: G
     } = (0, o.cf)([E.A], () => {
         let e = E.A.get(t.planId);
@@ -138,7 +138,7 @@ function G(e) {
         analyticsLocations: M,
         analyticsLocation: m.A.GUILD_BOOST_SLOT_CANCELLATION_MODAL_RENEWAL_INVOICE_PREVIEW
     });
-    if (null == w || null == L || null == G || null == U) return (0, i.jsx)(d.y$y, {});
+    if (null == w || null == P || null == G || null == U) return (0, i.jsx)(d.y$y, {});
     let V = t.items.some(e => {
             let {
                 planId: t
@@ -160,7 +160,7 @@ function G(e) {
         {
             interval: H,
             intervalCount: z
-        } = L,
+        } = P,
         Y = R.intl.format(R.t["0W23cu"], {
             endDate: w.subscriptionPeriodStart
         });
@@ -172,9 +172,9 @@ function G(e) {
             onClose: c
         }), (0, i.jsxs)(d.$mQ, {
             "data-migration-pending": !0,
-            className: P.rf,
+            className: L.rf,
             children: [null !== p && (0, i.jsx)("div", {
-                className: P.z3,
+                className: L.z3,
                 children: (0, i.jsx)(d.wx6, {
                     type: "critical",
                     children: p
@@ -182,7 +182,7 @@ function G(e) {
             }), (0, i.jsx)("div", {
                 children: Y
             }), (0, i.jsxs)(T.Yx, {
-                className: P.S,
+                className: L.S,
                 children: [(0, i.jsx)(T.Xd, {
                     children: R.intl.string(R.t.iqhIp4)
                 }), (0, i.jsx)(T.oR, {
@@ -190,7 +190,7 @@ function G(e) {
                         subscriptionCount: 1
                     }),
                     value: (0, I.CE)((0, I.$g)(F, t.currency), H, z),
-                    className: P.Au
+                    className: L.Au
                 }), null != k && k.length > 0 ? (0, i.jsxs)("div", {
                     children: [(0, i.jsx)(T.pK, {}), (0, i.jsx)(S.m0, {
                         premiumSubscription: t,
@@ -242,9 +242,9 @@ function M(e) {
         title: R.intl.string(R.t["fZzV/B"]),
         actions: d,
         children: (0, i.jsxs)("div", {
-            className: P.rf,
+            className: L.rf,
             children: [s && (0, i.jsx)("div", {
-                className: P.OC
+                className: L.OC
             }), (0, i.jsx)("div", {
                 children: R.intl.format(R.t["H+z0ns"], {
                     endDate: o
@@ -276,7 +276,7 @@ function U(e) {
     });
     else switch (x) {
         case 1:
-            t = (0, i.jsx)(L, {
+            t = (0, i.jsx)(P, {
                 premiumSubscription: r,
                 fractionalPremiumInfo: u,
                 isInventory: null == n.premiumGuildSubscription,

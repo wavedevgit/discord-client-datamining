@@ -1,6 +1,6 @@
 /** chunk id: 212614 params = (module,exports,require) **/
 n.d(t, {
-    A: () => _
+    A: () => m
 });
 var i = n(627968),
     l = n(732955),
@@ -11,12 +11,12 @@ var i = n(627968),
     d = n(220514),
     c = n(884392),
     u = n(985018);
-let _ = function(e) {
+let m = function(e) {
     let {
         quest: t,
         surface: n,
-        preClickCallback: _,
-        analyticsCtxQuestContent: m,
+        preClickCallback: m,
+        analyticsCtxQuestContent: _,
         analyticsCtxSourceQuestContent: h,
         analyticsCtxQuestContentPosition: p,
         analyticsCtxQuestContentRowIndex: g,
@@ -35,8 +35,8 @@ let _ = function(e) {
                 quest: t,
                 taskType: f.type,
                 size: A,
-                preClickCallback: _,
-                analyticsCtxQuestContent: m,
+                preClickCallback: m,
+                analyticsCtxQuestContent: _,
                 analyticsCtxSourceQuestContent: h,
                 analyticsCtxQuestContentPosition: p,
                 analyticsCtxQuestContentRowIndex: g
@@ -46,7 +46,7 @@ let _ = function(e) {
                 quest: t,
                 taskType: f.type,
                 size: A,
-                analyticsCtxQuestContent: m,
+                analyticsCtxQuestContent: _,
                 analyticsCtxSourceQuestContent: h,
                 analyticsCtxQuestContentPosition: p,
                 analyticsCtxQuestContentRowIndex: g,
@@ -57,7 +57,7 @@ let _ = function(e) {
                 quest: t,
                 taskType: f.type,
                 size: A,
-                analyticsCtxQuestContent: m,
+                analyticsCtxQuestContent: _,
                 analyticsCtxSourceQuestContent: h,
                 analyticsCtxQuestContentPosition: p,
                 analyticsCtxQuestContentRowIndex: g,
@@ -67,7 +67,7 @@ let _ = function(e) {
             return (0, i.jsx)(a.A, {
                 quest: t,
                 size: A,
-                analyticsCtxQuestContent: m,
+                analyticsCtxQuestContent: _,
                 analyticsCtxSourceQuestContent: h,
                 analyticsCtxQuestContentPosition: p,
                 analyticsCtxQuestContentRowIndex: g
@@ -76,7 +76,7 @@ let _ = function(e) {
             return (0, i.jsx)(s.A, {
                 quest: t,
                 size: A,
-                analyticsCtxQuestContent: m,
+                analyticsCtxQuestContent: _,
                 analyticsCtxSourceQuestContent: h,
                 analyticsCtxQuestContentPosition: p,
                 analyticsCtxQuestContentRowIndex: g

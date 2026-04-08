@@ -36,8 +36,8 @@ var a = l(627968),
     D = l(448362),
     O = l(71393),
     L = l(166403),
-    w = l(652215),
-    B = l(788868),
+    B = l(652215),
+    w = l(788868),
     V = l(985018),
     U = l(735499),
     G = l(681588);
@@ -103,16 +103,16 @@ let Y = {
         name: "Checkout Test Panel",
         id: "checkout-test-panel",
         component: () => {
-            let [e, t] = n.useState(B.pe.TIER_2), [l, o] = n.useState(null), d = (0, s.yK)([O.A], () => O.A.getGuildsArray()), [_] = (0, s.yK)([L.A], () => [L.A.getPremiumSubscription()]), E = d.map(e => ({
+            let [e, t] = n.useState(w.pe.TIER_2), [l, o] = n.useState(null), d = (0, s.yK)([O.A], () => O.A.getGuildsArray()), [_] = (0, s.yK)([L.A], () => [L.A.getPremiumSubscription()]), E = d.map(e => ({
                 id: e.id,
                 value: e,
                 label: e.name
             })), [C, j] = n.useState(E.length > 0 ? E[0].value : null), [S, A] = n.useState(""), [P, k] = n.useState({
-                plan_id: B.gD.PREMIUM_MONTH_TIER_2,
+                plan_id: w.gD.PREMIUM_MONTH_TIER_2,
                 gift: "true"
             }), V = "true" !== P.gift && null != _, [U, F] = n.useState(E.length > 0 ? E[0].value : null), {
                 analyticsLocations: H
-            } = (0, b.Ay)(x.A.PAYMENT_FLOW_TEST_PAGE), [$, Y] = n.useState(""), [z, q] = n.useState(w.dJq), {
+            } = (0, b.Ay)(x.A.PAYMENT_FLOW_TEST_PAGE), [$, Y] = n.useState(""), [z, q] = n.useState(B.dJq), {
                 balance: K,
                 isFetching: J,
                 error: X
@@ -120,7 +120,7 @@ let Y = {
                 isSubmitting: Z,
                 responseMessage: Q,
                 redeemVirtualCurrency: ee
-            } = (0, M.Q)(), [et, el] = n.useState(w.dJq), [ea, en] = n.useState(""), [er, ei] = n.useState(w.dJq);
+            } = (0, M.Q)(), [et, el] = n.useState(B.dJq), [ea, en] = n.useState(""), [er, ei] = n.useState(B.dJq);
             return (0, a.jsx)(b.f5, {
                 value: H,
                 children: (0, a.jsx)(p.IpV, {
@@ -137,15 +137,15 @@ let Y = {
                                 value: e,
                                 options: [{
                                     id: "tier_2",
-                                    value: B.pe.TIER_2,
+                                    value: w.pe.TIER_2,
                                     label: "Nitro"
                                 }, {
                                     id: "tier_1",
-                                    value: B.pe.TIER_1,
+                                    value: w.pe.TIER_1,
                                     label: "Nitro Classic"
                                 }, {
                                     id: "tier_0",
-                                    value: B.pe.TIER_0,
+                                    value: w.pe.TIER_0,
                                     label: "Nitro Basic"
                                 }, {
                                     id: "none",
@@ -170,15 +170,15 @@ let Y = {
                                 value: l,
                                 options: [{
                                     id: "tier_2",
-                                    value: B.pe.TIER_2,
+                                    value: w.pe.TIER_2,
                                     label: "Nitro"
                                 }, {
                                     id: "tier_1",
-                                    value: B.pe.TIER_1,
+                                    value: w.pe.TIER_1,
                                     label: "Nitro Classic"
                                 }, {
                                     id: "tier_0",
-                                    value: B.pe.TIER_0,
+                                    value: w.pe.TIER_0,
                                     label: "Nitro Basic"
                                 }, {
                                     id: "none",
@@ -235,7 +235,7 @@ let Y = {
                                         text: "Open Link",
                                         disabled: S.length < 1,
                                         onClick: () => {
-                                            window.open(w.BVt.BILLING_PROMOTION_REDEMPTION(S))
+                                            window.open(B.BVt.BILLING_PROMOTION_REDEMPTION(S))
                                         }
                                     })
                                 })]
@@ -247,15 +247,15 @@ let Y = {
                                 value: P.plan_id,
                                 options: [{
                                     id: "tier_2",
-                                    value: B.gD.PREMIUM_MONTH_TIER_2,
+                                    value: w.gD.PREMIUM_MONTH_TIER_2,
                                     label: "Nitro"
                                 }, {
                                     id: "tier_1",
-                                    value: B.gD.PREMIUM_MONTH_TIER_1,
+                                    value: w.gD.PREMIUM_MONTH_TIER_1,
                                     label: "Nitro Classic"
                                 }, {
                                     id: "tier_0",
-                                    value: B.gD.PREMIUM_MONTH_TIER_0,
+                                    value: w.gD.PREMIUM_MONTH_TIER_0,
                                     label: "Nitro Basic"
                                 }],
                                 onSelectionChange: e => {
@@ -295,7 +295,7 @@ let Y = {
                                 text: "Open Link",
                                 disabled: V,
                                 onClick: () => {
-                                    window.open(w.BVt.BILLING_PREMIUM_SUBSCRIBE + "?" + r.stringify({
+                                    window.open(B.BVt.BILLING_PREMIUM_SUBSCRIBE + "?" + r.stringify({
                                         ...P
                                     }))
                                 }
@@ -381,9 +381,9 @@ let Y = {
                                     openPremiumPaymentModal: () => !0,
                                     analyticsLocations: [],
                                     analyticsLocationObject: {
-                                        page: w.liQ.IN_APP
+                                        page: B.liQ.IN_APP
                                     },
-                                    context: w.BRT.APP
+                                    context: B.BRT.APP
                                 })
                             })]
                         }), (0, a.jsx)(p.cGx, {}), (0, a.jsx)(p.BJc, {

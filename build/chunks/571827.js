@@ -1,80 +1,71 @@
 /** chunk id: 571827 params = (module,exports,require) **/
 n.d(t, {
-    A: () => u
+    A: () => d
 });
 var r = n(627968);
 n(64700);
 var i = n(575593),
     s = n(397927),
-    l = n(688810),
-    a = n(404374),
-    c = n(788868),
-    o = n(985018),
-    d = n(238333);
+    l = n(404374),
+    a = n(788868),
+    c = n(985018),
+    o = n(238333);
 
-function u(e) {
+function d(e) {
     let {
         itemType: t,
-        onClose: u
-    } = e, {
-        newestAnalyticsLocation: m
-    } = (0, l.Ay)(), p = t === i.R.AVATAR_DECORATION ? c.e.AVATAR_DECORATION_MODAL_UPSELL : t === i.R.PROFILE_EFFECT ? c.e.PROFILE_EFFECT_MODAL_UPSELL : t === i.R.NAMEPLATE ? c.e.NAMEPLATE_MODAL_UPSELL : null;
-    return null == p ? null : (0, r.jsxs)("div", {
-        className: d.hc,
+        onClose: d
+    } = e, u = t === i.R.AVATAR_DECORATION ? a.e.AVATAR_DECORATION_MODAL_UPSELL : t === i.R.PROFILE_EFFECT ? a.e.PROFILE_EFFECT_MODAL_UPSELL : t === i.R.NAMEPLATE ? a.e.NAMEPLATE_MODAL_UPSELL : null;
+    return null == u ? null : (0, r.jsxs)("div", {
+        className: o.hc,
         children: [(0, r.jsx)(s.tvc, {
-            className: d.ax,
+            className: o.ax,
             size: "md",
-            color: a.k0.PREMIUM_TIER_2
+            color: l.k0.PREMIUM_TIER_2
         }), (0, r.jsx)(s.Text, {
-            className: d.cf,
+            className: o.cf,
             variant: "text-md/medium",
-            children: p === c.e.AVATAR_DECORATION_MODAL_UPSELL ? o.intl.format(o.t["aFR/EI"], {
+            children: u === a.e.AVATAR_DECORATION_MODAL_UPSELL ? c.intl.format(c.t["aFR/EI"], {
                 onClick: () => {
                     (0, s.mMO)(async () => {
                         let {
                             default: e
-                        } = await Promise.all([n.e("14138"), n.e("49924"), n.e("59701"), n.e("28330")]).then(n.bind(n, 948265));
+                        } = await Promise.all([n.e("81028"), n.e("64864"), n.e("49004")]).then(n.bind(n, 948265));
                         return t => (0, r.jsx)(e, {
-                            premiumUpsellType: p,
-                            title: o.intl.string(o.t.JI7uhc),
-                            body: o.intl.string(o.t["5XvsdZ"]),
-                            glowUp: o.intl.string(o.t["5XvsdZ"]),
-                            analyticsSource: m,
-                            onSecondaryClick: u,
+                            premiumUpsellType: u,
+                            title: c.intl.string(c.t.JI7uhc),
+                            body: c.intl.string(c.t["5XvsdZ"]),
+                            onSecondaryClick: d,
                             ...t
                         })
                     })
                 }
-            }) : p === c.e.PROFILE_EFFECT_MODAL_UPSELL ? o.intl.format(o.t.eWNONM, {
+            }) : u === a.e.PROFILE_EFFECT_MODAL_UPSELL ? c.intl.format(c.t.eWNONM, {
                 onClick: () => {
                     (0, s.mMO)(async () => {
                         let {
                             default: e
-                        } = await Promise.all([n.e("14138"), n.e("49924"), n.e("59701"), n.e("28330")]).then(n.bind(n, 948265));
+                        } = await Promise.all([n.e("81028"), n.e("64864"), n.e("49004")]).then(n.bind(n, 948265));
                         return t => (0, r.jsx)(e, {
-                            premiumUpsellType: p,
-                            title: o.intl.string(o.t.sYm15X),
-                            body: o.intl.string(o.t["Hza+Bu"]),
-                            glowUp: o.intl.string(o.t["Hza+Bu"]),
-                            analyticsSource: m,
-                            onSecondaryClick: u,
+                            premiumUpsellType: u,
+                            title: c.intl.string(c.t.sYm15X),
+                            body: c.intl.string(c.t["Hza+Bu"]),
+                            onSecondaryClick: d,
                             ...t
                         })
                     })
                 }
-            }) : p === c.e.NAMEPLATE_MODAL_UPSELL ? o.intl.format(o.t.G6b8TF, {
+            }) : u === a.e.NAMEPLATE_MODAL_UPSELL ? c.intl.format(c.t.G6b8TF, {
                 onClick: () => {
                     (0, s.mMO)(async () => {
                         let {
                             default: e
-                        } = await Promise.all([n.e("14138"), n.e("49924"), n.e("59701"), n.e("28330")]).then(n.bind(n, 948265));
+                        } = await Promise.all([n.e("81028"), n.e("64864"), n.e("49004")]).then(n.bind(n, 948265));
                         return t => (0, r.jsx)(e, {
-                            premiumUpsellType: p,
-                            title: o.intl.string(o.t.k7UN4k),
-                            body: o.intl.string(o.t["0/QPxO"]),
-                            glowUp: o.intl.string(o.t["0/QPxO"]),
-                            analyticsSource: m,
-                            onSecondaryClick: u,
+                            premiumUpsellType: u,
+                            title: c.intl.string(c.t.k7UN4k),
+                            body: c.intl.string(c.t["0/QPxO"]),
+                            onSecondaryClick: d,
                             ...t
                         })
                     })

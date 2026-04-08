@@ -11,8 +11,8 @@ var i = n(627968),
     d = n(353411),
     c = n(882171),
     u = n(206589),
-    _ = n(768349),
-    m = n(985018),
+    m = n(768349),
+    _ = n(985018),
     h = n(71747);
 
 function p(e) {
@@ -30,7 +30,7 @@ function p(e) {
     } = e, v = (0, u.w)(f, g), b = (0, d.Gq)(g, n.author, "Invite Embed"), T = l.useMemo(() => {
         let e = [];
         return v || e.push({
-            label: b.label ?? m.intl.string(m.t.VJlc0S),
+            label: b.label ?? _.intl.string(_.t.VJlc0S),
             trackingArea: a.kY.SYNC,
             onClick: () => {
                 b.onClick()
@@ -38,24 +38,24 @@ function p(e) {
             disabled: b.disabled,
             disabledReason: b.disabled ? b.tooltip : void 0
         }), e
-    }, [v, b]), y = null != g && null != g.details && null != g.state ? m.intl.formatToPlainString(m.t.JCvHtx, {
+    }, [v, b]), N = null != g && null != g.details && null != g.state ? _.intl.formatToPlainString(_.t.JCvHtx, {
         track: g.details,
         artist: g.state
-    }) : t.name, N = g?.timestamps?.start ?? g?.created_at, S = l.useMemo(() => null != N ? (0, i.jsxs)("div", {
+    }) : t.name, y = g?.timestamps?.start ?? g?.created_at, S = l.useMemo(() => null != y ? (0, i.jsxs)("div", {
         className: h.Ym,
         children: [(0, i.jsx)(s.T7G, {
             size: "xxs",
             color: "currentColor"
         }), (0, i.jsx)(o.z, {
             entry: {
-                start: N,
+                start: y,
                 end: g?.timestamps?.end
             },
             textColor: "currentColor",
             textTabularNumbers: !1,
             textFontCode: !1
         })]
-    }) : null, [N, g?.timestamps?.end]), j = l.useMemo(() => (0, i.jsxs)("div", {
+    }) : null, [y, g?.timestamps?.end]), j = l.useMemo(() => (0, i.jsxs)("div", {
         className: h.pq,
         children: [(0, i.jsx)(s.Text, {
             variant: "text-xs/normal",
@@ -67,14 +67,14 @@ function p(e) {
     }), [S, A, x]);
     return (0, i.jsx)(r.h, {
         header: p,
-        title: y,
+        title: N,
         iconSrc: (0, c.A)(g, t.id) ?? void 0,
         info: j,
         actions: T,
         onClickContent: C,
         trackingConfig: {
             id: t.id,
-            linkType: _.J.RICH_PRESENCE_INVITE,
+            linkType: m.J.RICH_PRESENCE_INVITE,
             onView: E,
             referrerId: n.author.id,
             guildId: I,

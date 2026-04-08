@@ -1,6 +1,6 @@
 /** chunk id: 442734 params = (module,exports,require) **/
 n.d(t, {
-    e: () => _
+    e: () => m
 });
 var i = n(627968),
     l = n(827734),
@@ -12,21 +12,21 @@ var i = n(627968),
     c = n(985018),
     u = n(247874);
 
-function _(e) {
+function m(e) {
     let {
         onClick: t,
         questId: n,
-        canUseQuestOrbMultiplier: _
-    } = e, m = (0, a.ZP)(n), h = (0, s.rdh)(l.A.colors.EXPRESSIVE_GRADIENT_NITRO_PINK_START, d.NJ8.DARK).hex(), p = (0, s.rdh)(l.A.colors.EXPRESSIVE_GRADIENT_TENURE_BADGE_DIAMOND_END, d.NJ8.DARK).hex(), g = (0, s.rdh)(l.A.colors.BACKGROUND_BASE_LOWEST, d.NJ8.DARK).hex(), A = (0, r.cb)(h, .5), x = (0, r.cb)(p, .5);
-    if (null == m) return null;
-    let f = _ ? c.intl.formatToPlainString(c.t.l2UfLG, {
-        bonusOrbMultiplier: m
+        canUseQuestOrbMultiplier: m
+    } = e, _ = (0, a.ZP)(n), h = (0, s.rdh)(l.A.colors.EXPRESSIVE_GRADIENT_NITRO_PINK_START, d.NJ8.DARK).hex(), p = (0, s.rdh)(l.A.colors.EXPRESSIVE_GRADIENT_TENURE_BADGE_DIAMOND_END, d.NJ8.DARK).hex(), g = (0, s.rdh)(l.A.colors.BACKGROUND_BASE_LOWEST, d.NJ8.DARK).hex(), A = (0, r.cb)(h, .5), x = (0, r.cb)(p, .5);
+    if (null == _) return null;
+    let f = m ? c.intl.formatToPlainString(c.t.l2UfLG, {
+        bonusOrbMultiplier: _
     }) : c.intl.formatToPlainString(c.t["G+mKoo"], {
-        bonusOrbMultiplier: m
+        bonusOrbMultiplier: _
     });
     return (0, i.jsx)(s.DUT, {
         onClick: () => {
-            (0, o.gC)(m, _), t?.()
+            (0, o.gC)(_, m), t?.()
         },
         "aria-label": f,
         children: (0, i.jsxs)("div", {

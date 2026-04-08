@@ -1,73 +1,73 @@
 /** chunk id: 447215 params = (module,exports,require) **/
 i.d(t, {
-    P: () => E
+    P: () => T
 });
 var n = i(627968),
-    l = i(64700),
-    a = i(349288),
-    s = i(473193),
+    a = i(64700),
+    l = i(349288),
+    o = i(473193),
     r = i(397927),
-    o = i(793574),
-    u = i(688810),
+    s = i(793574),
+    c = i(688810),
     d = i(609425),
-    c = i(922301),
+    u = i(922301),
     h = i(750112),
     m = i(73392),
     p = i(676608),
     g = i(342296),
-    A = i(734057),
+    _ = i(734057),
     f = i(841549),
-    T = i(560936);
+    A = i(560936);
 
-function E(e) {
+function T(e) {
     let {
         user: t,
         channelId: i,
-        guildId: E,
-        messageId: x,
-        stopPropagation: N = !1,
-        ariaLabel: I,
-        enableDisplayNameStyles: v = !1
-    } = e, j = l.useRef(null), {
-        analyticsLocations: R
-    } = (0, u.Ay)(o.A.USERNAME), C = (0, p.Ay)(E, t?.id), S = (0, d.A)({
+        guildId: T,
+        messageId: b,
+        stopPropagation: E = !1,
+        ariaLabel: x,
+        enableDisplayNameStyles: I = !1
+    } = e, N = a.useRef(null), {
+        analyticsLocations: j
+    } = (0, c.Ay)(s.A.USERNAME), R = (0, p.Ay)(T, t?.id), v = (0, d.A)({
         userId: t?.id,
-        guildId: E
-    }), b = (0, m.a)({
-        displayNameStyles: S
-    }), y = l.useCallback(e => {
-        let n = A.A.getChannel(i);
+        guildId: T
+    }), C = (0, m.a)({
+        displayNameStyles: v
+    }), S = a.useCallback(e => {
+        let n = _.A.getChannel(i);
         null != n && null != t && (0, f.wQ)(e, t, n)
-    }, [t, i]), _ = l.useContext(s.C);
-    return (0, T.A)({
-        subscribeToGroupId: x,
+    }, [t, i]), y = a.useContext(o.C);
+    return (0, A.A)({
+        subscribeToGroupId: b,
         authorId: t?.id,
-        shouldSubscribe: v && null != S && null == E
-    }), l.useCallback(e => (l, s) => {
-        let o = e?.colorStrings,
-            d = C && null != o && null != o.primaryColor && null != o.secondaryColor,
+        shouldSubscribe: I && null != v && null == T
+    }), a.useCallback(e => (a, o) => {
+        let s = e?.colorStrings,
+            d = R && null != s && null != s.primaryColor && null != s.secondaryColor,
             m = (t, i) => {
-                if (!v || null == S || null != E) return (0, n.jsx)(r.V30, {
+                if (!I || null == v || null != T) return (0, n.jsx)(r.V30, {
                     ...null != t ? t : {},
-                    ref: j,
-                    onContextMenu: y,
-                    name: (0, r.Oer)(l) ?? "",
+                    ref: N,
+                    onContextMenu: S,
+                    name: (0, r.Oer)(a) ?? "",
                     colorString: e?.colorString ?? null,
                     roleName: e?.colorRoleName,
-                    colorStrings: d ? o : null,
-                    "aria-label": I,
-                    className: b
+                    colorStrings: d ? s : null,
+                    "aria-label": x,
+                    className: C
                 });
                 {
-                    let e = _?.animate || i?.isShown ? c.G.ANIMATED : c.G.PLAIN;
-                    return (0, n.jsx)(a.Anchor, {
+                    let e = y?.animate || i?.isShown ? u.G.ANIMATED : u.G.PLAIN;
+                    return (0, n.jsx)(l.Anchor, {
                         ...null != t ? t : {},
-                        ref: j,
-                        onContextMenu: y,
-                        "aria-label": I,
+                        ref: N,
+                        onContextMenu: S,
+                        "aria-label": x,
                         children: (0, n.jsx)(h.A, {
-                            userName: (0, r.Oer)(l) ?? "",
-                            displayNameStyles: S,
+                            userName: (0, r.Oer)(a) ?? "",
+                            displayNameStyles: v,
                             effectDisplayType: e,
                             shouldUnderlineOnHover: !0,
                             loop: !0
@@ -75,14 +75,14 @@ function E(e) {
                     })
                 }
             };
-        return (0, n.jsx)(u.f5, {
-            value: R,
+        return (0, n.jsx)(c.f5, {
+            value: j,
             children: null != t ? (0, n.jsx)(g.A, {
-                targetElementRef: j,
+                targetElementRef: N,
                 user: t,
-                guildId: E,
+                guildId: T,
                 channelId: i,
-                messageId: x,
+                messageId: b,
                 roleId: e?.colorRoleId,
                 clickTrap: !0,
                 children: (e, t) => {
@@ -92,12 +92,12 @@ function E(e) {
                     } = e;
                     return m({
                         onClick: e => {
-                            N && null != e && e.stopPropagation(), i(e)
+                            E && null != e && e.stopPropagation(), i(e)
                         },
                         ...n
                     }, t)
                 }
             }) : m(void 0, void 0)
-        }, s)
-    }, [R, t, i, E, x, y, N, I, C, b, _?.animate, S, v])
+        }, o)
+    }, [j, t, i, T, b, S, E, x, R, C, y?.animate, v, I])
 }

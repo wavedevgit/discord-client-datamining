@@ -30,7 +30,7 @@ let m = l.forwardRef(function(e, t) {
         skuProductLine: C
     } = x, {
         trackUserProfileWishlistAction: N
-    } = (0, u.NJ)(), T = s ? _.ho : _.C8, S = g ? _.pr : _.Nr, b = null != p && p > 0, v = b ? A.intl.string(A.t.TxBQzD) : (0, d.x2)(x), y = (0, i.jsxs)(o.DUT, {
+    } = (0, u.NJ)(), T = s ? _.ho : _.C8, S = g ? _.pr : _.Nr, b = null != p && p > 0, y = b ? A.intl.string(A.t.TxBQzD) : (0, d.x2)(x), v = (0, i.jsxs)(o.DUT, {
         onClick: () => {
             n(), N({
                 action: b ? "PRESS_WISHLIST_BREADCRUMB_OVERFLOW_CARD" : "PRESS_WISHLIST_BREADCRUMB_CARD",
@@ -42,7 +42,7 @@ let m = l.forwardRef(function(e, t) {
         className: a()(S, {
             [_.ax]: E === h.Y.SMALL
         }),
-        "aria-label": v,
+        "aria-label": y,
         innerRef: t,
         children: [(0, i.jsx)("div", {
             className: T,
@@ -62,6 +62,6 @@ let m = l.forwardRef(function(e, t) {
         assetSize: c.Q8,
         title: l.title,
         body: l.body ?? "",
-        children: y
+        children: v
     })
 })

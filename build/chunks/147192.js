@@ -1,38 +1,38 @@
 /** chunk id: 147192 params = (module,exports,require) **/
 n.d(t, {
-    Ay: () => D,
-    aW: () => k,
+    Ay: () => P,
+    aW: () => L,
     rj: () => O
 }), n(321073);
-var a = n(627968),
-    i = n(64700),
-    r = n(503698),
-    s = n.n(r),
-    o = n(735438),
-    l = n.n(o),
+var i = n(627968),
+    l = n(64700),
+    s = n(503698),
+    a = n.n(s),
+    r = n(735438),
+    o = n.n(r),
     c = n(311907),
     d = n(827734),
     u = n(397927),
-    _ = n(657299),
+    h = n(657299),
     m = n(770178),
-    p = n(84),
-    f = n(587895),
-    b = n(144945),
-    h = n(912996),
-    g = n(629016),
-    A = n(994500),
+    A = n(84),
+    p = n(587895),
+    g = n(144945),
+    f = n(912996),
+    _ = n(629016),
+    E = n(994500),
     x = n(461213),
-    T = n(741961),
-    C = n(287809),
-    I = n(531685),
-    S = n(954571),
-    E = n(403362),
-    y = n(562153),
-    v = n(652215),
-    j = n(985018),
-    R = n(152076);
-let M = [];
-class N extends i.PureComponent {
+    C = n(741961),
+    S = n(287809),
+    T = n(531685),
+    N = n(954571),
+    I = n(403362),
+    v = n(562153),
+    y = n(652215),
+    b = n(985018),
+    j = n(152076);
+let R = [];
+class M extends l.PureComponent {
     state = {
         fadeIn: !1
     };
@@ -49,10 +49,10 @@ class N extends i.PureComponent {
     }
     logShownEventIfNeeded() {
         let e = this.props.activity.application_id;
-        null != e && -1 === M.indexOf(e) && (S.default.track(v.HAw.SHOW_TUTORIAL, {
+        null != e && -1 === R.indexOf(e) && (N.default.track(y.HAw.SHOW_TUTORIAL, {
             tutorial: "activity-invite-nux-inline",
             application_id: e
-        }), M.push(e))
+        }), R.push(e))
     }
     componentWillUnmount() {
         null !== this.timeout && clearTimeout(this.timeout)
@@ -61,20 +61,20 @@ class N extends i.PureComponent {
         let {
             activity: e
         } = this.props;
-        null != e && null != e.application_id && _.A.dismissForApplicationId(e.application_id)
+        null != e && null != e.application_id && h.A.dismissForApplicationId(e.application_id)
     };
     render() {
         let {
             activity: e
         } = this.props;
-        return (0, a.jsxs)("div", {
-            className: s()(R.F4, {
-                [R.gV]: this.state.fadeIn
+        return (0, i.jsxs)("div", {
+            className: a()(j.F4, {
+                [j.gV]: this.state.fadeIn
             }),
-            children: [(0, a.jsx)("div", {
-                className: R.GZ
-            }), (0, a.jsx)("span", {
-                children: j.intl.format(j.t["i/MoCt"], {
+            children: [(0, i.jsx)("div", {
+                className: j.GZ
+            }), (0, i.jsx)("span", {
+                children: b.intl.format(b.t["i/MoCt"], {
                     game: e.name,
                     dismissOnClick: this.handleDismissInviteEducation
                 })
@@ -83,112 +83,112 @@ class N extends i.PureComponent {
     }
 }
 
-function w(e) {
+function D(e) {
     let {
         activityInviteEducationActivity: t,
         isFocused: n,
-        typingUsers: r,
-        className: o,
-        channel: l,
+        typingUsers: s,
+        className: r,
+        channel: o,
         isThreadCreation: c,
         renderDots: d,
-        isInTextChannel: _ = !1
+        isInTextChannel: h = !1
     } = e, {
-        rateLimitPerUser: p
-    } = l, f = i.useRef(null), h = i.useRef(null), [g, A] = i.useState(!1), x = i.useCallback(() => {
-        if (null == f.current || null == h.current) return;
-        let e = f.current.getBoundingClientRect();
-        h.current.scrollWidth + 48 > e.width ? A(!0) : A(!1)
+        rateLimitPerUser: A
+    } = o, p = l.useRef(null), f = l.useRef(null), [_, E] = l.useState(!1), x = l.useCallback(() => {
+        if (null == p.current || null == f.current) return;
+        let e = p.current.getBoundingClientRect();
+        f.current.scrollWidth + 48 > e.width ? E(!0) : E(!1)
     }, []);
-    if ((0, m.g)(f, x, [], {
-            enabled: _
-        }), (0, m.g)(h, x, [], {
-            enabled: _
-        }), 0 === r.length && !(p > 0)) return null != t ? (0, a.jsx)(N, {
+    if ((0, m.g)(p, x, [], {
+            enabled: h
+        }), (0, m.g)(f, x, [], {
+            enabled: h
+        }), 0 === s.length && !(A > 0)) return null != t ? (0, i.jsx)(M, {
         activity: t,
         isFocused: n
     }) : null;
-    let [T, C, I] = r, S = "";
-    1 === r.length ? S = j.intl.format(j.t.lJ9sZX, {
-        a: T
-    }) : 2 === r.length ? S = j.intl.format(j.t.rB0CUa, {
-        a: T,
-        b: C
-    }) : 3 === r.length ? S = j.intl.format(j.t.StKThj, {
-        a: T,
-        b: C,
-        c: I
-    }) : r.length > 3 && (S = j.intl.format(j.t.Q8lUnE, {}));
-    let E = g && r.length > 0 && r.length <= 3 ? j.intl.format(j.t["qD/0qZ"], {}) : S;
-    return (0, a.jsxs)("div", {
-        className: s()(R.IW, {
+    let [C, S, T] = s, N = "";
+    1 === s.length ? N = b.intl.format(b.t.lJ9sZX, {
+        a: C
+    }) : 2 === s.length ? N = b.intl.format(b.t.rB0CUa, {
+        a: C,
+        b: S
+    }) : 3 === s.length ? N = b.intl.format(b.t.StKThj, {
+        a: C,
+        b: S,
+        c: T
+    }) : s.length > 3 && (N = b.intl.format(b.t.Q8lUnE, {}));
+    let I = _ && s.length > 0 && s.length <= 3 ? b.intl.format(b.t["qD/0qZ"], {}) : N;
+    return (0, i.jsxs)("div", {
+        className: a()(j.IW, {
             "stop-animation": !n,
-            [R.Il]: _
-        }, o),
-        children: [(0, a.jsxs)("div", {
-            className: R.y5,
-            ref: f,
-            children: [r.length > 0 && !1 !== d && (0, a.jsx)(u.nvX, {
-                className: R.gO,
+            [j.Il]: h
+        }, r),
+        children: [(0, i.jsxs)("div", {
+            className: j.y5,
+            ref: p,
+            children: [s.length > 0 && !1 !== d && (0, i.jsx)(u.nvX, {
+                className: j.gO,
                 dotRadius: 3.5,
                 themed: !0
-            }), (0, a.jsx)("span", {
-                className: R.Qq,
+            }), (0, i.jsx)("span", {
+                className: j.Qq,
                 "aria-live": "polite",
                 "aria-atomic": !0,
-                children: E
-            }), (0, a.jsx)("span", {
-                className: R.Qq,
+                children: I
+            }), (0, i.jsx)("span", {
+                className: j.Qq,
                 style: {
                     position: "absolute",
                     visibility: "hidden"
                 },
                 "aria-hidden": !0,
-                ref: h,
-                children: S
+                ref: f,
+                children: N
             })]
-        }), (0, a.jsx)(b.A, {
-            channel: l,
+        }), (0, i.jsx)(g.A, {
+            channel: o,
             isThreadCreation: c
         })]
     })
 }
 
 function O(e) {
-    let t = (0, c.bG)([T.A], () => T.A.getTypingUsers(e.id)),
-        n = (0, c.bG)([C.default], () => C.default.getCurrentUser());
-    return l()(t).keys().filter(e => e !== n?.id).reject(e => A.A.isBlockedOrIgnored(e)).map(e => C.default.getUser(e)).filter(E.Vq).map(t => y.Ay.getName(e.guild_id, e.id, t)).value()
+    let t = (0, c.bG)([C.A], () => C.A.getTypingUsers(e.id)),
+        n = (0, c.bG)([S.default], () => S.default.getCurrentUser());
+    return o()(t).keys().filter(e => e !== n?.id).reject(e => E.A.isBlockedOrIgnored(e)).map(e => S.default.getUser(e)).filter(I.Vq).map(t => v.Ay.getName(e.guild_id, e.id, t)).value()
 }
 
-function k(e) {
+function L(e) {
     let t = (0, c.bG)([x.A], () => x.A.findActivity(e => null != e.application_id));
-    return (0, c.bG)([h.A, f.A, A.A, g.A], () => (0, p.A)({
+    return (0, c.bG)([f.A, p.A, E.A, _.A], () => (0, A.A)({
         channel: e,
         activity: t,
-        ActivityInviteEducationStore: h.A,
-        ApplicationStore: f.A,
-        RelationshipStore: A.A,
-        GamePartyStore: g.A
+        ActivityInviteEducationStore: f.A,
+        ApplicationStore: p.A,
+        RelationshipStore: E.A,
+        GamePartyStore: _.A
     })) ? t : null
 }
 
-function D(e) {
+function P(e) {
     let {
         channel: t,
         isThreadCreation: n = !1,
-        ...i
-    } = e, r = O(t), s = {
-        ...i,
+        ...l
+    } = e, s = O(t), a = {
+        ...l,
         baseTextColor: (0, u.rdh)(d.A.colors.INTERACTIVE_TEXT_DEFAULT).hex(),
         activeTextColor: (0, u.rdh)(d.A.colors.INTERACTIVE_TEXT_DEFAULT).hex(),
-        activityInviteEducationActivity: k(t),
-        typingUsers: n ? [] : r,
-        isFocused: (0, c.bG)([I.A], () => I.A.isFocused()),
+        activityInviteEducationActivity: L(t),
+        typingUsers: n ? [] : s,
+        isFocused: (0, c.bG)([T.A], () => T.A.isFocused()),
         guildId: t.guild_id,
         channel: t,
         isThreadCreation: n
     };
-    return (0, a.jsx)(w, {
-        ...s
+    return (0, i.jsx)(D, {
+        ...a
     })
 }

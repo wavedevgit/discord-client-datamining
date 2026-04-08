@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     a = n(64700),
     r = n(311907),
-    l = n(397927),
-    s = n(47167),
+    s = n(397927),
+    l = n(47167),
     o = n(734057),
     d = n(71393),
     c = n(383501),
@@ -14,24 +14,24 @@ var i = n(627968),
     _ = n(287809),
     h = n(256415),
     m = n(810412),
-    f = n(1193),
-    p = n(129537),
-    g = n(412477),
+    p = n(1193),
+    g = n(129537),
+    f = n(412477),
     A = n(651813),
     x = n(320165),
     I = n(121914),
     E = n(197043),
     b = n(919843),
     v = n(652215),
-    S = n(822889),
-    C = n(985018),
+    C = n(822889),
+    S = n(985018),
     y = n(226381);
 
 function T(e) {
     let {
         dragStart: t,
         dragging: n
-    } = e, [T, N] = (0, r.bG)([f.A], () => f.A.getSessionEntries()), w = (0, r.bG)([f.A], () => f.A.getSelectedChannelId()), L = (0, r.bG)([f.A], () => f.A.getVoiceChatMinimized()), j = (0, r.bG)([o.A], () => null != w ? o.A.getChannel(w) ?? null : null, [w]);
+    } = e, [T, N] = (0, r.bG)([p.A], () => p.A.getSessionEntries()), w = (0, r.bG)([p.A], () => p.A.getSelectedChannelId()), L = (0, r.bG)([p.A], () => p.A.getVoiceChatMinimized()), j = (0, r.bG)([o.A], () => null != w ? o.A.getChannel(w) ?? null : null, [w]);
     a.useEffect(() => {
         null == w || null == j && (0, b.b)(w)
     }, [j, w]);
@@ -44,8 +44,8 @@ function T(e) {
             return e
         }, [R, P, N]),
         {
-            shownUserIds: k,
-            contentInventoryIds: M
+            shownUserIds: M,
+            contentInventoryIds: k
         } = (0, r.bG)([], () => (function(e) {
             let t = new Set,
                 n = new Set;
@@ -69,8 +69,8 @@ function T(e) {
                 contentInventoryIds: n
             }
         })(D), [D]),
-        G = (0, m.Dk)(() => k, [k]),
-        z = (0, m.Dk)(() => M, [M]);
+        G = (0, m.Dk)(() => M, [M]),
+        z = (0, m.Dk)(() => k, [k]);
     a.useEffect(() => {
         (0 !== G.size || 0 !== z.size) && (0, m.Y)(v.uss.TEXT_CHAT_V3, {
             locked: h.default.isInstanceLocked(),
@@ -80,7 +80,7 @@ function T(e) {
         })
     }, [G, z]);
     let U = (0, r.bG)([_.default], () => (0, A.j)(j, _.default)),
-        V = (0, r.bG)([_.default, u.A], () => null == j ? C.intl.string(S.default.uhJexs) : (0, s.m1)(j, _.default, u.A), [j]),
+        V = (0, r.bG)([_.default, u.A], () => null == j ? S.intl.string(C.default.uhJexs) : (0, l.m1)(j, _.default, u.A), [j]),
         F = (0, r.bG)([o.A], () => {
             if (null != P && null != o.A.getChannel(P)) return !0;
             if (0 === N) return !1;
@@ -93,11 +93,11 @@ function T(e) {
         className: y.kL,
         children: [(0, i.jsx)("nav", {
             className: y.pz,
-            "aria-label": C.intl.string(S.default["2yFtJ1"]),
+            "aria-label": S.intl.string(C.default["2yFtJ1"]),
             onMouseDown: e => {
-                0 === e.button && t(p.P.MOVE, e.clientX, e.clientY)
+                0 === e.button && t(g.P.MOVE, e.clientX, e.clientY)
             },
-            children: (0, i.jsxs)(l.d_W, {
+            children: (0, i.jsxs)(s.d_W, {
                 children: [null != P ? (0, i.jsxs)(i.Fragment, {
                     children: [(0, i.jsx)(I.g, {
                         channelId: P,
@@ -124,9 +124,9 @@ function T(e) {
                 selectedChannelId: w
             })]
         }) : null]
-    }) : (0, i.jsx)(g.g, {
-        emptyText: C.intl.string(S.default["xpv/t5"]),
-        icon: l.oyn
+    }) : (0, i.jsx)(f.g, {
+        emptyText: S.intl.string(C.default["xpv/t5"]),
+        icon: s.oyn
     })
 }
 let N = a.memo(function(e) {

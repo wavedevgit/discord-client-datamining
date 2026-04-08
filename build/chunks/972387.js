@@ -1,22 +1,22 @@
 /** chunk id: 972387 params = (module,exports,require) **/
 n.d(t, {
-    A: () => h
+    A: () => c
 });
 var i = n(73153),
     l = n(846293),
-    s = n(159001),
-    a = n(960736),
-    r = n(253932),
-    o = n(954571),
-    d = n(4274),
-    c = n(115063),
-    u = n(652215);
-let h = {
+    a = n(159001),
+    r = n(960736),
+    o = n(253932),
+    d = n(954571),
+    _ = n(4274),
+    u = n(115063),
+    s = n(652215);
+let c = {
     acceptInvite(e, t) {
         let n = l.Ay.getInviteContext("Desktop Invite Modal", e),
-            o = (0, a.tJ)(),
-            u = (0, a.Z1)(),
-            h = (0, a.N9)();
+            d = (0, r.tJ)(),
+            s = (0, r.Z1)(),
+            c = (0, r.N9)();
         l.Ay.acceptInvite({
             inviteKey: e.code,
             context: {
@@ -30,53 +30,53 @@ let h = {
             }
         }).then(() => {
             if (null != e.guild) {
-                if (u) {
-                    if (r.$s.getSetting().includes(e.guild.id)) {
-                        let t = new Set((0, c.Tb)());
-                        t.delete(e.guild.id), r.$s.updateSetting(Array.from(t))
+                if (s) {
+                    if (o.$s.getSetting().includes(e.guild.id)) {
+                        let t = new Set((0, u.Tb)());
+                        t.delete(e.guild.id), o.$s.updateSetting(Array.from(t))
                     }
                 } else {
-                    let t = new Set((0, c.Tb)());
-                    t.add(e.guild?.id), r.$s.updateSetting(Array.from(t))
+                    let t = new Set((0, u.Tb)());
+                    t.add(e.guild?.id), o.$s.updateSetting(Array.from(t))
                 }
-                if (h) {
-                    if (r.JG.getSetting().includes(e.guild.id)) {
-                        let t = new Set((0, c.Kk)());
-                        t.delete(e.guild.id), r.JG.updateSetting(Array.from(t))
+                if (c) {
+                    if (o.JG.getSetting().includes(e.guild.id)) {
+                        let t = new Set((0, u.Kk)());
+                        t.delete(e.guild.id), o.JG.updateSetting(Array.from(t))
                     }
                 } else {
-                    let t = new Set((0, c.Kk)());
-                    t.add(e.guild.id), r.JG.updateSetting(Array.from(t))
+                    let t = new Set((0, u.Kk)());
+                    t.add(e.guild.id), o.JG.updateSetting(Array.from(t))
                 }
-                null != o && o.length > 0 && (0, s.GL)(e.guild.id, {
-                    nick: o
+                null != d && d.length > 0 && (0, a.GL)(e.guild.id, {
+                    nick: d
                 })
             }
             this.close()
         }, e => {
             i.h.dispatch({
                 type: "INVITE_MODAL_ERROR",
-                message: (0, d.s)(e.code)
+                message: (0, _.s)(e.code)
             })
         })
     },
     close() {
-        let e = (0, a.p9)(),
-            t = (0, a.xD)();
-        if ((0, a.jJ)()) {
-            let n = (0, a.tJ)(),
-                i = (0, a.Z1)(),
-                l = (0, a.N9)(),
-                s = (0, a.qO)();
-            o.default.track(u.HAw.INVITE_ACCEPT_JOIN_SETTINGS_SET, {
+        let e = (0, r.p9)(),
+            t = (0, r.xD)();
+        if ((0, r.jJ)()) {
+            let n = (0, r.tJ)(),
+                i = (0, r.Z1)(),
+                l = (0, r.N9)(),
+                a = (0, r.qO)();
+            d.default.track(s.HAw.INVITE_ACCEPT_JOIN_SETTINGS_SET, {
                 invite_code: e,
                 guild_id: t,
                 nickname_present: null != n && n.length > 0,
                 dms_allowed: i,
                 activity_status_shown: l,
-                changed_from_default: s
+                changed_from_default: a
             })
-        }(0, a.xP)(), i.h.dispatch({
+        }(0, r.xP)(), i.h.dispatch({
             type: "INVITE_MODAL_CLOSE"
         })
     }

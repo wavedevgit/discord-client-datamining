@@ -1,57 +1,57 @@
 /** chunk id: 218727 params = (module,exports,require) **/
-n.d(t, {
-    A: () => o
+a.d(t, {
+    A: () => u
 });
-var a = n(311907),
-    l = n(73153);
-let i = () => ({
+var n = a(311907),
+    s = a(73153);
+let r = () => ({
         isFetching: !1,
         lastFetchedAt: null,
         error: null
     }),
-    s = [],
-    r = i();
-class c extends a.Ay.Store {
+    l = [],
+    i = r();
+class c extends n.Ay.Store {
     static displayName = "RecentAvatarsStore";
     get isFetching() {
-        return r.isFetching
+        return i.isFetching
     }
     get fetchError() {
-        return r.error
+        return i.error
     }
     get shouldFetch() {
-        return Date.now() - (r.lastFetchedAt ?? 0) > 3e5 && !r.isFetching
+        return Date.now() - (i.lastFetchedAt ?? 0) > 3e5 && !i.isFetching
     }
     getAvatars() {
-        return s
+        return l
     }
 }
-let o = new c(l.h, {
+let u = new c(s.h, {
     RECENT_AVATARS_FETCH_START: function() {
-        r.isFetching = !0, r.error = null
+        i.isFetching = !0, i.error = null
     },
     RECENT_AVATARS_FETCH_SUCCESS: function(e) {
         let {
             avatars: t
         } = e;
-        s = t, r.isFetching = !1, r.lastFetchedAt = Date.now()
+        l = t, i.isFetching = !1, i.lastFetchedAt = Date.now()
     },
     RECENT_AVATARS_FETCH_FAILURE: function(e) {
         let {
             error: t
         } = e;
-        r.isFetching = !1, r.error = t
+        i.isFetching = !1, i.error = t
     },
     RECENT_AVATARS_UPDATE: function() {
-        r.lastFetchedAt = 0
+        i.lastFetchedAt = 0
     },
     RECENT_AVATAR_DELETE: function(e) {
         let {
             avatarId: t
         } = e;
-        s = s.filter(e => e.id !== t)
+        l = l.filter(e => e.id !== t)
     },
     LOGOUT: function() {
-        s = [], r = i()
+        l = [], i = r()
     }
 })

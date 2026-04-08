@@ -1,123 +1,123 @@
 /** chunk id: 961997 params = (module,exports,require) **/
-n.d(t, {
-    k: () => E,
-    o: () => C
+n.d(e, {
+    k: () => p,
+    o: () => h
 });
 var i = n(627968),
-    l = n(64700),
+    a = n(64700),
     s = n(503698),
-    r = n.n(s),
-    a = n(508602),
+    l = n.n(s),
+    r = n(508602),
     o = n(158954),
-    d = n(630054),
-    c = n(607470),
+    c = n(630054),
+    d = n(607470),
     u = n(77350),
     _ = n(110168),
-    m = n(390248),
-    h = n(961440),
-    p = n(985018),
-    g = n(923315);
-let A = e => {
+    I = n(390248),
+    E = n(961440),
+    x = n(985018),
+    v = n(923315);
+let m = t => {
         let {
-            attachment: t
-        } = e, {
+            attachment: e
+        } = t, {
             url: n,
-            description: l
-        } = t;
-        return null == n ? null : (0, i.jsx)(f, {
+            description: a
+        } = e;
+        return null == n ? null : (0, i.jsx)(C, {
             url: n,
-            description: l
+            description: a
         })
     },
-    x = e => {
+    T = t => {
         let {
-            embed: t
-        } = e;
-        if (!h.Tj.has(t.type)) return null;
-        let n = void 0 !== t.video && t.type !== a.A.GIFV ? t.video.url : t.thumbnail?.url ?? t.image?.url;
-        return null == n ? null : (0, i.jsx)(f, {
+            embed: e
+        } = t;
+        if (!E.Tj.has(e.type)) return null;
+        let n = void 0 !== e.video && e.type !== r.A.GIFV ? e.video.url : e.thumbnail?.url ?? e.image?.url;
+        return null == n ? null : (0, i.jsx)(C, {
             url: n
         })
     },
-    f = e => {
+    C = t => {
         let {
-            url: t,
+            url: e,
             description: n
-        } = e, l = (0, u.r1)(t);
+        } = t, a = (0, u.r1)(e);
         return (0, i.jsx)("div", {
-            className: g.il,
-            children: l ? (0, i.jsx)(c.A, {
-                className: r()(g.Ki, g.$_),
+            className: v.il,
+            children: a ? (0, i.jsx)(d.A, {
+                className: l()(v.Ki, v.$_),
                 controls: !0,
-                src: t
+                src: e
             }) : (0, i.jsx)("img", {
-                className: r()(g.Sl, g.$_),
-                src: t,
+                className: l()(v.Sl, v.$_),
+                src: e,
                 alt: n
             })
         })
     };
 
-function C(e) {
-    d.A.pop(), (0, _.r)({
+function h(t) {
+    c.A.pop(), (0, _.r)({
         id: "explicit-media-false-positive-modal",
-        text: p.intl.string(p.t.gFsTKu)
-    }), e()
+        text: x.intl.string(x.t.gFsTKu)
+    }), t()
 }
 
-function E(e) {
+function p(t) {
     let {
-        channelId: t,
+        channelId: e,
         messageId: n,
         isReportFalsePositiveLoading: s,
-        analyticsContext: r,
-        attachmentPreview: a,
-        embedPreview: d,
-        onConfirmPress: c,
+        analyticsContext: l,
+        attachmentPreview: r,
+        embedPreview: c,
+        onConfirmPress: d,
         transitionState: u,
         onClose: _
-    } = e, h = l.useCallback(() => {
-        (0, m.hv)({
-            action: m.rY.EXPLICIT_MEDIA_FALSE_POSITIVE_CLICK_CANCEL,
-            channelId: t,
+    } = t, E = a.useCallback(() => {
+        (0, I.hv)({
+            action: I.rY.EXPLICIT_MEDIA_FALSE_POSITIVE_CLICK_CANCEL,
+            channelId: e,
             messageId: n,
-            context: r
+            context: l
         }), _()
-    }, [t, n, r, _]), g = l.useCallback(() => {
-        c?.(), (0, m.hv)({
-            action: m.rY.EXPLICIT_MEDIA_FALSE_POSITIVE_CLICK_CONFIRM,
-            channelId: t,
+    }, [e, n, l, _]), v = a.useCallback(() => {
+        d?.(), (0, I.hv)({
+            action: I.rY.EXPLICIT_MEDIA_FALSE_POSITIVE_CLICK_CONFIRM,
+            channelId: e,
             messageId: n,
-            context: r
+            context: l
         })
-    }, [t, n, r, c]);
-    return l.useEffect(() => {
-        (0, m.hv)({
-            action: m.rY.EXPLICIT_MEDIA_FALSE_POSITIVE_VIEWED,
-            channelId: t,
+    }, [e, n, l, d]);
+    return a.useEffect(() => {
+        (0, I.hv)({
+            action: I.rY.EXPLICIT_MEDIA_FALSE_POSITIVE_VIEWED,
+            channelId: e,
             messageId: n,
-            context: r
+            context: l
         })
-    }, [t, n, r]), (0, i.jsxs)(o.Modal, {
+    }, [e, n, l]), (0, i.jsxs)(o.Modal, {
         transitionState: u,
         onClose: _,
-        title: p.intl.string(p.t.TPpVkI),
-        subtitle: p.intl.string(p.t["z4du/I"]),
+        title: x.intl.string(x.t.TPpVkI),
+        subtitle: x.intl.string(x.t["z4du/I"]),
         actions: [{
-            text: p.intl.string(p.t["ETE/oC"]),
-            onClick: h,
+            text: x.intl.string(x.t["ETE/oC"]),
+            onClick: E,
             variant: "secondary",
             disabled: s
         }, {
-            text: p.intl.string(p.t["cY+Oob"]),
-            onClick: g,
+            text: x.intl.string(x.t["cY+Oob"]),
+            onClick: v,
             loading: s,
             disabled: s
         }],
-        children: [null != a && (0, i.jsx)(A, {
-            attachment: a
-        }), null != d && (0, i.jsx)(x, {
-            embed: d
+        children: [null != r && (0, i.jsx)(m, {
+            attachment: r
+        }), null != c && (0, i.jsx)(T, {
+            embed: c
         })]
     })
 }

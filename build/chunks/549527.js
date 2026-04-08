@@ -11,8 +11,8 @@ var i = n(627968),
     d = n(397927),
     c = n(803306),
     u = n(862804),
-    _ = n(387408),
-    m = n(958340),
+    m = n(387408),
+    _ = n(958340),
     h = n(384231),
     p = n(763754),
     g = n(491182),
@@ -25,8 +25,8 @@ var i = n(627968),
     v = n(699352),
     b = n(378570),
     T = n(138298),
-    y = n(253932),
-    N = n(761640),
+    N = n(253932),
+    y = n(761640),
     S = n(734057),
     j = n(540999),
     L = n(71393),
@@ -35,8 +35,8 @@ var i = n(627968),
     D = n(309010),
     M = n(287809),
     w = n(954571),
-    k = n(709634),
-    O = n(652215),
+    O = n(709634),
+    k = n(652215),
     U = n(381941),
     B = n(818825);
 
@@ -45,18 +45,18 @@ function G(e) {
         message: t,
         snapshot: n,
         index: c
-    } = e, _ = l.useMemo(() => new u.j(t, n, c), [t, n, c]), h = (0, r.bG)([S.A, M.default, P.A, R.A, L.A, m.A], () => _.getForwardInfo(S.A, M.default, P.A, R.A, L.A, m.A).footerInfo, [_], a.A), p = l.useCallback(() => {
+    } = e, m = l.useMemo(() => new u.j(t, n, c), [t, n, c]), h = (0, r.bG)([S.A, M.default, P.A, R.A, L.A, _.A], () => m.getForwardInfo(S.A, M.default, P.A, R.A, L.A, _.A).footerInfo, [m], a.A), p = l.useCallback(() => {
         let e = S.A.getChannel(t.channel_id),
             n = L.A.getGuild(e?.guild_id),
             i = t.messageReference?.channel_id,
             l = D.A.getCurrentlySelectedChannelId(),
-            s = N.Ay.getCurrentSidebarChannelId(t.messageReference?.channel_id),
+            s = y.Ay.getCurrentSidebarChannelId(t.messageReference?.channel_id),
             r = l === i && s === e?.id;
         null == e || null == n || r || null == i || (T.A.openModReportAsSidebar({
             channelId: e.id,
             baseChannelId: i,
             guildId: e.guild_id
-        }), (0, b.iN)(i), w.default.track(O.HAw.MODERATOR_REPORT_ORIGINAL_MESSAGE_LINK_CLICKED, {
+        }), (0, b.iN)(i), w.default.track(k.HAw.MODERATOR_REPORT_ORIGINAL_MESSAGE_LINK_CLICKED, {
             moderator_report_id: t.channel_id,
             destination_channel_id: i,
             destination_message_id: t.id
@@ -93,8 +93,8 @@ function F(e) {
         onClickUsername: d,
         onClickAvatar: c,
         onPopoutRequestClose: u,
-        showUsernamePopout: _,
-        showAvatarPopout: m
+        showUsernamePopout: m,
+        showAvatarPopout: _
     } = function(e, t) {
         let {
             popouts: n,
@@ -116,7 +116,7 @@ function F(e) {
         }
     }(t, s);
     return (0, i.jsx)(g.A, {
-        childrenExecutedCommand: (0, i.jsx)(k.A, {
+        childrenExecutedCommand: (0, i.jsx)(O.A, {
             reportingUserId: r,
             guildId: s.guild_id,
             channel: s,
@@ -133,8 +133,8 @@ function F(e) {
             onClickUsername: d,
             onClickAvatar: c,
             onPopoutRequestClose: u,
-            showUsernamePopout: _,
-            showAvatarPopout: m,
+            showUsernamePopout: m,
+            showAvatarPopout: _,
             renderPopout: f.A,
             compact: !1,
             displayCompactAvatars: !1
@@ -163,11 +163,11 @@ function H(e) {
         }).catch(() => {})
     }, [n?.moderatorReport?.reported_user_id]);
     let d = l.useMemo(() => {
-            let e = (0, _.A)(t, n);
+            let e = (0, m.A)(t, n);
             return null != a && n?.moderatorReport?.reported_user_id != null ? e.set("author", a) : e
         }, [t, n, a]),
-        u = y.hD.useSetting(),
-        m = y.rs.useSetting(),
+        u = N.hD.useSetting(),
+        _ = N.rs.useSetting(),
         p = (0, r.bG)([j.A], () => j.A.isDeveloper),
         g = (0, h.S)((d.editedTimestamp ?? d.timestamp).valueOf()),
         {
@@ -175,7 +175,7 @@ function H(e) {
             hasSpoilerEmbeds: x,
             hasBailedAst: f
         } = (0, I.A)(d, {
-            hideSimpleEmbedContent: u && m,
+            hideSimpleEmbedContent: u && _,
             isInteracting: !1,
             formatInline: !1,
             allowList: g,

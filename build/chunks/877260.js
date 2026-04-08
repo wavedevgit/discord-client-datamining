@@ -13,8 +13,8 @@ var r = n(627968),
     c = n(928039),
     d = n(932001),
     h = n(97469),
-    f = n(199966),
-    m = n(894858),
+    m = n(199966),
+    f = n(894858),
     p = n(397274),
     _ = n(189857),
     v = n(188180),
@@ -29,13 +29,13 @@ function E(e) {
         footer: l,
         emptyState: v,
         searchBar: E
-    } = e, S = m.A.useField("showNavigationMobile"), b = i.useRef(null), [N] = i.useState(t), {
-        accessibleDirectory: C
-    } = (0, f._)(), j = i.useMemo(() => (0, _.Z)(N, C), [N, C]), [R] = (0, d.kn)(j.allDismissibleContents);
+    } = e, S = f.A.useField("showNavigationMobile"), b = i.useRef(null), [N] = i.useState(t), {
+        accessibleDirectory: j
+    } = (0, m._)(), C = i.useMemo(() => (0, _.Z)(N, j), [N, j]), [R] = (0, d.kn)(C.allDismissibleContents);
     (0, y.B)({
         visibleContent: R,
-        dismissibleBadges: j,
-        accessibleDirectory: C
+        dismissibleBadges: C,
+        accessibleDirectory: j
     });
     let [I, T] = i.useMemo(() => {
         let e = [],
@@ -66,7 +66,7 @@ function E(e) {
                     children: I.map(e => (0, r.jsx)(A, {
                         section: e,
                         visibleContent: R,
-                        dismissibleBadges: j,
+                        dismissibleBadges: C,
                         hoisted: !0
                     }, e.key))
                 }), null != E && (0, r.jsx)(E, {}), null != v && 0 === T.length && (0, r.jsx)(v, {})]
@@ -90,7 +90,7 @@ function E(e) {
                                 children: T.map(e => (0, r.jsx)(A, {
                                     section: e,
                                     visibleContent: R,
-                                    dismissibleBadges: j
+                                    dismissibleBadges: C
                                 }, e.key))
                             }), null != l && (0, r.jsx)(l, {})]
                         })

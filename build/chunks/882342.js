@@ -1,42 +1,42 @@
 /** chunk id: 882342 params = (module,exports,require) **/
-n.d(t, {
+a.d(t, {
     A: () => m
 });
-var r = n(627968);
-n(64700);
-var a = n(990078),
-    i = n(397927),
-    s = n(580630),
-    l = n(993408),
-    o = n(641563),
-    c = n(652215),
-    d = n(985018),
-    u = n(993910);
+var n = a(627968);
+a(64700);
+var r = a(990078),
+    i = a(397927),
+    s = a(580630),
+    l = a(993408),
+    o = a(641563),
+    c = a(652215),
+    d = a(985018),
+    u = a(993910);
 
 function m(e) {
     let {
         product: t,
-        onTrackClick: n
+        onTrackClick: a
     } = e, m = (0, l.yt)(t, c.lid.PREMIUM_TIER_2);
     if (null == m) return null;
-    let h = (0, s.RS)(m.amount, m.currency);
-    return (0, r.jsxs)("div", {
+    let p = (0, s.RS)(m.amount, m.currency);
+    return (0, n.jsxs)("div", {
         className: u.k,
-        children: [(0, r.jsx)(a.m, {
+        children: [(0, n.jsx)(r.m, {
             text: d.intl.string(d.t.MPFyJ5),
             "aria-label": d.intl.string(d.t.X3Ekj8),
-            children: (0, r.jsx)(i.tvc, {
+            children: (0, n.jsx)(i.tvc, {
                 size: "md",
                 color: "currentColor",
                 className: u.o
             })
-        }), (0, r.jsx)(i.Text, {
+        }), (0, n.jsx)(i.Text, {
             variant: "text-xs/medium",
             children: d.intl.format(d.t.Sv8iic, {
-                price: h,
-                subscribeNowHook: e => (0, r.jsx)(o.Z, {
+                price: p,
+                subscribeNowHook: e => (0, n.jsx)(o.Z, {
                     text: e,
-                    onTrackClick: n
+                    onTrackClick: a
                 })
             })
         })]

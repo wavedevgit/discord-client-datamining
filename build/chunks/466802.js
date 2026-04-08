@@ -1,6 +1,6 @@
 /** chunk id: 466802 params = (module,exports,require) **/
 n.d(t, {
-    A: () => z
+    A: () => Y
 });
 var i = n(627968),
     l = n(64700),
@@ -11,8 +11,8 @@ var i = n(627968),
     d = n(311907),
     c = n(397927),
     u = n(863574),
-    _ = n(707606),
-    m = n(456412),
+    m = n(707606),
+    _ = n(456412),
     h = n(793574),
     p = n(429913),
     g = n(993408),
@@ -25,8 +25,8 @@ var i = n(627968),
     v = n(317560),
     b = n(780964),
     T = n(858897),
-    y = n(961350),
-    N = n(30793),
+    N = n(961350),
+    y = n(30793),
     S = n(189081),
     j = n(287809),
     L = n(67480),
@@ -35,8 +35,8 @@ var i = n(627968),
     D = n(45938),
     M = n(927578),
     w = n(615396),
-    k = n(427262),
-    O = n(937266),
+    O = n(427262),
+    k = n(937266),
     U = n(652215),
     B = n(788868),
     G = n(985018),
@@ -215,7 +215,7 @@ class q extends l.Component {
             sku: i
         } = this.props;
         return this.isCustomGiftMessage() && !n ? G.intl.formatToPlainString(G.t.t1SOId, {
-            recipientDisplayName: k.Ay.getName(t)
+            recipientDisplayName: O.Ay.getName(t)
         }) : null == i ? null : e.isSubscription ? n ? G.intl.string(G.t["2PJ1NP"]) : G.intl.string(G.t.hrnGng) : n ? G.intl.string(G.t.QLEMld) : G.intl.string(G.t.W4DBcy)
     }
     renderBody(e) {
@@ -249,11 +249,11 @@ class q extends l.Component {
         });
         if (e.isExistingPremiumSubscriptionDisallowed) return G.intl.string(G.t.UCIU9y);
         if (e.hasMultipleCopies) return null != l ? e.isSubscription ? G.intl.format(G.t.l3VxgG, {
-            username: k.Ay.getUserTag(l),
+            username: O.Ay.getUserTag(l),
             maxUses: e.maxUses,
             skuName: a
         }) : G.intl.format(G.t["9cYrw5"], {
-            username: k.Ay.getUserTag(l),
+            username: O.Ay.getUserTag(l),
             totalCopies: e.maxUses,
             skuName: a
         }) : e.isSubscription ? G.intl.formatToPlainString(G.t.svrO3W, {
@@ -268,7 +268,7 @@ class q extends l.Component {
             if (null != l) {
                 let e = s.interval === B.WT.MONTH ? G.t["/RDIEA"] : G.t["3CX6Ev"];
                 return G.intl.format(e, {
-                    username: k.Ay.getUserTag(l),
+                    username: O.Ay.getUserTag(l),
                     skuName: a,
                     intervalCount: s.intervalCount
                 })
@@ -280,7 +280,7 @@ class q extends l.Component {
             })
         }
         return null != l ? G.intl.format(G.t["3HsdQ/"], {
-            username: k.Ay.getUserTag(l)
+            username: O.Ay.getUserTag(l)
         }) : G.intl.string(G.t.Jdnjjj)
     }
     renderCustomGiftBox = e => {
@@ -325,7 +325,7 @@ class q extends l.Component {
         } = this.props;
         if (null == e) return null;
         let l = null != e.giftStyle && !(0, I.bF)(n);
-        return (0, i.jsx)(O.k, {
+        return (0, i.jsx)(k.k, {
             skuId: e.skuId,
             onEmbedClick: this.handleEmbedClick,
             analyticsSection: U.JJy.GIFT_CODE_EMBED,
@@ -344,7 +344,7 @@ class q extends l.Component {
             width: l,
             isSelfGift: s
         } = this.props;
-        if (null != e && null != e.promotion) return (0, i.jsx)(O.k, {
+        if (null != e && null != e.promotion) return (0, i.jsx)(k.k, {
             skuId: e.skuId,
             onEmbedClick: this.handleClaimPromotion,
             analyticsSection: U.JJy.GIFT_CODE_EMBED,
@@ -368,8 +368,8 @@ class q extends l.Component {
         }) : this.renderEmbed()
     }
 }
-let W = (0, m.A)((0, _.A)(q)),
-    z = function(e) {
+let W = (0, _.A)((0, m.A)(q)),
+    Y = function(e) {
         let {
             code: t,
             author: n
@@ -377,14 +377,14 @@ let W = (0, m.A)((0, _.A)(q)),
             giftCode: l,
             resolved: s,
             resolveErrorCode: r
-        } = (0, d.cf)([N.A], () => {
-            let e = N.A.getError(t);
+        } = (0, d.cf)([y.A], () => {
+            let e = y.A.getError(t);
             return {
-                giftCode: N.A.get(t),
-                resolved: N.A.getIsResolved(t),
+                giftCode: y.A.get(t),
+                resolved: y.A.getIsResolved(t),
                 resolveErrorCode: e?.code ?? null
             }
-        }), a = (0, d.bG)([j.default], () => null != l && null != l.userId ? j.default.getUser(l.userId) : null), o = (0, d.bG)([L.A], () => null != l ? L.A.get(l.skuId) : null), c = (0, d.bG)([S.A], () => null != o && l?.entitlementBranches != null ? D.YI(l.entitlementBranches, o, S.A) : null), u = (0, p.h)(o?.applicationId), _ = (0, w.zz)(l?.subscriptionPlanId), m = (0, d.bG)([y.default], () => null != l ? y.default.getId() === l.userId : y.default.getId() === n.id);
+        }), a = (0, d.bG)([j.default], () => null != l && null != l.userId ? j.default.getUser(l.userId) : null), o = (0, d.bG)([L.A], () => null != l ? L.A.get(l.skuId) : null), c = (0, d.bG)([S.A], () => null != o && l?.entitlementBranches != null ? D.YI(l.entitlementBranches, o, S.A) : null), u = (0, p.h)(o?.applicationId), m = (0, w.zz)(l?.subscriptionPlanId), _ = (0, d.bG)([N.default], () => null != l ? N.default.getId() === l.userId : N.default.getId() === n.id);
         return (0, i.jsx)(W, {
             ...e,
             skuApplication: u,
@@ -393,8 +393,8 @@ let W = (0, m.A)((0, _.A)(q)),
             resolveErrorCode: r,
             gifter: a,
             libraryApplication: c,
-            subscriptionPlan: _,
+            subscriptionPlan: m,
             sku: o,
-            isSelfGift: m
+            isSelfGift: _
         })
     }

@@ -2,7 +2,7 @@
 n.d(t, {
     Ay: () => b,
     NH: () => j,
-    T: () => y
+    T: () => v
 });
 var i = n(627968),
     l = n(64700),
@@ -31,7 +31,7 @@ var i = n(627968),
 function b(e) {
     var t, n, s, r, x, b;
     let {
-        onJump: y,
+        onJump: v,
         showTutorial: j,
         setSeenTutorial: R,
         closePopout: O
@@ -105,9 +105,9 @@ function b(e) {
                     ...n,
                     onScroll: U === C.mJ.Done ? void 0 : P,
                     className: a()(S.XG, `group-spacing-${k}`),
-                    children: [j ? (0, i.jsx)(v, {
+                    children: [j ? (0, i.jsx)(y, {
                         setSeenTutorial: R
-                    }) : null, (0, I.A)(G, D, y), U === C.mJ.Done ? null : (0, i.jsx)(u.y$y, {
+                    }) : null, (0, I.A)(G, D, v), U === C.mJ.Done ? null : (0, i.jsx)(u.y$y, {
                         className: S.u1
                     })]
                 })
@@ -116,7 +116,7 @@ function b(e) {
     })
 }
 
-function v(e) {
+function y(e) {
     let {
         setSeenTutorial: t
     } = e;
@@ -151,7 +151,7 @@ function v(e) {
     })
 }
 
-function y() {
+function v() {
     return (0, i.jsx)(E.A, {
         Icon: u.K$s,
         disableStars: !0,

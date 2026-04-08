@@ -17,8 +17,8 @@ function c(e) {
         fullWidth: n = !1,
         size: c = "md",
         playButtonVariant: u,
-        disabledVariant: _,
-        hideNotLaunchable: m,
+        disabledVariant: m,
+        hideNotLaunchable: _,
         tooltipPosition: h,
         onClick: p,
         className: g,
@@ -28,7 +28,7 @@ function c(e) {
     } = e, C = {
         fullWidth: n,
         size: c,
-        disabledVariant: _,
+        disabledVariant: m,
         tooltipPosition: h,
         onClick: p,
         className: g,
@@ -45,7 +45,7 @@ function c(e) {
     }) : (0, i.jsx)(o.A, {
         ...C,
         variant: u,
-        hideNotLaunchable: m,
+        hideNotLaunchable: _,
         applicationId: t.id
     })
 }

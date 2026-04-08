@@ -11,8 +11,8 @@ var i = n(627968),
     d = n(735438),
     c = n.n(d),
     u = n(110259),
-    _ = n(311907),
-    m = n(3026),
+    m = n(311907),
+    _ = n(3026),
     h = n(397927),
     p = n(846293),
     g = n(956793),
@@ -25,8 +25,8 @@ var i = n(627968),
     v = n(450149),
     b = n(652896),
     T = n(834757),
-    y = n(290331),
-    N = n(21599),
+    N = n(290331),
+    y = n(21599),
     S = n(281489),
     j = n(378570),
     L = n(21119),
@@ -35,8 +35,8 @@ var i = n(627968),
     D = n(696451),
     M = n(71393),
     w = n(576705),
-    k = n(607567),
-    O = n(954571),
+    O = n(607567),
+    k = n(954571),
     U = n(860689),
     B = n(422844),
     G = n(72951),
@@ -45,8 +45,8 @@ var i = n(627968),
     V = n(182912),
     q = n(341678),
     W = n(652215),
-    z = n(985018),
-    Y = n(826235);
+    Y = n(985018),
+    z = n(826235);
 
 function Q(e) {
     let {
@@ -60,11 +60,11 @@ function Q(e) {
     null == H && null != t.guild && (H = U.DY(t.guild));
     let Q = null != t.channel ? (0, R.OY)(t.channel) : null;
     o()(null != H, "Voice Invite Embed must be used in context of a guild."), o()(null != Q, "Voice Invite Embed must be able to resolve an invite channel.");
-    let J = (0, _.bG)([w.A, P.A], () => {
+    let J = (0, m.bG)([w.A, P.A], () => {
             let e = P.A.getChannel(Q.id);
             return null == e || w.A.canBasicChannel(W.hVb.VIEW_CHANNEL, e)
         }, [Q.id]),
-        Z = (0, _.bG)([k.Ay], () => J ? k.Ay.getVoiceStatesForChannelAlt(Q.id, H.id) : [], [Q.id, H.id, J]),
+        Z = (0, m.bG)([O.Ay], () => J ? O.Ay.getVoiceStatesForChannelAlt(Q.id, H.id) : [], [Q.id, H.id, J]),
         {
             label: $,
             sublabel: ee
@@ -75,27 +75,27 @@ function Q(e) {
                 voiceStates: i
             } = e, l = n.id === t, s = i.length > 0, r = i.length;
             return s ? {
-                label: l ? z.intl.format(z.t["2RWMFV"], {
+                label: l ? Y.intl.format(Y.t["2RWMFV"], {
                     othersCount: r
-                }) : z.intl.format(z.t.Da7tZx, {
+                }) : Y.intl.format(Y.t.Da7tZx, {
                     othersCount: r
                 })
             } : {
-                label: l ? z.intl.string(z.t.DVDvCD) : z.intl.string(z.t.TY77rq),
-                sublabel: z.intl.string(z.t.wM2WTM)
+                label: l ? Y.intl.string(Y.t.DVDvCD) : Y.intl.string(Y.t.TY77rq),
+                sublabel: Y.intl.string(Y.t.wM2WTM)
             }
         }({
             currentUserId: n,
             author: s.author,
             voiceStates: Z
         }),
-        et = (0, _.bG)([M.A], () => null != M.A.getGuild(H.id), [H.id]),
-        en = (0, _.bG)([D.Ay], () => y.A.canAcceptInvite([D.Ay], t), [t]),
+        et = (0, m.bG)([M.A], () => null != M.A.getGuild(H.id), [H.id]),
+        en = (0, m.bG)([D.Ay], () => N.A.canAcceptInvite([D.Ay], t), [t]),
         ei = t.state === W.elq.ACCEPTING,
         {
             analyticsLocations: el
         } = (0, C.Ay)(f.A.INVITE_EMBED),
-        es = (0, N._U)(t.code, s.id),
+        es = (0, y._U)(t.code, s.id),
         er = (0, q.A)({
             invite: t,
             message: s,
@@ -121,7 +121,7 @@ function Q(e) {
         ec = l.useCallback(() => {
             et ? (0, j.iN)(Q.id) : I({
                 autoJoin: !1
-            }), O.default.track(W.HAw.VOICE_INVITE_EMBED_BREADCRUMB_CLICKED, {
+            }), k.default.track(W.HAw.VOICE_INVITE_EMBED_BREADCRUMB_CLICKED, {
                 invite_code: t.code,
                 invite_guild_id: H.id,
                 invite_channel_id: Q.id,
@@ -157,14 +157,14 @@ function Q(e) {
                 number_of_users_in_channel: Z.length
             }, [...el, f.A.VOICE_INVITE_STREAM_PREVIEW]))
         }, [er, et, t, s, el, es, ea, Z.length, I]),
-        e_ = (0, _.bG)([x.A], () => x.A.useReducedMotion),
-        em = l.useRef(null),
+        em = (0, m.bG)([x.A], () => x.A.useReducedMotion),
+        e_ = l.useRef(null),
         [eh, ep] = l.useState({
             percentX: 0,
             percentY: 0,
             proximity: 0
         }),
-        eg = (0, _.bG)([L.A], () => {
+        eg = (0, m.bG)([L.A], () => {
             let e = Z.map(e => e.user),
                 t = e.find(e => e.id === s.author.id),
                 n = e.filter(e => e.id !== s.author.id).sort((e, t) => {
@@ -176,8 +176,8 @@ function Q(e) {
         eA = l.useMemo(() => c().throttle(ep, 20), [ep]);
     l.useEffect(() => () => eA.cancel(), [eA]);
     let ex = l.useCallback(e => {
-            if (e_) return;
-            let t = em.current?.getBoundingClientRect();
+            if (em) return;
+            let t = e_.current?.getBoundingClientRect();
             if (null == t) return;
             let n = (e.clientX - t.left) / t.width * 2 - 1,
                 i = (e.clientY - t.top) / t.height * 2 - 1,
@@ -195,7 +195,7 @@ function Q(e) {
                 percentY: i,
                 proximity: l
             })
-        }, [e_, eA]),
+        }, [em, eA]),
         ef = l.useCallback(() => {
             eA.cancel(), ep({
                 percentX: 0,
@@ -204,46 +204,46 @@ function Q(e) {
             })
         }, [eA]);
     return (0, i.jsxs)("div", {
-        ref: em,
-        className: r()(Y.kL, {
-            [Y.VD]: eo
+        ref: e_,
+        className: r()(z.kL, {
+            [z.VD]: eo
         }),
         onMouseMove: ex,
         onMouseLeave: ef,
         children: [(0, i.jsx)("div", {
-            className: Y.ys
+            className: z.ys
         }), (0, i.jsx)("div", {
-            className: Y.r$,
+            className: z.r$,
             style: {
                 "--custom-number-of-dots": 24
             }
         }), eo ? (0, i.jsx)(X, {
-            className: Y.tB,
+            className: z.tB,
             stream: er
         }) : null, (0, i.jsxs)("div", {
-            className: Y.rf,
+            className: z.rf,
             children: [(0, i.jsxs)("div", {
-                className: Y.Qs,
+                className: z.Qs,
                 children: [(0, i.jsx)(G.A, {
                     channel: Q,
                     guild: H,
                     onClick: ec
                 }), (0, i.jsxs)("div", {
-                    className: Y.WD,
+                    className: z.WD,
                     children: [eo ? (0, i.jsx)(K, {
                         guildId: H.id,
                         channelId: Q.id,
                         members: eg
                     }) : null, (0, i.jsx)(h.Text, {
                         variant: "text-md/medium",
-                        children: (0, i.jsx)(m.A, {
+                        children: (0, i.jsx)(_.A, {
                             lineClamp: eo ? 1 : 3,
                             children: $
                         })
                     }), null != ee ? (0, i.jsx)(h.Text, {
                         variant: "text-sm/normal",
-                        className: Y.$B,
-                        children: (0, i.jsx)(m.A, {
+                        className: z.$B,
+                        children: (0, i.jsx)(_.A, {
                             children: ee
                         })
                     }) : null]
@@ -252,9 +252,9 @@ function Q(e) {
                 stream: er,
                 currentUserId: n,
                 onClick: eu,
-                className: Y.Rh
+                className: z.Rh
             }) : (0, i.jsx)("div", {
-                className: Y.RE,
+                className: z.RE,
                 children: (0, i.jsx)(V.A, {
                     ref: S,
                     guildId: H.id,
@@ -264,14 +264,14 @@ function Q(e) {
                 })
             })]
         }), (0, i.jsx)("div", {
-            className: Y.xk,
+            className: z.xk,
             children: (0, i.jsx)(h.Button, {
                 onClick: ed,
                 loading: ei,
                 variant: "active",
                 fullWidth: !0,
                 disabled: !en,
-                text: z.intl.string(z.t.gpqgah)
+                text: Y.intl.string(Y.t.gpqgah)
             })
         })]
     })
@@ -288,7 +288,7 @@ function K(e) {
         channelId: n,
         members: l
     }) : (0, i.jsx)("div", {
-        className: Y.WM,
+        className: z.WM,
         children: (0, i.jsx)(S.A, {
             guildId: t,
             partySize: {
@@ -317,7 +317,7 @@ function J(e) {
         targetElementRef: r,
         shouldShow: a,
         children: e => (0, i.jsx)("div", {
-            className: Y.WM,
+            className: z.WM,
             ...e,
             children: (0, i.jsx)(S.A, {
                 guildId: t,
@@ -343,14 +343,14 @@ function X(e) {
         isLoading: s
     } = (0, v.A)(n.guildId, n.channelId, n.ownerId), a = null != l && !s;
     return (0, i.jsx)("div", {
-        className: r()(t, Y.rr, {
-            [Y.pc]: !a
+        className: r()(t, z.rr, {
+            [z.pc]: !a
         }),
         style: {
             "--custom-bg-url": a ? `url(${l})` : "unset"
         },
         children: (0, i.jsx)("div", {
-            className: Y.bW
+            className: z.bW
         })
     })
 }

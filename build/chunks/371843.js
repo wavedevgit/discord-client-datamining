@@ -4,21 +4,21 @@ t.d(n, {
 });
 var i = t(913453),
     a = t(186272),
-    r = t(518477),
-    l = t(985018);
+    l = t(518477),
+    r = t(985018);
 
 function s(e) {
     let {
         mutualGuilds: n
     } = (0, i.A)(e), t = n?.length;
     return [{
-        section: r.RP.BOT_INFO,
-        text: l.intl.string(l.t.ZzAR2Y)
+        section: l.RP.BOT_INFO,
+        text: r.intl.string(r.t.ZzAR2Y)
     }, {
-        section: r.RP.MUTUAL_GUILDS,
+        section: l.RP.MUTUAL_GUILDS,
         text: (0, a.A)(t)
     }, {
-        section: r.RP.BOT_DATA_ACCESS,
-        text: l.intl.string(l.t.WstFb0)
+        section: l.RP.BOT_DATA_ACCESS,
+        text: r.intl.string(r.t.WstFb0)
     }]
 }

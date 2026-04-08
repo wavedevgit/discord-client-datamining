@@ -37,8 +37,8 @@ function y(e) {
         dropdownClassName: r,
         analyticsLocation: y,
         currentInvoicePreview: R,
-        disabled: P = !1
-    } = e, L = (0, d.bG)([p.A], () => p.A.hidePersonalInformation), [D, G] = (0, d.yK)([T.A], () => [T.A.paymentSources, T.A.hasFetchedPaymentSources]), M = (0, h.Y)((0, E.MP)(t)), {
+        disabled: L = !1
+    } = e, P = (0, d.bG)([p.A], () => p.A.hidePersonalInformation), [D, G] = (0, d.yK)([T.A], () => [T.A.paymentSources, T.A.hasFetchedPaymentSources]), M = (0, h.Y)((0, E.MP)(t)), {
         analyticsLocations: U
     } = (0, A.Ay)(), k = s.useMemo(() => Object.values(D).filter(e => !e.invalid), [D]), [w, V] = s.useState(!1), [B, F] = s.useState(t.currency), H = async (e, n, i) => {
         if (null == t) throw Error("missing subscription and paymentSource");
@@ -115,14 +115,14 @@ function y(e) {
                 } : null,
                 className: r,
                 paymentSources: k,
-                hidePersonalInformation: L,
+                hidePersonalInformation: P,
                 selectedPaymentSourceId: e,
                 onChange: e => {
                     null != e && z(e, Y(e), H)
                 },
                 onPaymentSourceAdd: K,
                 dropdownLoading: w,
-                disabled: P,
+                disabled: L,
                 paymentGatewayRestrictions: t.eligiblePaymentGateways
             })), null != t.paymentSourceId ? (0, i.jsx)(_.f, {
                 currencies: s,

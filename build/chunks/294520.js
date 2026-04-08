@@ -2,9 +2,9 @@
 t.d(a, {
     K6: () => C,
     eJ: () => E,
-    iW: () => A,
+    iW: () => p,
     rx: () => I,
-    sC: () => p,
+    sC: () => A,
     tt: () => T
 }), t(938796);
 var n = t(665260),
@@ -18,7 +18,7 @@ var n = t(665260),
     d = t(863439),
     _ = t(652215),
     m = t(985018);
-let A = (e, a) => {
+let p = (e, a) => {
         let {
             spoiler: t,
             flags: c = 0
@@ -31,7 +31,7 @@ let A = (e, a) => {
         }, a);
         return s.length > 0 ? s[0] : o ? r.Oc.POTENTIAL_EXPLICIT_CONTENT : t || (0, n.Lt)(c, _.sbO.IS_SPOILER) ? r.Oc.SPOILER : null
     },
-    p = (e, a, t, n) => {
+    A = (e, a, t, n) => {
         let c = (0, i.b)({
                 type: l.D.Embed,
                 media: e

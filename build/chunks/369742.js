@@ -1,6 +1,6 @@
 /** chunk id: 369742 params = (module,exports,require) **/
 n.d(t, {
-    Ay: () => p,
+    Ay: () => f,
     ZK: () => m,
     dP: () => u,
     wn: () => d
@@ -18,7 +18,7 @@ let u = {
     m = {
         skuId: "Shop"
     },
-    p = () => {
+    f = () => {
         let e = (0, s.bG)([a.A], () => a.A.purchases),
             [t, n] = (0, s.yK)([l.A], () => [l.A.categories, l.A.products]);
         return (0, i.useMemo)(() => {

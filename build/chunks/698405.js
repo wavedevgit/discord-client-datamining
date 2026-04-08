@@ -1,81 +1,81 @@
 /** chunk id: 698405 params = (module,exports,require) **/
 i.d(t, {
     A: () => f,
-    w: () => A
+    w: () => _
 });
-var n, l = i(627968),
-    a = i(64700),
-    s = i(311907),
+var n, a = i(627968),
+    l = i(64700),
+    o = i(311907),
     r = i(421380),
-    o = i(397927),
-    u = i(686956),
+    s = i(397927),
+    c = i(686956),
     d = i(915089),
-    c = i(403362),
+    u = i(403362),
     h = i(857071),
     m = i(652215),
     p = i(985018),
     g = i(182730),
-    A = ((n = {})[n.CHAT = 0] = "CHAT", n[n.REACTIONS = 1] = "REACTIONS", n);
+    _ = ((n = {})[n.CHAT = 0] = "CHAT", n[n.REACTIONS = 1] = "REACTIONS", n);
 let f = e => {
     let {
         type: t,
         guild: n,
-        closePopout: A,
+        closePopout: _,
         ctaRef: f
-    } = e, T = (0, d.GV)(), [E, x] = a.useState(!1), N = (0, s.bG)([h.A], () => h.A.isLurking(n.id), [n.id]);
-    a.useEffect(() => {
-        E && !N && A()
-    }, [E, N, A]);
-    let I = null,
-        v = p.intl.string(p.t.d7b1p6);
+    } = e, A = (0, d.GV)(), [T, b] = l.useState(!1), E = (0, o.bG)([h.A], () => h.A.isLurking(n.id), [n.id]);
+    l.useEffect(() => {
+        T && !E && _()
+    }, [T, E, _]);
+    let x = null,
+        I = p.intl.string(p.t.d7b1p6);
     switch (t) {
         case 0:
-            I = p.intl.string(p.t.Xiwf1Q);
+            x = p.intl.string(p.t.Xiwf1Q);
             break;
         case 1:
-            I = p.intl.string(p.t.GXvlU9);
+            x = p.intl.string(p.t.GXvlU9);
             break;
         default:
-            return (0, c.xb)(t)
+            return (0, u.xb)(t)
     }
-    if (null == I) return null;
-    let j = async () => {
-        x(!0);
+    if (null == x) return null;
+    let N = async () => {
+        b(!0);
         try {
-            await u.A.joinGuild(n.id, {
+            await c.A.joinGuild(n.id, {
                 source: m.Q4z.CHAT_INPUT_BLOCKER
-            }), A()
+            }), _()
         } catch {
-            x(!1)
+            b(!1)
         }
     };
-    return (0, l.jsxs)(o.lGe, {
+    return (0, a.jsxs)(s.lGe, {
         className: g.kL,
-        "aria-labelledby": T,
-        children: [(0, l.jsx)("img", {
+        "aria-labelledby": A,
+        children: [(0, a.jsx)("img", {
             alt: "",
             className: g.Sl,
             src: i(303528)
-        }), (0, l.jsxs)("div", {
+        }), (0, a.jsxs)("div", {
             className: g.Qs,
-            children: [(0, l.jsx)(o.Heading, {
+            children: [(0, a.jsx)(s.Heading, {
                 variant: "heading-md/semibold",
-                id: T,
-                children: I
-            }), (0, l.jsx)(o.Text, {
+                id: A,
+                children: x
+            }), (0, a.jsx)(s.Text, {
                 color: "text-default",
                 variant: "text-sm/normal",
-                children: v
-            }), (0, l.jsxs)("div", {
+                children: I
+            }), (0, a.jsxs)("div", {
                 className: g.UD,
-                children: [(0, l.jsx)(o.Button, {
+                children: [(0, a.jsx)(s.Button, {
                     variant: "primary",
                     text: p.intl.string(p.t["9VLmlZ"]),
                     buttonRef: f,
-                    onClick: j,
-                    loading: E
-                }), (0, l.jsx)(r.$n, {
-                    onClick: A,
+                    onClick: N,
+                    loading: T
+                }), (0, a.jsx)(r.$n, {
+                    onClick: _,
                     look: r.$n.Looks.BLANK,
                     className: g.ZT,
                     children: p.intl.string(p.t["2m+Sqk"])

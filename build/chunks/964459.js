@@ -1,11 +1,11 @@
 /** chunk id: 964459 params = (module,exports,require) **/
-n.d(t, {
+r.d(t, {
     A: () => l
 });
-var i = n(64700);
+var n = r(64700);
 let l = () => {
-    let e = i.useRef(!0);
-    return i.useEffect(() => () => {
+    let e = n.useRef(!0);
+    return n.useEffect(() => () => {
         e.current = !1
-    }, []), i.useCallback(() => e.current, [])
+    }, []), n.useCallback(() => e.current, [])
 }

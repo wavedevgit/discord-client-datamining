@@ -1,29 +1,29 @@
 /** chunk id: 586445 params = (module,exports,require) **/
-n.d(t, {
+a.d(t, {
     V: () => u
 });
-var r = n(627968),
-    a = n(64700),
-    i = n(397927),
-    s = n(954571),
-    l = n(957565),
-    o = n(758836),
-    c = n(652215),
-    d = n(985018);
+var n = a(627968),
+    r = a(64700),
+    i = a(397927),
+    s = a(954571),
+    l = a(957565),
+    o = a(758836),
+    c = a(652215),
+    d = a(985018);
 
 function u(e) {
     let {
         skuId: t,
-        tab: n,
+        tab: a,
         onTrackClick: u
-    } = e, m = a.useCallback(() => {
+    } = e, m = r.useCallback(() => {
         s.default.track(c.HAw.COLLECTIBLES_SHARE_LINK_BUTTON_CLICKED, {
             sku_id: t
         }), u?.(o.sH.COPY_LINK);
-        let e = `${location.protocol}//${location.host}${c.BVt.COLLECTIBLES_SHOP}${(0,o.cw)(n)?`?tab=${n}`:""}#itemSkuId=${t}`;
+        let e = `${location.protocol}//${location.host}${c.BVt.COLLECTIBLES_SHOP}${(0,o.cw)(a)?`?tab=${a}`:""}#itemSkuId=${t}`;
         (0, l.C)(e, () => (0, i.showToast)((0, i.createToast)(d.intl.string(d.t["L/PwZf"]), i.ToastType.SUCCESS)))
-    }, [t, n, u]);
-    return (0, r.jsx)(i.K0, {
+    }, [t, a, u]);
+    return (0, n.jsx)(i.K0, {
         "aria-label": d.intl.string(d.t.WqhZss),
         onClick: m,
         icon: i.qYV,

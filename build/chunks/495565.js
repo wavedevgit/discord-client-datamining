@@ -1,63 +1,63 @@
 /** chunk id: 495565 params = (module,exports,require) **/
-n.d(t, {
+a.d(t, {
     r: () => l
-}), n(321073);
-var r = n(64700),
-    a = n(575593),
-    i = n(985018);
+}), a(321073);
+var n = a(64700),
+    r = a(575593),
+    i = a(985018);
 let s = function(e) {
         let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
         if (t) return i.intl.formatToPlainString(i.t["/0Yndu"], {
             num: e.bundledProducts?.length
         });
-        let n = e.bundledProducts ?? [],
-            r = [],
+        let a = e.bundledProducts ?? [],
+            n = [],
             s = !1;
-        for (let e of n) switch (e.type) {
-            case a.R.AVATAR_DECORATION:
-                r.push(i.intl.formatToPlainString(i.t.Ntv9Jt, {
+        for (let e of a) switch (e.type) {
+            case r.R.AVATAR_DECORATION:
+                n.push(i.intl.formatToPlainString(i.t.Ntv9Jt, {
                     itemName: e.name
                 }));
                 break;
-            case a.R.PROFILE_EFFECT:
-                r.push(i.intl.formatToPlainString(i.t["3Y8q7a"], {
+            case r.R.PROFILE_EFFECT:
+                n.push(i.intl.formatToPlainString(i.t["3Y8q7a"], {
                     itemName: e.name
                 }));
                 break;
-            case a.R.NAMEPLATE:
-                r.push(i.intl.formatToPlainString(i.t["2keXky"], {
+            case r.R.NAMEPLATE:
+                n.push(i.intl.formatToPlainString(i.t["2keXky"], {
                     itemName: e.name
                 })), s = !0
         }
         if (s) {
-            let e = r.join(", ").replace(/, ([^,]*)$/, " & $1");
+            let e = n.join(", ").replace(/, ([^,]*)$/, " & $1");
             return i.intl.formatToPlainString(i.t.Ofrqj6, {
                 joinedItems: e
             })
         }
-        let l = r.join(" & ");
+        let l = n.join(" & ");
         return i.intl.formatToPlainString(i.t.Ofrqj6, {
             joinedItems: l
         })
     },
     l = function(e) {
         let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
-        return (0, r.useMemo)(() => {
+        return (0, n.useMemo)(() => {
             if (null != e && null != e.summary && "" !== e.summary) {
-                if (e.type === a.R.BUNDLE && e.summary.includes("{joinedItems}")) {
-                    let n = s(e, t);
-                    return e.summary.replace("{joinedItems}", n)
+                if (e.type === r.R.BUNDLE && e.summary.includes("{joinedItems}")) {
+                    let a = s(e, t);
+                    return e.summary.replace("{joinedItems}", a)
                 }
                 return e.summary
             }
             switch (e?.type) {
-                case a.R.AVATAR_DECORATION:
+                case r.R.AVATAR_DECORATION:
                     return i.intl.string(i.t["3lv7q2"]);
-                case a.R.PROFILE_EFFECT:
+                case r.R.PROFILE_EFFECT:
                     return i.intl.string(i.t.VhJL72);
-                case a.R.NAMEPLATE:
+                case r.R.NAMEPLATE:
                     return i.intl.string(i.t.ik37EZ);
-                case a.R.BUNDLE:
+                case r.R.BUNDLE:
                     return s(e, t);
                 default:
                     return ""

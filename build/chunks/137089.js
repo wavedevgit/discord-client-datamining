@@ -78,8 +78,8 @@ let C = l.memo(function(e) {
     } = e, {
         hasDivider: T,
         canHaveVoiceSummary: S
-    } = l.useMemo(() => (0, m.B3)(n, N, t), [n, N, t, s]), b = l.useMemo(() => t === _.PU ? null : n.getCategoryFromSection(t), [n, t, s]), v = (0, u.jN)(E), {
-        enableWaveformIcon: y
+    } = l.useMemo(() => (0, m.B3)(n, N, t), [n, N, t, s]), b = l.useMemo(() => t === _.PU ? null : n.getCategoryFromSection(t), [n, t, s]), y = (0, u.jN)(E), {
+        enableWaveformIcon: v
     } = (0, d.b)(E, "ChannelListSectionFooter"), j = (0, r.yK)([h.Ay], () => {
         if (null == b || !b.isCollapsed || !S) return [];
         let e = b.getChannelRecords(),
@@ -87,10 +87,10 @@ let C = l.memo(function(e) {
         for (let n of e) {
             if (!n.isGuildVocal()) continue;
             let e = h.Ay.isChannelOrParentOptedIn(E, n.id);
-            (!v || e) && t.push(n)
+            (!y || e) && t.push(n)
         }
         return t
-    }, [b, S, E, v]), R = l.useMemo(() => (0, A.fK)({
+    }, [b, S, E, y]), R = l.useMemo(() => (0, A.fK)({
         channels: j,
         selectedChannelId: I,
         selectedVoiceChannelId: C,
@@ -112,7 +112,7 @@ let C = l.memo(function(e) {
                 max: 8,
                 showUserPopout: !0,
                 guildId: E,
-                renderLeadingIcon: y ? e => (0, i.jsx)(c.A, {
+                renderLeadingIcon: v ? e => (0, i.jsx)(c.A, {
                     color: "currentColor",
                     className: a()(e, g.Gj)
                 }) : void 0

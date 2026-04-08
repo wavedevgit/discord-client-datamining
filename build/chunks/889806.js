@@ -26,8 +26,8 @@ var i = n(627968),
     T = n(734057),
     S = n(696451),
     b = n(71393),
-    v = n(576705),
-    y = n(383501),
+    y = n(576705),
+    v = n(383501),
     j = n(222823),
     R = n(543465),
     O = n(287809),
@@ -196,10 +196,10 @@ class B extends M.Ay {
             resolvedUnreadSetting: T,
             enableActivities: S,
             showMenuItemPopover: b,
-            markMenuItemPopoverAsDismissed: v,
-            channelItemRef: y,
+            markMenuItemPopoverAsDismissed: y,
+            channelItemRef: v,
             isSuggestedSection: j
-        } = this.props, R = y ?? this.channelItemRef, O = !b && o, L = !b && S && null != N && N.length > 0, M = (0, g.M)(E), D = (0, i.jsxs)("li", {
+        } = this.props, R = v ?? this.channelItemRef, O = !b && o, L = !b && S && null != N && N.length > 0, M = (0, g.M)(E), D = (0, i.jsxs)("li", {
             className: a()(this.getClassName(), {
                 [w.r9]: this.isDisabled(),
                 [w.wH]: n
@@ -249,7 +249,7 @@ class B extends M.Ay {
                 })
             }), b && (0, i.jsx)(f.A, {
                 targetElementRef: R,
-                markMenuItemPopoverAsDismissed: v
+                markMenuItemPopoverAsDismissed: y
             })]
         });
         return _ ? u(h(D)) : D
@@ -272,11 +272,11 @@ function H(e) {
         unread: j.Ay.hasUnread(t.id),
         ackMessageId: j.Ay.ackMessageId(t.id),
         isLowImportanceMention: j.Ay.getIsMentionLowImportance(t.id)
-    })), g = (0, o.bG)([R.Ay], () => R.Ay.resolveUnreadSetting(t)), f = (0, o.cf)([T.A, v.A], () => {
+    })), g = (0, o.bG)([R.Ay], () => R.Ay.resolveUnreadSetting(t)), f = (0, o.cf)([T.A, y.A], () => {
         let e = T.A.getChannel(t.parent_id);
         return {
-            canManageChannel: v.A.can(P.xBc.MANAGE_CHANNELS, t),
-            canReorderChannel: !0 !== s && (n.id === k.Vc || (null != e ? v.A.can(P.xBc.MANAGE_CHANNELS, e) : v.A.can(P.xBc.MANAGE_CHANNELS, n)))
+            canManageChannel: y.A.can(P.xBc.MANAGE_CHANNELS, t),
+            canReorderChannel: !0 !== s && (n.id === k.Vc || (null != e ? y.A.can(P.xBc.MANAGE_CHANNELS, e) : y.A.can(P.xBc.MANAGE_CHANNELS, n)))
         }
     }), C = (0, o.bG)([I.A], () => I.A.shouldIndicateNewChannel(n.id, t.id)), {
         needSubscriptionToAccess: b,
@@ -303,7 +303,7 @@ function H(e) {
         channelType: t.type,
         isPopoverAllowed: n.id !== k.Vc
     });
-    return (0, o.bG)([y.A, S.Ay], () => y.A.getChannelId() !== t.id && S.Ay.isCurrentUserGuest(t.getGuildId())) ? null : (0, i.jsx)(V, {
+    return (0, o.bG)([v.A, S.Ay], () => v.A.getChannelId() !== t.id && S.Ay.isCurrentUserGuest(t.getGuildId())) ? null : (0, i.jsx)(V, {
         ...p,
         ...f,
         ...e,

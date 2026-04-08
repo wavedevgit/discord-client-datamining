@@ -39,8 +39,8 @@ let E = (0, a.A)(e => {
             chatOpen: r.A.getChatOpen(a.id)
         }), [a.id]),
         b = (0, d.uy)(a.id),
-        v = (0, d.zy)(a.id, c.ip.AUDIENCE),
-        y = (0, s.bG)([o.A], () => null != N ? o.A.getParticipant(a.id, N) : null),
+        y = (0, d.zy)(a.id, c.ip.AUDIENCE),
+        v = (0, s.bG)([o.A], () => null != N ? o.A.getParticipant(a.id, N) : null),
         j = (0, d.E5)(a.id, c.ip.SPEAKER),
         R = j.filter(x),
         O = null != j.find(e => e.type === c.wY.STREAM),
@@ -62,7 +62,7 @@ let E = (0, a.A)(e => {
             speakerTileHeight: n
         }),
         V = T ? E - 32 : Math.min(E - 64, 3 * w + 8),
-        H = e => e === G.length - 1 || 0 === v && 1 === e,
+        H = e => e === G.length - 1 || 0 === y && 1 === e,
         [F, W] = l.useState(!1),
         [K, Y] = l.useState(!1);
     return (0, i.jsx)(A.A, {
@@ -80,8 +80,8 @@ let E = (0, a.A)(e => {
                 speakers: R,
                 channel: a,
                 isStreamLive: O
-            }, `speaker-header-${t}`) : 2 === t ? 0 === v ? null : (0, i.jsx)(m.A, {
-                participantCount: v,
+            }, `speaker-header-${t}`) : 2 === t ? 0 === y ? null : (0, i.jsx)(m.A, {
+                participantCount: y,
                 label: g.intl.string(g.t["3foUu5"]),
                 className: f.wx,
                 onClick: () => Y(!K),
@@ -115,7 +115,7 @@ let E = (0, a.A)(e => {
                             tileWidth: w,
                             channel: a,
                             participants: s,
-                            selectedParticipant: y,
+                            selectedParticipant: v,
                             popoutType: C
                         })
                     }, `speakers-${t}-${n}`);

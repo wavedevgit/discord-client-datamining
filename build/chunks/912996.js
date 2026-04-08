@@ -1,25 +1,25 @@
 /** chunk id: 912996 params = (module,exports,require) **/
 n.d(t, {
-    A: () => o
+    A: () => r
 });
-var a = n(311907),
-    i = n(73153);
-let r = {};
-class s extends a.Ay.PersistedStore {
+var i = n(311907),
+    l = n(73153);
+let s = {};
+class a extends i.Ay.PersistedStore {
     static displayName = "ActivityInviteEducationStore";
     static persistKey = "ActivityInviteEducationExperimentStore";
     initialize(e) {
-        Object.assign(r, e)
+        Object.assign(s, e)
     }
     getState() {
-        return r
+        return s
     }
     shouldShowEducation(e) {
-        return !0 !== r[e]
+        return !0 !== s[e]
     }
 }
-let o = new s(i.h, {
+let r = new a(l.h, {
     ACTIVITY_INVITE_EDUCATION_DISMISS: function(e) {
-        return r[e.key] = e.value, !0
+        return s[e.key] = e.value, !0
     }
 })

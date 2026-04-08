@@ -1,7 +1,7 @@
 /** chunk id: 43136 params = (module,exports,require) **/
 n.d(t, {
     A: () => S,
-    C: () => N
+    C: () => y
 });
 var i = n(627968),
     l = n(64700),
@@ -12,8 +12,8 @@ var i = n(627968),
     d = n(241524),
     c = n(289397),
     u = n(607470),
-    _ = n(263063),
-    m = n(258335),
+    m = n(263063),
+    _ = n(258335),
     h = n(253932),
     p = n(696451),
     g = n(287809),
@@ -27,7 +27,7 @@ var i = n(627968),
     b = n(985018),
     T = n(66996);
 
-function y(e) {
+function N(e) {
     let {
         onClick: t
     } = e;
@@ -48,11 +48,11 @@ function y(e) {
     })
 }
 
-function N(e) {
+function y(e) {
     let {
         coverImageAsset: t,
         isPreview: n = !1
-    } = e, l = h.kt.useSetting(), s = (0, f.j)() && l, [r, a] = (0, m.A)(t, s), o = s ? (0, i.jsx)(u.A, {
+    } = e, l = h.kt.useSetting(), s = (0, f.j)() && l, [r, a] = (0, _.A)(t, s), o = s ? (0, i.jsx)(u.A, {
         autoPlay: !0,
         loop: !0,
         className: T.N4,
@@ -81,7 +81,7 @@ function S(e) {
         subscriptionsSettings: n
     } = e, s = t.id, {
         nickname: u,
-        nickcolor: m
+        nickcolor: _
     } = (0, a.cf)([p.Ay, g.default], () => {
         let e = g.default.getCurrentUser();
         r()(null != e, "user cannot be null");
@@ -107,7 +107,7 @@ function S(e) {
         }), h && (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)(o.hKd, {
                 size: 4
-            }), (0, i.jsx)(y, {
+            }), (0, i.jsx)(N, {
                 onClick: () => (0, v.A)({
                     guildId: s
                 })
@@ -123,9 +123,9 @@ function S(e) {
         children: [(0, i.jsxs)("div", {
             className: T.op,
             children: [(0, i.jsx)("div", {
-                children: (0, i.jsx)(_.Ay, {
+                children: (0, i.jsx)(m.Ay, {
                     guild: t,
-                    size: _.Ay.Sizes.LARGER,
+                    size: m.Ay.Sizes.LARGER,
                     iconSrc: null == t.icon || P ? (0, c.n)("server_products/storefront/default-guild-icon.jpg") : void 0
                 })
             }), (0, i.jsx)(o.hKd, {
@@ -154,7 +154,7 @@ function S(e) {
                         usernameHook: function(e, t) {
                             return (0, i.jsx)("span", {
                                 style: {
-                                    color: m
+                                    color: _
                                 },
                                 children: e
                             }, t)
@@ -164,7 +164,7 @@ function S(e) {
                     size: 9
                 }), M]
             })]
-        }), (0, i.jsx)(N, {
+        }), (0, i.jsx)(y, {
             coverImageAsset: n?.cover_image_asset,
             isPreview: P
         })]

@@ -1,4 +1,5 @@
 /** chunk id: 743630 params = (module,exports,require) **/
+"use strict";
 e.exports = {
     zr: "root__48c1c",
     JC: "role__48c1c",

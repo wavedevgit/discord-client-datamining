@@ -4,8 +4,8 @@ t.d(n, {
 });
 var i = t(627968),
     a = t(64700),
-    r = t(397927),
-    l = t(163126),
+    l = t(397927),
+    r = t(163126),
     s = t(688810),
     o = t(183555),
     d = t(913453),
@@ -20,24 +20,24 @@ function g(e) {
         user: n,
         guildId: t,
         channelId: g,
-        onClose: m
+        onClose: I
     } = e, {
-        mutualFriends: I
+        mutualFriends: m
     } = (0, d.A)(n), {
         analyticsLocations: f
     } = (0, s.Ay)(), {
         context: h,
         trackUserProfileAction: x
-    } = (0, o.NJ)(), v = (0, l.A)();
+    } = (0, o.NJ)(), v = (0, r.A)();
     return a.useEffect(() => {
         (0, c.A)(n.id, v)
-    }, [n.id, v]), (0, i.jsx)(r.IpV, {
+    }, [n.id, v]), (0, i.jsx)(l.IpV, {
         className: A.DK,
         fade: !0,
-        children: null == I ? (0, i.jsx)("div", {
+        children: null == m ? (0, i.jsx)("div", {
             className: A.Ie,
-            children: (0, i.jsx)(r.y$y, {})
-        }) : 0 === I.length ? (0, i.jsxs)("div", {
+            children: (0, i.jsx)(l.y$y, {})
+        }) : 0 === m.length ? (0, i.jsxs)("div", {
             className: A.Ie,
             children: [(0, i.jsx)("div", {
                 className: A.on
@@ -45,20 +45,20 @@ function g(e) {
                 className: A.BI,
                 children: p.intl.string(p.t["/5p4gx"])
             })]
-        }) : I.map(e => {
+        }) : m.map(e => {
             let {
                 key: n,
                 user: a,
-                status: r
+                status: l
             } = e;
             return (0, i.jsx)(_.A, {
                 user: a,
-                status: r,
+                status: l,
                 guildId: t,
                 channelId: g,
                 onSelect: () => {
                     var e;
-                    m?.(), x({
+                    I?.(), x({
                         action: "PRESS_MUTUAL_FRIEND"
                     }), e = a.id, (0, u.openUserProfileModal)({
                         ...h,

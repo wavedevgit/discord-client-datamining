@@ -6,8 +6,8 @@ var i = n(627968);
 n(64700);
 var a = n(503698),
     r = n.n(a),
-    l = n(397927),
-    s = n(224521);
+    s = n(397927),
+    l = n(224521);
 
 function o(e) {
     let {
@@ -17,9 +17,9 @@ function o(e) {
         IconComponent: o
     } = e;
     return (0, i.jsxs)("div", {
-        className: r()(s.UD, a),
-        children: [(0, i.jsx)(l.DUT, {
-            className: s.x6,
+        className: r()(l.UD, a),
+        children: [(0, i.jsx)(s.DUT, {
+            className: l.x6,
             onClick: t,
             "aria-hidden": !0,
             children: (0, i.jsx)(o, {
@@ -27,8 +27,8 @@ function o(e) {
                 color: "currentColor",
                 "aria-hidden": !0
             })
-        }), null != n ? (0, i.jsx)(l.Text, {
-            className: s.P,
+        }), null != n ? (0, i.jsx)(s.Text, {
+            className: l.P,
             "aria-hidden": !0,
             variant: "text-xxs/bold",
             color: "interactive-text-default",

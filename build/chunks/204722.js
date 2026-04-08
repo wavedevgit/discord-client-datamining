@@ -27,8 +27,8 @@ var i = n(627968),
     T = n(338771),
     S = n(212637),
     b = n(397400),
-    v = n(488803),
-    y = n(44621),
+    y = n(488803),
+    v = n(44621),
     j = n(823748),
     R = n(997692),
     O = n(201805),
@@ -74,9 +74,9 @@ let Y = l.memo(function(e) {
             analyticsLocations: ei
         } = (0, f.Ay)(), el = (0, L.A)(D?.id), es = K(D, M, C), {
             enabled: ea
-        } = y._.useConfig({
+        } = v._.useConfig({
             location: "activity-panel"
-        }), er = (0, j.Bp)("activity-panel"), eo = (0, v.C$)(r ?? void 0, "activity-panel"), ed = (0, o.bG)([G.A], () => G.A.hasConsented(B.YAq.PERSONALIZATION)), ec = (0, j.TF)(g?.id, {
+        }), er = (0, j.Bp)("activity-panel"), eo = (0, y.C$)(r ?? void 0, "activity-panel"), ed = (0, o.bG)([G.A], () => G.A.hasConsented(B.YAq.PERSONALIZATION)), ec = (0, j.TF)(g?.id, {
             shouldFetch: er || eo
         }), eu = ea && ed && ec, eh = eu && er, eA = eu && eo, e_ = l.useCallback(() => {
             a()(null != M, "Received null activity"), k.default.track(B.HAw.ACTIVITY_PANEL_BUTTON_CLICKED, {
@@ -196,7 +196,7 @@ let Y = l.memo(function(e) {
                     })
                 }
             }) : null,
-            ev = function() {
+            ey = function() {
                 let e, t, n;
                 if (null == g && null != C && !(0, _.f)() || !d && !s) return null;
                 let l = null;
@@ -216,7 +216,7 @@ let Y = l.memo(function(e) {
                     })
                 })
             }(),
-            ey = es && null == C ? (0, i.jsx)(w.A, {
+            ev = es && null == C ? (0, i.jsx)(w.A, {
                 ref: $,
                 tooltipText: H.intl.string(H.t["hC/Zey"]),
                 onClick: e_,
@@ -259,9 +259,9 @@ let Y = l.memo(function(e) {
                     eT(!1), null != eC.current && (clearTimeout(eC.current), eC.current = null)
                 }
             });
-        return null == ev && null == ey && null == ej && null == eR && null == eL && null == eS && null == eb ? null : (0, i.jsxs)("div", {
+        return null == ey && null == ev && null == ej && null == eR && null == eL && null == eS && null == eb ? null : (0, i.jsxs)("div", {
             className: W.o1,
-            children: [eS ?? eL ?? ey, eb, ev, ej ?? eR ?? eO, eM]
+            children: [eS ?? eL ?? ev, eb, ey, ej ?? eR ?? eO, eM]
         })
     }),
     z = l.forwardRef(function(e, t) {

@@ -1,44 +1,44 @@
 /** chunk id: 841252 params = (module,exports,require) **/
-n.d(t, {
-    A: () => h
+t.d(n, {
+    A: () => m
 });
-var i = n(627968),
-    l = n(64700),
-    s = n(503698),
-    a = n.n(s),
-    r = n(158954),
-    o = n(224850),
-    d = n(778712),
-    c = n(985018),
-    u = n(278272);
+var i = t(627968),
+    a = t(64700),
+    s = t(503698),
+    l = t.n(s),
+    r = t(158954),
+    c = t(224850),
+    o = t(778712),
+    u = t(985018),
+    d = t(278272);
 
-function h(e) {
+function m(e) {
     let {
-        affinities: t,
-        className: n
-    } = e, s = l.useMemo(() => {
-        if (t.length > 1) {
+        affinities: n,
+        className: t
+    } = e, s = a.useMemo(() => {
+        if (n.length > 1) {
             var e;
-            return c.intl.formatToPlainString(c.t.HaVk0X, {
-                username: null != (e = t[0]).globalName ? e.globalName : e.username,
-                numFriends: t.length - 1
+            return u.intl.formatToPlainString(u.t.HaVk0X, {
+                username: null != (e = n[0]).globalName ? e.globalName : e.username,
+                numFriends: n.length - 1
             })
         }
         return ""
-    }, [t]);
-    if (t.length <= 1) return null;
-    let h = t.map((e, n) => (0, i.jsx)(o.n, {
+    }, [n]);
+    if (n.length <= 1) return null;
+    let m = n.map((e, t) => (0, i.jsx)(c.n, {
         affinity: e,
-        applyMask: n !== t.length - 1,
-        size: d._3.SIZE_20
+        applyMask: t !== n.length - 1,
+        size: o._3.SIZE_20
     }, e.id));
     return (0, i.jsxs)("div", {
-        className: a()(u.kL, n),
+        className: l()(d.kL, t),
         children: [(0, i.jsx)("div", {
-            className: u.zc,
-            children: h
+            className: d.zc,
+            children: m
         }), (0, i.jsx)("div", {
-            className: u.FS,
+            className: d.FS,
             children: (0, i.jsx)(r.EYj, {
                 variant: "text-sm/medium",
                 children: s

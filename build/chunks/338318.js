@@ -31,8 +31,8 @@ var i = n(627968),
     y = n(351906),
     O = n(287809),
     R = n(954571),
-    P = n(927578),
-    L = n(890668),
+    L = n(927578),
+    P = n(890668),
     D = n(780207),
     G = n(652215),
     M = n(985018),
@@ -63,14 +63,13 @@ function k() {
             userValue: e?.collectibles?.nameplate
         }),
         H = (0, I.A)() && null != n ? h.Ay.parse(void 0, n).content : n,
-        z = P.Ay.canUsePremiumProfileCustomization(e),
+        z = L.Ay.canUsePremiumProfileCustomization(e),
         Y = (0, j.St)("edit-profile-upsell"),
         {
-            analyticsLocations: X,
-            newestAnalyticsLocation: K
+            analyticsLocations: X
         } = (0, _.Ay)(g.A.USER_SETTINGS_USER_PROFILE);
     s.useEffect(() => () => c.h.wait(u.IM), []);
-    let [W, Z] = s.useState(!1), q = !z, Q = s.useRef(null);
+    let [K, W] = s.useState(!1), Z = !z, q = s.useRef(null);
     return t ? (0, i.jsx)(m.A, {}) : (0, i.jsxs)(_.f5, {
         value: X,
         children: [(0, i.jsx)(A.A, {}), (0, i.jsx)(b.A, {
@@ -89,27 +88,25 @@ function k() {
                 className: null == F ? U.tJ : void 0,
                 isHighlighted: !0
             }),
-            children: (0, i.jsx)(L.A, {})
+            children: (0, i.jsx)(P.A, {})
         }), (0, i.jsx)(o.L, {
-            innerRef: Q,
-            onChange: e => Z(e),
+            innerRef: q,
+            onChange: e => W(e),
             threshold: .25,
-            active: q,
+            active: Z,
             children: (0, i.jsx)("div", {
-                ref: Q,
+                ref: q,
                 children: (0, i.jsx)(C.A, {
                     user: e,
-                    shouldShow: q,
-                    isVisible: W
+                    shouldShow: Z,
+                    isVisible: K
                 })
             })
-        }), q && !w && (0, i.jsx)(p.d, {
+        }), Z && !w && (0, i.jsx)(p.d, {
             className: U.EL,
-            showUpsell: !W,
+            showUpsell: !K,
             text: M.intl.format(M.t.TmfgI2, {
-                onClick: () => (0, f.K)({
-                    analyticsSource: K
-                })
+                onClick: () => (0, f.K)({})
             }),
             textVariant: "heading-md/medium",
             useUpdatedStyling: !0,
@@ -124,7 +121,7 @@ function k() {
                     onClick: () => {
                         R.default.track(G.HAw.TRY_IT_OUT_PRESET_CLICKED, {
                             cta_variant: "floating_action_button"
-                        }), Q?.current?.scrollIntoView({
+                        }), q?.current?.scrollIntoView({
                             behavior: "smooth"
                         })
                     },

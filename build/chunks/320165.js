@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     a = n(64700),
     r = n(503698),
-    l = n.n(r),
-    s = n(311907),
+    s = n.n(r),
+    l = n(311907),
     o = n(459192),
     d = n(990078),
     c = n(397927),
@@ -14,17 +14,17 @@ var i = n(627968),
     _ = n(945830),
     h = n(47167),
     m = n(713654),
-    f = n(461678),
-    p = n(95550),
-    g = n(95701),
+    p = n(461678),
+    g = n(95550),
+    f = n(95701),
     A = n(734057),
     x = n(383501),
     I = n(994500),
     E = n(543465),
     b = n(287809),
     v = n(810412),
-    S = n(914853),
-    C = n(589051),
+    C = n(914853),
+    S = n(589051),
     y = n(129537),
     T = n(578093),
     N = n(145567),
@@ -35,9 +35,9 @@ var i = n(627968),
     P = n(652215),
     R = n(822889),
     D = n(985018),
-    k = n(542811);
+    M = n(542811);
 
-function M(e) {
+function k(e) {
     return null != e && (e.isDM() || e.isMultiUserDM())
 }
 
@@ -46,17 +46,17 @@ function G(e) {
         channel: t,
         pinsOpen: n,
         onTogglePinsPopout: r,
-        onRequestClosePinsPopout: l
-    } = e, s = a.useRef(null);
+        onRequestClosePinsPopout: s
+    } = e, l = a.useRef(null);
     return t?.id == null ? null : (0, i.jsx)(c.YNO, {
-        targetElementRef: s,
+        targetElementRef: l,
         shouldShow: n,
         animation: c.YNO.Animation.NONE,
         position: "bottom",
         align: "right",
         autoInvert: !1,
         ignoreModalClicks: !0,
-        onRequestClose: l,
+        onRequestClose: s,
         renderPopout: e => (0, i.jsx)(_.A, {
             ...e,
             channel: t,
@@ -75,7 +75,7 @@ function G(e) {
                 ...n
             } = e;
             return (0, i.jsx)("div", {
-                ref: s,
+                ref: l,
                 children: (0, i.jsx)(d.m, {
                     text: D.intl.string(D.t["mp1N/2"]),
                     "aria-label": D.intl.string(D.t["mp1N/2"]),
@@ -96,14 +96,14 @@ function G(e) {
 function z(e) {
     let {
         channel: t
-    } = e, n = a.useRef(null), r = t?.id ?? null, l = t?.guild_id != null, [o, u] = (0, s.yK)([E.Ay], () => l && null != r && null != t ? [E.Ay.isChannelMuted(t.getGuildId(), t.id), E.Ay.resolvedMessageNotifications(t)] : [!1, P.orn.ALL_MESSAGES], [t, r, l]), [_, h] = a.useState(!1), m = a.useCallback(() => {
+    } = e, n = a.useRef(null), r = t?.id ?? null, s = t?.guild_id != null, [o, u] = (0, l.yK)([E.Ay], () => s && null != r && null != t ? [E.Ay.isChannelMuted(t.getGuildId(), t.id), E.Ay.resolvedMessageNotifications(t)] : [!1, P.orn.ALL_MESSAGES], [t, r, s]), [_, h] = a.useState(!1), m = a.useCallback(() => {
         h(e => !e), (0, v.YX)(P.uss.TEXT_CHAT_V3, {
             type: v.Z5.TEXT_CHAT,
             value: v.IP.SETTINGS_OPENED,
             secondaryValue: "notification_settings"
         })
-    }, []), p = D.intl.string(D.t.h850Ss), g = o || u !== P.orn.ALL_MESSAGES ? c.a_I : c.XFE;
-    return l && null != t ? (0, i.jsx)(c.YNO, {
+    }, []), g = D.intl.string(D.t.h850Ss), f = o || u !== P.orn.ALL_MESSAGES ? c.a_I : c.XFE;
+    return s && null != t ? (0, i.jsx)(c.YNO, {
         targetElementRef: n,
         shouldShow: _,
         animation: c.YNO.Animation.NONE,
@@ -111,7 +111,7 @@ function z(e) {
         align: "right",
         autoInvert: !1,
         onRequestClose: () => h(!1),
-        renderPopout: e => (0, i.jsx)(f.A, {
+        renderPopout: e => (0, i.jsx)(p.A, {
             ...e,
             channel: t,
             navId: "overlay-channel-context",
@@ -126,12 +126,12 @@ function z(e) {
             return (0, i.jsx)("div", {
                 ref: n,
                 children: (0, i.jsx)(d.m, {
-                    text: p,
-                    "aria-label": p,
+                    text: g,
+                    "aria-label": g,
                     children: (0, i.jsx)(c.K0, {
                         ...a,
-                        icon: g,
-                        "aria-label": p,
+                        icon: f,
+                        "aria-label": g,
                         size: "sm",
                         variant: "icon-only",
                         onClick: m
@@ -148,9 +148,9 @@ function U(e) {
         onStartPrivateCall: n,
         pinsOpen: a,
         onTogglePinsPopout: r,
-        onRequestClosePinsPopout: l
+        onRequestClosePinsPopout: s
     } = e;
-    return M(t) ? (0, i.jsxs)(i.Fragment, {
+    return k(t) ? (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(d.m, {
             text: D.intl.string(D.t.JJogjm),
             "aria-label": D.intl.string(D.t.JJogjm),
@@ -165,7 +165,7 @@ function U(e) {
             channel: t,
             pinsOpen: a,
             onTogglePinsPopout: r,
-            onRequestClosePinsPopout: l
+            onRequestClosePinsPopout: s
         }), t.isMultiUserDM() ? (0, i.jsx)(d.m, {
             text: D.intl.string(D.t["LR+Ptf"]),
             "aria-label": D.intl.string(D.t["LR+Ptf"]),
@@ -179,7 +179,7 @@ function U(e) {
                         type: v.Z5.INVITE,
                         value: v.IP.PANEL_OPENED,
                         secondaryValue: "add_members"
-                    }), (0, p.Jz)({
+                    }), (0, g.Jz)({
                         channel: t,
                         onComplete: e => {
                             (0, N.D$)({
@@ -225,24 +225,24 @@ function F(e) {
         user: n,
         guild: r,
         title: _,
-        dragStart: f,
-        dragging: p
+        dragStart: p,
+        dragging: g
     } = e, {
         hasFriendList: E
-    } = (0, C.M8)("TextChatHeader"), [G, z] = a.useState(!1), F = (0, s.bG)([x.A], () => x.A.getChannelId(), []), W = t?.isDM() ? n?.id ?? null : null, H = (0, j.p)(W), B = F === t?.id, Y = D.intl.string(R.default.tYPfF2), X = (0, s.bG)([A.A], () => t?.isThread() && null != t.parent_id ? A.A.getChannel(t.parent_id) : null, [t]), Z = (0, s.bG)([b.default, I.A], () => null != X ? (0, h.m1)(X, b.default, I.A) : null, [X]), K = (0, s.bG)([], () => {
+    } = (0, S.M8)("TextChatHeader"), [G, z] = a.useState(!1), F = (0, l.bG)([x.A], () => x.A.getChannelId(), []), W = t?.isDM() ? n?.id ?? null : null, H = (0, j.p)(W), B = F === t?.id, Y = D.intl.string(R.default.tYPfF2), X = (0, l.bG)([A.A], () => t?.isThread() && null != t.parent_id ? A.A.getChannel(t.parent_id) : null, [t]), Z = (0, l.bG)([b.default, I.A], () => null != X ? (0, h.m1)(X, b.default, I.A) : null, [X]), K = (0, l.bG)([], () => {
         var e, i;
         return e = t, i = n, null == e ? null : e.isDM() && null != i ? I.A.isFriend(i.id) ? {
-            tab: S.x.FRIENDS,
+            tab: C.x.FRIENDS,
             targetId: i.id
-        } : null : (0, g.ke)(e.type) ? {
-            tab: S.x.MESSAGES,
+        } : null : (0, f.ke)(e.type) ? {
+            tab: C.x.MESSAGES,
             targetId: e.id
-        } : (0, g.ay)(e.type) ? {
-            tab: S.x.VOICE,
+        } : (0, f.ay)(e.type) ? {
+            tab: C.x.VOICE,
             targetId: e.id
         } : null
     }, [t, n]), J = a.useCallback(e => {
-        M(t) && ((0, v.YX)(P.uss.TEXT_CHAT_V3, {
+        k(t) && ((0, v.YX)(P.uss.TEXT_CHAT_V3, {
             type: v.Z5.CALL_BUTTON,
             value: v.IP.ENABLED,
             secondaryValue: e ? "video" : "voice"
@@ -258,14 +258,14 @@ function F(e) {
         })
     }, [t?.id]);
     return (0, i.jsxs)("div", {
-        className: l()(k.XV, p && k.cB),
+        className: s()(M.XV, g && M.cB),
         onMouseDown: e => {
-            0 === e.button && f(y.P.MOVE, e.clientX, e.clientY)
+            0 === e.button && p(y.P.MOVE, e.clientX, e.clientY)
         },
         children: [(0, i.jsxs)("div", {
-            className: k.LD,
+            className: M.LD,
             children: [(0, i.jsx)("div", {
-                className: k.gr,
+                className: M.gr,
                 children: (0, i.jsx)(L.J, {
                     application: H,
                     fallback: (0, i.jsx)(w.g, {
@@ -276,17 +276,17 @@ function F(e) {
                     })
                 })
             }), (0, i.jsxs)("div", {
-                className: k.G1,
+                className: M.G1,
                 children: [(() => {
                     if (null != W) return null;
                     let e = (0, m.gU)(t, r);
                     return null != e ? (0, i.jsx)(e, {
-                        className: k.gr,
+                        className: M.gr,
                         size: "xs"
                     }) : null
                 })(), null != X && null != Z ? (0, i.jsxs)(i.Fragment, {
                     children: [(0, i.jsx)(c.DUT, {
-                        className: k.oH,
+                        className: M.oH,
                         onMouseDown: e => e.stopPropagation(),
                         onClick: e => {
                             e.stopPropagation(), (0, N.D$)({
@@ -306,17 +306,17 @@ function F(e) {
                             children: Z
                         })
                     }), (0, i.jsx)(c._BQ, {
-                        className: k.ln,
+                        className: M.ln,
                         size: "xs",
                         color: c.LU0.colors.TEXT_MUTED
                     })]
                 }) : null, (0, i.jsxs)(c.Text, {
-                    className: k.DD,
+                    className: M.DD,
                     variant: "text-sm/medium",
                     color: "text-strong",
                     children: [_, H?.name != null && "" !== H.name ? (0, i.jsx)(c.Text, {
                         tag: "span",
-                        className: k.X7,
+                        className: M.X7,
                         variant: "text-xs/medium",
                         color: "text-muted",
                         children: D.intl.formatToPlainString(R.default.x1k3cO, {
@@ -326,7 +326,7 @@ function F(e) {
                 })]
             })]
         }), (0, i.jsxs)("div", {
-            className: k.IE,
+            className: M.IE,
             onMouseDown: e => {
                 e.stopPropagation()
             },

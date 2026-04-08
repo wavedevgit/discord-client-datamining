@@ -206,7 +206,7 @@ let X = l.memo(l.forwardRef(function(e, t) {
         handleOuterClick: e1
     } = (0, V.MD)(b, eN, y.id), {
         handleAutocompleteVisibilityChange: e2
-    } = (0, V.uW)(b, y.id), e3 = (0, V.NO)(eN), e7 = (0, V.Vu)(eH, b, eN), e6 = (0, V.HG)(eN), e5 = (0, V.C)({
+    } = (0, V.uW)(b, y.id), e3 = (0, V.NO)(eN), e7 = (0, V.Vu)(eH, b, eN), e6 = (0, V.HG)(eN), e9 = (0, V.C)({
         editorRef: eN,
         disabled: eR,
         textValue: s,
@@ -215,9 +215,9 @@ let X = l.memo(l.forwardRef(function(e, t) {
         submit: eB
     });
     (0, G.R)(eG, y.guild_id, y.id);
-    let [e9, e4] = l.useState(!1), e8 = l.useCallback(() => {
+    let [e5, e4] = l.useState(!1), e8 = l.useCallback(() => {
         e1(), e4(!0)
-    }, [e1]), te = e9 || s.length > 0 || null != e_ || ef.length > 0, {
+    }, [e1]), te = e5 || s.length > 0 || null != e_ || ef.length > 0, {
         editorHeaderHeight: tt,
         paddingTop: tn
     } = (0, A.zhh)({
@@ -438,7 +438,7 @@ let X = l.memo(l.forwardRef(function(e, t) {
                 onSelectGIF: e7,
                 onSelectEmoji: e3,
                 onSelectKaomoji: e6,
-                onSelectSticker: e5,
+                onSelectSticker: e9,
                 channel: y,
                 closeOnModalOuterClick: eA,
                 parentModalKey: ep,

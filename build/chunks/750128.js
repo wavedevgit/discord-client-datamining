@@ -7,8 +7,8 @@ n.d(t, {
 var o, d = n(284009),
     c = n.n(d),
     u = n(311907),
-    _ = n(73153),
-    m = n(843472),
+    m = n(73153),
+    _ = n(843472),
     h = n(155718),
     p = n(706727),
     g = n(927813),
@@ -19,7 +19,7 @@ class x extends u.Ay.Store {
         return e !== i ? null : l
     }
 }
-let f = new x(_.h, {
+let f = new x(m.h, {
     LOGOUT: function() {
         return i = null, l = null, s = null, r = null, a = null, !0
     },
@@ -27,13 +27,13 @@ let f = new x(_.h, {
         let {
             nonce: t
         } = e;
-        return t === a && (m.A.deleteMessage(r, s, !0), s = null, r = null, a = null), !1
+        return t === a && (_.A.deleteMessage(r, s, !0), s = null, r = null, a = null), !1
     },
     INTERACTION_IFRAME_MODAL_CREATE: function(e) {
         let {
             nonce: t
         } = e;
-        return t === a && (m.A.deleteMessage(r, s, !0), s = null, r = null, a = null), !1
+        return t === a && (_.A.deleteMessage(r, s, !0), s = null, r = null, a = null), !1
     },
     INTERACTION_QUEUE: function(e) {
         let {

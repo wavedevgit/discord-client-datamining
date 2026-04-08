@@ -30,8 +30,8 @@ let N = e => {
         currentCategoryId: T,
         directoryEntries: S,
         categoryCounts: b,
-        allEntriesCount: v,
-        isLoading: y
+        allEntriesCount: y,
+        isLoading: v
     } = (0, s.cf)([A.A], () => {
         let e = A.A.getCurrentCategoryId(t.id),
             n = A.A.getDirectoryEntries(t.id, e === x.mU.ALL ? null : e),
@@ -146,7 +146,7 @@ let N = e => {
         },
         directoryEntries: j,
         categoryCounts: b,
-        allEntriesCount: v,
-        isLoading: y
+        allEntriesCount: y,
+        isLoading: v
     })
 }

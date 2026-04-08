@@ -5,8 +5,8 @@ n.d(t, {
 });
 var i, a = n(627968),
     r = n(64700),
-    l = n(503698),
-    s = n.n(l),
+    s = n(503698),
+    l = n.n(s),
     o = n(311907),
     d = n(459192),
     c = n(397927),
@@ -14,17 +14,17 @@ var i, a = n(627968),
     _ = n(713654),
     h = n(941971),
     m = n(734057),
-    f = n(71393),
-    p = n(222823),
-    g = n(994500),
+    p = n(71393),
+    g = n(222823),
+    f = n(994500),
     A = n(485296),
     x = n(741961),
     I = n(287809),
     E = n(1193),
     b = n(145567),
     v = n(922611),
-    S = n(651813),
-    C = n(919843),
+    C = n(651813),
+    S = n(919843),
     y = n(534765),
     T = n(256688),
     N = n(652215),
@@ -36,12 +36,12 @@ let O = r.memo(function(e) {
         channelId: t,
         selectedVoiceChannelId: n,
         iconVariant: i = "DEFAULT"
-    } = e, l = null != n && t === n, j = (0, o.bG)([E.A], () => E.A.getSelectedChannelId() === t, [t]), O = (0, o.bG)([E.A], () => E.A.getVoiceChatMinimized()), P = (0, c.rdh)(c.LU0.colors.ICON_STATUS_ONLINE), R = (0, o.bG)([A.A], () => !!l && !!(A.A.isAnyoneElseSpeaking() || A.A.isCurrentUserSpeaking()), [l]), [D, k] = r.useState(!1), {
-        mentionCount: M,
+    } = e, s = null != n && t === n, j = (0, o.bG)([E.A], () => E.A.getSelectedChannelId() === t, [t]), O = (0, o.bG)([E.A], () => E.A.getVoiceChatMinimized()), P = (0, c.rdh)(c.LU0.colors.ICON_STATUS_ONLINE), R = (0, o.bG)([A.A], () => !!s && !!(A.A.isAnyoneElseSpeaking() || A.A.isCurrentUserSpeaking()), [s]), [D, M] = r.useState(!1), {
+        mentionCount: k,
         isMentionLowImportance: G
-    } = (0, o.cf)([p.Ay], () => null != t ? {
-        mentionCount: p.Ay.getMentionCount(t),
-        isMentionLowImportance: p.Ay.getIsMentionLowImportance(t)
+    } = (0, o.cf)([g.Ay], () => null != t ? {
+        mentionCount: g.Ay.getMentionCount(t),
+        isMentionLowImportance: g.Ay.getIsMentionLowImportance(t)
     } : {
         mentionCount: 0,
         isMentionLowImportance: !1
@@ -50,7 +50,7 @@ let O = r.memo(function(e) {
         user: U,
         guild: V,
         channel: F
-    } = (0, o.cf)([m.A, f.A, I.default, g.A], () => {
+    } = (0, o.cf)([m.A, p.A, I.default, f.A], () => {
         let e = m.A.getChannel(t) ?? null;
         if (null == e) return {
             label: w.intl.string(w.t.zLZPmk),
@@ -58,16 +58,16 @@ let O = r.memo(function(e) {
             guild: null,
             channel: null
         };
-        let n = (0, u.m1)(e, I.default, g.A);
+        let n = (0, u.m1)(e, I.default, f.A);
         return {
             label: n,
-            user: (0, S.j)(e, I.default),
-            guild: (0, S.P)(e, f.A),
+            user: (0, C.j)(e, I.default),
+            guild: (0, C.P)(e, p.A),
             channel: e
         }
     }, [t]);
     r.useEffect(() => {
-        null == F && (0, C.b)(t)
+        null == F && (0, S.b)(t)
     }, [F, t]);
     let W = (0, o.bG)([x.A, I.default], () => {
             if (null == F) return !1;
@@ -77,9 +77,9 @@ let O = r.memo(function(e) {
                 if (n !== e) return !0;
             return !1
         }, [F]),
-        H = (0, o.bG)([p.Ay], () => {
+        H = (0, o.bG)([g.Ay], () => {
             let e = F?.id;
-            return null != e && p.Ay.hasUnread(e)
+            return null != e && g.Ay.hasUnread(e)
         }, [F]),
         B = (0, a.jsx)("div", {
             className: L.St,
@@ -88,7 +88,7 @@ let O = r.memo(function(e) {
                 if ("CHANNEL_TYPE" === i && !e) {
                     let e = (0, _.gU)(F, V);
                     e ??= c.oyn;
-                    let t = l && !O && R,
+                    let t = s && !O && R,
                         n = {
                             boxShadow: "none"
                         },
@@ -99,7 +99,7 @@ let O = r.memo(function(e) {
                             opacity: .45
                         });
                     return t && (n.boxShadow = `0 0 0 2px rgba(${i}), 0 0 12px 2px rgba(${r})`), (0, a.jsx)("div", {
-                        className: s()(L.s, j && L.lJ),
+                        className: l()(L.s, j && L.lJ),
                         style: n,
                         children: (0, a.jsx)(e, {
                             className: L.Yc,
@@ -115,7 +115,7 @@ let O = r.memo(function(e) {
                     isSelected: j,
                     size: v.c.SIZE_40,
                     isTyping: W,
-                    mentionCount: M,
+                    mentionCount: k,
                     isMentionLowImportance: G
                 })
             })()
@@ -148,7 +148,7 @@ let O = r.memo(function(e) {
         children: (0, a.jsxs)(c.DUT, {
             className: L.pc,
             onClick: () => {
-                l && (0, b.S$)({
+                s && (0, b.S$)({
                     minimized: !1
                 }), (0, b.D$)({
                     target: {
@@ -162,8 +162,8 @@ let O = r.memo(function(e) {
                 })
             },
             onContextMenu: Y,
-            onMouseEnter: () => k(!0),
-            onMouseLeave: () => k(!1),
+            onMouseEnter: () => M(!0),
+            onMouseLeave: () => M(!1),
             children: [B, (0, a.jsx)("div", {
                 className: L.vT,
                 children: (0, a.jsx)(h.A, {

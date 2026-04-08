@@ -28,7 +28,7 @@ let f = function(e) {
         }) : (0, l.mMO)(async () => {
             let {
                 default: l
-            } = await Promise.all([n.e("59701"), n.e("35929"), n.e("74571"), n.e("15167")]).then(n.bind(n, 142630));
+            } = await Promise.all([n.e("79149"), n.e("35929"), n.e("74571"), n.e("15167")]).then(n.bind(n, 142630));
             return n => (0, i.jsx)(l, {
                 imageUri: e,
                 file: s,

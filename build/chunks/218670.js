@@ -6,8 +6,8 @@ var i = n(627968);
 n(64700);
 var a = n(503698),
     r = n.n(a),
-    l = n(311907),
-    s = n(734057),
+    s = n(311907),
+    l = n(734057),
     o = n(309010),
     d = n(494566),
     c = n(882014);
@@ -15,7 +15,7 @@ var a = n(503698),
 function u(e) {
     let {
         locked: t
-    } = e, n = (0, l.bG)([o.A], () => o.A.getVoiceChannelId()), a = (0, l.bG)([s.A], () => s.A.getChannel(n)), u = null != a;
+    } = e, n = (0, s.bG)([o.A], () => o.A.getVoiceChannelId()), a = (0, s.bG)([l.A], () => l.A.getChannel(n)), u = null != a;
     return (0, i.jsxs)("div", {
         className: r()({
             [c.KE]: !0,

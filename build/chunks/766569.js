@@ -1,6 +1,6 @@
 /** chunk id: 766569 params = (module,exports,require) **/
 n.d(t, {
-    A: () => L
+    A: () => P
 });
 var i = n(627968),
     s = n(64700),
@@ -32,7 +32,7 @@ var i = n(627968),
     O = n(985018),
     R = n(995367);
 
-function P(e) {
+function L(e) {
     (0, o.mMO)(async () => {
         let {
             default: t
@@ -47,30 +47,30 @@ function P(e) {
     })
 }
 
-function L(e) {
+function P(e) {
     let {
         selectedGuild: t,
         onGuildChange: n
     } = e, {
         analyticsLocations: l
-    } = (0, m.Ay)(u.A.USER_SETTINGS_GUILD_PROFILE), L = (0, r.bG)([b.default], () => {
+    } = (0, m.Ay)(u.A.USER_SETTINGS_GUILD_PROFILE), P = (0, r.bG)([b.default], () => {
         let e = b.default.getCurrentUser();
         return a()(null != e, "GuildIdentitySettingsPage: user cannot be undefined"), e
-    }), D = (0, r.bG)([f.Ay], () => null != t ? f.Ay.getMember(t.id, L.id) : null), G = (0, r.bG)([T.A], () => !T.A.isFetchingProfile(L.id, t?.id)), M = (0, r.bG)([S.A], () => S.A.hidePersonalInformation), {
+    }), D = (0, r.bG)([f.Ay], () => null != t ? f.Ay.getMember(t.id, P.id) : null), G = (0, r.bG)([T.A], () => !T.A.isFetchingProfile(P.id, t?.id)), M = (0, r.bG)([S.A], () => S.A.hidePersonalInformation), {
         pendingAvatar: U,
         pendingNameplate: k,
         ...w
     } = (0, r.cf)([p.A], () => p.A.getPendingChanges(t?.id)), V = (0, h.V7)({
-        userId: L.id,
+        userId: P.id,
         image: U
     }), B = (0, _.lw)({
         pendingValue: k,
-        userValue: L?.collectibles?.nameplate,
+        userValue: P?.collectibles?.nameplate,
         guildValue: D?.collectibles?.nameplate,
         guildId: t?.id
     }), {
         pendingDisplayNameStyles: F
-    } = (0, _.B0)(L, t?.id);
+    } = (0, _.B0)(P, t?.id);
     return (s.useEffect(() => () => d.h.wait(N.IM), []), M) ? (0, i.jsx)(c.A, {}) : G ? (0, i.jsxs)(m.f5, {
         value: l,
         children: [(0, i.jsx)(o.Text, {
@@ -94,15 +94,15 @@ function L(e) {
                     ...w,
                     pendingAvatar: V,
                     pendingDisplayNameStyles: F,
-                    user: L,
+                    user: P,
                     guild: t,
-                    canUsePremiumCustomization: C.Ay.canUsePremiumProfileCustomization(L),
-                    onUpsellClick: P
+                    canUsePremiumCustomization: C.Ay.canUsePremiumProfileCustomization(P),
+                    onUpsellClick: L
                 }),
                 nameplatePreview: (0, i.jsx)(g.A, {
                     ...w,
                     pendingDisplayNameStyles: F,
-                    user: L,
+                    user: P,
                     guildId: t?.id,
                     nameplate: B,
                     className: null == B ? R.t : void 0,

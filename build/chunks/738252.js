@@ -15,29 +15,29 @@ var n = l(627968),
     p = l(927578),
     x = l(993408),
     A = l(821701),
-    g = l(536572),
-    h = l(130147),
+    h = l(536572),
+    g = l(130147),
     _ = l(512213),
     j = l(985018),
-    y = l(921064);
-let C = e => {
+    C = l(921064);
+let y = e => {
         let {
             purchase: t,
             product: l,
             user: i
-        } = e, d = (0, c.bG)([u.default], () => u.default.locale), A = (0, g.Sw)(t), h = (0, g.VG)(l), _ = p.Ay.canUseCollectibles(i), C = (0, x.gA)(t), v = (0, x.G0)(l), E = !_ && C, [f, I] = s.useState(null);
+        } = e, d = (0, c.bG)([u.default], () => u.default.locale), A = (0, h.Sw)(t), g = (0, h.VG)(l), _ = p.Ay.canUseCollectibles(i), y = (0, x.gA)(t), v = (0, x.G0)(l), E = !_ && y, [f, I] = s.useState(null);
         s.useEffect(() => {
             I(t?.expiresAt != null ? (0, m.Tf)(Date.now(), t.expiresAt) : null)
         }, [t?.expiresAt]);
         let T = null == t || E;
         return (0, n.jsxs)("div", {
-            className: r()(y.ip, {
-                [y.w6]: T
+            className: r()(C.ip, {
+                [C.w6]: T
             }),
             children: [(0, n.jsx)(o.Text, {
                 color: "text-strong",
                 variant: "text-sm/semibold",
-                children: (0, a.isEmpty)(A) ? h : A
+                children: (0, a.isEmpty)(A) ? g : A
             }), T ? (0, n.jsx)(o.Text, {
                 color: "text-default",
                 variant: "text-sm/normal",
@@ -68,7 +68,7 @@ let C = e => {
                             })
                         })]
                     })]
-                }), C && (0, n.jsx)(o.Text, {
+                }), y && (0, n.jsx)(o.Text, {
                     variant: "text-xxs/normal",
                     color: "text-muted",
                     children: j.intl.string(j.t.nKdAlO)
@@ -84,22 +84,22 @@ let C = e => {
         } = e, i = (0, c.cf)([d.A], () => d.A.getPendingChanges(l)), {
             product: a,
             purchase: o
-        } = (0, A.A)(s?.skuId), u = p.Ay.canUseCollectibles(t), m = (0, x.gA)(o), g = null == o || !u && m;
+        } = (0, A.A)(s?.skuId), u = p.Ay.canUseCollectibles(t), m = (0, x.gA)(o), h = null == o || !u && m;
         return (0, n.jsxs)("div", {
-            className: r()(y.i1, {
-                [y.Zj]: null != s && g
+            className: r()(C.i1, {
+                [C.Zj]: null != s && h
             }),
             children: [(0, n.jsx)("div", {
-                className: y.u_,
+                className: C.u_,
                 role: "img",
                 "aria-label": j.intl.string(j.t.SZeUdR),
                 children: (0, n.jsxs)("div", {
-                    className: y.Xp,
+                    className: C.Xp,
                     "aria-hidden": !0,
-                    children: [(0, n.jsx)(h._, {
+                    children: [(0, n.jsx)(g._, {
                         width: 124,
                         opacity: .9
-                    }), (0, n.jsx)(h._, {
+                    }), (0, n.jsx)(g._, {
                         width: 124,
                         opacity: .9
                     }), (0, n.jsx)(_.A, {
@@ -108,15 +108,15 @@ let C = e => {
                         guildId: l,
                         nameplate: s,
                         isHighlighted: !0
-                    }), (0, n.jsx)(h._, {
+                    }), (0, n.jsx)(g._, {
                         width: 124,
                         opacity: .9
-                    }), (0, n.jsx)(h._, {
+                    }), (0, n.jsx)(g._, {
                         width: 124,
                         opacity: .9
                     })]
                 })
-            }), null != s && (0, n.jsx)(C, {
+            }), null != s && (0, n.jsx)(y, {
                 purchase: o,
                 product: a,
                 user: t

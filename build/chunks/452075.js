@@ -1,12 +1,12 @@
 /** chunk id: 452075 params = (module,exports,require) **/
 n.d(t, {
-    e: () => f
+    e: () => p
 }), n(321073);
 var i = n(64700),
     a = n(311907),
     r = n(532624),
-    l = n(531685),
-    s = n(350535),
+    s = n(531685),
+    l = n(350535),
     o = n(365971),
     d = n(395011),
     c = n(222506),
@@ -34,32 +34,32 @@ function m(e, t) {
     return e.keyCode === t.keyCode && e.shiftKey === t.shiftKey && e.metaKey === t.metaKey && e.altKey === t.altKey && e.ctrlKey === t.ctrlKey
 }
 
-function f() {
+function p() {
     let e = (0, u.A)(),
         t = (0, a.bG)([d.A], () => d.A.getTargetPID(), []),
         n = (0, a.bG)([r.Ay], () => {
             let e = r.Ay.getOverlayKeybind();
             return null != e ? e.shortcut : []
         }, []),
-        f = (0, a.bG)([c.A], () => c.A.isInputLocked(t), [t]),
-        p = (0, a.bG)([l.A], () => {
+        p = (0, a.bG)([c.A], () => c.A.isInputLocked(t), [t]),
+        g = (0, a.bG)([s.A], () => {
             let t = (0, o.Q2)(e);
-            return l.A.isVisible(t) && l.A.isFocused(t)
+            return s.A.isVisible(t) && s.A.isFocused(t)
         }, [e]),
-        g = i.useRef([]),
-        A = i.useMemo(() => (0, s.pi)(n).map(e => h(e)), [n]),
+        f = i.useRef([]),
+        A = i.useMemo(() => (0, l.pi)(n).map(e => h(e)), [n]),
         x = i.useMemo(() => n.length > 0, [n]),
-        I = !f && x && p;
+        I = !p && x && g;
     i.useEffect(() => {
-        g.current = []
-    }, [f, A]), i.useEffect(() => {
+        f.current = []
+    }, [p, A]), i.useEffect(() => {
         if (!I) {
-            g.current = [];
+            f.current = [];
             return
         }
         let t = e => {
                 let t = h(e),
-                    n = g.current,
+                    n = f.current,
                     i = n.some(e => m(e, t)),
                     a = function(e) {
                         let t = e.key.toLowerCase();
@@ -71,7 +71,7 @@ function f() {
             },
             n = e => {
                 let t = h(e),
-                    n = g.current,
+                    n = f.current,
                     i = n.findIndex(e => m(e, t));
                 i > -1 && n.splice(i, 1)
             };

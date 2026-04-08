@@ -1,8 +1,9 @@
 /** chunk id: 894374 params = (module,exports,require) **/
-n.d(e, {
-    A: () => r
+"use strict";
+n.d(t, {
+    A: () => i
 });
-let i = (0, n(945810).mj)({
+let a = (0, n(945810).mj)({
     name: "2026-02-referral-reminder-dc",
     kind: "user",
     defaultConfig: {
@@ -15,11 +16,11 @@ let i = (0, n(945810).mj)({
     }
 });
 
-function r(t) {
+function i(e) {
     let {
-        location: e
-    } = t;
-    return i.useConfig({
-        location: e
+        location: t
+    } = e;
+    return a.useConfig({
+        location: t
     }).enabled
 }

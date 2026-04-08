@@ -10,8 +10,8 @@ var i, l = n(627968),
     d = n(360560),
     c = n(985018),
     u = n(811904),
-    _ = ((i = _ || {})[i.DIRECTORY_HERO = 1] = "DIRECTORY_HERO", i[i.DIRECTORY_TILE = 2] = "DIRECTORY_TILE", i[i.DIRECTORY_SEARCH = 3] = "DIRECTORY_SEARCH", i[i.LISTING = 4] = "LISTING", i[i.EMBED = 5] = "EMBED", i);
-let m = e => {
+    m = ((i = m || {})[i.DIRECTORY_HERO = 1] = "DIRECTORY_HERO", i[i.DIRECTORY_TILE = 2] = "DIRECTORY_TILE", i[i.DIRECTORY_SEARCH = 3] = "DIRECTORY_SEARCH", i[i.LISTING = 4] = "LISTING", i[i.EMBED = 5] = "EMBED", i);
+let _ = e => {
         let {
             className: t
         } = e;
@@ -94,7 +94,7 @@ let m = e => {
         })
     };
 class C extends s.PureComponent {
-    static Types = _;
+    static Types = m;
     getState() {
         let {
             inLibrary: e,
@@ -120,7 +120,7 @@ class C extends s.PureComponent {
                     className: a()(t, n)
                 });
             case 1:
-                return (0, l.jsx)(m, {
+                return (0, l.jsx)(_, {
                     className: a()(t, n)
                 });
             case 3:

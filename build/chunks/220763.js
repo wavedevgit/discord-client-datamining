@@ -1,55 +1,33 @@
 /** chunk id: 220763 params = (module,exports,require) **/
-s.d(e, {
-    default: () => L
+n.d(e, {
+    default: () => d
 });
-var n = s(627968);
-s(64700);
-var a = s(87719),
-    c = s(414345),
-    i = s(244975),
-    o = s(788868),
-    d = s(652215),
-    l = s(985018),
-    r = s(736975),
-    p = s(101280);
+var s = n(627968);
+n(64700);
+var c = n(87719),
+    i = n(244975),
+    a = n(985018),
+    r = n(101280);
 
-function L(t) {
+function d(t) {
     let {
-        channel: e,
-        onClose: s,
-        ...L
-    } = t, u = l.intl.format(l.t.AVVUse, {
+        onClose: e,
+        ...n
+    } = t, d = a.intl.format(a.t.AVVUse, {
         onLearnMore: function() {
-            s(), (0, a.e)()
+            e(), (0, c.e)()
         }
     });
-    return (0, c.g1)({
-        location: "PremiumMessageLengthUpsell"
-    }) ? (0, n.jsx)(i.F, {
-        title: l.intl.string(l.t.SeL3ec),
-        subtitle: u,
+    return (0, s.jsx)(i.F, {
+        title: a.intl.string(a.t.SeL3ec),
+        subtitle: d,
         graphic: {
-            src: p.A,
+            src: r.A,
             type: "image"
         },
-        secondaryCTA: l.intl.string(l.t["13/7kX"]),
-        onSecondaryClick: s,
-        onClose: s,
-        ...L
-    }) : (0, n.jsx)(i.A, {
-        artURL: r.A,
-        type: o.e.MESSAGE_LENGTH_UPSELL,
-        title: l.intl.string(l.t.SeL3ec),
-        body: u,
-        glowUp: u,
-        analyticsSource: {
-            page: e?.getGuildId() != null ? d.liQ.GUILD_CHANNEL : e?.isGroupDM() || e?.isPrivate() ? d.liQ.DM_CHANNEL : null
-        },
-        analyticsLocation: {
-            section: d.JJy.MESSAGE_LENGTH_UPSELL_MODAL,
-            object: d.ZSU.BUTTON_CTA
-        },
-        onClose: s,
-        ...L
+        secondaryCTA: a.intl.string(a.t["13/7kX"]),
+        onSecondaryClick: e,
+        onClose: e,
+        ...n
     })
 }

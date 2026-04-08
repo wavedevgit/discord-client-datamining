@@ -26,8 +26,8 @@ var i = n(627968),
     T = n(995273),
     S = n(854627),
     b = n(95701),
-    v = n(260509),
-    y = n(734057),
+    y = n(260509),
+    v = n(734057),
     j = n(256587),
     R = n(71393),
     O = n(851109),
@@ -60,7 +60,7 @@ function V(e) {
         size: u._3J.SIZE_32,
         guildId: g?.id,
         animateOnHover: !0
-    }), b = n.type !== P.rbe.GUILD_ANNOUNCEMENT || null == g, y = (0, I.y)({
+    }), b = n.type !== P.rbe.GUILD_ANNOUNCEMENT || null == g, v = (0, I.y)({
         channel: n,
         message: t,
         user: t.author,
@@ -97,12 +97,12 @@ function V(e) {
                     "aria-label": "User Avatar",
                     src: N,
                     size: u._3J.SIZE_32,
-                    cornerIconUrl: null != g ? (0, v.Iv)(g, 24) : void 0,
+                    cornerIconUrl: null != g ? (0, y.Iv)(g, 24) : void 0,
                     cornerIconOffsetX: 4,
                     cornerIconOffsetY: 3
                 }) : (0, i.jsx)(G.h, {
                     "aria-label": "Guild Icon",
-                    src: (0, v.Iv)(g, 32),
+                    src: (0, y.Iv)(g, 32),
                     size: u._3J.SIZE_32,
                     cornerIconUrl: t.author.getAvatarURL(g.id, 24),
                     cornerIconOffsetX: 4,
@@ -131,7 +131,7 @@ function V(e) {
                             children: (0, i.jsx)(c.A, {
                                 children: O
                             })
-                        }), y]
+                        }), v]
                     }) : (0, i.jsx)(c.A, {
                         children: (0, i.jsx)(u.Heading, {
                             variant: "text-md/semibold",
@@ -328,9 +328,9 @@ let K = (0, l.memo)(function(e) {
         isUnread: r
     } = e, c = t.message, A = (0, M.op)(), {
         params: _
-    } = (0, o.W5)(), m = (0, d.bG)([y.A], () => {
+    } = (0, o.W5)(), m = (0, d.bG)([v.A], () => {
         if (null == c) return null;
-        let e = y.A.getChannel(t.channelId);
+        let e = v.A.getChannel(t.channelId);
         return null != e ? e : new b.jb({
             id: t.channelId,
             guild_id: t.guildId,

@@ -1,8 +1,8 @@
 /** chunk id: 940980 params = (module,exports,require) **/
-n.d(t, {
-    W: () => a
+a.d(t, {
+    W: () => r
 });
-let r = (0, n(945810).mj)({
+let n = (0, a(945810).mj)({
         name: "2026-03-shop-fiat-prioritization",
         kind: "user",
         defaultConfig: {
@@ -17,6 +17,6 @@ let r = (0, n(945810).mj)({
             }
         }
     }),
-    a = e => r.useConfig({
+    r = e => n.useConfig({
         location: e
     }).prioritizeFiat

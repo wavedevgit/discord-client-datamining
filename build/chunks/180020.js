@@ -41,12 +41,12 @@ function f(e) {
         (0, c.p)({
             displayNameStyles: null
         }), u.default.track(x.HAw.DISPLAY_NAME_STYLES_REMOVED)
-    }, []), P = (0, s.useCallback)(() => {
+    }, []), L = (0, s.useCallback)(() => {
         (0, c.p)({
             guildId: n,
             displayNameStyles: null
         })
-    }, [n]), L = void 0 !== N || (null != n ? null != C : null != E);
+    }, [n]), P = void 0 !== N || (null != n ? null != C : null != E);
     return (0, i.jsx)(_.A, {
         title: h.intl.string(p.default["86GtGH"]),
         titleIcon: y ? (0, i.jsx)(a.LpS, {
@@ -63,7 +63,7 @@ function f(e) {
                 size: "sm",
                 text: h.intl.string(p.default.vJqrIg),
                 onClick: O
-            }), null == n && L && (0, i.jsx)(a.Button, {
+            }), null == n && P && (0, i.jsx)(a.Button, {
                 variant: "secondary",
                 size: "sm",
                 text: h.intl.string(p.default.ymq8WQ),
@@ -72,7 +72,7 @@ function f(e) {
                 variant: "secondary",
                 size: "sm",
                 text: h.intl.string(p.default["j/KRxc"]),
-                onClick: P
+                onClick: L
             })]
         })
     })

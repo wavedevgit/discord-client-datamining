@@ -27,8 +27,8 @@ var l = n(503698),
     T = n(665691),
     S = n(724759),
     b = n(123973),
-    v = n(241756),
-    y = n(313961),
+    y = n(241756),
+    v = n(313961),
     j = n(532622),
     R = n(546871),
     O = n(416528),
@@ -45,7 +45,7 @@ function k(e) {
         channel: n,
         stream: l,
         color: s
-    } = e, a = (0, v.A)(n, t, l);
+    } = e, a = (0, y.A)(n, t, l);
     return null == t || null == l ? null : (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(d.A, {
             className: G.my,
@@ -126,10 +126,10 @@ function B(e) {
         location: "channel_call_header_toolbar"
     }), {
         focusedParticipant: f
-    } = (0, a.cf)([y.A], () => ({
-        focusedParticipant: y.A.getSelectedParticipant(t.id),
-        participantsOpen: y.A.getParticipantsOpen(t.id)
-    }), [t.id]), b = (0, A.Ay)(t), v = (0, _.gU)(t), [R] = (0, u.A)(f?.type === M.lp.ACTIVITY ? [f.applicationId] : []), k = U.intl.string(U.t.BVZqJl);
+    } = (0, a.cf)([v.A], () => ({
+        focusedParticipant: v.A.getSelectedParticipant(t.id),
+        participantsOpen: v.A.getParticipantsOpen(t.id)
+    }), [t.id]), b = (0, A.Ay)(t), y = (0, _.gU)(t), [R] = (0, u.A)(f?.type === M.lp.ACTIVITY ? [f.applicationId] : []), k = U.intl.string(U.t.BVZqJl);
     t.isDM() ? k = U.intl.string(U.t.jN2DfZ) : t.isGroupDM() && (k = U.intl.string(U.t["e5y+gm"]));
     let B = (0, a.bG)([h.A], () => h.A.getChannelStatus(t)),
         V = t.isGuildVoice() && c && null != B && B.length > 0,
@@ -200,8 +200,8 @@ function B(e) {
                 children: [(0, i.jsx)(x.Ay.Title, {
                     wrapperClassName: G.DD,
                     children: (0, i.jsxs)(i.Fragment, {
-                        children: [null != v ? (0, i.jsx)(x.Ay.ChannelIcon, {
-                            icon: v,
+                        children: [null != y ? (0, i.jsx)(x.Ay.ChannelIcon, {
+                            icon: y,
                             "aria-label": k
                         }) : null, b, W && (0, i.jsx)(r.m, {
                             text: U.intl.string(U.t.QyZ4Td),

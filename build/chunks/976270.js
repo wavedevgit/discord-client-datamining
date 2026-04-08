@@ -5,8 +5,8 @@ t.d(n, {
 var i = t(627968);
 t(64700);
 var a = t(397927),
-    r = t(630054),
-    l = t(793574),
+    l = t(630054),
+    r = t(793574),
     s = t(688810),
     o = t(915089),
     d = t(562153),
@@ -16,19 +16,19 @@ var a = t(397927),
     p = t(716804),
     A = t(718019),
     g = t(31432),
-    m = t(915614),
-    I = t(559506),
+    I = t(915614),
+    m = t(559506),
     f = t(946356),
     h = t(810396),
     x = t(570314),
     v = t(490752),
     E = t(571077),
     b = t(587168),
-    C = t(982985),
-    y = t(159218),
-    T = t(240783),
-    j = t(371843),
-    S = t(518477),
+    y = t(982985),
+    C = t(159218),
+    j = t(240783),
+    S = t(371843),
+    T = t(518477),
     N = t(652215),
     R = t(996988),
     L = t(985018),
@@ -39,30 +39,30 @@ function O(e) {
         user: n,
         currentUser: t,
         guildId: O,
-        originGuildId: U,
-        channelId: k,
-        messageId: D,
+        originGuildId: k,
+        channelId: D,
+        messageId: U,
         roleId: B,
-        sessionId: M,
-        initialTabSection: G,
+        sessionId: G,
+        initialTabSection: M,
         initialScrollTarget: F,
         transitionState: V,
         onClose: w,
         sourceAnalyticsLocations: H = []
-    } = e, W = O === N.ME ? void 0 : O, z = (0, u.Ay)(n.id, W), Y = d.Ay.getName(W, k, n), K = (0, o.GV)(), {
+    } = e, W = O === N.ME ? void 0 : O, z = (0, u.Ay)(n.id, W), Y = d.Ay.getName(W, D, n), K = (0, o.GV)(), {
         analyticsLocations: X
-    } = (0, s.Ay)([...H, l.A.USER_PROFILE_MODAL]), Q = (0, c.pb)({
+    } = (0, s.Ay)([...H, r.A.USER_PROFILE_MODAL]), Q = (0, c.pb)({
         layout: "MODAL",
         userId: n.id,
-        sourceSessionId: M,
+        sourceSessionId: G,
         guildId: W,
-        channelId: k,
-        messageId: D,
+        channelId: D,
+        messageId: U,
         roleId: B
-    }), J = (0, j.A)(n), q = (0, _.A)({
+    }), J = (0, S.A)(n), q = (0, _.A)({
         user: n,
-        guildId: U,
-        channelId: k,
+        guildId: k,
+        channelId: D,
         displayProfile: z,
         onClose: w
     });
@@ -100,7 +100,7 @@ function O(e) {
                                     viewProfileItem: q
                                 })
                             }), (0, i.jsxs)("div", {
-                                children: [(0, i.jsx)(m.A, {
+                                children: [(0, i.jsx)(I.A, {
                                     user: n,
                                     displayProfile: z,
                                     themeType: R.d.MODAL
@@ -110,9 +110,9 @@ function O(e) {
                                         user: n,
                                         displayProfile: z,
                                         guildId: W,
-                                        channelId: k,
+                                        channelId: D,
                                         themeType: R.d.MODAL
-                                    }), (0, i.jsx)(y.A, {
+                                    }), (0, i.jsx)(C.A, {
                                         user: n,
                                         themeType: R.d.MODAL,
                                         hasEntered: V === a.ip4.ENTERED,
@@ -122,17 +122,17 @@ function O(e) {
                                         className: P.Pz,
                                         children: [(0, i.jsx)("div", {
                                             className: P.jS,
-                                            children: (0, i.jsx)(C.e, {
+                                            children: (0, i.jsx)(y.e, {
                                                 variant: "secondary",
                                                 userId: n.id,
-                                                onClose: r.A.popAll
+                                                onClose: l.A.popAll
                                             })
                                         }), (0, i.jsx)("div", {
                                             className: P.pg,
-                                            children: (0, i.jsx)(C.l, {
+                                            children: (0, i.jsx)(y.l, {
                                                 variant: "secondary",
                                                 userId: n.id,
-                                                onClose: r.A.popAll
+                                                onClose: l.A.popAll
                                             })
                                         }), (0, i.jsx)(E.A, {
                                             user: n,
@@ -142,7 +142,7 @@ function O(e) {
                                         })]
                                     })]
                                 })]
-                            }), (0, i.jsx)(I.A, {
+                            }), (0, i.jsx)(m.A, {
                                 userId: n.id,
                                 className: P.Fd
                             }), (0, i.jsxs)("div", {
@@ -159,13 +159,13 @@ function O(e) {
                                         themeType: R.d.MODAL,
                                         onClose: w
                                     })
-                                }), (0, i.jsx)(T.A, {
+                                }), (0, i.jsx)(j.A, {
                                     user: n,
                                     currentUser: t,
                                     displayProfile: z,
                                     guildId: W,
                                     items: J,
-                                    initialSection: G ?? S.RP.BOT_INFO,
+                                    initialSection: M ?? T.RP.BOT_INFO,
                                     onClose: w
                                 })]
                             })]

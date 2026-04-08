@@ -11,8 +11,8 @@ var i = n(627968),
     d = n(565645),
     c = n(114166),
     u = n(891734),
-    _ = n(505527),
-    m = n(260821),
+    m = n(505527),
+    _ = n(260821),
     h = n(767474),
     p = n(449014);
 let g = l.memo(function(e) {
@@ -30,16 +30,16 @@ let g = l.memo(function(e) {
                 isLurking: v,
                 isPendingMember: b,
                 type: T,
-                emojiSize: y
+                emojiSize: N
             } = e,
-            N = T === _.v.BURST,
-            S = (0, m.IN)(x, f, T),
-            j = (0, u.g)(N && null != E ? E : []),
+            y = T === m.v.BURST,
+            S = (0, _.IN)(x, f, T),
+            j = (0, u.g)(y && null != E ? E : []),
             L = l ? p : h,
-            R = N ? C : A,
-            P = (0, c.x)(R, m.$Z),
+            R = y ? C : A,
+            P = (0, c.x)(R, _.$Z),
             D = {};
-        if (N && null != j) {
+        if (y && null != j) {
             let {
                 accentColor: e,
                 backgroundColor: i,
@@ -64,8 +64,8 @@ let g = l.memo(function(e) {
                 }),
                 emojiId: a.id,
                 emojiName: a.name,
-                size: y,
-                animated: N && a.animated
+                size: N,
+                animated: y && a.animated
             }), (0, i.jsx)("div", {
                 className: L.reactionCount,
                 style: M,
@@ -82,7 +82,7 @@ let g = l.memo(function(e) {
             !e || r || d || c(() => {
                 o(!0)
             })
-        }, [r, d]), h = (0, a.K)(u), p = r && !d || t ? m.qT : g;
+        }, [r, d]), h = (0, a.K)(u), p = r && !d || t ? _.qT : g;
         return (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)("div", {
                 ref: h
@@ -90,6 +90,6 @@ let g = l.memo(function(e) {
                 ...s,
                 ...e,
                 emojiSize: "reaction"
-            }, `${e.type===_.v.BURST?"burst:":""}${e.emoji.id??0}:${e.emoji.name}`))]
+            }, `${e.type===m.v.BURST?"burst:":""}${e.emoji.id??0}:${e.emoji.name}`))]
         })
     })

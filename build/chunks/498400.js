@@ -31,13 +31,13 @@ var i = n(627968),
     y = n(553081),
     O = n(422936),
     R = n(234419),
-    P = n(558533),
-    L = n(788868),
+    L = n(558533),
+    P = n(788868),
     D = n(652215),
     G = n(152708);
 let M = function(e) {
     let {
-        entrypoint: t = L.Mf.UserSettings
+        entrypoint: t = P.Mf.UserSettings
     } = e;
     (0, f.P)(T.b);
     let n = (0, A.Hp)(),
@@ -51,10 +51,10 @@ let M = function(e) {
         V = w?.id,
         B = (0, R.V)(),
         F = (0, O.O)(),
-        H = (0, h.Y)(L.T7),
+        H = (0, h.Y)(P.T7),
         [z, Y] = s.useState(!0),
         X = s.useRef(0),
-        K = (0, v.YE)(w, L.PremiumTypes.TIER_2),
+        K = (0, v.YE)(w, P.PremiumTypes.TIER_2),
         W = (0, r.bG)([I.A], () => I.A.hasFetched);
     s.useEffect(() => {
         W || c.xG()
@@ -72,7 +72,7 @@ let M = function(e) {
         n && (null != B || null != F) && (0, j.u1)(B, F)
     }, [n, B, F]);
     let Z = (0, r.bG)([S.A], () => S.A.enabled),
-        q = t === L.Mf.ApplicationStoreHome,
+        q = t === P.Mf.ApplicationStoreHome,
         Q = Z ? (0, i.jsx)(m.A, {}) : n ? (0, i.jsx)(p.uK, {}) : q && K ? (0, i.jsx)(x.f5, {
             value: M,
             children: (0, i.jsx)(y.A, {
@@ -86,7 +86,7 @@ let M = function(e) {
         children: [q && (0, i.jsx)(g.A, {}), Q]
     }) : (0, i.jsx)(x.f5, {
         value: M,
-        children: (0, i.jsx)(P.A, {
+        children: (0, i.jsx)(L.A, {
             entrypoint: t
         })
     })

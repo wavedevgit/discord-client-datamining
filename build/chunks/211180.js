@@ -1,21 +1,21 @@
 /** chunk id: 211180 params = (module,exports,require) **/
 i.d(t, {
-    A: () => T,
-    x: () => A
+    A: () => A,
+    x: () => _
 });
-var n, l = i(627968),
-    a = i(64700),
-    s = i(503698),
-    r = i.n(s),
-    o = i(883885),
-    u = i.n(o),
+var n, a = i(627968),
+    l = i(64700),
+    o = i(503698),
+    r = i.n(o),
+    s = i(883885),
+    c = i.n(s),
     d = i(73153),
-    c = i(900210),
+    u = i(900210),
     h = i(146497),
     m = i(60317),
     p = i(652215),
     g = i(198344),
-    A = ((n = {})[n.NORMAL = 20] = "NORMAL", n[n.LARGE = 32] = "LARGE", n);
+    _ = ((n = {})[n.NORMAL = 20] = "NORMAL", n[n.LARGE = 32] = "LARGE", n);
 let f = async e => {
     let {
         effect: t
@@ -23,29 +23,29 @@ let f = async e => {
     return n.assets[0].p = t.url, n
 };
 
-function T(e) {
+function A(e) {
     let {
         className: t,
         effect: i,
         onComplete: n,
-        emojiSize: s = 20
-    } = e, o = a.useRef(null), h = s * m.YY, p = (h + s) / 2, A = `translateY(${p}px)`;
-    return a.useEffect(() => {
+        emojiSize: o = 20
+    } = e, s = l.useRef(null), h = o * m.YY, p = (h + o) / 2, _ = `translateY(${p}px)`;
+    return l.useEffect(() => {
         let e;
         if (null != i) return !async function() {
-            if (null != o.current) {
+            if (null != s.current) {
                 let t = await f({
                     effect: i
                 });
-                (e = u().loadAnimation({
-                    container: o.current,
+                (e = c().loadAnimation({
+                    container: s.current,
                     renderer: "svg",
                     loop: !1,
                     autoplay: !0,
                     animationData: t
                 })).addEventListener("complete", () => {
                     n?.(), e.destroy()
-                }), null != i.channelId && null != i.messageId && null != i.emoji && i.key === c.W.HOVER && d.h.dispatch({
+                }), null != i.channelId && null != i.messageId && null != i.emoji && i.key === u.W.HOVER && d.h.dispatch({
                     type: "BURST_REACTION_ANIMATION_ADD",
                     channelId: i.channelId,
                     messageId: i.messageId,
@@ -56,16 +56,16 @@ function T(e) {
         }(), () => {
             null != e && e.destroy()
         }
-    }, [n, i, s]), (0, l.jsx)("div", {
+    }, [n, i, o]), (0, a.jsx)("div", {
         className: g.Y,
-        children: (0, l.jsx)("div", {
+        children: (0, a.jsx)("div", {
             className: r()(g.Q, t),
             style: {
-                transform: A,
+                transform: _,
                 height: h,
                 width: h
             },
-            ref: o
+            ref: s
         })
     })
 }

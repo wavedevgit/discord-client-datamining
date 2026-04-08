@@ -1,26 +1,26 @@
 /** chunk id: 11606 params = (module,exports,require) **/
-n.d(t, {
+a.d(t, {
     A: () => d
 });
-var r = n(627968);
-n(64700);
-var a = n(503698),
-    i = n.n(a),
-    s = n(575593),
-    l = n(397927),
-    o = n(985018),
-    c = n(109766);
+var n = a(627968);
+a(64700);
+var r = a(503698),
+    i = a.n(r),
+    s = a(575593),
+    l = a(397927),
+    o = a(985018),
+    c = a(109766);
 
 function d(e) {
     var t;
     let {
-        product: n,
-        isDarkText: a = !1,
+        product: a,
+        isDarkText: r = !1,
         isOrbExclusive: d = !1
-    } = e, u = (t = n.type, d ? o.intl.string(o.t["0TmQRG"]) : t === s.R.AVATAR_DECORATION ? o.intl.string(o.t["7v0T9P"]) : t === s.R.PROFILE_EFFECT ? o.intl.string(o.t.wR5wOo) : null);
-    return null === u ? null : (0, r.jsx)(l.Text, {
+    } = e, u = (t = a.type, d ? o.intl.string(o.t["0TmQRG"]) : t === s.R.AVATAR_DECORATION ? o.intl.string(o.t["7v0T9P"]) : t === s.R.PROFILE_EFFECT ? o.intl.string(o.t.wR5wOo) : null);
+    return null === u ? null : (0, n.jsx)(l.Text, {
         variant: "text-xxs/normal",
-        className: i()([c.kL, a ? c.ap : c.aK]),
+        className: i()([c.kL, r ? c.ap : c.aK]),
         children: u
     })
 }

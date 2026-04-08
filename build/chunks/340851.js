@@ -28,8 +28,8 @@ var i = n(627968),
     T = n(71393),
     S = n(576705),
     b = n(287809),
-    v = n(977997),
-    y = n(376696);
+    y = n(977997),
+    v = n(376696);
 n(281405);
 var j = n(544105),
     R = n(502075),
@@ -121,7 +121,7 @@ let U = (0, A.J)(function(e) {
         clearTimeout(eu.current)
     }, []);
     let eC = () => {
-            if (!z || !(0, x.eo)(A, v.A, T.A, S.A, p.default)[0]) return;
+            if (!z || !(0, x.eo)(A, y.A, T.A, S.A, p.default)[0]) return;
             let e = {
                 streamType: R.U4.GUILD,
                 ownerId: s.id,
@@ -211,7 +211,7 @@ let U = (0, A.J)(function(e) {
                     }) : (0, i.jsx)(o.YNO, {
                         targetElementRef: eo,
                         position: "right",
-                        renderPopout: () => (0, i.jsx)(y.A, {
+                        renderPopout: () => (0, i.jsx)(v.A, {
                             channel: A,
                             user: s,
                             onAction: eI,

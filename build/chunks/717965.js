@@ -26,8 +26,8 @@ var i = n(627968),
     T = n(859894),
     S = n(267102),
     b = n(931991),
-    v = n(151476),
-    y = n(405018),
+    y = n(151476),
+    v = n(405018),
     j = n(704877),
     R = n(173660),
     O = n(105225),
@@ -161,7 +161,7 @@ function e_(e) {
         suppress: _
     } = (0, R.A)(t), m = B.default.getId(), [p] = (0, ea.A)(t), g = X.Ay.isModerator(m, t.id), E = (0, z.Ni)(t.id), I = d(u), {
         parentAnalyticsLocation: N
-    } = (0, A.Ay)(), T = l.useRef(null), v = () => (function(e) {
+    } = (0, A.Ay)(), T = l.useRef(null), y = () => (function(e) {
         let {
             channel: t,
             appContext: n
@@ -214,17 +214,17 @@ function e_(e) {
             return (0, i.jsx)(P.A, {
                 ref: T,
                 label: eo.intl.string(eo.t.c6qKwr),
-                onClick: v,
+                onClick: y,
                 onPopoutClick: n,
                 popoutOpen: l
             })
         }
     }) : _ && !E || p ? (0, i.jsx)(P.A, {
         label: eo.intl.string(eo.t.SMKyih),
-        onClick: v
+        onClick: y
     }) : (0, i.jsx)(P.A, {
         label: eo.intl.string(eo.t.c6qKwr),
-        onClick: v
+        onClick: y
     })
 }
 
@@ -282,10 +282,10 @@ let eg = l.memo(function(e) {
     } = (0, R.A)(t), c = (0, z.Ni)(t.id), u = (0, s.bG)([E.default], () => null != E.default.getAwaitingRemoteSessionInfo()), {
         cameraUnavailable: h,
         enabled: f
-    } = (0, v.A)(), C = (0, j.A)(t), {
+    } = (0, y.A)(), C = (0, j.A)(t), {
         limit: N,
         reachedLimit: T
-    } = (0, y.A)(t), S = (0, s.bG)([W.default], () => W.default.getCurrentUser()), b = (0, s.bG)([V.Ay], () => (0, I.A)(V.Ay)), D = (0, s.bG)([F.A], () => F.A.getVoiceChannelId() === t.id, [t.id]), G = (0, s.bG)([_.A], () => _.A.getStreamParticipants(t.id)[0], [t.id]), P = (0, J.qT)(t.id), B = N > 0, H = T && !P || null != G && G.user.id !== S?.id, K = (0, x.s)("AudioDeviceMenu", n, {
+    } = (0, v.A)(t), S = (0, s.bG)([W.default], () => W.default.getCurrentUser()), b = (0, s.bG)([V.Ay], () => (0, I.A)(V.Ay)), D = (0, s.bG)([F.A], () => F.A.getVoiceChannelId() === t.id, [t.id]), G = (0, s.bG)([_.A], () => _.A.getStreamParticipants(t.id)[0], [t.id]), P = (0, J.qT)(t.id), B = N > 0, H = T && !P || null != G && G.user.id !== S?.id, K = (0, x.s)("AudioDeviceMenu", n, {
         entrypoint: er.GK.CARET
     }), Y = l.useRef(null), q = l.useRef(null);
     if (null == S) return null;

@@ -1,13 +1,13 @@
 /** chunk id: 620851 params = (module,exports,require) **/
 n.d(t, {
-    A: () => f
+    A: () => p
 });
 var i = n(627968),
     a = n(64700),
     r = n(503698),
-    l = n.n(r),
-    s = n(812729),
-    o = n.n(s),
+    s = n.n(r),
+    l = n(812729),
+    o = n.n(l),
     d = n(687498),
     c = n(397927),
     u = n(259788),
@@ -20,39 +20,39 @@ let m = {
     clamp: !0
 };
 
-function f(e) {
+function p(e) {
     let {
         locked: t,
         pinned: n
-    } = e, [r, s] = a.useState(0), [f, p] = a.useState(0), [g, A] = a.useState(0), x = a.useRef(0), [I, E] = a.useState(0), {
+    } = e, [r, l] = a.useState(0), [p, g] = a.useState(0), [f, A] = a.useState(0), x = a.useRef(0), [I, E] = a.useState(0), {
         timeToLiveMs: b,
         reappearTimeMs: v
     } = u.Ay.useState(e => ({
         timeToLiveMs: e.timeToLiveMs,
         reappearTimeMs: e.reappearTimeMs
-    }), o()), S = {
+    }), o()), C = {
         timeToLiveMs: b,
         reappearTimeMs: v
-    }, C = a.useRef(S);
+    }, S = a.useRef(C);
     a.useEffect(() => {
-        C.current = S
+        S.current = C
     }), a.useEffect(() => (x.current = setInterval(() => {
         let e = Date.now();
-        p(e), A(t => {
+        g(e), A(t => {
             if (0 === t) return e;
             let n = e - t,
-                i = C.current.timeToLiveMs,
-                a = i + C.current.reappearTimeMs;
+                i = S.current.timeToLiveMs,
+                a = i + S.current.reappearTimeMs;
             return n > i ? t + a : t
         })
     }, 100), () => {
         clearInterval(x.current)
     }), []);
     let y = () => {
-            s(Date.now()), E(e => e + 1)
+            l(Date.now()), E(e => e + 1)
         },
-        T = r > 0 && f - r < 1e3,
-        N = (0, c.pnh)(g > 0 && g < f && f - g < b, {
+        T = r > 0 && p - r < 1e3,
+        N = (0, c.pnh)(f > 0 && f < p && p - f < b, {
             from: {
                 opacity: 0
             },
@@ -73,7 +73,7 @@ function f(e) {
             style: e,
             className: h.r2,
             children: (0, i.jsx)(_.A, {
-                className: l()(h.VC, T && h.Nd),
+                className: s()(h.VC, T && h.Nd),
                 children: (0, i.jsx)(c.DUT, {
                     onClick: y,
                     className: h.vk,

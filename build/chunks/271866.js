@@ -1,52 +1,53 @@
 /** chunk id: 271866 params = (module,exports,require) **/
-n.d(e, {
-    SH: () => E,
-    cL: () => h,
-    q1: () => p
+"use strict";
+n.d(t, {
+    SH: () => p,
+    cL: () => b,
+    q1: () => m
 });
-var i = n(73153),
-    r = n(795816),
-    a = n(627363),
-    l = n(587895),
-    s = n(20015),
-    o = n(793943),
-    c = n(611010),
+var a = n(73153),
+    i = n(795816),
+    r = n(627363),
+    o = n(587895),
+    c = n(20015),
+    s = n(793943),
+    l = n(611010),
     _ = n(998218),
-    d = n(110782),
-    u = n(652215);
-async function p(t, e) {
-    i.h.dispatch({
-        applicationId: t,
+    u = n(110782),
+    d = n(652215);
+async function m(e, t) {
+    a.h.dispatch({
+        applicationId: e,
         type: "DEVELOPER_TEST_MODE_AUTHORIZATION_START"
     });
     try {
-        if (!await (0, r.Ir)(t)) throw Error("Do not have access!");
-        let n = l.A.getApplication(t);
-        null == n && (n = c.Ay.createFromServer(await a.Ay.fetchApplication(t)));
-        let o = (0, s.n)(n, u.gfo.EMBEDDED);
-        if (o && (null == e || !_.A.URL_REGEX.test(e))) throw Error("Invalid Origin URL for embedded application");
-        return o || d.Cd(n), i.h.dispatch({
+        if (!await (0, i.Ir)(e)) throw Error("Do not have access!");
+        let n = o.A.getApplication(e);
+        null == n && (n = l.Ay.createFromServer(await r.Ay.fetchApplication(e)));
+        let s = (0, c.n)(n, d.gfo.EMBEDDED);
+        if (s && (null == t || !_.A.URL_REGEX.test(t))) throw Error("Invalid Origin URL for embedded application");
+        return s || u.Cd(n), a.h.dispatch({
             type: "DEVELOPER_TEST_MODE_AUTHORIZATION_SUCCESS",
-            applicationId: t,
-            originURL: o ? e : null
+            applicationId: e,
+            originURL: s ? t : null
         }), n
-    } catch (e) {
-        return i.h.dispatch({
+    } catch (t) {
+        return a.h.dispatch({
             type: "DEVELOPER_TEST_MODE_AUTHORIZATION_FAIL",
-            applicationId: t,
-            error: e.message
+            applicationId: e,
+            error: t.message
         }), null
     }
 }
 
-function h() {
-    o.fy.getState().activePanel === o.HP.APPLICATION_TEST_MODE_DEBUG && (0, o.Jp)(), i.h.dispatch({
+function b() {
+    s.fy.getState().activePanel === s.HP.APPLICATION_TEST_MODE_DEBUG && (0, s.Jp)(), a.h.dispatch({
         type: "DEVELOPER_TEST_MODE_RESET"
     })
 }
 
-function E() {
-    o.fy.getState().activePanel === o.HP.APPLICATION_TEST_MODE_DEBUG && (0, o.Jp)(), i.h.dispatch({
+function p() {
+    s.fy.getState().activePanel === s.HP.APPLICATION_TEST_MODE_DEBUG && (0, s.Jp)(), a.h.dispatch({
         type: "DEVELOPER_TEST_MODE_RESET_ERROR"
     })
 }

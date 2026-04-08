@@ -28,8 +28,8 @@ var i = n(627968),
     T = n(486020),
     S = n(975571),
     b = n(282978),
-    v = n(95655),
-    y = n(565265),
+    y = n(95655),
+    v = n(565265),
     j = n(742589),
     R = n(849205),
     O = n(652215),
@@ -155,7 +155,7 @@ function G(e) {
             return (0, i.jsxs)(i.Fragment, {
                 children: [(0, i.jsx)(c.AC4, {
                     children: M.intl.string(M.t["e5y+gm"])
-                }), (0, i.jsx)(v.n, {
+                }), (0, i.jsx)(y.n, {
                     channel: t
                 }, `channel-${t.id}`)]
             });
@@ -278,7 +278,7 @@ function k(e, t) {
         case O.rbe.GUILD_VOICE:
         case O.rbe.GUILD_STAGE_VOICE:
         case O.rbe.GROUP_DM:
-            return null != t ? (0, i.jsx)(y.A, {
+            return null != t ? (0, i.jsx)(v.A, {
                 channel: e,
                 guild: t
             }, e.id) : null;

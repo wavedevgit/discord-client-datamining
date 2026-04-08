@@ -15,12 +15,12 @@ var n = l(627968),
     p = l(696451),
     x = l(287809),
     A = l(954571),
-    g = l(927578),
-    h = l(979286),
+    h = l(927578),
+    g = l(979286),
     _ = l(993408),
     j = l(821701),
-    y = l(841702),
-    C = l(738252),
+    C = l(841702),
+    y = l(738252),
     v = l(35314),
     E = l(652215),
     f = l(788868),
@@ -34,25 +34,25 @@ function N(e) {
         purchases: c,
         analyticsLocations: x,
         onClose: A,
-        guildId: y,
+        guildId: C,
         initialSelectedNameplate: E
-    } = e, N = (0, i.bG)([p.Ay], () => null != y && null != t ? p.Ay.getMember(y, t.id) : null), b = null != N ? N.collectibles?.nameplate : t.collectibles?.nameplate, {
-        pendingNameplate: w
-    } = (0, u.rv)(t, y), [P, k] = (0, s.useState)(() => null != E ? E : void 0 !== w ? w : null == b ? null : (0, _.zd)(c, l).find(e => {
+    } = e, N = (0, i.bG)([p.Ay], () => null != C && null != t ? p.Ay.getMember(C, t.id) : null), b = null != N ? N.collectibles?.nameplate : t.collectibles?.nameplate, {
+        pendingNameplate: P
+    } = (0, u.rv)(t, C), [k, w] = (0, s.useState)(() => null != E ? E : void 0 !== P ? P : null == b ? null : (0, _.zd)(c, l).find(e => {
         let {
             skuId: t
         } = e;
         return t === b.skuId
     }) ?? null), U = (0, u.lw)({
-        pendingValue: P,
+        pendingValue: k,
         userValue: t?.collectibles?.nameplate,
         guildValue: N?.collectibles?.nameplate,
-        guildId: y
+        guildId: C
     }), {
         product: L,
         purchase: O
-    } = (0, j.A)(P?.skuId), S = null != O ? (0, _.gA)(O) : (0, _.G0)(L), M = g.Ay.canUseCollectibles(t), R = void 0 === w ? P?.skuId === b?.skuId : P?.skuId === w?.skuId, D = (0, s.useCallback)(e => {
-        A(), (0, h.Cz)({
+    } = (0, j.A)(k?.skuId), M = null != O ? (0, _.gA)(O) : (0, _.G0)(L), S = h.Ay.canUseCollectibles(t), R = void 0 === P ? k?.skuId === b?.skuId : k?.skuId === P?.skuId, D = (0, s.useCallback)(e => {
+        A(), (0, g.Cz)({
             analyticsLocations: x,
             analyticsSource: a.A.EDIT_NAMEPLATE_MODAL,
             initialProductSkuId: e
@@ -77,39 +77,39 @@ function N(e) {
             scrollbarType: "none",
             children: [(0, n.jsx)(v.A, {
                 currentUser: t,
-                selectedNameplate: P,
-                guildId: y,
-                onSelect: k,
+                selectedNameplate: k,
+                guildId: C,
+                onSelect: w,
                 onOpenShop: D
-            }), (0, n.jsx)(C.A, {
+            }), (0, n.jsx)(y.A, {
                 user: t,
-                guildId: y,
+                guildId: C,
                 nameplate: U
             })]
         }), (0, n.jsxs)(r.jlY, {
             "data-migration-pending": !0,
             className: T.Hx,
-            children: [null != O && (!S || M) || null === P ? (0, n.jsx)(r.Button, {
+            children: [null != O && (!M || S) || null === k ? (0, n.jsx)(r.Button, {
                 variant: "primary",
                 text: I.intl.string(I.t.Jh8fJz),
                 onClick: () => {
                     (0, m.p)({
-                        guildId: y,
-                        nameplate: P
+                        guildId: C,
+                        nameplate: k
                     }), A()
                 },
                 disabled: R
-            }) : null == O && (M || !S) ? (0, n.jsx)(r.Button, {
+            }) : null == O && (S || !M) ? (0, n.jsx)(r.Button, {
                 variant: "primary",
                 onClick: () => D(L?.skuId),
                 text: I.intl.string(I.t.fYfGgK)
             }) : (0, n.jsx)(d.A, {
                 subscriptionTier: f.pe.TIER_2,
-                showGradient: !M,
+                showGradient: !S,
                 textOptions: {
-                    textOverride: g.Ay.isPremium(t) ? I.intl.string(I.t.KXLX7l) : M ? I.intl.string(I.t.mr4K7D) : I.intl.string(I.t.pj0XBN)
+                    textOverride: h.Ay.isPremium(t) ? I.intl.string(I.t.KXLX7l) : S ? I.intl.string(I.t.mr4K7D) : I.intl.string(I.t.pj0XBN)
                 }
-            }), !M && S ? (0, n.jsx)(o.A, {
+            }), !S && M ? (0, n.jsx)(o.A, {
                 itemType: O?.type ?? L?.type,
                 onClose: A
             }) : (0, n.jsx)(r.Button, {
@@ -131,11 +131,11 @@ function b(e) {
     } = e, m = (0, i.bG)([x.default], () => x.default.getCurrentUser()), {
         analyticsLocations: p
     } = (0, c.Ay)(l, a.A.EDIT_NAMEPLATE_MODAL), {
-        categories: g,
-        purchases: h,
+        categories: h,
+        purchases: g,
         isFetchingCategories: _,
         isFetchingPurchases: j
-    } = (0, y.Ay)(), C = _ || j && 0 === h.size;
+    } = (0, C.Ay)(), y = _ || j && 0 === g.size;
     return ((0, s.useEffect)(() => {
         A.default.track(E.HAw.OPEN_MODAL, {
             type: E.JJy.NAMEPLATE_CUSTOMIZATION,
@@ -145,16 +145,16 @@ function b(e) {
         value: p,
         children: (0, n.jsx)(r.EOs, {
             transitionState: t,
-            size: C ? r.rIJ.DYNAMIC : r.rIJ.MEDIUM,
+            size: y ? r.rIJ.DYNAMIC : r.rIJ.MEDIUM,
             parentComponent: "NameplateModal",
             "data-migration-pending": !0,
-            children: C ? (0, n.jsx)(r.y$y, {
+            children: y ? (0, n.jsx)(r.y$y, {
                 className: T.u1,
                 type: r.y$y.Type.SPINNING_CIRCLE
             }) : (0, n.jsx)(N, {
                 currentUser: m,
-                categories: g,
-                purchases: h,
+                categories: h,
+                purchases: g,
                 analyticsLocations: p,
                 guildId: d,
                 initialSelectedNameplate: u,

@@ -1,26 +1,26 @@
 /** chunk id: 778992 params = (module,exports,require) **/
-n.d(t, {
-    X: () => a
+a.d(t, {
+    X: () => r
 });
-var r = n(64700);
+var n = a(64700);
 
-function a(e) {
+function r(e) {
     let {
         slideCount: t,
-        intervalMs: n = 3e3
-    } = e, [a, i] = (0, r.useState)(0), [s, l] = (0, r.useState)(!1), o = (0, r.useCallback)(e => {
+        intervalMs: a = 3e3
+    } = e, [r, i] = (0, n.useState)(0), [s, l] = (0, n.useState)(!1), o = (0, n.useCallback)(e => {
         s || e < 0 || e >= t || (l(!0), setTimeout(() => {
             i(e), l(!1)
         }, 300))
     }, [s, t, 300]);
-    return (0, r.useEffect)(() => {
+    return (0, n.useEffect)(() => {
         if (t <= 1) return;
         let e = setInterval(() => {
-            o((a + 1) % t)
-        }, n);
+            o((r + 1) % t)
+        }, a);
         return () => clearInterval(e)
-    }, [t, n, a, o]), {
-        activeSlide: a,
+    }, [t, a, r, o]), {
+        activeSlide: r,
         isTransitioning: s
     }
 }

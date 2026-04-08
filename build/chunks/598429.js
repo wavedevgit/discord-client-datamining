@@ -11,8 +11,8 @@ var i = n(627968),
     d = n(442433),
     c = n(212245),
     u = n(15285),
-    _ = n(651743),
-    m = n(134861),
+    m = n(651743),
+    _ = n(134861),
     h = n(194871),
     p = n(723702),
     g = n(715671),
@@ -132,7 +132,7 @@ function E(e) {
     let {
         applicationId: t,
         libraryApplication: n
-    } = e, l = (0, c.p)(), [s, a] = (0, r.yK)([m.A, _.A, h.A], () => [m.A.isConnected(t) || _.A.isLaunchable(t) || null != n && h.A.isLaunchable(n.id, n.branchId), _.A.launchingGames.has(t)], [t, n]), o = (0, r.bG)([u.Ay], () => new Set(u.Ay.getRunningVerifiedApplicationIds()).has(t), [t]), d = (0, r.bG)([h.A], () => null != n ? h.A.getState(n.id, n.branchId) : null, [n]);
+    } = e, l = (0, c.p)(), [s, a] = (0, r.yK)([_.A, m.A, h.A], () => [_.A.isConnected(t) || m.A.isLaunchable(t) || null != n && h.A.isLaunchable(n.id, n.branchId), m.A.launchingGames.has(t)], [t, n]), o = (0, r.bG)([u.Ay], () => new Set(u.Ay.getRunningVerifiedApplicationIds()).has(t), [t]), d = (0, r.bG)([h.A], () => null != n ? h.A.getState(n.id, n.branchId) : null, [n]);
     return (0, i.jsx)(C, {
         ...e,
         analyticsContext: l,

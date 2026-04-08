@@ -28,7 +28,7 @@ let g = l.memo(function(e) {
         badge: u.default.getMentionCount(g),
         isMentionLowImportance: u.default.getIsMentionLowImportance(g),
         unread: u.default.hasUnread(g)
-    })), v = (0, o.Ig)(f) && 0 === T, y = l.useMemo(() => null != n ? n : v ? (0, i.jsx)("div", {
+    })), y = (0, o.Ig)(f) && 0 === T, v = l.useMemo(() => null != n ? n : y ? (0, i.jsx)("div", {
         className: p.j,
         children: (0, i.jsx)(a.E$n, {
             size: "custom",
@@ -37,7 +37,7 @@ let g = l.memo(function(e) {
             width: 10,
             height: 10
         })
-    }) : null, [n, v]);
+    }) : null, [n, y]);
     return (0, i.jsx)(m.A, {
         ...e,
         guild: f,
@@ -46,7 +46,7 @@ let g = l.memo(function(e) {
         selected: C === g,
         badge: T,
         isMentionLowImportance: b,
-        lowerBadge: y,
+        lowerBadge: v,
         unread: S,
         mediaState: N,
         guildJoinRequestStatus: x

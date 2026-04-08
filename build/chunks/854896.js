@@ -1,23 +1,23 @@
 /** chunk id: 854896 params = (module,exports,require) **/
-n.d(t, {
-    CK: () => r,
-    VS: () => i,
-    xc: () => s
+a.d(t, {
+    CK: () => i,
+    VS: () => r,
+    xc: () => l
 });
-var a = n(652215),
-    l = n(339984);
+var n = a(652215),
+    s = a(339984);
 
-function i(e, t) {
+function r(e, t) {
     let {
-        isGIF: n
+        isGIF: a
     } = t;
-    if (e === l.HL.GUILD_BANNER) return n ? a.GuildFeatures.ANIMATED_BANNER : a.GuildFeatures.BANNER
+    if (e === s.HL.GUILD_BANNER) return a ? n.GuildFeatures.ANIMATED_BANNER : n.GuildFeatures.BANNER
 }
 
-function s(e) {
-    return e === l.HL.AVATAR || e === l.HL.BANNER
+function l(e) {
+    return e === s.HL.AVATAR || e === s.HL.BANNER
 }
 
-function r(e) {
-    return e === l.HL.BANNER
+function i(e) {
+    return e === s.HL.BANNER
 }

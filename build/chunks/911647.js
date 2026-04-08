@@ -16,11 +16,11 @@ var s = r(627968),
     A = r(927578),
     h = r(993408),
     g = r(821701),
-    p = r(536572),
-    _ = r(162232),
+    _ = r(536572),
+    p = r(162232),
     v = r(985018),
     j = r(278945);
-let y = [{
+let I = [{
         avatarSize: c._3J.SIZE_40,
         showStatus: !1
     }, {
@@ -33,10 +33,10 @@ let y = [{
         avatarSize: c._3J.SIZE_32,
         showStatus: !0
     }],
-    I = e => {
+    y = e => {
         let {
             purchase: t
-        } = e, r = (0, o.bG)([u.default], () => u.default.locale), i = (0, h.gA)(t), n = null != t.expiresAt ? (0, x.Tf)(Date.now(), t.expiresAt) : null, a = (0, p.Sw)(t), l = t.purchasedAt.toLocaleDateString(r, {
+        } = e, r = (0, o.bG)([u.default], () => u.default.locale), i = (0, h.gA)(t), n = null != t.expiresAt ? (0, x.Tf)(Date.now(), t.expiresAt) : null, a = (0, _.Sw)(t), l = t.purchasedAt.toLocaleDateString(r, {
             month: "long",
             year: "numeric"
         });
@@ -84,12 +84,12 @@ let y = [{
         } = e, x = (0, o.bG)([m.A], () => m.A.getStatus(t.id)), {
             product: C,
             purchase: E
-        } = (0, g.A)(n?.skuId), S = A.Ay.canUseCollectibles(t), T = null != E ? (0, h.gA)(E) : (0, h.G0)(C), f = !S && (0, h.gA)(E), k = (0, d.b)(!T || S), N = (0, p.Sw)(E), P = (0, p.VG)(C), O = i.useMemo(() => f ? v.intl.string(v.t["7vkeu5"]) : T && S && !k ? v.intl.string(v.t.hmyYK8) : T && !S && k ? v.intl.string(v.t.q0PlFn) : !T || S || k ? v.intl.string(v.t.fEGjVQ) : v.intl.string(v.t["0xs2sA"]), [f, T, S, k]);
+        } = (0, g.A)(n?.skuId), T = A.Ay.canUseCollectibles(t), S = null != E ? (0, h.gA)(E) : (0, h.G0)(C), f = !T && (0, h.gA)(E), k = (0, d.b)(!S || T), N = (0, _.Sw)(E), P = (0, _.VG)(C), O = i.useMemo(() => f ? v.intl.string(v.t["7vkeu5"]) : S && T && !k ? v.intl.string(v.t.hmyYK8) : S && !T && k ? v.intl.string(v.t.q0PlFn) : !S || T || k ? v.intl.string(v.t.fEGjVQ) : v.intl.string(v.t["0xs2sA"]), [f, S, T, k]);
         return null != n && (null == E || f) ? (0, s.jsxs)("div", {
             className: a()(j.kk, j.O7, u),
             children: [(0, s.jsx)("div", {
                 className: j.Bo,
-                children: (0, s.jsx)(_.A, {
+                children: (0, s.jsx)(p.A, {
                     user: t,
                     guildId: r,
                     avatarDecorationOverride: n
@@ -110,21 +110,21 @@ let y = [{
                 className: j.$M,
                 children: [(0, s.jsx)("div", {
                     className: j.TB,
-                    children: (0, s.jsx)(_.A, {
+                    children: (0, s.jsx)(p.A, {
                         user: t,
                         guildId: r,
                         avatarDecorationOverride: n
                     })
                 }), (0, s.jsx)("div", {
                     className: j.Kh,
-                    children: y.map(e => {
+                    children: I.map(e => {
                         let {
                             avatarSize: i,
                             showStatus: a
                         } = e;
                         return (0, s.jsx)("div", {
                             className: j.CX,
-                            children: (0, s.jsx)(_.A, {
+                            children: (0, s.jsx)(p.A, {
                                 user: t,
                                 guildId: r,
                                 avatarSize: i,
@@ -135,7 +135,7 @@ let y = [{
                         }, `${i}${a}`)
                     })
                 })]
-            }), null != E && (0, s.jsx)(I, {
+            }), null != E && (0, s.jsx)(y, {
                 purchase: E
             })]
         })

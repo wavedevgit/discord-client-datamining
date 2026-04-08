@@ -31,8 +31,8 @@ var i = n(627968),
     y = n(22007),
     O = n(95035),
     R = n(337095),
-    P = n(871123),
-    L = n(510022),
+    L = n(871123),
+    P = n(510022),
     D = n(378058),
     G = n(148355),
     M = n(780964),
@@ -340,7 +340,7 @@ class e_ extends s.PureComponent {
             payment: e,
             hasLinkedToApplication: t
         } = this.props;
-        return (0, P.bF)(e.sku) && e.status === ee.__0.COMPLETED ? null != e.entitlements && e.entitlements.some(e => e.isFulfilled()) ? (0, i.jsx)("span", {
+        return (0, L.bF)(e.sku) && e.status === ee.__0.COMPLETED ? null != e.entitlements && e.entitlements.some(e => e.isFulfilled()) ? (0, i.jsx)("span", {
             className: es.gD,
             children: ei.intl.string(ei.t.Osji1u)
         }) : e.isGift ? null != e.entitlements && e.entitlements.some(e => null != e.gifterId) ? (0, i.jsx)("span", {
@@ -513,7 +513,7 @@ class e_ extends s.PureComponent {
                             sku_id: t.sku.id,
                             application_id: l.id,
                             location_stack: r
-                        }), (0, L.n)({
+                        }), (0, P.n)({
                             sku: t.sku,
                             application: l,
                             analyticsLocations: r
@@ -527,7 +527,7 @@ class e_ extends s.PureComponent {
         let {
             payment: e
         } = this.props;
-        if ((0, P.bF)(e.sku)) return this.renderAdditionalGameItemDetails()
+        if ((0, L.bF)(e.sku)) return this.renderAdditionalGameItemDetails()
     }
     renderRefundDetails() {
         let e, {
@@ -794,7 +794,7 @@ function ex(e) {
         paymentSources: H.A.paymentSources
     })), {
         hasAlreadyLinked: x
-    } = (0, T.RD)((0, P.bF)(t.sku) ? g : void 0), A = (0, m.bG)([f.A], () => null != d ? f.A.getApplication(d) : null);
+    } = (0, T.RD)((0, L.bF)(t.sku) ? g : void 0), A = (0, m.bG)([f.A], () => null != d ? f.A.getApplication(d) : null);
     s.useEffect(() => {
         c && null != d && (0, R.TA)(d)
     }, [d, c]);

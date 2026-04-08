@@ -5,8 +5,8 @@ t.d(n, {
 var i = t(627968);
 t(64700);
 var a = t(397927),
-    r = t(398590),
-    l = t(345942),
+    l = t(398590),
+    r = t(345942),
     s = t(183555),
     o = t(913453),
     d = t(51943),
@@ -42,7 +42,7 @@ function _(e) {
                     var e;
                     _({
                         action: "PRESS_MUTUAL_GUILD"
-                    }), e = a.id, (0, l.u)(e), t(), (0, r.jH)()
+                    }), e = a.id, (0, r.u)(e), t(), (0, l.jH)()
                 }
             }, a.id)
         }) : (0, i.jsxs)("div", {

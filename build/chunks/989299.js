@@ -1,60 +1,60 @@
 /** chunk id: 989299 params = (module,exports,require) **/
-n.d(t, {
-    I: () => A,
-    O: () => d
+a.d(t, {
+    I: () => d,
+    O: () => A
 });
-var a = n(562465),
-    l = n(397927),
-    i = n(73153),
-    s = n(157559),
-    r = n(198982),
-    c = n(218727),
-    o = n(652215),
-    u = n(985018);
-async function A() {
+var n = a(562465),
+    s = a(397927),
+    r = a(73153),
+    l = a(157559),
+    i = a(198982),
+    c = a(218727),
+    u = a(652215),
+    o = a(985018);
+async function d() {
     if (c.A.shouldFetch) {
-        i.h.dispatch({
+        r.h.dispatch({
             type: "RECENT_AVATARS_FETCH_START"
         });
         try {
-            let e = await a.Bo.get({
-                url: o.Rsh.RECENT_AVATARS,
+            let e = await n.Bo.get({
+                url: u.Rsh.RECENT_AVATARS,
                 rejectWithError: !0
             });
-            i.h.dispatch({
+            r.h.dispatch({
                 type: "RECENT_AVATARS_FETCH_SUCCESS",
                 avatars: e.body.avatars.map(e => {
                     let {
                         storage_hash: t,
-                        ...n
+                        ...a
                     } = e;
                     return {
-                        ...n,
+                        ...a,
                         storageHash: t
                     }
                 })
             })
         } catch (e) {
-            i.h.dispatch({
+            r.h.dispatch({
                 type: "RECENT_AVATARS_FETCH_FAILURE",
-                error: new r.LG(e)
+                error: new i.LG(e)
             })
         }
     }
 }
-async function d(e) {
+async function A(e) {
     try {
-        await a.Bo.del({
-            url: o.Rsh.RECENT_AVATARS_DELETE(e),
+        await n.Bo.del({
+            url: u.Rsh.RECENT_AVATARS_DELETE(e),
             rejectWithError: !0
-        }), await i.h.dispatch({
+        }), await r.h.dispatch({
             type: "RECENT_AVATAR_DELETE",
             avatarId: e
-        }), l.ORC.announce(u.intl.string(u.t.YJPieI))
+        }), s.ORC.announce(o.intl.string(o.t.YJPieI))
     } catch (e) {
-        s.A.show({
-            title: u.intl.string(u.t.iufib1),
-            body: u.intl.string(u.t["/ZNT+0"])
+        l.A.show({
+            title: o.intl.string(o.t.iufib1),
+            body: o.intl.string(o.t["/ZNT+0"])
         })
     }
 }

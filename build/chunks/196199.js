@@ -30,15 +30,15 @@ var i = n(627968),
 function I(e) {
     let {
         premiumSubscription: t
-    } = e, n = (0, l.bG)([_.A], () => _.A.boostSlots), I = s.useMemo(() => Object.values(n), [n]), j = (0, l.bG)([g.default], () => g.default.getCurrentUser()), y = (0, l.bG)([u.A], () => u.A.affinities), O = (0, l.bG)([m.Ay], () => m.Ay.getFlattenedGuildIds()), R = y.length > 0 || O.length > 0, P = s.useMemo(() => I.filter(e => null != e.premiumGuildSubscription), [I]).length, L = (0, l.bG)([c.A], () => c.A.getCurrentUserAppliedBoosts()), {
+    } = e, n = (0, l.bG)([_.A], () => _.A.boostSlots), I = s.useMemo(() => Object.values(n), [n]), j = (0, l.bG)([g.default], () => g.default.getCurrentUser()), y = (0, l.bG)([u.A], () => u.A.affinities), O = (0, l.bG)([m.Ay], () => m.Ay.getFlattenedGuildIds()), R = y.length > 0 || O.length > 0, L = s.useMemo(() => I.filter(e => null != e.premiumGuildSubscription), [I]).length, P = (0, l.bG)([c.A], () => c.A.getCurrentUserAppliedBoosts()), {
         fractionalState: D
     } = (0, a.A)({
         forceFetch: !0
     }), G = j?.isPremiumGroupMember(), M = t?.isPausedOrPausePending === !0 && D === C.xc.NONE, U = s.useMemo(() => I.some(e => null == e.premiumGuildSubscription && e.isAvailable()), [I]), k = M ? N.intl.string(N.t.mOWsF1) : U ? void 0 : N.intl.string(N.t.xr4m5B), w = s.useMemo(() => {
         if (null == t) return 0;
         let e = x.Ay.getNumIncludedPremiumGuildSubscriptionSlots(t.planId);
-        return 0 === e || e !== I.length ? 0 : Math.max(0, e - P)
-    }, [t, I.length, P]);
+        return 0 === e || e !== I.length ? 0 : Math.max(0, e - L)
+    }, [t, I.length, L]);
     return (0, i.jsxs)("div", {
         className: v.GO,
         children: [(0, i.jsx)(r.kb, {
@@ -52,7 +52,7 @@ function I(e) {
                 guildBoostSlots: I,
                 guildBoostSlotsByGuildId: n,
                 premiumSubscription: t,
-                pausedAppliedGuildBoosts: L,
+                pausedAppliedGuildBoosts: P,
                 fractionalPremiumState: D
             }), (0, i.jsx)(b.A, {}), (0, i.jsx)(o.A, {
                 hideHeading: !0,

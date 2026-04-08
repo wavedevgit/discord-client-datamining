@@ -12,8 +12,8 @@ var i = n(627968),
     d = n(820284),
     c = n(73861),
     u = n(740916),
-    _ = n(918085),
-    m = n(863574),
+    m = n(918085),
+    _ = n(863574),
     h = n(707606),
     p = n(456412),
     g = n(587895),
@@ -100,8 +100,8 @@ class b extends l.Component {
         } = this.props, {
             playing: o,
             muted: d
-        } = this.state, c = l > m.Tm;
-        return (0, i.jsx)(_.A, {
+        } = this.state, c = l > _.Tm;
+        return (0, i.jsx)(m.A, {
             sku: e,
             storeListing: t,
             playing: o,
@@ -154,8 +154,8 @@ class b extends l.Component {
             width: n,
             fetchFailed: l,
             renderFallback: r
-        } = this.props, a = n > m.Tm;
-        return null == e || null == t ? l ? r() : (0, i.jsx)(m.Wb, {
+        } = this.props, a = n > _.Tm;
+        return null == e || null == t ? l ? r() : (0, i.jsx)(_.Wb, {
             isHorizontal: a
         }) : e.productLine === E.EZt.COLLECTIBLES ? (0, i.jsx)(d.A, {
             section: E.JJy.APPLICATION_EMBED,
@@ -174,7 +174,7 @@ class b extends l.Component {
 }
 let T = [f.A, x.A, C.A];
 
-function y(e) {
+function N(e) {
     let {
         skuId: t
     } = e, n = f.A.get(t), i = null != n ? g.A.getApplication(n.applicationId) : null;
@@ -187,6 +187,6 @@ function y(e) {
         libraryApplication: null != n ? x.A.getLibraryApplication(n.applicationId, n.applicationId, !0) : null
     }
 }
-let N = (0, p.A)((0, h.A)(b)),
-    S = a.Ay.connectStores(T, y)(N),
-    j = (0, h.A)(a.Ay.connectStores(T, y)(b))
+let y = (0, p.A)((0, h.A)(b)),
+    S = a.Ay.connectStores(T, N)(y),
+    j = (0, h.A)(a.Ay.connectStores(T, N)(b))
