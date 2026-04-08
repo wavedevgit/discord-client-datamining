@@ -13,20 +13,20 @@ var l = n(311907),
     d = n(597232),
     u = n(767271),
     h = n(652215),
-    m = n(498954);
+    m = n(885301);
 
 function A(e) {
     let t, {
             channel: n,
             user: A,
-            showingBanner: g
+            showingBanner: p
         } = e,
         {
-            channelId: p
+            channelId: g
         } = (0, a.N)(),
-        f = (0, l.bG)([s.A], () => null != p && s.A.isSpam(p), [p]),
+        f = (0, l.bG)([s.A], () => null != g && s.A.isSpam(g), [g]),
         _ = (0, l.bG)([r.A], () => r.A.getRelationshipType(A.id), [A.id]),
-        E = n.id === p,
+        E = n.id === g,
         x = !0 === A.bot,
         C = m.n;
     return f || E ? t = (0, i.jsx)(u.A, {
@@ -38,7 +38,7 @@ function A(e) {
     }) : (t = (0, i.jsx)(d.A, {
         channel: n,
         user: A,
-        showingBanner: g
+        showingBanner: p
     }), _ === h.eA$.PENDING_INCOMING && (C = m.O)), (0, i.jsxs)("div", {
         className: C,
         children: [(0, i.jsx)(c.A, {

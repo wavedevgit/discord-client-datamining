@@ -5,14 +5,14 @@ n.d(t, {
 var a = n(627968);
 n(64700);
 var i = n(503698),
-    s = n.n(i),
-    l = n(397927),
+    l = n.n(i),
+    s = n(397927),
     r = n(206845),
     o = n(957565),
     d = n(427262),
     c = n(183555),
     u = n(985018),
-    m = n(87616);
+    m = n(127747);
 
 function h(e) {
     let {
@@ -32,13 +32,13 @@ function h(e) {
         onCopy: () => i({
             action: "COPY_USERNAME"
         }),
-        children: e => (0, a.jsx)(l.DUT, {
+        children: e => (0, a.jsx)(s.DUT, {
             ...e,
-            className: s()(m.c, {
+            className: l()(m.c, {
                 [m.R]: n
             }),
             "aria-label": u.intl.string(u.t.y5MwJy),
-            children: (0, a.jsx)(l.TdU, {
+            children: (0, a.jsx)(s.TdU, {
                 size: "xs",
                 color: "currentColor"
             })

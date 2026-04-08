@@ -1,4 +1,5 @@
 /** chunk id: 912496 params = (module,exports,require) **/
+"use strict";
 e.exports = {
     kL: "container_c66e86",
     XI: "action_c66e86",

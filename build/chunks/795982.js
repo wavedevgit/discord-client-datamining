@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     l = n(64700),
     s = n(158954),
-    a = n(311907),
-    r = n(52133),
+    r = n(311907),
+    a = n(52133),
     o = n(827734),
     d = n(397927),
     c = n(713654),
@@ -28,7 +28,7 @@ var i = n(627968),
     y = n(387408),
     N = n(427209),
     S = n(985018),
-    j = n(460135);
+    j = n(929694);
 
 function L() {
     return (0, i.jsxs)("div", {
@@ -51,7 +51,7 @@ function R(e) {
         message: t,
         snapshot: n,
         index: c
-    } = e, _ = l.useMemo(() => new b.j(t, n, c), [t, n, c]), m = (0, a.bG)([x.A, v.default, I.A, E.A, C.A, u.A], () => _.getForwardInfo(x.A, v.default, I.A, E.A, C.A, u.A).footerInfo, [_], r.A), h = (0, a.bG)([x.A], () => x.A.getChannel(t.messageReference?.channel_id)), p = l.useCallback(() => {
+    } = e, _ = l.useMemo(() => new b.j(t, n, c), [t, n, c]), m = (0, r.bG)([x.A, v.default, I.A, E.A, C.A, u.A], () => _.getForwardInfo(x.A, v.default, I.A, E.A, C.A, u.A).footerInfo, [_], a.A), h = (0, r.bG)([x.A], () => x.A.getChannel(t.messageReference?.channel_id)), p = l.useCallback(() => {
         (0, T.A)(t)
     }, [t]);
     return null == m ? null : (0, i.jsxs)(d.DUT, {
@@ -94,11 +94,11 @@ function D(e) {
         message: t,
         snapshot: n,
         index: s
-    } = e, r = l.useMemo(() => (0, y.A)(t, n), [t, n]), o = A.hD.useSetting(), d = A.rs.useSetting(), c = (0, a.bG)([f.A], () => f.A.isDeveloper), u = (0, _.S)((r.editedTimestamp ?? r.timestamp).valueOf()), {
+    } = e, a = l.useMemo(() => (0, y.A)(t, n), [t, n]), o = A.hD.useSetting(), d = A.rs.useSetting(), c = (0, r.bG)([f.A], () => f.A.isDeveloper), u = (0, _.S)((a.editedTimestamp ?? a.timestamp).valueOf()), {
         content: g,
         hasSpoilerEmbeds: C,
         hasBailedAst: E
-    } = (0, h.A)(r, {
+    } = (0, h.A)(a, {
         hideSimpleEmbedContent: o && d,
         isInteracting: !1,
         formatInline: !1,
@@ -107,7 +107,7 @@ function D(e) {
         allowLinks: !0,
         allowDevLinks: c,
         previewLinkTarget: !0
-    }), I = (0, a.bG)([x.A], () => x.A.getChannel(t.channel_id)), v = A.hH.useSetting();
+    }), I = (0, r.bG)([x.A], () => x.A.getChannel(t.channel_id)), v = A.hH.useSetting();
     return null == I ? null : (0, i.jsxs)("div", {
         className: j.kL,
         children: [(0, i.jsx)("div", {
@@ -115,12 +115,12 @@ function D(e) {
         }), (0, i.jsxs)("div", {
             className: j.Qs,
             children: [(0, i.jsx)(L, {}), (0, i.jsx)(m.Ay, {
-                message: r,
+                message: a,
                 content: g,
                 compact: v
             }), (0, p.A)({
                 channelMessageProps: {
-                    message: r,
+                    message: a,
                     channel: I,
                     compact: v
                 },

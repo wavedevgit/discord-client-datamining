@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(64700),
     l = n(157559),
     s = n(198982),
-    a = n(306522),
-    r = n(922482),
+    r = n(306522),
+    a = n(922482),
     o = n(985018);
 
 function d(e, t) {
@@ -19,12 +19,12 @@ function d(e, t) {
                 try {
                     let {
                         url: i
-                    } = await a.P0({
+                    } = await r.P0({
                         guildId: e,
                         productId: t,
                         attachmentId: n
                     });
-                    await r.R(i)
+                    await a.R(i)
                 } catch (t) {
                     let e = t instanceof s.LG ? t.getAnyErrorMessage() : void 0;
                     l.A.show({

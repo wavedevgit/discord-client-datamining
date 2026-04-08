@@ -1,21 +1,21 @@
 /** chunk id: 680901 params = (module,exports,require) **/
 a.d(t, {
-    L: () => c
+    L: () => l
 });
 var n = a(627968),
     r = a(397927),
     o = a(538451),
-    i = a(573030);
-let c = e => {
+    i = a(151755);
+let l = e => {
     let {
         users: t,
         guildId: a,
-        "aria-label": c,
-        "aria-labelledby": l
+        "aria-label": l,
+        "aria-labelledby": c
     } = e;
     return (0, n.jsx)(r.lGe, {
-        "aria-label": c,
-        "aria-labelledby": l,
+        "aria-label": l,
+        "aria-labelledby": c,
         className: i.X,
         children: (0, n.jsx)(r.HOs, {
             className: i.o,

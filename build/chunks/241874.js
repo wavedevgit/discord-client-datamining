@@ -21,8 +21,8 @@ let h = l.memo(function(e) {
             usernameProfile: h,
             avatarProfile: m,
             setPopout: A,
-            author: g,
-            repliedMessage: p,
+            author: p,
+            repliedMessage: g,
             roleIcon: f
         } = e, _ = (0, d.r4)(t.author.id, n.id), E = (0, d.m)(t, n, h, A), x = (0, d.Jo)(m, A), C = l.useCallback(() => {
             A({
@@ -35,8 +35,8 @@ let h = l.memo(function(e) {
             guildId: n.guild_id,
             message: t,
             channel: n,
-            repliedMessage: p,
-            author: g,
+            repliedMessage: g,
+            author: p,
             compact: s,
             subscribeToGroupId: a,
             showTimestampOnHover: !o && s && t.type !== u.lAJ.REPLY,
@@ -64,21 +64,21 @@ function A(e) {
     } = e, {
         message: u,
         compact: A,
-        channel: g,
-        groupId: p
+        channel: p,
+        groupId: g
     } = t, {
         usernameProfile: f,
         avatarProfile: _
     } = l;
     if ((0, s.A)(u)) return null;
-    let E = u.id === p;
+    let E = u.id === g;
     return E || A || null != r ? (0, i.jsx)(h, {
         message: u,
-        channel: g,
+        channel: p,
         compact: A,
-        subscribeToGroupId: p,
+        subscribeToGroupId: g,
         isGroupStart: E,
-        groupId: p,
+        groupId: g,
         setPopout: n,
         usernameProfile: f,
         avatarProfile: _,

@@ -40,7 +40,7 @@ var a = n(627968),
     M = n(188275),
     B = n(652215),
     F = n(985018),
-    H = n(136242);
+    H = n(564343);
 
 function G(e) {
     let {
@@ -53,7 +53,7 @@ function G(e) {
         sku: t,
         priceSetAssignmentPurchaseType: B.lid.DEFAULT
     });
-    return null != i && null != l ? (0, a.jsxs)("div", {
+    return null == n ? null : null != i && null != l ? (0, a.jsxs)("div", {
         className: H.TS,
         children: [(0, a.jsx)(c.Heading, {
             className: H.of,

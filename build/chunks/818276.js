@@ -4,8 +4,8 @@ n.d(t, {
 });
 var a = n(627968),
     i = n(64700),
-    s = n(503698),
-    l = n.n(s),
+    l = n(503698),
+    s = n.n(l),
     r = n(687498),
     o = n(341915),
     d = n(890687),
@@ -16,12 +16,12 @@ var a = n(627968),
     x = n(963713),
     p = n(277928),
     g = n(783602),
-    f = n(272111),
-    _ = n(310765);
+    _ = n(272111),
+    f = n(537536);
 let v = i.forwardRef(function(e, t) {
     let {
         className: n,
-        overlayRef: s
+        overlayRef: l
     } = e, {
         expansionSpring: v
     } = i.useContext(u.PW), {
@@ -29,37 +29,37 @@ let v = i.forwardRef(function(e, t) {
         taskDetails: j,
         isExpanded: A,
         isExpansionAnimationComplete: C
-    } = i.useContext(x.T), y = b.userStatus?.completedAt != null, S = (0, d.I3)(b), E = i.useRef(null), T = b.userStatus?.enrolledAt != null, N = null != S ? S.percentComplete : j.percentComplete, [I, k] = i.useState(!1);
+    } = i.useContext(x.T), y = b.userStatus?.completedAt != null, S = (0, d.I3)(b), T = i.useRef(null), E = b.userStatus?.enrolledAt != null, N = null != S ? S.percentComplete : j.percentComplete, [I, k] = i.useState(!1);
     return (0, a.jsxs)(a.Fragment, {
         children: [y && (0, a.jsx)(h.A, {
-            overlayRef: s,
-            progressBarRef: E,
+            overlayRef: l,
+            progressBarRef: T,
             isHovered: I
         }), (0, a.jsx)(r.animated.div, {
             ref: t,
             "aria-hidden": A && C,
-            className: l()(n, _.hR, {
-                [_.Ag]: A,
-                [_.s]: T
+            className: s()(n, f.hR, {
+                [f.Ag]: A,
+                [f.s]: E
             }),
             style: {
                 opacity: (0, c.a)(v.to({
                     range: [0, 1],
                     output: [1, 0]
                 })),
-                backgroundImage: y ? `linear-gradient(90deg, ${f.V1}, ${f.us})` : void 0
+                backgroundImage: y ? `linear-gradient(90deg, ${_.V1}, ${_.us})` : void 0
             },
             onMouseEnter: () => k(!0),
             onMouseLeave: () => k(!1),
             children: (0, a.jsxs)("div", {
-                className: _.o8,
+                className: f.o8,
                 children: [y && (0, a.jsxs)(a.Fragment, {
                     children: [(0, a.jsx)(g.A, {}), (0, a.jsx)("div", {
-                        className: _.yF
+                        className: f.yF
                     })]
-                }), T ? (0, a.jsx)(p.A, {
+                }), E ? (0, a.jsx)(p.A, {
                     contentLocation: "collapsed",
-                    progressBarRef: E,
+                    progressBarRef: T,
                     isExpanded: !1,
                     percentComplete: N
                 }) : null, y && (0, a.jsx)(m.f, {

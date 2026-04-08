@@ -1,11 +1,11 @@
 /** chunk id: 441811 params = (module,exports,require) **/
 n.d(t, {
-    l: () => _
+    l: () => f
 });
 var a = n(627968),
     i = n(64700),
-    s = n(311907),
-    l = n(265486),
+    l = n(311907),
+    s = n(265486),
     r = n(688810),
     o = n(626584),
     d = n(780964),
@@ -13,33 +13,33 @@ var a = n(627968),
     u = n(531685),
     m = n(259065),
     h = n(49999),
-    x = n(927961),
+    x = n(241015),
     p = n(985018),
     g = n(439315);
-let f = new o.A("DisplayNameStylesCoachmark");
+let _ = new o.A("DisplayNameStylesCoachmark");
 
-function _(e) {
+function f(e) {
     let {
         markAsDismissed: t,
         targetElementRef: n,
         children: o
     } = e, {
-        analyticsLocations: _
-    } = (0, r.Ay)(), v = (0, i.useRef)(null), b = (0, s.bG)([u.A], () => u.A.isFocused()), j = (0, i.useCallback)(() => {
+        analyticsLocations: f
+    } = (0, r.Ay)(), v = (0, i.useRef)(null), b = (0, l.bG)([u.A], () => u.A.isFocused()), j = (0, i.useCallback)(() => {
         t(h.i.TAKE_ACTION), (0, c.openUserSettings)(d.X.PROFILE_PANEL, {
-            analyticsLocations: _
+            analyticsLocations: f
         }, () => {
             (0, m.L)({
-                analyticsLocations: _
+                analyticsLocations: f
             })
         })
-    }, [t, _]), A = (0, i.useCallback)(() => {
+    }, [t, f]), A = (0, i.useCallback)(() => {
         t(h.i.USER_DISMISS)
     }, [t]);
     return (0, i.useEffect)(() => {
-        b && v.current?.paused ? v.current?.play().catch(f.error) : b || v.current?.pause()
+        b && v.current?.paused ? v.current?.play().catch(_.error) : b || v.current?.pause()
     }, [b]), (0, a.jsxs)(a.Fragment, {
-        children: [o, (0, a.jsx)(l.A, {
+        children: [o, (0, a.jsx)(s.A, {
             targetElementRef: n,
             shouldShow: !0,
             onRequestClose: A,

@@ -4,8 +4,8 @@ n.d(t, {
 });
 var a = n(627968),
     i = n(64700),
-    s = n(503698),
-    l = n.n(s),
+    l = n(503698),
+    s = n.n(l),
     r = n(311907),
     o = n(397927),
     d = n(271866),
@@ -16,29 +16,29 @@ var a = n(627968),
     x = n(760716),
     p = n(652215),
     g = n(115093),
-    f = n(310086),
-    _ = n(521807);
+    _ = n(793877),
+    f = n(620352);
 let v = window.GLOBAL_ENV.RELEASE_CHANNEL === g.B.STAGING ? "1438571444891025408" : "1346069614634864772";
 
 function b() {
     let e = (0, x.i)(e => e.overrideApplicationId),
         t = (0, x.i)(e => e.setOverrideApplicationId),
         n = null != e,
-        [s, g] = i.useState(v),
+        [l, g] = i.useState(v),
         [b, j] = i.useState(p.FYj),
         A = i.useCallback(e => {
-            e ? t(s) : t(null)
-        }, [s, t]),
+            e ? t(l) : t(null)
+        }, [l, t]),
         C = i.useCallback(e => {
             g(e), n && t(e)
         }, [n, t]),
         y = (0, x.i)(e => e.showSelfActivity),
         S = (0, x.i)(e => e.setShowSelfActivity),
-        E = (0, x.i)(e => e.recommendationApplicationIds),
-        T = (0, x.i)(e => e.setRecommendationApplicationIds),
+        T = (0, x.i)(e => e.recommendationApplicationIds),
+        E = (0, x.i)(e => e.setRecommendationApplicationIds),
         N = i.useCallback(e => {
-            e ? T(b) : T(null)
-        }, [b, T]),
+            e ? E(b) : E(null)
+        }, [b, E]),
         I = (0, r.bG)([h.A], () => null != h.A.testModeApplicationId),
         k = i.useCallback(e => {
             e ? (0, o.qfG)(e => (0, a.jsx)(m.A, {
@@ -47,7 +47,7 @@ function b() {
         }, []),
         O = (0, u.A)({
             location: "DevToolsSlayerStorefrontPanel",
-            applicationId: s,
+            applicationId: l,
             source: c.Ob.Embed,
             trackEntryPointImpression: !0
         }),
@@ -55,12 +55,12 @@ function b() {
             O?.(e)
         }, [O]);
     return (0, a.jsx)("div", {
-        className: l()(f.nd, _.n),
+        className: s()(_.nd, f.n),
         children: (0, a.jsxs)("div", {
-            className: _.k,
+            className: f.k,
             children: [(0, a.jsx)(o.ksK, {
                 label: "Application ID",
-                value: s,
+                value: l,
                 onChange: C
             }), (0, a.jsx)(o.Heading, {
                 variant: "heading-lg/normal",
@@ -87,10 +87,10 @@ function b() {
                 label: "Recommendation application IDs",
                 value: b,
                 onChange: j,
-                disabled: null == E
+                disabled: null == T
             }), (0, a.jsx)(o.dOG, {
                 label: "Enable recommendation application IDs override",
-                checked: null != E,
+                checked: null != T,
                 onChange: N
             })]
         })

@@ -8,9 +8,9 @@ n.d(t, {
 var a = n(627968);
 n(64700);
 var i = n(158954),
-    s = n(397927),
-    l = n(559474),
-    r = n(947242);
+    l = n(397927),
+    s = n(559474),
+    r = n(511505);
 let o = "shop-assets-preview-instructions-modal",
     d = "shop-pfx-preview-instructions-modal",
     c = e => {
@@ -29,16 +29,16 @@ let o = "shop-assets-preview-instructions-modal",
             onClose: n,
             children: (0, a.jsxs)("div", {
                 className: r.j,
-                children: [(0, a.jsx)(s.Text, {
+                children: [(0, a.jsx)(l.Text, {
                     variant: "text-md/bold",
                     children: "Upload Shop assets for preview in the app!"
-                }), (0, a.jsx)(s.Text, {
+                }), (0, a.jsx)(l.Text, {
                     variant: "text-md/normal",
                     children: 'Toggle "Enable Preview" to switch between viewing the live and preview assets.'
-                }), (0, a.jsx)(s.Text, {
+                }), (0, a.jsx)(l.Text, {
                     variant: "text-md/normal",
                     children: "These are only visible to you. Reloading the app will reset the state."
-                }), (0, a.jsx)(s.Heading, {
+                }), (0, a.jsx)(l.Heading, {
                     variant: "heading-md/bold",
                     children: "Valid Upload Types"
                 }), (0, a.jsxs)("ul", {
@@ -48,12 +48,12 @@ let o = "shop-assets-preview-instructions-modal",
                     }), (0, a.jsx)("li", {
                         children: "A folder containing image or video files"
                     })]
-                }), (0, a.jsx)(s.Heading, {
+                }), (0, a.jsx)(l.Heading, {
                     variant: "heading-md/bold",
                     children: "Valid File Names"
                 }), (0, a.jsx)("ul", {
                     className: r.S,
-                    children: Array.from(l.Li).map(e => (0, a.jsx)("li", {
+                    children: Array.from(s.Li).map(e => (0, a.jsx)("li", {
                         children: e
                     }, e))
                 })]
@@ -76,16 +76,16 @@ let o = "shop-assets-preview-instructions-modal",
             onClose: n,
             children: (0, a.jsxs)("div", {
                 className: r.j,
-                children: [(0, a.jsx)(s.Text, {
+                children: [(0, a.jsx)(l.Text, {
                     variant: "text-md/normal",
                     children: "1. Draft your PFX in the PFX Editor (in User Settings)"
-                }), (0, a.jsx)(s.Text, {
+                }), (0, a.jsx)(l.Text, {
                     variant: "text-md/normal",
                     children: "2. In this devtools dropdown, select one of your PFX drafts"
-                }), (0, a.jsx)(s.Text, {
+                }), (0, a.jsx)(l.Text, {
                     variant: "text-md/normal",
                     children: "The selected PFX should now be visible everywhere that already has a PFX, such as Shop cards, Shop PDPs, and user profiles (with PFX applied)."
-                }), (0, a.jsx)(s.Text, {
+                }), (0, a.jsx)(l.Text, {
                     variant: "text-md/normal",
                     children: 'Toggle "Enable Preview" to switch between viewing the live and preview PFX.'
                 })]

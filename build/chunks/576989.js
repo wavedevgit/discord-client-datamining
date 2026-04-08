@@ -4,8 +4,8 @@ n.d(t, {
 });
 var a = n(627968),
     i = n(64700),
-    s = n(873298),
-    l = n(265486),
+    l = n(873298),
+    s = n(265486),
     r = n(840387),
     o = n(253932),
     d = n(780964),
@@ -18,15 +18,15 @@ function x(e) {
     let {
         markAsDismissed: t,
         targetElementRef: n
-    } = e, x = (0, r.Z)(), p = o.KP.useSetting(), g = x && p !== s.KP.FRIENDS_AND_ALL_GUILDS, f = (0, i.useCallback)(() => {
+    } = e, x = (0, r.Z)(), p = o.KP.useSetting(), g = x && p !== l.KP.FRIENDS_AND_ALL_GUILDS, _ = (0, i.useCallback)(() => {
         t(u.i.TAKE_ACTION), (0, c.openUserSettings)(d.X.PROFILE_PRIVACY_CATEGORY)
-    }, [t]), _ = (0, i.useCallback)(() => {
+    }, [t]), f = (0, i.useCallback)(() => {
         t(u.i.USER_DISMISS)
-    }, [t]), v = g ? p === s.KP.FRIENDS_ONLY ? m.intl.string(m.t["/hogEy"]) : m.intl.string(m.t["6hEfm1"]) : m.intl.string(m.t.bnNxW1);
-    return (0, a.jsx)(l.A, {
+    }, [t]), v = g ? p === l.KP.FRIENDS_ONLY ? m.intl.string(m.t["/hogEy"]) : m.intl.string(m.t["6hEfm1"]) : m.intl.string(m.t.bnNxW1);
+    return (0, a.jsx)(s.A, {
         targetElementRef: n,
         shouldShow: !0,
-        onRequestClose: _,
+        onRequestClose: f,
         align: "center",
         position: "top",
         caretConfig: {
@@ -43,7 +43,7 @@ function x(e) {
         actions: [{
             text: m.intl.string(m.t.eOoTMX),
             variant: "primary",
-            onClick: f
+            onClick: _
         }]
     })
 }

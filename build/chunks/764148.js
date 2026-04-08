@@ -24,9 +24,9 @@ var i = n(256415),
     T = n(944127),
     N = n(388331),
     S = n(466444),
-    x = n(177235),
-    v = n(266686);
-let b = {
+    v = n(177235),
+    x = n(266686);
+let y = {
         ...a.U,
         ...u.A,
         ...A.A,
@@ -39,12 +39,12 @@ let b = {
         ...f.A,
         ...C.A,
         ...N.A,
-        ...x.A,
+        ...v.A,
         ...S.A,
         ...h.A,
         ...T.A
     },
-    y = {
+    b = {
         ...l.A,
         ...o.c,
         ...d.I,
@@ -52,10 +52,10 @@ let b = {
     },
     O = {
         server: s.A,
-        commands: b,
-        events: y,
+        commands: y,
+        events: b,
         stores: [i.default],
-        transports: [v.A],
+        transports: [x.A],
         registerTransportsForEmbeddedPlatform: function() {
             r.Ay.ensureModule("discord_rpc").then(() => {
                 for (let e of [n(33006).A, n(998921).A]) s.A.registerTransport(e)

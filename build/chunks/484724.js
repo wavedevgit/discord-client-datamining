@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     l = n(64700),
     s = n(311907),
-    a = n(686956),
-    r = n(688810),
+    r = n(686956),
+    a = n(688810),
     o = n(202384),
     d = n(51758),
     c = n(665066),
@@ -26,7 +26,7 @@ function E(e) {
         code: t
     } = e, [n, E, I] = t.split("-"), {
         analyticsLocations: v
-    } = (0, r.Ay)(), {
+    } = (0, a.Ay)(), {
         guildScheduledEvent: b,
         guild: T,
         channel: y,
@@ -56,7 +56,7 @@ function E(e) {
                     analyticsLocations: v
                 }) === c.W.PROCEED) {
                 if ((0, d.V)(n)) return void(0, o.Ze)(n);
-                a.A.joinGuild(n, {
+                r.A.joinGuild(n, {
                     source: C.Q4z.GUILD_EVENT_EMBED
                 }).catch(() => {})
             }

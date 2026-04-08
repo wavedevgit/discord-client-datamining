@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     l = n(64700),
     s = n(503698),
-    a = n.n(s),
-    r = n(835245),
+    r = n.n(s),
+    a = n(835245),
     o = n(417597),
     d = n(827734),
     c = n(397927),
@@ -32,7 +32,7 @@ var i = n(627968),
     L = n(652215),
     R = n(381941),
     P = n(985018),
-    D = n(960240),
+    D = n(864705),
     M = n(278664);
 
 function w(e) {
@@ -40,35 +40,35 @@ function w(e) {
         embedUrl: t,
         message: n,
         channel: s
-    } = e, w = l.useRef(null), O = l.useRef(null), k = (0, j.D)(t, n), {
+    } = e, w = l.useRef(null), k = l.useRef(null), O = (0, j.D)(t, n), {
         setPopout: U
-    } = (0, f.A)(n.id, R.Fd), B = (0, x.VL)(n, s, U, !0), G = I.kt.useSetting(), F = (0, N.j)(), [H, V] = l.useState(!1), [q, W] = l.useState(k?.coverImage == null), Y = (0, o.bG)([v.Ay, b.default], () => v.Ay.isMember(k?.guildId, b.default.getCurrentUser()?.id), [k]), z = (0, o.bG)([v.Ay], () => k?.authorId != null ? v.Ay.getMember(k.guildId, k.authorId) : null), Q = (0, m.A)(z?.avatarDecoration != null ? z?.avatarDecoration : k?.user?.avatarDecoration), [K, J, X] = l.useMemo(() => [z?.colorString ?? "inherit", z?.colorStrings ?? null, z?.colorRoleId], [z]), Z = (0, C.gn)(z?.guildId, k?.authorId ?? void 0, J), {
+    } = (0, f.A)(n.id, R.Fd), B = (0, x.VL)(n, s, U, !0), G = I.kt.useSetting(), F = (0, N.j)(), [H, V] = l.useState(!1), [q, W] = l.useState(O?.coverImage == null), Y = (0, o.bG)([v.Ay, b.default], () => v.Ay.isMember(O?.guildId, b.default.getCurrentUser()?.id), [O]), z = (0, o.bG)([v.Ay], () => O?.authorId != null ? v.Ay.getMember(O.guildId, O.authorId) : null), Q = (0, m.A)(z?.avatarDecoration != null ? z?.avatarDecoration : O?.user?.avatarDecoration), [K, J, X] = l.useMemo(() => [z?.colorString ?? "inherit", z?.colorStrings ?? null, z?.colorRoleId], [z]), Z = (0, C.gn)(z?.guildId, O?.authorId ?? void 0, J), {
         reducedMotion: $
     } = l.useContext(c.CZY), [ee, et] = l.useState(!1), en = l.useCallback(() => {
         V(!0)
     }, [V]), ei = l.useCallback(() => {
         V(!1)
     }, [V]), el = l.useCallback(async () => {
-        null != k && ((0, _.zV)(L.HAw.MEDIA_POST_PREVIEW_EMBED_CLICKED, {
-            media_post_id: k.threadId,
+        null != O && ((0, _.zV)(L.HAw.MEDIA_POST_PREVIEW_EMBED_CLICKED, {
+            media_post_id: O.threadId,
             channel_id: s.id,
-            can_access: k.canAccess,
+            can_access: O.canAccess,
             is_member: Y
-        }), k.canAccess ? (0, g.A)(L.BVt.CHANNEL(k.guildId, k.threadId, k.messageId)) : Y ? (0, g.A)(L.BVt.CHANNEL(k.guildId, k.parentChannelId)) : await y.Z2(k.guildId, {}, {
-            channelId: k.parentChannelId
+        }), O.canAccess ? (0, g.A)(L.BVt.CHANNEL(O.guildId, O.threadId, O.messageId)) : Y ? (0, g.A)(L.BVt.CHANNEL(O.guildId, O.parentChannelId)) : await y.Z2(O.guildId, {}, {
+            channelId: O.parentChannelId
         }))
-    }, [k, s, Y]);
-    if (null == k) return null;
+    }, [O, s, Y]);
+    if (null == O) return null;
     let es = (0, T.F_)({
             avatarDecoration: Q,
             size: (0, h.Te)(c._3J.SIZE_40),
             canAnimate: ee
         }),
-        ea = k.user?.getAvatarURL(k.guildId, 40, ee),
-        er = () => {
+        er = O.user?.getAvatarURL(O.guildId, 40, ee),
+        ea = () => {
             $.enabled || et(e => !e)
         },
-        eo = k.coverImage,
+        eo = O.coverImage,
         ed = null != eo && (0, A.ge)(eo);
     return (0, i.jsxs)("div", {
         className: D.wb,
@@ -76,11 +76,11 @@ function w(e) {
             className: D.iT,
             onMouseEnter: en,
             onMouseLeave: ei,
-            children: [!q && (!0 === k.shouldShowBlurredThumbnailImage ? (0, i.jsx)("img", {
+            children: [!q && (!0 === O.shouldShowBlurredThumbnailImage ? (0, i.jsx)("img", {
                 src: M,
                 alt: P.intl.string(P.t.rIbh8H),
-                className: a()(D.xn, {
-                    [D.p6]: k.shouldSpoiler
+                className: r()(D.xn, {
+                    [D.p6]: O.shouldSpoiler
                 }),
                 onContextMenu: B,
                 onError: () => W(!0)
@@ -89,13 +89,13 @@ function w(e) {
                 backgroundSrc: `${eo}?format=png`,
                 alt: P.intl.string(P.t.rIbh8H),
                 aspectRatio: 16 / 9,
-                className: a()(D.xn, {
-                    [D.p6]: k.shouldSpoiler
+                className: r()(D.xn, {
+                    [D.p6]: O.shouldSpoiler
                 }),
                 imageChildClassName: D.q_,
                 onContextMenu: B,
                 onError: () => W(!0)
-            })), null != k.coverImageOverlayText && (0, i.jsx)(c.DUT, {
+            })), null != O.coverImageOverlayText && (0, i.jsx)(c.DUT, {
                 onClick: el,
                 children: (0, i.jsx)("div", {
                     className: D.nx,
@@ -106,7 +106,7 @@ function w(e) {
                         }), (0, i.jsx)(c.Text, {
                             variant: "text-sm/semibold",
                             color: "always-white",
-                            children: k.coverImageOverlayText
+                            children: O.coverImageOverlayText
                         })]
                     })
                 })
@@ -119,33 +119,33 @@ function w(e) {
                     variant: "text-md/semibold",
                     color: "text-default",
                     className: D.hF,
-                    children: k.title
+                    children: O.title
                 }), (0, i.jsx)(c.Text, {
                     variant: "text-sm/normal",
                     color: "text-muted",
-                    className: a()(D.hF, D.Fq),
-                    children: k.subtitle
+                    className: r()(D.hF, D.Fq),
+                    children: O.subtitle
                 })]
             }), (0, i.jsxs)("div", {
                 className: D._5,
-                children: [null != k.authorId && null != ea && (0, i.jsx)(E.A, {
-                    targetElementRef: O,
-                    userId: k.authorId,
-                    guildId: k.guildId,
+                children: [null != O.authorId && null != er && (0, i.jsx)(E.A, {
+                    targetElementRef: k,
+                    userId: O.authorId,
+                    guildId: O.guildId,
                     channelId: s.id,
                     messageId: n.id,
                     roleId: X,
-                    avatarUrl: k.avatarUrl,
+                    avatarUrl: O.avatarUrl,
                     newAnalyticsLocations: [u.A.AVATAR],
                     spacing: 12,
                     children: e => (0, i.jsx)("div", {
-                        onMouseEnter: er,
-                        onMouseLeave: er,
+                        onMouseEnter: ea,
+                        onMouseLeave: ea,
                         children: (0, i.jsx)(c.euF, {
                             ...e,
-                            ref: O,
+                            ref: k,
                             size: c._3J.SIZE_40,
-                            src: ea,
+                            src: er,
                             "aria-label": P.intl.string(P.t.KXz3XB),
                             avatarDecoration: es
                         })
@@ -154,7 +154,7 @@ function w(e) {
                     className: D.Ny,
                     children: [(0, i.jsxs)("div", {
                         className: D.O9,
-                        children: [null != k.channelName && (0, i.jsx)(c.d2$, {
+                        children: [null != O.channelName && (0, i.jsx)(c.d2$, {
                             size: "md",
                             color: "currentColor",
                             className: D.Xg
@@ -164,48 +164,48 @@ function w(e) {
                             children: (0, i.jsx)(c.Heading, {
                                 variant: "heading-md/semibold",
                                 color: "text-strong",
-                                children: k.channelName ?? k.guildName
+                                children: O.channelName ?? O.guildName
                             })
                         })]
-                    }), null != k.authorName && (0, i.jsx)(c.Text, {
+                    }), null != O.authorName && (0, i.jsx)(c.Text, {
                         variant: "text-sm/medium",
                         color: "text-muted",
                         className: D.wn,
                         children: P.intl.format(P.t.voIDKa, {
-                            authorName: k.authorName,
-                            authorNameHook: () => null == k.authorId ? (0, i.jsx)(c.V30, {
-                                name: k.authorName,
+                            authorName: O.authorName,
+                            authorNameHook: () => null == O.authorId ? (0, i.jsx)(c.V30, {
+                                name: O.authorName,
                                 colorString: K,
                                 colorStrings: Z,
                                 className: D.fh
                             }) : (0, i.jsx)(E.A, {
                                 targetElementRef: w,
-                                userId: k.authorId,
-                                guildId: k.guildId,
+                                userId: O.authorId,
+                                guildId: O.guildId,
                                 channelId: s.id,
                                 messageId: n.id,
                                 roleId: X,
-                                avatarUrl: k.avatarUrl,
+                                avatarUrl: O.avatarUrl,
                                 newAnalyticsLocations: [u.A.USERNAME],
                                 children: e => (0, i.jsx)(c.V30, {
                                     ...e,
                                     ref: w,
-                                    name: k.authorName,
+                                    name: O.authorName,
                                     colorString: K,
                                     colorStrings: Z,
                                     className: D.fh
                                 })
-                            }, (0, r.A)())
+                            }, (0, a.A)())
                         })
                     })]
-                }), k.canAccess ? (0, i.jsx)(c.Button, {
+                }), O.canAccess ? (0, i.jsx)(c.Button, {
                     variant: "primary",
                     onClick: el,
-                    text: k.ctaText
+                    text: O.ctaText
                 }) : (0, i.jsx)(c.Button, {
                     onClick: el,
                     variant: "primary",
-                    text: k.ctaText
+                    text: O.ctaText
                 })]
             })]
         })]

@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(723702),
     l = n(850670),
     s = n(206589),
-    a = n(125017),
-    r = n(625248),
+    r = n(125017),
+    a = n(625248),
     o = n(833349),
     d = n(287613),
     c = n(659051),
@@ -29,7 +29,7 @@ function m(e) {
         canJoin: !1,
         remoteJoinPlatform: null
     };
-    let x = (0, a._)(t);
+    let x = (0, r._)(t);
     if (!(0, d.A)(x) || (0, u.U)(x) || (0, s.w)(n, t) || (0, l.v)(m)) return {
         canJoin: !1,
         remoteJoinPlatform: null
@@ -39,7 +39,7 @@ function m(e) {
         remoteJoinPlatform: null
     };
     if (m.activity?.type === _.xL.JOIN && null != t) {
-        let e = (0, r.l)(t);
+        let e = (0, a.l)(t);
         if (null != e) return {
             canJoin: !0,
             remoteJoinPlatform: e

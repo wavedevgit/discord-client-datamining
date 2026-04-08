@@ -24,37 +24,37 @@ var i = n(627968),
     T = n(430452),
     N = n(485296),
     S = n(427262),
-    x = n(31408),
-    v = n(985018),
-    b = n(391987);
-let y = {
+    v = n(31408),
+    x = n(985018),
+    y = n(209582);
+let b = {
         offset: 2
     },
     O = {
         serverDeaf: {
             icon: d.TJE,
             colorize: !0,
-            getStatus: () => v.intl.string(v.t.btxSdB)
+            getStatus: () => x.intl.string(x.t.btxSdB)
         },
         serverMute: {
             icon: d.O1p,
             colorize: !0,
-            getStatus: () => v.intl.string(v.t.uLddbQ)
+            getStatus: () => x.intl.string(x.t.uLddbQ)
         },
         deaf: {
             icon: d.cQT,
             colorize: !1,
-            getStatus: () => v.intl.string(v.t.NjmiOL)
+            getStatus: () => x.intl.string(x.t.NjmiOL)
         },
         mute: {
             icon: d.z0P,
             colorize: !1,
-            getStatus: () => v.intl.string(v.t.tjtv3P)
+            getStatus: () => x.intl.string(x.t.tjtv3P)
         },
         localMute: {
             icon: d.O1p,
             colorize: !1,
-            getStatus: () => v.intl.string(v.t["9F+xJU"])
+            getStatus: () => x.intl.string(x.t["9F+xJU"])
         }
     };
 
@@ -104,7 +104,7 @@ function L(e) {
             mute: L,
             localMute: M
         }) ?? {},
-        H = null != B ? v.intl.formatToPlainString(v.t["1+MVBP"], {
+        H = null != B ? x.intl.formatToPlainString(x.t["1+MVBP"], {
             userName: G,
             status: B()
         }) : G;
@@ -113,7 +113,7 @@ function L(e) {
         null != w ? (0, c.L3)(e, async () => {
             let {
                 default: e
-            } = await Promise.all([n.e("97262"), n.e("42128"), n.e("84841"), n.e("50970")]).then(n.bind(n, 107632));
+            } = await Promise.all([n.e("97262"), n.e("42128"), n.e("84841"), n.e("36382")]).then(n.bind(n, 107632));
             return t => (0, i.jsx)(e, {
                 ...t,
                 user: h,
@@ -127,7 +127,7 @@ function L(e) {
         }) : (0, c.L3)(e, async () => {
             let {
                 default: e
-            } = await Promise.all([n.e("97262"), n.e("32418"), n.e("54631")]).then(n.bind(n, 668569));
+            } = await Promise.all([n.e("97262"), n.e("32418"), n.e("84821")]).then(n.bind(n, 668569));
             return t => (0, i.jsx)(e, {
                 ...t,
                 user: h,
@@ -159,21 +159,21 @@ function L(e) {
                 onClick: t => {
                     e.onClick(t), (0, p.X)(a, p.O.VOICE_USER)
                 },
-                className: b.H,
+                className: y.H,
                 onContextMenu: F,
-                focusProps: y,
+                focusProps: b,
                 children: (0, i.jsx)(I.A, {
-                    shakeLocation: x.uD.VOICE_USER,
+                    shakeLocation: v.uD.VOICE_USER,
                     isShaking: j,
                     children: (0, i.jsx)("div", {
-                        className: b.my,
+                        className: y.my,
                         style: {
                             backgroundImage: `url(${U})`,
                             ...W
                         },
                         children: null != k ? (0, i.jsx)(k, {
-                            className: l()(b.tr, {
-                                [b.qE]: V
+                            className: l()(y.tr, {
+                                [y.qE]: V
                             }),
                             color: "currentColor",
                             size: "xs"
@@ -214,7 +214,7 @@ function R(e) {
                 if (i.length >= n) return [i, !0];
                 i.push(r)
             } return [i, !1]
-    }(t, _, p), I = c ? d.QGg : d.j96, f = c ? v.intl.string(v.t["Z/Tya5"]) : v.intl.string(v.t.XR5BAc), T = (0, i.jsx)(o.m, {
+    }(t, _, p), I = c ? d.QGg : d.j96, f = c ? x.intl.string(x.t["Z/Tya5"]) : x.intl.string(x.t.XR5BAc), T = (0, i.jsx)(o.m, {
         text: f,
         ariaHidden: !0,
         children: (0, i.jsx)(d.K0, {
@@ -228,13 +228,13 @@ function R(e) {
         })
     }), N = E && c ? t : g;
     return N.length <= 0 ? null : (0, i.jsx)(d.IpV, {
-        className: l()(b.XG, a),
+        className: l()(y.XG, a),
         fade: !0,
         children: (0, i.jsxs)("div", {
             ref: m,
-            className: l()(b.Xk, !c && b.yZ),
+            className: l()(y.Xk, !c && y.yZ),
             role: "group",
-            "aria-label": v.intl.string(v.t["/ZgaVU"]),
+            "aria-label": x.intl.string(x.t["/ZgaVU"]),
             children: [N.map(e => {
                 let {
                     user: t,

@@ -4,14 +4,14 @@ n.d(t, {
 });
 var a = n(627968),
     i = n(158954),
-    s = n(793574),
-    l = n(688810),
+    l = n(793574),
+    s = n(688810),
     r = n(687173),
     o = n(770983),
     d = n(871123),
     c = n(44724),
     u = n(985018),
-    m = n(63381);
+    m = n(129308);
 
 function h() {
     (0, c.default)({
@@ -27,7 +27,7 @@ function x(e) {
         applicationIds: c
     } = e, {
         analyticsLocations: x
-    } = (0, l.Ay)([s.A.WISHLIST_ACCOUNT_POPOUT_UPSSELL]);
+    } = (0, s.Ay)([l.A.WISHLIST_ACCOUNT_POPOUT_UPSSELL]);
     return null == t ? null : (0, a.jsxs)(r.A, {
         heading: u.intl.string(u.t["vy/61K"]),
         subheading: u.intl.string(u.t.tEee9t),

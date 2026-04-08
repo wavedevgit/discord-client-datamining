@@ -31,10 +31,10 @@ function C(e) {
     } = e, T = (0, I.G)(), {
         voiceChannels: N,
         currentActivities: S,
-        partiedMembers: x,
-        applicationStreams: v,
-        guildContext: b
-    } = t, y = (0, A.sb)(C), O = [], L = e => {
+        partiedMembers: v,
+        applicationStreams: x,
+        guildContext: y
+    } = t, b = (0, A.sb)(C), O = [], L = e => {
         let {
             length: t
         } = O;
@@ -70,14 +70,14 @@ function C(e) {
                 L(t);
                 break
             }
-        } return v.length > 0 && T && v.forEach(e => {
+        } return x.length > 0 && T && x.forEach(e => {
         let {
             stream: t,
             streamUser: n,
             activity: l
         } = e;
         L((0, i.jsx)(E.A.ApplicationStreamingSection, {
-            guildId: b?.id,
+            guildId: y?.id,
             user: n,
             activity: l,
             applicationStream: t,
@@ -125,14 +125,14 @@ function C(e) {
             let e = N.length > 0 && N[0].members.length > 1,
                 r = a.length > 1;
             L((0, i.jsx)(E.A.TwitchSection, {
-                guildId: b?.id,
+                guildId: y?.id,
                 activity: n,
                 user: e || r ? A : null,
                 getAssetImage: p.uD
             }, `streaming-${n.session_id??t}`))
         } else n.type === f.$pd.LISTENING && ((0, o.A)(n) ? L((0, i.jsx)(E.A.SpotifySection, {
             activity: n,
-            isSolo: 1 === x.length,
+            isSolo: 1 === v.length,
             partySize: {
                 knownSize: a.length,
                 unknownSize: 0,
@@ -145,7 +145,7 @@ function C(e) {
             getAssetImage: p.uD,
             user: A
         }, `rich-presence-${n.session_id??t}-${A.id}`)));
-        y && null != C && null != r && (0, _.zS)(n, C) && (null == C.userStatus || !(0, h.gO)(C.userStatus, u.uF.ACTIVITY_PANEL)) && L((0, i.jsx)(m.A, {
+        b && null != C && null != r && (0, _.zS)(n, C) && (null == C.userStatus || !(0, h.gO)(C.userStatus, u.uF.ACTIVITY_PANEL)) && L((0, i.jsx)(m.A, {
             quest: C
         }, `quest-${C.id}-${n.session_id??t}`))
     }), O.length > 0 ? (0, i.jsx)(E.A.Body, {

@@ -1,6 +1,6 @@
 /** chunk id: 594968 params = (module,exports,require) **/
 n.d(t, {
-    A: () => y
+    A: () => b
 });
 var i = n(627968),
     r = n(64700),
@@ -22,7 +22,7 @@ var i = n(627968),
     f = n(723690),
     C = n(652215),
     T = n(985018),
-    N = n(211587);
+    N = n(488108);
 
 function S(e) {
     let {
@@ -71,7 +71,7 @@ function S(e) {
     })
 }
 
-function x(e) {
+function v(e) {
     let {
         userId: t,
         applicationId: n,
@@ -96,7 +96,7 @@ function x(e) {
     })
 }
 
-function v(e) {
+function x(e) {
     let {
         isGameRelationship: t,
         applicationId: n,
@@ -125,7 +125,7 @@ function v(e) {
     })
 }
 
-function b(e) {
+function y(e) {
     let {
         user: t,
         hovered: n,
@@ -149,7 +149,7 @@ function b(e) {
                 color: "text-muted",
                 children: T.intl.string(T.t.bgL68y)
             })]
-        }) : (0, i.jsx)(v, {
+        }) : (0, i.jsx)(x, {
             isGameRelationship: a,
             isProvisional: t.isProvisional,
             applicationId: o,
@@ -158,7 +158,7 @@ function b(e) {
     })
 }
 
-function y(e) {
+function b(e) {
     let {
         user: t,
         type: n,
@@ -183,7 +183,7 @@ function y(e) {
         onClick: f,
         children: e => (0, i.jsxs)("div", {
             className: N.a4,
-            children: [(0, i.jsx)(b, {
+            children: [(0, i.jsx)(y, {
                 user: t,
                 hovered: e,
                 status: g,
@@ -203,7 +203,7 @@ function y(e) {
                     isGameRelationship: A,
                     active: e,
                     onAcceptFriendRequest: m
-                }) : (0, i.jsx)(x, {
+                }) : (0, i.jsx)(v, {
                     userId: t.id,
                     applicationId: u,
                     isGameRelationship: A,

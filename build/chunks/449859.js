@@ -1,92 +1,92 @@
 /** chunk id: 449859 params = (module,exports,require) **/
-t.d(a, {
-    A: () => N
+n.d(t, {
+    A: () => b
 });
-var n = t(627968),
-    r = t(64700),
-    s = t(503698),
-    o = t.n(s),
-    c = t(990078),
-    _ = t(253932),
-    i = t(405269),
-    l = t(355938),
-    d = t(943815),
-    C = t(985018),
-    E = t(767283);
-let A = r.memo(function(e) {
+var a = n(627968),
+    i = n(64700),
+    r = n(503698),
+    s = n.n(r),
+    o = n(990078),
+    l = n(253932),
+    c = n(405269),
+    d = n(355938),
+    u = n(943815),
+    _ = n(985018),
+    m = n(812782);
+let p = i.memo(function(e) {
         let {
-            children: a,
-            className: t,
-            compact: s = !1,
-            timestamp: A,
-            timestampFormat: N,
-            isVisibleOnlyOnHover: m = !1,
-            cozyAlt: O = !1,
-            isInline: T = !0,
-            id: I,
-            isEdited: R = !1,
-            application: p,
-            tooltipPosition: f
-        } = e, P = r.useMemo(() => new Date(A), [A]), h = r.useMemo(() => (0, i.K7)(P), [P]), S = _.PZ.useSetting(), b = r.useMemo(() => null != N ? (0, i.i$)(P, N, S) : s ? (0, i.i$)(P, "LT", S) : (0, i.mk)(P, !0), [P, N, s, S]), g = r.useMemo(() => s ? (0, d.A)(b) : null, [s, b]), w = r.useMemo(() => R ? C.intl.formatToPlainString(C.t.CDzOFd, {
-            timeFormatted: h
-        }) : h, [R, h]);
-        return (0, n.jsx)("span", {
-            className: o()(t, g, {
-                [E.vE]: !0,
-                [E.ET]: m,
-                [E.YQ]: T,
-                [E.CC]: O
+            children: t,
+            className: n,
+            compact: r = !1,
+            timestamp: p,
+            timestampFormat: b,
+            isVisibleOnlyOnHover: h = !1,
+            cozyAlt: g = !1,
+            isInline: A = !0,
+            id: x,
+            isEdited: T = !1,
+            application: C,
+            tooltipPosition: I
+        } = e, S = i.useMemo(() => new Date(p), [p]), E = i.useMemo(() => (0, c.K7)(S), [S]), y = l.PZ.useSetting(), v = i.useMemo(() => null != b ? (0, c.i$)(S, b, y) : r ? (0, c.i$)(S, "LT", y) : (0, c.mk)(S, !0), [S, b, r, y]), j = i.useMemo(() => r ? (0, u.A)(v) : null, [r, v]), R = i.useMemo(() => T ? _.intl.formatToPlainString(_.t.CDzOFd, {
+            timeFormatted: E
+        }) : E, [T, E]);
+        return (0, a.jsx)("span", {
+            className: s()(n, j, {
+                [m.vE]: !0,
+                [m.ET]: h,
+                [m.YQ]: A,
+                [m.CC]: g
             }),
-            children: null == p ? (0, n.jsx)(c.m, {
+            children: null == C ? (0, a.jsx)(o.m, {
                 asContainer: !0,
-                __unsupportedReactNodeAsText: (0, i.i$)(P, "LLLL"),
-                "aria-label": w,
-                position: f,
+                __unsupportedReactNodeAsText: (0, c.i$)(S, "LLLL"),
+                "aria-label": R,
+                position: I,
                 delay: 750,
-                children: (0, n.jsx)(u, {
-                    timeFormatted: b,
-                    timestamp: P,
-                    id: I,
-                    compact: s,
-                    children: a
+                children: (0, a.jsx)(f, {
+                    timeFormatted: v,
+                    timestamp: S,
+                    id: x,
+                    compact: r,
+                    children: t
                 })
-            }) : (0, n.jsx)(l.A, {
-                application: p,
-                compact: s,
-                children: (0, n.jsx)(u, {
-                    timeFormatted: b,
-                    timestamp: P,
-                    id: I,
-                    compact: s,
-                    children: a
+            }) : (0, a.jsx)(d.A, {
+                application: C,
+                compact: r,
+                children: (0, a.jsx)(f, {
+                    timeFormatted: v,
+                    timestamp: S,
+                    id: x,
+                    compact: r,
+                    children: t
                 })
             })
         })
     }),
-    u = r.memo(function(e) {
+    f = i.memo(function(e) {
         let {
-            tooltipProps: a,
-            timeFormatted: t,
-            children: r,
-            compact: s,
-            timestamp: o,
-            id: c
+            tooltipProps: t,
+            timeFormatted: n,
+            children: i,
+            compact: r,
+            timestamp: s,
+            id: o
         } = e;
-        return (0, n.jsx)("time", {
-            ...a,
-            id: c,
-            dateTime: o.toISOString(),
-            children: null != r ? r : (0, n.jsxs)(n.Fragment, {
-                children: [(0, n.jsx)("i", {
-                    className: E.me,
+        return (0, a.jsx)("time", {
+            ...t,
+            id: o,
+            dateTime: s.toISOString(),
+            children: null != i ? i : (0, a.jsxs)(a.Fragment, {
+                children: [(0, a.jsx)("i", {
+                    className: m.me,
                     "aria-hidden": !0,
-                    children: s ? "[" : " — "
-                }), t, s && (0, n.jsxs)("i", {
-                    className: E.me,
+                    children: r ? "[" : " — "
+                }), n, r && (0, a.jsxs)("i", {
+                    className: m.me,
                     "aria-hidden": !0,
                     children: ["]", " "]
                 })]
             })
         })
     }),
-    N = A
+    b = p

@@ -4,14 +4,14 @@ n.d(t, {
 });
 var a = n(627968),
     i = n(64700),
-    s = n(311907),
-    l = n(397927),
+    l = n(311907),
+    s = n(397927),
     r = n(513520),
     o = n(209390),
     d = n(734057),
     c = n(303054),
-    u = n(709968),
-    m = n(310086);
+    u = n(594511),
+    m = n(793877);
 let h = [{
     key: "channel",
     cellClassName: u._w,
@@ -23,7 +23,7 @@ let h = [{
     }
 }, {
     key: "score",
-    renderHeader: () => (0, a.jsx)(l.Text, {
+    renderHeader: () => (0, a.jsx)(s.Text, {
         variant: "text-sm/semibold",
         children: "SCORE"
     }),
@@ -40,7 +40,7 @@ function x() {
     i.useEffect(() => {
         (0, r.I)()
     }, []);
-    let e = (0, s.yK)([o.A, d.A], () => o.A.getChannelAffinities().map(e => {
+    let e = (0, l.yK)([o.A, d.A], () => o.A.getChannelAffinities().map(e => {
         let {
             channelId: t,
             score: n

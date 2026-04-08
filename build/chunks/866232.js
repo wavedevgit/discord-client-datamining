@@ -1,5 +1,5 @@
 /** chunk id: 866232 params = (module,exports,require) **/
-n.d(t, {
-    u: () => l
+_.d(t, {
+    u: () => N
 });
-var i, l = ((i = {})[i.KEYWORD = 1] = "KEYWORD", i[i.SPAM_LINK = 2] = "SPAM_LINK", i[i.ML_SPAM = 3] = "ML_SPAM", i[i.DEFAULT_KEYWORD_LIST = 4] = "DEFAULT_KEYWORD_LIST", i[i.MENTION_SPAM = 5] = "MENTION_SPAM", i[i.USER_PROFILE = 6] = "USER_PROFILE", i[i.SERVER_POLICY = 7] = "SERVER_POLICY", i)
+var A, N = ((A = {})[A.KEYWORD = 1] = "KEYWORD", A[A.SPAM_LINK = 2] = "SPAM_LINK", A[A.ML_SPAM = 3] = "ML_SPAM", A[A.DEFAULT_KEYWORD_LIST = 4] = "DEFAULT_KEYWORD_LIST", A[A.MENTION_SPAM = 5] = "MENTION_SPAM", A[A.USER_PROFILE = 6] = "USER_PROFILE", A[A.SERVER_POLICY = 7] = "SERVER_POLICY", A)

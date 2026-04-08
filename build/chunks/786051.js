@@ -9,7 +9,7 @@ var i = n(627968),
     r = n(397927),
     o = n(576470),
     c = n(761640),
-    d = n(540400);
+    d = n(916397);
 let u = function(e) {
     let {
         message: t,
@@ -18,8 +18,8 @@ let u = function(e) {
         buttonText: h,
         buttonIcon: m,
         buttonSubmitting: A,
-        onButtonClick: g,
-        imageSrc: p,
+        onButtonClick: p,
+        imageSrc: g,
         animationSrc: f,
         secondaryButtonText: _,
         onSecondaryButtonClick: E,
@@ -31,12 +31,12 @@ let u = function(e) {
     if (null == t) return (0, i.jsx)(i.Fragment, {
         children: l.Children.only(x)
     });
-    let I = null;
-    return null != p ? I = (0, i.jsx)("img", {
+    let N = null;
+    return null != g ? N = (0, i.jsx)("img", {
         alt: "",
-        src: p,
+        src: g,
         className: d.Sl
-    }) : null != f && (I = (0, i.jsx)(r.akl, {
+    }) : null != f && (N = (0, i.jsx)(r.akl, {
         importData: f,
         shouldAnimate: !C,
         className: d.lY
@@ -44,7 +44,7 @@ let u = function(e) {
         className: d.iE,
         children: [(0, i.jsxs)("div", {
             className: d.Qs,
-            children: [I, (0, i.jsxs)("div", {
+            children: [N, (0, i.jsxs)("div", {
                 className: d.Qq,
                 children: [(0, i.jsx)(r.Heading, {
                     variant: "heading-md/semibold",
@@ -71,7 +71,7 @@ let u = function(e) {
                     text: h,
                     size: "sm",
                     variant: S ?? "secondary",
-                    onClick: g,
+                    onClick: p,
                     loading: A,
                     icon: m
                 })

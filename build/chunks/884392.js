@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     l = n(412703),
     s = n(311907),
-    a = n(397927),
-    r = n(829219),
+    r = n(397927),
+    a = n(829219),
     o = n(859703),
     d = n(890687),
     c = n(590202),
@@ -89,7 +89,7 @@ let g = function(e) {
             questContentRowIndex: I.questContentRowIndex
         })
     }: async () => {
-        await (0, r.Oy)(n.id, {
+        await (0, a.Oy)(n.id, {
             questContent: I.questContent,
             questContentCTA: I.questContentCTA,
             sourceQuestContent: I.sourceQuestContent,
@@ -97,7 +97,7 @@ let g = function(e) {
             questContentRowIndex: I.questContentRowIndex
         }), t?.()
     });
-    return (0, i.jsx)(a.Button, {
+    return (0, i.jsx)(r.Button, {
         size: g,
         loading: b,
         variant: "primary",

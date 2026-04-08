@@ -1,19 +1,19 @@
 /** chunk id: 915488 params = (module,exports,require) **/
 n.d(t, {
-    a: () => r
+    a: () => a
 });
 var i = n(850992),
     l = n(203982),
     s = n(652215),
-    a = n(698279);
+    r = n(698279);
 
-function r(e) {
+function a(e) {
     let {
         stickerPack: t,
         stickerPickerCategories: n
     } = e;
     l._.dispatchToLastSubscribed(s.jej.OPEN_EXPRESSION_PICKER, {
-        activeView: a.kx.STICKER
+        activeView: r.kx.STICKER
     });
-    let r = n.findIndex(e => e.id === t.id); - 1 !== r && i.bM.setActiveCategoryIndex(r)
+    let a = n.findIndex(e => e.id === t.id); - 1 !== a && i.bM.setActiveCategoryIndex(a)
 }

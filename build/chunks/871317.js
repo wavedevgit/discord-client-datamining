@@ -4,15 +4,15 @@ n.d(t, {
 });
 var a = n(627968),
     i = n(701363),
-    s = n(95701),
-    l = n(331884),
+    l = n(95701),
+    s = n(331884),
     r = n(652215);
 
 function o(e) {
     let {
         selected: t,
         nameplate: n
-    } = e, o = (0, l.i)(), d = new s.cq({
+    } = e, o = (0, s.i)(), d = new l.cq({
         id: "0",
         type: r.rbe.DM,
         name: "self",

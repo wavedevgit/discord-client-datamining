@@ -6,8 +6,8 @@ n.d(t, {
 });
 var i, l, s = n(627968);
 n(64700);
-var a = n(503698),
-    r = n.n(a),
+var r = n(503698),
+    a = n.n(r),
     o = n(687498),
     d = n(827734),
     c = n(582754),
@@ -16,7 +16,7 @@ var a = n(503698),
     m = n(579473),
     h = n(241124),
     p = n(652215),
-    g = n(260821),
+    g = n(917094),
     A = ((i = {})[i.SMALL = 24] = "SMALL", i[i.MEDIUM = 32] = "MEDIUM", i),
     x = ((l = {})[l.SMALL = 2] = "SMALL", l[l.MEDIUM = 8] = "MEDIUM", l);
 let f = function(e) {
@@ -25,7 +25,7 @@ let f = function(e) {
         logotypeClassName: n,
         gameTileSize: i = 24,
         quest: l,
-        separatorSpacing: a = 2,
+        separatorSpacing: r = 2,
         theme: A = p.NJ8.DARK,
         withCosponsor: x = !0,
         withGameTile: f = !0,
@@ -33,7 +33,7 @@ let f = function(e) {
         onLoadComplete: E
     } = e, I = (0, c.Mw)(A) ? p.NJ8.DARK : p.NJ8.LIGHT, v = (0, _.a5)(l.id, I), b = x && null != l.config.cosponsorMetadata && null != v;
     return (0, s.jsxs)("div", {
-        className: r()(g.Iu, t),
+        className: a()(g.Iu, t),
         children: [f && (0, s.jsx)(h.Sn, {
             id: "QuestPartnerBranding_gameTile",
             children: e => (0, s.jsx)("img", {
@@ -59,7 +59,7 @@ let f = function(e) {
             id: "QuestPartnerBranding_gameLogotype",
             children: e => (0, s.jsx)(o.animated.img, {
                 ref: e,
-                className: r()(g.lW, n, {
+                className: a()(g.lW, n, {
                     [g.TO]: b
                 }),
                 style: C,
@@ -71,7 +71,7 @@ let f = function(e) {
             children: [(0, s.jsx)("div", {
                 className: g.ub,
                 style: {
-                    margin: `0 ${a}px`
+                    margin: `0 ${r}px`
                 },
                 children: (0, s.jsx)(u.aoi, {
                     className: g.JB,
@@ -81,7 +81,7 @@ let f = function(e) {
                 id: "QuestPartnerBranding_cosponsorLogotype",
                 children: e => (0, s.jsx)(o.animated.img, {
                     ref: e,
-                    className: r()(g.lW, g.TO, n),
+                    className: a()(g.lW, g.TO, n),
                     style: C,
                     alt: l.config.cosponsorMetadata?.name ?? "",
                     src: v.url,

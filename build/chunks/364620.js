@@ -9,7 +9,5 @@ e.exports = {
     gr: "oneColumnCoverArtStoreLinksSummaryContainer__81040",
     E1: "oneColumnStoreLinksSummaryContainer__81040",
     lM: "twoColumnLeftMediaSummaryContainer__81040",
-    oC: "twoColumnLeftSections__81040",
-    n9: "compactBarBorder__81040",
-    rT: "compactBarBorderVisible__81040"
+    oC: "twoColumnLeftSections__81040"
 }

@@ -3,17 +3,17 @@ a.d(t, {
     Cr: () => y,
     I1: () => S,
     Nj: () => A,
-    R6: () => w,
+    R6: () => P,
     SX: () => B,
-    UB: () => P,
+    UB: () => w,
     YE: () => T
 }), a(938796);
 var n = a(627968),
     r = a(64700),
     o = a(665260),
     i = a(311907),
-    c = a(571356),
-    l = a(990078),
+    l = a(571356),
+    c = a(990078),
     s = a(397927),
     _ = a(672477),
     d = a(982406),
@@ -27,7 +27,7 @@ var n = a(627968),
     h = a(652176),
     v = a(652215),
     x = a(985018),
-    I = a(999169);
+    I = a(541624);
 
 function y(e) {
     let t = e.item.originalItem;
@@ -67,14 +67,14 @@ function S(e) {
         }),
         u = (0, o.Lt)(t.flags ?? 0, v.sbO.IS_CLIP),
         p = (0, i.bG)([b.A], () => b.A.getBasicChannel(e.message.channel_id)?.guild_id),
-        m = r.useCallback(() => !u || a ? null : (0, n.jsx)(l.m, {
+        m = r.useCallback(() => !u || a ? null : (0, n.jsx)(c.m, {
             text: x.intl.string(x.t["/fgfWh"]),
             children: (0, n.jsxs)("div", {
                 className: I.M,
                 children: [(0, n.jsx)(s.xgA, {
                     size: "xs",
                     color: "currentColor"
-                }), (0, n.jsx)(c.E, {
+                }), (0, n.jsx)(l.E, {
                     variant: "text-xs/semibold",
                     color: "always-white",
                     children: x.intl.string(x.t.oA4afG)
@@ -126,9 +126,9 @@ function B(e) {
         item: a
     } = e, n = a.originalItem, o = (0, p.dx)(p.k0.VOICE_MESSAGE, n.id), i = r.useCallback((e, a, r) => {
         (0, m.wQ)(t.id, n.duration_secs ?? null, a, t.author.id)
-    }, [t, n.duration_secs]), c = r.useCallback((e, a) => {
+    }, [t, n.duration_secs]), l = r.useCallback((e, a) => {
         (0, m.dP)(t.id, n.duration_secs ?? null, e, t.author.id, a)
-    }, [t, n.duration_secs]), l = r.useCallback(e => {
+    }, [t, n.duration_secs]), c = r.useCallback(e => {
         (0, m._O)(t.id, e?.message ?? null)
     }, [t]);
     return (0, h.P$)({
@@ -139,13 +139,13 @@ function B(e) {
         durationSecs: n.duration_secs,
         waveform: n.waveform,
         onPlay: i,
-        onPause: c,
-        onError: l,
+        onPause: l,
+        onError: c,
         playbackCacheKey: o
     })
 }
 
-function w(e) {
+function P(e) {
     let t = e.item.originalItem;
     return (0, h._d)({
         ...e,
@@ -156,7 +156,7 @@ function w(e) {
     })
 }
 
-function P(e) {
+function w(e) {
     let t = e.item.originalItem;
     return (0, h.Dk)({
         ...e,
@@ -183,14 +183,14 @@ function j(e) {
         attachment: t,
         message: a
     } = e, r = a.channel_id, o = (0, i.bG)([b.A], () => b.A.getBasicChannel(r)?.guild_id), {
-        clip_created_at: c,
-        clip_participants: l,
+        clip_created_at: l,
+        clip_participants: c,
         title: s,
         application: _
     } = t;
     return (0, n.jsx)(u.A, {
-        createdAt: null != c ? Date.parse(c) : void 0,
-        participantIds: l?.map(e => {
+        createdAt: null != l ? Date.parse(l) : void 0,
+        participantIds: c?.map(e => {
             let {
                 id: t
             } = e;

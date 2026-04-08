@@ -1,6 +1,6 @@
 /** chunk id: 582095 params = (module,exports,require) **/
 n.d(t, {
-    A: () => y
+    A: () => b
 });
 var i = n(311907),
     r = n(73153),
@@ -24,10 +24,10 @@ var i = n(311907),
     T = n(592653),
     N = n(639621),
     S = n(652215),
-    x = n(360469),
-    v = n(165610),
-    b = n(731854);
-class y {
+    v = n(360469),
+    x = n(165610),
+    y = n(731854);
+class b {
     rpcServer;
     transports;
     rpcCommandHandlers;
@@ -97,7 +97,7 @@ class y {
     handleSpeaking = e => {
         if (0 === this.rpcServer.subscriptions.length) return;
         let t = 0 !== e.speakingFlags ? S.ZE4.SPEAKING_START : S.ZE4.SPEAKING_STOP;
-        if (e.context === b.x.DEFAULT) {
+        if (e.context === y.x.DEFAULT) {
             let n = m.A.getVoiceChannelId();
             if (null != n) {
                 let i = o.A.getChannel(n);
@@ -158,7 +158,7 @@ class y {
             layoutMode: n
         } = e;
         if (0 === this.rpcServer.subscriptions.length) return;
-        let i = n !== x.bN.FOCUSED;
+        let i = n !== v.bN.FOCUSED;
         this.rpcServer.dispatchToSubscriptions(S.ZE4.ACTIVITY_PIP_MODE_UPDATE, e => e.socket.application.id === t, {
             is_pip_mode: i
         });
@@ -173,8 +173,8 @@ class y {
             layoutMode: n
         } = e;
         if (0 === this.rpcServer.subscriptions.length) return;
-        let i = n === v.y.PIP ? x.bN.PIP : x.bN.FOCUSED,
-            r = i !== x.bN.FOCUSED;
+        let i = n === x.y.PIP ? v.bN.PIP : v.bN.FOCUSED,
+            r = i !== v.bN.FOCUSED;
         this.rpcServer.dispatchToSubscriptions(S.ZE4.ACTIVITY_PIP_MODE_UPDATE, e => e.socket.application.id === t, {
             is_pip_mode: r
         });

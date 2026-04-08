@@ -4,8 +4,8 @@ n.d(t, {
 });
 var a = n(627968),
     i = n(64700),
-    s = n(311907),
-    l = n(554146),
+    l = n(311907),
+    s = n(554146),
     r = n(397927),
     o = n(541689),
     d = n(199773),
@@ -13,21 +13,21 @@ var a = n(627968),
     u = n(64343),
     m = n(821052),
     h = n(594061),
-    x = n(331755);
+    x = n(454442);
 
 function p() {
     let {
         dailyCapReached: e,
         dailyCapOverridden: t,
         newUserMinAgeRequiredOverridden: n
-    } = (0, s.cf)([d.A], () => ({
+    } = (0, l.cf)([d.A], () => ({
         dailyCapReached: d.A.hasUserHitDCCap(),
         dailyCapOverridden: d.A.dailyCapOverridden,
         newUserMinAgeRequiredOverridden: d.A.newUserMinAgeRequiredOverridden
-    })), [p, g] = i.useState(""), [f, _] = i.useState(20), v = i.useMemo(() => Object.keys(l.M).filter(e => e.toLowerCase().includes(p.toLowerCase())).reverse(), [p]), b = i.useCallback(e => {
+    })), [p, g] = i.useState(""), [_, f] = i.useState(20), v = i.useMemo(() => Object.keys(s.M).filter(e => e.toLowerCase().includes(p.toLowerCase())).reverse(), [p]), b = i.useCallback(e => {
         let t = e.currentTarget;
-        t.scrollHeight - t.scrollTop <= t.clientHeight + 100 && f < v.length && _(e => e + 100)
-    }, [f, v.length]);
+        t.scrollHeight - t.scrollTop <= t.clientHeight + 100 && _ < v.length && f(e => e + 100)
+    }, [_, v.length]);
     return (0, a.jsx)(r.ChK, {
         onScroll: b,
         children: (0, a.jsxs)("div", {
@@ -69,7 +69,7 @@ function p() {
                     onChange: g,
                     onClear: () => g("")
                 }), (0, a.jsx)(c.A, {
-                    items: v.slice(0, f)
+                    items: v.slice(0, _)
                 })]
             })]
         })

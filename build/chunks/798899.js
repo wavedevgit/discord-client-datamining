@@ -5,11 +5,11 @@ n.d(t, {
 var i = n(627968),
     l = n(64700),
     s = n(397927),
-    a = n(572211),
-    r = n(443795),
+    r = n(572211),
+    a = n(443795),
     o = n(768349),
     d = n(985018),
-    c = n(772234);
+    c = n(71747);
 
 function u(e) {
     let {
@@ -26,10 +26,10 @@ function u(e) {
         lineClamp: 1,
         children: d.intl.string(d.t["84qx9r"])
     }), []);
-    return (0, i.jsx)(a.h, {
+    return (0, i.jsx)(r.h, {
         header: u,
         title: t.name,
-        iconSrc: r.HT.getWhiteIconURL(),
+        iconSrc: a.HT.getWhiteIconURL(),
         info: p,
         onClickContent: _,
         trackingConfig: {

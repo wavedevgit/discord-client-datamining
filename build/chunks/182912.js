@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     l = n(64700),
     s = n(503698),
-    a = n.n(s),
-    r = n(687498),
+    r = n.n(s),
+    a = n(687498),
     o = n(435371),
     d = n(397927),
     c = n(713517),
@@ -14,7 +14,7 @@ var i = n(627968),
     _ = n(486020),
     m = n(562153),
     h = n(836629),
-    p = n(754521);
+    p = n(795924);
 let g = {
     mass: 1,
     tension: 170,
@@ -41,13 +41,13 @@ function A(e) {
             y: b,
             scale: T
         })
-    }, [v, b, T, N]), (0, i.jsxs)(r.animated.div, {
+    }, [v, b, T, N]), (0, i.jsxs)(a.animated.div, {
         ref: h,
-        className: a()(p.gg, t),
+        className: r()(p.gg, t),
         "data-count": I,
         "aria-hidden": !0,
         style: {
-            transform: (0, r.to)([y.x, y.y, y.scale], (e, t, n) => `translate3d(${e}px, ${t}px, 0) scale(${n})`)
+            transform: (0, a.to)([y.x, y.y, y.scale], (e, t, n) => `translate3d(${e}px, ${t}px, 0) scale(${n})`)
         },
         children: [C.map((e, t) => (0, i.jsx)("div", {
             className: p.my,
@@ -80,7 +80,7 @@ function x(e) {
         guildId: t,
         channelId: n,
         members: s,
-        count: r
+        count: a
     } = e, o = l.useRef(null), {
         isHoveringOrFocusing: u
     } = (0, c.A)(o);
@@ -91,13 +91,13 @@ function x(e) {
         users: s,
         shouldShow: u,
         children: e => (0, i.jsx)("div", {
-            className: a()(p.my, p.k2),
+            className: r()(p.my, p.k2),
             ref: o,
             ...e,
             children: (0, i.jsx)(d.Text, {
                 variant: "text-sm/semibold",
                 color: "text-default",
-                children: r > 99 ? ">99" : `+${r}`
+                children: a > 99 ? ">99" : `+${a}`
             })
         })
     })

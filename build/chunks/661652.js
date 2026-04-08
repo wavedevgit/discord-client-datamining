@@ -4,8 +4,8 @@ n.d(t, {
 });
 var a = n(627968),
     i = n(64700),
-    s = n(503698),
-    l = n.n(s),
+    l = n(503698),
+    s = n.n(l),
     r = n(311907),
     o = n(873298),
     d = n(397927),
@@ -16,17 +16,17 @@ var a = n(627968),
     x = n(362490),
     p = n(487431),
     g = n(587895),
-    f = n(429913),
-    _ = n(15285),
+    _ = n(429913),
+    f = n(15285),
     v = n(905552),
     b = n(253932),
     j = n(546183),
     A = n(134861),
     C = n(157257),
     y = n(985018),
-    S = n(271469),
-    E = n(310086),
-    T = n(521807);
+    S = n(221303),
+    T = n(793877),
+    E = n(620352);
 let N = [{
     id: "unset",
     label: "Unset",
@@ -47,14 +47,14 @@ let N = [{
 
 function I() {
     var e;
-    let t, n, s = i.useRef(null),
+    let t, n, l = i.useRef(null),
         {
             analyticsLocations: o
         } = (0, m.Ay)(u.A.DEV_TOOLS),
         I = b.TA.useSetting(),
         [k, O] = i.useState(""),
-        R = (0, r.bG)([_.Ay, C.A], () => (0, v.A)(_.Ay, C.A)),
-        w = (0, f.h)(k),
+        R = (0, r.bG)([f.Ay, C.A], () => (0, v.A)(f.Ay, C.A)),
+        w = (0, _.h)(k),
         D = (0, h.g)(w),
         M = (0, r.yK)([g.A], () => w?.linkedGames?.map(e => g.A.getApplication(e.id)).filter(e => null != e) ?? []),
         P = (0, x.RD)(w, {
@@ -79,10 +79,10 @@ function I() {
             deauthorize: n
         });
     return (0, a.jsxs)("div", {
-        ref: s,
-        className: l()(E.nd, T.n),
+        ref: l,
+        className: s()(T.nd, E.n),
         children: [(0, a.jsxs)("div", {
-            className: T.k,
+            className: E.k,
             children: [(0, a.jsx)(d.Heading, {
                 variant: "heading-lg/normal",
                 children: "Settings"
@@ -95,7 +95,7 @@ function I() {
                 fullWidth: !0
             })]
         }), (0, a.jsxs)("div", {
-            className: T.k,
+            className: E.k,
             children: [(0, a.jsx)(d.Heading, {
                 variant: "heading-lg/normal",
                 children: "Application"
@@ -115,7 +115,7 @@ function I() {
                 children: ["Linked Games:", " ", M.length > 0 ? M.map(e => (0, h.t)(w)?.id === e.id ? `${e.name}*` : e.name).join(", ") : "N/A"]
             })]
         }), (0, a.jsxs)("div", {
-            className: T.k,
+            className: E.k,
             children: [(0, a.jsx)(d.Heading, {
                 variant: "heading-lg/normal",
                 children: "Authorization"

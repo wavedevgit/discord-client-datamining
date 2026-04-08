@@ -1,69 +1,69 @@
 /** chunk id: 420216 params = (module,exports,require) **/
-n.d(t, {
-    r: () => v
+n.d(e, {
+    r: () => x
 });
 var i = n(627968);
 n(64700);
 var l = n(554146),
-    s = n(397927),
-    a = n(803306),
-    r = n(573648),
+    r = n(397927),
+    s = n(803306),
+    a = n(573648),
     o = n(975807),
-    d = n(793574),
-    c = n(882997),
+    c = n(793574),
+    d = n(882997),
     u = n(662427),
-    h = n(532794),
-    A = n(745299),
-    _ = n(976860),
-    m = n(780964),
-    g = n(718446),
-    p = n(858897),
-    f = n(879945),
-    x = n(954571),
-    E = n(379848),
-    I = n(49999),
-    C = n(652215),
-    N = n(788868),
-    T = n(355097),
+    _ = n(532794),
+    E = n(745299),
+    T = n(976860),
+    A = n(780964),
+    I = n(718446),
+    N = n(858897),
+    R = n(879945),
+    p = n(954571),
+    h = n(379848),
+    C = n(49999),
+    g = n(652215),
+    m = n(788868),
+    O = n(355097),
     S = n(985018),
-    b = n(381703);
-let v = e => {
+    y = n(571655);
+let x = t => {
     let {
-        dismissibleContent: t,
-        noticeType: v
-    } = e;
-    return (0, i.jsx)(E.Ay, {
-        contentTypes: [t],
-        groupName: I.m.NOTICE_BAR,
+        dismissibleContent: e,
+        noticeType: x
+    } = t;
+    return (0, i.jsx)(h.Ay, {
+        contentTypes: [e],
+        groupName: C.m.NOTICE_BAR,
         bypassAutoDismiss: !0,
-        children: e => {
+        children: t => {
             let {
-                visibleContent: t,
-                markAsDismissed: E
-            } = e;
-            switch (t) {
+                visibleContent: e,
+                markAsDismissed: h
+            } = t;
+            switch (e) {
                 case l.M.NAGBAR_NOTICE_DOWNLOAD:
-                    return (0, i.jsxs)(s.$Td, {
-                        color: s.Hv$.DEFAULT,
-                        children: [(0, i.jsx)(s.PMB, {
-                            onClick: () => E(I.i.UNKNOWN),
-                            noticeType: v
+                    return (0, i.jsxs)(r.$Td, {
+                        color: r.Hv$.DEFAULT,
+                        children: [(0, i.jsx)(r.PMB, {
+                            onClick: () => h(C.i.UNKNOWN),
+                            noticeType: x
                         }), S.intl.string(S.t["+xn1o5"]), (0, i.jsx)("i", {
-                            className: b.c9
+                            className: y.c9
                         }), (0, i.jsx)("i", {
-                            className: b.Vz
+                            className: y.Vz
                         }), (0, i.jsx)("i", {
-                            className: b.p0
-                        }), (0, i.jsx)(s.Z_L, {
-                            noticeType: v,
+                            className: y.p0
+                        }), (0, i.jsx)(r.Z_L, {
+                            noticeType: x,
                             onClick: () => {
-                                (0, s.mMO)(async () => {
+                                (0, r.mMO)(async () => {
                                     let {
-                                        default: e
+                                        default: t
                                     } = await Promise.all([n.e("56423"), n.e("25280")]).then(n.bind(n, 987482));
-                                    return t => (0, i.jsx)(e, {
+                                    return e => (0, i.jsx)(t, {
                                         source: "Top Bar Nag",
-                                        ...t
+                                        ...e
                                     })
                                 })
                             },
@@ -71,185 +71,185 @@ let v = e => {
                         })]
                     });
                 case l.M.NAGBAR_QUEST_APP_UPSELL:
-                    return (0, i.jsxs)(s.$Td, {
-                        color: s.Hv$.DEFAULT,
-                        children: [(0, i.jsx)(s.PMB, {
-                            onClick: () => E(I.i.UNKNOWN),
-                            noticeType: v
+                    return (0, i.jsxs)(r.$Td, {
+                        color: r.Hv$.DEFAULT,
+                        children: [(0, i.jsx)(r.PMB, {
+                            onClick: () => h(C.i.UNKNOWN),
+                            noticeType: x
                         }), (0, i.jsx)("i", {
-                            className: b.TN
-                        }), S.intl.string(S.t.lgwX26), (0, i.jsx)(s.Z_L, {
-                            noticeType: v,
+                            className: y.TN
+                        }), S.intl.string(S.t.lgwX26), (0, i.jsx)(r.Z_L, {
+                            noticeType: x,
                             onClick: () => {
-                                (0, o.A)(C.AMi.META_QUEST), E(I.i.TAKE_ACTION)
+                                (0, o.A)(g.AMi.META_QUEST), h(C.i.TAKE_ACTION)
                             },
                             children: S.intl.string(S.t["1WjMbC"])
                         })]
                     });
                 case l.M.NAGBAR_NOTICE_CONNECT_SPOTIFY:
-                    return (0, i.jsxs)(s.$Td, {
-                        color: s.Hv$.SPOTIFY,
-                        children: [(0, i.jsx)(s.PMB, {
-                            onClick: () => E(I.i.UNKNOWN),
-                            noticeType: v
-                        }), (0, i.jsx)(f.A, {
-                            className: b.tV
-                        }), S.intl.string(S.t["5NUVHH"]), (0, i.jsx)(s.Z_L, {
-                            onClick: () => (0, c.A)({
-                                platformType: C.fg2.SPOTIFY,
+                    return (0, i.jsxs)(r.$Td, {
+                        color: r.Hv$.SPOTIFY,
+                        children: [(0, i.jsx)(r.PMB, {
+                            onClick: () => h(C.i.UNKNOWN),
+                            noticeType: x
+                        }), (0, i.jsx)(R.A, {
+                            className: y.tV
+                        }), S.intl.string(S.t["5NUVHH"]), (0, i.jsx)(r.Z_L, {
+                            onClick: () => (0, d.A)({
+                                platformType: g.fg2.SPOTIFY,
                                 location: "Notice Bar"
                             }),
-                            noticeType: v,
+                            noticeType: x,
                             children: S.intl.string(S.t.S0W8Z5)
                         })]
                     });
                 case l.M.NAGBAR_NOTICE_CONNECT_PLAYSTATION:
-                    return (0, i.jsxs)(s.$Td, {
-                        color: s.Hv$.PLAYSTATION,
-                        children: [(0, i.jsx)(s.PMB, {
-                            noticeType: v,
-                            onClick: () => E(I.i.UNKNOWN)
+                    return (0, i.jsxs)(r.$Td, {
+                        color: r.Hv$.PLAYSTATION,
+                        children: [(0, i.jsx)(r.PMB, {
+                            noticeType: x,
+                            onClick: () => h(C.i.UNKNOWN)
                         }), (0, i.jsx)("img", {
                             alt: "",
-                            className: b.tV,
-                            src: r.A.get(C.fg2.PLAYSTATION).icon.whiteSVG
-                        }), S.intl.string(S.t.WHWgoY), (0, i.jsx)(s.zr9, {
-                            onClick: () => (0, c.A)({
-                                platformType: C.fg2.PLAYSTATION,
+                            className: y.tV,
+                            src: a.A.get(g.fg2.PLAYSTATION).icon.whiteSVG
+                        }), S.intl.string(S.t.WHWgoY), (0, i.jsx)(r.zr9, {
+                            onClick: () => (0, d.A)({
+                                platformType: g.fg2.PLAYSTATION,
                                 location: "Notice Bar"
                             }),
                             children: S.intl.string(S.t.S0W8Z5)
                         })]
                     });
                 case l.M.NAGBAR_NOTICE_PASSKEY_BACKUP:
-                    return (0, i.jsxs)(s.$Td, {
-                        color: s.Hv$.DEFAULT,
-                        children: [(0, i.jsx)(s.PMB, {
-                            onClick: () => E(I.i.USER_DISMISS),
-                            noticeType: v
-                        }), S.intl.string(S.t["3qKN/h"]), (0, i.jsx)(s.Z_L, {
+                    return (0, i.jsxs)(r.$Td, {
+                        color: r.Hv$.DEFAULT,
+                        children: [(0, i.jsx)(r.PMB, {
+                            onClick: () => h(C.i.USER_DISMISS),
+                            noticeType: x
+                        }), S.intl.string(S.t["3qKN/h"]), (0, i.jsx)(r.Z_L, {
                             onClick: async () => {
-                                E(I.i.TAKE_ACTION);
+                                h(C.i.TAKE_ACTION);
                                 try {
                                     let {
-                                        startRegisterWebAuthnCredential: e
+                                        startRegisterWebAuthnCredential: t
                                     } = await Promise.resolve().then(n.bind(n, 917136)), {
-                                        ticket: t,
+                                        ticket: e,
                                         challenge: l
-                                    } = await e();
-                                    (0, s.mMO)(async () => {
+                                    } = await t();
+                                    (0, r.mMO)(async () => {
                                         let {
-                                            RegisterWebAuthnCredentialModal: e
-                                        } = await Promise.all([n.e("44667"), n.e("35510")]).then(n.bind(n, 359990));
-                                        return n => (0, i.jsx)(e, {
+                                            RegisterWebAuthnCredentialModal: t
+                                        } = await Promise.all([n.e("44667"), n.e("70987")]).then(n.bind(n, 359990));
+                                        return n => (0, i.jsx)(t, {
                                             ...n,
-                                            ticket: t,
+                                            ticket: e,
                                             challenge: l,
                                             showAccountSettingsButton: !0
                                         })
                                     })
-                                } catch (e) {
-                                    (0, s.showToast)((0, s.createToast)(S.intl.string(S.t.xSCvBf), s.ToastType.FAILURE))
+                                } catch (t) {
+                                    (0, r.showToast)((0, r.createToast)(S.intl.string(S.t.xSCvBf), r.ToastType.FAILURE))
                                 }
                             },
-                            noticeType: v,
+                            noticeType: x,
                             children: S.intl.string(S.t["ff/XXy"])
                         })]
                     });
                 case l.M.NAGBAR_NOTICE_PREMIUM_PROMO:
-                    return (0, i.jsxs)(s.$Td, {
-                        color: s.Hv$.PREMIUM_TIER_2,
+                    return (0, i.jsxs)(r.$Td, {
+                        color: r.Hv$.PREMIUM_TIER_2,
                         children: [(0, i.jsx)("span", {
-                            className: b.lK
+                            className: y.lK
                         }), (0, i.jsx)("span", {
-                            className: b.$t,
+                            className: y.$t,
                             children: S.intl.string(S.t["+urf75"])
-                        }), (0, i.jsx)(s.Z_L, {
-                            className: b.CO,
-                            noticeType: v,
+                        }), (0, i.jsx)(r.Z_L, {
+                            className: y.CO,
+                            noticeType: x,
                             onClick: () => {
-                                x.default.track(C.HAw.PREMIUM_PROMOTION_OPENED, {
-                                    location_section: C.JJy.NOTIFICATION_BAR,
-                                    location_object: C.ZSU.BUTTON_CTA
-                                }), (0, p.openUserSettings)(m.X.NITRO_PANEL)
+                                p.default.track(g.HAw.PREMIUM_PROMOTION_OPENED, {
+                                    location_section: g.JJy.NOTIFICATION_BAR,
+                                    location_object: g.ZSU.BUTTON_CTA
+                                }), (0, N.openUserSettings)(A.X.NITRO_PANEL)
                             },
                             children: S.intl.string(S.t["8JC5e/"])
-                        }), (0, i.jsx)(s.PMB, {
+                        }), (0, i.jsx)(r.PMB, {
                             onClick: () => {
-                                E(I.i.UNKNOWN), (0, a.lA)(C.nhx.PREMIUM_PROMO_DISMISSED, !0)
+                                h(C.i.UNKNOWN), (0, s.lA)(g.nhx.PREMIUM_PROMO_DISMISSED, !0)
                             },
-                            noticeType: v
+                            noticeType: x
                         })]
                     });
                 case l.M.NAGBAR_NOTICE_PREMIUM_TIER_TWO_TRIAL_ENDING:
-                    return (0, i.jsx)(A.A, {
-                        dismissCurrentNotice: () => E(I.i.UNKNOWN),
-                        subscriptionTier: N.pe.TIER_2
+                    return (0, i.jsx)(E.A, {
+                        dismissCurrentNotice: () => h(C.i.UNKNOWN),
+                        subscriptionTier: m.pe.TIER_2
                     });
                 case l.M.NAGBAR_NOTICE_PREMIUM_TIER_0_TRIAL_ENDING:
-                    return (0, i.jsx)(A.A, {
-                        dismissCurrentNotice: () => E(I.i.UNKNOWN),
-                        subscriptionTier: N.pe.TIER_0
+                    return (0, i.jsx)(E.A, {
+                        dismissCurrentNotice: () => h(C.i.UNKNOWN),
+                        subscriptionTier: m.pe.TIER_0
                     });
                 case l.M.NAGBAR_NOTICE_PREMIUM_REACTIVATE:
-                    return (0, i.jsxs)(s.$Td, {
-                        color: s.Hv$.PREMIUM_TIER_2,
-                        children: [(0, i.jsx)(s.PMB, {
-                            noticeType: v,
-                            onClick: () => E(I.i.UNKNOWN)
-                        }), S.intl.string(S.t["0KFB2B"]), (0, i.jsx)(s.Z_L, {
-                            noticeType: v,
+                    return (0, i.jsxs)(r.$Td, {
+                        color: r.Hv$.PREMIUM_TIER_2,
+                        children: [(0, i.jsx)(r.PMB, {
+                            noticeType: x,
+                            onClick: () => h(C.i.UNKNOWN)
+                        }), S.intl.string(S.t["0KFB2B"]), (0, i.jsx)(r.Z_L, {
+                            noticeType: x,
                             onClick: () => {
-                                E(I.i.UNKNOWN), (0, p.openUserSettings)(m.X.NITRO_PANEL)
+                                h(C.i.UNKNOWN), (0, N.openUserSettings)(A.X.NITRO_PANEL)
                             },
                             children: S.intl.string(S.t.pyYSiO)
                         })]
                     });
                 case l.M.NAGBAR_BOUNCED_EMAIL_NOTICE:
-                    return (0, i.jsxs)(s.$Td, {
-                        color: s.Hv$.DANGER,
-                        children: [(0, i.jsx)(s.PMB, {
-                            onClick: () => E(I.i.UNKNOWN),
-                            noticeType: v
-                        }), S.intl.string(S.t["7490vQ"]), (0, i.jsx)(s.Z_L, {
-                            noticeType: v,
+                    return (0, i.jsxs)(r.$Td, {
+                        color: r.Hv$.DANGER,
+                        children: [(0, i.jsx)(r.PMB, {
+                            onClick: () => h(C.i.UNKNOWN),
+                            noticeType: x
+                        }), S.intl.string(S.t["7490vQ"]), (0, i.jsx)(r.Z_L, {
+                            noticeType: x,
                             onClick: () => {
-                                (0, _.pX)((0, g.settingsPathToRoute)(T.od.ACCOUNT))
+                                (0, T.pX)((0, I.settingsPathToRoute)(O.od.ACCOUNT))
                             },
                             children: S.intl.string(S.t.Vm8akB)
                         })]
                     });
                 case l.M.NAGBAR_ACTIVATE_SERVER_SUBSCRIPTION:
-                    let y = u.A.getEligibleGuildsForNagActivate();
-                    return (0, i.jsxs)(s.$Td, {
-                        color: s.Hv$.DEFAULT,
-                        children: [(0, i.jsx)(s.PMB, {
-                            onClick: () => E(I.i.UNKNOWN),
-                            noticeType: v
-                        }), S.intl.string(S.t.pJ4hJE), (0, i.jsx)(s.Z_L, {
-                            noticeType: v,
+                    let M = u.A.getEligibleGuildsForNagActivate();
+                    return (0, i.jsxs)(r.$Td, {
+                        color: r.Hv$.DEFAULT,
+                        children: [(0, i.jsx)(r.PMB, {
+                            onClick: () => h(C.i.UNKNOWN),
+                            noticeType: x
+                        }), S.intl.string(S.t.pJ4hJE), (0, i.jsx)(r.Z_L, {
+                            noticeType: x,
                             onClick: () => {
-                                E(I.i.PRIMARY), (0, _.pX)(1 === y.length ? C.BVt.GUILD_SETTINGS(y[0], "role-subscriptions") : C.BVt.PICK_GUILD_SETTINGS("role-subscriptions", void 0, "server-subscriptions-finish-setting-up"))
+                                h(C.i.PRIMARY), (0, T.pX)(1 === M.length ? g.BVt.GUILD_SETTINGS(M[0], "role-subscriptions") : g.BVt.PICK_GUILD_SETTINGS("role-subscriptions", void 0, "server-subscriptions-finish-setting-up"))
                             },
                             children: S.intl.string(S.t["74s74F"])
                         })]
                     });
                 case l.M.CHECKOUT_RECOVERY_NAGBAR:
-                    return (0, i.jsxs)(s.$Td, {
-                        color: s.Hv$.PREMIUM_TIER_2,
-                        children: [(0, i.jsx)(s.PMB, {
-                            onClick: () => E(I.i.UNKNOWN),
-                            noticeType: v
-                        }), S.intl.string(S.t["O9GI+k"]), (0, i.jsx)(s.Z_L, {
+                    return (0, i.jsxs)(r.$Td, {
+                        color: r.Hv$.PREMIUM_TIER_2,
+                        children: [(0, i.jsx)(r.PMB, {
+                            onClick: () => h(C.i.UNKNOWN),
+                            noticeType: x
+                        }), S.intl.string(S.t["O9GI+k"]), (0, i.jsx)(r.Z_L, {
                             onClick: () => {
-                                (0, h.A)({
-                                    subscriptionTier: N.pe.TIER_2,
-                                    analyticsLocations: [d.A.CHECKOUT_RECOVERY_NAGBAR],
-                                    analyticsLocation: C.ThZ.CHECKOUT_RECOVERY_NAGBAR,
-                                    onClose: () => E(I.i.UNKNOWN)
+                                (0, _.A)({
+                                    subscriptionTier: m.pe.TIER_2,
+                                    analyticsLocations: [c.A.CHECKOUT_RECOVERY_NAGBAR],
+                                    analyticsLocation: g.ThZ.CHECKOUT_RECOVERY_NAGBAR,
+                                    onClose: () => h(C.i.UNKNOWN)
                                 })
                             },
-                            noticeType: v,
+                            noticeType: x,
                             children: S.intl.string(S.t.Zi69D4)
                         })]
                     })

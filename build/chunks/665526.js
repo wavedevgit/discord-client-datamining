@@ -13,7 +13,7 @@ var i = n(627968),
     u = n(431832),
     m = n(443064),
     g = n(985018),
-    _ = n(536242);
+    _ = n(949268);
 let x = (0, o.E2)(c.X.ACCOUNT_PROFILE_SETTING, {
         useSearchTerms: function() {
             let e = [g.intl.string(g.t.LYju5J), g.intl.string(g.t["9AjdkD"]), g.intl.string(g.t["+JkHPw"]), g.intl.string(g.t.oP5zGA), g.intl.string(g.t.Ulqq6K)],

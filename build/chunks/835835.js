@@ -16,8 +16,8 @@ var i = n(627968),
     h = n(843472),
     m = n(928039),
     A = n(12351),
-    g = n(976860),
-    p = n(734057),
+    p = n(976860),
+    g = n(734057),
     f = n(320501),
     _ = n(576705),
     E = n(519057),
@@ -25,10 +25,10 @@ var i = n(627968),
     C = n(954571),
     S = n(203982),
     T = n(81437),
-    I = n(636922),
-    N = n(652215),
+    N = n(636922),
+    I = n(652215),
     v = n(985018),
-    y = n(284362);
+    y = n(726213);
 
 function b(e) {
     e.stopPropagation()
@@ -133,7 +133,7 @@ let D = d.Ay.connectStores([_.A], e => {
         channel: t
     } = e;
     return {
-        canManageMessages: null != t && _.A.can(N.xBc.MANAGE_MESSAGES, t)
+        canManageMessages: null != t && _.A.can(I.xBc.MANAGE_MESSAGES, t)
     }
 })(M);
 
@@ -144,16 +144,16 @@ function O(e) {
         hasMore: s,
         loading: r,
         loadMore: h,
-        renderHeader: g,
-        renderEmptyState: p,
+        renderHeader: p,
+        renderEmptyState: g,
         renderItem: f,
         getProTip: _,
         scrollerClassName: T,
-        className: I,
+        className: N,
         listName: j
     } = e, R = l.useRef(null), M = (0, m.A)(j, R), D = (0, d.bG)([E.Ay], () => E.Ay.hasNotice()), O = (0, d.bG)([x.A], () => x.A.windowSize());
     l.useEffect(() => {
-        C.default.track(N.HAw.OPEN_POPOUT, {
+        C.default.track(I.HAw.OPEN_POPOUT, {
             type: t
         })
     }, [t]), l.useEffect(() => {
@@ -168,8 +168,8 @@ function O(e) {
                 animate: !0
             })
         }
-        return S._.subscribe(N.jej.SCROLL_PAGE_DOWN, t), S._.subscribe(N.jej.SCROLL_PAGE_UP, e), () => {
-            S._.unsubscribe(N.jej.SCROLL_PAGE_DOWN, t), S._.unsubscribe(N.jej.SCROLL_PAGE_UP, e)
+        return S._.subscribe(I.jej.SCROLL_PAGE_DOWN, t), S._.subscribe(I.jej.SCROLL_PAGE_UP, e), () => {
+            S._.unsubscribe(I.jej.SCROLL_PAGE_DOWN, t), S._.unsubscribe(I.jej.SCROLL_PAGE_UP, e)
         }
     }, []);
     let L = l.useCallback(() => {
@@ -182,7 +182,7 @@ function O(e) {
         className: a()(y.zC, y.k$),
         children: (0, i.jsx)(u.y$y, {})
     }, "spinner")] : 0 === n.length ? P.push((0, i.jsx)(l.Fragment, {
-        children: p()
+        children: g()
     }, "empty-state")) : (k = !1, P = [], o().each(n, e => {
         P.push(...f(e))
     }));
@@ -201,7 +201,7 @@ function O(e) {
         })
     }) : (0, i.jsx)("div", {
         className: y.lJ,
-        children: p()
+        children: g()
     }));
     let U = _?.(),
         G = k && null != U ? (0, i.jsx)("div", {
@@ -221,13 +221,13 @@ function O(e) {
     D && (F.maxHeight -= 40);
     let B = null != h && s;
     return (0, i.jsx)("div", {
-        className: a()(y.KQ, I ?? y.G6),
+        className: a()(y.KQ, N ?? y.G6),
         style: F,
         onClick: b,
         onDoubleClick: b,
         "aria-label": e["aria-label"],
         children: (0, i.jsxs)(u.Fmo, {
-            component: g(),
+            component: p(),
             children: [(0, i.jsxs)(u.T7Y, {
                 className: T ?? y.m4,
                 onScroll: B ? L : void 0,
@@ -283,8 +283,8 @@ function L(e) {
             let {
                 id: i,
                 channel_id: l
-            } = e, s = p.A.getChannel(l);
-            null != s && (h.A.trackJump(l, i, t), (0, g.pX)(N.BVt.CHANNEL(s.getGuildId(), l, i))), u?.(n)
+            } = e, s = g.A.getChannel(l);
+            null != s && (h.A.trackJump(l, i, t), (0, p.pX)(I.BVt.CHANNEL(s.getGuildId(), l, i))), u?.(n)
         };
         (0, T.A)(e, i) && !R && i()
     }
@@ -316,7 +316,7 @@ function L(e) {
             let l = [];
             return null == n ? [] : (l.push((0, i.jsxs)("div", {
                 className: y.Uc,
-                children: [(0, i.jsx)(I.A, {
+                children: [(0, i.jsx)(N.A, {
                     className: y.i0,
                     message: t,
                     channel: n

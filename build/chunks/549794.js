@@ -1,6 +1,6 @@
 /** chunk id: 549794 params = (module,exports,require) **/
 n.d(t, {
-    A: () => x
+    A: () => v
 }), n(323874), n(14289), n(35956);
 var i = n(420970),
     r = n(975807),
@@ -24,7 +24,7 @@ var i = n(420970),
     T = n(652215),
     N = n(360469);
 let S = new Set([N.AM, N.eK]),
-    x = {
+    v = {
         [T.e$_.OPEN_EXTERNAL_LINK]: {
             scope: {
                 [C.sm.ANY]: [C.VH, C.W_]

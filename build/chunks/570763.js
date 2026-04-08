@@ -1,6 +1,6 @@
 /** chunk id: 570763 params = (module,exports,require) **/
 n.d(t, {
-    A: () => eE
+    A: () => eg
 }), n(323874), n(14289), n(35956);
 var i = n(627968),
     r = n(64700),
@@ -24,10 +24,10 @@ var i = n(627968),
     T = n(826673),
     N = n(239365),
     S = n(178629),
-    x = n(701508),
-    v = n(979590),
-    b = n(153527),
-    y = n(783531),
+    v = n(701508),
+    x = n(979590),
+    y = n(153527),
+    b = n(783531),
     O = n(334465),
     L = n(318346),
     R = n(270051),
@@ -41,46 +41,45 @@ var i = n(627968),
     k = n(631001),
     V = n(87549),
     B = n(245853),
-    H = n(807876),
-    F = n(890687),
-    Y = n(590202),
-    W = n(885459),
-    K = n(545986),
-    q = n(203879),
-    z = n(409389),
-    $ = n(881172),
-    Q = n(724339),
-    X = n(516226),
-    Z = n(854514),
-    J = n(729168),
-    ee = n(321503),
-    et = n(475529),
-    en = n(654487),
-    ei = n(652215),
-    er = n(758836),
-    ea = n(613057),
-    el = n(985018),
-    es = n(749504),
-    eo = n(92872),
-    ed = n(880440),
-    ec = n(522303),
-    eu = n(595411),
-    eA = n(602557),
-    eh = n(850493);
-let e_ = r.createContext({});
+    H = n(890687),
+    F = n(590202),
+    Y = n(885459),
+    W = n(545986),
+    K = n(203879),
+    q = n(409389),
+    z = n(881172),
+    $ = n(724339),
+    Q = n(516226),
+    X = n(854514),
+    Z = n(729168),
+    J = n(321503),
+    ee = n(475529),
+    et = n(654487),
+    en = n(652215),
+    ei = n(758836),
+    er = n(613057),
+    ea = n(985018),
+    el = n(207573),
+    es = n(92872),
+    eo = n(880440),
+    ed = n(522303),
+    ec = n(595411),
+    eu = n(602557),
+    eA = n(850493);
+let eh = r.createContext({});
 
-function em(e) {
+function e_(e) {
     let {
         onLoadComplete: t,
         className: n
     } = e, {
         enabled: a
     } = (0, R.Z)({
-        location: en.rE.QUEST_HOME_DESKTOP
+        location: et.rE.QUEST_HOME_DESKTOP
     }), l = (0, c.bG)([_.A], () => _.A.useReducedMotion), s = (0, c.bG)([D.A], () => D.A.isFocused()), {
         ref: o,
         inViewport: d
-    } = (0, q.p)(), u = r.useRef(null);
+    } = (0, K.p)(), u = r.useRef(null);
     if (r.useEffect(() => {
             u?.current != null && (u.current.paused || s && d && !l ? u.current.paused && !l && d && s && u.current.play() : u.current.pause())
         }, [l, d, s]), a) {
@@ -97,42 +96,42 @@ function em(e) {
             "data-mtctest-ignore": "true",
             controls: !1,
             children: (0, i.jsx)("source", {
-                src: e ? eo.A : ed.A,
+                src: e ? es.A : eo.A,
                 type: e ? "video/mp4" : "video/webm"
             })
         })
     }
     return (0, i.jsx)("img", {
-        src: eh.A,
+        src: eA.A,
         className: n,
         alt: "",
         onLoad: t
     })
 }
 
-function ep(e) {
+function em(e) {
     let {
         onLoadComplete: t
     } = e;
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)("img", {
-            src: ec.Ay,
-            className: l()(es.BW, es.rZ),
+            src: ed.Ay,
+            className: l()(el.BW, el.rZ),
             alt: ""
         }), (0, i.jsx)("img", {
-            src: eA.Ay,
-            className: l()(es.BW, es.rZ),
+            src: eu.Ay,
+            className: l()(el.BW, el.rZ),
             alt: "",
             onLoad: t
         }), (0, i.jsx)("img", {
-            src: eu.Ay,
-            className: l()(es.BW, es.rZ),
+            src: ec.Ay,
+            className: l()(el.BW, el.rZ),
             alt: ""
         })]
     })
 }
 
-function eg(e) {
+function ep(e) {
     let {
         renderBanner: t,
         children: n,
@@ -144,45 +143,45 @@ function eg(e) {
         onSelectTab: c,
         scrollerRef: u,
         selectedTab: A
-    } = r.useContext(e_), {
+    } = r.useContext(eh), {
         questHomeHero: h,
         isLoading: _
-    } = (0, F.vG)(), {
+    } = (0, H.vG)(), {
         enabled: m
     } = (0, R.Z)({
-        location: en.rE.QUEST_HOME_DESKTOP
+        location: et.rE.QUEST_HOME_DESKTOP
     }), {
         enabled: p
     } = B.sn.useConfig({
-        location: en.rE.QUEST_HOME_DESKTOP
+        location: et.rE.QUEST_HOME_DESKTOP
     }), g = r.useRef(null), E = r.useCallback(e => {
         g.current?.resetSortingFiltering(), requestAnimationFrame(() => {
             g.current?.scrollToQuest(e)
         })
     }, []);
-    return (0, i.jsxs)(ee.X.Provider, {
+    return (0, i.jsxs)(J.X.Provider, {
         value: u,
-        children: [a, (0, i.jsxs)(y.A, {
+        children: [a, (0, i.jsxs)(b.A, {
             onScroll: d,
             ref: u,
             children: [function() {
                 if (!o && p) {
-                    if (A !== F.NC.ALL) return null;
-                    if (_) return (0, i.jsx)(Z.Hk, {});
-                    if (null != h) return (0, i.jsx)(Z.Ay, {
+                    if (A !== H.NC.ALL) return null;
+                    if (_) return (0, i.jsx)(X.Hk, {});
+                    if (null != h) return (0, i.jsx)(X.Ay, {
                         config: h,
                         onQuestCtaClick: E
                     })
                 }
                 return t()
-            }(), (0, i.jsx)(v.A, {
+            }(), (0, i.jsx)(x.A, {
                 children: (0, i.jsxs)("div", {
-                    className: l()(es.Qs, {
-                        [es.HR]: p && !m && A !== F.NC.ALL
+                    className: l()(el.Qs, {
+                        [el.HR]: p && !m && A !== H.NC.ALL
                     }),
-                    children: [n, s ? A === F.NC.CLAIMED ? (0, i.jsx)($.A, {
+                    children: [n, s ? A === H.NC.CLAIMED ? (0, i.jsx)(z.A, {
                         onSelectTab: c
-                    }) : A === F.NC.PREVIEW_TOOL ? (0, i.jsx)(W.A, {}) : (0, i.jsx)(z.A, {
+                    }) : A === H.NC.PREVIEW_TOOL ? (0, i.jsx)(Y.A, {}) : (0, i.jsx)(q.A, {
                         ref: g
                     }) : null]
                 })
@@ -190,30 +189,30 @@ function eg(e) {
         })]
     })
 }
-let eE = function(e) {
+let eg = function(e) {
     let {
         topLevelRoute: t
-    } = e, n = (0, s.zy)(), a = (0, s.W6)(), _ = r.useMemo(() => (0, O.B)(n.pathname, ei.BVt.QUEST_HOME_DEPRECATED)?.isExact === !0, [n.pathname]), C = (0, c.bG)([E.A], () => E.A.getState("quests")), {
-        selectedTab: v,
-        onSelectTab: y,
+    } = e, n = (0, s.zy)(), a = (0, s.W6)(), _ = r.useMemo(() => (0, O.B)(n.pathname, en.BVt.QUEST_HOME_DEPRECATED)?.isExact === !0, [n.pathname]), C = (0, c.bG)([E.A], () => E.A.getState("quests")), {
+        selectedTab: x,
+        onSelectTab: b,
         tabs: D
-    } = (0, et.J)({
+    } = (0, ee.J)({
         withClaimedQuestsTab: !_
     });
     r.useLayoutEffect(() => {
-        _ && v === F.NC.CLAIMED && k.A.setState({
-            tab: F.NC.ALL
+        _ && x === H.NC.CLAIMED && k.A.setState({
+            tab: H.NC.ALL
         })
-    }, [_, v]);
+    }, [_, x]);
     let {
         onScroll: j
-    } = (0, S.G)(), B = V.A.getState().getUtmCurrentContext(), W = (0, Q.W)(e => e.registerAssetLoad), q = r.useRef(B);
+    } = (0, S.G)(), B = V.A.getState().getUtmCurrentContext(), Y = (0, $.W)(e => e.registerAssetLoad), K = r.useRef(B);
     r.useEffect(() => {
-        q.current = B
+        K.current = B
     }), r.useEffect(() => {
         let {
             current: e
-        } = q;
+        } = K;
         (0, p.x)({
             name: d.ImpressionNames.QUEST_HOME,
             type: d.ImpressionTypes.VIEW,
@@ -222,50 +221,46 @@ let eE = function(e) {
                 utm_medium_current: e.utmMediumCurrent,
                 utm_campaign_current: e.utmCampaignCurrent,
                 utm_content_current: e.utmContentCurrent,
-                tab: v
+                tab: x
             }
         })
-    }, [v]);
+    }, [x]);
     let {
-        enabled: z
+        enabled: q
     } = (0, R.Z)({
-        location: en.rE.QUEST_HOME_DESKTOP
-    }), $ = r.useCallback(() => {
-        z ? window.open(ei.X7G.PAID_TERMS_ORBS) : window.open(w.A.getArticleURL(ei.MVz.QUESTS_LEARN_MORE))
-    }, [z]);
+        location: et.rE.QUEST_HOME_DESKTOP
+    }), z = r.useCallback(() => {
+        q ? window.open(en.X7G.PAID_TERMS_ORBS) : window.open(w.A.getArticleURL(en.MVz.QUESTS_LEARN_MORE))
+    }, [q]);
     (0, f.HU)({
-        location: el.intl.string(el.t.JALI2K)
+        location: ea.intl.string(ea.t.JALI2K)
     });
-    let ee = z ? el.intl.format(el.t.BCBIlp, {}) : el.intl.format(el.t.lmMBfy, {}),
-        eo = z ? el.intl.format(el.t.U9FY0J, {}) : el.intl.string(el.t.oWCrBq),
-        ed = r.useRef(null),
-        ec = r.useCallback(() => {
+    let J = q ? ea.intl.format(ea.t.BCBIlp, {}) : ea.intl.format(ea.t.lmMBfy, {}),
+        es = q ? ea.intl.format(ea.t.U9FY0J, {}) : ea.intl.string(ea.t.oWCrBq),
+        eo = r.useRef(null),
+        ed = r.useCallback(() => {
             (0, L.Y)({
-                pageType: ei.liQ.GLOBAL_DISCOVERY_QUESTS,
-                sectionType: ei.JJy.ORBS_BALANCE_MENU,
-                ctaObject: ei.ZSU.CTA_TO_ORBS_SHOP
+                pageType: en.liQ.GLOBAL_DISCOVERY_QUESTS,
+                sectionType: en.JJy.ORBS_BALANCE_MENU,
+                ctaObject: en.ZSU.CTA_TO_ORBS_SHOP
             }), (0, I.Cz)({
-                tab: er.G2.ORBS,
+                tab: ei.G2.ORBS,
                 analyticsLocations: [],
                 analyticsSource: m.A.ORBS_BALANCE_MENU
             })
         }, []);
     r.useEffect(() => {
-        (0, h.I)(ei.BVt.QUEST_HOME)
+        (0, h.I)(en.BVt.QUEST_HOME)
     }, []), r.useEffect(() => {
         N.g.trigger()
-    }, []);
-    let eu = (0, H.U)({
-        location: en.rE.QUEST_PREVIEW_TOOL_2
-    });
-    r.useEffect(() => {
+    }, []), r.useEffect(() => {
         if (null != C) return;
         let e = new URLSearchParams(n.search),
-            i = e.get(F.L1.TAB);
-        if (eu && i === F.NC.PREVIEW_TOOL) {
-            let t = e.get(F.L1.QUEST_ID);
-            g.A.openNativeAppModal("quests", ei.e$_.DEEP_LINK, {
-                type: ea.XK.QUEST_PREVIEW_TOOL,
+            i = e.get(H.L1.TAB);
+        if (i === H.NC.PREVIEW_TOOL) {
+            let t = e.get(H.L1.QUEST_ID);
+            g.A.openNativeAppModal("quests", en.e$_.DEEP_LINK, {
+                type: er.XK.QUEST_PREVIEW_TOOL,
                 params: {
                     questId: t,
                     tab: i
@@ -274,12 +269,12 @@ let eE = function(e) {
             return
         }
         let r = performance.getEntriesByType("navigation")[0];
-        if ("POP" === a.action && r?.type === "navigate" && t && i !== F.NC.PREVIEW_TOOL) {
+        if ("POP" === a.action && r?.type === "navigate" && t && i !== H.NC.PREVIEW_TOOL) {
             let t = (0, U.uJ)(n.hash) ? null : n.hash.substring(1),
-                r = e.get(F.L1.SORT),
-                a = e.get(F.L1.FILTER);
-            g.A.openNativeAppModal("quests", ei.e$_.DEEP_LINK, {
-                type: ea.XK.QUEST_HOME,
+                r = e.get(H.L1.SORT),
+                a = e.get(H.L1.FILTER);
+            g.A.openNativeAppModal("quests", en.e$_.DEEP_LINK, {
+                type: er.XK.QUEST_HOME,
                 params: {
                     questId: (0, U.uJ)(t) ? void 0 : t,
                     sort: r,
@@ -288,131 +283,131 @@ let eE = function(e) {
                 }
             })
         }
-    }, [n.search, C, eu, a.action, n.hash, t]), r.useEffect(() => {
+    }, [n.search, C, a.action, n.hash, t]), r.useEffect(() => {
         t && (0, T.Dr)(u.M.QUEST_HOME_ENTRYPOINT_ONBOARDING)
     }, [t]);
-    let eA = r.useCallback(() => {
-            (0, K.navigateToQuestHome)({
+    let ec = r.useCallback(() => {
+            (0, W.navigateToQuestHome)({
                 fromContent: G.uF.QUEST_HOME_MOVE_CALLOUT_DISCOVER
-            }), M.default.track(ei.HAw.QUEST_CONTENT_CLICKED, {
-                cta_name: Y.Cy.VIEW_QUESTS,
+            }), M.default.track(en.HAw.QUEST_CONTENT_CLICKED, {
+                cta_name: F.Cy.VIEW_QUESTS,
                 click_id: (0, o.A)(),
                 is_targeted: !1,
-                ...(0, Y.fF)(G.uF.QUEST_HOME_MOVE_CALLOUT_DISCOVER)
+                ...(0, F.fF)(G.uF.QUEST_HOME_MOVE_CALLOUT_DISCOVER)
             })
         }, []),
-        eh = r.useCallback(e => {
+        eu = r.useCallback(e => {
             a.replace({
                 ...a.location,
                 hash: void 0
-            }), ed.current?.scrollToTop({
+            }), eo.current?.scrollToTop({
                 animate: !1
-            }), y(e)
-        }, [a, y]);
-    return (0, i.jsx)(X.M.Provider, {
+            }), b(e)
+        }, [a, b]);
+    return (0, i.jsx)(Q.M.Provider, {
         value: {
-            onAssetLoadComplete: W
+            onAssetLoadComplete: Y
         },
-        children: (0, i.jsx)(e_.Provider, {
+        children: (0, i.jsx)(eh.Provider, {
             value: r.useMemo(() => ({
                 isInDiscoverQuestHomeTab: _,
                 onScroll: j,
-                onSelectTab: eh,
-                scrollerRef: ed,
-                selectedTab: v
-            }), [_, j, eh, ed, v]),
+                onSelectTab: eu,
+                scrollerRef: eo,
+                selectedTab: x
+            }), [_, j, eu, eo, x]),
             children: (0, i.jsx)("div", {
-                className: l()(es.kL, {
-                    [es.KY]: !t
+                className: l()(el.kL, {
+                    [el.KY]: !t
                 }),
-                children: _ ? (0, i.jsx)(eg, {
-                    renderBanner: () => (0, i.jsx)(x.A, {
-                        title: el.intl.string(el.t.z8YP2A),
+                children: _ ? (0, i.jsx)(ep, {
+                    renderBanner: () => (0, i.jsx)(v.A, {
+                        title: ea.intl.string(ea.t.z8YP2A),
                         titleColor: "always-white",
                         button: (0, i.jsx)(A.Button, {
                             variant: "overlay-primary",
-                            text: el.intl.string(el.t.GURBQl),
-                            onClick: eA
+                            text: ea.intl.string(ea.t.GURBQl),
+                            onClick: ec
                         }),
-                        className: es.Gj,
-                        children: (0, i.jsx)(ep, {
-                            onLoadComplete: W
+                        className: el.Gj,
+                        children: (0, i.jsx)(em, {
+                            onLoadComplete: Y
                         })
                     }),
-                    header: (0, i.jsx)(b.S, {
-                        selectedTabId: v,
-                        handleTransition: eh,
+                    header: (0, i.jsx)(y.S, {
+                        selectedTabId: x,
+                        handleTransition: eu,
                         tabs: D,
                         icon: A.r2v
                     }),
                     withQuestsGrid: !1,
                     children: (0, i.jsxs)("div", {
-                        className: es.kj,
+                        className: el.kj,
                         children: [(0, i.jsx)(A.Heading, {
                             variant: "heading-xl/semibold",
-                            children: el.intl.string(el.t.z8YP2A)
+                            children: ea.intl.string(ea.t.z8YP2A)
                         }), (0, i.jsx)(A.Text, {
                             color: "text-subtle",
                             variant: "text-md/normal",
-                            children: el.intl.string(el.t.HdKh65)
+                            children: ea.intl.string(ea.t.HdKh65)
                         }), (0, i.jsx)(A.QWc, {
-                            text: el.intl.string(el.t["1CdL8d"]),
-                            onClick: eA,
+                            text: ea.intl.string(ea.t["1CdL8d"]),
+                            onClick: ec,
                             textVariant: "text-md/normal",
                             variant: "primary"
                         })]
                     })
-                }) : (0, i.jsx)(eg, {
-                    renderBanner: () => v !== F.NC.PREVIEW_TOOL && (0, i.jsx)(J.A, {
-                        title: ee,
-                        subtitle: eo,
-                        buttons: z ? (0, i.jsxs)(A.ButtonGroup, {
+                }) : (0, i.jsx)(ep, {
+                    renderBanner: () => x !== H.NC.PREVIEW_TOOL && (0, i.jsx)(Z.A, {
+                        title: J,
+                        subtitle: es,
+                        buttons: q ? (0, i.jsxs)(A.ButtonGroup, {
                             children: [(0, i.jsx)(A.Button, {
                                 variant: "overlay-primary",
-                                text: el.intl.string(el.t["1Wm127"]),
+                                text: ea.intl.string(ea.t["1Wm127"]),
                                 onClick: () => (0, I.Cz)({
-                                    tab: er.G2.ORBS,
+                                    tab: ei.G2.ORBS,
                                     analyticsLocations: [],
                                     analyticsSource: m.A.INTRO_TO_ORBS_QUEST_BANNER
                                 })
                             }), (0, i.jsx)(A.Button, {
                                 variant: "overlay-secondary",
-                                text: el.intl.string(el.t["7kTAgJ"]),
-                                onClick: $
+                                text: ea.intl.string(ea.t["7kTAgJ"]),
+                                onClick: z
                             })]
                         }) : (0, i.jsx)(A.Button, {
                             variant: "overlay-primary",
-                            text: el.intl.string(el.t.hvVgAZ),
-                            onClick: $,
+                            text: ea.intl.string(ea.t.hvVgAZ),
+                            onClick: z,
                             icon: A.I9m,
                             iconPosition: "end"
                         }),
                         background: (0, i.jsxs)("div", {
-                            className: l()(es.Tv, {
-                                [es.lJ]: z
+                            className: l()(el.Tv, {
+                                [el.lJ]: q
                             }),
-                            children: [(0, i.jsx)(Z.Ae, {}), (0, i.jsx)("div", {
-                                className: l()(es.nz, {
-                                    [es.ZZ]: z
+                            children: [(0, i.jsx)(X.Ae, {}), (0, i.jsx)("div", {
+                                className: l()(el.nz, {
+                                    [el.ZZ]: q
                                 })
-                            }), (0, i.jsx)(em, {
-                                onLoadComplete: W,
-                                className: l()(es.Fe, {
-                                    [es.H4]: z,
-                                    [es.Q8]: !z
+                            }), (0, i.jsx)(e_, {
+                                onLoadComplete: Y,
+                                className: l()(el.Fe, {
+                                    [el.H4]: q,
+                                    [el.Q8]: !q
                                 })
                             })]
                         })
                     }),
-                    header: (0, i.jsx)(b.S, {
-                        selectedTabId: v,
-                        handleTransition: eh,
+                    header: (0, i.jsx)(y.S, {
+                        selectedTabId: x,
+                        handleTransition: eu,
                         tabs: D,
-                        endContent: z ? (0, i.jsx)(P.SS, {
-                            analyticsPage: ei.liQ.GLOBAL_DISCOVERY_QUESTS,
+                        endContent: q ? (0, i.jsx)(P.SS, {
+                            analyticsPage: en.liQ.GLOBAL_DISCOVERY_QUESTS,
                             cardAlignment: P.cP.END,
-                            ctaText: el.intl.string(el.t["J+vlIR"]),
-                            ctaOnClick: ec
+                            ctaText: ea.intl.string(ea.t["J+vlIR"]),
+                            ctaOnClick: ed
                         }) : null,
                         icon: A.r2v
                     })

@@ -25,10 +25,10 @@ var r = n(179771),
     T = n(734057),
     N = n(375492),
     S = n(461213),
-    x = n(531685),
-    v = n(403362),
-    b = n(661191),
-    y = n(998218),
+    v = n(531685),
+    x = n(403362),
+    y = n(661191),
+    b = n(998218),
     O = n(475815),
     L = n(636401),
     R = n(90924),
@@ -200,7 +200,7 @@ let V = {
             } else(0, l.mMO)(async () => {
                 let {
                     default: e
-                } = await Promise.all([n.e("43600"), n.e("12629")]).then(n.bind(n, 234355));
+                } = await Promise.all([n.e("43600"), n.e("55221")]).then(n.bind(n, 234355));
                 return t => (0, i.jsx)(e, {
                     ...t,
                     guild: s,
@@ -231,7 +231,7 @@ let V = {
                     let n;
                     if ((0, A.f)()) n = f.A.getWindow(U.MLl.ACTIVITY_POPOUT);
                     else {
-                        let e = x.A.getLastFocusedWindowId();
+                        let e = v.A.getLastFocusedWindowId();
                         n = null == e ? null : (0, I.Iy)(e)?.renderWindow
                     }
                     if (null == n) throw new L.A({
@@ -245,13 +245,13 @@ let V = {
                         }, 1e3)
                     };
                     i.addEventListener("change", () => {
-                        (0, v.Vq)(i.files) && e(i.files[0]), r()
+                        (0, x.Vq)(i.files) && e(i.files[0]), r()
                     }), i.addEventListener("cancel", () => {
                         r()
                     }), n.document.body.addEventListener("focus", r, !0), n.document.body.appendChild(i), i.click()
                 }(async r => {
                     let a = await (0, h.CS)(n, i, r);
-                    (0, v.Vq)(a) && (0, v.Vq)(a.url) && !(a instanceof u.A) ? e({
+                    (0, x.Vq)(a) && (0, x.Vq)(a.url) && !(a instanceof u.A) ? e({
                         image_url: a.url
                     }): t(a)
                 }, () => t(Error("Upload canceled")))
@@ -282,7 +282,7 @@ let V = {
                 errorCode: U.Lw6.INVALID_COMMAND
             }, "This application cannot access this API");
             let r = (0, D.A)();
-            if (!y.A.isDiscordCdnUrl(n)) throw new L.A({
+            if (!b.A.isDiscordCdnUrl(n)) throw new L.A({
                 errorCode: U.Lw6.INVALID_PAYLOAD
             }, "mediaUrl must be a Discord CDN url");
             (0, p.g)({
@@ -326,7 +326,7 @@ let V = {
             if (null !== r || null !== a || null !== o) {
                 let e = [];
                 void 0 !== r && (e = [{
-                    id: b.default.cast(b.default.fromTimestamp(Date.now())),
+                    id: y.default.cast(y.default.fromTimestamp(Date.now())),
                     size: 0,
                     proxy_url: r.url,
                     filename: "preview",
@@ -334,7 +334,7 @@ let V = {
                     height: r.height,
                     width: r.width
                 }]), t = new C.Ay({
-                    id: b.default.cast(b.default.fromTimestamp(Date.now())),
+                    id: y.default.cast(y.default.fromTimestamp(Date.now())),
                     applicationId: u,
                     content: o,
                     components: a,

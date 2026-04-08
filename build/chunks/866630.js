@@ -5,21 +5,21 @@ n.d(t, {
 var i = n(627968),
     l = n(64700),
     s = n(503698),
-    a = n.n(s),
-    r = n(172218),
+    r = n.n(s),
+    a = n(172218),
     o = n(317097),
     d = n(565645),
     c = n(114166),
     u = n(891734),
     _ = n(505527),
-    m = n(483202),
-    h = n(486025),
-    p = n(108277);
+    m = n(260821),
+    h = n(767474),
+    p = n(449014);
 let g = l.memo(function(e) {
         let t, n, {
                 useChatFontScaling: l,
                 hideEmoji: s,
-                emoji: r,
+                emoji: a,
                 className: g,
                 count: A,
                 me: x,
@@ -53,19 +53,19 @@ let g = l.memo(function(e) {
             borderColor: n
         };
         return (0, i.jsxs)("div", {
-            className: a()(L.reaction, L.reactionInner, g, {
+            className: r()(L.reaction, L.reactionInner, g, {
                 [L.reactionMe]: S,
                 [L.reactionReadOnly]: I && !v && !b
             }),
             style: D,
             children: [(0, i.jsx)(d.A, {
-                className: a()({
+                className: r()({
                     [L.hideEmoji]: s
                 }),
-                emojiId: r.id,
-                emojiName: r.name,
+                emojiId: a.id,
+                emojiName: a.name,
                 size: y,
-                animated: N && r.animated
+                animated: N && a.animated
             }), (0, i.jsx)("div", {
                 className: L.reactionCount,
                 style: M,
@@ -78,11 +78,11 @@ let g = l.memo(function(e) {
             showImmediate: t,
             reactions: n,
             ...s
-        } = e, [a, o] = l.useState(!1), [d, c] = l.useTransition(), u = l.useCallback(e => {
-            !e || a || d || c(() => {
+        } = e, [r, o] = l.useState(!1), [d, c] = l.useTransition(), u = l.useCallback(e => {
+            !e || r || d || c(() => {
                 o(!0)
             })
-        }, [a, d]), h = (0, r.K)(u), p = a && !d || t ? m.qT : g;
+        }, [r, d]), h = (0, a.K)(u), p = r && !d || t ? m.qT : g;
         return (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)("div", {
                 ref: h

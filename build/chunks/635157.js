@@ -14,13 +14,13 @@ var i = n(627968),
     h = n(922301),
     m = n(750112),
     A = n(598104),
-    g = n(697122),
-    p = n(73028),
+    p = n(697122),
+    g = n(73028),
     f = n(95550),
     _ = n(854627),
     E = n(314307),
     x = n(985018),
-    C = n(563003);
+    C = n(970772);
 
 function S(e) {
     let t, {
@@ -28,8 +28,8 @@ function S(e) {
             children: S,
             user: T
         } = e,
-        I = (0, s.bG)([o.A], () => o.A.useReducedMotion),
-        N = (0, u.Ay)(n) ?? "",
+        N = (0, s.bG)([o.A], () => o.A.useReducedMotion),
+        I = (0, u.Ay)(n) ?? "",
         {
             avatarDecorationSrc: v,
             eventHandlers: y,
@@ -51,7 +51,7 @@ function S(e) {
         channelId: n.id,
         onMouseEnter: M,
         onMouseLeave: D,
-        children: [(t = !I && b, n.isMultiUserDM() ? (0, i.jsx)(g.Q, {
+        children: [(t = !N && b, n.isMultiUserDM() ? (0, i.jsx)(p.Q, {
             channel: n,
             editable: !0,
             location: c.A.EMPTY_GROUP_DM,
@@ -59,20 +59,20 @@ function S(e) {
                 channel: n,
                 size: r._3J.SIZE_80,
                 animated: t,
-                "aria-label": N
+                "aria-label": I
             })
         }) : (0, i.jsx)(r.euF, {
-            "aria-label": N,
+            "aria-label": I,
             size: r._3J.SIZE_80,
             src: (0, d.Y)(n, 80, t),
             avatarDecoration: v
         })), (0, i.jsx)(E.cr, {
             children: O ? (0, i.jsx)(m.A, {
-                userName: N,
+                userName: I,
                 displayNameStyles: T?.displayNameStyles,
                 effectDisplayType: j ? h.G.ANIMATED : h.G.STATIC,
                 loop: !0
-            }) : N
+            }) : I
         }), (0, i.jsx)(E.j1, {
             children: S
         }), n.isMultiUserDM() && (0, i.jsxs)(a.e2v, {
@@ -86,7 +86,7 @@ function S(e) {
                 variant: "secondary",
                 text: x.intl.string(x.t["5Q9+/L"]),
                 "aria-label": x.intl.string(x.t["5Q9+/L"]),
-                onClick: () => (0, p.U)(n.id, c.A.EMPTY_GROUP_DM)
+                onClick: () => (0, g.U)(n.id, c.A.EMPTY_GROUP_DM)
             })]
         })]
     })

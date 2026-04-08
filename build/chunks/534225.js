@@ -30,7 +30,7 @@ var n = l(627968),
     C = l(582617),
     y = l(652215),
     w = l(985018),
-    M = l(507510);
+    M = l(782543);
 let T = new h.A("EmojiStudio"),
     R = e => {
         let {

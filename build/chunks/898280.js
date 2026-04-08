@@ -1,6 +1,6 @@
 /** chunk id: 898280 params = (module,exports,require) **/
 n.d(t, {
-    A: () => g
+    A: () => p
 });
 var i = n(627968),
     l = n(64700),
@@ -12,19 +12,19 @@ var i = n(627968),
     d = n(576705),
     u = n(652215),
     h = n(985018),
-    m = n(588141);
+    m = n(876380);
 let A = () => n.e("15423").then(n.t.bind(n, 155147, 19)).then(e => {
         let {
             default: t
         } = e;
         return t
     }),
-    g = l.memo(function(e) {
+    p = l.memo(function(e) {
         let {
             channel: t,
             isLastItem: n
-        } = e, l = (0, s.bG)([r.A], () => r.A.useReducedMotion), g = (0, s.bG)([d.A], () => d.A.can(u.xBc.SEND_MESSAGES_IN_THREADS, t)), p = (0, o.s5)(t), f = (0, s.bG)([c.default], () => c.default.getId());
-        return n ? g && !p && t.ownerId !== f ? (0, i.jsxs)("div", {
+        } = e, l = (0, s.bG)([r.A], () => r.A.useReducedMotion), p = (0, s.bG)([d.A], () => d.A.can(u.xBc.SEND_MESSAGES_IN_THREADS, t)), g = (0, o.s5)(t), f = (0, s.bG)([c.default], () => c.default.getId());
+        return n ? p && !g && t.ownerId !== f ? (0, i.jsxs)("div", {
             className: m.aP,
             children: [(0, i.jsx)(a.akl, {
                 importData: A,

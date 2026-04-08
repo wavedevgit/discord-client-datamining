@@ -18,11 +18,10 @@ let l = {
             channelId: e
         })
     },
-    select(e, t) {
+    select(e) {
         i.h.dispatch({
             type: "PRIVATE_CHANNEL_RECIPIENTS_INVITE_SELECT",
-            row: t,
-            section: e
+            row: e
         })
     },
     addUser(e) {

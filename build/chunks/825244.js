@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(919796),
     m = n(58149),
     A = n(668446),
-    g = n(997509),
-    p = n(794967),
+    p = n(997509),
+    g = n(794967),
     f = n(595818),
     _ = n(961350),
     E = n(71393),
@@ -24,13 +24,13 @@ var i = n(627968),
     C = n(147925),
     S = n(203982),
     T = n(975571),
-    I = n(723702),
-    N = n(661191),
+    N = n(723702),
+    I = n(661191),
     v = n(314307),
     y = n(652215),
     b = n(936649),
     j = n(985018),
-    R = n(103935);
+    R = n(644488);
 
 function M(e) {
     let {
@@ -75,7 +75,7 @@ function D(e) {
             channel: L
         } = e,
         P = (0, o.bG)([E.A], () => null != L ? E.A.getGuild(L.getGuildId()) : null, [L]),
-        k = null != P && N.default.extractTimestamp(P.id) < Date.now() - y.NOr,
+        k = null != P && I.default.extractTimestamp(P.id) < Date.now() - y.NOr,
         w = (0, o.bG)([_.default], () => P?.ownerId === _.default.getId(), [P]),
         {
             canInvite: U,
@@ -101,7 +101,7 @@ function D(e) {
             }), null != P && (0, d.mMO)(async () => {
                 let {
                     default: e
-                } = await Promise.all([n.e("43600"), n.e("28136"), n.e("72469")]).then(n.bind(n, 234355));
+                } = await Promise.all([n.e("43600"), n.e("28136"), n.e("67893")]).then(n.bind(n, 234355));
                 return t => (0, i.jsx)(e, {
                     ...t,
                     guild: P,
@@ -123,7 +123,7 @@ function D(e) {
             m.Ay.trackWithMetadata(y.HAw.SERVER_SETUP_CTA_CLICKED, {
                 setup_type: b.XT.CHANNEL_WELCOME,
                 action: b.AG.PERSONALIZE_SERVER
-            }), null != P && g.A.open(P.id, (0, f.x)(), {
+            }), null != P && p.A.open(P.id, (0, f.x)(), {
                 section: y.JJy.CHANNEL_WELCOME_CTA
             })
         }, [P]), {
@@ -201,7 +201,7 @@ function D(e) {
     if (l.useEffect(() => {
             (async () => {
                 try {
-                    let e = await (0, p.c)(P?.id ?? y.dJq);
+                    let e = await (0, g.c)(P?.id ?? y.dJq);
                     ee(e.map(e => e.id))
                 } catch {}
             })()
@@ -240,7 +240,7 @@ function D(e) {
             completed: V,
             onClick: z
         })
-    }, "message")), (0, I.isWeb)() && en.push((0, i.jsx)(r.A.div, {
+    }, "message")), (0, N.isWeb)() && en.push((0, i.jsx)(r.A.div, {
         className: R.cW,
         style: $ ? {
             opacity: X[en.length]

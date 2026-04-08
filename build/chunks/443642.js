@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     l = n(64700),
     s = n(990078),
-    a = n(319060),
-    r = n(397927),
+    r = n(319060),
+    a = n(397927),
     o = n(793574),
     d = n(58149),
     c = n(688810),
@@ -18,18 +18,18 @@ var i = n(627968),
     g = n(552117),
     A = n(652215),
     x = n(788868),
-    f = n(911697);
-let C = (0, _.xI)(a.A.STICKERS_CONSTANTS_STICKER_DIMENSION),
+    f = n(974850);
+let C = (0, _.xI)(r.A.STICKERS_CONSTANTS_STICKER_DIMENSION),
     E = e => {
         let {
             renderableSticker: t,
             channel: n,
-            isInteracting: a
-        } = e, _ = l.useRef(null), [E, I] = l.useState(!0), [v, b] = l.useState(String(Date.now())), [T] = (0, m.Zq)(t, a), {
+            isInteracting: r
+        } = e, _ = l.useRef(null), [E, I] = l.useState(!0), [v, b] = l.useState(String(Date.now())), [T] = (0, m.Zq)(t, r), {
             analyticsLocations: y
         } = (0, c.Ay)(o.A.STICKER_MESSAGE), N = (0, i.jsxs)("span", {
             className: f.Zl,
-            children: [(0, i.jsx)(r.s2T, {
+            children: [(0, i.jsx)(a.s2T, {
                 size: "xs",
                 color: "currentColor",
                 className: f.lA
@@ -39,9 +39,9 @@ let C = (0, _.xI)(a.A.STICKERS_CONSTANTS_STICKER_DIMENSION),
             value: y,
             children: (0, i.jsx)("div", {
                 className: f.be,
-                children: (0, i.jsx)(r.YNO, {
+                children: (0, i.jsx)(a.YNO, {
                     align: "center",
-                    animation: r.YNO.Animation.TRANSLATE,
+                    animation: a.YNO.Animation.TRANSLATE,
                     positionKey: v,
                     onRequestClose: () => {
                         I(!0)
@@ -72,7 +72,7 @@ let C = (0, _.xI)(a.A.STICKERS_CONSTANTS_STICKER_DIMENSION),
                                     is_custom: (0, h.zN)(e.type)
                                 })
                             },
-                            children: (0, i.jsx)(r.DUT, {
+                            children: (0, i.jsx)(a.DUT, {
                                 innerRef: _,
                                 className: f.q7,
                                 onClick: e => {
@@ -80,7 +80,7 @@ let C = (0, _.xI)(a.A.STICKERS_CONSTANTS_STICKER_DIMENSION),
                                 },
                                 tag: "span",
                                 children: (0, i.jsx)(p.A, {
-                                    isInteracting: a,
+                                    isInteracting: r,
                                     size: C,
                                     sticker: T ?? t
                                 })

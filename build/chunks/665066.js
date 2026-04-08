@@ -5,8 +5,8 @@ n.d(t, {
 });
 var i, l = n(612200),
     s = n(323073),
-    a = n(398884),
-    r = n(772366),
+    r = n(398884),
+    a = n(772366),
     o = n(652215),
     d = n(204925),
     c = ((i = {}).PROCEED = "PROCEED", i.AGE_GATE_SHOWN = "AGE_GATE_SHOWN", i.GUILD_CAP_SHOWN = "GUILD_CAP_SHOWN", i);
@@ -17,7 +17,7 @@ function u(e) {
         isMember: n,
         analyticsLocations: i
     } = e;
-    return null != t && !n && (0, s.xq)() && (0, s.zS)(t) ? ((0, l.yO)(d.w_.NSFW_SERVER_INVITE_EMBED), "AGE_GATE_SHOWN") : (0, a.Sn)() ? ((0, r.A)({
+    return null != t && !n && (0, s.xq)() && (0, s.zS)(t) ? ((0, l.yO)(d.w_.NSFW_SERVER_INVITE_EMBED), "AGE_GATE_SHOWN") : (0, r.Sn)() ? ((0, a.A)({
         analyticsSource: {
             page: o.liQ.INVITE_EMBED
         },

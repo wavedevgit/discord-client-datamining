@@ -14,8 +14,8 @@ var i = n(627968),
     h = n(319060),
     m = n(397927),
     A = n(212245),
-    g = n(688810),
-    p = n(402216),
+    p = n(688810),
+    g = n(402216),
     f = n(287809),
     _ = n(954571),
     E = n(927578),
@@ -23,8 +23,8 @@ var i = n(627968),
     C = n(821715),
     S = n(652215),
     T = n(788868),
-    I = n(985018),
-    N = n(765985);
+    N = n(985018),
+    I = n(404223);
 let v = (0, o.xI)(h.A.LIVE_INDICATOR_BORDER_RADIUS),
     y = {
         opacity: 0,
@@ -66,7 +66,7 @@ let v = (0, o.xI)(h.A.LIVE_INDICATOR_BORDER_RADIUS),
             } = e,
             {
                 analyticsLocations: D
-            } = (0, g.Ay)(),
+            } = (0, p.Ay)(),
             O = null != (0, C.A)(r);
         try {
             t = (0, x.HB)(M)
@@ -104,19 +104,19 @@ let v = (0, o.xI)(h.A.LIVE_INDICATOR_BORDER_RADIUS),
                 }), b(!0))
             }, [t, s, L, y, b, D]), null == M) return null;
         let G = (0, i.jsx)(u.m, {
-            text: O ? I.intl.string(I.t.q8TiVt) : L ? I.intl.string(I.t.IHgpEn) : I.intl.string(I.t.vLb0VW),
+            text: O ? N.intl.string(N.t.q8TiVt) : L ? N.intl.string(N.t.IHgpEn) : N.intl.string(N.t.vLb0VW),
             position: "bottom",
             children: (0, i.jsxs)(m.DUT, {
                 onClick: U,
-                className: a()(N.t5, v, p.u1[h], O ? N.Y5 : N.Lc, {
-                    [N.vk]: w && L
+                className: a()(I.t5, v, g.u1[h], O ? I.Y5 : I.Lc, {
+                    [I.vk]: w && L
                 }),
                 children: [L ? (0, i.jsx)(m.tvc, {
                     size: "md",
                     color: "currentColor",
-                    className: N.fY
+                    className: I.fY
                 }) : null, (0, i.jsx)("span", {
-                    className: N.UD,
+                    className: I.UD,
                     children: (0, x.ME)(M.maxResolution)
                 }), (0, i.jsx)("span", {
                     children: (0, x.Bs)(M.maxFrameRate)
@@ -125,11 +125,11 @@ let v = (0, o.xI)(h.A.LIVE_INDICATOR_BORDER_RADIUS),
         });
         return (0, i.jsx)(m.LpS, {
             text: G,
-            className: a()(j, N.AA, {
-                [N.Dc]: L && R
+            className: a()(j, I.AA, {
+                [I.Dc]: L && R
             }),
             color: d.A.unsafe_rawColors.PRIMARY_500.css,
-            shape: p.u1[h]
+            shape: g.u1[h]
         })
     },
     P = e => {
@@ -141,13 +141,13 @@ let v = (0, o.xI)(h.A.LIVE_INDICATOR_BORDER_RADIUS),
             className: c,
             premiumIndicator: d
         } = e, [u, h] = l.useState(!1), A = (0, x.N5)(t), {
-            reducedMotion: g
+            reducedMotion: p
         } = l.useContext(m.CZY), f = n && null != A, _ = (0, m.pnh)(f, {
             enter: {
-                from: g.enabled ? j : y,
-                to: g.enabled ? R : b
+                from: p.enabled ? j : y,
+                to: p.enabled ? R : b
             },
-            leave: g.enabled ? j : y,
+            leave: p.enabled ? j : y,
             config: O
         }, "animate-always"), E = (0, m.zhh)({
             to: f ? D : M,
@@ -159,12 +159,12 @@ let v = (0, o.xI)(h.A.LIVE_INDICATOR_BORDER_RADIUS),
                 popoutProps: l
             } = e;
             return (0, i.jsxs)("div", {
-                className: a()(N.dr, n),
+                className: a()(I.dr, n),
                 ...l,
                 children: [_((e, n) => n ? (0, i.jsx)(r.animated.div, {
                     style: e,
                     children: (0, i.jsx)(L, {
-                        className: N.LZ,
+                        className: I.LZ,
                         participant: t,
                         size: o,
                         shape: m.EGs.ROUND_LEFT,
@@ -176,9 +176,9 @@ let v = (0, o.xI)(h.A.LIVE_INDICATOR_BORDER_RADIUS),
                     })
                 }) : null), (0, i.jsx)(r.animated.div, {
                     style: E,
-                    className: N.Ok,
-                    children: (0, i.jsx)(p.Ay, {
-                        look: p.gv.RED,
+                    className: I.Ok,
+                    children: (0, i.jsx)(g.Ay, {
+                        look: g.gv.RED,
                         size: o,
                         shape: f ? m.EGs.ROUND_RIGHT : m.EGs.ROUND
                     })

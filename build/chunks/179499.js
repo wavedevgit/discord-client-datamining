@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(64700),
     l = n(284009),
     s = n.n(l),
-    a = n(417597),
-    r = n(397927),
+    r = n(417597),
+    a = n(397927),
     o = n(871109),
     d = n(666171),
     c = n(960427),
@@ -16,7 +16,7 @@ function _(e) {
     let {
         guildId: t,
         productId: n
-    } = e, l = (0, a.bG)([o.A], () => o.A.getGuildProduct(n)), {
+    } = e, l = (0, r.bG)([o.A], () => o.A.getGuildProduct(n)), {
         isLoading: _,
         downloadAttachment: m
     } = (0, d.A)(t, n), h = i.useCallback(() => {
@@ -29,13 +29,13 @@ function _(e) {
     return (l?.attachments?.length ?? 0) > 1 ? {
         variant: "primary",
         text: u.intl.string(u.t.UyuiUE),
-        icon: r.KS6,
+        icon: a.KS6,
         iconPosition: "end",
         onClick: p
     } : {
         variant: "primary",
         text: u.intl.string(u.t.t9bE9b),
-        icon: r.s3U,
+        icon: a.s3U,
         iconPosition: "end",
         loading: _,
         onClick: h

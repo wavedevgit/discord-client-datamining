@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     l = n(64700),
     s = n(485845),
-    a = n(379834),
-    r = n(311907),
+    r = n(379834),
+    a = n(311907),
     o = n(397927),
     d = n(795816),
     c = n(574152),
@@ -36,15 +36,15 @@ var i = n(627968),
     D = n(112150),
     M = n(574660),
     w = n(768349),
-    O = n(985018),
-    k = n(716957);
+    k = n(985018),
+    O = n(399448);
 
 function U(e) {
     let {
         app: t,
         linkType: n,
         activityCustomId: s,
-        activityReferrerId: a,
+        activityReferrerId: r,
         message: o,
         onView: g
     } = e, {
@@ -58,7 +58,7 @@ function U(e) {
         staticBannerSrc: N,
         videoBannerSrc: L,
         bannerAspectRatio: w
-    } = (0, D.f)(t), k = (0, r.bG)([E.default], () => a ?? E.default.getId(), [a]), {
+    } = (0, D.f)(t), O = (0, a.bG)([E.default], () => r ?? E.default.getId(), [r]), {
         analyticsLocations: U
     } = (0, _.Ay)(u.A.APP_MESSAGE_EMBED), {
         currentChannelId: F,
@@ -74,7 +74,7 @@ function U(e) {
     }), z = null != v && b && Y, Q = q && b, K = (0, x.e)(t), J = (0, M.F)(t), X = (0, M.t)(t), Z = l.useMemo(() => {
         let e = [];
         return b ? K ? e.push({
-            label: O.intl.string(O.t.RscU7I),
+            label: k.intl.string(k.t.RscU7I),
             trackingArea: R.kY.PLAY,
             onClick() {
                 A.A.launchFrame({
@@ -82,7 +82,7 @@ function U(e) {
                 })
             }
         }) : (Q && e.push({
-            label: null == H ? O.intl.string(O.t.RscU7I) : V ? O.intl.string(O.t.DPfdsq) : O.intl.string(O.t.sqe0hj),
+            label: null == H ? k.intl.string(k.t.RscU7I) : V ? k.intl.string(k.t.DPfdsq) : k.intl.string(k.t.sqe0hj),
             trackingArea: R.kY.PLAY,
             onClick() {
                 (0, d.su)({
@@ -91,13 +91,13 @@ function U(e) {
                     isStart: null == H,
                     embeddedActivitiesManager: W,
                     customId: s,
-                    referrerId: k,
+                    referrerId: O,
                     analyticsLocations: U
                 })
             },
             disabled: V
         }), !Q && z && e.push({
-            label: O.intl.string(O.t.JeK1Wg),
+            label: k.intl.string(k.t.JeK1Wg),
             trackingArea: R.kY.PLAY,
             onClick() {
                 (0, m.Q)({
@@ -105,11 +105,11 @@ function U(e) {
                     botId: v,
                     analyticsLocations: U,
                     customId: s,
-                    referrerId: k
+                    referrerId: O
                 })
             }
         })) : null != X && e.push(X), e
-    }, [b, X, K, t.id, Q, z, H, V, F, W, s, k, U, v]), $ = b ? (0, i.jsx)(G, {
+    }, [b, X, K, t.id, Q, z, H, V, F, W, s, O, U, v]), $ = b ? (0, i.jsx)(G, {
         app: t
     }) : (0, i.jsx)(B, {
         app: t
@@ -127,7 +127,7 @@ function U(e) {
         trackingConfig: {
             id: t.id,
             linkType: n,
-            referrerId: k,
+            referrerId: O,
             activityCustomId: s,
             onView: g,
             guildId: I.A.getChannel(o.channel_id)?.guild_id,
@@ -144,26 +144,26 @@ function B(e) {
         customInstallUrl: t.customInstallUrl,
         installParams: t.installParams,
         integrationTypesConfig: t.integrationTypesConfig
-    }) && null != t.integrationTypesConfig && s.b.GUILD_INSTALL in t.integrationTypesConfig, a = (0, r.bG)([C.default], () => C.default.locale, []), d = l.useMemo(() => {
+    }) && null != t.integrationTypesConfig && s.b.GUILD_INSTALL in t.integrationTypesConfig, r = (0, a.bG)([C.default], () => C.default.locale, []), d = l.useMemo(() => {
         if (!n) return null;
-        let e = new Intl.NumberFormat(a, {
+        let e = new Intl.NumberFormat(r, {
                 notation: "compact",
                 compactDisplay: "short"
             }),
             i = t.directoryEntry?.guild_count ?? 0;
-        return 0 === i ? null : O.intl.format(O.t["6IW6Wi"], {
+        return 0 === i ? null : k.intl.format(k.t["6IW6Wi"], {
             guildCount: e.format(i)
         })
-    }, [t.directoryEntry?.guild_count, n, a]), c = t.categories?.at(0)?.name;
+    }, [t.directoryEntry?.guild_count, n, r]), c = t.categories?.at(0)?.name;
     return (0, i.jsxs)(i.Fragment, {
         children: [null != c && (0, i.jsx)(o.Text, {
             variant: "text-xs/medium",
-            className: k.h_,
+            className: O.h_,
             color: "none",
             children: c
         }), null != d && (0, i.jsxs)(o.Text, {
             variant: "text-xs/normal",
-            className: k.dS,
+            className: O.dS,
             color: "none",
             lineClamp: 1,
             children: [(0, i.jsx)(o.QGJ, {
@@ -180,7 +180,7 @@ function G(e) {
     } = e, {
         tags: n,
         maxParticipants: s = 0
-    } = t, d = (0, r.bG)([b.A], () => b.A.getGuildId() ?? void 0, []), c = (0, f.s)(t.id), u = (0, r.yK)([T.default, v.A], () => {
+    } = t, d = (0, a.bG)([b.A], () => b.A.getGuildId() ?? void 0, []), c = (0, f.s)(t.id), u = (0, a.yK)([T.default, v.A], () => {
         let e = [];
         for (let [t, n] of c.entries()) {
             if (t >= 5) break;
@@ -193,19 +193,19 @@ function G(e) {
         if (u.length > 0) return (0, i.jsx)(L.$, {
             activityUsers: u,
             guildId: d,
-            activityText: O.intl.formatToPlainString(O.t["IJa+46"], {
+            activityText: k.intl.formatToPlainString(k.t["IJa+46"], {
                 count: u.length
             })
         });
-        if (c.some(e => (0, g.CZ)(e) === a.m.GLOBAL)) return (0, i.jsxs)(i.Fragment, {
+        if (c.some(e => (0, g.CZ)(e) === r.m.GLOBAL)) return (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)(o.Y3C, {
                 size: "xxs",
                 color: "currentColor"
-            }), O.intl.string(O.t.TsWCdW)]
+            }), k.intl.string(k.t.TsWCdW)]
         });
-        let e = s > 0 ? O.intl.format(O.t.z8EAJW, {
+        let e = s > 0 ? k.intl.format(k.t.z8EAJW, {
             count: s
-        }) : O.intl.string(O.t.RjceQU);
+        }) : k.intl.string(k.t.RjceQU);
         return (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)(o.nys, {
                 size: "xxs",
@@ -216,16 +216,16 @@ function G(e) {
     return (0, i.jsxs)(i.Fragment, {
         children: [n.length > 0 && (0, i.jsx)(o.Text, {
             variant: "text-xs/medium",
-            className: k.h_,
+            className: O.h_,
             color: "none",
             lineClamp: 1,
             children: n.map((e, t) => (0, i.jsx)("span", {
-                className: k.Tc,
+                className: O.Tc,
                 children: e
             }, t))
         }), (0, i.jsx)(o.Text, {
             variant: "text-xs/normal",
-            className: k.dS,
+            className: O.dS,
             color: "none",
             lineClamp: 1,
             children: _

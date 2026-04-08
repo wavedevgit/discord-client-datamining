@@ -16,19 +16,19 @@ function h(e) {
     let t, n, h, {
             channel: m,
             messages: A,
-            oldestUnreadMessageId: g,
-            treatSpam: p,
+            oldestUnreadMessageId: p,
+            treatSpam: g,
             summaries: f,
             selectedSummary: _,
             selectedConversation: E
         } = e,
         x = [],
         C = !1,
-        S = null != g ? r.default.extractTimestamp(g) : null,
+        S = null != p ? r.default.extractTimestamp(p) : null,
         T = null;
     return A.forEach(e => {
-        var s, I;
-        let N, v;
+        var s, N;
+        let I, v;
         if (null != f && f.length > 0) {
             let t = r.default.extractTimestamp(e.id);
             for (let e = 0; e < f?.length; e++) {
@@ -63,15 +63,15 @@ function h(e) {
             else if (t.ignored) return u.TZK.MESSAGE_GROUP_IGNORED;
             else if ((0, c.iJ)(e) && n) return u.TZK.MESSAGE_GROUP_SPAMMER;
             return null
-        }(m, e, R && p);
-        (null !== M && ([j, b] = (v = s = b, null == s || s.type !== M ? (N = {
+        }(m, e, R && g);
+        (null !== M && ([j, b] = (v = s = b, null == s || s.type !== M ? (I = {
             type: M,
             content: [],
             key: e.id
-        }, x.push(N)) : v = (N = s).content[N.content.length - 1], [N, v])), g === e.id && null != S) ? (null != b && b.type === u.TZK.DIVIDER ? b.unreadId = e.id : null !== j ? (I = j, e.isFirstMessageInForumPost(m) || I.content.push({
+        }, x.push(I)) : v = (I = s).content[I.content.length - 1], [I, v])), p === e.id && null != S) ? (null != b && b.type === u.TZK.DIVIDER ? b.unreadId = e.id : null !== j ? (N = j, e.isFirstMessageInForumPost(m) || N.content.push({
             type: u.TZK.DIVIDER,
             unreadId: e.id
-        }), I.hasUnread = !0) : e.isFirstMessageInForumPost(m) || x.push({
+        }), N.hasUnread = !0) : e.isFirstMessageInForumPost(m) || x.push({
             type: u.TZK.DIVIDER,
             unreadId: e.id
         }), S = null) : null != S && r.default.extractTimestamp(e.id) > S && (e.isFirstMessageInForumPost(m) || x.push({

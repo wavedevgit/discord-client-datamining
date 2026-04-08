@@ -1,7 +1,7 @@
 /** chunk id: 176360 params = (module,exports,require) **/
 let i, r;
 n.d(t, {
-    A: () => y
+    A: () => b
 });
 var a = n(735438),
     l = n.n(a),
@@ -24,7 +24,7 @@ let m = new Set,
     N = null,
     S = o.w.get(_.t0) || !1;
 
-function x(e) {
+function v(e) {
     let t = e.getGuildId(),
         n = {
             ...e.permissionOverwrites
@@ -32,12 +32,12 @@ function x(e) {
     return null != t && null == n[t] && (n[t] = c.xT(t)), n
 }
 
-function v() {
+function x() {
     if (f = u.A.getChannel(), C = u.A.getCategory(), null == f) return !1;
     let e = f.getGuildId();
-    I = E = x(f), null == E[T] && (T = e), r = null != C, i = c.r(f, C), N = null, g = !1, p = h.XlH.CLOSED, m.clear()
+    I = E = v(f), null == E[T] && (T = e), r = null != C, i = c.r(f, C), N = null, g = !1, p = h.XlH.CLOSED, m.clear()
 }
-class b extends s.Ay.Store {
+class y extends s.Ay.Store {
     static displayName = "ChannelSettingsPermissionsStore";
     initialize() {
         this.waitFor(u.A, A.A)
@@ -79,15 +79,15 @@ class b extends s.Ay.Store {
         return S
     }
 }
-let y = new b(d.h, {
+let b = new y(d.h, {
     CHANNEL_SETTINGS_SET_SECTION: function(e) {
         let {
             section: t
         } = e;
         if (null != f || t !== h.p_A.PERMISSIONS) return !1;
-        v()
+        x()
     },
-    CHANNEL_SETTINGS_PERMISSIONS_INIT: v,
+    CHANNEL_SETTINGS_PERMISSIONS_INIT: x,
     CHANNEL_SETTINGS_PERMISSIONS_UPDATE_PERMISSION: function(e) {
         let {
             id: t,
@@ -115,7 +115,7 @@ let y = new b(d.h, {
         }
     },
     CHANNEL_SETTINGS_INIT: function() {
-        u.A.getSection() === h.p_A.PERMISSIONS && v()
+        u.A.getSection() === h.p_A.PERMISSIONS && x()
     },
     CHANNEL_SETTINGS_CLOSE: function() {
         p = h.XlH.CLOSED, E = null, I = null, f = null, C = null, g = !1, m.clear(), T = null, N = null
@@ -131,7 +131,7 @@ let y = new b(d.h, {
             C = u.A.getCategory();
             let t = f.getGuildId();
             if (null == t) return !1;
-            I = x(f);
+            I = v(f);
             let n = {};
             return m.forEach(e => {
                 null != E && (n[e] = E[e])
@@ -149,7 +149,7 @@ let y = new b(d.h, {
         let {
             silent: t
         } = e;
-        t ? p = h.XlH.OPEN : (p = h.XlH.CLOSED, v())
+        t ? p = h.XlH.OPEN : (p = h.XlH.CLOSED, x())
     },
     CHANNEL_SETTINGS_PERMISSIONS_SET_ADVANCED_MODE: function(e) {
         let {

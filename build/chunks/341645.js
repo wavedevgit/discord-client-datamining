@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     l = n(64700),
     s = n(503698),
-    a = n.n(s),
-    r = n(311907),
+    r = n.n(s),
+    a = n(311907),
     o = n(451988),
     d = n(397927),
     c = n(212245),
@@ -35,14 +35,14 @@ var i = n(627968),
     D = n(218394),
     M = n(255345),
     w = n(652215),
-    O = n(360469),
-    k = n(768349),
+    k = n(360469),
+    O = n(768349),
     U = n(985018),
-    B = n(746338);
+    B = n(949235);
 let G = l.memo(e => {
     let {
         start: t
-    } = e, [n, i] = l.useState(0), s = (0, D.j)(), a = (0, r.bG)([u.A], () => u.A.useReducedMotion), d = !1 === s || a;
+    } = e, [n, i] = l.useState(0), s = (0, D.j)(), r = (0, a.bG)([u.A], () => u.A.useReducedMotion), d = !1 === s || r;
     return l.useEffect(() => {
         let e = new o.IX;
         return e.start(d ? 15 * R.A.Millis.SECOND : R.A.Millis.SECOND, () => {
@@ -62,21 +62,21 @@ let F = l.memo(function(e) {
             analyticsLocations: v
         } = (0, A.Ay)(g.A.ACTIVITY_INSTANCE_EMBED),
         R = (0, c.p)(),
-        D = (0, r.bG)([y.A], () => y.A.getChannel(s), [s]),
+        D = (0, a.bG)([y.A], () => y.A.getChannel(s), [s]),
         F = D?.isThread?.() ? D?.parent_id : s,
-        H = (0, r.bG)([T.default], () => T.default.getId()),
+        H = (0, a.bG)([T.default], () => T.default.getId()),
         {
             embeddedActivity: V,
             currentEmbeddedActivity: q,
             activityLaunchState: W
-        } = (0, r.cf)([_.Ay], () => ({
+        } = (0, a.cf)([_.Ay], () => ({
             embeddedActivity: _.Ay.getEmbeddedActivitiesForChannel(F ?? "").find(e => e.applicationId === n.id),
             currentEmbeddedActivity: _.Ay.getCurrentEmbeddedActivity(),
             activityLaunchState: _.Ay.getLaunchState(n.id, F ?? void 0)
         }), [F, n.id]),
         Y = V?.userIds,
-        z = (0, r.yK)([S.default], () => Array.from(Y ?? []).map(e => S.default.getUser(e)).filter(P.Vq), [Y]),
-        Q = (0, r.bG)([N.A], () => {
+        z = (0, a.yK)([S.default], () => Array.from(Y ?? []).map(e => S.default.getUser(e)).filter(P.Vq), [Y]),
+        Q = (0, a.bG)([N.A], () => {
             if (null == Y) return null;
             for (let e of Y) {
                 let t = N.A.findActivity(e, e => e.application_id === n.id);
@@ -87,7 +87,7 @@ let F = l.memo(function(e) {
         K = Q?.details,
         J = l.useMemo(() => {
             let e = new b.Ay(n);
-            return null == e.embeddedActivityConfig && (e.embeddedActivityConfig = O.Gl), e
+            return null == e.embeddedActivityConfig && (e.embeddedActivityConfig = k.Gl), e
         }, [n]),
         X = (0, p.vG)({
             userId: H,
@@ -137,11 +137,11 @@ let F = l.memo(function(e) {
             bot: n.bot
         });
     $.disabled && (t = $.tooltip);
-    let ea = z.length,
-        er = Q?.timestamps?.start ?? Q?.created_at,
+    let er = z.length,
+        ea = Q?.timestamps?.start ?? Q?.created_at,
         eo = (0, C.y)({
             activity: Q,
-            activityUsersCount: ea
+            activityUsersCount: er
         }),
         ed = [{
             label: $.text,
@@ -164,7 +164,7 @@ let F = l.memo(function(e) {
             }) : (0, i.jsxs)(i.Fragment, {
                 children: [null != K && (0, i.jsxs)("div", {
                     className: B.oL,
-                    children: [null != er && (0, i.jsxs)("div", {
+                    children: [null != ea && (0, i.jsxs)("div", {
                         className: B.DT,
                         children: [(0, i.jsx)("div", {
                             className: B.y9,
@@ -176,11 +176,11 @@ let F = l.memo(function(e) {
                             variant: "text-xs/medium",
                             color: "none",
                             children: (0, i.jsx)(G, {
-                                start: er
+                                start: ea
                             })
                         })]
                     }), (0, i.jsxs)("div", {
-                        className: a()(B.DT, B.PK),
+                        className: r()(B.DT, B.PK),
                         children: [(0, i.jsx)("div", {
                             children: (0, i.jsx)(d.ueQ, {
                                 size: "xxs",
@@ -193,7 +193,7 @@ let F = l.memo(function(e) {
                             children: K
                         })]
                     })]
-                }), ea > 0 && (0, i.jsx)(C.$, {
+                }), er > 0 && (0, i.jsx)(C.$, {
                     activityUsers: z,
                     guildId: o,
                     activityText: eo.text
@@ -204,7 +204,7 @@ let F = l.memo(function(e) {
         onClickContent: el,
         trackingConfig: {
             id: n.id,
-            linkType: k.J.ACTIVITY_INSTANCE,
+            linkType: O.J.ACTIVITY_INSTANCE,
             guildId: o,
             channelId: s,
             messageId: u.id,

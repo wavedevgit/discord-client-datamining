@@ -24,14 +24,14 @@ var i = n(627968),
     T = n(520006),
     N = n(128286),
     S = n(309010),
-    x = n(625180),
-    v = n(898879),
-    b = n(293495),
-    y = n(165610),
+    v = n(625180),
+    x = n(898879),
+    y = n(293495),
+    b = n(165610),
     O = n(652215),
     L = n(5867),
     R = n(985018),
-    P = n(426210);
+    P = n(255783);
 let D = {
     [L.E8.NO_CHAT]: P.Oo,
     [L.E8.RESIZABLE]: P.Ig
@@ -50,12 +50,12 @@ function M(e) {
         width: 0,
         height: 0
     }), F = r.useCallback(() => {
-        x.A.updateFrameLayoutMode({
+        v.A.updateFrameLayoutMode({
             applicationId: t.applicationId,
-            layoutMode: y.y.PIP
+            layoutMode: b.y.PIP
         })
     }, [t.applicationId]), Y = r.useCallback(() => {
-        x.A.stopFrame({
+        v.A.stopFrame({
             applicationId: t.applicationId
         })
     }, [t.applicationId]);
@@ -70,9 +70,9 @@ function M(e) {
         return e.observe(V.current), () => e.disconnect()
     }, []), r.useEffect(() => {
         let e = e => {
-            null == k.current || (0, c.HG$)(k.current, e.target) || a || x.A.updateFrameLayoutMode({
+            null == k.current || (0, c.HG$)(k.current, e.target) || a || v.A.updateFrameLayoutMode({
                 applicationId: t.applicationId,
-                layoutMode: y.y.PIP
+                layoutMode: b.y.PIP
             })
         };
         return document.addEventListener("mousedown", e), () => {
@@ -92,7 +92,7 @@ function M(e) {
         Q = (0, m.G)();
     if (null == n) return null;
     let X = (U ?? O.da6) + G,
-        Z = (0, b.YY)(t);
+        Z = (0, y.YY)(t);
     return (0, i.jsx)(c.NPJ, {
         theme: O.NJ8.DARK,
         children: e => (0, i.jsxs)("div", {
@@ -116,7 +116,7 @@ function M(e) {
                         paddingBottom: q
                     },
                     ref: V,
-                    children: (0, i.jsx)(v.A, {
+                    children: (0, i.jsx)(x.A, {
                         className: P.pU,
                         embedId: Z
                     })
@@ -156,7 +156,7 @@ function M(e) {
                     onOpenPopout: () => {
                         (0, p.zV)(O.HAw.ACTIVITY_POPOUT_POP_OUT_BUTTON_CLICKED), (0, _.A)({
                             onConfirm: async () => {
-                                n?.id != null && await x.A.refreshProxyTicket({
+                                n?.id != null && await v.A.refreshProxyTicket({
                                     applicationId: n.id
                                 }), (0, A.jp)()
                             }

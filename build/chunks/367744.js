@@ -4,18 +4,18 @@ n.d(t, {
 });
 var a = n(64700),
     i = n(562465),
-    s = n(557009),
-    l = n(652215),
+    l = n(557009),
+    s = n(652215),
     r = n(788868);
 let o = async () => (await i.Bo.get({
-    url: l.Rsh.ENTITLEMENTS_FOR_APPLICATION(r.tv),
+    url: s.Rsh.ENTITLEMENTS_FOR_APPLICATION(r.tv),
     oldFormErrors: !0,
     query: {
         exclude_consumed: !0,
         exclude_ended: !0
     },
     rejectWithError: !0
-})).body.map(e => s.A.createFromServer(e)), d = async e => {
+})).body.map(e => l.A.createFromServer(e)), d = async e => {
     await i.Bo.post({
         url: "/debug/entitlements/fractional-premium",
         body: {
@@ -36,7 +36,7 @@ let o = async () => (await i.Bo.get({
         rejectWithError: !1
     })
 }, m = () => {
-    let [e, t] = a.useState([]), [n, i] = a.useState(!1), s = (0, a.useCallback)(async () => {
+    let [e, t] = a.useState([]), [n, i] = a.useState(!1), l = (0, a.useCallback)(async () => {
         try {
             i(!0);
             let e = await o();
@@ -44,18 +44,18 @@ let o = async () => (await i.Bo.get({
         } finally {
             i(!1)
         }
-    }, []), l = (0, a.useCallback)(async e => {
-        await d(e), await s()
-    }, [s]);
+    }, []), s = (0, a.useCallback)(async e => {
+        await d(e), await l()
+    }, [l]);
     return {
-        grantFractionalPremium: l,
+        grantFractionalPremium: s,
         deleteFractionalPremium: (0, a.useCallback)(async e => {
-            await c(e), await s()
-        }, [s]),
+            await c(e), await l()
+        }, [l]),
         triggerNextEntitlementFulfillment: (0, a.useCallback)(async () => {
-            await u(), await s()
-        }, [s]),
-        refreshEntitlementList: s,
+            await u(), await l()
+        }, [l]),
+        refreshEntitlementList: l,
         entitlements: e,
         loading: n
     }

@@ -14,12 +14,12 @@ var i = n(627968),
     h = n(430452),
     m = n(954571),
     A = n(957565),
-    g = n(975571),
-    p = n(917592),
+    p = n(975571),
+    g = n(917592),
     f = n(652215),
     _ = n(731854),
     E = n(985018),
-    x = n(375993);
+    x = n(846274);
 let C = () => {
     h.Ay.getMediaEngine().once(r.bg.ConnectionStats, e => {
         let t = JSON.stringify(Object.values(_.x).map(t => {
@@ -70,7 +70,7 @@ function S(e) {
                     }), (0, i.jsx)("div", {
                         className: x.xB,
                         children: (0, i.jsx)("strong", {
-                            children: p.A.getShortHostname(t)
+                            children: g.A.getShortHostname(t)
                         })
                     })]
                 }), (0, i.jsx)("div", {
@@ -113,14 +113,14 @@ function S(e) {
             [f.S7L.DISCONNECTED]: E.intl.string(E.t.fOX25I),
             [f.S7L.RTC_CONNECTING]: E.intl.string(E.t.b5Ubd5),
             [f.S7L.ICE_CHECKING]: E.intl.format(E.t.SyoYUb, {
-                url: g.A.getArticleURL(f.MVz.VOICE_CONNECTION_ERRORS)
+                url: p.A.getArticleURL(f.MVz.VOICE_CONNECTION_ERRORS)
             }),
             [f.S7L.DTLS_CONNECTING]: E.intl.format(E.t.SyoYUb, {
-                url: g.A.getArticleURL(f.MVz.VOICE_CONNECTION_ERRORS)
+                url: p.A.getArticleURL(f.MVz.VOICE_CONNECTION_ERRORS)
             }),
             [f.S7L.RTC_CONNECTED]: n,
             [f.S7L.NO_ROUTE]: E.intl.format(E.t["2tgQnk"], {
-                url: g.A.getArticleURL(f.MVz.VOICE_CONNECTION_ERRORS)
+                url: p.A.getArticleURL(f.MVz.VOICE_CONNECTION_ERRORS)
             }),
             [f.S7L.RTC_DISCONNECTED]: E.intl.string(E.t.fOX25I)
         } [s];
@@ -160,7 +160,7 @@ function S(e) {
                 })]
             }), !A && !__OVERLAY__ && (0, i.jsx)(o.MzZ, {
                 className: x.Ce,
-                href: g.A.getArticleURL(f.MVz.VOICE_VIDEO_TROUBLESHOOTING),
+                href: p.A.getArticleURL(f.MVz.VOICE_VIDEO_TROUBLESHOOTING),
                 children: E.intl.string(E.t.hvVgAZ)
             })]
         })]

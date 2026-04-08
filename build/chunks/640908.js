@@ -1,4 +1,5 @@
 /** chunk id: 640908 params = (module,exports,require) **/
+"use strict";
 e.exports = {
     iE: "wrapper__9ee73",
     Kk: "icon__9ee73",

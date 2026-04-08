@@ -2,17 +2,17 @@
 n.d(t, {
     EY: () => d,
     KW: () => c,
-    a: () => a,
+    a: () => r,
     ig: () => o,
-    kt: () => r
+    kt: () => a
 });
 var i = n(198982);
 n(576705);
 var l = n(652215),
     s = n(985018);
-let a = "_role";
+let r = "_role";
 
-function r(e) {
+function a(e) {
     if (!(e >= 0)) switch (-e) {
         case l.t02.ENTITY_TOO_LARGE:
             return s.intl.string(s.t.YbdEFK);
@@ -38,7 +38,7 @@ function o(e) {
             body: {
                 message: "Invalid form body",
                 errors: {
-                    [a]: {
+                    [r]: {
                         _errors: [{
                             code: "",
                             message: n
@@ -57,12 +57,12 @@ function d(e) {
         priceTier: i,
         description: l,
         image: s,
-        imageName: a,
-        isImageChanged: r,
+        imageName: r,
+        isImageChanged: a,
         newRoleParams: o,
         hasUnsavedAttachmentChanges: d
     } = e, c = {};
-    t?.name !== n && "" !== n.trim() && (c.name = n), (t?.description ?? "") !== l && (c.description = l), t?.price_tier !== i && null != i && (c.priceTier = i), null != o && "" !== o.name.trim() ? c.createNewRole = !0 : null === o && (c.unlinkRole = !0), s.startsWith("data:") && (r || null == t && (Object.keys(c).length > 0 || d)) && (c.image = s, c.imageName = a);
+    t?.name !== n && "" !== n.trim() && (c.name = n), (t?.description ?? "") !== l && (c.description = l), t?.price_tier !== i && null != i && (c.priceTier = i), null != o && "" !== o.name.trim() ? c.createNewRole = !0 : null === o && (c.unlinkRole = !0), s.startsWith("data:") && (a || null == t && (Object.keys(c).length > 0 || d)) && (c.image = s, c.imageName = r);
     let u = Object.keys(c).length > 0 || d;
     return {
         changes: c,

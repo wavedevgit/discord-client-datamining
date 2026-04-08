@@ -5,11 +5,11 @@ n.d(t, {
 var i = n(627968),
     l = n(64700),
     s = n(503698),
-    a = n.n(s),
-    r = n(397927),
+    r = n.n(s),
+    a = n(397927),
     o = n(415350),
-    d = n(726169),
-    c = n(782691);
+    d = n(995282),
+    c = n(830684);
 
 function u(e) {
     let {
@@ -18,13 +18,13 @@ function u(e) {
         variant: s,
         text: u,
         lineClamp: _
-    } = e, m = (0, r.$Il)(), h = l.useMemo(() => null == u ? null : (0, o.A)(u, !0, {
+    } = e, m = (0, a.$Il)(), h = l.useMemo(() => null == u ? null : (0, o.A)(u, !0, {
         allowHeading: null == _,
         allowList: null == _,
         initialHeaderLevel: m
     }), [u, _, m]);
-    return (0, i.jsx)(r.Text, {
-        className: a()(n, c.PT, {
+    return (0, i.jsx)(a.Text, {
+        className: r()(n, c.PT, {
             [d.E]: null != _ && _ > 1,
             [d.D]: 1 === _
         }),

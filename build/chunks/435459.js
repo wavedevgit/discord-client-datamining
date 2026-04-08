@@ -4,15 +4,15 @@ n.d(t, {
 }), n(393431), n(532706), n(42231), n(232424), n(949626), n(767709), n(65162), n(323874), n(14289), n(35956);
 var a = n(627968),
     i = n(64700),
-    s = n(687813),
-    l = n(735438),
-    r = n.n(l),
+    l = n(687813),
+    s = n(735438),
+    r = n.n(s),
     o = n(158954),
     d = n(397927);
 let c = {
     "discord_common/js/packages/tokens/tools/platforms/lottie/originals/native/Lottie_Navigation_Messages_Opt.lottie": () => n.e("36508").then(n.t.bind(n, 655671, 17)),
     "discord_common/js/packages/tokens/tools/platforms/lottie/originals/native/Lottie_Navigation_Notifications_Opt.lottie": () => n.e("5252").then(n.t.bind(n, 323823, 17)),
-    "discord_common/js/packages/tokens/tools/platforms/lottie/originals/native/Lottie_Navigation_Servers_CombinedEE.lottie": () => n.e("65154").then(n.t.bind(n, 670649, 17)),
+    "discord_common/js/packages/tokens/tools/platforms/lottie/originals/native/Lottie_Navigation_Servers_CombinedEE.lottie": () => n.e("65154").then(n.t.bind(n, 893030, 17)),
     "discord_common/js/packages/tokens/tools/platforms/lottie/originals/native/Lottie_Navigation_Servers_Opt.lottie": () => n.e("77248").then(n.t.bind(n, 342787, 17)),
     "discord_common/js/packages/tokens/tools/platforms/lottie/originals/native/Lottie_Navigation_You_Opt.lottie": () => n.e("93401").then(n.t.bind(n, 959328, 17)),
     "discord_common/js/packages/tokens/tools/platforms/lottie/originals/native/Lottie_Requests_Messages.lottie": () => n.e("48614").then(n.t.bind(n, 713893, 17)),
@@ -91,7 +91,7 @@ let c = {
     "discord_app/images/burst_reactions/mobile/SuperReactions_Mobile_Arcade_v1.lottiejson": () => n.e("51153").then(n.t.bind(n, 743496, 19)),
     "discord_app/images/burst_reactions/mobile/SuperReactions_Mobile_BlackHoles_v1.lottiejson": () => n.e("32803").then(n.t.bind(n, 252462, 19)),
     "discord_app/images/burst_reactions/mobile/SuperReactions_Mobile_BlastOff_v1.lottiejson": () => n.e("19842").then(n.t.bind(n, 341529, 19)),
-    "discord_app/images/burst_reactions/mobile/SuperReactions_Mobile_Crystal_v1.lottiejson": () => n.e("85529").then(n.t.bind(n, 762464, 19)),
+    "discord_app/images/burst_reactions/mobile/SuperReactions_Mobile_Crystal_v1.lottiejson": () => n.e("85529").then(n.t.bind(n, 540083, 19)),
     "discord_app/images/burst_reactions/mobile/SuperReactions_Mobile_Fireworks_v1.lottiejson": () => n.e("97197").then(n.t.bind(n, 47036, 19)),
     "discord_app/images/burst_reactions/mobile/SuperReactions_Mobile_Fusion_v1.lottiejson": () => n.e("92933").then(n.t.bind(n, 279172, 19)),
     "discord_app/images/burst_reactions/mobile/SuperReactions_Mobile_Pop_v1.lottiejson": () => n.e("5560").then(n.t.bind(n, 602507, 19)),
@@ -159,20 +159,20 @@ function u(e) {
     } = e;
     return fetch(t).then(e => e.arrayBuffer()).then(e => new Promise((t, n) => {
         let a = new Uint8Array(e);
-        s.$1(a, (e, a) => {
+        l.$1(a, (e, a) => {
             null != e && n(e);
             let i = Object.keys(a).reduce((e, t) => ({
                     ...e,
-                    [t]: JSON.parse(s.he(a[t]))
+                    [t]: JSON.parse(l.he(a[t]))
                 }), {}),
-                l = i["manifest.json"];
-            t(i[`animations/${l.animations[0].id}.json`])
+                s = i["manifest.json"];
+            t(i[`animations/${s.animations[0].id}.json`])
         })
     }))
 }
 
 function m() {
-    let [e, t] = i.useState(void 0), [n, s] = i.useState(400), [l, m] = i.useState(400);
+    let [e, t] = i.useState(void 0), [n, l] = i.useState(400), [s, m] = i.useState(400);
     return (0, a.jsx)("div", {
         style: {
             margin: 24
@@ -193,10 +193,10 @@ function m() {
                 direction: "horizontal",
                 children: [(0, a.jsx)(d.ksK, {
                     value: n.toString(),
-                    onChange: e => s(Number(e)),
+                    onChange: e => l(Number(e)),
                     label: "Width"
                 }), (0, a.jsx)(d.ksK, {
-                    value: l.toString(),
+                    value: s.toString(),
                     onChange: e => m(Number(e)),
                     label: "Height"
                 })]
@@ -217,7 +217,7 @@ function m() {
             }), null != e && (0, a.jsx)("div", {
                 style: {
                     width: n,
-                    height: l
+                    height: s
                 },
                 children: (0, a.jsx)(d.akl, {
                     importData: () => {

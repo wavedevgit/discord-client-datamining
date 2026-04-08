@@ -1,6 +1,6 @@
 /** chunk id: 857341 params = (module,exports,require) **/
 n.d(t, {
-    A: () => p
+    A: () => g
 });
 var i = n(627968),
     l = n(64700),
@@ -14,17 +14,17 @@ var i = n(627968),
     h = n(75811);
 n(603266);
 var m = n(985018),
-    A = n(97262),
-    g = n(804674);
+    A = n(683981),
+    p = n(135027);
 
-function p(e) {
+function g(e) {
     let {
         channelId: t
-    } = e, n = (0, s.bG)([r.A], () => r.A.getSecureFramesState()?.epochAuthenticator), p = (0, u.z)({
+    } = e, n = (0, s.bG)([r.A], () => r.A.getSecureFramesState()?.epochAuthenticator), g = (0, u.z)({
         fingerprintBase64: n,
         chunkSize: 5,
         desiredLength: 30
-    }), [f, _] = l.useState(!1), E = l.useMemo(() => p?.join(" "), [p]), x = l.useCallback(() => {
+    }), [f, _] = l.useState(!1), E = l.useMemo(() => g?.join(" "), [g]), x = l.useCallback(() => {
         null != E && (0, o.C)(E, () => {
             _(!0), (0, c.k0)({
                 channelId: t
@@ -32,7 +32,7 @@ function p(e) {
         })
     }, [t, E]);
     return (0, i.jsxs)("div", {
-        className: g.kL,
+        className: p.kL,
         children: [(0, i.jsx)(a.Heading, {
             variant: "text-sm/bold",
             color: "text-strong",
@@ -44,13 +44,13 @@ function p(e) {
                 helpArticle: (0, d.aW)()
             })
         }), (0, i.jsx)("div", {
-            className: g.on,
+            className: p.on,
             children: (0, i.jsx)(h.j, {
-                chunks: p,
+                chunks: g,
                 columns: 3,
-                className: g.lu
+                className: p.lu
             })
-        }), null != p && (0, i.jsxs)(a.DUT, {
+        }), null != g && (0, i.jsxs)(a.DUT, {
             className: A.n2,
             onClick: x,
             children: [(0, i.jsx)("div", {

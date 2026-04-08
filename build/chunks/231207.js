@@ -4,8 +4,8 @@ n.d(t, {
 });
 var a = n(627968),
     i = n(64700),
-    s = n(488428),
-    l = n(835245),
+    l = n(488428),
+    s = n(835245),
     r = n(311907),
     o = n(435371),
     d = n(421380),
@@ -16,8 +16,8 @@ var a = n(627968),
     x = n(688810),
     p = n(589078),
     g = n(541689),
-    f = n(721923),
-    _ = n(300233),
+    _ = n(721923),
+    f = n(300233),
     v = n(599941),
     b = n(250253),
     j = n(4630),
@@ -25,13 +25,13 @@ var a = n(627968),
     C = n(532794),
     y = n(216678),
     S = n(194509),
-    E = n(761705),
-    T = n(448362),
+    T = n(761705),
+    E = n(448362),
     N = n(71393),
     I = n(166403),
     k = n(652215),
     O = n(788868),
-    R = n(318296);
+    R = n(19897);
 
 function w(e) {
     let {
@@ -55,15 +55,15 @@ let D = function() {
         gift: "true"
     }), V = "true" !== G.gift && null != D, [W, H] = i.useState(M.length > 0 ? M[0].value : null), {
         analyticsLocations: K
-    } = (0, x.Ay)(h.A.PAYMENT_FLOW_TEST_PAGE), [z, $] = i.useState(""), [q, Q] = i.useState(k.dJq), {
-        balance: Y,
+    } = (0, x.Ay)(h.A.PAYMENT_FLOW_TEST_PAGE), [z, $] = i.useState(""), [q, Y] = i.useState(k.dJq), {
+        balance: Q,
         isFetching: J,
         error: X
-    } = (0, E.W)(), {
+    } = (0, T.W)(), {
         isSubmitting: Z,
         responseMessage: ee,
         redeemVirtualCurrency: et
-    } = (0, E.Q)(), [en, ea] = i.useState(k.dJq), [ei, es] = i.useState(""), [el, er] = i.useState(k.dJq), [eo, ed] = i.useState(k.dJq);
+    } = (0, T.Q)(), [en, ea] = i.useState(k.dJq), [ei, el] = i.useState(""), [es, er] = i.useState(k.dJq), [eo, ed] = i.useState(k.dJq);
     return (0, a.jsx)(x.f5, {
         value: K,
         children: (0, a.jsx)(c.IpV, {
@@ -149,7 +149,7 @@ let D = function() {
                         onSelectionChange: e => L(e),
                         selectionMode: "single",
                         fullWidth: !0
-                    }), null != P ? (0, a.jsx)(f.A, {
+                    }), null != P ? (0, a.jsx)(_.A, {
                         guild: P,
                         analyticsLocation: {}
                     }) : (0, a.jsx)("div", {
@@ -238,7 +238,7 @@ let D = function() {
                         text: "Open Link",
                         disabled: V,
                         onClick: () => {
-                            window.open(k.BVt.BILLING_PREMIUM_SUBSCRIBE + "?" + s.stringify({
+                            window.open(k.BVt.BILLING_PREMIUM_SUBSCRIBE + "?" + l.stringify({
                                 ...G
                             }))
                         }
@@ -262,9 +262,9 @@ let D = function() {
                             children: [null !== X && (0, a.jsxs)(c.Text, {
                                 variant: "text-sm/normal",
                                 children: ["Error fetching Virtual Currency Balance: ", X.message]
-                            }), (0, a.jsx)(T.Gy, {
-                                balance: Y ?? 0,
-                                balanceWidgetMode: T.k7.SELECTED
+                            }), (0, a.jsx)(E.Gy, {
+                                balance: Q ?? 0,
+                                balanceWidgetMode: E.k7.SELECTED
                             })]
                         })]
                     }), (0, a.jsx)(c.ksK, {
@@ -276,7 +276,7 @@ let D = function() {
                         variant: "primary",
                         text: "Redeem Virtual Currency for SKU",
                         loading: Z,
-                        onClick: () => et(en, (0, l.A)())
+                        onClick: () => et(en, (0, s.A)())
                     }), null != ee && (0, a.jsx)(c.Text, {
                         variant: "text-sm/normal",
                         children: ee
@@ -290,7 +290,7 @@ let D = function() {
                         onSelectionChange: e => H(e),
                         selectionMode: "single",
                         fullWidth: !0
-                    }), (0, a.jsx)(_.H, {
+                    }), (0, a.jsx)(f.H, {
                         guildId: W?.id,
                         children: (0, a.jsx)(w, {
                             selectedGuildForGuildSub: W
@@ -310,7 +310,7 @@ let D = function() {
                             label: "Sku Id",
                             placeholder: "Sku Id",
                             value: q,
-                            onChange: e => Q(e)
+                            onChange: e => Y(e)
                         })]
                     }), (0, a.jsx)(c.Button, {
                         variant: "primary",
@@ -340,19 +340,19 @@ let D = function() {
                                 hideLabel: !0,
                                 placeholder: "Application Id",
                                 value: ei,
-                                onChange: es
+                                onChange: el
                             }), (0, a.jsx)(c.ksK, {
                                 label: "SKU ID",
                                 hideLabel: !0,
                                 placeholder: "SKU ID",
-                                value: el,
+                                value: es,
                                 onChange: e => er(e)
                             }), (0, a.jsx)(c.Button, {
                                 variant: "primary",
                                 text: "Open Standard Payment Modal for SKU",
                                 onClick: () => (0, y.A)({
                                     applicationId: ei,
-                                    skuId: el,
+                                    skuId: es,
                                     analyticsLocations: K,
                                     checkoutFlow: p.CL.PREMIUM_APPS_OTP_CHECKOUT
                                 })

@@ -5,8 +5,8 @@ n.d(t, {
 });
 var a = n(73153),
     i = n(846293),
-    s = n(976860),
-    l = n(961350),
+    l = n(976860),
+    s = n(961350),
     r = n(954571),
     o = n(723702),
     d = n(837921),
@@ -24,12 +24,12 @@ async function h(e, t) {
     return n?.installationId != null && r.default.track(m.HAw.EXTERNAL_INSTALLATION_ID_RECEIVED, {
         received_installation_id: n.installationId,
         location: "openInviteFromRPC"
-    }), l.default.isAuthenticated() ? a.h.dispatch({
+    }), s.default.isAuthenticated() ? a.h.dispatch({
         type: "INVITE_MODAL_OPEN",
         invite: u,
         code: e,
         context: m.BRT.APP
-    }) : (0, s.bG)(m.BVt.INVITE(e)), o.isPlatformEmbedded && d.Ay.focus(), {
+    }) : (0, l.bG)(m.BVt.INVITE(e)), o.isPlatformEmbedded && d.Ay.focus(), {
         invite: u,
         code: e
     }

@@ -16,7 +16,7 @@ var i = n(627968),
     _ = n(661191),
     m = n(652215),
     p = n(985018),
-    g = n(680476);
+    g = n(133535);
 
 function E(e) {
     let {
@@ -58,7 +58,7 @@ function E(e) {
             default:
                 return t.timestamp
         }
-    }, [t]), T = (0, l.bG)([u.A], () => u.A.getChannel(E), [E]), N = T?.guild_id ?? I, S = (0, l.bG)([A.A], () => null != N ? A.A.getGuild(N) : null, [N]), x = (0, l.bG)([h.default], () => null != f ? h.default.getUser(f) : null, [f]);
+    }, [t]), T = (0, l.bG)([u.A], () => u.A.getChannel(E), [E]), N = T?.guild_id ?? I, S = (0, l.bG)([A.A], () => null != N ? A.A.getGuild(N) : null, [N]), v = (0, l.bG)([h.default], () => null != f ? h.default.getUser(f) : null, [f]);
     return "unknown" === n ? null : (0, i.jsx)("div", {
         className: g.kL,
         children: (0, i.jsxs)("div", {
@@ -74,11 +74,11 @@ function E(e) {
                     tooltipPosition: "top",
                     animate: !1
                 });
-                if ("user" === n && null != x) {
-                    let e = x.getAvatarURL(void 0, 50);
+                if ("user" === n && null != v) {
+                    let e = v.getAvatarURL(void 0, 50);
                     return (0, i.jsx)("img", {
                         src: e,
-                        alt: x.username,
+                        alt: v.username,
                         className: g.my
                     })
                 }
@@ -92,9 +92,9 @@ function E(e) {
                         children: ["guild" === n && null != S ? (0, i.jsx)("div", {
                             className: g.DD,
                             children: S.name
-                        }) : "user" === n && null != x ? (0, i.jsx)("div", {
+                        }) : "user" === n && null != v ? (0, i.jsx)("div", {
                             className: g.DD,
-                            children: x.username
+                            children: v.username
                         }) : null, (0, i.jsx)("div", {
                             className: g.vE,
                             children: (0, c.jb)(C)

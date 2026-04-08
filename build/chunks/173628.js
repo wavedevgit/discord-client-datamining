@@ -5,12 +5,12 @@ n.d(t, {
 var a = n(627968);
 n(64700);
 var i = n(311907),
-    s = n(397927),
-    l = n(21119),
+    l = n(397927),
+    s = n(21119),
     r = n(287809),
     o = n(303054),
-    d = n(166161),
-    c = n(310086);
+    d = n(600840),
+    c = n(793877);
 let u = [{
     key: "user",
     cellClassName: d.iL,
@@ -23,7 +23,7 @@ let u = [{
     }
 }, {
     key: "affinity",
-    renderHeader: () => (0, a.jsx)(s.Text, {
+    renderHeader: () => (0, a.jsx)(l.Text, {
         variant: "text-sm/semibold",
         children: "COMMUNICATION AFFINITY"
     }),
@@ -36,7 +36,7 @@ let u = [{
     }
 }, {
     key: "vcProbability",
-    renderHeader: () => (0, a.jsx)(s.Text, {
+    renderHeader: () => (0, a.jsx)(l.Text, {
         variant: "text-sm/semibold",
         children: "VOICE AFFINITY"
     }),
@@ -49,7 +49,7 @@ let u = [{
     }
 }, {
     key: "isFriend",
-    renderHeader: () => (0, a.jsx)(s.Text, {
+    renderHeader: () => (0, a.jsx)(l.Text, {
         variant: "text-sm/semibold",
         children: "IS FRIEND"
     }),
@@ -63,7 +63,7 @@ let u = [{
 }];
 
 function m() {
-    let e = (0, i.yK)([l.A, r.default], () => l.A.getUserAffinities().map(e => {
+    let e = (0, i.yK)([s.A, r.default], () => s.A.getUserAffinities().map(e => {
         let {
             otherUserId: t,
             communicationProbability: n,

@@ -6,20 +6,20 @@ var n = a(64700),
     r = a(451988);
 
 function o(e, t) {
-    let [a, o] = n.useState(!1), i = n.useRef(new r.J_(t, () => o(!1))), c = n.useRef(new r.J_(e, () => o(!0))), l = n.useCallback(() => {
-        i.current.cancel(), c.current.cancel()
+    let [a, o] = n.useState(!1), i = n.useRef(new r.J_(t, () => o(!1))), l = n.useRef(new r.J_(e, () => o(!0))), c = n.useCallback(() => {
+        i.current.cancel(), l.current.cancel()
     }, []);
-    n.useEffect(() => l, [l]);
+    n.useEffect(() => c, [c]);
     let s = n.useCallback(() => {
-        l(), i.current.delay()
-    }, [l]);
+        c(), i.current.delay()
+    }, [c]);
     return {
         isHovered: a,
         setIsHovered: o,
         onMouseEnter: n.useCallback(() => {
-            l(), c.current.delay()
-        }, [l]),
+            c(), l.current.delay()
+        }, [c]),
         onMouseLeave: s,
-        cancelTimers: l
+        cancelTimers: c
     }
 }

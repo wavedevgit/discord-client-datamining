@@ -12,7 +12,7 @@ var i = n(627968),
     c = n(471271),
     u = n(629199),
     A = n(985018),
-    h = n(796218);
+    h = n(632339);
 
 function _(e) {
     let {
@@ -32,13 +32,13 @@ function _(e) {
         isRejectLoading: T,
         isUserProfileLoading: N,
         isOptimisticAccepted: S,
-        isOptimisticRejected: x
+        isOptimisticRejected: v
     } = (0, c.t)({
         user: n,
         onAcceptSuccess: E,
         onRejectSuccess: g,
         onError: p
-    }), v = C || T || N || S || x;
+    }), x = C || T || N || S || v;
     return (0, i.jsxs)("div", {
         className: h.kL,
         children: [(0, i.jsx)(u.A, {
@@ -57,8 +57,8 @@ function _(e) {
                     onClick: e => {
                         e.stopPropagation(), f(_.id)
                     },
-                    disabled: v,
-                    loading: T || x
+                    disabled: x,
+                    loading: T || v
                 })
             }), (0, i.jsx)("div", {
                 "data-button-hoisted-classname-wrapper": !0,
@@ -70,7 +70,7 @@ function _(e) {
                     onClick: e => {
                         e.stopPropagation(), I(_.id)
                     },
-                    disabled: v,
+                    disabled: x,
                     loading: C || N || S
                 })
             })]

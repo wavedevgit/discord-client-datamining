@@ -1,11 +1,11 @@
 /** chunk id: 245750 params = (module,exports,require) **/
 n.d(t, {
-    A: () => f
+    A: () => _
 });
 var a = n(627968),
     i = n(64700),
-    s = n(935399),
-    l = n(554146),
+    l = n(935399),
+    s = n(554146),
     r = n(505312),
     o = n(397927),
     d = n(379848),
@@ -17,10 +17,10 @@ var a = n(627968),
     p = n(49999),
     g = n(985018);
 
-function f(e) {
+function _(e) {
     let t, n, {
-            webBuildOverride: f,
-            onClick: _,
+            webBuildOverride: _,
+            onClick: f,
             onContextMenu: v,
             dismissibleContents: b,
             iconForeground: j,
@@ -28,29 +28,29 @@ function f(e) {
         } = e,
         C = i.useRef(null),
         [y, S] = i.useState(!1);
-    (0, s.Ay)(() => {
+    (0, l.Ay)(() => {
         let e = () => S(!0);
         return m._.subscribe(x.jej.PREMIUM_GROUP_PURCHASE_FLOW_COMPLETED, e), () => {
             m._.unsubscribe(x.jej.PREMIUM_GROUP_PURCHASE_FLOW_COMPLETED, e)
         }
     });
-    let E = i.useCallback(() => {
-        S(!1), _()
-    }, [_]);
-    t = null != f ? g.intl.formatToPlainString(g.t.Gzh6ZP, {
-        webBuildOverride: f.id
+    let T = i.useCallback(() => {
+        S(!1), f()
+    }, [f]);
+    t = null != _ ? g.intl.formatToPlainString(g.t.Gzh6ZP, {
+        webBuildOverride: _.id
     }) : g.intl.string(g.t.cduTBL);
-    let T = o.Zes,
+    let E = o.Zes,
         N = (0, r.w)();
-    return T = null != f ? o.Hnu : N.Component, (0, a.jsxs)(a.Fragment, {
+    return E = null != _ ? o.Hnu : N.Component, (0, a.jsxs)(a.Fragment, {
         children: [(0, a.jsx)(h.A, {
             ref: C,
             tooltipText: t,
             tooltipPositionKey: n,
-            onClick: E,
+            onClick: T,
             onContextMenu: v,
             "aria-label": g.intl.string(g.t.cduTBL),
-            icon: (0, a.jsx)(T, {
+            icon: (0, a.jsx)(E, {
                 size: "refresh_sm",
                 color: "currentColor",
                 className: j
@@ -69,7 +69,7 @@ function f(e) {
                     visibleContent: t,
                     markAsDismissed: n
                 } = e;
-                return t === l.M.PRIVATE_PROFILE_COACHMARK ? (0, a.jsx)(u.K, {
+                return t === s.M.PRIVATE_PROFILE_COACHMARK ? (0, a.jsx)(u.K, {
                     markAsDismissed: n,
                     targetElementRef: C
                 }) : null

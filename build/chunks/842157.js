@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     l = n(64700),
     s = n(379834),
-    a = n(934551),
-    r = n(27989),
+    r = n(934551),
+    a = n(27989),
     o = n(311907),
     d = n(397927),
     c = n(308368),
@@ -35,9 +35,9 @@ var i = n(627968),
     D = n(652215),
     M = n(768349),
     w = n(985018),
-    O = n(772234);
+    k = n(71747);
 
-function k(e) {
+function O(e) {
     let {
         presenceActivity: t,
         remoteJoinPlatform: n,
@@ -55,8 +55,8 @@ function k(e) {
                 });
             case L.FL.ANDROID:
                 return (0, i.jsx)(R.x, {
-                    width: r.E.xxs,
-                    height: r.E.xxs,
+                    width: a.E.xxs,
+                    height: a.E.xxs,
                     color: "currentColor"
                 });
             case L.FL.IOS:
@@ -75,7 +75,7 @@ function k(e) {
                     color: "currentColor"
                 });
             case L.FL.VR:
-                return (0, i.jsx)(a.VrHeadsetIcon, {
+                return (0, i.jsx)(r.VrHeadsetIcon, {
                     size: "xxs",
                     color: "currentColor"
                 });
@@ -91,17 +91,17 @@ function k(e) {
     if (!(null != n || c.length > 0)) return null;
     let u = null != n ? (0, y.C)(n) : w.intl.string(w.t["4dGUP0"]);
     return (0, i.jsxs)("div", {
-        className: O.qr,
+        className: k.qr,
         children: [(0, i.jsx)("div", {
-            className: O.E6,
+            className: k.E6,
             children: c.map((e, t) => (0, i.jsx)("div", {
-                className: O.F2,
+                className: k.F2,
                 children: e
             }, t))
         }), (0, i.jsx)(d.Text, {
             variant: "text-sm/medium",
             color: "currentColor",
-            className: O.kB,
+            className: k.kB,
             children: u
         })]
     })
@@ -111,8 +111,8 @@ function U(e) {
     let {
         message: t,
         application: n,
-        applicationName: a,
-        channel: r,
+        applicationName: r,
+        channel: a,
         header: C,
         currentUserId: y,
         launchableAppId: L,
@@ -133,7 +133,7 @@ function U(e) {
         accountLinkButtonRef: X,
         renderAccountLinkUpsell: Z
     } = e, $ = V?.timestamps?.start ?? V?.created_at, ee = l.useMemo(() => null != $ ? (0, i.jsxs)("div", {
-        className: O.Ym,
+        className: k.Ym,
         children: [(0, i.jsx)(d._xR, {
             size: "xxs",
             color: "currentColor"
@@ -153,11 +153,11 @@ function U(e) {
         }), w.intl.string(w.t.TsWCdW)]
     }) : null, [en]), el = l.useMemo(() => (0, i.jsxs)(d.Text, {
         variant: "text-xs/normal",
-        className: O.dS,
+        className: k.dS,
         color: "none",
         lineClamp: 2,
-        children: [et ? (0, E.YC)(t, a, r, y, !1) : ee, et ? null : ei]
-    }), [et, t, a, r, y, ee, ei]), es = l.useMemo(() => {
+        children: [et ? (0, E.YC)(t, r, a, y, !1) : ee, et ? null : ei]
+    }), [et, t, r, a, y, ee, ei]), es = l.useMemo(() => {
         let e = V?.details;
         return null == e || "" === e ? null : (0, i.jsx)(d.Text, {
             variant: "text-xs/normal",
@@ -165,10 +165,10 @@ function U(e) {
             lineClamp: 1,
             children: e
         })
-    }, [V?.details]), ea = l.useMemo(() => (0, i.jsxs)("div", {
-        className: O.pq,
+    }, [V?.details]), er = l.useMemo(() => (0, i.jsxs)("div", {
+        className: k.pq,
         children: [es, el, W || et ? null : Y]
-    }), [el, W, et, Y, es]), er = !!L, eo = (0, A.e)(n), {
+    }), [el, W, et, Y, es]), ea = !!L, eo = (0, A.e)(n), {
         canJoin: ed,
         remoteJoinPlatform: ec
     } = (0, I.D)({
@@ -179,7 +179,7 @@ function U(e) {
         application: n,
         isEmbeddedApplication: R,
         isFrameApplication: eo,
-        isGameLaunchable: er
+        isGameLaunchable: ea
     }), eu = (0, I.M)(V, q, t, n), e_ = (0, v.E)(V, t, n, y), em = (0, T.w)(q, V), eh = (0, N.L)(V), ep = (0, o.bG)([f.A], () => null != V && null != V.application_id && f.A.getState(V.application_id, D.xL.JOIN) === D.eAD.LOADING), {
         actions: eg,
         hasAccountLinkButton: eA
@@ -196,7 +196,7 @@ function U(e) {
                     userId: t.author.id,
                     sessionId: V.session_id,
                     applicationId: V.application_id,
-                    channelId: r.id,
+                    channelId: a.id,
                     messageId: t.id,
                     source: D.ThZ.MESSAGE_EMBED,
                     analyticsLocations: z,
@@ -206,8 +206,8 @@ function U(e) {
                     type: D.UqL.JOIN,
                     source: D.ThZ.MESSAGE_EMBED,
                     userId: t.author.id,
-                    guildId: r.guild_id,
-                    channelId: r.id,
+                    guildId: a.guild_id,
+                    channelId: a.id,
                     applicationId: V.application_id,
                     partyId: V.party?.id,
                     messageId: t.id,
@@ -235,7 +235,7 @@ function U(e) {
             onClick: () => {
                 null != V && c.A.sendActivityInvite({
                     type: D.xL.JOIN,
-                    channelId: r.id,
+                    channelId: a.id,
                     activity: V,
                     location: D.ThZ.MESSAGE_EMBED
                 })
@@ -264,22 +264,22 @@ function U(e) {
             actions: l,
             hasAccountLinkButton: i
         }
-    }, [ed, eu, e_, em, U, t.author.id, t.id, V, r.id, r.guild_id, z, ec, y, ep, Q, J, X, K, eh]), ex = eg.some(e => e.trackingArea === h.kY.CLOUD_PLAY);
+    }, [ed, eu, e_, em, U, t.author.id, t.id, V, a.id, a.guild_id, z, ec, y, ep, Q, J, X, K, eh]), ex = eg.some(e => e.trackingArea === h.kY.CLOUD_PLAY);
     (0, P.A)(ex, z);
-    let ef = l.useMemo(() => em ? null : (0, i.jsx)(k, {
+    let ef = l.useMemo(() => em ? null : (0, i.jsx)(O, {
         presenceActivity: V,
         remoteJoinPlatform: ec,
-        isGameLaunchable: er
-    }), [em, V, ec, er]);
+        isGameLaunchable: ea
+    }), [em, V, ec, ea]);
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(m.h, {
             header: C,
-            title: a,
+            title: r,
             staticBannerSrc: B,
             onClickBanner: G,
             bannerAspectRatio: m.u.ACTIVITY,
             iconSrc: F ?? void 0,
-            info: ea,
+            info: er,
             actions: eg,
             primaryActionFirst: !0,
             onClickContent: G,
@@ -288,7 +288,7 @@ function U(e) {
                 linkType: M.J.RICH_PRESENCE_INVITE,
                 onView: H,
                 referrerId: t.author.id,
-                guildId: r.guild_id,
+                guildId: a.guild_id,
                 channelId: t.channel_id,
                 messageId: t.id
             },

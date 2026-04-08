@@ -1,28 +1,28 @@
 /** chunk id: 752755 params = (module,exports,require) **/
 n.d(t, {
     A: () => c,
-    e: () => a
+    e: () => r
 });
 var i, l = n(311907),
     s = n(73153),
-    a = ((i = {})[i.NOT_FETCHED = 0] = "NOT_FETCHED", i[i.FETCHING = 1] = "FETCHING", i[i.FETCHED = 2] = "FETCHED", i[i.FAILED = 3] = "FAILED", i);
-let r = {},
+    r = ((i = {})[i.NOT_FETCHED = 0] = "NOT_FETCHED", i[i.FETCHING = 1] = "FETCHING", i[i.FETCHED = 2] = "FETCHED", i[i.FAILED = 3] = "FAILED", i);
+let a = {},
     o = {};
 class d extends l.Ay.Store {
     static displayName = "MediaPostEmbedStore";
     getMediaPostEmbed(e) {
-        if (null != e) return r[e]
+        if (null != e) return a[e]
     }
     getEmbedFetchState(e) {
         return o[e] ?? 0
     }
     getMediaPostEmbeds() {
-        return r
+        return a
     }
 }
 let c = new d(s.h, {
     CONNECTION_OPEN: function() {
-        r = {}, o = {}
+        a = {}, o = {}
     },
     MEDIA_POST_EMBED_FETCH: function(e) {
         let {
@@ -35,8 +35,8 @@ let c = new d(s.h, {
             threadId: t,
             mediaPostEmbed: n
         } = e;
-        r = {
-            ...r,
+        a = {
+            ...a,
             [t]: n
         }, o[t] = 2
     },
@@ -47,6 +47,6 @@ let c = new d(s.h, {
         o[t] = 3
     },
     LOGOUT: function(e) {
-        e.isSwitchingAccount || (r = {}, o = {})
+        e.isSwitchingAccount || (a = {}, o = {})
     }
 })

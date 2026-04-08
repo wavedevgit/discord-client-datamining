@@ -5,8 +5,8 @@ n.d(t, {
 var a = n(627968);
 n(64700);
 var i = n(554146),
-    s = n(379848),
-    l = n(441811),
+    l = n(379848),
+    s = n(441811),
     r = n(587084),
     o = n(693240),
     d = n(844526),
@@ -36,16 +36,16 @@ function m(e) {
         children: [(0, a.jsx)(d.A, {
             groupName: u.m.ACCOUNT_NAME_ZONE,
             targetElementRef: e.targetElementRef
-        }), (0, a.jsx)(s.Ay, {
+        }), (0, a.jsx)(l.Ay, {
             contentTypes: e.additionalDCs ?? [],
             groupName: u.m.ACCOUNT_NAME_ZONE,
             children: t => {
                 let {
                     visibleContent: n,
-                    markAsDismissed: s
+                    markAsDismissed: l
                 } = t;
-                return n === i.M.DISPLAY_NAME_STYLES_COACHMARK ? (0, a.jsx)(l.l, {
-                    markAsDismissed: s,
+                return n === i.M.DISPLAY_NAME_STYLES_COACHMARK ? (0, a.jsx)(s.l, {
+                    markAsDismissed: l,
                     targetElementRef: e.targetElementRef,
                     children: e.children
                 }) : e.children

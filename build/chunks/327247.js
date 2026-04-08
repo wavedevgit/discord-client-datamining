@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     l = n(64700),
     s = n(503698),
-    a = n.n(s),
-    r = n(687498),
+    r = n.n(s),
+    a = n(687498),
     o = n(494012),
     d = n(158954),
     c = n(311907),
@@ -31,8 +31,8 @@ var i = n(627968),
     j = n(545986),
     L = n(654487),
     R = n(985018),
-    P = n(376936),
-    D = n(582251);
+    P = n(416783),
+    D = n(652254);
 let M = async () => await n.e("40119").then(n.t.bind(n, 718698, 19));
 
 function w(e) {
@@ -58,7 +58,7 @@ function w(e) {
         completedRatio: X,
         completedRatioDisplay: Z
     } = (0, A.O9)(t), $ = (0, g.gj)(t, b, _.Ob.QuestEmbed, w), ee = (0, y.Pd)(t), et = l.useMemo(() => Q && K ? R.intl.format(R.t["8Op4c4"], {
-        balanceHook: () => (0, i.jsxs)(O, {
+        balanceHook: () => (0, i.jsxs)(k, {
             questId: t.id,
             children: [(0, i.jsx)(m.A, {
                 shouldUseThemeColor: !0,
@@ -66,11 +66,11 @@ function w(e) {
                 customSize: 14
             }), J]
         }, t.id)
-    }) : Q ? (0, i.jsx)(O, {
+    }) : Q ? (0, i.jsx)(k, {
         questId: t.id,
         children: q
     }) : K ? R.intl.format(R.t.ro1sze, {
-        balanceHook: () => (0, i.jsxs)(O, {
+        balanceHook: () => (0, i.jsxs)(k, {
             questId: t.id,
             children: [(0, i.jsx)(m.A, {
                 shouldUseThemeColor: !0,
@@ -79,7 +79,7 @@ function w(e) {
             }), J]
         }, t.id)
     }) : R.intl.format(R.t["0IUT4Y"], {
-        rewardWithArticleHook: () => (0, i.jsx)(O, {
+        rewardWithArticleHook: () => (0, i.jsx)(k, {
             questId: t.id,
             children: W
         }, t.id)
@@ -101,13 +101,13 @@ function w(e) {
             questContentCTA: f.Cy.LEARN_MORE,
             sourceQuestContent: b
         })
-    }, [t.id, n, I, b]), es = (0, c.bG)([h.A], () => null != h.A.questEnrollmentBlockedUntil, []), ea = p.t.useConfig({
+    }, [t.id, n, I, b]), es = (0, c.bG)([h.A], () => null != h.A.questEnrollmentBlockedUntil, []), er = p.t.useConfig({
         location: L.rE.EMBED_DESKTOP
     });
     return (0, i.jsxs)("div", {
         className: D.kL,
         ref: w,
-        children: [(0, i.jsxs)(r.animated.div, {
+        children: [(0, i.jsxs)(a.animated.div, {
             style: {
                 maxHeight: F.to([0, 1], [104, (B ?? 0) + 12])
             },
@@ -147,7 +147,7 @@ function w(e) {
                 })]
             }), (0, i.jsxs)("div", {
                 ref: U,
-                className: a()(D.FS, {
+                className: r()(D.FS, {
                     [D.wq]: !G
                 }),
                 children: [(0, i.jsx)(d.DZT, {
@@ -163,7 +163,7 @@ function w(e) {
                     className: D.wx,
                     children: et
                 }), en]
-            }), G && (0, i.jsx)(r.animated.div, {
+            }), G && (0, i.jsx)(a.animated.div, {
                 style: {
                     opacity: (0, S.a)(F.to([0, 1], [1, 0]))
                 },
@@ -193,13 +193,13 @@ function w(e) {
                     text: R.intl.string(R.t.LLLLPD),
                     fullWidth: !0,
                     onClick: el
-                }), ea.enabled && (ee === y.UA.UNENROLLED || ee === y.UA.ENROLLED || ee === y.UA.INCOMPLETE) && ea.enabledQuestStates.has(ee) ? (0, i.jsx)(T.A, {
+                }), er.enabled && (ee === y.UA.UNENROLLED || ee === y.UA.ENROLLED || ee === y.UA.INCOMPLETE) && er.enabledQuestStates.has(ee) ? (0, i.jsx)(T.A, {
                     quest: t,
                     surface: y.V3.QUEST_EMBED,
                     analyticsCtxQuestContent: n,
                     analyticsCtxSourceQuestContent: b,
                     analyticsCtxQuestContentPosition: I
-                }) : (0, i.jsx)(k, {
+                }) : (0, i.jsx)(O, {
                     quest: t,
                     progressState: V,
                     questContent: n,
@@ -210,7 +210,7 @@ function w(e) {
         })]
     })
 }
-let O = l.memo(function(e) {
+let k = l.memo(function(e) {
     let {
         questId: t,
         children: n
@@ -224,14 +224,14 @@ let O = l.memo(function(e) {
     }, `${t}_reward`)
 });
 
-function k(e) {
+function O(e) {
     let {
         quest: t,
         progressState: n,
         questContent: l,
         questContentPosition: s,
-        sourceQuestContent: a
-    } = e, r = (0, c.bG)([h.A], () => h.A.isEnrolling(t.id)), o = (0, I.vv)(t), u = (0, I.Cr)(t), _ = (0, C.Ic)(t), m = (0, b._c)({
+        sourceQuestContent: r
+    } = e, a = (0, c.bG)([h.A], () => h.A.isEnrolling(t.id)), o = (0, I.vv)(t), u = (0, I.Cr)(t), _ = (0, C.Ic)(t), m = (0, b._c)({
         progressState: n,
         quest: t,
         questContent: l,
@@ -239,7 +239,7 @@ function k(e) {
         inGiftInventory: !1,
         isVideoQuest: o,
         inGameQuest: u,
-        sourceQuestContent: a
+        sourceQuestContent: r
     }), p = (0, A.S5)(t.config.expiresAt, {
         month: "numeric",
         day: "numeric"
@@ -255,7 +255,7 @@ function k(e) {
         fullWidth: !0,
         variant: "primary",
         disabled: null == m.onClick,
-        loading: r,
+        loading: a,
         onClick: m.onClick ?? void 0,
         text: m.text
     })

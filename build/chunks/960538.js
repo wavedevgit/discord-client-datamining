@@ -5,9 +5,9 @@ n.d(t, {
 var i = n(627968),
     l = n(64700),
     s = n(503698),
-    a = n.n(s),
-    r = n(111956),
-    o = n.n(r),
+    r = n.n(s),
+    a = n(111956),
+    o = n.n(a),
     d = n(665260),
     c = n(305866),
     u = n(435371),
@@ -20,8 +20,8 @@ var i = n(627968),
     x = n(652215),
     f = n(307731),
     C = n(985018),
-    E = n(486025),
-    I = n(108277);
+    E = n(767474),
+    I = n(449014);
 class v extends l.Component {
     state = {
         isReactionPickerActive: !1
@@ -88,7 +88,7 @@ class v extends l.Component {
             useChatFontScaling: l,
             tabIndex: s = 0
         } = this.props, {
-            isReactionPickerActive: r
+            isReactionPickerActive: a
         } = this.state;
         if (e.state === x.cmJ.SENDING || (0, d.Lt)(e.flags, x.pr7.EPHEMERAL)) return null;
         let o = l ? I : E,
@@ -99,16 +99,16 @@ class v extends l.Component {
             };
         return e.type === x.lAJ.EMOJI_ADDED && 0 === e.reactions.length ? (0, i.jsx)(h._x, {
             message: e,
-            className: a()(o.reactionBtn, t)
+            className: r()(o.reactionBtn, t)
         }) : (0, i.jsx)(_.YNO, {
             targetElementRef: this.ref,
-            shouldShow: r,
+            shouldShow: a,
             onRequestClose: this.handleReactionPickerToggle,
             renderPopout: this.renderReactionPopout,
             position: "right",
             children: (e, l) => {
                 let {
-                    isShown: r
+                    isShown: a
                 } = l;
                 return (0, i.jsx)(u.m_, {
                     asContainer: !0,
@@ -122,8 +122,8 @@ class v extends l.Component {
                         },
                         onMouseEnter: () => (0, m.K)(f.Vl.AddReactionPopoutMouseEntered),
                         onFocus: () => (0, m.K)(f.Vl.AddReactionPopoutFocused),
-                        className: a()(o.reactionBtn, {
-                            [o.active]: r
+                        className: r()(o.reactionBtn, {
+                            [o.active]: a
                         }, t),
                         children: [(0, i.jsx)(_.nm2, {
                             ...c

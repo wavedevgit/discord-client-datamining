@@ -1,7 +1,7 @@
 /** chunk id: 291731 params = (module,exports,require) **/
 let i, r, a;
 n.d(t, {
-    A: () => y
+    A: () => b
 }), n(321073);
 var l = n(735438),
     s = n.n(l),
@@ -23,16 +23,16 @@ let p = [],
 
 function N() {
     if (i = null != (r = u.A.getChannel()) ? A.A.getGuild(r.guild_id) : null, p = null != r && null != i && h.A.can(m.xBc.MANAGE_WEBHOOKS, r) ? _.A.getWebhooksForChannel(i.id, r.id) : [], null != g) {
-        let e = x(g.id);
+        let e = v(g.id);
         null != e && (g = e)
     }
     I = m.XlH.OPEN, f = {}, C = !1
 }
 let S = s().debounce(() => {
-    C && ((null == g || s().isEqual(g, x(g.id))) && (C = !1), C || b.emitChange())
+    C && ((null == g || s().isEqual(g, v(g.id))) && (C = !1), C || y.emitChange())
 }, 500);
 
-function x(e) {
+function v(e) {
     return p.find(t => {
         let {
             id: n
@@ -40,7 +40,7 @@ function x(e) {
         return n === e
     })
 }
-class v extends o.Ay.Store {
+class x extends o.Ay.Store {
     static displayName = "ChannelSettingsIntegrationsStore";
     initialize() {
         this.waitFor(u.A, A.A, _.A, h.A)
@@ -58,7 +58,7 @@ class v extends o.Ay.Store {
         return I
     }
     getWebhook(e) {
-        return x(e)
+        return v(e)
     }
     showNotice() {
         return this.hasChanges()
@@ -76,7 +76,7 @@ class v extends o.Ay.Store {
         }
     }
 }
-let b = new v(d.h, __OVERLAY__ ? {} : {
+let y = new x(d.h, __OVERLAY__ ? {} : {
         INTEGRATION_SETTINGS_INIT: N,
         INTEGRATION_SETTINGS_SAVE_SUCCESS: N,
         CHANNEL_SETTINGS_SET_SECTION: function(e) {
@@ -100,7 +100,7 @@ let b = new v(d.h, __OVERLAY__ ? {} : {
         INTEGRATION_SETTINGS_START_EDITING_WEBHOOK: function(e) {
             let {
                 webhookId: t
-            } = e, n = x(t);
+            } = e, n = v(t);
             if (null == n) return !1;
             g = n, f = {}, C = !1
         },
@@ -160,4 +160,4 @@ let b = new v(d.h, __OVERLAY__ ? {} : {
             I = m.XlH.OPEN, f = e.errors ?? {}
         }
     }),
-    y = b
+    b = y

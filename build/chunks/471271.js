@@ -14,8 +14,8 @@ var i = n(64700),
     h = n(966107),
     m = n(570658),
     A = n(209079),
-    g = n(687599),
-    p = n(652215);
+    p = n(687599),
+    g = n(652215);
 
 function f(e) {
     let {
@@ -23,7 +23,7 @@ function f(e) {
         onAcceptSuccess: n,
         onRejectSuccess: l,
         onError: f
-    } = e, _ = (0, A.A)(), [E, x] = i.useState(!1), [C, S] = i.useState(!1), [T, I] = i.useState(!1), [N, v] = i.useState(!1), [y, b] = i.useState(!1), j = E || C || T, R = i.useCallback(async e => {
+    } = e, _ = (0, A.A)(), [E, x] = i.useState(!1), [C, S] = i.useState(!1), [T, N] = i.useState(!1), [I, v] = i.useState(!1), [y, b] = i.useState(!1), j = E || C || T, R = i.useCallback(async e => {
         if (!j) {
             x(!0);
             try {
@@ -63,20 +63,20 @@ function f(e) {
     }, [j, l, f]), O = i.useCallback(async e => {
         if (j) return;
         if (null != t && null == o.A.getMutualGuilds(t.id)) {
-            I(!0);
+            N(!0);
             try {
                 await (0, c.A)(t.id, t.getAvatarURL(void 0, 80), {
                     withMutualGuilds: !0,
                     withMutualFriendsCount: !0
                 })
             } catch (e) {} finally {
-                I(!1)
+                N(!1)
             }
         }
         let n = async () => {
             let n = null != t ? o.A.getMutualGuilds(t.id)?.map(e => e.guild.id) : [];
-            u.default.track(p.HAw.MESSAGE_REQUEST_ACTION, {
-                action: g.LD.ACCEPT_CONFIRMATION_PROMPT,
+            u.default.track(g.HAw.MESSAGE_REQUEST_ACTION, {
+                action: p.LD.ACCEPT_CONFIRMATION_PROMPT,
                 channel_id: e,
                 mutual_guild_ids: n ?? [],
                 other_user_id: t?.id
@@ -87,8 +87,8 @@ function f(e) {
             onConfirm: n,
             onCancel: () => {
                 let n = null != t ? o.A.getMutualGuilds(t.id)?.map(e => e.guild.id) : [];
-                u.default.track(p.HAw.MESSAGE_REQUEST_ACTION, {
-                    action: g.LD.DISMISS_CONFIRMATION_PROMPT,
+                u.default.track(g.HAw.MESSAGE_REQUEST_ACTION, {
+                    action: p.LD.DISMISS_CONFIRMATION_PROMPT,
                     channel_id: e,
                     mutual_guild_ids: n ?? [],
                     other_user_id: t?.id
@@ -97,8 +97,8 @@ function f(e) {
         })
     }, [R, j, t]), L = i.useCallback((e, t, n) => {
         let i = (i, l) => {
-                l && d.WY.updateSetting(i), i && null != t && (0, r.tJ)(t), R(e.id), u.default.track(p.HAw.MESSAGE_REQUEST_ACTION, {
-                    action: g.LD.ACCEPT_HAM_CONFIRMATION_PROMPT,
+                l && d.WY.updateSetting(i), i && null != t && (0, r.tJ)(t), R(e.id), u.default.track(g.HAw.MESSAGE_REQUEST_ACTION, {
+                    action: p.LD.ACCEPT_HAM_CONFIRMATION_PROMPT,
                     channel_id: e.id,
                     is_dont_show_again_checked: l,
                     non_spam_retraining_opt_in: i
@@ -109,8 +109,8 @@ function f(e) {
             channel: e,
             onConfirm: i,
             onCancel: () => {
-                u.default.track(p.HAw.MESSAGE_REQUEST_ACTION, {
-                    action: g.LD.DISMISS_HAM_CONFIRMATION_PROMPT,
+                u.default.track(g.HAw.MESSAGE_REQUEST_ACTION, {
+                    action: p.LD.DISMISS_HAM_CONFIRMATION_PROMPT,
                     channel_id: e.id
                 })
             }
@@ -124,7 +124,7 @@ function f(e) {
         isAcceptLoading: E,
         isRejectLoading: C,
         isUserProfileLoading: T,
-        isOptimisticAccepted: N,
+        isOptimisticAccepted: I,
         isOptimisticRejected: y
     }
 }

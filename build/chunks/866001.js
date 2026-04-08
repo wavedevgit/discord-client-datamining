@@ -4,8 +4,8 @@ n.d(t, {
 }), n(172879);
 var a = n(627968),
     i = n(64700),
-    s = n(503698),
-    l = n.n(s),
+    l = n(503698),
+    s = n.n(l),
     r = n(985623),
     o = n.n(r),
     d = n(989349),
@@ -16,8 +16,8 @@ var a = n(627968),
     x = n(73153),
     p = n(58736),
     g = n(379078),
-    f = n(704554),
-    _ = n(603349),
+    _ = n(704554),
+    f = n(603349),
     v = n(957565),
     b = n(405269),
     j = n(231545),
@@ -25,16 +25,16 @@ var a = n(627968),
     C = n(260880),
     y = n(303054),
     S = n(231643),
-    E = n(652215),
-    T = n(35226),
-    N = n(310086);
+    T = n(652215),
+    E = n(689599),
+    N = n(793877);
 
 function I(e) {
     return parseFloat(e.toFixed(3))
 }
 let k = [{
     key: "store",
-    cellClassName: T.lA,
+    cellClassName: E.lA,
     render(e) {
         let {
             trace: t
@@ -43,7 +43,7 @@ let k = [{
     }
 }, {
     key: "time",
-    cellClassName: T.i7,
+    cellClassName: E.i7,
     render(e) {
         let {
             trace: t
@@ -76,7 +76,7 @@ let R = [{
         } = e, n = c()(t.createdAt);
         return (0, a.jsxs)(a.Fragment, {
             children: [(0, a.jsxs)(A.OA, {
-                className: T.mP,
+                className: E.mP,
                 children: [(0, a.jsx)(A.mA, {
                     name: "Created at",
                     children: (0, a.jsx)("time", {
@@ -89,7 +89,7 @@ let R = [{
                     children: [I(t.totalTime), " ms"]
                 })]
             }), (0, a.jsx)(h.IpV, {
-                className: T.Dx,
+                className: E.Dx,
                 children: (0, a.jsx)(j.A, {
                     data: t.action
                 })
@@ -114,11 +114,11 @@ function w(e) {
     let {
         actionLog: t,
         initialHeight: n
-    } = e, s = i.useMemo(() => t.error ? [...R, {
+    } = e, l = i.useMemo(() => t.error ? [...R, {
         id: "error",
         name: (0, a.jsxs)(a.Fragment, {
-            children: [(0, a.jsx)(_.A, {
-                className: T.ik
+            children: [(0, a.jsx)(f.A, {
+                className: E.ik
             }), "Error"]
         }),
         group: S.fu.NONE,
@@ -128,7 +128,7 @@ function w(e) {
             } = e;
             return (0, a.jsxs)(a.Fragment, {
                 children: [(0, a.jsx)("div", {
-                    className: l()(T.u4, N.KE),
+                    className: s()(E.u4, N.KE),
                     children: (0, a.jsx)("div", {
                         className: N.R5,
                         children: (0, a.jsx)(m.$n, {
@@ -139,7 +139,7 @@ function w(e) {
                         })
                     })
                 }), (0, a.jsx)(h.IpV, {
-                    className: T.Dx,
+                    className: E.Dx,
                     children: (0, a.jsx)(j.A, {
                         data: t.error
                     })
@@ -150,19 +150,19 @@ function w(e) {
         TabBar: r,
         renderSelectedTab: o
     } = (0, S.Ay)({
-        tabs: s
-    }, [s]);
+        tabs: l
+    }, [l]);
     return (0, a.jsxs)(C.A, {
-        className: T.rf,
+        className: E.rf,
         minHeight: 100,
         initialHeight: n,
         children: [(0, a.jsx)(r, {}), (0, a.jsxs)(p.Ay, {
-            className: l()(N.jr, T.nZ),
+            className: s()(N.jr, E.nZ),
             children: [(0, a.jsx)(p.Ay.Icon, {
                 icon: h.KBH,
                 tooltip: t.name
             }), (0, a.jsx)(p.Ay.Title, {
-                wrapperClassName: l()(N.qd, N.ZE),
+                wrapperClassName: s()(N.qd, N.ZE),
                 className: N.Pz,
                 children: t.name
             }), (0, a.jsx)(p.Ay.Icon, {
@@ -172,7 +172,7 @@ function w(e) {
                     var e;
                     let n = JSON.stringify(Object.keys(e = t.action).reduce((t, n) => {
                         var a;
-                        return t[n] = (a = e[n], E.AKn.test(a) ? "REDACTED" : a), t
+                        return t[n] = (a = e[n], T.AKn.test(a) ? "REDACTED" : a), t
                     }, {}), null, 2);
                     (0, v.C)(n, () => (0, h.showToast)({
                         id: "copy-action-log-name",
@@ -188,20 +188,20 @@ function w(e) {
 }
 let D = [{
         key: "action",
-        cellClassName: T.lA,
+        cellClassName: E.lA,
         render(e) {
             let {
                 actionLog: t
             } = e;
             return (0, a.jsxs)(a.Fragment, {
-                children: [t.error && (0, a.jsx)(_.A, {
-                    className: T.ik
+                children: [t.error && (0, a.jsx)(f.A, {
+                    className: E.ik
                 }), t.name]
             })
         }
     }, {
         key: "total time",
-        cellClassName: T.i7,
+        cellClassName: E.i7,
         render(e) {
             let {
                 actionLog: t
@@ -210,7 +210,7 @@ let D = [{
         }
     }, {
         key: "timestamp",
-        cellClassName: T.i7,
+        cellClassName: E.i7,
         render(e) {
             let {
                 actionLog: t
@@ -232,7 +232,7 @@ let D = [{
 function P() {
     let e = i.useRef(null),
         [t, n] = i.useState(""),
-        s = function(e) {
+        l = function(e) {
             let [t, n] = i.useState(e.logs);
             return i.useEffect(() => {
                 let t = o()(() => {
@@ -243,36 +243,36 @@ function P() {
                 }
             }, [e]), t
         }(x.h.actionLogger),
-        r = i.useMemo(() => s.map(e => ({
+        r = i.useMemo(() => l.map(e => ({
             key: e.id.toString(),
             actionLog: e
-        })).toReversed(), [s]),
+        })).toReversed(), [l]),
         [d, c] = i.useState(r),
         [m, p] = i.useState(r),
-        [g, _] = i.useState(!1),
+        [g, f] = i.useState(!1),
         [v, b] = i.useState(),
         j = i.useCallback(e => {
             p(e)
         }, []);
-    (0, f.RT)(t, g ? d : r, j, M);
+    (0, _.RT)(t, g ? d : r, j, M);
     let A = i.useCallback(e => {
-            c(r), _(e)
+            c(r), f(e)
         }, [r]),
         C = t.trim().length > 0,
         S = i.useMemo(() => C ? m : g ? d : r, [r, m, C, g, d]),
-        E = g ? "Enable Event Tracking" : "Pause Event Tracking";
+        T = g ? "Enable Event Tracking" : "Pause Event Tracking";
     return (0, a.jsxs)("div", {
         ref: e,
-        className: l()(N.nd, T.nd),
+        className: s()(N.nd, E.nd),
         children: [(0, a.jsxs)("div", {
-            className: T.KE,
+            className: E.KE,
             children: [(0, a.jsx)(u.m, {
-                text: E,
+                text: T,
                 children: (0, a.jsx)(h.K0, {
                     size: "sm",
                     variant: g ? "primary" : "active",
                     icon: g ? h.udU : h.E$n,
-                    "aria-label": E,
+                    "aria-label": T,
                     onClick: () => A(!g)
                 })
             }), (0, a.jsx)(h.IWV, {

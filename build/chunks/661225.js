@@ -6,13 +6,13 @@ n.d(t, {
 });
 var a = n(306327),
     i = n(827734),
-    s = n(151196),
-    l = n(473336);
+    l = n(151196),
+    s = n(473336);
 
 function r(e, t, n) {
     let {
         r: i,
-        g: l,
+        g: s,
         b: r,
         a: o
     } = function(e, t) {
@@ -51,8 +51,8 @@ function r(e, t, n) {
             b: n.b,
             a: n.opacity
         }
-    }(t, n), d = o * s.VU;
-    return new a.A("srgb", [(e.r * (1 - d) + i * d) / 255, (e.g * (1 - d) + l * d) / 255, (e.b * (1 - d) + r * d) / 255])
+    }(t, n), d = o * l.VU;
+    return new a.A("srgb", [(e.r * (1 - d) + i * d) / 255, (e.g * (1 - d) + s * d) / 255, (e.b * (1 - d) + r * d) / 255])
 }
 
 function o(e, t, n) {
@@ -66,36 +66,36 @@ function o(e, t, n) {
                 position: e.position
             }
         }),
-        s = 1 / 0,
-        l = e => {
-            e < s && (s = e)
+        l = 1 / 0,
+        s = e => {
+            e < l && (l = e)
         };
-    for (let n of a) l(e.contrast(r(t, a, n.position), "WCAG21"));
+    for (let n of a) s(e.contrast(r(t, a, n.position), "WCAG21"));
     for (let n = 0; n < a.length - 1; n++) {
         let {
             contrast: i
         } = function(e, t, n, a, i) {
-            let s = 1 / 0,
-                l = a;
+            let l = 1 / 0,
+                s = a;
             for (let o = 0; o <= 100; o++) {
                 let d = a + o / 100 * (i - a),
                     c = n.contrast(r(e, t, d), "WCAG21");
-                c < s && (s = c, l = d)
+                c < l && (l = c, s = d)
             }
             return {
-                contrast: s,
-                position: l
+                contrast: l,
+                position: s
             }
         }(t, a, e, a[n].position, a[n + 1].position);
-        l(i)
+        s(i)
     }
-    return Math.round(100 * s) / 100
+    return Math.round(100 * l) / 100
 }
 
 function d(e) {
-    let [t, n, l] = i.A.colors[s.w2].resolve(e).rgba(), [r, o, d] = i.A.colors[s.wn].resolve(e).rgba(), [c, u, m, h] = i.A.colors[s.ID].resolve(e).rgba();
+    let [t, n, s] = i.A.colors[l.w2].resolve(e).rgba(), [r, o, d] = i.A.colors[l.wn].resolve(e).rgba(), [c, u, m, h] = i.A.colors[l.ID].resolve(e).rgba();
     return {
-        text: new a.A("srgb", [t / 255, n / 255, l / 255]),
+        text: new a.A("srgb", [t / 255, n / 255, s / 255]),
         background: {
             r: r * (1 - h) + c * h,
             g: o * (1 - h) + u * h,
@@ -110,23 +110,23 @@ function c(e, t) {
             background: i
         } = d(t),
         r = o(a, i, e),
-        c = r >= s.Sf;
+        c = r >= l.Sf;
     if (!c)
         for (let t = 0; t < e.length; t++) {
-            let r = (0, l.l1)(e[t].color);
+            let r = (0, s.l1)(e[t].color);
             if (null == r) continue;
             let d = parseInt(String(e[t].color).split("_").pop() ?? "0", 10),
                 c = 1 / 0;
             for (let {
                     value: u
                 }
-                of s.iW[r]) {
+                of l.iW[r]) {
                 if (u === e[t].color) continue;
-                let r = o(a, i, (0, l._D)(e, t, {
+                let r = o(a, i, (0, s._D)(e, t, {
                     ...e[t],
                     color: u
                 }));
-                if (r >= s.Sf) {
+                if (r >= l.Sf) {
                     let e = Math.abs(parseInt(String(u).split("_").pop() ?? "0", 10) - d);
                     e < c && (c = e, n = {
                         stopIndex: t,

@@ -24,10 +24,10 @@ var i = n(627968),
     T = n(5180),
     N = n(250719),
     S = n(780645),
-    x = n(72152),
-    v = n(502103),
-    b = n(929163),
-    y = n(423183),
+    v = n(72152),
+    x = n(502103),
+    y = n(929163),
+    b = n(423183),
     O = n(568185),
     L = n(225437),
     R = n(221094),
@@ -66,7 +66,7 @@ var i = n(627968),
     ec = n(946960),
     eu = n(49999),
     eA = n(985018),
-    eh = n(600001);
+    eh = n(715851);
 let e_ = "server-settings",
     em = {
         origin: {
@@ -135,7 +135,7 @@ class ep extends r.PureComponent {
         let {
             isHeaderPopoutOpen: t
         } = this.props;
-        e.stopPropagation(), (0, x.Z)(!t), this.closeAllHeaderNotices()
+        e.stopPropagation(), (0, v.Z)(!t), this.closeAllHeaderNotices()
     };
     handleContextMenu = e => {
         let {
@@ -175,7 +175,7 @@ class ep extends r.PureComponent {
             (0, h.L3)(e, async () => {
                 let {
                     default: e
-                } = await Promise.all([n.e("43600"), n.e("68587"), n.e("63379"), n.e("56026"), n.e("16301"), n.e("22191"), n.e("25961"), n.e("91872"), n.e("35894"), n.e("50796"), n.e("94253"), n.e("8458"), n.e("11810"), n.e("85200"), n.e("54469"), n.e("52191")]).then(n.bind(n, 544676));
+                } = await Promise.all([n.e("43600"), n.e("68587"), n.e("63379"), n.e("56026"), n.e("16301"), n.e("22191"), n.e("25961"), n.e("33144"), n.e("35894"), n.e("50796"), n.e("94253"), n.e("8458"), n.e("11810"), n.e("90226"), n.e("54469"), n.e("52191")]).then(n.bind(n, 544676));
                 return n => (0, i.jsx)(e, {
                     ...n,
                     guild: t
@@ -305,7 +305,7 @@ class ep extends r.PureComponent {
                 animation: u.YNO.Animation.SCALE,
                 shouldShow: n,
                 onRequestClose: () => {
-                    (0, x.Z)(!1)
+                    (0, v.Z)(!1)
                 },
                 spacing: 4,
                 children: r => {
@@ -439,12 +439,12 @@ function eg(e) {
     r.useEffect(() => {
         t !== ea && er(!en)
     }, [t, ea, en]);
-    let [eo, eA] = (0, E.Ay)(e => [ec.cA.some(t => e.currentlyShown.has(t.dismissibleContentType)), e.currentlyShownGroup.has(eu.m.GUILD_HEADER_TOOLTIPS)], l.x), eh = (0, g.A)(A), em = (0, u.red)(u.DXt), eg = (0, s.bG)([Q.A], () => Q.A.hasLayers()), eE = (0, D.xr)(e => e.fullScreenLayers.length > 0), eI = (0, s.bG)([Y.A], () => Y.A.shouldShow(e_)), ef = (0, y.A)(t), eC = A?.features.has(ed.GuildFeatures.HUB) === !0, eT = P && A?.features.has(ed.GuildFeatures.DISCOVERABLE) === !0, eN = (0, s.bG)([L.A, Q.A], () => null != A && null != F && P && !Q.A.hasLayers() && L.A.shouldShowGuildTemplateDirtyTooltip(t)), eS = (0, s.bG)([W.A], () => W.A.getChannel(a)), {
-        isPopoutOpen: ex
-    } = (0, x.S)(), ev = A?.features.has(ed.GuildFeatures.COMMUNITY) ?? !1, eb = et.Ay.isNewUser(F), ey = ei && !eb;
-    (0, v.A)(A);
+    let [eo, eA] = (0, E.Ay)(e => [ec.cA.some(t => e.currentlyShown.has(t.dismissibleContentType)), e.currentlyShownGroup.has(eu.m.GUILD_HEADER_TOOLTIPS)], l.x), eh = (0, g.A)(A), em = (0, u.red)(u.DXt), eg = (0, s.bG)([Q.A], () => Q.A.hasLayers()), eE = (0, D.xr)(e => e.fullScreenLayers.length > 0), eI = (0, s.bG)([Y.A], () => Y.A.shouldShow(e_)), ef = (0, b.A)(t), eC = A?.features.has(ed.GuildFeatures.HUB) === !0, eT = P && A?.features.has(ed.GuildFeatures.DISCOVERABLE) === !0, eN = (0, s.bG)([L.A, Q.A], () => null != A && null != F && P && !Q.A.hasLayers() && L.A.shouldShowGuildTemplateDirtyTooltip(t)), eS = (0, s.bG)([W.A], () => W.A.getChannel(a)), {
+        isPopoutOpen: ev
+    } = (0, v.S)(), ex = A?.features.has(ed.GuildFeatures.COMMUNITY) ?? !1, ey = et.Ay.isNewUser(F), eb = ei && !ey;
+    (0, x.A)(A);
     let eO = (0, I.JZ)(o.M.PREMIUM_TUTORIAL_SERVER_MENU_TOOLTIP),
-        eL = (0, b.A)(t),
+        eL = (0, y.A)(t),
         eR = (0, s.bG)([J.A], () => J.A.getChannelId()),
         eP = (0, s.bG)([Z.A], () => Z.A.desyncedVoiceStatesCount),
         eD = (0, V.A)(t);
@@ -502,14 +502,14 @@ function eg(e) {
         anyLayerOpen: em || eg || eE,
         showGuildHeaderTutorial: eI,
         showGuildTemplateDirtyTooltip: eN,
-        showNewUnreadsBar: ev,
-        isHeaderPopoutOpen: ex,
+        showNewUnreadsBar: ex,
+        isHeaderPopoutOpen: ev,
         enableStudyGroup: z,
         isGuildHeaderDismissibleTooltipShown: eA,
         canShowCoachMarkAtBottom: ei,
         headerAnalyticsLocations: el,
         isTutorialHighlightDismissed: eO,
-        shouldRenderBurstCoachmark: ey,
+        shouldRenderBurstCoachmark: eb,
         guildHeaderContentDescriptor: eX,
         onFavoriteGuildContextMenu: d,
         hasFavoritesAccess: c

@@ -14,7 +14,7 @@ var i = n(503698),
     d = n(473219),
     c = n(642737),
     u = n(985018),
-    m = n(266603);
+    m = n(475276);
 let p = "profile-modal-editing-panel",
     x = "profile-modal-editing-panel-heading";
 

@@ -1,6 +1,5 @@
 /** chunk id: 553202 params = (module,exports,require) **/
-"use strict";
-e.exports = {
+t.exports = {
     lm: "notice__29487",
     qZ: "noticeContent__29487",
     ut: "noticeText__29487",

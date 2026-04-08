@@ -1,17 +1,17 @@
 /** chunk id: 354583 params = (module,exports,require) **/
-n.d(e, {
+n.d(t, {
     A: () => a
 });
-var i = n(311907),
-    l = n(734057),
+var l = n(311907),
+    i = n(734057),
     r = n(309010);
 
 function a() {
-    return (0, i.bG)([r.A, l.A], () => {
-        let t = r.A.getVoiceChannelId();
-        if (null != t) {
-            let e = l.A.getChannel(t);
-            if (e?.isGuildStageVoice()) return e
+    return (0, l.bG)([r.A, i.A], () => {
+        let e = r.A.getVoiceChannelId();
+        if (null != e) {
+            let t = i.A.getChannel(e);
+            if (t?.isGuildStageVoice()) return t
         }
         return null
     })

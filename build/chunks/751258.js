@@ -14,7 +14,7 @@ var i = n(791332),
     h = n(320501),
     m = n(652215);
 let A = /\\([*?+/])/g,
-    g = {
+    p = {
         tts: {
             action: () => ({
                 tts: u.on.getSetting()
@@ -95,23 +95,23 @@ let A = /\\([*?+/])/g,
         }
     };
 
-function p(e, t, n, i) {
+function g(e, t, n, i) {
     return r.Ay.trackWithMetadata(m.HAw.SLASH_COMMAND_USED, {
         command: e
     }), t.action(n, i)
 }
 
 function f(e, t) {
-    for (let n in g) {
-        let i = g[n];
+    for (let n in p) {
+        let i = p[n];
         if (null != i.match) {
-            if (i.match.regex?.test(e)) return p(n, i, e, t);
+            if (i.match.regex?.test(e)) return g(n, i, e, t);
             continue
         }
         if (u.D_.getSetting() && "/" === e[0]) {
             let l = e.split(" ");
-            if (n === l[0].slice(1) && null != i.action) return p(n, i, l.slice(1).join(" "), t)
+            if (n === l[0].slice(1) && null != i.action) return g(n, i, l.slice(1).join(" "), t)
         }
     }
 }
-Object.setPrototypeOf(g, null)
+Object.setPrototypeOf(p, null)

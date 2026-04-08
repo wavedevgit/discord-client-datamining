@@ -12,7 +12,7 @@ var i = n(627968),
     c = n(319060),
     d = n(397927),
     u = n(240248),
-    h = n(540433);
+    h = n(174012);
 let _ = (0, u.xI)(c.A.WAVE_SPLASH_RESPONSIVE_WIDTH_MOBILE),
     p = {
         friction: 10,

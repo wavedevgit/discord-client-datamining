@@ -11,7 +11,7 @@ var t = n(627968),
     d = n(711014),
     c = n(403362),
     u = n(985018),
-    m = n(401736);
+    m = n(18911);
 let p = "MAIN_PROFILE";
 
 function x(e) {

@@ -14,8 +14,8 @@ var i = n(627968),
     h = n(9842),
     m = n(994500),
     A = n(638075),
-    g = n(465364),
-    p = n(763754),
+    p = n(465364),
+    g = n(763754),
     f = n(448368),
     _ = n(535421),
     E = n(112758),
@@ -27,12 +27,12 @@ let S = l.memo(function(e) {
         referencedMessage: n,
         channel: S,
         compact: T = !1,
-        referencedUsernameProfile: I,
-        referencedAvatarProfile: N,
+        referencedUsernameProfile: N,
+        referencedAvatarProfile: I,
         setPopout: v,
         isReplySpineClickable: y,
         showReplySpine: b
-    } = e, j = n.state === h.a.LOADED ? n.message : void 0, R = (0, p.X4)(j), M = (0, c.S)((t.editedTimestamp ?? t.timestamp).valueOf()), D = l.useMemo(() => {
+    } = e, j = n.state === h.a.LOADED ? n.message : void 0, R = (0, g.X4)(j), M = (0, c.S)((t.editedTimestamp ?? t.timestamp).valueOf()), D = l.useMemo(() => {
         if (null == j) return null;
         let e = (0, r.A)(j);
         if (e.type === x.lAJ.USER_JOIN) return (0, a.$)(C.intl.formatToParts(A.A.getSystemMessageUserJoin(e.id), {
@@ -72,7 +72,7 @@ let S = l.memo(function(e) {
                     allowHeading: M,
                     allowList: M
                 };
-            return (0, g.Ay)(e, n).content
+            return (0, p.Ay)(e, n).content
         }
         return null
     }, [j, R, S, M]), {
@@ -81,12 +81,12 @@ let S = l.memo(function(e) {
     } = (0, s.cf)([m.A], () => ({
         isReplyAuthorBlocked: null != j && m.A.isBlockedForMessage(j),
         isReplyAuthorIgnored: null != j && m.A.isIgnoredForMessage(j)
-    }), [j]), P = (0, E.r4)(j?.author.id, S.id), k = (0, E.Ck)(t, j), w = (0, E.H9)(j, S, I, v), U = (0, E.Ge)(N, v), G = l.useCallback(() => {
+    }), [j]), P = (0, E.r4)(j?.author.id, S.id), k = (0, E.Ck)(t, j), w = (0, E.H9)(j, S, N, v), U = (0, E.Ge)(I, v), G = l.useCallback(() => {
         v({
             referencedUsernameProfile: !1,
             referencedAvatarProfile: !1
         })
-    }, [v]), F = (0, p.X4)(t);
+    }, [v]), F = (0, g.X4)(t);
     return (0, i.jsx)(f.A, {
         repliedAuthor: R,
         baseMessage: t,
@@ -97,8 +97,8 @@ let S = l.memo(function(e) {
         compact: T,
         isReplyAuthorBlocked: O,
         isReplyAuthorIgnored: L,
-        showAvatarPopout: N,
-        showUsernamePopout: I,
+        showAvatarPopout: I,
+        showUsernamePopout: N,
         renderPopout: _.A,
         onClickAvatar: U,
         onClickUsername: w,

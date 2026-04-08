@@ -1,40 +1,40 @@
 /** chunk id: 289363 params = (module,exports,require) **/
-a.r(s), a.d(s, {
+n.r(t), n.d(t, {
     default: () => u
 });
-var l = a(627968),
-    r = a(64700),
-    c = a(311907),
-    i = a(397927),
-    t = a(769015),
-    d = a(287809),
-    m = a(486020),
-    p = a(998518);
-let u = r.memo(function(e) {
+var a = n(627968),
+    i = n(64700),
+    l = n(311907),
+    r = n(397927),
+    s = n(769015),
+    o = n(287809),
+    c = n(486020),
+    d = n(52653);
+let u = i.memo(function(e) {
     let {
-        application: s
-    } = e, a = (0, c.bG)([d.default], () => d.default.getCurrentUser()), r = m.Ay.getUserAvatarURL(a);
-    return (0, l.jsxs)("div", {
-        className: p.Y,
-        children: [(0, l.jsx)(t.A, {
-            className: p.my,
-            game: s,
-            size: t.M.MEDIUM,
-            "aria-label": s.name
-        }), (0, l.jsxs)("div", {
-            className: p.I5,
-            children: [(0, l.jsx)("div", {
-                className: p.pw
-            }), (0, l.jsx)("div", {
-                className: p.pw
-            }), (0, l.jsx)("div", {
-                className: p.pw
+        application: t
+    } = e, n = (0, l.bG)([o.default], () => o.default.getCurrentUser()), i = c.Ay.getUserAvatarURL(n);
+    return (0, a.jsxs)("div", {
+        className: d.Y,
+        children: [(0, a.jsx)(s.A, {
+            className: d.my,
+            game: t,
+            size: s.M.MEDIUM,
+            "aria-label": t.name
+        }), (0, a.jsxs)("div", {
+            className: d.I5,
+            children: [(0, a.jsx)("div", {
+                className: d.pw
+            }), (0, a.jsx)("div", {
+                className: d.pw
+            }), (0, a.jsx)("div", {
+                className: d.pw
             })]
-        }), (0, l.jsx)(i.euF, {
-            className: p.my,
-            src: r,
-            size: i._3J.SIZE_48,
-            "aria-label": a.username
+        }), (0, a.jsx)(r.euF, {
+            className: d.my,
+            src: i,
+            size: r._3J.SIZE_48,
+            "aria-label": n.username
         })]
     })
 })

@@ -4,7 +4,7 @@ a.d(l, {
 });
 var t = a(627968),
     o = a(237528),
-    n = a(751610);
+    n = a(14581);
 let i = {
         name: "Chip",
         id: "chip",

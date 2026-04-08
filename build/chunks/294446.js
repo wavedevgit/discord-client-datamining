@@ -32,13 +32,13 @@ let g = (0, h.A)(e => {
         channelId: T,
         prompt: N,
         disableGuildSelect: S,
-        disclosures: x,
-        integrationType: v,
-        pid: b,
-        signal: y
-    } = e, O = `OAuth2Authorize_${t}_${C}_${T}`, L = null != v ? n?.get(v) : void 0, R = L?.application ?? l.A.getApplication(t);
+        disclosures: v,
+        integrationType: x,
+        pid: y,
+        signal: b
+    } = e, O = `OAuth2Authorize_${t}_${C}_${T}`, L = null != x ? n?.get(x) : void 0, R = L?.application ?? l.A.getApplication(t);
     return new Promise((e, l) => {
-        let L = (0, _.d5)(b),
+        let L = (0, _.d5)(y),
             P = r.SYi;
         null != R && null != (0, a.Ay)({
             application: R,
@@ -91,13 +91,13 @@ let g = (0, h.A)(e => {
                         t?.removeEventListener("abort", n)
                     }
                 }
-            }(O, y);
+            }(O, b);
         (0, r.qfG)(e => (0, i.jsx)(s.OAuth2AuthorizeModal, {
             ...e,
             authorizations: n,
             clientId: t,
             scopes: c ?? [],
-            disclosures: x ?? [],
+            disclosures: v ?? [],
             callback: M,
             responseType: h,
             redirectUri: g,
@@ -109,7 +109,7 @@ let g = (0, h.A)(e => {
             channelId: T,
             prompt: N,
             disableGuildSelect: "boolean" == typeof S ? S : "true" === S,
-            integrationType: v,
+            integrationType: x,
             cancelCompletesFlow: !0
         }), {
             modalKey: O,

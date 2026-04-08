@@ -34,7 +34,7 @@ function S(e) {
     return "function" == typeof e ? e() : e
 }
 
-function x() {
+function v() {
     let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : 0,
         t = e > 0 ? void 0 : () => {
             if (!S(r.listening)) return;
@@ -47,7 +47,7 @@ function x() {
     r.listen(E.xEi + e % E.sJq, "127.0.0.1", t)
 }
 
-function v(e, t, n) {
+function x(e, t, n) {
     let i = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : 200,
         r = arguments.length > 4 && void 0 !== arguments[4] ? arguments[4] : {},
         a = null != S(e.headers).origin ? {
@@ -62,14 +62,14 @@ function v(e, t, n) {
     }), t.end(n)
 }
 
-function b(e, t, n, i) {
+function y(e, t, n, i) {
     let r = arguments.length > 4 && void 0 !== arguments[4] ? arguments[4] : 0;
-    v(e, t, {
+    x(e, t, {
         code: r,
         message: i
     }, n)
 }
-class y extends m.A {
+class b extends m.A {
     _socket;
     constructor(e, t, n) {
         if (super("ws", t, n), -1 === ["etf", "json"].indexOf(n)) throw new h.A({
@@ -110,8 +110,8 @@ class L extends a.EventEmitter {
         super();
         let e = 0;
         (r = f.http.createServer()).on("error", t => {
-            T.error(`Error: ${t.message}`), ("EADDRINUSE" === t.code || t.message.includes("EADDRINUSE")) && setTimeout(() => x(++e), 1e3)
-        }), r.on("request", this.handleRequest.bind(this)), x(e);
+            T.error(`Error: ${t.message}`), ("EADDRINUSE" === t.code || t.message.includes("EADDRINUSE")) && setTimeout(() => v(++e), 1e3)
+        }), r.on("request", this.handleRequest.bind(this)), v(e);
         const t = {
             instanceId: r.instanceId ?? 0,
             server: r
@@ -120,7 +120,7 @@ class L extends a.EventEmitter {
     }
     handleRequest(e, t) {
         let [n, i] = S(e.url).split("?"), r = S(e.method);
-        if ("/rpc" === n && "OPTIONS" === r) return void v(e, t, {
+        if ("/rpc" === n && "OPTIONS" === r) return void x(e, t, {
             body: ""
         });
         let a = "POST" === r;
@@ -134,10 +134,10 @@ class L extends a.EventEmitter {
                     } = u.A.toURLSafe(n.get("callback") ?? "") ?? {};
                     e === location.protocol && i === location.host ? t.setHeader("Location", n.get("callback")) : t.setHeader("Location", C), t.writeHead(301), t.end()
                 },
-                s = new O(!a ? l : v.bind(null, e, t), !a ? l : b.bind(null, e, t, 400), Number(n.get("v")), r);
+                s = new O(!a ? l : x.bind(null, e, t), !a ? l : y.bind(null, e, t, 400), Number(n.get("v")), r);
             a ? (0, p.j7)(s, S(e.headers).origin, n.get("client_id")).then(() => {
                 let n = "";
-                e.on("data", e => n += e), e.on("error", () => b(e, t, 500, "Internal Server Error")), e.on("end", () => this.handleMessage(s, n))
+                e.on("data", e => n += e), e.on("error", () => y(e, t, 500, "Internal Server Error")), e.on("end", () => this.handleMessage(s, n))
             }).catch(e => {
                 let {
                     code: t,
@@ -147,13 +147,13 @@ class L extends a.EventEmitter {
             }) : (s.authorization.scopes = [g.kw], this.handleMessage(s, decodeURIComponent(n.get("payload") ?? "")));
             return
         }
-        b(e, t, 404, "Not Found")
+        y(e, t, 404, "Not Found")
     }
     handleConnection(e) {
         let t, n = new URLSearchParams(S(e.upgradeReq).url.split("?")[1]),
             i = S(e.upgradeReq).headers.origin ?? "";
         try {
-            t = new y(e, Number(n.get("v")), n.get("encoding") ?? "json")
+            t = new b(e, Number(n.get("v")), n.get("encoding") ?? "json")
         } catch (t) {
             e.close(t.code, t.message);
             return

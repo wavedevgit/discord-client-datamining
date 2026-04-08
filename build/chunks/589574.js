@@ -1,5 +1,4 @@
 /** chunk id: 589574 params = (module,exports,require) **/
-"use strict";
-e.exports = {
+t.exports = {
     P: "premiumIcon__7b750"
 }

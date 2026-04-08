@@ -1,16 +1,16 @@
 /** chunk id: 492749 params = (module,exports,require) **/
 n.d(t, {
-    R: () => r
+    R: () => a
 });
 var i = n(64700),
     l = n(253932),
     s = n(371794),
-    a = n(545509);
+    r = n(545509);
 
-function r(e, t) {
+function a(e, t) {
     let {
         shouldAnimate: n = !0
-    } = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {}, r = l.kt.useSetting(), o = (0, a.j)(), d = n && o && r;
+    } = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {}, a = l.kt.useSetting(), o = (0, r.j)(), d = n && o && a;
     return i.useMemo(() => {
         if (e?.image_asset != null) return (0, s.YE)(e.application_id, e.image_asset, t, d ? void 0 : "webp")
     }, [t, e, d])

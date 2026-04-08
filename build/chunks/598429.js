@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     l = n(64700),
     s = n(158954),
-    a = n(311907),
-    r = n(990078),
+    r = n(311907),
+    a = n(990078),
     o = n(397927),
     d = n(442433),
     c = n(212245),
@@ -18,7 +18,7 @@ var i = n(627968),
     g = n(715671),
     A = n(652215),
     x = n(985018),
-    f = n(156008);
+    f = n(618963);
 class C extends l.PureComponent {
     static defaultProps = {
         fullWidth: !1,
@@ -44,7 +44,7 @@ class C extends l.PureComponent {
         d.L3(e, async () => {
             let {
                 default: e
-            } = await n.e("33055").then(n.bind(n, 661991));
+            } = await n.e("55436").then(n.bind(n, 661991));
             return n => (0, i.jsx)(e, {
                 ...n,
                 libraryApplication: t,
@@ -79,7 +79,7 @@ class C extends l.PureComponent {
         let {
             fullWidth: n,
             size: l,
-            disabledVariant: a = "secondary",
+            disabledVariant: r = "secondary",
             tooltipPosition: o
         } = this.props;
         return (0, i.jsxs)("div", {
@@ -88,9 +88,9 @@ class C extends l.PureComponent {
                 text: e,
                 fullWidth: n,
                 size: l,
-                variant: a,
+                variant: r,
                 disabled: !0
-            }), (0, i.jsx)(r.m, {
+            }), (0, i.jsx)(a.m, {
                 text: t,
                 position: o,
                 children: (0, i.jsx)("div", {
@@ -105,18 +105,18 @@ class C extends l.PureComponent {
             size: t,
             variant: n,
             isLaunchable: l,
-            isLaunching: a,
-            isRunning: r,
+            isLaunching: r,
+            isRunning: a,
             hideNotLaunchable: d
         } = this.props;
-        return l ? r ? this.renderDisabledButton(x.intl.string(x.t["3elwAB"])) : (0, i.jsxs)(s.e2v, {
+        return l ? a ? this.renderDisabledButton(x.intl.string(x.t["3elwAB"])) : (0, i.jsxs)(s.e2v, {
             size: t,
             wrap: !1,
             fullWidth: e,
             children: [(0, i.jsx)(s.$nd, {
                 text: x.intl.string(x.t["359Pbd"]),
                 variant: n,
-                loading: a,
+                loading: r,
                 onClick: this.handleClick
             }), this.hasMultipleLaunchOptions() ? (0, i.jsx)(s.K0, {
                 icon: o.abt,
@@ -132,12 +132,12 @@ function E(e) {
     let {
         applicationId: t,
         libraryApplication: n
-    } = e, l = (0, c.p)(), [s, r] = (0, a.yK)([m.A, _.A, h.A], () => [m.A.isConnected(t) || _.A.isLaunchable(t) || null != n && h.A.isLaunchable(n.id, n.branchId), _.A.launchingGames.has(t)], [t, n]), o = (0, a.bG)([u.Ay], () => new Set(u.Ay.getRunningVerifiedApplicationIds()).has(t), [t]), d = (0, a.bG)([h.A], () => null != n ? h.A.getState(n.id, n.branchId) : null, [n]);
+    } = e, l = (0, c.p)(), [s, a] = (0, r.yK)([m.A, _.A, h.A], () => [m.A.isConnected(t) || _.A.isLaunchable(t) || null != n && h.A.isLaunchable(n.id, n.branchId), _.A.launchingGames.has(t)], [t, n]), o = (0, r.bG)([u.Ay], () => new Set(u.Ay.getRunningVerifiedApplicationIds()).has(t), [t]), d = (0, r.bG)([h.A], () => null != n ? h.A.getState(n.id, n.branchId) : null, [n]);
     return (0, i.jsx)(C, {
         ...e,
         analyticsContext: l,
         isLaunchable: s,
-        isLaunching: r,
+        isLaunching: a,
         isRunning: o,
         dispatchState: d
     })

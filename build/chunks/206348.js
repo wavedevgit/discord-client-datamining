@@ -5,10 +5,10 @@ n.d(t, {
 var a = n(627968);
 n(64700);
 var i = n(158954),
-    s = n(397927),
-    l = n(675120),
+    l = n(397927),
+    s = n(675120),
     r = n(204821),
-    o = n(148971);
+    o = n(528091);
 let d = e => {
     let {
         children: t,
@@ -16,12 +16,12 @@ let d = e => {
         footerInput: d,
         title: c
     } = e;
-    return (0, a.jsxs)(s.BJc, {
+    return (0, a.jsxs)(l.BJc, {
         direction: "vertical",
         justify: "start",
         padding: r.p,
         className: o.kL,
-        children: [(0, a.jsx)(s.Heading, {
+        children: [(0, a.jsx)(l.Heading, {
             variant: "heading-lg/semibold",
             className: o.R_,
             children: c
@@ -29,7 +29,7 @@ let d = e => {
             children: t
         }), (0, a.jsx)("div", {
             className: o.Ic
-        }), (0, a.jsx)(l.v, {
+        }), (0, a.jsx)(s.v, {
             actions: n,
             footerInput: d
         })]

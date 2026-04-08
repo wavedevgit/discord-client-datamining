@@ -47,7 +47,7 @@ var r, s = n(627968),
     W = n(995393),
     K = n(652215),
     q = n(985018),
-    z = n(105791);
+    z = n(359170);
 let X = [
         [0, 50],
         [0, 50],
@@ -257,7 +257,7 @@ function tt(t) {
                 priceComponent: (0, s.jsxs)("div", {
                     children: [(0, s.jsxs)("div", {
                         className: z.p6,
-                        children: [(0, s.jsx)(T.Text, {
+                        children: [null != n && (0, s.jsx)(T.Text, {
                             className: z.of,
                             variant: "text-md/medium",
                             color: "text-muted",
@@ -398,7 +398,7 @@ function tt(t) {
                                         guildId: $
                                     })
                                 },
-                                text: (0, M.mC)(F) ? q.intl.format(q.t.Xp5WTn, {
+                                text: null != tv ? q.intl.format(q.t.Xp5WTn, {
                                     price: tv
                                 }) : q.intl.string(q.t.boqtTA),
                                 fullWidth: !0

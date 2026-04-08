@@ -14,13 +14,13 @@ var i = n(627968),
     h = n(661191),
     m = n(796774),
     A = n(209932),
-    g = n(536432),
-    p = n(933204),
+    p = n(536432),
+    g = n(933204),
     f = n(805143),
     _ = n(375366),
     E = n(69217);
 n(980504);
-var x = n(653906);
+var x = n(74611);
 
 function C(e) {
     let {
@@ -29,8 +29,8 @@ function C(e) {
         width: C,
         height: S,
         keepOpen: T,
-        interactive: I = !0,
-        analyticsSource: N,
+        interactive: N = !0,
+        analyticsSource: I,
         onClose: v
     } = e, y = function(e) {
         let [t, n] = (0, a.yK)([A.A], () => [A.A.getSounds(), A.A.getFavorites()]);
@@ -45,10 +45,10 @@ function C(e) {
                 };
             return l.forEach(e => s(e, !0)), l.forEach(e => s(e, !1)), i
         }, [t, n, e])
-    }((0, f.Y)(n, !0)), b = (0, p.T)(), j = l.useRef(null), [R, M] = l.useState(void 0), D = (0, a.bG)([u.A], () => u.A.getMediaSessionId()), {
+    }((0, f.Y)(n, !0)), b = (0, g.T)(), j = l.useRef(null), [R, M] = l.useState(void 0), D = (0, a.bG)([u.A], () => u.A.getMediaSessionId()), {
         analyticsLocations: O
     } = (0, o.Ay)(r.A.SOUNDBOARD_WHEEL), L = l.useCallback(e => {
-        (0, g.Ak)(e, n.id, O), v()
+        (0, p.Ak)(e, n.id, O), v()
     }, [O, n.id, v]);
     l.useEffect(() => {
         m.E7(), d.bW.loadIfNecessary()
@@ -61,12 +61,12 @@ function C(e) {
         type: s.ImpressionTypes.POPOUT,
         name: s.ImpressionNames.SOUNDBOARD_POPOUT,
         properties: {
-            source: N,
+            source: I,
             guild_id: t,
             media_session_id: D
         }
     }, {
-        disableTrack: !I
+        disableTrack: !N
     });
     let P = l.useCallback(e => {
             j.current = e, M(e?.soundId)
@@ -82,12 +82,12 @@ function C(e) {
             null != t && L(t)
         }, [y, L]),
         U = l.useMemo(() => y.map(e => (0, i.jsx)(E.Ay, {
-            interactive: I,
+            interactive: N,
             className: x.a,
             sound: e,
             focused: R === e.soundId,
             channel: n
-        }, e.soundId)), [R, n, I, y]);
+        }, e.soundId)), [R, n, N, y]);
     return 0 === y.length ? null : (0, i.jsx)(o.f5, {
         value: O,
         children: (0, i.jsx)(_.A, {
@@ -100,7 +100,7 @@ function C(e) {
             onItemSelect: k,
             onItemAction: w,
             onClose: v,
-            interactive: I,
+            interactive: N,
             children: U
         })
     })

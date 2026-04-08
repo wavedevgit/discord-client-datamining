@@ -1,6 +1,6 @@
 /** chunk id: 176031 params = (module,exports,require) **/
 n.d(t, {
-    A: () => ex
+    A: () => ev
 }), n(321073);
 var i = n(627968),
     r = n(64700),
@@ -24,10 +24,10 @@ var i = n(627968),
     T = n(828100),
     N = n(509963),
     S = n(775602),
-    x = n(924283),
-    v = n(139286),
-    b = n(213750),
-    y = n(771781),
+    v = n(924283),
+    x = n(139286),
+    y = n(213750),
+    b = n(771781),
     O = n(932001),
     L = n(379848),
     R = n(335934),
@@ -65,8 +65,8 @@ var i = n(627968),
     ed = n(49999),
     ec = n(788868),
     eu = n(985018),
-    eA = n(842130),
-    eh = n(559260);
+    eA = n(870236),
+    eh = n(391329);
 let e_ = e => {
         let {
             selected: t,
@@ -101,7 +101,7 @@ let e_ = e => {
             cooldownDurationMs: B.hb
         }), I = m === A.M.GIFTING_INTENT_FRIENDS_TAB_BADGE;
         r.useEffect(() => {
-            I && (0, v.x)({
+            I && (0, x.x)({
                 name: o.ImpressionNames.GIFT_INTENT_BADGE,
                 type: o.ImpressionTypes.VIEW,
                 properties: {
@@ -113,16 +113,16 @@ let e_ = e => {
                 let e;
                 I ? (ea.default.track(es.HAw.GIFT_INTENT_BADGE_CLICKED, {
                     gift_intent_type: ec.np.FRIEND_ANNIVERSARY
-                }), e = es.m3P.ALL, f.A.setSection(es.m3P.ALL), p(ed.i.TAKE_ACTION)) : e = er.Ay.getState().section, (0, x.A)({
+                }), e = es.m3P.ALL, f.A.setSection(es.m3P.ALL), p(ed.i.TAKE_ACTION)) : e = er.Ay.getState().section, (0, v.A)({
                     tab_opened: e
                 })
             },
-            [N, b] = r.useState(!1),
-            y = () => {
-                b(!1)
+            [N, y] = r.useState(!1),
+            b = () => {
+                y(!1)
             },
             L = () => {
-                b(!0)
+                y(!0)
             },
             R = () => (0, i.jsx)(C.z9, {
                 showHoverGradient: !1,
@@ -133,7 +133,7 @@ let e_ = e => {
                 icon: E.$yI,
                 text: eu.intl.string(eu.t.TdEu5X),
                 onMouseEnter: L,
-                onMouseLeave: y,
+                onMouseLeave: b,
                 ...n,
                 ...a,
                 children: l > 0 ? (0, i.jsx)(E.hVq, {
@@ -365,7 +365,7 @@ let eN = r.memo(function(e) {
                         }
                     }
                 }), S]
-            }, "nitro-tab-group") : null, (0, i.jsx)(b.i, {
+            }, "nitro-tab-group") : null, (0, i.jsx)(y.i, {
                 selected: m === es.BVt.COLLECTIBLES_SHOP || a?.startsWith(es.BVt.COLLECTIBLES_SHOP),
                 listItemRef: I,
                 locationState: {
@@ -390,7 +390,7 @@ function eS() {
     })
 }
 
-function ex() {
+function ev() {
     let e, t, n = (0, u.bG)([ei.A], () => ei.A.getHomeLink()),
         r = (0, u.bG)([en.A], () => {
             if (n === es.BVt.APPLICATION_STORE) return !0;
@@ -422,8 +422,8 @@ function ex() {
         I = (0, V.A)({
             location: "Private Channels"
         });
-    (0, y.Tc)() && (m && !I && E.push(A.M.REFERRAL_PROGRAM_POPOVER), g && E.push(A.M.RECURRING_3P_PROMOTION_POPOVER));
-    let [f] = (0, O.Cc)(m && I ? A.M.REFERRAL_PROGRAM_POPOVER_V2 : null, p ?? "", void 0, !0), [C, T] = (0, O.kn)(E, void 0, !0), N = null == f && C === A.M.RECURRING_3P_PROMOTION_POPOVER, S = I ? f === A.M.REFERRAL_PROGRAM_POPOVER_V2 : C === A.M.REFERRAL_PROGRAM_POPOVER, x = (0, M.H)(), v = (e = J.dm.useSetting(), t = (0, j.A)(), !0 === e && !0 === t);
+    (0, b.Tc)() && (m && !I && E.push(A.M.REFERRAL_PROGRAM_POPOVER), g && E.push(A.M.RECURRING_3P_PROMOTION_POPOVER));
+    let [f] = (0, O.Cc)(m && I ? A.M.REFERRAL_PROGRAM_POPOVER_V2 : null, p ?? "", void 0, !0), [C, T] = (0, O.kn)(E, void 0, !0), N = null == f && C === A.M.RECURRING_3P_PROMOTION_POPOVER, S = I ? f === A.M.REFERRAL_PROGRAM_POPOVER_V2 : C === A.M.REFERRAL_PROGRAM_POPOVER, v = (0, M.H)(), x = (e = J.dm.useSetting(), t = (0, j.A)(), !0 === e && !0 === t);
     return (0, i.jsx)(eN, {
         theme: l,
         showLibrary: a,
@@ -434,8 +434,8 @@ function ex() {
         shouldShowNitroTab: _,
         showReferralProgramPopover: S,
         showRecurring3PPopover: N,
-        shouldShowMessageRequestsRow: x,
-        shouldShowFamilyCenterRow: v,
+        shouldShowMessageRequestsRow: v,
+        shouldShowFamilyCenterRow: x,
         selectedChannelId: c,
         path: h
     })

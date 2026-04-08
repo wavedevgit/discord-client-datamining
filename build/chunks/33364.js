@@ -19,15 +19,15 @@ function h(e) {
     } = e, h = !0 === n.bot, {
         message: m,
         isReportable: A,
-        isLoaded: g
+        isLoaded: p
     } = (0, d.R)(t, n.id, h), {
-        channelId: p
-    } = (0, c.N)(), f = t.id === p, _ = !s.Fr && !f, E = l.useCallback(() => {
+        channelId: g
+    } = (0, c.N)(), f = t.id === g, _ = !s.Fr && !f, E = l.useCallback(() => {
         null != m && (0, o.b8)(m, () => {
             r.A.closePrivateChannel(t.id, _)
         })
     }, [t.id, m, _]);
-    return !A || null == m && g ? null : (0, i.jsx)(a.Button, {
+    return !A || null == m && p ? null : (0, i.jsx)(a.Button, {
         size: "sm",
         variant: "critical-primary",
         disabled: null == m,

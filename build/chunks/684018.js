@@ -14,11 +14,11 @@ var i = n(627968),
     h = n(576622),
     m = n(657331),
     A = n(287809),
-    g = n(486020),
-    p = n(403362),
+    p = n(486020),
+    g = n(403362),
     f = n(518477),
     _ = n(985018),
-    E = n(604545);
+    E = n(880986);
 
 function x(e) {
     let {
@@ -38,7 +38,7 @@ function x(e) {
         return e.map((e, n) => {
             let {
                 guild: l
-            } = e, s = g.Ay.getGuildIconURL({
+            } = e, s = p.Ay.getGuildIconURL({
                 id: l.id,
                 icon: l.icon,
                 size: 24
@@ -56,7 +56,7 @@ function x(e) {
                 height: 24,
                 children: a
             }, l.id)
-        }).filter(p.Vq)
+        }).filter(g.Vq)
     }, [x]);
     return null == x || 0 === x.length ? (0, i.jsx)("div", {
         className: a()(E.kL, s ? E.yF : null),

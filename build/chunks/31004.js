@@ -1,5 +1,4 @@
 /** chunk id: 31004 params = (module,exports,require) **/
-"use strict";
 e.exports = {
     kL: "container_c2b141",
     P: "keybind_c2b141",

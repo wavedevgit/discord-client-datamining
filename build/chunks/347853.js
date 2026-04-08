@@ -6,8 +6,8 @@ n.d(t, {
 var a = n(627968);
 n(64700);
 var i = n(397927),
-    s = n(73153),
-    l = n(573879);
+    l = n(73153),
+    s = n(573879);
 
 function r() {
     (0, i.mMO)(async () => {
@@ -19,12 +19,12 @@ function r() {
         })
     }, {
         onCloseCallback: () => {
-            s.h.dispatch({
+            l.h.dispatch({
                 type: "LOGIN_RESET",
                 isMultiAccount: !0
             })
         },
-        modalKey: l.ov
+        modalKey: s.ov
     })
 }
 
@@ -32,18 +32,18 @@ function o() {
     (0, i.mMO)(async () => {
         let {
             default: e
-        } = await Promise.all([n.e("88890"), n.e("34078"), n.e("89338")]).then(n.bind(n, 365225));
+        } = await Promise.all([n.e("88890"), n.e("34078"), n.e("85501")]).then(n.bind(n, 365225));
         return t => (0, a.jsx)(e, {
             ...t,
             onBackPressed: r
         })
     }, {
         onCloseCallback: () => {
-            s.h.dispatch({
+            l.h.dispatch({
                 type: "LOGIN_RESET",
                 isMultiAccount: !0
             })
         },
-        modalKey: l.Gl
+        modalKey: s.Gl
     })
 }

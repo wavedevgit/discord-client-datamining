@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     l = n(64700),
     s = n(284009),
-    a = n.n(s),
-    r = n(158954),
+    r = n.n(s),
+    a = n(158954),
     o = n(311907),
     d = n(846293),
     c = n(793574),
@@ -20,7 +20,7 @@ var i = n(627968),
     x = n(168428),
     f = n(652215),
     C = n(985018),
-    E = n(366228);
+    E = n(147673);
 
 function I(e) {
     let t, {
@@ -33,7 +33,7 @@ function I(e) {
         T = I === s.author.id,
         y = n.state === f.elq.ACCEPTING,
         N = (0, o.bG)([p.A], () => null != n.channel ? p.A.getChannel(n.channel.id) : null, [n]);
-    a()(null == N || N.isPrivate(), "must be a private channel");
+    r()(null == N || N.isPrivate(), "must be a private channel");
     let {
         analyticsLocations: S
     } = (0, u.Ay)(c.A.INVITE_EMBED), j = null != N, L = l.useCallback(() => {
@@ -79,7 +79,7 @@ function I(e) {
                         members: t.length
                     })
                 })]
-            }), (0, i.jsx)(r.$nd, {
+            }), (0, i.jsx)(a.$nd, {
                 onClick: L,
                 loading: y,
                 disabled: j,

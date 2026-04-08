@@ -14,8 +14,8 @@ var i = n(64700),
     h = n(576705),
     m = n(927813),
     A = n(661191),
-    g = n(302909),
-    p = n(342220),
+    p = n(302909),
+    g = n(342220),
     f = n(652215);
 let _ = 90 * m.A.Millis.DAY,
     E = 14 * m.A.Millis.DAY;
@@ -27,16 +27,16 @@ function x(e) {
         x = (0, l.bG)([h.A], () => null != t && h.A.can(f.xBc.ADMINISTRATOR, t)),
         C = (0, l.bG)([o.A], () => o.A.getGuildAffinity(e.guild_id)?.score),
         S = (0, l.bG)([r.A], () => r.A.hasConsented(f.YAq.PERSONALIZATION)),
-        T = (0, p.A)(),
+        T = (0, g.A)(),
         {
-            enabled: I
-        } = g.A.useConfig({
+            enabled: N
+        } = p.A.useConfig({
             location: "useIsEligibleForFirstBoosterUpsell"
         }),
-        [N] = (0, a.Wl)(s.M.FIRST_BOOSTER_UPSELL_OVERSEER, {
+        [I] = (0, a.Wl)(s.M.FIRST_BOOSTER_UPSELL_OVERSEER, {
             cooldownDurationMs: 0,
             numTimesToRecur: 3
         }),
-        v = N === s.M.FIRST_BOOSTER_UPSELL_OVERSEER;
-    return i.useMemo(() => !(!I || !v || !S || null == C || C <= 17.06 || e.type !== f.rbe.GUILD_TEXT || null == t || A.default.age(t.id) < _ || null == t.premiumSubscriberCount || 0 !== t.premiumSubscriberCount || n < 10 || m?.id == null || A.default.age(m.id) > E) && (x || T), [I, v, S, e.type, t, n, C, m?.id, x, T])
+        v = I === s.M.FIRST_BOOSTER_UPSELL_OVERSEER;
+    return i.useMemo(() => !(!N || !v || !S || null == C || C <= 17.06 || e.type !== f.rbe.GUILD_TEXT || null == t || A.default.age(t.id) < _ || null == t.premiumSubscriberCount || 0 !== t.premiumSubscriberCount || n < 10 || m?.id == null || A.default.age(m.id) > E) && (x || T), [N, v, S, e.type, t, n, C, m?.id, x, T])
 }

@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     l = n(64700),
     s = n(284009),
-    a = n.n(s),
-    r = n(311907),
+    r = n.n(s),
+    a = n(311907),
     o = n(397927),
     d = n(241524),
     c = n(289397),
@@ -25,7 +25,7 @@ var i = n(627968),
     I = n(920814),
     v = n(235665),
     b = n(985018),
-    T = n(915047);
+    T = n(66996);
 
 function y(e) {
     let {
@@ -52,7 +52,7 @@ function N(e) {
     let {
         coverImageAsset: t,
         isPreview: n = !1
-    } = e, l = h.kt.useSetting(), s = (0, f.j)() && l, [a, r] = (0, m.A)(t, s), o = s ? (0, i.jsx)(u.A, {
+    } = e, l = h.kt.useSetting(), s = (0, f.j)() && l, [r, a] = (0, m.A)(t, s), o = s ? (0, i.jsx)(u.A, {
         autoPlay: !0,
         loop: !0,
         className: T.N4,
@@ -65,10 +65,10 @@ function N(e) {
         className: T.N4
     });
     return (0, i.jsx)("div", {
-        ref: a,
+        ref: r,
         className: T.El,
-        children: null == r || n ? o : (0, i.jsx)("img", {
-            src: r,
+        children: null == a || n ? o : (0, i.jsx)("img", {
+            src: a,
             alt: "",
             className: T.N4
         })
@@ -82,9 +82,9 @@ function S(e) {
     } = e, s = t.id, {
         nickname: u,
         nickcolor: m
-    } = (0, r.cf)([p.Ay, g.default], () => {
+    } = (0, a.cf)([p.Ay, g.default], () => {
         let e = g.default.getCurrentUser();
-        a()(null != e, "user cannot be null");
+        r()(null != e, "user cannot be null");
         let t = p.Ay.getMember(s, e.id);
         return {
             nickname: t?.nick ?? x.Ay.getName(e),

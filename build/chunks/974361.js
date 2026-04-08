@@ -7,7 +7,7 @@ var i = n(379587),
     l = n(419954),
     a = n(780964),
     r = n(985018),
-    o = n(665606);
+    o = n(525736);
 let d = (0, l.E2)(a.X.CHAT_FAVORITES_TOGGLE, {
     usePredicate: () => (0, i.m)({
         location: "FavoritesGuildToggle"

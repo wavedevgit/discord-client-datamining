@@ -1,6 +1,5 @@
 /** chunk id: 95473 params = (module,exports,require) **/
-"use strict";
-e.exports = {
+t.exports = {
     lm: "notice__36c3e",
     $f: "guildIcon__36c3e",
     hP: "actionButton__36c3e",

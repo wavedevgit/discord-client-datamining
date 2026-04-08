@@ -13,55 +13,55 @@ var l = n(627968),
     u = n(186272),
     _ = n(546183),
     m = n(661191),
-    x = n(985018),
-    p = n(963320),
-    g = n(532406);
+    p = n(985018),
+    g = n(963320),
+    x = n(532406);
 let h = e => {
     let {
         entry: t
     } = e, {
         name: n
-    } = t, h = (0, i.bG)([_.default], () => _.default.getNewestTokenForApplication(t.id)), A = t.getIconURL(40) ?? g, b = (0, c.A)({
+    } = t, h = (0, i.bG)([_.default], () => _.default.getNewestTokenForApplication(t.id)), A = t.getIconURL(40) ?? x, v = (0, c.A)({
         application: t
-    }), v = a.useRef(!1);
+    }), b = a.useRef(!1);
     a.useEffect(() => {
-        v.current || (d.A.fetch(), v.current = !0)
+        b.current || (d.A.fetch(), b.current = !0)
     }, []);
     let f = null != h ? m.default.extractTimestamp(h.id) : void 0;
     return (0, l.jsxs)("div", {
-        className: p.kL,
+        className: g.kL,
         children: [(0, l.jsx)(s.Heading, {
-            className: p.wx,
+            className: g.wx,
             variant: "heading-sm/semibold",
-            children: x.intl.string(x.t["aYfK/w"])
+            children: p.intl.string(p.t["aYfK/w"])
         }), (0, l.jsx)("div", {
-            className: p.vU,
+            className: g.vU,
             children: (0, l.jsxs)("div", {
-                className: p.qi,
+                className: g.qi,
                 children: [(0, l.jsx)(o.Ay, {
                     mask: o.Ay.Masks.AVATAR_DEFAULT,
                     width: 40,
                     height: 40,
-                    className: p.VE,
+                    className: g.VE,
                     children: (0, l.jsx)("img", {
                         src: A,
                         alt: "",
-                        className: p.Z2
+                        className: g.Z2
                     })
                 }), (0, l.jsxs)("div", {
-                    className: p.FS,
+                    className: g.FS,
                     children: [(0, l.jsx)(s.Text, {
                         color: "text-strong",
                         variant: "text-md/medium",
                         children: n
-                    }), b.length > 0 ? (0, l.jsxs)(l.Fragment, {
+                    }), v.length > 0 ? (0, l.jsxs)(l.Fragment, {
                         children: [(0, l.jsx)(s.Text, {
                             color: "text-default",
                             variant: "text-md/normal",
-                            children: (0, u.A)(b.length)
+                            children: (0, u.A)(v.length)
                         }), (0, l.jsx)(r.A, {
-                            className: p.uM,
-                            guilds: b,
+                            className: g.uM,
+                            guilds: v,
                             maxGuilds: 6
                         })]
                     }) : (0, l.jsxs)(l.Fragment, {
@@ -72,7 +72,7 @@ let h = e => {
                         }), null != f && (0, l.jsx)(s.Text, {
                             color: "text-default",
                             variant: "text-md/normal",
-                            children: x.intl.formatToPlainString(x.t.C9rUO8, {
+                            children: p.intl.formatToPlainString(p.t.C9rUO8, {
                                 authorizedAt: f
                             })
                         })]

@@ -8,8 +8,8 @@ var i = n(265690),
     l = n(121894),
     s = n(52133);
 n(661191);
-let a = {},
-    r = (0, i.h)(e => ({
+let r = {},
+    a = (0, i.h)(e => ({
         pollsByChannelId: {},
         pollsByMessageId: {},
         updatePollState(t, n, i) {
@@ -35,13 +35,13 @@ let a = {},
     }));
 
 function o(e) {
-    return r(t => t.pollsByChannelId[e] ?? a, s.A)
+    return a(t => t.pollsByChannelId[e] ?? r, s.A)
 }
 
 function d(e, t, n) {
-    r.getState().updatePollState(e, t, n)
+    a.getState().updatePollState(e, t, n)
 }
 
 function c(e, t) {
-    return r.getState().pollsByChannelId[e]?.[t]
+    return a.getState().pollsByChannelId[e]?.[t]
 }

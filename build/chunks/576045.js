@@ -25,7 +25,7 @@ function c(e) {
             name: s.K.SAFETY_WARNING_VIEW
         })
     }, []);
-    let g = l.useCallback(() => {
+    let p = l.useCallback(() => {
         m?.(), (0, o._$)({
             channelId: t,
             warningId: n,
@@ -38,6 +38,6 @@ function c(e) {
         buttons: A,
         description: h,
         header: u,
-        onDismiss: g
+        onDismiss: p
     })
 }

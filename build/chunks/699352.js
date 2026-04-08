@@ -1,21 +1,21 @@
 /** chunk id: 699352 params = (module,exports,require) **/
 n.d(t, {
-    A: () => a,
-    J: () => r
+    A: () => r,
+    J: () => a
 });
 var i = n(627968);
 n(64700);
 var l = n(21878),
     s = n(756369);
 
-function a(e) {
+function r(e) {
     let {
         channelMessageProps: {
             message: t,
             channel: n,
-            compact: a = !1
+            compact: r = !1
         },
-        hasSpoilerEmbeds: r,
+        hasSpoilerEmbeds: a,
         hasBailedAst: o,
         handleContextMenu: d,
         isInteracting: c,
@@ -35,8 +35,8 @@ function a(e) {
             isInteracting: c,
             message: t,
             channel: n,
-            compact: a,
-            hasSpoilerEmbeds: r,
+            compact: r,
+            hasSpoilerEmbeds: a,
             hasBailedAst: o,
             isMessageSnapshot: _,
             onMediaItemContextMenu: d,
@@ -49,19 +49,19 @@ function a(e) {
     })
 }
 
-function r(e, t, n) {
+function a(e, t, n) {
     let {
         message: l,
-        channel: a,
-        compact: r = !1,
+        channel: r,
+        compact: a = !1,
         renderThreadAccessory: o,
         disableReactionCreates: d,
         disableReactionUpdates: c
     } = e;
     return (0, i.jsx)(s.OC, {
         message: l,
-        channel: a,
-        compact: r,
+        channel: r,
+        compact: a,
         hasSpoilerEmbeds: t,
         hasBailedAst: n,
         renderThreadAccessory: o,

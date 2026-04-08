@@ -1,6 +1,5 @@
 /** chunk id: 571655 params = (module,exports,require) **/
-"use strict";
-e.exports = {
+t.exports = {
     PC: "premiumIcon_b68a35",
     tV: "platformIcon_b68a35",
     ez: "giftIcon_b68a35",

@@ -4,8 +4,8 @@ n.d(t, {
 }), n(321073);
 var a = n(627968),
     i = n(64700),
-    s = n(614820),
-    l = n(397927),
+    l = n(614820),
+    s = n(397927),
     r = n(231643);
 
 function o(e, t) {
@@ -13,15 +13,15 @@ function o(e, t) {
         if ("" === n.trim()) return e;
         let t = n.toLowerCase().trim();
         return e.filter(e => {
-            let n = ((0, s.O)(e.name) ?? "").toLowerCase(),
+            let n = ((0, l.O)(e.name) ?? "").toLowerCase(),
                 a = (e.group ?? "").toLowerCase(),
                 i = e.tags ?? [];
             return n.includes(t) || e.id.toLowerCase().includes(t) || a.includes(t) || i.some(e => e.toLowerCase().includes(t))
         })
     }, [e, n]);
-    return [i.useMemo(() => (0, a.jsx)(l.aK1, {
+    return [i.useMemo(() => (0, a.jsx)(s.aK1, {
         id: "devtools-search",
-        control: (e, t) => (0, a.jsx)(l.VPO, {
+        control: (e, t) => (0, a.jsx)(s.VPO, {
             ...e,
             query: n,
             onChange: o,
@@ -30,7 +30,7 @@ function o(e, t) {
         })
     }, "devtools-search"), [n]), ...i.useMemo(() => {
         let e = [];
-        if ("" !== n.trim() && 0 === d.length) e.push((0, a.jsx)(l.Drp, {
+        if ("" !== n.trim() && 0 === d.length) e.push((0, a.jsx)(s.Drp, {
             id: "devtools-no-results",
             label: `No DevTools found for "${n}"`,
             disabled: !0
@@ -50,30 +50,30 @@ function o(e, t) {
                     id: i,
                     name: r
                 } = n;
-                return e.push((0, a.jsx)(l.Drp, {
+                return e.push((0, a.jsx)(s.Drp, {
                     id: i,
-                    label: (0, s.O)(r) ?? "",
+                    label: (0, l.O)(r) ?? "",
                     action: () => t(i)
                 }, i))
             }), r.BW.forEach(i => {
                 let r = o.get(i);
                 if (null != r && r.length > 0) {
-                    let o = r.sort((e, t) => ((0, s.O)(e.name) ?? "").localeCompare((0, s.O)(t.name) ?? ""));
-                    "" === n.trim() ? e.push((0, a.jsx)(l.Drp, {
+                    let o = r.sort((e, t) => ((0, l.O)(e.name) ?? "").localeCompare((0, l.O)(t.name) ?? ""));
+                    "" === n.trim() ? e.push((0, a.jsx)(s.Drp, {
                         id: `devtools-${i}`,
                         label: i,
-                        children: (0, a.jsx)(l.rXV, {
-                            children: o.map(e => (0, a.jsx)(l.Drp, {
+                        children: (0, a.jsx)(s.rXV, {
+                            children: o.map(e => (0, a.jsx)(s.Drp, {
                                 id: `devtools-${e.id}`,
-                                label: (0, s.O)(e.name) ?? "",
+                                label: (0, l.O)(e.name) ?? "",
                                 action: () => t(e.id)
                             }, e.id))
                         })
-                    }, `devtools-${i}`)) : e.push((0, a.jsx)(l.rXV, {
+                    }, `devtools-${i}`)) : e.push((0, a.jsx)(s.rXV, {
                         label: i,
-                        children: o.map(e => (0, a.jsx)(l.Drp, {
+                        children: o.map(e => (0, a.jsx)(s.Drp, {
                             id: `devtools-filtered-${e.id}`,
-                            label: (0, s.O)(e.name) ?? "",
+                            label: (0, l.O)(e.name) ?? "",
                             action: () => t(e.id)
                         }, e.id))
                     }, `devtools-filtered-${i}`))

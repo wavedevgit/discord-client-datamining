@@ -6,8 +6,8 @@ n.d(t, {
 }), n(321073);
 var a = n(627968),
     i = n(64700),
-    s = n(340287),
-    l = n(687498),
+    l = n(340287),
+    s = n(687498),
     r = n(765671),
     o = n(398025);
 n(272111);
@@ -19,7 +19,7 @@ let d = i.createContext({
         collapsedContentRef: i.createRef(),
         recalculateAnimationPositions: () => {},
         animatedComponentProps: [],
-        expansionSpring: new l.SpringValue(0),
+        expansionSpring: new s.SpringValue(0),
         mountPoints: new Map
     }),
     c = i.forwardRef(function(e, t) {
@@ -33,12 +33,12 @@ let d = i.createContext({
             registerComponent: x,
             unregisterComponent: p,
             expansionSpring: g,
-            mountPoints: f
-        } = i.useContext(d), _ = i.useRef(null), v = i.useRef(null), b = i.useRef(void 0);
+            mountPoints: _
+        } = i.useContext(d), f = i.useRef(null), v = i.useRef(null), b = i.useRef(void 0);
         i.useEffect(() => {
             h()
         }, [h]), i.useLayoutEffect(() => {
-            let e = _.current;
+            let e = f.current;
             return null != e && x(e, c, u), () => {
                 null != e && p(c, u)
             }
@@ -49,11 +49,11 @@ let d = i.createContext({
             } = e;
             b.current !== t && (h(), b.current = t)
         }, [h]);
-        (0, r.i4)(_, j);
-        let A = f.get(c)?.current,
+        (0, r.i4)(f, j);
+        let A = _.get(c)?.current,
             C = null;
         return null == A ? C = null : m && null != g ? C = (0, a.jsxs)(a.Fragment, {
-            children: ["collapsed" === u && (0, s.createPortal)((0, a.jsx)(l.animated.div, {
+            children: ["collapsed" === u && (0, l.createPortal)((0, a.jsx)(s.animated.div, {
                 style: {
                     position: "absolute",
                     opacity: (0, o.a)(g.to({
@@ -62,7 +62,7 @@ let d = i.createContext({
                     }))
                 },
                 children: n(v)
-            }), A), "expanded" === u && (0, s.createPortal)((0, a.jsx)(l.animated.div, {
+            }), A), "expanded" === u && (0, l.createPortal)((0, a.jsx)(s.animated.div, {
                 style: {
                     position: "absolute",
                     opacity: (0, o.a)(g.to({
@@ -72,20 +72,20 @@ let d = i.createContext({
                 },
                 children: n(v)
             }), A)]
-        }) : "collapsed" === u && (C = (0, s.createPortal)(n(v), A)), (0, a.jsxs)("div", {
+        }) : "collapsed" === u && (C = (0, l.createPortal)(n(v), A)), (0, a.jsxs)("div", {
             style: {
                 opacity: +(null == C && "collapsed" === u || null == A)
             },
             ref: t,
-            children: [n(_), C]
+            children: [n(f), C]
         })
     }),
     u = e => {
         let {
             children: t,
             expandedContentRef: n,
-            collapsedContentRef: s,
-            expansionSpring: l
+            collapsedContentRef: l,
+            expansionSpring: s
         } = e, [r, o] = i.useState({}), [c, u] = i.useState([]), [m, h] = i.useState(() => new Map), x = i.useCallback((e, t, n) => {
             o(a => {
                 let i = a[t] ?? {
@@ -121,19 +121,19 @@ let d = i.createContext({
         }, []), g = i.useCallback(() => {
             let e = [];
             for (let t in r) {
-                if (null == r[t] || null == n.current || null == s.current) continue;
+                if (null == r[t] || null == n.current || null == l.current) continue;
                 let a = r[t].collapsed,
                     i = r[t].expanded;
                 if (null == a || null == i) continue;
-                let l = i.getBoundingClientRect(),
+                let s = i.getBoundingClientRect(),
                     o = n.current.getBoundingClientRect(),
                     d = a.getBoundingClientRect(),
-                    c = s.current.getBoundingClientRect(),
-                    u = l.top - o.top + 12,
+                    c = l.current.getBoundingClientRect(),
+                    u = s.top - o.top + 12,
                     m = d.top - c.top,
-                    h = l.left - o.left + 12,
+                    h = s.left - o.left + 12,
                     x = d.left - c.left,
-                    p = -l.right + o.right + 12,
+                    p = -s.right + o.right + 12,
                     g = -d.right + c.right;
                 e.push({
                     id: t,
@@ -143,21 +143,21 @@ let d = i.createContext({
                     expandedRight: p,
                     collapsedTop: m,
                     expandedTop: u,
-                    width: l.width
+                    width: s.width
                 })
             }
             u(e)
-        }, [r, n, s, u]);
+        }, [r, n, l, u]);
         return (0, a.jsx)(d.Provider, {
             value: {
                 registerComponent: x,
                 unregisterComponent: p,
                 animatedComponents: r,
                 expandedContentRef: n,
-                collapsedContentRef: s,
+                collapsedContentRef: l,
                 recalculateAnimationPositions: g,
                 animatedComponentProps: c,
-                expansionSpring: l,
+                expansionSpring: s,
                 mountPoints: m
             },
             children: t

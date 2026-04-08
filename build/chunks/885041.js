@@ -24,10 +24,10 @@ var i = n(627968),
     T = n(315206),
     N = n(844358),
     S = n(828430),
-    x = n(857365),
-    v = n(861638),
-    b = n(793574),
-    y = n(114716),
+    v = n(857365),
+    x = n(861638),
+    y = n(793574),
+    b = n(114716),
     O = n(752412),
     L = n(105220),
     R = n(10088),
@@ -68,7 +68,7 @@ var i = n(627968),
     eA = n(862658),
     eh = n(813160),
     e_ = n(942614),
-    em = n(172448),
+    em = n(950067),
     ep = n(682492),
     eg = n(584257),
     eE = n(64585),
@@ -78,10 +78,10 @@ var i = n(627968),
     eT = n(414967),
     eN = n(499454),
     eS = n(580960),
-    ex = n(968930),
-    ev = n(265367),
-    eb = n(77509),
-    ey = n(463347),
+    ev = n(968930),
+    ex = n(265367),
+    ey = n(77509),
+    eb = n(463347),
     eO = n(334465),
     eL = n(976860),
     eR = n(569745),
@@ -125,7 +125,7 @@ var i = n(627968),
     ta = n(613057);
 n(115036), n(943577), n(131319), n(794383), n(845618), n(712687), n(328968), n(67480), n(874486), n(162605), n(2866), n(628965), n(752319), n(836602), n(555337), n(863036), n(291731), n(176360), n(972937), n(279061), n(750128), n(921955);
 let tl = !1;
-(0, v.as)(), s.Ay.initialize(), eP.A.loadServer(), e8.isPlatformEmbedded && (te.Ay.on("USER_SETTINGS_OPEN", (e, t) => {
+(0, x.as)(), s.Ay.initialize(), eP.A.loadServer(), e8.isPlatformEmbedded && (te.Ay.on("USER_SETTINGS_OPEN", (e, t) => {
     (0, eq.openUserSettings)()
 }), te.Ay.on("LAUNCH_APPLICATION", (e, t) => {
     let n = e1.A.getActiveLibraryApplication(t);
@@ -275,13 +275,13 @@ let ts = (0, p.z)(e => {
             return null
         }
     }),
-    tu = (0, p.z)((0, y.C)(L.A, null, {
+    tu = (0, p.z)((0, b.C)(L.A, null, {
         passProps: !1
     })),
-    tA = (0, y.C)(J.default, null, {
+    tA = (0, b.C)(J.default, null, {
         passProps: !1
     }),
-    th = [tn.BVt.GUILD_BOOSTING_MARKETING(ey.pv.guildId()), ...Array.from(ti.qW).map(e => tn.BVt.CHANNEL(ey.pv.guildId(), e))];
+    th = [tn.BVt.GUILD_BOOSTING_MARKETING(eb.pv.guildId()), ...Array.from(ti.qW).map(e => tn.BVt.CHANNEL(eb.pv.guildId(), e))];
 
 function t_(e) {
     let {
@@ -354,7 +354,7 @@ let tm = [{
         } = t.params;
         return (0, Z.B)(() => (0, eB.openUserProfileModal)({
             userId: n,
-            sourceAnalyticsLocations: [b.A.URI_SCHEME]
+            sourceAnalyticsLocations: [y.A.URI_SCHEME]
         })), (0, i.jsx)(l.rd, {
             to: eJ.A.defaultRoute
         })
@@ -447,7 +447,7 @@ let tm = [{
     path: [tn.BVt.PLAYGROUND(":collection?", ":story?")],
     render: td
 }, {
-    path: [tn.BVt.USER_GUILD_NOTIFICATION_SETTINGS(ey.pv.guildId())],
+    path: [tn.BVt.USER_GUILD_NOTIFICATION_SETTINGS(eb.pv.guildId())],
     render: function(e) {
         let {
             match: t
@@ -458,7 +458,7 @@ let tm = [{
             (0, o.mMO)(async () => {
                 let {
                     default: e
-                } = await Promise.all([n.e("64992"), n.e("96878")]).then(n.bind(n, 401539));
+                } = await Promise.all([n.e("64992"), n.e("88488")]).then(n.bind(n, 401539));
                 return t => (0, i.jsx)(e, {
                     ...t,
                     guildId: r
@@ -476,9 +476,9 @@ let tm = [{
         })
     }
 }, {
-    path: [tn.BVt.WELCOME(ey.pv.guildId({
+    path: [tn.BVt.WELCOME(eb.pv.guildId({
         optional: !0
-    }), ey.pv.channelId({
+    }), eb.pv.channelId({
         optional: !0
     }))],
     render: function(e) {
@@ -495,7 +495,7 @@ let tm = [{
         })
     }
 }, {
-    path: [tn.BVt.GUILD_EVENT_DETAILS(ey.pv.guildId({
+    path: [tn.BVt.GUILD_EVENT_DETAILS(eb.pv.guildId({
         optional: !0
     }), ":guildEventId")],
     render: function(e) {
@@ -517,7 +517,7 @@ let tm = [{
     path: [tn.BVt.GORILLA],
     render: ts
 }, {
-    path: [tn.BVt.GUILD_SETTINGS(ey.pv.guildId(), ":section?", ":subsection?")],
+    path: [tn.BVt.GUILD_SETTINGS(eb.pv.guildId(), ":section?", ":subsection?")],
     render: function(e) {
         let {
             match: t
@@ -534,16 +534,16 @@ let tm = [{
     },
     isChatRoute: !0
 }, {
-    path: [tn.BVt.CHANNEL_THREAD_VIEW(ey.pv.guildId(), ey.pv.channelId(), ":threadId", ":messageId?"), tn.BVt.CHANNEL(ey.pv.guildId(), ey.pv.channelId({
+    path: [tn.BVt.CHANNEL_THREAD_VIEW(eb.pv.guildId(), eb.pv.channelId(), ":threadId", ":messageId?"), tn.BVt.CHANNEL(eb.pv.guildId(), eb.pv.channelId({
         optional: !0
-    }), ":messageId?"), tn.BVt.ACTIVITY, tn.BVt.ACTIVITIES, tn.BVt.ACTIVITIES_HAPPENING_NOW, tn.BVt.APPLICATION_LIBRARY, tn.BVt.APPLICATION_STORE, tn.BVt.MESSAGE_REQUESTS, tn.BVt.COLLECTIBLES_SHOP, tn.BVt.COLLECTIBLES_SHOP_COLLECTION_DETAIL(":collectionId"), tn.BVt.COLLECTIBLES_SHOP_PRODUCT_DETAIL(":skuId"), tn.BVt.COLLECTIBLES_SHOP_LAYOUT(":layoutId"), tn.BVt.GUILD_DISCOVERY, tn.BVt.QUEST_HOME_DEPRECATED, tn.BVt.QUEST_HOME, tn.BVt.ICYMI, tn.BVt.GLOBAL_DISCOVERY, tn.BVt.GUILD_MEMBER_VERIFICATION(ey.pv.guildId()), tn.BVt.GUILD_MEMBER_VERIFICATION_FOR_HUB(ey.pv.guildId(), ":inviteCode?"), tn.BVt.GUILD_BOOSTING_MARKETING(ey.pv.guildId()), tn.BVt.GUILD_FEATURE(":feature", ey.pv.guildId()), tn.BVt.FEATURE(":feature"), tn.BVt.FAMILY_CENTER],
+    }), ":messageId?"), tn.BVt.ACTIVITY, tn.BVt.ACTIVITIES, tn.BVt.ACTIVITIES_HAPPENING_NOW, tn.BVt.APPLICATION_LIBRARY, tn.BVt.APPLICATION_STORE, tn.BVt.MESSAGE_REQUESTS, tn.BVt.COLLECTIBLES_SHOP, tn.BVt.COLLECTIBLES_SHOP_COLLECTION_DETAIL(":collectionId"), tn.BVt.COLLECTIBLES_SHOP_PRODUCT_DETAIL(":skuId"), tn.BVt.COLLECTIBLES_SHOP_LAYOUT(":layoutId"), tn.BVt.GUILD_DISCOVERY, tn.BVt.QUEST_HOME_DEPRECATED, tn.BVt.QUEST_HOME, tn.BVt.ICYMI, tn.BVt.GLOBAL_DISCOVERY, tn.BVt.GUILD_MEMBER_VERIFICATION(eb.pv.guildId()), tn.BVt.GUILD_MEMBER_VERIFICATION_FOR_HUB(eb.pv.guildId(), ":inviteCode?"), tn.BVt.GUILD_BOOSTING_MARKETING(eb.pv.guildId()), tn.BVt.GUILD_FEATURE(":feature", eb.pv.guildId()), tn.BVt.FEATURE(":feature"), tn.BVt.FAMILY_CENTER],
     render: tu,
     isChatRoute: !0
 }, {
     path: [tn.BVt.APPLICATION_DIRECTORY],
     render: tA
 }, {
-    path: [tn.BVt.GAME_SHOP(ey.pv.guildId(), ":shopSkuId?", ":shopSlug?")],
+    path: [tn.BVt.GAME_SHOP(eb.pv.guildId(), ":shopSkuId?", ":shopSlug?")],
     render: function(e) {
         let {
             match: t
@@ -589,10 +589,10 @@ class tE extends r.PureComponent {
     historyUnlisten = () => {};
     rewriterUnlisten = () => {};
     componentDidMount() {
-        te.Ay.setZoomFactor(g.A.zoom), eP.A.init(), O.A.initialize(), eC.A.initialize(), q.A.initialize(), e$.A.initialize(), z.A.initialize(), eS.A.initialize(), V.A.initialize(), ec.A.initialize(), E.A.init(), Q.A.init(), $.A.init(), em.A.initialize(), S.A.initialize(), F.A.initialize(), ex.A.initialize(), T.Ay.initialize(), Y.Ay.initialize(), ez.A.initialize(), es.Ay.initialize(), ef.A.initialize(), C.A.initialize(), eo.A.init(), D.A.init(), e3.A.init(), f.A.initialize(), eV.A.init(), e5.A.init(), eF.A.init(), ew.A.initialize(), eU.A.initialize(), eH.A.initialize(), eW.A.init(), H.A.initialize(), I.A.initialize(), ej.A.initialize(), eE.A.initialize(), eg.A.initialize(), eI.A.initialize(), M.A.initialize(), j.A.initialize(), K.A.initialize(), ed.A.initialize(), eu.A.initialize(), ev.A.initialize(), eT.A.initialize(), k.A.initialize(), P.A.initialize(), x.A.initialize(), this.rewriterUnlisten = eb.A.addRouteRewriter(this.ensureChannelMatchesGuild), this.historyUnlisten = eb.A.addRouteChangeListener(this.handleHistoryChange)
+        te.Ay.setZoomFactor(g.A.zoom), eP.A.init(), O.A.initialize(), eC.A.initialize(), q.A.initialize(), e$.A.initialize(), z.A.initialize(), eS.A.initialize(), V.A.initialize(), ec.A.initialize(), E.A.init(), Q.A.init(), $.A.init(), em.A.initialize(), S.A.initialize(), F.A.initialize(), ev.A.initialize(), T.Ay.initialize(), Y.Ay.initialize(), ez.A.initialize(), es.Ay.initialize(), ef.A.initialize(), C.A.initialize(), eo.A.init(), D.A.init(), e3.A.init(), f.A.initialize(), eV.A.init(), e5.A.init(), eF.A.init(), ew.A.initialize(), eU.A.initialize(), eH.A.initialize(), eW.A.init(), H.A.initialize(), I.A.initialize(), ej.A.initialize(), eE.A.initialize(), eg.A.initialize(), eI.A.initialize(), M.A.initialize(), j.A.initialize(), K.A.initialize(), ed.A.initialize(), eu.A.initialize(), ex.A.initialize(), eT.A.initialize(), k.A.initialize(), P.A.initialize(), v.A.initialize(), this.rewriterUnlisten = ey.A.addRouteRewriter(this.ensureChannelMatchesGuild), this.historyUnlisten = ey.A.addRouteChangeListener(this.handleHistoryChange)
     }
     componentWillUnmount() {
-        eP.A.terminate(), e$.A.terminate(), eS.A.terminate(), eC.A.terminate(), O.A.terminate(), T.Ay.terminate(), Y.Ay.terminate(), ez.A.terminate(), C.A.terminate(), ex.A.terminate(), ef.A.terminate(), eH.A.terminate(), f.A.terminate(), H.A.terminate(), eu.A.terminate(), I.A.terminate(), ev.A.terminate(), ej.A.terminate(), eE.A.terminate(), eg.A.terminate(), eI.A.terminate(), M.A.terminate(), j.A.terminate(), eT.A.terminate(), k.A.terminate(), W.A.terminate(), P.A.terminate(), x.A.terminate(), K.A.terminate(), ed.A.terminate(), this.historyUnlisten(), this.rewriterUnlisten()
+        eP.A.terminate(), e$.A.terminate(), eS.A.terminate(), eC.A.terminate(), O.A.terminate(), T.Ay.terminate(), Y.Ay.terminate(), ez.A.terminate(), C.A.terminate(), ev.A.terminate(), ef.A.terminate(), eH.A.terminate(), f.A.terminate(), H.A.terminate(), eu.A.terminate(), I.A.terminate(), ex.A.terminate(), ej.A.terminate(), eE.A.terminate(), eg.A.terminate(), eI.A.terminate(), M.A.terminate(), j.A.terminate(), eT.A.terminate(), k.A.terminate(), W.A.terminate(), P.A.terminate(), v.A.terminate(), K.A.terminate(), ed.A.terminate(), this.historyUnlisten(), this.rewriterUnlisten()
     }
     handleHistoryChange(e) {
         let {
@@ -612,7 +612,7 @@ class tE extends r.PureComponent {
                 channelId: r,
                 messageId: l,
                 threadId: s
-            } = t_(n), o = (0, ey.nn)(i), d = (0, ey.ts)(r), c = (0, ey.ts)(s), u = e9.A.getGuildId(), _ = u !== i;
+            } = t_(n), o = (0, eb.nn)(i), d = (0, eb.ts)(r), c = (0, eb.ts)(s), u = e9.A.getGuildId(), _ = u !== i;
             if (o && _ && A.A.selectGuild(i), o && d) {
                 let n = e7.A.getChannelId(u),
                     o = n !== r,
@@ -666,8 +666,8 @@ class tE extends r.PureComponent {
             guildId: i,
             channelId: r,
             threadId: a
-        } = t_(n), l = (0, ey.nn)(i) && i !== tn.ME && i !== tn.YYv;
-        if (null != r && (0, ey.ts)(r) && !(0, ti.jq)(r) && l) {
+        } = t_(n), l = (0, eb.nn)(i) && i !== tn.ME && i !== tn.YYv;
+        if (null != r && (0, eb.ts)(r) && !(0, ti.jq)(r) && l) {
             let n = eZ.A.getChannel(r);
             if (null == n) ek.A.loadThread(r).then(() => tg({
                 channelId: r,
@@ -679,7 +679,7 @@ class tE extends r.PureComponent {
                 state: e.state
             };
             if (null != a) {
-                if (!((0, ey.ts)(a) && !(0, ti.jq)(r))) return null;
+                if (!((0, eb.ts)(a) && !(0, ti.jq)(r))) return null;
                 let n = eZ.A.getChannel(a);
                 if (null == n) ek.A.loadThread(a).then(() => tg({
                     channelId: a,

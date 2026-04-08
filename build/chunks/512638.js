@@ -1,4 +1,5 @@
 /** chunk id: 512638 params = (module,exports,require) **/
+"use strict";
 e.exports = {
     C1: "guildBanner__6e6ad",
     F: "guildHeader__6e6ad",

@@ -10,7 +10,7 @@ var i = n(627968),
     a = n.n(s),
     r = n(990078),
     o = n(101555),
-    c = n(885972);
+    c = n(520155);
 let d = l.forwardRef(function(e, t) {
     let {
         label: n,
@@ -21,8 +21,8 @@ let d = l.forwardRef(function(e, t) {
         onClick: h,
         onTooltipShow: m,
         onTooltipHide: A,
-        disabled: g,
-        dangerous: p,
+        disabled: p,
+        dangerous: g,
         separator: f,
         buttonClassName: _,
         children: E,
@@ -42,8 +42,8 @@ let d = l.forwardRef(function(e, t) {
                     h(e)
                 },
                 "aria-label": l ?? n,
-                disabled: g,
-                dangerous: p,
+                disabled: p,
+                dangerous: g,
                 ...x,
                 children: [null != d ? (0, i.jsx)(d, {
                     className: c.Kk,

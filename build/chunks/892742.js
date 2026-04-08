@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     l = n(64700),
     s = n(397927),
-    a = n(341915),
-    r = n(570852),
+    r = n(341915),
+    a = n(570852),
     o = n(890687),
     d = n(710969),
     c = n(814793),
@@ -16,7 +16,7 @@ var i = n(627968),
     h = n(438038),
     p = n(295194),
     g = n(654487),
-    A = n(459671);
+    A = n(162614);
 
 function x(e) {
     let {
@@ -30,7 +30,7 @@ function x(e) {
         callerSource: "embed"
     }), C = l.useMemo(() => (0, d.vc)(t, n, x), [t, n, x]), E = l.useMemo(() => x.find(e => e.id === t), [t, x]), {
         enabled: I
-    } = r.S.useConfig({
+    } = a.S.useConfig({
         location: g.rE.EMBED_DESKTOP
     });
     return f ? (0, i.jsx)(s.y$y, {
@@ -42,12 +42,12 @@ function x(e) {
         reason: _.o.NOT_FOUND
     }) : (0, c.E0)(C.config) ? I ? (0, i.jsx)(p.M, {
         quest: C,
-        location: a.uF.QUESTS_EMBED,
-        sourceQuestContent: a.uF.QUESTS_EMBED
+        location: r.uF.QUESTS_EMBED,
+        sourceQuestContent: r.uF.QUESTS_EMBED
     }, C.id) : (0, i.jsx)(h.R, {
         quest: C,
-        location: a.uF.QUESTS_EMBED,
-        sourceQuestContent: a.uF.QUESTS_EMBED
+        location: r.uF.QUESTS_EMBED,
+        sourceQuestContent: r.uF.QUESTS_EMBED
     }, C.id) : (0, i.jsx)(m.S, {
         questId: t
     })

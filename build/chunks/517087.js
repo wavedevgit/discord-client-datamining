@@ -1,23 +1,2 @@
 /** chunk id: 517087 params = (module,exports,require) **/
-e.exports = {
-    nR: "contentFooter__8b8a3",
-    NY: "contentFooterButtonCont__8b8a3",
-    ne: "portraitCtaBtnWrapper__8b8a3",
-    SC: "dotSpacer__8b8a3",
-    b2: "dotSpacerPortrait__8b8a3",
-    PV: "adDetailsTextPrimary__8b8a3",
-    WV: "adDetailsTextPrimaryPortrait__8b8a3",
-    mq: "addFourPxMarginRight__8b8a3",
-    xw: "adDetailsTextSecondary__8b8a3",
-    _L: "adDetailsTextSecondaryPortrait__8b8a3",
-    t8: "contentHeaderGameInfoHoverable__8b8a3",
-    Mc: "contentHeaderGameInfoHoverableExpired__8b8a3",
-    uh: "contentFooterPortrait__8b8a3",
-    Df: "portraitContentRow__8b8a3",
-    uu: "contentFooterAdInfo__8b8a3",
-    _S: "adInfoClickable__8b8a3",
-    eX: "portraitButtonsContainer__8b8a3",
-    uP: "portraitButtonRow__8b8a3",
-    sB: "contentFooterAdDetailedInfo__8b8a3",
-    fi: "contentFooterAdDetailedInfoPortrait__8b8a3"
-}
+e.exports = JSON.parse('{"LsJ9hj":[[1,"discountPercent"],"% korting op Logitech"],"8Gl8gP":["Bouw je droomset-up met elke maand exclusieve kortingscodes. Alleen met Nitro."],"HINTfJ":["Aanbiedingen bekijken"],"Yl5ww1":["Geldig op alle Logitech G-producten, behalve nieuwe producten en PRO Series-producten."],"jkdhZq":[[1,"discountPercent"],"% korting op alle producten"],"fC4abC":["Geldig voor nieuwe producten binnen de eerste ",[6,"months",{"one":[[7]," maand"],"other":[[7]," maanden"]},0,"cardinal"]," nadat ze zijn uitgekomen."],"zeBjoX":[[1,"discountPercent"],"% korting op nieuwe producten"],"ogcfac":[[1,"discountPercent"],"% korting op de PRO Series-collectie"],"65EEvD":["Over ",[6,"days",{"one":[[7]," dag"],"other":[[7]," dagen"]},0,"cardinal"]," komt er een nieuwe code"],"W8jOD0":["E\xe9n code per aankoop. ",[8,"$link",["Check de voorwaarden"],[[1,"termsUrl"]]],"."],"2I7nK+":["Logitech-kortingen"],"/UNTlE":["Pak elke maand ",[1,"discountPercent"],"% korting op Logitech G en profiteer van eenmalige kortingen op PRO Series-uitrusting en nieuwe producten. ",[8,"$link",["Check de voorwaarden"],[[1,"termsUrl"]]],"."],"bZLaD+":["Beloningen ontgrendelen"],"zinfZi":["Pak elke maand ",[1,"discountPercent"],"% korting op Logitech G-gear met een nieuwe code."],"OlObRa":["Upgrade je set-up voor minder"],"A+56/R":["Pak elke maand ",[1,"discountPercent"],"% korting op Logitech G-gear, alleen met Nitro."],"9Y2p6p":["Maandelijkse beloning"],"Wm58LR":["Eenmalige kortingen"]}')

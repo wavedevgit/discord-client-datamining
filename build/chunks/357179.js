@@ -1,6 +1,6 @@
 /** chunk id: 357179 params = (module,exports,require) **/
 n.d(t, {
-    _: () => p
+    _: () => g
 });
 var i = n(627968),
     l = n(64700),
@@ -14,21 +14,21 @@ var i = n(627968),
     h = n(665909),
     m = n(576045),
     A = n(327337),
-    g = n(985018);
+    p = n(985018);
 
-function p(e) {
+function g(e) {
     let {
         channelId: t,
-        warningId: p,
+        warningId: g,
         senderId: f
     } = e, _ = l.useCallback(() => {
-        (0, d.xi)(t, [p])
-    }, [t, p]), E = (0, a.bG)([c.A], () => c.A.isBlocked(f)), x = l.useMemo(() => ({
+        (0, d.xi)(t, [g])
+    }, [t, g]), E = (0, a.bG)([c.A], () => c.A.isBlocked(f)), x = l.useMemo(() => ({
         channelId: t,
-        warningId: p,
+        warningId: g,
         senderId: f,
         warningType: u._j.INAPPROPRIATE_CONVERSATION_TIER_2
-    }), [t, p, f]);
+    }), [t, g, f]);
     l.useEffect(() => {
         (0, h.QF)({
             ...x,
@@ -47,7 +47,7 @@ function p(e) {
             (0, r.mMO)(async () => {
                 let {
                     default: e
-                } = await Promise.all([n.e("45033"), n.e("46717"), n.e("29733")]).then(n.bind(n, 788099));
+                } = await Promise.all([n.e("45033"), n.e("46717"), n.e("78464")]).then(n.bind(n, 788099));
                 return n => {
                     let {
                         transitionState: l,
@@ -56,7 +56,7 @@ function p(e) {
                     return (0, i.jsx)(e, {
                         otherUserId: f,
                         channelId: t,
-                        warningId: p,
+                        warningId: g,
                         warningType: u._j.INAPPROPRIATE_CONVERSATION_TIER_2,
                         transitionState: l,
                         onClose: s
@@ -65,14 +65,14 @@ function p(e) {
             }, {
                 modalKey: A.V
             }), C(h.Wm.USER_BANNER_OPEN_SAFETY_TOOLS)
-        }, [t, f, p, C]),
+        }, [t, f, g, C]),
         T = l.useCallback(() => {
             _(), C(h.Wm.USER_BANNER_BLOCK_CONFIRM)
         }, [_, C]),
-        I = l.useCallback(() => {
+        N = l.useCallback(() => {
             _(), C(h.Wm.USER_BANNER_BLOCK_AND_REPORT_CONFIRM)
         }, [_, C]),
-        N = l.useCallback(() => {
+        I = l.useCallback(() => {
             (0, r.mMO)(async () => {
                 let {
                     default: e
@@ -85,7 +85,7 @@ function p(e) {
                     return (0, i.jsx)(e, {
                         transitionState: l,
                         onBlock: T,
-                        onBlockAndReport: I,
+                        onBlockAndReport: N,
                         onCancel: () => {
                             s?.(), C(h.Wm.USER_BANNER_BLOCK_CANCEL)
                         },
@@ -95,23 +95,23 @@ function p(e) {
                     })
                 }
             })
-        }, [T, I, f, t, C]);
+        }, [T, N, f, t, C]);
     return (0, i.jsx)(m.N, {
         channelId: t,
-        warningId: p,
+        warningId: g,
         senderId: f,
         warningType: u._j.INAPPROPRIATE_CONVERSATION_TIER_2,
-        header: g.intl.string(g.t.ZzlB5p),
-        description: g.intl.string(g.t["D1aU+h"]),
+        header: p.intl.string(p.t.ZzlB5p),
+        description: p.intl.string(p.t["D1aU+h"]),
         onDismiss: _,
         buttons: [{
-            text: g.intl.string(g.t.Qyu4UK),
+            text: p.intl.string(p.t.Qyu4UK),
             variant: "primary",
             onClick: S
         }, ...E ? [] : [{
-            text: g.intl.string(g.t["7q0bNY"]),
+            text: p.intl.string(p.t["7q0bNY"]),
             variant: "secondary",
-            onClick: N
+            onClick: I
         }]]
     })
 }

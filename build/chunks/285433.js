@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     l = n(64700),
     s = n(503698),
-    a = n.n(s),
-    r = n(687498),
+    r = n.n(s),
+    a = n(687498),
     o = n(827734),
     d = n(990078),
     c = n(397927),
@@ -22,7 +22,7 @@ var i = n(627968),
 n(433745);
 var C = n(818348),
     E = n(985018),
-    I = n(798324);
+    I = n(851383);
 let v = e => {
     let {
         isQuestExpired: t,
@@ -39,18 +39,18 @@ let v = e => {
     } = e, [R, P] = l.useState(null), [D, M] = l.useState(null), w = (0, _.A)(e => {
         let t = e.target;
         P(t.offsetWidth), M(t.scrollWidth)
-    }), O = (0, u.w)(w), k = s === m.uF.QUESTS_EMBED, U = n.userStatus?.completedAt != null, B = (0, h.S5)(n.config.expiresAt), G = (0, h.S5)(n.config.rewardsConfig.rewardsExpireAt), F = l.useMemo(() => null != n.config.cosponsorMetadata, [n]), H = (0, i.jsx)(A.Ay, {
+    }), k = (0, u.w)(w), O = s === m.uF.QUESTS_EMBED, U = n.userStatus?.completedAt != null, B = (0, h.S5)(n.config.expiresAt), G = (0, h.S5)(n.config.rewardsConfig.rewardsExpireAt), F = l.useMemo(() => null != n.config.cosponsorMetadata, [n]), H = (0, i.jsx)(A.Ay, {
         className: I.Iu,
         logotypeClassName: F ? I.qN : void 0,
         gameTileSize: A.LU.MEDIUM,
         quest: n,
         separatorSpacing: A.C8.MEDIUM,
         theme: C.NJ.DARK,
-        withGameTile: !k || null == n.config.cosponsorMetadata
+        withGameTile: !O || null == n.config.cosponsorMetadata
     });
     return (0, i.jsxs)("div", {
-        className: a()(I.nw, {
-            [I.Gg]: k,
+        className: r()(I.nw, {
+            [I.Gg]: O,
             [I.e5]: "xs" === v
         }),
         "aria-label": E.intl.string(E.t.dcl9MQ),
@@ -66,13 +66,13 @@ let v = e => {
         }), (0, i.jsxs)("div", {
             className: I.wx,
             "aria-expanded": y,
-            children: [(0, i.jsx)(r.animated.div, {
-                className: a()(I.VW, {
-                    [I.eX]: k
+            children: [(0, i.jsx)(a.animated.div, {
+                className: r()(I.VW, {
+                    [I.eX]: O
                 }),
-                children: (0, i.jsx)(r.animated.div, {
-                    className: a()(I.Yu, {
-                        [I.Gg]: k
+                children: (0, i.jsx)(a.animated.div, {
+                    className: r()(I.Yu, {
+                        [I.Gg]: O
                     }),
                     style: {
                         opacity: (0, f.a)(b.to({
@@ -86,7 +86,7 @@ let v = e => {
                         className: I.uA,
                         children: [(0, i.jsxs)("div", {
                             className: I._V,
-                            children: [H, k ? null : (0, i.jsx)(x.A, {
+                            children: [H, O ? null : (0, i.jsx)(x.A, {
                                 color: "always-white"
                             })]
                         }), (0, i.jsxs)("div", {
@@ -95,7 +95,7 @@ let v = e => {
                                 __unsupportedReactNodeAsText: n.config.messages.questName,
                                 shouldShow: null != R && null != D && R < D,
                                 children: (0, i.jsx)(c.Heading, {
-                                    ref: O,
+                                    ref: k,
                                     variant: "lg" === v ? "heading-xxl/bold" : "sm" === v ? "heading-xl/bold" : "heading-lg/bold",
                                     className: I.R_,
                                     color: "always-white",
@@ -117,7 +117,7 @@ let v = e => {
                         })]
                     })
                 })
-            }), (0, i.jsx)(r.animated.div, {
+            }), (0, i.jsx)(a.animated.div, {
                 className: I._q,
                 style: {
                     top: 20
@@ -127,9 +127,9 @@ let v = e => {
                     quest: n,
                     questContentPosition: S,
                     shouldShowDisclosure: !0,
-                    showShareLink: !t && k,
+                    showShareLink: !t && O,
                     sourceQuestContent: L,
-                    children: e => (0, i.jsx)(r.animated.div, {
+                    children: e => (0, i.jsx)(a.animated.div, {
                         style: {
                             opacity: (0, f.a)(b),
                             visibility: T || y ? "inherit" : "hidden"

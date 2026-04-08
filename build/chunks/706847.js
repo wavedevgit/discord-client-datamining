@@ -1,7 +1,7 @@
 /** chunk id: 706847 params = (module,exports,require) **/
 n.d(t, {
-    p: () => g,
-    z: () => p
+    p: () => p,
+    z: () => g
 });
 var i = n(627968),
     l = n(64700),
@@ -14,9 +14,9 @@ var i = n(627968),
     u = n(406704),
     h = n(652215),
     m = n(985018),
-    A = n(878776);
+    A = n(888193);
 
-function g(e) {
+function p(e) {
     let {
         channel: t,
         narrow: n
@@ -52,7 +52,7 @@ function g(e) {
     })
 }
 
-function p(e) {
+function g(e) {
     let {
         channel: t,
         narrow: n

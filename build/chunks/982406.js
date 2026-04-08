@@ -6,11 +6,11 @@ var n = a(627968),
     r = a(64700),
     o = a(503698),
     i = a.n(o),
-    c = a(776231),
-    l = a(664111),
+    l = a(776231),
+    c = a(664111),
     s = a(67281),
     _ = a(838541),
-    d = a(878159);
+    d = a(525078);
 
 function u(e) {
     let {
@@ -18,11 +18,11 @@ function u(e) {
         posterUrl: a,
         guildId: o,
         className: u
-    } = e, p = t.width ?? 0, m = t.height ?? 0, b = p >= m ? "landscape" : "portrait", f = (0, c.AE)({
+    } = e, p = t.width ?? 0, m = t.height ?? 0, b = p >= m ? "landscape" : "portrait", f = (0, l.AE)({
         src: a,
         width: p,
         height: m
-    }), C = r.useCallback(e => {
+    }), [C, g] = r.useState(!1), h = r.useCallback(e => {
         let {
             playerState: a,
             isControlBarExpanded: r
@@ -39,16 +39,19 @@ function u(e) {
             title: t.title,
             guildId: o,
             playerState: a,
-            isControlBarExpanded: r
+            isControlBarExpanded: r,
+            isFullScreen: C
         })
-    }, [t, o]);
+    }, [t, o, C]);
     return (0, n.jsx)("div", {
         className: i()(d.k, u),
+        onKeyUp: e => e.stopPropagation(),
+        onKeyDown: e => e.stopPropagation(),
         style: {
             aspectRatio: `${p} / ${m}`,
             maxHeight: _.Rk
         },
-        children: (0, n.jsx)(l.A, {
+        children: (0, n.jsx)(c.A, {
             src: t.url,
             downloadUrl: t.url,
             downloadContentType: t.content_type,
@@ -58,11 +61,14 @@ function u(e) {
             active: !1,
             orientation: b,
             loadingSpinnerPosition: "center",
-            renderPersistentOverlay: C,
+            renderPersistentOverlay: h,
             targetTimeSec: 1 / 0,
             parentTransitionState: null,
             onOptimisticProgressUpdate: () => {},
-            performanceClockStartTime: 0
+            performanceClockStartTime: 0,
+            onFullscreenChange: e => {
+                g(e)
+            }
         })
     })
 }

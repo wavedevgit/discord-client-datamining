@@ -1,6 +1,6 @@
 /** chunk id: 911411 params = (module,exports,require) **/
 n.d(t, {
-    A: () => g
+    A: () => p
 }), n(321073);
 var i = n(311907),
     l = n(451988),
@@ -34,7 +34,7 @@ class A extends i.Ay.Store {
         return h(e)
     }
 }
-let g = new A(s.h, {
+let p = new A(s.h, {
     PRESENCE_SUBSCRIPTIONS_ADD: function(e) {
         let {
             subscription: t
@@ -54,14 +54,14 @@ let g = new A(s.h, {
         } = t;
         if (h(t) || m + o.dm < Date.now()) return n;
         let A = `${l}:${s}`,
-            g = o.dm + Date.now();
+            p = o.dm + Date.now();
         return d[A] = {
             userId: i,
             applicationId: l,
             partyId: s,
             messageId: a,
             channelId: r,
-            expiresAt: g
+            expiresAt: p
         }, u.delay(), !0
     },
     CONNECTION_OPEN: m,

@@ -5,8 +5,8 @@ n.d(t, {
 }), n(323874), n(14289), n(35956);
 var i, l = n(627968),
     s = n(64700),
-    a = n(503698),
-    r = n.n(a),
+    r = n(503698),
+    a = n.n(r),
     o = n(299619),
     d = n(172218),
     c = n(158954),
@@ -18,7 +18,7 @@ var i, l = n(627968),
     g = n(354287),
     A = n(768349),
     x = n(838541),
-    f = n(498272),
+    f = n(401821),
     C = ((i = {})[i.BOT = 0] = "BOT", i[i.ACTIVITY = 1] = "ACTIVITY", i);
 
 function E(e) {
@@ -29,7 +29,7 @@ function E(e) {
     } = e;
     return null != t ? (0, l.jsx)(c.DUT, {
         onClick: t,
-        className: r()({
+        className: a()({
             [f.or]: null != t
         }, i),
         children: n
@@ -44,7 +44,7 @@ function I(e) {
     let {
         title: n,
         header: i,
-        footer: a,
+        footer: r,
         info: C,
         staticBannerSrc: I,
         videoBannerSrc: v,
@@ -71,7 +71,7 @@ function I(e) {
     let {
         primaryColor: R,
         secondaryColor: P
-    } = (0, h.A)(T ?? I), D = `linear-gradient(45deg, ${R}, ${P})`, M = (0, u.bG)([m.A], () => m.A.useReducedMotion), w = s.useRef(!1), O = (0, d.K)(e => {
+    } = (0, h.A)(T ?? I), D = `linear-gradient(45deg, ${R}, ${P})`, M = (0, u.bG)([m.A], () => m.A.useReducedMotion), w = s.useRef(!1), k = (0, d.K)(e => {
         !1 === w.current && e && (S?.onView?.(), (0, g.wV)({
             appId: S.id,
             linkType: S.linkType,
@@ -81,7 +81,7 @@ function I(e) {
             channelId: S.channelId,
             messageId: S.messageId
         }), w.current = !0)
-    }, void 0), k = null != I, U = null != v && !1 === M, B = k || U, G = 0 === b ? f.pv : f.$g, F = s.useRef(null), H = s.useCallback(() => {
+    }, void 0), O = null != I, U = null != v && !1 === M, B = O || U, G = 0 === b ? f.pv : f.$g, F = s.useRef(null), H = s.useCallback(() => {
         let e = F.current;
         null == e || ("hidden" === getComputedStyle(e).visibility ? e.pause() : e.play())
     }, []), V = s.useMemo(() => !!U && new URL(v).pathname.endsWith(".gif"), [U, v]), q = s.useMemo(() => {
@@ -108,11 +108,11 @@ function I(e) {
         }
     }, [L, S]);
     return (0, l.jsxs)("div", {
-        ref: O,
+        ref: k,
         className: f.E6,
         children: [B && (0, l.jsxs)(E, {
             onClick: W,
-            className: r()(f.cy, G, {
+            className: a()(f.cy, G, {
                 [f.wk]: U
             }),
             children: [U && (V ? (0, l.jsx)("div", {
@@ -127,7 +127,7 @@ function I(e) {
                 loop: !0,
                 muted: !0,
                 className: f.O9
-            })), k && (0, l.jsx)("div", {
+            })), O && (0, l.jsx)("div", {
                 className: f.LR,
                 style: {
                     backgroundImage: `url(${I})`
@@ -147,7 +147,7 @@ function I(e) {
                     children: i
                 }), (0, l.jsxs)(E, {
                     onClick: q,
-                    className: r()(f.FG, {
+                    className: a()(f.FG, {
                         [f.ry]: null != q
                     }),
                     children: [null != T && (0, l.jsx)("div", {
@@ -169,14 +169,14 @@ function I(e) {
                         })]
                     })]
                 }), y.length > 0 && (0, l.jsx)("div", {
-                    className: r()(f.AC, N ? f.ad : null),
+                    className: a()(f.AC, N ? f.ad : null),
                     children: y.map((e, t) => {
                         let {
                             label: n,
                             icon: i,
                             onClick: s,
-                            disabled: a,
-                            disabledReason: r,
+                            disabled: r,
+                            disabledReason: a,
                             submitting: o,
                             trackingArea: d,
                             isDeadEnd: u,
@@ -188,7 +188,7 @@ function I(e) {
                             targetElementRef: h,
                             children: (0, l.jsx)(c.K0, {
                                 variant: p ? "overlay-primary" : "overlay-secondary",
-                                disabled: a || null != r,
+                                disabled: r || null != a,
                                 loading: o,
                                 icon: i,
                                 "aria-label": n,
@@ -208,7 +208,7 @@ function I(e) {
                             className: f.uc,
                             children: [(0, l.jsx)(c.$nd, {
                                 variant: p ? "overlay-primary" : "overlay-secondary",
-                                disabled: a || null != r,
+                                disabled: r || null != a,
                                 loading: o,
                                 icon: i,
                                 text: n,
@@ -224,16 +224,16 @@ function I(e) {
                                     })
                                 },
                                 fullWidth: !0
-                            }), null != r && (0, l.jsx)(c.EYj, {
+                            }), null != a && (0, l.jsx)(c.EYj, {
                                 variant: "text-xs/medium",
                                 color: "none",
                                 className: f.H$,
-                                children: r
+                                children: a
                             })]
                         }, n)
                     })
                 })]
-            }), null != a && a]
+            }), null != r && r]
         })]
     })
 }

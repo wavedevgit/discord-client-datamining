@@ -26,7 +26,7 @@ var i = n(627968),
     C = n(561923),
     b = n(652215),
     T = n(985018),
-    I = n(978945);
+    I = n(521266);
 let v = function() {
     let {
         analyticsLocations: e

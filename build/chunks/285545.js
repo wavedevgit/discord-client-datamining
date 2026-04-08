@@ -32,15 +32,15 @@ function p(e) {
     }, [C]);
     let N = (0, r.bG)([d.A], () => d.A.isRefreshing(), []),
         S = (0, r.bG)([d.A], () => d.A.isHydrating(), []),
-        [x, v] = i.useState([]),
+        [v, x] = i.useState([]),
         {
-            loadId: b,
-            lastScrollEventTimestamp: y
+            loadId: y,
+            lastScrollEventTimestamp: b
         } = (0, r.cf)([d.A], () => ({
             loadId: d.A.getLoadId(),
             lastScrollEventTimestamp: d.A.lastScrollEvent()
         })),
-        O = x.filter(e => {
+        O = v.filter(e => {
             let {
                 item: t
             } = e;
@@ -55,14 +55,14 @@ function p(e) {
     i.useEffect(() => {
         if (N || T || null == L || null == O || O === L) return;
         let e = Date.now();
-        e - y > m.N && (l.A.gravityScrollEvent(e), s.k.trackFeedFirstScrollStarted())
-    }, [N, y, L, O, b, T]);
+        e - b > m.N && (l.A.gravityScrollEvent(e), s.k.trackFeedFirstScrollStarted())
+    }, [N, b, L, O, y, T]);
     let R = i.useCallback(e => {
             let {
                 viewableItems: t
             } = e;
             if (t.some(e => "end" === e.item.data.kind) && g(!0), 0 === t.length) return;
-            v(t);
+            x(t);
             let n = [],
                 i = (0, u.P0)(t),
                 r = Date.now();
@@ -216,7 +216,7 @@ function p(e) {
         data: U,
         loading: T,
         version: C,
-        visibleItemIds: x,
+        visibleItemIds: v,
         endVisible: p,
         isRefreshing: N,
         handleOnRefresh: j,

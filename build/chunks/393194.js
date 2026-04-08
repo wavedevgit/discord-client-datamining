@@ -12,20 +12,20 @@ var l = n(311907),
     c = n(576967),
     d = n(314307),
     u = n(985018),
-    h = n(750897);
+    h = n(724898);
 
 function m(e) {
     let {
         channel: t
     } = e, n = (0, r.kt)(t), {
         firstMessage: m
-    } = (0, l.cf)([o.A], () => o.A.getMessage(t.id)), A = new Set((0, r.zt)(t, n)), g = (0, a.gU)(t) ?? s.oyn;
+    } = (0, l.cf)([o.A], () => o.A.getMessage(t.id)), A = new Set((0, r.zt)(t, n)), p = (0, a.gU)(t) ?? s.oyn;
     return (0, i.jsxs)(d.Ay, {
         channelId: t.id,
         className: h.kL,
         children: [(0, i.jsx)("div", {
             className: h.P0,
-            children: (0, i.jsx)(g, {
+            children: (0, i.jsx)(p, {
                 className: h.Kk,
                 strokeWidth: 1.75
             })

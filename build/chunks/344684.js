@@ -1,6 +1,5 @@
 /** chunk id: 344684 params = (module,exports,require) **/
-"use strict";
-e.exports = {
+t.exports = {
     Hz: "trialRecipientContainer__2441a",
     w4: "trialRecipientRow__2441a",
     Pm: "trialRecipientRowDisplayName__2441a",

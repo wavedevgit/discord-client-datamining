@@ -4,8 +4,8 @@ n.d(t, {
 }), n(801541);
 var a = n(627968),
     i = n(64700),
-    s = n(284009),
-    l = n.n(s),
+    l = n(284009),
+    s = n.n(l),
     r = n(889137),
     o = n(412703),
     d = n(440703),
@@ -16,8 +16,8 @@ var a = n(627968),
     x = n(92246),
     p = n(792620),
     g = n(241124),
-    f = n(947926),
-    _ = n(717695),
+    _ = n(947926),
+    f = n(717695),
     v = n(164203),
     b = n(127219),
     j = n(438038),
@@ -25,14 +25,14 @@ var a = n(627968),
     C = n(223344),
     y = n(589939),
     S = n(443960),
-    E = n(899860),
-    T = n(633581),
+    T = n(899860),
+    E = n(633581),
     N = n(508575),
     I = n(847807),
     k = n(364329),
     O = n(545986),
     R = n(927813),
-    w = n(163459);
+    w = n(549592);
 let D = ["png", "gif", "webp"],
     M = [...D, "jpg", "jpeg"],
     P = Array.from(new Set([...M, "gif", "mp4", "webm"]));
@@ -133,8 +133,8 @@ let U = "1193992107035983872",
 
 function G() {
     var e;
-    let [t, s] = i.useState(B), c = i.useCallback(e => {
-        s({
+    let [t, l] = i.useState(B), c = i.useCallback(e => {
+        l({
             ...e,
             preview: !0
         })
@@ -166,23 +166,23 @@ function G() {
         let a = t.config.taskConfigV2.tasks,
             i = a[o.n.WATCH_VIDEO];
         if (null == i) return;
-        let s = {
+        let l = {
             ...i.assets
         };
         switch (e) {
             case "videoPlayerVideo":
-                s.video = {
+                l.video = {
                     url: n
                 };
                 break;
             case "videoPlayerVideoLowRes":
-                s.videoLowRes = {
+                l.videoLowRes = {
                     url: n
                 };
                 break;
             case "videoPlayerThumbnail":
-                s.video = {
-                    ...s.video,
+                l.video = {
+                    ...l.video,
                     thumbnail: n
                 };
                 break;
@@ -199,7 +199,7 @@ function G() {
                         ...a,
                         [o.n.WATCH_VIDEO]: {
                             ...i,
-                            assets: s
+                            assets: l
                         }
                     }
                 }
@@ -207,7 +207,7 @@ function G() {
         })
     }
 
-    function Q(e, n) {
+    function Y(e, n) {
         if ("questName" === e || "gameTitle" === e || "gamePublisher" === e) {
             var a, i;
             c({
@@ -227,12 +227,12 @@ function G() {
         }
     }
 
-    function Y(e, n, a) {
+    function Q(e, n, a) {
         if ("name" === e || "nameWithArticle" === e) {
-            var i, s;
+            var i, l;
             c({
                 ...t,
-                config: (i = t.config, s = {
+                config: (i = t.config, l = {
                     [e]: n
                 }, (0, r.YW)(i).with({
                     configVersion: 2
@@ -244,7 +244,7 @@ function G() {
                             ...e,
                             messages: {
                                 ...e.messages,
-                                ...s
+                                ...l
                             }
                         } : e)
                     }
@@ -275,7 +275,7 @@ function G() {
             return 10 * R.A.Seconds.MINUTE
         }, [t.config.taskConfigV2.tasks]),
         ee = i.useMemo(() => o.n.WATCH_VIDEO in t.config.taskConfigV2.tasks, [t.config.taskConfigV2.tasks]);
-    l()(!1 !== t.preview && null != t.preview, "Preview config must have property preview: true");
+    s()(!1 !== t.preview && null != t.preview, "Preview config must have property preview: true");
     let et = t.config.taskConfigV2.tasks[o.n.WATCH_VIDEO];
     return (0, a.jsxs)(m.IpV, {
         className: w.kL,
@@ -285,7 +285,7 @@ function G() {
             children: "Quest Preview Tool"
         }), (0, a.jsx)("div", {
             className: w.OA,
-            children: (0, a.jsx)(T.A, {
+            children: (0, a.jsx)(E.A, {
                 onSelect: function(e) {
                     K(e), null == e || (U(function(e) {
                         if (null == e.userStatus) return k.b.UNENROLLED;
@@ -324,29 +324,29 @@ function G() {
             children: "Messages"
         }), (0, a.jsxs)("div", {
             className: w.OA,
-            children: [(0, a.jsx)(E.A, {
+            children: [(0, a.jsx)(T.A, {
                 title: "Quest Name",
                 assetKey: "questName",
-                onMessageChange: Q,
+                onMessageChange: Y,
                 initialValue: t.config.messages.questName
-            }), (0, a.jsx)(E.A, {
+            }), (0, a.jsx)(T.A, {
                 title: "Game Title",
                 assetKey: "gameTitle",
-                onMessageChange: Q,
+                onMessageChange: Y,
                 initialValue: t.config.messages.gameTitle
-            }), (0, a.jsx)(E.A, {
+            }), (0, a.jsx)(T.A, {
                 title: "Game Publisher",
                 assetKey: "gamePublisher",
-                onMessageChange: Q,
+                onMessageChange: Y,
                 initialValue: t.config.messages.gamePublisher
-            }), ee && (0, a.jsx)(E.A, {
+            }), ee && (0, a.jsx)(T.A, {
                 title: "Video Title",
                 assetKey: "videoTitle",
                 onMessageChange: function(e, n) {
                     let a = t.config.taskConfigV2.tasks,
                         i = a[o.n.WATCH_VIDEO];
                     if (null == i) return;
-                    let s = {
+                    let l = {
                         ...i.messages,
                         [e]: n
                     };
@@ -360,7 +360,7 @@ function G() {
                                     ...a,
                                     [o.n.WATCH_VIDEO]: {
                                         ...i,
-                                        messages: s
+                                        messages: l
                                     }
                                 }
                             }
@@ -439,15 +439,15 @@ function G() {
                 children: ["Reward #", n + 1]
             }), (0, a.jsxs)("div", {
                 className: w.OA,
-                children: [(0, a.jsx)(E.A, {
+                children: [(0, a.jsx)(T.A, {
                     title: "Name",
                     assetKey: "name",
-                    onMessageChange: (e, t) => Y(e, t, n),
+                    onMessageChange: (e, t) => Q(e, t, n),
                     initialValue: e.messages.name
-                }), (0, a.jsx)(E.A, {
+                }), (0, a.jsx)(T.A, {
                     title: "Name With Article",
                     assetKey: "nameWithArticle",
-                    onMessageChange: (e, t) => Y(e, t, n),
+                    onMessageChange: (e, t) => Q(e, t, n),
                     initialValue: e.messages.nameWithArticle
                 }), e.type !== d.l.VIRTUAL_CURRENCY && (0, a.jsx)(S.A, {
                     title: "Asset",
@@ -604,8 +604,8 @@ function G() {
                             isPreview: !0,
                             source: "preview",
                             questId: "0",
-                            children: (0, a.jsx)(_.A, {
-                                children: (0, a.jsx)(f.Y, {
+                            children: (0, a.jsx)(f.A, {
+                                children: (0, a.jsx)(_.Y, {
                                     quest: t
                                 })
                             })
@@ -696,7 +696,7 @@ function G() {
                         (0, m.mMO)(async () => {
                             let {
                                 default: e
-                            } = await Promise.all([n.e("92868"), n.e("29636"), n.e("7634"), n.e("5501")]).then(n.bind(n, 201257));
+                            } = await Promise.all([n.e("92868"), n.e("29636"), n.e("7634"), n.e("36855")]).then(n.bind(n, 201257));
                             return n => (0, a.jsx)(e, {
                                 ...n,
                                 openStartClockTime: performance.now(),

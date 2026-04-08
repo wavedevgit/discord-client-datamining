@@ -6,14 +6,14 @@ var i = n(627968),
     l = n(64700),
     s = n(687498);
 n(311907), n(859703);
-var a = n(341915),
-    r = n(890687),
+var r = n(341915),
+    a = n(890687),
     o = n(73473),
     d = n(288531),
     c = n(285433),
     u = n(394900);
 n(433745);
-var _ = n(915689);
+var _ = n(502454);
 
 function m(e) {
     let {
@@ -21,7 +21,7 @@ function m(e) {
         location: n,
         contentPosition: m,
         sourceQuestContent: h
-    } = e, p = (0, r.LS)(t), {
+    } = e, p = (0, a.LS)(t), {
         containerRef: g,
         size: A,
         height: x
@@ -37,11 +37,11 @@ function m(e) {
         questOrQuests: t,
         questContent: n,
         questContentPosition: m,
-        trackGuildAndChannelMetadata: n === a.uF.QUESTS_EMBED,
+        trackGuildAndChannelMetadata: n === r.uF.QUESTS_EMBED,
         sourceQuestContent: h,
         children: e => (0, i.jsx)(s.animated.div, {
             style: {
-                maxHeight: n === a.uF.QUESTS_EMBED ? void 0 : f.to({
+                maxHeight: n === r.uF.QUESTS_EMBED ? void 0 : f.to({
                     range: [0, 1],
                     output: [100, N]
                 })

@@ -24,10 +24,10 @@ var i = n(627968),
     T = n(761929),
     N = n(458518),
     S = n(107361),
-    x = n(389405),
-    v = n(549711),
-    b = n(313961),
-    y = n(264140),
+    v = n(389405),
+    x = n(549711),
+    y = n(313961),
+    b = n(264140),
     O = n(72800),
     L = n(30747),
     R = n(811736),
@@ -44,7 +44,7 @@ var i = n(627968),
     H = n(386467),
     F = n(490358),
     Y = n(961973),
-    W = n(140354),
+    W = n(917973),
     K = n(440293),
     q = n(551036),
     z = n(46533),
@@ -78,10 +78,10 @@ var i = n(627968),
     eT = n(97469),
     eN = n(718446),
     eS = n(734057),
-    ex = n(650048),
-    ev = n(696451),
-    eb = n(71393),
-    ey = n(309010),
+    ev = n(650048),
+    ex = n(696451),
+    ey = n(71393),
+    eb = n(309010),
     eO = n(519057),
     eL = n(954571),
     eR = n(403362),
@@ -93,7 +93,7 @@ var i = n(627968),
     eU = n(539916),
     eG = n(613057),
     ek = n(355097),
-    eV = n(325593);
+    eV = n(373838);
 let eB = (0, c.Fe)({
         createPromise: () => Promise.resolve().then(n.bind(n, 500831)),
         webpackId: 500831
@@ -159,8 +159,8 @@ let eB = (0, c.Fe)({
     eZ = e => {
         let {
             match: t
-        } = e, n = (0, N.o)(), a = (0, A.bG)([eS.A, ey.A], () => {
-            let e = ey.A.getChannelId();
+        } = e, n = (0, N.o)(), a = (0, A.bG)([eS.A, eb.A], () => {
+            let e = eb.A.getChannelId();
             return eS.A.getChannel(e)
         }), {
             guildId: l,
@@ -169,8 +169,8 @@ let eB = (0, c.Fe)({
             threadId: c
         } = t.params, u = s ?? void 0;
         null == u && null != t.params.gameShopPageIndex && (u = ej.VV.GAME_SHOP);
-        let h = (0, A.bG)([eb.A], () => eb.A.getGuild(l)),
-            _ = (0, A.bG)([ev.Ay], () => null == l ? null : ev.Ay.getSelfMember(l)),
+        let h = (0, A.bG)([ey.A], () => ey.A.getGuild(l)),
+            _ = (0, A.bG)([ex.Ay], () => null == l ? null : ex.Ay.getSelfMember(l)),
             p = (0, ec.C$)(l, "ChannelRenderer"),
             E = (0, eu.N)("ChannelRenderer"),
             I = h?.features.has(eM.GuildFeatures.GAME_SERVERS) ?? !1,
@@ -198,10 +198,10 @@ let eB = (0, c.Fe)({
                 autoNavigate: !1
             }).catch(() => {}))
         }, [T, l]);
-        let x = (0, K.$)(l);
+        let v = (0, K.$)(l);
         if (null != l && null != u && (0, ej.jq)(u)) switch (u) {
             case ej.VV.ROLE_SUBSCRIPTIONS:
-                return x ? (0, i.jsx)(eF, {
+                return v ? (0, i.jsx)(eF, {
                     guildId: l,
                     initialTab: M.B.GUILD_ROLE_SUBSCRIPTIONS
                 }) : (0, i.jsx)(q.A, {
@@ -260,7 +260,7 @@ let eB = (0, c.Fe)({
                     guildId: l
                 });
             case ej.VV.REPORT_TO_MOD:
-                return (0, i.jsx)(y.A, {});
+                return (0, i.jsx)(b.A, {});
             default:
                 (0, eR.xb)(u)
         }
@@ -275,7 +275,7 @@ let eB = (0, c.Fe)({
                 inputSkuId: e
             }, a.id)
         }
-        return (0, i.jsx)(y.A, {})
+        return (0, i.jsx)(b.A, {})
     },
     eJ = r.memo(function() {
         let {
@@ -285,8 +285,8 @@ let eB = (0, c.Fe)({
             notificationCenterVariant: n
         } = (0, ea.X8)({
             location: "Sidebar"
-        }), r = (0, A.bG)([ey.A], () => t ?? ey.A.getChannelId(e));
-        return window.location.pathname.startsWith(eM.BVt.CHANNEL(eM.gNP)) ? ("sidebar" !== n && (0, eC.bG)(ex.A.defaultRoute), (0, i.jsx)(es.A, {
+        }), r = (0, A.bG)([eb.A], () => t ?? eb.A.getChannelId(e));
+        return window.location.pathname.startsWith(eM.BVt.CHANNEL(eM.gNP)) ? ("sidebar" !== n && (0, eC.bG)(ev.A.defaultRoute), (0, i.jsx)(es.A, {
             includePanelSpacing: !0
         })) : window.location.pathname.startsWith(eM.BVt.GLOBAL_DISCOVERY) || window.location.pathname.startsWith(eM.BVt.GUILD_DISCOVERY) || (0, eh.r$)() ? (0, i.jsx)(B.A, {}) : null != e ? (0, i.jsx)(z.A, {
             selectedChannelId: r,
@@ -347,7 +347,7 @@ function e8() {
         topLevelRoute: !0
     })
 }
-let te = e => (0, i.jsx)(x.A, {
+let te = e => (0, i.jsx)(v.A, {
         ...e
     }),
     tt = () => (0, i.jsx)(ed.A, {}),
@@ -455,7 +455,7 @@ function ts(e) {
         hideSidebar: a,
         hideChannelList: s,
         isSidebarOpen: o
-    } = e, d = (0, A.bG)([b.A], () => b.A.isFullscreenInContext()), c = (0, j.D)("ChannelSidebar"), m = (0, D.useAppSidebarState)(e => !e.isOpen) && c;
+    } = e, d = (0, A.bG)([y.A], () => y.A.isFullscreenInContext()), c = (0, j.D)("ChannelSidebar"), m = (0, D.useAppSidebarState)(e => !e.isOpen) && c;
     r.useLayoutEffect(() => {
         if (c) {
             let e = parseInt(h.w.get(E.o) ?? "");
@@ -569,7 +569,7 @@ function to() {
         p = r.useCallback(() => en.A.openSidebar(), []),
         g = (0, j.D)("AppView"),
         E = (0, D.useAppSidebarState)(e => !e.isOpen),
-        I = (0, A.bG)([b.A], () => b.A.isFullscreenInContext()),
+        I = (0, A.bG)([y.A], () => y.A.isFullscreenInContext()),
         f = (0, A.bG)([G.A], () => G.A.isFrameActive());
     return (0, i.jsx)("div", {
         className: eV.kL,
@@ -592,13 +592,13 @@ function to() {
                         children: (0, i.jsxs)(S.A.Provider, {
                             value: p,
                             children: [(0, i.jsxs)(o.dO, {
-                                children: [(0, i.jsx)(v.A, {
+                                children: [(0, i.jsx)(x.A, {
                                     path: eM.BVt.ACTIVITY,
                                     disableTrack: !0,
                                     children: (0, i.jsx)(o.rd, {
                                         to: eM.BVt.ME
                                     })
-                                }), (0, i.jsx)(v.A, {
+                                }), (0, i.jsx)(x.A, {
                                     path: eM.BVt.ACTIVITY_DETAILS(":applicationId"),
                                     render: te,
                                     impressionName: d.ImpressionNames.ACTIVITY_DETAILS,
@@ -610,21 +610,21 @@ function to() {
                                             application_id: t?.params.applicationId
                                         }
                                     }
-                                }), (0, i.jsx)(v.A, {
+                                }), (0, i.jsx)(x.A, {
                                     path: eM.BVt.APPLICATION_LIBRARY,
                                     render: e2,
                                     impressionName: d.ImpressionNames.APPLICATION_LIBRARY,
                                     disableTrack: !0
-                                }), (0, i.jsx)(v.A, {
+                                }), (0, i.jsx)(x.A, {
                                     path: eM.BVt.APPLICATION_STORE,
                                     render: e3,
                                     impressionName: d.ImpressionNames.APPLICATION_STORE,
                                     disableTrack: !0
-                                }), (0, i.jsx)(v.A, {
+                                }), (0, i.jsx)(x.A, {
                                     path: eM.BVt.COLLECTIBLES_SHOP_WITH_TAB(":tab"),
                                     render: e4(),
                                     disableTrack: !0
-                                }), h && (0, i.jsx)(v.A, {
+                                }), h && (0, i.jsx)(x.A, {
                                     path: eM.BVt.COLLECTIBLES_SHOP_LAYOUT(":layoutId"),
                                     render: function(e) {
                                         let {
@@ -641,7 +641,7 @@ function to() {
                                         })
                                     },
                                     disableTrack: !0
-                                }), h && (0, i.jsx)(v.A, {
+                                }), h && (0, i.jsx)(x.A, {
                                     path: eM.BVt.COLLECTIBLES_SHOP_COLLECTION_DETAIL(":collectionId"),
                                     render: function(e) {
                                         let {
@@ -658,90 +658,90 @@ function to() {
                                         })
                                     },
                                     disableTrack: !0
-                                }), (0, i.jsx)(v.A, {
+                                }), (0, i.jsx)(x.A, {
                                     path: eM.BVt.COLLECTIBLES_SHOP,
                                     render: e4(),
                                     disableTrack: !0
-                                }), (0, i.jsx)(v.A, {
+                                }), (0, i.jsx)(x.A, {
                                     path: eM.BVt.COLLECTIBLES_SHOP_PRODUCT_DETAIL(":skuId"),
                                     render: e4(),
                                     disableTrack: !0
-                                }), (0, i.jsx)(v.A, {
+                                }), (0, i.jsx)(x.A, {
                                     path: eM.BVt.ICYMI,
                                     render: tn,
                                     disableTrack: !0
-                                }), (0, i.jsx)(v.A, {
+                                }), (0, i.jsx)(x.A, {
                                     path: eM.BVt.MESSAGE_REQUESTS,
                                     render: ti,
                                     disableTrack: !0
-                                }), (0, i.jsx)(v.A, {
+                                }), (0, i.jsx)(x.A, {
                                     path: eM.BVt.FAMILY_CENTER,
                                     render: tr,
                                     disableTrack: !0
-                                }), (0, i.jsx)(v.A, {
+                                }), (0, i.jsx)(x.A, {
                                     path: eM.BVt.ME,
                                     exact: !0,
                                     render: tt,
                                     impressionName: d.ImpressionNames.FRIENDS,
                                     disableTrack: !0
-                                }), c === ea.U5.SIDEBAR && (0, i.jsx)(v.A, {
+                                }), c === ea.U5.SIDEBAR && (0, i.jsx)(x.A, {
                                     path: eM.BVt.CHANNEL(eM.gNP, eI.pv.channelId({
                                         optional: !0
                                     }), ":messageId?"),
                                     render: e7,
                                     disableTrack: !0
-                                }), (0, i.jsx)(v.A, {
+                                }), (0, i.jsx)(x.A, {
                                     path: [eM.BVt.CHANNEL_THREAD_VIEW(eI.pv.guildId(), eI.pv.channelId(), ":threadId", ":messageId?"), eM.BVt.CHANNELS_GAME_SHOP(eI.pv.guildId(), ":gameShopPageIndex", ":gameShopSkuId?", ":gameShopSlug?"), eM.BVt.CHANNEL(eM.ME, eI.pv.channelId()), eM.BVt.CHANNEL(eI.pv.guildId(), eI.pv.channelId({
                                         optional: !0
                                     }), ":messageId?")],
                                     render: e0,
                                     impressionName: d.ImpressionNames.GUILD_CHANNEL,
                                     disableTrack: !0
-                                }), (0, i.jsx)(v.A, {
+                                }), (0, i.jsx)(x.A, {
                                     path: eM.BVt.GLOBAL_DISCOVERY,
                                     render: e1,
                                     impressionName: d.ImpressionNames.GLOBAL_DISCOVERY,
                                     disableTrack: !0,
                                     exact: !0
-                                }), (0, i.jsx)(v.A, {
+                                }), (0, i.jsx)(x.A, {
                                     path: eM.BVt.GLOBAL_DISCOVERY_SERVERS,
                                     render: e1,
                                     impressionName: d.ImpressionNames.GLOBAL_DISCOVERY,
                                     disableTrack: !0
-                                }), (0, i.jsx)(v.A, {
+                                }), (0, i.jsx)(x.A, {
                                     path: eM.BVt.GLOBAL_DISCOVERY_APPS,
                                     render: e1,
                                     impressionName: d.ImpressionNames.GLOBAL_DISCOVERY_APPS,
                                     disableTrack: !0
-                                }), (0, i.jsx)(v.A, {
+                                }), (0, i.jsx)(x.A, {
                                     path: eM.BVt.QUEST_HOME_DEPRECATED,
                                     render: e1,
                                     impressionName: d.ImpressionNames.QUEST_HOME,
                                     disableTrack: !0
-                                }), (0, i.jsx)(v.A, {
+                                }), (0, i.jsx)(x.A, {
                                     path: eM.BVt.QUEST_HOME,
                                     render: e8,
                                     impressionName: d.ImpressionNames.QUEST_HOME,
                                     disableTrack: !0
-                                }), (0, i.jsx)(v.A, {
+                                }), (0, i.jsx)(x.A, {
                                     path: eM.BVt.GUILD_DISCOVERY,
                                     render: e1,
                                     impressionName: d.ImpressionNames.GUILD_DISCOVERY,
                                     disableTrack: !0
-                                }), (0, i.jsx)(v.A, {
+                                }), (0, i.jsx)(x.A, {
                                     path: eM.BVt.GUILD_MEMBER_VERIFICATION(eI.pv.guildId()),
                                     render: e6,
                                     impressionName: d.ImpressionNames.GUILD_MEMBER_VERIFICATION,
                                     disableTrack: !0
-                                }), (0, i.jsx)(v.A, {
+                                }), (0, i.jsx)(x.A, {
                                     path: eM.BVt.GUILD_MEMBER_VERIFICATION_FOR_HUB(eI.pv.guildId(), ":inviteCode?"),
                                     render: e5
-                                }), (0, i.jsx)(v.A, {
+                                }), (0, i.jsx)(x.A, {
                                     path: eM.BVt.GUILD_FEATURE(":feature", eI.pv.guildId()),
                                     exact: !0,
                                     render: ta,
                                     disableTrack: !0
-                                }), (0, i.jsx)(v.A, {
+                                }), (0, i.jsx)(x.A, {
                                     path: eM.BVt.FEATURE(":feature"),
                                     exact: !0,
                                     render: ta,

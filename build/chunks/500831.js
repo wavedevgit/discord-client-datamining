@@ -25,10 +25,10 @@ var i = n(627968),
     T = n(663111),
     N = n(851109),
     S = n(667086),
-    x = n(87001),
-    v = n(52144),
-    b = n(966597),
-    y = n(922281),
+    v = n(87001),
+    x = n(52144),
+    y = n(966597),
+    b = n(922281),
     O = n(97469),
     L = n(253932),
     R = n(430363),
@@ -63,14 +63,14 @@ let k = (0, a.v)(() => ({
         }), {
             enabled: Y,
             inInbox: W
-        } = b.A.useConfig({
+        } = y.A.useConfig({
             location: "AppTitleBar"
         });
         r.useLayoutEffect(() => {
             w.Ay.setMinimumSize(800, 500)
         }, []);
         let K = (0, O.NC)(),
-            q = (0, s.bG)([j.A, x.A], () => (0, U._U)()),
+            q = (0, s.bG)([j.A, v.A], () => (0, U._U)()),
             z = (0, l.xl)(),
             $ = function(e) {
                 let {
@@ -100,7 +100,7 @@ let k = (0, a.v)(() => ({
                     trailing: (0, i.jsxs)(i.Fragment, {
                         children: [(0, i.jsx)(m.A, {}), k ? (0, i.jsx)(P.A, {}) : null, F && (0, i.jsx)(g.A, {}), (0, i.jsx)(h.A, {
                             canShowReminder: !0
-                        }), Y && !W && (0, i.jsx)(y.A, {}), H && (0, i.jsx)(v.A, {
+                        }), Y && !W && (0, i.jsx)(b.A, {}), H && (0, i.jsx)(x.A, {
                             ..."RECENTS" === $ ? e : {}
                         }), n ? (0, i.jsx)(f.w, {
                             focusSectionProps: "HELP" === $ ? e : void 0

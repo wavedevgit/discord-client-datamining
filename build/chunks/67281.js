@@ -7,8 +7,8 @@ a(64700);
 var r = a(503698),
     o = a.n(r),
     i = a(311907),
-    c = a(876230),
-    l = a(990078),
+    l = a(876230),
+    c = a(990078),
     s = a(397927),
     _ = a(429913),
     d = a(885151),
@@ -20,7 +20,7 @@ var r = a(503698),
     C = a(963135),
     g = a(331446),
     h = a(985018),
-    v = a(2398);
+    v = a(653455);
 
 function x(e) {
     let {
@@ -32,16 +32,16 @@ function x(e) {
         applicationId: t,
         location: "ClipEmbed",
         source: u.Ob.ClipEmbed
-    }), c = o?.name ?? r?.name;
-    return null == c ? null : null != i ? (0, n.jsxs)(n.Fragment, {
+    }), l = o?.name ?? r?.name;
+    return null == l ? null : null != i ? (0, n.jsxs)(n.Fragment, {
         children: [(0, n.jsx)(s.DUT, {
             tag: "span",
             className: v.On,
             onClick: i,
-            children: c
+            children: l
         }), a]
     }) : (0, n.jsxs)(n.Fragment, {
-        children: [c, a]
+        children: [l, a]
     })
 }
 let I = function(e) {
@@ -51,12 +51,14 @@ let I = function(e) {
         applicationId: r,
         title: _,
         guildId: d,
-        playerState: u = c.Q6.PAUSED,
-        isControlBarExpanded: p = !0
-    } = e, I = (0, i.yK)([m.default], () => a.map(e => m.default.getUser(e)).filter(f.Vq) ?? []), y = null != t ? (0, b.Fe)(new Date(t)) : null;
+        playerState: u = l.Q6.PAUSED,
+        isControlBarExpanded: p = !0,
+        isFullScreen: I = !1
+    } = e, y = (0, i.yK)([m.default], () => a.map(e => m.default.getUser(e)).filter(f.Vq) ?? []), S = null != t ? (0, b.Fe)(new Date(t)) : null;
     return (0, n.jsxs)("div", {
         className: o()(v.oK, {
-            [v.pd]: u === c.Q6.PLAYING && !p
+            [v.pd]: u === l.Q6.PLAYING && !p,
+            [v.aS]: I
         }),
         children: [(0, n.jsx)("div", {
             className: v.Lu
@@ -66,7 +68,7 @@ let I = function(e) {
                 className: v.yR,
                 children: [(0, n.jsxs)("div", {
                     className: v.$,
-                    children: [(0, n.jsx)(l.m, {
+                    children: [(0, n.jsx)(c.m, {
                         asContainer: !0,
                         text: h.intl.string(h.t["/fgfWh"]),
                         children: (0, n.jsx)(s.xgA, {
@@ -80,24 +82,24 @@ let I = function(e) {
                         color: "always-white",
                         children: null != _ && _.length > 0 ? _ : h.intl.string(h.t.Cyxddp)
                     })]
-                }), (null != r || null != y) && (0, n.jsxs)(s.Text, {
+                }), (null != r || null != S) && (0, n.jsxs)(s.Text, {
                     className: v.yu,
                     variant: "text-sm/normal",
                     color: "always-white",
                     children: [(0, n.jsx)(x, {
                         applicationId: r,
-                        separator: null != y ? " \xb7 " : void 0
-                    }), y]
+                        separator: null != S ? " \xb7 " : void 0
+                    }), S]
                 })]
-            }), I.length > 0 && (0, n.jsxs)("div", {
+            }), y.length > 0 && (0, n.jsxs)("div", {
                 className: v.HD,
                 role: "group",
                 "aria-label": h.intl.string(h.t.WTozwe),
-                children: [I.slice(0, 4).map(e => (0, n.jsx)(C.A, {
+                children: [y.slice(0, 4).map(e => (0, n.jsx)(C.A, {
                     user: e,
                     guildId: d
-                }, e.id)), I.length > 4 && (0, n.jsx)(g.w, {
-                    participants: I,
+                }, e.id)), y.length > 4 && (0, n.jsx)(g.w, {
+                    participants: y,
                     maxVisibleParticipants: 4,
                     guildId: d
                 })]

@@ -1,12 +1,12 @@
 /** chunk id: 772244 params = (module,exports,require) **/
 n.d(t, {
-    R: () => s,
+    R: () => l,
     q: () => r
 });
 var a = n(64700),
     i = n(397927);
 
-function s() {
+function l() {
     let [{
         spring: e
     }, t] = (0, i.zhh)(() => ({
@@ -25,7 +25,7 @@ function s() {
     }
 }
 n(272111);
-let l = () => {
+let s = () => {
     let e = document.body.style.getPropertyValue("--custom-guild-sidebar-width").slice(0, -2);
     return parseInt("" !== e ? e : "375")
 };
@@ -33,10 +33,10 @@ let l = () => {
 function r() {
     return {
         label: ! function() {
-            let [e, t] = a.useState(() => 270 > l());
+            let [e, t] = a.useState(() => 270 > s());
             return a.useEffect(() => {
                 let e = new MutationObserver(() => {
-                    t(270 > l())
+                    t(270 > s())
                 });
                 return e.observe(document.body, {
                     attributes: !0,

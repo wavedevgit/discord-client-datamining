@@ -6,8 +6,8 @@ var i = n(627968);
 n(64700);
 var l = n(341915),
     s = n(665816),
-    a = n(654487),
-    r = n(985018);
+    r = n(654487),
+    a = n(985018);
 
 function o(e) {
     let {
@@ -15,8 +15,8 @@ function o(e) {
     } = e;
     return (0, i.jsx)(s.i, {
         questId: t,
-        fallbackReason: a.eA.EXCLUDED_QUEST,
-        bodyText: r.intl.string(r.t.NIliWX),
+        fallbackReason: r.eA.EXCLUDED_QUEST,
+        bodyText: a.intl.string(a.t.NIliWX),
         questContent: l.uF.EXCLUDED_QUEST_EMBED
     })
 }

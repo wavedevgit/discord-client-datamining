@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     l = n(64700),
     s = n(503698),
-    a = n.n(s),
-    r = n(110259),
+    r = n.n(s),
+    a = n(110259),
     o = n(311907),
     d = n(397927),
     c = n(846293),
@@ -26,7 +26,7 @@ var i = n(627968),
     b = n(168428),
     T = n(652215),
     y = n(985018),
-    N = n(105544);
+    N = n(247569);
 
 function S(e) {
     let {
@@ -39,8 +39,8 @@ function S(e) {
         analyticsLocations: w
     } = (0, m.Ay)(_.A.INVITE_EMBED);
     (0, h.A)({
-        name: r.ImpressionNames.INVITE_EMBED,
-        type: r.ImpressionTypes.VIEW,
+        name: a.ImpressionNames.INVITE_EMBED,
+        type: a.ImpressionTypes.VIEW,
         properties: {
             invite_code: t.code,
             invite_guild_id: t.guild?.id,
@@ -53,8 +53,8 @@ function S(e) {
     }), l.useLayoutEffect(() => {
         P((x.current?.clientHeight ?? 0) > 292)
     }, [P]);
-    let O = (0, p.oO)(t),
-        k = l.useCallback(() => {
+    let k = (0, p.oO)(t),
+        O = l.useCallback(() => {
             !R || S && L(!1)
         }, [S, R]),
         U = l.useCallback(() => {
@@ -64,25 +64,25 @@ function S(e) {
             height: S ? 292 : x.current.clientHeight + 36 + 48,
             transition: M ? void 0 : "height 0.2s ease"
         } : {}, [S, R, M]);
-    return null == O ? (0, i.jsx)(b.A, {}) : (0, i.jsxs)(d.sqX, {
-        className: a()(N.Gg, {
+    return null == k ? (0, i.jsx)(b.A, {}) : (0, i.jsxs)(d.sqX, {
+        className: r()(N.Gg, {
             [N.vk]: R && S
         }),
-        onClick: k,
+        onClick: O,
         style: B,
         "aria-label": y.intl.string(y.t.dcl9MQ),
         children: [(0, i.jsxs)("div", {
             className: N.uY,
             ref: x,
             children: [(0, i.jsx)(C.J$, {
-                profile: O,
+                profile: k,
                 className: N.vK
             }), (0, i.jsx)(C.CG, {
-                profile: O
+                profile: k
             }), (0, i.jsx)(f.A, {
-                profile: O
+                profile: k
             }), (0, i.jsx)(A.P, {
-                profile: O,
+                profile: k,
                 className: N.rb
             }), (0, i.jsx)(v.A, {
                 guild: null != t.guild ? (0, I.DY)(t.guild) : null,
@@ -99,20 +99,20 @@ function S(e) {
                 text: y.intl.string(y.t.xdCLeM)
             })
         }) : null, (0, i.jsxs)("div", {
-            className: a()(N.qr, {
+            className: r()(N.qr, {
                 [N.iK]: R
             }),
             children: [R && S ? (0, i.jsx)("div", {
                 className: N.D7
             }) : null, (0, i.jsx)("div", {
-                className: a()(N.z8, {
+                className: r()(N.z8, {
                     [N.it]: R && S
                 }),
                 children: (0, i.jsx)("div", {
                     className: N.UD,
                     children: (0, i.jsx)(j, {
                         invite: t,
-                        profile: O,
+                        profile: k,
                         isMemberOfGuild: n,
                         message: s,
                         submitting: D,
@@ -130,8 +130,8 @@ function j(e) {
         invite: t,
         profile: n,
         isMemberOfGuild: s,
-        message: a,
-        submitting: r,
+        message: r,
+        submitting: a,
         onTransitionToInviteChannel: o,
         onAcceptInstantInvite: d
     } = e, {
@@ -144,15 +144,15 @@ function j(e) {
         (0, c.he)({
             invite: t,
             action: e,
-            inviter_id: a.author.id,
-            invite_message_id: a.id,
-            invite_instance_id: (0, E._U)(t.code, a.id)
+            inviter_id: r.author.id,
+            invite_message_id: r.id,
+            invite_instance_id: (0, E._U)(t.code, r.id)
         }, p)
-    }, [t, a, p, s]);
+    }, [t, r, p, s]);
     return null == h ? null : (0, i.jsx)(x.Y, {
         guildId: u,
         ctaType: h,
-        submitting: r,
+        submitting: a,
         onGoToGuild: o,
         onAcceptInvite: d,
         onStartApplication: d,

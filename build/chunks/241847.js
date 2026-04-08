@@ -14,17 +14,17 @@ var i = n(627968),
     h = n(572487),
     m = n(798286),
     A = n(83942),
-    g = n(259374),
-    p = n(730986),
+    p = n(259374),
+    g = n(730986),
     f = n(786840),
     _ = n(763845),
     E = n(857341),
     x = n(843057),
     C = n(603266),
     S = n(985018),
-    T = n(298979),
-    I = n(451070),
-    N = n(442078);
+    T = n(352476),
+    N = n(706873),
+    I = n(467935);
 
 function v() {
     return (0, r.cf)([d.A], () => ({
@@ -67,7 +67,7 @@ function j(e) {
         connectionTypeText: n,
         closePopout: l
     } = e, s = y(t);
-    return (0, i.jsx)(p.Q, {
+    return (0, i.jsx)(g.Q, {
         ...s,
         closePopout: l,
         connectionTypeText: n
@@ -91,7 +91,7 @@ function M(e) {
         closePopout: t,
         connectionTypeText: n
     } = e, l = v();
-    return (0, i.jsx)(p.Q, {
+    return (0, i.jsx)(g.Q, {
         ...l,
         closePopout: t,
         connectionTypeText: n
@@ -104,7 +104,7 @@ function D(e) {
         isOverlay: n,
         lobbyId: l,
         closePopout: s
-    } = e, a = (0, g.k)({
+    } = e, a = (0, p.k)({
         channelId: t
     }) ? S.intl.string(S.t["3BogKe"]) : S.intl.string(S.t.ETIVvg);
     return n ? (0, i.jsx)(b, {
@@ -123,7 +123,7 @@ function O(e) {
         isOverlay: n,
         lobbyId: l,
         closePopout: s
-    } = e, a = (0, g.k)({
+    } = e, a = (0, p.k)({
         channelId: t
     }) ? S.intl.string(S.t["3BogKe"]) : S.intl.string(S.t.ETIVvg);
     return n ? (0, i.jsx)(j, {
@@ -158,24 +158,24 @@ function L(e) {
     return l.useEffect(() => {
         d && n(C.Rj.RTC_DEBUG_PANEL)
     }, [d]), (0, i.jsxs)("div", {
-        className: a()(N.popover, I.kL),
+        className: a()(I.popover, N.kL),
         children: [(0, i.jsxs)(o.VQ0, {
-            className: I.vR,
+            className: N.vR,
             selectedItem: t,
             type: "top",
             look: "brand",
             onItemSelect: n,
             children: [(0, i.jsx)(o.VQ0.Item, {
                 id: C.Rj.RTC_DEBUG_PANEL,
-                className: I.YU,
+                className: N.YU,
                 children: S.intl.string(S.t.MBY1Pm)
             }), d ? null : (0, i.jsx)(o.VQ0.Item, {
                 id: C.Rj.RTC_SECURE_FRAMES,
-                className: I.YU,
+                className: N.YU,
                 children: S.intl.string(S.t.zC6o3s)
             })]
         }), (0, i.jsx)("div", {
-            className: I.SZ,
+            className: N.SZ,
             children: r.map(e => {
                 let {
                     id: n,
@@ -184,7 +184,7 @@ function L(e) {
                 return (0, i.jsx)(o.VQ0.Panel, {
                     id: n,
                     "aria-labelledby": s,
-                    className: n !== t ? I._t : void 0,
+                    className: n !== t ? N._t : void 0,
                     children: l
                 }, n)
             })
@@ -248,7 +248,7 @@ function P(e) {
 }
 
 function k(e) {
-    return (0, g.k)({
+    return (0, p.k)({
         channelId: e.channelId
     }) ? (0, i.jsx)(P, {
         ...e
@@ -264,12 +264,12 @@ function k(e) {
 }
 
 function w(e) {
-    return (0, g.k)({
+    return (0, p.k)({
         channelId: e.channelId
     }) ? (0, i.jsx)(L, {
         ...e
     }) : (0, i.jsx)("div", {
-        className: a()(N.popover, I.L3),
+        className: a()(I.popover, N.L3),
         children: (0, i.jsx)(D, {
             ...e
         })

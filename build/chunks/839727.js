@@ -40,7 +40,7 @@ var r = n(627968),
     j = n(654487),
     Q = n(838541),
     U = n(985018),
-    B = n(246878);
+    B = n(256181);
 let F = {
     tension: 250,
     friction: 5,
@@ -74,7 +74,7 @@ function Y(e) {
         targetRef: eu
     } = (0, S.O7)(), [ec, ed] = s.useState(!0 === i ? L.Q6.PLAYING : L.Q6.PAUSED), [em, eE] = s.useState(!1), [e_, ef] = s.useState(!1), ep = (0, y.Yh)(W), [eS, ev] = s.useState(ep.percentComplete), eh = s.useCallback(e => {
         eQ(null), ev(e)
-    }, []), [eg, eA] = s.useState(!1), [eC, ex] = s.useState(!0), [eT, eD] = s.useState(!1), [eI, ey] = s.useState([]), [eR, eN] = s.useState(v.A.getEffectiveConnectionSpeed()), [eO, eb] = s.useState(0), [eL, eM] = s.useState(0), [ek, eP] = s.useState(!1), [ew, eV] = s.useState(!1), [ej, eQ] = s.useState(null), eU = s.useRef(!0), eB = s.useRef(null), eF = s.useRef(null), eY = (0, x.Kr)(e => e.videoProgress[W.id] ?? x.yc, u.x), eH = (0, x.Kr)(e => e.setVideoProgress), eG = (0, x.Kr)(e => e.muted), e$ = (0, x.Kr)(e => e.setMuted), eK = (0, x.Kr)(e => e.volume), eq = (0, x.Kr)(e => e.setVolume), eW = (0, c.bG)([f.A], () => f.A.useReducedMotion), ez = (0, s.useRef)(null), eZ = (0, s.useRef)(null), eX = (0, s.useRef)(null), eJ = s.useRef(!0), e0 = W.userStatus?.completedAt != null, e1 = s.useMemo(() => W.config.features.includes(j.Li.FULL_EPISODE_VIDEO_QUEST), [W.config.features]), e6 = s.useRef(!1), [e7, e4] = s.useState(null), [e9, e5] = s.useState(!1), [e8, e3] = s.useState(!1), [e2, te] = s.useState(!1), [tt, tn] = s.useState(null), tr = Math.max(eY.maxTimestampSec, ep.progressSeconds), ts = e0 ? ez.current?.duration ?? 0 : (0, R.vd)(tr, eY.duration), ti = s.useMemo(() => (0, I.L)({
+    }, []), [eg, eA] = s.useState(!1), [eC, ex] = s.useState(!0), [eT, eD] = s.useState(!1), [eI, ey] = s.useState([]), [eR, eN] = s.useState(v.A.getEffectiveConnectionSpeed()), [eO, eb] = s.useState(0), [eL, eM] = s.useState(0), [ek, eP] = s.useState(!1), [ew, eV] = s.useState(!1), [ej, eQ] = s.useState(null), eU = s.useRef(!0), eB = s.useRef(null), eF = s.useRef(null), eY = (0, x.Kr)(e => e.videoProgress[W.id] ?? x.yc, u.x), eH = (0, x.Kr)(e => e.setVideoProgress), eG = (0, x.Kr)(e => e.muted), e$ = (0, x.Kr)(e => e.setMuted), eK = (0, x.Kr)(e => e.volume), eq = (0, x.Kr)(e => e.setVolume), eW = (0, c.bG)([f.A], () => f.A.useReducedMotion), ez = (0, s.useRef)(null), eZ = (0, s.useRef)(null), eX = (0, s.useRef)(null), eJ = s.useRef(!0), e0 = W.userStatus?.completedAt != null, e1 = s.useMemo(() => W.config.features.includes(j.Li.FULL_EPISODE_VIDEO_QUEST), [W.config.features]), e6 = s.useRef(!1), [e7, e4] = s.useState(null), [e5, e9] = s.useState(!1), [e8, e3] = s.useState(!1), [e2, te] = s.useState(!1), [tt, tn] = s.useState(null), tr = Math.max(eY.maxTimestampSec, ep.progressSeconds), ts = e0 ? ez.current?.duration ?? 0 : (0, R.vd)(tr, eY.duration), ti = s.useMemo(() => (0, I.L)({
         quest: W,
         location: j.rE.VIDEO_MODAL
     }), [W]), ta = (0, m.g)(e0, eY, ep.progressSeconds), [tl, to] = s.useState(L.oA.MD), tu = {
@@ -136,7 +136,7 @@ function Y(e) {
         } = (0, S.Yr)({
             getCurrentVideoTime: tO,
             isPlaying: ec === L.Q6.PLAYING,
-            isMetadataLoaded: e9,
+            isMetadataLoaded: e5,
             isInitialSeekComplete: e8,
             onAnalytics: tx,
             emitIntervalMs: S.KI,
@@ -315,8 +315,8 @@ function Y(e) {
     }), () => {
         t0.stop()
     }), [tU, t1, eW, ek, t0]);
-    let t9 = ec === L.Q6.ENDED,
-        t5 = s.useMemo(() => (0, T.tW)(W, T.fY.VIDEO_PLAYER_THUMBNAIL, void 0, !1), [W]),
+    let t5 = ec === L.Q6.ENDED,
+        t9 = s.useMemo(() => (0, T.tW)(W, T.fY.VIDEO_PLAYER_THUMBNAIL, void 0, !1), [W]),
         t8 = s.useMemo(() => (0, T.tW)(W, T.fY.VIDEO_PLAYER_CAPTION, void 0, !1), [W]),
         t3 = e0 || tr >= (ez.current?.currentTime ?? 0) + 1,
         t2 = s.useMemo(() => null === (0, T.tW)(W, T.fY.VIDEO_PLAYER_TRANSCRIPT, void 0, !1), [W]),
@@ -344,7 +344,7 @@ function Y(e) {
             style: {
                 "--custom-footer-bottom": `${ee?4:2}px`
             },
-            children: [t9 && (0, r.jsx)(O.A, {
+            children: [t5 && (0, r.jsx)(O.A, {
                 videoRef: ez,
                 onTrackQuestContentClick: tg,
                 orientation: $
@@ -356,11 +356,11 @@ function Y(e) {
                 playsInline: !0,
                 mediaLayoutType: X ? Q.dG.STATIC : Q.dG.RESPONSIVE,
                 className: a()({
-                    [B.R]: t9,
+                    [B.R]: t5,
                     [B.IR]: !0
                 }),
                 controls: !1,
-                poster: t5?.url,
+                poster: t9?.url,
                 disablePictureInPicture: !0,
                 "data-testid": "discord-web-video-player-video",
                 onTimeUpdate: e => {
@@ -379,7 +379,7 @@ function Y(e) {
                     ti.info(`[QV] | handleLoadedData: loadingFirstChunk: ${eC}`), eC && (tf(null != eB.current ? performance.now() - eB.current : null), ex(!1), tE())
                 },
                 onLoadedMetadata: e => {
-                    null != ez.current && (ti.info(`[QV] | handleLoadedMetadata | videoAssetId: ${td}`), e5(!0), td !== T.fY.VIDEO_PLAYER_VIDEO_HLS && t$(ta), eG ? ez.current.volume = 0 : ez.current.volume = eK)
+                    null != ez.current && (ti.info(`[QV] | handleLoadedMetadata | videoAssetId: ${td}`), e9(!0), td !== T.fY.VIDEO_PLAYER_VIDEO_HLS && t$(ta), eG ? ez.current.volume = 0 : ez.current.volume = eK)
                 },
                 onLoadStart: () => {
                     eB.current = performance.now(), t_(eR), ti.info(`[QV] | handleLoadStart | loadingStartTime: ${eB.current}`)
@@ -534,7 +534,7 @@ function Y(e) {
                 }) : (0, r.jsx)(E.E$n, {
                     className: B.PK
                 })
-            }, ec), er && null != tt && !t9 && (0, r.jsx)(o.animated.div, {
+            }, ec), er && null != tt && !t5 && (0, r.jsx)(o.animated.div, {
                 className: B.o$,
                 ref: t6,
                 "data-testid": "discord-web-video-player-captions",

@@ -33,10 +33,10 @@ function N(e) {
         premiumSubscription: T,
         receivesUpdatedUpsellPopover: N,
         orbsRewardAmount: S,
-        lastGrantedRewardAmount: x,
-        dismissCoachMark: v,
-        dismissOrbsDropPopover: b,
-        dismissMarketingPopover: y,
+        lastGrantedRewardAmount: v,
+        dismissCoachMark: x,
+        dismissOrbsDropPopover: y,
+        dismissMarketingPopover: b,
         orbMultiplier: O,
         fpCurrentEntitlementEndsAt: L,
         trialOffer: R
@@ -48,14 +48,14 @@ function N(e) {
                 targetElementRef: i,
                 discountOffer: a,
                 premiumSubscription: T,
-                dismissCoachmark: v,
+                dismissCoachmark: x,
                 children: t
             });
             break;
         case "premium_group":
             return (0, r.jsx)(u.p, {
                 targetElementRef: i,
-                dismissPopover: v,
+                dismissPopover: x,
                 children: t
             });
         case "premium_group_tooltip":
@@ -66,26 +66,26 @@ function N(e) {
         case "orbs_upsell":
             if (N) return (0, r.jsx)(p.A, {
                 targetElementRef: i,
-                dismissPopover: v,
+                dismissPopover: x,
                 numOrbs: S,
                 children: t
             });
             return (0, r.jsx)(m.A, {
                 targetElementRef: i,
-                dismissPopover: v,
+                dismissPopover: x,
                 children: t
             });
         case "orbs_intro":
             return (0, r.jsx)(h.A, {
                 targetElementRef: i,
-                dismissPopover: v,
+                dismissPopover: x,
                 children: t
             });
         case "orbs_drop":
-            if (null != x) return (0, r.jsx)(_.A, {
+            if (null != v) return (0, r.jsx)(_.A, {
                 targetElementRef: i,
-                dismissPopover: b,
-                lastGrantedRewardAmount: x,
+                dismissPopover: y,
+                lastGrantedRewardAmount: v,
                 children: t
             });
             break;
@@ -106,7 +106,7 @@ function N(e) {
         case "marketing_moment_popover":
             return (0, r.jsx)(E.A, {
                 targetElementRef: i,
-                dismissPopover: y,
+                dismissPopover: b,
                 children: t
             });
         case "l_premium_sub_tooltip":
@@ -116,7 +116,7 @@ function N(e) {
         case "l_upsell":
             return (0, r.jsx)(c.u, {
                 targetElementRef: i,
-                dismissPopover: v,
+                dismissPopover: x,
                 children: t
             });
         case "orbs_multiplier":

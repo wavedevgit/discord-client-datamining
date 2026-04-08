@@ -1,7 +1,7 @@
 /** chunk id: 854514 params = (module,exports,require) **/
 n.d(t, {
-    Ae: () => v,
-    Ay: () => y,
+    Ae: () => x,
+    Ay: () => b,
     Hk: () => O
 });
 var i = n(627968),
@@ -25,16 +25,16 @@ var i = n(627968),
     C = n(654487),
     T = n(49999),
     N = n(985018),
-    S = n(684027),
-    x = n(311401);
+    S = n(225130),
+    v = n(192164);
 
-function v() {
+function x() {
     return (0, i.jsx)("div", {
         className: S.Np
     })
 }
 
-function b(e) {
+function y(e) {
     let {
         assetImage: t,
         assetVideo: n
@@ -43,7 +43,7 @@ function b(e) {
     let s = r.useMemo(() => (null != n ? (0, h.WV)(n.url) : null) ?? t.url, [n, t]);
     return null == n ? (0, i.jsxs)("div", {
         className: S.Tv,
-        children: [(0, i.jsx)(v, {}), (0, i.jsx)("div", {
+        children: [(0, i.jsx)(x, {}), (0, i.jsx)("div", {
             className: S.LO,
             children: (0, i.jsx)("img", {
                 className: S.LY,
@@ -67,7 +67,7 @@ function b(e) {
         })]
     }) : (0, i.jsxs)("div", {
         className: S.Tv,
-        children: [(0, i.jsx)(v, {}), (0, i.jsx)("div", {
+        children: [(0, i.jsx)(x, {}), (0, i.jsx)("div", {
             className: S.LO,
             children: (0, i.jsx)(p.N, {
                 showImage: !1,
@@ -98,7 +98,7 @@ function b(e) {
     })
 }
 
-function y(e) {
+function b(e) {
     let {
         config: t,
         onQuestCtaClick: n
@@ -162,7 +162,7 @@ function y(e) {
                     variant: "color-mix"
                 })]
             }),
-            background: (0, i.jsx)(b, {
+            background: (0, i.jsx)(y, {
                 assetImage: t.assetHeroImage,
                 assetVideo: t.assetHeroVideo
             })
@@ -172,7 +172,7 @@ function y(e) {
 
 function O() {
     return (0, i.jsx)("div", {
-        className: l()(x.iE, x.FG, x.B3),
+        className: l()(v.iE, v.FG, v.B3),
         children: (0, i.jsx)(d.y$y, {})
     })
 }

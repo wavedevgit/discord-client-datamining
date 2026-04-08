@@ -1,6 +1,6 @@
 /** chunk id: 115884 params = (module,exports,require) **/
 n.d(t, {
-    A: () => x
+    A: () => v
 });
 var i = n(627968),
     r = n(64700),
@@ -16,8 +16,8 @@ var i = n(627968),
     _ = n(652215),
     m = n(650583),
     p = n(985018),
-    g = n(323687),
-    E = n(885106);
+    g = n(359336),
+    E = n(153335);
 let I = n(892799),
     f = {
         canSend: !1,
@@ -48,18 +48,18 @@ function S(e, t) {
     }
 }
 
-function x(e) {
+function v(e) {
     let {
         placeholder: t = p.intl.string(p.t["Rn/sLl"])
     } = e, n = r.useRef(null), a = r.useRef(null), [s, A] = r.useReducer(S, f), {
-        canSend: x,
-        hint: v,
-        error: b,
-        success: y
+        canSend: v,
+        hint: x,
+        error: y,
+        success: b
     } = s;
     return r.useEffect(() => {
-        null != y && (o()(null != n.current, "Input is submitting when not mounted"), n.current.value = "", n.current.focus())
-    }, [y, n]), (0, i.jsxs)("form", {
+        null != b && (o()(null != n.current, "Input is submitting when not mounted"), n.current.value = "", n.current.focus())
+    }, [b, n]), (0, i.jsxs)("form", {
         onSubmit: e => {
             e.preventDefault(), o()(null != n.current, "Input is submitted when not mounted");
             let t = n.current.value.trim();
@@ -101,8 +101,8 @@ function x(e) {
             children: (0, i.jsxs)("div", {
                 ref: a,
                 className: l()(g.fc, {
-                    [g.kX]: y,
-                    [g.z3]: b
+                    [g.kX]: b,
+                    [g.z3]: y
                 }),
                 children: [(0, i.jsx)(d.ob, {
                     id: C,
@@ -140,36 +140,36 @@ function x(e) {
                     "data-1p-ignore": !0,
                     placeholder: t,
                     "aria-label": t,
-                    "aria-invalid": null != b || void 0,
-                    "aria-describedby": null != b ? N : T
-                }), null != v && (0, i.jsx)("div", {
+                    "aria-invalid": null != y || void 0,
+                    "aria-describedby": null != y ? N : T
+                }), null != x && (0, i.jsx)("div", {
                     className: g.dQ,
                     "aria-hidden": !0,
-                    children: v
+                    children: x
                 }), (0, i.jsx)(c.Button, {
                     variant: "primary",
                     size: "sm",
                     text: p.intl.string(p.t["PMsq/b"]),
-                    disabled: !x,
+                    disabled: !v,
                     type: "submit"
                 })]
             })
-        }), null != b && (0, i.jsx)("div", {
+        }), null != y && (0, i.jsx)("div", {
             role: "alert",
             children: (0, i.jsx)(c.Text, {
                 id: N,
                 variant: "text-sm/normal",
                 className: E.Ot,
                 color: "text-feedback-critical",
-                children: b
+                children: y
             })
-        }), null != y && (0, i.jsx)("div", {
+        }), null != b && (0, i.jsx)("div", {
             role: "status",
             children: (0, i.jsx)(c.Text, {
                 variant: "text-sm/normal",
                 className: E.Ot,
                 color: "text-feedback-positive",
-                children: y
+                children: b
             })
         })]
     })

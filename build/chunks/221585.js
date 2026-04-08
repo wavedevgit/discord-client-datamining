@@ -1,5 +1,4 @@
 /** chunk id: 221585 params = (module,exports,require) **/
-"use strict";
 e.exports = {
     kL: "container__1ce5d",
     tM: "circularImage__1ce5d",

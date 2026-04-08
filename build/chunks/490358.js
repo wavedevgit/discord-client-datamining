@@ -1,6 +1,6 @@
 /** chunk id: 490358 params = (module,exports,require) **/
 n.d(t, {
-    A: () => x
+    A: () => v
 });
 var i = n(627968),
     r = n(64700),
@@ -22,7 +22,7 @@ var i = n(627968),
     f = n(6939),
     C = n(652215),
     T = n(985018),
-    N = n(584811);
+    N = n(601702);
 
 function S(e) {
     let {
@@ -52,7 +52,7 @@ function S(e) {
         })]
     })
 }
-let x = e => {
+let v = e => {
     let {
         guildId: t
     } = e, {
@@ -60,8 +60,8 @@ let x = e => {
         width: o,
         height: d
     } = (0, s.Ay)(), A = (0, a.bG)([g.A], () => g.A.getRequest(t)), h = (0, a.bG)([u.A], () => u.A.getGuild(t)), {
-        hasFetchedRequestToJoinGuilds: x,
-        guildPreviewDisabled: v
+        hasFetchedRequestToJoinGuilds: v,
+        guildPreviewDisabled: x
     } = (0, a.cf)([g.A], () => ({
         hasFetchedRequestToJoinGuilds: g.A.hasFetchedRequestToJoinGuilds,
         guildPreviewDisabled: g.A.getJoinRequestGuild(t)
@@ -69,12 +69,12 @@ let x = e => {
     r.useEffect(() => {
         null != h && (0, c.pX)(C.BVt.CHANNEL(t))
     }, [h, t]), r.useEffect(() => {
-        x || _.A.fetchRequestToJoinGuilds()
-    }, [x]);
-    let b = r.useCallback(() => {
+        v || _.A.fetchRequestToJoinGuilds()
+    }, [v]);
+    let y = r.useCallback(() => {
             _.A.removeGuildJoinRequest(t), (0, c.pX)(C.BVt.ME)
         }, [t]),
-        y = (e, t) => () => {
+        b = (e, t) => () => {
             (0, l.A)({
                 title: T.intl.string(T.t.y0CVes),
                 subtitle: e,
@@ -86,17 +86,17 @@ let x = e => {
         O = async () => {
             await _.A.resetGuildJoinRequest(t), (0, m.Ze)(t)
         }, L = e => {
-            e ? y(T.intl.format(T.t["9ZezpN"], {
-                name: v?.name
-            }), b)() : b()
-        }, R = y(T.intl.format(T.t.fJwWVt, {
-            name: v?.name
-        }), b);
+            e ? b(T.intl.format(T.t["9ZezpN"], {
+                name: x?.name
+            }), y)() : y()
+        }, R = b(T.intl.format(T.t.fJwWVt, {
+            name: x?.name
+        }), y);
     return (0, i.jsxs)("div", {
         className: N.MY,
         ref: n,
         children: [(0, i.jsx)(S, {
-            guild: v,
+            guild: x,
             height: d,
             width: o
         }), (0, i.jsx)("div", {
@@ -107,7 +107,7 @@ let x = e => {
                     case p.B5.SUBMITTED:
                         return (0, i.jsx)(f.A, {
                             onWithdrawApplication: () => L(!0),
-                            guild: v
+                            guild: x
                         });
                     case p.B5.REJECTED:
                         return (0, i.jsx)(I.A, {
@@ -116,13 +116,13 @@ let x = e => {
                             confirmText: T.intl.string(T.t.g9tK0o),
                             onWithdrawApplication: L,
                             rejectionReason: A.rejectionReason,
-                            guild: v
+                            guild: x
                         });
                     default:
                         return (0, i.jsx)(E.K, {
                             onDiscardApplication: R,
                             onContinueApplication: () => (0, m.Ze)(t),
-                            guild: v
+                            guild: x
                         })
                 }
             })()

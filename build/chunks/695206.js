@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     l = n(64700),
     s = n(503698),
-    a = n.n(s),
-    r = n(889137),
+    r = n.n(s),
+    a = n(889137),
     o = n(966974),
     d = n(397927),
     c = n(180662),
@@ -14,7 +14,7 @@ var i = n(627968),
     _ = n(290794),
     m = n(789646),
     h = n(431174),
-    p = n(764573);
+    p = n(640486);
 
 function g(e) {
     let {
@@ -34,10 +34,10 @@ function A(e) {
         secondaryLabel: n,
         handleClick: l,
         isInteractive: s,
-        className: r
+        className: a
     } = e;
     return (0, i.jsxs)("div", {
-        className: a()(p.ez, r),
+        className: r()(p.ez, a),
         children: [s ? (0, i.jsx)(d.QWc, {
             text: t,
             onClick: l,
@@ -62,8 +62,8 @@ function x(e) {
         action: t,
         channelId: n,
         messageId: s,
-        isInteractive: a,
-        className: r
+        isInteractive: r,
+        className: a
     } = e, {
         actionButtonRef: o,
         manageFocusOnAction: u
@@ -91,8 +91,8 @@ function x(e) {
         buttonLabel: t.label,
         secondaryLabel: t.secondaryLabel,
         handleClick: _,
-        isInteractive: a,
-        className: r
+        isInteractive: r,
+        className: a
     })
 }
 
@@ -112,13 +112,13 @@ function f(e) {
             hasSelectedAnyAnswer: l.hasSelectedAnswer,
             myAvatarUrl: l.myAvatarUrl,
             canShowVoteCounts: l.canShowVoteCounts
-        }, (0, r.YW)(l.layoutType).with(o.Z.DEFAULT, () => (0, i.jsx)(h.j, {
+        }, (0, a.YW)(l.layoutType).with(o.Z.DEFAULT, () => (0, i.jsx)(h.j, {
             ...t
         })).with(o.Z.IMAGE_ONLY_ANSWERS, () => (0, i.jsx)(u.A, {
             ...t
         })).otherwise(() => null));
     return null == m ? null : (0, i.jsx)("div", {
-        className: a()(p.kL, c, s),
+        className: r()(p.kL, c, s),
         children: (0, i.jsxs)(d.Fmo, {
             children: [(0, i.jsxs)("div", {
                 className: p.wx,

@@ -1,6 +1,6 @@
 /** chunk id: 391257 params = (module,exports,require) **/
 n.d(t, {
-    A: () => p
+    A: () => g
 });
 var i = n(627968);
 n(64700);
@@ -14,13 +14,13 @@ var l = n(311907),
     u = n(314307),
     h = n(652215),
     m = n(985018),
-    A = n(542992),
-    g = n(782691);
+    A = n(52759),
+    p = n(830684);
 
-function p(e) {
+function g(e) {
     let {
         channel: t
-    } = e, n = (0, r.Ay)(t, !0), p = (0, l.bG)([d.A], () => d.A.can(h.xBc.MANAGE_CHANNELS, t) && c.bk.has(t.type));
+    } = e, n = (0, r.Ay)(t, !0), g = (0, l.bG)([d.A], () => d.A.can(h.xBc.MANAGE_CHANNELS, t) && c.bk.has(t.type));
     return (0, i.jsxs)(u.Ay, {
         channelId: t.id,
         children: [(0, i.jsx)(u.WK, {
@@ -30,14 +30,14 @@ function p(e) {
                 channelName: n
             })
         }), (0, i.jsx)(u.j1, {
-            className: g.PT,
+            className: p.PT,
             children: m.intl.format(m.t.pYMVRT, {
                 channelName: n,
                 topicHook: () => o.A.parseTopic(t.topic, !0, {
                     channelId: t.id
                 })
             })
-        }), p ? (0, i.jsx)("div", {
+        }), g ? (0, i.jsx)("div", {
             className: A.U,
             children: (0, i.jsx)(s.Button, {
                 size: "sm",

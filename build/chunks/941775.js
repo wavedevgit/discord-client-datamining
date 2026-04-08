@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     l = n(311907),
     s = n(397927),
-    a = n(859703),
-    r = n(201805),
+    r = n(859703),
+    a = n(201805),
     o = n(985018);
 let d = function(e) {
     let {
@@ -18,9 +18,9 @@ let d = function(e) {
         size: _
     } = e, m = t.id, {
         isClaiming: h
-    } = (0, l.cf)([a.A], () => ({
-        isClaiming: a.A.isClaimingReward(m) || a.A.isFetchingRewardCode(m)
-    }), [m]), p = (0, r.ix)({
+    } = (0, l.cf)([r.A], () => ({
+        isClaiming: r.A.isClaimingReward(m) || r.A.isFetchingRewardCode(m)
+    }), [m]), p = (0, a.ix)({
         quest: t,
         questContent: n,
         questContentPosition: c,

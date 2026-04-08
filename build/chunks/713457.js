@@ -4,8 +4,8 @@ n.d(t, {
 });
 var a = n(627968),
     i = n(64700),
-    s = n(311907),
-    l = n(843282),
+    l = n(311907),
+    s = n(843282),
     r = n(732955),
     o = n(421380),
     d = n(397927),
@@ -16,8 +16,8 @@ var a = n(627968),
     x = n(341915),
     p = n(551456),
     g = n(112142),
-    f = n(714510),
-    _ = n(890687),
+    _ = n(714510),
+    f = n(890687),
     v = n(18437),
     b = n(590202),
     j = n(971649),
@@ -25,14 +25,14 @@ var a = n(627968),
     C = n(710969),
     y = n(901406),
     S = n(792620),
-    E = n(814793),
-    T = n(201805),
+    T = n(814793),
+    E = n(201805),
     N = n(212614),
     I = n(79545),
     k = n(545986),
     O = n(654487),
     R = n(985018),
-    w = n(376936);
+    w = n(416783);
 let D = [{
     value: O.fO.DESKTOP,
     get label() {
@@ -106,8 +106,8 @@ function U(e) {
         quest: t,
         questContent: n,
         sourceQuestContent: i,
-        onClick: s,
-        text: l,
+        onClick: l,
+        text: s,
         primaryCtaButton: o
     } = e, {
         enabled: c
@@ -130,8 +130,8 @@ function U(e) {
             onClick: m
         }), o ?? (0, a.jsx)(r.$nd, {
             variant: "primary",
-            onClick: s ?? void 0,
-            text: l
+            onClick: l ?? void 0,
+            text: s
         })]
     }) : (0, a.jsxs)(r.e2v, {
         direction: "horizontal",
@@ -152,8 +152,8 @@ function U(e) {
             }
         }), o ?? (0, a.jsx)(r.$nd, {
             variant: "primary",
-            onClick: s ?? void 0,
-            text: l
+            onClick: l ?? void 0,
+            text: s
         })]
     })
 }
@@ -164,11 +164,11 @@ function B(e) {
         sourceQuestContent: n,
         formattedExpirationDate: i
     } = e, {
-        enabled: s
+        enabled: l
     } = p.K.useConfig({
         location: O.rE.QUEST_LEARN_MORE_CTA
     }), {
-        externalLinkCta: l,
+        externalLinkCta: s,
         handleOpenExternalLink: o
     } = L({
         quest: t,
@@ -176,13 +176,13 @@ function B(e) {
     }), d = R.intl.format(R.t["14o6QY"], {
         expiryDate: i
     });
-    return s ? (0, a.jsxs)(r.e2v, {
+    return l ? (0, a.jsxs)(r.e2v, {
         direction: "horizontal",
         fullWidth: !0,
         wrap: !1,
         children: [(0, a.jsx)(r.$nd, {
             variant: "secondary",
-            text: l,
+            text: s,
             onClick: o
         }), (0, a.jsx)(r.$nd, {
             variant: "secondary",
@@ -211,29 +211,29 @@ function G(e) {
         contentPosition: j,
         rowIndex: y,
         sourceQuestContent: L
-    } = e, G = (0, s.bG)([c.A], () => c.A.useReducedMotion), F = (0, T.Xf)({
+    } = e, G = (0, l.bG)([c.A], () => c.A.useReducedMotion), F = (0, E.Xf)({
         useReducedMotion: G
-    }), V = (0, v.Ut)(), W = (0, _.RR)({
+    }), V = (0, v.Ut)(), W = (0, f.RR)({
         quest: t
-    }), H = (0, _.Vn)(t), K = (0, _.S5)(t.config.expiresAt, {
+    }), H = (0, f.Vn)(t), K = (0, f.S5)(t.config.expiresAt, {
         month: "numeric",
         day: "numeric"
     }), {
         isClaiming: z,
         isEnrolling: $,
         isQuestEnrollmentBlocked: q
-    } = (0, s.cf)([h.A], () => ({
+    } = (0, l.cf)([h.A], () => ({
         isClaiming: h.A.isClaimingReward(t.id) || h.A.isFetchingRewardCode(t.id),
         isEnrolling: h.A.isEnrolling(t.id),
         isQuestEnrollmentBlocked: null != h.A.questEnrollmentBlockedUntil
-    })), Q = t.userStatus?.enrolledAt != null, Y = t.userStatus?.completedAt != null, J = Y && t.userStatus?.claimedAt == null, X = (0, C.if)(t), Z = !(0, C.Ic)(t), ee = (0, _.In)(t), et = (0, S.IO)(t), en = (0, S.K$)(t), ea = (0, S.Cr)(t), ei = (0, _.fc)(t), [es, el, er] = (0, _.Qo)(t, ei), eo = Z && ee === _.F3.ACCEPTED, ed = eo && es === x.X0.SELECT, ec = eo && !ed && el.length > 1, eu = g.t.useConfig({
+    })), Y = t.userStatus?.enrolledAt != null, Q = t.userStatus?.completedAt != null, J = Q && t.userStatus?.claimedAt == null, X = (0, C.if)(t), Z = !(0, C.Ic)(t), ee = (0, f.In)(t), et = (0, S.IO)(t), en = (0, S.K$)(t), ea = (0, S.Cr)(t), ei = (0, f.fc)(t), [el, es, er] = (0, f.Qo)(t, ei), eo = Z && ee === f.F3.ACCEPTED, ed = eo && el === x.X0.SELECT, ec = eo && !ed && es.length > 1, eu = g.t.useConfig({
         location: O.rE.QUEST_HOME_DESKTOP
     }), em = (0, I.Pd)(t), eh = (0, m.O)(e => e.clearErrorHints), ex = i.useCallback(e => {
         er(e), e === O.fO.DESKTOP && (p([]), eh(t.id))
     }, [er, p, eh, t.id]), {
         text: ep,
         onClick: eg
-    } = (0, T._c)({
+    } = (0, E._c)({
         progressState: ee,
         quest: t,
         questContent: n,
@@ -244,9 +244,9 @@ function G(e) {
         inGameQuest: ea,
         sourceQuestContent: L
     }), {
-        startingConsoleQuest: ef,
-        startConsoleQuest: e_
-    } = (0, _.Wj)({
+        startingConsoleQuest: e_,
+        startConsoleQuest: ef
+    } = (0, f.Wj)({
         questId: t.id,
         beforeRequest: () => {
             F.startAnimation(), V({
@@ -263,10 +263,10 @@ function G(e) {
         }
     }), ev = t.userStatus?.claimedAt != null, {
         launchInGameActivity: eb
-    } = (0, _.zW)(t), ej = (0, f.NA)({
+    } = (0, f.zW)(t), ej = (0, _.NA)({
         quest: t,
         shortText: !0
-    }), eA = (0, _.do)({
+    }), eA = (0, f.do)({
         quest: t,
         content: n,
         ctaContent: b.Cy.OPEN_GAME_LINK,
@@ -299,7 +299,7 @@ function G(e) {
             analyticsCtxQuestContentPosition: j,
             analyticsCtxQuestContentRowIndex: y
         })
-    }) : (0, E.vA)(t) ? (0, a.jsxs)(r.e2v, {
+    }) : (0, T.vA)(t) ? (0, a.jsxs)(r.e2v, {
         direction: "horizontal",
         fullWidth: !0,
         wrap: !1,
@@ -328,13 +328,13 @@ function G(e) {
             analyticsCtxQuestContentPosition: j,
             analyticsCtxQuestContentRowIndex: y
         })
-    }) : Y ? eS = et ? (0, a.jsx)(U, {
+    }) : Q ? eS = et ? (0, a.jsx)(U, {
         quest: t,
         questContent: n,
         sourceQuestContent: L,
         onClick: eg,
         text: ep
-    }) : (0, E.vA)(t) ? (0, a.jsxs)(r.e2v, {
+    }) : (0, T.vA)(t) ? (0, a.jsxs)(r.e2v, {
         direction: "horizontal",
         fullWidth: !0,
         wrap: !1,
@@ -383,7 +383,7 @@ function G(e) {
                 fullWidth: !0
             })
         })
-    }) : Q && !ev ? eS = ed ? (0, a.jsx)(l.Pw, {
+    }) : Y && !ev ? eS = ed ? (0, a.jsx)(s.Pw, {
         className: w.dd,
         isSelected: () => !1,
         options: D,
@@ -412,7 +412,7 @@ function G(e) {
             analyticsCtxSourceQuestContent: L,
             analyticsCtxQuestContentPosition: j
         })
-    }) : (0, S.g5)(t) && !H && es !== x.X0.DESKTOP ? W ? (0, a.jsx)("div", {
+    }) : (0, S.g5)(t) && !H && el !== x.X0.DESKTOP ? W ? (0, a.jsx)("div", {
         className: w.x6,
         children: (0, a.jsx)(r.$nd, {
             variant: "secondary",
@@ -423,8 +423,8 @@ function G(e) {
     }) : (0, a.jsx)(o.$n, {
         "data-migration-pending": !0,
         color: o.XD.PRIMARY,
-        onClick: e_,
-        disabled: ef,
+        onClick: ef,
+        disabled: e_,
         className: w.x6,
         children: (0, a.jsxs)("div", {
             className: w.tn,
@@ -438,7 +438,7 @@ function G(e) {
             text: ep,
             fullWidth: !0
         })
-    }) : (0, E.vA)(t) ? (0, a.jsx)("div", {
+    }) : (0, T.vA)(t) ? (0, a.jsx)("div", {
         className: w.x6,
         children: (0, a.jsx)(r.$nd, {
             variant: "primary",
@@ -455,7 +455,7 @@ function G(e) {
             text: R.intl.string(R.t["9KoPyB"]),
             fullWidth: !0
         })
-    }) : Q || (eS = q ? (0, a.jsxs)(r.e2v, {
+    }) : Y || (eS = q ? (0, a.jsxs)(r.e2v, {
         direction: "horizontal",
         fullWidth: !0,
         wrap: !1,
@@ -500,10 +500,10 @@ function G(e) {
             children: eS
         }), ec && (0, a.jsx)("div", {
             className: w.qz,
-            children: (0, a.jsx)(l.Pw, {
+            children: (0, a.jsx)(s.Pw, {
                 className: w.xZ,
                 isSelected: e => {
-                    switch (es) {
+                    switch (el) {
                         case x.X0.DESKTOP:
                             return e === O.fO.DESKTOP;
                         case x.X0.CONSOLE:

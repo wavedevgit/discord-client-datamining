@@ -2,7 +2,7 @@
 n.d(t, {
     Ay: () => L,
     jO: () => O,
-    nO: () => b
+    nO: () => y
 });
 var i = n(627968),
     r = n(64700),
@@ -24,22 +24,22 @@ var i = n(627968),
     f = n(244229),
     C = n(652215),
     T = n(985018),
-    N = n(80172),
+    N = n(146109),
     S = n(937495),
-    x = n(517061),
-    v = n(970890);
+    v = n(517061),
+    x = n(970890);
 
-function b(e) {
+function y(e) {
     let {
         guild: t,
         onClick: a,
         onView: s
-    } = e, [_, m] = r.useState(!1), [I, b] = r.useState(!1), [y, O] = r.useState(!1), L = r.useRef(null), R = r.useCallback(async () => {
-        b(!0);
+    } = e, [_, m] = r.useState(!1), [I, y] = r.useState(!1), [b, O] = r.useState(!1), L = r.useRef(null), R = r.useCallback(async () => {
+        y(!0);
         try {
             await a(t.id)
         } finally {
-            b(!1)
+            y(!1)
         }
     }, [t.id, a]), P = r.useCallback(e => {
         e && !_ && (m(!0), s?.(t.id))
@@ -60,12 +60,12 @@ function b(e) {
             size: 300 * (0, g.mZ)()
         });
         if (null != e) return e;
-        if (j) return v;
+        if (j) return x;
         switch (M) {
             case C.NJ8.DARK:
                 return S;
             case C.NJ8.LIGHT:
-                return x
+                return v
         }
     }, [t.discoverySplash, t.id, j, M]), U = r.useMemo(() => E.Ay.getGuildIconURL({
         id: t.id,
@@ -96,7 +96,7 @@ function b(e) {
                     className: N.wx,
                     children: [(0, i.jsx)("div", {
                         className: l()(N.vK, {
-                            [N.Kc]: y
+                            [N.Kc]: b
                         }),
                         children: (0, i.jsx)("img", {
                             src: w,
@@ -180,13 +180,13 @@ function b(e) {
     })
 }
 
-function y(e) {
+function b(e) {
     let {
         guildId: t,
         onClick: n,
         onView: r
     } = e, a = (0, s.bG)([I.A], () => I.A.getGuild(t));
-    return null == a ? null : (0, i.jsx)(b, {
+    return null == a ? null : (0, i.jsx)(y, {
         guild: a,
         onClick: n,
         onView: r
@@ -209,7 +209,7 @@ function O(e) {
         state: n,
         cleanUp: r,
         animate: s.current,
-        children: (0, i.jsx)(y, {
+        children: (0, i.jsx)(b, {
             guildId: t.guildId,
             onClick: a,
             onView: l
@@ -227,4 +227,4 @@ function O(e) {
         })
     })
 }
-let L = r.memo(y)
+let L = r.memo(b)

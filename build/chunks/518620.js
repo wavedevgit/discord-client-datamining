@@ -12,7 +12,7 @@ var i = n(627968),
 n(646363);
 var c = n(652215),
     u = n(788868),
-    A = n(63461);
+    A = n(998838);
 let h = function(e) {
     let {
         rows: t,
@@ -43,13 +43,13 @@ let h = function(e) {
         t.scrollToTop({
             callback: () => requestAnimationFrame(() => e())
         })
-    }), []), x = r.useCallback(() => new Promise(e => {
+    }), []), v = r.useCallback(() => new Promise(e => {
         let t = N.current;
         if (null == t) return e();
         t.scrollToBottom({
             callback: () => requestAnimationFrame(() => e())
         })
-    }), []), v = r.useCallback(e => {
+    }), []), x = r.useCallback(e => {
         let t = document.querySelector(e),
             n = N.current;
         null != t && null != n && n.scrollIntoViewNode({
@@ -57,15 +57,15 @@ let h = function(e) {
             padding: 8,
             callback: () => t?.focus()
         })
-    }, []), b = (0, a.Ay)({
+    }, []), y = (0, a.Ay)({
         id: "people-list",
         isEnabled: T,
         scrollToStart: S,
-        scrollToEnd: x,
-        setFocus: v
-    }), y = r.useMemo(() => t.map(e => e.length), [t]);
+        scrollToEnd: v,
+        setFocus: x
+    }), b = r.useMemo(() => t.map(e => e.length), [t]);
     return (0, i.jsx)(l.hD, {
-        navigator: b,
+        navigator: y,
         children: (0, i.jsx)(l.PR, {
             children: e => {
                 let {
@@ -83,7 +83,7 @@ let h = function(e) {
                         sectionHeight: 50,
                         renderFooter: f,
                         footerHeight: C,
-                        sections: y,
+                        sections: b,
                         className: A.e3,
                         ...n
                     }), _]

@@ -14,8 +14,8 @@ var i = n(627968),
     h = n(454148),
     m = n(718468),
     A = n(655377),
-    g = n(816144),
-    p = n(928764),
+    p = n(816144),
+    g = n(928764),
     f = n(640708),
     _ = n(265869),
     E = n(715757),
@@ -23,8 +23,8 @@ var i = n(627968),
     C = n(349435),
     S = n(452082),
     T = n(357179),
-    I = n(74114),
-    N = n(221059),
+    N = n(74114),
+    I = n(221059),
     v = n(513272),
     y = n(881020),
     b = n(637384),
@@ -106,16 +106,16 @@ function en(e) {
         eh = D.default.getCurrentUser(),
         em = () => ea.isInitialized() || m.ready,
         eA = (0, F.r)(l),
-        eg = m.length > 0 && m.first()?.isFirstMessageInForumPost(l),
-        ep = (0, o.cI)(l),
+        ep = m.length > 0 && m.first()?.isFirstMessageInForumPost(l),
+        eg = (0, o.cI)(l),
         ef = (0, s.bG)([v.A], () => v.A.shouldShowTopicsBar() && !ed),
-        e_ = (0, I.l)(l.id),
+        e_ = (0, N.l)(l.id),
         eE = (0, S.j)(l.id, X.Rx),
         ex = (0, u.E)(l.id),
         eC = (0, G.A)(),
         eS = function(e, t) {
             if (e.isDM() && null != t)
-                if (t.type === C._j.STRANGER_DANGER) return (0, i.jsx)(N.e, {
+                if (t.type === C._j.STRANGER_DANGER) return (0, i.jsx)(I.e, {
                     channelId: e.id,
                     warningId: t.id,
                     senderId: e.getRecipientId()
@@ -132,11 +132,11 @@ function en(e) {
             });
             return null
         }(l, e_ ?? eE ?? ex),
-        eT = l.isForumPost() && !eg ? (0, i.jsx)(p.A, {
+        eT = l.isForumPost() && !ep ? (0, i.jsx)(g.A, {
             postId: l.id
         }) : null,
-        eI = (0, _.A)(l.id),
-        eN = (0, E.W1)(l);
+        eN = (0, _.A)(l.id),
+        eI = (0, E.W1)(l);
     (0, Y.A)();
     let ev = null,
         ey = [],
@@ -159,7 +159,7 @@ function en(e) {
                     children: e.content
                 }, `divider-${e.contentKey??e.unreadId??t}`)
             }
-            if (e.type === Z.TZK.FORUM_POST_ACTION_BAR) return (0, i.jsx)(p.A, {
+            if (e.type === Z.TZK.FORUM_POST_ACTION_BAR) return (0, i.jsx)(g.A, {
                 parentChannelId: l.parent_id,
                 postId: l.id,
                 isLastItem: t + 1 === el.length,
@@ -179,7 +179,7 @@ function en(e) {
             if (null != eo && eo > e.content.timestamp.getTime() * L.A.Millis.SECOND) return;
             e.type === Z.TZK.MESSAGE && null == ev && (ev = e);
             let n = e.groupId === ev?.groupId ? ev.content.id : e.groupId,
-                s = eN && e.content.isFirstMessageInForumPost(l),
+                s = eI && e.content.isFirstMessageInForumPost(l),
                 a = e.type === Z.TZK.THREAD_STARTER_MESSAGE ? H.VO : H.Ay;
             return (0, i.jsx)(a, {
                 compact: ei && !s,
@@ -189,7 +189,7 @@ function en(e) {
                 flashKey: e.flashKey,
                 id: (0, w.j)(l.id, e.content.id),
                 isLastItem: t >= el.length - 1,
-                renderContentOnly: eI || s
+                renderContentOnly: eN || s
             }, e.content.id)
         });
     ey.push(...eb);
@@ -221,7 +221,7 @@ function en(e) {
             ...er
         }, "has-more"))
     }
-    if (m.hasMoreBefore && null == eo || ey.unshift((0, i.jsx)(g.A, {
+    if (m.hasMoreBefore && null == eo || ey.unshift((0, i.jsx)(p.A, {
             channel: l,
             showingBanner: ec
         }, "empty-message")), m.hasMoreAfter && ey.push((0, i.jsx)(z.Ay, {
@@ -233,7 +233,7 @@ function en(e) {
         let e, n, s = R.Ay.getOldestUnreadTimestamp(l.id),
             r = 0 !== s ? s : P.default.extractTimestamp(l.id),
             c = (0, O.ro)(new Date, new Date(r));
-        if (R.Ay.isEstimated(l.id) ? (e = c ? Q.t.wvtbbG : Q.t.tHqbtg, n = Q.t.vaPWFe) : (e = c ? Q.t["BctFH/"] : Q.t["3wXb9P"], n = Q.t["4H8ldG"]), ep && (0, o.Kc)(l) && eC.includes(J.i.SUMMARIES)) {
+        if (R.Ay.isEstimated(l.id) ? (e = c ? Q.t.wvtbbG : Q.t.tHqbtg, n = Q.t.vaPWFe) : (e = c ? Q.t["BctFH/"] : Q.t["3wXb9P"], n = Q.t["4H8ldG"]), eg && (0, o.Kc)(l) && eC.includes(J.i.SUMMARIES)) {
             let s = R.Ay.ackMessageId(l.id),
                 c = (0, y.L)(l.id, R.Ay.getOldestUnreadMessageId(l.id));
             if ((0, d.zV)(Z.HAw.SUMMARIES_UNREAD_BAR_VIEWED, {

@@ -4,8 +4,8 @@ n.d(t, {
 }), n(323874), n(14289), n(35956);
 var a = n(627968),
     i = n(64700),
-    s = n(397927),
-    l = n(643374);
+    l = n(397927),
+    s = n(643374);
 let r = function(e) {
     let {
         assetKey: t,
@@ -16,10 +16,10 @@ let r = function(e) {
     } = e, [c, u] = i.useState(null), m = i.useRef(null);
     return i.useEffect(() => () => {
         null != m.current && URL.revokeObjectURL(m.current)
-    }, []), (0, a.jsx)(s.D0$, {
+    }, []), (0, a.jsx)(l.D0$, {
         label: d,
         description: `Supported asset formats: ${n.join(", ")}`,
-        children: (0, a.jsx)(l.A, {
+        children: (0, a.jsx)(s.A, {
             filename: c?.name ?? r ?? "",
             filters: [{
                 name: d,

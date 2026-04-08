@@ -1,11 +1,11 @@
 /** chunk id: 857182 params = (module,exports,require) **/
 n.d(t, {
-    A: () => a
+    A: () => r
 });
 var i = n(562465),
     l = n(73153),
     s = n(652215);
-let a = {
+let r = {
     createChannelFollower: (e, t) => i.Bo.post({
         url: s.Rsh.CHANNEL_FOLLOWERS(t),
         body: {

@@ -24,28 +24,28 @@ var i = n(627968),
     T = n(287809),
     N = n(943577),
     S = n(954571),
-    x = n(927813),
-    v = n(279877),
-    b = n(112273),
-    y = n(666290),
+    v = n(927813),
+    x = n(279877),
+    y = n(112273),
+    b = n(666290),
     O = n(928636),
     L = n(502696),
     R = n(282447),
     P = n(652215),
     D = n(654487),
     M = n(985018),
-    j = n(724410);
-let w = 15 * x.A.Millis.MINUTE,
+    j = n(244187);
+let w = 15 * v.A.Millis.MINUTE,
     U = (0, R.A)(function(e) {
         let {
             party: t,
             onUserContextMenu: n,
             onChannelContextMenu: a,
             quest: l
-        } = e, s = r.useRef(null), d = (0, i.jsx)(y.A, {
+        } = e, s = r.useRef(null), d = (0, i.jsx)(b.A, {
             party: t,
             onUserContextMenu: n
-        }), u = (0, i.jsx)(b.A, {
+        }), u = (0, i.jsx)(y.A, {
             party: t,
             onChannelContextMenu: a,
             quest: l
@@ -111,8 +111,8 @@ function k() {
         fetching: C.A.isFetching(),
         currentUser: T.default.getCurrentUser()
     })), s = (0, d.bG)([h.A], () => h.A.quests), o = (0, p.oH)(Array.from(s.values()));
-    r.useEffect(() => (u.h.wait(() => v.O()), () => {
-        u.h.wait(() => v.v())
+    r.useEffect(() => (u.h.wait(() => x.O()), () => {
+        u.h.wait(() => x.v())
     }), [l?.id]), r.useEffect(() => {
         n && !a && G()
     }, [n, a]);
@@ -122,7 +122,7 @@ function k() {
         location: "NowPlaying"
     }), {
         questsByPartyId: S,
-        questIdsByPartyId: x
+        questIdsByPartyId: v
     } = r.useMemo(() => {
         let t = new Map,
             n = new Map,
@@ -140,24 +140,24 @@ function k() {
             questsByPartyId: t,
             questIdsByPartyId: n
         }
-    }, [e, s, o]), b = (0, d.bG)([h.A], () => h.A.earnedQuestForPlacement.get(_.uF.ACTIVITY_PANEL), []), y = r.useRef([]), O = r.useMemo(() => {
-        let e = Array.from(x.values()),
-            t = y.current;
-        return t.length === e.length && e.every((e, n) => e === t[n]) ? t : (y.current = e, e)
-    }, [x]);
+    }, [e, s, o]), y = (0, d.bG)([h.A], () => h.A.earnedQuestForPlacement.get(_.uF.ACTIVITY_PANEL), []), b = r.useRef([]), O = r.useMemo(() => {
+        let e = Array.from(v.values()),
+            t = b.current;
+        return t.length === e.length && e.every((e, n) => e === t[n]) ? t : (b.current = e, e)
+    }, [v]);
     r.useEffect(() => {
         f && 0 !== O.length && (0, A.yO)(O, _.uF.ACTIVITY_PANEL, "NowPlaying")
-    }, [O, f, b]);
+    }, [O, f, y]);
     let L = r.useMemo(() => {
             if (!f) return S;
-            if (null == b) return new Map;
+            if (null == y) return new Map;
             let e = new Map;
-            for (let [t, n] of x.entries()) {
-                let i = b.quests.get(n);
+            for (let [t, n] of v.entries()) {
+                let i = y.quests.get(n);
                 (0, g.Oh)(i) && null != i.questWithUserStatus && e.set(t, i.questWithUserStatus)
             }
             return e
-        }, [f, b, S, x]),
+        }, [f, y, S, v]),
         R = null;
     return t ? R = e.length > 0 ? e.map(e => {
         let {

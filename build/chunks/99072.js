@@ -6,8 +6,8 @@ var i = n(627968);
 n(64700);
 var l = n(311907),
     s = n(397927),
-    a = n(456060),
-    r = n(793574),
+    r = n(456060),
+    a = n(793574),
     o = n(688810),
     d = n(572211),
     c = n(354287),
@@ -22,7 +22,7 @@ var l = n(311907),
     f = n(661191),
     C = n(820672),
     E = n(768349),
-    I = n(426127),
+    I = n(55705),
     v = n(985018);
 
 function b(e) {
@@ -47,19 +47,19 @@ function b(e) {
         if (t === T.id) return !0;
         let n = p.A.getGameByApplication(T);
         return null != n && t === n.id
-    })), M = (0, l.bG)([h.A], () => h.A.getCurrentUserActiveStream()), w = (0, l.bG)([g.A], () => g.A.getChannelId()), O = f.default.extractTimestamp(b.id) + C.M < Date.now(), k = (0, i.jsx)(i.Fragment, {
-        children: (0, a.Wf)(b, y, t)
+    })), M = (0, l.bG)([h.A], () => h.A.getCurrentUserActiveStream()), w = (0, l.bG)([g.A], () => g.A.getChannelId()), k = f.default.extractTimestamp(b.id) + C.M < Date.now(), O = (0, i.jsx)(i.Fragment, {
+        children: (0, r.Wf)(b, y, t)
     }), {
         analyticsLocations: U
-    } = (0, o.Ay)(N, r.A.REQUEST_TO_STREAM_INVITE_EMBED), B = v.intl.string(I.default["5+172e"]), G = !1;
-    return O ? (B = v.intl.string(I.default.u4QmWl), G = !0) : null != M ? (B = v.intl.string(I.default.P0wwmM), G = !0) : w !== y.id ? (B = v.intl.string(I.default.qRXats), G = !0) : null == D && (B = v.intl.string(I.default["43zohO"]), G = !0), (0, i.jsx)(d.h, {
+    } = (0, o.Ay)(N, a.A.REQUEST_TO_STREAM_INVITE_EMBED), B = v.intl.string(I.default["5+172e"]), G = !1;
+    return k ? (B = v.intl.string(I.default.u4QmWl), G = !0) : null != M ? (B = v.intl.string(I.default.P0wwmM), G = !0) : w !== y.id ? (B = v.intl.string(I.default.qRXats), G = !0) : null == D && (B = v.intl.string(I.default["43zohO"]), G = !0), (0, i.jsx)(d.h, {
         header: v.intl.string(I.default.nAyuPp),
         title: T.name,
         staticBannerSrc: j,
         videoBannerSrc: L,
         bannerAspectRatio: R,
         iconSrc: P ?? void 0,
-        info: k,
+        info: O,
         actions: b.author.id === t ? [] : [{
             label: B,
             trackingArea: c.kY.STREAM,
@@ -83,7 +83,7 @@ function b(e) {
             channelId: y.id,
             messageId: b.id,
             onView: S,
-            isDeadEnd: O
+            isDeadEnd: k
         }
     })
 }

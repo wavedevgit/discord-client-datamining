@@ -14,8 +14,8 @@ var i = n(627968),
     h = n(867455),
     m = n(780057),
     A = n(747926),
-    g = n(954571),
-    p = n(203982),
+    p = n(954571),
+    g = n(203982),
     f = n(453771),
     _ = n(518960),
     E = n(408018),
@@ -23,8 +23,8 @@ var i = n(627968),
     C = n(652215),
     S = n(49999),
     T = n(412136),
-    I = n(985018);
-let N = /(.*)```(\w+)\n(.*)```(.*)/s;
+    N = n(985018);
+let I = /(.*)```(\w+)\n(.*)```(.*)/s;
 
 function v(e) {
     let {
@@ -48,7 +48,7 @@ function v(e) {
     }
 
     function U() {
-        g.default.track(C.HAw.CHANNEL_ATTACH_MENU_USE_APPS_CLICKED), D("/", (0, E.x7)("/"))
+        p.default.track(C.HAw.CHANNEL_ATTACH_MENU_USE_APPS_CLICKED), D("/", (0, E.x7)("/"))
     }
 
     function G() {
@@ -75,15 +75,15 @@ function v(e) {
         let e = M,
             n = "txt",
             i = "",
-            l = M.match(N);
+            l = M.match(I);
         null != l && (i = l[1], n = l[2], e = l[3], i += l[4]), (0, _.R)([(0, f.VE)(new Blob([e], {
             type: "text/plain"
-        }), `message.${n}`, "text/plain")], t, R), p._.dispatchToLastSubscribed(C.jej.CLEAR_TEXT), "" !== i && p._.dispatchToLastSubscribed(C.jej.INSERT_TEXT, {
+        }), `message.${n}`, "text/plain")], t, R), g._.dispatchToLastSubscribed(C.jej.CLEAR_TEXT), "" !== i && g._.dispatchToLastSubscribed(C.jej.INSERT_TEXT, {
             plainText: i
         })
     }
     return l.useEffect(() => {
-        g.default.track(C.HAw.OPEN_POPOUT, {
+        p.default.track(C.HAw.OPEN_POPOUT, {
             type: "Send Attachment",
             channel_id: t.id,
             guild_id: t.guild_id
@@ -93,7 +93,7 @@ function v(e) {
         onSelect: j,
         navId: "channel-attach",
         onClose: b,
-        "aria-label": I.intl.string(I.t.Xm41aV),
+        "aria-label": N.intl.string(N.t.Xm41aV),
         children: v.map(function(e) {
             switch (e.type) {
                 case x.v.UPLOAD_A_FILE:
@@ -252,7 +252,7 @@ function v(e) {
                         children: k ? null : (0, i.jsxs)(i.Fragment, {
                             children: [(0, i.jsx)(r.Drp, {
                                 id: "summarize_thread_for_everyone",
-                                label: I.intl.string(I.t.eCzSdd),
+                                label: N.intl.string(N.t.eCzSdd),
                                 iconLeft: r.nFg,
                                 leadingAccessory: {
                                     type: "icon",
@@ -261,7 +261,7 @@ function v(e) {
                                 action: () => h.A.summarizeThread(t, !1)
                             }, "summarize_thread_for_everyone"), (0, i.jsx)(r.Drp, {
                                 id: "summarize_thread_for_me",
-                                label: I.intl.string(I.t["HOe+Hq"]),
+                                label: N.intl.string(N.t["HOe+Hq"]),
                                 iconLeft: r.nys,
                                 leadingAccessory: {
                                     type: "icon",

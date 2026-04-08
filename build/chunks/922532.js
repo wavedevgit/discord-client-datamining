@@ -4,8 +4,8 @@ n.d(t, {
 });
 var a = n(64700),
     i = n(341915),
-    s = n(561844),
-    l = n(590202),
+    l = n(561844),
+    s = n(590202),
     r = n(652215);
 
 function o(e) {
@@ -18,12 +18,12 @@ function o(e) {
         isQuestAccepted: u,
         prevIsQuestAccepted: m,
         impressionRef: h
-    } = e, x = a.useRef(-1), p = a.useRef(!1), [g, f] = a.useState(!1), [_, v] = a.useState(!1), b = a.useCallback(() => {
-        f(!0)
+    } = e, x = a.useRef(-1), p = a.useRef(!1), [g, _] = a.useState(!1), [f, v] = a.useState(!1), b = a.useCallback(() => {
+        _(!0)
     }, []), j = a.useCallback(() => {
-        f(!1), p.current || c || o(!1)
+        _(!1), p.current || c || o(!1)
     }, [c, o]), A = a.useCallback(() => {
-        f(!1), c || o(!1), p.current = !1
+        _(!1), c || o(!1), p.current = !1
     }, [c, o]), C = a.useCallback(() => {
         v(!0)
     }, []), y = a.useCallback(() => {
@@ -35,17 +35,17 @@ function o(e) {
             withDelay: t = !1
         } = e;
         t ? x.current = window.setTimeout(d, 75) : d()
-    }, [d, n]), E = a.useCallback(() => {
+    }, [d, n]), T = a.useCallback(() => {
         S()
-    }, [S]), T = a.useCallback(() => {
-        window.clearTimeout(x.current), g || _ || p.current || o(!1)
-    }, [g, _, o]), N = a.useCallback(() => {
-        (0, s.av)({
+    }, [S]), E = a.useCallback(() => {
+        window.clearTimeout(x.current), g || f || p.current || o(!1)
+    }, [g, f, o]), N = a.useCallback(() => {
+        (0, l.av)({
             questId: t.id,
             event: r.HAw.QUEST_HOVER,
             properties: {
                 content_id: i.uF.QUEST_BAR,
-                content_name: (0, l.jO)(i.uF.QUEST_BAR),
+                content_name: (0, s.jO)(i.uF.QUEST_BAR),
                 impression_id: h.current?.getId()
             },
             shouldExtendSession: !0,
@@ -54,34 +54,34 @@ function o(e) {
             withDelay: !0
         })
     }, [S, h, t.id]), I = a.useCallback(() => {
-        (0, s.av)({
+        (0, l.av)({
             questId: t.id,
             event: r.HAw.QUEST_HOVER_OFF,
             properties: {
                 content_id: i.uF.QUEST_BAR,
-                content_name: (0, l.jO)(i.uF.QUEST_BAR),
+                content_name: (0, s.jO)(i.uF.QUEST_BAR),
                 impression_id: h.current?.getId()
             },
             sourceQuestContent: i.uF.QUEST_BAR_V2
-        }), p.current = !1, T()
-    }, [T, h, t.id]);
+        }), p.current = !1, E()
+    }, [E, h, t.id]);
     return a.useEffect(() => {
-        _ && I()
-    }, [_, I]), a.useLayoutEffect(() => {
+        f && I()
+    }, [f, I]), a.useLayoutEffect(() => {
         u && !m && p.current && d()
     }, [d, u, m]), a.useLayoutEffect(() => {
         c || !u || m || p.current || o(!1)
     }, [u, c, m, o]), {
         ctxMenuOpen: g,
-        gameSheetOpen: _,
+        gameSheetOpen: f,
         handleCtxMenuOpened: b,
         handleCtxMenuClosed: j,
         handleCtxMenuSelection: A,
         handleGameSheetOpened: C,
         handleGameSheetClosed: y,
         handleFocus: S,
-        handleFocusWithoutDelay: E,
-        handleBlur: T,
+        handleFocusWithoutDelay: T,
+        handleBlur: E,
         handleMouseEnter: N,
         handleMouseLeave: I
     }

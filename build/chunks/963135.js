@@ -6,12 +6,12 @@ var n = a(627968),
     r = a(64700),
     o = a(311907),
     i = a(397927),
-    c = a(421773),
-    l = a(657331),
+    l = a(421773),
+    c = a(657331),
     s = a(342296),
     _ = a(589022),
     d = a(287809),
-    u = a(2398);
+    u = a(653455);
 let p = function(e) {
     let {
         user: t,
@@ -21,8 +21,8 @@ let p = function(e) {
         onMouseEnter: f,
         onMouseLeave: C,
         setIsHovered: g
-    } = (0, c.A)(0, 150), h = r.useCallback(e => {
-        e.stopPropagation(), g(!1), (0, l.openUserProfileModal)({
+    } = (0, l.A)(0, 150), h = r.useCallback(e => {
+        e.stopPropagation(), g(!1), (0, c.openUserProfileModal)({
             userId: t.id,
             guildId: a
         })
@@ -41,6 +41,7 @@ let p = function(e) {
     }), [t, p, a, f, C, g]);
     return (0, n.jsx)(s.A, {
         targetElementRef: m,
+        shouldPreload: !0,
         user: t,
         guildId: a,
         position: "bottom",

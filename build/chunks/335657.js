@@ -2,41 +2,41 @@
 n.d(t, {
     y: () => u
 });
-var i = n(64700),
-    r = n(635358),
-    a = n(311907),
-    l = n(49463),
-    s = n(979286),
+var a = n(64700),
+    i = n(635358),
+    l = n(311907),
+    s = n(49463),
+    r = n(979286),
     o = n(590180),
     d = n(295811),
     c = n(766201);
 
 function u(e, t, n) {
     let u = arguments.length > 3 && void 0 !== arguments[3] && arguments[3],
-        A = (0, a.bG)([l.A], () => l.A.hasLoadedExperiments),
-        h = (0, a.bG)([o.A], () => o.A.skipNumCategories),
-        [_, m, p, g, E, I, f, C] = (0, a.yK)([d.A], () => [d.A.getShopBlocks(e), d.A.getLastSuccessfulFetch(e) ?? 0, d.A.getLastErrorTimestamp(e) ?? 0, d.A.getLastFetchOptions(e), d.A.getFetchShopHomeError(e), d.A.getIsFetchingShopHome(e), d.A.getHasKnownStaleData(e), d.A.getShopHomeConfigOverride()]),
-        T = (0, i.useMemo)(() => ({
+        m = (0, l.bG)([s.A], () => s.A.hasLoadedExperiments),
+        h = (0, l.bG)([o.A], () => o.A.skipNumCategories),
+        [x, p, g, _, f, v, b, j] = (0, l.yK)([d.A], () => [d.A.getShopBlocks(e), d.A.getLastSuccessfulFetch(e) ?? 0, d.A.getLastErrorTimestamp(e) ?? 0, d.A.getLastFetchOptions(e), d.A.getFetchShopHomeError(e), d.A.getIsFetchingShopHome(e), d.A.getHasKnownStaleData(e), d.A.getShopHomeConfigOverride()]),
+        A = (0, a.useMemo)(() => ({
             ...t,
-            variantsReturnStyle: r.g.VARIANTS_GROUP,
+            variantsReturnStyle: i.g.VARIANTS_GROUP,
             includeBundles: !0,
             includeDynamicBlocks: !0,
-            shopHomeConfig: C,
+            shopHomeConfig: j,
             skipNumCategories: h
-        }), [t, C, h]),
-        N = (0, i.useMemo)(() => !(0, s.gn)(g, T), [g, T]),
-        S = (0, c.n)(_, I ?? !1, u),
-        x = (0, i.useMemo)(() => !S && Date.now() - m < 6e5, [m, S]);
-    return (0, i.useEffect)(() => {
-        if (!A || I) return;
-        let t = Date.now() - p < 6e5;
-        null != E && t || (N || !x || f) && (0, s.h$)(e, T, n)
-    }, [A, I, E, p, x, f, N, T, e, n]), {
-        isFetchingShopHome: I,
-        fetchShopHomeError: E,
-        shopBlocks: _,
-        refreshShopHome: (0, i.useCallback)(() => {
-            (0, s.h$)(e, T, n)
-        }, [e, T, n])
+        }), [t, j, h]),
+        C = (0, a.useMemo)(() => !(0, r.gn)(_, A), [_, A]),
+        y = (0, c.n)(x, v ?? !1, u),
+        S = (0, a.useMemo)(() => !y && Date.now() - p < 6e5, [p, y]);
+    return (0, a.useEffect)(() => {
+        if (!m || v) return;
+        let t = Date.now() - g < 6e5;
+        null != f && t || (C || !S || b) && (0, r.h$)(e, A, n)
+    }, [m, v, f, g, S, b, C, A, e, n]), {
+        isFetchingShopHome: v,
+        fetchShopHomeError: f,
+        shopBlocks: x,
+        refreshShopHome: (0, a.useCallback)(() => {
+            (0, r.h$)(e, A, n)
+        }, [e, A, n])
     }
 }

@@ -1,4 +1,5 @@
 /** chunk id: 746361 params = (module,exports,require) **/
+"use strict";
 e.exports = {
     MY: "avatarUploader_e04502",
     O7: "avatarUploaderDisabled_e04502",

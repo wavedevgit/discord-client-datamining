@@ -6,8 +6,8 @@ var i = n(627968);
 n(64700);
 var l = n(284009),
     s = n.n(l),
-    a = n(283823),
-    r = n(455207),
+    r = n(283823),
+    a = n(455207),
     o = n(542287),
     d = n(589022),
     c = n(734057),
@@ -15,13 +15,13 @@ var l = n(284009),
     _ = n(943667);
 
 function m(e, t) {
-    if ((0, r.MZ)(t)) return (0, i.jsx)(o.A, {});
+    if ((0, a.MZ)(t)) return (0, i.jsx)(o.A, {});
     if ((0, _.A)(t)) {
         let n = (t?.author?.username ?? "").split(" ").slice(0, -1).join(" "),
             {
                 guild_id: l
             } = t.messageReference;
-        if (null != l) return (0, i.jsx)(a.A, {
+        if (null != l) return (0, i.jsx)(r.A, {
             setPopoutRef: e.setPopoutRef,
             guildId: l,
             name: n

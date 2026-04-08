@@ -5,8 +5,8 @@ n.d(t, {
 });
 var a = n(311907),
     i = n(554146),
-    s = n(932001),
-    l = n(45780),
+    l = n(932001),
+    s = n(45780),
     r = n(696451),
     o = n(71393),
     d = n(287809),
@@ -19,7 +19,7 @@ function h(e) {
         {
             shouldShow: n = !0
         } = t,
-        u = (0, l.G$)(i.V.ADOPT_CLAN_IDENTITY_NOTICE, e ?? m.dJq),
+        u = (0, s.G$)(i.V.ADOPT_CLAN_IDENTITY_NOTICE, e ?? m.dJq),
         h = (0, a.bG)([o.A, d.default, r.Ay], () => {
             if (null === e) return !1;
             let t = o.A.getGuild(e);
@@ -29,7 +29,7 @@ function h(e) {
             let a = r.Ay.getMember(e, n.id);
             return null != a && !a.isPending
         }, [e]);
-    return (0, s.ww)(h && n && !u ? [i.M.GUILD_TAG_AVAILABLE_COACHMARK_V2] : [], e ?? m.eGj)
+    return (0, l.ww)(h && n && !u ? [i.M.GUILD_TAG_AVAILABLE_COACHMARK_V2] : [], e ?? m.eGj)
 }
 
 function x(e) {
@@ -37,14 +37,14 @@ function x(e) {
         {
             shouldShow: n = !0
         } = t,
-        l = e?.primaryGuild,
-        r = l?.identityGuildId ?? null,
+        s = e?.primaryGuild,
+        r = s?.identityGuildId ?? null,
         d = (0, a.bG)([u.A], () => null === r ? null : u.A.getGuildLastSeenInfo(r)),
         c = (0, a.bG)([o.A], () => o.A.getGuild(r)?.profile?.tag),
-        m = null != c && l?.identityGuildId === r && l?.tag === null,
+        m = null != c && s?.identityGuildId === r && s?.tag === null,
         h = null != r && d?.tag === c,
         x = null !== r && m && !h;
-    return (0, s.Wl)(x && n ? i.M.GUILD_TAG_UPDATED_COACHMARK : null, {
+    return (0, l.Wl)(x && n ? i.M.GUILD_TAG_UPDATED_COACHMARK : null, {
         cooldownDurationMs: 864e5
     })
 }

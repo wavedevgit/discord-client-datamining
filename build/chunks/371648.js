@@ -14,8 +14,8 @@ var i = n(627968),
     h = n(432371),
     m = n(765548),
     A = n(775602),
-    g = n(821720),
-    p = n(429913),
+    p = n(821720),
+    g = n(429913),
     f = n(17447),
     _ = n(736339),
     E = n(354328),
@@ -23,8 +23,8 @@ var i = n(627968),
     C = n(164956),
     S = n(302031),
     T = n(513272),
-    I = n(253932),
-    N = n(617617),
+    N = n(253932),
+    I = n(617617),
     v = n(961350),
     y = n(72314),
     b = n(580745),
@@ -45,21 +45,21 @@ var i = n(627968),
     V = n(672341),
     K = n(652215),
     W = n(985018),
-    z = n(317651);
+    z = n(906324);
 let q = (0, r.animated)(d.fKU),
     Y = l.memo(function(e) {
         var t;
         let n, s, r, {
                 className: h,
-                messageGroupSpacing: g,
-                scrollerClassName: p,
+                messageGroupSpacing: p,
+                scrollerClassName: g,
                 channel: f,
                 messages: _,
                 unreadCount: E,
                 showNewMessagesBar: x,
                 messageDisplayCompact: S,
                 channelStream: T,
-                uploads: I,
+                uploads: N,
                 hasUnreads: v,
                 editingMessageId: b,
                 fontSize: j,
@@ -80,8 +80,8 @@ let q = (0, r.animated)(d.fKU),
                 groupRange: 4,
                 attachments: Z,
                 fontSize: j,
-                groupSpacing: g
-            }), [S, $, Z, j, g]),
+                groupSpacing: p
+            }), [S, $, Z, j, p]),
             Q = (0, H.Ay)({
                 messages: _,
                 channel: f,
@@ -114,7 +114,7 @@ let q = (0, r.animated)(d.fKU),
                 showNewMessagesBar: x,
                 messageDisplayCompact: S,
                 channelStream: T,
-                uploads: I,
+                uploads: N,
                 loadMore: Q.loadMore,
                 scrollManager: Q,
                 specs: X,
@@ -150,8 +150,8 @@ let q = (0, r.animated)(d.fKU),
             ed = (0, m.A)(e => {
                 Q.ref.current = e, eo.current = e?.getScrollerNode() ?? null
             }),
-            eu = (0, c.bG)([N.A], () => {
-                let e = N.A.settings.appearance?.clientThemeSettings;
+            eu = (0, c.bG)([I.A], () => {
+                let e = I.A.settings.appearance?.clientThemeSettings;
                 return e?.backgroundGradientPresetId != null || e?.customUserThemeSettings != null
             }),
             eh = l.useMemo(() => w ? F ? z.gA : z.ru : z.Zd, [w, F]),
@@ -159,11 +159,11 @@ let q = (0, r.animated)(d.fKU),
         return (0, i.jsxs)(o.hD, {
             navigator: ee,
             children: [null != ea && ea, (0, i.jsxs)("div", {
-                className: a()(z.Og, h, `group-spacing-${g}`),
+                className: a()(z.Og, h, `group-spacing-${p}`),
                 children: [null == ea && ei, (0, i.jsxs)(q, {
                     ref: ed,
                     customTheme: !0,
-                    className: a()(p, z.XG, eu ? em : void 0),
+                    className: a()(g, z.XG, eu ? em : void 0),
                     contentClassName: z.gT,
                     onResize: Q.handleResize,
                     onScroll: Q.handleScroll,
@@ -228,14 +228,14 @@ let q = (0, r.animated)(d.fKU),
                 canManageMessages: i
             }
         }(t), {
-            messageGroupSpacing: N,
+            messageGroupSpacing: I,
             fontSize: y,
             messageDisplayCompact: P,
             renderSpoilers: U,
             keyboardModeEnabled: G
         } = function() {
-            let e = I.hH.useSetting(),
-                t = I.gs.useSetting(),
+            let e = N.hH.useSetting(),
+                t = N.gs.useSetting(),
                 {
                     messageGroupSpacing: n,
                     fontSize: i,
@@ -287,9 +287,9 @@ let q = (0, r.animated)(d.fKU),
                     return t.forEach(t => {
                         null != t.applicationId && null == t.application && e.add(t.applicationId)
                     }), Array.from(e)
-                }, [t]), (0, p.A)(n));
-            (0, g.A)(i, e);
-            let I = l.useMemo(() => (0, w.A)({
+                }, [t]), (0, g.A)(n));
+            (0, p.A)(i, e);
+            let N = l.useMemo(() => (0, w.A)({
                 channel: e,
                 messages: i,
                 oldestUnreadMessageId: s,
@@ -300,7 +300,7 @@ let q = (0, r.animated)(d.fKU),
             }), [i, e, s, a, u, m, C, S, r]);
             return {
                 messages: i,
-                channelStream: I,
+                channelStream: N,
                 oldestUnreadMessageId: s,
                 editingMessageId: (0, c.bG)([b.A], () => b.A.getEditingMessage(e.id)?.id)
             }
@@ -310,7 +310,7 @@ let q = (0, r.animated)(d.fKU),
             children: (0, i.jsx)(F.t, {
                 children: (0, i.jsx)(Y, {
                     ...d,
-                    messageGroupSpacing: N,
+                    messageGroupSpacing: I,
                     showNewMessagesBar: !0,
                     channel: t,
                     messageDisplayCompact: !r && (a || P),

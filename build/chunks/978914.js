@@ -37,20 +37,20 @@ function A(e) {
         }
         return t
     }, [n]), u = (0, s.bG)([d.A], () => d.A.shouldLoadMessageRequestPreview(n), [n]);
-    return i && !l && null == a && u && (t = n, h.add(t), null == m && (m = setTimeout(g, 0))), {
+    return i && !l && null == a && u && (t = n, h.add(t), null == m && (m = setTimeout(p, 0))), {
         loaded: l,
         error: r,
         message: a
     }
 }
-async function g() {
+async function p() {
     try {
-        for (; !l().isEmpty(h);) await p()
+        for (; !l().isEmpty(h);) await g()
     } finally {
         m = null
     }
 }
-async function p() {
+async function g() {
     let e = Array.from(h).slice(0, 25);
     try {
         let t = await a.Bo.get({

@@ -5,8 +5,8 @@ n.d(t, {
 var a = n(627968);
 n(64700);
 var i = n(503698),
-    s = n.n(i),
-    l = n(136722),
+    l = n.n(i),
+    s = n(136722),
     r = n(311907),
     o = n(397927),
     d = n(47167),
@@ -17,23 +17,23 @@ var i = n(503698),
     x = n(967198),
     p = n(558393),
     g = n(737045),
-    f = n(150921),
-    _ = n(310086);
+    _ = n(501586),
+    f = n(793877);
 
 function v(e) {
     let {
         title: t,
         can: n
-    } = e, i = n ? o.A9s : o.PGe, l = (0, a.jsx)("div", {
-        className: s()(f.v_, n ? f.uU : f.Ss),
+    } = e, i = n ? o.A9s : o.PGe, s = (0, a.jsx)("div", {
+        className: l()(_.v_, n ? _.uU : _.Ss),
         children: (0, a.jsx)(i, {
-            className: f.Kk
+            className: _.Kk
         })
     });
     return (0, a.jsxs)("div", {
-        className: f.z8,
-        children: [l, (0, a.jsx)("div", {
-            className: f.rv,
+        className: _.z8,
+        children: [s, (0, a.jsx)("div", {
+            className: _.rv,
             children: (0, a.jsx)(o.Text, {
                 variant: "text-md/normal",
                 children: t
@@ -56,38 +56,38 @@ function b() {
             let {
                 title: t,
                 flag: n
-            } = e, i = l.zy(b, n);
+            } = e, i = s.zy(b, n);
             return (0, a.jsx)(v, {
                 title: t,
                 can: i
             }, t)
         }),
-        E = Object.values(y ?? {}).map(e => {
+        T = Object.values(y ?? {}).map(e => {
             let {
                 title: t,
                 flag: n
-            } = e, i = l.zy(j, n);
+            } = e, i = s.zy(j, n);
             return (0, a.jsx)(v, {
                 title: t,
                 can: i
             }, t)
         });
     return (0, a.jsx)("div", {
-        className: s()(_.nd, f.nd),
+        className: l()(f.nd, _.nd),
         children: (0, a.jsxs)("div", {
-            className: f.l$,
+            className: _.l$,
             children: [(0, a.jsxs)("section", {
-                className: f.uW,
+                className: _.uW,
                 children: [(0, a.jsx)(o.Heading, {
                     variant: "heading-md/semibold",
                     children: null != A ? `Permissions in ${A}` : "No channel selected"
                 }), S]
             }), (0, a.jsxs)("section", {
-                className: f.uW,
+                className: _.uW,
                 children: [(0, a.jsx)(o.Heading, {
                     variant: "heading-md/semibold",
                     children: null != i ? `Permissions in ${i.name}` : "No guild selected"
-                }), E]
+                }), T]
             })]
         })
     })
