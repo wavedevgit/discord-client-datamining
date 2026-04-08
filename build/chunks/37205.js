@@ -45,8 +45,8 @@ var i = n(627968),
     V = n(182912),
     q = n(341678),
     W = n(652215),
-    Y = n(985018),
-    z = n(826235);
+    z = n(985018),
+    Y = n(826235);
 
 function Q(e) {
     let {
@@ -75,14 +75,14 @@ function Q(e) {
                 voiceStates: i
             } = e, l = n.id === t, s = i.length > 0, r = i.length;
             return s ? {
-                label: l ? Y.intl.format(Y.t["2RWMFV"], {
+                label: l ? z.intl.format(z.t["2RWMFV"], {
                     othersCount: r
-                }) : Y.intl.format(Y.t.Da7tZx, {
+                }) : z.intl.format(z.t.Da7tZx, {
                     othersCount: r
                 })
             } : {
-                label: l ? Y.intl.string(Y.t.DVDvCD) : Y.intl.string(Y.t.TY77rq),
-                sublabel: Y.intl.string(Y.t.wM2WTM)
+                label: l ? z.intl.string(z.t.DVDvCD) : z.intl.string(z.t.TY77rq),
+                sublabel: z.intl.string(z.t.wM2WTM)
             }
         }({
             currentUserId: n,
@@ -205,31 +205,31 @@ function Q(e) {
         }, [eA]);
     return (0, i.jsxs)("div", {
         ref: em,
-        className: r()(z.kL, {
-            [z.VD]: eo
+        className: r()(Y.kL, {
+            [Y.VD]: eo
         }),
         onMouseMove: ex,
         onMouseLeave: ef,
         children: [(0, i.jsx)("div", {
-            className: z.ys
+            className: Y.ys
         }), (0, i.jsx)("div", {
-            className: z.r$,
+            className: Y.r$,
             style: {
                 "--custom-number-of-dots": 24
             }
         }), eo ? (0, i.jsx)(X, {
-            className: z.tB,
+            className: Y.tB,
             stream: er
         }) : null, (0, i.jsxs)("div", {
-            className: z.rf,
+            className: Y.rf,
             children: [(0, i.jsxs)("div", {
-                className: z.Qs,
+                className: Y.Qs,
                 children: [(0, i.jsx)(G.A, {
                     channel: Q,
                     guild: H,
                     onClick: ec
                 }), (0, i.jsxs)("div", {
-                    className: z.WD,
+                    className: Y.WD,
                     children: [eo ? (0, i.jsx)(K, {
                         guildId: H.id,
                         channelId: Q.id,
@@ -242,7 +242,7 @@ function Q(e) {
                         })
                     }), null != ee ? (0, i.jsx)(h.Text, {
                         variant: "text-sm/normal",
-                        className: z.$B,
+                        className: Y.$B,
                         children: (0, i.jsx)(m.A, {
                             children: ee
                         })
@@ -252,9 +252,9 @@ function Q(e) {
                 stream: er,
                 currentUserId: n,
                 onClick: eu,
-                className: z.Rh
+                className: Y.Rh
             }) : (0, i.jsx)("div", {
-                className: z.RE,
+                className: Y.RE,
                 children: (0, i.jsx)(V.A, {
                     ref: S,
                     guildId: H.id,
@@ -264,14 +264,14 @@ function Q(e) {
                 })
             })]
         }), (0, i.jsx)("div", {
-            className: z.xk,
+            className: Y.xk,
             children: (0, i.jsx)(h.Button, {
                 onClick: ed,
                 loading: ei,
                 variant: "active",
                 fullWidth: !0,
                 disabled: !en,
-                text: Y.intl.string(Y.t.gpqgah)
+                text: z.intl.string(z.t.gpqgah)
             })
         })]
     })
@@ -288,7 +288,7 @@ function K(e) {
         channelId: n,
         members: l
     }) : (0, i.jsx)("div", {
-        className: z.WM,
+        className: Y.WM,
         children: (0, i.jsx)(S.A, {
             guildId: t,
             partySize: {
@@ -317,7 +317,7 @@ function J(e) {
         targetElementRef: r,
         shouldShow: a,
         children: e => (0, i.jsx)("div", {
-            className: z.WM,
+            className: Y.WM,
             ...e,
             children: (0, i.jsx)(S.A, {
                 guildId: t,
@@ -343,14 +343,14 @@ function X(e) {
         isLoading: s
     } = (0, v.A)(n.guildId, n.channelId, n.ownerId), a = null != l && !s;
     return (0, i.jsx)("div", {
-        className: r()(t, z.rr, {
-            [z.pc]: !a
+        className: r()(t, Y.rr, {
+            [Y.pc]: !a
         }),
         style: {
             "--custom-bg-url": a ? `url(${l})` : "unset"
         },
         children: (0, i.jsx)("div", {
-            className: z.bW
+            className: Y.bW
         })
     })
 }

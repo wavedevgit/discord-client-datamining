@@ -47,8 +47,8 @@ var i = n(627968),
     V = n(384231),
     q = n(46054),
     W = n(731068),
-    Y = n(619517),
-    z = n(207133),
+    z = n(619517),
+    Y = n(207133),
     Q = n(480191),
     K = n(269849),
     J = n(704413),
@@ -101,8 +101,8 @@ var i = n(627968),
     eV = n(96782),
     eq = n(573163),
     eW = n(861986),
-    eY = n(937266),
-    ez = n(343552),
+    ez = n(937266),
+    eY = n(343552),
     eQ = n(581619),
     eK = n(652215),
     eJ = n(985018),
@@ -118,7 +118,7 @@ let eZ = [eK.Auw.GIFV],
             height: s,
             flags: r
         } = e, a = (0, o.Lt)(r, W.e5.IS_ANIMATED);
-        return null != l && null != s && (Y.bp.test(n) || a && (Y.P8.test(n) || Y.p4.test(n))) ? (0, i.jsx)(eD.A, {
+        return null != l && null != s && (z.bp.test(n) || a && (z.P8.test(n) || z.p4.test(n))) ? (0, i.jsx)(eD.A, {
             width: l,
             height: s,
             src: n,
@@ -417,7 +417,7 @@ class e2 extends l.Component {
         if (e.type === eK.Auw.GIFT) return null;
         let _ = eZ.includes(e.type) ? e.url : e.image?.url ?? e.video?.url;
         return (0, i.jsx)(R.G.Provider, {
-            value: (0, ez.b)(_, e.image, e.video, e.thumbnail, e.provider?.name),
+            value: (0, eY.b)(_, e.image, e.video, e.thumbnail, e.provider?.name),
             children: (0, i.jsx)(E.Ay, {
                 embed: e,
                 obscureReason: u ?? void 0,
@@ -512,7 +512,7 @@ class e2 extends l.Component {
                 let l = eE.A.safeParseWithQuery(t.url);
                 if (null != l && null != l.pathname) {
                     let r = l.pathname.split("/")[3];
-                    if (null != r) return (0, i.jsx)(eY.A, {
+                    if (null != r) return (0, i.jsx)(ez.A, {
                         skuId: r,
                         renderFallback: () => this.renderEmbed(t, n, s, e)
                     }, t.id)
@@ -768,7 +768,7 @@ function e7(e) {
         communicationDisabled: C,
         isActiveChannelOrUnarchivableThread: E,
         isAutomodQuarantined: f
-    }), j = (0, V.S)((n.editedTimestamp ?? n.timestamp).valueOf()), L = (0, z.A)(t?.id), R = (0, J.A)(n), P = (0, N.P)(n), w = (0, eT.z)(t), k = (0, eI._f)(n.id, n.channel_id), O = (0, T._R)();
+    }), j = (0, V.S)((n.editedTimestamp ?? n.timestamp).valueOf()), L = (0, Y.A)(t?.id), R = (0, J.A)(n), P = (0, N.P)(n), w = (0, eT.z)(t), k = (0, eI._f)(n.id, n.channel_id), O = (0, T._R)();
     return (0, i.jsx)(e2, {
         canSuppressEmbeds: I,
         canDeleteAttachments: v,
@@ -804,7 +804,7 @@ let e9 = e => {
         disableReactionUpdates: a = !0,
         disableComponentInteractivity: o = !0,
         ...d
-    } = e, c = ed.X6.useSetting(), u = ed.hD.useSetting(), _ = ed.rs.useSetting(), m = ed.kt.useSetting(), h = (0, V.S)((t.editedTimestamp ?? t.timestamp).valueOf()), p = (0, z.A)(n?.id), g = (0, N.P)(t), A = (0, eI._f)(t.id, t.channel_id), x = (0, J.A)(t);
+    } = e, c = ed.X6.useSetting(), u = ed.hD.useSetting(), _ = ed.rs.useSetting(), m = ed.kt.useSetting(), h = (0, V.S)((t.editedTimestamp ?? t.timestamp).valueOf()), p = (0, Y.A)(n?.id), g = (0, N.P)(t), A = (0, eI._f)(t.id, t.channel_id), x = (0, J.A)(t);
     return (0, i.jsx)(e2, {
         ...d,
         message: t,

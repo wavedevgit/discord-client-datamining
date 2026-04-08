@@ -161,12 +161,12 @@ let U = e => {
             F = null != G,
             [H, V] = l.useState(!1),
             [q, W] = l.useState(null),
-            Y = l.useMemo(() => ({
+            z = l.useMemo(() => ({
                 page: null != s.guild_id ? R.liQ.GUILD_CHANNEL : R.liQ.DM_CHANNEL,
                 section: R.JJy.STICKER_POPOUT
             }), [s.guild_id]),
             {
-                current: z
+                current: Y
             } = l.useRef({
                 guild_id: s.getGuildId(),
                 ...(0, h.dI)(s)
@@ -204,7 +204,7 @@ let U = e => {
             }, [S, y]), (0, m.Ay)(() => {
                 b.default.track(R.HAw.OPEN_POPOUT, {
                     type: $,
-                    ...z
+                    ...Y
                 })
             }), !S) return (0, i.jsx)(f.Y0, {
             className: M.v0
@@ -235,7 +235,7 @@ let U = e => {
                         },
                         onSubscribeModalClose: t => t ? e() : o(),
                         postSuccessGuild: F || null == y ? void 0 : y,
-                        premiumModalAnalyticsLocation: Y
+                        premiumModalAnalyticsLocation: z
                     }), ee && (0, i.jsx)("div", {
                         "data-button-hoisted-classname-wrapper": !0,
                         className: w.lI,

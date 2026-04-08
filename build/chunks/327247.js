@@ -54,7 +54,7 @@ function w(e) {
             friction: 20,
             clamp: !0
         }
-    }), H = (0, C.Ic)(t), V = (0, A.In)(t), q = (0, E.mq)(t.config), W = (0, E.mH)(t.config), Y = t.userStatus?.enrolledAt != null, z = t.userStatus?.completedAt != null, Q = t.userStatus?.claimedAt != null, K = (0, E.ks)(t.config), J = (0, E._Z)(t.config), {
+    }), H = (0, C.Ic)(t), V = (0, A.In)(t), q = (0, E.mq)(t.config), W = (0, E.mH)(t.config), z = t.userStatus?.enrolledAt != null, Y = t.userStatus?.completedAt != null, Q = t.userStatus?.claimedAt != null, K = (0, E.ks)(t.config), J = (0, E._Z)(t.config), {
         completedRatio: X,
         completedRatioDisplay: Z
     } = (0, A.O9)(t), $ = (0, g.gj)(t, b, _.Ob.QuestEmbed, w), ee = (0, y.Pd)(t), et = l.useMemo(() => Q && K ? R.intl.format(R.t["8Op4c4"], {
@@ -114,11 +114,11 @@ function w(e) {
             className: D.z,
             children: [(0, i.jsxs)("div", {
                 className: D.c6,
-                children: [!Q && z && (0, i.jsx)("div", {
+                children: [!Q && Y && (0, i.jsx)("div", {
                     className: D.Nz
-                }), Y ? (0, i.jsxs)("div", {
+                }), z ? (0, i.jsxs)("div", {
                     className: D.Tr,
-                    children: [z && (0, i.jsx)(d.akl, {
+                    children: [Y && (0, i.jsx)(d.akl, {
                         importData: M,
                         className: D.t_,
                         loop: !1,

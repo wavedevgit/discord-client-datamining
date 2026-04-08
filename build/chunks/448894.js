@@ -83,11 +83,11 @@ function y(e) {
     let V = null != n.channel ? (0, g.OY)(n.channel) : null,
         q = C.Ay.getName(U),
         W = w || !k && H,
-        Y = b.intl.string(b.t.I6JG46),
-        z = "active";
+        z = b.intl.string(b.t.I6JG46),
+        Y = "active";
     H && !k ? (t = B ? b.intl.string(b.t.oBLoZJ) : b.intl.formatToPlainString(b.t["0QJmA+"], {
         name: q
-    }), Y = b.intl.string(b.t.Wdi5E1)) : (z = "active", w && (Y = b.intl.string(b.t.Q1W99y), z = "secondary"), t = B ? b.intl.string(b.t["4hyaHu"]) : b.intl.formatToPlainString(b.t.QmlLEq, {
+    }), z = b.intl.string(b.t.Wdi5E1)) : (Y = "active", w && (z = b.intl.string(b.t.Q1W99y), Y = "secondary"), t = B ? b.intl.string(b.t["4hyaHu"]) : b.intl.formatToPlainString(b.t.QmlLEq, {
         name: q
     }));
     let Q = R === y.id && null != V ? (0, i.jsx)(p.A.Channel, {
@@ -113,8 +113,8 @@ function y(e) {
                 onClick: F,
                 loading: G,
                 disabled: W,
-                variant: z,
-                text: Y
+                variant: Y,
+                text: z
             })]
         })]
     })

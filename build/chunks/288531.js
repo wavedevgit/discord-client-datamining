@@ -104,9 +104,9 @@ let w = e => {
         year: "numeric",
         month: "long",
         day: "numeric"
-    }), H = G >= A.F3.COMPLETED, V = k || O, q = (0, g.wT)(t, j.rE.QUESTS_CARD, n, B), W = (0, x.Ut)(), Y = (0, A.fc)(t), z = (0, g.mU)({
+    }), H = G >= A.F3.COMPLETED, V = k || O, q = (0, g.wT)(t, j.rE.QUESTS_CARD, n, B), W = (0, x.Ut)(), z = (0, A.fc)(t), Y = (0, g.mU)({
         quest: t,
-        taskDetails: Y,
+        taskDetails: z,
         location: j.rE.QUESTS_CARD,
         questContent: r.u.QUESTS_EMBED,
         sourceQuestContent: B,
@@ -217,7 +217,7 @@ let w = e => {
                                 quest: t,
                                 locale: X,
                                 isQuestExpired: w,
-                                collectibleQuestRewardDescription: z,
+                                collectibleQuestRewardDescription: Y,
                                 formattedCompletionDate: F
                             })
                         }), en && $ && (0, i.jsx)(b.e, {

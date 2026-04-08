@@ -125,8 +125,8 @@ function U(e) {
         presenceActivity: V,
         currentUserPresenceActivity: q,
         hideParty: W,
-        partyStatusElement: Y,
-        analyticsLocations: z,
+        partyStatusElement: z,
+        analyticsLocations: Y,
         showAuthButton: Q,
         canPromptAuth: K,
         startAuthorization: J,
@@ -167,8 +167,8 @@ function U(e) {
         })
     }, [V?.details]), er = l.useMemo(() => (0, i.jsxs)("div", {
         className: k.pq,
-        children: [es, el, W || et ? null : Y]
-    }), [el, W, et, Y, es]), ea = !!L, eo = (0, A.e)(n), {
+        children: [es, el, W || et ? null : z]
+    }), [el, W, et, z, es]), ea = !!L, eo = (0, A.e)(n), {
         canJoin: ed,
         remoteJoinPlatform: ec
     } = (0, I.D)({
@@ -199,7 +199,7 @@ function U(e) {
                     channelId: a.id,
                     messageId: t.id,
                     source: D.ThZ.MESSAGE_EMBED,
-                    analyticsLocations: z,
+                    analyticsLocations: Y,
                     embedded: (0, S.A)(V, D.jUm.EMBEDDED),
                     remotePartyId: null != ec ? V.party?.id : void 0
                 }), (0, j.A)({
@@ -211,7 +211,7 @@ function U(e) {
                     applicationId: V.application_id,
                     partyId: V.party?.id,
                     messageId: t.id,
-                    analyticsLocations: z,
+                    analyticsLocations: Y,
                     remoteJoinPlatform: ec
                 })
             }
@@ -220,7 +220,7 @@ function U(e) {
             trackingArea: h.kY.CONNECT_ACCOUNT,
             onClick: () => {
                 J({
-                    analyticsLocations: z
+                    analyticsLocations: Y
                 })
             }
         }, n = !1) : eu ? (e = {
@@ -254,7 +254,7 @@ function U(e) {
             trackingArea: h.kY.CONNECT_ACCOUNT,
             onClick: () => {
                 J({
-                    analyticsLocations: z
+                    analyticsLocations: Y
                 })
             },
             icon: d.A5T,
@@ -264,8 +264,8 @@ function U(e) {
             actions: l,
             hasAccountLinkButton: i
         }
-    }, [ed, eu, e_, em, U, t.author.id, t.id, V, a.id, a.guild_id, z, ec, y, ep, Q, J, X, K, eh]), ex = eg.some(e => e.trackingArea === h.kY.CLOUD_PLAY);
-    (0, P.A)(ex, z);
+    }, [ed, eu, e_, em, U, t.author.id, t.id, V, a.id, a.guild_id, Y, ec, y, ep, Q, J, X, K, eh]), ex = eg.some(e => e.trackingArea === h.kY.CLOUD_PLAY);
+    (0, P.A)(ex, Y);
     let ef = l.useMemo(() => em ? null : (0, i.jsx)(O, {
         presenceActivity: V,
         remoteJoinPlatform: ec,

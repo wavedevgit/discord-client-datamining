@@ -106,8 +106,8 @@ function M(e) {
         } = l.useMemo(() => (0, E.Cv)(M, w), [M, w]),
         {
             normalPrice: W,
-            discountedPrice: Y,
-            discountPercent: z
+            discountedPrice: z,
+            discountPercent: Y
         } = (0, g.o)({
             sku: M,
             priceSetAssignmentPurchaseType: L.lid.DEFAULT
@@ -147,7 +147,7 @@ function M(e) {
         })
     });
     if (null == M || null == U || !(0, h.A)(U) || U.guildId !== t) return null;
-    let Z = Y ?? W;
+    let Z = z ?? W;
     return (0, i.jsxs)("div", {
         className: P.kL,
         children: [(0, i.jsx)(j.A, {
@@ -174,8 +174,8 @@ function M(e) {
                 }), (0, i.jsx)(D, {
                     sku: M,
                     normalPrice: W,
-                    discountedPrice: Y,
-                    discountPercent: z
+                    discountedPrice: z,
+                    discountPercent: Y
                 })]
             }), (0, i.jsxs)(a.e2v, {
                 wrap: !1,

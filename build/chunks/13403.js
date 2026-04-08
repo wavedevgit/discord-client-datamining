@@ -49,8 +49,8 @@ function D(e) {
         } = e,
         W = (0, d.Ag)(k),
         {
-            iconSrc: Y,
-            name: z
+            iconSrc: z,
+            name: Y
         } = function(e, t) {
             let {
                 bot: n
@@ -109,7 +109,7 @@ function D(e) {
         } = (0, _.RD)(k),
         es = (0, u.z)(el, ei),
         er = !(0, T.A)(q, F, k.id),
-        ea = (0, b.n$)(z, F.activity?.type, er),
+        ea = (0, b.n$)(Y, F.activity?.type, er),
         eo = l.useRef(null),
         ed = (0, s.bG)([E.A], () => E.A.getMessages(O.id)),
         ec = () => {
@@ -147,7 +147,7 @@ function D(e) {
     return er ? (0, i.jsx)(j.A, {
         message: F,
         application: k,
-        applicationName: z,
+        applicationName: Y,
         channel: O,
         header: ea,
         currentUserId: U,
@@ -156,7 +156,7 @@ function D(e) {
         tryWithGdnAction: Z,
         staticBannerSrc: Q,
         onClickContent: ee,
-        iconSrc: Y,
+        iconSrc: z,
         onView: H,
         presenceActivity: q,
         analyticsLocations: w,
@@ -167,7 +167,7 @@ function D(e) {
     }) : (0, i.jsx)(L.A, {
         message: F,
         application: k,
-        applicationName: z,
+        applicationName: Y,
         channel: O,
         header: ea,
         currentUserId: U,
@@ -176,7 +176,7 @@ function D(e) {
         tryWithGdnAction: Z,
         staticBannerSrc: Q,
         onClickContent: ee,
-        iconSrc: Y,
+        iconSrc: z,
         onView: H,
         presenceActivity: q,
         currentUserPresenceActivity: B,

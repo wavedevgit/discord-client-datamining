@@ -72,10 +72,10 @@ let g = function(e) {
                     remainTime: (0, u.xm)((0, u.Yh)(t))
                 });
             case l.n.ACHIEVEMENT_IN_ACTIVITY:
-                return h.intl.string(h.t["hRIVy+"]);
+                return h.intl.string(h.t.CkUzLd);
             case l.n.PLAY_ACTIVITY:
                 if (n.includes(m.Li.CLOUD_GAMING_ACTIVITY)) return h.intl.string(h.t["+qoymD"]);
-                return h.intl.string(h.t["Ie9++s"]);
+                return h.intl.string(h.t.E4kW5O);
             default:
                 return h.intl.string(h.t.kUQLMJ)
         }

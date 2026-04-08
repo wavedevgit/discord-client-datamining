@@ -49,8 +49,8 @@ function S(e) {
         V = null != F,
         q = null != F && F.isGuildStageVoice(),
         W = (0, a.Lt)(D.flags ?? 0, r.Q.IS_GUEST_INVITE),
-        Y = F?.isGuildVoiceOrThread() ?? !1,
-        z = P?.features.has(T.GuildFeatures.HUB) ?? !1,
+        z = F?.isGuildVoiceOrThread() ?? !1,
+        Y = P?.features.has(T.GuildFeatures.HUB) ?? !1,
         Q = P?.id,
         {
             analyticsLocations: K
@@ -85,10 +85,10 @@ function S(e) {
         (P = I.DY(D.guild)).premiumTier = D.guild.premium_tier ?? T.TVA.NONE
     }
     let ei = (0, v.l)({
-        isVoiceChannel: Y,
+        isVoiceChannel: z,
         isOwnInvite: k,
         isGuest: W,
-        isHubGuild: z,
+        isHubGuild: Y,
         isStage: q,
         isStream: !1
     });
@@ -120,7 +120,7 @@ function S(e) {
             color: "currentColor",
             className: N.G
         })
-    })), Y ? (S = (0, i.jsx)(f.A.Channel, {
+    })), z ? (S = (0, i.jsx)(f.A.Channel, {
         channel: F
     }), t = (0, i.jsxs)("span", {
         className: N.FA,
@@ -161,9 +161,9 @@ function S(e) {
                     onClick: en,
                     loading: G,
                     variant: "active",
-                    fullWidth: Y,
+                    fullWidth: z,
                     disabled: !ee,
-                    text: Y ? q ? y.intl.string(y.t["7vb2cc"]) : y.intl.string(y.t.gpqgah) : H ? y.intl.string(y.t.cEnaWx) : y.intl.string(y.t.XpeFYr)
+                    text: z ? q ? y.intl.string(y.t["7vb2cc"]) : y.intl.string(y.t.gpqgah) : H ? y.intl.string(y.t.cEnaWx) : y.intl.string(y.t.XpeFYr)
                 })
             })]
         }), P.features.has(T.GuildFeatures.HUB) && (0, i.jsxs)(i.Fragment, {
