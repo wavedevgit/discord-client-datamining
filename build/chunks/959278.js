@@ -322,13 +322,13 @@ let eB = (0, c.Fe)({
             guildId: t.params.guildId
         }) : null
     },
-    e2 = e => {
+    e5 = e => {
         let {
             match: t
         } = e;
         return (0, eC.pX)(eM.BVt.ME), (0, Q.A)(t.params.inviteCode), null
     },
-    e5 = () => (0, i.jsx)(I.A, {}),
+    e2 = () => (0, i.jsx)(I.A, {}),
     e3 = () => (0, i.jsx)(f.A, {}),
     e4 = () => function(e) {
         let {
@@ -612,7 +612,7 @@ function to() {
                                     }
                                 }), (0, i.jsx)(v.A, {
                                     path: eM.BVt.APPLICATION_LIBRARY,
-                                    render: e5,
+                                    render: e2,
                                     impressionName: d.ImpressionNames.APPLICATION_LIBRARY,
                                     disableTrack: !0
                                 }), (0, i.jsx)(v.A, {
@@ -735,7 +735,7 @@ function to() {
                                     disableTrack: !0
                                 }), (0, i.jsx)(v.A, {
                                     path: eM.BVt.GUILD_MEMBER_VERIFICATION_FOR_HUB(eI.pv.guildId(), ":inviteCode?"),
-                                    render: e2
+                                    render: e5
                                 }), (0, i.jsx)(v.A, {
                                     path: eM.BVt.GUILD_FEATURE(":feature", eI.pv.guildId()),
                                     exact: !0,

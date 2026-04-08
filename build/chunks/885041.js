@@ -112,8 +112,8 @@ var i = n(627968),
     e7 = n(967198),
     e9 = n(147964),
     e6 = n(237631),
-    e2 = n(194871),
-    e5 = n(856588),
+    e5 = n(194871),
+    e2 = n(856588),
     e3 = n(612181),
     e4 = n(723702),
     e8 = n(837921),
@@ -367,7 +367,7 @@ let t_ = [{
             gameId: n,
             action: r
         } = t.params;
-        return e2.A.whenInitialized(() => {
+        return e5.A.whenInitialized(() => {
             e0.A.whenInitialized(() => {
                 switch (r) {
                     case "launch": {
@@ -588,7 +588,7 @@ class tg extends r.PureComponent {
     historyUnlisten = () => {};
     rewriterUnlisten = () => {};
     componentDidMount() {
-        e8.Ay.setZoomFactor(g.A.zoom), eR.A.init(), O.A.initialize(), ef.A.initialize(), K.A.initialize(), ez.A.initialize(), q.A.initialize(), eN.A.initialize(), k.A.initialize(), ed.A.initialize(), E.A.init(), $.A.init(), z.A.init(), e_.A.initialize(), S.A.initialize(), H.A.initialize(), eS.A.initialize(), T.Ay.initialize(), F.Ay.initialize(), eq.A.initialize(), el.Ay.initialize(), eI.A.initialize(), C.A.initialize(), es.A.init(), D.A.init(), e5.A.init(), f.A.initialize(), ek.A.init(), e6.A.init(), eH.A.init(), ej.A.initialize(), ew.A.initialize(), eB.A.initialize(), eY.A.init(), B.A.initialize(), I.A.initialize(), eM.A.initialize(), eg.A.initialize(), ep.A.initialize(), eE.A.initialize(), M.A.initialize(), j.A.initialize(), W.A.initialize(), eo.A.initialize(), ec.A.initialize(), ex.A.initialize(), eC.A.initialize(), P.A.initialize(), x.A.initialize(), this.rewriterUnlisten = ev.A.addRouteRewriter(this.ensureChannelMatchesGuild), this.historyUnlisten = ev.A.addRouteChangeListener(this.handleHistoryChange)
+        e8.Ay.setZoomFactor(g.A.zoom), eR.A.init(), O.A.initialize(), ef.A.initialize(), K.A.initialize(), ez.A.initialize(), q.A.initialize(), eN.A.initialize(), k.A.initialize(), ed.A.initialize(), E.A.init(), $.A.init(), z.A.init(), e_.A.initialize(), S.A.initialize(), H.A.initialize(), eS.A.initialize(), T.Ay.initialize(), F.Ay.initialize(), eq.A.initialize(), el.Ay.initialize(), eI.A.initialize(), C.A.initialize(), es.A.init(), D.A.init(), e2.A.init(), f.A.initialize(), ek.A.init(), e6.A.init(), eH.A.init(), ej.A.initialize(), ew.A.initialize(), eB.A.initialize(), eY.A.init(), B.A.initialize(), I.A.initialize(), eM.A.initialize(), eg.A.initialize(), ep.A.initialize(), eE.A.initialize(), M.A.initialize(), j.A.initialize(), W.A.initialize(), eo.A.initialize(), ec.A.initialize(), ex.A.initialize(), eC.A.initialize(), P.A.initialize(), x.A.initialize(), this.rewriterUnlisten = ev.A.addRouteRewriter(this.ensureChannelMatchesGuild), this.historyUnlisten = ev.A.addRouteChangeListener(this.handleHistoryChange)
     }
     componentWillUnmount() {
         eR.A.terminate(), ez.A.terminate(), eN.A.terminate(), ef.A.terminate(), O.A.terminate(), T.Ay.terminate(), F.Ay.terminate(), eq.A.terminate(), C.A.terminate(), eS.A.terminate(), eI.A.terminate(), eB.A.terminate(), f.A.terminate(), B.A.terminate(), ec.A.terminate(), I.A.terminate(), ex.A.terminate(), eM.A.terminate(), eg.A.terminate(), ep.A.terminate(), eE.A.terminate(), M.A.terminate(), j.A.terminate(), eC.A.terminate(), Y.A.terminate(), P.A.terminate(), x.A.terminate(), W.A.terminate(), eo.A.terminate(), this.historyUnlisten(), this.rewriterUnlisten()
