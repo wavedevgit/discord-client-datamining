@@ -1,11 +1,11 @@
 /** chunk id: 67602 params = (module,exports,require) **/
 n.d(t, {
-    A: () => p
+    A: () => g
 });
 var i = n(627968),
-    r = n(311907),
-    a = n(397927),
-    l = n(975807),
+    a = n(311907),
+    l = n(397927),
+    r = n(975807),
     s = n(926466),
     o = n(201438),
     d = n(194362),
@@ -16,15 +16,15 @@ var i = n(627968),
     _ = n(985018),
     m = n(922650);
 
-function p(e) {
+function g(e) {
     let {
         guild: t,
         markAsDismissed: n
-    } = e, p = ((0, r.bG)([c.A], () => c.A.getUnclaimedGameIdsForGuild(t.id), [t.id]) ?? [])[0] ?? null, {
-        coverImageUrl: g,
+    } = e, g = ((0, a.bG)([c.A], () => c.A.getUnclaimedGameIdsForGuild(t.id), [t.id]) ?? [])[0] ?? null, {
+        coverImageUrl: p,
         gameName: E
-    } = (0, o.A)(p, _.intl.string(_.t.VQq92a));
-    if (null == g) return null;
+    } = (0, o.A)(g, _.intl.string(_.t.VQq92a));
+    if (null == p) return null;
     let I = t.features.has(A.GuildFeatures.VERIFIED) ? _.intl.string(_.t.uUARXe) : _.intl.string(_.t["0Dx29f"]);
     return (0, i.jsx)(s.A, {
         guild: t,
@@ -35,20 +35,20 @@ function p(e) {
         message: I,
         cta: (0, i.jsxs)("span", {
             className: m.m,
-            children: [_.intl.string(_.t["2u6ZlY"]), (0, i.jsx)(a.I9m, {
+            children: [_.intl.string(_.t["2u6ZlY"]), (0, i.jsx)(l.I9m, {
                 size: "xs",
                 color: "currentColor"
             })]
         }),
         type: A.n5X.GAME_CLAIM,
         image: (0, i.jsx)(u.A, {
-            imageSrc: g
+            imageSrc: p
         }),
         imageMarginX: 60,
         onClick: async () => {
             n(h.i.TAKE_ACTION);
             let e = await (0, d.a)(A.dSh.DEVELOPER_PORTAL_APPLICATIONS_GAME_IDENTITY);
-            (0, l.A)(e)
+            (0, r.A)(e)
         }
     })
 }

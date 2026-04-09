@@ -33,8 +33,8 @@ let _ = {
             id: r,
             tabIndex: i,
             className: f,
-            cardClassName: b,
-            cardStyle: h = p,
+            cardClassName: h,
+            cardStyle: b = p,
             cardType: g,
             artboard: x = "BaseGlowRemapped",
             fit: C = "layout",
@@ -46,8 +46,8 @@ let _ = {
             onMouseEnter: N
         } = e, y = a.useRef(null), I = a.useRef(null), {
             status: P,
-            buffer: S
-        } = (0, c.CE)(A ? l.A : null), T = a.useContext(d.C), w = j ?? T.reducedMotion.enabled, O = {
+            buffer: T
+        } = (0, c.CE)(A ? l.A : null), S = a.useContext(d.C), w = j ?? S.reducedMotion.enabled, O = {
             "--custom-glow-amount": `${R}px`,
             "--custom-blur-amount": `${v}px`,
             "--custom-hue-rotate": `${E}deg`,
@@ -61,7 +61,7 @@ let _ = {
             style: O,
             onMouseEnter: N,
             children: [A && P !== c.BW.Loading && (0, n.jsx)(o.w, {
-                buffer: S,
+                buffer: T,
                 artboard: x,
                 artboardProperties: _,
                 eventTargetRef: y,
@@ -71,8 +71,8 @@ let _ = {
                 withReducedMotion: w ? "halt" : "play"
             }), (0, n.jsx)(u.ZpM, {
                 type: g ?? u.sl2.CUSTOM,
-                className: b,
-                style: h,
+                className: h,
+                style: b,
                 children: t
             })]
         })

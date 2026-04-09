@@ -4,8 +4,8 @@ n.d(t, {
     A: () => m
 });
 var r = n(627968),
-    i = n(64700),
-    l = n(311907),
+    l = n(64700),
+    i = n(311907),
     a = n(521489),
     s = n(397927),
     o = n(775602),
@@ -21,13 +21,13 @@ function m(e) {
         defaultTarget: m,
         onViewChange: f,
         sidebarFooter: p,
-        emptyState: _,
-        searchQuery: v,
-        clearSearchQuery: y,
-        searchBar: g,
+        emptyState: v,
+        searchQuery: y,
+        clearSearchQuery: g,
+        searchBar: _,
         ...x
-    } = e, [E, A] = i.useState(!1), [S, b] = i.useState(1.4), N = i.useRef(null), j = (0, l.bG)([o.A], () => o.A.useReducedMotion), C = (0, l.bG)([u.A], () => u.A.isFocused());
-    return i.useEffect(() => {
+    } = e, [E, A] = l.useState(!1), [S, b] = l.useState(1.4), N = l.useRef(null), j = (0, i.bG)([o.A], () => o.A.useReducedMotion), C = (0, i.bG)([u.A], () => u.A.isFocused());
+    return l.useEffect(() => {
         let e = e => {
             let {
                 intensity: t,
@@ -49,11 +49,11 @@ function m(e) {
                 target: n,
                 defaultTarget: m,
                 onViewChange: f,
-                emptyState: _,
+                emptyState: v,
                 sidebarFooter: p,
-                searchQuery: v,
-                clearSearchQuery: y,
-                searchBar: g
+                searchQuery: y,
+                clearSearchQuery: g,
+                searchBar: _
             })
         })
     })

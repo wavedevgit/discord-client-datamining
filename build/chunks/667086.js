@@ -3,9 +3,9 @@ n.d(t, {
     A: () => b
 });
 var i = n(627968),
-    r = n(64700),
-    a = n(503698),
-    l = n.n(a),
+    a = n(64700),
+    l = n(503698),
+    r = n.n(l),
     s = n(877227),
     o = n(311907),
     d = n(319354),
@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(418842),
     _ = n(309010),
     m = n(723702),
-    p = n(851109),
-    g = n(394953),
+    g = n(851109),
+    p = n(394953),
     E = n(355216),
     I = n(596540),
     f = n(652215),
@@ -42,10 +42,10 @@ function v(e) {
     let {
         onClick: t,
         selectedOverride: n = !1,
-        popoutProps: a,
+        popoutProps: l,
         ref: s,
         focusSectionProps: o
-    } = e, [_, p] = r.useState(!1), I = (0, g.lI)(), f = n || I, v = n || f, b = (0, i.jsx)(u.XFE, {
+    } = e, [_, g] = a.useState(!1), I = (0, p.lI)(), f = n || I, v = n || f, b = (0, i.jsx)(u.XFE, {
         className: T.Kk,
         color: _ || v ? u.LU0.colors.ICON_STRONG : u.LU0.colors.ICON_MUTED,
         size: "sm"
@@ -69,18 +69,18 @@ function v(e) {
                 innerRef: s,
                 className: T.OV,
                 ...o,
-                ...a,
+                ...l,
                 onMouseEnter: () => {
-                    p(!0)
+                    g(!0)
                 },
                 onMouseLeave: () => {
-                    p(!1)
+                    g(!1)
                 },
                 onClick: () => {
-                    t?.(), a?.onClick?.()
+                    t?.(), l?.onClick?.()
                 },
                 children: [(0, i.jsx)("div", {
-                    className: l()(T.P0, null),
+                    className: r()(T.P0, null),
                     children: "unread" === O ? (0, i.jsxs)(i.Fragment, {
                         children: [(0, i.jsx)(A.Ay, {
                             width: d.E.sm,
@@ -100,28 +100,28 @@ function v(e) {
 function b() {
     let {
         focusSectionProps: e
-    } = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}, t = r.useRef(null), {
+    } = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}, t = a.useRef(null), {
         notificationCenterVariant: n
-    } = (0, p.X8)({
+    } = (0, g.X8)({
         location: "NotificationsInboxButton"
-    }), a = (0, o.bG)([_.A], () => _.A.getChannelId()), l = r.useMemo(() => f.BVt.CHANNEL(f.gNP, a ?? void 0), [a]), d = (0, E.HN)();
-    return n === p.U5.SIDEBAR ? (0, i.jsx)(v, {
+    }), l = (0, o.bG)([_.A], () => _.A.getChannelId()), r = a.useMemo(() => f.BVt.CHANNEL(f.gNP, l ?? void 0), [l]), d = (0, E.HN)();
+    return n === g.U5.SIDEBAR ? (0, i.jsx)(v, {
         onClick: () => {
-            d(), (0, s.pX)(l)
+            d(), (0, s.pX)(r)
         },
         focusSectionProps: e
-    }) : n === p.U5.POPOUT ? (0, i.jsx)(I.A, {
+    }) : n === g.U5.POPOUT ? (0, i.jsx)(I.A, {
         targetElementRef: t,
         popoutPosition: "bottom",
         popoutAlign: "left",
         spacing: 2,
-        children: (n, r, a) => (0, i.jsx)(v, {
+        children: (n, a, l) => (0, i.jsx)(v, {
             ref: t,
-            selectedOverride: r,
+            selectedOverride: a,
             onClick: () => {
                 d(), n()
             },
-            popoutProps: a,
+            popoutProps: l,
             focusSectionProps: e
         })
     }) : null

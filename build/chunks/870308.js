@@ -3,9 +3,9 @@ n.d(t, {
     A: () => _
 });
 var i = n(64700),
-    r = n(379197),
-    a = n(488430),
-    l = n(311907),
+    a = n(379197),
+    l = n(488430),
+    r = n(311907),
     s = n(554146),
     o = n(397927),
     d = n(932001),
@@ -14,12 +14,12 @@ var i = n(64700),
     A = n(158216),
     h = n(49999);
 let _ = () => {
-    let e = (0, l.bG)([c.A], () => c.A.getMarketingBySurface(r.R.DESKTOP_SHOP_BUTTON)),
+    let e = (0, r.bG)([c.A], () => c.A.getMarketingBySurface(a.R.DESKTOP_SHOP_BUTTON)),
         t = !(0, o.ueM)(),
         [n, _] = (0, d.RF)(t ? s.M.COLLECTIBLES_SHOP_ENTRY_MARKETING : null, e?.version ?? 0, void 0, !0),
         m = (0, u.bv)(e),
-        p = null != n ? ((e, t) => {
-            if (t?.type === a.G.COACHMARK) {
+        g = null != n ? ((e, t) => {
+            if (t?.type === l.G.COACHMARK) {
                 let e = t.refTargetBackground;
                 return {
                     type: A.FF.COACHMARK,
@@ -36,7 +36,7 @@ let _ = () => {
                     }
                 }
             }
-            return t?.type === a.G.TAB_TOOLTIP ? {
+            return t?.type === l.G.TAB_TOOLTIP ? {
                 type: A.FF.TAB_TOOLTIP,
                 title: () => t.title,
                 body: () => t.body,
@@ -53,11 +53,11 @@ let _ = () => {
                 showHoverGradient: t.showHoverGradient
             } : null
         })(m, e) : null,
-        g = i.useCallback(() => {
-            null != p && _(h.i.AUTO)
-        }, [p, _]);
+        p = i.useCallback(() => {
+            null != g && _(h.i.AUTO)
+        }, [g, _]);
     return {
-        shopButtonDisplayOptions: p,
-        dismissShopButtonDC: g
+        shopButtonDisplayOptions: g,
+        dismissShopButtonDC: p
     }
 }

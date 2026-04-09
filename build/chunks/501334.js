@@ -9,27 +9,24 @@ var i = n(627968),
     l = n(887324),
     a = n(985018),
     o = n(109974);
-let c = e => {
+let c = () => {
     let {
-        onNavigate: t
-    } = e, n = s.useCallback(() => {
-        t(l.rP.DSA)
-    }, [t]), c = s.useCallback(() => {
-        t(l.rP.TIDA)
-    }, [t]);
+        goToStep: e
+    } = (0, r.nqW)(), t = s.useCallback(() => {
+        e(l.IK.DSA)
+    }, [e]), n = s.useCallback(() => {
+        e(l.IK.TIDA)
+    }, [e]);
     return (0, i.jsxs)(r.BJc, {
         gap: 8,
-        children: [(0, i.jsx)(r.Heading, {
-            variant: "heading-xl/semibold",
-            children: a.intl.string(a.t.Z11w18)
-        }), (0, i.jsx)(r.Text, {
+        children: [(0, i.jsx)(r.Text, {
             variant: "text-md/normal",
             children: a.intl.string(a.t.bd1h5T)
         }), (0, i.jsxs)("div", {
             className: o.k,
             children: [(0, i.jsxs)(r.DUT, {
                 className: o.b,
-                onClick: n,
+                onClick: t,
                 children: [(0, i.jsxs)("div", {
                     children: [(0, i.jsx)(r.Text, {
                         variant: "text-md/medium",
@@ -44,7 +41,7 @@ let c = e => {
                 })]
             }), (0, i.jsxs)(r.DUT, {
                 className: o.b,
-                onClick: c,
+                onClick: n,
                 children: [(0, i.jsxs)("div", {
                     children: [(0, i.jsx)(r.Text, {
                         variant: "text-md/medium",

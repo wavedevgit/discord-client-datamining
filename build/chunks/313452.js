@@ -26,8 +26,8 @@ var i = n(627968),
     T = n(524628),
     S = n(849077),
     b = n(652215),
-    y = n(21786),
-    v = n(985018),
+    v = n(21786),
+    y = n(985018),
     j = n(702440);
 
 function R(e) {
@@ -54,7 +54,7 @@ function O(e) {
                 variant: "text-sm/medium",
                 color: "text-subtle",
                 className: j.P7,
-                children: (0, r.capitalize)(v.intl.string(S.v7[t]).toLowerCase())
+                children: (0, r.capitalize)(y.intl.string(S.v7[t]).toLowerCase())
             }), (0, i.jsx)(u.abt, {
                 size: "xxs",
                 className: j.ai
@@ -87,12 +87,12 @@ function M() {
                     style: {
                         textAlign: "center"
                     },
-                    children: v.intl.string(y.default["O+racd"])
+                    children: y.intl.string(v.default["O+racd"])
                 })]
             }), (0, i.jsx)(u.Button, {
                 variant: "secondary",
                 onClick: () => (0, C.tZ)(e),
-                text: v.intl.string(y.default.klSpfs)
+                text: y.intl.string(v.default.klSpfs)
             })]
         })
     })
@@ -105,8 +105,8 @@ function D(e) {
             loadMore: r,
             renderLoadingState: A,
             renderMessageGroup: _,
-            scrollerClassName: y,
-            className: v,
+            scrollerClassName: v,
+            className: y,
             listName: D,
             ignoreGrouping: U = !1
         } = e,
@@ -256,7 +256,7 @@ function D(e) {
         messagesByCategory: X,
         viewId: G
     }), (0, i.jsx)("div", {
-        className: a()(v, j.KQ),
+        className: a()(y, j.KQ),
         onClick: R,
         onDoubleClick: R,
         "aria-label": e["aria-label"],
@@ -272,7 +272,7 @@ function D(e) {
                         ref: e => {
                             P.current = e, t.current = e?.getScrollerNode() ?? null
                         },
-                        className: a()(j.m4, y),
+                        className: a()(j.m4, v),
                         onScroll: q,
                         fade: !0,
                         ...n,

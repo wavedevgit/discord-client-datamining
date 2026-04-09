@@ -3,14 +3,14 @@ n.d(t, {
     A: () => s
 });
 var i = n(735438),
-    r = n.n(i),
-    a = n(636401),
-    l = n(652215);
+    a = n.n(i),
+    l = n(636401),
+    r = n(652215);
 class s {
     transport;
     version;
     encoding;
-    id = r().uniqueId();
+    id = a().uniqueId();
     authorization = {
         authing: !1,
         scopes: [],
@@ -27,8 +27,8 @@ class s {
         this.transport = e, this.version = t, this.encoding = n, this.checkRpcVersion(t)
     }
     checkRpcVersion(e) {
-        if (null == e || e > l.dL4 || e < 1) throw new a.A({
-            closeCode: l.YI$.INVALID_VERSION
+        if (null == e || e > r.dL4 || e < 1) throw new l.A({
+            closeCode: r.YI$.INVALID_VERSION
         }, `Invalid Version: ${e}`)
     }
 }

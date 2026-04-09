@@ -3,9 +3,9 @@ n.d(t, {
     A: () => O
 });
 var i = n(627968),
-    r = n(64700),
-    a = n(311907),
-    l = n(827734),
+    a = n(64700),
+    l = n(311907),
+    r = n(827734),
     s = n(397927),
     o = n(308528),
     d = n(688810),
@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(657331),
     _ = n(994500),
     m = n(287809),
-    p = n(954571),
-    g = n(427262),
+    g = n(954571),
+    p = n(427262),
     E = n(390848),
     I = n(513297),
     f = n(414711),
@@ -29,44 +29,44 @@ function x(e) {
     let {
         user: t,
         applicationId: n,
-        isGameRelationship: a,
+        isGameRelationship: l,
         active: o,
         onAcceptFriendRequest: d
-    } = e, [c, u] = r.useState(!1), A = m.default.getCurrentUser()?.isStaff() && t?.isStaff(), {
+    } = e, [c, u] = a.useState(!1), A = m.default.getCurrentUser()?.isStaff() && t?.isStaff(), {
         acceptFriendRequest: h,
         cancelFriendRequest: _
     } = (0, E.I)({
         userId: t.id,
         applicationId: n,
-        isGameRelationship: a,
+        isGameRelationship: l,
         location: "Friends",
         onFinally: () => {
             u(!1)
         }
-    }), p = r.useCallback(e => {
+    }), g = a.useCallback(e => {
         u(!0), e.stopPropagation(), d(), h()
-    }, [h, d]), g = r.useCallback(e => {
+    }, [h, d]), p = a.useCallback(e => {
         e.stopPropagation(), _()
     }, [_]);
     return (0, i.jsxs)(i.Fragment, {
         children: [A && (0, i.jsx)("div", {
             className: S.ou,
             children: (0, i.jsx)(s.LpS, {
-                color: l.A.unsafe_rawColors.BRAND_500.css,
+                color: r.A.unsafe_rawColors.BRAND_500.css,
                 text: N.intl.string(N.t.oMx98L)
             })
         }), (0, i.jsx)(I.A, {
             icon: s.A9s,
             actionType: I.A.ActionTypes.ACCEPT,
             tooltip: N.intl.string(N.t.Zcibdf),
-            onClick: p,
+            onClick: g,
             shouldHighlight: o,
             loading: c
         }), (0, i.jsx)(I.A, {
             icon: s.PGe,
             actionType: I.A.ActionTypes.DENY,
             tooltip: N.intl.string(N.t.xuio0C),
-            onClick: g,
+            onClick: p,
             shouldHighlight: o
         })]
     })
@@ -76,16 +76,16 @@ function v(e) {
     let {
         userId: t,
         applicationId: n,
-        isGameRelationship: a,
-        active: l
+        isGameRelationship: l,
+        active: r
     } = e, {
         cancelFriendRequest: o
     } = (0, E.I)({
         userId: t,
         applicationId: n,
-        isGameRelationship: a,
+        isGameRelationship: l,
         location: "Friends"
-    }), d = r.useCallback(e => {
+    }), d = a.useCallback(e => {
         e.stopPropagation(), o()
     }, [o]);
     return (0, i.jsx)(I.A, {
@@ -93,7 +93,7 @@ function v(e) {
         actionType: I.A.ActionTypes.DENY,
         tooltip: N.intl.string(N.t.eaq81S),
         onClick: d,
-        shouldHighlight: l
+        shouldHighlight: r
     })
 }
 
@@ -101,9 +101,9 @@ function b(e) {
     let {
         isGameRelationship: t,
         applicationId: n,
-        userTag: l,
+        userTag: r,
         isProvisional: o
-    } = e, d = r.useMemo(() => t ? N.intl.string(N.t["Uv/eTx"]) : l, [t, l]), h = (0, a.bG)([c.A], () => null != n ? c.A.getApplication(n) : null);
+    } = e, d = a.useMemo(() => t ? N.intl.string(N.t["Uv/eTx"]) : r, [t, r]), h = (0, l.bG)([c.A], () => null != n ? c.A.getApplication(n) : null);
     return (0, i.jsxs)("div", {
         className: S.P9,
         children: [!o && (0, i.jsx)(s.Text, {
@@ -130,28 +130,28 @@ function y(e) {
     let {
         user: t,
         hovered: n,
-        status: r,
-        isGameRelationship: a,
+        status: a,
+        isGameRelationship: l,
         applicationId: o,
         isFriend: d
-    } = e, c = g.Ay.useUserTag(t);
+    } = e, c = p.Ay.useUserTag(t);
     return (0, i.jsx)(C.A, {
         user: t,
         hovered: n,
-        status: r,
+        status: a,
         showAccountIdentifier: !1,
         subText: d ? (0, i.jsxs)("div", {
             className: S.Tl,
             children: [(0, i.jsx)(s.Uzd, {
                 size: "sm",
-                color: l.A.colors.ICON_FEEDBACK_POSITIVE
+                color: r.A.colors.ICON_FEEDBACK_POSITIVE
             }), (0, i.jsx)(s.Text, {
                 variant: "text-sm/medium",
                 color: "text-muted",
                 children: N.intl.string(N.t.bgL68y)
             })]
         }) : (0, i.jsx)(b, {
-            isGameRelationship: a,
+            isGameRelationship: l,
             isProvisional: t.isProvisional,
             applicationId: o,
             userTag: c
@@ -163,18 +163,18 @@ function O(e) {
     let {
         user: t,
         type: n,
-        status: l,
+        status: r,
         isFocused: c,
         applicationId: u,
         isGameRelationship: A,
         onAcceptFriendRequest: m
     } = e, {
-        analyticsLocations: g
-    } = (0, d.Ay)(), E = l === T.clD.OFFLINE ? T.clD.UNKNOWN : l, I = (0, a.bG)([_.A], () => _.A.getRelationshipType(t.id)), C = r.useCallback(() => (0, h.openUserProfileModal)({
+        analyticsLocations: p
+    } = (0, d.Ay)(), E = r === T.clD.OFFLINE ? T.clD.UNKNOWN : r, I = (0, l.bG)([_.A], () => _.A.getRelationshipType(t.id)), C = a.useCallback(() => (0, h.openUserProfileModal)({
         userId: t.id,
-        sourceAnalyticsLocations: g
-    }), [g, t.id]), N = e => {
-        e.stopPropagation(), p.default.track(T.HAw.FRIEND_REQUEST_ACCEPT_MESSAGE_CLICKED), o.A.openPrivateChannel({
+        sourceAnalyticsLocations: p
+    }), [p, t.id]), N = e => {
+        e.stopPropagation(), g.default.track(T.HAw.FRIEND_REQUEST_ACCEPT_MESSAGE_CLICKED), o.A.openPrivateChannel({
             recipientIds: [t.id]
         })
     };

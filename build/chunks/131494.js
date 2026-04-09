@@ -37,8 +37,8 @@ function S(e) {
         S = (0, s.Gp)(N),
         {
             guildHasVoice: b,
-            guildHasVideo: y,
-            selectedVoiceChannelHasVideo: v
+            guildHasVideo: v,
+            selectedVoiceChannelHasVideo: y
         } = (0, l.cf)([x.A, I.A, p.A, g.A, m.A], () => {
             let n = x.A.getVoiceChannelId(),
                 i = p.A.getGuild(e)?.afkChannelId,
@@ -86,7 +86,7 @@ function S(e) {
             T = s && (m.A.getChannel(l)?.isGuildStageVoice() ?? !1),
             R = !!s && null != A.A.getActiveStreamForUser(j, e),
             O = (0, o.Mt)(A.A.getAllApplicationStreams()).some(t => t.guildId === e),
-            L = s && v,
+            L = s && y,
             M = (() => {
                 if (S) return i.length > 0;
                 for (let e of i) {
@@ -96,7 +96,7 @@ function S(e) {
                 return !1
             })(),
             D = a.Ay.getEmbeddedActivitiesForGuild(e).length > 0;
-        return s ? (d = !0, _ = n?.channel_id === l, p = T, f = L, E = R, I = D) : (d = b, _ = null != n, p = N, f = y, E = O, I = M), {
+        return s ? (d = !0, _ = n?.channel_id === l, p = T, f = L, E = R, I = D) : (d = b, _ = null != n, p = N, f = v, E = O, I = M), {
             audio: d,
             video: f,
             screenshare: E,
@@ -105,5 +105,5 @@ function S(e) {
             activity: I,
             isCurrentUserConnected: s || T
         }
-    }, [e, t, v, j, S, i, n, b, y])
+    }, [e, t, y, j, S, i, n, b, v])
 }

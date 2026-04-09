@@ -1,6 +1,6 @@
 /** chunk id: 790417 params = (module,exports,require) **/
 n.d(t, {
-    A: () => T
+    A: () => S
 });
 var i = n(627968);
 n(64700);
@@ -14,72 +14,72 @@ var a = n(311907),
     u = n(146655),
     g = n(489379),
     m = n(837924),
-    x = n(558628),
-    f = n(842241),
+    h = n(558628),
+    x = n(842241),
     p = n(282797),
-    h = n(782505),
-    _ = n(83013),
-    A = n(515054),
+    f = n(782505),
+    A = n(83013),
+    _ = n(515054),
     I = n(518477),
     j = n(652215),
     v = n(985018),
-    E = n(203983);
+    b = n(203983);
 
-function T(e) {
+function S(e) {
     let {
         user: t,
         currentUser: n,
-        displayProfile: T,
-        guildId: b,
-        channelId: C,
-        onClose: S
+        displayProfile: S,
+        guildId: y,
+        channelId: E,
+        onClose: C
     } = e, {
-        live: N,
-        recent: y,
-        stream: R
+        live: T,
+        recent: w,
+        stream: N
     } = (0, u.A)(t.id), {
         voiceChannel: k,
-        voiceActivity: O
+        voiceActivity: R
     } = (0, g.A)({
         userId: t.id,
-        guildId: b
-    }), w = (0, a.bG)([s.A], () => s.A.isFetchingUserOutbox(t.id)), L = t.id === n.id, P = (0, a.bG)([d.A, o.A], () => {
-        let e = L ? d.A.getStatus() : o.A.getStatus(t.id);
+        guildId: y
+    }), L = (0, a.bG)([s.A], () => s.A.isFetchingUserOutbox(t.id)), O = t.id === n.id, M = (0, a.bG)([d.A, o.A], () => {
+        let e = O ? d.A.getStatus() : o.A.getStatus(t.id);
         return e === l.clD.OFFLINE || e === l.clD.INVISIBLE
-    }), D = N.length > 0 || null != R, G = T?.private !== !0 && null == R && null == O && null != k, M = !P && (D || G), U = y.length > 0;
-    return M || U || !w ? M || U || w ? (0, i.jsxs)(A.K, {
-        className: E.XG,
+    }), P = T.length > 0 || null != N, G = S?.private !== !0 && null == N && null == R && null != k, U = !M && (P || G), F = w.length > 0;
+    return U || F || !L ? U || F || L ? (0, i.jsxs)(_.K, {
+        className: b.XG,
         fade: !0,
-        children: [M ? (0, i.jsx)(_.A, {
+        children: [U ? (0, i.jsx)(A.A, {
             heading: v.intl.string(v.t.J6STd9),
             children: (0, i.jsxs)("ul", {
-                className: E.kR,
-                children: [null != R && (0, i.jsx)("li", {
-                    children: (0, i.jsx)(f.A, {
+                className: b.kR,
+                children: [null != N && (0, i.jsx)("li", {
+                    children: (0, i.jsx)(x.A, {
                         user: t,
                         currentUser: n,
-                        stream: R,
-                        onClose: S
+                        stream: N,
+                        onClose: C
                     })
-                }), N.map((e, a) => (0, i.jsx)("li", {
+                }), T.map((e, a) => (0, i.jsx)("li", {
                     children: (0, i.jsx)(m.A, {
                         user: t,
                         currentUser: n,
                         activity: e,
-                        onClose: S
+                        onClose: C
                     })
                 }, `live-${a}`)), G && (0, i.jsx)("li", {
                     children: (0, i.jsx)(p.A, {
                         user: t,
                         currentUser: n,
                         voiceChannel: k,
-                        onClose: S
+                        onClose: C
                     })
                 })]
             })
-        }) : null, U ? (0, i.jsx)(_.A, {
+        }) : null, F ? (0, i.jsx)(A.A, {
             heading: v.intl.string(v.t.jzgEoL),
-            introText: L ? v.intl.format(v.t["4bk9Ak"], {
+            introText: O ? v.intl.format(v.t["4bk9Ak"], {
                 learnMoreHook: (e, t) => (0, i.jsx)(l.MzZ, {
                     href: c.A.getArticleURL(j.MVz.ACTIVITY_STATUS_SETTINGS),
                     children: e
@@ -87,29 +87,29 @@ function T(e) {
             }) : void 0,
             scrollTargetId: I.bk.RECENT_ACTIVITY,
             children: (0, i.jsx)("ul", {
-                className: E.kR,
-                children: y.map(e => (0, i.jsx)("li", {
-                    children: (0, i.jsx)(x.A, {
+                className: b.kR,
+                children: w.map(e => (0, i.jsx)("li", {
+                    children: (0, i.jsx)(h.A, {
                         user: t,
                         entry: e,
-                        onClose: S
+                        onClose: C
                     })
                 }, e.id))
             })
         }) : null]
-    }) : L ? (0, i.jsx)(h.qv, {
-        onClose: S
-    }) : (0, i.jsx)(h.zf, {
+    }) : O ? (0, i.jsx)(f.qv, {
+        onClose: C
+    }) : (0, i.jsx)(f.zf, {
         user: t,
-        guildId: T?.guildId ?? b,
-        channelId: C,
-        onClose: S
+        guildId: S?.guildId ?? y,
+        channelId: E,
+        onClose: C
     }) : (0, i.jsx)("div", {
-        className: E.kR,
+        className: b.kR,
         children: Array.from({
             length: 8
         }).map((e, t) => (0, i.jsxs)("div", {
-            className: E.kr,
+            className: b.kr,
             children: [(0, i.jsx)(r.FQ, {
                 width: 60,
                 opacity: .08

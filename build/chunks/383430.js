@@ -18,8 +18,8 @@ function u(e) {
         handleOpenCollectiblesShop: u,
         handleOpenGameShop: g,
         handleAddNitroToWishlist: m,
-        socialLayerStorefrontApplicationIds: x
-    } = e, f = a.useRef(null), [p, h] = a.useState(!1), _ = function(e) {
+        socialLayerStorefrontApplicationIds: h
+    } = e, x = a.useRef(null), [p, f] = a.useState(!1), A = function(e) {
         let {
             applications: t,
             handleOpenGameShop: n
@@ -51,9 +51,9 @@ function u(e) {
             }
         }), [t, n])
     }({
-        applications: (0, s.A)(x),
+        applications: (0, s.A)(h),
         handleOpenGameShop: g
-    }), A = a.useMemo(() => (0, i.jsxs)(l.rXV, {
+    }), _ = a.useMemo(() => (0, i.jsxs)(l.rXV, {
         children: [null != u && (0, i.jsx)(l.Drp, {
             id: "browse-collectibles-shop",
             label: d.intl.string(d.t["5upuqx"]),
@@ -72,7 +72,7 @@ function u(e) {
                 icon: l.tvc
             },
             action: m
-        }), null != g && _.map(e => {
+        }), null != g && A.map(e => {
             let {
                 id: t,
                 label: n,
@@ -88,12 +88,12 @@ function u(e) {
                 action: r
             }, t)
         })]
-    }), [u, g, m, _]);
+    }), [u, g, m, A]);
     return (0, i.jsx)(l.YNO, {
-        targetElementRef: f,
+        targetElementRef: x,
         position: "bottom",
-        onRequestOpen: () => h(!0),
-        onRequestClose: () => h(!1),
+        onRequestOpen: () => f(!0),
+        onRequestClose: () => f(!1),
         renderPopout: e => {
             let {
                 closePopout: t
@@ -104,11 +104,11 @@ function u(e) {
                 onSelect: void 0,
                 onClose: t,
                 "aria-label": d.intl.string(d.t.GdNkvG),
-                children: A
+                children: _
             })
         },
         children: e => (0, i.jsx)(l.Button, {
-            buttonRef: f,
+            buttonRef: x,
             variant: n,
             size: "sm",
             icon: p ? l.PGe : l.abt,

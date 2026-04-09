@@ -1,70 +1,70 @@
 /** chunk id: 353157 params = (module,exports,require) **/
-l.d(t, {
-    A: () => d
+i.d(t, {
+    A: () => c
 });
-var i = l(627968);
-l(64700);
-var n = l(575593),
-    r = l(397927),
-    a = l(512213),
-    u = l(139136),
-    s = l(929283),
-    o = l(798048),
-    c = l(734518);
+var r = i(627968);
+i(64700);
+var l = i(575593),
+    n = i(397927),
+    s = i(512213),
+    u = i(139136),
+    o = i(929283),
+    a = i(798048),
+    d = i(734518);
 
-function d(e) {
+function c(e) {
     let {
         item: t,
-        profileOwner: l,
-        isHighlighted: d,
-        cardSize: h = o.Y.MEDIUM
-    } = e, C = t.collectiblesItem;
-    switch (C.type) {
-        case n.R.PROFILE_EFFECT:
-            return (0, i.jsx)("div", {
-                className: c.xC,
-                children: (0, i.jsx)(u.A, {
-                    skuId: C.skuId,
-                    isHighlighted: d,
+        profileOwner: i,
+        isHighlighted: c,
+        cardSize: I = a.Y.MEDIUM
+    } = e, h = t.collectiblesItem;
+    switch (h.type) {
+        case l.R.PROFILE_EFFECT:
+            return (0, r.jsx)("div", {
+                className: d.xC,
+                children: (0, r.jsx)(u.A, {
+                    skuId: h.skuId,
+                    isHighlighted: c,
                     removeSetHeight: !0,
                     hideBackground: !0
                 })
             });
-        case n.R.AVATAR_DECORATION:
-            return (0, i.jsx)("div", {
-                className: c._P,
-                children: (0, i.jsx)(s.i, {
-                    item: C,
-                    user: l,
-                    isHighlighted: d,
-                    avatarSize: h === o.Y.MEDIUM_SQUARE ? r._3J.SIZE_96 : r._3J.SIZE_80
+        case l.R.AVATAR_DECORATION:
+            return (0, r.jsx)("div", {
+                className: d._P,
+                children: (0, r.jsx)(o.i, {
+                    item: h,
+                    user: i,
+                    isHighlighted: c,
+                    avatarSize: I === a.Y.MEDIUM_SQUARE ? n._3J.SIZE_96 : n._3J.SIZE_80
                 })
             });
-        case n.R.NAMEPLATE:
-            return (0, i.jsxs)("div", {
-                className: c.M4,
-                children: [(0, i.jsx)("div", {
-                    className: c.Qt,
-                    children: (0, i.jsx)(a.A, {
-                        user: l,
-                        nameplate: C,
-                        isHighlighted: d,
+        case l.R.NAMEPLATE:
+            return (0, r.jsxs)("div", {
+                className: d.M4,
+                children: [(0, r.jsx)("div", {
+                    className: d.Qt,
+                    children: (0, r.jsx)(s.A, {
+                        user: i,
+                        nameplate: h,
+                        isHighlighted: c,
                         showPlaceholderUser: !0,
                         showStatus: !0,
-                        nameplatePreviewSize: h === o.Y.MEDIUM_SQUARE ? "small" : "default",
-                        width: h === o.Y.MEDIUM_SQUARE ? 171 : h === o.Y.SMALL || h === o.Y.SMALL_SQUARE ? 136 : 200
+                        nameplatePreviewSize: I === a.Y.MEDIUM_SQUARE ? "small" : "default",
+                        width: I === a.Y.MEDIUM_SQUARE ? 171 : I === a.Y.SMALL || I === a.Y.SMALL_SQUARE ? 136 : 200
                     })
-                }), (0, i.jsx)("div", {
-                    className: c.BM,
+                }), (0, r.jsx)("div", {
+                    className: d.BM,
                     "aria-hidden": !0,
-                    children: (0, i.jsx)(a.A, {
-                        user: l,
-                        nameplate: C,
-                        isHighlighted: d,
+                    children: (0, r.jsx)(s.A, {
+                        user: i,
+                        nameplate: h,
+                        isHighlighted: c,
                         showPlaceholderUser: !0,
                         showStatus: !0,
-                        nameplatePreviewSize: h === o.Y.MEDIUM_SQUARE ? "small" : "default",
-                        width: h === o.Y.MEDIUM_SQUARE ? 171 : h === o.Y.SMALL || h === o.Y.SMALL_SQUARE ? 136 : 200
+                        nameplatePreviewSize: I === a.Y.MEDIUM_SQUARE ? "small" : "default",
+                        width: I === a.Y.MEDIUM_SQUARE ? 171 : I === a.Y.SMALL || I === a.Y.SMALL_SQUARE ? 136 : 200
                     })
                 })]
             });

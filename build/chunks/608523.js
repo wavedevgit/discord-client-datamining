@@ -19,28 +19,28 @@ let u = e => {
                 placeholder: _,
                 rows: m,
                 character_limit: p,
-                pattern: g
+                pattern: h
             },
             onChange: x,
-            initialText: h,
+            initialText: g,
             isRequired: A
         } = e, v = a.useMemo(() => r.A.reactParserFor({
             ...r.A.defaultRules,
             link: s.B
-        }), []), [b, f] = a.useState(""), [T, E] = a.useState(null);
+        }), []), [b, f] = a.useState(""), [T, S] = a.useState(null);
         a.useEffect(() => {
-            f(h?.value ?? "")
-        }, [h]);
-        let S = a.useCallback(e => {
-            let t = null != g ? new RegExp(g) : null;
-            null == t || t.test(e) ? null != e && (E(null), f(e), x({
+            f(g?.value ?? "")
+        }, [g]);
+        let E = a.useCallback(e => {
+            let t = null != h ? new RegExp(h) : null;
+            null == t || t.test(e) ? null != e && (S(null), f(e), x({
                 value: e,
                 isValid: !0
-            })) : (E(d.intl.string(d.t["24xrGb"])), x({
+            })) : (S(d.intl.string(d.t["24xrGb"])), x({
                 value: e,
                 isValid: !1
             }))
-        }, [x, g]);
+        }, [x, h]);
         return (0, l.jsxs)("div", {
             children: [(0, l.jsxs)("div", {
                 className: c.QB,
@@ -61,13 +61,13 @@ let u = e => {
                 })]
             }), 1 === m ? (0, l.jsx)(i.ksK, {
                 maxLength: p,
-                onChange: S,
+                onChange: E,
                 value: b,
                 error: T,
                 placeholder: _
             }) : (0, l.jsx)(i.fs1, {
                 maxLength: p,
-                onChange: S,
+                onChange: E,
                 value: b,
                 error: T,
                 rows: m,

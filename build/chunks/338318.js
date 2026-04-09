@@ -111,7 +111,7 @@ function k() {
             textVariant: "heading-md/medium",
             useUpdatedStyling: !0,
             leadingAction: Y ? (0, i.jsx)(T.l, {
-                size: "sm",
+                size: "md",
                 location: g.A.PREMIUM_WISHLIST_EDIT_PROFILE_UPSELL
             }) : void 0,
             button: (0, i.jsx)("div", {

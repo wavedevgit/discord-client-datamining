@@ -27,7 +27,7 @@ var i = n(627968),
     S = n(985018),
     b = n(826358);
 
-function y(e) {
+function v(e) {
     let {
         guild: t,
         controller: n,
@@ -64,7 +64,7 @@ function y(e) {
     })
 }
 
-function v(e) {
+function y(e) {
     let {
         guild: t,
         controller: n,
@@ -266,13 +266,13 @@ let M = l.memo(function(e) {
                             ariaExpanded: p,
                             children: j
                         })
-                    }), P && (0, i.jsx)(v, {
+                    }), P && (0, i.jsx)(y, {
                         guild: C,
                         controller: s,
                         hasBanner: null != T,
                         hasSubheader: M ?? !1
                     })]
-                }), null != T ? (0, i.jsx)(y, {
+                }), null != T ? (0, i.jsx)(v, {
                     guild: C,
                     controller: s,
                     guildBanner: T,

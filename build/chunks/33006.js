@@ -1,11 +1,11 @@
 /** chunk id: 33006 params = (module,exports,require) **/
-let i, r;
+let i, a;
 n.d(t, {
     A: () => R
 }), n(323874), n(14289), n(35956), n(321073);
-var a = n(143236),
-    l = n(735438),
-    s = n.n(l),
+var l = n(143236),
+    r = n(735438),
+    s = n.n(r),
     o = n(73153),
     d = n(626584),
     c = n(111162),
@@ -14,8 +14,8 @@ var a = n(143236),
     h = n(636401),
     _ = n(84002),
     m = n(313731),
-    p = n(546983),
-    g = n(613057),
+    g = n(546983),
+    p = n(613057),
     E = n(652215),
     I = n(264572).Buffer;
 try {
@@ -37,35 +37,35 @@ function S(e) {
 function x() {
     let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : 0,
         t = e > 0 ? void 0 : () => {
-            if (!S(r.listening)) return;
-            let e = r.address().port;
+            if (!S(a.listening)) return;
+            let e = a.address().port;
             T.info(`Starting on ${e}`), o.h.dispatch({
                 type: "RPC_SERVER_READY",
                 port: e
             })
         };
-    r.listen(E.xEi + e % E.sJq, "127.0.0.1", t)
+    a.listen(E.xEi + e % E.sJq, "127.0.0.1", t)
 }
 
 function v(e, t, n) {
     let i = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : 200,
-        r = arguments.length > 4 && void 0 !== arguments[4] ? arguments[4] : {},
-        a = null != S(e.headers).origin ? {
+        a = arguments.length > 4 && void 0 !== arguments[4] ? arguments[4] : {},
+        l = null != S(e.headers).origin ? {
             "Access-Control-Allow-Origin": S(e.headers).origin,
             "Access-Control-Allow-Credentials": "true",
             "Access-Control-Allow-Methods": "POST, GET, PUT, PATCH, DELETE",
             "Access-Control-Allow-Headers": "Content-Type, Authorization"
         } : {};
     n = n ? JSON.stringify(n) : "", i = 200 === i && 0 === n.length ? 204 : i, t.setHeader("Content-Length", I.byteLength(n).toString()), t.setHeader("Content-Type", "application/json"), t.writeHead(i, {
-        ...r,
-        ...a
+        ...a,
+        ...l
     }), t.end(n)
 }
 
 function b(e, t, n, i) {
-    let r = arguments.length > 4 && void 0 !== arguments[4] ? arguments[4] : 0;
+    let a = arguments.length > 4 && void 0 !== arguments[4] ? arguments[4] : 0;
     v(e, t, {
-        code: r,
+        code: a,
         message: i
     }, n)
 }
@@ -105,37 +105,37 @@ class O extends m.A {
         this._closeCallback(t, e)
     }
 }
-class L extends a.EventEmitter {
+class L extends l.EventEmitter {
     constructor() {
         super();
         let e = 0;
-        (r = f.http.createServer()).on("error", t => {
+        (a = f.http.createServer()).on("error", t => {
             T.error(`Error: ${t.message}`), ("EADDRINUSE" === t.code || t.message.includes("EADDRINUSE")) && setTimeout(() => x(++e), 1e3)
-        }), r.on("request", this.handleRequest.bind(this)), x(e);
+        }), a.on("request", this.handleRequest.bind(this)), x(e);
         const t = {
-            instanceId: r.instanceId ?? 0,
-            server: r
+            instanceId: a.instanceId ?? 0,
+            server: a
         };
         new f.ws.Server(t).on("connection", e => this.handleConnection(e))
     }
     handleRequest(e, t) {
-        let [n, i] = S(e.url).split("?"), r = S(e.method);
-        if ("/rpc" === n && "OPTIONS" === r) return void v(e, t, {
+        let [n, i] = S(e.url).split("?"), a = S(e.method);
+        if ("/rpc" === n && "OPTIONS" === a) return void v(e, t, {
             body: ""
         });
-        let a = "POST" === r;
-        if ("/rpc" === n && ("GET" === r || a)) {
+        let l = "POST" === a;
+        if ("/rpc" === n && ("GET" === a || l)) {
             let n = new URLSearchParams(i),
-                r = a ? S(e.headers)["content-type"].split("/")[1] : "json",
-                l = function() {
+                a = l ? S(e.headers)["content-type"].split("/")[1] : "json",
+                r = function() {
                     let {
                         protocol: e,
                         host: i
                     } = u.A.toURLSafe(n.get("callback") ?? "") ?? {};
                     e === location.protocol && i === location.host ? t.setHeader("Location", n.get("callback")) : t.setHeader("Location", C), t.writeHead(301), t.end()
                 },
-                s = new O(!a ? l : v.bind(null, e, t), !a ? l : b.bind(null, e, t, 400), Number(n.get("v")), r);
-            a ? (0, p.j7)(s, S(e.headers).origin, n.get("client_id")).then(() => {
+                s = new O(!l ? r : v.bind(null, e, t), !l ? r : b.bind(null, e, t, 400), Number(n.get("v")), a);
+            l ? (0, g.j7)(s, S(e.headers).origin, n.get("client_id")).then(() => {
                 let n = "";
                 e.on("data", e => n += e), e.on("error", () => b(e, t, 500, "Internal Server Error")), e.on("end", () => this.handleMessage(s, n))
             }).catch(e => {
@@ -144,7 +144,7 @@ class L extends a.EventEmitter {
                     message: n
                 } = e;
                 return s.close(t, n)
-            }) : (s.authorization.scopes = [g.kw], this.handleMessage(s, decodeURIComponent(n.get("payload") ?? "")));
+            }) : (s.authorization.scopes = [p.kw], this.handleMessage(s, decodeURIComponent(n.get("payload") ?? "")));
             return
         }
         b(e, t, 404, "Not Found")
@@ -160,7 +160,7 @@ class L extends a.EventEmitter {
         }
         T.info(`Socket Opened: ${t.id}`), e.on("error", e => T.error(`WS Error: ${e.message}`)), e.on("close", (e, n) => {
             T.info(`Socket Closed: ${t.id}, code ${e}, message ${n}`), s().remove(N, e => e === t), this.emit("disconnect", t)
-        }), (0, p.j7)(t, i, n.get("client_id")).then(() => {
+        }), (0, g.j7)(t, i, n.get("client_id")).then(() => {
             N.push(t), e.on("message", e => this.handleMessage(t, e)), this.emit("connect", t)
         }).catch(e => {
             let {

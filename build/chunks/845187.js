@@ -4,9 +4,9 @@ n.d(t, {
     default: () => _
 });
 var i = n(627968),
-    r = n(64700),
-    a = n(158954),
-    l = n(397927),
+    a = n(64700),
+    l = n(158954),
+    r = n(397927),
     s = n(817281),
     o = n(429913),
     d = n(954571),
@@ -20,8 +20,8 @@ function _(e) {
         applicationId: t,
         transitionState: n,
         onClose: _
-    } = e, [m, p] = r.useState(!1), [g] = (0, o.A)([t]), E = g?.name ?? "This Activity";
-    r.useEffect(() => {
+    } = e, [m, g] = a.useState(!1), [p] = (0, o.A)([t]), E = p?.name ?? "This Activity";
+    a.useEffect(() => {
         d.default.track(u.HAw.OPEN_MODAL, {
             type: h
         })
@@ -39,15 +39,15 @@ function _(e) {
             application_id: t
         }), c.Ay.setEnableHardwareAcceleration(!0), await I()
     };
-    return (0, i.jsx)(a.Modal, {
+    return (0, i.jsx)(l.Modal, {
         size: "md",
         transitionState: n,
         onClose: I,
         "aria-label": A.intl.string(A.t.NQkK4l),
         title: A.intl.string(A.t.NQkK4l),
-        actionBarInput: (0, i.jsx)(l.Checkbox, {
+        actionBarInput: (0, i.jsx)(r.Checkbox, {
             checked: m,
-            onChange: () => p(!m),
+            onChange: () => g(!m),
             label: A.intl.string(A.t["5E9SB9"]),
             labelType: "secondary"
         }),
@@ -60,7 +60,7 @@ function _(e) {
             text: A.intl.string(A.t["/wlDqi"]),
             onClick: f
         }],
-        children: (0, i.jsx)(l.Text, {
+        children: (0, i.jsx)(r.Text, {
             variant: "text-md/normal",
             children: A.intl.format(A.t.B9eiaK, {
                 applicationName: E

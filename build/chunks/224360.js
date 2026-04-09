@@ -1,6 +1,6 @@
 /** chunk id: 224360 params = (module,exports,require) **/
 n.d(t, {
-    A: () => h
+    A: () => f
 });
 var i = n(627968);
 n(64700);
@@ -14,8 +14,8 @@ var a = n(503698),
     u = n(61881),
     g = n(788593),
     m = n(985018),
-    x = n(496527),
-    f = n(853228);
+    h = n(496527),
+    x = n(853228);
 
 function p(e) {
     let {
@@ -26,20 +26,20 @@ function p(e) {
         coverImageUrl: l,
         gameName: d,
         isLoading: p
-    } = (0, c.A)(t), h = (0, s.bG)([u.A], () => u.A.suggestedFetchIsLoading), _ = m.intl.formatToPlainString(m.t["3mb1s5"], {
+    } = (0, c.A)(t), f = (0, s.bG)([u.A], () => u.A.suggestedFetchIsLoading), A = m.intl.formatToPlainString(m.t["3mb1s5"], {
         game: d
     });
-    return p || h ? (0, i.jsx)("div", {
-        className: x.mD
+    return p || f ? (0, i.jsx)("div", {
+        className: h.mD
     }) : (0, i.jsx)(r.m, {
-        text: _,
+        text: A,
         ariaHidden: !0,
         children: (0, i.jsxs)(o.DUT, {
-            className: f.c9,
+            className: x.c9,
             onClick: a,
-            "aria-label": _,
+            "aria-label": A,
             children: [(0, i.jsx)(g.A, {
-                className: f.Iv,
+                className: x.Iv,
                 imageSrc: l,
                 gameName: d,
                 applicationId: t,
@@ -47,14 +47,14 @@ function p(e) {
                 disableInteraction: !0
             }), (0, i.jsx)(o.pa$, {
                 size: "md",
-                className: f.Xv,
+                className: x.Xv,
                 color: o.LU0.colors.WHITE
             })]
         })
     })
 }
 
-function h(e) {
+function f(e) {
     let {
         userId: t,
         games: n,
@@ -63,12 +63,12 @@ function h(e) {
         className: r
     } = e, c = (0, d.GV)();
     return (0, i.jsxs)("aside", {
-        className: l()(f.kL, r),
+        className: l()(x.kL, r),
         "aria-labelledby": c,
         children: [(0, i.jsxs)("div", {
-            className: f.wx,
+            className: x.wx,
             children: [(0, i.jsx)(o.DUT, {
-                className: f.r,
+                className: x.r,
                 "aria-label": m.intl.string(m.t["pUR+3g"]),
                 onClick: a,
                 children: (0, i.jsx)(o.PGe, {
@@ -82,7 +82,7 @@ function h(e) {
                 children: m.intl.string(m.t.zMUr6Z)
             })]
         }), (0, i.jsx)("ul", {
-            className: f.Vg,
+            className: x.Vg,
             children: n.map(e => {
                 let {
                     applicationId: n

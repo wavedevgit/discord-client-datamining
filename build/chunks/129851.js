@@ -26,8 +26,8 @@ var i = n(627968),
     N = n(491509),
     v = n(895600),
     T = n(720353),
-    j = n(559568),
-    C = n(274303),
+    C = n(559568),
+    j = n(274303),
     S = n(13437),
     y = n(557722),
     b = n(148864),
@@ -458,7 +458,7 @@ class J extends s.PureComponent {
                 className: e,
                 expanded: !0,
                 children: this.renderDefaultForm(!0)
-            }), t && (0, i.jsx)(j.A, {})]
+            }), t && (0, i.jsx)(C.A, {})]
         })
     }
     renderGuildTemplate(e) {
@@ -737,7 +737,7 @@ class J extends s.PureComponent {
 }
 let $ = function(e) {
     (0, L.K)();
-    let t = (0, d.cf)([B.A, P.A, D.default, C.A, b.A], () => ({
+    let t = (0, d.cf)([B.A, P.A, D.default, j.A, b.A], () => ({
         authenticated: D.default.isAuthenticated(),
         handoffAvailable: B.A.isHandoffAvailable(),
         user: B.A.user,
@@ -746,7 +746,7 @@ let $ = function(e) {
         mfaMethods: D.default.getMFAMethods(),
         defaultRoute: P.A.defaultRoute,
         country: b.A.getCountryCode(),
-        hasLoggedInAccounts: C.A.getHasLoggedInAccounts()
+        hasLoggedInAccounts: j.A.getHasLoggedInAccounts()
     }));
     return (0, i.jsx)(J, {
         ...e,

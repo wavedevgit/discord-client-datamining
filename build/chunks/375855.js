@@ -1,6 +1,6 @@
 /** chunk id: 375855 params = (module,exports,require) **/
 n.d(t, {
-    A: () => v
+    A: () => y
 });
 var i = n(627968),
     l = n(64700),
@@ -58,7 +58,7 @@ function S(e) {
 }
 
 function b(e) {
-    let t, n, s, o, u, A, I, C, b, y, v, j, R, {
+    let t, n, s, o, u, A, I, C, b, v, y, j, R, {
             channel: O
         } = e,
         L = O.id,
@@ -69,7 +69,7 @@ function b(e) {
         } = (t = O.id, n = (0, r.yK)([g.A], () => g.A.getBlockedOrIgnoredIDs()), s = (0, r.bG)([_.A], () => _.A.getUserAffinitiesMap(), []), o = (0, r.yK)([c.Ay, x.default], () => c.Ay.getEmbeddedActivitiesForChannel(t).flatMap(e => Array.from(e.userIds)).map(e => x.default.getUser(e)), [t]), u = l.useMemo(() => (0, h.aw)(o, n), [o, n]), A = l.useMemo(() => (0, m.L)(u, s, "DirectMessageTooltip - activityUsers"), [u, s]), I = (0, r.yK)([p.A, x.default], () => {
             let e = p.A.getAllApplicationStreamsForChannel(t).map(e => e.ownerId).map(e => x.default.getUser(e));
             return (0, h.aw)(e, n)
-        }, [t, n]), C = l.useMemo(() => (0, h.aw)(I, n), [I, n]), b = l.useMemo(() => (0, m.L)(C, s, "DirectMessageTooltip - activityUsers"), [C, s]), y = l.useMemo(() => b.filter(e => !A.some(t => t.id === e.id)), [b, A]), v = (0, r.yK)([E.Ay], () => {
+        }, [t, n]), C = l.useMemo(() => (0, h.aw)(I, n), [I, n]), b = l.useMemo(() => (0, m.L)(C, s, "DirectMessageTooltip - activityUsers"), [C, s]), v = l.useMemo(() => b.filter(e => !A.some(t => t.id === e.id)), [b, A]), y = (0, r.yK)([E.Ay], () => {
             let e = E.Ay.getVoiceStatesForChannel(O).map(e => {
                 let {
                     user: t
@@ -77,9 +77,9 @@ function b(e) {
                 return t
             });
             return (0, h.aw)(e, n)
-        }, [O, n]), j = l.useMemo(() => (0, h.aw)(v, n), [v, n]), R = l.useMemo(() => (0, m.L)(j, s, "DirectMessageTooltip - voiceUsers"), [j, s]), {
+        }, [O, n]), j = l.useMemo(() => (0, h.aw)(y, n), [y, n]), R = l.useMemo(() => (0, m.L)(j, s, "DirectMessageTooltip - voiceUsers"), [j, s]), {
             voiceUsers: l.useMemo(() => R.filter(e => !A.some(t => t.id === e.id) && !b.some(t => t.id === e.id)), [R, A, b]),
-            streamUsers: y,
+            streamUsers: v,
             activityUsers: A
         }),
         G = (0, i.jsx)(T, {
@@ -111,7 +111,7 @@ function b(e) {
     })
 }
 
-function y(e) {
+function v(e) {
     let {
         channel: t
     } = e, n = (0, A.Ay)(t);
@@ -128,13 +128,13 @@ function y(e) {
     })
 }
 
-function v(e) {
+function y(e) {
     let {
         channel: t,
         children: n
     } = e, s = (0, A.Ay)(t), a = l.useMemo(() => (0, i.jsx)("div", {
         className: N.A_,
-        children: (0, i.jsx)(y, {
+        children: (0, i.jsx)(v, {
             channel: t
         })
     }), [t]);

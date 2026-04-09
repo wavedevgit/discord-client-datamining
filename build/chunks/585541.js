@@ -25,7 +25,7 @@ function f(e) {
         setSlide: r,
         ready: f,
         token: E
-    } = e, [x, I] = s.useState(!1), [N, v] = s.useState(null), [T, j] = s.useState(null), [C, S] = s.useState(""), y = s.useRef(null);
+    } = e, [x, I] = s.useState(!1), [N, v] = s.useState(null), [T, C] = s.useState(null), [j, S] = s.useState(""), y = s.useRef(null);
     return s.useEffect(() => {
         f && y.current?.focus()
     }, [f]), (0, i.jsxs)("div", {
@@ -46,7 +46,7 @@ function f(e) {
                 label: g.intl.string(g.t["8dM4FO"]),
                 setRef: y,
                 className: A.SX,
-                value: C,
+                value: j,
                 onChange: S,
                 error: N,
                 autoComplete: "new-password",
@@ -59,15 +59,15 @@ function f(e) {
                     fullWidth: !0,
                     onClick: () => {
                         if (!x) {
-                            if (0 === C.length) {
+                            if (0 === j.length) {
                                 v(g.intl.string(g.t.R98xD5)), u._.dispatch(p.jej.WAVE_EMPHASIZE);
                                 return
                             }
-                            return null != T && j(null), null != N && v(null), t(""), I(!0), h.A.post({
+                            return null != T && C(null), null != N && v(null), t(""), I(!0), h.A.post({
                                 url: p.Rsh.ACCOUNT_REVERT,
                                 body: {
                                     token: E,
-                                    password: C
+                                    password: j
                                 },
                                 trackedActionData: {
                                     event: a.NetworkActionNames.ACCOUNT_REVERT
@@ -81,12 +81,12 @@ function f(e) {
                                 } = e;
                                 S(""), t(n), r(_.k.SUCCESS)
                             }).catch(e => {
-                                if (e instanceof Error) j(g.intl.formatToPlainString(g.t.aTVNes, {
+                                if (e instanceof Error) C(g.intl.formatToPlainString(g.t.aTVNes, {
                                     statusPageURL: p.qF7.STATUS
                                 }));
                                 else {
                                     let t = new c.A(e);
-                                    t.hasFieldErrors() ? v(t.getAnyErrorMessage()) : j((function(e) {
+                                    t.hasFieldErrors() ? v(t.getAnyErrorMessage()) : C((function(e) {
                                         switch (e) {
                                             case p.t02.ACCOUNT_REVERT_INVALID_TOKEN:
                                                 return g.intl.string(g.t["11zzGR"]);

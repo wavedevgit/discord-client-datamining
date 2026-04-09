@@ -3,9 +3,9 @@ n.d(t, {
     A: () => E
 }), n(321073);
 var i = n(143236),
-    r = n(933958),
-    a = n(969151),
-    l = n(954571),
+    a = n(933958),
+    l = n(969151),
+    r = n(954571),
     s = n(203982),
     o = n(927813),
     d = n(636401),
@@ -15,8 +15,8 @@ var i = n(143236),
     h = n(652215);
 let _ = 10 * o.A.Millis.SECOND,
     m = new Map,
-    p = new Set,
-    g = (e, t, n) => {
+    g = new Set,
+    p = (e, t, n) => {
         n([c.A.CLOSE, t], e)
     };
 class E extends i.EventEmitter {
@@ -33,24 +33,24 @@ class E extends i.EventEmitter {
         return function(t, n) {
             let i = arguments.length > 2 && void 0 !== arguments[2] && arguments[2];
             e.emit("disconnect", t, i ? void 0 : n), t.close(n.code, n.message ?? "Unknown");
-            let [r] = Array.from(m.entries()).find(e => {
+            let [a] = Array.from(m.entries()).find(e => {
                 let [n, i] = e;
                 return i === t
             }) ?? [null, null];
-            null != r && m.delete(r)
+            null != a && m.delete(a)
         }
     })();
     handleIFrameMount = e => {
         let {
             id: t
         } = e;
-        p.add(t), this.handshakeFailureTimeoutId = setTimeout(() => {
-            Array.from(r.Ay.getSelfEmbeddedActivities().entries()).forEach(e => {
+        g.add(t), this.handshakeFailureTimeoutId = setTimeout(() => {
+            Array.from(a.Ay.getSelfEmbeddedActivities().entries()).forEach(e => {
                 let [t, n] = e;
-                l.default.track(h.HAw.ACTIVITY_HANDSHAKE_TIMED_OUT, {
+                r.default.track(h.HAw.ACTIVITY_HANDSHAKE_TIMED_OUT, {
                     application_id: t,
-                    channel_id: (0, a.H)(n.location),
-                    guild_id: (0, a.D)(n.location),
+                    channel_id: (0, l.H)(n.location),
+                    guild_id: (0, l.D)(n.location),
                     timeout_ms: _
                 })
             })
@@ -60,7 +60,7 @@ class E extends i.EventEmitter {
         let {
             id: t
         } = e;
-        p.delete(t);
+        g.delete(t);
         let [n, i] = Array.from(m.entries()).find(e => {
             let [n, i] = e;
             return i.frameId === t
@@ -79,7 +79,7 @@ class E extends i.EventEmitter {
             null != i ? this.disconnectSocket(i, {
                 code: e.code,
                 message: e.message
-            }, !0) : g(t, {
+            }, !0) : p(t, {
                 code: e.code,
                 message: e.message
             }, n)
@@ -87,23 +87,23 @@ class E extends i.EventEmitter {
     };
     routeEvent(e, t, n, i) {
         if (!Array.isArray(n)) return void console.warn("[PostMessageTransport] Protocol error: event data should be an Array!");
-        let [r, a] = n;
-        switch (r) {
+        let [a, l] = n;
+        switch (a) {
             case c.A.HANDSHAKE:
                 if (null != e) throw new d.A({
                     closeCode: h.YI$.CLOSE_UNSUPPORTED
                 }, "Already connected");
-                return this.handleHandshake(t, a, i);
+                return this.handleHandshake(t, l, i);
             case c.A.FRAME:
                 if (null == e) throw new d.A({
                     closeCode: h.YI$.CLOSE_UNSUPPORTED
                 }, "Not connected");
-                return this.handleFrame(t, e, a);
+                return this.handleFrame(t, e, l);
             case c.A.CLOSE:
                 if (null == e) throw new d.A({
                     closeCode: h.YI$.CLOSE_UNSUPPORTED
                 }, "Not connected");
-                return this.handleClose(e, a);
+                return this.handleClose(e, l);
             default:
                 throw new d.A({
                     closeCode: h.YI$.CLOSE_UNSUPPORTED
@@ -125,16 +125,16 @@ class E extends i.EventEmitter {
         this.onFrameHandled?.(i, this.logger, t), this.emit("request", t, i)
     };
     handleHandshake = async (e, t, i) => {
-        let r;
+        let a;
         null != this.handshakeFailureTimeoutId && clearTimeout(this.handshakeFailureTimeoutId);
-        let a = (await n.e("34188").then(n.t.bind(n, 88137, 23))).default;
+        let l = (await n.e("34188").then(n.t.bind(n, 88137, 23))).default;
         try {
-            a.assert(t, (0, u.A)(a).required().keys({
-                v: a.number().min(1).max(1).required(),
-                encoding: a.string().equal("json").optional(),
-                client_id: a.string().required(),
-                frame_id: a.string().required(),
-                sdk_version: a.string().optional()
+            l.assert(t, (0, u.A)(l).required().keys({
+                v: l.number().min(1).max(1).required(),
+                encoding: l.string().equal("json").optional(),
+                client_id: l.string().required(),
+                frame_id: l.string().required(),
+                sdk_version: l.string().optional()
             }))
         } catch (e) {
             throw new d.A({
@@ -142,34 +142,34 @@ class E extends i.EventEmitter {
             }, e.message)
         }
         let s = t.frame_id;
-        if (!p.has(s)) throw this.logger.error(`Unrecognized frame ID ${s}`), new d.A({
+        if (!g.has(s)) throw this.logger.error(`Unrecognized frame ID ${s}`), new d.A({
             closeCode: h.YI$.CLOSE_UNSUPPORTED
         }, `Unrecognized frame ID ${s}`);
-        null != t.sdk_version && l.default.track(h.HAw.ACTIVITY_HANDSHAKE, {
+        null != t.sdk_version && r.default.track(h.HAw.ACTIVITY_HANDSHAKE, {
             application_id: t.client_id,
             sdk_version: t.sdk_version
         });
         try {
-            r = this.createPostMessageProxySocket({
+            a = this.createPostMessageProxySocket({
                 origin: e,
                 postMessageToRPCClient: i,
                 frameId: s,
                 version: Number(t.v),
                 logger: this.logger,
-                postClose: g,
+                postClose: p,
                 encoding: t.encoding ?? "json"
             })
         } catch (e) {
             throw this.logger.error(`Error opening window socket ${e}`), e
         }
-        this.logger.info(`Socket Opened: ${r.id}`);
+        this.logger.info(`Socket Opened: ${a.id}`);
         try {
-            if (await this.validateSocketClient(r, e, t.client_id), !p.has(s)) throw this.logger.error(`Frame ID ${s} no longer exists`), new d.A({
+            if (await this.validateSocketClient(a, e, t.client_id), !g.has(s)) throw this.logger.error(`Frame ID ${s} no longer exists`), new d.A({
                 closeCode: h.YI$.CLOSE_UNSUPPORTED
             }, `Unrecognized frame ID ${s}`);
-            m.set(e, r), p.delete(s), r.authorization.scopes.push(A.W_), this.emit("connect", r), this.logger.info(`Socket Validated: ${r.id}`)
+            m.set(e, a), g.delete(s), a.authorization.scopes.push(A.W_), this.emit("connect", a), this.logger.info(`Socket Validated: ${a.id}`)
         } catch (e) {
-            throw this.logger.info(`Socket Closed: ${r.id}, ${e.message}`), e
+            throw this.logger.info(`Socket Closed: ${a.id}, ${e.message}`), e
         }
     };
     handleClose = async (e, t) => {

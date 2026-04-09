@@ -4,20 +4,20 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var r = n(397927),
-    a = n(587895),
-    l = n(851907);
+var a = n(397927),
+    l = n(587895),
+    r = n(851907);
 
 function s(e) {
     let {
         applicationId: t,
         channelId: s,
         mediaUrl: o
-    } = e, d = a.A.getApplication(t), c = null != (0, l.Ay)({
+    } = e, d = l.A.getApplication(t), c = null != (0, r.Ay)({
         application: d,
         channelId: s
-    }) ? r.KX8 : r.SYi;
-    (0, r.mMO)(async () => {
+    }) ? a.KX8 : a.SYi;
+    (0, a.mMO)(async () => {
         let {
             default: e
         } = await Promise.all([n.e("21743"), n.e("50628")]).then(n.bind(n, 190930));

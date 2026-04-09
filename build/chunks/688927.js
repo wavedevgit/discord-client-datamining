@@ -19,7 +19,7 @@ let c = e => {
         isModeratorReport: u,
         isTidaReport: _ = !1,
         hideTitle: m = !1
-    } = e, p = c?.type === "submit", g = a.useMemo(() => r.A.reactParserFor({
+    } = e, p = c?.type === "submit", h = a.useMemo(() => r.A.reactParserFor({
         ...r.A.defaultRules,
         link: s.B
     }), []);
@@ -33,7 +33,7 @@ let c = e => {
             variant: "text-md/normal",
             color: "text-subtle",
             className: o.m,
-            children: g(n)
+            children: h(n)
         }) : null, p && !u && !_ && (0, l.jsx)(i.Text, {
             variant: "text-sm/normal",
             children: d.intl.format(d.t.Q0tSKT, {})

@@ -4,9 +4,9 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var r = n(284009),
-    a = n.n(r),
-    l = n(765379),
+var a = n(284009),
+    l = n.n(a),
+    r = n(765379),
     s = n(90644),
     o = n(61330),
     d = n(609425),
@@ -16,15 +16,15 @@ var r = n(284009),
     h = n(290987),
     _ = n(427262),
     m = n(516085),
-    p = n(928636);
+    g = n(928636);
 n(595);
-var g = n(652215),
+var p = n(652215),
     E = n(985018);
 
 function I(e) {
     let {
         party: t,
-        onUserContextMenu: r
+        onUserContextMenu: a
     } = e, {
         priorityMembers: I,
         partiedMembers: f,
@@ -38,19 +38,19 @@ function I(e) {
                 user: t
             } = e;
             return t.id
-        })), r = n.filter(e => !i.has(e.id)), a = _.Ay.getName(t[0].user), l = null != t[1] ? _.Ay.getName(t[1].user) : null != r[0] ? _.Ay.getName(r[0]) : null;
+        })), a = n.filter(e => !i.has(e.id)), l = _.Ay.getName(t[0].user), r = null != t[1] ? _.Ay.getName(t[1].user) : null != a[0] ? _.Ay.getName(a[0]) : null;
         switch (n.length) {
             case 1:
-                return a;
+                return l;
             case 2:
                 return E.intl.format(E.t.t1DyC1, {
-                    user1: a,
-                    user2: l
+                    user1: l,
+                    user2: r
                 });
             default:
                 return E.intl.format(E.t["5CSEcJ"], {
-                    user1: a,
-                    user2: l,
+                    user1: l,
+                    user2: r,
                     extras: n.length - 2
                 })
         }
@@ -60,13 +60,13 @@ function I(e) {
     } = function(e) {
         let {
             priorityMembers: t,
-            partiedMembers: r,
+            partiedMembers: a,
             voiceChannels: d,
             currentActivities: c
-        } = e, u = t.length, A = r.length - u, _ = c[0], I = _?.activity, f = _?.startedPlayingTime, C = {
+        } = e, u = t.length, A = a.length - u, _ = c[0], I = _?.activity, f = _?.startedPlayingTime, C = {
             name: I?.name ?? ""
         };
-        if ((0, l.A)(I) && null != I) return {
+        if ((0, r.A)(I) && null != I) return {
             subtitle: (0, i.jsx)(h.Ay, {
                 start: f,
                 location: h.Ay.Locations.ACTIVITY_FEED_NEW,
@@ -85,11 +85,11 @@ function I(e) {
             let t = m.Ij(I);
             if (null != t) return t;
             switch (I.type) {
-                case g.$pd.PLAYING:
+                case p.$pd.PLAYING:
                     if ((0, o.A)(I)) return {
                         subtitle: E.intl.string(E.t.tO8wOx),
-                        icon: (0, i.jsx)(p.A.Header.Icon, {
-                            src: p.A.Header.Icon.Src.XBOX
+                        icon: (0, i.jsx)(g.A.Header.Icon, {
+                            src: g.A.Header.Icon.Src.XBOX
                         })
                     };
                     return {
@@ -97,35 +97,35 @@ function I(e) {
                             start: f,
                             location: h.Ay.Locations.ACTIVITY_FEED_NEW,
                             messageProps: C
-                        }), icon: null != e ? (0, i.jsx)(p.A.Header.Icon, {
+                        }), icon: null != e ? (0, i.jsx)(g.A.Header.Icon, {
                             src: null != e.getIconURL(64) ? e.getIconURL(64) : n(960648)
                         }) : null
                     };
-                case g.$pd.STREAMING:
+                case p.$pd.STREAMING:
                     return {
-                        subtitle: E.intl.string(E.t.HyGHj7), icon: null != e && null != e.getIconURL(64) ? (0, i.jsx)(p.A.Header.Icon, {
+                        subtitle: E.intl.string(E.t.HyGHj7), icon: null != e && null != e.getIconURL(64) ? (0, i.jsx)(g.A.Header.Icon, {
                             src: e.getIconURL(64)
                         }) : null
                     };
-                case g.$pd.LISTENING:
-                    let r;
-                    return r = (0, s.A)(I) ? (0, i.jsx)(p.A.Header.Icon, {
-                        src: p.A.Header.Icon.Src.SPOTIFY
-                    }) : null != e.getIconURL(64) ? (0, i.jsx)(p.A.Header.Icon, {
+                case p.$pd.LISTENING:
+                    let a;
+                    return a = (0, s.A)(I) ? (0, i.jsx)(g.A.Header.Icon, {
+                        src: g.A.Header.Icon.Src.SPOTIFY
+                    }) : null != e.getIconURL(64) ? (0, i.jsx)(g.A.Header.Icon, {
                         src: e.getIconURL(64)
-                    }) : (0, i.jsx)(p.A.Header.Icon, {
+                    }) : (0, i.jsx)(g.A.Header.Icon, {
                         src: n(960648)
                     }), {
                         subtitle: E.intl.formatToPlainString(E.t.NF5xop, {
                             name: I.name
                         }),
-                        icon: r
+                        icon: a
                     };
-                case g.$pd.WATCHING:
+                case p.$pd.WATCHING:
                     return {
                         subtitle: E.intl.formatToPlainString(E.t.pW3Ip3, {
                             name: I.name
-                        }), icon: null != e && null != e.getIconURL(64) ? (0, i.jsx)(p.A.Header.Icon, {
+                        }), icon: null != e && null != e.getIconURL(64) ? (0, i.jsx)(g.A.Header.Icon, {
                             src: e.getIconURL(64)
                         }) : null
                     };
@@ -149,10 +149,10 @@ function I(e) {
                     let e = m.Ij(t);
                     if (null != e) return e
                 }
-                if (null != t && t.type === g.$pd.LISTENING) return {
+                if (null != t && t.type === p.$pd.LISTENING) return {
                     subtitle: E.intl.string(E.t.rmnkz4),
-                    icon: (0, i.jsx)(p.A.Header.Icon, {
-                        src: p.A.Header.Icon.Src.SPOTIFY
+                    icon: (0, i.jsx)(g.A.Header.Icon, {
+                        src: g.A.Header.Icon.Src.SPOTIFY
                     })
                 }
             }
@@ -165,23 +165,23 @@ function I(e) {
             let {
                 activity: t,
                 game: n,
-                startedPlayingTime: r
+                startedPlayingTime: a
             } = e;
-            return a()(null != t, "Activity was null somehow"), {
+            return l()(null != t, "Activity was null somehow"), {
                 subtitle: (0, i.jsx)(h.Ay, {
-                    start: r,
+                    start: a,
                     location: h.Ay.Locations.ACTIVITY_FEED_NEW,
                     messageProps: C
                 }),
-                icon: null != n && null != n.getIconURL(64) ? (0, i.jsx)(p.A.Header.Icon, {
+                icon: null != n && null != n.getIconURL(64) ? (0, i.jsx)(g.A.Header.Icon, {
                     src: n.getIconURL(64)
                 }) : null
             }
         }
         return {
             subtitle: E.intl.string(E.t.sau5tt),
-            icon: (0, i.jsx)(p.A.Header.Icon, {
-                src: p.A.Header.Icon.Src.MULTIPLE
+            icon: (0, i.jsx)(g.A.Header.Icon, {
+                src: g.A.Header.Icon.Src.MULTIPLE
             })
         }
     }(t), v = (0, A.A)({
@@ -194,7 +194,7 @@ function I(e) {
     }), y = (0, c.a)({
         displayNameStyles: b
     });
-    return (0, i.jsx)(p.A.Header, {
+    return (0, i.jsx)(g.A.Header, {
         priorityUser: T,
         guildId: C?.id,
         title: N,
@@ -202,7 +202,7 @@ function I(e) {
         icon: x,
         onSubtitleClick: v,
         onIconClick: v,
-        onContextMenu: e => r(e, T.user),
+        onContextMenu: e => a(e, T.user),
         displayNameFont: 1 === f.length ? y : void 0
     })
 }

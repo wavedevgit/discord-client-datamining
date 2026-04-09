@@ -34,10 +34,10 @@ let b = e => {
         } = (t = (0, _.A)(), s = r.useMemo(() => C ? [] : t(A.rankedSkuIds).filter(e => e.skuId !== A.rewardSkuId || null != L), [C, t, A.rankedSkuIds, L, A.rewardSkuId]), b = (0, u.p)()(s), {
             products: (0, g.X)(b)
         }),
-        k = r.useMemo(() => !C && 0 !== A.rankedSkuIds.length && !(j.length > 0) && A.rankedSkuIds.every(e => o.A.getProduct(e)?.variantGroupStoreListingId != null), [C, A.rankedSkuIds, j.length]),
-        T = C || k,
+        O = r.useMemo(() => !C && 0 !== A.rankedSkuIds.length && !(j.length > 0) && A.rankedSkuIds.every(e => o.A.getProduct(e)?.variantGroupStoreListingId != null), [C, A.rankedSkuIds, j.length]),
+        T = C || O,
         {
-            readyToClaim: O
+            readyToClaim: k
         } = (0, x.K)(I, A.rewardSkuId),
         y = null == L && null != A.rewardSkuId && null != I;
     return (0, n.jsx)(i.A, {
@@ -45,7 +45,7 @@ let b = e => {
         children: T ? (0, n.jsx)(n.Fragment, {
             children: [void 0, void 0, void 0, void 0, void 0].map((e, t) => (0, n.jsx)(p.A, {}, t))
         }) : (0, n.jsxs)(n.Fragment, {
-            children: [y && O && (0, n.jsx)(a.R9, {
+            children: [y && k && (0, n.jsx)(a.R9, {
                 newValue: {
                     tilePosition: 0,
                     pageSection: "top 4",

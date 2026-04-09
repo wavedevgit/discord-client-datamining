@@ -17,17 +17,17 @@ let p = e => {
     let {
         application: t,
         reportId: n
-    } = e, [p, g] = a.useState(!1), x = (0, i.bG)([u.default], () => u.default.getNewestTokenForApplication(t.id));
+    } = e, [p, h] = a.useState(!1), x = (0, i.bG)([u.default], () => u.default.getNewestTokenForApplication(t.id));
     a.useEffect(() => {
-        null != x && g(!0)
+        null != x && h(!0)
     }, [x]);
-    let h = a.useRef(!1);
+    let g = a.useRef(!1);
     a.useEffect(() => {
-        h.current || (r.A.fetch(), h.current = !0)
+        g.current || (r.A.fetch(), g.current = !0)
     }, []);
     let A = (0, i.bG)([s.Ay], () => s.Ay.getSelfEmbeddedActivities()),
         v = a.useCallback(() => {
-            if (g(!1), o.Ay.trackWithMetadata(_.HAw.IAR_DEAUTHORIZE_APP_BUTTON_CLICKED, {
+            if (h(!1), o.Ay.trackWithMetadata(_.HAw.IAR_DEAUTHORIZE_APP_BUTTON_CLICKED, {
                     application_id: t.id,
                     report_id: n
                 }), null == x) return;

@@ -1,12 +1,12 @@
 /** chunk id: 636805 params = (module,exports,require) **/
 n.d(t, {
-    A: () => g
+    A: () => p
 });
 var i = n(627968);
 n(64700);
-var r = n(554146),
-    a = n(397927),
-    l = n(73153),
+var a = n(554146),
+    l = n(397927),
+    r = n(73153),
     s = n(272355),
     o = n(826673),
     d = n(367727),
@@ -16,26 +16,26 @@ var r = n(554146),
     h = n(853742),
     _ = n(652215),
     m = n(49999);
-class p extends s.A {
+class g extends s.A {
     _initialize() {
-        l.h.subscribe("CHANNEL_SELECT", this.handleChannelSelect)
+        r.h.subscribe("CHANNEL_SELECT", this.handleChannelSelect)
     }
     _terminate() {
-        l.h.unsubscribe("CHANNEL_SELECT", this.handleChannelSelect)
+        r.h.unsubscribe("CHANNEL_SELECT", this.handleChannelSelect)
     }
     handleChannelSelect(e) {
-        let t, l, s, p, g, {
+        let t, r, s, g, p, {
             guildId: E
         } = e;
-        if (null == E || (t = u.A.getGuild(E), l = !!t?.features.has(_.GuildFeatures.COMMUNITY), s = A.A.can(_.xBc.MANAGE_CHANNELS, t), p = (0, o.k8)(r.M.FORUM_CHANNEL_UPSELL_MODAL), g = c.A.getMemberCount(E) ?? 0, !l || !s || p || !(g >= 200))) return;
-        (0, h.zd)(), (0, d.Vh)(r.M.FORUM_CHANNEL_UPSELL_MODAL);
+        if (null == E || (t = u.A.getGuild(E), r = !!t?.features.has(_.GuildFeatures.COMMUNITY), s = A.A.can(_.xBc.MANAGE_CHANNELS, t), g = (0, o.k8)(a.M.FORUM_CHANNEL_UPSELL_MODAL), p = c.A.getMemberCount(E) ?? 0, !r || !s || g || !(p >= 200))) return;
+        (0, h.zd)(), (0, d.Vh)(a.M.FORUM_CHANNEL_UPSELL_MODAL);
         let I = function() {
             let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : m.i.DISMISS;
-            (0, o.Dr)(r.M.FORUM_CHANNEL_UPSELL_MODAL, {
+            (0, o.Dr)(a.M.FORUM_CHANNEL_UPSELL_MODAL, {
                 dismissAction: e
             })
         };
-        (0, a.mMO)(async () => {
+        (0, l.mMO)(async () => {
             let {
                 default: e
             } = await n.e("7937").then(n.bind(n, 420472));
@@ -48,11 +48,11 @@ class p extends s.A {
                 shouldUpsellCreation: !0
             })
         }, {
-            onCloseCallback: () => (0, o.Dr)(r.M.FORUM_CHANNEL_UPSELL_MODAL, {
+            onCloseCallback: () => (0, o.Dr)(a.M.FORUM_CHANNEL_UPSELL_MODAL, {
                 dismissAction: m.i.DISMISS
             }),
             onCloseRequest: _.FXj
         })
     }
 }
-let g = new p
+let p = new g

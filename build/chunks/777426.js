@@ -3,9 +3,9 @@ n.d(t, {
     A: () => v
 });
 var i = n(627968),
-    r = n(64700),
-    a = n(503698),
-    l = n.n(a),
+    a = n(64700),
+    l = n(503698),
+    r = n.n(l),
     s = n(110259),
     o = n(311907),
     d = n(3203),
@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(139286),
     _ = n(414711),
     m = n(187696),
-    p = n(723690),
-    g = n(21119),
+    g = n(723690),
+    p = n(21119),
     E = n(994500),
     I = n(954571),
     f = n(45787),
@@ -30,7 +30,7 @@ var S = n(985018),
 function v(e) {
     let {
         ref: t,
-        isFocused: a,
+        isFocused: l,
         isActive: v,
         status: b,
         activities: y,
@@ -39,17 +39,17 @@ function v(e) {
         isMobile: R,
         isVR: P,
         onOtherHover: D,
-        onClick: M,
-        recipientUser: j,
+        onClick: j,
+        recipientUser: M,
         giftIntentType: w
     } = e, {
         analyticsLocations: U
     } = (0, A.Ay)(u.A.PREMIUM_GIFT_INTENT_FRIEND_ROW), {
         Component: G
-    } = (0, d.V)(), k = (0, o.bG)([C.Ay], () => C.Ay.getFriendAnniversaryYears(j.id)), {
+    } = (0, d.V)(), k = (0, o.bG)([C.Ay], () => C.Ay.getFriendAnniversaryYears(M.id)), {
         openGiftModal: V
     } = (0, T.$)({
-        giftRecipient: j,
+        giftRecipient: M,
         analyticsLocations: U,
         analyticsLocation: N.ThZ.FRIEND_ANNIVERSARIES_ACTION_BUTTON,
         analyticsObject: {
@@ -60,8 +60,8 @@ function v(e) {
         },
         location: "gift-intent-friend-row"
     });
-    r.useEffect(() => {
-        let e = g.A.getUserAffinity(j.id);
+    a.useEffect(() => {
+        let e = p.A.getUserAffinity(M.id);
         (0, h.x)({
             name: s.ImpressionNames.GIFT_INTENT_ACTION_BUTTON,
             type: s.ImpressionTypes.VIEW,
@@ -70,10 +70,10 @@ function v(e) {
                 affinity: e?.communicationProbability
             }
         })
-    }, [j, w]);
+    }, [M, w]);
     let B = e => {
         e.stopPropagation();
-        let t = g.A.getUserAffinity(j.id);
+        let t = p.A.getUserAffinity(M.id);
         I.default.track(N.HAw.GIFT_INTENT_ACTION_BUTTON_CLICKED, {
             gift_intent_type: w,
             affinity: t?.dmProbability,
@@ -82,17 +82,17 @@ function v(e) {
     };
     return (0, i.jsx)(_.A, {
         ref: t,
-        isFocused: a,
+        isFocused: l,
         isActive: v,
-        user: j,
+        user: M,
         onOtherHover: D,
-        onClick: M,
+        onClick: j,
         height: 72,
         children: e => (0, i.jsxs)("div", {
-            className: l()(x.a4, x.Z$),
-            children: [(0, i.jsx)(p.A, {
+            className: r()(x.a4, x.Z$),
+            children: [(0, i.jsx)(g.A, {
                 className: x.Cv,
-                user: j,
+                user: M,
                 status: b,
                 isMobile: R,
                 isVR: P,
@@ -102,8 +102,8 @@ function v(e) {
                         activities: y,
                         applicationStream: O,
                         status: b,
-                        user: j,
-                        userIgnored: E.A.isIgnored(j.id)
+                        user: M,
+                        userIgnored: E.A.isIgnored(M.id)
                     }), (0, i.jsxs)("div", {
                         className: x.K3,
                         children: [(0, i.jsx)(c.$yI, {
@@ -119,7 +119,7 @@ function v(e) {
                     })]
                 }),
                 hovered: e,
-                showAccountIdentifier: !L && !j.isProvisional
+                showAccountIdentifier: !L && !M.isProvisional
             }), (0, i.jsxs)("div", {
                 className: x.o1,
                 children: [(0, i.jsx)(c.K0, {
@@ -132,7 +132,7 @@ function v(e) {
                             gift_intent_type: w,
                             cta_type: "send_message",
                             location_stack: U
-                        }), (0, f.xs)(j.id), (0, c.mMO)(async () => {
+                        }), (0, f.xs)(M.id), (0, c.mMO)(async () => {
                             let {
                                 default: e
                             } = await n.e("95501").then(n.bind(n, 367516));

@@ -1,7 +1,7 @@
 /** chunk id: 985986 params = (module,exports,require) **/
 n.d(t, {
-    A: () => a
+    A: () => l
 });
 var i = n(582095),
-    r = n(764148);
-let a = new i.A(r.A)
+    a = n(764148);
+let l = new i.A(a.A)

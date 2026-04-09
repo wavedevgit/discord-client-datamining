@@ -1,6 +1,6 @@
 /** chunk id: 90924 params = (module,exports,require) **/
 n.d(t, {
-    BB: () => X,
+    BB: () => Q,
     B_: () => Y,
     D2: () => ee,
     Gc: () => B,
@@ -15,13 +15,13 @@ n.d(t, {
     lG: () => J,
     px: () => K,
     qG: () => V,
-    sq: () => Q,
+    sq: () => X,
     uM: () => z
 }), n(321073), n(938796), n(735438);
 var i = n(567243),
-    r = n(179771),
-    a = n(562465),
-    l = n(898467),
+    a = n(179771),
+    l = n(562465),
+    r = n(898467),
     s = n(843472),
     o = n(956518),
     d = n(587895),
@@ -31,8 +31,8 @@ var i = n(567243),
     h = n(95701),
     _ = n(427157),
     m = n(734057),
-    p = n(71393),
-    g = n(430452),
+    g = n(71393),
+    p = n(430452),
     E = n(320501),
     I = n(290863),
     f = n(287809),
@@ -55,10 +55,10 @@ let L = x.A.toURLSafe(window.GLOBAL_ENV.API_ENDPOINT)?.host ?? "localhost",
     }(),
     P = RegExp(`^${S.A.escape("https://")}(?:[a-z]+\\.)?(${S.A.escape(R)}|discordapp.com|discord.com)$`),
     D = +T.A.Millis.MINUTE,
-    M = {};
+    j = {};
 
-function j(e) {
-    return "customEmoji" === e.type && (e.type = "emoji"), "emoji" === e.type && e.src && (e.src = w(e.src)), Array.isArray(e.content) && (e.content = e.content.map(j)), e
+function M(e) {
+    return "customEmoji" === e.type && (e.type = "emoji"), "emoji" === e.type && e.src && (e.src = w(e.src)), Array.isArray(e.content) && (e.content = e.content.map(M)), e
 }
 
 function w(e) {
@@ -80,7 +80,7 @@ function G(e, t) {
         })
     })), Promise.all(n).then(() => {
         let n = (!e.isNSFW() || f.default.getCurrentUser()?.nsfwAllowed === !0) && t ? E.A.getMessages(e.id).toArray().map(k) : [],
-            r = Object.values(C.A.getVoiceStatesForChannel(e.id)).map(t => V(i, e.id, t));
+            a = Object.values(C.A.getVoiceStatesForChannel(e.id)).map(t => V(i, e.id, t));
         return {
             id: e.id,
             name: e.name,
@@ -91,7 +91,7 @@ function G(e, t) {
             guild_id: i,
             position: e.position,
             messages: n,
-            voice_states: r
+            voice_states: a
         }
     })
 }
@@ -99,18 +99,18 @@ function G(e, t) {
 function k(e) {
     let t = c.A.parseToAST(e.content, !0, {
             channelId: e.channel_id
-        }).map(j),
+        }).map(M),
         n = m.A.getChannel(e.channel_id),
         i = null != e.author ? new _.A(e.author) : void 0,
-        r = null != e.author ? (0, u.FT)(i, n) : void 0;
+        a = null != e.author ? (0, u.FT)(i, n) : void 0;
     return {
         id: e.id,
         blocked: e.blocked,
         bot: e.bot,
         content: e.content,
         content_parsed: t.length ? t : void 0,
-        nick: r?.nick,
-        author_color: r?.colorString,
+        nick: a?.nick,
+        author_color: a?.colorString,
         edited_timestamp: e.edited_timestamp || e.editedTimestamp,
         timestamp: e.timestamp,
         tts: e.tts,
@@ -128,23 +128,23 @@ function k(e) {
 function V(e, t, n) {
     let {
         mute: i,
-        deaf: r,
-        selfMute: a,
-        selfDeaf: l,
+        deaf: a,
+        selfMute: l,
+        selfDeaf: r,
         suppress: s,
         userId: o
     } = n, d = f.default.getUser(o);
     if (null == d) throw Error(`Invalid user id: ${o}`);
     return {
         nick: N.Ay.getName(e, t, d),
-        mute: g.Ay.isLocalMute(d.id),
-        volume: g.Ay.getLocalVolume(d.id),
-        pan: g.Ay.getLocalPan(d.id),
+        mute: p.Ay.isLocalMute(d.id),
+        volume: p.Ay.getLocalVolume(d.id),
+        pan: p.Ay.getLocalPan(d.id),
         voice_state: {
             mute: i,
-            deaf: r,
-            self_mute: a,
-            self_deaf: l,
+            deaf: a,
+            self_mute: l,
+            self_deaf: r,
             suppress: s
         },
         user: (0, b.A)(d)
@@ -186,8 +186,8 @@ function F(e) {
 }
 
 function Y(e, t, n) {
-    let i = p.A.getGuild(e.getGuildId());
-    return (null != i ? i.application_id : e.getApplicationId()) === t || n.indexOf(r.F.MESSAGES_READ) > -1
+    let i = g.A.getGuild(e.getGuildId());
+    return (null != i ? i.application_id : e.getApplicationId()) === t || n.indexOf(a.F.MESSAGES_READ) > -1
 }
 
 function W(e) {
@@ -206,7 +206,7 @@ function K(e, t, n) {
 }
 
 function q(e) {
-    return a.Bo.get({
+    return l.Bo.get({
         url: O.Rsh.APPLICATION_RPC(e),
         oldFormErrors: !0,
         retries: 3,
@@ -237,23 +237,23 @@ async function z(e, t, n) {
             }, "Invalid Origin")
         } null == i && (i = A.Ay.createFromServer(await q(t)));
     let {
-        id: r,
-        name: a,
-        icon: l,
+        id: a,
+        name: l,
+        icon: r,
         coverImage: s,
         flags: c
     } = i;
     e.application = {
-        id: r,
-        name: a,
-        icon: l,
+        id: a,
+        name: l,
+        icon: r,
         coverImage: s,
         flags: c
     }
 }
 async function $(e, t, n) {
-    let i = M[e];
-    null == i && (i = new l.A(t ? 2 : 60, D), M[e] = i);
+    let i = j[e];
+    null == i && (i = new r.A(t ? 2 : 60, D), j[e] = i);
     try {
         await i.process(n)
     } catch (e) {
@@ -263,12 +263,12 @@ async function $(e, t, n) {
     }
 }
 
-function Q(e, t) {
+function X(e, t) {
     null == t && (e.authorization.scopes = [y.hj])
 }
 
-function X(e) {
-    let t = g.Ay.getSettings(),
+function Q(e) {
+    let t = p.Ay.getSettings(),
         n = e => Object.values(e).sort((e, t) => e.index - t.index).map(e => ({
             id: e.id,
             name: e.name
@@ -276,12 +276,12 @@ function X(e) {
         i = e(t);
     return {
         input: {
-            available_devices: n(g.Ay.getInputDevices()),
+            available_devices: n(p.Ay.getInputDevices()),
             device_id: t.inputDeviceId,
             volume: t.inputVolume
         },
         output: {
-            available_devices: n(g.Ay.getOutputDevices()),
+            available_devices: n(p.Ay.getOutputDevices()),
             device_id: t.outputDeviceId,
             volume: t.outputVolume
         },
@@ -303,7 +303,7 @@ function X(e) {
 }
 
 function Z(e, t) {
-    let n = g.Ay.getSettings(e),
+    let n = p.Ay.getSettings(e),
         i = t(n);
     return {
         input_mode: {

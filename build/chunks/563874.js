@@ -1,10 +1,10 @@
 /** chunk id: 563874 params = (module,exports,require) **/
 n.d(t, {
-    n: () => r
+    n: () => a
 });
 var i = n(335934);
 
-function r() {
+function a() {
     return i.zF.useConfig({
         location: "icymi_feed"
     }).enabled, !1

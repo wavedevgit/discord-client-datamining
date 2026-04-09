@@ -26,8 +26,8 @@ var i = n(627968),
     T = n(652215),
     S = n(788868),
     b = n(518477),
-    y = n(985018),
-    v = n(140048),
+    v = n(985018),
+    y = n(140048),
     j = n(538189);
 let R = N.Z.SIZE_90;
 
@@ -77,18 +77,18 @@ function O(e) {
         align: "center",
         fullWidth: !1,
         children: [(0, i.jsx)("div", {
-            className: v.kL,
+            className: y.kL,
             children: (0, i.jsx)(x.A, {
                 disableHoverOrFocus: !0,
                 disableRiveHover: h,
                 sku: t,
                 user: n,
                 spec: R,
-                cardStyle: a()(v.Nr, v.Q1, d),
-                skuPreviewStyle: a()(v.ho, c),
+                cardStyle: a()(y.Nr, y.Q1, d),
+                skuPreviewStyle: a()(y.ho, c),
                 skuAssetClassName: O ? u : void 0,
                 onClick: C,
-                "aria-label": y.intl.formatToPlainString(y.t.ZBB4Ty, {
+                "aria-label": v.intl.formatToPlainString(v.t.ZBB4Ty, {
                     productName: (0, f.TC)(t)
                 }),
                 onHoverOrFocusChange: L,
@@ -135,7 +135,7 @@ function L(e) {
         })
     }, [t.id, t.applicationId, n, o]), g = l.useMemo(() => ({
         title: t.name,
-        description: y.intl.format(y.t["CqpEC+"], {
+        description: v.intl.format(v.t["CqpEC+"], {
             applicationName: r?.name
         })
     }), [t.name, r?.name]);
@@ -175,22 +175,22 @@ function M(e) {
             case r.R.NAMEPLATE:
                 return;
             case r.R.AVATAR_DECORATION:
-                return a()(v.ML, v._P);
+                return a()(y.ML, y._P);
             default:
-                return a()(v.ML, v.ZY)
+                return a()(y.ML, y.ZY)
         }
     }, [t?.tenantMetadata?.collectibles?.type]), h = l.useMemo(() => ({
         title: t.name,
         description: function(e) {
             if (e.tenantMetadata?.collectibles == null) return "";
-            if (null != e.bundledSkus && e.bundledSkus.length > 0) return y.intl.string(y.t.Zr5tjn);
+            if (null != e.bundledSkus && e.bundledSkus.length > 0) return v.intl.string(v.t.Zr5tjn);
             switch (e.tenantMetadata.collectibles.type) {
                 case r.R.AVATAR_DECORATION:
-                    return y.intl.string(y.t["7v0T9P"]);
+                    return v.intl.string(v.t["7v0T9P"]);
                 case r.R.PROFILE_EFFECT:
-                    return y.intl.string(y.t.wR5wOo);
+                    return v.intl.string(v.t.wR5wOo);
                 case r.R.NAMEPLATE:
-                    return y.intl.string(y.t.x5CoXR);
+                    return v.intl.string(v.t.x5CoXR);
                 default:
                     return ""
             }
@@ -224,7 +224,7 @@ function D(e) {
         })
     }, [t.id, n, s]), o = l.useMemo(() => ({
         title: t.name,
-        description: y.intl.string(y.t.Ipxkog)
+        description: v.intl.string(v.t.Ipxkog)
     }), [t.name]);
     return (0, i.jsx)(O, {
         sku: t,

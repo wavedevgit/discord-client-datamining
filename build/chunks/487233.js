@@ -1,86 +1,86 @@
 /** chunk id: 487233 params = (module,exports,require) **/
-t.d(n, {
-    m: () => h
+l.d(t, {
+    m: () => g
 });
-var i = t(627968);
-t(64700);
-var a = t(311907),
-    l = t(397927),
-    r = t(688810),
-    s = t(919395),
-    o = t(385612),
-    d = t(101058),
-    c = t(696451),
-    u = t(287809),
-    _ = t(84540),
-    p = t(836602),
-    A = t(854627),
-    g = t(930349),
-    I = t(339984),
-    m = t(985018);
+var a = l(627968);
+l(64700);
+var n = l(311907),
+    r = l(397927),
+    i = l(688810),
+    o = l(919395),
+    s = l(385612),
+    d = l(101058),
+    c = l(696451),
+    u = l(287809),
+    p = l(84540),
+    m = l(836602),
+    h = l(854627),
+    x = l(930349),
+    b = l(339984),
+    y = l(985018);
 
 function f(e) {
     let {
-        user: n,
-        guildId: t
+        user: t,
+        guildId: l
     } = e, {
         newestAnalyticsLocation: u
-    } = (0, r.Ay)(), f = null != t, h = (0, a.bG)([c.Ay], () => null != t ? c.Ay.getMember(t, n.id) : null), x = (0, a.bG)([p.A], () => p.A.getPendingChanges(t ?? void 0).pendingAvatar), v = (0, d.V7)({
-        userId: n.id,
-        image: x
+    } = (0, i.Ay)(), f = null != l, g = (0, n.bG)([c.Ay], () => null != l ? c.Ay.getMember(l, t.id) : null), v = (0, n.bG)([m.A], () => m.A.getPendingChanges(l ?? void 0).pendingAvatar), _ = (0, d.V7)({
+        userId: t.id,
+        image: v
     }), {
         avatarSrc: E
-    } = (0, A.A)({
-        userId: n.id,
-        guildId: t,
-        avatarOverride: v,
-        size: l._3J.SIZE_56
-    }), b = f ? h?.avatar : n.avatar, y = null != n.avatar, C = f && h?.avatar != null, j = null != x, S = null === x, T = (0, s.z5)(x, b), N = () => (0, o.XD)({
-        uploadType: I.HL.AVATAR,
+    } = (0, h.A)({
+        userId: t.id,
+        guildId: l,
+        avatarOverride: _,
+        size: r._3J.SIZE_56
+    }), C = f ? g?.avatar : t.avatar, j = null != t.avatar, S = f && g?.avatar != null, T = null != v, A = null === v, P = (0, o.z5)(v, C), k = () => (0, s.XD)({
+        uploadType: b.HL.AVATAR,
         analyticsSource: u,
-        guildId: t ?? void 0,
+        guildId: l ?? void 0,
         stackingBehavior: "stack"
     });
-    if (!(S ? f && y : j || C || y)) return (0, i.jsx)(g.kL, {
+    if (!(A ? f && j : T || S || j)) return (0, a.jsx)(x.kL, {
         variant: "square",
-        onClick: N,
-        accessibleLabel: m.intl.string(m.t["4OynCD"]),
-        children: (0, i.jsx)(l.euF, {
+        onClick: k,
+        accessibleLabel: y.intl.string(y.t["4OynCD"]),
+        children: (0, a.jsx)(r.euF, {
             src: E,
-            size: l._3J.SIZE_56,
+            size: r._3J.SIZE_56,
             "aria-hidden": !0
         })
     });
-    let R = f && y,
-        L = T ? {
+    let I = f && j,
+        R = P ? {
             onClick: () => {
-                (0, _.p)({
-                    guildId: t ?? void 0,
+                (0, p.p)({
+                    guildId: l ?? void 0,
                     avatar: null
-                }), (0, s.WU)(null)
+                }), (0, o.WU)(null)
             },
-            type: R ? "reset" : "remove",
-            accessibleLabel: m.intl.string(R ? m.t.Y0mxy1 : m.t.twB3fz)
+            type: I ? "reset" : "remove",
+            accessibleLabel: y.intl.string(I ? y.t.Y0mxy1 : y.t.twB3fz)
         } : void 0;
-    return (0, i.jsx)(g.NW, {
+    return (0, a.jsx)(x.NW, {
         variant: "square",
-        onClick: N,
-        accessibleLabel: m.intl.string(m.t["4OynCD"]),
-        deleteButtonConfig: L,
-        children: (0, i.jsx)(l.euF, {
+        onClick: k,
+        accessibleLabel: y.intl.string(y.t["4OynCD"]),
+        deleteButtonConfig: R,
+        children: (0, a.jsx)(r.euF, {
             src: E,
-            size: l._3J.SIZE_56,
+            size: r._3J.SIZE_56,
             "aria-hidden": !0
         })
     })
 }
 
-function h(e) {
+function g(e) {
     let {
-        guildId: n
-    } = e, t = (0, a.bG)([u.default], () => u.default.getCurrentUser());
-    return null == t ? null : (0, i.jsx)(f, {
-        user: t,
-        guildId: n
+        guildId: t
+    } = e, l = (0, n.bG)([u.default], () => u.default.getCurrentUser());
+    return null == l ? null : (0, a.jsx)(f, {
+        user: l,
+        guildId: t
     })
 }

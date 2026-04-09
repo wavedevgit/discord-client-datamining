@@ -1,11 +1,11 @@
 /** chunk id: 885459 params = (module,exports,require) **/
 n.d(t, {
-    A: () => p
+    A: () => g
 }), n(323874), n(14289), n(35956), n(321073);
 var i = n(627968),
-    r = n(64700),
-    a = n(873263),
-    l = n(311907),
+    a = n(64700),
+    l = n(873263),
+    r = n(311907),
     s = n(73153),
     o = n(829219),
     d = n(859703),
@@ -18,35 +18,35 @@ var i = n(627968),
 function m(e) {
     return new URLSearchParams(e).get(c.L1.QUEST_ID)
 }
-let p = function(e) {
+let g = function(e) {
     let {
         questId: t
     } = e, {
         questId: n,
-        setQuestId: p
+        setQuestId: g
     } = function(e) {
-        let t = (0, a.W6)(),
-            [n, i] = r.useState(e),
+        let t = (0, l.W6)(),
+            [n, i] = a.useState(e),
             {
-                search: l
-            } = (0, a.zy)();
-        return r.useEffect(() => {
-            let t = m(l);
+                search: r
+            } = (0, l.zy)();
+        return a.useEffect(() => {
+            let t = m(r);
             null != t ? i(t) : null != e && i(e)
-        }, [e, l]), r.useEffect(() => {
-            if (null == n || m(l) === n) return;
+        }, [e, r]), a.useEffect(() => {
+            if (null == n || m(r) === n) return;
             let e = new URLSearchParams;
             e.set(c.L1.TAB, c.NC.PREVIEW_TOOL), e.set(c.L1.QUEST_ID, n), t.push(`${_.BVt.QUEST_HOME}?${e.toString()}`)
-        }, [n, t, l]), {
+        }, [n, t, r]), {
             questId: n,
             setQuestId: i
         }
-    }(t), g = (0, l.bG)([d.A], () => null != n ? d.A.getQuest(n) : void 0, [n]), E = (0, l.bG)([d.A], () => null != n ? d.A.getQuestLoadedViaPreview(n) : null, [n]);
-    r.useEffect(() => {
+    }(t), p = (0, r.bG)([d.A], () => null != n ? d.A.getQuest(n) : void 0, [n]), E = (0, r.bG)([d.A], () => null != n ? d.A.getQuestLoadedViaPreview(n) : null, [n]);
+    a.useEffect(() => {
         null != n && (0, o.dQ)(n).then(() => {
             (0, o.Gt)(n)
         })
-    }, [n]), r.useEffect(() => {
+    }, [n]), a.useEffect(() => {
         let e = e => {
             let {
                 quest_id: t
@@ -57,12 +57,12 @@ let p = function(e) {
             s.h.unsubscribe("QUEST_PREVIEW_UPDATE", e)
         }
     }, [n]);
-    let [I, f] = r.useState([]);
+    let [I, f] = a.useState([]);
     return (0, i.jsx)(A.A, {
         controls: (0, i.jsx)(u.A, {
             questId: n,
-            setQuestId: p,
-            quest: g,
+            setQuestId: g,
+            quest: p,
             refreshQuest: () => {
                 null != n && (0, o.dQ)(n)
             }

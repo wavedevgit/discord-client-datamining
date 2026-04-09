@@ -26,8 +26,8 @@ var i = n(627968),
     T = n(439053),
     S = n(312381),
     b = n(379654),
-    y = n(946356),
-    v = n(490752),
+    v = n(946356),
+    y = n(490752),
     j = n(587168),
     R = n(193738),
     O = n(615952),
@@ -87,7 +87,7 @@ function H(e) {
             isLoaded: W?.isLoaded,
             children: (0, i.jsx)(E.Hl, {
                 value: Q,
-                children: (0, i.jsxs)(y.A, {
+                children: (0, i.jsxs)(v.A, {
                     ref: X,
                     user: t,
                     displayProfile: W,
@@ -105,7 +105,7 @@ function H(e) {
                                 themeType: w.d.SIDEBAR
                             }), (0, i.jsx)(O.A, {
                                 user: t
-                            }), t.bot ? (0, i.jsx)(v.A, {
+                            }), t.bot ? (0, i.jsx)(y.A, {
                                 user: t
                             }) : (0, i.jsx)(L.yo, {
                                 user: t

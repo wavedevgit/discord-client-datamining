@@ -1,9 +1,9 @@
 /** chunk id: 782505 params = (module,exports,require) **/
 n.d(t, {
     IA: () => v,
-    jB: () => E,
-    qv: () => C,
-    zf: () => T
+    jB: () => b,
+    qv: () => E,
+    zf: () => S
 });
 var i = n(627968),
     a = n(64700),
@@ -16,15 +16,15 @@ var i = n(627968),
     u = n(858897),
     g = n(562153),
     m = n(993401),
-    x = n(652215),
-    f = n(985018),
+    h = n(652215),
+    x = n(985018),
     p = n(601927);
-let h = [() => f.intl.string(f.t.madJdE), () => f.intl.string(f.t.NYmfoP), () => f.intl.string(f.t.R2PaCg), () => f.intl.string(f.t.laSR8h), () => f.intl.string(f.t.DnsJE8)],
-    _ = [() => f.intl.string(f.t.nFSbeE), () => f.intl.string(f.t.gTcxOz), () => f.intl.string(f.t["8T0wYj"]), () => f.intl.string(f.t.BIHl1g), () => f.intl.string(f.t["jhBm0+"])],
-    A = [() => f.intl.string(f.t.AyMGXA), () => f.intl.string(f.t.aAFW7V), e => f.intl.formatToPlainString(f.t.h2g0cM, {
+let f = [() => x.intl.string(x.t.madJdE), () => x.intl.string(x.t.NYmfoP), () => x.intl.string(x.t.R2PaCg), () => x.intl.string(x.t.laSR8h), () => x.intl.string(x.t.DnsJE8)],
+    A = [() => x.intl.string(x.t.nFSbeE), () => x.intl.string(x.t.gTcxOz), () => x.intl.string(x.t["8T0wYj"]), () => x.intl.string(x.t.BIHl1g), () => x.intl.string(x.t["jhBm0+"])],
+    _ = [() => x.intl.string(x.t.AyMGXA), () => x.intl.string(x.t.aAFW7V), e => x.intl.formatToPlainString(x.t.h2g0cM, {
         name: e
-    }), () => f.intl.string(f.t.rrYh58), () => f.intl.string(f.t["HX3K+F"]), () => f.intl.string(f.t["/yW3aY"]), () => f.intl.string(f.t["PmL/v0"]), () => f.intl.string(f.t.IALa3h), () => f.intl.string(f.t.HRcTFL), () => f.intl.string(f.t.NuCqPt), () => f.intl.string(f.t["M1tw+4"]), () => f.intl.string(f.t.UBm1y2), () => f.intl.string(f.t.Cu95PQ), () => f.intl.string(f.t["R/wFuh"]), () => f.intl.string(f.t.HQPAVT), () => f.intl.string(f.t.YolGh4)],
-    I = [x.fg2.STEAM, x.fg2.PLAYSTATION, x.fg2.XBOX, x.fg2.TWITCH, x.fg2.BATTLENET, x.fg2.LEAGUE_OF_LEGENDS, x.fg2.EPIC_GAMES, x.fg2.RIOT_GAMES, x.fg2.ROBLOX, x.fg2.SPOTIFY, x.fg2.YOUTUBE, x.fg2.CRUNCHYROLL, x.fg2.BUNGIE];
+    }), () => x.intl.string(x.t.rrYh58), () => x.intl.string(x.t["HX3K+F"]), () => x.intl.string(x.t["/yW3aY"]), () => x.intl.string(x.t["PmL/v0"]), () => x.intl.string(x.t.IALa3h), () => x.intl.string(x.t.HRcTFL), () => x.intl.string(x.t.NuCqPt), () => x.intl.string(x.t["M1tw+4"]), () => x.intl.string(x.t.UBm1y2), () => x.intl.string(x.t.Cu95PQ), () => x.intl.string(x.t["R/wFuh"]), () => x.intl.string(x.t.HQPAVT), () => x.intl.string(x.t.YolGh4)],
+    I = [h.fg2.STEAM, h.fg2.PLAYSTATION, h.fg2.XBOX, h.fg2.TWITCH, h.fg2.BATTLENET, h.fg2.LEAGUE_OF_LEGENDS, h.fg2.EPIC_GAMES, h.fg2.RIOT_GAMES, h.fg2.ROBLOX, h.fg2.SPOTIFY, h.fg2.YOUTUBE, h.fg2.CRUNCHYROLL, h.fg2.BUNGIE];
 
 function j(e) {
     let {
@@ -50,51 +50,51 @@ function j(e) {
 }
 
 function v() {
-    let e = f.intl.string(f.t.RnD2yZ),
-        [t] = a.useState(() => ((0, l.sample)(h) ?? h[0])());
+    let e = x.intl.string(x.t.RnD2yZ),
+        [t] = a.useState(() => ((0, l.sample)(f) ?? f[0])());
     return (0, i.jsx)(j, {
         heading: e,
         bodyText: t
     })
 }
 
-function E() {
-    let e = f.intl.string(f.t.bFgqYJ),
-        [t] = a.useState(() => ((0, l.sample)(_) ?? _[0])());
+function b() {
+    let e = x.intl.string(x.t.bFgqYJ),
+        [t] = a.useState(() => ((0, l.sample)(A) ?? A[0])());
     return (0, i.jsx)(j, {
         heading: e,
         bodyText: t
     })
 }
 
-function T(e) {
+function S(e) {
     let {
         user: t,
         guildId: n,
         channelId: o,
         onClose: d
-    } = e, c = g.Ay.getName(n, o, t), u = f.intl.formatToPlainString(f.t.sjSitP, {
+    } = e, c = g.Ay.getName(n, o, t), u = x.intl.formatToPlainString(x.t.sjSitP, {
         name: c
-    }), [x] = a.useState(() => ((0, l.sample)(A) ?? A[0])(c)), h = a.useCallback(() => {
+    }), [h] = a.useState(() => ((0, l.sample)(_) ?? _[0])(c)), f = a.useCallback(() => {
         r.A.openPrivateChannel({
             recipientIds: t.id
         }), d?.()
     }, [t.id, d]);
     return (0, i.jsx)(j, {
         heading: u,
-        bodyText: x,
+        bodyText: h,
         children: (0, i.jsx)("div", {
             className: p.v0,
             children: (0, i.jsx)(m.FD, {
                 icon: s.oyn,
-                text: f.intl.string(f.t["g33r/P"]),
-                onClick: h
+                text: x.intl.string(x.t["g33r/P"]),
+                onClick: f
             })
         })
     })
 }
 
-function b() {
+function y() {
     let e = (0, o.Ay)();
     return (0, i.jsx)("div", {
         className: p.HU,
@@ -111,7 +111,7 @@ function b() {
     })
 }
 
-function C(e) {
+function E(e) {
     let {
         onClose: t
     } = e, n = a.useCallback(() => {
@@ -120,15 +120,15 @@ function C(e) {
         t?.(), (0, u.openUserSettings)(c.X.CONTENT_AND_SOCIAL_CONNECTED_GAMES_TAB)
     }, [t]);
     return (0, i.jsxs)(j, {
-        heading: f.intl.string(f.t.VB6LWY),
-        bodyText: f.intl.string(f.t.KpjsU9),
-        children: [(0, i.jsx)(b, {}), (0, i.jsxs)("div", {
+        heading: x.intl.string(x.t.VB6LWY),
+        bodyText: x.intl.string(x.t.KpjsU9),
+        children: [(0, i.jsx)(y, {}), (0, i.jsxs)("div", {
             className: p.v0,
             children: [(0, i.jsx)(m.FD, {
-                text: f.intl.string(f.t["/Hl24U"]),
+                text: x.intl.string(x.t["/Hl24U"]),
                 onClick: n
             }), (0, i.jsx)(m.FD, {
-                text: f.intl.string(f.t.GTCx0p),
+                text: x.intl.string(x.t.GTCx0p),
                 onClick: l
             })]
         })]

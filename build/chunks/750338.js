@@ -15,8 +15,8 @@ var n = r(627968),
     _ = r(303136),
     p = r(607470),
     f = r(954571),
-    b = r(676279),
-    h = r(23003),
+    h = r(676279),
+    b = r(23003),
     g = r(652215),
     x = r(693591),
     C = r(797487);
@@ -34,21 +34,21 @@ let A = e => {
         isReducedMotion: y,
         onClick: I,
         badgeText: P,
-        badgeVariant: S = "gradient",
-        size: T,
+        badgeVariant: T = "gradient",
+        size: S,
         backgroundVideoUrl: w,
-        previewImageStyle: O = h.Tb.CONTAINED,
+        previewImageStyle: O = b.Tb.CONTAINED,
         actions: M,
         mediaRef: D
-    } = e, U = (0, b.TM)(), L = a.useRef(null), B = a.useRef(0), k = a.useRef(null), G = a.useRef(!1), V = (0, m.A)("(min-width: 1140px)"), F = O === h.Tb.OVERLAY && (T !== h.A0.LARGE || !V), H = T === h.A0.LARGE && V && O === h.Tb.OVERLAY, Y = null != w && V && T === h.A0.LARGE, W = a.useMemo(() => (0, l.debounce)(() => {
+    } = e, U = (0, h.TM)(), L = a.useRef(null), B = a.useRef(0), k = a.useRef(null), G = a.useRef(!1), V = (0, m.A)("(min-width: 1140px)"), F = O === b.Tb.OVERLAY && (S !== b.A0.LARGE || !V), H = S === b.A0.LARGE && V && O === b.Tb.OVERLAY, Y = null != w && V && S === b.A0.LARGE, W = a.useMemo(() => (0, l.debounce)(() => {
         f.default.track(g.HAw.PREMIUM_WHATS_NEW_BOX_CTA_CLICKED, {
             box_type: (0, l.snakeCase)(t)
         })
-    }, 800), [t]), K = () => {
+    }, 800), [t]), z = () => {
         null == L.current || y || (L.current.currentTime = B.current, L.current.play()), y || D?.current?.play()
-    }, z = () => {
+    }, K = () => {
         null == L.current || y || (B.current = L.current.currentTime, L.current.pause()), y || D?.current?.pause()
-    }, Z = T === h.A0.LARGE ? "heading-xxl/bold" : "heading-xl/bold", X = () => {
+    }, Z = S === b.A0.LARGE ? "heading-xxl/bold" : "heading-xl/bold", X = () => {
         let e = null != A && null != I,
             t = null != M && M.length > 0;
         if (!e && !t) return null;
@@ -75,9 +75,9 @@ let A = e => {
             })
         })
     }, $ = () => (0, n.jsxs)("div", {
-        className: s()(C.textBox, C[`${T}`], H && C.overlayTextBox),
+        className: s()(C.textBox, C[`${S}`], H && C.overlayTextBox),
         children: [(0, n.jsxs)("div", {
-            children: [null == P ? null : "gradient" === S ? (0, n.jsx)("div", {
+            children: [null == P ? null : "gradient" === T ? (0, n.jsx)("div", {
                 className: C.badgeContainer,
                 children: (0, n.jsx)("div", {
                     className: C.badge,
@@ -93,7 +93,7 @@ let A = e => {
                     type: {
                         text: P
                     },
-                    variant: S
+                    variant: T
                 })
             }), (0, n.jsx)(u.Heading, {
                 variant: Z,
@@ -108,7 +108,7 @@ let A = e => {
             children: i
         }), (0, n.jsx)(X, {})]
     }), q = () => (0, n.jsx)("div", {
-        className: s()(C.boxArtContainer, C[`${T}`]),
+        className: s()(C.boxArtContainer, C[`${S}`]),
         children: null == v && (0, c.O)(R) && "string" != typeof R ? R : (0, n.jsx)(p.A, {
             playsInline: !0,
             preload: E ? "auto" : "none",
@@ -136,11 +136,11 @@ let A = e => {
         children: (0, n.jsxs)(u.hLv, {
             ref: k,
             id: t,
-            className: s()(C.backgroundColor, C.boxContainer, C[`${T}`], C.gradientBackground, F && C.overlayImageMode, H && C.overlayMode),
-            onMouseEnter: K,
-            onFocus: K,
-            onBlur: z,
-            onMouseLeave: z,
+            className: s()(C.backgroundColor, C.boxContainer, C[`${S}`], C.gradientBackground, F && C.overlayImageMode, H && C.overlayMode),
+            onMouseEnter: z,
+            onFocus: z,
+            onBlur: K,
+            onMouseLeave: K,
             color: "purple",
             children: [Y && (0, n.jsx)("div", {
                 className: C.backgroundVideoContainer,

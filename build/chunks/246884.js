@@ -50,7 +50,7 @@ function T(e) {
         disableTooltip: t,
         lastTargetNode: n
     } = e, r = (0, s.yK)([_.A], () => _.A.getGuildsArray()), T = (0, s.bG)([m.default], () => m.default.getCurrentUser()), S = l.useMemo(() => r.some(e => (0, A.bM)(e, T)), [r, T]), b = (0, a.red)(e => (0, a.fDT)(e, x.fc)), {
-        analyticsLocations: y
+        analyticsLocations: v
     } = (0, o.Ay)();
     return (0, i.jsx)("div", {
         className: I.Uq,
@@ -71,7 +71,7 @@ function T(e) {
                             page: f.ThZ.CREATE_JOIN_GUILD_MODAL,
                             section: f.JJy.GUILD_CAP_UPSELL_MODAL
                         },
-                        analyticsLocations: y
+                        analyticsLocations: v
                     }) : d.A.openCreateGuildModal({
                         location: "Guild List"
                     })

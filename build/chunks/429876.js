@@ -102,8 +102,8 @@ let j = e => {
         categories: d,
         setCategoryRef: p,
         initialCategoryId: L
-    } = e, j = r.useRef(null), k = (0, g.v)(e => e.hasDefaultFilters()), T = (0, _.uM)(), {
-        handlePageChange: O,
+    } = e, j = r.useRef(null), O = (0, g.v)(e => e.hasDefaultFilters()), T = (0, _.uM)(), {
+        handlePageChange: k,
         currentPage: y
     } = (0, E.Z)(c), N = r.useCallback(e => {
         u.default.track(S.HAw.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
@@ -114,8 +114,8 @@ let j = e => {
             page_size: T?.pageSize,
             cta_name: `catalog page ${e}`,
             page_type: "catalog"
-        }), O(e)
-    }, [T, O]), R = r.useRef(null);
+        }), k(e)
+    }, [T, k]), R = r.useRef(null);
     return r.useEffect(() => {
         if (!t || !s) return;
         let e = e => {
@@ -179,7 +179,7 @@ let j = e => {
                         children: (0, n.jsx)(x.A, {})
                     })
                 })]
-            }), k ? (0, A.dF)(o) ? (0, n.jsx)(C.A, {
+            }), O ? (0, A.dF)(o) ? (0, n.jsx)(C.A, {
                 scrollerRef: c,
                 tab: o
             }, o) : (0, n.jsx)(_.R9, {

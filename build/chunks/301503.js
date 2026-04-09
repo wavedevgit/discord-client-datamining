@@ -3,9 +3,9 @@ n.d(t, {
     A: () => S
 });
 var i = n(627968),
-    r = n(64700),
-    a = n(397927),
-    l = n(178629),
+    a = n(64700),
+    l = n(397927),
+    r = n(178629),
     s = n(770472),
     o = n(737823),
     d = (n(153527), n(876622)),
@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(965660),
     _ = n(601193),
     m = n(424956),
-    p = n(19925),
-    g = n(689817),
+    g = n(19925),
+    p = n(689817),
     E = n(38894),
     I = n(299579),
     f = n(324580),
@@ -25,17 +25,17 @@ var i = n(627968),
     N = n(691553);
 
 function S() {
-    let e = r.useRef((0, h.YP)()),
+    let e = a.useRef((0, h.YP)()),
         {
             onScroll: t,
             scrollPosition: n,
             resetScrollPosition: S
-        } = (0, l.G)(),
+        } = (0, r.G)(),
         {
             tabs: x,
             selectedTab: v,
             setSelectedTab: b
-        } = (0, g.f)(),
+        } = (0, p.f)(),
         y = (0, h.Ub)(v),
         O = !f.R0.has(v),
         {
@@ -43,11 +43,11 @@ function S() {
             onSearchTextChange: R,
             onClearSearch: P,
             onSearchSubmit: D,
-            isSearchVisible: M
-        } = (0, p.X)({
+            isSearchVisible: j
+        } = (0, g.X)({
             loadId: e.current
         }),
-        j = _.A.useField("searchBarState"),
+        M = _.A.useField("searchBarState"),
         {
             onTabsAvailableWidthChange: w,
             onCollapsedSearchBarClick: U,
@@ -56,22 +56,22 @@ function S() {
         } = (0, s.p)({
             isSearchBarVisible: O,
             isSearchBarEmpty: "" === L.trim(),
-            searchBarState: j,
+            searchBarState: M,
             setSearchBarState: e => _.A.setState({
                 searchBarState: e
             })
         }),
         V = u.A.useField("fetchedQuery"),
-        B = r.useCallback(e => {
-            b(e), M && P()
-        }, [M, P, b]),
-        H = r.useMemo(() => M ? x.filter(e => {
+        B = a.useCallback(e => {
+            b(e), j && P()
+        }, [j, P, b]),
+        H = a.useMemo(() => j ? x.filter(e => {
             let {
                 id: t
             } = e;
             return !f.R0.has(t)
-        }) : x, [x, M]),
-        F = r.useRef(new A.A(y)),
+        }) : x, [x, j]),
+        F = a.useRef(new A.A(y)),
         {
             onGuildCardSeen: Y,
             onGuildCardClick: W
@@ -79,32 +79,32 @@ function S() {
             guildDiscoveryCardSeenManager: F.current,
             loadId: e.current
         });
-    return r.useEffect(() => {
+    return a.useEffect(() => {
         F.current.flushSeenGuilds(e.current)
-    }, [y]), r.useEffect(() => {
+    }, [y]), a.useEffect(() => {
         S()
-    }, [v, S]), r.useEffect(() => {
-        M || u.A.setState({
+    }, [v, S]), a.useEffect(() => {
+        j || u.A.setState({
             scrollPosition: null
         })
-    }, [M]), (0, i.jsxs)("div", {
+    }, [j]), (0, i.jsxs)("div", {
         className: N.kL,
         children: [(0, i.jsxs)(o.Ay, {
-            variant: M ? o.Z5.RELATIVE : o.Z5.OVERLAY,
-            children: [!M && (0, i.jsx)(o.ns, {
+            variant: j ? o.Z5.RELATIVE : o.Z5.OVERLAY,
+            children: [!j && (0, i.jsx)(o.ns, {
                 scrollPosition: n
-            }), M ? (0, i.jsx)(o.XQ, {
-                icon: a.Zge,
+            }), j ? (0, i.jsx)(o.XQ, {
+                icon: l.Zge,
                 onClick: P
             }) : (0, i.jsx)(o.T4, {
-                icon: a.RR9
-            }), !M && (0, i.jsx)(d.A, {
+                icon: l.RR9
+            }), !j && (0, i.jsx)(d.A, {
                 className: k,
                 tabs: H,
                 selectedTab: v,
                 onTabSelect: B,
                 onAvailableWidthChange: w
-            }), M && (0, i.jsx)(a.Heading, {
+            }), j && (0, i.jsx)(l.Heading, {
                 variant: "heading-lg/semibold",
                 color: "text-strong",
                 className: N.ov,
@@ -118,10 +118,10 @@ function S() {
                 onClear: P,
                 onSubmit: D,
                 onCollapsedClick: U,
-                state: M ? C.GlobalDiscoverySearchBarState.DEFAULT : j,
+                state: j ? C.GlobalDiscoverySearchBarState.DEFAULT : M,
                 onBlur: G
             })]
-        }), M ? (0, i.jsx)(I.A, {
+        }), j ? (0, i.jsx)(I.A, {
             loadId: e.current,
             onGuildCardClick: W,
             onGuildCardSeen: Y

@@ -3,9 +3,9 @@ n.d(t, {
     A: () => _
 });
 var i = n(626584),
-    r = n(260509),
-    a = n(961350),
-    l = n(696451),
+    a = n(260509),
+    l = n(961350),
+    r = n(696451),
     s = n(317525),
     o = n(71393),
     d = n(860689),
@@ -41,8 +41,8 @@ let h = new i.A("Guilds"),
                 let e = o.A.getGuild(n.id);
                 if (null != e) {
                     let i = s.A.getUnsafeMutableRoles(n.id),
-                        r = "partial" === n.data_mode ? u.ly(n.id, i, n.partial_updates.roles, n.partial_updates.deleted_role_ids) : c.hd(n.id, n.roles);
-                    this.put(d.Me(d.kI(n, e), c.cH(r), l.Ay.getSelfMember(n.id)), t)
+                        a = "partial" === n.data_mode ? u.ly(n.id, i, n.partial_updates.roles, n.partial_updates.deleted_role_ids) : c.hd(n.id, n.roles);
+                    this.put(d.Me(d.kI(n, e), c.cH(a), r.Ay.getSelfMember(n.id)), t)
                 }
             }
         }
@@ -56,7 +56,7 @@ let h = new i.A("Guilds"),
         handleGuildUpdate(e, t) {
             let n = o.A.getGuild(e.guild.id),
                 i = d.Y1(e.guild, n);
-            this.put(d.Me(i, c.cH(c.hd(e.guild.id, e.guild.roles)), l.Ay.getSelfMember(e.guild.id)), t)
+            this.put(d.Me(i, c.cH(c.hd(e.guild.id, e.guild.roles)), r.Ay.getSelfMember(e.guild.id)), t)
         }
         handleGuildDelete(e, t) {
             this.delete(e.guild.id, t)
@@ -67,7 +67,7 @@ let h = new i.A("Guilds"),
             null != n && this.put(d.Me(n, c.cH({
                 ...i,
                 [e.role.id]: c.Wj(e.guildId, e.role)
-            }), l.Ay.getSelfMember(e.guildId)), t)
+            }), r.Ay.getSelfMember(e.guildId)), t)
         }
         handleGuildRoleDelete(e, t) {
             let n = o.A.getGuild(e.guildId);
@@ -76,21 +76,21 @@ let h = new i.A("Guilds"),
                     ...s.A.getUnsafeMutableRoles(e.guildId)
                 };
                 delete i[e.roleId];
-                let r = l.Ay.getSelfMember(e.guildId);
-                null != r && (r = {
-                    ...r,
-                    roles: r.roles.filter(t => t !== e.roleId)
-                }), this.put(d.Me(n, c.cH(i), r), t)
+                let a = r.Ay.getSelfMember(e.guildId);
+                null != a && (a = {
+                    ...a,
+                    roles: a.roles.filter(t => t !== e.roleId)
+                }), this.put(d.Me(n, c.cH(i), a), t)
             }
         }
         handleGuildMemberAdd(e, t) {
-            if (null != e.joinedAt && e.user.id === a.default.getId()) {
+            if (null != e.joinedAt && e.user.id === l.default.getId()) {
                 let n = o.A.getGuild(e.guildId);
-                null != n && this.put(d.Me((0, r.kn)(n, e.joinedAt), c.cH(s.A.getUnsafeMutableRoles(n.id)), l.Ay.getSelfMember(n.id)), t)
+                null != n && this.put(d.Me((0, a.kn)(n, e.joinedAt), c.cH(s.A.getUnsafeMutableRoles(n.id)), r.Ay.getSelfMember(n.id)), t)
             }
         }
         handleGuildMemberUpdate(e, t) {
-            if (e.user.id !== a.default.getId()) return;
+            if (e.user.id !== l.default.getId()) return;
             let n = o.A.getGuild(e.guildId);
             null != n && this.put(d.Me(n, c.cH(s.A.getUnsafeMutableRoles(n.id)), {
                 roles: e.roles,
@@ -99,14 +99,14 @@ let h = new i.A("Guilds"),
         }
         resetInMemoryState() {}
         putOne(e, t) {
-            let n = e.members.find(e => e.user.id === a.default.getId()),
+            let n = e.members.find(e => e.user.id === l.default.getId()),
                 i = o.A.getGuild(e.id),
-                r = c.j_(e.id, e.roles, s.A.getUnsafeMutableRoles(e.id)),
-                l = d.Me(d.Wj(e, i), c.cH(r), null != n ? {
+                a = c.j_(e.id, e.roles, s.A.getUnsafeMutableRoles(e.id)),
+                r = d.Me(d.Wj(e, i), c.cH(a), null != n ? {
                     userId: n.user.id,
                     roles: n.roles
                 } : null);
-            this.put(l, t)
+            this.put(r, t)
         }
         put(e, t) {
             A.A.guildsTransaction(t).put(e)

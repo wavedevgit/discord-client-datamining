@@ -26,9 +26,9 @@ var i = n(627968),
     T = n(933057),
     S = n(747926),
     b = n(652215),
-    y = n(985018);
+    v = n(985018);
 
-function v(e) {
+function y(e) {
     let {
         channel: t
     } = e, [n, a] = l.useState(!1), r = l.useRef(null);
@@ -36,7 +36,7 @@ function v(e) {
     function o() {
         a(e => !e)
     }
-    let d = y.intl.string(y.t["UKOtz+"]);
+    let d = v.intl.string(v.t["UKOtz+"]);
     return (0, i.jsx)(s.YNO, {
         targetElementRef: r,
         shouldShow: n,
@@ -73,9 +73,9 @@ function j(e) {
         channel: t,
         closePopout: n,
         onSelect: l
-    } = e, x = (0, d.A)(t, "Sidebar Overflow"), E = (0, u.A)(t), N = (0, m.A)(t), T = (0, p.A)(t), S = (0, a.A)(t), v = (0, c.A)(t), j = (0, _.A)(t.id), R = (0, A.A)(t), O = (0, o.A)(t), L = (0, r.A)(t), M = (0, f.A)({
+    } = e, x = (0, d.A)(t, "Sidebar Overflow"), E = (0, u.A)(t), N = (0, m.A)(t), T = (0, p.A)(t), S = (0, a.A)(t), y = (0, c.A)(t), j = (0, _.A)(t.id), R = (0, A.A)(t), O = (0, o.A)(t), L = (0, r.A)(t), M = (0, f.A)({
         id: t.id,
-        label: y.intl.string(y.t.DQ797g)
+        label: v.intl.string(v.t.DQ797g)
     }), D = (0, g.A)(t), U = (0, h.A)(t);
 
     function G() {
@@ -85,12 +85,12 @@ function j(e) {
         "data-menu-migrated": !0,
         navId: "thread-context",
         onClose: n,
-        "aria-label": y.intl.string(y.t["1NBjqb"]),
+        "aria-label": v.intl.string(v.t["1NBjqb"]),
         onSelect: l,
         children: [(0, i.jsxs)(s.rXV, {
             children: [x, (0, i.jsx)(s.Drp, {
                 id: "open",
-                label: y.intl.string(y.t.IxVmZi),
+                label: v.intl.string(v.t.IxVmZi),
                 action: G
             })]
         }), (0, i.jsxs)(s.rXV, {
@@ -100,7 +100,7 @@ function j(e) {
         }), (0, i.jsxs)(s.rXV, {
             children: [(0, i.jsx)(s.Drp, {
                 id: "search",
-                label: y.intl.string(y.t["5h0QOP"]),
+                label: v.intl.string(v.t["5h0QOP"]),
                 icon: s.tfB,
                 trailingIndicator: {
                     type: "icon",
@@ -115,7 +115,7 @@ function j(e) {
                 }
             }), (0, i.jsx)(s.Drp, {
                 id: "pins",
-                label: y.intl.string(y.t["2BSH7n"]),
+                label: v.intl.string(v.t["2BSH7n"]),
                 icon: s.tfB,
                 trailingIndicator: {
                     type: "icon",
@@ -126,7 +126,7 @@ function j(e) {
                 }
             })]
         }), (0, i.jsxs)(s.rXV, {
-            children: [D, S, v, O]
+            children: [D, S, y, O]
         }), (0, i.jsxs)(s.rXV, {
             children: [L, M]
         })]
@@ -143,11 +143,11 @@ function R(e) {
             channel: t
         }), t.isModeratorReportChannel() ? (0, i.jsx)(N.A, {
             channel: t
-        }) : null, (0, i.jsx)(v, {
+        }) : null, (0, i.jsx)(y, {
             channel: t
         }), (0, i.jsx)(E.Ay.Icon, {
             icon: s.PGe,
-            tooltip: y.intl.string(y.t.cpT0Cq),
+            tooltip: v.intl.string(v.t.cpT0Cq),
             onClick: () => (0, S.xu)((0, x.j)(t), n ?? t.parent_id)
         })]
     })

@@ -25,8 +25,8 @@ var i = n(627968),
     N = n(860689),
     v = n(21599),
     T = n(949155),
-    j = n(663572),
-    C = n(439680),
+    C = n(663572),
+    j = n(439680),
     S = n(131929),
     y = n(66027),
     b = n(172799),
@@ -155,12 +155,12 @@ function G(e) {
         }, [d]), null == n) t = (0, i.jsx)(w, {});
     else switch (r) {
         case 1:
-            t = d ? (0, i.jsx)(C.A, {
+            t = d ? (0, i.jsx)(j.A, {
                 invite: n,
                 guild: c,
                 profile: o,
                 onAcceptInvite: e.onAcceptInvite
-            }) : (0, i.jsx)(j.A, {
+            }) : (0, i.jsx)(C.A, {
                 ...e,
                 invite: n
             });

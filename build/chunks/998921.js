@@ -3,9 +3,9 @@ n.d(t, {
     A: () => T
 });
 var i = n(264572),
-    r = n(143236),
-    a = n(735438),
-    l = n.n(a),
+    a = n(143236),
+    l = n(735438),
+    r = n.n(l),
     s = n(626584),
     o = n(837921),
     d = n(84002),
@@ -22,11 +22,11 @@ let h = o.Ay.requireModule("discord_rpc").RPCIPC,
         PONG: 4
     };
 
-function p(e, t) {
+function g(e, t) {
     null != e.setHandshakeComplete ? e.setHandshakeComplete(t) : e._didHandshake = t
 }
 
-function g(e) {
+function p(e) {
     return null != e.getHandshakeComplete ? e.getHandshakeComplete() : e._didHandshake
 }
 
@@ -44,7 +44,7 @@ function E(e) {
                 })), e.destroy()
             }
         });
-        let r = () => {
+        let a = () => {
                 try {
                     e.end(I(m.CLOSE, {
                         code: A.YI$.CLOSE_NORMAL,
@@ -52,24 +52,24 @@ function E(e) {
                     })), e.destroy()
                 } catch (e) {}
             },
-            a = Promise.race([new Promise(t => e.on("error", () => t())), new Promise((t, n) => {
+            l = Promise.race([new Promise(t => e.on("error", () => t())), new Promise((t, n) => {
                 e.on("pong", () => n(Error("socket responded with pong")))
             }), new Promise((e, t) => {
                 setTimeout(() => t(Error("socket alive timeout")), 1e3)
             })]).then(() => {
-                r()
+                a()
             }, e => {
-                throw r(), e
+                throw a(), e
             });
-        return e.write(I(m.PING, l().uniqueId())), a.then(t, n)
+        return e.write(I(m.PING, r().uniqueId())), l.then(t, n)
     })
 }
 
 function I(e, t) {
     t = JSON.stringify(t);
     let n = i.Buffer.byteLength(t),
-        r = i.Buffer.alloc(8 + n);
-    return r.writeInt32LE(e, 0), r.writeInt32LE(n, 4), r.write(t, 8, n), r.buffer.slice(r.byteOffset, r.byteOffset + r.byteLength)
+        a = i.Buffer.alloc(8 + n);
+    return a.writeInt32LE(e, 0), a.writeInt32LE(n, 4), a.write(t, 8, n), a.buffer.slice(a.byteOffset, a.byteOffset + a.byteLength)
 }
 class f extends c.A {
     messageBuffer = i.Buffer.alloc(0);
@@ -78,11 +78,11 @@ class f extends c.A {
     socket;
     clientId = null;
     constructor(e, t) {
-        super("ipc", A.dL4, t), this.socket = e, p(e, !1)
+        super("ipc", A.dL4, t), this.socket = e, g(e, !1)
     }
     copyBuffer(e, t, n) {
-        let r = i.Buffer.allocUnsafe(n - t);
-        return e.copy(r, 0, t, n), r
+        let a = i.Buffer.allocUnsafe(n - t);
+        return e.copy(a, 0, t, n), a
     }
     send(e) {
         _.info(`Socket Emit: ${this.id}`, (0, d.A)(e)), this.socket.write(I(m.FRAME, e))
@@ -127,7 +127,7 @@ class f extends c.A {
                 this.handleHandshake(e, n), e.emit("handshake", n);
                 break;
             case m.FRAME:
-                if (!g(e)) throw Error("did not handshake");
+                if (!p(e)) throw Error("did not handshake");
                 e.emit("request", n);
                 break;
             case m.CLOSE:
@@ -138,11 +138,11 @@ class f extends c.A {
         }
     }
     handleHandshake(e, t) {
-        if (g(e)) throw Error("already did handshake");
-        this.clientId = t.client_id, this.checkRpcVersion(+t.v), p(e, !0)
+        if (p(e)) throw Error("already did handshake");
+        this.clientId = t.client_id, this.checkRpcVersion(+t.v), g(e, !0)
     }
 }
-class C extends r.EventEmitter {
+class C extends a.EventEmitter {
     activeConnections = 0;
     MAX_CONNECTIONS = 100;
     constructor() {
@@ -184,9 +184,9 @@ class C extends r.EventEmitter {
         e.on("readable", () => {
             let n = e.read();
             null != n && t.read(i.Buffer.from(n))
-        }), e.on("data", r => {
+        }), e.on("data", a => {
             try {
-                t.read(i.Buffer.from(r))
+                t.read(i.Buffer.from(a))
             } catch (t) {
                 clearTimeout(n), _.error(`Socket Error: ${t.message}`), e.end(I(m.CLOSE, {
                     code: A.YI$.CLOSE_UNSUPPORTED,

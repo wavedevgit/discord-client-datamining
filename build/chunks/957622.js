@@ -64,7 +64,7 @@ let E = e => {
                     error_message: e
                 }), N("error")
             }
-        }, []), j = s.useCallback(e => {
+        }, []), C = s.useCallback(e => {
             let t = u.default.getFingerprint() ?? u.default.getId(),
                 n = `discord://login/one-time?token=${encodeURIComponent(e)}`;
             p.A.launch(n, e => {
@@ -75,7 +75,7 @@ let E = e => {
                     fingerprint: t
                 }), N("app_launched")) : N("app_launch_not_supported")
             })
-        }, []), C = s.useCallback(e => {
+        }, []), j = s.useCallback(e => {
             let t = u.default.getFingerprint() ?? u.default.getId(),
                 i = u.default.getInstallationForTracking();
             Promise.resolve().then(n.bind(n, 129014)).then(n => {
@@ -95,12 +95,12 @@ let E = e => {
                         destination: "one_time_login_modal",
                         deep_link_provider: "rpc",
                         fingerprint: t
-                    }), N("app_launched")) : j(e)
+                    }), N("app_launched")) : C(e)
                 }).catch(() => {
-                    j(e)
+                    C(e)
                 }).then(() => s.disconnect())
             })
-        }, [j]);
+        }, [C]);
         if (s.useEffect(() => {
                 let e = null != x && "string" == typeof x,
                     t = l.Fr ? "mobile" : l.v1 ? "tablet" : (0, _.isDesktop)() ? "desktop_app" : "web";
@@ -116,8 +116,8 @@ let E = e => {
                         platform: e
                     });
                     return
-                }(0, _.isDesktop)() ? T(x): v.current || (v.current = !0, N("rpc_attempting"), C(x))
-            }, [x, a, T, C]), l.Fr || l.v1) {
+                }(0, _.isDesktop)() ? T(x): v.current || (v.current = !0, N("rpc_attempting"), j(x))
+            }, [x, a, T, j]), l.Fr || l.v1) {
             let e = null == x || "string" != typeof x ? "missing_token" : "invalid_token";
             return (0, i.jsx)(g.W, {
                 token: x,

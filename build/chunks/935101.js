@@ -1,44 +1,44 @@
 /** chunk id: 935101 params = (module,exports,require) **/
 n.d(t, {
-    A: () => g
+    A: () => m
 });
-var r = n(64700),
-    a = n(311907),
-    i = n(205693),
-    l = n(451988),
-    o = n(430452),
-    s = n(383501),
-    u = n(485296),
-    _ = n(927813),
+var a = n(64700),
+    r = n(311907),
+    l = n(205693),
+    i = n(451988),
+    s = n(430452),
+    o = n(383501),
+    _ = n(485296),
+    u = n(927813),
     c = n(499156),
     d = n(731854);
-let p = 3 * _.A.Millis.SECOND,
-    A = +_.A.Millis.DAY;
+let p = 3 * u.A.Millis.SECOND,
+    A = +u.A.Millis.DAY;
 
-function g() {
+function m() {
     let {
         showPTTSpeakingIndicator: e
     } = c.A.useConfig({
         location: "useSpeakingWhilePTT"
-    }), [t, n] = r.useState(!1), _ = (0, a.bG)([o.Ay], () => o.Ay.getMode() === d.TB.PUSH_TO_TALK), g = (0, a.bG)([s.A], () => s.A.getRTCConnectionId()), f = (0, a.bG)([o.Ay], () => {
-        let e = o.Ay.getModeOptions().updatedAt;
+    }), [t, n] = a.useState(!1), u = (0, r.bG)([s.Ay], () => s.Ay.getMode() === d.TB.PUSH_TO_TALK), m = (0, r.bG)([o.A], () => o.A.getRTCConnectionId()), f = (0, r.bG)([s.Ay], () => {
+        let e = s.Ay.getModeOptions().updatedAt;
         return null != e && Date.now() - e < A
-    }), m = r.useRef(new l.Ep);
-    return r.useEffect(() => {
+    }), b = a.useRef(new i.Ep);
+    return a.useEffect(() => {
         n(!1)
-    }, [g]), r.useEffect(() => {
+    }, [m]), a.useEffect(() => {
         let t = 0,
-            r = m.current;
+            a = b.current;
 
-        function a(e, a) {
-            let i = (a & d.ME.VOICE) === d.ME.VOICE,
-                l = u.A.isCurrentUserPTTActive();
-            i && !l ? ++t >= 6 && (n(!0), r.start(p, () => {
+        function r(e, r) {
+            let l = (r & d.ME.VOICE) === d.ME.VOICE,
+                i = _.A.isCurrentUserPTTActive();
+            l && !i ? ++t >= 6 && (n(!0), a.start(p, () => {
                 n(!1)
             })) : t = 0
         }
-        return f && e && _ && null != g && o.Ay.getMediaEngine().on(i.bg.VoiceActivity, a), () => {
-            o.Ay.getMediaEngine().removeListener(i.bg.VoiceActivity, a), r.stop()
+        return f && e && u && null != m && s.Ay.getMediaEngine().on(l.bg.VoiceActivity, r), () => {
+            s.Ay.getMediaEngine().removeListener(l.bg.VoiceActivity, r), a.stop()
         }
-    }, [e, _, f, g]), t
+    }, [e, u, f, m]), t
 }

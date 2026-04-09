@@ -1,72 +1,72 @@
 /** chunk id: 357541 params = (module,exports,require) **/
 n.d(t, {
-    A: () => f
+    A: () => x
 });
 var i = n(627968),
-    a = n(64700),
-    l = n(990078),
+    l = n(64700),
+    a = n(990078),
     s = n(397927),
     r = n(183555),
     o = n(633075),
-    d = n(735321),
-    c = n(606758),
+    c = n(735321),
+    d = n(606758),
     u = n(605694),
-    g = n(518477),
-    m = n(49999),
-    x = n(985018);
+    m = n(518477),
+    g = n(49999),
+    f = n(985018);
 
-function f(e) {
+function x(e) {
     let {
         user: t,
         application: n,
-        onDismiss: f
+        onDismiss: x
     } = e, {
         trackUserProfileEditAction: p
-    } = (0, r.NJ)(), h = a.useMemo(() => new o.R({
+    } = (0, r.NJ)(), _ = l.useMemo(() => new o.R({
         applicationId: n.id
-    }), [n.id]), _ = a.useCallback(() => {
-        null != h && ((0, d.Y5)(h), p({
+    }), [n.id]), I = l.useCallback(() => {
+        null != _ && ((0, c.Y5)(_), p({
             action: "WIDGET_ADDED",
-            ...h.getProfileEditAnalyticsOptions()
-        }), (0, c.XA)(g.jM.WIDGET_ADDED))
-    }, [h, p]);
+            ..._.getProfileEditAnalyticsOptions()
+        }), (0, d.XA)(m.jM.WIDGET_ADDED))
+    }, [_, p]);
     return (0, i.jsx)(u.A, {
         user: t,
-        widget: h,
+        widget: _,
         subtle: !0,
         cta: (0, i.jsx)(u.A.Cta, {
             showSuggestedForYou: !0,
-            heading: x.intl.format(x.t.OIzLCy, {
+            heading: f.intl.format(f.t.OIzLCy, {
                 applicationName: n.name
             }),
-            content: x.intl.format(x.t.BQySru, {
+            content: f.intl.format(f.t.BQySru, {
                 applicationName: n.name
             }),
             buttons: (0, i.jsxs)(i.Fragment, {
-                children: [(0, i.jsx)(l.m, {
-                    text: x.intl.string(x.t.WAI6xu),
+                children: [(0, i.jsx)(a.m, {
+                    text: f.intl.string(f.t.WAI6xu),
                     ariaHidden: !0,
                     children: (0, i.jsx)(s.SCx, {
                         variant: "secondary",
                         size: "sm",
                         icon: s.PGe,
-                        "aria-label": x.intl.string(x.t.WAI6xu),
+                        "aria-label": f.intl.string(f.t.WAI6xu),
                         onClick: () => {
-                            f(m.i.USER_DISMISS)
+                            x(g.i.USER_DISMISS)
                         }
                     })
-                }), (0, i.jsx)(l.m, {
-                    text: x.intl.string(x.t["lBG2s/"]),
+                }), (0, i.jsx)(a.m, {
+                    text: f.intl.string(f.t["lBG2s/"]),
                     ariaHidden: !0,
                     children: (0, i.jsx)(s.SCx, {
                         variant: "primary",
                         size: "sm",
                         icon: s.Uzd,
-                        "aria-label": x.intl.formatToPlainString(x.t.KfGahB, {
+                        "aria-label": f.intl.formatToPlainString(f.t.KfGahB, {
                             applicationName: n.name
                         }),
                         onClick: () => {
-                            f(m.i.TAKE_ACTION), _()
+                            x(g.i.TAKE_ACTION), I()
                         }
                     })
                 })]

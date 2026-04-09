@@ -26,8 +26,8 @@ var i = n(627968),
     T = n(491182),
     S = n(860227),
     b = n(756369),
-    y = n(538355),
-    v = n(522871),
+    v = n(538355),
+    y = n(522871),
     j = n(715628),
     R = n(752636),
     O = n(675722),
@@ -66,7 +66,7 @@ let w = l.memo(function e(t) {
             content: ee,
             hasSpoilerEmbeds: et,
             hasBailedAst: en
-        } = (0, y.A)(s, {
+        } = (0, v.A)(s, {
             hideSimpleEmbedContent: q && X,
             allowList: J,
             allowHeading: J,
@@ -77,7 +77,7 @@ let w = l.memo(function e(t) {
         el = (0, r.bG)([m.A], () => s.hasFlag(U.pr7.HAS_THREAD) && m.A.getChannel(g.default.castMessageIdAsChannelId(s.id))),
         es = s.type === U.lAJ.THREAD_STARTER_MESSAGE && K.state === A.a.LOADED && null != Y,
         ea = !es && void 0 === n,
-        er = (0, v.A)({
+        er = (0, y.A)({
             message: s,
             channel: l,
             enabled: ea

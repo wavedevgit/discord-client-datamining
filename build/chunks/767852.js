@@ -3,9 +3,9 @@ n.d(t, {
     A: () => U
 });
 var i = n(627968),
-    r = n(64700),
-    a = n(503698),
-    l = n.n(a),
+    a = n(64700),
+    l = n(503698),
+    r = n.n(l),
     s = n(873263),
     o = n(311907),
     d = n(451988),
@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(73153),
     _ = n(442433),
     m = n(194894),
-    p = n(979604),
-    g = n(235986),
+    g = n(979604),
+    p = n(235986),
     E = n(596719),
     I = n(769015),
     f = n(290987),
@@ -40,26 +40,26 @@ let L = (0, x.xI)(u.A.GAME_LIST_ROW_MIN_HEIGHT),
         let {
             flag: t,
             icon: n,
-            item: r,
-            tooltip: a
-        } = e, s = r.libraryApplication.hasFlag(t);
+            item: a,
+            tooltip: l
+        } = e, s = a.libraryApplication.hasFlag(t);
         return (0, i.jsx)(c.m, {
-            text: a,
+            text: l,
             children: (0, i.jsx)(n, {
-                className: l()(O.up, {
+                className: r()(O.up, {
                     [O.R]: !s
                 })
             })
         })
     },
-    M = [{
+    j = [{
         key: b.DpB.NAME,
         renderHeader: () => y.intl.string(y.t.dBfWfc),
         sort: !0,
         cellClassName: O.UQ,
         bodyCellClassName: O.SJ,
-        render: e => (0, i.jsxs)(g.A, {
-            align: g.A.Align.CENTER,
+        render: e => (0, i.jsxs)(p.A, {
+            align: p.A.Align.CENTER,
             children: [(0, i.jsx)(I.A, {
                 game: e.application,
                 size: I.M.SMALL,
@@ -87,8 +87,8 @@ let L = (0, x.xI)(u.A.GAME_LIST_ROW_MIN_HEIGHT),
         bodyCellClassName: O.iV,
         render(e) {
             let t = e.libraryApplication.getDistributor();
-            return (0, i.jsx)(g.A, {
-                align: g.A.Align.CENTER,
+            return (0, i.jsx)(p.A, {
+                align: p.A.Align.CENTER,
                 children: null != t ? b.gG4[t] : y.intl.string(y.t["F+l3Jt"])
             })
         }
@@ -103,9 +103,9 @@ let L = (0, x.xI)(u.A.GAME_LIST_ROW_MIN_HEIGHT),
             return t = e.isRunning ? y.intl.string(y.t.Md326p) : e.isNew ? y.intl.string(y.t["+F0Tho"]) : 0 !== e.lastPlayed ? (0, i.jsx)(f.Ay, {
                 end: e.lastPlayed,
                 location: f.Ay.Locations.GAME_LIBRARY_LAST_PLAYED
-            }) : y.intl.string(y.t.EoWLru), (0, i.jsx)(g.A, {
-                align: g.A.Align.CENTER,
-                className: l()({
+            }) : y.intl.string(y.t.EoWLru), (0, i.jsx)(p.A, {
+                align: p.A.Align.CENTER,
+                className: r()({
                     [O.g3]: e.isNew
                 }),
                 children: t
@@ -116,10 +116,10 @@ let L = (0, x.xI)(u.A.GAME_LIST_ROW_MIN_HEIGHT),
         renderHeader: () => null,
         cellClassName: O.AT,
         render(e, t, n) {
-            var a, s;
+            var l, s;
             if (null == t) throw Error("No cell props defined.");
             let o = e.key === t.activeRowKey;
-            return (0, i.jsxs)(r.Fragment, {
+            return (0, i.jsxs)(a.Fragment, {
                 children: [(0, i.jsxs)("div", {
                     className: O.nU,
                     children: [(0, i.jsx)(D, {
@@ -133,13 +133,13 @@ let L = (0, x.xI)(u.A.GAME_LIST_ROW_MIN_HEIGHT),
                         icon: A.nkR,
                         tooltip: y.intl.string(y.t.Az9eqn)
                     }), (0, i.jsx)(v.A, {
-                        className: l()(O.up, {
+                        className: r()(O.up, {
                             [O.R]: !e.supportsCloudSync
                         }),
                         libraryApplication: e.libraryApplication
                     })]
-                }), (0, S.XZ)(e.libraryApplication) ? (0, i.jsx)(p.A, {
-                    analyticsListSort: (a = t.sortKey, s = t.sortDirection, `${P[a]} ${s===b.tSW.ASCENDING?"ASC":"DESC"}`),
+                }), (0, S.XZ)(e.libraryApplication) ? (0, i.jsx)(g.A, {
+                    analyticsListSort: (l = t.sortKey, s = t.sortDirection, `${P[l]} ${s===b.tSW.ASCENDING?"ASC":"DESC"}`),
                     analyticsListIndex: n,
                     source: b.ThZ.APPLICATION_LIBRARY,
                     libraryApplication: e.libraryApplication,
@@ -154,19 +154,19 @@ let L = (0, x.xI)(u.A.GAME_LIST_ROW_MIN_HEIGHT),
             })
         }
     }],
-    j = e => {
+    M = e => {
         let {
             item: t,
             activeRowKey: n,
-            highlightedApplicationKey: r,
-            onMouseEnter: a,
+            highlightedApplicationKey: a,
+            onMouseEnter: l,
             onMouseLeave: s,
             onContextMenu: o,
             setRef: d,
             ...c
-        } = e, u = t.key === n, A = t.key === r;
+        } = e, u = t.key === n, A = t.key === a;
         return (0, i.jsx)("div", {
-            className: l()({
+            className: r()({
                 [O.eO]: u && !A,
                 [O.HM]: A,
                 [O.Ob]: !u && !A,
@@ -175,7 +175,7 @@ let L = (0, x.xI)(u.A.GAME_LIST_ROW_MIN_HEIGHT),
             ref: e => {
                 d(e, t.key)
             },
-            onMouseEnter: () => a(t),
+            onMouseEnter: () => l(t),
             onMouseLeave: s,
             onContextMenu: e => o(e, t),
             children: (0, i.jsx)("div", {
@@ -183,7 +183,7 @@ let L = (0, x.xI)(u.A.GAME_LIST_ROW_MIN_HEIGHT),
             })
         })
     };
-class w extends r.PureComponent {
+class w extends a.PureComponent {
     static defaultProps = {
         stickyHeader: !1
     };
@@ -291,7 +291,7 @@ class w extends r.PureComponent {
     handleApplicationContextMenu = (e, t) => {
         this.setActiveRowKey(t);
         let {
-            analyticsContext: r
+            analyticsContext: a
         } = this.props;
         (0, _.L3)(e, async () => {
             let {
@@ -301,7 +301,7 @@ class w extends r.PureComponent {
                 ...n,
                 applicationId: t.libraryApplication.id,
                 branchId: t.libraryApplication.branchId,
-                analyticsContext: r
+                analyticsContext: a
             })
         }, {
             onClose: this.clearActiveRowKey
@@ -321,10 +321,10 @@ class w extends r.PureComponent {
             className: O.mv,
             children: [(0, i.jsx)("div", {
                 className: O.Zd
-            }), (0, i.jsx)(g.A, {
+            }), (0, i.jsx)(p.A, {
                 grow: 0,
                 shrink: 0,
-                direction: g.A.Direction.VERTICAL,
+                direction: p.A.Direction.VERTICAL,
                 children: (0, i.jsxs)("div", {
                     className: O.q6,
                     children: [(0, i.jsx)("div", {
@@ -343,29 +343,29 @@ class w extends r.PureComponent {
             sortKey: e,
             sortDirection: t,
             applicationViewItems: n,
-            activeRowKey: a,
-            stickyHeader: l
+            activeRowKey: l,
+            stickyHeader: r
         } = this.props, {
             overflowMenuRowKey: s,
             highlightedApplicationKey: o
         } = this.state;
-        return (0, i.jsxs)(r.Fragment, {
+        return (0, i.jsxs)(a.Fragment, {
             children: [n.length > 0 ? (0, i.jsx)(E.A, {
-                columns: M,
+                columns: j,
                 data: n,
                 sortData: !1,
-                rowComponent: j,
+                rowComponent: M,
                 className: O.tp,
-                headerClassName: l ? O.ln : O.wx,
+                headerClassName: r ? O.ln : O.wx,
                 headerCellClassName: O.e4,
                 sortedHeaderCellClassName: O.dm,
                 bodyCellClassName: O.hC,
                 rowClassName: O.G9,
                 sortKey: e,
                 sortDirection: t,
-                stickyHeader: l,
+                stickyHeader: r,
                 rowProps: {
-                    activeRowKey: s ?? a,
+                    activeRowKey: s ?? l,
                     highlightedApplicationKey: o,
                     onMouseEnter: this.handleRowMouseEnter,
                     onMouseLeave: this.handleRowMouseLeave,
@@ -373,7 +373,7 @@ class w extends r.PureComponent {
                     setRef: this.setRowRef
                 },
                 cellProps: {
-                    activeRowKey: s ?? a,
+                    activeRowKey: s ?? l,
                     onContextMenu: this.handleApplicationContextMenu,
                     setActiveRowKey: this.setActiveRowKey,
                     clearActiveRowKey: this.clearActiveRowKey,
@@ -387,11 +387,11 @@ class w extends r.PureComponent {
 }
 
 function U(e) {
-    let t = r.useContext(N.AnalyticsContext),
+    let t = a.useContext(N.AnalyticsContext),
         n = (0, s.zy)(),
         {
-            applicationViewItems: a,
-            filterQuery: l,
+            applicationViewItems: l,
+            filterQuery: r,
             fetched: d
         } = (0, o.cf)([C.A], () => ({
             applicationViewItems: C.A.sortedFilteredLibraryApplicationViewItems,
@@ -413,8 +413,8 @@ function U(e) {
         ...e,
         analyticsContext: t,
         location: n,
-        applicationViewItems: a,
-        filterQuery: l,
+        applicationViewItems: l,
+        filterQuery: r,
         fetched: d,
         sortKey: c,
         sortDirection: u,

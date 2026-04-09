@@ -18,7 +18,7 @@ function g(e) {
         userId: n,
         className: l,
         menuItems: g
-    } = e, m = a.useRef(null), x = () => {
+    } = e, m = a.useRef(null), h = () => {
         (0, d.GJ)(n, t)
     };
     return (0, i.jsx)(r.YNO, {
@@ -42,7 +42,7 @@ function g(e) {
                     children: [g, (0, i.jsx)(r.Drp, {
                         id: "flag-widget",
                         label: c.intl.string(c.t.D4GvHE),
-                        action: x,
+                        action: h,
                         color: "danger",
                         icon: r.iFK,
                         leadingAccessory: {

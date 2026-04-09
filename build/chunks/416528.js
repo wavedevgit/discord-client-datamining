@@ -26,8 +26,8 @@ var i = n(627968),
     T = n(313961),
     S = n(546871),
     b = n(195007),
-    y = n(806931),
-    v = n(985018),
+    v = n(806931),
+    y = n(985018),
     j = n(419572);
 
 function R(e) {
@@ -36,13 +36,13 @@ function R(e) {
         guildId: n
     } = e, l = (0, r.yK)([N.A, T.A], () => {
         let e = Date.now();
-        return a()(N.A.getSpeakers()).map(e => T.A.getParticipant(t, e)).filter(e => null != e && e.type === y.lp.USER && e.speaking && !(0, p.Ay)(e)).sortBy(t => -N.A.getSpeakingDuration(t.user.id, e)).slice(0, 3).value()
+        return a()(N.A.getSpeakers()).map(e => T.A.getParticipant(t, e)).filter(e => null != e && e.type === v.lp.USER && e.speaking && !(0, p.Ay)(e)).sortBy(t => -N.A.getSpeakingDuration(t.user.id, e)).slice(0, 3).value()
     });
     return 0 === l.length ? null : (0, i.jsx)("div", {
         className: j.$U,
         children: l.map(e => (0, i.jsx)(o.m, {
             position: "bottom",
-            text: v.intl.formatToPlainString(v.t.JjdizN, {
+            text: y.intl.formatToPlainString(y.t.JjdizN, {
                 username: e.user.username
             }),
             children: (0, i.jsx)(C.Ay, {
@@ -65,37 +65,37 @@ function O(e) {
         analyticsLocations: p
     } = (0, u.Ay)(c.A.VOICE_CHANNEL_HEADER), C = t.id, {
         voiceParticipantsHidden: N,
-        selectedParticipant: v,
+        selectedParticipant: y,
         userParticipantCount: O
     } = (0, r.cf)([T.A], () => ({
         selectedParticipant: T.A.getSelectedParticipant(C),
         voiceParticipantsHidden: T.A.getVoiceParticipantsHidden(C),
         userParticipantCount: T.A.getUserParticipantCount(C)
     }), [C]), L = t.isGuildVoiceOrThread() && !n, M = [], D = (0, m.$F)(t);
-    return a && D && (v?.type === y.lp.STREAM ? M.push((0, i.jsx)(S.A, {
+    return a && D && (y?.type === v.lp.STREAM ? M.push((0, i.jsx)(S.A, {
         channel: t,
-        focusedParticipant: v
-    }, "stream-participants")) : v?.type === y.lp.ACTIVITY && null != s && M.push((0, i.jsx)(S.A, {
+        focusedParticipant: y
+    }, "stream-participants")) : y?.type === v.lp.ACTIVITY && null != s && M.push((0, i.jsx)(S.A, {
         channel: t,
-        focusedParticipant: v
+        focusedParticipant: y
     }, "activity-participants"))), N && M.push((0, i.jsx)(R, {
         channelId: C,
         guildId: t.guild_id
     }, "current-speaker")), M.push((0, i.jsx)(A.A, {
         className: j.x6,
         channelId: C
-    }, "clips-enabled-indicator")), v?.type === y.lp.STREAM && (M.push((0, i.jsx)(g.A, {
+    }, "clips-enabled-indicator")), y?.type === v.lp.STREAM && (M.push((0, i.jsx)(g.A, {
         className: j.x6,
-        participant: v
+        participant: y
     }, "warning")), M.push((0, i.jsx)(_.A, {
         size: h.Ay.Sizes.LARGE,
         className: j.x6,
-        participant: v,
+        participant: y,
         showQuality: !0,
         premiumIndicator: !1
-    }, "live-indicator"))), v?.type === y.lp.USER && M.push((0, i.jsx)(f.A, {
+    }, "live-indicator"))), y?.type === v.lp.USER && M.push((0, i.jsx)(f.A, {
         className: j.x6,
-        userId: v.id
+        userId: y.id
     }, "video-warning")), N && M.push((0, i.jsx)(d.YNO, {
         targetElementRef: o,
         position: "bottom",

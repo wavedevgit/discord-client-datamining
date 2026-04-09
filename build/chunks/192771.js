@@ -3,9 +3,9 @@ n.d(t, {
     A: () => C
 });
 var i = n(627968),
-    r = n(64700),
-    a = n(311907),
-    l = n(314116),
+    a = n(64700),
+    l = n(311907),
+    r = n(314116),
     s = n(397927),
     o = n(466472),
     d = n(29160),
@@ -15,10 +15,10 @@ var i = n(627968),
     h = n(255438),
     _ = n(723702),
     m = n(837921),
-    p = n(985018),
-    g = n(345085),
+    g = n(985018),
+    p = n(345085),
     E = n(153335);
-class I extends r.PureComponent {
+class I extends a.PureComponent {
     state = {
         label: void 0,
         isDefault: null
@@ -45,10 +45,10 @@ class I extends r.PureComponent {
         })
     };
     handleRemoveLocation = () => {
-        (0, l.A)({
-            title: p.intl.string(p.t.iBUzS5),
-            subtitle: p.intl.string(p.t["1XqeW2"]),
-            confirmText: p.intl.string(p.t.iBUzS5),
+        (0, r.A)({
+            title: g.intl.string(g.t.iBUzS5),
+            subtitle: g.intl.string(g.t["1XqeW2"]),
+            confirmText: g.intl.string(g.t.iBUzS5),
             onConfirm: () => {
                 this.handleStopEditing(), (0, o.JN)(this.props.path)
             }
@@ -82,9 +82,9 @@ class I extends r.PureComponent {
     renderViewing() {
         let e, t, {
             path: n,
-            label: r,
-            editingPath: a,
-            isDefault: l,
+            label: a,
+            editingPath: l,
+            isDefault: r,
             metadata: o
         } = this.props;
         return null != o && (e = null != o.availableKB ? (0, h.Xq)(o.availableKB, {
@@ -92,38 +92,38 @@ class I extends r.PureComponent {
         }) : null, t = null != o.totalKB ? (0, h.Xq)(o.totalKB, {
             useKibibytes: !0
         }) : null), (0, i.jsxs)(c.A, {
-            className: g.ce,
+            className: p.ce,
             align: c.A.Align.CENTER,
             children: [this.renderDiskUsageCircle(), (0, i.jsxs)(c.A, {
                 direction: c.A.Direction.VERTICAL,
-                className: g.__invalid_descriptionWrapper,
+                className: p.__invalid_descriptionWrapper,
                 children: [(0, i.jsxs)(c.A, {
                     align: c.A.Align.CENTER,
                     children: [(0, i.jsx)(s.Heading, {
-                        className: g.nM,
+                        className: p.nM,
                         variant: "heading-md/semibold",
-                        children: null != r ? r : A.A.getLabelFromPath(n)
-                    }), l ? (0, i.jsx)("span", {
-                        className: g.Zn,
-                        children: p.intl.string(p.t.bBvAEH)
+                        children: null != a ? a : A.A.getLabelFromPath(n)
+                    }), r ? (0, i.jsx)("span", {
+                        className: p.Zn,
+                        children: g.intl.string(g.t.bBvAEH)
                     }) : null]
                 }), null != o && null != e && null != t ? (0, i.jsx)(d.A, {
-                    className: g.fw,
-                    hoverText: p.intl.formatToPlainString(p.t["Fxo9e+"], {
+                    className: p.fw,
+                    hoverText: g.intl.formatToPlainString(g.t["Fxo9e+"], {
                         available: e,
                         total: t
                     }),
                     children: n
                 }) : (0, i.jsx)(s.Text, {
-                    className: g.fw,
+                    className: p.fw,
                     variant: "text-xs/normal",
                     children: n
                 })]
             }), (0, i.jsx)(s.Button, {
                 variant: "secondary",
                 size: "sm",
-                text: p.intl.string(p.t.bt75uw),
-                disabled: null != a,
+                text: g.intl.string(g.t.bt75uw),
+                disabled: null != l,
                 onClick: this.handleStartEditing
             })]
         })
@@ -134,40 +134,40 @@ class I extends r.PureComponent {
             hasGamesInstalledInPath: t
         } = this.props, {
             label: n,
-            isDefault: r
+            isDefault: a
         } = this.state;
         return (0, i.jsx)(s.ZpM, {
             editable: !0,
-            className: g.uP,
+            className: p.uP,
             children: (0, i.jsxs)(c.A, {
                 children: [this.renderDiskUsageCircle(), (0, i.jsxs)(c.A.Child, {
                     children: [(0, i.jsx)(s.ksK, {
-                        label: p.intl.string(p.t.AJkKCB),
+                        label: g.intl.string(g.t.AJkKCB),
                         value: n,
                         placeholder: A.A.getLabelFromPath(e),
                         onChange: this.handleLabelChange
                     }), (0, i.jsx)("div", {
                         className: E.QX,
                         children: (0, i.jsx)(s.ksK, {
-                            label: p.intl.string(p.t.lnUCwX),
+                            label: g.intl.string(g.t.lnUCwX),
                             disabled: !0,
                             value: e
                         })
                     }), (0, i.jsx)("div", {
-                        className: g.gZ,
+                        className: p.gZ,
                         children: (0, i.jsx)(s.Checkbox, {
-                            checked: null != r ? r : this.props.isDefault,
+                            checked: null != a ? a : this.props.isDefault,
                             disabled: this.props.isDefault,
                             onChange: this.handleToggleDefault,
-                            label: p.intl.string(p.t.Z2MWuH)
+                            label: g.intl.string(g.t.Z2MWuH)
                         })
                     }), (0, i.jsx)(s.cGx, {
-                        className: g.me
+                        className: p.me
                     }), (0, i.jsxs)(c.A, {
                         children: [(0, i.jsx)(s.Button, {
                             variant: "critical-secondary",
                             size: "sm",
-                            text: p.intl.string(p.t.iBUzS5),
+                            text: g.intl.string(g.t.iBUzS5),
                             disabled: t || this.props.isDefault,
                             onClick: this.handleRemoveLocation
                         }), (0, i.jsx)(c.A, {
@@ -176,13 +176,13 @@ class I extends r.PureComponent {
                                 children: [(0, i.jsx)(s.Button, {
                                     variant: "secondary",
                                     size: "sm",
-                                    text: p.intl.string(p.t["ETE/oC"]),
+                                    text: g.intl.string(g.t["ETE/oC"]),
                                     onClick: this.handleStopEditing
                                 }), (0, i.jsx)(s.Button, {
                                     variant: "active",
                                     size: "sm",
-                                    text: p.intl.string(p.t["R3BPH+"]),
-                                    disabled: e === this.props.path && n === this.props.label && r === this.props.isDefault,
+                                    text: g.intl.string(g.t["R3BPH+"]),
+                                    disabled: e === this.props.path && n === this.props.label && a === this.props.isDefault,
                                     onClick: this.handleSaveChanges
                                 })]
                             })
@@ -196,7 +196,7 @@ class I extends r.PureComponent {
         return this.props.editingPath === this.props.path ? this.renderEditing() : this.renderViewing()
     }
 }
-class f extends r.PureComponent {
+class f extends a.PureComponent {
     state = {
         editingPath: null
     };
@@ -224,32 +224,32 @@ class f extends r.PureComponent {
             installationPathsMetadata: t,
             defaultInstallationPath: n
         } = this.props, {
-            editingPath: r
+            editingPath: a
         } = this.state;
         return (0, i.jsx)("div", {
-            className: g.iE,
+            className: p.iE,
             children: (0, i.jsxs)(s.D0$, {
-                label: p.intl.string(p.t.aLszkC),
+                label: g.intl.string(g.t.aLszkC),
                 children: [e.map(e => {
                     let {
-                        path: a,
-                        label: l
+                        path: l,
+                        label: r
                     } = e;
                     return (0, i.jsx)(I, {
-                        path: a,
-                        label: l,
-                        metadata: t[a],
-                        isDefault: n === a,
-                        editingPath: r,
-                        hasGamesInstalledInPath: A.A.hasGamesInstalledInPath(a),
+                        path: l,
+                        label: r,
+                        metadata: t[l],
+                        isDefault: n === l,
+                        editingPath: a,
+                        hasGamesInstalledInPath: A.A.hasGamesInstalledInPath(l),
                         onToggleEditing: this.handleToggleEditing
-                    }, a)
+                    }, l)
                 }), (0, i.jsx)("div", {
-                    className: g.sW,
+                    className: p.sW,
                     children: (0, i.jsx)(s.Button, {
                         variant: "primary",
                         size: "sm",
-                        text: p.intl.string(p.t.pnZ2uk),
+                        text: g.intl.string(g.t.pnZ2uk),
                         disabled: !_.isPlatformEmbedded,
                         onClick: this.handleAddInstallationLocation
                     })
@@ -258,7 +258,7 @@ class f extends r.PureComponent {
         })
     }
 }
-let C = a.Ay.connectStores([A.A], () => ({
+let C = l.Ay.connectStores([A.A], () => ({
     installationPaths: A.A.installationPaths,
     installationPathsMetadata: A.A.installationPathsMetadata,
     defaultInstallationPath: A.A.defaultInstallationPath

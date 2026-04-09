@@ -1,6 +1,6 @@
 /** chunk id: 543274 params = (module,exports,require) **/
 n.d(t, {
-    K: () => y
+    K: () => v
 }), n(321073);
 var i = n(627968),
     l = n(64700),
@@ -27,12 +27,12 @@ var i = n(627968),
     S = n(49999),
     b = n(985018);
 
-function y(e) {
+function v(e) {
     let {
         channel: t,
         idle: n,
-        whichPopoutIsOpen: y,
-        setWhichPopoutIsOpen: v
+        whichPopoutIsOpen: v,
+        setWhichPopoutIsOpen: y
     } = e, j = (0, s.bG)([c.Ay], () => c.Ay.isLaunchingActivity()), R = (0, h.et)(t.id), O = (0, h.dL)(R), L = R !== h.xy.CAN_LAUNCH || j, {
         isHovered: M,
         setIsHovered: D,
@@ -70,14 +70,14 @@ function y(e) {
             return Y.current && !d && s(S.i.AUTO_DISMISS), Y.current !== d && (Y.current = d), (0, i.jsx)(o.YNO, {
                 targetElementRef: z,
                 fixed: !0,
-                shouldShow: M && (y === N.P.ACTIVITY || null == y),
+                shouldShow: M && (v === N.P.ACTIVITY || null == v),
                 animation: o.YNO.Animation.FADE,
                 animationPosition: "top",
                 position: "top",
                 align: "center",
                 spacing: 16,
                 onRequestClose: () => {
-                    D(!1), v?.(void 0)
+                    D(!1), y?.(void 0)
                 },
                 renderPopout: e => {
                     let {

@@ -1,11 +1,11 @@
 /** chunk id: 87203 params = (module,exports,require) **/
 n.d(t, {
-    s: () => g
+    s: () => p
 });
 var i = n(827343),
-    r = n(168943),
-    a = n(63995),
-    l = n(69407),
+    a = n(168943),
+    l = n(63995),
+    r = n(69407),
     s = n(96566),
     o = n(405018),
     d = n(222692),
@@ -15,14 +15,14 @@ var i = n(827343),
     h = n(383501),
     _ = n(287809),
     m = n(652215),
-    p = n(731854);
+    g = n(731854);
 
-function g() {
-    if (!(0, r.L)()) return;
+function p() {
+    if (!(0, a.L)()) return;
     let e = A.Ay.isVideoEnabled(),
         t = Object.values(A.Ay.getVideoDevices())[0],
         n = t?.disabled ?? !0,
-        g = A.Ay.supportsInApp(p.O5.VIDEO) && A.Ay.supportsInApp(p.O5.DESKTOP_CAPTURE),
+        p = A.Ay.supportsInApp(g.O5.VIDEO) && A.Ay.supportsInApp(g.O5.DESKTOP_CAPTURE),
         E = u.A.getChannel(h.A.getChannelId()),
         I = _.default.getCurrentUser()?.id;
     if (null == E || null == I) return;
@@ -31,14 +31,14 @@ function g() {
     } = (0, o.M)(E);
     if (!f) {
         if (E.isGuildStageVoice()) {
-            let e = a.A.getMutableParticipants(E.id, l.ip.SPEAKER),
+            let e = l.A.getMutableParticipants(E.id, r.ip.SPEAKER),
                 t = e?.find(e => {
                     let {
                         user: t
                     } = e;
                     return t.id === I
                 });
-            if (!(0, s.Bw)(E.guild_id) || !g || null == t || t.voiceState.suppress) return
+            if (!(0, s.Bw)(E.guild_id) || !p || null == t || t.voiceState.suppress) return
         }
         return e ? i.A.setVideoEnabled(!1) : !1 === n ? (0, c.A)(() => {
             i.A.setVideoEnabled(!0)

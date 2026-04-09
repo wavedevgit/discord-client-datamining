@@ -19,7 +19,7 @@ let d = e => {
     a.useEffect(() => {
         p(_)
     }, [_]);
-    let g = a.useMemo(() => u.map(e => {
+    let h = a.useMemo(() => u.map(e => {
             let t = e.label;
             try {
                 t = (0, r.Gw)(e.value)
@@ -40,7 +40,7 @@ let d = e => {
             value: m,
             required: t.should_submit_data,
             onSelectionChange: x,
-            options: g,
+            options: h,
             selectionMode: "single",
             maxOptionsVisible: 4,
             fullWidth: !0

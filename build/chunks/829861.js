@@ -26,8 +26,8 @@ var i = n(627968),
     T = n(287809),
     S = n(203982),
     b = n(427262),
-    y = n(795816),
-    v = n(933958),
+    v = n(795816),
+    y = n(933958),
     j = n(685399),
     R = n(216418),
     O = n(969151),
@@ -53,9 +53,9 @@ function K(e) {
         maxHeight: t,
         connectedLocation: n,
         renderExternalHeader: s
-    } = e, K = (0, L.A)(), Y = (0, r.yK)([v.Ay], () => v.Ay.getEmbeddedActivitiesForLocation(n), [n]), z = (0, O.H)(n), q = (0, r.bG)([I.A], () => I.A.getChannel(z)), X = (0, j.IQ)(Y), $ = (0, j.Rz)(X), J = l.useCallback(() => {
-        (0, y.gk)(w.Gd.PIP)
-    }, []), Q = l.useRef(null), Z = (0, r.bG)([v.Ay], () => v.Ay.getFocusedLayout()), ee = Z !== w.E8.NO_CHAT, [et, en] = l.useState(g.Ay.activityPanelHeight ?? t ?? null), ei = l.useCallback(e => {
+    } = e, K = (0, L.A)(), Y = (0, r.yK)([y.Ay], () => y.Ay.getEmbeddedActivitiesForLocation(n), [n]), z = (0, O.H)(n), q = (0, r.bG)([I.A], () => I.A.getChannel(z)), X = (0, j.IQ)(Y), $ = (0, j.Rz)(X), J = l.useCallback(() => {
+        (0, v.gk)(w.Gd.PIP)
+    }, []), Q = l.useRef(null), Z = (0, r.bG)([y.Ay], () => y.Ay.getFocusedLayout()), ee = Z !== w.E8.NO_CHAT, [et, en] = l.useState(g.Ay.activityPanelHeight ?? t ?? null), ei = l.useCallback(e => {
         u.Ay.updatedUnsyncedSettings({
             activityPanelHeight: e
         })
@@ -202,7 +202,7 @@ function K(e) {
                         onOpenPopout: () => {
                             (0, _.zV)(B.HAw.ACTIVITY_POPOUT_POP_OUT_BUTTON_CLICKED), (0, U.A)({
                                 onConfirm: async () => {
-                                    K?.id != null && null != z && await (0, y.od)(K.id, z), (0, y.jp)()
+                                    K?.id != null && null != z && await (0, v.od)(K.id, z), (0, v.jp)()
                                 }
                             })
                         },

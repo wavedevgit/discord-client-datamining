@@ -4,9 +4,9 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var r = n(397927),
-    a = n(834615),
-    l = n(985018),
+var a = n(397927),
+    l = n(834615),
+    r = n(985018),
     s = n(349661);
 let o = function(e) {
     let {
@@ -16,11 +16,11 @@ let o = function(e) {
         className: s.x3,
         children: (0, i.jsxs)("div", {
             className: s.B0,
-            children: [(0, i.jsx)(r.Heading, {
+            children: [(0, i.jsx)(a.Heading, {
                 className: s.R_,
                 variant: "heading-md/semibold",
-                children: l.intl.string(l.t.L2mlUb)
-            }), (0, i.jsx)(a.A, {
+                children: r.intl.string(r.t.L2mlUb)
+            }), (0, i.jsx)(l.A, {
                 quest: t
             })]
         })

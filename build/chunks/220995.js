@@ -31,7 +31,7 @@ function b(e) {
     let {
         channel: t,
         onClose: s
-    } = e, b = l.useRef(null), [y, v] = l.useState(!1), j = l.useRef(null), R = l.useRef(null), [O, L] = l.useState(0), {
+    } = e, b = l.useRef(null), [v, y] = l.useState(!1), j = l.useRef(null), R = l.useRef(null), [O, L] = l.useState(0), {
         analyticsLocations: M
     } = (0, _.Ay)(A.A.VOICE_INVITE_SUGGESTIONS);
     (0, m.A)({
@@ -59,7 +59,7 @@ function b(e) {
                 channel_id: t.id,
                 guild_id: t.guild_id,
                 location_stack: M
-            }), v(!1), s?.()
+            }), y(!1), s?.()
         }, [t, s, M]),
         W = l.useCallback(() => {
             null != U && (0, u.mMO)(async () => {
@@ -99,7 +99,7 @@ function b(e) {
             null != j.current && clearTimeout(j.current)
         }), [z]),
         X = l.useCallback(() => (null != R.current && clearTimeout(R.current), R.current = setTimeout(() => {
-            v(!1)
+            y(!1)
         }, 150), () => {
             null != R.current && clearTimeout(R.current)
         }), []);
@@ -108,17 +108,17 @@ function b(e) {
             q(), X();
             return
         }
-        null != j.current && clearTimeout(j.current), null != R.current && clearTimeout(R.current), v(!0)
+        null != j.current && clearTimeout(j.current), null != R.current && clearTimeout(R.current), y(!0)
     }, [H, q, X]);
     let $ = l.useCallback(() => {
-            v(!0)
+            y(!0)
         }, []),
         J = l.useCallback(() => {
-            v(!1), V(!1)
+            y(!1), V(!1)
         }, []);
     return D ? (0, i.jsx)(u.YNO, {
         targetElementRef: b,
-        shouldShow: y,
+        shouldShow: v,
         position: "right",
         align: "top",
         spacing: 17,

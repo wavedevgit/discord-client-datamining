@@ -26,8 +26,8 @@ var i = n(627968),
     T = n(35241),
     S = n(587168),
     b = n(747524),
-    y = n(996988),
-    v = n(985018),
+    v = n(996988),
+    y = n(985018),
     j = n(49615),
     R = n(869891);
 
@@ -60,7 +60,7 @@ function O(e) {
                 ref: G,
                 user: t,
                 displayProfile: L,
-                themeType: y.d.SIDEBAR,
+                themeType: v.d.SIDEBAR,
                 themeOverride: M,
                 children: [(0, i.jsxs)(s.d_W, {
                     children: [(0, i.jsx)(S.A, {
@@ -72,13 +72,13 @@ function O(e) {
                         children: [(0, i.jsx)(f.A, {
                             user: t,
                             displayProfile: L,
-                            themeType: y.d.SIDEBAR,
+                            themeType: v.d.SIDEBAR,
                             animateOnHoverOrFocusOnly: !P
                         }), (0, i.jsx)(p.A, {
                             user: t,
                             displayProfile: L,
                             channelId: n.id,
-                            themeType: y.d.SIDEBAR,
+                            themeType: v.d.SIDEBAR,
                             onOpenProfile: O ? void 0 : w
                         })]
                     }), (0, i.jsxs)("div", {
@@ -91,12 +91,12 @@ function O(e) {
                             onOpenProfile: O ? void 0 : w,
                             tags: (0, i.jsx)(g.A, {
                                 displayProfile: L,
-                                themeType: y.d.SIDEBAR
+                                themeType: v.d.SIDEBAR
                             })
                         }), (0, i.jsxs)(C.A.Overlay, {
                             className: R.Lw,
                             children: [(0, i.jsx)(I.A, {
-                                heading: v.intl.string(v.t.ZzAR2Y),
+                                heading: y.intl.string(y.t.ZzAR2Y),
                                 headingColor: "text-strong",
                                 children: (0, i.jsx)(x.A, {
                                     userBio: L?.bio,
@@ -105,7 +105,7 @@ function O(e) {
                                     isHoveringOrFocusing: P
                                 })
                             }), (0, i.jsx)(I.A, {
-                                heading: v.intl.string(v.t["A//N4k"]),
+                                heading: y.intl.string(y.t["A//N4k"]),
                                 headingColor: "text-strong",
                                 children: (0, i.jsx)(E.A, {
                                     userId: t.id

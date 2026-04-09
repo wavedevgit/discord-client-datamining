@@ -35,42 +35,42 @@ function L(e) {
         scrollerRef: s,
         tab: l
     } = e, L = (0, u.uM)(), j = L?.sessionId ?? "", {
-        noCache: k,
+        noCache: O,
         includeUnpublished: T
-    } = (0, C.A)(), O = (0, g.W)("CollectiblesFilterResults"), y = (0, a.bG)([c.default], () => c.default.getCurrentUser()), {
+    } = (0, C.A)(), k = (0, g.W)("CollectiblesFilterResults"), y = (0, a.bG)([c.default], () => c.default.getCurrentUser()), {
         skus: N,
         currentPage: R,
         totalCount: B,
         isFetchingResults: P
-    } = (0, p.S)(), M = (0, a.yK)([_.A], () => _.A.getProductsBySkus(N)), D = r.useCallback(() => {
+    } = (0, p.S)(), M = (0, a.yK)([_.A], () => _.A.getProductsBySkus(N)), H = r.useCallback(() => {
         s?.current?.scrollToTop({
             animate: !0
         })
-    }, [s]), w = N?.join("");
+    }, [s]), D = N?.join("");
     r.useEffect(() => {
-        D()
-    }, [w, D]);
-    let H = (0, m.p)(),
-        F = r.useMemo(() => H(M), [H, M]);
+        H()
+    }, [D, H]);
+    let w = (0, m.p)(),
+        F = r.useMemo(() => w(M), [w, M]);
     r.useEffect(() => {
         t || (0, f.z)({
             sessionId: j,
             checkpoint: f.t.SHOP_RENDERED,
             tab: l,
             unpublishedCategoriesShown: T,
-            cacheDisabled: k
+            cacheDisabled: O
         })
-    }, [j, T, k, t, l]);
+    }, [j, T, O, t, l]);
     let G = r.useRef(null),
         {
             setQueryPageSize: U,
             setQueryPageOffset: V,
             queryPageSize: W
         } = (0, h.v)(),
-        [z, K] = r.useState(!1),
+        [K, z] = r.useState(!1),
         Y = t || P || null == y;
     r.useEffect(() => {
-        Y ? K(!1) : F.length > 0 && K(!0)
+        Y ? z(!1) : F.length > 0 && z(!0)
     }, [Y, F.length]);
     let $ = W > 0 && !Y && 0 === F.length;
     r.useEffect(() => {
@@ -98,7 +98,7 @@ function L(e) {
             }),
             children: [$ && (0, n.jsx)(A.A, {}), (0, n.jsxs)("div", {
                 className: i()(v.ZE, {
-                    [v.Kp]: z
+                    [v.Kp]: K
                 }),
                 ref: G,
                 children: [Y && [...Array(W)].map((e, t) => (0, n.jsx)(b.A, {}, t)), !Y && F.map((e, t) => null == _.A.getCategory(e.categorySkuId) ? null : (0, n.jsx)(u.R9, {
@@ -107,7 +107,7 @@ function L(e) {
                     },
                     children: (0, n.jsx)(x.A, {
                         skuId: e.skuId,
-                        prioritizedCurrency: O ? E.Hi.FIAT : void 0
+                        prioritizedCurrency: k ? E.Hi.FIAT : void 0
                     }, e.skuId)
                 }, e.skuId))]
             })]

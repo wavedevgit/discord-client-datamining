@@ -3,9 +3,9 @@ n.d(t, {
     A: () => u
 });
 var i = n(311907),
-    r = n(73153),
-    a = n(198982);
-let l = new Map;
+    a = n(73153),
+    l = n(198982);
+let r = new Map;
 class s {
     isInitialFetchComplete = !1;
     isFetching = !1;
@@ -18,17 +18,17 @@ class s {
         this.counts = e, this.isFetching = !1, this.isInitialFetchComplete = !0
     }
     handleSearchCountFailure(e) {
-        this.error = new a.LG(e), this.isFetching = !1
+        this.error = new l.LG(e), this.isFetching = !1
     }
 }
 
 function o(e) {
-    let t = l.get(e) ?? new s;
-    return l.set(e, t), t
+    let t = r.get(e) ?? new s;
+    return r.set(e, t), t
 }
 
 function d(e, t) {
-    let n = l.get(e);
+    let n = r.get(e);
     return null != n ? t(n) : null
 }
 class c extends i.Ay.Store {
@@ -43,9 +43,9 @@ class c extends i.Ay.Store {
         return d(e, e => e.counts)
     }
 }
-let u = new c(r.h, {
+let u = new c(a.h, {
     CONNECTION_OPEN: function() {
-        l.clear()
+        r.clear()
     },
     GLOBAL_DISCOVERY_SERVERS_SEARCH_COUNT_START: function(e) {
         let {
@@ -71,8 +71,8 @@ let u = new c(r.h, {
         let {
             ignoreQueries: t
         } = e, n = new Set(t);
-        l.forEach((e, t) => {
-            n.has(t) || l.delete(t)
+        r.forEach((e, t) => {
+            n.has(t) || r.delete(t)
         })
     }
 })

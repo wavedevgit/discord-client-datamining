@@ -4,8 +4,8 @@ n.d(t, {
     default: () => N
 });
 var r = n(627968),
-    i = n(64700),
-    l = n(110259),
+    l = n(64700),
+    i = n(110259),
     a = n(397927),
     s = n(252452),
     o = n(139286),
@@ -16,50 +16,50 @@ var r = n(627968),
     m = n(287809),
     f = n(152056),
     p = n(780964),
-    _ = n(921854),
-    v = n(7564),
-    y = n(175665),
-    g = n(178241),
+    v = n(921854),
+    y = n(7564),
+    g = n(175665),
+    _ = n(178241),
     x = n(779733),
     E = n(985018),
     A = n(188550);
 let S = new Set([p.X.PROFILE_PANEL, p.X.SUBSCRIPTIONS_PANEL, p.X.FAMILY_CENTER_PANEL, p.X.POGGERMODE_PANEL]),
     b = new Map([
-        [p.X.CONNECTIONS_PANEL, l.ImpressionNames.USER_SETTINGS_CONNECTIONS],
-        [p.X.SESSIONS_PANEL, l.ImpressionNames.USER_SETTINGS_SESSIONS]
+        [p.X.CONNECTIONS_PANEL, i.ImpressionNames.USER_SETTINGS_CONNECTIONS],
+        [p.X.SESSIONS_PANEL, i.ImpressionNames.USER_SETTINGS_SESSIONS]
     ]);
 
 function N(e) {
     let {
         target: t,
         ...n
-    } = e, a = f.A.useField("query"), E = i.useCallback(() => {
+    } = e, a = f.A.useField("query"), E = l.useCallback(() => {
         f.A.setState({
             query: ""
         }), c.A.terminate()
-    }, []), [A, N] = i.useState(!1);
-    return (i.useLayoutEffect(() => {
+    }, []), [A, N] = l.useState(!1);
+    return (l.useLayoutEffect(() => {
         let e = () => {
             null == m.default.getCurrentUser() && (N(!0), (0, x.default)())
         };
         return h.default.addChangeListener(e), () => {
-            h.default.removeChangeListener(e), y.A.resetState(), u.A.resetState(), s.A.close()
+            h.default.removeChangeListener(e), g.A.resetState(), u.A.resetState(), s.A.close()
         }
     }, []), A) ? null : (0, r.jsx)(d.A, {
-        partialRoot: _.D,
+        partialRoot: v.D,
         searchBar: j,
         emptyState: C,
-        sidebarFooter: v.A,
+        sidebarFooter: y.A,
         onViewChange: e => {
-            S.has(e) || (0, g._)(e);
+            S.has(e) || (0, _._)(e);
             let t = b.get(e);
             null != t && (0, o.x)({
-                type: l.ImpressionTypes.PANE,
+                type: i.ImpressionTypes.PANE,
                 name: t,
                 properties: {
-                    source: y.A.getField("source")
+                    source: g.A.getField("source")
                 }
-            }), y.A.setState({
+            }), g.A.setState({
                 source: void 0
             })
         },
@@ -73,23 +73,23 @@ function N(e) {
 
 function j() {
     let e = f.A.useField("query"),
-        t = i.useCallback(e => {
+        t = l.useCallback(e => {
             f.A.setState({
                 query: e
             }), c.A.maybeTrackQueryEntered()
         }, []),
-        n = i.useCallback(() => {
+        n = l.useCallback(() => {
             c.A.isSessionActive() || c.A.initialize()
         }, []),
-        l = i.useCallback(() => {
+        i = l.useCallback(() => {
             0 === f.A.getField("query").trim().length && c.A.terminate()
         }, []),
-        s = i.useCallback(() => {
+        s = l.useCallback(() => {
             f.A.setState({
                 query: ""
             }), c.A.terminate()
         }, []);
-    return i.useEffect(() => () => {
+    return l.useEffect(() => () => {
         f.A.resetState(), c.A.terminate()
     }, []), (0, r.jsx)("div", {
         className: A.P,
@@ -97,7 +97,7 @@ function j() {
             size: "md",
             query: e,
             onFocus: n,
-            onBlur: l,
+            onBlur: i,
             onChange: t,
             onClear: s
         })

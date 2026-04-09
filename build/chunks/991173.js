@@ -3,9 +3,9 @@ n.d(t, {
     A: () => c
 });
 var i = n(179771),
-    r = n(10584),
-    a = n(636401),
-    l = n(629471),
+    a = n(10584),
+    l = n(636401),
+    r = n(629471),
     s = n(613057),
     o = n(652215),
     d = n(731854);
@@ -14,15 +14,15 @@ let c = {
         scope: {
             [s.sm.ANY]: [i.F.RPC, s.hj]
         },
-        validation: e => (0, l.A)(e).required().keys({
-            devices: e.array().items((0, l.A)(e).keys({
+        validation: e => (0, r.A)(e).required().keys({
+            devices: e.array().items((0, r.A)(e).keys({
                 type: e.string().required().valid([d.oh.AUDIO_INPUT, d.oh.AUDIO_OUTPUT, d.oh.VIDEO_INPUT]),
                 id: e.string().required().min(1),
-                vendor: (0, l.A)(e).required().keys({
+                vendor: (0, r.A)(e).required().keys({
                     name: e.string().min(1),
                     url: e.string().min(1)
                 }),
-                model: (0, l.A)(e).required().keys({
+                model: (0, r.A)(e).required().keys({
                     name: e.string().min(1),
                     url: e.string().min(1)
                 }),
@@ -40,10 +40,10 @@ let c = {
                     devices: n
                 }
             } = e;
-            if (null == t.application.id) throw new a.A({
+            if (null == t.application.id) throw new l.A({
                 errorCode: o.Lw6.INVALID_COMMAND
             }, "No application.");
-            (0, r.z)(t.application.id, n.map(e => ({
+            (0, a.z)(t.application.id, n.map(e => ({
                 type: e.type,
                 id: e.id,
                 vendor: e.vendor,

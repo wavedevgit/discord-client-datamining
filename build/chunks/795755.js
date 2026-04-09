@@ -1,6 +1,6 @@
 /** chunk id: 795755 params = (module,exports,require) **/
 n.d(t, {
-    A: () => A
+    A: () => _
 });
 var i = n(627968);
 n(64700);
@@ -14,11 +14,11 @@ var a = n(540185),
     u = n(25530),
     g = n(155400),
     m = n(844206),
-    x = n(557964),
-    f = n(987140),
+    h = n(557964),
+    x = n(987140),
     p = n(286981);
 
-function h(e) {
+function f(e) {
     let {
         widget: t,
         ...n
@@ -35,7 +35,7 @@ function h(e) {
                 ...n
             });
         case a.x.WANT_TO_PLAY_GAMES:
-            return (0, i.jsx)(x.A, {
+            return (0, i.jsx)(h.A, {
                 widget: t,
                 ...n
             });
@@ -49,7 +49,7 @@ function h(e) {
     }
 }
 
-function _(e) {
+function A(e) {
     let {
         widget: t,
         user: n,
@@ -59,40 +59,40 @@ function _(e) {
         setExpanded: g
     } = (0, c.B)(), {
         shouldShowSuggestions: m,
-        handleDismissSuggestions: x
-    } = (0, o.q)(t), _ = (0, l.bG)([s.default], () => s.default.getId() === n.id), A = _ && !a && m, I = (0, r.L)(t), j = (0, r.FM)(t, {
-        isCurrentUser: _
-    }), v = (0, r.uA)(t), E = 1 === (0, r.cv)(t.type);
-    return (0, i.jsx)(h, {
+        handleDismissSuggestions: h
+    } = (0, o.q)(t), A = (0, l.bG)([s.default], () => s.default.getId() === n.id), _ = A && !a && m, I = (0, r.L)(t), j = (0, r.FM)(t, {
+        isCurrentUser: A
+    }), v = (0, r.uA)(t), b = 1 === (0, r.cv)(t.type);
+    return (0, i.jsx)(f, {
         widget: t,
         user: n,
         disableInteraction: a,
         headerTitle: I,
         headerSubtitle: j,
-        headerActionButtons: _ && !E ? [(0, i.jsx)(d.IU, {
+        headerActionButtons: A && !b ? [(0, i.jsx)(d.IU, {
             disabled: v,
             widgetType: t.type,
             widget: t,
             onAddGame: () => g(!0)
         }, `${t.type}-browse-games-popout`)] : void 0,
-        trailingContent: A && (0, i.jsx)(f.A, {
+        trailingContent: _ && (0, i.jsx)(x.A, {
             userId: n.id,
             widgetType: t.type,
-            onDismiss: x,
+            onDismiss: h,
             className: p.r
         }),
         ...u
     })
 }
 
-function A(e) {
+function _(e) {
     let {
         widget: t,
         ...n
     } = e;
     return (0, i.jsx)(c.M, {
         widgetType: t.type,
-        children: (0, i.jsx)(_, {
+        children: (0, i.jsx)(A, {
             widget: t,
             ...n
         })

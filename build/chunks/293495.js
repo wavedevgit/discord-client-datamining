@@ -1,12 +1,12 @@
 /** chunk id: 293495 params = (module,exports,require) **/
 n.d(t, {
-    Ay: () => g,
+    Ay: () => p,
     YY: () => h
 });
 var i = n(73153),
-    r = n(31728),
-    a = n(272355),
-    l = n(227042),
+    a = n(31728),
+    l = n(272355),
+    r = n(227042),
     s = n(869146),
     o = n(186111),
     d = n(334463),
@@ -22,29 +22,29 @@ function _() {
     let e = c.A.getConnectedFrame();
     if (null == e) {
         let e;
-        return void(null != (e = A) && d.A.isOpen(e) && (i.h.wait(() => r.VN(e)), A = null))
+        return void(null != (e = A) && d.A.isOpen(e) && (i.h.wait(() => a.VN(e)), A = null))
     }
     var t = h(e);
     if (d.A.isOpen(t)) return !1;
     if (null != A) {
         let e = A;
-        i.h.wait(() => r.VN(e))
+        i.h.wait(() => a.VN(e))
     }
-    return i.h.wait(() => r.ho(t, u.o1q.FRAME, {})), void(A = t)
+    return i.h.wait(() => a.ho(t, u.o1q.FRAME, {})), void(A = t)
 }
 
 function m() {
     let e;
-    if ((0, l.A)({
+    if ((0, r.A)({
             LayerStore: o.A,
             PopoutWindowStore: s.A
         })) {
         let e;
-        return void(null != (e = (void 0) ?? A) && d.A.isOpen(e) && i.h.wait(() => r.jD(e)))
+        return void(null != (e = (void 0) ?? A) && d.A.isOpen(e) && i.h.wait(() => a.jD(e)))
     }
-    null != (e = (void 0) ?? A) && d.A.isOpen(e) && i.h.wait(() => r.WU(e))
+    null != (e = (void 0) ?? A) && d.A.isOpen(e) && i.h.wait(() => a.WU(e))
 }
-class p extends a.A {
+class g extends l.A {
     _initialize() {
         c.A.addChangeListener(_), o.A.addChangeListener(m)
     }
@@ -52,4 +52,4 @@ class p extends a.A {
         c.A.removeChangeListener(_), o.A.removeChangeListener(m)
     }
 }
-let g = new p
+let p = new g

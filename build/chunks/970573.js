@@ -1,7 +1,7 @@
 /** chunk id: 970573 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => C,
+    A: () => j,
     X: () => T
 });
 var i, s = n(627968),
@@ -26,7 +26,7 @@ var i, s = n(627968),
     v = n(795859),
     T = ((i = {})[i.LOGIN_REQUIRED = 0] = "LOGIN_REQUIRED", i[i.SWITCHED = 1] = "SWITCHED", i[i.REMOVED = 2] = "REMOVED", i);
 
-function j(e) {
+function C(e) {
     let {
         actionText: t,
         user: n,
@@ -39,13 +39,13 @@ function j(e) {
         currentUser: g.default.getCurrentUser(),
         hidePrivateData: p.A.hidePersonalInformation,
         isAuthenticated: _.default.isAuthenticated()
-    })), T = new h.A(n), j = x && r?.id === T.id, C = n.tokenStatus === E.U.INVALID, S = l || T.hasUniqueUsername() ? null : `#${T.discriminator}`, y = null;
-    return j ? y = (0, s.jsx)(c.Text, {
+    })), T = new h.A(n), C = x && r?.id === T.id, j = n.tokenStatus === E.U.INVALID, S = l || T.hasUniqueUsername() ? null : `#${T.discriminator}`, y = null;
+    return C ? y = (0, s.jsx)(c.Text, {
         variant: "text-sm/semibold",
         className: v.dx,
         color: "text-feedback-positive",
         children: N.intl.string(N.t.seV8yt)
-    }) : C && (y = (0, s.jsx)(c.Text, {
+    }) : j && (y = (0, s.jsx)(c.Text, {
         variant: "text-sm/semibold",
         className: v.dx,
         color: "text-feedback-critical",
@@ -60,7 +60,7 @@ function j(e) {
                 "aria-label": n.username
             }), (0, s.jsxs)("div", {
                 className: a()(v.K_, {
-                    [v.zU]: !j
+                    [v.zU]: !C
                 }),
                 children: [(0, s.jsxs)("div", {
                     className: v.Xh,
@@ -80,11 +80,11 @@ function j(e) {
                 }), y]
             }), (0, s.jsxs)("div", {
                 className: v.Xp,
-                children: [!j && (0, s.jsx)(c.Button, {
+                children: [!C && (0, s.jsx)(c.Button, {
                     variant: "secondary",
-                    text: C ? N.intl.string(N.t["DSN+hw"]) : t,
+                    text: j ? N.intl.string(N.t["DSN+hw"]) : t,
                     onClick: function() {
-                        C ? i(0, n.id) : (m.default.track(I.HAw.MULTI_ACCOUNT_SWITCH_ATTEMPT, {
+                        j ? i(0, n.id) : (m.default.track(I.HAw.MULTI_ACCOUNT_SWITCH_ATTEMPT, {
                             location: {
                                 section: I.JJy.MANAGE_ACCOUNTS_MODAL
                             }
@@ -127,7 +127,7 @@ function j(e) {
     })
 }
 
-function C(e) {
+function j(e) {
     let {
         actionText: t,
         onAction: n
@@ -140,7 +140,7 @@ function C(e) {
         children: i ? (0, s.jsx)(c.y$y, {
             className: v.u1
         }) : l.map((e, i) => (0, s.jsxs)(r.Fragment, {
-            children: [(0, s.jsx)(j, {
+            children: [(0, s.jsx)(C, {
                 user: e,
                 actionText: t,
                 onAction: n

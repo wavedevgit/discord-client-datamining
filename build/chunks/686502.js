@@ -36,7 +36,7 @@ function b(e) {
         userParticipantCount: r,
         activitiesEnabled: o = !0
     } = e;
-    return l < 250 ? (0, i.jsx)(y, {
+    return l < 250 ? (0, i.jsx)(v, {
         channel: t,
         guild: n,
         width: l,
@@ -50,7 +50,7 @@ function b(e) {
         inPopout: s,
         handleClose: a,
         userParticipantCount: r
-    }) : (0, i.jsx)(v, {
+    }) : (0, i.jsx)(y, {
         channel: t,
         guild: n,
         width: l,
@@ -59,7 +59,7 @@ function b(e) {
     })
 }
 
-function y(e) {
+function v(e) {
     let {
         channel: t,
         inPopout: n,
@@ -116,7 +116,7 @@ function y(e) {
     })
 }
 
-function v(e) {
+function y(e) {
     let {
         channel: t,
         guild: s,

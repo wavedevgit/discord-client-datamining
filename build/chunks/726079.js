@@ -3,9 +3,9 @@ n.d(t, {
     l: () => d
 });
 var i = n(627968),
-    r = n(64700),
-    a = n(397927),
-    l = n(646881),
+    a = n(64700),
+    l = n(397927),
+    r = n(646881),
     s = n(92534),
     o = n(828801);
 
@@ -16,26 +16,26 @@ function d(e) {
         children: d,
         popoutPosition: c,
         popoutAlign: u
-    } = e, [A, h] = r.useState(!1), _ = r.useRef(null), m = r.useCallback(() => {
+    } = e, [A, h] = a.useState(!1), _ = a.useRef(null), m = a.useCallback(() => {
         h(!1), n?.()
     }, [n]), {
-        handlePrimaryAction: p,
-        handleContextMenu: g
-    } = (0, s.B)(m), E = r.useCallback(() => {
+        handlePrimaryAction: g,
+        handleContextMenu: p
+    } = (0, s.B)(m), E = a.useCallback(() => {
         h(e => {
             let i = !e;
             return i ? t?.() : n?.(), i
         })
-    }, [n, t]), I = r.useCallback(() => (0, i.jsx)("div", {
+    }, [n, t]), I = a.useCallback(() => (0, i.jsx)("div", {
         className: o.k,
-        children: (0, i.jsx)(l.$, {
-            onPrimaryAction: p,
-            onContextMenu: g
+        children: (0, i.jsx)(r.$, {
+            onPrimaryAction: g,
+            onContextMenu: p
         })
-    }), [g, p]);
-    return (0, i.jsx)(a.YNO, {
+    }), [p, g]);
+    return (0, i.jsx)(l.YNO, {
         targetElementRef: _,
-        animation: a.YNO.Animation.NONE,
+        animation: l.YNO.Animation.NONE,
         position: c,
         align: u,
         autoInvert: !1,

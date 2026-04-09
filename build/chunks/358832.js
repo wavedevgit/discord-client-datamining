@@ -1,11 +1,11 @@
 /** chunk id: 358832 params = (module,exports,require) **/
 n.d(t, {
-    A: () => p
+    A: () => g
 });
 var i = n(627968),
-    r = n(64700),
-    a = n(311907),
-    l = n(397927),
+    a = n(64700),
+    l = n(311907),
+    r = n(397927),
     s = n(157559),
     o = n(229224),
     d = n(966871),
@@ -14,7 +14,7 @@ var i = n(627968),
     A = n(383501),
     h = n(985018),
     _ = n(169796);
-class m extends r.PureComponent {
+class m extends a.PureComponent {
     static getDerivedStateFromProps(e, t) {
         return e.mode !== t.memoizedMode ? {
             memoizedMode: e.mode,
@@ -26,7 +26,7 @@ class m extends r.PureComponent {
         clicked: !1
     };
     handleDownloadApps() {
-        (0, l.qfG)(e => (0, i.jsx)(c.default, {
+        (0, r.qfG)(e => (0, i.jsx)(c.default, {
             source: "Links",
             ...e
         }))
@@ -51,14 +51,14 @@ class m extends r.PureComponent {
             t = "UPDATE_DOWNLOADED" === this.props.mode || "UPDATE_MANUALLY" === this.props.mode;
         return e || t ? (0, i.jsx)(d.A, {
             tooltip: e ? h.intl.string(h.t["zp9d/4"]) : h.intl.string(h.t.u18OXF),
-            color: l.LU0.unsafe_rawColors.GREEN_360.css,
+            color: r.LU0.unsafe_rawColors.GREEN_360.css,
             colorClass: e ? _.z : void 0,
             onClick: this.handleInstallDownload,
-            icon: l.s3U,
+            icon: r.s3U,
             disabled: e
         }) : null
     }
 }
-let p = a.Ay.connectStores([u.A], () => ({
+let g = l.Ay.connectStores([u.A], () => ({
     mode: u.A.getState()
 }))(m)

@@ -25,8 +25,8 @@ var i = n(627968),
     N = n(122906),
     v = n(121623),
     T = n(850381),
-    j = n(21599),
-    C = n(614986),
+    C = n(21599),
+    j = n(614986),
     S = n(957622),
     y = n(463347),
     b = n(210714),
@@ -66,7 +66,7 @@ let er = (0, G.A)(Y.A),
     ea = (0, G.A)(q.A),
     eo = (0, G.A)(z.A),
     ec = (0, G.A)(K.A),
-    ed = (0, G.A)(C.A),
+    ed = (0, G.A)(j.A),
     eu = (0, G.A)($.A),
     eh = (0, G.A)(et.A),
     e_ = (0, G.A)(M.A),
@@ -81,8 +81,8 @@ let er = (0, G.A)(Y.A),
     eN = (0, G.A)(J.A),
     ev = (0, G.A)(Z.A),
     eT = (0, G.A)(g.A),
-    ej = (0, G.A)(S.A);
-class eC extends s.PureComponent {
+    eC = (0, G.A)(S.A);
+class ej extends s.PureComponent {
     state = {
         splash: null,
         redirectTo: null,
@@ -120,7 +120,7 @@ class eC extends s.PureComponent {
             isAuthenticated: n
         } = this.props;
         null != e && (!t && n && u.A.getExperiments(!0), k.default.track(ei.HAw.INVITE_OPENED, {
-            invite_code: (0, j.m0)(e),
+            invite_code: (0, C.m0)(e),
             load_time: U.A.getTimeSinceNavigationStart()
         }, {
             flush: !0
@@ -194,7 +194,7 @@ class eC extends s.PureComponent {
                 })
             }), (0, i.jsx)(m.A, {
                 path: ei.BVt.LOGIN_ONE_TIME,
-                render: e => (0, i.jsx)(ej, {
+                render: e => (0, i.jsx)(eC, {
                     ...e
                 })
             }), (0, i.jsx)(m.A, {
@@ -234,7 +234,7 @@ class eC extends s.PureComponent {
                         },
                         location: s,
                         transitionTo: r
-                    } = e, l = (0, j.fB)(t, s.search);
+                    } = e, l = (0, C.fB)(t, s.search);
                     return a.Fr || a.v1 ? (0, i.jsx)(ed, {
                         inviteKey: l,
                         transitionTo: r
@@ -358,7 +358,7 @@ let eS = c.Ay.connectStores([O.default, w.A, L.A, I.A, N.A], e => {
     let {
         match: t,
         location: n
-    } = e, i = t?.params?.inviteCode, s = null != i ? (0, j.fB)(i, n.search) : void 0, r = t?.params?.giftCode, l = t?.params?.guildTemplateCode;
+    } = e, i = t?.params?.inviteCode, s = null != i ? (0, C.fB)(i, n.search) : void 0, r = t?.params?.giftCode, l = t?.params?.guildTemplateCode;
     return {
         inviteKey: s,
         isAuthenticated: O.default.isAuthenticated(),
@@ -369,4 +369,4 @@ let eS = c.Ay.connectStores([O.default, w.A, L.A, I.A, N.A], e => {
         guildTemplate: null != l ? N.A.getGuildTemplate(l) : null,
         hasLoadedExperiments: I.A.hasLoadedExperiments
     }
-})(eC)
+})(ej)

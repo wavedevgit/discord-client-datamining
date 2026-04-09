@@ -3,9 +3,9 @@ n.d(t, {
     A: () => _
 });
 var i = n(627968),
-    r = n(64700),
-    a = n(311907),
-    l = n(397927),
+    a = n(64700),
+    l = n(311907),
+    r = n(397927),
     s = n(966871),
     o = n(851580),
     d = n(222823),
@@ -19,29 +19,29 @@ function _(e) {
         onOpen: t,
         onClose: n,
         "data-jump-section": _
-    } = e, m = (0, a.bG)([c.default], () => c.default.getCurrentUser()), p = r.useRef(null), g = (0, a.bG)([d.Ay], () => m?.id != null && d.Ay.getMentionCount(m.id, A.P.NOTIFICATION_CENTER) > 0);
+    } = e, m = (0, l.bG)([c.default], () => c.default.getCurrentUser()), g = a.useRef(null), p = (0, l.bG)([d.Ay], () => m?.id != null && d.Ay.getMentionCount(m.id, A.P.NOTIFICATION_CENTER) > 0);
     return (0, i.jsx)(u.C, {
-        targetElementRef: p,
+        targetElementRef: g,
         onOpen: t,
         onClose: n,
         badgeState: {
-            badgeForYou: g
+            badgeForYou: p
         },
         popoutPosition: "bottom",
         popoutAlign: "right",
-        children: (e, t, n, r) => (0, i.jsxs)(i.Fragment, {
+        children: (e, t, n, a) => (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)(s.A, {
                 ...n,
-                icon: l.K$s,
+                icon: r.K$s,
                 tooltip: h.intl.string(h.t.GSmTKJ),
                 onClick: e,
-                showBadge: g || r,
+                showBadge: p || a,
                 selected: t,
                 "data-jump-section": _,
-                ref: p
+                ref: g
             }), (0, i.jsx)(o.v, {
                 location: "inbox-button",
-                targetElementRef: p
+                targetElementRef: g
             })]
         })
     })

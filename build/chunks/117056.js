@@ -15,10 +15,10 @@ let _ = e => {
     let {
         guildId: t,
         reportId: n
-    } = e, [_, m] = a.useState(!1), p = o.A.getGuild(t), g = null != p;
+    } = e, [_, m] = a.useState(!1), p = o.A.getGuild(t), h = null != p;
     a.useEffect(() => {
-        m(!g)
-    }, [g]);
+        m(!h)
+    }, [h]);
     let x = a.useCallback(() => {
         m(!0), r.Ay.trackWithMetadata(c.HAw.IAR_LEAVE_GUILD_BUTTON_CLICKED, {
             guild_id: t,

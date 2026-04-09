@@ -20,7 +20,7 @@ function m(e) {
         onToggleVisibility: o
     } = e, c = a.useRef(null), {
         analyticsLocations: m
-    } = (0, r.Ay)(s.A.USER_PROFILE_WISHLIST), x = a.useMemo(() => t ? (0, i.jsxs)(l.rXV, {
+    } = (0, r.Ay)(s.A.USER_PROFILE_WISHLIST), h = a.useMemo(() => t ? (0, i.jsxs)(l.rXV, {
         children: [(0, i.jsx)(l.fPC, {
             id: "wishlist-privacy-setting",
             label: u.intl.string(u.t.b2nFyA),
@@ -38,7 +38,7 @@ function m(e) {
             action: () => window.open(g)
         })]
     }) : null, [t, n, o]);
-    return null == x ? null : (0, i.jsx)(r.f5, {
+    return null == h ? null : (0, i.jsx)(r.f5, {
         value: m,
         children: (0, i.jsx)(l.YNO, {
             targetElementRef: c,
@@ -52,7 +52,7 @@ function m(e) {
                     onSelect: void 0,
                     onClose: t,
                     "aria-label": u.intl.string(u.t.GdNkvG),
-                    children: x
+                    children: h
                 })
             },
             children: e => (0, i.jsx)(d.q3, {

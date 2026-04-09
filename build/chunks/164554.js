@@ -3,9 +3,9 @@ n.d(t, {
     A: () => _
 });
 var i = n(627968),
-    r = n(64700),
-    a = n(362599),
-    l = n(342494),
+    a = n(64700),
+    l = n(362599),
+    r = n(342494),
     s = n(732955),
     o = n(976860),
     d = n(235365),
@@ -19,14 +19,14 @@ function _(e) {
         targetElementRef: t,
         dismissPopover: n,
         children: _
-    } = e, m = r.useCallback(() => {
+    } = e, m = a.useCallback(() => {
         n(u.i.TAKE_ACTION), (0, o.pX)(`${c.BVt.NITRO_HOME}?section=${d.L}`)
-    }, [n]), p = (0, i.jsx)(l.AM, {
+    }, [n]), g = (0, i.jsx)(r.AM, {
         targetElementRef: t,
         onRequestClose: () => n(u.i.USER_DISMISS),
         graphic: {
             type: "rive",
-            rive: a.Z
+            rive: l.Z
         },
         badge: {
             type: "beta",
@@ -51,6 +51,6 @@ function _(e) {
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)("div", {
             children: _
-        }), p]
+        }), g]
     })
 }

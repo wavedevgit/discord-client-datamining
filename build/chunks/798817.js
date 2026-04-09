@@ -3,9 +3,9 @@ n.d(t, {
     A: () => A
 });
 var i = n(627968),
-    r = n(64700),
-    a = n(311907),
-    l = n(342494),
+    a = n(64700),
+    l = n(311907),
+    r = n(342494),
     s = n(274372),
     o = n(372684),
     d = n(399925),
@@ -17,15 +17,15 @@ function A(e) {
         onOpenClipsGallery: t,
         clipIconRef: n,
         lastClipsSession: A
-    } = e, h = (0, a.bG)([s.A], () => {
+    } = e, h = (0, l.bG)([s.A], () => {
         let e = s.A.getLastClipsSession()?.newClipIds;
         if (null == e) return null;
         let t = s.A.getClipIds().find(t => e.includes(t));
         return null == t ? null : s.A.getClipById(t)
-    }), _ = (0, c.j)(h), m = r.useCallback(() => {
+    }), _ = (0, c.j)(h), m = a.useCallback(() => {
         (0, d.jA)()
     }, []);
-    return null == h ? null : h.type !== o.nQ.SCREENSHOT && h.type !== o.nQ.VOICE_CLIP && null != _ ? (0, i.jsx)(l.HZ, {
+    return null == h ? null : h.type !== o.nQ.SCREENSHOT && h.type !== o.nQ.VOICE_CLIP && null != _ ? (0, i.jsx)(r.HZ, {
         targetElementRef: {
             current: n
         },
@@ -44,7 +44,7 @@ function A(e) {
             onClick: t
         },
         onRequestClose: m
-    }) : (0, i.jsx)(l.AM, {
+    }) : (0, i.jsx)(r.AM, {
         targetElementRef: {
             current: n
         },

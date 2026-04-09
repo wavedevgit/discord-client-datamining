@@ -1,6 +1,6 @@
 /** chunk id: 294868 params = (module,exports,require) **/
 n.d(t, {
-    A: () => x
+    A: () => h
 });
 var i = n(627968);
 n(64700);
@@ -40,27 +40,27 @@ function m(e) {
     })
 }
 
-function x(e) {
+function h(e) {
     let {
         user: t,
         widgetType: n,
         disableInteraction: c,
         games: g
-    } = e, x = (0, a.bG)([l.default], () => l.default.getId() === t.id), {
-        getManageButtonForWidget: f
-    } = (0, u.r)(), p = f(n), {
-        expanded: h,
-        setExpanded: _
-    } = (0, o.B)(), A = h ? g : g.slice(0, 2), I = g.length > 2, j = (0, i.jsxs)(i.Fragment, {
+    } = e, h = (0, a.bG)([l.default], () => l.default.getId() === t.id), {
+        getManageButtonForWidget: x
+    } = (0, u.r)(), p = x(n), {
+        expanded: f,
+        setExpanded: A
+    } = (0, o.B)(), _ = f ? g : g.slice(0, 2), I = g.length > 2, j = (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(m, {
             ...e,
-            games: A
+            games: _
         }), I && (0, i.jsx)(d.A, {
-            expanded: h,
-            onClick: () => _(e => !e)
+            expanded: f,
+            onClick: () => A(e => !e)
         })]
     });
-    return x && !c ? (0, i.jsxs)(i.Fragment, {
+    return h && !c ? (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(r.A, {
             widgetType: n,
             gameCount: g.length

@@ -22,7 +22,7 @@ let s = e => {
             name: e.label,
             value: e.value
         })), [c]),
-        g = a.useCallback(e => {
+        h = a.useCallback(e => {
             null != e && (m(e), n(d, e))
         }, [n, d]);
     return (0, l.jsxs)("div", {
@@ -36,7 +36,7 @@ let s = e => {
             })]
         }), (0, l.jsx)(i.z6M, {
             value: _,
-            onChange: g,
+            onChange: h,
             options: p
         })]
     })

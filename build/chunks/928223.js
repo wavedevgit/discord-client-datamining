@@ -8,8 +8,8 @@ var a = t(347805),
     l = t(183555),
     r = t(716804),
     s = t(900179),
-    o = t(518477),
-    d = t(985018),
+    d = t(518477),
+    o = t(985018),
     c = t(637089);
 
 function u(e) {
@@ -19,12 +19,12 @@ function u(e) {
         trackUserProfileAction: u
     } = (0, l.NJ)();
     return (0, i.jsx)(s.A, {
-        heading: d.intl.string(d.t["mQKv+v"]),
-        scrollTargetId: o.bk.NOTE,
+        heading: o.intl.string(o.t["mQKv+v"]),
+        scrollTargetId: d.bk.NOTE,
         children: (0, i.jsx)(a.A, {
             userId: n,
             className: c.N,
-            autoFocus: t === o.bk.NOTE,
+            autoFocus: t === d.bk.NOTE,
             onUpdate: () => u({
                 action: "SET_NOTE"
             })

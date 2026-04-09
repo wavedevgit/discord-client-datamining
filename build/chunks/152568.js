@@ -29,12 +29,12 @@ let I = e => {
     let {
         wideBannerBlock: t,
         tab: s
-    } = e, l = p.A.getCategoryByStoreListingId(t.categoryStoreListingId), I = r.useRef(null), L = r.useRef(null), [j, k] = r.useState(), [T, O] = r.useState(!1);
+    } = e, l = p.A.getCategoryByStoreListingId(t.categoryStoreListingId), I = r.useRef(null), L = r.useRef(null), [j, O] = r.useState(), [T, k] = r.useState(!1);
     r.useEffect(() => {
         let e = L.current;
         if (null == e) return;
         let t = () => {
-            e.naturalWidth > 0 && e.naturalHeight > 0 && k(1080 * (e.naturalHeight / e.naturalWidth))
+            e.naturalWidth > 0 && e.naturalHeight > 0 && O(1080 * (e.naturalHeight / e.naturalWidth))
         };
         return e.complete ? t() : e.onload = t, () => {
             e.onload = null
@@ -50,10 +50,10 @@ let I = e => {
         } = (0, x.w$)(t),
         P = s === E.G2.ORBS,
         M = null != t.ctaRoute && "" !== t.ctaRoute,
-        D = !0 !== t.disableCta && (null != t.ctaText && "" !== t.ctaText || M),
-        w = null != t.logoURL && "" !== t.logoURL,
-        H = r.useCallback(() => {
-            if (O(!0), t.isDismissible) {
+        H = !0 !== t.disableCta && (null != t.ctaText && "" !== t.ctaText || M),
+        D = null != t.logoURL && "" !== t.logoURL,
+        w = r.useCallback(() => {
+            if (k(!0), t.isDismissible) {
                 let e = t.dismissibleContentVersion ?? 0;
                 (0, d.$l)(a.M.COLLECTIBLES_SHOP_WIDE_BANNER, e, {
                     dismissAction: C.i.USER_DISMISS
@@ -100,7 +100,7 @@ let I = e => {
                 children: (0, n.jsx)(c.JnF, {
                     size: "sm",
                     onClick: e => {
-                        e.stopPropagation(), H()
+                        e.stopPropagation(), w()
                     },
                     "aria-label": S.intl.string(S.t.WAI6xu)
                 })
@@ -121,7 +121,7 @@ let I = e => {
                 })
             }), (0, n.jsx)("div", {
                 className: i()(v.Ep, {
-                    [v.Qq]: D
+                    [v.Qq]: H
                 }),
                 style: {
                     maxHeight: null != j ? `${j}px` : "auto"
@@ -144,7 +144,7 @@ let I = e => {
                         children: P ? S.intl.format(S.t.SFFP7K, {
                             helpdeskArticle: m.A.getArticleURL(b.MVz.VIRTUAL_CURRENCY_LEARN_MORE)
                         }) : t.body
-                    }), D && (0, n.jsxs)("div", {
+                    }), H && (0, n.jsxs)("div", {
                         className: v.nP,
                         children: [(0, n.jsx)(c.Button, {
                             variant: "overlay-primary",
@@ -152,7 +152,7 @@ let I = e => {
                                 e.stopPropagation(), G(t.ctaText ?? S.intl.string(S.t.jVcuVY))
                             },
                             text: t.ctaText ?? S.intl.string(S.t.jVcuVY)
-                        }), w && (0, n.jsx)("img", {
+                        }), D && (0, n.jsx)("img", {
                             src: t.logoURL,
                             alt: "",
                             className: v.bU

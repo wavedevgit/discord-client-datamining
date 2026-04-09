@@ -3,9 +3,9 @@ n.d(t, {
     A: () => N
 });
 var i = n(627968),
-    r = n(64700),
-    a = n(311907),
-    l = n(397927),
+    a = n(64700),
+    l = n(311907),
+    r = n(397927),
     s = n(355622),
     o = n(58736),
     d = n(353428),
@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(471271),
     _ = n(977347),
     m = n(378570),
-    p = n(138298),
-    g = n(761640),
+    g = n(138298),
+    p = n(761640),
     E = n(47167),
     I = n(698718),
     f = n(985018),
@@ -27,10 +27,10 @@ function N(e) {
     let {
         channel: t,
         baseChannelId: n
-    } = e, N = (0, E.Ay)(t), S = (0, A.k)(), x = (0, A.r)(), v = (0, a.bG)([c.A], () => c.A.isMessageRequest(t.id)), b = (0, a.bG)([u.A], () => u.A.isSpam(t.id)), y = (0, _.D)(t.id, t.getRecipientId()), O = r.useCallback(() => {
-        p.A.closeChannelSidebar(g.fe), v && S && (0, m.iN)(t.id), b && x && (0, m.iN)(t.id)
-    }, [t.id, b, x, v, S]), L = r.useCallback(() => {
-        (0, l.showToast)((0, l.createToast)(f.intl.string(f.t.pIQ3h4), l.ToastType.FAILURE))
+    } = e, N = (0, E.Ay)(t), S = (0, A.k)(), x = (0, A.r)(), v = (0, l.bG)([c.A], () => c.A.isMessageRequest(t.id)), b = (0, l.bG)([u.A], () => u.A.isSpam(t.id)), y = (0, _.D)(t.id, t.getRecipientId()), O = a.useCallback(() => {
+        g.A.closeChannelSidebar(p.fe), v && S && (0, m.iN)(t.id), b && x && (0, m.iN)(t.id)
+    }, [t.id, b, x, v, S]), L = a.useCallback(() => {
+        (0, r.showToast)((0, r.createToast)(f.intl.string(f.t.pIQ3h4), r.ToastType.FAILURE))
     }, []), {
         markAsNotSpam: R
     } = (0, h.t)({
@@ -39,9 +39,9 @@ function N(e) {
     });
     if (null == t || !t.isDM()) return null;
     let P = [(0, i.jsx)(o.Ay.Icon, {
-        icon: l.PGe,
+        icon: r.PGe,
         tooltip: f.intl.string(f.t.cpT0Cq),
-        onClick: () => p.A.closeChannelSidebar(n)
+        onClick: () => g.A.closeChannelSidebar(n)
     }, "close")];
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(o.Ay, {
@@ -54,12 +54,12 @@ function N(e) {
             })
         }), b && (0, i.jsxs)("div", {
             className: T.F,
-            children: [(0, i.jsx)(l.Text, {
+            children: [(0, i.jsx)(r.Text, {
                 variant: "text-sm/normal",
                 children: f.intl.string(f.t.XVOKgj)
             }), (0, i.jsx)("div", {
                 className: T.$,
-                children: (0, i.jsx)(l.Button, {
+                children: (0, i.jsx)(r.Button, {
                     size: "sm",
                     onClick: () => R(t, y),
                     text: f.intl.string(f.t.koqL3Z)

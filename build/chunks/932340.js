@@ -3,9 +3,9 @@ n.d(t, {
     A: () => E
 });
 var i = n(627968),
-    r = n(64700),
-    a = n(311907),
-    l = n(397927),
+    a = n(64700),
+    l = n(311907),
+    r = n(397927),
     s = n(966871),
     o = n(447404),
     d = n(186111),
@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(915618),
     _ = n(361157),
     m = n(798817),
-    p = n(696016),
-    g = n(985018);
+    g = n(696016),
+    p = n(985018);
 
 function E(e) {
     let {
@@ -30,18 +30,18 @@ function E(e) {
         lastClipsSession: C,
         remindersEnabled: T,
         hasAnyClipAnimations: N
-    } = (0, a.cf)([A.A], () => ({
+    } = (0, l.cf)([A.A], () => ({
         hasNewClips: A.A.getNewClipIds().length > 0,
         lastClipsSession: A.A.getLastClipsSession(),
         remindersEnabled: A.A.getSettings().remindersEnabled,
         hasAnyClipAnimations: A.A.hasAnyClipAnimations()
-    })), S = null != C && C.newClipIds.length > 0, x = (0, _.K)(e => e.clipsButtonRef), v = (0, _.K)(e => e.setClipsButtonRef), b = (0, a.bG)([d.A], () => d.A.hasLayers()), {
+    })), S = null != C && C.newClipIds.length > 0, x = (0, _.K)(e => e.clipsButtonRef), v = (0, _.K)(e => e.setClipsButtonRef), b = (0, l.bG)([d.A], () => d.A.hasLayers()), {
         preventIdle: y,
         allowIdle: O
     } = (0, o.o)("animation");
 
     function L() {
-        (0, l.mMO)(async () => {
+        (0, r.mMO)(async () => {
             let {
                 default: e
             } = await Promise.all([n.e("42784"), n.e("72897")]).then(n.bind(n, 543428));
@@ -49,20 +49,20 @@ function E(e) {
                 ...t
             })
         }, {
-            modalKey: p.nm
+            modalKey: g.nm
         })
     }
-    return (r.useEffect(() => (N ? y() : O(), () => O()), [N, y, O]), I && E) ? (0, i.jsxs)(i.Fragment, {
-        children: [null != x && t && T && S && !(0, l.ueM)() && !b && (0, i.jsx)(m.A, {
+    return (a.useEffect(() => (N ? y() : O(), () => O()), [N, y, O]), I && E) ? (0, i.jsxs)(i.Fragment, {
+        children: [null != x && t && T && S && !(0, r.ueM)() && !b && (0, i.jsx)(m.A, {
             clipIconRef: x,
             lastClipsSession: C,
             onOpenClipsGallery: L
         }), (0, i.jsx)("div", {
             ref: v,
             children: (0, i.jsx)(s.A, {
-                icon: l.xgA,
+                icon: r.xgA,
                 showBadge: f,
-                tooltip: g.intl.string(g.t.MXaLEM),
+                tooltip: p.intl.string(p.t.MXaLEM),
                 onClick: L
             })
         })]

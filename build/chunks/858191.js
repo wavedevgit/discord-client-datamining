@@ -4,9 +4,9 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var r = n(426611),
-    a = n(459192),
-    l = n(927578),
+var a = n(426611),
+    l = n(459192),
+    r = n(927578),
     s = n(580630),
     o = n(881489),
     d = n(985018);
@@ -16,7 +16,7 @@ function c(e) {
         children: t,
         endsAt: n,
         variant: c = "initial"
-    } = e, u = (0, o.Zb)(n), A = (0, s.$g)(0, (0, l.Rr)(), {
+    } = e, u = (0, o.Zb)(n), A = (0, s.$g)(0, (0, r.Rr)(), {
         minimumFractionDigits: 0,
         maximumFractionDigits: 0
     }), h = "followup" === c, _ = h ? d.intl.string(d.t.gzhz8w) : d.intl.string(d.t.aopiS6), m = h ? d.intl.format(d.t["3iUE+U"], {
@@ -24,10 +24,10 @@ function c(e) {
     }) : d.intl.format(d.t.AQd9tZ, {
         days: u
     });
-    return (0, i.jsx)(a.u, {
+    return (0, i.jsx)(l.u, {
         title: m,
         body: _,
-        asset: (0, i.jsx)(r.y, {
+        asset: (0, i.jsx)(a.y, {
             alt: "",
             width: 48,
             height: 48

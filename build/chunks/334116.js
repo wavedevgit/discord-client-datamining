@@ -1,11 +1,11 @@
 /** chunk id: 334116 params = (module,exports,require) **/
 n.d(t, {
-    A: () => p
+    A: () => g
 });
 var i = n(627968),
-    r = n(73153),
-    a = n(272355),
-    l = n(958005),
+    a = n(73153),
+    l = n(272355),
+    r = n(958005),
     s = n(268218),
     o = n(574172),
     d = n(652215);
@@ -35,13 +35,13 @@ let c = (0, s.Fe)({
         webpackId: 860051,
         name: "PopoutWindowActivity"
     });
-class m extends a.A {
+class m extends l.A {
     _observer = null;
     _initialize() {
-        r.h.subscribe("CHANNEL_CALL_POPOUT_WINDOW_OPEN", this.handleOpenChannelCallPopout), r.h.subscribe("CALL_TILE_POPOUT_WINDOW_OPEN", this.handleOpenCallTilePopout), r.h.subscribe("RTC_DEBUG_POPOUT_WINDOW_OPEN", this.handleOpenRTCDebugPopout), r.h.subscribe("ACTIVITY_POPOUT_WINDOW_OPEN", this.handleOpenActivityPopout), this.initializeStyleSheetObserver()
+        a.h.subscribe("CHANNEL_CALL_POPOUT_WINDOW_OPEN", this.handleOpenChannelCallPopout), a.h.subscribe("CALL_TILE_POPOUT_WINDOW_OPEN", this.handleOpenCallTilePopout), a.h.subscribe("RTC_DEBUG_POPOUT_WINDOW_OPEN", this.handleOpenRTCDebugPopout), a.h.subscribe("ACTIVITY_POPOUT_WINDOW_OPEN", this.handleOpenActivityPopout), this.initializeStyleSheetObserver()
     }
     _terminate() {
-        r.h.unsubscribe("CHANNEL_CALL_POPOUT_WINDOW_OPEN", this.handleOpenChannelCallPopout), r.h.unsubscribe("CALL_TILE_POPOUT_WINDOW_OPEN", this.handleOpenCallTilePopout), r.h.unsubscribe("RTC_DEBUG_POPOUT_WINDOW_OPEN", this.handleOpenRTCDebugPopout), r.h.unsubscribe("ACTIVITY_POPOUT_WINDOW_OPEN", this.handleOpenActivityPopout), this.terminateStyleSheetObserver()
+        a.h.unsubscribe("CHANNEL_CALL_POPOUT_WINDOW_OPEN", this.handleOpenChannelCallPopout), a.h.unsubscribe("CALL_TILE_POPOUT_WINDOW_OPEN", this.handleOpenCallTilePopout), a.h.unsubscribe("RTC_DEBUG_POPOUT_WINDOW_OPEN", this.handleOpenRTCDebugPopout), a.h.unsubscribe("ACTIVITY_POPOUT_WINDOW_OPEN", this.handleOpenActivityPopout), this.terminateStyleSheetObserver()
     }
     handleOpenChannelCallPopout(e) {
         let {
@@ -62,8 +62,8 @@ class m extends a.A {
         let {
             channelId: t,
             participantId: n
-        } = e, r = (0, l.A)(t, n);
-        o.open(r, e => (0, i.jsx)(u, {
+        } = e, a = (0, r.A)(t, n);
+        o.open(a, e => (0, i.jsx)(u, {
             windowKey: e,
             channelId: t,
             participantId: n
@@ -107,4 +107,4 @@ class m extends a.A {
         })
     }
 }
-let p = new m
+let g = new m

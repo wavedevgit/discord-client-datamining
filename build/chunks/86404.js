@@ -7,8 +7,8 @@ var i = t(627968),
     l = t(397927),
     r = t(163126),
     s = t(688810),
-    o = t(183555),
-    d = t(913453),
+    d = t(183555),
+    o = t(913453),
     c = t(229187),
     u = t(657331),
     _ = t(503062),
@@ -20,24 +20,24 @@ function g(e) {
         user: n,
         guildId: t,
         channelId: g,
-        onClose: I
+        onClose: m
     } = e, {
-        mutualFriends: m
-    } = (0, d.A)(n), {
-        analyticsLocations: f
+        mutualFriends: I
+    } = (0, o.A)(n), {
+        analyticsLocations: h
     } = (0, s.Ay)(), {
-        context: h,
+        context: f,
         trackUserProfileAction: x
-    } = (0, o.NJ)(), v = (0, r.A)();
+    } = (0, d.NJ)(), v = (0, r.A)();
     return a.useEffect(() => {
         (0, c.A)(n.id, v)
     }, [n.id, v]), (0, i.jsx)(l.IpV, {
         className: A.DK,
         fade: !0,
-        children: null == m ? (0, i.jsx)("div", {
+        children: null == I ? (0, i.jsx)("div", {
             className: A.Ie,
             children: (0, i.jsx)(l.y$y, {})
-        }) : 0 === m.length ? (0, i.jsxs)("div", {
+        }) : 0 === I.length ? (0, i.jsxs)("div", {
             className: A.Ie,
             children: [(0, i.jsx)("div", {
                 className: A.on
@@ -45,7 +45,7 @@ function g(e) {
                 className: A.BI,
                 children: p.intl.string(p.t["/5p4gx"])
             })]
-        }) : m.map(e => {
+        }) : I.map(e => {
             let {
                 key: n,
                 user: a,
@@ -58,12 +58,12 @@ function g(e) {
                 channelId: g,
                 onSelect: () => {
                     var e;
-                    I?.(), x({
+                    m?.(), x({
                         action: "PRESS_MUTUAL_FRIEND"
                     }), e = a.id, (0, u.openUserProfileModal)({
-                        ...h,
+                        ...f,
                         userId: e,
-                        sourceAnalyticsLocations: f
+                        sourceAnalyticsLocations: h
                     })
                 }
             }, n)

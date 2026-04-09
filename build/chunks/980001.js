@@ -3,11 +3,11 @@ n.d(t, {
     A: () => d
 });
 var i = n(735438),
-    r = n.n(i),
-    a = n(626584),
-    l = n(543465),
+    a = n.n(i),
+    l = n(626584),
+    r = n(543465),
     s = n(723176);
-let o = new a.A("ReadStates"),
+let o = new l.A("ReadStates"),
     d = new class {
         async getAll(e) {
             let t = performance.now(),
@@ -24,16 +24,16 @@ let o = new a.A("ReadStates"),
             e.userGuildSettings.partial || s.A.userGuildSettingsTransaction(t).delete(), this.write(e.userGuildSettings.entries, e.userGuildSettings.version, t)
         }
         handleUserGuildSettingsUpdate(e, t) {
-            let n = r().max(e.userGuildSettings.map(e => e.version ?? -1));
+            let n = a().max(e.userGuildSettings.map(e => e.version ?? -1));
             null != n && this.write(e.userGuildSettings, n, t)
         }
         write(e, t, n) {
             let i = s.A.userGuildSettingsTransaction(n);
             for (let t of e) {
                 let e = {
-                    ...(0, l.wn)(t.guild_id),
+                    ...(0, r.wn)(t.guild_id),
                     ...t,
-                    channel_overrides: (0, l.b5)(t.channel_overrides)
+                    channel_overrides: (0, r.b5)(t.channel_overrides)
                 };
                 i.put(t.guild_id ?? "dm-sentinel", e)
             }

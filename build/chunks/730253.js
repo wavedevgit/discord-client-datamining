@@ -26,8 +26,8 @@ var i = n(627968),
     T = n(977997),
     S = n(661191),
     b = n(181079),
-    y = n(422258),
-    v = n(668267),
+    v = n(422258),
+    y = n(668267),
     j = n(93055),
     R = n(5180),
     O = n(210082),
@@ -108,7 +108,7 @@ function F(e) {
             eI.current = !0, et(e, t)
         }, [et]),
         eT = l.useCallback(e => {
-            e && ((0, v.mv)("intro_dc"), (0, E.u)(D.YYv)), eC ? (ec || (0, y.tV)(!0, "favorites_button_onboarding"), e && (0, o.mMO)(async () => {
+            e && ((0, y.mv)("intro_dc"), (0, E.u)(D.YYv)), eC ? (ec || (0, v.tV)(!0, "favorites_button_onboarding"), e && (0, o.mMO)(async () => {
                 let {
                     default: e
                 } = await n.e("59839").then(n.bind(n, 889186));

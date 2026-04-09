@@ -161,7 +161,7 @@ function er() {
                 }),
                 subscriptionRequired: !0,
                 progress: eN.getDate() / ev,
-                ctaText: W.intl.string(Y.default["bZLaD+"]),
+                ctaText: W.intl.string(W.t.w7s5Qr),
                 onCtaClick: () => (0, G.P)({
                     partnerId: U.XY
                 }),

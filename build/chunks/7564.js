@@ -1,12 +1,12 @@
 /** chunk id: 7564 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => _
+    A: () => v
 });
 var r = n(627968),
-    i = n(64700),
-    l = n(503698),
-    a = n.n(l),
+    l = n(64700),
+    i = n(503698),
+    a = n.n(i),
     s = n(397927),
     o = n(975807),
     u = n(212031),
@@ -44,8 +44,8 @@ function p(e) {
     })
 }
 
-function _() {
-    let e = i.useRef(null);
+function v() {
+    let e = l.useRef(null);
     return (0, r.jsxs)("div", {
         children: [(0, r.jsx)(d.A, {}), (0, r.jsxs)("div", {
             className: f.yJ,

@@ -28,15 +28,15 @@ function N(e) {
 }
 let v = e => (i = e, e),
     T = [A.BVt.VERIFY, A.BVt.VERIFY_HUB_EMAIL],
-    j = [A.BVt.GIFT_CARD_REDEEM];
+    C = [A.BVt.GIFT_CARD_REDEEM];
 
-function C(e) {
+function j(e) {
     let {
         children: t
     } = e, n = function() {
         let [e, t] = r.useState(!1), [n, s] = r.useState(!0), l = (0, o.bG)([p.A], () => p.A.hasLoadedExperiments);
         return ((0, d.A)(() => {}, 300), void 0 !== i) ? i : !n && l ? (e || t(!0), v("default")) : n ? v("default") : "loading"
-    }(), a = (0, l.zy)(), c = j.includes(a.pathname), u = T.includes(a.pathname);
+    }(), a = (0, l.zy)(), c = C.includes(a.pathname), u = T.includes(a.pathname);
     if (c) return t;
     switch (n) {
         case "default":
@@ -105,7 +105,7 @@ class S extends r.Component {
                         splash: e,
                         children: t
                     })]
-                }) : (0, s.jsx)(C, {
+                }) : (0, s.jsx)(j, {
                     children: t
                 })
             })

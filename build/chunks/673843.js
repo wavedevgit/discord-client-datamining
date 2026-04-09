@@ -1,12 +1,11 @@
 /** chunk id: 673843 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
     A: () => o
 });
 var i = n(64700),
-    s = n(311907),
-    a = n(73825),
-    l = n(97352),
+    a = n(311907),
+    l = n(73825),
+    s = n(97352),
     r = n(394300);
 
 function o(e) {
@@ -14,12 +13,12 @@ function o(e) {
         {
             isLoaded: n,
             isFetching: o
-        } = (0, s.cf)([l.A], () => ({
-            isLoaded: null == t || l.A.isLoadedForSKU(t),
-            isFetching: null != t && l.A.isFetchingForSKU(t)
+        } = (0, a.cf)([s.A], () => ({
+            isLoaded: null == t || s.A.isLoadedForSKU(t),
+            isFetching: null != t && s.A.isFetchingForSKU(t)
         })),
         d = i.useRef(!1);
     i.useEffect(() => {
-        null == t || n || o || d.current || (d.current = !0, (0, a.ur)(t).catch(() => {}))
+        null == t || n || o || d.current || (d.current = !0, (0, l.ur)(t).catch(() => {}))
     }, [t, n, o])
 }

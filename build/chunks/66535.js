@@ -14,18 +14,18 @@ var l = n(627968),
     _ = n(448368),
     m = n(538355),
     p = n(253932),
-    g = n(734057),
+    h = n(734057),
     x = n(838541),
-    h = n(985018),
+    g = n(985018),
     A = n(366073);
 let v = e => {
     let {
         message: t
-    } = e, n = (0, d.Ay)(t), v = (0, i.bG)([g.A], () => g.A.getChannel(t.channel_id)), b = a.useMemo(() => (0, s.A)(t), [t]), {
+    } = e, n = (0, d.Ay)(t), v = (0, i.bG)([h.A], () => h.A.getChannel(t.channel_id)), b = a.useMemo(() => (0, s.A)(t), [t]), {
         content: f
     } = (0, m.A)(b, {
         hideSimpleEmbedContent: !1
-    }), T = p.hH.useSetting(), E = a.useCallback(() => {
+    }), T = p.hH.useSetting(), S = a.useCallback(() => {
         let {
             leadingIcon: e,
             trailingIcon: n
@@ -48,11 +48,11 @@ let v = e => {
         children: [(0, l.jsx)(r.Heading, {
             className: A.wx,
             variant: "heading-sm/semibold",
-            children: h.intl.string(h.t.iouM3a)
+            children: g.intl.string(g.t.iouM3a)
         }), (0, l.jsx)(r.HOs, {
             className: A.PI,
             children: (0, l.jsx)(o.A, {
-                childrenMessageContent: E(),
+                childrenMessageContent: S(),
                 childrenHeader: (0, l.jsx)(u.Ay, {
                     message: t,
                     channel: v,

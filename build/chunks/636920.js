@@ -31,7 +31,7 @@ function N(e) {
         isSelf: T = !1,
         analyticsSource: S,
         onAction: b
-    } = e, y = (0, s.bG)([u.A], () => u.A.getVoiceChannelId() === n.id, [n]), v = (0, s.bG)([c.A], () => c.A.can(E.xBc.CONNECT, n), [n]), j = null == t.emoji || (0, m.n)(t.emoji, n);
+    } = e, v = (0, s.bG)([u.A], () => u.A.getVoiceChannelId() === n.id, [n]), y = (0, s.bG)([c.A], () => c.A.can(E.xBc.CONNECT, n), [n]), j = null == t.emoji || (0, m.n)(t.emoji, n);
     l.useEffect(() => {
         h.default.track(E.HAw.VIEW_HANG_STATUS, {
             source: S,
@@ -40,15 +40,15 @@ function N(e) {
         })
     }, [S, n.id, N]);
     let R = l.useCallback(() => {
-            !y && v && (d.default.selectVoiceChannel(n.id), b?.(), h.default.track(E.HAw.HANG_STATUS_CTA_CLICKED, {
+            !v && y && (d.default.selectVoiceChannel(n.id), b?.(), h.default.track(E.HAw.HANG_STATUS_CTA_CLICKED, {
                 source: S,
                 ...(0, p.A)(n.id),
                 other_user_id: N,
                 cta_type: "join"
             }))
-        }, [y, v, n.id, N, S, b]),
+        }, [v, y, n.id, N, S, b]),
         O = l.useCallback(() => {
-            if (!y || !j || null == t.state) return;
+            if (!v || !j || null == t.state) return;
             let [e] = (0, g.e)(N, t.state);
             if (null != e) {
                 if (e === x.Kk.CUSTOM) {
@@ -62,7 +62,7 @@ function N(e) {
                     cta_type: "swipe"
                 })
             }
-        }, [y, j, t, n.id, N, S, b]),
+        }, [v, j, t, n.id, N, S, b]),
         L = (0, _.Au)(N, t);
     return (0, i.jsxs)("div", {
         className: C.kL,
@@ -78,7 +78,7 @@ function N(e) {
                 delay: 0,
                 children: L
             })
-        }), y && !T ? (0, i.jsx)(r.m_, {
+        }), v && !T ? (0, i.jsx)(r.m_, {
             text: j ? void 0 : I.intl.string(I.t["0LMpW+"]),
             children: (0, i.jsx)("div", {
                 children: (0, i.jsx)(o.Button, {
@@ -89,7 +89,7 @@ function N(e) {
                     disabled: !j
                 })
             })
-        }) : !T && v && (0, i.jsx)(o.Button, {
+        }) : !T && y && (0, i.jsx)(o.Button, {
             size: "sm",
             variant: "secondary",
             text: I.intl.string(I.t["B/dHXL"]),

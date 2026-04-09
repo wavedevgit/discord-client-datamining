@@ -3,9 +3,9 @@ n.d(t, {
     A: () => x
 }), n(323874), n(14289), n(35956);
 var i = n(420970),
-    r = n(975807),
-    a = n(646865),
-    l = n(933958),
+    a = n(975807),
+    l = n(646865),
+    r = n(933958),
     s = n(51520),
     o = n(700475),
     d = n(969151),
@@ -15,8 +15,8 @@ var i = n(420970),
     h = n(780964),
     _ = n(954571),
     m = n(353835),
-    p = n(307600),
-    g = n(723702),
+    g = n(307600),
+    p = n(723702),
     E = n(636401),
     I = n(90924),
     f = n(629471),
@@ -40,27 +40,27 @@ let S = new Set([N.AM, N.eK]),
                     }
                 } = e;
                 (0, I.lG)(t.transport);
-                let i = l.Ay.getCurrentEmbeddedActivity();
+                let i = r.Ay.getCurrentEmbeddedActivity();
                 try {
                     let e = new URL(n).toString();
-                    if (g.isPlatformEmbedded) {
-                        let e = (0, a.f)() ? T.MLl.ACTIVITY_POPOUT : null;
+                    if (p.isPlatformEmbedded) {
+                        let e = (0, l.f)() ? T.MLl.ACTIVITY_POPOUT : null;
                         m.A.focus(e, !0)
                     }
-                    let l = u.A.getApplication(t.application?.id),
+                    let r = u.A.getApplication(t.application?.id),
                         o = (0, d.H)(i?.location);
-                    if (await (0, c.u)(l?.id, e)) return (0, r.A)(e), _.default.track(T.HAw.RPC_OPEN_EXTERNAL_LINK_CALLED, {
+                    if (await (0, c.u)(r?.id, e)) return (0, a.A)(e), _.default.track(T.HAw.RPC_OPEN_EXTERNAL_LINK_CALLED, {
                         application_id: t.application?.id,
                         url: e,
                         opened: !0
                     }), Promise.resolve({
                         opened: !0
                     });
-                    return new Promise(n => (0, p.h)({
+                    return new Promise(n => (0, g.h)({
                         href: e,
                         shouldConfirm: !0,
                         onConfirm: () => {
-                            (0, r.A)(e), _.default.track(T.HAw.RPC_OPEN_EXTERNAL_LINK_CALLED, {
+                            (0, a.A)(e), _.default.track(T.HAw.RPC_OPEN_EXTERNAL_LINK_CALLED, {
                                 application_id: t.application?.id,
                                 url: e,
                                 opened: !0
@@ -78,7 +78,7 @@ let S = new Set([N.AM, N.eK]),
                             })
                         }
                     }, void 0, void 0, (0, s.j)({
-                        application: l,
+                        application: r,
                         channelId: o
                     })))
                 } catch (e) {
@@ -120,12 +120,12 @@ let S = new Set([N.AM, N.eK]),
                     args: {
                         custom_id: n,
                         message: i,
-                        link_id: r
+                        link_id: a
                     }
                 } = e;
                 (0, I.lG)(t.transport);
-                let a = (0, I.D2)(t.application);
-                if (null == a) throw new E.A({
+                let l = (0, I.D2)(t.application);
+                if (null == l) throw new E.A({
                     errorCode: T.Lw6.INVALID_COMMAND
                 }, "No application.");
                 if (!(0, A.n)(t.application, T.gfo.EMBEDDED)) throw new E.A({
@@ -133,9 +133,9 @@ let S = new Set([N.AM, N.eK]),
                 }, "This application cannot access this API");
                 return new Promise(e => {
                     (0, o.a)({
-                        applicationId: a,
+                        applicationId: l,
                         customId: n,
-                        linkId: r,
+                        linkId: a,
                         message: i,
                         onShare: (t, n) => {
                             e({

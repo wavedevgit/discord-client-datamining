@@ -3,9 +3,9 @@ n.d(t, {
     A: () => m
 }), n(323874), n(14289), n(35956);
 var i = n(64700),
-    r = n(311907),
-    a = n(157559),
-    l = n(308528),
+    a = n(311907),
+    l = n(157559),
+    r = n(308528),
     s = n(793574),
     o = n(688810),
     d = n(429913),
@@ -21,21 +21,21 @@ function m(e) {
     } = e, n = (0, c.UC)() ?? [], {
         analyticsLocations: m
     } = (0, o.Ay)([...n, s.A.ACTIVITY_DETAIL_PAGE]), {
-        applicationId: p
-    } = t.params, [g] = (0, d.A)([p]), E = g?.bot?.id, I = (0, r.bG)([u.default], () => u.default.getCurrentUser());
+        applicationId: g
+    } = t.params, [p] = (0, d.A)([g]), E = p?.bot?.id, I = (0, a.bG)([u.default], () => u.default.getCurrentUser());
     return i.useEffect(() => {
         null != E && null != I && (async () => {
             try {
                 let e = new URL(location.href),
-                    t = await l.A.openPrivateChannel({
+                    t = await r.A.openPrivateChannel({
                         recipientIds: E
                     }),
                     n = e.searchParams.get("referrer_id") ?? void 0,
                     {
                         customId: i
-                    } = await (0, h.d9)(p, e.searchParams.get("link_id"), e.searchParams.get("custom_id"));
+                    } = await (0, h.d9)(g, e.searchParams.get("link_id"), e.searchParams.get("custom_id"));
                 await (0, A.A)({
-                    targetApplicationId: p,
+                    targetApplicationId: g,
                     channelId: t,
                     analyticsLocations: m,
                     customId: i,
@@ -43,9 +43,9 @@ function m(e) {
                 })
             } catch (e) {}
         })()
-    }, [m, p, E, I]), i.useEffect(() => {
+    }, [m, g, E, I]), i.useEffect(() => {
         let e = setTimeout(() => {
-            null == E && a.A.show({
+            null == E && l.A.show({
                 title: _.intl.string(_.t.PtobXW),
                 body: _.intl.string(_.t["IOy+I5"])
             })

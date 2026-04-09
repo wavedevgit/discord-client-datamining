@@ -3,9 +3,9 @@ n.d(t, {
     A: () => u
 });
 var i = n(627968),
-    r = n(64700),
-    a = n(621248),
-    l = n(975571),
+    a = n(64700),
+    l = n(621248),
+    r = n(975571),
     s = n(926466),
     o = n(652215),
     d = n(985018),
@@ -13,15 +13,15 @@ var i = n(627968),
 let u = e => {
     let {
         guild: t
-    } = e, n = r.useCallback(() => {
-        (0, a.x)(t.id)
+    } = e, n = a.useCallback(() => {
+        (0, l.x)(t.id)
     }, [t.id]);
     return (0, i.jsx)(s.A, {
         guild: t,
         onDismissed: n,
         message: d.intl.format(d.t["+QqO3U"], {
             maxMemberCount: t.maxMembers,
-            maxMembersUrl: l.A.getArticleURL(o.MVz.MAX_MEMBERS)
+            maxMembersUrl: r.A.getArticleURL(o.MVz.MAX_MEMBERS)
         }),
         type: o.n5X.MAX_MEMBER_COUNT,
         image: c,

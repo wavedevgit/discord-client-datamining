@@ -4,9 +4,9 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var r = n(397244),
-    a = n(714114),
-    l = n(729551),
+var a = n(397244),
+    l = n(714114),
+    r = n(729551),
     s = n(427262),
     o = n(985018),
     d = n(169940);
@@ -20,18 +20,18 @@ let c = function(e) {
         userIgnored: h
     } = e, {
         voiceChannel: _
-    } = (0, a.A)({
+    } = (0, l.A)({
         userId: A?.id
     });
     return h ? (0, i.jsx)("div", {
         className: d.Q,
         children: o.intl.string(o.t.tFY5Zb)
-    }) : (0, r.A)({
+    }) : (0, a.A)({
         activities: n,
         status: u,
         applicationStream: c,
         voiceChannel: _
-    }) ? (0, i.jsx)(l.A, {
+    }) ? (0, i.jsx)(r.A, {
         textClassName: d.q,
         activities: n,
         applicationStream: c,

@@ -19,17 +19,17 @@ let p = e => {
         channelId: n,
         reportId: p
     } = e, {
-        isIgnored: g,
+        isIgnored: h,
         isBlocked: x
     } = (0, i.cf)([c.A], () => ({
         isIgnored: c.A.isIgnored(t.id),
         isBlocked: c.A.isBlocked(t.id)
-    }), [t]), h = (0, i.bG)([o.A], () => o.A.getChannel(n), [n]), A = a.useMemo(() => u.Ay.getName(h?.guild_id, h?.id, t), [h, t]), v = a.useCallback(() => {
+    }), [t]), g = (0, i.bG)([o.A], () => o.A.getChannel(n), [n]), A = a.useMemo(() => u.Ay.getName(g?.guild_id, g?.id, t), [g, t]), v = a.useCallback(() => {
         s.Ay.trackWithMetadata(_.HAw.IAR_IGNORE_USER_BUTTON_CLICKED, {
             other_user_id: t.id,
             report_id: p
         }), r.A.ignoreUser(t.id, "web_iar_ignore_user_element", n)
-    }, [t, p, n]), b = a.useMemo(() => g || x, [g, x]);
+    }, [t, p, n]), b = a.useMemo(() => h || x, [h, x]);
     return (0, l.jsx)(d.PQ, {
         title: m.intl.formatToPlainString(m.t.U3yyFs, {
             username: A

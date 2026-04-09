@@ -1,6 +1,6 @@
 /** chunk id: 316862 params = (module,exports,require) **/
 n.d(t, {
-    A: () => h
+    A: () => g
 });
 var l = n(627968),
     a = n(64700),
@@ -14,13 +14,13 @@ var l = n(627968),
     _ = n(71393),
     m = n(576705),
     p = n(309010),
-    g = n(652215),
+    h = n(652215),
     x = n(985018);
-let h = e => {
+let g = e => {
     let {
         application: t,
         reportId: n
-    } = e, [h, A] = a.useState(!1), [v, b] = a.useState(!1), f = (0, i.bG)([p.A, u.A], () => u.A.getChannel(p.A.getChannelId())?.guild_id), [T, E] = a.useState(null);
+    } = e, [g, A] = a.useState(!1), [v, b] = a.useState(!1), f = (0, i.bG)([p.A, u.A], () => u.A.getChannel(p.A.getChannelId())?.guild_id), [T, S] = a.useState(null);
     a.useEffect(() => {
         null != T && (A(!0), b(!0))
     }, [T]), a.useEffect(() => {
@@ -33,13 +33,13 @@ let h = e => {
             } catch {}
             if (e || null == n) return;
             let l = n.find(e => e.application?.id === t.id);
-            null != l && E(l)
+            null != l && S(l)
         })(), () => {
             e = !0
         }
     }, [f, t.id]);
-    let S = a.useCallback(() => {
-            b(!1), s.Ay.trackWithMetadata(g.HAw.IAR_REMOVE_APP_BUTTON_CLICKED, {
+    let E = a.useCallback(() => {
+            b(!1), s.Ay.trackWithMetadata(h.HAw.IAR_REMOVE_APP_BUTTON_CLICKED, {
                 guild_id: f,
                 application_id: t.id,
                 report_id: n
@@ -53,16 +53,16 @@ let h = e => {
         I = (0, i.bG)([m.A, _.A], () => {
             let e = _.A.getGuild(f);
             if (null == e) return !1;
-            let n = m.A.can(g.xBc.MANAGE_GUILD, e),
-                l = null == t.bot || m.A.canManageUser(g.xBc.MANAGE_GUILD, t.bot.id, e);
+            let n = m.A.can(h.xBc.MANAGE_GUILD, e),
+                l = null == t.bot || m.A.canManageUser(h.xBc.MANAGE_GUILD, t.bot.id, e);
             return n && l
         });
-    return null != t && null != f && h && I ? (0, l.jsx)(c.PQ, {
+    return null != t && null != f && g && I ? (0, l.jsx)(c.PQ, {
         title: x.intl.string(x.t["WV/CsH"]),
         description: x.intl.string(x.t["FlcC+3"]),
         buttonText: v ? x.intl.string(x.t.aCJlq4) : x.intl.string(x.t["6I1F3i"]),
         buttonDisabled: !v,
-        onButtonPress: S,
+        onButtonPress: E,
         buttonVariant: v ? "critical-primary" : "secondary"
     }) : null
 }

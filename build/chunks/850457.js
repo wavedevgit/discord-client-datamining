@@ -27,7 +27,7 @@ var i = n(627968),
     S = n(985018),
     b = n(930935);
 
-function y(e) {
+function v(e) {
     let {
         event: t,
         guildId: n,
@@ -94,7 +94,7 @@ function y(e) {
     })
 }
 
-function v(e) {
+function y(e) {
     let {
         event: t,
         guildId: n,
@@ -157,11 +157,11 @@ function j(e) {
         guildId: n,
         channelId: l
     } = e;
-    return t.eventType === E.i.ACTIVITY_ENDED ? (0, i.jsx)(y, {
+    return t.eventType === E.i.ACTIVITY_ENDED ? (0, i.jsx)(v, {
         event: t,
         guildId: n,
         channelId: l
-    }) : t.eventType === E.i.USER_LEFT ? (0, i.jsx)(v, {
+    }) : t.eventType === E.i.USER_LEFT ? (0, i.jsx)(y, {
         event: t,
         guildId: n,
         channelId: l

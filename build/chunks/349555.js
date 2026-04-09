@@ -3,9 +3,9 @@ n.d(t, {
     A: () => I
 });
 var i = n(627968),
-    r = n(64700),
-    a = n(503698),
-    l = n.n(a),
+    a = n(64700),
+    l = n(503698),
+    r = n.n(l),
     s = n(873263),
     o = n(687498),
     d = n(535185),
@@ -15,60 +15,60 @@ var i = n(627968),
     h = n(710969),
     _ = n(439075),
     m = n(985018),
-    p = n(909901);
-let g = 4 * u.A.Millis.SECOND;
+    g = n(909901);
+let p = 4 * u.A.Millis.SECOND;
 
 function E(e) {
     let {
         children: t
-    } = e, n = r.useRef(null), [a, l] = r.useState(null), s = r.useCallback(() => {
-        l(function(e) {
+    } = e, n = a.useRef(null), [l, r] = a.useState(null), s = a.useCallback(() => {
+        r(function(e) {
             if (null == e) return 1;
             let t = Math.floor((e.clientWidth - 40 + 24) / 360);
             return t > 0 ? t : 1
         }(n.current))
-    }, [l]);
+    }, [r]);
     return (0, d.g)(n, s, [], {
         fireOnMount: !0
     }), (0, i.jsx)("div", {
-        className: p.kL,
+        className: g.kL,
         ref: n,
         style: {
             "--custom-min-quest-tile-width": "336px",
             "--custom-quest-grid-gap": "24px",
             "--custom-quest-grid-padding": "20px"
         },
-        children: null !== a && t(a)
+        children: null !== l && t(l)
     })
 }
-let I = r.forwardRef(function(e, t) {
+let I = a.forwardRef(function(e, t) {
     let {
         quests: n,
-        excludedQuests: a,
+        excludedQuests: l,
         isFetching: d,
         hasFetched: u,
         hasFiltersApplied: I = !1,
         onClearFilters: f
-    } = e, C = (0, s.zy)(), T = r.useRef(""), [N, S] = r.useState(null), [x, v] = r.useState(0), [{
+    } = e, C = (0, s.zy)(), T = a.useRef(""), [N, S] = a.useState(null), [x, v] = a.useState(0), [{
         highlightAnimationProgress: b
     }, y] = (0, c.zhh)(() => ({
         highlightAnimationProgress: 1,
         config: {
-            duration: g
+            duration: p
         }
-    })), O = r.useCallback(e => {
-        let t = (0, h.vc)(e, n, a);
+    })), O = a.useCallback(e => {
+        let t = (0, h.vc)(e, n, l);
         return null != t && (S(t.id), v(e => e + 1), !0)
-    }, [n, a]);
-    return (r.useImperativeHandle(t, () => ({
+    }, [n, l]);
+    return (a.useImperativeHandle(t, () => ({
         scrollToQuest: O
-    }), [O]), r.useLayoutEffect(() => {
+    }), [O]), a.useLayoutEffect(() => {
         if (0 === C.hash.length) {
             T.current = "";
             return
         }
         d || !u || C.hash !== T.current && O(C.hash.slice(1)) && (T.current = C.hash)
-    }, [C.hash, d, u, O]), r.useLayoutEffect(() => {
+    }, [C.hash, d, u, O]), a.useLayoutEffect(() => {
         if (null == N) return;
         let e = document.getElementById(`quest-tile-${N}`);
         null != e && (e.scrollIntoView({
@@ -87,9 +87,9 @@ let I = r.forwardRef(function(e, t) {
             }
         }))
     }, [N, x, y]), d && 0 === n.length) ? (0, i.jsx)(c.y$y, {
-        className: p.u1
+        className: g.u1
     }) : 0 === n.length ? (0, i.jsxs)("div", {
-        className: p.y7,
+        className: g.y7,
         children: [(0, i.jsx)(c.Heading, {
             variant: "heading-xl/semibold",
             children: m.intl.string(I ? m.t.PBfFnx : m.t.NqFP6z)
@@ -102,14 +102,14 @@ let I = r.forwardRef(function(e, t) {
         })]
     }) : (0, i.jsx)(E, {
         children: e => n.map((t, n) => {
-            let r = Math.floor(n / e),
-                a = N === t.id,
-                s = null != N && !a;
+            let a = Math.floor(n / e),
+                l = N === t.id,
+                s = null != N && !l;
             return (0, i.jsxs)(o.animated.div, {
-                className: l()({
-                    [p.XB]: a
+                className: r()({
+                    [g.XB]: l
                 }),
-                style: a ? {
+                style: l ? {
                     boxShadow: (0, o.to)([b.to({
                         range: [0, .25, .75, 1],
                         output: [0, 1, 1, 0]
@@ -120,14 +120,14 @@ let I = r.forwardRef(function(e, t) {
                         output: [1, .4, .4, 1]
                     })], e => e)
                 } : void 0,
-                children: [a && (0, i.jsx)("div", {
-                    className: p.E4
+                children: [l && (0, i.jsx)("div", {
+                    className: g.E4
                 }, x), (0, i.jsx)(_.A, {
                     quest: t,
                     questContent: A.uF.QUEST_HOME_DESKTOP,
                     contentPosition: n,
-                    rowIndex: r,
-                    className: p.d,
+                    rowIndex: a,
+                    className: g.d,
                     sourceQuestContent: A.uF.QUEST_HOME_DESKTOP
                 })]
             }, t.id)

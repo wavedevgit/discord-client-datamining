@@ -15,8 +15,8 @@ var n = r(627968),
     _ = r(303136),
     p = r(649032),
     f = r(320118),
-    b = r(976860),
-    h = r(780964),
+    h = r(976860),
+    b = r(780964),
     g = r(858897),
     x = r(975571),
     C = r(872725),
@@ -29,11 +29,11 @@ var n = r(627968),
     y = r(985018),
     I = r(102600),
     P = r(909340),
-    S = r(455482);
-let T = x.A.getArticleURL(v.MVz.ORBS_REWARDS_FAQ);
+    T = r(455482);
+let S = x.A.getArticleURL(v.MVz.ORBS_REWARDS_FAQ);
 
 function w(e) {
-    (0, A.o8)(e), window.open(T, "_blank")
+    (0, A.o8)(e), window.open(S, "_blank")
 }
 let O = e => {
     let {
@@ -43,11 +43,11 @@ let O = e => {
         programReward: i
     } = (0, f.F)({
         location: "PremiumTenureRewardsOrbsCard"
-    }), x = (0, u.A)("(min-width: 720px)"), T = (0, m.DP)(), O = a.useMemo(() => ({
+    }), x = (0, u.A)("(min-width: 720px)"), S = (0, m.DP)(), O = a.useMemo(() => ({
         hueRotate: 25,
-        glowAmount: (0, o.M)(T) ? 2 : 8,
+        glowAmount: (0, o.M)(S) ? 2 : 8,
         blurAmount: 10
-    }), [T]);
+    }), [S]);
     if (!r || null == i) return null;
     let M = function(e, t) {
         let r = e.program_current_state,
@@ -61,7 +61,7 @@ let O = e => {
                         text: y.intl.string(N.default.BxjHiu),
                         variant: t ? "overlay-primary" : "secondary",
                         onClick: () => {
-                            (0, A.WD)(r), (0, b.pX)(j.BV.COLLECTIBLES_SHOP_WITH_TAB(E.G2.ORBS))
+                            (0, A.WD)(r), (0, h.pX)(j.BV.COLLECTIBLES_SHOP_WITH_TAB(E.G2.ORBS))
                         }
                     }), headerText: y.intl.format(N.default.BxLJQL, {
                         days: Math.max(1, a),
@@ -76,7 +76,7 @@ let O = e => {
                         text: y.intl.string(N.default.KVCfnE),
                         variant: t ? "overlay-primary" : "secondary",
                         onClick: () => {
-                            (0, A.CC)(r), (0, g.openUserSettings)(h.X.BILLING_PANEL)
+                            (0, A.CC)(r), (0, g.openUserSettings)(b.X.BILLING_PANEL)
                         }
                     }), headerText: y.intl.string(N.default.uuZJXR), subheaderText: y.intl.format(N.default.dkeEV7, {
                         helpdeskArticle: () => w(r)
@@ -92,7 +92,7 @@ let O = e => {
                                 text: y.intl.string(N.default.KVCfnE),
                                 variant: "critical-secondary",
                                 onClick: () => {
-                                    (0, A.ue)(r), (0, g.openUserSettings)(h.X.BILLING_PANEL)
+                                    (0, A.ue)(r), (0, g.openUserSettings)(b.X.BILLING_PANEL)
                                 }
                             })
                         })
@@ -106,7 +106,7 @@ let O = e => {
                         text: y.intl.string(N.default["wLAd/+"]),
                         variant: t ? "overlay-primary" : "secondary",
                         onClick: () => {
-                            (0, A.WD)(r), (0, b.pX)(j.BV.COLLECTIBLES_SHOP_WITH_TAB(E.G2.ORBS))
+                            (0, A.WD)(r), (0, h.pX)(j.BV.COLLECTIBLES_SHOP_WITH_TAB(E.G2.ORBS))
                         }
                     }), headerText: y.intl.string(N.default.zF0HnJ), subheaderText: y.intl.format(N.default["5tzNTa"], {
                         helpdeskArticle: () => w(r)
@@ -119,7 +119,7 @@ let O = e => {
                         variant: t ? "overlay-primary" : "secondary",
                         icon: d.tvc,
                         onClick: () => {
-                            (0, A.Jv)(r), (0, g.openUserSettings)(h.X.SUBSCRIPTIONS_PANEL)
+                            (0, A.Jv)(r), (0, g.openUserSettings)(b.X.SUBSCRIPTIONS_PANEL)
                         }
                     }), headerText: y.intl.string(N.default.ISnOet), subheaderText: y.intl.format(N.default["vjaRZ/"], {
                         helpdeskArticle: () => w(r)
@@ -150,7 +150,7 @@ let O = e => {
             }), (0, n.jsxs)("div", {
                 className: I.zK,
                 children: [(0, n.jsx)("img", {
-                    src: S.A,
+                    src: T.A,
                     className: I._e,
                     alt: "",
                     "aria-hidden": !0

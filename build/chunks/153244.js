@@ -1,11 +1,11 @@
 /** chunk id: 153244 params = (module,exports,require) **/
 n.d(t, {
-    A: () => p
+    A: () => g
 });
 var i = n(627968),
-    r = n(64700),
-    a = n(873263),
-    l = n(820284),
+    a = n(64700),
+    l = n(873263),
+    r = n(820284),
     s = n(549711),
     o = n(726249),
     d = n(210714),
@@ -16,11 +16,11 @@ var i = n(627968),
     _ = n(828648);
 
 function m() {
-    return (0, i.jsxs)(a.dO, {
+    return (0, i.jsxs)(l.dO, {
         children: [(0, i.jsx)(s.A, {
             path: A.BVt.APPLICATION_LIBRARY_SETTINGS,
             exact: !0,
-            children: (0, i.jsxs)(l.A, {
+            children: (0, i.jsxs)(r.A, {
                 page: A.liQ.LIBRARY_SETTINGS,
                 root: !0,
                 children: [(0, i.jsx)(o.HI, {
@@ -29,7 +29,7 @@ function m() {
             })
         }), (0, i.jsx)(s.A, {
             path: A.BVt.APPLICATION_LIBRARY,
-            children: (0, i.jsxs)(l.A, {
+            children: (0, i.jsxs)(r.A, {
                 page: A.liQ.LIBRARY,
                 root: !0,
                 children: [(0, i.jsx)(o.HI, {
@@ -39,8 +39,8 @@ function m() {
         })]
     })
 }
-let p = r.memo(function() {
-    return r.useEffect(() => {
+let g = a.memo(function() {
+    return a.useEffect(() => {
         (0, d.d)("application_library")
     }, []), (0, i.jsxs)("div", {
         className: _.k,

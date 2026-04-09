@@ -28,13 +28,13 @@ let C = () => {
         churnUserDiscountOffer: v,
         discountedPrice: j,
         fullPrice: E
-    } = (0, d.X)(), [_, D] = (0, r.useState)(!1), [S, N] = (0, r.useState)(!1), A = async () => {
-        if (null === v) return void N(!0);
-        D(!0), N(!1);
+    } = (0, d.X)(), [_, D] = (0, r.useState)(!1), [N, S] = (0, r.useState)(!1), A = async () => {
+        if (null === v) return void S(!0);
+        D(!0), S(!1);
         try {
             await y(), P(c.g.DISCOUNT_APPLIED)
         } catch (t) {
-            N(!0), D(!1)
+            S(!0), D(!1)
         }
     };
     if (null === v || null === j) return (0, n.jsx)("div", {
@@ -90,7 +90,7 @@ let C = () => {
                     helpdeskArticle: s.A.getArticleURL(f.MVz.PAID_TERMS)
                 })
             })
-        }), S ? (0, n.jsx)(l.wx6, {
+        }), N ? (0, n.jsx)(l.wx6, {
             type: "critical",
             children: p.intl.string(p.t["5mlOCW"])
         }) : null]

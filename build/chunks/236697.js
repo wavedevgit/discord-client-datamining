@@ -3,9 +3,9 @@ n.d(t, {
     u: () => f
 });
 var i = n(627968),
-    r = n(64700),
-    a = n(964892),
-    l = n(208756),
+    a = n(64700),
+    l = n(964892),
+    r = n(208756),
     s = n(135564),
     o = n(916845),
     d = n(627330),
@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(881373),
     _ = n(788868),
     m = n(49999),
-    p = n(284498),
-    g = n(985018),
+    g = n(284498),
+    p = n(985018),
     E = n(693703),
     I = n(240703);
 
@@ -27,7 +27,7 @@ function f(e) {
         children: f
     } = e, {
         analyticsLocations: C
-    } = (0, u.Ay)(), T = r.useCallback(() => {
+    } = (0, u.Ay)(), T = a.useCallback(() => {
         n(m.i.TAKE_ACTION), (0, A.A)({
             subscriptionTier: _.pe.TIER_2,
             analyticsLocations: C
@@ -36,7 +36,7 @@ function f(e) {
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)("div", {
             children: f
-        }), (0, i.jsx)(a.x, {
+        }), (0, i.jsx)(l.x, {
             targetElementRef: t,
             onRequestClose: () => n(m.i.USER_DISMISS),
             alignmentStrategy: "edge",
@@ -60,17 +60,17 @@ function f(e) {
                         className: E.S
                     })
                 }), (0, i.jsx)(d.D, {
-                    title: g.intl.string(p.default.OlObRa),
-                    body: g.intl.format(p.default["A+56/R"], {
+                    title: p.intl.string(g.default.OlObRa),
+                    body: p.intl.format(g.default["A+56/R"], {
                         discountPercent: h.aW
                     }),
                     badge: {
                         type: "beta",
                         variant: "expressive"
                     }
-                }), (0, i.jsx)(l.Z, {
+                }), (0, i.jsx)(r.Z, {
                     actions: [{
-                        text: g.intl.string(g.t.pj0XBN),
+                        text: p.intl.string(p.t.pj0XBN),
                         variant: "primary",
                         icon: c.tvc,
                         iconPosition: "start",

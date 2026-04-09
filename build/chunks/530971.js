@@ -35,14 +35,14 @@ function A(e) {
     v(p);
     let A = (0, i.bG)([a.A], () => a.A.useReducedMotion),
         [I, L] = r.useState(void 0),
-        [j, k] = r.useState(!0),
+        [j, O] = r.useState(!0),
         T = r.useMemo(() => s.filter(e => !b.MS.some(t => {
             let {
                 categorySkuId: s
             } = t;
             return s === e.skuId
         })), [s]),
-        O = (0, o.f)("CollectiblesContent"),
+        k = (0, o.f)("CollectiblesContent"),
         y = r.useCallback(e => {
             let {
                 sourceButton: t,
@@ -54,7 +54,7 @@ function A(e) {
             u(t, s);
             let i = n && !A,
                 a = l ? b.G2.ORBS : b.G2.CATALOG;
-            L(s), k(!r), c(a, i)
+            L(s), O(!r), c(a, i)
         }, [A, c, u]),
         {
             searchError: N
@@ -63,11 +63,11 @@ function A(e) {
         onRetry: _,
         errorMessage: p,
         errorOrigin: h.A.SHOP_PAGE
-    }) : t === b.G2.HOME && O ? (0, n.jsx)(x.A, {
+    }) : t === b.G2.HOME && k ? (0, n.jsx)(x.A, {
         tab: l.g.HOME,
         transitionState: d,
         handleTransition: y
-    }) : t === b.G2.ORBS && O ? (0, n.jsx)(x.A, {
+    }) : t === b.G2.ORBS && k ? (0, n.jsx)(x.A, {
         tab: l.g.ORBS,
         transitionState: d,
         handleTransition: y
@@ -81,7 +81,7 @@ function A(e) {
         initialCategoryId: I,
         showFilterInitially: j,
         onUnmount: () => {
-            L(void 0), k(!0)
+            L(void 0), O(!0)
         }
     })
 }

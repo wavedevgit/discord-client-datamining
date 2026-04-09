@@ -1,11 +1,11 @@
 /** chunk id: 92534 params = (module,exports,require) **/
 n.d(t, {
-    B: () => g
+    B: () => p
 });
 var i = n(627968),
-    r = n(64700),
-    a = n(308368),
-    l = n(308528),
+    a = n(64700),
+    l = n(308368),
+    r = n(308528),
     s = n(442433),
     o = n(49229),
     d = n(956793),
@@ -15,17 +15,17 @@ var i = n(627968),
     h = n(734057),
     _ = n(652215),
     m = n(381941),
-    p = n(985018);
+    g = n(985018);
 
-function g(e) {
+function p(e) {
     return {
-        handlePrimaryAction: r.useCallback(t => {
+        handlePrimaryAction: a.useCallback(t => {
             switch (t.type) {
                 case u.c.OPEN_DIRECT_MESSAGE:
                     if (null == t.userId) return;
                     (async () => {
                         try {
-                            let e = await l.A.getOrEnsurePrivateChannel(t.userId);
+                            let e = await r.A.getOrEnsurePrivateChannel(t.userId);
                             d.default.selectPrivateChannel(e)
                         } catch {}
                     })();
@@ -85,7 +85,7 @@ function g(e) {
                     break;
                 case u.c.SEND_ACTIVITY_INVITE:
                     if (null == t.userId || null == t.activity) return;
-                    a.A.sendActivityInviteUser({
+                    l.A.sendActivityInviteUser({
                         type: _.xL.JOIN,
                         userId: t.userId,
                         activity: t.activity,
@@ -94,7 +94,7 @@ function g(e) {
                     break;
                 case u.c.ASK_TO_JOIN:
                     if (null == t.userId || null == t.activity) return;
-                    a.A.sendActivityInviteUser({
+                    l.A.sendActivityInviteUser({
                         type: _.xL.JOIN_REQUEST,
                         userId: t.userId,
                         activity: t.activity,
@@ -107,13 +107,13 @@ function g(e) {
                         n = t.userId;
                     (async () => {
                         try {
-                            let t = await l.A.getOrEnsurePrivateChannel(n);
+                            let t = await r.A.getOrEnsurePrivateChannel(n);
                             d.default.selectPrivateChannel(t);
                             let i = h.A.getChannel(t);
                             if (null == i) return;
                             !0 === e.extra.fake_inventory_item ? await (0, c.J)({
                                 channel: i,
-                                content: p.intl.formatToPlainString(p.t.UVBA9g, {
+                                content: g.intl.formatToPlainString(g.t.UVBA9g, {
                                     gameName: e.extra.game_name
                                 }),
                                 whenReady: !0,
@@ -121,7 +121,7 @@ function g(e) {
                                 location: m.Hx.CONTENT_INVENTORY_MEMBERLIST
                             }) : await (0, c.d)({
                                 channel: i,
-                                content: p.intl.string(p.t.DwAcMz),
+                                content: g.intl.string(g.t.DwAcMz),
                                 entry: e,
                                 whenReady: !0,
                                 doNotNotifyOnError: !1,
@@ -140,7 +140,7 @@ function g(e) {
                     t.type
             }
         }, [e]),
-        handleContextMenu: r.useCallback(e => {
+        handleContextMenu: a.useCallback(e => {
             switch (e.type) {
                 case u.K.FRIEND_ROW:
                     if (null == e.user) return;
@@ -228,9 +228,9 @@ function g(e) {
                     let t = e.guild?.id ?? null;
                     (0, s.L3)(e.event, async () => {
                         let {
-                            default: r
+                            default: a
                         } = await Promise.all([n.e("97262"), n.e("32418"), n.e("84821")]).then(n.bind(n, 668569));
-                        return n => (0, i.jsx)(r, {
+                        return n => (0, i.jsx)(a, {
                             ...n,
                             user: e.user,
                             guildId: t ?? void 0,

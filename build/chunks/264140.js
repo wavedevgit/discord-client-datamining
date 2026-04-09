@@ -27,8 +27,8 @@ var f = n(483270),
     T = n(156579),
     S = n(108959),
     b = n(480720),
-    y = n(323073),
-    v = n(793574),
+    v = n(323073),
+    y = n(793574),
     j = n(568598),
     R = n(313961),
     O = n(164617),
@@ -81,8 +81,8 @@ var f = n(483270),
     eT = n(873614),
     eS = n(323443),
     eb = n(566388),
-    ey = n(168675),
-    ev = n(170428),
+    ev = n(168675),
+    ey = n(170428),
     ej = n(494208),
     eR = n(933057),
     eO = n(328808),
@@ -188,7 +188,7 @@ class tl extends l.PureComponent {
             userId: e.getRecipientId(),
             guildId: e.guild_id,
             channelId: e.id,
-            sourceAnalyticsLocations: [v.A.CHANNEL_HEADER]
+            sourceAnalyticsLocations: [y.A.CHANNEL_HEADER]
         })
     };
     openChannelContextMenu(e, t) {
@@ -308,7 +308,7 @@ class tl extends l.PureComponent {
             case e6.rbe.ANNOUNCEMENT_THREAD:
             case e6.rbe.PRIVATE_THREAD:
             case e6.rbe.PUBLIC_THREAD:
-                e.isModeratorReportChannel() && r.push((0, i.jsx)(ev.A, {
+                e.isModeratorReportChannel() && r.push((0, i.jsx)(ey.A, {
                     channel: e
                 })), null == t || t.isForumLikeChannel() || r.push((0, i.jsx)(ej.A, {
                     channel: t
@@ -679,7 +679,7 @@ class tl extends l.PureComponent {
             switch (l.type) {
                 case eC.PE.CREATE_THREAD:
                     if (t?.isForumLikeChannel()) return null;
-                    e = (0, i.jsx)(ey.A, {
+                    e = (0, i.jsx)(ev.A, {
                         parentChannelId: l.parentChannelId,
                         parentMessageId: l.parentMessageId,
                         location: l.location
@@ -789,7 +789,7 @@ let ts = (0, E.A)(tl),
             providedChannel: t
         } = e, [n, s] = l.useState(null), a = (0, h.bG)([ez.A], () => ez.A.getChannelId()), r = (0, h.bG)([ez.A], () => ez.A.getVoiceChannelId()), o = (0, h.bG)([eV.A], () => t ?? eV.A.getChannel(a), [a, t]), d = (0, V.DZ)(), m = (0, V.e4)(o, "ConnectedChannel"), g = (0, h.bG)([eV.A], () => eV.A.getChannel(r), [r]), f = m?.parent_id, x = (0, h.bG)([eV.A], () => eV.A.getChannel(f), [f]), E = (0, h.bG)([eW.A], () => eW.A.getGuild(m?.guild_id), [m]), {
             needSubscriptionToAccess: T
-        } = (0, $.A)(m?.id ?? void 0), v = (0, h.bG)([R.A], () => {
+        } = (0, $.A)(m?.id ?? void 0), y = (0, h.bG)([R.A], () => {
             let e = null != a ? R.A.getParticipants(a) : [],
                 t = null != a ? R.A.getActivityParticipants(a) : [];
             return e.length - t.length > 0
@@ -804,7 +804,7 @@ let ts = (0, E.A)(tl),
             k = (0, h.bG)([N.Ay], () => N.Ay.getActivityPanelMode()),
             w = null != P && !(0, S.A)(m?.id) && k === e5.Gd.PANEL,
             H = (0, h.bG)([eX.A], () => null != m && m.isVocalThread() && !c().isEmpty(eX.A.getVoiceStatesForChannel(m.id)), [m]),
-            K = null != m && m.isPrivate() && !w && v,
+            K = null != m && m.isPrivate() && !w && y,
             Y = m?.isGuildVocal() || K || H,
             z = (0, h.bG)([F.A], () => F.A.getFrameLayoutMode() === e8.y.FOCUSED),
             {
@@ -828,7 +828,7 @@ let ts = (0, E.A)(tl),
             ea = (0, e$.Ay)(m),
             er = (0, e$.Ay)(m, !0),
             eo = (0, h.bG)([R.A], () => null != m ? R.A.getSelectedParticipant(m.id) : null),
-            ed = (0, y.vL)(m),
+            ed = (0, v.vL)(m),
             ec = (0, eN.IL)(m),
             eu = null != m && r === m.id,
             ep = null != m && m.isGuildStageVoice();

@@ -67,11 +67,11 @@ function h(e) {
             rows: A,
             columns: _
         }
-    })(f, x, E), [f, x, E]), S = T + 1, b = S * C + (S - 1) * 8 <= p, y = Math.floor(C / d) + 8, v = Math.max(0, E - y * N) / 2;
+    })(f, x, E), [f, x, E]), S = T + 1, b = S * C + (S - 1) * 8 <= p, v = Math.floor(C / d) + 8, y = Math.max(0, E - v * N) / 2;
     return (0, i.jsx)(r.A, {
         fade: !0,
         className: t,
-        listPadding: [h + v, 0, A + v - 8, 8],
+        listPadding: [h + y, 0, A + y - 8, 8],
         renderRow: function(e) {
             let t = e * T;
             return (0, i.jsx)("div", {
@@ -95,7 +95,7 @@ function h(e) {
         },
         rowCount: N,
         rowCountBySection: [N],
-        rowHeight: y,
+        rowHeight: v,
         onResize: m
     })
 }

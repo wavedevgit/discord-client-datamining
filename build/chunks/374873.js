@@ -26,8 +26,8 @@ var i = n(627968),
     T = n(925931),
     S = n(105530),
     b = n(699970),
-    y = n(345687),
-    v = n(818348),
+    v = n(345687),
+    y = n(818348),
     j = n(985018),
     R = n(463591);
 let O = l.memo(function(e) {
@@ -68,11 +68,11 @@ let O = l.memo(function(e) {
         o()(null != N, "Channel cannot be guildless");
         let {
             isMobile: b,
-            status: y
+            status: v
         } = (0, d.cf)([I.A], () => ({
             isMobile: I.A.isMobileOnline(s.user.id),
             status: I.A.getStatus(s.user.id, N)
-        })), v = (0, d.bG)([x.Ay], () => x.Ay.getMember(N, s.user.id)), O = (0, g.gn)(t.guild_id, v?.userId, v?.colorStrings ?? null), L = l.useMemo(() => ({
+        })), y = (0, d.bG)([x.Ay], () => x.Ay.getMember(N, s.user.id)), O = (0, g.gn)(t.guild_id, y?.userId, y?.colorStrings ?? null), L = l.useMemo(() => ({
             [N]: [s.user.id]
         }), [N, s.user.id]);
         (0, m.Eq)(L, "RequestToSpeakSidebar");
@@ -111,12 +111,12 @@ let O = l.memo(function(e) {
                         className: R.RB,
                         user: s.user,
                         isMobile: b,
-                        status: y
+                        status: v
                     }), (0, i.jsxs)("div", {
                         className: R.kH,
                         children: [(0, i.jsx)(u.gyj, {
                             name: s.userNick,
-                            colorString: v?.colorString ?? null,
+                            colorString: y?.colorString ?? null,
                             colorStrings: O,
                             className: R.F8
                         }), (0, i.jsx)(u.Text, {
@@ -168,7 +168,7 @@ let O = l.memo(function(e) {
     D = l.memo(function() {
         return (0, i.jsxs)("div", {
             className: R.y7,
-            children: [(0, i.jsx)(y.A, {}), (0, i.jsx)(u.Text, {
+            children: [(0, i.jsx)(v.A, {}), (0, i.jsx)(u.Text, {
                 className: R.vo,
                 variant: "text-lg/semibold",
                 color: "text-strong",
@@ -187,7 +187,7 @@ function U(e) {
         channel: t,
         toggleRequestToSpeakSidebar: n,
         chatOpen: l
-    } = e, s = (0, N.J2)(t.id), r = [+!!(0, d.bG)([E.A], () => E.A.can(v.xB.MANAGE_CHANNELS, t) || E.A.can(v.xB.MANAGE_ROLES, t)), Math.max(1, s.length)];
+    } = e, s = (0, N.J2)(t.id), r = [+!!(0, d.bG)([E.A], () => E.A.can(y.xB.MANAGE_CHANNELS, t) || E.A.can(y.xB.MANAGE_ROLES, t)), Math.max(1, s.length)];
     return (0, i.jsxs)("div", {
         className: a()(R.kL, {
             [R.X_]: l

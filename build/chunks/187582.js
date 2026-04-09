@@ -26,8 +26,8 @@ var i = n(627968),
     T = n(398219),
     S = n(427262),
     b = n(837921),
-    y = n(652215),
-    v = n(985018),
+    v = n(652215),
+    y = n(985018),
     j = n(305733);
 let R = [],
     O = b.Ay.getEnableHardwareAcceleration();
@@ -52,9 +52,9 @@ function L(e) {
     }, L = () => {
         let e = `@${S.Ay.getUserTag(t,{decoration:"never"})}`,
             n = `<@${t.id}>`;
-        N._.dispatch(y.jej.TEXTAREA_FOCUS, {
+        N._.dispatch(v.jej.TEXTAREA_FOCUS, {
             channelId: r.id
-        }), N._.dispatchToLastSubscribed(y.jej.INSERT_TEXT, {
+        }), N._.dispatchToLastSubscribed(v.jej.INSERT_TEXT, {
             plainText: e,
             rawText: n
         }), d.A.startTyping(r.id)
@@ -81,7 +81,7 @@ function L(e) {
                 user: t,
                 currentUser: p,
                 isOwner: t.id === r.ownerId,
-                ownerTooltipText: v.intl.string(v.t["MRXZ+x"]),
+                ownerTooltipText: y.intl.string(y.t["MRXZ+x"]),
                 shouldAnimateStatus: O,
                 isTyping: A,
                 status: u,
@@ -126,10 +126,10 @@ function D(e) {
         let e = (0, T.F)(t.recipients, I.default),
             n = {};
         for (let t of e) x.A.isFriend(t.id) || t.id === I.default.getCurrentUser()?.id ? n[t.id] = {
-            status: f.A.getStatus(t.id) ?? y.clD.OFFLINE,
+            status: f.A.getStatus(t.id) ?? v.clD.OFFLINE,
             activities: f.A.getActivities(t.id) ?? R
         } : n[t.id] = {
-            status: y.clD.OFFLINE,
+            status: v.clD.OFFLINE,
             activities: R
         };
         let i = [];
@@ -146,7 +146,7 @@ function D(e) {
         }
     }, [t], M);
     l.useEffect(() => {
-        C.default.track(y.HAw.MEMBER_LIST_VIEWED, {
+        C.default.track(v.HAw.MEMBER_LIST_VIEWED, {
             channel_id: t.id,
             channel_type: t.type,
             guild_id: t.guild_id
@@ -164,7 +164,7 @@ function D(e) {
                     fade: !0,
                     children: [(0, i.jsxs)(p.A, {
                         className: j.lL,
-                        children: [`${v.intl.string(v.t["9Oq93m"])}—${d.length} `, c && (0, i.jsx)(A.A, {
+                        children: [`${y.intl.string(y.t["9Oq93m"])}—${d.length} `, c && (0, i.jsx)(A.A, {
                             type: A.A.Types.STAFF_ONLY_DM
                         })]
                     }), d.map(e => (0, i.jsx)(L, {

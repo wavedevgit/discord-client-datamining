@@ -1,7 +1,7 @@
 /** chunk id: 34442 params = (module,exports,require) **/
 n.d(t, {
-    IU: () => x,
-    dE: () => f
+    IU: () => h,
+    dE: () => x
 });
 var i = n(627968),
     a = n(64700),
@@ -19,64 +19,64 @@ function m(e) {
         widgetType: t,
         widget: n,
         onAddGame: m,
-        children: x,
-        ...f
+        children: h,
+        ...x
     } = e, p = a.useMemo(() => new Set(n.games.map(e => e.applicationId)), [n.games]), {
-        trackUserProfileEditAction: h
-    } = (0, o.NJ)(), [_, A] = a.useState(""), I = a.useRef(""), {
+        trackUserProfileEditAction: f
+    } = (0, o.NJ)(), [A, _] = a.useState(""), I = a.useRef(""), {
         options: j,
         matchSorterOptions: v
     } = (0, r.R)(), {
-        applicationIds: E,
-        onAddGame: T
-    } = (0, c.S)(t), b = a.useCallback(e => {
+        applicationIds: b,
+        onAddGame: S
+    } = (0, c.S)(t), y = a.useCallback(e => {
         (0, d.ew)({
             widgetType: t,
             game: {
                 applicationId: e
             }
-        }), s.ORC.announce(u.intl.string(u.t.q0U3DE)), h({
+        }), s.ORC.announce(u.intl.string(u.t.q0U3DE)), f({
             action: "GAME_ADDED",
             gameId: e,
             widgetEdited: t
-        }), E.includes(e) && T(e), m?.()
-    }, [t, h, m, E, T]), C = a.useMemo(() => {
+        }), b.includes(e) && S(e), m?.()
+    }, [t, f, m, b, S]), E = a.useMemo(() => {
         let e = new Map(j.map(e => [String(e.value), {
                 id: String(e.value),
                 value: String(e.value),
                 label: e.label,
                 disabled: p.has(e.value)
             }])),
-            t = E.map(t => e.get(t)).filter(e => null != e && !e.disabled),
+            t = b.map(t => e.get(t)).filter(e => null != e && !e.disabled),
             n = [...e.values()].filter(e => !t.includes(e));
         return [...t, ...n]
-    }, [j, p, E]), S = a.useMemo(() => ({
+    }, [j, p, b]), C = a.useMemo(() => ({
         ...v,
         threshold: l.Ht.rankings.CONTAINS,
         keys: ["label"]
-    }), [v]), N = a.useCallback(e => "" === e.trim() ? C.length : (0, l.Ht)(C, e, S).length, [C, S]), y = a.useCallback(e => {
+    }), [v]), T = a.useCallback(e => "" === e.trim() ? E.length : (0, l.Ht)(E, e, C).length, [E, C]), w = a.useCallback(e => {
         let n = e.target.value;
-        "" === _.trim() && "" !== n.trim() && h({
+        "" === A.trim() && "" !== n.trim() && f({
             action: "GAME_SEARCH_SESSION_STARTED",
             widgetEdited: t,
             numCharacters: n.trim().length,
-            numResults: N(n)
-        }), A(n), I.current = n
-    }, [_, h, t, N]);
+            numResults: T(n)
+        }), _(n), I.current = n
+    }, [A, f, t, T]);
     return (0, i.jsx)(s.YNO, {
-        ...f,
+        ...x,
         onRequestOpen: () => {
-            h({
+            f({
                 action: "PRESS_ADD_GAME",
                 widgetEdited: t
-            }), A(""), I.current = ""
+            }), _(""), I.current = ""
         },
         onRequestClose: () => {
-            h({
+            f({
                 action: "GAME_SEARCH_SESSION_ENDED",
                 widgetEdited: t,
                 numCharacters: I.current.trim().length,
-                numResults: N(I.current)
+                numResults: T(I.current)
             })
         },
         renderPopout: e => {
@@ -90,27 +90,27 @@ function m(e) {
                     selectionMode: "single",
                     value: null,
                     onSelectionChange: e => {
-                        null != e && (b(e), t())
+                        null != e && (y(e), t())
                     },
-                    options: C,
-                    matchSorterOptions: S,
+                    options: E,
+                    matchSorterOptions: C,
                     children: [(0, i.jsx)(s.a32, {
                         label: u.intl.string(u.t["5h0QOP"]),
                         hideLabel: !0,
                         placeholder: u.intl.string(u.t["5h0QOP"]),
                         autoFocus: !0,
-                        onQueryChange: y
+                        onQueryChange: w
                     }), (0, i.jsx)(s.X2W, {
                         maxVisibleItems: 7
                     })]
                 })
             })
         },
-        children: e => x(e)
+        children: e => h(e)
     })
 }
 
-function x(e) {
+function h(e) {
     let {
         disabled: t,
         ...n
@@ -132,7 +132,7 @@ function x(e) {
     })
 }
 
-function f(e) {
+function x(e) {
     let t = a.useRef(null);
     return (0, i.jsx)(m, {
         targetElementRef: t,

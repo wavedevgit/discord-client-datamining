@@ -14,12 +14,12 @@ var a = n(503698),
     u = n(775602),
     g = n(915089),
     m = n(961350),
-    x = n(183555),
-    f = n(735321),
+    h = n(183555),
+    x = n(735321),
     p = n(606758),
-    h = n(518477),
-    _ = n(985018),
-    A = n(183035);
+    f = n(518477),
+    A = n(985018),
+    _ = n(183035);
 
 function I(e) {
     let {
@@ -27,7 +27,7 @@ function I(e) {
         className: n,
         buttonRef: a,
         additionalMenuItems: s
-    } = e, r = (0, f.L)(t), o = (0, g.GV)();
+    } = e, r = (0, x.L)(t), o = (0, g.GV)();
     return (0, i.jsx)(v, {
         targetRef: a,
         widget: t,
@@ -35,9 +35,9 @@ function I(e) {
         children: e => (0, i.jsx)(j, {
             children: (0, i.jsxs)(d.DUT, {
                 innerRef: a,
-                className: l()(A.x6, n),
+                className: l()(_.x6, n),
                 "data-dnd-name": r,
-                "aria-label": _.intl.formatToPlainString(_.t.HWNJJN, {
+                "aria-label": A.intl.formatToPlainString(A.t.HWNJJN, {
                     widgetTitle: r
                 }),
                 "aria-describedby": o,
@@ -47,7 +47,7 @@ function I(e) {
                     size: "sm"
                 }), (0, i.jsx)(d.AC4, {
                     id: o,
-                    children: _.intl.string(_.t.bsuqFn)
+                    children: A.intl.string(A.t.bsuqFn)
                 })]
             })
         })
@@ -63,11 +63,11 @@ let j = e => {
         }));
         return (0, i.jsx)(o.m_, {
             __unsupportedReactNodeAsText: (0, i.jsxs)("div", {
-                className: A.HE,
+                className: _.HE,
                 children: [(0, i.jsx)(d.Text, {
                     variant: "text-sm/normal",
                     color: "none",
-                    children: _.intl.format(n ? _.t["zvln/l"] : _.t["7cdwhg"], {
+                    children: A.intl.format(n ? A.t["zvln/l"] : A.t["7cdwhg"], {
                         emphasizeHook: e => (0, i.jsx)("strong", {
                             children: e
                         })
@@ -75,7 +75,7 @@ let j = e => {
                 }), (0, i.jsx)(d.Text, {
                     variant: "text-sm/normal",
                     color: "none",
-                    children: _.intl.format(_.t["4e0rM4"], {
+                    children: A.intl.format(A.t["4e0rM4"], {
                         emphasizeHook: e => (0, i.jsx)("strong", {
                             children: e
                         })
@@ -96,12 +96,12 @@ let j = e => {
             additionalMenuItems: s
         } = e, {
             trackUserProfileEditAction: r
-        } = (0, x.NJ)(), o = e => {
+        } = (0, h.NJ)(), o = e => {
             if (e.shiftKey) {
-                (0, f.qA)(a), r({
+                (0, x.qA)(a), r({
                     action: "WIDGET_REMOVED",
                     ...a.getProfileEditAnalyticsOptions()
-                }), (0, p.XA)(h.jM.WIDGET_REMOVED);
+                }), (0, p.XA)(f.jM.WIDGET_REMOVED);
                 return
             }(0, d.mMO)(async () => {
                 let {
@@ -133,12 +133,12 @@ let j = e => {
                         (0, c.Z_)(), t()
                     },
                     onSelect: () => {},
-                    "aria-label": _.intl.string(_.t.xpSHSk),
-                    className: A.MK,
+                    "aria-label": A.intl.string(A.t.xpSHSk),
+                    className: _.MK,
                     children: (0, i.jsxs)(d.rXV, {
                         children: [s, (0, i.jsx)(d.Drp, {
                             id: "remove-widget",
-                            label: _.intl.string(_.t.Mm07Yc),
+                            label: A.intl.string(A.t.Mm07Yc),
                             action: o,
                             color: "danger",
                             icon: d.ucK,

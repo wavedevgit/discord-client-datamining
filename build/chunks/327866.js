@@ -3,9 +3,9 @@ n.d(t, {
     A: () => C
 });
 var i = n(64700),
-    r = n(311907),
-    a = n(827343),
-    l = n(800828),
+    a = n(311907),
+    l = n(827343),
+    r = n(800828),
     s = n(912309),
     o = n(780964),
     d = n(858897),
@@ -15,9 +15,9 @@ var i = n(64700),
     h = n(383501),
     _ = n(994500),
     m = n(485296),
-    p = n(723702),
-    g = n(837921);
-let E = (0, p.isMac)() ? null : "DEFAULT";
+    g = n(723702),
+    p = n(837921);
+let E = (0, g.isMac)() ? null : "DEFAULT";
 class I extends i.PureComponent {
     getIcon = () => {
         let {
@@ -25,32 +25,32 @@ class I extends i.PureComponent {
             muted: t,
             speaking: n,
             connected: i,
-            unread: r
-        } = this.props, a = E;
-        return (0, p.isMac)() && !i ? a : (0, p.isLinux)() || !i ? (r && (a = "UNREAD"), a) : a = e ? "DEAFENED" : t ? "MUTED" : n ? "SPEAKING" : "CONNECTED"
+            unread: a
+        } = this.props, l = E;
+        return (0, g.isMac)() && !i ? l : (0, g.isLinux)() || !i ? (a && (l = "UNREAD"), l) : l = e ? "DEAFENED" : t ? "MUTED" : n ? "SPEAKING" : "CONNECTED"
     };
     componentDidMount() {
-        g.Ay.setSystemTrayIcon(this.getIcon())
+        p.Ay.setSystemTrayIcon(this.getIcon())
     }
     componentDidUpdate() {
-        g.Ay.setSystemTrayIcon(this.getIcon())
+        p.Ay.setSystemTrayIcon(this.getIcon())
     }
     componentWillUnmount() {
-        g.Ay.setSystemTrayIcon(E)
+        p.Ay.setSystemTrayIcon(E)
     }
     render() {
         return null
     }
 }
 let f = () => null;
-p.isPlatformEmbedded && (g.Ay.on("SYSTEM_TRAY_TOGGLE_MUTE", () => a.A.toggleSelfMute({
+g.isPlatformEmbedded && (p.Ay.on("SYSTEM_TRAY_TOGGLE_MUTE", () => l.A.toggleSelfMute({
     location: "System Tray"
-})), g.Ay.on("SYSTEM_TRAY_TOGGLE_DEAFEN", () => a.A.toggleSelfDeaf()), g.Ay.on("SYSTEM_TRAY_OPEN_VOICE_SETTINGS", () => {
+})), p.Ay.on("SYSTEM_TRAY_TOGGLE_DEAFEN", () => l.A.toggleSelfDeaf()), p.Ay.on("SYSTEM_TRAY_OPEN_VOICE_SETTINGS", () => {
     (0, d.openUserSettings)(o.X.VOICE_CATEGORY)
-}), f = r.Ay.connectStores([h.A, u.Ay, m.A, c.default, _.A, A.A, l.A], () => {
+}), f = a.Ay.connectStores([h.A, u.Ay, m.A, c.default, _.A, A.A, r.A], () => {
     let e = c.default.getTotalMentionCount(),
         t = c.default.hasAnyUnread(),
-        n = (0, s.dH)([_.A, l.A]),
+        n = (0, s.dH)([_.A, r.A]),
         i = !A.A.getDisableUnreadBadge() && !!(t || e + n > 0);
     return {
         connected: h.A.isConnected(),

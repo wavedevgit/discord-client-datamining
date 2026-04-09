@@ -17,12 +17,12 @@ let o = e => {
             canNavigateBack: _,
             onBackClicked: m,
             isModeratorReport: p,
-            className: g
+            className: h
         } = e,
         x = a.useRef(null),
-        h = null != n && "cancel" !== n.type,
+        g = null != n && "cancel" !== n.type,
         A = _ && n?.type !== "done",
-        v = h || A;
+        v = g || A;
     if (a.useEffect(() => {
             (n?.type === "submit" || n?.type === "done") && x.current?.focus()
         }, [n?.type]), !v) return null;
@@ -30,7 +30,7 @@ let o = e => {
     return n?.type === "submit" ? (t = "critical-primary", b = p ? s.intl.string(d.default.ZUyreS) : s.intl.string(s.t["G+vU89"])) : n?.type === "next" ? b = s.intl.string(s.t.PDTjLN) : n?.type === "cancel" && (b = s.intl.string(s.t["ETE/oC"]), t = "secondary"), (0, l.jsx)(i.jlY, {
         "data-migration-pending": !0,
         direction: r.A.Direction.HORIZONTAL,
-        className: g,
+        className: h,
         children: (0, l.jsxs)(i.ButtonGroup, {
             fullWidth: !0,
             children: [A && (0, l.jsx)(i.Button, {
@@ -38,7 +38,7 @@ let o = e => {
                 variant: "secondary",
                 disabled: o,
                 text: s.intl.string(s.t["13/7kX"])
-            }), h && (0, l.jsx)(i.Button, {
+            }), g && (0, l.jsx)(i.Button, {
                 onClick: () => {
                     null != n && u(n)
                 },

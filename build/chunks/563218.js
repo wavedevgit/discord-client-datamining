@@ -14,9 +14,9 @@ var l = n(627968),
     _ = n(734057),
     m = n(319582),
     p = n(369053),
-    g = n(652215),
+    h = n(652215),
     x = n(985018),
-    h = n(479531);
+    g = n(479531);
 
 function A(e) {
     let {
@@ -48,13 +48,13 @@ function v(e) {
         reportSubType: v
     } = e, b = (0, i.bG)([_.A], () => _.A.getChannel(n)), f = (0, m.MR)(t, b?.type), T = (0, p.Mw)(o, v, s);
     return 0 === f.length ? null : (0, l.jsxs)("div", {
-        className: h.kL,
+        className: g.kL,
         children: [(0, l.jsx)(r.Heading, {
             variant: "text-sm/semibold",
-            className: h.wx,
+            className: g.wx,
             children: x.intl.string(x.t["1yxTIJ"])
         }), (0, l.jsx)("div", {
-            className: h.uk,
+            className: g.uk,
             children: f.map((e, n) => {
                 let {
                     getTitle: a,
@@ -71,7 +71,7 @@ function v(e) {
         }), (0, l.jsx)(r.QWc, {
             text: x.intl.string(x.t.olebGx),
             onClick: () => {
-                (0, u.openUserSettings)(c.X.CONTENT_AND_SOCIAL_PANEL), a(), d.Ay.trackWithMetadata(g.HAw.IAR_SETTINGS_UPSELLS_ACTION, {
+                (0, u.openUserSettings)(c.X.CONTENT_AND_SOCIAL_PANEL), a(), d.Ay.trackWithMetadata(h.HAw.IAR_SETTINGS_UPSELLS_ACTION, {
                     report_id: s,
                     report_type: o.name,
                     report_subtype: v,

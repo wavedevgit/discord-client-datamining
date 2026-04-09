@@ -21,7 +21,7 @@ function c(e) {
         setExpanded: g
     } = (0, o.B)(), {
         trackUserProfileEditAction: m
-    } = (0, l.NJ)(), x = a.useCallback(e => {
+    } = (0, l.NJ)(), h = a.useCallback(e => {
         u(e), g(!0), (0, s.ew)({
             widgetType: t,
             game: {
@@ -35,7 +35,7 @@ function c(e) {
     }, [u, t, m, g]);
     return (0, i.jsx)(d.A, {
         games: c,
-        onClick: x,
+        onClick: h,
         ...n
     })
 }

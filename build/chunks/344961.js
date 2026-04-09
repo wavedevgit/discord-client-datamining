@@ -26,7 +26,7 @@ var i = n(627968),
     v = n(153335);
 let T = n(906118);
 
-function j(e) {
+function C(e) {
     let {
         text: t = ""
     } = e, [n, r] = s.useState(!1);
@@ -61,7 +61,7 @@ function j(e) {
         })
     })
 }
-let C = e => {
+let j = e => {
     let {
         className: t,
         children: n
@@ -86,12 +86,12 @@ function S(e) {
         case h.b.INITIALIZING:
         case h.b.PENDING_REMOTE_INIT:
             return (0, i.jsxs)(i.Fragment, {
-                children: [(0, i.jsx)(j, {
+                children: [(0, i.jsx)(C, {
                     text: t.step === h.b.PENDING_REMOTE_INIT ? `https://discord.com/ra/${t.fingerprint}` : ""
                 }), (0, i.jsx)(d.hE, {
                     className: v.QB,
                     children: I.intl.string(I.t.UPiHaL)
-                }), null != s ? (0, i.jsx)(C, {
+                }), null != s ? (0, i.jsx)(j, {
                     children: s
                 }) : (0, i.jsx)(d.tK, {
                     children: I.intl.format(I.t["Qq+A6i"], {})

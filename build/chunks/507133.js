@@ -3,15 +3,15 @@ n.d(t, {
     A: () => u
 });
 var i = n(627968),
-    r = n(64700),
-    a = n(397927),
-    l = n(442433),
+    a = n(64700),
+    l = n(397927),
+    r = n(442433),
     s = n(297413),
     o = n(235986),
     d = n(531155);
-class c extends r.PureComponent {
+class c extends a.PureComponent {
     handleContextMenu(e, t) {
-        (0, l.L3)(e, async () => {
+        (0, r.L3)(e, async () => {
             let {
                 default: e
             } = await Promise.all([n.e("97262"), n.e("32418"), n.e("84821")]).then(n.bind(n, 668569));
@@ -28,10 +28,10 @@ class c extends r.PureComponent {
             onContextMenu: t => {
                 null != e && this.handleContextMenu(t, e)
             },
-            children: [(0, i.jsx)(a.euF, {
+            children: [(0, i.jsx)(l.euF, {
                 src: e.getAvatarURL(void 0, 24),
                 "aria-label": e.username,
-                size: a._3J.SIZE_24,
+                size: l._3J.SIZE_24,
                 className: d.my
             }), (0, i.jsx)(s.A, {
                 user: e,
@@ -51,7 +51,7 @@ class c extends r.PureComponent {
             children: [(0, i.jsx)("div", {
                 className: d.wx,
                 children: t
-            }), (0, i.jsx)(a.IpV, {
+            }), (0, i.jsx)(l.IpV, {
                 className: d.Qs,
                 fade: !0,
                 children: n

@@ -3,9 +3,9 @@ n.d(t, {
     A: () => A
 });
 var i = n(627968),
-    r = n(64700),
-    a = n(397927),
-    l = n(308528),
+    a = n(64700),
+    l = n(397927),
+    r = n(308528),
     s = n(58149),
     o = n(231608),
     d = n(954571),
@@ -18,7 +18,7 @@ function A(e) {
             priorityMembers: n,
             partiedMembers: A
         } = e,
-        h = r.useContext(d.AnalyticsContext),
+        h = a.useContext(d.AnalyticsContext),
         _ = n.map(e => {
             let {
                 user: t
@@ -26,11 +26,11 @@ function A(e) {
             return t.id
         }),
         m = 1 === A.length && 1 === n.length,
-        p = n.length - A.length > 0;
-    return (m || t) && !p && 0 !== _.length ? (0, i.jsx)(a.Drp, {
+        g = n.length - A.length > 0;
+    return (m || t) && !g && 0 !== _.length ? (0, i.jsx)(l.Drp, {
         id: "message",
         action: function() {
-            l.A.openPrivateChannel({
+            r.A.openPrivateChannel({
                 recipientIds: _
             }).then(t => s.Ay.trackWithMetadata(c.HAw.ACTIVITY_FEED_DM_VISITED, {
                 source: {

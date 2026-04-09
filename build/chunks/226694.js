@@ -1,7 +1,7 @@
 /** chunk id: 226694 params = (module,exports,require) **/
 n.d(t, {
     A: () => j,
-    s: () => y
+    s: () => v
 });
 var i = n(627968),
     l = n(64700),
@@ -27,7 +27,7 @@ var i = n(627968),
     T = n(985018),
     S = n(420950),
     b = n(166382);
-let y = l.memo(function(e) {
+let v = l.memo(function(e) {
     let {
         onClick: t
     } = e;
@@ -46,7 +46,7 @@ let y = l.memo(function(e) {
     })
 });
 
-function v(e) {
+function y(e) {
     let {
         entry: t
     } = e, [s, r] = l.useState(!1), c = l.useRef(null), {
@@ -224,7 +224,7 @@ let j = l.memo(function(e) {
                     fullWidth: !0
                 })
             })]
-        }), (0, i.jsx)(v, {
+        }), (0, i.jsx)(y, {
             entry: t
         })]
     })

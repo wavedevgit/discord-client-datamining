@@ -1,45 +1,45 @@
 /** chunk id: 566605 params = (module,exports,require) **/
 n.d(t, {
-    A: () => m
+    A: () => g
 });
 var i = n(64700),
-    a = n(311907),
-    l = n(704824),
+    l = n(311907),
+    a = n(704824),
     s = n(429913),
     r = n(633075),
     o = n(667049),
-    d = n(287809),
-    c = n(403362),
+    c = n(287809),
+    d = n(403362),
     u = n(369374),
-    g = n(395332);
+    m = n(395332);
 
-function m(e) {
+function g(e) {
     let {
         enabled: t
     } = u.A.useConfig({
         location: e.location
-    }), n = (0, a.bG)([d.default], () => d.default.getCurrentUser()), m = (0, g.w$)({
+    }), n = (0, l.bG)([c.default], () => c.default.getCurrentUser()), g = (0, m.w$)({
         location: e.location
-    }), x = i.useMemo(() => m?.filter(e => e.isEligibleForSuggestions()), [m]), f = i.useMemo(() => x?.map(e => e.applicationId) ?? [], [x]), p = (0, s.A)(f), {
-        tokens: h,
-        fetched: _
-    } = (0, l.j)(f), A = (0, o.A)(n?.id), I = null == n || null == x || null == h || !_;
-    return i.useMemo(() => I ? {
-        isLoading: I
+    }), f = i.useMemo(() => g?.filter(e => e.isEligibleForSuggestions()), [g]), x = i.useMemo(() => f?.map(e => e.applicationId) ?? [], [f]), p = (0, s.A)(x), {
+        tokens: _,
+        fetched: I
+    } = (0, a.j)(x), h = (0, o.A)(n?.id), A = null == n || null == f || null == _ || !I;
+    return i.useMemo(() => A ? {
+        isLoading: A
     } : t ? {
-        isLoading: I,
+        isLoading: A,
         suggestions: [],
         currentUser: n
     } : {
-        isLoading: I,
-        suggestions: x.map(e => {
+        isLoading: A,
+        suggestions: f.map(e => {
             let t = p.find(t => t?.id === e.applicationId);
-            return null == t || null == h.find(t => t.application.id === e.applicationId) || null != A.find(t => t instanceof r.R && t.applicationId === e.applicationId) ? null : {
+            return null == t || null == _.find(t => t.application.id === e.applicationId) || null != h.find(t => t instanceof r.R && t.applicationId === e.applicationId) ? null : {
                 config: e,
                 application: t,
                 dismissibleContent: e.suggestedWidgetLinkedDc
             }
-        }).filter(c.Vq),
+        }).filter(d.Vq),
         currentUser: n
-    }, [t, I, x, n, p, h, A])
+    }, [t, A, f, n, p, _, h])
 }

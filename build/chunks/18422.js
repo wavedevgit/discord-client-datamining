@@ -3,36 +3,36 @@ n.d(t, {
     A: () => u
 });
 var i = n(64700),
-    r = n(607399),
-    a = n(311907),
-    l = n(197111),
+    a = n(607399),
+    l = n(311907),
+    r = n(197111),
     s = n(10088),
     o = n(961350),
     d = n(652215);
-let c = r.Fr || r.v1;
+let c = a.Fr || a.v1;
 
 function u(e) {
     let {
         children: t,
         deepLinkType: n,
-        path: r,
+        path: a,
         paramsBuilder: u,
         search: A
-    } = e, h = (0, a.bG)([o.default], () => o.default.getFingerprint() ?? o.default.getId()), _ = (0, a.bG)([o.default], () => o.default.getInstallationForTracking()), m = (0, a.bG)([s.A], () => s.A.getState(r), [r]), p = i.useMemo(() => null == u ? {
-        path: r,
+    } = e, h = (0, l.bG)([o.default], () => o.default.getFingerprint() ?? o.default.getId()), _ = (0, l.bG)([o.default], () => o.default.getInstallationForTracking()), m = (0, l.bG)([s.A], () => s.A.getState(a), [a]), g = i.useMemo(() => null == u ? {
+        path: a,
         fingerprint: h,
         installationId: _,
         search: A
     } : u({
-        path: r,
+        path: a,
         fingerprint: h,
         search: A,
         installationId: _
-    }), [r, u, h, _, A]);
+    }), [a, u, h, _, A]);
     return i.useEffect(() => {
-        c || null == m && l.A.openNativeAppModal(r, d.e$_.DEEP_LINK, {
+        c || null == m && r.A.openNativeAppModal(a, d.e$_.DEEP_LINK, {
             type: n,
-            params: p
+            params: g
         })
-    }, [m, r, p, n]), t
+    }, [m, a, g, n]), t
 }

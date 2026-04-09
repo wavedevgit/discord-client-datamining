@@ -3,9 +3,9 @@ n.d(t, {
     A: () => _
 });
 var i = n(627968),
-    r = n(64700),
-    a = n(342494),
-    l = n(582754),
+    a = n(64700),
+    l = n(342494),
+    r = n(582754),
     s = n(736653),
     o = n(793574),
     d = n(688810),
@@ -20,11 +20,11 @@ let _ = e => {
         onRequestClose: _,
         onClick: m
     } = e, {
-        analyticsLocations: p
-    } = (0, d.Ay)(o.A.HOME_PAGE_SHOP_TAB), g = (0, s.Ay)(), E = (0, l.Mw)(g) ? t.assetDark : t.assetLight, I = r.useRef(_);
-    return I.current = _, r.useEffect(() => () => {
+        analyticsLocations: g
+    } = (0, d.Ay)(o.A.HOME_PAGE_SHOP_TAB), p = (0, s.Ay)(), E = (0, r.Mw)(p) ? t.assetDark : t.assetLight, I = a.useRef(_);
+    return I.current = _, a.useEffect(() => () => {
         I.current?.()
-    }, []), (0, i.jsx)(a.AM, {
+    }, []), (0, i.jsx)(l.AM, {
         targetElementRef: n,
         position: "right",
         align: "top",
@@ -43,7 +43,7 @@ let _ = e => {
             variant: "primary",
             onClick: () => {
                 m?.(), (0, c.pX)(A.BVt.COLLECTIBLES_SHOP), (0, u.Cz)({
-                    analyticsLocations: p,
+                    analyticsLocations: g,
                     analyticsSource: o.A.HOME_PAGE_SHOP_TAB
                 })
             }

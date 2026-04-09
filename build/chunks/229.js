@@ -25,8 +25,8 @@ var i = n(627968),
     N = n(906564),
     v = n(854378),
     T = n(359438),
-    j = n(442184),
-    C = n(383302);
+    C = n(442184),
+    j = n(383302);
 n(829926);
 var S = n(491509),
     y = n(895600),
@@ -473,7 +473,7 @@ class ei extends s.PureComponent {
                 })]
             }), null != e && d ? (0, i.jsx)(v.Ay, {
                 className: ee.QX,
-                children: (0, i.jsx)(C.N, {
+                children: (0, i.jsx)(j.N, {
                     guild: e.guild,
                     onlineCount: e.approximate_presence_count
                 })
@@ -537,7 +537,7 @@ class ei extends s.PureComponent {
                 username: I,
                 global_name: N,
                 password: T,
-                date_of_birth: C
+                date_of_birth: j
             } = {}
         } = this.state, {
             consentRequired: S,
@@ -667,12 +667,12 @@ class ei extends s.PureComponent {
                 name: "date_of_birth",
                 onChange: this.handleBirthdayChange,
                 ref: this.dateOfBirthRef,
-                error: A ?? en(C),
+                error: A ?? en(j),
                 value: d,
                 required: !0,
                 onFocus: this.trackInputFocus,
                 onBlur: this.trackInputBlur
-            }), (0, i.jsx)(j.A, {}), this.renderConsentComponent(), O, R, (0, i.jsx)("div", {
+            }), (0, i.jsx)(C.A, {}), this.renderConsentComponent(), O, R, (0, i.jsx)("div", {
                 className: ee.QX,
                 children: (0, i.jsx)(_.QWc, {
                     text: $.intl.string($.t["1lWxux"]),

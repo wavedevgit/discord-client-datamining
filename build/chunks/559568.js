@@ -1,7 +1,7 @@
 /** chunk id: 559568 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => C
+    A: () => j
 }), n(323874), n(14289), n(35956);
 var i = n(627968),
     s = n(64700),
@@ -25,17 +25,17 @@ let x = "mweb_handoff_nonce",
     N = +g.A.Millis.MINUTE,
     v = new Set(["nonce_missing", "nonce_expired", "handoff_exchange"]),
     T = new Set(["deep_link_failed"]),
-    j = () => {
+    C = () => {
         c.w.remove(x), c.w.remove(I)
     },
-    C = () => {
+    j = () => {
         let e = (0, a.bG)([_.default], () => _.default.getFingerprint()),
             {
                 fingerprint: t,
                 handoff_token: n
             } = (0, r.parse)(window.location.search),
             g = Array.isArray(t) ? t.length > 1 ? t[0] : null : t,
-            C = g ?? (null !== e ? e : void 0);
+            j = g ?? (null !== e ? e : void 0);
         s.useEffect(() => {
             null !== g && e !== g && u.h.dispatch({
                 type: "FINGERPRINT",
@@ -45,15 +45,15 @@ let x = "mweb_handoff_nonce",
         let [S, y] = s.useState(null), b = s.useCallback(e => {
             y(e), p.default.track(A.HAw.MOBILE_WEB_HANDOFF_FAILURE, {
                 reason: e,
-                fingerprint: (0, l.v)(C)
+                fingerprint: (0, l.v)(j)
             }, {
-                fingerprint: C
+                fingerprint: j
             })
-        }, [y, C]), R = c.w.get(x);
+        }, [y, j]), R = c.w.get(x);
         if ("null" === n && null === S && b("deep_link_failed"), null != n && "null" !== n && null == R && null === S && b("nonce_missing"), s.useEffect(() => {
                 if (null != R) {
                     let e = c.w.get(I);
-                    (null == e || Date.now() >= e) && (b("nonce_expired"), j())
+                    (null == e || Date.now() >= e) && (b("nonce_expired"), C())
                 }
             }, [R, b]), s.useEffect(() => {
                 null != n && "null" !== n && null != R && null == S && o.Bo.post({
@@ -67,7 +67,7 @@ let x = "mweb_handoff_nonce",
                     p.default.track(A.HAw.LOGIN_SUCCESSFUL, {
                         source: A.mdB.MOBILE_WEB_HANDOFF,
                         is_new_user: !1,
-                        fingerprint: (0, l.v)(C)
+                        fingerprint: (0, l.v)(j)
                     });
                     let e = new URL(window.location.href),
                         t = new URLSearchParams(e.search);
@@ -75,9 +75,9 @@ let x = "mweb_handoff_nonce",
                 }).catch(() => {
                     b("handoff_exchange")
                 }).finally(() => {
-                    j()
+                    C()
                 })
-            }, [n, R, S, C, b]), null == C) return null;
+            }, [n, R, S, j, b]), null == j) return null;
         let O = null == S ? (0, i.jsxs)(i.Fragment, {
             children: [f.intl.string(f.t.uJ1JsY), (0, i.jsx)("br", {}), f.intl.string(f.t.GHVWAs)]
         }) : T.has(S) ? f.intl.string(f.t.EPt55r) : v.has(S) ? f.intl.string(f.t.g87kTp) : void 0;
@@ -103,12 +103,12 @@ let x = "mweb_handoff_nonce",
                         n = new URLSearchParams(window.location.search);
                     n.delete("fingerprint"), n.delete("handoff_token");
                     let i = new URLSearchParams;
-                    i.set("redirect", encodeURIComponent(window.location.pathname + n.toString())), i.set("key", e), i.set("fingerprint", C), t.search = i.toString(), p.default.track(A.HAw.DEEP_LINK_CLICKED, {
-                        fingerprint: (0, l.v)(C),
+                    i.set("redirect", encodeURIComponent(window.location.pathname + n.toString())), i.set("key", e), i.set("fingerprint", j), t.search = i.toString(), p.default.track(A.HAw.DEEP_LINK_CLICKED, {
+                        fingerprint: (0, l.v)(j),
                         source: "mobile_web_handoff",
                         destination: A.J$u
                     }, {
-                        fingerprint: C,
+                        fingerprint: j,
                         flush: !0
                     }), window.location.href = t.toString()
                 }

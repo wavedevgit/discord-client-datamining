@@ -35,9 +35,9 @@ let L = r.memo(function(e) {
     } = (0, f.Z)(s), L = r.useRef(null), {
         isHoveringOrFocusing: j
     } = (0, _.A)(L), {
-        readyToClaim: k,
+        readyToClaim: O,
         collectibleProductSkuIds: T,
-        collectedSkuIds: O
+        collectedSkuIds: k
     } = (0, E.K)(t, s), y = (0, o.bG)([p.A], () => p.A.isClaiming === s);
     return (0, n.jsx)(c.L, {
         onChange: l,
@@ -77,7 +77,7 @@ let L = r.memo(function(e) {
                                 className: C.tZ,
                                 children: b.intl.string(b.t["0mDmg/"])
                             }), (0, n.jsx)(d.m, {
-                                text: k ? b.intl.string(b.t.cKH3tk) : b.intl.formatToPlainString(b.t["8aMDPc"], {
+                                text: O ? b.intl.string(b.t.cKH3tk) : b.intl.formatToPlainString(b.t["8aMDPc"], {
                                     totalCount: T.length
                                 }),
                                 align: "right",
@@ -100,20 +100,20 @@ let L = r.memo(function(e) {
                                 className: A.L$,
                                 children: [(0, n.jsx)(g.Ay, {
                                     variant: g.qP.BLUE,
-                                    progress: O.length,
+                                    progress: k.length,
                                     maximum: T.length
                                 }), (0, n.jsxs)("div", {
                                     className: i()(A.__, {
-                                        [A.gF]: k
+                                        [A.gF]: O
                                     }),
-                                    children: [k ? (0, n.jsx)(a.Uzd, {
+                                    children: [O ? (0, n.jsx)(a.Uzd, {
                                         size: "xs",
                                         color: "currentColor"
                                     }) : null, (0, n.jsx)(a.EYj, {
                                         variant: "text-xs/medium",
                                         color: "currentColor",
                                         children: b.intl.formatToPlainString(b.t["5TwASM"], {
-                                            collectedCount: O.length,
+                                            collectedCount: k.length,
                                             totalCount: T.length
                                         })
                                     })]
@@ -129,7 +129,7 @@ let L = r.memo(function(e) {
                             children: (0, n.jsx)(a.$nd, {
                                 variant: "primary",
                                 onClick: e => {
-                                    e.stopPropagation(), k && (0, m.BX)(t.skuId, s).then(() => {
+                                    e.stopPropagation(), O && (0, m.BX)(t.skuId, s).then(() => {
                                         let e = h.A.getProduct(s);
                                         null != e && (0, x.A)({
                                             product: e,
@@ -162,7 +162,7 @@ let L = r.memo(function(e) {
                                 },
                                 text: b.intl.string(b.t.VnVTNc),
                                 fullWidth: !0,
-                                disabled: !k,
+                                disabled: !O,
                                 loading: y
                             })
                         })

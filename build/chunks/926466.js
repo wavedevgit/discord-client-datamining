@@ -3,9 +3,9 @@ n.d(t, {
     A: () => m
 });
 var i = n(627968),
-    r = n(64700),
-    a = n(735438),
-    l = n.n(a),
+    a = n(64700),
+    l = n(735438),
+    r = n.n(l),
     s = n(421380),
     o = n(397927),
     d = n(58149),
@@ -13,16 +13,16 @@ var i = n(627968),
     u = n(652215),
     A = n(985018),
     h = n(66762);
-let _ = l().debounce(d.Ay.trackWithMetadata, 500),
+let _ = r().debounce(d.Ay.trackWithMetadata, 500),
     m = e => {
         let {
             guild: t,
             title: n,
-            message: a,
-            image: l,
+            message: l,
+            image: r,
             type: m,
-            imageMarginX: p,
-            imageMarginTop: g,
+            imageMarginX: g,
+            imageMarginTop: p,
             trackingSource: E,
             undismissable: I,
             onDismissed: f,
@@ -30,7 +30,7 @@ let _ = l().debounce(d.Ay.trackWithMetadata, 500),
             cta: T,
             ctaColor: N
         } = e;
-        r.useEffect(() => {
+        a.useEffect(() => {
             _(u.HAw.CHANNEL_NOTICE_VIEWED, {
                 notice_type: m,
                 guild_id: t.id
@@ -52,7 +52,7 @@ let _ = l().debounce(d.Ay.trackWithMetadata, 500),
             color: N,
             children: T
         }));
-        let x = null != p ? `${p}px` : "16px";
+        let x = null != g ? `${g}px` : "16px";
         return (0, i.jsxs)("div", {
             className: h.kX,
             children: [!0 === I ? null : (0, i.jsx)(o.DUT, {
@@ -68,18 +68,18 @@ let _ = l().debounce(d.Ay.trackWithMetadata, 500),
                     color: "currentColor",
                     className: h.ut
                 })
-            }), null != l && (0, i.jsx)("div", {
+            }), null != r && (0, i.jsx)("div", {
                 className: h.ZS,
                 style: {
-                    marginTop: `${g}px`,
+                    marginTop: `${p}px`,
                     marginLeft: x,
                     marginRight: x
                 },
-                children: "string" == typeof l ? (0, i.jsx)("img", {
+                children: "string" == typeof r ? (0, i.jsx)("img", {
                     className: h.Sl,
-                    src: l,
+                    src: r,
                     alt: ""
-                }) : l
+                }) : r
             }), (0, i.jsxs)("div", {
                 className: h.iU,
                 children: [null != n ? (0, i.jsx)(o.Heading, {
@@ -88,7 +88,7 @@ let _ = l().debounce(d.Ay.trackWithMetadata, 500),
                     children: n
                 }) : null, (0, i.jsx)(o.Text, {
                     variant: "text-sm/normal",
-                    children: a
+                    children: l
                 }), S]
             })]
         })

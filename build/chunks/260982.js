@@ -3,9 +3,9 @@ n.d(t, {
     A: () => C
 });
 var i = n(627968),
-    r = n(64700),
-    a = n(503698),
-    l = n.n(a),
+    a = n(64700),
+    l = n(503698),
+    r = n.n(l),
     s = n(687498),
     o = n(158954),
     d = n(750506),
@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(652215),
     _ = n(49999),
     m = n(350601),
-    p = n(985018),
-    g = n(463174),
+    g = n(985018),
+    p = n(463174),
     E = n(980447),
     I = n(983266),
     f = n(620442);
@@ -24,7 +24,7 @@ var i = n(627968),
 function C(e) {
     let {
         markAsDismissed: t
-    } = e, [n, a] = (0, r.useState)(!1), C = (0, o.zhh)({
+    } = e, [n, l] = (0, a.useState)(!1), C = (0, o.zhh)({
         opacity: +!!n,
         y: n ? 0 : -40,
         pointerEvents: n ? "all" : "none"
@@ -33,58 +33,58 @@ function C(e) {
     });
     return (0, i.jsx)(d.Ay, {
         children: (0, i.jsxs)("div", {
-            className: l()(g.kL, {
-                [g.DM]: n
+            className: r()(p.kL, {
+                [p.DM]: n
             }),
-            onMouseLeave: () => a(!1),
+            onMouseLeave: () => l(!1),
             children: [(0, i.jsxs)("div", {
-                className: g.Zv,
-                onMouseEnter: () => a(!0),
+                className: p.Zv,
+                onMouseEnter: () => l(!0),
                 children: [(0, i.jsx)("img", {
                     src: I.A,
                     alt: "",
-                    className: g.iL
+                    className: p.iL
                 }), (0, i.jsx)("img", {
                     src: f.A,
-                    alt: p.intl.string(m.default.UnXoXM),
-                    className: g.wm
+                    alt: g.intl.string(m.default.UnXoXM),
+                    className: p.wm
                 }), (0, i.jsx)(o.DUT, {
                     onClick: () => {
                         (0, u.A)({
                             source: "coachmark"
                         }), t(_.i.PRIMARY)
                     },
-                    "aria-label": p.intl.string(p.t.E4kW5O),
-                    className: g.Xk,
+                    "aria-label": g.intl.string(g.t.E4kW5O),
+                    className: p.Xk,
                     children: (0, i.jsx)("img", {
                         src: E.A,
-                        className: g.UQ,
+                        className: p.UQ,
                         alt: ""
                     })
                 })]
             }), (0, i.jsx)(s.animated.div, {
                 style: C,
-                className: g.s9,
+                className: p.s9,
                 children: (0, i.jsx)("div", {
-                    className: g.i1,
+                    className: p.i1,
                     children: (0, i.jsxs)(o.DUT, {
-                        className: g.VH,
+                        className: p.VH,
                         onClick: () => {
                             window.open("https://youtu.be/1ViwrDhoG2c", "_blank"), c.default.track(h.HAw.APRIL_FOOLS_2026_VIDEO_CLICKED, {
                                 source: "coachmark"
                             })
                         },
                         children: [(0, i.jsx)("div", {
-                            className: g.NQ,
+                            className: p.NQ,
                             children: (0, i.jsx)(o.udU, {
                                 color: "white"
                             })
                         }), (0, i.jsxs)("div", {
-                            className: g.q6,
+                            className: p.q6,
                             children: [(0, i.jsx)(o.EYj, {
                                 color: "always-white",
                                 variant: "text-md/semibold",
-                                children: p.intl.string(p.t["4PGeGA"])
+                                children: g.intl.string(g.t["4PGeGA"])
                             }), (0, i.jsx)(o.tfB, {
                                 color: "white",
                                 size: "xs"
@@ -93,14 +93,14 @@ function C(e) {
                     })
                 })
             }), (0, i.jsx)(s.animated.div, {
-                className: g.Xe,
+                className: p.Xe,
                 style: T,
                 children: (0, i.jsxs)(o.DUT, {
                     onClick: () => {
                         t(_.i.DISMISS)
                     },
-                    "aria-label": p.intl.string(m.default["6yuu2/"]),
-                    className: g.r,
+                    "aria-label": g.intl.string(m.default["6yuu2/"]),
+                    className: p.r,
                     children: [(0, i.jsx)(A.A, {
                         color: "none",
                         variant: "heading-md/bold",
@@ -108,7 +108,7 @@ function C(e) {
                     }), (0, i.jsx)(o.EYj, {
                         variant: "text-md/bold",
                         color: "none",
-                        children: p.intl.string(m.default["6yuu2/"]).toUpperCase()
+                        children: g.intl.string(m.default["6yuu2/"]).toUpperCase()
                     })]
                 })
             })]

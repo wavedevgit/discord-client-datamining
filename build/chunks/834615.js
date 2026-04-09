@@ -3,9 +3,9 @@ n.d(t, {
     A: () => w
 });
 var i = n(627968),
-    r = n(64700),
-    a = n(503698),
-    l = n.n(a),
+    a = n(64700),
+    l = n(503698),
+    r = n.n(l),
     s = n(311907),
     o = n(397927),
     d = n(409626),
@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(341915),
     _ = n(112142),
     m = n(714510),
-    p = n(890687),
-    g = n(579473),
+    g = n(890687),
+    p = n(579473),
     E = n(18437),
     I = n(590202),
     f = n(710969),
@@ -34,16 +34,16 @@ var i = n(627968),
     P = n(985018),
     D = n(766345);
 
-function M(e) {
+function j(e) {
     let {
         quest: t
-    } = e, n = (0, p.S5)(t.config.expiresAt), r = (0, p.S5)(t.config.rewardsConfig.rewardsExpireAt), a = (0, s.bG)([c.A], () => c.A.getState().theme), l = (0, o.Mwr)(a) ? R.NJ8.DARK : R.NJ8.LIGHT, d = t.userStatus?.completedAt != null;
+    } = e, n = (0, g.S5)(t.config.expiresAt), a = (0, g.S5)(t.config.rewardsConfig.rewardsExpireAt), l = (0, s.bG)([c.A], () => c.A.getState().theme), r = (0, o.Mwr)(l) ? R.NJ8.DARK : R.NJ8.LIGHT, d = t.userStatus?.completedAt != null;
     return (0, i.jsxs)("div", {
         className: D.R_,
         children: [(0, i.jsx)("img", {
             className: D.tb,
             alt: "",
-            src: (0, g.tW)(t, g.fY.GAME_TILE, l).url
+            src: (0, p.tW)(t, p.fY.GAME_TILE, r).url
         }), (0, i.jsxs)("div", {
             className: D.UD,
             children: [(0, i.jsx)(o.Heading, {
@@ -56,7 +56,7 @@ function M(e) {
                 variant: "text-xs/normal",
                 color: "text-default",
                 children: d ? P.intl.formatToPlainString(P.t.APddvF, {
-                    expirationDate: r
+                    expirationDate: a
                 }) : P.intl.formatToPlainString(P.t["pX+fmn"], {
                     expirationDate: n
                 })
@@ -65,24 +65,24 @@ function M(e) {
     })
 }
 
-function j(e) {
+function M(e) {
     let {
         nodeRef: t,
         quest: n
-    } = e, a = (0, E.Ut)(), c = (0, s.bG)([A.A], () => A.A.isEnrolling(n.id), [n]), [g, T] = r.useState(!1), R = r.useCallback(() => T(!0), []), j = r.useCallback(() => T(!1), []), {
+    } = e, l = (0, E.Ut)(), c = (0, s.bG)([A.A], () => A.A.isEnrolling(n.id), [n]), [p, T] = a.useState(!1), R = a.useCallback(() => T(!0), []), M = a.useCallback(() => T(!1), []), {
         launchInGameActivity: w
-    } = (0, p.zW)(n), U = _.t.useConfig({
+    } = (0, g.zW)(n), U = _.t.useConfig({
         location: L.rE.ACTIVITY_PANEL
-    }), G = (0, v.Pd)(n), k = r.useCallback(e => {
+    }), G = (0, v.Pd)(n), k = a.useCallback(e => {
         e.stopPropagation()
-    }, []), V = r.useCallback(() => {
+    }, []), V = a.useCallback(() => {
         (0, u.Oy)(n.id, {
             questContent: h.uF.ACTIVITY_PANEL,
             questContentCTA: I.Cy.ACCEPT_QUEST,
             sourceQuestContent: h.uF.ACTIVITY_PANEL
         }), (0, C.vA)(n) && w()
-    }, [n, w]), B = r.useCallback(() => {
-        null != n && (a({
+    }, [n, w]), B = a.useCallback(() => {
+        null != n && (l({
             questId: n.id,
             questContent: h.uF.ACTIVITY_PANEL,
             questContentCTA: I.Cy.TRACK_PROGRESS,
@@ -91,8 +91,8 @@ function j(e) {
             fromContent: h.uF.ACTIVITY_PANEL,
             questId: n.id
         }))
-    }, [n, a]), H = r.useCallback(() => {
-        a({
+    }, [n, l]), H = a.useCallback(() => {
+        l({
             questId: n.id,
             questContent: h.uF.ACTIVITY_PANEL,
             questContentCTA: I.Cy.LEARN_MORE,
@@ -101,29 +101,29 @@ function j(e) {
             fromContent: h.uF.ACTIVITY_PANEL,
             questId: n.id
         })
-    }, [n.id, a]), F = (0, S.ix)({
+    }, [n.id, l]), F = (0, S.ix)({
         quest: n,
         questContent: h.uF.ACTIVITY_PANEL,
         sourceQuestContent: h.uF.ACTIVITY_PANEL
-    }), Y = n.userStatus?.enrolledAt != null, W = n.userStatus?.completedAt != null, K = (0, p.fc)(n), q = (0, C.vA)(n), z = (0, m.NA)({
+    }), Y = n.userStatus?.enrolledAt != null, W = n.userStatus?.completedAt != null, K = (0, g.fc)(n), q = (0, C.vA)(n), z = (0, m.NA)({
         quest: n
     }), $ = q ? z : P.intl.string(P.t.l7E81v);
     return (0, i.jsxs)("div", {
         ref: e => {
             t.current = e
         },
-        className: l()(D.iE, {
+        className: r()(D.iE, {
             [D.tJ]: Y
         }),
         onClick: k,
         onKeyPress: k,
         onFocus: R,
         onMouseEnter: R,
-        onBlur: j,
-        onMouseLeave: j,
+        onBlur: M,
+        onMouseLeave: M,
         children: [(0, i.jsxs)("div", {
             className: D.Wp,
-            children: [Y ? (0, i.jsx)(M, {
+            children: [Y ? (0, i.jsx)(j, {
                 quest: n
             }) : (0, i.jsx)(b.A, {}), (0, i.jsx)(N.C, {
                 quest: n,
@@ -142,10 +142,10 @@ function j(e) {
                 })
             })]
         }), !Y && (0, i.jsxs)(i.Fragment, {
-            children: [(0, i.jsx)(M, {
+            children: [(0, i.jsx)(j, {
                 quest: n
             }), (0, i.jsx)(y.A, {
-                autoplay: g,
+                autoplay: p,
                 className: D.t3,
                 quest: n,
                 questContent: h.uF.ACTIVITY_PANEL,
@@ -155,7 +155,7 @@ function j(e) {
                 gameProfileSource: d.Ob.QuestActivityPanel
             })]
         }), Y && !W && (0, i.jsx)(y.A, {
-            autoplay: g,
+            autoplay: p,
             className: D.t3,
             quest: n,
             questContent: h.uF.ACTIVITY_PANEL,
@@ -207,7 +207,7 @@ let w = function(e) {
         questOrQuests: e.quest,
         questContent: h.uF.ACTIVITY_PANEL,
         sourceQuestContent: h.uF.ACTIVITY_PANEL,
-        children: t => (0, i.jsx)(j, {
+        children: t => (0, i.jsx)(M, {
             nodeRef: t,
             ...e
         })

@@ -1,12 +1,12 @@
 /** chunk id: 228093 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => _
+    A: () => v
 }), n(321073);
 var r = n(627968);
 n(64700);
-var i = n(503698),
-    l = n.n(i),
+var l = n(503698),
+    i = n.n(l),
     a = n(481613),
     s = n.n(a),
     o = n(397927),
@@ -18,24 +18,24 @@ var i = n(503698),
     f = n(985018),
     p = n(417891);
 
-function _() {
+function v() {
     let e = (0, d.GV)(),
         t = window.GLOBAL_ENV.RELEASE_CHANNEL,
-        n = "525839",
-        i = "80feed3fa0b726b897ac5d859dab81737a14b192".substring(0, 7),
+        n = "525945",
+        l = "7aa00b927e7eb6dae5f666dbbc67c536dc32d5ba".substring(0, 7),
         a = u.A?.app.getVersion(),
-        _ = u.A?.app.getBuildNumber(),
-        v = u.A?.app.getAppArch(),
-        y = c.A.getCurrentBuildOverride().overrides?.discord_web,
-        g = function() {
+        v = u.A?.app.getBuildNumber(),
+        y = u.A?.app.getAppArch(),
+        g = c.A.getCurrentBuildOverride().overrides?.discord_web,
+        _ = function() {
             let e = s()?.os?.toString();
             if (null == e || null == u.A) return null;
             let t = u.A.os.release,
-                [n, r, i] = m.Ay.parsedOSRelease;
-            return e.includes("Windows 10") && void 0 !== i && i >= 22e3 && (e = e.replace("Windows 10", "Windows 11")), e.includes("OS X 10.15.7") && void 0 !== n && n >= 20 && (e = `macOS ${n>=25?n+1:n-9}`), `${e} (${t})`
+                [n, r, l] = m.Ay.parsedOSRelease;
+            return e.includes("Windows 10") && void 0 !== l && l >= 22e3 && (e = e.replace("Windows 10", "Windows 11")), e.includes("OS X 10.15.7") && void 0 !== n && n >= 20 && (e = `macOS ${n>=25?n+1:n-9}`), `${e} (${t})`
         }(),
-        x = [t, n, `(${i})`];
-    return null != a && (x.push(`Host ${a}`), null != v && x.push(v.toLowerCase()), null != _ && x.push(`(${_})`)), x.push(`Build Override: ${null!=y?y.id:"N/A"}`), null != g && x.push(g), (0, r.jsxs)(r.Fragment, {
+        x = [t, n, `(${l})`];
+    return null != a && (x.push(`Host ${a}`), null != y && x.push(y.toLowerCase()), null != v && x.push(`(${v})`)), x.push(`Build Override: ${null!=g?g.id:"N/A"}`), null != _ && x.push(_), (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(h.A, {
             copyValue: x.join(" "),
             text: f.intl.string(f.t["9Al4Qd"]),
@@ -44,7 +44,7 @@ function _() {
             children: s => (0, r.jsxs)(o.DUT, {
                 ...s,
                 "aria-describedby": e,
-                className: l()(p.vk, p.oE),
+                className: i()(p.vk, p.oE),
                 children: [(0, r.jsxs)("div", {
                     className: p.Cr,
                     "data-mtctest-ignore": "true",
@@ -54,26 +54,26 @@ function _() {
                         color: "text-muted",
                         children: [t, " ", n, " ", (0, r.jsxs)("span", {
                             className: p.Pc,
-                            children: ["(", i, ")"]
+                            children: ["(", l, ")"]
                         })]
                     }), null != a && (0, r.jsxs)(o.Text, {
                         tag: "span",
                         variant: "text-xxs/normal",
                         color: "text-muted",
-                        children: [a, null != v && (0, r.jsxs)("span", {
+                        children: [a, null != y && (0, r.jsxs)("span", {
                             className: p.GI,
-                            children: [" ", v.toLowerCase()]
-                        }), null != _ && (0, r.jsxs)("span", {
-                            children: [" (", _, ")"]
+                            children: [" ", y.toLowerCase()]
+                        }), null != v && (0, r.jsxs)("span", {
+                            children: [" (", v, ")"]
                         })]
                     })]
-                }), null != y && (0, r.jsx)(o.Text, {
+                }), null != g && (0, r.jsx)(o.Text, {
                     tag: "span",
                     variant: "text-xxs/normal",
                     color: "text-muted",
                     children: (0, r.jsxs)("span", {
                         className: p.Pc,
-                        children: ["Build Override: ", y.id]
+                        children: ["Build Override: ", g.id]
                     })
                 })]
             })

@@ -15,7 +15,7 @@ let _ = ["cdn.discordapp.com", "media.discordapp.net"],
     m = /^(?:localhost|127\.0\.0\.1|\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})$/,
     p = (0, s.m6)() ? /^https?:\/\/(?:(?:ptb\.|canary\.)?discord(?:app)?\.com|localhost(?::\d+)?|\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}(?::\d+)?)\/channels\/(?:@me|\d+)\/\d+\/\d+$/ : /^https:\/\/(?:ptb\.|canary\.)?discord(?:app)?\.com\/channels\/(?:@me|\d+)\/\d+\/\d+$/;
 
-function g(e) {
+function h(e) {
     try {
         return new URL(e), !0
     } catch {
@@ -24,7 +24,7 @@ function g(e) {
 }
 
 function x(e) {
-    return "" !== e && !!g(e) && ! function(e) {
+    return "" !== e && !!h(e) && ! function(e) {
         try {
             let t = new URL(e);
             if (_.some(e => t.hostname === e) || (0, s.m6)() && m.test(t.hostname)) return !0;
@@ -34,7 +34,7 @@ function x(e) {
         }
     }(e)
 }
-let h = e => {
+let g = e => {
         let {
             data: {
                 title: t,
@@ -43,56 +43,56 @@ let h = e => {
                 message_link_title: _,
                 message_link_placeholder: m
             },
-            onChange: h,
+            onChange: g,
             initialContentUrl: A,
             initialMessageUrl: v,
             isRequired: b
         } = e, f = a.useMemo(() => r.A.reactParserFor({
             ...r.A.defaultRules,
             link: d.B
-        }), []), [T, E] = a.useState(""), [S, I] = a.useState(""), [C, N] = a.useState(null), [y, j] = a.useState(null), [k, R] = a.useState(!1);
+        }), []), [T, S] = a.useState(""), [E, I] = a.useState(""), [N, C] = a.useState(null), [j, y] = a.useState(null), [k, R] = a.useState(!1);
         a.useEffect(() => {
-            E(A?.value ?? ""), I(v?.value ?? ""), A?.value != null && "" !== A.value && R(x(A.value))
+            S(A?.value ?? ""), I(v?.value ?? ""), A?.value != null && "" !== A.value && R(x(A.value))
         }, [A, v]);
-        let M = a.useCallback(e => {
-                if (E(e), "" === e) {
-                    N(null), R(!1), I(""), j(null), h({
+        let D = a.useCallback(e => {
+                if (S(e), "" === e) {
+                    C(null), R(!1), I(""), y(null), g({
                         value: e,
                         isValid: !1
                     });
                     return
                 }
-                if (!g(e)) {
-                    N(o.intl.string(o.t["24xrGb"])), R(!1), I(""), j(null), h({
+                if (!h(e)) {
+                    C(o.intl.string(o.t["24xrGb"])), R(!1), I(""), y(null), g({
                         value: e,
                         isValid: !1
                     });
                     return
                 }
                 let t = x(e);
-                R(t), N(null), t ? "" === S ? h({
+                R(t), C(null), t ? "" === E ? g({
                     value: e,
                     isValid: !1
-                }) : p.test(S) ? h({
+                }) : p.test(E) ? g({
                     value: e,
                     isValid: !0
                 }, {
-                    value: S,
+                    value: E,
                     isValid: !0
-                }) : h({
+                }) : g({
                     value: e,
                     isValid: !1
                 }, {
-                    value: S,
+                    value: E,
                     isValid: !1
-                }) : (I(""), j(null), h({
+                }) : (I(""), y(null), g({
                     value: e,
                     isValid: !0
                 }))
-            }, [h, S]),
-            O = a.useCallback(e => {
+            }, [g, E]),
+            M = a.useCallback(e => {
                 if (I(e), "" === e || !p.test(e)) {
-                    j(o.intl.string(o.t["24xrGb"])), h({
+                    y(o.intl.string(o.t["24xrGb"])), g({
                         value: T,
                         isValid: !1
                     }, {
@@ -101,14 +101,14 @@ let h = e => {
                     });
                     return
                 }
-                j(null), h({
+                y(null), g({
                     value: T,
                     isValid: !0
                 }, {
                     value: e,
                     isValid: !0
                 })
-            }, [h, T]);
+            }, [g, T]);
         return (0, l.jsxs)("div", {
             children: [(0, l.jsxs)(i.BJc, {
                 gap: 16,
@@ -125,9 +125,9 @@ let h = e => {
                             })]
                         })
                     }), (0, l.jsx)(i.ksK, {
-                        onChange: M,
+                        onChange: D,
                         value: T,
-                        error: C,
+                        error: N,
                         placeholder: s,
                         autoFocus: !0
                     })]
@@ -144,9 +144,9 @@ let h = e => {
                             })]
                         })
                     }), (0, l.jsx)(i.ksK, {
-                        onChange: O,
-                        value: S,
-                        error: y,
+                        onChange: M,
+                        value: E,
+                        error: j,
                         placeholder: m
                     })]
                 })]
@@ -164,7 +164,7 @@ let h = e => {
         } = e, r = t.name, s = `${t.name}_message_link`, d = a.useCallback((e, t) => {
             null != t ? n(r, e.value, e.isValid && t.isValid, s, t.value) : n(r, e.value, e.isValid, s, void 0)
         }, [n, r, s]);
-        return (0, l.jsx)(h, {
+        return (0, l.jsx)(g, {
             data: t.data,
             onChange: d,
             initialContentUrl: i?.[r],

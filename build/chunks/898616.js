@@ -15,14 +15,14 @@ function c(e) {
         wishlist: t,
         profileOwner: n,
         currentUser: c
-    } = e, u = n.id === c?.id, g = i.useMemo(() => t?.userId != null ? [t.userId] : [], [t]), m = (0, l.bG)([o.A], () => o.A.getDetectableIdsToApplicationIds()), x = i.useMemo(() => {
+    } = e, u = n.id === c?.id, g = i.useMemo(() => t?.userId != null ? [t.userId] : [], [t]), m = (0, l.bG)([o.A], () => o.A.getDetectableIdsToApplicationIds()), h = i.useMemo(() => {
         let e = [];
         for (let n of t?.items ?? [])(0, s.$)(n) && null != m[n.sku.applicationId] && e.push(n.sku.applicationId);
         return e
-    }, [t, m]), f = (0, d.w)({
+    }, [t, m]), x = (0, d.w)({
         userIds: g
     }), p = (0, d.mn)({
         userIds: g
-    }), h = (0, d.tR)(g), _ = (0, d.rY)(), A = (0, d.qx)(), I = (0, d.px)();
-    return i.useMemo(() => (0, a.uniq)([...x, ...f, ...p, ...h, ...u ? [..._, ...A, ...I] : []].filter(r.Vq)), [x, f, p, h, _, A, I, u])
+    }), f = (0, d.tR)(g), A = (0, d.rY)(), _ = (0, d.qx)(), I = (0, d.px)();
+    return i.useMemo(() => (0, a.uniq)([...h, ...x, ...p, ...f, ...u ? [...A, ..._, ...I] : []].filter(r.Vq)), [h, x, p, f, A, _, I, u])
 }

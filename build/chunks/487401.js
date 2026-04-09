@@ -27,8 +27,8 @@ var i = n(627968),
     T = n(395504),
     S = n(947461),
     b = n(770904),
-    y = n(357746),
-    v = n(816288),
+    v = n(357746),
+    y = n(816288),
     j = n(455234),
     R = n(649247),
     O = n(787541),
@@ -422,7 +422,7 @@ class ep extends l.PureComponent {
                     }, ed.n.GUILD_HUB_HEADER_OPTIONS);
                 case ed.n.GUILD_PREMIUM_PROGRESS_BAR:
                     let l = e.getRows();
-                    return (0, i.jsx)(v.A, {
+                    return (0, i.jsx)(y.A, {
                         guild: s,
                         withMargin: l.length > 1
                     }, ed.n.GUILD_PREMIUM_PROGRESS_BAR);
@@ -472,7 +472,7 @@ class ep extends l.PureComponent {
                         selected: r === eu.VV.MEMBER_SAFETY
                     }, ed.n.GUILD_MOD_DASH_MEMBER_SAFETY);
                 case ed.n.GUILD_BOOSTS:
-                    return (0, i.jsx)(y.A, {
+                    return (0, i.jsx)(v.A, {
                         guildId: s.id,
                         selected: r === eu.VV.GUILD_BOOSTS
                     }, ed.n.GUILD_BOOSTS);

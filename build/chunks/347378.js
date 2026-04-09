@@ -47,15 +47,15 @@ let g = () => {
     if (null == x) return null;
     let {
         intervalType: D,
-        intervalCount: S
-    } = x, N = (0, o.CE)(`${h}`, D, S);
+        intervalCount: N
+    } = x, S = (0, o.CE)(`${h}`, D, N);
     return (0, n.jsxs)(s.Modal, {
         size: "md",
         transitionState: t,
         title: `${f.intl.format(f.t.LZunzZ,{planPremiumType:u.Ay.getTierDisplayNameByPlanId(`${e}`)})}`,
         subtitle: 0 !== i.total ? f.intl.format(f.t.ycyeBx, {
             renewalDate: i.subscriptionPeriodStart,
-            rate: (0, o.CE)((0, o.$g)(i.total, i.currency), D, S)
+            rate: (0, o.CE)((0, o.$g)(i.total, i.currency), D, N)
         }) : f.intl.format(f.t["+y0Tjy"], {
             renewalDate: i.subscriptionPeriodStart
         }),
@@ -72,7 +72,7 @@ let g = () => {
                 label: f.intl.formatToPlainString(f.t.r3jVZq, {
                     planName: u.Ay.getDisplayName(`${e}`)
                 }),
-                value: `${N}`,
+                value: `${S}`,
                 className: p.aD
             }), (0, n.jsx)(c.pK, {}), (0, n.jsx)(d.m0, {
                 premiumSubscription: C,

@@ -3,9 +3,9 @@ n.d(t, {
     A: () => A
 });
 var i = n(627968),
-    r = n(397927),
-    a = n(241124),
-    l = n(947926),
+    a = n(397927),
+    l = n(241124),
+    r = n(947926),
     s = n(717695),
     o = n(985018),
     d = n(349661),
@@ -19,7 +19,7 @@ let A = function(e) {
         className: d.x3,
         children: (0, i.jsxs)("div", {
             className: c.wp,
-            children: [(0, i.jsx)(r.Heading, {
+            children: [(0, i.jsx)(a.Heading, {
                 className: c.Oo,
                 variant: "heading-md/semibold",
                 children: o.intl.string(o.t.rjVPdM)
@@ -30,10 +30,10 @@ let A = function(e) {
                     children: (0, i.jsx)("div", {
                         className: u.C3,
                         children: (0, i.jsx)(s.A, {
-                            children: (0, i.jsx)(a.jY, {
+                            children: (0, i.jsx)(l.jY, {
                                 source: "preview",
                                 questId: t.id,
-                                children: (0, i.jsx)(l.Y, {
+                                children: (0, i.jsx)(r.Y, {
                                     quest: t
                                 })
                             })

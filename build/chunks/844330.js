@@ -31,7 +31,7 @@ function d(e) {
             let e = !v;
             N || f(e), _?.(e), e && null != g && g()
         }, [v, N, _, g]),
-        j = s.useMemo(() => {
+        C = s.useMemo(() => {
             if (v) {
                 if (null != m) return {
                     maxHeight: "number" == typeof m ? `${m}px` : m
@@ -77,7 +77,7 @@ function d(e) {
             className: l()(c.Qs, {
                 [c.Sg]: v
             }),
-            style: j,
+            style: C,
             children: d
         })]
     })

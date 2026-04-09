@@ -3,22 +3,22 @@ n.d(t, {
     A: () => s
 });
 var i = n(627968),
-    r = n(64700),
-    a = n(775135),
-    l = n(904272);
+    a = n(64700),
+    l = n(775135),
+    r = n(904272);
 
 function s(e) {
     let {
         guild: t,
         setHasSubheader: n
-    } = e, s = r.useRef(null);
-    return r.useLayoutEffect(() => {
+    } = e, s = a.useRef(null);
+    return a.useLayoutEffect(() => {
         let e = s.current;
         null != e && n(e.childNodes.length > 0)
     }), (0, i.jsx)("div", {
-        className: l.k,
+        className: r.k,
         ref: s,
-        children: (0, i.jsx)(a.A, {
+        children: (0, i.jsx)(l.A, {
             guild: t
         })
     })

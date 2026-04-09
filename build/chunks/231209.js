@@ -28,9 +28,9 @@ var n = s(627968),
     I = s(761218),
     L = s(633026),
     j = s(251191),
-    k = s(613258),
+    O = s(613258),
     T = s(152568),
-    O = s(758836),
+    k = s(758836),
     y = s(652215),
     N = s(985018),
     R = s(572199);
@@ -43,7 +43,7 @@ let B = e => {
         } = e, {
             noCache: d,
             includeUnpublished: _
-        } = (0, E.A)(), [x, k] = r.useState(!1), y = (0, g.uM)(), B = y?.sessionId ?? "";
+        } = (0, E.A)(), [x, O] = r.useState(!1), y = (0, g.uM)(), B = y?.sessionId ?? "";
         r.useEffect(() => {
             (0, p.z)({
                 sessionId: B,
@@ -56,8 +56,8 @@ let B = e => {
         let {
             isFetchingShopHome: P,
             fetchShopHomeError: M,
-            shopBlocks: D,
-            refreshShopHome: w
+            shopBlocks: H,
+            refreshShopHome: D
         } = (0, h.y)(c, {
             noCache: d,
             includeUnpublished: _,
@@ -65,22 +65,22 @@ let B = e => {
         }, {
             sessionId: B,
             tab: c
-        }), H = r.useCallback(() => {
-            w()
-        }, [w]);
+        }), w = r.useCallback(() => {
+            D()
+        }, [D]);
         return (r.useEffect(() => {
-            null != M || P || 0 === D.length || (0, p.z)({
+            null != M || P || 0 === H.length || (0, p.z)({
                 sessionId: B,
                 checkpoint: p.t.SHOP_RENDERED,
                 tab: c,
                 unpublishedCategoriesShown: _,
                 cacheDisabled: d
             })
-        }, [M, P, D.length, _, d, B, c]), null != M) ? (0, n.jsx)(f.h, {
-            onRetry: H,
+        }, [M, P, H.length, _, d, B, c]), null != M) ? (0, n.jsx)(f.h, {
+            onRetry: w,
             errorOrigin: f.A.SHOP_PAGE,
             errorMessage: M.message
-        }) : P || 0 === D.length ? (0, n.jsxs)("div", {
+        }) : P || 0 === H.length ? (0, n.jsxs)("div", {
             className: i()(R.g4, R.Of),
             children: [(0, n.jsx)(S.A, {
                 isLoading: P,
@@ -92,12 +92,12 @@ let B = e => {
                 categories: []
             }), (0, n.jsx)(A.A, {
                 isLoading: P,
-                title: c === O.G2.ORBS ? N.intl.string(N.t.dFgeuZ) : N.intl.string(N.t.NSv5KV),
+                title: c === k.G2.ORBS ? N.intl.string(N.t.dFgeuZ) : N.intl.string(N.t.NSv5KV),
                 numVisibleItems: s,
                 tab: c
             })]
         }) : (0, n.jsx)(n.Fragment, {
-            children: D.map((e, r) => ((e, r, d) => {
+            children: H.map((e, r) => ((e, r, d) => {
                 if (null == e) return null;
                 let _ = null,
                     g = !1;
@@ -120,14 +120,14 @@ let B = e => {
                     case a.g.FEED:
                         let h = e.sortedSkuIds;
                         _ = (0, n.jsx)(A.A, {
-                            title: c === O.G2.ORBS ? N.intl.string(N.t.dFgeuZ) : N.intl.string(N.t.NSv5KV),
+                            title: c === k.G2.ORBS ? N.intl.string(N.t.dFgeuZ) : N.intl.string(N.t.NSv5KV),
                             isLoading: l,
                             numVisibleItems: s,
                             sortedSkuIds: h,
                             buttonContainerClassName: r?.type === a.g.IMMERSIVE_BANNER ? R.w : void 0,
-                            prioritizeUserDiscounts: c === O.G2.HOME,
+                            prioritizeUserDiscounts: c === k.G2.HOME,
                             tab: c,
-                            orbsSupportedOnly: c === O.G2.ORBS
+                            orbsSupportedOnly: c === k.G2.ORBS
                         }, d);
                         break;
                     case a.g.WIDE_BANNER:
@@ -159,7 +159,7 @@ let B = e => {
                     case a.g.IMMERSIVE_BANNER:
                         _ = (0, n.jsx)(v.A, {
                             immersiveBannerBlock: e,
-                            onVisibilityChange: e => k(!e)
+                            onVisibilityChange: e => O(!e)
                         }, d);
                         break;
                     case a.g.REWARD_HERO:
@@ -199,7 +199,7 @@ let B = e => {
                         children: _
                     })
                 }, d)
-            })(e, r > 0 ? D[r - 1] : null, r))
+            })(e, r > 0 ? H[r - 1] : null, r))
         })
     },
     P = e => {
@@ -209,13 +209,13 @@ let B = e => {
             transitionState: l
         } = e, i = r.useRef(null), {
             handleScroll: a
-        } = (0, d.X)(i, s), o = (0, x.U)(), u = (0, g.uM)(), [m, h] = r.useState(O.md), [p, f] = r.useState(!1);
+        } = (0, d.X)(i, s), o = (0, x.U)(), u = (0, g.uM)(), [m, h] = r.useState(k.md), [p, f] = r.useState(!1);
         return r.useEffect(() => {
             if (null != i.current) {
                 let e = () => {
                         if (null == i.current) return;
                         let e = i.current.getDistanceFromBottom();
-                        m >= 36 ? f(e < 20) : e <= 200 && h(e => e + O.md)
+                        m >= 36 ? f(e < 20) : e <= 200 && h(e => e + k.md)
                     },
                     t = i.current.getScrollerNode();
                 return t?.addEventListener("scroll", e), () => {
@@ -235,7 +235,7 @@ let B = e => {
                         numVisibleItems: m,
                         isFetchingCategories: o,
                         tab: s
-                    }), s !== O.G2.CATALOG && m >= 36 && (0, n.jsxs)("div", {
+                    }), s !== k.G2.CATALOG && m >= 36 && (0, n.jsxs)("div", {
                         className: R.R$,
                         children: [(0, n.jsx)(c.Heading, {
                             variant: "heading-md/semibold",
@@ -250,16 +250,16 @@ let B = e => {
                                 }), _.default.track(y.HAw.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
                                     collectibles_shop_session_id: u?.sessionId,
                                     page_type: s,
-                                    page_category: s === O.G2.HOME ? void 0 : u?.pageCategory,
+                                    page_category: s === k.G2.HOME ? void 0 : u?.pageCategory,
                                     cta_name: "browse the shop button"
                                 })
                             },
                             fullWidth: !0
                         })]
                     })]
-                }), (0, n.jsx)(k.A, {
+                }), (0, n.jsx)(O.A, {
                     peaking: p,
-                    transitioning: l === O.Pf.OUT
+                    transitioning: l === k.Pf.OUT
                 })]
             })
         })

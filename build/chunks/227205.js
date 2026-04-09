@@ -12,22 +12,24 @@ var n = s(627968),
     c = s(651162),
     d = s(311907),
     u = s(397927),
-    _ = s(545986),
-    g = s(318346),
-    m = s(287809),
-    h = s(954571),
-    p = s(440938),
-    f = s(993408),
-    x = s(212407),
-    E = s(521e3),
-    b = s(938191),
-    C = s(815280),
-    A = s(60140),
-    S = s(758836),
-    v = s(652215),
-    I = s(985018),
-    L = s(572199);
-let j = {
+    _ = s(793574),
+    g = s(688810),
+    m = s(545986),
+    h = s(318346),
+    p = s(287809),
+    f = s(954571),
+    x = s(440938),
+    E = s(993408),
+    b = s(212407),
+    C = s(521e3),
+    A = s(938191),
+    S = s(815280),
+    v = s(60140),
+    I = s(758836),
+    L = s(652215),
+    j = s(985018),
+    O = s(572199);
+let T = {
         rankedSkuIds: [],
         name: "",
         unpublishedAt: void 0,
@@ -42,11 +44,13 @@ let j = {
             handleTransition: s,
             category: l,
             heroBlock: k,
-            tab: T,
-            onVisibilityChange: O
-        } = e, y = (0, a.K)(e => {
-            O?.(e)
-        }, .1, null != O), N = r.useRef(null), R = (0, b.yB)("HeroBlock"), B = (0, d.bG)([m.default], () => m.default.getCurrentUser()), P = (0, p.uM)(), M = r.useMemo(() => null != k ? k : null == l ? j : {
+            tab: y,
+            onVisibilityChange: N
+        } = e, R = (0, a.K)(e => {
+            N?.(e)
+        }, .1, null != N), B = r.useRef(null), P = (0, A.yB)("HeroBlock"), M = (0, d.bG)([p.default], () => p.default.getCurrentUser()), H = (0, x.uM)(), {
+            analyticsLocations: D
+        } = (0, g.Ay)(_.A.COLLECTIBLES_SHOP_HERO), w = r.useMemo(() => null != k ? k : null == l ? T : {
             rankedSkuIds: l.heroRanking ?? [],
             name: l.name,
             unpublishedAt: l.unpublishedAt,
@@ -60,111 +64,114 @@ let j = {
             heroBannerUrl: l.heroBannerUrl,
             heroBannerAnimatedUrl: l.heroBannerAnimatedUrl
         }, [k, l]), {
-            bannerDisplayConfig: D,
-            logoDisplayConfig: w,
-            heroLogo: H,
-            heroBannerStatic: F,
-            heroBannerAnimated: G,
-            heroBannerRive: U
-        } = (0, x.Kk)(M), V = D?.responsive ?? !1, W = D?.backgroundStyle, z = null != U, K = T === S.G2.ORBS, Y = null != l && l.isOrbsExclusive, $ = K ? I.intl.string(I.t["1CdL8d"]) : I.intl.string(I.t.xYKa1T), Z = () => {
-            K ? ((0, g.Y)({
-                pageType: v.liQ.SHOP_ORBS_TAB,
-                sectionType: v.JJy.ORBS_SHOP_HERO_BLOCK,
-                ctaObject: v.ZSU.CTA_TO_QUEST_HOME
-            }), (0, _.navigateToQuestHome)({
+            bannerDisplayConfig: F,
+            logoDisplayConfig: G,
+            heroLogo: U,
+            heroBannerStatic: V,
+            heroBannerAnimated: W,
+            heroBannerRive: K
+        } = (0, b.Kk)(w), z = F?.responsive ?? !1, Y = F?.backgroundStyle, $ = null != K, Z = y === I.G2.ORBS, q = null != l && l.isOrbsExclusive, X = Z ? j.intl.string(j.t["1CdL8d"]) : j.intl.string(j.t.xYKa1T), J = () => {
+            Z ? ((0, h.Y)({
+                pageType: L.liQ.SHOP_ORBS_TAB,
+                sectionType: L.JJy.ORBS_SHOP_HERO_BLOCK,
+                ctaObject: L.ZSU.CTA_TO_QUEST_HOME
+            }), (0, m.navigateToQuestHome)({
                 fromContent: o.u.ORBS_SHOP_HERO_CTA
             })) : (s({
                 sourceButton: "shop latest category hero",
-                categorySkuId: Y ? M.categorySkuId : void 0,
+                categorySkuId: q ? w.categorySkuId : void 0,
                 isInternalShopDeeplink: !0,
-                isOrbsExclusive: Y
-            }), h.default.track(v.HAw.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
-                collectibles_shop_session_id: P?.sessionId,
-                sku_id: M.categorySkuId,
-                page_type: T,
-                page_section: P?.pageSection,
-                page_category: P?.pageCategory,
+                isOrbsExclusive: q
+            }), f.default.track(L.HAw.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+                collectibles_shop_session_id: H?.sessionId,
+                sku_id: w.categorySkuId,
+                page_type: y,
+                page_section: H?.pageSection,
+                page_category: H?.pageCategory,
                 cta_name: "shop latest category hero button"
             }))
         };
-        return null != B && (t || M !== j) ? (0, n.jsxs)("div", {
-            ref: y,
-            className: L.os,
-            children: [z ? (0, E.VA)({
-                isCustomCursorEnabled: R,
-                className: L.Xt,
-                riveEventTargetRef: N
-            }) : null, (0, n.jsx)("div", {
-                className: i()(L.vK, {
-                    [L.cN]: z,
-                    [L.no]: V
-                }),
-                style: null != W ? {
-                    background: W
-                } : void 0,
-                children: null != F && (0, n.jsx)(C.A, {
-                    bannerStatic: F,
-                    bannerAnimated: G,
-                    bannerRive: U,
-                    isResponsive: V,
-                    eventTargetRef: N
-                })
-            }), (0, n.jsxs)("div", {
-                className: L.xX,
-                children: [z ? (0, n.jsx)("div", {
-                    className: L.fy,
-                    children: !t && (0, n.jsx)(u.Button, {
-                        variant: "overlay-primary",
-                        onClick: Z,
-                        text: $
-                    })
-                }) : (0, n.jsxs)("div", {
-                    className: i()(L.bC, {
-                        [L.no]: V
+        return null != M && (t || w !== T) ? (0, n.jsx)(g.f5, {
+            value: D,
+            children: (0, n.jsxs)("div", {
+                ref: R,
+                className: O.os,
+                children: [$ ? (0, C.VA)({
+                    isCustomCursorEnabled: P,
+                    className: O.Xt,
+                    riveEventTargetRef: B
+                }) : null, (0, n.jsx)("div", {
+                    className: i()(O.vK, {
+                        [O.cN]: $,
+                        [O.no]: z
                     }),
-                    children: [t ? (0, n.jsx)("div", {
-                        className: L.Hw
-                    }) : (0, n.jsxs)("div", {
-                        className: L.Hw,
-                        children: [(0, f.HF)(M.unpublishedAt) && (0, n.jsx)(u.LpS, {
-                            disableColor: !0,
-                            text: I.intl.string(I.t["h/uBCR"]),
-                            className: L.v0
-                        }), (0, n.jsxs)("div", {
-                            className: L.Wq,
-                            children: [null != H && (0, n.jsx)("img", {
-                                className: L.rm,
-                                src: H,
-                                alt: M.name,
-                                style: w?.toDesktopStyles()
-                            }), null != M.title && (0, n.jsx)(u.Heading, {
-                                variant: "heading-xxl/bold",
-                                className: L.DD,
-                                color: "text-strong",
-                                children: M.title
-                            }), null != M.summary && "" !== M.summary && (0, n.jsx)(u.Text, {
-                                variant: "text-md/normal",
-                                className: K ? L.h4 : L.Tm,
-                                style: null != M.bannerTextColor ? {
-                                    color: M.bannerTextColor
-                                } : void 0,
-                                children: M.summary
-                            })]
-                        })]
-                    }), !t && (0, n.jsx)("div", {
-                        className: L.IS,
-                        children: (0, n.jsx)(u.Button, {
+                    style: null != Y ? {
+                        background: Y
+                    } : void 0,
+                    children: null != V && (0, n.jsx)(S.A, {
+                        bannerStatic: V,
+                        bannerAnimated: W,
+                        bannerRive: K,
+                        isResponsive: z,
+                        eventTargetRef: B
+                    })
+                }), (0, n.jsxs)("div", {
+                    className: O.xX,
+                    children: [$ ? (0, n.jsx)("div", {
+                        className: O.fy,
+                        children: !t && (0, n.jsx)(u.Button, {
                             variant: "overlay-primary",
-                            onClick: Z,
-                            text: $
+                            onClick: J,
+                            text: X
                         })
+                    }) : (0, n.jsxs)("div", {
+                        className: i()(O.bC, {
+                            [O.no]: z
+                        }),
+                        children: [t ? (0, n.jsx)("div", {
+                            className: O.Hw
+                        }) : (0, n.jsxs)("div", {
+                            className: O.Hw,
+                            children: [(0, E.HF)(w.unpublishedAt) && (0, n.jsx)(u.LpS, {
+                                disableColor: !0,
+                                text: j.intl.string(j.t["h/uBCR"]),
+                                className: O.v0
+                            }), (0, n.jsxs)("div", {
+                                className: O.Wq,
+                                children: [null != U && (0, n.jsx)("img", {
+                                    className: O.rm,
+                                    src: U,
+                                    alt: w.name,
+                                    style: G?.toDesktopStyles()
+                                }), null != w.title && (0, n.jsx)(u.Heading, {
+                                    variant: "heading-xxl/bold",
+                                    className: O.DD,
+                                    color: "text-strong",
+                                    children: w.title
+                                }), null != w.summary && "" !== w.summary && (0, n.jsx)(u.Text, {
+                                    variant: "text-md/normal",
+                                    className: Z ? O.h4 : O.Tm,
+                                    style: null != w.bannerTextColor ? {
+                                        color: w.bannerTextColor
+                                    } : void 0,
+                                    children: w.summary
+                                })]
+                            })]
+                        }), !t && (0, n.jsx)("div", {
+                            className: O.IS,
+                            children: (0, n.jsx)(u.Button, {
+                                variant: "overlay-primary",
+                                onClick: J,
+                                text: X
+                            })
+                        })]
+                    }), (0, n.jsx)(v.A, {
+                        heroBlockRecord: w,
+                        tab: y,
+                        isBlockLoading: t,
+                        layout: y === I.G2.HOME ? "hscroll" : "feed"
                     })]
-                }), (0, n.jsx)(A.A, {
-                    heroBlockRecord: M,
-                    tab: T,
-                    isBlockLoading: t,
-                    layout: T === S.G2.HOME ? "hscroll" : "feed"
                 })]
-            })]
+            })
         }) : null
     }

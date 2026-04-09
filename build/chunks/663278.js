@@ -1,17 +1,17 @@
 /** chunk id: 663278 params = (module,exports,require) **/
 n.d(t, {
-    MW: () => l,
+    MW: () => r,
     zw: () => s
 });
-var i, r = n(723702),
-    a = n(655087),
-    l = ((i = {})[i.UNHANDLED = -1] = "UNHANDLED", i[i.NOMINAL = 0] = "NOMINAL", i[i.FAIR = 1] = "FAIR", i[i.SERIOUS = 2] = "SERIOUS", i[i.CRITICAL = 3] = "CRITICAL", i);
+var i, a = n(723702),
+    l = n(655087),
+    r = ((i = {})[i.UNHANDLED = -1] = "UNHANDLED", i[i.NOMINAL = 0] = "NOMINAL", i[i.FAIR = 1] = "FAIR", i[i.SERIOUS = 2] = "SERIOUS", i[i.CRITICAL = 3] = "CRITICAL", i);
 
 function s() {
-    var e = a.A.getRawThermalState();
+    var e = l.A.getRawThermalState();
     if (null == e) return -1;
-    if ((0, r.isIOS)()) return e;
-    if (!(0, r.isAndroid)()) return -1;
+    if ((0, a.isIOS)()) return e;
+    if (!(0, a.isAndroid)()) return -1;
     switch (e) {
         case 0:
             return 0;

@@ -21,13 +21,13 @@ function m(e) {
     } = e, {
         trackUserProfileAction: m
     } = (0, r.NJ)(), {
-        mutualGuilds: x,
-        isFetching: f
+        mutualGuilds: h,
+        isFetching: x
     } = (0, o.A)(t);
     return (0, i.jsx)(u.K, {
         className: g.XG,
         fade: !0,
-        children: null == x && f ? Array.from({
+        children: null == h && x ? Array.from({
             length: 10
         }).map((e, t) => (0, i.jsxs)("div", {
             className: g.Y7,
@@ -38,7 +38,7 @@ function m(e) {
                 width: 135,
                 opacity: .08
             })]
-        }, t)) : (null != x || f) && x?.length !== 0 ? x?.map(e => {
+        }, t)) : (null != h || x) && h?.length !== 0 ? h?.map(e => {
             let {
                 guild: l,
                 nick: r

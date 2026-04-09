@@ -3,9 +3,9 @@ n.d(t, {
     A: () => f
 });
 var i = n(627968),
-    r = n(64700),
-    a = n(503698),
-    l = n.n(a),
+    a = n(64700),
+    l = n(503698),
+    r = n.n(l),
     s = n(621466),
     o = n(311907),
     d = n(397927),
@@ -15,11 +15,11 @@ var i = n(627968),
     h = n(742077),
     _ = n(268387),
     m = n(715671),
-    p = n(652215),
-    g = n(985018),
+    g = n(652215),
+    p = n(985018),
     E = n(671437);
-class I extends r.Component {
-    searchBarRef = r.createRef();
+class I extends a.Component {
+    searchBarRef = a.createRef();
     state = {
         focused: !1
     };
@@ -42,10 +42,10 @@ class I extends r.Component {
         let {
             applicationViewItems: t,
             activeRowKey: n
-        } = this.props, i = t.findIndex(e => e.key === n), r = 0;
-        i >= 0 && (r = (i + e) % t.length) < 0 && (r = t.length - 1);
-        let a = t[r];
-        u.pU(null != a ? a.key : null, !0)
+        } = this.props, i = t.findIndex(e => e.key === n), a = 0;
+        i >= 0 && (a = (i + e) % t.length) < 0 && (a = t.length - 1);
+        let l = t[a];
+        u.pU(null != l ? l.key : null, !0)
     }
     handleKeyDown = e => {
         let {
@@ -53,38 +53,38 @@ class I extends r.Component {
             hasModalOpen: n,
             applicationViewItems: i
         } = this.props, {
-            searchBarRef: r
+            searchBarRef: a
         } = this;
-        if (n || e.ctrlKey || e.altKey || e.metaKey || null == r) return;
-        let a = (0, s.BF)(e)?.activeElement;
-        if (!(a !== r.current && (0, s.Cw)(a))) switch (e.which) {
-            case p.Ks6.ESCAPE:
-                e.target !== r.current ? this.reset() : null != r.current && r.current?.blur();
+        if (n || e.ctrlKey || e.altKey || e.metaKey || null == a) return;
+        let l = (0, s.BF)(e)?.activeElement;
+        if (!(l !== a.current && (0, s.Cw)(l))) switch (e.which) {
+            case g.Ks6.ESCAPE:
+                e.target !== a.current ? this.reset() : null != a.current && a.current?.blur();
                 break;
-            case p.Ks6.ENTER:
+            case g.Ks6.ENTER:
                 if (null != t) {
                     e.preventDefault();
                     let n = i.find(e => e.key === t);
                     if (null == n) return;
-                    let r = n.libraryApplication;
-                    m.performDefaultLibraryApplicationAction(r, {
+                    let a = n.libraryApplication;
+                    m.performDefaultLibraryApplicationAction(a, {
                         analyticsParams: {
-                            source: p.ThZ.APPLICATION_LIBRARY,
+                            source: g.ThZ.APPLICATION_LIBRARY,
                             location: {
-                                page: p.liQ.LIBRARY,
-                                section: p.JJy.LIBRARY_APPLICATION_LIST,
-                                object: p.ZSU.BUTTON_CTA
+                                page: g.liQ.LIBRARY,
+                                section: g.JJy.LIBRARY_APPLICATION_LIST,
+                                object: g.ZSU.BUTTON_CTA
                             }
                         }
                     })
                 }
                 break;
-            case p.Ks6.ARROW_DOWN:
-            case p.Ks6.ARROW_UP:
-                e.preventDefault(), e.stopPropagation(), this.updateActiveRow(e.which === p.Ks6.ARROW_DOWN ? 1 : -1);
+            case g.Ks6.ARROW_DOWN:
+            case g.Ks6.ARROW_UP:
+                e.preventDefault(), e.stopPropagation(), this.updateActiveRow(e.which === g.Ks6.ARROW_DOWN ? 1 : -1);
                 break;
             default:
-                null != r.current && e.target !== r.current && r.current?.focus()
+                null != a.current && e.target !== a.current && a.current?.focus()
         }
     };
     render() {
@@ -94,7 +94,7 @@ class I extends r.Component {
             focused: t
         } = this.state;
         return (0, i.jsx)("div", {
-            className: l()({
+            className: r()({
                 [E.sw]: !0,
                 [E.in]: t
             }),
@@ -111,7 +111,7 @@ class I extends r.Component {
                     this.reset(), this.focusInput()
                 },
                 query: e,
-                placeholder: g.intl.string(g.t.aSxWSo)
+                placeholder: p.intl.string(p.t.aSxWSo)
             })
         })
     }

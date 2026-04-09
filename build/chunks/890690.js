@@ -4,8 +4,8 @@ n.d(t, {
     u: () => a
 }), n(321073), n(134528), n(947204);
 var r = n(64700),
-    i = n(894858),
-    l = n(397274);
+    l = n(894858),
+    i = n(397274);
 
 function a(e, t) {
     let n = r.useRef(null),
@@ -13,7 +13,7 @@ function a(e, t) {
         s = r.useRef(!1);
     r.useEffect(() => {
         if (!t) return;
-        let e = l.A.getPanelScrollerNode();
+        let e = i.A.getPanelScrollerNode();
         if (null == e) return;
         let r = e.querySelectorAll("[data-settings-category-key]"),
             o = e.querySelector("[data-panel-bottom]"),
@@ -34,15 +34,15 @@ function a(e, t) {
                         s.current = n && t;
                         return
                     }
-                    let i = c.get(r);
-                    null != i && (n ? a.current.add(i) : a.current.delete(i))
-                }), !l.A.getIsSidebarCategoryAutoSelectEnabled()) return;
+                    let l = c.get(r);
+                    null != l && (n ? a.current.add(l) : a.current.delete(l))
+                }), !i.A.getIsSidebarCategoryAutoSelectEnabled()) return;
             let n = [];
             if (d.forEach(e => {
                     a.current.has(e) && n.push(e)
                 }), 0 === n.length) return;
             let r = n.at(s.current ? -1 : 0);
-            i.A.getField("currentCategoryKey") !== r && i.A.setState({
+            l.A.getField("currentCategoryKey") !== r && l.A.setState({
                 currentCategoryKey: r
             })
         }, {

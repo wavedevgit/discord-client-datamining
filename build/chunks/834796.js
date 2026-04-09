@@ -1,13 +1,13 @@
 /** chunk id: 834796 params = (module,exports,require) **/
 t.d(e, {
-    A: () => o
+    A: () => c
 });
 var s = t(627968);
 t(64700);
 var n = t(804870),
     r = t(798048);
 
-function o(i) {
+function c(i) {
     let {
         cardSize: e = r.Y.MEDIUM
     } = i;

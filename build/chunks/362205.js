@@ -4,9 +4,9 @@ n.d(t, {
     A: () => j
 });
 var r = n(627968),
-    i = n(64700),
-    l = n(503698),
-    a = n.n(l),
+    l = n(64700),
+    i = n(503698),
+    a = n.n(i),
     s = n(284009),
     o = n.n(s),
     u = n(687498),
@@ -16,10 +16,10 @@ var r = n(627968),
     m = n(319354),
     f = n(397927),
     p = n(775602),
-    _ = n(253932),
-    v = n(894858),
-    y = n(272053),
-    g = n(397274),
+    v = n(253932),
+    y = n(894858),
+    g = n(272053),
+    _ = n(397274),
     x = n(189857),
     E = n(674085),
     A = n(188180),
@@ -30,8 +30,8 @@ function N(e) {
     let {
         category: t,
         onClick: n,
-        active: i,
-        dismissibleBadge: l
+        active: l,
+        dismissibleBadge: i
     } = e, {
         useTitle: s,
         useSubnavLabel: u,
@@ -42,11 +42,11 @@ function N(e) {
         children: e => (0, r.jsxs)(f.DUT, {
             onClick: n,
             className: a()(b.AS, {
-                [b.vu]: i
+                [b.vu]: l
             }),
             ...e,
-            children: [m, null != l && !i && (0, r.jsx)(E.A, {
-                badge: l
+            children: [m, null != i && !l && (0, r.jsx)(E.A, {
+                badge: i
             })]
         }, c)
     })
@@ -56,14 +56,14 @@ function j(e) {
     let {
         active: t,
         categories: n,
-        visibleContent: l,
+        visibleContent: i,
         dismissibleBadges: a
-    } = e, [s, o] = i.useState(() => {
-        let e = v.A.getField("currentCategoryKey"),
+    } = e, [s, o] = l.useState(() => {
+        let e = y.A.getField("currentCategoryKey"),
             t = n.find(t => t.key === e);
         return t?.key ?? n[0].key
-    }), [u, d] = i.useState(t);
-    i.useEffect(() => v.A.subscribe(e => {
+    }), [u, d] = l.useState(t);
+    l.useEffect(() => y.A.subscribe(e => {
         let {
             currentCategoryKey: t
         } = e;
@@ -75,8 +75,8 @@ function j(e) {
         equalityFn: c.x,
         fireImmediately: !0
     }), [n, t]);
-    let h = i.useMemo(() => Math.max(n.findIndex(e => e.key === s), 0), [n, s]);
-    i.useEffect(() => {
+    let h = l.useMemo(() => Math.max(n.findIndex(e => e.key === s), 0), [n, s]);
+    l.useEffect(() => {
         if (!t) {
             let e = m.current;
             null != e && (e.style.height = `${e.scrollHeight}px`, window.getComputedStyle(e).height, e.style.height = "0", Promise.allSettled(e.getAnimations().map(e => e.finished)).then(() => {
@@ -84,8 +84,8 @@ function j(e) {
             }))
         }
     }, [t]);
-    let m = i.useRef(null),
-        [f, p] = i.useState(t ? "auto" : "0");
+    let m = l.useRef(null),
+        [f, p] = l.useState(t ? "auto" : "0");
     return (0, S.u)(n, t), (0, r.jsx)("div", {
         className: b.lK,
         style: {
@@ -97,12 +97,12 @@ function j(e) {
             index: h,
             activeKey: s,
             categories: n,
-            visibleContent: l,
+            visibleContent: i,
             dismissibleBadges: a,
             onMount: function() {
                 let e = m.current;
                 null != e && (e.style.height = `${e.scrollHeight}px`, Promise.all(e.getAnimations().map(e => e.finished)).then(() => {
-                    e.style.height = "auto", g.A.scrollSidebarNodeIntoView(e, {
+                    e.style.height = "auto", _.A.scrollSidebarNodeIntoView(e, {
                         animate: !0,
                         block: "nearest"
                     })
@@ -116,22 +116,22 @@ function C(e) {
     let {
         index: t,
         activeKey: n,
-        categories: l,
+        categories: i,
         visibleContent: a,
         dismissibleBadges: s,
         onMount: o
     } = e, {
         thumbRef: c,
         trackRef: d,
-        thumbAnchorRef: v,
-        springs: g
+        thumbAnchorRef: y,
+        springs: _
     } = function(e) {
-        let t = _.Xi.useSetting(),
-            n = i.useRef(null),
-            r = i.useRef(null),
-            l = i.useRef(null),
-            a = i.useRef(!0),
-            s = i.useRef(t),
+        let t = v.Xi.useSetting(),
+            n = l.useRef(null),
+            r = l.useRef(null),
+            i = l.useRef(null),
+            a = l.useRef(!0),
+            s = l.useRef(t),
             [o, u] = (0, f.zhh)(() => ({
                 y: 0,
                 height: 0,
@@ -141,11 +141,11 @@ function C(e) {
                     tension: 300
                 }
             }));
-        return i.useLayoutEffect(() => {
+        return l.useLayoutEffect(() => {
             let e = s.current !== t,
-                i = () => {
-                    if (null == n.current || null == r.current || null == l.current) return;
-                    let [i, c] = [n.current.getBoundingClientRect(), l.current.getBoundingClientRect()], d = i.width / 2, h = (c.y - i.y) / d, m = c.height / d;
+                l = () => {
+                    if (null == n.current || null == r.current || null == i.current) return;
+                    let [l, c] = [n.current.getBoundingClientRect(), i.current.getBoundingClientRect()], d = l.width / 2, h = (c.y - l.y) / d, m = c.height / d;
                     a.current || e || p.A.useReducedMotion ? (o.y.set(h), o.height.set(m)) : u({
                         y: h,
                         height: m
@@ -153,14 +153,14 @@ function C(e) {
                 },
                 c = null;
             return e ? c = requestAnimationFrame(() => {
-                c = null, i()
-            }) : i(), () => {
+                c = null, l()
+            }) : l(), () => {
                 null != c && cancelAnimationFrame(c)
             }
         }, [e, u, o.y, o.height, t]), {
             thumbRef: r,
             trackRef: n,
-            thumbAnchorRef: l,
+            thumbAnchorRef: i,
             springs: o
         }
     }(t);
@@ -168,7 +168,7 @@ function C(e) {
         className: b.o8,
         role: "list",
         style: {
-            "--custom-nav-count": l.length,
+            "--custom-nav-count": i.length,
             "--custom-nav-index": t,
             "--custom-nav-width": "2px",
             "--custom-icon-size": `${m.E[A.V]}px`
@@ -179,19 +179,19 @@ function C(e) {
             ref: d,
             children: (0, r.jsx)(u.animated.div, {
                 className: b.FF,
-                style: g,
+                style: _,
                 ref: c
             })
         }), (0, r.jsx)("div", {
             className: b.gu,
             "aria-hidden": "true",
-            ref: v
-        }), l.map(e => {
+            ref: y
+        }), i.map(e => {
             let t = (0, x.H)(e.key, a, s);
             return (0, r.jsx)(N, {
                 onClick: () => {
                     var t;
-                    return t = e.key, void y.A.navigate(t, {
+                    return t = e.key, void g.A.navigate(t, {
                         showNavigationMobile: !1
                     })
                 },

@@ -3,9 +3,9 @@ n.d(t, {
     A: () => _
 });
 var i = n(627968),
-    r = n(64700),
-    a = n(503698),
-    l = n.n(a),
+    a = n(64700),
+    l = n(503698),
+    r = n.n(l),
     s = n(554146),
     o = n(397927),
     d = n(932001),
@@ -17,17 +17,17 @@ let _ = e => {
     let {
         isSelected: t,
         discountOffer: n
-    } = e, [a, _] = (0, d.kn)([s.M.CHURN_DISCOUNT_PREMIUM_TAB_BADGE], void 0, !0);
-    return (r.useEffect(() => {
-        t && a === s.M.CHURN_DISCOUNT_PREMIUM_TAB_BADGE && _(u.i.TAKE_ACTION)
-    }, [t, _, a]), a === s.M.CHURN_DISCOUNT_PREMIUM_TAB_BADGE) ? (0, i.jsx)(c.MA, {
+    } = e, [l, _] = (0, d.kn)([s.M.CHURN_DISCOUNT_PREMIUM_TAB_BADGE], void 0, !0);
+    return (a.useEffect(() => {
+        t && l === s.M.CHURN_DISCOUNT_PREMIUM_TAB_BADGE && _(u.i.TAKE_ACTION)
+    }, [t, _, l]), l === s.M.CHURN_DISCOUNT_PREMIUM_TAB_BADGE) ? (0, i.jsx)(c.MA, {
         badgeCopy: A.intl.format(A.t.AYcXGW, {
             discountOfferAmount: n.discount.amount
         }).toString(),
         isTabSelected: t,
         offerExpiresAt: null
     }) : (0, i.jsxs)("div", {
-        className: l()(h.bv, h.Hf),
+        className: r()(h.bv, h.Hf),
         children: [(0, i.jsx)(o.O4, {
             size: "custom",
             width: 14,

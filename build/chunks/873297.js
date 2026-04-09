@@ -29,15 +29,15 @@ let S = e => {
             skuIds: I,
             endTime: L,
             tab: j,
-            applicationId: k,
+            applicationId: O,
             headerText: T,
-            shopButtonText: O,
+            shopButtonText: k,
             analyticsSection: y,
             analyticsTileType: N,
             analyticsImpressionType: R,
             backgroundImageUrl: B
         } = e,
-        P = (0, i.bG)([_.A], () => _.A.getGuildIdFromApplicationId(k), [k]),
+        P = (0, i.bG)([_.A], () => _.A.getGuildIdFromApplicationId(O), [O]),
         M = (t = r.useRef([]), r.useEffect(() => {
             if (null != P)
                 for (let e of I)(0, d.qf)(P, e)
@@ -59,11 +59,11 @@ let S = e => {
         skuIds: M,
         location: "GamePromotionBanner"
     });
-    let D = (0, E.uM)(),
+    let H = (0, E.uM)(),
         {
-            analyticsLocations: w
+            analyticsLocations: D
         } = (0, o.Ay)(),
-        H = r.useRef(null),
+        w = r.useRef(null),
         F = r.useRef(!1),
         G = r.useRef(null),
         U = r.useMemo(() => ({
@@ -74,23 +74,23 @@ let S = e => {
         }),
         W = r.useCallback((e, t) => {
             x.default.track(b.HAw.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
-                collectibles_shop_session_id: D?.sessionId,
+                collectibles_shop_session_id: H?.sessionId,
                 page_type: j,
-                page_category: D?.pageCategory,
-                page_section: D?.pageSection,
+                page_category: H?.pageCategory,
+                page_section: H?.pageSection,
                 tile_type: N,
                 cta_name: e,
                 ...null != t ? {
                     sku_id: t
                 } : void 0
             })
-        }, [D?.sessionId, D?.pageCategory, D?.pageSection, j, N]),
-        z = r.useCallback(() => {
+        }, [H?.sessionId, H?.pageCategory, H?.pageSection, j, N]),
+        K = r.useCallback(() => {
             null != P && (0, g.X)({
                 guildId: P
             })
         }, [P]),
-        K = r.useCallback(() => {
+        z = r.useCallback(() => {
             null != P && (W("go_to_game_shop"), (0, g.default)({
                 guildId: P
             }))
@@ -104,31 +104,31 @@ let S = e => {
                 skuId: s,
                 applicationId: n,
                 isStorefront: !1,
-                analyticsLocations: w
+                analyticsLocations: D
             })
-        }, [W, w]),
+        }, [W, D]),
         $ = r.useCallback(() => {
             W("dismiss"), v()
         }, [W, v]),
         Z = r.useCallback(e => {
             !F.current && (e && null === G.current ? G.current = setTimeout(() => {
                 F.current = !0, G.current = null, x.default.track(b.HAw.COLLECTIBLES_TILE_IMPRESSION, {
-                    collectibles_shop_session_id: D?.sessionId,
+                    collectibles_shop_session_id: H?.sessionId,
                     page_type: j,
-                    page_category: D?.pageCategory,
-                    page_section: D?.pageSection,
+                    page_category: H?.pageCategory,
+                    page_section: H?.pageSection,
                     type: R
                 })
             }, 1e3) : e || null === G.current || (clearTimeout(G.current), G.current = null))
-        }, [D?.sessionId, D?.pageCategory, D?.pageSection, j, R]);
+        }, [H?.sessionId, H?.pageCategory, H?.pageSection, j, R]);
     return (r.useEffect(() => () => {
         null !== G.current && (clearTimeout(G.current), G.current = null)
     }, []), 0 === M.length) ? null : (0, n.jsx)(a.L, {
-        innerRef: H,
+        innerRef: w,
         onChange: Z,
         threshold: 0,
         children: (0, n.jsx)("div", {
-            ref: H,
+            ref: w,
             className: A.YB,
             children: (0, n.jsxs)("div", {
                 className: A.kL,
@@ -162,9 +162,9 @@ let S = e => {
                             variant: "overlay-primary",
                             icon: l.I9m,
                             iconPosition: "end",
-                            text: O,
-                            onMouseDown: z,
-                            onClick: K
+                            text: k,
+                            onMouseDown: K,
+                            onClick: z
                         })]
                     })]
                 }), (0, n.jsx)(u.E9, {

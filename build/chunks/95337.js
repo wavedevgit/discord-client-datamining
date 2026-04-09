@@ -60,13 +60,13 @@ let x = () => {
             variant: "critical-primary",
             loading: P
         });
-        let S = (0, u.Zb)(x),
-            N = S ? g.intl.string(p.default.qbDPGM) : g.intl.string(g.t.LZunzZ);
+        let N = (0, u.Zb)(x),
+            S = N ? g.intl.string(p.default.qbDPGM) : g.intl.string(g.t.LZunzZ);
         return (0, n.jsx)(l.Modal, {
             size: "md",
             transitionState: t,
-            title: N,
-            subtitle: h(f, i, m, S),
+            title: S,
+            subtitle: h(f, i, m, N),
             actions: D,
             onClose: async () => e(),
             children: v ? (0, n.jsx)(a.wx6, {

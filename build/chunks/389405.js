@@ -1,11 +1,11 @@
 /** chunk id: 389405 params = (module,exports,require) **/
 n.d(t, {
-    A: () => p
+    A: () => g
 });
 var i = n(627968),
-    r = n(64700),
-    a = n(835245),
-    l = n(607399),
+    a = n(64700),
+    l = n(835245),
+    r = n(607399),
     s = n(732955),
     o = n(397927),
     d = n(954571),
@@ -16,11 +16,11 @@ var i = n(627968),
     _ = n(985018),
     m = n(583779);
 
-function p(e) {
+function g(e) {
     let {
         applicationId: t
-    } = e.match.params, [p, g] = r.useState(!1), E = r.useRef(!1), [I, f] = r.useState(null), C = !c.isPlatformEmbedded && !l.Fr && !p, T = r.useMemo(() => (0, a.A)(), []);
-    return (r.useEffect(() => {
+    } = e.match.params, [g, p] = a.useState(!1), E = a.useRef(!1), [I, f] = a.useState(null), C = !c.isPlatformEmbedded && !r.Fr && !g, T = a.useMemo(() => (0, l.A)(), []);
+    return (a.useEffect(() => {
         C && !0 !== E.current && (Promise.resolve().then(n.bind(n, 129014)).then(e => {
             let {
                 default: n
@@ -60,7 +60,7 @@ function p(e) {
         }), (0, i.jsx)(s.$nd, {
             variant: "primary",
             text: _.intl.string(_.t.fIv16B),
-            onClick: () => g(!0)
+            onClick: () => p(!0)
         })]
     }) : (0, i.jsxs)("div", {
         className: m.k,

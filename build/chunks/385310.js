@@ -3,9 +3,9 @@ n.d(t, {
     A: () => h
 });
 var i = n(627968),
-    r = n(64700),
-    a = n(311907),
-    l = n(990078),
+    a = n(64700),
+    l = n(311907),
+    r = n(990078),
     s = n(397927),
     o = n(624458),
     d = n(212455),
@@ -19,15 +19,15 @@ let h = e => {
         onReapply: h,
         confirmText: _,
         onWithdrawApplication: m,
-        rejectionReason: p = null,
-        guild: g = null
-    } = e, E = (0, a.bG)([d.A], () => d.A.getCooldown(g?.id ?? "0")), {
+        rejectionReason: g = null,
+        guild: p = null
+    } = e, E = (0, l.bG)([d.A], () => d.A.getCooldown(p?.id ?? "0")), {
         canReapply: I,
         isLoading: f
-    } = (0, c.f)(g?.id);
-    r.useEffect(() => {
-        null == E && null != g && o.A.fetchJoinRequestCooldown(g.id)
-    }, [E, g]);
+    } = (0, c.f)(p?.id);
+    a.useEffect(() => {
+        null == E && null != p && o.A.fetchJoinRequestCooldown(p.id)
+    }, [E, p]);
     let C = (E ?? 0) > 0,
         T = C && null != E ? Math.ceil((1e3 * E - Date.now()) / 864e5) : 0;
     return (0, i.jsxs)("div", {
@@ -44,22 +44,22 @@ let h = e => {
                 id: t,
                 variant: "heading-lg/semibold",
                 color: "text-strong",
-                children: g?.name != null ? u.intl.formatToPlainString(u.t["P+/gzA"], {
-                    guildName: g.name
+                children: p?.name != null ? u.intl.formatToPlainString(u.t["P+/gzA"], {
+                    guildName: p.name
                 }) : u.intl.string(u.t.gBPcuP)
-            }), null != p && "" !== p ? (0, i.jsxs)(s.Text, {
+            }), null != g && "" !== g ? (0, i.jsxs)(s.Text, {
                 variant: "text-md/medium",
                 color: "text-default",
                 children: [(0, i.jsx)("span", {
                     className: A.Wj,
                     children: u.intl.string(u.t.cf1psW)
                 }), (0, i.jsx)("span", {
-                    children: p
+                    children: g
                 })]
             }) : null]
         }), (0, i.jsxs)("div", {
             className: A.Ow,
-            children: [I || f ? (0, i.jsx)(l.m, {
+            children: [I || f ? (0, i.jsx)(r.m, {
                 asContainer: !0,
                 text: C ? u.intl.formatToPlainString(u.t.A0f0P7, {
                     days: T

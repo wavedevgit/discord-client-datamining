@@ -3,9 +3,9 @@ n.d(t, {
     A: () => h
 });
 var i = n(627968),
-    r = n(64700),
-    a = n(362599),
-    l = n(342494),
+    a = n(64700),
+    l = n(362599),
+    r = n(342494),
     s = n(976860),
     o = n(235365),
     d = n(652215),
@@ -18,14 +18,14 @@ function h(e) {
         targetElementRef: t,
         dismissPopover: n,
         children: h
-    } = e, _ = r.useCallback(() => {
+    } = e, _ = a.useCallback(() => {
         n(c.i.TAKE_ACTION), (0, s.pX)(`${d.BVt.NITRO_HOME}?section=${o.L}`)
-    }, [n]), m = (0, i.jsx)(l.AM, {
+    }, [n]), m = (0, i.jsx)(r.AM, {
         targetElementRef: t,
         onRequestClose: () => n(c.i.USER_DISMISS),
         graphic: {
             type: "rive",
-            rive: a.Z
+            rive: l.Z
         },
         badge: {
             type: "beta",

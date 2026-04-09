@@ -25,8 +25,8 @@ var i = n(627968),
     N = n(650048),
     v = n(877062),
     T = n(129851),
-    j = n(538796),
-    C = n(229),
+    C = n(538796),
+    j = n(229),
     S = n(652215),
     y = n(401755),
     b = n(771016),
@@ -130,7 +130,7 @@ class D extends s.PureComponent {
                     transitionTo: s,
                     location: r
                 });
-                return (0, i.jsx)(C.A, {
+                return (0, i.jsx)(j.A, {
                     guildTemplate: e,
                     transitionTo: s,
                     location: r,
@@ -180,7 +180,7 @@ function P(e) {
             })
         })]
     });
-    return (0, i.jsx)(j.A, {
+    return (0, i.jsx)(C.A, {
         className: w.sL,
         children: () => [(0, i.jsx)(m.A, {
             guildTemplate: t

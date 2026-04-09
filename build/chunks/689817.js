@@ -3,18 +3,18 @@ n.d(t, {
     f: () => s
 });
 var i = n(64700),
-    r = n(965660),
-    a = n(601193),
-    l = n(324580);
+    a = n(965660),
+    l = n(601193),
+    r = n(324580);
 
 function s() {
-    let e = a.A.useField("selectedTab"),
-        t = i.useMemo(() => [l.o.FEATURED, l.o.GAMING, l.o.MUSIC, l.o.ENTERTAINMENT, l.o.TECH, l.o.EDUCATION, l.o.HUBS].map(e => ({
+    let e = l.A.useField("selectedTab"),
+        t = i.useMemo(() => [r.o.FEATURED, r.o.GAMING, r.o.MUSIC, r.o.ENTERTAINMENT, r.o.TECH, r.o.EDUCATION, r.o.HUBS].map(e => ({
             id: e,
-            label: (0, r.jR)(e)
+            label: (0, a.jR)(e)
         })), []),
         n = i.useCallback(e => {
-            a.A.setState({
+            l.A.setState({
                 selectedTab: e
             })
         }, []);

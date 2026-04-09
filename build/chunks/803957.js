@@ -17,7 +17,7 @@ let _ = e => {
             child: t,
             onClick: n,
             nodeMap: a
-        } = e, [_, m] = t, p = (0, r.bG)([d.Ay], () => d.Ay.get("iar_show_report_sub_type_labels")), g = a[m], x = g?.report_type;
+        } = e, [_, m] = t, p = (0, r.bG)([d.Ay], () => d.Ay.get("iar_show_report_sub_type_labels")), h = a[m], x = h?.report_type;
         return (0, l.jsxs)(s.DUT, {
             className: i()(u.Zm, c.lD),
             onClick: () => n(t),

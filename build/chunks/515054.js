@@ -1,137 +1,137 @@
 /** chunk id: 515054 params = (module,exports,require) **/
 n.d(t, {
-    A: () => I,
-    K: () => _
+    A: () => A,
+    K: () => I
 });
 var i = n(627968),
-    a = n(64700),
-    l = n(503698),
-    s = n.n(l),
+    l = n(64700),
+    a = n(503698),
+    s = n.n(a),
     r = n(397927),
     o = n(183555),
-    d = n(958805),
-    c = n(61881),
+    c = n(958805),
+    d = n(61881),
     u = n(790417),
-    g = n(113763),
-    m = n(583246),
-    x = n(463259),
-    f = n(133583),
+    m = n(113763),
+    g = n(583246),
+    f = n(463259),
+    x = n(133583),
     p = n(518477),
-    h = n(828622);
+    _ = n(828622);
 
-function _(e) {
+function I(e) {
     let {
         children: t,
         className: n,
-        scrollerRef: a,
-        ...l
+        scrollerRef: l,
+        ...a
     } = e;
     return (0, i.jsx)(r.HOs, {
-        ref: a,
-        className: s()(h.gN, n),
+        ref: l,
+        className: s()(_.gN, n),
         fade: !0,
-        ...l,
+        ...a,
         children: t
     })
+}
+
+function h(e) {
+    let {
+        user: t,
+        currentUser: n,
+        section: l,
+        displayProfile: a,
+        guildId: s,
+        channelId: r,
+        onClose: o
+    } = e;
+    return l === p.RP.ACTIVITY ? (0, i.jsx)(u.A, {
+        user: t,
+        currentUser: n,
+        displayProfile: a,
+        guildId: s,
+        channelId: r,
+        onClose: o
+    }) : l === p.RP.MUTUAL_FRIENDS ? (0, i.jsx)(m.A, {
+        user: t,
+        guildId: s,
+        channelId: r,
+        onClose: o
+    }) : l === p.RP.MUTUAL_GUILDS ? (0, i.jsx)(g.A, {
+        user: t,
+        onClose: o
+    }) : l === p.RP.WIDGETS ? (0, i.jsx)(f.A, {
+        user: t,
+        guildId: s,
+        channelId: r
+    }) : l === p.RP.WISHLIST ? (0, i.jsx)(x.A, {
+        profileOwner: t
+    }) : null
 }
 
 function A(e) {
     let {
         user: t,
         currentUser: n,
-        section: a,
-        displayProfile: l,
-        guildId: s,
-        channelId: r,
-        onClose: o
-    } = e;
-    return a === p.RP.ACTIVITY ? (0, i.jsx)(u.A, {
-        user: t,
-        currentUser: n,
-        displayProfile: l,
-        guildId: s,
-        channelId: r,
-        onClose: o
-    }) : a === p.RP.MUTUAL_FRIENDS ? (0, i.jsx)(g.A, {
-        user: t,
-        guildId: s,
-        channelId: r,
-        onClose: o
-    }) : a === p.RP.MUTUAL_GUILDS ? (0, i.jsx)(m.A, {
-        user: t,
-        onClose: o
-    }) : a === p.RP.WIDGETS ? (0, i.jsx)(x.A, {
-        user: t,
-        guildId: s,
-        channelId: r
-    }) : a === p.RP.WISHLIST ? (0, i.jsx)(f.A, {
-        profileOwner: t
-    }) : null
-}
-
-function I(e) {
-    let {
-        user: t,
-        currentUser: n,
-        displayProfile: l,
+        displayProfile: a,
         guildId: s,
         channelId: u,
-        items: g,
-        initialSection: m,
-        onClose: x
+        items: m,
+        initialSection: g,
+        onClose: f
     } = e, {
-        trackUserProfileAction: f
+        trackUserProfileAction: x
     } = (0, o.NJ)(), [{
-        section: _,
-        text: I
-    }, j] = a.useState(g.find(e => {
+        section: I,
+        text: A
+    }, E] = l.useState(m.find(e => {
         let {
             section: t
         } = e;
-        return t === m
-    }) ?? g[0]);
+        return t === g
+    }) ?? m[0]);
     return (0, i.jsxs)("div", {
-        className: h.kL,
+        className: _.kL,
         children: [(0, i.jsx)(r.HOs, {
             orientation: "horizontal",
-            className: h.gU,
+            className: _.gU,
             fade: !0,
             paddingFix: !1,
             children: (0, i.jsx)(r.VQ0, {
                 type: "top",
                 look: "custom",
-                selectedItem: _,
+                selectedItem: I,
                 onItemSelect: e => {
-                    c.A.hasUnsavedChanges() && _ === p.RP.WIDGETS ? d.A.notifyUnsavedWidgets() : (f({
+                    d.A.hasUnsavedChanges() && I === p.RP.WIDGETS ? c.A.notifyUnsavedWidgets() : (x({
                         action: "PRESS_SECTION",
                         section: e
-                    }), j(t => g.find(t => t.section === e) ?? t))
+                    }), E(t => m.find(t => t.section === e) ?? t))
                 },
-                children: g.map(e => (0, i.jsx)(r.VQ0.Item, {
-                    className: h.YU,
+                children: m.map(e => (0, i.jsx)(r.VQ0.Item, {
+                    className: _.YU,
                     id: e.section,
                     "aria-label": e.text,
                     children: e.text
                 }, e.section))
             })
         }), (0, i.jsx)(r.VQ0.Panel, {
-            id: _,
-            "aria-label": I,
-            className: h.NM,
+            id: I,
+            "aria-label": A,
+            className: _.NM,
             children: (0, i.jsx)(r.Fmo, {
                 component: (0, i.jsx)(r.AC4, {
                     children: (0, i.jsx)(r.H, {
-                        children: I
+                        children: A
                     })
                 }),
-                children: (0, i.jsx)(A, {
+                children: (0, i.jsx)(h, {
                     user: t,
                     currentUser: n,
-                    displayProfile: l,
+                    displayProfile: a,
                     guildId: s,
                     channelId: u,
-                    section: _,
-                    onClose: x
+                    section: I,
+                    onClose: f
                 })
             })
         })]
