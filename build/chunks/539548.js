@@ -5,8 +5,8 @@ t.d(n, {
 var i = t(627968);
 t(64700);
 var a = t(311907),
-    r = t(397927),
-    l = t(517164),
+    l = t(397927),
+    r = t(517164),
     o = t(290863),
     s = t(461213),
     d = t(975571),
@@ -40,11 +40,11 @@ function E(e) {
     } = (0, u.A)({
         userId: n.id,
         guildId: E
-    }), R = (0, a.bG)([l.A], () => l.A.isFetchingUserOutbox(n.id)), L = n.id === t.id, P = (0, a.bG)([s.A, o.A], () => {
+    }), R = (0, a.bG)([r.A], () => r.A.isFetchingUserOutbox(n.id)), L = n.id === t.id, P = (0, a.bG)([s.A, o.A], () => {
         let e = L ? s.A.getStatus() : o.A.getStatus(n.id);
-        return e === r.clD.OFFLINE || e === r.clD.INVISIBLE
+        return e === l.clD.OFFLINE || e === l.clD.INVISIBLE
     }), D = (0, a.bG)([c.A], () => c.A.getUserProfile(n.id)?.private === !0), O = y.length > 0 || null != T, k = !D && null == T && null == N && null != S, B = !P && (O || k), U = C.length > 0;
-    return B || U || !R ? (0, i.jsxs)(r.IpV, {
+    return B || U || !R ? (0, i.jsxs)(l.IpV, {
         className: b.XG,
         fade: !0,
         children: [B ? (0, i.jsx)(p.A, {
@@ -77,7 +77,7 @@ function E(e) {
         }) : null, U ? (0, i.jsx)(p.A, {
             heading: I.intl.string(I.t.M0zgnT),
             introText: L ? I.intl.format(I.t["4bk9Ak"], {
-                learnMoreHook: (e, n) => (0, i.jsx)(r.MzZ, {
+                learnMoreHook: (e, n) => (0, i.jsx)(l.MzZ, {
                     href: d.A.getArticleURL(x.MVz.ACTIVITY_STATUS_SETTINGS),
                     children: e
                 }, n)
@@ -96,6 +96,6 @@ function E(e) {
         }) : null]
     }) : (0, i.jsx)("div", {
         className: v.Ie,
-        children: (0, i.jsx)(r.y$y, {})
+        children: (0, i.jsx)(l.y$y, {})
     })
 }

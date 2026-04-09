@@ -26,8 +26,8 @@ var i = n(627968),
     T = n(25528),
     S = n(530804),
     b = n(481947),
-    y = n(591346),
-    v = n(616356),
+    v = n(591346),
+    y = n(616356),
     j = n(961350),
     R = n(430452),
     O = n(576705),
@@ -49,7 +49,7 @@ let H = l.memo(e => {
         channel: s,
         sessionId: a,
         nick: o
-    } = e, x = l.id, E = (0, r.bG)([j.default], () => j.default.getId() === x, [x]), [I, b, y] = (0, r.yK)([R.Ay], () => E ? [!R.Ay.isSupported() || R.Ay.isSelfMute() || R.Ay.isSelfMutedTemporarily(), R.Ay.isSelfDeaf(), !1] : [!R.Ay.isSupported() || R.Ay.isLocalMute(x), !1, R.Ay.isLocalVideoDisabled(x)], [E, x]), O = (0, r.bG)([D.A], () => D.A.isPrioritySpeaker(x)), L = (0, d.A)({
+    } = e, x = l.id, E = (0, r.bG)([j.default], () => j.default.getId() === x, [x]), [I, b, v] = (0, r.yK)([R.Ay], () => E ? [!R.Ay.isSupported() || R.Ay.isSelfMute() || R.Ay.isSelfMutedTemporarily(), R.Ay.isSelfDeaf(), !1] : [!R.Ay.isSupported() || R.Ay.isLocalMute(x), !1, R.Ay.isLocalVideoDisabled(x)], [E, x]), O = (0, r.bG)([D.A], () => D.A.isPrioritySpeaker(x)), L = (0, d.A)({
         userId: x,
         checkSoundSharing: !0
     }), P = (0, m.A)(s.guild_id, x), V = (0, r.bG)([A.A], () => A.A.getGuildRingingUsers(s.id).has(x)), H = (0, r.bG)([c.Ay], () => c.Ay.getEmbeddedActivitiesForChannel(s.id).find(e => {
@@ -57,7 +57,7 @@ let H = l.memo(e => {
             userIds: t
         } = e;
         return t.has(x)
-    }), [x, s.id]), F = (0, h.A)(null != H ? [H.applicationId] : []), W = (0, T.Ay)(x, s.guild_id)[0], K = (0, u.YY)(W?.application_id).data ?? void 0, [Y, z] = (0, r.yK)([v.A], () => [v.A.getStreamForUser(x, s.getGuildId()), v.A.getActiveStreamForUser(x, s.getGuildId())], [s, x]), q = (0, r.bG)([M.A], () => M.A.getSessionById(a)), X = G.Ay.useName(l), $ = (0, r.bG)([U.A], () => U.A.getVoicePlatformForChannel(s.id, x), [s.id, x]), {
+    }), [x, s.id]), F = (0, h.A)(null != H ? [H.applicationId] : []), W = (0, T.Ay)(x, s.guild_id)[0], K = (0, u.YY)(W?.application_id).data ?? void 0, [Y, z] = (0, r.yK)([y.A], () => [y.A.getStreamForUser(x, s.getGuildId()), y.A.getActiveStreamForUser(x, s.getGuildId())], [s, x]), q = (0, r.bG)([M.A], () => M.A.getSessionById(a)), X = G.Ay.useName(l), $ = (0, r.bG)([U.A], () => U.A.getVoicePlatformForChannel(s.id, x), [s.id, x]), {
         enableHangStatus: Q
     } = (0, g.$j)({
         guildId: s.guild_id,
@@ -81,7 +81,7 @@ let H = l.memo(e => {
             otherClientSessionType: q?.clientInfo?.os,
             voicePlatform: $,
             localMute: I && !E,
-            localVideoDisabled: y,
+            localVideoDisabled: v,
             mute: t || I,
             deaf: n || b,
             speaking: L,
@@ -114,11 +114,11 @@ let F = [],
             className: p,
             children: C,
             isThread: N = !1
-        } = e, [T, v] = l.useState(null), R = l.useRef(null), M = (0, S.$n)(s.id, d ?? F);
+        } = e, [T, y] = l.useState(null), R = l.useRef(null), M = (0, S.$n)(s.id, d ?? F);
         (0, f.s)(s.guild_id, M);
         let {
             enableHistoryHover: D
-        } = (0, y.G8)({
+        } = (0, v.G8)({
             guildId: s.guild_id,
             location: "VoiceUsers"
         }), {
@@ -134,9 +134,9 @@ let F = [],
         }, {
             autoTrackExposure: !0
         }), W = l.useRef(new o.J_(50, () => {
-            v(R.current), R.current = null
+            y(R.current), R.current = null
         })), K = l.useRef(new o.J_(175, () => {
-            v(null)
+            y(null)
         })), Y = l.useCallback(e => {
             t && (K.current.cancel(), R.current = e, W.current.delay())
         }, [t]), z = l.useCallback(e => {

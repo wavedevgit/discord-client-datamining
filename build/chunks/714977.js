@@ -14,10 +14,10 @@ var i = n(627968),
     u = n(532624),
     h = n(256415),
     p = n(837921),
-    f = n(350535),
-    A = n(93465),
-    _ = n(592598),
-    g = n(672396),
+    A = n(350535),
+    f = n(93465),
+    g = n(592598),
+    _ = n(672396),
     m = n(652215),
     x = n(985018),
     E = n(571944),
@@ -32,10 +32,10 @@ function v() {
         enabled: !0,
         notifications_enabled: t,
         notifications_position: t ? e : null,
-        text_notifications_mode: _.A.isNotificationDisabled(g.KS.TextChat) ? "DISABLED" : "ENABLED",
+        text_notifications_mode: g.A.isNotificationDisabled(_.KS.TextChat) ? "DISABLED" : "ENABLED",
         text_opacity_slider: h.default.getTextWidgetOpacity(),
-        hotkey: null != n ? (0, f.dI)(n.shortcut) : null,
-        text_activation_hotkey: null != i ? (0, f.dI)(i.shortcut) : null
+        hotkey: null != n ? (0, A.dI)(n.shortcut) : null,
+        text_activation_hotkey: null != i ? (0, A.dI)(i.shortcut) : null
     })
 }
 class S extends s.PureComponent {
@@ -55,11 +55,11 @@ class S extends s.PureComponent {
         })
     };
     handleToggleTextChatNotifications = () => {
-        r.A.setNotificationDisabledSetting(A.M.TEXT_CHAT, !this.props.textChatDisabled), v()
+        r.A.setNotificationDisabledSetting(f.M.TEXT_CHAT, !this.props.textChatDisabled), v()
     };
     handleToggleInviteNotification = () => {
         let e = this.props.shouldShowInviteNotification;
-        r.A.setNotificationDisabledSetting(A.M.GAME_ACTIVITY, !e)
+        r.A.setNotificationDisabledSetting(f.M.GAME_ACTIVITY, !e)
     };
     handleChangeNotificationPositionMode(e, t) {
         r.A.setNotificationPositionMode(t), v()
@@ -153,7 +153,7 @@ class S extends s.PureComponent {
         let {
             notificationPositionMode: e,
             shouldShowInviteNotification: t
-        } = this.props, n = !_.A.isNotificationDisabled(g.KS.TextChat), s = e !== m.G6Q.DISABLED;
+        } = this.props, n = !g.A.isNotificationDisabled(_.KS.TextChat), s = e !== m.G6Q.DISABLED;
         return (0, i.jsxs)(a.nVY, {
             children: [(0, i.jsx)(a.D0$, {
                 label: x.intl.string(x.t.IQv8Eo),
@@ -283,13 +283,13 @@ function C(e) {
         notificationPositionMode: r,
         textChatDisabled: o,
         shouldShowInviteNotification: d
-    } = (0, l.cf)([h.default, _.A], () => ({
+    } = (0, l.cf)([h.default, g.A], () => ({
         avatarSizeMode: h.default.getAvatarSizeMode(),
         displayNameMode: h.default.getDisplayNameMode(),
         displayUserMode: h.default.getDisplayUserMode(),
         notificationPositionMode: h.default.getNotificationPositionMode(),
-        textChatDisabled: _.A.isNotificationDisabled(g.KS.TextChat),
-        shouldShowInviteNotification: !_.A.isNotificationDisabled(g.KS.ActivityInvite)
+        textChatDisabled: g.A.isNotificationDisabled(_.KS.TextChat),
+        shouldShowInviteNotification: !g.A.isNotificationDisabled(_.KS.ActivityInvite)
     }));
     return (0, i.jsx)(S, {
         onClose: t,

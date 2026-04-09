@@ -1,12 +1,12 @@
 /** chunk id: 936636 params = (module,exports,require) **/
 n.d(t, {
-    A: () => f,
-    s: () => h
+    A: () => g,
+    s: () => f
 });
 var a = n(627968);
 n(64700);
-var i = n(503698),
-    l = n.n(i),
+var l = n(503698),
+    i = n.n(l),
     r = n(808380),
     s = n(934551),
     o = n(990078),
@@ -60,12 +60,12 @@ function x(e) {
     }
 }
 
-function g(e) {
+function h(e) {
     let {
         platforms: t
     } = e;
     return (0, a.jsx)("div", {
-        className: l()(u.nM, u.Lc),
+        className: i()(u.nM, u.Lc),
         style: {
             alignItems: "center"
         },
@@ -78,7 +78,7 @@ function g(e) {
     })
 }
 
-function h(e) {
+function f(e) {
     let {
         platform: t
     } = e;
@@ -90,15 +90,15 @@ function h(e) {
     }, t)
 }
 
-function f(e) {
+function g(e) {
     let {
         game: t,
         className: n
-    } = e, i = (0, c.A)(t);
-    return 0 === i.length ? null : (0, a.jsx)("div", {
-        className: l()(u.fi, u.iH, n),
-        children: i.length > 0 && (0, a.jsx)(g, {
-            platforms: i
+    } = e, l = (0, c.A)(t);
+    return 0 === l.length ? null : (0, a.jsx)("div", {
+        className: i()(u.fi, u.iH, n),
+        children: l.length > 0 && (0, a.jsx)(h, {
+            platforms: l
         })
     })
 }

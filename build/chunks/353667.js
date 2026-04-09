@@ -114,7 +114,7 @@ function S(e) {
     })
 }
 
-function b(e) {
+function E(e) {
     let {
         panelKey: t,
         layout: n,
@@ -173,7 +173,7 @@ function b(e) {
     }, t)
 }
 
-function E(e) {
+function b(e) {
     let {
         panelKey: t,
         notice: n,
@@ -197,14 +197,14 @@ function C(e) {
     } = e, {
         layout: n
     } = t;
-    if ((0, u.zY)(n)) return (0, i.jsx)(b, {
+    if ((0, u.zY)(n)) return (0, i.jsx)(E, {
         panelKey: t.key,
         notice: t.notice,
         decoration: t.decoration,
         useObscuredNotice: t.useObscuredNotice,
         layout: n
     });
-    if ((0, u.Iu)(n)) return (0, i.jsx)(E, {
+    if ((0, u.Iu)(n)) return (0, i.jsx)(b, {
         panelKey: t.key,
         notice: t.notice,
         decoration: t.decoration,

@@ -1,28 +1,28 @@
 /** chunk id: 422069 params = (module,exports,require) **/
 n.d(t, {
-    A: () => g
+    A: () => f
 });
-var i = n(311907),
+var a = n(311907),
     l = n(73153);
-let s = {},
-    a = {},
+let i = {},
     r = {},
+    s = {},
     o = {},
     c = {},
     d = {},
     u = {},
-    h = {},
-    m = null;
-class A extends i.Ay.Store {
+    m = {},
+    x = null;
+class h extends a.Ay.Store {
     static displayName = "GameProfileStore";
     getSimilarGames(e) {
-        return s[e]
+        return i[e]
     }
     getSimilarGamesError(e) {
-        return a[e]
+        return r[e]
     }
     getShopCollectionSkuIds(e) {
-        return r[e]
+        return s[e]
     }
     hasShopCollectionBeenFetched(e) {
         return o[e] ?? !1
@@ -37,26 +37,26 @@ class A extends i.Ay.Store {
         return u[e] ?? !1
     }
     isAnnouncementsFetching(e) {
-        return h[e] ?? !1
+        return m[e] ?? !1
     }
     getPendingReturn() {
-        return m
+        return x
     }
 }
-let g = new A(l.h, {
+let f = new h(l.h, {
     GAME_PROFILE_GET_SIMILAR_GAMES_SUCCESS: function(e) {
         let {
             applicationId: t,
             games: n
         } = e;
-        s[t] = n
+        i[t] = n
     },
     GAME_PROFILE_GET_SIMILAR_GAMES_ERROR: function(e) {
         let {
             applicationId: t,
             error: n
         } = e;
-        a[t] = n
+        r[t] = n
     },
     GAME_PROFILE_GET_SHOP_COLLECTION_START: function(e) {
         let {
@@ -69,7 +69,7 @@ let g = new A(l.h, {
             collectionId: t,
             skuIds: n
         } = e;
-        r[t] = n, o[t] = !0, c[t] = !1
+        s[t] = n, o[t] = !0, c[t] = !1
     },
     GAME_PROFILE_GET_SHOP_COLLECTION_ERROR: function(e) {
         let {
@@ -81,34 +81,34 @@ let g = new A(l.h, {
         let {
             gameId: t
         } = e;
-        h[t] = !0
+        m[t] = !0
     },
     GAME_PROFILE_GET_ANNOUNCEMENTS_SUCCESS: function(e) {
         let {
             gameId: t,
             messages: n,
-            channelId: i,
+            channelId: a,
             guildId: l
         } = e;
         d[t] = {
             messages: n,
-            channelId: i,
+            channelId: a,
             guildId: l
-        }, u[t] = !0, h[t] = !1
+        }, u[t] = !0, m[t] = !1
     },
     GAME_PROFILE_GET_ANNOUNCEMENTS_ERROR: function(e) {
         let {
             gameId: t
         } = e;
-        u[t] = !0, h[t] = !1
+        u[t] = !0, m[t] = !1
     },
     GAME_PROFILE_SET_PENDING_RETURN: function(e) {
         let {
             gameId: t,
             channelId: n
         } = e;
-        if (m?.gameId === t && m?.channelId === n) return !1;
-        m = {
+        if (x?.gameId === t && x?.channelId === n) return !1;
+        x = {
             gameId: t,
             channelId: n
         }
@@ -117,7 +117,7 @@ let g = new A(l.h, {
         let {
             gameId: t
         } = e;
-        if (null == m || m.gameId !== t) return !1;
-        m = null
+        if (null == x || x.gameId !== t) return !1;
+        x = null
     }
 })

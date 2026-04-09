@@ -21,11 +21,11 @@ var i = n(627968),
     T = n(680243),
     f = n(843401),
     S = n(430452),
-    b = n(532624),
-    E = n(975571),
+    E = n(532624),
+    b = n(975571),
     C = n(723702),
-    N = n(350535),
-    v = n(331969),
+    v = n(350535),
+    N = n(331969),
     I = n(173332),
     j = n(652215),
     y = n(650583),
@@ -67,14 +67,14 @@ class D extends s.PureComponent {
     renderMessage() {
         let {
             keybind: e
-        } = this.props, t = N.dI(e.shortcut);
+        } = this.props, t = v.dI(e.shortcut);
         return x.A.hasBind(t) ? (0, i.jsx)(c.po8, {
             messageType: c.YCn.ERROR,
             children: O.intl.string(O.t["7lQlw3"])
         }) : y.Yy.has(t) ? (0, i.jsx)(c.po8, {
             messageType: c.YCn.ERROR,
             children: O.intl.format(O.t.MOIaNd, {
-                keyboardNavArticle: E.A.getArticleURL(j.MVz.KEYBOARD_NAVIGATION)
+                keyboardNavArticle: b.A.getArticleURL(j.MVz.KEYBOARD_NAVIGATION)
             })
         }) : (0, i.jsx)(c.Text, {
             variant: "text-md/normal",
@@ -137,7 +137,7 @@ class D extends s.PureComponent {
         let {
             action: e
         } = this.props.keybind;
-        return e === j.hCu.SWITCH_TO_VOICE_CHANNEL ? (0, i.jsx)(v.A, {
+        return e === j.hCu.SWITCH_TO_VOICE_CHANNEL ? (0, i.jsx)(N.A, {
             keybind: this.props.keybind
         }) : void 0
     }
@@ -373,7 +373,7 @@ function M() {
     s.useEffect(() => (u.A.enableAll(!1), () => {
         u.A.enableAll(!0)
     }), []);
-    let e = (0, r.bG)([b.Ay], () => b.Ay.getState()),
+    let e = (0, r.bG)([E.Ay], () => E.Ay.getState()),
         t = (0, r.bG)([S.Ay], () => (0, h.A)(S.Ay)),
         n = (0, r.bG)([T.A], () => T.A.isSupported),
         l = (0, A.sw)(),

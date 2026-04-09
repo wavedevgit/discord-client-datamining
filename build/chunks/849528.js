@@ -1,22 +1,22 @@
 /** chunk id: 849528 params = (module,exports,require) **/
 n.d(t, {
-    z: () => r
+    z: () => l
 });
 var i = n(989349),
-    s = n.n(i),
-    l = n(655752),
-    a = n(112848);
+    r = n.n(i),
+    a = n(655752),
+    s = n(112848);
 
-function r() {
-    let e = (0, a.$F)(),
-        t = (0, l.P)(),
-        n = (0, a.Xb)();
+function l() {
+    let e = (0, s.$F)(),
+        t = (0, a.P)(),
+        n = (0, s.Xb)();
     if (null == e || null == t || null == n) return null;
-    let i = s()(),
-        r = s()(n),
-        o = e.status === a.Wo.UPCOMING ? 0 : e.tenureReqNumMonths,
-        d = t.tenureReqNumMonths,
-        c = r.clone().add(o, "months"),
-        u = r.clone().add(d, "months").diff(c);
-    return Math.max(0, Math.min(1, (i.diff(c) - 864e5) / u))
+    let i = r()(),
+        l = r()(n),
+        c = e.status === s.Wo.UPCOMING ? 0 : e.tenureReqNumMonths,
+        o = t.tenureReqNumMonths,
+        d = l.clone().add(c, "months"),
+        u = l.clone().add(o, "months").diff(d);
+    return Math.max(0, Math.min(1, (i.diff(d) - 864e5) / u))
 }

@@ -21,11 +21,11 @@ var i = n(627968),
     T = n(362490),
     f = n(587895),
     S = n(120385),
-    b = n(235986),
-    E = n(769015),
+    E = n(235986),
+    b = n(769015),
     C = n(250627),
-    N = n(871109),
-    v = n(571654),
+    v = n(871109),
+    N = n(571654),
     I = n(411342),
     j = n(179499),
     y = n(22007),
@@ -36,8 +36,8 @@ var i = n(627968),
     D = n(378058),
     G = n(148355),
     M = n(780964),
-    U = n(779733),
-    k = n(858897),
+    k = n(779733),
+    U = n(858897),
     w = n(202613),
     V = n(317525),
     B = n(71393),
@@ -69,8 +69,8 @@ let el = e => `https://${ee.XlF}/hc/${e.toLowerCase()}/requests/new?ticket_form_
         } = e;
         return (0, i.jsx)("li", {
             className: es.mg,
-            children: (0, i.jsxs)(b.A, {
-                justify: b.A.Justify.BETWEEN,
+            children: (0, i.jsxs)(E.A, {
+                justify: E.A.Justify.BETWEEN,
                 children: [(0, i.jsx)("div", {
                     children: t
                 }), (0, i.jsx)("div", {
@@ -115,8 +115,8 @@ let eu = e => {
     } = e;
     return (0, i.jsx)("li", {
         className: es.Iu,
-        children: (0, i.jsxs)(b.A, {
-            justify: b.A.Justify.BETWEEN,
+        children: (0, i.jsxs)(E.A, {
+            justify: E.A.Justify.BETWEEN,
             children: [(0, i.jsx)("div", {
                 children: t
             }), (0, i.jsx)("div", {
@@ -132,8 +132,8 @@ function em(e) {
         guildProductListingId: n
     } = e, l = (0, C.Qi)(t, n, {
         requireCurrentGuild: !1
-    }), a = (0, v.z)(l), r = (0, m.bG)([B.A], () => B.A.getGuild(t)), o = l?.role_id != null && l?.attachments_count === 0 ? ei.intl.string(ei.t.H11qcT) : a, d = s.useCallback(async () => {
-        r?.features.has(ee.GuildFeatures.PRODUCTS_AVAILABLE_FOR_PURCHASE) ? await (0, y.A)(ee.BVt.GUILD_PRODUCT(t, n)) : await (0, y.A)(ee.BVt.CHANNEL(t)), (0, U.default)()
+    }), a = (0, N.z)(l), r = (0, m.bG)([B.A], () => B.A.getGuild(t)), o = l?.role_id != null && l?.attachments_count === 0 ? ei.intl.string(ei.t.H11qcT) : a, d = s.useCallback(async () => {
+        r?.features.has(ee.GuildFeatures.PRODUCTS_AVAILABLE_FOR_PURCHASE) ? await (0, y.A)(ee.BVt.GUILD_PRODUCT(t, n)) : await (0, y.A)(ee.BVt.CHANNEL(t)), (0, k.default)()
     }, [r, t, n]);
     return (0, i.jsxs)(i.Fragment, {
         children: [null != o && (0, i.jsx)(eu, {
@@ -155,7 +155,7 @@ function eg(e) {
         guildProductListingId: n
     } = e, s = (0, C.Qi)(t, n, {
         requireCurrentGuild: !1
-    }), l = (0, m.bG)([N.A], () => N.A.getGuildProductFetchState(n) === N.e.FETCHING), a = s?.role_id, r = (0, m.bG)([V.A], () => null != a ? V.A.getRole(t, a) : void 0, [t, a]), o = (0, j.A)({
+    }), l = (0, m.bG)([v.A], () => v.A.getGuildProductFetchState(n) === v.e.FETCHING), a = s?.role_id, r = (0, m.bG)([V.A], () => null != a ? V.A.getRole(t, a) : void 0, [t, a]), o = (0, j.A)({
         guildId: t,
         productId: n
     }), d = (s?.attachments?.length ?? 0) > 0, c = null != r;
@@ -483,7 +483,7 @@ class e_ extends s.PureComponent {
                 children: (0, i.jsx)(_.$nd, {
                     variant: "primary",
                     text: ei.intl.string(ei.t["jcSP+g"]),
-                    onClick: () => (0, k.openUserSettings)(M.X.GIFT_PANEL)
+                    onClick: () => (0, U.openUserSettings)(M.X.GIFT_PANEL)
                 })
             })]
         }) : o ? null : (0, i.jsxs)(s.Fragment, {
@@ -642,12 +642,12 @@ class e_ extends s.PureComponent {
             } else _.type === ee.rzx.APPLICATION && (null != c && (s = c.skuId), null != a ? n.push(ei.intl.formatToPlainString(ei.t["0wL/VI"], {
                 tier: m?.name
             })) : n.push(ei.intl.string(ei.t["9czSYu"])));
-            t = 0 !== n.length ? n.join(", ") : l.description, e = (0, i.jsx)(E.A, {
+            t = 0 !== n.length ? n.join(", ") : l.description, e = (0, i.jsx)(b.A, {
                 className: es.Sy,
                 guildClassName: es.zA,
                 game: a,
                 guild: r,
-                size: E.M.XSMALL,
+                size: b.M.XSMALL,
                 skuId: s ?? m?.id
             })
         } else if (null != m)
@@ -666,12 +666,12 @@ class e_ extends s.PureComponent {
                 height: 23,
                 color: "currentColor",
                 className: es.sV
-            }) : (0, i.jsx)(E.A, {
+            }) : (0, i.jsx)(b.A, {
                 className: es.Sy,
                 guildClassName: es.zA,
                 game: a,
                 guild: r,
-                size: E.M.XSMALL,
+                size: b.M.XSMALL,
                 skuId: m.id
             });
         else e = (0, i.jsx)(x.tvc, {
@@ -761,9 +761,9 @@ class e_ extends s.PureComponent {
                     offset: 4
                 },
                 ...e,
-                children: [(0, i.jsxs)(b.A, {
+                children: [(0, i.jsxs)(E.A, {
                     className: es.J7,
-                    align: b.A.Align.CENTER,
+                    align: E.A.Align.CENTER,
                     "data-expanded": s,
                     children: [this.renderDescription(), (0, i.jsxs)("div", {
                         className: es.vj,
@@ -799,20 +799,20 @@ function ex(e) {
         c && null != d && (0, R.TA)(d)
     }, [d, c]);
     let S = (0, m.bG)([B.A], () => B.A.getGuild(g?.guildId)),
-        b = r ? g : void 0,
-        E = t.subscription,
-        C = (0, m.bG)([z.A], () => null != E && E.type !== ee.rzx.PREMIUM ? z.A.get(E.items[0].planId) : null),
-        N = (0, m.bG)([F.default], () => {
+        E = r ? g : void 0,
+        b = t.subscription,
+        C = (0, m.bG)([z.A], () => null != b && b.type !== ee.rzx.PREMIUM ? z.A.get(b.items[0].planId) : null),
+        v = (0, m.bG)([F.default], () => {
             let e = t.isGift ? t.entitlements?.find(e => e.user?.id != null && null != e.gifterId) : null;
             return null == e ? null : F.default.getUser(e.user?.id ?? null) ?? e?.user
         }, [t]),
         {
-            analyticsLocations: v
+            analyticsLocations: N
         } = (0, p.Ay)(h.A.BILLING_SETTINGS_BILLING);
     return (0, i.jsx)(e_, {
         applicationStatistics: u,
-        application: c ? A : b,
-        analyticsLocations: v,
+        application: c ? A : E,
+        analyticsLocations: N,
         guild: S,
         stickerPack: null,
         paymentSources: _,
@@ -821,7 +821,7 @@ function ex(e) {
         className: a,
         payment: t,
         plan: C,
-        claimedGiftUser: N,
+        claimedGiftUser: v,
         hasLinkedToApplication: x
     })
 }

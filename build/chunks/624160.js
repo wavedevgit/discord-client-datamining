@@ -109,7 +109,7 @@ function b(e) {
             }
         }, [x, y, G, n, b, l, D, w]),
         M = k?.(n),
-        W = y ? o.qYV : o.U1e;
+        F = y ? o.qYV : o.U1e;
     return (0, i.jsxs)("div", {
         className: j.LG,
         children: [(0, i.jsxs)(o.DUT, {
@@ -144,7 +144,7 @@ function b(e) {
                 }
             })(), (0, i.jsxs)("div", {
                 className: j.Lw,
-                children: [(0, i.jsx)(W, {
+                children: [(0, i.jsx)(F, {
                     size: "md",
                     color: "currentColor",
                     className: j.c9

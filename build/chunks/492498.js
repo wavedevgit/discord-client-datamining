@@ -26,8 +26,8 @@ var i = n(627968),
     T = n(963702),
     S = n(652215),
     b = n(985018),
-    y = n(917831);
-let v = {
+    v = n(917831);
+let y = {
     offset: {
         left: 4,
         right: -12
@@ -65,20 +65,20 @@ function R(e) {
         guildFilter: I.Ay.guildFilter,
         roleFilter: I.Ay.roleFilter,
         everyoneFilter: I.Ay.everyoneFilter
-    })), C = (0, g.Sc)(), N = (0, u.A)(_), T = (0, u.A)(p), v = (0, u.A)(x);
+    })), C = (0, g.Sc)(), N = (0, u.A)(_), T = (0, u.A)(p), y = (0, u.A)(x);
     l.useEffect(() => {
-        I.Ay.hasLoadedEver ? (null != N && _ !== N || null != T && p !== T || null != v && x !== v) && j(n, !0) : j(n, !0)
-    }, [N, _, T, p, v, x, n, !0]), (0, c.Ay)(() => {
+        I.Ay.hasLoadedEver ? (null != N && _ !== N || null != T && p !== T || null != y && x !== y) && j(n, !0) : j(n, !0)
+    }, [N, _, T, p, y, x, n, !0]), (0, c.Ay)(() => {
         s?.some(A.$r) && (d.A.clearMentions(), j(n, !0))
     }), l.useEffect(() => () => {
         d.A.truncateMentions(S.Ue3)
     }, []);
     let R = l.useCallback(() => null, []);
     return (0, i.jsx)(m.Ay, {
-        className: a()(y.sH, {
-            [y.qC]: C
+        className: a()(v.sH, {
+            [v.qC]: C
         }),
-        scrollerClassName: y.XG,
+        scrollerClassName: v.XG,
         onFetch: () => null,
         onJump: t,
         onCloseMessage: function(e) {
@@ -121,7 +121,7 @@ function L(e) {
     let a = x.A.didAgree(s.getGuildId()),
         r = !!(0, h.Gc)(s) && !a;
     return (0, i.jsxs)("div", {
-        className: y.kL,
+        className: v.kL,
         children: [(0, i.jsx)(N.A, {
             channel: s,
             gotoChannel: n,
@@ -130,18 +130,18 @@ function L(e) {
                 onClick: () => d.A.deleteRecentMention(t.id)
             }) : null
         }), (0, i.jsxs)("div", {
-            className: y.zC,
+            className: v.zC,
             children: [(0, i.jsx)(C.A, {
-                className: y.QT,
+                className: v.QT,
                 onJump: n
             }), (0, i.jsx)(_.A, {
                 message: t,
                 channel: s,
-                className: y.iU,
+                className: v.iU,
                 hideAccessories: r,
                 compact: p.hH.getSetting(),
                 animateAvatar: !1,
-                focusProps: v,
+                focusProps: y,
                 trackAnnouncementViews: !0
             }, t.id)]
         })]

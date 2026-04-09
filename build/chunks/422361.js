@@ -26,8 +26,8 @@ var i = n(627968),
     T = n(857253),
     S = n(202384),
     b = n(51758),
-    y = n(721592),
-    v = n(508654),
+    v = n(721592),
+    y = n(508654),
     j = n(214660),
     R = n(140547),
     O = n(303333),
@@ -310,8 +310,8 @@ class el extends z.Ay {
             embeddedApps: T,
             isSubscriptionGated: S,
             isFavoriteSuggestion: b,
-            withGuildIcon: y,
-            hasStartTime: v,
+            withGuildIcon: v,
+            hasStartTime: y,
             shouldHighlightChannel: j,
             shouldUseAnimatedWaveform: R,
             voiceStates: O
@@ -353,7 +353,7 @@ class el extends z.Ay {
                             ref: this.channelItemRef,
                             className: ei.Ki,
                             iconClassName: a()({
-                                [ei.Gj]: N || v || D
+                                [ei.Gj]: N || y || D
                             }),
                             hasActiveEvent: N,
                             channel: e,
@@ -384,7 +384,7 @@ class el extends z.Ay {
                                 channel: e,
                                 embeddedApps: T
                             }),
-                            withGuildIcon: y,
+                            withGuildIcon: v,
                             children: [b && (0, i.jsxs)(i.Fragment, {
                                 children: [this.renderAcceptSuggestionButton(), this.renderRemoveSuggestionButton()]
                             }), !b && (0, i.jsxs)(i.Fragment, {
@@ -429,10 +429,10 @@ function ea(e) {
             bypassLimit: B.A.can(ee.xBc.MOVE_MEMBERS, n),
             unverifiedAccount: !i.canChat
         }
-    }), A = (0, r.bG)([K.A], () => K.A.hasVideo(n.id)), _ = (0, m.Ay)(n), g = (0, I.Ay)(n), x = (0, v.Qs)(n.id), E = (0, r.bG)([f.A], () => null != f.A.getStartTime(n), [n]), {
+    }), A = (0, r.bG)([K.A], () => K.A.hasVideo(n.id)), _ = (0, m.Ay)(n), g = (0, I.Ay)(n), x = (0, y.Qs)(n.id), E = (0, r.bG)([f.A], () => null != f.A.getStartTime(n), [n]), {
         isSubscriptionGated: C,
         needSubscriptionToAccess: N
-    } = (0, y.A)(n.id), S = (0, T.A)(), b = (0, r.bG)([F.Ay], () => F.Ay.isFavorite(t.id, n.id)), j = e.connected || S?.channelId === n.id, {
+    } = (0, v.A)(n.id), S = (0, T.A)(), b = (0, r.bG)([F.Ay], () => F.Ay.isFavorite(t.id, n.id)), j = e.connected || S?.channelId === n.id, {
         enableHangStatus: O,
         showEmptyChannelTopic: M
     } = (0, R.$j)({

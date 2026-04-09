@@ -1,10 +1,10 @@
 /** chunk id: 286737 params = (module,exports,require) **/
 n.d(t, {
-    A: () => g
+    A: () => h
 });
 var a = n(627968),
-    i = n(64700),
-    l = n(311907),
+    l = n(64700),
+    i = n(311907),
     r = n(397927),
     s = n(289363),
     o = n(287809),
@@ -14,23 +14,23 @@ var a = n(627968),
     m = n(985018),
     x = n(290490);
 
-function g(e) {
+function h(e) {
     let {
         trackAction: t,
         analyticsLocations: n
     } = e, {
-        fetchedAuthorization: g,
-        hasAlreadyLinked: h,
-        canStartAuthorization: f,
-        startAuthorization: _,
-        connectionApp: p,
+        fetchedAuthorization: h,
+        hasAlreadyLinked: f,
+        canStartAuthorization: g,
+        startAuthorization: p,
+        connectionApp: _,
         officialInvite: v
-    } = (0, u.c)(), A = (0, l.bG)([o.default], () => o.default.getCurrentUser()), j = i.useCallback(() => {
-        t(d.Ws.LinkAccount), _({
+    } = (0, u.c)(), A = (0, i.bG)([o.default], () => o.default.getCurrentUser()), b = l.useCallback(() => {
+        t(d.Ws.LinkAccount), p({
             analyticsLocations: n
         })
-    }, [t, _, n]);
-    if (!g || null == p || !f || h || null == A) return null;
+    }, [t, p, n]);
+    if (!h || null == _ || !g || f || null == A) return null;
     let E = v?.guild != null ? c.Ay.getGuildSplashURL({
         id: v.guild.id,
         splash: v.guild.splash
@@ -52,7 +52,7 @@ function g(e) {
             }) : (0, a.jsx)("div", {
                 className: x.sB,
                 children: (0, a.jsx)(s.default, {
-                    application: p
+                    application: _
                 })
             }), (0, a.jsxs)("div", {
                 className: x.hQ,
@@ -62,7 +62,7 @@ function g(e) {
                         variant: "heading-md/semibold",
                         color: "text-default",
                         children: m.intl.formatToPlainString(m.t.hUbQT2, {
-                            gameName: p.name
+                            gameName: _.name
                         })
                     }), (0, a.jsx)(r.Text, {
                         variant: "text-sm/medium",
@@ -73,7 +73,7 @@ function g(e) {
                     variant: "secondary",
                     icon: r.A5T,
                     text: m.intl.string(m.t.jynBQ5),
-                    onClick: j,
+                    onClick: b,
                     fullWidth: !0
                 })]
             })]

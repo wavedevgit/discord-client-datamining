@@ -4,11 +4,11 @@ n.d(t, {
     A: () => u
 });
 var r = n(627968),
-    l = n(158954),
-    i = n(397927),
-    a = n(933297);
+    i = n(158954),
+    a = n(397927),
+    s = n(933297);
 
-function s(e) {
+function l(e) {
     let {
         badge: t
     } = e;
@@ -19,7 +19,7 @@ function o(e) {
     let {
         badge: t
     } = e, n = t.useCount();
-    return n <= 0 ? null : (0, r.jsx)(i.hVq, {
+    return n <= 0 ? null : (0, r.jsx)(a.hVq, {
         count: n
     })
 }
@@ -28,17 +28,17 @@ let u = function(e) {
         badge: t
     } = e;
     switch (t.badgeType) {
-        case a.Xi.BETA:
-            return (0, r.jsx)(l.Exy, {
+        case s.Xi.BETA:
+            return (0, r.jsx)(i.Exy, {
                 type: "beta",
                 variant: "brand"
             });
-        case a.Xi.COUNT:
+        case s.Xi.COUNT:
             return (0, r.jsx)(o, {
                 badge: t
             });
-        case a.Xi.STRONGLY_DISCOURAGED_CUSTOM:
-            return (0, r.jsx)(s, {
+        case s.Xi.STRONGLY_DISCOURAGED_CUSTOM:
+            return (0, r.jsx)(l, {
                 badge: t
             })
     }

@@ -1,6 +1,6 @@
 /** chunk id: 196291 params = (module,exports,require) **/
 n.d(t, {
-    A: () => U
+    A: () => k
 });
 var i = n(627968),
     s = n(64700),
@@ -21,11 +21,11 @@ var i = n(627968),
     T = n(84540),
     f = n(836602),
     S = n(954571),
-    b = n(515718),
-    E = n(927578),
+    E = n(515718),
+    b = n(927578),
     C = n(884546),
-    N = n(597551),
-    v = n(230084),
+    v = n(597551),
+    N = n(230084),
     I = n(180020),
     j = n(212168),
     y = n(730588),
@@ -37,12 +37,12 @@ var i = n(627968),
     G = n(985018),
     M = n(686294);
 
-function U(e) {
+function k(e) {
     let {
         user: t,
         isVisible: n,
-        shouldShow: U
-    } = e, k = E.Ay.isPremium(t), w = E.Ay.canUseAnimatedAvatar(t), {
+        shouldShow: k
+    } = e, U = b.Ay.isPremium(t), w = b.Ay.canUseAnimatedAvatar(t), {
         pendingAvatar: V,
         pendingThemeColors: B,
         tryItOutThemeColors: F,
@@ -61,12 +61,12 @@ function U(e) {
         preset: Y,
         onShuffle: X
     } = (0, u.A)(), K = s.useRef(null);
-    (0, N.A)(K, D._F.TRY_IT_OUT);
+    (0, v.A)(K, D._F.TRY_IT_OUT);
     let {
         analyticsLocations: W,
         sourceAnalyticsLocations: Z
     } = (0, o.Ay)(r.A.USER_SETTINGS_TRY_OUT_PREMIUM), q = e => {
-        e && (z?.startsWith("https:") === !0 ? fetch(z).then(e => e.blob()).then(e => (0, b.We)(e)).then(e => {
+        e && (z?.startsWith("https:") === !0 ? fetch(z).then(e => e.blob()).then(e => (0, E.We)(e)).then(e => {
             (0, T.p)({
                 avatar: H,
                 themeColors: F,
@@ -100,7 +100,7 @@ function U(e) {
     let Q = (0, c.V)()?.subscription_trial?.sku_id === P.pe.TIER_2,
         J = (0, d.O)(),
         $ = (0, g.U9)(J, P.pe.TIER_2);
-    return U ? (0, i.jsx)(o.f5, {
+    return k ? (0, i.jsx)(o.f5, {
         value: W,
         children: (0, i.jsxs)(j.A, {
             ref: K,
@@ -154,7 +154,7 @@ function U(e) {
                         showRemoveBannerButton: null != z,
                         onBannerChange: p.xe,
                         showPremiumIcon: !1
-                    }), !w && (0, i.jsx)(v.A, {
+                    }), !w && (0, i.jsx)(N.A, {
                         className: M.fz,
                         isTryItOut: !0,
                         onAvatarChange: p.e$,
@@ -180,7 +180,7 @@ function U(e) {
                         })
                     }
                 }),
-                button: k ? G.intl.string(G.t.AfRWI8) : $ ? G.intl.formatToPlainString(G.t.bkQ4bH, {
+                button: U ? G.intl.string(G.t.AfRWI8) : $ ? G.intl.formatToPlainString(G.t.bkQ4bH, {
                     percent: J?.discount.amount
                 }) : G.intl.string(G.t.pj0XBN),
                 position: "inline"

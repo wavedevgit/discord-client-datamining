@@ -1,5 +1,5 @@
 /** chunk id: 992284 params = (module,exports,require) **/
-r.r(e.exports = {
+t.r(e.exports = {
     boxBackdrop: "boxBackdrop__53b4c",
     bentoSectionHeader: "bentoSectionHeader__53b4c",
     highlightBento: "highlightBento__53b4c",

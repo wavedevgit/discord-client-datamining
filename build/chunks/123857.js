@@ -1,6 +1,6 @@
 /** chunk id: 123857 params = (module,exports,require) **/
 n.d(t, {
-    Ix: () => k,
+    Ix: () => U,
     J3: () => P,
     Q3: () => V,
     mx: () => B
@@ -24,11 +24,11 @@ var i = n(627968),
     T = n(234419),
     f = n(792656),
     S = n(511484),
-    b = n(811611),
-    E = n(97469),
+    E = n(811611),
+    b = n(97469),
     C = n(954571),
-    N = n(544028),
-    v = n(253932),
+    v = n(544028),
+    N = n(253932),
     I = n(779733),
     j = n(652215),
     y = n(49999),
@@ -88,7 +88,7 @@ function M(e) {
     }) : t
 }
 
-function U() {
+function k() {
     let e = (0, l.bG)([g.A], () => g.A.isPreview),
         t = (0, T.V)()?.subscription_trial?.sku_id === O.pe.TIER_2;
     return e && t ? (0, i.jsxs)("div", {
@@ -102,13 +102,13 @@ function U() {
             })
         }), (0, i.jsx)("div", {
             className: L.BU
-        }), (0, i.jsx)(b.Ay, {
+        }), (0, i.jsx)(E.Ay, {
             type: O.e.PREMIUM_CLIENT_THEME_SETTINGS_UPSELL,
             subscriptionTier: O.pe.TIER_2
         })]
     }) : null
 }
-let k = () => (0, i.jsx)("div", {
+let U = () => (0, i.jsx)("div", {
     children: (0, i.jsxs)(x.Ay, {
         type: x.v0.SETTINGS,
         children: [(0, i.jsx)(x.Ay.Basic, {
@@ -117,23 +117,23 @@ let k = () => (0, i.jsx)("div", {
             children: [(0, i.jsx)(x.Ay.Gradient, {
                 disabled: !1,
                 renderCTAButtons: () => (0, i.jsx)(G, {})
-            }), (0, i.jsx)(U, {})]
+            }), (0, i.jsx)(k, {})]
         })]
     })
 });
 
 function w() {
-    let e = (0, E.qo)(),
+    let e = (0, b.qo)(),
         {
             theme: t,
             useForcedColors: n,
             gradientPreset: s
-        } = (0, l.cf)([N.A, c.A, g.A], () => ({
-            theme: N.A.theme,
+        } = (0, l.cf)([v.A, c.A, g.A], () => ({
+            theme: v.A.theme,
             useForcedColors: c.A.useForcedColors,
             gradientPreset: g.A.gradientPreset
         })),
-        a = null != v.eh.useSetting().customUserThemeSettings;
+        a = null != N.eh.useSetting().customUserThemeSettings;
     return t !== j.NJ8.LIGHT ? null : (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(o.cGx, {
             gap: 24
@@ -178,7 +178,7 @@ function B(e) {
                     disabled: !1,
                     size: t
                 })
-            }), (0, i.jsx)(U, {})]
+            }), (0, i.jsx)(k, {})]
         })
     })
 }

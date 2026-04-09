@@ -21,11 +21,11 @@ var i = n(627968),
     T = n(622543),
     f = n(696451),
     S = n(351906),
-    b = n(287809),
-    E = n(975571),
+    E = n(287809),
+    b = n(975571),
     C = n(927578),
-    N = n(159001),
-    v = n(65767),
+    v = n(159001),
+    N = n(65767),
     I = n(281052),
     j = n(687021),
     y = n(652215),
@@ -53,30 +53,30 @@ function P(e) {
         onGuildChange: n
     } = e, {
         analyticsLocations: l
-    } = (0, m.Ay)(u.A.USER_SETTINGS_GUILD_PROFILE), P = (0, r.bG)([b.default], () => {
-        let e = b.default.getCurrentUser();
+    } = (0, m.Ay)(u.A.USER_SETTINGS_GUILD_PROFILE), P = (0, r.bG)([E.default], () => {
+        let e = E.default.getCurrentUser();
         return a()(null != e, "GuildIdentitySettingsPage: user cannot be undefined"), e
     }), D = (0, r.bG)([f.Ay], () => null != t ? f.Ay.getMember(t.id, P.id) : null), G = (0, r.bG)([T.A], () => !T.A.isFetchingProfile(P.id, t?.id)), M = (0, r.bG)([S.A], () => S.A.hidePersonalInformation), {
-        pendingAvatar: U,
-        pendingNameplate: k,
+        pendingAvatar: k,
+        pendingNameplate: U,
         ...w
     } = (0, r.cf)([p.A], () => p.A.getPendingChanges(t?.id)), V = (0, h.V7)({
         userId: P.id,
-        image: U
+        image: k
     }), B = (0, _.lw)({
-        pendingValue: k,
+        pendingValue: U,
         userValue: P?.collectibles?.nameplate,
         guildValue: D?.collectibles?.nameplate,
         guildId: t?.id
     }), {
         pendingDisplayNameStyles: F
     } = (0, _.B0)(P, t?.id);
-    return (s.useEffect(() => () => d.h.wait(N.IM), []), M) ? (0, i.jsx)(c.A, {}) : G ? (0, i.jsxs)(m.f5, {
+    return (s.useEffect(() => () => d.h.wait(v.IM), []), M) ? (0, i.jsx)(c.A, {}) : G ? (0, i.jsxs)(m.f5, {
         value: l,
         children: [(0, i.jsx)(o.Text, {
             variant: "text-sm/normal",
             children: O.intl.format(O.t["/PTB2E"], {
-                helpCenterLink: E.A.getArticleURL(y.MVz.GUILD_PROFILES)
+                helpCenterLink: b.A.getArticleURL(y.MVz.GUILD_PROFILES)
             })
         }), null != t ? (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)(j.A, {
@@ -110,6 +110,6 @@ function P(e) {
                 }),
                 children: (0, i.jsx)(I.A, {})
             })]
-        }) : (0, i.jsx)(v.A, {})]
+        }) : (0, i.jsx)(N.A, {})]
     }) : (0, i.jsx)(o.y$y, {})
 }

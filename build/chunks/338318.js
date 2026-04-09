@@ -1,6 +1,6 @@
 /** chunk id: 338318 params = (module,exports,require) **/
 n.d(t, {
-    A: () => k
+    A: () => U
 });
 var i = n(627968),
     s = n(64700),
@@ -21,11 +21,11 @@ var i = n(627968),
     T = n(400669),
     f = n(407217),
     S = n(919395),
-    b = n(884546),
-    E = n(287070),
+    E = n(884546),
+    b = n(287070),
     C = n(196291),
-    N = n(101058),
-    v = n(836602),
+    v = n(101058),
+    N = n(836602),
     I = n(814390),
     j = n(909536),
     y = n(351906),
@@ -36,9 +36,9 @@ var i = n(627968),
     D = n(780207),
     G = n(652215),
     M = n(985018),
-    U = n(21861);
+    k = n(21861);
 
-function k() {
+function U() {
     let e = (0, r.bG)([O.default], () => {
             let e = O.default.getCurrentUser();
             return a()(null != e, "UserSettingsProfileCustomization: user cannot be undefined"), e
@@ -47,19 +47,19 @@ function k() {
         {
             pendingBio: n,
             pendingAvatar: l,
-            pendingNameplate: k,
+            pendingNameplate: U,
             showNotice: w,
             ...V
-        } = (0, r.cf)([v.A], () => ({
-            ...v.A.getPendingChanges(),
-            showNotice: v.A.showNotice()
+        } = (0, r.cf)([N.A], () => ({
+            ...N.A.getPendingChanges(),
+            showNotice: N.A.showNotice()
         })),
-        B = (0, N.V7)({
+        B = (0, v.V7)({
             userId: e.id,
             image: l
         }),
         F = (0, S.lw)({
-            pendingValue: k,
+            pendingValue: U,
             userValue: e?.collectibles?.nameplate
         }),
         H = (0, I.A)() && null != n ? h.Ay.parse(void 0, n).content : n,
@@ -72,8 +72,8 @@ function k() {
     let [K, W] = s.useState(!1), Z = !z, q = s.useRef(null);
     return t ? (0, i.jsx)(m.A, {}) : (0, i.jsxs)(_.f5, {
         value: X,
-        children: [(0, i.jsx)(A.A, {}), (0, i.jsx)(b.A, {
-            profilePreview: (0, i.jsx)(E.A, {
+        children: [(0, i.jsx)(A.A, {}), (0, i.jsx)(E.A, {
+            profilePreview: (0, i.jsx)(b.A, {
                 user: e,
                 canUsePremiumCustomization: z,
                 onUpsellClick: D.A,
@@ -85,7 +85,7 @@ function k() {
                 user: e,
                 nameplate: F,
                 ...V,
-                className: null == F ? U.tJ : void 0,
+                className: null == F ? k.tJ : void 0,
                 isHighlighted: !0
             }),
             children: (0, i.jsx)(P.A, {})
@@ -103,7 +103,7 @@ function k() {
                 })
             })
         }), Z && !w && (0, i.jsx)(p.d, {
-            className: U.EL,
+            className: k.EL,
             showUpsell: !K,
             text: M.intl.format(M.t.TmfgI2, {
                 onClick: () => (0, f.K)({})
@@ -115,7 +115,7 @@ function k() {
                 location: g.A.PREMIUM_WISHLIST_EDIT_PROFILE_UPSELL
             }) : void 0,
             button: (0, i.jsx)("div", {
-                className: U.Xl,
+                className: k.Xl,
                 children: (0, i.jsx)(d.Button, {
                     variant: "overlay-primary",
                     onClick: () => {

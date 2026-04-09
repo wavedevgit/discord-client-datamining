@@ -1,51 +1,51 @@
 /** chunk id: 939724 params = (module,exports,require) **/
 n.d(t, {
-    A: () => m
+    A: () => _
 });
 var i = n(627968);
 n(64700);
-var s = n(503698),
+var r = n(503698),
+    a = n.n(r),
+    s = n(989349),
     l = n.n(s),
-    a = n(989349),
-    r = n.n(a),
-    o = n(397927),
-    d = n(496431),
-    c = n(985018),
+    c = n(397927),
+    o = n(496431),
+    d = n(985018),
     u = n(485697);
-let m = e => {
+let _ = e => {
     let {
         expiresAt: t,
         className: n
-    } = e, s = (0, d.A)(r()(t).toDate(), 1e3);
-    if (null == s) return null;
+    } = e, r = (0, o.A)(l()(t).toDate(), 1e3);
+    if (null == r) return null;
     let {
-        days: a,
-        hours: m,
-        minutes: g,
-        seconds: _
-    } = s, x = [{
-        unitValue: a,
+        days: s,
+        hours: _,
+        minutes: m,
+        seconds: p
+    } = r, A = [{
+        unitValue: s,
         unitType: "days"
     }, {
-        unitValue: m,
+        unitValue: _,
         unitType: "hours"
     }, {
-        unitValue: g,
+        unitValue: m,
         unitType: "minutes"
     }, {
-        unitValue: _,
+        unitValue: p,
         unitType: "seconds"
     }];
     return (0, i.jsxs)("div", {
-        className: l()(u.Xl, n),
-        children: [(0, i.jsx)(o.Text, {
+        className: a()(u.Xl, n),
+        children: [(0, i.jsx)(c.Text, {
             variant: "text-sm/semibold",
             color: "text-strong",
-            children: c.intl.string(c.t["/ARFVE"])
+            children: d.intl.string(d.t["/ARFVE"])
         }), (0, i.jsx)("div", {
             className: u.$R,
-            children: x.map((e, t) => (function(e, t) {
-                let n, [s, l] = 1 === (n = e.unitValue.toString()).length ? ["0", n[0]] : [n[0], n[1]];
+            children: A.map((e, t) => (function(e, t) {
+                let n, [r, a] = 1 === (n = e.unitValue.toString()).length ? ["0", n[0]] : [n[0], n[1]];
                 return (0, i.jsxs)(i.Fragment, {
                     children: [(0, i.jsxs)("div", {
                         className: u.bh,
@@ -53,45 +53,45 @@ let m = e => {
                             className: u.kB,
                             children: [(0, i.jsx)("div", {
                                 className: u.B2,
-                                children: (0, i.jsx)(o.Text, {
+                                children: (0, i.jsx)(c.Text, {
                                     variant: "text-md/medium",
                                     color: "text-strong",
-                                    children: s
+                                    children: r
                                 })
                             }), (0, i.jsx)("div", {
                                 className: u.B2,
-                                children: (0, i.jsx)(o.Text, {
+                                children: (0, i.jsx)(c.Text, {
                                     variant: "text-md/medium",
                                     color: "text-strong",
-                                    children: l
+                                    children: a
                                 })
                             })]
-                        }), (0, i.jsx)(o.Text, {
+                        }), (0, i.jsx)(c.Text, {
                             variant: "text-xs/semibold",
                             color: "text-strong",
                             children: function(e) {
                                 switch (e) {
                                     case "days":
-                                        return c.intl.string(c.t.ixASa2);
+                                        return d.intl.string(d.t.ixASa2);
                                     case "hours":
-                                        return c.intl.string(c.t["8sNvNn"]);
+                                        return d.intl.string(d.t["8sNvNn"]);
                                     case "minutes":
-                                        return c.intl.string(c.t["Gv6kP/"]);
+                                        return d.intl.string(d.t["Gv6kP/"]);
                                     case "seconds":
-                                        return c.intl.string(c.t.JhaiLW);
+                                        return d.intl.string(d.t.JhaiLW);
                                     default:
                                         return ""
                                 }
                             }(e.unitType)
                         })]
-                    }, e.unitType), !t && (0, i.jsx)(o.Text, {
+                    }, e.unitType), !t && (0, i.jsx)(c.Text, {
                         className: u.cV,
                         variant: "text-lg/normal",
                         color: "text-strong",
                         children: ":"
                     })]
                 })
-            })(e, t === x.length - 1))
+            })(e, t === A.length - 1))
         })]
     })
 }

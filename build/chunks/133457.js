@@ -1,18 +1,18 @@
 /** chunk id: 133457 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    B: () => s
+    B: () => l
 });
 var r = n(64700),
-    l = n(826673),
-    i = n(894858),
-    a = n(49999);
+    i = n(826673),
+    a = n(894858),
+    s = n(49999);
 
-function s(e) {
+function l(e) {
     let {
         visibleContent: t,
         dismissibleBadges: n,
-        accessibleDirectory: s
+        accessibleDirectory: l
     } = e, {
         dismissibleContentToNodeKeys: o,
         nodeKeyToDismissibleContents: u
@@ -25,19 +25,19 @@ function s(e) {
                 c.current = !1;
                 let t = u.get(e.sidebarItemKey);
                 null != t && t.forEach(e => {
-                    (0, l.Dr)(e, {
-                        dismissAction: a.i.AUTO,
+                    (0, i.Dr)(e, {
+                        dismissAction: s.i.AUTO,
                         forceTrack: !0
                     })
                 })
             },
-            r = i.A.subscribe(e => {
+            r = a.A.subscribe(e => {
                 let {
                     currentPanelKey: t
                 } = e;
                 return t
             }, t => {
-                let r = null != t && null != s ? s.entry(t)?.parentSidebarItemKey : null;
+                let r = null != t && null != l ? l.entry(t)?.parentSidebarItemKey : null;
                 null != r && (r === e.sidebarItemKey ? c.current = !0 : c.current && n())
             }, {
                 equalityFn: (e, t) => e === t,
@@ -46,5 +46,5 @@ function s(e) {
         return () => {
             r(), c.current && n()
         }
-    }, [t, o, s, u])
+    }, [t, o, l, u])
 }

@@ -27,8 +27,8 @@ var l = n(934551),
     T = n(646986),
     S = n(946356),
     b = n(810396),
-    y = n(243166),
-    v = n(652215),
+    v = n(243166),
+    y = n(652215),
     j = n(996988),
     R = n(985018),
     O = n(733866);
@@ -64,12 +64,12 @@ function L(e) {
                 displayProfile: L,
                 themeType: j.d.SIDEBAR
             }),
-            nicknameIcons: B ? null : (0, i.jsx)(y.A, {
+            nicknameIcons: B ? null : (0, i.jsx)(v.A, {
                 userId: t.id,
                 isVisible: D,
                 onOpenProfile: U
             })
-        }), G === v.eA$.PENDING_INCOMING && (0, i.jsx)(S.A.Overlay, {
+        }), G === y.eA$.PENDING_INCOMING && (0, i.jsx)(S.A.Overlay, {
             children: (0, i.jsx)(x.A, {
                 user: t,
                 channelId: M.id,

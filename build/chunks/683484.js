@@ -14,10 +14,10 @@ var i = n(627968),
     u = n(47167),
     h = n(742589),
     p = n(353428),
-    f = n(95701),
-    A = n(470710),
-    _ = n(734057),
-    g = n(71393),
+    A = n(95701),
+    f = n(470710),
+    g = n(734057),
+    _ = n(71393),
     m = n(994500),
     x = n(309010),
     E = n(745891),
@@ -74,7 +74,7 @@ class C extends s.Component {
             userIsInChannelCall: s,
             isBlocked: l
         } = this.props;
-        if (!(0, f.Gw)(t.type)) return null;
+        if (!(0, A.Gw)(t.type)) return null;
         let a = o._jp,
             r = !1;
         return n ? s ? (e = v.intl.string(v.t["4ry6yi"]), a = o.zWQ) : e = v.intl.string(v.t["0D/6Rz"]) : l ? (e = v.intl.string(v.t.PHzjvX), r = !0) : e = v.intl.string(v.t.focH1t), (0, i.jsx)(h.A.Icon, {
@@ -114,11 +114,11 @@ class C extends s.Component {
             onMouseDown: d,
             onContextMenu: c,
             isPreviewingInGame: u,
-            disableDragIndicator: f
+            disableDragIndicator: A
         } = this.props, {
-            showOpacitySlider: A
+            showOpacitySlider: f
         } = this.state;
-        return A && !n ? (0, i.jsxs)(y.Ay.Bar, {
+        return f && !n ? (0, i.jsxs)(y.Ay.Bar, {
             className: S.dl,
             children: [(0, i.jsx)(E.A, {}), (0, i.jsx)(h.A.Icon, {
                 icon: o.PGe,
@@ -136,7 +136,7 @@ class C extends s.Component {
                     channelId: s.id,
                     toolbar: this.renderWidgetButtons(),
                     transparent: !0,
-                    children: [u || n || f ? null : (0, i.jsx)(o.WP0, {
+                    children: [u || n || A ? null : (0, i.jsx)(o.WP0, {
                         size: "custom",
                         color: "currentColor",
                         className: a()(S.co, t),
@@ -156,10 +156,10 @@ function I(e) {
     let {
         channel: t,
         ...n
-    } = e, s = (0, r.bG)([x.A, _.A], () => {
+    } = e, s = (0, r.bG)([x.A, g.A], () => {
         let e = x.A.getVoiceChannelId();
-        return _.A.getChannel(e)
-    }), l = (0, r.bG)([g.A], () => g.A.getGuild(t.guild_id)), a = (0, r.bG)([A.A], () => A.A.isCallActive(t.id)), o = (0, u.Ay)(t), d = (0, r.bG)([m.A], () => !!t.isDM() && null != t.getRecipientId() && m.A.isBlocked(t.getRecipientId()));
+        return g.A.getChannel(e)
+    }), l = (0, r.bG)([_.A], () => _.A.getGuild(t.guild_id)), a = (0, r.bG)([f.A], () => f.A.isCallActive(t.id)), o = (0, u.Ay)(t), d = (0, r.bG)([m.A], () => !!t.isDM() && null != t.getRecipientId() && m.A.isBlocked(t.getRecipientId()));
     return (0, i.jsx)(C, {
         channel: t,
         channelName: o,

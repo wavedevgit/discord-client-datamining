@@ -26,8 +26,8 @@ var i = n(627968),
     T = n(636922),
     S = n(931664),
     b = n(631576),
-    y = n(253932),
-    v = n(734057),
+    v = n(253932),
+    y = n(734057),
     j = n(31717),
     R = n(320501),
     O = n(576705),
@@ -52,7 +52,7 @@ function z(e) {
         parentChannelId: t,
         parentMessageId: n,
         location: l
-    } = e, s = (0, r.bG)([v.A], () => v.A.getChannel(t)), {
+    } = e, s = (0, r.bG)([y.A], () => y.A.getChannel(t)), {
         analyticsLocations: a
     } = (0, g.Ay)(m.A.CREATE_THREAD);
     return null == s ? null : (0, i.jsx)(g.f5, {
@@ -164,7 +164,7 @@ function X(e) {
         {
             isGeneratingAI: N,
             enableAIFeatures: T,
-            getThreadNameInputAccessory: y
+            getThreadNameInputAccessory: v
         } = (0, B.C)({
             parentChannel: n,
             parentMessageId: s,
@@ -173,7 +173,7 @@ function X(e) {
             textAreaState: x
         }),
         {
-            nameError: v,
+            nameError: y,
             messageError: R,
             submit: O,
             submitting: U
@@ -278,11 +278,11 @@ function X(e) {
                                     parentMessageId: s,
                                     threadSettings: m,
                                     updateThreadSettings: p,
-                                    error: v,
+                                    error: y,
                                     disabled: U,
                                     isGeneratingAI: N,
                                     enableAIFeatures: T,
-                                    getThreadNameInputAccessory: y
+                                    getThreadNameInputAccessory: v
                                 }), n.type === H.rbe.GUILD_TEXT ? (0, i.jsx)($, {
                                     startedFromMessage: null != s,
                                     threadSettings: m,
@@ -438,7 +438,7 @@ function Z(e) {
     let {
         parentChannel: t,
         parentMessageId: n
-    } = e, l = (0, r.bG)([R.A], () => null == n ? null : R.A.getMessage(t.id, n)), s = y.hH.useSetting();
+    } = e, l = (0, r.bG)([R.A], () => null == n ? null : R.A.getMessage(t.id, n)), s = v.hH.useSetting();
     return null != l ? (0, i.jsx)(T.A, {
         className: W.IL,
         message: l,

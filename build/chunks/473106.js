@@ -32,8 +32,8 @@ var a = l(627968),
     I = l(532794),
     R = l(216678),
     N = l(194509),
-    M = l(761705),
-    D = l(448362),
+    D = l(761705),
+    M = l(448362),
     O = l(71393),
     L = l(166403),
     B = l(652215),
@@ -116,11 +116,11 @@ let Y = {
                 balance: K,
                 isFetching: J,
                 error: X
-            } = (0, M.W)(), {
+            } = (0, D.W)(), {
                 isSubmitting: Z,
                 responseMessage: Q,
                 redeemVirtualCurrency: ee
-            } = (0, M.Q)(), [et, el] = n.useState(B.dJq), [ea, en] = n.useState(""), [er, ei] = n.useState(B.dJq);
+            } = (0, D.Q)(), [et, el] = n.useState(B.dJq), [ea, en] = n.useState(""), [er, ei] = n.useState(B.dJq);
             return (0, a.jsx)(x.f5, {
                 value: H,
                 children: (0, a.jsx)(p.IpV, {
@@ -319,9 +319,9 @@ let Y = {
                                     children: [null !== X && (0, a.jsxs)(p.Text, {
                                         variant: "text-sm/normal",
                                         children: ["Error fetching Virtual Currency Balance: ", X.message]
-                                    }), (0, a.jsx)(D.Gy, {
+                                    }), (0, a.jsx)(M.Gy, {
                                         balance: K ?? 0,
-                                        balanceWidgetMode: D.k7.SELECTED
+                                        balanceWidgetMode: M.k7.SELECTED
                                     })]
                                 })]
                             }), (0, a.jsx)(p.ksK, {

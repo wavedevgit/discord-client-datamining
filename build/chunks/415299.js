@@ -1,43 +1,43 @@
 /** chunk id: 415299 params = (module,exports,require) **/
-s.d(t, {
-    v: () => c
+a.d(t, {
+    v: () => d
 });
-var l = s(64700),
-    a = s(508425),
-    n = s(559949),
-    i = s(207803),
-    r = s(84540),
-    o = s(954571),
-    d = s(652215);
+var n = a(64700),
+    s = a(508425),
+    l = a(559949),
+    r = a(207803),
+    i = a(84540),
+    o = a(954571),
+    c = a(652215);
 
-function c(e) {
+function d(e) {
     let {
         hasChanges: t,
-        selectedFontId: s,
-        selectedEffectId: c,
+        selectedFontId: a,
+        selectedEffectId: d,
         selectedColors: u,
         defaultColor: m,
         guildId: _,
-        isTryItOut: x,
-        onClose: p
+        isTryItOut: p,
+        onClose: h
     } = e;
-    return l.useCallback(() => {
+    return n.useCallback(() => {
         if (t) {
             let e = u;
-            c === a.z.SOLID && u.length > 0 && u[0] === m && (e = []);
+            d === s.z.SOLID && u.length > 0 && u[0] === m && (e = []);
             let t = {
-                fontId: s,
-                effectId: c,
+                fontId: a,
+                effectId: d,
                 colors: e
             };
-            x ? (0, i.EW)(t) : (0, r.p)({
+            p ? (0, r.EW)(t) : (0, i.p)({
                 guildId: _,
                 displayNameStyles: t
-            }), o.default.track(d.HAw.DISPLAY_NAME_STYLES_APPLIED, {
-                font_name: n.x[s],
-                effect_name: a.z[c],
+            }), o.default.track(c.HAw.DISPLAY_NAME_STYLES_APPLIED, {
+                font_name: l.x[a],
+                effect_name: s.z[d],
                 colors: u
-            }), p?.()
+            }), h?.()
         }
-    }, [t, s, c, u, m, p, _, x])
+    }, [t, a, d, u, m, h, _, p])
 }

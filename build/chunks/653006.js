@@ -1,10 +1,10 @@
 /** chunk id: 653006 params = (module,exports,require) **/
 a.d(t, {
-    K: () => r
+    K: () => n
 });
 var l = a(214033),
-    n = a(715185);
-let r = {
+    r = a(715185);
+let n = {
     title: "Recursive",
-    stories: [l.t, n.M, n.H]
+    stories: [l.t, r.M, r.H]
 }

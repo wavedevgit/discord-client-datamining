@@ -1,32 +1,31 @@
 /** chunk id: 788593 params = (module,exports,require) **/
 n.d(t, {
-    A: () => I,
-    R: () => x
+    A: () => p,
+    R: () => f
 });
 var i = n(627968),
     a = n(64700),
     l = n(503698),
     s = n.n(l),
-    r = n(311907),
-    o = n(990078),
-    c = n(397927),
-    d = n(409626),
-    u = n(692969),
-    g = n(958805),
-    _ = n(61881),
-    m = n(985018),
-    f = n(522500);
+    r = n(990078),
+    o = n(397927),
+    c = n(409626),
+    d = n(692969),
+    u = n(207803),
+    g = n(485745),
+    _ = n(985018),
+    m = n(522500);
 
-function x(e) {
+function f(e) {
     let {
         imageSrc: t,
         gameName: n
-    } = e, [l, s] = a.useState(!1), r = n ?? m.intl.string(m.t.GIWFlF);
+    } = e, [l, s] = a.useState(!1), r = n ?? _.intl.string(_.t.GIWFlF);
     return l || null == t ? (0, i.jsx)("div", {
         role: "img",
         "aria-label": r,
-        className: f.Np,
-        children: (0, i.jsx)(c.Text, {
+        className: m.Np,
+        children: (0, i.jsx)(o.Text, {
             variant: "text-xxs/medium",
             lineClamp: 3,
             "aria-hidden": !0,
@@ -35,87 +34,87 @@ function x(e) {
     }) : (0, i.jsx)("img", {
         src: t,
         alt: r,
-        className: f.$_,
+        className: m.$_,
         onError: () => s(!0),
         onLoad: () => s(!1)
     })
 }
 
-function p(e) {
+function x(e) {
     let {
         imageSrc: t,
         gameName: n,
         applicationId: l,
-        userId: p,
-        className: I,
-        hideTooltip: A = !1,
-        coverRef: h
-    } = e, v = (0, r.bG)([_.A], () => _.A.hasUnsavedChanges()), E = (0, u.A)({
+        userId: x,
+        className: p,
+        hideTooltip: I = !1,
+        coverRef: A
+    } = e, h = (0, g.A)(), v = (0, d.A)({
         location: "GameCover",
         applicationId: l,
-        source: d.Ob.UserProfile,
-        sourceUserId: p,
+        source: c.Ob.UserProfile,
+        sourceUserId: x,
         trackEntryPointImpression: !0
-    }), j = n ?? m.intl.string(m.t.GIWFlF), T = m.intl.formatToPlainString(m.t["8QLQB+"], {
-        gameName: j
-    }), b = a.useCallback(e => {
-        if (v) {
-            e.preventDefault(), e.stopPropagation(), g.A.notifyUnsavedWidgets();
+    }), E = n ?? _.intl.string(_.t.GIWFlF), j = _.intl.formatToPlainString(_.t["8QLQB+"], {
+        gameName: E
+    }), T = a.useCallback(e => {
+        if (h) {
+            e.preventDefault(), e.stopPropagation(), (0, u.VQ)();
             return
         }
-        E?.(e)
-    }, [v, E]), C = e => A ? e : (0, i.jsx)(o.m, {
-        text: j,
+        v?.(e)
+    }, [h, v]), b = e => I ? e : (0, i.jsx)(r.m, {
+        text: E,
         ariaHidden: !0,
         children: e
     });
-    return C(null == E ? (0, i.jsx)(c.vN3, {
+    return b(null == v ? (0, i.jsx)(o.vN3, {
         children: (0, i.jsx)("div", {
-            ref: h,
-            className: I,
+            ref: A,
+            className: p,
             tabIndex: -1,
-            children: (0, i.jsx)(x, {
+            children: (0, i.jsx)(f, {
                 imageSrc: t,
                 gameName: n
             })
         })
-    }) : (0, i.jsx)(c.DUT, {
-        innerRef: h,
-        onClick: b,
-        "aria-label": T,
-        className: s()(f.vk, I),
-        children: (0, i.jsx)(x, {
+    }) : (0, i.jsx)(o.DUT, {
+        innerRef: A,
+        onClick: T,
+        "aria-label": j,
+        className: s()(m.vk, p),
+        children: (0, i.jsx)(f, {
             imageSrc: t,
             gameName: n
         })
     }))
 }
 
-function I(e) {
+function p(e) {
     let {
         applicationId: t,
         userId: n,
         className: a,
         disableInteraction: l = !1,
         hideTooltip: r,
-        coverRef: o,
+        coverRef: c,
         ...d
-    } = e, u = s()(f.PY, a);
-    return l ? (0, i.jsx)(c.vN3, {
+    } = e, u = s()(m.PY, a);
+    return l ? (0, i.jsx)(o.vN3, {
         children: (0, i.jsx)("div", {
-            ref: o,
+            ref: c,
             className: u,
             tabIndex: -1,
-            children: (0, i.jsx)(x, {
+            children: (0, i.jsx)(f, {
                 ...d
             })
         })
-    }) : (0, i.jsx)(p, {
+    }) : (0, i.jsx)(x, {
         className: u,
         applicationId: t,
         userId: n,
         hideTooltip: r,
-        coverRef: o,
+        coverRef: c,
         ...d
     })
 }

@@ -3,8 +3,8 @@ a.d(t, {
     D: () => i
 });
 var l = a(627968),
-    n = a(397927),
-    r = a(673277),
+    r = a(397927),
+    n = a(673277),
     s = a(190503);
 let i = {
     name: "Image",
@@ -15,8 +15,8 @@ let i = {
             videoSrc: a
         } = e;
         return (0, l.jsxs)("div", {
-            children: [(0, l.jsxs)(r.A, {
-                children: [(0, l.jsx)(n.Text, {
+            children: [(0, l.jsxs)(n.A, {
+                children: [(0, l.jsx)(r.Text, {
                     variant: "text-lg/semibold",
                     children: "Static image"
                 }), (0, l.jsx)("div", {
@@ -29,8 +29,8 @@ let i = {
                         }
                     })
                 })]
-            }), (0, l.jsxs)(r.A, {
-                children: [(0, l.jsx)(n.Text, {
+            }), (0, l.jsxs)(n.A, {
+                children: [(0, l.jsx)(r.Text, {
                     variant: "text-lg/semibold",
                     children: "Video asset"
                 }), (0, l.jsx)("div", {

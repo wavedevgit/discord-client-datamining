@@ -27,7 +27,7 @@ function N(e) {
     let {
         guild: t,
         selected: N
-    } = e, T = (0, h.A)(t), S = (0, c.JZ)(a.M.CHANNEL_BROWSER_NEW_BADGE_NUX), b = (0, s.yK)([A.A], () => Array.from(A.A.getNewChannelIds(t.id)).filter(e => A.A.shouldIndicateNewChannel(t.id, e))), y = (0, s.bG)([m.Ay], () => m.Ay.hasUnread(t.id, I.P.GUILD_ONBOARDING_QUESTION)), v = b.length > p.rR, j = (0, s.bG)([u.A, m.Ay], () => {
+    } = e, T = (0, h.A)(t), S = (0, c.JZ)(a.M.CHANNEL_BROWSER_NEW_BADGE_NUX), b = (0, s.yK)([A.A], () => Array.from(A.A.getNewChannelIds(t.id)).filter(e => A.A.shouldIndicateNewChannel(t.id, e))), v = (0, s.bG)([m.Ay], () => m.Ay.hasUnread(t.id, I.P.GUILD_ONBOARDING_QUESTION)), y = b.length > p.rR, j = (0, s.bG)([u.A, m.Ay], () => {
         let e = u.A.lastFetchedAt(t.id),
             n = m.Ay.lastMessageId(t.id, I.P.GUILD_ONBOARDING_QUESTION);
         if (null == n) return !1;
@@ -46,7 +46,7 @@ function N(e) {
             })
         })
     }, [t]), L = null;
-    return S && !y && !v || N || j || (L = (0, i.jsx)(o.LpS, {
+    return S && !v && !y || N || j || (L = (0, i.jsx)(o.LpS, {
         color: r.A.colors.BADGE_BACKGROUND_BRAND.css,
         text: C.intl.string(C.t.y2b7CA)
     })), (0, i.jsx)(f.G, {

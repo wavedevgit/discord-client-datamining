@@ -31,17 +31,17 @@ var i = n(627968),
     S = n(985018),
     b = n(458004);
 
-function y(e) {
+function v(e) {
     e.stopPropagation()
 }
-let v = l.memo(function(e) {
+let y = l.memo(function(e) {
         let t, {
                 channel: s,
                 connectChannelDragSource: u,
                 connectChannelDropTarget: m,
                 disableManageChannels: C,
                 position: N,
-                sortingPosition: v,
+                sortingPosition: y,
                 hideIcon: j,
                 children: R
             } = e,
@@ -49,7 +49,7 @@ let v = l.memo(function(e) {
             L = (0, o.bG)([f.A], () => f.A.isCollapsed(s.id)),
             M = (0, o.bG)([E.A], () => E.A.can(T.xBc.MANAGE_CHANNELS, s)),
             D = (0, g.Ay)(s);
-        t = null != v ? N > v ? b.mU : b.TR : b.fx;
+        t = null != y ? N > y ? b.mU : b.TR : b.fx;
         let U = l.useCallback(() => {
                 L ? (0, A.fh)(s.id) : (0, A.Gv)(s.id)
             }, [s.id, L]),
@@ -132,7 +132,7 @@ let v = l.memo(function(e) {
                                 className: b.Kk
                             })]
                         }), (0, i.jsx)("div", {
-                            onClick: y,
+                            onClick: v,
                             className: b.Y_,
                             children: M && !C ? (0, i.jsx)(c.m, {
                                 text: S.intl.string(S.t["fUYU+j"]),
@@ -155,7 +155,7 @@ let v = l.memo(function(e) {
             });
         return null != m && null != u ? m(u(F)) : F
     }),
-    j = (0, m.a)(v),
+    j = (0, m.a)(y),
     R = l.memo(function(e) {
         let {
             name: t,

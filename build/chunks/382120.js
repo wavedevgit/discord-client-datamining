@@ -5,8 +5,8 @@ t.d(n, {
 var i = t(627968);
 t(64700);
 var a = t(158954),
-    r = t(311907),
-    l = t(397927),
+    l = t(311907),
+    r = t(397927),
     o = t(973925),
     s = t(622543),
     d = t(985018),
@@ -30,10 +30,10 @@ function _(e) {
             })
         }), (0, i.jsxs)("div", {
             className: c.qg,
-            children: [(0, i.jsx)(l.Heading, {
+            children: [(0, i.jsx)(r.Heading, {
                 variant: "text-xs/semibold",
                 children: t
-            }), (0, i.jsx)(l.Text, {
+            }), (0, i.jsx)(r.Text, {
                 variant: "text-sm/normal",
                 children: a
             })]
@@ -44,7 +44,7 @@ function _(e) {
 function u(e) {
     let {
         user: n
-    } = e, t = (0, r.bG)([s.A], () => s.A.getUserProfile(n.id)?.application), {
+    } = e, t = (0, l.bG)([s.A], () => s.A.getUserProfile(n.id)?.application), {
         hasMessageContent: u,
         hasGuildPresences: p,
         hasGuildMembers: A
@@ -53,18 +53,18 @@ function u(e) {
         fade: !0,
         className: c.XG,
         children: [u && (0, i.jsx)(_, {
-            icon: l.oyn,
+            icon: r.oyn,
             title: d.intl.string(d.t["7Tmhfu"]),
             description: d.intl.string(d.t.eu5x7z)
         }), p && (0, i.jsx)(_, {
-            icon: l._xR,
+            icon: r._xR,
             title: d.intl.string(d.t.awYSsM),
             description: d.intl.string(d.t.TpsXoC)
         }), A && (0, i.jsx)(_, {
-            icon: l.nFg,
+            icon: r.nFg,
             title: d.intl.string(d.t.WuKeSJ),
             description: d.intl.string(d.t.wOBmtV)
-        }), (0, i.jsx)(l.Text, {
+        }), (0, i.jsx)(r.Text, {
             variant: "text-xs/normal",
             children: d.intl.format(d.t.b6nqk0, {
                 helpCenterUrl: "https://support.discord.com/hc/articles/7933951485975"

@@ -1,37 +1,37 @@
 /** chunk id: 65470 params = (module,exports,require) **/
 n.d(t, {
-    A: () => o
+    A: () => c
 });
 var i = n(627968);
 n(64700);
-var s = n(732955),
-    l = n(397927),
-    a = n(194509),
-    r = n(783420);
-let o = e => {
+var r = n(732955),
+    a = n(397927),
+    s = n(194509),
+    l = n(783420);
+let c = e => {
     let {
         subscriptionTier: t,
         premiumModalAnalyticsLocation: n,
-        giftMessage: o,
-        onClick: d,
-        buttonTextOverride: c,
+        giftMessage: c,
+        onClick: o,
+        buttonTextOverride: d,
         ...u
     } = e;
-    return (0, i.jsx)(r.A, {
+    return (0, i.jsx)(l.A, {
         isGift: !0,
         subscriptionTier: t,
         premiumModalAnalyticsLocation: n,
-        giftMessage: o,
-        onClick: d,
+        giftMessage: c,
+        onClick: o,
         children: e => {
             let {
                 onClick: n
-            } = e, r = c ?? (0, a.U)(t);
-            return (0, i.jsx)(s.$nd, {
+            } = e, l = d ?? (0, s.U)(t);
+            return (0, i.jsx)(r.$nd, {
                 onClick: n,
-                icon: l.okO,
+                icon: a.okO,
                 ...u,
-                text: r
+                text: l
             })
         }
     })

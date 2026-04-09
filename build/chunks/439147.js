@@ -1,37 +1,37 @@
 /** chunk id: 439147 params = (module,exports,require) **/
-n.d(t, {
-    A: () => _
+l.d(t, {
+    A: () => A
 });
-var i = n(562465),
-    l = n(626584),
-    s = n(152007),
-    a = n(867455),
-    r = n(734057),
-    o = n(320501),
-    d = n(222823),
-    c = n(287809),
-    u = n(661191),
-    h = n(652215);
-let A = new l.A("markUnread");
-async function _(e, t) {
-    let n = c.default.getCurrentUser();
-    if (null == n) return;
-    let l = o.A.getMessages(e),
-        _ = l.toArray().filter(e => 0 > u.default.compare(e.id, t)).sort((e, t) => u.default.compare(e.id, t.id)).reverse()[0],
-        m = null == _ ? u.default.atPreviousMillisecond(t) : _.id,
-        g = 0;
-    l.forAll(e => {
-        u.default.compare(e.id, m) > 0 && (0, d.Wm)(e, n) && g++
+var n = l(562465),
+    i = l(626584),
+    r = l(152007),
+    s = l(867455),
+    u = l(734057),
+    a = l(320501),
+    o = l(222823),
+    d = l(287809),
+    c = l(661191),
+    S = l(652215);
+let _ = new i.A("markUnread");
+async function A(e, t) {
+    let l = d.default.getCurrentUser();
+    if (null == l) return;
+    let i = a.A.getMessages(e),
+        A = i.toArray().filter(e => 0 > c.default.compare(e.id, t)).sort((e, t) => c.default.compare(e.id, t.id)).reverse()[0],
+        I = null == A ? c.default.atPreviousMillisecond(t) : A.id,
+        p = 0;
+    i.forAll(e => {
+        c.default.compare(e.id, I) > 0 && (0, o.Wm)(e, l) && p++
     });
-    let p = r.A.getChannel(e);
-    null != p && p.isThread() && (p.isArchivedThread() && await a.A.unarchiveThread(p, !1), s.A.hasJoined(e) || await a.A.joinThread(p, "Mark Unread")), A.log("Marking unread", {
+    let h = u.A.getChannel(e);
+    null != h && h.isThread() && (h.isArchivedThread() && await s.A.unarchiveThread(h, !1), r.A.hasJoined(e) || await s.A.joinThread(h, "Mark Unread")), _.log("Marking unread", {
         channelId: e,
         messageId: t
-    }), i.Bo.post({
-        url: h.Rsh.MESSAGE_ACK(e, m),
+    }), n.Bo.post({
+        url: S.Rsh.MESSAGE_ACK(e, I),
         body: {
             manual: !0,
-            mention_count: g
+            mention_count: p
         },
         oldFormErrors: !0,
         rejectWithError: !0

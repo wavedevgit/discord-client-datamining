@@ -4,17 +4,17 @@ n.d(t, {
     GY: () => E,
     M$: () => I,
     Oc: () => u,
-    kF: () => _
+    kF: () => c
 });
 var i = n(949645),
     r = n(265422),
     a = n(963169),
-    l = n(345942),
-    s = n(309010),
+    s = n(345942),
+    l = n(309010),
     o = n(967198),
     d = n(723702),
-    c = n(652215);
-let _ = {
+    _ = n(652215);
+let c = {
         binds: ["alt+down"],
         comboKeysBindGlobal: !0,
         action: () => ((0, i.A)(), !1)
@@ -29,12 +29,12 @@ let _ = {
         comboKeysBindGlobal: !0,
         action() {
             let e;
-            if (null != o.A.getGuildId()) e = c.ME;
+            if (null != o.A.getGuildId()) e = _.ME;
             else {
                 let t = o.A.getLastSelectedGuildId();
-                null != t && (e = t, (0, r.i)(t, s.A.getChannelId(t)))
+                null != t && (e = t, (0, r.i)(t, l.A.getChannelId(t)))
             }
-            return null != e && (0, l.u)(e), !1
+            return null != e && (0, s.u)(e), !1
         }
     },
     E = {

@@ -1,8 +1,8 @@
 /** chunk id: 398523 params = (module,exports,require) **/
-r.d(t, {
-    A: () => n
+n.d(t, {
+    A: () => r
 });
-let n = (0, r(945810).mj)({
+let r = (0, n(945810).mj)({
     name: "2026-03-steelseries-3p-recurring",
     kind: "user",
     defaultConfig: {

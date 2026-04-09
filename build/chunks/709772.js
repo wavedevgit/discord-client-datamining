@@ -4,8 +4,8 @@ a.d(t, {
 });
 var l = a(627968);
 a(64700);
-var n = a(342393),
-    r = a(71532),
+var r = a(342393),
+    n = a(71532),
     s = a(714126);
 let i = e => {
     let {
@@ -15,8 +15,8 @@ let i = e => {
     } = e, o = Date.now();
     return (0, l.jsx)(s.W, {
         label: t,
-        children: (0, l.jsx)(n.Elements, {
-            stripe: (0, r.Cv)(),
+        children: (0, l.jsx)(r.Elements, {
+            stripe: (0, n.Cv)(),
             options: {
                 mode: "setup",
                 currency: "usd",

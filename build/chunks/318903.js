@@ -23,15 +23,15 @@ function m(e) {
     } = t, x = m?.(), A = _?.(), {
         parentPanelNode: h,
         parentSidebarItemNode: p
-    } = (0, r.x)(n), T = g?.(), f = h?.useTitle?.(), S = T ?? f, b = (0, o.q)(t);
+    } = (0, r.x)(n), T = g?.(), f = h?.useTitle?.(), S = T ?? f, E = (0, o.q)(t);
     if (null == h || null == S) return null;
-    let E = null != p ? p.icon : void 0;
+    let b = null != p ? p.icon : void 0;
     return (0, i.jsx)(d.U, {
         role: "link",
         title: S,
         description: A,
-        leadingElement: null != E && (0, i.jsx)(a.A, {
-            Icon: E
+        leadingElement: null != b && (0, i.jsx)(a.A, {
+            Icon: b
         }),
         trailingElement: (0, i.jsxs)("div", {
             className: u.M,
@@ -42,7 +42,7 @@ function m(e) {
         onClick: () => {
             l.A.navigate(n, {
                 animateSidebarScroll: !1
-            }), b()
+            }), E()
         }
     })
 }

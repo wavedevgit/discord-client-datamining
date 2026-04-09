@@ -3,35 +3,35 @@ n.d(t, {
     A: () => u
 });
 var i = n(627968),
-    s = n(503698),
-    l = n.n(s),
-    a = n(397927),
-    r = n(744064),
-    o = n(189024),
-    d = n(985018),
-    c = n(494353);
+    r = n(503698),
+    a = n.n(r),
+    s = n(397927),
+    l = n(744064),
+    c = n(189024),
+    o = n(985018),
+    d = n(494353);
 
 function u(e) {
     let {
         glowingPerkId: t = null
-    } = e, n = (0, o.A)();
+    } = e, n = (0, c.A)();
     return (0, i.jsxs)("div", {
-        className: c.uW,
-        children: [(0, i.jsx)(a.Heading, {
+        className: d.uW,
+        children: [(0, i.jsx)(s.Heading, {
             variant: "display-sm",
-            className: c.R_,
-            children: d.intl.string(d.t.Aw5DRm)
+            className: d.R_,
+            children: o.intl.string(o.t.Aw5DRm)
         }), (0, i.jsx)("div", {
-            className: c.Ui,
+            className: d.Ui,
             children: n.map((e, n) => {
                 if (null == e) return;
-                let s = 0 === n && !0 === e.featured;
-                return (0, i.jsx)(r.S, {
+                let r = 0 === n && !0 === e.featured;
+                return (0, i.jsx)(l.S, {
                     ...e,
                     glowing: t === e.id,
-                    featured: s,
-                    containerClassName: l()(c.Nr, {
-                        [c.Nq]: s
+                    featured: r,
+                    containerClassName: a()(d.Nr, {
+                        [d.Nq]: r
                     })
                 }, e.id)
             })

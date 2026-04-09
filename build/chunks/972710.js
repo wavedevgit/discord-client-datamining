@@ -21,11 +21,11 @@ var i = n(627968),
     T = n(287809),
     f = n(954571),
     S = n(927578),
-    b = n(866312),
-    E = n(327479),
+    E = n(866312),
+    b = n(327479),
     C = n(652215),
-    N = n(601107),
-    v = n(985018),
+    v = n(601107),
+    N = n(985018),
     I = n(155565);
 let j = [C.Dmq.PAST_DUE, C.Dmq.ACCOUNT_HOLD, C.Dmq.BILLING_RETRY],
     y = e => {
@@ -53,11 +53,11 @@ let j = [C.Dmq.PAST_DUE, C.Dmq.ACCOUNT_HOLD, C.Dmq.BILLING_RETRY],
                 g(!0), d(!1)
             }
         }, x = [{
-            text: v.intl.string(v.t.oEAioF),
+            text: N.intl.string(N.t.oEAioF),
             onClick: () => n(),
             variant: "secondary"
         }, {
-            text: v.intl.string(v.t["cY+Oob"]),
+            text: N.intl.string(N.t["cY+Oob"]),
             onClick: () => _(),
             disabled: o,
             variant: "critical-primary",
@@ -66,13 +66,13 @@ let j = [C.Dmq.PAST_DUE, C.Dmq.ACCOUNT_HOLD, C.Dmq.BILLING_RETRY],
         return (0, i.jsx)(c.Modal, {
             size: "md",
             transitionState: t,
-            title: v.intl.string(v.t.LZunzZ),
-            subtitle: v.intl.string(v.t.FClXh9),
+            title: N.intl.string(N.t.LZunzZ),
+            subtitle: N.intl.string(N.t.FClXh9),
             actions: x,
             onClose: async () => n(),
             children: u ? (0, i.jsx)(m.wx6, {
                 type: "critical",
-                children: v.intl.string(v.t["5mlOCW"])
+                children: N.intl.string(N.t["5mlOCW"])
             }) : null
         })
     };
@@ -92,7 +92,7 @@ function O(e) {
         {
             analyticsLocations: O
         } = (0, _.Ay)(g.A.GUILD_BOOSTING_SUBSCRIPTION_HEADER),
-        R = (0, b.A)({
+        R = (0, E.A)({
             location: "GuildBoostingHeader"
         });
     if (0 === (0, S.bx)(n.additionalPlans)) return null;
@@ -108,7 +108,7 @@ function O(e) {
             break;
         case C.Dmq.PAUSE_PENDING:
         case C.Dmq.PAUSED:
-            t = n.pauseReason !== N.qf.FRACTIONAL_PREMIUM ? I.C7 : I.wG;
+            t = n.pauseReason !== v.qf.FRACTIONAL_PREMIUM ? I.C7 : I.wG;
             break;
         default:
             t = I.wG
@@ -149,17 +149,17 @@ function O(e) {
                             }))
                         },
                         size: "sm",
-                        text: v.intl.string(v.t["ETE/oC"])
+                        text: N.intl.string(N.t["ETE/oC"])
                     })
-                }), (0, i.jsx)(E.A, {
+                }), (0, i.jsx)(b.A, {
                     onClick: () => (0, p.openUserSettings)(h.X.PREMIUM_GUILD_SUBSCRIPTIONS_PANEL),
-                    text: v.intl.string(v.t["NQ5g/U"])
+                    text: N.intl.string(N.t["NQ5g/U"])
                 })]
             })]
         }), !r && (0, i.jsx)(m.Text, {
             className: I.yW,
             variant: "text-sm/normal",
-            children: v.intl.format(d.Fr ? v.t.uxYBEa : v.t.k6haR9, {
+            children: N.intl.format(d.Fr ? N.t.uxYBEa : N.t.k6haR9, {
                 openAppHook: () => (0, x.A)("app")
             })
         })]

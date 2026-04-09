@@ -4,8 +4,8 @@ n.d(t, {
     p: () => d
 });
 var a = n(155718),
-    i = n(731068),
-    l = n(77350),
+    l = n(731068),
+    i = n(77350),
     r = n(141468),
     s = n(383233),
     o = n(998218);
@@ -20,7 +20,7 @@ function d(e) {
                     let t = e.components.find(e => e.type === a.I5.MEDIA_GALLERY),
                         n = t?.items[0]?.media;
                     if (null != n) {
-                        let t = (0, i.FE)(n);
+                        let t = (0, l.FE)(n);
                         if ("INVALID" !== t) return {
                             ...n,
                             type: t,
@@ -30,12 +30,12 @@ function d(e) {
                         }
                     }
                 }
-                let t = e.attachments.find(e => (0, l.tT)(e.content_type));
-                if (null != t) return (0, i.Rr)(t, e);
-                let n = e.attachments.find(e => (0, l.XB)(e.content_type));
-                if (null != n) return (0, i.Rr)(n, e);
+                let t = e.attachments.find(e => (0, i.tT)(e.content_type));
+                if (null != t) return (0, l.Rr)(t, e);
+                let n = e.attachments.find(e => (0, i.XB)(e.content_type));
+                if (null != n) return (0, l.Rr)(n, e);
                 let r = e.embeds.find(e => null != e.video && null != e.thumbnail);
-                if (r?.thumbnail != null) return (0, i.oU)(r.thumbnail, {
+                if (r?.thumbnail != null) return (0, l.oU)(r.thumbnail, {
                     message: e,
                     identifier: {
                         type: "embed",
@@ -52,7 +52,7 @@ function d(e) {
             } : {
                 body: d
             },
-            g = e.reactions?.reduce((e, t) => e + t.count, 0) ?? 0;
+            h = e.reactions?.reduce((e, t) => e + t.count, 0) ?? 0;
         return {
             id: o.id,
             media: u,
@@ -60,7 +60,7 @@ function d(e) {
             body: x,
             content: d,
             timestamp: e.timestamp,
-            reactionCount: g
+            reactionCount: h
         }
     })
 }

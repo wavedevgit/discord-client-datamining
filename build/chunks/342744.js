@@ -30,7 +30,7 @@ async function S(e, t, n, i) {
     }, (0, p.UC)(s, e.currency, e.paymentSourceId), i)
 }
 
-function b(e) {
+function E(e) {
     let {
         errorMsg: t
     } = e;
@@ -48,7 +48,7 @@ function b(e) {
     })
 }
 
-function E() {
+function b() {
     return (0, i.jsxs)("div", {
         className: f.rf,
         children: [(0, i.jsx)("div", {
@@ -71,14 +71,14 @@ function C(e) {
         h.A.hasFetchedSubscriptions() || (0, x.hP)()
     }, []);
     let f = (0, o.bG)([h.A], () => h.A.getPremiumTypeSubscription()),
-        [C, N] = s.useState(1),
-        [v, I] = s.useState(!1),
+        [C, v] = s.useState(1),
+        [N, I] = s.useState(!1),
         [j, y] = s.useState(null),
         O = s.useCallback(async () => {
             if (null != f) try {
                 I(!0), y(null);
                 let e = (0, A.v)(f, 1);
-                a()((0, p.bx)(e) <= (0, p.bx)(f.additionalPlans), "Uncanceling should not increase the number of guild subscriptions"), await S(f, e, t, c), N(2)
+                a()((0, p.bx)(e) <= (0, p.bx)(f.additionalPlans), "Uncanceling should not increase the number of guild subscriptions"), await S(f, e, t, c), v(2)
             } catch (t) {
                 let e = t instanceof u.Ey ? t : new u.Ey(t, t.code);
                 y(T.intl.string(e.code === m.tG.BILLING_PAUSE_INVALID_UPDATE ? T.t.dq4vq7 : T.t["5mlOCW"])), I(!1)
@@ -106,12 +106,12 @@ function C(e) {
                         return [{
                             variant: "secondary",
                             text: T.intl.string(T.t.oEAioF),
-                            disabled: v,
+                            disabled: N,
                             onClick: l
                         }, {
                             variant: "primary",
                             text: T.intl.string(T.t.etZP4B),
-                            loading: v,
+                            loading: N,
                             onClick: O
                         }];
                     case 2:
@@ -128,11 +128,11 @@ function C(e) {
                 if (null == f) return (0, i.jsx)(d.y$y, {});
                 switch (C) {
                     case 1:
-                        return (0, i.jsx)(b, {
+                        return (0, i.jsx)(E, {
                             errorMsg: j
                         });
                     case 2:
-                        return (0, i.jsx)(E, {});
+                        return (0, i.jsx)(b, {});
                     default:
                         throw Error(`Unexpected step: ${C}`)
                 }

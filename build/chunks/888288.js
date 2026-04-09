@@ -14,10 +14,10 @@ var i = n(284009),
     u = n(175333),
     h = n(242363),
     p = n(729843),
-    f = n(996797),
-    A = n(942236),
-    _ = n(102037),
-    g = n(274372),
+    A = n(996797),
+    f = n(942236),
+    g = n(102037),
+    _ = n(274372),
     m = n(747189),
     x = n(742984),
     E = n(833551),
@@ -28,8 +28,8 @@ var i = n(284009),
     I = n(734057),
     N = n(803224),
     T = n(290863),
-    b = n(309010),
-    O = n(461213),
+    O = n(309010),
+    b = n(461213),
     j = n(351906),
     D = n(287809),
     R = n(845618),
@@ -69,12 +69,12 @@ function Z(e) {
     }
 }
 
-function X(e) {
+function J(e) {
     let t = F.length;
     return (F = F.filter(t => 1 !== t.type || t.channelId !== e)).length !== t
 }
 
-function J(e) {
+function X(e) {
     let t = F.find(t => 2 === t.type && t.channelId === e);
     return null != t ? t.id : null
 }
@@ -101,14 +101,14 @@ function q(e) {
     let {
         channelId: t,
         ongoingRings: n
-    } = e, i = J(t);
+    } = e, i = X(t);
     if (!Object.keys(n).includes(C.default.getId())) return Z(i);
     if (null != i) return !1;
     let s = I.A.getChannel(t);
     if (null == s || !s.isRingable() || "GUILD_RING_START" === e.type && !S.A.getCurrentConfig({
             guildId: e.guildId,
             location: "OverlayStartRinging"
-        }).enabled || O.A.getStatus() === G.clD.DND || v.NO.getSetting()) return !1;
+        }).enabled || b.A.getStatus() === G.clD.DND || v.NO.getSetting()) return !1;
     let l = F.find(e => 1 === e.type && e.channelId === t && e.messageType === G.lAJ.CALL);
     null != l && Z(l.id), Q((0, p.A)(s), {
         priority: 1,
@@ -120,7 +120,7 @@ function q(e) {
 class $ extends a.Ay.Store {
     static displayName = "OverlayNotificationsStore";
     initialize() {
-        this.waitFor(C.default, I.A, g.A, N.A, L.default, E.default, P.A, y.A, w.default, T.A, b.A, O.A, j.A, D.default)
+        this.waitFor(C.default, I.A, _.A, N.A, L.default, E.default, P.A, y.A, w.default, T.A, O.A, b.A, j.A, D.default)
     }
     getNotifications() {
         return F
@@ -153,7 +153,7 @@ let ee = new $(o.h, !__OVERLAY__ ? {} : {
                     return (0, h.A)(e);
                 case V.Jr.NEWS:
                 default:
-                    return (0, _.A)(e)
+                    return (0, g.A)(e)
             }
         }(n);
         null != i && Q(i, {
@@ -190,8 +190,8 @@ let ee = new $(o.h, !__OVERLAY__ ? {} : {
                         l = (0, c.A)(e, t, n, a, i);
                         break;
                     case G.xL.JOIN_REQUEST:
-                        if (null == (i = O.A.getApplicationActivity(a.id)) || null == i.party || i.party.id !== t.activity.party_id) return !1;
-                        l = (0, f.A)(e, n, a, i)
+                        if (null == (i = b.A.getApplicationActivity(a.id)) || null == i.party || i.party.id !== t.activity.party_id) return !1;
+                        l = (0, A.A)(e, n, a, i)
                 }
                 if (null == l) return !1;
                 let r = Q(l, {
@@ -203,9 +203,9 @@ let ee = new $(o.h, !__OVERLAY__ ? {} : {
             }(i, n, l);
             if (!1 !== e) return e
         }
-        if ((!w.default.isInstanceLocked() || w.default.isPinned(G.uss.TEXT)) && t === b.A.getChannelId() || y.A.isNotificationDisabled(V.KS.TextChat) || j.A.disableNotifications || !(0, x.lx)(n, t)) return !1;
+        if ((!w.default.isInstanceLocked() || w.default.isPinned(G.uss.TEXT)) && t === O.A.getChannelId() || y.A.isNotificationDisabled(V.KS.TextChat) || j.A.disableNotifications || !(0, x.lx)(n, t)) return !1;
         let a = !N.A.isSoundDisabled(R.cH);
-        Q((0, A.A)(i, n, l, a), {
+        Q((0, f.A)(i, n, l, a), {
             type: 1,
             channelId: i.id,
             messageType: n.type
@@ -215,13 +215,13 @@ let ee = new $(o.h, !__OVERLAY__ ? {} : {
         let {
             channelId: t
         } = e;
-        return null != t && X(t)
+        return null != t && J(t)
     },
     MESSAGE_ACK: function(e) {
         let {
             channelId: t
         } = e;
-        return X(t)
+        return J(t)
     },
     CALL_CREATE: q,
     CALL_UPDATE: q,
@@ -229,7 +229,7 @@ let ee = new $(o.h, !__OVERLAY__ ? {} : {
         let {
             channelId: t
         } = e;
-        Z(J(t))
+        Z(X(t))
     },
     GUILD_RING_START: q,
     GUILD_RING_STOP: function(e) {
@@ -242,7 +242,7 @@ let ee = new $(o.h, !__OVERLAY__ ? {} : {
                 guildId: n,
                 location: "OverlayStopRinging"
             }).enabled) return !1;
-        i.includes(C.default.getId()) && Z(J(t))
+        i.includes(C.default.getId()) && Z(X(t))
     },
     ACTIVITY_USER_ACTION: function(e) {
         let t, {

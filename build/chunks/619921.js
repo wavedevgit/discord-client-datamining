@@ -5,34 +5,34 @@ n.d(t, {
 var i = n(311907),
     r = n(73153),
     a = n(734057),
-    l = n(650048),
-    s = n(71393),
+    s = n(650048),
+    l = n(71393),
     o = n(309010),
     d = n(645959),
-    c = n(652215);
-let _ = (window?.location?.pathname ?? "").startsWith(c.BVt.ACTIVITIES) ? c.BVt.ACTIVITIES : null;
+    _ = n(652215);
+let c = (window?.location?.pathname ?? "").startsWith(_.BVt.ACTIVITIES) ? _.BVt.ACTIVITIES : null;
 
 function u(e) {
     let {
         link: t
     } = e;
-    if (_ === t) return !1;
-    _ = t
+    if (c === t) return !1;
+    c = t
 }
 class A extends i.Ay.Store {
     static displayName = "AppViewStore";
     initialize() {
-        this.waitFor(l.A, d.default, o.A, s.A, a.A)
+        this.waitFor(s.A, d.default, o.A, l.A, a.A)
     }
     getHomeLink() {
-        return _ ?? l.A.fallbackRoute
+        return c ?? s.A.fallbackRoute
     }
 }
 let E = new A(r.h, {
     OVERLAY_INITIALIZE: function() {
         let e = d.default.getPrivateChannelIds(),
-            t = o.A.getChannelId(c.ME);
-        (null != t || null != e[0]) && (_ = c.BVt.CHANNEL(c.ME, t ?? e[0]))
+            t = o.A.getChannelId(_.ME);
+        (null != t || null != e[0]) && (c = _.BVt.CHANNEL(_.ME, t ?? e[0]))
     },
     APP_VIEW_SET_HOME_LINK: u,
     APPLICATION_STORE_LOCATION_CHANGE: function(e) {
@@ -45,8 +45,8 @@ let E = new A(r.h, {
         })
     },
     APPLICATION_STORE_RESET_NAVIGATION: function() {
-        if (null == _ || !_.startsWith(c.BVt.APPLICATION_STORE)) return !1;
-        _ = c.BVt.APPLICATION_STORE
+        if (null == c || !c.startsWith(_.BVt.APPLICATION_STORE)) return !1;
+        c = _.BVt.APPLICATION_STORE
     },
     CHANNEL_SELECT: function(e) {
         let {
@@ -54,8 +54,8 @@ let E = new A(r.h, {
             channelId: n
         } = e;
         if (null == t && null != n) {
-            let e = c.BVt.CHANNEL(c.ME, n);
-            if (e !== _) return _ = e, !0
+            let e = _.BVt.CHANNEL(_.ME, n);
+            if (e !== c) return c = e, !0
         }
         return !1
     },
@@ -63,6 +63,6 @@ let E = new A(r.h, {
         let {
             channel: t
         } = e;
-        null == t.guild_id && null != t.id && null != _ && _ === c.BVt.CHANNEL(c.ME, t.id) && (_ = null)
+        null == t.guild_id && null != t.id && null != c && c === _.BVt.CHANNEL(_.ME, t.id) && (c = null)
     }
 })

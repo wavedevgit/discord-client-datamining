@@ -1,5 +1,4 @@
 /** chunk id: 110465 params = (module,exports,require) **/
-"use strict";
 e.exports = {
     Nb: "featureBorder__65c15",
     wU: "premiumFeatureBorder__65c15 featureBorder__65c15",

@@ -5,8 +5,8 @@ t.d(n, {
 var i = t(627968);
 t(64700);
 var a = t(397927),
-    r = t(630054),
-    l = t(793574),
+    l = t(630054),
+    r = t(793574),
     o = t(688810),
     s = t(915089),
     d = t(562153),
@@ -43,18 +43,18 @@ function D(e) {
         channelId: k,
         messageId: B,
         roleId: U,
-        sessionId: M,
-        initialTabSection: G,
+        sessionId: G,
+        initialTabSection: M,
         initialScrollTarget: F,
         transitionState: w,
         onClose: V,
         sourceAnalyticsLocations: H = []
     } = e, W = D === N.ME ? void 0 : D, z = (0, _.Ay)(n.id, W), Y = d.Ay.getName(W, k, n), X = (0, s.GV)(), {
         analyticsLocations: K
-    } = (0, o.Ay)([...H, l.A.USER_PROFILE_MODAL]), Q = (0, c.pb)({
+    } = (0, o.Ay)([...H, r.A.USER_PROFILE_MODAL]), Q = (0, c.pb)({
         layout: "MODAL",
         userId: n.id,
-        sourceSessionId: M,
+        sourceSessionId: G,
         guildId: W,
         channelId: k,
         messageId: B,
@@ -125,14 +125,14 @@ function D(e) {
                                             children: (0, i.jsx)(j.e, {
                                                 variant: "secondary",
                                                 userId: n.id,
-                                                onClose: r.A.popAll
+                                                onClose: l.A.popAll
                                             })
                                         }), (0, i.jsx)("div", {
                                             className: P.pg,
                                             children: (0, i.jsx)(j.l, {
                                                 variant: "secondary",
                                                 userId: n.id,
-                                                onClose: r.A.popAll
+                                                onClose: l.A.popAll
                                             })
                                         }), (0, i.jsx)(v.A, {
                                             user: n,
@@ -165,7 +165,7 @@ function D(e) {
                                     displayProfile: z,
                                     guildId: W,
                                     items: q,
-                                    initialSection: G ?? S.RP.BOT_INFO,
+                                    initialSection: M ?? S.RP.BOT_INFO,
                                     onClose: V
                                 })]
                             })]

@@ -27,12 +27,12 @@ function S(e) {
         guild: n,
         initialSelectedEffect: l,
         className: S,
-        sectionTitle: b,
-        forcedDivider: E = !1,
+        sectionTitle: E,
+        forcedDivider: b = !1,
         withTutorial: C = !1,
-        showBorder: N = !1
+        showBorder: v = !1
     } = e, {
-        analyticsLocations: v
+        analyticsLocations: N
     } = (0, d.Ay)(), I = g.Ay.canUsePremiumProfileCustomization(t), j = (0, _.N2)({
         user: t,
         guildId: n?.id
@@ -43,16 +43,16 @@ function S(e) {
     s.useEffect(() => {
         I && m.default.track(h.HAw.PREMIUM_UPSELL_VIEWED, {
             type: p.e.PROFILE_EFFECTS_INLINE_SETTINGS,
-            location_stack: v
+            location_stack: N
         })
-    }, [I, v]);
+    }, [I, N]);
     let R = C ? o.wLn : r.$n;
     return (0, i.jsx)(x.A, {
-        forcedDivider: E,
+        forcedDivider: b,
         borderType: A.i.PREMIUM,
         hasBackground: !0,
-        title: b,
-        showBorder: N,
+        title: E,
+        showBorder: v,
         errors: O,
         className: S,
         children: (0, i.jsxs)("div", {
@@ -61,7 +61,7 @@ function S(e) {
                 size: r.$n.Sizes.SMALL,
                 onClick: () => {
                     (0, c.W)({
-                        analyticsLocations: v,
+                        analyticsLocations: N,
                         guild: n,
                         initialSelectedEffect: l
                     })

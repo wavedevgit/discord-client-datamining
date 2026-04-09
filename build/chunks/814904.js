@@ -4,8 +4,8 @@ a.d(t, {
 });
 var l = a(627968);
 a(64700);
-var n = a(951707),
-    r = a(528226);
+var r = a(951707),
+    n = a(528226);
 let s = () => (0, l.jsx)("div", {
         style: {
             height: 250,
@@ -28,7 +28,7 @@ let s = () => (0, l.jsx)("div", {
                     logoSrc: d,
                     href: c,
                     backgroundColor: u
-                } = e, x = () => a ? (0, l.jsxs)(n.A, {
+                } = e, x = () => a ? (0, l.jsxs)(r.A, {
                     children: [(0, l.jsx)(s, {}), (0, l.jsx)(s, {}), (0, l.jsx)(s, {}), (0, l.jsx)(s, {}), (0, l.jsx)(s, {}), (0, l.jsx)(s, {}), (0, l.jsx)(s, {}), (0, l.jsx)(s, {}), (0, l.jsx)(s, {}), (0, l.jsx)(s, {})]
                 }) : null;
                 return (0, l.jsxs)(l.Fragment, {
@@ -36,7 +36,7 @@ let s = () => (0, l.jsx)("div", {
                         style: {
                             height: a ? void 0 : t
                         },
-                        children: (0, l.jsx)(r.A, {
+                        children: (0, l.jsx)(n.A, {
                             bannerSrc: {
                                 src: i
                             },
@@ -51,7 +51,7 @@ let s = () => (0, l.jsx)("div", {
                         style: {
                             height: a ? void 0 : t
                         },
-                        children: (0, l.jsx)(r.A, {
+                        children: (0, l.jsx)(n.A, {
                             bannerSrc: {
                                 src: o
                             },

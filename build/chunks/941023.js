@@ -14,31 +14,31 @@ var i = n(64700),
     u = n(899699),
     h = n(456797),
     p = n(723702);
-let f = {
+let A = {
         x: 0,
         y: 0
     },
-    A = !1;
+    f = !1;
 
-function _(e) {
+function g(e) {
     let {
         clientX: t,
         clientY: n
     } = e;
-    A = !0, f.x = t, f.y = n
+    f = !0, A.x = t, A.y = n
 }
-let g = new Map;
+let _ = new Map;
 
 function m(e, t) {
-    if (null == t) g.delete(e), 0 === g.size && (window.removeEventListener("mousemove", _), A = !1);
+    if (null == t) _.delete(e), 0 === _.size && (window.removeEventListener("mousemove", g), f = !1);
     else {
-        let n = g.get(e);
+        let n = _.get(e);
         if (null != n && (0, r.A)(n.zone, t.zone)) return;
-        0 === g.size && window.addEventListener("mousemove", _), g.set(e, t)
+        0 === _.size && window.addEventListener("mousemove", g), _.set(e, t)
     }
     if (p.isPlatformEmbedded)
         if (c.default.isCurrentPidOutOfProcess()) {
-            let e = Array.from(g.values()).map(e => {
+            let e = Array.from(_.values()).map(e => {
                 let {
                     zone: t
                 } = e;
@@ -57,15 +57,15 @@ function m(e, t) {
             if (null == e) return;
             e.broadcastCommand({
                 message: "set_click_zones",
-                zones: Array.from(g.values()).map(e => {
+                zones: Array.from(_.values()).map(e => {
                     let {
                         zone: t
                     } = e;
                     return t
                 })
             }), n = e, x || (n.setClickZoneCallback((e, t, n) => {
-                let i = g.get(e);
-                null != i && (A || (f.x = t, f.y = n), i.instance.click())
+                let i = _.get(e);
+                null != i && (f || (A.x = t, A.y = n), i.instance.click())
             }), x = !0)
         }
 }
@@ -117,7 +117,7 @@ class E extends i.PureComponent {
         }
     };
     click() {
-        let e = (0, h._)("click", f.x, f.y);
-        (0, h.K)(e, f.x, f.y)
+        let e = (0, h._)("click", A.x, A.y);
+        (0, h.K)(e, A.x, A.y)
     }
 }

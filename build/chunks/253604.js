@@ -27,11 +27,11 @@ function u(e) {
         pendingThemeColors: T,
         pendingPronouns: f,
         pendingBio: S,
-        tryItOutThemeColors: b,
-        tryItOutAvatar: E,
+        tryItOutThemeColors: E,
+        tryItOutAvatar: b,
         tryItOutBanner: C,
-        tryItOutAvatarDecoration: N,
-        tryItOutDisplayNameStyles: v
+        tryItOutAvatarDecoration: v,
+        tryItOutDisplayNameStyles: N
     } = (0, l.cf)([o.A], () => {
         let e = o.A.getPendingChanges(),
             t = o.A.getTryItOutChanges();
@@ -41,7 +41,7 @@ function u(e) {
         }
     }), I = (0, r.V7)({
         userId: t.id,
-        image: E ?? _
+        image: b ?? _
     });
     return (0, i.jsx)(d.A, {
         containerClassName: m,
@@ -49,12 +49,12 @@ function u(e) {
         pendingPronouns: f,
         pendingBio: S,
         pendingBanner: C ?? x ?? n(636763),
-        pendingDisplayNameStyles: v ?? p,
+        pendingDisplayNameStyles: N ?? p,
         pendingAvatar: I,
-        pendingThemeColors: b ?? T,
-        pendingAvatarDecoration: void 0 !== N ? N : A,
+        pendingThemeColors: E ?? T,
+        pendingAvatarDecoration: void 0 !== v ? v : A,
         pendingProfileEffect: h,
-        avatarClassName: null != E || null != _ || g.enabled ? void 0 : c.W,
+        avatarClassName: null != b || null != _ || g.enabled ? void 0 : c.W,
         canUsePremiumCustomization: !0,
         isTryItOut: !0,
         disabledInputs: u,

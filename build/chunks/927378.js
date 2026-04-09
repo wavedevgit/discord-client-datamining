@@ -31,17 +31,17 @@ function T() {
         [T, f] = s.useState(!1);
     if (null == e) return null;
     let S = (0, m.Oj)(t, e) || l,
-        b = null != t && a()().diff(a()(t.created_at), "days") < A.n83,
-        E = S && b,
+        E = null != t && a()().diff(a()(t.created_at), "days") < A.n83,
+        b = S && E,
         C = e.isStaff(),
-        N = !e.verified;
+        v = !e.verified;
     return (0, i.jsxs)(x.h, {
         children: [(0, i.jsx)(x._, {
             header: h.intl.string(h.t.XAHCgJ),
             description: h.intl.format(h.t.P3kNfr, {
                 helpdeskArticle: u.A.getArticleURL(A.MVz.GDPR_REQUEST_DATA)
             })
-        }), E ? (0, i.jsx)(o.ZpM, {
+        }), b ? (0, i.jsx)(o.ZpM, {
             className: p.N,
             children: (0, i.jsx)(o.Text, {
                 variant: "text-md/normal",
@@ -56,7 +56,7 @@ function T() {
                 children: h.intl.string(h.t.ZPQLH2)
             })
         }) : (0, i.jsxs)(i.Fragment, {
-            children: [N ? (0, i.jsx)(o.ZpM, {
+            children: [v ? (0, i.jsx)(o.ZpM, {
                 className: p.N,
                 children: (0, i.jsx)(o.Text, {
                     variant: "text-md/normal",

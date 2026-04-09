@@ -33,12 +33,12 @@ let C = e => {
         notPhoneVerified: T,
         newAccount: S,
         newMember: b
-    } = (0, r.bG)([_.A], () => _.A.getCheck(i), [i]), y = 0 === t ? f.intl.string(f.t["6zY8BI"]) : null, v = null, j = null;
-    return (0 === t && (C ? (v = f.intl.string(f.t.IRxUlG), j = f.intl.string(f.t.fiNVin)) : T ? (v = f.intl.string(f.t.vW8iUF), j = f.intl.string(f.t["50gfOv"])) : N ? (v = f.intl.string(f.t.vdSOpz), j = f.intl.string(f.t.lm1UKt)) : b ? (v = f.intl.formatToPlainString(f.t.v1ktYb, {
+    } = (0, r.bG)([_.A], () => _.A.getCheck(i), [i]), v = 0 === t ? f.intl.string(f.t["6zY8BI"]) : null, y = null, j = null;
+    return (0 === t && (C ? (y = f.intl.string(f.t.IRxUlG), j = f.intl.string(f.t.fiNVin)) : T ? (y = f.intl.string(f.t.vW8iUF), j = f.intl.string(f.t["50gfOv"])) : N ? (y = f.intl.string(f.t.vdSOpz), j = f.intl.string(f.t.lm1UKt)) : b ? (y = f.intl.formatToPlainString(f.t.v1ktYb, {
         min: g.$8o.MEMBER_AGE
-    }), j = f.intl.string(f.t.BddRzS)) : S && (v = f.intl.formatToPlainString(f.t.sncw41, {
+    }), j = f.intl.string(f.t.BddRzS)) : S && (y = f.intl.formatToPlainString(f.t.sncw41, {
         min: g.$8o.ACCOUNT_AGE
-    }), j = f.intl.string(f.t.BddRzS))), null == y || null == v) ? null : (0, l.jsxs)(d.lGe, {
+    }), j = f.intl.string(f.t.BddRzS))), null == v || null == y) ? null : (0, l.jsxs)(d.lGe, {
         className: a()(E.popover, x.kL),
         "aria-labelledby": I,
         children: [(0, l.jsx)("img", {
@@ -50,11 +50,11 @@ let C = e => {
             children: [(0, l.jsx)(d.Heading, {
                 variant: "heading-md/semibold",
                 id: I,
-                children: y
+                children: v
             }), (0, l.jsx)(d.Text, {
                 color: "text-default",
                 variant: "text-sm/normal",
-                children: v
+                children: y
             }), (0, l.jsxs)("div", {
                 className: x.UD,
                 children: [null != j ? (0, l.jsx)("div", {

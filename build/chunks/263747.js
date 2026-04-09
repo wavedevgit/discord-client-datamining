@@ -21,11 +21,11 @@ var i = n(627968),
     T = n(344904),
     f = n(664654),
     S = n(871582),
-    b = n(652215),
-    E = n(985018),
+    E = n(652215),
+    b = n(985018),
     C = n(739650),
-    N = n(615981);
-let v = e => {
+    v = n(615981);
+let N = e => {
         let {
             userRecord: t,
             placement: n
@@ -47,7 +47,7 @@ let v = e => {
             children: n
         });
         return (0, i.jsx)(o.m_, {
-            text: E.intl.string(E.t.UnKHdo),
+            text: b.intl.string(b.t.UnKHdo),
             shouldShow: !a,
             children: (0, i.jsx)("div", {
                 className: C.Lg,
@@ -78,19 +78,19 @@ let v = e => {
         } = e, n = t.length, s = n < 1 ? null : t[0], l = n < 2 ? null : t[1], a = n < 3 ? null : t[2];
         return (0, i.jsxs)("div", {
             className: C.ZM,
-            children: [(0, i.jsx)(v, {
+            children: [(0, i.jsx)(N, {
                 userRecord: s,
                 placement: 1
             }), (0, i.jsx)(I, {
                 numSentReferrals: n,
                 placement: 1
-            }), (0, i.jsx)(v, {
+            }), (0, i.jsx)(N, {
                 userRecord: l,
                 placement: 2
             }), (0, i.jsx)(I, {
                 numSentReferrals: n,
                 placement: 2
-            }), (0, i.jsx)(v, {
+            }), (0, i.jsx)(N, {
                 userRecord: a,
                 placement: 3
             })]
@@ -101,21 +101,21 @@ let v = e => {
             isInSettings: t = !1
         } = e, l = (0, r.bG)([p.A], () => p.A.getRecipientStatus()), {
             referralSentUsers: o
-        } = (0, f.J)(), g = s.useMemo(() => o.map(e => new _.A(e)), [o]), v = {
+        } = (0, f.J)(), g = s.useMemo(() => o.map(e => new _.A(e)), [o]), N = {
             redeemed: 0,
             converted: 0,
             sent: l.size
         };
         l.forEach(e => {
-            e === h.aK.REDEEMED && v.redeemed++, e === h.aK.CONVERTED && (v.redeemed++, v.converted++)
+            e === h.aK.REDEEMED && N.redeemed++, e === h.aK.CONVERTED && (N.redeemed++, N.converted++)
         });
-        let I = v.sent === f.Z,
-            y = A.A.getArticleURL(b.MVz.REFERRAL_PROGRAM),
+        let I = N.sent === f.Z,
+            y = A.A.getArticleURL(E.MVz.REFERRAL_PROGRAM),
             {
                 analyticsLocations: O
             } = (0, m.Ay)(u.A.PREMIUM_MARKETING_REFERALL_PROGRAM_PROGRESS_BAR),
             R = s.useRef(null),
-            L = v.sent / f.Z * 100,
+            L = N.sent / f.Z * 100,
             P = (0, i.jsxs)("div", {
                 className: C.hE,
                 children: [(0, i.jsx)(T.Ay, {
@@ -139,7 +139,7 @@ let v = e => {
                         variant: t ? "text-sm/normal" : "text-lg/medium",
                         children: (0, S.dB)({
                             helpdeskArticle: y,
-                            referralsStatuses: v
+                            referralsStatuses: N
                         })
                     }), (0, i.jsx)("div", {
                         className: a()(C.Fb, {
@@ -153,7 +153,7 @@ let v = e => {
                                 let {
                                     analyticsLocations: t
                                 } = e;
-                                x.default.track(b.HAw.REFERRAL_PROGRAM_SHARE_MODAL_CTA_CLICKED, {
+                                x.default.track(E.HAw.REFERRAL_PROGRAM_SHARE_MODAL_CTA_CLICKED, {
                                     location_stack: t
                                 }), (0, c.mMO)(async () => {
                                     let {
@@ -171,16 +171,16 @@ let v = e => {
                             children: (0, i.jsxs)("div", {
                                 className: C.Zn,
                                 children: [(0, i.jsx)("img", {
-                                    src: N,
+                                    src: v,
                                     alt: "",
                                     className: C.QH
-                                }), I ? E.intl.string(E.t.SY9tyI) : E.intl.string(E.t.Lm2nFc)]
+                                }), I ? b.intl.string(b.t.SY9tyI) : b.intl.string(b.t.Lm2nFc)]
                             })
                         })
                     })]
                 })]
             }),
-            D = v.redeemed === f.Z;
+            D = N.redeemed === f.Z;
         return (0, i.jsx)(m.f5, {
             value: O,
             children: (0, i.jsx)("div", {

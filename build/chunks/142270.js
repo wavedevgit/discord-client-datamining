@@ -35,9 +35,9 @@ let v = {
             className: j
         } = e, {
             balance: S
-        } = (0, m.W)(), T = (0, u.DK)(c.W.NITRO, "BalanceWidgetMenu"), [A, P] = n.useState(h.k.DEFAULT), [k, I] = n.useState(!1), [R, N] = n.useState(!1), M = n.useRef(null);
+        } = (0, m.W)(), T = (0, u.DK)(c.W.NITRO, "BalanceWidgetMenu"), [A, P] = n.useState(h.k.DEFAULT), [k, I] = n.useState(!1), [R, N] = n.useState(!1), D = n.useRef(null);
         (0, s.j)(!k);
-        let D = n.useCallback(() => {
+        let M = n.useCallback(() => {
                 let e = !k;
                 e && null != _ && (0, p.Y)({
                     pageType: _,
@@ -46,39 +46,39 @@ let v = {
                 }), P(e ? h.k.SELECTED : h.k.DEFAULT), I(e)
             }, [k, _]),
             O = n.useCallback(() => {
-                k && D()
-            }, [k, D]),
+                k && M()
+            }, [k, M]),
             L = (0, o.A)(null, O),
             B = n.useMemo(() => (0, a.jsx)(x.b, {
                 analyticsPage: _,
                 ctaText: l,
                 ctaOnClick: () => {
-                    D(), r()
+                    M(), r()
                 },
                 linkText: E
-            }), [_, l, E, D, r]),
+            }), [_, l, E, M, r]),
             w = n.useMemo(() => (0, a.jsx)(d.A, {
-                targetElementRef: M,
+                targetElementRef: D,
                 shouldShow: k,
-                onRequestClose: D,
+                onRequestClose: M,
                 ctaText: l,
                 ctaOnClick: () => {
-                    D(), r()
+                    M(), r()
                 }
-            }), [k, D, l, r]);
+            }), [k, M, l, r]);
         return (0, a.jsxs)("div", {
             className: i()(g.kL, j, {
                 [g.R]: R,
                 [g.RK]: !R
             }),
             children: [(0, a.jsx)(b.J, {
-                pillRef: M,
+                pillRef: D,
                 balance: S,
                 balanceWidgetMode: A,
                 onMouseDown: e => {
                     e.stopPropagation()
                 },
-                onClick: D,
+                onClick: M,
                 showNotificationBadge: t
             }), T ? w : k && (0, a.jsx)("div", {
                 className: i()(g.Ui, C, {

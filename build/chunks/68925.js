@@ -1,6 +1,6 @@
 /** chunk id: 68925 params = (module,exports,require) **/
 n.d(t, {
-    A: () => N
+    A: () => v
 }), n(321073);
 var i = n(627968),
     s = n(64700),
@@ -21,16 +21,16 @@ var i = n(627968),
     T = n(788868),
     f = n(985018),
     S = n(279480),
-    b = n(410229);
+    E = n(410229);
 
-function E(e) {
+function b(e) {
     let {
         slot: t,
         guildTier: n,
         premiumSubscription: l,
         hasCancelableSlots: r,
         isLast: c
-    } = e, m = s.useRef(null), g = (0, _.I5)(t), x = s.useMemo(() => null != t.cooldownEndsAt ? new Date(t.cooldownEndsAt) : null, [t.cooldownEndsAt]), h = null != x && x > new Date, E = (0, d.A)(), C = s.useMemo(() => (function(e, t) {
+    } = e, m = s.useRef(null), g = (0, _.I5)(t), x = s.useMemo(() => null != t.cooldownEndsAt ? new Date(t.cooldownEndsAt) : null, [t.cooldownEndsAt]), h = null != x && x > new Date, b = (0, d.A)(), C = s.useMemo(() => (function(e, t) {
         if (null == e || e === p.TVA.NONE) return "";
         let n = [f.intl.formatToPlainString(f.t["dLlKX/"], {
             numEmojiSlots: T.TG[e].limits.emoji
@@ -55,13 +55,13 @@ function E(e) {
         return f.intl.formatToPlainString(f.t["/dOAmQ"], {
             perk: s
         })
-    })(n, t.id), [n, t.id]), N = s.useMemo(() => {
+    })(n, t.id), [n, t.id]), v = s.useMemo(() => {
         if ("" !== C) return C;
         let e = null != t.premiumGuildSubscription ? A.default.extractTimestamp(t.premiumGuildSubscription.id) : 0;
         return f.intl.formatToPlainString(f.t.lY2Bur, {
             date: new Date(e)
         })
-    }, [C, t.premiumGuildSubscription]), v = s.useMemo(() => g ? l.isPausedForFractionalPremium ? E.endsAt.toDate() : l.currentPeriodEnd : null, [g, l, E]);
+    }, [C, t.premiumGuildSubscription]), N = s.useMemo(() => g ? l.isPausedForFractionalPremium ? b.endsAt.toDate() : l.currentPeriodEnd : null, [g, l, b]);
     return (0, i.jsxs)("div", {
         className: a()(S.iq, {
             [S.Mt]: c
@@ -71,18 +71,18 @@ function E(e) {
             children: [(0, i.jsx)("img", {
                 alt: "",
                 className: S.bB,
-                src: b.A
-            }), g && null != v ? (0, i.jsx)(o.Text, {
+                src: E.A
+            }), g && null != N ? (0, i.jsx)(o.Text, {
                 variant: "text-sm/medium",
                 color: "text-subtle",
                 children: f.intl.format(f.t.Z4ULRD, {
-                    date: v
+                    date: N
                 })
             }) : (0, i.jsxs)(i.Fragment, {
                 children: [(0, i.jsx)(o.Text, {
                     variant: "text-sm/medium",
                     color: "text-subtle",
-                    children: N
+                    children: v
                 }), h && null != x && (0, i.jsxs)(i.Fragment, {
                     children: [(0, i.jsx)("div", {
                         className: S.zk
@@ -116,7 +116,7 @@ function E(e) {
                     guildBoostSlot: t,
                     premiumSubscription: l,
                     hasCancelableGuildBoostSlot: r,
-                    fractionalState: E.fractionalState
+                    fractionalState: b.fractionalState
                 })
             },
             position: "right",
@@ -171,7 +171,7 @@ function C(e) {
                     children: f.intl.string(f.t["6Kwwuo"])
                 })
             })
-        }), n.map((e, t) => (0, i.jsx)(E, {
+        }), n.map((e, t) => (0, i.jsx)(b, {
             slot: e,
             guildTier: a?.premiumTier,
             premiumSubscription: s,
@@ -181,7 +181,7 @@ function C(e) {
     })
 }
 
-function N(e) {
+function v(e) {
     let {
         guildBoostSlots: t,
         premiumSubscription: n,

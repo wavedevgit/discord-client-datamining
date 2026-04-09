@@ -92,9 +92,9 @@ function g(e) {
         },
         "aria-setsize": N,
         "aria-posinset": T
-    } = e, [S, b] = l.useState(!1), y = l.useCallback(() => {
+    } = e, [S, b] = l.useState(!1), v = l.useCallback(() => {
         s || b(!0), x?.(!0)
-    }, [s, x]), v = l.useCallback(() => {
+    }, [s, x]), y = l.useCallback(() => {
         s || b(!1), x?.(!1)
     }, [s, x]), j = n || null == a ? null : (0, u.oi)(a), R = !n && r > 0 ? (0, u.wN)(r, d ? o.LU0.colors.BACKGROUND_MOD_STRONG.css : o.LU0.colors.BACKGROUND_FEEDBACK_NOTIFICATION.css) : null;
     return (0, i.jsx)(o.vN3, {
@@ -102,8 +102,8 @@ function g(e) {
             className: A.H3,
             onClick: p,
             onContextMenu: f,
-            onMouseEnter: y,
-            onMouseLeave: v,
+            onMouseEnter: v,
+            onMouseLeave: y,
             onKeyDown: E,
             onFocus: I,
             focusProps: {

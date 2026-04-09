@@ -1,46 +1,46 @@
 /** chunk id: 994763 params = (module,exports,require) **/
 n.d(t, {
-    z: () => a
+    z: () => s
 });
 var i = n(64700),
-    s = n(311907),
-    l = n(775602);
+    r = n(311907),
+    a = n(775602);
 
-function a(e, t, n, a) {
+function s(e, t, n, s) {
     ! function(e, t, n) {
-        let a = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : "start",
-            r = arguments.length > 4 ? arguments[4] : void 0,
-            o = (0, s.bG)([l.A], () => l.A.useReducedMotion),
-            d = i.useRef(!1);
+        let s = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : "start",
+            l = arguments.length > 4 ? arguments[4] : void 0,
+            c = (0, r.bG)([a.A], () => a.A.useReducedMotion),
+            o = i.useRef(!1);
         i.useEffect(() => {
-            if (!t || d.current) return;
+            if (!t || o.current) return;
             let n = {
-                    behavior: o ? "auto" : "smooth",
-                    block: a,
-                    inline: r
+                    behavior: c ? "auto" : "smooth",
+                    block: s,
+                    inline: l
                 },
                 i = e();
             if (null != i && i.offsetHeight > 0) {
-                d.current = !0, i.scrollIntoView(n);
+                o.current = !0, i.scrollIntoView(n);
                 return
             }
-            let s = !1,
-                l = null,
-                c = new ResizeObserver(e => {
+            let r = !1,
+                a = null,
+                d = new ResizeObserver(e => {
                     let t = e[0];
-                    null == t || !(t.contentRect.height > 0) || d.current || s || (d.current = !0, c.disconnect(), t.target.scrollIntoView(n))
+                    null == t || !(t.contentRect.height > 0) || o.current || r || (o.current = !0, d.disconnect(), t.target.scrollIntoView(n))
                 }),
                 u = performance.now(),
-                m = () => {
-                    if (s || performance.now() - u > 5e3) return;
+                _ = () => {
+                    if (r || performance.now() - u > 5e3) return;
                     let t = e();
-                    null != t ? t.offsetHeight > 0 ? (d.current = !0, t.scrollIntoView(n)) : c.observe(t) : l = requestAnimationFrame(m)
+                    null != t ? t.offsetHeight > 0 ? (o.current = !0, t.scrollIntoView(n)) : d.observe(t) : a = requestAnimationFrame(_)
                 };
-            return m(), () => {
-                s = !0, null != l && cancelAnimationFrame(l), c.disconnect()
+            return _(), () => {
+                r = !0, null != a && cancelAnimationFrame(a), d.disconnect()
             }
-        }, [t, o, a, r, ...n]), i.useEffect(() => {
-            t || (d.current = !1)
+        }, [t, c, s, l, ...n]), i.useEffect(() => {
+            t || (o.current = !1)
         }, [t])
-    }(() => document.getElementById(e), t, [e], n, a)
+    }(() => document.getElementById(e), t, [e], n, s)
 }

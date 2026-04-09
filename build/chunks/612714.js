@@ -37,12 +37,12 @@ function x(e) {
         S = s.useCallback(() => {
             f()
         }, [f]),
-        b = s.useCallback(() => {
+        E = s.useCallback(() => {
             null == x.phone ? f({
                 onAddedPhone: a.A.enableSMS
             }) : a.A.enableSMS()
         }, [x, f]),
-        E = s.useCallback(() => {
+        b = s.useCallback(() => {
             (0, l.qfG)(e => (0, i.jsx)(o.default, {
                 ...e,
                 handleSubmit: a.A.disableSMS,
@@ -51,9 +51,9 @@ function x(e) {
             }))
         }, []),
         C = s.useCallback(e => null == e ? "" : `${"*".repeat(e.length-4)}${e.slice(-4)}`, []),
-        N = null != x.phone,
-        v = x.hasFlag(u.nhx.MFA_SMS);
-    if (N || v) {
+        v = null != x.phone,
+        N = x.hasFlag(u.nhx.MFA_SMS);
+    if (v || N) {
         let e = h ? x.phone : C(x.phone);
         n = (0, i.jsxs)(l.Text, {
             variant: "text-sm/normal",
@@ -66,12 +66,12 @@ function x(e) {
             })]
         })
     }
-    if (v) t = (0, i.jsx)(l.Button, {
+    if (N) t = (0, i.jsx)(l.Button, {
         variant: "critical-secondary",
         size: "sm",
         text: g.intl.string(g.t.KLWnit),
         loading: A,
-        onClick: E
+        onClick: b
     });
     else {
         let e = (0, c.BE)(x);
@@ -81,10 +81,10 @@ function x(e) {
                 variant: "primary",
                 size: "sm",
                 text: e ?? g.intl.string(g.t.DZQe23),
-                onClick: b,
+                onClick: E,
                 loading: A,
                 disabled: null != e
-            }), N ? (0, i.jsx)(l.Button, {
+            }), v ? (0, i.jsx)(l.Button, {
                 variant: "secondary",
                 size: "sm",
                 text: g.intl.string(g.t.Ulqq6K),

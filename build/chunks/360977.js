@@ -22,7 +22,7 @@ function c(e, t) {
         label: d.intl.string(d.t["2km5Gf"]),
         leadingAccessory: {
             type: "icon",
-            icon: a.IdC
+            icon: a.LV2
         }
     }) : (0, i.jsx)(a.Drp, {
         id: "guild-official-set",
@@ -32,7 +32,7 @@ function c(e, t) {
         label: d.intl.string(d.t["lE/PG3"]),
         leadingAccessory: {
             type: "icon",
-            icon: a.oyn
+            icon: a.LV2
         }
     }) : null
 }

@@ -14,10 +14,10 @@ var i = n(627968),
     u = n(178418),
     h = n(87664),
     p = n(290863),
-    f = n(939496),
-    A = n(652215),
-    _ = n(996988),
-    g = n(816223);
+    A = n(939496),
+    f = n(652215),
+    g = n(996988),
+    _ = n(816223);
 let m = a._3J.SIZE_40,
     x = (0, a.FT9)(m);
 
@@ -31,20 +31,20 @@ function E(e) {
     } = e, {
         theme: C,
         themeType: I
-    } = (0, f.E)(), N = s.useMemo(() => t.isNonUserBot() || (0, u.c)(t, v), [t, v]), {
+    } = (0, A.E)(), N = s.useMemo(() => t.isNonUserBot() || (0, u.c)(t, v), [t, v]), {
         activities: T,
-        isMobileOnline: b
+        isMobileOnline: O
     } = (0, l.cf)([p.A], () => ({
         activities: p.A.getActivities(t.id),
         isMobileOnline: p.A.isMobileOnline(t.id)
-    })), O = (0, h.A)(t.id), {
+    })), b = (0, h.A)(t.id), {
         voiceChannel: j
     } = (0, d.A)({
         userId: t.id,
         guildId: y
     });
     return (0, i.jsxs)(a.DUT, {
-        focusProps: I === _.d.MODAL_V2 ? {
+        focusProps: I === g.d.MODAL_V2 ? {
             offset: {
                 top: 4,
                 right: 4,
@@ -55,7 +55,7 @@ function E(e) {
                 right: 8
             }
         },
-        className: g.nM,
+        className: _.nM,
         onClick: S,
         onContextMenu: e => {
             (0, r.L3)(e, async () => {
@@ -72,20 +72,20 @@ function E(e) {
             src: t.getAvatarURL(y, x),
             "aria-label": t.username,
             size: m,
-            status: N ? A.clD.UNKNOWN : E,
+            status: N ? f.clD.UNKNOWN : E,
             statusBackdropColor: N ? void 0 : (0, a.C$5)(C),
-            isMobile: b,
-            className: g.my
+            isMobile: O,
+            className: _.my
         }), (0, i.jsxs)("div", {
-            className: g.zH,
+            className: _.zH,
             children: [(0, i.jsx)(o.A, {
                 user: t,
-                className: g.Tc,
-                discriminatorClass: g.D2
+                className: _.Tc,
+                discriminatorClass: _.D2
             }), (0, i.jsx)(c.A, {
                 user: t,
                 activities: T,
-                applicationStream: O,
+                applicationStream: b,
                 voiceChannel: j
             })]
         })]

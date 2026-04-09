@@ -1,120 +1,120 @@
 /** chunk id: 55622 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    default: () => N
+    default: () => b
 });
 var r = n(627968),
-    l = n(64700),
-    i = n(110259),
-    a = n(397927),
-    s = n(252452),
+    i = n(64700),
+    a = n(110259),
+    s = n(397927),
+    l = n(252452),
     o = n(139286),
     u = n(507553),
     c = n(324593),
     d = n(883662),
     h = n(961350),
     m = n(287809),
-    f = n(152056),
-    p = n(780964),
-    v = n(921854),
-    y = n(7564),
-    g = n(175665),
-    _ = n(178241),
+    p = n(152056),
+    f = n(780964),
+    _ = n(921854),
+    g = n(7564),
+    y = n(175665),
+    v = n(178241),
     x = n(779733),
-    E = n(985018),
-    A = n(167067);
-let S = new Set([p.X.PROFILE_PANEL, p.X.SUBSCRIPTIONS_PANEL, p.X.FAMILY_CENTER_PANEL, p.X.POGGERMODE_PANEL]),
-    b = new Map([
-        [p.X.CONNECTIONS_PANEL, i.ImpressionNames.USER_SETTINGS_CONNECTIONS],
-        [p.X.SESSIONS_PANEL, i.ImpressionNames.USER_SETTINGS_SESSIONS]
+    S = n(985018),
+    E = n(167067);
+let A = new Set([f.X.PROFILE_PANEL, f.X.SUBSCRIPTIONS_PANEL, f.X.FAMILY_CENTER_PANEL, f.X.POGGERMODE_PANEL]),
+    N = new Map([
+        [f.X.CONNECTIONS_PANEL, a.ImpressionNames.USER_SETTINGS_CONNECTIONS],
+        [f.X.SESSIONS_PANEL, a.ImpressionNames.USER_SETTINGS_SESSIONS]
     ]);
 
-function N(e) {
+function b(e) {
     let {
         target: t,
         ...n
-    } = e, a = f.A.useField("query"), E = l.useCallback(() => {
-        f.A.setState({
+    } = e, s = p.A.useField("query"), S = i.useCallback(() => {
+        p.A.setState({
             query: ""
         }), c.A.terminate()
-    }, []), [A, N] = l.useState(!1);
-    return (l.useLayoutEffect(() => {
+    }, []), [E, b] = i.useState(!1);
+    return (i.useLayoutEffect(() => {
         let e = () => {
-            null == m.default.getCurrentUser() && (N(!0), (0, x.default)())
+            null == m.default.getCurrentUser() && (b(!0), (0, x.default)())
         };
         return h.default.addChangeListener(e), () => {
-            h.default.removeChangeListener(e), g.A.resetState(), u.A.resetState(), s.A.close()
+            h.default.removeChangeListener(e), y.A.resetState(), u.A.resetState(), l.A.close()
         }
-    }, []), A) ? null : (0, r.jsx)(d.A, {
-        partialRoot: v.D,
+    }, []), E) ? null : (0, r.jsx)(d.A, {
+        partialRoot: _.D,
         searchBar: j,
         emptyState: C,
-        sidebarFooter: y.A,
+        sidebarFooter: g.A,
         onViewChange: e => {
-            S.has(e) || (0, _._)(e);
-            let t = b.get(e);
+            A.has(e) || (0, v._)(e);
+            let t = N.get(e);
             null != t && (0, o.x)({
-                type: i.ImpressionTypes.PANE,
+                type: a.ImpressionTypes.PANE,
                 name: t,
                 properties: {
-                    source: g.A.getField("source")
+                    source: y.A.getField("source")
                 }
-            }), g.A.setState({
+            }), y.A.setState({
                 source: void 0
             })
         },
         target: t,
-        defaultTarget: p.X.ACCOUNT_PANEL,
-        searchQuery: a,
-        clearSearchQuery: E,
+        defaultTarget: f.X.ACCOUNT_PANEL,
+        searchQuery: s,
+        clearSearchQuery: S,
         ...n
     })
 }
 
 function j() {
-    let e = f.A.useField("query"),
-        t = l.useCallback(e => {
-            f.A.setState({
+    let e = p.A.useField("query"),
+        t = i.useCallback(e => {
+            p.A.setState({
                 query: e
             }), c.A.maybeTrackQueryEntered()
         }, []),
-        n = l.useCallback(() => {
+        n = i.useCallback(() => {
             c.A.isSessionActive() || c.A.initialize()
         }, []),
-        i = l.useCallback(() => {
-            0 === f.A.getField("query").trim().length && c.A.terminate()
+        a = i.useCallback(() => {
+            0 === p.A.getField("query").trim().length && c.A.terminate()
         }, []),
-        s = l.useCallback(() => {
-            f.A.setState({
+        l = i.useCallback(() => {
+            p.A.setState({
                 query: ""
             }), c.A.terminate()
         }, []);
-    return l.useEffect(() => () => {
-        f.A.resetState(), c.A.terminate()
+    return i.useEffect(() => () => {
+        p.A.resetState(), c.A.terminate()
     }, []), (0, r.jsx)("div", {
-        className: A.P,
-        children: (0, r.jsx)(a.IWV, {
+        className: E.P,
+        children: (0, r.jsx)(s.IWV, {
             size: "md",
             query: e,
             onFocus: n,
-            onBlur: i,
+            onBlur: a,
             onChange: t,
-            onClear: s
+            onClear: l
         })
     })
 }
 
 function C() {
     return (0, r.jsxs)("div", {
-        className: A.t,
-        children: [(0, r.jsx)(a.Text, {
+        className: E.t,
+        children: [(0, r.jsx)(s.Text, {
             variant: "text-sm/semibold",
             color: "text-strong",
-            children: E.intl.string(E.t.zihbmv)
-        }), (0, r.jsx)(a.Text, {
+            children: S.intl.string(S.t.zihbmv)
+        }), (0, r.jsx)(s.Text, {
             variant: "text-sm/normal",
             color: "text-subtle",
-            children: E.intl.string(E.t.XclvsB)
+            children: S.intl.string(S.t.XclvsB)
         })]
     })
 }

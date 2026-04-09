@@ -21,11 +21,11 @@ var i = n(627968),
     T = n(954571),
     f = n(927578),
     S = n(40185),
-    b = n(994763),
-    E = n(130946),
+    E = n(994763),
+    b = n(130946),
     C = n(501007),
-    N = n(817267),
-    v = n(736455),
+    v = n(817267),
+    N = n(736455),
     I = n(400292),
     j = n(536195),
     y = n(388116),
@@ -36,8 +36,8 @@ var i = n(627968),
     D = n(768229),
     G = n(788868),
     M = n(652215),
-    U = n(818348),
-    k = n(352989);
+    k = n(818348),
+    U = n(352989);
 let w = () => {
     let e = (0, r.zy)();
     (0, x.P)(_.b);
@@ -64,8 +64,8 @@ let w = () => {
     }, []);
     let en = (0, h.DK)(A.W.NITRO, "PremiumMarketingHome"),
         ei = s.useMemo(() => !!en && "orbs" === new URLSearchParams(e.search).get("section"), [e.search, en]);
-    (0, b.z)(L.NI.ORB_REWARDS, ei);
-    let es = [v.k.HOME, v.k.WHATS_NEW, v.k.BEST_OF_NITRO, v.k.PLANS, v.k.COMPARE],
+    (0, E.z)(L.NI.ORB_REWARDS, ei);
+    let es = [N.k.HOME, N.k.WHATS_NEW, N.k.BEST_OF_NITRO, N.k.PLANS, N.k.COMPARE],
         {
             navBarSections: el,
             activeSectionId: ea
@@ -78,19 +78,19 @@ let w = () => {
             compare: eu
         } = el,
         em = (0, i.jsxs)("div", {
-            className: a()(k.kL, k.Gd, k.iI, {
-                [k.Hq]: !B
+            className: a()(U.kL, U.Gd, U.iI, {
+                [U.Hq]: !B
             }),
             "data-cy": "tier-0-marketing-page",
-            children: [(0, i.jsx)(N.A, {
-                className: k.yH
+            children: [(0, i.jsx)(v.A, {
+                className: U.yH
             }), (0, i.jsx)(O.A, {
                 navBarSections: el,
                 activeSectionId: ea
             }), (0, i.jsxs)("div", {
-                className: k.Qr,
+                className: U.Qr,
                 children: [(0, i.jsx)("div", {
-                    className: k.qY,
+                    className: U.qY,
                     ref: er.ref,
                     children: (0, i.jsx)(d.L, {
                         innerRef: l,
@@ -104,26 +104,26 @@ let w = () => {
                         })
                     })
                 }), ee && (0, i.jsx)("div", {
-                    className: k.Hz,
-                    children: (0, i.jsx)(E.A, {
-                        variant: E.c.APPLICATION_NITRO_HOME
+                    className: U.Hz,
+                    children: (0, i.jsx)(b.A, {
+                        variant: b.c.APPLICATION_NITRO_HOME
                     })
                 }), (0, i.jsx)("div", {
-                    className: k.So,
+                    className: U.So,
                     ref: eo.ref,
                     children: (0, i.jsx)(R.Ct, {
                         shouldLoadVideo: W,
                         isReducedMotion: B
                     })
                 }), (0, i.jsx)("div", {
-                    className: k.KQ,
+                    className: U.KQ,
                     ref: ed.ref,
                     children: (0, i.jsx)(R.oO, {
                         shouldLoadVideo: W,
                         isReducedMotion: B
                     })
                 }), (0, i.jsx)("div", {
-                    className: k.s5,
+                    className: U.s5,
                     ref: ec.ref,
                     children: (0, i.jsx)(d.L, {
                         innerRef: n,
@@ -135,7 +135,7 @@ let w = () => {
                         })
                     })
                 }), (0, i.jsx)("div", {
-                    className: k.aC,
+                    className: U.aC,
                     ref: eu.ref,
                     children: (0, i.jsx)(j.A, {})
                 })]
@@ -148,7 +148,7 @@ let w = () => {
                 },
                 children: (0, i.jsx)("div", {
                     ref: w,
-                    className: k._Z
+                    className: U._Z
                 })
             }), (0, i.jsx)(y.A, {
                 ref: V
@@ -156,14 +156,14 @@ let w = () => {
                 isVisible: !F && !z && W,
                 subscriptionTier: $,
                 isEligibleForBogoPromotion: ee
-            }), (0, i.jsx)(N.A, {
-                className: k.MF
+            }), (0, i.jsx)(v.A, {
+                className: U.MF
             })]
         });
     return (0, i.jsx)(c.NPJ, {
-        theme: U.NJ.DARKER,
+        theme: k.NJ.DARKER,
         children: e => (0, i.jsx)(c.GtU, {
-            className: a()(k.XG, e),
+            className: a()(U.XG, e),
             ref: t,
             children: em
         })

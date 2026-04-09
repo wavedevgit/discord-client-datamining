@@ -4,8 +4,8 @@ t.d(n, {
 });
 var i = t(627968),
     a = t(64700),
-    r = t(311907),
-    l = t(397927),
+    l = t(311907),
+    r = t(397927),
     o = t(351906),
     s = t(183555),
     d = t(382120),
@@ -24,19 +24,19 @@ function x(e) {
         section: n,
         user: t,
         currentUser: a,
-        displayProfile: r,
-        guildId: l,
+        displayProfile: l,
+        guildId: r,
         channelId: o,
         onClose: s
     } = e;
     return n === g.RP.ACTIVITY ? (0, i.jsx)(_.A, {
         user: t,
         currentUser: a,
-        guildId: l,
+        guildId: r,
         onClose: s
     }) : n === g.RP.MUTUAL_FRIENDS ? (0, i.jsx)(p.A, {
         user: t,
-        guildId: l,
+        guildId: r,
         channelId: o,
         onClose: s
     }) : n === g.RP.MUTUAL_GUILDS ? (0, i.jsx)(A.A, {
@@ -46,12 +46,12 @@ function x(e) {
         user: t
     }) : n === g.RP.BOT_INFO ? (0, i.jsx)(c.A, {
         user: t,
-        displayProfile: r,
-        guildId: l,
+        displayProfile: l,
+        guildId: r,
         onClose: s
     }) : (0, i.jsx)(u.A, {
         user: t,
-        displayProfile: r,
+        displayProfile: l,
         onClose: s
     })
 }
@@ -67,7 +67,7 @@ function I(e) {
         onClose: p
     } = e, {
         trackUserProfileAction: A
-    } = (0, s.NJ)(), I = (0, r.bG)([o.A], () => o.A.hidePersonalInformation), [b, v] = a.useState(() => _.find(e => {
+    } = (0, s.NJ)(), I = (0, l.bG)([o.A], () => o.A.hidePersonalInformation), [b, v] = a.useState(() => _.find(e => {
         let {
             section: n
         } = e;
@@ -95,7 +95,7 @@ function I(e) {
         })
     }) : (0, i.jsxs)("div", {
         className: h.kL,
-        children: [(0, i.jsx)(l.VQ0, {
+        children: [(0, i.jsx)(r.VQ0, {
             className: h.$H,
             type: "top",
             selectedItem: b,
@@ -105,11 +105,11 @@ function I(e) {
                     section: n,
                     text: t
                 } = e;
-                return (0, i.jsx)(l.VQ0.Item, {
+                return (0, i.jsx)(r.VQ0.Item, {
                     className: h.YU,
                     id: n,
                     "aria-label": t,
-                    children: (0, i.jsx)(l.Text, {
+                    children: (0, i.jsx)(r.Text, {
                         variant: "text-sm/normal",
                         children: t
                     })

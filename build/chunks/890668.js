@@ -22,11 +22,11 @@ var s = n(284009),
     T = n(164599),
     f = n(63675),
     S = n(617514),
-    b = n(546849),
-    E = n(101058),
+    E = n(546849),
+    b = n(101058),
     C = n(84540),
-    N = n(836602),
-    v = n(622543),
+    v = n(836602),
+    N = n(622543),
     I = n(950191),
     j = n(287809),
     y = n(927578),
@@ -38,7 +38,7 @@ function L() {
             let e = j.default.getCurrentUser();
             return l()(null != e, "DefaultCustomizationSections: user cannot be undefined"), e
         }),
-        t = (0, a.bG)([v.A], () => v.A.getUserProfile(e.id)),
+        t = (0, a.bG)([N.A], () => N.A.getUserProfile(e.id)),
         {
             pendingAvatar: n,
             pendingGlobalName: s,
@@ -47,18 +47,18 @@ function L() {
             pendingPronouns: D,
             pendingAccentColor: G,
             pendingThemeColors: M,
-            pendingLegacyUsernameDisabled: U,
-            pendingPrimaryGuildId: k,
+            pendingLegacyUsernameDisabled: k,
+            pendingPrimaryGuildId: U,
             errors: w
-        } = (0, a.cf)([N.A], () => {
-            let e = N.A.getPendingChanges(),
-                t = N.A.getErrors();
+        } = (0, a.cf)([v.A], () => {
+            let e = v.A.getPendingChanges(),
+                t = v.A.getErrors();
             return {
                 ...e,
                 errors: t
             }
         }),
-        V = (0, E.V7)({
+        V = (0, b.V7)({
             userId: e.id,
             image: n
         }),
@@ -82,7 +82,7 @@ function L() {
                 globalName: e
             }),
             user: e
-        }), (0, i.jsx)(b.A, {
+        }), (0, i.jsx)(E.A, {
             sectionTitle: O.intl.string(O.t["+T3RI/"]),
             errors: w.pronouns,
             onPronounsChange: e => (0, C.p)({
@@ -142,13 +142,13 @@ function L() {
             currentBio: t?.bio ?? ""
         }, "bio"), Z.length > 0 && (0, i.jsx)(o.A, {
             availablePrimaryGuilds: Z,
-            pendingPrimaryGuildId: k,
+            pendingPrimaryGuildId: U,
             onChange: e => (0, C.p)({
                 primaryGuildId: e
             })
         }), null != X && (0, i.jsx)(x.A, {
             legacyUsername: X,
-            pendingLegacyUsernameDisabled: U
+            pendingLegacyUsernameDisabled: k
         }, "legacy_username")]
     })
 }

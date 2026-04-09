@@ -1,7 +1,7 @@
 /** chunk id: 4630 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    j: () => S
+    j: () => f
 });
 var a = n(627968);
 n(64700);
@@ -17,12 +17,12 @@ var i = n(284009),
     m = n(143582),
     b = n(490744),
     g = n(67480),
-    p = n(342098),
-    E = n(216678),
+    E = n(342098),
+    p = n(216678),
     A = n(652215);
-async function S(e) {
-    var t, n, i, S, f;
-    let I, h, {
+async function f(e) {
+    var t, n, i, f, S;
+    let h, I, {
             applicationId: C,
             skuId: T,
             initialPlanId: N,
@@ -35,11 +35,11 @@ async function S(e) {
         r()(null != e, "Could not find store listing for sku"), e.sku.type === A.Puh.SUBSCRIPTION_GROUP && await (0, m.vz)(C, e.id)
     }
     D = D ?? g.A.get(T), r()(null != D && D.applicationId === C, "SKU must belong to application"), D.type !== A.Puh.SUBSCRIPTION || (0, _.B)([D.id]) || await (0, c.ur)(D.id);
-    let M = null == (h = null != (I = (0, s.LU)({
+    let M = null == (I = null != (h = (0, s.LU)({
         applicationId: C
-    })) ? d.A.getWindow(I) : void 0) || h.closed ? o.SYi : o.KX8;
+    })) ? d.A.getWindow(h) : void 0) || I.closed ? o.SYi : o.KX8;
     if (D.type !== A.Puh.SUBSCRIPTION) return new Promise((e, t) => {
-        (0, E.A)({
+        (0, p.A)({
             applicationId: C,
             skuId: T,
             analyticsLocationObject: R,
@@ -54,12 +54,12 @@ async function S(e) {
             checkoutFlow: u.CL.PREMIUM_APPS_OTP_CHECKOUT
         })
     });
-    await (t = C, n = T, i = N, S = R, f = O, (0, p.l)({
+    await (t = C, n = T, i = N, f = R, S = O, (0, E.l)({
         applicationId: t,
         skuId: n,
         initialPlanId: i,
-        analyticsLocationObject: S,
-        analyticsLocations: f,
+        analyticsLocationObject: f,
+        analyticsLocations: S,
         renderHeader: (e, t, n) => (0, a.jsx)(b.fs, {
             step: n,
             onClose: () => t(!1)

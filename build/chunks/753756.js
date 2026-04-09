@@ -1,23 +1,23 @@
 /** chunk id: 753756 params = (module,exports,require) **/
 n.d(t, {
-    N: () => l
+    N: () => i
 });
 var a = n(627968),
-    i = n(397927);
+    l = n(397927);
 
-function l(e) {
+function i(e) {
     let {
         game: t,
-        websiteButtons: l,
+        websiteButtons: i,
         trackAction: r
     } = e;
-    (0, i.mMO)(async () => {
+    (0, l.mMO)(async () => {
         let {
             default: e
         } = await n.e("76758").then(n.bind(n, 459477));
         return n => (0, a.jsx)(e, {
             game: t,
-            websiteButtons: l,
+            websiteButtons: i,
             trackAction: r,
             ...n
         })

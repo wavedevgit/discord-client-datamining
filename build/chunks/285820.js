@@ -4,8 +4,8 @@ n.d(t, {
     D: () => m
 });
 var a = n(627968),
-    i = n(64700),
-    l = n(476464),
+    l = n(64700),
+    i = n(476464),
     r = n(357599),
     s = n(37948),
     o = n(306897),
@@ -14,7 +14,7 @@ var a = n(627968),
     u = n(985018);
 
 function m(e) {
-    let t = (0, l.y)("GameProfileStoreLinks"),
+    let t = (0, i.y)("GameProfileStoreLinks"),
         n = (0, r._)(e);
     return {
         storeWebsites: n,
@@ -25,19 +25,19 @@ let x = function(e) {
     let {
         game: t,
         trackAction: n
-    } = e, l = (0, s.A)(), {
+    } = e, i = (0, s.A)(), {
         showsStoreLinks: r,
         storeWebsites: x
-    } = m(t), g = i.useMemo(() => x.map(o.A).filter(e => null != e), [x]);
+    } = m(t), h = l.useMemo(() => x.map(o.A).filter(e => null != e), [x]);
     if (!r) return null;
-    if (1 === g.length) {
-        let [e] = g;
+    if (1 === h.length) {
+        let [e] = h;
         return (0, a.jsx)(d.u, {
             icon: e.icon,
             text: e.text,
             "aria-label": e.ariaLabel,
             onClick: () => {
-                n(e.action), l(e.url)
+                n(e.action), i(e.url)
             }
         })
     }
@@ -46,7 +46,7 @@ let x = function(e) {
         "aria-label": u.intl.string(u.t.nK60cc),
         onClick: () => (0, c.N)({
             game: t,
-            websiteButtons: g,
+            websiteButtons: h,
             trackAction: n
         })
     })

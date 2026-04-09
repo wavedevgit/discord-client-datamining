@@ -1,23 +1,23 @@
 /** chunk id: 253558 params = (module,exports,require) **/
 n.d(t, {
-    A: () => o
+    A: () => c
 });
 var i = n(627968),
-    s = n(503698),
-    l = n.n(s),
-    a = n(397927),
-    r = n(785031);
-let o = e => {
+    r = n(503698),
+    a = n.n(r),
+    s = n(397927),
+    l = n(785031);
+let c = e => {
     let {
         className: t,
         color: n = "text-strong",
-        responsive: s = !0,
-        children: o
+        responsive: r = !0,
+        children: c
     } = e;
-    return (0, i.jsx)(a.Heading, {
-        className: l()(r.w, t, s && r.n),
+    return (0, i.jsx)(s.Heading, {
+        className: a()(l.w, t, r && l.n),
         variant: "display-md",
         color: n,
-        children: o
+        children: c
     })
 }

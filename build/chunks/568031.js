@@ -1,50 +1,50 @@
 /** chunk id: 568031 params = (module,exports,require) **/
 n.d(t, {
-    A: () => m
+    A: () => _
 });
 var i = n(627968);
 n(64700);
-var s = n(503698),
-    l = n.n(s),
-    a = n(397927),
-    r = n(688810),
-    o = n(65470),
-    d = n(985018),
-    c = n(810901),
+var r = n(503698),
+    a = n.n(r),
+    s = n(397927),
+    l = n(688810),
+    c = n(65470),
+    o = n(985018),
+    d = n(810901),
     u = n(182645);
-let m = e => {
+let _ = e => {
     let {
         className: t,
         location: n,
-        analyticsLocation: s
+        analyticsLocation: r
     } = e, {
-        analyticsLocations: m
-    } = (0, r.Ay)(n);
-    return (0, i.jsx)(r.f5, {
-        value: m,
-        children: (0, i.jsxs)(a.hLv, {
-            className: l()(c.kL, c.pm, t),
+        analyticsLocations: _
+    } = (0, l.Ay)(n);
+    return (0, i.jsx)(l.f5, {
+        value: _,
+        children: (0, i.jsxs)(s.hLv, {
+            className: a()(d.kL, d.pm, t),
             color: "purple",
             children: [(0, i.jsxs)("div", {
-                className: c.FS,
-                children: [(0, i.jsx)(a.Heading, {
+                className: d.FS,
+                children: [(0, i.jsx)(s.Heading, {
                     variant: "heading-xxl/bold",
-                    className: c.R_,
-                    children: d.intl.string(d.t.Ve9Ge6)
-                }), (0, i.jsx)(a.Text, {
+                    className: d.R_,
+                    children: o.intl.string(o.t.Ve9Ge6)
+                }), (0, i.jsx)(s.Text, {
                     variant: "text-md/medium",
-                    children: d.intl.string(d.t.yQ06u1)
+                    children: o.intl.string(o.t.yQ06u1)
                 }), (0, i.jsx)("div", {
-                    className: c.SB,
-                    children: (0, i.jsx)(o.A, {
-                        buttonTextOverride: d.intl.string(d.t.Ve9Ge6),
-                        premiumModalAnalyticsLocation: s,
+                    className: d.SB,
+                    children: (0, i.jsx)(c.A, {
+                        buttonTextOverride: o.intl.string(o.t.Ve9Ge6),
+                        premiumModalAnalyticsLocation: r,
                         variant: "secondary"
                     })
                 })]
             }), (0, i.jsx)("img", {
                 src: u.A,
-                className: c._e,
+                className: d._e,
                 alt: "gift nitro banner"
             })]
         })

@@ -242,8 +242,8 @@ function P(e) {
     } = (0, u.A)(P), U = {
         variant: "heading-sm/medium",
         color: "text-default"
-    }, M = g.default.getCurrentUser(), W = M?.id === t.id, F = 1 === (0, f.cv)(c), H = !d && W, B = H && (0, f.y9)(c), X = H && !F, {
-        registerDragHandleRef: V
+    }, M = g.default.getCurrentUser(), F = M?.id === t.id, W = 1 === (0, f.cv)(c), H = !d && F, B = H && (0, f.y9)(c), V = H && !W, {
+        registerDragHandleRef: X
     } = (0, p.r)();
     if (y) return (0, i.jsx)(A.E, {});
     let z = () => (0, i.jsx)(I.A, {
@@ -259,10 +259,10 @@ function P(e) {
         K = () => (0, i.jsxs)("div", {
             ref: S,
             className: s()(b.Nr, k),
-            children: [X ? (0, i.jsxs)("div", {
+            children: [V ? (0, i.jsxs)("div", {
                 className: b.An,
                 children: [z(), (0, i.jsx)(x.jV, {
-                    buttonRef: V(o.applicationId),
+                    buttonRef: X(o.applicationId),
                     className: b.BU
                 })]
             }) : z(), (0, i.jsxs)("div", {
@@ -289,7 +289,7 @@ function P(e) {
                     channelId: l
                 }), (0, i.jsx)(h.A, {
                     tags: D,
-                    isCurrentUser: W,
+                    isCurrentUser: F,
                     widgetType: c,
                     applicationId: P,
                     disableInteraction: d,
@@ -300,14 +300,14 @@ function P(e) {
                     guildId: n,
                     channelId: l
                 })]
-            }), !d && W && (0, i.jsx)(v.A, {
+            }), !d && F && (0, i.jsx)(v.A, {
                 game: o,
                 widgetType: c,
                 className: b.vS,
                 onRemove: () => m?.(o.applicationId)
             })]
         });
-    return X ? (0, i.jsx)(C, {
+    return V ? (0, i.jsx)(C, {
         index: _ ?? 0,
         widgetType: c,
         game: o,

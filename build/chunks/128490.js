@@ -5,8 +5,8 @@ t.d(n, {
 var i = t(627968);
 t(64700);
 var a = t(311907),
-    r = t(397927),
-    l = t(734057),
+    l = t(397927),
+    r = t(734057),
     o = t(309010),
     s = t(622543),
     d = t(987112),
@@ -25,8 +25,8 @@ function h(e) {
         displayProfile: t,
         guildId: h,
         onClose: x
-    } = e, I = (0, a.bG)([s.A], () => s.A.getUserProfile(n.id)?.application), b = (0, a.bG)([l.A, o.A], () => l.A.getChannel(o.A.getChannelId()));
-    return (0, i.jsxs)(r.IpV, {
+    } = e, I = (0, a.bG)([s.A], () => s.A.getUserProfile(n.id)?.application), b = (0, a.bG)([r.A, o.A], () => r.A.getChannel(o.A.getChannelId()));
+    return (0, i.jsxs)(l.IpV, {
         fade: !0,
         className: f.XG,
         children: [(0, i.jsx)(c.E, {

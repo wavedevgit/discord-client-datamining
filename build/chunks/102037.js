@@ -21,10 +21,10 @@ function p(e) {
         type: l
     } = e, {
         icon: p,
-        title: f,
-        body: A,
-        hint: _,
-        notifType: g
+        title: A,
+        body: f,
+        hint: g,
+        notifType: _
     } = (t = {
         icon: n(513653),
         title: u.intl.string(u.t.pkXAeG),
@@ -40,14 +40,14 @@ function p(e) {
     } : t), {
         trackView: m,
         trackClick: x
-    } = (0, d.Y)(g, {
-        notif_type: g
+    } = (0, d.Y)(_, {
+        notif_type: _
     });
     return {
         icon: p,
-        title: f,
-        body: A,
-        hint: _,
+        title: A,
+        body: f,
+        hint: g,
         renderFooter: () => (0, i.jsx)("div", {
             style: {
                 textAlign: "center",

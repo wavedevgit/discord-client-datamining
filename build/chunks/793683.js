@@ -1,31 +1,31 @@
 /** chunk id: 793683 params = (module,exports,require) **/
-n.d(t, {
-    v: () => d
+s.d(t, {
+    v: () => u
 });
-var i = n(64700),
-    l = n(793574),
-    s = n(979286),
-    a = n(92246),
-    r = n(201805),
-    o = n(758836);
+var n = s(64700),
+    l = s(793574),
+    i = s(979286),
+    a = s(92246),
+    o = s(201805),
+    r = s(758836);
 
-function d(e) {
+function u(e) {
     let {
         quest: t,
-        questContent: n,
-        sourceQuestContent: d,
-        onCloseModal: c,
-        shouldShowShopIfAlreadyClaimed: u
-    } = e, h = (0, r.ix)({
+        questContent: s,
+        sourceQuestContent: u,
+        onCloseModal: d,
+        shouldShowShopIfAlreadyClaimed: c
+    } = e, m = (0, o.ix)({
         quest: t,
-        questContent: n,
-        sourceQuestContent: d
+        questContent: s,
+        sourceQuestContent: u
     });
-    return i.useCallback(e => {
-        (0, a.ks)(t.config) && t.userStatus?.claimedAt != null && u ? (c?.(e), (0, s.Cz)({
-            tab: o.G2.ORBS,
+    return n.useCallback(e => {
+        (0, a.ks)(t.config) && t.userStatus?.claimedAt != null && c ? (d?.(e), (0, i.Cz)({
+            tab: r.G2.ORBS,
             analyticsLocations: [],
             analyticsSource: l.A.QUEST_HOME_PAGE
-        })) : ((0, a.K9)(t.config) && c?.(e), h())
-    }, [t.config, t.userStatus?.claimedAt, h, u, c])
+        })) : ((0, a.K9)(t.config) && d?.(e), m())
+    }, [t.config, t.userStatus?.claimedAt, m, c, d])
 }

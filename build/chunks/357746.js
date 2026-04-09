@@ -58,7 +58,7 @@ let N = {
             selected: s
         } = e, T = (0, m.Ay)(t), S = l.useCallback(() => {
             (0, A.Zm)(t), (0, g.A)(t, d.A.GUILD_POWERUPS_CHANNEL_LIST_ROW), T?.popout?.markAsDismissed(f.i.INDIRECT_ACTION)
-        }, [t, T]), b = l.useRef(null), y = (0, o.red)(o.DXt), v = (0, r.bG)([h.A], () => h.A.hasLayers()), j = (0, u.xr)(e => e.fullScreenLayers.length > 0), R = y || v || j, O = l.useCallback(() => {
+        }, [t, T]), b = l.useRef(null), v = (0, o.red)(o.DXt), y = (0, r.bG)([h.A], () => h.A.hasLayers()), j = (0, u.xr)(e => e.fullScreenLayers.length > 0), R = v || y || j, O = l.useCallback(() => {
             if (T?.popout == null || R) return null;
             switch (T?.popout?.type) {
                 case _.o.LEVEL_REACHED:

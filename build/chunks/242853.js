@@ -1,46 +1,46 @@
 /** chunk id: 242853 params = (module,exports,require) **/
-s.d(t, {
-    A: () => h
+a.d(t, {
+    A: () => x
 });
-var l = s(627968);
-s(64700);
-var a = s(503698),
-    n = s.n(a),
-    i = s(158954),
-    r = s(397927),
-    o = s(898985),
-    d = s(922301),
-    c = s(750112),
-    u = s(750656),
-    m = s(927961),
-    _ = s(985018),
-    x = s(399778),
-    p = s(137930);
+var n = a(627968);
+a(64700);
+var s = a(503698),
+    l = a.n(s),
+    r = a(158954),
+    i = a(397927),
+    o = a(898985),
+    c = a(922301),
+    d = a(750112),
+    u = a(750656),
+    m = a(927961),
+    _ = a(985018),
+    p = a(399778),
+    h = a(137930);
 
-function h(e) {
+function x(e) {
     let {
         selectedEffectId: t,
-        setSelectedEffectId: s,
-        className: a
+        setSelectedEffectId: a,
+        className: s
     } = e;
-    return (0, l.jsxs)("div", {
-        className: a,
-        children: [(0, l.jsxs)(i.DZT, {
+    return (0, n.jsxs)("div", {
+        className: s,
+        children: [(0, n.jsxs)(r.DZT, {
             variant: "heading-md/semibold",
-            className: x.s,
-            children: [_.intl.string(m.default["1wilM1"]), (0, l.jsx)(r.tvc, {
+            className: p.s,
+            children: [_.intl.string(m.default["1wilM1"]), (0, n.jsx)(i.tvc, {
                 size: "xs",
-                color: r.LU0.colors.TEXT_DEFAULT
+                color: i.LU0.colors.TEXT_DEFAULT
             })]
-        }), (0, l.jsx)(i.BJc, {
+        }), (0, n.jsx)(r.BJc, {
             direction: "horizontal",
             align: "center",
             wrap: !0,
             gap: 8,
-            children: u.re.map(e => (0, l.jsx)(g, {
+            children: u.re.map(e => (0, n.jsx)(g, {
                 effectId: e,
                 selected: e === t,
-                onClick: () => s(e)
+                onClick: () => a(e)
             }, e))
         })]
     })
@@ -49,19 +49,19 @@ function h(e) {
 function g(e) {
     let {
         effectId: t,
-        selected: s,
-        onClick: a
-    } = e, i = (0, o._)(t);
-    return (0, l.jsx)(r.DUT, {
-        className: n()(p.Tw, {
-            [p.wH]: s
+        selected: a,
+        onClick: s
+    } = e, r = (0, o._)(t);
+    return (0, n.jsx)(i.DUT, {
+        className: l()(h.Tw, {
+            [h.wH]: a
         }),
-        onClick: a,
-        children: (0, l.jsx)(c.A, {
-            userName: i.name,
-            effectDisplayType: d.G.STATIC,
-            displayNameStyles: i.previewStyles,
-            textClassName: p.tr,
+        onClick: s,
+        children: (0, n.jsx)(d.A, {
+            userName: r.name,
+            effectDisplayType: c.G.STATIC,
+            displayNameStyles: r.previewStyles,
+            textClassName: h.tr,
             inProfile: !0
         })
     }, t)

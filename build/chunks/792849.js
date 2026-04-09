@@ -4,8 +4,8 @@ a.d(t, {
 });
 var l = a(627968);
 a(64700);
-var n = a(397927),
-    r = a(261225),
+var r = a(397927),
+    n = a(261225),
     s = a(970488);
 let i = e => {
         let {
@@ -39,17 +39,17 @@ let i = e => {
                 gridItemRows: c
             } = e;
             return (0, l.jsxs)(l.Fragment, {
-                children: [(0, l.jsx)(n.Text, {
+                children: [(0, l.jsx)(r.Text, {
                     variant: "text-lg/semibold",
                     children: "Grid is used to create a responsive grid layout. It takes a columns prop to define the number of columns (1-6). The grid automatically becomes responsive on smaller screens."
-                }), (0, l.jsx)("br", {}), (0, l.jsx)(n.Text, {
+                }), (0, l.jsx)("br", {}), (0, l.jsx)(r.Text, {
                     variant: "text-lg/semibold",
                     children: "GridItem is (optionally) used to set the size of a grid itme in the grid."
                 }), (0, l.jsx)("div", {
                     style: {
                         marginTop: 24
                     },
-                    children: (0, l.jsxs)(r.A, {
+                    children: (0, l.jsxs)(n.A, {
                         perPage: a,
                         columns: t,
                         paginationPosition: o,
@@ -60,7 +60,7 @@ let i = e => {
                             rows: c,
                             children: (0, l.jsx)(i, {
                                 color: "orange",
-                                children: (0, l.jsx)(n.Text, {
+                                children: (0, l.jsx)(r.Text, {
                                     variant: "text-lg/semibold",
                                     children: "GridItem"
                                 })
@@ -109,7 +109,7 @@ let i = e => {
                             color: "blue"
                         }), (0, l.jsx)(i, {
                             color: "violet",
-                            children: (0, l.jsx)(n.Text, {
+                            children: (0, l.jsx)(r.Text, {
                                 variant: "text-lg/semibold",
                                 children: "Last Child"
                             })

@@ -21,9 +21,9 @@ var i = n(934551),
     T = n(875532),
     f = n(935185),
     S = n(652215),
-    b = n(985018);
-let E = (0, r.dT)(u.X.ACCOUNT_STANDING_TAB, {
-        getTitle: () => b.intl.string(b.t["Vov/9o"]),
+    E = n(985018);
+let b = (0, r.dT)(u.X.ACCOUNT_STANDING_TAB, {
+        getTitle: () => E.intl.string(E.t["Vov/9o"]),
         onItemSelect: () => {
             c.default.track(S.HAw.MY_ACCOUNT_PAGE_TAB_NAVIGATE, {
                 target_tab_name: f.D.STANDING
@@ -32,7 +32,7 @@ let E = (0, r.dT)(u.X.ACCOUNT_STANDING_TAB, {
         buildLayout: () => [T.t]
     }),
     C = (0, r.dT)(u.X.ACCOUNT_SECURITY_TAB, {
-        getTitle: () => b.intl.string(b.t.Am9YHi),
+        getTitle: () => E.intl.string(E.t.Am9YHi),
         onItemSelect: () => {
             c.default.track(S.HAw.MY_ACCOUNT_PAGE_TAB_NAVIGATE, {
                 target_tab_name: f.D.SECURITY
@@ -41,26 +41,26 @@ let E = (0, r.dT)(u.X.ACCOUNT_STANDING_TAB, {
         buildLayout: () => [A.P, g.o, h.s]
     });
 
-function N() {
+function v() {
     let e = d.default.getCurrentUser();
     return null == e || (0, m.pC)("Account") || (0, o.A)(e.id, e.getAvatarURL(void 0, 80)), () => {
         s.A.clearBackupCodes(), (0, l.Uo)()
     }
 }
-let v = (0, r.t_)(u.X.ACCOUNT_PANEL, {
-        useTitle: () => b.intl.string(b.t["JAIM/m"]),
-        initialize: N,
+let N = (0, r.t_)(u.X.ACCOUNT_PANEL, {
+        useTitle: () => E.intl.string(E.t["JAIM/m"]),
+        initialize: v,
         useObscuredNotice: a.L,
-        buildLayout: () => [C, E]
+        buildLayout: () => [C, b]
     }),
     I = (0, r.t_)(u.X.ACCOUNT_PANEL, {
-        useTitle: () => b.intl.string(b.t["ldCE/p"]),
-        initialize: N,
+        useTitle: () => E.intl.string(E.t["ldCE/p"]),
+        initialize: v,
         useObscuredNotice: a.L,
         buildLayout: () => [_.u, x.v, p.Q, h._]
     }),
     j = (0, r.i4)(u.X.ACCOUNT_SIDEBAR_ITEM, {
-        useTitle: () => (0, m.pC)("Account") ? b.intl.string(b.t["ldCE/p"]) : b.intl.string(b.t["JAIM/m"]),
+        useTitle: () => (0, m.pC)("Account") ? E.intl.string(E.t["ldCE/p"]) : E.intl.string(E.t["JAIM/m"]),
         icon: i.UserIcon,
-        buildLayout: () => (0, m.pC)("Account") ? [I] : [v]
+        buildLayout: () => (0, m.pC)("Account") ? [I] : [N]
     })

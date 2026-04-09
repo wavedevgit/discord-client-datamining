@@ -26,8 +26,8 @@ var i = n(627968),
     T = n(114329),
     S = n(985018),
     b = n(142163),
-    y = n(604418);
-let v = (0, g.xI)(u.A.FOLDER_ITEM_ANIMATION_DURATION),
+    v = n(604418);
+let y = (0, g.xI)(u.A.FOLDER_ITEM_ANIMATION_DURATION),
     j = (0, o.animated)(h.BJc),
     R = l.memo(function(e) {
         var t;
@@ -94,7 +94,7 @@ let v = (0, g.xI)(u.A.FOLDER_ITEM_ANIMATION_DURATION),
                 height: 0
             },
             config: {
-                duration: v
+                duration: y
             }
         }), eh = l.useCallback(e => g?.(q, e), [g, q]), eA = (0, i.jsxs)(C.c, {
             children: [(0, i.jsx)(f.A, {
@@ -102,7 +102,7 @@ let v = (0, g.xI)(u.A.FOLDER_ITEM_ANIMATION_DURATION),
                 hovered: Q,
                 selected: R,
                 unread: U,
-                className: y.Io
+                className: v.Io
             }), (0, i.jsx)(N.A, {
                 text: er,
                 disabled: k,
@@ -114,7 +114,7 @@ let v = (0, g.xI)(u.A.FOLDER_ITEM_ANIMATION_DURATION),
                     } : void 0,
                     className: a()(b.MJ, {
                         [b.L0]: "icon" === W || en,
-                        [y.oR]: !ei && Z && !O
+                        [v.oR]: !ei && Z && !O
                     }),
                     "data-dnd-name": er,
                     children: ei ? (0, i.jsx)(I.A, {

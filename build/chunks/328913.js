@@ -14,10 +14,10 @@ var i = n(627968),
     u = n(855790),
     h = n(335022),
     p = n(714977),
-    f = n(266244),
-    A = n(439817),
-    _ = n(985018),
-    g = n(156052);
+    A = n(266244),
+    f = n(439817),
+    g = n(985018),
+    _ = n(156052);
 
 function m(e) {
     let {
@@ -46,15 +46,15 @@ class x extends s.PureComponent {
         } = this.props, l = null != e ? (0, i.jsx)(h.A, {
             guildId: e,
             onDragStart: this.onDragStart
-        }, e) : (0, i.jsx)(A.A, {
-            title: _.intl.string(_.t.YUU0RF),
+        }, e) : (0, i.jsx)(f.A, {
+            title: g.intl.string(g.t.YUU0RF),
             renderSettings: m,
             onDragStart: this.onDragStart,
-            children: (0, i.jsx)(f.A, {})
+            children: (0, i.jsx)(A.A, {})
         }), r = n ? "div" : u.Ay;
         return (0, i.jsxs)(r, {
-            className: a()(g.E, {
-                [g.H]: !n
+            className: a()(_.E, {
+                [_.H]: !n
             }, s),
             children: [(0, i.jsx)(d.A, {
                 isOverlay: !0,

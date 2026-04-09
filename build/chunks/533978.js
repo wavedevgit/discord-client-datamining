@@ -31,9 +31,9 @@ function T(e) {
         whichPopoutIsOpen: S,
         setWhichPopoutIsOpen: b
     } = e, {
-        parentAnalyticsLocation: y
+        parentAnalyticsLocation: v
     } = (0, c.Ay)(), {
-        Component: v,
+        Component: y,
         play: j,
         events: {
             onMouseEnter: R,
@@ -62,13 +62,13 @@ function T(e) {
                 guildId: L,
                 sourceAnalyticsLocations: B,
                 ...t,
-                onInteraction: (0, h.s)("SoundboardContextMenu", y)
+                onInteraction: (0, h.s)("SoundboardContextMenu", v)
             })
         })
     }
 
     function Y() {
-        (0, u.X)(y, u.O.SOUNDBOARD), S === C.P.SOUNDBOARD ? (b?.(void 0), W()) : (null != S ? (j(), F()) : j(), b?.(C.P.SOUNDBOARD))
+        (0, u.X)(v, u.O.SOUNDBOARD), S === C.P.SOUNDBOARD ? (b?.(void 0), W()) : (null != S ? (j(), F()) : j(), b?.(C.P.SOUNDBOARD))
     }
     let z = l.useCallback(() => {
             null == S && b?.(C.P.SOUNDBOARD)
@@ -112,7 +112,7 @@ function T(e) {
             isTrayButton: !0,
             themeable: T,
             label: M ? N.intl.string(N.t["Ox4/zU"]) : D ? N.intl.string(N.t["+YBKYI"]) : U ? N.intl.string(N.t.X1lQli) : void 0,
-            iconComponent: v,
+            iconComponent: y,
             disabled: G,
             onContextMenu: K,
             onClick: Y,

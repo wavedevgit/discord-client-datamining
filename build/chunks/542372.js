@@ -31,7 +31,7 @@ function E(e) {
         parentAnalyticsLocation: N
     } = (0, d.Ay)(), T = n === x.BRT.POPOUT, S = l.useRef(null), {
         currentLayout: b,
-        mode: y
+        mode: v
     } = (0, s.cf)([c.A], () => {
         let e = c.A.getMode(t.id),
             i = n === x.BRT.POPOUT;
@@ -41,9 +41,9 @@ function E(e) {
             currentLayout: l,
             mode: e
         }
-    }, [t, n]), v = (0, s.bG)([_.A], () => _.A.getVoiceChannelId() === t.id, [t.id]);
+    }, [t, n]), y = (0, s.bG)([_.A], () => _.A.getVoiceChannelId() === t.id, [t.id]);
     l.useEffect(() => {
-        S.current = y
+        S.current = v
     });
     let j = l.useRef(b),
         {
@@ -59,7 +59,7 @@ function E(e) {
             }
         }, [I, T, C]),
         L = E && !T,
-        M = y === x._Of.VIDEO && v && !L,
+        M = v === x._Of.VIDEO && y && !L,
         D = l.useCallback((e, i) => {
             i !== e && (r.A.updateLayout(t.id, i, n), i === x.DUB.FULL_SCREEN && t.isPrivate() && g._.dispatch(x.jej.TEXTAREA_BLUR))
         }, [n, t]),
@@ -98,10 +98,10 @@ function E(e) {
             T && (0, p.isMac)() || t(b)
         }
     }, [b, T]), l.useEffect(() => {
-        null != O && S.current === x._Of.VIDEO && y === x._Of.VOICE && (0, f.sP)(O, R)
-    }, [R, y, S, O]), l.useEffect(() => {
-        !v && T && a.h.wait(() => h.close(x.MLl.CHANNEL_CALL_POPOUT))
-    }, [v, T]), M) ? (0, i.jsx)(A.A, {
+        null != O && S.current === x._Of.VIDEO && v === x._Of.VOICE && (0, f.sP)(O, R)
+    }, [R, v, S, O]), l.useEffect(() => {
+        !y && T && a.h.wait(() => h.close(x.MLl.CHANNEL_CALL_POPOUT))
+    }, [y, T]), M) ? (0, i.jsx)(A.A, {
         themeable: !1,
         node: O,
         guestWindow: I,

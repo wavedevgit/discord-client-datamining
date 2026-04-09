@@ -35,10 +35,10 @@ function A(e) {
     } = e, S = {
         width: (0, o.FT9)(n),
         height: (0, o.FT9)(n)
-    }, b = (0, l.useId)(), y = E.size * c.Xq, v = null != x && (0, i.jsxs)("svg", {
-        width: y,
-        height: y,
-        viewBox: `0 0 ${y} ${y}`,
+    }, b = (0, l.useId)(), v = E.size * c.Xq, y = null != x && (0, i.jsxs)("svg", {
+        width: v,
+        height: v,
+        viewBox: `0 0 ${v} ${v}`,
         className: h.DX,
         "aria-hidden": !0,
         children: [(0, i.jsxs)("mask", {
@@ -46,8 +46,8 @@ function A(e) {
             children: [(0, i.jsx)("rect", {
                 x: 0,
                 y: 0,
-                width: y,
-                height: y,
+                width: v,
+                height: v,
                 fill: "white"
             }), null != I && function(e, t) {
                 let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : 0,
@@ -80,12 +80,12 @@ function A(e) {
                     rx: e.stroke,
                     fill: "black"
                 })
-            }(E, y, C, N)]
+            }(E, v, C, N)]
         }), (0, i.jsx)("foreignObject", {
             x: 0,
             y: 0,
-            width: y,
-            height: y,
+            width: v,
+            height: v,
             mask: `url(#${b})`,
             children: (0, i.jsx)("img", {
                 className: h.M,
@@ -106,7 +106,7 @@ function A(e) {
         onMouseLeave: m ?? void 0,
         "aria-label": T ?? void 0,
         "aria-hidden": f,
-        children: [t, v]
+        children: [t, y]
     }) : (0, i.jsxs)("div", {
         className: a()(h.iE, g),
         style: S,
@@ -116,7 +116,7 @@ function A(e) {
         role: "img",
         "aria-label": T ?? void 0,
         "aria-hidden": f,
-        children: [t, v]
+        children: [t, y]
     })
 }
 

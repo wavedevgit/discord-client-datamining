@@ -4,8 +4,8 @@ a.d(t, {
 });
 var l = a(627968);
 a(64700);
-var n = a(397927),
-    r = a(219561),
+var r = a(397927),
+    n = a(219561),
     s = a(673277),
     i = a(653793);
 let o = () => (0, l.jsx)("div", {
@@ -19,10 +19,10 @@ let o = () => (0, l.jsx)("div", {
         name: "Card",
         id: "card",
         component: () => (0, l.jsxs)(l.Fragment, {
-            children: [(0, l.jsx)(n.Text, {
+            children: [(0, l.jsx)(r.Text, {
                 variant: "text-lg/semibold",
                 children: "Card wraps its children in a container that has border-radius and elevation on hover."
-            }), (0, l.jsx)(n.Text, {
+            }), (0, l.jsx)(r.Text, {
                 variant: "text-lg/semibold",
                 children: "It will take up the full width of the parent, and the minimum height for its children"
             }), (0, l.jsxs)(s.A, {
@@ -70,10 +70,10 @@ let o = () => (0, l.jsx)("div", {
                     })
                 })]
             }), (0, l.jsxs)(s.A, {
-                children: [(0, l.jsx)(n.Text, {
+                children: [(0, l.jsx)(r.Text, {
                     variant: "text-md/normal",
                     children: "Cards inside of a horizontal stack with a min-width of 120px"
-                }), (0, l.jsxs)(r.Kp, {
+                }), (0, l.jsxs)(n.Kp, {
                     direction: "horizontal",
                     children: [(0, l.jsx)(i.A, {
                         children: (0, l.jsx)("div", {

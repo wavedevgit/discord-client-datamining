@@ -26,8 +26,8 @@ var i = n(627968),
     T = n(73473),
     S = n(646764),
     b = n(654487),
-    y = n(49999),
-    v = n(165610),
+    v = n(49999),
+    y = n(165610),
     j = n(985018),
     R = n(528622);
 
@@ -48,7 +48,7 @@ function O(e) {
     } = (0, f.O9)(t, !0), U = l.useCallback(() => {
         c.A.updateFrameLayoutMode({
             applicationId: n,
-            layoutMode: v.y.PIP
+            layoutMode: y.y.PIP
         })
     }, [n]), G = t.userStatus?.enrolledAt != null, P = l.useCallback(() => {
         (0, h.Oy)(t.id, {
@@ -149,8 +149,8 @@ function O(e) {
                 })]
             })]
         }), null != T && G && (0, i.jsx)(I.A, {
-            onDismiss: () => O(y.i.USER_DISMISS),
-            onCTAClick: () => O(y.i.TAKE_ACTION),
+            onDismiss: () => O(v.i.USER_DISMISS),
+            onCTAClick: () => O(v.i.TAKE_ACTION),
             targetElementRef: g
         })]
     })

@@ -1,6 +1,6 @@
 /** chunk id: 461489 params = (module,exports,require) **/
 n.d(t, {
-    A: () => E
+    A: () => b
 }), n(321073);
 var i = n(627968),
     s = n(64700),
@@ -21,9 +21,9 @@ var i = n(627968),
     T = n(957565),
     f = n(222735),
     S = n(688151),
-    b = n(385818);
+    E = n(385818);
 
-function E() {
+function b() {
     let {
         experiments: e,
         overridesInfo: t
@@ -66,7 +66,7 @@ function E() {
             onChange: g,
             onClear: () => g("")
         }), x.length > 0 ? x.map(e => {
-            let t = "guild" === e.experiment.kind ? N : C;
+            let t = "guild" === e.experiment.kind ? v : C;
             return (0, i.jsx)(t, {
                 experiment: e.experiment,
                 experimentId: e.id,
@@ -74,7 +74,7 @@ function E() {
                 defaultOpen: null != c[e.id]
             }, e.id)
         }) : (0, i.jsx)("div", {
-            className: b.p$,
+            className: E.p$,
             children: (0, i.jsx)(d.Heading, {
                 variant: "heading-md/semibold",
                 children: "No Experiments Found"
@@ -89,9 +89,9 @@ function C(e) {
         experimentId: n,
         overrideInfo: l,
         defaultOpen: r
-    } = e, [_, A] = s.useState(r), [p, f] = s.useState(!1), E = s.useCallback(() => {
+    } = e, [_, A] = s.useState(r), [p, f] = s.useState(!1), b = s.useCallback(() => {
         A(e => !e)
-    }, []), C = (0, o.bG)([h.default], () => h.default.getId()), N = (0, x.iN)(t, C), v = (0, x.Fm)(t, C), I = (0, o.yK)([g.A], () => a().sortBy(g.A.getRecentExposures(S.Vh.USER, n), e => {
+    }, []), C = (0, o.bG)([h.default], () => h.default.getId()), v = (0, x.iN)(t, C), N = (0, x.Fm)(t, C), I = (0, o.yK)([g.A], () => a().sortBy(g.A.getRecentExposures(S.Vh.USER, n), e => {
         let [t, n] = e;
         return -n
     }).map(e => {
@@ -107,10 +107,10 @@ function C(e) {
         })
     }, [n]), y = (0, i.jsx)(d.sqX, {
         "aria-label": "Toggle visibility",
-        onClick: E,
+        onClick: b,
         children: (0, i.jsxs)(d.Text, {
             variant: "text-md/medium",
-            className: b.DD,
+            className: E.DD,
             children: [(0, i.jsxs)("div", {
                 children: [(0, i.jsxs)(d.BJc, {
                     direction: "horizontal",
@@ -128,18 +128,18 @@ function C(e) {
                     children: n
                 })]
             }), (0, i.jsx)("span", {
-                className: b.km,
+                className: E.km,
                 children: "User"
             })]
         })
     });
     if (!_) return (0, i.jsx)("div", {
-        className: b.Os,
+        className: E.Os,
         children: y
     });
     let O = "";
-    return O = t.system === u.l5.LEGACY ? `Currently assigned to bucket ${N??S.RE.NOT_ELIGIBLE}` : null != N ? `Currently assigned to variant ${N}` : "Currently unassigned", (0, i.jsxs)("div", {
-        className: b.Os,
+    return O = t.system === u.l5.LEGACY ? `Currently assigned to bucket ${v??S.RE.NOT_ELIGIBLE}` : null != v ? `Currently assigned to variant ${v}` : "Currently unassigned", (0, i.jsxs)("div", {
+        className: E.Os,
         children: [y, (0, i.jsx)("div", {
             children: (0, i.jsx)(m.g, {
                 label: t.system === u.l5.LEGACY ? "Bucket Override" : "Variant Override",
@@ -149,8 +149,8 @@ function C(e) {
                 overrideInfo: l
             })
         }), (0, i.jsx)("div", {
-            className: b.h_,
-            children: null == v ? (0, i.jsx)(d.Text, {
+            className: E.h_,
+            children: null == N ? (0, i.jsx)(d.Text, {
                 variant: "text-sm/normal",
                 color: "text-subtle",
                 children: 'Warning: Server did not send any experiment config. You may need to check the "Send to Client" box in the admin UI.'
@@ -158,43 +158,43 @@ function C(e) {
         }), p ? (0, i.jsxs)("div", {
             children: [(0, i.jsx)(d.Text, {
                 variant: "text-lg/medium",
-                className: b.id,
+                className: E.id,
                 children: "Server Descriptor"
             }), (0, i.jsx)(d.Text, {
                 variant: "code",
-                className: b.AS,
-                children: null == v ? "None" : JSON.stringify(v, void 0, 2)
+                className: E.AS,
+                children: null == N ? "None" : JSON.stringify(N, void 0, 2)
             }), (0, i.jsx)(d.Text, {
                 variant: "text-lg/medium",
-                className: b.id,
+                className: E.id,
                 children: "Override Descriptor"
             }), (0, i.jsx)(d.Text, {
                 variant: "code",
-                className: b.AS,
+                className: E.AS,
                 children: l?.originalDescriptor == null ? "None" : JSON.stringify(l.originalDescriptor, void 0, 2)
             }), (0, i.jsx)(d.Text, {
                 variant: "text-lg/medium",
-                className: b.id,
+                className: E.id,
                 children: "Recent Exposures"
             }), (0, i.jsx)(d.Text, {
                 variant: "code",
-                className: b.AS,
+                className: E.AS,
                 children: 0 === I.length ? "None" : I.join("\n")
             })]
         }) : (0, i.jsx)("div", {
-            className: b.id,
+            className: E.id,
             children: (0, i.jsx)(d.QWc, {
                 variant: "secondary",
                 text: "More Details \xbb",
                 onClick: () => f(!0)
             })
         }), (0, i.jsx)(d.cGx, {
-            className: b.yF
+            className: E.yF
         })]
     })
 }
 
-function N(e) {
+function v(e) {
     let {
         experiment: t,
         experimentId: n,
@@ -218,11 +218,11 @@ function N(e) {
         }
         let s = a()(t).keys().map(Number).sort().map(e => `${t[e]} guilds in bucket ${e}`).join(", ");
         return [i.join("\n"), s]
-    }), E = (0, i.jsx)(d.DUT, {
+    }), b = (0, i.jsx)(d.DUT, {
         onClick: x,
         children: (0, i.jsxs)(d.Text, {
             variant: "text-md/medium",
-            className: b.DD,
+            className: E.DD,
             children: [(0, i.jsxs)("div", {
                 children: [(0, i.jsx)("span", {
                     children: t.title
@@ -232,21 +232,21 @@ function N(e) {
                     children: n
                 })]
             }), (0, i.jsx)("span", {
-                className: b.km,
+                className: E.km,
                 children: "Guild"
             })]
         })
     });
     return r ? (0, i.jsxs)("div", {
-        className: b.Os,
-        children: [E, (0, i.jsx)(m.g, {
+        className: E.Os,
+        children: [b, (0, i.jsx)(m.g, {
             label: "Bucket Override",
             description: `Current Assignments: ${f}`,
             experiment: t,
             experimentId: n,
             overrideInfo: l
         }), (0, i.jsx)("div", {
-            className: b.h_,
+            className: E.h_,
             children: null == A ? (0, i.jsx)(d.Text, {
                 variant: "text-sm/normal",
                 color: "text-subtle",
@@ -255,49 +255,49 @@ function N(e) {
         }), u ? (0, i.jsxs)("div", {
             children: [(0, i.jsx)(d.Text, {
                 variant: "text-lg/medium",
-                className: b.id,
+                className: E.id,
                 children: "Guild Assignments"
             }), (0, i.jsx)(d.Text, {
                 variant: "code",
-                className: b.AS,
+                className: E.AS,
                 children: T
             }), (0, i.jsx)(d.Text, {
                 variant: "text-lg/medium",
-                className: b.id,
+                className: E.id,
                 children: "Server Descriptor"
             }), (0, i.jsx)(d.Text, {
                 variant: "code",
-                className: b.AS,
+                className: E.AS,
                 children: null == A ? "None" : JSON.stringify(A, void 0, 2)
             }), (0, i.jsx)(d.Text, {
                 variant: "text-lg/medium",
-                className: b.id,
+                className: E.id,
                 children: "Override Descriptor"
             }), (0, i.jsx)(d.Text, {
                 variant: "code",
-                className: b.AS,
+                className: E.AS,
                 children: l?.originalDescriptor == null ? "None" : JSON.stringify(l.originalDescriptor, void 0, 2)
             }), (0, i.jsx)(d.Text, {
                 variant: "text-lg/medium",
-                className: b.id,
+                className: E.id,
                 children: "Recent Exposures"
             }), (0, i.jsx)(d.Text, {
                 variant: "code",
-                className: b.AS,
+                className: E.AS,
                 children: 0 === h.length ? "None" : h.join("\n")
             })]
         }) : (0, i.jsx)("div", {
-            className: b.id,
+            className: E.id,
             children: (0, i.jsx)(d.QWc, {
                 variant: "secondary",
                 text: "More Details \xbb",
                 onClick: () => _(!0)
             })
         }), (0, i.jsx)(d.cGx, {
-            className: b.yF
+            className: E.yF
         })]
     }) : (0, i.jsx)("div", {
-        className: b.Os,
-        children: E
+        className: E.Os,
+        children: b
     })
 }

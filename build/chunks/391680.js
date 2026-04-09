@@ -42,11 +42,11 @@ function g() {
         disableAppCollectionsCache: d.default.disableAppCollectionsCache
     })), {
         horizontalSpacing: S,
-        verticalSpacing: b
+        verticalSpacing: E
     } = (0, r.Or)(), {
-        setHorizontalSpacing: E,
+        setHorizontalSpacing: b,
         setVerticalSpacing: C
-    } = r.Or.getState(), N = c.HZ.useSetting();
+    } = r.Or.getState(), v = c.HZ.useSetting();
     return t ? [(0, i.jsxs)(l.Drp, {
         id: "overrides",
         label: "Overrides",
@@ -56,9 +56,9 @@ function g() {
         children: [(0, i.jsx)(l.sLh, {
             id: "always-deliver",
             label: "Always Deliver Ads",
-            checked: N,
+            checked: v,
             action: () => {
-                c.HZ.updateSetting(!N)
+                c.HZ.updateSetting(!v)
             }
         }, "always-deliver"), (0, i.jsx)(l.sLh, {
             id: "forced-canary",
@@ -174,7 +174,7 @@ function g() {
                     value: S,
                     minValue: 0,
                     maxValue: r.YR,
-                    onChange: e => E(e),
+                    onChange: e => b(e),
                     renderValue: e => `${Math.round(e)}px`,
                     "aria-label": "Horizontal Spacing"
                 })
@@ -184,7 +184,7 @@ function g() {
                 control: (e, t) => (0, i.jsx)(l.i42, {
                     ...e,
                     ref: t,
-                    value: b,
+                    value: E,
                     minValue: 0,
                     maxValue: r.YR,
                     onChange: e => C(e),

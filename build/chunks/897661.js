@@ -1,16 +1,16 @@
 /** chunk id: 897661 params = (module,exports,require) **/
-s.d(t, {
-    b: () => r
+a.d(t, {
+    b: () => i
 });
-var l = s(311907),
-    a = s(836602),
-    n = s(696451),
-    i = s(427262);
+var n = a(311907),
+    s = a(836602),
+    l = a(696451),
+    r = a(427262);
 
-function r(e, t) {
-    let s = i.Ay.useName(e);
-    return (0, l.bG)([a.A, n.Ay], () => {
-        let s = a.A.getPendingChanges(t);
-        return null != t ? s.pendingNickname ?? n.Ay.getNick(t, e?.id) : s.pendingGlobalName
-    }, [t, e]) ?? s ?? ""
+function i(e, t) {
+    let a = r.Ay.useName(e);
+    return (0, n.bG)([s.A, l.Ay], () => {
+        let a = s.A.getPendingChanges(t);
+        return null != t ? a.pendingNickname ?? l.Ay.getNick(t, e?.id) : a.pendingGlobalName
+    }, [t, e]) ?? a ?? ""
 }

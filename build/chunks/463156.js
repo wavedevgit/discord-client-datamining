@@ -1,26 +1,22 @@
 /** chunk id: 463156 params = (module,exports,require) **/
-n.d(l, {
-    A: () => c
+t.d(l, {
+    A: () => r
 });
-var t = n(627968),
-    i = n(64700),
-    s = n(311907),
-    a = n(397927),
-    r = n(958805),
-    o = n(61881),
-    d = n(985018);
+var n = t(627968);
+t(64700);
+var i = t(397927),
+    s = t(23722),
+    a = t(985018);
 
-function c(e) {
+function r(e) {
     let {
         isCurrentUser: l,
-        onClose: n
-    } = e, c = (0, s.bG)([o.A], () => o.A.hasUnsavedChanges()), u = i.useCallback(() => {
-        l && c ? r.A.notifyUnsavedWidgets() : n()
-    }, [l, c, n]);
-    return (0, t.jsx)(a.K0, {
-        "aria-label": d.intl.string(d.t.cpT0Cq),
-        icon: a.PGe,
-        onClick: u,
+        onClose: t
+    } = e, r = (0, s.A)(t, l);
+    return (0, n.jsx)(i.K0, {
+        "aria-label": a.intl.string(a.t.cpT0Cq),
+        icon: i.PGe,
+        onClick: r,
         variant: "secondary",
         size: "sm"
     })

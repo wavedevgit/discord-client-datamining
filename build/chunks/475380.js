@@ -21,11 +21,11 @@ var i = n(627968),
     T = n(954571),
     f = n(723702),
     S = n(652215),
-    b = n(650583),
-    E = n(985018),
+    E = n(650583),
+    b = n(985018),
     C = n(380531),
-    N = n(435115);
-let v = (0, f.isWindows)();
+    v = n(435115);
+let N = (0, f.isWindows)();
 
 function I(e) {
     let {
@@ -41,9 +41,9 @@ function I(e) {
     } = (0, r.cf)([_.Ay], () => ({
         canToggleDetection: null == O || _.Ay.isDetectionEnabled(O),
         isCurrentGameDetectionEnabled: _.Ay.isDetectionEnabled(R)
-    })), D = (0, r.bG)([_.Ay], () => _.Ay.getVisibleGame()), [G, M] = s.useState(!1), U = s.useMemo(() => (0, A.n1)(R) ? y ? R.gameName : E.intl.formatToPlainString(E.t.G6BGdx, {
+    })), D = (0, r.bG)([_.Ay], () => _.Ay.getVisibleGame()), [G, M] = s.useState(!1), k = s.useMemo(() => (0, A.n1)(R) ? y ? R.gameName : b.intl.formatToPlainString(b.t.G6BGdx, {
         subgameName: R.gameName
-    }) : R.name, [R, y]), [k, w] = s.useState(U ?? "???"), V = a()(N.tR, {
+    }) : R.name, [R, y]), [U, w] = s.useState(k ?? "???"), V = a()(v.tR, {
         [C.LO]: !l,
         [C.Rw]: l,
         [C.FB]: null != R && l,
@@ -58,18 +58,18 @@ function I(e) {
             } = await Promise.resolve().then(n.bind(n, 158954));
             return t => (0, i.jsx)(e, {
                 ...t,
-                title: E.intl.formatToPlainString(E.t.PZ4fKc, {
-                    platform: U
+                title: b.intl.formatToPlainString(b.t.PZ4fKc, {
+                    platform: k
                 }),
-                subtitle: E.intl.formatToPlainString(E.t.ZIQbfb, {
-                    platform: U
+                subtitle: b.intl.formatToPlainString(b.t.ZIQbfb, {
+                    platform: k
                 }),
                 actions: [{
-                    text: E.intl.string(E.t["ETE/oC"]),
+                    text: b.intl.string(b.t["ETE/oC"]),
                     onClick: () => t.onClose(),
                     variant: "secondary"
                 }, {
-                    text: E.intl.string(E.t.Fmjztz),
+                    text: b.intl.string(b.t.Fmjztz),
                     onClick: () => {
                         u.Ay.toggleDetection(R), t.onClose()
                     },
@@ -84,14 +84,14 @@ function I(e) {
         children: [(0, i.jsxs)("div", {
             className: V,
             children: [(0, i.jsxs)("div", {
-                className: a()(C.$K, N.Vd),
+                className: a()(C.$K, v.Vd),
                 children: [R.verified && !f ? (0, i.jsxs)("div", {
                     className: C.HS,
                     children: [(0, i.jsx)("div", {
                         className: C.mO,
-                        children: U
+                        children: k
                     }), (0, i.jsx)(d.m_, {
-                        text: E.intl.string(E.t["4PJP5p"]),
+                        text: b.intl.string(b.t["4PJP5p"]),
                         children: (0, i.jsx)(x.A, {
                             className: C.qf,
                             size: 18,
@@ -108,12 +108,12 @@ function I(e) {
                     className: a()(C.mO, C.sr),
                     type: "text",
                     maxLength: 128,
-                    value: k,
+                    value: U,
                     onBlur: function() {
-                        R.name !== k && u.Ay.editName(R, k)
+                        R.name !== U && u.Ay.editName(R, U)
                     },
                     onKeyDown: function(e) {
-                        e.key === b.dh.ENTER && (e.currentTarget.blur(), e.preventDefault())
+                        e.key === E.dh.ENTER && (e.currentTarget.blur(), e.preventDefault())
                     },
                     onChange: e => w(e.target.value)
                 }), function() {
@@ -121,7 +121,7 @@ function I(e) {
                         played: t,
                         exePath: n
                     } = R;
-                    return l || F ? e = E.intl.string(E.t.VbV5dv) : null != t && "" !== t && (e = E.intl.format(E.t["gGeOE+"], {
+                    return l || F ? e = b.intl.string(b.t.VbV5dv) : null != t && "" !== t && (e = b.intl.format(b.t["gGeOE+"], {
                         when: t
                     })), (0, i.jsx)("div", {
                         className: C.GN,
@@ -132,11 +132,11 @@ function I(e) {
                     })
                 }()]
             }), f || G ? null : (0, i.jsx)("div", {
-                className: a()(N.tR, N.oA, N.LT, C.E3),
+                className: a()(v.tR, v.oA, v.LT, C.E3),
                 children: (0, i.jsx)(d.m_, {
-                    text: E.intl.string(E.t["y0B+lo"]),
+                    text: b.intl.string(b.t["y0B+lo"]),
                     children: (0, i.jsx)(c.DUT, {
-                        "aria-label": E.intl.string(E.t["y0B+lo"]),
+                        "aria-label": b.intl.string(b.t["y0B+lo"]),
                         className: C.ym,
                         onClick: function() {
                             if (G) return;
@@ -182,11 +182,11 @@ function I(e) {
                     colorClass: C.GS
                 });
                 return (0, i.jsx)("div", {
-                    className: a()(N.tR, N.oA, N.LT, C.E3),
+                    className: a()(v.tR, v.oA, v.LT, C.E3),
                     children: (0, i.jsx)(d.m_, {
-                        text: E.intl.string(E.t.QmitzM),
+                        text: b.intl.string(b.t.QmitzM),
                         children: L ? (0, i.jsx)(c.DUT, {
-                            "aria-label": E.intl.string(E.t.QmitzM),
+                            "aria-label": b.intl.string(b.t.QmitzM),
                             className: C.ym,
                             onClick: B,
                             children: t
@@ -194,7 +194,7 @@ function I(e) {
                     })
                 })
             }(), function() {
-                if (!v || null != O) return null;
+                if (!N || null != O) return null;
                 let {
                     overlay: e,
                     overlayWarn: t
@@ -209,17 +209,17 @@ function I(e) {
                     className: C.$V,
                     colorClass: C.GS
                 }), s = t ? (0, i.jsx)(d.m_, {
-                    text: E.intl.string(E.t.Vfw2L5),
+                    text: b.intl.string(b.t.Vfw2L5),
                     children: (0, i.jsx)("i", {
                         className: C.kb
                     })
                 }) : null;
                 return (0, i.jsxs)("div", {
-                    className: a()(N.tR, N.oA, N.LT, C.E3),
+                    className: a()(v.tR, v.oA, v.LT, C.E3),
                     children: [s, (0, i.jsx)(d.m_, {
-                        text: E.intl.string(E.t["1+O+Tu"]),
+                        text: b.intl.string(b.t["1+O+Tu"]),
                         children: (0, i.jsx)(c.DUT, {
-                            "aria-label": E.intl.string(E.t["1+O+Tu"]),
+                            "aria-label": b.intl.string(b.t["1+O+Tu"]),
                             className: C.ym,
                             onClick: () => {
                                 var t;

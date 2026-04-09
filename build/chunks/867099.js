@@ -29,7 +29,7 @@ function h(e) {
         authorizedApplicationId: m.A.testModeApplicationId,
         authorizationError: m.A.error,
         authorizing: m.A.isFetchingAuthorization
-    })), [f, S] = s.useState(h ?? ""), [b, E] = s.useState("8080"), [C, N] = s.useState("localhost"), v = A.test(f);
+    })), [f, S] = s.useState(h ?? ""), [E, b] = s.useState("8080"), [C, v] = s.useState("localhost"), N = A.test(f);
     async function I() {
         d.SH();
         let e = function(e, t, n) {
@@ -40,21 +40,21 @@ function h(e) {
                 case "proxy":
                     return (0, c.Ay)(n)
             }
-        }(C, b, f);
+        }(C, E, f);
         null != await d.q1(f, e) && t()
     }
     s.useEffect(() => () => o.h.wait(() => d.SH()), []);
     let j = null != h && h === f,
         y = j ? function() {
-            d.cL(), S(""), N(null)
+            d.cL(), S(""), v(null)
         } : I,
         O = s.useMemo(() => [{
             loading: T,
-            disabled: !v || 0 === f.length || "localhost" === C && 0 === b.length,
+            disabled: !N || 0 === f.length || "localhost" === C && 0 === E.length,
             variant: j ? "critical-primary" : "active",
             text: j ? g.intl.string(g.t.d6TR3I) : g.intl.string(g.t.qwuK5I),
             onClick: y
-        }], [f.length, T, j, v, b.length, y, C]);
+        }], [f.length, T, j, N, E.length, y, C]);
     return (0, i.jsxs)(l.Modal, {
         title: g.intl.string(g.t.f8fzky),
         subtitle: g.intl.string(g.t.a6Vill),
@@ -77,7 +77,7 @@ function h(e) {
                     required: !0,
                     value: f,
                     maxLength: 19,
-                    error: v ? null : g.intl.string(g.t.gPNgKO),
+                    error: N ? null : g.intl.string(g.t.gPNgKO),
                     onChange: function(e) {
                         S(e)
                     },
@@ -88,7 +88,7 @@ function h(e) {
                 children: (0, i.jsx)(r.l6P, {
                     selectionMode: "single",
                     label: g.intl.string(g.t["/GTqXG"]),
-                    disabled: !v || "" === f,
+                    disabled: !N || "" === f,
                     value: C,
                     options: [{
                         value: "localhost",
@@ -100,7 +100,7 @@ function h(e) {
                         id: "proxy"
                     }],
                     onSelectionChange: function(e) {
-                        N(e)
+                        v(e)
                     },
                     placeholder: "URL Origin Type"
                 })
@@ -109,9 +109,9 @@ function h(e) {
                 children: (0, i.jsx)(r.ksK, {
                     required: !0,
                     label: g.intl.string(g.t.fF4zxq),
-                    value: b,
+                    value: E,
                     maxLength: 5,
-                    onChange: e => E(e),
+                    onChange: e => b(e),
                     disabled: T
                 })
             })]

@@ -5,8 +5,8 @@ a.d(t, {
 });
 var l = a(627968);
 a(64700);
-var n = a(397927),
-    r = a(41770),
+var r = a(397927),
+    n = a(41770),
     s = a(785330);
 let i = {
         id: "dummy-show-of-skeletons",
@@ -82,17 +82,17 @@ let i = {
         name: "SubLayout",
         id: "sub-layout-basic",
         component: () => (0, l.jsxs)("div", {
-            children: [(0, l.jsx)(n.Heading, {
+            children: [(0, l.jsx)(r.Heading, {
                 variant: "heading-lg/bold",
                 children: 'The SubLayout component accepts a layout id and "get or fetch"es the layout'
-            }), (0, l.jsx)(n.Text, {
+            }), (0, l.jsx)(r.Text, {
                 variant: "text-md/semibold",
                 children: "When resolved, the layout trees are merged into one layout. This allows for the asynchronous resolution of layouts, for faster first paints"
-            }), (0, l.jsx)(n.Text, {
+            }), (0, l.jsx)(r.Text, {
                 variant: "text-md/semibold",
                 children: "Here, the \"popular picks\" are actually a sub layout with the id 'dummy-popular-picks'"
             }), (0, l.jsx)("br", {}), (0, l.jsx)("hr", {}), (0, l.jsx)("br", {}), (0, l.jsx)(s.Ay, {
-                layout: r.uG
+                layout: n.uG
             })]
         }),
         controls: {}
@@ -101,10 +101,10 @@ let i = {
         name: "SubLayout - Loading State",
         id: "sub-layout-skeleton",
         component: () => (0, l.jsxs)("div", {
-            children: [(0, l.jsx)(n.Heading, {
+            children: [(0, l.jsx)(r.Heading, {
                 variant: "heading-lg/bold",
                 children: 'The SubLayout can take a "Skeleton" property which is just `children` to display if the layout is being fetched from the api'
-            }), (0, l.jsx)(n.Text, {
+            }), (0, l.jsx)(r.Text, {
                 variant: "text-md/semibold",
                 children: "Here we use the `Skeleton` component to show the shop cards loading while the (dummy) Shop Cards SubLayout are resolving (it will never stop loading for demonstration purposes)"
             }), (0, l.jsx)("br", {}), (0, l.jsx)("hr", {}), (0, l.jsx)("br", {}), (0, l.jsx)(s.Ay, {

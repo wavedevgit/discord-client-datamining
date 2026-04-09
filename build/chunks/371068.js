@@ -1,24 +1,23 @@
 /** chunk id: 371068 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
-    A: () => c
+    A: () => _
 });
-var a = n(627968);
+var r = n(627968);
 n(64700);
-var r = n(503698),
-    i = n.n(r),
+var i = n(503698),
+    a = n.n(i),
     o = n(155718),
-    s = n(608721);
+    l = n(608721);
 
-function c(e) {
+function _(e) {
     let {
         divider: t,
         spacing: n
     } = e;
-    return (0, a.jsx)("div", {
-        className: i()({
-            [s.f]: n === o.C8.LARGE,
-            [s.y]: t
+    return (0, r.jsx)("div", {
+        className: a()({
+            [l.f]: n === o.C8.LARGE,
+            [l.y]: t
         })
     })
 }

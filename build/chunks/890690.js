@@ -1,19 +1,19 @@
 /** chunk id: 890690 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    u: () => a
+    u: () => s
 }), n(321073), n(134528), n(947204);
 var r = n(64700),
-    l = n(894858),
-    i = n(397274);
+    i = n(894858),
+    a = n(397274);
 
-function a(e, t) {
+function s(e, t) {
     let n = r.useRef(null),
-        a = r.useRef(new Set),
-        s = r.useRef(!1);
+        s = r.useRef(new Set),
+        l = r.useRef(!1);
     r.useEffect(() => {
         if (!t) return;
-        let e = i.A.getPanelScrollerNode();
+        let e = a.A.getPanelScrollerNode();
         if (null == e) return;
         let r = e.querySelectorAll("[data-settings-category-key]"),
             o = e.querySelector("[data-panel-bottom]"),
@@ -31,18 +31,18 @@ function a(e, t) {
                     } = t;
                     if (r === o) {
                         let t = e.scrollHeight > e.clientHeight;
-                        s.current = n && t;
+                        l.current = n && t;
                         return
                     }
-                    let l = c.get(r);
-                    null != l && (n ? a.current.add(l) : a.current.delete(l))
-                }), !i.A.getIsSidebarCategoryAutoSelectEnabled()) return;
+                    let i = c.get(r);
+                    null != i && (n ? s.current.add(i) : s.current.delete(i))
+                }), !a.A.getIsSidebarCategoryAutoSelectEnabled()) return;
             let n = [];
             if (d.forEach(e => {
-                    a.current.has(e) && n.push(e)
+                    s.current.has(e) && n.push(e)
                 }), 0 === n.length) return;
-            let r = n.at(s.current ? -1 : 0);
-            l.A.getField("currentCategoryKey") !== r && l.A.setState({
+            let r = n.at(l.current ? -1 : 0);
+            i.A.getField("currentCategoryKey") !== r && i.A.setState({
                 currentCategoryKey: r
             })
         }, {

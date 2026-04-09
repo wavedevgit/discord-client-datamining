@@ -1,16 +1,16 @@
 /** chunk id: 311364 params = (module,exports,require) **/
 n.d(t, {
-    Y: () => l
+    Y: () => a
 });
 var i = n(627968);
 n(64700);
-var s = n(688810);
+var r = n(688810);
 
-function l(e) {
+function a(e) {
     let {
         analyticsLocations: t
-    } = (0, s.Ay)(...e.newLocations);
-    return (0, i.jsx)(s.di.Provider, {
+    } = (0, r.Ay)(...e.newLocations);
+    return (0, i.jsx)(r.di.Provider, {
         value: t,
         children: e.children
     })

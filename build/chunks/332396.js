@@ -40,7 +40,7 @@ function b(e, t) {
     })
 }
 
-function y() {
+function v() {
     let e = (0, d.yK)([C.A, p.A], () => I.default.keys(C.A.getFavoriteChannels()).map(e => p.A.getChannel(e)).filter(E.Vq)),
         t = e.map(e => e.id),
         n = e.filter(e => e.type === N.rbe.GUILD_VOICE),
@@ -69,8 +69,8 @@ function y() {
             for (let i of t) n.push(...e.get(i)?.flatMap(e => Array.from(e.userIds)) ?? []);
             return n
         }, [t]),
-        y = (0, d.yK)([f.default], () => T.map(e => f.default.getUser(e)), [T]),
-        v = (0, d.yK)([f.default], () => c.map(e => f.default.getUser(e)), [c]),
+        v = (0, d.yK)([f.default], () => T.map(e => f.default.getUser(e)), [T]),
+        y = (0, d.yK)([f.default], () => c.map(e => f.default.getUser(e)), [c]),
         j = b(u.HKD, s.filter(e => !c.includes(e.id) && !T.includes(e.id))),
         R = 0 === a.length ? null : (0, i.jsxs)("div", {
             className: S.nM,
@@ -95,14 +95,14 @@ function y() {
                 })]
             })]
         }),
-        O = b(u.Fzq, v.filter(e => null != e && !T.includes(e.id))),
-        L = b(u.k9F, y);
+        O = b(u.Fzq, y.filter(e => null != e && !T.includes(e.id))),
+        L = b(u.k9F, v);
     return (0, i.jsxs)(i.Fragment, {
         children: [R, j, O, L]
     })
 }
 
-function v() {
+function y() {
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)("div", {
             className: a()(S.nM, S.Dl),
@@ -110,7 +110,7 @@ function v() {
                 className: a()(S.cN, S.NT),
                 children: T.intl.string(T.t.wMWyci)
             })
-        }), (0, i.jsx)(y, {})]
+        }), (0, i.jsx)(v, {})]
     })
 }
 
@@ -120,7 +120,7 @@ function j(e) {
         children: n
     } = e, s = l.useMemo(() => (0, i.jsx)("div", {
         className: S.A_,
-        children: (0, i.jsx)(v, {})
+        children: (0, i.jsx)(y, {})
     }), []);
     return (0, i.jsx)(c.m_, {
         __unsupportedReactNodeAsText: s,

@@ -33,17 +33,17 @@ var r = {
     "./zh-TW.png": "23880"
 };
 
-function i(e) {
-    return s(n(e))
+function n(t) {
+    return s(i(t))
 }
 
-function n(e) {
-    if (!s.o(r, e)) {
-        var t = Error("Cannot find module '" + e + "'");
-        throw t.code = "MODULE_NOT_FOUND", t
+function i(t) {
+    if (!s.o(r, t)) {
+        var e = Error("Cannot find module '" + t + "'");
+        throw e.code = "MODULE_NOT_FOUND", e
     }
-    return r[e]
+    return r[t]
 }
-i.keys = function() {
+n.keys = function() {
     return Object.keys(r)
-}, i.resolve = n, e.exports = i, i.id = 579832
+}, n.resolve = i, t.exports = n, n.id = 579832

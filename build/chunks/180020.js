@@ -26,18 +26,18 @@ function f(e) {
         guildId: n,
         className: f
     } = e, S = m.Ay.canUsePremiumProfileCustomization(t), {
-        analyticsLocations: b
+        analyticsLocations: E
     } = (0, r.Ay)(), {
-        userDisplayNameStyles: E,
+        userDisplayNameStyles: b,
         guildDisplayNameStyles: C,
-        pendingDisplayNameStyles: N,
-        pendingErrors: v
+        pendingDisplayNameStyles: v,
+        pendingErrors: N
     } = (0, g.B0)(t, n), [I, j] = (0, o.kn)([l.M.DISPLAY_NAME_STYLES_NEW_BADGE_PROFILE_PAGE]), y = I === l.M.DISPLAY_NAME_STYLES_NEW_BADGE_PROFILE_PAGE, O = (0, s.useCallback)(() => {
         j(A.i.TAKE_ACTION), u.default.track(x.HAw.DISPLAY_NAME_STYLES_FROM_SETTINGS), (0, d.L)({
-            analyticsLocations: b,
+            analyticsLocations: E,
             guildId: n
         })
-    }, [b, j, n]), R = (0, s.useCallback)(() => {
+    }, [E, j, n]), R = (0, s.useCallback)(() => {
         (0, c.p)({
             displayNameStyles: null
         }), u.default.track(x.HAw.DISPLAY_NAME_STYLES_REMOVED)
@@ -46,7 +46,7 @@ function f(e) {
             guildId: n,
             displayNameStyles: null
         })
-    }, [n]), P = void 0 !== N || (null != n ? null != C : null != E);
+    }, [n]), P = void 0 !== v || (null != n ? null != C : null != b);
     return (0, i.jsx)(_.A, {
         title: h.intl.string(p.default["86GtGH"]),
         titleIcon: y ? (0, i.jsx)(a.LpS, {
@@ -55,7 +55,7 @@ function f(e) {
         }) : void 0,
         className: f,
         showPremiumIcon: S,
-        errors: v,
+        errors: N,
         children: (0, i.jsxs)("div", {
             className: T.N,
             children: [(0, i.jsx)(a.Button, {
@@ -68,7 +68,7 @@ function f(e) {
                 size: "sm",
                 text: h.intl.string(p.default.ymq8WQ),
                 onClick: R
-            }), null != n && null != (void 0 !== N ? N : C) && (0, i.jsx)(a.Button, {
+            }), null != n && null != (void 0 !== v ? v : C) && (0, i.jsx)(a.Button, {
                 variant: "secondary",
                 size: "sm",
                 text: h.intl.string(p.default["j/KRxc"]),

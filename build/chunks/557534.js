@@ -1,8 +1,8 @@
 /** chunk id: 557534 params = (module,exports,require) **/
 n.d(t, {
     Ay: () => L,
-    Jd: () => v,
-    O6: () => y,
+    Jd: () => y,
+    O6: () => v,
     gQ: () => j,
     h$: () => b
 });
@@ -34,11 +34,11 @@ function b(e, t, n) {
     return null != t && !!t && !(0, C.ws)(n, e.type)
 }
 
-function y(e, t) {
+function v(e, t) {
     return null == t ? S.fx : e > t ? S.mU : S.TR
 }
 
-function v(e) {
+function y(e) {
     let {
         channel: t,
         disableManageChannels: n,
@@ -73,8 +73,8 @@ function j(e) {
         tabIndex: u,
         forceShowButtons: _,
         hasChannelInfo: p = !1
-    } = e, I = (0, r.bG)([x.A], () => x.A.getGuild(t.getGuildId())), C = (0, r.bG)([m.A], () => m.A.getStageInstanceByChannel(t.id), [t.id]), b = (0, r.bG)([h.Ay], () => h.Ay.getActiveEventByChannel(t.id), [t.id]), y = (0, r.bG)([E.A], () => (0, A.K)(E.A, I, t, C)), v = (0, r.bG)([], () => t?.type === N.rbe.GUILD_VOICE ? T.intl.string(T.t["EE+P0H"]) : T.intl.string(T.t["0jeAXt"])), j = l.useRef(null);
-    if (c || !y || t.isModeratorReportChannel() || t.isThread()) return null;
+    } = e, I = (0, r.bG)([x.A], () => x.A.getGuild(t.getGuildId())), C = (0, r.bG)([m.A], () => m.A.getStageInstanceByChannel(t.id), [t.id]), b = (0, r.bG)([h.Ay], () => h.Ay.getActiveEventByChannel(t.id), [t.id]), v = (0, r.bG)([E.A], () => (0, A.K)(E.A, I, t, C)), y = (0, r.bG)([], () => t?.type === N.rbe.GUILD_VOICE ? T.intl.string(T.t["EE+P0H"]) : T.intl.string(T.t["0jeAXt"])), j = l.useRef(null);
+    if (c || !v || t.isModeratorReportChannel() || t.isThread()) return null;
     let R = (0, i.jsx)(d.Rvf, {
         size: "xs",
         className: S.gE,
@@ -91,7 +91,7 @@ function j(e) {
         })
     })), (0, i.jsx)(o.m, {
         asContainer: !0,
-        text: v,
+        text: y,
         children: (0, i.jsx)(d.DUT, {
             className: a()(S.Xs, _ ? S.Tf : void 0, p ? S.bw : S.UI),
             onClick: function() {
@@ -113,7 +113,7 @@ function j(e) {
                 }
             },
             tabIndex: u,
-            "aria-label": v,
+            "aria-label": y,
             children: R
         })
     })
@@ -169,7 +169,7 @@ class L extends l.PureComponent {
         isDefaultChannel: !1
     };
     renderEditButton() {
-        return (0, i.jsx)(v, {
+        return (0, i.jsx)(y, {
             ...this.props
         })
     }
@@ -193,7 +193,7 @@ class L extends l.PureComponent {
             position: e,
             sortingPosition: t
         } = this.props;
-        return y(e, t)
+        return v(e, t)
     }
     isDisabled() {
         let {

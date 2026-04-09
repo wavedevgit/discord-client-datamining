@@ -41,18 +41,18 @@ let g = s.memo(function(e) {
                     })
             }
         }, [h, t.key]),
-        b = s.useMemo(() => (0, l.debounce)(S, 50), [S]),
-        E = (0, a.w)(b),
+        E = s.useMemo(() => (0, l.debounce)(S, 50), [S]),
+        b = (0, a.w)(E),
         C = n?.(h),
-        N = _?.(),
-        v = (0, c.q)(t);
+        v = _?.(),
+        N = (0, c.q)(t);
     return (0, i.jsx)(u.f, {
-        ref: E,
+        ref: b,
         title: C,
-        collapsedSubtitle: N,
+        collapsedSubtitle: v,
         isExpanded: h,
         onExpandedChange: e => {
-            f.current = "user", v(), p(e)
+            f.current = "user", N(), p(e)
         },
         animate: x,
         children: g.map(e => (0, i.jsx)(d.A, {

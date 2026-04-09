@@ -1,6 +1,6 @@
 /** chunk id: 331969 params = (module,exports,require) **/
 n.d(t, {
-    A: () => E
+    A: () => b
 }), n(321073);
 var i = n(627968),
     s = n(64700),
@@ -28,7 +28,7 @@ function S(e) {
     }), e.setLimit(1 / 0)
 }
 
-function b() {
+function E() {
     return (0, i.jsx)("div", {
         className: p.i1,
         children: (0, i.jsx)(r.Text, {
@@ -40,7 +40,7 @@ function b() {
     })
 }
 
-function E(e) {
+function b(e) {
     let {
         keybind: t
     } = e, n = s.useRef(t);
@@ -68,7 +68,7 @@ function E(e) {
                 align: c.A.Align.STRETCH,
                 children: [(0, i.jsx)("div", {
                     className: p.$X,
-                    children: (0, i.jsx)(N, {
+                    children: (0, i.jsx)(v, {
                         channelId: l
                     })
                 }), (0, i.jsx)(c.A.Child, {
@@ -91,18 +91,18 @@ function C(e) {
             onClose: c,
             onSelect: T
         } = e,
-        E = s.useId(),
+        b = s.useId(),
         C = s.useRef(null),
         {
-            query: N,
-            updateQuery: v,
+            query: v,
+            updateQuery: N,
             queryResults: I
         } = (0, d.A)({
             visible: !0,
             autocompleterResultTypes: f,
             autocompleterBeforeCreateSearchContext: S
         }),
-        j = (t = "" !== N, n = (0, a.yK)([g.Ay, m.A, x.A], () => {
+        j = (t = "" !== v, n = (0, a.yK)([g.Ay, m.A, x.A], () => {
             let e = x.A.getGuildId();
             if (t || null == e) return [];
             let n = [];
@@ -123,7 +123,7 @@ function C(e) {
                 focusedIndex: t,
                 setFocusedIndex: n
             }
-        }(N);
+        }(v);
     s.useEffect(() => {
         let {
             current: e
@@ -139,8 +139,8 @@ function C(e) {
             let e = I[y];
             if (e?.type === A.rD.VOICE_CHANNEL) return e.record.id
         })(),
-        P = R > 0 || "" === N ? {
-            innerId: E,
+        P = R > 0 || "" === v ? {
+            innerId: b,
             innerRole: "listbox",
             innerAriaLabel: h.intl.string(h.t["+N3fW7"]),
             ref: C,
@@ -176,7 +176,7 @@ function C(e) {
             rowHeight: 34
         } : {
             sections: [1],
-            renderRow: () => (0, i.jsx)(b, {}),
+            renderRow: () => (0, i.jsx)(E, {}),
             sectionHeight: 0,
             rowHeight: 52
         };
@@ -187,8 +187,8 @@ function C(e) {
         subtitle: h.intl.string(h.t.q4JpM8),
         actions: void 0,
         input: (0, i.jsx)(r.ksK, {
-            value: N,
-            onChange: v,
+            value: v,
+            onChange: N,
             onKeyDown: function(e) {
                 let t = e.key.toLowerCase();
                 if ("arrowdown" === t || "arrowup" === t || "enter" === t || "escape" === t) switch (e.preventDefault(), t) {
@@ -213,7 +213,7 @@ function C(e) {
             },
             placeholder: h.intl.string(h.t.tG0r7g),
             role: "combobox",
-            "aria-controls": E,
+            "aria-controls": b,
             "aria-expanded": R > 0,
             "aria-activedescendant": R > 0 && null != L ? L : void 0,
             "aria-autocomplete": "list",
@@ -224,7 +224,7 @@ function C(e) {
     })
 }
 
-function N(e) {
+function v(e) {
     let {
         channelId: t
     } = e, {

@@ -25,10 +25,10 @@ let f = (0, o.Ld)(),
             availablePrimaryGuilds: t,
             pendingPrimaryGuildId: n,
             onChange: o
-        } = e, S = s.useMemo(() => new Map(t.map(e => [e.id, e])), [t]), b = (0, l.bG)([_.default], () => (0, c.Zo)(_.default.getCurrentUser()?.primaryGuild).guildId), E = void 0 !== n ? n : b, C = s.useMemo(() => t.reduce((e, t) => (t.profile?.tag != null && e.push({
+        } = e, S = s.useMemo(() => new Map(t.map(e => [e.id, e])), [t]), E = (0, l.bG)([_.default], () => (0, c.Zo)(_.default.getCurrentUser()?.primaryGuild).guildId), b = void 0 !== n ? n : E, C = s.useMemo(() => t.reduce((e, t) => (t.profile?.tag != null && e.push({
             label: t.name,
             value: t.id
-        }), e), []), [t]), N = s.useCallback(e => {
+        }), e), []), [t]), v = s.useCallback(e => {
             if (null == e) return null;
             let t = S.get(e.value);
             if (null == t) return null;
@@ -41,7 +41,7 @@ let f = (0, o.Ld)(),
                 guildIcon: t.icon,
                 guildIconSize: 32
             })
-        }, [S]), v = s.useCallback(e => {
+        }, [S]), N = s.useCallback(e => {
             if (null == e) return null;
             let t = S.get(e.value);
             return null == t || null == t.profile?.tag ? null : (0, i.jsx)(d.j, {
@@ -67,11 +67,11 @@ let f = (0, o.Ld)(),
         }, [S]), j = s.useCallback(e => {
             let t = e[0];
             return null == t ? null : (0, i.jsx)(i.Fragment, {
-                children: N(t)
+                children: v(t)
             })
-        }, [N]), y = s.useCallback(e => {
+        }, [v]), y = s.useCallback(e => {
             o?.(e)
-        }, [o]), O = s.useCallback(e => e === E, [E]), R = s.useCallback(e => e, []), L = s.useCallback(() => {
+        }, [o]), O = s.useCallback(e => e === b, [b]), R = s.useCallback(e => e, []), L = s.useCallback(() => {
             o?.(null)
         }, [o]), P = s.useRef(null);
         return (0, g.A)(P, h._F.GUILD_TAG), (0, i.jsxs)(m.A, {
@@ -88,12 +88,12 @@ let f = (0, o.Ld)(),
                 isSelected: O,
                 options: C,
                 select: y,
-                renderLeading: v,
+                renderLeading: N,
                 renderTrailing: I,
                 renderOptionValue: j,
                 serialize: R,
                 clear: L,
-                clearable: null != E,
+                clearable: null != b,
                 maxVisibleItems: 8,
                 "data-migration-pending": !0
             })]

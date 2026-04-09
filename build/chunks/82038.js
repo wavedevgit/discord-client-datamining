@@ -5,12 +5,12 @@ n.d(t, {
 var i = n(621466),
     r = n(158954),
     a = n(775602),
-    l = n(186111),
-    s = n(430452),
+    s = n(186111),
+    l = n(430452),
     o = n(383501),
     d = n(203982),
-    c = n(350535),
-    _ = n(652215);
+    _ = n(350535),
+    c = n(652215);
 let u = new Set(["PageDown", "PageUp", "Home", "End", "ArrowUp", "ArrowDown", "ArrowLeft", "ArrowRight"]),
     A = new Set(["Alt", "AltGraph", "CapsLock", "Control", "Fn", "FnLock", "Hyper", "Meta", "NumLock", "OS", "ScrollLock", "Shift", "Super", "Symbol", "SymbolLock"]),
     E = new Set(["F1", "F2", "F3", "F4", "F5", "F6", "F7", "F8", "F9", "F10", "F11", "F12", "F13", "F14", "F15", "F16", "F17", "F18", "F19", "F20", "Accept", "ContextMenu", "Find", "ZoomIn", "ZoomOut"]),
@@ -21,6 +21,6 @@ let u = new Set(["PageDown", "PageUp", "Home", "End", "ArrowUp", "ArrowDown", "A
             let n = (0, i.BF)(e)?.activeElement;
             if ((0, i.Cw)(n) || r.rxt.isActive() || A.has(t) || E.has(t) || I.has(t)) return !1;
             let g = null != n && "BODY" === n.tagName;
-            return !(a.A.keyboardModeEnabled && !g && !/^[a-zA-Z0-9]$/.test(t) || d._.hasSubscribers(_.jej.MODAL_CLOSE) || l.A.hasLayers()) && ("Tab" === t && d._.hasSubscribers(_.jej.TEXTAREA_FOCUS) && null != document.querySelector('[data-can-focus="true"]') ? (e.preventDefault(), d._.dispatch(_.jej.TEXTAREA_FOCUS), !1) : !(o.A.isConnected() && s.Ay.getMode() === _.TBI.PUSH_TO_TALK && !s.Ay.isSelfMute() && Object.values(s.Ay.getShortcuts()).map(c.pi).some(t => t.map(e => e.keyCode).includes(e.keyCode))) && void(!e.metaKey && !e.ctrlKey && !u.has(t) && d._.dispatchToLastSubscribed(_.jej.TEXTAREA_FOCUS)))
+            return !(a.A.keyboardModeEnabled && !g && !/^[a-zA-Z0-9]$/.test(t) || d._.hasSubscribers(c.jej.MODAL_CLOSE) || s.A.hasLayers()) && ("Tab" === t && d._.hasSubscribers(c.jej.TEXTAREA_FOCUS) && null != document.querySelector('[data-can-focus="true"]') ? (e.preventDefault(), d._.dispatch(c.jej.TEXTAREA_FOCUS), !1) : !(o.A.isConnected() && l.Ay.getMode() === c.TBI.PUSH_TO_TALK && !l.Ay.isSelfMute() && Object.values(l.Ay.getShortcuts()).map(_.pi).some(t => t.map(e => e.keyCode).includes(e.keyCode))) && void(!e.metaKey && !e.ctrlKey && !u.has(t) && d._.dispatchToLastSubscribed(c.jej.TEXTAREA_FOCUS)))
         }
     }

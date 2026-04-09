@@ -27,8 +27,8 @@ var i = n(627968),
     T = n(342296),
     S = n(616356),
     b = n(961350),
-    y = n(71393),
-    v = n(576705),
+    v = n(71393),
+    y = n(576705),
     j = n(977997),
     R = n(312006),
     O = n(704384),
@@ -105,7 +105,7 @@ let G = 16 / 9,
             largeStream: null != s && g.A.getStageStreamSize(s.id)
         })), R = l.useCallback((e, t) => {
             if (e.type === D.lp.STREAM && 0 === N.filter(t => (0, x._z)(t) === e.id && t.state !== M.XYD.ENDED).length) {
-                if (!(0, E.eo)(s, j.A, y.A, v.A, f.default)[0]) return;
+                if (!(0, E.eo)(s, j.A, v.A, y.A, f.default)[0]) return;
                 (0, h.A9)((0, x.Iy)(e.id), {
                     forceMultiple: t.shiftKey
                 })
@@ -154,7 +154,7 @@ let G = 16 / 9,
                     }
                 })
             },
-            y = (e, t, s, a) => {
+            v = (e, t, s, a) => {
                 switch (e.type) {
                     case D.lp.HIDDEN_STREAM:
                     case D.lp.STREAM:
@@ -219,7 +219,7 @@ let G = 16 / 9,
             user: E,
             width: s,
             isModerator: T,
-            onContextMenu: y,
+            onContextMenu: v,
             popoutType: d
         }) : (0, i.jsx)(P, {
             stageParticipant: t,
@@ -229,7 +229,7 @@ let G = 16 / 9,
             user: E,
             width: s,
             isModerator: T,
-            onContextMenu: y,
+            onContextMenu: v,
             popoutType: d
         })
     })

@@ -4,8 +4,8 @@ a.d(t, {
 });
 var l = a(627968);
 a(64700);
-var n = a(397927),
-    r = a(261225),
+var r = a(397927),
+    n = a(261225),
     s = a(673277),
     i = a(219561),
     o = a(753825);
@@ -23,7 +23,7 @@ let d = {
             ...a
         };
         return (0, l.jsxs)("div", {
-            children: [(0, l.jsx)(n.Text, {
+            children: [(0, l.jsx)(r.Text, {
                 variant: "text-lg/semibold",
                 children: "PLACEHOLDER"
             }), (0, l.jsx)(s.A, {
@@ -31,10 +31,10 @@ let d = {
                     ...d
                 })
             }), (0, l.jsxs)(s.A, {
-                children: [(0, l.jsx)(n.Text, {
+                children: [(0, l.jsx)(r.Text, {
                     variant: "text-lg/semibold",
                     children: "Grid (3):"
-                }), (0, l.jsxs)(r.A, {
+                }), (0, l.jsxs)(n.A, {
                     columns: 3,
                     children: [(0, l.jsx)(o.A, {
                         ...d
@@ -51,7 +51,7 @@ let d = {
                     })]
                 })]
             }), (0, l.jsxs)(s.A, {
-                children: [(0, l.jsx)(n.Text, {
+                children: [(0, l.jsx)(r.Text, {
                     variant: "text-lg/semibold",
                     children: "Stack:"
                 }), (0, l.jsxs)(i.Kp, {

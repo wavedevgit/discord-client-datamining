@@ -36,8 +36,8 @@ var i = n(627968),
     T = n(864310),
     S = n(363487),
     b = n(828162),
-    y = n(490557),
-    v = n(306113),
+    v = n(490557),
+    y = n(306113),
     j = n(220628),
     R = n(867060),
     O = n(800007),
@@ -63,7 +63,7 @@ function K(e) {
         markAsDismissed: s
     } = e;
     return (0, i.jsx)(en, {
-        asset: (0, i.jsx)(y.b, {
+        asset: (0, i.jsx)(v.b, {
             className: a()(w.Sl, w.SV)
         }),
         title: k.intl.formatToPlainString(P.default["Zg/m9K"], {
@@ -136,7 +136,7 @@ function z(e) {
         m = 1 === n.length;
     return (0, i.jsx)(en, {
         size: 1 === n.length ? "video" : "lg",
-        asset: n.length > 1 ? (0, i.jsx)(y.b, {
+        asset: n.length > 1 ? (0, i.jsx)(v.b, {
             className: a()(w.Sl, w.SV)
         }) : (0, i.jsx)("img", {
             alt: "",
@@ -442,7 +442,7 @@ function ee(e) {
         analyticsLocations: u
     } = (0, _.Ay)(A.A.GUILD_POWERUPS_COACHMARK_BOOST_TO_UNLOCK), h = (0, S.A)(t), m = l.useRef(null);
     return (0, i.jsx)(en, {
-        asset: n.type === L.o9.LEVEL ? (0, i.jsx)(v.n, {
+        asset: n.type === L.o9.LEVEL ? (0, i.jsx)(y.n, {
             powerup: n,
             eventTargetRef: m,
             className: w.Lj
@@ -507,7 +507,7 @@ function et(e) {
             fit: "contain",
             className: w.Sl,
             stateMachine: E ? "SM_Main_Int" : "SM_Auto"
-        }) : m?.type === L.o9.LEVEL ? (0, i.jsx)(v.n, {
+        }) : m?.type === L.o9.LEVEL ? (0, i.jsx)(y.n, {
             powerup: m,
             eventTargetRef: x,
             className: w.Lj

@@ -5,20 +5,20 @@ n.d(t, {
 var i = n(735438),
     r = n.n(i),
     a = n(311907),
-    l = n(73153),
-    s = n(933958),
+    s = n(73153),
+    l = n(933958),
     o = n(969151),
     d = n(717125),
-    c = n(698441),
-    _ = n(863005),
+    _ = n(698441),
+    c = n(863005),
     u = n(152007),
     A = n(617617),
     E = n(961350),
     I = n(924985),
     g = n(734057),
     h = n(945886),
-    C = n(760751),
-    p = n(576705),
+    p = n(760751),
+    C = n(576705),
     f = n(222823),
     m = n(309010),
     S = n(543465),
@@ -68,14 +68,14 @@ function P(e) {
     return y.nonPositionalChannelIdUpdate(t)
 }
 
-function M(e) {
+function x(e) {
     let {
         channel: t
     } = e;
     return y.nonPositionalChannelIdUpdate(t.id)
 }
 
-function x(e) {
+function M(e) {
     let {
         id: t
     } = e;
@@ -105,11 +105,11 @@ function H(e) {
     return y.clearGuildId(t)
 }
 
-function F() {
+function B() {
     return y.updateSubtitles()
 }
 
-function B(e) {
+function F(e) {
     let {
         guildScheduledEvent: t
     } = e;
@@ -118,7 +118,7 @@ function B(e) {
 class j extends a.Ay.Store {
     static displayName = "ChannelListStore";
     initialize() {
-        this.waitFor(_.A, E.default, I.A, g.A, h.A, s.Ay, C.A, d.A, c.Ay, u.A, p.A, f.Ay, m.A, S.Ay, A.A)
+        this.waitFor(c.A, E.default, I.A, g.A, h.A, l.Ay, p.A, d.A, _.Ay, u.A, C.A, f.Ay, m.A, S.Ay, A.A)
     }
     getGuild(e, t) {
         let n = y.getGuild(e, t?.guildActionRows ?? [], t?.channelNoticeRows ?? []);
@@ -140,13 +140,13 @@ class j extends a.Ay.Store {
         return t.getCategoryFromSection(t.recentsSectionNumber).getShownChannelIds().length
     }
 }
-let W = new j(l.h, {
-    APPLICATION_FETCH_FAIL: F,
-    APPLICATION_FETCH_SUCCESS: F,
-    APPLICATION_FETCH: F,
-    APPLICATIONS_FETCH_FAIL: F,
-    APPLICATIONS_FETCH_SUCCESS: F,
-    APPLICATIONS_FETCH: F,
+let W = new j(s.h, {
+    APPLICATION_FETCH_FAIL: B,
+    APPLICATION_FETCH_SUCCESS: B,
+    APPLICATION_FETCH: B,
+    APPLICATIONS_FETCH_FAIL: B,
+    APPLICATIONS_FETCH_SUCCESS: B,
+    APPLICATIONS_FETCH: B,
     BACKGROUND_SYNC: G,
     BULK_ACK: function(e) {
         let {
@@ -186,7 +186,7 @@ let W = new j(l.h, {
             y.clearGuildId(e) && (n = !0)
         }), n
     },
-    CONNECTION_OPEN_SUPPLEMENTAL: F,
+    CONNECTION_OPEN_SUPPLEMENTAL: B,
     CONNECTION_OPEN: G,
     CURRENT_USER_UPDATE: G,
     DECAY_READ_STATES: G,
@@ -205,9 +205,9 @@ let W = new j(l.h, {
         return y.updateSubtitles((0, o.D)(t), (0, o.H)(t))
     },
     EMBEDDED_ACTIVITY_LAUNCH_START: function(e) {
-        F()
+        B()
     },
-    EMBEDDED_ACTIVITY_LAUNCH_SUCCESS: F,
+    EMBEDDED_ACTIVITY_LAUNCH_SUCCESS: B,
     ENABLE_AUTOMATIC_ACK: P,
     FETCH_GUILD_EVENTS_FOR_GUILD: function(e) {
         let {
@@ -215,10 +215,10 @@ let W = new j(l.h, {
         } = e;
         return y.updateSubtitles(t)
     },
-    GAMES_DATABASE_FETCH_FAIL: F,
-    GAMES_DATABASE_FETCH: F,
-    GAMES_DATABASE_UPDATE: F,
-    GUILD_APPLICATIONS_FETCH_SUCCESS: F,
+    GAMES_DATABASE_FETCH_FAIL: B,
+    GAMES_DATABASE_FETCH: B,
+    GAMES_DATABASE_UPDATE: B,
+    GUILD_APPLICATIONS_FETCH_SUCCESS: B,
     GUILD_CREATE: U,
     GUILD_DELETE: U,
     GUILD_MEMBER_UPDATE: function(e) {
@@ -234,9 +234,9 @@ let W = new j(l.h, {
     GUILD_ROLE_SUBSCRIPTIONS_FETCH_RESTRICTIONS_FAILURE: D,
     GUILD_ROLE_SUBSCRIPTIONS_FETCH_RESTRICTIONS_SUCCESS: D,
     GUILD_ROLE_UPDATE: D,
-    GUILD_SCHEDULED_EVENT_CREATE: B,
-    GUILD_SCHEDULED_EVENT_DELETE: B,
-    GUILD_SCHEDULED_EVENT_UPDATE: B,
+    GUILD_SCHEDULED_EVENT_CREATE: F,
+    GUILD_SCHEDULED_EVENT_DELETE: F,
+    GUILD_SCHEDULED_EVENT_UPDATE: F,
     GUILD_TOGGLE_COLLAPSE_MUTED: D,
     GUILD_UPDATE: U,
     IMPERSONATE_STOP: D,
@@ -267,7 +267,7 @@ let W = new j(l.h, {
     RECOMPUTE_READ_STATES: G,
     RESORT_THREADS: P,
     SET_RECENTLY_ACTIVE_COLLAPSED: G,
-    THREAD_CREATE: M,
+    THREAD_CREATE: x,
     THREAD_DELETE: function(e) {
         let {
             channel: t
@@ -275,9 +275,9 @@ let W = new j(l.h, {
         return y.nonPositionalChannelUpdate(t)
     },
     THREAD_LIST_SYNC: D,
-    THREAD_MEMBER_UPDATE: x,
-    THREAD_MEMBERS_UPDATE: x,
-    THREAD_UPDATE: M,
+    THREAD_MEMBER_UPDATE: M,
+    THREAD_MEMBERS_UPDATE: M,
+    THREAD_UPDATE: x,
     TRY_ACK: P,
     UPDATE_CHANNEL_DIMENSIONS: P,
     UPDATE_CHANNEL_LIST_SUBTITLES: function(e) {

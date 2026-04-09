@@ -1,6 +1,6 @@
 /** chunk id: 137770 params = (module,exports,require) **/
 n.d(t, {
-    A: () => b
+    A: () => E
 }), n(321073);
 var i = n(627968),
     s = n(64700),
@@ -22,7 +22,7 @@ var i = n(627968),
     f = n(143753),
     S = n(410229);
 
-function b(e) {
+function E(e) {
     let {
         guildBoostSlots: t,
         fractionalPremiumState: l
@@ -37,7 +37,7 @@ function b(e) {
             unappliedSlots: e,
             numActiveSlots: n
         }
-    }, [t]), b = A > (null != c ? x.Ay.getNumIncludedPremiumGuildSubscriptionSlots(c.planId) : 0), C = c?.isPausedOrPausePending === !0 && l === p.xc.NONE;
+    }, [t]), E = A > (null != c ? x.Ay.getNumIncludedPremiumGuildSubscriptionSlots(c.planId) : 0), C = c?.isPausedOrPausePending === !0 && l === p.xc.NONE;
     return 0 === u.length ? null : (0, i.jsxs)("div", {
         className: f.Nr,
         children: [(0, i.jsxs)("div", {
@@ -109,10 +109,10 @@ function b(e) {
                     }
                 })
             })]
-        }), u.map((e, t) => (0, i.jsx)(E, {
+        }), u.map((e, t) => (0, i.jsx)(b, {
             slot: e,
             isLast: t === u.length - 1,
-            isCancelable: b && !(0, _.I5)(e),
+            isCancelable: E && !(0, _.I5)(e),
             isCanceled: (0, _.I5)(e),
             premiumSubscription: c,
             modificationsDisabled: C
@@ -120,7 +120,7 @@ function b(e) {
     })
 }
 
-function E(e) {
+function b(e) {
     let t, {
             slot: n,
             isLast: l,

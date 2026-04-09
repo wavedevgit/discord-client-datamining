@@ -3,8 +3,8 @@ a.d(t, {
     H: () => u
 });
 var l = a(627968),
-    n = a(64700),
-    r = a(735438),
+    r = a(64700),
+    n = a(735438),
     s = a(397927),
     i = a(252561),
     o = a(951707),
@@ -82,7 +82,7 @@ let c = [{
         name: "Interactive H Scroll",
         id: "interactive-h-scroll",
         component: () => {
-            let [e, t] = n.useState(15), [a, u] = n.useState(8), [x, h] = n.useState("xl"), [m, b] = n.useState(!0), p = n.useMemo(() => [...Array(e)].map((e, t) => (0, l.jsx)(s.DUT, {
+            let [e, t] = r.useState(15), [a, u] = r.useState(8), [x, h] = r.useState("xl"), [m, b] = r.useState(!0), p = r.useMemo(() => [...Array(e)].map((e, t) => (0, l.jsx)(s.DUT, {
                 className: d.j,
                 onClick: () => console.log(t),
                 children: (0, l.jsxs)(s.BJc, {
@@ -113,7 +113,7 @@ let c = [{
                         min: 0,
                         value: e.toString(),
                         onChange: e => {
-                            t((0, r.clamp)(+e, 0, 100))
+                            t((0, n.clamp)(+e, 0, 100))
                         },
                         label: "Children Count"
                     })]

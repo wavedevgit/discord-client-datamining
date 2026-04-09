@@ -3,13 +3,13 @@ n.d(t, {
     A: () => r
 }), n(321073);
 var a = n(64700),
-    i = n(808380);
-let l = [i.Y.DESKTOP, i.Y.XBOX, i.Y.PLAYSTATION, i.Y.NINTENDO];
+    l = n(808380);
+let i = [l.Y.DESKTOP, l.Y.XBOX, l.Y.PLAYSTATION, l.Y.NINTENDO];
 
 function r(e) {
     return a.useMemo(() => {
         let t = new Set(e.platforms),
             n = [...t];
-        return !t.has(i.Y.DESKTOP) && (t.has(i.Y.MACOS) || t.has(i.Y.LINUX)) && n.push(i.Y.DESKTOP), n.filter(e => l.includes(e)).sort((e, t) => l.indexOf(e) - l.indexOf(t))
+        return !t.has(l.Y.DESKTOP) && (t.has(l.Y.MACOS) || t.has(l.Y.LINUX)) && n.push(l.Y.DESKTOP), n.filter(e => i.includes(e)).sort((e, t) => i.indexOf(e) - i.indexOf(t))
     }, [e.platforms])
 }

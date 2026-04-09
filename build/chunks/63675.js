@@ -29,18 +29,18 @@ function p(e) {
         guildId: T,
         className: f,
         showPremiumIcon: S = !0,
-        showResetThemeButton: b = !1,
-        forcedDivider: E
+        showResetThemeButton: E = !1,
+        forcedDivider: b
     } = e, C = (0, u.Ay)(t.id, T), {
-        primaryColor: N,
-        secondaryColor: v
+        primaryColor: v,
+        secondaryColor: N
     } = (0, m.A)({
         user: t,
         displayProfile: C,
         pendingThemeColors: s,
         isPreview: !0
     }), I = g.Ay.canUsePremiumProfileCustomization(t), j = null != n ? n : t.getAvatarURL(T, 80), y = (0, d.rdh)(o.A.unsafe_rawColors.PRIMARY_530).hex(), O = (0, c.rh)(j, y, !1);
-    if (null == N || null == v) return null;
+    if (null == v || null == N) return null;
     let R = e => {
         a(r()(e, C?.themeColors) ? void 0 : e)
     };
@@ -49,14 +49,14 @@ function p(e) {
         disabled: !I && !p,
         className: l()(h.__invalid_profileThemesSection, f),
         showPremiumIcon: S,
-        forcedDivider: E,
+        forcedDivider: b,
         children: (0, i.jsxs)("div", {
             className: h.hd,
             children: [(0, i.jsx)("div", {
                 className: h.YX,
                 children: (0, i.jsx)(_.A, {
-                    onChange: e => R([e, v]),
-                    color: N,
+                    onChange: e => R([e, N]),
+                    color: v,
                     suggestedColors: O,
                     showEyeDropper: !0,
                     label: (0, i.jsx)(d.Text, {
@@ -70,8 +70,8 @@ function p(e) {
             }), (0, i.jsx)("div", {
                 className: h.YX,
                 children: (0, i.jsx)(_.A, {
-                    onChange: e => R([N, e]),
-                    color: v,
+                    onChange: e => R([v, e]),
+                    color: N,
                     suggestedColors: O,
                     showEyeDropper: !0,
                     label: (0, i.jsx)(d.Text, {
@@ -82,7 +82,7 @@ function p(e) {
                         children: A.intl.string(A.t["8elvy6"])
                     })
                 })
-            }), b && null != T && (0, i.jsx)("div", {
+            }), E && null != T && (0, i.jsx)("div", {
                 "data-button-hoisted-classname-wrapper": !0,
                 className: h.WA,
                 children: (0, i.jsx)(d.Button, {

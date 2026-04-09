@@ -4,8 +4,8 @@ a.r(t), a.d(t, {
     cmsConfig: () => x
 });
 var l = a(814904),
-    n = a(363040),
-    r = a(799200),
+    r = a(363040),
+    n = a(799200),
     s = a(920324),
     i = a(876333),
     o = a(653006),
@@ -14,7 +14,7 @@ var l = a(814904),
 let u = {
         id: "cms",
         name: "CMS",
-        groups: [s.t, i.F, n.z, r.U, l.D, o.K, d.j, c.Y]
+        groups: [s.t, i.F, r.z, n.U, l.D, o.K, d.j, c.Y]
     },
     x = {
         collections: [u]

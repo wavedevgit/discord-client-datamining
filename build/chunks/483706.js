@@ -1,6 +1,6 @@
 /** chunk id: 483706 params = (module,exports,require) **/
 n.d(t, {
-    p: () => v
+    p: () => N
 });
 var i = n(627968),
     s = n(64700),
@@ -21,7 +21,7 @@ var i = n(627968),
     T = n(842130),
     f = n(985018),
     S = n(288530);
-let b = e => {
+let E = e => {
         let {
             title: t,
             buttonText: n,
@@ -47,7 +47,7 @@ let b = e => {
             })]
         })
     },
-    E = () => {
+    b = () => {
         let e = (0, h.vx)(),
             t = () => {
                 (0, u.openUserSettings)(d.X.CONTENT_AND_SOCIAL_PANEL)
@@ -131,7 +131,7 @@ let b = e => {
             })]
         })
     },
-    N = () => {
+    v = () => {
         let e = (0, x.y3)(),
             t = (0, x.tl)(),
             {
@@ -158,13 +158,13 @@ let b = e => {
                     color: "text-muted",
                     children: f.intl.string(T.default.Sv236e)
                 })]
-            }), (0, i.jsx)(b, {
+            }), (0, i.jsx)(E, {
                 title: f.intl.string(f.t["+o1pDZ"]),
                 buttonText: f.intl.string(f.t.bt75uw),
                 onButtonPress: () => r(p.u9.CONTENT_AND_SOCIAL)
             }), (0, i.jsx)(o.A, {
                 className: S.yF
-            }), (0, i.jsx)(b, {
+            }), (0, i.jsx)(E, {
                 title: f.intl.string(f.t.OAuOHD),
                 buttonText: f.intl.string(f.t.bt75uw),
                 onButtonPress: () => r(p.u9.DATA_AND_PRIVACY)
@@ -177,10 +177,10 @@ let b = e => {
             })]
         })
     },
-    v = () => {
+    N = () => {
         let e = (0, A.A)();
         return 0 === (0, h.vx)().length ? null : (0, i.jsx)("div", {
             className: S.kL,
-            children: e ? (0, i.jsx)(E, {}) : (0, i.jsx)(N, {})
+            children: e ? (0, i.jsx)(b, {}) : (0, i.jsx)(v, {})
         })
     }

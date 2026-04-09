@@ -26,8 +26,8 @@ var i = n(627968),
     T = n(900848),
     S = n(65611),
     b = n(652215),
-    y = n(985018),
-    v = n(355593);
+    v = n(985018),
+    y = n(355593);
 let j = {
     friction: 28,
     tension: 600
@@ -180,10 +180,10 @@ class O extends l.PureComponent {
                 hovered: !1
             }),
             selected: n || g,
-            ariaLabel: null != t ? [y.intl.formatToPlainString(y.t.hKarnZ, {
+            ariaLabel: null != t ? [v.intl.formatToPlainString(v.t.hKarnZ, {
                 name: t,
                 mentions: l
-            }), u ? y.intl.string(y.t["fk1/bX"]) : h ? y.intl.string(y.t["NGg/fm"]) : null].filter(Boolean).join(", ") : "",
+            }), u ? v.intl.string(v.t["fk1/bX"]) : h ? v.intl.string(v.t["NGg/fm"]) : null].filter(Boolean).join(", ") : "",
             onContextMenu: this.handleContextMenu,
             icon: f ? void 0 : this.getChannelIcon(),
             backgroundStyle: f ? "on-hover" : "always",
@@ -202,7 +202,7 @@ class O extends l.PureComponent {
                     hovered: !p && g,
                     selected: !p && n,
                     unread: !p && A,
-                    className: v.I
+                    className: y.I
                 }), (0, i.jsx)(N.A, {
                     channel: e,
                     children: (0, i.jsx)(o.Qk9, {
@@ -240,9 +240,9 @@ let L = l.forwardRef(function(e, t) {
             isIncomingCall: T,
             isOngoingCall: S
         } = (0, u.A)(n),
-        y = !1,
-        v = !1;
-    (N || x) && (y = h === b._Of.VOICE, v = h === b._Of.VIDEO);
+        v = !1,
+        y = !1;
+    (N || x) && (v = h === b._Of.VOICE, y = h === b._Of.VIDEO);
     let j = (0, o.rdh)(o.LU0.modules.guildbar.AVATAR_SIZE);
     return (0, i.jsx)(O, {
         ...e,
@@ -251,8 +251,8 @@ let L = l.forwardRef(function(e, t) {
         unread: C > 0,
         selected: I === n,
         badge: C,
-        audio: y,
-        video: v,
+        audio: v,
+        video: y,
         stream: _,
         isCurrentUserInThisDMCall: N,
         isIncomingCall: T,

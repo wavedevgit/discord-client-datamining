@@ -1,6 +1,6 @@
 /** chunk id: 638006 params = (module,exports,require) **/
 r.d(t, {
-    A: () => j
+    A: () => E
 });
 var n = r(627968),
     l = r(503698),
@@ -9,78 +9,78 @@ var n = r(627968),
     a = r(158954),
     u = r(311907),
     o = r(397927),
-    c = r(287809),
-    d = r(298072),
-    m = r(320447),
-    h = r(466459),
-    p = r(139136),
-    f = r(623373),
-    x = r(561769),
-    g = r(846957),
-    C = r(929283),
-    v = r(245068),
-    A = r(761365),
-    k = r(550674),
-    b = r(797877);
-let I = e => {
+    d = r(287809),
+    c = r(298072),
+    p = r(320447),
+    m = r(466459),
+    x = r(139136),
+    g = r(623373),
+    h = r(561769),
+    C = r(846957),
+    A = r(929283),
+    k = r(245068),
+    I = r(761365),
+    v = r(550674),
+    f = r(797877);
+let _ = e => {
         let {
             product: t,
             isCardHovered: r
-        } = e, l = (0, f.YW)(t), {
+        } = e, l = (0, g.YW)(t), {
             isPurchased: a,
             isPartiallyOwnedBundle: u
-        } = (0, h.h)(t), {
+        } = (0, m.h)(t), {
             enabled: o
-        } = (0, m.P)("ProductCardPreview"), c = l === s.R.PROFILE_EFFECT || l === s.R.BUNDLE && o;
+        } = (0, p.P)("ProductCardPreview"), d = l === s.R.PROFILE_EFFECT || l === s.R.BUNDLE && o;
         return (0, n.jsxs)(n.Fragment, {
             children: [(0, n.jsx)("div", {
-                className: i()(b.mA, {
-                    [b.zj]: (a || u) && !r,
-                    [b.Ge]: c
+                className: i()(f.mA, {
+                    [f.zj]: (a || u) && !r,
+                    [f.Ge]: d
                 }),
-                children: (0, n.jsx)(E, {
+                children: (0, n.jsx)(y, {
                     product: t,
                     isCardHovered: r
                 })
-            }), a && (0, n.jsx)(y, {
+            }), a && (0, n.jsx)(j, {
                 hidden: r
             })]
         })
     },
-    E = e => {
+    y = e => {
         let {
             product: t,
             isCardHovered: r
-        } = e, l = (0, u.bG)([c.default], () => c.default.getCurrentUser()), i = (0, f.YW)(t), a = (0, k.D)(t);
+        } = e, l = (0, u.bG)([d.default], () => d.default.getCurrentUser()), i = (0, g.YW)(t), a = (0, v.D)(t);
         switch (i) {
             case s.R.PROFILE_EFFECT:
-                return (0, n.jsx)(p.A, {
+                return (0, n.jsx)(x.A, {
                     skuId: a.skuId,
                     isHighlighted: r,
                     removeSetHeight: !0,
                     hideBackground: !0
                 });
             case s.R.AVATAR_DECORATION:
-                return (0, n.jsx)(C.i, {
+                return (0, n.jsx)(A.i, {
                     item: a,
                     user: l,
                     isHighlighted: r,
                     avatarSize: o._3J.SIZE_120
                 });
             case s.R.NAMEPLATE:
-                return (0, n.jsx)(A.A, {
+                return (0, n.jsx)(I.A, {
                     nameplate: a,
                     user: l,
                     isHighlighted: r
                 });
             case s.R.BUNDLE:
-                return (0, n.jsx)(v.X, {
+                return (0, n.jsx)(k.X, {
                     product: t,
                     user: l,
                     isHighlighted: r
                 });
             case s.R.EXTERNAL_SKU:
-                return (0, n.jsx)(g.B, {
+                return (0, n.jsx)(C.B, {
                     product: t,
                     animationState: r ? "on" : "off"
                 });
@@ -88,7 +88,7 @@ let I = e => {
                 return null
         }
     },
-    y = e => {
+    j = e => {
         let {
             hidden: t
         } = e;
@@ -97,20 +97,20 @@ let I = e => {
             color: o.LU0.colors.INTERACTIVE_TEXT_ACTIVE,
             width: 40,
             height: 40,
-            className: i()(b.zo, {
-                [b.R]: t
+            className: i()(f.zo, {
+                [f.R]: t
             })
         })
     },
-    j = e => {
+    E = e => {
         let {
             skuId: t,
             isCardHovered: r,
             overrideVariantIndex: l
-        } = e, i = (0, x.Vm)(t), s = (0, d.Q)(i);
+        } = e, i = (0, h.Vm)(t), s = (0, c.Q)(i);
         if (null == i) return null;
-        let a = (0, f.rb)(i, l ?? s);
-        return (0, n.jsx)(I, {
+        let a = (0, g.rb)(i, l ?? s);
+        return (0, n.jsx)(_, {
             product: a,
             isCardHovered: r
         })

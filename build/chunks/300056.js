@@ -4,12 +4,12 @@ a.d(t, {
 });
 var l = a(627968);
 a(64700);
-var n = a(397927),
-    r = a(287944);
+var r = a(397927),
+    n = a(287944);
 let s = {
     name: "Tooltip",
     id: "cms-tooltip",
-    component: e => (0, l.jsx)(r.A, {
+    component: e => (0, l.jsx)(n.A, {
         ...e,
         children: (0, l.jsx)("div", {
             style: {
@@ -18,7 +18,7 @@ let s = {
                 borderRadius: 8,
                 padding: 12
             },
-            children: (0, l.jsx)(n.Text, {
+            children: (0, l.jsx)(r.Text, {
                 variant: "text-lg/semibold",
                 children: "Hover me."
             })

@@ -48,7 +48,7 @@ function b(e) {
             children: t.isForumLikeChannel() ? N.intl.string(N.t.ioVdO2) : N.intl.string(N.t.VNYs2v)
         }), (0, i.jsxs)("div", {
             className: T.p_,
-            children: [s.slice(0, t.isForumLikeChannel() ? s.length : r).map(e => (0, i.jsx)(y, {
+            children: [s.slice(0, t.isForumLikeChannel() ? s.length : r).map(e => (0, i.jsx)(v, {
                 thread: e
             }, e.id)).filter(e => l.isValidElement(e)).slice(0, r), (0, i.jsxs)(c.DUT, {
                 className: T.nM,
@@ -82,7 +82,7 @@ function b(e) {
     })
 }
 
-function y(e) {
+function v(e) {
     let {
         thread: t
     } = e, n = (0, d.bG)([f.default], () => f.default.getUser(t.ownerId)), l = (0, _.JO)(t);

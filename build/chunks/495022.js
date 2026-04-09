@@ -3,46 +3,46 @@ n.d(t, {
     A: () => u
 });
 var i = n(627968),
-    s = n(64700),
-    l = n(397927),
-    a = n(951707),
-    r = n(744064),
-    o = n(674624),
-    d = n(985018),
-    c = n(310031);
+    r = n(64700),
+    a = n(397927),
+    s = n(951707),
+    l = n(744064),
+    c = n(674624),
+    o = n(985018),
+    d = n(310031);
 
 function u(e) {
     let {
         glowingPerkId: t = null
-    } = e, n = (0, o.Ay)(), u = null != t ? n.find(e => e?.id === t) : null, [m, g] = (0, s.useState)(u?.categories[0] ?? o.jW.BEST_OF_NITRO), _ = (0, s.useMemo)(() => n.filter(e => null != e && e.categories.includes(m)), [n, m]);
+    } = e, n = (0, c.Ay)(), u = null != t ? n.find(e => e?.id === t) : null, [_, m] = (0, r.useState)(u?.categories[0] ?? c.jW.BEST_OF_NITRO), p = (0, r.useMemo)(() => n.filter(e => null != e && e.categories.includes(_)), [n, _]);
     return (0, i.jsxs)("div", {
-        className: c.uW,
-        children: [(0, i.jsx)(l.Heading, {
+        className: d.uW,
+        children: [(0, i.jsx)(a.Heading, {
             variant: "display-sm",
-            className: c.R_,
-            children: d.intl.string(d.t["Uh3+CA"])
-        }), (0, i.jsx)(l.VQ0, {
+            className: d.R_,
+            children: o.intl.string(o.t["Uh3+CA"])
+        }), (0, i.jsx)(a.VQ0, {
             type: "top-pill",
             look: "custom",
-            selectedItem: m,
-            onItemSelect: g,
-            className: c.Lq,
-            "aria-label": d.intl.string(d.t["Uh3+CA"]),
-            children: o.w1.map(e => (0, i.jsx)(l.VQ0.Item, {
+            selectedItem: _,
+            onItemSelect: m,
+            className: d.Lq,
+            "aria-label": o.intl.string(o.t["Uh3+CA"]),
+            children: c.w1.map(e => (0, i.jsx)(a.VQ0.Item, {
                 id: e.id,
-                className: c.IC,
+                className: d.IC,
                 children: e.label()
             }, e.id))
-        }), (0, i.jsx)(a.A, {
+        }), (0, i.jsx)(s.A, {
             gap: 20,
-            className: c.jG,
-            children: _.map(e => {
-                if (null != e) return (0, i.jsx)(r.S, {
+            className: d.jG,
+            children: p.map(e => {
+                if (null != e) return (0, i.jsx)(l.S, {
                     ...e,
                     glowing: t === e.id,
-                    containerClassName: c.Ui
+                    containerClassName: d.Ui
                 }, e.id)
             })
-        }, m)]
+        }, _)]
     })
 }

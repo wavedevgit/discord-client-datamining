@@ -28,8 +28,8 @@ var i = n(627968),
     T = n(961350),
     S = n(71393),
     b = n(576705),
-    y = n(287809),
-    v = n(977997),
+    v = n(287809),
+    y = n(977997),
     j = n(376696);
 n(281405);
 var R = n(544105),
@@ -122,7 +122,7 @@ let G = (0, A.J)(function(e) {
         clearTimeout(eA.current)
     }, []);
     let eT = () => {
-            if (!q || !(0, E.eo)(A, v.A, S.A, b.A, p.default)[0]) return;
+            if (!q || !(0, E.eo)(A, y.A, S.A, b.A, p.default)[0]) return;
             let e = {
                 streamType: O.U4.GUILD,
                 ownerId: s.id,
@@ -157,7 +157,7 @@ let G = (0, A.J)(function(e) {
             },
             onMouseLeave: ei ? void 0 : eN,
             children: (0, i.jsx)(C.A, {
-                clickTrap: s?.id === y.default.getCurrentUser()?.id && eu,
+                clickTrap: s?.id === v.default.getCurrentUser()?.id && eu,
                 targetElementRef: ec,
                 user: s,
                 guildId: A.guild_id,

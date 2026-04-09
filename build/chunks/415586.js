@@ -26,8 +26,8 @@ var i = n(627968),
     T = n(823471),
     S = n(37411),
     b = n(652215),
-    y = n(985018),
-    v = n(200393);
+    v = n(985018),
+    y = n(200393);
 
 function j(e) {
     var t;
@@ -70,7 +70,7 @@ function j(e) {
             draftType: I.C.ChannelMessage
         }), (0, i.jsx)(p.Ay, {
             toolbar: G,
-            "aria-label": y.intl.string(y.t.Pwe8tN),
+            "aria-label": v.intl.string(v.t.Pwe8tN),
             children: (0, f.zF)({
                 channel: L,
                 channelName: D,
@@ -92,7 +92,7 @@ function j(e) {
                 }
             })
         }), (0, i.jsx)("div", {
-            className: v.T,
+            className: y.T,
             children: (0, i.jsx)(m.A, {
                 channel: L,
                 guild: M,

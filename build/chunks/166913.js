@@ -21,11 +21,11 @@ var i = n(627968),
     T = n(954571),
     f = n(927578),
     S = n(40185),
-    b = n(526292),
-    E = n(234419),
+    E = n(526292),
+    b = n(234419),
     C = n(690737),
-    N = n(320908),
-    v = n(412260),
+    v = n(320908),
+    N = n(412260),
     I = n(396375),
     j = n(559606),
     y = n(106922),
@@ -36,8 +36,8 @@ var i = n(627968),
     D = n(227273),
     G = n(244778),
     M = n(788868),
-    U = n(652215),
-    k = n(985018),
+    k = n(652215),
+    U = n(985018),
     w = n(211003),
     V = n(419878),
     B = n(288894);
@@ -64,14 +64,14 @@ let F = e => {
             J = null != Q ? (0, f.EL)(Q) : null,
             $ = null != J ? f.Ay.getSkuIdForPlan(J.planId) : null,
             ee = null !== $ && $ !== M.pe.TIER_2 ? M.pe.TIER_2 : null,
-            et = (0, E.V)(),
+            et = (0, b.V)(),
             en = et?.subscription_trial?.sku_id,
-            ei = (0, b.ar)(),
+            ei = (0, E.ar)(),
             es = (0, S.cg)(),
             el = (0, h.Gh)("premium-marketing-settings-page"),
             ea = es ?? !1,
-            er = (0, o.bG)([v.A], () => {
-                let e = v.A.getMarketingComponentByType(r.C.BILLING_SETTINGS_NITRO_GIFT_BANNER);
+            er = (0, o.bG)([N.A], () => {
+                let e = N.A.getMarketingComponentByType(r.C.BILLING_SETTINGS_NITRO_GIFT_BANNER);
                 return null == e || "billingSettingsNitroGiftBanner" !== e.properties.properties.oneofKind ? null : e.properties.properties.billingSettingsNitroGiftBanner
             }),
             {
@@ -150,7 +150,7 @@ let F = e => {
                     onChange: e => z(e),
                     threshold: 0,
                     active: !0,
-                    children: (0, i.jsx)(N.Ay, {
+                    children: (0, i.jsx)(v.Ay, {
                         ref: t,
                         subscriptionTier: ee,
                         className: a()({
@@ -180,7 +180,7 @@ let F = e => {
             }), (0, i.jsx)(d.L, {
                 innerRef: n,
                 onChange: e => {
-                    e && !K && (T.default.track(U.HAw.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
+                    e && !K && (T.default.track(k.HAw.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
                         location_stack: eo
                     }), W(!0))
                 },
@@ -193,7 +193,7 @@ let F = e => {
                 className: V.Kw,
                 width: 112,
                 height: 85,
-                alt: k.intl.string(k.t.X4IxWL)
+                alt: U.intl.string(U.t.X4IxWL)
             })]
         })
     }

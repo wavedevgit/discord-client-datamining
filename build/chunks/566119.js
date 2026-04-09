@@ -1,44 +1,44 @@
 /** chunk id: 566119 params = (module,exports,require) **/
-r.d(t, {
-    CC: () => l,
+n.d(t, {
+    CC: () => i,
     Jv: () => o,
     RQ: () => m,
-    WD: () => s,
-    b: () => _,
+    WD: () => a,
+    b: () => h,
     gP: () => u,
     o8: () => c,
     ue: () => d
 });
-var n = r(954571),
-    a = r(652215);
+var r = n(954571),
+    l = n(652215);
 
-function i(e, t) {
-    n.default.track(a.HAw.PREMIUM_TENURE_REWARDS_ORBS_CTA_CLICKED, {
+function s(e, t) {
+    r.default.track(l.HAw.PREMIUM_TENURE_REWARDS_ORBS_CTA_CLICKED, {
         cta_type: e,
         program_state: t
     })
 }
-let s = e => {
-        i("shop_orbs", e)
+let a = e => {
+        s("shop_orbs", e)
     },
-    l = e => {
-        i("view_billing", e)
+    i = e => {
+        s("view_billing", e)
     },
     d = e => {
-        i("update_billing", e)
+        s("update_billing", e)
     },
     o = e => {
-        i("resubscribe", e)
+        s("resubscribe", e)
     },
     c = e => {
-        i("orbs_card_helpdesk", e)
+        s("orbs_card_helpdesk", e)
     },
     u = () => {
-        i("balance_popover_upsell")
+        s("balance_popover_upsell")
     },
     m = () => {
-        i("balance_popover_next_drop")
+        s("balance_popover_next_drop")
     },
-    _ = () => {
-        i("balance_popover_helpdesk")
+    h = () => {
+        s("balance_popover_helpdesk")
     }

@@ -4,8 +4,8 @@ a.d(t, {
 });
 var l = a(627968);
 a(64700);
-var n = a(397927),
-    r = a(219561),
+var r = a(397927),
+    n = a(219561),
     s = a(261225),
     i = a(673277),
     o = a(427941);
@@ -18,7 +18,7 @@ let d = {
             secondBackgroundImage: a
         } = e;
         return (0, l.jsxs)("div", {
-            children: [(0, l.jsx)(n.Text, {
+            children: [(0, l.jsx)(r.Text, {
                 variant: "text-lg/semibold",
                 children: "Background Image just takes children and displays them in with a background image behind them, and some padding to add inset"
             }), (0, l.jsx)(o.A, {
@@ -28,12 +28,12 @@ let d = {
                 children: (0, l.jsx)(i.A, {
                     children: (0, l.jsx)(s.A, {
                         columns: 2,
-                        children: (0, l.jsxs)(r.Kp, {
+                        children: (0, l.jsxs)(n.Kp, {
                             direction: "vertical",
-                            children: [(0, l.jsx)(n.Heading, {
+                            children: [(0, l.jsx)(r.Heading, {
                                 variant: "heading-xxl/bold",
                                 children: "What can I get with orbs?"
-                            }), (0, l.jsx)(n.Text, {
+                            }), (0, l.jsx)(r.Text, {
                                 variant: "text-md/normal",
                                 children: "Spend Orbs on exclusives or grab your favorites from the shop"
                             })]
@@ -41,7 +41,7 @@ let d = {
                     })
                 })
             }), (0, l.jsx)(i.A, {
-                children: (0, l.jsx)(n.Text, {
+                children: (0, l.jsx)(r.Text, {
                     variant: "text-lg/semibold",
                     children: "It also automatically handles animated asset urls"
                 })
@@ -52,12 +52,12 @@ let d = {
                 children: (0, l.jsx)(i.A, {
                     children: (0, l.jsx)(s.A, {
                         columns: 2,
-                        children: (0, l.jsxs)(r.Kp, {
+                        children: (0, l.jsxs)(n.Kp, {
                             direction: "vertical",
-                            children: [(0, l.jsx)(n.Heading, {
+                            children: [(0, l.jsx)(r.Heading, {
                                 variant: "heading-xxl/bold",
                                 children: "What can I get with orbs?"
-                            }), (0, l.jsx)(n.Text, {
+                            }), (0, l.jsx)(r.Text, {
                                 variant: "text-md/normal",
                                 children: "Spend Orbs on exclusives or grab your favorites from the shop"
                             })]

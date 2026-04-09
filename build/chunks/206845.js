@@ -3,8 +3,8 @@ a.d(t, {
     A: () => g
 });
 var l = a(627968),
-    n = a(64700),
-    r = a(735438),
+    r = a(64700),
+    n = a(735438),
     s = a(451988),
     i = a(397927),
     o = a(954571),
@@ -26,8 +26,8 @@ function g(e) {
         "aria-label": g,
         delay: f = b,
         dataMeticulousIgnore: j
-    } = e, [v, y] = n.useState(0), [k, _] = n.useState(!1), [A, S] = n.useState(!1), [C] = n.useState(() => new s.Ep), [I] = n.useState(() => new s.Ep);
-    if (n.useEffect(() => () => {
+    } = e, [v, y] = r.useState(0), [k, A] = r.useState(!1), [_, S] = r.useState(!1), [C] = r.useState(() => new s.Ep), [I] = r.useState(() => new s.Ep);
+    if (r.useEffect(() => () => {
             C.stop(), I.stop()
         }, [C, I]), !d.p5) return (0, l.jsx)(l.Fragment, {
         children: c({})
@@ -37,7 +37,7 @@ function g(e) {
     return (0, l.jsx)(i.STz, {
         text: (() => {
             if (!k) return t;
-            let e = (0, r.clamp)(v - 1, 0, p.length - 1),
+            let e = (0, n.clamp)(v - 1, 0, p.length - 1),
                 a = p[e] ?? p[0];
             return (0, l.jsx)(i.bfh, {
                 isShaking: T,
@@ -48,20 +48,20 @@ function g(e) {
         "aria-label": g,
         dataMeticulousIgnore: j,
         color: w,
-        forceOpen: A,
+        forceOpen: _,
         onAnimationRest: (e, t) => {
-            !A && k && t.phase === u.lLE.LEAVE && _(!1)
+            !_ && k && t.phase === u.lLE.LEAVE && A(!1)
         },
         children: e => {
             let {
                 onClick: t,
                 onMouseEnter: l,
-                ...n
+                ...r
             } = e;
             return c({
-                ...n,
+                ...r,
                 onClick: () => {
-                    t?.(), x?.(), (0, d.C)(a), o.default.track(u.HAw.TEXT_COPIED), A || y(v + 1), S(!0), _(!0), C.start(h, () => S(!1)), I.start(m, () => y(0))
+                    t?.(), x?.(), (0, d.C)(a), o.default.track(u.HAw.TEXT_COPIED), _ || y(v + 1), S(!0), A(!0), C.start(h, () => S(!1)), I.start(m, () => y(0))
                 },
                 onMouseEnter: () => {
                     k ? (C.stop(), S(!1)) : l?.()

@@ -1,7 +1,7 @@
 /** chunk id: 743987 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => A
+    A: () => f
 });
 var i = n(627968);
 n(64700);
@@ -15,53 +15,53 @@ var s = n(417597),
     u = n(71393),
     h = n(661191),
     p = n(985018),
-    f = n(508298);
+    A = n(508298);
 
-function A(e) {
+function f(e) {
     let {
         userId: t,
         guildId: n,
-        textClassName: A,
-        tooltipDelay: _
-    } = e, g = (0, s.bG)([d.default], () => d.default.locale), m = (0, s.bG)([u.A], () => null != n ? u.A.getGuild(n) : null), x = (0, s.bG)([c.Ay], () => null != n ? c.Ay.getMember(n, t) : null), E = (0, r.An)(h.default.extractTimestamp(t), g), y = (0, r.An)(x?.joinedAt, g);
+        textClassName: f,
+        tooltipDelay: g
+    } = e, _ = (0, s.bG)([d.default], () => d.default.locale), m = (0, s.bG)([u.A], () => null != n ? u.A.getGuild(n) : null), x = (0, s.bG)([c.Ay], () => null != n ? c.Ay.getMember(n, t) : null), E = (0, r.An)(h.default.extractTimestamp(t), _), y = (0, r.An)(x?.joinedAt, _);
     return null == m || null == x ? (0, i.jsx)(a.Text, {
         variant: "text-sm/normal",
-        className: A,
+        className: f,
         children: E
     }) : (0, i.jsxs)("div", {
-        className: f.y9,
+        className: A.y9,
         children: [(0, i.jsxs)("div", {
-            className: f.R1,
+            className: A.R1,
             children: [(0, i.jsx)(l.m, {
                 text: p.intl.string(p.t.uvGmCx),
-                delay: _,
+                delay: g,
                 children: (0, i.jsx)(a.pVd, {
                     size: "custom",
                     width: 28,
                     height: 28,
                     color: "currentColor",
-                    className: f.Mg
+                    className: A.Mg
                 })
             }), (0, i.jsx)(a.Text, {
                 variant: "text-sm/normal",
-                className: A,
+                className: f,
                 children: E
             })]
         }), (0, i.jsx)("div", {
-            className: f.yF
+            className: A.yF
         }), (0, i.jsxs)("div", {
-            className: f.R1,
+            className: A.R1,
             children: [(0, i.jsx)(l.m, {
                 text: m.name,
-                delay: _,
+                delay: g,
                 children: (0, i.jsx)(o.Ay, {
                     guild: m,
                     size: o.Ay.Sizes.SMOL,
-                    className: f.$f
+                    className: A.$f
                 })
             }), (0, i.jsx)(a.Text, {
                 variant: "text-sm/normal",
-                className: A,
+                className: f,
                 children: y
             })]
         })]

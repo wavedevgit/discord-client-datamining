@@ -1,6 +1,6 @@
 /** chunk id: 86638 params = (module,exports,require) **/
 n.d(t, {
-    A: () => F
+    A: () => W
 });
 var i = n(627968),
     a = n(64700),
@@ -92,7 +92,7 @@ function y(e) {
     }) : null, {
         label: U,
         icon: M,
-        isPromptingPurchase: W
+        isPromptingPurchase: F
     } = (0, N.h)({
         sku: t.sku,
         wishlistOwner: n,
@@ -118,7 +118,7 @@ function y(e) {
             }),
             children: [v, (0, i.jsx)(N.A, {
                 spec: G,
-                onClick: W ? L : O,
+                onClick: F ? L : O,
                 isHoveringOrFocusing: _,
                 label: U,
                 icon: M
@@ -215,7 +215,7 @@ function M(e) {
     })
 }
 
-function W(e) {
+function F(e) {
     let {
         item: t,
         isItemOwned: n,
@@ -250,7 +250,7 @@ function W(e) {
     })
 }
 
-function F(e) {
+function W(e) {
     let {
         item: t,
         wishlistOwner: n,
@@ -287,7 +287,7 @@ function F(e) {
                 ...r
             });
         case O.EZt.PREMIUM:
-            return (0, i.jsx)(W, {
+            return (0, i.jsx)(F, {
                 item: t,
                 analyticsLocations: o,
                 isHoveringOrFocusing: _,

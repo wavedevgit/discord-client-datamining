@@ -1,72 +1,72 @@
 /** chunk id: 32246 params = (module,exports,require) **/
-s.d(t, {
+a.d(t, {
     A: () => g
 });
-var l = s(627968);
-s(64700);
-var a = s(503698),
-    n = s.n(a),
-    i = s(559949),
-    r = s(158954),
-    o = s(990078),
-    d = s(397927),
-    c = s(945096),
-    u = s(73392),
-    m = s(750656),
-    _ = s(927961),
-    x = s(985018),
-    p = s(399778),
-    h = s(696270);
+var n = a(627968);
+a(64700);
+var s = a(503698),
+    l = a.n(s),
+    r = a(559949),
+    i = a(158954),
+    o = a(990078),
+    c = a(397927),
+    d = a(945096),
+    u = a(73392),
+    m = a(750656),
+    _ = a(927961),
+    p = a(985018),
+    h = a(399778),
+    x = a(696270);
 
 function g(e) {
     let {
         selectedFontId: t,
-        setSelectedFontId: s,
-        displayName: a,
+        setSelectedFontId: a,
+        displayName: s,
         className: g
-    } = e, f = t !== i.x.DEFAULT, N = (0, c.Xr)(a);
-    return (0, l.jsxs)("div", {
+    } = e, f = t !== r.x.DEFAULT, C = (0, d.Xr)(s);
+    return (0, n.jsxs)("div", {
         className: g,
-        children: [(0, l.jsxs)(r.DZT, {
+        children: [(0, n.jsxs)(i.DZT, {
             variant: "heading-md/semibold",
-            className: p.s,
-            children: [x.intl.string(_.default.nP0ngb), (0, l.jsx)(d.tvc, {
+            className: h.s,
+            children: [p.intl.string(_.default.nP0ngb), (0, n.jsx)(c.tvc, {
                 size: "xs",
-                color: d.LU0.colors.TEXT_DEFAULT
+                color: c.LU0.colors.TEXT_DEFAULT
             })]
-        }), (0, l.jsx)(r.BJc, {
+        }), (0, n.jsx)(i.BJc, {
             direction: "horizontal",
             align: "center",
             wrap: !0,
             children: m.rA.map(e => {
-                let a = (0, u.p)(e),
-                    i = e === t;
-                return (0, l.jsx)(o.m, {
-                    text: x.intl.string(a.name),
+                let s = (0, u.p)(e),
+                    r = e === t;
+                return (0, n.jsx)(o.m, {
+                    text: p.intl.string(s.name),
                     asContainer: !0,
-                    children: (0, l.jsx)(d.DUT, {
-                        className: n()(h.SO, {
-                            [h.wH]: i
+                    children: (0, n.jsx)(c.DUT, {
+                        className: l()(x.SO, {
+                            [x.wH]: r
                         }),
-                        onClick: () => s(e),
-                        "aria-label": x.intl.string(a.name),
-                        children: (0, l.jsx)(r.EYj, {
+                        onClick: () => a(e),
+                        "aria-label": p.intl.string(s.name),
+                        children: (0, n.jsx)(i.EYj, {
                             variant: "text-lg/semibold",
-                            color: i ? "text-strong" : "text-default",
-                            className: n()(h.FH, a.className),
+                            color: r ? "text-strong" : "text-default",
+                            className: l()(x.FH, s.className),
                             children: "Gg"
                         })
                     })
                 }, e)
             })
-        }), f && N && (0, l.jsxs)("div", {
-            className: h.Lb,
-            children: [(0, l.jsx)(r.mir, {
+        }), f && C && (0, n.jsxs)("div", {
+            className: x.Lb,
+            children: [(0, n.jsx)(i.mir, {
                 size: "lg"
-            }), (0, l.jsx)(r.EYj, {
+            }), (0, n.jsx)(i.EYj, {
                 variant: "text-sm/normal",
                 color: "text-subtle",
-                children: x.intl.string(_.default["+O1xL2"])
+                children: p.intl.string(_.default["+O1xL2"])
             })]
         })]
     })

@@ -1,59 +1,59 @@
 /** chunk id: 18396 params = (module,exports,require) **/
-s.d(t, {
-    A: () => h
+a.d(t, {
+    A: () => x
 });
-var l = s(627968),
-    a = s(64700),
-    n = s(508425),
-    i = s(158954),
-    r = s(397927),
-    o = s(48736),
-    d = s(954571),
-    c = s(750656),
-    u = s(652215),
-    m = s(927961),
-    _ = s(985018),
-    x = s(533413),
-    p = s(399778);
+var n = a(627968),
+    s = a(64700),
+    l = a(508425),
+    r = a(158954),
+    i = a(397927),
+    o = a(48736),
+    c = a(954571),
+    d = a(750656),
+    u = a(652215),
+    m = a(927961),
+    _ = a(985018),
+    p = a(533413),
+    h = a(399778);
 
-function h(e) {
+function x(e) {
     let {
         selectedColors: t,
-        setSelectedColors: s,
-        defaultColor: h,
+        setSelectedColors: a,
+        defaultColor: x,
         selectedEffectId: g,
         className: f
-    } = e, N = g === n.z.GRADIENT, C = (0, a.useCallback)(e => {
-        s([e]), d.default.track(u.HAw.DISPLAY_NAME_STYLES_COLOR_SELECTED, {
-            default: e === h,
+    } = e, C = g === l.z.GRADIENT, v = (0, s.useCallback)(e => {
+        a([e]), c.default.track(u.HAw.DISPLAY_NAME_STYLES_COLOR_SELECTED, {
+            default: e === x,
             colors: [e]
         })
-    }, [s, h]), A = (0, a.useCallback)(e => {
-        s(e), d.default.track(u.HAw.DISPLAY_NAME_STYLES_COLOR_SELECTED, {
+    }, [a, x]), N = (0, s.useCallback)(e => {
+        a(e), c.default.track(u.HAw.DISPLAY_NAME_STYLES_COLOR_SELECTED, {
             default: !1,
             colors: e
         })
-    }, [s]);
-    return (0, l.jsxs)("div", {
+    }, [a]);
+    return (0, n.jsxs)("div", {
         className: f,
-        children: [(0, l.jsxs)(i.DZT, {
+        children: [(0, n.jsxs)(r.DZT, {
             variant: "heading-md/semibold",
-            className: p.s,
-            children: [_.intl.string(m.default.JOpi7z), (0, l.jsx)(r.tvc, {
+            className: h.s,
+            children: [_.intl.string(m.default.JOpi7z), (0, n.jsx)(i.tvc, {
                 size: "xs",
-                color: r.LU0.colors.TEXT_DEFAULT
+                color: i.LU0.colors.TEXT_DEFAULT
             })]
-        }), (0, l.jsx)(o.default, {
-            className: x.Ei,
-            colorContainerClassName: x.rx,
-            defaultColor: h,
-            colors: N ? c.Wf : c.Jl,
+        }), (0, n.jsx)(o.default, {
+            className: p.Ei,
+            colorContainerClassName: p.rx,
+            defaultColor: x,
+            colors: C ? d.Wf : d.Jl,
             value: t[0],
             secondaryValue: t[1] ?? void 0,
-            onChange: C,
-            onChangeGradientColors: A,
-            isGradient: N,
-            gradientButtonClassName: x.xr,
+            onChange: v,
+            onChangeGradientColors: N,
+            isGradient: C,
+            gradientButtonClassName: p.xr,
             gradientDegrees: 90,
             allowBlackCustomColor: !0,
             customPickerPosition: "top"

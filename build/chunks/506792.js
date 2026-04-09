@@ -33,7 +33,7 @@ let x = (0, d.a)(function(e) {
     } = e, b = (0, r.bG)([u.A, h.Ay], () => {
         let e = h.Ay.getDirectoryChannelIds(t.id);
         return 0 === e.length ? null : u.A.getChannel(e[0])
-    }), y = (0, r.bG)([u.A], () => u.A.getChannel(b?.parent_id)), v = s === b?.id, j = (0, c.Ay)(b), R = (0, r.bG)([A.A], () => null != y ? A.A.can(g.xBc.MANAGE_CHANNELS, y) : null != t && A.A.can(g.xBc.MANAGE_CHANNELS, t)), O = l.useCallback(e => {
+    }), v = (0, r.bG)([u.A], () => u.A.getChannel(b?.parent_id)), y = s === b?.id, j = (0, c.Ay)(b), R = (0, r.bG)([A.A], () => null != v ? A.A.can(g.xBc.MANAGE_CHANNELS, v) : null != t && A.A.can(g.xBc.MANAGE_CHANNELS, t)), O = l.useCallback(e => {
         null != b && (0, o.L3)(e, async () => {
             let {
                 default: e
@@ -50,14 +50,14 @@ let x = (0, d.a)(function(e) {
         D = (0, i.jsx)("div", {
             className: a()(L, {
                 [f.r9]: M,
-                [f.wH]: v
+                [f.wH]: y
             }),
             "data-dnd-name": j,
             children: (0, i.jsxs)(m.Ay, {
                 className: f.Ki,
                 channel: b,
                 guild: t,
-                selected: v,
+                selected: y,
                 onContextMenu: O,
                 forceInteractable: !0,
                 resolvedUnreadSetting: p.e.ONLY_MENTIONS,

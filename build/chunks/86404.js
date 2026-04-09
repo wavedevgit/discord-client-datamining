@@ -4,8 +4,8 @@ t.d(n, {
 });
 var i = t(627968),
     a = t(64700),
-    r = t(397927),
-    l = t(163126),
+    l = t(397927),
+    r = t(163126),
     o = t(688810),
     s = t(183555),
     d = t(913453),
@@ -28,15 +28,15 @@ function g(e) {
     } = (0, o.Ay)(), {
         context: x,
         trackUserProfileAction: I
-    } = (0, s.NJ)(), b = (0, l.A)();
+    } = (0, s.NJ)(), b = (0, r.A)();
     return a.useEffect(() => {
         (0, c.A)(n.id, b)
-    }, [n.id, b]), (0, i.jsx)(r.IpV, {
+    }, [n.id, b]), (0, i.jsx)(l.IpV, {
         className: A.DK,
         fade: !0,
         children: null == f ? (0, i.jsx)("div", {
             className: A.Ie,
-            children: (0, i.jsx)(r.y$y, {})
+            children: (0, i.jsx)(l.y$y, {})
         }) : 0 === f.length ? (0, i.jsxs)("div", {
             className: A.Ie,
             children: [(0, i.jsx)("div", {
@@ -49,11 +49,11 @@ function g(e) {
             let {
                 key: n,
                 user: a,
-                status: r
+                status: l
             } = e;
             return (0, i.jsx)(u.A, {
                 user: a,
-                status: r,
+                status: l,
                 guildId: t,
                 channelId: g,
                 onSelect: () => {

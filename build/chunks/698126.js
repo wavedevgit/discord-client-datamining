@@ -1,6 +1,6 @@
 /** chunk id: 698126 params = (module,exports,require) **/
 n.d(t, {
-    A: () => y
+    A: () => v
 });
 var i = n(627968),
     l = n(64700),
@@ -90,7 +90,7 @@ class S extends x.Ay {
     }
 }
 let b = (0, c.a)(S),
-    y = l.memo(function(e) {
+    v = l.memo(function(e) {
         let {
             channel: t,
             guild: n,

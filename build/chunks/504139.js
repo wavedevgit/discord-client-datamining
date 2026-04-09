@@ -17,11 +17,11 @@ function c(e, t, n, c, u) {
         p = u.session_id;
     if (null == p) return null;
     let {
-        icon: f,
-        title: A,
-        body: _
+        icon: A,
+        title: f,
+        body: g
     } = (0, l.TB)(e, t, n), {
-        trackView: g,
+        trackView: _,
         trackClick: m
     } = (0, r.Y)(o.KS.ActivityInvite, {
         notif_type: o.KS.ActivityInvite,
@@ -35,12 +35,12 @@ function c(e, t, n, c, u) {
         activity_name: u.name
     });
     return {
-        icon: f,
-        title: A,
-        body: _,
+        icon: A,
+        title: f,
+        body: g,
         hint: e => (0, a.sI)(e, (0, r.J)(), d.t.aB5xLy),
         onNotificationShow: () => {
-            g()
+            _()
         },
         confirmText: d.intl.string(d.t.VJlc0S),
         onConfirmClick: (l, a) => {

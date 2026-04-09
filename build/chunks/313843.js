@@ -1,15 +1,15 @@
 /** chunk id: 313843 params = (module,exports,require) **/
 n.d(t, {
     Ay: () => E,
-    Iv: () => _,
-    QT: () => j,
-    _R: () => f,
-    j5: () => p
+    Iv: () => p,
+    QT: () => b,
+    _R: () => g,
+    j5: () => _
 });
 var a = n(627968),
-    i = n(64700),
-    l = n(503698),
-    r = n.n(l),
+    l = n(64700),
+    i = n(503698),
+    r = n.n(i),
     s = n(158954),
     o = n(486020),
     c = n(541830),
@@ -17,30 +17,30 @@ var a = n(627968),
     u = n(459746),
     m = n(503364),
     x = n(305080),
-    g = n(985018),
-    h = n(605408);
+    h = n(985018),
+    f = n(605408);
 
-function f(e) {
+function g(e) {
     let {
         game: t,
         application: n,
-        show: i,
-        onClose: l,
+        show: l,
+        onClose: i,
         trackAction: o
     } = e, c = t.name ?? n?.name, d = n.getIconURL(80);
     return (0, a.jsxs)("div", {
-        className: h.y5,
+        className: f.y5,
         children: [(0, a.jsx)("div", {
-            className: r()(h.nI, i && h.hD)
+            className: r()(f.nI, l && f.hD)
         }), (0, a.jsxs)("div", {
-            className: r()(h.A1, i && h.g8),
+            className: r()(f.A1, l && f.g8),
             children: [null != d && (0, a.jsx)("img", {
                 src: d,
                 alt: "",
-                className: h.V$,
+                className: f.V$,
                 draggable: !1
             }), (0, a.jsxs)("div", {
-                className: h.hm,
+                className: f.hm,
                 children: [(0, a.jsx)(s.DZT, {
                     variant: "heading-md/semibold",
                     lineClamp: 1,
@@ -51,25 +51,25 @@ function f(e) {
             })]
         }), (0, a.jsx)(m.N, {
             game: t,
-            onClose: l,
-            className: h.HK,
+            onClose: i,
+            className: f.HK,
             trackAction: o
         })]
     })
 }
 
-function _(e) {
+function p(e) {
     let {
         show: t
     } = e;
     return (0, a.jsx)("div", {
-        className: r()(h.nI, h.Jn, t && h.hD)
+        className: r()(f.nI, f.Jn, t && f.hD)
     })
 }
-let p = i.forwardRef(function(e, t) {
+let _ = l.forwardRef(function(e, t) {
     let {
         game: n
-    } = e, [l] = i.useState(() => Math.random()), r = i.useMemo(() => {
+    } = e, [i] = l.useState(() => Math.random()), r = l.useMemo(() => {
         if (null != n.bannerHash) return o.Ay.getGameAssetURL({
             id: n.id,
             hash: n.bannerHash,
@@ -77,20 +77,20 @@ let p = i.forwardRef(function(e, t) {
             keepAspectRatio: !0
         }) ?? "";
         if (null != n.screenshotUrls && n.screenshotUrls.length > 0) {
-            let e = Math.floor(l * n.screenshotUrls.length);
+            let e = Math.floor(i * n.screenshotUrls.length);
             return n.screenshotUrls[e]
         }
         return ""
-    }, [n.id, n.bannerHash, n.screenshotUrls, l]);
+    }, [n.id, n.bannerHash, n.screenshotUrls, i]);
     return (0, d.uJ)(r) ? null : (0, a.jsxs)("div", {
         ref: t,
         children: [(0, a.jsx)("div", {
-            className: h.y1,
+            className: f.y1,
             style: {
                 backgroundImage: `url("${r}")`
             }
         }), (0, a.jsx)("div", {
-            className: h.N4
+            className: f.N4
         })]
     })
 });
@@ -110,7 +110,7 @@ let A = e => {
         rank: t
     } = e;
     return (0, a.jsxs)("div", {
-        className: h.Qc,
+        className: f.Qc,
         children: [(0, a.jsx)(s.OR, {
             size: "xxs",
             color: "currentColor",
@@ -118,25 +118,25 @@ let A = e => {
         }), (0, a.jsx)(s.EYj, {
             variant: "text-xs/bold",
             color: "none",
-            children: g.intl.formatToPlainString(g.t.ehZXlZ, {
+            children: h.intl.formatToPlainString(h.t.ehZXlZ, {
                 rank: t
             })
         })]
     })
 };
 
-function j(e) {
+function b(e) {
     let {
         game: t,
         application: n,
-        isTwoColumn: i
+        isTwoColumn: l
     } = e;
     return (0, a.jsx)("div", {
-        className: i ? h.n8 : h.FS,
+        className: l ? f.n8 : f.FS,
         children: (0, a.jsx)(u.A, {
             game: t,
             application: n,
-            className: h.xe,
+            className: f.xe,
             size: u.w.LARGE
         })
     })
@@ -145,12 +145,12 @@ let E = function(e) {
     let {
         game: t,
         application: n,
-        onSetCompactBarScrollThreshold: l,
+        onSetCompactBarScrollThreshold: i,
         showCompactBar: o
     } = e, {
         isTwoColumn: c
-    } = (0, x.c)(), d = i.useRef(null), m = i.useRef(null);
-    i.useEffect(() => {
+    } = (0, x.c)(), d = l.useRef(null), m = l.useRef(null);
+    l.useEffect(() => {
         let e = d.current,
             t = m.current;
         if (null == e || null == t) return;
@@ -160,28 +160,28 @@ let E = function(e) {
             for (; null != a && a !== t;) n += a.offsetTop, a = a.offsetParent;
             return n
         }(t, e);
-        n > 0 && l?.(n)
-    }, [l]);
-    let g = t.name ?? n?.name;
+        n > 0 && i?.(n)
+    }, [i]);
+    let h = t.name ?? n?.name;
     return (0, a.jsxs)("div", {
         ref: d,
-        className: r()(h.ap, o && h.Gh),
+        className: r()(f.ap, o && f.Gh),
         children: [c && null != t && (0, a.jsx)("div", {
-            className: h.Tf,
+            className: f.Tf,
             children: (0, a.jsx)(u.A, {
                 game: t,
                 application: n,
-                className: h.w$,
+                className: f.w$,
                 size: u.w.LARGE
             })
         }), (0, a.jsxs)("div", {
-            className: h.lu,
+            className: f.lu,
             children: [null != t.l30Rank && (0, a.jsx)(A, {
                 rank: t.l30Rank
             }), (0, a.jsx)(s.DZT, {
                 ref: m,
                 variant: "heading-xxl/semibold",
-                children: g
+                children: h
             }), (0, a.jsx)(v, {
                 game: t
             })]

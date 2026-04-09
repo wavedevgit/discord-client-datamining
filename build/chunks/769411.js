@@ -38,7 +38,7 @@ let d = "url(#gradient)",
                         return
                 }
             })(g),
-            b = ((e, t) => {
+            E = ((e, t) => {
                 switch (e) {
                     case r.BN.NITRO_LOGO:
                         return t ? "0.3" : "0.2";
@@ -48,7 +48,7 @@ let d = "url(#gradient)",
                         return
                 }
             })(g, f),
-            E = _ ?? ((e, t) => {
+            b = _ ?? ((e, t) => {
                 switch (t) {
                     case r.BN.NITRO_GEM:
                     case r.BN.AVATAR_DECO:
@@ -72,9 +72,9 @@ let d = "url(#gradient)",
                     cx: "50%",
                     cy: "50%",
                     stroke: S,
-                    strokeOpacity: b
+                    strokeOpacity: E
                 }), (0, i.jsx)("circle", {
-                    stroke: E,
+                    stroke: b,
                     strokeWidth: m,
                     strokeLinecap: "round",
                     strokeDasharray: `${A} ${A}`,

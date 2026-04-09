@@ -40,8 +40,8 @@ function T(e) {
     } = (0, m.X8)({
         location: "NotificationsInboxButtonInner"
     }), {
-        badge: y,
-        badgeDimensions: v,
+        badge: v,
+        badgeDimensions: y,
         unreadChannelsCount: j
     } = function(e) {
         let {
@@ -89,8 +89,8 @@ function T(e) {
         }), (0, i.jsx)(x.A, {
             children: (0, i.jsx)(o.Qk9, {
                 selected: S || f,
-                lowerBadge: y,
-                lowerBadgeSize: v,
+                lowerBadge: v,
+                lowerBadgeSize: y,
                 children: (0, i.jsx)(o.jlP, {
                     ..._,
                     ...u,

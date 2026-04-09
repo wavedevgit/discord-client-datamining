@@ -3,9 +3,9 @@ a.d(t, {
     U: () => s
 });
 var l = a(221997),
-    n = a(480773),
-    r = a(966739);
+    r = a(480773),
+    n = a(966739);
 let s = {
     title: "Featured Blocks",
-    stories: [l.Q, n.u, r.V]
+    stories: [l.Q, r.u, n.V]
 }

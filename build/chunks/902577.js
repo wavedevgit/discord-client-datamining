@@ -1,27 +1,27 @@
 /** chunk id: 902577 params = (module,exports,require) **/
-r.d(t, {
+a.d(t, {
     A: () => l
 });
-var n = r(627968),
-    a = r(64700),
-    i = r(158954);
-let s = a.forwardRef((e, t) => {
+var s = a(627968),
+    r = a(64700),
+    n = a(158954);
+let i = r.forwardRef((e, t) => {
     let {
-        className: r
-    } = e, s = a.useRef(null);
-    return a.useImperativeHandle(t, () => ({
+        className: a
+    } = e, i = r.useRef(null);
+    return r.useImperativeHandle(t, () => ({
         play: () => {
-            s.current?.play()
+            i.current?.play()
         },
-        pause: () => s.current?.pause()
-    })), (0, n.jsx)("div", {
-        className: r,
+        pause: () => i.current?.pause()
+    })), (0, s.jsx)("div", {
+        className: a,
         style: {
             width: "100%",
             height: "100%"
         },
-        children: (0, n.jsx)(i.E44, {
-            ref: s,
+        children: (0, s.jsx)(n.E44, {
+            ref: i,
             autoplay: !1,
             artboard: "Torbs_Multiply",
             stateMachine: "SM_Torbs_Multiply",
@@ -33,5 +33,5 @@ let s = a.forwardRef((e, t) => {
         })
     })
 });
-s.displayName = "QuestOrbsMultiplierBentoBoxAsset";
-let l = s
+i.displayName = "QuestOrbsMultiplierBentoBoxAsset";
+let l = i

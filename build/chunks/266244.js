@@ -1,7 +1,7 @@
 /** chunk id: 266244 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => _
+    A: () => g
 });
 var i = n(627968),
     s = n(64700),
@@ -14,9 +14,9 @@ var i = n(627968),
     u = n(9302),
     h = n(652215),
     p = n(985018),
-    f = n(686947);
-let A = () => (0, o.WU)("DM_SEARCH"),
-    _ = s.memo(function() {
+    A = n(686947);
+let f = () => (0, o.WU)("DM_SEARCH"),
+    g = s.memo(function() {
         let e = (0, l.bG)([c.default], () => c.default.isLocked((0, u.getPID)()) ? "true" : "false"),
             t = (0, d.A)(e => {
                 let {
@@ -25,13 +25,13 @@ let A = () => (0, o.WU)("DM_SEARCH"),
                 return t
             });
         return (0, i.jsxs)("div", {
-            className: f.AB,
+            className: A.AB,
             children: [(0, i.jsx)("div", {
-                className: f.ON,
+                className: A.ON,
                 children: (0, i.jsx)("button", {
                     type: "button",
-                    className: f.lU,
-                    onClick: A,
+                    className: A.lU,
+                    onClick: f,
                     children: p.intl.string(p.t.LzcpeZ)
                 })
             }), (0, i.jsx)(a.A, {
@@ -40,7 +40,7 @@ let A = () => (0, o.WU)("DM_SEARCH"),
                 version: e,
                 selectedChannelId: t
             }), (0, i.jsx)("section", {
-                className: f.C3,
+                className: A.C3,
                 "aria-label": p.intl.string(p.t.StREWK),
                 children: (0, i.jsx)(r.A, {
                     guildId: null

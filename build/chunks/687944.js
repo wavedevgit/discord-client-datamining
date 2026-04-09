@@ -1,6 +1,6 @@
 /** chunk id: 687944 params = (module,exports,require) **/
 n.d(t, {
-    A: () => N
+    A: () => v
 });
 var i = n(627968);
 n(64700);
@@ -22,13 +22,13 @@ var s = n(990078),
     T = n(985018),
     f = n(81431),
     S = n(818724);
-let b = {
+let E = {
     page: p.liQ.USER_SETTINGS,
     section: p.JJy.SETTINGS_PREMIUM,
     object: p.ZSU.CARD
 };
 
-function E(e) {
+function b(e) {
     let {
         premiumSubscription: t,
         discountInfo: n,
@@ -96,13 +96,13 @@ function C(e) {
         })]
     })
 }
-let N = function(e) {
+let v = function(e) {
     let t, c, {
             subscription: g,
             invoicePreview: _,
             isLoading: h,
-            analyticsLocation: N,
-            discountInfo: v,
+            analyticsLocation: v,
+            discountInfo: N,
             renewalChurnDiscountInfo: I,
             discountOffer: j
         } = e,
@@ -117,7 +117,7 @@ let N = function(e) {
                 return n => (0, i.jsx)(t, {
                     ...n,
                     premiumSubscription: g,
-                    analyticsLocation: N,
+                    analyticsLocation: v,
                     analyticsLocations: y,
                     initialStep: e
                 })
@@ -153,11 +153,11 @@ let N = function(e) {
                         children: [null != j ? (0, i.jsx)(C, {
                             discountOffer: j,
                             premiumSubscription: g
-                        }) : (0, i.jsx)(E, {
+                        }) : (0, i.jsx)(b, {
                             premiumSubscription: g,
-                            discountInfo: v ?? I,
+                            discountInfo: N ?? I,
                             invoicePreview: _,
-                            isDiscountActive: null != v
+                            isDiscountActive: null != N
                         }), (0, i.jsx)("div", {
                             className: f.e_,
                             children: (t = m.Ay.isSwitchingPlansDisabled(g), c = m.Ay.getSwitchingPlansDisabledMessage(g), m.Ay.isBaseSubscriptionCanceled(g) ? (0, i.jsx)(l.Button, {
@@ -181,8 +181,8 @@ let N = function(e) {
                                         onClick: () => {
                                             (0, o.A)({
                                                 analyticsLocations: y,
-                                                analyticsLocation: N,
-                                                analyticsObject: b,
+                                                analyticsLocation: v,
+                                                analyticsObject: E,
                                                 subscription: g
                                             })
                                         }

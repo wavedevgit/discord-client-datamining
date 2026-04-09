@@ -76,8 +76,8 @@ function T(e) {
         {
             disabled: b
         } = T,
-        y = l.useRef(null),
-        v = (0, o.bG)([u.A], () => u.A.getChatOpen(n), [n]),
+        v = l.useRef(null),
+        y = (0, o.bG)([u.A], () => u.A.getChatOpen(n), [n]),
         {
             isShowing: j,
             unreadCount: R,
@@ -103,8 +103,8 @@ function T(e) {
             }
         }(n),
         L = l.useCallback(() => {
-            (0, h.X)(S, h.O.CHAT, !v), A?.(), !v && m && f?.(), d.A.updateChatOpen(n, !v, "toggle chat button")
-        }, [n, v, A, m, f, S]),
+            (0, h.X)(S, h.O.CHAT, !y), A?.(), !y && m && f?.(), d.A.updateChatOpen(n, !y, "toggle chat button")
+        }, [n, y, A, m, f, S]),
         M = l.useCallback(e => {
             let {
                 className: t
@@ -115,7 +115,7 @@ function T(e) {
             })
         }, [n]),
         D = l.useCallback(() => {
-            y.current?.focus()
+            v.current?.focus()
         }, []);
     (0, g.Vo)({
         event: E.jej.FOCUS_CHAT_BUTTON,
@@ -135,11 +135,11 @@ function T(e) {
             clearTimeout(e)
         }
     }, [U]);
-    let k = [t = _ && b ? I.intl.string(I.t.DPgc5h) : v ? I.intl.string(I.t.nthdxB) : I.intl.string(I.t["5KxXrK"])];
+    let k = [t = _ && b ? I.intl.string(I.t.DPgc5h) : y ? I.intl.string(I.t.nthdxB) : I.intl.string(I.t["5KxXrK"])];
     return O > 0 && k.push(I.intl.formatToPlainString(I.t["3l1GOx"], {
         mentionCount: O
     })), R > 0 && k.push(I.intl.string(I.t.x5zAGZ)), (0, i.jsx)(x.A, {
-        buttonRef: y,
+        buttonRef: v,
         onClick: L,
         label: t,
         "aria-label": k.join(", "),

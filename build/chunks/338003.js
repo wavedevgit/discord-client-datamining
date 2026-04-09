@@ -1,13 +1,13 @@
 /** chunk id: 338003 params = (module,exports,require) **/
-n.d(l, {
+t.d(l, {
     O: () => o
 });
-var t = n(627968);
-n(64700);
-var i = n(397927),
-    s = n(407217),
-    a = n(985018),
-    r = n(810260);
+var n = t(627968);
+t(64700);
+var i = t(397927),
+    s = t(407217),
+    a = t(985018),
+    r = t(810260);
 
 function o() {
     let e = () => {
@@ -15,16 +15,16 @@ function o() {
             stackingBehavior: "stack"
         })
     };
-    return (0, t.jsxs)(i.hLv, {
+    return (0, n.jsxs)(i.hLv, {
         color: "nitro-pink",
         className: r.k,
-        children: [(0, t.jsx)(i.Text, {
+        children: [(0, n.jsx)(i.Text, {
             variant: "text-sm/medium",
             color: "text-default",
             children: a.intl.format(a.t.TmfgI2, {
                 onClick: e
             })
-        }), (0, t.jsx)(i.Button, {
+        }), (0, n.jsx)(i.Button, {
             variant: "expressive",
             size: "md",
             icon: i.tvc,

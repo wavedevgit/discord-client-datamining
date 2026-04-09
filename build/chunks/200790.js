@@ -32,17 +32,17 @@ function A(e) {
         guildId: n?.id
     }), {
         pendingAvatarDecoration: S,
-        errors: b
-    } = (0, m.CP)(n?.id), E = p ? r.wLn : a.$n;
+        errors: E
+    } = (0, m.CP)(n?.id), b = p ? r.wLn : a.$n;
     return (0, i.jsx)(g.A, {
         className: s,
         forcedDivider: h,
         hasBackground: !0,
         title: A,
-        errors: b,
+        errors: E,
         children: (0, i.jsxs)("div", {
             className: x.NC,
-            children: [(0, i.jsx)(E, {
+            children: [(0, i.jsx)(b, {
                 size: a.$n.Sizes.SMALL,
                 onClick: () => {
                     (0, c.L)({

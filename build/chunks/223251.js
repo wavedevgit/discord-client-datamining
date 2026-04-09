@@ -14,10 +14,10 @@ var i = n(64700),
     u = n(808728),
     h = n(696451),
     p = n(71393),
-    f = n(576705),
-    A = n(309010),
-    _ = n(967198),
-    g = n(287809),
+    A = n(576705),
+    f = n(309010),
+    g = n(967198),
+    _ = n(287809),
     m = n(256415),
     x = n(9302),
     E = n(652215);
@@ -50,17 +50,17 @@ class y extends i.Component {
         return null
     }
 }
-let v = l.Ay.connectStores([_.A, A.A, p.A, g.default, m.default, u.Ay, f.A, h.Ay], () => {
-    let e = _.A.getGuildId(),
-        t = A.A.getChannelId(e),
+let v = l.Ay.connectStores([g.A, f.A, p.A, _.default, m.default, u.Ay, A.A, h.Ay], () => {
+    let e = g.A.getGuildId(),
+        t = f.A.getChannelId(e),
         n = p.A.getGuild(e),
-        i = g.default.getCurrentUser(),
+        i = _.default.getCurrentUser(),
         l = u.Ay.getChannels(n?.id)[u.I6] ?? [],
         a = l.length > 0 ? l.filter(e => {
             let {
                 channel: t
             } = e;
-            return f.A.can(s.kg(E.xBc.SEND_MESSAGES, E.xBc.VIEW_CHANNEL), t)
+            return A.A.can(s.kg(E.xBc.SEND_MESSAGES, E.xBc.VIEW_CHANNEL), t)
         }).length : 0,
         r = null != i && null != e && (h.Ay.getMember(e, i.id)?.isPending ?? !1);
     return {

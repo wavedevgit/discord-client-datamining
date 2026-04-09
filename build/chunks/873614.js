@@ -48,7 +48,7 @@ function x(e) {
                 guild: t
             })
         })
-    }, [a, t]), y = a?.topic != null && "" !== a.topic.trim() ? (0, i.jsxs)(i.Fragment, {
+    }, [a, t]), v = a?.topic != null && "" !== a.topic.trim() ? (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(o.Text, {
             ref: S,
             variant: "text-md/medium",
@@ -76,7 +76,7 @@ function x(e) {
         onDisagree: E,
         modalType: c.A5.SPOILER_CHANNEL,
         title: T,
-        subtitle: y,
+        subtitle: v,
         description: g.intl.string(g.t["34D1HC"]),
         agreement: g.intl.string(g.t.KmRwcW),
         disagreement: g.intl.string(g.t["/g10LC"]),

@@ -1,31 +1,31 @@
 /** chunk id: 259065 params = (module,exports,require) **/
-r.d(t, {
+n.d(t, {
     L: () => d
 });
-var n = r(627968);
-r(64700);
-var a = r(397927),
-    i = r(954571),
-    s = r(652215);
-let l = "display-name-styles-modal",
+var r = n(627968);
+n(64700);
+var l = n(397927),
+    s = n(954571),
+    a = n(652215);
+let i = "display-name-styles-modal",
     d = e => {
         let {
             analyticsLocations: t,
             guildId: d
         } = e;
-        (0, a.mMO)(async () => {
+        (0, l.mMO)(async () => {
             let {
                 default: e
-            } = await r.e("15682").then(r.bind(r, 619481));
-            return r => (0, n.jsx)(e, {
-                ...r,
+            } = await Promise.all([n.e("57174"), n.e("81028"), n.e("8555"), n.e("91652"), n.e("40396"), n.e("90365"), n.e("28936"), n.e("68859"), n.e("48330"), n.e("92414"), n.e("94857"), n.e("86077"), n.e("49559"), n.e("18976"), n.e("22837"), n.e("37372"), n.e("23530"), n.e("41595"), n.e("75867")]).then(n.bind(n, 619481));
+            return n => (0, r.jsx)(e, {
+                ...n,
                 guildId: d,
                 analyticsLocations: t
             })
         }, {
-            modalKey: l,
+            modalKey: i,
             onCloseRequest: () => {
-                i.default.track(s.HAw.DISPLAY_NAME_STYLES_CLOSED), (0, a.OoC)(l)
+                s.default.track(a.HAw.DISPLAY_NAME_STYLES_CLOSED), (0, l.OoC)(i)
             }
         })
     }

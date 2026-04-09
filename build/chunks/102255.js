@@ -1,6 +1,6 @@
 /** chunk id: 102255 params = (module,exports,require) **/
 n.d(t, {
-    AF: () => E,
+    AF: () => b,
     Im: () => S,
     jH: () => f
 });
@@ -46,7 +46,7 @@ function S() {
     })
 }
 
-function b(e) {
+function E(e) {
     let {
         checked: t,
         otherSessions: n
@@ -71,7 +71,7 @@ function b(e) {
     })
 }
 
-function E() {
+function b() {
     let {
         currentSession: e,
         otherSessions: t
@@ -87,10 +87,10 @@ function E() {
                     let n = new Set(l);
                     t ? n.add(e.id_hash) : n.delete(e.id_hash), a(n)
                 }
-            }, e.id_hash)), n?.mfaEnabled ? null : (0, i.jsx)(N, {})]
+            }, e.id_hash)), n?.mfaEnabled ? null : (0, i.jsx)(v, {})]
         }), t.length > 0 && (0, i.jsx)("div", {
             className: T.wq,
-            children: (0, i.jsx)(b, {
+            children: (0, i.jsx)(E, {
                 checked: l,
                 otherSessions: t
             })
@@ -176,7 +176,7 @@ function C(e) {
     }, t.id_hash)
 }
 
-function N() {
+function v() {
     return (0, i.jsxs)("div", {
         className: a()(T.dZ, T.EC),
         children: [(0, i.jsxs)("div", {

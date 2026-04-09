@@ -27,8 +27,8 @@ var i, l, s = n(64700),
     T = n(594061),
     S = n(617617),
     b = n(95701),
-    y = n(734057),
-    v = n(808728),
+    v = n(734057),
+    y = n(808728),
     j = n(71393),
     R = n(320501),
     O = n(576705),
@@ -291,14 +291,14 @@ function K() {
                 t = S.A.settings.guilds?.guilds ?? {};
             for (let n in t)
                 for (let i in t[n].channels) {
-                    let l = y.A.getChannel(i);
+                    let l = v.A.getChannel(i);
                     i in e && l?.guild_id !== n || (e[i] = t[n].channels[i].collapsedInInbox)
                 }
             return e
         }(),
-        i = (e = n, t = [], y.A.getSortedPrivateChannels().forEach(n => Y(e, t, null, n.id)), M.Ay.getFlattenedGuildIds().forEach(n => {
+        i = (e = n, t = [], v.A.getSortedPrivateChannels().forEach(n => Y(e, t, null, n.id)), M.Ay.getFlattenedGuildIds().forEach(n => {
             if (null == n) return;
-            let i = v.Ay.getSelectableChannelIds(n),
+            let i = y.Ay.getSelectableChannelIds(n),
                 l = E.A.getActiveJoinedUnreadThreadsForGuild(n);
             i.forEach(i => {
                 Y(e, t, n, i);
@@ -320,7 +320,7 @@ function K() {
 
 function Y(e, t, n, i) {
     if (null == i) return;
-    let l = y.A.getChannel(i);
+    let l = v.A.getChannel(i);
     if (null == l || !b.Le.has(l.type) && D.Ay.isGuildOrCategoryOrChannelMuted(n, l.id)) return;
     if (l.isPrivate()) {
         if (0 === L.Ay.getMentionCount(i)) return
@@ -351,7 +351,7 @@ function Y(e, t, n, i) {
         hasMentionsOrUnreads: d,
         mentionCount: o,
         sortOrder: function(e, t, n) {
-            let i = y.A.getChannel(t);
+            let i = v.A.getChannel(t);
             if (g.A.isFavorite(t)) return 0;
             if (i.isPrivate()) return 1;
             if (L.Ay.getMentionCount(t) > 0) return L.Ay.getIsMentionLowImportance(t) ? 3 : 2;

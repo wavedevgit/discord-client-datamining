@@ -1,69 +1,69 @@
 /** chunk id: 534217 params = (module,exports,require) **/
 n.d(t, {
-    S: () => N
+    S: () => I
 }), n(321073);
 var i = n(627968);
 n(64700);
-var s = n(503698),
-    l = n.n(s),
-    a = n(311907),
-    r = n(397927),
-    o = n(854627),
-    d = n(954571),
-    c = n(975571),
+var r = n(503698),
+    a = n.n(r),
+    s = n(311907),
+    l = n(397927),
+    c = n(854627),
+    o = n(954571),
+    d = n(975571),
     u = n(427262),
-    m = n(326084),
-    g = n(851746),
-    _ = n(617461),
-    x = n(664654),
-    A = n(303682),
-    h = n(652215),
-    p = n(985018),
-    T = n(989348),
-    f = n(544879);
-let S = e => {
+    _ = n(326084),
+    m = n(851746),
+    p = n(617461),
+    A = n(664654),
+    g = n(303682),
+    x = n(652215),
+    h = n(985018),
+    f = n(989348),
+    b = n(544879);
+let N = e => {
         let {
             user: t
         } = e, {
             avatarSrc: n,
-            eventHandlers: s
-        } = (0, o.A)({
+            eventHandlers: r
+        } = (0, c.A)({
             userId: t.id,
-            size: r._3J.SIZE_24
+            size: l._3J.SIZE_24
         });
-        return (0, i.jsx)(r.euF, {
-            className: T.bj,
+        return (0, i.jsx)(l.euF, {
+            className: f.bj,
             src: n,
             "aria-label": (0, u.mG)(t),
-            size: r._3J.SIZE_24,
-            ...s
+            size: l._3J.SIZE_24,
+            ...r
         }, t.id)
     },
-    b = e => {
+    R = e => {
         let {
             slotIndex: t
         } = e;
         return (0, i.jsx)("div", {
-            className: T.p,
+            className: f.p,
             children: t
         })
     },
-    E = e => {
+    C = e => {
         let {
             referralSentUsers: t
         } = e;
         return (0, i.jsx)("div", {
-            className: T.L$,
+            className: f.L$,
             children: (() => {
                 let e = [];
-                for (let n = 0; n < x.Z; n++)
+                for (let n = 0; n < A.Z; n++)
                     if (t?.[n] !== void 0) {
-                        let s = (0, i.jsx)(S, {
+                        let r = (0, i.jsx)(N, {
                             user: t[n]
                         }, t[n].id);
-                        e.push(s)
+                        e.push(r)
                     } else {
-                        let t = (0, i.jsx)(b, {
+                        let t = (0, i.jsx)(R, {
                             slotIndex: n + 1
                         }, n);
                         e.push(t)
@@ -71,90 +71,90 @@ let S = e => {
             })()
         })
     },
-    C = e => {
+    v = e => {
         let {
             nReferralsSent: t
         } = e;
-        return (0, i.jsx)(r.a3E, {
+        return (0, i.jsx)(l.a3E, {
             percent: 33.3 * t,
             colorOverride: "#53ac66",
-            background: T.cq,
+            background: f.cq,
             strokeSize: .8,
-            ringColorOverrideClassName: T.e0,
-            overlayClassName: t === x.Z ? T.ys : void 0,
-            children: (0, i.jsx)(r._V3, {
-                src: f.A,
+            ringColorOverrideClassName: f.e0,
+            overlayClassName: t === A.Z ? f.ys : void 0,
+            children: (0, i.jsx)(l._V3, {
+                src: b.A,
                 height: 93,
                 width: 93,
                 zoomable: !1
             })
         })
     },
-    N = e => {
+    I = e => {
         let {
             className: t
         } = e, {
-            referralSentUsers: s
-        } = (0, x.J)(), o = (0, a.bG)([g.A], () => g.A.getRecipientStatus()), u = (0, a.bG)([g.A], () => g.A.getHasEligibleFriends()), f = o.size === x.Z && [...o.values()].every(e => e === m.aK.REDEEMED), S = o.size === x.Z;
+            referralSentUsers: r
+        } = (0, A.J)(), c = (0, s.bG)([m.A], () => m.A.getRecipientStatus()), u = (0, s.bG)([m.A], () => m.A.getHasEligibleFriends()), b = c.size === A.Z && [...c.values()].every(e => e === _.aK.REDEEMED), N = c.size === A.Z;
         return (0, i.jsxs)("div", {
-            className: l()(T.kL, t),
+            className: a()(f.kL, t),
             children: [(0, i.jsx)("div", {
-                className: T.G3,
-                children: (0, i.jsx)(C, {
-                    nReferralsSent: o.size
+                className: f.G3,
+                children: (0, i.jsx)(v, {
+                    nReferralsSent: c.size
                 })
             }), (0, i.jsxs)("div", {
-                className: T.IH,
-                children: [(0, i.jsx)(E, {
-                    referralSentUsers: s
+                className: f.IH,
+                children: [(0, i.jsx)(C, {
+                    referralSentUsers: r
                 }), (0, i.jsxs)("div", {
-                    className: T.n4,
-                    children: [(0, i.jsx)(r.Heading, {
+                    className: f.n4,
+                    children: [(0, i.jsx)(l.Heading, {
                         variant: "heading-lg/semibold",
                         color: "text-strong",
-                        children: p.intl.string(p.t.USo4s7)
-                    }), (0, i.jsx)(r.Text, {
+                        children: h.intl.string(h.t.USo4s7)
+                    }), (0, i.jsx)(l.Text, {
                         variant: "text-md/medium",
                         color: "text-subtle",
-                        children: !1 === u ? p.intl.format(p.t["zWhX/Q"], {
-                            helpdeskArticle: c.A.getArticleURL(h.MVz.REFERRAL_PROGRAM)
-                        }) : s.length === x.Z ? !0 === f ? p.intl.format(p.t["1aEjsH"], {
-                            helpdeskArticle: c.A.getArticleURL(h.MVz.REFERRAL_PROGRAM)
-                        }) : p.intl.format(p.t["+u3AOO"], {
-                            helpdeskArticle: c.A.getArticleURL(h.MVz.REFERRAL_PROGRAM)
-                        }) : p.intl.format(p.t["omMr+V"], {
-                            helpdeskArticle: c.A.getArticleURL(h.MVz.REFERRAL_PROGRAM)
+                        children: !1 === u ? h.intl.format(h.t["zWhX/Q"], {
+                            helpdeskArticle: d.A.getArticleURL(x.MVz.REFERRAL_PROGRAM)
+                        }) : r.length === A.Z ? !0 === b ? h.intl.format(h.t["1aEjsH"], {
+                            helpdeskArticle: d.A.getArticleURL(x.MVz.REFERRAL_PROGRAM)
+                        }) : h.intl.format(h.t["+u3AOO"], {
+                            helpdeskArticle: d.A.getArticleURL(x.MVz.REFERRAL_PROGRAM)
+                        }) : h.intl.format(h.t["omMr+V"], {
+                            helpdeskArticle: d.A.getArticleURL(x.MVz.REFERRAL_PROGRAM)
                         })
                     })]
-                }), (0, i.jsx)(r.Button, {
+                }), (0, i.jsx)(l.Button, {
                     variant: "primary",
-                    disabled: !1 === u || !0 === S,
+                    disabled: !1 === u || !0 === N,
                     text: (() => {
-                        switch (_.$.getConfig({
+                        switch (p.$.getConfig({
                                 location: "ReferralBanner"
                             }).variation) {
-                            case _.e.CONTROL:
-                                return p.intl.string(p.t.Lm2nFc);
-                            case _.e.VARIANT_1:
-                                return p.intl.string(p.t["8wL38m"]);
-                            case _.e.VARIANT_2:
-                                return p.intl.string(p.t["Pr/W5F"]);
-                            case _.e.VARIANT_3:
-                                return p.intl.string(p.t.ojpNKb);
-                            case _.e.VARIANT_4:
-                                return p.intl.string(p.t["YL8/wJ"]);
-                            case _.e.VARIANT_5:
-                                return p.intl.string(p.t.C7iByj)
+                            case p.e.CONTROL:
+                                return h.intl.string(h.t.Lm2nFc);
+                            case p.e.VARIANT_1:
+                                return h.intl.string(h.t["8wL38m"]);
+                            case p.e.VARIANT_2:
+                                return h.intl.string(h.t["Pr/W5F"]);
+                            case p.e.VARIANT_3:
+                                return h.intl.string(h.t.ojpNKb);
+                            case p.e.VARIANT_4:
+                                return h.intl.string(h.t["YL8/wJ"]);
+                            case p.e.VARIANT_5:
+                                return h.intl.string(h.t.C7iByj)
                         }
                     })(),
                     onClick: () => (e => {
                         let {
                             startingScreen: t,
-                            analyticsLocations: s
+                            analyticsLocations: r
                         } = e;
-                        d.default.track(h.HAw.REFERRAL_PROGRAM_SHARE_MODAL_CTA_CLICKED, {
-                            location_stack: s
-                        }), (0, r.mMO)(async () => {
+                        o.default.track(x.HAw.REFERRAL_PROGRAM_SHARE_MODAL_CTA_CLICKED, {
+                            location_stack: r
+                        }), (0, l.mMO)(async () => {
                             let {
                                 default: e
                             } = await Promise.resolve().then(n.bind(n, 303682));
@@ -164,7 +164,7 @@ let S = e => {
                             })
                         })
                     })({
-                        startingScreen: A.SelectFriendsModalScreens.SELECT_FRIENDS,
+                        startingScreen: g.SelectFriendsModalScreens.SELECT_FRIENDS,
                         analyticsLocations: []
                     })
                 })]

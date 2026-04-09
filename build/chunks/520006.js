@@ -65,8 +65,8 @@ function x(e) {
         isRichPresenceInvite: T = !1,
         iconClassName: S,
         look: b,
-        size: y,
-        buttonText: v,
+        size: v,
+        buttonText: y,
         color: j,
         ...R
     } = e, O = (0, u.Us)(), {
@@ -80,8 +80,8 @@ function x(e) {
         label: P,
         iconClassName: S,
         look: b,
-        size: y,
-        buttonText: v,
+        size: v,
+        buttonText: y,
         color: j ?? void 0
     }) : null != D && null != l && _.A.can(g.xBc.CREATE_INSTANT_INVITE, l) ? (0, i.jsx)(m.A, {
         onClick: () => {
@@ -101,9 +101,9 @@ function x(e) {
         label: P,
         iconClassName: S,
         look: b,
-        size: y,
+        size: v,
         color: j,
-        buttonText: v,
+        buttonText: y,
         ...R
     }) : null
 }

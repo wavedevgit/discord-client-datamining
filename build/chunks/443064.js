@@ -21,11 +21,11 @@ var i = n(627968),
     T = n(557722),
     f = n(207560),
     S = n(836602),
-    b = n(591179),
-    E = n(262),
+    E = n(591179),
+    b = n(262),
     C = n(950191),
-    N = n(854627),
-    v = n(657331),
+    v = n(854627),
+    N = n(657331),
     I = n(542535),
     j = n(915614),
     y = n(662758),
@@ -36,8 +36,8 @@ var i = n(627968),
     D = n(253932),
     G = n(780964),
     M = n(858897),
-    U = n(980429),
-    k = n(982363),
+    k = n(980429),
+    U = n(982363),
     w = n(652215),
     V = n(53516),
     B = n(985018),
@@ -46,9 +46,9 @@ var i = n(627968),
 let z = P.Ay.getEnableHardwareAcceleration() ? c.JsQ : c.euF;
 
 function Y(e) {
-    let t = (0, b.X)("UserSettingsAccountProfileCard");
+    let t = (0, E.X)("UserSettingsAccountProfileCard");
     return s.useCallback(() => {
-        t ? (0, v.openUserProfileModal)({
+        t ? (0, N.openUserProfileModal)({
             userId: e
         }) : (0, M.openUserSettings)(G.X.PROFILE_PANEL)
     }, [t, e])
@@ -207,9 +207,9 @@ function W(e) {
             t = {
                 buttonText: B.intl.string(B.t.bt75uw),
                 buttonAriaLabel: B.intl.string(B.t["8peUT0"]),
-                valueMessage: (0, i.jsx)(k.q, {
+                valueMessage: (0, i.jsx)(U.q, {
                     text: e,
-                    censor: U.B,
+                    censor: k.B,
                     revealLabel: B.intl.string(B.t["Zvx+yV"]),
                     hideLabel: B.intl.string(B.t.nqTD4d)
                 }),
@@ -271,9 +271,9 @@ function Z(e) {
         phone: r,
         email: o
     } = l, d = null != r;
-    return t = d ? (0, i.jsx)(k.q, {
+    return t = d ? (0, i.jsx)(U.q, {
         text: r,
-        censor: U.D,
+        censor: k.D,
         revealLabel: B.intl.string(B.t.eY3xlT),
         hideLabel: B.intl.string(B.t["jllbv+"])
     }) : B.intl.string(B.t.I5kDqj), (0, i.jsxs)("div", {
@@ -440,10 +440,10 @@ function Q(e) {
 function J(e) {
     let {
         currentUser: t
-    } = e, n = Y(t.id), s = (0, C.Ay)(t.id), l = (0, E.A)(s), a = D.jP.useSetting(), o = (0, r.bG)([S.A], () => S.A.getErrors()), d = o?.avatar?.[0], {
+    } = e, n = Y(t.id), s = (0, C.Ay)(t.id), l = (0, b.A)(s), a = D.jP.useSetting(), o = (0, r.bG)([S.A], () => S.A.getErrors()), d = o?.avatar?.[0], {
         avatarSrc: m,
         avatarDecorationSrc: g
-    } = (0, N.A)({
+    } = (0, v.A)({
         userId: t?.id,
         size: c._3J.SIZE_80
     }), _ = (0, f.fk)();

@@ -1,6 +1,6 @@
 /** chunk id: 968975 params = (module,exports,require) **/
 n.d(t, {
-    A: () => y
+    A: () => v
 }), n(321073);
 var i = n(627968),
     l = n(64700),
@@ -27,12 +27,12 @@ var i = n(627968),
     S = n(985018),
     b = n(141076);
 
-function y(e) {
+function v(e) {
     let {
         unownedWishlistItems: t = [],
         profileOwner: n,
-        onClick: y,
-        wishlistId: v,
+        onClick: v,
+        wishlistId: y,
         cardSize: j,
         title: R
     } = e, {
@@ -87,8 +87,8 @@ function y(e) {
                     moreCount: a ? t.length - D + 1 : void 0,
                     profileOwner: n,
                     analyticsLocations: O,
-                    onViewWishlist: y,
-                    wishlistId: v,
+                    onViewWishlist: v,
+                    wishlistId: y,
                     showTypeTooltip: k,
                     cardSize: j
                 }))) : (0, g.$)(s) && (l.add(s.skuProductLine), e.push((0, h.Z)(s, {
@@ -96,8 +96,8 @@ function y(e) {
                     moreCount: a ? t.length - D + 1 : void 0,
                     profileOwner: n,
                     analyticsLocations: O,
-                    onViewWishlist: y,
-                    wishlistId: v,
+                    onViewWishlist: v,
+                    wishlistId: y,
                     showTypeTooltip: k,
                     cardSize: j
                 })))
@@ -107,9 +107,9 @@ function y(e) {
                 singleItem: i,
                 productLines: l
             }
-        }, [t, n, O, y, v, j, P, k, D]),
+        }, [t, n, O, v, y, j, P, k, D]),
         H = (0, x.A)({
-            wishlistId: v ?? null,
+            wishlistId: y ?? null,
             onAction: G,
             productLines: V
         }),
@@ -117,11 +117,11 @@ function y(e) {
             sku: e.sku,
             index: l,
             wishlistOwner: n,
-            wishlistId: v,
+            wishlistId: y,
             analyticsLocations: O,
-            onViewWishlist: y,
+            onViewWishlist: v,
             isSingleCard: 1 === t.length
-        }, e.skuId)) : null, [O, M, y, n, t.length, P, v]),
+        }, e.skuId)) : null, [O, M, v, n, t.length, P, y]),
         [W, K] = (0, d.RF)(s.M.SLAYER_STOREFRONT_ORBS_REWARD_WISHLIST_UPSELL, (0, o.c)(s.M.SLAYER_STOREFRONT_ORBS_REWARD_WISHLIST_UPSELL), void 0, !0),
         Y = W !== s.M.SLAYER_STOREFRONT_ORBS_REWARD_WISHLIST_UPSELL;
     if (0 === w.length) return null;
@@ -129,13 +129,13 @@ function y(e) {
     return null != B && ((0, m.L)(B) ? z = (0, I.z)(B, {
         profileOwner: n,
         analyticsLocations: O,
-        wishlistId: v,
-        onViewWishlist: y
+        wishlistId: y,
+        onViewWishlist: v
     }) : (0, g.$)(B) && (z = (0, h.A)(B, {
         profileOwner: n,
         analyticsLocations: O,
-        wishlistId: v,
-        onViewWishlist: y
+        wishlistId: y,
+        onViewWishlist: v
     }))), (0, i.jsx)("section", {
         "aria-labelledby": U,
         children: (0, i.jsxs)(E.A.Overlay, {
@@ -150,7 +150,7 @@ function y(e) {
                 }), M && t.length > D && (0, i.jsx)(a.QWc, {
                     variant: "secondary",
                     textVariant: "text-xs/normal",
-                    onClick: y,
+                    onClick: v,
                     text: S.intl.string(S.t.y6PSA3)
                 })]
             }), (0, i.jsxs)(a.Fmo, {

@@ -1,6 +1,6 @@
 /** chunk id: 767692 params = (module,exports,require) **/
 n.d(t, {
-    A: () => v
+    A: () => N
 });
 var i = n(627968),
     s = n(64700),
@@ -21,53 +21,53 @@ var i = n(627968),
     T = n(631643),
     f = n(343557),
     S = n(880807),
-    b = n(12424),
-    E = n(807905),
+    E = n(12424),
+    b = n(807905),
     C = n(788868),
-    N = n(515145);
+    v = n(515145);
 
-function v(e) {
+function N(e) {
     let {
         premiumSubscription: t
-    } = e, n = (0, l.bG)([A.A], () => A.A.boostSlots), v = s.useMemo(() => Object.values(n), [n]), I = (0, l.bG)([x.default], () => x.default.getCurrentUser()), j = h.Ay.isPremium(I, C.PremiumTypes.TIER_2), y = (0, l.bG)([g.A], () => g.A.affinities), O = (0, l.bG)([_.Ay], () => _.Ay.getFlattenedGuildIds()), R = y.length > 0 || O.length > 0, L = v.length > 0, P = s.useMemo(() => v.filter(e => null != e.premiumGuildSubscription), [v]), D = P.length > 0, G = v.length > P.length, M = (0, l.bG)([m.A], () => m.A.getCurrentUserAppliedBoosts()), {
-        fractionalState: U
+    } = e, n = (0, l.bG)([A.A], () => A.A.boostSlots), N = s.useMemo(() => Object.values(n), [n]), I = (0, l.bG)([x.default], () => x.default.getCurrentUser()), j = h.Ay.isPremium(I, C.PremiumTypes.TIER_2), y = (0, l.bG)([g.A], () => g.A.affinities), O = (0, l.bG)([_.Ay], () => _.Ay.getFlattenedGuildIds()), R = y.length > 0 || O.length > 0, L = N.length > 0, P = s.useMemo(() => N.filter(e => null != e.premiumGuildSubscription), [N]), D = P.length > 0, G = N.length > P.length, M = (0, l.bG)([m.A], () => m.A.getCurrentUserAppliedBoosts()), {
+        fractionalState: k
     } = (0, a.A)({
         forceFetch: !0
-    }), k = I?.isPremiumGroupMember(), w = t?.isPausedOrPausePending === !0 && U === C.xc.NONE, V = t?.isPausedOrPausePending !== !0 && U === C.xc.NONE && !k, B = j && U === C.xc.FP_SUB_PAUSED, F = U === C.xc.NONE && !k;
+    }), U = I?.isPremiumGroupMember(), w = t?.isPausedOrPausePending === !0 && k === C.xc.NONE, V = t?.isPausedOrPausePending !== !0 && k === C.xc.NONE && !U, B = j && k === C.xc.FP_SUB_PAUSED, F = k === C.xc.NONE && !U;
     return (0, i.jsxs)("div", {
-        className: N.GO,
+        className: v.GO,
         children: [(0, i.jsx)(r.kb, {
-            className: N.ek
+            className: v.ek
         }), (0, i.jsx)(T.A, {
             hasGuildBoostSlots: L,
             hasAppliedGuildBoosts: D,
             hasBoostPerk: B,
             canAddBoosts: V
-        }), F && (0, i.jsx)(b.A, {
+        }), F && (0, i.jsx)(E.A, {
             hasAppliedGuildBoosts: D,
             hasBoostPerk: B,
             hasGuildAffinitiesOrInGuild: R,
             subscriptionIsPausedOrPausePending: w
-        }), k && (0, i.jsx)(u.A, {}), !R && (0, i.jsx)(f.A, {}), t?.isPaused && U !== C.xc.FP_SUB_PAUSED ? (0, i.jsx)(p.N, {
+        }), U && (0, i.jsx)(u.A, {}), !R && (0, i.jsx)(f.A, {}), t?.isPaused && k !== C.xc.FP_SUB_PAUSED ? (0, i.jsx)(p.N, {
             appliedGuildBoosts: M,
             premiumSubscription: t
         }) : (0, i.jsx)(p.A, {
             guildBoostSlots: n,
             premiumSubscription: t
-        }), (0, i.jsx)(E.A, {
-            guildBoostSlots: v,
-            fractionalPremiumState: U
+        }), (0, i.jsx)(b.A, {
+            guildBoostSlots: N,
+            fractionalPremiumState: k
         }), (0, i.jsx)(S.A, {
             canAddBoosts: D && V,
             canApplyBoosts: G
         }), (0, i.jsx)(c.A, {
-            className: N.e4,
+            className: v.e4,
             hideHeading: !0,
             hideTier0: !0
         }), (0, i.jsx)(o.A, {
-            cardClassName: N.KW
+            cardClassName: v.KW
         }), (0, i.jsx)(d.A, {
-            className: N.JL
+            className: v.JL
         })]
     })
 }

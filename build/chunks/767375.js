@@ -21,10 +21,10 @@ var i = n(627968),
     T = n(661191),
     f = n(533808),
     S = n(219887),
-    b = n(652215),
-    E = n(985018),
+    E = n(652215),
+    b = n(985018),
     C = n(538378);
-class N extends s.PureComponent {
+class v extends s.PureComponent {
     static defaultProps = {
         isEditing: !1,
         hideDivider: !1,
@@ -74,13 +74,13 @@ class N extends s.PureComponent {
                     variant: "secondary",
                     onClick: this.handleEditClick,
                     size: "sm",
-                    text: E.intl.string(E.t.bt75uw)
+                    text: b.intl.string(b.t.bt75uw)
                 })]
             })]
         })
     }
 }
-let v = s.memo(function(e) {
+let N = s.memo(function(e) {
     let {
         paymentSource: t,
         hideDivider: n,
@@ -110,7 +110,7 @@ let v = s.memo(function(e) {
                 showPaymentSourceIcon: !0
             }) : (0, i.jsx)(c.Text, {
                 variant: "text-sm/medium",
-                children: E.intl.string(E.t["6EEgNt"])
+                children: b.intl.string(b.t["6EEgNt"])
             }), (0, i.jsxs)("div", {
                 className: C.zy,
                 children: [(0, i.jsx)("div", {
@@ -131,7 +131,7 @@ let v = s.memo(function(e) {
                     variant: "secondary",
                     onClick: u,
                     size: "sm",
-                    text: E.intl.string(E.t.H2hHyf)
+                    text: b.intl.string(b.t.H2hHyf)
                 })]
             })]
         })]
@@ -183,7 +183,7 @@ class I extends s.PureComponent {
             onCloseCallback: () => {
                 (0, u.ET)()
             },
-            onCloseRequest: b.tEg
+            onCloseRequest: E.tEg
         })
     };
     renderFooter() {
@@ -196,14 +196,14 @@ class I extends s.PureComponent {
                 className: C.z8,
                 children: [(0, i.jsx)(c.Text, {
                     variant: "text-sm/normal",
-                    children: E.intl.string(E.t.aRHpAB)
+                    children: b.intl.string(b.t.aRHpAB)
                 }), (0, i.jsx)("div", {
                     className: C.Sv,
-                    children: E.intl.string(E.t.o9bOIl)
+                    children: b.intl.string(b.t.o9bOIl)
                 })]
             }) : null, (0, i.jsx)(d.$nd, {
                 onClick: this.handleAddPaymentMethod,
-                text: E.intl.string(E.t.CpOiEO)
+                text: b.intl.string(b.t.CpOiEO)
             })]
         })
     }
@@ -223,7 +223,7 @@ class I extends s.PureComponent {
             A = m.filter(e => e instanceof _.LQ),
             h = this.state.editingPayment,
             p = x.findIndex(e => e.id === h),
-            f = x.map((e, t) => (0, i.jsx)(N, {
+            f = x.map((e, t) => (0, i.jsx)(v, {
                 locale: l,
                 paymentSource: e,
                 isDefault: n === e.id,
@@ -237,7 +237,7 @@ class I extends s.PureComponent {
                 isEditing: h === e.id,
                 onEditClick: this.handleEditClick
             }, e.id));
-        return e = A.length > 0 ? A.map((e, t) => (0, i.jsx)(v, {
+        return e = A.length > 0 ? A.map((e, t) => (0, i.jsx)(N, {
             paymentSource: e,
             hideDivider: 0 === x.length || p === x.length - 1,
             isForSubscription: e.id === d,
@@ -246,7 +246,7 @@ class I extends s.PureComponent {
                 withRedemptionSuccessModal: !0,
                 source: "desktop_billing_page"
             })
-        }, e.id)) : (0, i.jsx)(v, {
+        }, e.id)) : (0, i.jsx)(N, {
             hideDivider: 0 === x.length || p === x.length - 1,
             isForSubscription: !1,
             locale: l,
@@ -261,11 +261,11 @@ class I extends s.PureComponent {
                     children: [(0, i.jsx)(c.XAi, {
                         size: "sm",
                         className: C.hz
-                    }), " ", E.intl.string(E.t.W26xGQ)]
+                    }), " ", b.intl.string(b.t.W26xGQ)]
                 }), (0, i.jsx)(c.Text, {
                     variant: "text-sm/normal",
                     color: "text-subtle",
-                    children: E.intl.string(E.t.h6V3uK)
+                    children: b.intl.string(b.t.h6V3uK)
                 })]
             }) : null, f, u && e, p !== x.length - 1 || u && A.length > 0 ? (0, i.jsx)(c.cGx, {}) : null, this.renderFooter()]
         })

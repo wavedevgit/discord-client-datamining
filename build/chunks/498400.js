@@ -21,11 +21,11 @@ var i = n(627968),
     T = n(726649),
     f = n(611924),
     S = n(351906),
-    b = n(287809),
-    E = n(295405),
+    E = n(287809),
+    b = n(295405),
     C = n(166403),
-    N = n(954571),
-    v = n(474090),
+    v = n(954571),
+    N = n(474090),
     I = n(560138),
     j = n(694080),
     y = n(553081),
@@ -45,16 +45,16 @@ let M = function(e) {
             sourceAnalyticsLocations: l,
             analyticsLocations: M
         } = (0, _.Ay)(g.A.PREMIUM_MARKETING),
-        U = (0, r.bG)([C.A], () => C.A.hasFetchedSubscriptions()),
-        k = (0, r.bG)([E.A], () => E.A.hasFetchedPaymentSources),
-        w = (0, r.bG)([b.default], () => b.default.getCurrentUser()),
+        k = (0, r.bG)([C.A], () => C.A.hasFetchedSubscriptions()),
+        U = (0, r.bG)([b.A], () => b.A.hasFetchedPaymentSources),
+        w = (0, r.bG)([E.default], () => E.default.getCurrentUser()),
         V = w?.id,
         B = (0, R.V)(),
         F = (0, O.O)(),
         H = (0, h.Y)(P.T7),
         [z, Y] = s.useState(!0),
         X = s.useRef(0),
-        K = (0, v.YE)(w, P.PremiumTypes.TIER_2),
+        K = (0, N.YE)(w, P.PremiumTypes.TIER_2),
         W = (0, r.bG)([I.A], () => I.A.hasFetched);
     s.useEffect(() => {
         W || x.xG()
@@ -64,7 +64,7 @@ let M = function(e) {
             await Promise.all([x.hP(), x.$o(), (0, c.zS)(null, null, D.tF5.DISCOVERY)]), X.current = Date.now() - e, Y(!1)
         })
     }, []), s.useEffect(() => {
-        z || N.default.track(D.HAw.PREMIUM_MARKETING_PAGE_VIEWED, {
+        z || v.default.track(D.HAw.PREMIUM_MARKETING_PAGE_VIEWED, {
             location_stack: l,
             load_duration_ms: X.current
         })
@@ -78,7 +78,7 @@ let M = function(e) {
             children: (0, i.jsx)(y.A, {
                 userId: V
             })
-        }) : U && H && k ? null : (0, i.jsx)("div", {
+        }) : k && H && U ? null : (0, i.jsx)("div", {
             className: a()(G.kL, G.Lq),
             children: (0, i.jsx)(o.y$y, {})
         });

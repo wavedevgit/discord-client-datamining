@@ -1,12 +1,12 @@
 /** chunk id: 839671 params = (module,exports,require) **/
 n.d(t, {
     A: () => A,
-    K: () => j
+    K: () => b
 });
 var a = n(627968),
-    i = n(64700),
-    l = n(503698),
-    r = n.n(l),
+    l = n(64700),
+    i = n(503698),
+    r = n.n(i),
     s = n(505779),
     o = n(990078),
     c = n(397927),
@@ -14,17 +14,17 @@ var a = n(627968),
     u = n(37948),
     m = n(985018),
     x = n(282063),
-    g = n(808900);
-let h = [s.V.OFFICIAL, s.V.TWITTER, s.V.YOUTUBE],
-    f = {
-        colorClass: g.wP
+    h = n(808900);
+let f = [s.V.OFFICIAL, s.V.TWITTER, s.V.YOUTUBE],
+    g = {
+        colorClass: h.wP
     },
-    _ = {
+    p = {
         size: "xs",
-        colorClass: g.wP
+        colorClass: h.wP
     };
 
-function p(e, t) {
+function _(e, t) {
     switch (e.category) {
         case s.V.OFFICIAL:
             return {
@@ -84,17 +84,17 @@ function v(e) {
         website: t,
         trackAction: n
     } = e, {
-        action: l,
+        action: i,
         icon: r,
         title: s
-    } = p(t, f), d = i.useCallback(() => {
-        n(l)
-    }, [l, n]);
+    } = _(t, g), d = l.useCallback(() => {
+        n(i)
+    }, [i, n]);
     return (0, a.jsx)(o.m, {
         text: s,
         children: (0, a.jsx)(c.MzZ, {
             onClick: d,
-            className: g.yO,
+            className: h.yO,
             href: t.url,
             target: "_blank",
             "aria-label": s,
@@ -108,13 +108,13 @@ let A = function(e) {
         trackAction: n
     } = e;
     if (null == t.websites) return null;
-    let i = t.websites.filter(e => {
+    let l = t.websites.filter(e => {
         let {
             category: t
         } = e;
-        return h.includes(t)
+        return f.includes(t)
     }).sort((e, t) => e.category - t.category);
-    return 0 === i.length ? null : (0, a.jsxs)("div", {
+    return 0 === l.length ? null : (0, a.jsxs)("div", {
         children: [(0, a.jsx)(c.Heading, {
             className: x.bV,
             variant: "text-xs/semibold",
@@ -122,7 +122,7 @@ let A = function(e) {
             children: m.intl.string(m.t["Oj3o1/"])
         }), (0, a.jsx)("div", {
             className: r()(x.nM, x.mX),
-            children: i.map(e => (0, a.jsx)(v, {
+            children: l.map(e => (0, a.jsx)(v, {
                 website: e,
                 trackAction: n
             }, e.url))
@@ -130,22 +130,22 @@ let A = function(e) {
     })
 };
 
-function j(e) {
+function b(e) {
     let {
         website: t,
         trackAction: n
-    } = e, l = (0, u.A)(), {
+    } = e, i = (0, u.A)(), {
         action: r,
         icon: s,
         title: d
-    } = p(t, _), m = i.useCallback(() => {
-        n(r), l(t.url)
-    }, [r, l, n, t.url]);
+    } = _(t, p), m = l.useCallback(() => {
+        n(r), i(t.url)
+    }, [r, i, n, t.url]);
     return (0, a.jsx)(o.m, {
         text: d,
         children: (0, a.jsx)(c.DUT, {
             onClick: m,
-            className: g.yO,
+            className: h.yO,
             title: d,
             children: s
         })

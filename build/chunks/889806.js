@@ -26,8 +26,8 @@ var i = n(627968),
     T = n(406704),
     S = n(734057),
     b = n(696451),
-    y = n(71393),
-    v = n(576705),
+    v = n(71393),
+    y = n(576705),
     j = n(383501),
     R = n(222823),
     O = n(994500),
@@ -155,7 +155,7 @@ class H extends U.Ay {
                 channel: t
             })
         });
-        let l = y.A.getGuild(t.getGuildId());
+        let l = v.A.getGuild(t.getGuildId());
         null != l && (0, u.L3)(e, async () => {
             let {
                 default: e
@@ -197,11 +197,11 @@ class H extends U.Ay {
             embeddedApps: T,
             resolvedUnreadSetting: S,
             enableActivities: b,
-            showMenuItemPopover: y,
-            markMenuItemPopoverAsDismissed: v,
+            showMenuItemPopover: v,
+            markMenuItemPopoverAsDismissed: y,
             channelItemRef: j,
             isSuggestedSection: R
-        } = this.props, L = j ?? this.channelItemRef, D = !y && o, U = !y && b && null != T && T.length > 0, G = (0, f.M)(I), k = (0, i.jsxs)("li", {
+        } = this.props, L = j ?? this.channelItemRef, D = !v && o, U = !v && b && null != T && T.length > 0, G = (0, f.M)(I), k = (0, i.jsxs)("li", {
             className: a()(this.getClassName(), {
                 [V.r9]: this.isDisabled(),
                 [V.wH]: n
@@ -249,9 +249,9 @@ class H extends U.Ay {
                         children: [this.renderChannelInfo(), this.renderInviteButton(), this.renderEditButton()]
                     })]
                 })
-            }), y && (0, i.jsx)(x.A, {
+            }), v && (0, i.jsx)(x.A, {
                 targetElementRef: L,
-                markMenuItemPopoverAsDismissed: v
+                markMenuItemPopoverAsDismissed: y
             })]
         });
         return _ ? u(h(k)) : k
@@ -274,20 +274,20 @@ function W(e) {
         unread: R.Ay.hasUnread(t.id),
         ackMessageId: R.Ay.ackMessageId(t.id),
         isLowImportanceMention: R.Ay.getIsMentionLowImportance(t.id)
-    })), p = (0, o.bG)([L.Ay], () => L.Ay.resolveUnreadSetting(t)), f = (0, o.cf)([S.A, v.A], () => {
+    })), p = (0, o.bG)([L.Ay], () => L.Ay.resolveUnreadSetting(t)), f = (0, o.cf)([S.A, y.A], () => {
         let e = S.A.getChannel(t.parent_id);
         return {
-            canManageChannel: v.A.can(w.xBc.MANAGE_CHANNELS, t),
-            canReorderChannel: !0 !== s && (n.id === B.Vc || (null != e ? v.A.can(w.xBc.MANAGE_CHANNELS, e) : v.A.can(w.xBc.MANAGE_CHANNELS, n)))
+            canManageChannel: y.A.can(w.xBc.MANAGE_CHANNELS, t),
+            canReorderChannel: !0 !== s && (n.id === B.Vc || (null != e ? y.A.can(w.xBc.MANAGE_CHANNELS, e) : y.A.can(w.xBc.MANAGE_CHANNELS, n)))
         }
     }), x = (0, o.bG)([C.A], () => C.A.shouldIndicateNewChannel(n.id, t.id)), {
         needSubscriptionToAccess: N,
-        isSubscriptionGated: y
+        isSubscriptionGated: v
     } = (0, I.A)(t.id), O = (0, o.bG)([L.Ay], () => L.Ay.isFavorite(n.id, t.id)), M = (0, m.ni)(t), D = (0, A.Gp)(t.id), U = (0, G.A)({
         channel: t,
         isChannelCollapsed: !1,
         isChannelSelected: c,
-        isSubscriptionGated: y,
+        isSubscriptionGated: v,
         needSubscriptionToAccess: N,
         isNewChannel: x,
         muted: d,
@@ -311,7 +311,7 @@ function W(e) {
         ...e,
         hasActiveThreads: u,
         hasMoreActiveThreads: h,
-        isSubscriptionGated: y,
+        isSubscriptionGated: v,
         needSubscriptionToAccess: N,
         isNewChannel: x && e.canBeNewChannel,
         isFavoriteSuggestion: a && !O,

@@ -4,8 +4,8 @@ t.d(n, {
 });
 var i = t(627968),
     a = t(311907),
-    r = t(397927),
-    l = t(793574),
+    l = t(397927),
+    r = t(793574),
     o = t(688810),
     s = t(632738),
     d = t(994500),
@@ -34,7 +34,7 @@ function v(e) {
         sourceAnalyticsLocations: T = []
     } = e, S = t === h.ME ? void 0 : t, N = (0, a.bG)([d.A], () => d.A.isBlocked(n.id)), {
         analyticsLocations: R
-    } = (0, o.Ay)([...T, N ? l.A.BLOCKED_PROFILE_MODAL : l.A.IGNORED_PROFILE_MODAL]), L = (0, _.pb)({
+    } = (0, o.Ay)([...T, N ? r.A.BLOCKED_PROFILE_MODAL : r.A.IGNORED_PROFILE_MODAL]), L = (0, _.pb)({
         layout: "MODAL_V2",
         userId: n.id,
         guildId: S,
@@ -42,10 +42,10 @@ function v(e) {
         messageId: E,
         roleId: j
     }), P = [{
-        icon: r.yr3,
+        icon: l.yr3,
         description: I.intl.string(I.t.kcuWva)
     }, {
-        icon: r.yr3,
+        icon: l.yr3,
         description: I.intl.string(N ? I.t.QxrDY1 : I.t.W6fjkS)
     }], D = (0, p.Ay)(n.id, S), O = c.Ay.getName(D?.guildId, v, n), k = I.intl.formatToPlainString(I.t.KRe1Fk, {
         name: O
@@ -55,7 +55,7 @@ function v(e) {
         children: (0, i.jsx)(_.of, {
             value: L,
             isLoaded: D?.isLoaded,
-            children: (0, i.jsx)(r.EOs, {
+            children: (0, i.jsx)(l.EOs, {
                 "data-migration-pending": !0,
                 transitionState: y,
                 className: b.zr,
@@ -74,11 +74,11 @@ function v(e) {
                             guildId: S
                         }), (0, i.jsxs)("div", {
                             className: b.FS,
-                            children: [(0, i.jsx)(r.Heading, {
+                            children: [(0, i.jsx)(l.Heading, {
                                 variant: "heading-xl/bold",
                                 color: "text-default",
                                 children: I.intl.string(I.t.b33pLD)
-                            }), (0, i.jsx)(r.Text, {
+                            }), (0, i.jsx)(l.Text, {
                                 variant: "text-md/medium",
                                 color: "text-default",
                                 children: I.intl.format(N ? I.t.T7QiLn : I.t.MnEowy, {
@@ -96,10 +96,10 @@ function v(e) {
                                     icon: t,
                                     title: a,
                                     titleVariant: "text-md/normal",
-                                    color: r.LU0.colors.TEXT_DEFAULT.css
+                                    color: l.LU0.colors.TEXT_DEFAULT.css
                                 }, n)
                             })
-                        }), (0, i.jsxs)(r.BJc, {
+                        }), (0, i.jsxs)(l.BJc, {
                             align: "center",
                             children: [(0, i.jsx)(f.A, {
                                 size: "md",

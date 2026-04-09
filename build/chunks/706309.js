@@ -4,8 +4,8 @@ a.d(t, {
 });
 var l = a(627968);
 a(64700);
-var n = a(397927),
-    r = a(18769),
+var r = a(397927),
+    n = a(18769),
     s = a(653793),
     i = a(673277),
     o = a(118713);
@@ -34,13 +34,13 @@ let d = () => (0, l.jsx)("div", {
         name: "Carousel",
         id: "carousel",
         component: e => (0, l.jsxs)(l.Fragment, {
-            children: [(0, l.jsx)(n.Text, {
+            children: [(0, l.jsx)(r.Text, {
                 variant: "text-lg/normal",
                 children: "Carousel steps through the children with a swipe and fade animation."
-            }), (0, l.jsx)(n.Text, {
+            }), (0, l.jsx)(r.Text, {
                 variant: "text-md/normal",
                 children: "It has very minimal configuration options, instead choosing to be opinionated about the functionality of a carousel in a CMS world."
-            }), (0, l.jsx)(n.Text, {
+            }), (0, l.jsx)(r.Text, {
                 variant: "text-md/normal",
                 children: "The carousel will pause slidding when the mouse hovers it, and resume on mouse leave."
             }), (0, l.jsx)(i.A, {
@@ -79,7 +79,7 @@ let d = () => (0, l.jsx)("div", {
                     })]
                 })
             }), (0, l.jsxs)(i.A, {
-                children: [(0, l.jsx)(n.Text, {
+                children: [(0, l.jsx)(r.Text, {
                     variant: "text-md/normal",
                     children: "Here is an example of what a carousel inside of a card might look like for showing off different products"
                 }), (0, l.jsx)("br", {}), (0, l.jsx)(s.A, {
@@ -100,12 +100,12 @@ let d = () => (0, l.jsx)("div", {
                     })
                 })]
             }), (0, l.jsxs)(i.A, {
-                children: [(0, l.jsx)(n.Text, {
+                children: [(0, l.jsx)(r.Text, {
                     variant: "text-md/normal",
                     children: "And here is an example of a FeaturedBlock Carousel"
                 }), (0, l.jsx)("br", {}), (0, l.jsxs)(o.A, {
                     ...e,
-                    children: [(0, l.jsx)(r.A, {
+                    children: [(0, l.jsx)(n.A, {
                         href: "",
                         backgroundImage: {
                             src: "https://cdn.discordapp.com/assets/content/cd657aa88cb5c636a97dd3a5d68debfb009515cdc1c541296c1ac4e3ad5fc63e"
@@ -117,7 +117,7 @@ let d = () => (0, l.jsx)("div", {
                             src: "https://cdn.discordapp.com/assets/content/c73a78420e788a01f10ae7106a1b858e78fffd11e0e2eee6ece0acf192bc3bf3.png"
                         },
                         ctaText: "View The Collection"
-                    }), (0, l.jsx)(r.A, {
+                    }), (0, l.jsx)(n.A, {
                         href: "",
                         backgroundImage: {
                             src: "https://cdn.discordapp.com/assets/content/cd657aa88cb5c636a97dd3a5d68debfb009515cdc1c541296c1ac4e3ad5fc63e"
@@ -129,7 +129,7 @@ let d = () => (0, l.jsx)("div", {
                             src: "https://cdn.discordapp.com/assets/content/c73a78420e788a01f10ae7106a1b858e78fffd11e0e2eee6ece0acf192bc3bf3.png"
                         },
                         ctaText: "View The Collection"
-                    }), (0, l.jsx)(r.A, {
+                    }), (0, l.jsx)(n.A, {
                         href: "",
                         backgroundImage: {
                             src: "https://cdn.discordapp.com/assets/content/cd657aa88cb5c636a97dd3a5d68debfb009515cdc1c541296c1ac4e3ad5fc63e"
@@ -141,7 +141,7 @@ let d = () => (0, l.jsx)("div", {
                             src: "https://cdn.discordapp.com/assets/content/c73a78420e788a01f10ae7106a1b858e78fffd11e0e2eee6ece0acf192bc3bf3.png"
                         },
                         ctaText: "View The Collection"
-                    }), (0, l.jsx)(r.A, {
+                    }), (0, l.jsx)(n.A, {
                         href: "",
                         backgroundImage: {
                             src: "https://cdn.discordapp.com/assets/content/cd657aa88cb5c636a97dd3a5d68debfb009515cdc1c541296c1ac4e3ad5fc63e"

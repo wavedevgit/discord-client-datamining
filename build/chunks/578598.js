@@ -54,7 +54,7 @@ function m(e) {
         useDisabled: g,
         useTrailingContent: _,
         onClick: x
-    } = t, [A, h] = s.useState(!1), p = (0, r.q)(t), T = a(), f = c?.(), S = n(), b = d?.(), E = m?.(), C = g?.(), N = _?.();
+    } = t, [A, h] = s.useState(!1), p = (0, r.q)(t), T = a(), f = c?.(), S = n(), E = d?.(), b = m?.(), C = g?.(), v = _?.();
     return (0, i.jsx)(o.L, {
         children: (0, i.jsx)(l.D0$, {
             label: T,
@@ -66,8 +66,8 @@ function m(e) {
                 align: "center",
                 justify: "end",
                 gap: "md",
-                children: [null != N && (0, i.jsx)(u, {
-                    trailingContent: N
+                children: [null != v && (0, i.jsx)(u, {
+                    trailingContent: v
                 }), (0, i.jsx)(l.Button, {
                     onClick: () => {
                         p();
@@ -75,8 +75,8 @@ function m(e) {
                         e instanceof Promise && (h(!0), e.finally(() => h(!1)))
                     },
                     text: S,
-                    "aria-label": b,
-                    variant: E,
+                    "aria-label": E,
+                    variant: b,
                     disabled: C,
                     loading: A
                 })]

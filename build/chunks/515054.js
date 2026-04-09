@@ -8,8 +8,8 @@ var i = n(627968),
     l = n(503698),
     s = n.n(l),
     r = n(397927),
-    o = n(183555),
-    c = n(958805),
+    o = n(207803),
+    c = n(183555),
     d = n(61881),
     u = n(790417),
     g = n(113763),
@@ -81,7 +81,7 @@ function h(e) {
         onClose: m
     } = e, {
         trackUserProfileAction: f
-    } = (0, o.NJ)(), [{
+    } = (0, c.NJ)(), [{
         section: I,
         text: h
     }, v] = a.useState(g.find(e => {
@@ -102,7 +102,7 @@ function h(e) {
                 look: "custom",
                 selectedItem: I,
                 onItemSelect: e => {
-                    d.A.hasUnsavedChanges() && I === x.RP.WIDGETS ? c.A.notifyUnsavedWidgets() : (f({
+                    d.A.hasUnsavedChanges() && I === x.RP.WIDGETS ? (0, o.VQ)() : (f({
                         action: "PRESS_SECTION",
                         section: e
                     }), v(t => g.find(t => t.section === e) ?? t))

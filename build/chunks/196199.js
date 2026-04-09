@@ -21,11 +21,11 @@ var i = n(627968),
     T = n(501486),
     f = n(924699),
     S = n(25833),
-    b = n(184487),
-    E = n(308748),
+    E = n(184487),
+    b = n(308748),
     C = n(788868),
-    N = n(985018),
-    v = n(515145);
+    v = n(985018),
+    N = n(515145);
 
 function I(e) {
     let {
@@ -34,27 +34,27 @@ function I(e) {
         fractionalState: D
     } = (0, a.A)({
         forceFetch: !0
-    }), G = j?.isPremiumGroupMember(), M = t?.isPausedOrPausePending === !0 && D === C.xc.NONE, U = s.useMemo(() => I.some(e => null == e.premiumGuildSubscription && e.isAvailable()), [I]), k = M ? N.intl.string(N.t.mOWsF1) : U ? void 0 : N.intl.string(N.t.xr4m5B), w = s.useMemo(() => {
+    }), G = j?.isPremiumGroupMember(), M = t?.isPausedOrPausePending === !0 && D === C.xc.NONE, k = s.useMemo(() => I.some(e => null == e.premiumGuildSubscription && e.isAvailable()), [I]), U = M ? v.intl.string(v.t.mOWsF1) : k ? void 0 : v.intl.string(v.t.xr4m5B), w = s.useMemo(() => {
         if (null == t) return 0;
         let e = x.Ay.getNumIncludedPremiumGuildSubscriptionSlots(t.planId);
         return 0 === e || e !== I.length ? 0 : Math.max(0, e - L)
     }, [t, I.length, L]);
     return (0, i.jsxs)("div", {
-        className: v.GO,
+        className: N.GO,
         children: [(0, i.jsx)(r.kb, {
-            className: v.ek
-        }), (0, i.jsx)(f.A, {}), (0, i.jsx)(S.A, {}), w > 0 && (0, i.jsx)(E.A, {
+            className: N.ek
+        }), (0, i.jsx)(f.A, {}), (0, i.jsx)(S.A, {}), w > 0 && (0, i.jsx)(b.A, {
             count: w,
-            disabledReason: k
+            disabledReason: U
         }), G && (0, i.jsx)(d.A, {}), !R && (0, i.jsx)(A.A, {}), (0, i.jsxs)("div", {
-            className: v.C_,
+            className: N.C_,
             children: [(0, i.jsx)(h.A, {
                 guildBoostSlots: I,
                 guildBoostSlotsByGuildId: n,
                 premiumSubscription: t,
                 pausedAppliedGuildBoosts: P,
                 fractionalPremiumState: D
-            }), (0, i.jsx)(b.A, {}), (0, i.jsx)(o.A, {
+            }), (0, i.jsx)(E.A, {}), (0, i.jsx)(o.A, {
                 hideHeading: !0,
                 hideTier0: !0
             }), (0, i.jsx)(p.A, {}), (0, i.jsx)(T.A, {})]

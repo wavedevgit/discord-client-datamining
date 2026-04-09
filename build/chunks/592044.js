@@ -48,7 +48,7 @@ let p = e => {
             triggerRef: u
         } = e, f = (0, o.A)(null, () => {
             t && n()
-        }, u), x = (0, d.n)(e => e.globalMute), E = (0, d.n)(e => e.setGlobalMute), I = (0, d.n)(e => e.genre), C = (0, d.n)(e => e.setGenre), N = (0, d.n)(e => e.songIndex), T = (0, d.n)(e => e.playRadio), S = (0, d.n)(e => e.setPlayRadio), b = (0, d.n)(e => e.playPrevSong), y = (0, d.n)(e => e.playNextSong), v = (0, a.bG)([c.A], () => c.A.assets), j = (0, A.A)(I, N), R = !x && T;
+        }, u), x = (0, d.n)(e => e.globalMute), E = (0, d.n)(e => e.setGlobalMute), I = (0, d.n)(e => e.genre), C = (0, d.n)(e => e.setGenre), N = (0, d.n)(e => e.songIndex), T = (0, d.n)(e => e.playRadio), S = (0, d.n)(e => e.setPlayRadio), b = (0, d.n)(e => e.playPrevSong), v = (0, d.n)(e => e.playNextSong), y = (0, a.bG)([c.A], () => c.A.assets), j = (0, A.A)(I, N), R = !x && T;
         return (0, i.jsxs)("div", {
             ref: f,
             className: s()(g.ZR, {
@@ -100,7 +100,7 @@ let p = e => {
                         size: "sm",
                         "aria-label": m.intl.string(_.default["+nt9+r"]),
                         icon: r.uhT,
-                        onClick: y
+                        onClick: v
                     })]
                 })]
             }), (0, i.jsx)(r.BJc, {
@@ -119,7 +119,7 @@ let p = e => {
                                 [g.wH]: e === I
                             }),
                             style: {
-                                backgroundImage: `url('${v?.genres?.[e]?.thumbnail}')`,
+                                backgroundImage: `url('${y?.genres?.[e]?.thumbnail}')`,
                                 backgroundSize: "cover"
                             },
                             children: (0, i.jsxs)("div", {

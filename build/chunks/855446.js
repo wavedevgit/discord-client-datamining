@@ -46,11 +46,11 @@ function C(e) {
         embeddedActivitiesManager: m.A,
         assetNames: x,
         commandOrigin: C
-    }), [y, v] = s.useState(!1), j = s.useCallback(() => {
-        v(!0)
-    }, [v]), R = s.useCallback(() => {
-        v(!1)
-    }, [v]), O = s.useMemo(() => (0, l.jsx)("div", {
+    }), [v, y] = s.useState(!1), j = s.useCallback(() => {
+        y(!0)
+    }, [y]), R = s.useCallback(() => {
+        y(!1)
+    }, [y]), O = s.useMemo(() => (0, l.jsx)("div", {
         className: f.Gz,
         children: (0, l.jsx)("div", {
             className: f.fC,
@@ -102,7 +102,7 @@ function C(e) {
                 value: 0
             },
             to: {
-                value: +!!y
+                value: +!!v
             },
             children: e => {
                 let {
