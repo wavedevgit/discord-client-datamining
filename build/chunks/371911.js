@@ -1,6 +1,6 @@
 /** chunk id: 371911 params = (module,exports,require) **/
 n.d(t, {
-    C: () => y
+    C: () => v
 });
 var i = n(627968),
     l = n(64700),
@@ -26,12 +26,12 @@ var i = n(627968),
     T = n(412484),
     S = n(652215),
     b = n(985018),
-    v = n(415632);
+    y = n(415632);
 
-function y(e) {
+function v(e) {
     let t, n, {
             onOpen: s,
-            onClose: y,
+            onClose: v,
             children: j,
             badgeState: R,
             popoutPosition: O,
@@ -62,11 +62,11 @@ function y(e) {
             setSeenTutorial: n
         }),
         F = l.useCallback(() => {
-            k(!1), P && y?.()
-        }, [y, P]),
+            k(!1), P && v?.()
+        }, [v, P]),
         W = l.useCallback(() => {
-            k(!P), P ? y?.() : s?.()
-        }, [y, s, P]);
+            k(!P), P ? v?.() : s?.()
+        }, [v, s, P]);
     l.useEffect(() => (x._.subscribe(S.jej.TOGGLE_INBOX, W), () => void x._.unsubscribe(S.jej.TOGGLE_INBOX, W)), [W]);
     let {
         enabled: K,
@@ -96,8 +96,8 @@ function y(e) {
                     "aria-label": b.intl.string(b.t.GSmTKJ),
                     className: U,
                     children: (0, i.jsx)("div", {
-                        className: a()(v.k, {
-                            [v.q]: X
+                        className: a()(y.k, {
+                            [y.q]: X
                         }),
                         children: (0, i.jsx)(c.Fmo, {
                             component: (0, i.jsx)(C.A, {

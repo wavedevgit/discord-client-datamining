@@ -1,6 +1,6 @@
 /** chunk id: 510790 params = (module,exports,require) **/
 n.d(t, {
-    f: () => N
+    f: () => y
 });
 var i = n(627968),
     l = n(64700),
@@ -25,7 +25,7 @@ var i = n(627968),
     v = n(985018),
     b = n(574854);
 let T = e => e.map(e => `#${e}`),
-    N = e => {
+    y = e => {
         let {
             message: t
         } = e, {
@@ -35,7 +35,7 @@ let T = e => e.map(e => `#${e}`),
         } = (0, x.ko)();
         return void 0 === n ? null : (0, i.jsxs)("div", {
             className: b.kL,
-            children: [(0, i.jsx)(y, {
+            children: [(0, i.jsx)(N, {
                 message: t
             }), (0, i.jsx)(c.$nd, {
                 text: v.intl.string(v.t.SKNnqq),
@@ -53,7 +53,7 @@ let T = e => e.map(e => `#${e}`),
             })]
         })
     },
-    y = e => {
+    N = e => {
         let t, n, c, {
                 message: h
             } = e,

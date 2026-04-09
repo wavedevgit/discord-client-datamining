@@ -26,11 +26,11 @@ function c(e) {
             _(!1)
         })
     }, [t, g]);
-    let p = s.useMemo(() => null == x ? [] : Object.keys(x).filter(e => !n.includes(e)).sort((e, t) => x[t].score - x[e].score), [x, n]),
-        A = s.useCallback(e => {
+    let A = s.useMemo(() => null == x ? [] : Object.keys(x).filter(e => !n.includes(e)).sort((e, t) => x[t].score - x[e].score), [x, n]),
+        p = s.useCallback(e => {
             n.includes(e) ? c(n.filter(t => t !== e)) : c([...n, e])
         }, [c, n]);
-    return h && null == x ? (0, i.jsx)(l.y$y, {}) : null == p || 0 === p.length ? null : (0, i.jsxs)(i.Fragment, {
+    return h && null == x ? (0, i.jsx)(l.y$y, {}) : null == A || 0 === A.length ? null : (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)("div", {
             className: d.me
         }), (0, i.jsxs)("div", {
@@ -41,10 +41,10 @@ function c(e) {
                 children: o.intl.string(o.t.bFGpua)
             }), (0, i.jsx)("div", {
                 className: d.CW,
-                children: p.map(e => (0, i.jsx)(a.A, {
+                children: A.map(e => (0, i.jsx)(a.A, {
                     applicationId: e,
                     selected: !1,
-                    onClick: A,
+                    onClick: p,
                     disabled: u
                 }, e))
             })]

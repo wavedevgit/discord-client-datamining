@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
     bN: () => _,
-    jr: () => p,
+    jr: () => A,
     nx: () => h
 });
 var i = n(73153),
@@ -30,7 +30,7 @@ function _(e) {
         channelId: e
     })
 }
-async function p(e) {
+async function A(e) {
     let t = Array.from(c.A.editedDefaultChannelIds).filter(e => null != o.A.getChannel(e)),
         n = m.A.advancedMode,
         [h] = (0, a.ui)(e.id, [...t]),

@@ -39,6 +39,7 @@ function m(e) {
     return (0, i.jsx)(c.A, {
         isFocused: g,
         user: t,
+        analyticsLocations: p,
         onClick: () => (0, o.openUserProfileModal)({
             userId: t.id,
             sourceAnalyticsLocations: p

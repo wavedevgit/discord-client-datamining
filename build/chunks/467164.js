@@ -169,10 +169,10 @@ function G(e) {
                     className: R.Qw,
                     children: y.intl.format(y.t["S+9O7g"], {
                         stageName: el,
-                        stageHook: (e, n) => (0, l.jsx)("span", {
+                        stageHook: (e, t) => (0, l.jsx)("span", {
                             className: R.HA,
-                            children: t.name
-                        }, n)
+                            children: el
+                        }, t)
                     })
                 }) : null, (0, l.jsx)(v.A, {
                     className: R.XI,

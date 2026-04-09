@@ -17,8 +17,8 @@ var i = n(627968),
     x = n(565645),
     h = n(964486),
     _ = n(775602),
-    p = n(47167),
-    A = n(713654),
+    A = n(47167),
+    p = n(713654),
     f = n(508675),
     j = n(263063),
     N = n(714991),
@@ -50,8 +50,8 @@ let k = "WELCOME_CHANNEL",
             E = (0, u.bG)([I.A], () => I.A.getChannel(a.channel_id)),
             C = (0, u.bG)([f.Ay], () => null != a.emoji_id ? f.Ay.getUsableCustomEmojiById(a.emoji_id) : null),
             T = null != E && S.MJ(O.xBc.VIEW_CHANNEL, E),
-            v = (0, A.gU)(E) ?? m.N$i,
-            y = (0, p.Ay)(E, !1),
+            v = (0, p.gU)(E) ?? m.N$i,
+            y = (0, A.Ay)(E, !1),
             R = () => {
                 (0, m.mMO)(async () => {
                     let {
@@ -154,7 +154,7 @@ let k = "WELCOME_CHANNEL",
         } = e, {
             welcomeSettings: l,
             originalWelcomeSettings: r
-        } = (0, u.bG)([T.A], () => T.A.getSettingsProps()), a = (0, u.bG)([_.A], () => _.A.useReducedMotion), [d, c] = s.useState(null), [g, x] = s.useState(!1), [p, A] = s.useState(!1), {
+        } = (0, u.bG)([T.A], () => T.A.getSettingsProps()), a = (0, u.bG)([_.A], () => _.A.useReducedMotion), [d, c] = s.useState(null), [g, x] = s.useState(!1), [A, p] = s.useState(!1), {
             description: f,
             channels: I,
             enabled: S
@@ -165,7 +165,7 @@ let k = "WELCOME_CHANNEL",
         }, k = e => {
             null == t || e !== r.enabled && ((0, C.i4)(t.id, {
                 enabled: e
-            }), A(!a), x(!0))
+            }), p(!a), x(!0))
         }, P = (e, t, n) => {
             if (null == I) return;
             let i = I.indexOf(e),
@@ -233,7 +233,7 @@ let k = "WELCOME_CHANNEL",
                 onToggle: S || I?.length !== 0 ? () => {
                     k(!S)
                 } : void 0,
-                animateStatus: p,
+                animateStatus: A,
                 firstLine: S ? D.intl.string(D.t.JbB7Ql) : D.intl.string(D.t["/bd0Qv"]),
                 secondLine: S ? D.intl.string(D.t.TA1g7z) : D.intl.string(D.t.nc6r1B)
             }), (0, i.jsxs)("div", {

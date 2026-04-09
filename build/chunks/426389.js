@@ -148,17 +148,25 @@ function k() {
     a.useEffect(() => {
         f && 0 !== O.length && (0, A.yO)(O, _.uF.ACTIVITY_PANEL, "NowPlaying")
     }, [O, f, b]);
-    let L = a.useMemo(() => {
-            if (!f) return S;
-            if (null == b) return new Map;
-            let e = new Map;
-            for (let [t, n] of x.entries()) {
-                let i = b.quests.get(n);
-                (0, p.Oh)(i) && null != i.questWithUserStatus && e.set(t, i.questWithUserStatus)
-            }
-            return e
-        }, [f, b, S, x]),
-        R = null;
+    let {
+        finalQuestsByPartyId: L
+    } = (0, d.cf)([h.A], () => {
+        if (!f) return {
+            finalQuestsByPartyId: S
+        };
+        if (null == b) return {
+            finalQuestsByPartyId: new Map
+        };
+        let e = new Map;
+        for (let [t, n] of x.entries()) {
+            let i = b.earnedDecisionByQuestId.get(n),
+                a = h.A.getQuest(n);
+            (0, p.Oh)(i) && i.shouldDeliver && null != a && e.set(t, a)
+        }
+        return {
+            finalQuestsByPartyId: e
+        }
+    }, [b, x, S, f]), R = null;
     return t ? R = e.length > 0 ? e.map(e => {
         let {
             party: t

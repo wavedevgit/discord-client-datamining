@@ -1,7 +1,7 @@
 /** chunk id: 377337 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => p
+    A: () => A
 });
 var i = n(627968),
     s = n(64700),
@@ -54,7 +54,7 @@ function h(e) {
 }
 let _ = [];
 
-function p(e) {
+function A(e) {
     let {
         profile: t,
         canManageGuild: n
@@ -67,7 +67,7 @@ function p(e) {
         d.A.updateGuildProfile(l, {
             gameApplicationIds: t
         })
-    }, [l, o]), p = s.useRef(o), A = s.useMemo(() => (r().isEqual(new Set(o), new Set(p.current)) || (p.current = [...o]), p.current), [o]);
+    }, [l, o]), A = s.useRef(o), p = s.useMemo(() => (r().isEqual(new Set(o), new Set(A.current)) || (A.current = [...o]), A.current), [o]);
     return (0, i.jsxs)(a.nVY, {
         label: m.intl.string(m.t.BR68vK),
         description: m.intl.string(m.t.MobxiB),
@@ -76,7 +76,7 @@ function p(e) {
             handleChange: c,
             disabled: !n
         }), (0, i.jsx)(h, {
-            gameApplicationIds: A,
+            gameApplicationIds: p,
             onRemoveGame: g,
             disabled: !n
         }), (0, i.jsx)(u.A, {

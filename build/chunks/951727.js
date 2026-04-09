@@ -1,8 +1,8 @@
 /** chunk id: 951727 params = (module,exports,require) **/
 n.d(t, {
     Ay: () => j,
-    Ej: () => N,
-    Ls: () => y,
+    Ej: () => y,
+    Ls: () => N,
     j8: () => S
 }), n(801541);
 var i = n(889137),
@@ -35,12 +35,12 @@ let T = {
     showResults: !1
 };
 
-function N(e, t) {
+function y(e, t) {
     for (let n of e)
         if (("number" == typeof n.emoji.id ? `${n.emoji.id}` : n.emoji.id) === t) return n
 }
 
-function y(e) {
+function N(e) {
     return null == e.poll || m.A.getMessage(e.channel_id, e.id) === e
 }
 
@@ -62,7 +62,7 @@ function S(e, t) {
         } = t ?? (0, A.xt)(e.getChannelId(), e.id) ?? T,
         g = e.reactions,
         x = !0;
-    if (!y(e)) {
+    if (!N(e)) {
         let t = m.A.getMessage(e.channel_id, e.id);
         x = !e.isSearchHit && null != t, g = t?.reactions ?? g
     }
@@ -70,7 +70,7 @@ function S(e, t) {
         C = g.some(e => !0 === e.me_vote),
         E = !h && C,
         b = E || r || p,
-        N = l && x && (!C || h || b),
+        y = l && x && (!C || h || b),
         S = c.A.getChannel(e.getChannelId())?.getGuildId?.(),
         j = null != S ? u.Ay.getSelfMember(S) : null,
         L = (0, o.TR)(j),
@@ -78,7 +78,7 @@ function S(e, t) {
         P = !_ && f && !E && l && !L && !R;
     return {
         poll: i,
-        canTapAnswers: N,
+        canTapAnswers: y,
         canRemoveVote: E && l && !r,
         canShowVoteCounts: b,
         canSubmitVote: P,
@@ -113,7 +113,7 @@ function j(e, t) {
         I = c.A.getChannel(e.getChannelId())?.getGuildId?.(),
         v = (0, C.T)(m, I),
         T = u.answers,
-        y = u.layout_type,
+        N = u.layout_type,
         j = S(e, t, {
             formattedExpirationLabel: d
         });
@@ -137,11 +137,11 @@ function j(e, t) {
     } = j, W = (0, x.aw)(G), Y = b.intl.formatToPlainString(b.t.XRkuof, {
         count: W
     }), z = Math.max(...T.map(e => {
-        let t = N(G, `${e.answer_id}`);
+        let t = y(G, `${e.answer_id}`);
         return t?.count_details?.vote ?? 0
     })), Q = T.map(e => {
         let t, s = `${e.answer_id}`,
-            o = N(G, s),
+            o = y(G, s),
             d = o?.count_details?.vote ?? 0,
             c = 0 === W ? 0 : d / W,
             u = F.has(s),
@@ -215,7 +215,7 @@ function j(e, t) {
             style: g,
             shouldAnimateTransition: H && !A,
             votesPercentage: Math.round(100 * c),
-            votes: (0, i.YW)(y).with(l.Z.IMAGE_ONLY_ANSWERS, () => `(${d.toLocaleString()})`).otherwise(() => b.intl.formatToPlainString(b.t.XRkuof, {
+            votes: (0, i.YW)(N).with(l.Z.IMAGE_ONLY_ANSWERS, () => `(${d.toLocaleString()})`).otherwise(() => b.intl.formatToPlainString(b.t.XRkuof, {
                 count: d
             }))
         }
@@ -317,10 +317,10 @@ function j(e, t) {
             canSelectMultipleAnswers: !0
         }, () => f.CQ.CHECKBOXES).exhaustive(),
         answerTapAccessibilityLabel: V ? J : void 0,
-        layoutType: y,
+        layoutType: N,
         resources: (0, E.A)({
             theme: o,
-            layoutType: y
+            layoutType: N
         }),
         containerStyle: "normal",
         primaryAction: K,

@@ -2,10 +2,10 @@
 "use strict";
 var i = n(627968),
     s = n(136722),
-    a = n(397927),
-    l = n(73153),
+    l = n(397927),
+    a = n(73153),
     r = n(488926);
-__OVERLAY__ && l.h.subscribe("OVERLAY_OAUTH2_AUTHORIZE_MODAL_OPEN", function(e) {
+__OVERLAY__ && a.h.subscribe("OVERLAY_OAUTH2_AUTHORIZE_MODAL_OPEN", function(e) {
     let {
         clientId: t,
         authorizeProps: {
@@ -19,7 +19,7 @@ __OVERLAY__ && l.h.subscribe("OVERLAY_OAUTH2_AUTHORIZE_MODAL_OPEN", function(e) 
         let {
             location: n
         } = e;
-        l.h.dispatch({
+        a.h.dispatch({
             type: "OVERLAY_OAUTH2_AUTHORIZE_MODAL_CLOSE",
             clientId: t,
             location: n
@@ -28,7 +28,7 @@ __OVERLAY__ && l.h.subscribe("OVERLAY_OAUTH2_AUTHORIZE_MODAL_OPEN", function(e) 
     let p = r.x3;
     try {
         p = s.iu(d ?? 0)
-    } catch (e) {}(0, a.mMO)(async () => {
+    } catch (e) {}(0, l.mMO)(async () => {
         let {
             OAuth2AuthorizeModal: e
         } = await Promise.resolve().then(n.bind(n, 200330));
@@ -42,7 +42,7 @@ __OVERLAY__ && l.h.subscribe("OVERLAY_OAUTH2_AUTHORIZE_MODAL_OPEN", function(e) 
     }, {
         modalKey: u,
         onCloseRequest: () => {
-            (0, a.OoC)(u), h({})
+            (0, l.OoC)(u), h({})
         }
     })
 })

@@ -52,11 +52,11 @@ function x(e) {
         handler: S
     });
     let b = I ? g.intl.string(g.t["5MstTl"]) : g.intl.string(g.t.kkKapG),
-        v = [b];
-    T > 0 && v.push(g.intl.formatToPlainString(g.t["3l1GOx"], {
+        y = [b];
+    T > 0 && y.push(g.intl.formatToPlainString(g.t["3l1GOx"], {
         mentionCount: T
-    })), N > 0 && v.push(g.intl.string(g.t.x5zAGZ));
-    let y = (0, a.bG)([_.Ay], () => _.Ay.getFocusedLayout()),
+    })), N > 0 && y.push(g.intl.string(g.t.x5zAGZ));
+    let v = (0, a.bG)([_.Ay], () => _.Ay.getFocusedLayout()),
         j = T > 0 ? T : N,
         R = j > 0;
     return (0, i.jsxs)("div", {
@@ -66,9 +66,9 @@ function x(e) {
             buttonRef: E,
             onClick: C,
             label: b,
-            "aria-label": v.join(", "),
+            "aria-label": y.join(", "),
             tooltipPosition: "top",
-            iconComponent: y === m.E8.NO_CHAT ? r.jQp : r.g8p,
+            iconComponent: v === m.E8.NO_CHAT ? r.jQp : r.g8p,
             themeable: !0,
             className: n,
             ...x

@@ -17,8 +17,8 @@ var a = t(311907),
     A = t(389996),
     g = t(46937),
     m = t(361311),
-    I = t(743987),
-    h = t(900179),
+    h = t(743987),
+    I = t(900179),
     f = t(280645),
     x = t(928223),
     v = t(518477),
@@ -44,7 +44,7 @@ function j(e) {
         }), t?.guildId != null && (0, i.jsx)(f.A, {
             userId: n.id,
             guildId: t.guildId
-        }), n.isProvisional && (0, i.jsx)(h.A, {
+        }), n.isProvisional && (0, i.jsx)(I.A, {
             heading: b.intl.string(b.t.Iyka0U),
             headingIcon: (0, i.jsx)(l.EpV, {
                 size: "xxs",
@@ -54,19 +54,19 @@ function j(e) {
             children: (0, i.jsx)(s.T, {
                 userId: n.id
             })
-        }), N.length > 0 && (0, i.jsx)(h.A, {
+        }), N.length > 0 && (0, i.jsx)(I.A, {
             heading: b.intl.string(b.t["Uv/eTx"]),
             children: (0, i.jsx)(m.A, {
                 applicationIds: N
             })
-        }), (0, i.jsx)(h.A, {
+        }), (0, i.jsx)(I.A, {
             heading: b.intl.string(b.t.a6XYD9),
-            children: (0, i.jsx)(I.A, {
+            children: (0, i.jsx)(h.A, {
                 userId: n.id,
                 guildId: t?.guildId,
                 tooltipDelay: v.In
             })
-        }), R.length > 0 && (0, i.jsx)(h.A, {
+        }), R.length > 0 && (0, i.jsx)(I.A, {
             heading: b.intl.string(b.t["3fe7U5"]),
             scrollTargetId: v.bk.CONNECTIONS,
             children: (0, i.jsx)(g.Ay, {
@@ -75,7 +75,7 @@ function j(e) {
                 userId: n.id,
                 locale: C
             })
-        }), L.length > 0 && (0, i.jsx)(h.A, {
+        }), L.length > 0 && (0, i.jsx)(I.A, {
             heading: b.intl.string(b.t.PHjkRE),
             children: L.map(e => (0, i.jsx)(g.Wc, {
                 className: E.MI,

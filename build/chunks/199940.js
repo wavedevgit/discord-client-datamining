@@ -4,8 +4,8 @@ n.d(t, {
     A4: () => j,
     DE: () => E,
     E0: () => S,
-    G$: () => p,
-    J4: () => A,
+    G$: () => A,
+    J4: () => p,
     Rp: () => f,
     UP: () => R,
     W5: () => y,
@@ -40,7 +40,7 @@ function _(e) {
     })
 }
 
-function p(e, t) {
+function A(e, t) {
     r.h.dispatch({
         type: "GUILD_SETTINGS_ONBOARDING_ADD_NEW_MEMBER_ACTION",
         action: e,
@@ -48,7 +48,7 @@ function p(e, t) {
     })
 }
 
-function A(e, t) {
+function p(e, t) {
     r.h.dispatch({
         type: "GUILD_SETTINGS_ONBOARDING_UPDATE_NEW_MEMBER_ACTION_PENDING_DATA",
         channelId: e,

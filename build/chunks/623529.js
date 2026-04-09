@@ -17,8 +17,8 @@ var i = n(627968),
     x = n(915089),
     h = n(405810),
     _ = n(342298),
-    p = n(371794),
-    A = n(240248),
+    A = n(371794),
+    p = n(240248),
     f = n(599941),
     j = n(11351),
     N = n(996507),
@@ -27,7 +27,7 @@ var i = n(627968),
     T = n(284683),
     I = n(985018),
     b = n(258727);
-let v = (0, A.xI)(m.A.GUILD_SETTINGS_ROLE_SUBSCRIPTIONS_OVERVIEW_SETTINGS_MAX_WIDTH);
+let v = (0, p.xI)(m.A.GUILD_SETTINGS_ROLE_SUBSCRIPTIONS_OVERVIEW_SETTINGS_MAX_WIDTH);
 
 function S(e) {
     let {
@@ -35,7 +35,7 @@ function S(e) {
         isGuildProducts: n = !1
     } = e, {
         format: l
-    } = (0, E.A)(t.id), a = (0, f.Tq)(t.id), m = s.useCallback(() => a?.cover_image_asset?.application_id == null ? null : (0, p.YE)(a.cover_image_asset.application_id, a.cover_image_asset, v), [a]), [A, S] = s.useState(l), [y, R] = s.useState(a?.description ?? ""), [O, G] = s.useState(m), [L, D] = s.useState(a?.store_page_guild_products_default_sort), [M, k] = s.useState(a?.server_shop_tab_order), {
+    } = (0, E.A)(t.id), a = (0, f.Tq)(t.id), m = s.useCallback(() => a?.cover_image_asset?.application_id == null ? null : (0, A.YE)(a.cover_image_asset.application_id, a.cover_image_asset, v), [a]), [p, S] = s.useState(l), [y, R] = s.useState(a?.description ?? ""), [O, G] = s.useState(m), [L, D] = s.useState(a?.store_page_guild_products_default_sort), [M, k] = s.useState(a?.server_shop_tab_order), {
         loading: U,
         error: P,
         updateSubscriptionsSettings: w
@@ -48,10 +48,10 @@ function S(e) {
     function z(e, t) {
         r()(null != e, "Null value not allowed"), null != t && H(t.name), G(e)
     }
-    let W = s.useMemo(() => null != y && y !== (a?.description ?? "") || O?.startsWith("data:") === !0 || A !== l || a?.store_page_guild_products_default_sort !== L || a?.server_shop_tab_order !== M, [O, l, y, a, A, L, M]),
+    let W = s.useMemo(() => null != y && y !== (a?.description ?? "") || O?.startsWith("data:") === !0 || p !== l || a?.store_page_guild_products_default_sort !== L || a?.server_shop_tab_order !== M, [O, l, y, a, p, L, M]),
         K = null != y && "" !== y && null != O;
     s.useEffect(() => {
-        a?.cover_image_asset?.application_id != null && G((0, p.YE)(a.cover_image_asset.application_id, a.cover_image_asset, v))
+        a?.cover_image_asset?.application_id != null && G((0, A.YE)(a.cover_image_asset.application_id, a.cover_image_asset, v))
     }, [a?.cover_image_asset]);
     let Y = (0, j.gN)(),
         X = s.useMemo(() => T.aq.map(e => ({
@@ -81,7 +81,7 @@ function S(e) {
             children: [(0, i.jsx)(g.z6M, {
                 label: I.intl.string(I.t["PAVi++"]),
                 description: I.intl.string(I.t.x87YqH),
-                value: A,
+                value: p,
                 onChange: e => {
                     l !== e && e === C.c4.ALL_CHANNELS && (0, u.A)({
                         title: I.intl.string(I.t.dmVoOz),
@@ -178,7 +178,7 @@ function S(e) {
                     onSave: () => {
                         r()(null != a, "Settings must be defined");
                         let e = {};
-                        y !== a.description && (e.description = y), null != O && O.startsWith("data:") && (e.cover_image = O), A !== l && (e.full_server_gate = A === C.c4.ALL_CHANNELS), L !== a.store_page_guild_products_default_sort && (e.store_page_guild_products_default_sort = L), M !== a.server_shop_tab_order && (e.server_shop_tab_order = M), o().isEmpty(e) || w(t.id, e)
+                        y !== a.description && (e.description = y), null != O && O.startsWith("data:") && (e.cover_image = O), p !== l && (e.full_server_gate = p === C.c4.ALL_CHANNELS), L !== a.store_page_guild_products_default_sort && (e.store_page_guild_products_default_sort = L), M !== a.server_shop_tab_order && (e.server_shop_tab_order = M), o().isEmpty(e) || w(t.id, e)
                     },
                     saveButtonTooltip: K ? void 0 : I.intl.string(I.t["6HRvit"])
                 })

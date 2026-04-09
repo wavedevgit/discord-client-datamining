@@ -41,16 +41,17 @@ function v(e) {
         onOtherHover: D,
         onClick: j,
         recipientUser: M,
-        giftIntentType: w
+        analyticsLocations: w,
+        giftIntentType: U
     } = e, {
-        analyticsLocations: U
+        analyticsLocations: G
     } = (0, A.Ay)(u.A.PREMIUM_GIFT_INTENT_FRIEND_ROW), {
-        Component: G
-    } = (0, d.V)(), k = (0, o.bG)([C.Ay], () => C.Ay.getFriendAnniversaryYears(M.id)), {
-        openGiftModal: V
+        Component: k
+    } = (0, d.V)(), V = (0, o.bG)([C.Ay], () => C.Ay.getFriendAnniversaryYears(M.id)), {
+        openGiftModal: B
     } = (0, T.$)({
         giftRecipient: M,
-        analyticsLocations: U,
+        analyticsLocations: G,
         analyticsLocation: N.ThZ.FRIEND_ANNIVERSARIES_ACTION_BUTTON,
         analyticsObject: {
             page: N.liQ.FRIENDS_LIST,
@@ -66,25 +67,26 @@ function v(e) {
             name: s.ImpressionNames.GIFT_INTENT_ACTION_BUTTON,
             type: s.ImpressionTypes.VIEW,
             properties: {
-                gift_intent_type: w,
+                gift_intent_type: U,
                 affinity: e?.communicationProbability
             }
         })
-    }, [M, w]);
-    let B = e => {
+    }, [M, U]);
+    let H = e => {
         e.stopPropagation();
         let t = p.A.getUserAffinity(M.id);
         I.default.track(N.HAw.GIFT_INTENT_ACTION_BUTTON_CLICKED, {
-            gift_intent_type: w,
+            gift_intent_type: U,
             affinity: t?.dmProbability,
-            location_stack: U
-        }), V()
+            location_stack: G
+        }), B()
     };
     return (0, i.jsx)(_.A, {
         ref: t,
         isFocused: l,
         isActive: v,
         user: M,
+        analyticsLocations: w,
         onOtherHover: D,
         onClick: j,
         height: 72,
@@ -113,7 +115,7 @@ function v(e) {
                             variant: "text-xs/normal",
                             color: "text-subtle",
                             children: S.intl.formatToPlainString(S.t.S3fdq7, {
-                                numberOfYears: k
+                                numberOfYears: V
                             })
                         })]
                     })]
@@ -125,21 +127,21 @@ function v(e) {
                 children: [(0, i.jsx)(c.K0, {
                     size: "sm",
                     variant: "secondary",
-                    icon: G,
+                    icon: k,
                     "aria-label": S.intl.string(S.t.I61IsE),
                     onClick: () => {
                         I.default.track(N.HAw.GIFT_INTENT_CARD_SECONDARY_CTA_CLICKED, {
-                            gift_intent_type: w,
+                            gift_intent_type: U,
                             cta_type: "send_message",
-                            location_stack: U
+                            location_stack: G
                         }), (0, f.xs)(M.id), (0, c.mMO)(async () => {
                             let {
                                 default: e
                             } = await n.e("95501").then(n.bind(n, 367516));
                             return t => (0, i.jsx)(e, {
                                 ...t,
-                                giftIntentType: w ?? void 0,
-                                analyticsLocationHistory: U
+                                giftIntentType: U ?? void 0,
+                                analyticsLocationHistory: G
                             })
                         })
                     }
@@ -148,7 +150,7 @@ function v(e) {
                     text: S.intl.string(S.t.PEjaCx),
                     icon: c.okO,
                     "aria-label": S.intl.string(S.t.PEjaCx),
-                    onClick: B
+                    onClick: H
                 })]
             })]
         })

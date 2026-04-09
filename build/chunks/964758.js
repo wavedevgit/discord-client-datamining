@@ -1,7 +1,7 @@
 /** chunk id: 964758 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => p
+    A: () => A
 });
 var i = n(627968),
     s = n(64700),
@@ -18,12 +18,12 @@ var i = n(627968),
     h = n(963175),
     _ = n(985018);
 
-function p() {
+function A() {
     let {
         editStateId: e
-    } = (0, u.O)(), [t, n] = m.V_(e), [l, p] = m.hh(e), A = (0, d.dL)(e), {
+    } = (0, u.O)(), [t, n] = m.V_(e), [l, A] = m.hh(e), p = (0, d.dL)(e), {
         options: f
-    } = (0, x.A)(A?.active_trial ?? null), j = (0, g.A)(), N = null != t, E = s.useCallback(e => {
+    } = (0, x.A)(p?.active_trial ?? null), j = (0, g.A)(), N = null != t, E = s.useCallback(e => {
         let t = f.find(e => e.isDefault);
         r()(null != t, "Missing default trial duartion option"), n(e ? t.value : null)
     }, [n, f]), C = (0, c.gN)(), T = (0, o.GV)(), I = (0, o.GV)();
@@ -77,7 +77,7 @@ function p() {
                 }
             },
             value: l,
-            onSelectionChange: p,
+            onSelectionChange: A,
             maxOptionsVisible: 5,
             disabled: !N || C
         })]

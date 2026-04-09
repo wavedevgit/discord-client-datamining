@@ -43,7 +43,7 @@ function h(e) {
         children: t
     } = e, [n, l] = s.useState(!1), r = t.flatMap(e => e.items.map(e => e.completed)), o = r.filter(e => e).length / r.length, h = 1 === o, _ = (0, d.zhh)({
         width: `${100*o}%`
-    }), p = [m.intl.format(m.t.wtQtXs, {
+    }), A = [m.intl.format(m.t.wtQtXs, {
         promoPageGuideUrl: u.P7.PROMO_PAGE_GUIDE
     }), m.intl.format(m.t["0Fo0wf"], {
         caseStudiesUrl: u.P7.CASE_STUDIES
@@ -51,7 +51,7 @@ function h(e) {
         subscriptionOfferingGuideUrl: u.P7.SUBSCRIPTION_OFFERING_GUIDE
     }), m.intl.format(m.t.zkXN6I, {
         tierStructureGuideUrl: u.P7.TIER_STRUCTURE_GUIDE
-    })], A = n ? null : (0, i.jsxs)(d.nVY, {
+    })], p = n ? null : (0, i.jsxs)(d.nVY, {
         children: [!h && t.map((e, t) => {
             let {
                 title: n,
@@ -73,7 +73,7 @@ function h(e) {
             label: m.intl.string(m.t.FO0AIS),
             children: (0, i.jsx)(d.BJc, {
                 gap: 8,
-                children: p.map((e, t) => (0, i.jsx)("div", {
+                children: A.map((e, t) => (0, i.jsx)("div", {
                     className: g.nM,
                     children: (0, i.jsx)(d.Text, {
                         variant: "text-md/normal",
@@ -106,7 +106,7 @@ function h(e) {
                         className: g.zZ,
                         style: _
                     })
-                }), A]
+                }), p]
             })
         })
     })

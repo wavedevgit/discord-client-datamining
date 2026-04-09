@@ -1,7 +1,7 @@
 /** chunk id: 841811 params = (module,exports,require) **/
 n.d(t, {
-    default: () => N,
-    j: () => b
+    default: () => S,
+    j: () => N
 });
 var i = n(627968),
     s = n(64700),
@@ -11,44 +11,45 @@ var i = n(627968),
     o = n(702805),
     d = n(198982),
     h = n(155718),
-    u = n(845202),
-    c = n(86944),
-    g = n(734057),
-    p = n(71393),
-    m = n(488926),
-    A = n(233993),
-    C = n(737045),
-    E = n(985018),
-    I = n(925677);
+    u = n(47167),
+    c = n(845202),
+    g = n(86944),
+    p = n(734057),
+    m = n(71393),
+    A = n(488926),
+    C = n(233993),
+    E = n(737045),
+    I = n(985018),
+    b = n(925677);
 
-function b(e, t) {
+function N(e, t) {
     return {
         id: e,
         type: t,
-        deny: m.x3,
-        allow: A.QY
+        deny: A.x3,
+        allow: C.QY
     }
 }
 
-function N(e) {
+function S(e) {
     let {
         channelId: t,
         onClose: n,
-        ...m
-    } = e, N = (0, r.bG)([g.A], () => g.A.getChannel(t)), S = (0, r.bG)([p.A], () => p.A.getGuild(N?.getGuildId())), [O, x] = s.useState(""), [f, T] = s.useState({}), [_, G] = s.useState(!1), [v, U] = s.useState(null), L = s.useRef(null), {
-        roles: R,
-        members: M,
-        getRichTag: y
-    } = (0, c.K)(S, N, A.QY, O), j = u.A.useSections({
-        roles: R,
-        members: M
+        ...A
+    } = e, S = (0, r.bG)([p.A], () => p.A.getChannel(t)), O = (0, r.bG)([m.A], () => m.A.getGuild(S?.getGuildId())), x = (0, u.Ay)(S), [f, T] = s.useState(""), [_, G] = s.useState({}), [v, U] = s.useState(!1), [L, R] = s.useState(null), M = s.useRef(null), {
+        roles: y,
+        members: j,
+        getRichTag: D
+    } = (0, g.K)(O, S, C.QY, f), P = c.A.useSections({
+        roles: y,
+        members: j
     });
-    if (null == N || null == S) return null;
-    let D = async () => {
-        G(!0);
+    if (null == S || null == O) return null;
+    let w = async () => {
+        U(!0);
         try {
             let e;
-            await (e = Object.values(f).filter(e => {
+            await (e = Object.values(_).filter(e => {
                 let {
                     row: t
                 } = e;
@@ -57,71 +58,71 @@ function N(e) {
                 let {
                     row: t
                 } = e;
-                return t.rowType === C.T6.ROLE ? b(t.id, h.r2.ROLE) : b(t.id, h.r2.MEMBER)
-            }), (0, o.R$)(N.id, e, !0)), n()
+                return t.rowType === E.T6.ROLE ? N(t.id, h.r2.ROLE) : N(t.id, h.r2.MEMBER)
+            }), (0, o.R$)(S.id, e, !0)), n()
         } catch (t) {
             let e = new d.LG(t);
-            G(!1), U(e)
+            U(!1), R(e)
         }
     };
-    return (0, i.jsx)(u.A.Provider, {
-        listRef: L,
-        query: O,
-        setQuery: x,
-        pendingAdditions: f,
-        setPendingAdditions: T,
-        roles: R,
-        members: M,
-        getRichTag: y,
+    return (0, i.jsx)(c.A.Provider, {
+        listRef: M,
+        query: f,
+        setQuery: T,
+        pendingAdditions: _,
+        setPendingAdditions: G,
+        roles: y,
+        members: j,
+        getRichTag: D,
         children: (0, i.jsx)(l.Modal, {
-            ...m,
-            title: E.intl.string(E.t.dMJ3Y6),
+            ...A,
+            title: I.intl.string(I.t.dMJ3Y6),
             onClose: n,
             input: (0, i.jsxs)("div", {
                 children: [(0, i.jsxs)(a.Text, {
-                    className: I.HA,
+                    className: b.HA,
                     variant: "text-lg/normal",
                     color: "text-default",
                     children: [(0, i.jsx)(a.qux, {
-                        className: I.p,
+                        className: b.p,
                         size: "sm",
                         color: "currentColor"
-                    }), N.name]
-                }), N.isGuildStageVoice() && (0, i.jsx)(a.Text, {
+                    }), x]
+                }), S.isGuildStageVoice() && (0, i.jsx)(a.Text, {
                     color: "text-default",
-                    className: I.h_,
+                    className: b.h_,
                     variant: "text-sm/normal",
-                    children: E.intl.string(E.t.f7VbhF)
-                }), (0, i.jsx)(u.A.SearchBox, {
-                    placeholderText: E.intl.string(E.t.iezLLn)
+                    children: I.intl.string(I.t.f7VbhF)
+                }), (0, i.jsx)(c.A.SearchBox, {
+                    placeholderText: I.intl.string(I.t.iezLLn)
                 }), (0, i.jsx)(a.Text, {
-                    className: I.W$,
+                    className: b.W$,
                     variant: "text-xs/normal",
-                    children: E.intl.string(E.t.rwFx85)
-                }), null != v ? (0, i.jsx)(a.Text, {
-                    className: I.W$,
+                    children: I.intl.string(I.t.rwFx85)
+                }), null != L ? (0, i.jsx)(a.Text, {
+                    className: b.W$,
                     variant: "text-xs/normal",
                     color: "text-feedback-critical",
-                    children: v.getAnyErrorMessage()
+                    children: L.getAnyErrorMessage()
                 }) : null]
             }),
             listProps: {
-                ref: L,
-                sectionHeight: u.A.SECTION_HEIGHT,
-                renderSection: u.A.renderSection,
-                rowHeight: u.A.ROW_HEIGHT,
-                renderRow: u.A.renderRow,
-                sections: j
+                ref: M,
+                sectionHeight: c.A.SECTION_HEIGHT,
+                renderSection: c.A.renderSection,
+                rowHeight: c.A.ROW_HEIGHT,
+                renderRow: c.A.renderRow,
+                sections: P
             },
             actions: [{
                 variant: "secondary",
-                text: E.intl.string(E.t["ETE/oC"]),
+                text: I.intl.string(I.t["ETE/oC"]),
                 onClick: n
             }, {
                 variant: "primary",
-                text: E.intl.string(E.t.OYkgVk),
-                onClick: D,
-                loading: _
+                text: I.intl.string(I.t.OYkgVk),
+                onClick: w,
+                loading: v
             }]
         })
     })

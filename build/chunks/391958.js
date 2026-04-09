@@ -23,7 +23,7 @@ function u(e) {
     } = e, x = s.useMemo(() => g ?? [], [g]), {
         value: h,
         onChange: _,
-        errorMessage: p
+        errorMessage: A
     } = (0, o.A)(t, g, n);
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsxs)("div", {
@@ -39,11 +39,11 @@ function u(e) {
                 color: "text-muted",
                 children: `${x.length} / ${n}`
             })]
-        }), null != p ? (0, i.jsx)(a.Text, {
+        }), null != A ? (0, i.jsx)(a.Text, {
             className: r()(c.dG, c.kc),
             variant: "text-xs/medium",
             color: "text-feedback-critical",
-            children: p
+            children: A
         }) : (0, i.jsx)(a.Text, {
             className: c.dG,
             variant: "text-xs/normal",

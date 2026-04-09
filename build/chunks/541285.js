@@ -17,8 +17,8 @@ var i = n(627968),
     x = n(954571),
     h = n(558393),
     _ = n(488926),
-    p = n(636042),
-    A = n(526855),
+    A = n(636042),
+    p = n(526855),
     f = n(785312),
     j = n(316506),
     N = n(631103),
@@ -54,7 +54,7 @@ function v(e) {
             children: (0, i.jsx)(c.QWc, {
                 variant: "primary",
                 textVariant: "text-sm/semibold",
-                onClick: () => (0, p.Y_)(n.id),
+                onClick: () => (0, A.Y_)(n.id),
                 disabled: a.aI(n.permissions, _.x3) || h || l,
                 text: T.intl.string(T.t["UYq7+O"])
             })
@@ -71,7 +71,7 @@ function S(e) {
     } = e;
     if (0 === s.length) return (0, i.jsxs)("div", {
         className: I.pb,
-        children: [(0, i.jsx)(A.A, {
+        children: [(0, i.jsx)(p.A, {
             className: I.wV
         }), (0, i.jsx)(c.Text, {
             variant: "text-sm/normal",
@@ -100,7 +100,7 @@ function S(e) {
             locked: l,
             onChange: (e, t) => {
                 if ("string" == typeof t) throw Error("Unexpected string `allow`");
-                (0, p.Ul)(n.id, e, t)
+                (0, A.Ul)(n.id, e, t)
             },
             permissionRender: r
         }, t))]
@@ -124,8 +124,8 @@ function y(e) {
         headerHeight: g,
         headerRef: _
     } = (0, f.A)(0), {
-        scrolledToTop: p,
-        handleScroll: A
+        scrolledToTop: A,
+        handleScroll: p
     } = (0, j.u)(), v = s.useRef(!1);
     return s.useEffect(() => {
         v.current || "" === d.trimStart() || (x.default.track(C.HAw.SEARCH_STARTED, {
@@ -136,12 +136,12 @@ function y(e) {
         style: {
             scrollPaddingTop: g
         },
-        onScroll: A,
+        onScroll: p,
         children: (0, i.jsxs)("div", {
             className: b.Q,
             children: [(0, i.jsxs)("div", {
                 className: r()(b.wx, b.ln, {
-                    [b.l6]: !p
+                    [b.l6]: !A
                 }),
                 ref: _,
                 children: [(0, i.jsx)(j.A, {

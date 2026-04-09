@@ -1,6 +1,6 @@
 /** chunk id: 502128 params = (module,exports,require) **/
 n.d(t, {
-    A: () => f
+    A: () => b
 });
 var a = n(627968),
     i = n(503698),
@@ -8,15 +8,18 @@ var a = n(627968),
     l = n(417597),
     r = n(397927),
     o = n(73153),
-    d = n(303054),
-    c = n(734057),
-    u = n(320697),
-    m = n(394953),
-    h = n(891860),
-    x = n(793877);
-let p = [{
+    d = n(47167),
+    c = n(303054),
+    u = n(734057),
+    m = n(994500),
+    h = n(287809),
+    x = n(320697),
+    p = n(394953),
+    g = n(891860),
+    f = n(793877);
+let v = [{
         key: "channelName",
-        cellClassName: s()(h.Hn, h.HA),
+        cellClassName: s()(g.Hn, g.HA),
         render(e) {
             let {
                 channelName: t
@@ -28,7 +31,7 @@ let p = [{
         }
     }, {
         key: "channelId",
-        cellClassName: s()(h.Hn, h.Zm),
+        cellClassName: s()(g.Hn, g.Zm),
         render(e) {
             let {
                 channelId: t
@@ -39,9 +42,9 @@ let p = [{
             })
         }
     }],
-    g = [{
+    _ = [{
         key: "channelName",
-        cellClassName: s()(h.Hn, h.HA),
+        cellClassName: s()(g.Hn, g.HA),
         render(e) {
             let {
                 channelName: t
@@ -53,7 +56,7 @@ let p = [{
         }
     }, {
         key: "loadState",
-        cellClassName: s()(h.Hn, h.C7),
+        cellClassName: s()(g.Hn, g.C7),
         render(e) {
             let {
                 loadState: t
@@ -65,7 +68,7 @@ let p = [{
         }
     }, {
         key: "channelId",
-        cellClassName: s()(h.Hn, h.Zm),
+        cellClassName: s()(g.Hn, g.Zm),
         render(e) {
             let {
                 channelId: t
@@ -77,42 +80,42 @@ let p = [{
         }
     }];
 
-function f() {
+function b() {
     let {
         unreadRecentMentionsCount: e,
         unreadChannelIds: t
-    } = (0, m.U4)(), {
+    } = (0, p.U4)(), {
         isLoading: n,
         hasLoadedEver: i,
         hasPreloaded: s,
-        hasMoreToLoad: f,
-        isLoadingComplete: v
-    } = (0, l.cf)([u.A], () => ({
-        isLoading: u.A.isLoading,
-        hasLoadedEver: u.A.hasLoadedEver,
-        hasPreloaded: u.A.hasPreloaded,
-        hasMoreToLoad: u.A.hasMoreToLoad,
-        isLoadingComplete: u.A.isLoadingComplete
-    })), _ = (0, l.bG)([u.A], () => u.A.currentRequestAnalyticsPayload), b = (0, l.cf)([u.A], () => u.A.getChannelInfoMap()), j = (0, l.cf)([c.A], () => {
+        hasMoreToLoad: b,
+        isLoadingComplete: j
+    } = (0, l.cf)([x.A], () => ({
+        isLoading: x.A.isLoading,
+        hasLoadedEver: x.A.hasLoadedEver,
+        hasPreloaded: x.A.hasPreloaded,
+        hasMoreToLoad: x.A.hasMoreToLoad,
+        isLoadingComplete: x.A.isLoadingComplete
+    })), A = (0, l.bG)([x.A], () => x.A.currentRequestAnalyticsPayload), C = (0, l.cf)([x.A], () => x.A.getChannelInfoMap()), y = (0, l.cf)([u.A], () => {
         let e = {};
-        return Object.entries(b).forEach(t => {
-            let [n] = t, a = c.A.getChannel(n);
+        return Object.entries(C).forEach(t => {
+            let [n] = t, a = u.A.getChannel(n);
             e[n] = a ?? null
         }), e
-    }), A = (0, l.cf)([c.A], () => t.reduce((e, t) => {
-        let n = c.A.getChannel(t);
+    }), S = (0, l.cf)([u.A], () => t.reduce((e, t) => {
+        let n = u.A.getChannel(t);
         return e[t] = n ?? null, e
-    }, {})), C = (0, l.bG)([u.A], () => u.A.getInboxMessages()), y = (0, l.bG)([u.A], () => u.A.getDevOverrides().navOnClick);
+    }, {})), E = (0, l.bG)([x.A], () => x.A.getInboxMessages()), T = (0, l.bG)([x.A], () => x.A.getDevOverrides().navOnClick);
     return (0, a.jsx)("div", {
-        className: x.nd,
+        className: f.nd,
         children: (0, a.jsxs)(r.IpV, {
-            className: h.Qs,
+            className: g.Qs,
             children: [(0, a.jsxs)("div", {
                 children: [(0, a.jsx)(r.Heading, {
                     variant: "heading-lg/semibold",
                     children: "Inbox"
                 }), (0, a.jsxs)("div", {
-                    children: ["Inbox Message Count: ", C.length]
+                    children: ["Inbox Message Count: ", E.length]
                 })]
             }), (0, a.jsxs)("div", {
                 children: [(0, a.jsx)(r.Heading, {
@@ -126,7 +129,7 @@ function f() {
                     },
                     children: (0, a.jsx)(r.dOG, {
                         label: "Nav On Click",
-                        checked: !!y,
+                        checked: !!T,
                         onChange: e => {
                             o.h.dispatch({
                                 type: "NOTIFICATIONS_INBOX_SET_DEV_OVERRIDES",
@@ -145,14 +148,14 @@ function f() {
                     children: ["Unread Recent Mentions Count: ", e]
                 }), (0, a.jsxs)("div", {
                     children: ["Unread Channel Count: ", t.length]
-                }), (0, a.jsx)(d.A, {
-                    columns: p,
-                    data: Object.entries(A).map(e => {
+                }), (0, a.jsx)(c.A, {
+                    columns: v,
+                    data: Object.entries(S).map(e => {
                         let [t, n] = e;
                         return {
                             key: t,
                             channelId: t,
-                            channelName: n?.name ?? ""
+                            channelName: null != n ? (0, d.m1)(n, h.default, m.A) : ""
                         }
                     })
                 })]
@@ -167,27 +170,27 @@ function f() {
                 }), (0, a.jsxs)("div", {
                     children: ["Has Loaded Ever: ", i ? "✅" : "❌"]
                 }), (0, a.jsxs)("div", {
-                    children: ["Has More To Load: ", f ? "✅" : "❌"]
+                    children: ["Has More To Load: ", b ? "✅" : "❌"]
                 }), (0, a.jsxs)("div", {
-                    children: ["Is Loading Complete: ", v ? "✅" : "❌"]
+                    children: ["Is Loading Complete: ", j ? "✅" : "❌"]
                 }), (0, a.jsxs)("div", {
-                    children: ["Last Loading Trigger: ", _?.loadingTrigger]
+                    children: ["Last Loading Trigger: ", A?.loadingTrigger]
                 })]
             }), (0, a.jsxs)("div", {
                 children: [(0, a.jsx)(r.Heading, {
                     variant: "heading-lg/semibold",
                     children: "Channel Info Map"
                 }), (0, a.jsxs)("div", {
-                    children: ["Total Channels: ", Object.keys(b).length]
-                }), (0, a.jsx)(d.A, {
-                    columns: g,
-                    data: Object.entries(b).map(e => {
-                        let [t, n] = e;
+                    children: ["Total Channels: ", Object.keys(C).length]
+                }), (0, a.jsx)(c.A, {
+                    columns: _,
+                    data: Object.entries(C).map(e => {
+                        let t, [n, a] = e;
                         return {
-                            key: t,
-                            channelId: t,
-                            channelName: j[t]?.name ?? "",
-                            loadState: n.loadState
+                            key: n,
+                            channelId: n,
+                            channelName: null != (t = y[n]) ? (0, d.m1)(t, h.default, m.A) : "",
+                            loadState: a.loadState
                         }
                     })
                 })]

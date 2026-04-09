@@ -30,7 +30,7 @@ function C(e) {
     }
 }
 
-function D(e) {
+function v(e) {
     return {
         status: I.A.getStatus(e),
         isMobile: I.A.isMobileOnline(e),
@@ -40,7 +40,7 @@ function D(e) {
     }
 }
 
-function L(e) {
+function D(e) {
     let t = [];
     return n()(p.Ay.memberOf(e)).map(N.A.getGuild).sortBy(e => null != e ? e.name.toLowerCase() : null).forEach(e => {
         null != e && t.push(e)
@@ -49,7 +49,7 @@ function L(e) {
         mutualGuilds: t.slice(0, 5)
     }
 }
-class v extends o.A {
+class L extends o.A {
     key;
     userId;
     type;
@@ -84,14 +84,14 @@ class w {
         let e = new Set,
             t = Array.from(E.A.getMutableRelationships().entries()).map(t => {
                 let [s, i] = t;
-                return i === y.eA$.FRIEND && e.add(s), new v({
+                return i === y.eA$.FRIEND && e.add(s), new L({
                     key: s,
                     type: i,
                     userId: s,
                     nickname: E.A.getNickname(s),
                     ...C(s),
+                    ...v(s),
                     ...D(s),
-                    ...L(s),
                     spam: E.A.isSpam(s),
                     ignoredUser: E.A.isIgnored(s),
                     giftIntentType: i === y.eA$.FRIEND && m.Ay.getFriendAnniversaries().includes(s) ? f.np.FRIEND_ANNIVERSARY : void 0,
@@ -107,28 +107,28 @@ class w {
                 applicationId: n,
                 type: r
             } = t;
-            r === y.eA$.FRIEND && e.has(i) || r === y.eA$.FRIEND && a.has(i) || (r === y.eA$.FRIEND && a.add(i), s.push(new v({
+            r === y.eA$.FRIEND && e.has(i) || r === y.eA$.FRIEND && a.has(i) || (r === y.eA$.FRIEND && a.add(i), s.push(new L({
                 key: `${i}-${n}`,
                 type: r,
                 userId: i,
                 applicationId: n,
                 nickname: E.A.getNickname(i),
                 ...C(i),
+                ...v(i),
                 ...D(i),
-                ...L(i),
                 spam: E.A.isSpam(i),
                 ignoredUser: E.A.isIgnored(i),
                 isGameRelationship: !0
             })))
         });
-        let r = n().map(c.A.getSuggestions(), e => new v({
+        let r = n().map(c.A.getSuggestions(), e => new L({
             key: e.key,
             userId: e.key,
             type: 99,
             nickname: e.name,
             ...C(e.key),
-            ...D(e.key),
-            ...L(e.key)
+            ...v(e.key),
+            ...D(e.key)
         }));
         return new w(n().concat(t, s, r))
     }
@@ -195,13 +195,13 @@ function k() {
     G && (e || R !== y.m3P.ONLINE && R !== y.m3P.ADD_FRIEND) && !S && (G = !1, S = !0, l.A.fetchRelationships())
 }
 
-function F() {
+function x() {
     if (G = !0, O ? S = !1 : k(), _ = _.reset(), P) return;
     let e = _.getRelationshipCounts();
     R = 0 === e[y.eA$.FRIEND] ? 0 !== e[y.eA$.PENDING_INCOMING] ? y.m3P.PENDING : y.m3P.ADD_FRIEND : y.m3P.ONLINE
 }
 
-function x() {
+function F() {
     _ = O ? new w : _.reset()
 }
 
@@ -213,7 +213,7 @@ function M(e) {
 class T extends a.Ay.Store {
     static displayName = "FriendsStore";
     initialize() {
-        this.waitFor(h.A, d.A, u.A, c.A, A.A, p.Ay, N.A, m.Ay, I.A, E.A, g.default), this.syncWith([E.A], x), this.syncWith([A.A], x), this.syncWith([c.A], x), this.syncWith([m.Ay], x), this.syncWith([g.default], M(C)), this.syncWith([I.A, d.A], M(D)), F()
+        this.waitFor(h.A, d.A, u.A, c.A, A.A, p.Ay, N.A, m.Ay, I.A, E.A, g.default), this.syncWith([E.A], F), this.syncWith([A.A], F), this.syncWith([c.A], F), this.syncWith([m.Ay], F), this.syncWith([g.default], M(C)), this.syncWith([I.A, d.A], M(v)), x()
     }
     getState() {
         return {
@@ -225,7 +225,7 @@ class T extends a.Ay.Store {
 }
 let $ = new T(r.h, {
     CONNECTION_OPEN: function() {
-        F()
+        x()
     },
     FRIENDS_SET_SECTION: function(e) {
         R = e.section, k()
@@ -234,7 +234,7 @@ let $ = new T(r.h, {
         let {
             channelId: t
         } = e;
-        return O = null != t, x(), !O
+        return O = null != t, F(), !O
     },
     LOAD_RELATIONSHIPS_SUCCESS: function() {
         S = !1

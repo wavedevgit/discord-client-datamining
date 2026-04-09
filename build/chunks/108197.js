@@ -26,18 +26,18 @@ var i = n(627968),
     T = n(985018),
     S = n(99566),
     b = n(11464),
-    v = n(251843);
+    y = n(251843);
 
-function y(e) {
+function v(e) {
     let {
         style: t,
         withGuildIcon: n,
         inverted: l
     } = e, s = {
-        className: a()(v.GI, {
-            [v.a7]: n
+        className: a()(y.GI, {
+            [y.a7]: n
         }, {
-            [v.BJ]: l
+            [y.BJ]: l
         }),
         style: t
     }, {
@@ -98,7 +98,7 @@ let j = l.memo(function(e) {
     let {
         thread: t,
         isSelectedChannel: s,
-        isSelectedVoice: v,
+        isSelectedVoice: y,
         isLast: j,
         withGuildIcon: R
     } = e, O = (0, o.bG)([f.Ay], () => f.Ay.getVoiceStatesForChannel(t), [t]), L = (0, o.bG)([g.A], () => g.A.hasVideo(t.id)), {
@@ -140,9 +140,9 @@ let j = l.memo(function(e) {
         className: a()(S.fx, {
             [S.wH]: s
         }),
-        children: [(0, i.jsx)(y, {
+        children: [(0, i.jsx)(v, {
             withGuildIcon: R
-        }), j ? null : (0, i.jsx)(y, {
+        }), j ? null : (0, i.jsx)(v, {
             withGuildIcon: R,
             inverted: !0,
             style: {
@@ -198,7 +198,7 @@ let j = l.memo(function(e) {
             })
         }), (0, i.jsx)(C.A, {
             channel: t,
-            collapsed: !v && 1 !== O.length,
+            collapsed: !y && 1 !== O.length,
             collapsedMax: 6,
             voiceStates: O,
             isThread: !0

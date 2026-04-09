@@ -17,8 +17,8 @@ var a = t(311907),
     A = t(837924),
     g = t(558628),
     m = t(842241),
-    I = t(282797),
-    h = t(518477),
+    h = t(282797),
+    I = t(518477),
     f = t(652215),
     x = t(985018),
     v = t(379704),
@@ -66,7 +66,7 @@ function E(e) {
                         onClose: j
                     })
                 }, `live-${a}`)), k && (0, i.jsx)("li", {
-                    children: (0, i.jsx)(I.A, {
+                    children: (0, i.jsx)(h.A, {
                         user: n,
                         currentUser: t,
                         voiceChannel: S,
@@ -82,7 +82,7 @@ function E(e) {
                     children: e
                 }, n)
             }) : void 0,
-            scrollTargetId: h.bk.RECENT_ACTIVITY,
+            scrollTargetId: I.bk.RECENT_ACTIVITY,
             children: (0, i.jsx)("ul", {
                 className: v.Ci,
                 children: T.map(e => (0, i.jsx)("li", {

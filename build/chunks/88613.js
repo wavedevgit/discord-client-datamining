@@ -1,7 +1,7 @@
 /** chunk id: 88613 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => p
+    A: () => A
 });
 var i = n(627968),
     s = n(64700),
@@ -52,23 +52,23 @@ function _(e) {
     })
 }
 
-function p(e) {
+function A(e) {
     let {
         guild: t
     } = e;
     (0, r.qv)(t.id);
     let c = (0, a.ws)(t.id),
         {
-            rulesByTriggerType: p
+            rulesByTriggerType: A
         } = (0, r.wP)(t.id),
         {
-            numEnabledRules: A,
+            numEnabledRules: p,
             numRules: f
         } = s.useMemo(() => {
             let e = 0,
                 t = 0;
-            return null == p || Object.values(c).flat().forEach(n => {
-                let i = p[n]?.filter(d.Vq);
+            return null == A || Object.values(c).flat().forEach(n => {
+                let i = A[n]?.filter(d.Vq);
                 null == i || 0 === i.length ? t++ : i.forEach(n => {
                     n.enabled && e++, t++
                 })
@@ -76,7 +76,7 @@ function p(e) {
                 numEnabledRules: e,
                 numRules: t
             }
-        }, [c, p]),
+        }, [c, A]),
         j = (0, g.N)(t),
         N = j[u.C.CAPTCHA_AND_RAID_PROTECTION],
         E = j[u.C.DM_AND_SPAM_PROTECTION],
@@ -117,7 +117,7 @@ function p(e) {
                     icon: n(34853),
                     title: x.intl.string(x.t.uRelgx),
                     subtitle: x.intl.formatToPlainString(x.t.TG7NYK, {
-                        enabled: A,
+                        enabled: p,
                         total: f
                     }),
                     page: u.C.AUTOMOD

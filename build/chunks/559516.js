@@ -1,13 +1,14 @@
 /** chunk id: 559516 params = (module,exports,require) **/
 n.d(t, {
-    v: () => o
+    v: () => d
 });
 var i = n(419954),
     s = n(780964),
     l = n(523661),
     a = n(938460),
-    r = n(985018);
-let o = (0, i.zZ)(s.X.ACCOUNT_PASSWORD_SECURITY_CATEGORY, {
-    useTitle: () => r.intl.string(r.t["0iH2vc"]),
-    buildLayout: () => [l.n, a.w]
+    r = n(476460),
+    o = n(985018);
+let d = (0, i.zZ)(s.X.ACCOUNT_PASSWORD_SECURITY_CATEGORY, {
+    useTitle: () => o.intl.string(o.t["0iH2vc"]),
+    buildLayout: () => [l.n, r.Q, a.w]
 })

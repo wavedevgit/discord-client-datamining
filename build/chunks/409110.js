@@ -5,8 +5,8 @@ n.d(t, {
 });
 var i = n(627968),
     s = n(64700),
-    a = n(311907),
-    l = n(391973),
+    l = n(311907),
+    a = n(391973),
     r = n(684013),
     o = n(231679),
     d = n(685603),
@@ -27,15 +27,15 @@ let y = {
             dragging: t,
             locked: n,
             pinned: s,
-            dragStart: a,
-            className: l
+            dragStart: l,
+            className: a
         } = e;
         return (0, i.jsx)(m.A, {
-            dragStart: a,
+            dragStart: l,
             locked: n,
             pinned: s,
             dragging: t,
-            className: l
+            className: a
         })
     },
     [E.uss.GUILDS](e) {
@@ -55,14 +55,14 @@ let y = {
             id: t,
             anchor: n,
             isPreviewingInGame: s,
-            locked: a,
-            pinned: l
+            locked: l,
+            pinned: a
         } = e;
         return (0, i.jsx)(x.A, {
             anchor: n,
             id: t,
-            locked: a,
-            pinned: l,
+            locked: l,
+            pinned: a,
             widget: E.uss.VOICE,
             isPreviewingInGame: s
         })
@@ -72,14 +72,14 @@ let y = {
             dragging: t,
             locked: n,
             dragStart: s,
-            className: a
+            className: l
         } = e;
         return (0, i.jsx)(_.A, {
             dragStart: s,
             dragging: t,
             locked: n,
             pinned: !1,
-            className: a
+            className: l
         })
     }
 };
@@ -96,29 +96,29 @@ class v extends s.PureComponent {
     handleUpdate = (e, t, n, i, s) => {
         let {
             props: {
-                layoutSize: a
+                layoutSize: l
             },
             state: {
                 lastLayoutUpdate: r
             }
         } = this;
-        if (!(0, f.validResolution)(a)) return;
-        let o = (0, p.NO)(n, a),
-            u = (0, p.R9)(i, a);
-        (0, l.uD)(t), (0, l.Ju)({
+        if (!(0, f.validResolution)(l)) return;
+        let o = (0, p.NO)(n, l),
+            u = (0, p.R9)(i, l);
+        (0, a.uD)(t), (0, a.Ju)({
             widgetId: t,
             anchor: o,
             size: u
         });
         let h = e === d.P.MOVE,
-            A = (0, p.Ly)(n, a.width, a.height, s.width, s.height);
+            A = (0, p.Ly)(n, l.width, l.height, s.width, s.height);
         this.setState({
             lastLayoutUpdate: {
                 was_resized: null != r && r.was_resized || !h,
                 was_dragged: null != r && r.was_dragged || h,
                 widget_type: c.A.getWidgetType(t),
-                window_width: a.width,
-                window_height: a.height,
+                window_width: l.width,
+                window_height: l.height,
                 widget_width: s.width,
                 widget_height: s.height,
                 widget_left: A.left,
@@ -130,7 +130,7 @@ class v extends s.PureComponent {
         let {
             layoutSize: t
         } = this.props;
-        (0, f.validResolution)(t) && (0, l.uD)(e)
+        (0, f.validResolution)(t) && (0, a.uD)(e)
     };
     handleDragStart = () => {
         let {
@@ -155,14 +155,14 @@ class v extends s.PureComponent {
                 isPreviewingInGame: s
             },
             state: {
-                dragging: a
+                dragging: l
             }
-        } = this, l = y[e.type];
-        return null == l ? null : r => l({
+        } = this, a = y[e.type];
+        return null == a ? null : r => a({
             id: e.id,
             locked: i,
             pinned: e.pinned,
-            dragging: a,
+            dragging: l,
             isPreviewingInGame: s,
             anchor: t,
             size: n,
@@ -175,8 +175,8 @@ class v extends s.PureComponent {
             widgetConfig: t,
             layoutSize: n,
             locked: s,
-            isPreviewingInGame: a,
-            isActiveRegion: l
+            isPreviewingInGame: l,
+            isActiveRegion: a
         } = this.props;
         if (null == e || null == t) return null;
         let {
@@ -192,7 +192,7 @@ class v extends s.PureComponent {
             dragAnywhere: E
         } = t, y = (0, g.AE)({
             locked: s,
-            isPreviewingInGame: a,
+            isPreviewingInGame: l,
             pinned: o
         }), v = {
             minX: 0,
@@ -213,7 +213,7 @@ class v extends s.PureComponent {
                 zIndex: c
             },
             dragAnywhere: E,
-            active: !s || l,
+            active: !s || a,
             onUpdate: this.handleUpdate,
             onClick: this.handleFocus,
             onDragStart: this.handleDragStart,
@@ -222,7 +222,7 @@ class v extends s.PureComponent {
         })
     }
 }
-let S = a.Ay.connectStores([c.A, u.default], e => {
+let S = l.Ay.connectStores([c.A, u.default], e => {
     let {
         widgetId: t
     } = e, n = c.A.getWidget(t), i = u.default.getActiveRegions();
@@ -241,7 +241,7 @@ function C(e, t) {
         layoutSize: t
     }, e)
 }
-let I = a.Ay.connectStores([c.A, h.A], () => ({
+let I = l.Ay.connectStores([c.A, h.A], () => ({
     layout: c.A.getLayout(f.OVERLAY_LAYOUT_ID) ?? void 0,
     layoutSize: h.A.windowSize(),
     renderWidget: C

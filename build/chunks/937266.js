@@ -174,7 +174,7 @@ class b extends l.Component {
 }
 let T = [f.A, x.A, C.A];
 
-function N(e) {
+function y(e) {
     let {
         skuId: t
     } = e, n = f.A.get(t), i = null != n ? g.A.getApplication(n.applicationId) : null;
@@ -187,6 +187,6 @@ function N(e) {
         libraryApplication: null != n ? x.A.getLibraryApplication(n.applicationId, n.applicationId, !0) : null
     }
 }
-let y = (0, p.A)((0, h.A)(b)),
-    S = a.Ay.connectStores(T, N)(y),
-    j = (0, h.A)(a.Ay.connectStores(T, N)(b))
+let N = (0, p.A)((0, h.A)(b)),
+    S = a.Ay.connectStores(T, y)(N),
+    j = (0, h.A)(a.Ay.connectStores(T, y)(b))

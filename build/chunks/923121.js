@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
     Bq: () => x,
-    fH: () => A,
+    fH: () => p,
     p2: () => h,
     q3: () => _,
     sF: () => u,
@@ -58,7 +58,7 @@ async function _(e) {
     if (t.forEach(e => {
             let t = (0, d.Ii)(e);
             n.push(...t)
-        }), n.length > 0) throw p(n), s.A.show({
+        }), n.length > 0) throw A(n), s.A.show({
         title: c.intl.string(c.t.ISppXw),
         body: n.join("\n")
     }), Error("failed to validate connections");
@@ -79,21 +79,21 @@ async function _(e) {
             fieldName: e,
             error: t
         } = new l.LG(i).getAnyErrorMessageAndField() ?? {}, n = [e, t].filter(r.Vq).join(": ");
-        throw p([n]), s.A.show({
+        throw A([n]), s.A.show({
             title: c.intl.string(c.t.iLdiqY),
             body: n
         }), i
     }
 }
 
-function p(e) {
+function A(e) {
     i.h.dispatch({
         type: "GUILD_SETTINGS_ONBOARDING_CONNECTIONS_SAVE_FAILED",
         errors: e
     })
 }
 
-function A(e) {
+function p(e) {
     let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
     return t || a.A.hasChanges() ? _(e) : Promise.resolve()
 }

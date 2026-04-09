@@ -26,8 +26,8 @@ var i = n(627968),
     T = n(391786),
     S = n(50122),
     b = n(132970),
-    v = n(129104),
-    y = n(559405),
+    y = n(129104),
+    v = n(559405),
     j = n(272997),
     R = n(266069);
 n(708455);
@@ -117,7 +117,7 @@ function k(e) {
             let l = (0, N.A)(e),
                 s = l ? F[e] : null,
                 a = E.A.isFavorited(e),
-                r = l ? (0, i.jsx)(y.A, {
+                r = l ? (0, i.jsx)(v.A, {
                     userId: p.default.getId(),
                     size: 20,
                     hangStatusActivity: {
@@ -181,7 +181,7 @@ function k(e) {
                         placeholder: M.intl.string(M.t.KPop4s),
                         leading: {
                             type: "emoji",
-                            button: (0, i.jsx)(v.R, {
+                            button: (0, i.jsx)(y.R, {
                                 customStatusEmoji: z,
                                 setCustomStatusEmoji: q,
                                 selectedDefaultStatus: X || ea ? null : J,

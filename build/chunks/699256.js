@@ -1,7 +1,7 @@
 /** chunk id: 699256 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => p
+    A: () => A
 });
 var i = n(627968),
     s = n(64700),
@@ -18,10 +18,10 @@ var i = n(627968),
     h = n(985018),
     _ = n(136187);
 
-function p(e) {
+function A(e) {
     let {
         guildId: t
-    } = e, p = (0, l.bG)([c.A], () => c.A.getEditedConnections()), A = (0, l.bG)([c.A], () => c.A.isSubmitting()), f = s.useCallback(() => {
+    } = e, A = (0, l.bG)([c.A], () => c.A.getEditedConnections()), p = (0, l.bG)([c.A], () => c.A.isSubmitting()), f = s.useCallback(() => {
         (0, r.mMO)(async () => {
             let {
                 default: e
@@ -30,10 +30,10 @@ function p(e) {
                 ...t
             })
         })
-    }, []), j = s.useMemo(() => p.map(e => ({
+    }, []), j = s.useMemo(() => A.map(e => ({
         ...e,
         id: (0, x.Sq)(e)
-    })), [p]), N = s.useCallback(e => {
+    })), [A]), N = s.useCallback(e => {
         let t = e.map(e => {
             let {
                 id: t,
@@ -56,7 +56,7 @@ function p(e) {
         autoTrackExposure: !0
     });
     if (!b) return null;
-    let v = p.length < x.pA;
+    let v = A.length < x.pA;
     return (0, i.jsxs)("div", {
         className: _.jx,
         children: [(0, i.jsxs)("div", {
@@ -77,7 +77,7 @@ function p(e) {
                     max: x.pA
                 })
             })]
-        }), p.length > 0 && (0, i.jsx)("div", {
+        }), A.length > 0 && (0, i.jsx)("div", {
             className: _.eF,
             children: j.map((e, t) => (0, i.jsx)(m.A, {
                 connection: e,
@@ -90,7 +90,7 @@ function p(e) {
         }), (0, i.jsxs)("button", {
             className: _.qG,
             onClick: f,
-            disabled: !v || A,
+            disabled: !v || p,
             type: "button",
             children: [(0, i.jsx)(r.U1e, {
                 size: "custom",

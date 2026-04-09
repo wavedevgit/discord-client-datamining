@@ -1,6 +1,6 @@
 /** chunk id: 414711 params = (module,exports,require) **/
 s.d(t, {
-    A: () => m
+    A: () => d
 });
 var i = s(627968),
     n = s(64700),
@@ -9,10 +9,11 @@ var i = s(627968),
     l = s(615300),
     o = s(837381),
     u = s(397927),
-    h = s(442433);
+    h = s(442433),
+    c = s(688810);
 s(646363);
-var c = s(281145);
-class A extends n.PureComponent {
+var A = s(281145);
+class m extends n.PureComponent {
     state = {
         height: new l.A.Value(this.props.height ?? 61),
         opacity: new l.A.Value(1),
@@ -55,15 +56,24 @@ class A extends n.PureComponent {
         })
     };
     handleContextMenu = (e, t) => {
+        let {
+            analyticsLocations: n
+        } = this.props;
         this.setState({
             isContextMenuActive: !0
         }), (0, h.L3)(e, async () => {
             let {
                 default: e
             } = await Promise.all([s.e("97262"), s.e("32418"), s.e("45136")]).then(s.bind(s, 668569));
-            return s => (0, i.jsx)(e, {
+            return s => null == n ? (0, i.jsx)(e, {
                 ...s,
                 user: t
+            }) : (0, i.jsx)(c.f5, {
+                value: n,
+                children: (0, i.jsx)(e, {
+                    ...s,
+                    user: t
+                })
             })
         }, {
             onClose: () => {
@@ -82,7 +92,7 @@ class A extends n.PureComponent {
         } = this.state, {
             children: a,
             user: h,
-            onClick: A,
+            onClick: c,
             isActive: m,
             className: d,
             activeClassName: p,
@@ -90,8 +100,8 @@ class A extends n.PureComponent {
         } = this.props;
         return (0, i.jsxs)(i.Fragment, {
             children: [N ? null : (0, i.jsx)("div", {
-                className: r()(c.yF, {
-                    [c._]: m || n || s
+                className: r()(A.yF, {
+                    [A._]: m || n || s
                 })
             }), (0, i.jsx)(o.tG, {
                 id: h.id,
@@ -101,15 +111,15 @@ class A extends n.PureComponent {
                         right: -8
                     },
                     children: (0, i.jsx)(l.A.div, {
-                        className: r()(d, c.Vg, null != p ? {
+                        className: r()(d, A.Vg, null != p ? {
                             [p]: m || n
                         } : null, {
-                            [c.vu]: m || n
+                            [A.vu]: m || n
                         }),
                         onContextMenu: e => this.handleContextMenu(e, h),
                         onMouseEnter: this.handleMouseEnter,
                         onMouseLeave: this.handleMouseLeave,
-                        onClick: A ?? void 0,
+                        onClick: c ?? void 0,
                         style: {
                             height: e,
                             opacity: t
@@ -122,4 +132,4 @@ class A extends n.PureComponent {
         })
     }
 }
-let m = A
+let d = m

@@ -6,8 +6,8 @@ n.d(t, {
 });
 var i = n(627968),
     s = n(64700),
-    a = n(503698),
-    l = n.n(a),
+    l = n(503698),
+    a = n.n(l),
     r = n(133977),
     o = n.n(r),
     d = n(990078),
@@ -30,11 +30,11 @@ let p = u.UVF.DEFAULT,
         return (0, i.jsx)(A.Consumer, {
             children: e => {
                 let {
-                    type: a
+                    type: l
                 } = e;
                 return (0, i.jsx)(_.Consumer, {
                     children: e => (0, i.jsx)("div", {
-                        className: l()(h.bar, h[o()(a)], n),
+                        className: a()(h.bar, h[o()(l)], n),
                         style: e,
                         ...s,
                         children: t
@@ -55,8 +55,8 @@ class m extends s.PureComponent {
         } = this.props;
         return (0, i.jsx)(_.Consumer, {
             children: s => (0, i.jsx)(A.Consumer, {
-                children: a => {
-                    let r = l()(h.body, h[o()(a.type)], n);
+                children: l => {
+                    let r = a()(h.body, h[o()(l.type)], n);
                     return e ? (0, i.jsx)("div", {
                         className: r,
                         style: s,
@@ -76,7 +76,7 @@ let x = e => {
             type: t = p,
             width: n,
             height: s,
-            children: a,
+            children: l,
             className: r,
             opacity: d = f,
             onClick: c
@@ -87,13 +87,13 @@ let x = e => {
                 opacity: d
             },
             children: (0, i.jsx)("div", {
-                className: l()(h.widget, h[o()(t)], r),
+                className: a()(h.widget, h[o()(t)], r),
                 style: {
                     width: n,
                     height: s
                 },
                 onClick: c,
-                children: a
+                children: l
             })
         })
     },
@@ -105,7 +105,7 @@ let x = e => {
         } = e;
         return (0, i.jsx)(_.Consumer, {
             children: e => (0, i.jsx)("div", {
-                className: l()(h.content, {
+                className: a()(h.content, {
                     [h.staticSize]: !s
                 }, n),
                 style: e,
@@ -119,24 +119,24 @@ x.Background = e => {
         opacityOverride: n
     } = e;
     if (null == t) return null;
-    let a = [g, m, E];
+    let l = [g, m, E];
     return (0, i.jsx)(A.Consumer, {
         children: e => {
             let {
-                opacity: l
+                opacity: a
             } = e, r = {
-                backgroundColor: `rgba(54, 57, 63, ${""+(n??l)})`
+                backgroundColor: `rgba(54, 57, 63, ${""+(n??a)})`
             };
             if ("string" == typeof t.type) return s.cloneElement(t, {
                 style: r
             });
             {
-                if (a.includes(t.type)) return (0, i.jsx)(_.Provider, {
+                if (l.includes(t.type)) return (0, i.jsx)(_.Provider, {
                     value: r,
                     children: t
                 });
                 let e = t.type.displayName;
-                throw Error(`Widget.Background cannot be wrapped around ${e}. Pass a DOM node or one of ${a.map(e=>"Widget."+e.name).join(",")}`)
+                throw Error(`Widget.Background cannot be wrapped around ${e}. Pass a DOM node or one of ${l.map(e=>"Widget."+e.name).join(",")}`)
             }
         }
     })
@@ -145,7 +145,7 @@ x.Background = e => {
         ref: t,
         icon: n,
         label: s,
-        onClick: a,
+        onClick: l,
         tooltipPosition: r = "top",
         isTutorial: o = !1,
         isActive: u,
@@ -160,8 +160,8 @@ x.Background = e => {
         position: r,
         forceOpen: o,
         children: (0, i.jsx)(c.DUT, {
-            onClick: a,
-            className: l()(h.icon, {
+            onClick: l,
+            className: a()(h.icon, {
                 [h.toggledIconOn]: u
             }),
             innerRef: t,

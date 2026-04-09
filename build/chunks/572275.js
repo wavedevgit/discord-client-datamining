@@ -36,7 +36,7 @@ function m(e) {
                 goToThread: m
             }, `${e.section}-${e.row}`)
         }, [j, A, f, m]),
-        p = n.useCallback(e => 0 === e.section ? (0, l.jsx)(x, {
+        y = n.useCallback(e => 0 === e.section ? (0, l.jsx)(x, {
             text: u.intl.formatToPlainString(u.t["4E27fz"], {
                 count: A.length
             })
@@ -47,7 +47,7 @@ function m(e) {
         }, e.section) : (0, l.jsx)(x, {
             text: u.intl.string(u.t["wUNQ+w"])
         }, e.section), [A.length, f.length]),
-        y = n.useCallback(e => 1 === e && A.length > 0 || 2 === e && (A.length > 0 || f.length > 0) ? 64 : 32, [A.length, f.length]),
+        p = n.useCallback(e => 1 === e && A.length > 0 || 2 === e && (A.length > 0 || f.length > 0) ? 64 : 32, [A.length, f.length]),
         b = n.useCallback(() => {
             let e = N.current?.getScrollerState();
             if (null == e) return;
@@ -74,10 +74,10 @@ function m(e) {
         className: h.p_,
         fade: !0,
         sections: [A.length, f.length, j.length],
-        sectionHeight: y,
+        sectionHeight: p,
         rowHeight: 80,
         renderRow: S,
-        renderSection: p,
+        renderSection: y,
         chunkSize: 20,
         onScroll: v ? b : void 0
     })

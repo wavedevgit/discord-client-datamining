@@ -44,16 +44,16 @@ function N(e, t, n) {
             return e?.permissions ?? {}
         }, [n]),
         j = (0, o.bG)([b.A], () => null == n ? b.A.getEditedApplication() : b.A.getEditedCommand()?.permissions, [n]),
-        T = n ?? t,
-        v = null != n ? N : a,
+        v = n ?? t,
+        T = null != n ? N : a,
         C = i.useMemo(() => j ?? {
-            ...v ?? {}
-        }, [j, v]),
+            ...T ?? {}
+        }, [j, T]),
         I = i.useMemo(() => Object.keys(C).length, [C]),
-        E = i.useMemo(() => null == v || null == C ? null : !r().isEqual(v, C), [v, C]);
+        E = i.useMemo(() => null == T || null == C ? null : !r().isEqual(T, C), [T, C]);
     return i.useEffect(() => {
-        T === t && (E ? d.A.startEditingCommandPermissions(T) : d.A.stopEditingCommandPermissions(T))
-    }, [t, E, T]), {
+        v === t && (E ? d.A.startEditingCommandPermissions(v) : d.A.stopEditingCommandPermissions(v))
+    }, [t, E, v]), {
         originalApplicationPermissions: a,
         originalCommandPermissions: N,
         editedTargetPermissions: function(e, t) {
@@ -80,7 +80,7 @@ function N(e, t, n) {
                 }, [t]),
                 N = (0, o.cf)([m.A], () => Object.fromEntries(d.map(m.A.getChannel).filter(A.Vq).map(e => [e.id, e])), [d]),
                 j = (0, o.cf)([g.A], () => Object.fromEntries(b.map(t => g.A.getRole(e, t)).filter(A.Vq).map(e => [e.id, e])), [b, e]),
-                T = (0, o.cf)([p.default], () => Object.fromEntries(f.map(p.default.getUser).filter(A.Vq).map(e => [e.id, e])), [f]);
+                v = (0, o.cf)([p.default], () => Object.fromEntries(f.map(p.default.getUser).filter(A.Vq).map(e => [e.id, e])), [f]);
             return i.useMemo(() => {
                 let e = n.id,
                     i = (0, u.Ap)(n.id),
@@ -97,7 +97,7 @@ function N(e, t, n) {
                             s = j[o.id];
                         t = i || null != s, d = r || i || h.A.isRoleHigher(n, l, s)
                     } else if (o.type === c.RA.USER) {
-                        let e = T[o.id];
+                        let e = v[o.id];
                         t = null != e, d = null != e && (r || h.A.canManageUser(_.xBc.USE_APPLICATION_COMMANDS, e, n))
                     }
                     s[a] = {
@@ -107,7 +107,7 @@ function N(e, t, n) {
                     }
                 }
                 return s
-            }, [N, n, l, r, t, j, T])
+            }, [N, n, l, r, t, j, v])
         }(e, C),
         hasChanges: E,
         selectedPermissionCount: I

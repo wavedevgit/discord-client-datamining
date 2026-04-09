@@ -32,10 +32,10 @@ function T(e) {
         channel: T,
         remoteMode: S,
         onInteraction: b
-    } = e, v = (0, o.Us)(), {
-        id: y,
+    } = e, y = (0, o.Us)(), {
+        id: v,
         type: j
-    } = T, R = (0, l.bG)([c.A], () => c.A.getGuild(T.guild_id), [T.guild_id]), O = (0, l.bG)([u.A], () => u.A.getSelectedParticipant(y)), L = O?.type === I.lp.STREAM ? O.stream : null, M = (0, l.bG)([a.A], () => O?.type === I.lp.ACTIVITY ? a.A.getApplication(O.applicationId) : void 0), D = (0, _.A)(y), U = (0, x.A)(y), G = (0, p.A)(T, R, L?.ownerId, M?.id), P = (0, A.A)(y), k = (0, E.A)(), w = (0, d.RQ)(y), B = (0, d.dA)(y), V = (0, f.A)(L, v), H = (0, g.A)(M, y), F = (0, m.A)(), W = (0, r.A)(T), K = (0, h.f)(y);
+    } = T, R = (0, l.bG)([c.A], () => c.A.getGuild(T.guild_id), [T.guild_id]), O = (0, l.bG)([u.A], () => u.A.getSelectedParticipant(v)), L = O?.type === I.lp.STREAM ? O.stream : null, M = (0, l.bG)([a.A], () => O?.type === I.lp.ACTIVITY ? a.A.getApplication(O.applicationId) : void 0), D = (0, _.A)(v), U = (0, x.A)(v), G = (0, p.A)(T, R, L?.ownerId, M?.id), P = (0, A.A)(v), k = (0, E.A)(), w = (0, d.RQ)(v), B = (0, d.dA)(v), V = (0, f.A)(L, y), H = (0, g.A)(M, v), F = (0, m.A)(), W = (0, r.A)(T), K = (0, h.f)(v);
     return (0, i.jsxs)(s.W1t, {
         "data-menu-migrated": !0,
         onClose: t,

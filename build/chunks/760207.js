@@ -1,36 +1,36 @@
 /** chunk id: 760207 params = (module,exports,require) **/
-t.d(n, {
+n.d(t, {
     A: () => j,
     W: () => N
 });
-var l = t(627968),
-    i = t(64700),
-    s = t(311907),
-    a = t(397927),
-    r = t(812771),
-    d = t(274541),
-    c = t(761640),
-    o = t(769765),
-    u = t(808728),
-    _ = t(71393),
-    h = t(576705),
-    x = t(954571),
-    m = t(637248),
-    g = t(743015),
-    A = t(652215),
-    C = t(746080),
-    f = t(985018),
-    p = t(459265);
+var l = n(627968),
+    i = n(64700),
+    s = n(311907),
+    a = n(397927),
+    r = n(812771),
+    d = n(274541),
+    c = n(761640),
+    o = n(769765),
+    u = n(808728),
+    _ = n(71393),
+    h = n(576705),
+    x = n(954571),
+    m = n(637248),
+    A = n(743015),
+    g = n(652215),
+    C = n(746080),
+    f = n(985018),
+    p = n(459265);
 
 function N(e) {
     let {
-        channelId: n
+        channelId: t
     } = e;
     return (0, l.jsx)(r.A, {
         sidebarType: r.X.ThreadSidebar,
         maxWidth: 600,
         children: (0, l.jsx)(d.A, {
-            channelId: n,
+            channelId: t,
             baseChannelId: C.VV.CHANNEL_BROWSER
         })
     })
@@ -38,21 +38,21 @@ function N(e) {
 
 function j(e) {
     let {
-        guildId: n
-    } = e, [r, d] = i.useState(""), N = (0, s.bG)([_.A], () => _.A.getGuild(n)), j = (0, s.bG)([u.Ay], () => u.Ay.getChannels(n)), v = (0, s.bG)([o.A], () => o.A.getCategories(n)), b = (0, m.vh)(n, v, j, r), I = (0, s.bG)([h.A], () => h.A.canWithPartialContext(A.xBc.MANAGE_CHANNELS, {
-        guildId: n
+        guildId: t
+    } = e, [r, d] = i.useState(""), N = (0, s.bG)([_.A], () => _.A.getGuild(t)), j = (0, s.bG)([u.Ay], () => u.Ay.getChannels(t)), v = (0, s.bG)([o.A], () => o.A.getCategories(t)), b = (0, m.vh)(t, v, j, r), I = (0, s.bG)([h.A], () => h.A.canWithPartialContext(g.xBc.MANAGE_CHANNELS, {
+        guildId: t
     })), E = (0, s.bG)([c.Ay], () => null != c.Ay.getCurrentSidebarChannelId(C.VV.CHANNEL_BROWSER)), S = i.useCallback(() => d(""), [d]), w = i.useCallback(() => {
         (0, a.mMO)(async () => {
             let {
                 default: e
-            } = await Promise.all([t.e("64233"), t.e("52719")]).then(t.bind(t, 409200));
-            return t => (0, l.jsx)(e, {
-                ...t,
+            } = await Promise.all([n.e("64233"), n.e("52719")]).then(n.bind(n, 409200));
+            return n => (0, l.jsx)(e, {
+                ...n,
                 channelType: null,
-                guildId: n
+                guildId: t
             })
         })
-    }, [n]);
+    }, [t]);
     return null == N ? null : (0, l.jsxs)("div", {
         className: p.kw,
         children: [(0, l.jsxs)("div", {
@@ -60,7 +60,7 @@ function j(e) {
             children: [(0, l.jsx)(a.IWV, {
                 query: r,
                 onChange: e => {
-                    "" === r && "" !== e && x.default.track(A.HAw.SEARCH_STARTED, {
+                    "" === r && "" !== e && x.default.track(g.HAw.SEARCH_STARTED, {
                         search_type: "channel browser"
                     }), d(e.toLowerCase())
                 },
@@ -71,7 +71,7 @@ function j(e) {
                 onClick: w,
                 text: f.intl.string(f.t.CumH4u)
             }) : null]
-        }), (0, l.jsx)(g.A, {
+        }), (0, l.jsx)(A.A, {
             className: p.T,
             channels: j,
             categories: b,

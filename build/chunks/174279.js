@@ -136,56 +136,59 @@ class R extends a.PureComponent {
         let {
             user: e,
             isFocused: t,
-            activities: n,
-            applicationStream: a,
-            status: l,
-            isMobile: r,
-            isVR: s,
-            isGameRelationship: d,
-            giftIntentType: c,
-            hasFriendAnniversarySection: m,
-            sectionIndex: g
+            analyticsLocations: n,
+            activities: a,
+            applicationStream: l,
+            status: r,
+            isMobile: s,
+            isVR: d,
+            isGameRelationship: c,
+            giftIntentType: m,
+            hasFriendAnniversarySection: g,
+            sectionIndex: p
         } = this.props, {
-            isActiveRow: p
+            isActiveRow: I
         } = this.state;
-        return (0, h.p)(A.A.FRIENDS_LIST) && c === v.np.FRIEND_ANNIVERSARY && m && 0 === g ? (0, i.jsx)(_.A, {
+        return (0, h.p)(A.A.FRIENDS_LIST) && m === v.np.FRIEND_ANNIVERSARY && g && 0 === p ? (0, i.jsx)(_.A, {
             ref: this.peopleListItemRef,
             isFocused: t,
-            isActive: p,
+            isActive: I,
             recipientUser: e,
-            onOtherHover: () => p ? null : (0, u.Z_)(),
+            analyticsLocations: n,
+            onOtherHover: () => I ? null : (0, u.Z_)(),
             onClick: this.handleOpenPrivateChannel,
-            giftIntentType: c,
-            status: l,
-            activities: n,
-            applicationStream: a,
-            isMobile: r,
-            isVR: s,
-            isGameRelationship: d
+            giftIntentType: m,
+            status: r,
+            activities: a,
+            applicationStream: l,
+            isMobile: s,
+            isVR: d,
+            isGameRelationship: c
         }) : (0, i.jsx)(T.A, {
             ref: this.peopleListItemRef,
             isFocused: t,
-            isActive: p,
+            isActive: I,
             user: e,
-            onOtherHover: () => p ? null : (0, u.Z_)(),
+            analyticsLocations: n,
+            onOtherHover: () => I ? null : (0, u.Z_)(),
             onClick: this.handleOpenPrivateChannel,
             children: t => (0, i.jsxs)("div", {
                 className: O.a4,
                 children: [(0, i.jsx)(S.A, {
                     user: e,
-                    status: l,
-                    isMobile: r,
-                    isVR: s,
+                    status: r,
+                    isMobile: s,
+                    isVR: d,
                     subText: (0, i.jsx)(N.A, {
                         hovered: t,
-                        activities: n,
-                        applicationStream: a,
-                        status: l,
+                        activities: a,
+                        applicationStream: l,
+                        status: r,
                         user: e,
                         userIgnored: E.A.isIgnored(e.id)
                     }),
                     hovered: t,
-                    showAccountIdentifier: !d && !e.isProvisional
+                    showAccountIdentifier: !c && !e.isProvisional
                 }), (0, i.jsxs)("div", {
                     className: O.o1,
                     children: [(0, i.jsx)(C.A, {

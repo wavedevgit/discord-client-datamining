@@ -16,8 +16,8 @@ var i = t(627968),
     A = t(718019),
     g = t(31432),
     m = t(915614),
-    I = t(389996),
-    h = t(743987),
+    h = t(389996),
+    I = t(743987),
     f = t(900179),
     x = t(946356),
     v = t(810396),
@@ -131,13 +131,13 @@ function L(e) {
                                 }), (0, i.jsxs)(l.IpV, {
                                     fade: !0,
                                     className: C.XG,
-                                    children: [(0, i.jsx)(I.E, {
+                                    children: [(0, i.jsx)(h.E, {
                                         userId: n.id,
                                         userBio: M?.bio,
                                         setLineClamp: !1
                                     }), (0, i.jsx)(f.A, {
                                         heading: N.intl.string(N.t["A//N4k"]),
-                                        children: (0, i.jsx)(h.A, {
+                                        children: (0, i.jsx)(I.A, {
                                             userId: n.id,
                                             guildId: G,
                                             tooltipDelay: j.In

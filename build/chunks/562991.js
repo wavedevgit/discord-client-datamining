@@ -33,17 +33,17 @@ function E(e) {
     } = (0, h.Dm)({
         guildId: t.guild_id,
         location: "VoiceChannelStatus"
-    }), S = T && (0, A.TP)(N), b = null != N && N.length > 0 && !S, v = (0, c.Ay)(t, !0), y = null != E && E.length > 0;
+    }), S = T && (0, A.TP)(N), b = null != N && N.length > 0 && !S, y = (0, c.Ay)(t, !0), v = null != E && E.length > 0;
     if (l.useEffect(() => {
             b && m.default.track(p.HAw.VOICE_CHANNEL_TOPIC_VIEWED, {
                 channel_id: t.id,
                 guild_id: t.guild_id
             })
         }, [b, t.id, t.guild_id]), null == t.guild_id) return null;
-    let j = a()(f.Ui, n && v ? f.BI : null);
+    let j = a()(f.Ui, n && y ? f.BI : null);
     return b ? (0, i.jsx)(d.DUT, {
         className: j,
-        onClick: v ? I : void 0,
+        onClick: y ? I : void 0,
         children: (0, i.jsx)(d.Text, {
             variant: "text-xs/medium",
             className: a()(f.qS, x.PT),
@@ -53,7 +53,7 @@ function E(e) {
                 })
             })
         })
-    }) : n && v && !S && (!y || s) && C ? (0, i.jsxs)(d.DUT, {
+    }) : n && y && !S && (!v || s) && C ? (0, i.jsxs)(d.DUT, {
         className: j,
         onClick: I,
         children: [(0, i.jsx)(d.Text, {
@@ -65,7 +65,7 @@ function E(e) {
             className: f.rD,
             size: "xxs"
         })]
-    }) : y ? (0, i.jsx)(o.A, {
+    }) : v ? (0, i.jsx)(o.A, {
         children: E
     }) : null
 }

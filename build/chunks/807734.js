@@ -1,72 +1,72 @@
 /** chunk id: 807734 params = (module,exports,require) **/
-n.d(t, {
-    A: () => h
+i.d(e, {
+    A: () => _
 });
-var a = n(64700),
-    i = n(311907),
-    s = n(847599),
-    l = n(787301),
-    r = n(295972),
-    o = n(36149),
-    d = n(677501),
-    c = n(634101),
-    u = n(40449),
-    m = n(985018);
-let h = function(e) {
+var n = i(64700),
+    l = i(311907),
+    r = i(847599),
+    s = i(787301),
+    a = i(295972),
+    o = i(36149),
+    c = i(677501),
+    u = i(634101),
+    d = i(40449),
+    E = i(985018);
+let _ = function(t) {
     let {
-        onClose: t,
-        onMethodClick: n,
-        classificationId: h,
-        onGoogleWalletSelect: x
-    } = e, {
-        methods: p,
-        loading: g
-    } = (0, i.cf)([l.A], () => ({
-        methods: l.A.methods,
-        loading: l.A.loading
+        onClose: e,
+        onMethodClick: i,
+        classificationId: _,
+        onGoogleWalletSelect: f
+    } = t, {
+        methods: A,
+        loading: R
+    } = (0, l.cf)([s.A], () => ({
+        methods: s.A.methods,
+        loading: s.A.loading
     })), {
-        initiateAgeVerification: f
+        initiateAgeVerification: g
     } = (0, o.nn)({
-        onComplete: t,
-        entryPoint: s.q1.EXPRESSIVE_GET_STARTED,
+        onComplete: e,
+        entryPoint: r.q1.EXPRESSIVE_GET_STARTED,
         shouldShowExpressiveModal: !0,
-        classificationId: h
-    }), v = (0, c.D)("age_verification_methods"), [_, b] = a.useState(!1);
-    return a.useEffect(() => {
-        v && (0, d.sf)().then(b)
-    }, [v]), a.useEffect(() => {
-        null == p && (0, r.DJ)()
-    }, [p]), {
-        ageVerificationMethods: a.useMemo(() => {
-            let e = p?.filter(e => e !== u.VF.GOOGLE_WALLET).map(e => {
-                let t = u.uv[e];
-                if (null == t) return null;
+        classificationId: _
+    }), m = (0, u.D)("age_verification_methods"), [S, p] = n.useState(!1);
+    return n.useEffect(() => {
+        m && (0, c.sf)().then(p)
+    }, [m]), n.useEffect(() => {
+        null == A && (0, a.DJ)()
+    }, [A]), {
+        ageVerificationMethods: n.useMemo(() => {
+            let t = A?.filter(t => t !== d.VF.GOOGLE_WALLET).map(t => {
+                let e = d.uv[t];
+                if (null == e) return null;
                 let {
-                    title: a,
-                    description: i
-                } = t;
+                    title: n,
+                    description: l
+                } = e;
                 return {
-                    id: e,
-                    title: m.intl.string(a),
-                    description: m.intl.string(i),
-                    onClick: async t => {
-                        (0, s.St)(t, s.WU.EXPRESSIVE_PRIMARY, s._7.METHOD_SELECT, e), n?.(), await f(e)
+                    id: t,
+                    title: E.intl.string(n),
+                    description: E.intl.string(l),
+                    onClick: async e => {
+                        (0, r.St)(e, r.WU.EXPRESSIVE_PRIMARY, r._7.METHOD_SELECT, t), i?.(), await g(t)
                     }
                 }
-            }).filter(e => null != e) ?? [];
-            if (v && _ && null != x) {
-                let t = u.uv[u.VF.GOOGLE_WALLET];
-                if (null != t) return [{
-                    id: u.VF.GOOGLE_WALLET,
-                    title: m.intl.string(t.title),
-                    description: m.intl.string(t.description),
-                    onClick: e => {
-                        (0, s.St)(e, s.WU.EXPRESSIVE_PRIMARY, s._7.METHOD_SELECT, u.VF.GOOGLE_WALLET), n?.(), x()
+            }).filter(t => null != t) ?? [];
+            if (m && S && null != f) {
+                let e = d.uv[d.VF.GOOGLE_WALLET];
+                if (null != e) return [{
+                    id: d.VF.GOOGLE_WALLET,
+                    title: E.intl.string(e.title),
+                    description: E.intl.string(e.description),
+                    onClick: t => {
+                        (0, r.St)(t, r.WU.EXPRESSIVE_PRIMARY, r._7.METHOD_SELECT, d.VF.GOOGLE_WALLET), i?.(), f()
                     }
-                }, ...e]
+                }, ...t]
             }
-            return e
-        }, [p, v, _, x, n, f]),
-        loading: g
+            return t
+        }, [A, m, S, f, i, g]),
+        loading: R
     }
 }

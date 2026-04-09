@@ -1,6 +1,6 @@
 /** chunk id: 190772 params = (module,exports,require) **/
 s.d(t, {
-    A: () => y
+    A: () => p
 });
 var l = s(627968),
     n = s(64700),
@@ -23,9 +23,9 @@ var l = s(627968),
     w = s(707539),
     N = s(838541),
     S = s(985018),
-    p = s(934369);
+    y = s(934369);
 
-function y(e) {
+function p(e) {
     return e.isActiveThread() ? (0, l.jsx)(b, {
         channel: e
     }) : (0, l.jsx)(k, {
@@ -50,7 +50,7 @@ function C(e) {
         channel: t
     } = e, s = (0, w.JO)(t);
     return (0, l.jsxs)(r.Text, {
-        className: p.W$,
+        className: y.W$,
         variant: "text-sm/normal",
         color: "text-default",
         children: [S.intl.string(S.t.Jmh6n9), "\xa0 • \xa0", (0, w.aK)(s)]
@@ -74,7 +74,7 @@ function I(e) {
         T = (0, g.gn)(t.guild_id, d.id, v),
         {
             isBlocked: S,
-            isIgnored: y
+            isIgnored: p
         } = (0, a.cf)([A.A], () => ({
             isBlocked: A.A.isBlockedForMessage(s),
             isIgnored: A.A.isIgnoredForMessage(s)
@@ -88,9 +88,9 @@ function I(e) {
                     renderedContent: n,
                     trailingIcon: a,
                     leadingIcon: r
-                } = (0, h.o)(s, e, S, y, p.BK, {
-                    trailingIconClass: p.sl,
-                    leadingIconClass: p.aG,
+                } = (0, h.o)(s, e, S, p, y.BK, {
+                    trailingIconClass: y.sl,
+                    leadingIconClass: y.aG,
                     iconSize: N.eJ
                 });
             return (0, l.jsxs)(l.Fragment, {
@@ -98,20 +98,20 @@ function I(e) {
                     children: t
                 }), a]
             })
-        }, [s, S, y]);
+        }, [s, S, p]);
     return (0, l.jsxs)(r.Text, {
-        className: p.W$,
+        className: y.W$,
         variant: "text-sm/normal",
         color: "text-default",
         children: [(0, l.jsx)(i.A, {
-            className: p.my,
+            className: y.my,
             user: d,
             size: r._3J.SIZE_16
         }), (0, l.jsx)(r.gyj, {
             name: m,
             colorString: x,
             colorStrings: T,
-            className: p.fh
+            className: y.fh
         }), ":\xa0", b, "\xa0 • \xa0", (0, w.aK)(j.default.extractTimestamp(s.id))]
     })
 }
@@ -128,12 +128,12 @@ function k(e) {
         h = (0, g.gn)(t.guild_id, c?.id, u?.colorStrings ?? null),
         A = (0, d.gU)(t) ?? r.ysw;
     return (0, l.jsx)(r.Text, {
-        className: p.W$,
+        className: y.W$,
         variant: "text-sm/normal",
         color: "text-default",
         children: null == c ? (0, l.jsxs)(l.Fragment, {
             children: [(0, l.jsx)("div", {
-                className: p.A2,
+                className: y.A2,
                 children: (0, l.jsx)(A, {
                     width: 10,
                     height: 10,
@@ -145,18 +145,18 @@ function k(e) {
             })]
         }) : (0, l.jsxs)(l.Fragment, {
             children: [(0, l.jsx)(i.A, {
-                className: p.my,
+                className: y.my,
                 user: c,
                 size: r._3J.SIZE_16
             }), S.intl.format(S.t["GFDmd/"], {
                 authorHook: (e, t) => (0, l.jsx)(r.gyj, {
-                    className: p.eS,
+                    className: y.eS,
                     colorString: u?.colorString ?? null,
                     colorStrings: h,
                     name: u?.nick ?? v.Ay.getName(c)
                 }, t)
             }), (0, l.jsx)("span", {
-                className: p.xE,
+                className: y.xE,
                 children: "•"
             }), S.intl.format(S.t["5Wk9+o"], {
                 time: (0, w.aK)(n)

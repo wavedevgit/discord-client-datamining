@@ -38,12 +38,12 @@ function b(e) {
     let {
         parentChannel: t,
         onSelectChannel: n
-    } = e;
-    if (t?.name == null) return null;
-    let r = null != t ? (0, A.gU)(t) : null;
+    } = e, r = (0, d.Ay)(t);
     if (null == r) return null;
-    let a = (0, l.jsxs)(l.Fragment, {
-        children: [(0, l.jsx)(r, {
+    let a = null != t ? (0, A.gU)(t) : null;
+    if (null == a) return null;
+    let s = (0, l.jsxs)(l.Fragment, {
+        children: [(0, l.jsx)(a, {
             className: k.gQ,
             size: "xxs",
             color: "currentColor"
@@ -51,18 +51,18 @@ function b(e) {
             className: k.yK,
             variant: "text-xs/medium",
             color: "text-default",
-            children: t.name
+            children: r
         })]
     });
-    return (0, G.Z_)(t.type) ? (0, l.jsx)(E.DUT, {
+    return null != t && (0, G.Z_)(t.type) ? (0, l.jsx)(E.DUT, {
         className: i()(k.rg, k.fj),
         onClick: e => {
             e.stopPropagation(), n(t.id)
         },
-        children: a
+        children: s
     }) : (0, l.jsx)("div", {
         className: k.rg,
-        children: a
+        children: s
     })
 }
 
@@ -83,7 +83,7 @@ function F(e) {
         if (e === L.A.getChannelId()) return;
         let t = O.A.getChannel(e);
         null == t || (R.A.can(p.xBc.VIEW_CHANNEL, t) || t.isPrivate()) && (0, h.iN)(t.id)
-    }, []), U = null != t ? (0, d.m1)(t, D.default, C.A, !1) : "???", F = t?.parent_id != null ? O.A.getChannel(t.parent_id) : null, j = F?.name ?? null, v = (0, A.gU)(t) ?? E.N$i, P = R.A.can(p.xBc.MANAGE_MESSAGES, t), {
+    }, []), U = null != t ? (0, d.m1)(t, D.default, C.A, !1) : "???", F = t?.parent_id != null ? O.A.getChannel(t.parent_id) : null, j = null != F ? (0, d.m1)(F, D.default, C.A) : null, v = (0, A.gU)(t) ?? E.N$i, P = R.A.can(p.xBc.MANAGE_MESSAGES, t), {
         content: y
     } = (0, T.Ay)({
         content: U,

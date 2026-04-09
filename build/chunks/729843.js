@@ -5,8 +5,8 @@ n.d(t, {
 });
 var i = n(387755),
     s = n(684013),
-    a = n(956793),
-    l = n(571694),
+    l = n(956793),
+    a = n(571694),
     r = n(47167),
     o = n(471024),
     d = n(621436),
@@ -20,7 +20,7 @@ var i = n(387755),
 function _(e) {
     let t = (0, r.m1)(e, u.default, c.A),
         n = A.intl.string(A.t.ssrVzG),
-        _ = (0, l.Y)(e),
+        _ = (0, a.Y)(e),
         g = (0, d.A)(e),
         {
             trackView: m,
@@ -46,7 +46,7 @@ function _(e) {
             if (p.kvI.CALLABLE.has(e.type)) s.A.callPrivateChannel(e.id);
             else {
                 if (e.type !== p.rbe.GUILD_VOICE) return;
-                a.default.selectVoiceChannel(e.id)
+                l.default.selectVoiceChannel(e.id)
             }
             x("join"), s.A.track(p.HAw.VOICE_CHANNEL_SELECTED, {
                 location: "Overlay Notificaiton",

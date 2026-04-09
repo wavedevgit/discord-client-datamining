@@ -1,27 +1,27 @@
 /** chunk id: 290090 params = (module,exports,require) **/
-t.d(l, {
+n.d(l, {
     A: () => m
 });
-var n = t(627968);
-t(64700);
-var i = t(311907),
-    s = t(397927),
-    a = t(688810),
-    r = t(979286),
-    o = t(958805),
-    d = t(61881),
-    c = t(993401),
-    u = t(985018);
+var t = n(627968);
+n(64700);
+var i = n(311907),
+    s = n(397927),
+    a = n(688810),
+    r = n(979286),
+    o = n(958805),
+    d = n(61881),
+    c = n(993401),
+    u = n(985018);
 
 function m(e) {
     let {
         onClose: l,
-        ...t
+        ...n
     } = e, {
         analyticsLocations: m,
         newestAnalyticsLocation: x
     } = (0, a.Ay)(), p = (0, i.bG)([d.A], () => d.A.hasUnsavedChanges());
-    return (0, n.jsx)(c.q3, {
+    return (0, t.jsx)(c.q3, {
         action: "VISIT_SHOP",
         icon: s.U1X,
         tooltipText: u.intl.string(u.t.b2d0N0),
@@ -31,6 +31,6 @@ function m(e) {
                 analyticsSource: x
             }), l?.())
         },
-        ...t
+        ...n
     })
 }

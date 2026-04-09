@@ -18,8 +18,8 @@ var s = n(503698),
     x = n(562153),
     h = n(29086),
     _ = n(814364),
-    p = n(985018),
-    A = n(490704);
+    A = n(985018),
+    p = n(490704);
 
 function f(e) {
     let {
@@ -29,16 +29,16 @@ function f(e) {
         isAdopting: j
     } = (0, u.A)(t), N = s?.primaryGuild?.identityGuildId === t && s?.primaryGuild?.identityEnabled === !0;
     if (null != s && null != n && (0, d.q0)(n)) return (0, i.jsxs)("div", {
-        className: A.kL,
+        className: p.kL,
         children: [(0, i.jsx)(a.Text, {
-            className: A.uW,
+            className: p.uW,
             variant: "text-xs/medium",
             color: "text-muted",
-            children: N ? p.intl.string(_.default["6xBCpG"]) : p.intl.string(_.default.eSRKez)
+            children: N ? A.intl.string(_.default["6xBCpG"]) : A.intl.string(_.default.eSRKez)
         }), (0, i.jsx)("div", {
-            className: A.yF
+            className: p.yF
         }), (0, i.jsxs)("div", {
-            className: l()(A.uW, A.rf),
+            className: l()(p.uW, p.rf),
             children: [(0, i.jsx)(h.V, {
                 avatar: (0, i.jsx)(o.A, {
                     user: s,
@@ -53,10 +53,10 @@ function f(e) {
                     inline: !1
                 }),
                 username: x.Ay.getName(t, null, s),
-                message: p.intl.string(p.t["6OSasb"])
+                message: A.intl.string(A.t["6OSasb"])
             }), (0, i.jsx)(a.Button, {
                 variant: "primary",
-                text: p.intl.string(p.t.cQDYRu),
+                text: A.intl.string(A.t.cQDYRu),
                 onClick: f,
                 loading: j,
                 disabled: N,

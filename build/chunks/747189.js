@@ -7,8 +7,8 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var s = n(397927),
-    a = n(684748),
-    l = n(532624),
+    l = n(684748),
+    a = n(532624),
     r = n(350535),
     o = n(572164),
     d = n(652215),
@@ -19,9 +19,9 @@ function h() {
     let {
         trackView: e,
         trackClick: t
-    } = (0, a.Y)(c.KS.ClipsReminderNotification, {
+    } = (0, l.Y)(c.KS.ClipsReminderNotification, {
         notif_type: c.KS.ClipsReminderNotification
-    }), n = l.Ay.getKeybindForAction(d.hCu.SAVE_CLIP), h = (0, o.TD)();
+    }), n = a.Ay.getKeybindForAction(d.hCu.SAVE_CLIP), h = (0, o.TD)();
     if (null == n || !h) return null;
     let p = r.dI(n.shortcut, !0);
     return {
@@ -53,7 +53,7 @@ function p(e) {
     let {
         trackView: t,
         trackClick: n
-    } = (0, a.Y)(c.KS.ClipsNotification, {
+    } = (0, l.Y)(c.KS.ClipsNotification, {
         notif_type: c.KS.ClipsNotification
     });
     return {

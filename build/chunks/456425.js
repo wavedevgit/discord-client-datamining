@@ -26,8 +26,8 @@ var i = n(627968),
     T = n(96511),
     S = n(160098),
     b = n(429604),
-    v = n(9905),
-    y = n(717607),
+    y = n(9905),
+    v = n(717607),
     j = n(457404),
     R = n(652215),
     O = n(985018),
@@ -139,12 +139,12 @@ let w = l.memo(function(e) {
                 })
             }
         }, [t, c, o]), m = null;
-        t.type === C.Uo.INCOMING_FRIEND_REQUESTS && null != t.other_user ? m = (0, i.jsx)(y.A, {
+        t.type === C.Uo.INCOMING_FRIEND_REQUESTS && null != t.other_user ? m = (0, i.jsx)(v.A, {
             userId: t.other_user.id
-        }) : t.type === C.Uo.INCOMING_GAME_FRIEND_REQUESTS && null != t.other_user ? m = (0, i.jsx)(y.A, {
+        }) : t.type === C.Uo.INCOMING_GAME_FRIEND_REQUESTS && null != t.other_user ? m = (0, i.jsx)(v.A, {
             userId: t.other_user.id,
             applicationId: t.applicationId
-        }) : (t.type === C.hW.FRIEND_REQUEST_ACCEPTED || t.type === C.hW.GAME_FRIEND_REQUEST_ACCEPTED) && null != t.other_user && (m = (0, i.jsx)(y.R, {
+        }) : (t.type === C.hW.FRIEND_REQUEST_ACCEPTED || t.type === C.hW.GAME_FRIEND_REQUEST_ACCEPTED) && null != t.other_user && (m = (0, i.jsx)(v.R, {
             userId: t.other_user.id
         }));
         let p = null != t.local_id,
@@ -174,7 +174,7 @@ let w = l.memo(function(e) {
                 onClick: A,
                 children: [c ? null : (0, i.jsx)("div", {
                     className: L.gy
-                }), (0, i.jsx)(v.J, {
+                }), (0, i.jsx)(y.J, {
                     item: t
                 }), (0, i.jsxs)("div", {
                     className: L.rf,

@@ -181,6 +181,7 @@ function O(e) {
     return [T.eA$.PENDING_INCOMING, T.eA$.PENDING_OUTGOING, T.eA$.FRIEND].includes(I) ? (0, i.jsx)(f.A, {
         isFocused: c,
         user: t,
+        analyticsLocations: p,
         onClick: C,
         children: e => (0, i.jsxs)("div", {
             className: S.a4,

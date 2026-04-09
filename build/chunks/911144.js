@@ -18,7 +18,7 @@ var i = n(627968),
     h = n(985018),
     _ = n(655708);
 
-function p(e) {
+function A(e) {
     let {
         originalVanityURLCode: t
     } = e;
@@ -37,7 +37,7 @@ function p(e) {
     return null
 }
 
-function A(e) {
+function p(e) {
     let {
         guild: t,
         vanityURLCode: n,
@@ -46,11 +46,11 @@ function A(e) {
         errorDetails: c
     } = e, u = t?.features.has(g.GuildFeatures.VANITY_URL) === !0, x = s.useCallback(() => {
         (0, o.OH)("")
-    }, []), p = s.useCallback(e => {
+    }, []), A = s.useCallback(e => {
         (0, o.OH)(e)
     }, []);
     if (null == n) return (0, i.jsx)(l.y$y, {});
-    let A = null != c ? (0, d.z)(c.code) : null;
+    let p = null != c ? (0, d.z)(c.code) : null;
     return (0, i.jsxs)(l.ZpM, {
         editable: !0,
         className: _.pU,
@@ -69,8 +69,8 @@ function A(e) {
             }) : null]
         }), (0, i.jsx)(m.A, {
             value: n,
-            onChange: p,
-            error: A,
+            onChange: A,
+            error: p,
             disabled: !u
         }), null != a && a.length > 0 ? (0, i.jsx)("div", {
             className: _.J9,
@@ -103,7 +103,7 @@ function f(e) {
         })
     }, [m, t]);
     return (0, i.jsxs)(i.Fragment, {
-        children: [(0, d.d)(t) ? (0, i.jsx)(A, {
+        children: [(0, d.d)(t) ? (0, i.jsx)(p, {
             guild: t,
             vanityURLCode: n,
             vanityURLUses: l,
@@ -114,7 +114,7 @@ function f(e) {
             children: (0, i.jsx)(c.u, {
                 onClick: h
             })
-        }), (0, i.jsx)(p, {
+        }), (0, i.jsx)(A, {
             originalVanityURLCode: a
         })]
     })

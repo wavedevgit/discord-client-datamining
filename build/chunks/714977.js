@@ -5,8 +5,8 @@ n.d(t, {
 });
 var i = n(627968),
     s = n(64700),
-    a = n(311907),
-    l = n(397927),
+    l = n(311907),
+    a = n(397927),
     r = n(684013),
     o = n(235986),
     d = n(499820),
@@ -89,16 +89,16 @@ class S extends s.PureComponent {
             shrink: 0,
             className: E.wx,
             children: [(0, i.jsxs)(o.A, {
-                children: [(0, i.jsx)(l.Heading, {
+                children: [(0, i.jsx)(a.Heading, {
                     variant: "heading-md/semibold",
                     className: E.qd,
                     children: x.intl.string(x.t["35G2Mq"])
                 }), (0, i.jsx)("div", {
                     className: E.Q7,
-                    children: (0, i.jsx)(l.K0, {
+                    children: (0, i.jsx)(a.K0, {
                         variant: "icon-only",
                         size: "md",
-                        icon: l.PGe,
+                        icon: a.PGe,
                         onClick: this.props.onClose,
                         "aria-label": x.intl.string(x.t.cpT0Cq)
                     })
@@ -109,21 +109,21 @@ class S extends s.PureComponent {
     renderTabBar() {
         let {
             selectedSection: e
-        } = this.state, t = c.A.isDeveloper ? (0, i.jsx)(l.VQ0.Item, {
+        } = this.state, t = c.A.isDeveloper ? (0, i.jsx)(a.VQ0.Item, {
             id: "DEVELOPER",
             className: E.YU,
             children: "Developer"
         }) : null;
-        return (0, i.jsxs)(l.VQ0, {
+        return (0, i.jsxs)(a.VQ0, {
             selectedItem: e,
             type: "top",
             className: E.__invalid_tabBar,
             onItemSelect: this.handleSelectSection,
-            children: [(0, i.jsx)(l.VQ0.Item, {
+            children: [(0, i.jsx)(a.VQ0.Item, {
                 id: "GENERAL",
                 className: E.YU,
                 children: x.intl.string(x.t["0FYxxw"])
-            }), (0, i.jsx)(l.VQ0.Item, {
+            }), (0, i.jsx)(a.VQ0.Item, {
                 id: "VOICE",
                 className: E.YU,
                 children: x.intl.string(x.t["3WeSiE"])
@@ -144,7 +144,7 @@ class S extends s.PureComponent {
             default:
                 e = this.renderGeneralSettings()
         }
-        return (0, i.jsx)(l.ChK, {
+        return (0, i.jsx)(a.ChK, {
             className: E.Qs,
             children: e
         }, t)
@@ -154,19 +154,19 @@ class S extends s.PureComponent {
             notificationPositionMode: e,
             shouldShowInviteNotification: t
         } = this.props, n = !_.A.isNotificationDisabled(g.KS.TextChat), s = e !== m.G6Q.DISABLED;
-        return (0, i.jsxs)(l.nVY, {
-            children: [(0, i.jsx)(l.D0$, {
+        return (0, i.jsxs)(a.nVY, {
+            children: [(0, i.jsx)(a.D0$, {
                 label: x.intl.string(x.t.IQv8Eo),
                 children: (0, i.jsx)(d.A, {
                     position: e,
                     onChange: this.handleChangeNotificationPositionMode
                 })
-            }), (0, i.jsx)(l.dOG, {
+            }), (0, i.jsx)(a.dOG, {
                 label: x.intl.string(x.t.Fy5kPp),
                 checked: n && s,
                 onChange: this.handleToggleTextChatNotifications,
                 disabled: !s
-            }), (0, i.jsx)(l.dOG, {
+            }), (0, i.jsx)(a.dOG, {
                 label: x.intl.string(x.t["f+c48/"]),
                 description: x.intl.string(x.t.W9DVVf),
                 checked: t,
@@ -180,9 +180,9 @@ class S extends s.PureComponent {
             displayNameMode: t,
             displayUserMode: n
         } = this.props;
-        return (0, i.jsxs)(l.BJc, {
+        return (0, i.jsxs)(a.BJc, {
             gap: 20,
-            children: [(0, i.jsx)(l.z6M, {
+            children: [(0, i.jsx)(a.z6M, {
                 label: x.intl.string(x.t.dnvZSg),
                 onChange: e => this.handleChangeAvatarSizeMode({
                     value: e
@@ -195,7 +195,7 @@ class S extends s.PureComponent {
                     name: x.intl.string(x.t.BKIKqx)
                 }],
                 value: e
-            }), (0, i.jsx)(l.z6M, {
+            }), (0, i.jsx)(a.z6M, {
                 label: x.intl.string(x.t.J0dpcB),
                 onChange: e => this.handleChangeDisplayNameMode({
                     value: e
@@ -211,7 +211,7 @@ class S extends s.PureComponent {
                     name: x.intl.string(x.t.ekjlPL)
                 }],
                 value: t
-            }), (0, i.jsx)(l.z6M, {
+            }), (0, i.jsx)(a.z6M, {
                 label: x.intl.string(x.t.swsWWC),
                 onChange: e => this.handleChangeDisplayUserMode({
                     value: e
@@ -230,7 +230,7 @@ class S extends s.PureComponent {
     renderDeveloperSettings() {
         return (0, i.jsx)("div", {
             className: y.SX,
-            children: (0, i.jsx)(l.l6P, {
+            children: (0, i.jsx)(a.l6P, {
                 label: "Crashes",
                 value: void 0,
                 options: [{
@@ -265,7 +265,7 @@ class S extends s.PureComponent {
         })
     }
     render() {
-        return (0, i.jsxs)(l.lGe, {
+        return (0, i.jsxs)(a.lGe, {
             "aria-label": x.intl.string(x.t["35G2Mq"]),
             className: E.kL,
             children: [this.renderHeader(), this.renderBody()]
@@ -279,11 +279,11 @@ function C(e) {
     } = e, {
         avatarSizeMode: n,
         displayNameMode: s,
-        displayUserMode: l,
+        displayUserMode: a,
         notificationPositionMode: r,
         textChatDisabled: o,
         shouldShowInviteNotification: d
-    } = (0, a.cf)([h.default, _.A], () => ({
+    } = (0, l.cf)([h.default, _.A], () => ({
         avatarSizeMode: h.default.getAvatarSizeMode(),
         displayNameMode: h.default.getDisplayNameMode(),
         displayUserMode: h.default.getDisplayUserMode(),
@@ -295,7 +295,7 @@ function C(e) {
         onClose: t,
         avatarSizeMode: n,
         displayNameMode: s,
-        displayUserMode: l,
+        displayUserMode: a,
         notificationPositionMode: r,
         textChatDisabled: o,
         shouldShowInviteNotification: d

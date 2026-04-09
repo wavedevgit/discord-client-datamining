@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var s = n(417597),
-    a = n(990078),
-    l = n(397927),
+    l = n(990078),
+    a = n(397927),
     r = n(370480),
     o = n(263063),
     d = n(773669),
@@ -24,7 +24,7 @@ function A(e) {
         textClassName: A,
         tooltipDelay: _
     } = e, g = (0, s.bG)([d.default], () => d.default.locale), m = (0, s.bG)([u.A], () => null != n ? u.A.getGuild(n) : null), x = (0, s.bG)([c.Ay], () => null != n ? c.Ay.getMember(n, t) : null), E = (0, r.An)(h.default.extractTimestamp(t), g), y = (0, r.An)(x?.joinedAt, g);
-    return null == m || null == x ? (0, i.jsx)(l.Text, {
+    return null == m || null == x ? (0, i.jsx)(a.Text, {
         variant: "text-sm/normal",
         className: A,
         children: E
@@ -32,17 +32,17 @@ function A(e) {
         className: f.y9,
         children: [(0, i.jsxs)("div", {
             className: f.R1,
-            children: [(0, i.jsx)(a.m, {
+            children: [(0, i.jsx)(l.m, {
                 text: p.intl.string(p.t.uvGmCx),
                 delay: _,
-                children: (0, i.jsx)(l.pVd, {
+                children: (0, i.jsx)(a.pVd, {
                     size: "custom",
                     width: 28,
                     height: 28,
                     color: "currentColor",
                     className: f.Mg
                 })
-            }), (0, i.jsx)(l.Text, {
+            }), (0, i.jsx)(a.Text, {
                 variant: "text-sm/normal",
                 className: A,
                 children: E
@@ -51,7 +51,7 @@ function A(e) {
             className: f.yF
         }), (0, i.jsxs)("div", {
             className: f.R1,
-            children: [(0, i.jsx)(a.m, {
+            children: [(0, i.jsx)(l.m, {
                 text: m.name,
                 delay: _,
                 children: (0, i.jsx)(o.Ay, {
@@ -59,7 +59,7 @@ function A(e) {
                     size: o.Ay.Sizes.SMOL,
                     className: f.$f
                 })
-            }), (0, i.jsx)(l.Text, {
+            }), (0, i.jsx)(a.Text, {
                 variant: "text-sm/normal",
                 className: A,
                 children: y

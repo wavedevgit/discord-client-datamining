@@ -5,8 +5,8 @@ n.d(t, {
 }), n(142703);
 var i = n(627968),
     s = n(64700),
-    a = n(503698),
-    l = n.n(a),
+    l = n(503698),
+    a = n.n(l),
     r = n(735438),
     o = n.n(r),
     d = n(258873),
@@ -105,7 +105,7 @@ class L extends s.PureComponent {
                 theme: T.NJ8.DARK,
                 children: s => (0, i.jsxs)(p.DUT, {
                     innerRef: this.contentDomRef,
-                    className: l()(s, O.kL),
+                    className: a()(s, O.kL),
                     onClick: e => e.stopPropagation(),
                     children: [(0, i.jsx)(g.Ay, {
                         expand: !0,
@@ -177,7 +177,7 @@ class k extends s.PureComponent {
                 pid: i
             }]
         }), setImmediate(() => window.addEventListener("click", R));
-        let a = (0, v.St)(e, S.Ue.Hook, {
+        let l = (0, v.St)(e, S.Ue.Hook, {
             extra: t
         });
         f.A.track(T.HAw.APP_CRASHED, {
@@ -185,7 +185,7 @@ class k extends s.PureComponent {
             extra: t,
             error_message: e.message,
             error_stack: e.stack,
-            sentry_issue_id: a,
+            sentry_issue_id: l,
             error_level: "fatal"
         }), w()
     }

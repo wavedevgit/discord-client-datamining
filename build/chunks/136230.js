@@ -24,10 +24,10 @@ function _(e) {
         className: l,
         onClick: a,
         disabled: m = !1
-    } = e, _ = s.useRef(null), p = s.useMemo(() => (0, d.ox)(t, h), [t]), A = null != p ? (0, i.jsx)(u.A, {
+    } = e, _ = s.useRef(null), A = s.useMemo(() => (0, d.ox)(t, h), [t]), p = null != A ? (0, i.jsx)(u.A, {
         enableTooltip: !1,
         className: x.Kk,
-        ...p
+        ...A
     }) : (0, i.jsx)(o.XGR, {
         size: "md",
         color: "currentColor",
@@ -45,8 +45,8 @@ function _(e) {
             children: [(0, i.jsx)("div", {
                 ref: _,
                 className: x.VH,
-                children: A
-            }), null != p ? (0, i.jsx)(c.L, {
+                children: p
+            }), null != A ? (0, i.jsx)(c.L, {
                 className: x.Sl
             }) : null]
         })

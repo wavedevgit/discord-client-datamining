@@ -36,8 +36,8 @@ let p = l.memo(function(e) {
         return `${i.join(", ")}${i.length<t.length?", ...":""}`
     }(t), S = (0, _.A)(t), {
         mentionCount: b,
-        isMentionLowImportance: v,
-        unread: y
+        isMentionLowImportance: y,
+        unread: v
     } = (0, s.cf)([c.default], () => ({
         mentionCount: I.map(e => c.default.getMentionCount(e)).reduce((e, t) => e + t, 0),
         isMentionLowImportance: I.every(e => c.default.getIsMentionLowImportance(e)),
@@ -54,18 +54,18 @@ let p = l.memo(function(e) {
                 folderId: g,
                 folderName: f,
                 folderColor: x,
-                unread: y || b > 0
+                unread: v || b > 0
             })
         })
-    }, [g, f, x, y, b]);
+    }, [g, f, x, v, b]);
     return (0, i.jsx)(A.A, {
         ...p,
         folderNode: t,
         expanded: N,
         selected: null != C && I.includes(C),
         mentionCount: b,
-        isMentionLowImportance: v,
-        unread: y,
+        isMentionLowImportance: y,
+        unread: v,
         mediaState: S,
         defaultFolderName: T,
         onExpandCollapse: j,

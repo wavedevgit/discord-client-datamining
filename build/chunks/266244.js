@@ -5,8 +5,8 @@ n.d(t, {
 });
 var i = n(627968),
     s = n(64700),
-    a = n(311907),
-    l = n(828100),
+    l = n(311907),
+    a = n(828100),
     r = n(355205),
     o = n(793322),
     d = n(366811),
@@ -17,7 +17,7 @@ var i = n(627968),
     f = n(358640);
 let A = () => (0, o.WU)("DM_SEARCH"),
     _ = s.memo(function() {
-        let e = (0, a.bG)([c.default], () => c.default.isLocked((0, u.getPID)()) ? "true" : "false"),
+        let e = (0, l.bG)([c.default], () => c.default.isLocked((0, u.getPID)()) ? "true" : "false"),
             t = (0, d.A)(e => {
                 let {
                     channelId: t
@@ -34,7 +34,7 @@ let A = () => (0, o.WU)("DM_SEARCH"),
                     onClick: A,
                     children: p.intl.string(p.t.LzcpeZ)
                 })
-            }), (0, i.jsx)(l.A, {
+            }), (0, i.jsx)(a.A, {
                 padding: 8,
                 theme: h.NJ8.DARK,
                 version: e,

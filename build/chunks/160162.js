@@ -5,8 +5,8 @@ n.d(t, {
 });
 var i = n(627968),
     s = n(64700),
-    a = n(873263),
-    l = n(686956),
+    l = n(873263),
+    a = n(686956),
     r = n(956793),
     o = n(549711),
     d = n(463347),
@@ -40,7 +40,7 @@ class h extends s.Component {
                 messageId: i
             }
         }(e);
-        (0, d.nn)(t) && (0, d.ts)(n) ? (l.A.selectGuild(t), r.default.selectChannel({
+        (0, d.nn)(t) && (0, d.ts)(n) ? (a.A.selectGuild(t), r.default.selectChannel({
             guildId: t,
             channelId: n,
             messageId: i
@@ -50,7 +50,7 @@ class h extends s.Component {
         return null
     }
 }
-let p = () => (0, i.jsxs)(a.dO, {
+let p = () => (0, i.jsxs)(l.dO, {
     children: [(0, i.jsx)(o.A, {
         path: u.BVt.CHANNEL(d.pv.guildId(), d.pv.channelId({
             optional: !0

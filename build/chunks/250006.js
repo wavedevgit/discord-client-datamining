@@ -1,7 +1,7 @@
 /** chunk id: 250006 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => A
+    A: () => p
 });
 var i = n(627968),
     s = n(64700),
@@ -17,13 +17,13 @@ var i = n(627968),
     x = n(923121),
     h = n(539916),
     _ = n(985018),
-    p = n(801990);
+    A = n(801990);
 
-function A(e) {
+function p(e) {
     let {
         connection: t,
         index: l,
-        onDragStart: A,
+        onDragStart: p,
         onDragReset: f,
         onDragComplete: j,
         draggingId: N
@@ -36,7 +36,7 @@ function A(e) {
         type: "ONBOARDING_CONNECTION_CARD",
         index: l,
         optionId: t.id,
-        onDragStart: () => A(t.id),
+        onDragStart: () => p(t.id),
         onDragComplete: e => j(e),
         onDragReset: () => f()
     }), v = s.useCallback(() => {
@@ -74,9 +74,9 @@ function A(e) {
         }
     })(t, E, O), [t, E, O]);
     return (0, i.jsxs)("div", {
-        className: r()(p.Nr, {
-            [p.A]: null != I && l < I,
-            [p.Ze]: null != I && l > I
+        className: r()(A.Nr, {
+            [A.A]: null != I && l < I,
+            [A.Ze]: null != I && l > I
         }),
         onMouseEnter: () => b(!0),
         onMouseLeave: () => b(!1),
@@ -84,15 +84,15 @@ function A(e) {
             C(T(e))
         },
         children: [(0, i.jsx)("div", {
-            className: p.BU,
+            className: A.BU,
             children: (0, i.jsx)(d.WP0, {
                 size: "sm",
                 color: "currentColor"
             })
         }), (0, i.jsxs)("div", {
-            className: p.hu,
+            className: A.hu,
             children: [(0, i.jsx)("div", {
-                className: p.Kk,
+                className: A.Kk,
                 children: null != G.icon ? (0, i.jsx)("img", {
                     src: G.icon,
                     alt: "",
@@ -105,7 +105,7 @@ function A(e) {
                     color: "currentColor"
                 })
             }), (0, i.jsxs)("div", {
-                className: p.P_,
+                className: A.P_,
                 children: [(0, i.jsx)(d.Text, {
                     variant: "text-md/medium",
                     color: "text-strong",
@@ -117,11 +117,11 @@ function A(e) {
                 })]
             })]
         }), (0, i.jsxs)("div", {
-            className: p.o1,
+            className: A.o1,
             children: [(0, i.jsx)(o.m, {
                 text: _.intl.string(_.t.bt75uw),
                 children: (0, i.jsx)(d.DUT, {
-                    className: p.r9,
+                    className: A.r9,
                     onClick: S,
                     "aria-label": _.intl.string(_.t.bt75uw),
                     children: (0, i.jsx)(d.R2l, {
@@ -132,7 +132,7 @@ function A(e) {
             }), (0, i.jsx)(o.m, {
                 text: _.intl.string(_.t.N86XcP),
                 children: (0, i.jsx)(d.DUT, {
-                    className: p.DT,
+                    className: A.DT,
                     onClick: v,
                     "aria-label": _.intl.string(_.t.N86XcP),
                     children: (0, i.jsx)(d.ucK, {

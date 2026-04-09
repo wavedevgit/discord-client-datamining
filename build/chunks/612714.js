@@ -74,7 +74,7 @@ function x(e) {
         onClick: E
     });
     else {
-        let e = (0, c.B)(x);
+        let e = (0, c.BE)(x);
         t = (0, i.jsxs)(l.ButtonGroup, {
             size: "sm",
             children: [(0, i.jsx)(l.Button, {

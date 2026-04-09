@@ -13,8 +13,8 @@ var r = t(311907),
     c = t(468389),
     o = t(793574),
     A = t(810845),
-    h = t(854182),
-    f = t(734337),
+    f = t(854182),
+    h = t(734337),
     g = t(465424),
     x = t(855187),
     j = t(479335),
@@ -57,10 +57,10 @@ function Z(e) {
         context: u,
         onSelect: c,
         onInteraction: o
-    } = e, A = (0, r.bG)([y.default], () => y.default.getCurrentUser()?.id === n.id, [n.id]), h = (0, L.A)({
+    } = e, A = (0, r.bG)([y.default], () => y.default.getCurrentUser()?.id === n.id, [n.id]), f = (0, L.A)({
         userId: n.id,
         guildId: null
-    }), f = (0, R.A)({
+    }), h = (0, R.A)({
         user: n,
         context: u
     }), g = (0, w.A)(n.id), x = (0, k.g)(t.id, "DMUserContextMenu"), j = (0, k.A)(n, x), I = (0, b.A)(t), E = (0, p.A)({
@@ -89,8 +89,8 @@ function Z(e) {
             children: !O && G
         }), (0, i.jsxs)(l.rXV, {
             children: [!O && (0, i.jsxs)(i.Fragment, {
-                children: [f, !X && j, g]
-            }), (0, _.A)(t.id) && h]
+                children: [h, !X && j, g]
+            }), (0, _.A)(t.id) && f]
         }), (!O || (0, _.A)(t.id)) && (0, i.jsx)(l.rXV, {
             children: a && I
         }), !A && (0, i.jsx)(l.rXV, {
@@ -139,7 +139,7 @@ function q(e) {
         user: n
     }), eA = (0, F.A)({
         user: n
-    }), eh = (0, W.A)(n.id), ef = (0, j.u)({
+    }), ef = (0, W.A)(n.id), eh = (0, j.u)({
         userId: n.id,
         channelId: t.id,
         guildId: t.getGuildId()
@@ -155,7 +155,7 @@ function q(e) {
     }), eb = (0, p.A)({
         id: t.id,
         label: J.intl.string(J.t.gFHI3k)
-    }), ep = (0, m.A)(t), eI = (0, f.A)(n.id), ev = (0, h.A)(t.id), eC = (0, E.A)(n), eE = (0, x.A)(n.id), ey = (0, A.A)(t.id, n.id), eT = (0, G.A)({
+    }), ep = (0, m.A)(t), eI = (0, h.A)(n.id), ev = (0, f.A)(t.id), eC = (0, E.A)(n), eE = (0, x.A)(n.id), ey = (0, A.A)(t.id, n.id), eT = (0, G.A)({
         commandType: u.kc.USER,
         commandTargetId: n.id,
         channel: t,
@@ -187,7 +187,7 @@ function q(e) {
             }), (0, i.jsx)(l.rXV, {
                 children: C && ed
             }), (0, i.jsxs)(l.rXV, {
-                children: [eT, o && eE, o && eh, C && ef, o && eg, C && el, ec, eo, eA, C && ej, C && ex]
+                children: [eT, o && eE, o && ef, C && eh, o && eg, C && el, ec, eo, eA, C && ej, C && ex]
             }), (0, i.jsx)(l.rXV, {
                 children: s && e_
             }), I && (0, i.jsxs)(l.rXV, {

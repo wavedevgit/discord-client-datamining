@@ -1,102 +1,102 @@
 /** chunk id: 230635 params = (module,exports,require) **/
-l.d(t, {
-    W: () => g
+t.d(n, {
+    W: () => f
 });
-var a = l(627968);
-l(64700);
-var n = l(311907),
-    r = l(397927),
-    i = l(688810),
-    o = l(601255),
-    s = l(162232),
-    d = l(562819),
-    c = l(919395),
-    u = l(71393),
-    p = l(287809),
-    m = l(84540),
-    h = l(930349),
-    x = l(985018),
-    b = l(174501);
+var i = t(627968);
+t(64700);
+var a = t(311907),
+    l = t(397927),
+    r = t(688810),
+    s = t(601255),
+    d = t(162232),
+    o = t(562819),
+    c = t(919395),
+    u = t(71393),
+    _ = t(287809),
+    p = t(84540),
+    A = t(930349),
+    g = t(985018),
+    m = t(174501);
 
-function y(e) {
+function h(e) {
     let {
-        user: t,
-        guildId: l,
-        avatarDecorationOverride: n,
-        isEmpty: i
+        user: n,
+        guildId: t,
+        avatarDecorationOverride: a,
+        isEmpty: r
     } = e;
-    return (0, a.jsx)(s.A, {
-        className: i ? b.y : void 0,
-        user: t,
-        guildId: l,
-        avatarSize: r._3J.SIZE_56,
+    return (0, i.jsx)(d.A, {
+        className: r ? m.y : void 0,
+        user: n,
+        guildId: t,
+        avatarSize: l._3J.SIZE_56,
         "aria-hidden": !0,
-        avatarDecorationOverride: n
+        avatarDecorationOverride: a
+    })
+}
+
+function I(e) {
+    let {
+        user: n,
+        guildId: t
+    } = e, {
+        analyticsLocations: l
+    } = (0, r.Ay)(), d = (0, a.bG)([u.A], () => null != t ? u.A.getGuild(t) : null), _ = null != t, m = (0, c.a4)({
+        user: n
+    }), I = (0, c.a4)({
+        user: n,
+        guildId: t ?? void 0
+    }), {
+        pendingAvatarDecoration: f
+    } = (0, c.CP)(t ?? void 0), x = (0, s.A)((0, c.lw)({
+        userValue: m,
+        guildValue: I,
+        pendingValue: f,
+        guildId: t
+    })), v = void 0 !== f, b = () => (0, o.L)({
+        analyticsLocations: l,
+        guild: d ?? void 0,
+        stackingBehavior: "stack"
+    });
+    if (null == x) return (0, i.jsx)(A.kL, {
+        variant: "square",
+        onClick: b,
+        accessibleLabel: g.intl.string(g.t.HykynS),
+        children: (0, i.jsx)(h, {
+            isEmpty: !0,
+            user: n,
+            guildId: t,
+            avatarDecorationOverride: v ? x : void 0
+        })
+    });
+    let E = _ && null != m,
+        j = (v ? null != f : null != I) ? {
+            onClick: () => (0, p.p)({
+                guildId: t ?? void 0,
+                avatarDecoration: null
+            }),
+            type: E ? "reset" : "remove",
+            accessibleLabel: g.intl.string(E ? g.t.pJsnPf : g.t["2U4Bga"])
+        } : void 0;
+    return (0, i.jsx)(A.NW, {
+        variant: "square",
+        onClick: b,
+        accessibleLabel: g.intl.string(g.t.HykynS),
+        deleteButtonConfig: j,
+        children: (0, i.jsx)(h, {
+            user: n,
+            guildId: t,
+            avatarDecorationOverride: v ? x : void 0
+        })
     })
 }
 
 function f(e) {
     let {
+        guildId: n
+    } = e, t = (0, a.bG)([_.default], () => _.default.getCurrentUser());
+    return null == t ? null : (0, i.jsx)(I, {
         user: t,
-        guildId: l
-    } = e, {
-        analyticsLocations: r
-    } = (0, i.Ay)(), s = (0, n.bG)([u.A], () => null != l ? u.A.getGuild(l) : null), p = null != l, b = (0, c.a4)({
-        user: t
-    }), f = (0, c.a4)({
-        user: t,
-        guildId: l ?? void 0
-    }), {
-        pendingAvatarDecoration: g
-    } = (0, c.CP)(l ?? void 0), v = (0, o.A)((0, c.lw)({
-        userValue: b,
-        guildValue: f,
-        pendingValue: g,
-        guildId: l
-    })), _ = void 0 !== g, E = () => (0, d.L)({
-        analyticsLocations: r,
-        guild: s ?? void 0,
-        stackingBehavior: "stack"
-    });
-    if (null == v) return (0, a.jsx)(h.kL, {
-        variant: "square",
-        onClick: E,
-        accessibleLabel: x.intl.string(x.t.HykynS),
-        children: (0, a.jsx)(y, {
-            isEmpty: !0,
-            user: t,
-            guildId: l,
-            avatarDecorationOverride: _ ? v : void 0
-        })
-    });
-    let C = p && null != b,
-        j = (_ ? null != g : null != f) ? {
-            onClick: () => (0, m.p)({
-                guildId: l ?? void 0,
-                avatarDecoration: null
-            }),
-            type: C ? "reset" : "remove",
-            accessibleLabel: x.intl.string(C ? x.t.pJsnPf : x.t["2U4Bga"])
-        } : void 0;
-    return (0, a.jsx)(h.NW, {
-        variant: "square",
-        onClick: E,
-        accessibleLabel: x.intl.string(x.t.HykynS),
-        deleteButtonConfig: j,
-        children: (0, a.jsx)(y, {
-            user: t,
-            guildId: l,
-            avatarDecorationOverride: _ ? v : void 0
-        })
-    })
-}
-
-function g(e) {
-    let {
-        guildId: t
-    } = e, l = (0, n.bG)([p.default], () => p.default.getCurrentUser());
-    return null == l ? null : (0, a.jsx)(f, {
-        user: l,
-        guildId: t
+        guildId: n
     })
 }

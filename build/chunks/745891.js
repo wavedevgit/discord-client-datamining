@@ -5,8 +5,8 @@ n.d(t, {
 });
 var i = n(627968),
     s = n(64700),
-    a = n(311907),
-    l = n(397927),
+    l = n(311907),
+    a = n(397927),
     r = n(684013),
     o = n(915089),
     d = n(256415),
@@ -32,7 +32,7 @@ class g extends s.PureComponent {
             className: f.kL,
             children: (0, i.jsx)("div", {
                 className: f.xJ,
-                children: (0, i.jsx)(l.Apm, {
+                children: (0, i.jsx)(a.Apm, {
                     label: p.intl.string(p.t.OVovCb),
                     mini: !0,
                     initialValue: this.initialValue,
@@ -52,6 +52,6 @@ class g extends s.PureComponent {
         })
     }
 }
-let m = a.Ay.connectStores([d.default], () => ({
+let m = l.Ay.connectStores([d.default], () => ({
     opacity: d.default.getTextWidgetOpacity()
 }))(g)

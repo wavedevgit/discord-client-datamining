@@ -34,13 +34,13 @@ var l = n(627968),
     j = n(262295),
     b = n(620982),
     y = n(343328),
-    U = n(209581),
-    L = n(963027),
+    L = n(209581),
+    U = n(963027),
     D = n(571694),
     G = n(47167),
     O = n(432222),
-    w = n(449582),
-    Q = n(351952),
+    Q = n(449582),
+    w = n(351952),
     P = n(88686),
     F = n(214881),
     V = n(880714),
@@ -80,7 +80,7 @@ let eo = es.Ay.getEnableHardwareAcceleration() ? g.JsQ : g.euF,
             reducedClickTarget: i = !1,
             visibleElementRef: a,
             ...o
-        } = e, u = (0, Q.K)(t);
+        } = e, u = (0, w.K)(t);
         return (0, l.jsx)(g.DUT, {
             className: r()(ea.b, {
                 [ea.DQ]: null != t,
@@ -119,7 +119,7 @@ let eo = es.Ay.getEnableHardwareAcceleration() ? g.JsQ : g.euF,
             showNameplate: s
         } = e, {
             enabled: i
-        } = U.A.useConfig({
+        } = L.A.useConfig({
             location: "Wave CTA"
         });
         return i ? (0, l.jsx)("div", {
@@ -206,7 +206,7 @@ let ef = e => {
     } = e, {
         width: M,
         ref: b
-    } = (0, S.Ay)(), y = s.useRef(null), U = p ?? y;
+    } = (0, S.Ay)(), y = s.useRef(null), L = p ?? y;
     return (0, l.jsx)(V.A, {
         className: r()(ea.Ix, {
             [ea.Ij]: _.Fr
@@ -219,7 +219,7 @@ let ef = e => {
         },
         "aria-posinset": N,
         "aria-setsize": T,
-        ref: U,
+        ref: L,
         children: (0, l.jsxs)(g.HG8, {
             as: "div",
             selected: n,
@@ -227,7 +227,7 @@ let ef = e => {
                 [ea.Q2]: n
             }),
             children: [C && (0, l.jsx)(eE, {
-                eventTargetRef: U,
+                eventTargetRef: L,
                 isNitro: h,
                 contentWidth: M,
                 hoverGradientStart: x,
@@ -265,8 +265,8 @@ function e_(e) {
         applicationStream: p,
         voiceChannel: S,
         isTyping: I,
-        status: w,
-        isMobile: Q,
+        status: Q,
+        isMobile: w,
         isVR: $,
         nameplate: J,
         ref: ee,
@@ -290,15 +290,15 @@ function e_(e) {
         userId: a?.id,
         size: g._3J.SIZE_32,
         animateOnHover: !(i || es || ef || eN)
-    }), [ey, eU] = s.useState({
+    }), [ey, eL] = s.useState({
         maskImage: "none"
-    }), eL = s.useRef(null), eD = t.isMultiUserDM(), eG = t.isSystemDM(), eO = !eD && !eG && t.type === ei.rbe.DM, ew = eO && a?.primaryGuild != null, eQ = (0, N.bG)([et.Ay], () => et.Ay.isChannelMuted(t.getGuildId(), t.id)), {
+    }), eU = s.useRef(null), eD = t.isMultiUserDM(), eG = t.isSystemDM(), eO = !eD && !eG && t.type === ei.rbe.DM, eQ = eO && a?.primaryGuild != null, ew = (0, N.bG)([et.Ay], () => et.Ay.isChannelMuted(t.getGuildId(), t.id)), {
         ignored: eP,
         blocked: eF
     } = (0, N.cf)([Z.A], () => ({
         ignored: Z.A.isIgnored(t.getRecipientId()),
         blocked: Z.A.isBlocked(t.getRecipientId())
-    })), eV = eO && eP, ek = eO && eF, eB = (eQ || eV || ek) && !(i || es), eq = (0, N.bG)([X.Ay], () => X.Ay.getMentionCount(t.id) > 0), ez = (0, G.Ay)(t), eH = s.useRef(null), eW = null != J && (i || es || eN), eK = () => {
+    })), eV = eO && eP, ek = eO && eF, eB = (ew || eV || ek) && !(i || es), eq = (0, N.bG)([X.Ay], () => X.Ay.getMentionCount(t.id) > 0), ez = (0, G.Ay)(t), eH = s.useRef(null), eW = null != J && (i || es || eN), eK = () => {
         eE(!0)
     }, eY = () => {
         eE(!1)
@@ -373,7 +373,7 @@ function e_(e) {
         effectDisplayType: es || i || eN ? B.G.ANIMATED : B.G.PLAIN,
         loop: es,
         boldFontOpacity: .9
-    }), e3 = ew ? (0, l.jsxs)(l.Fragment, {
+    }), e3 = eQ ? (0, l.jsxs)(l.Fragment, {
         children: [e7, (0, l.jsx)(K.Ay, {
             primaryGuild: a?.primaryGuild,
             userId: a?.id,
@@ -388,30 +388,30 @@ function e_(e) {
     }) && a?.displayNameStyles != null, {
         isIncomingCall: e4,
         isOngoingCall: e5
-    } = (0, b.A)(t.id), te = [(0, L.Ay)({
+    } = (0, b.A)(t.id), te = [(0, U.Ay)({
         channel: t,
         unread: eq,
         isIncomingCall: e4,
         isOngoingCall: e5
-    }), (0, L.r2)({
+    }), (0, U.r2)({
         channel: t,
-        muted: eQ,
-        userStatus: w
+        muted: ew,
+        userStatus: Q
     })].filter(Boolean).join(", "), tt = (0, N.bG)([X.Ay], () => X.Ay.lastMessageId(t.id)), {
         waveShouldShow: tn,
         wavePressed: tl
     } = (0, O.A)(t, tt), {
         showClose: ts
-    } = U.A.useConfig({
+    } = L.A.useConfig({
         location: "PrivateChannel"
     }), ti = (0, f.A)(() => {
-        let e = eL.current?.getBoundingClientRect() ?? null,
+        let e = eU.current?.getBoundingClientRect() ?? null,
             t = e6.current?.getBoundingClientRect() ?? null;
-        if (null == t || null == e || e.width + 44 - t.width <= 0) return void eU({
+        if (null == t || null == e || e.width + 44 - t.width <= 0) return void eL({
             maskImage: "none"
         });
         let n = t.width - 16;
-        eU({
+        eL({
             maskImage: `linear-gradient(to right, rgba(0, 0, 0, 1) 0, rgba(0, 0, 0, 1) ${n}px, rgba(0, 0, 0, 0))`
         })
     });
@@ -459,7 +459,7 @@ function e_(e) {
                         placement: P.u.CHANNEL
                     }), (0, l.jsx)("div", {
                         className: ea.lU,
-                        ref: eL,
+                        ref: eU,
                         children: e3
                     }), (0, l.jsx)(u.N_, {
                         style: ey,
@@ -478,25 +478,25 @@ function e_(e) {
                                         recipients: t.recipients,
                                         size: e,
                                         isTyping: I,
-                                        status: w
+                                        status: Q
                                     });
                                     else return (0, l.jsx)(eo, {
                                         ...eb,
                                         src: (0, D.Y)(t),
                                         "aria-hidden": !0,
                                         size: e,
-                                        status: I ? ei.clD.ONLINE : w,
+                                        status: I ? ei.clD.ONLINE : Q,
                                         isTyping: I
                                     });
                                 o()(null != a, "PrivateChannel.renderAvatar: Invalid prop configuration - no user or channel");
                                 let n = null;
-                                return a.isSystemUser() || (n = (0, x.A)(_) ? ei.clD.STREAMING : w), (0, l.jsx)(eo, {
+                                return a.isSystemUser() || (n = (0, x.A)(_) ? ei.clD.STREAMING : Q), (0, l.jsx)(eo, {
                                     ...eb,
                                     size: g._3J.SIZE_32,
                                     src: eM,
                                     avatarDecoration: ej,
                                     status: n,
-                                    isMobile: Q,
+                                    isMobile: w,
                                     isVR: $,
                                     isTyping: I,
                                     "aria-label": a.username,
@@ -515,7 +515,7 @@ function e_(e) {
                                 })
                             }) : (0, v.A)({
                                 activities: _,
-                                status: w,
+                                status: Q,
                                 applicationStream: p,
                                 voiceChannel: S
                             }) ? (0, l.jsx)(R.A, {
@@ -588,7 +588,7 @@ let eN = 21552 == n.j ? e => {
         voiceChannel: o
     } = (0, I.A)({
         userId: r
-    }), u = (0, w.r)({
+    }), u = (0, Q.r)({
         user: i
     }), c = (0, N.bG)([en.default, ee.A], () => t.isMultiUserDM() ? el.default.keys(ee.A.getTypingUsers(t.id)).some(e => e !== en.default.getCurrentUser()?.id) : null != i && ee.A.isTyping(t.id, t.getRecipientId()), [t, i]);
     return t.isMultiUserDM() ? (0, l.jsx)(e_, {

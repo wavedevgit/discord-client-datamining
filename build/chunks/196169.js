@@ -18,8 +18,8 @@ var s = n(582754),
     x = n(397914),
     h = n(480975),
     _ = n(507910),
-    p = n(763859),
-    A = n(394854);
+    A = n(763859),
+    p = n(394854);
 
 function f(e) {
     return (0, s.Mw)(e) ? d.c8 : d.kK
@@ -147,11 +147,11 @@ function C() {
             children: o.intl.string(o.t.qsKRUQ)
         }), (0, i.jsx)("img", {
             className: d.Zf,
-            src: A,
+            src: p,
             alt: o.intl.string(o.t.yTPprb)
         }), (0, i.jsx)("img", {
             className: d.tj,
-            src: p,
+            src: A,
             alt: o.intl.string(o.t["+gd9QQ"])
         })]
     })

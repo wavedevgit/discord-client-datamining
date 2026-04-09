@@ -32,7 +32,7 @@ class A extends a.A {
                 (0, s.p)({
                     guildId: i,
                     avatar: t
-                }), (0, c.WU)(t);
+                }), (0, c.WU)("set");
                 return
             }
             null != A && (0, l.G)({

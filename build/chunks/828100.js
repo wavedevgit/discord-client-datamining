@@ -26,8 +26,8 @@ var i = n(627968),
     T = n(380335),
     S = n(309199),
     b = n(157550),
-    v = n(97469),
-    y = n(734057),
+    y = n(97469),
+    v = n(734057),
     j = n(290863),
     R = n(645959),
     O = n(701363),
@@ -373,19 +373,19 @@ let P = e => {
         theme: s,
         children: a,
         listScrollerRef: c
-    } = e, h = l.Children.count(a), m = y.A.getMutablePrivateChannels(), g = (0, S.uX)(m), f = (0, d.yK)([R.default, T.A, b.A], () => {
+    } = e, h = l.Children.count(a), m = v.A.getMutablePrivateChannels(), g = (0, S.uX)(m), f = (0, d.yK)([R.default, T.A, b.A], () => {
         let e = R.default.getPrivateChannelIds();
         return (0, S.eh)(e, [T.A, b.A])
     });
     (0, C.P)(I._);
     let {
         analyticsLocations: x
-    } = (0, p.Ay)(_.A.CONTACTS_LIST), N = (0, v.NC)(), {
+    } = (0, p.Ay)(_.A.CONTACTS_LIST), N = (0, y.NC)(), {
         keyboardModeEnabled: j,
         version: O
-    } = (0, d.cf)([A.A, y.A], () => ({
+    } = (0, d.cf)([A.A, v.A], () => ({
         keyboardModeEnabled: A.A.keyboardModeEnabled,
-        version: null != n ? `${n}:${y.A.getPrivateChannelsVersion()}` : y.A.getPrivateChannelsVersion()
+        version: null != n ? `${n}:${v.A.getPrivateChannelsVersion()}` : v.A.getPrivateChannelsVersion()
     })), L = l.useRef(null), M = c ?? L, D = l.useCallback(e => {
         let t = M.current,
             n = document.querySelector(e);

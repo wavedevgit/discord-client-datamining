@@ -27,41 +27,41 @@ var l = n(503698),
     T = n(746080),
     S = n(634654),
     b = n(985018),
-    v = n(216338);
+    y = n(216338);
 
-function y(e) {
+function v(e) {
     let {
         guildId: t,
         selected: n,
         handleClick: l
-    } = e, c = (0, g.w)(t), _ = (0, a.bG)([E.A], () => E.A.getGuild(t)), T = _?.features.has(N.GuildFeatures.ROLE_SUBSCRIPTIONS_AVAILABLE_FOR_PURCHASE) === !0, y = "false" === o.w.get(S.bJ, "false"), j = (0, a.bG)([u.A], () => u.A.useReducedMotion);
+    } = e, c = (0, g.w)(t), _ = (0, a.bG)([E.A], () => E.A.getGuild(t)), T = _?.features.has(N.GuildFeatures.ROLE_SUBSCRIPTIONS_AVAILABLE_FOR_PURCHASE) === !0, v = "false" === o.w.get(S.bJ, "false"), j = (0, a.bG)([u.A], () => u.A.useReducedMotion);
     return (0, i.jsx)(C.G, {
         id: `shop-${t}`,
-        className: s()(v.A2, {
-            [v.wH]: n,
-            [v.ST]: y
+        className: s()(y.A2, {
+            [y.wH]: n,
+            [y.ST]: v
         }),
-        innerClassName: v.LE,
+        innerClassName: y.LE,
         renderIcon: e => (0, i.jsx)(m.h, {
             width: 20,
             height: 20,
-            className: s()([e, v.sV])
+            className: s()([e, y.sV])
         }),
         text: b.intl.string(b.t.al5EXL),
         selected: n,
         onClick: l,
         trailing: (0, i.jsxs)("div", {
-            className: v.ai,
+            className: y.ai,
             children: [j ? (0, i.jsx)(d.LpS, {
                 color: d.LU0.unsafe_rawColors.BRAND_260.css,
                 text: b.intl.string(b.t.y2b7CA),
-                className: v.Ad
+                className: y.Ad
             }) : (0, i.jsx)("img", {
                 src: (0, A.n)("server_products/storefront/money.gif"),
-                className: v.TG,
+                className: y.TG,
                 alt: ""
             }), n && (0, i.jsx)(d.DUT, {
-                className: v.b,
+                className: y.b,
                 onClick: e => {
                     e.stopPropagation(), (0, p.Dr)(r.M.SERVER_SHOP_PHANTOM_PREVIEW), I.default.track(N.HAw.GUILD_SHOP_PREVIEW_CLICK, {
                         ...(0, h.H$)(t),
@@ -85,7 +85,7 @@ function j(e) {
     } = e, s = (0, _.P)(t), a = () => {
         o.w.set(S.bJ, "true"), (0, f.pX)(N.BVt.CHANNEL(t.id, T.VV.GUILD_SHOP))
     };
-    return s ? (0, i.jsx)(y, {
+    return s ? (0, i.jsx)(v, {
         guildId: t.id,
         selected: l,
         handleClick: a

@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var s = n(684013),
-    a = n(742984),
-    l = n(833551),
+    l = n(742984),
+    a = n(833551),
     r = n(976860),
     o = n(400492),
     d = n(845618),
@@ -25,7 +25,7 @@ function m(e, t, n, m) {
         icon: x,
         title: E,
         body: y
-    } = (0, a.TB)(e, t, n), {
+    } = (0, l.TB)(e, t, n), {
         trackView: v,
         trackClick: S
     } = (0, f.Y)(_.KS.TextChat, {
@@ -52,7 +52,7 @@ function m(e, t, n, m) {
             m && (0, o.Ak)(d.cH, d.pD), v()
         },
         onNotificationClick: () => {
-            if (l.default.isOverlayOOPEnabledForPid((0, p.getPID)())) {
+            if (a.default.isOverlayOOPEnabledForPid((0, p.getPID)())) {
                 let n = (0, p.getPID)();
                 c.default.isInstanceLocked() ? (S("unlock"), s.A.setInputLocked(!1, n)) : (S("jump"), (0, r.pX)(A.BVt.CHANNEL(e.guild_id, e.id, t.id)), u.isPlatformEmbedded && h.Ay.focus())
             } else(0, r.pX)(A.BVt.CHANNEL(e.guild_id, e.id)), S("jump"), c.default.isInstanceLocked() && s.A.setInstanceLocked(!1)

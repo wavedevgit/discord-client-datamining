@@ -159,10 +159,10 @@ let A = e => {
         let {
             channel: t,
             guild: l
-        } = e, s = (0, d.gU)(t, l);
-        return null == t || null == s ? null : (0, n.jsxs)("div", {
+        } = e, s = (0, u.Ay)(t), i = (0, d.gU)(t, l);
+        return null == t || null == i ? null : (0, n.jsxs)("div", {
             className: j.channel,
-            children: [(0, n.jsx)(s, {
+            children: [(0, n.jsx)(i, {
                 className: j.channelIcon,
                 color: "currentColor",
                 size: "custom",
@@ -170,11 +170,11 @@ let A = e => {
                 height: 20
             }), (0, n.jsx)("span", {
                 className: j.channelName,
-                children: t.name
+                children: s
             })]
         })
     },
-    S = e => {
+    y = e => {
         let {
             children: t,
             className: l,
@@ -186,7 +186,7 @@ let A = e => {
             children: t
         })
     },
-    y = e => {
+    S = e => {
         let {
             guild: t
         } = e, [l, i] = s.useState(!1), r = N.Ay.getGuildSplashURL({
@@ -232,5 +232,5 @@ let A = e => {
             })
         })
     };
-S.Header = A, S.Body = E, S.Icon = I, S.Info = C, S.Data = f, S.Channel = T, S.GuildSplash = y, S.GuildName = _, S.GuildTemplateName = k, A.displayName = "InviteButton.Header", E.displayName = "InviteButton.Body", I.displayName = "InviteButton.Icon", C.displayName = "InviteButton.Info", f.displayName = "InviteButton.Data", T.displayName = "InviteButton.Channel", y.displayName = "InviteButton.GuildSplash", _.displayName = "InviteButton.GuildName", k.displayName = "InviteButton.GuildTemplateName";
-let R = S
+y.Header = A, y.Body = E, y.Icon = I, y.Info = C, y.Data = f, y.Channel = T, y.GuildSplash = S, y.GuildName = _, y.GuildTemplateName = k, A.displayName = "InviteButton.Header", E.displayName = "InviteButton.Body", I.displayName = "InviteButton.Icon", C.displayName = "InviteButton.Info", f.displayName = "InviteButton.Data", T.displayName = "InviteButton.Channel", S.displayName = "InviteButton.GuildSplash", _.displayName = "InviteButton.GuildName", k.displayName = "InviteButton.GuildTemplateName";
+let R = y

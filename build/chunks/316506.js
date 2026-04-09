@@ -32,13 +32,13 @@ function _(e) {
         guild: t,
         role: h,
         selectedSection: _,
-        setSelectedSection: p
-    } = e, A = s.useCallback(e => {
-        p(e)
-    }, [p]), f = (0, l.bG)([c.A], () => c.A.getRoleMemberCount(t.id)?.[h.id], [h.id, t.id]), j = (0, d.Oy)(h), N = (0, u.A)(t.id, h);
+        setSelectedSection: A
+    } = e, p = s.useCallback(e => {
+        A(e)
+    }, [A]), f = (0, l.bG)([c.A], () => c.A.getRoleMemberCount(t.id)?.[h.id], [h.id, t.id]), j = (0, d.Oy)(h), N = (0, u.A)(t.id, h);
     s.useEffect(() => {
-        j && p(m.T$.PERMISSIONS)
-    }, [j, p]);
+        j && A(m.T$.PERMISSIONS)
+    }, [j, A]);
     let E = (0, o.x)(t, h);
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsxs)("div", {
@@ -81,7 +81,7 @@ function _(e) {
             selectedItem: _,
             type: "top",
             look: "brand",
-            onItemSelect: A,
+            onItemSelect: p,
             children: [(0, i.jsx)(r.VQ0.Item, {
                 className: x.YU,
                 id: m.T$.DISPLAY,

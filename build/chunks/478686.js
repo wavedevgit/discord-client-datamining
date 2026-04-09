@@ -38,7 +38,7 @@ n.d(t, {
             tab: t
         });
         let r = t.layout.map(t => e(t, n, s, a)).filter(e => null != e);
-        if (0 === r.length && !("StronglyDiscouragedCustomComponent" in t || t.type === i.Z6.SIDEBAR_ITEM && "onClick" in t)) return null;
+        if (0 === r.length && !1 !== t.collapseOnEmpty && !("StronglyDiscouragedCustomComponent" in t || t.type === i.Z6.SIDEBAR_ITEM && "onClick" in t)) return null;
         let {
             usePredicate: o,
             ...d

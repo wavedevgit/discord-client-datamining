@@ -23,8 +23,8 @@ let x = e => {
             onClearPressed: x,
             reasonMinLength: h,
             reasonMaxLength: _,
-            placeholder: p,
-            position: A
+            placeholder: A,
+            position: p
         } = e, f = s.useRef(null), [j, N] = s.useState(!1), E = (0, l.bG)([u.A], () => u.A.isGuildMetadataLoaded()), C = (0, i.jsx)(r.YNO, {
             targetElementRef: f,
             onRequestClose: () => {
@@ -64,7 +64,7 @@ let x = e => {
             })
         });
         return (0, i.jsx)(r.ksK, {
-            placeholder: p,
+            placeholder: A,
             value: t,
             minLength: h,
             maxLength: _,
@@ -80,7 +80,7 @@ let x = e => {
                 show: (t?.length ?? 0) > 0 || null != n
             },
             onClear: x
-        }, `text-input-${A}-${E}`)
+        }, `text-input-${p}-${E}`)
     },
     h = e => {
         let {

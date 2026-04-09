@@ -59,8 +59,8 @@ class p extends l.PureComponent {
             showIconDisabled: _,
             className: N,
             imageClassName: j,
-            iconClassName: T,
-            iconWrapperClassName: v,
+            iconClassName: v,
+            iconWrapperClassName: T,
             icon: C,
             hideSize: I,
             imageStyle: E,
@@ -84,7 +84,7 @@ class p extends l.PureComponent {
                     backgroundImage: t
                 },
                 children: [n, _ && (0, i.jsx)("div", {
-                    className: a()(x.XD, x.$N, T),
+                    className: a()(x.XD, x.$N, v),
                     children: C
                 })]
             })
@@ -105,7 +105,7 @@ class p extends l.PureComponent {
             children: [(0, i.jsx)(d.vN3, {
                 within: !0,
                 children: (0, i.jsxs)("div", {
-                    className: f ? a()(x.U1, v) : void 0,
+                    className: f ? a()(x.U1, T) : void 0,
                     children: [(0, i.jsxs)("div", {
                         className: a()(x.Yp, j),
                         style: {
@@ -133,7 +133,7 @@ class p extends l.PureComponent {
                         "aria-hidden": "true",
                         children: r
                     }), f && (0, i.jsx)(h, {
-                        className: T,
+                        className: v,
                         icon: C
                     })]
                 })

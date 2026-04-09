@@ -5,8 +5,8 @@ n.d(t, {
 });
 var i = n(627968),
     s = n(64700),
-    a = n(503698),
-    l = n.n(a),
+    l = n(503698),
+    a = n.n(l),
     r = n(311907),
     o = n(685603),
     d = n(467627),
@@ -43,7 +43,7 @@ class x extends s.PureComponent {
             locked: t,
             contained: n,
             className: s
-        } = this.props, a = null != e ? (0, i.jsx)(h.A, {
+        } = this.props, l = null != e ? (0, i.jsx)(h.A, {
             guildId: e,
             onDragStart: this.onDragStart
         }, e) : (0, i.jsx)(A.A, {
@@ -53,14 +53,14 @@ class x extends s.PureComponent {
             children: (0, i.jsx)(f.A, {})
         }), r = n ? "div" : u.Ay;
         return (0, i.jsxs)(r, {
-            className: l()(g.E, {
+            className: a()(g.E, {
                 [g.H]: !n
             }, s),
             children: [(0, i.jsx)(d.A, {
                 isOverlay: !0,
                 disableAppDownload: !0,
                 isVisible: !t
-            }), a]
+            }), l]
         })
     }
 }

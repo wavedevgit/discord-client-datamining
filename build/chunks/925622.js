@@ -19,8 +19,8 @@ var l = n(311907),
     x = n(47167),
     h = n(345942),
     _ = n(808728),
-    p = n(498642),
-    A = n(71393),
+    A = n(498642),
+    p = n(71393),
     f = n(576705),
     j = n(994500),
     N = n(287809),
@@ -68,7 +68,7 @@ let R = "dismissedCommunityFeaturesUpsell",
             discoveryEnabled: t,
             onboardingEnabled: n,
             guild: o
-        } = e, [d, c] = s.useState(!0 === a.w.get(R)), x = (0, l.bG)([p.A], () => p.A.getMemberCount(o.id) ?? 0), [_, f] = s.useState(!1);
+        } = e, [d, c] = s.useState(!0 === a.w.get(R)), x = (0, l.bG)([A.A], () => A.A.getMemberCount(o.id) ?? 0), [_, f] = s.useState(!1);
         (0, g.Ay)(() => {
             r.Bo.get({
                 url: b.Rsh.GUILD_ADMIN_SERVER_ELIGIBILITY(o.id),
@@ -77,7 +77,7 @@ let R = "dismissedCommunityFeaturesUpsell",
                 f(e.body.eligible_for_admin_server)
             }).catch(() => f(!1))
         });
-        let j = (0, l.bG)([A.A], () => A.A.getGuild("942897714956472401")),
+        let j = (0, l.bG)([p.A], () => p.A.getGuild("942897714956472401")),
             N = o.features.has(b.GuildFeatures.COMMUNITY) && x >= 1e3 && _ && null == j;
         if (t && n && !N) return null;
         let C = async () => {
@@ -202,7 +202,7 @@ let R = "dismissedCommunityFeaturesUpsell",
                     publicUpdatesChannelId: null
                 })
             },
-            p = e => {
+            A = e => {
                 E.A.updateGuild({
                     description: e
                 })
@@ -274,7 +274,7 @@ let R = "dismissedCommunityFeaturesUpsell",
                     description: v.intl.string(v.t["/B6PRw"]),
                     value: e.description ?? "",
                     placeholder: v.intl.string(v.t.Nvfowl),
-                    onChange: p,
+                    onChange: A,
                     maxLength: 300,
                     disabled: !t
                 })

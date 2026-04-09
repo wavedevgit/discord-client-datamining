@@ -36,8 +36,8 @@ function E(e) {
     } = e, C = (0, x.A)(s, g.id, I), f = g ?? E, T = (0, a.bG)([u.Ay], () => u.Ay.getNick(s, l?.id), [s, l]);
     I = null == f || null != I ? I : (0, h.G3)(f);
     let {
-        startTime: S
-    } = (0, m.Ay)(g ?? E, I), y = (0, o.A)(I, g.id), _ = f?.scheduled_start_time != null ? (0, h.j)(y, S, new Date(f.scheduled_start_time)) : null;
+        startTime: y
+    } = (0, m.Ay)(g ?? E, I), S = (0, o.A)(I, g.id), _ = f?.scheduled_start_time != null ? (0, h.j)(S, y, new Date(f.scheduled_start_time)) : null;
     if (null == f) return null;
     let {
         entity_type: k,
@@ -47,7 +47,7 @@ function E(e) {
     return (0, n.jsxs)("div", {
         className: i()(A.II, t),
         children: [(0, n.jsx)(p.L, {
-            startTime: S.toISOString(),
+            startTime: y.toISOString(),
             status: _ ?? R,
             eventType: k,
             isNew: N,

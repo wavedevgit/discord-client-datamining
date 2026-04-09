@@ -1,6 +1,6 @@
 /** chunk id: 287245 params = (module,exports,require) **/
 n.d(t, {
-    A: () => v
+    A: () => y
 });
 var i = n(627968),
     l = n(64700),
@@ -86,20 +86,20 @@ let b = e => {
             })]
         })
     },
-    v = e => {
+    y = e => {
         let {
             channel: t,
             idle: n,
             showChat: s
-        } = e, A = l.useRef(new Set), [_, m] = l.useState([]), [g, f] = l.useState(0), C = l.useRef(null), T = l.useRef(!1), [v, y] = l.useState(!0), [j, R] = l.useState(""), [O, L] = l.useState((0, u.x7)(j));
+        } = e, A = l.useRef(new Set), [_, m] = l.useState([]), [g, f] = l.useState(0), C = l.useRef(null), T = l.useRef(!1), [y, v] = l.useState(!0), [j, R] = l.useState(""), [O, L] = l.useState((0, u.x7)(j));
         l.useEffect(() => {
             let e = A.current;
             return () => {
                 e.size > 0 && [...e].forEach(e => clearTimeout(e))
             }
         }, []), l.useEffect(() => {
-            let e = () => y(!0),
-                t = () => y(!1);
+            let e = () => v(!0),
+                t = () => v(!1);
             return I._.subscribe(N.jej.TEXTAREA_FOCUS, e), I._.subscribe(N.jej.TEXTAREA_BLUR, t), () => {
                 I._.unsubscribe(N.jej.TEXTAREA_FOCUS, e), I._.unsubscribe(N.jej.TEXTAREA_BLUR, t)
             }
@@ -194,9 +194,9 @@ let b = e => {
                 textValue: j,
                 richValue: O,
                 placeholder: "Send message",
-                onFocus: () => y(!0),
-                onBlur: () => y(!1),
-                focused: v,
+                onFocus: () => v(!0),
+                onBlur: () => v(!1),
+                focused: y,
                 disabled: !s,
                 showValueWhenDisabled: !0,
                 onChange: (e, t, n) => {

@@ -54,7 +54,7 @@ function f(e) {
         b = () => {
             clearTimeout(E.current), E.current = setTimeout(() => f(!0), 100)
         },
-        v = () => {
+        y = () => {
             clearTimeout(E.current), E.current = setTimeout(() => f(!1), 100)
         };
     return null == I ? null : (0, i.jsx)(o.YNO, {
@@ -62,14 +62,14 @@ function f(e) {
         position: "right",
         shouldShow: s,
         onRequestOpen: b,
-        onRequestClose: v,
+        onRequestClose: y,
         useMouseEnter: !0,
         spacing: 17,
         renderPopout: () => (0, i.jsx)(m.A, {
             channel: t,
             source: "ghost_user",
             onMouseEnter: b,
-            onMouseLeave: v
+            onMouseLeave: y
         }),
         children: e => {
             let {
@@ -83,7 +83,7 @@ function f(e) {
                 onClick: b,
                 onContextMenu: S,
                 ...l,
-                onMouseLeave: v,
+                onMouseLeave: y,
                 children: [(0, i.jsxs)("div", {
                     className: g.R3,
                     children: [(0, i.jsx)(o.euF, {

@@ -28,15 +28,15 @@ function j(e) {
         onClose: k
     } = e, {
         guild_id: p,
-        privacy_level: E
-    } = t, y = (0, a.bG)([h.A], () => h.A.getChannel(t.channel_id), [t]), _ = (0, a.bG)([m.A], () => m.A.getGuild(p), [p]), {
+        privacy_level: y
+    } = t, E = (0, a.bG)([h.A], () => h.A.getChannel(t.channel_id), [t]), _ = (0, a.bG)([m.A], () => m.A.getGuild(p), [p]), {
         canManageGuildEvent: T
-    } = (0, o.nr)(y ?? _), f = T(t), w = (0, a.bG)([c.A], () => c.A.isLurking(p), [p]), I = t.entity_type === A.Ps.STAGE_INSTANCE, [G, S] = i.useState(I), [P, {
+    } = (0, o.nr)(E ?? _), f = T(t), w = (0, a.bG)([c.A], () => c.A.isLurking(p), [p]), I = t.entity_type === A.Ps.STAGE_INSTANCE, [G, S] = i.useState(I), [P, {
         loading: L,
         error: b
     }] = (0, x.A)();
     if (!f) return null;
-    let U = E === A.dD.PUBLIC ? N.intl.string(N.t.HhlaLP) : N.intl.string(N.t.GI3xXd),
+    let U = y === A.dD.PUBLIC ? N.intl.string(N.t.HhlaLP) : N.intl.string(N.t.GI3xXd),
         M = () => {
             j?.(), k(), (0, d.ek)(!1)
         },
@@ -51,7 +51,7 @@ function j(e) {
         title: t.name,
         subtitle: N.intl.format(N.t.UMajol, {
             privacyLevel: U,
-            privacyLevelHook: (e, n) => E !== A.dD.PUBLIC ? null : (0, l.jsxs)("div", {
+            privacyLevelHook: (e, n) => y !== A.dD.PUBLIC ? null : (0, l.jsxs)("div", {
                 className: g.ro,
                 children: [(0, l.jsx)(r.L_e, {
                     size: "xs",
@@ -82,7 +82,7 @@ function j(e) {
         }],
         children: [(0, l.jsx)(C.A, {
             guild: _,
-            channel: y,
+            channel: E,
             name: t.name,
             description: t.description ?? void 0,
             imageSource: (0, v.A)(t),

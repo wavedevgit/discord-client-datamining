@@ -5,8 +5,8 @@ n.d(t, {
 });
 var i = n(627968),
     s = n(64700),
-    a = n(503698),
-    l = n.n(a),
+    l = n(503698),
+    a = n.n(l),
     r = n(397927),
     o = n(855790),
     d = n(652215),
@@ -15,17 +15,17 @@ var i = n(627968),
 let h = function(e) {
     let t, {
             title: n,
-            header: a,
+            header: l,
             children: h,
             renderSettings: p,
             onDragStart: f
         } = e,
         A = s.useRef(null);
     return t = null != n ? (0, i.jsxs)(o.Ay.Bar, {
-        className: l()(u.wx, u.bl),
+        className: a()(u.wx, u.bl),
         onMouseDown: f,
         children: [(0, i.jsx)(o.Ay.Content, {
-            className: l()(u.qd, u.bl),
+            className: a()(u.qd, u.bl),
             dynamicSize: !0,
             children: n
         }), (0, i.jsx)(o.Ay.Content, {
@@ -42,7 +42,7 @@ let h = function(e) {
                 })
             })
         })]
-    }) : a, (0, i.jsxs)("div", {
+    }) : l, (0, i.jsxs)("div", {
         className: u.pz,
         children: [t, (0, i.jsx)("div", {
             className: u.Y_,

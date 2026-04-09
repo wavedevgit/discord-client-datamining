@@ -1,7 +1,7 @@
 /** chunk id: 4600 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => A
+    A: () => p
 });
 var i = n(627968),
     s = n(64700),
@@ -17,26 +17,26 @@ var i = n(627968),
     x = n(862651),
     h = n(585632),
     _ = n(2242),
-    p = n(985018);
+    A = n(985018);
 
-function A(e) {
+function p(e) {
     let {
         allSubscriptionListings: t
     } = e, {
         editStateId: n,
-        guildId: A
+        guildId: p
     } = (0, a.O)(), [f, j] = o.lZ(n), [N, E] = o.$O(n), C = s.useMemo(() => t.filter(e => e.id !== n), [t, n]), {
         isFullServerGating: T
-    } = (0, d.A)(A), I = (0, r.gN)();
+    } = (0, d.A)(p), I = (0, r.gN)();
     return (0, i.jsx)(c.A, {
-        title: p.intl.string(p.t.YNw2Sm),
-        description: p.intl.string(p.t.zMW5r0),
+        title: A.intl.string(A.t.YNw2Sm),
+        description: A.intl.string(A.t.zMW5r0),
         children: (0, i.jsxs)(l.BJc, {
             gap: 24,
             children: [(0, i.jsxs)(l.D0$, {
                 disabled: I,
-                label: p.intl.string(p.t.DFlDaE),
-                description: p.intl.string(p.t.kHalVA),
+                label: A.intl.string(A.t.DFlDaE),
+                description: A.intl.string(A.t.kHalVA),
                 children: [(0, i.jsx)(u.A, {
                     channelBenefits: f,
                     intangibleBenefits: N,
@@ -45,7 +45,7 @@ function A(e) {
                         j(t => t.concat(e)), E(e => e.concat(t))
                     }
                 }), (0, i.jsx)(u.q, {
-                    guildId: A,
+                    guildId: p,
                     onImport: function(e) {
                         j(t => {
                             let n = new Set(t.map(e => {
@@ -63,8 +63,8 @@ function A(e) {
                     disabled: I
                 })]
             }), (0, i.jsx)(l.D0$, {
-                label: p.intl.string(p.t.S2kKzP),
-                description: p.intl.string(p.t["5a4AxV"]),
+                label: A.intl.string(A.t.S2kKzP),
+                description: A.intl.string(A.t["5a4AxV"]),
                 disabled: I,
                 children: e => (0, i.jsxs)(i.Fragment, {
                     children: [T && (0, i.jsxs)(i.Fragment, {
@@ -77,8 +77,8 @@ function A(e) {
                     }), (0, i.jsx)(g.A, {})]
                 })
             }), (0, i.jsx)(l.D0$, {
-                label: p.intl.string(p.t.RdwKw7),
-                description: p.intl.string(p.t.zAww7V),
+                label: A.intl.string(A.t.RdwKw7),
+                description: A.intl.string(A.t.zAww7V),
                 disabled: I,
                 children: (0, i.jsx)(h.A, {})
             }), (0, i.jsx)(x.A, {})]

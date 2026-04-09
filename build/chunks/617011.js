@@ -27,7 +27,7 @@ function w(e) {
         className: s,
         onClose: a,
         context: w
-    } = e, S = (0, i.bG)([c.A], () => c.A.can(j.xBc.READ_MESSAGE_HISTORY, t)), p = (0, h.AI)(t), y = () => {
+    } = e, S = (0, i.bG)([c.A], () => c.A.can(j.xBc.READ_MESSAGE_HISTORY, t)), y = (0, h.AI)(t), p = () => {
         a(), (0, A.Tv)(t, void 0, "Thread Browser Empty State")
     }, b = n.useCallback((e, t) => {
         a(), (0, A.JA)(e, !t, f.H9.BROWSER)
@@ -77,7 +77,7 @@ function w(e) {
                     })]
                 }) : null, (0, l.jsx)("div", {
                     className: T.jH
-                }), p ? (0, l.jsx)("div", {
+                }), y ? (0, l.jsx)("div", {
                     className: T.Tf,
                     children: (0, l.jsx)(o.$nd, {
                         size: "sm",
@@ -96,12 +96,12 @@ function w(e) {
             }),
             children: C.hasResults ? (0, l.jsx)(m.A, {
                 channel: t,
-                startThread: y,
+                startThread: p,
                 goToThread: b,
                 threadIds: C.results
             }) : (0, l.jsx)(x.A, {
                 channel: t,
-                startThread: y,
+                startThread: p,
                 goToThread: b
             })
         })

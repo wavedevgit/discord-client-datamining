@@ -5,8 +5,8 @@ n.d(t, {
 });
 var i = n(308368),
     s = n(684013),
-    a = n(334738),
-    l = n(471024),
+    l = n(334738),
+    a = n(471024),
     r = n(256415),
     o = n(684748),
     d = n(652215),
@@ -33,7 +33,7 @@ function h(e, t, n, h) {
         icon: A,
         title: p,
         body: f,
-        hint: e => (0, l.sI)(e, (0, o.J)(), u.t.Odi54y),
+        hint: e => (0, a.sI)(e, (0, o.J)(), u.t.Odi54y),
         confirmText: u.intl.string(u.t["fgP/wX"]),
         cancelText: u.intl.string(u.t["tpXzJ+"]),
         onNotificationShow: () => {
@@ -48,7 +48,7 @@ function h(e, t, n, h) {
             }), g("join"), s.A.updateNotificationStatus(n)
         },
         onCancelClick: (t, n) => {
-            (0, a.ack)(e.id, {
+            (0, l.ack)(e.id, {
                 section: d.JJy.OVERLAY,
                 object: d.ZSU.ACK_DECLINE_REQUEST_TO_JOIN,
                 objectType: d.AnalyticsObjectTypes.ACK_SEMI_AUTOMATIC

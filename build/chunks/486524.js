@@ -1,19 +1,19 @@
 /** chunk id: 486524 params = (module,exports,require) **/
-t.d(n, {
+n.d(t, {
     A: () => s
 });
-var r = t(627968);
-t(64700);
-var i = t(397927),
-    l = t(308528),
-    a = t(734057),
-    d = t(985018);
+var r = n(627968);
+n(64700);
+var i = n(397927),
+    l = n(308528),
+    a = n(734057),
+    d = n(985018);
 
-function s(e, n) {
-    let t = a.A.getChannel(e);
-    return null == t || t.isMultiUserDM() ? null : (0, r.jsx)(i.Drp, {
+function s(e, t) {
+    let n = a.A.getChannel(e);
+    return null == n || n.isMultiUserDM() ? null : (0, r.jsx)(i.Drp, {
         id: "close-dm",
         label: d.intl.string(d.t.jsvgc3),
-        action: () => l.A.closePrivateChannel(e, n)
+        action: () => l.A.closePrivateChannel(e, t)
     })
 }

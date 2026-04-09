@@ -28,8 +28,8 @@ var i = n(627968),
     T = n(183184),
     S = n(384059),
     b = n(480890),
-    v = n(379848),
-    y = n(643501),
+    y = n(379848),
+    v = n(643501),
     j = n(857253),
     R = n(652896),
     O = n(880144),
@@ -98,12 +98,12 @@ function eI(e) {
         (0, e_.A)(x, t.id, A)
     }, [x, t.id, a, s, A]), C = (0, P.k0)(), [N, T] = l.useState(!1), b = () => {
         ((0, S.X)(d, S.O.STREAM, !0), a) ? I(): (0, eA.A)()
-    }, y = () => {
+    }, v = () => {
         (0, S.X)(d, S.O.STREAM, !1), (0, L.A)(p)
     };
     return (0, i.jsxs)(i.Fragment, {
         children: [(() => {
-            if (C && 0 === m.length) return (0, i.jsx)(v.Ay, {
+            if (C && 0 === m.length) return (0, i.jsx)(y.Ay, {
                 contentTypes: [u.M.TRIAL_NUX_STREAM_COACH_MARK],
                 bypassAutoDismiss: !0,
                 children: e => {
@@ -173,7 +173,7 @@ function eI(e) {
                                 shouldShowTooltip: !t,
                                 renderNUXHighlight: N,
                                 buttonRef: g,
-                                onClick: null != p ? y : b
+                                onClick: null != p ? v : b
                             })
                         })(n, l)
                     })
@@ -215,7 +215,7 @@ let eN = l.memo(function(e) {
             ownerId: n
         } = e;
         return n !== t?.id
-    })), N = (0, M.Qs)(s.id), T = l.useRef(null), b = l.useCallback(() => o?.type === eg.lp.ACTIVITY && o.applicationId === a?.applicationId ? "ACTIVITY" : x ? "STREAM" : null != N ? "EVENT" : "CALL", [o, a?.applicationId, x, N]), [v, y] = l.useState(b()), j = (0, h.zhh)({
+    })), N = (0, M.Qs)(s.id), T = l.useRef(null), b = l.useCallback(() => o?.type === eg.lp.ACTIVITY && o.applicationId === a?.applicationId ? "ACTIVITY" : x ? "STREAM" : null != N ? "EVENT" : "CALL", [o, a?.applicationId, x, N]), [y, v] = l.useState(b()), j = (0, h.zhh)({
         opacity: A ? .2 : 1,
         transform: A && !u.enabled ? "scale(0.7)" : "scale(1)",
         config: {
@@ -226,12 +226,12 @@ let eN = l.memo(function(e) {
             clamp: A
         },
         onRest: () => {
-            y(b()), p(!1)
+            v(b()), p(!1)
         }
     }, "animate-always");
     l.useEffect(() => {
-        b() !== v && p(!0)
-    }, [v, b]);
+        b() !== y && p(!0)
+    }, [y, b]);
     let O = l.useCallback(() => {
         if (null != f)(0, m.vN)((0, R._z)(f));
         else
@@ -271,7 +271,7 @@ let eN = l.memo(function(e) {
                         centerButton: !0,
                         popoutOpen: e
                     };
-                    switch (v) {
+                    switch (y) {
                         case "ACTIVITY":
                             if (null == o || null == t || o.type !== eg.lp.ACTIVITY || null == a) return;
                             return (0, i.jsx)(z.A, {
@@ -383,14 +383,14 @@ let eb = function(e) {
         cameraUnavailable: I,
         enabled: S
     } = (0, el.A)(), b = (0, ea.A)(t), {
-        suppress: v,
+        suppress: y,
         selfMute: R,
         mute: L
     } = (0, er.A)(t), {
         canGoLive: M
     } = (0, c.cf)([et.Ay], () => ({
         canGoLive: (0, O.A)(et.Ay)
-    })), D = (0, j.A)(), P = (0, c.bG)([y.default], () => null != y.default.getAwaitingRemoteSessionInfo()), k = null != D, H = (0, c.bG)([en.A], () => (D?.channelId ?? en.A.getVoiceChannelId()) === t.id), K = (0, B.A)({
+    })), D = (0, j.A)(), P = (0, c.bG)([v.default], () => null != v.default.getAwaitingRemoteSessionInfo()), k = null != D, H = (0, c.bG)([en.A], () => (D?.channelId ?? en.A.getVoiceChannelId()) === t.id), K = (0, B.A)({
         channelId: t.id
     }), Y = (0, w.i)({
         location: "center_control_tray"
@@ -453,10 +453,10 @@ let eb = function(e) {
                                 onPopoutClick: k ? null : n,
                                 selfMute: R,
                                 serverMute: L,
-                                suppress: v,
+                                suppress: y,
                                 popoutOpen: l,
                                 awaitingRemote: P,
-                                onClick: () => (0, T.A)(L, v, ep.JJy.VOICE_CONTROL_TRAY)
+                                onClick: () => (0, T.A)(L, y, ep.JJy.VOICE_CONTROL_TRAY)
                             })
                         }
                     }), !k && (0, i.jsx)(h.YNO, {

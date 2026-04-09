@@ -49,12 +49,12 @@ function x(e) {
         textColor: x,
         headerColor: h,
         buttonProps: _,
-        useExpressiveButton: p
+        useExpressiveButton: A
     } = e, {
-        analyticsLocations: A
+        analyticsLocations: p
     } = (0, d.Ay)(o.A.GUILD_BOOSTING_UPSELL_BANNER);
     return (0, i.jsx)(d.f5, {
-        value: A,
+        value: p,
         children: (0, i.jsxs)("div", {
             className: l()(m.vK, u),
             children: [(0, i.jsx)("img", {
@@ -80,7 +80,7 @@ function x(e) {
                     analyticsLocation: r,
                     className: m.x6,
                     buttonProps: _,
-                    useExpressiveButton: p
+                    useExpressiveButton: A
                 })
             })]
         })

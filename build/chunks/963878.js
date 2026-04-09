@@ -1,47 +1,47 @@
 /** chunk id: 963878 params = (module,exports,require) **/
-t.r(n), t.d(n, {
+n.r(t), n.d(t, {
     default: () => w
 });
-var l = t(627968),
-    i = t(64700),
-    s = t(503698),
-    a = t.n(s),
-    r = t(311907),
-    d = t(554146),
-    c = t(827734),
-    o = t(397927),
-    u = t(726249),
-    _ = t(826673),
-    h = t(742589),
-    x = t(637248),
-    m = t(760207),
-    g = t(454058),
-    A = t(761640),
-    C = t(71393),
-    f = t(202776),
-    p = t(659069),
-    N = t(539916),
-    j = t(746080),
-    v = t(49999),
-    b = t(985018),
-    I = t(739782),
-    E = t(513544);
+var l = n(627968),
+    i = n(64700),
+    s = n(503698),
+    a = n.n(s),
+    r = n(311907),
+    d = n(554146),
+    c = n(827734),
+    o = n(397927),
+    u = n(726249),
+    _ = n(826673),
+    h = n(742589),
+    x = n(637248),
+    m = n(760207),
+    A = n(454058),
+    g = n(761640),
+    C = n(71393),
+    f = n(202776),
+    p = n(659069),
+    N = n(539916),
+    j = n(746080),
+    v = n(49999),
+    b = n(985018),
+    I = n(739782),
+    E = n(513544);
 
 function S(e) {
     let {
-        guild: n
-    } = e, t = (0, f.A)(n);
+        guild: t
+    } = e, n = (0, f.A)(t);
     i.useEffect(() => {
         (0, _.Dr)(d.M.CHANNEL_BROWSER_NEW_BADGE_NUX, {
             dismissAction: v.i.DISMISS
         })
     });
-    let s = t ? b.intl.formatToPlainString(b.t.uqZgYe, {
-            guildName: n.name
+    let s = n ? b.intl.formatToPlainString(b.t.uqZgYe, {
+            guildName: t.name
         }) : b.intl.formatToPlainString(b.t.velJea, {
-            guildName: n.name
+            guildName: t.name
         }),
-        a = t ? b.intl.string(b.t.h9mGOP) : b.intl.string(b.t.et6wav);
+        a = n ? b.intl.string(b.t.h9mGOP) : b.intl.string(b.t.et6wav);
     return (0, u.HU)({
         location: s
     }), (0, l.jsxs)(h.A, {
@@ -49,7 +49,7 @@ function S(e) {
         innerClassname: I.MU,
         hideSearch: !0,
         channelId: j.VV.CUSTOMIZE_COMMUNITY,
-        guildId: n.id,
+        guildId: t.id,
         children: [(0, l.jsx)(h.A.Icon, {
             icon: o.kiI,
             "aria-hidden": !0
@@ -61,18 +61,18 @@ function S(e) {
 
 function w(e) {
     let {
-        guildId: n,
-        selectedSection: t
-    } = e, s = (0, r.bG)([C.A], () => C.A.getGuild(n)), d = (0, f.A)(s), [u, _] = i.useState(t ?? N.qC.CUSTOMIZE);
+        guildId: t,
+        selectedSection: n
+    } = e, s = (0, r.bG)([C.A], () => C.A.getGuild(t)), d = (0, f.A)(s), [u, _] = i.useState(n ?? N.qC.CUSTOMIZE);
     i.useEffect(() => {
-        null != t && _(t)
-    }, [t]), i.useEffect(() => {
+        null != n && _(n)
+    }, [n]), i.useEffect(() => {
         d || u !== N.qC.CUSTOMIZE || _(N.qC.BROWSE)
     }, [d, u]);
-    let h = (0, r.bG)([A.Ay], () => A.Ay.getCurrentSidebarChannelId(j.VV.CHANNEL_BROWSER)),
+    let h = (0, r.bG)([g.Ay], () => g.Ay.getCurrentSidebarChannelId(j.VV.CHANNEL_BROWSER)),
         v = null != h && u === N.qC.BROWSE,
-        w = (0, r.bG)([g.A], () => g.A.getNewChannelIds(n).size > 0),
-        y = (0, x.RD)(n);
+        w = (0, r.bG)([A.A], () => A.A.getNewChannelIds(t).size > 0),
+        y = (0, x.RD)(t);
     return null == s ? null : (0, l.jsxs)(l.Fragment, {
         children: [(0, l.jsxs)("div", {
             className: a()(E.TE, {
@@ -108,13 +108,13 @@ function w(e) {
                     switch (u) {
                         case N.qC.CUSTOMIZE:
                             return (0, l.jsx)(p.A, {
-                                guildId: n,
+                                guildId: t,
                                 onBrowseChannels: () => _(N.qC.BROWSE)
                             });
                         case N.qC.BROWSE:
                         default:
                             return (0, l.jsx)(m.A, {
-                                guildId: n
+                                guildId: t
                             })
                     }
                 })()]

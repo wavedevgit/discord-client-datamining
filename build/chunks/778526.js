@@ -1,7 +1,7 @@
 /** chunk id: 778526 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => A
+    A: () => p
 });
 var i = n(627968),
     s = n(64700),
@@ -17,13 +17,13 @@ var i = n(627968),
     x = n(964758),
     h = n(57731),
     _ = n(985018),
-    p = n(868302);
+    A = n(868302);
 
-function A(e) {
+function p(e) {
     let {
         allSubscriptionListings: t,
         priceTiers: n,
-        loading: A,
+        loading: p,
         error: f,
         handlePublishTier: j,
         onDeleteEditState: N
@@ -34,16 +34,16 @@ function A(e) {
         return n?.filter(t => !e.includes(t))
     }, [t, E, n]), b = null == C, v = C?.published ?? !1, S = C?.archived ?? !1;
     return (0, i.jsxs)("div", {
-        className: p.rf,
+        className: A.rf,
         children: [null != f && (0, i.jsx)(a.wx6, {
             type: "critical",
             children: f.getAnyErrorMessage()
         }), !v && !T && !S && (0, i.jsxs)("div", {
-            className: p.Oy,
+            className: A.Oy,
             children: [(0, i.jsxs)("div", {
                 children: [(0, i.jsx)(a.Heading, {
                     variant: "heading-md/semibold",
-                    className: p.Bm,
+                    className: A.Bm,
                     children: _.intl.string(_.t.WOlcS8)
                 }), (0, i.jsx)(a.Text, {
                     variant: "text-sm/normal",
@@ -57,7 +57,7 @@ function A(e) {
                         disabled: b,
                         variant: "secondary",
                         onClick: j,
-                        loading: A,
+                        loading: p,
                         text: _.intl.string(_.t.Lj6R5m)
                     })
                 })

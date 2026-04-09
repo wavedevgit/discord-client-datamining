@@ -25,15 +25,15 @@ var i = n(627968),
     v = n(287809),
     b = n(862804),
     T = n(627950),
-    N = n(387408),
-    y = n(427209),
+    y = n(387408),
+    N = n(427209),
     S = n(985018),
     j = n(929694);
 
 function L() {
     return (0, i.jsxs)("div", {
         className: j.N1,
-        children: [(0, i.jsx)(y.A, {
+        children: [(0, i.jsx)(N.A, {
             size: "xs",
             className: j.nr,
             color: o.A.colors.TEXT_MUTED
@@ -94,7 +94,7 @@ function D(e) {
         message: t,
         snapshot: n,
         index: s
-    } = e, a = l.useMemo(() => (0, N.A)(t, n), [t, n]), o = A.hD.useSetting(), d = A.rs.useSetting(), c = (0, r.bG)([f.A], () => f.A.isDeveloper), u = (0, m.S)((a.editedTimestamp ?? a.timestamp).valueOf()), {
+    } = e, a = l.useMemo(() => (0, y.A)(t, n), [t, n]), o = A.hD.useSetting(), d = A.rs.useSetting(), c = (0, r.bG)([f.A], () => f.A.isDeveloper), u = (0, m.S)((a.editedTimestamp ?? a.timestamp).valueOf()), {
         content: g,
         hasSpoilerEmbeds: C,
         hasBailedAst: E

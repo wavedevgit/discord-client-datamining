@@ -1,24 +1,24 @@
 /** chunk id: 513265 params = (module,exports,require) **/
-t.d(l, {
+n.d(l, {
     A: () => h
 });
-var n = t(627968),
-    i = t(64700),
-    s = t(503698),
-    a = t.n(s),
-    r = t(687498),
-    o = t(311907),
-    d = t(397927),
-    c = t(775602),
-    u = t(606758),
-    m = t(518477),
-    x = t(985018),
-    p = t(194399),
-    A = t(549290);
+var t = n(627968),
+    i = n(64700),
+    s = n(503698),
+    a = n.n(s),
+    r = n(687498),
+    o = n(311907),
+    d = n(397927),
+    c = n(775602),
+    u = n(606758),
+    m = n(518477),
+    x = n(985018),
+    p = n(194399),
+    A = n(549290);
 let g = {
         [m.jM.WIDGET_ADDED]: {
             message: x.intl.string(x.t.fFP1Uy),
-            icon: (0, n.jsx)(d.A9s, {
+            icon: (0, t.jsx)(d.A9s, {
                 size: "sm",
                 color: d.LU0.colors.STATUS_POSITIVE.css
             }),
@@ -26,7 +26,7 @@ let g = {
         },
         [m.jM.WIDGET_REMOVED]: {
             message: x.intl.string(x.t.zzsK7h),
-            icon: (0, n.jsx)(d.A9s, {
+            icon: (0, t.jsx)(d.A9s, {
                 size: "sm",
                 color: d.LU0.colors.STATUS_POSITIVE.css
             }),
@@ -34,7 +34,7 @@ let g = {
         },
         [m.jM.PROFILE_SAVE_GENERIC_FAILURE]: {
             message: x.intl.string(x.t["84MExs"]),
-            icon: (0, n.jsx)(d.d$L, {
+            icon: (0, t.jsx)(d.d$L, {
                 size: "sm",
                 color: d.LU0.colors.ICON_FEEDBACK_CRITICAL
             }),
@@ -43,7 +43,7 @@ let g = {
         },
         [m.jM.SOMETHING_WENT_WRONG]: {
             message: x.intl.string(x.t.F8FvUy),
-            icon: (0, n.jsx)(d.d$L, {
+            icon: (0, t.jsx)(d.d$L, {
                 size: "sm",
                 color: d.LU0.colors.ICON_FEEDBACK_CRITICAL
             }),
@@ -54,16 +54,16 @@ let g = {
     f = e => {
         let {
             message: l,
-            icon: t,
+            icon: n,
             type: i
         } = e;
-        return (0, n.jsxs)("div", {
+        return (0, t.jsxs)("div", {
             className: a()(A.oR, p.oR),
             "data-type": i,
-            children: [(0, n.jsx)("div", {
+            children: [(0, t.jsx)("div", {
                 className: p.RC,
-                children: t
-            }), (0, n.jsx)(d.Text, {
+                children: n
+            }), (0, t.jsx)(d.Text, {
                 color: "text-strong",
                 variant: "text-sm/semibold",
                 children: l
@@ -73,10 +73,10 @@ let g = {
     h = e => {
         let {
             className: l
-        } = e, t = (0, u.fu)(), s = (0, o.bG)([c.A], () => c.A.useReducedMotion), [m, x] = i.useState(!1), [A, h] = i.useState(null);
+        } = e, n = (0, u.fu)(), s = (0, o.bG)([c.A], () => c.A.useReducedMotion), [m, x] = i.useState(!1), [A, h] = i.useState(null);
         i.useEffect(() => {
-            null !== t ? (x(!0), h(g[t]), d.ORC.announce(g[t].message)) : x(!1)
-        }, [t]);
+            null !== n ? (x(!0), h(g[n]), d.ORC.announce(g[n].message)) : x(!1)
+        }, [n]);
         let j = (0, d.pnh)(m, {
             from: {
                 transform: s ? "translateY(0)" : "translateY(-12px)",
@@ -104,11 +104,11 @@ let g = {
                 }, 2e3);
                 return () => clearTimeout(e)
             }
-        }, [m]), (0, n.jsx)(n.Fragment, {
-            children: j((e, t) => t && null !== A && (0, n.jsx)(r.animated.div, {
+        }, [m]), (0, t.jsx)(t.Fragment, {
+            children: j((e, n) => n && null !== A && (0, t.jsx)(r.animated.div, {
                 className: a()(l, p.Jt),
                 style: e,
-                children: (0, n.jsx)(f, {
+                children: (0, t.jsx)(f, {
                     ...A
                 })
             }))

@@ -9,7 +9,7 @@ let s = n(64700).memo(function(e) {
         layout: t,
         layoutSize: n,
         className: s,
-        renderWidget: a
+        renderWidget: l
     } = e;
     return null != t ? (0, i.jsx)("div", {
         className: s,
@@ -17,6 +17,6 @@ let s = n(64700).memo(function(e) {
             width: n.width,
             height: n.height
         },
-        children: t.widgets.map(e => a(e, n))
+        children: t.widgets.map(e => l(e, n))
     }) : null
 })

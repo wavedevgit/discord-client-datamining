@@ -1,14 +1,14 @@
 /** chunk id: 949155 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    B_: () => I,
-    FC: () => f,
-    Fk: () => T,
-    IK: () => S,
-    PX: () => N,
-    TZ: () => b,
-    ji: () => y,
-    zN: () => j
+    B_: () => N,
+    FC: () => E,
+    Fk: () => C,
+    IK: () => y,
+    PX: () => v,
+    TZ: () => R,
+    ji: () => b,
+    zN: () => S
 });
 var i = n(627968),
     s = n(64700),
@@ -16,67 +16,68 @@ var i = n(627968),
     l = n.n(r),
     a = n(397927),
     o = n(854378),
-    c = n(769015),
-    d = n(714991),
-    u = n(486020),
-    h = n(427262),
-    _ = n(172799),
-    p = n(652215),
-    g = n(330936),
-    m = n(985018),
-    A = n(742557);
-let f = 100,
-    E = e => {
+    c = n(47167),
+    d = n(769015),
+    u = n(714991),
+    h = n(486020),
+    _ = n(427262),
+    p = n(172799),
+    g = n(652215),
+    m = n(330936),
+    A = n(985018),
+    f = n(742557);
+let E = 100,
+    x = e => {
         let t = {
             onlineCount: e.approximate_presence_count ?? 0,
             memberCount: e.approximate_member_count ?? 0
         };
         return 0 === t.memberCount && 0 === t.memberCount ? null : t
     },
-    x = e => e.target_type === _.yV.STREAM && null != e.target_user,
-    I = e => e.channel?.type === p.rbe.GROUP_DM,
-    N = e => null == e.channel && null == e.guild && null != e.inviter,
-    v = e => e.state === p.elq.ACCEPTED,
-    T = e => {
+    I = e => e.target_type === p.yV.STREAM && null != e.target_user,
+    N = e => e.channel?.type === g.rbe.GROUP_DM,
+    v = e => null == e.channel && null == e.guild && null != e.inviter,
+    T = e => e.state === g.elq.ACCEPTED,
+    C = e => {
         let {
             guild_scheduled_event: t
         } = e;
         return null != t
     },
-    C = e => {
-        let t;
-        return !T(e) && (!!N(e) || null != e.inviter && !v(e) && (t = E(e), !((t?.memberCount ?? 0) > f)))
-    },
     j = e => {
+        let t;
+        return !C(e) && (!!v(e) || null != e.inviter && !T(e) && (t = x(e), !((t?.memberCount ?? 0) > E)))
+    },
+    S = e => {
         let {
             guild: t,
             user: n,
             application: s
         } = e;
-        return null != s ? (0, i.jsx)(c.A, {
-            className: A.Z2,
+        return null != s ? (0, i.jsx)(d.A, {
+            className: f.Z2,
             game: s,
-            size: A.q6
+            size: f.q6
         }) : null != n ? (0, i.jsx)(o.eu, {
             src: n.getAvatarURL(void 0, 100),
             size: a._3J.DEPRECATED_SIZE_100,
-            className: A.my
+            className: f.my
         }) : null != t ? (0, i.jsx)(o.$v, {
             guild: t,
             size: o.$v.Sizes.LARGER,
-            className: A.$f,
+            className: f.$f,
             animate: !0
         }) : null
     };
 
-function S(e) {
+function y(e) {
     let {
         invite: t,
         textClassName: n,
         className: s
-    } = e, r = E(t);
-    return null == r || C(t) || t?.guild?.id === g.TA ? null : (0, i.jsx)(o.R1, {
-        className: l()(A.He, s),
+    } = e, r = x(t);
+    return null == r || j(t) || t?.guild?.id === m.TA ? null : (0, i.jsx)(o.R1, {
+        className: l()(f.He, s),
         online: r.onlineCount,
         total: r.memberCount,
         textClassName: n,
@@ -84,50 +85,51 @@ function S(e) {
     })
 }
 
-function y(e) {
+function b(e) {
     let {
         invite: t,
         showBigUserIcon: n
-    } = e, r = s.useMemo(() => n ? null : x(t) && null != t.target_user ? u.Ay.getUserAvatarURL(t.target_user) : C(t) && null != t.inviter ? u.Ay.getUserAvatarURL(t.inviter) : null, [t, n]), l = m.intl.string(m.t["3rE1P8"]);
-    return I(t) ? l = t.channel?.name != null && t.inviter?.username != null ? m.intl.format(m.t.Lu4h18, {
+    } = e, r = s.useMemo(() => n ? null : I(t) && null != t.target_user ? h.Ay.getUserAvatarURL(t.target_user) : j(t) && null != t.inviter ? h.Ay.getUserAvatarURL(t.inviter) : null, [t, n]), l = A.intl.string(A.t["3rE1P8"]);
+    return N(t) ? l = t.channel?.name != null && t.inviter?.username != null ? A.intl.format(A.t.Lu4h18, {
         username: t.inviter.username
-    }) : m.intl.string(m.t.OsdY8B) : x(t) && null != t.target_user ? l = m.intl.formatToPlainString(m.t.x2L32Q, {
+    }) : A.intl.string(A.t.OsdY8B) : I(t) && null != t.target_user ? l = A.intl.formatToPlainString(A.t.x2L32Q, {
         username: t.target_user.username
-    }) : v(t) ? l = m.intl.string(m.t["FDsl+J"]) : C(t) && null != t.inviter && (l = m.intl.format(m.t.spU2mI, {
-        username: h.Ay.getFormattedName(t.inviter)
+    }) : T(t) ? l = A.intl.string(A.t["FDsl+J"]) : j(t) && null != t.inviter && (l = A.intl.format(A.t.spU2mI, {
+        username: _.Ay.getFormattedName(t.inviter)
     })), (0, i.jsxs)("div", {
-        className: A.JB,
+        className: f.JB,
         children: [null != r && (0, i.jsx)("div", {
-            className: A._t,
+            className: f._t,
             children: (0, i.jsx)(o.eu, {
                 src: r,
                 size: a._3J.SIZE_24
             })
         }), (0, i.jsx)(o.tK, {
-            className: A.__invalid_inviteJoinSubTitle,
+            className: f.__invalid_inviteJoinSubTitle,
             children: l
         })]
     })
 }
 
-function b(e) {
+function R(e) {
     let t, n, s, {
-        user: r,
-        guild: l,
-        channel: c,
-        application: u,
-        showBigUserIcon: _
-    } = e;
-    if (null != l) _ && null == u && (t = (0, i.jsx)(o.$v, {
+            user: r,
+            guild: l,
+            channel: d,
+            application: h,
+            showBigUserIcon: p
+        } = e,
+        g = (0, c.Ay)(d);
+    if (null != l) p && null == h && (t = (0, i.jsx)(o.$v, {
         guild: l,
         size: o.$v.Sizes.SMALL
-    })), n = l.name, null != u && (n = u.name, s = (0, i.jsxs)("div", {
-        className: A.JB,
+    })), n = l.name, null != h && (n = h.name, s = (0, i.jsxs)("div", {
+        className: f.JB,
         children: [(0, i.jsx)(o.tK, {
-            className: A.R9,
-            children: m.intl.string(m.t["3gg9fF"])
+            className: f.R9,
+            children: A.intl.string(A.t["3gg9fF"])
         }), (0, i.jsxs)("div", {
-            className: A.bo,
+            className: f.bo,
             children: [(0, i.jsx)(o.$v, {
                 guild: l,
                 size: o.$v.Sizes.SMALL
@@ -138,30 +140,30 @@ function b(e) {
             })]
         })]
     }));
-    else if (null != c) {
+    else if (null != d) {
         if (null == r) throw Error("no inviter in group DM invite");
-        let e = h.Ay.getFormattedName(r);
-        null != c.name && "" !== c.name ? (n = c.name, null != c.icon && (t = (0, i.jsx)(o.F4, {
-            channel: c,
+        let e = _.Ay.getFormattedName(r);
+        null != g && "" !== g ? (n = g, null != d.icon && (t = (0, i.jsx)(o.F4, {
+            channel: d,
             size: a._3J.SIZE_32
         }))) : n = e
     } else if (null != r) {
-        let e = h.Ay.getFormattedName(r);
-        n = m.intl.formatToPlainString(m.t["4aF92R"], {
+        let e = _.Ay.getFormattedName(r);
+        n = A.intl.formatToPlainString(A.t["4aF92R"], {
             username: e
         }), s = (0, i.jsx)(o.tK, {
-            className: A.b$,
-            children: m.intl.format(m.t.Quj7HX, {
+            className: f.b$,
+            children: A.intl.format(A.t.Quj7HX, {
                 username: e
             })
         })
     }
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsxs)(o.hE, {
-            className: A.DD,
-            children: [null != l ? (0, i.jsx)(d.A, {
+            className: f.DD,
+            children: [null != l ? (0, i.jsx)(u.A, {
                 guild: l,
-                className: A.n2,
+                className: f.n2,
                 tooltipPosition: "left"
             }) : null, t, n]
         }), s]

@@ -18,8 +18,8 @@ var s = n(311907),
     x = n(199940),
     h = n(132514),
     _ = n(107795),
-    p = n(400812),
-    A = n(259866),
+    A = n(400812),
+    p = n(259866),
     f = n(960756),
     j = n(652215),
     N = n(985018),
@@ -37,15 +37,15 @@ function C(e) {
         let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0];
         l ? (await (0, _.gr)(t, !1), m.default.track(j.HAw.GUILD_SETTINGS_ONBOARDING_EDIT_PAGE_CLICKED, {
             ...(0, a.H$)(t),
-            action_taken: p.mj[p.mj.TOGGLE_DISABLED],
+            action_taken: A.mj[A.mj.TOGGLE_DISABLED],
             location: d
         })) : (await (0, _.gr)(t, !0), e && (0, x.UP)(t, !0), n ? m.default.track(j.HAw.GUILD_SETTINGS_ONBOARDING_EDIT_PAGE_CLICKED, {
             ...(0, a.H$)(t),
-            action_taken: p.mj[p.mj.TOGGLE_ENABLED],
+            action_taken: A.mj[A.mj.TOGGLE_ENABLED],
             location: d
         }) : m.default.track(j.HAw.GUILD_SETTINGS_ONBOARDING_WIZARD_PROGRESS_CTA_CLICKED, {
             ...(0, a.H$)(t),
-            step: p.Hy[p.Hy.REVIEW],
+            step: A.Hy[A.Hy.REVIEW],
             back: !1,
             skip: !1,
             completed: !0
@@ -53,18 +53,18 @@ function C(e) {
     }, h = () => {
         m.default.track(j.HAw.GUILD_SETTINGS_ONBOARDING_EDIT_PAGE_CLICKED, {
             ...(0, a.H$)(t),
-            action_taken: p.mj[p.mj.PREVIEW],
+            action_taken: A.mj[A.mj.PREVIEW],
             location: d
         }), (0, g.X$)(t)
-    }, A = (0, i.jsxs)(i.Fragment, {
+    }, p = (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(f.gE, {
             guildId: t,
             onEdit: () => {
                 m.default.track(j.HAw.GUILD_SETTINGS_ONBOARDING_EDIT_PAGE_CLICKED, {
                     ...(0, a.H$)(t),
-                    action_taken: p.mj[p.mj.EDIT_DEFAULT_CHANNELS],
+                    action_taken: A.mj[A.mj.EDIT_DEFAULT_CHANNELS],
                     location: d
-                }), (0, g.e_)(p.Hy.DEFAULT_CHANNELS)
+                }), (0, g.e_)(A.Hy.DEFAULT_CHANNELS)
             },
             disableGoodStatus: n
         }), (0, i.jsx)(c.A, {
@@ -74,9 +74,9 @@ function C(e) {
             onEdit: () => {
                 m.default.track(j.HAw.GUILD_SETTINGS_ONBOARDING_EDIT_PAGE_CLICKED, {
                     ...(0, a.H$)(t),
-                    action_taken: p.mj[p.mj.EDIT_CONNECTIONS],
+                    action_taken: A.mj[A.mj.EDIT_CONNECTIONS],
                     location: d
-                }), (0, g.e_)(p.Hy.CONNECTIONS)
+                }), (0, g.e_)(A.Hy.CONNECTIONS)
             },
             disableGoodStatus: n
         }), (0, i.jsx)(c.A, {
@@ -86,9 +86,9 @@ function C(e) {
             onEdit: () => {
                 m.default.track(j.HAw.GUILD_SETTINGS_ONBOARDING_EDIT_PAGE_CLICKED, {
                     ...(0, a.H$)(t),
-                    action_taken: p.mj[p.mj.EDIT_CUSTOMIZATION_QUESTIONS],
+                    action_taken: A.mj[A.mj.EDIT_CUSTOMIZATION_QUESTIONS],
                     location: d
-                }), (0, g.e_)(p.Hy.CUSTOMIZATION_QUESTIONS)
+                }), (0, g.e_)(A.Hy.CUSTOMIZATION_QUESTIONS)
             },
             disableGoodStatus: n
         }), (0, i.jsx)(c.A, {
@@ -98,9 +98,9 @@ function C(e) {
             onEdit: () => {
                 m.default.track(j.HAw.GUILD_SETTINGS_ONBOARDING_EDIT_PAGE_CLICKED, {
                     ...(0, a.H$)(t),
-                    action_taken: p.mj[p.mj.EDIT_HOME_SETTINGS],
+                    action_taken: A.mj[A.mj.EDIT_HOME_SETTINGS],
                     location: d
-                }), (0, g.e_)(p.Hy.HOME_SETTINGS)
+                }), (0, g.e_)(A.Hy.HOME_SETTINGS)
             },
             disableGoodStatus: n
         })]
@@ -114,7 +114,7 @@ function C(e) {
             children: [(0, i.jsx)(b, {
                 guildId: t,
                 handleOnboardingToggle: u
-            }), A]
+            }), p]
         })]
     }) : (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsxs)("div", {
@@ -123,7 +123,7 @@ function C(e) {
                 guildId: t,
                 handleOnboardingToggle: u,
                 handlePreview: h
-            }), A]
+            }), p]
         }), (0, i.jsx)(S, {
             guildId: t
         })]
@@ -167,7 +167,7 @@ function T(e) {
                 })
             }), (0, i.jsx)("div", {
                 className: E.RY
-            }), (0, i.jsx)(A.mU, {
+            }), (0, i.jsx)(p.mU, {
                 guildId: t
             })]
         })]

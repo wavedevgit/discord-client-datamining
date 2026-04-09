@@ -1,23 +1,23 @@
 /** chunk id: 576977 params = (module,exports,require) **/
-t.d(n, {
+n.d(t, {
     A: () => s
 });
-var l = t(627968);
-t(64700);
-var i = t(953727);
+var l = n(627968);
+n(64700);
+var i = n(953727);
 
 function s(e) {
     let {
-        width: n = 120,
-        height: t = 80,
+        width: t = 120,
+        height: n = 80,
         backgroundColor: s,
         foregroundColor: a,
         ...r
     } = e;
     return (0, l.jsxs)("svg", {
         ...(0, i.A)(r),
-        width: n,
-        height: t,
+        width: t,
+        height: n,
         viewBox: "0 0 120 80",
         fill: "none",
         xmlns: "http://www.w3.org/2000/svg",

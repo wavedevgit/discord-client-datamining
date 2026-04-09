@@ -21,23 +21,23 @@ let o = e => {
         disabled: x,
         placeholder: h,
         ..._
-    } = e, [p, A] = s.useState(o ?? ""), f = s.useCallback(() => {
-        let e = p.trim();
+    } = e, [A, p] = s.useState(o ?? ""), f = s.useCallback(() => {
+        let e = A.trim();
         if (0 !== e.length) {
             if (null != g && t.length >= g) return void u?.(a.intl.string(a.t.Xx7XeB));
-            c(e), A("")
+            c(e), p("")
         }
-    }, [p, g, c, u, t.length]), j = s.useCallback(e => {
+    }, [A, g, c, u, t.length]), j = s.useCallback(e => {
         switch (e.key) {
             case r.dh.BACKSPACE:
-                0 === p.length && t.length > 0 && (e.preventDefault(), e.stopPropagation(), d?.(new Set([t[t.length - 1].id])));
+                0 === A.length && t.length > 0 && (e.preventDefault(), e.stopPropagation(), d?.(new Set([t[t.length - 1].id])));
                 break;
             case r.dh.ENTER:
             case r.dh.TAB:
             case r.dh.COMMA:
                 e.preventDefault(), e.stopPropagation(), f()
         }
-    }, [f, p.length, d, t]);
+    }, [f, A.length, d, t]);
     return (0, i.jsx)(l.ksK, {
         leading: {
             type: "tags",
@@ -46,9 +46,9 @@ let o = e => {
             onRemove: d
         },
         ..._,
-        value: p,
+        value: A,
         onKeyDown: j,
-        onChange: A,
+        onChange: p,
         maxLength: m,
         disabled: x,
         onBlur: f,

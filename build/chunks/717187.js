@@ -1,26 +1,26 @@
 /** chunk id: 717187 params = (module,exports,require) **/
-t.d(n, {
+n.d(t, {
     y: () => o
 });
-var r = t(627968);
-t(64700);
-var i = t(397927),
-    l = t(349435),
-    a = t(178186),
-    d = t(617641),
-    s = t(937624),
-    u = t(985018);
+var r = n(627968);
+n(64700);
+var i = n(397927),
+    l = n(349435),
+    a = n(178186),
+    d = n(617641),
+    s = n(937624),
+    u = n(985018);
 
 function o(e) {
-    let n = (0, s.P)(e),
-        t = (0, d.Lc)({
+    let t = (0, s.P)(e),
+        n = (0, d.Lc)({
             location: "inappropriate_conversation_context_menu"
         });
-    if (null === n || !t) return null;
+    if (null === t || !n) return null;
     let {
         isTier1: o,
         isTier2: c
-    } = n;
+    } = t;
     return (0, r.jsxs)(r.Fragment, {
         children: [!o && (0, r.jsx)(i.Drp, {
             id: "mark-as-tier-1-inappro",

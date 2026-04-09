@@ -19,8 +19,8 @@ var i = n(627968),
     x = n(260509),
     h = n(576705),
     _ = n(351906),
-    p = n(287809),
-    A = n(975571),
+    A = n(287809),
+    p = n(975571),
     f = n(809505),
     j = n(997509),
     N = n(555337),
@@ -117,7 +117,7 @@ function y(e) {
                     color: "text-default",
                     variant: "text-sm/normal",
                     children: b.intl.format(b.t.BI4ukC, {
-                        helpdeskArticle: A.A.getArticleURL(I.MVz.SAFE_DIRECT_MESSAGING)
+                        helpdeskArticle: p.A.getArticleURL(I.MVz.SAFE_DIRECT_MESSAGING)
                     })
                 })]
             }), (0, i.jsx)(C.A, {
@@ -169,7 +169,7 @@ function G(e) {
     let {
         guild: t,
         mfaLevel: n
-    } = e, l = (0, o.bG)([h.A], () => null != t && h.A.can(I.xBc.MANAGE_GUILD, t), [t]), r = (0, o.bG)([p.default], () => p.default.getCurrentUser()), {
+    } = e, l = (0, o.bG)([h.A], () => null != t && h.A.can(I.xBc.MANAGE_GUILD, t), [t]), r = (0, o.bG)([A.default], () => A.default.getCurrentUser()), {
         isGuildOwnerWithMFA: c,
         showMFAUserTooltip: u
     } = s.useMemo(() => null == r ? {
@@ -178,7 +178,7 @@ function G(e) {
     } : {
         isGuildOwnerWithMFA: (0, x.ok)(t, r),
         showMFAUserTooltip: !r.mfaEnabled && (0, x.bM)(t, r)
-    }, [r, t]), _ = n === I.EkJ.ELEVATED, A = (0, a.throttle)(async e => {
+    }, [r, t]), _ = n === I.EkJ.ELEVATED, p = (0, a.throttle)(async e => {
         !c || u || await j.A.updateMFALevel({
             guildId: t.id,
             level: e ? I.EkJ.ELEVATED : I.EkJ.NONE
@@ -193,7 +193,7 @@ function G(e) {
                 label: b.intl.string(b.t.lbBfEQ),
                 description: b.intl.string(b.t.REr5AI),
                 checked: _,
-                onChange: A,
+                onChange: p,
                 disabled: !c
             }), u && (0, i.jsx)(d.po8, {
                 messageType: d.YCn.INFO,

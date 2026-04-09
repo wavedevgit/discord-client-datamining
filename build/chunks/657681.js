@@ -26,11 +26,11 @@ function _(e) {
         applicationIntegration: n
     } = e, {
         application: _
-    } = n, N = null != _.bot ? new x.A(_.bot) : null, j = (0, a.bG)([h.Ay], () => null != N ? h.Ay.getMember(t.id, N.id) : null, [N, t]), T = (0, a.bG)([p.A], () => p.A.getEveryoneRole(t)), v = (0, a.yK)([p.A], () => p.A.getManyRoles(t.id, j?.roles ?? [])), C = N?.id;
+    } = n, N = null != _.bot ? new x.A(_.bot) : null, j = (0, a.bG)([h.Ay], () => null != N ? h.Ay.getMember(t.id, N.id) : null, [N, t]), v = (0, a.bG)([p.A], () => p.A.getEveryoneRole(t)), T = (0, a.yK)([p.A], () => p.A.getManyRoles(t.id, j?.roles ?? [])), C = N?.id;
     l.useEffect(() => {
         null != C && o.A.requestMembersById(t.id, C)
     }, [t.id, C]);
-    let I = l.useMemo(() => s.kg(T.permissions, ...v.map(e => e.permissions)), [v, T]);
+    let I = l.useMemo(() => s.kg(v.permissions, ...T.map(e => e.permissions)), [T, v]);
     if (null == N) return null;
     let E = A.Ay.getApplicationIconURL({
         id: _.id,

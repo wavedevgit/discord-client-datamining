@@ -1,22 +1,22 @@
 /** chunk id: 347805 params = (module,exports,require) **/
-t.d(l, {
+n.d(l, {
     A: () => x
 });
-var n = t(627968),
-    i = t(64700),
-    s = t(311907),
-    a = t(397927),
-    r = t(629403),
-    o = t(612630),
-    d = t(351906),
-    c = t(652215),
-    u = t(985018),
-    m = t(36755);
+var t = n(627968),
+    i = n(64700),
+    s = n(311907),
+    a = n(397927),
+    r = n(629403),
+    o = n(612630),
+    d = n(351906),
+    c = n(652215),
+    u = n(985018),
+    m = n(36755);
 
 function x(e) {
     let {
         autoFocus: l = !1,
-        className: t,
+        className: n,
         userId: x,
         onUpdate: p
     } = e, A = (0, s.bG)([d.A], () => d.A.hidePersonalInformation), {
@@ -27,9 +27,9 @@ function x(e) {
         if (!l || A) return;
         let e = h.current;
         e?.selectionStart != null && (e.focus(), e.setSelection(e.value.length, e.value.length))
-    }, [l, A]), A) ? null : (0, n.jsx)("div", {
-        className: t,
-        children: (0, n.jsx)(a.d4u, {
+    }, [l, A]), A) ? null : (0, t.jsx)("div", {
+        className: n,
+        children: (0, t.jsx)(a.d4u, {
             ref: h,
             className: m.P,
             disabled: g,

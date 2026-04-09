@@ -5,8 +5,8 @@ n.d(t, {
 });
 var i = n(64700),
     s = n(735438),
-    a = n.n(s),
-    l = n(621466),
+    l = n.n(s),
+    a = n(621466),
     r = n(52133),
     o = n(451988),
     d = n(684013),
@@ -75,7 +75,7 @@ class E extends i.PureComponent {
         observe: !0,
         observeInterval: 1e3
     };
-    zone = a().uniqueId("ClickArea");
+    zone = l().uniqueId("ClickArea");
     interval = new o.IX;
     componentDidMount() {
         this.props.observe ? this.observeZone() : this.updateZone()
@@ -97,7 +97,7 @@ class E extends i.PureComponent {
     }
     updateZone = () => {
         let e = this.props.contentDomRef.current;
-        if ((0, l.vq)(e)) {
+        if ((0, a.vq)(e)) {
             let {
                 left: t,
                 top: n,

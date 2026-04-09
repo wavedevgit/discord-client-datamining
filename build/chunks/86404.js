@@ -22,9 +22,9 @@ function g(e) {
         channelId: g,
         onClose: m
     } = e, {
-        mutualFriends: I
+        mutualFriends: h
     } = (0, o.A)(n), {
-        analyticsLocations: h
+        analyticsLocations: I
     } = (0, s.Ay)(), {
         context: f,
         trackUserProfileAction: x
@@ -34,10 +34,10 @@ function g(e) {
     }, [n.id, v]), (0, i.jsx)(l.IpV, {
         className: A.DK,
         fade: !0,
-        children: null == I ? (0, i.jsx)("div", {
+        children: null == h ? (0, i.jsx)("div", {
             className: A.Ie,
             children: (0, i.jsx)(l.y$y, {})
-        }) : 0 === I.length ? (0, i.jsxs)("div", {
+        }) : 0 === h.length ? (0, i.jsxs)("div", {
             className: A.Ie,
             children: [(0, i.jsx)("div", {
                 className: A.on
@@ -45,7 +45,7 @@ function g(e) {
                 className: A.BI,
                 children: p.intl.string(p.t["/5p4gx"])
             })]
-        }) : I.map(e => {
+        }) : h.map(e => {
             let {
                 key: n,
                 user: a,
@@ -63,7 +63,7 @@ function g(e) {
                     }), e = a.id, (0, u.openUserProfileModal)({
                         ...f,
                         userId: e,
-                        sourceAnalyticsLocations: h
+                        sourceAnalyticsLocations: I
                     })
                 }
             }, n)

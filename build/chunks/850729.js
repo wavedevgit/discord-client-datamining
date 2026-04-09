@@ -26,8 +26,8 @@ var i = n(627968),
     T = n(87941),
     S = n(941971),
     b = n(900848),
-    v = n(772972),
-    y = n(65611),
+    y = n(772972),
+    v = n(65611),
     j = n(652215),
     R = n(788868),
     O = n(235079),
@@ -67,7 +67,7 @@ function U(e) {
     let k = t || _ || R,
         w = (0, i.jsx)(o.Qk9, {
             selected: !0,
-            lowerBadge: a > 0 ? (0, y.wN)(a) : null,
+            lowerBadge: a > 0 ? (0, v.wN)(a) : null,
             upperBadge: P,
             lowerBadgeSize: {
                 width: (0, o.o6S)(a)
@@ -113,7 +113,7 @@ function U(e) {
                     selected: t,
                     hovered: _,
                     className: M.Io
-                }), (0, i.jsx)(v.A, {
+                }), (0, i.jsx)(y.A, {
                     hideOnClick: !0,
                     text: G,
                     selected: t,

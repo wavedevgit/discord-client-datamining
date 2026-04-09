@@ -1,6 +1,6 @@
 /** chunk id: 309818 params = (module,exports,require) **/
 n.d(t, {
-    A: () => I
+    A: () => b
 }), n(321073);
 var i = n(627968),
     l = n(64700),
@@ -11,80 +11,82 @@ var i = n(627968),
     d = n(846293),
     c = n(793574),
     u = n(688810),
-    m = n(21599),
-    _ = n(529200),
-    h = n(95701),
-    p = n(734057),
-    g = n(287809),
-    A = n(403362),
-    x = n(168428),
-    f = n(652215),
-    C = n(985018),
-    E = n(147673);
+    m = n(47167),
+    _ = n(21599),
+    h = n(529200),
+    p = n(95701),
+    g = n(734057),
+    A = n(994500),
+    x = n(287809),
+    f = n(403362),
+    C = n(168428),
+    E = n(652215),
+    I = n(985018),
+    v = n(147673);
 
-function I(e) {
+function b(e) {
     let t, {
             invite: n,
             message: s,
-            currentUserId: I,
-            onTransitionToInviteChannel: v,
-            onAcceptInstantInvite: b
+            currentUserId: b,
+            onTransitionToInviteChannel: T,
+            onAcceptInstantInvite: y
         } = e,
-        T = I === s.author.id,
-        N = n.state === f.elq.ACCEPTING,
-        y = (0, o.bG)([p.A], () => null != n.channel ? p.A.getChannel(n.channel.id) : null, [n]);
-    r()(null == y || y.isPrivate(), "must be a private channel");
+        N = b === s.author.id,
+        S = n.state === E.elq.ACCEPTING,
+        j = (0, o.bG)([g.A], () => null != n.channel ? g.A.getChannel(n.channel.id) : null, [n]);
+    r()(null == j || j.isPrivate(), "must be a private channel");
     let {
-        analyticsLocations: S
-    } = (0, u.Ay)(c.A.INVITE_EMBED), j = null != y, L = l.useCallback(() => {
+        analyticsLocations: L
+    } = (0, u.Ay)(c.A.INVITE_EMBED), R = null != j, P = l.useCallback(() => {
         let e = "noop";
-        j ? (v(), e = "transition") : (b(), e = "accept"), (0, d.he)({
+        R ? (T(), e = "transition") : (y(), e = "accept"), (0, d.he)({
             invite: n,
             action: e,
             inviter_id: s.author.id,
             invite_message_id: s.id,
-            invite_instance_id: (0, m._U)(n.code, s.id)
-        }, S)
-    }, [n, s, S, j, v, b]);
-    if (null == y) {
-        if (null == n.channel) return (0, i.jsx)(x.A, {});
-        y = (0, h.OY)(n.channel), t = null != n.channel && null != n.channel.recipients ? n.channel.recipients : []
+            invite_instance_id: (0, _._U)(n.code, s.id)
+        }, L)
+    }, [n, s, L, R, T, y]);
+    if (null == j) {
+        if (null == n.channel) return (0, i.jsx)(C.A, {});
+        j = (0, p.OY)(n.channel), t = null != n.channel && null != n.channel.recipients ? n.channel.recipients : []
     } else {
-        t = y.recipients.reduce((e, t) => {
-            let n = g.default.getUser(t);
+        t = j.recipients.reduce((e, t) => {
+            let n = x.default.getUser(t);
             return null != n && e.push(n), e
         }, []);
-        let e = g.default.getCurrentUser();
-        j && null != e && t.push(e)
+        let e = x.default.getCurrentUser();
+        R && null != e && t.push(e)
     }
-    let R = y.name;
-    (null == R || "" === R) && (R = t.length > 0 ? t.filter(A.Vq).map(e => e.username).join(", ") : C.intl.string(C.t.LJpTRF));
-    let P = C.intl.string(C.t.XpeFYr),
-        D = "active";
-    j && (P = C.intl.string(C.t.cEnaWx), D = "secondary");
-    let M = C.intl.string(C.t["3p3/BK"]);
-    return T && (M = C.intl.string(C.t.qmtuXE)), (0, i.jsxs)(_.A, {
-        children: [(0, i.jsx)(_.A.Header, {
-            text: M
-        }), (0, i.jsxs)(_.A.Body, {
+    let D = (0, m.m1)(j, x.default, A.A);
+    (null == D || "" === D) && (D = t.length > 0 ? t.filter(f.Vq).map(e => e.username).join(", ") : I.intl.string(I.t.LJpTRF));
+    let M = I.intl.string(I.t.XpeFYr),
+        w = "active";
+    R && (M = I.intl.string(I.t.cEnaWx), w = "secondary");
+    let O = I.intl.string(I.t["3p3/BK"]);
+    return N && (O = I.intl.string(I.t.qmtuXE)), (0, i.jsxs)(h.A, {
+        children: [(0, i.jsx)(h.A.Header, {
+            text: O
+        }), (0, i.jsxs)(h.A.Body, {
             children: [(0, i.jsxs)("div", {
-                className: E.iH,
-                children: [(0, i.jsx)(_.A.Icon, {
-                    channel: y,
-                    onClick: j ? L : void 0
-                }), (0, i.jsx)(_.A.Info, {
-                    title: R,
-                    onClick: j ? L : void 0,
-                    children: (0, i.jsx)(_.A.Data, {
+                className: v.iH,
+                children: [(0, i.jsx)(h.A.Icon, {
+                    channel: j,
+                    onClick: R ? P : void 0
+                }), (0, i.jsx)(h.A.Info, {
+                    title: D,
+                    onClick: R ? P : void 0,
+                    children: (0, i.jsx)(h.A.Data, {
                         members: t.length
                     })
                 })]
             }), (0, i.jsx)(a.$nd, {
-                onClick: L,
-                loading: N,
-                disabled: j,
-                variant: D,
-                text: P,
+                onClick: P,
+                loading: S,
+                disabled: R,
+                variant: w,
+                text: M,
                 fullWidth: !0
             })]
         })]

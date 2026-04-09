@@ -19,7 +19,7 @@ function g(e) {
         hasTOTPEnabled: n,
         currentUser: g
     } = e, _ = s.useCallback(e => {
-        (0, l.qfG)(t => (0, i.jsx)(d.A, {
+        (0, l.qfG)(t => (0, i.jsx)(d.default, {
             ...t,
             password: e
         }), {

@@ -1,7 +1,7 @@
 /** chunk id: 763582 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => A
+    A: () => p
 });
 var i = n(627968),
     s = n(64700),
@@ -72,7 +72,7 @@ function _(e) {
     })
 }
 
-function p() {
+function A() {
     let e = s.useMemo(() => [{
             backgroundClass: x.Cy,
             username: "Wumpus#0000",
@@ -170,7 +170,7 @@ function p() {
     })
 }
 
-function A(e) {
+function p(e) {
     let {
         guild: t,
         everyoneRole: n,
@@ -188,7 +188,7 @@ function A(e) {
                 children: g.intl.string(g.t["LPJmL/"])
             }), (0, i.jsxs)("div", {
                 className: x.kL,
-                children: [(0, i.jsx)(p, {}), (0, i.jsx)(a.Heading, {
+                children: [(0, i.jsx)(A, {}), (0, i.jsx)(a.Heading, {
                     variant: "heading-xl/semibold",
                     children: g.intl.string(g.t.ALlnbi)
                 }), (0, i.jsx)(a.Text, {

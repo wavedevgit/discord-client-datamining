@@ -94,7 +94,7 @@ function L() {
             onAvatarChange: e => {
                 (0, C.p)({
                     avatar: e
-                }), (0, c.WU)(e)
+                }), (0, c.WU)(null == e ? "remove" : "set")
             },
             showRemoveAvatarButton: H,
             errors: w.avatar,

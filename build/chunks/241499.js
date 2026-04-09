@@ -17,8 +17,8 @@ var i = n(627968),
     x = n(408018),
     h = n(133343),
     _ = n(734057),
-    p = n(808728),
-    A = n(557420),
+    A = n(808728),
+    p = n(557420),
     f = n(596484),
     j = n(260197),
     N = n(652215),
@@ -35,8 +35,8 @@ function I(e) {
         onKeyDown: o,
         onClear: u,
         onRuleReorder: _,
-        isDropHovered: p,
-        focused: A,
+        isDropHovered: A,
+        focused: p,
         onFocus: f,
         previewEnabled: N,
         isDragEnabled: I,
@@ -77,7 +77,7 @@ function I(e) {
     return (0, i.jsx)("div", {
         ref: v,
         className: r()(C.XQ, {
-            [C.cB]: p
+            [C.cB]: A
         }),
         "data-dnd-name": M,
         children: (0, i.jsxs)("div", {
@@ -91,7 +91,7 @@ function I(e) {
                     richValue: R,
                     channel: n,
                     placeholder: E.intl.string(E.t.BRkD41),
-                    focused: A,
+                    focused: p,
                     onChange: (e, n, i) => {
                         let s = b ? t.value : n;
                         s.length > j.pc && (s = s.slice(0, j.pc)), n !== s && (n = s, i = (0, x.x7)(s)), a(n), O({
@@ -137,7 +137,7 @@ function b(e) {
         setRules: n,
         guild: l,
         disabled: r
-    } = e, a = l.rulesChannelId, d = l.features.has(N.GuildFeatures.PREVIEW_ENABLED), c = (0, u.bG)([_.A], () => null != a ? _.A.getChannel(a) : null), g = (0, u.bG)([p.Ay], () => p.Ay.getDefaultChannel(l.id)), [x, h] = s.useState(null), [T, b] = s.useState(null), v = s.useCallback(e => {
+    } = e, a = l.rulesChannelId, d = l.features.has(N.GuildFeatures.PREVIEW_ENABLED), c = (0, u.bG)([_.A], () => null != a ? _.A.getChannel(a) : null), g = (0, u.bG)([A.Ay], () => A.Ay.getDefaultChannel(l.id)), [x, h] = s.useState(null), [T, b] = s.useState(null), v = s.useCallback(e => {
         if (!r && t.length !== j.yN)
             if (null != e && "" === t[t.length - 1].value) {
                 let i = [...t];
@@ -216,7 +216,7 @@ function b(e) {
                 isDragEnabled: !r && t.length > 1,
                 disabled: r
             }, e.id))
-        }), !O && (0, i.jsx)(A.d, {
+        }), !O && (0, i.jsx)(p.d, {
             text: E.intl.string(E.t.Cq5JuR),
             onClick: S,
             disabled: r

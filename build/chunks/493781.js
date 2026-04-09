@@ -22,9 +22,9 @@ function _(e) {
         activeType: t,
         onTypePicked: n,
         guild: l
-    } = e, _ = l.features.has(g.GuildFeatures.COMMUNITY), p = (0, a.bG)([c.A], () => c.A.can(g.xBc.ADMINISTRATOR, l)), A = s.useMemo(() => {
-        let e = t === m.J.DISCOVERABLE && !p,
-            n = _ && (t === m.J.DISCOVERABLE || p);
+    } = e, _ = l.features.has(g.GuildFeatures.COMMUNITY), A = (0, a.bG)([c.A], () => c.A.can(g.xBc.ADMINISTRATOR, l)), p = s.useMemo(() => {
+        let e = t === m.J.DISCOVERABLE && !A,
+            n = _ && (t === m.J.DISCOVERABLE || A);
         return [{
             id: m.J.INVITE,
             title: x.intl.string(x.t["HQVS/L"]),
@@ -47,7 +47,7 @@ function _(e) {
             enabled: n,
             ineligibleText: _ ? x.intl.string(x.t.iBpXPg) : x.intl.string(x.t["5TQ+eE"])
         }]
-    }, [t, _, p]);
+    }, [t, _, A]);
     return (0, i.jsxs)("div", {
         children: [(0, i.jsx)(d.Heading, {
             color: "text-strong",
@@ -65,7 +65,7 @@ function _(e) {
             onItemSelect: n,
             orientation: "horizontal",
             className: h.Hd,
-            children: A.map(e => {
+            children: p.map(e => {
                 let n = e.id === t;
                 return (0, i.jsx)(d.VQ0.Item, {
                     id: e.id,

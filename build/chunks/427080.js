@@ -26,8 +26,8 @@ var n = l(627968),
     C = l(691012),
     f = l(850183),
     T = l(557582),
-    S = l(515115),
-    y = l(666394),
+    y = l(515115),
+    S = l(666394),
     _ = l(988794),
     k = l(985018),
     R = l(485020);
@@ -55,7 +55,7 @@ let L = (e, t) => {
             if (null == t) return null;
             let e = h.A.getGuild(t.id);
             return null != e ? e : (0, N.fh)(t) ? t : (0, N.DY)(t)
-        }, [t]), x = (0, S.L)(l, i), v = s.useCallback(e => {
+        }, [t]), x = (0, y.L)(l, i), v = s.useCallback(e => {
             a && null != l && (e.stopPropagation(), (0, u.rq)(l))
         }, [a, l]), g = s.useCallback(e => {
             L(l)(e)
@@ -120,7 +120,7 @@ let L = (e, t) => {
             onAcceptInstantInvite: o,
             onTransitionToInviteChannel: m
         } = e, x = (0, r.bG)([p.Ay], () => p.Ay.isInterestedInEventRecurrence(l, s), [l, s]), v = e => {
-            e.stopPropagation(), (0, y.A)(l, s, t)
+            e.stopPropagation(), (0, S.A)(l, s, t)
         }, h = e => {
             e.stopPropagation(), u ? i && m() : o()
         };
@@ -168,8 +168,8 @@ let L = (e, t) => {
         }, [r, t, x]);
         if (null == t || !v) return null;
         let j = (0, p.Fd)(t),
-            S = (0, p.AZ)(t),
-            y = t.entity_type === _.Ps.EXTERNAL;
+            y = (0, p.AZ)(t),
+            S = t.entity_type === _.Ps.EXTERNAL;
         return (0, n.jsx)(m.A, {
             className: a()({
                 [R.vk]: r
@@ -197,14 +197,14 @@ let L = (e, t) => {
                         isMember: r
                     }), (0, n.jsx)(D, {
                         isActive: j,
-                        isEnded: S,
+                        isEnded: y,
                         isMember: r,
                         guildId: t.guild_id,
                         guildScheduledEventId: t.id,
                         recurrenceId: x,
                         onAcceptInstantInvite: d,
                         onTransitionToInviteChannel: o,
-                        isExternal: y
+                        isExternal: S
                     })]
                 })]
             })

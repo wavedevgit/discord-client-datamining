@@ -5,8 +5,8 @@ n.d(t, {
 });
 var i = n(627968),
     s = n(64700),
-    a = n(684013),
-    l = n(471024),
+    l = n(684013),
+    a = n(471024),
     r = n(652215);
 class o extends s.Component {
     handleNotificationShow = () => {
@@ -25,7 +25,7 @@ class o extends s.Component {
                 onDismissClick: n
             }
         } = this.props.notification;
-        a.A.updateNotificationStatus(t), n?.(e, t)
+        l.A.updateNotificationStatus(t), n?.(e, t)
     };
     handleNotificationClick = e => {
         let {
@@ -67,7 +67,7 @@ class o extends s.Component {
         let e, t, n, i, {
             props: {
                 position: s,
-                zIndex: a
+                zIndex: l
             }
         } = this;
         switch (s) {
@@ -91,7 +91,7 @@ class o extends s.Component {
             right: t,
             bottom: n,
             top: i,
-            zIndex: a
+            zIndex: l
         }
     }
     render() {
@@ -103,7 +103,7 @@ class o extends s.Component {
                         renderFooter: t,
                         onNotificationShow: n,
                         onDismissClick: s,
-                        onNotificationClick: a,
+                        onNotificationClick: l,
                         onConfirmClick: r,
                         onCancelClick: o,
                         ...d
@@ -111,12 +111,12 @@ class o extends s.Component {
                 }
             }
         } = this;
-        return (0, i.jsx)(l.Ay, {
+        return (0, i.jsx)(a.Ay, {
             ...d,
             locked: e,
             onNotificationShow: this.handleNotificationShow,
             onDismissClick: null != s ? this.handleDismissClick : void 0,
-            onNotificationClick: null != a ? this.handleNotificationClick : null,
+            onNotificationClick: null != l ? this.handleNotificationClick : null,
             onConfirmClick: null != r ? this.handleConfirmClick : null,
             onCancelClick: null != o ? this.handleCancelClick : null,
             renderFooter: this.renderFooter,

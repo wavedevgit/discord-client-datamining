@@ -31,8 +31,8 @@ let I = (0, a.A)(e => {
         onContextMenuParticipant: T,
         onFullscreenParticipant: S,
         channel: b,
-        hasConnectPermission: v,
-        className: y,
+        hasConnectPermission: y,
+        className: v,
         inCall: j,
         showParticipants: R = !0,
         width: O,
@@ -54,7 +54,7 @@ let I = (0, a.A)(e => {
     if (b?.isGuildVocalOrThread() && !j) return (0, i.jsx)(A.A, {
         channel: b,
         participants: t,
-        hasConnectPermission: v
+        hasConnectPermission: y
     });
     if (n = j ? n : t, C === f.DUB.HAVEN) return (0, i.jsx)(u.A, {
         participants: n,
@@ -101,7 +101,7 @@ let I = (0, a.A)(e => {
         filteredParticipants: k,
         participants: t,
         popoutType: U,
-        className: y,
+        className: v,
         idle: M,
         height: L,
         width: O,

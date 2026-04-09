@@ -51,7 +51,7 @@ let G = e => [e.userId, ... function(e) {
                 channel: t,
                 voiceStates: n
             } = e;
-            return [t.name, t.id, t.guild_id, T.A.getGuild(t.guild_id)?.name ?? "", ...(n ?? []).flatMap(e => G(e))].filter(M.Vq)
+            return [(0, d.m1)(t, x.default, C.A), t.id, t.guild_id, T.A.getGuild(t.guild_id)?.name ?? "", ...(n ?? []).flatMap(e => G(e))].filter(M.Vq)
         },
         throttleMs: 100
     },
@@ -178,10 +178,10 @@ let j = i.memo(function(e) {
             onMouseLeave: h,
             query: g,
             showVoiceAvatars: I = !0
-        } = e, A = (0, a.bG)([p.A], () => p.A.getChannel(t), [t]), f = A?.getGuildId(), E = (0, a.bG)([T.A], () => T.A.getGuild(f), [f]), m = (0, c.gU)(A, E), S = i?.id === t, _ = S ? "text-feedback-positive" : n ? "interactive-text-active" : "text-muted", N = S ? o.LU0.colors.TEXT_FEEDBACK_POSITIVE : n ? o.LU0.colors.INTERACTIVE_TEXT_ACTIVE : o.LU0.colors.ICON_MUTED;
+        } = e, A = (0, a.bG)([p.A], () => p.A.getChannel(t), [t]), f = (0, d.Ay)(A), E = A?.getGuildId(), m = (0, a.bG)([T.A], () => T.A.getGuild(E), [E]), S = (0, c.gU)(A, m), _ = i?.id === t, N = _ ? "text-feedback-positive" : n ? "interactive-text-active" : "text-muted", y = _ ? o.LU0.colors.TEXT_FEEDBACK_POSITIVE : n ? o.LU0.colors.INTERACTIVE_TEXT_ACTIVE : o.LU0.colors.ICON_MUTED;
         return null == A ? null : (0, l.jsxs)(o.sqX, {
             className: s()(U.Uw, n && U.gt),
-            "aria-label": A.name,
+            "aria-label": f ?? "",
             onClick: () => r(t),
             onMouseOver: () => u(t),
             onMouseLeave: () => h(t),
@@ -194,20 +194,20 @@ let j = i.memo(function(e) {
                 className: U.rg,
                 children: [(0, l.jsxs)("div", {
                     className: U.Ks,
-                    children: [null != m ? (0, l.jsx)(m, {
-                        color: N,
+                    children: [null != S ? (0, l.jsx)(S, {
+                        color: y,
                         size: "xs",
                         className: U.p
                     }) : void 0, (0, l.jsx)(o.Text, {
-                        variant: S ? "text-sm/semibold" : "text-sm/medium",
-                        color: _,
+                        variant: _ ? "text-sm/semibold" : "text-sm/medium",
+                        color: N,
                         className: U.rU,
                         children: (0, d.m1)(A, x.default, C.A)
                     })]
                 }), (0, l.jsx)(o.Text, {
-                    variant: S ? "text-xs/semibold" : "text-xs/medium",
-                    color: _,
-                    children: E?.name ?? A.name
+                    variant: _ ? "text-xs/semibold" : "text-xs/medium",
+                    color: N,
+                    children: m?.name ?? f
                 })]
             }), (0, l.jsx)("div", {
                 className: U.vU,

@@ -1,7 +1,7 @@
 /** chunk id: 950358 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => T
+    A: () => I
 }), n(321073);
 var i = n(627968),
     s = n(64700),
@@ -11,33 +11,34 @@ var i = n(627968),
     o = n(990078),
     d = n(397927),
     c = n(442433),
-    u = n(112389),
-    m = n(166444),
-    g = n(637248),
-    x = n(418448),
-    h = n(561321),
-    _ = n(82566),
+    u = n(47167),
+    m = n(112389),
+    g = n(166444),
+    x = n(637248),
+    h = n(418448),
+    _ = n(561321),
+    A = n(82566),
     p = n(652215),
-    A = n(985018),
-    f = n(395494);
+    f = n(985018),
+    j = n(395494);
 
-function j(e) {
+function N(e) {
     let {
         guild: t,
         channel: s
-    } = e, l = (0, h.Rg)(s.id);
+    } = e, l = (0, u.Ay)(s), a = (0, _.Rg)(s.id);
     return "null" === s.id ? (0, i.jsx)("div", {
-        className: r()(f.Fv, f.d0),
+        className: r()(j.Fv, j.d0),
         children: (0, i.jsx)(d.Text, {
-            className: f.O1,
+            className: j.O1,
             color: "text-muted",
             variant: "text-xs/semibold",
             lineClamp: 1,
-            children: s.name
+            children: l
         })
     }) : (0, i.jsxs)(d.DUT, {
-        className: r()(f.Fv, {
-            [f.d0]: "null" === s.id
+        className: r()(j.Fv, {
+            [j.d0]: "null" === s.id
         }),
         onContextMenu: e => {
             (0, c.L3)(e, async () => {
@@ -51,7 +52,7 @@ function j(e) {
                 })
             })
         },
-        onClick: e => (e.stopPropagation(), (0, u.S)(t.id, s.id) ? (0, x.bN)(s.id) : (0, d.mMO)(async () => {
+        onClick: e => (e.stopPropagation(), (0, m.S)(t.id, s.id) ? (0, h.bN)(s.id) : (0, d.mMO)(async () => {
             let {
                 default: e
             } = await n.e("54857").then(n.bind(n, 147696));
@@ -62,54 +63,54 @@ function j(e) {
             })
         }), !0),
         children: [(0, i.jsx)(d.Text, {
-            className: f.O1,
+            className: j.O1,
             color: "text-muted",
             variant: "text-xs/semibold",
             lineClamp: 1,
-            children: s.name
+            children: l
         }), (0, i.jsx)(d.P7L, {
-            checked: l
+            checked: a
         })]
     })
 }
-let N = s.memo(function() {
+let E = s.memo(function() {
         return (0, i.jsx)("div", {
-            className: f.me
+            className: j.me
         })
     }),
-    E = s.memo(function(e) {
+    C = s.memo(function(e) {
         let {
             index: t
         } = e;
         return (0, i.jsx)(d.Text, {
             variant: "text-xs/normal",
-            className: f.Ks,
+            className: j.Ks,
             children: "\xb7"
         }, `separator-${t}`)
     }),
-    C = s.memo(function(e) {
+    T = s.memo(function(e) {
         let {
             channel: t,
             category: s,
             guild: l,
-            isFirstChannel: g,
-            isLastChannel: j,
-            tooltipDirection: C = "right"
-        } = e, T = (0, h.Rg)(t.id, s.id), I = (0, h.eK)(t.id, s.id), b = (0, h.v)(t.id, s.id), v = (0, h.fS)(l.id, s.id), S = null != (0, _.A)(l).find(e => e.id === t.id);
+            isFirstChannel: x,
+            isLastChannel: N,
+            tooltipDirection: T = "right"
+        } = e, I = (0, u.Ay)(t), b = (0, _.Rg)(t.id, s.id), v = (0, _.eK)(t.id, s.id), S = (0, _.v)(t.id, s.id), y = (0, _.fS)(l.id, s.id), R = null != (0, A.A)(l).find(e => e.id === t.id);
         return (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)(o.m, {
                 asContainer: !0,
-                __unsupportedReactNodeAsText: b ?? v,
+                __unsupportedReactNodeAsText: S ?? y,
                 delay: 500,
-                position: C,
+                position: T,
                 children: (0, i.jsxs)(d.DUT, {
-                    className: r()(f.WG, {
-                        [f.Qn]: g,
-                        [f.wp]: j,
-                        [f.r9]: I
+                    className: r()(j.WG, {
+                        [j.Qn]: x,
+                        [j.wp]: N,
+                        [j.r9]: v
                     }),
                     onClick: e => {
-                        if (!I) return e.stopPropagation(), (0, u.S)(l.id, t.id) ? (0, x.bN)(t.id) : (0, d.mMO)(async () => {
+                        if (!v) return e.stopPropagation(), (0, m.S)(l.id, t.id) ? (0, h.bN)(t.id) : (0, d.mMO)(async () => {
                             let {
                                 default: e
                             } = await n.e("54857").then(n.bind(n, 147696));
@@ -142,51 +143,51 @@ let N = s.memo(function() {
                         })
                     },
                     children: [(0, i.jsx)("div", {
-                        className: f.yW,
+                        className: j.yW,
                         children: (0, i.jsxs)("div", {
-                            className: f.HA,
-                            children: [(0, i.jsx)(m.gm, {
+                            className: j.HA,
+                            children: [(0, i.jsx)(g.gm, {
                                 channel: t,
                                 guild: l
                             }), (0, i.jsx)(a.A, {
-                                className: f.__invalid_name,
+                                className: j.__invalid_name,
                                 children: (0, i.jsx)(d.Text, {
-                                    className: f.be,
+                                    className: j.be,
                                     variant: "text-md/medium",
                                     lineClamp: 1,
-                                    color: I ? "text-muted" : "text-default",
-                                    children: t.name
+                                    color: v ? "text-muted" : "text-default",
+                                    children: I
                                 })
-                            }), S ? (0, i.jsxs)(i.Fragment, {
-                                children: [(0, i.jsx)(E, {
+                            }), R ? (0, i.jsxs)(i.Fragment, {
+                                children: [(0, i.jsx)(C, {
                                     index: 0
                                 }), (0, i.jsx)(d.Text, {
                                     variant: "text-xs/medium",
-                                    className: f.qy,
+                                    className: j.qy,
                                     color: "text-brand",
-                                    children: A.intl.string(A.t.mPxmeE)
+                                    children: f.intl.string(f.t.mPxmeE)
                                 })]
                             }) : null]
                         })
                     }), (0, i.jsx)("div", {
-                        className: f.tN,
-                        children: (0, u.S)(t.guild_id, t.id) ? (0, i.jsx)(d.P7L, {
-                            checked: T,
-                            disabled: I
+                        className: j.tN,
+                        children: (0, m.S)(t.guild_id, t.id) ? (0, i.jsx)(d.P7L, {
+                            checked: b,
+                            disabled: v
                         }) : (0, i.jsx)(d.Button, {
                             size: "sm",
                             variant: "secondary",
-                            text: A.intl.string(A.t.zA9d1J),
+                            text: f.intl.string(f.t.zA9d1J),
                             icon: d.XAi,
                             onClick: p.tEg
                         })
                     })]
                 })
-            }), !j && (0, i.jsx)(N, {})]
+            }), !N && (0, i.jsx)(E, {})]
         })
     });
 
-function T(e) {
+function I(e) {
     let {
         categories: t,
         guild: n,
@@ -194,14 +195,14 @@ function T(e) {
         hasSidebar: r
     } = e, a = s.useCallback(e => {
         let s = t._categories[e];
-        return (0, i.jsx)(j, {
+        return (0, i.jsx)(N, {
             channel: s.channel,
             guild: n
         }, s.channel.id)
     }, [t, n]), o = s.useCallback((e, s) => {
         let l = t._categories[e],
             a = t[l.channel.id][s];
-        return null == a ? null : (0, i.jsx)(C, {
+        return null == a ? null : (0, i.jsx)(T, {
             category: l.channel,
             channel: a.channel,
             guild: n,
@@ -209,7 +210,7 @@ function T(e) {
             isLastChannel: t[l.channel.id].length - 1 === s,
             tooltipDirection: r ? "right" : "top"
         }, a.channel.id)
-    }, [t, n, r]), d = (0, g.zH)(n.id, t, 64);
+    }, [t, n, r]), d = (0, x.zH)(n.id, t, 64);
     return (0, i.jsx)("div", {
         className: l,
         children: d.map((e, t) => {

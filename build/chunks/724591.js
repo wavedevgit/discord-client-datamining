@@ -26,8 +26,8 @@ var i = n(627968),
     T = n(652793),
     S = n(652215),
     b = n(49999),
-    v = n(985018),
-    y = n(11464);
+    y = n(985018),
+    v = n(11464);
 let j = l.memo(function(e) {
     let {
         guild: t,
@@ -86,8 +86,8 @@ let j = l.memo(function(e) {
             }),
             text: (0, i.jsx)(u.Text, {
                 variant: "text-md/medium",
-                className: a()(y.UU, n),
-                children: v.intl.string(v.t.vyaWs7)
+                className: a()(v.UU, n),
+                children: y.intl.string(y.t.vyaWs7)
             }),
             selected: s,
             onMouseDown: F,
@@ -95,7 +95,7 @@ let j = l.memo(function(e) {
             onContextMenu: K,
             trailing: (0, i.jsxs)(i.Fragment, {
                 children: [k && (0, i.jsx)(u.LpS, {
-                    text: v.intl.string(v.t.y2b7CA),
+                    text: y.intl.string(y.t.y2b7CA),
                     color: d.A.colors.BACKGROUND_BRAND.css
                 }), r]
             })
@@ -116,8 +116,8 @@ let j = l.memo(function(e) {
             onRequestClose: W,
             targetElementRef: R,
             skuImageDetails: q,
-            title: v.intl.string(v.t["7PvvS9"]),
-            body: v.intl.formatToPlainString(v.t["9J4h1a"], {
+            title: y.intl.string(y.t["7PvvS9"]),
+            body: y.intl.formatToPlainString(y.t["9J4h1a"], {
                 applicationName: U.applicationName
             })
         }) : null, [V, U, H, F, Y, W, q]);

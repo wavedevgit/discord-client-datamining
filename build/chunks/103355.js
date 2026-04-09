@@ -63,7 +63,7 @@ function A(e) {
         recurrenceRule: C,
         guildEventId: f,
         recurrenceId: T
-    } = e, S = (0, o.rdh)(u.A.colors.TEXT_BRAND).hex(), y = (0, o.rdh)(u.A.colors.TEXT_FEEDBACK_POSITIVE).hex(), _ = (0, o.rdh)(u.A.colors.TEXT_FEEDBACK_CRITICAL).hex();
+    } = e, y = (0, o.rdh)(u.A.colors.TEXT_BRAND).hex(), S = (0, o.rdh)(u.A.colors.TEXT_FEEDBACK_POSITIVE).hex(), _ = (0, o.rdh)(u.A.colors.TEXT_FEEDBACK_CRITICAL).hex();
     null == A && (A = i === h.Ps.EXTERNAL ? N.intl.string(N.t.IyZxjH) : N.intl.string(N.t["X2K3/4"]));
     let k = (0, m.A)(T, f),
         [{
@@ -148,12 +148,12 @@ function A(e) {
             }
         })({
             timeStatus: G,
-            textBrand: S,
-            textPositive: y,
+            textBrand: y,
+            textPositive: S,
             textDanger: _,
             endDateTimeString: L,
             startDateTimeString: R
-        }), [G, S, y, _, L, R]),
+        }), [G, y, S, _, L, R]),
         Y = null;
     if (null != C) {
         let e = (0, x.X7)(C);

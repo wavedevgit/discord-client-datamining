@@ -26,8 +26,8 @@ var i = n(627968),
     T = n(263715),
     S = n(941971),
     b = n(264409),
-    v = n(531053),
-    y = n(647668),
+    y = n(531053),
+    v = n(647668),
     j = n(107385),
     R = n(900848),
     O = n(65611),
@@ -146,14 +146,14 @@ let P = l.memo(function(e) {
         }, [ee, n]),
         eb = (0, A.rdh)(A.LU0.modules.guildbar.AVATAR_SIZE);
     if (null == k) return null;
-    let ev = k.name;
-    W > 0 ? ev = M.intl.formatToPlainString(M.t["/uzRss"], {
+    let ey = k.name;
+    W > 0 ? ey = M.intl.formatToPlainString(M.t["/uzRss"], {
         guildName: k.name,
         mentions: W
-    }) : V && (ev = M.intl.formatToPlainString(M.t.lzqe42, {
+    }) : V && (ey = M.intl.formatToPlainString(M.t.lzqe42, {
         guildName: k.name
     }));
-    let ey = (0, i.jsx)(b.A, {
+    let ev = (0, i.jsx)(b.A, {
             guild: k,
             show: eA,
             active: B,
@@ -165,7 +165,7 @@ let P = l.memo(function(e) {
             }
         }),
         ej = ep ? (0, i.jsx)(A.jlP, {
-            ariaLabel: ev,
+            ariaLabel: ey,
             name: k.name,
             onClick: eg,
             onMouseEnter: eN,
@@ -188,7 +188,7 @@ let P = l.memo(function(e) {
                 "data-dnd-name": k.name,
                 "data-drop-hovering": eA,
                 children: (0, i.jsx)(A.jlP, {
-                    ariaLabel: ev,
+                    ariaLabel: ey,
                     name: k.name,
                     onClick: eg,
                     onMouseEnter: eN,
@@ -205,8 +205,8 @@ let P = l.memo(function(e) {
                 })
             })
         }),
-        eR = eA || eu ? ey : ej,
-        eO = (0, i.jsx)(v.g4, {
+        eR = eA || eu ? ev : ej,
+        eO = (0, i.jsx)(y.g4, {
             children: (0, i.jsx)(j.A, {})
         }),
         eL = ep ? (0, i.jsx)(o.animated.div, {
@@ -255,12 +255,12 @@ let P = l.memo(function(e) {
             selected: !es && B,
             unread: !es && V,
             className: D.Io
-        }), (0, i.jsx)(y.A, {
+        }), (0, i.jsx)(v.A, {
             guild: k,
             disabled: q,
             isDragging: es,
             children: es ? eO : eL
-        }), z ? (0, i.jsx)(v.Ay, {
+        }), z ? (0, i.jsx)(y.Ay, {
             name: k.name,
             targetNode: t,
             onDragOverChanged: eC

@@ -1,6 +1,6 @@
 /** chunk id: 422361 params = (module,exports,require) **/
 n.d(t, {
-    A: () => el
+    A: () => ea
 });
 var i = n(627968),
     l = n(64700),
@@ -26,8 +26,8 @@ var i = n(627968),
     T = n(857253),
     S = n(202384),
     b = n(51758),
-    v = n(721592),
-    y = n(508654),
+    y = n(721592),
+    v = n(508654),
     j = n(214660),
     R = n(140547),
     O = n(303333),
@@ -41,22 +41,24 @@ var i = n(627968),
     w = n(834942),
     B = n(576705),
     V = n(222823),
-    H = n(543465),
-    F = n(977997),
-    W = n(147036),
-    K = n(557534),
-    Y = n(68437),
-    z = n(166444),
-    q = n(850457),
-    X = n(469178),
-    $ = n(562991),
-    J = n(588224);
+    H = n(994500),
+    F = n(543465),
+    W = n(287809),
+    K = n(977997),
+    Y = n(147036),
+    z = n(557534),
+    q = n(68437),
+    X = n(166444),
+    $ = n(850457),
+    J = n(469178),
+    Q = n(562991),
+    Z = n(588224);
 n(281405);
-var Q = n(652215),
-    Z = n(349828),
-    ee = n(985018),
-    et = n(99566);
-class en extends K.Ay {
+var ee = n(652215),
+    et = n(349828),
+    en = n(985018),
+    ei = n(99566);
+class el extends z.Ay {
     state = {
         popoutToShow: null,
         shouldShowGuildVerificationPopout: !1,
@@ -151,7 +153,7 @@ class en extends K.Ay {
         let {
             channel: e
         } = this.props;
-        return (0, W.Pd)(e, F.A, k.A)
+        return (0, Y.Pd)(e, K.A, k.A)
     }
     getModeClass() {
         let {
@@ -159,11 +161,11 @@ class en extends K.Ay {
             sortingPosition: t,
             isUserOver: n
         } = this.props;
-        if (n) return et.ZS;
+        if (n) return ei.ZS;
         if (null != t)
-            if (e > t) return et.mU;
-            else return et.TR;
-        return et.fx
+            if (e > t) return ei.mU;
+            else return ei.TR;
+        return ei.fx
     }
     handleClick = () => {
         let {
@@ -188,7 +190,7 @@ class en extends K.Ay {
         } = this.props, l = (0, N.M)(this.props.subtitle)?.subtitle, {
             hovered: s
         } = this.state;
-        return (0, i.jsx)($.A, {
+        return (0, i.jsx)(Q.A, {
             onClick: this.handleVoiceStatusClick,
             channel: e,
             connected: t,
@@ -205,7 +207,7 @@ class en extends K.Ay {
             withGuildIcon: l,
             tabIndex: s
         } = this.props;
-        return (0, i.jsx)(J.A, {
+        return (0, i.jsx)(Z.A, {
             channel: e,
             collapsed: n,
             collapsedMax: 6,
@@ -238,7 +240,7 @@ class en extends K.Ay {
             type: j.H.VOICE,
             guildId: e.guild_id,
             closePopout: this.closeGuildVerificationPopout
-        }) : t || n ? null : "history" === l && this.getVoiceStatesCount() > 0 ? (0, i.jsx)(q.A, {
+        }) : t || n ? null : "history" === l && this.getVoiceStatesCount() > 0 ? (0, i.jsx)($.A, {
             channel: e,
             source: "voice_channel",
             onMouseEnter: this.handleMouseEnter,
@@ -254,19 +256,19 @@ class en extends K.Ay {
         } = this.props;
         if (!t) return (0, i.jsx)(d.m, {
             asContainer: !0,
-            text: ee.intl.string(ee.t.ZXxLQg),
+            text: en.intl.string(en.t.ZXxLQg),
             children: (0, i.jsx)(c.DUT, {
-                className: a()(et.Xs, n ? et.Tf : null),
+                className: a()(ei.Xs, n ? ei.Tf : null),
                 onClick: () => {
                     u.A.updateChatOpen(e.id, !0), (0, D.iN)(e.id, l ? {
                         source: M.A.CHANNEL_LIST_SUGGESTED_SECTION
                     } : void 0)
                 },
-                "aria-label": ee.intl.string(ee.t.ZXxLQg),
+                "aria-label": en.intl.string(en.t.ZXxLQg),
                 children: (0, i.jsx)(c.oyn, {
                     size: "xs",
                     color: "currentColor",
-                    className: et.gE
+                    className: ei.gE
                 })
             })
         })
@@ -276,7 +278,7 @@ class en extends K.Ay {
             channelInfo: e
         } = this.props;
         return null == e ? null : (0, i.jsx)("div", {
-            className: et.yW,
+            className: ei.yW,
             children: e
         })
     }
@@ -284,7 +286,7 @@ class en extends K.Ay {
         let {
             connected: e
         } = this.props;
-        return this.isFull() && !e ? ee.intl.string(ee.t.rZfiNq) : null
+        return this.isFull() && !e ? en.intl.string(en.t.rZfiNq) : null
     };
     render() {
         let {
@@ -303,37 +305,37 @@ class en extends K.Ay {
             connectDragPreview: p,
             canReorderChannel: g,
             canMoveMembers: f,
-            showTutorial: I,
-            hasActiveEvent: C,
-            embeddedApps: N,
-            isSubscriptionGated: T,
-            isFavoriteSuggestion: S,
-            withGuildIcon: b,
+            showTutorial: C,
+            hasActiveEvent: N,
+            embeddedApps: T,
+            isSubscriptionGated: S,
+            isFavoriteSuggestion: b,
+            withGuildIcon: y,
             hasStartTime: v,
-            shouldHighlightChannel: y,
-            shouldUseAnimatedWaveform: j,
-            voiceStates: R
+            shouldHighlightChannel: j,
+            shouldUseAnimatedWaveform: R,
+            voiceStates: O
         } = this.props, {
-            shouldShowGuildVerificationPopout: O
+            shouldShowGuildVerificationPopout: L
         } = this.state, {
-            enableHistoryHover: L
+            enableHistoryHover: M
         } = (0, G.NH)({
             guildId: e.guild_id,
             location: "VoiceChannel"
-        }), M = y || j, D = (0, i.jsxs)("li", {
+        }), D = j || R, P = (0, i.jsxs)("li", {
             ref: this.ref,
             className: a()(this.getModeClass(), {
-                [et.r9]: this.isDisabled(),
-                [et.fy]: y
+                [ei.r9]: this.isDisabled(),
+                [ei.fy]: j
             }),
-            "data-dnd-name": e.name,
-            children: [L && this.getVoiceStatesCount() > 0 && (0, i.jsx)(X.A, {
+            "data-dnd-name": (0, I.m1)(e, W.default, H.A),
+            children: [M && this.getVoiceStatesCount() > 0 && (0, i.jsx)(J.A, {
                 channel: e
-            }), y && (0, i.jsxs)(i.Fragment, {
+            }), j && (0, i.jsxs)(i.Fragment, {
                 children: [(0, i.jsx)("div", {
-                    className: et.UQ
+                    className: ei.UQ
                 }), (0, i.jsx)("div", {
-                    className: et.l0
+                    className: ei.l0
                 })]
             }), (0, i.jsx)("div", {
                 onMouseEnter: this.handleMouseEnter,
@@ -344,18 +346,18 @@ class en extends K.Ay {
                     renderPopout: this.renderPopout,
                     onRequestClose: this.closeGuildVerificationPopout,
                     spacing: 17,
-                    shouldShow: O || "history" === this.state.popoutToShow && !(u || h),
+                    shouldShow: L || "history" === this.state.popoutToShow && !(u || h),
                     children: () => (0, i.jsx)(d.m, {
                         text: this.getTooltipText(),
-                        children: (0, i.jsxs)(z.Ay, {
+                        children: (0, i.jsxs)(X.Ay, {
                             ref: this.channelItemRef,
-                            className: et.Ki,
+                            className: ei.Ki,
                             iconClassName: a()({
-                                [et.Gj]: C || v || M
+                                [ei.Gj]: N || v || D
                             }),
-                            hasActiveEvent: C,
+                            hasActiveEvent: N,
                             channel: e,
-                            selected: !S && t,
+                            selected: !b && t,
                             connected: n,
                             unread: n ? l : void 0,
                             resolvedUnreadSetting: s,
@@ -369,23 +371,23 @@ class en extends K.Ay {
                                 this.handleContextMenu(e)
                             },
                             connectDragPreview: p,
-                            isFavoriteSuggestion: S,
+                            isFavoriteSuggestion: b,
                             "aria-label": (0, x.Ay)({
                                 channel: e,
                                 unread: l,
                                 mentionCount: r,
-                                voiceStates: R,
-                                embeddedActivitiesCount: N.length,
-                                isSubscriptionGated: T
+                                voiceStates: O,
+                                embeddedActivitiesCount: T.length,
+                                isSubscriptionGated: S
                             }),
                             "aria-describedby": (0, E.A)({
                                 channel: e,
-                                embeddedApps: N
+                                embeddedApps: T
                             }),
-                            withGuildIcon: b,
-                            children: [S && (0, i.jsxs)(i.Fragment, {
+                            withGuildIcon: y,
+                            children: [b && (0, i.jsxs)(i.Fragment, {
                                 children: [this.renderAcceptSuggestionButton(), this.renderRemoveSuggestionButton()]
-                            }), !S && (0, i.jsxs)(i.Fragment, {
+                            }), !b && (0, i.jsxs)(i.Fragment, {
                                 children: [this.renderOpenChatButton(), this.renderInviteButton(), this.renderEditButton(), this.renderChannelInfo()]
                             })]
                         })
@@ -393,18 +395,18 @@ class en extends K.Ay {
                 })
             }), this.renderHangoutWindow(), this.renderVoiceUsers()]
         });
-        return f && (D = m(D)), g && (D = A(_(D))), I && (D = (0, i.jsx)(U.A, {
+        return f && (P = m(P)), g && (P = A(_(P))), C && (P = (0, i.jsx)(U.A, {
             childRef: this.ref,
             tutorialId: "voice-conversations",
             position: "right",
             offsetX: -20,
-            children: D
-        })), D
+            children: P
+        })), P
     }
 }
-let ei = (0, A.a)((0, _.F)(en));
+let es = (0, A.a)((0, _.F)(el));
 
-function el(e) {
+function ea(e) {
     let {
         guild: t,
         channel: n,
@@ -416,21 +418,21 @@ function el(e) {
     } = e, c = (0, r.cf)([V.Ay], () => ({
         unread: V.Ay.hasUnread(n.id),
         mentionCount: V.Ay.getMentionCount(n.id)
-    })), u = (0, r.bG)([H.Ay], () => H.Ay.resolveUnreadSetting(n)), h = (0, r.cf)([P.A, w.A, B.A], () => {
+    })), u = (0, r.bG)([F.Ay], () => F.Ay.resolveUnreadSetting(n)), h = (0, r.cf)([P.A, w.A, B.A], () => {
         let e = P.A.getChannel(n.parent_id),
             i = w.A.getCheck(n.guild_id);
         return {
-            canManageChannel: B.A.can(Q.xBc.MANAGE_CHANNELS, n),
-            canReorderChannel: !0 !== l && (t.id === Z.Vc || (null != e ? B.A.can(Q.xBc.MANAGE_CHANNELS, e) : B.A.can(Q.xBc.MANAGE_CHANNELS, t))),
-            canMoveMembers: B.A.can(Q.xBc.MOVE_MEMBERS, n),
-            locked: !B.A.can(Q.xBc.CONNECT, n),
-            bypassLimit: B.A.can(Q.xBc.MOVE_MEMBERS, n),
+            canManageChannel: B.A.can(ee.xBc.MANAGE_CHANNELS, n),
+            canReorderChannel: !0 !== l && (t.id === et.Vc || (null != e ? B.A.can(ee.xBc.MANAGE_CHANNELS, e) : B.A.can(ee.xBc.MANAGE_CHANNELS, t))),
+            canMoveMembers: B.A.can(ee.xBc.MOVE_MEMBERS, n),
+            locked: !B.A.can(ee.xBc.CONNECT, n),
+            bypassLimit: B.A.can(ee.xBc.MOVE_MEMBERS, n),
             unverifiedAccount: !i.canChat
         }
-    }), A = (0, r.bG)([F.A], () => F.A.hasVideo(n.id)), _ = (0, m.Ay)(n), p = (0, I.Ay)(n), x = (0, y.Qs)(n.id), E = (0, r.bG)([f.A], () => null != f.A.getStartTime(n), [n]), {
+    }), A = (0, r.bG)([K.A], () => K.A.hasVideo(n.id)), _ = (0, m.Ay)(n), p = (0, I.Ay)(n), x = (0, v.Qs)(n.id), E = (0, r.bG)([f.A], () => null != f.A.getStartTime(n), [n]), {
         isSubscriptionGated: C,
         needSubscriptionToAccess: N
-    } = (0, v.A)(n.id), S = (0, T.A)(), b = (0, r.bG)([H.Ay], () => H.Ay.isFavorite(t.id, n.id)), j = e.connected || S?.channelId === n.id, {
+    } = (0, y.A)(n.id), S = (0, T.A)(), b = (0, r.bG)([F.Ay], () => F.Ay.isFavorite(t.id, n.id)), j = e.connected || S?.channelId === n.id, {
         enableHangStatus: O,
         showEmptyChannelTopic: M
     } = (0, R.$j)({
@@ -446,7 +448,7 @@ function el(e) {
     }), {
         enableHighlight: U,
         enableWaveformIcon: G
-    } = (0, g.b)(t.id, "VoiceChannel"), k = null != d && d.length > 0, W = U && k, K = G && k, z = (0, Y.A)({
+    } = (0, g.b)(t.id, "VoiceChannel"), k = null != d && d.length > 0, H = U && k, W = G && k, Y = (0, q.A)({
         channel: n,
         isChannelSelected: a,
         isChannelCollapsed: o,
@@ -455,11 +457,11 @@ function el(e) {
         needSubscriptionToAccess: N,
         enableConnectedUserLimit: !0,
         enableActivities: !0
-    }), q = j && null == z;
-    return (0, i.jsx)(ei, {
+    }), z = j && null == Y;
+    return (0, i.jsx)(es, {
         channelName: p,
         embeddedApps: _,
-        embeddedActivityType: Q.$pd.PLAYING,
+        embeddedActivityType: ee.$pd.PLAYING,
         video: A,
         hasActiveEvent: null != x,
         isSubscriptionGated: C,
@@ -469,15 +471,15 @@ function el(e) {
         ...e,
         connected: j,
         isFavoriteSuggestion: s && !b,
-        forceShowButtons: q,
-        channelInfo: z,
+        forceShowButtons: z,
+        channelInfo: Y,
         resolvedUnreadSetting: u,
         enableHangStatus: O,
         showEmptyChannelTopic: M,
         enableOpenTIVForPing: D,
-        hasChannelInfo: null != z,
+        hasChannelInfo: null != Y,
         hasStartTime: E,
-        shouldHighlightChannel: W,
-        shouldUseAnimatedWaveform: K
+        shouldHighlightChannel: H,
+        shouldUseAnimatedWaveform: W
     })
 }

@@ -6,19 +6,19 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var s = n(684013),
-    a = n(471024),
-    l = n(833551),
+    l = n(471024),
+    a = n(833551),
     r = n(256415),
     o = n(9302),
     d = n(684748),
     c = n(672396),
     u = n(985018);
-let h = e => (0, a.sI)(e, (0, d.J)(), u.t["z8/sgJ"]);
+let h = e => (0, l.sI)(e, (0, d.J)(), u.t["z8/sgJ"]);
 
 function p(e) {
     var t;
     let {
-        type: a
+        type: l
     } = e, {
         icon: p,
         title: f,
@@ -59,7 +59,7 @@ function p(e) {
             m()
         },
         onNotificationClick: (e, t) => {
-            x("unlock"), a === c.Jr.NEWS && s.A.updateNotificationStatus(t), l.default.isOverlayOOPEnabledForPid((0, o.getPID)()) ? s.A.setInputLocked(!1, (0, o.getPID)()) : r.default.isInstanceLocked() && s.A.setInstanceLocked(!1)
+            x("unlock"), l === c.Jr.NEWS && s.A.updateNotificationStatus(t), a.default.isOverlayOOPEnabledForPid((0, o.getPID)()) ? s.A.setInputLocked(!1, (0, o.getPID)()) : r.default.isInstanceLocked() && s.A.setInstanceLocked(!1)
         },
         onDismissClick: () => {
             x("dismiss")

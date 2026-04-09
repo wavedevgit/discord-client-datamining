@@ -1,6 +1,6 @@
 /** chunk id: 196291 params = (module,exports,require) **/
 n.d(t, {
-    A: () => k
+    A: () => U
 });
 var i = n(627968),
     s = n(64700),
@@ -23,32 +23,31 @@ var i = n(627968),
     S = n(954571),
     b = n(515718),
     E = n(927578),
-    C = n(919395),
-    N = n(884546),
-    v = n(597551),
-    I = n(230084),
-    j = n(180020),
-    y = n(212168),
-    O = n(730588),
-    R = n(63675),
-    L = n(253604),
-    P = n(652215),
-    D = n(788868),
-    G = n(355097),
-    M = n(985018),
-    U = n(63261);
+    C = n(884546),
+    N = n(597551),
+    v = n(230084),
+    I = n(180020),
+    j = n(212168),
+    y = n(730588),
+    O = n(63675),
+    R = n(253604),
+    L = n(652215),
+    P = n(788868),
+    D = n(355097),
+    G = n(985018),
+    M = n(63261);
 
-function k(e) {
+function U(e) {
     let {
         user: t,
         isVisible: n,
-        shouldShow: k
-    } = e, w = E.Ay.isPremium(t), V = E.Ay.canUseAnimatedAvatar(t), {
-        pendingAvatar: B,
-        pendingThemeColors: F,
-        tryItOutThemeColors: H,
-        tryItOutAvatar: z,
-        tryItOutBanner: Y
+        shouldShow: U
+    } = e, k = E.Ay.isPremium(t), w = E.Ay.canUseAnimatedAvatar(t), {
+        pendingAvatar: V,
+        pendingThemeColors: B,
+        tryItOutThemeColors: F,
+        tryItOutAvatar: H,
+        tryItOutBanner: z
     } = (0, l.cf)([f.A], () => {
         let e = f.A.getPendingChanges(),
             t = f.A.getErrors(),
@@ -59,138 +58,138 @@ function k(e) {
             errors: t
         }
     }), {
-        preset: X,
-        onShuffle: K
-    } = (0, u.A)(), W = s.useRef(null);
-    (0, v.A)(W, G._F.TRY_IT_OUT);
+        preset: Y,
+        onShuffle: X
+    } = (0, u.A)(), K = s.useRef(null);
+    (0, N.A)(K, D._F.TRY_IT_OUT);
     let {
-        analyticsLocations: Z,
-        sourceAnalyticsLocations: q
-    } = (0, o.Ay)(r.A.USER_SETTINGS_TRY_OUT_PREMIUM), Q = e => {
-        e && (Y?.startsWith("https:") === !0 ? fetch(Y).then(e => e.blob()).then(e => (0, b.We)(e)).then(e => {
+        analyticsLocations: W,
+        sourceAnalyticsLocations: Z
+    } = (0, o.Ay)(r.A.USER_SETTINGS_TRY_OUT_PREMIUM), q = e => {
+        e && (z?.startsWith("https:") === !0 ? fetch(z).then(e => e.blob()).then(e => (0, b.We)(e)).then(e => {
             (0, T.p)({
-                avatar: z,
-                themeColors: H,
+                avatar: H,
+                themeColors: F,
                 banner: e
             })
         }).catch(() => {
             (0, T.p)({
-                avatar: z,
-                themeColors: H
+                avatar: H,
+                themeColors: F
             })
-        }) : null != Y ? (0, T.p)({
-            avatar: z,
-            themeColors: H,
-            banner: Y
+        }) : null != z ? (0, T.p)({
+            avatar: H,
+            themeColors: F,
+            banner: z
         }) : (0, T.p)({
-            avatar: z,
-            themeColors: H
-        }), (0, C.WU)(z), S.default.track(P.HAw.TRY_IT_OUT_PRESET_SELECTED, {
-            preset: X
+            avatar: H,
+            themeColors: F
+        }), S.default.track(L.HAw.TRY_IT_OUT_PRESET_SELECTED, {
+            preset: Y
         }))
     };
     s.useEffect(() => {
-        n && S.default.track(P.HAw.PREMIUM_UPSELL_VIEWED, {
-            type: D.e.PREMIUM_PROFILE_TRY_IT_OUT,
+        n && S.default.track(L.HAw.PREMIUM_UPSELL_VIEWED, {
+            type: P.e.PREMIUM_PROFILE_TRY_IT_OUT,
             location: {
-                page: P.liQ.USER_SETTINGS
+                page: L.liQ.USER_SETTINGS
             },
-            location_stack: q
+            location_stack: Z
         })
-    }, [q, t, n]);
-    let J = (0, c.V)()?.subscription_trial?.sku_id === D.pe.TIER_2,
-        $ = (0, d.O)(),
-        ee = (0, g.U9)($, D.pe.TIER_2);
-    return k ? (0, i.jsx)(o.f5, {
-        value: Z,
-        children: (0, i.jsxs)(y.A, {
-            ref: W,
-            className: U.MT,
-            type: y.i.PREMIUM,
+    }, [Z, t, n]);
+    let Q = (0, c.V)()?.subscription_trial?.sku_id === P.pe.TIER_2,
+        J = (0, d.O)(),
+        $ = (0, g.U9)(J, P.pe.TIER_2);
+    return U ? (0, i.jsx)(o.f5, {
+        value: W,
+        children: (0, i.jsxs)(j.A, {
+            ref: K,
+            className: M.MT,
+            type: j.i.PREMIUM,
             isShown: !0,
             hasBackground: !0,
-            children: [(0, i.jsx)(N.A, {
+            children: [(0, i.jsx)(C.A, {
                 stickyPreview: !1,
-                layoutClassName: U.th,
+                layoutClassName: M.th,
                 profilePreviewTitle: (0, i.jsxs)(i.Fragment, {
                     children: [(0, i.jsx)(a.tvc, {
                         size: "md",
                         color: "currentColor",
-                        className: U.PC
-                    }), M.intl.string(M.t.gMlDNd)]
+                        className: M.PC
+                    }), G.intl.string(G.t.gMlDNd)]
                 }),
                 profilePreview: (0, i.jsxs)(i.Fragment, {
                     children: [(0, i.jsx)(m.A, {
-                        preset: X,
-                        onShuffle: K
-                    }), (0, i.jsx)(L.A, {
+                        preset: Y,
+                        onShuffle: X
+                    }), (0, i.jsx)(R.A, {
                         user: t
                     })]
                 }),
                 children: (0, i.jsxs)("div", {
-                    className: U.EN,
+                    className: M.EN,
                     children: [(0, i.jsxs)("div", {
                         children: [(0, i.jsx)(a.Heading, {
                             variant: "heading-xl/extrabold",
-                            children: M.intl.string(M.t["2zGdAW"])
+                            children: G.intl.string(G.t["2zGdAW"])
                         }), (0, i.jsx)(a.Text, {
-                            className: U.h_,
+                            className: M.h_,
                             variant: "text-sm/normal",
-                            children: M.intl.string(M.t.xeEC20)
+                            children: G.intl.string(G.t.xeEC20)
                         })]
-                    }), (0, i.jsx)(R.A, {
-                        className: U.fz,
+                    }), (0, i.jsx)(O.A, {
+                        className: M.fz,
                         user: t,
                         pendingAvatarSrc: (0, h.V7)({
                             userId: t.id,
-                            image: z ?? B
+                            image: H ?? V
                         }),
-                        pendingColors: H ?? F,
+                        pendingColors: F ?? B,
                         onThemeColorsChange: p.a,
                         showPremiumIcon: !1,
                         preventDisabled: !0
-                    }), (0, i.jsx)(O.A, {
-                        className: U.fz,
+                    }), (0, i.jsx)(y.A, {
+                        className: M.fz,
                         isTryItOut: !0,
-                        showRemoveBannerButton: null != Y,
+                        showRemoveBannerButton: null != z,
                         onBannerChange: p.xe,
                         showPremiumIcon: !1
-                    }), !V && (0, i.jsx)(I.A, {
-                        className: U.fz,
+                    }), !w && (0, i.jsx)(v.A, {
+                        className: M.fz,
                         isTryItOut: !0,
                         onAvatarChange: p.e$,
                         showRemoveAvatarButton: !1,
-                        changeAvatarButtonText: M.intl.string(M.t["7z0D1c"]),
-                        sectionTitle: M.intl.string(M.t.vtFfPX)
-                    }), (0, i.jsx)(j.A, {
+                        changeAvatarButtonText: G.intl.string(G.t["7z0D1c"]),
+                        sectionTitle: G.intl.string(G.t.vtFfPX)
+                    }), (0, i.jsx)(I.A, {
                         user: t,
-                        className: U.fz
-                    }), !J && (0, i.jsx)(a.Text, {
+                        className: M.fz
+                    }), !Q && (0, i.jsx)(a.Text, {
                         variant: "text-sm/normal",
-                        children: M.intl.string(M.t["smo74/"])
+                        children: G.intl.string(G.t["smo74/"])
                     })]
                 })
-            }), !J && (0, i.jsx)(_.d, {
-                onSubscribeModalClose: Q,
-                className: U.Kv,
+            }), !Q && (0, i.jsx)(_.d, {
+                onSubscribeModalClose: q,
+                className: M.Kv,
                 showUpsell: !0,
-                text: M.intl.format(M.t.TmfgI2, {
+                text: G.intl.format(G.t.TmfgI2, {
                     onClick: () => {
                         (0, A.K)({
-                            onSubscribeFinish: Q
+                            onSubscribeFinish: q
                         })
                     }
                 }),
-                button: w ? M.intl.string(M.t.AfRWI8) : ee ? M.intl.formatToPlainString(M.t.bkQ4bH, {
-                    percent: $?.discount.amount
-                }) : M.intl.string(M.t.pj0XBN),
+                button: k ? G.intl.string(G.t.AfRWI8) : $ ? G.intl.formatToPlainString(G.t.bkQ4bH, {
+                    percent: J?.discount.amount
+                }) : G.intl.string(G.t.pj0XBN),
                 position: "inline"
-            }), J && (0, i.jsxs)("div", {
+            }), Q && (0, i.jsxs)("div", {
                 children: [(0, i.jsx)("div", {
-                    className: U.BU
+                    className: M.BU
                 }), (0, i.jsx)(x.Ay, {
-                    type: D.e.CUSTOM_PROFILE_TRY_OUT_UPSELL,
-                    subscriptionTier: D.pe.TIER_2
+                    type: P.e.CUSTOM_PROFILE_TRY_OUT_UPSELL,
+                    subscriptionTier: P.pe.TIER_2
                 })]
             })]
         })

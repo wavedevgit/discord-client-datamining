@@ -22,8 +22,8 @@ var i = n(627968),
     _ = n(297413),
     N = n(361739),
     j = n(966327),
-    T = n(736653),
-    v = n(429913),
+    v = n(736653),
+    T = n(429913),
     C = n(47167),
     I = n(576470),
     E = n(235986),
@@ -183,7 +183,7 @@ function q(e) {
         channel: l,
         showChannel: s = !1,
         inviteDisabled: a = !1
-    } = e, r = (0, v.h)(t), o = (0, g.bG)([D.default], () => D.default.getUser(l.linkedLobby?.linked_by)), d = (0, k.e)(l);
+    } = e, r = (0, T.h)(t), o = (0, g.bG)([D.default], () => D.default.getUser(l.linkedLobby?.linked_by)), d = (0, k.e)(l);
     return (0, i.jsx)(K, {
         isDisabled: a,
         inviter: o,
@@ -234,12 +234,12 @@ function J(e) {
         loading: h = !1
     } = e;
     o()(null != s, "guild is required");
-    let A = (0, T.Ay)(),
+    let A = (0, v.Ay)(),
         b = (0, P.Fi)(s),
         f = (0, P.Wr)(s),
         _ = l.useMemo(() => null == t || h ? [] : c()(t).sortBy(e => (e.inviter?.username ?? "").toLowerCase()).value(), [t, h]),
         j = (0, g.yK)([M.A], () => M.A.getSortedLinkedChannelsForGuild(s.id).filter(e => null == u || e.id === u.id)),
-        v = l.useMemo(() => h ? [] : [..._.map(e => ({
+        T = l.useMemo(() => h ? [] : [..._.map(e => ({
             type: "invite",
             data: e
         })), ...j.map(e => ({
@@ -266,13 +266,13 @@ function J(e) {
             }))
         };
     return (0, i.jsx)(N.ic, {
-        sections: [1, +!d, +!!d, Math.max(1, v.length)],
+        sections: [1, +!d, +!!d, Math.max(1, T.length)],
         renderSection: e => {
             let {
                 section: t
             } = e;
             if (3 === t)
-                if (0 === v.length && !h) return (0, i.jsx)("div", {
+                if (0 === T.length && !h) return (0, i.jsx)("div", {
                     children: (0, i.jsxs)(p.ppr, {
                         theme: A,
                         children: [(0, i.jsx)(p.G8R, {
@@ -382,11 +382,11 @@ function J(e) {
                 canCreateInvites: r
             }, "actions-v2");
             if (3 === t) {
-                if (0 === v.length && 0 === n && h) return (0, i.jsx)(p.y$y, {
+                if (0 === T.length && 0 === n && h) return (0, i.jsx)(p.y$y, {
                     className: F.QX,
                     type: p.y$y.Type.SPINNING_CIRCLE
                 }, "spinner");
-                let e = v[n];
+                let e = T[n];
                 switch (e?.type) {
                     case "invite":
                         return (0, i.jsx)(Y, {
@@ -407,7 +407,7 @@ function J(e) {
                 }
             }
         },
-        rowHeight: (e, t) => 0 === e ? 64 : 1 === e ? 109 : 2 === e ? I : 3 === e ? 0 === v.length && 0 === t && h ? 62 : 62 * (null != v[t]) : 0,
-        sectionHeight: e => 3 === e ? 0 !== v.length || h ? 28 : 240 : 0
+        rowHeight: (e, t) => 0 === e ? 64 : 1 === e ? 109 : 2 === e ? I : 3 === e ? 0 === T.length && 0 === t && h ? 62 : 62 * (null != T[t]) : 0,
+        sectionHeight: e => 3 === e ? 0 !== T.length || h ? 28 : 240 : 0
     })
 }

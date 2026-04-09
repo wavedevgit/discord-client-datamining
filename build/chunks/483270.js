@@ -26,8 +26,8 @@ var i = n(627968),
     T = n(561010),
     S = n(219065),
     b = n(342296),
-    v = n(616356),
-    y = n(696451),
+    y = n(616356),
+    v = n(696451),
     j = n(317525),
     R = n(290863),
     O = n(461213),
@@ -52,7 +52,7 @@ let K = w.Ay.getEnableHardwareAcceleration(),
             sectionId: s,
             userId: a,
             guildOwnerId: r
-        } = e, o = l.useRef(null), c = (0, h.bG)([L.A], () => L.A.isTyping(t.id, a)), A = (0, h.bG)([y.Ay], () => y.Ay.getMember(t.guild_id, a)), p = (0, h.bG)([j.A], () => A?.colorRoleId != null ? j.A.getRole(t.guild_id, A.colorRoleId)?.name : void 0, [t.guild_id, A]), g = (0, h.bG)([M.default], () => M.default.getUser(a)), f = (0, h.bG)([M.default], () => M.default.getCurrentUser()), E = g?.id === f?.id, C = (0, h.bG)([R.A, O.A], () => E ? O.A.getStatus() : R.A.getStatus(a, t.guild_id)), N = (0, h.bG)([R.A], () => R.A.isMobileOnline(a)), T = (0, h.bG)([R.A, O.A], () => E ? O.A.getActivities() : R.A.getActivities(a, t.guild_id)), D = (0, h.bG)([v.A], () => v.A.getAnyStreamForUser(a)), U = (0, d.rm)(a), P = (0, h.bG)([S.A], () => S.A.canUserViewChannel(t.id, s, a)), w = g?.id != null && g.id === r, F = l.useCallback(e => {
+        } = e, o = l.useRef(null), c = (0, h.bG)([L.A], () => L.A.isTyping(t.id, a)), A = (0, h.bG)([v.Ay], () => v.Ay.getMember(t.guild_id, a)), p = (0, h.bG)([j.A], () => A?.colorRoleId != null ? j.A.getRole(t.guild_id, A.colorRoleId)?.name : void 0, [t.guild_id, A]), g = (0, h.bG)([M.default], () => M.default.getUser(a)), f = (0, h.bG)([M.default], () => M.default.getCurrentUser()), E = g?.id === f?.id, C = (0, h.bG)([R.A, O.A], () => E ? O.A.getStatus() : R.A.getStatus(a, t.guild_id)), N = (0, h.bG)([R.A], () => R.A.isMobileOnline(a)), T = (0, h.bG)([R.A, O.A], () => E ? O.A.getActivities() : R.A.getActivities(a, t.guild_id)), D = (0, h.bG)([y.A], () => y.A.getAnyStreamForUser(a)), U = (0, d.rm)(a), P = (0, h.bG)([S.A], () => S.A.canUserViewChannel(t.id, s, a)), w = g?.id != null && g.id === r, F = l.useCallback(e => {
             null != g && (0, _.L3)(e, async () => {
                 let {
                     default: e
@@ -208,7 +208,7 @@ function $(e) {
         S = N.filter(e => e.userIds.length > 0).reverse()[0],
         {
             navigator: b,
-            listRef: v
+            listRef: y
         } = (t = I, n = Y, s = (0, h.bG)([p.A], () => p.A.keyboardModeEnabled), r = l.useRef(null), u = l.useCallback((e, t) => {
             let i = r.current;
             if (null == i) return;
@@ -249,14 +249,14 @@ function $(e) {
             }),
             listRef: r
         }),
-        y = 0 === N.length || N.every(e => 0 === e.userIds.length);
+        v = 0 === N.length || N.every(e => 0 === e.userIds.length);
     if (l.useEffect(() => {
             U.default.track(V.HAw.MEMBER_LIST_VIEWED, {
                 channel_id: x.id,
                 channel_type: x.type,
                 guild_id: x.guild_id
             })
-        }, [x.guild_id, x.id, x.type]), y) return (0, i.jsx)(J, {
+        }, [x.guild_id, x.id, x.type]), v) return (0, i.jsx)(J, {
         channel: x
     });
     let j = o().omit(b.containerProps, ["ref"]),
@@ -269,7 +269,7 @@ function $(e) {
                 children: e => (0, i.jsx)("div", {
                     className: a()(W.yg, W.ML, F.kL),
                     children: (0, i.jsx)(A.B8B, {
-                        ref: v,
+                        ref: y,
                         className: W.ol,
                         paddingTop: 0,
                         sectionHeight: 40,

@@ -20,8 +20,8 @@ var i = n(64700),
 function _(e) {
     let t, n = (0, d.ME)(e),
         _ = e?.features.has(x.GuildFeatures.CREATOR_MONETIZABLE_PROVISIONAL),
-        p = e?.features.has(x.GuildFeatures.CREATOR_MONETIZABLE),
-        A = (0, s.bG)([a.default], () => {
+        A = e?.features.has(x.GuildFeatures.CREATOR_MONETIZABLE),
+        p = (0, s.bG)([a.default], () => {
             let t = a.default.getCurrentUser();
             return null != e && (0, r.bM)(e, t)
         }),
@@ -58,16 +58,16 @@ function _(e) {
         requestCooldownDuration: S,
         creatorRevenuePolicyUrl: o.A.getArticleURL(x.MVz.CREATOR_POLICY)
     }));
-    let D = n && A && !1 === p,
+    let D = n && p && !1 === A,
         M = n && !1 === _,
         k = (0, g.r)(),
-        U = v && G && A ? h.intl.format(h.t.wbVIUB, {}) : void 0;
+        U = v && G && p ? h.intl.format(h.t.wbVIUB, {}) : void 0;
     return i.useEffect(() => {
         D && I()
     }, [I, D]), {
         resubmittingEnableRequest: j,
         resubmissionError: f,
-        isGuildOwner: A,
+        isGuildOwner: p,
         createEnableRequest: N,
         resubmittedRequest: E,
         eligibilityLoading: C,

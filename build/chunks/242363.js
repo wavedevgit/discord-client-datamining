@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var s = n(397927),
-    a = n(684013),
-    l = n(793574),
+    l = n(684013),
+    a = n(793574),
     r = n(833551),
     o = n(287809),
     d = n(9302),
@@ -55,9 +55,9 @@ function A(e) {
                 onNotificationClick: (e, t) => {
                     _("unlock");
                     let c = (0, d.getPID)();
-                    a.A.updateNotificationStatus(t);
+                    l.A.updateNotificationStatus(t);
                     let u = r.default.isOverlayOOPEnabledForPid(c);
-                    if (u ? a.A.setInputLocked(!1, c) : a.A.setInstanceLocked(!1), null == o.default.getCurrentUser()) return;
+                    if (u ? l.A.setInputLocked(!1, c) : l.A.setInstanceLocked(!1), null == o.default.getCurrentUser()) return;
                     let h = u ? {
                         contextKey: s.KX8
                     } : void 0;
@@ -69,7 +69,7 @@ function A(e) {
                             ...t,
                             sourcePID: c,
                             selectSource: !1,
-                            analyticsLocations: [l.A.OVERLAY_NUDGE]
+                            analyticsLocations: [a.A.OVERLAY_NUDGE]
                         })
                     }, h)
                 },
@@ -101,9 +101,9 @@ function A(e) {
                 onNotificationClick: (e, t) => {
                     p("unlock");
                     let o = (0, d.getPID)();
-                    a.A.updateNotificationStatus(t);
+                    l.A.updateNotificationStatus(t);
                     let c = r.default.isOverlayOOPEnabledForPid(o);
-                    c ? a.A.setInputLocked(!1, o) : a.A.setInstanceLocked(!1);
+                    c ? l.A.setInputLocked(!1, o) : l.A.setInstanceLocked(!1);
                     let u = c ? {
                         contextKey: s.KX8
                     } : void 0;
@@ -115,7 +115,7 @@ function A(e) {
                             ...t,
                             sourcePID: o,
                             selectSource: !1,
-                            analyticsLocations: [l.A.OVERLAY_NUDGE]
+                            analyticsLocations: [a.A.OVERLAY_NUDGE]
                         })
                     }, u)
                 },

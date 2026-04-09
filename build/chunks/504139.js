@@ -5,8 +5,8 @@ n.d(t, {
 });
 var i = n(544420),
     s = n(684013),
-    a = n(742984),
-    l = n(471024),
+    l = n(742984),
+    a = n(471024),
     r = n(684748),
     o = n(672396),
     d = n(985018);
@@ -20,7 +20,7 @@ function c(e, t, n, c, u) {
         icon: f,
         title: A,
         body: _
-    } = (0, a.TB)(e, t, n), {
+    } = (0, l.TB)(e, t, n), {
         trackView: g,
         trackClick: m
     } = (0, r.Y)(o.KS.ActivityInvite, {
@@ -38,19 +38,19 @@ function c(e, t, n, c, u) {
         icon: f,
         title: A,
         body: _,
-        hint: e => (0, l.sI)(e, (0, r.J)(), d.t.aB5xLy),
+        hint: e => (0, a.sI)(e, (0, r.J)(), d.t.aB5xLy),
         onNotificationShow: () => {
             g()
         },
         confirmText: d.intl.string(d.t.VJlc0S),
-        onConfirmClick: (a, l) => {
+        onConfirmClick: (l, a) => {
             i.Ay.join({
                 userId: n.id,
                 sessionId: p,
                 applicationId: c.id,
                 channelId: e.id,
                 messageId: t.id
-            }), s.A.updateNotificationStatus(l), m("join")
+            }), s.A.updateNotificationStatus(a), m("join")
         },
         onDismissClick: () => {
             m("dismiss")

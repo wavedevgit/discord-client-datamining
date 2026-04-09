@@ -17,8 +17,8 @@ var i = n(627968),
     x = n(997509),
     h = n(555337),
     _ = n(342490),
-    p = n(694878),
-    A = n(989556),
+    A = n(694878),
+    p = n(989556),
     f = n(712150),
     j = n(190695),
     N = n(29086),
@@ -49,7 +49,7 @@ let v = function() {
         G = t.badgeColorPrimary ?? null,
         L = t.badgeColorSecondary ?? null,
         D = (0, i.jsxs)(i.Fragment, {
-            children: [(0, i.jsx)(A.A, {
+            children: [(0, i.jsx)(p.A, {
                 className: b.uW,
                 guildId: e.id,
                 isDisabled: R,
@@ -57,7 +57,7 @@ let v = function() {
                 badge: O,
                 primaryColor: G,
                 secondaryColor: L
-            }), (0, i.jsx)(p.A, {
+            }), (0, i.jsx)(A.A, {
                 className: b.uW,
                 selectedBadge: O,
                 guildId: e.id

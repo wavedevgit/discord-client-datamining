@@ -16,8 +16,8 @@ var i = t(627968),
     A = t(249790),
     g = t(946356),
     m = t(254828),
-    I = t(783123),
-    h = t(652215),
+    h = t(783123),
+    I = t(652215),
     f = t(996988),
     x = t(985018),
     v = t(336323);
@@ -32,7 +32,7 @@ function b(e) {
         transitionState: y,
         onHide: T,
         sourceAnalyticsLocations: N = []
-    } = e, S = t === h.ME ? void 0 : t, C = (0, a.bG)([o.A], () => o.A.isBlocked(n.id)), {
+    } = e, S = t === I.ME ? void 0 : t, C = (0, a.bG)([o.A], () => o.A.isBlocked(n.id)), {
         analyticsLocations: R
     } = (0, s.Ay)([...N, C ? r.A.BLOCKED_PROFILE_MODAL : r.A.IGNORED_PROFILE_MODAL]), L = (0, u.pb)({
         layout: "MODAL_V2",
@@ -101,7 +101,7 @@ function b(e) {
                             })
                         }), (0, i.jsxs)(l.BJc, {
                             align: "center",
-                            children: [(0, i.jsx)(I.A, {
+                            children: [(0, i.jsx)(h.A, {
                                 size: "md",
                                 isBlocked: C,
                                 onClick: () => {

@@ -1,6 +1,6 @@
 /** chunk id: 914835 params = (module,exports,require) **/
 n.d(t, {
-    A: () => N
+    A: () => I
 });
 var i = n(627968),
     l = n(64700),
@@ -11,24 +11,25 @@ var i = n(627968),
     c = n(442433),
     d = n(793574),
     u = n(688810),
-    h = n(713654),
-    m = n(967144),
-    A = n(342296),
-    g = n(696451),
-    p = n(287809),
-    f = n(427262),
-    _ = n(314307),
-    E = n(652215),
-    x = n(985018),
-    C = n(812077);
+    h = n(47167),
+    m = n(713654),
+    A = n(967144),
+    g = n(342296),
+    p = n(696451),
+    f = n(287809),
+    _ = n(427262),
+    E = n(314307),
+    x = n(652215),
+    C = n(985018),
+    S = n(812077);
 
-function S(e) {
+function T(e) {
     let {
         userId: t,
         channel: s
     } = e, h = l.useRef(null), {
-        analyticsLocations: _
-    } = (0, u.Ay)(d.A.USERNAME), E = (0, r.bG)([p.default], () => p.default.getUser(t)), x = (0, r.bG)([g.Ay], () => null != t ? g.Ay.getMember(s.guild_id, t) : null), S = (0, m.gn)(s.guild_id, t ?? void 0, x?.colorStrings ?? null);
+        analyticsLocations: m
+    } = (0, u.Ay)(d.A.USERNAME), E = (0, r.bG)([f.default], () => f.default.getUser(t)), x = (0, r.bG)([p.Ay], () => null != t ? p.Ay.getMember(s.guild_id, t) : null), C = (0, A.gn)(s.guild_id, t ?? void 0, x?.colorStrings ?? null);
 
     function T(e) {
         if (null == E) return null;
@@ -44,14 +45,14 @@ function S(e) {
             })
         })
     }
-    let N = x?.nick ?? f.Ay.getName(E) ?? "???",
+    let N = x?.nick ?? _.Ay.getName(E) ?? "???",
         I = x?.colorString;
     return null == E ? (0, i.jsx)("span", {
-        className: a()(C.eM, C.sL),
+        className: a()(S.eM, S.sL),
         children: N
     }) : (0, i.jsx)(u.f5, {
-        value: _,
-        children: (0, i.jsx)(A.A, {
+        value: m,
+        children: (0, i.jsx)(g.A, {
             targetElementRef: h,
             user: E,
             guildId: s.guild_id,
@@ -62,19 +63,19 @@ function S(e) {
                 ...e,
                 innerRef: h,
                 tag: "span",
-                className: C.eM,
+                className: S.eM,
                 onContextMenu: T,
                 children: (0, i.jsx)(o.gyj, {
                     name: N,
                     colorString: I ?? null,
-                    colorStrings: S
+                    colorStrings: C
                 })
             })
         })
     })
 }
 
-function T(e) {
+function N(e) {
     let {
         channel: t
     } = e, {
@@ -89,36 +90,36 @@ function T(e) {
             variant: "text-md/normal",
             color: "text-default",
             children: (0, i.jsx)("div", {
-                className: C.VA,
-                children: x.intl.format(x.t.imPXd5, {
-                    usernameHook: (e, n) => (0, i.jsx)(S, {
+                className: S.VA,
+                children: C.intl.format(C.t.imPXd5, {
+                    usernameHook: (e, n) => (0, i.jsx)(T, {
                         userId: t.ownerId,
                         channel: t
                     }, n)
                 })
             })
-        }), t.type === E.rbe.PRIVATE_THREAD ? (0, i.jsx)(o.Text, {
+        }), t.type === x.rbe.PRIVATE_THREAD ? (0, i.jsx)(o.Text, {
             variant: "text-md/normal",
             color: "text-default",
-            children: x.intl.string(x.t["1awbZG"])
+            children: C.intl.string(C.t["1awbZG"])
         }) : null]
     })
 }
 
-function N(e) {
+function I(e) {
     let {
         channel: t
-    } = e, n = (0, h.gU)(t) ?? o.ysw;
-    return (0, i.jsxs)(_.Ay, {
+    } = e, n = (0, m.gU)(t) ?? o.ysw, l = (0, h.Ay)(t);
+    return (0, i.jsxs)(E.Ay, {
         channelId: t.id,
         children: [(0, i.jsx)("div", {
-            className: C.P0,
+            className: S.P0,
             children: (0, i.jsx)(n, {
-                className: C.Kk
+                className: S.Kk
             })
-        }), (0, i.jsx)(_.cr, {
-            children: t.name
-        }), (0, i.jsx)(T, {
+        }), (0, i.jsx)(E.cr, {
+            children: l
+        }), (0, i.jsx)(N, {
             channel: t
         })]
     })

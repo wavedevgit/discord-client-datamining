@@ -49,10 +49,10 @@ let h = () => {
         i.useEffect(() => ((0, o.BZ)(!0), () => (0, o.BZ)(!1)), []), i.useEffect(() => {
             x && t && (0, s.d_)(u.P.NOTIFICATION_CENTER)
         }, [t, x]);
-        let v = (0, a.A)();
+        let y = (0, a.A)();
         i.useEffect(() => () => {
-            h ? !v() && (T || I.length > 100) && (0, o.S3)() : n && I.length > 100 && (0, o.S3)()
-        }, [n, I, h, v, T]), i.useEffect(() => {
+            h ? !y() && (T || I.length > 100) && (0, o.S3)() : n && I.length > 100 && (0, o.S3)()
+        }, [n, I, h, y, T]), i.useEffect(() => {
             let e = m && t;
             (!x || e) && (0, o.ni)({
                 limit: _ ?? (A ? 8 : 20),
@@ -61,7 +61,7 @@ let h = () => {
                 everyone_filter: b
             })
         }, [x, m, t, A, S, b, _]);
-        let y = i.useCallback(async e => {
+        let v = i.useCallback(async e => {
             !p.current && x && C && null != N && (e || !T) && (p.current = !0, f(!0), await (0, o.ni)({
                 after: N,
                 with_mentions: A,
@@ -77,7 +77,7 @@ let h = () => {
             loading: E,
             items: I,
             hasMore: C,
-            loadMore: y,
+            loadMore: v,
             loadingMore: g,
             setReadNotifItemToAcked: e => {
                 e.acked || (e.acked = !0)

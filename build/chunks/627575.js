@@ -1,10 +1,10 @@
 /** chunk id: 627575 params = (module,exports,require) **/
-n.d(t, {
-    k: () => s
+i.d(e, {
+    k: () => r
 });
-var a = n(397927),
-    i = n(830215);
+var n = i(397927),
+    l = i(830215);
 
-function s(e) {
-    (0, a.s7G)(), i.A.logout(e)
+function r(t) {
+    (0, n.s7G)(), l.A.logout(t)
 }

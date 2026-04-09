@@ -1,6 +1,6 @@
 /** chunk id: 247191 params = (module,exports,require) **/
 n.d(e, {
-    A: () => G
+    A: () => I
 });
 var l = n(627968);
 n(64700);
@@ -12,102 +12,105 @@ var i = n(242934),
     u = n(311907),
     o = n(397927),
     c = n(77729),
-    E = n(451909),
-    A = n(71393),
-    g = n(723702),
-    _ = n(698441),
-    h = n(563312),
-    T = n(794782),
-    f = n(974930),
-    y = n(988794),
-    v = n(652215),
-    p = n(985018);
-let m = "YYYYMMDDTHHmmss",
-    N = "YYYY-MM-DDTHH:mm:ss",
-    S = /RRULE:.*/;
+    E = n(47167),
+    A = n(451909),
+    g = n(71393),
+    _ = n(994500),
+    h = n(287809),
+    T = n(723702),
+    f = n(698441),
+    y = n(563312),
+    v = n(794782),
+    p = n(974930),
+    m = n(988794),
+    N = n(652215),
+    S = n(985018);
+let G = "YYYYMMDDTHHmmss",
+    b = "YYYY-MM-DDTHH:mm:ss",
+    D = /RRULE:.*/;
 
-function G(t, e, n, i) {
-    let a, G = (0, u.bG)([_.Ay], () => _.Ay.isActive(t)),
-        b = (0, h.nh)(t ?? "", i),
-        D = (0, u.bG)([_.Ay], () => _.Ay.getGuildScheduledEvent(t), [t]),
-        I = (0, u.bG)([A.A], () => A.A.getGuild(e), [e]);
-    if (G || null == b || null == D) return null;
-    a = D.entity_type === y.Ps.EXTERNAL ? D.entity_metadata.location : null != n && null != I ? p.intl.formatToPlainString(p.t["2t8L04"], {
-        channelName: n.name,
-        guildName: I.name
-    }) : p.intl.string(p.t.VSgOVg);
-    let C = d()(D.scheduled_start_time),
-        x = null != D.scheduled_end_time ? d()(D.scheduled_end_time) : C,
-        w = null != D.description && "" !== D.description ? E.Ay.unparse(D.description, n?.id ?? v.dJq, !0) : "",
-        O = (0, T.Sn)(D.recurrence_rule),
-        R = null != O ? (0, f.X7)(O) : null,
+function I(t, e, n, i) {
+    let a, I = (0, u.bG)([f.Ay], () => f.Ay.isActive(t)),
+        C = (0, y.nh)(t ?? "", i),
+        x = (0, u.bG)([f.Ay], () => f.Ay.getGuildScheduledEvent(t), [t]),
+        w = (0, u.bG)([g.A], () => g.A.getGuild(e), [e]);
+    if (I || null == C || null == x) return null;
+    a = x.entity_type === m.Ps.EXTERNAL ? x.entity_metadata.location : null != n && null != w ? S.intl.formatToPlainString(S.t["2t8L04"], {
+        channelName: (0, E.m1)(n, h.default, _.A),
+        guildName: w.name
+    }) : S.intl.string(S.t.VSgOVg);
+    let O = d()(x.scheduled_start_time),
+        R = null != x.scheduled_end_time ? d()(x.scheduled_end_time) : O,
+        j = null != x.description && "" !== x.description ? A.Ay.unparse(x.description, n?.id ?? N.dJq, !0) : "",
+        L = (0, v.Sn)(x.recurrence_rule),
+        U = null != L ? (0, p.X7)(L) : null,
         {
-            startTime: j,
-            endTime: L
-        } = b,
-        U = d()(j) ?? C,
-        P = d()(L ?? j) ?? C,
-        V = () => {
+            startTime: P,
+            endTime: V
+        } = C,
+        B = d()(P) ?? O,
+        M = d()(V ?? P) ?? O,
+        W = () => {
             let t = r()();
             t.createEvent({
-                start: C,
-                end: x,
-                summary: D.name,
-                description: w,
+                start: O,
+                end: R,
+                summary: x.name,
+                description: j,
                 location: a,
-                repeating: R
-            }), g.isPlatformEmbedded ? c.A.fileManager.saveWithDialog(t.toString(), "discord-event.ics") : window.open(t.toURL(), "_blank")
+                repeating: U
+            }), T.isPlatformEmbedded ? c.A.fileManager.saveWithDialog(t.toString(), "discord-event.ics") : window.open(t.toURL(), "_blank")
         };
     return (0, l.jsxs)(o.Drp, {
-        id: p.intl.string(p.t.k5pvjo),
-        label: p.intl.string(p.t.k5pvjo),
-        action: V,
+        id: S.intl.string(S.t.k5pvjo),
+        label: S.intl.string(S.t.k5pvjo),
+        action: W,
         children: [(0, l.jsx)(o.Drp, {
-            id: p.intl.string(p.t.JKSLRH),
-            label: p.intl.string(p.t.JKSLRH),
+            id: S.intl.string(S.t.JKSLRH),
+            label: S.intl.string(S.t.JKSLRH),
             action: () => {
-                let t = R?.toString(),
+                let t = U?.toString(),
                     e = {
-                        text: D.name,
-                        dates: `${C.format(m)}/${x.format(m)}`,
-                        details: w,
+                        text: x.name,
+                        dates: `${O.format(G)}/${R.format(G)}`,
+                        details: j,
                         action: "TEMPLATE",
                         location: a,
-                        recur: null != t ? S.exec(t)?.[0] : void 0
+                        recur: null != t ? D.exec(t)?.[0] : void 0
                     },
                     n = `https://calendar.google.com/calendar/render?${(0,s.stringify)(e)}`;
                 window.open(n, "_blank")
             }
         }), (0, l.jsx)(o.Drp, {
-            id: p.intl.string(p.t.nrBYSe),
-            label: p.intl.string(p.t.nrBYSe),
-            action: V
+            id: S.intl.string(S.t.nrBYSe),
+            label: S.intl.string(S.t.nrBYSe),
+            action: W
         }), (0, l.jsx)(o.Drp, {
-            id: p.intl.string(p.t.odzaCd),
-            label: p.intl.string(p.t.odzaCd),
+            id: S.intl.string(S.t.odzaCd),
+            label: S.intl.string(S.t.odzaCd),
             action: () => {
                 let t = {
                         v: 60,
-                        title: D.name,
-                        st: U.format(m),
-                        et: P.format(m),
-                        desc: w,
+                        title: x.name,
+                        st: B.format(G),
+                        et: M.format(G),
+                        desc: j,
                         in_loc: a
                     },
                     e = `https://calendar.yahoo.com/?${(0,s.stringify)(t)}`;
                 window.open(e, "_blank")
             }
         }), (0, l.jsx)(o.Drp, {
-            id: p.intl.string(p.t.rQe8EE),
-            label: p.intl.string(p.t.rQe8EE),
+            id: S.intl.string(S.t.rQe8EE),
+            label: S.intl.string(S.t.rQe8EE),
             action: () => {
                 let t = {
                         path: "/calendar/action/compose",
                         rru: "addevent",
-                        startdt: U.format(N),
-                        enddt: P.format(N),
-                        subject: D.name,
-                        body: w,
+                        startdt: B.format(b),
+                        enddt: M.format(b),
+                        subject: x.name,
+                        body: j,
                         location: a,
                         allday: !1
                     },

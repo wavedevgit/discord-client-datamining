@@ -409,7 +409,7 @@ function P(e) {
                 children: E.Ay[R.LWr.FILTER_IN].key ?? ""
             }), N(t)]
         }),
-        ariaLabel: t.name
+        ariaLabel: (0, S.E3)(t)
     } : null != r ? {
         label: (0, n.jsxs)("div", {
             className: m.YL,
@@ -497,7 +497,7 @@ function Q(e) {
                 color: "text-strong",
                 children: e
             }),
-            ariaLabel: t.name
+            ariaLabel: (0, S.E3)(t)
         }
     }
     return null != r ? {

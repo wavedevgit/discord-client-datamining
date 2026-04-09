@@ -5,8 +5,8 @@ n.d(t, {
 }), n(321073);
 var i = n(284009),
     s = n.n(i),
-    a = n(835245),
-    l = n(311907),
+    l = n(835245),
+    a = n(311907),
     r = n(118356),
     o = n(73153),
     d = n(684013),
@@ -85,7 +85,7 @@ function Q(e, t) {
         ...t
     };
     if (2 !== n.priority && !w.default.isInstanceFocused()) return null;
-    let i = (0, a.A)(),
+    let i = (0, l.A)(),
         s = {
             id: i,
             status: G.yFH.ACTIVE,
@@ -93,8 +93,8 @@ function Q(e, t) {
             props: e,
             ...n
         },
-        l = (F = [...F]).findIndex(e => e.priority <= n.priority);
-    return -1 === l ? F.push(s) : F.splice(l, 0, s), F.length > 10 && clearTimeout(F.pop().timerId), i
+        a = (F = [...F]).findIndex(e => e.priority <= n.priority);
+    return -1 === a ? F.push(s) : F.splice(a, 0, s), F.length > 10 && clearTimeout(F.pop().timerId), i
 }
 
 function q(e) {
@@ -109,15 +109,15 @@ function q(e) {
             guildId: e.guildId,
             location: "OverlayStartRinging"
         }).enabled || O.A.getStatus() === G.clD.DND || v.NO.getSetting()) return !1;
-    let a = F.find(e => 1 === e.type && e.channelId === t && e.messageType === G.lAJ.CALL);
-    null != a && Z(a.id), Q((0, p.A)(s), {
+    let l = F.find(e => 1 === e.type && e.channelId === t && e.messageType === G.lAJ.CALL);
+    null != l && Z(l.id), Q((0, p.A)(s), {
         priority: 1,
         expirationExternallyManaged: !0,
         type: 2,
         channelId: s.id
     })
 }
-class $ extends l.Ay.Store {
+class $ extends a.Ay.Store {
     static displayName = "OverlayNotificationsStore";
     initialize() {
         this.waitFor(C.default, I.A, g.A, N.A, L.default, E.default, P.A, y.A, w.default, T.A, b.A, O.A, j.A, D.default)
@@ -175,37 +175,37 @@ let ee = new $(o.h, !__OVERLAY__ ? {} : {
         let {
             channelId: t,
             message: n
-        } = e, i = I.A.getChannel(t), a = D.default.getUser(n.author?.id);
-        if (null == i || null == a) return !1;
+        } = e, i = I.A.getChannel(t), l = D.default.getUser(n.author?.id);
+        if (null == i || null == l) return !1;
         if (n.activity?.type === G.xL.JOIN || n.activity?.type === G.xL.JOIN_REQUEST) {
             if (!(0, x.lx)(n, t, !0, !0)) return !1;
             let e = function(e, t, n) {
-                let i, a;
+                let i, l;
                 if (s()(null != t.activity, "received null message activity"), n.id === C.default.getId()) return !1;
-                let l = P.A.getGame();
-                if (null == l) return !1;
+                let a = P.A.getGame();
+                if (null == a) return !1;
                 switch (t.activity.type) {
                     case G.xL.JOIN:
-                        if (null == (i = T.A.getApplicationActivity(n.id, l.id)) || null == i.party || i.party.id !== t.activity.party_id) return !1;
-                        a = (0, c.A)(e, t, n, l, i);
+                        if (null == (i = T.A.getApplicationActivity(n.id, a.id)) || null == i.party || i.party.id !== t.activity.party_id) return !1;
+                        l = (0, c.A)(e, t, n, a, i);
                         break;
                     case G.xL.JOIN_REQUEST:
-                        if (null == (i = O.A.getApplicationActivity(l.id)) || null == i.party || i.party.id !== t.activity.party_id) return !1;
-                        a = (0, f.A)(e, n, l, i)
+                        if (null == (i = O.A.getApplicationActivity(a.id)) || null == i.party || i.party.id !== t.activity.party_id) return !1;
+                        l = (0, f.A)(e, n, a, i)
                 }
-                if (null == a) return !1;
-                let r = Q(a, {
+                if (null == l) return !1;
+                let r = Q(l, {
                     priority: 2,
                     expirationExternallyManaged: !0,
                     channelId: e.id
                 });
                 return null != r && Y(r, !1, K), !0
-            }(i, n, a);
+            }(i, n, l);
             if (!1 !== e) return e
         }
         if ((!w.default.isInstanceLocked() || w.default.isPinned(G.uss.TEXT)) && t === b.A.getChannelId() || y.A.isNotificationDisabled(U.KS.TextChat) || j.A.disableNotifications || !(0, x.lx)(n, t)) return !1;
-        let l = !N.A.isSoundDisabled(R.cH);
-        Q((0, A.A)(i, n, a, l), {
+        let a = !N.A.isSoundDisabled(R.cH);
+        Q((0, A.A)(i, n, l, a), {
             type: 1,
             channelId: i.id,
             messageType: n.type
@@ -250,8 +250,8 @@ let ee = new $(o.h, !__OVERLAY__ ? {} : {
                 user: i,
                 applicationId: s
             } = e,
-            a = P.A.getGame();
-        return null != a && a.id === s && (n === G.xL.JOIN && (t = (0, u.A)(i, a)), null != t && void Q(t, {
+            l = P.A.getGame();
+        return null != l && l.id === s && (n === G.xL.JOIN && (t = (0, u.A)(i, l)), null != t && void Q(t, {
             priority: 2,
             type: 0
         }))

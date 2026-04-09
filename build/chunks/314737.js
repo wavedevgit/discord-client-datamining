@@ -19,8 +19,8 @@ var i = n(627968),
     x = n(990078),
     h = n(397927),
     _ = n(157559),
-    p = n(554375),
-    A = n(971251),
+    A = n(554375),
+    p = n(971251),
     f = n(615751),
     j = n(475743),
     N = n(793574),
@@ -47,7 +47,7 @@ n(307731);
 var F = n(985018),
     H = n(262303),
     V = n(903281);
-let z = c().throttle(p.dZ, 1e3),
+let z = c().throttle(A.dZ, 1e3),
     W = e => {
         let {
             guildId: t,
@@ -105,7 +105,7 @@ let z = c().throttle(p.dZ, 1e3),
                 className: H.fi,
                 children: (0, i.jsx)("div", {
                     className: H.Yf,
-                    children: (0, i.jsx)(A.A, {
+                    children: (0, i.jsx)(p.A, {
                         className: r()({
                             [H.XH]: a
                         }),
@@ -118,7 +118,7 @@ let z = c().throttle(p.dZ, 1e3),
                         onBlur: () => {
                             if (d === n.name) return;
                             let e = L.Ay.sanitizeEmojiName(d);
-                            e !== n.name && (0, p.Cp)({
+                            e !== n.name && (0, A.Cp)({
                                 guildId: t,
                                 emojiId: n.id,
                                 name: e
@@ -162,7 +162,7 @@ let z = c().throttle(p.dZ, 1e3),
                         variant: "critical-secondary",
                         icon: h.ucK,
                         onClick: () => {
-                            (0, p.ak)(t, n.id).catch(e => {
+                            (0, A.ak)(t, n.id).catch(e => {
                                 let {
                                     status: t
                                 } = e;
@@ -345,7 +345,7 @@ let z = c().throttle(p.dZ, 1e3),
                 emojis: U.A.getEmojis(l.id)
             })),
             _ = (0, j.A)(u),
-            [p, A] = s.useState(!1),
+            [A, p] = s.useState(!1),
             [E, v] = s.useState(!1),
             y = s.useRef(null),
             {
@@ -360,8 +360,8 @@ let z = c().throttle(p.dZ, 1e3),
             }),
             [Y, X] = s.useState(null);
         s.useEffect(() => {
-            p && ee()
-        }, [p]), s.useEffect(() => {
+            A && ee()
+        }, [A]), s.useEffect(() => {
             z(l.id)
         }, [l.id]), s.useEffect(() => {
             null != _ && _ < u && z(l.id)
@@ -410,7 +410,7 @@ let z = c().throttle(p.dZ, 1e3),
                 a((0, m.A)()), O.default.track(B.HAw.EMOJI_UPLOAD_STARTED, {
                     guild_id: l.id,
                     upload_id: r
-                }), await (0, S.UD)(e, Q), A(!0)
+                }), await (0, S.UD)(e, Q), p(!0)
             }, ee = () => {
                 null !== y.current && ((0, h.OoC)(y.current), y.current = null)
             }, et = async e => {

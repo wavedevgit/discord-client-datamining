@@ -1,6 +1,6 @@
 /** chunk id: 518142 params = (module,exports,require) **/
 n.d(t, {
-    A: () => c
+    default: () => c
 });
 var i = n(627968),
     s = n(64700),

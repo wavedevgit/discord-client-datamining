@@ -99,36 +99,38 @@ let G = function(e) {
         return e
     }), K = (0, m.p)(A.A.FRIENDS_LIST), [q, z] = a.useState(!1), $ = a.useCallback((e, t) => {
         let {
-            key: n,
-            ...a
+            key: a,
+            ...l
         } = e;
         switch (d) {
             case L.m3P.PENDING:
                 return (0, i.jsx)(x.A, {
-                    ...a,
+                    ...l,
                     isFocused: M,
                     onAcceptFriendRequest: () => F(e)
-                }, n);
+                }, a);
             case L.m3P.SUGGESTIONS:
                 return (0, i.jsx)(O.A, {
-                    ...a,
+                    ...l,
                     isFocused: M
-                }, n);
+                }, a);
             case L.m3P.ALL:
                 return (0, i.jsx)(N.A, {
-                    ...a,
+                    ...l,
                     isFocused: M,
+                    analyticsLocations: n,
                     sectionIndex: t,
                     hasFriendAnniversarySection: K
-                }, `${t}-${n}`);
+                }, `${t}-${a}`);
             case L.m3P.ONLINE:
             default:
                 return (0, i.jsx)(N.A, {
-                    ...a,
-                    isFocused: M
-                }, n)
+                    ...l,
+                    isFocused: M,
+                    analyticsLocations: n
+                }, a)
         }
-    }, [d, M, K, F]), X = a.useCallback(e => {
+    }, [d, M, n, K, F]), X = a.useCallback(e => {
         W({
             ...Y,
             [d]: e

@@ -447,8 +447,8 @@ function eS(e) {
         isShowingSearchResult: eA
     }), e0 = i.useRef(null), {
         updateMasonryListScrollerRef: e3,
-        getItemKey: e9,
-        renderGridSection: e1,
+        getItemKey: e1,
+        renderGridSection: e9,
         renderGridItem: e6,
         getGridSectionHeight: e8,
         getSectionProps: e4,
@@ -657,10 +657,10 @@ function eS(e) {
                         className: ep.grid,
                         columns: ek,
                         sections: eG,
-                        getItemKey: e9,
+                        getItemKey: e1,
                         getSectionHeight: e8,
                         getItemHeight: tl,
-                        renderSection: e1,
+                        renderSection: e9,
                         renderItem: e6,
                         getSectionProps: e4,
                         onScroll: A ? e2 : void 0,
