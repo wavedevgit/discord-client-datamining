@@ -2,17 +2,17 @@
 n.d(t, {
     A: () => i
 });
-var a = n(64700);
+var r = n(64700);
 
 function i() {
     arguments.length > 0 && void 0 !== arguments[0] && arguments[0];
-    let [e, t] = a.useState(function() {
+    let [e, t] = r.useState(function() {
         return arguments.length > 0 && void 0 !== arguments[0] && arguments[0], {
             width: window.innerWidth ?? 1080,
             height: window.innerHeight ?? 1080
         }
     }());
-    return a.useLayoutEffect(() => {
+    return r.useLayoutEffect(() => {
         function e() {
             t({
                 width: window.innerWidth,

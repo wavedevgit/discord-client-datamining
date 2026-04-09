@@ -13,7 +13,7 @@ var a = n(627968),
     u = n(624622),
     m = n(844330),
     h = n(961350),
-    x = n(403740);
+    x = n(254411);
 let p = [r.UserIcon, r.ShieldIcon, r.GiftIcon, r.AchievementsIcon, r.PiggyBankIcon, r.TreehouseIcon, r.SpeedometerIcon, r.CompassIcon, r.SignPostIcon, r.CarIcon, r.TrainIcon, r.TeacupIcon, r.InventoryIcon, r.FoodIcon, r.BurgerIcon, r.MagicDoorIcon, r.PawPrintIcon, r.RecordPlayerIcon, r.SettingsIcon],
     g = ["text-default", "text-feedback-positive", "text-feedback-warning", "text-feedback-info", "text-feedback-critical"],
     f = () => {

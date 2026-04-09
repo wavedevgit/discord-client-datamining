@@ -32,9 +32,9 @@ var l = n(627968),
     R = n(406595),
     O = n(557404),
     U = n(652215),
-    G = n(822889),
+    G = n(895867),
     w = n(985018),
-    L = n(286835);
+    L = n(453748);
 
 function F(e) {
     return Array.from(e).sort()

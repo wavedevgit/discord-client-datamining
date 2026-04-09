@@ -1,19 +1,19 @@
 /** chunk id: 937624 params = (module,exports,require) **/
-n.d(t, {
+t.d(n, {
     P: () => s
 });
-var r = n(311907),
-    i = n(287809),
-    l = n(349435),
-    a = n(617641),
-    d = n(452082);
+var i = t(311907),
+    r = t(287809),
+    l = t(349435),
+    d = t(617641),
+    a = t(452082);
 let s = e => {
-    let t = (0, a.Lc)({
+    let n = (0, d.Lc)({
             location: "context-menu-item"
         }),
-        n = (0, r.bG)([i.default], () => i.default.getCurrentUser()),
-        s = (0, d.j)(e.id, "context-menu-item");
-    return n?.isStaff() === !0 && t && e.isDM() ? {
+        t = (0, i.bG)([r.default], () => r.default.getCurrentUser()),
+        s = (0, a.j)(e.id, "context-menu-item");
+    return t?.isStaff() === !0 && n && e.isDM() ? {
         isTier1: s?.type === l._j.INAPPROPRIATE_CONVERSATION_TIER_1,
         isTier2: s?.type === l._j.INAPPROPRIATE_CONVERSATION_TIER_2
     } : null

@@ -8,7 +8,7 @@ var a = n(627968),
     r = n(64700),
     i = n(503698),
     o = n.n(i),
-    s = n(52403);
+    s = n(931220);
 let c = {
         SIZE: {
             default: void 0,

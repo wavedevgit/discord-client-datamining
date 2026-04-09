@@ -1,7 +1,7 @@
 /** chunk id: 66933 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => r
+    A: () => i
 });
 let a = (0, n(945810).mj)({
         name: "2026-03-app-guild-validation",
@@ -18,4 +18,4 @@ let a = (0, n(945810).mj)({
             }
         }
     }),
-    r = 21552 == n.j ? a : null
+    i = 21552 == n.j ? a : null

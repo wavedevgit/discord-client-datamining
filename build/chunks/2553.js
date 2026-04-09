@@ -1,13 +1,13 @@
 /** chunk id: 2553 params = (module,exports,require) **/
-n.d(_, {
-    A: () => o
+n.d(t, {
+    A: () => _
 });
-var t = n(23658),
+var i = n(23658),
     r = n(453771),
     a = n(985018);
 
-function o(e) {
-    (0, t.openUploadError)({
+function _(e) {
+    (0, i.openUploadError)({
         title: a.intl.string(a.t["/tGlcj"]),
         help: a.intl.formatToPlainString(a.t.fxEKdS, {
             maxSize: (0, r.Hb)(e)

@@ -15,7 +15,7 @@ var i = n(627968),
     _ = n(767521),
     h = n(818348),
     m = n(985018),
-    g = n(754782);
+    g = n(208137);
 let p = function(e) {
     let {
         questId: t,

@@ -14,7 +14,7 @@ var r = s(503698),
     d = s(993408),
     u = s(196231),
     _ = s(985018),
-    g = s(572199);
+    g = s(297046);
 let m = e => {
         let {
             handleTransition: t,

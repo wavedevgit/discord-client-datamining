@@ -1,22 +1,22 @@
 /** chunk id: 846957 params = (module,exports,require) **/
-a.d(t, {
-    B: () => o
+r.d(t, {
+    B: () => u
 });
-var n = a(627968),
-    r = a(503698),
-    i = a.n(r),
-    s = a(132198),
-    l = a(235507);
-let o = e => {
+var n = r(627968),
+    l = r(503698),
+    i = r.n(l),
+    s = r(132198),
+    a = r(594452);
+let u = e => {
     let {
         product: t,
-        animationState: a,
-        className: r
-    } = e, o = s.m[t.skuId];
-    return null != o ? (0, n.jsx)("div", {
-        className: i()(l.W, r),
-        children: null != o.render && o.render({
-            animationState: a,
+        animationState: r,
+        className: l
+    } = e, u = s.m[t.skuId];
+    return null != u ? (0, n.jsx)("div", {
+        className: i()(a.W, l),
+        children: null != u.render && u.render({
+            animationState: r,
             alt: t.name
         })
     }) : null

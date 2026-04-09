@@ -25,7 +25,7 @@ var i = n(627968),
     v = n(447066),
     T = n(652215),
     C = n(985018),
-    I = n(394523);
+    I = n(934354);
 
 function E(e, t) {
     return null != t && /^data:/.test(t) ? t : (0, f.ku)({

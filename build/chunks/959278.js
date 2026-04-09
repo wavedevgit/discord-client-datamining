@@ -44,7 +44,7 @@ var i = n(627968),
     H = n(386467),
     F = n(490358),
     Y = n(961973),
-    W = n(917973),
+    W = n(140354),
     K = n(440293),
     q = n(551036),
     z = n(46533),
@@ -93,7 +93,7 @@ var i = n(627968),
     eU = n(539916),
     eG = n(613057),
     ek = n(355097),
-    eV = n(373838);
+    eV = n(325593);
 let eB = (0, c.Fe)({
         createPromise: () => Promise.resolve().then(n.bind(n, 500831)),
         webpackId: 500831
@@ -330,7 +330,7 @@ let eB = (0, c.Fe)({
     },
     e2 = () => (0, i.jsx)(I.A, {}),
     e3 = () => (0, i.jsx)(f.A, {}),
-    e8 = () => function(e) {
+    e4 = () => function(e) {
         let {
             tab: t
         } = (0, s.parse)(e.location.search);
@@ -342,7 +342,7 @@ let eB = (0, c.Fe)({
         })
     };
 
-function e4() {
+function e8() {
     return (0, i.jsx)(eh.A, {
         topLevelRoute: !0
     })
@@ -622,7 +622,7 @@ function to() {
                                     disableTrack: !0
                                 }), (0, i.jsx)(v.A, {
                                     path: ej.BVt.COLLECTIBLES_SHOP_WITH_TAB(":tab"),
-                                    render: e8(),
+                                    render: e4(),
                                     disableTrack: !0
                                 }), _ && (0, i.jsx)(v.A, {
                                     path: ej.BVt.COLLECTIBLES_SHOP_LAYOUT(":layoutId"),
@@ -660,11 +660,11 @@ function to() {
                                     disableTrack: !0
                                 }), (0, i.jsx)(v.A, {
                                     path: ej.BVt.COLLECTIBLES_SHOP,
-                                    render: e8(),
+                                    render: e4(),
                                     disableTrack: !0
                                 }), (0, i.jsx)(v.A, {
                                     path: ej.BVt.COLLECTIBLES_SHOP_PRODUCT_DETAIL(":skuId"),
-                                    render: e8(),
+                                    render: e4(),
                                     disableTrack: !0
                                 }), (0, i.jsx)(v.A, {
                                     path: ej.BVt.ICYMI,
@@ -720,7 +720,7 @@ function to() {
                                     disableTrack: !0
                                 }), (0, i.jsx)(v.A, {
                                     path: ej.BVt.QUEST_HOME,
-                                    render: e4,
+                                    render: e8,
                                     impressionName: d.ImpressionNames.QUEST_HOME,
                                     disableTrack: !0
                                 }), (0, i.jsx)(v.A, {

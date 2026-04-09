@@ -15,8 +15,8 @@ var a = n(627968),
     h = n(287809),
     x = n(320697),
     p = n(394953),
-    g = n(891860),
-    f = n(793877);
+    g = n(184245),
+    f = n(310086);
 let v = [{
         key: "channelName",
         cellClassName: s()(g.Hn, g.HA),

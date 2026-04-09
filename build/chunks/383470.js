@@ -12,7 +12,7 @@ var i = n(627968),
     c = n(965660),
     u = n(599907),
     A = n(652215),
-    _ = n(195598);
+    _ = n(173629);
 let h = {
     page: A.liQ.GUILD_DISCOVERY,
     object: A.ZSU.CARD,

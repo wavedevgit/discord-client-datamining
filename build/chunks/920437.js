@@ -43,7 +43,7 @@ var i = n(627968),
     B = n(360469),
     H = n(53516),
     V = n(985018),
-    K = n(381899);
+    K = n(120260);
 class W extends l.PureComponent {
     state = {
         submitting: !1,
@@ -120,7 +120,7 @@ class W extends l.PureComponent {
         (0, d.mMO)(async () => {
             let {
                 default: e
-            } = await Promise.all([n.e("84704"), n.e("75904")]).then(n.bind(n, 615715));
+            } = await Promise.all([n.e("84704"), n.e("5966")]).then(n.bind(n, 615715));
             return t => (0, i.jsx)(e, {
                 reason: b.d.GUILD_PHONE_REQUIRED,
                 ...t

@@ -7,7 +7,7 @@ var i = n(627968);
 n(64700);
 var s = n(397927),
     r = n(985018),
-    l = n(618264);
+    l = n(563087);
 let a = () => (0, i.jsxs)(s.BJc, {
     gap: 24,
     children: [(0, i.jsx)(s.Text, {

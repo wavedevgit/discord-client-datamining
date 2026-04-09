@@ -20,7 +20,7 @@ var n = i(627968),
     S = i(810263),
     b = i(911612),
     N = i(664967),
-    y = i(834265),
+    y = i(56646),
     f = i(507238),
     G = i(881136),
     L = i(813597),
@@ -79,7 +79,7 @@ function m(e) {
                 action: () => (0, a.mMO)(async () => {
                     let {
                         default: e
-                    } = await Promise.all([i.e("53609"), i.e("62026"), i.e("36710")]).then(i.bind(i, 585265));
+                    } = await Promise.all([i.e("53609"), i.e("62026"), i.e("12646")]).then(i.bind(i, 585265));
                     return i => (0, n.jsx)(e, {
                         ...i,
                         guild: t
@@ -115,7 +115,7 @@ function m(e) {
                 action: () => (0, a.mMO)(async () => {
                     let {
                         default: e
-                    } = await Promise.all([i.e("53609"), i.e("62026"), i.e("36710")]).then(i.bind(i, 585265));
+                    } = await Promise.all([i.e("53609"), i.e("62026"), i.e("12646")]).then(i.bind(i, 585265));
                     return i => (0, n.jsx)(e, {
                         ...i,
                         guild: t

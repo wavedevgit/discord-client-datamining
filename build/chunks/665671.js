@@ -17,7 +17,7 @@ async function l() {
         (0, i.mMO)(async () => {
             let {
                 RegisterWebAuthnCredentialModal: i
-            } = await Promise.all([n.e("44667"), n.e("70987")]).then(n.bind(n, 359990));
+            } = await Promise.all([n.e("44667"), n.e("35510")]).then(n.bind(n, 359990));
             return n => (0, r.jsx)(i, {
                 ...n,
                 ticket: t,

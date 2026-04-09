@@ -1,2 +1,2 @@
 /** chunk id: 562938 params = (module,exports,require) **/
-i.exports = JSON.parse('{"ihBfyA":["Aggiungi ai Preferiti"],"PACPOV":["Gioco"],"xkY5xS":["Prova a cercare qualcos\'altro"],"IZsalP":["Rimuovi dai Preferiti"]}')
+i.exports = JSON.parse('{"ihBfyA":["Aggiungi ai Preferiti"],"PACPOV":["Gioco"],"snNYS+":["Opzioni delle clip"],"xkY5xS":["Prova a cercare qualcos\'altro"],"+M2iLf":["Nessuna clip trovata"],"JbyR1U":["Filtri: ",[1,"count"]],"IZsalP":["Rimuovi dai Preferiti"]}')

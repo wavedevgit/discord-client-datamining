@@ -1,6 +1,5 @@
 /** chunk id: 783842 params = (module,exports,require) **/
-"use strict";
-e.exports = {
+_.exports = {
     nw: "outerContainer_e44912",
     yl: "modal_e44912",
     jE: "modalContent_e44912",

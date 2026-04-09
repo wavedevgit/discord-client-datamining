@@ -1,29 +1,29 @@
 /** chunk id: 861986 params = (module,exports,require) **/
-t.d(a, {
-    A: () => i,
-    O: () => _
+n.d(t, {
+    A: () => c,
+    O: () => o
 });
-var n, r = t(627968);
-t(64700);
-var s = t(449859),
-    o = t(985018),
-    c = t(812782),
-    _ = ((n = {})[n.WITH_CONTENT = 0] = "WITH_CONTENT", n[n.AFTER_ACCESSORIES = 1] = "AFTER_ACCESSORIES", n);
+var a, i = n(627968);
+n(64700);
+var l = n(449859),
+    s = n(985018),
+    r = n(767283),
+    o = ((a = {})[a.WITH_CONTENT = 0] = "WITH_CONTENT", a[a.AFTER_ACCESSORIES = 1] = "AFTER_ACCESSORIES", a);
 
-function i(e) {
+function c(e) {
     let {
-        message: a,
-        compact: t,
-        location: n
+        message: t,
+        compact: n,
+        location: a
     } = e;
-    return a.isEdited() && null != a.editedTimestamp ? n !== (t || null != a.content && 0 !== a.content.length ? 0 : 1) ? null : (0, r.jsxs)(r.Fragment, {
-        children: [" ", (0, r.jsx)(s.A, {
-            timestamp: a.editedTimestamp,
+    return t.isEdited() && null != t.editedTimestamp ? a !== (n || null != t.content && 0 !== t.content.length ? 0 : 1) ? null : (0, i.jsxs)(i.Fragment, {
+        children: [" ", (0, i.jsx)(l.A, {
+            timestamp: t.editedTimestamp,
             isEdited: !0,
             isInline: !1,
-            children: (0, r.jsxs)("span", {
-                className: c.oh,
-                children: ["(", o.intl.string(o.t.C8sXIM), ")"]
+            children: (0, i.jsxs)("span", {
+                className: r.oh,
+                children: ["(", s.intl.string(s.t.C8sXIM), ")"]
             })
         })]
     }) : null

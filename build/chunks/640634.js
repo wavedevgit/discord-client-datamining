@@ -1,8 +1,8 @@
 /** chunk id: 640634 params = (module,exports,require) **/
-a.d(t, {
-    l: () => r
+r.d(t, {
+    l: () => l
 });
-let n = (0, a(945810).mj)({
+let n = (0, r(945810).mj)({
         name: "2026-04-collectibles-orbs-redeem-short-text",
         kind: "user",
         defaultConfig: {
@@ -17,6 +17,6 @@ let n = (0, a(945810).mj)({
             }
         }
     }),
-    r = e => n.useConfig({
+    l = e => n.useConfig({
         location: e
     }).useShortRedeemText

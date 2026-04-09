@@ -10,9 +10,9 @@ var i = n(397927),
     r = n(805866),
     o = n(627575),
     d = n(204821),
-    c = n(774630),
+    c = n(646284),
     u = n(985018),
-    m = n(578005);
+    m = n(672548);
 let h = {
         [r.wP.EMAIL_VERIFICATION]: u.intl.string(c.default.HC4IiR),
         [r.wP.REFRESH_APP]: u.intl.string(c.default.SzfxQ3),

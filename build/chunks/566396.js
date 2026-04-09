@@ -1,22 +1,25 @@
 /** chunk id: 566396 params = (module,exports,require) **/
 n.d(t, {
-    A: () => h
+    A: () => x
 });
 var l = n(627968);
 n(64700);
 var i = n(311907),
     r = n(397927),
     a = n(956793),
-    d = n(713654),
-    s = n(734057),
-    o = n(71393),
-    u = n(576705),
-    c = n(309010),
-    A = n(977997),
-    g = n(652215),
-    f = n(895867),
-    E = n(985018);
-let b = {
+    d = n(47167),
+    s = n(713654),
+    o = n(734057),
+    u = n(71393),
+    c = n(576705),
+    A = n(994500),
+    g = n(309010),
+    f = n(287809),
+    E = n(977997),
+    b = n(652215),
+    h = n(895867),
+    v = n(985018);
+let I = {
     channelId: null,
     channelName: null,
     channel: null,
@@ -25,39 +28,39 @@ let b = {
     isAlreadyConnected: !1
 };
 
-function h(e) {
+function x(e) {
     let {
         channelId: t,
         channelName: n,
-        channel: h,
-        guild: v,
-        canJoin: I,
-        isAlreadyConnected: x
-    } = (0, i.cf)([A.A, s.A, o.A, u.A, c.A], () => {
-        let t = A.A.getDiscoverableVoiceStateForUser(e);
-        if (null == t) return b;
-        let n = s.A.getChannel(t.channelId);
-        if (null == n || !n.isVocal()) return b;
+        channel: x,
+        guild: p,
+        canJoin: m,
+        isAlreadyConnected: D
+    } = (0, i.cf)([E.A, o.A, g.A, f.default, A.A, u.A, c.A], () => {
+        let t = E.A.getDiscoverableVoiceStateForUser(e);
+        if (null == t) return I;
+        let n = o.A.getChannel(t.channelId);
+        if (null == n || !n.isVocal()) return I;
         let l = n.getGuildId?.() ?? null,
-            i = null != l ? o.A.getGuild(l) : null,
-            r = c.A.getVoiceChannelId() === n.id,
-            a = n.isPrivate() || u.A.can(g.xBc.CONNECT, n);
+            i = null != l ? u.A.getGuild(l) : null,
+            r = g.A.getVoiceChannelId() === n.id,
+            a = n.isPrivate() || c.A.can(b.xBc.CONNECT, n);
         return {
             channelId: n.id,
-            channelName: n.name,
+            channelName: (0, d.m1)(n, f.default, A.A),
             channel: n,
             guild: i,
             canJoin: a,
             isAlreadyConnected: r
         }
     }, [e]);
-    if (null == t || !I || x) return null;
-    let p = (0, d.gU)(h, v ?? void 0);
+    if (null == t || !m || D) return null;
+    let N = (0, s.gU)(x, p ?? void 0);
     return (0, l.jsx)(r.Drp, {
         id: "join-user-voice-channel",
-        void_label: E.intl.format(f.default["4l56iz"], {
+        void_label: v.intl.format(h.default["4l56iz"], {
             channelName: n ?? t,
-            channelIcon: () => null != p ? (0, l.jsx)(p, {
+            channelIcon: () => null != N ? (0, l.jsx)(N, {
                 size: "xxs",
                 color: "currentColor"
             }) : null

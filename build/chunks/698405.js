@@ -14,7 +14,7 @@ var n, a = i(627968),
     h = i(857071),
     m = i(652215),
     p = i(985018),
-    g = i(182730),
+    g = i(947483),
     _ = ((n = {})[n.CHAT = 0] = "CHAT", n[n.REACTIONS = 1] = "REACTIONS", n);
 let f = e => {
     let {

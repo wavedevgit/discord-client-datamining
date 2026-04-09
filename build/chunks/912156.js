@@ -14,7 +14,7 @@ var l, i = n(627968),
     h = n(260509),
     g = n(652215),
     I = n(778712),
-    A = n(612776),
+    A = n(845093),
     f = ((l = {}).TINY_24 = "TINY_24", l.SMALL_32 = "SMALL_32", l.MEDIUM_40 = "MEDIUM_40", l);
 let E = {
         TINY_24: 24,

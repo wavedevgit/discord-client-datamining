@@ -1,9 +1,74 @@
 /** chunk id: 685049 params = (module,exports,require) **/
-e.exports = {
-    kL: "container__011b7",
-    ak: "micTest__011b7",
-    EX: "small__011b7",
-    mi: "meterOnly__011b7",
-    Qe: "micTestCaption__011b7",
-    km: "buttonSizer__011b7"
+n.d(t, {
+    d: () => g,
+    o: () => u
+});
+var i = n(627968),
+    a = n(409626),
+    l = n(692969),
+    s = n(562153),
+    r = n(415043),
+    o = n(617086),
+    c = n(985018),
+    d = n(638398);
+
+function u(e) {
+    let {
+        applicationId: t,
+        ...n
+    } = e, a = (0, o.A)(t);
+    return a.length > 0 ? (0, i.jsx)(r.A, {
+        label: c.intl.formatToPlainString(c.t.ujhJdG, {
+            numFriends: a.length
+        }),
+        users: a,
+        maxUsers: 4,
+        ...n
+    }) : null
+}
+
+function g(e) {
+    var t, n, u;
+    let g, {
+            userId: _,
+            applicationId: m,
+            guildId: f,
+            channelId: x,
+            className: p
+        } = e,
+        I = (0, o.A)(m),
+        A = I.length > 0,
+        h = (t = I, n = f, u = x, g = t.slice(0, 3).map(e => s.Ay.getName(n, u, e)), 1 === t.length ? c.intl.formatToPlainString(c.t.FURqTU, {
+            name: g[0]
+        }) : 2 === t.length ? c.intl.formatToPlainString(c.t["08Usu/"], {
+            name1: g[0],
+            name2: g[1]
+        }) : 3 === t.length ? c.intl.formatToPlainString(c.t.NTYHag, {
+            name1: g[0],
+            name2: g[1],
+            name3: g[2]
+        }) : c.intl.formatToPlainString(c.t["i/5oAn"], {
+            name1: g[0],
+            name2: g[1],
+            name3: g[2],
+            numPeople: t.length - 3
+        })),
+        v = (0, l.A)({
+            location: "SocialProofButton",
+            applicationId: m,
+            source: a.Ob.UserProfile,
+            sourceUserId: _,
+            trackEntryPointImpression: !0
+        });
+    return A && null != v ? (0, i.jsx)(r.H, {
+        users: I,
+        label: h,
+        className: p,
+        onClick: v,
+        guildId: f,
+        channelId: x,
+        "aria-label": h,
+        overflowCountColor: "text-strong",
+        overflowCountClassName: d.L
+    }) : null
 }

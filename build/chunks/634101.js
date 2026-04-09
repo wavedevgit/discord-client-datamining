@@ -1,8 +1,8 @@
 /** chunk id: 634101 params = (module,exports,require) **/
-i.d(e, {
-    D: () => l
+n.d(t, {
+    D: () => i
 });
-let n = (0, i(945810).mj)({
+let a = (0, n(945810).mj)({
         kind: "user",
         name: "2026-03-age-verification-google-wallet",
         defaultConfig: {
@@ -14,6 +14,6 @@ let n = (0, i(945810).mj)({
             }
         }
     }),
-    l = t => n.useConfig({
-        location: t
+    i = e => a.useConfig({
+        location: e
     }).enabled

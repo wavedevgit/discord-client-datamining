@@ -20,7 +20,7 @@ var i = n(627968),
     p = n(767692),
     T = n(196199),
     f = n(652215),
-    S = n(724227);
+    S = n(479310);
 
 function b() {
     let e = (0, _.j)("UserSettingsPremiumGuildSubscriptions");

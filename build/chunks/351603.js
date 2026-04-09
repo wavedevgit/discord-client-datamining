@@ -45,7 +45,7 @@ let _ = (0, a.Tf)(d.X.ACCOUNT_INFO_EMAIL_SETTING, {
         (0, l.mMO)(async () => {
             let {
                 default: e
-            } = await Promise.all([n.e("89129"), n.e("7733")]).then(n.bind(n, 354096));
+            } = await Promise.all([n.e("89129"), n.e("6130")]).then(n.bind(n, 354096));
             return t => (0, i.jsx)(e, {
                 ...t
             })

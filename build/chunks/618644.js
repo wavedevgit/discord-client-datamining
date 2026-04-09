@@ -24,7 +24,7 @@ var i = n(735438),
     C = n(993408),
     j = n(536572),
     y = n(985018),
-    I = n(996336);
+    I = n(60983);
 let P = e => {
         let {
             pendingProfileEffectRecord: t,

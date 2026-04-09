@@ -1,49 +1,49 @@
 /** chunk id: 812299 params = (module,exports,require) **/
-t.d(a, {
-    k: () => s,
-    y: () => o
+n.d(t, {
+    k: () => o,
+    y: () => c
 });
-var n = t(627968);
-t(64700);
-var c = t(709066),
-    l = t(455207),
-    r = t(943667),
-    i = t(812782);
-
-function s(e) {
-    let a, {
-        message: t,
-        channel: n,
-        user: i,
-        isRepliedMessage: s
-    } = e;
-    return t?.isSystemDM() ? a = c.A.Types.SYSTEM_DM : null != t && (0, r.A)(t) ? a = (0, l.MZ)(t) ? c.A.Types.OFFICIAL : c.A.Types.SERVER : i?.bot ? a = c.A.Types.BOT : null != n && n.isForumPost() && n.ownerId === i?.id && !s && (a = c.A.Types.ORIGINAL_POSTER), a
-}
+var a = n(627968);
+n(64700);
+var i = n(709066),
+    l = n(455207),
+    s = n(943667),
+    r = n(767283);
 
 function o(e) {
+    let t, {
+        message: n,
+        channel: a,
+        user: r,
+        isRepliedMessage: o
+    } = e;
+    return n?.isSystemDM() ? t = i.A.Types.SYSTEM_DM : null != n && (0, s.A)(n) ? t = (0, l.MZ)(n) ? i.A.Types.OFFICIAL : i.A.Types.SERVER : r?.bot ? t = i.A.Types.BOT : null != a && a.isForumPost() && a.ownerId === r?.id && !o && (t = i.A.Types.ORIGINAL_POSTER), t
+}
+
+function c(e) {
     let {
-        message: a,
-        channel: t,
+        message: t,
+        channel: n,
         user: l,
-        compact: r,
-        isRepliedMessage: o,
-        hideIcon: u = !1,
-        children: d
-    } = e, _ = s({
-        message: a,
-        channel: t,
+        compact: s,
+        isRepliedMessage: c,
+        hideIcon: d = !1,
+        children: u
+    } = e, m = o({
+        message: t,
+        channel: n,
         user: l,
-        compact: r,
-        isRepliedMessage: o,
-        hideIcon: u,
-        children: d
+        compact: s,
+        isRepliedMessage: c,
+        hideIcon: d,
+        children: u
     });
-    return null == _ ? null : (0, n.jsx)(c.A, {
-        className: r ? i.jW : i.RQ,
-        type: _,
+    return null == m ? null : (0, a.jsx)(i.A, {
+        className: s ? r.jW : r.RQ,
+        type: m,
         verified: l?.isVerifiedBot(),
-        hideIcon: u,
+        hideIcon: d,
         useRemSizes: !0,
-        children: d
+        children: u
     })
 }

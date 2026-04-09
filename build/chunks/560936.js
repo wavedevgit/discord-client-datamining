@@ -1,23 +1,23 @@
 /** chunk id: 560936 params = (module,exports,require) **/
-t.d(a, {
-    A: () => i
+n.d(t, {
+    A: () => r
 });
-var n = t(64700),
-    c = t(473193),
-    l = t(203982),
-    r = t(652215);
+var a = n(64700),
+    i = n(473193),
+    l = n(203982),
+    s = n(652215);
 
-function i(e) {
+function r(e) {
     let {
-        shouldSubscribe: a,
-        subscribeToGroupId: t,
-        authorId: i
-    } = e, s = n.useContext(c.C);
-    n.useEffect(() => {
-        if (!a || null == s || null == t || null == i) return;
+        shouldSubscribe: t,
+        subscribeToGroupId: n,
+        authorId: r
+    } = e, o = a.useContext(i.C);
+    a.useEffect(() => {
+        if (!t || null == o || null == n || null == r) return;
         let {
             setAnimate: e
-        } = s;
-        return l._.subscribeKeyed(r.zOV.ANIMATE_CHAT_AVATAR, `${t}:${i}`, e), () => void l._.unsubscribeKeyed(r.zOV.ANIMATE_CHAT_AVATAR, `${t}:${i}`, e)
-    }, [a, i, t, s])
+        } = o;
+        return l._.subscribeKeyed(s.zOV.ANIMATE_CHAT_AVATAR, `${n}:${r}`, e), () => void l._.unsubscribeKeyed(s.zOV.ANIMATE_CHAT_AVATAR, `${n}:${r}`, e)
+    }, [t, r, n, o])
 }

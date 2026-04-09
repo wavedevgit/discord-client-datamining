@@ -3,7 +3,7 @@ n.d(t, {
     c: () => r
 });
 var i = n(627968),
-    a = n(806905);
+    a = n(836972);
 let r = () => (0, i.jsx)("div", {
     className: a.y
 })

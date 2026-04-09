@@ -1,14 +1,13 @@
 /** chunk id: 220839 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
-    A: () => s
+    A: () => i
 });
-var i = n(64700);
-let s = (e, t) => {
-    let n = (0, i.useRef)(e);
-    (0, i.useEffect)(() => {
+var a = n(64700);
+let i = (e, t) => {
+    let n = (0, a.useRef)(e);
+    (0, a.useEffect)(() => {
         n.current = e
-    }, [e]), (0, i.useEffect)(() => {
+    }, [e]), (0, a.useEffect)(() => {
         if (null === t) return;
         let e = setTimeout(() => n.current(), t);
         return () => clearTimeout(e)

@@ -1,2 +1,2 @@
 /** chunk id: 80823 params = (module,exports,require) **/
-s.exports = JSON.parse('{"ihBfyA":["เพิ่มในรายการโปรด"],"PACPOV":["เกม"],"xkY5xS":["ลองค้นหาอย่างอื่น"],"IZsalP":["ลบออกจากรายการโปรด"]}')
+s.exports = JSON.parse('{"ihBfyA":["เพิ่มในรายการโปรด"],"PACPOV":["เกม"],"snNYS+":["ตัวเลือกคลิป"],"xkY5xS":["ลองค้นหาอย่างอื่น"],"+M2iLf":["ไม่พบคลิป"],"JbyR1U":["ตัวกรอง: ",[1,"count"]],"IZsalP":["ลบออกจากรายการโปรด"]}')

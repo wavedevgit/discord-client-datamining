@@ -25,7 +25,7 @@ var l = n(554146),
     m = n(788868),
     O = n(355097),
     g = n(985018),
-    S = n(571655);
+    S = n(381703);
 let y = t => {
     let {
         dismissibleContent: e,
@@ -139,7 +139,7 @@ let y = t => {
                                     (0, r.mMO)(async () => {
                                         let {
                                             RegisterWebAuthnCredentialModal: t
-                                        } = await Promise.all([n.e("44667"), n.e("65176")]).then(n.bind(n, 359990));
+                                        } = await Promise.all([n.e("44667"), n.e("45245")]).then(n.bind(n, 359990));
                                         return n => (0, i.jsx)(t, {
                                             ...n,
                                             ticket: e,

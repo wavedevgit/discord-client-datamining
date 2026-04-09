@@ -12,9 +12,9 @@ var i = n(627968),
     c = n(114166),
     u = n(891734),
     m = n(505527),
-    _ = n(260821),
-    h = n(767474),
-    p = n(449014);
+    _ = n(483202),
+    h = n(486025),
+    p = n(108277);
 let g = l.memo(function(e) {
         let t, n, {
                 useChatFontScaling: l,
